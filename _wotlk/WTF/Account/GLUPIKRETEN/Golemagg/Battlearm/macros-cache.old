@@ -1,3 +1,17 @@
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Death Strike
+/use 13
+/use 14
+END
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Icy Touch
+/use 13
+/use 14
+END
 VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
@@ -15,18 +29,4 @@ END
 VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 #showtooltip death pact
 /cast [nopet]raise dead;death pact
-END
-VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast Death Strike
-/use 13
-/use 14
-END
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast Icy Touch
-/use 13
-/use 14
 END

@@ -4,10 +4,9 @@ VER 3 0000000001000016 " " "INV_MISC_QUESTIONMARK"
 /cast [nocombat] Charge; [combat] Intercept
 END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Charge
-/startattack
-/cast Sunder Armor
-/cast Charge
+#showtooltip 
+/cast [@cursor] Adamantite Grenade
+/cast [@cursor] Saronite Bomb
 END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip

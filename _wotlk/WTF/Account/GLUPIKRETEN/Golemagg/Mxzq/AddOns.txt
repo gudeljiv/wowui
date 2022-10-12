@@ -191,3 +191,8 @@ unitscan: enabled
 VendorBait: enabled
 NovaWorldBuffs: disabled
 NameplateSCT: disabled
+Select: disabled
+XLoot: disabled
+XLoot_Group: disabled
+XLoot_Options: disabled
+Roll: disabled

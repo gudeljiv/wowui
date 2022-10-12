@@ -1,23 +1,5 @@
 
 Postal3DB = {
-	["profileKeys"] = {
-		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-		["Vermina - Golemagg"] = "Vermina - Golemagg",
-		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
-		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
-		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
-		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
-		["Battitude - Golemagg"] = "Battitude - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
-		["Poklopac - Mirage Raceway"] = "Poklopac - Mirage Raceway",
-		["Provokator - Jin'do"] = "Provokator - Jin'do",
-		["Wells - Jin'do"] = "Wells - Jin'do",
-		["Tudum - Jin'do"] = "Tudum - Jin'do",
-		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
-		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
-	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
@@ -40,6 +22,24 @@ Postal3DB = {
 			},
 		},
 	},
+	["profileKeys"] = {
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Vermina - Golemagg"] = "Vermina - Golemagg",
+		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
+		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
+		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
+		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
+		["Battitude - Golemagg"] = "Battitude - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
+		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
+		["Provokator - Jin'do"] = "Provokator - Jin'do",
+		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
+		["Tudum - Jin'do"] = "Tudum - Jin'do",
+		["Wells - Jin'do"] = "Wells - Jin'do",
+		["Poklopac - Mirage Raceway"] = "Poklopac - Mirage Raceway",
+	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
 		},
@@ -47,7 +47,7 @@ Postal3DB = {
 		},
 		["Mxyz - Golemagg"] = {
 		},
-		["Kaonac - Jin'do"] = {
+		["Moolatz - Golemagg"] = {
 		},
 		["Tudum - Ashbringer"] = {
 		},
@@ -61,17 +61,17 @@ Postal3DB = {
 		},
 		["Battlearm - Jin'do"] = {
 		},
-		["Poklopac - Mirage Raceway"] = {
+		["Kaonac - Jin'do"] = {
 		},
 		["Provokator - Jin'do"] = {
 		},
-		["Wells - Jin'do"] = {
+		["Tandaram - Jin'do"] = {
 		},
 		["Tudum - Jin'do"] = {
 		},
-		["Tandaram - Jin'do"] = {
+		["Wells - Jin'do"] = {
 		},
-		["Moolatz - Golemagg"] = {
+		["Poklopac - Mirage Raceway"] = {
 		},
 	},
 }

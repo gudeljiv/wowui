@@ -54,7 +54,8 @@ events.acceptmultiple = events.accept
 events.dailyturninmultiple = events.turnin
 
 local function GetIcon(path,index,size)
-local x1, x2, y1, y2 = GetPOITextureCoords(index)
+    local coords = GetPOITextureCoords or C_Minimap.GetPOITextureCoords
+    local x1, x2, y1, y2 = coords(index)
     return format("|T%s:0:0:0:0:%d:%d:%d:%d:%d:%d|t", path, size, size, x1*size, x2*size, y1*size, y2*size)
 end
 
@@ -951,7 +952,9 @@ function addon.UpdateQuestCompletionData(self)
     local icon = addon.icons.complete
     local id = element.questId
 
-    if type(id) ~= "number" then
+    if not element.tag or element.tag ~= "complete" then
+        return
+    elseif type(id) ~= "number" then
         print('Error (.' .. element.tag .. '): Invalid quest ID at step ' .. element.step.index)
         return
     end
@@ -1111,20 +1114,23 @@ function addon.functions.complete(self, ...)
         local element = {}
         local text, id, obj, objMax = ...
         id = tonumber(id)
+        if id and id < 0 then
+            id = math.abs(id)
+            element.skipIfMissing = true
+        end
         id = id and questConversion[id] or id
+        obj = tonumber(obj)
         if not (id and obj) then
             addon.error(L("Error parsing guide") .. " " .. addon.currentGuideName ..
                             ": Invalid objective or quest ID\n" .. self)
+            return
         end
-        element.obj = tonumber(obj)
+        element.obj = obj
         element.objMax = tonumber(objMax)
         element.dynamicText = true
         -- element.title = addon.GetQuestName(id)
         -- local objectives = addon.GetQuestObjectives(id)--queries the server for items/creature names associated with the quest
-        if id < 0 then
-            id = math.abs(id)
-            element.skipIfMissing = true
-        end
+
         element.questId = id
 
         element.text = ""
@@ -1150,6 +1156,9 @@ function addon.functions.complete(self, ...)
             end
         end
         addon.UpdateQuestCompletionData(self)
+        if step.active and element.skipIfMissing and not IsOnQuest(element.questId) then
+            addon.SetElementComplete(self,true)
+        end
     else
         if not step.active then
             if math.abs(RXPCData.currentStep - step.index) > 2 then
@@ -1457,6 +1466,8 @@ function addon.functions.home(self, ...)
         return element
     end
 
+    if not addon.settings.db.profile.enableBindAutomation or IsShiftKeyDown() then return end
+
     local element = self.element
     if not element.step.active or element.completed or element.skip then
         element.confirm = false
@@ -1530,12 +1541,14 @@ function addon.functions.fly(self, ...)
         return element
     end
 
+    if not addon.settings.db.profile.enableBindAutomation or IsShiftKeyDown() then return end
+
     local element = self.element
     if not element.step.active then return end
     local event = ...
     if not element.confirm and event == "GOSSIP_SHOW" and addon.SelectGossipType("taxi") then
         element.confirm = true
-    elseif event == "TAXIMAP_OPENED" and not RXPData.disableFPAutomation and
+    elseif event == "TAXIMAP_OPENED" and addon.settings.db.profile.enableFPAutomation and
         element.location then
         addon:TAXIMAP_OPENED()
         for i = 1, NumTaxiNodes() do
@@ -1895,7 +1908,7 @@ function addon.functions.xp(self, ...)
             (element.level == level and currentXP >= maxXP * element.xp)))) ==
         not reverseLogic then
         if element.skipstep then
-            if step.active and not step.completed and not(RXPCData.northrendLM and not reverseLogic) then
+            if step.active and not step.completed and not(addon.settings.db.profile.northrendLM and not reverseLogic) then
                 addon.updateSteps = true
                 step.completed = true
             end
@@ -2239,7 +2252,7 @@ function addon.functions.next(skip, guide)
             local era = "(Era)"
             local som = "(SoM)"
 
-            if RXPCData.SoM then
+            if addon.settings.db.profile.SoM then
                 next = next:gsub(era, som)
             else
                 next = next:gsub(som, era)
@@ -2249,11 +2262,11 @@ function addon.functions.next(skip, guide)
         nextGuide = addon.GetGuideTable(group, next)
 
         if nextGuide then
-            if (nextGuide.era and RXPCData.SoM or nextGuide.som and
-                not RXPCData.SoM or RXPCData.SoM and RXPCData.phase > 2 and
+            if (nextGuide.era and addon.settings.db.profile.SoM or nextGuide.som and
+                not addon.settings.db.profile.SoM or addon.settings.db.profile.SoM and addon.settings.db.profile.phase > 2 and
                 nextGuide["era/som"]) or
-                (nextGuide.hardcore and not (RXPCData.hardcore) or
-                    nextGuide.softcore and RXPCData.hardcore) then
+                (nextGuide.hardcore and not (addon.settings.db.profile.hardcore) or
+                    nextGuide.softcore and addon.settings.db.profile.hardcore) then
                 return addon.functions.next(nil, nextGuide)
             else
                 addon:LoadGuide(nextGuide)
@@ -2479,7 +2492,7 @@ function addon.functions.isOnQuest(self, ...)
     end
     local element = self.element
     local id = element.questId
-    if (element.step.active and not IsOnQuest(id) and not addon.settings.db.profile.debug) == not element.reverse then
+    if element.step.active and not addon.settings.db.profile.debug and (not IsOnQuest(id)) == not element.reverse then
         element.step.completed = true
         addon.updateSteps = true
     end
@@ -2509,11 +2522,16 @@ function addon.functions.isQuestTurnedIn(self, text, ...)
     local ids = element.questIds
     local questTurnedIn = false
 
-    for _, id in pairs(ids) do
-        questTurnedIn = questTurnedIn or IsQuestTurnedIn(id)
+    if element.reverse then
+        for _, id in pairs(ids) do
+            questTurnedIn = questTurnedIn or not IsQuestTurnedIn(id)
+        end
+    else
+        for _, id in pairs(ids) do
+            questTurnedIn = questTurnedIn or IsQuestTurnedIn(id)
+        end
     end
-
-    if step.active and (not questTurnedIn == not element.reverse) and not addon.settings.db.profile.debug then
+    if step.active and not questTurnedIn and not addon.settings.db.profile.debug then
         step.completed = true
         addon.updateSteps = true
     end
@@ -2711,6 +2729,7 @@ function addon.functions.unitscan(self, text, ...)
 
         if text and text ~= "" then element.text = text end
         element.textOnly = true
+        element.targets = npcs
         return element
     end
 
@@ -3165,6 +3184,8 @@ function addon.functions.skipgossip(self, text, ...)
         return element
     end
 
+    if not addon.settings.db.profile.enableGossipAutomation or IsShiftKeyDown() then return end
+
     local element = self.element
     local args = element.args or {}
     local nArgs = #args
@@ -3245,7 +3266,7 @@ function addon.functions.maxlevel(self, ...)
     local ref = element.ref
 
     if level > element.level then
-        if step.active and not step.completed and not RXPCData.northrendLM then
+        if step.active and not step.completed and not addon.settings.db.profile.northrendLM then
             addon.updateSteps = true
             step.completed = true
         end

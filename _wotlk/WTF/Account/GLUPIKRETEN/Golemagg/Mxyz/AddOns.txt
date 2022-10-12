@@ -176,3 +176,12 @@ Pawn: enabled
 TradeSkillMaster_AppHelper: enabled
 NovaWorldBuffs: disabled
 GearScoreLite: disabled
+Select: disabled
+XLoot: disabled
+XLoot_Group: disabled
+XLoot_Options: disabled
+Roll: disabled
+XLoot_Frame: disabled
+XLoot_Master: disabled
+XLoot_Monitor: disabled
+teksLoot: disabled

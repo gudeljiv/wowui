@@ -4,10 +4,8 @@ VER 3 0000000001000016 " " "INV_MISC_QUESTIONMARK"
 /cast [nocombat] Charge; [combat] Intercept
 END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Charge
-/startattack
-/cast Sunder Armor
-/cast Charge
+#showtooltip 
+/cast [@cursor] Saronite Bomb
 END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -67,6 +65,8 @@ VER 3 0000000001000015 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast Revenge
+/use 13
+/use 14
 END
 VER 3 0000000001000014 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Vigilance
@@ -75,14 +75,10 @@ END
 VER 3 0000000001000017 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Cleave
-/use 13
-/use 14
 /cast Bloodrage
 END
 VER 3 0000000001000018 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Heroic Strike
-/use 13
-/use 14
 /cast Bloodrage
 END

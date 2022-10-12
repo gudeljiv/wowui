@@ -3,7 +3,7 @@ RXPGuides.RegisterGuide([[
 << Horde Mage
 #name 12-17 The Barrens AoE
 #version 1
-#group Horde Mage AoE
+#group RestedXP Horde Mage AoE
 #defaultfor Horde Mage
 #next 17-21 Stonetalon/Barrens AoE
 
@@ -560,7 +560,7 @@ RXPGuides.RegisterGuide([[
 << Horde Mage
 #name 17-21 Stonetalon/Barrens AoE
 #version 1
-#group Horde Mage AoE
+#group RestedXP Horde Mage AoE
 #defaultfor Horde Mage
 #next 21-30 Silverpine/Hillsbrad AoE
 

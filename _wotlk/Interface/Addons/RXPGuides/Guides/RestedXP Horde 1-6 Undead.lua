@@ -4,7 +4,7 @@ RXPGuides.RegisterGuide([[
 << Horde
 #name 1-6 Tirisfal Glades
 #version 1
-#group Horde 1-30
+#group RestedXP Horde 1-30
 #defaultfor Scourge
 #next 6-10 Eversong Woods
 step << !Scourge
@@ -292,6 +292,7 @@ step
     .accept 383 >> Accept Vital Intelligence
 step
     .goto Tirisfal Glades,38.1,56.6
+    >>Start making your way out of Deathknell
     .xp 5+2350 >>Grind to 2350+/2800xp en route
 step
     .goto Tirisfal Glades,38.2,56.8

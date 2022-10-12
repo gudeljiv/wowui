@@ -130,6 +130,11 @@ function addon.CreateActiveItemFrame(self, anchor, enableText)
         f = self.activeItemFrame
     end
 
+    addon.enabledFrames["activeItemFrame"] = f
+    f.IsFeatureEnabled = function()
+        return not addon.settings.db.profile.disableItemWindow and next(GetActiveItemList()) ~= nil
+    end
+
     f:ClearBackdrop()
     f:SetBackdrop(addon.RXPFrame.backdropEdge)
     f:SetBackdropColor(unpack(addon.colors.background))
@@ -153,7 +158,7 @@ function addon.CreateActiveItemFrame(self, anchor, enableText)
         f.title.text:SetJustifyH("CENTER")
         f.title.text:SetJustifyV("CENTER")
         f.title.text:SetTextColor(1, 1, 1)
-        f.title.text:SetFont(addon.font, 9)
+        f.title.text:SetFont(addon.font, 9, "")
         f.title.text:SetText("Active Items")
         f.title:EnableMouse(true)
         f.title:SetScript("OnMouseDown", f.onMouseDown)
@@ -218,8 +223,8 @@ function addon.UpdateItemFrame(itemFrame)
     local buttonList = itemFrame.buttonList
     local itemList = GetActiveItemList()
 
-    if itemFrame.hardcore ~= RXPCData.hardcore or not itemFrame.hardcore then
-        itemFrame.hardcore = RXPCData.hardcore
+    if itemFrame.hardcore ~= addon.settings.db.profile.hardcore or not itemFrame.hardcore then
+        itemFrame.hardcore = addon.settings.db.profile.hardcore
         itemFrame:ClearBackdrop()
         itemFrame:SetBackdrop(addon.RXPFrame.backdropEdge)
         local r, g, b = unpack(addon.colors.background)
@@ -297,7 +302,7 @@ function addon.UpdateItemFrame(itemFrame)
     -- print("s:",i)
     if i > 0 then itemFrame:SetAlpha(1) end
 
-    if i == 0 or RXPCData.disableItemWindow then
+    if i == 0 or addon.settings.db.profile.disableItemWindow or not addon.settings.db.profile.showEnabled then
         itemFrame:Hide()
     else
         itemFrame:Show()

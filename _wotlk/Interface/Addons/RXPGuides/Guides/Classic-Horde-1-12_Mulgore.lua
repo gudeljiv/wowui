@@ -4,7 +4,7 @@ RXPGuides.RegisterGuide([[
 << Horde
 #name 1-12 Mulgore
 #version 1
-#group Horde 1-22
+#group RestedXP Horde 1-22
 #defaultfor Tauren
 #next 12-17 The Barrens
 step << !Tauren
@@ -959,7 +959,7 @@ RXPGuides.RegisterGuide([[
 << Horde
 #name 1-13 Mulgore
 #version 1
-#group Horde 1-22
+#group RestedXP Horde 1-22
 #defaultfor Tauren
 #next 12-17 The Barrens
 step << !Tauren

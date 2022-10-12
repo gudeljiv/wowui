@@ -3,7 +3,7 @@ RXPGuides.RegisterGuide([[
 << Horde
 #name 1-11 Tirisfal Glades
 #version 1
-#group Horde 1-22
+#group RestedXP Horde 1-22
 #defaultfor Undead
 #next 11-14 Silverpine Forest
 #next 12-17 Barrens
@@ -1277,7 +1277,7 @@ step << Mage
 ]])
 
 RXPGuides.RegisterGuide([[
-#group Horde 1-22
+#group RestedXP Horde 1-22
 << Horde
 #version 1
 #defaultfor Undead/Troll Rogue/Orc Rogue

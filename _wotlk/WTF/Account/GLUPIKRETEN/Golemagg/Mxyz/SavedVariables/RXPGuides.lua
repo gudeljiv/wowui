@@ -7,13 +7,10 @@ RXPCData = {
 	["currentGuideGroup"] = "",
 	["flightPaths"] = {
 	},
-	["xprate"] = 1.5,
 	["JoyousJourneys"] = true,
-	["frameHeight"] = 125.000129699707,
 	["currentGuideName"] = "",
 	["stepSkip"] = {
 	},
-	["hardcore"] = false,
 	["phase"] = 6,
 }
 RXPCTrackingData = {
@@ -52,7 +49,11 @@ RXPCSettings = {
 	},
 	["profiles"] = {
 		["Mxyz - Golemagg"] = {
+			["enableMinimapButton"] = false,
 			["enableTracker"] = false,
+			["frameHeight"] = 125.000129699707,
+			["xprate"] = 1.5,
+			["hardcore"] = false,
 		},
 	},
 }

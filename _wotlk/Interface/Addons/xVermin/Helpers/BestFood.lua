@@ -1,4 +1,5 @@
 local _, xVermin = ...
+local TKInstances = {550, 552, 553, 554}
 
 local defaultFoodMacro = [[#showtooltip
 /use [nocombat]<food>
@@ -434,6 +435,14 @@ function NeedsFoodBadly.BetterHPotion(a, b)
 		return false
 	end
 
+	if a.id == 32905 and xVermin.HasValue(TKInstances, select(8, GetInstanceInfo())) then
+		return a.id
+	end
+
+	if a.high == b.high then
+		return GetItemCount(a.id) <= GetItemCount(b.id)
+	end
+
 	return a.high >= b.high
 end
 
@@ -443,6 +452,14 @@ function NeedsFoodBadly.BetterMPotion(a, b)
 	end
 	if not b then
 		return false
+	end
+
+	if a.id == 32902 and xVermin.HasValue(TKInstances, select(8, GetInstanceInfo())) then
+		return a.id
+	end
+
+	if a.high == b.high then
+		return GetItemCount(a.id) <= GetItemCount(b.id)
 	end
 
 	return a.high >= b.high
@@ -869,6 +886,7 @@ NeedsFoodBadly.Food = {
 	[33443] = {id = 33443, name = 'Sour Goat Cheese', lvl = 65, conj = false, hp = 18480},
 	[33454] = {id = 33454, name = 'Salted Venison', lvl = 65, conj = false, hp = 18480}
 }
+
 NeedsFoodBadly.Potion = {
 	[31677] = {id = 31677, name = 'Fel Mana Potion', lvl = 60, low = 3200, high = 3200, mp = true},
 	[22829] = {id = 22829, name = 'Super Healing Potion', lvl = 55, low = 1500, high = 2500, hp = true},
@@ -906,8 +924,10 @@ NeedsFoodBadly.Potion = {
 	[17348] = {id = 17348, name = 'Major Healing Draught', lvl = 45, low = 980, high = 1260, hp = true, bg = true},
 	[17349] = {id = 17349, name = 'Superior Healing Draught', lvl = 35, low = 560, high = 720, hp = true, bg = true},
 	[17352] = {id = 17352, name = 'Superior Mana Draught', lvl = 35, low = 560, high = 720, mp = true, bg = true},
-	[32905] = {id = 32905, name = 'Bottled Nethergon Vapor', lvl = 55, low = 1500, high = 2500, hp = true}
+	[32905] = {id = 32905, name = 'Bottled Nethergon Vapor', lvl = 55, low = 1500, high = 2500, hp = true},
+	[33447] = {id = 33447, name = 'Runic Healing Potion', lvl = 70, low = 2700, high = 4500, hp = true}
 }
+
 NeedsFoodBadly.Healthstone = {
 	[19004] = {id = 19004, name = 'Minor Healthstone', lvl = 10, hp = 110},
 	[19005] = {id = 19005, name = 'Minor Healthstone', lvl = 10, hp = 120},
@@ -928,6 +948,7 @@ NeedsFoodBadly.Healthstone = {
 	[22104] = {id = 22104, name = 'Master Healthstone', lvl = 60, hp = 2288},
 	[22105] = {id = 22105, name = 'Master Healthstone', lvl = 60, hp = 2496}
 }
+
 NeedsFoodBadly.ManaGem = {
 	[5514] = {id = 5514, name = 'Mana Agate', lvl = 1, low = 375, high = 425},
 	[5513] = {id = 5513, name = 'Mana Jade', lvl = 38, low = 550, high = 650},
@@ -935,6 +956,7 @@ NeedsFoodBadly.ManaGem = {
 	[8008] = {id = 8008, name = 'Mana Ruby', lvl = 58, low = 1000, high = 1200},
 	[22044] = {id = 22044, name = 'Mana Emerald', lvl = 68, low = 2340, high = 2460}
 }
+
 NeedsFoodBadly.Bandage = {
 	[21991] = {id = 21991, name = 'Heavy Netherweave Bandage', skill = 325, hp = 3400},
 	[21990] = {id = 21990, name = 'Netherweave Bandage', skill = 300, hp = 2800},
@@ -963,6 +985,7 @@ NeedsFoodBadly.Bandage = {
 	[20234] = {id = 20234, name = "Defiler's Runecloth Bandage", lvl = 45, skill = 225, hp = 2000, bg = 3},
 	[20243] = {id = 20243, name = "Highlander's Runecloth Bandage", lvl = 45, skill = 225, hp = 2000, bg = 3}
 }
+
 NeedsFoodBadly.PetFood = {
 	[117] = {id = 117, type = 'Meat'},
 	[2287] = {id = 2287, type = 'Meat'},

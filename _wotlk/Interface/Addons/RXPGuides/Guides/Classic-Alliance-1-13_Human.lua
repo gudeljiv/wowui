@@ -4,7 +4,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #name 1-11 Elwynn Forest
 #version 1
-#group Alliance 1-20
+#group RestedXP Alliance 1-20
 #defaultfor Human
 #next 11-13 Loch Modan
 step << !Human
@@ -1227,7 +1227,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #name 11-13 Loch Modan
 #version 1
-#group Alliance 1-20
+#group RestedXP Alliance 1-20
 #defaultfor Human
 #next 13-15 Westfall
 
@@ -1535,7 +1535,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #name 1-13 Elwynn Forest
 #version 1
-#group Alliance 1-20
+#group RestedXP Alliance 1-20
 #defaultfor Human
 #next 13-14 Loch Modan
 step << !Human
@@ -2660,7 +2660,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #name 13-14 Loch Modan
 #version 1
-#group Alliance 1-20
+#group RestedXP Alliance 1-20
 #defaultfor Human
 #next 14-19 Darkshore
 step

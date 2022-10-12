@@ -60,8 +60,8 @@ FrameLevel: 1
 Anchor: CENTER
 X: -111
 Y: -132
-W: 35
-H: 35
+W: 32
+H: 32
 Frame: RXPItemFrame
 FrameLevel: 1
 Anchor: CENTER

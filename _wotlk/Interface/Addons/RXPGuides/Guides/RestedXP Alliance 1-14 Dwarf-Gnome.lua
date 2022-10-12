@@ -5,7 +5,7 @@ RXPGuides.RegisterGuide([[
 #name 1-6 Coldridge Valley
 #next 6-11 Dun Morogh
 #version 1
-#group Alliance 1-20
+#group RestedXP Alliance 1-20
 #defaultfor Gnome/Dwarf
 step << !Gnome !Dwarf
     #sticky
@@ -223,10 +223,12 @@ step << !Paladin !Mage
     .xp 4 >> Grind to 4
 step << !Paladin !Mage
     #requires TrollTroggs
-.turnin 182 >> Turn in The Troll Cave
+    .goto Dun Morogh,25.1,75.7
+    .turnin 182 >> Turn in The Troll Cave
     .accept 218 >> Accept The Stolen Journal
 step << Paladin/Mage
-.turnin 182 >> Turn in The Troll Cave
+    .goto Dun Morogh,25.1,75.7
+    .turnin 182 >> Turn in The Troll Cave
     .accept 218 >> Accept The Stolen Journal
 step << !Paladin !Mage
     .goto Dun Morogh,25.0,76.0
@@ -324,7 +326,7 @@ RXPGuides.RegisterGuide([[
 << Alliance !Warlock !Hunter
 #name 6-11 Dun Morogh
 #version 1
-#group Alliance 1-20
+#group RestedXP Alliance 1-20
 #defaultfor Gnome/Dwarf
 #next 11-14 Darkshore
 step
@@ -756,7 +758,7 @@ step << Warrior
 .goto Dun Morogh,47.4,52.6
     .train 284 >>Train Heroic Strike r2
     .train 1715 >>Train Hamstring
-step << Warrior/Rogue/Paladin
+step << Warrior/Rogue/Paladin tbc
     .istrained 3273
 .money <0.0095
     .goto Dun Morogh,47.2,52.6
@@ -1336,7 +1338,7 @@ step << Rogue
 step << Rogue
     .goto StormwindClassic,57.6,57.1
     .vendor >> Buy a Cutlass from Gunther and equip it
-step << Rogue
+step << Rogue tbc
     #sticky
     #completewith next
 .hs >> Hearth to Thelsamar
@@ -1368,6 +1370,10 @@ step << tbc
 step << tbc
     #label Darkshore1
     .zone Darkshore >>Get onto the boat when it comes. Take it to Darkshore
+step << Warlock wotlk/Rogue wotlk
+    #xprate <1.5
+    .goto StormwindClassic,52.61,65.71
+    .home >> Set your Hearthstone to Stormwind City
 step << wotlk
     .goto StormwindNew,21.8,56.2
     .zone Darkshore >> Head to the Stormwind Harbor and take the boat to Darkshore
@@ -1379,7 +1385,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 1-12 Dun Morogh
 #version 1
-#group Alliance 1-20
+#group RestedXP Alliance 1-20
 #defaultfor Gnome Warlock
 #next 12-14 Loch Modan Gnome;11-14 Darkshore
 step << !Gnome !Dwarf
@@ -2498,7 +2504,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Warlock
 #name 12-14 Loch Modan Gnome
 #version 1
-#group Alliance 1-20
+#group RestedXP Alliance 1-20
 #defaultfor Gnome Warlock
 #next 14-20 Bloodmyst
 step
@@ -2834,7 +2840,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 1-11 Dun Morogh
 #version 1
-#group Alliance 1-20
+#group RestedXP Alliance 1-20
 #defaultfor Dwarf Hunter
 #next 11-14 Darkshore
 step << !Gnome !Dwarf

@@ -4,9 +4,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #name Boosted Character 58-60
 #version 1
-#group Alliance Boosted 58-60
+#group RestedXP Alliance Boosted 58-60
 #defaultfor 58Boost
-#next Alliance 60-70\59-61 Hellfire Peninsula
+#next RestedXP Alliance 60-70\59-61 Hellfire Peninsula
 step << Warrior
 .accept 64028 >>Accept A New Beginning
     .turnin 64028 >>Turn in A New Beginning

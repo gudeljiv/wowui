@@ -3,7 +3,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter/NightElf
 #name 11-16 Darkshore
 #version 1
-#group Alliance 1-20
+#group RestedXP Alliance 1-20
 #next 16-19 Darkshore
 
 step <<  NightElf
@@ -540,7 +540,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #name 13-15 Westfall
 #version 1
-#group Alliance 1-20
+#group RestedXP Alliance 1-20
 #defaultfor !NightElf !Hunter
 #next 14-19 Darkshore
 
@@ -826,7 +826,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #name 16-19 Darkshore
 #version 1
-#group Alliance 1-20
+#group RestedXP Alliance 1-20
 #defaultfor Hunter/NightElf
 #next 19-20 Redridge << !Hunter
 #next 19-21 Darkshore/Ashenvale << Hunter
@@ -1318,7 +1318,7 @@ RXPGuides.RegisterGuide([[
 << Alliance !Hunter !NightElf
 #name 14-19 Darkshore
 #version 1
-#group Alliance 1-20
+#group RestedXP Alliance 1-20
 #defaultfor !Hunter !NightElf
 #next 19-20 Redridge
 
@@ -1873,7 +1873,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Hunter
 #name 19-21 Darkshore/Ashenvale
 #version 1
-#group Alliance 1-20
+#group RestedXP Alliance 1-20
 #next RestedXP Alliance 20-30\21-23 Ashenvale/Stonetalon
 
 step
@@ -2196,7 +2196,7 @@ RXPGuides.RegisterGuide([[
 << Alliance !Hunter
 #name 19-20 Redridge
 #version 1
-#group Alliance 1-20
+#group RestedXP Alliance 1-20
 #next 20-21 Darkshore/Ashenvale
 step
     #completewith start
@@ -2758,7 +2758,7 @@ RXPGuides.RegisterGuide([[
 << Alliance !Hunter
 #name 20-21 Darkshore/Ashenvale
 #version 1
-#group Alliance 1-20
+#group RestedXP Alliance 1-20
 #next RestedXP Alliance 20-30\21-23 Stonetalon/Ashenvale
 
 step << Druid

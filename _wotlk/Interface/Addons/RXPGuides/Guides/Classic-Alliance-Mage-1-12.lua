@@ -3,7 +3,7 @@ RXPGuides.RegisterGuide([[
 << Human Mage
 #name 1-10 Elwynn Forest Mage AoE
 #version 1
-#group Alliance Mage
+#group RestedXP Alliance Mage
 #defaultfor Human
 #next 10-12 Loch Modan Mage AoE
 step
@@ -660,7 +660,7 @@ RXPGuides.RegisterGuide([[
 << Gnome Mage
 #name 1-10 Dun Morogh Mage AoE
 #version 1
-#group Alliance Mage
+#group RestedXP Alliance Mage
 #defaultfor Dwarf/Gnome
 #next 10-12 Loch Modan Mage AoE
 step
@@ -1209,7 +1209,7 @@ RXPGuides.RegisterGuide([[
 << Alliance Mage
 #name 10-12 Loch Modan Mage AoE
 #version 1
-#group Alliance Mage
+#group RestedXP Alliance Mage
 #defaultfor Human Mage/Gnome Mage
 #next 12-18 Darkshore Mage AoE
 step

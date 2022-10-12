@@ -10,6 +10,11 @@ addon.linePoints = {}
 
 addon.arrowFrame = CreateFrame("Frame", "RXPG_ARROW", UIParent)
 local af = addon.arrowFrame
+addon.enabledFrames["arrowFrame"] = af
+af.IsFeatureEnabled = function ()
+    return not addon.settings.db.profile.disableArrow and (addon.hideArrow ~= nil and not addon.hideArrow)
+end
+
 af:SetMovable(true)
 af:EnableMouse(1)
 af:SetClampedToScreen(true)
@@ -33,13 +38,13 @@ af:SetPoint("TOP")
 af:Hide()
 
 af:SetScript("OnMouseDown", function(self, button)
-    if not RXPData.lockFrames and af:GetAlpha() ~= 0 then af:StartMoving() end
+    if not addon.settings.db.profile.lockFrames and af:GetAlpha() ~= 0 then af:StartMoving() end
 end)
 af:SetScript("OnMouseUp", function(self, button) af:StopMovingOrSizing() end)
 
 function addon.UpdateArrow(self)
 
-    if RXPCData.disableArrow or not self then return end
+    if addon.settings.db.profile.disableArrow or not self then return end
     local element = self.element
     if element then
         local x, y, instance = HBD:GetPlayerWorldPosition()
@@ -152,7 +157,7 @@ MapPinPool.creationFunc = function(framePool)
             f.text:SetText(stepIndex)
         end
 
-        if RXPData.mapCircle and not isMiniMapPin then
+        if addon.settings.db.profile.mapCircle and not isMiniMapPin then
             local size = math.max(f.text:GetWidth(), f.text:GetHeight()) + 8
 
             if step.active then
@@ -160,7 +165,7 @@ MapPinPool.creationFunc = function(framePool)
                 f:SetWidth(size + 3)
                 f:SetHeight(size + 3)
                 f:SetBackdropColor(0.0, 0.0, 0.0,
-                                   RXPData.worldMapPinBackgroundOpacity)
+                                   addon.settings.db.profile.worldMapPinBackgroundOpacity)
                 f.inner:SetBackdropColor(1, 1, 1, 1)
                 f.inner:SetWidth(size + 3)
                 f.inner:SetHeight(size + 3)
@@ -168,7 +173,7 @@ MapPinPool.creationFunc = function(framePool)
                 f.text:SetFont(addon.font, 14, "OUTLINE")
             else
                 f:SetBackdropColor(0.1, 0.1, 0.1,
-                                   RXPData.worldMapPinBackgroundOpacity)
+                                   addon.settings.db.profile.worldMapPinBackgroundOpacity)
                 f:SetWidth(size)
                 f:SetHeight(size)
 
@@ -180,13 +185,13 @@ MapPinPool.creationFunc = function(framePool)
             f.inner:SetWidth(size)
             f.inner:SetHeight(size)
             f.text:SetPoint("CENTER", f, 0, 0)
-            f:SetScale(RXPData.worldMapPinScale)
+            f:SetScale(addon.settings.db.profile.worldMapPinScale)
             f:SetAlpha(pin.opacity)
         else
             if step.active and not isMiniMapPin then
                 f:SetAlpha(1)
                 f:SetBackdropColor(0.0, 0.0, 0.0,
-                                   RXPData.worldMapPinBackgroundOpacity)
+                                   addon.settings.db.profile.worldMapPinBackgroundOpacity)
                 f.inner:SetBackdropColor(1, 1, 1, 1)
                 f.inner:SetWidth(8 + 3)
                 f.inner:SetHeight(8 + 3)
@@ -194,7 +199,7 @@ MapPinPool.creationFunc = function(framePool)
                 f.text:SetFont(addon.font, 14, "OUTLINE")
             else
                 local bgAlpha = isMiniMapPin and 0 or
-                                    RXPData.worldMapPinBackgroundOpacity
+                                    addon.settings.db.profile.worldMapPinBackgroundOpacity
                 f:SetBackdropColor(0.1, 0.1, 0.1, bgAlpha)
 
                 f.inner:SetBackdropColor(0, 0, 0, 0)
@@ -208,7 +213,7 @@ MapPinPool.creationFunc = function(framePool)
             f.inner:SetWidth(1)
             f.inner:SetHeight(1)
             f.text:SetPoint("CENTER", f, 0, 0)
-            f:SetScale(RXPData.worldMapPinScale)
+            f:SetScale(addon.settings.db.profile.worldMapPinScale)
             f:SetAlpha(pin.opacity)
         end
 
@@ -360,7 +365,7 @@ local lineMapFramePool = MapLinePool.create()
 
 -- Calculates if a given element is close to any other provided pins
 local function elementIsCloseToOtherPins(element, pins, isMiniMapPin)
-    local overlap = RXPData.distanceBetweenPins or 1
+    local overlap = addon.settings.db.profile.distanceBetweenPins or 1
     local pinDistanceMod, pinMaxDistance = 0, 0
     if isMiniMapPin then
         pinMaxDistance = 25
@@ -671,7 +676,7 @@ end
 -- Generate pins using the current guide's steps, then add the pins to the world map
 local function addWorldMapPins()
     -- Calculate which pins should be on the world map
-    local pins = generatePins(addon.currentGuide.steps, RXPData.numMapPins,
+    local pins = generatePins(addon.currentGuide.steps, addon.settings.db.profile.numMapPins,
                               RXPCData.currentStep, false)
 
     -- Convert each "pin" data structure into a WoW frame. Then add that frame to the world map
@@ -689,7 +694,7 @@ local function addWorldMapPins()
 end
 
 local function addWorldMapLines()
-    local lineData = generateLines(addon.currentGuide.steps, RXPData.numMapPins,
+    local lineData = generateLines(addon.currentGuide.steps, addon.settings.db.profile.numMapPins,
                                    RXPCData.currentStep, false)
 
     for i = #lineData, 1, -1 do
@@ -706,9 +711,9 @@ end
 
 -- Generate pins using only the active steps, then add the pins to the Mini Map
 local function addMiniMapPins(pins)
-    if RXPData.hideMiniMapPins then return end
+    if addon.settings.db.profile.hideMiniMapPins then return end
     -- Calculate which pins should be on the mini map
-    local pins = generatePins(addon.currentGuide.steps, RXPData.numMapPins,
+    local pins = generatePins(addon.currentGuide.steps, addon.settings.db.profile.numMapPins,
                               RXPCData.currentStep, true)
 
     -- Convert each "pin" data structure into a WoW frame. Then add that frame to the mini map
@@ -740,7 +745,7 @@ local function updateArrow()
                 (element.parent.completed or element.parent.skip)) and
             not (element.text and (element.completed or isComplete) and
                 not isComplete)) then
-            af:SetShown(not RXPCData.disableArrow and not addon.hideArrow)
+            af:SetShown(not addon.settings.db.profile.disableArrow and not addon.hideArrow and addon.settings.db.profile.showEnabled)
             af.dist = 0
             af.orientation = 0
             af.element = element
@@ -778,6 +783,16 @@ local function updateArrow()
     end
 
     af:Hide()
+end
+
+function addon.ResetArrowPosition()
+    addon.settings.db.profile.disableArrow = false
+    if not addon.settings.db.profile.showEnabled then
+        addon.settings.ToggleActive()
+    end
+    af:ClearAllPoints()
+    af:SetPoint("CENTER", 0, 200)
+    updateArrow()
 end
 
 -- Removes all pins from the map and mini map and resets all data structrures

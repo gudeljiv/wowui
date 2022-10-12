@@ -61,6 +61,40 @@ local function OpenChatWindow(id)
 	end
 end
 
+local function SetChatChannels()
+	ChatFrame_RemoveChannel(ChatFrame1, 'LookingForGroup')
+	ChatFrame_RemoveChannel(ChatFrame1, 'LocalDefense')
+	ChatFrame_RemoveChannel(ChatFrame1, 'WorldDefense')
+
+	ChatFrame_RemoveAllChannels(ChatFrame3)
+	ChatFrame_RemoveAllChannels(ChatFrame4)
+	ChatFrame_RemoveAllChannels(ChatFrame5)
+	ChatFrame_RemoveAllChannels(ChatFrame6)
+	ChatFrame_RemoveAllChannels(ChatFrame7)
+
+	JoinChannelByName('LookingForGroup')
+	JoinChannelByName('LocalDefense')
+	JoinChannelByName('WorldDefense')
+
+	ChatFrame_AddChannel(ChatFrame4, 'LookingForGroup')
+	ChatFrame_AddChannel(ChatFrame5, 'LocalDefense')
+	ChatFrame_AddChannel(ChatFrame5, 'WorldDefense')
+
+	ChatFrame_RemoveMessageGroup(ChatFrame1, 'COMBAT_XP_GAIN')
+	ChatFrame_RemoveMessageGroup(ChatFrame1, 'COMBAT_HONOR_GAIN')
+	ChatFrame_RemoveMessageGroup(ChatFrame1, 'COMBAT_FACTION_CHANGE')
+	ChatFrame_RemoveMessageGroup(ChatFrame1, 'SKILL')
+	ChatFrame_RemoveMessageGroup(ChatFrame1, 'LOOT')
+	ChatFrame_RemoveMessageGroup(ChatFrame1, 'MONEY')
+
+	ChatFrame_AddMessageGroup(ChatFrame7, 'SKILL')
+	ChatFrame_AddMessageGroup(ChatFrame7, 'LOOT')
+	ChatFrame_AddMessageGroup(ChatFrame7, 'MONEY')
+	ChatFrame_AddMessageGroup(ChatFrame7, 'COMBAT_XP_GAIN')
+	ChatFrame_AddMessageGroup(ChatFrame7, 'COMBAT_HONOR_GAIN')
+	ChatFrame_AddMessageGroup(ChatFrame7, 'COMBAT_FACTION_CHANGE')
+end
+
 local function SetChat()
 	local chatWidth = (GetScreenWidth() * UIParent:GetEffectiveScale()) / (4.2 * xVermin.Config.UIscale)
 
@@ -282,60 +316,30 @@ local function SetChat()
 	ChatFrameChannelButton:Hide()
 	ChatFrameMenuButton:Hide()
 	ChatFrame1Tab:Click()
-end
 
-local function SetChatChannels()
-	ChatFrame_RemoveChannel(ChatFrame1, 'LookingForGroup')
-	ChatFrame_RemoveChannel(ChatFrame1, 'LocalDefense')
-	ChatFrame_RemoveChannel(ChatFrame1, 'WorldDefense')
-
-	ChatFrame_RemoveAllChannels(ChatFrame3)
-	ChatFrame_RemoveAllChannels(ChatFrame4)
-	ChatFrame_RemoveAllChannels(ChatFrame5)
-	ChatFrame_RemoveAllChannels(ChatFrame6)
-	ChatFrame_RemoveAllChannels(ChatFrame7)
-
-	JoinChannelByName('LookingForGroup')
-	JoinChannelByName('LocalDefense')
-	JoinChannelByName('WorldDefense')
-
-	ChatFrame_AddChannel(ChatFrame4, 'LookingForGroup')
-	ChatFrame_AddChannel(ChatFrame5, 'LocalDefense')
-	ChatFrame_AddChannel(ChatFrame5, 'WorldDefense')
-
-	ChatFrame_RemoveMessageGroup(ChatFrame1, 'COMBAT_XP_GAIN')
-	ChatFrame_RemoveMessageGroup(ChatFrame1, 'COMBAT_HONOR_GAIN')
-	ChatFrame_RemoveMessageGroup(ChatFrame1, 'COMBAT_FACTION_CHANGE')
-	ChatFrame_RemoveMessageGroup(ChatFrame1, 'SKILL')
-	ChatFrame_RemoveMessageGroup(ChatFrame1, 'LOOT')
-	ChatFrame_RemoveMessageGroup(ChatFrame1, 'MONEY')
-
-	ChatFrame_AddMessageGroup(ChatFrame7, 'SKILL')
-	ChatFrame_AddMessageGroup(ChatFrame7, 'LOOT')
-	ChatFrame_AddMessageGroup(ChatFrame7, 'MONEY')
-	ChatFrame_AddMessageGroup(ChatFrame7, 'COMBAT_XP_GAIN')
-	ChatFrame_AddMessageGroup(ChatFrame7, 'COMBAT_HONOR_GAIN')
-	ChatFrame_AddMessageGroup(ChatFrame7, 'COMBAT_FACTION_CHANGE')
+	SetChatChannels()
 end
 
 local chat = CreateFrame('Frame')
 chat:SetScript(
 	'OnEvent',
 	function(self, event)
-		if event == 'PLAYER_LOGIN' then
-			C_Timer.After(
-				2,
-				function()
-					SetChat()
-					C_Timer.After(
-						2,
-						function()
-							SetChatChannels()
-						end
-					)
-				end
-			)
-		end
+		SetChat()
+		-- if event == 'PLAYER_LOGIN' then
+		-- 	SetChat()
+		-- 	C_Timer.After(
+		-- 		2,
+		-- 		function()
+		-- 			SetChat()
+		-- 			C_Timer.After(
+		-- 				2,
+		-- 				function()
+		-- 					SetChatChannels()
+		-- 				end
+		-- 			)
+		-- 		end
+		-- 	)
+		-- end
 	end
 )
 chat:RegisterEvent('PLAYER_LOGIN')

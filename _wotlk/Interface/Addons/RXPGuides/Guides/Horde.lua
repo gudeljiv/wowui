@@ -1,7 +1,7 @@
 RXPGuides.RegisterGuide([[
 #version 1
 #defaultfor Horde Mage
-#group Horde Mage AoE
+#group RestedXP Horde Mage AoE
 #version 1
 #classic
 << Horde Mage
@@ -53,6 +53,7 @@ step << !Undead Mage
 #completewith next
 .goto Undercity,82.36,15.31
 +Go to the Reagent Vendor on your right and perform a Logout Skip by positioning your character on the highest part of the lowest staircase until it looks like they're floating, then logging out and back in.
+.link https://www.youtube.com/watch?v=-Bi95bCN8dM >> CLICK HERE for an example
 >>If you can't do this, just run out of Undercity normally
 step << !Undead Mage
 .goto Tirisfal Glades,61.85,66.59,60 >> Exit Undercity
@@ -84,6 +85,7 @@ step
 #completewith next
 .goto Silverpine Forest,46.50,86.49,0
 +It is HIGHLY recommended you watch the link, as it can be a bit tricky here
+.link https://www.twitch.tv/videos/970326213?t=03h49m43s >>CLICK HERE
 >>You can also vendor/repair/buy potions at Wallace the Blind next to the gates if needed
 step << Undead Mage
 #requires Valdred
@@ -146,6 +148,7 @@ step
 #sticky
 #completewith next
 +It is HIGHLY recommended you watch the link, as it can be a bit tricky here
+.link https://www.twitch.tv/videos/970326213?t=04h32m58s >>CLICK HERE
 step
 #sticky
 #completewith l24
@@ -241,6 +244,7 @@ step
 step
 .goto Hillsbrad Foothills,36.02,39.19,150 >> Run to the Hillsbrad Fields
 +It is HIGHLY recommended you watch the link for the new field pulls you have to do, as it can be a bit tricky here
+.link https://www.twitch.tv/videos/970328906?t=00h50m19s >> CLICK HERE
 step
 .isOnQuest 502
 >>Turn in the Elixir at Stanley. Kill him afterwards
@@ -374,6 +378,7 @@ step
 #sticky
 #completewith next
 +It is HIGHLY recommended you watch the link, as it can be a bit tricky here
+.link https://www.twitch.tv/videos/970328906?t=06h14m29s >>CLICK HERE
 step
 #sticky
 #label Hackett
@@ -446,7 +451,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 22-30
+#group RestedXP Horde 22-30
 #classic
 << Horde
 #name 22-24 Hillsbrad
@@ -930,7 +935,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 22-30
+#group RestedXP Horde 22-30
 #version 1
 #classic
 #som
@@ -1182,7 +1187,7 @@ step << Shaman/Rogue
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 22-30
+#group RestedXP Horde 22-30
 #classic
 << Horde
 #name 24-26 Southern Barrens/Stonetalon
@@ -1703,7 +1708,7 @@ step << !Hunter
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 22-30
+#group RestedXP Horde 22-30
 #classic
 << Horde
 #name 26-28 Ashenvale
@@ -1938,6 +1943,7 @@ step << Rogue
 step << Rogue
 #completewith next
 +To solo this quest you need to play correctly in 2 ways. First of all you need to not die to breath, that means before you aggro the boss you should have full breath. The second thing to be aware of is that you need to kick EVERY frostbolt you can and use evasion after a kick. Most of his damage will be from frostbolts. Remember you can vanish and try again 5 mins later, aslong as you don't die to breath.
+.link https://youtu.be/ehXV0stmDrM?t=202 >> CLICK HERE for a guide on this section
 step << Rogue
 >> Stealth all the way to the Moonshine Ruins, then swim under the Bridge and prepare for the boss (Use all buffs you have)
 >> Loot the Fathom Core, this spawns the boss.
@@ -1984,7 +1990,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 22-30
+#group RestedXP Horde 22-30
 #classic
 << Horde
 #name 28-30 Thousand Needles
@@ -2175,6 +2181,7 @@ step
 .goto Thousand Needles,25.90,54.80
 >> Head to the harpy cave. Destroy all the boxes at the end of it to summon Grenka Bloodscreech.
 >> Be careful as this quest is VERY HARD. Find a group if you're unable to solo this or skip it.
+.link https://www.youtube.com/watch?v=EVy-6OjB5bs&t=27300s >> CLICK HERE for a visual reference if you think it's doable
 .complete 1150,1
 step
 #completewith SteelsnapG
@@ -2584,10 +2591,10 @@ step << Warrior
 .fly Orgrimmar >> Fly to Orgrimmar
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #tbc
-#group Horde 30-45
+#group RestedXP Horde 30-45
 << Horde
 #name 30-34 Hillsbrad / Arathi / Shimmering Flats
 #next 34-38 Stranglethorn Vale / Dustwallow
@@ -2600,34 +2607,30 @@ step
 step
 .goto Stranglethorn Vale,32.5,29.3
 .fp Grom'gol >> Get the Grom'gol Base Camp flight path
-step << !Shaman
-xp <35,1
-.goto Tirisfal Glades,61.9,59.1
-.zone Stranglethorn Vale >> Board the Zeppelin to Orgrimmar
 step
-.xp <32,1 << !Shaman
+.isQuestTurnedIn 1176
 .zone Tirisfal Glades >>Take the Zeppelin to Undercity.
 step
-.xp <32,1
+.isQuestTurnedIn 1176
 .goto Undercity,63.7,48.9
 .accept 1164 >> Accept To Steal From Thieves
 step << Hunter
-.xp <32,1
+.isQuestTurnedIn 1176
 .goto Undercity,58.6,32.7
 .vendor >> Go and buy Heavy Quiver & Bullova
 .collect 7371,1
 .collect 2523,1
 step << Rogue
-.xp <32,1
+.isQuestTurnedIn 1176
 .goto Undercity,58.6,32.7
 .vendor >> Go and buy Broadsword
 .collect 2520,1
 step << !Undead !Rogue
-.xp <32,1
+.isQuestTurnedIn 1176
 .goto Undercity,63.3,48.4
 .fp Undercity >> Get the Undercity flight path
 step << !Shaman
-.xp <32,1
+.isQuestTurnedIn 1176
 #completewith next
 .goto Undercity,63.2,48.3
 .fly Tarren Mill >> Fly to Tarren Mill
@@ -2959,7 +2962,6 @@ step
 .turnin 655 >> Turn in Hammerfall
 .accept 671 >> Accept Foul Magics
 step
-#xprate <1.5
 .isQuestTurnedIn 533
 .goto Arathi Highlands,74.7,36.3
 .accept 672 >> Accept Raising Spirits
@@ -3256,17 +3258,35 @@ step
 .isOnQuest 1175
 .goto Thousand Needles,81.6,78.0
 .turnin 1175 >> Turn in A Bump in the Road
-step
+step << !Shaman !Warrior
 #completewith next
 .isOnQuest 1148
 .goto Tanaris,51.6,25.5
 .fly Crossroads >> Fly to Crossroads
-step << Shaman
+step << Shaman/Warrior
 #completewith next
 .zoneskip Thousand Needles,1
 .goto Tanaris,51.6,25.5
-.fly Orgrimmar >> Fly to Orgrimmar
-.zone Orgrimmar >> Hearth to Orgrimmar if it's set there
+.zone Orgrimmar >> Hearth to Orgrimmar
+step << Shaman/Warrior
+.goto Orgrimmar,75.0,34.2
+.turnin 1184 >>Turn in Parts of the Swarm
+.zoneskip Orgrimmar,1
+step << Shaman
+#completewith next
+.goto Orgrimmar,38.6,36.0
+.trainer >> Go and train your class spells
+.zoneskip Orgrimmar,1
+step << Warrior
+#completewith next
+.goto Orgrimmar,79.7,31.4
+.trainer >> Go and train your class spells
+.zoneskip Orgrimmar,1
+step << Shaman/Warrior
+#completewith next
+.isOnQuest 1148
+.goto Tanaris,51.6,25.5
+.fly Crossroads >> Fly to Crossroads
 step
 .isOnQuest 1148
 .goto The Barrens,51.1,29.6
@@ -3278,7 +3298,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 30-40
+#group RestedXP Horde 30-40
 #classic
 << Horde
 #name 30-33 Hillsbrad/Arathi
@@ -3771,7 +3791,7 @@ step
 RXPGuides.RegisterGuide([[
 #version 1
 #defaultfor Horde Mage
-#group Horde Mage AoE
+#group RestedXP Horde Mage AoE
 #classic
 << Horde Mage
 #name 30-36 Arathi/Alterac AoE
@@ -3894,6 +3914,7 @@ step
 #sticky
 #completewith next
 +It is HIGHLY recommended you watch the link, as it can be a bit tricky here
+.link https://www.twitch.tv/videos/970330908?t=03h27m43s >>CLICK HERE
 step
 >>AoE Syndicates. Loot them for the Missive
 .goto Alterac Mountains,58.35,67.49,120,0
@@ -4044,7 +4065,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 30-40
+#group RestedXP Horde 30-40
 #classic
 << Horde
 #name 33-34 Shimmering Flats
@@ -4301,118 +4322,84 @@ step
 .fly Sun Rock >> Fly to Stonetalon Mountains
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #tbc
-#group Horde 30-45
+#group RestedXP Horde 30-45
 << Horde
 #name 34-38 Stranglethorn Vale / Dustwallow
 #next 38-40 Hillsbrad / Alterac / Arathi Part 2
 step
-.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto The Barrens,51.5,30.4
 .fly Orgrimmar >>Fly to Orgrimmar
 .zoneskip The Barrens,1
 step
-.zoneskip Stranglethorn Vale,1
 .zone Orgrimmar >> Arrive in Orgrimmar
 step << Paladin
-.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto Orgrimmar,32.4,35.8
 .trainer >> Go and train your class spells
 .zoneskip Orgrimmar,1
-step << Shaman
-.zoneskip Stranglethorn Vale,1
-#completewith next
-.goto Orgrimmar,38.6,36.0
-.trainer >> Go and train your class spells
-.zoneskip Orgrimmar,1
 step << Hunter
-.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto Orgrimmar,66.1,18.5
 .trainer >> Go and train your class spells
 .zoneskip Orgrimmar,1
 step << Hunter
-.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto Orgrimmar,66.3,14.8
 .trainer >> Go and train your pet spells
 .zoneskip Orgrimmar,1
-step << Warrior
-.zoneskip Stranglethorn Vale,1
-#completewith next
-.goto Orgrimmar,79.7,31.4
-.trainer >> Go and train your class spells
-.zoneskip Orgrimmar,1
 step << Rogue
-.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto Orgrimmar,44.0,54.6
 .trainer >> Go and train your class spells
 .zoneskip Orgrimmar,1
 step << Warlock
-.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto Orgrimmar,48.0,46.0
 .trainer >> Go and train your class spells
 .zoneskip Orgrimmar,1
 step << Mage
-.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto Orgrimmar,38.8,85.6
 .trainer >> Go and train your class spells
 .zoneskip Orgrimmar,1
 step << Priest
-.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto Orgrimmar,35.6,87.8
 .trainer >> Go and train your class spells
 .zoneskip Orgrimmar,1
-step
-.zoneskip Stranglethorn Vale,1
+step << !Shaman !Warrior
 .goto Orgrimmar,75.0,34.2
 .turnin 1184 >>Turn in Parts of the Swarm
 .zoneskip Orgrimmar,1
-step << Warrior
-.zoneskip Stranglethorn Vale,1
-#completewith next
-.goto Orgrimmar,81.5,19.6
-.train 2567 >> Train Thrown from Hanashi
-.zoneskip Orgrimmar,1
-step
-.zoneskip Stranglethorn Vale,1
+step << !Warrior !Shaman
 #completewith next
 .goto Orgrimmar,54.1,68.4
 .home >>Set your Hearthstone to Valley of Strength
 .zoneskip Orgrimmar,1
 step << Shaman
-.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto Orgrimmar,45.2,63.9
 .fly Ratchet >>Fly to Ratchet
-step
-.zoneskip Stranglethorn Vale,1
+step << !Shaman
 .maxlevel 36
 #completewith next
 .goto Orgrimmar,45.2,63.9,-1
 .goto Tanaris,51.6,25.5,-1
 .fly Ratchet >>Fly to Ratchet
 step << Shaman
-.zoneskip Stranglethorn Vale,1
 .isOnQuest 96
 .goto The Barrens,65.8,43.8
 .turnin 96 >>Turn in Call of Water
 step << Shaman
-.zoneskip Stranglethorn Vale,1
 .isOnQuest 1178
 .goto The Barrens,62.7,36.3
 .turnin 1178 >> Turn in Goblin Sponsorship
 .accept 1180 >> Accept Goblin Sponsorship
 step << !Shaman
-.zoneskip Stranglethorn Vale,1
 .maxlevel 36
 .isOnQuest 1178
 .goto The Barrens,62.7,36.3
@@ -4765,7 +4752,7 @@ step
 .goto Stranglethorn Vale,32.0,28.7
 .turnin 9457 >> Turn in An Unusual Patron
 step
-#sticky
+#completewith next
 .isQuestTurnedIn 568
 >> Focus on killing the Mosh'Ogg Ogers. While you wait for the respawn go across the river and kill the Tigers and the stealthed Panthers.
 .complete 570,1 
@@ -4931,7 +4918,7 @@ step << Warrior
 step << Warrior
 .isQuestTurnedIn 192
 .goto Orgrimmar,81.2,19.0
-.collect 25876,1 >> Purchase a Gleaming Throwing Axe from Zendo'jian
+.collect 25876,1 >> Purchase a Gleaming Throwing Axe from Zendo'jian. Train Throwing while you're here if you haven't learned it already.
 step << Rogue
 .isQuestTurnedIn 192
 #completewith next
@@ -5187,7 +5174,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 30-40
+#group RestedXP Horde 30-40
 #classic
 << Horde
 #name 34-35 Desolace
@@ -5542,7 +5529,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 30-40
+#group RestedXP Horde 30-40
 #classic
 << Horde
 #name 35-37 Northern Stranglethorn
@@ -5939,7 +5926,7 @@ step << Priest
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde Mage AoE
+#group RestedXP Horde Mage AoE
 #classic
 << Horde Mage
 #name 36-60 Mage AoE
@@ -5995,6 +5982,7 @@ step
 #completewith next
 +I HIGHLY recommend watching the mage guide for these mobs, as they are arguably the hardest part of the AoE Mage leveling experience
 >>I wouldn't recommend doing the turtle pack until level 38+
+.link https://youtu.be/SxMc2GoP33c?t=3824 >> CLICK HERE
 step
 #sticky
 #label Head
@@ -6060,6 +6048,7 @@ step << Undead
 #completewith next
 .goto Undercity,82.36,15.31
 +Go to the Reagent Vendor on your right and perform a Logout Skip by positioning your character on the highest part of the lowest staircase until it looks like they're floating, then logging out and back in.
+.link https://www.youtube.com/watch?v=-Bi95bCN8dM >> CLICK HERE for an example
 >>If you can't do this, just run out of Undercity normally
 step << Undead
 #era
@@ -6175,6 +6164,8 @@ step
 >>Click either of the links depending on whether or not you have a mount yet
 >>If you have no mount, as soon as you get 90g worth of loot, teleport back to Undercity, logout skip to Tirisfal, run to Brill, and then buy your mount. Hearth back to Gadgetzan << Undead
 >>If you have no mount, as soon as you get 90g worth of loot, teleport back to Orgrimmar, run to Durotar, then run to Sen'jin and buy your mount. Hearth back to Gadgetzan << Troll
+.link https://youtu.be/TgwHw7qT4ws >> If you have a mount, CLICK HERE
+.link https://youtu.be/4-yJ47T728Y?t=6 >> If you DONT have a mount, CLICK HERE
 step
 #softcore
 #sticky
@@ -6246,6 +6237,7 @@ step
 #softcore
 #som
 .goto Tanaris,68.73,41.49,50 >> Travel to Lost Rigger Cove. Open the AoE guide en route and watch it
+.link https://youtu.be/SxMc2GoP33c?t=4113 >> CLICK HERE for reference
 step
 #softcore
 #som
@@ -6348,6 +6340,7 @@ step
 step
 #hardcore
 .goto Tanaris,68.73,41.49,50 >> Travel to Lost Rigger Cove. Open the AoE guide en route and watch it
+.link https://youtu.be/SxMc2GoP33c?t=4113 >> CLICK HERE for reference
 step
 #hardcore
 #sticky
@@ -6471,6 +6464,7 @@ step
 #era
 #completewith next
 +You're now going to learn to do a harder version which takes longer, but gives more xp: Pulling scarabs.
+.link https://youtu.be/rFO4prcG2p0 >> CLICK HERE
 step
 #softcore
 #som
@@ -6479,6 +6473,9 @@ step
 >>Click either of the links depending on whether or not you have a mount yet
 >>If you have no mount, as soon as you get 50g worth of loot, teleport back to Undercity, logout skip to Tirisfal, run to Brill, and then buy your mount. Hearth back to Gadgetzan << Undead
 >>If you have no mount, as soon as you get 50g worth of loot, teleport back to Orgrimmar, run to Durotar, then run to Sen'jin and buy your mount. Hearth back to Gadgetzan << Troll
+.link https://youtu.be/TgwHw7qT4ws >> If you have a mount, CLICK HERE
+.link https://youtu.be/4-yJ47T728Y?t=6 >> If you DONT have a mount, CLICK HERE
+.link https://youtu.be/rFO4prcG2p0 >> CLICK HERE when you're comfortable enough to do the additional Scarab pull
 step
 #softcore
 #sticky
@@ -6577,6 +6574,7 @@ step
 #completewith next
 .goto Undercity,82.36,15.31
 +Go to the Reagent Vendor on your right and perform a Logout Skip by positioning your character on the highest part of the lowest staircase until it looks like they're floating, then logging out and back in.
+.link https://www.youtube.com/watch?v=-Bi95bCN8dM >> CLICK HERE for an example
 >>If you can't do this, just run out of Undercity normally
 step
 .goto Tirisfal Glades,61.85,66.59,60 >> Exit Undercity
@@ -6644,6 +6642,7 @@ step
 #completewith next
 +Start AoEing the undead in the area. Be careful as the Skeletal Terrors fear. Watch the video for more info << !Undead
 +Start AoEing the undead in the area. Be careful as the Skeletal Terrors fear (remember to use your racial Will of the Forsaken). Watch the video for more info << Undead
+.link https://youtu.be/SxMc2GoP33c?t=4759 >> CLICK HERE
 step
 #label SkeletonKey
 #completewith UD58
@@ -6731,6 +6730,7 @@ step
 #completewith next
 .goto Undercity,67.62,44.16
 +Perform a Logout Skip by positioning your character until it looks like they're floating with some distance between you and the ground, then logging out and back in.
+.link https://www.youtube.com/watch?v=-Bi95bCN8dM >> CLICK HERE for an example
 >>If you can't do this, just run out of Undercity normally
 step
 .goto Tirisfal Glades,61.85,66.59,60 >> Exit Undercity
@@ -6743,6 +6743,7 @@ step
 #softcore
 #completewith next
 +You can now go and do ZG from 58-60. This is EXTREMELY hard, but is faster than open world aoe leveling if you're confident/already know how to do it
+.link https://youtu.be/lfgvyhmf3q4?t=7 >>CLICK HERE
 step
 >>Go to the top floor of the house. Talk to Janice
 .goto Western Plaguelands,38.4,54.1
@@ -6904,6 +6905,7 @@ step
 #completewith next
 .goto Undercity,82.36,15.31
 +Go to the Reagent Vendor on your right and perform a Logout Skip by positioning your character on the highest part of the lowest staircase until it looks like they're floating, then logging out and back in.
+.link https://www.youtube.com/watch?v=-Bi95bCN8dM >> CLICK HERE for an example
 >>If you can't do this, just run out of Undercity normally
 step
 .goto Tirisfal Glades,61.85,66.59,60 >> Exit Undercity
@@ -7074,6 +7076,7 @@ step
 #sticky
 #completewith next
 +I HIGHLY recommend watching the mage guide for these mobs
+.link https://youtu.be/SxMc2GoP33c?t=3824 >> CLICK HERE
 step
 .goto Western Plaguelands,46.30,16.86,120,0
 .goto Western Plaguelands,44.84,12.43,120,0
@@ -7196,7 +7199,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 30-40
+#group RestedXP Horde 30-40
 #classic
 << Horde
 #name 37-38 Dustwallow Marsh
@@ -7462,10 +7465,10 @@ step << Mage
 .collect 17031,3 
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #tbc
-#group Horde 30-45
+#group RestedXP Horde 30-45
 << Horde
 #name 38-40 Hillsbrad / Alterac / Arathi Part 2
 #next 40-43 Badlands / Lower Dustwallow
@@ -7484,7 +7487,7 @@ step
 >> Head to the raceway. There will be a short roleplay after turning in the quest.
 .turnin 1112 >> Turn in Parts for Kravel
 step
-.isQuestAvailable 1114
+.isQuestTurnedIn 1112
 .zoneskip Thousand Needles,1
 .goto Thousand Needles,77.8,77.2
 .accept 1114 >> Accept Delivery to the Gnomes
@@ -7616,7 +7619,7 @@ step
 .goto Undercity,62.7,47.9
 .accept 2342 >>Accept Reclaimed Treasures
 step
-#completewith next
+#completewith flytarren
 .goto Undercity,63.4,48.4
 .fly Tarren Mill >> Fly to Tarren Mill
 step
@@ -7635,6 +7638,7 @@ step
 .goto Hillsbrad Foothills,63.3,20.7
 .turnin 533 >> Turn in Infiltration
 step
+#label flytarren
 .isQuestTurnedIn 556
 .goto Hillsbrad Foothills,61.5,20.9
 .accept 557 >> Accept Bracers of Binding
@@ -7661,6 +7665,7 @@ step
 step << Warrior tbc
 #completewith Whirlwind
 +It is VERY important that you watch this video on how to cheese Cyclonian for the Whirlwind Axe
+.link https://www.youtube.com/watch?v=BiuWeMSHEhA >> Click here for a tutorial video.
 step << Warrior tbc
 >>Use one of your nature protection potions en route to here if you bought them. If you didn't buy any, don't worry
 .goto Alterac Mountains,80.5,66.9
@@ -7693,6 +7698,11 @@ step
 >>Kill Crushridge Maulers in the area. They share spawns with other ogres so you should kill the others too
 .complete 518,1 
 step
+#completewith next
+.unitscan Baron Vardus
+>> Check for Baron Vardus in the basement with /target Baron in the inn building.
+.complete 566,1 
+step
 .goto Alterac Mountains,62.7,40.2,10,0
 .goto Alterac Mountains,63.1,43.4,10,0
 .goto Alterac Mountains,60.7,43.8,10,0
@@ -7724,6 +7734,7 @@ step
 step
 #sticky
 #completewith next
+.isQuestTurnedIn 1136
 >>Kill Mountain Lions around the area for a Carcass. We will use this shortly.
 .collect 5810,1
 step
@@ -8186,7 +8197,7 @@ step << wotlk
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 30-40
+#group RestedXP Horde 30-40
 #classic
 << Horde
 #name 38-39 Alterac/Arathi
@@ -8277,10 +8288,12 @@ step << Warrior
 #softcore
 #completewith Whirlwind
 +If you didn't get the Nature Protection Potions from the Auction House, it is VERY important that you watch this video on how to cheese Cyclonian for the Whirlwind Axe
+.link https://www.youtube.com/watch?v=BiuWeMSHEhA >> CLICK HERE
 step << Warrior
 #hardcore
 #completewith Whirlwind
 +it is VERY important that you watch this video on how to cheese Cyclonian for the Whirlwind Axe
+.link https://www.youtube.com/watch?v=BiuWeMSHEhA >> CLICK HERE
 step << Warrior
 #softcore
 >>Use one of your nature protection potions en route to here if you bought them
@@ -8452,6 +8465,7 @@ step << Hunter
 >>Kill Fozruk by kiting him around Refuge Point
 >>This is a difficult quest solo, consider skipping this step if you can't group up
 .complete 652,1
+.link https://www.twitch.tv/videos/778346703 >> Click here for video reference
 .unitscan Fozruk
 step << !Hunter
 #sticky
@@ -8459,6 +8473,7 @@ step << !Hunter
 >>This is a VERY HARD elite to solo, consider skipping this step if you're not able to group up << !Warlock
 >>Fozruk can be feared, and Sleeby can heal, this is a VERY HARD quest to solo, consider skipping this step if you're not able to group up << Warlock
 .complete 652,1
+.link https://www.twitch.tv/videos/669107037?t=05h51m54s >> Click here for video reference
 .unitscan Fozruk
 step
 #sticky
@@ -8622,7 +8637,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 30-40
+#group RestedXP Horde 30-40
 #classic
 << Horde
 #name 39-40 Badlands
@@ -8635,6 +8650,7 @@ step
 .goto Wetlands,53.86,46.42,150,0
 .goto Wetlands,63.9,78.6
 .zone Loch Modan >> Logout on top of the mushrooms at the back of the cave. When you log back in, this will teleport you to just outside of Thelsamar
+.link https://www.youtube.com/watch?v=21CuGto26Mk >> CLICK HERE for a reference
 >>be VERY careful not to move forward when you log in as there are level 30-40 guards around and you may get PVP flagged. Instead run to the other side of the road and try to avoid the guards
 step
 #completewith next
@@ -8651,6 +8667,7 @@ step
 .goto Badlands,5.73,29.78,0
 >>Use the shortcut to get to Badlands faster
 .zone Badlands >> Run to the Badlands
+.link https://www.youtube.com/watch?v=oNFXup-DCM0 >> CLICK HERE
 step
 .goto Badlands,4.1,44.7
 .fp Kargath >> Get the Kargath Flight Path
@@ -8787,10 +8804,10 @@ step
 >> Buy food/water if needed
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #tbc
-#group Horde 30-45
+#group RestedXP Horde 30-45
 << Horde
 #name 40-43 Badlands / Lower Dustwallow
 #next 43-45 Lower Stranglethorn Vale
@@ -8800,6 +8817,7 @@ step << tbc
 .goto Wetlands,53.86,46.42,150,0
 .goto Wetlands,63.9,78.6
 .zone Loch Modan >> Logout on top of the mushrooms at the back of the cave. When you log back in, this will teleport you to just outside of Thelsamar
+.link https://www.youtube.com/watch?v=21CuGto26Mk >> CLICK HERE for a reference
 >>Be VERY careful not to move forward when you log in as there are level 30-40 guards around and you may get PVP flagged. Instead run to the other side of the road and try to avoid the guards
 step
 #completewith next
@@ -8816,6 +8834,7 @@ step
 .goto Badlands,5.73,29.78,0
 >>Use the shortcut to get to Badlands faster
 .zone Badlands >> Run to the Badlands
+.link https://www.youtube.com/watch?v=oNFXup-DCM0 >> Click here for a video guide.
 step
 .goto Badlands,4.1,44.7
 .fp Kargath >> Get the Kargath flight path
@@ -8877,6 +8896,7 @@ step
 .goto Badlands,51.2,76.7
 .accept 709 >> Accept Solution to Doom
 step
+#requires bbqwingsBL
 .goto Badlands,36.2,75.1,40,0
 .goto Badlands,46.0,78.4,40,0
 .goto Badlands,42.8,87.2,40,0
@@ -8887,24 +8907,7 @@ step
 .goto Badlands,50.1,67.2
 .complete 1108,1 
 step
-.goto Badlands,6.4,47.3
-.turnin 1419 >> Turn in Coyote Thieves
-step
-.goto Badlands,2.4,45.9
-.turnin 2258 >> Turn in Badlands Reagent Run
-step
-#requires signofearthBL
-.goto Badlands,2.8,45.6
-.turnin 782 >> Turn in Broken Alliances
-step
-.goto Badlands,26.0,44.9
-.turnin 711 >> Turn in Study of the Elements: Rock
-step
-#requires bbqwingsBL
-.goto Badlands,42.4,52.7
-.turnin 703 >> Turn in Barbecued Buzzard Wing
-.turnin 1108 >> Turn in Indurium
-step
+#requires badlandscollect
 #completewith next
 .goto Badlands,42.9,29.9,30 >> Go inside Angor Fortress
 step
@@ -8919,6 +8922,7 @@ step
 #completewith Tablet
 .goto Badlands,41.86,26.51
 .goto Badlands,51.86,63.51,40 >>Logout on top of the staircase when it looks like you're floating, then log back in
+.link https://www.youtube.com/watch?v=7BoxowuQaKs >> CLICK HERE
 step
 #completewith garett
 >> Loot the dwarves for a chance of getting the necklace, it can be delivered in Orgrimmar for XP (U can't start the quest)
@@ -8936,6 +8940,11 @@ step
 #completewith next
 .deathskip >> Die and respawn at the Spirit Healer
 step
+.goto Badlands,42.4,52.7
+.turnin 703 >> Turn in Barbecued Buzzard Wing
+.turnin 1108 >> Turn in Indurium
+.accept 1137 >> Accept News To Fizzle
+step
 .goto Badlands,51.3,77.0
 .turnin 709 >> Turn in Solution to Doom
 step
@@ -8944,6 +8953,19 @@ step
 step
 .goto Badlands,6.1,48.2
 .turnin 9439 >> Turn in Unclaimed Baggage
+step
+#requires badlandscollect
+.goto Badlands,6.4,47.3
+.turnin 1419 >> Turn in Coyote Thieves
+step
+.goto Badlands,2.4,45.9
+.turnin 2258 >> Turn in Badlands Reagent Run
+step
+.goto Badlands,2.8,45.6
+.turnin 782 >> Turn in Broken Alliances
+step
+.goto Badlands,26.0,44.9
+.turnin 711 >> Turn in Study of the Elements: Rock
 step
 .isQuestTurnedIn 701
 #completewith next
@@ -8954,13 +8976,22 @@ step
 .goto Arathi Highlands,74.3,33.9
 .turnin 679 >> Turn in Call to Arms
 step
+.isOnQuest 679
+.abandon 679 >> Abandon Call to Arms
+step
 .isQuestTurnedIn 701
 .goto Arathi Highlands,74.0,33.2
 .turnin 680 >> Turn in The Real Threat
 step
+.isOnQuest 701
+.abandon 701 >> Abandon The Real Threat
+step
 .isQuestTurnedIn 701
 .goto Arathi Highlands,74.8,36.3
 .turnin 640 >> Turn in The Broken Sigil
+step
+.isOnQuest 640
+.abandon 640 >> Abandon The Broken Sigil
 step << Druid
 >> Use the spell Teleport to Moonglade
 .goto Moonglade,52.5,40.5
@@ -9009,7 +9040,8 @@ step << Priest
 .goto Orgrimmar,35.6,87.8
 .trainer >> Go and train your class spells
 step
->>Skip this step if you didn't loot the necklace earlier
+.itemcount 7666,1
+.use 7666
 .goto Orgrimmar,59.4,36.8
 .accept 2283 >> Accept Necklace Recovery
 .turnin 2283 >> Turn in Necklace Recovery
@@ -9315,6 +9347,7 @@ step
 #completewith next
 .goto Dustwallow Marsh,36.79,68.93
 .goto Dustwallow Marsh,41.04,74.27,30 >>Logout on top of the banner, then log back in
+.link https://www.youtube.com/watch?v=JjCnExveVPo >> CLICK HERE
 step
 #requires DragonEssence
 #label MudsprocketTurnins2
@@ -9457,7 +9490,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 40-50
+#group RestedXP Horde 40-50
 #classic
 << Horde
 #name 40-41 Stranglethorn Vale
@@ -9839,7 +9872,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 40-50
+#group RestedXP Horde 40-50
 #classic
 << Horde
 #name 41-41 Desolace II
@@ -9992,7 +10025,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 40-50
+#group RestedXP Horde 40-50
 #classic
 << Horde
 #name 41-43 Tanaris/Dustwallow
@@ -10278,10 +10311,10 @@ step
 .fly Feralas >> Fly to Feralas
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #tbc
-#group Horde 30-45
+#group RestedXP Horde 30-45
 << Horde
 #name 43-45 Lower Stranglethorn Vale
 #next RestedXP Horde 45-60\45-49 Tanaris / Feralas
@@ -10897,7 +10930,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 40-50
+#group RestedXP Horde 40-50
 #classic
 << Horde
 #name 43-44 Feralas
@@ -11201,7 +11234,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 40-50
+#group RestedXP Horde 40-50
 #classic
 << Horde
 #name 44-45 Southern Stranglethorn
@@ -11477,6 +11510,7 @@ step
 >> This quest is HARD depending on how well you can kite and do damage on the move. You can skip this quest if needed
 .goto Stranglethorn Vale,37.00,69.50
 .complete 8551,1
+.link https://youtu.be/lNy2ohTWeLw?t=1037 >> CLICK HERE for a reference
 step
 #era
 #sticky
@@ -11597,10 +11631,10 @@ step
 .fly Stonard>> Fly to Stonard
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #tbc
-#group Horde 45-60
+#group RestedXP Horde 45-60
 << Horde
 #name 45-49 Tanaris / Feralas
 #next 49-51 The Hinterlands
@@ -11869,9 +11903,13 @@ step
 .home >> Set your Hearthstone to Camp Mojache
 step
 #xprate <1.5
+.goto Feralas,75.70,44.30
+.accept 2987 >> Accept Gordunni Cobalt
+step
+#xprate <1.5
 .maxlevel 47
 .goto Feralas,74.4,43.5
-.accept 3121 >> A Strange Request
+.accept 3121 >> Accept A Strange Request
 step
 #xprate <1.5
 .maxlevel 47
@@ -11887,11 +11925,12 @@ step
 .maxlevel 47
 .goto Feralas,74.5,43.0
 .accept 2822 >> Accept The Mark of Quality
-step << wotlk
+step
 #xprate <1.5
 .maxlevel 47
 .goto Feralas,73.5,45.6
 .turnin 2981 >> Turn in A Threat in Feralas
+.accept 2975 >> Accept The Ogres of Feralas
 step
 #xprate <1.5
 .isOnQuest 8705
@@ -11906,29 +11945,126 @@ step
 .complete 2862,1 
 step
 #xprate <1.5
+.goto Feralas,76.30,37.6
+.turnin 3121 >> Turn in A Strange Request
+.accept 3122 >> Accept Return to Witch Doctor Uzer'i
+step
+#xprate <1.5
+#completewith Scroll
+.goto Feralas,75.30,28.26,0
+>> Use Orwin's Shovel in your bags on the blue patches on the ground. Loot them for the Cobalt. Loot the brown dirt that lights blue afterwards. Those have the quest items.
+.complete 2987,1
+step
+#xprate <1.5
+#completewith Shovel
+.goto Feralas,76.10,33.20,0
+>>Kill Ogres at the Gordunni Outpost
+.complete 2975,1
+.complete 2975,2
+.complete 2975,3
+step
+#xprate <1.5
+#label Scroll
+.goto Feralas,75.25,34.44,60,0
+.goto Feralas,79.4,34.8,15,0
+.goto Feralas,80.5,34.3,15,0
+.goto Feralas,80.8,35.0,15,0
+.goto Feralas,75.1,29.8,15,0
+.goto Feralas,75.2,28.7,15,0
+.goto Feralas,74.6,27.9,15,0
+.goto Feralas,79.4,34.8,15,0
+.goto Feralas,80.5,34.3,15,0
+.goto Feralas,80.8,35.0,15,0
+.goto Feralas,75.1,29.8,15,0
+.goto Feralas,75.2,28.7,15,0
+.goto Feralas,74.6,27.9,15,0
+.goto Feralas,79.4,34.8,
+>> Run to the Gordunni Outpost and look for the small parchment. It can spawn in the main camp or in the east camp in the mountains. Follow the arrow for spawn points.
+.accept 2978 >> Accept The Gordunni Scroll
+step
+#xprate <1.5
+#label Shovel
+.goto Feralas,75.30,28.26,60,0
+.goto Feralas,74.59,30.23
+>> Use Orwin's Shovel in your bags on the blue patches on the ground. Loot them for the Cobalt
+.complete 2987,1
+step
+#xprate <1.5
+.goto Feralas,76.10,33.20
+>>Kill Ogres at the Gordunni Outpost
+.complete 2975,1
+.complete 2975,2
+.complete 2975,3
+step
+#xprate <1.5
+.goto Feralas,74.4,43.5
+.turnin 3122 >> Turn In Return to Witch Doctor Uzer'i
+.accept 3123 >> Accept Testing the Vessel
+.accept 3128 >> Accept Natural Materials
+step
+#xprate <1.5
 .isOnQuest 2862
 .goto Feralas,74.9,42.5
 .turnin 2862 >> Turn in War on the Woodpaw
 .accept 2863 >> Accept Alpha Strike
 step
 #xprate <1.5
-.maxlevel 47
+>> Find the female orc on the road again.
+.goto Feralas,75.80,43.58
+.turnin 2975 >> Turn in The Ogres of Feralas
+.accept 2980 >> Accept The Ogres of Feralas
+.turnin 2978 >> Turn in The Gordunni Scroll
+.accept 2979 >> Accept Dark Ceremony
+step
+#xprate <1.5
+.goto Feralas,75.70,44.30
+.turnin 2987 >> Turn in Gordunni Cobalt
+step
+#xprate <1.5
 .goto Feralas,74.4,43.5
 .accept 3380 >> Accept The Sunken Temple
+step
+#xprate <1.5
+.goto Feralas,71.4,42.2
+>> Farm random beasts and use the Beast Muisek Vessel.
+.complete 3123,1
+.use 9618
 step
 #xprate <1.5
 .isOnQuest 2973
 .goto Feralas,69.4,45.5
 .complete 2973,1 
 step
+#xprate <1.5
 .goto Feralas,66.7,52.1
 .abandon 2980 >> Abandon The Ogres of Feralas
 step
 #xprate <1.5
 .isOnQuest 2863
->>Alphas are located at different Woodpaw camps around the area.
+>>Kill Woodpaw Alphas. There is typically 1 per camp. There are a lot of them on the mountain with the cave
+.goto Feralas,73.08,56.41,50,0
+.goto Feralas,72.20,56.66,50,0
+.goto Feralas,69.13,55.77,50,0
+.goto Feralas,68.56,54.42,50,0
+.goto Feralas,67.22,54.84,50,0
+.goto Feralas,66.70,53.36,20,0
+.goto Feralas,65.91,51.67,30,0
+.goto Feralas,65.16,51.94,30,0
+.goto Feralas,65.68,52.72,30,0
 .goto Feralas,66.7,52.1
 .complete 2863,1 
+step
+#xprate <1.5
+.isOnQuest 2863
+#completewith next
+.goto Feralas,65.48,53.71
+.goto Feralas,72.97,44.75,50 >>Logout on top of the last mushroom in Woodpaw Den's Cave that's on the hill, then log back in
+.link https://www.youtube.com/watch?v=gTfQTbLwrfw >> CLICK HERE for reference
+step
+#xprate <1.5
+.goto Feralas,74.50,43.40
+.turnin 3123 >> Turn in Testing the Vessel
+.accept 3124 >> Accept Hippogryph Muisek
 step
 #xprate <1.5
 .isOnQuest 2863
@@ -11988,9 +12124,43 @@ step
 .collect 8564,1 >> Pick up a Hippogryph Egg. They can have multiple spawns on the southern mountain.
 step
 #xprate <1.5
+.goto Feralas,54.4,68.1
+>>Kill Frayfeather Hippogryphs. Loot them for Metallic Fragments, then use the Hippogryph Muisek Vessel on their corpses
+.complete 3124,1 
+.complete 3128,4,31 
+.complete 3128,3
+.use 9619
+step
+#tbc
+#xprate <1.5
 .zoneskip Feralas,1
 .goto Feralas,55.6,62.0
 .collect 4589,10 >> Farm ONLY Frayfeather Hippogryphs (the white ones) until you have 10 Long Elegant Feathers. We will use them for a quest later.
+step
+#wotlk
+#xprate <1.5
+.zoneskip Feralas,1
+.goto Feralas,55.6,62.0
+.collect 4589,1 >> Farm ONLY Frayfeather Hippogryphs (the white ones) until you have 10 Long Elegant Feathers. We will use them for a quest later.
+step
+#xprate <1.5
+#completewith next
+.goto Feralas,58.59,69.85,0
+>> Kill Gordunni Mage-Lords. Loot them for the Gordunni Orb
+.complete 2979,1
+step
+#xprate <1.5
+.goto Feralas,59.58,65.02
+>> Kill Gordunni Ogres in the area
+.complete 2980,1
+.complete 2980,2
+.complete 2980,3
+step
+#xprate <1.5
+.goto Feralas,58.59,69.85
+>> Kill Gordunni Mage-Lords. Loot them for the Gordunni Orb
+.complete 2979,1
+.unitscan Gordunni Mage-Lord
 step
 #xprate <1.5
 .isOnQuest 3520
@@ -12030,9 +12200,16 @@ step
 .cooldown item,6948,>0
 step
 #xprate <1.5
+.goto Feralas,74.4,43.4
+.turnin 3124 >> Turn in Hippogryph Muisek
+.accept 3125 >> Accept Faerie Dragon Muisek
+.accept 3380 >> Accept The Sunken Temple
+step
+#xprate <1.5
 .isOnQuest 2822
 .goto Feralas,74.4,42.9
 .turnin 2822 >> Turn in The Mark of Quality
+.accept 7734 >> Accept Improved Quality
 step
 #xprate <1.5
 .isOnQuest 7730
@@ -12049,6 +12226,138 @@ step << Druid
 .zoneskip Feralas,1
 .goto Feralas,76.0,42.3
 .trainer >> Go and train your class spells
+step
+#xprate <1.5
+.goto Feralas,75.80,43.58
+.turnin 2980 >> Turn in The Ogres of Feralas
+.turnin 2979 >> Turn in Dark Ceremony
+.accept 3002 >> Accept The Gordunni Orb
+step
+#xprate <1.5
+.goto Feralas,76.20,43.80
+.accept 3062 >> Accept Dark Heart
+.accept 3063 >> Accept Vengeance on the Northspring
+step
+#xprate <1.5
+.goto Feralas,68.68,48.60
+>>Kill Faerie Dragons. Loot them for Encrusted Minerals, then use the Faerie Muisek Vessel on their corpses
+.complete 3125,1 
+.complete 3128,2 
+step
+#xprate <1.5
+.goto Feralas,74.4,43.3
+.turnin 3125 >> Turn in Faerie Dragon Muisek
+.accept 3126 >> Accept Treant Muisek
+step
+#xprate <1.5
+>> Go north of the city and kill the Wandering Forest Walkers.
+.goto Feralas,69.4,44.6,70,0
+.goto Feralas,70.6,41.8,70,0
+.goto Feralas,75.0,38.6,70,0
+.goto Feralas,77.4,40.8,70,0
+.goto Feralas,78.6,42.4,70,0
+.goto Feralas,79.6,45.4,70,0
+.goto Feralas,69.4,44.6
+.complete 3126,1 
+.complete 3128,1 
+.unitscan Wandering Forest Walker
+step
+#xprate <1.5
+.goto Feralas,74.5,43.4
+.turnin 3126 >> Turn in Treant Muisek
+.accept 3127 >> Accept Mountain Giant Muisek
+step
+#xprate <1.5
+>>Run west to the shore
+.goto Feralas,44.9,43.4
+.accept 7003 >> Accept Zapped Giants
+step
+#xprate <1.5
+#sticky
+#completewith next
+>> Perfect Yeti Hide drops from the mobs which starts a quest. Skip it if you don't get it before all of the Rage Scar Yeti Hides. Don't accept the quest yet
+.collect 18972
+step
+#xprate <1.5
+>>Kill Scar Yetis. Loot them for their Hides
+.goto Feralas,55.0,33.0
+.complete 7734,1 
+step
+#xprate <1.5
+>> Use Zorbin's Ultra-Shrinker to weaken the giants. Kill them. Loot them for their Residue, then use the Mountain Giant Musiek Vessel on their corpses
+.goto Feralas,38.8,21.6
+.complete 3127,1 
+.complete 3128,4
+step
+#xprate <1.5
+#completewith next
+>>Kill the Harpies in the area
+.goto Feralas,38.1,14.4,0
+.complete 3063,1 
+.complete 3063,2 
+.complete 3063,3 
+.complete 3063,4 
+step
+#xprate <1.5
+>>Go to the big rock. Use the Horn of Hatetalon in your inventory
+>>Kill Edana Hatetalon. Loot her for her Heart
+.goto Feralas,40.5,8.6
+.complete 3062,1 
+step
+#xprate <1.5
+>>Kill the Harpies in the area
+.goto Feralas,38.1,14.4
+.complete 3063,1 
+.complete 3063,2 
+.complete 3063,3 
+.complete 3063,4 
+step
+#xprate <1.5
+.hs >>Hearth to Camp Mojache
+>> Buy food/water if needed
+step
+#xprate <1.5
+.isQuestComplete 3128
+.goto Feralas,74.5,43.3
+.turnin 3128 >> Turn in Natural Materials
+step
+#xprate <1.5
+.goto Feralas,74.5,43.3
+.turnin 3127 >> Turn in Mountain Giant Muisek
+.isQuestComplete 3127
+step
+#xprate <1.5
+.goto Feralas,74.5,43.3
+.accept 3129 >> Accept Weapons of Spirit
+.isQuestTurnedIn 3127
+step
+#xprate <1.5
+.isQuestComplete 7734
+.goto Feralas,74.5,42.9
+.turnin 7734 >> Turn in Improved Quality
+step
+#xprate <1.5
+.isOnQuest 7738
+.turnin 7738 >>Turn in Perfect Yeti Hide
+step
+#xprate <1.5
+.isQuestComplete 3062
+.goto Feralas,76.1,43.8
+.turnin 3062 >> Turn in Dark Heart
+step
+#xprate <1.5
+.isQuestComplete 3063
+.goto Feralas,76.1,43.8
+.turnin 3063 >> Turn in Vengeance on the Northspring
+step
+#xprate <1.5
+.isQuestComplete 3129
+.goto Feralas,74.4,43.4
+.turnin 3129 >> Turn in Weapons of Spirit
+step
+#xprate <1.5
+.goto Feralas,74.4,43.4
+.turnin 3123 >> Turn in Testing The Vessel
 step
 #xprate <1.5
 #completewith next
@@ -12254,6 +12563,10 @@ step << !Mage
 #completewith next
 .goto Thunder Bluff,47.0,49.9,0
 .fly Orgrimmar >> Fly to Orgrimmar
+step
+.isOnQuest 3002
+.goto Orgrimmar,39.20,86.30
+.turnin 3002 >> Turn in The Gordunni Orb
 step << Paladin
 #completewith next
 .goto Orgrimmar,32.4,35.8
@@ -12316,7 +12629,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 40-50
+#group RestedXP Horde 40-50
 #version 1
 #classic
 << Horde
@@ -12474,7 +12787,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 40-50
+#group RestedXP Horde 40-50
 #classic
 << Horde
 #name 46-48 Tanaris
@@ -12909,7 +13222,7 @@ step << Mage
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 40-50
+#group RestedXP Horde 40-50
 #classic
 << Horde
 #name 48-49 The Hinterlands
@@ -13358,10 +13671,10 @@ step
 .collect 8529,60
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #tbc
-#group Horde 45-60
+#group RestedXP Horde 45-60
 << Horde
 #name 49-51 The Hinterlands
 #next 51-52 Searing Gorge/Burning Steppes
@@ -13420,10 +13733,8 @@ step
 .goto The Hinterlands,79.1,79.0
 .accept 7861 >> Accept Wanted: Vile Priestess Hexx and Her Minions
 step
-#xprate <1.5
 .goto The Hinterlands,79.3,79.1
 .accept 7841 >> Accept Message to the Wildhammer
-
 step
 .accept 7829 >> Accept Hunt the Savages
 .accept 7830 >> Accept Avenging the Fallen
@@ -13620,12 +13931,6 @@ step
 .goto The Hinterlands,34.4,55.1
 .complete 2742,1 
 step
-#sticky
-#completewith HinterlandsOOX
-#label owlbeastsucks
-.goto The Hinterlands,52.6,57.4
-.complete 7829,1 
-step
 .isOnQuest 8741
 #requires Highvale1
 .goto The Hinterlands,28.6,46.1,40,0
@@ -13725,11 +14030,14 @@ step
 .goto The Hinterlands,79.3,79.1
 .turnin 7841 >> Turn in Message to the Wildhammer
 step
-#xprate <1.5
 .isQuestTurnedIn 7841
 .goto The Hinterlands,79.3,79.1
 .accept 7842 >> Accept Another Message to the Wildhammer
 .turnin 7842 >> Turn in Another Message to the Wildhammer
+step
+.isQuestTurnedIn 7841
+.goto The Hinterlands,79.3,79.1
+#xprate <1.5
 .accept 7843 >> Accept The Final Message to the Wildhammer
 step
 .goto The Hinterlands,79.1,79.5
@@ -13963,7 +14271,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 40-50
+#group RestedXP Horde 40-50
 #classic
 << Horde
 #name 49-50 Feralas
@@ -14258,7 +14566,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 50-60
+#group RestedXP Horde 50-60
 #classic
 << Horde
 #name 50-51 Stranglethorn/Blasted Lands
@@ -14288,6 +14596,8 @@ step << !Warrior !Rogue !Shaman
 .collect 3985,1,8552
 .accept 8552 >> Accept The Monogrammed Sash
 >>This can be a very hard elite to solo, skip this step if you have to
+.link https://www.youtube.com/watch?v=xw2mGnQaCQM >> Click here for video reference << Priest
+.link https://www.twitch.tv/videos/850022146?t=04h16m26s >> Click here for video reference << !Priest
 step
 .isQuestComplete 648
 .goto Stranglethorn Vale,28.40,76.30
@@ -14403,10 +14713,10 @@ step
 .turnin 2603 >> Turn in Vulture's Vigor
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #tbc
-#group Horde 45-60
+#group RestedXP Horde 45-60
 << Horde
 #name 51-52 Searing Gorge/Burning Steppes
 #next 52-54 Un'goro
@@ -14599,6 +14909,7 @@ step
 step
 .isOnQuest 7729
 +Logout skip out of the cave. There are MANY different spots you can use
+.link https://www.youtube.com/watch?v=-mcsjDkeSUw >> CLICK HERE for reference
 step
 .isOnQuest 3443
 .goto Searing Gorge,39.05,38.98
@@ -14861,7 +15172,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 50-60
+#group RestedXP Horde 50-60
 #classic
 << Horde
 #name 51-52 Searing Gorge/Burning Steppes
@@ -14887,6 +15198,7 @@ step
 #som
 .goto Dun Morogh,78.0,62.7
 .zone Badlands >> Walk to the building in the eastern Dun Morogh and logout.
+.link https://www.youtube.com/watch?v=MdXtOxSxaYo >> Click here
 step
 .goto Badlands,3.40,48.10
 >> You may have to wait for Thal'trak to finish his RP event. Just follow him around for a bit
@@ -15031,6 +15343,7 @@ step
 step
 #completewith next
 +Logout skip out of the cave. There are MANY different spots you can use
+.link https://www.youtube.com/watch?v=-mcsjDkeSUw >> CLICK HERE for reference
 step
 .goto Searing Gorge,39.05,38.98
 .turnin 3443 >> Turn in Forging the Shaft
@@ -15164,6 +15477,7 @@ step
 +Run down to South-east Searing Gorge where Margol the Rager is found. Wait for him to patrol all the way out of his cave, then logout skip from the mushrooms at the back << Druid/Shaman
 >>Be careful as Margol is IMMUNE to nature spells << Shaman/Druid
 +Run down to South-east Searing Gorge where Margol the Rager is found. Wait for him to patrol all the way out of his cave (or kill him), then logout skip from the mushrooms at the back << !Druid !Shaman
+.link https://www.youtube.com/watch?v=0_g2SY2JKt8 >> CLICK HERE
 step
 .goto Burning Steppes,28.43,17.70,0
 .zone Burning Steppes >> Travel to the Burning Steppes either through the Margol Logout Skip (which is A LOT faster) or Blackrock Mountain
@@ -15245,10 +15559,10 @@ step << Mage
 .zone Orgrimmar >> Teleport to Orgrimmar
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #tbc
-#group Horde 45-60
+#group RestedXP Horde 45-60
 << Horde
 #name 52-54 Un'goro
 #next 54-56 Azshara / Felwood / Winterspring
@@ -15709,7 +16023,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 50-60
+#group RestedXP Horde 50-60
 #classic
 << Horde
 #name 52-53 Azshara
@@ -15915,7 +16229,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 50-60
+#group RestedXP Horde 50-60
 #classic
 << Horde
 #name 53-53 Felwood
@@ -16136,7 +16450,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 50-60
+#group RestedXP Horde 50-60
 #classic
 << Horde
 #name 53-54 Un'Goro Crater
@@ -16554,10 +16868,10 @@ step
 .fly Ratchet>> Fly to Ratchet
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #tbc
-#group Horde 45-60
+#group RestedXP Horde 45-60
 << Horde
 #name 54-56 Azshara / Felwood / Winterspring
 #next 56-60 Western / Eastern Plaguelands
@@ -17273,7 +17587,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 50-60
+#group RestedXP Horde 50-60
 #classic
 << Horde
 #name 54-56 Felwood/Winterspring
@@ -17527,6 +17841,7 @@ step << Hunter
 >> Loot the blue crystals around the outer perimeter of the canyon, use your pet to bait the giants away from the crystals. Run away after looting one
 >>This is a hard quest to solo, skip this quest if you have to
 .complete 969,1
+.link https://www.twitch.tv/videos/850027450?t=00h26m14s >> Click here for video reference
 step
 >> Head to the border of Darkwhisper Gorge
 .goto Winterspring,60.09,73.34
@@ -17536,6 +17851,7 @@ step << Hunter
 >> Loot the blue crystals around the outer perimeter of the canyon, use your pet to bait the giants away from the crystals. Run away after looting one
 >>This is a hard quest to solo, skip this quest if you have to
 .complete 969,1
+.link https://www.twitch.tv/videos/850027450?t=00h26m14s >> Click here for video reference
 step
 #era/som
 #softcore
@@ -17664,6 +17980,7 @@ step
 #completewith next
 .goto Felwood,38.72,46.77
 +Perform a logout skip to teleport out of Shadow Hold
+.link https://youtu.be/SWBtPqm5M0Q?t=128 >> CLICK HERE for reference
 step
 #era/som
 .goto Felwood,51.90,21.80
@@ -17786,10 +18103,10 @@ step << Mage
 .zone Undercity >> Teleport to Undercity
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #tbc
-#group Horde 45-60
+#group RestedXP Horde 45-60
 << Horde
 #name 56-60 Western / Eastern Plaguelands
 #next RestedXP Horde 60-70\59-61 Hellfire Peninsula
@@ -17848,6 +18165,7 @@ step << Mage
 #completewith next
 .goto Undercity,82.36,15.31
 +Go to the reagent vendor on your right and perform a logout skip by positioning your character on the highest part of the lowest staircase until it looks like they're floating, then log out and back in.
+.link https://www.youtube.com/watch?v=-Bi95bCN8dM >> CLICK HERE for an example
 >>If you can't do this, just run out of Undercity normally
 step << Mage
 .goto Tirisfal Glades,61.85,66.59,60 >> Exit Undercity
@@ -18278,6 +18596,7 @@ step
 .goto EPLClassic,10.99,47.75,40,0
 +Cut through the mountain to save travel time by performing the Eastern PL mountain skip
 .use 8529 >>You MUST have Noggenfogger Elixirs in your bag for this
+.link https://www.youtube.com/watch?v=6VIULBxMyfU >> CLICK HERE for reference
 step
 .isQuestComplete 5543
 .goto EPLClassic,7.6,43.7
@@ -18323,6 +18642,7 @@ step
 >> Stealth into the middle of the pack that spawns, then de-stealth, immediately aggroing all mobs at once. Keep refreshing leash on Mercutio whilst dashing away from the other mobs << Druid
 .goto EPLClassic,28.30,86.89
 .complete 5781,1 
+.link https://www.twitch.tv/videos/850028806?t=02h34m49s >> CLICK HERE for reference << Mage/Warlock/Hunter/Druid/Rogue
 step
 .maxlevel 57
 #sticky
@@ -18763,7 +19083,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 50-60
+#group RestedXP Horde 50-60
 #classic
 << Horde
 #name 56-58 Western PL/Eastern PL
@@ -19197,6 +19517,7 @@ step
 .goto Eastern Plaguelands,10.99,47.75,40,0
 +Cut through the mountain to save travel time by performing the Eastern PL mountain skip
 >>You MUST have Noggenfogger Elixirs in your bag for this
+.link https://www.youtube.com/watch?v=6VIULBxMyfU >> CLICK HERE for reference
 step
 #era/som
 .goto Eastern Plaguelands,7.6,43.7
@@ -19237,6 +19558,7 @@ step
 >> Stealth into the middle of the pack that spawns, then de-stealth, immediately aggroing all mobs at once. Keep refreshing leash on Mercutio whilst dashing away from the other mobs << Druid
 .goto Eastern Plaguelands,28.4,85.3
 .complete 5781,1 
+.link https://www.twitch.tv/videos/850028806?t=02h34m49s >> CLICK HERE for reference << Mage/Warlock/Hunter/Druid/Rogue
 step
 #era/som
 #sticky
@@ -19367,6 +19689,7 @@ step
 step
 .goto Undercity,55.22,90.88
 +Go to the edge of the main platform and perform a Logout Skip by positioning your character until it looks like they're floating, then logging out and back in.
+.link https://www.youtube.com/watch?v=jj85AXyF1XE >> Open this tab when running to the turn in. CLICK HERE for an example
 >>If you can't do this, just run out of Undercity normally
 step
 .goto Tirisfal Glades,61.85,66.59,60 >> Exit Undercity
@@ -19494,10 +19817,10 @@ step
 .hs >> Hearth to Everlook
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #tbc
-#group Horde 60-70
+#group RestedXP Horde 60-70
 << Horde
 #name 59-61 Hellfire Peninsula
 #next 61-63 Zangarmarsh
@@ -19888,7 +20211,6 @@ step
 
 step
 #completewith next
-.goto Hellfire Peninsula,48.8,36.8
 .use 23338 >>Kill Marauding Curst Bursters by running over the moving rocks in the area. Loot them for an Eroded Leather Case. Click it in your bags
 .collect 23338,1,9373,1 
 .accept 9373 >> Accept Missing Missive
@@ -20158,10 +20480,10 @@ step
 .accept 10864 >> Accept A Burden of Souls
 .goto Hellfire Peninsula,52.28,36.46
 step
-.skill riding,<225,1
 #completewith next
-.goto Hellfire Peninsula,55.10,33.81,30,0
-.goto Hellfire Peninsula,55.87,33.16,20 >> Walk up the path here
+.goto Hellfire Peninsula,55.10,33.81,40,0
+.goto Hellfire Peninsula,55.87,33.16,30 >> Walk up the path here
+.skill riding,225,1
 step
 .goto Hellfire Peninsula,53.09,26.46
 >>Kill Arix'Amal. Loot him for the Key
@@ -20805,7 +21127,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 50-60
+#group RestedXP Horde 50-60
 #classic
 << Horde
 #name 59-59 Winterspring/Silithus I
@@ -21064,6 +21386,7 @@ step
 *At the last wave, you can ignore the 2 adds, kill the queen and loot the quest item
 >>Be careful, as this quest is VERY Hard if you haven't done it before
 .complete 4507,1
+.link https://www.twitch.tv/videos/680871694?t=00h49m29s >> CLICK HERE if you need a reference
 step
 #completewith next
 .goto Silithus,88.09,23.43,70,0
@@ -21353,7 +21676,7 @@ step
 ]])
 RXPGuides.RegisterGuide([[
 #version 1
-#group Horde 50-60
+#group RestedXP Horde 50-60
 #classic
 << Horde
 #name 59-60 Winterspring/Silithus II
@@ -21481,7 +21804,8 @@ RXPGuides.RegisterGuide([[
 #tbc
 #wotlk
 #version 7
-#group TBC Dungeon Cleave
+#group RestedXP TBC Guide
+#subgroup RestedXP Horde 60-70 Dungeon Cleave
 #version 7
 << Horde
 #name 60-70 Horde Dungeon Cleave
@@ -22737,10 +23061,10 @@ step
 >>You are now attuned to Karazhan - Congratulations!
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #tbc
-#group Horde 60-70
+#group RestedXP Horde 60-70
 << Horde
 #name 61-63 Zangarmarsh
 #next 65-67 Blade's Edge; 63-64 Terokkar Forest
@@ -22816,6 +23140,7 @@ step << Paladin
 .goto Orgrimmar,32.26,35.71
 .trainer >> Train your class spells
 step
+#xprate <1.5
 .goto Orgrimmar,39.59,37.04,30,0 << !Paladin !Shaman
 .goto Orgrimmar,31.60,37.82
 >>Talk to Thrall in Grommash Hold
@@ -23144,7 +23469,7 @@ step
 .complete 10096,2 
 .complete 10096,1 
 step << DK/Druid
-#completewith next
+#completewith mark
 .hs >> Hearth to Cenarion Refuge
 step
 >>Return to Cenarion Refuge. Talk to Ikeyen, Lauranna, and Blackhoof
@@ -23168,6 +23493,7 @@ step
 .accept 9785 >> Accept Blessings of the Ancients
 .goto Zangarmarsh,80.37,64.73,-1
 step
+#label mark
 #completewith next
 >>Talk to Keleth. He patrols around the town
 .complete 9785,2 
@@ -23605,8 +23931,7 @@ step
 step
 .goto Zangarmarsh,78.49,62.95
 >>Talk to Coryth (the Innkeeper). Buy a Cenarion Spirits from him
-.collect 29112,1 
-.isOnQuest 10287
+.collect 29112,1,10287,1 
 
 step
 .goto Zangarmarsh,78.40,62.02
@@ -23679,7 +24004,7 @@ step
 .skill riding,225,1
 step
 #completewith next
->>Kill Ogres. Loot them for their Mushrooms
+>>Kill Ogres. Loot them for their Mushrooms. Avoid going in the cave if you can.
 >>You can also find Mushrooms in the wooden boxes in the area
 .complete 9823,2 
 .complete 9823,3 
@@ -23750,10 +24075,10 @@ step
 .turnin 9728 >> Turn in A Warm Welcome
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #tbc
-#group Horde 60-70
+#group RestedXP Horde 60-70
 << Horde
 #name 63-64 Terokkar Forest
 #next 64-65 Nagrand
@@ -23776,6 +24101,7 @@ step << Mage
 .goto Shattrath City,58.77,47.18
 .train 35715 >> Talk to Iorioa. Train Teleport: Shattrath and Portal: Shattrath
 step
+#xprate <1.5
 >>Talk to Seth, Vekax atop the tree, and Rilak. Do this quickly before the RP ends. Do not take a break yet
 .accept 10037 >> Accept Rather Be Fishin'
 .goto Shattrath City,63.94,15.52
@@ -23787,8 +24113,7 @@ step
 .goto Shattrath City,52.54,21.03
 step
 .goto Shattrath City,50.36,42.87
->>Head up to the second floor with G'eras and wait out the RP. If someone elses Servant arrives in the meantime, you can target it and it will complete the quest for you
->>If the quest fails, pick it up from Khadgar again and just wait here
+>>Follow the servant around. You can no longer cheese it in WOTLK, you must follow it :(
 .complete 10211,1 
 step
 .goto Shattrath City,54.74,44.32
@@ -25217,10 +25542,10 @@ step
 .zone Shattrath City >> Travel to Shattrath
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #tbc
-#group Horde 60-70
+#group RestedXP Horde 60-70
 << Horde
 #name 64-65 Nagrand
 #next 65-67 Blade's Edge
@@ -25337,23 +25662,28 @@ step
 >>Kill some Tortured Earth Spirits. Don't finish this yet
 .complete 9819,1 
 step
-#completewith next
->>Talk to Kristen after killing Gankly, then talk to Harold (if the event is up)
+#label Saved1
+#completewith Safari1
+>>Talk to Kristen after killing Gankly. This is a rare random event at the Safari
 .accept 9897 >> Accept I'm Saved!
 .goto Nagrand,71.42,40.60,0
-.turnin 9897 >> Turn in I'm Saved!
-.goto Nagrand,71.38,40.62,0
 .unitscan Gankly Rottenfist
+step
+#requires Saved1
+#completewith next
+>>Talk to Harold
+.turnin 9897 >> Turn in I'm Saved!
+.goto Nagrand,71.38,40.62
 step
 #label Safari1
 >>Travel to the Nesingwary Safari. Talk to Shado, Hemet, and Harold
 .turnin 10114 >>Turn in The Nesingwary Safari
 .accept 9854 >>Accept Windroc Mastery
 .goto Nagrand,71.57,40.52
-.accept 9857 >>Accept Talbuk Mastery
-.goto Nagrand,71.38,40.62
 .accept 9789 >>Accept Clefthoof Mastery
 .goto Nagrand,71.52,40.82
+.accept 9857 >>Accept Talbuk Mastery
+.goto Nagrand,71.38,40.62
 step
 #completewith Kilrath
 >>Kill Wild Elekks. Loot them for their Tusks
@@ -25408,7 +25738,7 @@ step
 .goto Nagrand,60.33,63.82,60,0
 .goto Nagrand,60.85,61.08,60,0
 .goto Nagrand,62.41,59.43
->>Kill Dust Howlers. Loot them for their Gas and Howling Wind. Click the Wind in your bags
+.use 24504 >>Kill Dust Howlers. Loot them for their Gas and Wind. Click the Wind in your bags
 .complete 10109,1 
 .collect 24504,1,9861,1 
 .accept 9861 >>Accept The Howling Wind
@@ -25494,14 +25824,20 @@ step
 >>Kill Windrocs
 .complete 9854,1 
 step
-#completewith next
->>Talk to Kristen after killing Gankly, then talk to Harold (if the event is up)
+#label Saved2
+#completewith Safari2
+>>Talk to Kristen after killing Gankly. This is a rare random event at the Safari
 .accept 9897 >> Accept I'm Saved!
-.goto Nagrand,71.42,40.60,0
-.turnin 9897 >> Turn in I'm Saved!
 .goto Nagrand,71.42,40.60,0
 .unitscan Gankly Rottenfist
 step
+#requires Saved2
+#completewith next
+>>Talk to Harold
+.turnin 9897 >> Turn in I'm Saved!
+.goto Nagrand,71.38,40.62
+step
+#label Safari2
 >>Return to the Safari. Talk to Shado, Hemet, and Harold
 .turnin 9854 >>Turn in Windroc Mastery
 .accept 9855 >>Accept Windroc Mastery
@@ -25529,6 +25865,9 @@ step
 .turnin 9819 >>Turn in The Tortured Earth
 .accept 9821 >>Accept Eating Damnation
 .unitscan Gordawg
+step
+#completewith CBulls
+.destroy 24475 >> You can delete "Gordawg's Imprint" from your bags, as it's no longer needed
 step
 >>Talk to Sharvak and Morgh
 .turnin 9870 >>Turn in The Throne of the Elements
@@ -25580,6 +25919,7 @@ step
 .turnin 9800 >>Turn in A Rare Bean
 .accept 9804 >>Accept Agitated Spirits of Skysong
 step
+#questguide
 .goto Nagrand,62.19,22.60,50,0
 .goto Nagrand,61.99,22.09,50,0
 .goto Nagrand,61.28,22.24,50,0
@@ -25593,10 +25933,27 @@ step
 .goto Nagrand,61.72,24.54
 .line Nagrand,62.19,22.60,61.99,22.09,61.28,22.24,60.88,21.39,60.38,20.88,59.87,21.32,59.58,22.48,60.08,24.41,60.57,25.04,61.15,24.92,61.72,24.54,62.19,22.60
 >>Talk to Gordawg patrolling clockwise at the Throne of the Elements
-.isQuestComplete 9821
 .turnin 9821 >>Turn in Eating Damnation
 .accept 9849 >>Accept Shattering the Veil
 .unitscan Gordawg
+.isQuestComplete 9821
+step
+.goto Nagrand,62.19,22.60,50,0
+.goto Nagrand,61.99,22.09,50,0
+.goto Nagrand,61.28,22.24,50,0
+.goto Nagrand,60.88,21.39,50,0
+.goto Nagrand,60.38,20.88,50,0
+.goto Nagrand,59.87,21.32,50,0
+.goto Nagrand,59.58,22.48,50,0
+.goto Nagrand,60.08,24.41,50,0
+.goto Nagrand,60.57,25.04,50,0
+.goto Nagrand,61.15,24.92,50,0
+.goto Nagrand,61.72,24.54
+.line Nagrand,62.19,22.60,61.99,22.09,61.28,22.24,60.88,21.39,60.38,20.88,59.87,21.32,59.58,22.48,60.08,24.41,60.57,25.04,61.15,24.92,61.72,24.54,62.19,22.60
+>>Talk to Gordawg patrolling clockwise at the Throne of the Elements
+.turnin 9821 >>Turn in Eating Damnation
+.unitscan Gordawg
+.isQuestComplete 9821
 step
 #completewith next
 .cast 31920 >> Use the Nagrand Cherry in your bags
@@ -25618,14 +25975,20 @@ step
 .turnin 9804 >>Turn in Agitated Spirits of Skysong
 .accept 9805 >>Accept Blessing of Incineratus
 step
-#completewith next
->>Talk to Kristen after killing Gankly, then talk to Harold (if the event is up)
+#label Saved3
+#completewith Safari3
+>>Talk to Kristen after killing Gankly. This is a rare random event at the Safari
 .accept 9897 >> Accept I'm Saved!
-.goto Nagrand,71.42,40.60,0
-.turnin 9897 >> Turn in I'm Saved!
 .goto Nagrand,71.42,40.60,0
 .unitscan Gankly Rottenfist
 step
+#requires Saved3
+#completewith next
+>>Talk to Harold
+.turnin 9897 >> Turn in I'm Saved!
+.goto Nagrand,71.38,40.62
+step
+#label Safari3
 >>Return to Nesingwary's Camp. Talk to Harold and Hemet
 .turnin 9858 >>Turn in Talbuk Mastery
 .accept 9859 >>Accept Talbuk Mastery
@@ -25722,7 +26085,7 @@ step
 .goto Nagrand,40.03,26.17
 .line Nagrand,47.37,34.95,46.08,33.41,42.95,30.75,41.16,26.99,40.03,26.17,38.03,27.55,36.34,26.96,35.40,25.60,34.49,21.76,33.78,20.12
 .use 24558 >>Kill the Murkblood Invaders. Loot them for their Murkblood Invasion Plans. Click it in your bags
-.collect 24558,1,9872
+.collect 24558,1,9872 
 .accept 9872 >>Accept Murkblood Invaders
 .unitscan Murkblood Invader
 step
@@ -25771,6 +26134,13 @@ step
 >>Kill Muck Spawns. Loot them for their Cores
 .complete 9815,1 
 step
+.goto Nagrand,41.18,44.33
+>>If the Horde is controlling Halaa, travel there, then talk to Kartos inside the building
+*If the Alliance or nobody is controlling Halaa, skip this step
+.accept 10074 >> Accept Oshu'gun Crystal Powder
+.turnin 10074 >> Turn in Oshu'gun Crystal Powder
+.itemcount 26043,20 
+step
 .goto Nagrand,32.44,36.02
 >>Travel to the Mag'hari Procession. Talk to Saurfang
 .turnin 9864 >>Turn in The Missing War Party
@@ -25794,7 +26164,7 @@ step
 #label Captive
 .goto Nagrand,32.65,40.96,50,0
 .goto Nagrand,31.73,38.74
->>Escort the captive. Be ready with cooldowns for an ambush close to the fork in the road.
+>>Escort the captive. Be ready with cooldowns for an ambush close to the fork in the road
 .complete 9868,1 
 .isOnQuest 9868
 step
@@ -25840,12 +26210,18 @@ step
 >>Kill Enraged Crushers. Loot them for their Cores
 .complete 9821,1,12 
 step
-#completewith next
+#questguide
 .goto Nagrand,61.72,24.54,0
 .line Nagrand,62.19,22.60,61.99,22.09,61.28,22.24,60.88,21.39,60.38,20.88,59.87,21.32,59.58,22.48,60.08,24.41,60.57,25.04,61.15,24.92,61.72,24.54,62.19,22.60
 >>Talk to Gordawg patrolling clockwise at the Throne of the Elements
 .turnin 9821 >>Turn in Eating Damnation
 .accept 9849 >>Accept Shattering the Veil
+step
+#completewith next
+.goto Nagrand,61.72,24.54,0
+.line Nagrand,62.19,22.60,61.99,22.09,61.28,22.24,60.88,21.39,60.38,20.88,59.87,21.32,59.58,22.48,60.08,24.41,60.57,25.04,61.15,24.92,61.72,24.54,62.19,22.60
+>>Talk to Gordawg patrolling clockwise at the Throne of the Elements
+.turnin 9821 >>Turn in Eating Damnation
 step
 #label ThroneOE
 >>Return to the Throne of Elements. Talk to Lo'ap and Morgh
@@ -25856,6 +26232,7 @@ step
 .turnin 9862 >>Turn in Murkblood Corrupters
 .goto Nagrand,60.50,22.37
 step
+#questguide
 .goto Nagrand,62.19,22.60,50,0
 .goto Nagrand,61.99,22.09,50,0
 .goto Nagrand,61.28,22.24,50,0
@@ -25871,6 +26248,22 @@ step
 >>Talk to Gordawg patrolling clockwise at the Throne of the Elements
 .turnin 9821 >>Turn in Eating Damnation
 .accept 9849 >>Accept Shattering the Veil
+.unitscan Gordawg
+step
+.goto Nagrand,62.19,22.60,50,0
+.goto Nagrand,61.99,22.09,50,0
+.goto Nagrand,61.28,22.24,50,0
+.goto Nagrand,60.88,21.39,50,0
+.goto Nagrand,60.38,20.88,50,0
+.goto Nagrand,59.87,21.32,50,0
+.goto Nagrand,59.58,22.48,50,0
+.goto Nagrand,60.08,24.41,50,0
+.goto Nagrand,60.57,25.04,50,0
+.goto Nagrand,61.15,24.92,50,0
+.goto Nagrand,61.72,24.54
+.line Nagrand,62.19,22.60,61.99,22.09,61.28,22.24,60.88,21.39,60.38,20.88,59.87,21.32,59.58,22.48,60.08,24.41,60.57,25.04,61.15,24.92,61.72,24.54,62.19,22.60
+>>Talk to Gordawg patrolling clockwise at the Throne of the Elements
+.turnin 9821 >>Turn in Eating Damnation
 .unitscan Gordawg
 step << Shaman
 #completewith Garadar4
@@ -25911,13 +26304,17 @@ step
 .complete 9851,1 
 .unitscan Banthar
 step
->>Travel to Aeris Landing. Talk to Gezhe and Zerid
+>>Travel to Aeris Landing. Talk to Shadrek, Gezhe, and Zerid
+.accept 9914 >>Accept A Head Full of Ivory
+.turnin 9914 >>Turn in A Head Full of Ivory
+.goto Nagrand,31.77,56.78
 .turnin 9913 >>Turn in The Consortium Needs You!
 .accept 9882 >>Accept Stealing from Thieves
 .goto Nagrand,31.36,57.79
 .accept 9900 >>Accept Gava'xi
 .accept 9925 >>Accept Matters of Security
 .goto Nagrand,30.78,58.14
+.itemcount 25463,3
 step
 >>Travel to Aeris Landing. Talk to Gezhe and Zerid
 .turnin 9913 >>Turn in The Consortium Needs You!
@@ -25929,14 +26326,15 @@ step
 step
 #completewith Voidspawns
 >>Kill Wild Elekks. Loot them for their Ivory Tusks
-.collect 25463,3,9914 
+.collect 25463,3,9914,1 
 .unitscan Wild Elekk
 step
 #completewith Gava
->>Loot the crystals on the ground and kill Voidspawns in Oshu'gun
+>>Kill Raiders. Loot them for their Crystals. Loot the crystals on the ground and kill Voidspawns in Oshu'gun
 .complete 9882,1 
 .complete 9925,1 
 step
+#questguide
 .goto Nagrand,25.84,73.34,60,0
 .goto Nagrand,27.73,74.09,60,0
 .goto Nagrand,28.36,78.70,60,0
@@ -25963,7 +26361,7 @@ step
 .goto Nagrand,36.88,66.96,50,0
 .goto Nagrand,34.53,62.93,60,0
 .goto Nagrand,30.53,76.12
->>Loot the crystals on the ground in Oshu'gun
+>>Kill Raiders. Loot them for their Crystals. Loot the crystals on the ground in Oshu'gun
 .complete 9882,1 
 step
 #label Voidspawns
@@ -25973,7 +26371,7 @@ step
 step
 .loop 60,Nagrand,44.13,76.74,35.70,58.91,29.60,61.89,33.11,77.90,44.13,76.74
 >>Kill Wild Elekks. Loot them for their Ivory Tusks (Bull Elekks do not drop them)
-.collect 25463,3,9914 
+.collect 25463,3,9914,1 
 .unitscan Wild Elekk
 step
 >>Return to Aeris Landing. Talk to Zerid, Gezhe, and Shadrek
@@ -25985,13 +26383,21 @@ step
 .accept 9914 >>Accept A Head Full of Ivory
 .turnin 9914 >>Turn in A Head Full of Ivory
 .goto Nagrand,31.77,56.78
+.itemcount 25463,3
+step
+>>Return to Aeris Landing. Talk to Zerid and Gezhe
+.turnin 9900 >>Turn in Gava'xi
+.turnin 9925 >>Turn in Matters of Security
+.goto Nagrand,30.78,58.14
+.turnin 9882 >>Turn in Stealing from Thieves
+.goto Nagrand,31.36,57.79
 step
 #completewith next
 >>Kill Lake Surgers << !Mage
 >>Kill Lake Surgers. Be careful as they are immune to frost << Mage
 .complete 9810,2 
 step
->>Kill Watoosun's Polluted Essence underwater in Lake Sunspring
+>>Kill Watoosun's Polluted Essence underwater
 .complete 9810,1 
 .goto Nagrand,33.03,50.86
 step
@@ -26013,7 +26419,11 @@ step
 .goto Nagrand,32.36,36.20
 step
 #completewith next
-#label Altruis
+.line Nagrand,26.34,51.07,25.93,53.93,25.27,51.74,24.45,50.91,23.69,49.61,24.47,49.04,23.93,48.94,24.36,46.98,23.77,44.47,25.33,41.39,25.72,40.82,26.35,39.23,28.22,38.16,28.35,37.22,28.12,35.92,29.35,34.24,30.07,34.90,30.64,35.79,30.65,37.70,28.90,38.17,28.49,39.43,27.84,42.01,27.25,45.30,26.91,46.66,26.65,48.17,26.34,51.07
+>>Kill Bach'lor. Loot him for his hoof. He patrols around counter-clockwise. This quest is difficult. Find a group for him if needed. Skip this step if you're unable to find a group or solo him.
+.complete 9859,1 
+.unitscan Bach'lor
+step
 .goto Nagrand,27.33,43.09
 >>Talk to Altruis
 .turnin 9983 >> Turn in He Called Himself Altruis...
@@ -26026,14 +26436,14 @@ step
 .accept 9991 >> Accept Surveying the Land
 step
 #questguide
-#completewith next
->>Wait out the RP. You can take a break in this time
+.goto Nagrand,27.33,43.09
+>>Wait out the flight
 .complete 9991,1 
-.accept 9999 >> Accept Shattering the Veil
-.timer 135,Surveying the Land RP
+.turnin 9991 >> Turn in Surveying the Land
 
+.timer 135,Surveying the Land RP
 step
-#label Bach'lor
+#label Bachlor
 .goto Nagrand,26.34,51.07,60,0
 .goto Nagrand,25.93,53.93,60,0
 .goto Nagrand,25.27,51.74,60,0
@@ -26066,7 +26476,7 @@ step
 step
 #completewith next
 >>Kill Ogres. Loot them for their Warbeads
-.collect 25433,10,10479 
+.collect 25433,10,10479,1 
 step
 .groundgoto Nagrand,28.96,31.19,60,0
 .groundgoto Nagrand,28.09,29.94,60,0
@@ -26132,7 +26542,7 @@ step
 .goto Nagrand,25.81,20.33,50,0
 .goto Nagrand,27.64,18.92
 >>Kill Ogres. Loot them for their Warbeads
-.collect 25433,10,10479 
+.collect 25433,10,10479,1 
 step
 >>Return to the Mag'hari Procession. Talk to Yorley and Ungriz
 .turnin 9948 >>Turn in Finding the Survivors
@@ -26151,15 +26561,20 @@ step
 .accept 10107 >>Accept Diplomatic Measures
 .turnin 9916 >>Turn in Bleeding Hollow Supply Crates
 step
-#completewith ShadoM
->>Talk to Kristen after killing Gankly, then talk to Harold (if the event is up)
+#label Saved3
+#completewith Safari3
+>>Talk to Kristen after killing Gankly. This is a rare random event at the Safari
 .accept 9897 >> Accept I'm Saved!
 .goto Nagrand,71.42,40.60,0
-.turnin 9897 >> Turn in I'm Saved!
-.goto Nagrand,71.38,40.62,0
 .unitscan Gankly Rottenfist
 step
->>Return to the Nesingwary Safari. Talk to Harold, Shado and Hemet
+#requires Saved3
+#completewith ShadoM
+>>Talk to Harold
+.turnin 9897 >> Turn in I'm Saved!
+.goto Nagrand,71.38,40.62
+step
+>>Return to the Nesingwary Safari. Talk to Shado, Harold, and Hemet
 .turnin 9855 >>Turn in Windroc Mastery
 .accept 9856 >>Accept Windroc Mastery
 .goto Nagrand,71.57,40.52
@@ -26175,15 +26590,15 @@ step
 .accept 9856 >>Accept Windroc Mastery
 .goto Nagrand,71.57,40.52
 .turnin 9851 >>Turn in Clefthoof Mastery
-.goto Nagrand,71.38,40.62
+.goto Nagrand,71.52,40.82
 .isQuestComplete 9851
 step
->>Return to the Nesingwary Safari. Talk to Harold and Shado
+>>Return to the Nesingwary Safari. Talk to Shado and Harold
 .turnin 9855 >>Turn in Windroc Mastery
 .accept 9856 >>Accept Windroc Mastery
 .goto Nagrand,71.57,40.52
 .turnin 9859 >>Turn in Talbuk Mastery
-.goto Nagrand,71.52,40.82
+.goto Nagrand,71.38,40.62
 .isQuestComplete 9859
 step
 #label ShadoM
@@ -26195,17 +26610,25 @@ step
 .abandon 9859 >> Abandon Talbuk Mastery
 .abandon 9851 >> Abandon Clefthoof Mastery
 step
+>>Talk to Harold
+.turnin 9897 >> Turn in I'm Saved!
+.goto Nagrand,71.38,40.62
+.isOnQuest 9897
+step
 .goto Nagrand,73.81,62.60
 >>Talk to Lantresor of the Blade
 .complete 10107,1 
 .skipgossip 18261,1
+step
+.goto Nagrand,73.81,62.60
+>>Talk to Lantresor of the Blade
 .turnin 10107 >>Turn in Diplomatic Measures
-.accept 9928 >>Accept Armaments for Deception
-.accept 9927 >>Accept Ruthless Cunning
+.accept 9928 >> Accept Armaments for Deception
+.accept 9927 >> Accept Ruthless Cunning
 step
 #completewith next
 .goto Nagrand,70.51,79.79,0
-.use 25552 >>Kill Orcs. Place the Warmaul Ogre Banner in your bags on their corpses
+.use 25552 >>Kill Orcs. Use the Warmaul Ogre Banner in your bags on their corpses
 >>Loot the wooden boxes on the ground
 .complete 9935,2 
 .complete 9927,1 
@@ -26266,38 +26689,18 @@ step
 .hs >>Hearth to Garadar
 .cooldown item,6948,>0
 step
-#completewith next
-.line Nagrand,62.19,22.60,61.99,22.09,61.28,22.24,60.88,21.39,60.38,20.88,59.87,21.32,59.58,22.48,60.08,24.41,60.57,25.04,61.15,24.92,61.72,24.54,62.19,22.60
->>Talk to Gordawg patrolling clockwise at the Throne of the Elements
-.turnin 9849 >>Turn in Shattering the Veil
-step
 #questguide
 #completewith next
 .line Nagrand,62.19,22.60,61.99,22.09,61.28,22.24,60.88,21.39,60.38,20.88,59.87,21.32,59.58,22.48,60.08,24.41,60.57,25.04,61.15,24.92,61.72,24.54,62.19,22.60
 >>Talk to Gordawg patrolling clockwise at the Throne of the Elements
 .turnin 9849 >>Turn in Shattering the Veil
-.accept 9853 >> Accept Gurok the Usurper
+
 
 step
 .goto Nagrand,60.81,22.38
 >>Return to the Throne of the Elements. Talk to Lo'ap
 .turnin 9810 >>Turn in The Spirit Polluted
 step
-.goto Nagrand,62.19,22.60,50,0
-.goto Nagrand,61.99,22.09,50,0
-.goto Nagrand,61.28,22.24,50,0
-.goto Nagrand,60.88,21.39,50,0
-.goto Nagrand,60.38,20.88,50,0
-.goto Nagrand,59.87,21.32,50,0
-.goto Nagrand,59.58,22.48,50,0
-.goto Nagrand,60.08,24.41,50,0
-.goto Nagrand,60.57,25.04,50,0
-.goto Nagrand,61.15,24.92,50,0
-.goto Nagrand,61.72,24.54
-.line Nagrand,62.19,22.60,61.99,22.09,61.28,22.24,60.88,21.39,60.38,20.88,59.87,21.32,59.58,22.48,60.08,24.41,60.57,25.04,61.15,24.92,61.72,24.54,62.19,22.60
->>Talk to Gordawg patrolling clockwise at the Throne of the Elements
-.turnin 9849 >>Turn in Shattering the Veil
-step
 #questguide
 .goto Nagrand,62.19,22.60,50,0
 .goto Nagrand,61.99,22.09,50,0
@@ -26313,7 +26716,7 @@ step
 .line Nagrand,62.19,22.60,61.99,22.09,61.28,22.24,60.88,21.39,60.38,20.88,59.87,21.32,59.58,22.48,60.08,24.41,60.57,25.04,61.15,24.92,61.72,24.54,62.19,22.60
 >>Talk to Gordawg patrolling clockwise at the Throne of the Elements
 .turnin 9849 >>Turn in Shattering the Veil
-.accept 9853 >> Accept Gurok the Usurper
+
 step
 #completewith Zorbo
 .use 25555 >>Kill Orcs. Use the Kil'sorrow Banner in your bags on their corpses
@@ -26352,7 +26755,7 @@ step
 .goto Nagrand,42.77,20.73
 >>Look for a group for The Ring of Blood questline. There are 6 elite quests that give a LOT of fast xp and a weapon that'll last you to 70. Only accept this when your party is ready and on the same quest progression as you. (Auto-accept is disabled for this questline). Skip this step if you can't find a group for it
 >>Talk to Gurgthock
-.accept 9962,0 >> Accept The Ring of Blood: Brokentoe
+.accept 9962,1 >> Accept The Ring of Blood: Brokentoe
 step
 .goto Nagrand,43.66,20.37
 >>Kill Brokentoe in the Ring of Blood
@@ -26366,7 +26769,7 @@ step
 step
 .goto Nagrand,42.77,20.73
 >>Talk to Gurgthock
-.accept 9967,0 >> Accept The Ring of Blood: The Blue Brothers
+.accept 9967,1 >> Accept The Ring of Blood: The Blue Brothers
 .isQuestTurnedIn 9962
 step
 .goto Nagrand,43.66,20.37
@@ -26381,7 +26784,7 @@ step
 step
 .goto Nagrand,42.77,20.73
 >>Talk to Gurgthock
-.accept 9970,0 >> Accept The Ring of Blood: Rokdar the Sundered Lord
+.accept 9970,1 >> Accept The Ring of Blood: Rokdar the Sundered Lord
 .isQuestTurnedIn 9967
 step
 .goto Nagrand,43.66,20.37
@@ -26396,7 +26799,7 @@ step
 step
 .goto Nagrand,42.77,20.73
 >>Talk to Gurgthock
-.accept 9972,0 >> Accept The Ring of Blood: Skra'gath
+.accept 9972,1 >> Accept The Ring of Blood: Skra'gath
 .isQuestTurnedIn 9970
 step
 .goto Nagrand,43.66,20.37
@@ -26411,7 +26814,7 @@ step
 step
 .goto Nagrand,42.77,20.73
 >>Talk to Gurgthock
-.accept 9973,0 >> Accept The Ring of Blood: The Warmaul Champion
+.accept 9973,1 >> Accept The Ring of Blood: The Warmaul Champion
 .isQuestTurnedIn 9972
 step
 .goto Nagrand,43.66,20.37
@@ -26426,7 +26829,7 @@ step
 step
 .goto Nagrand,42.77,20.73
 >>Talk to Gurgthock
-.accept 9977,0 >> Accept The Ring of Blood: The Final Challenge
+.accept 9977,1 >> Accept The Ring of Blood: The Final Challenge
 .isQuestTurnedIn 9973
 step
 .goto Nagrand,43.43,20.57
@@ -26558,7 +26961,7 @@ step
 .goto Nagrand,55.79,37.95
 step
 #questguide
-.goto Nagrand,71.38,40.62
+.goto Nagrand,71.52,40.82
 >>Talk to Hemet
 .accept 9852 >>Accept The Ultimate Bloodsport
 .isQuestTurnedIn 9856
@@ -26573,16 +26976,32 @@ step
 .unitscan Tusker
 step
 #questguide
+#label Saved5
+#completewith Safari5
+>>Talk to Kristen after killing Gankly. This is a rare random event at the Safari
+.accept 9897 >> Accept I'm Saved!
+.goto Nagrand,71.42,40.60,0
+.unitscan Gankly Rottenfist
+step
+#questguide
+#requires Saved5
+#completewith next
+>>Talk to Harold
+.turnin 9897 >> Turn in I'm Saved!
+.goto Nagrand,71.38,40.62
+step
+#label Safari5
+#questguide
 .goto Nagrand,71.38,40.62
 >>Return to the Nesingwary Safari. Talk to Hemet
-.turnin 9852 >>Turn in The Ultimate Bloodsport.
+.turnin 9852 >>Turn in The Ultimate Bloodsport
 .isQuestComplete 9852
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #tbc
-#group Horde 60-70
+#group RestedXP Horde 60-70
 << Horde
 #name 65-67 Blade's Edge
 #next 67-67 Blade's Edge Turnins
@@ -26620,19 +27039,18 @@ step
 .zoneskip Blade's Edge Mountains
 .skill riding,<300,1
 step
-.maxlevel 66
 .goto Blade's Edge Mountains,52.96,96.22
 >>Talk to Grahk outside the cave
 .accept 10928 >>Accept Killing the Crawlers
-step
 .maxlevel 66
+step
 .goto Blade's Edge Mountains,51.55,90.09,50,0
 .goto Blade's Edge Mountains,52.62,86.11,50,0
 .goto Blade's Edge Mountains,51.23,80.35
 >>Kill Cavern Crawlers inside the cave as you head to the other side. You are able to mount up inside of this cave
 .complete 10928,1 
+.isOnQuest 10928
 step
-.maxlevel 66
 >>Travel to the Thunderlord Stronghold. Talk to Tor'chunk, Nekthar (he patrols between the campfire and Wanted Poster), the Wanted Poster, and Gordrek
 .turnin 10928 >>Turn in Killing the Crawlers
 .accept 10503 >>Accept The Bladespire Threat
@@ -26645,74 +27063,72 @@ step
 .accept 10486 >>Accept The Encroaching Wilderness
 .goto Blade's Edge Mountains,52.26,57.58,30,0
 .goto Blade's Edge Mountains,52.37,57.94
-step
 .maxlevel 66
+step
 #completewith ThunderlordArt
 .goto Blade's Edge Mountains,53.37,55.41
 .home >>Set your Hearthstone to Thunderlord Stronghold
-step
 .maxlevel 66
+step
 .goto Blade's Edge Mountains,52.05,54.11
 .fp Thunderlord Stronghold >> Get the Thunderlord Stronghold flight path
 step << Hunter TBC
-.maxlevel 66
 #completewith next
 .goto Blade's Edge Mountains,53.53,53.21
 >>Talk to Lor
 .stable >>Stable your pet
+.isOnQuest 10486
 step << Hunter TBC
-.maxlevel 66
 #completewith next
 .groundgoto Blade's Edge Mountains,56.17,72.20,30,0
 .groundgoto Blade's Edge Mountains,57.43,70.21,30,0
 .goto Blade's Edge Mountains,57.35,62.62
 .cast 1515 >>Tame a level 63 Rip-Blade Ravager
+.isOnQuest 10486
 step << Hunter TBC
-.maxlevel 66
 #completewith next
 .loop 60,Blade's Edge Mountains,51.45,62.50,52.52,64.23,53.92,67.53,54.66,70.89,52.59,74.02,50.72,73.53,51.74,71.50,50.35,70.78,48.98,69.28,49.33,63.40,49.61,61.42,51.45,62.50
 .train 35298 >>Use the Ravager to learn Gore Rank 9.
 >>Kill Bladewing Bloodletters
 .complete 10486,1 
+.isOnQuest 10486
 step
-.maxlevel 66
 .loop 60,Blade's Edge Mountains,51.45,62.50,52.52,64.23,53.92,67.53,54.66,70.89,52.59,74.02,50.72,73.53,51.74,71.50,50.35,70.78,48.98,69.28,49.33,63.40,49.61,61.42,51.45,62.50
 >>Kill Bladewing Bloodletters
 .complete 10486,1 
+.isOnQuest 10486
 step << Shaman
-.maxlevel 66
 #completewith next
 .hs >>Hearth to Thunderlord Stronghold
 .cooldown item,6948,>0
 step
-.maxlevel 66
 >>Return to Thunderlord Stronghold. Talk to Gor'drek
 .turnin 10486 >>Turn in The Encroaching Wilderness
 .accept 10487 >>Accept Dust from the Drakes
 .goto Blade's Edge Mountains,52.26,57.58,30,0
 .goto Blade's Edge Mountains,52.37,57.94
-step << Hunter TBC
 .maxlevel 66
+step << Hunter TBC
 #completewith next
 .goto Blade's Edge Mountains,53.53,53.21
 >>Talk to Lor
 .stable >>Get your old Ravager out. Teach it Gore Rank 9
+.isQuestTurnedIn 10486
 step
-.maxlevel 66
 #completewith Thunderlord
 >>Kill Bladespire Ogres and Bladespire Raptors. Loot the Raptors for their Ribs
 .complete 10503,1 
 .complete 10503,2 
-.collect 31670,3,10860 
+.collect 31670,3,10860,1 
+.isOnQuest 10503
 step
-.maxlevel 66
 #label ThunderlordArt
 .goto Blade's Edge Mountains,41.7,52.8
 .use 30431 >>Kill Bladespire Ogres. Loot them for a Thunderlord Clan Artifact. Click it in your bags
-.collect 30431,1,10524 
+.collect 30431,1,10524,1 
 .accept 10524 >>Accept Thunderlord Clan Artifacts
+.isOnQuest 10503
 step
-.maxlevel 66
 #label Thunderlord
 >>Loot the Thunderlord Clan Arrow on top of the stone structure, Drum inside the building, and Tablet inside the building
 .complete 10524,1 
@@ -26722,22 +27138,19 @@ step
 .goto Blade's Edge Mountains,40.18,58.34,-1
 .complete 10524,3 
 .goto Blade's Edge Mountains,41.19,46.50,-1
+.isOnQuest 10524
 step
-.maxlevel 66
 .loop 60,Blade's Edge Mountains,43.48,46.85,41.40,46.63,39.81,49.22,38.90,52.64,38.44,56.05,38.99,57.99,40.23,58.34,42.32,58.35,42.57,54.37,42.11,52.30,47.50,52.35,49.61,50.17,42.91,48.97,43.48,46.85
 >>Kill Bladespire Ogres and Bladespire Raptors. Loot the Raptors for their Ribs
 .complete 10503,1 
 .complete 10503,2 
-.collect 31670,3,10860 
+.collect 31670,3,10860,1 
+.isOnQuest 10503
 step << Shaman
-.maxlevel 66
-#label ThunderlordHS
 #completewith BladespireT
 .hs >>Hearth to Thunderlord Stronghold
 .cooldown item,6948,>0
 step
-.maxlevel 66
-#requires ThunderlordHS << Shaman
 #completewith next
 .goto Blade's Edge Mountains,51.06,51.05,40,0
 .goto Blade's Edge Mountains,51.96,52.69,30,0
@@ -26747,7 +27160,6 @@ step
 .cooldown item,6948,<0 << Shaman
 .skill riding,225,1
 step
-.maxlevel 66
 #label BladespireT
 >>Return to Thunderlord Stronghold. Talk to Tor'chunk and Rokgah
 .turnin 10503 >>Turn in The Bladespire Threat
@@ -26756,36 +27168,35 @@ step
 .turnin 10524 >>Turn in Thunderlord Clan Artifacts
 .accept 10525 >>Accept Vision Guide
 .goto Blade's Edge Mountains,52.80,58.96
-step
 .maxlevel 66
+step
 #completewith next
 .goto Blade's Edge Mountains,52.80,58.96
 .vehicle >> Use the Fiery Soul Fragment in your bags
 .timer 83,Vision Guide RP
 .use 30481
+.isOnQuest 10525
 
 step
-.maxlevel 66
 >>Wait out the RP, then talk to Rokgah
 .complete 10525,1 
 .goto Blade's Edge Mountains,39.73,85.35
 .turnin 10525 >>Turn in Vision Guide
 .accept 10526 >>Accept The Thunderspike
 .goto Blade's Edge Mountains,52.80,58.96
+.isOnQuest 10525
 .use 30481
 step
-.maxlevel 66
 #completewith next
 .goto Blade's Edge Mountains,48.40,65.00,50,0
 .goto Blade's Edge Mountains,41.81,65.64,60 >> Cross the bridge to The Living Grove
 .skill riding,225,1
 step
-.maxlevel 66
 #completewith next
 >>Kill Fey Drakes. Loot them for their Dust
 .complete 10487,1 
+.isOnQuest 10487
 step
-.maxlevel 66
 .goto Blade's Edge Mountains,37.02,69.11,60,0
 .goto Blade's Edge Mountains,37.59,72.29,60,0
 .goto Blade's Edge Mountains,37.55,73.10,60,0
@@ -26795,55 +27206,54 @@ step
 .goto Blade's Edge Mountains,37.27,78.23,60,0
 .goto Blade's Edge Mountains,37.50,79.05
 .line Blade's Edge Mountains,37.02,69.11,37.59,72.29,37.55,73.10,37.25,74.37,37.27,75.06,37.49,76.26,37.27,78.23,37.50,79.05
->>Kill the Stronglimb Deeprot. Loot him for his Trunk. He patrols the path of The Living Grove.
+>>Kill the Stronglimb Deeproot. Loot him for his Trunk. He patrols the path of The Living Grove.
 .complete 10489,1 
-.unitscan Stronglimb Deeprot
+.unitscan Stronglimb Deeproot
+.isOnQuest 10489
 step
-.maxlevel 66
 .loop 50,Blade's Edge Mountains,37.12,79.10,38.45,79.74,37.14,76.36,38.53,73.89,37.96,72.18,41.12,67.47,39.48,67.47,38.50,69.42,36.01,71.15,37.14,76.36,37.12,79.10
 >>Kill Fey Drakes. Loot them for their Dust
 .complete 10487,1 
+.isOnQuest 10487
 step
-.maxlevel 66
 .goto Blade's Edge Mountains,44.97,72.32
 >>Talk to T'chali in the dirt mound
 .accept 10542 >>Accept They Stole Me Hookah and Me Brews!
-step
 .maxlevel 66
+step
 #completewith Brutebane
 >>Kill Bloodmaul Ogres
 .complete 10505,1 
+.isOnQuest 10505
 step
-.maxlevel 66
 #completewith Thunderspike
 >>Kill Bloodmaul Brewmasters. Loot them for their Brutebane Brew
 >>Loot Brutebane Brew from the wooden barrels around the Bloodmaul Outpost and Draenethyst Mine
 .complete 10542,2 
+.isOnQuest 10542
 step
-.maxlevel 66
 .goto Blade's Edge Mountains,42.10,81.24
 >>Loot the Hookah on the ground
 .complete 10542,1 
+.isOnQuest 10542
 step
-.maxlevel 66
 #completewith next
 .goto Blade's Edge Mountains,42.52,84.12,40,0
 .goto Blade's Edge Mountains,41.17,85.53,40,0
 .goto Blade's Edge Mountains,39.94,83.94,30,0
 .goto Blade's Edge Mountains,39.74,85.51
 .cast 3365 >>Go inside the cave. Click the Thunderspike in the ground to spawn Gor Grimgut
+.isOnQuest 10526
 step
-.maxlevel 66
 #label Thunderspike
 .goto Blade's Edge Mountains,39.80,85.49
 >>Kill Gor Grimgut. Loot him for The Thunderspike
 .complete 10526,1 
+.isOnQuest 10526
 step
-.maxlevel 66
 #completewith next
 .goto Blade's Edge Mountains,42.52,84.12,40 >>Exit the cave
 step
-.maxlevel 66
 #label Brutebane
 .goto Blade's Edge Mountains,42.06,83.15,40,0
 .goto Blade's Edge Mountains,41.84,81.04,40,0
@@ -26856,31 +27266,31 @@ step
 >>Kill Bloodmaul Brewmasters. Loot them for their Brutebane Brew
 >>Loot Brutebane Brew from the wooden barrels around the Bloodmaul Outpost
 .complete 10542,2 
+.isOnQuest 10542
 step << TBC
-.maxlevel 66
 #xprate >1.499
 .loop 55,Blade's Edge Mountains,46.38,76.02,47.76,74.83,46.81,79.64,45.90,77.84,44.37,82.35,43.36,81.29,41.88,83.17,42.07,79.05,43.73,77.33,42.78,73.28,46.38,76.02
 >>Kill Bloodmaul Ogres
 .complete 10505,1 
+.isOnQuest 10505
 step << WOTLK
-.maxlevel 66
 .loop 55,Blade's Edge Mountains,46.38,76.02,47.76,74.83,46.81,79.64,45.90,77.84,44.37,82.35,43.36,81.29,41.88,83.17,42.07,79.05,43.73,77.33,42.78,73.28,46.38,76.02
 >>Kill Bloodmaul Ogres
 .complete 10505,1 
+.isOnQuest 10505
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .goto Blade's Edge Mountains,44.97,72.32
 >>Talk to T'chali in the dirt mound
 .turnin 10542 >>Turn in They Stole Me Hookah and Me Brews!
 .accept 10545 >>Accept Bladespire Kegger
-step
 .maxlevel 66
+step
 .goto Blade's Edge Mountains,44.97,72.32
 >>Talk to T'chali in the dirt mound
 .turnin 10542 >>Turn in They Stole Me Hookah and Me Brews!
-step << tbc
 .maxlevel 66
+step << tbc
 #xprate <1.5
 .goto Blade's Edge Mountains,42.81,56.64,60,0
 .goto Blade's Edge Mountains,42.01,52.71,60,0
@@ -26888,27 +27298,27 @@ step << tbc
 .use 30353 >>Use the Bloodmaul Brutebane Keg in your bags near Bladespire Ogres and run away after you place it down. Stay far enough so they don't aggro you.
 >>Grind mobs while you wait for the cooldown
 .complete 10545,1 
+.isOnQuest 10545
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .goto Blade's Edge Mountains,44.97,72.32
 >>Talk to T'chali in the dirt mound
 .turnin 10545 >>Turn in Bladespire Kegger
 .accept 10543 >>Accept Grimnok and Korgaah, I Am For You!
-step << tbc
 .maxlevel 66
+step << tbc
 #xprate <1.5
 #completewith Brew
 >>Kill Bloodmaul Ogres
 .complete 10505,1 
+.isOnQuest 10505
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .goto Blade's Edge Mountains,45.45,80.40
 >>Kill Grimnok atop the tower
 .complete 10543,1 
+.isOnQuest 10543
 step << tbc
-.maxlevel 66
 #xprate <1.5
 #label Brew
 .goto Blade's Edge Mountains,45.75,78.24,40,0
@@ -26919,27 +27329,28 @@ step << tbc
 >>Kill Bloodmaul Brewmasters. Loot them for their Brutebane Brew
 >>Loot Brutebane Brew from the wooden barrels around the Bloodmaul Outpost
 .collect 29443,3,10543 
+.isOnQuest 10543
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .loop 55,Blade's Edge Mountains,46.38,76.02,47.76,74.83,46.81,79.64,45.90,77.84,44.37,82.35,43.36,81.29,41.88,83.17,42.07,79.05,43.73,77.33,42.78,73.28,46.38,76.02
 >>Kill Bloodmaul Ogres
 .complete 10505,1 
+.isOnQuest 10505
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .groundgoto Blade's Edge Mountains,42.88,46.37,20,0
 .goto Blade's Edge Mountains,43.41,47.05
 .use 29443 >>Run up the ramp. Use the Bloodmaul Brutebane Brew in your bags to lure Korgaah's guards away from him. Kill Korgaah
 .complete 10543,2 
 .skill riding,225,1
+.isOnQuest 10543
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .goto Blade's Edge Mountains,43.41,47.05
 .use 29443 >>Fly to the second floor of the building. Use the Bloodmaul Brutebane Brew in your bags to lure Korgaah's guards away from him. Kill Korgaah
 .complete 10543,2 
 .skill riding,<225,1
+.isOnQuest 10543
 step << tbc
 .maxlevel 66
 #xprate <1.5
@@ -26948,41 +27359,41 @@ step << tbc
 .turnin 10543 >>Turn in Grimnok and Korgaah, I Am For You!
 .accept 10544 >>Accept A Curse Upon Both of Your Clans!
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .goto Blade's Edge Mountains,47.05,77.94
 .use 30479 >>Use the Wicked Strong Fetish in your bags in front of the big building to cleanse it. Kill the Evil Spirit that spawns. Do this twice
 .complete 10544,2 
+.isOnQuest 10544
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .use 30479 >>Use the Wicked Strong Fetish in your bags in front of the buildings to cleanse then. Kill the Evil Spirit that spawns
 .goto Blade's Edge Mountains,42.02,57.14
 .complete 10544,1,1 
+.isOnQuest 10544
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .use 30479 >>Use the Wicked Strong Fetish in your bags in front of the buildings to cleanse then. Kill the Evil Spirit that spawns
 .goto Blade's Edge Mountains,40.47,57.78
 .complete 10544,1,2 
+.isOnQuest 10544
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .use 30479 >>Use the Wicked Strong Fetish in your bags in front of the buildings to cleanse then. Kill the Evil Spirit that spawns
 .goto Blade's Edge Mountains,39.19,57.47
 .complete 10544,1,3 
+.isOnQuest 10544
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .use 30479 >>Use the Wicked Strong Fetish in your bags in front of the buildings to cleanse then. Kill the Evil Spirit that spawns
 .goto Blade's Edge Mountains,38.74,56.05
 .complete 10544,1,4 
+.isOnQuest 10544
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .use 30479 >>Use the Wicked Strong Fetish in your bags in front of the buildings to cleanse then. Kill the Evil Spirit that spawns
 .goto Blade's Edge Mountains,42.02,57.14
 .complete 10544,1 
+.isOnQuest 10544
 step << tbc
 .maxlevel 66
 #xprate <1.5
@@ -26990,12 +27401,10 @@ step << tbc
 >>Talk to T'chali in the dirt mound
 .turnin 10544 >>Turn in A Curse Upon Both of Your Clans!
 step
-.maxlevel 66
 #completewith next
 .hs >>Hearth to Thunderlord Stronghold
 .cooldown item,6948,>0
 step
-.maxlevel 66
 >>Return to Thunderlord Stronghold. Talk to Gor'drek, Rokgah, Tor'chunk, Garm, then Rexxar
 .turnin 10487 >>Turn in Dust from the Drakes
 .accept 10488 >>Accept Protecting Our Own
@@ -27011,13 +27420,13 @@ step
 .turnin 10718 >>Turn in The Spirits Have Voices
 .accept 10614 >>Accept Whispers on the Wind
 .goto Blade's Edge Mountains,51.82,58.34
-step
 .maxlevel 66
+step
 .loop 60,Blade's Edge Mountains,51.45,62.50,52.52,64.23,53.92,67.53,54.66,70.89,52.59,74.02,50.72,73.53,51.74,71.50,50.35,70.78,48.98,69.28,49.33,63.40,49.61,61.42,51.45,62.50
 .use 30175 >>Use Gor'drek's Ointment in your bags Thunderlord Dire Wolves
 .complete 10488,1 
+.isOnQuest 10488
 step
-.maxlevel 66
 #completewith next
 .goto Blade's Edge Mountains,55.81,72.35,40,0
 .goto Blade's Edge Mountains,57.67,70.09,40,0
@@ -27025,28 +27434,27 @@ step
 .goto Blade's Edge Mountains,69.62,61.51,50 >> Travel to Vekhaar Stand
 .skill riding,225,1
 step
-.maxlevel 66
 #completewith next
 >>Talk to Dertrok
+.accept 10565 >>Accept The Stones of Vekh'nir
 .goto Blade's Edge Mountains,75.14,62.11,0,0
-step
 .maxlevel 66
+step
 >>Travel to Mok'Nathal Village. Talk to Leoroxx
 .turnin 10614 >>Turn in Whispers on the Wind
 .accept 10709 >>Accept Reunion
 .goto Blade's Edge Mountains,75.29,60.86
-step
 .maxlevel 66
+step
 #completewith Vekh
 .goto Blade's Edge Mountains,76.09,60.31
 .home >>Set your Hearthstone to Mok'Nathal Village
 step
-.maxlevel 66
 >>Talk to Varah
 .accept 10860 >>Accept Mok'Nathal Treats
 .goto Blade's Edge Mountains,76.09,60.31
-step
 .maxlevel 66
+step
 >>Talk to Taerek, Silmara, and Dertrok
 .accept 10617 >>Accept Silkwing Cocoons
 .goto Blade's Edge Mountains,75.88,61.43
@@ -27054,25 +27462,26 @@ step
 .goto Blade's Edge Mountains,75.84,61.54
 .accept 10565 >>Accept The Stones of Vekh'nir
 .goto Blade's Edge Mountains,75.14,62.11
-step
 .maxlevel 66
+step
 #completewith Vekh
 >>Kill Larva. Loot them for their Cocoons. They can turn into Silkwings at low health
 >>Kill Silkwings. Loot them for their Wings
 .complete 10617,1 
 .complete 10618,1 
+.isOnQuest 10617
+.isOnQuest 10618
 step
-.maxlevel 66
 .loop 50,Blade's Edge Mountains,76.89,72.76,76.53,76.35,77.56,76.97,78.43,76.22,78.39,73.69,76.89,72.76
 >>Kill Vekh'nir. Loot them for their Crystal
-.collect 30561,1,10565 
+.collect 30561,1,10565,1 
+.isOnQuest 10565
 step
-.maxlevel 66
 .goto Blade's Edge Mountains,77.81,74.66
 .use 30561 >>Use the Vekh'nir crystal in your bags in the purple circle
 .complete 10565,1 
+.isOnQuest 10565
 step
-.maxlevel 66
 #label Vekh
 >>Return to Mok'Nathal Village. Talk to Dertrok and Leoroxx
 .turnin 10565 >>Turn in The Stones of Vekh'nir
@@ -27080,8 +27489,8 @@ step
 .goto Blade's Edge Mountains,75.14,62.11
 .accept 10846 >>Accept Understanding the Mok'Nathal
 .goto Blade's Edge Mountains,75.29,60.86
-step
 .maxlevel 66
+step
 #sticky
 #label Wands
 .use 30650 >> Use Dertrok's Wand Case in your bags
@@ -27089,8 +27498,8 @@ step
 .collect 30652,1,10566,1 
 .collect 30653,1,10566,1 
 .collect 30654,1,10566,1 
+.isOnQuest 10566
 step
-.maxlevel 66
 .line Blade's Edge Mountains,76.89,72.76,76.53,76.35,77.56,76.97,78.43,76.22,78.39,73.69,76.89,72.76
 .goto Blade's Edge Mountains,76.89,72.76,60,0
 .goto Blade's Edge Mountains,76.53,76.35,60,0
@@ -27102,13 +27511,13 @@ step
 >>Kill Silkwings. Loot them for their Wings
 .complete 10617,1 
 .complete 10618,1 
+.isOnQuest 10617
+.isOnQuest 10618
 step
-.maxlevel 66
 #requires Wands
 #completewith Vekh2
 .goto Blade's Edge Mountains,71.34,74.41,30 >> Enter the cave to Trogma's Claim
 step
-.maxlevel 66
 #completewith next
 #requires Wands
 >>Kill Vekh'nir. Loot them for their Infused Crystals. Use the wands when you have a crystal on Dullgrom Dredgers to test the wand
@@ -27121,16 +27530,16 @@ step
 .use 30652
 .use 30653
 .use 30654
+.isOnQuest 10566
 step
-.maxlevel 66
 #requires Wands
 #label Vekh2
 .goto Blade's Edge Mountains,69.83,73.10,30,0
 .goto Blade's Edge Mountains,70.08,72.18
 >>Kill Vekh at the end of the cave
 .complete 10846,1 
+.isOnQuest 10846
 step
-.maxlevel 66
 .loop 40,Blade's Edge Mountains,71.34,74.41,72.24,73.42,73.63,73.35,72.51,75.83,71.34,74.41,70.39,71.72
 >>Kill Vekh'nir. Loot them for their Infused Crystals. Use the wands when you have a crystal on Dullgrom Dredgers to test the wand. Use the first and second wands on one ogre, then the fourth and third wands on another
 .collect 30655,4,10566,1,-1 
@@ -27142,13 +27551,12 @@ step
 .use 30652
 .use 30653
 .use 30654
+.isOnQuest 10566
 step << Shaman
-.maxlevel 66
 #completewith next
 .hs >>Hearth to Thunderlord Stronghold
 .cooldown item,6948,>0
 step << Shaman
-.maxlevel 66
 >>Return to Thunderlord Stronghold. Talk to Taerek, Slimara, Leoroxx, Dohgar, and Dertrok
 .turnin 10617 >>Turn in Silkwing Cocoons
 .goto Blade's Edge Mountains,75.88,61.43
@@ -27162,8 +27570,8 @@ step << Shaman
 .turnin 10566 >>Turn in Trial and Error
 .accept 10615 >>Accept Ruuan Weald
 .goto Blade's Edge Mountains,75.14,62.11
-step << !Shaman
 .maxlevel 66
+step << !Shaman
 >>Return to Thunderlord Stronghold. Talk to Dertrok, Silmara, Taerek, Leoroxx, and Dohgar
 .turnin 10566 >>Turn in Trial and Error
 .accept 10615 >>Accept Ruuan Weald
@@ -27177,18 +27585,15 @@ step << !Shaman
 .goto Blade's Edge Mountains,75.29,60.86
 .accept 10851 >>Accept The Totems of My Enemy
 .goto Blade's Edge Mountains,74.91,60.47
-step
 .maxlevel 66
-#completewith next
+step
 .goto Blade's Edge Mountains,76.37,65.93
 .fp Mok'Nathal Village >> Get the Mok'Nathal Village flight path
 step
-.maxlevel 66
 #completewith next
 .goto Blade's Edge Mountains,76.37,65.93
 .fly Thunderlord Stronghold >>Fly to Thunderlord Stronghold
 step
-.maxlevel 66
 >>Return to Thunderlord Stronghold. Talk to Gor'drek and Rexxar
 .turnin 10488 >>Turn in Protecting Our Own
 .goto Blade's Edge Mountains,52.26,57.58,30,0
@@ -27196,13 +27601,14 @@ step
 .turnin 10709 >>Turn in Reunion
 .accept 10714 >>Accept On Spirit's Wings
 .goto Blade's Edge Mountains,51.82,58.34
-step
 .maxlevel 66
+step
 .goto Blade's Edge Mountains,57.24,34.55
 .use 31128 >>Use Rexxar's Whistle in your bags on the bonfire with the Soothsayer and Taskmaster talking to each other
 .complete 10714,1 
+.isOnQuest 10714
+
 step
-.maxlevel 66
 #completewith next
 .goto Blade's Edge Mountains,58.50,30.20,40,0
 .goto Blade's Edge Mountains,59.29,32.26,40,0
@@ -27210,7 +27616,6 @@ step
 .goto Blade's Edge Mountains,61.48,29.64,40 >> Ascend the mountain up to Ruuan Weald
 .skill riding,225,1
 step
-.maxlevel 66
 >>Travel to Evergrove. Talk to Faradrella, Timeon, and Chawn
 .accept 10753 >>Accept Culling the Wild
 .goto Blade's Edge Mountains,62.56,38.23
@@ -27219,18 +27624,17 @@ step
 .goto Blade's Edge Mountains,62.16,39.11
 .accept 10682 >>Accept A Time for Negotiation...
 .goto Blade's Edge Mountains,61.97,39.47
-step
 .maxlevel 66
+step
 .goto Blade's Edge Mountains,61.68,39.61
 .fp Evergrove >> Get the Evergrove flight path
 step
-.maxlevel 66
 .goto Blade's Edge Mountains,61.25,38.46
 >>Talk to Mosswood
 .accept 10770 >>Accept Little Embers
 .accept 10771 >>Accept From the Ashes
-step
 .maxlevel 66
+step
 .line Blade's Edge Mountains,62.82,25.94,63.12,27.41,63.34,27.87,63.28,28.37,62.73,28.77,62.45,29.31,62.37,29.65,62.44,31.66,62.11,33.34,61.80,34.00,61.43,34.10,60.61,33.98,60.12,34.47,60.01,34.80,60.08,35.15,59.90,35.72,59.60,36.07,59.11,36.21,58.96,36.61,58.65,36.91,58.18,36.96,57.90,37.34,57.84,37.81,59.13,39.47,59.90,40.27,60.51,40.90,61.50,42.02,61.78,42.41,62.62,43.95,62.97,45.05,63.06,46.38
 63.06,46.38
 .goto Blade's Edge Mountains,63.06,46.38,60,0
@@ -27267,47 +27671,47 @@ step
 .complete 10682,1 
 .unitscan Overseer Nuaar
 .skipgossip
+.isOnQuest 10682
 step
-.maxlevel 66
 >>Return to Evergrove. Talk to Chawn and Samia
 .turnin 10682 >>Turn in A Time for Negotiation...
 .accept 10713 >>Accept ...and a Time for Action
 .goto Blade's Edge Mountains,61.97,39.47
 .accept 10717 >>Accept Poaching from Poachers
 .goto Blade's Edge Mountains,61.94,39.45
-step
 .maxlevel 66
+step
 #completewith next
 .use 31120 >>Kill Wyrmcult. Loot them for their Meeting Note. Click it in your bags
 .collect 31120,1,10719,1 
 .accept 10719 >>Accept Did You Get The Note?
+.isOnQuest 10713
 step
-.maxlevel 66
 .loop 50,Blade's Edge Mountains,59.62,38.72,57.43,39.14,57.71,37.76,59.10,36.09,59.93,35.16,60.82,33.54,62.10,32.35,61.78,27.86,62.89,25.82,63.56,27.91,62.10,32.35,61.55,34.48,60.09,36.97,59.62,38.72
 >>Kill Wyrmcult Poachers and Hewers. Loot the Poachers for their Nets
 .complete 10717,1 
 .complete 10713,1 
+.isOnQuest 10713
 step
-.maxlevel 66
 .loop 50,Blade's Edge Mountains,59.62,38.72,57.43,39.14,57.71,37.76,59.10,36.09,59.93,35.16,60.82,33.54,62.10,32.35,61.78,27.86,62.89,25.82,63.56,27.91,62.10,32.35,61.55,34.48,60.09,36.97,59.62,38.72
 .use 31120 >>Kill Wyrmcult. Loot them for their Meeting Note. Click it in your bags
 .collect 31120,1,10719,1 
 .accept 10719 >>Accept Did You Get The Note?
+.isOnQuest 10713
 step
-.maxlevel 66
 #completewith next
 .loop 50,Blade's Edge Mountains,63.61,34.11,65.32,34.83,65.52,31.59,65.32,29.29,63.99,31.39,63.61,34.11
 >>Kill the Ruuan'ok. Loot them for their Claws
 .collect 30704,6,10567,1 
+.isOnQuest 10567
 step
-.maxlevel 66
 .goto Blade's Edge Mountains,64.48,33.09
 .use 30704 >>Use the Ruuan'ok Claws in the green circle. Kill the Harbringer that spawns. Loot him for his Pendant
 .cast 37426
-.timer 10,Creating the Pendant RP
+.timer 8,Creating the Pendant RP
 .complete 10567,1 
+.isOnQuest 10567
 step
-.maxlevel 66
 >>Return to Evergrove. Talk to Timeon, Chawn, and Samia
 .turnin 10567 >>Turn in Creating the Pendant
 .accept 10607 >>Accept Whispers of the Raven God
@@ -27319,64 +27723,60 @@ step
 .turnin 10717 >>Turn in Poaching from Poachers
 .accept 10747 >>Accept Whelps of the Wyrmcult
 .goto Blade's Edge Mountains,61.94,39.45
-step
 .maxlevel 66
+step
 #completewith SpiritW
 .goto Blade's Edge Mountains,61.68,39.61
 .fly Thunderlord Stronghold >>Fly to Thunderlord Stronghold
 step
-.maxlevel 66
 #completewith SablemaneGulch
 .goto Blade's Edge Mountains,53.37,55.41
 .home >>Set your Hearthstone to Thunderlord Stronghold
 .skill riding,<225,1
 step
-.maxlevel 66
 #label SpiritW
 >>Return to Thunderlord Stronghold. Talk to Rexxar
 .turnin 10714 >>Turn in On Spirit's Wings
 .accept 10783 >>Accept Baron Sablemane
 .goto Blade's Edge Mountains,51.82,58.34
-step
 .maxlevel 66
+step
 .goto Blade's Edge Mountains,53.25,41.18
 >>Talk to Sablemane
 .turnin 10783 >>Turn in Baron Sablemane
 .accept 10715 >>Accept Into the Churning Gulch
-step
 .maxlevel 66
+step
 .loop 50,Blade's Edge Mountains,51.18,37.94,48.99,41.05,49.28,44.96,47.16,45.03,45.19,47.89,44.82,44.78,47.03,43.18,48.99,41.05
 >>Kill Crust Bursters. Loot them for their Venom Glands
 .complete 10715,1 
+.isOnQuest 10715
 step
-.maxlevel 66
 #label SablemaneGulch
 .goto Blade's Edge Mountains,53.25,41.18
 >>Talk to Sablemane
 .turnin 10715 >>Turn in Into the Churning Gulch
 .accept 10749 >>Accept Baron Sablemane's Poison
-step
 .maxlevel 66
+step
 #completewith next
 .hs >>Hearth to Thunderhold Stronghold
 .skill riding,<225,1
 .cooldown item,6948,>0
 step
-.maxlevel 66
 >>Return to Thunderhold Stronghold. Talk to Rexxar and Tor'chunk
 .turnin 10749 >>Turn in Baron Sablemane's Poison
 .accept 10720 >>Accept The Smallest Creatures
 .goto Blade's Edge Mountains,51.82,58.34
 .accept 10784 >>Accept Crush the Bloodmaul Camp
 .goto Blade's Edge Mountains,51.94,58.41
-step
 .maxlevel 66
+step
 #completewith next
 .goto Blade's Edge Mountains,52.05,54.11
 .fly Mok'Nathal Village >>Fly to Mok'Nathal Village
 .skill riding,225,1
 step
-.maxlevel 66
 .goto Blade's Edge Mountains,69.00,63.82,60,0
 .goto Blade's Edge Mountains,68.43,69.79,60,0
 .goto Blade's Edge Mountains,66.97,60.75,60,0
@@ -27384,24 +27784,24 @@ step
 .goto Blade's Edge Mountains,63.88,52.26
 >>Kill Scalewing Serpents. Loot them for their Flesh
 .complete 10860,2 
+.isOnQuest 10860
 .skill riding,225,1
 step
-.maxlevel 66
 #completewith next
 >>Kill Bladespire Ogres. Loot them for their Totems
 .complete 10851,1 
+.isOnQuest 10851
 step
-.maxlevel 66
 .goto Blade's Edge Mountains,57.14,54.49
 >>Kill Gnosh Brognat
 .complete 10843,1 
+.isOnQuest 10843
 step
-.maxlevel 66
 .loop 55,Blade's Edge Mountains,57.36,54.97,58.16,54.54,60.59,55.17,58.57,58.05,58.31,61.57,57.53,60.36,56.65,60.46,57.36,54.97
 >>Kill Bladespire Ogres. Loot them for their Totems
 .complete 10851,1 
+.isOnQuest 10851
 step
-.maxlevel 66
 .goto Blade's Edge Mountains,63.88,52.26,60,0
 .goto Blade's Edge Mountains,66.88,54.90,60,0
 .goto Blade's Edge Mountains,66.97,60.75,60,0
@@ -27409,14 +27809,13 @@ step
 >>Kill Scalewing Serpents. Loot them for their Flesh
 .complete 10860,2 
 .skill riding,<225,1
+.isOnQuest 10860
 step
-.maxlevel 66
 #completewith next
 .hs >>Hearth to Mok'Nathal Village
 .skill riding,225,1
 .cooldown item,6948,>0
 step
-.maxlevel 66
 >>Return to Mok'Nathal Village. Talk to Varah, Leoroxx, and Dohgar
 .turnin 10860 >>Turn in Mok'Nathal Treats
 .goto Blade's Edge Mountains,76.09,60.31
@@ -27425,8 +27824,8 @@ step
 .turnin 10851 >>Turn in The Totems of My Enemy
 .goto Blade's Edge Mountains,74.91,60.47
 .skill riding,225,1
-step
 .maxlevel 66
+step
 >>Return to Mok'Nathal Village. Talk to Dohgar, Leoroxx, and Varah
 .turnin 10851 >>Turn in The Totems of My Enemy
 .goto Blade's Edge Mountains,74.91,60.47
@@ -27435,8 +27834,8 @@ step
 .turnin 10860 >>Turn in Mok'Nathal Treats
 .goto Blade's Edge Mountains,76.09,60.31
 .skill riding,<225,1
-step << tbc
 .maxlevel 66
+step << tbc
 #xprate <1.5
 >>Return to Mok'Nathal Village. Talk to Varah, Leoroxx, and Dohgar
 .turnin 10860 >>Turn in Mok'Nathal Treats
@@ -27448,8 +27847,8 @@ step << tbc
 .accept 10853 >>Accept Spirit Calling
 .goto Blade's Edge Mountains,74.91,60.47
 .skill riding,225,1
-step << tbc
 .maxlevel 66
+step << tbc
 #xprate <1.5
 >>Return to Mok'Nathal Village. Talk to Dohgar, Leoroxx, and Varah
 .turnin 10851 >>Turn in The Totems of My Enemy
@@ -27461,26 +27860,24 @@ step << tbc
 .turnin 10860 >>Turn in Mok'Nathal Treats
 .goto Blade's Edge Mountains,76.09,60.31
 .skill riding,<225,1
-step
 .maxlevel 66
+step
 #completewith Damaged
 .goto Blade's Edge Mountains,76.37,65.93
 .fly Evergrove >> Fly to Evergrove
 .skill riding,300,1
 step
-.maxlevel 66
 #completewith Imps
 .goto Blade's Edge Mountains,62.86,38.31
 .home >>Set your Hearthstone to Evergrove
 .skill riding,300,1
 step
-.maxlevel 66
 #completewith next
 >>Kill Felsworn Scalewings and Daggermaws
 .complete 10753,1 
 .complete 10753,2 
+.isOnQuest 10753
 step
-.maxlevel 66
 #label Damaged
 .goto Blade's Edge Mountains,69.23,37.45,60,0
 .goto Blade's Edge Mountains,68.66,33.30,60,0
@@ -27491,19 +27888,19 @@ step
 .collect 31384,1,10810,1 
 .accept 10810 >>Accept Damaged Mask
 .unitscan Fel Corrupter
+.isOnQuest 10810
 step
-.maxlevel 66
 .loop 60,Blade's Edge Mountains,68.77,34.63,68.31,30.34,70.65,30.50,70.91,26.73,73.67,26.67,73.39,30.11,71.84,34.87,68.77,34.63
 >>Kill Felsworn Scalewings and Daggermaws
 .complete 10753,1 
 .complete 10753,2 
+.isOnQuest 10753
 step
-.maxlevel 66
 #completewith next
 >>Kill Scorch Imps
 .complete 10770,1 
+.isOnQuest 10770
 step
-.maxlevel 66
 >>Use the Ironroot Seeds in your bags on the patches of soil
 .complete 10771,1 
 .goto Blade's Edge Mountains,71.66,22.38
@@ -27511,32 +27908,30 @@ step
 .goto Blade's Edge Mountains,71.61,20.31
 .complete 10771,3 
 .goto Blade's Edge Mountains,71.59,18.50
+.isOnQuest 10771
 step
-.maxlevel 66
 #label Imps
 .loop 50,Blade's Edge Mountains,70.65,18.63,70.63,20.56,70.65,22.68,71.06,23.80,71.92,24.64,72.31,22.97,71.71,21.21,73.06,20.10,73.44,18.06,70.65,18.63
 >>Kill Scorch Imps
 .complete 10770,1 
+.isOnQuest 10770
 step
-.maxlevel 66
 #completewith next
 .hs >>Hearth to Evergrove
 .cooldown item,6948,>0
 .skill riding,300,1
 step
-.maxlevel 66
 >>Return to Ruuan Weald. Talk to O'Mally
 .turnin 10810 >>Turn in Damaged Mask
 .accept 10812 >>Accept Mystery Mask
 .goto Blade's Edge Mountains,62.66,40.38
-step
 .maxlevel 66
+step
 #completewith BloodmaulM
 .goto Blade's Edge Mountains,62.86,38.31
 .home >>Set your Hearthstone to Evergrove
 .skill riding,<300,1
 step
-.maxlevel 66
 #sticky
 #label MysteryM
 .goto Blade's Edge Mountains,62.53,39.91,40,0
@@ -27549,23 +27944,23 @@ step
 >>Talk to Antelarion, he patrols counter-clockwise around the town. Don't accept the next quest yet
 .turnin 10812 >>Turn in Mystery Mask
 .accept 10819 >>Accept Felsworn Gas Mask
-step
 .maxlevel 66
+step
 >>Talk to Mosswood and Faradrella
 .turnin 10770 >>Turn in Little Embers
 .turnin 10771 >>Turn in From the Ashes
 .goto Blade's Edge Mountains,61.25,38.46
 .turnin 10753 >>Turn in Culling the Wild
 .goto Blade's Edge Mountains,62.56,38.23
-step
 .maxlevel 66
+step
 #requires MysteryM
 #completewith next
 .goto Blade's Edge Mountains,56.41,29.23
 .cast 38544 >> Use the Kodohide Drum in your bags to take control of a Marmot. Use the stealth ability and run to the Kegs to poison them.
 .use 31141
+.isOnQuest 10720
 step
-.maxlevel 66
 #requires MysteryM
 >>Use "Stealth" (2) and "Acorn Toss" (3) to avoid fighting mobs. Use "Poison Keg" (4) to poison the kegs
 >>Be careful not to die or exit out of the Marmot, as the Kodohide Drum has a long cooldown
@@ -27577,26 +27972,23 @@ step
 .goto Blade's Edge Mountains,55.97,23.08
 .use 31141
 step
-.maxlevel 66
 #label BloodmaulM
-.loop 50,Blade's Edge Mountains,57.05,27.86,55.30,27.11,55.18,24.26,56.40,22.11,57.70,24.45,56.91,25.87,57.93,29.95,57.05,27.86
+.loop 50,Blade's Edge Mountains,57.05,27.86,55.30,27.11,55.18,24.26,56.40,22.11,57.70,24.45,56.91,25.87,57.93,29.95,54.68,33.92,57.05,27.86
 >>Click off the Marmot buff. Kill Bloodmaul Maulers and Warlocks
 .complete 10784,1 
 .complete 10784,2 
+.isOnQuest 10784
 step << Shaman
-.maxlevel 66
 #completewith next
 .hs >>Hearth to Evergrove
 .cooldown item,6948,>0
 step
-.maxlevel 66
 #completewith Smallest
 .goto Blade's Edge Mountains,61.68,39.61
 >>Return to Evergrove
 .fly Thunderlord Stronghold >>Fly to Thunderlord Stronghold
 .skill riding,300,1
 step
-.maxlevel 66
 #label Smallest
 >>Return to Thunderlord Stronghold. Talk to Rexxar and Tor'chunk
 .turnin 10720 >>Turn in The Smallest Creatures
@@ -27604,166 +27996,158 @@ step
 .goto Blade's Edge Mountains,51.82,58.34
 .turnin 10784 >>Turn in Crush the Bloodmaul Camp
 .goto Blade's Edge Mountains,51.94,58.41
-step
 .maxlevel 66
+step
 #completewith next
 .goto Blade's Edge Mountains,60.19,47.66
 .cast 38362 >> Use Huffer's Whistle in your bags. Wait for Huffer to aggro Grulloc. When he runs away, loot Grulloc's Sack
 .timer 14,Huffer Distract
 .use 31350
+.isOnQuest 10721
 step
-.maxlevel 66
 .goto Blade's Edge Mountains,60.89,47.78
 >>Wait for Huffer to aggro Grulloc. When he runs away, loot Grulloc's Sack
 .complete 10721,1 
+.isOnQuest 10721
 step
-.maxlevel 66
 .goto Blade's Edge Mountains,53.25,41.18
 >>Talk to Sablemane
 .turnin 10721 >>Turn in A Boaring Time for Grulloc
 .accept 10785 >>Accept It's a Trap!
-step
 .maxlevel 66
+step
 >>Return to Thunderlord Stronghold. Talk to Rexxar and Tor'chunk
 .turnin 10785 >>Turn in It's a Trap!
 .accept 10723 >>Accept Gorgrom the Dragon-Eater
 .goto Blade's Edge Mountains,51.82,58.34
 .accept 10786 >>Accept Slaughter at Boulder'mok
 .goto Blade's Edge Mountains,51.94,58.41
-step << skip
 .maxlevel 66
+step << skip
 #completewith next
 .hs >>Hearth to Evergrove
 .cooldown item,6948,>0
 step
-.maxlevel 66
 #completewith next
 .goto Blade's Edge Mountains,52.05,54.11
 .fly Evergrove >>Fly to Evergrove
 .skill riding,225,1
 step
-.maxlevel 66
 #completewith next
 .goto Blade's Edge Mountains,52.05,54.11,60,0
 .goto Blade's Edge Mountains,50.35,36.01,50 >> Cross Wyrmskull Bridge
 .skill riding,225,1
 step
-.maxlevel 66
 .goto Blade's Edge Mountains,50.35,36.01
 >>Talk to Moonshade atop the bridge
 .turnin 10894 >>Turn in Wyrmskull Watcher
 .accept 10893 >>Accept Longtail is the Lynchpin
-step
 .maxlevel 66
+step
 >>Kill Draaca inside of the tunnel
 .goto Blade's Edge Mountains,46.03,32.93,40,0
 .goto Blade's Edge Mountains,45.81,32.90,40,0
 .goto Blade's Edge Mountains,44.78,32.07
 .complete 10893,1 
 .unitscan Draaca Longtail
+.isOnQuest 10893
 step
-.maxlevel 66
 .goto Blade's Edge Mountains,49.92,35.92,20,0
 .goto Blade's Edge Mountains,50.35,36.01
 >>Talk to Moonshade
 .turnin 10893 >>Turn in Longtail is the Lynchpin
 .accept 10722 >>Accept Meeting at the Blackwing Coven
-step
 .maxlevel 66
+step
 #completewith Prophecy
-.use 31489 >>Kill Grishna. Loto them for their Orb of the Grishna. Click it in your bags
+.use 31489 >>Kill Grishna. Loot them for their Orb of the Grishna. Click it in your bags
 .collect 31489,1,10825,1 
 .accept 10825 >>Accept The Truth Unorbed
+.isOnQuest 10607
 step
-.maxlevel 66
 #completewith Prophecy
-+Kill Grishna. Stand next to them when they die for a chance to get a 2 minute buff you need to interact with the Totems.
++Kill Grishna. Stand next to them when they die for a chance to get a 2 minute buff you need to interact with the Prophecies
+.isOnQuest 10607
 step
-.maxlevel 66
 >>Go to the prophecies in Grishnath to receive them
 .complete 10607,4 
 .goto Blade's Edge Mountains,40.18,23.02
 .complete 10607,3 
 .goto Blade's Edge Mountains,40.67,18.63
+.isOnQuest 10607
 step
-.maxlevel 66
 #completewith next
 .goto Blade's Edge Mountains,40.61,17.46,20,0
 .goto Blade's Edge Mountains,39.92,16.42,20,0
 .goto Blade's Edge Mountains,39.02,17.25,20 >>Go up the tree platform on the west side. Cross the bridge, then click the prophecy
 .skill riding,225,1
+.isOnQuest 10607
 step
-.maxlevel 66
 >>Go to the prophecy on the tree platform
 .complete 10607,1 
 .goto Blade's Edge Mountains,39.02,17.25
+.isOnQuest 10607
 step
-.maxlevel 66
 #completewith next
 .goto Blade's Edge Mountains,41.08,18.18,20,0
 .goto Blade's Edge Mountains,42.35,19.18,20,0
 .goto Blade's Edge Mountains,42.47,21.63,20 >>Go up the tree platform on the east side. Cross the bridge, go down a floor, then click the prophecy
 .skill riding,225,1
 step
-.maxlevel 66
 #label Prophecy
 >>Go to the prophecy on the bottom floor of the tree platform
 .goto Blade's Edge Mountains,42.47,21.63
 .complete 10607,2 
+.isOnQuest 10607
 step
-.maxlevel 66
 .loop 60,Blade's Edge Mountains,42.30,24.63,41.37,20.69,39.96,22.83,38.41,20.01,39.33,17.50,40.80,17.74,42.15,18.55,42.73,21.32,42.30,24.63
-.use 31489 >>Kill Grishna. Loto them for their Orb of the Grishna. Click it in your bags
+.use 31489 >>Kill Grishna. Loot them for their Orb of the Grishna. Click it in your bags
 .collect 31489,1,10825,1 
 .accept 10825 >>Accept The Truth Unorbed
+.isOnQuest 10607
 step
-.maxlevel 66
 #completewith Plant
 >>Kill the Boulder'mok Ogres
 .complete 10786,1 
 .complete 10786,2 
+.isOnQuest 10786
 step
-.maxlevel 66
 .loop 60,Blade's Edge Mountains,31.88,21.40,31.59,22.91,30.89,24.19,29.49,23.96,30.41,22.68,30.38,21.06,31.19,19.79,31.88,21.40
 >>Kill Boulder'mok Ogres. Loot them for their Totems
 .collect 31754,3,10723,1 
 .isOnQuest 10723
 step
-.maxlevel 66
 #completewith next
 .goto Blade's Edge Mountains,30.58,22.18
 .cast 39220 >>Click Gorgrom's Altar to start the RP
-.timer 15,Grisly Totem RP
+.timer 15,Gorgrom RP
 step
-.maxlevel 66
 #label Plant
 .goto Blade's Edge Mountains,30.64,22.13
-.use 31754 >>Wait for the short RP. When Gorgrom dies, use the Grisly Totems in your bags 3 times
+.use 31754 >>Wait for the short RP. When Gorgrom dies, use the Grisly Totems in your bags on him 3 times
 .complete 10723,1 
+.isOnQuest 10723
 step
-.maxlevel 66
 .loop 60,Blade's Edge Mountains,31.88,21.40,31.59,22.91,30.89,24.19,29.49,23.96,30.41,22.68,30.38,21.06,31.19,19.79,31.88,21.40
 >>Kill the Boulder'mok Ogres
 .complete 10786,1 
 .complete 10786,2 
+.isOnQuest 10786
 step
-.maxlevel 66
 .loop 50,Blade's Edge Mountains,30.77,31.59,31.05,33.60,33.35,32.28,33.10,30.99,30.77,31.59
 >>Kill Wyrmcult. Loot them for their Costume Scraps
 .collect 31121,3,10747,1 
 .isOnQuest 10722
 step
-.maxlevel 66
 #completewith Scraps
 .goto Blade's Edge Mountains,32.04,33.87,20 >> Enter the Blackwing Coven
 step
-.maxlevel 66
 #completewith Kolphis
 >>Use the Blackwhelp Net in your bags on Wyrmcult Blackwhelps. You can step on the eggs in the cave to spawn more Blackwhelps.
 .complete 10747,1 
 .use 31129
+.isOnQuest 10747
 step
-.maxlevel 66
 #label Scraps
 .goto Blade's Edge Mountains,32.25,34.77,30,0
 .goto Blade's Edge Mountains,33.90,34.36,30,0
@@ -27777,26 +28161,22 @@ step
 .collect 31121,5,10747,1 
 .isOnQuest 10722
 step
-.maxlevel 66
-#completewith next
 .use 31121 >> Use the Costume Scraps in your bags to make the Overseer Disguise
 .collect 31122,1,10747,1 
 .isOnQuest 10722
 step
-.maxlevel 66
 .cast 38157 >>Use the Overseer Disguise in your bags
 .use 31122
 .isOnQuest 10722
 step
-.maxlevel 66
 #label Kolphis
 .goto Blade's Edge Mountains,32.66,37.51
 >>Talk to Kolphis Darkscale at the end of the cave while disguised. Be careful as the disguise only lasts 3 minutes
 .complete 10722,1 
 .use 31122
 .skipgossip
+.isOnQuest 10722
 step
-.maxlevel 66
 .goto Blade's Edge Mountains,33.62,37.14,30,0
 .goto Blade's Edge Mountains,33.64,35.63,30,0
 .goto Blade's Edge Mountains,33.92,34.33,30,0
@@ -27808,22 +28188,21 @@ step
 >>Use the Blackwhelp Net in your bags on Wyrmcult Blackwhelps. You can step on the eggs in the cave (While undisguised) to spawn more Blackwhelps.
 .complete 10747,1 
 .use 31129
+.isOnQuest 10747
 step
-.maxlevel 66
 #completewith next
 .hs >>Hearth to Evergrove
 step << WOTLK
-.maxlevel 66
 >>Return to Evergrove. Talk to Timeon, Chawn, Samia
 .turnin 10607 >>Turn in Whispers of the Raven God
 .goto Blade's Edge Mountains,62.16,39.11
 .turnin 10722 >>Turn in Meeting at the Blackwing Coven
 .turnin 10825 >>Turn in The Truth Unorbed
 .goto Blade's Edge Mountains,61.97,39.47
-.turnin 10747 >>Turn in Whelps of the Wyrmcul
+.turnin 10747 >>Turn in Whelps of the Wyrmcult
 .goto Blade's Edge Mountains,61.94,39.45
-step << tbc
 .maxlevel 66
+step << tbc
 #xprate >1.499
 >>Return to Evergrove. Talk to Timeon, Chawn, Samia
 .turnin 10607 >>Turn in Whispers of the Raven God
@@ -27831,10 +28210,10 @@ step << tbc
 .turnin 10722 >>Turn in Meeting at the Blackwing Coven
 .turnin 10825 >>Turn in The Truth Unorbed
 .goto Blade's Edge Mountains,61.97,39.47
-.turnin 10747 >>Turn in Whelps of the Wyrmcul
+.turnin 10747 >>Turn in Whelps of the Wyrmcult
 .goto Blade's Edge Mountains,61.94,39.45
-step << tbc
 .maxlevel 66
+step << tbc
 #xprate <1.5
 >>Return to Evergrove. Talk to Timeon, Chawn, Samia
 .turnin 10607 >>Turn in Whispers of the Raven God
@@ -27844,16 +28223,16 @@ step << tbc
 .turnin 10825 >>Turn in The Truth Unorbed
 .accept 10829 >>Accept Treebole Must Know
 .goto Blade's Edge Mountains,61.97,39.47
-.turnin 10747 >>Turn in Whelps of the Wyrmcul
+.turnin 10747 >>Turn in Whelps of the Wyrmcult
 .goto Blade's Edge Mountains,61.94,39.45
-step << tbc
 .maxlevel 66
+step << tbc
 #xprate <1.5
 .goto Blade's Edge Mountains,37.1,22.2
 .turnin 10829 >> Turn in Treebole Must Know
 .accept 10830 >> Accept Exorcising the Trees
-step << tbc
 .maxlevel 66
+step << tbc
 #xprate <1.5
 #completewith leafbeardE
 .goto Blade's Edge Mountains,34.3,19.8
@@ -27864,67 +28243,67 @@ step << tbc
 .goto Blade's Edge Mountains,41.3,21.9,0
 >>Kill/loot Dire Ravens Dire Pinfeathers
 >>Loot Grishnath Orbs from the camps of Grishnath.
-.collect 31495,5
-.collect 31517,5
+.collect 31495,5,10830
+.collect 31517,5,10830
+.isOnQuest 10830
 step << tbc
-.maxlevel 66
 #xprate <1.5
 #label leafbeardE
 .goto Blade's Edge Mountains,34.3,19.8
 >>Combine the Orbs and Feathers to get Exorcism Feathers. Use them on the Leafbeards. The Leafbeards will become friendly after you kill the spirits.
 .complete 10830,1 
+.isOnQuest 10830
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .goto Blade's Edge Mountains,37.1,22.2
 .turnin 10830 >>Turn in Exorcising the Trees
-step << tbc
 .maxlevel 66
+step << skip
 #xprate <1.5
 #completewith next
 .goto Blade's Edge Mountains,31.7,32.0
-+Farm 5 Costume Scraps for another disguise. Use it once you make it.
+>>Collect Costume Scraps. Combine it into a disguise
+.collect 31121,5,10748,1 
+.isOnQuest 10748
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .goto Blade's Edge Mountains,33.7,35.9
->>Run to the back of the Blackwing Coven to kill Maxnar.
+>>Run to the back of the Blackwing Coven. Kill Maxnar
 .complete 10748,1 
+.isOnQuest 10748
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .goto Blade's Edge Mountains,62.0,39.5
+>>Return to Evergrove. Talk to Chawn
 .turnin 10748 >>Turn in Maxnar Must Die!
-step
 .maxlevel 66
+step
 #completewith next
 .goto Blade's Edge Mountains,61.68,39.61
 .fly Thunderlord Stronghold >>Fly to Thunderlord Stronghold
 step
-.maxlevel 66
 >>Return to Thunderlord Stronghold. Talk to Rexxar and Tor'chunk
 .turnin 10723 >>Turn in Gorgrom the Dragon-Eater
 
 .goto Blade's Edge Mountains,51.82,58.34
 .turnin 10786 >>Turn in Slaughter at Boulder'mok
 .goto Blade's Edge Mountains,51.94,58.41
-step << tbc
 .maxlevel 66
+step << tbc
 #xprate <1.5
 #completewith next
 .goto Blade's Edge Mountains,55.31,72.78,50,0
 .goto Blade's Edge Mountains,58.45,69.96,70 >> Take the path up the mountain to Razor Ridge
 .skill riding,225,1
 step << tbc
-.maxlevel 66
 #xprate <1.5
 #completewith next
 .goto Blade's Edge Mountains,59.97,74.23,60,0
 .goto Blade's Edge Mountains,62.35,78.01,60,0
 .use 31663 >>Use the Spirit Calling Totems in your bags, then kill Lesser Nether Drakes around it. Try to get at least 2 Drakes per totem. Loot them for their spirits
 .complete 10853,1 
+.isOnQuest 10853
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .goto Blade's Edge Mountains,65.37,78.11,60,0
 .goto Blade's Edge Mountains,64.30,77.02,60,0
@@ -27940,14 +28319,14 @@ step << tbc
 >>Kill Dreadwing. He patrols around counter-clockwise
 .complete 10845,1 
 .unitscan Dreadwing
+.isOnQuest 10845
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .goto Blade's Edge Mountains,66.94,76.36
 .use 31663 >>Use the Spirit Calling Totems in your bags, then kill Lesser Nether Drakes around it. Try to get at least 2 Drakes per totem. Loot them for their spirits
 .complete 10853,1 
+.isOnQuest 10853
 step << tbc
-.maxlevel 66
 #xprate <1.5
 >>Return to Mok'Nathal Village. Talk to Leoroxx and Dohgar
 .turnin 10845 >>Turn in Slay the Brood Mother
@@ -27955,15 +28334,14 @@ step << tbc
 .turnin 10853 >>Turn in Spirit Calling
 .accept 10859 >>Accept Gather the Orbs
 .goto Blade's Edge Mountains,74.91,60.47
-step << tbc
 .maxlevel 66
+step << tbc
 #xprate <1.5
 #completewith next
 .goto Blade's Edge Mountains,76.37,65.93
 .fly Evergrove >>Fly to Evergrove
 .skill riding,225,1
 step << tbc
-.maxlevel 66
 #xprate <1.5
 #completewith next
 .goto Blade's Edge Mountains,65.28,40.00,50,0
@@ -27971,92 +28349,282 @@ step << tbc
 .goto Blade's Edge Mountains,66.68,38.29,60 >> Take the path up the mountain to the Bladed Gulch
 .skill riding,225,1
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .goto Blade's Edge Mountains,67.4,42.1
 >>Place the totem down 15 times in this spot. Clear the area out first before doing so.
 .complete 10859,1 
+.isOnQuest 10859
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .goto Blade's Edge Mountains,74.9,60.5
 .turnin 10859 >>Turn in Gather the Orbs
 .accept 10865 >>Accept Inform Leoroxx!
-step << tbc
 .maxlevel 66
+step << tbc
 #xprate <1.5
 .goto Blade's Edge Mountains,75.3,60.9
 .turnin 10865 >>Turn in Inform Leoroxx!
 .accept 10867 >>Accept There Can Be Only One Response
-step << tbc
 .maxlevel 66
+step << tbc
 #xprate <1.5
+#completewith LegionC
 .goto Blade's Edge Mountains,76.1,60.3
 .home >>Set your Hearthstone to Mok'Nathal Village
 step << tbc
-.maxlevel 66
 #xprate <1.5
+#completewith next
 .goto Blade's Edge Mountains,76.4,65.9
 .fly Evergrove >>Fly to Evergrove
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .goto Blade's Edge Mountains,66.4,44.1
 >>Kill the surrounding Razaan until Nexus-Prince Razaan shows up from the portal in the middle.
 .complete 10867,1 
+.isOnQuest 10867
 step << tbc
-.maxlevel 66
 #xprate <1.5
 .goto Blade's Edge Mountains,74.9,60.5
 .turnin 10867 >>Turn in There Can Be Only One Response
-step << tbc
 .maxlevel 66
+step << tbc
+#completewith LegionC
 #xprate <1.5
 .goto Blade's Edge Mountains,76.4,65.8
 .fly Evergrove >>Fly to Evergrove
 step << tbc
-.maxlevel 66
 #xprate <1.5
-.goto Blade's Edge Mountains,62.3,38.5
->>Find Wildlord Antelarion. He patrols in a circle within Evergrove.
+.goto Blade's Edge Mountains,62.53,39.91,40,0
+.goto Blade's Edge Mountains,62.00,40.21,40,0
+.goto Blade's Edge Mountains,61.45,39.73,40,0
+.goto Blade's Edge Mountains,61.28,38.77,40,0
+.goto Blade's Edge Mountains,62.20,38.15,40,0
+.goto Blade's Edge Mountains,62.69,39.13
+.line Blade's Edge Mountains,62.53,39.91,62.00,40.21,61.45,39.73,61.28,38.77,62.20,38.15,62.69,39.13,62.53,39.91
+>>Talk to Antelarion, he patrols counter-clockwise around the town
 .accept 10819 >>Accept Felsworn Gas Mask
+.isQuestTurnedIn 10812
 step
-.maxlevel 66
 #completewith next
 .cast 38448 >> Equip the Felsworn Gas Mask in your bags to be able to talk to the Legion Communicator
 step
-.maxlevel 66
+#label LegionC
 >>Talk to the Legion Communicator with your Felsworn Gas Mask equipped
 .goto Blade's Edge Mountains,73.27,40.03
 .turnin 10819 >>Turn in Felsworn Gas Mask
 .accept 10820 >>Accept Deceive thy Enemy
 .use 31366
+.isQuestComplete 10819
 step
-.maxlevel 66
+>>Talk to the Legion Communicator with your Felsworn Gas Mask equipped
+.goto Blade's Edge Mountains,73.27,40.03
+.accept 10820 >>Accept Deceive thy Enemy
+.use 31366
+.isQuestTurnedIn 10819
+step
 .loop 40,Blade's Edge Mountains,74.28,38.54,75.39,39.66,74.93,40.17,75.30,41.73,74.22,42.56,73.77,41.02,74.28,38.54
 >>Re-equip your normal helmet
 >>Kill Doomforge Attendants and Engineers in the area
 .complete 10820,1 
 .complete 10820,2 
+.isOnQuest 10820
 step
-.maxlevel 66
 #completewith next
 .cast 38448 >> Equip the Felsworn Gas Mask in your bags to be able to talk to the Legion Communicator
 step
-.maxlevel 66
 .goto Blade's Edge Mountains,73.27,40.03
 >>Talk to the Legion Communicator with your Felsworn Gas Mask equipped
 .turnin 10820 >>Turn in Deceive thy Enemy
-
+.accept 10821 >> Accept You're Fired!
+.maxlevel 66
+step
+.loop 40,Blade's Edge Mountains,73.63,39.14,72.82,40.35,72.90,40.76,72.92,41.50,72.90,41.96,73.36,42.46,73.39,43.64,74.38,41.90,74.01,38.52,73.63,39.14
+>>Kill Anger Guards. Loot them for 5 Camp Anger Keys. Don't click any Obelisks yet
+.collect 31536,5,10821,1 
+.isOnQuest 10821
+step
+#completewith Doomcryer
+#label FirstO
+.goto Blade's Edge Mountains,73.53,43.51
+.cast 38746 >>Click the First Obelisk
+*If you cannot click it, skip this step
+.isOnQuest 10821
+step
+#completewith Doomcryer
+#requires FirstO
+#label SecondO
+.goto Blade's Edge Mountains,73.82,41.03
+.cast 38746 >>Click the Second Obelisk
+*If you cannot click it, skip this step
+.isOnQuest 10821
+step
+#completewith Doomcryer
+#requires SecondO
+#label ThirdO
+.goto Blade's Edge Mountains,73.94,39.89
+.cast 38746 >>Click the Third Obelisk
+*If you cannot click it, skip this step
+.isOnQuest 10821
+step
+#completewith Doomcryer
+#requires ThirdO
+#label FourthO
+.goto Blade's Edge Mountains,75.45,40.52
+.cast 38746 >>Click the Fourth Obelisk
+*If you cannot click it, skip this step
+.isOnQuest 10821
+step
+#completewith Doomcryer
+#requires FourthO
+.goto Blade's Edge Mountains,75.33,41.74
+.cast 38746 >>Click the Fifth Obelisk
+*If you cannot click it, skip this step
+.timer 30,Doomcryer Spawn
+.isOnQuest 10821
+step
+#label Doomcryer
+.goto Blade's Edge Mountains,74.32,42.52
+>>Click the five Obelisks around the camp to summon Doomcryer
+>>Kill Doomcryer. She hits hard, but is not immune to slow or fear. This quest is difficult. Find a group for her if needed. Skip this step if you're unable to find a group or solo her.
+.complete 10821,1 
+.isOnQuest 10821
+step
+#completewith Nuaar
+.hs >>Hearth to Evergrove
+.cooldown item,6948,>0
+step
+.goto Blade's Edge Mountains,62.53,39.91,40,0
+.goto Blade's Edge Mountains,62.00,40.21,40,0
+.goto Blade's Edge Mountains,61.45,39.73,40,0
+.goto Blade's Edge Mountains,61.28,38.77,40,0
+.goto Blade's Edge Mountains,62.20,38.15,40,0
+.goto Blade's Edge Mountains,62.69,39.13
+.line Blade's Edge Mountains,62.53,39.91,62.00,40.21,61.45,39.73,61.28,38.77,62.20,38.15,62.69,39.13,62.53,39.91
+>>Talk to Antelarion, he patrols counter-clockwise around the town
+.turnin 10821 >> Turn in You're Fired!
+.isQuestComplete 10821
+.maxlevel 66
+step
+.goto Blade's Edge Mountains,62.53,39.91,40,0
+.goto Blade's Edge Mountains,62.00,40.21,40,0
+.goto Blade's Edge Mountains,61.45,39.73,40,0
+.goto Blade's Edge Mountains,61.28,38.77,40,0
+.goto Blade's Edge Mountains,62.20,38.15,40,0
+.goto Blade's Edge Mountains,62.69,39.13
+.line Blade's Edge Mountains,62.53,39.91,62.00,40.21,61.45,39.73,61.28,38.77,62.20,38.15,62.69,39.13,62.53,39.91
+>>Talk to Antelarion, he patrols counter-clockwise around the town
+.accept 10910 >> Accept Death's Door
+.isQuestTurnedIn 10821
+.maxlevel 66
+step
+#completewith Signal
+.goto Blade's Edge Mountains,64.31,70.67
+>>Carefully jump down east of Toshley's Station to Death's Door
+.cast 38782 >>Use the Druid Signal in your bags to summon an Evergrove Druid at Death's Door
+.timer 18,Druid Signal RP
+.skill riding,225,1
+.isOnQuest 10910
+step
+#completewith next
+.goto Blade's Edge Mountains,64.31,70.67
+.cast 38782 >>Use the Druid Signal in your bags to summon an Evergrove Druid at Death's Door
+.timer 18,Druid Signal RP
+.skill riding,<225,1
+.isOnQuest 10910
+step
+#label Signal
+.goto Blade's Edge Mountains,64.31,70.67
+>>Talk to the Evergrove Druid
+.turnin 10910 >> Turn in Death's Door
+.accept 10904 >> Accept Harvesting the Fel Ammunition
+.use 31763
+.isQuestTurnedIn 10821
+.maxlevel 66
+step
+.loop 45,Blade's Edge Mountains,63.79,70.87,63.76,68.70,63.08,66.67,62.35,61.39,61.57,59.57,63.39,59.88,63.07,63.93,64.96,67.57,63.79,70.87
+>>Kill the Deathforge and Death Demons. Loot them for their Cannonballs
+.complete 10904,1 
+.isOnQuest 10904
+step
+#completewith next
+.goto Blade's Edge Mountains,64.81,68.32,-1
+.goto Blade's Edge Mountains,61.96,60.29,-1
+.cast 38782 >>Use the Druid Signal in your bags to summon an Evergrove Druid
+.timer 18,Druid Signal RP
+.isOnQuest 10904
+step
+.goto Blade's Edge Mountains,64.81,68.32,-1
+.goto Blade's Edge Mountains,61.96,60.29,-1
+>>Talk to the Evergrove Druid
+.turnin 10904 >> Turn in Harvesting the Fel Ammunition
+.accept 10911 >> Accept Fire At Will!
+.isQuestTurnedIn 10821
+.maxlevel 66
+step
+>>Use the Naturalized Ammunition in your bags to take control of a Fel Cannon. Use it's 1st spell "Artillery on the Warp-Gate" to destroy the Warp-Gates while defending it
+.complete 10911,1 
+.goto Blade's Edge Mountains,64.81,68.32,-1
+.complete 10911,2 
+.goto Blade's Edge Mountains,61.96,60.29,-1
+.isOnQuest 10911
+.isQuestTurnedIn 10821
+.use 31807
+step
+#completewith next
+.goto Blade's Edge Mountains,62.50,60.17
+.cast 38782 >>Use the Druid Signal in your bags to summon an Evergrove Druid
+.timer 18,Druid Signal RP
+.isOnQuest 10911
+step
+.goto Blade's Edge Mountains,62.50,60.17
+>>Talk to the Evergrove Druid
+.turnin 10911 >> Turn in Fire At Will!
+.accept 10912 >> Accept The Hound-Master
+.isQuestTurnedIn 10821
+.maxlevel 66
+step
+#completewith next
+.goto Blade's Edge Mountains,63.62,59.11
+>>Before pulling Baelmon, use the Evergrove Wand in your bags to summon Ancients to help you kill him
+.use 31809
+.isOnQuest 10912
+step
+.goto Blade's Edge Mountains,63.62,59.11
+>>Kill Baelmon the Hound-Master. This quest is difficult. Find a group for him if needed. Skip this step if you're unable to find a group or solo him.
+.complete 10912,1 
+.use 31809
+.isQuestTurnedIn 10821
+.isOnQuest 10912
+step
+#label HoundMaster
+.goto Blade's Edge Mountains,62.53,39.91,40,0
+.goto Blade's Edge Mountains,62.00,40.21,40,0
+.goto Blade's Edge Mountains,61.45,39.73,40,0
+.goto Blade's Edge Mountains,61.28,38.77,40,0
+.goto Blade's Edge Mountains,62.20,38.15,40,0
+.goto Blade's Edge Mountains,62.69,39.13
+.line Blade's Edge Mountains,62.53,39.91,62.00,40.21,61.45,39.73,61.28,38.77,62.20,38.15,62.69,39.13,62.53,39.91
+>>Return to Evergrove. Talk to Antelarion, he patrols counter-clockwise around the town
+.turnin 10912 >> Turn in The Hound-Master
+.isQuestComplete 10912
+.maxlevel 66
+step
+.abandon 10912 >> Abandon The Hound-Master
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #tbc
-#group Horde 60-70
+#group RestedXP Horde 60-70
 << Horde
 #name 67-67 Blade's Edge Turnins
 #next 67-69 Netherstorm
+
+step
++As you're now Level 67 (or higher) and have completed all of your current Blade's Edge objectives, the guide will now tell you to turn in all remaining quests before sending you off to Netherstorm.
+*Click the box here to begin this process
+.isQuestAvailable 10912
+.xp <67,1
 
 step
 .goto Blade's Edge Mountains,51.94,58.41
@@ -28380,22 +28948,88 @@ step
 .turnin 10820 >>Turn in Deceive thy Enemy
 .isQuestComplete 10820
 step
-.isOnQuest 10819
-.maxlevel 66
-#completewith next
-.cast 38448 >> Equip the Felsworn Gas Mask in your bags to be able to talk to the Legion Communicator
+#sticky
+#completewith zonedone
++The next few quests you should do cause the XP/H is good. Everything else has been skipped.
 step
-.maxlevel 66
+.goto Blade's Edge Mountains,69.23,37.45,60,0
+.goto Blade's Edge Mountains,68.66,33.30,60,0
+.goto Blade's Edge Mountains,71.75,32.63,60,0
+.goto Blade's Edge Mountains,70.98,27.92
+.use 31384 >>Kill Fel Corrupters. They patrol around. Loot them for their Damaged Mask. Click it in your bags
+.collect 31384,1,10810,1 
+.accept 10810 >>Accept Damaged Mask
+.unitscan Fel Corrupter
+step
+>>Return to Ruuan Weald. Talk to O'Mally
+.turnin 10810 >>Turn in Damaged Mask
+.accept 10812 >>Accept Mystery Mask
+.goto Blade's Edge Mountains,62.66,40.38
+step
+.goto Blade's Edge Mountains,62.53,39.91,40,0
+.goto Blade's Edge Mountains,62.00,40.21,40,0
+.goto Blade's Edge Mountains,61.45,39.73,40,0
+.goto Blade's Edge Mountains,61.28,38.77,40,0
+.goto Blade's Edge Mountains,62.20,38.15,40,0
+.goto Blade's Edge Mountains,62.69,39.13
+.line Blade's Edge Mountains,62.53,39.91,62.00,40.21,61.45,39.73,61.28,38.77,62.20,38.15,62.69,39.13,62.53,39.91
+>>Talk to Antelarion, he patrols counter-clockwise around the town.
+.turnin 10812 >>Turn in Mystery Mask
+.accept 10819 >>Accept Felsworn Gas Mask
+step
 >>Talk to the Legion Communicator with your Felsworn Gas Mask equipped
 .goto Blade's Edge Mountains,73.27,40.03
 .turnin 10819 >>Turn in Felsworn Gas Mask
-.isOnQuest 10820
+.accept 10820 >>Accept Deceive thy Enemy
+.use 31366
+.isQuestComplete 10819
+step
+.loop 40,Blade's Edge Mountains,74.28,38.54,75.39,39.66,74.93,40.17,75.30,41.73,74.22,42.56,73.77,41.02,74.28,38.54
+>>Re-equip your normal helmet
+>>Kill Doomforge Attendants and Engineers in the area
+.complete 10820,1 
+.complete 10820,2 
+step
+.goto Blade's Edge Mountains,73.27,40.03
+>>Talk to the Legion Communicator with your Felsworn Gas Mask equipped
+.turnin 10820 >>Turn in Deceive thy Enemy
+.accept 10821 >> Accept You're Fired!
+step
+.isOnQuest 10819
+#completewith next
+.cast 38448 >> Equip the Felsworn Gas Mask in your bags to be able to talk to the Legion Communicator
+step
+>>Talk to the Legion Communicator with your Felsworn Gas Mask equipped
+.goto Blade's Edge Mountains,62.53,39.91,40,0
+.goto Blade's Edge Mountains,62.00,40.21,40,0
+.goto Blade's Edge Mountains,61.45,39.73,40,0
+.goto Blade's Edge Mountains,61.28,38.77,40,0
+.goto Blade's Edge Mountains,62.20,38.15,40,0
+.goto Blade's Edge Mountains,62.69,39.13
+.line Blade's Edge Mountains,62.53,39.91,62.00,40.21,61.45,39.73,61.28,38.77,62.20,38.15,62.69,39.13,62.53,39.91
+.turnin 10821 >>Turn in You're Fired!
+.accept 10910 >> Accept Death's Door
+step
+.goto Blade's Edge Mountains,62.3,58.2
+.turnin 10910 >> Turn in Death's Door
+.accept 10904 >> Accept Harvesting the Fel Ammunition
+.use 31763
+step
+>> Kill the mobs in Death's Door until you finish the quest
+.goto Blade's Edge Mountains,62.2,61.0
+.complete 10904,1
+.use 31763
+step
+#label zonedone
+.goto Blade's Edge Mountains,62.3,58.2
+.turnin 10904 >> Turn in Harvesting the Fel Ammunition
+.use 31763
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #tbc
-#group Horde 60-70
+#group RestedXP Horde 60-70
 << Horde
 #name 67-69 Netherstorm
 #next 69-70 Shadowmoon Valley (Aldor) << TBC
@@ -28449,7 +29083,7 @@ step
 .goto Netherstorm,31.36,66.15
 step
 #completewith Maxx
-.goto Netherstorm,30.19,63.01,60,0
+.goto Netherstorm,30.19,63.01,60,0,0
 >>Kill Shaleskin Flayers. Loot them for their Shale
 .complete 10342,1 
 step
@@ -29365,6 +29999,7 @@ step
 .goto Netherstorm,34.19,68.15
 .turnin 10221 >> Turn in Dr. Boom!
 step
+#scryer
 .goto Netherstorm,33.74,63.99
 >>Do NOT turn in the quest next to the flight path yet
 .fp Area 52 >> Get the Area 52 flight path
@@ -29418,6 +30053,7 @@ step
 .turnin 10343 >> Turn in The Unending Invasion
 .accept 10239 >> Accept Potential Energy Source
 step
+#requires boxesnether
 #completewith Arcanists
 >>Loot the small transparent boxes on the ground outside
 .complete 10239,1 
@@ -29555,6 +30191,7 @@ step
 .turnin 10188 >> Turn in The Sigil of Krasus
 .accept 10192 >> Accept Krasus's Compendium
 step
+#label boxesnether
 >>Return to Kirin'Var. Talk to Morran and Dieworth
 .turnin 10239 >> Turn in Potential Energy Source
 .accept 10240 >> Accept Building a Perimeter
@@ -29620,7 +30257,6 @@ step
 .unitscan Cohlien Frostweaver
 step
 .use 29235 >>Kill Conjurer Luminrath. Loot him for his Mantle. Click it in your bags
->>Kill Conjurer Luminrath and click on Luminrath's Mantle
 .goto Netherstorm,59.49,86.12,50,0
 .goto Netherstorm,60.28,84.90,50,0
 .goto Netherstorm,59.91,84.30,50,0
@@ -29757,12 +30393,12 @@ step << DK
 .trainer >> Train your class spells from Amal'Thazad in Acherus
 step
 #aldor
-#completewith next
 .hs >> Hearth to Area 52
+.zoneskip Netherstorm
 step
 #scryer
-#completewith next
 .hs >> Hearth to Area 52
+.zoneskip Netherstorm
 step
 #aldor
 >>Return to Area 52. Talk to Karja, Orelis, and Boots outside
@@ -30623,9 +31259,6 @@ step
 .goto Netherstorm,59.25,32.58
 .turnin 10353 >> Turn in Arconus the Insatiable
 .goto Netherstorm,59.51,32.39
-.turnin 10437 >> Turn in Recipe for Destruction
-.accept 10438 >> Accept On Nethery Wings
-.goto Netherstorm,60.11,31.72
 step
 .isQuestTurnedIn 10437
 #completewith next
@@ -30646,7 +31279,7 @@ step
 
 step
 .goto Netherstorm,66.73,33.89
-.use 28962 >> Use the triangulation device in your bags. Stand here after using it
+.use 28962 >> Use the triangulation device in your bags. Then walk 10 yards away and walk into the traiangulation point.
 .complete 10269,1 
 step
 #completewith next
@@ -30837,7 +31470,7 @@ step
 step
 #label Point2
 .goto Netherstorm,28.74,41.29
-.use 29018 >>Use the triangulation device in your bags. Stand here after using it
+.use 29018 >>Use the triangulation device in your bags. Then walk 10 yards away and walk into the traiangulation point.
 .complete 10275,1 
 step
 #aldor
@@ -31257,15 +31890,12 @@ step
 .goto Shattrath City,42.79,91.70
 ]])
 RXPGuides.RegisterGuide([[
-#version 5
+#version 9
 #wotlk
-#group Horde 70-80
+#group RestedXP Horde 70-80
 #name 68-71 Howling Fjord
 #next 70-72 Borean Tundra
-<<Horde
-step
-#completewith Lysander
-+Welcome to the RXPGuides Horde Northrend Guide!
+<< Horde
 step
 .zone Undercity >> Travel to Undercity << !Mage
 .zone Undercity >> Teleport to Undercity << Mage
@@ -31274,8 +31904,9 @@ step
 step
 #completewith next
 .goto Undercity,82.36,15.31
-+Go to the Reagent Vendor on your right and perform a Logout Skip by positioning your character on the highest part of the lowest staircase until it looks like they're floating, then logging out and back in.
->>If you can't do this, just run out of Undercity normally
+.goto Undercity,67.90,15.29,30 >> Go to the Reagent Vendor on your right and perform a Logout Skip by positioning your character on the highest part of the lowest staircase until it looks like they're floating, then logging out and back in.
+.link https://www.youtube.com/watch?v=-Bi95bCN8dM >> CLICK HERE for an example
+*If you can't do this, just run out of Undercity normally
 .zoneskip Tirisfal Glades
 .zoneskip HowlingFjord
 step
@@ -32811,6 +33442,7 @@ step
 step
 #completewith next
 .goto HowlingFjord,33.6,75.6,30 >> Take the shortcut by wall jumping on the side of the cave. This is highly optional but will save you about 20s
+.link https://www.youtube.com/watch?v=QbvHRC0nIds >> CLICK HERE
 step
 .goto HowlingFjord,33.6,75.8,20,0
 .goto HowlingFjord,36.33,80.48
@@ -33004,10 +33636,10 @@ step << Warrior
 .xp <70,1
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #tbc
-#group Horde 60-70
+#group RestedXP Horde 60-70
 <<Horde
 #name 69-70 Shadowmoon Valley (Scryer)
 step
@@ -33431,10 +34063,10 @@ step
 .turnin 10547 >>Turn in Of Thistleheads and Eggs...
 ]])
 RXPGuides.RegisterGuide([[
-#version 7
+#version 9
 #wotlk
 #tbc
-#group Horde 60-70
+#group RestedXP Horde 60-70
 << Horde
 #name 69-70 Shadowmoon Valley (Aldor)
 step
@@ -33856,9 +34488,9 @@ step
 .turnin 10547 >>Turn in Of Thistleheads and Eggs...
 ]])
 RXPGuides.RegisterGuide([[
-#version 5
+#version 9
 #wotlk
-#group Horde 70-80
+#group RestedXP Horde 70-80
 << Horde
 #name 70-72 Borean Tundra
 #next 72-74 Dragonblight
@@ -33893,7 +34525,7 @@ step
 .goto BoreanTundra,42.71,55.81,20,0
 .goto BoreanTundra,43.19,54.98
 step
->>Talk to Holgoth, and then Mortuus outside
+>>Talk to Holgoth and then Mortuus outside
 .accept 11606 >>Accept Patience is a Virtue that We Don't Need
 .goto BoreanTundra,43.33,55.36
 .accept 11611 >>Accept Taken by the Scourge
@@ -33950,7 +34582,7 @@ step
 .accept 12486 >>Accept To Bor'gorok Outpost, Quickly!
 step
 #completewith next
-.goto BoreanTundra,42.71,55.81,25 >> Go back outside the Hold
+.goto BoreanTundra,42.44,55.34,20 >> Go back outside the Hold
 step
 #completewith SouthHole
 >>Destroy the Egg Sacs on the ramps of the quarry
@@ -33972,7 +34604,7 @@ step
 #sticky
 #label Luther
 .goto BoreanTundra,40.07,52.06,-1
->>Talk to the undead corpse
+>>Talk to the corpse of Shadowstalker Luther
 .turnin 11614 >>Turn in Untold Truths
 .accept 11615 >>Accept Nerub'ar Secrets
 step
@@ -33994,7 +34626,6 @@ step
 >>Talk to Holgoth outside. Then head to the hut to talk to Barthus & Razgor
 .turnin 11608 >>Turn in Bury Those Cockroaches!
 .goto BoreanTundra,43.33,55.36
-.turnin 11611 >>Turn in Taken by the Scourge
 .turnin 11615 >>Turn in Nerub'ar Secrets
 .accept 11616 >>Accept Message to Hellscream
 .goto BoreanTundra,43.20,55.06
@@ -34012,7 +34643,7 @@ step
 step
 .goto BoreanTundra,40.72,52.54,20,0
 .goto BoreanTundra,40.36,51.39
->> Run up the stairs then take the elevator to the top of the building
+>> Run up the stairs then take the elevator to the top of Warsong Hold
 .fp Warsong Hold >> Get the Warsong Hold flight path
 step
 .goto BoreanTundra,42.02,54.49,30,0
@@ -34023,18 +34654,9 @@ step
 step
 #completewith next
 .goto BoreanTundra,42.28,55.68
-.vehicle >>Talk to Yanni at Warsong Hold and take the Magic Carpet ride to Garrosh's Landing. This ride takes just under a minute.
+.vehicle >>Talk to Yanni at Warsong Hold and take the Magic Carpet ride to Garrosh's Landing.
 .timer 57,Yanni Magic Carpet flight
 .skipgossip
-step
-#questguide
->>Talk to Waltor and then Grek'lor
-.accept 11655 >>Accept Into the Mist
-.accept 11660 >>Accept Horn of the Ancient Mariner
-.goto BoreanTundra,32.34,54.27
-.turnin 11636 >>Turn in Magic Carpet Ride
-.accept 11642 >>Accept Tank Ain't Gonna Fix Itself
-.goto BoreanTundra,32.25,54.07
 step
 >>Talk to Waltor and then Grek'lor
 .accept 11655 >>Accept Into the Mist
@@ -34050,19 +34672,10 @@ step
 .accept 11644 >>Accept Super Strong Metal Plates!
 .goto BoreanTundra,32.07,54.27
 step
-#questguide
-#completewith Mootoo
-.goto BoreanTundra,29.6,50.1,0
->> Kill the Kvaldirs. Loot them for their Relics. Loot the Horn from the Mistweavers.
-.complete 11655,1 
-.complete 11660,1 
-step
-#sticky
 #completewith hornbt
 .goto BoreanTundra,32.4,47.9,0,0
 >>Kill the Mistweavers around the area for the Horn. Focus on other quests while doing this.
 .complete 11660,1 
-
 step
 #completewith Mootoo
 .goto BoreanTundra,29.6,50.1,0
@@ -34077,12 +34690,12 @@ step
 step
 #label Pneumatic
 .goto BoreanTundra,32.39,49.18
->>Click on the Pneumatic Tank Transjigamarig inside the hut
+>>Click on the Pneumatic Tank Transjigamarig inside the hut.
 .complete 11643,1 
 step
 .goto BoreanTundra,31.9,52.7,15,0
 .goto BoreanTundra,31.88,52.32
->>Run up to the top floor of the building. Talk to Mootoo. Skip this if she isn't up.
+>>Run up to the top floor of the building. Talk to Mootoo. Skip this step if she isn't up.
 .accept 11664 >>Accept Escaping the Mist
 step
 #label Mootoo
@@ -34091,31 +34704,19 @@ step
 .complete 11664,1 
 .isOnQuest 11664
 step
-#questguide
-.goto BoreanTundra,32.8,46.5,60,0
-.goto BoreanTundra,29.5,51.1,60,0
-.goto BoreanTundra,30.5,54.9,60,0
-.goto BoreanTundra,31.9,52.4
->> Kill the Kvaldirs. Loot them for their Relics. Loot the Horn from the Mistweavers.
-.complete 11655,1 
-.complete 11660,1 
-step
 .goto BoreanTundra,32.8,46.5,60,0
 .goto BoreanTundra,29.5,51.1,60,0
 .goto BoreanTundra,30.5,54.9,60,0
 .goto BoreanTundra,31.9,52.4
 >> Kill the Kvaldirs. Loot them for their Relics.
 .complete 11655,1 
-
 step
-.isQuestComplete 11664
 >>Talk to Elder Mootoo
 .turnin 11664 >>Turn in Escaping the Mist
 .goto BoreanTundra,31.68,54.37
+.isQuestComplete 11664
 step
-.isOnQuest 11664
->>Abandon the escort quest if you were unable to complete it.
-.abandon 11664
+.abandon 11664 >> Abandon Escaping the Mist
 step
 >>Talk to Mobu
 #requires metalplate
@@ -34123,17 +34724,6 @@ step
 .turnin 11644 >>Turn in Super Strong Metal Plates!
 .accept 11651 >>Accept Tanks a lot...
 .goto BoreanTundra,32.07,54.27
-step
-#questguide
->>Talk to Grek'lor and Waltor
-.turnin 11651 >>Turn in Tanks a lot...
-.accept 11652 >>Accept The Plains of Nasam
-.goto BoreanTundra,32.25,54.07
-.turnin 11655 >>Turn in Into the Mist
-.accept 11656 >>Accept Burn in Effigy
-.turnin 11660 >>Turn in Horn of the Ancient Mariner
-.accept 11661 >>Accept Orabus the Helmsman
-.goto BoreanTundra,32.34,54.27
 step
 >>Talk to Grek'lor and Waltor
 .turnin 11651 >>Turn in Tanks a lot...
@@ -34143,45 +34733,34 @@ step
 .accept 11656 >>Accept Burn in Effigy
 .goto BoreanTundra,32.33,54.26
 step
-.isQuestComplete 11660
 .turnin 11660 >>Turn in Horn of the Ancient Mariner
 .accept 11661 >>Accept Orabus the Helmsman
 .goto BoreanTundra,32.34,54.27
+.isQuestComplete 11660
 step
-.use 34830 >>Use the Tuskarr Torch in your bags next to the boats in the area
+.use 34830 >>Use the Tuskarr Torch in your bags next to the boats in the area.
 .complete 11656,1 
 .goto BoreanTundra,31.58,48.13
 .complete 11656,2 
 .goto BoreanTundra,30.93,48.70
 .complete 11656,3 
 .goto BoreanTundra,29.61,52.79
-
 step
-#questguide
 #completewith next
 .goto BoreanTundra,26.91,54.75
-.cast 45703 >> Use the Horn of the Ancient Mariner in your bags at the end of Warsong Jetty
+.cast 45703 >> Use the Horn of the Ancient Mariner in your bags at the end of Warsong Jetty.
 .use 34844
-step
-#questguide
-.goto BoreanTundra,26.68,54.64
-.use 34844 >> Kill the Crewmen & Orabus when he arrives
-.complete 11661,1 
-step
 .isOnQuest 11661
-#completewith next
-.goto BoreanTundra,26.91,54.75
-.cast 45703 >> Use the Horn of the Ancient Mariner in your bags at the end of Warsong Jetty
-.use 34844
+.timer 22,Orabus RP
 step
-.isOnQuest 11661
 .goto BoreanTundra,26.68,54.64
-.use 34844 >> Kill the Crewmen & Orabus when he arrives
+.use 34844 >> Kill the Crewmen and then Orabus when he arrives.
 .complete 11661,1 
+.isOnQuest 11661
 step
 #label hornbt
 .goto BoreanTundra,29.88,61.81
-.use 34830 >>Use the Tuskarr Torch in your bags next to the boat
+.use 34830 >>Use the Tuskarr Torch in your bags next to the boat.
 .complete 11656,4 
 step
 #questguide
@@ -34191,44 +34770,50 @@ step
 .turnin 11661 >>Turn in Orabus the Helmsman
 .accept 11662 >>Accept Seek Out Karuk!
 step
-.isQuestComplete 11660
 .turnin 11660 >>Turn in Horn of the Ancient Mariner
 .accept 11661 >>Accept Orabus the Helmsman
 .goto BoreanTundra,32.34,54.27
+.isQuestComplete 11660
 step
+.abandon 11660 >> Abandon Horn of the Ancient Mariner
 .isOnQuest 11660
->>If you haven't gotten the Horn drop by now, abandon the quest.
-.abandon 11660
-
 step
-.isOnQuest 11661
 #completewith next
 .goto BoreanTundra,26.91,54.75
-.cast 45703 >> Use the Horn of the Ancient Mariner in your bags at the end of Warsong Jetty
+.cast 45703 >> Use the Horn of the Ancient Mariner in your bags at the end of Warsong Jetty.
 .use 34844
-step
 .isOnQuest 11661
+.timer 22,Orabus RP
+step
 .goto BoreanTundra,26.68,54.64
-.use 34844 >> Kill the Crewmen & Orabus when he arrives
+.use 34844 >> Kill the Crewmen & Orabus when he arrives.
 .complete 11661,1 
+.isOnQuest 11661
 step
 >>Talk to Waltor
-.isQuestComplete 11661
 .turnin 11661 >>Turn in Orabus the Helmsman
-.accept 11662 >>Accept Seek Out Karuk!
+.turnin 11656 >>Turn in Burn in Effigy
 .goto BoreanTundra,32.34,54.27
+.isQuestComplete 11661
+.isQuestComplete 11656
 step
-.goto BoreanTundra,32.34,54.27
 >>Talk to Waltor
 .turnin 11656 >>Turn in Burn in Effigy
-
+.goto BoreanTundra,32.34,54.27
+.isQuestComplete 11656
+step
+>>Talk to Waltor
+.accept 11662 >>Accept Seek Out Karuk!
+.goto BoreanTundra,32.34,54.27
+.isQuestTurnedIn 11656
+.isQuestTurnedIn 11661
 step
 #completewith next
 .goto BoreanTundra,31.91,54.40
 .vehicle >> Get into a Siege Tank
 step
->>Use your 1-4 abilities to kill 100 Scourge around the area. Target and use your 5th ability on the Injured Warsong soldiers. Rescue Engineers to move a LOT faster
->>If you run out of mana, drive over an oil barrel. Do this quest slowly or you may have to get another Siege Tank
+>>Use your 1-4 abilities to kill Scourge. Use your 5th ability on the Injured Warsong soldiers. Rescue Engineers to move a LOT faster
+>>If you run out of mana, drive over an oil barrel
 .complete 11652,1 
 .complete 11652,2 
 .goto BoreanTundra,36.6,62.2
@@ -34251,15 +34836,15 @@ step
 .turnin 12471 >>Turn in Cruelty of the Kvaldir
 .isOnQuest 12471
 step
-.goto BoreanTundra,47.13,75.49
->>Talk to Karuk
-.turnin 11662 >>Turn in Seek Out Karuk!
-.isOnQuest 11662
-step
 #label Karuk1
 .goto BoreanTundra,47.13,75.49
 >>Talk to Karuk
 .accept 11613 >>Accept Karuk's Oath
+step
+.goto BoreanTundra,47.13,75.49
+>>Talk to Karuk
+.turnin 11662 >>Turn in Seek Out Karuk!
+.isOnQuest 11662
 step
 #requires Cruelty1
 >>Kill the Skadir Longboatsmen and Raiders in the area
@@ -34429,6 +35014,7 @@ step << Mage
 step
 #completewith Nasam
 .hs >>Hearth to Warsong Hold
+.cooldown item,6948,>0
 step
 >>Talk to Orn Tenderhoof
 .turnin 13090 >>Turn in Northern Cooking
@@ -34445,6 +35031,7 @@ step
 .goto BoreanTundra,38.95,55.43,20,0
 .goto BoreanTundra,39.18,55.38,15,0
 .goto BoreanTundra,38.93,54.08,15 >> Exit the Hold then the Quarry
+.skill riding,225,1
 step
 >>Talk to Ickoris, Canarius, and Torp
 .turnin 11618 >>Turn in Reinforcements Incoming...
@@ -34492,7 +35079,6 @@ step
 #requires Swines
 >>Talk to Torp, Canarius, and Ickoris
 .turnin 11688 >>Turn in Damned Filthy Swine
-.accept 11690 >>Accept Bring 'Em Back Alive
 .goto BoreanTundra,37.90,52.33
 .turnin 11676 >>Turn in Merciful Freedom
 .goto BoreanTundra,37.91,52.58
@@ -34500,42 +35086,53 @@ step
 .accept 11703 >>Accept Get to Getry
 .goto BoreanTundra,38.08,52.48
 step
-.use 34954 >> Use the Torp's Kodo Snaffle in your bags on the Kodos. Use "Stampede" (1) on each new kodo to move faster. Run back to Torp and rescue the kodo using (2).
+#questguide
+.accept 11690 >>Accept Bring 'Em Back Alive
+.goto BoreanTundra,37.90,52.33
+step
+#questguide
+.use 34954 >> Use Torp's Kodo Snaffle in your bags on the Kodos. Use "Stampede" (1) on each new kodo to move faster. Run back to Torp and rescue the kodo using (2).
 .waypoint Borean Tundra,36.52,47.84,0,vehicle,VEHICLE_PASSENGERS_CHANGED,VEHICLE_UPDATE,UNIT_EXITING_VEHICLE
 .goto BoreanTundra,37.9,52.6
 .complete 11690,1 
 step
+#questguide
 .goto BoreanTundra,37.90,52.33
 >>Talk to Torp
 .turnin 11690 >>Turn in Bring 'Em Back Alive
 step
 .goto BoreanTundra,34.59,46.43
->>Talk to Getry, stealthed atop the tower
+>>Talk to Getry stealthed atop the tower
 .turnin 11703 >>Turn in Get to Getry
 .accept 11705 >>Accept Foolish Endeavors
 .timer 140,Foolish Endeavors RP
+.isOnQuest 11703
 step
->>Jump off the tower, then wait for the RP. Kill Varidus
+.isOnQuest 11705
+>>Jump off the tower and wait for the RP to finish. Kill Varidus
 >>Note that this quest can be buggy and may take multiple quest accepts to start the event
 .goto BoreanTundra,35.2,46.1
 .complete 11705,1 
-step << Shaman
-.hs >>Hearth back to Warsong Hold
 step
-.goto BoreanTundra,38.95,55.43,20,0 << !Shaman
+#completewith next
+.hs >>Hearth to Warsong Hold
+.cooldown item,6948,>0
+step
+.isQuestComplete 11705
 .goto BoreanTundra,41.35,53.60
->>Return to Warsong Hold << !Shaman
->>Talk to Garrosh
+>>Return to Warsong Hold. Talk to Garrosh
 .turnin 11705 >>Turn in Foolish Endeavors
 .accept 11709 >>Accept Nork Bloodfrenzy's Charge
 step
 #completewith next
 .goto BoreanTundra,42.71,55.81,25 >> Go back outside the Hold
+.isOnQuest 11709
 step
 .goto BoreanTundra,43.71,54.43
 >>Talk to Nork
 .turnin 11709 >>Turn in Nork Bloodfrenzy's Charge
 .accept 11711 >>Accept Coward Delivery... Under 30 Minutes or it's Free
+.isOnQuest 11709
 step
 .goto BoreanTundra,52.07,52.50
 >>Travel out of the quarry to Bloodspore Plains. Talk to Laurith
@@ -34543,9 +35140,10 @@ step
 step
 #completewith next
 .goto BoreanTundra,55.30,50.76
-.cast 45958 >> Use the Warsong Flare Gun next to the signpost. The objective will automatically complete after 30 seconds
+.cast 45958 >> Use the Warsong Flare Gun next to the signpost
 .timer 30,Coward Delivery RP
 .use 34971
+.isOnQuest 11711
 step
 >>Wait for the quest to complete, then talk to Tungok
 .goto BoreanTundra,53.30,51.67,50,0
@@ -34555,6 +35153,7 @@ step
 .turnin 11711 >>Turn in Coward Delivery... Under 30 Minutes or it's Free
 .accept 11714 >>Accept Vermin Extermination
 .unitscan Scout Tungok
+.isOnQuest 11711
 step
 #completewith Pollen
 .goto BoreanTundra,51.5,63.5,0
@@ -34565,6 +35164,7 @@ step
 .complete 11714,1 
 .complete 11714,2 
 .complete 11714,3 
+.isOnQuest 11711
 step
 .goto BoreanTundra,50.7,49.4,50,0
 .goto BoreanTundra,53.9,49.6,50,0
@@ -34603,6 +35203,7 @@ step
 .complete 11714,1 
 .complete 11714,2 
 .complete 11714,3 
+.isOnQuest 11714
 step
 #completewith end
 #label Tungok2
@@ -34624,7 +35225,6 @@ step
 .cast 45995 >> Use the Polinated Bloodspore Flower in your bags
 .timer 10,Bloodspore Flower RP
 .use 34978
-
 step
 .goto BoreanTundra,52.07,52.50
 >>Wait 10 seconds for the debuff to expire
@@ -34638,27 +35238,29 @@ step
 .accept 11721 >>Accept Gammothra the Tormentor
 .goto BoreanTundra,52.18,52.82
 step
+#requires Tungok2
 #completewith next
 .goto BoreanTundra,49.11,58.43,30 >> Enter the cave inside the mountain
 step
 .goto BoreanTundra,45.81,60.70,30,0
 .goto BoreanTundra,45.8,61.6
->>Jump down when you're close to the water to go to the bottom floor. Go down the south-west side of the cave to Gammothra
+>>Jump down when you're close to the water to go to the bottom floor of the cave. Go down the south-west side of the cave to Gammothra
 .use 34979 >> Channel the Pouch of Crushed Bloodspore in your bags to weaken Gammothra. Kill and loot him for his Head
 .complete 11721,1 
+.unitscan Gammothra the Tormentor
 step
-#completewith Omelet
-+Jump into the middle of the two rocks in Gammothra's room and jump as high as you can.
-+Once as high as possible, logout and log back in. If you can't get the logout skip to work, skip this step and exit the cave normally.
-.goto BoreanTundra,46.7,62.2
-.link https://gyazo.com/1a30637d12dd12fd15ace7731236ea21 >>Click here for a picture reference of where to logout.
-
+#completewith Gammothra
+.goto BoreanTundra,46.75,61.40
+.goto BoreanTundra,45.12,53.51,40 >>Jump onto the edge of this rock in Gammothra's room, then logout and log back in. If you're unable to do this, skip this step and run out of the cave normally
+.link https://www.youtube.com/watch?v=J3jq3PYRghQ >>CLICK HERE for reference
+.isOnQuest 11721
 step
 #label Omelet
 .goto BoreanTundra,48.55,59.02
 >>Talk to the Massive Glowing Egg. You don't need to fight any of the mobs around you
 .accept 11724 >>Accept Massive Moth Omelet?
 step
+#label Gammothra
 >>Talk to Mighthorn and Laurith
 .turnin 11721 >>Turn in Gammothra the Tormentor
 .accept 11722 >>Accept Trophies of Gammoth
@@ -34707,12 +35309,20 @@ step << Mage
 step
 #completewith next
 .hs >>Hearth to Warsong Hold
+.cooldown item,6948,>0
 step
+.isQuestComplete 11722
 .goto BoreanTundra,41.35,53.60
 >>Talk to Garrosh on the bottom floor of the Hold
 .turnin 11722 >>Turn in Trophies of Gammoth
+step
+.isQuestTurnedIn 11722
+.isQuestTurnedIn 11705
+.isQuestTurnedIn 11652
+.goto BoreanTundra,41.35,53.60
 .accept 11916 >>Accept Hellscream's Champion
 step
+.isOnQuest 11916
 #completewith next
 .goto BoreanTundra,40.42,54.83,30,0
 .goto BoreanTundra,40.16,55.17
@@ -34720,8 +35330,14 @@ step
 .skipgossip
 .timer 115,Ride to Taunka'le
 step
+.isOnQuest 11916
+#sticky
+#completewith next
 .goto BoreanTundra,77.76,37.77
->>Wait out the journey on the wolf, then talk to the Flight Master
++Wait out the journey on the wolf, then talk to the Flight Master
+step
+#completewith next
+.goto BoreanTundra,77.76,37.77
 .fp Taunka'le Village >> Get the Taunka'le Village flight path
 step
 >>Talk to the Sage and Mahan
@@ -34731,19 +35347,20 @@ step
 .accept 11684 >>Accept Scouting the Sinkholes
 .goto BoreanTundra,77.07,37.82
 step
-#completewith CPlane
-.goto BoreanTundra,76.25,37.18
-.home >> Set your Hearth to Taunka'le Village
-step
-.goto BoreanTundra,75.89,37.24
->>Talk to Wintergale
-.turnin 11916 >>Turn in Hellscream's Champion
-step
 >>Talk to Fezzix then talk to Taiga inside the tent
 .accept 11881 >>Accept Load'er Up!
 .goto BoreanTundra,77.48,36.95
 .accept 11674 >>Accept Sage Highmesa is Missing
 .goto BoreanTundra,77.30,36.87
+step
+#completewith CPlane
+.goto BoreanTundra,76.25,37.18
+.home >> Set your Hearth to Taunka'le Village
+step
+.isOnQuest 11916
+.goto BoreanTundra,75.89,37.24
+>>Talk to Wintergale
+.turnin 11916 >>Turn in Hellscream's Champion
 step
 .use 34920 >>Use the Map of the Geyser Fields in your bags on the edge of the sinkholes.
 .complete 11684,1 
@@ -34758,7 +35375,7 @@ step
 .complete 11890,1 
 step
 .goto BoreanTundra,64.02,35.77
->>Talk to the gnome corpse
+>>Talk to the corpse of the Crashed Recon Pilot
 .accept 11887 >>Accept Emergency Supplies
 step
 .goto BoreanTundra,64.0,37.2,70,0
@@ -34779,7 +35396,7 @@ step
 .complete 11881,1 
 step
 #requires CPlane
->>Talk to Fezzix, then talk to Dorain
+>>Talk to Fezzix then Dorain
 .turnin 11881 >>Turn in Load'er Up!
 .turnin 11887 >>Turn in Emergency Supplies
 .goto BoreanTundra,77.48,36.95
@@ -34813,12 +35430,12 @@ step
 .goto BoreanTundra,72.5,37.1,60,0
 .goto BoreanTundra,73.5,39.9,60,0
 .goto BoreanTundra,74.6,33.9
-.use 35281 >> Use the Windsoul Totem. Kill Steam Ragers when they have the debuff from your totem (about a 30 yard range) to collect their energy
+.use 35281 >> Use the Windsoul Totem in your bags. Kill Steam Ragers when they have the debuff from your totem (about a 30 yard range) to collect their energy
 .complete 11893,1 
 step
 #completewith next
 .goto BoreanTundra,66.5,22.2,0
-.use 35352 >>Use your Sage's Lightning Rod on Mechanical (but not mechagnome) mobs in the area. Kill them. Focus on this quest as the rod has a long cooldown
+.use 35352 >>Use your Sage's Lightning Rod on Mechanical (but not mechagnome) mobs in the area and kill them. Focus on this quest as the rod has a long cooldown
 .complete 11896,1 
 step
 .use 35401 >> Kill Mechagnomes. Use The Greatmother's Soulcatcher in your bags their corpses.
@@ -34915,6 +35532,8 @@ step
 .goto BoreanTundra,64.43,23.40
 >>Run to the top of the oil platform. Go into the small house and click on the big book on top of the table to summon Mechazod. Kill and loot him for his Head
 .complete 11909,1 
+.cast 3365
+.timer 30,The Gearmaster RP
 .complete 11909,2 
 step
 .goto BoreanTundra,65.25,28.78
@@ -34949,13 +35568,17 @@ step
 >>Talk to Wintergale
 .accept 11628 >>Accept Shrouds of the Scourge
 step
+#completewith next
+.destroy 34960 >> Destroy The Legend of the Horn in your bags
+step
 .cast 45942 >>Use The Horn of Elemental Fury near the sinkhole to summon Lord Kryxix. Kill him after the short RP.
+.timer 22,Lord Kryxix RP
 .goto BoreanTundra,70.83,36.72
 .complete 11706,2 
-.timer 22,Lord Kryxix RP
 .complete 11706,1 
 .goto BoreanTundra,70.13,35.96
 .use 34968
+.isOnQuest 11706
 step
 .goto BoreanTundra,74.67,23.67
 >>Talk to Sage Highmesa
@@ -35001,7 +35624,7 @@ step
 .accept 11678 >>Accept Find Bristlehorn
 .accept 11683 >>Accept Fallen Necropolis
 step
-#completewith Tinky
+#completewith Gyroscope
 .goto BoreanTundra,69.3,14.1,0,0
 >>Kill the Talramas Scourge in the area
 .complete 11683,1 
@@ -35222,7 +35845,7 @@ step << Mage
 step
 #requires ENecromancers
 #completewith Words
-.hs >> Hearth back to Taunka'le Village
+.hs >> Hearth to Taunka'le Village
 .cooldown item,6948,>0
 step
 #questguide
@@ -35366,15 +35989,15 @@ step
 .goto BoreanTundra,57.17,43.59,20,0
 .goto BoreanTundra,57.33,44.08,15,0
 .goto BoreanTundra,57.05,44.32,15,0
-.goto BoreanTundra,57.79,44.04
+.goto BoreanTundra,57.03,44.11
 .accept 11865 >>Accept Unfit for Death
-.goto BoreanTundra,57.79,44.04
+.goto BoreanTundra,56.81,44.04
 .accept 11869 >>Accept Happy as a Clam
 .goto BoreanTundra,57.33,44.08
 step
 #completewith next
 .goto BoreanTundra,55.9,47.4,0,0
->>Kill the Loot Crazed in the area. They can be stealthed. Loot them for their Ears.
+>>Kill the Loot Crazed Poachers in the area. They can be stealthed. Loot them for their Ears.
 >>This part does not need to be finished here.
 .complete 11866,1 
 step
@@ -35429,14 +36052,13 @@ step
 .use 35228 >> Use the Trap Smasher in your bags to free the Trapped Mammoth Calves
 .complete 11876,1 
 step
-.goto BoreanTundra,56.8,44.0
 >>If you have the debuff that turns you red, wait for it to expire before going into the camp.
 >>Talk to Killinger, Cenius, Lathorius, and Zaza in the camp
 .turnin 11884 >>Turn in Ned, Lord of Rhinos...
 .goto BoreanTundra,57.17,43.59,20,0
 .goto BoreanTundra,57.33,44.08,15,0
 .goto BoreanTundra,57.05,44.32,15,0
-.goto BoreanTundra,57.79,44.04
+.goto BoreanTundra,57.03,44.11
 .turnin 11869 >>Turn in Happy as a Clam
 .accept 11870 >>Accept The Abandoned Reach
 .goto BoreanTundra,57.33,44.08
@@ -35446,8 +36068,8 @@ step
 .goto BoreanTundra,57.05,44.32
 .turnin 11865 >>Turn in Unfit for Death
 .accept 11868 >>Accept The Culler Cometh
-.goto BoreanTundra,57.79,44.04
-step
+.goto BoreanTundra,56.81,44.04
+step << skip
 .goto BoreanTundra,57.0,44.3,0
 .goto BoreanTundra,59.25,30.83
 >>Escort the Mammoth Calf north to Khu'Nok. Don't travel out of render range (100 yards) as this will despawn the Calf.
@@ -35472,11 +36094,11 @@ step
 .goto BoreanTundra,57.05,44.32
 >>Return to the D.E.T.H.A. Camp. Talk to Lathorious
 .turnin 11879 >>Turn in Kaw the Mammoth Destroyer
-.accept 11892 >>Accept The Assassination of Harold Lane
 step
 .goto BoreanTundra,57.2,56.5
 >>Kill Karen ontop of the ledge
 .complete 11868,1 
+.isOnQuest 11868
 step
 .goto BoreanTundra,57.80,55.11
 >>Talk to Liandra
@@ -35506,16 +36128,20 @@ step
 >>Return back to the D.E.H.T.A. Camp. Talk to Cenius, Zaza, and Lathorius
 .turnin 11872 >>Turn in The Nefarious Clam Master...
 .goto BoreanTundra,57.33,44.08
+step
+.isQuestComplete 11868
 .turnin 11868 >>Turn in The Culler Cometh
-.goto BoreanTundra,57.79,44.04
+.goto BoreanTundra,56.81,44.04
+step
+.isQuestTurnedIn 11868
 .accept 11892 >>Accept The Assassination of Harold Lane
 .goto BoreanTundra,57.05,44.32
-
 step
 .goto BoreanTundra,49.90,41.50
 .use 35293 >>Kill Harold Lane. This quest can be hard so be sure to use all your cooldowns to kill him as well as the Cenarion Horn. Move away from his traps. Skip this if you can't do it
 .complete 11892,1 
 .unitscan Harold Lane
+.isOnQuest 11892
 step
 .goto BoreanTundra,57.05,44.32
 >>Return to Lathorius
@@ -35542,7 +36168,7 @@ step
 .complete 11612,1 
 step
 #requires AbandonAss
->>Click the small altars on the ground in the area
+>>Click the small statues on the ground
 .complete 11605,2 
 .goto BoreanTundra,52.81,34.02
 .complete 11605,1 
@@ -35677,9 +36303,9 @@ step
 .complete 11576,1 
 step
 #completewith next
-.goto BoreanTundra,40.17,42.08,50 >> Travel back to the land here
+.groundgoto BoreanTundra,40.17,42.08,50 >> Travel back to the land here
 step
->>Return to the Amber Ledge. Talk to Garren and Donathan
+>>Return to Amber Ledge. Talk to Garren and Donathan
 .turnin 11576 >>Turn in Monitoring the Rift: Cleftcliff Anomaly
 .accept 11582 >>Accept Monitoring the Rift: Sundered Chasm
 .goto BoreanTundra,44.98,33.38
@@ -35692,7 +36318,7 @@ step
 .complete 11582,1 
 step
 #completewith next
-.goto BoreanTundra,43.5,33.2,20 >> Travel back to the mainland here
+.groundgoto BoreanTundra,43.5,33.2,20 >> Travel back to the mainland here
 step
 .goto BoreanTundra,43.2,36.6,60,0
 .goto BoreanTundra,41.6,37.4
@@ -35749,7 +36375,8 @@ step
 step
 .goto BoreanTundra,43.01,43.86,-1
 .goto BoreanTundra,46.37,32.39,-1
-.fly >>Wait for the flight and RP to finish. You will get teleported to the quest turn in
+>>Wait for the flight and RP to finish. You will get teleported to the quest turn in
+>>If the event didn't start, abandon Rescuing Evanor and accept it again
 .turnin 11681 >>Turn in Rescuing Evanor
 .accept 11682 >>Accept Dragonspeak
 step
@@ -35762,6 +36389,10 @@ step
 step << skip
 .goto BoreanTundra,33.13,34.45
 .fp Transitus Shield >>Get the Transitus Shield Flight Path
+step
+#completewith next
+.goto BoreanTundra,45.33,34.62
+.fly Coldarra >> Fly to Coldarra
 step
 >>Talk to Berinand inside, then talk to Raelorasz and Serrah outside
 .turnin 11733 >>Turn in Traversing the Rift
@@ -35782,7 +36413,7 @@ step
 .complete 11912,1 
 step
 .goto BoreanTundra,32.6,27.8
->>Kill Coldarra Spellbinders in the area. Loot them for the Scintillating Fragment. Click it in your bags
+.use 35648 >>Kill Coldarra Spellbinders in the area. Loot them for the Scintillating Fragment. Click it in your bags
 .collect 35648,1,11941 
 .accept 11941 >>Accept Puzzling...
 step
@@ -35796,7 +36427,7 @@ step
 .complete 11910,1 
 .complete 11910,2 
 step
-.goto BoreanTundra,28.25,35.04
+.goto BoreanTundra,28.77,34.88
 >>Click the small blue orb inside the building (NOT the floating one)
 .complete 11900,2 
 step
@@ -35804,7 +36435,7 @@ step
 >>Kill Warbringer Goredrak. Loot him for his Energy Core
 .complete 11943,1 
 step
-.goto BoreanTundra,22.62,23.42
+.goto BoreanTundra,22.37,24.18
 >>Click the small blue orb inside the building (NOT the floating one)
 .complete 11900,4 
 step
@@ -35813,7 +36444,7 @@ step
 .complete 11943,2 
 step
 #label Weaver1
-.goto BoreanTundra,31.72,20.57
+.goto BoreanTundra,31.26,20.20
 >>Click the small blue orb inside the building (NOT the floating one)
 .complete 11900,3 
 step
@@ -35901,6 +36532,7 @@ step
 #completewith next
 .cast 46793 >> Speak to Keristrasza again and she will teleport you to Saragosa's Landing. Once you arrive, go to the center of the platform and use the Arcane Power Focus in your bags to summon Saragosa.
 .goto BoreanTundra,21.57,22.55
+.skipgossip 26206,1
 step
 >>Kill Saragosa. Loot her for her corpse
 .complete 11957,1 
@@ -35920,6 +36552,7 @@ step
 .turnin 11914 >>Turn in Keep the Secret Safe
 .goto BoreanTundra,33.49,34.38
 .turnin 11967 >>Turn in Mustering the Reds
+.goto BoreanTundra,33.32,34.49
 .turnin 11936 >>Turn in Hatching a Plan
 .accept 11969 >>Accept Springing the Trap
 .accept 11919 >>Accept Drake Hunt
@@ -35935,6 +36568,7 @@ step
 .turnin 11914 >>Turn in Keep the Secret Safe
 .goto BoreanTundra,33.49,34.38
 .turnin 11967 >>Turn in Mustering the Reds
+.goto BoreanTundra,33.32,34.49
 .turnin 11936 >>Turn in Hatching a Plan
 .goto BoreanTundra,33.32,34.54
 .turnin 11900 >>Turn in Reading the Meters
@@ -36157,7 +36791,7 @@ step
 .goto BoreanTundra,36.4,8.8,70,0
 .goto BoreanTundra,37.4,6.3,70,0
 .goto BoreanTundra,39.3,8.3
->>Kill Glrggl the whale. Loot him for his Head. He patrols counter-clockwise around the two northern icebergs
+>>Kill Glrggl. Loot him for his Head. He patrols counter-clockwise around the two northern icebergs
 .complete 11563,1 
 .unitscan Glrggl
 step
@@ -36207,10 +36841,12 @@ step
 >>Return to Glrglrglr at the cages near the start of the cave
 .turnin 11569 >>Turn in Keymaster Urmgrgl
 step
+#questguide
 .goto BoreanTundra,37.72,23.03
 >>Talk to Lurgglbr in the cage next to you
 .accept 11570 >>Accept Escape from the Winterfin Caverns
 step
+#questguide
 #label Lurgglbr
 .goto BoreanTundra,39.9,19.8,40,0
 .goto BoreanTundra,39.6,18.1,40,0
@@ -36230,18 +36866,21 @@ step
 >>Talk to Brglmurgl
 .turnin 11561 >>Turn in Them!
 step
+#completewith next
 .isQuestTurnedIn 11559
 .goto BoreanTundra,43.04,13.79
 .vendor >>Purchase more Murliver Oils from Ahlurglgr.
 .itemcount 34597,2
 step
+#questguide
 .goto BoreanTundra,43.50,13.97
 >>Talk to King Mrgl-Mrgl
 .turnin 11566 >>Turn in Surrender... Not!
-step
-.isQuestComplete 11570
-.goto BoreanTundra,43.50,13.97
 .turnin 11570 >>Turn in Escape from the Winterfin Caverns
+step
+.goto BoreanTundra,43.50,13.97
+>>Talk to King Mrgl-Mrgl
+.turnin 11566 >>Turn in Surrender... Not!
 step
 .goto BoreanTundra,46.58,9.35
 >>Talk to Imperean
@@ -36320,32 +36959,8 @@ step
 .goto BoreanTundra,54.80,13.09,20,0
 .goto BoreanTundra,55.99,13.68,20,0
 .goto BoreanTundra,56.43,11.72
-step << Druid
-#completewith DruidTrain4
-.cast 18960 >> Cast Teleport: Moonglade
-.zoneskip Moonglade
-.xp <71,1
-step << Druid
-.goto Moonglade,52.4,40.6
->>Go to Moonglade
-.train 48442 >> Train your class spells
-.xp <71,1
-step << Druid
-.goto Moonglade,52.4,40.6
->>Go to Moonglade
-.train 48464 >> Train your class spells
-.xp <72,1
-step << Druid
-#label DruidTrain4
-.goto Moonglade,52.4,40.6
->>Go to Moonglade
-.train 53307 >> Train your class spells
-.xp <74,1
 step
-#completewith next
-.hs >>Hearth back to Bor'gorok Outpost
-step
->>Talk to Ortrosh now inside the Inn, then talk to Snarlfang outside
+>>Return to Bor'gorok Outpost. Talk to Snarlfang and Ortrosh
 .turnin 11639 >>Turn in Revenge Upon Magmoth
 .goto BoreanTundra,49.55,9.98
 .turnin 11638 >>Turn in Return My Remains
@@ -36414,13 +37029,6 @@ step << Mage
 .goto Undercity,85.1,10.0
 .train 43019 >> Train your class spells
 .xp <73,1
-step << Mage
-#completewith next
-.goto Undercity,82.36,15.31
-+Go to the Reagent Vendor on your right and perform a Logout Skip by positioning your character on the highest part of the lowest staircase until it looks like they're floating, then logging out and back in.
->>If you can't do this, just run out of Undercity normally
-.zoneskip Tirisfal Glades
-.zoneskip HowlingFjord
 step << DK
 #completewith next
 .cast 50977 >> Cast Death Gate
@@ -36435,34 +37043,28 @@ step << DK
 >>Go through the Death Gate
 .train 49904 >> Train your class spells from Amal'Thazad in Acherus
 .xp <73,1
-step << DK
+step << Druid
+#completewith DruidTrain4
+.cast 18960 >> Cast Teleport: Moonglade
+.zoneskip Moonglade
+.xp <71,1
+step << Druid
+.goto Moonglade,52.4,40.6
+>>Go to Moonglade
+.train 48442 >> Train your class spells
+.xp <71,1
+step << Druid
+#label DruidTrain4
+.goto Moonglade,52.4,40.6
+>>Go to Moonglade
+.train 48464 >> Train your class spells
+.xp <72,1
+step << !Druid !Mage !DK !Priest
 #completewith next
-.goto Eastern Plaguelands,83.9,50.4
-.fly Undercity >> Fly to Undercity
-step << Mage/DK
-.goto Tirisfal Glades,61.85,66.59,60 >> Exit Undercity
-.zoneskip Tirisfal Glades
-.zoneskip HowlingFjord
-step << !Mage !DK
 .zone Orgrimmar >> Website unstuck to Orgrimmar. To do this, follow the link below, then click your character and follow the process:
 .link https://us.battle.net/support/en/help/product/wow/197/834/solution >> Copy paste this into your browser
 >>Alternatively, ask a mage to be teleported to Orgrimmar, or travel there manually
 .zoneskip Durotar
-step << skip
-#completewith next
-.goto BoreanTundra,45.33,34.62
-.fly Warsong Hold >> Fly to Warsong Hold. Alternatively, unstuck to Orgrimmar (if it's not on its 8h cooldown), or pay a mage for a portal to Orgrimmar
-.link https://us.battle.net/support/en/help/product/wow/197/834/solution >> Copy paste this into your browser
-.zoneskip Durotar
-.zoneskip Orgrimmar
-step << skip
-.goto BoreanTundra,41.3,53.5
-.zone Durotar >>Get onto the Zeppelin when it comes. Take it to Durotar. Alternatively, pay a mage for a portal to Orgrimmar
-.zoneskip Orgrimmar
-step << !Druid !DK !Mage !Priest
-#completewith next
-.goto Orgrimmar,48.9,91.8
-.zone Orgrimmar >> Go into Orgrimmar
 step << Shaman/Paladin
 #completewith ShPaTraining
 .goto Orgrimmar,40.5,36.9,25 >>Enter Grommash Hold
@@ -36502,43 +37104,2224 @@ step << Warrior
 .goto Orgrimmar,79.8,31.4
 .train 47470 >> Train your class spells
 .xp <73,1
-step << !DK !Druid !Mage
+step
 #completewith next
-.goto Orgrimmar,48.9,91.8,60 >> Exit Orgrimmar
-.zoneskip Tirisfal Glades
-.zoneskip Howling Fjord
-.zoneskip Dragonblight
-step << !Mage !DK
-.goto Durotar,50.7,13.3,20,0
-.goto Durotar,50.8,13.9
-.zone Tirisfal Glades >>Get onto the Zeppelin when it comes. Take it to Tirisfal Glades
-.zoneskip Tirisfal Glades
-.zoneskip Howling Fjord
-.zoneskip Dragonblight
+.hs >>Hearth to Bor'gorok Outpost
 step
-.goto Tirisfal Glades,60.1,58.5,30,0
-.goto Tirisfal Glades,59.1,59.0
-.zone HowlingFjord >>Take the Zeppelin from Tirisfal Glades to Howling Fjord
-.zoneskip Dragonblight
+#completewith next
+.goto BoreanTundra,49.63,11.03
+.fly Taunka'le Village >> Fly to Taunka'le Village
 step
-#completewith Tobias
-.goto HowlingFjord,79.0,29.7
-.fly New Agamand >> Fly to New Agamand
-step
-.goto HowlingFjord,53.6,66.4
->>Talk to Harris
-.accept 12181 >>Accept Give it a Name
-step
-#label Tobias
-.goto HowlingFjord,52.0,67.4
->>Talk to Tobias. This will fly you to Venomspite in Dragonblight
-.turnin 12181 >>Turn in Give it a Name
-.accept 12182 >>Accept To Venomspite!
+.goto Dragonblight,8.41,54.83
+.zone Dragonblight >> Travel to Dragonblight
 ]])
 RXPGuides.RegisterGuide([[
-#version 5
+#version 9
 #wotlk
-#group Dungeon Cleave 70-80
+#group RestedXP Horde 70-80
+<< Horde
+#name 70.5-71.5 Borean Tundra Prequest Start
+#next 72-74 Dragonblight
+
+step
+#completewith Vigil
++You have selected the 70-71 Borean Tundra Prequest guide. This guide is for people who have turned in TBC quests from their questlog on launch.
+>>The suggested XP required to use this guide is at least 500,000+/1,523,800xp into level 70
+>>The goal is to be around 71 and 15 bars before going Dragonblight. The guide will skip subzones once you reach that threshold
+step << !DK !Druid
+#completewith next
+.goto Orgrimmar,48.9,91.8,60 >> Exit Orgrimmar
+.zoneskip Durotar
+.zoneskip BoreanTundra
+step
+.goto Durotar,41.6,18.2,30,0
+.goto Durotar,41.4,17.6
+.zone BoreanTundra >>Take the Zeppelin from Durotar to Borean Tundra
+step
+.goto BoreanTundra,41.62,53.98
+>>Talk to the Warsong Recruitment Officer next to the zeppelin
+.accept 11585 >>Accept Hellscream's Vigil
+step
+#label Vigil
+>> Go to the bottom floor of Warsong Hold. Talk to Garrosh and then Saurfang
+.turnin 11585 >>Turn in Hellscream's Vigil
+.goto BoreanTundra,41.35,53.60
+.accept 11596 >>Accept The Defense of Warsong Hold
+.goto BoreanTundra,41.43,53.67
+step
+#completewith SouthHole
+.goto BoreanTundra,41.92,54.49
+.home >> Set your Hearthstone to Warsong Hold
+>>Buy the new food/water if needed
+step
+>>Head outside. Talk to Razgor inside the hut
+.turnin 11596 >>Turn in The Defense of Warsong Hold
+.goto BoreanTundra,42.71,55.81,20,0
+.goto BoreanTundra,43.19,54.98
+step
+#completewith next
+.goto BoreanTundra,42.44,55.34,20 >> Go back inside the bottom floor of the Hold
+step
+>> Go to the lower level of Warsong Hold. Talk to Endorah, Talonga, and Orn
+.accept 11574 >>Accept Too Close For Comfort
+.goto BoreanTundra,41.73,54.73
+.accept 11888 >>Accept Ride to Taunka'le Village
+.goto BoreanTundra,41.70,54.60
+.accept 13090 >>Accept Northern Cooking
+.goto BoreanTundra,41.98,54.11
+.skill cooking,<350,1
+step
+>> Go to the lower level of Warsong Hold. Talk to Endorah and Talonga
+.accept 11574 >>Accept Too Close For Comfort
+.goto BoreanTundra,41.73,54.73
+.accept 11888 >>Accept Ride to Taunka'le Village
+.goto BoreanTundra,41.70,54.60
+step
+.goto BoreanTundra,41.20,54.01,30,0
+.goto BoreanTundra,41.23,53.40,30,0
+.goto BoreanTundra,41.69,53.45
+>>Talk to Suranok patrolling the bottom level of the hold (near Garrosh)
+.accept 12486 >>Accept To Bor'gorok Outpost, Quickly!
+step
+.goto BoreanTundra,40.72,52.54,20,0
+.goto BoreanTundra,40.36,51.39
+>> Run up the stairs then take the elevator to the top of Warsong Hold
+.fp Warsong Hold >> Get the Warsong Hold flight path
+step
+.goto BoreanTundra,52.07,52.50
+>>Travel to the Bloodspore Plains. Talk to Laurith
+.accept 11716 >>Accept The Wondrous Bloodspore
+step
+.goto BoreanTundra,50.7,49.4,50,0
+.goto BoreanTundra,53.9,49.6,50,0
+.goto BoreanTundra,51.5,63.5
+>>Loot the red flowers in the area
+.complete 11716,1 
+step
+.goto BoreanTundra,52.07,52.50
+>>Talk to Laurith
+.turnin 11716 >>Turn in The Wondrous Bloodspore
+.accept 11717 >>Accept Pollen from the Source
+step
+#label Pollen
+>>Kill the Moths in the area. Loot them for their Pollen
+.goto BoreanTundra,50.6,51.6,60,0
+.goto BoreanTundra,51.9,53.9,60,0
+.goto BoreanTundra,53.2,53.6,60,0
+.goto BoreanTundra,53.5,50.0,60,0
+.goto BoreanTundra,50.5,49.0
+.complete 11717,1 
+step
+.goto BoreanTundra,52.07,52.50
+>>Talk to Laurith
+.turnin 11717 >>Turn in Pollen from the Source
+.accept 11719 >>Accept A Suitable Test Subject
+step
+#completewith next
+.goto BoreanTundra,52.07,52.50
+.cast 45995 >> Use the Polinated Bloodspore Flower in your bags
+.timer 10,Bloodspore Flower RP
+.use 34978
+step
+.goto BoreanTundra,52.07,52.50
+>>Wait 10 seconds for the debuff to expire
+.complete 11719,1 
+step
+>>Talk to Laurith and Mighthorn
+.turnin 11719 >>Turn in A Suitable Test Subject
+.accept 11720 >>Accept The Invasion of Gammoth
+.goto BoreanTundra,52.07,52.50
+.turnin 11720 >>Turn in The Invasion of Gammoth
+.accept 11721 >>Accept Gammothra the Tormentor
+.goto BoreanTundra,52.18,52.82
+step
+#requires Tungok2
+#completewith next
+.goto BoreanTundra,49.11,58.43,30 >> Enter the cave inside the mountain
+step
+.goto BoreanTundra,45.81,60.70,30,0
+.goto BoreanTundra,45.8,61.6
+>>Jump down when you're close to the water to go to the bottom floor of the cave. Go down the south-west side of the cave to Gammothra
+.use 34979 >> Channel the Pouch of Crushed Bloodspore in your bags to weaken Gammothra. Kill and loot him for his Head
+*Group up for this quest if needed
+.complete 11721,1 
+.unitscan Gammothra the Tormentor
+step
+#completewith Gammothra
+.goto BoreanTundra,46.75,61.40
+.goto BoreanTundra,45.12,53.51,40 >>Jump onto the edge of this rock in Gammothra's room, then logout and log back in. If you're unable to do this, skip this step and run out of the cave normally
+.link https://www.youtube.com/watch?v=J3jq3PYRghQ >>CLICK HERE for reference
+.isOnQuest 11721
+step
+.goto BoreanTundra,48.55,59.02
+>>Talk to the Massive Glowing Egg. You don't need to fight any of the mobs around you
+.accept 11724 >>Accept Massive Moth Omelet?
+step
+#label Gammothra
+>>Talk to Mighthorn and Laurith
+.turnin 11721 >>Turn in Gammothra the Tormentor
+.accept 11722 >>Accept Trophies of Gammoth
+.goto BoreanTundra,52.18,52.82
+.turnin 11724 >>Turn in Massive Moth Omelet?
+.goto BoreanTundra,52.07,52.50
+step
+.goto BoreanTundra,57.05,44.32
+>>Travel to the D.E.H.T.A. Encampment. Talk to Archdruid Lathorius
+.turnin 11864 >>Turn in A Mission Statement
+.xp >70+1000000,1
+step
+.goto BoreanTundra,57.05,44.32
+>>Travel to the D.E.H.T.A. Encampment. Talk to Archdruid Lathorius
+.accept 11866 >>Accept Ears of Our Enemies
+.accept 11876 >>Accept Help Those That Cannot Help Themselves
+.isQuestTurnedIn 11864
+step
+>>Talk to Killinger patrolling around the statue, Zaza, and Cenius at the camp
+.accept 11884 >>Accept Ned, Lord of Rhinos...
+.goto BoreanTundra,57.17,43.59,20,0
+.goto BoreanTundra,57.33,44.08,15,0
+.goto BoreanTundra,57.05,44.32,15,0
+.goto BoreanTundra,57.03,44.11
+.accept 11865 >>Accept Unfit for Death
+.goto BoreanTundra,56.81,44.04
+.accept 11869 >>Accept Happy as a Clam
+.goto BoreanTundra,57.33,44.08
+.isQuestTurnedIn 11864
+step
+#completewith next
+.goto BoreanTundra,55.9,47.4,0,0
+>>Kill the Loot Crazed Poachers in the area. They can be stealthed. Loot them for their Ears
+.complete 11866,1 
+.isQuestTurnedIn 11864
+step
+.goto BoreanTundra,56.2,46.1,60,0
+.goto BoreanTundra,57.7,46.4,60,0
+.goto BoreanTundra,57.9,48.7,60,0
+.goto BoreanTundra,56.5,50.2,60,0
+.goto BoreanTundra,57.6,52.1
+.use 35127 >>Use the Pile of Fake Furs in your bags near the traps on the ground. Don't wait around for the RP
+.complete 11865,1 
+.isQuestTurnedIn 11864
+step
+.goto BoreanTundra,51.7,47.0,70,0
+.goto BoreanTundra,52.3,44.8,70,0
+.goto BoreanTundra,52.9,43.0,70,0
+.goto BoreanTundra,50.0,44.1
+>>Kill the Loot Crazed Divers in the area. Finish getting the remaining Lackey Ears here
+.complete 11869,1 
+.complete 11866,1 
+.isQuestTurnedIn 11864
+step << skip
+#completewith next
+>>Kill Wooly Rhinos. Loot them for their Chilled Meat
+.complete 13090,1 
+.isOnQuest 13090
+step
+.groundgoto BoreanTundra,48.6,40.0,50,0
+.groundgoto BoreanTundra,44.9,45.7,50,0
+.groundgoto BoreanTundra,46.7,45.6,50,0
+.groundgoto BoreanTundra,44.9,45.7,0
+.goto BoreanTundra,48.6,40.0
+>>Kill Nedar and Lunchbox. This quest can be hard. Use your cooldowns and kill Lunchbox first
+*Group up for this quest if needed
+.complete 11884,2 
+.complete 11884,1 
+.unitscan Nedar, Lord of Rhinos
+.isQuestTurnedIn 11864
+step << skip
+>>Kill Wooly Rhinos. Loot them for their Chilled Meat
+.goto BoreanTundra,38.78,67.31,60,0
+.goto BoreanTundra,41.72,72.93,60,0
+.goto BoreanTundra,44.40,74.00,60,0
+.goto BoreanTundra,38.78,67.31,60,0
+.goto BoreanTundra,41.72,72.93,60,0
+.goto BoreanTundra,44.40,74.00
+.complete 13090,1 
+.isOnQuest 13090
+step
+#completewith next
+.goto BoreanTundra,55.5,41.1,60,0
+.goto BoreanTundra,55.3,38.4,60,0
+.use 35228 >> Use the Trap Smasher in your bags to free the Trapped Mammoth Calves
+.complete 11876,1 
+.isQuestTurnedIn 11864
+step
+>>Talk to Etaruk and the stone
+.accept 11612 >>Accept Reclaiming the Quarry
+.goto BoreanTundra,54.29,36.09
+.accept 11605 >>Accept The Honored Ancestors
+.goto BoreanTundra,54.63,35.88
+.xp >70+1200000,1
+step
+#requires AbandonAss
+#completewith next
+.goto BoreanTundra,54.1,34.5,0,0
+.goto BoreanTundra,52.0,30.6,0
+.goto BoreanTundra,50.9,33.4,0
+>>Kill the Beryl Treasure Hunters in the area
+*Group up for this quest if needed
+.complete 11612,1 
+.isOnQuest 11612
+step
+#requires AbandonAss
+>>Click the small statues on the ground
+.complete 11605,2 
+.goto BoreanTundra,52.81,34.02
+.complete 11605,1 
+.goto BoreanTundra,50.86,32.43
+.complete 11605,3 
+.goto BoreanTundra,52.31,31.13
+.isOnQuest 11605
+step
+.goto BoreanTundra,54.1,34.5,70,0
+.goto BoreanTundra,52.0,30.6,70,0
+.goto BoreanTundra,50.9,33.4,70,0
+.goto BoreanTundra,54.1,34.5
+>>Finish killing Beryl Treasure Hunters in the area
+*Group up for this quest if needed
+.complete 11612,1 
+.isOnQuest 11612
+step
+>>Talk to the stone and Etaruk
+.turnin 11605 >>Turn in The Honored Ancestors
+.accept 11607 >>Accept The Lost Spirits
+.goto BoreanTundra,54.63,35.88
+.turnin 11612 >>Turn in Reclaiming the Quarry
+.accept 11617 >>Accept Hampering Their Escape
+.goto BoreanTundra,54.29,36.09
+.isQuestComplete 11605
+.isQuestComplete 11612
+step
+>>Talk to the stone and Etaruk
+.accept 11607 >>Accept The Lost Spirits
+.goto BoreanTundra,54.63,35.88
+.turnin 11612 >>Turn in Reclaiming the Quarry
+.accept 11617 >>Accept Hampering Their Escape
+.goto BoreanTundra,54.29,36.09
+.isQuestTurnedIn 11605
+.isQuestComplete 11612
+step
+>>Talk to the stone and Etaruk
+.turnin 11605 >>Turn in The Honored Ancestors
+.accept 11607 >>Accept The Lost Spirits
+.goto BoreanTundra,54.63,35.88
+.accept 11617 >>Accept Hampering Their Escape
+.goto BoreanTundra,54.29,36.09
+.isQuestComplete 11605
+.isQuestTurnedIn 11612
+step
+>>Talk to the stone and Etaruk
+.accept 11607 >>Accept The Lost Spirits
+.goto BoreanTundra,54.63,35.88
+.accept 11617 >>Accept Hampering Their Escape
+.goto BoreanTundra,54.29,36.09
+.isQuestTurnedIn 11605
+.isQuestTurnedIn 11612
+step
+#label cores
+#completewith coresEnd
+.waypoint BoreanTundra,51.7,31.6,15,0
+.waypoint BoreanTundra,52.3,31.0,40,0
+.waypoint BoreanTundra,51.0,32.3,40,0
+.goto BoreanTundra,51.7,31.6,0,0
+.use 34711 >>Use the Cores of Malice dropped from Beryl Hounds to free Kaskala Spirits in the area
+*Group up for this quest if needed
+.collect 34711,6,11607,0x3,-1
+.complete 11607,1 
+.complete 11607,2 
+.isQuestTurnedIn 11605
+step
+.goto BoreanTundra,52.6,35.5
+>>Kill Beryl Reclaimers around the quarry. Loot them for their grenades
+.use 34772 >> Stand at the edge of the cliff. Use the Gnomish Grenades in your bags to destroy the platform above
+*Group up for this quest if needed
+.collect 34772,3,11617,0x7,-1
+.complete 11617,1 
+.isQuestTurnedIn 11612
+step
+.goto BoreanTundra,50.4,34.5
+>>Kill Beryl Reclaimers around the quarry. Loot them for their grenades
+.use 34772 >> Stand at the edge of the cliff. Use the Gnomish Grenades in your bags to destroy the platform above
+*Group up for this quest if needed
+.collect 34772,3,11617,0x7,-1
+.complete 11617,3 
+.isQuestTurnedIn 11612
+step
+#label North
+.goto BoreanTundra,52.6,32.4
+>>Kill Beryl Reclaimers around the quarry. Loot them for their grenades
+.use 34772 >> Stand directly below the platform. Use the Gnomish Grenades in your bags to destroy the platform above
+*Group up for this quest if needed
+.collect 34772,3,11617,0x7,-1
+.complete 11617,2 
+.isQuestTurnedIn 11612
+step
+#requires cores
+#label coresEnd
+>>Return to the stone and Etaruk
+.turnin 11607 >>Turn in The Lost Spirits
+.accept 11609 >>Accept Picking Up the Pieces
+.goto BoreanTundra,54.63,35.88
+.turnin 11617 >>Turn in Hampering Their Escape
+.accept 11623 >>Accept A Visit to the Curator
+.goto BoreanTundra,54.29,36.09
+.isQuestTurnedIn 11605
+step
+#completewith next
+.goto BoreanTundra,51.2,36.5,50,0
+.goto BoreanTundra,52.9,32.6,0
+>>Loot for Ritual Objects around the quarry. They look like a white and blue incense holder
+.complete 11609,1 
+.isQuestTurnedIn 11605
+step
+.goto BoreanTundra,50.1,32.6
+>>Run around the outer perimiter of the Quarry. Kill Insivius on the blue platform
+*Group up for this quest if needed
+.complete 11623,1 
+.unitscan Curator Insivius
+.isQuestTurnedIn 11605
+step
+.goto BoreanTundra,52.9,32.6,70,0
+.goto BoreanTundra,53.9,35.0,70,0
+.goto BoreanTundra,50.9,33.2
+>>Loot the Ritual Objects all around the quarry. They look like a white and blue incense holder
+.complete 11609,1 
+.isQuestTurnedIn 11605
+step
+>>Return to the stone and Etaruk
+.turnin 11609 >>Turn in Picking Up the Pieces
+.accept 11610 >>Accept Leading the Ancestors Home
+.goto BoreanTundra,54.63,35.88
+.turnin 11623 >>Turn in A Visit to the Curator
+.goto BoreanTundra,54.29,36.09
+.isQuestTurnedIn 11605
+step
+.use 34715 >>Use the Tuskarr Ritual Object in your bags. Use it to release the Elder's spirits. You don't have to wait around for the objective to complete
+.complete 11610,2 
+.goto BoreanTundra,52.81,34.04
+.complete 11610,3 
+.goto BoreanTundra,52.32,31.15
+.complete 11610,1 
+.goto BoreanTundra,50.85,32.40
+.isQuestTurnedIn 11605
+step
+>>Return to the stone
+.turnin 11610 >>Turn in Leading the Ancestors Home
+.goto BoreanTundra,54.63,35.88
+.isQuestComplete 11610
+step
+#completewith next
+.goto BoreanTundra,57.6,38.4,60,0
+.goto BoreanTundra,59.5,31.3,60,0
+.goto BoreanTundra,55.4,27.7,60,0
+.goto BoreanTundra,53.3,28.0,60,0
+.goto BoreanTundra,56.8,37.7
+.use 35228 >> Use the Trap Smasher in your bags to free the Trapped Mammoth Calves
+.complete 11876,1 
+.isQuestTurnedIn 11864
+step
+>>If you have the debuff that turns you red, wait for it to expire before going into the camp.
+>>Talk to Killinger, Cenius, Lathorius, and Zaza in the camp
+.turnin 11884 >>Turn in Ned, Lord of Rhinos...
+.goto BoreanTundra,57.17,43.59,20,0
+.goto BoreanTundra,57.33,44.08,15,0
+.goto BoreanTundra,57.05,44.32,15,0
+.goto BoreanTundra,57.03,44.11
+.turnin 11869 >>Turn in Happy as a Clam
+.accept 11870 >>Accept The Abandoned Reach
+.goto BoreanTundra,57.33,44.08
+.turnin 11866 >>Turn in Ears of Our Enemies
+.turnin 11876 >>Turn in Help Those That Cannot Help Themselves
+.accept 11878 >>Accept Khu'nok Will Know
+.goto BoreanTundra,57.05,44.32
+.turnin 11865 >>Turn in Unfit for Death
+.accept 11868 >>Accept The Culler Cometh
+.goto BoreanTundra,56.81,44.04
+.isQuestTurnedIn 11864
+step << skip
+.goto BoreanTundra,57.0,44.3,0
+.goto BoreanTundra,59.25,30.83
+>>Escort the Mammoth Calf north to Khu'Nok. Don't travel out of render range (100 yards) as this will despawn the Calf.
+>>If the Calf despawns, abandon and retake the quest from Lathorius
+.complete 11878,1 
+step
+.goto BoreanTundra,59.43,30.38
+>>Talk to Khu'nok
+.turnin 11878 >>Turn in Khu'nok Will Know
+.accept 11879 >>Accept Kaw the Mammoth Destroyer
+.isQuestTurnedIn 11864
+step
+#completewith next
+.goto BoreanTundra,53.7,24.4
+.vehicle >>Mount up on a Wooly Mammoth Bull
+.unitscan Wooly Mammoth Bull
+step
+.goto BoreanTundra,53.84,24.08
+>>Pull Kaw the Mammoth Destroyer by running near to him. Kill him by charging him with "Mammoth Charge" (2) and damaging him with "Mammoth Trample" (1)
+>>Dismount the Mammoth when you've killed Kaw, and loot his Halberd on the ground
+*Group up for this quest if needed
+.complete 11879,1 
+.isQuestTurnedIn 11864
+step
+.goto BoreanTundra,57.05,44.32
+>>Return to the D.E.T.H.A. Camp. Talk to Lathorious
+.turnin 11879 >>Turn in Kaw the Mammoth Destroyer
+.isQuestTurnedIn 11864
+step
+.goto BoreanTundra,57.2,56.5
+>>Kill Karen ontop of the ledge
+*Group up for this quest if needed
+.complete 11868,1 
+.isOnQuest 11868
+.isQuestTurnedIn 11864
+step
+.goto BoreanTundra,57.80,55.11
+>>Talk to Liandra
+.turnin 11870 >>Turn in The Abandoned Reach
+.accept 11871 >>Accept Not On Our Watch
+.isQuestTurnedIn 11864
+step
+.goto BoreanTundra,59.2,55.6,50,0
+.groundgoto BoreanTundra,58.6,58.3,50,0
+.groundgoto BoreanTundra,60.3,58.0,50,0
+.groundgoto BoreanTundra,59.7,60.5,50,0
+.groundgoto BoreanTundra,60.0,64.1,50,0
+.goto BoreanTundra,61.8,63.5
+>>Loot the boxes, bags, and satchels on the ground in the area
+.complete 11871,1 
+.isQuestTurnedIn 11864
+step
+.goto BoreanTundra,57.80,55.11
+>>Return to Liandra
+.turnin 11871 >>Turn in Not On Our Watch
+.accept 11872 >>Accept The Nefarious Clam Master...
+.isQuestTurnedIn 11864
+step
+.groundgoto BoreanTundra,61.0,66.5,30,0
+.goto BoreanTundra,62.5,66.2
+>>Dive into the water and kill the Gnome(Clam Master K) walking along the south side of the sunken ship
+*Group up for this quest if needed
+.complete 11872,1 
+.unitscan Clam Master K
+.isQuestTurnedIn 11864
+step
+>>Travel to Kaskala. Talk to Ataika and Utaik
+.accept 11949 >>Accept Not Without a Fight!
+.goto BoreanTundra,63.80,46.12
+.daily 11945 >>Accept Preparing for the Worst
+.goto BoreanTundra,63.95,45.72
+.isQuestTurnedIn 11864
+step
+#completewith next
+.goto BoreanTundra,66.2,45.9,0
+.goto BoreanTundra,63.7,52.2,0
+>>Loot the small baskets all around the village
+.complete 11945,1 
+.isOnQuest 11945
+.isQuestTurnedIn 11864
+step
+.goto BoreanTundra,67.3,47.7,60,0
+.goto BoreanTundra,63.61,53.93
+>>Kill the Raiders all around the village
+*Group up for this quest if needed
+.complete 11949,1 
+.isQuestTurnedIn 11864
+step
+.goto BoreanTundra,66.2,45.9,60,0
+.goto BoreanTundra,63.7,52.2
+>>Loot the small baskets all around the village
+.complete 11945,1 
+.isOnQuest 11945
+.isQuestTurnedIn 11864
+step
+>>Return to Ataika and Utaik
+.turnin 11949 >>Turn in Not Without a Fight!
+.accept 11950 >>Accept Muahit's Wisdom
+.goto BoreanTundra,63.80,46.12
+.turnin 11945 >>Turn in Preparing for the Worst
+.goto BoreanTundra,63.95,45.72
+.isOnQuest 11945
+.isQuestTurnedIn 11864
+step
+>>Return to Ataika
+.turnin 11949 >>Turn in Not Without a Fight!
+.accept 11950 >>Accept Muahit's Wisdom
+.goto BoreanTundra,63.80,46.12
+.isQuestTurnedIn 11864
+step
+.goto BoreanTundra,67.21,54.86
+>>Swim to Njord's Breath Bay. Talk to Muahit
+.turnin 11950 >>Turn in Muahit's Wisdom
+.accept 11961 >>Accept Spirits Watch Over Us
+.isQuestTurnedIn 11864
+step
+.goto BoreanTundra,67.65,50.41
+>>Talk to Iruk's corpse underwater
+.complete 11961,1 
+.skipgossip
+.isQuestTurnedIn 11864
+step
+.goto BoreanTundra,67.21,54.86
+>>Return to Muahit
+.turnin 11961 >>Turn in Spirits Watch Over Us
+.accept 11968 >>Accept The Tides Turn
+.isQuestTurnedIn 11864
+step
+.goto BoreanTundra,67.41,56.87
+>>Kill Heigarr on the icy shore
+*Group up for this quest if needed
+.complete 11968,1 
+.unitscan Heigarr the Horrible
+.isQuestTurnedIn 11864
+step
+>>Talk to Muahit and Hotawa
+.turnin 11968 >>Turn in The Tides Turn
+.goto BoreanTundra,67.21,54.86
+.accept 12117 >>Accept Travel to Moa'ki Harbor
+.goto BoreanTundra,67.27,54.86
+.isQuestTurnedIn 11864
+step
+>>Return back to the D.E.H.T.A. Camp. Talk to Cenius, Zaza, and Lathorius
+.turnin 11872 >>Turn in The Nefarious Clam Master...
+.goto BoreanTundra,57.33,44.08
+.isQuestTurnedIn 11864
+step
+.isQuestComplete 11868
+.turnin 11868 >>Turn in The Culler Cometh
+.goto BoreanTundra,56.81,44.04
+step
+.isQuestTurnedIn 11868
+.accept 11892 >>Accept The Assassination of Harold Lane
+.goto BoreanTundra,57.05,44.32
+step
+.goto BoreanTundra,49.90,41.50
+.use 35293 >>Kill Harold Lane. This quest can be hard so be sure to use all your cooldowns to kill him as well as the Cenarion Horn. Move away from his traps. Skip this if you can't do it
+*Group up for this quest if needed
+.complete 11892,1 
+.unitscan Harold Lane
+.isOnQuest 11892
+step
+#label ALFP
+#sticky
+.goto BoreanTundra,45.33,34.62
+.fp Amber Ledge >> Get the Amber Ledge flight path
+step
+>>Talk to Donavan and Garren in the Amber Ledge
+.turnin 11574 >>Turn in Too Close For Comfort
+.accept 11587 >>Accept Prison Break
+.goto BoreanTundra,45.26,33.35
+.accept 11576 >>Accept Monitoring the Rift: Cleftcliff Anomaly
+.goto BoreanTundra,44.98,33.38
+step
+#requires ALFP
+>>Kill Beryl Mage Hunters until you get a Prison Key. Use the key on the Arcane Prison
+*Group up for this quest if needed
+.collect 34688,1,11587,0x1,-1 
+.groundgoto BoreanTundra,43.0,36.5,60,0
+.groundgoto BoreanTundra,42.0,36.9,60,0
+.groundgoto BoreanTundra,40.5,38.8,60,0
+.groundgoto BoreanTundra,41.0,40.6,60,0
+.goto BoreanTundra,42.5,40.3
+.complete 11587,1 
+.goto BoreanTundra,42.60,36.75
+step
+.goto BoreanTundra,34.44,42.35
+>>Follow the land then swim across the water << !Shaman !DK
+>>Ride across the water toward the crack << Shaman/DK
+.use 34669 >> Use the Arcanometer in your bags next to the purple crack on the ground
+.complete 11576,1 
+step << Druid
+#completewith DruidTrain2
+.cast 18960 >> Cast Teleport: Moonglade
+.zoneskip Moonglade
+.xp <71,1
+step << Druid
+.goto Moonglade,52.4,40.6
+>>Go to Moonglade
+.train 48442 >> Train your class spells
+.xp <71,1
+step << Druid
+#label DruidTrain2
+.goto Moonglade,52.4,40.6
+>>Go to Moonglade
+.train 48464 >> Train your class spells
+.xp <72,1
+step << DK
+#completewith next
+.cast 50977 >> Cast Death Gate
+.zoneskip Eastern Plaguelands
+.xp <72,1
+step << DK
+.goto Eastern Plaguelands,80.3,48.0
+>>Go through the Death Gate
+.train 49940 >> Train your class spells from Amal'Thazad in Acherus
+.xp <72,1
+step << Mage
+#completewith MageTrain2
+.zone Undercity >> Teleport to Undercity
+.xp <71,1
+step << Mage
+.goto Undercity,85.1,10.0
+.train 43023 >> Train your class spells
+.xp <71,1
+step << Mage
+#label MageTrain2
+.goto Undercity,85.1,10.0
+.train 42930 >> Train your class spells
+.xp <72,1
+step
+#completewith next
+.hs >>Hearth to Warsong Hold
+.cooldown item,6948,>0
+step
+.goto BoreanTundra,41.35,53.60
+>>Talk to Garrosh on the bottom floor of the Hold
+.turnin 11722 >>Turn in Trophies of Gammoth
+.isQuestComplete 11722
+step
+#completewith next
+.goto BoreanTundra,40.36,51.39
+>> Run up the stairs then take the elevator to the top of Warsong Hold. Fly to Amber Ledge
+.fly Amber Ledge >> Fly to Amber Ledge
+step
+>>Return to Amber Ledge. Talk to Garren and Donathan
+.turnin 11576 >>Turn in Monitoring the Rift: Cleftcliff Anomaly
+.accept 11582 >>Accept Monitoring the Rift: Sundered Chasm
+.goto BoreanTundra,44.98,33.38
+.turnin 11587 >>Turn in Prison Break
+.accept 11590 >>Accept Abduction
+.goto BoreanTundra,45.26,33.35
+step
+.goto BoreanTundra,43.83,29.41
+.use 34669 >>Carefully descend the mountain or jump into the water below. Dive down and use your Arcanometer again on the purple rift on the sea floor
+.complete 11582,1 
+step
+#completewith next
+.groundgoto BoreanTundra,43.5,33.2,20 >> Travel back to the mainland here
+step
+.goto BoreanTundra,43.2,36.6,60,0
+.goto BoreanTundra,41.6,37.4
+.use 34691 >>Damage a Beryl Sorcerer to 50% or less health. Use the Arcane Binder in your bags to capture it
+.complete 11590,1 
+step
+>>Return to the Amber Ledge. Talk to Garren and Donathan. You can ignore the prisoner you have
+.turnin 11582 >>Turn in Monitoring the Rift: Sundered Chasm
+.accept 12728 >>Accept Monitoring the Rift: Winterfin Cavern
+.goto BoreanTundra,44.98,33.38
+.turnin 11590 >>Turn in Abduction
+.accept 11646 >>Accept The Borean Inquisition
+.goto BoreanTundra,45.26,33.35
+step
+.goto BoreanTundra,46.32,32.84
+>>Run up the tower to the first floor. Talk to Normantis
+.turnin 11646 >>Turn in The Borean Inquisition
+.accept 11648 >>Accept The Art of Persuasion
+step
+.goto BoreanTundra,46.33,32.92
+.use 34811 >>Use the Neural Needler on the Imprisoned Beryl Sorcerer next to Librarian Normantis until the quest completes
+.complete 11648,1 
+step
+.goto BoreanTundra,46.32,32.84
+>>Talk to Normantis
+.turnin 11648 >>Turn in The Art of Persuasion
+.accept 11663 >>Accept Sharing Intelligence
+step
+.goto BoreanTundra,45.26,33.35
+>>Exit the tower and talk to Donathan
+.turnin 11663 >>Turn in Sharing Intelligence
+.accept 11671 >>Accept A Race Against Time
+step
+#completewith next
+.cast 45780 >> Use the Beryl Shield Detonator in your bags to disable Inquisitor Salrand's shield
+step
+.goto BoreanTundra,41.8,39.15
+.use 34897 >> Kill Inquisitor Salrand. Loot the small chest that spawns next to her corpse
+*Group up for this quest if needed
+.complete 11671,1 
+step
+>>Return to the Amber Ledge. Talk to Donathan and then Surristrasz (the big red dragon)
+.turnin 11671 >>Turn in A Race Against Time
+.accept 11679 >>Accept Reforging the Key
+.goto BoreanTundra,45.26,33.35
+.turnin 11679 >>Turn in Reforging the Key
+.accept 11680 >>Accept Taking Wing
+.goto BoreanTundra,45.33,34.62
+step
+.goto BoreanTundra,46.38,37.31
+>>Talk to Anzim. This will fly you to a platform
+.turnin 11680 >>Turn in Taking Wing
+.accept 11681 >>Accept Rescuing Evanor
+.timer 53,Rescuing Evanor RP
+step
+.goto BoreanTundra,43.01,43.86,-1
+.goto BoreanTundra,46.37,32.39,-1
+>>Wait for the flight and RP to finish. You will get teleported to the quest turn in
+>>If the event didn't start, abandon Rescuing Evanor and accept it again
+.turnin 11681 >>Turn in Rescuing Evanor
+.accept 11682 >>Accept Dragonspeak
+step
+.goto BoreanTundra,45.33,34.62
+>>Talk to Surristrasz (the big red dragon). This will fly you to Coldarra
+.turnin 11682 >>Turn in Dragonspeak
+.accept 11733 >>Accept Traversing the Rift
+.skipgossip
+.timer 60,Coldarra flight
+step
+#completewith next
+.goto BoreanTundra,45.33,34.62
+.fly Coldarra >> Fly to Coldarra
+step
+>>Talk to Berinand inside, then talk to Raelorasz and Serrah outside
+.turnin 11733 >>Turn in Traversing the Rift
+.accept 11900 >>Accept Reading the Meters
+.accept 11910 >>Accept Secrets of the Ancients
+.goto BoreanTundra,32.94,34.40
+.accept 11918 >>Accept Basic Training
+.goto BoreanTundra,33.32,34.54
+.accept 11912 >>Accept Nuts for Berries
+.goto BoreanTundra,33.49,34.38
+step
+#sticky
+#completewith Weaver1
+>>As you quest through Coldarra:
+>>-Kill all the Coldarra Spellweavers that you see
+>>-Loot the Frostberry Bushes on the ground
+.complete 11918,1 
+.complete 11912,1 
+step
+.goto BoreanTundra,32.6,27.8
+.use 35648 >>Kill Coldarra Spellbinders in the area. Loot them for the Scintillating Fragment. Click it in your bags
+.collect 35648,1,11941 
+.accept 11941 >>Accept Puzzling...
+step
+.goto BoreanTundra,33.32,34.54
+>>Return to Raelorasz
+.turnin 11941 >>Turn in Puzzling...
+.accept 11943 >>Accept The Cell
+step
+#completewith splinters
+>>Look for Glacial Ancients and Magic-Bound Ancients all around Coldarra. Loot them for their Splinters
+.complete 11910,1 
+.complete 11910,2 
+step
+.goto BoreanTundra,28.77,34.88
+>>Click the small blue orb inside the building (NOT the floating one)
+.complete 11900,2 
+step
+.goto BoreanTundra,24.14,29.60
+>>Kill Warbringer Goredrak. Loot him for his Energy Core
+*Group up for this quest if needed
+.complete 11943,1 
+step
+.goto BoreanTundra,22.37,24.18
+>>Click the small blue orb inside the building (NOT the floating one)
+.complete 11900,4 
+step
+.goto BoreanTundra,27.32,20.41
+>>Kill General Cerulean. Loot him for his Prison Casing
+*Group up for this quest if needed
+.complete 11943,2 
+step
+#label Weaver1
+.goto BoreanTundra,31.26,20.20
+>>Click the small blue orb inside the building (NOT the floating one)
+.complete 11900,3 
+step
+#sticky
+#label berries2
+.goto BoreanTundra,25.5,35.6,70,0
+.goto BoreanTundra,25.0,30.6,70,0
+.goto BoreanTundra,28.0,33.5,70,0
+.goto BoreanTundra,32.6,28.2,70,0
+.goto BoreanTundra,30.1,23.4
+>>Kill all the Coldarra Spellweavers that you see
+*Group up for this quest if needed
+.complete 11918,1 
+step
+.goto BoreanTundra,21.5,26.9,70,0
+.goto BoreanTundra,24.4,35.2,70,0
+.goto BoreanTundra,34.3,31.2,70,0
+.goto BoreanTundra,33.7,23.1
+>>Loot the Frostberry Bushes throughout Coldarra
+.complete 11912,1 
+step
+#requires berries2
+>>Return to Transitus. Talk to Serrah and Raelorasz
+.turnin 11912 >>Turn in Nuts for Berries
+.accept 11914 >>Accept Keep the Secret Safe
+.goto BoreanTundra,33.49,34.38
+.turnin 11918 >>Turn in Basic Training
+.accept 11936 >>Accept Hatching a Plan
+.turnin 11943 >>Turn in The Cell
+.goto BoreanTundra,33.32,34.54
+step
+.use 35671 >> Click on the Augmented Arcane Prison in your bags to summon Keristrasza
+.accept 11946 >>Accept Keristrasza
+.turnin 11946 >>Turn in Keristrasza
+.accept 11951 >>Accept Bait and Switch
+step
+#completewith next
+.goto BoreanTundra,24.9,31.2,0
+.goto BoreanTundra,25.2,24.2,0
+>>Go around the upper edges/cliffs of The Nexus. Loot the small purple crystals on the ground
+.complete 11951,1 
+step
+.goto BoreanTundra,29.5,30.81,90,0
+.goto BoreanTundra,28.7,33.6,70,0
+.goto BoreanTundra,27.5,31.3,70,0
+.goto BoreanTundra,24.9,31.2,70,0
+.goto BoreanTundra,25.2,24.2
+>>Go around the upper edges/cliffs of The Nexus. Kill Coldarra Wyrmkins. Loot them for their Axes
+.collect 35586,5,11936,1 
+step
+.goto BoreanTundra,24.9,31.2,50,0
+.goto BoreanTundra,25.2,24.2
+>>Go around the upper edges/cliffs of The Nexus. Loot the small purple crystals on the ground
+.complete 11951,1 
+step
+#sticky
+#label reading
+.goto BoreanTundra,28.31,28.46
+>>Click on the small orb next to The Nexus meeting stone
+.complete 11900,1 
+step
+#label splinters
+.goto BoreanTundra,29.3,27.4,50,0
+.goto BoreanTundra,28.2,24.4,50,0
+.goto BoreanTundra,26.2,25.4
+>>Go around the lower area of The Nexus. Kill Arcane Serpents and loot them for their Essences.
+>>Use the Axes you just collected to break the Dragon Eggs around the lower area
+.collect 35586,5,11936,1,-1 
+.complete 11936,1 
+.complete 11914,1 
+step
+#requires reading
+.goto BoreanTundra,30.1,23.4,70,0
+.goto BoreanTundra,32.6,28.2,70,0
+.goto BoreanTundra,28.0,33.5,70,0
+.goto BoreanTundra,25.0,30.6,70,0
+.goto BoreanTundra,25.5,35.6
+>>Kill Glacial Ancients and Magic-Bound Ancients. Loot them for their Splinters
+.complete 11910,1 
+.complete 11910,2 
+step
+.use 35671 >> Click on the Augmented Arcane Prison in your bags to summon Keristrasza. If you lost it, talk to Raelorasz to ask for a new one
+.turnin 11951 >>Turn in Bait and Switch
+.accept 11957 >>Accept Saragosa's End
+step
+#completewith next
+.cast 46793 >> Speak to Keristrasza again and she will teleport you to Saragosa's Landing. Once you arrive, go to the center of the platform and use the Arcane Power Focus in your bags to summon Saragosa.
+.goto BoreanTundra,21.57,22.55
+.skipgossip 26206,1
+step
+>>Kill Saragosa. Loot her for her corpse
+.complete 11957,1 
+*Group up for this quest if needed
+.goto BoreanTundra,22.07,22.65
+.use 35690
+.skipgossip
+step
+.use 35671 >> Click on the Augmented Arcane Prison in your bags to summon Keristrasza
+.turnin 11957 >>Turn in Saragosa's End
+.accept 11967 >>Accept Mustering the Reds
+.goto BoreanTundra,21.57,22.55
+step
+#questguide
+.goto BoreanTundra,21.6,22.5,0
+>>DO NOT Ride back to Transitus. Speak to Keristrasza again to teleport back to Coldarra
+>>Talk to Serrah and Raelorasz outside, then Berinand inside
+.turnin 11914 >>Turn in Keep the Secret Safe
+.goto BoreanTundra,33.49,34.38
+.turnin 11967 >>Turn in Mustering the Reds
+.goto BoreanTundra,33.32,34.49
+.turnin 11936 >>Turn in Hatching a Plan
+.accept 11969 >>Accept Springing the Trap
+.accept 11919 >>Accept Drake Hunt
+.goto BoreanTundra,33.32,34.54
+.turnin 11900 >>Turn in Reading the Meters
+.turnin 11910 >>Turn in Secrets of the Ancients
+.goto BoreanTundra,32.94,34.40
+.skipgossip
+step
+.goto BoreanTundra,21.6,22.5,0
+>>DO NOT Ride back to Transitus. Speak to Keristrasza again to teleport back to Coldarra
+>>Talk to Serrah and Raelorasz outside, then Berinand inside
+.turnin 11914 >>Turn in Keep the Secret Safe
+.goto BoreanTundra,33.49,34.38
+.turnin 11967 >>Turn in Mustering the Reds
+.goto BoreanTundra,33.32,34.49
+.turnin 11936 >>Turn in Hatching a Plan
+.goto BoreanTundra,33.32,34.54
+.turnin 11900 >>Turn in Reading the Meters
+.turnin 11910 >>Turn in Secrets of the Ancients
+.goto BoreanTundra,32.94,34.40
+.skipgossip
+
+step
+#questguide
+.goto BoreanTundra,25.34,21.82
+.cast 62272 >> Use Raelorasz' Spark in your bags next to the bonfire then wait for the RP to end
+.timer 195,Springing the Trap RP
+.use 44950
+.complete 11969,1 
+step
+#questguide
+#completewith next
++Dismount Keristasza then cast Slow Fall << Mage
++Dismount Keristasza then cast Levitate when you're near the ground << Priest
++Dismount Keristasza then cast Divine Shield or Blessing of Protection when you're near the ground << Paladin
+.itemcount 17056,1 << Mage/Priest
+step
+#questguide
+#completewith next
+.goto BoreanTundra,21.91,30.45
+.use 35506 >> Find a Drake Hatchling flying around the north-western edge of the map
+.cast 46607 >>Use Raelorasz's Spear on a Drake Hatchling to make it follow you. Do NOT kill it
+.unitscan Nexus Drake Hatchling
+step
+#questguide
+.goto BoreanTundra,33.28,34.47
+>>Bring the Drake back to Raelorasz in Transitus. It matches your movement speed
+.complete 11919,1 
+step
+#questguide
+.goto BoreanTundra,33.32,34.54
+>>Talk to Raelorasz
+.turnin 11919 >>Turn in Drake Hunt
+.turnin 11969 >>Turn in Springing the Trap
+.accept 11931 >>Accept Cracking the Code
+.accept 11940 >>Accept Drake Hunt
+step
+#questguide
+#completewith next
+.goto BoreanTundra,32.72,27.88,0
+>>Kill Coldarra Spellbinders. Loot them for their Shimmering Runes
+.complete 11931,1 
+step
+#questguide
+.goto BoreanTundra,32.72,27.88
+>>Kill Inquisitor Caleras. Loot him for the Azure Codex
+.complete 11931,2 
+step
+#questguide
+.goto BoreanTundra,29.3,21.8
+.use 35506 >> Find a Drake Hatchling flying along north-eastern edge of the map
+.cast 46607 >>Use Raelorasz's Spear on a Drake Hatchling to make it follow you. Do NOT kill it
+.unitscan Nexus Drake Hatchling
+step
+#questguide
+.goto BoreanTundra,34.5,29.6,50,0
+.goto BoreanTundra,32.8,31.4
+>>Kill Coldarra Spellbinders. Loot them for their Shimmering Runes
+.complete 11931,1 
+step
+#questguide
+.goto BoreanTundra,33.28,34.47
+>>Bring the Drake back to Raelorasz in Transitus. It matches your movement speed
+.complete 11940,1 
+step
+#questguide
+.goto BoreanTundra,33.30,34.48
+>>Talk to Raelorasz
+.turnin 11931 >>Turn in Cracking the Code
+.turnin 11940 >>Turn in Drake Hunt
+
+step
+#completewith next
+.goto BoreanTundra,33.13,34.45
+.fly Amber Ledge >>Fly to Amber Ledge
+step
+.goto BoreanTundra,49.65,11.05
+>>Carefully descend the mountain, then ride to Bor'gorok Outpost
+.fp Bor'gorok Outpost >> Get the Bor'gorok Outpost flight path
+step
+>>Talk to Snarlfang and Bor'gorok
+.turnin 12486 >>Turn in To Bor'gorok Outpost, Quickly!
+.accept 11624 >>Accept The Sky Will Know
+.goto BoreanTundra,50.28,9.71
+.accept 11591 >>Accept Report to Steeljaw's Caravan
+.goto BoreanTundra,49.62,10.58
+step
+#completewith tadpoles
+.goto BoreanTundra,49.67,10.19
+.home >> Set your home to Bor'Gorok Outpost
+step
+.goto BoreanTundra,48.96,10.26
+>>Talk to Taz'ishi
+.accept 11702 >>Accept King Mrgl-Mrgl
+step
+.goto BoreanTundra,46.58,9.35
+>>Talk to Imperean
+.turnin 11624 >>Turn in The Sky Will Know
+.accept 11627 >>Accept Boiling Point
+step
+>>Kill Churn and Simmer. They will submit at low health
+*Group up for this quest if needed
+.complete 11627,2 
+.goto BoreanTundra,45.88,13.08
+.complete 11627,1 
+.goto BoreanTundra,50.97,15.31
+step
+.goto BoreanTundra,46.58,9.35
+>>Return to Imperean
+.turnin 11627 >>Turn in Boiling Point
+.accept 11649 >>Accept Motes of the Enraged
+step
+.goto BoreanTundra,45.9,6.5,80,0
+.goto BoreanTundra,42.2,8.2,60,0
+.goto BoreanTundra,43.0,10.6,60,0
+.goto BoreanTundra,46.2,10.7
+>>Kill Enraged Tempests. Loot them for their Motes
+.complete 11649,1 
+step
+.goto BoreanTundra,43.50,13.97
+>>Talk to King Mrgl-Mrgl
+.turnin 11702 >>Turn in King Mrgl-Mrgl
+.accept 11571 >>Accept Learning to Communicate
+step
+.goto BoreanTundra,43.0,18.1,60,0
+.goto BoreanTundra,42.5,15.4
+.use 34598 >> Kill Scalder. He's a water elemental patrolling the seabed. Use The King's Empty Conch on his corpse
+*Group up for this quest if needed
+.complete 11571,1 
+.unitscan Scalder
+step
+.goto BoreanTundra,43.50,13.97
+>>Return to Mrgl-Mrgl
+.turnin 11571 >>Turn in Learning to Communicate
+.accept 11559 >>Accept Winterfin Commerce
+step
+.goto BoreanTundra,40.5,15.8,70,0
+.goto BoreanTundra,41.6,18.9
+>>Loot the small clams on the ground. They are usually found next to murloc huts but can be difficult to spot
+.complete 11559,1 
+step
+>>Return to Winterfin Retreat. Talk to Ahlurglgr, King Mrgl-Mrgl, and Brglmurgl
+.turnin 11559 >>Turn in Winterfin Commerce
+.goto BoreanTundra,43.04,13.82
+.accept 11560 >>Accept Oh Noes, the Tadpoles!
+.goto BoreanTundra,43.50,13.97
+.accept 11561 >>Accept Them!
+.goto BoreanTundra,42.82,13.65
+step
+#completewith next
+.goto BoreanTundra,41.0,15.6,0
+.goto BoreanTundra,41.3,19.0,0
+.goto BoreanTundra,39.2,18.3,0
+.goto BoreanTundra,37.6,15.9,0
+>>Kill Murlocs in the area. You don't have to focus on this quest
+*Group up for this quest if needed
+.complete 11561,1 
+step
+#sticky
+#label tadpoles
+.goto BoreanTundra,41.0,15.6,40,0
+.goto BoreanTundra,41.3,19.0,40,0
+.goto BoreanTundra,39.2,18.3,40,0
+.goto BoreanTundra,37.6,15.9,40,0
+.goto BoreanTundra,41.0,15.6,40,0
+.goto BoreanTundra,41.3,19.0,40,0
+.goto BoreanTundra,40.04,19.80,40,0
+.goto BoreanTundra,39.2,18.3,40,0
+.goto BoreanTundra,37.6,15.9
+>>Free Tadpoles by clicking the cages in the area
+*Group up for this quest if needed
+.complete 11560,1 
+step
+.goto BoreanTundra,40.04,19.80
+.use 34669 >> Use the Arcanometer in your bags at the mouth of the cave
+.complete 12728,1 
+step
+#completewith end
+#requires tadpoles
+#label Murloc2
+>>Talk to Brglmurgl
+.turnin 11561 >>Turn in Them!
+.goto BoreanTundra,42.82,13.65,0,0
+.isQuestComplete 11561
+step
+.isQuestTurnedIn 11559
+.goto BoreanTundra,43.04,13.79
+.vendor >>Purchase as many Murliver Oils as you can from Ahlurglgr
+.itemcount 34597,2
+step
+#requires tadpoles
+>>Talk to King Mrgl-Mrgl
+.turnin 11560 >>Turn in Oh Noes, the Tadpoles!
+.accept 11562 >>Accept I'm Being Blackmailed By My Cleaner
+.goto BoreanTundra,43.50,13.97
+step
+#requires Murloc2
+>>Talk to Mrmrglmr and Bmurglbrm
+.turnin 11562 >>Turn in I'm Being Blackmailed By My Cleaner
+.accept 11563 >>Accept Grmmurggll Mrllggrl Glrggl!!!
+.goto BoreanTundra,41.98,12.77
+.accept 11564 >>Accept Succulent Orca Stew
+.goto BoreanTundra,42.03,13.16
+step
+.isQuestTurnedIn 11559
+#completewith next
+.use 38351 >>Use a Murliver Oil to increase your swim speed when needed.
+.itemcount 38351,1
+step
+#completewith next
+.goto BoreanTundra,38.0,9.5,0
+.goto BoreanTundra,36.4,8.8,0
+.goto BoreanTundra,37.4,6.3,0
+.goto BoreanTundra,39.3,8.3,0
+>>Kill Glimmer Bay Orcas in the area. Loot them for their Blubbers
+.complete 11564,1 
+step
+.goto BoreanTundra,38.0,9.5,70,0
+.goto BoreanTundra,36.4,8.8,70,0
+.goto BoreanTundra,37.4,6.3,70,0
+.goto BoreanTundra,39.3,8.3
+>>Kill Glrggl the whale. Loot him for his Head. He patrols counter-clockwise around the two northern icebergs
+*Group up for this quest if needed
+.complete 11563,1 
+.unitscan Glrggl
+step
+.goto BoreanTundra,40.1,12.2,70,0
+.goto BoreanTundra,39.3,6.7,70,0
+.goto BoreanTundra,36.0,8.1
+>>Kill Glimmer Bay Orcas in the area. Loot them for their Blubbers
+.complete 11564,1 
+step
+>>Return to Winterfin Rretreat. Talk to Mrmrglmr, Bmurglbrm, and King Mrgl-Mrgl
+.turnin 11563 >>Turn in Grmmurggll Mrllggrl Glrggl!!!
+.accept 11565 >>Accept The Spare Suit
+.goto BoreanTundra,41.98,12.77
+.turnin 11564 >>Turn in Succulent Orca Stew
+.goto BoreanTundra,42.03,13.16
+.turnin 11565 >>Turn in The Spare Suit
+.accept 11566 >>Accept Surrender... Not!
+.goto BoreanTundra,43.50,13.97
+step
+#completewith Lurgglbr
+.goto BoreanTundra,41.0,15.6,0
+.goto BoreanTundra,41.3,19.0,0
+.goto BoreanTundra,39.2,18.3,0
+.goto BoreanTundra,37.6,15.9,0
+>>Kill Murlocs in the cave. You don't have to focus on this quest
+*Group up for this quest if needed
+.complete 11561,1 
+step
+.goto BoreanTundra,37.84,23.23
+>>Go deeper into the cave hugging the left side. Talk to Glrglrglr (do NOT talk to Lurggblr yet)
+.accept 11569 >>Accept Keymaster Urmgrgl
+step
+.goto BoreanTundra,38.0,22.2,12,0
+.goto BoreanTundra,39.0,22.7,30,0
+.goto BoreanTundra,39.8,22.5,30,0
+.goto BoreanTundra,39.3,23.7
+>>Run down the ramp and kill Urmgrgl. Loot him for his Key
+*Group up for this quest if needed
+.complete 11569,1 
+.unitscan Urmgrgl
+step
+.goto BoreanTundra,37.0,21.8,40,0
+.goto BoreanTundra,36.9,24.0,40,0
+.goto BoreanTundra,37.55,27.53
+>>Run to the end of the cave. Kill Claximus. Loot him for his Claw
+*Group up for this quest if needed
+.complete 11566,1 
+step
+.goto BoreanTundra,37.84,23.23
+>>Return to Glrglrglr at the cages near the start of the cave
+.turnin 11569 >>Turn in Keymaster Urmgrgl
+step
+#questguide
+.goto BoreanTundra,37.72,23.03
+>>Talk to Lurgglbr in the cage next to you
+.accept 11570 >>Accept Escape from the Winterfin Caverns
+step
+#questguide
+#label Lurgglbr
+.goto BoreanTundra,39.9,19.8,40,0
+.goto BoreanTundra,39.6,18.1,40,0
+.goto BoreanTundra,41.36,16.32
+>>Escort Lurgglbr. Try to kill mobs that he'd otherwise run into so that he doesn't waste time by stopping and attacking
+.complete 11570,1 
+
+step
+.goto BoreanTundra,41.0,15.6,70,0
+.goto BoreanTundra,41.3,19.0,70,0
+.goto BoreanTundra,39.2,18.3,70,0
+.goto BoreanTundra,37.6,15.9
+>>Kill Murlocs in the area
+.complete 11561,1 
+step
+.goto BoreanTundra,42.82,13.65
+>>Talk to Brglmurgl
+.turnin 11561 >>Turn in Them!
+step
+#completewith next
+.isQuestTurnedIn 11559
+.goto BoreanTundra,43.04,13.79
+.vendor >>Purchase more Murliver Oils from Ahlurglgr.
+.itemcount 34597,2
+step
+.goto BoreanTundra,43.50,13.97
+>>Talk to King Mrgl-Mrgl
+.turnin 11566 >>Turn in Surrender... Not!
+step
+#questguide
+.goto BoreanTundra,43.50,13.97
+>>Talk to King Mrgl-Mrgl
+.turnin 11566 >>Turn in Surrender... Not!
+.turnin 11570 >>Turn in Escape from the Winterfin Caverns
+step
+.goto BoreanTundra,48.39,19.32,30,0
+.goto BoreanTundra,48.45,19.75
+>>Talk to Ragefist
+.turnin 11591 >>Turn in Report to Steeljaw's Caravan
+.accept 11593 >>Accept The Honored Dead
+.accept 11594 >>Accept Put Them to Rest
+step
+.goto BoreanTundra,48.32,19.77
+>>Talk to Proudhoof. This will begin an escort
+.accept 11592 >>Accept We Strike!
+step
+#completewith next
+.goto BoreanTundra,49.0,25.2,0
+.use 34692 >>Use Ragefist's Torch in your bags on the dead Fallen Guards and Workers in the area
+>>Kill the undead tauren in the area
+.complete 11593,1 
+.complete 11594,1 
+step
+.goto BoreanTundra,49.44,26.47
+>>Follow Proudhoof. Burn as many corpses and kill as many ghosts as you can during the escort. Kill Steeljaw when he spawns
+.complete 11592,1 
+step
+.goto BoreanTundra,51.2,24.6,50,0
+.goto BoreanTundra,48.7,20.9,50,0
+.goto BoreanTundra,47.4,21.7
+.use 34692 >>Use Ragefist's Torch in your bags on the dead Fallen Guards and Workers in the area
+>>Kill the undead tauren in the area
+.complete 11593,1 
+.complete 11594,1 
+step
+.goto BoreanTundra,48.39,19.32,30,0
+.goto BoreanTundra,48.45,19.75
+>>Talk to Ragefist
+.turnin 11593 >>Turn in The Honored Dead
+.turnin 11594 >>Turn in Put Them to Rest
+step
+.goto BoreanTundra,46.58,9.35
+>>Talk to Imperean
+.turnin 11649 >>Turn in Motes of the Enraged
+.accept 11629 >>Accept Return to the Spirit Talker
+step
+.goto BoreanTundra,49.62,10.58
+>>Return to Bor'gorok
+.turnin 11592 >>Turn in We Strike!
+step
+.goto BoreanTundra,50.28,9.71
+>>Return to Bor'gorok. Talk to Snarlfang
+.turnin 11629 >>Turn in Return to the Spirit Talker
+.accept 11631 >>Accept Vision of Air
+step
+#completewith next
+.goto BoreanTundra,50.28,9.71
+.use 34779 >>Use Imperean's Primal. Wait for the RP
+.cast 45594
+.timer 25,Vision of Air RP
+.complete 11631,1 
+step
+.goto BoreanTundra,50.2,9.7
+>>Talk to Snarlfang
+.turnin 11631 >>Turn in Vision of Air
+.accept 11635 >>Accept Farseer Grimwalker's Spirit
+step
+.goto BoreanTundra,50.07,10.15
+>>Talk to Ortrosh
+.accept 11639 >>Accept Revenge Upon Magmoth
+step
+>> Kill the Foragers and Crushers outside of Magmoth's cave. Also try to kill at least half of the Shamans
+.complete 11639,2 
+.goto BoreanTundra,54.32,11.22,50,0
+.goto BoreanTundra,58.99,10.01,50,0
+.goto BoreanTundra,57.46,12.17,50,0
+.goto BoreanTundra,56.18,11.55,50,0
+.goto BoreanTundra,55.06,13.33
+.complete 11639,3 
+.goto BoreanTundra,53.45,14.95,50,0
+.goto BoreanTundra,54.09,13.37
+.complete 11639,1,5 
+step
+#completewith Remains
+>>Kill the Mates of Magmothregar and Magmoth Shamans in the cave
+.complete 11639,4 
+.complete 11639,1 
+step
+#completewith next
+.goto BoreanTundra,55.26,11.98,40,0
+.goto BoreanTundra,55.93,11.28,20,0
+.goto BoreanTundra,55.93,11.28,20 >> Jump down into the cave. Go to the north-east corner of the cave on the bottom floor
+step
+.goto BoreanTundra,56.17,9.12
+>>Kill the Shamans surrounding Grimwalker to free him. Talk to Grimwalker
+.turnin 11635 >>Turn in Farseer Grimwalker's Spirit
+.accept 11637 >>Accept Kaganishu
+step
+.goto BoreanTundra,56.19,12.78
+>>Kill Kaganishu south of Grimwalker. Loot him for his Fetish
+.complete 11637,2 
+step
+.goto BoreanTundra,56.17,9.12
+.use 34781 >>Use the Fetish in your bags on Farseer Grimwalker to set him free.
+.complete 11637,1 
+step
+#label Remains
+.goto BoreanTundra,56.2,9.2
+>>Talk to Grimwalker, then loot the bones from under him
+.turnin 11637 >>Turn in Kaganishu
+.accept 11638 >>Accept Return My Remains
+.complete 11638,1 
+step
+.goto BoreanTundra,55.81,11.13,20,0
+>>Kill the Mates of Magmothregar and Magmoth Shamans in the cave
+.complete 11639,4 
+.goto BoreanTundra,54.83,9.92,20,0
+.goto BoreanTundra,54.13,11.38
+.complete 11639,1 
+.goto BoreanTundra,54.80,13.09,20,0
+.goto BoreanTundra,55.99,13.68,20,0
+.goto BoreanTundra,56.43,11.72
+step
+.hs >>Hearth to Bor'gorok Outpost
+.cooldown item,6948,>0
+step
+>>Talk to Snarlfang and Ortrosh
+.turnin 11639 >>Turn in Revenge Upon Magmoth
+.goto BoreanTundra,49.55,9.98
+.turnin 11638 >>Turn in Return My Remains
+.goto BoreanTundra,50.28,9.71
+step
+.goto BoreanTundra,48.39,19.32,30,0
+.goto BoreanTundra,48.45,19.75
+>>Talk to Ragefist
+.turnin 11591 >>Turn in Report to Steeljaw's Caravan
+.accept 11593 >>Accept The Honored Dead
+.accept 11594 >>Accept Put Them to Rest
+step
+.goto BoreanTundra,48.32,19.77
+>>Talk to Proudhoof. This will begin an escort
+.accept 11592 >>Accept We Strike!
+step
+#completewith next
+.goto BoreanTundra,49.0,25.2,0
+.use 34692 >>Use Ragefist's Torch in your bags on the dead Fallen Guards and Workers in the area
+>>Kill the undead tauren in the area
+.complete 11593,1 
+.complete 11594,1 
+step
+.goto BoreanTundra,49.44,26.47
+>>Follow Proudhoof. Burn as many corpses and kill as many ghosts as you can during the escort. Kill Steeljaw when he spawns
+.complete 11592,1 
+step
+.goto BoreanTundra,51.2,24.6,50,0
+.goto BoreanTundra,48.7,20.9,50,0
+.goto BoreanTundra,47.4,21.7
+.use 34692 >>Use Ragefist's Torch in your bags on the dead Fallen Guards and Workers in the area
+>>Kill the undead tauren in the area
+.complete 11593,1 
+.complete 11594,1 
+step
+.goto BoreanTundra,48.39,19.32,30,0
+.goto BoreanTundra,48.45,19.75
+>>Talk to Ragefist
+.turnin 11593 >>Turn in The Honored Dead
+.turnin 11594 >>Turn in Put Them to Rest
+step
+.goto BoreanTundra,49.62,10.58
+>>Return to Bor'gorok
+.turnin 11592 >>Turn in We Strike!
+step
+#completewith next
+.goto BoreanTundra,49.65,11.05
+.fly Amber Ledge >>Fly to Amber Ledge
+step
+.goto BoreanTundra,44.98,33.38
+>>Return to the Amber Ledge. Talk to Garren
+.turnin 12728 >>Turn in Monitoring the Rift: Winterfin Cavern
+step
+.goto BoreanTundra,57.05,44.32
+>>Return to Lathorius
+.turnin 11892 >>Turn in The Assassination of Harold Lane
+.isQuestComplete 11892
+step
+>>Travel to Kaskala. Talk to Ataika and Utaik
+.accept 11949 >>Accept Not Without a Fight!
+.goto BoreanTundra,63.80,46.12
+.daily 11945 >>Accept Preparing for the Worst
+.goto BoreanTundra,63.95,45.72
+step
+#completewith next
+.goto BoreanTundra,66.2,45.9,0
+.goto BoreanTundra,63.7,52.2,0
+>>Loot the small baskets all around the village
+.complete 11945,1 
+.isOnQuest 11945
+step
+.goto BoreanTundra,67.3,47.7,60,0
+.goto BoreanTundra,63.61,53.93
+>>Kill the Raiders all around the village
+*Group up for this quest if needed
+.complete 11949,1 
+step
+.goto BoreanTundra,66.2,45.9,60,0
+.goto BoreanTundra,63.7,52.2
+>>Loot the small baskets all around the village
+.complete 11945,1 
+.isOnQuest 11945
+step
+>>Return to Ataika and Utaik
+.turnin 11949 >>Turn in Not Without a Fight!
+.accept 11950 >>Accept Muahit's Wisdom
+.goto BoreanTundra,63.80,46.12
+.turnin 11945 >>Turn in Preparing for the Worst
+.goto BoreanTundra,63.95,45.72
+.isOnQuest 11945
+step
+>>Return to Ataika
+.turnin 11949 >>Turn in Not Without a Fight!
+.accept 11950 >>Accept Muahit's Wisdom
+.goto BoreanTundra,63.80,46.12
+step
+.goto BoreanTundra,67.21,54.86
+>>Swim to Njord's Breath Bay. Talk to Muahit
+.turnin 11950 >>Turn in Muahit's Wisdom
+.accept 11961 >>Accept Spirits Watch Over Us
+step
+.goto BoreanTundra,67.65,50.41
+>>Talk to Iruk's corpse underwater
+.complete 11961,1 
+.skipgossip
+step
+.goto BoreanTundra,67.21,54.86
+>>Return to Muahit
+.turnin 11961 >>Turn in Spirits Watch Over Us
+.accept 11968 >>Accept The Tides Turn
+step
+.goto BoreanTundra,67.41,56.87
+>>Kill Heigarr on the icy shore
+*Group up for this quest if needed
+.complete 11968,1 
+.unitscan Heigarr the Horrible
+step
+>>Talk to Muahit and Hotawa
+.turnin 11968 >>Turn in The Tides Turn
+.goto BoreanTundra,67.21,54.86
+.accept 12117 >>Accept Travel to Moa'ki Harbor
+.goto BoreanTundra,67.27,54.86
+step
+#sticky
+#label AbandonAss
+.abandon 11892 >> Abandon The Assassination of Harold Lane
+step
+#completewith end
+.goto BoreanTundra,77.76,37.77
+.fp Taunka'le Village >> Get the Taunka'le Village flight path
+step
+#requires AbandonAss
+>>Talk to the Sage and Mahan
+.turnin 11888 >>Turn in Ride to Taunka'le Village
+.accept 11890 >>Accept What Are They Up To?
+.goto BoreanTundra,77.25,38.47
+.accept 11684 >>Accept Scouting the Sinkholes
+.goto BoreanTundra,77.07,37.82
+.xp >71+1154700,1
+step
+>>Talk to the Sage
+.turnin 11888 >>Turn in Ride to Taunka'le Village
+.xp <71+1154700,1
+step
+>>Talk to Fezzix then talk to Taiga inside the tent
+.accept 11881 >>Accept Load'er Up!
+.goto BoreanTundra,77.48,36.95
+.accept 11674 >>Accept Sage Highmesa is Missing
+.goto BoreanTundra,77.30,36.87
+.isQuestTurnedIn 11888
+step
+#completewith CPlane
+.goto BoreanTundra,76.25,37.18
+.home >> Set your Hearth to Taunka'le Village
+.isQuestTurnedIn 11888
+step
+.use 34920 >>Use the Map of the Geyser Fields in your bags on the edge of the sinkholes.
+.complete 11684,1 
+.goto BoreanTundra,70.76,36.72
+.complete 11684,2 
+.goto BoreanTundra,69.94,33.12
+.complete 11684,3 
+.goto BoreanTundra,66.78,32.61
+.isQuestTurnedIn 11888
+step
+.goto BoreanTundra,66.0,24.6
+>>Travel toward the Pumping Station
+.complete 11890,1 
+.isQuestTurnedIn 11888
+step
+.goto BoreanTundra,64.02,35.77
+>>Talk to the corpse of the Crashed Recon Pilot
+.accept 11887 >>Accept Emergency Supplies
+.isQuestTurnedIn 11888
+step
+.goto BoreanTundra,64.0,37.2,70,0
+.goto BoreanTundra,59.4,39.3,70,0
+.goto BoreanTundra,61.0,33.2
+>>Run around the pools. Talk to the dead Fizzcrank Recon Pilots
+.complete 11887,1 
+.skipgossip
+.isQuestTurnedIn 11888
+step
+#completewith next
+#label CPlane
+.goto BoreanTundra,63.38,36.99
+.cast 46338 >> Clear the area around the Crashed Plane and use Jenny's Whistle in your bags to summon a mule.
+.isQuestTurnedIn 11888
+step
+#completewith next
+.goto BoreanTundra,77.61,36.84
+.use 35272 >> Run back to Fezzix with Jenny without Jenny getting hit. Jenny is pretty slow so don't ride off without her. She'll disappear if you de-render her
+.complete 11881,1 
+.isQuestTurnedIn 11888
+step
+#requires CPlane
+>>Talk to Fezzix then Dorain
+.turnin 11881 >>Turn in Load'er Up!
+.turnin 11887 >>Turn in Emergency Supplies
+.goto BoreanTundra,77.48,36.95
+.accept 11893 >>Accept The Power of the Elements
+.goto BoreanTundra,77.62,36.95
+.isQuestTurnedIn 11888
+step
+>>Talk to Mahan and Sage
+.turnin 11684 >>Turn in Scouting the Sinkholes
+.accept 11685 >>Accept The Heart of the Elements
+.goto BoreanTundra,77.07,37.82
+.turnin 11890 >>Turn in What Are They Up To?
+.accept 11895 >>Accept Master the Storm
+.goto BoreanTundra,77.25,38.47
+.isQuestTurnedIn 11888
+step
+.goto BoreanTundra,77.05,38.72
+>>Click the Storm Totem inside the hut. Kill the Storm Tempest that spawns.
+.complete 11895,1 
+.isQuestTurnedIn 11888
+step
+.goto BoreanTundra,77.25,38.47
+>>Return to Sage
+.turnin 11895 >>Turn in Master the Storm
+.accept 11896 >>Accept Weakness to Lightning
+.isQuestComplete 11895
+.xp >71+1154700,1
+step
+.goto BoreanTundra,77.25,38.47
+>>Return to Sage
+.accept 11896 >>Accept Weakness to Lightning
+.isQuestTurnedIn 11895
+.xp >71+1154700,1
+step
+.goto BoreanTundra,77.25,38.47
+>>Return to Sage
+.turnin 11895 >>Turn in Master the Storm
+.isQuestComplete 11895
+.xp <71+1154700,1
+step
+>>Talk to Iron Eyes then talk to Taiga inside the tent
+.accept 11906 >>Accept Cleaning Up the Pools
+.goto BoreanTundra,76.92,37.63
+.accept 11899 >>Accept Souls of the Decursed
+.goto BoreanTundra,77.30,36.87
+.isOnQuest 11896
+step
+.goto BoreanTundra,72.2,25.1,60,0
+.goto BoreanTundra,72.5,37.1,60,0
+.goto BoreanTundra,73.5,39.9,60,0
+.goto BoreanTundra,74.6,33.9
+.use 35281 >> Use the Windsoul Totem in your bags. Kill Steam Ragers when they have the debuff from your totem (about a 30 yard range) to collect their energy
+.complete 11893,1 
+.isOnQuest 11896
+step
+#completewith next
+.goto BoreanTundra,66.5,22.2,0
+.use 35352 >>Use your Sage's Lightning Rod on Mechanical (but not mechagnome) mobs in the area and kill them. Focus on this quest as the rod has a long cooldown
+.complete 11896,1 
+.isOnQuest 11896
+step
+.use 35401 >> Kill Mechagnomes. Use The Greatmother's Soulcatcher in your bags their corpses.
+>>Loot for parts scattered all over the ground
+.goto BoreanTundra,64.5,22.8,60,0
+.goto BoreanTundra,65.3,17.5,60,0
+.goto BoreanTundra,61.5,21.0,60,0
+.goto BoreanTundra,61.3,25.3,60,0
+.goto BoreanTundra,64.7,26.6,60,0
+.goto BoreanTundra,67.2,26.0,60,0
+.goto BoreanTundra,64.5,22.8
+.complete 11899,1 
+.complete 11906,1 
+.isOnQuest 11896
+step
+.goto BoreanTundra,66.3,22.1,60,0
+.goto BoreanTundra,67.1,25.2,60,0
+.goto BoreanTundra,61.4,24.4
+.use 35352 >>Use your Sage's Lightning Rod on Mechanical (but not mechagnome) mobs in the area. Kill them. Focus on this quest first as the rod has a cooldown
+.complete 11896,1 
+.isOnQuest 11896
+step
+#completewith next
+.hs >> Hearth to Taunka'le Village
+.cooldown item,6948,>0
+.isOnQuest 11896
+step
+>>Return to Taunka'le Village. Talk to Iron Eyes
+.turnin 11906 >>Turn in Cleaning Up the Pools
+.goto BoreanTundra,76.92,37.63
+.isQuestComplete 11906
+step
+>>Talk to Sage
+.turnin 11896 >>Turn in Weakness to Lightning
+.accept 11907 >>Accept The Sub-Chieftains
+.goto BoreanTundra,77.25,38.47
+.isQuestComplete 11896
+step
+>>Talk to Sage
+.accept 11907 >>Accept The Sub-Chieftains
+.goto BoreanTundra,77.25,38.47
+.isQuestTurnedIn 11896
+step
+>>Talk to Taiga in the hut, then Dorain and Fizzix outside the hut
+.turnin 11899 >>Turn in Souls of the Decursed
+.accept 11909 >>Accept Defeat the Gearmaster
+.goto BoreanTundra,77.30,36.87
+.turnin 11893 >>Turn in The Power of the Elements
+.goto BoreanTundra,77.62,36.95
+.accept 11894 >>Accept Patching Up
+.goto BoreanTundra,77.48,36.95
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,76.7,32.1,70,0
+.goto BoreanTundra,79.4,35.4,70,0
+.goto BoreanTundra,79.0,43.1,70,0
+.goto BoreanTundra,80.9,42.6,70,0
+.goto BoreanTundra,76.7,32.1
+>>Kill the Caribou in the area. Loot them for their Uncured Hides
+.collect 35288,5,11894,1
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,83.1,47.7,70,0
+.goto BoreanTundra,85.5,48.0,70,0
+.goto BoreanTundra,86.3,45.4,70,0
+.goto BoreanTundra,88.5,46.8,70,0
+.goto BoreanTundra,83.1,47.7
+>>Kill Frozen Elementals on the shore. Loot them for their Hearts
+.complete 11685,1 
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,75.57,35.77
+>>Talk to Barah outside of Taunka'le
+.turnin 11685 >>Turn in The Heart of the Elements
+.accept 11695 >>Accept The Horn of Elemental Fury
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,78.9,28.3,70,0
+.goto BoreanTundra,78.0,27.9,70,0
+.goto BoreanTundra,78.5,29.3,70,0
+.goto BoreanTundra,79.0,29.0
+>>Kill Chieftain Gurgleboggle. Loot him for his key
+.collect 34962,1,11695,2 
+.unitscan Chieftain Gurgleboggle
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,78.72,28.33
+>>Click the orb in the middle of the pond
+.complete 11695,2 
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,71.15,28.14
+.use 35288 >> Use your Hides near the vent to make them Steam Cured.
+.collect 35288,5,11894,1,-1
+.complete 11894,1 
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,65.44,17.45
+>>Click on the valve next to the steam pipes to summon ED-210. Kill it
+.complete 11907,2 
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,60.19,20.38
+>>Click on the valve next to the steam pipes to summon Twonky. Kill it
+.complete 11907,1 
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,63.66,22.48
+>>Click on the valve next to the steam pipes to summon Max Blasto. Kill it
+.complete 11907,3 
+.isQuestTurnedIn 11896
+step
+.groundgoto BoreanTundra,65.62,22.95,20,0
+.groundgoto BoreanTundra,64.87,24.14,15,0
+.groundgoto BoreanTundra,64.71,22.93,15,0
+.goto BoreanTundra,64.43,23.40
+>>Run to the top of the oil platform. Go into the small house and click on the big book on top of the table to summon Mechazod. Kill and loot him for his Head
+.complete 11909,1 
+.cast 3365
+.timer 30,The Gearmaster RP
+.complete 11909,2 
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,65.25,28.78
+>>Click on the valve next to the steam pipes to summon The Grinder. Kill it
+.complete 11907,4 
+.isQuestTurnedIn 11896
+step
+.groundgoto BoreanTundra,65.26,37.89,75,0
+.goto BoreanTundra,68.52,40.38
+>>Kill Chieftain Burblegobble. Loot him for his key
+.collect 34961,1,11695,1 
+.unitscan Chieftain Burblegobble
+.isQuestTurnedIn 11896
+step
+>>Click the Bauble for the Upper Horn Half
+.goto BoreanTundra,68.5,40.3
+.complete 11695,1 
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,75.57,35.77
+>>Return to Barah. Wait for the short RP after turning in The Horn of Elemental Fury.
+.turnin 11695 >>Turn in The Horn of Elemental Fury
+
+.accept 11706 >>Accept The Collapse
+.isQuestTurnedIn 11896
+step
+>>Talk to Taiga in the hut. Talk to Fizzix and the Sage outside after
+.turnin 11909 >>Turn in Defeat the Gearmaster
+.goto BoreanTundra,77.30,36.87
+.turnin 11894 >>Turn in Patching Up
+.goto BoreanTundra,77.48,36.95
+.turnin 11907 >>Turn in The Sub-Chieftains
+.goto BoreanTundra,77.25,38.47
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,75.89,37.24
+>>Talk to Wintergale
+.accept 11628 >>Accept Shrouds of the Scourge
+.isQuestTurnedIn 11896
+step
+#completewith next
+.destroy 34960 >> Destroy The Legend of the Horn in your bags
+.isQuestTurnedIn 11896
+step
+.cast 45942 >>Use The Horn of Elemental Fury near the sinkhole to summon Lord Kryxix. Kill him after the short RP.
+.timer 22,Lord Kryxix RP
+.goto BoreanTundra,70.83,36.72
+.complete 11706,2 
+.complete 11706,1 
+.goto BoreanTundra,70.13,35.96
+.use 34968
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,74.67,23.67
+>>Talk to Sage Highmesa
+.turnin 11674 >>Turn in Sage Highmesa is Missing
+.accept 11675 >>Accept A Proper Death
+.isQuestTurnedIn 11896
+step
+#completewith next
+.goto BoreanTundra,76.4,26.4,0,0
+>>Kill Scourged Mammoths in the area. Loot the Mammoths for their Pelts
+.complete 11628,1 
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,76.4,26.4,70,0
+.goto BoreanTundra,82.9,29.5,70,0
+.goto BoreanTundra,75.3,16.8,70,0
+.goto BoreanTundra,71.6,17.0,70,0
+.goto BoreanTundra,76.4,26.4,70,0
+.goto BoreanTundra,82.9,29.5,70,0
+.goto BoreanTundra,75.3,16.8,70,0
+.goto BoreanTundra,71.6,17.0
+>>Kill Scourged Magnataur in the area
+.complete 11675,1 
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,71.6,17.0,70,0
+.goto BoreanTundra,76.4,26.4,70,0
+.goto BoreanTundra,82.9,29.5,70,0
+.goto BoreanTundra,75.3,16.8,70,0
+.goto BoreanTundra,71.6,17.0
+>>Kill Scourged Mammoths in the area. Loot the Mammoths for their Pelts
+.complete 11628,1 
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,74.67,23.67
+>>Return to Highmesa
+.turnin 11675 >>Turn in A Proper Death
+.accept 11677 >>Accept Stop the Plague
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,74.77,14.10
+.use 34913 >> Go into the cave. Use Highmesa's Cleansing Seeds on the cauldron inside
+.complete 11677,1 
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,74.67,23.67
+>>Return to Highmesa
+.turnin 11677 >>Turn in Stop the Plague
+.accept 11678 >>Accept Find Bristlehorn
+.accept 11683 >>Accept Fallen Necropolis
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,74.67,23.67
+>>Return to Highmesa
+.turnin 11677 >>Turn in Stop the Plague
+.isQuestTurnedIn 11896
+step
+#completewith Gyroscope
+.goto BoreanTundra,69.3,14.1,0,0
+>>Kill the Talramas Scourge in the area
+.complete 11683,1 
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,68.7,15.3,60,0
+.goto BoreanTundra,69.10,12.64,20,0
+.goto BoreanTundra,69.76,12.45
+>>Go inside the Necropolis. Talk to Bristlehorn inside the cage
+.turnin 11678 >>Turn in Find Bristlehorn
+.accept 11687 >>Accept The Doctor and the Lich-Lord
+.isQuestTurnedIn 11896
+step
+.groundgoto BoreanTundra,69.38,15.04,40,0
+.groundgoto BoreanTundra,69.53,16.02,30,0
+.groundgoto BoreanTundra,68.39,14.06,40,0
+.groundgoto BoreanTundra,69.57,12.31,40,0
+.goto BoreanTundra,70.09,13.69
+>>Go outside Talramas. Make your way up the hill next to the roof of the crashed Necropolis and kill Lich-Lord Chillwinter
+.complete 11687,2 
+.isQuestTurnedIn 11896
+step
+#label Gyroscope
+.goto BoreanTundra,69.88,13.33
+>>Drop down into the pit at the center and kill Doctor Razorgrin
+.complete 11687,1 
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,71.2,15.0,70,0
+.goto BoreanTundra,68.2,16.9,70,0
+.goto BoreanTundra,67.2,12.5,70,0
+.goto BoreanTundra,69.7,13.8
+>>Kill the Talramas Scourge in the area
+.complete 11683,1 
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,74.67,23.67
+>>Return to Highmesa
+.turnin 11683 >>Turn in Fallen Necropolis
+.turnin 11687 >>Turn in The Doctor and the Lich-Lord
+.accept 11689 >>Accept Return with the Bad News
+.isQuestTurnedIn 11896
+step
+>>Return to Taunka'le Village. Talk to Barah and Wintergale
+.turnin 11706 >>Turn in The Collapse
+.goto BoreanTundra,75.57,35.77
+.turnin 11628 >>Turn in Shrouds of the Scourge
+.accept 11630 >>Accept The Bad Earth
+.goto BoreanTundra,75.89,37.24
+.isQuestTurnedIn 11896
+step
+.goto BoreanTundra,79.90,31.60,60,0
+.goto BoreanTundra,82.54,31.26,60,0
+.goto BoreanTundra,82.37,36.85,60,0
+.goto BoreanTundra,82.36,41.69,60,0
+.goto BoreanTundra,79.90,31.60
+>>Loot the Scourged Earth (dirt piles) on the ground
+.complete 11630,1 
+.isQuestTurnedIn 11896
+step
+>>Return to Taunka'le. Talk to Taiga in the hut
+.turnin 11689 >>Turn in Return with the Bad News
+.goto BoreanTundra,77.30,36.87
+.isQuestTurnedIn 11896
+step
+>>Talk to Wintergale
+.turnin 11630 >>Turn in The Bad Earth
+.goto BoreanTundra,75.89,37.24
+.isQuestComplete 11630
+.xp <71+1154700,1
+step
+>>Talk to Wintergale
+.turnin 11630 >>Turn in The Bad Earth
+.accept 11633 >>Accept Blending In
+.goto BoreanTundra,75.89,37.24
+.isQuestComplete 11630
+.xp >71+1154700,1
+step
+>>Talk to Wintergale
+.accept 11633 >>Accept Blending In
+.goto BoreanTundra,75.89,37.24
+.isQuestTurnedIn 11630
+.xp >71+1154700,1
+step
+#completewith SDecay
++Use the Imbued Scourge Shroud in your bags to turn invisible. Stay away from Abominations as they can see you through invisibility. You can also mount while invisible << !Druid
++Use the Imbued Scourge Shroud in your bags to turn invisible. Stay away from Abominations as they can see you through invisibility. You can mount and shapeshift while invisible << Druid
+>>Un-equip and re-equip the cloak if you lose your invisbility
+.use 34782
+.isOnQuest 11633
+step
+.goto BoreanTundra,88.96,28.58
+>>Go inside the Spire of Pain
+.complete 11633,3 
+.isOnQuest 11633
+step
+.goto BoreanTundra,88.08,20.90
+>>Run up the left or right side of the spire into the room on the top floor.
+.complete 11633,2 
+.isOnQuest 11633
+step
+#label SDecay
+.groundgoto BoreanTundra,84.21,21.69,30,0
+.goto BoreanTundra,83.99,20.86
+>>Go inside the Spire of Decay
+.complete 11633,1 
+.isOnQuest 11633
+step
+.goto BoreanTundra,85.03,28.82,50,0
+.goto BoreanTundra,84.28,30.80,50,0
+>>Don't forget to Re-Equip your normal cloak when you leave En'kilah
+>>Return to Taunka'le Village. Talk to Wintergale, Aerie, and Icehide
+.turnin 11633 >>Turn in Blending In
+.accept 11640 >>Accept Words of Power
+.goto BoreanTundra,75.89,37.24
+.accept 11647 >>Accept Neutralizing the Cauldrons
+.goto BoreanTundra,75.96,37.35
+.accept 11641 >>Accept A Courageous Strike
+.goto BoreanTundra,75.96,37.17
+.isQuestComplete 11633
+step
+.goto BoreanTundra,85.03,28.82,50,0
+.goto BoreanTundra,84.28,30.80,50,0
+>>Don't forget to Re-Equip your normal cloak when you leave En'kilah
+>>Return to Taunka'le Village. Talk to Wintergale, Aerie, and Icehide
+.accept 11640 >>Accept Words of Power
+.goto BoreanTundra,75.89,37.24
+.accept 11647 >>Accept Neutralizing the Cauldrons
+.goto BoreanTundra,75.96,37.35
+.accept 11641 >>Accept A Courageous Strike
+.goto BoreanTundra,75.96,37.17
+.isQuestTurnedIn 11633
+step
+#completewith Talet
+.use 34815 >>Kill a Darkfallen Bloodbearer and loot him for a Vial of Fresh Blood. Click it in your bags
+.collect 34815,1,11654,1 
+.accept 11654 >> Accept The Spire of Blood
+.unitscan Darkfallen Bloodbearer
+.isQuestTurnedIn 11633
+step
+#completewith Naferset
+.goto BoreanTundra,87.6,24.2,0,0
+>>Kill Ghouls in En'kilah
+.complete 11641,1 
+.isQuestTurnedIn 11633
+step
+.groundgoto BoreanTundra,84.28,30.80,50,0
+.groundgoto BoreanTundra,85.03,28.82,50,0
+.goto BoreanTundra,87.67,29.95
+.use 34806 >>Use Sage Aeire's Totem in your bags next to the Cauldron
+.complete 11647,1 
+.isQuestTurnedIn 11633
+step
+#label Talet
+.groundgoto BoreanTundra,88.56,28.27,40,0
+.goto BoreanTundra,89.38,28.86
+>>Go to the Spire of Pain. Kill the cocoons around Telet to make him vulnerable. kill Talet and loot his scroll
+.complete 11640,2 
+.isQuestTurnedIn 11633
+step
+.goto BoreanTundra,87.64,21.98
+.use 34815 >>Kill a Darkfallen Bloodbearer and loot him for a Vial of Fresh Blood. Click it in your bags
+.collect 34815,1,11654,1 
+.accept 11654 >> Accept The Spire of Blood
+.unitscan Darkfallen Bloodbearer
+.isQuestTurnedIn 11633
+step
+.goto BoreanTundra,87.64,21.98,40,0
+.goto BoreanTundra,87.65,20.43,30,0
+>> Enter the building from the center entrance of the bottom floor. Talk to Snow Tracker Grumm
+>>Avoid killing the Necromancers in the area
+.goto BoreanTundra,87.58,19.93
+.turnin 11654 >>Turn in The Spire of Blood
+.accept 11659 >>Accept Shatter the Orbs!
+.isQuestTurnedIn 11633
+step
+.goto BoreanTundra,87.23,20.97,20,0
+.goto BoreanTundra,87.74,19.61,20,0
+.goto BoreanTundra,88.98,20.65,20,0
+.goto BoreanTundra,88.47,22.01,20,0
+.goto BoreanTundra,88.23,20.47,30,0
+.goto BoreanTundra,88.3,20.2,0,0
+>>Kill the orbs to shatter them. Kill some, if not all of the Necromancers inside of the spire
+.complete 11659,1 
+.complete 11641,2,2 
+.isQuestTurnedIn 11633
+step
+.goto BoreanTundra,87.72,21.75,20,0
+.goto BoreanTundra,88.05,20.94
+>>Exit Spire of Blood. Take the stairs up to the side at the Spire of Blood. Kill Andorath on the 2nd floor and loot his scroll
+.complete 11640,3 
+.isQuestTurnedIn 11633
+step
+.use 34806 >>Use Sage Aeire's Totem in your bags next to the Cauldrons in the area
+.complete 11647,2 
+.goto BoreanTundra,86.15,22.75
+.complete 11647,3 
+.goto BoreanTundra,85.56,20.09
+.isQuestTurnedIn 11633
+step
+#sticky
+#label ENecromancers
+.goto BoreanTundra,83.78,20.04,0,0
+>>Finish killing Necromancers in the area
+.complete 11641,2 
+.isQuestTurnedIn 11633
+step
+#label Naferset
+.goto BoreanTundra,84.2,21.8,40,0
+.goto BoreanTundra,83.9,20.5
+>>Go to the Spire of Decay. Kill the Necromancers around Naferset to make him vulnerable. Kill Naferset and loot his scroll
+.complete 11640,1 
+.isQuestTurnedIn 11633
+step
+.goto BoreanTundra,86.23,22.83,50,0
+.goto BoreanTundra,88.01,24.01,50,0
+.goto BoreanTundra,86.95,25.34,50,0
+.goto BoreanTundra,86.96,24.62,50,0
+.goto BoreanTundra,85.06,26.96,50,0
+.goto BoreanTundra,84.67,29.87,50,0
+.goto BoreanTundra,86.57,27.64
+>>Finish killing the remaining En'kilah Ghouls
+.complete 11641,1 
+.isQuestTurnedIn 11633
+step << Priest
+#completewith next
+.hs >> Hearth to Taunka'le Village
+.cooldown item,6948,>0
+step
+#label Words
+#requires ENecromancers
+>>Return to Taunka'le Village. Talk to Wintergale, Icehide, and Aerie
+.turnin 11640 >>Turn in Words of Power
+.goto BoreanTundra,75.89,37.24
+.turnin 11641 >>Turn in A Courageous Strike
+.goto BoreanTundra,75.96,37.35
+.turnin 11647 >>Turn in Neutralizing the Cauldrons
+.goto BoreanTundra,75.89,37.24
+.isQuestTurnedIn 11633
+step
+.goto BoreanTundra,76.75,37.88
+>>Talk to Junek outside
+.turnin 11659 >>Turn in Shatter the Orbs!
+.isQuestComplete 11659
+step << Mage
+.zone Undercity >> Teleport to Undercity
+.zoneskip Tirisfal Glades
+.zoneskip HowlingFjord
+step << Mage
+.goto Undercity,85.1,10.0
+.train 43023 >> Train your class spells
+.xp <71,1
+step << Mage
+.goto Undercity,85.1,10.0
+.train 42930 >> Train your class spells
+.xp <72,1
+step << Mage
+.goto Undercity,85.1,10.0
+.train 43019 >> Train your class spells
+.xp <73,1
+step << DK
+#completewith next
+.cast 50977 >> Cast Death Gate
+.zoneskip Eastern Plaguelands
+step << DK
+.goto Eastern Plaguelands,80.3,48.0
+>>Go through the Death Gate
+.train 49940 >> Train your class spells from Amal'Thazad in Acherus
+.xp <72,1
+step << DK
+.goto Eastern Plaguelands,80.3,48.0
+>>Go through the Death Gate
+.train 49904 >> Train your class spells from Amal'Thazad in Acherus
+.xp <73,1
+step << !Mage !DK !Druid !Priest
+#completewith next
+.zone Orgrimmar >> Website unstuck to Orgrimmar. To do this, follow the link below, then click your character and follow the process:
+.link https://us.battle.net/support/en/help/product/wow/197/834/solution >> Copy paste this into your browser
+>>Alternatively, ask a mage to be teleported to Orgrimmar, or travel there manually
+.zoneskip Durotar
+step << skip
+#completewith next
+.goto BoreanTundra,45.33,34.62
+.fly Warsong Hold >> Fly to Warsong Hold. Alternatively, unstuck to Orgrimmar (if it's not on its 8h cooldown), or pay a mage for a portal to Orgrimmar
+.link https://us.battle.net/support/en/help/product/wow/197/834/solution >> Copy paste this into your browser
+.zoneskip Durotar
+.zoneskip Orgrimmar
+step << skip
+.goto BoreanTundra,41.3,53.5
+.zone Durotar >>Get onto the Zeppelin when it comes. Take it to Durotar. Alternatively, pay a mage for a portal to Orgrimmar
+.zoneskip Orgrimmar
+step << Shaman/Paladin
+#completewith ShPaTraining
+.goto Orgrimmar,40.5,36.9,25 >>Enter Grommash Hold
+step << Shaman
+.goto Orgrimmar,38.6,36.0
+.train 58699 >> Train your class spells
+.xp <71,1
+step << Shaman
+#label ShPaTraining
+.goto Orgrimmar,38.6,36.0
+.train 49237 >> Train your class spells
+.xp <73,1
+step << Paladin
+#label ShPaTraining
+.goto Orgrimmar,32.3,35.7
+.train 54428 >> Train your class spells
+.xp <71,1
+step << Rogue
+.goto Orgrimmar,44.0,54.6
+.train 48667 >> Train your class spells
+.xp <73,1
+step << Warlock
+.goto Orgrimmar,48.0,46.0
+.train 47812 >> Train your class spells
+.xp <71,1
+step << Hunter/Warrior
+#completewith HuWaTraining
+.goto Orgrimmar,63.6,38.2,30 >> Enter the Valley of Honor
+step << Hunter
+#label HuWaTraining
+.goto Orgrimmar,66.1,18.5
+.train 49051 >> Train your class spells
+.xp <71,1
+step << Warrior
+#label HuWaTraining
+.goto Orgrimmar,76.9,32.6,30,0 << Warrior
+.goto Orgrimmar,79.8,31.4
+.train 47470 >> Train your class spells
+.xp <73,1
+step
+#completewith next
+.hs >>Hearth to Taunka'le Village
+step
+#label end
+.goto Dragonblight,8.41,54.83
+.zone Dragonblight >> Travel to Dragonblight
+]])
+RXPGuides.RegisterGuide([[
+#version 9
+#wotlk
+#group RestedXP Dungeon Cleave 70-80
 << Horde
 #name 70-80 Horde Dungeon Cleave
 step << !Mage
@@ -36588,9 +39371,6 @@ step << Mage
 .zone Orgrimmar >> Teleport to Orgrimmar
 .zoneskip BoreanTundra
 .zoneskip Durotar
-step
-#completewith Zeppelin
-+Welcome to the RXPGuides 70-80 Dungeon Cleave Guide!
 step << Shaman/Priest/Druid/Mage/Paladin
 .goto Orgrimmar,45.43,56.54
 >>Purchase Reagents from Horthus inside the building
@@ -37858,15 +40638,13 @@ step << skip
 .turnin 13109 >>Turn in Diametrically Opposed
 .turnin 13108 >>Turn in Whatever it Takes
 >>Ding Level 80 - Congratulations!
-step
-+Congratulations on finishing the RestedXP 70-80 Dungeon Cleave guide! Thank you for using RestedXP.
 ]])
 RXPGuides.RegisterGuide([[
-#version 5
+#version 9
 #wotlk
-#group Dungeon Cleave 70-80
+#group RestedXP Dungeon Cleave 70-80
 << Horde
-#name 70-73 Nexus Lockout - Coldarra
+#name 70-73 Nexus Lockout - Coldarra Horde
 #next 70-80 Horde Dungeon Cleave
 step
 #completewith end
@@ -38381,19 +41159,923 @@ step
 .xp <73,1
 ]])
 RXPGuides.RegisterGuide([[
-#version 5
+#version 9
 #wotlk
-#group Horde 70-80
+#group RestedXP Horde 70-80
 << Horde
 #name 72-74 Dragonblight
 #next 74-75 Grizzly Hills
 step
+.goto Dragonblight,14.21,49.82
+>>Travel to the Westwind Refugee Camp. Talk to Roh'kill
+.accept 11980 >>Accept Pride of the Horde
+step
+.goto Dragonblight,13.9,49.7,30,0
+.goto Dragonblight,13.6,49.1,30,0
+.goto Dragonblight,13.3,50.0,30,0
+.goto Dragonblight,12.8,48.2,30,0
+.goto Dragonblight,13.6,47.9
+>>Talk to Emissary Brighthoof circling the inner circle of the camp
+.accept 11978 >>Accept Into the Fold
+.unitscan Emissary Brighthoof
+step
+.goto Dragonblight,16.0,52.4,70,0
+.goto Dragonblight,17.8,46.9,70,0
+.goto Dragonblight,14.6,44.5,70,0
+.goto Dragonblight,16.4,48.7,70,0
+.goto Dragonblight,16.0,52.4,70,0
+.goto Dragonblight,17.8,46.9,70,0
+.goto Dragonblight,14.6,44.5,70,0
+.goto Dragonblight,16.4,48.7
+>>Loot the Crates & kill the Ambushers in the area.
+.complete 11978,1 
+.complete 11980,1 
+step
+.goto Dragonblight,14.21,49.82
+>>Return to Roh'kill
+.turnin 11980 >>Turn in Pride of the Horde
+step
+.goto Dragonblight,13.9,49.7,30,0
+.goto Dragonblight,13.6,49.1,30,0
+.goto Dragonblight,13.3,50.0,30,0
+.goto Dragonblight,12.8,48.2,30,0
+.goto Dragonblight,13.6,47.9
+>>Talk to Emissary Brighthoof circling the inner circle of the camp
+.turnin 11978 >>Turn in Into the Fold
+.accept 11983 >>Accept Blood Oath of the Horde
+step
+.goto Dragonblight,13.41,48.76
+>>Talk to Taunka'le Refugees in the area
+.complete 11983,1 
+.skipgossip
+step
+.goto Dragonblight,13.9,49.7,30,0
+.goto Dragonblight,13.6,49.1,30,0
+.goto Dragonblight,13.3,50.0,30,0
+.goto Dragonblight,12.8,48.2,30,0
+.goto Dragonblight,13.6,47.9
+>>Talk to Emissary Brighthoof circling the inner circle of the camp
+.turnin 11983 >>Turn in Blood Oath of the Horde
+.accept 12008 >>Accept Agmar's Hammer
+step << skip
+.goto Dragonblight,36.61,46.57
+>>Travel to Agmar's Hammer. Talk to Juktok
+.accept 11979 >>Accept The Taunka and the Tauren
+step
+.goto Dragonblight,36.61,46.57
+>>Talk to Juktok
+.accept 12488 >>Accept The High Executor Needs You
+.xp <73,1
+step
+>>Talk to Torvus
+.accept 12033 >>Accept Message From the West
+.goto Dragonblight,37.32,46.79
+.use 35941 >>Click the letter in your bags to burn the letter, or click the Burning Brazier next to the mailbox
+.complete 12033,1 
+.goto Dragonblight,37.35,46.68
+.turnin 12033 >>Turn in Message From the West
+.goto Dragonblight,37.32,46.79
+.isQuestTurnedIn 11916
+
+step
+>>Talk to the Wanted Poster, then talk to the Image of Aethas inside
+.accept 12089 >>Accept Wanted: Magister Keldonus
+.accept 12090 >>Accept Wanted: Gigantaur
+.accept 12091 >>Accept Wanted: Dreadtalon
+.goto Dragonblight,37.67,46.55
+.turnin 12008 >>Turn in Agmar's Hammer
+.accept 12034 >>Accept Victory Nears...
+.goto Dragonblight,38.14,46.34
+.accept 11999 >>Accept Rifle the Bodies
+.goto Dragonblight,38.05,46.22
+
+
+step
+#label aghhs
+#completewith AUnderlord
+.goto Dragonblight,38.19,46.65,15,0
+.goto Dragonblight,38.72,46.71,15,0
+.goto Dragonblight,38.68,45.98,15,0
+.goto Dragonblight,38.19,45.99
+>>Talk to Barracks Master Harga. He can patrol the backrooms and along the first set of stairs
+.home >>Set your Hearth to Agmar's Hammer
+.unitscan Barracks Master Harga
+step
+#requires aghhs
+.goto Dragonblight,37.51,45.77
+>>Go back outside
+.fp Agmar's Hammer >> Get the Agmar's Hammer flight path
+step
+>>Talk to Juktok, Borus, and Gort at the bottom of the tower.
+.turnin 12034 >>Turn in Victory Nears...
+.accept 12036 >>Accept From the Depths of Azjol-Nerub
+.goto Dragonblight,36.61,46.57
+.accept 12039 >>Accept Black Blood of Yogg-Saron
+.goto Dragonblight,36.61,47.19
+.accept 12056 >>Accept Marked for Death: High Cultist Zangus
+.goto Dragonblight,35.81,48.39
+step
+>>Talk to Soar outside.
+.goto Dragonblight,37.10,48.55
+.accept 12100 >>Accept Containing the Rot
+step
+.goto Dragonblight,31.9,45.9,70,0
+.goto Dragonblight,28.8,51.5,70,0
+.goto Dragonblight,23.8,50.0,70,0
+.goto Dragonblight,28.8,51.5,70,0
+.goto Dragonblight,31.9,45.9
+>>Kill Blighted Elks and Rabid Grizzlies. Loot them for the Organ
+.complete 12100,2 
+.complete 12100,1 
+step
+#completewith next
+.goto Dragonblight,26.15,49.48,15 >> Jump down into The Pit of Narjun
+step
+#completewith Kilix
+.goto Dragonblight,26.7,48.1,0
+>>Mine the nodes of Black Blood inside The Pit of Narjun
+.complete 12039,1 
+step
+.goto Dragonblight,26.19,50.78
+>>Talk to Kilix inside The Pit of Narjun
+.accept 12040 >>Accept An Enemy in Arthas
+.complete 12036,1 
+step
+#sticky
+#label AUnderlord
+>>Kill Underlords in The Pit of Narjun
+.goto Dragonblight,28.8,47.2,0,0
+.complete 12040,1 
+step
+.goto Dragonblight,26.7,49.4,20,0
+.goto Dragonblight,28.85,49.72
+>>Take the middle path inside the cave and kill High Cultist Zangus. Loot him for his Head
+.complete 12056,1 
+step
+#label Kilix
+#requires AUnderlord
+>>Return to Kilix inside The Pit of Narjun
+.goto Dragonblight,26.19,50.78
+.turnin 12040 >>Turn in An Enemy in Arthas
+.accept 12041 >>Accept The Lost Empire
+step
+.goto Dragonblight,26.9,49.3,30,0
+.goto Dragonblight,28.8,49.7,30,0
+.goto Dragonblight,28.6,47.0,30,0
+.goto Dragonblight,26.7,48.1
+>>Mine the nodes of Black Blood inside The Pit of Narjun
+.complete 12039,1,8 
+step
+#completewith Trader
+.goto Dragonblight,26.9,49.5,30,0
+.goto Dragonblight,26.7,48.7,15,0
+.goto Dragonblight,26.3,49.0,25 >> Run out of the cave
+step
+#sticky
+#label moonshadow
+#completewith end12006
+.goto Dragonblight,24.19,60.06
+>>Talk to Ethenial at the Moonrest Gardens
+.accept 12006 >>Accept Avenge this Atrocity!
+step
+#completewith Arcanimus
+.goto Dragonblight,22.7,58.1,0
+.goto Dragonblight,23.3,61.3,0
+.goto Dragonblight,25.9,58.7,0
+.use 35792 >>Right click the Dead Mage Hunter bodies scattered around Moonrest Garden. Open their Mage Hunter's Personal Effects
+.complete 11999,1 
+step
+#completewith next
+#requires moonshadow
+.goto Dragonblight,21.6,58.9,50,0
+.goto Dragonblight,21.3,62.5,50,0
+>>Kill the Humanoid/Beast/Dragon mobs throughout the Moonrest Gardens
+.complete 12006,1 
+step
+#label gardenplansmr
+.goto Dragonblight,21.1,64.0
+>>Kill Magister Keldonus. Use your cooldowns. If you're unable to do this, skip this quest.
+.complete 12089,1 
+.isOnQuest 12089
+step
+.goto Dragonblight,19.1,61.6,70,0
+.goto Dragonblight,18.4,57.3,70,0
+.goto Dragonblight,20.0,56.4,70,0
+.goto Dragonblight,22.0,57.9,70,0
+.goto Dragonblight,21.3,62.3
+>>Kill the Humanoid/Beast/Dragon mobs throughout the Moonrest Gardens
+.complete 12006,1 
+step
+#label end12006
+.goto Dragonblight,24.19,60.06
+>>Return to Ethenial
+.turnin 12006 >>Turn in Avenge this Atrocity!
+.accept 12013 >>Accept End Arcanimus
+step
+.goto Dragonblight,20.0,59.7
+>>Run down the ramp and kill Arcanimus
+.complete 12013,1 
+step
+#label Arcanimus
+.goto Dragonblight,24.19,60.06
+>>Return to Ethenial
+.turnin 12013 >>Turn in End Arcanimus
+step
+.goto Dragonblight,22.7,58.1,70,0
+.goto Dragonblight,23.3,61.3,70,0
+.goto Dragonblight,25.9,58.7
+.use 35792 >>Right click the Dead Mage Hunter bodies scattered around Moonrest Garden. Open their Mage Hunter's Personal Effects
+.complete 11999,1 
+step
+#completewith next
+.hs >>Hearth to Agmar's Hammer
+.cooldown item,6948,>0
+step
+>>Return to Agmar's Hammer. Talk to Agmar, Aethas, and Gort
+.turnin 12041 >>Turn in The Lost Empire
+.goto Dragonblight,38.14,46.33
+.turnin 11999 >>Turn in Rifle the Bodies
+.accept 12005 >>Accept Prevent the Accord
+.goto Dragonblight,38.05,46.22
+.turnin 12036 >>Turn in From the Depths of Azjol-Nerub
+.accept 12053 >>Accept The Might of the Horde
+.goto Dragonblight,36.61,46.57
+.turnin 12039 >>Turn in Black Blood of Yogg-Saron
+.accept 12048 >>Accept Scourge Armaments
+.goto Dragonblight,36.61,47.19
+step
+>>Talk to Borus, Soar, Sintar, and Juktok
+.turnin 12100 >>Turn in Containing the Rot
+.accept 12101 >>Accept The Good Doctor...
+.goto Dragonblight,37.09,48.56
+.turnin 12101 >>Turn in The Good Doctor...
+.accept 12102 >>Accept In Search of the Ruby Lilac
+.accept 12189 >>Accept Imbeciles Abound!
+.goto Dragonblight,36.08,48.84
+.turnin 12056 >>Turn in Marked for Death: High Cultist Zangus
+.goto Dragonblight,35.81,48.39
+step
+.turnin 12089 >>Turn in Wanted: Magister Keldonus
+.goto Dragonblight,35.81,48.39
+.isQuestComplete 12089
+step
+.goto Dragonblight,36.1,45.2
+.abandon 12089
+step
+>>Talk to Icemist
+.accept 12063 >>Accept Strength of Icemist
+.goto Dragonblight,35.8,46.9,50,0
+.goto Dragonblight,36.0,45.9,50,0
+.goto Dragonblight,36.1,45.2
+step
+#sticky
+#label scarms
+.goto Dragonblight,23.3,42.8,0,0
+>>Kill the Anub'ar around Icemist Village. Loot them for their Armaments
+.complete 12048,1 
+step
+#label Icemist
+.goto Dragonblight,22.60,41.73
+>>Talk to Banthok next to the campfire in the river
+.turnin 12063 >>Turn in Strength of Icemist
+.accept 12064 >>Accept Chains of the Anub'ar
+step
+#sticky
+#label fbtome
+.goto Dragonblight,23.2,44.8,60,0
+.goto Dragonblight,24.2,46.2,0,0
+.use 36744 >>Kill Anub'ar Cultists in Icemist Village. Loot them for The Flesh-Bound Tome. Click it in your bags
+.collect 36744,1,12057,1 
+.accept 12057 >>Accept The Flesh-Bound Tome
+step
+.goto Dragonblight,25.0,44.6,15,0
+.goto Dragonblight,25.0,43.9
+>>Go into the small cave just below Sinok's spawn and kill Anok'ra and loot him for his fragment
+.complete 12064,1 
+step
+.goto Dragonblight,26.6,42.5,40,0
+.goto Dragonblight,26.77,39.05,20,0
+.goto Dragonblight,23.87,39.13
+>>Go up the mountain into Icemist, then into the building. Kill Tivax and loot him for his fragment
+*He spawns in two different buildings.
+.complete 12064,2 
+step
+.goto Dragonblight,25.54,40.80
+.use 36738 >> Use the Warsong Battle Standard in your bags. Protect it. It doesn't have a lot of health so quickly kill the mobs that spawn.
+.complete 12053,1 
+step
+.goto Dragonblight,26.2,44.4,50,0
+.goto Dragonblight,23.9,44.6
+>>Check the wooden balcony area of Icemist. Kill Sinok and loot him for his fragment
+.complete 12064,3 
+.unitscan Sinok the Shadowrager
+step
+.goto Dragonblight,22.60,41.73
+>>Return to Banthok next to the campfire in the river
+.turnin 12064 >>Turn in Chains of the Anub'ar
+.accept 12069 >>Accept Return of the High Chief
+step
+#completewith next
+.groundgoto Dragonblight,22.7,39.4,25 >>Swim north. Take the ramp to the north-west side of the village
+step
+#completewith next
+.goto Dragonblight,25.6,40.9
+.cast 47412 >>Click the Anub'ar Mechanism to set Roanuk free
+step
+.goto Dragonblight,25.12,39.76
+>>Follow Roanuk after freeing him. Kill Under-King Anub'et'kan. Loot him for his Husk
+.complete 12069,1 
+step
+#requires scarms
+step
+#label Trader
+.goto Dragonblight,18.39,58.89
+>>Kill Wind Trader Mu'Fah at the western entrance of the broken temple. Loot him for his Remains
+.complete 12005,1 
+step
+.goto Dragonblight,19.46,58.03
+>>Enter the temple and go up the ramp to the left. Kill Goramosh and loot him for his Scales and Strange Device
+.complete 12005,2 
+.collect 36746,1,12059 
+.use 36746 >> Right click on Goramosh's Strange Device in your bags
+.accept 12059 >>Accept A Strange Device
+step
+#completewith next
+.hs >>Hearth to Agmar's Hammer
+.cooldown item,6948,>0
+step
+.goto Dragonblight,38.1,46.3
+>>Talk to Aethas and Agmar
+.turnin 12005 >>Turn in Prevent the Accord
+.turnin 12059 >>Turn in A Strange Device
+.accept 12061 >>Accept Projections and Plans
+.goto Dragonblight,38.05,46.22
+.turnin 12069 >>Turn in Return of the High Chief
+.accept 12140 >>Accept All Hail Roanauk!
+.goto Dragonblight,38.07,46.34
+step
+#sticky
+#label roanarp
+.goto Dragonblight,36.26,45.45,9,0
+>>Speak to Roanauk Icemist to start his RP. You don't need to wait around for this to complete (it should take 40 seconds)
+.complete 12140,1 
+.skipgossip
+.timer 40,All Hail Roanauk! RP
+step
+>>Talk to Juktok and Borus
+.turnin 12053 >>Turn in The Might of the Horde
+.accept 12071 >>Accept Attack by Air!
+.goto Dragonblight,36.61,46.57
+.turnin 12048 >>Turn in Scourge Armaments
+.goto Dragonblight,36.61,47.19
+step
+#requires fbtome
+.goto Dragonblight,35.81,48.39
+>>Return to Agmar's Hammer. Talk to Gort
+.turnin 12057 >>Turn in The Flesh-Bound Tome
+.accept 12115 >>Accept Koltira and the Language of Death
+step
+.goto Dragonblight,36.1,45.9,30,0
+.goto Dragonblight,37.2,47.1,30,0
+.goto Dragonblight,36.1,47.6
+>>Talk to Koltira patrolling clockwise in the inner and outer circle
+.turnin 12115 >>Turn in Koltira and the Language of Death
+.accept 12125 >>Accept In Service of Blood
+.accept 12126 >>Accept In Service of the Unholy
+.accept 12127 >>Accept In Service of Frost
+.unitscan Koltira Deathweaver
+step
+.goto Dragonblight,37.21,45.71
+>>Talk to Valnok
+.turnin 12071 >>Turn in Attack by Air!
+.accept 12072 >>Accept Blightbeasts be Damned!
+step
+#requires roanarp
+step
+.goto Dragonblight,27.67,45.19
+#completewith next
+.use 36774
+.vehicle >>Use Valnok's Flare Gun in your bags while inside Icemist Village. Mount the War Rider
+step
+.goto Dragonblight,27.7,37.5,60,0
+.goto Dragonblight,24.3,37.2
+>>Use "Big Blue" (2) then "Blightbeast Bane" (1) on cooldown to kill the flying Anub'ar. Use "Field Medi-pack" (3) to heal your rider.
+.complete 12072,1,10 
+step
+.goto Dragonblight,26.6,46.8,70,0
+.goto Dragonblight,24.2,47.7
+>>Use "Big Blue" (2) then "Blightbeast Bane" (1) on cooldown to kill the flying Anub'ar. Use "Field Medi-pack" (3) to heal your rider.
+.complete 12072,1 
+step
+#completewith next
+.vehicle >> Use the Kor'Kron War Rider to travel much faster until it throws you off. Stay close to the ground
+.use 36774
+.cooldown item,36774,>0
+step
+.use 36747 >>Use your Surge Needle Teleporter anywhere in the Moonrest Gardens
+.goto Dragonblight,19.5,59.6
+.complete 12061,1 
+step
+#completewith next
+.goto Dragonblight,17.6,59.0,0,0
++Use your Surge Needle Teleporter again to return to the ground
+.use 36747
+step
+>>Return to Agmar's Hammer.
+.turnin 12061 >>Turn in Projections and Plans
+.accept 12066 >>Accept The Focus on the Beach
+.goto Dragonblight,38.03,46.29
+step
+#completewith next
+.use 36751 >>Kill Captain Emmy Malin. Loot her for the Ley Line Focus Control Ring
+.collect 36751,1,12066,1 
+.goto Dragonblight,26.32,64.85
+.unitscan Captain Emmy Malin
+step
+.use 36751 >>Use the Ring in your bags next to the Ley Line Focus
+.complete 12066,1 
+.goto Dragonblight,26.5,65.2
+step
+#completewith next
+.groundgoto Dragonblight,27.9,66.5,30,0
+.groundgoto Dragonblight,28.9,66.1,20,0
+.groundgoto Dragonblight,29.7,67.0,40 >> Take the purple path up to the Lothalor Woodlands
+step
+.goto Dragonblight,35.69,65.85,40,0
+.goto Dragonblight,37.85,66.03
+.use 36827 >>Damage a Deranged Indu'le Villager to 35% or less health. Use the Blood Gem in your bags on him.
+.complete 12125,1 
+.unitscan Deranged Indu'le Villager
+step
+#sticky
+#label Koltira2
+.goto Dragonblight,36.1,45.9,30,0
+.goto Dragonblight,37.2,47.1,30,0
+.goto Dragonblight,36.1,47.6
+>>Talk to Koltira patrolling clockwise in the inner and outer circle
+.turnin 12125 >>Turn in In Service of Blood
+step
+>>Return to Agmar's Hammer. Talk to Valnok, then go inside and talk to Agmar and Aethis
+.turnin 12072 >>Turn in Blightbeasts be Damned!
+.goto Dragonblight,37.21,45.71
+.turnin 12066 >>Turn in The Focus on the Beach
+.accept 12084 >>Accept Atop the Woodlands
+.goto Dragonblight,38.05,46.22
+.turnin 12140 >>Turn in All Hail Roanauk!
+.goto Dragonblight,38.07,46.34
+step
+>>Talk to Grife
+.goto Dragonblight,36.51,47.87
+.accept 12096 >>Accept Strengthen the Ancients
+step
+#requires Koltira2
+.goto Dragonblight,33.8,60.2,70,0
+.goto Dragonblight,36.2,61.7,70,0
+.goto Dragonblight,30.6,66.7,70,0
+.goto Dragonblight,34.3,68.3,70,0
+.goto Dragonblight,29.8,71.4
+>>Look for Woodland Walkers around Lothalor Woodlands & speak to them to receive a Bark of the Walkers. Kill them if they turn hostile to loot their Bark.
+.use 36786 >>Use the Bark of the Walkers on the Lothalor Ancients around the area
+.collect 36786,3,12096,0x1,-1
+.complete 12096,1 
+.skipgossip
+step
+.goto Dragonblight,33.1,71.5,60,0
+.goto Dragonblight,32.4,72.7,60,0
+.goto Dragonblight,31.5,72.0,60,0
+.goto Dragonblight,31.9,70.4
+.use 36780 >>Kill Lieutenant Ta'zinni. He is a troll that patrols around the purple ring in a 50 yard radius. Loot him for the Ley Line Focus Control Amulet and Letter. Click it in your bags
+.collect 36779,1,12084,1 
+.collect 36780,1,12085,1 
+.accept 12085 >>Accept A Letter for Home
+.unitscan Lieutenant Ta'zinni
+step
+.goto Dragonblight,32.2,71.4
+.use 36779 >>Use the Ley Line Focus Control Amulet in your bags next to the big metal ring with purple runes
+.complete 12084,1 
+step
+.goto Dragonblight,48.52,74.39
+>>Travel to Moa'ki Harbor
+.fp Moa'ki >> Get the Moa'ki Harbor flight path
+step
+#completewith Konani
+.turnin 12117 >>Turn in Travel to Moa'ki Harbor
+.isOnQuest 12117
+step
+#completewith next
+.turnin 12118 >>Turn in Travel to Moa'ki Harbor
+.isOnQuest 12118
+step
+#label Konani
+>>Talk to Ko'nani and then talk to Mau'i outside
+.accept 11958 >>Accept Let Nothing Go To Waste
+.goto Dragonblight,47.99,74.87
+.accept 11960 >>Accept Planning for the Future
+.goto Dragonblight,48.25,74.35
+
+step
+#sticky
+#label GladePups
+.goto Dragonblight,47.4,64.3,40,0
+.goto Dragonblight,47.2,61.5,40,0
+.goto Dragonblight,45.2,61.6
+>>Right click the small Wolvar Pups located near the huts
+.complete 11960,1 
+.isOnQuest 11960
+step
+.goto Dragonblight,43.6,58.8
+>>Kill the Wolvar around Snowfall Glade. Loot them for their Goods
+.complete 11958,1 
+step
+#requires GladePups
+>>Return to Moa'ki Harbor and talk to Mau'i outside, then Ko'nani inside the hut
+.turnin 11960 >>Turn in Planning for the Future
+.goto Dragonblight,48.25,74.35
+.turnin 11958 >>Turn in Let Nothing Go To Waste
+.accept 11959 >>Accept Slay Loguhn
+.goto Dragonblight,47.99,74.87
+step
+.goto Dragonblight,52.1,70.3,70,0
+.goto Dragonblight,51.0,66.8,60,0
+.goto Dragonblight,51.1,64.9,60,0
+.goto Dragonblight,48.5,63.5,60,0
+.goto Dragonblight,47.5,62.2,60,0
+.goto Dragonblight,45.0,62.7,60,0
+.goto Dragonblight,44.3,57.9,60,0
+.goto Dragonblight,45.8,57.6,60,0
+.goto Dragonblight,47.0,57.9,60,0
+.goto Dragonblight,48.2,60.8,60,0
+.goto Dragonblight,51.4,63.6,60,0
+.goto Dragonblight,52.1,70.3,70,0
+.goto Dragonblight,51.0,66.8,60,0
+.goto Dragonblight,51.1,64.9,60,0
+.goto Dragonblight,48.5,63.5,60,0
+.goto Dragonblight,47.5,62.2,60,0
+.goto Dragonblight,45.0,62.7,60,0
+.goto Dragonblight,44.3,57.9,60,0
+.goto Dragonblight,45.8,57.6,60,0
+.goto Dragonblight,47.0,57.9,60,0
+.goto Dragonblight,48.2,60.8,60,0
+.goto Dragonblight,51.4,63.6,60,0
+.goto Dragonblight,52.1,70.3
+>>Kill Gigantaur. He patrols clockwise around Snowfall Glade. Skip this if you're unable to kill him.
+.complete 12090,1 
+.unitscan Gigantaur
+.isOnQuest 12090
+step
+.goto Dragonblight,46.34,59.13
+>>Kill Loguhn. Loot him for his Blood
+.collect 35688,1,11959,1 
+.use 35688 >>Use the Blood of Loguhn in your bags
+.complete 11959,1 
+step
+#sticky
+#label Lilac
+.groundgoto Dragonblight,46.42,56.28,30,0
+.groundgoto Dragonblight,47.89,49.64,30,0
+.goto Dragonblight,47.68,49.06
+>>Enter the cave under the big tree. Loot the Ruby Lilac on the ground
+.complete 12102,1 
+step
+.goto Dragonblight,47.68,49.06
+.use 37833 >>Kill Dahlia Suntouch and loot the Ruby Brooch. Accept the quest from the Brooch.
+.collect 37833,1,12419,1
+.accept 12419 >>Accept The Fate of the Ruby Dragonshrine
+step
+#requires Lilac
+.goto Dragonblight,48.0,50.7,60,0
+.goto Dragonblight,46.6,49.9,60,0
+.goto Dragonblight,46.7,47.9,60,0
+.goto Dragonblight,48.4,46.2,60,0
+.goto Dragonblight,47.0,46.0,60,0
+.goto Dragonblight,45.7,48.7,60,0
+.goto Dragonblight,46.5,51.7
+.use 36835 >>Find Duke Vallenhal patrolling the west side of the Dragonshrine. Damage him to 35% or less health. Use your Unholy Gem in your bags on him.
+.complete 12126,1 
+.unitscan Duke Vallenhal
+step
+.groundgoto Dragonblight,46.92,41.68,50,0
+.groundgoto Dragonblight,46.22,40.95,40,0
+.goto Dragonblight,45.84,44.52
+>>Go into the snowy crevices to the north then follow the path to the top of the mountain. Kill Dreadtalon atop the mountain. Skip this if you're unable to kill him
+.complete 12091,1 
+step
+>>Return to Agmar's Hammer. Talk to Aethas and Agmar
+.turnin 12084 >>Turn in Atop the Woodlands
+.accept 12106 >>Accept Search Indu'le Village
+.goto Dragonblight,38.05,46.22
+.turnin 12085 >>Turn in A Letter for Home
+.goto Dragonblight,38.07,46.34
+step
+#sticky
+#label Koltira3
+.goto Dragonblight,36.1,45.9,30,0
+.goto Dragonblight,37.2,47.1,30,0
+.goto Dragonblight,36.1,47.6
+>>Talk to Koltira patrolling clockwise in the inner and outer circle
+.turnin 12126 >>Turn in In Service of the Unholy
+step
+>>Talk to Grife
+.turnin 12096 >>Turn in Strengthen the Ancients
+.goto Dragonblight,36.51,47.87
+step
+>>Go inside and talk to Gort
+.turnin 12090 >>Turn in Wanted: Gigantaur
+.turnin 12091 >>Turn in Wanted: Dreadtalon
+.goto Dragonblight,35.81,48.39
+.isQuestComplete 12090
+.isQuestComplete 12091
+step
+>>Go inside and talk to Gort
+.turnin 12091 >>Turn in Wanted: Dreadtalon
+.goto Dragonblight,35.81,48.39
+.isQuestComplete 12091
+step
+>>Go inside and talk to Gort
+.turnin 12090 >>Turn in Wanted: Gigantaur
+.goto Dragonblight,35.81,48.39
+.isQuestComplete 12090
+step
+.goto Dragonblight,35.81,48.39
+>>Talk to Gort again
+.accept 12095 >>Accept To Dragon's Fall
+.isQuestTurnedIn 12089
+.isQuestTurnedIn 12090
+.isQuestTurnedIn 12091
+step
+.abandon 12090 >>Abandon WANTED: Gigantaur
+step
+.abandon 12091 >>Abandon Wanted: Dreadtalon
+step
+>>Talk to Sintar then talk to Soar outside.
+.turnin 12102 >>Turn in In Search of the Ruby Lilac
+.accept 12104 >>Accept Return to Soar
+.goto Dragonblight,36.08,48.89
+.turnin 12104 >>Turn in Return to Soar
+.accept 12111 >>Accept Where the Wild Things Roam
+.goto Dragonblight,37.08,48.55
+step
+.goto Dragonblight,36.09,48.86
+.turnin 12102 >>Turn in In Search of the Ruby Lilac
+.accept 12104 >>Accept Return to Soar
+step
+#requires Koltira3
+.goto Dragonblight,39.6,50.2,50,0
+.goto Dragonblight,38.3,56.8,50,0
+.goto Dragonblight,41.3,47.8,50,0
+.goto Dragonblight,38.3,56.8,50,0
+.goto Dragonblight,41.3,47.8
+.use 36818 >>Use the Pack of Vaccines in your bags on Snowfall Elks and Grizzlies
+.complete 12111,1 
+.complete 12111,2 
+step
+.goto Dragonblight,37.08,48.55
+>>Return to Soar
+.turnin 12111 >>Turn in Where the Wild Things Roam
+step
+#completewith next
+.goto Dragonblight,37.51,45.76
+.fly Moa'ki >>Fly to Moa'ki Harbor
+step
+#completewith Kili
+.goto Dragonblight,48.15,74.76
+.home >>Set your Hearth to Mao'ki Harbor
+step
+.goto Dragonblight,47.99,74.87
+>>Talk to Ko'nani inside the hut
+.turnin 11959 >>Turn in Slay Loguhn
+step
+.goto Dragonblight,48.00,76.15,20,0
+.goto Dragonblight,47.7,76.6
+>>Talk to Tua'kea on the shore
+.accept 12009 >>Accept Tua'kea's Crab Traps
+step
+.goto Dragonblight,49.14,75.69
+>>Talk to Toalu'u inside the hut
+.accept 12028 >>Accept Spiritual Insight
+step
+.goto Dragonblight,48.96,75.79
+.use 35907 >> Use the Toalu'u's Spiritual Incense in your bags next to the brazier right outside his hut. Wait out the RP event
+.cast 47190
+.timer 160,Spiritual Insight RP
+.complete 12028,1 
+step
+.goto Dragonblight,49.12,75.66
+>>Return to Toalu'u
+.turnin 12028 >>Turn in Spiritual Insight
+.accept 12030 >>Accept Elder Mana'loa
+step
+.isQuestTurnedIn 11559
+#completewith next
+.use 38351 >>Use a Murliver Oil to increase your swim speed when needed.
+.itemcount 38351,1
+step
+#completewith Kili
+.goto Dragonblight,46.5,76.2,0
+>>Loot the small crab traps laying on the sea floor just south of Moa'ki Harbor
+.complete 12009,1 
+step
+.goto Dragonblight,47.72,79.99
+.use 37265 >> Use the Breathing Bladder in your bags. Click on the Wrecked Crab Trap on the sea floor
+.accept 12011 >>Accept Signs of Big Watery Trouble
+step
+.goto Dragonblight,47.7,76.6,20,0
+.goto Dragonblight,48.00,76.15
+>>Return to Tua'kea
+.turnin 12011 >>Turn in Signs of Big Watery Trouble
+.accept 12016 >>Accept The Bait
+step
+.isQuestTurnedIn 11559
+#completewith next
+.use 38351 >>Use a Murliver Oil to increase your swim speed when needed.
+.itemcount 38351,1
+step
+#label Kili
+.goto Dragonblight,43.9,82.7,60,0
+.goto Dragonblight,42.0,80.0
+>>Kill Kili'ua, the big crab that patrols the island. Loot him for his Pincers
+.complete 12016,1 
+.unitscan Kili'ua
+step
+.goto Dragonblight,46.5,76.2,60,0
+.goto Dragonblight,48.6,79.7,60,0
+.goto Dragonblight,50.4,79.3
+.use 37265 >>Finish looting the small crab traps laying on the sea floor just south of Moa'ki Harbor
+.complete 12009,1 
+step
+.goto Dragonblight,47.7,76.6,20,0
+.goto Dragonblight,48.00,76.15
+>>Return to Tua'kea
+.turnin 12009 >>Turn in Tua'kea's Crab Traps
+.isQuestComplete 12009
+step
+>>Return to Tua'kea
+.goto Dragonblight,47.7,76.6,20,0
+.goto Dragonblight,48.00,76.15
+.turnin 12016 >>Turn in The Bait
+.accept 12017 >>Accept Meat on the Hook
+step
+.isQuestTurnedIn 11559
+#completewith next
+.use 38351 >>Use a Murliver Oil to increase your swim speed when needed.
+.itemcount 38351,1
+step
+.goto Dragonblight,46.74,78.18
+.use 35838 >> Place Tu'u'gwar's Bait in your bags on the fishing hook underwater to summon Tu'u'gwar. Kill him
+.cast 47159
+.timer 21,Tu'u'gwar RP
+.complete 12017,1 
+step
+.goto Dragonblight,48.01,76.17
+>>Return to Tua'kea
+.turnin 12017 >>Turn in Meat on the Hook
+step
+#completewith next
+.groundgoto Dragonblight,48.4,67.7,90 >> Take the northern path out of Moa'ki Harbor
+step
+#label Evenstar
+.goto Dragonblight,40.25,66.86
+.use 37265 >>Use the Breathing Bladder in your bags
+>>Dive into the lake and talk to Mage-Commander Evenstar
+.turnin 12106 >>Turn in Search Indu'le Village
+.accept 12110 >>Accept The End of the Line
+.unitscan Mage-Commander Evenstar
+step
+.isQuestTurnedIn 11559
+#completewith next
+.use 38351 >>Use a Murliver Oil to increase your swim speed when needed.
+.itemcount 38351,1
+step
+.goto Dragonblight,39.76,67.03
+.use 36815 >>Use the Control Talisman in your bags near the Ley Line Focus
+.complete 12110,1 
+step
+#requires Evenstar
+.goto Dragonblight,36.63,64.96
+>>Talk to the big stone. Try to avoid killing mobs en route
+.turnin 12030 >>Turn in Elder Mana'loa
+.accept 12031 >>Accept Freedom for the Lingering
+step
+.goto Dragonblight,36.5,65.5,50,0
+.goto Dragonblight,37.0,70.8,50,0
+.goto Dragonblight,42.1,71.1,50,0
+.goto Dragonblight,41.4,63.7
+>>Kill the undead Tuskarr ghosts around Lake Indu'le
+.complete 12031,1 
+step
+.goto Dragonblight,36.63,64.96
+>>Return to the big stone
+.turnin 12031 >>Turn in Freedom for the Lingering
+.accept 12032 >>Accept Conversing With the Depths
+step
+.goto Dragonblight,34.5,80.1,40,0
+.goto Dragonblight,35.1,82.5,40,0
+.waypoint Dragonblight,34.11,84.76,-47098,wpbuff,UNIT_AURA
+.goto Dragonblight,33.97,83.48
+>>Click on the altar and wait for the RP. Once you get the Oacha'noa's Compulsion buff, you'll have 30 seconds to jump in the water where Oacha'noa is.
+
+.complete 12032,1 
+step << Druid
+#completewith DruidTrain1
+.cast 18960 >> Cast Teleport: Moonglade
+.zoneskip Moonglade
+.xp <72,1
+step << Druid
+.goto Moonglade,52.4,40.6
+>>Go to Moonglade
+.train 48464 >> Train your class spells
+.xp <72,1
+step << Druid
+#label DruidTrain1
+.goto Moonglade,52.4,40.6
+>>Go to Moonglade
+.train 53307 >> Train your class spells
+.xp <74,1
+step << DK
+#completewith DKTrain1
+.cast 50977 >> Cast Death Gate
+.zoneskip Eastern Plaguelands
+.xp <72,1
+step << DK
+.goto Eastern Plaguelands,80.3,48.0
+>>Go through the Death Gate
+.train 49940 >> Train your class spells from Amal'Thazad in Acherus
+.xp <72,1
+step << DK
+.goto Eastern Plaguelands,80.3,48.0
+>>Go through the Death Gate
+.train 49904 >> Train your class spells from Amal'Thazad in Acherus
+.xp <73,1
+step << DK
+#label DKTrain1
+.goto Eastern Plaguelands,80.3,48.0
+>>Go through the Death Gate
+.train 49929 >> Train your class spells from Amal'Thazad in Acherus
+.xp <74,1
+step << Mage
+#completewith MageTrain1
+.zone Undercity >> Teleport to Undercity
+.xp <72,1
+step << Mage
+.goto Undercity,85.1,10.0
+.train 42930 >> Train your class spells
+.xp <72,1
+step << Mage
+.goto Undercity,85.1,10.0
+.train 43019 >> Train your class spells
+.xp <73,1
+step << Mage
+#label MageTrain1
+.goto Undercity,85.1,10.0
+.train 42939 >> Train your class spells
+.xp <74,1
+step
+#completewith next
+.hs >>Hearth to Moa'ki Harbor
+step
+.goto Dragonblight,49.12,75.66
+>>Talk to Toalu'u inside the hut
+.turnin 12032 >>Turn in Conversing With the Depths
+step
+.goto Dragonblight,53.07,66.83
+>>Stand near the outer perimiter of the canyon
+.complete 12110,2 
+step
+.goto Dragonblight,60.32,51.55
+>>Travel to Wyrmrest Temple
+.fp Wyrmrest Temple >> Get the Wyrmrest Temple flight path
+step
+.goto Dragonblight,57.90,54.17
+#completewith next
+.fly >> Speak to Tariolstrasz and fly to the top of the temple
+.maxlevel 79
+.skipgossip 1
+step
+>>Atop Wyrmrest Temple, talk to Itharius, Chromie, and Nalice
+.accept 12458 >>Accept Seeds of the Lashers
+.goto Dragonblight,59.60,54.47
+.accept 12470 >>Accept Mystery of the Infinite
+.goto Dragonblight,60.00,54.51
+.accept 12447 >>Accept The Obsidian Dragonshrine
+.goto Dragonblight,60.07,54.20
+step
+.goto Dragonblight,59.8,54.7
+>>Talk to Krasus
+.turnin 12419 >>Turn in The Fate of the Ruby Dragonshrine
+.isOnQuest 12419
+step
+#completewith next
+.goto Dragonblight,59.53,53.31
+.fly >> Speak to Torastrasza and fly back down to the ground level
+.maxlevel 79
+.skipgossip 1
+step
 .goto Dragonblight,76.48,62.20
 .fp Venomspite >> Get the Venomspite flight path
 step
->>Talk to Quartermaster, the Wanted Poster, and Vicky in Venomspite
-.accept 12209 >>Accept Materiel Plunder
+>>Talk to Bartlett, the Wanted Poster, and Vicky in Venomspite
 .accept 12303 >>Accept Funding the War Effort
+.accept 12209 >>Accept Materiel Plunder
 .goto Dragonblight,75.97,63.26
 .accept 12205 >>Accept Wanted: The Scarlet Onslaught
 .goto Dragonblight,76.95,62.85
@@ -38413,12 +42095,24 @@ step
 .goto Dragonblight,76.87,63.13
 .home >>Set your Hearth to Venomspite
 step
+>>Talk to Wroth
+.goto Dragonblight,76.80,63.21
+.turnin 12488 >>Turn in The High Executor Needs You
+.isOnQuest 12488
+step
 .goto Dragonblight,77.58,62.47,12,0
 .goto Dragonblight,77.67,62.79
 >>Go inside the building. Talk to Middleton
 .accept 12188 >>Accept The Forsaken Blight and You: How Not to Die
 .turnin 12182 >>Turn in To Venomspite!
 .isOnQuest 12182
+step
+.goto Dragonblight,77.58,62.47,12,0
+.goto Dragonblight,77.67,62.79
+>>Go inside the building. Talk to Middleton
+.accept 12188 >>Accept The Forsaken Blight and You: How Not to Die
+.turnin 12189 >>Turn in Imbeciles Abound!
+.isOnQuest 12189
 step
 .goto Dragonblight,77.58,62.47,12,0
 .goto Dragonblight,77.67,62.79
@@ -38496,9 +42190,10 @@ step
 #requires Stands
 #completewith next
 .hs >>Hearth back to Venomspite
+.cooldown item,6948,>0
 step
 #requires Stands
->>Talk to Wroth inside the Inn, then climb up the stairs to Repine
+>>Talk to Wroth inside the Inn then climb up the stairs to talk to Repine
 .turnin 12205 >>Turn in Wanted: The Scarlet Onslaught
 .goto Dragonblight,76.77,63.28
 .accept 12245 >>Accept No Mercy for the Captured
@@ -38532,918 +42227,25 @@ step
 .accept 12230 >>Accept Stealing from the Siegesmiths
 step
 >>Talk to Bartlett and Hansel
-.turnin 12209 >>Turn in Materiel Plunder
 .turnin 12303 >>Turn in Funding the War Effort
+.turnin 12209 >>Turn in Materiel Plunder
 .goto Dragonblight,75.97,63.26
 .accept 12214 >>Accept Fresh Remounts
 .goto Dragonblight,75.93,61.89
 step
-.goto Dragonblight,60.32,51.55
->>Travel to Wyrmrest Temple
-.fp Wyrmrest Temple >> Get the Wyrmrest Temple flight path
-step
-.goto Dragonblight,57.90,54.17
-#completewith next
-.fly >> Speak to Tariolstrasz and fly to the top of the temple
-.maxlevel 79
-.skipgossip 1
-step
->>Atop Wyrmrest Temple, talk to Itharius, Chromie, and Nalice
-.accept 12458 >>Accept Seeds of the Lashers
-.goto Dragonblight,59.60,54.47
-.accept 12470 >>Accept Mystery of the Infinite
-.goto Dragonblight,60.00,54.51
-.accept 12447 >>Accept The Obsidian Dragonshrine
-.goto Dragonblight,60.07,54.20
-step
-#completewith next
-.goto Dragonblight,59.53,53.31
-.fly >> Speak to Torastrasza and fly back down to the ground level
-.maxlevel 79
-.skipgossip 1
-step
-.goto Dragonblight,48.52,74.39
->>Travel to Moa'ki Harbor
-.fp Moa'ki Harbor >> Get the Moa'ki Harbor flight path
-step
-#completewith Konani
-.turnin 12117 >>Turn in Travel to Moa'ki Harbor
-.isOnQuest 12117
-step
-#completewith next
-.turnin 12118 >>Turn in Travel to Moa'ki Harbor
-.isOnQuest 12118
-step
-#label Konani
->>Talk to Ko'nani and Ripfang inside the building, then talk to Mau'i outside
-.accept 11958 >>Accept Let Nothing Go To Waste
-.goto Dragonblight,47.99,74.87
-.accept 11996 >>Accept Your Presence is Required at Agmar's Hammer
-.goto Dragonblight,47.99,74.77
-.accept 11960 >>Accept Planning for the Future
-.goto Dragonblight,48.25,74.35
-
-step
-#sticky
-#label GladePups
-.goto Dragonblight,47.4,64.3,40,0
-.goto Dragonblight,47.2,61.5,40,0
-.goto Dragonblight,45.2,61.6
->>Right click the small Wolvar Pups located near the huts
-.complete 11960,1 
-step
-.goto Dragonblight,43.6,58.8
->>Kill the Wolvar around Snowfall Glade. Loot them for their Goods
-.complete 11958,1 
-step
-#requires GladePups
-.goto Dragonblight,36.61,46.57
->>Travel to Agmar's Hammer. Talk to Juktok
-.accept 11979 >>Accept The Taunka and the Tauren
-.accept 12488 >>Accept The High Executor Needs You
-.xp 73,1
-step
-#requires GladePups
-.goto Dragonblight,36.61,46.57
->>Travel to Agmar's Hammer. Talk to Juktok
-.accept 11979 >>Accept The Taunka and the Tauren
-step
->>Talk to Torvus
-.accept 12033 >>Accept Message From the West
-.goto Dragonblight,37.32,46.79
-.use 35941 >>Click the letter in your bags to burn the letter, or click the Burning Brazier next to the mailbox
-.complete 12033,1 
-.goto Dragonblight,37.35,46.68
-.turnin 12033 >>Turn in Message From the West
-.goto Dragonblight,37.32,46.79
-.isQuestTurnedIn 11916
-
-step
->>Talk to the Wanted Poster, then talk to the Image of Aethas inside
-.accept 12089 >>Accept Wanted: Magister Keldonus
-.accept 12090 >>Accept Wanted: Gigantaur
-.accept 12091 >>Accept Wanted: Dreadtalon
-.goto Dragonblight,37.67,46.55
-.turnin 11996 >>Turn in Your Presence is Required at Agmar's Hammer
-.accept 11999 >>Accept Rifle the Bodies
-.goto Dragonblight,38.05,46.22
-step
-#completewith moonshadow
-.goto Dragonblight,38.19,46.65,15,0
-.goto Dragonblight,38.72,46.71,15,0
-.goto Dragonblight,38.68,45.98,15,0
-.goto Dragonblight,38.19,45.99
->>Talk to Barracks Master Harga. He can patrol the backrooms and along the first set of stairs
-.home >>Set your Hearth to Agmar's Hammer
-.unitscan Barracks Master Harga
-step
-.goto Dragonblight,37.51,45.77
->>Go back outside
-.fp Agmar's Hammer >> Get the Agmar's Hammer flight path
-step
-.goto Dragonblight,14.21,49.82
->>Travel to the Westwind Refugee Camp. Talk to Roh'kill
-.accept 11980 >>Accept Pride of the Horde
-step
-.goto Dragonblight,13.9,49.7,30,0
-.goto Dragonblight,13.6,49.1,30,0
-.goto Dragonblight,13.3,50.0,30,0
-.goto Dragonblight,12.8,48.2,30,0
-.goto Dragonblight,13.6,47.9
->>Talk to Emissary Brighthoof circling the inner circle of the camp
-.turnin 11979 >>Turn in The Taunka and the Tauren
-.accept 11978 >>Accept Into the Fold
-.unitscan Emissary Brighthoof
-step
-#questguide
-.goto Dragonblight,12.7,51.7
-.turnin 11930 >>Turn in Across Transborea
-.isOnQuest 11930
-step
-.goto Dragonblight,16.0,52.4,70,0
-.goto Dragonblight,17.8,46.9,70,0
-.goto Dragonblight,14.6,44.5,70,0
-.goto Dragonblight,16.4,48.7,70,0
-.goto Dragonblight,16.0,52.4,70,0
-.goto Dragonblight,17.8,46.9,70,0
-.goto Dragonblight,14.6,44.5,70,0
-.goto Dragonblight,16.4,48.7
->>Loot the Crates in the area
->>Kill the Ambushers in the area
-.complete 11978,1 
-.complete 11980,1 
-step
-.goto Dragonblight,14.21,49.82
->>Return to Roh'kill
-.turnin 11980 >>Turn in Pride of the Horde
-step
-.goto Dragonblight,13.9,49.7,30,0
-.goto Dragonblight,13.6,49.1,30,0
-.goto Dragonblight,13.3,50.0,30,0
-.goto Dragonblight,12.8,48.2,30,0
-.goto Dragonblight,13.6,47.9
->>Talk to Emissary Brighthoof circling the inner circle of the camp
-.turnin 11978 >>Turn in Into the Fold
-.accept 11983 >>Accept Blood Oath of the Horde
-step
-.goto Dragonblight,13.41,48.76
->>Talk to Taunka'le Refugees in the area
-.complete 11983,1 
+>>Talk to Scrivener, Schneider, Burke, and Amai in the area. Kill them. Try to avoid killing Mounted Onslaught Knights
+.complete 12245,4 
+.goto Dragonblight,72.63,72.58
+.complete 12245,1 
+.goto Dragonblight,71.41,72.17
+.complete 12245,3 
+.goto Dragonblight,72.72,74.34
+.complete 12245,2 
+.goto Dragonblight,69.37,73.95
 .skipgossip
 step
-.goto Dragonblight,13.9,49.7,30,0
-.goto Dragonblight,13.6,49.1,30,0
-.goto Dragonblight,13.3,50.0,30,0
-.goto Dragonblight,12.8,48.2,30,0
-.goto Dragonblight,13.6,47.9
->>Talk to Emissary Brighthoof circling the inner circle of the camp
-.turnin 11983 >>Turn in Blood Oath of the Horde
-.accept 12008 >>Accept Agmar's Hammer
-step
-#sticky
-#label moonshadow
-#completewith end12006
-.goto Dragonblight,24.19,60.06
->>Talk to Ethenial
-.accept 12006 >>Accept Avenge this Atrocity!
-step
-#completewith Arcanimus
-.goto Dragonblight,22.7,58.1,0
-.goto Dragonblight,23.3,61.3,0
-.goto Dragonblight,25.9,58.7,0
-.use 35792 >>Right click the Dead Mage Hunter bodies scattered around Moonrest Garden. Open their Mage Hunter's Personal Effects
-.complete 11999,1 
-step
 #completewith next
-#requires moonshadow
-.goto Dragonblight,21.6,58.9,50,0
-.goto Dragonblight,21.3,62.5,50,0
->>Kill the Humanoid/Beast/Dragon mobs throughout the Moonrest Gardens
-.complete 12006,1 
-step
-#label gardenplansmr
-.goto Dragonblight,21.1,64.0
->>Kill Magister Keldonus. Use your cooldowns. If you're unable to do this, skip this quest.
-.complete 12089,1 
-step
-.goto Dragonblight,19.1,61.6,70,0
-.goto Dragonblight,18.4,57.3,70,0
-.goto Dragonblight,20.0,56.4,70,0
-.goto Dragonblight,22.0,57.9,70,0
-.goto Dragonblight,21.3,62.3
->>Kill the Humanoid/Beast/Dragon mobs throughout the Moonrest Gardens
-.complete 12006,1 
-step
-#label end12006
-.goto Dragonblight,24.19,60.06
->>Return to Ethenial
-.turnin 12006 >>Turn in Avenge this Atrocity!
-.accept 12013 >>Accept End Arcanimus
-step
-.goto Dragonblight,20.0,59.7
->>Run down the ramp. Kill Arcanimus
-.complete 12013,1 
-step
-#label Arcanimus
-.goto Dragonblight,24.19,60.06
->>Return to Ethenial
-.turnin 12013 >>Turn in End Arcanimus
-step
-.goto Dragonblight,22.7,58.1,70,0
-.goto Dragonblight,23.3,61.3,70,0
-.goto Dragonblight,25.9,58.7
-.use 35792 >>Right click the Dead Mage Hunter bodies scattered around Moonrest Garden. Open their Mage Hunter's Personal Effects
-.complete 11999,1 
-step
->>Return to Agmar's Hammer. Talk to Aethas and Agmar
-.turnin 11999 >>Turn in Rifle the Bodies
-.accept 12005 >>Accept Prevent the Accord
-.goto Dragonblight,38.05,46.22
-.turnin 12008 >>Turn in Agmar's Hammer
-.accept 12034 >>Accept Victory Nears...
-.goto Dragonblight,38.07,46.34
-
-step
->>Talk to Juktok, Borus, Gort at the bottom of the tower, and Soar
-.turnin 12034 >>Turn in Victory Nears...
-.accept 12036 >>Accept From the Depths of Azjol-Nerub
-.goto Dragonblight,36.61,46.57
-.accept 12039 >>Accept Black Blood of Yogg-Saron
-.goto Dragonblight,36.61,47.19
-.accept 12056 >>Accept Marked for Death: High Cultist Zangus
-.turnin 12089 >>Turn in Wanted: Magister Keldonus
-.goto Dragonblight,35.81,48.39
-.accept 12100 >>Accept Containing the Rot
-.goto Dragonblight,37.08,48.55
-.isQuestComplete 12089
-step
->>Talk to Juktok, Borus, and Gort at the bottom of the tower, then Soar
-.turnin 12034 >>Turn in Victory Nears...
-.accept 12036 >>Accept From the Depths of Azjol-Nerub
-.goto Dragonblight,36.61,46.57
-.accept 12039 >>Accept Black Blood of Yogg-Saron
-.goto Dragonblight,36.61,47.19
-.accept 12056 >>Accept Marked for Death: High Cultist Zangus
-.goto Dragonblight,35.81,48.39
-.accept 12100 >>Accept Containing the Rot
-.goto Dragonblight,37.08,48.55
-step
-#completewith next
->>Kill Elks and Grizzlies. Loot them for their Chilled Meat
-.complete 13090,1 
-.isOnQuest 13090
-step
-.goto Dragonblight,31.9,45.9,70,0
-.goto Dragonblight,28.8,51.5,70,0
-.goto Dragonblight,23.8,50.0,70,0
-.goto Dragonblight,28.8,51.5,70,0
-.goto Dragonblight,31.9,45.9
->>Kill Blighted Elks and Rabid Grizzlies. Loot them for the Organ
-.complete 12100,2 
-.complete 12100,1 
-step
-#completewith next
-.goto Dragonblight,26.15,49.48,15 >> Jump down into The Pit of Narjun
-step
-#completewith Kilix
-.goto Dragonblight,26.7,48.1,0
->>Mine the nodes of Black Blood inside The Pit of Narjun
-.complete 12039,1 
-step
-.goto Dragonblight,26.19,50.78
->>Talk to Kilix inside The Pit of Narjun
-.accept 12040 >>Accept An Enemy in Arthas
-.complete 12036,1 
-step
-#sticky
-#label AUnderlord
->>Kill Underlords in The Pit of Narjun
-.goto Dragonblight,28.8,47.2,0,0
-.complete 12040,1 
-step
-.goto Dragonblight,26.7,49.4,20,0
-.goto Dragonblight,28.85,49.72
->>Take the middle path inside the cave and kill High Cultist Zangus. Loot him for his Head
-.complete 12056,1 
-step
-#label Kilix
-#requires AUnderlord
->>Return to Kilix inside The Pit of Narjun
-.goto Dragonblight,26.19,50.78
-.turnin 12040 >>Turn in An Enemy in Arthas
-.accept 12041 >>Accept The Lost Empire
-step
-.goto Dragonblight,26.9,49.3,30,0
-.goto Dragonblight,28.8,49.7,30,0
-.goto Dragonblight,28.6,47.0,30,0
-.goto Dragonblight,26.7,48.1
->>Mine the nodes of Black Blood inside The Pit of Narjun
-.complete 12039,1,8 
-step
-#completewith Trader
-.goto Dragonblight,26.9,49.5,30,0
-.goto Dragonblight,26.7,48.7,15,0
-.goto Dragonblight,26.3,49.0,25 >> Run out of the cave
-step
-.goto Dragonblight,25.7,49.6
->>Mine the nodes of Black Blood toward the outside The Pit of Narjun
-.complete 12039,1 
-step
-#label Trader
-.goto Dragonblight,18.39,58.89
->>Kill Wind Trader Mu'Fah at the western entrance of the broken temple. Loot him for his Remains
-.complete 12005,1 
-step
-.goto Dragonblight,19.46,58.03
->>Enter the temple and go up the ramp to the left. Kill Goramosh and loot him for his Scales and Strange Device
-.complete 12005,2 
-.collect 36746,1,12059 
-.use 36746 >> Right click on Goramosh's Strange Device in your bags
-.accept 12059 >>Accept A Strange Device
-step
-#completewith next
-.hs >>Hearth to Agmar's Hammer
-.cooldown item,6948,>0
-step
->>Return to Agmar's Hammer. Talk to Gort, Borus, and Juktok
-.turnin 12056 >>Turn in Marked for Death: High Cultist Zangus
-.goto Dragonblight,35.81,48.39
-.turnin 12039 >>Turn in Black Blood of Yogg-Saron
-.accept 12048 >>Accept Scourge Armaments
-.goto Dragonblight,36.61,47.19
-.turnin 12036 >>Turn in From the Depths of Azjol-Nerub
-.accept 12053 >>Accept The Might of the Horde
-.goto Dragonblight,36.61,46.57
-step
->>Go inside the building. Talk to Aethas and Agmar
-.turnin 12005 >>Turn in Prevent the Accord
-.turnin 12059 >>Turn in A Strange Device
-.accept 12061 >>Accept Projections and Plans
-.goto Dragonblight,38.05,46.22
-.turnin 12041 >>Turn in The Lost Empire
-.goto Dragonblight,38.07,46.34
-step
->>Go outside. Talk to Soar, then Sintar, then Icemist
-.turnin 12100 >>Turn in Containing the Rot
-.accept 12101 >>Accept The Good Doctor...
-.goto Dragonblight,37.08,48.55
-.turnin 12101 >>Turn in The Good Doctor...
-.accept 12102 >>Accept In Search of the Ruby Lilac
-.goto Dragonblight,36.08,48.89
-.accept 12063 >>Accept Strength of Icemist
-.goto Dragonblight,35.8,46.9,50,0
-.goto Dragonblight,36.0,45.9,50,0
-.goto Dragonblight,36.1,45.2
-step
-.goto Dragonblight,25.4,56.2,-1
-.use 36747 >> Head back to the Moonrest Gardens and use the Surge Needle Teleporter to travel to the floating platform in the sky
-.complete 12061,1 
-.goto Dragonblight,19.59,59.77,-1
-step << Mage/Priest/Paladin
-#completewith Icemist
-.goto Dragonblight,21.0,47.5,150 >> Cast Slow Fall, Mount up, then jump off the platform << Mage
-.goto Dragonblight,21.0,47.5,200 >> Jump off the platform, then cast Levitate when you're near the bottom << Priest
-.goto Dragonblight,21.0,47.5,200 >> Jump off the platform, then cast Divine Shield or Blessing of Protection when you're near the bottom << Paladin
-.itemcount 17056,1 << Mage/Priest
-step
-#completewith Icemist
-.goto Dragonblight,22.5,57.0,100 >> Use the Surge Needle Teleporter again to teleport back down.
-.use 36747
-.itemcount 17056,<1 << Mage/Priest
-step
-#sticky
-#label scarms
-.goto Dragonblight,23.3,42.8,0,0
->>Kill the Anub'ar around Icemist Village. Loot them for their Armaments
-.complete 12048,1 
-step
-#label Icemist
-.goto Dragonblight,22.60,41.73
->>Talk to Banthok next to the campfire in the river
-.turnin 12063 >>Turn in Strength of Icemist
-.accept 12064 >>Accept Chains of the Anub'ar
-step
-#sticky
-#label fbtome
-.goto Dragonblight,23.2,44.8,60,0
-.goto Dragonblight,24.2,46.2,0,0
-.use 36744 >>Kill Anub'ar Cultists in Icemist Village. Loot them for The Flesh-Bound Tome. Click it in your bags
-.collect 36744,1,12057,1 
-.accept 12057 >>Accept The Flesh-Bound Tome
-step
-.goto Dragonblight,25.0,44.6,15,0
-.goto Dragonblight,25.0,43.9
->>Go into the small cave just below Sinok's spawn and kill Anok'ra. Loot him for his fragment
-.complete 12064,1 
-step
-.goto Dragonblight,26.6,42.5,40,0
-.goto Dragonblight,26.77,39.05
->>Go up the mountain into Icemist, then into the building. Kill Tivax. Loot him for his fragment
-.complete 12064,2 
-step
-.goto Dragonblight,25.54,40.80
-.use 36738 >> Use the Warsong Battle Standard in your bags. Protect it. It doesn't have a lot of health so quickly kill the mobs that spawn.
-.complete 12053,1 
-step
-.goto Dragonblight,26.2,44.4,50,0
-.goto Dragonblight,23.9,44.6
->>Check the wooden balcony area of Icemist. Kill Sinok. Loot him for his fragment
-.complete 12064,3 
-.unitscan Sinok the Shadowrager
-step
-.goto Dragonblight,22.60,41.73
->>Return to Banthok next to the campfire in the river
-.turnin 12064 >>Turn in Chains of the Anub'ar
-.accept 12069 >>Accept Return of the High Chief
-step
-#completewith next
-.goto Dragonblight,22.7,39.4,25 >>Swim north. Take the ramp to the north-west side of the village
-step
-#completewith next
-.goto Dragonblight,25.6,40.9
-.cast 47412 >>Click the Anub'ar Mechanism to set Roanuk free
-step
-.goto Dragonblight,25.12,39.76
->>Follow Roanuk after freeing him. Kill the Anub'et'kan. Loot him for his Husk
-.complete 12069,1 
-step
-#requires scarms
-step
-#requires fbtome
-.goto Dragonblight,35.81,48.39
->>Return to Agmar's Hammer. Talk to Gort
-.turnin 12057 >>Turn in The Flesh-Bound Tome
-.accept 12115 >>Accept Koltira and the Language of Death
-
-step
-#completewith next
-.goto Dragonblight,35.8,46.6,0
->>Talk to Koltira patrolling clockwise in the inner and outer circle
-.turnin 12115 >>Turn in Koltira and the Language of Death
-.accept 12125 >>Accept In Service of Blood
-.accept 12126 >>Accept In Service of the Unholy
-.accept 12127 >>Accept In Service of Frost
-step
->>Talk to Borus and Juktok
-.turnin 12048 >>Turn in Scourge Armaments
-.goto Dragonblight,36.61,47.19
-.turnin 12053 >>Turn in The Might of the Horde
-.accept 12071 >>Accept Attack by Air!
-.goto Dragonblight,36.61,46.57
-step
-.goto Dragonblight,36.1,45.9,30,0
-.goto Dragonblight,37.2,47.1,30,0
-.goto Dragonblight,36.1,47.6
->>Talk to Koltira patrolling clockwise in the inner and outer circle
-.turnin 12115 >>Turn in Koltira and the Language of Death
-.accept 12125 >>Accept In Service of Blood
-.accept 12126 >>Accept In Service of the Unholy
-.accept 12127 >>Accept In Service of Frost
-.unitscan Koltira Deathweaver
-step
-.goto Dragonblight,37.21,45.71
->>Talk to Valnok
-.turnin 12071 >>Turn in Attack by Air!
-.accept 12072 >>Accept Blightbeasts be Damned!
-step
-.goto Dragonblight,38.1,46.3
->>Go inside. Talk to Aethas and Agmar
-.turnin 12061 >>Turn in Projections and Plans
-.accept 12066 >>Accept The Focus on the Beach
-.goto Dragonblight,38.05,46.22
-.turnin 12069 >>Turn in Return of the High Chief
-.accept 12140 >>Accept All Hail Roanauk!
-.goto Dragonblight,38.07,46.34
-step
-#completewith next
-.goto Dragonblight,36.26,45.45,9,0
->>Speak to Roanauk Icemist to start his RP. You don't need to wait around for this to complete (it should take 40 seconds). Ride to Icemist Village after
-.complete 12140,1 
-.skipgossip
-.timer 40,All Hail Roanauk! RP (CONTINUE QUESTING)
-step
-.goto Dragonblight,27.67,45.19
-#completewith next
-.use 36774
-.vehicle >>Use Valnok's Flare Gun in your bags while inside Icemist Village. Mount the War Rider
-step
-.goto Dragonblight,27.7,37.5,60,0
-.goto Dragonblight,24.3,37.2
->>Use "Big Blue" (2) then "Blightbeast Bane" (1) on cooldown to kill the flying Anub'ar. Use "Field Medi-pack" (3) to heal your rider.
-.complete 12072,1,10 
-step
-.goto Dragonblight,26.6,46.8,70,0
-.goto Dragonblight,24.2,47.7
->>Use "Big Blue" (2) then "Blightbeast Bane" (1) on cooldown to kill the flying Anub'ar. Use "Field Medi-pack" (3) to heal your rider.
-.complete 12072,1 
-step
-#completewith next
-.vehicle >> Use the Kor'Kron War Rider to travel much faster until it throws you off. Stay close to the ground
-.use 36774
-.cooldown item,36774,>0
-step
-#completewith next
-.use 36751 >>Kill Captain Emmy Malin. Loot her for the Ley Line Focus Control Ring
-.collect 36751,1,12066,1 
-.goto Dragonblight,26.32,64.85
-step
-.use 36751 >>Use the Ring in your bags next to the Ley Line Focus
-.complete 12066,1 
-.goto Dragonblight,26.5,65.2
-step
-#completewith next
-.goto Dragonblight,27.9,66.5,30,0
-.goto Dragonblight,28.9,66.1,20,0
-.goto Dragonblight,29.7,67.0,40 >> Take the purple path up to the Lothalor Woodlands
-step
-.goto Dragonblight,35.69,65.85,40,0
-.goto Dragonblight,37.85,66.03
-.use 36827 >>Damage a Deranged Indu'le Villager to 35% or less health. Use the Blood Gem in your bags on him.
-.complete 12125,1 
-.unitscan Deranged Indu'le Villager
-step
-#sticky
-#label Koltira2
-.goto Dragonblight,36.1,45.9,30,0
-.goto Dragonblight,37.2,47.1,30,0
-.goto Dragonblight,36.1,47.6
->>Talk to Koltira patrolling clockwise in the inner and outer circle
-.turnin 12125 >>Turn in In Service of Blood
-step
->>Return to Agmar's Hammer. Talk to Valnok, then go inside and talk to Agmar and Aethis
-.turnin 12072 >>Turn in Blightbeasts be Damned!
-.goto Dragonblight,37.21,45.71
-.turnin 12066 >>Turn in The Focus on the Beach
-.accept 12084 >>Accept Atop the Woodlands
-.goto Dragonblight,38.05,46.22
-.turnin 12140 >>Turn in All Hail Roanauk!
-.goto Dragonblight,38.07,46.34
-step
-.goto Dragonblight,36.51,47.87
->>Talk to Grife
-.accept 12096 >>Accept Strengthen the Ancients
-step
-#requires Koltira2
-.goto Dragonblight,33.8,60.2,70,0
-.goto Dragonblight,36.2,61.7,70,0
-.goto Dragonblight,30.6,66.7,70,0
-.goto Dragonblight,34.3,68.3,70,0
-.goto Dragonblight,29.8,71.4
->>Look for Woodland Walkers around this area, speak to them to receive a Bark of the Walkers. Kill them if they turn hostile to loot their Bark
-.use 36786 >>Use the Bark of the Walkers on the Lothalor Ancients around the area
-.collect 36786,3,12096,0x1,-1
-.complete 12096,1 
-.skipgossip
-step
-.goto Dragonblight,33.1,71.5,60,0
-.goto Dragonblight,32.4,72.7,60,0
-.goto Dragonblight,31.5,72.0,60,0
-.goto Dragonblight,31.9,70.4
-.use 36780 >>Kill Lieutenant Ta'zinni. He is a troll that patrols around the purple ring in a 50 yard radius. Loot him for the Ley Line Focus Control Amulet and Letter. Click it in your bags
-.collect 36779,1,12084,1 
-.collect 36780,1,12085,1 
-.accept 12085 >>Accept A Letter for Home
-.unitscan Lieutenant Ta'zinni
-step
-.goto Dragonblight,32.2,71.4
-.use 36779 >>Use the Ley Line Focus Control Amulet in your bags next to the big metal ring with purple runes
-.complete 12084,1 
-step
->>Return to Moa'ki Harbor and talk to Mau'i outside, then Ko'nani inside the hut
-.turnin 11960 >>Turn in Planning for the Future
-.goto Dragonblight,48.25,74.35
-.turnin 11958 >>Turn in Let Nothing Go To Waste
-.accept 11959 >>Accept Slay Loguhn
-.goto Dragonblight,47.99,74.87
-step
-.goto Dragonblight,52.1,70.3,70,0
-.goto Dragonblight,51.0,66.8,60,0
-.goto Dragonblight,51.1,64.9,60,0
-.goto Dragonblight,48.5,63.5,60,0
-.goto Dragonblight,47.5,62.2,60,0
-.goto Dragonblight,45.0,62.7,60,0
-.goto Dragonblight,44.3,57.9,60,0
-.goto Dragonblight,45.8,57.6,60,0
-.goto Dragonblight,47.0,57.9,60,0
-.goto Dragonblight,48.2,60.8,60,0
-.goto Dragonblight,51.4,63.6,60,0
-.goto Dragonblight,52.1,70.3,70,0
-.goto Dragonblight,51.0,66.8,60,0
-.goto Dragonblight,51.1,64.9,60,0
-.goto Dragonblight,48.5,63.5,60,0
-.goto Dragonblight,47.5,62.2,60,0
-.goto Dragonblight,45.0,62.7,60,0
-.goto Dragonblight,44.3,57.9,60,0
-.goto Dragonblight,45.8,57.6,60,0
-.goto Dragonblight,47.0,57.9,60,0
-.goto Dragonblight,48.2,60.8,60,0
-.goto Dragonblight,51.4,63.6,60,0
-.goto Dragonblight,52.1,70.3
->>Kill Gigantaur. He patrols clockwise around Snowfall Glade. Skip this if you're unable to kill him.
-.complete 12090,1 
-.unitscan Gigantaur
-step
-.goto Dragonblight,46.34,59.13
->>Kill Loguhn. Loot him for his Blood
-.collect 35688,1,11959,1 
-.use 35688 >>Use the Blood of Loguhn in your bags
-.complete 11959,1 
-step
-#sticky
-#label Lilac
-.goto Dragonblight,47.89,49.64,30,0
-.goto Dragonblight,47.68,49.06
->>Enter the cave under the big tree. Loot the Ruby Lilac on the ground
-.complete 12102,1 
-step
-.goto Dragonblight,47.68,49.06
-.use 37833 >>Kill Dahlia Suntouch and loot the Ruby Brooch. Accept the quest from the Brooch.
-.collect 37833,1,12419,1
-.accept 12419 >>Accept The Fate of the Ruby Dragonshrine
-step
-#requires Lilac
-.goto Dragonblight,48.0,50.7,60,0
-.goto Dragonblight,46.6,49.9,60,0
-.goto Dragonblight,46.7,47.9,60,0
-.goto Dragonblight,48.4,46.2,60,0
-.goto Dragonblight,47.0,46.0,60,0
-.goto Dragonblight,45.7,48.7,60,0
-.goto Dragonblight,46.5,51.7
-.use 36835 >>Find Duke Vallenhal patrolling the west side of the Dragonshrine. Damage him to 35% or less health. Use your Unholy Gem in your bags on him.
-.complete 12126,1 
-.unitscan Duke Vallenhal
-step
-.goto Dragonblight,45.84,44.52
->>Go into the snowy crevices to the west then follow the path to the top of the mountain. Kill Dreadtalon atop the mountain. Skip this if you're unable to kill him
-.complete 12091,1 
-step
->>Return to Agmar's Hammer. Talk to Aethas and Agmar
-.turnin 12084 >>Turn in Atop the Woodlands
-.accept 12106 >>Accept Search Indu'le Village
-.goto Dragonblight,38.05,46.22
-.turnin 12085 >>Turn in A Letter for Home
-.goto Dragonblight,38.07,46.34
-step
-#sticky
-#label Koltira3
-.goto Dragonblight,36.1,45.9,30,0
-.goto Dragonblight,37.2,47.1,30,0
-.goto Dragonblight,36.1,47.6
->>Talk to Koltira patrolling clockwise in the inner and outer circle
-.turnin 12126 >>Turn in In Service of the Unholy
-step
->>Talk to Grife
-.turnin 12096 >>Turn in Strengthen the Ancients
-.goto Dragonblight,36.51,47.87
-step
->>Go inside and talk to Gort
-.turnin 12090 >>Turn in Wanted: Gigantaur
-.turnin 12091 >>Turn in Wanted: Dreadtalon
-.goto Dragonblight,35.81,48.39
-.isQuestComplete 12090
-.isQuestComplete 12091
-step
->>Go inside and talk to Gort
-.turnin 12091 >>Turn in Wanted: Dreadtalon
-.goto Dragonblight,35.81,48.39
-.isQuestComplete 12091
-step
->>Go inside and talk to Gort
-.turnin 12090 >>Turn in Wanted: Gigantaur
-.goto Dragonblight,35.81,48.39
-.isQuestComplete 12090
-step
-.goto Dragonblight,35.81,48.39
->>Talk to Gort again
-.accept 12095 >>Accept To Dragon's Fall
-.isQuestTurnedIn 12089
-.isQuestTurnedIn 12090
-.isQuestTurnedIn 12091
-step
->>Talk to Sintar, then talk to Soar
-.turnin 12102 >>Turn in In Search of the Ruby Lilac
-.accept 12104 >>Accept Return to Soar
-.goto Dragonblight,36.08,48.89
-.turnin 12104 >>Turn in Return to Soar
-.accept 12111 >>Accept Where the Wild Things Roam
-.goto Dragonblight,37.08,48.55
-step
-#requires Koltira3
-.goto Dragonblight,39.6,50.2,50,0
-.goto Dragonblight,38.3,56.8,50,0
-.goto Dragonblight,41.3,47.8,50,0
-.goto Dragonblight,38.3,56.8,50,0
-.goto Dragonblight,41.3,47.8
-.use 36818 >>Use the Pack of Vaccines in your bags on Snowfall Elks and Grizzlies
-.complete 12111,1 
-.complete 12111,2 
-step
-.goto Dragonblight,37.08,48.55
->>Return to Soar
-.turnin 12111 >>Turn in Where the Wild Things Roam
-step
-#completewith next
-.goto Dragonblight,37.51,45.76
-.fly Moa'ki >>Fly to Moa'ki Harbor
-step
-#completewith Kili
-.goto Dragonblight,48.15,74.76
-.home >>Set your Hearth to Mao'ki Harbor
-step
-.goto Dragonblight,47.99,74.87
->>Talk to Ko'nani inside the hut
-.turnin 11959 >>Turn in Slay Loguhn
-step
-.goto Dragonblight,48.00,76.15,20,0
-.goto Dragonblight,47.7,76.6
->>Talk to Tua'kea on the shore
-.accept 12009 >>Accept Tua'kea's Crab Traps
-step
-.goto Dragonblight,49.14,75.69
->>Talk to Toalu'u inside the hut
-.accept 12028 >>Accept Spiritual Insight
-step
-.goto Dragonblight,48.96,75.79
-.use 35907 >> Use the Toalu'u's Spiritual Incense in your bags next to the brazier right outside his hut. Wait out the RP event
-.cast 47190
-.timer 160,Spiritual Insight RP
-.complete 12028,1 
-step
-.goto Dragonblight,49.12,75.66
->>Return to Toalu'u
-.turnin 12028 >>Turn in Spiritual Insight
-.accept 12030 >>Accept Elder Mana'loa
-step
-.isQuestTurnedIn 11559
-#completewith next
-.use 38351 >>Use a Murliver Oil to increase your swim speed when needed.
-.itemcount 38351,1
-step
-#completewith Kili
-.goto Dragonblight,46.5,76.2,0
-.use 37265 >>Loot the small crab traps laying on the sea floor just south of Moa'ki Harbor
-.complete 12009,1 
-step
-.goto Dragonblight,47.72,79.99
-.use 37265 >> Use the Breathing Bladder in your bags. Click on the Wrecked Crab Trap on the sea floor
-.accept 12011 >>Accept Signs of Big Watery Trouble
-step
-.goto Dragonblight,47.7,76.6,20,0
-.goto Dragonblight,48.00,76.15
->>Return to Tua'kea
-.turnin 12011 >>Turn in Signs of Big Watery Trouble
-.accept 12016 >>Accept The Bait
-step
-.isQuestTurnedIn 11559
-#completewith next
-.use 38351 >>Use a Murliver Oil to increase your swim speed when needed.
-.itemcount 38351,1
-step
-#label Kili
-.goto Dragonblight,43.9,82.7,60,0
-.goto Dragonblight,42.0,80.0
->>Kill Kili'ua, the big crab that patrols the island. Loot him for his Pincers
-.complete 12016,1 
-.unitscan Kili'ua
-step
-.goto Dragonblight,46.5,76.2,60,0
-.goto Dragonblight,48.6,79.7,60,0
-.goto Dragonblight,50.4,79.3
-.use 37265 >>Finish looting the small crab traps laying on the sea floor just south of Moa'ki Harbor
-.complete 12009,1 
-step
-.goto Dragonblight,47.7,76.6,20,0
-.goto Dragonblight,48.00,76.15
->>Return to Tua'kea
-.turnin 12009 >>Turn in Tua'kea's Crab Traps
-.turnin 12016 >>Turn in The Bait
-.accept 12017 >>Accept Meat on the Hook
-step
-.isQuestTurnedIn 11559
-#completewith next
-.use 38351 >>Use a Murliver Oil to increase your swim speed when needed.
-.itemcount 38351,1
-step
-.goto Dragonblight,46.74,78.18
-.use 35838 >> Place Tu'u'gwar's Bait in your bags on the fishing hook underwater to summon Tu'u'gwar. Kill him
-.cast 47159
-.timer 21,Tu'u'gwar RP
-.complete 12017,1 
-step
-.goto Dragonblight,48.01,76.17
->>Return to Tua'kea
-.turnin 12017 >>Turn in Meat on the Hook
-step
-#completewith next
-.goto Dragonblight,48.4,67.7,90 >> Take the northern path out of Moa'ki Harbor
-step
-#sticky
-#label Evenstar
-.goto Dragonblight,40.25,66.86
-.use 37265 >>Use the Breathing Bladder in your bags
->>Dive into the lake and talk to Mage-Commander Evenstar
-.turnin 12106 >>Turn in Search Indu'le Village
-.accept 12110 >>Accept The End of the Line
-step
-.isQuestTurnedIn 11559
-#completewith next
-.use 38351 >>Use a Murliver Oil to increase your swim speed when needed.
-.itemcount 38351,1
-step
-.goto Dragonblight,39.76,67.03
-.use 36815 >>Use the Control Talisman in your bags near the Ley Line Focus
-.complete 12110,1 
-step
-#requires Evenstar
-.goto Dragonblight,36.63,64.96
->>Talk to the big stone. Try to avoid killing mobs en route
-.turnin 12030 >>Turn in Elder Mana'loa
-.accept 12031 >>Accept Freedom for the Lingering
-step
-.goto Dragonblight,36.5,65.5,50,0
-.goto Dragonblight,37.0,70.8,50,0
-.goto Dragonblight,42.1,71.1,50,0
-.goto Dragonblight,41.4,63.7
->>Kill the undead Tuskarr ghosts around Lake Indu'le
-.complete 12031,1 
-step
-.goto Dragonblight,36.63,64.96
->>Return to the big stone
-.turnin 12031 >>Turn in Freedom for the Lingering
-.accept 12032 >>Accept Conversing With the Depths
-step
-.goto Dragonblight,34.5,80.1,40,0
-.goto Dragonblight,35.1,82.5,40,0
-.waypoint Dragonblight,34.11,84.76,-47098,wpbuff,UNIT_AURA
-.goto Dragonblight,33.91,83.22
->>Click on the altar and wait for the RP. Once you get the Oacha'noa's Compulsion buff, you'll have 30 seconds to jump in the water where the big sea monster is
-
-.complete 12032,1 
-step << Druid
-#completewith DruidTrain1
-.cast 18960 >> Cast Teleport: Moonglade
-.zoneskip Moonglade
-.xp <72,1
-step << Druid
-.goto Moonglade,52.4,40.6
->>Go to Moonglade
-.train 48464 >> Train your class spells
-.xp <72,1
-step << Druid
-#label DruidTrain1
-.goto Moonglade,52.4,40.6
->>Go to Moonglade
-.train 53307 >> Train your class spells
-.xp <74,1
-step << DK
-#completewith DKTrain1
-.cast 50977 >> Cast Death Gate
-.zoneskip Eastern Plaguelands
-.xp <72,1
-step << DK
-.goto Eastern Plaguelands,80.3,48.0
->>Go through the Death Gate
-.train 49940 >> Train your class spells from Amal'Thazad in Acherus
-.xp <72,1
-step << DK
-.goto Eastern Plaguelands,80.3,48.0
->>Go through the Death Gate
-.train 49904 >> Train your class spells from Amal'Thazad in Acherus
-.xp <73,1
-step << DK
-#label DKTrain1
-.goto Eastern Plaguelands,80.3,48.0
->>Go through the Death Gate
-.train 49929 >> Train your class spells from Amal'Thazad in Acherus
-.xp <74,1
-step << Mage
-#completewith MageTrain1
-.zone Undercity >> Teleport to Undercity
-.xp <72,1
-step << Mage
-.goto Undercity,85.1,10.0
-.train 42930 >> Train your class spells
-.xp <72,1
-step << Mage
-.goto Undercity,85.1,10.0
-.train 43019 >> Train your class spells
-.xp <73,1
-step << Mage
-#label MageTrain1
-.goto Undercity,85.1,10.0
-.train 42939 >> Train your class spells
-.xp <74,1
-step
-#completewith next
-.hs >>Hearth to Moa'ki Harbor
-step
-.goto Dragonblight,49.12,75.66
->>Talk to Toalu'u inside the hut
-.turnin 12032 >>Turn in Conversing With the Depths
-step
-.goto Dragonblight,52.92,65.64
->>Stand near the outer perimiter of the canyon
-.complete 12110,2 
+.groundgoto Dragonblight,68.51,71.66,20 >>Jump onto the small ledge towards the Emerald Dragonshrine
 step
 #completewith Alystros
 .goto Dragonblight,64.87,73.49,0,0
@@ -39471,6 +42273,7 @@ step
 >>Kill the Emerald Skytalons around the Shrine
 .complete 12454,1 
 step
+#label Alystros
 .goto Dragonblight,63.7,76.0,60,0
 .goto Dragonblight,62.5,74.5,60,0
 .goto Dragonblight,62.8,72.1,60,0
@@ -39485,6 +42288,7 @@ step
 .goto Dragonblight,64.7,77.0
 .use 37881 >>Use the Skytalon Molts in your bags to bring down Alystros perching from the hill in front of you. Kill him. This quest is VERY difficult. Find a group for him if needed. Skip this step if you're unable to find a group or solo him.
 .complete 12456,1 
+.isOnQuest 12456
 step
 #label Tears
 .goto Dragonblight,65.7,72.6,70,0
@@ -39514,26 +42318,15 @@ step
 .abandon 12456 >> Abandon The Plume of Alystros
 step
 #completewith next
-.goto Dragonblight,66.4,73.7,50,0
-.goto Dragonblight,67.5,71.8,50,0
-.goto Dragonblight,69.0,68.2,50,0
-.goto Dragonblight,70.5,68.8,50 >> Take the path out of the Emerald Dragonshrine here
-step
->>Talk to Scrivener, Schneider, Burke, and Amai in the area. Kill them. Try to avoid killing Mounted Onslaught Knights
-.complete 12245,4 
-.goto Dragonblight,72.63,72.58
-.complete 12245,1 
-.goto Dragonblight,71.41,72.17
-.complete 12245,2 
-.goto Dragonblight,69.37,73.95
-.complete 12245,3 
-.goto Dragonblight,72.72,74.34
-.skipgossip
+.groundgoto Dragonblight,66.4,73.7,50,0
+.groundgoto Dragonblight,67.5,71.8,50,0
+.groundgoto Dragonblight,69.0,68.2,50,0
+.groundgoto Dragonblight,70.5,68.8,50 >> Take the path out of the Emerald Dragonshrine here
 step
 
 .waypoint Dragonblight,69.44,75.35,0,vehicle,VEHICLE_PASSENGERS_CHANGED,VEHICLE_UPDATE,UNIT_EXITING_VEHICLE
 >>Kill a mounted Onslaught Knight. Loot them for their Riding Crop. Use the Crop on their mount
-*DO NOT KILL THE HORSE, loot the item and use it to mount the horse
+*DO NOT KILL THE HORSE. Loot the item and use it to mount the horse
 
 .goto Dragonblight,75.9,61.9 
 .goto Dragonblight,69.44,75.35,0 
@@ -39544,10 +42337,6 @@ step
 >>Talk to Hansel
 .turnin 12214 >>Turn in Fresh Remounts
 .goto Dragonblight,75.93,61.89
-step
-#completewith Need
-.goto Dragonblight,76.87,63.13
-.home >>Set your Hearth to Venomspite
 step
 .goto Dragonblight,76.77,63.28,12,0
 .goto Dragonblight,76.77,63.28
@@ -39569,7 +42358,7 @@ step
 .complete 12252,1 
 step
 .goto Dragonblight,69.81,72.00
->>Kill Torturer Lecraft. Loot him for the Torturer's Rod. Click it in your bags
+.use 37432 >>Kill Torturer Lecraft. Loot him for the Torturer's Rod. Click it in your bags
 .complete 12252,2 
 .collect 37432,1,12271,1 
 .accept 12271 >>Accept The Rod of Compulsion
@@ -39586,6 +42375,7 @@ step
 .goto Dragonblight,76.77,63.28
 .turnin 12488 >>Turn in The High Executor Needs You
 step
+#completewith next
 .goto Dragonblight,73.6,77.7,50,0
 .goto Dragonblight,72.9,78.1
 .cast 48712 >>Channel the Rod of Compulsion on Zierhut
@@ -39597,17 +42387,19 @@ step
 .complete 12273,2 
 .use 37438
 step
+#completewith next
 .goto Dragonblight,67.89,75.18,50,0
 .goto Dragonblight,67.87,75.91
 .cast 48712 >>Channel the Rod of Compulsion on Mercer
 .use 37438
 step
-.goto Dragonblight,67.89,75.18,50
+.goto Dragonblight,67.89,75.18,50,0
 .goto Dragonblight,67.87,75.91
 >>Kill Stable Master Mercer
 .complete 12273,4 
 .use 37438
 step
+#completewith next
 .goto Dragonblight,70.2,71.9,15,0
 .goto Dragonblight,69.6,71.8,12,0
 .goto Dragonblight,70.2,71.9,35,0
@@ -39616,9 +42408,10 @@ step
 .use 37438
 step
 .goto Dragonblight,69.66,71.79
->>Kill Commander Jordan
+.use 37438 >>Kill Commander Jordan
 .complete 12273,1 
 step
+#completewith next
 .goto Dragonblight,70.62,70.49
 .cast 48712 >>Channel the Rod of Compulsion on Goodman
 .use 37438
@@ -39635,25 +42428,25 @@ step
 
 step
 #completewith next
-.goto Dragonblight,78.81,61.49
+.goto Dragonblight,78.00,61.06
 .vehicle >>Get into a Forsaken Blight Spreader
 step
 .goto Dragonblight,83.6,53.6
 >>Use "Blight Bomb" (1) from as far away as you can to kill the Hungering Dead
 .complete 12218,1 
 step
->>Exit the Vehicle. Kill Siegesmiths. Loot them for their Bombs. Loot the bombs around the cannons
-.goto Dragonblight,82.0,53.3,25,0
-.goto Dragonblight,84.3,49.0,25,0
-.goto Dragonblight,82.7,47.1,25,0
-.goto Dragonblight,84.7,47.9,25,0
+>>Exit the Vehicle. Kill Siegesmiths. Loot them for their Bombs. Loot the bombs around the area
+.goto Dragonblight,82.0,53.3,40,0
+.goto Dragonblight,84.3,49.0,40,0
+.goto Dragonblight,82.7,47.1,40,0
+.goto Dragonblight,84.7,47.9,40,0
 .goto Dragonblight,85.1,45.5
 .complete 12230,1 
 step
-#completewith Need
 .goto Dragonblight,77.69,61.89,0
 .goto Dragonblight,77.03,62.36,0
 .goto Dragonblight,76.49,62.60,0
+.goto Dragonblight,77.69,61.89
 .line Dragonblight,77.69,61.89,77.03,62.36,76.49,62.60
 >>Talk to Deathguard Molder patrolling Venomspite
 .turnin 12230 >>Turn in Stealing from the Siegesmiths
@@ -39667,7 +42460,6 @@ step
 .goto Dragonblight,77.58,62.47,12,0
 .goto Dragonblight,77.67,62.79
 step
-#label Need
 >>Go upstairs and talk to Repine
 .accept 12234 >>Accept Need to Know
 .goto Dragonblight,76.64,63.01,8,0
@@ -39682,10 +42474,11 @@ step
 .accept 12232 >>Accept Bombard the Ballistae
 step
 #completewith Kaleiki
-.goto Dragonblight,71.2,73.0,0
+.goto Dragonblight,71.2,73.0,0,0
 .use 37259 >>Use the Siegesmith Bomb in your bags on the Ballistas around New Hearthglen
 .complete 12232,1 
 step
+.groundgoto Dragonblight,73.74,75.72,50,0
 .goto Dragonblight,71.61,80.42
 >>Travel down to the shore of New Hearthglen. Loot the scroll on the crate
 .complete 12234,3 
@@ -39757,8 +42550,9 @@ step
 step
 .goto Dragonblight,68.9,76.1,20,0
 .goto Dragonblight,69.21,76.70
->>Go into the small chapel. Kill Bishop Street. Loot him for his book
+>>Go into the small chapel and kill Bishop Street. Loot him for his book
 .complete 12254,1 
+.unitscan Bishop Street
 step
 .goto Dragonblight,73.58,73.54
 >>Return to Skully
@@ -39776,6 +42570,9 @@ step
 .turnin 12260 >>Turn in The Perfect Dissemblance
 .accept 12274 >>Accept A Fall From Grace
 step
+#completewith next
++If you lose your disguise, talk to Agent Skully again.
+step
 .goto Dragonblight,72.3,73.5,12,0
 .goto Dragonblight,73.1,73.7,12,0
 .goto Dragonblight,73.0,73.2,12,0
@@ -39783,14 +42580,14 @@ step
 .goto Dragonblight,73.1,73.6,12,0
 .goto Dragonblight,73.0,73.3,12,0
 .goto Dragonblight,72.90,73.48
->>Run up to the top of the building and pull the Abbey Bell Rope
+>>While disguised, run up to the top of the building and pull the Abbey Bell Rope
 .complete 12274,1 
 step
 .goto Dragonblight,73.0,73.9,12,0
 .goto Dragonblight,73.51,74.29,9,0
 .goto Dragonblight,72.3,73.5,20,0
 .goto Dragonblight,74.0,75.9
->>Talk to High Abbot Landgren in the back of the building on the bottom floor. After speaking to him, exit the building and follow Landgren to the cliff. STAY NEXT TO HIM. Avoid Knights en route
+>>Talk to High Abbot Landgren in the back of the building on the bottom floor. Exit the building after speaking to him and follow Landgren to the cliff. STAY NEXT TO HIM. Avoid Knights en route
 >>Do NOT shapeshift as you will lose your disguise << Druid
 >>If you lose your disguise, return to Skelly and ask for a new one
 .complete 12274,2 
@@ -39804,8 +42601,9 @@ step
 .goto Dragonblight,71.7,83.4,9,0
 .goto Dragonblight,71.9,83.4,9,0
 .goto Dragonblight,71.86,84.00
->>Go down a floor. Kill Captain Shely. Loot him for his Rutters
+>>Go down a floor and kill Captain Shely. Loot him for his Rutters
 .complete 12243,2 
+.unitscan Captain Shely
 step
 .goto Dragonblight,73.58,73.54
 >>Return to Skully
@@ -39814,7 +42612,7 @@ step
 step
 .goto Dragonblight,68.2,76.4,15,0
 .goto Dragonblight,68.28,76.99
->>Enter the house. On the second floor, loot the Diary off the table
+>>On the second floor of the house, loot the Diary off the table.
 .complete 12283,1 
 step
 #questguide
@@ -39840,6 +42638,7 @@ step
 .complete 12285,1 
 .isOnQuest 12285
 step
+#questguide
 #completewith next
 .hs >>Hearth to Venomspite
 .cooldown item,6948,>0
@@ -39850,11 +42649,13 @@ step
 .goto Dragonblight,76.77,63.28,12,0
 .goto Dragonblight,76.77,63.28
 step
+.groundgoto Dragonblight,70.52,63.17,50,0
 .goto Dragonblight,67.3,56.1
 .use 36847 >>Damage an Ice Revenant to 35% or less health. Use the Frost Gem in your bags on it
 .complete 12127,1 
 step
->>Ride to the Bronze Dragonshrine. Use the Hourglass of Eternity in your bags, and then protect it against the incoming waves
+.goto Dragonblight,71.19,40.94
+.use 37923 >>Ride to the Bronze Dragonshrine. Use the Hourglass of Eternity in your bags, and then protect it against the incoming waves of enemies
 .cast 49890
 .timer 175,Hourglass of Eternity
 .complete 12470,1 
@@ -39947,9 +42748,11 @@ step
 .accept 12224 >>Accept The Kor'kron Vanguard!
 .goto Dragonblight,38.07,46.34
 step
->>Travel to Dragon's Fall. Talk to Kontokanis and Rhokan
+>>Travel to Dragon's Fall. Talk to Kontokanis
 .accept 12144 >>Accept Pest Control
 .goto Dragonblight,46.68,33.50
+step
+>>Talk to Rhokan
 .turnin 12095 >>Turn in To Dragon's Fall
 .goto Dragonblight,47.20,33.01
 .isOnQuest 12095
@@ -39973,6 +42776,7 @@ step
 .turnin 12097 >>Turn in Sarathstra, Scourge of the North
 .goto Dragonblight,47.20,33.01
 step
+.groundgoto Dragonblight,40.78,35.15,30,0
 .goto Dragonblight,37.1,31.8,45,0
 .goto Dragonblight,35.21,30.09
 >>Travel to the Maw of Neltharion. Talk to Serinar inside
@@ -40007,6 +42811,7 @@ step
 step
 #completewith next
 +Jump up the "exit route" on the side just as you start heading up the cave. This will save you 45 seconds each time you pull it off.
+.link https://www.youtube.com/watch?v=xYKP3ECePVw >> Click here for a quick guide on how to do this.
 step
 .goto Dragonblight,34.9,32.0,30,0
 .goto Dragonblight,34.2,31.4,30,0
@@ -40023,6 +42828,7 @@ step
 step
 #completewith next
 +Jump up the "exit route" on the side just as you start heading up the cave. This will save you 45 seconds each time you pull it off.
+.link https://www.youtube.com/watch?v=xYKP3ECePVw >> Click here for a quick guide on how to do this.
 step
 .goto Dragonblight,32.8,30.5,50,0
 .goto Dragonblight,33.7,28.7,50,0
@@ -40044,6 +42850,7 @@ step
 step
 #completewith next
 +Jump up the "exit route" on the side just as you start heading up the cave. This will save you 45 seconds each time you pull it off.
+.link https://www.youtube.com/watch?v=xYKP3ECePVw >> Click here for a quick guide on how to do this.
 step
 .goto Dragonblight,34.9,32.0,30,0
 .goto Dragonblight,34.2,31.4,30,0
@@ -40063,7 +42870,9 @@ step
 #completewith next
 .goto Dragonblight,35.13,31.65
 .goto Dragonblight,42.26,29.65,50 >> Jump onto the hand's biggest finger. Log out, then back in
+.link https://www.youtube.com/watch?v=0r54ZZ1o0W8 >> CLICK HERE for a guide
 step
+.groundgoto Dragonblight,44.50,20.24,75,0
 .goto Dragonblight,40.71,18.06
 >>Travel to the Kor'kron Vanguard. Talk to Saurfang
 .turnin 12224 >>Turn in The Kor'kron Vanguard!
@@ -40071,10 +42880,10 @@ step
 step
 #completewith next
 .goto Dragonblight,43.8,17.0
-.fp Kor'kron Vanguard >> Get the Kor'kron Vanguard flight path
+.fp Kor'koron Vanguard>> Get the Kor'koron Vanguard flight path
 .fly Wyrmrest Temple >>Fly to Wyrmrest Temple
+
 step
-#questguide
 .goto Dragonblight,54.8,50.1,70,0
 .goto Dragonblight,56.3,51.0,70,0
 .goto Dragonblight,55.3,52.6,70,0
@@ -40088,11 +42897,11 @@ step
 .turnin 12122 >> Turn in Gaining an Audience
 .accept 12767 >> Accept Speak with your Ambassador
 step
+>>Talk to Golluck outside the bottom level of the temple
 .goto Dragonblight,58.0,55.3,30,0
 .goto Dragonblight,58.9,56.6
 .turnin 12767 >> Turn in Speak with your Ambassador
 .accept 12461 >> Accept Report to the Ruby Dragonshrine
->>Talk to Golluck outside the bottom level of the temple
 step
 .goto Dragonblight,57.90,54.17
 .fly >> Speak to Tariolstrasz and then fly to the top of the temple
@@ -40122,7 +42931,7 @@ step
 .accept 12448 >>Accept Heated Battle
 step
 .goto Dragonblight,43.1,51.7
->>Kill the Ghouls that spawn next to the guards, and the Geists that come in the waves. If no Abominations come, push forward and kill one guarding the Shrine
+>>Kill the Ghouls that spawn next to the guards and the Geists that come in the waves. Wait for an Abomination to spawn with one of the incoming waves.
 .complete 12448,1 
 .complete 12448,2 
 .goto Dragonblight,45.0,51.6
@@ -40241,8 +43050,6 @@ step
 .turnin 12124 >>Turn in Informing the Queen
 .accept 12435 >>Accept Report to Lord Devrestrasz
 .goto Dragonblight,59.84,54.65
-.turnin 12419 >>Turn in The Fate of the Ruby Dragonshrine
-.goto Dragonblight,59.83,54.66
 .skipgossip 1
 step
 .goto Dragonblight,59.19,54.34
@@ -40251,7 +43058,7 @@ step
 .accept 12372 >>Accept Defending Wyrmrest Temple
 step
 #completewith next
-.goto Dragonblight,58.28,53.73
+.goto Dragonblight,58.36,55.21
 .vehicle 27629 >> Talk to one of the Wyrmrest Defenders on the middle level of the Temple
 .skipgossip
 step
@@ -40264,7 +43071,7 @@ step
 .goto Dragonblight,55.2,66.7
 .isOnQuest 12372
 step
->>Use "Destabilize Azure Dragonshrine" (5) on the skybeam near the ground to destabilize the Shrine
+>>Use "Destabilize Azure Dragonshrine" (6) on the skybeam near the ground to destabilize the Shrine
 .complete 12372,3 
 .goto Dragonblight,55.8,65.9
 .isOnQuest 12372
@@ -40289,31 +43096,40 @@ step << skip
 .use 44450
 step
 .goto Dragonblight,46.68,33.50
->>Drop down to the ground from the middle level of the temple. Travel to and then talk to Kontokanis
+>>Drop down to the ground from the middle level of the temple. Travel to Dragon's Fall and talk to Kontokanis
 .turnin 12144 >>Turn in Pest Control
 .accept 12145 >>Accept Canyon Chase
+.isOnQuest 12144
+step
+#completewith next
+.goto Dragonblight,42.31,38.96,60,0
+.goto Dragonblight,42.91,41.63
+.complete 12145,1 
+.isOnQuest 12145
 step
 .goto Dragonblight,42.31,38.96,60,0
 .goto Dragonblight,42.91,41.63
->>Kill Icefist isnide the canyon. Loot the Emblazoned Battle Horn. Click it in your bags
+.use 36856 >>Kill Icefist isnide the canyon. Loot the Emblazoned Battle Horn. Click it in your bags
 .collect 36856,1,12147,1 
-.complete 12145,1 
 .accept 12147 >>Accept Disturbing Implications
 .unitscan Icefist
 step
 .goto Dragonblight,46.68,33.50
 >>Talk to Kontokanis
 .turnin 12145 >>Turn in Canyon Chase
+.isQuestComplete 12145
 step
 .goto Dragonblight,48.44,24.12
 >>Talk to the Goblin corpse on the ground
 .accept 12469 >>Accept Return to Sender
 step
->>Travel to Nozzlerust Post. Talk to Narf, Zivlix and Xink
+>>Travel to Nozzlerust Post. Talk to Narf and Zivlix
 .accept 12043 >>Accept Nozzlerust Defense
 .goto Dragonblight,54.46,23.60
 .accept 12045 >>Accept Shaved Ice
 .goto Dragonblight,54.70,23.27
+step
+>>Talk to Xink
 .turnin 12469 >>Turn in Return to Sender
 .accept 12044 >>Accept Stocking Up
 .goto Dragonblight,55.00,23.42
@@ -40335,7 +43151,7 @@ step
 .complete 12045,1 
 step
 .goto Dragonblight,54.46,31.18
->>Travel to The Dragon Wastes. Use the Ruby Beacon to mount the Red Drake. Use "Engulfing Fireball" (2) to kill Thiassi the Lightning Bringer on top of the hill, then kill Grand Necrolord Antiok after he dismounts you. Loot the Scythe that drops below him
+>>Travel to The Dragon Wastes and use the Ruby Beacon to mount the Red Drake. Use "Engulfing Fireball" (2) to kill Thiassi the Lightning Bringer on top of the hill, then kill Grand Necrolord Antiok after he dismounts you. Loot the Scythe that drops below him
 .complete 12498,2 
 .use 38302
 step
@@ -40422,7 +43238,6 @@ step
 >>Use "Gather Lumber" (6) inside the Shredder to harvest lumber from the trees around the area
 .complete 12050,1 
 .use 36734
-.use 38302
 step
 .goto Dragonblight,45.8,12.5,70,0
 .goto Dragonblight,44.6,7.8,70,0
@@ -40433,13 +43248,7 @@ step
 .goto Dragonblight,52.8,19.1
 .complete 12052,2 
 .use 36734
-.use 38302
 .unitscan Mistress of the Coldwind
-step
-#completewith Zort
-+From this point forward you can use the Ruby Beacon in your bags to summon a flying mount to travel through the middle of Dragonblight
-.use 38302
-.maxlevel 79
 
 step
 #requires harpies
@@ -40473,7 +43282,7 @@ step
 .accept 12079 >>Accept Stomping Grounds
 step
 .goto Dragonblight,60.24,16.51
->>Find an Ice Heart Jormungar in the Canyon. Tank them until you get affected by their Corrosive Acid debuff. Use Zort's Scraper once you have the debuff to collect it
+>>Find an Ice Heart Jormungar in the Canyon. Tank them until you get infected by their Corrosive Acid debuff. Use Zort's Scraper once you have the debuff to collect it
 .complete 12076,1 
 .use 36775
 step
@@ -40496,6 +43305,11 @@ step
 .complete 13090,1 
 .isOnQuest 13090
 step
+#completewith Rattlebore
+.use 36770
+>>Use Zort's Protective Elixir in your bags to help protect you from the Jormungars
+.itemcount 36770,1
+step
 #completewith next
 .goto Dragonblight,59.8,15.5,60,0
 .goto Dragonblight,57.18,12.17,25 >> Head to the Ice Heart Cavern
@@ -40514,6 +43328,7 @@ step
 .goto Dragonblight,50.68,17.79
 >>Kill Rattlebore at the end of Ice Heart Cavern. This quest is difficult. Find a group for him if needed. Skip this step if you're unable to find a group or solo him.
 .complete 12080,1 
+.isOnQuest 12080
 step
 .goto Dragonblight,53.8,11.4,60,0
 .goto Dragonblight,52.7,17.3,60,0
@@ -40528,6 +43343,7 @@ step
 .goto Dragonblight,46.49,20.38,-1
 >>Jump onto one of the blue rocks in the area. Log out, then back in
 .vehicle >>Use the Ruby Beacon in your bags to summon a flying mount to fly back to Zort and Ko'char with
+.link https://www.youtube.com/watch?v=oRQQMuodz4A >> CLICK HERE for a guide
 .use 38302
 step
 #requires JormungarCave
@@ -40535,16 +43351,11 @@ step
 .turnin 12078 >>Turn in Worm Wrangler
 .goto Dragonblight,59.40,18.19
 .turnin 12079 >>Turn in Stomping Grounds
+step
+>>Talk to Ko'char
 .turnin 12080 >>Turn in Really Big Worm
 .goto Dragonblight,58.97,17.82
 .isQuestComplete 12080
-step
-#requires JormungarCave
->>Return to Zort and Ko'char
-.turnin 12078 >>Turn in Worm Wrangler
-.goto Dragonblight,59.40,18.19
-.turnin 12079 >>Turn in Stomping Grounds
-.goto Dragonblight,58.97,17.82
 step
 #sticky
 #label RBWorm
@@ -40584,19 +43395,16 @@ step
 .turnin 12147 >>Turn in Disturbing Implications
 .accept 12148 >>Accept One of a Kind
 step
-#completewith RubyWings
-+From this point forward you can use the Ruby Beacon in your bags to summon a flying mount to travel through the middle of Dragonblight
-.use 38302
-.maxlevel 79
-step
 .goto Dragonblight,53.7,60.0,60,0
 .goto Dragonblight,50.8,59.1,60,0
 .goto Dragonblight,49.1,57.8,60,0
 .goto Dragonblight,53.7,60.0
+.use 38302 >>Use your Ruby Beacon to travel to Bonesunder
 >>Kill Bonesunder and loot him for the Horn. Avoid his "Bone Crack" spell by moving away when he starts casting it. He patrols around a little
 .complete 12148,1 
 .unitscan Bonesunder
 step
+>>Return to Wyrmrest Temple and talk to Aurastrasza
 .goto Dragonblight,60.00,55.2
 .turnin 12148 >>Turn in One of a Kind
 step << skip
@@ -40608,87 +43416,53 @@ step
 >>Talk to Alexstrasza on top of the temple
 .turnin 12498 >>Turn in On Ruby Wings
 .accept 12500 >>Accept Return to Angrathar
-.goto Dragonblight,59.54,53.35
+.goto Dragonblight,59.83,54.63
 step
-#completewith next
 .goto Dragonblight,59.54,53.35
-.fly >> Speak to to Torastrasza and fly to the bottom level of the temple
+.fly >> Speak to to Torastrasza and fly to the bottom level of the temple as we do not have the drake anymore.
 .skipgossip
 step
 #completewith next
-.goto Dragonblight,76.5,62.3
-.fly Kor'kron Vanguard >>Fly to Kor'kron Vanguard
+.goto Dragonblight,60.33,51.51
+.fly Kor'koron Vanguard >>Fly to Kor'koron Vanguard
 step
-.goto Dragonblight,40.7,18.2
+.goto Dragonblight,40.71,18.07
 >>Return to Saurfang at the Kor'kron Vanguard. Get ready to press Escape if you don't want to watch the cinematic
 .turnin 12500 >>Turn in Return to Angrathar
+
 step
+#questguide
 .goto Dragonblight,38.4,19.2
 >>Talk to Alexstraza at the Wrathgate
 .accept 13242 >>Accept Darkness Stirs
 step
-.goto Dragonblight,38.2,18.7
->>Loot the spikey collar on the ground
+#questguide
+.goto Dragonblight,38.16,18.70
+>>Loot Saurfang's Battle Armor on the ground.
 .complete 13242,1 
 step
+#questguide
 #completewith Saurfang
 .goto Dragonblight,43.8,16.9
 .fly Warsong Hold >> Fly to Warsong Hold
 step
+#questguide
 >>Talk to Orn Tenderhoof
 .turnin 13090 >>Turn in Northern Cooking
 .goto BoreanTundra,41.98,54.11
 .isQuestComplete 13090
 .skill cooking,<350,1
 step
+#questguide
 #label Saurfang
 .goto BoreanTundra,41.4,53.7
 >>Talk to Saurfang on the bottom floor of Warsong Hold
 .turnin 13242 >>Turn in Darkness Stirs
 .accept 13257 >>Accept Herald of War
-step << !Mage
+step
+#questguide
 .goto BoreanTundra,41.5,53.8
-.zone Durotar >> Take the portal behind Saurfang to Orgrimmar
-step << Mage
-.zone Orgrimmar >> Teleport to Orgrimmar
-step << Mage
-.goto Orgrimmar,38.4,86.1
-.train 43019 >>Go downstairs. Train your class spells
-.xp <73,1
-step << Mage
-#label MageTrain2
-.goto Orgrimmar,38.4,86.1
-.train 42939 >>Go downstairs. Train your class spells
-.xp <74,1
-step << Shaman/Paladin
-#completewith ShPaTraining
-.goto Orgrimmar,40.5,36.9,25 >>Enter Grommash Hold
-step << Shaman
-.goto Orgrimmar,38.6,36.0
-.train 49237 >> Train your class spells
-.xp <73,1
-step << Shaman
-.goto Orgrimmar,38.6,36.0
-.train 49270 >> Train your class spells
-.xp <74,1
-step << Shaman
-#label ShPaTraining
-.goto Orgrimmar,38.6,36.0
-.train 49280 >> Train your class spells
-.xp <75,1
-step << Paladin
-.goto Orgrimmar,32.3,35.7
-.train 48931 >> Train your class spells
-.xp <73,1
-step << Paladin
-.goto Orgrimmar,32.3,35.7
-.train 48805 >> Train your class spells
-.xp <74,1
-step << Paladin
-#label ShPaTraining
-.goto Orgrimmar,32.3,35.7
-.train 48818 >> Train your class spells
-.xp <75,1
+.zone Durotar >> Take the portal next to Saurfang to Orgrimmar
 step
 #questguide
 .goto Orgrimmar,63.6,38.2,30,0 << Hunter/Warrior
@@ -40698,6 +43472,7 @@ step
 .turnin 13257 >>Turn in Herald of War
 .accept 13266 >>Accept A Life Without Regret
 step
+#questguide
 #label end
 .goto Orgrimmar,63.6,38.2,30,0 << Hunter/Warrior
 .goto Orgrimmar,40.5,36.9,25,0 << !Shaman !Paladin
@@ -40709,7 +43484,6 @@ step
 #completewith next
 .goto Orgrimmar,33.4,36.6
 .zone Tirisfal Glades >> Take the portal to Undercity
-.isOnQuest 13266
 step
 #questguide
 .goto Tirisfal Glades,61.7,62.9
@@ -40719,8 +43493,9 @@ step
 step
 #questguide
 .goto Undercity,54.5,89.6
->>Talk to Thrall
+>>Talk to Thrall to start the Undercity battle. Go through the event and turn in the quest.
 .turnin 13267 >>Turn in The Battle For The Undercity
+.skipgossip
 step << !Mage
 #questguide
 .goto Undercity,56.1,90.8
@@ -40735,72 +43510,94 @@ step << Priest
 .goto Orgrimmar,35.6,87.8
 .train 48126 >> Train your class spells
 .xp <74,1
+.isQuestTurnedIn 13267
 step << Priest
 .goto Orgrimmar,35.6,87.8
 .train 48124 >> Train your class spells
 .xp <75,1
+.isQuestTurnedIn 13267
 step << Rogue
 .goto Orgrimmar,44.0,54.6
 .train 48667 >> Train your class spells
 .xp <73,1
+.isQuestTurnedIn 13267
 step << Warlock
 .goto Orgrimmar,48.0,46.0
 .train 47892 >> Train your class spells
 .xp <74,1
+.isQuestTurnedIn 13267
 step << Hunter/Warrior
 #completewith HuWaTraining
 .goto Orgrimmar,63.6,38.2,30 >> Enter the Valley of Honor
 .xp <73,1
+.isQuestTurnedIn 13267
 step << Hunter
 .goto Orgrimmar,66.1,18.5
 .train 49044 >> Train your class spells
 .xp <73,1
+.isQuestTurnedIn 13267
 step << Hunter
 .goto Orgrimmar,66.1,18.5
 .train 61846 >> Train your class spells
 .xp <74,1
+.isQuestTurnedIn 13267
 step << Hunter
 #label HuWaTraining
 .goto Orgrimmar,66.1,18.5
 .train 61005 >> Train your class spells
 .xp <75,1
+.isQuestTurnedIn 13267
 step << Warrior
 #label HuWaTraining
 .goto Orgrimmar,76.9,32.6,30,0
 .goto Orgrimmar,79.8,31.4
 .train 47470 >> Train your class spells
 .xp <73,1
+.isQuestTurnedIn 13267
 step << Warrior
 .goto Orgrimmar,76.9,32.6,30,0
 .goto Orgrimmar,79.8,31.4
 .train 55694 >> Train your class spells
 .xp <75,1
-step
-.hs >>Hearth to Wyrmrest Temple
-.zoneskip Dragonblight
-.cooldown item,6948,>0
+.isQuestTurnedIn 13267
 step
 .goto Orgrimmar,53.8,48.0
-.zone Dragonblight >> Ghetto Hearth to Wyrmrest Temple. To do this, enter Ragefire Chasm, then copy paste the link below into chat. Wait out the 1 minute warning
+.zone Dragonblight >> Ghetto Hearth to Wyrmrest Temple. To do this, enter Ragefire Chasm, then copy & paste the link below into chat. Wait out the 1 minute warning
 .link /run InviteUnit("a");C_Timer.After(1,function() LeaveParty() end) >> CLICK HERE
+.cooldown item,6948,<0
 step
-#completewith next
-.goto Dragonblight,60.32,51.55
+.hs >>Hearth to Wyrmrest Temple
+.cooldown item,6948,>0
+.zoneskip Dragonblight
+step
+#completewith WrothXd
+.goto Dragonblight,60.32,51.55,-1
+.goto Dragonblight,43.85,16.89,-1
 .fly Venomspite >>Fly to Venomspite
+step
+.goto Dragonblight,25.61,51.30,0
+.loop 50,Dragonblight,87.90,41.21,87.00,42.19,86.45,40.12,85.51,41.24,83.78,41.98,84.14,40.72,84.49,37.06,87.64,35.43,87.90,41.21
+.xp 73 >> Grind the Scarlet Onslaught to level 73. Alternatively, do Azjol'nerub and its quests
 step
 .goto Dragonblight,76.77,63.28,12,0
 .goto Dragonblight,76.77,63.28
 >>Talk to Wroth in Venomspite
 .turnin 12488 >>Turn in The High Executor Needs You
+.isOnQuest 12488
+step
+#label WrothXd
+.goto Dragonblight,76.77,63.28,12,0
+.goto Dragonblight,76.77,63.28
+>>Talk to Wroth in Venomspite
 .accept 12487 >>Accept To Conquest Hold, But Be Careful!
 step
 .goto GrizzlyHills,20.8,64.6
 .zone Grizzly Hills >> Travel to Grizzly Hills
 ]])
 RXPGuides.RegisterGuide([[
-#version 5
+#version 9
 #wotlk
-#group Horde 70-80
+#group RestedXP Horde 70-80
 << Horde
 #name 74-75 Grizzly Hills
 #next 75-77 Zul'Drak
@@ -40808,13 +43605,12 @@ step
 #completewith Talismans
 .goto GrizzlyHills,21.2,64.5,20,0
 .goto GrizzlyHills,20.8,64.6
->>Talk to Rhekku inside Conquest Hold
+>>Travel to Conquests Hold and talk to Rhekku
 .home >> Set your Hearthstone to Conquest Hold
 step
 .goto GrizzlyHills,20.7,64.2
->>Travel to Conquest Hold in Grizzly Hills. Talk to Krenna
+>>Talk to Krenna
 .turnin 12487 >>Turn in To Conquest Hold, But Be Careful!
-.accept 12468 >>Accept The Conqueror's Task
 .isOnQuest 12487
 step
 .goto GrizzlyHills,20.7,64.2
@@ -40824,8 +43620,8 @@ step
 .goto GrizzlyHills,21.0,64.1
 >>Talk to Nazgrim
 .turnin 12468 >>Turn in The Conqueror's Task
-.accept 12256 >>Accept The Flamebinders' Secrets
 .accept 12257 >>Accept A Show of Strength
+.accept 12256 >>Accept The Flamebinders' Secrets
 step
 .goto GrizzlyHills,22.0,64.5
 >>Talk to Kragh
@@ -40849,14 +43645,14 @@ step
 #pvp
 >>Ride down to Venture Bay. Talk to Khazgar, Kaggrum, Gurtor, and Ragetotem
 >>NOTE: This quest (and keeping it in your questlog) flags you for PVP. Skip it if you wish
-.accept 12317 >>Accept Keep Them at Bay
-.goto GrizzlyHills,10.1,77.3
-.accept 12315 >>Accept Crush Captain Brightwater!
-.goto GrizzlyHills,10.0,77.2
 .accept 12433 >>Accept Seeking Solvent
 .goto GrizzlyHills,11.2,76.6
 .accept 12324 >>Accept Smoke 'Em Out
 .goto GrizzlyHills,11.4,76.7
+.accept 12317 >>Accept Keep Them at Bay
+.goto GrizzlyHills,10.1,77.3
+.accept 12315 >>Accept Crush Captain Brightwater!
+.goto GrizzlyHills,10.0,77.2
 
 step
 #completewith Brightwater
@@ -41008,7 +43804,7 @@ step
 .turnin 12170 >>Turn in Blackriver Brawl
 .isQuestComplete 12170
 step
-.goto GrizzlyHills,28.8,69.7,80,0
+.groundgoto GrizzlyHills,28.81,69.80,60,0
 .goto GrizzlyHills,31.1,65.4,60,0
 .goto GrizzlyHills,32.0,70.8,60,0
 .goto GrizzlyHills,34.1,62.7,60,0
@@ -41045,6 +43841,7 @@ step
 .goto GrizzlyHills,22.7,66.2
 step
 #completewith next
+.groundgoto 24.29,80.85,50,0
 .goto GrizzlyHills,26.6,77.8
 .vehicle >> Mount Flamebringer in Voldrune
 .skipgossip
@@ -41052,6 +43849,7 @@ step
 .goto GrizzlyHills,27.6,72.9
 >>Thane is ontop of the tower.
 >>Use Wing Buffet (2) to combo with Molten Fury (3). Spam Flame Breath (1) when the other spells are on cooldown.
+>>Be sure to move out of his Volley.
 .complete 12259,1 
 step
 .goto GrizzlyHills,21.0,64.1
@@ -41146,10 +43944,10 @@ step
 step
 .goto GrizzlyHills,20.7,64.2
 >>Talk to Krenna in Conquest Hold
-.turnin 12423 >>Turn in Mikhail's Journal
-.accept 12424 >>Accept Gorgonna
 .turnin 12412 >>Turn in My Enemy's Friend
 .accept 12413 >>Accept Attack on Silverbrook
+.turnin 12423 >>Turn in Mikhail's Journal
+.accept 12424 >>Accept Gorgonna
 step
 .goto GrizzlyHills,20.9,64.0
 >>Talk to Gorgonna
@@ -41209,12 +44007,14 @@ step
 .collect 38083,1,11989,1 
 .use 38083
 step
+.goto GrizzlyHills,16.43,47.77
 .use 38083 >>Talk to Drakuru again
 .complete 11989,1 
+.skipgossip 26423,1
+step
 .turnin 11989 >>Turn in Truce?
 .accept 11990 >>Accept Vial of Visions
 .goto GrizzlyHills,16.43,47.77
-.skipgossip
 step
 .goto GrizzlyHills,15.96,47.79
 >>Talk to Ameenah. Buy an Imbued Vial from her
@@ -41223,7 +44023,7 @@ step
 step
 .goto GrizzlyHills,16.7,43.4,70,0
 .goto GrizzlyHills,12.6,41.4
->>Loot the small Bruiseweed-esque plants on the ground
+>>Loot the small Hazewood Bushes on the ground
 .complete 11990,2 
 step
 .goto GrizzlyHills,15.30,40.08
@@ -41371,17 +44171,20 @@ step
 >>Kill the Silverbrook Defenders in the area
 .complete 12413,1 
 step
+#questguide
 #pvp
->>Travel to the Blue Sky Logging Camp. Talk to Aumana, Lurz, Grekk, and Bargok
+>>Travel to the Blue Sky Logging Camp. Talk to Aumana, Grekk, and Bargok
 >>NOTE: These quests (and keeping them in your questlog) flags you for PVP. Skip them if you wish
 .accept 12288 >>Accept Overwhelmed!
 .goto GrizzlyHills,33.8,32.7
-.accept 12280 >>Accept Making Repairs
-.goto GrizzlyHills,34.3,32.6
 .accept 12270 >>Accept Shred the Alliance
 .goto GrizzlyHills,34.5,32.5
 .accept 12284 >>Accept Keep 'Em on Their Heels
 .goto GrizzlyHills,34.5,33.0
+step
+>>Talk to Lurz
+.accept 12280 >>Accept Making Repairs
+.goto GrizzlyHills,34.3,32.6
 step
 #pvp
 #completewith Engineer
@@ -41391,13 +44194,6 @@ step
 >>Kill Westfall Brigade Infantry (or Alliance players) in the area.
 .complete 12284,1 
 .isOnQuest 12284
-step
-.goto GrizzlyHills,38.1,32.0,30,0
-.goto GrizzlyHills,37.0,32.4
->>Go up the tower in the water on the north-side of the Blue Sky Logging grounds
->>Go inside the little room at the top and loot the gem on the ground
-.turnin 12042 >>Turn in Heart of the Ancients
-.accept 12802 >>Accept My Heart is in Your Hands
 step
 #pvp
 #completewith WBInfantry
@@ -41510,6 +44306,13 @@ step
 .abandon 12284 >>Abandon Keep 'Em on Their Heels
 .abandon 12288 >>Abandon Overwhelmed!
 step
+.groundgoto GrizzlyHills,38.1,32.0,30,0
+.goto GrizzlyHills,37.0,32.4
+>>Go up the tower in the water on the north-side of the Blue Sky Logging grounds
+>>Go inside the little room at the top and loot the gem on the ground
+.turnin 12042 >>Turn in Heart of the Ancients
+.accept 12802 >>Accept My Heart is in Your Hands
+step
 #completewith next
 .goto GrizzlyHills,45.0,28.4,0
 >>Kill the Drakkari Trolls in the area. Loot them for their Mojo
@@ -41586,14 +44389,15 @@ step
 step
 .goto GrizzlyHills,22.5,62.9
 >>Talk to Grayhorn
-.accept 12213 >>Accept The Darkness Beneath
 .accept 12207 >>Accept Vordrassil's Fall
+.accept 12213 >>Accept The Darkness Beneath
 .accept 12453 >>Accept Eyes Above
 step
 >>Look for a group for The Conquest Pit questline. There are 5 elite quests that give a LOT of fast xp. Only accept this when your party is ready and on the same quest progression as you. (Auto-accept is disabled for this questline). Skip this step if you can't find a group for it
 >>Talk to Grennix
 .goto GrizzlyHills,22.4,63.8
-.accept 12427,0 >>Accept The Conquest Pit: Bear Wrestling!
+.accept 12427,1 >>Accept The Conquest Pit: Bear Wrestling!
+.isQuestTurnedIn 12178
 step
 .goto GrizzlyHills,23.5,64.9
 >>Enter The Conquest Pit. Kill Ironhide
@@ -41722,6 +44526,7 @@ step
 .complete 12328,1 
 step
 #requires impeagle
+>>Return back to Ruuna
 .goto GrizzlyHills,44.0,48.0
 .turnin 12328 >>Turn in Ruuna's Request
 .accept 12327 >>Accept Out of Body Experience
@@ -41946,17 +44751,20 @@ step
 .complete 12195,1 
 step
 #label Paluna2
->>Return to Paluna, Vor'takh and Tormak at Camp Oneqwah. Wait for Paluna's RP. You can vendor/repair etc in this time
+>>Return to Paluna and Tormak at Camp Oneqwah. Wait for Paluna's RP. You can vendor/repair etc in this time
 .turnin 12054 >>Turn in Deciphering the Journal
 .timer 30,Deciphering the Journal RP
 .goto GrizzlyHills,65.2,47.8
 .accept 12073 >>Accept Pounding the Iron
 .goto GrizzlyHills,65.2,47.7
+.accept 12058 >>Accept The Runic Prophecies
+.goto GrizzlyHills,65.2,47.8
+step
+>>Talk to Vor'takh
+.isOnQuest 12195
 .turnin 12195 >>Turn in The Unexpected 'Guest'
 .accept 12165 >>Accept An Intriguing Plan
 .goto GrizzlyHills,65.2,47.5
-.accept 12058 >>Accept The Runic Prophecies
-.goto GrizzlyHills,65.2,47.8
 step
 #completewith mountainhigh
 .use 37716 >> Use the Flashbang Grenade in your bags on the Highland Mustangs that you see.
@@ -41974,7 +44782,7 @@ step
 .turnin 12074 >>Turn in An Expedient Ally
 .accept 11982 >>Accept Raining Down Destruction
 step
->>Collect the glowing boulders on the ground
+>>Collect the glowing boulders on the ground. Be careful not to fall down.
 .collect 35734,5,11982,1,-1 
 .goto GrizzlyHills,65.4,13.1,80,0
 .goto GrizzlyHills,67.2,12.2,15,0
@@ -42033,8 +44841,8 @@ step
 >>Kill the Iron Dwarves in the area
 .complete 12073,1 
 step
-.goto GrizzlyHills,65.1,19.5,40,0
-.goto GrizzlyHills,60.9,19.8,70,0
+.groundgoto GrizzlyHills,65.1,19.5,40,0
+.groundgoto GrizzlyHills,60.9,19.8,70,0
 .goto GrizzlyHills,65.8,17.8
 >>Leave the ravine. Return to Kurun
 .turnin 11985 >>Turn in Into the Breach
@@ -42087,7 +44895,7 @@ step
 >>Kill the Iron Rune-Weavers around the purple circle. Kill Overseer Brunon when he spawns.
 .complete 12093,4 
 step
-.goto GrizzlyHills,74.6,37.5
+.goto GrizzlyHills,75.07,37.15
 >>Kill the Iron Rune-Weavers around the purple circle. Kill Overseer Lochli when he spawns.
 .complete 12093,3 
 step
@@ -42140,6 +44948,7 @@ step
 >>Loot the Drakkari Canopic Jars in the room full of spirits
 .complete 12116,1 
 step
+.goto GrizzlyHills,69.77,18.23,10
 .goto GrizzlyHills,69.4,18.3
 >>Loot the Drakkari tablet in the room that's flooded slightly with water
 .complete 12068,1 
@@ -42240,7 +45049,7 @@ step
 .complete 12137,2 
 .skipgossip
 step
-.goto GrizzlyHills,73.91,34.12
+.goto GrizzlyHills,73.91,34.12,-1
 >>Return to Harkor's Camp. Talk to Kraz
 .turnin 12137 >>Turn in Chill Out, Mon
 .accept 12152 >>Accept Jin'arrak's End
@@ -42329,7 +45138,7 @@ step
 >>Look for a group for The Conquest Pit questline. There are 5 elite quests that give a LOT of fast xp. Only accept this when your party is ready and on the same quest progression as you. (Auto-accept is disabled for this questline). Skip this step if you can't find a group for it
 >>Talk to Grennix
 .goto GrizzlyHills,22.4,63.8
-.accept 12427,0 >>Accept The Conquest Pit: Bear Wrestling!
+.accept 12427,1 >>Accept The Conquest Pit: Bear Wrestling!
 step
 .goto GrizzlyHills,23.5,64.9
 >>Enter The Conquest Pit. Kill Ironhide
@@ -42428,7 +45237,7 @@ step
 step
 .goto GrizzlyHills,50.5,46.0,45,0
 .goto GrizzlyHills,50.7,42.9
-.use 37306 >>Enter Vordrassil. Jump down to the bottom of the tree, then use the Verdant Torch at the bottom
+.use 37306 >>Enter Vordrassil. Jump down to the bottom of the tree and use the Verdant Torch near the tree
 .complete 12241,1 
 step
 #label VSeeds
@@ -42473,7 +45282,7 @@ step
 >>Return to Hugh Glass. Question him
 .complete 12204,1 
 .turnin 12279 >>Turn in A Bear of an Appetite
-.skipgossip
+.skipgossip 26484,1
 step
 .goto GrizzlyHills,73.9,34.1
 >>Return to Harkor's Camp and talk to Kraz
@@ -42554,7 +45363,7 @@ step
 #completewith next
 .cast 48064 >> Mount up, then use the Overseer Disguise Kit in your bags.
 step
-.groundgoto GrizzlyHills,78.20,59.20,60,0
+.groundgoto GrizzlyHills,77.70,59.07,40,0
 .goto GrizzlyHills,81.60,60.34
 .cast 3365 >>Do NOT cast any spells whilst disguised. Ride to the easternmost building and click on Loken's Pedestral. Do NOT wait out the RP event
 .timer 24,Message from Loken RP
@@ -42572,7 +45381,7 @@ step
 .goto GrizzlyHills,74.9,51.3,70,0
 .goto GrizzlyHills,77.5,52.4,70,0
 .goto GrizzlyHills,79.9,56.7
-.use 36936 >>Use the Golem Control Unit in your bags. Kill Lightning Sentries with the Depleted War Golem out (within 30 yards or less) and then wait for it (again, within 30 yards or less) to collect the Sentry's charge
+.use 36936 >>Use the Golem Control Unit in your bags. Kill Lightning Sentries with the Depleted War Golem out and then wait for it to collect the Sentry's charge (within 30 yards or less)
 .complete 12198,1 
 step
 .goto GrizzlyHills,65.1,47.3
@@ -42583,18 +45392,18 @@ step
 .use 36865 >>Ride to the top building and take the elevator down to the bottom floor. Use the Golem Control Unit. Use EMP (2) to remove his invulnerability and stun The Anvil (his pet). Spam Charged Smash (1) to kill him
 .complete 12199,1 
 .goto GrizzlyHills,76.4,63.8
-step
+step << DK/Mage/Druid/Shaman
 #completewith next
 .hs >> Hearth to Camp Oneqwah
 .cooldown item,6948,>0
 step
 .goto GrizzlyHills,65.2,47.5
->>Return to Campe Oneqwah. Talk to Tormak
+>>Return to Camp Oneqwah. Talk to Tormak
 .turnin 12199 >>Turn in Bringing Down the Iron Thane
 step
 #completewith end
 .goto GrizzlyHills,65.0,46.9
-.fly Conquest Hold >> Fly to Conquest Hold.
+.fly Conquest Hold >> Fly to Conquest Hold
 step
 #questguide
 .goto GrizzlyHills,22.5,62.9
@@ -42610,7 +45419,8 @@ step
 >>Look for a group for The Conquest Pit questline. There are 5 elite quests that give a LOT of fast xp. Only accept this when your party is ready and on the same quest progression as you. (Auto-accept is disabled for this questline). Skip this step if you can't find a group for it (this is your last chance!)
 >>Talk to Grennix
 .goto GrizzlyHills,22.4,63.8
-.accept 12427,0 >>Accept The Conquest Pit: Bear Wrestling!
+.accept 12427,1 >>Accept The Conquest Pit: Bear Wrestling!
+.isQuestTurnedIn 12178
 step
 .goto GrizzlyHills,23.5,64.9
 >>Enter The Conquest Pit. Kill Ironhide
@@ -42674,17 +45484,18 @@ step
 .isQuestTurnedIn 12427
 step
 .goto GrizzlyHills,23.5,64.9
->>Enter The Conquest Pit. Wait out the RP. Kill Antis and Sethyel, and then Krenna
+>>Enter The Conquest Pit. Wait out the RP. Kill Antis, Sethyel, and then Krenna
 .complete 12431,1 
 .isQuestTurnedIn 12427
 step
-.isQuestTurnedIn 12427
 .goto GrizzlyHills,23.5,65.0
 >>Quickly talk to Gorgonna. The quest will fail if you don't talk to her within 35s
 .turnin 12431 >>Turn in The Conquest Pit: Final Showdown
+.isQuestTurnedIn 12427
 step << DK/Mage/Druid
+#completewith next
 .goto GrizzlyHills,22.0,64.5
-.fly Camp Oneqwah>> Fly to Camp Oneqwah
+.fly Camp Oneqwah >> Fly to Camp Oneqwah
 step << !DK !Mage !Druid
 #completewith next
 .goto GrizzlyHills,20.6,64.3
@@ -42737,21 +45548,20 @@ step << Warrior
 .goto Orgrimmar,79.8,31.4
 .train 55694 >> Train your class spells
 .xp <75,1
-step << !DK !Druid !Mage
-.goto Orgrimmar,53.8,48.0
-.zone GrizzlyHills >> Ghetto Hearth to Camp Oneqwah. To do this, enter Ragefire Chasm, then copy paste the link below into chat. Wait out the 1 minute warning
-.link /run InviteUnit("a");C_Timer.After(1,function() LeaveParty() end) >> CLICK HERE
+step << !DK !Mage !Druid
+#completewith next
+.hs >> Hearth to Camp Oneqwah
 step
 .goto GrizzlyHills,65.0,46.9
 .zone Zul'Drak >> Talk to Makki. Ask for a flight to Light's Breach
 .skipgossip 26853,2
 ]])
 RXPGuides.RegisterGuide([[
-#version 5
+#version 9
 #wotlk
-#group Dungeon Cleave 70-80
+#group RestedXP Dungeon Cleave 70-80
 << Horde
-#name 75-77 Gundrak Lockout
+#name 75-77 Gundrak Lockout Horde
 #next 70-80 Horde Dungeon Cleave
 
 step
@@ -42760,9 +45570,9 @@ step
 .xp 77 >> Grind the mobs in Zol'Maz until your lockouts expire. Try to take one corner of the subzone each to force dynamic respawns
 ]])
 RXPGuides.RegisterGuide([[
-#version 5
+#version 9
 #wotlk
-#group Horde 70-80
+#group RestedXP Horde 70-80
 << Horde
 #name 78-79 The Storm Peaks
 #next 79-80 Icecrown
@@ -42869,7 +45679,7 @@ step
 >>Talk to Tirion behind you
 .accept 13105 >>Accept Once More Unto The Breach, Hero
 step
->>Travel north-west. Talk to The Ebon Watcher, Silas, Spitzpatrick, and then Gustav inside the house
+>>Travel north-west. Talk to The Ebon Watcher, Silas, Spitzpatrick, and Gustav inside the house
 .turnin 13105 >>Turn in Once More Unto The Breach, Hero
 .accept 13118 >>Accept The Purging Of Scourgeholme
 .accept 13122 >>Accept The Scourgestone
@@ -42926,6 +45736,7 @@ step
 .goto TheStormPeaks,30.38,85.65
 >>Kill Gnarlhide
 .complete 12836,1 
+.unitscan Gnarlhide
 step
 #label Rations
 .goto TheStormPeaks,31.81,85.75
@@ -43019,6 +45830,7 @@ step
 .goto TheStormPeaks,48.1,70.6
 >>Kill an Icetip Crawler deep in the cave. Loot it for its Venom Sac
 .complete 12831,1 
+.unitscan Icetip Crawler
 step
 .goto TheStormPeaks,43.9,76.3
 >>Kill Snowblind Diggers in the barricaded area of the cave. Loot them for their Ore
@@ -43031,7 +45843,7 @@ step
 step
 #label InjuredGoblin
 .goto TheStormPeaks,42.31,73.97
->>Return to the Injured Goblin Miner you talked to before
+>>Return to the Injured Goblin Miner you talked to before.
 .turnin 12831 >>Turn in Only Partly Forgotten
 .accept 12832 >>Accept Bitter Departure
 step
@@ -43135,7 +45947,6 @@ step
 .goto TheStormPeaks,50.16,81.64,-1
 +Jump on the smaller altar and logout. Log back and in you'll arrive at Garm's Rise. If you can't get it to work, skip this step.
 .link https://gyazo.com/c99feef87abf5fb5545bc737d0492f71 >>Click here for a picture reference of where to logout
-
 step
 .goto TheStormPeaks,50.5,81.7,40,0
 .goto TheStormPeaks,50.16,81.64
@@ -43356,7 +46167,7 @@ step
 .turnin 12906 >>Turn in Discipline
 .accept 12907 >>Accept Examples to be Made
 step
-.goto TheStormPeaks,45.42,69.06
+.goto TheStormPeaks,45.41,69.10
 >>Kill Garhal just east of Mildred in the cave
 .complete 12907,1 
 .unitscan Garhal
@@ -43373,7 +46184,7 @@ step
 step
 .goto TheStormPeaks,41.8,69.6,30,0
 .goto TheStormPeaks,47.47,69.09
->>Exit The Forlon Mine. Fly to Brunnhildar Village
+>>Exit The Forlon Mine and fly to Brunnhildar Village
 .turnin 12921 >>Turn in A Change of Scenery
 .accept 12969 >>Accept Is That Your Goblin?
 step
@@ -43406,7 +46217,7 @@ step
 .goto TheStormPeaks,53.14,65.72
 >>Talk to Brijana
 .turnin 12972 >>Turn in You'll Need a Bear
-.accept 12851 >>Accept Going Bearback
+.accept 12851 >>Accept Bearly Hanging On
 step
 #completewith next
 .goto The Storm Peaks,53.12,65.61
@@ -43420,12 +46231,12 @@ step
 step
 .goto TheStormPeaks,53.14,65.72
 >>Use "Burst of Speed" (2) to get back to Brijana faster. Talk to her
-.turnin 12851 >>Turn in Going Bearback
+.turnin 12851 >>Turn in Bearly Hanging On
 .accept 12856 >>Accept Cold Hearted
 step
 #completewith next
 .goto TheStormPeaks,63.20,62.88
-.vehicle >>Fly to Dun Niffelem. Mount a Captive Proto-Drake, they are chained to the big ice spikes around the outer walls of Dun Niffelem
+.vehicle >>Fly to Dun Niffelem and mount a Captive Proto-Drake. They are chained to the big ice spikes around the outer walls of Dun Niffelem
 step
 .waypoint TheStormPeaks,53.1,65.7,0,niffelen,VEHICLE_PASSENGERS_CHANGED,VEHICLE_UPDATE
 .goto The Storm Peaks,66.75,60.63
@@ -43493,7 +46304,7 @@ step
 .use 42481
 step
 .goto TheStormPeaks,50.79,67.68
-.use 42481 >>Kill Kirgaraak. Use Maul (1) to deal damage. Use Smash (2) into Charge (3) to deal additional damage.
+.use 42481 >>Kill Kirgaraak. Use Maul (4) to deal damage. Use Smash (5) into Charge (6) to deal additional damage.
 .complete 12996,1 
 step
 .goto TheStormPeaks,49.75,71.81
@@ -43507,7 +46318,7 @@ step
 .use 42499
 step
 .goto TheStormPeaks,49.24,68.46
-.use 42499 >>Kill the Warbears in the pit. Use Maul (1) to deal damage. Use Smash (2) into Charge (3) to deal additional damage.
+.use 42499 >>Kill the Warbears in the pit. Use Maul (4) to deal damage. Use Smash (5) into Charge (6) to deal additional damage.
 .complete 12997,1 
 step
 .goto TheStormPeaks,49.75,71.81
@@ -43570,6 +46381,7 @@ step
 .goto TheStormPeaks,24.00,61.93
 >>Go inside the big building of Valkyrion. Kill Yulda the Stormspeaker
 .complete 12968,1 
+.unitscan Yulda the Stormspeaker
 step
 .goto TheStormPeaks,24.05,61.70
 >>Click the crate next to Yulda
@@ -43667,6 +46479,9 @@ step
 .turnin 12920 >>Turn in Catching up with Brann
 .accept 12926 >>Accept Pieces of the Puzzle
 step
+#completewith next
++From here, start saving your Frostweave Cloth. We will need 5 for later.
+step
 .goto TheStormPeaks,38.6,43.5,70,0
 .goto TheStormPeaks,37.4,43.0,70,0
 .goto TheStormPeaks,37.8,40.2,70,0
@@ -43707,7 +46522,7 @@ step
 .use 44704
 step
 .goto TheStormPeaks,37.53,46.52
-.use 44704 >>Wait out the RP, then kill Mechaton. Loot him for the Shell
+.use 44704 >>Wait out the RP event then kill Mechaton. Loot him for the Shell
 .complete 12928,1 
 step
 .goto TheStormPeaks,30.64,36.32
@@ -43721,13 +46536,13 @@ step
 step
 .use 40971 >> Use Brann's Communicator in your bags. Talk to Brann
 .turnin 12928 >>Turn in Norgannon's Shell
-
+.accept 12929 >>Accept The Earthen of Ulduar
 .accept 13273 >>Accept Going After the Core
 step
 .goto TheStormPeaks,31.42,38.08
 >>Talk to Bouldercrag
 >>Do NOT vendor any frostweave you have
-
+.turnin 12929 >>Turn in The Earthen of Ulduar
 .accept 12930 >>Accept Rare Earth
 step
 #requires BrannCom1
@@ -43737,7 +46552,7 @@ step
 step
 #completewith next
 .cast 2580 >> Cast Find Minerals to help you find the nodes
-.skill mining,1
+.skill mining,<1,1
 
 step
 .goto TheStormPeaks,30.97,34.21,60,0
@@ -43763,7 +46578,7 @@ step
 step
 .goto TheStormPeaks,28.6,35.6,70,0
 .goto TheStormPeaks,26.9,41.5
-.use 41988 >> Use the Telluric Poultice in your bags on the Fallen Earthen Defenders
+.use 41988 >>Use the Telluric Poultice in your bags on the Fallen Earthen Defenders. After casting it, you can cancel the channel and run off as it will still complete
 .complete 12937,1 
 step
 .goto TheStormPeaks,26.9,41.5
@@ -43884,7 +46699,7 @@ step
 >>Kill Stormforged Artificers in the area
 .complete 12991,1 
 step
-.use 42441 >> Use Bouldercrag's Bomb in your bags on the Forges (wooden pots holding the blue crystals) in the area
+.use 42441 >>Use Bouldercrag's Bomb in your bags on the Forges (Dwarf Forge holding the blue crystals) in the area
 .complete 12988,1 
 .goto TheStormPeaks,29.0,45.8
 .complete 12988,2 
@@ -43920,7 +46735,8 @@ step
 .complete 12998,1 
 step
 #completewith next
-.hs >> Hearth to Bouldercrag
+.hs >> Hearth to Bouldercrag Refuge
+.cooldown item,6948,>0
 step
 .goto TheStormPeaks,31.42,38.08
 >>Talk to Bouldercrag in his Refuge
@@ -43933,7 +46749,8 @@ step
 step
 .goto TheStormPeaks,27.19,43.06,50,0
 .goto TheStormPeaks,28.78,47.99
->>Cast Submerge (1) to be able to move. When you are under the Iron Colossus, cast Emerge (1 while submerged). Spam Jormungar Strike (2), and Acid Breath (3) to deal damage. Once The Iron Colossus emotes that he's preparing to slam the ground, Submerge (1) until he finishes casting, then Emerge (1) to start attacking him again
+>>Cast Submerge (1) to be able to move. When you are under the Iron Colossus, cast Emerge (1 while submerged). Spam Jormungar Strike (2) and stack Acid Breath (3) to deal damage.
+>>When The Iron Colossus emotes that he's preparing to slam the ground, Submerge (1) and run behind him until he finishes casting, then Emerge (1) to start attacking him again.
 .complete 13007,1 
 step
 .goto TheStormPeaks,31.42,38.08
@@ -43996,7 +46813,7 @@ step
 #requires gretta
 #label beardaily
 .goto TheStormPeaks,49.24,68.46
-.use 42499 >>Kill the Warbears in the pit. Use Maul (1) to deal damage. Use Smash (2) into Charge (3) to deal additional damage.
+.use 42499 >>Kill the Warbears in the pit. Use Maul (4) to deal damage. Use Smash (5) into Charge (6) to deal additional damage.
 .complete 13424,1 
 .isOnQuest 13424
 step
@@ -44016,7 +46833,7 @@ step
 #completewith Giants
 #label Slag
 .goto TheStormPeaks,71.8,61.1,0
->>Kill Stormforged Iron Giants. Loot them for their Slag Covered Metal. Start the quest
+.use 41556 >>Kill Stormforged Iron Giants. Loot them for their Slag Covered Metal. Start the quest
 .collect 41556,1,12922,1 
 .accept 12922 >>Accept The Refiner's Fire
 
@@ -44038,7 +46855,7 @@ step
 .complete 12915,2 
 step
 .goto TheStormPeaks,71.8,61.1
->>Kill Stormforged Iron Giants. Loot them for their Slag Covered Metal. Start the quest
+.use 41556 >>Kill Stormforged Iron Giants. Loot them for their Slag Covered Metal. Start the quest
 .collect 41556,1,12922,1 
 .accept 12922 >>Accept The Refiner's Fire
 step
@@ -44074,7 +46891,7 @@ step
 .goto TheStormPeaks,55.35,57.76,30 >>Fly to the entrance of Loken's Bargain
 step
 .goto TheStormPeaks,56.38,52.11
->>Go to the end. Kill Athan. Loot him for Norgannon's Core
+>>Go to the end and kill Athan. Loot him for Norgannon's Core
 .complete 13274,1 
 step
 .use 40971 >> Use Brann's Communicator in your bags. Talk to Brann
@@ -44086,7 +46903,7 @@ step
 step
 #completewith end
 #label BrannKey
-.goto TheStormPeaks,45.48,49.49,10
+.goto TheStormPeaks,45.48,49.49,10 >> Fly to Brann
 .goto TheStormPeaks,45.48,49.49,0,0
 >>Fly atop the Temple of Invention. Talk to Brann (NOT summoned via the communicator) to start the RP event. DO NOT wait for his RP
 >>Start flying back to Thorim after you talk to Brann
@@ -44098,78 +46915,102 @@ step
 >>Fly to Thorim atop the Temple of Storms. Talk to him
 .turnin 12915 >>Turn in Mending Fences
 .turnin 12956 >>Turn in A Spark of Hope
+step
+#questguide
+.goto TheStormPeaks,33.42,57.95
+>>Talk to Thorim
 .accept 12924 >>Accept Forging an Alliance
 step
+#questguide
 #completewith FFDeep
 .goto TheStormPeaks,37.13,49.53
 .home >> Set your Hearth to Grom'arsh Crash Site
+
 step
 .goto TheStormPeaks,37.31,49.66
 >>Talk to Boktar
 .turnin 13285 >>Turn in Forging the Keystone
+step
+#questguide
+.goto TheStormPeaks,37.31,49.66
+>>Talk to Boktar
 .accept 13426 >>Accept Xantaur, the Witness
 step
+#questguide
 .goto TheStormPeaks,62.64,60.93
 >>Travel to Dun Niffelem
 .fp Dun Niffelem >> Get the Dun Niffelem flight path
 step
+#questguide
 .goto TheStormPeaks,65.45,60.16
 >>Talk to King Jokkum
 .accept 12966 >>Accept You Can't Miss Him
 step
+#questguide
 .goto TheStormPeaks,75.37,63.57
 >>Talk to Njormeld
 .turnin 12966 >>Turn in You Can't Miss Him
 .accept 12967 >>Accept Battling the Elements
 step
+#questguide
 #completewith next
 .goto TheStormPeaks,75.71,63.91
 .vehicle >>Right click on Snorri to mount him
 step
+#questguide
 .goto TheStormPeaks,77.2,62.7
 >>Use "Gather Snow" (1) to get snow from the Snowdrifts nearby. Use "Throw Snowball" (2) at Seething Revenants to kill them.
-
+>>Use Wake Snorri (5) if he falls asleep.
 .complete 12967,1 
 
 step
+#questguide
 .goto TheStormPeaks,75.37,63.57
 >>Talk to Njormeld
 .turnin 12967 >>Turn in Battling the Elements
 .complete 12924,1 
 step
+#questguide
 >>Return to Dun Niffelem. Talk to Njormeld and the Anvil
 .turnin 12924 >>Turn in Forging an Alliance
 .accept 13009 >>Accept A New Beginning
 .goto TheStormPeaks,63.20,63.27
 .daily 12981 >>Accept Hot and Cold
-.goto TheStormPeaks,63.13,63.02
+.goto TheStormPeaks,63.16,62.93
 step
+#questguide
 .goto TheStormPeaks,65.45,60.16
 >>Talk to King Jokkum
 .accept 12975 >>Accept In Memoriam
 step
+#questguide
 .goto TheStormPeaks,69.6,58.8,70,0
 .goto TheStormPeaks,70.3,62.2
 >>Kill Brittle Revenants. Loot them for Essences of Ice
 .collect 42246,6 
 step
+#questguide
 .goto TheStormPeaks,73.5,62.9,70,0
 .goto TheStormPeaks,76.2,63.4
 .use 42246 >> Use the Essences of Ice next to the Smoldering Scrap around Fjorn's Anvil. Loot the Frozen Iron Scrap
 .complete 12981,1 
 step
+#questguide
 .goto TheStormPeaks,71.7,47.6
 >>Loot the small flat stones on the ground in the area
 .complete 12975,1 
 step
+#questguide
 .goto TheStormPeaks,65.41,50.60
 .fp Camp Tunka'lo >> Get the Camp Tunka'lo flight path
 step
+#questguide
 .goto TheStormPeaks,65.77,51.41
 >>Fly up to Camp Tunka'lo. Talk to Xarantaur in the hut
 .turnin 13426 >>Turn in Xarantaur, the Witness
 .accept 13034 >>Accept The Witness and the Hero
 step
+#questguide
 >>Click the banners hanging off the walls in Camp Tunka'lo
 .complete 13034,3 
 .goto TheStormPeaks,67.50,50.57
@@ -44178,16 +47019,19 @@ step
 .complete 13034,1 
 .goto TheStormPeaks,65.81,50.42
 step
+#questguide
 .goto TheStormPeaks,65.77,51.41
 >>Talk to Xarantaur in the hut
 .turnin 13034 >>Turn in The Witness and the Hero
 .accept 13037 >>Accept Memories of Stormhoof
 step
+#questguide
 #requires CampTFP
 #label FFDeep
 #completewith Swiftspear
 .goto TheStormPeaks,62.46,41.40,20 >> Travel to the cave of Frostfloe Deep
 step
+#questguide
 #requires CampTFP
 #completewith next
 .goto TheStormPeaks,61.18,38.99,10,0
@@ -44196,17 +47040,20 @@ step
 .skipgossip
 .timer 44,Memories of Stormhoof RP (CONTINUE QUESTING)
 step
+#questguide
 #label Swiftspear
 #requires CampTFP
 >>Talk to Swiftspear
 .goto TheStormPeaks,61.18,38.99
 .accept 13038 >>Accept Distortions in Time
 step
+#questguide
 .goto TheStormPeaks,61.7,39.8,50,0
 .goto TheStormPeaks,62.6,40.5
 .use 42781 >> Use the Chieftain's Totem in your bags on the Frostfloe Rifts (yellow swirls) in the cave
 .complete 13038,1 
 step
+#questguide
 #completewith end
 .goto TheStormPeaks,61.18,38.99,10,0
 .goto TheStormPeaks,61.18,38.99,0
@@ -44215,6 +47062,7 @@ step
 .skipgossip
 .timer 44,Memories of Stormhoof RP (CONTINUE QUESTING)
 step
+#questguide
 .goto TheStormPeaks,65.77,51.41
 >>Talk to Xarantaur
 .turnin 13037 >>Turn in Memories of Stormhoof
@@ -44222,9 +47070,11 @@ step
 .accept 13048 >>Accept Where Time Went Wrong
 .accept 13049 >>Accept The Hero's Arms
 step
+#questguide
 #completewith next
 .goto TheStormPeaks,67.09,44.76,40 >> Travel to the The Howling Hollow cave
 step
+#questguide
 .goto TheStormPeaks,67.8,44.3,60,0
 .goto TheStormPeaks,69.3,42.0,60,0
 .goto TheStormPeaks,68.0,41.7,60,0
@@ -44238,42 +47088,49 @@ step
 .complete 13049,1 
 .complete 13049,2 
 step
+#questguide
 .goto TheStormPeaks,65.77,51.41
 >>Talk to Xarantaur
 .turnin 13048 >>Turn in Where Time Went Wrong
 .turnin 13049 >>Turn in The Hero's Arms
 .accept 13058 >>Accept Changing the Wind's Course
 step
+#questguide
 #completewith next
 .goto TheStormPeaks,64.47,47.46
 .cast 56863 >> Use The Lorehammer in your bags to become Stormhoof.
 .use 42918
 step
+#questguide
 .goto TheStormPeaks,64.55,46.88
 >>Kill The North Wind as Stormhoof. Use "Storm Call" (3) on cooldown. Use "Earth Shock" (2) to interrupt his "Cyclone" ability. Spam use "Rhino Strike" (1) on cooldown.
 >>When The North Wind reaches 20%, he'll drop a horn near the center of the temple - click the horn
 .complete 13058,1 
 .use 42918
 step
+#questguide
 .goto TheStormPeaks,65.77,51.41
 >>Talk to Xarantaur
 .turnin 13058 >>Turn in Changing the Wind's Course
 step
+#questguide
 >>Return to Dun Niffelem. Talk to King Jokkum, Fjorn's Anvil, then Njormeld
 .turnin 12975 >>Turn in In Memoriam
 .accept 12976 >>Accept A Monument to the Fallen
 .goto TheStormPeaks,65.45,60.16
 .turnin 12981 >>Turn in Hot and Cold
-.goto TheStormPeaks,63.14,63.02
+.goto TheStormPeaks,63.16,62.93
 .turnin 12976 >>Turn in A Monument to the Fallen
 .accept 12985 >>Accept Forging a Head
 .goto TheStormPeaks,63.20,63.27
 step
+#questguide
 .goto TheStormPeaks,69.6,58.8,70,0
 .goto TheStormPeaks,70.3,62.2
 .use 42424 >> Use the Diamond Tipped Pick on the Dead Iron Giants. Kill the mobs that spawn, then loot them for their Stormforged Eyes
 .complete 12985,1 
 step
+#questguide
 >>Return to Dun Niffelem. Talk to Njormeld and Hodir's Horn
 .turnin 12985 >>Turn in Forging a Head
 .accept 12987 >>Accept Placing Hodir's Helm
@@ -44281,71 +47138,85 @@ step
 .accept 12977 >>Accept Hodir's Call
 .goto TheStormPeaks,64.17,65.01
 step
+#questguide
 .goto TheStormPeaks,64.24,59.23
 .use 42442 >> Fly up to the sparkling ice pike in Dun Niffelem. Use the Tablets of Pronouncement in your bags when on your flying mount
 .complete 12987,1 
 step
+#questguide
 .goto TheStormPeaks,63.20,63.27
 >>Talk to Njormeld
 .turnin 12987 >>Turn in Placing Hodir's Helm
 step
+#questguide
 .goto TheStormPeaks,65.37,60.14
 >>Talk to King Jokkum
 .accept 13011 >>Accept Culling Jorcuttar
 step
+#questguide
 .goto TheStormPeaks,64.22,59.39
 >>Talk to the Helmet that you just placed on the ice spike.
 .daily 13006 >>Accept Viscous Cleaning
 step
+#questguide
 #completewith next
 .goto TheStormPeaks,55.8,63.9,30 >>Enter the Hibernal Cavern
 step
+#questguide
 #completewith Jorcuttar
 .goto TheStormPeaks,54.4,63.2,0
 >>Kill Viscous Oils in the Hibernal Cavern. Loot them for their Oil
 .complete 13006,1 
 step
+#questguide
 .goto TheStormPeaks,55.8,63.9,30,0
 .goto TheStormPeaks,54.7,60.6
-.use 42732 >>Use the Everfrost Razor on a Dead Icemaw Bear in the cave until you get a Flank.
+.use 42732 >>Use the Everfrost Razor on a Dead Icemaw Bear in the cave until you get a Flank
 .collect 42733,1,13011,1 
-
 step
+#questguide
 #completewith next
 .goto TheStormPeaks,54.73,60.79
 .cast 56573 >>Use the Icemaw Bear flank in the middle of the frozen lake
 .use 42733
 step
+#questguide
 #label Jorcuttar
 .goto TheStormPeaks,54.73,60.79
 .use 42733 >>Kill Jorcuttar when he spawns
 .complete 13011,1 
 step
+#questguide
 .goto TheStormPeaks,53.71,61.66,60,0
 .goto TheStormPeaks,54.4,63.2
 >>Kill Viscous Oils in the cave. Loot them for their Oil
 .complete 13006,1 
 step
+#questguide
 #completewith next
 .hs >>Hearth to the Grom'arsh Crash-site
 
 step
+#questguide
 .goto TheStormPeaks,33.42,57.95
 >>Fly to Thorim atop the Temple of Storms. Talk to him
 .turnin 13009 >>Turn in A New Beginning
 .accept 13050 >>Accept Veranus
 step
+#questguide
 .goto TheStormPeaks,43.7,67.5,50,0
 .goto TheStormPeaks,45.4,66.9,50,0
 .goto TheStormPeaks,43.7,67.5
 >>Loot the Eggs in the nests atop the mountain
 .complete 13050,1 
 step
+#questguide
 .goto TheStormPeaks,33.42,57.95
 >>Fly to Thorim atop the Temple of Storms. Talk to him
 .turnin 13050 >>Turn in Veranus
 .accept 13051 >>Accept Territorial Trespass
 step
+#questguide
 #completewith next
 .cast 56788 >> Use the Stolen Proto-Dragon Eggs in your bags atop The Broodmother's nest to lure Veranus. DO NOT WAIT FOR HIS RP (it should take 38 seconds)
 .timer 38,Veranus RP (CONTINUE QUESTING)
@@ -44356,22 +47227,26 @@ step
 .use 42797
 
 step
+#questguide
 .goto TheStormPeaks,33.42,57.95
 >>Fly to Thorim atop the Temple of Storms. Talk to him
 .turnin 13051 >>Turn in Territorial Trespass
 .accept 13010 >>Accept Krolmir, Hammer of Storms
 step
+#questguide
 #completewith DunNif2
 .goto TheStormPeaks,36.19,49.39
 >>Fly back to Grom'arsh
 .fly Dun Niffelem >>Fly to Dun Niffelem. This takes 2m 20s, so you can take a break during this time
-.skill riding,300,1
+.skill riding,>300,1
 
 step
+#questguide
 #completewith next
 .goto TheStormPeaks,64.22,59.39,200 >> Fly to Dun Niffelem on your flying mount
 .skill riding,<300,1
 step
+#questguide
 #label DunNif2
 >>Talk to Hodir's Helmet, Horn, and King Jokkum in Dun Niffelem
 .turnin 13006 >>Turn in A Viscous Cleaning
@@ -44385,6 +47260,7 @@ step
 .goto TheStormPeaks,65.45,60.16
 .skipgossip
 step
+#questguide
 #completewith next
 .goto TheStormPeaks,70.7,47.3,0
 .goto TheStormPeaks,70.1,52.5,0
@@ -44395,11 +47271,13 @@ step
 .complete 12977,1 
 .complete 12977,2 
 step
+#questguide
 .goto TheStormPeaks,71.37,48.78
 >>Talk to Thorim before he disappears
 .turnin 13010 >>Turn in Krolmir, Hammer of Storms
 .accept 13057 >>Accept The Terrace of the Makers
 step
+#questguide
 .goto TheStormPeaks,70.7,47.3,60,0
 .goto TheStormPeaks,70.1,52.5,60,0
 .goto TheStormPeaks,72.7,52.1,60,0
@@ -44408,73 +47286,86 @@ step
 .complete 12977,1 
 .complete 12977,2 
 step
+#questguide
 .goto TheStormPeaks,56.26,51.36
 >>Talk to Thorim at the Terrace of the Makers
 .turnin 13057 >>Turn in The Terrace of the Makers
 .accept 13005 >>Accept The Earthen Oath
 .accept 13035 >>Accept Loken's Lackeys
 step
+#questguide
 #completewith Duronn
 .goto TheStormPeaks,52.0,50.4,0
 .use 42840 >> Use the Horn of the Peaks in your bags to help you kill the Iron Dwarfs and Iron Sentinels en route to the named mobs
 .complete 13005,1 
 .complete 13005,2 
 step
+#questguide
 .goto TheStormPeaks,48.72,45.65
 .use 42840 >> Use the Horn of the Peaks in your bags to summon a small army. Use it to kill Halefnir
 .complete 13035,2 
 step
+#questguide
 #label Duronn
 .goto TheStormPeaks,44.94,38.03
 .use 42840 >> Use the Horn of the Peaks in your bags to summon a small army. Use it to kill Duronn
 .complete 13035,3 
 step
+#questguide
 #completewith next
 .goto TheStormPeaks,57.7,44.5,50,0
 .goto TheStormPeaks,57.7,44.5,0
 .use 42840 >> Use the Horn of the Peaks to help you kill the Iron Sentinels outside of Eisenfaust's cave
 .complete 13005,1 
 step
+#questguide
 .goto TheStormPeaks,56.9,44.1,30,0
 .goto TheStormPeaks,55.30,43.32
 >>Enter the Hall of the Shaper at the bottom of the mountain on the East side
 .use 42840 >> Use the Horn of the Peaks to summon a small army. Use it to kill Eisenfaust
 .complete 13035,1 
 step
+#questguide
 .goto TheStormPeaks,58.48,45.21
 .use 42840 >> Use the Horn of the Peaks in your bags to help you kill the Iron Dwarfs and Iron Sentinels in the area
 .complete 13005,1 
 .complete 13005,2 
 step
+#questguide
 .goto TheStormPeaks,56.26,51.36
 >>Talk to Thorim at the Terrace of the Makers
 .turnin 13005 >>Turn in The Earthen Oath
 .turnin 13035 >>Turn in Loken's Lackeys
 .accept 13047 >>Accept The Reckoning
 step
+#questguide
 .goto TheStormPeaks,44.49,28.19
 >>Fly to the outside of Ulduar
 .fp Ulduar >> Get the Ulduar flight path
 .skill riding,<300,1
 step
+#questguide
 .goto TheStormPeaks,35.93,31.52
 >>Fly to Thorim outside Ulduar. Talk to him and wait out the RP event. This takes 1m 31s, so you can take a break during this time
 .complete 13047,1 
 .skipgossip
 .timer 91,The Reckoning RP
 step
+#questguide
 #completewith end
 .goto TheStormPeaks,44.49,28.19
 >>Fly to the outside of Ulduar
 .fp Ulduar >> Get the Ulduar flight path
 .fly Dun Niffelem >> Fly to Dun Niffelem
-.skill riding,300,1
+.skill riding,<300,1
 
 step
+#questguide
 #completewith next
 .goto TheStormPeaks,36.2,49.3,200 >> Fly to Dun Niffelem on your flying mount
 .skill riding,<300,1
 step
+#questguide
 #label end
 >>Return to Dun Niffelem. Talk to Jokkum and the Horn
 .turnin 13047 >>Turn in The Reckoning
@@ -44483,7 +47374,8 @@ step
 .goto TheStormPeaks,64.17,65.01
 step << !Mage
 #completewith next
-.goto TheStormPeaks,62.64,60.93
+.goto TheStormPeaks,62.64,60.93,-1
+.goto TheStormPeaks,36.20,49.38,-1
 .fly Dalaran >> Fly to Dalaran
 step << !Mage
 .goto Dalaran,57.5,33.5,30,0

@@ -102,7 +102,7 @@ Postal: enabled
 RangeDisplay: enabled
 RangeDisplay_Options: enabled
 RingMenu: enabled
-Select: enabled
+Select: disabled
 SharedMedia: enabled
 SimpleRaidTargetIcons: enabled
 TomTom: enabled
@@ -186,3 +186,7 @@ BigWigs_BlackTemple: disabled
 BigWigs_BlackwingLair: disabled
 Pawn: disabled
 TradeSkillMaster_AppHelper: enabled
+XLoot: disabled
+XLoot_Group: disabled
+XLoot_Options: disabled
+Roll: disabled

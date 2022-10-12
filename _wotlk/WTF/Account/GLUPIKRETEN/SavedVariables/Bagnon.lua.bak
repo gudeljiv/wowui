@@ -6,11 +6,28 @@ Bagnon_Sets = {
 	},
 	["fridgeColor"] = {
 	},
-	["glowPoor"] = false,
+	["inscribeColor"] = {
+	},
 	["engineerColor"] = {
 	},
-	["displayBank"] = false,
+	["displayCraft"] = false,
 	["herbColor"] = {
+	},
+	["soulColor"] = {
+	},
+	["displayMail"] = false,
+	["glowPoor"] = false,
+	["glowUnusable"] = true,
+	["closeBank"] = false,
+	["glowQuest"] = true,
+	["normalColor"] = {
+	},
+	["quiverColor"] = {
+	},
+	["glowQuality"] = true,
+	["reagentColor"] = {
+	},
+	["gemColor"] = {
 	},
 	["global"] = {
 		["inventory"] = {
@@ -50,8 +67,8 @@ Bagnon_Sets = {
 			},
 			["hiddenRules"] = {
 			},
+			["sort"] = true,
 			["bagBreak"] = false,
-			["y"] = -293.1571044921875,
 			["x"] = -408.98974609375,
 			["search"] = true,
 			["borderColor"] = {
@@ -63,7 +80,7 @@ Bagnon_Sets = {
 			["broker"] = false,
 			["options"] = true,
 			["bagToggle"] = true,
-			["sort"] = true,
+			["y"] = -293.1571044921875,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -98,7 +115,7 @@ Bagnon_Sets = {
 			},
 		},
 		["guild"] = {
-			["y"] = -401.247314453125,
+			["y"] = -401.2474365234375,
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -128,11 +145,11 @@ Bagnon_Sets = {
 			},
 			["color"] = {
 			},
-			["x"] = 505.2874450683594,
-			["hiddenRules"] = {
-			},
 			["hiddenBags"] = {
 			},
+			["hiddenRules"] = {
+			},
+			["x"] = 505.2874450683594,
 		},
 		["bank"] = {
 			["rules"] = {
@@ -173,55 +190,38 @@ Bagnon_Sets = {
 			["bagToggle"] = true,
 			["columns"] = 18,
 			["alpha"] = 1,
-			["scale"] = 1,
-			["bagBreak"] = false,
-			["x"] = -756.5968017578125,
-			["search"] = true,
-			["broker"] = false,
-			["itemScale"] = 1,
-			["hiddenRules"] = {
-			},
-			["y"] = 510.0116577148438,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
+			["bagBreak"] = false,
+			["x"] = -756.5968017578125,
+			["search"] = true,
+			["broker"] = false,
+			["y"] = 510.0116577148438,
+			["hiddenRules"] = {
+			},
+			["itemScale"] = 1,
+			["scale"] = 1,
 		},
-	},
-	["displayMail"] = false,
-	["displayCraft"] = false,
-	["glowUnusable"] = true,
-	["closeBank"] = false,
-	["glowQuest"] = true,
-	["keyColor"] = {
-	},
-	["quiverColor"] = {
-	},
-	["profiles"] = {
-	},
-	["reagentColor"] = {
-	},
-	["gemColor"] = {
-	},
-	["enchantColor"] = {
 	},
 	["glowAlpha"] = 0.5,
 	["emptySlots"] = true,
-	["glowNew"] = false,
+	["keyColor"] = {
+	},
 	["displayAuction"] = false,
-	["glowQuality"] = true,
+	["profiles"] = {
+	},
 	["mineColor"] = {
 	},
 	["displayTrade"] = false,
 	["version"] = "9.2.2",
-	["normalColor"] = {
-	},
-	["soulColor"] = {
+	["glowNew"] = false,
+	["enchantColor"] = {
 	},
 	["colorSlots"] = false,
-	["inscribeColor"] = {
-	},
+	["displayBank"] = false,
 	["displayScrapping"] = false,
 }

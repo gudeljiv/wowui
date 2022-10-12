@@ -84,7 +84,7 @@ function BarContainer:CreateBar(label)
 end
 --RXP = addon
 function addon.StartTimer(duration,label,options)
-    if type(duration) ~= "number" or duration <= 0 then return end
+    if type(duration) ~= "number" or duration <= 0 or not RXPFrame:IsShown() then return end
     local bar = RXPFrame.BarContainer:Acquire(label or "")
     bar:SetDuration(duration)
     if options then
@@ -134,6 +134,9 @@ function addon:TAXIMAP_OPENED()
 end
 
 function addon:PLAYER_CONTROL_LOST()
+    -- Don't display flight timer if addon hidden
+    if not addon.settings.db.profile.showEnabled then return end
+
     if GetTime() - flightInfo.startFlight < 1.5 then
         flightInfo.flightBar = addon.StartTimer(flightInfo.timer,flightInfo.dest)
     end
