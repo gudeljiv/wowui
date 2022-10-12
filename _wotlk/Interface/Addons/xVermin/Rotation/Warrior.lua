@@ -173,3 +173,33 @@ skills['revenge'] = '#7bd079'
 -- 		-- end
 -- 	end
 -- )
+
+-- local function Rotation()
+-- 	if xVermin.Class ~= 'WARRIOR' then
+-- 		return
+-- 	end
+
+-- 	if xAOE(10) == 1 and not IsCurrentSpell('Heroic Strike') and UnitPower('player') > 40 then
+-- 		if not xVermin.R6_Occupied then
+-- 			xVermin.R6_Occupied = true
+-- 			RotationFrame6:SetBackdropColor(0, 1, 0.7, 1)
+-- 		end
+-- 	end
+
+-- 	if xAOE(10) > 1 and not IsCurrentSpell('Cleave') and UnitPower('player') > 40 then
+-- 		if not xVermin.R6_Occupied then
+-- 			xVermin.R6_Occupied = true
+-- 			RotationFrame6:SetBackdropColor(0, 0.2, 0.8, 1)
+-- 		end
+-- 	end
+
+-- 	if xAOE(10) == 0 or UnitPower('player') < 40 or IsCurrentSpell('Heroic Strike') or IsCurrentSpell('Cleave') then
+-- 		xVermin.R6_Occupied = false
+-- 	end
+
+-- 	if not xVermin.R6_Occupied then
+-- 		RotationFrame6:SetBackdropColor(1, 1, 1, 1)
+-- 	end
+-- end
+
+-- PlayerFrame:HookScript('OnUpdate', Rotation)

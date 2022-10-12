@@ -1,5 +1,5 @@
 local _, xVermin = ...
-local minRange, maxRange, unitcasting, unit, inRange, range, targetcasting, rangecasting
+local minRange, maxRange, unitcasting, unit, inRange, range, targetcasting
 
 local t = {
 	'Critter',
@@ -16,7 +16,7 @@ local t = {
 xVermin.AOE = function(range)
 	range = range or 5
 	inRange = 0
-	rangecasting = 0
+	xVermin.rangecasting = 0
 
 	for i = 1, 40 do
 		unit = 'nameplate' .. i
@@ -27,7 +27,7 @@ xVermin.AOE = function(range)
 
 			if unitcasting then
 				if not targetcasting then
-					rangecasting = rangecasting + 1
+					xVermin.rangecasting = xVermin.rangecasting + 1
 				else
 					if (xVermin.Class == 'WARRIOR') then
 						local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance
@@ -35,13 +35,13 @@ xVermin.AOE = function(range)
 						local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
 						if defensive or (battle and IsEquippedItemType('Shields')) then
 							if IsSpellInRange('Shield Bash', 'target') == 0 or select(2, GetSpellCooldown('Shield Bash')) > 0 then
-								rangecasting = rangecasting + 1
+								xVermin.rangecasting = xVermin.rangecasting + 1
 							end
 						end
 					end
 					if (xVermin.Class == 'DEATHKNIGHT') then
 						if IsSpellInRange('Mind Freeze', 'target') == 0 or select(2, GetSpellCooldown('Mind Freeze')) > 0 then
-							rangecasting = rangecasting + 1
+							xVermin.rangecasting = xVermin.rangecasting + 1
 						end
 					end
 				end
@@ -59,9 +59,11 @@ xVermin.AOE = function(range)
 			end
 		end
 	end
-	if rangecasting > 0 then
+	if xVermin.rangecasting > 0 then
 		RotationFrame6:SetBackdropColor(0, 1, 0.5, 1)
+		xVermin.R6_Occupied = true
 	else
+		xVermin.R6_Occupied = false
 		RotationFrame6:SetBackdropColor(1, 1, 1, 1)
 	end
 	return inRange

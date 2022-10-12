@@ -9,6 +9,13 @@ skills["healing"] = [
     {"name": "lifeblood", "key": "7", "modifier": "alt"},
 ]
 
+skills["queue"] = [
+    {"name": "heroic strike", "key": "2"},
+    {"name": "cleave", "key": "3"},
+    {"name": "maul", "key": "1"},
+    {"name": "rune strike", "key": "9", "modifier": "alt"},
+]
+
 skills["warrior"] = [
     {"name": "battle shout", "key": "f4"},
     {"name": "commanding shout", "key": "f6"},
@@ -19,8 +26,6 @@ skills["warrior"] = [
     {"name": "berserker rage", "key": "f10"},
     {"name": "rend", "key": "d", "modifier": "shift"},
     {"name": "overpower", "key": "6"},
-    {"name": "heroic strike", "key": "2"},
-    {"name": "cleave", "key": "3"},
     {"name": "revenge", "key": "1"},
     {"name": "execute", "key": "f"},
     {"name": "whirlwind", "key": "6"},
@@ -71,7 +76,6 @@ skills["hunter"] = [
 ]
 
 skills["druid"] = [
-    {"name": "maul", "key": "1"},
     {"name": "swipe", "key": "2"},
     {"name": "demoralizing roar", "key": "3", "modifier": "alt"},
     {"name": "claw", "key": "1"},
@@ -99,7 +103,6 @@ skills["death knight"] = [
     {"name": "blood tap", "key": "0", "modifier": "alt"},
     {"name": "icebound fortitude", "key": "t"},
     {"name": "horn of winter", "key": "f4"},
-    {"name": "rune strike", "key": "9", "modifier": "alt"},
 ]
 
 skills["priest"] = [

@@ -281,3 +281,10 @@ f:SetScript(
 
 -- f:SetScript('OnKeyDown', TestPrint)
 -- f:SetPropagateKeyboardInput(true)
+
+-- PlayerFrame:HookScript(
+-- 	'OnUpdate',
+-- 	function()
+-- 		print(xVermin.R6_Occupied)
+-- 	end
+-- )

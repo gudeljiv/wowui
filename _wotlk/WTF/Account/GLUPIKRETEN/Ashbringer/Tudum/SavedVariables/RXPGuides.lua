@@ -1,16 +1,16 @@
 
 RXPCData = {
-	["SoM"] = 1,
+	["phase"] = 6,
 	["currentGuideGroup"] = "",
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
-	["currentGuideName"] = "",
+	["SoM"] = 1,
 	["stepSkip"] = {
 	},
 	["flightPaths"] = {
 	},
-	["phase"] = 6,
+	["currentGuideName"] = "",
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -60,6 +60,7 @@ RXPCSettings = {
 		["Tudum - Ashbringer"] = {
 			["hardcore"] = false,
 			["enableLevelUpAnnounceGroup"] = false,
+			["enableMinimapButton"] = false,
 			["checkVersions"] = false,
 			["enableTracker"] = false,
 			["enableFlyStepAnnouncements"] = false,

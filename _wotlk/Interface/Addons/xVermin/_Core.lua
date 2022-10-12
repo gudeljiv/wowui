@@ -5,6 +5,7 @@ local RangeCheck = LibStub('LibRangeCheck-2.0')
 xVermin.Class = select(2, UnitClass('player'))
 xVermin.ClassColor = RAID_CLASS_COLORS[xVermin.Class]
 xVermin.WaitTimeUntillAddonLoaded = 30
+xVermin.R6_Occupied = false
 
 xVermin.Color = {
 	white = 'FFFFFFFF',
