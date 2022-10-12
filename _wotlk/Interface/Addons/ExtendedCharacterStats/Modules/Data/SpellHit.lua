@@ -26,7 +26,7 @@ function Data:SpellMissChanceSameLevel()
 end
 
 function Data:SpellMissChanceBossLevel()
-    local missChance = ECS.IsWotlk and 16 or 17
+    local missChance = 17
 
     missChance = missChance - _SpellHit:GetTalentSpellHitBonus()
     local mod = _SpellHit:GetSpellHitBonus()
@@ -85,7 +85,7 @@ function _SpellHit:GetTalentSpellHitBonus()
 
     if classId == Data.DRUID then
         if ECS.IsWotlk then
-            local _, _, _, _, points, _, _, _ = GetTalentInfo(1, 16)
+            local _, _, _, _, points, _, _, _ = GetTalentInfo(1, 13)
             bonus = points * 2 -- 0-4% from Balance of Power
         end
     end
