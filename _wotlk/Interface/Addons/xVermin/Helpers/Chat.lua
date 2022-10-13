@@ -319,33 +319,30 @@ local function SetChat()
 	ChatFrameMenuButton:Hide()
 	ChatFrame1Tab:Click()
 
-	-- SetChatChannels()
+	xVermin.SetChatChannels()
 end
 
 local chat = CreateFrame('Frame')
 chat:SetScript(
 	'OnEvent',
-	function(self, event)
-		SetChat()
-		xVermin.CheckIfLoadedWithTimer(ChatFrameCondition, xVermin.SetChatChannels)
-		-- if event == 'PLAYER_LOGIN' then
-		-- 	SetChat()
-		-- 	C_Timer.After(
-		-- 		2,
-		-- 		function()
-		-- 			SetChat()
-		-- 			C_Timer.After(
-		-- 				2,
-		-- 				function()
-		-- 					SetChatChannels()
-		-- 				end
-		-- 			)
-		-- 		end
-		-- 	)
-		-- end
+	function(self, event, ...)
+		C_Timer.After(
+			2,
+			function()
+				SetChat()
+				-- xVermin.CheckIfLoadedWithTimer(ChatFrameCondition, xVermin.SetChatChannels)
+				-- C_Timer.After(
+				-- 	1,
+				-- 	function()
+				-- 		SetChatChannels()
+				-- 	end
+				-- )
+			end
+		)
 	end
 )
 chat:RegisterEvent('PLAYER_LOGIN')
+-- chat:RegisterEvent('PLAYER_ENTERING_WORLD')
 
 -- Tab text colors for the tabs
 hooksecurefunc(

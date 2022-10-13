@@ -6,8 +6,8 @@ WeakAurasOptionsSaved = {
 	["locale"] = "enUS",
 	["needsRebuild"] = false,
 	["version"] = "4.1.4",
-	["spellCacheAchivements"] = true,
 	["spellCacheStrings"] = true,
+	["spellCacheAchivements"] = true,
 	["spellCache"] = {
 		["Spotted"] = {
 			["spells"] = "2425=136173",
@@ -176,9 +176,6 @@ WeakAurasOptionsSaved = {
 		},
 		["Glyph of the Ghoul"] = {
 			["spells"] = "57222=132918,58721=237171",
-		},
-		["s"] = {
-			["spells"] = "4073=132836",
 		},
 		["Irresistible Cologne"] = {
 			["spells"] = "68946=134737,68947=134737",
@@ -2944,7 +2941,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "51058=134760",
 		},
 		["Whip Terrorfiend"] = {
-			["spells"] = "35673=132400",
+			["spells"] = "35673=132480",
 		},
 		["Breastplate of Kings"] = {
 			["spells"] = "34533=136241",
@@ -7060,7 +7057,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "10525=136247",
 		},
 		["Auto Attack"] = {
-			["spells"] = "6603=132400",
+			["spells"] = "6603=132480",
 		},
 		["Increased Rejuvenation"] = {
 			["spells"] = "352508=136030",
@@ -14782,7 +14779,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "41432=136172",
 		},
 		["Mechanical Dragonling"] = {
-			["spells"] = "23051=134153,23076=134153",
+			["spells"] = "4073=132836,23051=134153,23076=134153",
 		},
 		["Area Despawn"] = {
 			["spells"] = "54090=237563",

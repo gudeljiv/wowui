@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 6858,
 	["lastSanitation"] = 3,
-	["session"] = 6833,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -1342,20 +1342,20 @@ BugGrabberDB = {
 		}, -- [169]
 		{
 			["message"] = " (null)",
-			["session"] = 5326,
 			["time"] = "2022/04/11 11:49:12",
+			["session"] = 5326,
 			["counter"] = 15,
 		}, -- [170]
 		{
 			["message"] = "  (null)",
-			["session"] = 5326,
 			["time"] = "2022/04/13 16:37:53",
+			["session"] = 5326,
 			["counter"] = 4,
 		}, -- [171]
 		{
 			["message"] = "   (null)",
-			["session"] = 5326,
 			["time"] = "2022/06/02 15:20:51",
+			["session"] = 5326,
 			["counter"] = 1,
 		}, -- [172]
 		{
@@ -1757,62 +1757,62 @@ BugGrabberDB = {
 		}, -- [222]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-enUS.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [223]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-deDE.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [224]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-esES.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [225]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-esMX.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [226]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-frFR.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [227]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-itIT.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [228]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-koKR.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [229]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-ptBR.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [230]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-ruRU.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [231]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-zhCN.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [232]
 		{
@@ -2089,8 +2089,8 @@ BugGrabberDB = {
 		}, -- [267]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\xVermin-54000.lua is empty.",
-			["time"] = "2022/09/07 12:54:52",
 			["session"] = 5507,
+			["time"] = "2022/09/07 12:54:52",
 			["counter"] = 3,
 		}, -- [268]
 		{
@@ -2175,8 +2175,8 @@ BugGrabberDB = {
 		}, -- [278]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\Addons/nMainBar.lua is empty.",
-			["time"] = "2022/09/07 13:53:00",
 			["session"] = 5527,
+			["time"] = "2022/09/07 13:53:00",
 			["counter"] = 3,
 		}, -- [279]
 		{
@@ -2798,8 +2798,8 @@ BugGrabberDB = {
 		}, -- [358]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\Helpers/Chat.lua is empty.",
-			["session"] = 5820,
 			["time"] = "2022/09/19 19:24:24",
+			["session"] = 5820,
 			["counter"] = 3,
 		}, -- [359]
 		{
@@ -3918,8 +3918,8 @@ BugGrabberDB = {
 		}, -- [501]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Helpers/ActionButtons.lua",
-			["time"] = "2022/10/04 09:59:06",
 			["session"] = 6360,
+			["time"] = "2022/10/04 09:59:06",
 			["counter"] = 6,
 		}, -- [502]
 		{
@@ -4761,8 +4761,8 @@ BugGrabberDB = {
 		}, -- [609]
 		{
 			["message"] = "(null)",
-			["session"] = 6767,
 			["time"] = "2022/03/09 13:39:43",
+			["session"] = 6767,
 			["counter"] = 183,
 		}, -- [610]
 		{
@@ -4882,5 +4882,61 @@ BugGrabberDB = {
 			["session"] = 6826,
 			["counter"] = 1,
 		}, -- [625]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Helpers/Chat.lua:322: attempt to call global 'SetChatChannels' (a nil value)",
+			["time"] = "2022/10/13 10:29:57",
+			["locals"] = "chatWidth = 560.481697\nframe = ChatFrame3 {\n SetJustifyV = <function> defined =[C]:-1\n RefreshIfNecessary = <function> defined =[C]:-1\n OnPostShow = <function> defined =[C]:-1\n CalculateLineAlphaValueFromTimestamp = <function> defined =[C]:-1\n ScrollUp = <function> defined =[C]:-1\n tellTimer = 88912.002000\n isDisplayDirty = false\n GetFading = <function> defined =[C]:-1\n IsTextCopyable = <function> defined =[C]:-1\n shouldFadeAfterInactivity = true\n SetIndentedWordWrap = <function> defined =[C]:-1\n GetJustifyV = <function> defined =[C]:-1\n SetFont = <function> defined =[C]:-1\n GetMaxLines = <function> defined =[C]:-1\n GetIndentedWordWrap = <function> defined =[C]:-1\n buttonSide = \"left\"\n GetFont = <function> defined =[C]:-1\n checkedGMOTD = true\n SetMaxLines = <function> defined =[C]:-1\n CalculateSelectingCharacterIndicesForVisibleLine = <function> defined =[C]:-1\n PageUp = <function> defined =[C]:-1\n RefreshDisplay = <function> defined =[C]:-1\n SetFontObject = <function> defined =[C]:-1\n textIsCopyable = false\n SetOnScrollChangedCallback = <function> defined =[C]:-1\n CalculateNumVisibleLines = <function> defined =[C]:-1\n overrideFadeTimestamp = 0\n MarkDisplayDirty = <function> defined =[C]:-1\n GetMessageInfo = <function> defined =[C]:-1\n GetOnScrollChangedCallback = <function> defined =[C]:-1\n AtTop = <function> defined =[C]:-1\n GetFontObject = <function> defined =[C]:-1\n fontStringPool = <table> {\n }\n CanEffectivelyFade = <function> defined =[C]:-1\n OnPreSizeChanged = <function> defined =[C]:-1\n OnPostMouseUp = <function> defined =[C]:-1\n GetSpacing = <function> defined =[C]:-1\n OnPreLoad = <function> defined =[C]:-1\n SetSpacing = <function> defined =[C]:-1\n name = \"Groups and parties\"\n CalculateLineSpacing = <function> defined =[C]:-1\n AddMessage = <function> defined @Interface\\AddOns\\xVermin\\Helpers/Chat.lua:34\n InitializeFontableFrame = <function> defined =[C]:-1\n GetShadowColor = <function> defined =[C]:-1\n isUninteractable = false\n SetOnTextCopiedCallback = <function> defined =[C]:-1\n originalShow = <function> defined =[C]:-1\n AcquireFontString = <function> defined =[C]:-1\n TransformMessages = <function> defined =[C]:-1\n SetShadowColor = <function> defined =[C]:-1\n buttonFrame = ChatFrame3ButtonFrame {\n }\n HasFontObject = <function> defined =[C]:-1\n GetOnTextCopiedCallback = <function> defined =[C]:-1\n SetFading = <function> defined =[C]:-1\n OnPostHide = <function> defined =[C]:-1\n alternativeDefaultLanguage = \"Orcish\"\n isInitialized = 1\n ScrollByAmount = <function> defined =[C]:-1\n GetInsertMode = <function> defined =[C]:-1\n SetTimeVisible = <function> defined =[C]:-1\n hasOwnFontObject = true\n Clear = <function> defined =[C]:-1\n oldAlpha = 0\n channelList = <table> {\n }\n GetTimeVisible = <function> defined =[C]:-1\n MarkLayoutDirty = <function> defined =[C]:-1\n SetTextCopyable = <function> defined =[C]:-1\n Show = <function> defined @Interface\\FrameXML\\FrameLocks.lua:135\n BackFillMessage = <function> defined =[C]:-1\n UnpackageEntry = <function> defined =[C]:-1\n FontStringContainer = <unnamed> {\n }\n SetShadowOffset = <function> defined =[C]:-1\n messageTypeList = <table> {\n }\n flashTimer = 0\n timeVisibleSecs = 120\n PackageEntry = <function> defined =[C]:-1\n MakeFontObjectCustom = <function> defined =[C]:-1\n SetPoint = <function> defined @Interface\\AddOns\\xVermin\\Helpers/Chat.lua:262\n fontObject = table: 0000026E03DE7AB0 {\n }\n SetInsertMode = <function> defined =[C]:-1\n originalHide = <function> defined =[C]:-1\n ScrollDown = <function> defined =[C]:-1\n zoneChannelList = <table> {\n }\n SetScrollOffset = <function> defined =[C]:-1\n onDisplayRefreshedCallback = <function> defined =[C]:-1\n insertMode = 2\n ResetSelectingText = <function> defined =[C]:-1\n Hide = <function> defined @Interface\\FrameXML\\FrameLocks.lua:131\n GetTextColor = <function> defined =[C]:-1\n defaultLanguage = \"Orcish\"\n ResetAllFadeTimes = <function> defined =[C]:-1\n customEventHandler = <function> defined @Interface\\FrameXML\\VoiceChatTranscriptionFrame.lua:143\n Tab = ChatFrame3Tab {\n }\n GatherSelectedText = <function> defined =[C]:-1\n isLayoutDirty = true\n ",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Helpers/Chat.lua\"]:322: in function <Interface\\AddOns\\xVermin\\Helpers/Chat.lua:99>\n[string \"@Interface\\AddOns\\xVermin\\Helpers/Chat.lua\"]:332: in function <Interface\\AddOns\\xVermin\\Helpers/Chat.lua:331>",
+			["session"] = 6840,
+			["counter"] = 1,
+		}, -- [626]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:394: attempt to compare nil with number",
+			["time"] = "2022/10/13 10:53:12",
+			["locals"] = "a = <table> {\n id = 2775\n}\nb = <table> {\n id = 2772\n}\nil_a = nil\nil_b = 30\n(*temporary) = 4\n(*temporary) = \"Iron Ore\"\n(*temporary) = \"|cffffffff|Hitem:2772::::::::71:::::::::|h[Iron Ore]|h|r\"\n(*temporary) = \"attempt to compare nil with number\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Helpers/BestFood.lua\"]:394: in function <Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:384>\n[string \"=[C]\"]: in function `sort'\n[string \"@Interface\\AddOns\\xVermin\\Helpers/BestFood.lua\"]:217: in function `Sorted'\n[string \"@Interface\\AddOns\\xVermin\\Helpers/BestFood.lua\"]:134: in function `UpdateMacros'\n[string \"@Interface\\AddOns\\xVermin\\Helpers/BestFood.lua\"]:63: in function <Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:58>",
+			["session"] = 6844,
+			["counter"] = 3,
+		}, -- [627]
+		{
+			["message"] = "Usage: local defaultValue = C_CVar.GetCVarDefault(name)",
+			["time"] = "2022/10/13 10:53:54",
+			["locals"] = "(*temporary) = \"Usage: local defaultValue = C_CVar.GetCVarDefault(name)\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `GetCVarDefault'\n[string \"@Interface\\SharedXML\\CvarUtil.lua\"]:34: in function `GetCVarDefault'\n[string \"print(GetCVarDefault())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 6844,
+			["counter"] = 2,
+		}, -- [628]
+		{
+			["message"] = "bad argument #3 to '?' (Usage: local success = C_CVar.SetCVar(name [, value, scriptCVar]))",
+			["time"] = "2022/10/13 10:55:43",
+			["locals"] = "(*temporary) = \"bad argument #3 to '?' (Usage: local success = C_CVar.SetCVar(name [, value, scriptCVar]))\"\n",
+			["stack"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface\\SharedXML\\CvarUtil.lua\"]:13: in function <Interface\\SharedXML\\CvarUtil.lua:9>\n[string \"=[C]\"]: in function `SetCVar'\n[string \"SetCVar(\"alwaysShowActionBars\", 1, true)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 6844,
+			["counter"] = 2,
+		}, -- [629]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Helpers/Chat.lua:337: attempt to call global 'SetChatChannels' (a nil value)",
+			["time"] = "2022/10/13 11:29:10",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"attempt to call global 'SetChatChannels' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Helpers/Chat.lua\"]:337: in function <Interface\\AddOns\\xVermin\\Helpers/Chat.lua:336>",
+			["session"] = 6849,
+			["counter"] = 1,
+		}, -- [630]
+		{
+			["message"] = "Interface\\FrameXML\\FloatingChatFrame.lua:1230: attempt to perform arithmetic on a nil value",
+			["time"] = "2022/10/13 11:28:04",
+			["locals"] = "chatFrame = ChatFrame2 {\n GatherSelectedText = <function> defined =[C]:-1\n RefreshIfNecessary = <function> defined =[C]:-1\n OnPostShow = <function> defined =[C]:-1\n CalculateLineAlphaValueFromTimestamp = <function> defined =[C]:-1\n ScrollUp = <function> defined =[C]:-1\n tellTimer = 91960.513000\n fadeDurationSecs = 3\n GetFading = <function> defined =[C]:-1\n IsTextCopyable = <function> defined =[C]:-1\n shouldFadeAfterInactivity = true\n SetIndentedWordWrap = <function> defined =[C]:-1\n GetJustifyV = <function> defined =[C]:-1\n ScrollToBottom = <function> defined =[C]:-1\n GetMaxLines = <function> defined =[C]:-1\n GetIndentedWordWrap = <function> defined =[C]:-1\n buttonSide = \"right\"\n GetFont = <function> defined =[C]:-1\n SetMaxLines = <function> defined =[C]:-1\n CalculateSelectingCharacterIndicesForVisibleLine = <function> defined =[C]:-1\n OnPostUpdate = <function> defined =[C]:-1\n RefreshDisplay = <function> defined =[C]:-1\n SetFontObject = <function> defined =[C]:-1\n textIsCopyable = false\n SetOnScrollChangedCallback = <function> defined =[C]:-1\n ResizeButton = ChatFrame2ResizeButton {\n }\n overrideFadeTimestamp = 0\n MarkDisplayDirty = <function> defined =[C]:-1\n GetMessageInfo = <function> defined =[C]:-1\n GetOnScrollChangedCallback = <function> defined =[C]:-1\n AtTop = <function> defined =[C]:-1\n GetFontObject = <function> defined =[C]:-1\n fontStringPool = <table> {\n }\n CanEffectivelyFade = <function> defined =[C]:-1\n OnPreSizeChanged = <function> defined =[C]:-1\n GetScrollOffset = <function> defined =[C]:-1\n GetSpacing = <function> defined =[C]:-1\n OnPreLoad = <function> defined =[C]:-1\n SetSpacing = <function> defined =[C]:-1\n name = \"Combat Log\"\n CalculateLineSpacing = <function> defined =[C]:-1\n AddMessage = <function> defined =[C]:-1\n InitializeFontableFrame = <function> defined =[C]:-1\n GetShadowColor = <function> defined =[C]:-1\n isUninteractable = false\n SetOnTextCopiedCallback = <function> defined =[C]:-1\n originalShow = <function> defined =[C]:-1\n RemoveMessagesByPredicate = <function> defined =[C]:-1\n TransformMessages = <function> defined =[C]:-1\n SetShadowColor = <function> defined =[C]:-1\n buttonFrame = ChatFrame2ButtonFrame {\n }\n HasFontObject = <function> defined =[C]:-1\n GetOnTextCopiedCallback = <function> defined =[C]:-1\n SetFading = <function> defined =[C]:-1\n OnPostHide = <function> defined =[C]:-1\n alternativeDefaultLanguage = \"Orcish\"\n isInitialized = 1\n GetNumVisibleLines = <function> defined =[C]:-1\n GetInsertMode = <function> defined =[C]:-1\n SetTimeVisible = <function> defined =[C]:-1\n hasOwnFontObject = true\n Clear = <function> defined =[C]:-1\n oldAlpha = 0\n channelList = <table> {\n }\n GetTimeVisible = <function> defined =[C]:-1\n IsSelectingText = <function> defined =[C]:-1\n SetTextCopyable = <function> defined =[C]:-1\n Show = <function> defined @Interface\\FrameXML\\FrameLocks.lua:135\n BackFillMessage = <function> defined =[C]:-1\n UnpackageEntry = <function> defined =[C]:-1\n FontStringContainer = <unnamed> {\n }\n SetShadowOffset = <function> defined =[C]:-1\n messageTypeList = <table> {\n }\n flashTimer = 0\n timeVisibleSecs = 120\n PackageEntry = <function> defined =[C]:-1\n MakeFontObjectCustom = <function> defined =[C]:-1\n SetPoint = <function> defined @Interface\\AddOns\\xVermin\\Helpers/Chat.lua:262\n fontObject = table: 00000249F5B9BA10 {\n }\n SetInsertMode = <function> defined =[C]:-1\n originalHide = <function> defined =[C]:-1\n ScrollDown = <function> defined =[C]:-1\n zoneChannelList = <table> {\n }\n SetScrollOffset = <function> defined =[C]:-1\n onDisplayRefreshedCallback = <function> defined =[C]:-1\n insertMode = 2\n ResetSelectingText = <function> defined =[C]:-1\n Hide = <function> defined @Interface\\FrameXML\\FrameLocks.lua:131\n GetTextColor = <function> defined =[C]:-1\n CombatLogQuickButtonFrame = CombatLogQuickButtonFrame_Custom {\n }\n CallOnDisplayRefreshed = <function> defined =[C]:-1\n OnPostMouseUp = <function> defined =[C]:-1\n 0 = <userdata>\n UpdateSelectingText = <function> defined =[C]:-1\n OnFontObjectUpdated = <function> defined =[C]:-1\n MarkLayoutDirty = <function> defined =[C]:-1\n SetFont ",
+			["stack"] = "[string \"@Interface\\FrameXML\\FloatingChatFrame.lua\"]:1230: in function `FCF_SavePositionAndDimensions'\n[string \"@Interface\\AddOns\\xVermin\\Helpers/Chat.lua\"]:139: in function <Interface\\AddOns\\xVermin\\Helpers/Chat.lua:99>\n[string \"@Interface\\AddOns\\xVermin\\Helpers/Chat.lua\"]:330: in function <Interface\\AddOns\\xVermin\\Helpers/Chat.lua:328>",
+			["session"] = 6852,
+			["counter"] = 3,
+		}, -- [631]
+		{
+			["message"] = "Interface\\AddOns\\RXPGuides\\GuideWindow.lua:170: attempt to perform arithmetic on a nil value",
+			["time"] = "2022/10/13 11:28:07",
+			["locals"] = "frame = <unnamed> {\n 0 = <userdata>\n anchor = \"TOP\"\n framePool = <table> {\n }\n EventHandler = <function> defined @Interface\\AddOns\\RXPGuides\\GuideWindow.lua:734\n UpdateText = <function> defined @Interface\\AddOns\\RXPGuides\\GuideWindow.lua:745\n}\nscale = 1\nSetTop = <function> defined @Interface\\AddOns\\RXPGuides\\GuideWindow.lua:145\nSetBottom = <function> defined @Interface\\AddOns\\RXPGuides\\GuideWindow.lua:156\n(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n anchor = \"TOP\"\n framePool = <table> {\n }\n EventHandler = <function> defined @Interface\\AddOns\\RXPGuides\\GuideWindow.lua:734\n UpdateText = <function> defined @Interface\\AddOns\\RXPGuides\\GuideWindow.lua:745\n}\n(*temporary) = \"attempt to perform arithmetic on a nil value\"\nCurrentStepFrame = <unnamed> {\n 0 = <userdata>\n anchor = \"TOP\"\n framePool = <table> {\n }\n EventHandler = <function> defined @Interface\\AddOns\\RXPGuides\\GuideWindow.lua:734\n UpdateText = <function> defined @Interface\\AddOns\\RXPGuides\\GuideWindow.lua:745\n}\nRXPFrame = RXPFrame {\n 0 = <userdata>\n backdropEdge = <table> {\n }\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:152\n DropDownMenu = <function> defined @Interface\\AddOns\\RXPGuides\\GuideWindow.lua:981\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:390\n bottomMenu = <table> {\n }\n guideNameBackdrop = <table> {\n }\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:422\n ScrollFrame = RXPFrame_bottomFrameScrollFrame {\n }\n GuideName = RXPFrameGuideName {\n }\n BarContainer = RXPFrameBarContainer {\n }\n MenuFrame = RXPG_MenuFrame {\n }\n ApplyBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:294\n SetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:282\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:409\n GetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:347\n Footer = RXPFrameGuideName {\n }\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:266\n menuList = <table> {\n }\n GenerateMenuTable = <function> defined @Interface\\AddOns\\RXPGuides\\GuideWindow.lua:1486\n BottomFrame = RXPFrame_bottomFrame {\n }\n OnMouseUp = <function> defined @Interface\\AddOns\\RXPGuides\\GuideWindow.lua:198\n IsFeatureEnabled = <function> defined @Interface\\AddOns\\RXPGuides\\GuideWindow.lua:56\n SetupTextureCoordinates = <function> defined @Interface\\SharedXML\\Backdrop.lua:214\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:182\n OnMouseDown = <function> defined @Interface\\AddOns\\RXPGuides\\GuideWindow.lua:184\n activeSteps = <table> {\n }\n GetEdgeSize = <function> defined @Interface\\SharedXML\\Backdrop.lua:188\n CurrentStepFrame = <unnamed> {\n }\n ScrollChild = RXPFrame_bottomFrame_steps {\n }\n bottomBackdrop = <table> {\n }\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:246\n SetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:399\n SetStepFrameAnchor = <function> defined @Interface\\AddOns\\RXPGuides\\GuideWindow.lua:141\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:278\n}\nGuideName = RXPFrameGuideName {\n 0 = <userdata>\n text = <unnamed> {\n }\n OnMouseDown = <function> defined @Interface\\AddOns\\RXPGuides\\GuideWindow.lua:985\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:266\n icon = RXPIcon {\n }\n bg = RXPFrameGuideNameBG {\n }\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:152\n OnMouseUp = <function> defined @Interface\\AddOns\\RXPGuides\\GuideWindow.lua:992\n Center = <unnamed> {\n }\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:390\n SetupTextureCoordinates = <function> defined @Interface\\SharedXML\\Backdrop.lua:214\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:182\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:278\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:422\n RightEdge = <unnamed> {\n }\n ",
+			["stack"] = "[string \"@Interface\\AddOns\\RXPGuides\\GuideWindow.lua\"]:170: in function `SetStepFrameAnchor'\n[string \"@Interface\\AddOns\\RXPGuides\\RXPGuides-v4.3.19.lua\"]:735: in function <Interface\\AddOns\\RXPGuides\\RXPGuides.lua:674>",
+			["session"] = 6852,
+			["counter"] = 1052,
+		}, -- [632]
 	},
 }

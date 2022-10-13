@@ -19,9 +19,6 @@ local function xInstallAddon()
 	SetCVar('AutoInteract', 0)
 	SetCVar('cursorsizepreferred', 0)
 
-	ShowHelm(false)
-	ShowCloak(false)
-
 	if Grid2 then
 		Grid2.db:SetProfile('xVermin')
 	end
@@ -37,6 +34,9 @@ local function xInstallAddon()
 			TMW:LockToggle()
 		end
 	end
+
+	ShowHelm(false)
+	ShowCloak(false)
 
 	-- SetActionBarToggles(1, 1, 1, 1, 1)
 	-- local action_bars = {_G['InterfaceOptionsActionBarsPanelBottomLeft'], _G['InterfaceOptionsActionBarsPanelBottomRight'], _G['InterfaceOptionsActionBarsPanelRight'], _G['InterfaceOptionsActionBarsPanelRightTwo']}

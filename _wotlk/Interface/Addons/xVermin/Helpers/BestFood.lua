@@ -369,28 +369,32 @@ function NeedsFoodBadly.BetterDrink(a, b)
 end
 
 function NeedsFoodBadly.BetterHerb(a, b)
-	if not a then
-		return false
-	end
-	if not b then
+	if not a or not b then
 		return false
 	end
 
 	local il_a = select(4, GetItemInfo(a.id))
 	local il_b = select(4, GetItemInfo(b.id))
-	return il_a <= il_b -- or GetItemCount(a.id) <= GetItemCount(b.id)
+
+	if not il_a or not il_b then
+		return false
+	end
+
+	return il_a <= il_b --or GetItemCount(a.id) <= GetItemCount(b.id)
 end
 
 function NeedsFoodBadly.BetterOre(a, b)
-	if not a then
-		return false
-	end
-	if not b then
+	if not a or not b then
 		return false
 	end
 
 	local il_a = select(4, GetItemInfo(a.id))
 	local il_b = select(4, GetItemInfo(b.id))
+
+	if not il_a or not il_b then
+		return false
+	end
+
 	return il_a <= il_b --or GetItemCount(a.id) <= GetItemCount(b.id)
 end
 
