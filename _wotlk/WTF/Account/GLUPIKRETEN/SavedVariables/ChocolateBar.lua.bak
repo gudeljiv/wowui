@@ -586,9 +586,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 370541,
-		["timeStamp"] = 28142.218,
-		["timeAtThisLevel"] = 15937,
+		["total"] = 370578,
+		["timeStamp"] = 106024.957,
+		["timeAtThisLevel"] = 15974,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -629,9 +629,9 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 868120,
-		["timeAtThisLevel"] = 14317,
-		["timeStamp"] = 96600.573,
+		["total"] = 873428,
+		["timeAtThisLevel"] = 19625,
+		["timeStamp"] = 112860.666,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,
@@ -651,9 +651,9 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 119285,
-		["timeStamp"] = 100161.195,
-		["timeAtThisLevel"] = 33047,
+		["total"] = 123479,
+		["timeStamp"] = 117292.095,
+		["timeAtThisLevel"] = 37241,
 	},
 	["Tudum-Jin'do"] = {
 		["total"] = 316,
@@ -710,9 +710,9 @@ CB_PlayedTime = {
 		["total"] = 437,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 227910,
-		["timeAtThisLevel"] = 222164,
-		["timeStamp"] = 100484.735,
+		["total"] = 228825,
+		["timeAtThisLevel"] = 223079,
+		["timeStamp"] = 118966.065,
 	},
 	["Battlearm-Jin'do"] = {
 		["total"] = 489,
@@ -753,9 +753,9 @@ CB_PlayedTime = {
 		["total"] = 129,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 988177,
-		["timeAtThisLevel"] = 35703,
-		["timeStamp"] = 86751.795,
+		["total"] = 990338,
+		["timeAtThisLevel"] = 1917,
+		["timeStamp"] = 108325.261,
 	},
 	["Grgur-"] = {
 		["total"] = 1248,

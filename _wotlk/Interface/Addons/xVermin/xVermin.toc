@@ -40,6 +40,7 @@ Addons/PallyPower.lua
 Addons/Questie.lua
 Addons/RangeDisplay.lua
 Addons/RXPGuide.lua
+Addons/TomTom.lua
 Addons/WeakAuras.lua
 
 

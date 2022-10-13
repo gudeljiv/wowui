@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 6857,
+	["session"] = 6881,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -4938,5 +4938,20 @@ BugGrabberDB = {
 			["session"] = 6852,
 			["counter"] = 1052,
 		}, -- [632]
+		{
+			["message"] = "...Ons\\AuctionFaster\\Libs\\StdUi\\widgets\\ContextMenu.lua:105: attempt to index field 'texture' (a nil value)",
+			["time"] = "2022/10/13 14:26:55",
+			["stack"] = "[string \"@Interface\\AddOns\\AuctionFaster\\Libs\\StdUi\\widgets\\ContextMenu.lua\"]:105: in function `create'\n[string \"@Interface\\AddOns\\AuctionFaster\\Libs\\StdUi\\StdUiGrid.lua\"]:44: in function `ObjectList'\n[string \"@Interface\\AddOns\\AuctionFaster\\Libs\\StdUi\\widgets\\ContextMenu.lua\"]:185: in function `DrawOptions'\n[string \"@Interface\\AddOns\\AuctionFaster\\Libs\\StdUi\\widgets\\ContextMenu.lua\"]:226: in function `ContextMenu'\n[string \"@Interface\\AddOns\\AuctionFaster\\tabs\\sell\\ui.lua\"]:82: in function `DrawItemsFrame'\n[string \"@Interface\\AddOns\\AuctionFaster\\tabs\\sell\\ui.lua\"]:30: in function `AddSellAuctionHouseTab'\n[string \"@Interface\\AddOns\\AuctionFaster\\tabs\\sell\\functions.lua\"]:33: in function `?'\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:119: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `Fire'\n[string \"@Interface\\AddOns\\AuctionFaster\\Libs\\AceEvent-3.0\\AceEvent-3.0-4.lua\"]:120: in function <...Ons\\AuctionFaster\\Libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
+			["session"] = 6861,
+			["counter"] = 1,
+		}, -- [633]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Addons/TomTom.lua:6: attempt to index global 'Questie_BaseFrame' (a nil value)",
+			["time"] = "2022/10/13 18:22:06",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'Questie_BaseFrame' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Addons/TomTom.lua\"]:6: in function <Interface\\AddOns\\xVermin\\Addons/TomTom.lua:5>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
+			["session"] = 6879,
+			["counter"] = 38,
+		}, -- [634]
 	},
 }

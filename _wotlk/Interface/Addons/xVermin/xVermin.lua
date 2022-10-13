@@ -270,6 +270,8 @@ f:SetScript(
 			UIWidgetTopCenterContainerFrame:SetPoint('TOP', 'UIParent', 'TOP', 0, -70)
 			UIWidgetTopCenterContainerFrame:SetMovable(false)
 		end
+
+		TomTomCrazyArrow:Hide()
 	end
 )
 

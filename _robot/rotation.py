@@ -47,17 +47,22 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 abilities_folder = dir_path + "\images\\" + monitor
 # abilities_list = [f for f in listdir(abilities_folder) if isfile(join(abilities_folder, f))]
 
+healing = {}
+for skill in skills["healing"]:
+    healing[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+
 abilities = {}
 # for ability in abilities_list:
 #     cv2grey = cv2.cvtColor(cv2.imread(abilities_folder + "/" + ability), cv2.COLOR_BGR2GRAY)
 #     abilities[ability.replace(".png", "")] = cv2grey
 
-for skill in skills[wow_class] + skills["healing"]:
-    abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+for skill in skills[wow_class]:
+    abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+    abilities = {**abilities, **healing}
 
-abilities_queue = {}
-for skill in skills["queue"]:
-    abilities_queue[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+abilities_offgcd = {}
+for skill in skills["offgcd"]:
+    abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
 
 skills_loaded = "warrior"
 print("Script loaded and ready.", "Rotation is paused.", "Monitor:", monitor, abilities_folder)
@@ -114,7 +119,7 @@ with keyboard.Listener(on_press=on_press) as listener:
             active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
             p_main = {"top": 0, "left": 0, "width": x*2, "height": y*2}
-            p_queue = {"top": 0, "left":  monitor == "2k" and 80 or 105, "width": x*2, "height": y*2}
+            p_offgcd = {"top": 0, "left":  monitor == "2k" and 80 or 105, "width": x*2, "height": y*2}
             p_combat = {"top": 0, "left": monitor == "2k" and 17 or 24, "width": 7, "height": 7}
             p_interrupt = {"top": 0, "left": monitor == "2k" and 27 or 42, "width": 7, "height": 7}
             p_behind = {"top": 0, "left": monitor == "2k" and 38 or 62, "width": 7, "height": 7}
@@ -126,10 +131,10 @@ with keyboard.Listener(on_press=on_press) as listener:
             main = main_image.pixel(int(x/2), int(y/2))
             # mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
 
-            q_image = dir_path + "/_queue.png".format(**p_queue)
-            queue_image = sct.grab(p_queue)
-            queue = queue_image.pixel(int(x/2), int(y/2))
-            # mss.tools.to_png(queue_image.rgb, queue_image.size, output=q_image)
+            q_image = dir_path + "/_offgcd.png".format(**p_offgcd)
+            offgcd_image = sct.grab(p_offgcd)
+            offgcd = offgcd_image.pixel(int(x/2), int(y/2))
+            # mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=q_image)
 
             combat_image = sct.grab(p_combat)
             combat = combat_image.pixel(5, 5)
@@ -167,8 +172,12 @@ with keyboard.Listener(on_press=on_press) as listener:
             if skills_loaded != wow_class:
                 abilities = {}
                 skills_loaded = wow_class
-                for skill in skills[wow_class] + skills["healing"]:
-                    abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+                for skill in skills[wow_class]:
+                    try:
+                        abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+                        abilities = {**abilities, **healing}
+                    except:
+                        print("missing spell in " + wow_class + " --> " + skill["name"])
 
             # print(clss, '#%02x%02x%02x' % clss, wow_class)
             # print(hex, combat, interrupt, wow_class)
@@ -196,7 +205,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                     pyautogui.hotkey("f9")
 
                 grabbed = cv2.cvtColor(numpy.array(main_image), cv2.COLOR_BGR2GRAY)
-                queue = cv2.cvtColor(numpy.array(queue_image), cv2.COLOR_BGR2GRAY)
+                offgcd = cv2.cvtColor(numpy.array(offgcd_image), cv2.COLOR_BGR2GRAY)
 
                 # if dprint:
                 #     print("class", hex, wow_class)
@@ -220,12 +229,12 @@ with keyboard.Listener(on_press=on_press) as listener:
                             except:
                                 print("score, diff not found for main ability")
 
-                for skill in skills["queue"]:
-                    for ability in abilities_queue:
+                for skill in skills["offgcd"]:
+                    for ability in abilities_offgcd:
                         if ability == skill["name"]:
 
                             try:
-                                (score, diff) = structural_similarity(abilities_queue[ability], queue, full=True)
+                                (score, diff) = structural_similarity(abilities_offgcd[ability], offgcd, full=True)
                                 if score*100 > 90:
                                     if dprint:
                                         print(ability, skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
@@ -235,7 +244,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                                     else:
                                         pyautogui.hotkey(skill["key"])
                             except:
-                                print("score, diff not found for queue")
+                                print("score, diff not found for offgcd")
 
             if debug:
                 time.sleep(0.5)

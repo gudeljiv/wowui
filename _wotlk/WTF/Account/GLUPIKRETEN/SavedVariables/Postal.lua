@@ -17,7 +17,7 @@ Postal3DB = {
 				"Tudum|Ashbringer|Horde|4|WARRIOR", -- [12]
 				"Tudum|Jin'do|Horde|1|WARRIOR", -- [13]
 				"Vermina|Golemagg|Horde|31|PALADIN", -- [14]
-				"Vermin|Golemagg|Horde|74|WARRIOR", -- [15]
+				"Vermin|Golemagg|Horde|75|WARRIOR", -- [15]
 				"Wells|Jin'do|Horde|8|DRUID", -- [16]
 			},
 		},
@@ -42,6 +42,13 @@ Postal3DB = {
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Mxyz|Golemagg|Horde", -- [1]
+					"Vermin|Golemagg|Horde", -- [2]
+					"Battlearm|Golemagg|Horde", -- [3]
+				},
+			},
 		},
 		["Vermina - Golemagg"] = {
 		},

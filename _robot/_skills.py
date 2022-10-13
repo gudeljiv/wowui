@@ -9,11 +9,14 @@ skills["healing"] = [
     {"name": "lifeblood", "key": "7", "modifier": "alt"},
 ]
 
-skills["queue"] = [
+skills["offgcd"] = [
     {"name": "heroic strike", "key": "2"},
     {"name": "cleave", "key": "3"},
     {"name": "maul", "key": "1"},
     {"name": "rune strike", "key": "9", "modifier": "alt"},
+    {"name": "rune tap", "key": "h"},
+    {"name": "blood tap", "key": "0", "modifier": "alt"},
+
 ]
 
 skills["warrior"] = [
@@ -98,9 +101,7 @@ skills["death knight"] = [
     {"name": "heart strike", "key": "f10"},
     {"name": "death coil", "key": "4"},
     {"name": "blood boil", "key": "e"},
-    {"name": "rune tap", "key": "h"},
     {"name": "pestilence", "key": "3"},
-    {"name": "blood tap", "key": "0", "modifier": "alt"},
     {"name": "icebound fortitude", "key": "t"},
     {"name": "horn of winter", "key": "f4"},
 ]

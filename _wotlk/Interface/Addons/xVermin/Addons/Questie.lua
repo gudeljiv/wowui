@@ -47,8 +47,6 @@ xVermin.CheckIfLoadedWithTimer(
 					Questie_BaseFrame:SetWidth(width)
 				end
 
-				TomTomCrazyArrow:SetPoint('TOPRIGHT', self, 'TOPLEFT', -20, -10)
-
 				for i = 1, 32 do
 					ib = _G['Questie_ItemButton' .. i]
 					if ib then
