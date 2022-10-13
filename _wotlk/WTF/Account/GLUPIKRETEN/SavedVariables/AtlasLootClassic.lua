@@ -477,10 +477,6 @@ AtlasLootClassicDB = {
 					156.011474609375, -- [5]
 				},
 			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["Addons"] = {
 				["Favourites"] = {
 					["lists"] = {
@@ -491,6 +487,10 @@ AtlasLootClassicDB = {
 						},
 					},
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Klhjakhsgdjh - Golemagg"] = {

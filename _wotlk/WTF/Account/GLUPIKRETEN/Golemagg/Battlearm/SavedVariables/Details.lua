@@ -15,9 +15,9 @@ _detalhes_database = {
 		["show_options"] = false,
 		["pos"] = {
 		},
-		["height"] = 18,
 		["cooldowns"] = {
 		},
+		["height"] = 18,
 		["framme_locked"] = false,
 		["show_conditions"] = {
 			["only_inside_instance"] = true,
@@ -104,11 +104,11 @@ _detalhes_database = {
 			["last_section_selected"] = "main",
 			["author"] = "Terciob",
 			["window_scale"] = 1,
-			["hide_on_combat"] = false,
-			["show_icon"] = 5,
-			["opened"] = 0,
 			["encounter_timers_dbm"] = {
 			},
+			["show_icon"] = 5,
+			["opened"] = 0,
+			["hide_on_combat"] = false,
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["font_color"] = {
@@ -125,41 +125,31 @@ _detalhes_database = {
 				1, -- [3]
 				0.5, -- [4]
 			},
+			["scale"] = 1,
 			["main_frame_size"] = {
 				249.999740600586, -- [1]
 				89.9999694824219, -- [2]
 			},
-			["arrow_anchor_y"] = 0,
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
 				["hide"] = true,
 			},
-			["main_frame_locked"] = true,
+			["row_height"] = 18,
 			["arrow_anchor_x"] = 0,
-			["main_frame_strata"] = "LOW",
+			["point"] = "RIGHT",
 			["row_texture"] = "Glamour2",
 			["square_grow_direction"] = "right",
-			["use_spark"] = false,
-			["author"] = "Details! Team",
-			["square_amount"] = 5,
-			["enabled"] = false,
-			["arrow_size"] = 10,
-			["font_size"] = 10,
-			["row_spacement"] = 19,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
+			["use_square_mode"] = false,
 			["row_color"] = {
 				0.443137254901961, -- [1]
 				0.592156862745098, -- [2]
 				1, -- [3]
 				0.480826139450073, -- [4]
 			},
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["square_amount"] = 5,
+			["enabled"] = false,
+			["arrow_size"] = 10,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -167,29 +157,29 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = -6.103515625e-05,
 				["x"] = 0.00311279296875,
-				["attribute_type"] = 1,
-				["update_speed"] = 0.05,
 				["size"] = 32,
+				["update_speed"] = 0.05,
+				["attribute_type"] = 1,
 			},
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["y"] = -183.107162475586,
+			["use_spark"] = false,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["use_square_mode"] = false,
-			["point"] = "RIGHT",
-			["row_height"] = 18,
-			["scale"] = 1,
+			["font_size"] = 10,
+			["author"] = "Details! Team",
+			["main_frame_locked"] = true,
+			["arrow_anchor_y"] = 0,
 		},
-	},
-	["announce_prepots"] = {
-		["enabled"] = false,
-		["channel"] = "SELF",
-		["reverse"] = false,
-	},
-	["last_day"] = "13",
-	["cached_roles"] = {
-		["Player-4465-02FEFF6C"] = "DAMAGER",
-		["Player-4465-036D491F"] = "TANK",
 	},
 	["cached_talents"] = {
 		["Player-4465-036D491F"] = {
@@ -987,11 +977,126 @@ _detalhes_database = {
 			}, -- [88]
 		},
 	},
-	["benchmark_db"] = {
-		["frame"] = {
-		},
+	["announce_prepots"] = {
+		["enabled"] = false,
+		["channel"] = "SELF",
+		["reverse"] = false,
 	},
-	["last_realversion"] = 146,
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["last_day"] = "13",
+	["character_data"] = {
+		["logons"] = 190,
+	},
+	["local_instances_config"] = {
+		{
+			["modo"] = 2,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = true,
+			["verticalSnap"] = false,
+			["isLocked"] = true,
+			["is_open"] = true,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["snap"] = {
+				[3] = 2,
+			},
+			["segment"] = 0,
+			["mode"] = 2,
+			["attribute"] = 1,
+			["pos"] = {
+				["normal"] = {
+					["y"] = 573.7485961914062,
+					["x"] = -1059.56290435791,
+					["w"] = 234.8973846435547,
+					["h"] = 136.6408081054688,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [1]
+		{
+			["modo"] = 2,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = true,
+			["verticalSnap"] = false,
+			["isLocked"] = true,
+			["is_open"] = true,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["snap"] = {
+				1, -- [1]
+			},
+			["segment"] = 0,
+			["mode"] = 2,
+			["attribute"] = 2,
+			["pos"] = {
+				["normal"] = {
+					["y"] = 573.7485961914062,
+					["x"] = -827.6270141601562,
+					["w"] = 228.9743804931641,
+					["h"] = 136.6408081054688,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [2]
+		{
+			["modo"] = 2,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = false,
+			["verticalSnap"] = false,
+			["isLocked"] = true,
+			["snap"] = {
+			},
+			["is_open"] = true,
+			["last_raid_plugin"] = "DETAILS_PLUGIN_TINY_THREAT",
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["segment"] = 0,
+			["mode"] = 2,
+			["attribute"] = 1,
+			["pos"] = {
+				["normal"] = {
+					["y"] = -517.3939361572266,
+					["x"] = 501.459716796875,
+					["w"] = 215.7857666015625,
+					["h"] = 170.4597473144531,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [3]
+	},
 	["combat_id"] = 2,
 	["savedStyles"] = {
 		{
@@ -1013,7 +1118,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["micro_displays_locked"] = false,
+			["skin_custom"] = "vermin",
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -1193,13 +1298,13 @@ _detalhes_database = {
 				},
 			},
 			["micro_displays_side"] = 2,
-			["bg_alpha"] = 0,
+			["version"] = 3,
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["name"] = "vermin",
+			["bg_alpha"] = 0,
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -1222,7 +1327,7 @@ _detalhes_database = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["skin_custom"] = "vermin",
+			["bars_sort_direction"] = 1,
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -1238,12 +1343,11 @@ _detalhes_database = {
 					0.07058823529411765, -- [3]
 				},
 			},
-			["bars_grow_direction"] = 1,
-			["row_show_animation"] = {
-				["anim"] = "Fade",
-				["options"] = {
-				},
+			["menu_anchor_down"] = {
+				16, -- [1]
+				-3, -- [2]
 			},
+			["bars_grow_direction"] = 1,
 			["grab_on_top"] = false,
 			["auto_hide_menu"] = {
 				["left"] = false,
@@ -1260,12 +1364,13 @@ _detalhes_database = {
 				1, -- [2]
 				1, -- [3]
 			},
-			["menu_anchor_down"] = {
-				16, -- [1]
-				-3, -- [2]
+			["row_show_animation"] = {
+				["anim"] = "Fade",
+				["options"] = {
+				},
 			},
 			["auto_current"] = true,
-			["bars_sort_direction"] = 1,
+			["micro_displays_locked"] = false,
 			["row_info"] = {
 				["show_arena_role_icon"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
@@ -1378,7 +1483,7 @@ _detalhes_database = {
 				["textR_separator"] = "NONE",
 				["texture_custom_file"] = "Interface\\",
 			},
-			["version"] = 3,
+			["name"] = "vermin",
 			["hide_in_combat"] = false,
 			["switch_damager"] = {
 				1, -- [1]
@@ -1428,11 +1533,8 @@ _detalhes_database = {
 			},
 		}, -- [1]
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["combat_counter"] = 1566,
+	["force_font_outline"] = "",
+	["combat_counter"] = 1568,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -1447,46 +1549,28 @@ _detalhes_database = {
 					["flag_original"] = 1297,
 					["totalabsorbed"] = 0.01658,
 					["damage_from"] = {
-						["Tempest-Forge Peacekeeper"] = true,
 						["Bloodwarder Protector"] = true,
+						["Tempest-Forge Peacekeeper"] = true,
 					},
 					["targets"] = {
-						["Tempest-Forge Peacekeeper"] = 22355,
 						["Bloodwarder Protector"] = 45471,
+						["Tempest-Forge Peacekeeper"] = 22355,
 					},
 					["pets"] = {
 						"Bloodworm <Battlearm>", -- [1]
 					},
-					["isTank"] = true,
-					["on_hold"] = false,
-					["friendlyfire_total"] = 0,
+					["start_time"] = 1665677761,
+					["damage_taken"] = 36903.01658,
+					["classe"] = "DEATHKNIGHT",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 65520.01658,
-					["friendlyfire"] = {
-					},
-					["serial"] = "Player-4465-036D491F",
+					["aID"] = "4465-036D491F",
+					["delay"] = 0,
 					["dps_started"] = false,
-					["end_time"] = 1665677837,
-					["classe"] = "DEATHKNIGHT",
-					["avoidance"] = {
-						["overall"] = {
-							["DODGE"] = 0,
-							["FULL_ABSORB_AMT"] = 0,
-							["BLOCKED_AMT"] = 0,
-							["BLOCKED_HITS"] = 0,
-							["FULL_ABSORBED"] = 0,
-							["ALL"] = 0,
-							["PARTIAL_ABSORBED"] = 0,
-							["PARRY"] = 0,
-							["PARTIAL_ABSORB_AMT"] = 0,
-							["ABSORB"] = 0,
-							["ABSORB_AMT"] = 0,
-							["FULL_HIT"] = 0,
-							["HITS"] = 0,
-							["FULL_HIT_AMT"] = 0,
-						},
-					},
+					["total"] = 67826.01658,
+					["friendlyfire_total"] = 0,
+					["last_dps"] = 0,
 					["nome"] = "Battlearm",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -1497,8 +1581,8 @@ _detalhes_database = {
 								["g_amt"] = 1,
 								["n_max"] = 567,
 								["targets"] = {
-									["Tempest-Forge Peacekeeper"] = 2740,
 									["Bloodwarder Protector"] = 3299,
+									["Tempest-Forge Peacekeeper"] = 2740,
 								},
 								["n_dmg"] = 3113,
 								["n_min"] = 0,
@@ -1508,17 +1592,17 @@ _detalhes_database = {
 								["c_max"] = 1276,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["DODGE"] = 1,
-								["MISS"] = 1,
+								["r_amt"] = 0,
+								["b_dmg"] = 507,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["a_dmg"] = 0,
 								["n_amt"] = 6,
-								["b_dmg"] = 507,
-								["r_amt"] = 0,
+								["MISS"] = 1,
+								["DODGE"] = 1,
 							}, -- [1]
 							[47632] = {
 								["c_amt"] = 1,
@@ -1527,8 +1611,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 703,
 								["targets"] = {
-									["Tempest-Forge Peacekeeper"] = 2486,
 									["Bloodwarder Protector"] = 2679,
+									["Tempest-Forge Peacekeeper"] = 2486,
 								},
 								["n_dmg"] = 3952,
 								["n_min"] = 0,
@@ -1538,15 +1622,15 @@ _detalhes_database = {
 								["c_max"] = 1213,
 								["id"] = 47632,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 6,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[55260] = {
 								["c_amt"] = 3,
@@ -1565,16 +1649,16 @@ _detalhes_database = {
 								["c_max"] = 2100,
 								["id"] = 55260,
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["PARRY"] = 1,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 8,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 							},
 							[49921] = {
 								["c_amt"] = 0,
@@ -1583,8 +1667,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 346,
 								["targets"] = {
-									["Tempest-Forge Peacekeeper"] = 346,
 									["Bloodwarder Protector"] = 323,
+									["Tempest-Forge Peacekeeper"] = 346,
 								},
 								["n_dmg"] = 669,
 								["n_min"] = 0,
@@ -1594,15 +1678,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 49921,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 2,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[56815] = {
 								["c_amt"] = 0,
@@ -1611,8 +1695,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 1238,
 								["targets"] = {
-									["Tempest-Forge Peacekeeper"] = 4239,
 									["Bloodwarder Protector"] = 5516,
+									["Tempest-Forge Peacekeeper"] = 4239,
 								},
 								["n_dmg"] = 9755,
 								["n_min"] = 0,
@@ -1622,16 +1706,16 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 56815,
 								["r_dmg"] = 0,
-								["MISS"] = 2,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 9,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["extra"] = {
+								},
+								["MISS"] = 2,
 							},
 							[49924] = {
 								["c_amt"] = 4,
@@ -1640,8 +1724,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 847,
 								["targets"] = {
-									["Tempest-Forge Peacekeeper"] = 5189,
 									["Bloodwarder Protector"] = 4796,
+									["Tempest-Forge Peacekeeper"] = 5189,
 								},
 								["n_dmg"] = 4501,
 								["n_min"] = 0,
@@ -1651,15 +1735,127 @@ _detalhes_database = {
 								["c_max"] = 1876,
 								["id"] = 49924,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 671,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 6,
-								["b_dmg"] = 671,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[55095] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 198,
+								["targets"] = {
+									["Bloodwarder Protector"] = 5988,
+									["Tempest-Forge Peacekeeper"] = 1680,
+								},
+								["n_dmg"] = 7668,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 45,
+								["total"] = 7668,
+								["c_max"] = 0,
+								["id"] = 55095,
+								["r_dmg"] = 0,
 								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 45,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[55078] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 204,
+								["targets"] = {
+									["Bloodwarder Protector"] = 6052,
+									["Tempest-Forge Peacekeeper"] = 1811,
+								},
+								["n_dmg"] = 7863,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 44,
+								["total"] = 7863,
+								["c_max"] = 0,
+								["id"] = 55078,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 44,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[49903] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 458,
+								["targets"] = {
+									["Bloodwarder Protector"] = 439,
+									["Tempest-Forge Peacekeeper"] = 458,
+								},
+								["n_dmg"] = 897,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 2,
+								["total"] = 897,
+								["c_max"] = 0,
+								["id"] = 49903,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 2,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[49939] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 531,
+								["targets"] = {
+									["Bloodwarder Protector"] = 5081,
+									["Tempest-Forge Peacekeeper"] = 2580,
+								},
+								["n_dmg"] = 7661,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 15,
+								["total"] = 7661,
+								["c_max"] = 0,
+								["id"] = 49939,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 15,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[47476] = {
 								["c_amt"] = 0,
@@ -1678,142 +1874,48 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 47476,
 								["r_dmg"] = 0,
-								["IMMUNE"] = 1,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[49939] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 531,
-								["targets"] = {
-									["Tempest-Forge Peacekeeper"] = 2580,
-									["Bloodwarder Protector"] = 5081,
-								},
-								["n_dmg"] = 7661,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 15,
-								["total"] = 7661,
-								["c_max"] = 0,
-								["id"] = 49939,
-								["r_dmg"] = 0,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 15,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[49903] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 458,
-								["targets"] = {
-									["Tempest-Forge Peacekeeper"] = 458,
-									["Bloodwarder Protector"] = 439,
-								},
-								["n_dmg"] = 897,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 2,
-								["total"] = 897,
-								["c_max"] = 0,
-								["id"] = 49903,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 2,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[55078] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 204,
-								["targets"] = {
-									["Tempest-Forge Peacekeeper"] = 1811,
-									["Bloodwarder Protector"] = 6052,
-								},
-								["n_dmg"] = 7863,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 44,
-								["total"] = 7863,
-								["c_max"] = 0,
-								["id"] = 55078,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 44,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[55095] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 198,
-								["targets"] = {
-									["Tempest-Forge Peacekeeper"] = 1680,
-									["Bloodwarder Protector"] = 5988,
-								},
-								["n_dmg"] = 7668,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 45,
-								["total"] = 7668,
-								["c_max"] = 0,
-								["id"] = 55095,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 45,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["IMMUNE"] = 1,
 							},
 						},
 						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["total"] = 67826.01658,
-					["last_event"] = 0,
-					["damage_taken"] = 36903.01658,
-					["custom"] = 0,
+					["end_time"] = 1665677837,
 					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1665677761,
-					["delay"] = 0,
-					["aID"] = "4465-036D491F",
+					["avoidance"] = {
+						["overall"] = {
+							["DODGE"] = 0,
+							["FULL_ABSORB_AMT"] = 0,
+							["BLOCKED_AMT"] = 0,
+							["BLOCKED_HITS"] = 0,
+							["FULL_ABSORBED"] = 0,
+							["ALL"] = 0,
+							["PARTIAL_ABSORBED"] = 0,
+							["PARRY"] = 0,
+							["PARTIAL_ABSORB_AMT"] = 0,
+							["ABSORB"] = 0,
+							["ABSORB_AMT"] = 0,
+							["FULL_HIT"] = 0,
+							["HITS"] = 0,
+							["FULL_HIT_AMT"] = 0,
+						},
+					},
+					["custom"] = 0,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
+					["isTank"] = true,
+					["serial"] = "Player-4465-036D491F",
+					["on_hold"] = false,
 				}, -- [1]
 				{
 					["flag_original"] = 68168,
@@ -1825,21 +1927,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Battlearm"] = 25465,
 					},
-					["serial"] = "Creature-0-4447-553-4086-17993-00014839DB",
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["aID"] = "17993",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 25465.015207,
-					["end_time"] = 1665677837,
-					["dps_started"] = false,
 					["total"] = 25465.015207,
-					["on_hold"] = false,
-					["last_event"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1665677837,
+					["damage_taken"] = 45471.015207,
+					["tipo"] = 1,
 					["nome"] = "Bloodwarder Protector",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -1858,20 +1959,20 @@ _detalhes_database = {
 								["counter"] = 46,
 								["total"] = 15766,
 								["c_max"] = 1108,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["DODGE"] = 4,
+								["b_dmg"] = 0,
 								["MISS"] = 2,
-								["extra"] = {
-								},
+								["a_amt"] = 0,
 								["PARRY"] = 8,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["extra"] = {
+								},
 								["n_amt"] = 31,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["DODGE"] = 4,
+								["a_dmg"] = 0,
 							}, -- [1]
 							[29765] = {
 								["c_amt"] = 0,
@@ -1888,20 +1989,20 @@ _detalhes_database = {
 								["counter"] = 8,
 								["total"] = 9699,
 								["c_max"] = 0,
-								["DODGE"] = 1,
+								["r_amt"] = 0,
 								["id"] = 29765,
 								["r_dmg"] = 0,
-								["MISS"] = 1,
+								["b_dmg"] = 0,
 								["a_dmg"] = 2687,
-								["extra"] = {
-								},
+								["a_amt"] = 1,
 								["PARRY"] = 2,
 								["c_min"] = 0,
 								["successful_casted"] = 8,
-								["a_amt"] = 1,
+								["extra"] = {
+								},
 								["n_amt"] = 4,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["MISS"] = 1,
+								["DODGE"] = 1,
 							},
 							[35399] = {
 								["c_amt"] = 0,
@@ -1919,28 +2020,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 35399,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 2,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
-					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 45471.015207,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1665677764,
-					["delay"] = 0,
-					["monster"] = true,
+					["serial"] = "Creature-0-4447-553-4086-17993-00014839DB",
+					["dps_started"] = false,
 				}, -- [2]
 				{
 					["flag_original"] = 8465,
@@ -1949,22 +2051,22 @@ _detalhes_database = {
 						["Tempest-Forge Peacekeeper"] = true,
 					},
 					["targets"] = {
-						["Tempest-Forge Peacekeeper"] = 826,
 						["Bloodwarder Protector"] = 1480,
+						["Tempest-Forge Peacekeeper"] = 826,
 					},
-					["serial"] = "Creature-0-4447-553-4086-28017-00004839F8",
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["last_event"] = 0,
+					["tipo"] = 1,
+					["end_time"] = 1665677837,
 					["classe"] = "PET",
-					["aID"] = "28017",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 2306.008834,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["dps_started"] = false,
 					["total"] = 2306.008834,
-					["on_hold"] = false,
+					["damage_taken"] = 1263.008834,
 					["ownerName"] = "Battlearm",
 					["nome"] = "Bloodworm <Battlearm>",
 					["spells"] = {
@@ -1976,8 +2078,8 @@ _detalhes_database = {
 								["g_amt"] = 3,
 								["n_max"] = 46,
 								["targets"] = {
-									["Tempest-Forge Peacekeeper"] = 826,
 									["Bloodwarder Protector"] = 1480,
+									["Tempest-Forge Peacekeeper"] = 826,
 								},
 								["n_dmg"] = 2005,
 								["n_min"] = 0,
@@ -1985,20 +2087,20 @@ _detalhes_database = {
 								["counter"] = 61,
 								["total"] = 2306,
 								["c_max"] = 89,
-								["DODGE"] = 2,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["MISS"] = 1,
+								["b_dmg"] = 0,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
-								["BLOCK"] = 2,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
 								["a_amt"] = 0,
+								["c_min"] = 0,
+								["BLOCK"] = 2,
+								["successful_casted"] = 0,
+								["a_dmg"] = 0,
 								["n_amt"] = 51,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["MISS"] = 1,
+								["DODGE"] = 2,
 							}, -- [1]
 						},
 						["tipo"] = 2,
@@ -2008,11 +2110,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 1263.008834,
+					["last_event"] = 0,
+					["last_dps"] = 0,
 					["start_time"] = 1665677796,
-					["delay"] = 0,
-					["end_time"] = 1665677837,
+					["serial"] = "Creature-0-4447-553-4086-28017-00004839F8",
+					["aID"] = "28017",
 				}, -- [3]
 				{
 					["flag_original"] = 68168,
@@ -2025,21 +2127,20 @@ _detalhes_database = {
 						["Battlearm"] = 11438,
 						["Bloodworm <Battlearm>"] = 1263,
 					},
-					["serial"] = "Creature-0-4447-553-4086-18405-00004839DA",
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["aID"] = "18405",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 12701.009051,
-					["end_time"] = 1665677885,
-					["dps_started"] = false,
 					["total"] = 12701.009051,
-					["on_hold"] = false,
-					["last_event"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1665677885,
+					["damage_taken"] = 22355.009051,
+					["tipo"] = 1,
 					["nome"] = "Tempest-Forge Peacekeeper",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -2060,17 +2161,17 @@ _detalhes_database = {
 								["c_max"] = 1109,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["DODGE"] = 2,
-								["MISS"] = 1,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["a_dmg"] = 0,
 								["n_amt"] = 5,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["MISS"] = 1,
+								["DODGE"] = 2,
 							}, -- [1]
 							[34793] = {
 								["c_amt"] = 0,
@@ -2089,15 +2190,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 34793,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 2,
 								["a_amt"] = 0,
 								["n_amt"] = 2,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[34785] = {
 								["c_amt"] = 0,
@@ -2117,15 +2218,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 34785,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 2,
 								["a_amt"] = 0,
 								["n_amt"] = 3,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[34791] = {
 								["c_amt"] = 0,
@@ -2145,28 +2246,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 34791,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 1,
 								["a_amt"] = 0,
 								["n_amt"] = 3,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
-					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 22355.009051,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1665677848,
-					["delay"] = 0,
-					["monster"] = true,
+					["serial"] = "Creature-0-4447-553-4086-18405-00004839DA",
+					["dps_started"] = false,
 				}, -- [4]
 			},
 		}, -- [1]
@@ -2175,14 +2277,15 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1297,
-					["targets_overheal"] = {
-						["Battlearm"] = 1887,
+					["healing_from"] = {
+						["Battlearm"] = true,
+						["Bloodworm <Battlearm>"] = true,
 					},
 					["pets"] = {
 						"Bloodworm <Battlearm>", -- [1]
 					},
 					["iniciar_hps"] = false,
-					["heal_enemy_amt"] = 0,
+					["classe"] = "DEATHKNIGHT",
 					["totalover"] = 2215.012874,
 					["total_without_pet"] = 22518.012874,
 					["total"] = 26802.012874,
@@ -2203,7 +2306,7 @@ _detalhes_database = {
 					["healing_taken"] = 26802.012874,
 					["fight_component"] = true,
 					["end_time"] = 1665677837,
-					["tipo"] = 2,
+					["aID"] = "4465-036D491F",
 					["nome"] = "Battlearm",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -2227,9 +2330,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 2015,
 								["totaldenied"] = 0,
 								["n_amt"] = 1,
-								["n_curado"] = 2015,
 								["absorbed"] = 0,
 							},
 							[48982] = {
@@ -2251,9 +2354,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 4254,
 								["totaldenied"] = 0,
 								["n_amt"] = 2,
-								["n_curado"] = 4254,
 								["absorbed"] = 0,
 							},
 							[45470] = {
@@ -2276,9 +2379,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 12467,
 								["totaldenied"] = 0,
 								["n_amt"] = 10,
-								["n_curado"] = 12467,
 								["absorbed"] = 0,
 							},
 							[28495] = {
@@ -2300,9 +2403,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 1549,
 								["totaldenied"] = 0,
 								["n_amt"] = 1,
-								["n_curado"] = 1549,
 								["absorbed"] = 0,
 							},
 							[53365] = {
@@ -2324,36 +2427,34 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 2233,
 								["totaldenied"] = 0,
 								["n_amt"] = 7,
-								["n_curado"] = 2233,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["healing_from"] = {
-						["Battlearm"] = true,
-						["Bloodworm <Battlearm>"] = true,
+					["targets_overheal"] = {
+						["Battlearm"] = 1887,
 					},
-					["classe"] = "DEATHKNIGHT",
+					["heal_enemy_amt"] = 0,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["totaldenied"] = 0.012874,
+					["tipo"] = 2,
 					["start_time"] = 1665677771,
+					["totaldenied"] = 0.012874,
 					["delay"] = 0,
-					["aID"] = "4465-036D491F",
+					["last_event"] = 0,
 				}, -- [1]
 				{
 					["flag_original"] = 8465,
-					["targets_overheal"] = {
-						["Battlearm"] = 328,
+					["healing_from"] = {
 					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["aID"] = "28017",
+					["heal_enemy_amt"] = 0,
 					["totalover"] = 328.01362,
 					["total_without_pet"] = 4284.01362,
 					["total"] = 4284.01362,
@@ -2372,7 +2473,7 @@ _detalhes_database = {
 					["healing_taken"] = 0.01362,
 					["fight_component"] = true,
 					["end_time"] = 1665677837,
-					["classe"] = "PET",
+					["tipo"] = 2,
 					["ownerName"] = "Battlearm",
 					["nome"] = "Bloodworm <Battlearm>",
 					["spells"] = {
@@ -2397,24 +2498,25 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 4284,
 								["totaldenied"] = 0,
 								["n_amt"] = 56,
-								["n_curado"] = 4284,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["healing_from"] = {
+					["targets_overheal"] = {
+						["Battlearm"] = 328,
 					},
-					["heal_enemy_amt"] = 0,
+					["aID"] = "28017",
 					["custom"] = 0,
 					["last_event"] = 0,
-					["start_time"] = 1665677796,
 					["totaldenied"] = 0.01362,
+					["start_time"] = 1665677796,
 					["delay"] = 0,
-					["tipo"] = 2,
+					["classe"] = "PET",
 				}, -- [2]
 			},
 		}, -- [2]
@@ -2500,18 +2602,18 @@ _detalhes_database = {
 								},
 								["counter"] = 10,
 							},
-							[45524] = {
+							[57330] = {
 								["total"] = 10,
-								["id"] = 45524,
+								["id"] = 57330,
 								["totalover"] = 0,
 								["targets"] = {
 									["Battlearm"] = 10,
 								},
 								["counter"] = 1,
 							},
-							[57330] = {
+							[45524] = {
 								["total"] = 10,
-								["id"] = 57330,
+								["id"] = 45524,
 								["totalover"] = 0,
 								["targets"] = {
 									["Battlearm"] = 10,
@@ -2522,14 +2624,14 @@ _detalhes_database = {
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["totalover"] = 0.00851,
+					["flag_original"] = 1297,
 					["alternatepower"] = 0.02093,
 					["aID"] = "4465-036D491F",
 					["tipo"] = 3,
 					["last_event"] = 0,
 					["isTank"] = true,
 					["serial"] = "Player-4465-036D491F",
-					["flag_original"] = 1297,
+					["totalover"] = 0.00851,
 				}, -- [1]
 			},
 		}, -- [3]
@@ -2541,45 +2643,45 @@ _detalhes_database = {
 					["debuff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[45524] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 0,
 								["appliedamt"] = 1,
 								["id"] = 45524,
 								["uptime"] = 10,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[55078] = {
-								["refreshamt"] = 3,
+								["counter"] = 0,
 								["activedamt"] = 0,
 								["appliedamt"] = 5,
 								["id"] = 55078,
 								["uptime"] = 65,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 3,
 							},
 							[55095] = {
-								["refreshamt"] = 4,
+								["counter"] = 0,
 								["activedamt"] = 0,
 								["appliedamt"] = 5,
 								["id"] = 55095,
 								["uptime"] = 71,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 4,
 							},
 							[49560] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["appliedamt"] = 0,
 								["activedamt"] = -1,
-								["uptime"] = 0,
-								["id"] = 49560,
 								["actived_at"] = 1665677852,
+								["id"] = 49560,
+								["uptime"] = 0,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 						},
 						["tipo"] = 9,
@@ -2587,19 +2689,19 @@ _detalhes_database = {
 					["cooldowns_defensive"] = 2.014438,
 					["pets"] = {
 					},
-					["nome"] = "Battlearm",
+					["interrupt"] = 1.002112,
 					["classe"] = "DEATHKNIGHT",
 					["interrupt_spells"] = {
 						["_ActorTable"] = {
 							[32747] = {
 								["id"] = 32747,
-								["interrompeu_oque"] = {
-									[34791] = 1,
-								},
+								["counter"] = 1,
 								["targets"] = {
 									["Tempest-Forge Peacekeeper"] = 1,
 								},
-								["counter"] = 1,
+								["interrompeu_oque"] = {
+									[34791] = 1,
+								},
 							},
 						},
 						["tipo"] = 9,
@@ -2607,114 +2709,114 @@ _detalhes_database = {
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[33667] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 1,
 								["appliedamt"] = 1,
 								["id"] = 33667,
 								["uptime"] = 15,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[57330] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 2,
 								["appliedamt"] = 2,
 								["id"] = 57330,
 								["uptime"] = 72,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[48263] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 2,
 								["appliedamt"] = 2,
 								["id"] = 48263,
 								["uptime"] = 73,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[48707] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 1,
 								["appliedamt"] = 1,
 								["id"] = 48707,
 								["uptime"] = 5,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[53365] = {
-								["refreshamt"] = 5,
+								["counter"] = 0,
 								["activedamt"] = 2,
 								["appliedamt"] = 2,
 								["id"] = 53365,
 								["uptime"] = 48,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 5,
 							},
 							[64856] = {
-								["refreshamt"] = 39,
+								["counter"] = 0,
 								["activedamt"] = 2,
 								["appliedamt"] = 2,
 								["id"] = 64856,
 								["uptime"] = 59,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 39,
 							},
 							[45529] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 2,
 								["appliedamt"] = 2,
 								["id"] = 45529,
 								["uptime"] = 40,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[48792] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 1,
 								["appliedamt"] = 1,
 								["id"] = 48792,
 								["uptime"] = 12,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[39200] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 1,
 								["appliedamt"] = 1,
 								["id"] = 39200,
 								["uptime"] = 15,
 								["targets"] = {
 								},
-								["counter"] = 0,
-							},
-							[53138] = {
 								["refreshamt"] = 0,
-								["activedamt"] = 2,
-								["appliedamt"] = 2,
-								["id"] = 53138,
-								["uptime"] = 73,
-								["targets"] = {
-								},
-								["counter"] = 0,
 							},
 							[50449] = {
-								["refreshamt"] = 11,
+								["counter"] = 0,
 								["activedamt"] = 2,
 								["appliedamt"] = 2,
 								["id"] = 50449,
 								["uptime"] = 67,
 								["targets"] = {
 								},
+								["refreshamt"] = 11,
+							},
+							[53138] = {
 								["counter"] = 0,
+								["activedamt"] = 2,
+								["appliedamt"] = 2,
+								["id"] = 53138,
+								["uptime"] = 73,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
 							},
 						},
 						["tipo"] = 9,
@@ -2724,8 +2826,37 @@ _detalhes_database = {
 					},
 					["fight_component"] = true,
 					["debuff_uptime"] = 146,
-					["cooldowns_defensive_targets"] = {
-						["Battlearm"] = 2,
+					["aID"] = "4465-036D491F",
+					["serial"] = "Player-4465-036D491F",
+					["nome"] = "Battlearm",
+					["interrupt_targets"] = {
+						["Tempest-Forge Peacekeeper"] = 1,
+					},
+					["grupo"] = true,
+					["spell_cast"] = {
+						[49919] = 2,
+						[50842] = 5,
+						[55260] = 7,
+						[33667] = 1,
+						[47476] = 1,
+						[48982] = 2,
+						[48707] = 1,
+						[56815] = 11,
+						[49893] = 7,
+						[48792] = 1,
+						[45529] = 2,
+						[28495] = 1,
+						[57330] = 1,
+						[45463] = 10,
+						[49939] = 5,
+						[45524] = 1,
+					},
+					["buff_uptime"] = 479,
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["buff_uptime_targets"] = {
+					},
+					["debuff_uptime_targets"] = {
 					},
 					["cooldowns_defensive_spells"] = {
 						["_ActorTable"] = {
@@ -2746,73 +2877,44 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["debuff_uptime_targets"] = {
+					["cooldowns_defensive_targets"] = {
+						["Battlearm"] = 2,
 					},
-					["interrupt_targets"] = {
-						["Tempest-Forge Peacekeeper"] = 1,
-					},
-					["grupo"] = true,
-					["spell_cast"] = {
-						[49919] = 2,
-						[50842] = 5,
-						[55260] = 7,
-						[45524] = 1,
-						[47476] = 1,
-						[45529] = 2,
-						[48707] = 1,
-						[56815] = 11,
-						[49893] = 7,
-						[28495] = 1,
-						[49939] = 5,
-						[48792] = 1,
-						[57330] = 1,
-						[45463] = 10,
-						[48982] = 2,
-						[33667] = 1,
-					},
-					["buff_uptime_targets"] = {
-					},
-					["tipo"] = 4,
-					["last_event"] = 0,
-					["buff_uptime"] = 479,
-					["interrupt"] = 1.002112,
-					["serial"] = "Player-4465-036D491F",
-					["aID"] = "4465-036D491F",
 				}, -- [1]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["aID"] = "17993",
 					["nome"] = "Bloodwarder Protector",
+					["flag_original"] = 68168,
 					["pets"] = {
 					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4447-553-4086-17993-00014839DB",
 					["spell_cast"] = {
 						[29765] = 8,
 						[35399] = 2,
 					},
-					["fight_component"] = true,
-					["aID"] = "17993",
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4447-553-4086-17993-00014839DB",
-					["flag_original"] = 68168,
 				}, -- [2]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["aID"] = "18405",
 					["nome"] = "Tempest-Forge Peacekeeper",
+					["flag_original"] = 68168,
 					["pets"] = {
 					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4447-553-4086-18405-00004839DA",
 					["spell_cast"] = {
 						[34793] = 2,
 						[34785] = 2,
 						[34791] = 1,
 					},
-					["fight_component"] = true,
-					["aID"] = "18405",
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4447-553-4086-18405-00004839DA",
-					["flag_original"] = 68168,
 				}, -- [3]
 			},
 		}, -- [4]
@@ -2825,74 +2927,6 @@ _detalhes_database = {
 		},
 		["raid_roster_indexed"] = {
 		},
-		["spells_cast_timeline"] = {
-		},
-		["tempo_start"] = 1665677798,
-		["cleu_timeline"] = {
-		},
-		["alternate_power"] = {
-		},
-		["combat_counter"] = 1560,
-		["totals"] = {
-			108298.037693, -- [1]
-			31086.016215, -- [2]
-			{
-				0, -- [1]
-				[0] = 0,
-				["alternatepower"] = 0,
-				[3] = 0,
-				[6] = 439.8124192370606,
-			}, -- [3]
-			{
-				["buff_uptime"] = 0,
-				["ress"] = 0,
-				["cooldowns_defensive"] = 2.008851,
-				["dispell"] = 0,
-				["interrupt"] = 1.002112,
-				["debuff_uptime"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
-			}, -- [4]
-			["frags_total"] = 0,
-			["voidzone_damage"] = 0,
-		},
-		["player_last_events"] = {
-		},
-		["frags_need_refresh"] = false,
-		["aura_timeline"] = {
-		},
-		["__call"] = {
-		},
-		["data_inicio"] = "18:16:39",
-		["end_time"] = 117021.517,
-		["cleu_events"] = {
-			["n"] = 1,
-		},
-		["totals_grupo"] = {
-			70132.01906099998, -- [1]
-			31086.016215, -- [2]
-			{
-				0, -- [1]
-				[0] = 0,
-				["alternatepower"] = 0,
-				[3] = 0,
-				[6] = 439.8124192370606,
-			}, -- [3]
-			{
-				["buff_uptime"] = 0,
-				["ress"] = 0,
-				["cooldowns_defensive"] = 2.008851,
-				["dispell"] = 0,
-				["interrupt"] = 1.002112,
-				["debuff_uptime"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
-			}, -- [4]
-		},
-		["overall_refreshed"] = true,
-		["frags"] = {
-		},
-		["hasSaved"] = true,
 		["segments_added"] = {
 			{
 				["elapsed"] = 34.85199999999895,
@@ -2907,147 +2941,113 @@ _detalhes_database = {
 				["clock"] = "18:16:39",
 			}, -- [2]
 		},
-		["data_fim"] = "18:18:05",
-		["overall_enemy_name"] = "-- x -- x --",
-		["CombatSkillCache"] = {
+		["tempo_start"] = 1665677798,
+		["cleu_timeline"] = {
 		},
+		["alternate_power"] = {
+		},
+		["combat_counter"] = 1560,
+		["totals"] = {
+			108298.037693, -- [1]
+			31086.016215, -- [2]
+			{
+				0, -- [1]
+				[0] = 0,
+				["alternatepower"] = 0,
+				[6] = 439.8124192370606,
+				[3] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
+				["interrupt"] = 1.002112,
+				["debuff_uptime"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 2.008851,
+			}, -- [4]
+			["voidzone_damage"] = 0,
+			["frags_total"] = 0,
+		},
+		["player_last_events"] = {
+		},
+		["frags_need_refresh"] = false,
+		["aura_timeline"] = {
+		},
+		["__call"] = {
+		},
+		["data_inicio"] = "18:16:39",
+		["end_time"] = 117021.517,
+		["last_events_tables"] = {
+		},
+		["totals_grupo"] = {
+			70132.01906099998, -- [1]
+			31086.016215, -- [2]
+			{
+				0, -- [1]
+				[0] = 0,
+				["alternatepower"] = 0,
+				[6] = 439.8124192370606,
+				[3] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
+				["interrupt"] = 1.002112,
+				["debuff_uptime"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 2.008851,
+			}, -- [4]
+		},
+		["overall_refreshed"] = true,
 		["PhaseData"] = {
 			{
 				1, -- [1]
 				1, -- [2]
 			}, -- [1]
-			["damage_section"] = {
+			["damage"] = {
 			},
 			["heal_section"] = {
 			},
 			["heal"] = {
 			},
-			["damage"] = {
+			["damage_section"] = {
 			},
+		},
+		["hasSaved"] = true,
+		["spells_cast_timeline"] = {
+		},
+		["data_fim"] = "18:18:05",
+		["overall_enemy_name"] = "-- x -- x --",
+		["CombatSkillCache"] = {
+		},
+		["frags"] = {
 		},
 		["start_time"] = 116948.08,
 		["TimeData"] = {
 			["Raid Damage Done"] = {
 			},
 		},
-		["last_events_tables"] = {
+		["cleu_events"] = {
+			["n"] = 1,
 		},
 	},
-	["force_font_outline"] = "",
-	["local_instances_config"] = {
-		{
-			["modo"] = 2,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
-			["verticalSnap"] = false,
-			["isLocked"] = true,
-			["is_open"] = true,
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["snap"] = {
-				[3] = 2,
-			},
-			["segment"] = 0,
-			["mode"] = 2,
-			["attribute"] = 1,
-			["pos"] = {
-				["normal"] = {
-					["y"] = 573.7485961914062,
-					["x"] = -1059.56290435791,
-					["w"] = 234.8973846435547,
-					["h"] = 136.6408081054688,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [1]
-		{
-			["modo"] = 2,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
-			["verticalSnap"] = false,
-			["isLocked"] = true,
-			["is_open"] = true,
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["snap"] = {
-				1, -- [1]
-			},
-			["segment"] = 0,
-			["mode"] = 2,
-			["attribute"] = 2,
-			["pos"] = {
-				["normal"] = {
-					["y"] = 573.7485961914062,
-					["x"] = -827.6270141601562,
-					["w"] = 228.9743804931641,
-					["h"] = 136.6408081054688,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [2]
-		{
-			["modo"] = 2,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = false,
-			["verticalSnap"] = false,
-			["isLocked"] = true,
-			["snap"] = {
-			},
-			["is_open"] = true,
-			["last_raid_plugin"] = "DETAILS_PLUGIN_TINY_THREAT",
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["segment"] = 0,
-			["mode"] = 2,
-			["attribute"] = 1,
-			["pos"] = {
-				["normal"] = {
-					["y"] = -517.3939361572266,
-					["x"] = 501.459716796875,
-					["w"] = 215.7857666015625,
-					["h"] = 170.4597473144531,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [3]
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
-	["character_data"] = {
-		["logons"] = 189,
+	["last_realversion"] = 146,
+	["benchmark_db"] = {
+		["frame"] = {
+		},
 	},
 	["announce_cooldowns"] = {
-		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
+		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -3055,9 +3055,9 @@ _detalhes_database = {
 		["last_difficulty"] = 15,
 		["last_raid"] = "",
 	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["cached_roles"] = {
+		["Player-4465-02FEFF6C"] = "DAMAGER",
+		["Player-4465-036D491F"] = "TANK",
 	},
 	["cached_specs"] = {
 		["Player-4465-036D491F"] = 250,

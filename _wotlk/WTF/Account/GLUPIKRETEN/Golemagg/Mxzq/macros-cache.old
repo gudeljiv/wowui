@@ -1,6 +1,6 @@
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
-/cast [@focus,exists,noharm][@pet,exists][]Misdirection
+/cast [@focus,exists,noharm][]Misdirection
 END
 VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -46,10 +46,6 @@ VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 /petattack
 /startattack
 /cast Arcane Shot
-END
-VER 3 0000000001000009 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast !Auto Shot
 END
 VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
 #showtooltip

@@ -78,12 +78,12 @@ local function FixBindings()
 	SetBinding('K', 'MULTIACTIONBAR1BUTTON8', 1)
 
 	SetBinding('MOUSEWHEELDOWN', 'MULTIACTIONBAR2BUTTON1', 1)
-	SetBinding('F10', 'MULTIACTIONBAR2BUTTON1', 2)
 	SetBinding('MOUSEWHEELUP', 'MULTIACTIONBAR2BUTTON2', 1)
-	SetBinding('F11', 'MULTIACTIONBAR2BUTTON2', 2)
 	SetBinding('ALT-9', 'MULTIACTIONBAR2BUTTON3', 1)
-	SetBinding('HOME', 'MULTIACTIONBAR2BUTTON3', 2)
 	SetBinding('ALT-0', 'MULTIACTIONBAR2BUTTON4', 1)
+	SetBinding('F10', 'MULTIACTIONBAR2BUTTON1', 2)
+	SetBinding('F11', 'MULTIACTIONBAR2BUTTON2', 2)
+	SetBinding('HOME', 'MULTIACTIONBAR2BUTTON3', 2)
 	SetBinding('END', 'MULTIACTIONBAR2BUTTON4', 2)
 	SetBinding('ALT-E', 'MULTIACTIONBAR2BUTTON5', 1)
 
@@ -248,6 +248,8 @@ local function ClearAllBindings()
 	SetBinding('END', 'NONE', 2)
 
 	FixBindings()
+	SaveBindings(1)
+	SaveBindings(2)
 end
 
 local f = CreateFrame('Frame')
@@ -257,19 +259,28 @@ f:SetScript(
 	function(self, event, isInitialLogin, isReloadingUi)
 		if event == 'PLAYER_ENTERING_WORLD' then
 			if not InCombatLockdown() then
-				ClearAllBindings()
+				C_Timer.After(
+					2,
+					function()
+						ClearAllBindings()
+					end
+				)
 			else
 				self:RegisterEvent('PLAYER_REGEN_ENABLED')
 			end
 		end
 
 		if event == 'PLAYER_REGEN_ENABLED' then
-			ClearAllBindings()
+			C_Timer.After(
+				2,
+				function()
+					ClearAllBindings()
+				end
+			)
 			self:UnregisterEvent('PLAYER_REGEN_ENABLED')
 		end
 	end
 )
 
-SLASH_BINDINGS1 = '/fix_bindings'
-SLASH_BINDINGS2 = '/fb'
+SLASH_BINDINGS1 = '/fb'
 SlashCmdList['BINDINGS'] = ClearAllBindings

@@ -62,7 +62,7 @@ VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
 /cast Innervate
 END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
-#showtoltip
+#showtoltip 
 /startattack
 /cast [stealth] Ravage; [form:1] Maul; [form:3] Claw; [@mouseover,help,nodead][help][] Regrowth
 END

@@ -19,13 +19,13 @@ VER 3 0000000000000018 "ASAB" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
+/use [nocombat]item:28399
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:33454
-/castsequence [combat] reset=combat item:22829
+/use [nocombat]item:29292
+/castsequence [combat] reset=combat 
 END
 VER 3 000000000000000B "lvl enchant" "132089"
 /click CraftCreateButton
@@ -33,9 +33,9 @@ VER 3 000000000000000B "lvl enchant" "132089"
 /click StaticPopup1Button1
 END
 VER 3 0000000000000016 "Mill" "Inv_misc_questionmark"
-#showtooltip item:0
+#showtooltip item:22785
 /cast Milling
-/use item:0
+/use item:22785
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:33454
@@ -44,7 +44,7 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:22829
+/use item:0
 END
 VER 3 0000000000000017 "Prsp" "Inv_misc_questionmark"
 #showtooltip item:0

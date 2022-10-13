@@ -113,13 +113,10 @@ f:SetScript(
 		PlayerFrame:SetUserPlaced(true)
 		PlayerFrame:SetMovable(false)
 
-		-- PlayerFrameHealthBarText:ClearAllPoints()
 		PlayerFrameHealthBarText:SetPoint('CENTER', PlayerFrameHealthBar, 'CENTER', 0, 0)
 		PlayerFrameHealthBarText:SetScale(0.85)
-		-- PlayerFrameHealthBarTextLeft:ClearAllPoints()
 		PlayerFrameHealthBarTextLeft:SetPoint('LEFT', PlayerFrameHealthBar, 'LEFT', 5, 0)
 		PlayerFrameHealthBarTextLeft:SetScale(0.85)
-		-- PlayerFrameHealthBarTextRight:ClearAllPoints()
 		PlayerFrameHealthBarTextRight:SetPoint('RIGHT', PlayerFrameHealthBar, 'RIGHT', -1, 0)
 		PlayerFrameHealthBarTextRight:SetScale(0.85)
 		PlayerFrameManaBarText:SetPoint('CENTER', PlayerFrameManaBar, 'CENTER', 0, -1)
@@ -128,23 +125,18 @@ f:SetScript(
 		PlayerFrameManaBarTextLeft:SetScale(0.75)
 		PlayerFrameManaBarTextRight:SetPoint('RIGHT', PlayerFrameManaBar, 'RIGHT', -2, -1)
 		PlayerFrameManaBarTextRight:SetScale(0.75)
-		-- PlayerName:ClearAllPoints()
 		PlayerName:SetPoint('CENTER', PlayerFrameBackground, 'CENTER', 0, 10)
 
-		PlayerFrameAlternateManaBar:RegisterEvent('PLAYER_ENTERING_WORLD')
-		PlayerFrameAlternateManaBar:SetScript(
-			'OnEvent',
-			function(self, event)
-				self:Hide()
-				self:UnregisterEvent('PLAYER_ENTERING_WORLD')
-			end
-		)
+		if PlayerFrameAlternateManaBar then
+			PlayerFrameAlternateManaBar:Hide()
+		end
 		PlayerFrameAlternateManaBar:HookScript(
 			'OnShow',
 			function(self)
 				self:Hide()
 			end
 		)
+
 		PlayerFrame:HookScript(
 			'OnUpdate',
 			function()
@@ -270,8 +262,6 @@ f:SetScript(
 			UIWidgetTopCenterContainerFrame:SetPoint('TOP', 'UIParent', 'TOP', 0, -70)
 			UIWidgetTopCenterContainerFrame:SetMovable(false)
 		end
-
-		TomTomCrazyArrow:Hide()
 	end
 )
 

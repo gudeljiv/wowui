@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 6882,
+	["session"] = 6910,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -4961,5 +4961,13 @@ BugGrabberDB = {
 			["session"] = 6882,
 			["counter"] = 1,
 		}, -- [635]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:274: attempt to index global 'TomTomCrazyArrow' (a nil value)",
+			["time"] = "2022/10/13 20:46:45",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n}\nevent = \"PLAYER_ENTERING_WORLD\"\nisInitialLogin = true\nisReloadingUi = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = false\n(*temporary) = <userdata>\n(*temporary) = \"TOPRIGHT\"\n(*temporary) = -35\n(*temporary) = 4\n(*temporary) = \"attempt to index global 'TomTomCrazyArrow' (a nil value)\"\nxInstallAddon = <function> defined @Interface\\AddOns\\xVermin\\xVermin.lua:3\nxVermin = <table> {\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:56\n Color = <table> {\n }\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:83\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:48\n SetChatChannels = <function> defined @Interface\\AddOns\\xVermin\\Helpers/Chat.lua:65\n Round = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:73\n RGB2HEX = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:118\n IfUnitIsCastingInteruptable = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:190\n CheckIfLoadedWithTimer = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:127\n GetRange = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:199\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/AOE.lua:16\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:56\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:98\n Log = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:41\n ClassColor = <table> {\n }\n HEX2RGB = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:110\n Debug = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:14\n R6_Occupied = false\n Class = \"PRIEST\"\n HasValue = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:181\n Config = <table> {\n }\n WaitTimeUntillAddonLoaded = 30\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\xVermin-54000.lua\"]:274: in function <Interface\\AddOns\\xVermin\\xVermin.lua:65>",
+			["session"] = 6884,
+			["counter"] = 2,
+		}, -- [636]
 	},
 }

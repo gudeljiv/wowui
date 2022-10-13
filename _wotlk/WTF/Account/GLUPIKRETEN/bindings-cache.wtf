@@ -60,8 +60,8 @@ bind CTRL-H MULTIACTIONBAR4BUTTON10
 bind CTRL-G TOGGLELFGPARENT
 bind SHIFT-G NONE
 bind SHIFT-F FOCUSTARGET
-bind ALT-F1 NONE
-bind ALT-F2 NONE
+bind ALT-F1 CLICK ItemRackMoolatzGolemaggdps:LeftButton
+bind ALT-F2 CLICK ItemRackMoolatzGolemaggheal:LeftButton
 bind ALT-F3 NONE
 bind ALT-F4 NONE
 bind ALT-F5 NONE
@@ -115,7 +115,7 @@ bind ALT-SHIFT-V FRIENDNAMEPLATES
 bind CTRL-SHIFT-H TOGGLEFARMHUDMOUSE
 bind ALT-Q CLICK MyBindingLootHelper:LeftButton
 bind ALT-G Open/Close LFGBulletinBoard
-bind  NONE
-bind ð NONE
+bind  BAGNON_TOGGLE
+bind ð BAGNON_BANK_TOGGLE
 bind ' BAGNON_TOGGLE
 bind + BAGNON_BANK_TOGGLE
