@@ -19,15 +19,15 @@ F2:SetScript(
 	end
 )
 
--- RF4color = false
--- F3:SetScript(
--- 	'OnClick',
--- 	function(self, event)
--- 		RF4color = not RF4color
--- 		if RF4color then
--- 			RotationFrame4:SetBackdropColor(0, 0, 1, 1)
--- 		else
--- 			RotationFrame4:SetBackdropColor(1, 1, 1, 1)
--- 		end
--- 	end
--- )
+RF4color = false
+F3:SetScript(
+	'OnClick',
+	function(self, event)
+		RF4color = not RF4color
+		if RF4color then
+			RotationFrame4:SetBackdropColor(0, 0, 1, 1)
+		else
+			RotationFrame4:SetBackdropColor(1, 1, 1, 1)
+		end
+	end
+)

@@ -263,9 +263,9 @@ AtlasLootClassicDB = {
 			[33923] = "honor:5130",
 			[33922] = "honor:5130",
 			[28358] = "honor:4750",
-			[31959] = "honor:13300",
-			[33689] = "honor:8550",
 			[33705] = "honor:8550",
+			[33689] = "honor:8550",
+			[40859] = "EmblemOfValor:30",
 			[33737] = "honor:8550",
 			[28909] = "arcanerune:8",
 			[42951] = "EmblemOfHeroism:40",
@@ -301,12 +301,12 @@ AtlasLootClassicDB = {
 			[33754] = "honor:8550",
 			[42984] = "EmblemOfHeroism:40",
 			[42952] = "EmblemOfHeroism:40",
-			[28319] = "honor:2850",
+			[33068] = "honor:3990",
 			[35319] = "honor:5130",
-			[40733] = "EmblemOfValor:60",
+			[28319] = "honor:2850",
 			[28912] = "arcanerune:8",
+			[40685] = "EmblemOfHeroism:40",
 			[28295] = "honor:4750",
-			[35064] = "honor:19000",
 			[48685] = "EmblemOfHeroism:40",
 			[33743] = "honor:12825",
 			[32026] = "honor:6650",
@@ -318,10 +318,10 @@ AtlasLootClassicDB = {
 			[35016] = "honor:4750",
 			[40721] = "EmblemOfValor:25",
 			[35103] = "honor:19000",
-			[40685] = "EmblemOfHeroism:40",
+			[35064] = "honor:19000",
 			[40701] = "EmblemOfHeroism:35",
 			[40717] = "EmblemOfValor:25",
-			[33068] = "honor:3990",
+			[40733] = "EmblemOfValor:60",
 			[40749] = "EmblemOfValor:40",
 			[40697] = "EmblemOfHeroism:40",
 			[33801] = "honor:8550",
@@ -343,7 +343,7 @@ AtlasLootClassicDB = {
 			[28300] = "honor:9500",
 			[48718] = "EmblemOfHeroism:65",
 			[28917] = "honor:7600",
-			[40859] = "EmblemOfValor:30",
+			[31959] = "honor:13300",
 			[28294] = "honor:9500",
 			[34985] = "honor:5700",
 			[28297] = "honor:7125",
@@ -377,11 +377,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["minimapPos"] = 35.6918309653034,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -390,6 +385,11 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["minimapPos"] = 35.6918309653034,
+				["hide"] = true,
 			},
 		},
 		["Verminz - Golemagg"] = {
