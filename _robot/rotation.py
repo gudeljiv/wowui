@@ -171,7 +171,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                 wow_class = "warrior"
 
             if skills_loaded != wow_class:
-                print(skills_loaded, wow_class)
+                print("class changed --> ", skills_loaded, wow_class)
                 abilities = {}
                 skills_loaded = wow_class
                 for skill in skills[wow_class]:
@@ -186,7 +186,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                     for skill in skills["offgcd"][wow_class]:
                         abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
                 except:
-                    print("offgcd error: ", wow_class)
+                    print("offgcd error missing class --> ", wow_class)
 
             # print(clss, '#%02x%02x%02x' % clss, wow_class)
             # print(hex, combat, interrupt, wow_class)
