@@ -10,16 +10,16 @@ bind 9 NONE
 bind 0 NONE
 bind - NONE
 bind = NONE
-bind CTRL-F1 CLICK RingMenuRingFrameButton1:LeftButton
-bind CTRL-F2 CLICK RingMenuRingFrameButton2:LeftButton
-bind CTRL-F3 CLICK RingMenuRingFrameButton3:LeftButton
-bind CTRL-F4 CLICK RingMenuRingFrameButton4:LeftButton
-bind CTRL-F5 CLICK RingMenuRingFrameButton5:LeftButton
-bind CTRL-F6 CLICK RingMenuRingFrameButton6:LeftButton
-bind CTRL-F7 CLICK RingMenuRingFrameButton7:LeftButton
-bind CTRL-F8 CLICK RingMenuRingFrameButton8:LeftButton
-bind CTRL-F9 CLICK RingMenuRingFrameButton9:LeftButton
-bind CTRL-F10 CLICK RingMenuRingFrameButton10:LeftButton
+bind CTRL-F1 CLICK RingMenuRingFrame1Button1:LeftButton
+bind CTRL-F2 CLICK RingMenuRingFrame1Button2:LeftButton
+bind CTRL-F3 CLICK RingMenuRingFrame1Button3:LeftButton
+bind CTRL-F4 CLICK RingMenuRingFrame1Button4:LeftButton
+bind CTRL-F5 CLICK RingMenuRingFrame1Button5:LeftButton
+bind CTRL-F6 CLICK RingMenuRingFrame1Button6:LeftButton
+bind CTRL-F7 CLICK RingMenuRingFrame1Button7:LeftButton
+bind CTRL-F8 CLICK RingMenuRingFrame1Button8:LeftButton
+bind CTRL-F9 CLICK RingMenuRingFrame1Button9:LeftButton
+bind CTRL-F10 CLICK RingMenuRingFrame1Button10:LeftButton
 bind SHIFT-1 NONE
 bind SHIFT-2 NONE
 bind SHIFT-3 NONE
@@ -32,13 +32,15 @@ bind SHIFT-DOWN NONE
 bind SHIFT-MOUSEWHEELDOWN NONE
 bind TAB ACTIONBUTTON10
 bind F1 MULTIACTIONBAR3BUTTON1
-bind SHIFT-F1 CLICK RotBotF1:LeftButton
+bind SHIFT-F1 NONE
 bind F2 MULTIACTIONBAR3BUTTON2
 bind F3 MULTIACTIONBAR3BUTTON3
 bind F4 MULTIACTIONBAR3BUTTON4
 bind F5 MULTIACTIONBAR3BUTTON5
-bind SHIFT-F2 CLICK RotBotF2:LeftButton
-bind SHIFT-F3 CLICK RotBotF3:LeftButton
+bind SHIFT-F2 NONE
+bind SHIFT-F3 NONE
+bind SHIFT-F4 NONE
+bind SHIFT-F5 NONE
 bind G MULTIACTIONBAR1BUTTON3
 bind F ACTIONBUTTON12
 bind V MULTIACTIONBAR1BUTTON2
@@ -60,8 +62,8 @@ bind CTRL-M MULTIACTIONBAR4BUTTON11
 bind CTRL-S NONE
 bind MOUSEWHEELUP MULTIACTIONBAR2BUTTON2
 bind MOUSEWHEELDOWN MULTIACTIONBAR2BUTTON1
-bind END NONE
-bind HOME NONE
+bind END CLICK RotBotF2:LeftButton
+bind HOME CLICK RotBotF1:LeftButton
 bind CTRL-R TOGGLELFGPARENT
 bind CTRL-Y TOGGLEACHIEVEMENT
 bind CTRL-Q NONE
@@ -95,7 +97,7 @@ bind SHIFT-7 NONE
 bind SHIFT-8 NONE
 bind SHIFT-9 NONE
 bind SHIFT-0 NONE
-bind CTRL-F12 CLICK RingMenuRingFrameButton12:LeftButton
+bind CTRL-F12 CLICK RingMenuRingFrame1Button12:LeftButton
 bind CTRL-SHIFT-B NONE
 bind CTRL-L NONE
 bind CTRL-SHIFT-V NAMEPLATES
@@ -129,4 +131,25 @@ bind  BAGNON_TOGGLE
 bind ð BAGNON_BANK_TOGGLE
 bind ' BAGNON_TOGGLE
 bind + BAGNON_BANK_TOGGLE
-bind CTRL-F11 CLICK RingMenuRingFrameButton11:LeftButton
+bind CTRL-F11 CLICK RingMenuRingFrame1Button11:LeftButton
+bind CTRL-SHIFT-F1 NONE
+bind CTRL-SHIFT-F2 NONE
+bind CTRL-SHIFT-F3 NONE
+bind SHIFT-F6 NONE
+bind SHIFT-F7 NONE
+bind SHIFT-F8 NONE
+bind SHIFT-F9 NONE
+bind SHIFT-F10 NONE
+bind SHIFT-F11 NONE
+bind SHIFT-F12 NONE
+bind CTRL-SHIFT-š CLICK RotBotF1:LeftButton
+bind CTRL-SHIFT-đ CLICK RotBotF2:LeftButton
+bind CTRL-SHIFT-F4 NONE
+bind CTRL-SHIFT-F5 NONE
+bind CTRL-SHIFT-F6 NONE
+bind CTRL-SHIFT-F7 NONE
+bind CTRL-SHIFT-F8 NONE
+bind CTRL-SHIFT-F9 NONE
+bind CTRL-SHIFT-F10 NONE
+bind CTRL-SHIFT-F11 NONE
+bind CTRL-SHIFT-F12 NONE

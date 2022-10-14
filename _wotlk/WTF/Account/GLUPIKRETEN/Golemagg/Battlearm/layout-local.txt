@@ -29,9 +29,9 @@ W: 784
 H: 260
 Frame: ItemRefTooltip
 FrameLevel: 1
-Anchor: RIGHT
-X: -409
-Y: 105
+Anchor: LEFT
+X: 139
+Y: 255
 W: 128
 H: 64
 Frame: AtlasLoot_GUI-Frame

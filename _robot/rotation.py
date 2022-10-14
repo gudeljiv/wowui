@@ -86,11 +86,11 @@ def on_press(key):
             if pause:
                 if dprint:
                     print("Rotation is paused")
-                pyautogui.hotkey("shift", "f2")
+                pyautogui.hotkey("end")
             else:
                 if dprint:
                     print("Rotation is not paused")
-                pyautogui.hotkey("shift", "f1")
+                pyautogui.hotkey("home")
         if key == keyboard.Key.f8:
             dprint = not dprint
             print("dprint:", dprint)
@@ -220,40 +220,46 @@ with keyboard.Listener(on_press=on_press) as listener:
                 #     print("class", hex, wow_class)
 
                 # rotation
-                for skill in skills[wow_class] + skills["healing"]:
-                    for ability in abilities:
-                        if ability == skill["name"]:
-                            # mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
+                try:
+                    for skill in skills[wow_class] + skills["healing"]:
+                        for ability in abilities:
+                            if ability == skill["name"]:
+                                # mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
 
-                            try:
-                                (score, diff) = structural_similarity(abilities[ability], grabbed, full=True)
-                                if score*100 > 90:
-                                    if dprint:
-                                        print(ability, skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                                try:
+                                    (score, diff) = structural_similarity(abilities[ability], grabbed, full=True)
+                                    if score*100 > 90:
+                                        if dprint:
+                                            print(ability, skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
 
-                                    if "modifier" in skill.keys():
-                                        pyautogui.hotkey(skill["modifier"],  skill["key"])
-                                    else:
-                                        pyautogui.hotkey(skill["key"])
-                            except:
-                                print("score, diff not found for main ability")
+                                        if "modifier" in skill.keys():
+                                            pyautogui.hotkey(skill["modifier"],  skill["key"])
+                                        else:
+                                            pyautogui.hotkey(skill["key"])
+                                except:
+                                    print("score, diff not found for main ability")
+                except:
+                    print("error skill loop")
 
-                for skill in skills["offgcd"][wow_class]:
-                    for ability in abilities_offgcd:
-                        if ability == skill["name"]:
+                try:
+                    for skill in skills["offgcd"][wow_class]:
+                        for ability in abilities_offgcd:
+                            if ability == skill["name"]:
 
-                            try:
-                                (score, diff) = structural_similarity(abilities_offgcd[ability], offgcd, full=True)
-                                if score*100 > 90:
-                                    if dprint:
-                                        print(ability, skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                                try:
+                                    (score, diff) = structural_similarity(abilities_offgcd[ability], offgcd, full=True)
+                                    if score*100 > 90:
+                                        if dprint:
+                                            print(ability, skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
 
-                                    if "modifier" in skill.keys():
-                                        pyautogui.hotkey(skill["modifier"],  skill["key"])
-                                    else:
-                                        pyautogui.hotkey(skill["key"])
-                            except:
-                                print("score, diff not found for offgcd")
+                                        if "modifier" in skill.keys():
+                                            pyautogui.hotkey(skill["modifier"],  skill["key"])
+                                        else:
+                                            pyautogui.hotkey(skill["key"])
+                                except:
+                                    print("score, diff not found for offgcd")
+                except:
+                    print("offgcd error missing class --> ", wow_class)
 
             if debug:
                 time.sleep(0.5)

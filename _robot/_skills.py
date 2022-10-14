@@ -27,6 +27,8 @@ skills["offgcd"]["death knight"] = [
     {"name": "rune strike", "key": "f3", "modifier": "ctrl"},
     {"name": "rune tap", "key": "h"},
     {"name": "blood tap", "key": "f4", "modifier": "ctrl"},
+    {"name": "anti magic shell", "key": "g"},
+    {"name": "horn of winter", "key": "f4"},
 ]
 
 
@@ -108,9 +110,8 @@ skills["death knight"] = [
     {"name": "heart strike", "key": "f1", "modifier": "ctrl"},
     {"name": "death coil", "key": "4"},
     {"name": "blood boil", "key": "e"},
-    {"name": "pestilence", "key": "3"},
     {"name": "icebound fortitude", "key": "t"},
-    {"name": "horn of winter", "key": "f4"},
+    {"name": "pestilence", "key": "3"},
 ]
 
 skills["priest"] = [
