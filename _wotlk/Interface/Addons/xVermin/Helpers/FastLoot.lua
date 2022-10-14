@@ -13,6 +13,6 @@ local function FastLoot()
 	end
 end
 
-local f = CreateFrame('Frame')
-f:RegisterEvent('LOOT_READY')
-f:SetScript('OnEvent', FastLoot)
+-- local f = CreateFrame('Frame')
+-- f:RegisterEvent('LOOT_READY')
+-- f:SetScript('OnEvent', FastLoot)

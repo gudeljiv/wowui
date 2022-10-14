@@ -10,6 +10,16 @@ bind 9 NONE
 bind 0 NONE
 bind - NONE
 bind = NONE
+bind CTRL-F1 CLICK RingMenuRingFrameButton1:LeftButton
+bind CTRL-F2 CLICK RingMenuRingFrameButton2:LeftButton
+bind CTRL-F3 CLICK RingMenuRingFrameButton3:LeftButton
+bind CTRL-F4 CLICK RingMenuRingFrameButton4:LeftButton
+bind CTRL-F5 CLICK RingMenuRingFrameButton5:LeftButton
+bind CTRL-F6 CLICK RingMenuRingFrameButton6:LeftButton
+bind CTRL-F7 CLICK RingMenuRingFrameButton7:LeftButton
+bind CTRL-F8 CLICK RingMenuRingFrameButton8:LeftButton
+bind CTRL-F9 CLICK RingMenuRingFrameButton9:LeftButton
+bind CTRL-F10 CLICK RingMenuRingFrameButton10:LeftButton
 bind SHIFT-1 NONE
 bind SHIFT-2 NONE
 bind SHIFT-3 NONE
@@ -38,6 +48,8 @@ bind T MULTIACTIONBAR1BUTTON4
 bind SHIFT-T MULTIACTIONBAR1BUTTON5
 bind F8 NONE
 bind F9 ACTIONBUTTON9
+bind F10 NONE
+bind F11 NONE
 bind F12 NONE
 bind SHIFT-P TOGGLECHARACTER4
 bind Y MULTIACTIONBAR2BUTTON11
@@ -48,6 +60,8 @@ bind CTRL-M MULTIACTIONBAR4BUTTON11
 bind CTRL-S NONE
 bind MOUSEWHEELUP MULTIACTIONBAR2BUTTON2
 bind MOUSEWHEELDOWN MULTIACTIONBAR2BUTTON1
+bind END NONE
+bind HOME NONE
 bind CTRL-R TOGGLELFGPARENT
 bind CTRL-Y TOGGLEACHIEVEMENT
 bind CTRL-Q NONE
@@ -81,7 +95,7 @@ bind SHIFT-7 NONE
 bind SHIFT-8 NONE
 bind SHIFT-9 NONE
 bind SHIFT-0 NONE
-bind CTRL-F12 NONE
+bind CTRL-F12 CLICK RingMenuRingFrameButton12:LeftButton
 bind CTRL-SHIFT-B NONE
 bind CTRL-L NONE
 bind CTRL-SHIFT-V NAMEPLATES
@@ -115,7 +129,4 @@ bind  BAGNON_TOGGLE
 bind ð BAGNON_BANK_TOGGLE
 bind ' BAGNON_TOGGLE
 bind + BAGNON_BANK_TOGGLE
-bind END NONE
-bind HOME NONE
-bind F10 NONE
-bind F11 NONE
+bind CTRL-F11 CLICK RingMenuRingFrameButton11:LeftButton

@@ -318,8 +318,6 @@ local function SetChat()
 	ChatFrameChannelButton:Hide()
 	ChatFrameMenuButton:Hide()
 	ChatFrame1Tab:Click()
-
-	xVermin.SetChatChannels()
 end
 
 local chat = CreateFrame('Frame')
@@ -330,13 +328,12 @@ chat:SetScript(
 			2,
 			function()
 				SetChat()
-				-- xVermin.CheckIfLoadedWithTimer(ChatFrameCondition, xVermin.SetChatChannels)
-				-- C_Timer.After(
-				-- 	1,
-				-- 	function()
-				-- 		SetChatChannels()
-				-- 	end
-				-- )
+				C_Timer.After(
+					1,
+					function()
+						xVermin.SetChatChannels()
+					end
+				)
 			end
 		)
 	end

@@ -2,6 +2,7 @@
 ItemRackUser = {
 	["ButtonSpacing"] = 5.508355140686035,
 	["QueuesEnabled"] = {
+		[13] = true,
 	},
 	["Locked"] = "ON",
 	["MainScale"] = 1.002605676651001,
@@ -14,6 +15,11 @@ ItemRackUser = {
 			},
 		},
 		["dps"] = {
+			["Queues"] = {
+				[13] = {
+				},
+			},
+			["key"] = "SHIFT-1",
 			["equip"] = {
 				"25617::::::::66:::::::::", -- [1]
 				[3] = "25715::::::::66:::::::::",
@@ -21,11 +27,14 @@ ItemRackUser = {
 				[17] = "25823:805:::::::66:::::::::",
 			},
 			["icon"] = 135033,
-			["key"] = "SHIFT-1",
 			["old"] = {
 			},
 		},
 		["tank"] = {
+			["Queues"] = {
+				[13] = {
+				},
+			},
 			["key"] = "SHIFT-2",
 			["equip"] = {
 				"29946::::::::65:::::::::", -- [1]
@@ -48,7 +57,7 @@ ItemRackUser = {
 	},
 	["Hidden"] = {
 	},
-	["EnableEvents"] = "ON",
+	["CurrentSet"] = "dps",
 	["SetMenuWrap"] = "OFF",
 	["ItemsUsed"] = {
 	},
@@ -58,10 +67,15 @@ ItemRackUser = {
 		["Set"] = {
 		},
 	},
-	["Alpha"] = 1,
-	["EnableQueues"] = "ON",
 	["Queues"] = {
+		[13] = {
+			"28041::::::::75:::::::::", -- [1]
+			"19120::::::::75:::::::::", -- [2]
+			0, -- [3]
+		},
 	},
+	["EnableQueues"] = "ON",
+	["Alpha"] = 1,
 	["MenuScale"] = 1.2026047706604,
-	["CurrentSet"] = "dps",
+	["EnableEvents"] = "ON",
 }

@@ -81,10 +81,6 @@ local function FixBindings()
 	SetBinding('MOUSEWHEELUP', 'MULTIACTIONBAR2BUTTON2', 1)
 	SetBinding('ALT-9', 'MULTIACTIONBAR2BUTTON3', 1)
 	SetBinding('ALT-0', 'MULTIACTIONBAR2BUTTON4', 1)
-	SetBinding('F10', 'MULTIACTIONBAR2BUTTON1', 2)
-	SetBinding('F11', 'MULTIACTIONBAR2BUTTON2', 2)
-	SetBinding('HOME', 'MULTIACTIONBAR2BUTTON3', 2)
-	SetBinding('END', 'MULTIACTIONBAR2BUTTON4', 2)
 	SetBinding('ALT-E', 'MULTIACTIONBAR2BUTTON5', 1)
 
 	-- SetBinding("F1", "STANCEBUTTON1", 1)
@@ -134,6 +130,23 @@ local function FixBindings()
 	-- 	SetBinding("SHIFT-X", "MULTIACTIONBAR2BUTTON11", 1)
 	-- 	SetBinding("X", "MULTIACTIONBAR2BUTTON12", 1)
 	-- end
+
+	for i = 1, 12 do
+		SetBindingClick('CTRL-F' .. i, 'RingMenuRingFrame1Button' .. i)
+	end
+
+	-- SetBinding('CTRL-F1', 'EXTRABARBUTTON1', 1)
+	-- SetBinding('CTRL-F2', 'EXTRABARBUTTON2', 1)
+	-- SetBinding('CTRL-F3', 'EXTRABARBUTTON3', 1)
+	-- SetBinding('CTRL-F4', 'EXTRABARBUTTON4', 1)
+	-- SetBinding('CTRL-F5', 'EXTRABARBUTTON5', 1)
+	-- SetBinding('CTRL-F6', 'EXTRABARBUTTON6', 1)
+	-- SetBinding('CTRL-F7', 'EXTRABARBUTTON7', 1)
+	-- SetBinding('CTRL-F8', 'EXTRABARBUTTON8', 1)
+	-- SetBinding('CTRL-F9', 'EXTRABARBUTTON9', 1)
+	-- SetBinding('CTRL-F10', 'EXTRABARBUTTON10', 1)
+	-- SetBinding('CTRL-F11', 'EXTRABARBUTTON11', 1)
+	-- SetBinding('CTRL-F12', 'EXTRABARBUTTON12', 1)
 end
 
 local function ClearAllBindings()
@@ -222,6 +235,17 @@ local function ClearAllBindings()
 	SetBinding('SHIFT-9', 'NONE', 1)
 	SetBinding('SHIFT-0', 'NONE', 1)
 
+	SetBinding('CTRL-F1', 'NONE', 1)
+	SetBinding('CTRL-F2', 'NONE', 1)
+	SetBinding('CTRL-F3', 'NONE', 1)
+	SetBinding('CTRL-F4', 'NONE', 1)
+	SetBinding('CTRL-F5', 'NONE', 1)
+	SetBinding('CTRL-F6', 'NONE', 1)
+	SetBinding('CTRL-F7', 'NONE', 1)
+	SetBinding('CTRL-F8', 'NONE', 1)
+	SetBinding('CTRL-F9', 'NONE', 1)
+	SetBinding('CTRL-F10', 'NONE', 1)
+	SetBinding('CTRL-F11', 'NONE', 1)
 	SetBinding('CTRL-F12', 'NONE', 1)
 	SetBinding('CTRL-SHIFT-B', 'NONE', 1)
 	SetBinding('CTRL-SHIFT-V', 'NONE', 1)
@@ -249,38 +273,37 @@ local function ClearAllBindings()
 
 	FixBindings()
 	SaveBindings(1)
-	SaveBindings(2)
 end
 
-local f = CreateFrame('Frame')
-f:RegisterEvent('PLAYER_ENTERING_WORLD')
-f:SetScript(
-	'OnEvent',
-	function(self, event, isInitialLogin, isReloadingUi)
-		if event == 'PLAYER_ENTERING_WORLD' then
-			if not InCombatLockdown() then
-				C_Timer.After(
-					2,
-					function()
-						ClearAllBindings()
-					end
-				)
-			else
-				self:RegisterEvent('PLAYER_REGEN_ENABLED')
-			end
-		end
+-- local f = CreateFrame('Frame')
+-- f:RegisterEvent('PLAYER_ENTERING_WORLD')
+-- f:SetScript(
+-- 	'OnEvent',
+-- 	function(self, event, isInitialLogin, isReloadingUi)
+-- 		if event == 'PLAYER_ENTERING_WORLD' then
+-- 			if not InCombatLockdown() then
+-- 				C_Timer.After(
+-- 					2,
+-- 					function()
+-- 						ClearAllBindings()
+-- 					end
+-- 				)
+-- 			else
+-- 				self:RegisterEvent('PLAYER_REGEN_ENABLED')
+-- 			end
+-- 		end
 
-		if event == 'PLAYER_REGEN_ENABLED' then
-			C_Timer.After(
-				2,
-				function()
-					ClearAllBindings()
-				end
-			)
-			self:UnregisterEvent('PLAYER_REGEN_ENABLED')
-		end
-	end
-)
+-- 		if event == 'PLAYER_REGEN_ENABLED' then
+-- 			C_Timer.After(
+-- 				2,
+-- 				function()
+-- 					ClearAllBindings()
+-- 				end
+-- 			)
+-- 			self:UnregisterEvent('PLAYER_REGEN_ENABLED')
+-- 		end
+-- 	end
+-- )
 
 SLASH_BINDINGS1 = '/fb'
 SlashCmdList['BINDINGS'] = ClearAllBindings

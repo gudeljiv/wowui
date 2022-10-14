@@ -9,24 +9,35 @@ skills["healing"] = [
     {"name": "lifeblood", "key": "7", "modifier": "alt"},
 ]
 
-skills["offgcd"] = [
+skills["offgcd"] = dict()
+skills["offgcd"]["warrior"] = [
     {"name": "heroic strike", "key": "2"},
     {"name": "cleave", "key": "3"},
-    {"name": "maul", "key": "1"},
-    {"name": "rune strike", "key": "9", "modifier": "alt"},
-    {"name": "rune tap", "key": "h"},
-    {"name": "blood tap", "key": "0", "modifier": "alt"},
-
+    {"name": "shield wall", "key": "t"},
+    {"name": "spell reflection", "key": "v"},
+    {"name": "shield block", "key": "f4", "modifier": "ctrl"},
+    {"name": "last stand", "key": "t", "modifier": "shift"},
 ]
+
+skills["offgcd"]["druid"] = [
+    {"name": "maul", "key": "1"},
+]
+
+skills["offgcd"]["death knight"] = [
+    {"name": "rune strike", "key": "f3", "modifier": "ctrl"},
+    {"name": "rune tap", "key": "h"},
+    {"name": "blood tap", "key": "f4", "modifier": "ctrl"},
+]
+
 
 skills["warrior"] = [
     {"name": "battle shout", "key": "f4"},
     {"name": "commanding shout", "key": "f6"},
     {"name": "demoralizing shout", "key": "f5"},
     {"name": "sunder armor", "key": "k"},
-    {"name": "bloodthirst", "key": "f11"},
-    {"name": "mortal strike", "key": "f11"},
-    {"name": "berserker rage", "key": "f10"},
+    {"name": "bloodthirst", "key": "f2", "modifier": "ctrl"},
+    {"name": "mortal strike", "key": "f2", "modifier": "ctrl"},
+    {"name": "berserker rage", "key": "f1", "modifier": "ctrl"},
     {"name": "rend", "key": "d", "modifier": "shift"},
     {"name": "overpower", "key": "6"},
     {"name": "revenge", "key": "1"},
@@ -38,14 +49,10 @@ skills["warrior"] = [
     {"name": "thunder clap", "key": "e"},
     {"name": "rampage", "key": "home"},
     {"name": "shield slam", "key": "4"},
-    {"name": "shield block", "key": "0", "modifier": "alt"},
-    {"name": "devastate", "key": "f11"},
+    {"name": "devastate", "key": "f2", "modifier": "ctrl"},
     {"name": "vigilance", "key": "d", "modifier": "shift"},
-    {"name": "last stand", "key": "t", "modifier": "shift"},
     {"name": "concussion blow", "key": "g"},
-    {"name": "shield wall", "key": "t"},
-    {"name": "hamstring", "key": "1"},
-    {"name": "spell reflection", "key": "v"}
+    {"name": "hamstring", "key": "1"}
 ]
 
 
@@ -61,9 +68,9 @@ skills["hunter"] = [
     {"name": "concussive shot", "key": "1"},
     {"name": "steady shot", "key": "2"},
     {"name": "kill command", "key": "4"},
-    {"name": "serpent sting", "key": "9", "modifier": "alt"},
-    {"name": "multi-shot", "key": "f10"},
-    {"name": "arcane shot", "key": "f11"},
+    {"name": "serpent sting", "key": "f3", "modifier": "ctrl"},
+    {"name": "multi-shot", "key": "f1", "modifier": "ctrl"},
+    {"name": "arcane shot", "key": "f2", "modifier": "ctrl"},
     {"name": "aspect of the hawk", "key": "f1"},
     {"name": "aspect of the viper", "key": "f5"},
     {"name": "chimera shot", "key": "3"},
@@ -90,15 +97,15 @@ skills["druid"] = [
     {"name": "pounce", "key": "1"},
     {"name": "tigers fury", "key": "6"},
     {"name": "barkskin", "key": "g"},
-    {"name": "mangle", "key": "9", "modifier": "alt"},
+    {"name": "mangle", "key": "f3", "modifier": "ctrl"},
     {"name": "survival instincts", "key": "d", "modifier": "alt"},
 ]
 
 skills["death knight"] = [
     {"name": "plague strike", "key": "1"},
     {"name": "icy touch", "key": "2"},
-    {"name": "death strike", "key": "f11"},
-    {"name": "heart strike", "key": "f10"},
+    {"name": "death strike", "key": "f2", "modifier": "ctrl"},
+    {"name": "heart strike", "key": "f1", "modifier": "ctrl"},
     {"name": "death coil", "key": "4"},
     {"name": "blood boil", "key": "e"},
     {"name": "pestilence", "key": "3"},
@@ -111,9 +118,9 @@ skills["priest"] = [
 
 skills["paladin"] = [
     {"name": "blessing of might", "key": "f1"},
-    {"name": "exorcism", "key": "f10"},
-    {"name": "judgement of light", "key": "f11"},
-    {"name": "judgement of wisdom", "key": "9", "modifier": "alt"},
+    {"name": "exorcism", "key": "f1", "modifier": "ctrl"},
+    {"name": "judgement of light", "key": "f2", "modifier": "ctrl"},
+    {"name": "judgement of wisdom", "key": "f3", "modifier": "ctrl"},
     {"name": "lay on hands", "key": "k"},
     {"name": "purify", "key": "t"},
     {"name": "divine protection", "key": "r", "modifier": "alt"},
@@ -128,8 +135,6 @@ skills["shaman"] = [
 ]
 
 skills["rogue"] = [
-    {"name": "sinister strike", "key": "f11"},
+    {"name": "sinister strike", "key": "f2", "modifier": "ctrl"},
     {"name": "eviscerate", "key": "4"},
-    {"name": "healthstone", "key": "6", "modifier": "shift"},
-    {"name": "healing potion", "key": "7", "modifier": "shift"},
 ]

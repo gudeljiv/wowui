@@ -60,8 +60,9 @@ for skill in skills[wow_class]:
     abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
     abilities = {**abilities, **healing}
 
+
 abilities_offgcd = {}
-for skill in skills["offgcd"]:
+for skill in skills["offgcd"][wow_class]:
     abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
 
 skills_loaded = "warrior"
@@ -179,6 +180,13 @@ with keyboard.Listener(on_press=on_press) as listener:
                     except:
                         print("missing spell in " + wow_class + " --> " + skill["name"])
 
+                abilities_offgcd = {}
+                for skill in skills["offgcd"][wow_class]:
+                    try:
+                        abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+                    except:
+                        print("offgcd error: ", wow_class)
+
             # print(clss, '#%02x%02x%02x' % clss, wow_class)
             # print(hex, combat, interrupt, wow_class)
             # for skill in skills[wow_class]:
@@ -229,7 +237,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                             except:
                                 print("score, diff not found for main ability")
 
-                for skill in skills["offgcd"]:
+                for skill in skills["offgcd"][wow_class]:
                     for ability in abilities_offgcd:
                         if ability == skill["name"]:
 

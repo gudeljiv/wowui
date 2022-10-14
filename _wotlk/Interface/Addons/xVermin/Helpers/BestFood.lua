@@ -95,12 +95,12 @@ function NeedsFoodBadly:UpdateMacros()
 			if not best.petfood[id] and self:IsUsablePetFood(self.PetFood[id]) then
 				best.petfood[id] = self.PetFood[id]
 			end
-			if not best.herb[id] and self:IsUsableHerb(self.Herb[id]) then
-				best.herb[id] = self.Herb[id]
-			end
-			if not best.ore[id] and self:IsUsableOre(self.Ore[id]) then
-				best.ore[id] = self.Ore[id]
-			end
+			-- if not best.herb[id] and self:IsUsableHerb(self.Herb[id]) then
+			-- 	best.herb[id] = self.Herb[id]
+			-- end
+			-- if not best.ore[id] and self:IsUsableOre(self.Ore[id]) then
+			-- 	best.ore[id] = self.Ore[id]
+			-- end
 			if not best.buffFood[id] and self:IsUsableBuffFood(self.Food[id]) then
 				best.buffFood[id] = self.Food[id]
 			end
@@ -130,8 +130,8 @@ function NeedsFoodBadly:UpdateMacros()
 	best.food = self:Sorted(best.food, self.BetterFood)
 	best.drink = self:Sorted(best.drink, self.BetterDrink)
 	best.petfood = self:Sorted(best.petfood, self.BetterPetFood)
-	best.herb = self:Sorted(best.herb, self.BetterHerb)
-	best.ore = self:Sorted(best.ore, self.BetterOre)
+	-- best.herb = self:Sorted(best.herb, self.BetterHerb)
+	-- best.ore = self:Sorted(best.ore, self.BetterOre)
 	best.buffFood = self:Sorted(best.buffFood, self.BetterBuffFood)
 	best.buffDrink = self:Sorted(best.buffDrink, self.BetterBuffDrink)
 	best.hPotion = self:Sorted(best.hPotion, self.BetterHPotion)
@@ -193,8 +193,8 @@ function NeedsFoodBadly:UpdateMacros()
 	CreateOrUpdateMacro('Drink', drinkMacro)
 	CreateOrUpdateMacro('Stone', healthstoneMacro)
 	CreateOrUpdateMacro('Potion', healthPotionMacro)
-	CreateOrUpdateMacro('Mill', millingMacro)
-	CreateOrUpdateMacro('Prsp', prospectingMacro)
+	-- CreateOrUpdateMacro('Mill', millingMacro)
+	-- CreateOrUpdateMacro('Prsp', prospectingMacro)
 
 	if (UnitExists('pet') and xVermin.Class == 'HUNTER') then
 		local petfoodMacro =
