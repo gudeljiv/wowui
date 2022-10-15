@@ -6,8 +6,8 @@ WeakAurasOptionsSaved = {
 	["locale"] = "enUS",
 	["needsRebuild"] = false,
 	["version"] = "4.1.4",
-	["spellCacheStrings"] = true,
 	["spellCacheAchivements"] = true,
+	["spellCacheStrings"] = true,
 	["spellCache"] = {
 		["Spotted"] = {
 			["spells"] = "2425=136173",

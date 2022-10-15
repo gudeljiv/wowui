@@ -31,15 +31,35 @@ wow_class = "warrior"
 screen_width = GetSystemMetrics(0)
 screen_height = GetSystemMetrics(1)
 
-monitor = "4k"
-if screen_width == 2560:
-    monitor = "2k"
+monitor = str(screen_width)
 
-x = 10
-y = 10
-if monitor == "2k":
+if monitor == "3840":
+    x = 10
+    y = 10
+    p_offgcd_left = 105
+    p_combat_left = 24
+    p_interrupt_left = 42
+    p_behind_left = 62
+    p_clss_left = 74
+    p_rotation_left = 94
+if monitor == "2560":
     x = 6
     y = 6
+    p_offgcd_left = 70
+    p_combat_left = 17
+    p_interrupt_left = 27
+    p_behind_left = 38
+    p_clss_left = 49
+    p_rotation_left = 60
+if monitor == "3072":
+    x = 9
+    y = 9
+    p_combat_left = 22
+    p_offgcd_left = 93
+    p_interrupt_left = 37
+    p_behind_left = 53
+    p_clss_left = 66
+    p_rotation_left = 70
 
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -66,7 +86,7 @@ for skill in skills["offgcd"][wow_class]:
     abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
 
 skills_loaded = "warrior"
-print("Script loaded and ready.", "Rotation is paused.", "Monitor:", monitor, abilities_folder)
+print("Script loaded and ready.", "Rotation is paused.", "Monitor:", screen_width, screen_height)
 
 
 def on_press(key):
@@ -120,38 +140,45 @@ with keyboard.Listener(on_press=on_press) as listener:
             active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
             p_main = {"top": 0, "left": 0, "width": x*2, "height": y*2}
-            p_offgcd = {"top": 0, "left":  monitor == "2k" and 70 or 105, "width": x*2, "height": y*2}
-            p_combat = {"top": 0, "left": monitor == "2k" and 17 or 24, "width": 7, "height": 7}
-            p_interrupt = {"top": 0, "left": monitor == "2k" and 27 or 42, "width": 7, "height": 7}
-            p_behind = {"top": 0, "left": monitor == "2k" and 38 or 62, "width": 7, "height": 7}
-            p_clss = {"top": 0, "left": monitor == "2k" and 49 or 74, "width": 7, "height": 7}
-            p_rotation = {"top": 0, "left": monitor == "2k" and 60 or 94, "width": 7, "height": 7}
+            p_offgcd = {"top": 0, "left":  p_offgcd_left, "width": x*2, "height": y*2}
+            p_combat = {"top": 0, "left": p_combat_left, "width": 7, "height": 7}
+            p_interrupt = {"top": 0, "left": p_interrupt_left, "width": 7, "height": 7}
+            p_behind = {"top": 0, "left": p_behind_left, "width": 7, "height": 7}
+            p_clss = {"top": 0, "left": p_clss_left, "width": 7, "height": 7}
+            p_rotation = {"top": 0, "left": p_rotation_left, "width": 7, "height": 7}
 
-            grabbed_image = dir_path + "/_main.png".format(**p_main)
+            grabbed_image = dir_path + "/images/_/main.png".format(**p_main)
             main_image = sct.grab(p_main)
             main = main_image.pixel(int(x/2), int(y/2))
-            # mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
+            if debug:
+                mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
 
-            q_image = dir_path + "/_offgcd.png".format(**p_offgcd)
+            q_image = dir_path + "/images/_/offgcd.png".format(**p_offgcd)
             offgcd_image = sct.grab(p_offgcd)
             offgcd = offgcd_image.pixel(int(x/2), int(y/2))
-            # mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=q_image)
+            if debug:
+                mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=q_image)
 
             combat_image = sct.grab(p_combat)
             combat = combat_image.pixel(5, 5)
-            # mss.tools.to_png(combat_image.rgb, combat_image.size, output="_robot/combat.png".format(**p_combat))
+            if debug:
+                mss.tools.to_png(combat_image.rgb, combat_image.size, output="_robot/images/_/combat.png".format(**p_combat))
 
             interrupt_image = sct.grab(p_interrupt)
             interrupt = interrupt_image.pixel(5, 5)
-            # mss.tools.to_png(interrupt_image.rgb, interrupt_image.size, output="_robot/interrupt.png".format(**p_interrupt))
+            if debug:
+                mss.tools.to_png(interrupt_image.rgb, interrupt_image.size, output="_robot/images/_/interrupt.png".format(**p_interrupt))
 
             behind_image = sct.grab(p_behind)
             behind = behind_image.pixel(5, 5)
-            # mss.tools.to_png(behind_image.rgb, behind_image.size, output="_robot/behind.png".format(**p_behind))
+            if debug:
+                mss.tools.to_png(behind_image.rgb, behind_image.size, output="_robot/images/_/behind.png".format(**p_behind))
 
             clss_image = sct.grab(p_clss)
             clss = clss_image.pixel(5, 5)
-            # mss.tools.to_png(clss_image.rgb, clss_image.size, output="_robot/clss.png".format(**p_clss))
+            if debug:
+                mss.tools.to_png(clss_image.rgb, clss_image.size, output="_robot/images/_/clss.png".format(**p_clss))
+
             hex = '#%02x%02x%02x' % clss
 
             # if dprint:
@@ -261,10 +288,10 @@ with keyboard.Listener(on_press=on_press) as listener:
                 except:
                     print("offgcd error missing class --> ", wow_class)
 
-            if debug:
-                time.sleep(0.5)
-                mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
-                print(grabbed_image, main, combat, interrupt, active_window, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+            # if debug:
+            #     time.sleep(0.5)
+            #     mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
+            #     print(grabbed_image, main, combat, interrupt, active_window, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
 
             if mill:
                 pyautogui.hotkey("y")
