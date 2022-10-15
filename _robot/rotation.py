@@ -120,7 +120,7 @@ with keyboard.Listener(on_press=on_press) as listener:
             active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
             p_main = {"top": 0, "left": 0, "width": x*2, "height": y*2}
-            p_offgcd = {"top": 0, "left":  monitor == "2k" and 80 or 105, "width": x*2, "height": y*2}
+            p_offgcd = {"top": 0, "left":  monitor == "2k" and 70 or 105, "width": x*2, "height": y*2}
             p_combat = {"top": 0, "left": monitor == "2k" and 17 or 24, "width": 7, "height": 7}
             p_interrupt = {"top": 0, "left": monitor == "2k" and 27 or 42, "width": 7, "height": 7}
             p_behind = {"top": 0, "left": monitor == "2k" and 38 or 62, "width": 7, "height": 7}

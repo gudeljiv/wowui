@@ -48,11 +48,11 @@ Bagnon_Sets = {
 				0, -- [3]
 				0.7481050789356232, -- [4]
 			},
-			["y"] = -293.1571044921875,
+			["bagBreak"] = false,
 			["hiddenRules"] = {
 			},
 			["search"] = true,
-			["bagBreak"] = false,
+			["y"] = -293.1571044921875,
 			["x"] = -408.98974609375,
 			["sort"] = true,
 			["borderColor"] = {

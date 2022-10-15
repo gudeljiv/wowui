@@ -4,25 +4,25 @@ Postal3DB = {
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Vermina - Golemagg"] = "Vermina - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Poklopac - Mirage Raceway"] = "Poklopac - Mirage Raceway",
+		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
 		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
 		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
-		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
-		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
+		["Poklopac - Mirage Raceway"] = "Poklopac - Mirage Raceway",
 		["Provokator - Jin'do"] = "Provokator - Jin'do",
 		["Wells - Jin'do"] = "Wells - Jin'do",
 		["Tudum - Jin'do"] = "Tudum - Jin'do",
 		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
-		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
+		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
 				"Battitude|Golemagg|Horde|5|ROGUE", -- [1]
-				"Battlearm|Golemagg|Horde|70|DEATHKNIGHT", -- [2]
+				"Battlearm|Golemagg|Horde|72|DEATHKNIGHT", -- [2]
 				"Battlearm|Jin'do|Horde|2|SHAMAN", -- [3]
 				"Kaonac|Jin'do|Horde|1|PRIEST", -- [4]
 				"Moolatz|Golemagg|Horde|62|DRUID", -- [5]
@@ -59,7 +59,7 @@ Postal3DB = {
 				},
 			},
 		},
-		["Poklopac - Mirage Raceway"] = {
+		["Kaonac - Jin'do"] = {
 		},
 		["Tudum - Ashbringer"] = {
 		},
@@ -70,7 +70,7 @@ Postal3DB = {
 				},
 			},
 		},
-		["Moolatz - Golemagg"] = {
+		["Pitchwise - Ashbringer"] = {
 		},
 		["Battitude - Golemagg"] = {
 		},
@@ -83,7 +83,7 @@ Postal3DB = {
 		},
 		["Battlearm - Jin'do"] = {
 		},
-		["Kaonac - Jin'do"] = {
+		["Poklopac - Mirage Raceway"] = {
 		},
 		["Provokator - Jin'do"] = {
 		},
@@ -93,7 +93,7 @@ Postal3DB = {
 		},
 		["Tandaram - Jin'do"] = {
 		},
-		["Pitchwise - Ashbringer"] = {
+		["Moolatz - Golemagg"] = {
 		},
 	},
 }
