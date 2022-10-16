@@ -191,7 +191,7 @@ unitscan: enabled
 VendorBait: enabled
 NovaWorldBuffs: disabled
 NameplateSCT: disabled
-Select: disabled
+Select: enabled
 XLoot: disabled
 XLoot_Group: disabled
 XLoot_Options: disabled

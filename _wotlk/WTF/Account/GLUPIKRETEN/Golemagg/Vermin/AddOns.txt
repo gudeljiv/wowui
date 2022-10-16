@@ -22,7 +22,7 @@ RXPGuides: enabled
 CharacterStatsClassic: disabled
 RangeDisplay: enabled
 RangeDisplay_Options: enabled
-Select: disabled
+Select: enabled
 ClassicAuraDurations: disabled
 Leatrix_Plus: enabled
 whoaThickFrames_Classic: disabled
