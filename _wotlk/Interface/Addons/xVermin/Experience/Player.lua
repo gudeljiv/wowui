@@ -40,7 +40,7 @@ PlayerXP.XPbar.Percent:SetVertexColor(1, 1, 1)
 PlayerXP.XPbar.RestedNumber = PlayerXP.XPbar:CreateFontString(nil, 'ARTWORK')
 PlayerXP.XPbar.RestedNumber:SetFont('Fonts\\ARIALN.ttf', 10, 'THINOUTLINE')
 PlayerXP.XPbar.RestedNumber:SetShadowOffset(0, 0)
-PlayerXP.XPbar.RestedNumber:SetPoint('RIGHT', PlayerXP.XPbar, 'RIGHT', 2, -10)
+PlayerXP.XPbar.RestedNumber:SetPoint('RIGHT', PlayerXP.XPbar, 'RIGHT', 2, -12)
 PlayerXP.XPbar.RestedNumber:SetVertexColor(1, 1, 1)
 
 PlayerXP.XPbar.Background = PlayerXP.XPbar:CreateTexture(nil, 'BACKGROUND')

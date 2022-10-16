@@ -168,3 +168,5 @@ XLoot: disabled
 XLoot_Group: disabled
 XLoot_Options: disabled
 Roll: disabled
+Examiner: disabled
+InspectEquip: disabled

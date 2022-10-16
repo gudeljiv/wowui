@@ -6,8 +6,8 @@ WeakAurasOptionsSaved = {
 	["locale"] = "enUS",
 	["needsRebuild"] = false,
 	["version"] = "4.1.4",
-	["spellCacheStrings"] = true,
 	["spellCacheAchivements"] = true,
+	["spellCacheStrings"] = true,
 	["spellCache"] = {
 		["Spotted"] = {
 			["spells"] = "2425=136173",
@@ -2941,7 +2941,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "51058=134760",
 		},
 		["Whip Terrorfiend"] = {
-			["spells"] = "35673=132116",
+			["spells"] = "35673=132460",
 		},
 		["Breastplate of Kings"] = {
 			["spells"] = "34533=136241",
@@ -7057,7 +7057,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "10525=136247",
 		},
 		["Auto Attack"] = {
-			["spells"] = "6603=132116",
+			["spells"] = "6603=132460",
 		},
 		["Increased Rejuvenation"] = {
 			["spells"] = "352508=136030",
@@ -47803,7 +47803,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "61423=134149",
 		},
 		["Tricks of the Trade"] = {
-			["spells"] = "57933=236283,57934=236283,59628=236283,70804=135998",
+			["spells"] = "57933=236283,57934=236283,59628=236283,70804=135998,396936=236283,396937=236283",
 		},
 		["Summon Magmakin"] = {
 			["spells"] = "20506=135819",
@@ -51796,5 +51796,5 @@ WeakAurasOptionsSaved = {
 			["spells"] = "51203=136007",
 		},
 	},
-	["build"] = "45942",
+	["build"] = "46158",
 }

@@ -28,7 +28,6 @@ skills["offgcd"]["death knight"] = [
     {"name": "rune tap", "key": "h"},
     {"name": "blood tap", "key": "f4", "modifier": "ctrl"},
     {"name": "anti magic shell", "key": "g"},
-    {"name": "horn of winter", "key": "f4"},
 ]
 
 
@@ -111,6 +110,7 @@ skills["death knight"] = [
     {"name": "death coil", "key": "4"},
     {"name": "blood boil", "key": "e"},
     {"name": "icebound fortitude", "key": "t"},
+    {"name": "horn of winter", "key": "f4"},
     {"name": "pestilence", "key": "3"},
 ]
 

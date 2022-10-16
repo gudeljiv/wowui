@@ -15,17 +15,17 @@ RXPCData = {
 		[99] = "Thrallmar, Hellfire Peninsula",
 		[56] = "Stonard, Swamp of Sorrows",
 		[128] = "Shattrath, Terokkar Forest",
-		[18] = "Booty Bay, Stranglethorn",
+		[68] = "Light's Hope Chapel, Eastern Plaguelands",
 		[55] = "Brackenwall Village, Dustwallow Marsh",
-		[179] = "Mudsprocket, Dustwallow Marsh",
-		[10] = "The Sepulcher, Silverpine Forest",
 		[20] = "Grom'gol, Stranglethorn",
+		[10] = "The Sepulcher, Silverpine Forest",
+		[179] = "Mudsprocket, Dustwallow Marsh",
 		[40] = "Gadgetzan, Tanaris",
 		[80] = "Ratchet, The Barrens",
 		[11] = "Undercity, Tirisfal",
 		[22] = "Thunder Bluff, Mulgore",
 		[130] = "Hellfire Peninsula, The Dark Portal, Horde",
-		[23] = "Orgrimmar, Durotar",
+		[141] = "Spinebreaker Ridge, Hellfire Peninsula",
 		[69] = "Moonglade",
 		[383] = "Thondoril River, Western Plaguelands",
 		[48] = "Bloodvenom Post, Felwood",
@@ -34,11 +34,11 @@ RXPCData = {
 		[384] = "The Bulwark, Tirisfal",
 		[102] = "Falcon Watch, Hellfire Peninsula",
 		[53] = "Everlook, Winterspring",
-		[141] = "Spinebreaker Ridge, Hellfire Peninsula",
+		[23] = "Orgrimmar, Durotar",
 		[77] = "Camp Taurajo, The Barrens",
 		[79] = "Marshal's Refuge, Un'Goro Crater",
 		[29] = "Sun Rock Retreat, Stonetalon Mountains",
-		[68] = "Light's Hope Chapel, Eastern Plaguelands",
+		[18] = "Booty Bay, Stranglethorn",
 	},
 	["JoyousJourneys"] = true,
 	["currentGuideName"] = "59-61 Hellfire Peninsula",
@@ -211,9 +211,9 @@ RXPCTrackingData = {
 							[10250] = 14700,
 							[10792] = 14700,
 							[10809] = 14325,
-							[10258] = 14700,
 							[10813] = 7500,
 							[10213] = 3600,
+							[10258] = 14700,
 						},
 					},
 				},
@@ -244,10 +244,10 @@ RXPCTrackingData = {
 					},
 					["quests"] = {
 						["Hellfire Peninsula"] = {
-							[9349] = 14700,
-							[9572] = 30150,
 							[10087] = 14700,
 							[10835] = 3600,
+							[9349] = 14700,
+							[9572] = 30150,
 						},
 					},
 				},
@@ -505,10 +505,10 @@ RXPCTrackingData = {
 					},
 					["quests"] = {
 						["Tanaris"] = {
-							[2873] = 8325,
-							[8366] = 8325,
 							[8365] = 8325,
+							[8366] = 8325,
 							[1691] = 7950,
+							[2873] = 8325,
 						},
 					},
 				},
@@ -757,11 +757,11 @@ RXPCTrackingData = {
 					},
 					["quests"] = {
 						["Un'Goro Crater"] = {
-							[13850] = 11400,
 							[4301] = 12225,
-							[9052] = 11025,
-							[9063] = 1087,
+							[13850] = 11400,
 							[4289] = 12225,
+							[9063] = 1087,
+							[9052] = 11025,
 						},
 						["Thunder Bluff"] = {
 							[3782] = 1012,
@@ -823,17 +823,17 @@ RXPCTrackingData = {
 							["xp"] = 47491,
 							["count"] = 185,
 						},
-						["Tanaris"] = {
-							["xp"] = 11850,
-							["count"] = 1,
+						["Blackrock Depths"] = {
+							["xp"] = 4424,
+							["count"] = 11,
 						},
 						["Thunder Bluff"] = {
 							["xp"] = 10200,
 							["count"] = 1,
 						},
-						["Blackrock Depths"] = {
-							["xp"] = 4424,
-							["count"] = 11,
+						["Tanaris"] = {
+							["xp"] = 11850,
+							["count"] = 1,
 						},
 						["Blackrock Mountain"] = {
 							["xp"] = 2128,
@@ -1013,9 +1013,9 @@ RXPCTrackingData = {
 						["Winterspring"] = {
 							[8465] = 1237,
 							[5083] = 6300,
-							[969] = 14325,
-							[3783] = 9450,
 							[5054] = 12675,
+							[3783] = 9450,
+							[969] = 14325,
 							[977] = 10125,
 						},
 					},
@@ -1120,9 +1120,9 @@ RXPCTrackingData = {
 					["quests"] = {
 						["Alterac Mountains"] = {
 							[7142] = 19575,
-							[7161] = 13125,
-							[7124] = 12675,
 							[8272] = 1312,
+							[7124] = 12675,
+							[7161] = 13125,
 							[7163] = 13125,
 						},
 					},
@@ -1189,17 +1189,22 @@ RXPCComms = {
 					["class"] = "WARRIOR",
 				},
 				["Complaining"] = {
-					["class"] = "WARLOCK",
+					["isRxp"] = true,
 					["lastSeen"] = 2019328.136,
 					["xpPercentage"] = 0,
-					["isRxp"] = true,
-					["timePlayed"] = 198.5099999997765,
 					["level"] = 70,
+					["timePlayed"] = 198.5099999997765,
+					["class"] = "WARLOCK",
 				},
 				["Drrøv"] = {
 					["timePlayed"] = 1053.099000000017,
 					["class"] = "WARLOCK",
 					["xp"] = 1008,
+				},
+				["Orcschamane"] = {
+					["timePlayed"] = 662.8450000000012,
+					["class"] = "SHAMAN",
+					["xp"] = 4,
 				},
 				["Griposo"] = {
 					["timePlayed"] = 313.8349999999628,
@@ -1227,6 +1232,11 @@ RXPCComms = {
 				["Smækk"] = {
 					["timePlayed"] = 313.8349999999628,
 					["class"] = "DEATHKNIGHT",
+				},
+				["Dreaddragon"] = {
+					["timePlayed"] = 662.8450000000012,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 4,
 				},
 				["Carenka"] = {
 					["timePlayed"] = 2405.13199999975,
@@ -1297,6 +1307,11 @@ RXPCComms = {
 					["timePlayed"] = 1571.347000000067,
 					["class"] = "PALADIN",
 				},
+				["Brokzar"] = {
+					["timePlayed"] = 532.099000000002,
+					["class"] = "ROGUE",
+					["xp"] = 6188,
+				},
 				["Gormothog"] = {
 					["timePlayed"] = 31.68700000003446,
 					["class"] = "WARLOCK",
@@ -1319,12 +1334,12 @@ RXPCComms = {
 					["class"] = "HUNTER",
 				},
 				["Judgewink"] = {
-					["isRxp"] = true,
+					["level"] = 44,
 					["lastSeen"] = 26651.365,
 					["xpPercentage"] = 56,
-					["level"] = 44,
-					["timePlayed"] = 849.293999999998,
 					["class"] = "PALADIN",
+					["timePlayed"] = 849.293999999998,
+					["isRxp"] = true,
 				},
 				["Filodeluz"] = {
 					["timePlayed"] = 1053.099000000017,
@@ -1354,6 +1369,15 @@ RXPCComms = {
 				["Ninexrep"] = {
 					["timePlayed"] = 42.08599999989383,
 					["class"] = "HUNTER",
+				},
+				["Irontøs"] = {
+					["timePlayed"] = 185.2780000001658,
+					["class"] = "WARRIOR",
+				},
+				["Leoraa"] = {
+					["timePlayed"] = 130.7459999999992,
+					["class"] = "PALADIN",
+					["xp"] = 4,
 				},
 				["Frenzybubble"] = {
 					["timePlayed"] = 2405.13199999975,
@@ -1432,20 +1456,21 @@ RXPCComms = {
 					["class"] = "SHAMAN",
 				},
 				["Uqr"] = {
-					["isRxp"] = true,
+					["level"] = 46,
 					["lastSeen"] = 2528151.484,
 					["xpPercentage"] = 0,
-					["level"] = 46,
-					["timePlayed"] = 0,
 					["class"] = "MAGE",
+					["timePlayed"] = 0,
+					["isRxp"] = true,
 				},
 				["Mezuk"] = {
 					["timePlayed"] = 6782.090000000084,
 					["class"] = "WARLOCK",
 				},
-				["Irontøs"] = {
-					["timePlayed"] = 185.2780000001658,
-					["class"] = "WARRIOR",
+				["Rauwiesau"] = {
+					["timePlayed"] = 662.8450000000012,
+					["class"] = "DRUID",
+					["xp"] = 4,
 				},
 				["Jesk"] = {
 					["timePlayed"] = 307.5370000000112,
