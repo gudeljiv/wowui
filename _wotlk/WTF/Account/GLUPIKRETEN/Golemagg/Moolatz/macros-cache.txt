@@ -1,14 +1,7 @@
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,exists,nodead][help][] Rejuvenation
-END
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast [stealth] Ravage
-/cast [form:1] Maul
-/cast [form:3] Claw
-/cast [@mouseover,exists,nodead]Regrowth
+/use 
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -65,6 +58,7 @@ VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtoltip 
 /startattack
 /cast [stealth] Ravage; [form:1] Maul; [form:3] Claw; [@mouseover,help,nodead][help][] Regrowth
+/use Bladefist's Breadth
 END
 VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -72,6 +66,9 @@ VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000013 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/select Mark of the Wild,Gift of the Wild(Rank 1),Gift of the Wild(Rank 2)
-/click [btn:2]S134M;S134A
+/cast Mark of the Wild
+END
+VER 3 0000000001000015 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nodead][help][] Regrowth
 END

@@ -185,12 +185,18 @@ with keyboard.Listener(on_press=on_press) as listener:
             #     print(hex)
 
             # matching closest class color to define in colors
-            color_distance = 500
+            color_distance = 100
+            found_class = False
             for c in color:
                 rgb = parse_hex_color(c)
+                # print(color[c], c, rgb, clss, color_similarity(rgb, clss))
                 if color_similarity(rgb, clss) <= color_distance:
                     color_distance = color_similarity(rgb, clss)
                     hex = c
+                    found_class = True
+
+            if not found_class:
+                continue
 
             try:
                 wow_class = color[hex]

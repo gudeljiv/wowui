@@ -1,3 +1,7 @@
+VER 3 0000000000000012 " " "132143"
+#showtooltip
+/startattack
+END
 VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use Fel Sharpening Stone
@@ -10,21 +14,17 @@ END
 VER 3 0000000000000013 " " "132130"
 /click RotBotF3
 END
-VER 3 0000000000000012 " " "132143"
-#showtooltip
-/startattack
-END
 VER 3 0000000000000018 "ASAB" "INV_MISC_QUESTIONMARK"
 /run local s,b="SHOW_MULTI_ACTIONBAR_"b=not _G[s..1]for i=1,4 do _G[s..i]=b end InterfaceOptions_UpdateMultiActionBars()
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:28399
-/castsequence [combat] reset=combat item:13444
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:29292
+/use [nocombat]item:33454
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000B "lvl enchant" "132089"
@@ -60,7 +60,8 @@ VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
 /run MainMenuBarExtraBar:SetPoint('BOTTOM', Minimap, 'TOP', -5, 30)
 /run MainMenuBarExtraBar:SetScale(0.5)
 END
-VER 3 000000000000001A "TSMMacro" "INV_Misc_Flower_01"
+VER 3 000000000000001B "TSMMacro" "INV_Misc_Flower_01"
+/click TSMShoppingBuyoutBtn
 /click TSMAuctioningBtn
 /click TSMDestroyBtn
 END
