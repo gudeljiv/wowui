@@ -4,7 +4,7 @@ Postal3DB = {
 		["BlackBook"] = {
 			["alts"] = {
 				"Battitude|Golemagg|Horde|5|ROGUE", -- [1]
-				"Battlearm|Golemagg|Horde|72|DEATHKNIGHT", -- [2]
+				"Battlearm|Golemagg|Horde|73|DEATHKNIGHT", -- [2]
 				"Battlearm|Jin'do|Horde|2|SHAMAN", -- [3]
 				"Kaonac|Jin'do|Horde|1|PRIEST", -- [4]
 				"Moolatz|Golemagg|Horde|62|DRUID", -- [5]
@@ -26,19 +26,19 @@ Postal3DB = {
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Vermina - Golemagg"] = "Vermina - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
+		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
 		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
-		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
-		["Poklopac - Mirage Raceway"] = "Poklopac - Mirage Raceway",
+		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
 		["Provokator - Jin'do"] = "Provokator - Jin'do",
 		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
 		["Tudum - Jin'do"] = "Tudum - Jin'do",
 		["Wells - Jin'do"] = "Wells - Jin'do",
-		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
+		["Poklopac - Mirage Raceway"] = "Poklopac - Mirage Raceway",
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
@@ -59,7 +59,7 @@ Postal3DB = {
 				},
 			},
 		},
-		["Pitchwise - Ashbringer"] = {
+		["Moolatz - Golemagg"] = {
 		},
 		["Tudum - Ashbringer"] = {
 		},
@@ -70,7 +70,7 @@ Postal3DB = {
 				},
 			},
 		},
-		["Moolatz - Golemagg"] = {
+		["Pitchwise - Ashbringer"] = {
 		},
 		["Battitude - Golemagg"] = {
 		},
@@ -83,7 +83,7 @@ Postal3DB = {
 		},
 		["Battlearm - Jin'do"] = {
 		},
-		["Poklopac - Mirage Raceway"] = {
+		["Kaonac - Jin'do"] = {
 		},
 		["Provokator - Jin'do"] = {
 		},
@@ -93,7 +93,7 @@ Postal3DB = {
 		},
 		["Wells - Jin'do"] = {
 		},
-		["Kaonac - Jin'do"] = {
+		["Poklopac - Mirage Raceway"] = {
 		},
 	},
 }

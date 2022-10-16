@@ -21,8 +21,6 @@ ItemRackUser = {
 	},
 	["EnableEvents"] = "ON",
 	["ItemsUsed"] = {
-		["25937"] = 30,
-		["28041"] = 30,
 	},
 	["QueuesEnabled"] = {
 	},

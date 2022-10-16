@@ -11,21 +11,21 @@ RXPCData = {
 		[58] = "Zoram'gar Outpost, Ashenvale",
 		[166] = "Emerald Sanctuary, Felwood",
 		[61] = "Splintertree Post, Ashenvale",
-		[68] = "Light's Hope Chapel, Eastern Plaguelands",
 		[18] = "Booty Bay, Stranglethorn",
+		[68] = "Light's Hope Chapel, Eastern Plaguelands",
 		[79] = "Marshal's Refuge, Un'Goro Crater",
 		[128] = "Shattrath, Terokkar Forest",
 		[99] = "Thrallmar, Hellfire Peninsula",
 		[77] = "Camp Taurajo, The Barrens",
-		[141] = "Spinebreaker Ridge, Hellfire Peninsula",
+		[23] = "Orgrimmar, Durotar",
 		[10] = "The Sepulcher, Silverpine Forest",
-		[179] = "Mudsprocket, Dustwallow Marsh",
+		[20] = "Grom'gol, Stranglethorn",
 		[40] = "Gadgetzan, Tanaris",
 		[80] = "Ratchet, The Barrens",
 		[11] = "Undercity, Tirisfal",
 		[22] = "Thunder Bluff, Mulgore",
 		[13] = "Tarren Mill, Hillsbrad",
-		[23] = "Orgrimmar, Durotar",
+		[141] = "Spinebreaker Ridge, Hellfire Peninsula",
 		[384] = "The Bulwark, Tirisfal",
 		[383] = "Thondoril River, Western Plaguelands",
 		[48] = "Bloodvenom Post, Felwood",
@@ -34,7 +34,7 @@ RXPCData = {
 		[69] = "Moonglade",
 		[102] = "Falcon Watch, Hellfire Peninsula",
 		[53] = "Everlook, Winterspring",
-		[20] = "Grom'gol, Stranglethorn",
+		[179] = "Mudsprocket, Dustwallow Marsh",
 		[55] = "Brackenwall Village, Dustwallow Marsh",
 		[56] = "Stonard, Swamp of Sorrows",
 		[29] = "Sun Rock Retreat, Stonetalon Mountains",
@@ -211,9 +211,9 @@ RXPCTrackingData = {
 							[10250] = 14700,
 							[10792] = 14700,
 							[10809] = 14325,
-							[10213] = 3600,
 							[10258] = 14700,
 							[10813] = 7500,
+							[10213] = 3600,
 						},
 					},
 				},
@@ -244,10 +244,10 @@ RXPCTrackingData = {
 					},
 					["quests"] = {
 						["Hellfire Peninsula"] = {
-							[10835] = 3600,
 							[9572] = 30150,
-							[9349] = 14700,
+							[10835] = 3600,
 							[10087] = 14700,
+							[9349] = 14700,
 						},
 					},
 				},
@@ -505,10 +505,10 @@ RXPCTrackingData = {
 					},
 					["quests"] = {
 						["Tanaris"] = {
-							[1691] = 7950,
-							[8366] = 8325,
 							[2873] = 8325,
+							[8366] = 8325,
 							[8365] = 8325,
+							[1691] = 7950,
 						},
 					},
 				},
@@ -757,11 +757,11 @@ RXPCTrackingData = {
 					},
 					["quests"] = {
 						["Un'Goro Crater"] = {
-							[4289] = 12225,
-							[13850] = 11400,
 							[9052] = 11025,
-							[9063] = 1087,
 							[4301] = 12225,
+							[4289] = 12225,
+							[9063] = 1087,
+							[13850] = 11400,
 						},
 						["Thunder Bluff"] = {
 							[3782] = 1012,
@@ -831,17 +831,17 @@ RXPCTrackingData = {
 							["xp"] = 10200,
 							["count"] = 1,
 						},
-						["Tanaris"] = {
-							["xp"] = 11850,
-							["count"] = 1,
+						["Blackrock Depths"] = {
+							["xp"] = 4424,
+							["count"] = 11,
 						},
 						["Blackrock Mountain"] = {
 							["xp"] = 2128,
 							["count"] = 6,
 						},
-						["Blackrock Depths"] = {
-							["xp"] = 4424,
-							["count"] = 11,
+						["Tanaris"] = {
+							["xp"] = 11850,
+							["count"] = 1,
 						},
 					},
 					["timestamp"] = {
@@ -1012,8 +1012,8 @@ RXPCTrackingData = {
 							[5083] = 6300,
 							[977] = 10125,
 							[3783] = 9450,
-							[969] = 14325,
 							[5054] = 12675,
+							[969] = 14325,
 						},
 						["Felwood"] = {
 							[8461] = 12225,
@@ -1122,8 +1122,8 @@ RXPCTrackingData = {
 							[7142] = 19575,
 							[7163] = 13125,
 							[7124] = 12675,
-							[7161] = 13125,
 							[8272] = 1312,
+							[7161] = 13125,
 						},
 					},
 				},
@@ -1189,17 +1189,22 @@ RXPCComms = {
 					["class"] = "WARRIOR",
 				},
 				["Complaining"] = {
-					["level"] = 70,
+					["class"] = "WARLOCK",
 					["lastSeen"] = 2019328.136,
 					["xpPercentage"] = 0,
-					["class"] = "WARLOCK",
-					["timePlayed"] = 198.5099999997765,
 					["isRxp"] = true,
+					["timePlayed"] = 198.5099999997765,
+					["level"] = 70,
 				},
 				["Drrøv"] = {
 					["timePlayed"] = 1053.099000000017,
 					["class"] = "WARLOCK",
 					["xp"] = 1008,
+				},
+				["Orcschamane"] = {
+					["timePlayed"] = 662.8450000000012,
+					["class"] = "SHAMAN",
+					["xp"] = 4,
 				},
 				["Griposo"] = {
 					["timePlayed"] = 313.8349999999628,
@@ -1224,9 +1229,19 @@ RXPCComms = {
 					["timePlayed"] = 6782.090000000084,
 					["class"] = "WARRIOR",
 				},
+				["Syazz"] = {
+					["timePlayed"] = 381.0570000000298,
+					["class"] = "ROGUE",
+					["xp"] = 24,
+				},
 				["Smækk"] = {
 					["timePlayed"] = 313.8349999999628,
 					["class"] = "DEATHKNIGHT",
+				},
+				["Dreaddragon"] = {
+					["timePlayed"] = 662.8450000000012,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 4,
 				},
 				["Carenka"] = {
 					["timePlayed"] = 2405.13199999975,
@@ -1297,6 +1312,11 @@ RXPCComms = {
 					["timePlayed"] = 1571.347000000067,
 					["class"] = "PALADIN",
 				},
+				["Brokzar"] = {
+					["timePlayed"] = 532.099000000002,
+					["class"] = "ROGUE",
+					["xp"] = 6188,
+				},
 				["Gormothog"] = {
 					["timePlayed"] = 31.68700000003446,
 					["class"] = "WARLOCK",
@@ -1319,12 +1339,12 @@ RXPCComms = {
 					["class"] = "HUNTER",
 				},
 				["Judgewink"] = {
-					["class"] = "PALADIN",
+					["isRxp"] = true,
 					["lastSeen"] = 26651.365,
 					["xpPercentage"] = 56,
-					["isRxp"] = true,
-					["timePlayed"] = 849.293999999998,
 					["level"] = 44,
+					["timePlayed"] = 849.293999999998,
+					["class"] = "PALADIN",
 				},
 				["Filodeluz"] = {
 					["timePlayed"] = 1053.099000000017,
@@ -1339,6 +1359,11 @@ RXPCComms = {
 					["timePlayed"] = 994.6610000000001,
 					["class"] = "WARRIOR",
 				},
+				["Anotherlol"] = {
+					["timePlayed"] = 381.0570000000298,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 24,
+				},
 				["Sentsui"] = {
 					["timePlayed"] = 984.2099999999627,
 					["class"] = "DEATHKNIGHT",
@@ -1351,6 +1376,16 @@ RXPCComms = {
 					["timePlayed"] = 58.80099999997765,
 					["class"] = "WARRIOR",
 				},
+				["Xtoyz"] = {
+					["timePlayed"] = 381.0570000000298,
+					["class"] = "ROGUE",
+					["xp"] = 24,
+				},
+				["Blackporto"] = {
+					["timePlayed"] = 381.0570000000298,
+					["class"] = "PALADIN",
+					["xp"] = 24,
+				},
 				["Ninexrep"] = {
 					["timePlayed"] = 42.08599999989383,
 					["class"] = "HUNTER",
@@ -1359,6 +1394,14 @@ RXPCComms = {
 					["timePlayed"] = 31.68700000003446,
 					["class"] = "MAGE",
 					["xp"] = 5824,
+				},
+				["Christoffer"] = {
+					["timePlayed"] = 6782.090000000084,
+					["class"] = "PALADIN",
+				},
+				["Devereaux"] = {
+					["timePlayed"] = 3002.618000000017,
+					["class"] = "WARLOCK",
 				},
 				["Kostron"] = {
 					["timePlayed"] = 1053.099000000017,
@@ -1373,10 +1416,6 @@ RXPCComms = {
 					["timePlayed"] = 18.05199999999968,
 					["class"] = "MAGE",
 				},
-				["Christoffer"] = {
-					["timePlayed"] = 6782.090000000084,
-					["class"] = "PALADIN",
-				},
 				["Slava"] = {
 					["timePlayed"] = 1571.347000000067,
 					["class"] = "WARRIOR",
@@ -1385,30 +1424,35 @@ RXPCComms = {
 					["timePlayed"] = 408.0610000000015,
 					["class"] = "PALADIN",
 				},
-				["Irontøs"] = {
-					["timePlayed"] = 185.2780000001658,
-					["class"] = "WARRIOR",
+				["Leoraa"] = {
+					["timePlayed"] = 130.7459999999992,
+					["class"] = "PALADIN",
+					["xp"] = 4,
+				},
+				["Uqr"] = {
+					["isRxp"] = true,
+					["lastSeen"] = 2528151.484,
+					["xpPercentage"] = 0,
+					["level"] = 46,
+					["timePlayed"] = 0,
+					["class"] = "MAGE",
 				},
 				["Stoofy"] = {
 					["timePlayed"] = 30.86800000001676,
 					["class"] = "DRUID",
 					["xp"] = 484,
 				},
-				["Ruurikh"] = {
-					["timePlayed"] = 680.601000000257,
-					["class"] = "WARLOCK",
-				},
-				["Uqr"] = {
-					["class"] = "MAGE",
-					["lastSeen"] = 2528151.484,
-					["xpPercentage"] = 0,
-					["isRxp"] = true,
-					["timePlayed"] = 0,
-					["level"] = 46,
-				},
 				["Hoegii"] = {
 					["timePlayed"] = 680.601000000257,
 					["class"] = "SHAMAN",
+				},
+				["Chuum"] = {
+					["timePlayed"] = 1823.430000000168,
+					["class"] = "WARLOCK",
+				},
+				["Artemiszia"] = {
+					["timePlayed"] = 9.62100000004284,
+					["class"] = "MAGE",
 				},
 				["Nbcsmanwx"] = {
 					["timePlayed"] = 420.0020000000004,
@@ -1424,42 +1468,43 @@ RXPCComms = {
 					["class"] = "ROGUE",
 					["xp"] = 572,
 				},
-				["Artemiszia"] = {
-					["timePlayed"] = 9.62100000004284,
-					["class"] = "MAGE",
+				["Êxxô"] = {
+					["timePlayed"] = 313.8349999999628,
+					["class"] = "PALADIN",
 				},
 				["Shenata"] = {
 					["timePlayed"] = 6782.090000000084,
 					["class"] = "PALADIN",
 				},
-				["Êxxô"] = {
-					["timePlayed"] = 313.8349999999628,
-					["class"] = "PALADIN",
-				},
-				["Chuum"] = {
-					["timePlayed"] = 1823.430000000168,
-					["class"] = "WARLOCK",
-				},
-				["Mezuk"] = {
-					["timePlayed"] = 6782.090000000084,
+				["Ruurikh"] = {
+					["timePlayed"] = 680.601000000257,
 					["class"] = "WARLOCK",
 				},
 				["Noobcomander"] = {
 					["timePlayed"] = 1823.430000000168,
 					["class"] = "PALADIN",
 				},
+				["Mezuk"] = {
+					["timePlayed"] = 6782.090000000084,
+					["class"] = "WARLOCK",
+				},
+				["Rauwiesau"] = {
+					["timePlayed"] = 662.8450000000012,
+					["class"] = "DRUID",
+					["xp"] = 4,
+				},
 				["Jesk"] = {
 					["timePlayed"] = 307.5370000000112,
 					["class"] = "PALADIN",
 					["xp"] = 24,
 				},
-				["Devereaux"] = {
-					["timePlayed"] = 3002.618000000017,
-					["class"] = "WARLOCK",
-				},
 				["Frenzybubble"] = {
 					["timePlayed"] = 2405.13199999975,
 					["class"] = "PALADIN",
+				},
+				["Irontøs"] = {
+					["timePlayed"] = 185.2780000001658,
+					["class"] = "WARRIOR",
 				},
 			},
 		},

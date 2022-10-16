@@ -102,7 +102,7 @@ Postal: enabled
 RangeDisplay: enabled
 RangeDisplay_Options: enabled
 RingMenu: enabled
-Select: disabled
+Select: enabled
 SharedMedia: enabled
 SimpleRaidTargetIcons: enabled
 TomTom: enabled

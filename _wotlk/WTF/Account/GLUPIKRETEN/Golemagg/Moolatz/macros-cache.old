@@ -62,11 +62,15 @@ VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
 /cast Innervate
 END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
-#showtoltip
+#showtoltip 
 /startattack
 /cast [stealth] Ravage; [form:1] Maul; [form:3] Claw; [@mouseover,help,nodead][help][] Regrowth
 END
 VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,help,nodead][help][] Growl
+END
+VER 3 0000000001000013 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/select Mark of the Wild,Gift of the Wild(Rank 1),Gift of the Wild(Rank 2)
 END
