@@ -58,6 +58,7 @@ Helpers/BetterLootMessage.lua
 Helpers/Bindings.lua
 Helpers/BuffSource.lua
 Helpers/Chat.lua
+Helpers/DalaranAuctionHouse.lua
 Helpers/DamageFont.lua
 Helpers/ErrorsFilter.lua
 Helpers/FastLoot.lua
