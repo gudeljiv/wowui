@@ -73,4 +73,5 @@ END
 VER 3 0000000001000013 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /select Mark of the Wild,Gift of the Wild(Rank 1),Gift of the Wild(Rank 2)
+/click [btn:2]S134M;S134A
 END

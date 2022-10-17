@@ -6,6 +6,6 @@ SelectSettings = {
 	["EquipslotOnlySoulbound"] = false,
 	["OnlySummonableMounts"] = false,
 	["UseOnRightClick"] = false,
-	["UseWhenSelecting"] = false,
+	["UseWhenSelecting"] = true,
 	["UseFlatStyle"] = true,
 }

@@ -1,7 +1,7 @@
 local _, xVermin = ...
 local f
 
-f = CreateFrame('Frame', 'RotationFrame1', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
+f = CreateFrame('Frame', 'RotationFrame_AOE', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
 f:SetFrameStrata('TOOLTIP')
 f:SetWidth(7)
 f:SetHeight(7)
@@ -20,7 +20,7 @@ f:SetBackdrop(
 )
 f:SetBackdropColor(1, 1, 1, 1)
 
-f = CreateFrame('Frame', 'RotationFrame2', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
+f = CreateFrame('Frame', 'RotationFrame_INTERRUPT', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
 f:SetFrameStrata('TOOLTIP')
 f:SetWidth(7)
 f:SetHeight(7)
@@ -39,7 +39,7 @@ f:SetBackdrop(
 )
 f:SetBackdropColor(1, 1, 1, 1)
 
-f = CreateFrame('Frame', 'RotationFrame3', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
+f = CreateFrame('Frame', 'RotationFrame_SCRIPT', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
 f:SetFrameStrata('TOOLTIP')
 f:SetWidth(3)
 f:SetHeight(40)
@@ -58,7 +58,7 @@ f:SetBackdrop(
 )
 f:SetBackdropColor(1, 0, 0, 0.9)
 
-f = CreateFrame('Frame', 'RotationFrame4', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
+f = CreateFrame('Frame', 'RotationFrame_BEHIND', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
 f:SetFrameStrata('TOOLTIP')
 f:SetWidth(7)
 f:SetHeight(7)
@@ -77,7 +77,7 @@ f:SetBackdrop(
 )
 f:SetBackdropColor(1, 1, 1, 1)
 
-f = CreateFrame('Frame', 'RotationFrame5', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
+f = CreateFrame('Frame', 'RotationFrame_UNUSED', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
 f:SetFrameStrata('TOOLTIP')
 f:SetWidth(7)
 f:SetHeight(7)
@@ -96,7 +96,7 @@ f:SetBackdrop(
 )
 f:SetBackdropColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
-f = CreateFrame('Frame', 'RotationFrame6', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
+f = CreateFrame('Frame', 'RotationFrame_AOERANGECASTING', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
 f:SetFrameStrata('TOOLTIP')
 f:SetWidth(7)
 f:SetHeight(7)

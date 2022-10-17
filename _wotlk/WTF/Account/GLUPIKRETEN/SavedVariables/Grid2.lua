@@ -568,25 +568,14 @@ Grid2DB = {
 					["BackgroundG"] = 0.101960784313725,
 					["BackgroundTexture"] = "None",
 					["BorderB"] = 0.501960784313726,
-					["minimapIcon"] = {
-						["hide"] = true,
-					},
+					["BackgroundB"] = 0.101960784313725,
 					["layouts"] = {
 						["arena"] = "By Group & Class",
 						["party"] = "By Group & Class",
 						["solo"] = "By Group & Class",
 						["raid"] = "By Group & Class",
 					},
-					["PosY"] = -2.655029220477445e-05,
-					["BackgroundB"] = 0.101960784313725,
 					["BackgroundR"] = 0.101960784313725,
-					["PosX"] = 0,
-					["BackgroundA"] = 0,
-					["BorderR"] = 0.501960784313726,
-					["BorderTexture"] = "None",
-					["anchor"] = "LEFT",
-					["Spacing"] = 1,
-					["BorderG"] = 0.501960784313726,
 					["extraThemes"] = {
 						{
 							["BackgroundTexture"] = "None",
@@ -716,6 +705,17 @@ Grid2DB = {
 							["clamp"] = true,
 							["FrameDisplay"] = "Always",
 						}, -- [3]
+					},
+					["BorderG"] = 0.501960784313726,
+					["Spacing"] = 1,
+					["BackgroundA"] = 0,
+					["BorderR"] = 0.501960784313726,
+					["BorderTexture"] = "None",
+					["anchor"] = "LEFT",
+					["PosX"] = 0,
+					["PosY"] = -2.655029220477445e-05,
+					["minimapIcon"] = {
+						["hide"] = true,
 					},
 				},
 			},
@@ -1585,11 +1585,11 @@ Grid2DB = {
 						}, -- [3]
 					},
 					["font"] = "Arial Narrow",
-					["frameTexture"] = "Clean",
+					["frameBorderTexture"] = "None",
 					["frameContentColor"] = {
 						["a"] = 0,
 					},
-					["frameBorderTexture"] = "None",
+					["frameTexture"] = "Clean",
 					["frameWidth"] = 120,
 					["frameBorderDistance"] = -2,
 				},
@@ -1602,7 +1602,7 @@ Grid2DB = {
 		["Mxyz - Golemagg"] = "xVermin",
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Greshnik - Dreadnaught"] = "Default",
-		["Battitude - Golemagg"] = "Default",
+		["Battitude - Golemagg"] = "xVermin",
 		["Kaonac - Jin'do"] = "Default",
 		["Wells - Jin'do"] = "Default",
 		["Konac - Dreadnaught"] = "Default",
@@ -8447,12 +8447,21 @@ Grid2DB = {
 						["r"] = 0,
 					},
 				},
-				["debuff-Poison"] = {
+				["buff-MarkoftheWild"] = {
+					["type"] = "buff",
+					["spellName"] = 1126,
+					["missing"] = true,
+					["mine"] = false,
 					["load"] = {
 						["playerClass"] = {
 							["DRUID"] = true,
-							["PALADIN"] = true,
 						},
+					},
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
 					},
 				},
 				["buff-Renew-mine"] = {
@@ -8479,14 +8488,14 @@ Grid2DB = {
 						},
 					},
 				},
-				["buff-MarkoftheWild"] = {
+				["buff-PowerWord:Fortitude"] = {
 					["type"] = "buff",
-					["spellName"] = 1126,
+					["spellName"] = "Power Word: Fortitude",
 					["missing"] = true,
 					["mine"] = false,
 					["load"] = {
 						["playerClass"] = {
-							["DRUID"] = true,
+							["PRIEST"] = true,
 						},
 					},
 					["color1"] = {
@@ -8496,21 +8505,8 @@ Grid2DB = {
 						["b"] = 1,
 					},
 				},
-				["buff-Rejuvenation-mine"] = {
-					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
-					["load"] = {
-						["playerClass"] = {
-							["DRUID"] = true,
-						},
-					},
-					["mine"] = 1,
-					["spellName"] = 1058,
+				["name"] = {
+					["defaultName"] = 1,
 				},
 				["debuff-Disease"] = {
 					["load"] = {
@@ -8520,29 +8516,21 @@ Grid2DB = {
 						},
 					},
 				},
-				["classcolor"] = {
-					["colors"] = {
-						["SHAMAN"] = {
-							["b"] = 0.67843137254902,
-							["g"] = 0.392156862745098,
-							["r"] = 0.0901960784313726,
+				["debuff-Curse"] = {
+					["load"] = {
+						["playerClass"] = {
+							["MAGE"] = true,
+							["DRUID"] = true,
+							["SHAMAN"] = true,
 						},
 					},
 				},
-				["buff-Regrowth-mine"] = {
-					["type"] = "buff",
-					["spellName"] = 8936,
-					["mine"] = 1,
+				["debuff-Poison"] = {
 					["load"] = {
 						["playerClass"] = {
 							["DRUID"] = true,
+							["PALADIN"] = true,
 						},
-					},
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 1,
 					},
 				},
 				["buff-Thorns-mine"] = {
@@ -8562,29 +8550,41 @@ Grid2DB = {
 					["mine"] = 1,
 					["spellName"] = 467,
 				},
-				["debuff-Curse"] = {
-					["load"] = {
-						["playerClass"] = {
-							["MAGE"] = true,
-							["DRUID"] = true,
-							["SHAMAN"] = true,
+				["classcolor"] = {
+					["colors"] = {
+						["SHAMAN"] = {
+							["b"] = 0.67843137254902,
+							["g"] = 0.392156862745098,
+							["r"] = 0.0901960784313726,
 						},
 					},
 				},
-				["name"] = {
-					["defaultName"] = 1,
+				["buff-Rejuvenation-mine"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["load"] = {
+						["playerClass"] = {
+							["DRUID"] = true,
+						},
+					},
+					["mine"] = 1,
+					["spellName"] = 1058,
 				},
 				["heals-incoming"] = {
 					["includePlayerHeals"] = true,
 				},
-				["buff-PowerWord:Fortitude"] = {
+				["buff-Regrowth-mine"] = {
 					["type"] = "buff",
-					["spellName"] = "Power Word: Fortitude",
-					["missing"] = true,
-					["mine"] = false,
+					["spellName"] = 8936,
+					["mine"] = 1,
 					["load"] = {
 						["playerClass"] = {
-							["PRIEST"] = true,
+							["DRUID"] = true,
 						},
 					},
 					["color1"] = {

@@ -1,8 +1,11 @@
 
 CappingSettings = {
 	["profileKeys"] = {
-		["Moolatz - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Mxyz - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
+		["Battitude - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

@@ -21,11 +21,11 @@ Postal3DB = {
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
-				"Battitude|Golemagg|Horde|5|ROGUE", -- [1]
+				"Battitude|Golemagg|Horde|6|ROGUE", -- [1]
 				"Battlearm|Golemagg|Horde|73|DEATHKNIGHT", -- [2]
 				"Battlearm|Jin'do|Horde|2|SHAMAN", -- [3]
 				"Kaonac|Jin'do|Horde|1|PRIEST", -- [4]
-				"Moolatz|Golemagg|Horde|62|DRUID", -- [5]
+				"Moolatz|Golemagg|Horde|64|DRUID", -- [5]
 				"Mxyz|Golemagg|Horde|5|PRIEST", -- [6]
 				"Mxzq|Golemagg|Horde|71|HUNTER", -- [7]
 				"Pitchwise|Ashbringer|Horde|1|SHAMAN", -- [8]

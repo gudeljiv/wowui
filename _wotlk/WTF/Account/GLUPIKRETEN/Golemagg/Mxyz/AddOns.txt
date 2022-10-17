@@ -176,7 +176,7 @@ Pawn: enabled
 TradeSkillMaster_AppHelper: enabled
 NovaWorldBuffs: disabled
 GearScoreLite: disabled
-Select: disabled
+Select: enabled
 XLoot: disabled
 XLoot_Group: disabled
 XLoot_Options: disabled

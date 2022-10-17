@@ -53,7 +53,7 @@ Bagnon_Sets = {
 			},
 			["search"] = true,
 			["bagBreak"] = false,
-			["x"] = -408.98974609375,
+			["x"] = -408.989501953125,
 			["sort"] = true,
 			["borderColor"] = {
 				0, -- [1]

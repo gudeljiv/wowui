@@ -16,17 +16,17 @@ TargetFrame:HookScript(
 				local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
 				if defensive then
 					if IsSpellInRange('Shield Bash', 'target') == 1 and select(2, GetSpellCooldown('Shield Bash')) == 0 then
-						RotationFrame2:SetBackdropColor(0, 1, 0, 1)
+						RotationFrame_INTERRUPT:SetBackdropColor(0, 1, 0, 1)
 					end
 				end
 				if berserker then
 					if IsSpellInRange('Pummel', 'target') == 1 and select(2, GetSpellCooldown('Pummel')) == 0 then
-						RotationFrame2:SetBackdropColor(0, 1, 0, 1)
+						RotationFrame_INTERRUPT:SetBackdropColor(0, 1, 0, 1)
 					end
 				end
 				if battle and IsEquippedItemType('Shields') then
 					if IsSpellInRange('Shield Bash', 'target') == 1 and select(2, GetSpellCooldown('Shield Bash')) == 0 then
-						RotationFrame2:SetBackdropColor(0, 1, 0, 1)
+						RotationFrame_INTERRUPT:SetBackdropColor(0, 1, 0, 1)
 					end
 				end
 			end
@@ -34,7 +34,7 @@ TargetFrame:HookScript(
 			-- PALADIN INTERRUPT
 			if (xVermin.Class == 'PALADIN') then
 				if select(2, GetSpellCooldown('Arcane Torrent')) == 0 and CheckInteractDistance('target', 3) then
-					RotationFrame2:SetBackdropColor(0, 1, 0, 1)
+					RotationFrame_INTERRUPT:SetBackdropColor(0, 1, 0, 1)
 				end
 			end
 
@@ -47,28 +47,31 @@ TargetFrame:HookScript(
 				local _, moonkin = GetShapeshiftFormInfo(5) -- ako je moonkin form
 				local _, tree = GetShapeshiftFormInfo(6) -- ako je tree form
 				if bear and select(2, GetSpellCooldown('Bash')) == 0 and CheckInteractDistance('target', 3) then
-					RotationFrame2:SetBackdropColor(0, 1, 0, 1)
+					RotationFrame_INTERRUPT:SetBackdropColor(0, 1, 0, 1)
+				end
+				if cat and select(2, GetSpellCooldown('Maim')) == 0 and CheckInteractDistance('target', 3) then
+					RotationFrame_INTERRUPT:SetBackdropColor(0, 1, 0, 1)
 				end
 			end
 
 			-- DEATHKNIGHT INTERRUPT
 			if (xVermin.Class == 'DEATHKNIGHT') then
 				if select(2, GetSpellCooldown('Mind Freeze')) == 0 and IsSpellInRange('Mind Freeze', 'target') == 1 then
-					RotationFrame2:SetBackdropColor(0, 1, 0, 1)
+					RotationFrame_INTERRUPT:SetBackdropColor(0, 1, 0, 1)
 				end
 			end
 
 			-- HUNTER INTERRUPT
 			if (xVermin.Class == 'HUNTER') then
 				if select(2, GetSpellCooldown('Silencing Shot')) == 0 and IsSpellInRange('Silencing Shot', 'target') == 1 then
-					RotationFrame2:SetBackdropColor(0, 1, 0, 1)
+					RotationFrame_INTERRUPT:SetBackdropColor(0, 1, 0, 1)
 				end
 				if select(2, GetSpellCooldown('Intimidation')) == 0 and IsSpellInRange('Intimidation', 'target') == 1 then
-					RotationFrame2:SetBackdropColor(0, 1, 0, 1)
+					RotationFrame_INTERRUPT:SetBackdropColor(0, 1, 0, 1)
 				end
 			end
 		else
-			RotationFrame2:SetBackdropColor(1, 1, 1, 1)
+			RotationFrame_INTERRUPT:SetBackdropColor(1, 1, 1, 1)
 		end
 	end
 )

@@ -578,14 +578,16 @@ Grid2DB = {
 					["BackgroundG"] = 0.101960784313725,
 					["BackgroundTexture"] = "None",
 					["BorderB"] = 0.501960784313726,
-					["BackgroundB"] = 0.101960784313725,
+					["minimapIcon"] = {
+						["hide"] = true,
+					},
 					["layouts"] = {
 						["party"] = "By Group & Class",
 						["raid"] = "By Group & Class",
 						["solo"] = "By Group & Class",
 						["arena"] = "By Group & Class",
 					},
-					["BorderTexture"] = "None",
+					["PosY"] = -2.655029220477445e-05,
 					["extraThemes"] = {
 						{
 							["BackgroundTexture"] = "None",
@@ -716,17 +718,15 @@ Grid2DB = {
 							["Spacing"] = 1,
 						}, -- [3]
 					},
-					["BorderG"] = 0.501960784313726,
-					["Spacing"] = 1,
+					["BorderTexture"] = "None",
+					["PosX"] = 0,
 					["BackgroundA"] = 0,
 					["BorderR"] = 0.501960784313726,
-					["PosX"] = 0,
+					["Spacing"] = 1,
 					["anchor"] = "LEFT",
+					["BorderG"] = 0.501960784313726,
 					["BackgroundR"] = 0.101960784313725,
-					["PosY"] = -2.655029220477445e-05,
-					["minimapIcon"] = {
-						["hide"] = true,
-					},
+					["BackgroundB"] = 0.101960784313725,
 				},
 			},
 		},
@@ -1583,11 +1583,11 @@ Grid2DB = {
 						}, -- [3]
 					},
 					["font"] = "Arial Narrow",
-					["frameTexture"] = "Clean",
+					["frameBorderTexture"] = "None",
 					["frameContentColor"] = {
 						["a"] = 0,
 					},
-					["frameBorderTexture"] = "None",
+					["frameTexture"] = "Clean",
 					["frameWidth"] = 120,
 					["frameBorderDistance"] = -2,
 				},
@@ -1602,7 +1602,7 @@ Grid2DB = {
 		["Mxyz - Golemagg"] = "xVermin",
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Greshnik - Dreadnaught"] = "Default",
-		["Battitude - Golemagg"] = "Default",
+		["Battitude - Golemagg"] = "xVermin",
 		["Kaonac - Jin'do"] = "Default",
 		["Wells - Jin'do"] = "Default",
 		["Pitchwise - Dreadnaught"] = "Default",
@@ -9107,22 +9107,13 @@ Grid2DB = {
 						["b"] = 0.00392156862745098,
 					},
 				},
-				["buff-MarkoftheWild"] = {
-					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
-					["missing"] = true,
+				["debuff-Poison"] = {
 					["load"] = {
 						["playerClass"] = {
+							["PALADIN"] = true,
 							["DRUID"] = true,
 						},
 					},
-					["mine"] = false,
-					["spellName"] = 1126,
 				},
 				["heals-incoming"] = {
 					["includePlayerHeals"] = true,
@@ -9176,35 +9167,6 @@ Grid2DB = {
 						},
 					},
 				},
-				["debuff-Curse"] = {
-					["load"] = {
-						["playerClass"] = {
-							["MAGE"] = true,
-							["DRUID"] = true,
-							["SHAMAN"] = true,
-						},
-					},
-				},
-				["name"] = {
-					["defaultName"] = 1,
-				},
-				["buff-Thorns-mine"] = {
-					["type"] = "buff",
-					["spellName"] = 467,
-					["missing"] = true,
-					["mine"] = 1,
-					["load"] = {
-						["playerClass"] = {
-							["DRUID"] = true,
-						},
-					},
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 1,
-					},
-				},
 				["classcolor"] = {
 					["colors"] = {
 						["SHAMAN"] = {
@@ -9230,6 +9192,35 @@ Grid2DB = {
 						["b"] = 1,
 					},
 				},
+				["buff-Thorns-mine"] = {
+					["type"] = "buff",
+					["spellName"] = 467,
+					["missing"] = true,
+					["mine"] = 1,
+					["load"] = {
+						["playerClass"] = {
+							["DRUID"] = true,
+						},
+					},
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["debuff-Curse"] = {
+					["load"] = {
+						["playerClass"] = {
+							["MAGE"] = true,
+							["DRUID"] = true,
+							["SHAMAN"] = true,
+						},
+					},
+				},
+				["name"] = {
+					["defaultName"] = 1,
+				},
 				["buff-Renew-mine"] = {
 					["type"] = "buff",
 					["color1"] = {
@@ -9246,13 +9237,22 @@ Grid2DB = {
 					},
 					["spellName"] = 139,
 				},
-				["debuff-Poison"] = {
+				["buff-MarkoftheWild"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["missing"] = true,
 					["load"] = {
 						["playerClass"] = {
-							["PALADIN"] = true,
 							["DRUID"] = true,
 						},
 					},
+					["mine"] = false,
+					["spellName"] = 1126,
 				},
 			},
 			["versions"] = {

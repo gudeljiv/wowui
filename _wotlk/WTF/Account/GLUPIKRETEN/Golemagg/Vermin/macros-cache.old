@@ -5,7 +5,6 @@ VER 3 0000000001000016 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
-/cast [@cursor] Adamantite Grenade
 /cast [@cursor] Saronite Bomb
 END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
@@ -82,4 +81,8 @@ VER 3 0000000001000018 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Heroic Strike
 /cast Bloodrage
+END
+VER 3 0000000001000019 " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@cursor] Adamantite Grenade
 END

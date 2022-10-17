@@ -185,12 +185,18 @@ with keyboard.Listener(on_press=on_press) as listener:
             #     print(hex)
 
             # matching closest class color to define in colors
-            color_distance = 1000
+            color_distance = 100
+            found_class = False
             for c in color:
                 rgb = parse_hex_color(c)
+                # print(color[c], c, rgb, clss, color_similarity(rgb, clss))
                 if color_similarity(rgb, clss) <= color_distance:
                     color_distance = color_similarity(rgb, clss)
                     hex = c
+                    found_class = True
+
+            if not found_class:
+                continue
 
             try:
                 wow_class = color[hex]
@@ -264,27 +270,28 @@ with keyboard.Listener(on_press=on_press) as listener:
                                         else:
                                             pyautogui.hotkey(skill["key"])
                                 except:
-                                    print("score, diff not found for main ability")
+                                    print("score, diff not found for main ability", ability, skill["name"])
                 except:
                     print("error skill loop")
 
                 try:
-                    for skill in skills["offgcd"][wow_class]:
-                        for ability in abilities_offgcd:
-                            if ability == skill["name"]:
+                    if skills["offgcd"] and skills["offgcd"][wow_class]:
+                        for skill in skills["offgcd"][wow_class]:
+                            for ability in abilities_offgcd:
+                                if ability == skill["name"]:
 
-                                try:
-                                    (score, diff) = structural_similarity(abilities_offgcd[ability], offgcd, full=True)
-                                    if score*100 > 90:
-                                        if dprint:
-                                            print(ability, skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                                    try:
+                                        (score, diff) = structural_similarity(abilities_offgcd[ability], offgcd, full=True)
+                                        if score*100 > 90:
+                                            if dprint:
+                                                print(ability, skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
 
-                                        if "modifier" in skill.keys():
-                                            pyautogui.hotkey(skill["modifier"],  skill["key"])
-                                        else:
-                                            pyautogui.hotkey(skill["key"])
-                                except:
-                                    print("score, diff not found for offgcd")
+                                            if "modifier" in skill.keys():
+                                                pyautogui.hotkey(skill["modifier"],  skill["key"])
+                                            else:
+                                                pyautogui.hotkey(skill["key"])
+                                    except:
+                                        print("score, diff not found for offgcd", ability, skill["name"])
                 except:
                     print("offgcd error missing class --> ", wow_class)
 
