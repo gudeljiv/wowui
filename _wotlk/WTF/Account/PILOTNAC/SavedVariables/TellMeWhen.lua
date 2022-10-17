@@ -16302,7 +16302,7 @@ TellMeWhenDB = {
 									["Operator"] = "<",
 								}, -- [2]
 								{
-									["Name"] = "-- not behind target\nlocal red, green, blue, alpha = RotationFrame4:GetBackdropColor()\n\nif ceil(red) == 1 and ceil(green) == 1 and ceil(blue) == 1 then\n    return true\nend",
+									["Name"] = "-- not behind target\nlocal red, green, blue, alpha = RotationFrame_BEHIND:GetBackdropColor()\n\nif ceil(red) == 1 and ceil(green) == 1 and ceil(blue) == 1 then\n    return true\nend",
 									["Type"] = "LUA",
 								}, -- [3]
 								{
@@ -16373,7 +16373,7 @@ TellMeWhenDB = {
 									["Type"] = "STANCE",
 								}, -- [1]
 								{
-									["Name"] = "-- behind target\nlocal red, green, blue, alpha = RotationFrame4:GetBackdropColor()\n\nif ceil(red) == 0 and ceil(green) == 0 and ceil(blue) == 1 then\n    return true\nend",
+									["Name"] = "-- behind target\nlocal red, green, blue, alpha = RotationFrame_BEHIND:GetBackdropColor()\n\nif ceil(red) == 0 and ceil(green) == 0 and ceil(blue) == 1 then\n    return true\nend",
 									["Type"] = "LUA",
 								}, -- [2]
 								{

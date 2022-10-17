@@ -14271,7 +14271,7 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["subeventPrefix"] = "SPELL",
 						["custom_hide"] = "timed",
-						["custom"] = "function()\n    local red, green, blue, alpha = RotationFrame6:GetBackdropColor()\n    if xRound(red,2) == 0 and xRound(green,2) == 1 and xRound(blue,2) == 0.5 then\n        return true\n    end\nend\n\n\n",
+						["custom"] = "function()\n    local red, green, blue, alpha = RotationFrame_AOERANGECASTING:GetBackdropColor()\n    if xRound(red,2) == 0 and xRound(green,2) == 1 and xRound(blue,2) == 0.5 then\n        return true\n    end\nend\n\n\n",
 						["spellIds"] = {
 						},
 						["custom_type"] = "stateupdate",

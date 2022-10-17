@@ -60,11 +60,11 @@ xVermin.AOE = function(range)
 		end
 	end
 	if xVermin.rangecasting > 0 then
-		RotationFrame6:SetBackdropColor(0, 1, 0.5, 1)
+		RotationFrame_AOERANGECASTING:SetBackdropColor(0, 1, 0.5, 1)
 		xVermin.R6_Occupied = true
 	else
 		xVermin.R6_Occupied = false
-		RotationFrame6:SetBackdropColor(1, 1, 1, 1)
+		RotationFrame_AOERANGECASTING:SetBackdropColor(1, 1, 1, 1)
 	end
 	return inRange
 end
@@ -101,7 +101,7 @@ aoe.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassC
 
 local aoe_number
 xVermin.CheckIfLoadedWithTimer(
-	'RotationFrame1',
+	'RotationFrame_AOE',
 	function()
 		-- white -> skip
 		-- green -> single target
@@ -109,7 +109,7 @@ xVermin.CheckIfLoadedWithTimer(
 		PlayerFrame:HookScript(
 			'OnUpdate',
 			function()
-				-- local red, green, blue, alpha = RotationFrame6:GetBackdropColor()
+				-- local red, green, blue, alpha = RotationFrame_AOERANGECASTING:GetBackdropColor()
 				-- ChatFrame7:AddMessage(xVermin.Round(red, 2) .. ' ' .. xVermin.Round(green, 2) .. ' ' .. xVermin.Round(blue, 2))
 
 				haveBuff = false
@@ -125,17 +125,17 @@ xVermin.CheckIfLoadedWithTimer(
 
 				aoe_number = 0
 				if IsAltKeyDown() or ChatFrame1EditBox:IsVisible() or IsMounted() or haveBuff then
-					RotationFrame1:SetBackdropColor(1, 1, 1, 1) -- white
+					RotationFrame_AOE:SetBackdropColor(1, 1, 1, 1) -- white
 				else
 					if InCombatLockdown() then
 						aoe_number = xVermin.AOE(skills_range[xVermin.Class])
 						if aoe_number > 1 then
-							RotationFrame1:SetBackdropColor(1, 0, 0, 1) -- red --> DO AOE
+							RotationFrame_AOE:SetBackdropColor(1, 0, 0, 1) -- red --> DO AOE
 						else
-							RotationFrame1:SetBackdropColor(0, 1, 0, 1) -- green --> DO SINGLE TARGET
+							RotationFrame_AOE:SetBackdropColor(0, 1, 0, 1) -- green --> DO SINGLE TARGET
 						end
 					else
-						RotationFrame1:SetBackdropColor(1, 1, 1, 1) -- white --> OOC
+						RotationFrame_AOE:SetBackdropColor(1, 1, 1, 1) -- white --> OOC
 					end
 				end
 				aoe.text:SetText(aoe_number)
