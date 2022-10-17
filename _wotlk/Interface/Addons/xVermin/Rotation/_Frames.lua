@@ -77,7 +77,7 @@ f:SetBackdrop(
 )
 f:SetBackdropColor(1, 1, 1, 1)
 
-f = CreateFrame('Frame', 'RotationFrame_UNUSED', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
+f = CreateFrame('Frame', 'RotationFrame_CLASS', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
 f:SetFrameStrata('TOOLTIP')
 f:SetWidth(7)
 f:SetHeight(7)

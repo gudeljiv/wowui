@@ -20,6 +20,7 @@ from os import listdir
 from os.path import exists
 from skimage.metrics import structural_similarity
 from win32api import GetSystemMetrics
+from datetime import datetime
 
 combat = False
 debug = False
@@ -86,7 +87,7 @@ for skill in skills["offgcd"][wow_class]:
     abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
 
 skills_loaded = "warrior"
-print("Script loaded and ready.", "Rotation is paused.", "Monitor:", screen_width, screen_height)
+print("Script loaded and ready.", "Rotation is paused.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"))
 
 
 def on_press(key):
@@ -185,7 +186,7 @@ with keyboard.Listener(on_press=on_press) as listener:
             #     print(hex)
 
             # matching closest class color to define in colors
-            color_distance = 100
+            color_distance = 50
             found_class = False
             for c in color:
                 rgb = parse_hex_color(c)
@@ -204,7 +205,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                 wow_class = "warrior"
 
             if skills_loaded != wow_class:
-                print("class changed --> ", skills_loaded, wow_class)
+                print("class changed: ", skills_loaded, "->", wow_class, "..", hex, clss, color_distance, color[hex], datetime.now().strftime("%H:%M:%S"))
                 abilities = {}
                 skills_loaded = wow_class
                 for skill in skills[wow_class]:
@@ -212,14 +213,14 @@ with keyboard.Listener(on_press=on_press) as listener:
                         abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
                         abilities = {**abilities, **healing}
                     except:
-                        print("missing spell in " + wow_class + " --> " + skill["name"])
+                        print("missing spell in " + wow_class + " --> " + skill["name"], datetime.now().strftime("%H:%M:%S"))
 
                 abilities_offgcd = {}
                 try:
                     for skill in skills["offgcd"][wow_class]:
                         abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
                 except:
-                    print("offgcd error missing class --> ", wow_class)
+                    print("offgcd error missing class --> ", wow_class, datetime.now().strftime("%H:%M:%S"))
 
             # print(clss, '#%02x%02x%02x' % clss, wow_class)
             # print(hex, combat, interrupt, wow_class)
@@ -243,7 +244,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                 # white --> green
                 if interrupt == (0, 255, 0):
                     if dprint:
-                        print("interrupt", "f9", f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                        print("interrupt", "f9", f"Finish in: {round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S"))
                     pyautogui.hotkey("f9")
 
                 grabbed = cv2.cvtColor(numpy.array(main_image), cv2.COLOR_BGR2GRAY)
@@ -263,16 +264,16 @@ with keyboard.Listener(on_press=on_press) as listener:
                                     (score, diff) = structural_similarity(abilities[ability], grabbed, full=True)
                                     if score*100 > 90:
                                         if dprint:
-                                            print(ability, skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                                            print(ability, skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S"))
 
                                         if "modifier" in skill.keys():
                                             pyautogui.hotkey(skill["modifier"],  skill["key"])
                                         else:
                                             pyautogui.hotkey(skill["key"])
                                 except:
-                                    print("score, diff not found for main ability", ability, skill["name"])
+                                    print("score, diff not found for main ability", ability, skill["name"], datetime.now().strftime("%H:%M:%S"))
                 except:
-                    print("error skill loop")
+                    print("error skill loop", datetime.now().strftime("%H:%M:%S"))
 
                 try:
                     if skills["offgcd"] and skills["offgcd"][wow_class]:
@@ -284,16 +285,17 @@ with keyboard.Listener(on_press=on_press) as listener:
                                         (score, diff) = structural_similarity(abilities_offgcd[ability], offgcd, full=True)
                                         if score*100 > 90:
                                             if dprint:
-                                                print(ability, skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                                                print(ability, skill["name"], skill["key"], score*100,
+                                                      f"Finish in: {round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S"))
 
                                             if "modifier" in skill.keys():
                                                 pyautogui.hotkey(skill["modifier"],  skill["key"])
                                             else:
                                                 pyautogui.hotkey(skill["key"])
                                     except:
-                                        print("score, diff not found for offgcd", ability, skill["name"])
+                                        print("score, diff not found for offgcd", ability, skill["name"], datetime.now().strftime("%H:%M:%S"))
                 except:
-                    print("offgcd error missing class --> ", wow_class)
+                    print("offgcd error missing class --> ", wow_class, datetime.now().strftime("%H:%M:%S"))
 
             # if debug:
             #     time.sleep(0.5)

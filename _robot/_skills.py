@@ -21,6 +21,7 @@ skills["offgcd"]["warrior"] = [
 
 skills["offgcd"]["druid"] = [
     {"name": "maul", "key": "1"},
+    {"name": "natures grasp", "key": "f", "modifier": "alt"},
 ]
 
 skills["offgcd"]["death knight"] = [
@@ -95,11 +96,12 @@ skills["druid"] = [
     {"name": "rake", "key": "3"},
     {"name": "faerie fire", "key": "e"},
     {"name": "ferocious bite", "key": "4"},
-    {"name": "pounce", "key": "1"},
+    # {"name": "pounce", "key": "1"},
     {"name": "tigers fury", "key": "6"},
     {"name": "barkskin", "key": "g"},
     {"name": "mangle", "key": "f3", "modifier": "ctrl"},
     {"name": "survival instincts", "key": "d", "modifier": "alt"},
+    {"name": "lacerate", "key": "3"},
 ]
 
 skills["death knight"] = [

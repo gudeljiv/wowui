@@ -72,3 +72,8 @@ VER 3 0000000001000015 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,exists,nodead][help][] Regrowth
 END
+VER 3 0000000001000016 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast [@mouseover,exists,nodead][help][] Faerie Fire (Feral)
+END
