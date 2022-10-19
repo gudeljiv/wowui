@@ -111,7 +111,6 @@ ItemRackUser = {
 	["CurrentSet"] = "heal",
 	["SetMenuWrap"] = "OFF",
 	["ItemsUsed"] = {
-		["28041"] = 5,
 	},
 	["Events"] = {
 		["Enabled"] = {

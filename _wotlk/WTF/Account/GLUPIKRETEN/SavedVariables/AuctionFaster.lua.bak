@@ -435,74 +435,7 @@ AuctionFasterDb = {
 	["pricing"] = {
 		["maxBidDeviation"] = 20,
 	},
-	["favorites"] = {
-		{
-			["text"] = "Icethorn",
-		}, -- [1]
-		{
-			["text"] = "Lichbloom",
-		}, -- [2]
-		{
-			["text"] = "Adder's Tongue",
-		}, -- [3]
-		{
-			["text"] = "Goldclover",
-		}, -- [4]
-		{
-			["text"] = "Talandra's Rose",
-		}, -- [5]
-		{
-			["text"] = "Tiger Lily",
-		}, -- [6]
-		{
-			["text"] = "Eternal Life",
-		}, -- [7]
-		{
-			["text"] = "Crystallized Life",
-		}, -- [8]
-		{
-			["text"] = "Saronite Ore",
-		}, -- [9]
-		{
-			["text"] = "Saronite Bar",
-		}, -- [10]
-		{
-			["text"] = "Greater Cosmic Essence",
-		}, -- [11]
-		{
-			["text"] = "Lesser Cosmic Essence",
-		}, -- [12]
-		{
-			["text"] = "Infinite Dust",
-		}, -- [13]
-		{
-			["text"] = "Greater Planar Essence",
-		}, -- [14]
-		{
-			["text"] = "Lesser Planar Essence",
-		}, -- [15]
-		{
-			["text"] = "Arcane Dust",
-		}, -- [16]
-		{
-			["text"] = "Mithril Ore",
-		}, -- [17]
-		{
-			["text"] = "Mithril Bar",
-		}, -- [18]
-		{
-			["text"] = "Crystallized Fire",
-		}, -- [19]
-		{
-			["text"] = "Eternal Fire",
-		}, -- [20]
-		{
-			["text"] = "Aquamarine",
-		}, -- [21]
-		{
-			["text"] = "Iron Ore",
-		}, -- [22]
-	},
+	["fastMode"] = true,
 	["sniper"] = {
 		["refreshInterval"] = 5,
 	},
@@ -11990,44 +11923,44 @@ AuctionFasterDb = {
 			["icon"] = 237465,
 			["itemId"] = 36329,
 		},
-		["41119Saronite Bomb"] = {
-			["stackSize"] = 20,
-			["itemName"] = "Saronite Bomb",
+		["31877Design: Infused Nightseye"] = {
+			["stackSize"] = 1,
+			["itemName"] = "Design: Infused Nightseye",
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
-					["weightedTotalBid"] = 1320763,
-					["totalQty"] = 910,
+					["weightedTotalBid"] = 444904,
+					["totalQty"] = 2,
 					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 910,
-					["weightedAverageBuy"] = 1540,
-					["totalBuy"] = 77569,
-					["lowestBuy"] = 1294,
-					["totalBid"] = 73301,
-					["weightedTotalBuy"] = 1401549,
-					["estimatedVolume"] = 2693.6,
-					["highestBid"] = 1690,
-					["weightedAverageBid"] = 1451,
-					["highestBuy"] = 1691,
-					["totalItems"] = 148,
-					["scanTime"] = 1665566781,
-					["lowestBid"] = 963,
-					["averageBid"] = 1466,
+					["totalQtyWithBuy"] = 2,
+					["weightedAverageBuy"] = 234159,
+					["totalBuy"] = 468321,
+					["lowestBuy"] = 234159,
+					["totalBid"] = 444904,
+					["weightedTotalBuy"] = 468319,
+					["estimatedVolume"] = 2,
+					["averageBid"] = 222452,
+					["lowestBid"] = 222452,
+					["totalItems"] = 2,
+					["scanTime"] = 1665074852,
+					["highestBuy"] = 234160,
+					["weightedAverageBid"] = 222452,
+					["highestBid"] = 222452,
 				}, -- [1]
 			},
-			["lastScanTime"] = 1665566781,
+			["lastScanTime"] = 1665074852,
 			["settings"] = {
-				["priceModel"] = "Simple",
+				["priceModel"] = "WeightedAverage",
 				["rememberLastPrice"] = false,
-				["alwaysUndercut"] = true,
 				["useCustomDuration"] = false,
-				["rememberStack"] = true,
 				["duration"] = 3,
+				["rememberStack"] = true,
+				["alwaysUndercut"] = true,
 			},
-			["bid"] = 1034,
-			["buy"] = 1293,
-			["icon"] = 237295,
-			["itemId"] = 41119,
+			["bid"] = 222452,
+			["itemId"] = 31877,
+			["icon"] = 134941,
+			["buy"] = 234159,
 		},
 		["33460Scroll of Spirit VI"] = {
 			["prices"] = {
@@ -13084,44 +13017,44 @@ AuctionFasterDb = {
 			["icon"] = 134576,
 			["buy"] = 9899,
 		},
-		["31877Design: Infused Nightseye"] = {
-			["stackSize"] = 1,
-			["itemName"] = "Design: Infused Nightseye",
+		["41119Saronite Bomb"] = {
+			["stackSize"] = 20,
+			["itemName"] = "Saronite Bomb",
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
-					["weightedTotalBid"] = 444904,
-					["totalQty"] = 2,
+					["weightedTotalBid"] = 1320763,
+					["totalQty"] = 910,
 					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 2,
-					["weightedAverageBuy"] = 234159,
-					["totalBuy"] = 468321,
-					["lowestBuy"] = 234159,
-					["totalBid"] = 444904,
-					["weightedTotalBuy"] = 468319,
-					["estimatedVolume"] = 2,
-					["averageBid"] = 222452,
-					["lowestBid"] = 222452,
-					["totalItems"] = 2,
-					["scanTime"] = 1665074852,
-					["highestBuy"] = 234160,
-					["weightedAverageBid"] = 222452,
-					["highestBid"] = 222452,
+					["totalQtyWithBuy"] = 910,
+					["weightedAverageBuy"] = 1540,
+					["totalBuy"] = 77569,
+					["lowestBuy"] = 1294,
+					["totalBid"] = 73301,
+					["weightedTotalBuy"] = 1401549,
+					["estimatedVolume"] = 2693.6,
+					["highestBid"] = 1690,
+					["weightedAverageBid"] = 1451,
+					["highestBuy"] = 1691,
+					["totalItems"] = 148,
+					["scanTime"] = 1665566781,
+					["lowestBid"] = 963,
+					["averageBid"] = 1466,
 				}, -- [1]
 			},
-			["lastScanTime"] = 1665074852,
+			["lastScanTime"] = 1665566781,
 			["settings"] = {
-				["priceModel"] = "WeightedAverage",
+				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
-				["useCustomDuration"] = false,
-				["duration"] = 3,
-				["rememberStack"] = true,
 				["alwaysUndercut"] = true,
+				["useCustomDuration"] = false,
+				["rememberStack"] = true,
+				["duration"] = 3,
 			},
-			["bid"] = 222452,
-			["itemId"] = 31877,
-			["icon"] = 134941,
-			["buy"] = 234159,
+			["bid"] = 1034,
+			["buy"] = 1293,
+			["icon"] = 237295,
+			["itemId"] = 41119,
 		},
 		["36328Halgrind Legplates of the Whale"] = {
 			["prices"] = {
@@ -15004,6 +14937,73 @@ AuctionFasterDb = {
 			["buy"] = 14986,
 		},
 	},
-	["fastMode"] = true,
+	["favorites"] = {
+		{
+			["text"] = "Icethorn",
+		}, -- [1]
+		{
+			["text"] = "Lichbloom",
+		}, -- [2]
+		{
+			["text"] = "Adder's Tongue",
+		}, -- [3]
+		{
+			["text"] = "Goldclover",
+		}, -- [4]
+		{
+			["text"] = "Talandra's Rose",
+		}, -- [5]
+		{
+			["text"] = "Tiger Lily",
+		}, -- [6]
+		{
+			["text"] = "Eternal Life",
+		}, -- [7]
+		{
+			["text"] = "Crystallized Life",
+		}, -- [8]
+		{
+			["text"] = "Saronite Ore",
+		}, -- [9]
+		{
+			["text"] = "Saronite Bar",
+		}, -- [10]
+		{
+			["text"] = "Greater Cosmic Essence",
+		}, -- [11]
+		{
+			["text"] = "Lesser Cosmic Essence",
+		}, -- [12]
+		{
+			["text"] = "Infinite Dust",
+		}, -- [13]
+		{
+			["text"] = "Greater Planar Essence",
+		}, -- [14]
+		{
+			["text"] = "Lesser Planar Essence",
+		}, -- [15]
+		{
+			["text"] = "Arcane Dust",
+		}, -- [16]
+		{
+			["text"] = "Mithril Ore",
+		}, -- [17]
+		{
+			["text"] = "Mithril Bar",
+		}, -- [18]
+		{
+			["text"] = "Crystallized Fire",
+		}, -- [19]
+		{
+			["text"] = "Eternal Fire",
+		}, -- [20]
+		{
+			["text"] = "Aquamarine",
+		}, -- [21]
+		{
+			["text"] = "Iron Ore",
+		}, -- [22]
+	},
 	["defaultTab"] = "NONE",
 }

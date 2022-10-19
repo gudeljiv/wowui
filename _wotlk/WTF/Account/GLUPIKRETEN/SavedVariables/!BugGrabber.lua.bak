@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 7056,
+	["session"] = 7062,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -5104,21 +5104,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [653]
 		{
-			["message"] = "...ns\\TradeSkillMaster\\Core\\Service\\MyAuctions\\Core.lua:167: attempt to index field 'pendingFuture' (a nil value)",
-			["time"] = "2022/10/14 11:41:45",
-			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'pendingFuture' (a nil value)\"\nprivate = <table> {\n pendingDB = <table> {\n }\n AuctionHouseShowEventHandler = <function> defined @Interface\\AddOns\\TradeSkillMaster\\Core\\Service\\MyAuctions\\Core.lua:135\n ahOpen = true\n expectedCounts = <table> {\n }\n UIErrorMessageEventHandler = <function> defined @Interface\\AddOns\\TradeSkillMaster\\Core\\Service\\MyAuctions\\Core.lua:155\n pendingHashes = <table> {\n }\n auctionInfo = <table> {\n }\n AuctionHouseHideEventHandler = <function> defined @Interface\\AddOns\\TradeSkillMaster\\Core\\Service\\MyAuctions\\Core.lua:139\n dbHashFields = <table> {\n }\n ChatMsgSystemEventHandler = <function> defined @Interface\\AddOns\\TradeSkillMaster\\Core\\Service\\MyAuctions\\Core.lua:147\n GetNumRowsByHash = <function> defined @Interface\\AddOns\\TradeSkillMaster\\Core\\Service\\MyAuctions\\Core.lua:183\n PendingFutureOnDone = <function> defined @Interface\\AddOns\\TradeSkillMaster\\Core\\Service\\MyAuctions\\Core.lua:166\n OnAuctionsUpdated = <function> defined @Interface\\AddOns\\TradeSkillMaster\\Core\\Service\\MyAuctions\\Core.lua:189\n}\nLog = <table> {\n PrintUser = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:124\n PrintfUser = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:128\n PrintUserRaw = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:116\n Warn = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:108\n SetCurrentThreadNameFunction = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:65\n Length = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:69\n ColorUserAccentText = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:132\n LowerStackLevel = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:83\n PrintfUserRaw = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:120\n RaiseStackLevel = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:79\n StackTrace = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:87\n Info = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:104\n SetLoggingToChatEnabled = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:43\n Trace = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:100\n Err = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:112\n SetChatFrame = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:39\n Get = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:73\n}\nAuctionTracking = <table> {\n CreateQueryUnsoldItem = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionTracking.lua:254\n GetSaleHintItemString = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionTracking.lua:266\n CreateQueryUnsold = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionTracking.lua:249\n RegisterCallback = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionTracking.lua:227\n QueryOwnedAuctions = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionTracking.lua:279\n GetQuantityByLevelItemString = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionTracking.lua:275\n DatabaseFieldIterator = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionTracking.lua:235\n RegisterExpiresCallback = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionTracking.lua:231\n ItemIterator = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionTracking.lua:239\n CreateQuery = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionTracking.lua:245\n}\n",
-			["stack"] = "[string \"@Interface\\AddOns\\TradeSkillMaster\\Core\\Service\\MyAuctions\\Core.lua\"]:167: in function `onDone'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Future.lua\"]:58: in function `Done'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionHouseWrapper.lua\"]:598: in function <...deSkillMaster\\LibTSM\\Service\\AuctionHouseWrapper.lua:585>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionHouseWrapper.lua\"]:528: in function <...deSkillMaster\\LibTSM\\Service\\AuctionHouseWrapper.lua:519>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionHouseWrapper.lua\"]:758: in function `EventHandlerHelper'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionHouseWrapper.lua\"]:738: in function `callback'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua\"]:85: in function `ProcessEvent'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua\"]:101: in function <...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua:93>",
-			["session"] = 6970,
-			["counter"] = 2,
-		}, -- [654]
-		{
 			["message"] = "...nterface\\AddOns\\AuctionFaster\\tabs\\buy\\functions.lua:154: attempt to perform arithmetic on field 'lastPage' (a nil value)",
 			["time"] = "2022/10/06 20:43:52",
 			["locals"] = "self = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:367\n AddToFavorites = <function> defined @Interface\\AddOns\\AuctionFaster\\tabs\\buy\\functions.lua:189\n EnableModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:332\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\AuctionFaster\\Libs\\AceTimer-3.0\\AceTimer-3.0.lua:147\n IterateEmbeds = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:442\n SecureHook = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceHook-3.0\\AceHook-3.0.lua:336\n RawHookScript = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceHook-3.0\\AceHook-3.0.lua:395\n OnShow = <function> defined @Interface\\AddOns\\AuctionFaster\\tabs\\buy\\functions.lua:45\n UpdateFavoriteFrame = <function> defined @Interface\\AddOns\\AuctionFaster\\tabs\\buy\\ui.lua:250\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:409\n AUCTION_HOUSE_SHOW = <function> defined @Interface\\AddOns\\AuctionFaster\\tabs\\buy\\functions.lua:27\n tutorials = <table> {\n }\n defaultModuleState = true\n DrawSearchPane = <function> defined @Interface\\AddOns\\AuctionFaster\\tabs\\buy\\ui.lua:41\n ScheduleTimer = <function> defined @Interface\\AddOns\\AuctionFaster\\Libs\\AceTimer-3.0\\AceTimer-3.0.lua:94\n DisableModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:350\n DrawSniperFrame = <function> defined @Interface\\AddOns\\AuctionFaster\\tabs\\buy\\sniper.lua:12\n RegisterMessage = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n UnregisterMessage = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:153\n IsHooked = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceHook-3.0\\AceHook-3.0.lua:493\n AUCTION_ITEM_LIST_UPDATE = <function> defined @Interface\\AddOns\\AuctionFaster\\tabs\\buy\\functions.lua:265\n sniperTimer = <table> {\n }\n updatingPagerLock = false\n helpBtn = <unnamed> {\n }\n ToggleFilterFrame = <function> defined @Interface\\AddOns\\AuctionFaster\\tabs\\buy\\filters.lua:84\n HookScript = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceHook-3.0\\AceHook-3.0.lua:366\n linksIntercepted = true\n SetEnabledState = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:424\n Hook = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceHook-3.0\\AceHook-3.0.lua:274\n enabledState = false\n buyTabAdded = true\n RegisterEvent = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n sniperPane = <unnamed> {\n }\n DrawFilterFrame = <function> defined @Interface\\AddOns\\AuctionFaster\\tabs\\buy\\filters.lua:11\n filtersPane = <unnamed> {\n }\n subCategories = <table> {\n }\n IterateModules = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:437\n SearchFavorite = <function> defined @Interface\\AddOns\\AuctionFaster\\tabs\\buy\\functions.lua:220\n RawHook = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceHook-3.0\\AceHook-3.0.lua:313\n SearchStacksCallback = <function> defined @Interface\\AddOns\\AuctionFaster\\tabs\\buy\\functions.lua:339\n buyTab = <unnamed> {\n }\n DrawSearchResultsTable = <function> defined @Interface\\AddOns\\AuctionFaster\\tabs\\buy\\ui.lua:255\n baseName = \"AuctionFaster\"\n CreateFavoriteFrame = <function> defined @Interface\\AddOns\\AuctionFaster\\tabs\\buy\\ui.lua:226\n SniperTimerFeedback = <function> defined @Interface\\AddOns\\AuctionFaster\\tabs\\buy\\sniper.lua:81\n InterceptLinkClick = <function> defined @Interface\\AddOns\\AuctionFaster\\tabs\\buy\\functions.lua:457\n AddBuyAuctionHouseTab = <function> defined @Interface\\AddOns\\AuctionFaster\\tabs\\buy\\ui.lua:11\n Enable = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:294\n UnregisterAllEvents = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:174\n LockBuyButton = <function> defined @Interface\\AddOns\\AuctionFaster\\tabs\\buy\\functions.lua:255\n GetSe",
 			["stack"] = "[string \"@Interface\\AddOns\\AuctionFaster\\tabs\\buy\\functions.lua\"]:154: in function `UpdatePager'\n[string \"@Interface\\AddOns\\AuctionFaster\\tabs\\buy\\functions.lua\"]:52: in function `OnShow'\n[string \"@Interface\\AddOns\\AuctionFaster\\tabs\\buy\\ui.lua\"]:19: in function <Interface\\AddOns\\AuctionFaster\\tabs\\buy\\ui.lua:18>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_Wrath\\FrameXML\\UIParent.lua\"]:2214: in function `SetUIPanel'\n[string \"@Interface_Wrath\\FrameXML\\UIParent.lua\"]:2036: in function `ShowUIPanel'\n[string \"@Interface_Wrath\\FrameXML\\UIParent.lua\"]:1927: in function <Interface_Wrath\\FrameXML\\UIParent.lua:1923>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface_Wrath\\FrameXML\\UIParent.lua\"]:2718: in function `ShowUIPanel'\n[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:172: in function `AuctionFrame_Show'\n[string \"@Interface_Wrath\\FrameXML\\UIParent.lua\"]:1231: in function `UIParent_OnEvent'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\Core\\UI\\AuctionUI\\Core.lua\"]:285: in function `_onClickHandler'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\ActionButton.lua\"]:349: in function `?'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua\"]:86: in function `ScriptHandlerCommon'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua\"]:37: in function <...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:36>",
 			["session"] = 6973,
 			["counter"] = 4,
-		}, -- [655]
+		}, -- [654]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Helpers/FastLoot.lua:24: attempt to concatenate upvalue 'fastloot' (a boolean value)",
 			["time"] = "2022/10/14 13:09:14",
@@ -5126,21 +5118,21 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Helpers/FastLoot.lua\"]:24: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 6979,
 			["counter"] = 2,
-		}, -- [656]
+		}, -- [655]
 		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'unitscan' tried to call the protected function 'UNKNOWN()'.",
 			["time"] = "2022/09/25 11:24:28",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:42: in function `target'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:273: in function `UPDATE'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:3: in function <Interface\\AddOns\\unitscan\\unitscan.lua:3>",
 			["session"] = 6982,
 			["counter"] = 11,
-		}, -- [657]
+		}, -- [656]
 		{
 			["message"] = "...nterface\\AddOns\\AuctionFaster\\tabs\\buy\\functions.lua:268: attempt to index field 'currentQuery' (a nil value)",
 			["time"] = "2022/10/10 10:53:17",
 			["stack"] = "[string \"@Interface\\AddOns\\AuctionFaster\\tabs\\buy\\functions.lua\"]:268: in function `?'\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:119: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `Fire'\n[string \"@Interface\\AddOns\\AuctionFaster\\Libs\\AceEvent-3.0\\AceEvent-3.0-4.lua\"]:120: in function <...Ons\\AuctionFaster\\Libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 6984,
 			["counter"] = 30,
-		}, -- [658]
+		}, -- [657]
 		{
 			["message"] = "[string \"SetBindingClick('CTRL-ALT-O', F1:GetName())\"]:1: attempt to index global 'F1' (a nil value)",
 			["time"] = "2022/10/14 16:48:51",
@@ -5148,14 +5140,14 @@ BugGrabberDB = {
 			["stack"] = "[string \"SetBindingClick('CTRL-ALT-O', F1:GetName())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 6990,
 			["counter"] = 1,
-		}, -- [659]
+		}, -- [658]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'SetBinding()'.",
 			["time"] = "2022/10/14 17:23:14",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:480: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:480>\n[string \"=[C]\"]: in function `SetBinding'\n[string \"@Interface\\AddOns\\xVermin\\Helpers/Bindings.lua\"]:168: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 6992,
 			["counter"] = 1,
-		}, -- [660]
+		}, -- [659]
 		{
 			["message"] = "[string \"PlayerXP.XPbar.RestedNumber:SetPoint('RIGHT...\"]:1: attempt to index global 'PlayerXP' (a nil value)",
 			["time"] = "2022/10/15 09:45:22",
@@ -5163,7 +5155,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"PlayerXP.XPbar.RestedNumber:SetPoint('RIGHT', PlayerXP.XPbar, 'RIGHT', 2, -12)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 7011,
 			["counter"] = 1,
-		}, -- [661]
+		}, -- [660]
 		{
 			["message"] = "[string \"PlayerXPFrameStatusBar.RestedNumber:SetPoin...\"]:1: attempt to index global 'PlayerXP' (a nil value)",
 			["time"] = "2022/10/15 09:47:29",
@@ -5171,7 +5163,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"PlayerXPFrameStatusBar.RestedNumber:SetPoint('RIGHT', PlayerXP.XPbar, 'RIGHT', 2, -14)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 7012,
 			["counter"] = 1,
-		}, -- [662]
+		}, -- [661]
 		{
 			["message"] = "Interface\\AddOns\\InspectEquip\\Tooltips.lua:238: hooksecurefunc(): SetHyperlinkCompareItem is not a function",
 			["time"] = "2022/10/15 13:37:18",
@@ -5179,7 +5171,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `hooksecurefunc'\n[string \"@Interface\\AddOns\\InspectEquip\\Tooltips.lua\"]:238: in function <Interface\\AddOns\\InspectEquip\\Tooltips.lua:236>\n[string \"@Interface\\AddOns\\InspectEquip\\Tooltips.lua\"]:269: in function `?'\n[string \"@Interface\\AddOns\\AuctionFaster\\Libs\\AceTimer-3.0\\AceTimer-3.0-17.lua\"]:55: in function <...Ons\\AuctionFaster\\Libs\\AceTimer-3.0\\AceTimer-3.0.lua:50>",
 			["session"] = 7018,
 			["counter"] = 1,
-		}, -- [663]
+		}, -- [662]
 		{
 			["message"] = "Interface\\AddOns\\InspectEquip\\LocalDatabase.lua:63: attempt to call method 'SetBackdrop' (a nil value)",
 			["time"] = "2022/10/15 13:37:18",
@@ -5187,14 +5179,14 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\InspectEquip\\LocalDatabase.lua\"]:63: in function <Interface\\AddOns\\InspectEquip\\LocalDatabase.lua:55>\n[string \"@Interface\\AddOns\\InspectEquip\\LocalDatabase.lua\"]:526: in function `?'\n[string \"@Interface\\AddOns\\AuctionFaster\\Libs\\AceTimer-3.0\\AceTimer-3.0-17.lua\"]:55: in function <...Ons\\AuctionFaster\\Libs\\AceTimer-3.0\\AceTimer-3.0.lua:50>",
 			["session"] = 7018,
 			["counter"] = 1,
-		}, -- [664]
+		}, -- [663]
 		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'GatherMate2' tried to call the protected function 'ReportPlayerIsPVPAFK()'.",
 			["time"] = "2022/10/15 13:27:45",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:480: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:480>\n[string \"=[C]\"]: in function `ReportPlayerIsPVPAFK'\n[string \"@Interface\\AddOns\\Blizzard_SharedMapDataProviders\\GroupMembersDataProvider.lua\"]:201: in function `func'\n[string \"@Interface\\FrameXML\\UIDropDownMenu.lua\"]:944: in function `UIDropDownMenuButton_OnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 7019,
 			["counter"] = 2,
-		}, -- [665]
+		}, -- [664]
 		{
 			["message"] = "Interface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:240: Usage: GetItemQualityColor(index)",
 			["time"] = "2022/10/15 15:13:00",
@@ -5202,14 +5194,14 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `GetItemQualityColor'\n[string \"@Interface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua\"]:240: in function `UpdateInv'\n[string \"@Interface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua\"]:207: in function `ChangeEditingSet'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRackEquip.lua\"]:251: in function `EndSetSwap'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRackEquip.lua\"]:129: in function `EquipSet'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:1975: in function `RunSetBinding'\n[string \"ItemRack.RunSetBinding(\"dps\")\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2977: in function <Interface\\FrameXML\\ChatFrame.lua:2970>\n[string \"=[C]\"]: in function `RunMacroText'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:429: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function <Interface\\FrameXML\\SecureTemplates.lua:569>",
 			["session"] = 7020,
 			["counter"] = 74,
-		}, -- [666]
+		}, -- [665]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Questie' tried to call the protected function 'Questie_TrackedAchievements:SetHeight()'.",
 			["time"] = "2022/10/15 15:22:21",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:480: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:480>\n[string \"=[C]\"]: in function `SetHeight'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\AchievementTracker.lua\"]:67: in function `LoadAchievements'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\AchievementTracker.lua\"]:96: in function <...ddOns\\Questie\\Modules\\Tracker\\AchievementTracker.lua:89>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `Fire'\n[string \"@Interface\\AddOns\\AuctionFaster\\Libs\\AceEvent-3.0\\AceEvent-3.0-4.lua\"]:120: in function <...Ons\\AuctionFaster\\Libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 7021,
 			["counter"] = 1,
-		}, -- [667]
+		}, -- [666]
 		{
 			["message"] = "Usage: CastSpellByName(name[, target])",
 			["time"] = "2022/05/20 18:39:50",
@@ -5217,7 +5209,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `CastSpellByName'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:997: in function <Interface\\FrameXML\\ChatFrame.lua:925>\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:1236: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4880: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:14: in function `MultiActionButtonDown'\n[string \"MULTIACTIONBAR4BUTTON11\"]:2: in function <[string \"MULTIACTIONBAR4BUTTON11\"]:1>",
 			["session"] = 7030,
 			["counter"] = 12,
-		}, -- [668]
+		}, -- [667]
 		{
 			["message"] = "Interface\\FrameXML\\UnitPopupSharedButtonMixins.lua:896: bad argument #1 to 'CanReportPlayer' (Usage: local canReport = C_ReportSystem.CanReportPlayer(playerLocation))",
 			["time"] = "2022/10/16 11:26:38",
@@ -5225,7 +5217,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `CanReportPlayer'\n[string \"@Interface\\FrameXML\\UnitPopupSharedButtonMixins.lua\"]:896: in function `CanShow'\n[string \"@Interface\\FrameXML\\UnitPopupSharedButtonMixins.lua\"]:950: in function `CanShow'\n[string \"@Interface\\FrameXML\\UnitPopupShared.lua\"]:55: in function `ShowMenu'\n[string \"@Interface\\FrameXML\\UnitPopupShared.lua\"]:276: in function `UnitPopup_ShowMenu'\n[string \"@Interface/FrameXML/FriendsFrame_Shared.lua\"]:251: in function `initFunction'\n[string \"@Interface\\FrameXML\\UIDropDownMenu.lua\"]:79: in function `UIDropDownMenu_Initialize'\n[string \"@Interface\\FrameXML\\UIDropDownMenu.lua\"]:1094: in function <Interface\\FrameXML\\UIDropDownMenu.lua:959>\n[string \"=[C]\"]: in function `ToggleDropDownMenu'\n[string \"@Interface/FrameXML/FriendsFrame_Shared.lua\"]:222: in function `FriendsFrame_ShowDropdown'\n[string \"@Interface/FrameXML/FriendsFrame_Shared.lua\"]:913: in function `FriendsFrameWhoButton_OnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 7030,
 			["counter"] = 1,
-		}, -- [669]
+		}, -- [668]
 		{
 			["message"] = "Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua:1097: Usage: GetItemInfo(itemID|\"name\"|\"itemlink\")",
 			["time"] = "2022/05/21 16:50:41",
@@ -5233,7 +5225,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `GetItemInfo'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:1097: in function `BuildMenu'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:1797: in function `OnClick'\n[string \"@Interface\\AddOns\\ChocolateBar\\Chocolate.lua\"]:289: in function <Interface\\AddOns\\ChocolateBar\\Chocolate.lua:286>",
 			["session"] = 7031,
 			["counter"] = 12,
-		}, -- [670]
+		}, -- [669]
 		{
 			["message"] = "[string \"RotationFrame_CLASS:SetBackdropColor(1, 1, ...\"]:1: attempt to index global 'RotationFrame_CLASS' (a nil value)",
 			["time"] = "2022/10/17 18:53:50",
@@ -5241,7 +5233,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"RotationFrame_CLASS:SetBackdropColor(1, 1, 2, 1)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 7045,
 			["counter"] = 1,
-		}, -- [671]
+		}, -- [670]
 		{
 			["message"] = "[string \"print(GetNumRaidMembers())\"]:1: attempt to call global 'GetNumRaidMembers' (a nil value)",
 			["time"] = "2022/10/17 19:08:33",
@@ -5249,7 +5241,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(GetNumRaidMembers())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 7046,
 			["counter"] = 1,
-		}, -- [672]
+		}, -- [671]
 		{
 			["message"] = "[string \"for i=1,GetNumRaidMembers()-1 do local unit...\"]:1: attempt to call global 'GetNumRaidMembers' (a nil value)",
 			["time"] = "2022/10/17 19:08:11",
@@ -5257,7 +5249,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"for i=1,GetNumRaidMembers()-1 do local unit = \"raid\"..i local name,realm = UnitName(unit) if(realm) then ReportPlayerIsPVPAFK(name..\"-\"..realm) else ReportPlayerIsPVPAFK(name) end end\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2977: in function <Interface\\FrameXML\\ChatFrame.lua:2970>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:14: in function `MultiActionButtonDown'\n[string \"MULTIACTIONBAR2BUTTON11\"]:2: in function <[string \"MULTIACTIONBAR2BUTTON11\"]:1>",
 			["session"] = 7046,
 			["counter"] = 7,
-		}, -- [673]
+		}, -- [672]
 		{
 			["message"] = "Interface\\AddOns\\TacoTip\\main.lua:420: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: GameTooltip:SetPoint.",
 			["time"] = "2022/10/19 17:24:28",
@@ -5265,6 +5257,14 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetPoint'\n[string \"@Interface\\AddOns\\TacoTip\\main.lua\"]:420: in function <Interface\\AddOns\\TacoTip\\main.lua:414>\n[string \"=[C]\"]: in function `GameTooltip_SetDefaultAnchor'\n[string \"*:OnTooltipSetDefaultAnchor\"]:1: in function <[string \"*:OnTooltipSetDefaultAnchor\"]:1>",
 			["session"] = 7055,
 			["counter"] = 11,
+		}, -- [673]
+		{
+			["message"] = "...ns\\TradeSkillMaster\\Core\\Service\\MyAuctions\\Core.lua:167: attempt to index field 'pendingFuture' (a nil value)",
+			["time"] = "2022/10/14 11:41:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'pendingFuture' (a nil value)\"\nprivate = <table> {\n pendingDB = <table> {\n }\n AuctionHouseShowEventHandler = <function> defined @Interface\\AddOns\\TradeSkillMaster\\Core\\Service\\MyAuctions\\Core.lua:135\n ahOpen = true\n expectedCounts = <table> {\n }\n UIErrorMessageEventHandler = <function> defined @Interface\\AddOns\\TradeSkillMaster\\Core\\Service\\MyAuctions\\Core.lua:155\n pendingHashes = <table> {\n }\n auctionInfo = <table> {\n }\n AuctionHouseHideEventHandler = <function> defined @Interface\\AddOns\\TradeSkillMaster\\Core\\Service\\MyAuctions\\Core.lua:139\n dbHashFields = <table> {\n }\n ChatMsgSystemEventHandler = <function> defined @Interface\\AddOns\\TradeSkillMaster\\Core\\Service\\MyAuctions\\Core.lua:147\n GetNumRowsByHash = <function> defined @Interface\\AddOns\\TradeSkillMaster\\Core\\Service\\MyAuctions\\Core.lua:183\n PendingFutureOnDone = <function> defined @Interface\\AddOns\\TradeSkillMaster\\Core\\Service\\MyAuctions\\Core.lua:166\n OnAuctionsUpdated = <function> defined @Interface\\AddOns\\TradeSkillMaster\\Core\\Service\\MyAuctions\\Core.lua:189\n}\nLog = <table> {\n PrintUser = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:124\n PrintfUser = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:128\n PrintUserRaw = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:116\n Warn = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:108\n SetCurrentThreadNameFunction = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:65\n Length = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:69\n ColorUserAccentText = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:132\n LowerStackLevel = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:83\n PrintfUserRaw = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:120\n RaiseStackLevel = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:79\n StackTrace = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:87\n Info = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:104\n SetLoggingToChatEnabled = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:43\n Trace = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:100\n Err = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:112\n SetChatFrame = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:39\n Get = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Log.lua:73\n}\nAuctionTracking = <table> {\n CreateQueryUnsoldItem = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionTracking.lua:254\n GetSaleHintItemString = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionTracking.lua:266\n CreateQueryUnsold = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionTracking.lua:249\n RegisterCallback = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionTracking.lua:227\n QueryOwnedAuctions = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionTracking.lua:279\n GetQuantityByLevelItemString = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionTracking.lua:275\n DatabaseFieldIterator = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionTracking.lua:235\n RegisterExpiresCallback = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionTracking.lua:231\n ItemIterator = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionTracking.lua:239\n CreateQuery = <function> defined @Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionTracking.lua:245\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\TradeSkillMaster\\Core\\Service\\MyAuctions\\Core.lua\"]:167: in function `onDone'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Future.lua\"]:58: in function `Done'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionHouseWrapper.lua\"]:598: in function <...deSkillMaster\\LibTSM\\Service\\AuctionHouseWrapper.lua:585>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionHouseWrapper.lua\"]:528: in function <...deSkillMaster\\LibTSM\\Service\\AuctionHouseWrapper.lua:519>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionHouseWrapper.lua\"]:758: in function `EventHandlerHelper'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\AuctionHouseWrapper.lua\"]:738: in function `callback'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua\"]:85: in function `ProcessEvent'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua\"]:101: in function <...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua:93>",
+			["session"] = 7061,
+			["counter"] = 3,
 		}, -- [674]
 	},
 }
