@@ -1,10 +1,10 @@
-tag 3810854f1e0505c3cea465d67536650ef91e7e95 Details.DF.SL.Wrath.10136.146
+tag 4f63a9e1d7646040aea8a76c060b30fd776256b6 Details.DF.SL.Wrath.10144.146
 Author:	Tercio Jose <terciob19@hotmail.com>
-Date:	Sun Oct 9 20:49:31 2022 -0300
+Date:	Tue Oct 18 14:16:03 2022 -0300
 
-commit b588d5e30cec44d78125022adcfdf76c760f825b
+commit 33e6a45f8dcd649ec81226362b33d924caee5d06
 Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Sun Oct 9 20:48:47 2022 -0300
+Date:   Tue Oct 18 14:15:33 2022 -0300
 
-    Fixed an error while trying to move the window by clicking and holding on a window line
+    bump
 
