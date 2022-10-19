@@ -32,7 +32,9 @@ hooksecurefunc(
 
 			hotkey:SetText(text)
 		else
-			hotkey:SetText(RANGE_INDICATOR)
+			-- hotkey:SetText(RANGE_INDICATOR)
+			-- hotkey:SetPoint('TOPLEFT', button, 'TOPLEFT', 1, -2)
+			hotkey:Hide()
 		end
 	end
 )
