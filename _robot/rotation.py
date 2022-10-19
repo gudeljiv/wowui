@@ -303,5 +303,5 @@ with keyboard.Listener(on_press=on_press) as listener:
             #     print(grabbed_image, main, combat, interrupt, active_window, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
 
             if mill:
-                pyautogui.hotkey("y")
+                pyautogui.hotkey("x")
                 time.sleep(0.5)

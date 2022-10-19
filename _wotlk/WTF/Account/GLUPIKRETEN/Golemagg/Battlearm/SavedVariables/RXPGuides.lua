@@ -1213,12 +1213,12 @@ RXPCComms = {
 					["xp"] = 30,
 				},
 				["Ukrayn"] = {
-					["level"] = 68,
+					["isRxp"] = true,
 					["lastSeen"] = 2192898.234,
 					["xpPercentage"] = 0,
-					["class"] = "HUNTER",
+					["level"] = 68,
 					["timePlayed"] = 259.660000000149,
-					["isRxp"] = true,
+					["class"] = "HUNTER",
 				},
 				["Lysbolten"] = {
 					["timePlayed"] = 180.9789999999921,
@@ -1501,12 +1501,12 @@ RXPCComms = {
 					["xp"] = 76,
 				},
 				["Seul"] = {
-					["class"] = "DEATHKNIGHT",
+					["level"] = 70,
 					["lastSeen"] = 2446450.64,
 					["xpPercentage"] = 0,
-					["isRxp"] = true,
+					["class"] = "DEATHKNIGHT",
 					["timePlayed"] = 1377.831000000253,
-					["level"] = 70,
+					["isRxp"] = true,
 				},
 				["Pathé"] = {
 					["timePlayed"] = 460.1290000000154,
@@ -2026,14 +2026,14 @@ RXPCComms = {
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 36,
 				},
-				["Drippyorc"] = {
-					["timePlayed"] = 45.96900000004098,
-					["class"] = "DEATHKNIGHT",
-				},
 				["Ømerion"] = {
 					["timePlayed"] = 363.9890000000014,
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 32,
+				},
+				["Drippyorc"] = {
+					["timePlayed"] = 45.96900000004098,
+					["class"] = "DEATHKNIGHT",
 				},
 				["Sikusko"] = {
 					["timePlayed"] = 27.24699999997392,
@@ -2140,12 +2140,12 @@ RXPCComms = {
 					["class"] = "MAGE",
 				},
 				["Dyasoak"] = {
-					["class"] = "DEATHKNIGHT",
+					["level"] = 63,
 					["lastSeen"] = 4512.213,
 					["xpPercentage"] = 15,
-					["isRxp"] = true,
+					["class"] = "DEATHKNIGHT",
 					["timePlayed"] = 17.9380000000001,
-					["level"] = 63,
+					["isRxp"] = true,
 				},
 				["Mugalruna"] = {
 					["timePlayed"] = 303.6299999999901,

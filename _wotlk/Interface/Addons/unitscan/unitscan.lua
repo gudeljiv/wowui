@@ -827,7 +827,7 @@ function SlashCmdList.UNITSCAN(parameter)
 
 	if name == '' then
 		for key, val in pairs(unitscan_targets) do
-			unitscan.print(tostring(key) .. ' = ' .. tostring(val))
+			unitscan.print(tostring(key))
 		end
 	elseif name == 'rares' then
 		for key, val in pairs(rare_spawns) do

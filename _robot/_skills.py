@@ -42,7 +42,7 @@ skills["warrior"] = [
     {"name": "berserker rage", "key": "f1", "modifier": "ctrl"},
     {"name": "rend", "key": "d", "modifier": "shift"},
     {"name": "overpower", "key": "6"},
-    {"name": "revenge", "key": "1"},
+    {"name": "revenge", "key": "f5", "modifier": "ctrl"},
     {"name": "execute", "key": "f"},
     {"name": "whirlwind", "key": "6"},
     {"name": "sweeping strikes", "key": "r", "modifier": "alt"},
