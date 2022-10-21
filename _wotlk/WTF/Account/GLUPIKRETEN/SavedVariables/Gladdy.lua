@@ -1,0 +1,480 @@
+
+GladdyXZ = {
+	["profileKeys"] = {
+		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+	},
+	["profiles"] = {
+		["Moolatz - Golemagg"] = {
+			["drBorderColor"] = {
+				["b"] = 0.6431372549019607,
+				["g"] = 0.6431372549019607,
+				["r"] = 0.6431372549019607,
+			},
+			["shadowsightTimerRelPoint1"] = "RIGHT",
+			["drDisableCircle"] = true,
+			["castBarHeight"] = 23,
+			["healthBarNameFontSize"] = 15,
+			["drFontScale"] = 0.7000000000000001,
+			["trinketBorderColor"] = {
+				["b"] = 0.2588235294117647,
+				["g"] = 0.2588235294117647,
+				["r"] = 0.2588235294117647,
+			},
+			["shadowsightTimerShowTwoTimer"] = true,
+			["npTremorFont"] = "Arial Narrow",
+			["auraListDefault"] = {
+				["6770"] = {
+					["enabled"] = false,
+				},
+				["28730"] = {
+					["enabled"] = false,
+				},
+				["12355"] = {
+					["enabled"] = false,
+				},
+				["34709"] = {
+					["enabled"] = false,
+				},
+				["10308"] = {
+					["enabled"] = false,
+				},
+				["5530"] = {
+					["enabled"] = false,
+				},
+				["20066"] = {
+					["enabled"] = false,
+				},
+				["23694"] = {
+					["enabled"] = false,
+				},
+				["47481"] = {
+					["enabled"] = false,
+				},
+				["1022"] = {
+					["enabled"] = false,
+				},
+				["31117"] = {
+					["enabled"] = false,
+				},
+				["12809"] = {
+					["enabled"] = false,
+				},
+				["6346"] = {
+					["enabled"] = false,
+				},
+				["15487"] = {
+					["enabled"] = false,
+				},
+				["48792"] = {
+					["enabled"] = false,
+				},
+				["25274"] = {
+					["enabled"] = false,
+				},
+				["676"] = {
+					["enabled"] = false,
+				},
+				["8983"] = {
+					["enabled"] = false,
+				},
+				["5484"] = {
+					["enabled"] = false,
+				},
+				["14327"] = {
+					["enabled"] = false,
+				},
+				["18647"] = {
+					["enabled"] = false,
+				},
+				["8122"] = {
+					["enabled"] = false,
+				},
+				["18499"] = {
+					["enabled"] = false,
+				},
+				["7922"] = {
+					["enabled"] = false,
+				},
+				["18469"] = {
+					["enabled"] = false,
+				},
+				["60210"] = {
+					["enabled"] = false,
+				},
+				["46968"] = {
+					["enabled"] = false,
+				},
+				["5246"] = {
+					["enabled"] = false,
+				},
+				["53359"] = {
+					["enabled"] = false,
+				},
+				["5782"] = {
+					["enabled"] = false,
+				},
+				["63529"] = {
+					["enabled"] = false,
+				},
+				["24259"] = {
+					["enabled"] = false,
+				},
+				["1833"] = {
+					["enabled"] = false,
+				},
+				["31821"] = {
+					["enabled"] = false,
+				},
+				["51713"] = {
+					["enabled"] = false,
+				},
+				["47860"] = {
+					["enabled"] = false,
+				},
+				["50334"] = {
+					["enabled"] = false,
+				},
+				["49012"] = {
+					["enabled"] = false,
+				},
+				["51514"] = {
+					["enabled"] = false,
+				},
+				["46924"] = {
+					["enabled"] = false,
+				},
+				["54428"] = {
+					["enabled"] = false,
+				},
+				["49203"] = {
+					["enabled"] = false,
+				},
+				["14309"] = {
+					["enabled"] = false,
+				},
+				["18658"] = {
+					["enabled"] = false,
+				},
+				["49916"] = {
+					["enabled"] = false,
+				},
+				["19577"] = {
+					["enabled"] = false,
+				},
+				["34471"] = {
+					["enabled"] = false,
+				},
+				["64205"] = {
+					["enabled"] = false,
+				},
+				["31224"] = {
+					["enabled"] = false,
+				},
+				["51722"] = {
+					["enabled"] = false,
+				},
+				["29166"] = {
+					["enabled"] = false,
+				},
+				["33395"] = {
+					["enabled"] = false,
+				},
+				["19503"] = {
+					["enabled"] = false,
+				},
+				["1719"] = {
+					["enabled"] = false,
+				},
+				["871"] = {
+					["enabled"] = false,
+				},
+				["33206"] = {
+					["enabled"] = false,
+				},
+				["16979"] = {
+					["enabled"] = false,
+				},
+				["1330"] = {
+					["enabled"] = false,
+				},
+				["26989"] = {
+					["enabled"] = false,
+				},
+				["20549"] = {
+					["enabled"] = false,
+				},
+				["49802"] = {
+					["enabled"] = false,
+				},
+				["1776"] = {
+					["enabled"] = false,
+				},
+				["64058"] = {
+					["enabled"] = false,
+				},
+				["44572"] = {
+					["enabled"] = false,
+				},
+				["2094"] = {
+					["enabled"] = false,
+				},
+				["1044"] = {
+					["enabled"] = false,
+				},
+				["47847"] = {
+					["enabled"] = false,
+				},
+				["12292"] = {
+					["enabled"] = false,
+				},
+				["49039"] = {
+					["enabled"] = false,
+				},
+				["2825"] = {
+					["enabled"] = false,
+				},
+				["19263"] = {
+					["enabled"] = false,
+				},
+				["12826"] = {
+					["enabled"] = false,
+				},
+				["48707"] = {
+					["enabled"] = false,
+				},
+				["55080"] = {
+					["enabled"] = false,
+				},
+				["74347"] = {
+					["enabled"] = false,
+				},
+				["6940"] = {
+					["enabled"] = false,
+				},
+				["18425"] = {
+					["enabled"] = false,
+				},
+				["42917"] = {
+					["enabled"] = false,
+				},
+				["34490"] = {
+					["enabled"] = false,
+				},
+				["53271"] = {
+					["enabled"] = false,
+				},
+				["4167"] = {
+					["enabled"] = false,
+				},
+				["41425"] = {
+					["enabled"] = false,
+				},
+				["27010"] = {
+					["enabled"] = false,
+				},
+				["47168"] = {
+					["enabled"] = false,
+				},
+				["33786"] = {
+					["enabled"] = false,
+				},
+				["32182"] = {
+					["enabled"] = false,
+				},
+				["23920"] = {
+					["enabled"] = false,
+				},
+				["5024"] = {
+					["enabled"] = false,
+				},
+				["605"] = {
+					["enabled"] = false,
+				},
+				["49803"] = {
+					["enabled"] = false,
+				},
+				["18708"] = {
+					["enabled"] = false,
+				},
+				["45438"] = {
+					["enabled"] = false,
+				},
+				["642"] = {
+					["enabled"] = false,
+				},
+				["31661"] = {
+					["enabled"] = false,
+				},
+				["6358"] = {
+					["enabled"] = false,
+				},
+				["8643"] = {
+					["enabled"] = false,
+				},
+				["8178"] = {
+					["enabled"] = false,
+				},
+				["26669"] = {
+					["enabled"] = false,
+				},
+				["16922"] = {
+					["enabled"] = false,
+				},
+			},
+			["castBarFont"] = "Arial Narrow",
+			["classIconXOffset"] = -54.8997802734375,
+			["racialYOffset"] = -0.4999999701976776,
+			["trinketYOffset"] = 5.960464477539063e-08,
+			["classIconBorderColor"] = {
+				["a"] = 0.5422002375125885,
+			},
+			["castBarFontSize"] = 11.72811031341553,
+			["powerBarHeight"] = 12,
+			["racialWidthFactor"] = 1,
+			["drEnabled"] = false,
+			["buffsBorderColor"] = {
+				["a"] = 0.5422002375125885,
+			},
+			["cooldownFont"] = "Arial Narrow",
+			["locked"] = true,
+			["pixelPerfect"] = true,
+			["auraFont"] = "Arial Narrow",
+			["y"] = 515.836921749069,
+			["x"] = 907.4098768027106,
+			["bottomMargin"] = 24,
+			["trinketFont"] = "Arial Narrow",
+			["auraBuffBorderColor"] = {
+				["a"] = 0.5422002375125885,
+			},
+			["ciXOffset"] = 112.0001831054688,
+			["castBarIconColor"] = {
+				["a"] = 0.5422002375125885,
+			},
+			["countdown"] = false,
+			["cooldownCooldownAlpha"] = 0.6000000000000001,
+			["healthBarHeight"] = 45,
+			["powerShowSpec"] = false,
+			["racialXOffset"] = 295.000732421875,
+			["racialBorderColor"] = {
+				["b"] = 0.3215686274509804,
+				["g"] = 0.3215686274509804,
+				["r"] = 0.3215686274509804,
+			},
+			["powerBarBorderSize"] = 3.5,
+			["cooldownSize"] = 27.52403259277344,
+			["petHealthBarFont"] = "Arial Narrow",
+			["drGrowDirection"] = "LEFT",
+			["trinketXOffset"] = 236.0000762939453,
+			["trinketSize"] = 58,
+			["shadowsightTimerX"] = -245.611083984375,
+			["ciYOffset"] = -3.99987804889679,
+			["buffsBuffsXOffset"] = 29,
+			["buffsDisableCircle"] = true,
+			["racialEnabled"] = false,
+			["highlight"] = false,
+			["shadowsightTimerRelPoint2"] = "RIGHT",
+			["healthBarHealthFontSize"] = 10,
+			["auraDisableCircle"] = true,
+			["castBarYOffset"] = -59.9998779296875,
+			["cooldownFontScale"] = 0.8,
+			["npTotems"] = false,
+			["racialSize"] = 58,
+			["newLayout"] = true,
+			["drXOffset"] = -103.8999252319336,
+			["healthBarTexture"] = "Melli",
+			["auraListInterrupts"] = {
+				["57994"] = {
+					["enabled"] = false,
+				},
+				["19244"] = {
+					["enabled"] = false,
+				},
+				["6552"] = {
+					["enabled"] = false,
+				},
+				["1766"] = {
+					["enabled"] = false,
+				},
+				["19675"] = {
+					["enabled"] = false,
+				},
+				["47528"] = {
+					["enabled"] = false,
+				},
+				["72"] = {
+					["enabled"] = false,
+				},
+				["2139"] = {
+					["enabled"] = false,
+				},
+			},
+			["announcements"] = {
+				["resurrections"] = false,
+				["spellInterrupt"] = false,
+				["spec"] = false,
+				["trinketUsed"] = false,
+				["drinks"] = false,
+			},
+			["racialFont"] = "Arial Narrow",
+			["frameScale"] = 0.6,
+			["buffsYOffset"] = 32,
+			["healthBarBorderSize"] = 7.5,
+			["focusBorder"] = false,
+			["barWidth"] = 235,
+			["cooldownMaxIconsPerLine"] = 4,
+			["buffsEnabled"] = false,
+			["buffsFont"] = "Arial Narrow",
+			["hideBlizzard"] = "always",
+			["cooldownDisableCircle"] = true,
+			["drLevelTextScale"] = 0.5,
+			["targetBorder"] = false,
+			["buffsBuffsYOffset"] = -82.99993896484375,
+			["auraFontSizeScale"] = 0.9,
+			["cooldownBorderStyle"] = "Interface\\AddOns\\Gladdy\\Images\\Border_rounded_blp",
+			["castBarTexture"] = "Melli",
+			["classIconWidthFactor"] = 0.95,
+			["classIconEnabled"] = false,
+			["castBarIconSize"] = 24,
+			["drFont"] = "Arial Narrow",
+			["cooldownXOffset"] = 353.9998779296875,
+			["healthBarFont"] = "Arial Narrow",
+			["petEnabled"] = false,
+			["castBarBorderSize"] = 3,
+			["racialDisableCircle"] = true,
+			["cooldownBorderColor"] = {
+				["b"] = 0.3843137254901961,
+				["g"] = 0.3843137254901961,
+				["r"] = 0.3843137254901961,
+			},
+			["classIconSize"] = 58,
+			["castBarXOffset"] = -29.89928436279297,
+			["powerActual"] = false,
+			["trinketDisableCircle"] = true,
+			["powerShowRace"] = false,
+			["shadowsightTimerY"] = 151.5887908935547,
+			["healthMax"] = false,
+			["auraDebuffBorderColor"] = {
+				["a"] = 0.5422002375125885,
+			},
+			["petYOffset"] = -82,
+			["petHealthBarTexture"] = "Melli",
+			["cooldownYOffset"] = 6.103515261202119e-05,
+			["cooldownYGrowDirection"] = "DOWN",
+			["powerBarTexture"] = "Melli",
+			["petHealthBarFontSize"] = 20,
+			["cooldown"] = false,
+			["castBarWidth"] = 324,
+			["petXOffset"] = 281,
+			["cooldownIconPadding"] = 0,
+			["powerBarFont"] = "Arial Narrow",
+			["drYOffset"] = -4.999878406524658,
+			["powerMax"] = false,
+			["buffsXOffset"] = 29,
+			["trinketWidthFactor"] = 1,
+			["totemPulseEnabled"] = false,
+			["drIconSize"] = 48,
+			["statusbarBorderOffset"] = 4.7,
+			["drBorderColorsEnabled"] = false,
+		},
+	},
+}

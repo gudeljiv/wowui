@@ -1,134 +1,62 @@
 
 PlaterDB = {
 	["captured_spells"] = {
-		[25530] = {
-			["source"] = "Searing Totem VII",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 15480,
-		},
-		[61197] = {
-			["source"] = "Dakota",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 32517,
-		},
-		[75447] = {
-			["type"] = "BUFF",
-			["source"] = "ail",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 1713,
-		},
-		[75593] = {
-			["type"] = "BUFF",
-			["source"] = "Dakota",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 32517,
-		},
-		[53401] = {
-			["type"] = "BUFF",
-			["source"] = "Dakota",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 32517,
-		},
-		[47481] = {
-			["type"] = "DEBUFF",
-			["source"] = "Stonehead",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 26125,
-		},
 		[25228] = {
 			["type"] = "BUFF",
-			["source"] = "Carrneth",
+			["source"] = "Unknown",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 1863,
+			["npcID"] = 17252,
 		},
-		[53403] = {
+		[32851] = {
 			["type"] = "BUFF",
-			["source"] = "Dakota",
+			["source"] = "Jhuuroon",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 32517,
+			["npcID"] = 17252,
 		},
-		[35294] = {
-			["source"] = "rox",
+		[35706] = {
+			["type"] = "BUFF",
+			["source"] = "Unknown",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 17252,
+		},
+		[30223] = {
+			["source"] = "Jhuuroon",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 547,
+			["npcID"] = 17252,
 		},
-		[61684] = {
-			["type"] = "BUFF",
-			["source"] = "Dakota",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 32517,
-		},
-		[63900] = {
-			["source"] = "rox",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 547,
-		},
-		[24529] = {
-			["type"] = "BUFF",
-			["source"] = "ail",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 1713,
-		},
-		[57723] = {
+		[30197] = {
 			["type"] = "DEBUFF",
-			["source"] = "ail",
+			["source"] = "Jhuuroon",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 1713,
+			["npcID"] = 17252,
 		},
-		[70893] = {
+		[30198] = {
+			["source"] = "Jhuuroon",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 17252,
+		},
+		[48090] = {
 			["type"] = "BUFF",
-			["source"] = "Dakota",
+			["source"] = "Jhuuroon",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 32517,
+			["npcID"] = 17252,
 		},
-		[47468] = {
-			["source"] = "Stonehead",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 26125,
-		},
-		[59885] = {
-			["source"] = "ail",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 1713,
-		},
-		[19615] = {
+		[54508] = {
 			["type"] = "BUFF",
-			["source"] = "Dakota",
+			["source"] = "Jhuuroon",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 32517,
+			["npcID"] = 17252,
 		},
-		[3600] = {
-			["source"] = "Earthbind Totem",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 2630,
-		},
-		[52471] = {
-			["source"] = "Dakota",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 32517,
-		},
-		[52473] = {
-			["source"] = "rox",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 547,
-		},
-		[53148] = {
-			["type"] = "DEBUFF",
-			["source"] = "ail",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 1713,
-		},
-		[61685] = {
+		[35696] = {
 			["type"] = "BUFF",
-			["source"] = "Dakota",
+			["source"] = "Unknown",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 32517,
+			["npcID"] = 17252,
 		},
-		[54131] = {
-			["type"] = "BUFF",
-			["source"] = "Dakota",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 32517,
+		[27273] = {
+			["source"] = "Tangjuk",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 1860,
 		},
 	},
 	["profiles"] = {
@@ -3930,7 +3858,7 @@ PlaterDB = {
 				["nameplateOverlapV"] = "Interface\\AddOns\\Plater\\Plater.lua:2012",
 				["ShowNamePlateLoseAggroFlash"] = "Interface\\AddOns\\Plater\\Plater.lua:2012",
 				["nameplateShowEnemyMinus"] = "Interface\\AddOns\\xVermin\\Frames/CustomContainers.lua:50",
-				["nameplateShowFriendlyTotems"] = "Interface\\AddOns\\Plater\\Plater.lua:2012",
+				["nameplateShowFriendlyTotems"] = "Interface\\AddOns\\Gladdy\\Modules\\TotemPlates.lua:240",
 				["nameplatePersonalHideDelaySeconds"] = "Interface\\AddOns\\Plater\\Plater.lua:2012",
 				["nameplateShowFriendlyPets"] = "Interface\\AddOns\\Plater\\Plater.lua:2012",
 				["nameplatePersonalShowInCombat"] = "Interface\\AddOns\\Plater\\Plater.lua:2012",
@@ -3953,7 +3881,7 @@ PlaterDB = {
 				["nameplateShowFriendlyNPCs"] = "Interface\\AddOns\\Plater\\Plater.lua:2012",
 				["nameplateSelectedScale"] = "Interface\\AddOns\\Plater\\Plater.lua:2012",
 				["nameplateMinAlphaDistance"] = "Interface\\AddOns\\Plater\\Plater.lua:4424",
-				["nameplateMotion"] = "Interface\\AddOns\\Plater\\Plater.lua:8288",
+				["nameplateMotion"] = "Interface\\AddOns\\Plater\\Plater.lua:8290",
 				["nameplateRemovalAnimation"] = "Interface\\AddOns\\Plater\\Plater.lua:4427",
 				["nameplateMinScale"] = "Interface\\AddOns\\Plater\\Plater.lua:2012",
 				["nameplateShowOnlyNames"] = "Interface\\AddOns\\Plater\\Plater.lua:2012",
@@ -6417,9 +6345,9 @@ PlaterDB = {
 					"Cabal Summoner", -- [1]
 					"Auchindoun: Shadow Labyrinth", -- [2]
 				},
-				[17819] = {
-					"Durnholde Sentry", -- [1]
-					"The Escape From Durnholde", -- [2]
+				[3640] = {
+					"Evolving Ectoplasm", -- [1]
+					"Wailing Caverns", -- [2]
 				},
 				[8318] = {
 					"Atal'ai Slave", -- [1]
@@ -6429,17 +6357,17 @@ PlaterDB = {
 					"Murkblood Oracle", -- [1]
 					"Coilfang: The Underbog", -- [2]
 				},
-				[3640] = {
-					"Evolving Ectoplasm", -- [1]
-					"Wailing Caverns", -- [2]
-				},
-				[7276] = {
-					"Zul'Farrak Dead Hero", -- [1]
-					"Zul'Farrak", -- [2]
-				},
 				[135007] = {
 					"Orb Guardian", -- [1]
 					"Temple of Sethraliss", -- [2]
+				},
+				[17819] = {
+					"Durnholde Sentry", -- [1]
+					"The Escape From Durnholde", -- [2]
+				},
+				[19865] = {
+					"Mutate Horror", -- [1]
+					"Tempest Keep: The Botanica", -- [2]
 				},
 				[16700] = {
 					"Shattered Hand Legionnaire", -- [1]
@@ -6465,9 +6393,9 @@ PlaterDB = {
 					"Theka the Martyr", -- [1]
 					"Zul'Farrak", -- [2]
 				},
-				[19865] = {
-					"Mutate Horror", -- [1]
-					"Tempest Keep: The Botanica", -- [2]
+				[7276] = {
+					"Zul'Farrak Dead Hero", -- [1]
+					"Zul'Farrak", -- [2]
 				},
 				[17835] = {
 					"Infinite Assassin", -- [1]
@@ -7409,7 +7337,7 @@ PlaterDB = {
 				["nameplateOverlapV"] = "1.1",
 				["ShowNamePlateLoseAggroFlash"] = "1",
 				["nameplateShowEnemyMinus"] = "0",
-				["nameplateShowFriendlyTotems"] = "0",
+				["nameplateShowFriendlyTotems"] = "1",
 				["nameplatePersonalHideDelaySeconds"] = "0.2",
 				["nameplateShowDebuffsOnFriendly"] = "0",
 				["nameplatePersonalShowInCombat"] = "1",
@@ -7438,7 +7366,7 @@ PlaterDB = {
 				["nameplateTargetRadialPosition"] = "1",
 				["nameplateLargeTopInset"] = "0.085",
 				["nameplateShowFriends"] = "0",
-				["nameplateMotion"] = "0",
+				["nameplateMotion"] = "1",
 				["ShowClassColorInNameplate"] = "1",
 				["nameplateMinScale"] = "1",
 				["nameplateOccludedAlphaMult"] = "0",
@@ -7453,7 +7381,7 @@ PlaterDB = {
 				["nameplateMinAlphaDistance"] = "-158489.31924611",
 				["nameplatePersonalShowAlways"] = "1",
 			},
-			["login_counter"] = 3090,
+			["login_counter"] = 3112,
 			["extra_icon_caster_name"] = false,
 			["aura_cooldown_show_swipe"] = false,
 			["show_aggro_flash"] = true,

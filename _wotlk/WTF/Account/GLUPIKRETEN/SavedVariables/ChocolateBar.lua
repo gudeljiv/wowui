@@ -328,7 +328,7 @@ ChocolateBarDB = {
 					["customLabel"] = "N",
 				},
 				["BugSack"] = {
-					["index"] = 4,
+					["index"] = 3,
 					["isNew"] = false,
 					["showIcon"] = false,
 					["barName"] = "ChocolateBar2",
@@ -586,9 +586,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 420984,
-		["timeAtThisLevel"] = 8196,
-		["timeStamp"] = 793903.389,
+		["total"] = 434913,
+		["timeAtThisLevel"] = 10087,
+		["timeStamp"] = 6191.374,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -629,9 +629,9 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 888883,
-		["timeStamp"] = 802638.481,
-		["timeAtThisLevel"] = 35080,
+		["total"] = 889793,
+		["timeStamp"] = 469.251,
+		["timeAtThisLevel"] = 35990,
 	},
 	["Tandaram-Jin'do"] = {
 		["total"] = 97,
@@ -675,9 +675,9 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 418,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1003815,
-		["timeStamp"] = 793256.907,
-		["timeAtThisLevel"] = 901,
+		["total"] = 1004541,
+		["timeStamp"] = 388.388,
+		["timeAtThisLevel"] = 1627,
 	},
 	["Koloman-"] = {
 		["total"] = 129,

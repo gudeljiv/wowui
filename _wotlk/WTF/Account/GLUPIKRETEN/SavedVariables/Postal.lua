@@ -7,7 +7,7 @@ Postal3DB = {
 				"Battlearm|Golemagg|Horde|73|DEATHKNIGHT", -- [2]
 				"Battlearm|Jin'do|Horde|2|SHAMAN", -- [3]
 				"Kaonac|Jin'do|Horde|1|PRIEST", -- [4]
-				"Moolatz|Golemagg|Horde|67|DRUID", -- [5]
+				"Moolatz|Golemagg|Horde|68|DRUID", -- [5]
 				"Mxyz|Golemagg|Horde|5|PRIEST", -- [6]
 				"Mxzq|Golemagg|Horde|71|HUNTER", -- [7]
 				"Pitchwise|Ashbringer|Horde|1|SHAMAN", -- [8]

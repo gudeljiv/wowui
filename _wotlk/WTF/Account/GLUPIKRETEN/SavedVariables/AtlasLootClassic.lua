@@ -278,7 +278,7 @@ AtlasLootClassicDB = {
 			[42952] = "EmblemOfHeroism:40",
 			[33812] = "honor:6840",
 			[28424] = "honor:4750",
-			[28811] = "honor:3040",
+			[40695] = "EmblemOfHeroism:40",
 			[24550] = "honor:9500",
 			[28119] = "honor:1425",
 			[33892] = "honor:6840",
@@ -286,12 +286,12 @@ AtlasLootClassicDB = {
 			[41589] = "honor:5700",
 			[28244] = "honor:2850",
 			[31853] = "honor:50",
-			[28300] = "honor:9500",
+			[35074] = "honor:4750",
 			[33733] = "honor:8550",
 			[35026] = "honor:9500",
 			[31989] = "honor:6650",
 			[40679] = "EmblemOfHeroism:25",
-			[40695] = "EmblemOfHeroism:40",
+			[28811] = "honor:3040",
 			[34579] = "honor:3990",
 			[18607] = "honor:7500",
 			[40743] = "EmblemOfValor:40",
@@ -458,7 +458,7 @@ AtlasLootClassicDB = {
 			[28444] = "honor:3800",
 			[28923] = "honor:7600",
 			[32452] = "honor:2375",
-			[35074] = "honor:4750",
+			[28300] = "honor:9500",
 			[33674] = "honor:6840",
 			[33690] = "honor:6840",
 			[28127] = "honor:4750",
@@ -735,6 +735,10 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["point"] = {
 					"TOP", -- [1]
@@ -750,10 +754,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Paydo - Dreadmist"] = {

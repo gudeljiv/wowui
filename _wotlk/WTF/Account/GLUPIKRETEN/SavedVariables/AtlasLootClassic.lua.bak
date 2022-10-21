@@ -237,12 +237,12 @@ AtlasLootClassicDB = {
 			[41589] = "honor:5700",
 			[28244] = "honor:2850",
 			[35026] = "honor:9500",
-			[40695] = "EmblemOfHeroism:40",
+			[28811] = "honor:3040",
 			[28875] = "honor:3800",
 			[31853] = "honor:50",
 			[33765] = "honor:5130",
 			[40679] = "EmblemOfHeroism:25",
-			[35074] = "honor:4750",
+			[28300] = "honor:9500",
 			[34579] = "honor:3990",
 			[18607] = "honor:7500",
 			[40743] = "EmblemOfValor:40",
@@ -409,11 +409,11 @@ AtlasLootClassicDB = {
 			[40440] = "honor:9500",
 			[31989] = "honor:6650",
 			[33733] = "honor:8550",
-			[28300] = "honor:9500",
+			[35074] = "honor:4750",
 			[33674] = "honor:6840",
 			[28119] = "honor:1425",
 			[24550] = "honor:9500",
-			[28811] = "honor:3040",
+			[40695] = "EmblemOfHeroism:40",
 			[28424] = "honor:4750",
 			[42952] = "EmblemOfHeroism:40",
 			[33770] = "honor:6840",
@@ -1000,10 +1000,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["point"] = {
 					"TOP", -- [1]
@@ -1019,6 +1015,10 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 	},
