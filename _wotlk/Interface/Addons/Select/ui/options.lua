@@ -7,7 +7,7 @@ s.options.name = "Select"
 
 function s.options.refresh()
     local settingsUI = s.options.scrollFrame:GetScrollChild().settings
-    s.options.version:SetText(GetAddOnMetadata("Select","Version"))
+    s.options.version:SetText(format("version %s",GetAddOnMetadata("Select","Version") or ""))
     s.options:EnableSettings(not InCombatLockdown())
     for k,v in pairs(s.settings.defaults) do
         if settingsUI[k] then

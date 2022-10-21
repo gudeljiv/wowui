@@ -239,6 +239,9 @@ f:SetScript('OnEvent', function(self, event, ...)
 		else
 			NIT:recordCharacterData();
 		end
+		C_Timer.After(3, function()
+			NIT:recordLockoutData();
+		end)
 	elseif (event == "ADDONS_UNLOADING" ) then
 		NIT:playerLogout(...);
 		--Had this disable this here, too many player stats are set to 0 or nil right before PLAYER_LOGOUT.
@@ -278,6 +281,9 @@ f:SetScript('OnEvent', function(self, event, ...)
 		NIT:throddleEventByFunc(event, 2, "recordGroupInfo", ...);
 	elseif (event == "ENCOUNTER_END") then
 		NIT:throddleEventByFunc(event, 2, "recordGroupInfo", ...);
+		C_Timer.After(3, function()
+			NIT:recordLockoutData();
+		end)
 	elseif (event == "CHAT_MSG_COMBAT_FACTION_CHANGE") then
 		NIT:chatMsgCombatFactionChange(...);
 	elseif (event == "CHAT_MSG_COMBAT_HONOR_GAIN") then
@@ -2011,6 +2017,9 @@ local currencyItems = {
 	[135947] = "Emblem of Heroism",
 	[135885] = "Emblem of Conquest",
 	[334365] = "Emblem of Frost",
+	--Profession tokens.
+	[134411] = "Epicurean's Award",
+	[134138] = "Dalaran Jewelcrafter's Token",
 };
 function NIT:recordCurrency()
 	if (NIT.isClassic or NIT.isTBC) then
@@ -2446,21 +2455,6 @@ function NIT:tickerCharacterData()
 		NIT:tickerCharacterData();
 	end)
 end
-
---Correct a bug, remove this later.
---[[function NIT:correctCharacterData()
-	NIT.data.chars = nil;
-	for k, v in pairs(NIT.db.global) do
-		if (type(v) == "table" and k ~= "minimapIcon" and k ~= "data") then
-			if (v.myChars) then
-				for kk, vv in pairs(v.myChars) do
-					NIT.db.global[k].myChars[kk].englishClass = nil;
-					NIT.db.global[k].myChars[kk].localizedClass = nil;
-				end
-			end
-		end
-	end
-end]]
 
 function NIT:resetCharData()
 	if (NIT.db.global.resetCharData) then

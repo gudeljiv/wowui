@@ -1,12 +1,12 @@
 # LibColors-1.0 (WoW AddOn Library)
-![Build](https://github.com/hizuro/LibColors-1.0/actions/workflows/bigwigsmods-packager.yml/badge.svg)
-![Tag](https://img.shields.io/github/v/tag/hizuro/LibColors-1.0?style=flat-square)
-![Downloads](https://img.shields.io/github/downloads/hizuro/LibColors-1.0/total?style=flat-square)
-![Downloads](https://img.shields.io/github/downloads/hizuro/LibColors-1.0/latest/total?style=flat-square)
+![Build](https://github.com/HizurosWoWAddOns/LibColors-1.0/actions/workflows/bigwigsmods-packager.yml/badge.svg)
+![Tag](https://img.shields.io/github/v/tag/HizurosWoWAddOns/LibColors-1.0?style=flat-square)
+![Downloads](https://img.shields.io/github/downloads/HizurosWoWAddOns/LibColors-1.0/total?style=flat-square)
+![Downloads](https://img.shields.io/github/downloads/HizurosWoWAddOns/LibColors-1.0/latest/total?style=flat-square)
 &nbsp; &nbsp; &nbsp; &nbsp;
 [![Patreon](https://img.shields.io/badge/&zwj;-Patreon-gray?logo=patreon&color=red&style=flat-square)](https://www.patreon.com/bePatron?u=12558524)
 [![Paypal](https://img.shields.io/badge/&zwj;-Paypal-gray?logo=paypal&color=blue&style=flat-square)](https://paypal.me/hizuro)
-![Sponsors](https://img.shields.io/github/sponsors/hizuro?logo=github&style=flat-square)
+![Sponsors](https://img.shields.io/github/sponsors/HizurosWoWAddOns?logo=github&style=flat-square)
 
 ## Short description
 A library to easy coloring strings by hex codes, color tables, class names, color names and more.
@@ -126,7 +126,7 @@ The sources for the color sets are on top of the files.
 
 ## My other projects
 * [On Curseforge](https://www.curseforge.com/members/hizuro_de/projects)
-* [On Github](https://github.com/hizuro?tab=repositories)
+* [On Github](https://github.com/HizurosWoWAddOns?tab=repositories)
 
 ## Disclaimer
 > World of Warcraft© and Blizzard Entertainment© are all trademarks or registered trademarks of Blizzard Entertainment in the United States and/or other countries. These terms and all related materials, logos, and images are copyright © Blizzard Entertainment.

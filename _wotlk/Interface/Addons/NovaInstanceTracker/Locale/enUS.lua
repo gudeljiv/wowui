@@ -371,3 +371,6 @@ L["All Instance log data has been deleted."] = "All Instance log data has been d
 
 L["resetAllInstancesTitle"] = "Reset Instance Data";
 L["resetAllInstancesDesc"] = "This will reset all instance data and remove everything from the log. This does not reset trades.";
+
+L["autoCavernsArthasTitle"] = "Auto CoS Arthas";
+L["autoCavernsArthasDesc"] = "Auto dialogue owith arthas in the Culling of Strathholme in Wrath.";

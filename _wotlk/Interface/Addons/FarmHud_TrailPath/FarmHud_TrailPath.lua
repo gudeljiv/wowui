@@ -1,7 +1,7 @@
 
 local addon, ns = ...;
 local L = ns.L;
-ns.debugMode = "9.0.9-release"=="@".."project-version".."@";
+ns.debugMode = "9.0.11-release"=="@".."project-version".."@";
 LibStub("HizurosSharedTools").RegisterPrint(ns,addon,"FH/TP");
 
 local HBD = LibStub("HereBeDragons-2.0")
