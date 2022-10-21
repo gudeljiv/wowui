@@ -995,6 +995,72 @@ function NIT:addBackdrop(string)
 	end
 end
 
+local lockoutsFrame;
+local lockoutsFrameWidth = 100;
+function NIT:openLockoutsFrame()
+	if (not lockoutsFrame) then
+		--lockoutsFrame = NRC:createSimpleInputScrollFrame("NRCLockoutsFrame", 200, 400, 0, 100);
+		lockoutsFrame = NIT:createSimpleTextFrame("NRCLockoutsFrame", lockoutsFrameWidth, 100, 0, 330, 3)
+		lockoutsFrame.onUpdateFunction = "recalcLockoutsFrame";
+		lockoutsFrame.fs:SetText("|cFFFFFF00" .. L["Raid Lockouts (Including Alts)"] .. "|r");
+		lockoutsFrame.closeButton:SetPoint("TOPRIGHT", 3.45, 3.2);
+		lockoutsFrame.closeButton:SetWidth(28);
+		lockoutsFrame.closeButton:SetHeight(28);
+	end
+	if (not lockoutsFrame:IsShown()) then
+		lockoutsFrame:Show();
+	else
+		lockoutsFrame:Hide();
+	end
+end
+
+function NIT:recalcLockoutsFrame()
+	local me = UnitName("player");
+	local found;
+	local text = "";
+	for k, v in pairs(NIT.data) do
+		if (type(v) == "table") then
+			if (k == "myChars") then
+				for char, charData in pairs(v) do
+					local found2;
+					local _, _, _, classColorHex = GetClassColor(charData.classEnglish);
+					local text2 = "\n|c" .. classColorHex .. char .. "|r";
+					if (charData.savedInstances) then
+						for instance, instanceData in pairs(charData.savedInstances) do
+							if (instanceData.locked and instanceData.resetTime and instanceData.resetTime > GetServerTime()) then
+								local timeString = "(" .. NIT:getTimeString(instanceData.resetTime - GetServerTime(), true, NIT.db.global.timeStringType) .. ")";
+								local name = instanceData.name;
+								if (instanceData.name and instanceData.difficultyName) then
+									name = GetDungeonNameWithDifficulty(instanceData.name, instanceData.difficultyName);
+								end
+								text2 = text2 .. "\n  |cFFFFFF00-|r|cFFFFAE42" .. name .. "|r |cFF9CD6DE" .. timeString .. "|r";
+								found = true;
+								found2 = true;
+							end
+						end
+					end
+					if (found2) then
+						text = text .. text2;
+					end
+				end
+			end
+		end
+	end
+	if (not found) then
+		text = L["noCurrentRaidLockouts"];
+	end
+	lockoutsFrame.fs2:SetText(text);
+	local width = lockoutsFrame.fs2:GetStringWidth();
+	if (width < 200) then
+		width = 200;
+	end
+	if (width > lockoutsFrameWidth) then
+		lockoutsFrameWidth = width;
+		lockoutsFrame:SetWidth(width + 18);
+	end
+	lockoutsFrame:SetHeight(lockoutsFrame.fs2:GetStringHeight() + 40);
+end
+
 local NITInstanceFrame = CreateFrame("ScrollFrame", "NITInstanceFrame", UIParent, NIT:addBackdrop("InputScrollFrameTemplate"));
 local instanceFrameWidth = 620;
 NITInstanceFrame:Hide();
@@ -1134,7 +1200,7 @@ end)
 --Trade log button.
 local NITInstanceFrameTradesButton = CreateFrame("Button", "NITInstanceFrameTradesButton", NITInstanceFrameClose, "UIPanelButtonTemplate");
 --NITInstanceFrameTradesButton:SetPoint("CENTER", -60, -14);
-NITInstanceFrameTradesButton:SetPoint("CENTER", -61, -38);
+NITInstanceFrameTradesButton:SetPoint("CENTER", -61, -54);
 NITInstanceFrameTradesButton:SetWidth(95);
 NITInstanceFrameTradesButton:SetHeight(17);
 NITInstanceFrameTradesButton:SetText("Trade Log");
@@ -1156,6 +1222,37 @@ NITInstanceFrameTradesButton:SetScript("OnMouseUp", function(self, button)
 	end
 end)
 NITInstanceFrameTradesButton:SetScript("OnHide", function(self)
+	if (self:GetParent():GetParent().isMoving) then
+		self:GetParent():GetParent():StopMovingOrSizing();
+		self:GetParent():GetParent().isMoving = false;
+	end
+end)
+
+--Lockouts button.
+local NITInstanceFrameLockoutsButton = CreateFrame("Button", "NITInstanceFrameLockoutsButton", NITInstanceFrameClose, "UIPanelButtonTemplate");
+--NITInstanceFrameLockoutsButton:SetPoint("CENTER", -60, -14);
+NITInstanceFrameLockoutsButton:SetPoint("CENTER", -61, -38);
+NITInstanceFrameLockoutsButton:SetWidth(95);
+NITInstanceFrameLockoutsButton:SetHeight(17);
+NITInstanceFrameLockoutsButton:SetText("Lockouts");
+NITInstanceFrameLockoutsButton:SetNormalFontObject("GameFontNormalSmall");
+NITInstanceFrameLockoutsButton:SetScript("OnClick", function(self, arg)
+	NIT:openLockoutsFrame();
+end)
+NITInstanceFrameLockoutsButton:SetScript("OnMouseDown", function(self, button)
+	if (button == "LeftButton" and not self:GetParent():GetParent().isMoving) then
+		self:GetParent():GetParent().EditBox:ClearFocus();
+		self:GetParent():GetParent():StartMoving();
+		self:GetParent():GetParent().isMoving = true;
+	end
+end)
+NITInstanceFrameLockoutsButton:SetScript("OnMouseUp", function(self, button)
+	if (button == "LeftButton" and self:GetParent():GetParent().isMoving) then
+		self:GetParent():GetParent():StopMovingOrSizing();
+		self:GetParent():GetParent().isMoving = false;
+	end
+end)
+NITInstanceFrameLockoutsButton:SetScript("OnHide", function(self)
 	if (self:GetParent():GetParent().isMoving) then
 		self:GetParent():GetParent():StopMovingOrSizing();
 		self:GetParent():GetParent().isMoving = false;
@@ -3664,78 +3761,80 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 					end
 				end
 			end
-			local attunements = "\n\n|cFFFFFF00" .. L["attunements"] .. "|r";
-			local foundAttune;
-			if (data.mcAttune) then
-				attunements = attunements .. "\n  " .. color1 .. "Molten Core|r";
-				foundAttune = true;
-			end
-			if (data.onyAttune) then
-				attunements = attunements .. "\n  " .. color1 .. "Onyxia's Lair|r";
-				foundAttune = true;
-			end
-			if (data.bwlAttune) then
-				attunements = attunements .. "\n  " .. color1 .. "Blackwing Lair|r";
-				foundAttune = true;
-			end
-			if (data.naxxAttune) then
-				attunements = attunements .. "\n  " .. color1 .. "Naxxramas|r";
-				foundAttune = true;
-			end
-			if (data.karaAttune) then
-				attunements = attunements .. "\n  " .. color1 .. "Karazhan|r";
-				foundAttune = true;
-			end
-			if (data.shatteredHallsAttune) then
-				attunements = attunements .. "\n  " .. color1 .. "The Shattered Halls|r"; --Key.
-				foundAttune = true;
-			end
-			if (data.serpentshrineAttune) then
-				attunements = attunements .. "\n  " .. color1 .. "Serpentshrine Cavern|r";
-				foundAttune = true;
-			end
-			if (data.arcatrazAttune) then
-				attunements = attunements .. "\n  " .. color1 .. "The Arcatraz|r"; --Key.
-				foundAttune = true;
-			end
-			if (data.blackMorassAttune) then
-				attunements = attunements .. "\n  " .. color1 .. "Black Morass|r";
-				foundAttune = true;
-			end
-			if (data.hyjalAttune) then
-				attunements = attunements .. "\n  " .. color1 .. "Battle of Mount Hyjal|r";
-				foundAttune = true;
-			end
-			if (data.blackTempleAttune) then
-				attunements = attunements .. "\n  " .. color1 .. "Black Temple|r";
-				foundAttune = true;
-			end
-			if (data.hellfireCitadelAttune) then
-				attunements = attunements .. "\n  " .. color1 .. "Hellfire Citadel|r"; --Key.
-				foundAttune = true;
-			end
-			if (data.coilfangAttune) then
-				attunements = attunements .. "\n  " .. color1 .. "Coilfang Reservoir|r"; --Key.
-				foundAttune = true;
-			end
-			if (data.shadowLabAttune) then
-				attunements = attunements .. "\n  " .. color1 .. "Shadow Labyrinth|r"; --Key.
-				foundAttune = true;
-			end
-			if (data.auchindounAttune) then
-				attunements = attunements .. "\n  " .. color1 .. "Auchindoun|r"; --Key.
-				foundAttune = true;
-			end
-			if (data.tempestKeepAttune) then
-				attunements = attunements .. "\n  " .. color1 .. "Tempest Keep|r"; --Key
-				foundAttune = true;
-			end
-			if (data.cavernAttune) then
-				attunements = attunements .. "\n  " .. color1 .. "Caverns of Time|r"; --Key.
-				foundAttune = true;
-			end
-			if (foundAttune) then
-				text = text .. attunements;
+			if (NIT.isClassic or NIT.isTBC) then
+				local attunements = "\n\n|cFFFFFF00" .. L["attunements"] .. "|r";
+				local foundAttune;
+				if (data.mcAttune) then
+					attunements = attunements .. "\n  " .. color1 .. "Molten Core|r";
+					foundAttune = true;
+				end
+				if (data.onyAttune) then
+					attunements = attunements .. "\n  " .. color1 .. "Onyxia's Lair|r";
+					foundAttune = true;
+				end
+				if (data.bwlAttune) then
+					attunements = attunements .. "\n  " .. color1 .. "Blackwing Lair|r";
+					foundAttune = true;
+				end
+				if (data.naxxAttune) then
+					attunements = attunements .. "\n  " .. color1 .. "Naxxramas|r";
+					foundAttune = true;
+				end
+				if (data.karaAttune) then
+					attunements = attunements .. "\n  " .. color1 .. "Karazhan|r";
+					foundAttune = true;
+				end
+				if (data.shatteredHallsAttune) then
+					attunements = attunements .. "\n  " .. color1 .. "The Shattered Halls|r"; --Key.
+					foundAttune = true;
+				end
+				if (data.serpentshrineAttune) then
+					attunements = attunements .. "\n  " .. color1 .. "Serpentshrine Cavern|r";
+					foundAttune = true;
+				end
+				if (data.arcatrazAttune) then
+					attunements = attunements .. "\n  " .. color1 .. "The Arcatraz|r"; --Key.
+					foundAttune = true;
+				end
+				if (data.blackMorassAttune) then
+					attunements = attunements .. "\n  " .. color1 .. "Black Morass|r";
+					foundAttune = true;
+				end
+				if (data.hyjalAttune) then
+					attunements = attunements .. "\n  " .. color1 .. "Battle of Mount Hyjal|r";
+					foundAttune = true;
+				end
+				if (data.blackTempleAttune) then
+					attunements = attunements .. "\n  " .. color1 .. "Black Temple|r";
+					foundAttune = true;
+				end
+				if (data.hellfireCitadelAttune) then
+					attunements = attunements .. "\n  " .. color1 .. "Hellfire Citadel|r"; --Key.
+					foundAttune = true;
+				end
+				if (data.coilfangAttune) then
+					attunements = attunements .. "\n  " .. color1 .. "Coilfang Reservoir|r"; --Key.
+					foundAttune = true;
+				end
+				if (data.shadowLabAttune) then
+					attunements = attunements .. "\n  " .. color1 .. "Shadow Labyrinth|r"; --Key.
+					foundAttune = true;
+				end
+				if (data.auchindounAttune) then
+					attunements = attunements .. "\n  " .. color1 .. "Auchindoun|r"; --Key.
+					foundAttune = true;
+				end
+				if (data.tempestKeepAttune) then
+					attunements = attunements .. "\n  " .. color1 .. "Tempest Keep|r"; --Key
+					foundAttune = true;
+				end
+				if (data.cavernAttune) then
+					attunements = attunements .. "\n  " .. color1 .. "Caverns of Time|r"; --Key.
+					foundAttune = true;
+				end
+				if (foundAttune) then
+					text = text .. attunements;
+				end
 			end
 			text = text .. "\n\n|cFFFFFF00" .. L["currentRaidLockouts"] .. "|r";
 			local foundLockout;
@@ -3750,7 +3849,11 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 				for k, v in NIT:pairsByKeys(data.savedInstances) do
 					if (v.locked and v.resetTime and v.resetTime > GetServerTime()) then
 						local timeString = "(" .. NIT:getTimeString(v.resetTime - GetServerTime(), true, NIT.db.global.timeStringType) .. " " .. L["left"] .. ")";
-						lockoutString = lockoutString .. "\n  " .. color1 .. v.name .. "|r " .. color2 .. timeString .. "|r";
+						if (v.difficultyName) then
+							lockoutString = lockoutString .. "\n  " .. color1 .. GetDungeonNameWithDifficulty(v.name, v.difficultyName) .. "|r " .. color2 .. timeString .. "|r";
+						else
+							lockoutString = lockoutString .. "\n  " .. color1 .. v.name .. "|r " .. color2 .. timeString .. "|r";
+						end
 						foundLockout = true;
 					end
 				end
@@ -3861,6 +3964,7 @@ local f = CreateFrame("Frame");
 f:RegisterEvent("GOSSIP_SHOW");
 f:SetScript('OnEvent', function(self, event, ...)
 	if (event == "GOSSIP_SHOW") then
+		local isInstance, instanceType = IsInInstance();
 		local g1, type1, g2, type2, g3, type3, g4, type4, g5, type5, g6, type6, g7, type7, g8, type8 = GetGossipOptions();
 		local npcGUID = UnitGUID("npc");
 		local npcID;
@@ -3887,6 +3991,10 @@ f:SetScript('OnEvent', function(self, event, ...)
 		end
 		if (npcID == "20142" and NIT.db.global.autoCavernsFlight and C_QuestLog.IsQuestFlaggedCompleted(10279)) then
 			--Steward of Time										--To The Master's Lair
+			SelectGossipOption(1);
+			return;
+		end
+		if (npcID == "26499" and NIT.db.global.autoCavernsArthas and isInstance) then
 			SelectGossipOption(1);
 			return;
 		end
@@ -3965,4 +4073,103 @@ end]]
 function NIT:resetAllInstances()
 	NIT.data.instances = {};
 	NIT:print(L["All Instance log data has been deleted."]);
+end
+
+function NIT:createSimpleTextFrame(name, width, height, x, y, borderSpacing)
+	local frame = CreateFrame("Frame", name, UIParent, "BackdropTemplate");
+	if (borderSpacing) then
+		frame.borderFrame = CreateFrame("Frame", "$parentBorderFrame", frame, "BackdropTemplate");
+		frame.borderFrame:SetPoint("TOP", 0, borderSpacing);
+		frame.borderFrame:SetPoint("BOTTOM", 0, -borderSpacing);
+		frame.borderFrame:SetPoint("LEFT", -borderSpacing, 0);
+		frame.borderFrame:SetPoint("RIGHT", borderSpacing, 0);
+		frame:SetBackdrop({
+			bgFile = "Interface\\Buttons\\WHITE8x8",
+			insets = {top = 0, left = 2, bottom = 2, right = 2},
+		});
+		frame.borderFrame:SetBackdrop({
+			edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+			--edgeFile = "Interface\\Addons\\NovaRaidCompanion\\Media\\UI-Tooltip-Border-FullTopRight",
+			tileEdge = true,
+			edgeSize = 16,
+			insets = {top = 2, left = 2, bottom = 2, right = 2},
+		});
+		frame:SetBackdropColor(0, 0, 0, 0.9);
+	else
+		frame:SetBackdrop({
+			bgFile = "Interface\\Buttons\\WHITE8x8",
+			insets = {top = 0, left = 0, bottom = 0, right = 0},
+			edgeFile = [[Interface/Buttons/WHITE8X8]], 
+			edgeSize = 4,
+		});
+		frame:SetBackdropColor(0, 0, 0, 0.9);
+		frame:SetBackdropBorderColor(1, 1, 1, 0.2);
+	end
+	--frame:SetToplevel(true);
+	frame:SetMovable(true);
+	frame:EnableMouse(true);
+	frame:SetUserPlaced(false);
+	frame:SetToplevel(true);
+	frame:SetSize(width, height);
+	frame:SetFrameStrata("HIGH");
+	frame:SetFrameLevel(10);
+	frame:SetClampedToScreen(true);
+	frame:SetPoint("TOP", UIParent, "CENTER", x, y);
+	frame.fs = frame:CreateFontString(name .. "FS", "HIGH");
+	frame.fs:SetPoint("TOP", 0, -3);
+	frame.fs:SetFont(NIT.regionFont, 14);
+	frame.fs2 = frame:CreateFontString(name .. "FS", "HIGH");
+	frame.fs2:SetPoint("TOPLEFT", 7, -25);
+	frame.fs2:SetFont(NIT.regionFont, 14);
+	frame.fs2:SetJustifyH("LEFT");
+	--Top right X close button.
+	frame.closeButton = CreateFrame("Button", name .. "Close", frame, "UIPanelCloseButton");
+	frame.closeButton:SetPoint("TOPRIGHT", 3.45, 3.2);
+	frame.closeButton:SetWidth(26);
+	frame.closeButton:SetHeight(26);
+	frame.closeButton:SetFrameLevel(15);
+	frame.closeButton:SetScript("OnClick", function(self, arg)
+		frame:Hide();
+	end)
+	frame:SetScript("OnMouseDown", function(self, button)
+		if (button == "LeftButton" and not self.isMoving) then
+			self:StartMoving();
+			self.isMoving = true;
+		end
+	end)
+	frame:SetScript("OnMouseUp", function(self, button)
+		if (button == "LeftButton" and self.isMoving) then
+			self:StopMovingOrSizing();
+			self.isMoving = false;
+			frame:SetUserPlaced(false);
+			NIT.db.global[frame:GetName() .. "_point"], _, NIT.db.global[frame:GetName() .. "_relativePoint"], 
+					NIT.db.global[frame:GetName() .. "_x"], NIT.db.global[frame:GetName() .. "_y"] = frame:GetPoint();
+		end
+	end)
+	frame:SetScript("OnHide", function(self)
+		if (self.isMoving) then
+			self:StopMovingOrSizing();
+			self.isMoving = false;
+		end
+	end)
+	if (NIT.db.global[frame:GetName() .. "_point"]) then
+		frame.ignoreFramePositionManager = true;
+		frame:ClearAllPoints();
+		frame:SetPoint(NIT.db.global[frame:GetName() .. "_point"], nil, NIT.db.global[frame:GetName() .. "_relativePoint"],
+				NIT.db.global[frame:GetName() .. "_x"], NIT.db.global[frame:GetName() .. "_y"]);
+		frame:SetUserPlaced(false);
+	end
+	frame.lastUpdate = 0;
+	frame:SetScript("OnUpdate", function(self)
+		--Update throddle.
+		if (GetTime() - frame.lastUpdate > 1) then
+			frame.lastUpdate = GetTime();
+			if (frame.onUpdateFunction) then
+				--If we declare an update function for this frame to run when shown.
+				NIT[frame.onUpdateFunction]();
+			end
+		end
+	end)
+	frame:Hide();
+	return frame;
 end

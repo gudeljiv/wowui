@@ -596,5 +596,10 @@
 				</ScrollChild>
 			</ScrollFrame>
 		</Frames>
+		<Scripts>
+			<OnShow>
+				self:refresh()
+			</OnShow>
+		</Scripts>
 	</Frame>
 </Ui>

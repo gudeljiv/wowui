@@ -1,3 +1,7 @@
+10/19/2022 version 3.4.1
+- Fix for Dragonflight beta clients (10.0.2) inability to use selected action.
+- Known issue: Alt+click and right click of flyout buttons are behaving as an unmodified left click. This should be corrected soon.
+
 10/04/2022 version 3.4.0
 - Update for Dragonflight client support
 - Beta/PTR users will need to load out of date addons for this to work until the Dragonflight Pre-Patch

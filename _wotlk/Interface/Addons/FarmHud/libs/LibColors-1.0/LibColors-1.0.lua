@@ -1,5 +1,5 @@
 
-local MAJOR, MINOR = "LibColors-1.0", tonumber((gsub("r110","r",""))) or 9999;
+local MAJOR, MINOR = "LibColors-1.0", tonumber((gsub("r111","r",""))) or 9999;
 local lib = LibStub:NewLibrary(MAJOR, MINOR)
 local _G,string,tonumber,rawset,type = _G,string,tonumber,rawset,type
 local hex = "%02x";
@@ -139,8 +139,15 @@ do --[[ basic set of colors ]]
 		end
 	end
 
+	-- more colors defined in game client
+	for _,name in ipairs({"battlenet"})do
+		local font_color = _G[name:upper().."_FONT_COLOR"];
+		if font_color then
+			tmp[name] = font_color:GenerateHexColor();
+		end
+	end
+
 	lib.colorset(tmp)
 end
 
 --[[ space for more colors later... ]]
-
