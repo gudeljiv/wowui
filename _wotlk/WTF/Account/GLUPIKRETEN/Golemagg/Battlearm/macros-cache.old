@@ -1,7 +1,3 @@
-VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
-#showtooltip death pact
-/cast [nopet]raise dead;death pact
-END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
@@ -34,4 +30,8 @@ VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 /cast Heart Strike
 /use 13
 /use 14
+END
+VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Death Pact
+/cast [nopet]Raise Dead;Death Pact
 END
