@@ -4,6 +4,19 @@ local count
 Minimap:ClearAllPoints()
 Minimap:SetPoint('TOPRIGHT', UIParent, 'TOPRIGHT', -40, -40)
 
+UIWidgetBelowMinimapContainerFrame:HookScript(
+	'OnUpdate',
+	function(self)
+		UIWidgetBelowMinimapContainerFrame:ClearAllPoints()
+		UIWidgetBelowMinimapContainerFrame:SetPoint('TOPRIGHT', 'UIParent', 'TOPRIGHT', -35, 4)
+
+		if (nHealthStatusBar and nHealthStatusBar:IsVisible()) then
+			UIWidgetTopCenterContainerFrame:ClearAllPoints()
+			UIWidgetTopCenterContainerFrame:SetPoint('TOP', 'UIParent', 'TOP', 0, -70)
+		end
+	end
+)
+
 MiniMapWorldMapButton:HookScript(
 	'OnShow',
 	function(self)

@@ -252,19 +252,6 @@ f:SetScript(
 				end
 			end
 		)
-
-		UIWidgetBelowMinimapContainerFrame:ClearAllPoints()
-		UIWidgetBelowMinimapContainerFrame:SetPoint('TOPRIGHT', 'UIParent', 'TOPRIGHT', -35, 4)
-		UIWidgetBelowMinimapContainerFrame.SetPoint = function()
-		end
-		-- UIWidgetBelowMinimapContainerFrame:SetMovable(false)
-
-		if (nHealthStatusBar and nHealthStatusBar:IsVisible()) then
-			UIWidgetTopCenterContainerFrame:ClearAllPoints()
-			UIWidgetTopCenterContainerFrame:SetPoint('TOP', 'UIParent', 'TOP', 0, -70)
-			UIWidgetBelowMinimapContainerFrame.SetPoint = function()
-			end
-		end
 	end
 )
 
