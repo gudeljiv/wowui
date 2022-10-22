@@ -37,8 +37,8 @@ f:SetScript(
 			cc_combat:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureWhite')
 			cc_combat:SetBeautyBorderColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 			SetCVar('nameplateShowEnemies', 1)
-			SetCVar('nameplateShowEnemyMinions', 1)
-			SetCVar('nameplateShowEnemyMinus', 1)
+			SetCVar('nameplateShowEnemyMinions', 0)
+			SetCVar('nameplateShowEnemyMinus', 0)
 		-- SetCVar('nameplateShowFriends', 0)
 		-- SetCVar('nameplateShowFriendlyMinions', 0)
 		end

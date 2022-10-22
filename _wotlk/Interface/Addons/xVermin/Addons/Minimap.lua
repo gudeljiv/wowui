@@ -12,41 +12,41 @@ MiniMapWorldMapButton:HookScript(
 )
 
 MiniMapLFGFrame:HookScript(
-	'OnShow',
+	'OnUpdate',
 	function(self)
-		MiniMapLFGFrame:ClearAllPoints()
-		MiniMapLFGFrame:SetPoint('BOTTOMRIGHT', Minimap, 'BOTTOMRIGHT', 0, 0)
+		if MiniMapBattlefieldFrame and MiniMapBattlefieldFrame:IsVisible() then
+			MiniMapLFGFrame:ClearAllPoints()
+			MiniMapLFGFrame:SetPoint('BOTTOM', MiniMapBattlefieldFrame, 'BOTTOM', -1, 30)
+		else
+			MiniMapLFGFrame:ClearAllPoints()
+			MiniMapLFGFrame:SetPoint('BOTTOMRIGHT', MinimapCluster, 'BOTTOMRIGHT', -40, -7)
+		end
 	end
 )
 
 MiniMapBattlefieldFrame:HookScript(
-	'OnShow',
+	'OnUpdate',
 	function(self)
 		MiniMapBattlefieldFrame:ClearAllPoints()
-		MiniMapBattlefieldFrame:SetPoint('BOTTOMRIGHT', Minimap, 'BOTTOMRIGHT', 0, 0)
+		MiniMapBattlefieldFrame:SetPoint('BOTTOMRIGHT', MinimapCluster, 'BOTTOMRIGHT', -40, -7)
 	end
 )
 
 GameTimeFrame:HookScript(
-	'OnShow',
+	'OnUpdate',
 	function(self)
-		if not GameTimeFrame.SetBackdrop then
-			Mixin(GameTimeFrame, BackdropTemplateMixin)
-		end
-		GameTimeFrame:CreateBeautyBorder(8)
-		GameTimeFrame:SetBackdrop(
-			{
-				bgFile = 'Interface\\Buttons\\WHITE8x8',
-				edgeFile = '',
-				tile = false,
-				tileSize = 0,
-				edgeSize = 0,
-				insets = {left = 0, right = 0, top = 0, bottom = 0}
-			}
-		)
-		GameTimeFrame:SetBackdropColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 0.2)
 		GameTimeFrame:ClearAllPoints()
-		GameTimeFrame:SetPoint('TOPLEFT', Minimap, 'TOPLEFT', 5, -5)
+		GameTimeFrame:SetPoint('BOTTOMLEFT', MinimapCluster, 'BOTTOMLEFT', 17, -3)
 		GameTimeFrame:SetSize(20, 20)
+
+		for i, v in pairs(
+			{
+				select(1, GameTimeFrame:GetRegions())
+			}
+		) do
+			if v then
+				v:SetVertexColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+			end
+		end
 	end
 )

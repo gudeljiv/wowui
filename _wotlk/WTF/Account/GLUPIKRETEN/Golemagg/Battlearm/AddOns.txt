@@ -172,3 +172,4 @@ Examiner: disabled
 InspectEquip: disabled
 Capping_Options: enabled
 TacoTip: disabled
+Gladdy: disabled

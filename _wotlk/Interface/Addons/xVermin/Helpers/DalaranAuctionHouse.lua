@@ -6,7 +6,7 @@ f:RegisterEvent('GOSSIP_SHOW')
 f:SetScript(
 	'OnEvent',
 	function()
-		if GetUnitName('target') == 'Brassbolt Mechawrench' then
+		if GetUnitName('target') == 'Reginald Arcfire' then
 			SelectGossipOption(1)
 		end
 	end
