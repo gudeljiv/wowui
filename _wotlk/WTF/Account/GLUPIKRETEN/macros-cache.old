@@ -19,13 +19,13 @@ VER 3 0000000000000018 "ASAB" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:28399
-/castsequence [combat] reset=combat item:13444
+/use [nocombat]item:0
+/castsequence [combat] reset=combat item:22832
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:29451
-/castsequence [combat] reset=combat 
+/use [nocombat]item:33454
+/castsequence [combat] reset=combat item:22829
 END
 VER 3 000000000000000B "lvl enchant" "132089"
 /click CraftCreateButton
@@ -38,13 +38,13 @@ VER 3 0000000000000016 "Mill" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:12207
+#showtooltip item:33454
 /cast feed pet
-/use item:12207
+/use item:33454
 END
 VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:22829
 END
 VER 3 0000000000000017 "Prsp" "Inv_misc_questionmark"
 #showtooltip item:2772
@@ -56,8 +56,8 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
-/run ArenaEnemyFrame1:ClearAllPoints()
-/run ArenaEnemyFrame1:SetPoint('TOP', UIParent', 'TOP', 0, 0)
+/run GameTimeFrame:ClearAllPoints()
+/run GameTimeFrame:SetPoint('BOTTOMLEFT', MinimapCluster, 'BOTTOMLEFT', 17, -3)
 END
 VER 3 000000000000001B "TSMMacro" "INV_Misc_Flower_01"
 /click TSMShoppingBuyoutBtn

@@ -14,6 +14,7 @@ Bagnon_Sets = {
 	},
 	["global"] = {
 		["inventory"] = {
+			["y"] = -293.1571044921875,
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -48,21 +49,21 @@ Bagnon_Sets = {
 				0, -- [3]
 				0.7481050789356232, -- [4]
 			},
-			["y"] = -293.1571044921875,
+			["search"] = true,
 			["hiddenRules"] = {
 			},
-			["search"] = true,
+			["options"] = true,
 			["bagBreak"] = false,
-			["x"] = -408.9896240234375,
+			["x"] = -408.98974609375,
 			["sort"] = true,
+			["showBags"] = true,
+			["broker"] = false,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
-			["options"] = true,
-			["broker"] = false,
 			["bagToggle"] = true,
 			["money"] = true,
 		},

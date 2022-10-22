@@ -252,6 +252,19 @@ f:SetScript(
 				end
 			end
 		)
+
+		UIWidgetBelowMinimapContainerFrame:ClearAllPoints()
+		UIWidgetBelowMinimapContainerFrame:SetPoint('TOPRIGHT', 'UIParent', 'TOPRIGHT', -35, 4)
+		UIWidgetBelowMinimapContainerFrame.SetPoint = function()
+		end
+		-- UIWidgetBelowMinimapContainerFrame:SetMovable(false)
+
+		if (nHealthStatusBar and nHealthStatusBar:IsVisible()) then
+			UIWidgetTopCenterContainerFrame:ClearAllPoints()
+			UIWidgetTopCenterContainerFrame:SetPoint('TOP', 'UIParent', 'TOP', 0, -70)
+			UIWidgetBelowMinimapContainerFrame.SetPoint = function()
+			end
+		end
 	end
 )
 
@@ -271,43 +284,30 @@ f:SetScript(
 -- 	end
 -- )
 
-local function myArenaStuff()
-	-- ArenaEnemyFrame1:ClearAllPoints()
-	-- ArenaEnemyFrame1:SetPoint('TOP', 'UIParent', 'TOP', -125, -70)
-	-- ArenaEnemyFrame2:ClearAllPoints()
-	-- ArenaEnemyFrame2:SetPoint('TOP', 'UIParent', 'TOP', 125, -70)
+-- local function myArenaStuff()
+-- 	-- ArenaEnemyFrame1:ClearAllPoints()
+-- 	-- ArenaEnemyFrame1:SetPoint('TOP', 'UIParent', 'TOP', -125, -70)
+-- 	-- ArenaEnemyFrame2:ClearAllPoints()
+-- 	-- ArenaEnemyFrame2:SetPoint('TOP', 'UIParent', 'TOP', 125, -70)
+-- end
 
-	UIWidgetBelowMinimapContainerFrame:ClearAllPoints()
-	UIWidgetBelowMinimapContainerFrame:SetPoint('TOPRIGHT', 'UIParent', 'TOPRIGHT', -35, 4)
-	UIWidgetBelowMinimapContainerFrame.SetPoint = function()
-	end
-	-- UIWidgetBelowMinimapContainerFrame:SetMovable(false)
+-- if IsAddOnLoaded('Blizzard_ArenaUI') then
+-- 	myArenaStuff()
+-- else
+-- 	local f = CreateFrame('Frame')
+-- 	f:RegisterEvent('ADDON_LOADED')
+-- 	f:SetScript(
+-- 		'OnEvent',
+-- 		function(self, event, addonName)
+-- 			print(addonName)
+-- 			if addonName ~= 'Blizzard_ArenaUI' then
+-- 				return
+-- 			end
 
-	if (nHealthStatusBar and nHealthStatusBar:IsVisible()) then
-		UIWidgetTopCenterContainerFrame:ClearAllPoints()
-		UIWidgetTopCenterContainerFrame:SetPoint('TOP', 'UIParent', 'TOP', 0, -70)
-		UIWidgetBelowMinimapContainerFrame.SetPoint = function()
-		end
-	end
-end
+-- 			myArenaStuff()
 
-if IsAddOnLoaded('Blizzard_ArenaUI') then
-	myArenaStuff()
-else
-	local f = CreateFrame('Frame')
-	f:RegisterEvent('ADDON_LOADED')
-	f:SetScript(
-		'OnEvent',
-		function(self, event, addonName)
-			print(addonName)
-			if addonName ~= 'Blizzard_ArenaUI' then
-				return
-			end
-
-			myArenaStuff()
-
-			self:UnregisterEvent('ADDON_LOADED')
-			self:SetScript('OnEvent', nil)
-		end
-	)
-end
+-- 			self:UnregisterEvent('ADDON_LOADED')
+-- 			self:SetScript('OnEvent', nil)
+-- 		end
+-- 	)
+-- end

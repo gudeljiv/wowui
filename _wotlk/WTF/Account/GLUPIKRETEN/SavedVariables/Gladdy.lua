@@ -1,18 +1,90 @@
 
 GladdyXZ = {
 	["profileKeys"] = {
-		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+		["Mxzq - Golemagg"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
+		["Mxyz - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 	},
 	["profiles"] = {
-		["Moolatz - Golemagg"] = {
+		["Mxzq - Golemagg"] = {
+			["buffsBuffsYOffset"] = -82.99993896484375,
+			["drXOffset"] = 329.8001708984375,
+			["buffsBuffsCooldownPos"] = "BOTTOM",
+			["buffsCooldownPos"] = "TOP",
+			["ciXOffset"] = 80,
+			["racialXOffset"] = 255.900146484375,
+			["racialPos"] = "RIGHT",
+			["cooldownYOffset"] = 31.00006103515625,
+			["castBarXOffset"] = -235.9000854492188,
+			["buffsBuffsXOffset"] = 28.9998779296875,
+			["drCooldownPos"] = "RIGHT",
+			["classIconPos"] = "LEFT",
+			["petXOffset"] = 181.0001220703125,
+			["growUp"] = false,
+			["ciYOffset"] = -10.99993896484375,
+			["cooldownXPos"] = "LEFT",
+			["castBarPos"] = "LEFT",
+			["cooldownYPos"] = "TOP",
+			["trinketPos"] = "RIGHT",
+			["castBarYOffset"] = -30.5,
+			["ciAnchor"] = "healthBar",
+			["classIconXOffset"] = -74.9000244140625,
+			["petYOffset"] = -81.99993896484375,
+			["trinketXOffset"] = 182,
+			["drYOffset"] = -22.49993896484375,
+			["buffsXOffset"] = 28.9998779296875,
+			["ciPos"] = "TOP",
+			["racialAnchor"] = "trinket",
+			["newLayout"] = true,
+			["padding"] = 1,
+			["bottomMargin"] = 95,
+			["buffsYOffset"] = 62.00006103515625,
+		},
+		["Vermin - Golemagg"] = {
+			["castBarXOffset"] = -235.9000854492188,
+			["racialPos"] = "RIGHT",
+			["ciYOffset"] = -10.99993896484375,
+			["buffsBuffsXOffset"] = 28.9998779296875,
+			["ciAnchor"] = "healthBar",
+			["growUp"] = false,
+			["drCooldownPos"] = "RIGHT",
+			["bottomMargin"] = 95,
+			["ciXOffset"] = 80,
+			["racialXOffset"] = 255.900146484375,
+			["buffsBuffsCooldownPos"] = "BOTTOM",
+			["classIconPos"] = "LEFT",
+			["trinketPos"] = "RIGHT",
+			["cooldownXPos"] = "LEFT",
+			["buffsCooldownPos"] = "TOP",
+			["racialAnchor"] = "trinket",
+			["drYOffset"] = -22.49993896484375,
+			["castBarYOffset"] = -30.5,
+			["newLayout"] = true,
+			["buffsYOffset"] = 62.00006103515625,
+			["petYOffset"] = -81.99993896484375,
+			["trinketXOffset"] = 182,
+			["castBarPos"] = "LEFT",
+			["buffsBuffsYOffset"] = -82.99993896484375,
+			["petXOffset"] = 181.0001220703125,
+			["cooldownYPos"] = "TOP",
+			["padding"] = 1,
+			["ciPos"] = "TOP",
+			["classIconXOffset"] = -74.9000244140625,
+			["drXOffset"] = 329.8001708984375,
+			["cooldownYOffset"] = 31.00006103515625,
+			["buffsXOffset"] = 28.9998779296875,
+		},
+		["Default"] = {
 			["drBorderColor"] = {
 				["b"] = 0.6431372549019607,
 				["g"] = 0.6431372549019607,
 				["r"] = 0.6431372549019607,
 			},
 			["shadowsightTimerRelPoint1"] = "RIGHT",
+			["castBarXOffset"] = -29.89928436279297,
 			["drDisableCircle"] = true,
-			["castBarHeight"] = 23,
+			["trinketDisableCircle"] = true,
 			["healthBarNameFontSize"] = 15,
 			["drFontScale"] = 0.7000000000000001,
 			["trinketBorderColor"] = {
@@ -155,13 +227,13 @@ GladdyXZ = {
 				["18658"] = {
 					["enabled"] = false,
 				},
-				["49916"] = {
+				["34471"] = {
 					["enabled"] = false,
 				},
 				["19577"] = {
 					["enabled"] = false,
 				},
-				["34471"] = {
+				["49916"] = {
 					["enabled"] = false,
 				},
 				["64205"] = {
@@ -203,7 +275,7 @@ GladdyXZ = {
 				["20549"] = {
 					["enabled"] = false,
 				},
-				["49802"] = {
+				["44572"] = {
 					["enabled"] = false,
 				},
 				["1776"] = {
@@ -212,13 +284,13 @@ GladdyXZ = {
 				["64058"] = {
 					["enabled"] = false,
 				},
-				["44572"] = {
+				["49802"] = {
 					["enabled"] = false,
 				},
 				["2094"] = {
 					["enabled"] = false,
 				},
-				["1044"] = {
+				["2825"] = {
 					["enabled"] = false,
 				},
 				["47847"] = {
@@ -230,7 +302,7 @@ GladdyXZ = {
 				["49039"] = {
 					["enabled"] = false,
 				},
-				["2825"] = {
+				["32182"] = {
 					["enabled"] = false,
 				},
 				["19263"] = {
@@ -239,10 +311,10 @@ GladdyXZ = {
 				["12826"] = {
 					["enabled"] = false,
 				},
-				["48707"] = {
+				["55080"] = {
 					["enabled"] = false,
 				},
-				["55080"] = {
+				["48707"] = {
 					["enabled"] = false,
 				},
 				["74347"] = {
@@ -278,7 +350,7 @@ GladdyXZ = {
 				["33786"] = {
 					["enabled"] = false,
 				},
-				["32182"] = {
+				["18708"] = {
 					["enabled"] = false,
 				},
 				["23920"] = {
@@ -293,7 +365,7 @@ GladdyXZ = {
 				["49803"] = {
 					["enabled"] = false,
 				},
-				["18708"] = {
+				["1044"] = {
 					["enabled"] = false,
 				},
 				["45438"] = {
@@ -322,8 +394,8 @@ GladdyXZ = {
 				},
 			},
 			["castBarFont"] = "Arial Narrow",
-			["classIconXOffset"] = -54.8997802734375,
-			["racialYOffset"] = -0.4999999701976776,
+			["buffsXOffset"] = 29,
+			["cooldownFontScale"] = 0.8,
 			["trinketYOffset"] = 5.960464477539063e-08,
 			["classIconBorderColor"] = {
 				["a"] = 0.5422002375125885,
@@ -337,10 +409,9 @@ GladdyXZ = {
 			},
 			["cooldownFont"] = "Arial Narrow",
 			["locked"] = true,
-			["pixelPerfect"] = true,
 			["auraFont"] = "Arial Narrow",
-			["y"] = 515.836921749069,
-			["x"] = 907.4098768027106,
+			["y"] = 505.7034014641831,
+			["x"] = 1046.075848805776,
 			["bottomMargin"] = 24,
 			["trinketFont"] = "Arial Narrow",
 			["auraBuffBorderColor"] = {
@@ -364,24 +435,22 @@ GladdyXZ = {
 			["cooldownSize"] = 27.52403259277344,
 			["petHealthBarFont"] = "Arial Narrow",
 			["drGrowDirection"] = "LEFT",
+			["powerBarTexture"] = "Melli",
+			["classIconEnabled"] = false,
 			["trinketXOffset"] = 236.0000762939453,
-			["trinketSize"] = 58,
-			["shadowsightTimerX"] = -245.611083984375,
-			["ciYOffset"] = -3.99987804889679,
-			["buffsBuffsXOffset"] = 29,
-			["buffsDisableCircle"] = true,
+			["shadowsightTimerX"] = -183.2110748291016,
+			["totemPulseEnabled"] = false,
+			["powerActual"] = false,
+			["petYOffset"] = -82,
+			["shadowsightTimerRelPoint2"] = "RIGHT",
 			["racialEnabled"] = false,
 			["highlight"] = false,
-			["shadowsightTimerRelPoint2"] = "RIGHT",
 			["healthBarHealthFontSize"] = 10,
 			["auraDisableCircle"] = true,
 			["castBarYOffset"] = -59.9998779296875,
-			["cooldownFontScale"] = 0.8,
-			["npTotems"] = false,
+			["cooldownYOffset"] = 6.103515261202119e-05,
 			["racialSize"] = 58,
-			["newLayout"] = true,
 			["drXOffset"] = -103.8999252319336,
-			["healthBarTexture"] = "Melli",
 			["auraListInterrupts"] = {
 				["57994"] = {
 					["enabled"] = false,
@@ -389,10 +458,10 @@ GladdyXZ = {
 				["19244"] = {
 					["enabled"] = false,
 				},
-				["6552"] = {
+				["1766"] = {
 					["enabled"] = false,
 				},
-				["1766"] = {
+				["72"] = {
 					["enabled"] = false,
 				},
 				["19675"] = {
@@ -401,7 +470,7 @@ GladdyXZ = {
 				["47528"] = {
 					["enabled"] = false,
 				},
-				["72"] = {
+				["6552"] = {
 					["enabled"] = false,
 				},
 				["2139"] = {
@@ -416,7 +485,7 @@ GladdyXZ = {
 				["drinks"] = false,
 			},
 			["racialFont"] = "Arial Narrow",
-			["frameScale"] = 0.6,
+			["frameScale"] = 0.8,
 			["buffsYOffset"] = 32,
 			["healthBarBorderSize"] = 7.5,
 			["focusBorder"] = false,
@@ -433,7 +502,7 @@ GladdyXZ = {
 			["cooldownBorderStyle"] = "Interface\\AddOns\\Gladdy\\Images\\Border_rounded_blp",
 			["castBarTexture"] = "Melli",
 			["classIconWidthFactor"] = 0.95,
-			["classIconEnabled"] = false,
+			["petXOffset"] = 281,
 			["castBarIconSize"] = 24,
 			["drFont"] = "Arial Narrow",
 			["cooldownXOffset"] = 353.9998779296875,
@@ -447,34 +516,69 @@ GladdyXZ = {
 				["r"] = 0.3843137254901961,
 			},
 			["classIconSize"] = 58,
-			["castBarXOffset"] = -29.89928436279297,
-			["powerActual"] = false,
-			["trinketDisableCircle"] = true,
+			["castBarHeight"] = 23,
 			["powerShowRace"] = false,
-			["shadowsightTimerY"] = 151.5887908935547,
+			["healthBarTexture"] = "Melli",
+			["shadowsightTimerY"] = 148.3888397216797,
 			["healthMax"] = false,
+			["classIconXOffset"] = -54.8997802734375,
+			["drYOffset"] = -4.999878406524658,
+			["racialYOffset"] = -0.4999999701976776,
+			["petHealthBarTexture"] = "Melli",
+			["cooldownYGrowDirection"] = "DOWN",
+			["drBorderColorsEnabled"] = false,
+			["powerMax"] = false,
+			["newLayout"] = true,
+			["cooldown"] = false,
+			["petHealthBarFontSize"] = 20,
+			["castBarWidth"] = 324,
+			["ciYOffset"] = -3.99987804889679,
 			["auraDebuffBorderColor"] = {
 				["a"] = 0.5422002375125885,
 			},
-			["petYOffset"] = -82,
-			["petHealthBarTexture"] = "Melli",
-			["cooldownYOffset"] = 6.103515261202119e-05,
-			["cooldownYGrowDirection"] = "DOWN",
-			["powerBarTexture"] = "Melli",
-			["petHealthBarFontSize"] = 20,
-			["cooldown"] = false,
-			["castBarWidth"] = 324,
-			["petXOffset"] = 281,
 			["cooldownIconPadding"] = 0,
 			["powerBarFont"] = "Arial Narrow",
-			["drYOffset"] = -4.999878406524658,
-			["powerMax"] = false,
-			["buffsXOffset"] = 29,
-			["trinketWidthFactor"] = 1,
-			["totemPulseEnabled"] = false,
-			["drIconSize"] = 48,
 			["statusbarBorderOffset"] = 4.7,
-			["drBorderColorsEnabled"] = false,
+			["npTotems"] = false,
+			["buffsDisableCircle"] = true,
+			["drIconSize"] = 48,
+			["trinketSize"] = 58,
+			["trinketWidthFactor"] = 1,
+			["buffsBuffsXOffset"] = 29,
+		},
+		["Mxyz - Golemagg"] = {
+			["buffsBuffsYOffset"] = -82.99993896484375,
+			["drXOffset"] = 329.8001708984375,
+			["buffsXOffset"] = 28.9998779296875,
+			["buffsCooldownPos"] = "TOP",
+			["cooldownYOffset"] = 31.00006103515625,
+			["classIconXOffset"] = -74.9000244140625,
+			["drCooldownPos"] = "RIGHT",
+			["ciXOffset"] = 80,
+			["castBarXOffset"] = -235.9000854492188,
+			["racialXOffset"] = 255.900146484375,
+			["ciAnchor"] = "healthBar",
+			["classIconPos"] = "LEFT",
+			["cooldownYPos"] = "TOP",
+			["petXOffset"] = 181.0001220703125,
+			["ciYOffset"] = -10.99993896484375,
+			["cooldownXPos"] = "LEFT",
+			["castBarPos"] = "LEFT",
+			["racialAnchor"] = "trinket",
+			["petYOffset"] = -81.99993896484375,
+			["buffsYOffset"] = 62.00006103515625,
+			["newLayout"] = true,
+			["castBarYOffset"] = -30.5,
+			["trinketPos"] = "RIGHT",
+			["trinketXOffset"] = 182,
+			["drYOffset"] = -22.49993896484375,
+			["growUp"] = false,
+			["ciPos"] = "TOP",
+			["buffsBuffsXOffset"] = 28.9998779296875,
+			["racialPos"] = "RIGHT",
+			["padding"] = 1,
+			["bottomMargin"] = 95,
+			["buffsBuffsCooldownPos"] = "BOTTOM",
 		},
 	},
 }

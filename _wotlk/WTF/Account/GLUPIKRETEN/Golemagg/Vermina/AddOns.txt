@@ -177,3 +177,4 @@ XLoot_Frame: disabled
 XLoot: disabled
 XLoot_Group: disabled
 Roll: disabled
+Gladdy: disabled

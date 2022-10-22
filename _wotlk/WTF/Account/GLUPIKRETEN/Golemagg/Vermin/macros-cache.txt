@@ -86,3 +86,9 @@ VER 3 0000000001000016 " " "INV_MISC_QUESTIONMARK"
 /cast [nostance:1,nocombat] Battle Stance;[nostance:3,combat] Berserker Stance;
 /cast [nocombat] Charge; [combat] Intercept
 END
+VER 3 000000000100001A " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [stance:3] Recklessness
+/cast [stance:1] Retaliation
+/cast [stance:2] Shield Wall
+END
