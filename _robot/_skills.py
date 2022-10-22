@@ -49,7 +49,6 @@ skills["warrior"] = [
     {"name": "victory rush", "key": "e", "modifier": "shift"},
     {"name": "disarm", "key": "e", "modifier": "shift"},
     {"name": "thunder clap", "key": "e"},
-    {"name": "rampage", "key": "home"},
     {"name": "shield slam", "key": "4"},
     {"name": "devastate", "key": "f2", "modifier": "ctrl"},
     {"name": "vigilance", "key": "d", "modifier": "shift"},
@@ -114,6 +113,7 @@ skills["death knight"] = [
     {"name": "icebound fortitude", "key": "t"},
     {"name": "horn of winter", "key": "f4"},
     {"name": "pestilence", "key": "3"},
+    {"name": "chains of ice", "key": "v"},
 ]
 
 skills["priest"] = [
