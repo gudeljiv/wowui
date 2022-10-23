@@ -43,16 +43,11 @@ Bagnon_Sets = {
 				[-2] = true,
 			},
 			["money"] = true,
-			["color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.7481050789356232, -- [4]
-			},
+			["point"] = "TOPRIGHT",
 			["hiddenRules"] = {
 			},
-			["bagBreak"] = false,
 			["y"] = -293.1571044921875,
+			["bagBreak"] = false,
 			["x"] = -408.98974609375,
 			["sort"] = true,
 			["borderColor"] = {
@@ -61,10 +56,15 @@ Bagnon_Sets = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["broker"] = false,
 			["search"] = true,
+			["broker"] = false,
 			["bagToggle"] = true,
-			["point"] = "TOPRIGHT",
+			["color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.7481050789356232, -- [4]
+			},
 		},
 		["vault"] = {
 			["rules"] = {
@@ -129,11 +129,11 @@ Bagnon_Sets = {
 			},
 			["color"] = {
 			},
-			["hiddenBags"] = {
-			},
+			["x"] = 505.2874450683594,
 			["hiddenRules"] = {
 			},
-			["x"] = 505.2874450683594,
+			["hiddenBags"] = {
+			},
 		},
 		["bank"] = {
 			["rules"] = {
@@ -174,21 +174,21 @@ Bagnon_Sets = {
 			["bagToggle"] = true,
 			["columns"] = 18,
 			["alpha"] = 1,
+			["scale"] = 1,
+			["bagBreak"] = false,
+			["x"] = 729.3958129882812,
+			["search"] = true,
+			["broker"] = false,
+			["itemScale"] = 1,
+			["hiddenRules"] = {
+			},
+			["y"] = 514.9158325195312,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
-			["bagBreak"] = false,
-			["x"] = 729.3958129882812,
-			["search"] = true,
-			["broker"] = false,
-			["y"] = 514.9158325195312,
-			["hiddenRules"] = {
-			},
-			["itemScale"] = 1,
-			["scale"] = 1,
 		},
 	},
 	["countGuild"] = false,
@@ -218,15 +218,15 @@ Bagnon_Sets = {
 	["displayAuction"] = false,
 	["profiles"] = {
 	},
-	["displayCraft"] = false,
-	["soulColor"] = {
-	},
-	["glowPoor"] = true,
-	["normalColor"] = {
-	},
-	["glowQuality"] = true,
-	["colorSlots"] = false,
 	["keyColor"] = {
 	},
+	["soulColor"] = {
+	},
+	["glowQuality"] = true,
+	["normalColor"] = {
+	},
+	["glowPoor"] = true,
+	["colorSlots"] = false,
+	["displayCraft"] = false,
 	["displayScrapping"] = false,
 }
