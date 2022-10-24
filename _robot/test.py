@@ -10,7 +10,14 @@ import sys
 import mss
 import mss.tools
 import numpy
-import win32gui
+
+if(os.name == "posix"):
+    from AppKit import NSScreen
+    from AppKit import NSWorkspace
+else:
+    import win32gui
+    from win32api import GetSystemMetrics
+
 import math
 
 from pynput import keyboard
@@ -19,8 +26,8 @@ from os.path import isfile, join
 from os import listdir
 from os.path import exists
 from skimage.metrics import structural_similarity
-from win32api import GetSystemMetrics
 from datetime import datetime
+
 
 combat = False
 debug = False
@@ -29,8 +36,12 @@ dprint = False
 pause = True
 wow_class = "warrior"
 
-screen_width = GetSystemMetrics(0)
-screen_height = GetSystemMetrics(1)
+if os.name == "posix":
+    screen_width = NSScreen.mainScreen().frame().size.width
+    screen_height = NSScreen.mainScreen().frame().size.height
+else:
+    screen_width = GetSystemMetrics(0)
+    screen_height = GetSystemMetrics(1)
 
 monitor = str(screen_width)
 
@@ -61,6 +72,15 @@ if monitor == "3072":
     p_behind_left = 53
     p_clss_left = 66
     p_rotation_left = 70
+if monitor == "2048.0":
+    x = 12
+    y = 12
+    p_offgcd_left = 70
+    p_combat_left = 17
+    p_interrupt_left = 27
+    p_behind_left = 38
+    p_clss_left = 49
+    p_rotation_left = 60
 
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -68,23 +88,34 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 abilities_folder = dir_path + "\images\\" + monitor
 # abilities_list = [f for f in listdir(abilities_folder) if isfile(join(abilities_folder, f))]
 
+print(abilities_folder)
+
 healing = {}
-for skill in skills["healing"]:
-    healing[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+try:
+    for skill in skills["healing"]:
+        healing[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+except:
+    print("healing skills missing", datetime.now().strftime("%H:%M:%S"))
 
 abilities = {}
 # for ability in abilities_list:
 #     cv2grey = cv2.cvtColor(cv2.imread(abilities_folder + "/" + ability), cv2.COLOR_BGR2GRAY)
 #     abilities[ability.replace(".png", "")] = cv2grey
-
-for skill in skills[wow_class]:
-    abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
-    abilities = {**abilities, **healing}
+try:
+    for skill in skills[wow_class]:
+        abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+        abilities = {**abilities, **healing}
+except:
+    print("main skills missing", datetime.now().strftime("%H:%M:%S"))
 
 
 abilities_offgcd = {}
-for skill in skills["offgcd"][wow_class]:
-    abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+try:
+    for skill in skills["offgcd"][wow_class]:
+        abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+except:
+    print("offgcd skills missing", datetime.now().strftime("%H:%M:%S"))
+
 
 skills_loaded = "warrior"
 print("Script loaded and ready.", "Rotation is paused.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"))
@@ -114,10 +145,15 @@ with keyboard.Listener(on_press=on_press) as listener:
 
         while True:
             start_time = time.time()
-            active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
+            if os.name == "posix":
+                active_window = NSWorkspace.sharedWorkspace().activeApplication()["NSApplicationBundleIdentifier"]
+            else:
+                active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
-            p_main = {"top": 0, "left": 0, "width": x*2, "height": y*2}
-            p_offgcd = {"top": 0, "left":  p_offgcd_left, "width": x*2, "height": y*2}
+            # print(active_window)
+
+            p_main = {"top": 0, "left": 0, "width": x, "height": y}
+            p_offgcd = {"top": 0, "left":  p_offgcd_left, "width": x, "height": y}
             p_combat = {"top": 0, "left": p_combat_left, "width": 7, "height": 7}
             p_interrupt = {"top": 0, "left": p_interrupt_left, "width": 7, "height": 7}
             p_behind = {"top": 0, "left": p_behind_left, "width": 7, "height": 7}
@@ -126,12 +162,10 @@ with keyboard.Listener(on_press=on_press) as listener:
 
             grabbed_image = dir_path + "/images/_/main.png".format(**p_main)
             main_image = sct.grab(p_main)
-            main = main_image.pixel(int(x/2), int(y/2))
             mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
 
             q_image = dir_path + "/images/_/offgcd.png".format(**p_offgcd)
             offgcd_image = sct.grab(p_offgcd)
-            offgcd = offgcd_image.pixel(int(x/2), int(y/2))
             mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=q_image)
 
             combat_image = sct.grab(p_combat)
@@ -153,4 +187,4 @@ with keyboard.Listener(on_press=on_press) as listener:
             hex = '#%02x%02x%02x' % clss
 
             print(hex, clss, datetime.now().strftime("%H:%M:%S"))
-            time.sleep(1)
+            # time.sleep(1)
