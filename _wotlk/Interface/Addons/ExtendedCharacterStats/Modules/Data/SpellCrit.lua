@@ -51,7 +51,7 @@ function _SpellCrit:GetSpellCritFromBuffs()
         if spellId == 29178 then
             mod = mod + 9 -- 9% from Elemental Devastation Rank 3
         end
-        if spellId == 30482 then
+        if (not ECS.IsWotlk) and spellId == 30482 then
             mod = mod + 3 -- 3% from Molten Armor
         end
     end
@@ -93,6 +93,11 @@ function _SpellCrit:GetGeneralTalentModifier()
 
         local _, _, _, _, devastation, _, _, _ = GetTalentInfo(3, 7)
         mod = mod + devastation * 1 -- 0-5% Devastation
+    end
+
+    if ECS.IsWotlk and classId == Data.SHAMAN then
+        local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 8)
+        mod = points * 1 -- 0-5% Thundering Strikes
     end
 
     return mod

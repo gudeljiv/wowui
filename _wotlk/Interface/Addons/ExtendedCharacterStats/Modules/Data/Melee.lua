@@ -87,6 +87,12 @@ function _Melee:GetHitTalentBonus()
         end
     end
 
+    -- This assumes a DK is dual wielding and not only using a one-hand main hand weapon
+    if classId == Data.DEATHKNIGHT and Data:GetMeleeAttackSpeedOffHand() > 0 then
+        local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 16)
+        mod = points * 1 -- 0-3% Nerves of Cold Steel
+    end
+
     return mod
 end
 
@@ -106,7 +112,7 @@ function _Melee:GetHitFromBuffs()
         end
     end
 
-    if (not otherDraeneiInGroup) and IsSpellKnown(6562) then
+    if (not otherDraeneiInGroup) and (IsSpellKnown(6562) or IsSpellKnown(28878)) then
         mod = mod + 1
     end
 
@@ -127,8 +133,8 @@ function Data:MeleeHitMissChanceSameLevel()
     end
 
     if Data:GetMeleeAttackSpeedOffHand() > 0 then
-		missChance = missChance + 19;
-	end
+        missChance = missChance + 19;
+    end
 
     local hitValue = _Melee:GetHitRatingBonus()
     if hitValue then -- This needs to be checked because on dungeon entering it becomes nil
@@ -152,14 +158,14 @@ function Data:MeleeHitMissChanceBossLevel()
 
     local missChance
     if DataUtils:IsShapeshifted() then
-        missChance = 9
+        missChance = ECS.IsWotlk and 8 or 9
     else
         missChance = DataUtils:GetMissChanceByDifference(mainBase + mainMod, enemyDefenseValue)
     end
 
-	if Data:GetMeleeAttackSpeedOffHand() > 0 then
-		missChance = missChance + 19;
-	end
+    if Data:GetMeleeAttackSpeedOffHand() > 0 then
+        missChance = missChance + 19;
+    end
 
     local hitValue = _Melee:GetHitRatingBonus()
     if hitValue then -- This needs to be checked because on dungeon entering it becomes nil
@@ -187,10 +193,18 @@ function Data:GetExpertiseRating()
     return DataUtils:Round(expertiseRating, 0)
 end
 
----@return number
+---@return string
 function Data:GetArmorPenetration()
     local armorPenetration = GetArmorPenetration()
-    return DataUtils:Round(armorPenetration, 0)
+
+    if ECS.IsWotlk and classId == Data.WARRIOR then
+        local _, isActive = GetShapeshiftFormInfo(1)
+        if isActive then
+            armorPenetration = armorPenetration + 10 -- 10% from Battle Stance
+        end
+    end
+
+    return DataUtils:Round(armorPenetration, 2) .. "%"
 end
 
 ---@return number

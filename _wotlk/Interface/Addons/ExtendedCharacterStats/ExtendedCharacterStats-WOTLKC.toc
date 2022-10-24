@@ -1,6 +1,6 @@
 ## Interface: 30400
-## Title: Extended Character Stats v3.0.4
-## Version: 3.0.4
+## Title: Extended Character Stats v3.0.6
+## Version: 3.0.6
 ## Author: BreakBB, Ethulu
 ## Notes: Displays an extra window with more information about your characters stats ( Crit/Hit/Block etc )
 ## SavedVariablesPerCharacter: ExtendedCharacterStats
@@ -14,6 +14,7 @@ Modules\ModuleLoader.lua
 
 # Modules
 Modules\Migration.lua
+Modules\EventHandler.lua
 Modules\Init.lua
 Modules\Utils.lua
 Modules\Stats.lua
