@@ -43,11 +43,16 @@ Bagnon_Sets = {
 				[-2] = true,
 			},
 			["money"] = true,
-			["point"] = "TOPRIGHT",
+			["color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.7481050789356232, -- [4]
+			},
 			["hiddenRules"] = {
 			},
-			["y"] = -293.1571044921875,
 			["bagBreak"] = false,
+			["y"] = -293.1571044921875,
 			["x"] = -408.98974609375,
 			["sort"] = true,
 			["borderColor"] = {
@@ -56,15 +61,10 @@ Bagnon_Sets = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["search"] = true,
 			["broker"] = false,
+			["search"] = true,
 			["bagToggle"] = true,
-			["color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.7481050789356232, -- [4]
-			},
+			["point"] = "TOPRIGHT",
 		},
 		["vault"] = {
 			["rules"] = {
@@ -129,11 +129,11 @@ Bagnon_Sets = {
 			},
 			["color"] = {
 			},
-			["x"] = 505.2874450683594,
-			["hiddenRules"] = {
-			},
 			["hiddenBags"] = {
 			},
+			["hiddenRules"] = {
+			},
+			["x"] = 505.2874450683594,
 		},
 		["bank"] = {
 			["rules"] = {
@@ -174,21 +174,21 @@ Bagnon_Sets = {
 			["bagToggle"] = true,
 			["columns"] = 18,
 			["alpha"] = 1,
-			["scale"] = 1,
-			["bagBreak"] = false,
-			["x"] = 729.3958129882812,
-			["search"] = true,
-			["broker"] = false,
-			["itemScale"] = 1,
-			["hiddenRules"] = {
-			},
-			["y"] = 514.9158325195312,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
+			["bagBreak"] = false,
+			["x"] = 729.3958129882812,
+			["search"] = true,
+			["broker"] = false,
+			["y"] = 514.9158325195312,
+			["hiddenRules"] = {
+			},
+			["itemScale"] = 1,
+			["scale"] = 1,
 		},
 	},
 	["countGuild"] = false,
@@ -220,15 +220,15 @@ Bagnon_Sets = {
 	["displayAuction"] = false,
 	["profiles"] = {
 	},
-	["keyColor"] = {
-	},
+	["displayCraft"] = false,
 	["soulColor"] = {
 	},
-	["glowQuality"] = true,
+	["glowPoor"] = true,
 	["normalColor"] = {
 	},
-	["glowPoor"] = true,
+	["glowQuality"] = true,
 	["colorSlots"] = false,
-	["displayCraft"] = false,
+	["keyColor"] = {
+	},
 	["displayScrapping"] = false,
 }

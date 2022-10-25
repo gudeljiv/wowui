@@ -6,6 +6,7 @@ HekiliDB = {
 	},
 	["profileKeys"] = {
 		["Moolatz - Golemagg"] = "Default",
+		["Mxyz - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -16,6 +17,36 @@ HekiliDB = {
 				["resetAberrantPackageDates_20190728_1"] = true,
 				["updateMaxRefreshToNewSpecOptions_20220222"] = true,
 				["forceReloadClassDefaultOptions_20220306_11"] = true,
+			},
+			["specs"] = {
+				[11] = {
+					["abilities"] = {
+						["mark_of_the_wild"] = {
+							["disabled"] = true,
+						},
+						["gift_of_the_wild"] = {
+							["disabled"] = true,
+						},
+					},
+					["package"] = "Feral DPS (IV)",
+				},
+			},
+			["toggles"] = {
+				["potions"] = {
+					["value"] = true,
+				},
+				["essences"] = {
+					["value"] = false,
+				},
+				["interrupts"] = {
+					["value"] = true,
+				},
+				["cooldowns"] = {
+					["value"] = true,
+				},
+				["defensives"] = {
+					["value"] = true,
+				},
 			},
 			["packs"] = {
 				["Feral DPS (IV)"] = {
@@ -199,36 +230,6 @@ HekiliDB = {
 						},
 					},
 					["author"] = "Icy Veins",
-				},
-			},
-			["toggles"] = {
-				["potions"] = {
-					["value"] = true,
-				},
-				["essences"] = {
-					["value"] = false,
-				},
-				["interrupts"] = {
-					["value"] = true,
-				},
-				["cooldowns"] = {
-					["value"] = true,
-				},
-				["defensives"] = {
-					["value"] = true,
-				},
-			},
-			["specs"] = {
-				[11] = {
-					["abilities"] = {
-						["mark_of_the_wild"] = {
-							["disabled"] = true,
-						},
-						["gift_of_the_wild"] = {
-							["disabled"] = true,
-						},
-					},
-					["package"] = "Feral DPS (IV)",
 				},
 			},
 		},
