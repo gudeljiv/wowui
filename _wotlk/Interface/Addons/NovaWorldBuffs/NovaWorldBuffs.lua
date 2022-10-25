@@ -11825,22 +11825,22 @@ end
 --	return true;
 --end
 	
-local MinimapLayerFrame = CreateFrame("Frame", "MinimapLayerFrame", Minimap, "ThinGoldEdgeTemplate");
-MinimapLayerFrame:SetPoint("BOTTOM", 2, 4);
+local MinimapLayerFrame = CreateFrame("Frame", "MinimapLayerFrame", Minimap);
+MinimapLayerFrame:SetPoint("TOPLEFT", -10, -5);
 MinimapLayerFrame:SetFrameStrata("HIGH");
 MinimapLayerFrame:SetFrameLevel(9);
 MinimapLayerFrame:SetMovable(true);
 MinimapLayerFrame.fs = MinimapLayerFrame:CreateFontString("MinimapLayerFrameFS", "ARTWORK");
 MinimapLayerFrame.fs:SetPoint("CENTER", 0, 0);
 MinimapLayerFrame.fs:SetFont("Fonts\\ARIALN.ttf", 10); --No region font here, "Layer" in english always.
-MinimapLayerFrame.fs:SetText("No Layer");
+MinimapLayerFrame.fs:SetText("NL");
 MinimapLayerFrame:SetWidth(46);
 MinimapLayerFrame:SetHeight(17);
 MinimapLayerFrame:Hide();
 MinimapLayerFrame.tooltip = CreateFrame("Frame", "NWBVersionDragTooltip", MinimapLayerFrame, "TooltipBorderedFrameTemplate");
 MinimapLayerFrame.tooltip:SetPoint("CENTER", MinimapLayerFrame, "TOP", 0, 12);
 MinimapLayerFrame.tooltip:SetFrameStrata("TOOLTIP");
-MinimapLayerFrame.tooltip:SetFrameLevel(9);
+MinimapLayerFrame.tooltip:SetFrameLevel(12);
 --MinimapLayerFrame.tooltip:SetAlpha(.9);
 MinimapLayerFrame.tooltip.fs = MinimapLayerFrame.tooltip:CreateFontString("NWBVersionDragTooltipFS", "HIGH");
 MinimapLayerFrame.tooltip.fs:SetPoint("CENTER", 0, 0.5);
@@ -11891,12 +11891,12 @@ function NWB:recalcMinimapLayerFrame(zoneID, event, unit)
 	if ((GetServerTime() - NWB.lastJoinedGroup) < 5) then
 		--Don't update minimap frame for a few seconds after joining group.
 		NWB:toggleMinimapLayerFrame("hide");
-		MinimapLayerFrame.fs:SetText("No Layer");
+		MinimapLayerFrame.fs:SetText("NL");
 		return;
 	end
 	if (not NWB.db.global.minimapLayerFrame or not NWB.isLayered) then
 		NWB:toggleMinimapLayerFrame("hide");
-		MinimapLayerFrame.fs:SetText("No Layer");
+		MinimapLayerFrame.fs:SetText("NL");
 		return;
 	end
 	local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
@@ -11924,15 +11924,15 @@ function NWB:recalcMinimapLayerFrame(zoneID, event, unit)
 	if (foundLayer or (NWB.faction == "Horde" and zone == 1454)
 			or (NWB.faction == "Alliance" and zone == 1453)) then
 		if (NWB.currentLayer > 0) then
-			MinimapLayerFrame.fs:SetText(NWB.mmColor .. "Layer " .. NWB.lastKnownLayer);
+			MinimapLayerFrame.fs:SetText(NWB.mmColor .. "L" .. NWB.lastKnownLayer);
 			MinimapLayerFrame.fs:SetFont("Fonts\\ARIALN.ttf", 12);
 			NWB_CurrentLayer = NWB.lastKnownLayer;
 		elseif (layerNum > 0) then
-			MinimapLayerFrame.fs:SetText(NWB.mmColor .. "Layer " .. layerNum);
+			MinimapLayerFrame.fs:SetText(NWB.mmColor .. "L" .. layerNum);
 			MinimapLayerFrame.fs:SetFont("Fonts\\ARIALN.ttf", 12);
 			NWB_CurrentLayer = layerNum;
 		else
-			MinimapLayerFrame.fs:SetText(NWB.mmColor .. "No Layer");
+			MinimapLayerFrame.fs:SetText(NWB.mmColor .. "NL");
 			MinimapLayerFrame.fs:SetFont("Fonts\\ARIALN.ttf", 10);
 			NWB_CurrentLayer = 0;
 		end
@@ -11953,7 +11953,7 @@ function NWB:recalcMinimapLayerFrame(zoneID, event, unit)
 				if (v.layerMap and next(v.layerMap)) then
 					for zone, map in pairs(v.layerMap) do
 						if (zone == zoneID) then
-							MinimapLayerFrame.fs:SetText("Layer " .. backupCount);
+							MinimapLayerFrame.fs:SetText("L" .. backupCount);
 							MinimapLayerFrame.fs:SetFont("Fonts\\ARIALN.ttf", 12);
 							foundBackup = true;
 							NWB_CurrentLayer = backupCount;

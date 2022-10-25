@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 7141,
+	["session"] = 7149,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -5320,5 +5320,23 @@ BugGrabberDB = {
 			["session"] = 7138,
 			["counter"] = 4,
 		}, -- [681]
+		{
+			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\xVermin\\Addons/NovaWorldBuffs.lua",
+			["time"] = "2022/10/25 16:05:00",
+			["session"] = 7145,
+			["counter"] = 1,
+		}, -- [682]
+		{
+			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\xVermin\\Addons/NovaWorldBuffs.lua",
+			["time"] = "2022/10/25 16:05:00",
+			["session"] = 7145,
+			["counter"] = 1,
+		}, -- [683]
+		{
+			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\xVermin\\Addons/NovaWorldBuffs.lua",
+			["time"] = "2022/10/25 16:05:00",
+			["session"] = 7145,
+			["counter"] = 1,
+		}, -- [684]
 	},
 }

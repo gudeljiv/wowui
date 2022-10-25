@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 7140,
+	["session"] = 7148,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -5320,5 +5320,23 @@ BugGrabberDB = {
 			["session"] = 7138,
 			["counter"] = 4,
 		}, -- [681]
+		{
+			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\xVermin\\Addons/NovaWorldBuffs.lua",
+			["session"] = 7145,
+			["time"] = "2022/10/25 16:05:00",
+			["counter"] = 1,
+		}, -- [682]
+		{
+			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\xVermin\\Addons/NovaWorldBuffs.lua",
+			["session"] = 7145,
+			["time"] = "2022/10/25 16:05:00",
+			["counter"] = 1,
+		}, -- [683]
+		{
+			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\xVermin\\Addons/NovaWorldBuffs.lua",
+			["session"] = 7145,
+			["time"] = "2022/10/25 16:05:00",
+			["counter"] = 1,
+		}, -- [684]
 	},
 }

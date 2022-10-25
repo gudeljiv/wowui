@@ -634,9 +634,9 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 895983,
-		["timeStamp"] = 50206.036,
-		["timeAtThisLevel"] = 42180,
+		["total"] = 903371,
+		["timeStamp"] = 59999.617,
+		["timeAtThisLevel"] = 49568,
 	},
 	["Tandaram-Jin'do"] = {
 		["total"] = 97,

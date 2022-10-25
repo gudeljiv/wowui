@@ -43,7 +43,6 @@ Addons/RXPGuide.lua
 Addons/TomTom.lua
 Addons/WeakAuras.lua
 
-
 GarbageCollector.lua
 RotBot.lua
 
