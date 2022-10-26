@@ -14,7 +14,7 @@ Bagnon_Sets = {
 	},
 	["global"] = {
 		["inventory"] = {
-			["point"] = "TOPRIGHT",
+			["scale"] = 1,
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -43,29 +43,29 @@ Bagnon_Sets = {
 			["hiddenBags"] = {
 				[-2] = true,
 			},
-			["scale"] = 1,
-			["money"] = true,
-			["hiddenRules"] = {
-			},
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["bagBreak"] = false,
-			["x"] = -290.4547119140625,
-			["sort"] = true,
-			["broker"] = false,
-			["y"] = -233.6741943359375,
-			["search"] = true,
-			["bagToggle"] = true,
 			["color"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.7481050789356232, -- [4]
 			},
+			["money"] = true,
+			["hiddenRules"] = {
+			},
+			["sort"] = true,
+			["bagBreak"] = false,
+			["x"] = -290.4547119140625,
+			["search"] = true,
+			["broker"] = false,
+			["y"] = -233.6741943359375,
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["bagToggle"] = true,
+			["point"] = "TOPRIGHT",
 		},
 		["vault"] = {
 			["rules"] = {
@@ -176,21 +176,21 @@ Bagnon_Sets = {
 			["bagToggle"] = true,
 			["columns"] = 18,
 			["alpha"] = 1,
+			["scale"] = 1,
+			["bagBreak"] = false,
+			["x"] = 729.3958129882812,
+			["search"] = true,
+			["broker"] = false,
+			["itemScale"] = 1,
+			["hiddenRules"] = {
+			},
+			["y"] = 514.9158325195312,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
-			["bagBreak"] = false,
-			["x"] = 729.3958129882812,
-			["search"] = true,
-			["broker"] = false,
-			["y"] = 514.9158325195312,
-			["hiddenRules"] = {
-			},
-			["itemScale"] = 1,
-			["scale"] = 1,
 		},
 	},
 	["countGuild"] = false,
@@ -207,10 +207,10 @@ Bagnon_Sets = {
 		["socketing"] = false,
 		["scrappingMachine"] = false,
 		["crafting"] = false,
-		["banker"] = false,
+		["voidStorageBanker"] = false,
 		["auctioneer"] = false,
 		["guildBanker"] = false,
-		["voidStorageBanker"] = false,
+		["banker"] = false,
 	},
 	["fridgeColor"] = {
 	},
@@ -232,15 +232,15 @@ Bagnon_Sets = {
 	["displayAuction"] = false,
 	["profiles"] = {
 	},
-	["displayCraft"] = false,
-	["soulColor"] = {
-	},
-	["glowPoor"] = true,
-	["normalColor"] = {
-	},
-	["glowQuality"] = true,
-	["colorSlots"] = false,
 	["keyColor"] = {
 	},
+	["soulColor"] = {
+	},
+	["glowQuality"] = true,
+	["normalColor"] = {
+	},
+	["glowPoor"] = true,
+	["colorSlots"] = false,
+	["displayCraft"] = false,
 	["displayScrapping"] = false,
 }
