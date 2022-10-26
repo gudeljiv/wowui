@@ -139,10 +139,3 @@ X: -27
 Y: 27
 W: 50
 H: 50
-Frame: WeakAurasOptions
-FrameLevel: 1
-Anchor: LEFT
-X: 159
-Y: 43
-W: 992
-H: 1029

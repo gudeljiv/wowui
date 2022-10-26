@@ -69,6 +69,13 @@ X: -176
 Y: -161
 W: 78
 H: 40
+Frame: NWBlayerFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 100
+W: 450
+H: 300
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM

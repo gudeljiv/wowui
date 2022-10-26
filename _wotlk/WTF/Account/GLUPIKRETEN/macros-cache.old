@@ -19,13 +19,13 @@ VER 3 0000000000000018 "ASAB" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:33444
-/castsequence [combat] reset=combat item:22832
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:33454
-/castsequence [combat] reset=combat item:22829,item:1710
+/castsequence [combat] reset=combat 
 END
 VER 3 000000000000000B "lvl enchant" "132089"
 /click CraftCreateButton
@@ -44,7 +44,7 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:22829
+/use item:0
 END
 VER 3 0000000000000017 "Prsp" "Inv_misc_questionmark"
 #showtooltip item:2772
@@ -56,10 +56,8 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
-/run print(TellMeWhen_Group4:GetSize())
-/run print(TellMeWhen_Group4_Icon1:GetSize())
-/run print(TellMeWhen_Group4:GetScale())
-/run print(TellMeWhen_Group4:GetWidth()*TellMeWhen_Group4:GetScale())
+/run MinimapLayerFrame:ClearAllPoints()
+/run MinimapLayerFrame:SetPoint("TOPLEFT", -10, -5);
 END
 VER 3 000000000000001B "TSMMacro" "INV_Misc_Flower_01"
 /click TSMShoppingBuyoutBtn
