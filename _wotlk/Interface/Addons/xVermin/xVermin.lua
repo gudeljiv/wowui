@@ -68,6 +68,7 @@ f:SetScript(
 		if not BNToastFrame.SetBackdrop then
 			Mixin(BNToastFrame, BackdropTemplateMixin)
 		end
+
 		BNToastFrame:ClearAllPoints()
 		BNToastFrame:SetPoint('BOTTOMLEFT', ChatFrame4, 'TOPLEFT', 0, 35)
 		BNToastFrame.ClearAllPoints = function()
