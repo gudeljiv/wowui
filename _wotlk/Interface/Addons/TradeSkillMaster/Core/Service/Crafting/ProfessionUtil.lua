@@ -116,12 +116,9 @@ function ProfessionUtil.GetCurrentProfessionInfo()
 	if TSM.IsWowClassic() then
 		local name = TSM.Crafting.ProfessionState.IsClassicCrafting() and GetCraftSkillLine(1) or GetTradeSkillLine()
 		return name
-	elseif TSM.IsWowDragonflight() then
+	else
 		local info = C_TradeSkillUI.GetBaseProfessionInfo()
 		return info.parentProfessionName or info.professionName, info.profession
-	else
-		local skillId, name, _, _, _, _, parentName = C_TradeSkillUI.GetTradeSkillLine()
-		return parentName or name, skillId
 	end
 end
 
@@ -305,29 +302,6 @@ function ProfessionUtil.PrepareToCraft(craftString, recipeString, quantity, leve
 	if ProfessionUtil.IsEnchant(craftString) then
 		quantity = 1
 	end
-
-	if not TSM.IsWowClassic() and not TSM.IsWowDragonflight() then
-		local optionalMats = TempTable.Acquire()
-		if recipeString then
-			for _, slotId, itemId in RecipeString.OptionalMatIterator(recipeString) do
-				local info = TempTable.Acquire()
-				info.itemID = itemId
-				if TSM.IsWowDragonflight() then
-					info.dataSlotIndex = slotId
-					info.quantity = 1
-				else
-					info.slot = slotId
-					info.count = 1
-				end
-				tinsert(optionalMats, info)
-			end
-		end
-		C_TradeSkillUI.SetRecipeRepeatCount(spellId, quantity, recipeString and optionalMats)
-		for _, info in ipairs(optionalMats) do
-			TempTable.Release(info)
-		end
-		TempTable.Release(optionalMats)
-	end
 	private.preparedSpellId = spellId
 	private.preparedTime = GetTime()
 end
@@ -377,13 +351,8 @@ function ProfessionUtil.Craft(craftString, recipeId, quantity, useVellum, callba
 			for _, slotId, itemId in RecipeString.OptionalMatIterator(recipeId) do
 				local info = TempTable.Acquire()
 				info.itemID = itemId
-				if TSM.IsWowDragonflight() then
-					info.dataSlotIndex = slotId
-					info.quantity = 1
-				else
-					info.slot = slotId
-					info.count = 1
-				end
+				info.dataSlotIndex = slotId
+				info.quantity = 1
 				tinsert(optionalMats, info)
 			end
 		end
@@ -450,13 +419,9 @@ function ProfessionUtil.GetRecipeInfo(craftString)
 		end
 	else
 		itemLink = C_TradeSkillUI.GetRecipeItemLink(spellId)
-		if TSM.IsWowDragonflight() then
-			local level = CraftString.GetLevel(craftString) or 0
-			local info = C_TradeSkillUI.GetRecipeSchematic(spellId, false, level)
-			lNum, hNum = info.quantityMin, info.quantityMax
-		else
-			lNum, hNum = C_TradeSkillUI.GetRecipeNumItemsProduced(spellId)
-		end
+		local level = CraftString.GetLevel(craftString) or 0
+		local info = C_TradeSkillUI.GetRecipeSchematic(spellId, false, level)
+		lNum, hNum = info.quantityMin, info.quantityMax
 		toolsStr, hasTools = C_TradeSkillUI.GetRecipeTools(spellId)
 	end
 	return itemLink, lNum, hNum, toolsStr, hasTools
@@ -477,7 +442,7 @@ function ProfessionUtil.GetNumMats(spellId, level)
 	if TSM.IsWowClassic() then
 		spellId = TSM.Crafting.ProfessionScanner.GetIndexByCraftString(CraftString.Get(spellId)) or spellId
 		numMats = TSM.Crafting.ProfessionState.IsClassicCrafting() and GetCraftNumReagents(spellId) or GetTradeSkillNumReagents(spellId)
-	elseif TSM.IsWowDragonflight() then
+	else
 		local reagentType = Enum.CraftingReagentType.Basic
 		local info = C_TradeSkillUI.GetRecipeSchematic(spellId, false, level)
 		local num = 0
@@ -487,8 +452,6 @@ function ProfessionUtil.GetNumMats(spellId, level)
 			end
 		end
 		numMats = num
-	else
-		numMats = C_TradeSkillUI.GetRecipeNumReagents(spellId, level)
 	end
 	return numMats
 end
@@ -504,16 +467,11 @@ function ProfessionUtil.GetMatInfo(spellId, index, level)
 			name, texture, quantity = GetTradeSkillReagentInfo(spellId, index)
 		end
 	else
-		if TSM.IsWowDragonflight() then
-			local info = C_TradeSkillUI.GetRecipeSchematic(spellId, false, level)
-			local reagentSlotInfo = info.reagentSlotSchematics[index]
-			local reagentDataInfo = reagentSlotInfo.reagents[1]
-			itemLink = C_TradeSkillUI.GetRecipeFixedReagentItemLink(spellId, reagentSlotInfo.dataSlotIndex)
-			name, texture, quantity = ItemInfo.GetName(reagentDataInfo.itemID), ItemInfo.GetTexture(reagentDataInfo.itemID), reagentSlotInfo.quantityRequired
-		else
-			itemLink = C_TradeSkillUI.GetRecipeReagentItemLink(spellId, index)
-			name, texture, quantity = C_TradeSkillUI.GetRecipeReagentInfo(spellId, index, level)
-		end
+		local info = C_TradeSkillUI.GetRecipeSchematic(spellId, false, level)
+		local reagentSlotInfo = info.reagentSlotSchematics[index]
+		local reagentDataInfo = reagentSlotInfo.reagents[1]
+		itemLink = C_TradeSkillUI.GetRecipeFixedReagentItemLink(spellId, reagentSlotInfo.dataSlotIndex)
+		name, texture, quantity = ItemInfo.GetName(reagentDataInfo.itemID), ItemInfo.GetTexture(reagentDataInfo.itemID), reagentSlotInfo.quantityRequired
 		if itemLink then
 			name = name or ItemInfo.GetName(itemLink)
 			texture = texture or ItemInfo.GetTexture(itemLink)
@@ -566,21 +524,17 @@ function ProfessionUtil.GetCategoryInfo(categoryId)
 		parentCategoryId = nil
 	else
 		C_TradeSkillUI.GetCategoryInfo(categoryId, private.categoryInfoTemp)
-		assert(TSM.IsWowDragonflight() or private.categoryInfoTemp.numIndents)
 		name = private.categoryInfoTemp.name
-		numIndents = not TSM.IsWowDragonflight() and private.categoryInfoTemp.numIndents
 		parentCategoryId = private.categoryInfoTemp.numIndents ~= 0 and private.categoryInfoTemp.parentCategoryID or nil
 		currentSkillLevel = private.categoryInfoTemp.skillLineCurrentLevel
 		maxSkillLevel = private.categoryInfoTemp.skillLineMaxLevel
-		if TSM.IsWowDragonflight() then
-			if parentCategoryId then
-				C_TradeSkillUI.GetCategoryInfo(parentCategoryId, private.categoryInfoTemp)
-				if private.categoryInfoTemp.type == "subheader" then
-					numIndents = parentCategoryId == private.categoryInfoTemp.parentCategoryID and 0 or 1
-				end
-			else
-				numIndents = 0
+		if parentCategoryId then
+			C_TradeSkillUI.GetCategoryInfo(parentCategoryId, private.categoryInfoTemp)
+			if private.categoryInfoTemp.type == "subheader" then
+				numIndents = parentCategoryId == private.categoryInfoTemp.parentCategoryID and 0 or 1
 			end
+		else
+			numIndents = 0
 		end
 		wipe(private.categoryInfoTemp)
 	end

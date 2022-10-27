@@ -36,13 +36,8 @@ function Banking.OnInitialize()
 	Event.Register("BANKFRAME_OPENED", private.BankOpened)
 	Event.Register("BANKFRAME_CLOSED", private.BankClosed)
 	if not TSM.IsWowVanillaClassic() then
-		if TSM.IsWowDragonflight() then
-			Event.Register("PLAYER_INTERACTION_MANAGER_FRAME_SHOW", private.GuildBankOpened)
-			Event.Register("PLAYER_INTERACTION_MANAGER_FRAME_HIDE", private.GuildBankClosed)
-		else
-			Event.Register("GUILDBANKFRAME_OPENED", private.GuildBankOpened)
-			Event.Register("GUILDBANKFRAME_CLOSED", private.GuildBankClosed)
-		end
+		Event.Register(TSM.IsWowClassic() and "GUILDBANKFRAME_OPENED" or "PLAYER_INTERACTION_MANAGER_FRAME_SHOW", private.GuildBankOpened)
+		Event.Register(TSM.IsWowClassic() and "GUILDBANKFRAME_CLOSED" or "PLAYER_INTERACTION_MANAGER_FRAME_HIDE", private.GuildBankClosed)
 	end
 end
 
@@ -252,7 +247,7 @@ function private.GuildBankOpened(event, frameType)
 	if private.openFrame == "GUILD_BANK" then
 		return
 	end
-	if TSM.IsWowDragonflight() and frameType ~= Enum.PlayerInteractionType.GuildBanker then
+	if not TSM.IsWowClassic() and frameType ~= Enum.PlayerInteractionType.GuildBanker then
 		return
 	end
 	assert(not private.openFrame)
@@ -277,7 +272,7 @@ function private.GuildBankClosed(event, frameType)
 	if not private.openFrame then
 		return
 	end
-	if TSM.IsWowDragonflight() and frameType ~= Enum.PlayerInteractionType.GuildBanker then
+	if not TSM.IsWowClassic() and frameType ~= Enum.PlayerInteractionType.GuildBanker then
 		return
 	end
 	private.openFrame = nil

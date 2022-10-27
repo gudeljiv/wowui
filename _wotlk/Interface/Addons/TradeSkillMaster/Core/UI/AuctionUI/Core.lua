@@ -38,15 +38,15 @@ function AuctionUI.OnInitialize()
 		:AddKey("global", "auctionUIContext", "showDefault")
 		:AddKey("global", "auctionUIContext", "frame")
 	UIParent:UnregisterEvent("AUCTION_HOUSE_SHOW")
-	if TSM.IsWowDragonflight() then
+	if TSM.IsWowClassic() then
+		Event.Register("AUCTION_HOUSE_SHOW", private.AuctionFrameInit)
+	else
 		hooksecurefunc(PlayerInteractionFrameManager, "ShowFrame", function(_, interaction)
 			if interaction ~= Enum.PlayerInteractionType.Auctioneer or GameLimitedMode_IsActive() then
 				return
 			end
 			private.AuctionFrameInit()
 		end)
-	else
-		Event.Register("AUCTION_HOUSE_SHOW", private.AuctionFrameInit)
 	end
 	Event.Register("AUCTION_HOUSE_CLOSED", private.HideAuctionFrame)
 	if TSM.IsWowClassic() then
@@ -218,11 +218,11 @@ function private.AuctionFrameInit()
 		end
 	end
 	if private.settings.showDefault then
-		if not TSM.IsWowDragonflight() then
+		if TSM.IsWowClassic() then
 			UIParent_OnEvent(UIParent, "AUCTION_HOUSE_SHOW")
 		end
 	else
-		if TSM.IsWowDragonflight() then
+		if not TSM.IsWowClassic() then
 			local origCloseAuctionHouse = C_AuctionHouse.CloseAuctionHouse
 			C_AuctionHouse.CloseAuctionHouse = NoOp
 			HideUIPanel(private.defaultFrame)

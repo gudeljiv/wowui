@@ -53,13 +53,8 @@ GuildTracking:OnSettingsLoad(function()
 		:AddNumberField("quantity")
 		:Commit()
 	if not TSM.IsWowVanillaClassic() then
-		if TSM.IsWowDragonflight() then
-			Event.Register("PLAYER_INTERACTION_MANAGER_FRAME_SHOW", private.GuildBankFrameOpenedHandler)
-			Event.Register("PLAYER_INTERACTION_MANAGER_FRAME_HIDE", private.GuildBankFrameClosedHandler)
-		else
-			Event.Register("GUILDBANKFRAME_OPENED", private.GuildBankFrameOpenedHandler)
-			Event.Register("GUILDBANKFRAME_CLOSED", private.GuildBankFrameClosedHandler)
-		end
+		Event.Register(TSM.IsWowClassic() and "GUILDBANKFRAME_OPENED" or "PLAYER_INTERACTION_MANAGER_FRAME_SHOW", private.GuildBankFrameOpenedHandler)
+		Event.Register(TSM.IsWowClassic() and "GUILDBANKFRAME_CLOSED" or "PLAYER_INTERACTION_MANAGER_FRAME_HIDE", private.GuildBankFrameClosedHandler)
 		Event.Register("GUILDBANKBAGSLOTS_CHANGED", private.GuildBankBagSlotsChangedHandler)
 		Delay.AfterFrame(1, private.GetGuildName)
 		Event.Register("PLAYER_GUILD_UPDATE", private.GetGuildName)
@@ -156,7 +151,7 @@ function private.RebuildQuantityDB()
 end
 
 function private.GuildBankFrameOpenedHandler(event, frameType)
-	if TSM.IsWowDragonflight() and frameType ~= Enum.PlayerInteractionType.GuildBanker then
+	if not TSM.IsWowClassic() and frameType ~= Enum.PlayerInteractionType.GuildBanker then
 		return
 	end
 	local initialTab = GetCurrentGuildBankTab()
@@ -168,7 +163,7 @@ function private.GuildBankFrameOpenedHandler(event, frameType)
 end
 
 function private.GuildBankFrameClosedHandler(event, frameType)
-	if TSM.IsWowDragonflight() and frameType ~= Enum.PlayerInteractionType.GuildBanker then
+	if not TSM.IsWowClassic() and frameType ~= Enum.PlayerInteractionType.GuildBanker then
 		return
 	end
 	private.isOpen = nil

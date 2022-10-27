@@ -21,7 +21,7 @@ local private = {
 }
 -- don't use MAX_GUILDBANK_SLOTS_PER_TAB since it isn't available right away
 local GUILD_BANK_TAB_SLOTS = 98
-local NUM_REAL_BAG_SLOTS = TSM.IsWowDragonflight() and NUM_BAG_SLOTS + NUM_REAGENTBAG_SLOTS or NUM_BAG_SLOTS
+local NUM_REAL_BAG_SLOTS = not TSM.IsWowClassic() and NUM_BAG_SLOTS + NUM_REAGENTBAG_SLOTS or NUM_BAG_SLOTS
 
 
 

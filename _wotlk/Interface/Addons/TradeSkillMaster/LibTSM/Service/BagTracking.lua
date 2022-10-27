@@ -39,8 +39,8 @@ local private = {
 	callbacks = {},
 }
 local BANK_BAG_SLOTS = {}
-local NUM_REAL_BAG_SLOTS = TSM.IsWowDragonflight() and NUM_BAG_SLOTS + NUM_REAGENTBAG_SLOTS or NUM_BAG_SLOTS
-local REAGENT_BAG_INDEX = TSM.IsWowDragonflight() and (NUM_BAG_SLOTS + NUM_BANKBAGSLOTS + NUM_REAGENTBAG_SLOTS) or nil
+local NUM_REAL_BAG_SLOTS = TSM.IsWowClassic() and NUM_BAG_SLOTS or NUM_BAG_SLOTS + NUM_REAGENTBAG_SLOTS
+local REAGENT_BAG_INDEX = not TSM.IsWowClassic() and (NUM_BAG_SLOTS + NUM_BANKBAGSLOTS + NUM_REAGENTBAG_SLOTS) or nil
 
 
 
