@@ -14,7 +14,7 @@ Bagnon_Sets = {
 	},
 	["global"] = {
 		["inventory"] = {
-			["scale"] = 1,
+			["options"] = true,
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -39,7 +39,7 @@ Bagnon_Sets = {
 				"all/souls", -- [21]
 				"equip/ammo", -- [22]
 			},
-			["options"] = true,
+			["point"] = "TOPRIGHT",
 			["hiddenBags"] = {
 				[-2] = true,
 			},
@@ -52,20 +52,20 @@ Bagnon_Sets = {
 			["money"] = true,
 			["hiddenRules"] = {
 			},
-			["sort"] = true,
+			["broker"] = false,
 			["bagBreak"] = false,
 			["x"] = -290.4547119140625,
 			["search"] = true,
-			["broker"] = false,
-			["y"] = -233.6741943359375,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
+			["y"] = -233.6741943359375,
+			["sort"] = true,
 			["bagToggle"] = true,
-			["point"] = "TOPRIGHT",
+			["scale"] = 1,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -176,21 +176,21 @@ Bagnon_Sets = {
 			["bagToggle"] = true,
 			["columns"] = 18,
 			["alpha"] = 1,
-			["scale"] = 1,
-			["bagBreak"] = false,
-			["x"] = 729.3958129882812,
-			["search"] = true,
-			["broker"] = false,
-			["itemScale"] = 1,
-			["hiddenRules"] = {
-			},
-			["y"] = 514.9158325195312,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
+			["bagBreak"] = false,
+			["x"] = 729.3958129882812,
+			["search"] = true,
+			["broker"] = false,
+			["y"] = 514.9158325195312,
+			["hiddenRules"] = {
+			},
+			["itemScale"] = 1,
+			["scale"] = 1,
 		},
 	},
 	["countGuild"] = false,
@@ -207,10 +207,10 @@ Bagnon_Sets = {
 		["socketing"] = false,
 		["scrappingMachine"] = false,
 		["crafting"] = false,
-		["voidStorageBanker"] = false,
+		["banker"] = false,
 		["auctioneer"] = false,
 		["guildBanker"] = false,
-		["banker"] = false,
+		["voidStorageBanker"] = false,
 	},
 	["fridgeColor"] = {
 	},
@@ -232,15 +232,15 @@ Bagnon_Sets = {
 	["displayAuction"] = false,
 	["profiles"] = {
 	},
-	["keyColor"] = {
-	},
+	["displayCraft"] = false,
 	["soulColor"] = {
 	},
-	["glowQuality"] = true,
+	["glowPoor"] = true,
 	["normalColor"] = {
 	},
-	["glowPoor"] = true,
+	["glowQuality"] = true,
 	["colorSlots"] = false,
-	["displayCraft"] = false,
+	["keyColor"] = {
+	},
 	["displayScrapping"] = false,
 }
