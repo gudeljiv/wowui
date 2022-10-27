@@ -500,7 +500,7 @@ AtlasLootClassicDB = {
 			[18461] = "honor:400",
 			[37927] = "honor:5700",
 			[31378] = "honor:3800",
-			[28307] = "honor:4750",
+			[31376] = "honor:4750",
 			[35131] = "honor:5700",
 			[32450] = "honor:7125",
 			[28355] = "honor:2850",
@@ -522,7 +522,7 @@ AtlasLootClassicDB = {
 			[33661] = "honor:12825",
 			[33693] = "honor:6840",
 			[24551] = "honor:2850",
-			[31376] = "honor:4750",
+			[28307] = "honor:4750",
 			[35320] = "honor:5130",
 			[32798] = "honor:5320",
 			[33853] = "honor:5130",
@@ -583,6 +583,11 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["minimapPos"] = 35.6918309653034,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -591,11 +596,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["minimapPos"] = 35.6918309653034,
-				["hide"] = true,
 			},
 		},
 		["Verminz - Golemagg"] = {
@@ -880,6 +880,23 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
+			["GUI"] = {
+				["selectedGameVersion"] = 2,
+				["selected"] = {
+					nil, -- [1]
+					"HellfireRamparts", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+				["point"] = {
+					"LEFT", -- [1]
+					nil, -- [2]
+					"LEFT", -- [3]
+					337.781494140625, -- [4]
+					156.011474609375, -- [5]
+				},
+			},
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
@@ -893,23 +910,6 @@ AtlasLootClassicDB = {
 							},
 						},
 					},
-				},
-			},
-			["GUI"] = {
-				["point"] = {
-					"LEFT", -- [1]
-					nil, -- [2]
-					"LEFT", -- [3]
-					337.781494140625, -- [4]
-					156.011474609375, -- [5]
-				},
-				["selectedGameVersion"] = 2,
-				["selected"] = {
-					nil, -- [1]
-					"HellfireRamparts", -- [2]
-					nil, -- [3]
-					1, -- [4]
-					0, -- [5]
 				},
 			},
 		},

@@ -108,7 +108,12 @@ xVermin.SetChatChannels = function()
 end
 
 local function SetChat()
-	local chatWidth = (GetScreenWidth() * UIParent:GetEffectiveScale()) / (4.2 * xVermin.Config.UIscale)
+	local chatWidth = (GetScreenWidth() * UIParent:GetEffectiveScale()) / (4.5 * xVermin.Config.UIscale)
+	-- print(xVermin.Config.UIscale)
+	-- print((GetScreenWidth() * UIParent:GetEffectiveScale()) / (4 * xVermin.Config.UIscale))
+	-- print((GetScreenWidth() * UIParent:GetEffectiveScale()) / (4.1 * xVermin.Config.UIscale))
+	-- print((GetScreenWidth() * UIParent:GetEffectiveScale()) / (4.2 * xVermin.Config.UIscale))
+	-- print((GetScreenWidth() * UIParent:GetEffectiveScale()) / (4.5 * xVermin.Config.UIscale))
 
 	FCF_ResetChatWindows()
 	JoinChannelByName('WorldDefense')

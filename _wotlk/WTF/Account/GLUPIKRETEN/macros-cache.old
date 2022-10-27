@@ -38,9 +38,9 @@ VER 3 0000000000000016 "Mill" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:33454
+#showtooltip item:4599
 /cast feed pet
-/use item:33454
+/use item:4599
 END
 VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 #showtooltip
