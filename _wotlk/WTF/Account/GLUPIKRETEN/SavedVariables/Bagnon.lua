@@ -14,12 +14,7 @@ Bagnon_Sets = {
 	},
 	["global"] = {
 		["inventory"] = {
-			["color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.7481050789356232, -- [4]
-			},
+			["options"] = true,
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -48,14 +43,19 @@ Bagnon_Sets = {
 			["hiddenBags"] = {
 				[-2] = true,
 			},
-			["scale"] = 1,
+			["color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.7481050789356232, -- [4]
+			},
 			["money"] = true,
 			["hiddenRules"] = {
 			},
-			["search"] = true,
+			["broker"] = false,
 			["bagBreak"] = false,
 			["x"] = -290.4547119140625,
-			["sort"] = true,
+			["search"] = true,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -63,9 +63,9 @@ Bagnon_Sets = {
 				1, -- [4]
 			},
 			["y"] = -233.6741943359375,
-			["broker"] = false,
+			["sort"] = true,
 			["bagToggle"] = true,
-			["options"] = true,
+			["scale"] = 1,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -176,21 +176,21 @@ Bagnon_Sets = {
 			["bagToggle"] = true,
 			["columns"] = 18,
 			["alpha"] = 1,
-			["scale"] = 1,
-			["bagBreak"] = false,
-			["x"] = 729.3958129882812,
-			["search"] = true,
-			["broker"] = false,
-			["itemScale"] = 1,
-			["hiddenRules"] = {
-			},
-			["y"] = 514.9158325195312,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
+			["bagBreak"] = false,
+			["x"] = 729.3958129882812,
+			["search"] = true,
+			["broker"] = false,
+			["y"] = 514.9158325195312,
+			["hiddenRules"] = {
+			},
+			["itemScale"] = 1,
+			["scale"] = 1,
 		},
 	},
 	["countGuild"] = false,
@@ -207,10 +207,10 @@ Bagnon_Sets = {
 		["socketing"] = false,
 		["scrappingMachine"] = false,
 		["crafting"] = false,
-		["voidStorageBanker"] = false,
+		["banker"] = false,
 		["auctioneer"] = false,
 		["guildBanker"] = false,
-		["banker"] = false,
+		["voidStorageBanker"] = false,
 	},
 	["fridgeColor"] = {
 	},
@@ -232,15 +232,15 @@ Bagnon_Sets = {
 	["displayAuction"] = false,
 	["profiles"] = {
 	},
-	["keyColor"] = {
-	},
+	["displayCraft"] = false,
 	["soulColor"] = {
 	},
-	["glowQuality"] = true,
+	["glowPoor"] = true,
 	["normalColor"] = {
 	},
-	["glowPoor"] = true,
+	["glowQuality"] = true,
 	["colorSlots"] = false,
-	["displayCraft"] = false,
+	["keyColor"] = {
+	},
 	["displayScrapping"] = false,
 }

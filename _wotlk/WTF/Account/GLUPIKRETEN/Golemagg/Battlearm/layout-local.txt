@@ -1,8 +1,8 @@
 Version: 1
 Frame: RXPFrame
 FrameLevel: 1
-Anchor: BOTTOM
-X: 434
+Anchor: BOTTOMRIGHT
+X: -499
 Y: 0
 W: 235
 H: 28
@@ -69,6 +69,13 @@ X: -176
 Y: -161
 W: 78
 H: 40
+Frame: WeakAurasOptions
+FrameLevel: 1
+Anchor: TOP
+X: 214
+Y: -63
+W: 992
+H: 1029
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM

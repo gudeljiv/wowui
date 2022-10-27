@@ -48,6 +48,8 @@ monitor = str(screen_width)
 if monitor == "3840":
     x = 10
     y = 10
+    c_width = 7
+    c_height = 7
     p_offgcd_left = 105
     p_combat_left = 24
     p_interrupt_left = 42
@@ -57,6 +59,8 @@ if monitor == "3840":
 if monitor == "2560":
     x = 6
     y = 6
+    c_width = 7
+    c_height = 7
     p_offgcd_left = 70
     p_combat_left = 17
     p_interrupt_left = 27
@@ -66,6 +70,8 @@ if monitor == "2560":
 if monitor == "3072":
     x = 9
     y = 9
+    c_width = 7
+    c_height = 7
     p_combat_left = 22
     p_offgcd_left = 93
     p_interrupt_left = 37
@@ -73,14 +79,16 @@ if monitor == "3072":
     p_clss_left = 66
     p_rotation_left = 70
 if monitor == "2048.0":
-    x = 12
-    y = 12
-    p_offgcd_left = 70
-    p_combat_left = 17
-    p_interrupt_left = 27
-    p_behind_left = 38
-    p_clss_left = 49
-    p_rotation_left = 60
+    x = 11
+    y = 11
+    c_width = 5
+    c_height = 5
+    p_combat_left = 14
+    p_interrupt_left = 24
+    p_behind_left = 32
+    p_clss_left = 42
+    p_rotation_left = 51
+    p_offgcd_left = 59
 
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -124,6 +132,9 @@ print("Script loaded and ready.", "Rotation is paused.", "Monitor:", screen_widt
 def on_press(key):
     global debug, dprint, pause, mill
     # print(key)
+    if key == keyboard.Key.f7:
+        debug = not debug
+        print("debug:", debug)
 
 
 def parse_hex_color(string):
@@ -152,39 +163,47 @@ with keyboard.Listener(on_press=on_press) as listener:
 
             # print(active_window)
 
-            p_main = {"top": 0, "left": 0, "width": x, "height": y}
-            p_offgcd = {"top": 0, "left":  p_offgcd_left, "width": x, "height": y}
-            p_combat = {"top": 0, "left": p_combat_left, "width": 7, "height": 7}
-            p_interrupt = {"top": 0, "left": p_interrupt_left, "width": 7, "height": 7}
-            p_behind = {"top": 0, "left": p_behind_left, "width": 7, "height": 7}
-            p_clss = {"top": 0, "left": p_clss_left, "width": 7, "height": 7}
-            p_rotation = {"top": 0, "left": p_rotation_left, "width": 7, "height": 7}
+            if active_window != "com.blizzard.worldofwarcraft":
+                continue
 
-            grabbed_image = dir_path + "/images/_/main.png".format(**p_main)
-            main_image = sct.grab(p_main)
-            mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
+            if debug:
+                p_main = {"top": 0, "left": 0, "width": x, "height": y}
+                p_offgcd = {"top": 0, "left":  p_offgcd_left, "width": x, "height": y}
+                p_combat = {"top": 0, "left": p_combat_left, "width": c_width, "height": c_height}
+                p_interrupt = {"top": 0, "left": p_interrupt_left, "width": c_width, "height": c_height}
+                p_behind = {"top": 0, "left": p_behind_left, "width": c_width, "height": c_height}
+                p_clss = {"top": 0, "left": p_clss_left, "width": c_width, "height": c_height}
+                p_rotation = {"top": 0, "left": p_rotation_left, "width": c_width, "height": c_height}
 
-            q_image = dir_path + "/images/_/offgcd.png".format(**p_offgcd)
-            offgcd_image = sct.grab(p_offgcd)
-            mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=q_image)
+                grabbed_image = dir_path + "/images/_/1. main.png".format(**p_main)
+                main_image = sct.grab(p_main)
+                mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
 
-            combat_image = sct.grab(p_combat)
-            combat = combat_image.pixel(5, 5)
-            mss.tools.to_png(combat_image.rgb, combat_image.size, output="_robot/images/_/combat.png".format(**p_combat))
+                q_image = dir_path + "/images/_/7. offgcd.png".format(**p_offgcd)
+                offgcd_image = sct.grab(p_offgcd)
+                mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=q_image)
 
-            interrupt_image = sct.grab(p_interrupt)
-            interrupt = interrupt_image.pixel(5, 5)
-            mss.tools.to_png(interrupt_image.rgb, interrupt_image.size, output="_robot/images/_/interrupt.png".format(**p_interrupt))
+                combat_image = sct.grab(p_combat)
+                combat = combat_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
+                mss.tools.to_png(combat_image.rgb, combat_image.size, output="_robot/images/_/2. combat.png".format(**p_combat))
 
-            behind_image = sct.grab(p_behind)
-            behind = behind_image.pixel(5, 5)
-            mss.tools.to_png(behind_image.rgb, behind_image.size, output="_robot/images/_/behind.png".format(**p_behind))
+                interrupt_image = sct.grab(p_interrupt)
+                interrupt = interrupt_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
+                mss.tools.to_png(interrupt_image.rgb, interrupt_image.size, output="_robot/images/_/3. interrupt.png".format(**p_interrupt))
 
-            clss_image = sct.grab(p_clss)
-            clss = clss_image.pixel(5, 5)
-            mss.tools.to_png(clss_image.rgb, clss_image.size, output="_robot/images/_/clss.png".format(**p_clss))
+                behind_image = sct.grab(p_behind)
+                behind = behind_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
+                mss.tools.to_png(behind_image.rgb, behind_image.size, output="_robot/images/_/4. behind.png".format(**p_behind))
 
-            hex = '#%02x%02x%02x' % clss
+                clss_image = sct.grab(p_clss)
+                clss = clss_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
+                mss.tools.to_png(clss_image.rgb, clss_image.size, output="_robot/images/_/5. clss.png".format(**p_clss))
 
-            print(hex, clss, datetime.now().strftime("%H:%M:%S"))
-            # time.sleep(1)
+                rotation_image = sct.grab(p_rotation)
+                rotation = rotation_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
+                mss.tools.to_png(rotation_image.rgb, rotation_image.size, output="_robot/images/_/6. rotation.png".format(**p_rotation))
+
+                hex = '#%02x%02x%02x' % clss
+
+
+

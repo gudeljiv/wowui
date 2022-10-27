@@ -1,3 +1,8 @@
+10/25/2022 version 3.4.2
+- Update for Dragonflight clients.
+- Fix for 10.0.0 clients inability to use selection action.
+- Note: For pre-patch clients (10.0.0), /select needs two more characters in a macro to do its thing. If your /select macros were 254+ characters, this will cut them short. In 10.0.2 the need for two extra characters may be going away.
+
 10/19/2022 version 3.4.1
 - Fix for Dragonflight beta clients (10.0.2) inability to use selected action.
 - Known issue: Alt+click and right click of flyout buttons are behaving as an unmodified left click. This should be corrected soon.
