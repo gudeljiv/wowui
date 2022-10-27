@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 7188,
+	["session"] = 7194,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -5423,5 +5423,28 @@ BugGrabberDB = {
 			["session"] = 7187,
 			["counter"] = 10,
 		}, -- [697]
+		{
+			["message"] = "Interface\\AddOns\\SUI\\Modules\\ActionBars\\_Retail.lua:376: attempt to index field 'PETACTIONBAR_YPOS' (a nil value)",
+			["time"] = "2022/10/27 19:24:23",
+			["stack"] = "[string \"@Interface\\AddOns\\SUI\\Modules\\ActionBars\\_Retail.lua\"]:376: in function `PetActionBar_DisallowMaxLevelOffset'\n[string \"@Interface\\AddOns\\SUI\\Modules\\ActionBars\\_Retail.lua\"]:402: in function <Interface\\AddOns\\SUI\\Modules\\ActionBars\\_Retail.lua:3>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:70: in function <...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:65>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:527: in function `EnableAddon'\n[string \"@Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:540: in function `EnableAddon'\n[string \"@Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:630: in function <...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:615>",
+			["session"] = 7193,
+			["counter"] = 2,
+		}, -- [698]
+		{
+			["message"] = "Interface\\AddOns\\SUI\\Modules\\ActionBars\\_Retail.lua:127: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: PetActionButton1:SetPoint.",
+			["time"] = "2022/10/27 19:24:23",
+			["locals"] = "(*temporary) = PetActionButton1 {\n 0 = <userdata>\n HotKey = PetActionButton1HotKey {\n }\n NewActionTexture = <unnamed> {\n }\n rabs_styled = true\n Border = PetActionButton1Border {\n }\n Flash = PetActionButton1Flash {\n }\n icon = PetActionButton1Icon {\n }\n AutoCastable = <unnamed> {\n }\n SpellHighlightAnim = <unnamed> {\n }\n bg = <unnamed> {\n }\n Name = PetActionButton1Name {\n }\n Shadow = <unnamed> {\n }\n flashing = false\n SpellHighlightTexture = <unnamed> {\n }\n NormalTexture = PetActionButton1NormalTexture {\n }\n FlyoutBorderShadow = PetActionButton1FlyoutBorderShadow {\n }\n FlyoutBorder = PetActionButton1FlyoutBorder {\n }\n Count = PetActionButton1Count {\n }\n AutoCastShine = PetActionButton1Shine {\n }\n FlyoutArrow = PetActionButton1FlyoutArrow {\n }\n cooldown = PetActionButton1Cooldown {\n }\n SetNormalTexture = <function> defined =[C]:-1\n}\n(*temporary) = \"BOTTOMLEFT\"\n(*temporary) = MainMenuBar {\n state = \"player\"\n 0 = <userdata>\n slideOut = <unnamed> {\n }\n}\n(*temporary) = \"BOTTOMLEFT\"\n(*temporary) = 10.500000\n(*temporary) = 52\n",
+			["stack"] = "[string \"=[C]\"]: in function `SetPoint'\n[string \"@Interface\\AddOns\\SUI\\Modules\\ActionBars\\_Retail.lua\"]:127: in function <Interface\\AddOns\\SUI\\Modules\\ActionBars\\_Retail.lua:106>\n[string \"=[C]\"]: in function `MultiActionBar_Update'\n[string \"@Interface_Wrath\\FrameXML\\UIParent.lua\"]:937: in function <Interface_Wrath\\FrameXML\\UIParent.lua:756>",
+			["session"] = 7193,
+			["counter"] = 2,
+		}, -- [699]
+		{
+			["message"] = "Interface\\AddOns\\SUI\\Modules\\ActionBars\\_Retail.lua:116: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: PetActionButton1:SetPoint.",
+			["time"] = "2022/10/27 19:24:23",
+			["locals"] = "(*temporary) = PetActionButton1 {\n 0 = <userdata>\n HotKey = PetActionButton1HotKey {\n }\n NewActionTexture = <unnamed> {\n }\n rabs_styled = true\n Border = PetActionButton1Border {\n }\n Flash = PetActionButton1Flash {\n }\n icon = PetActionButton1Icon {\n }\n AutoCastable = <unnamed> {\n }\n SpellHighlightAnim = <unnamed> {\n }\n bg = <unnamed> {\n }\n Name = PetActionButton1Name {\n }\n Shadow = <unnamed> {\n }\n flashing = false\n SpellHighlightTexture = <unnamed> {\n }\n NormalTexture = PetActionButton1NormalTexture {\n }\n FlyoutBorderShadow = PetActionButton1FlyoutBorderShadow {\n }\n FlyoutBorder = PetActionButton1FlyoutBorder {\n }\n Count = PetActionButton1Count {\n }\n AutoCastShine = PetActionButton1Shine {\n }\n FlyoutArrow = PetActionButton1FlyoutArrow {\n }\n cooldown = PetActionButton1Cooldown {\n }\n SetNormalTexture = <function> defined =[C]:-1\n}\n(*temporary) = \"BOTTOMLEFT\"\n(*temporary) = MainMenuBar {\n state = \"player\"\n 0 = <userdata>\n slideOut = <unnamed> {\n }\n}\n(*temporary) = \"BOTTOMLEFT\"\n(*temporary) = 10.500000\n(*temporary) = 98\n",
+			["stack"] = "[string \"=[C]\"]: in function `SetPoint'\n[string \"@Interface\\AddOns\\SUI\\Modules\\ActionBars\\_Retail.lua\"]:116: in function <Interface\\AddOns\\SUI\\Modules\\ActionBars\\_Retail.lua:106>\n[string \"=[C]\"]: in function `MultiActionBar_Update'\n[string \"@Interface_Wrath\\FrameXML\\InterfaceOptionsPanels.lua\"]:1182: in function `InterfaceOptions_UpdateMultiActionBars'\n[string \"*:OnLoad\"]:4: in function `setFunc'\n[string \"@Interface_Wrath\\FrameXML\\InterfaceOptionsPanels.lua\"]:1152: in function <Interface_Wrath\\FrameXML\\InterfaceOptionsPanels.lua:1145>",
+			["session"] = 7193,
+			["counter"] = 6,
+		}, -- [700]
 	},
 }

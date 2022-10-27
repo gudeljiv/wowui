@@ -2,6 +2,7 @@
 CappingSettings = {
 	["profileKeys"] = {
 		["Vermin - Golemagg"] = "Default",
+		["Vermina - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",

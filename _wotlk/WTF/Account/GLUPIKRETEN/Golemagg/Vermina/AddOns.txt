@@ -179,3 +179,6 @@ XLoot_Group: disabled
 Roll: disabled
 Gladdy: disabled
 NovaWorldBuffs: enabled
+LortiUI: disabled
+UberUI: disabled
+SUI: disabled

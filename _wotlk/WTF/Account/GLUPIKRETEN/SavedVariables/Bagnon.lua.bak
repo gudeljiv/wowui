@@ -14,12 +14,7 @@ Bagnon_Sets = {
 	},
 	["global"] = {
 		["inventory"] = {
-			["color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.7481050789356232, -- [4]
-			},
+			["scale"] = 1,
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -44,28 +39,33 @@ Bagnon_Sets = {
 				"all/souls", -- [21]
 				"equip/ammo", -- [22]
 			},
-			["point"] = "TOPRIGHT",
+			["options"] = true,
 			["hiddenBags"] = {
 				[-2] = true,
 			},
-			["scale"] = 1,
+			["color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.7481050789356232, -- [4]
+			},
 			["money"] = true,
 			["hiddenRules"] = {
 			},
-			["search"] = true,
+			["sort"] = true,
 			["bagBreak"] = false,
 			["x"] = -290.4547119140625,
-			["sort"] = true,
+			["search"] = true,
+			["broker"] = false,
+			["y"] = -233.6741943359375,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
-			["y"] = -233.6741943359375,
-			["broker"] = false,
 			["bagToggle"] = true,
-			["options"] = true,
+			["point"] = "TOPRIGHT",
 		},
 		["vault"] = {
 			["rules"] = {
