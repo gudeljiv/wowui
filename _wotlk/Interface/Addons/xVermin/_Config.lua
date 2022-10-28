@@ -1,12 +1,19 @@
 local _, xVermin = ...
 
-local resolution = ({GetScreenResolutions()})[GetCurrentResolution()]
--- local resolution_width = string.match(resolution, "%d+x(%d+)")
+-- local resolution = ({GetScreenResolutions()})[GetCurrentResolution()]
+local width, height = GetPhysicalScreenSize()
+-- local scale = 0.58
 
+-- if height == 2240 then
+-- 	scale = 0.55
+-- end
+
+scale = 1232 / height
+-- local resolution_width = string.match(resolution, "%d+x(%d+)")
 -- local scale = tonumber(resolution_width) > 2000 and 0.55 or 768 / resolution_width
 
 xVermin.Config = {
-	UIscale = 0.58,
+	UIscale = scale,
 	font = {
 		arial = 'Fonts\\ARIALN.ttf',
 		atari = 'Interface\\AddOns\\xVermin\\Media\\Atari.ttf',

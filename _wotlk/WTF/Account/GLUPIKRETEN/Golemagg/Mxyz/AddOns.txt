@@ -174,7 +174,7 @@ Details_Vanguard: enabled
 FarmHud_TrailPath: enabled
 Pawn: enabled
 TradeSkillMaster_AppHelper: enabled
-NovaWorldBuffs: disabled
+NovaWorldBuffs: enabled
 GearScoreLite: disabled
 Select: enabled
 XLoot: disabled

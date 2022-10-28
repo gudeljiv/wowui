@@ -14,6 +14,7 @@ Bagnon_Sets = {
 	},
 	["global"] = {
 		["inventory"] = {
+			["point"] = "TOPRIGHT",
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -42,29 +43,29 @@ Bagnon_Sets = {
 			["hiddenBags"] = {
 				[-2] = true,
 			},
+			["scale"] = 1,
 			["money"] = true,
-			["color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.7481050789356232, -- [4]
-			},
 			["hiddenRules"] = {
 			},
-			["bagBreak"] = false,
-			["y"] = -293.1571044921875,
-			["x"] = -408.98974609375,
-			["sort"] = true,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
+			["bagBreak"] = false,
+			["x"] = -290.4547119140625,
+			["sort"] = true,
 			["broker"] = false,
+			["y"] = -233.6741943359375,
 			["search"] = true,
 			["bagToggle"] = true,
-			["point"] = "TOPRIGHT",
+			["color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.7481050789356232, -- [4]
+			},
 		},
 		["vault"] = {
 			["rules"] = {
@@ -99,7 +100,7 @@ Bagnon_Sets = {
 			},
 		},
 		["guild"] = {
-			["y"] = -401.2474365234375,
+			["enabled"] = true,
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -125,15 +126,16 @@ Bagnon_Sets = {
 				"equip/ammo", -- [22]
 			},
 			["point"] = "TOPLEFT",
-			["borderColor"] = {
+			["hiddenBags"] = {
 			},
 			["color"] = {
 			},
-			["hiddenBags"] = {
-			},
 			["hiddenRules"] = {
 			},
+			["y"] = -401.2474365234375,
 			["x"] = 505.2874450683594,
+			["borderColor"] = {
+			},
 		},
 		["bank"] = {
 			["rules"] = {
@@ -197,7 +199,19 @@ Bagnon_Sets = {
 	["mineColor"] = {
 	},
 	["displayTrade"] = false,
-	["version"] = "9.2.2",
+	["version"] = "10.0.3",
+	["display"] = {
+		["merchant"] = false,
+		["tradePartner"] = false,
+		["mailInfo"] = false,
+		["socketing"] = false,
+		["scrappingMachine"] = false,
+		["crafting"] = false,
+		["banker"] = false,
+		["auctioneer"] = false,
+		["guildBanker"] = false,
+		["voidStorageBanker"] = false,
+	},
 	["fridgeColor"] = {
 	},
 	["engineerColor"] = {

@@ -1,7 +1,6 @@
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,exists,nodead][help][] Rejuvenation
-/use 
+/cast [@mouseover,help,nodead][] Rejuvenation
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -57,7 +56,7 @@ END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtoltip 
 /startattack
-/cast [stealth] Pounce; [form:1] Maul; [form:3] Claw; [@mouseover,help,nodead][help][] Regrowth
+/cast [stealth] Pounce; [form:1] Maul; [form:3] Claw; [@mouseover,help,nodead][] Regrowth
 /use Bladefist's Breadth
 END
 VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
@@ -76,4 +75,8 @@ VER 3 0000000001000016 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast [@mouseover,exists,nodead][help][] Faerie Fire (Feral)
+END
+VER 3 0000000001000017 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help,nodead][] Lifebloom
 END

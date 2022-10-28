@@ -4,7 +4,7 @@
 ## Author: Gello
 ## SavedVariables: SelectSettings
 ## SavedVariablesPerCharacter: SelectPerCharacterSettings
-## Version: 3.4.1
+## Version: 3.4.2
 ## X-WoWI-ID: 11607
 ## X-Wago-ID: 5bGok1G0
 ## X-Curse-Project-ID: 45081

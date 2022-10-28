@@ -7,18 +7,16 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 181,
+					["combatId"] = 341,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001734,
+							["totalabsorbed"] = 0.00662,
 							["damage_from"] = {
-								["Environment (Falling)"] = true,
-								["Environment (Fire)"] = true,
 							},
 							["targets"] = {
-								["Dustbelcher Shaman"] = 1870,
+								["Dustbelcher Ogre Mage"] = 1914,
 							},
 							["pets"] = {
 								"Bear <Mxzq>", -- [1]
@@ -27,1300 +25,12 @@ _detalhes_database = {
 							["classe"] = "HUNTER",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 1153.001734,
+							["total_without_pet"] = 1191.00662,
 							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["end_time"] = 1666437494,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-01C7FC88",
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[75] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 563,
-										["targets"] = {
-											["Dustbelcher Shaman"] = 563,
-										},
-										["n_dmg"] = 563,
-										["n_min"] = 563,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 563,
-										["c_max"] = 0,
-										["id"] = 75,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27019] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 590,
-										["targets"] = {
-											["Dustbelcher Shaman"] = 590,
-										},
-										["n_dmg"] = 590,
-										["n_min"] = 590,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 590,
-										["c_max"] = 0,
-										["id"] = 27019,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["total"] = 1870.001734,
-							["serial"] = "Player-4465-01C7FC88",
-							["last_dps"] = 757.39235885,
-							["custom"] = 0,
-							["last_event"] = 1666437493,
-							["damage_taken"] = 1384.001734,
-							["start_time"] = 1666437492,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.002989,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Dustbelcher Shaman"] = 717,
-							},
-							["aID"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["pets"] = {
-							},
-							["colocacao"] = 2,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 717.0029890000001,
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["dps_started"] = false,
-							["total"] = 717.0029890000001,
-							["classe"] = "PET",
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 230,
-										["targets"] = {
-											["Dustbelcher Shaman"] = 230,
-										},
-										["n_dmg"] = 230,
-										["n_min"] = 230,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 230,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[63900] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 487,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Dustbelcher Shaman"] = 487,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 487,
-										["c_max"] = 487,
-										["id"] = 63900,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 487,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["end_time"] = 1666437494,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 290.4021826651476,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.002989,
-							["start_time"] = 1666437493,
-							["delay"] = 0,
-							["last_event"] = 1666437493,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005297,
-							["damage_from"] = {
-								["Mxzq"] = true,
-								["Bear <Mxzq>"] = true,
-							},
-							["targets"] = {
-								["Deathorder"] = 24,
-							},
-							["aID"] = "2718",
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 24.005297,
-							["timeMachine"] = 6,
-							["fight_component"] = true,
-							["dps_started"] = true,
-							["total"] = 24.005297,
-							["monster"] = true,
-							["on_hold"] = true,
-							["nome"] = "Dustbelcher Shaman",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 24,
-										["targets"] = {
-											["Deathorder"] = 24,
-										},
-										["n_dmg"] = 24,
-										["n_min"] = 24,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 24,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[9532] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Deathorder"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 9532,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire_total"] = 0,
-							["serial"] = "Creature-0-4479-0-14165-2718-0000528942",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1666437509,
-							["damage_taken"] = 1870.005297,
-							["start_time"] = 1666437494,
-							["delay"] = 1666437509,
-							["tipo"] = 1,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 181,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorb"] = 0.00132,
-							["last_hps"] = 0,
-							["targets_overheal"] = {
-							},
-							["targets"] = {
-							},
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-								},
-							},
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["iniciar_hps"] = false,
-							["healing_from"] = {
-							},
-							["healing_taken"] = 0.00132,
-							["totalover"] = 71.00132,
-							["total_without_pet"] = 0.00132,
-							["heal_enemy_amt"] = 0,
-							["totalover_without_pet"] = 0.00132,
-							["aID"] = "4465-01C7FC88",
-							["total"] = 0.00132,
-							["end_time"] = 1666437494,
-							["classe"] = "HUNTER",
-							["nome"] = "Mxzq",
-							["targets_absorbs"] = {
-							},
-							["grupo"] = true,
-							["start_time"] = 1666437493,
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["totaldenied"] = 0.00132,
-							["delay"] = 0,
-							["last_event"] = 1666437493,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["targets_overheal"] = {
-								["Bear <Mxzq>"] = 71,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PET",
-							["totalover"] = 71.002676,
-							["total_without_pet"] = 0.002676,
-							["total"] = 0.002676,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["totalabsorb"] = 0.002676,
-							["last_hps"] = 0,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.002676,
-							["healing_taken"] = 0.002676,
-							["start_time"] = 1666437493,
-							["end_time"] = 1666437494,
-							["healing_from"] = {
-							},
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[62800] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bear <Mxzq>"] = 71,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Bear <Mxzq>"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 71,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 62800,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["totaldenied"] = 0.002676,
-							["delay"] = 0,
-							["last_event"] = 1666437493,
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 181,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["received"] = 57.008175,
-							["resource"] = 0.008175,
-							["targets"] = {
-								["Mxzq"] = 57,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "HUNTER",
-							["passiveover"] = 0.008175,
-							["total"] = 57.008175,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[53398] = {
-										["total"] = 57,
-										["id"] = 53398,
-										["totalover"] = 0,
-										["targets"] = {
-											["Mxzq"] = 57,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
-							["grupo"] = true,
-							["flag_original"] = 1297,
-							["alternatepower"] = 0.008175,
-							["last_event"] = 1666437493,
-							["aID"] = "4465-01C7FC88",
-							["tipo"] = 3,
-							["serial"] = "Player-4465-01C7FC88",
-							["totalover"] = 0.008175,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 181,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Mxzq",
-							["buff_uptime"] = 2,
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["last_event"] = 1666437720,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[75447] = {
-										["activedamt"] = 0,
-										["id"] = 75447,
-										["targets"] = {
-										},
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57475] = {
-										["activedamt"] = 0,
-										["id"] = 57475,
-										["targets"] = {
-										},
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27044] = {
-										["activedamt"] = 1,
-										["id"] = 27044,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["aID"] = "4465-01C7FC88",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["spell_cast"] = {
-								[27047] = 1,
-								[63900] = 1,
-							},
-							["tipo"] = 4,
-							["aID"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["serial"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 181,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxzq"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Mxzq", -- [1]
-				},
-				["tempo_start"] = 1666437492,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Dustbelcher Shaman",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					1893.982965, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 57,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["TotalElapsedCombatTime"] = 11559.562,
-				["combat_counter"] = 10883,
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Mxzq"] = 0.00132,
-							["Bear <Mxzq>"] = 0.002676,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Mxzq"] = 1870.001734,
-							["Bear <Mxzq>"] = 717.0029890000001,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 11559.562,
-				["player_last_events"] = {
-					["Mxzq"] = {
-						{
-							true, -- [1]
-							3, -- [2]
-							346, -- [3]
-							1666437568.2, -- [4]
-							5660, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-							true, -- [1]
-							3, -- [2]
-							1025, -- [3]
-							1666437576.09, -- [4]
-							5402, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [2]
-						{
-							true, -- [1]
-							6, -- [2]
-							13, -- [3]
-							1666437716.842, -- [4]
-							5907, -- [5]
-							"Environment (Fire)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 4,
-					},
-				},
-				["instance_type"] = "none",
-				["CombatEndedAt"] = 11559.562,
-				["data_inicio"] = "13:18:12",
-				["totals_grupo"] = {
-					1870, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 57,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "13:18:14",
-				["combat_id"] = 181,
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Dustbelcher Shaman"] = 1,
-				},
-				["start_time"] = 11557.093,
-				["TimeData"] = {
-				},
-				["contra"] = "Dustbelcher Shaman",
-			}, -- [1]
-			{
-				{
-					["combatId"] = 180,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007764,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Dustbelcher Ogre Mage"] = 1603,
-							},
-							["total"] = 1603.007764,
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["on_hold"] = false,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1150.007764,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1666437470,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-01C7FC88",
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[75] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1150,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 1150,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 1150,
-										["c_max"] = 1150,
-										["id"] = 75,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1150,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-01C7FC88",
-							["last_dps"] = 558.7339714184966,
-							["custom"] = 0,
-							["last_event"] = 1666437468,
-							["damage_taken"] = 0.007764,
-							["start_time"] = 1666437467,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.00781,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Dustbelcher Ogre Mage"] = 453,
-							},
-							["friendlyfire"] = {
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 2,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 453.00781,
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["dps_started"] = false,
-							["end_time"] = 1666437470,
-							["aID"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 268,
-										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 268,
-										},
-										["n_dmg"] = 268,
-										["n_min"] = 268,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 268,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[27049] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 185,
-										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 185,
-										},
-										["n_dmg"] = 185,
-										["n_min"] = 185,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 185,
-										["c_max"] = 0,
-										["id"] = 27049,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PET",
-							["total"] = 453.00781,
-							["last_dps"] = 157.8974590449306,
-							["custom"] = 0,
-							["last_event"] = 1666437468,
-							["damage_taken"] = 0.00781,
-							["start_time"] = 1666437468,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002675,
-							["aID"] = "2720",
-							["damage_from"] = {
-								["Deathorder"] = true,
-								["Grubbasher"] = true,
-								["Mxzq"] = true,
-								["Bear <Mxzq>"] = true,
-							},
-							["targets"] = {
-								["Deathorder"] = 21,
-							},
-							["fight_component"] = true,
-							["pets"] = {
-							},
-							["end_time"] = 1666437492,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 21.002675,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 21.002675,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Dustbelcher Ogre Mage",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Deathorder"] = 21,
-										},
-										["n_dmg"] = 21,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 21,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4479-0-14165-2720-000053D025",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1666437472,
-							["damage_taken"] = 3537.002675,
-							["start_time"] = 1666437489,
-							["delay"] = 1666437472,
-							["tipo"] = 1,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 180,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorb"] = 0.00616,
-							["last_hps"] = 0,
-							["healing_from"] = {
-							},
-							["targets"] = {
-							},
-							["targets_absorbs"] = {
-							},
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["totalover_without_pet"] = 0.00616,
-							["targets_overheal"] = {
-							},
-							["classe"] = "HUNTER",
-							["totalover"] = 72.00616,
-							["total_without_pet"] = 0.00616,
-							["iniciar_hps"] = false,
-							["healing_taken"] = 0.00616,
-							["end_time"] = 1666437470,
-							["total"] = 0.00616,
-							["aID"] = "4465-01C7FC88",
-							["heal_enemy_amt"] = 0,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["start_time"] = 1666437467,
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["custom"] = 0,
-							["last_event"] = 1666437467,
-							["on_hold"] = false,
-							["totaldenied"] = 0.00616,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["targets_overheal"] = {
-								["Bear <Mxzq>"] = 72,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PET",
-							["totalover"] = 72.008274,
-							["total_without_pet"] = 0.008274,
-							["total"] = 0.008274,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["totalabsorb"] = 0.008274,
-							["last_hps"] = 0,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.008274,
-							["healing_taken"] = 0.008274,
-							["start_time"] = 1666437467,
-							["end_time"] = 1666437470,
-							["healing_from"] = {
-							},
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[62800] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bear <Mxzq>"] = 72,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Bear <Mxzq>"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 72,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 62800,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["totaldenied"] = 0.008274,
-							["delay"] = 0,
-							["last_event"] = 1666437467,
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 180,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 180,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Mxzq",
-							["buff_uptime"] = 3,
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["last_event"] = 1666437470,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[27044] = {
-										["activedamt"] = 1,
-										["id"] = 27044,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["aID"] = "4465-01C7FC88",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["spell_cast"] = {
-								[27047] = 1,
-								[27049] = 1,
-							},
-							["tipo"] = 4,
-							["aID"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["serial"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 180,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxzq"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Mxzq", -- [1]
-				},
-				["CombatStartedAt"] = 11556.543,
-				["tempo_start"] = 1666437467,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 10882,
-				["playing_solo"] = true,
-				["totals"] = {
-					1623.983764, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = -0.00496500000000033,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					1603, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "13:17:50",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Dustbelcher Ogre Mage",
-				["TotalElapsedCombatTime"] = 11535.242,
-				["CombatEndedAt"] = 11535.242,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Mxzq"] = 0.00616,
-							["Bear <Mxzq>"] = 0.008274,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Mxzq"] = 1603.007764,
-							["Bear <Mxzq>"] = 453.00781,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 11535.242,
-				["combat_id"] = 180,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "13:17:47",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Dustbelcher Ogre Mage"] = 1,
-				},
-				["start_time"] = 11532.373,
-				["TimeData"] = {
-				},
-				["contra"] = "Dustbelcher Ogre Mage",
-			}, -- [2]
-			{
-				{
-					["combatId"] = 179,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005862,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Dustbelcher Ogre Mage"] = 1691,
-							},
-							["total"] = 1691.005862,
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["on_hold"] = false,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1144.005862,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1666437464,
+							["end_time"] = 1666880107,
 							["friendlyfire_total"] = 0,
 							["aID"] = "4465-01C7FC88",
 							["nome"] = "Mxzq",
@@ -1332,15 +42,15 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 554,
+										["n_max"] = 601,
 										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 554,
+											["Dustbelcher Ogre Mage"] = 601,
 										},
-										["n_dmg"] = 554,
-										["n_min"] = 554,
+										["n_dmg"] = 601,
+										["n_min"] = 601,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 554,
+										["total"] = 601,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -1386,25 +96,25 @@ _detalhes_database = {
 								},
 							},
 							["grupo"] = true,
+							["total"] = 1914.00662,
 							["serial"] = "Player-4465-01C7FC88",
-							["last_dps"] = 1987.080918917594,
+							["last_dps"] = 1472.312784628569,
 							["custom"] = 0,
-							["last_event"] = 1666437464,
-							["damage_taken"] = 0.005862,
-							["start_time"] = 1666437463,
+							["last_event"] = 1666880106,
+							["damage_taken"] = 0.00662,
+							["start_time"] = 1666880105,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005499,
+							["totalabsorbed"] = 0.00321,
 							["damage_from"] = {
 								["Mxzq"] = true,
 								["Bear <Mxzq>"] = true,
 							},
 							["targets"] = {
 							},
-							["total"] = 0.005499,
 							["pets"] = {
 							},
 							["friendlyfire"] = {
@@ -1412,11 +122,11 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 0.005499,
+							["total_without_pet"] = 0.00321,
 							["fight_component"] = true,
 							["monster"] = true,
 							["dps_started"] = false,
-							["end_time"] = 1666437464,
+							["end_time"] = 1666880107,
 							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
 							["nome"] = "Dustbelcher Ogre Mage",
@@ -1426,37 +136,37 @@ _detalhes_database = {
 								},
 							},
 							["aID"] = "2720",
-							["serial"] = "Creature-0-4479-0-14165-2720-000053C4E9",
+							["total"] = 0.00321,
+							["serial"] = "Creature-0-5571-0-5544-2720-0000DA9059",
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["damage_taken"] = 1691.005499,
-							["start_time"] = 1666437464,
+							["damage_taken"] = 1914.00321,
+							["start_time"] = 1666880107,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [2]
 						{
 							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.008455,
+							["totalabsorbed"] = 0.008694,
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Dustbelcher Ogre Mage"] = 547,
+								["Dustbelcher Ogre Mage"] = 723,
 							},
-							["friendlyfire"] = {
-							},
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
 							["pets"] = {
 							},
 							["colocacao"] = 2,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 547.008455,
+							["total_without_pet"] = 723.008694,
 							["on_hold"] = false,
-							["serial"] = "Pet-0-4479-0-14165-7443-010074C845",
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
 							["dps_started"] = false,
-							["end_time"] = 1666437464,
-							["aID"] = "Pet-0-4479-0-14165-7443-010074C845",
+							["total"] = 723.008694,
+							["classe"] = "PET",
 							["ownerName"] = "Mxzq",
 							["nome"] = "Bear <Mxzq>",
 							["spells"] = {
@@ -1467,15 +177,15 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 225,
+										["n_max"] = 239,
 										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 225,
+											["Dustbelcher Ogre Mage"] = 239,
 										},
-										["n_dmg"] = 225,
-										["n_min"] = 225,
+										["n_dmg"] = 239,
+										["n_min"] = 239,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 225,
+										["total"] = 239,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -1487,8236 +197,6 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[63900] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 322,
-										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 322,
-										},
-										["n_dmg"] = 322,
-										["n_min"] = 322,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 322,
-										["c_max"] = 0,
-										["id"] = 63900,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PET",
-							["total"] = 547.008455,
-							["last_dps"] = 642.7831433603234,
-							["custom"] = 0,
-							["last_event"] = 1666437463,
-							["damage_taken"] = 0.008455,
-							["start_time"] = 1666437463,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 179,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 179,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 179,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Mxzq",
-							["buff_uptime"] = 1,
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["last_event"] = 1666437464,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[27044] = {
-										["activedamt"] = 1,
-										["id"] = 27044,
-										["targets"] = {
-										},
-										["uptime"] = 1,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["aID"] = "4465-01C7FC88",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["spell_cast"] = {
-								[63900] = 1,
-							},
-							["tipo"] = 4,
-							["aID"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["serial"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 179,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxzq"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Mxzq", -- [1]
-				},
-				["CombatStartedAt"] = 11531.855,
-				["tempo_start"] = 1666437463,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 10881,
-				["playing_solo"] = true,
-				["totals"] = {
-					1691, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					1691, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "13:17:44",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Dustbelcher Ogre Mage",
-				["TotalElapsedCombatTime"] = 11529.554,
-				["CombatEndedAt"] = 11529.554,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Mxzq"] = 1691.005862,
-							["Bear <Mxzq>"] = 547.008455,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 11529.554,
-				["combat_id"] = 179,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "13:17:43",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Dustbelcher Ogre Mage"] = 1,
-				},
-				["start_time"] = 11528.269,
-				["TimeData"] = {
-				},
-				["contra"] = "Dustbelcher Ogre Mage",
-			}, -- [3]
-			{
-				{
-					["combatId"] = 178,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.00101,
-							["damage_from"] = {
-								["Dustbelcher Lord"] = true,
-								["Dustbelcher Ogre Mage"] = true,
-							},
-							["targets"] = {
-								["Dustbelcher Lord"] = 10077,
-								["Dustbelcher Ogre Mage"] = 3606,
-							},
-							["total"] = 13683.00101,
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["on_hold"] = false,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 7668.00101,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1666437434,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-01C7FC88",
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[27021] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1364,
-										["g_amt"] = 0,
-										["n_max"] = 718,
-										["targets"] = {
-											["Dustbelcher Lord"] = 2082,
-										},
-										["n_dmg"] = 718,
-										["n_min"] = 718,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 2082,
-										["c_max"] = 1364,
-										["id"] = 27021,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1364,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[75] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 2178,
-										["g_amt"] = 0,
-										["n_max"] = 528,
-										["targets"] = {
-											["Dustbelcher Lord"] = 3206,
-										},
-										["n_dmg"] = 1028,
-										["n_min"] = 500,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 3206,
-										["c_max"] = 1142,
-										["id"] = 75,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1036,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27019] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 608,
-										["targets"] = {
-											["Dustbelcher Lord"] = 1181,
-											["Dustbelcher Ogre Mage"] = 1199,
-										},
-										["n_dmg"] = 2380,
-										["n_min"] = 590,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 2380,
-										["c_max"] = 0,
-										["id"] = 27019,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-01C7FC88",
-							["last_dps"] = 588.8707613186697,
-							["custom"] = 0,
-							["last_event"] = 1666437434,
-							["damage_taken"] = 217.00101,
-							["start_time"] = 1666437411,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.005639,
-							["damage_from"] = {
-								["Dustbelcher Lord"] = true,
-							},
-							["targets"] = {
-								["Dustbelcher Lord"] = 3608,
-								["Dustbelcher Ogre Mage"] = 2407,
-							},
-							["friendlyfire"] = {
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 2,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 6015.005639,
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["dps_started"] = false,
-							["end_time"] = 1666437434,
-							["aID"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 1332,
-										["g_amt"] = 0,
-										["n_max"] = 249,
-										["targets"] = {
-											["Dustbelcher Lord"] = 1935,
-											["Dustbelcher Ogre Mage"] = 1536,
-										},
-										["n_dmg"] = 2139,
-										["n_min"] = 199,
-										["g_dmg"] = 0,
-										["counter"] = 13,
-										["total"] = 3471,
-										["c_max"] = 468,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 429,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 10,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[53532] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 172,
-										["targets"] = {
-											["Dustbelcher Lord"] = 330,
-										},
-										["n_dmg"] = 330,
-										["n_min"] = 158,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 330,
-										["c_max"] = 0,
-										["id"] = 53532,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27049] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 371,
-										["g_amt"] = 0,
-										["n_max"] = 192,
-										["targets"] = {
-											["Dustbelcher Lord"] = 372,
-											["Dustbelcher Ogre Mage"] = 551,
-										},
-										["n_dmg"] = 552,
-										["n_min"] = 180,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 923,
-										["c_max"] = 371,
-										["id"] = 27049,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 371,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[63900] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 325,
-										["targets"] = {
-											["Dustbelcher Lord"] = 971,
-											["Dustbelcher Ogre Mage"] = 320,
-										},
-										["n_dmg"] = 1291,
-										["n_min"] = 320,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 1291,
-										["c_max"] = 0,
-										["id"] = 63900,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PET",
-							["total"] = 6015.005639,
-							["last_dps"] = 258.8657961353188,
-							["custom"] = 0,
-							["last_event"] = 1666437433,
-							["damage_taken"] = 108.005639,
-							["start_time"] = 1666437412,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.001085,
-							["total"] = 291.001085,
-							["damage_from"] = {
-								["Mxzq"] = true,
-								["Bear <Mxzq>"] = true,
-							},
-							["targets"] = {
-								["Mxzq"] = 183,
-								["Bear <Mxzq>"] = 108,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 291.001085,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1666437434,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Dustbelcher Lord",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 49,
-										["targets"] = {
-											["Bear"] = 0,
-											["Mxzq"] = 183,
-											["Bear <Mxzq>"] = 108,
-										},
-										["n_dmg"] = 291,
-										["n_min"] = 33,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["a_dmg"] = 0,
-										["total"] = 291,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["PARRY"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[9128] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 9128,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[13730] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Mxzq"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 13730,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["aID"] = "2719",
-							["serial"] = "Creature-0-4479-0-14165-2719-000053BEC0",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1666437433,
-							["damage_taken"] = 10077.001085,
-							["start_time"] = 1666437414,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [3]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002591,
-							["total"] = 34.002591,
-							["damage_from"] = {
-								["Deathorder"] = true,
-								["Grubbasher"] = true,
-								["Mxzq"] = true,
-								["Bear <Mxzq>"] = true,
-							},
-							["targets"] = {
-								["Mxzq"] = 34,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 34.002591,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1666437434,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Dustbelcher Ogre Mage",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 34,
-										["targets"] = {
-											["Mxzq"] = 34,
-										},
-										["n_dmg"] = 34,
-										["n_min"] = 34,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 34,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[20822] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Bear"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 20822,
-										["r_dmg"] = 0,
-										["MISS"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[6742] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 6742,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["aID"] = "2720",
-							["serial"] = "Creature-0-4479-0-14165-2720-000053CB3D",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1666437433,
-							["damage_taken"] = 4201.002591,
-							["start_time"] = 1666437430,
-							["delay"] = 1666437416,
-							["tipo"] = 1,
-						}, -- [4]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 178,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "HUNTER",
-							["totalover"] = 142.001776,
-							["total_without_pet"] = 0.001776,
-							["total"] = 74.001776,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 2,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-01C7FC88",
-							["totalabsorb"] = 0.001776,
-							["last_hps"] = 5.140797221257875,
-							["targets"] = {
-								["Bear <Mxzq>"] = 74,
-							},
-							["totalover_without_pet"] = 0.001776,
-							["healing_taken"] = 0.001776,
-							["end_time"] = 1666437434,
-							["healing_from"] = {
-							},
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1666437413,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "4465-01C7FC88",
-							["totaldenied"] = 0.001776,
-							["delay"] = 0,
-							["last_event"] = 1666437425,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["targets_overheal"] = {
-								["Bear <Mxzq>"] = 142,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PET",
-							["totalover"] = 142.003409,
-							["total_without_pet"] = 74.003409,
-							["total"] = 74.003409,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["totalabsorb"] = 0.003409,
-							["last_hps"] = 5.140910663425294,
-							["targets"] = {
-								["Bear <Mxzq>"] = 74,
-							},
-							["totalover_without_pet"] = 0.003409,
-							["healing_taken"] = 74.003409,
-							["start_time"] = 1666437413,
-							["fight_component"] = true,
-							["end_time"] = 1666437434,
-							["healing_from"] = {
-								["Bear <Mxzq>"] = true,
-							},
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[62800] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bear <Mxzq>"] = 142,
-										},
-										["n_max"] = 41,
-										["targets"] = {
-											["Bear <Mxzq>"] = 74,
-										},
-										["n_min"] = 33,
-										["counter"] = 3,
-										["overheal"] = 142,
-										["total"] = 74,
-										["c_max"] = 0,
-										["id"] = 62800,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 74,
-										["totaldenied"] = 0,
-										["n_amt"] = 3,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["totaldenied"] = 0.003409,
-							["delay"] = 0,
-							["last_event"] = 1666437425,
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 178,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["received"] = 58.004303,
-							["resource"] = 0.004303,
-							["targets"] = {
-								["Mxzq"] = 58,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "HUNTER",
-							["passiveover"] = 32.004303,
-							["total"] = 58.004303,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[53398] = {
-										["total"] = 58,
-										["id"] = 53398,
-										["totalover"] = 0,
-										["targets"] = {
-											["Mxzq"] = 58,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
-							["grupo"] = true,
-							["flag_original"] = 1297,
-							["alternatepower"] = 0.004303,
-							["last_event"] = 1666437431,
-							["aID"] = "4465-01C7FC88",
-							["tipo"] = 3,
-							["serial"] = "Player-4465-01C7FC88",
-							["totalover"] = 0.004303,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 178,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["spell_cast"] = {
-								[27021] = 1,
-								[27019] = 3,
-								[75] = 5,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Mxzq",
-							["buff_uptime"] = 44,
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["last_event"] = 1666437441,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[27044] = {
-										["activedamt"] = 1,
-										["id"] = 27044,
-										["targets"] = {
-										},
-										["uptime"] = 23,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[6150] = {
-										["activedamt"] = 1,
-										["id"] = 6150,
-										["targets"] = {
-										},
-										["uptime"] = 11,
-										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[70893] = {
-										["activedamt"] = 1,
-										["id"] = 70893,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["aID"] = "4465-01C7FC88",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["classe"] = "PET",
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["spell_cast"] = {
-								[27049] = 4,
-								[53532] = 2,
-								[27047] = 3,
-								[63900] = 3,
-								[61685] = 1,
-							},
-							["tipo"] = 4,
-							["aID"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["serial"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["last_event"] = 0,
-						}, -- [2]
-						{
-							["monster"] = true,
-							["nome"] = "Dustbelcher Lord",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[9128] = 1,
-								[13730] = 1,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4479-0-14165-2719-000053BEC0",
-							["aID"] = "2719",
-						}, -- [3]
-						{
-							["monster"] = true,
-							["nome"] = "Dustbelcher Ogre Mage",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[20822] = 2,
-								[6742] = 1,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4479-0-14165-2720-000053C89D",
-							["aID"] = "2720",
-						}, -- [4]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 178,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxzq"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Mxzq", -- [1]
-				},
-				["CombatStartedAt"] = 11528.019,
-				["tempo_start"] = 1666437411,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 10880,
-				["playing_solo"] = true,
-				["totals"] = {
-					14007.995913, -- [1]
-					74, -- [2]
-					{
-						0, -- [1]
-						[0] = 58,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = -0.001826000000001216,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					13683, -- [1]
-					74, -- [2]
-					{
-						0, -- [1]
-						[0] = 58,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "13:17:14",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Dustbelcher Ogre Mage",
-				["TotalElapsedCombatTime"] = 11499.545,
-				["CombatEndedAt"] = 11499.545,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Mxzq"] = 74.001776,
-							["Bear <Mxzq>"] = 74.003409,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Mxzq"] = 13683.00101,
-							["Bear <Mxzq>"] = 6015.005639,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 11499.545,
-				["combat_id"] = 178,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "13:16:51",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Dustbelcher Lord"] = 4,
-					["Dustbelcher Ogre Mage"] = 2,
-				},
-				["start_time"] = 11476.309,
-				["TimeData"] = {
-				},
-				["contra"] = "Dustbelcher Ogre Mage",
-			}, -- [4]
-			{
-				{
-					["combatId"] = 177,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.003101,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Dustbelcher Ogre Mage"] = 1458,
-							},
-							["friendlyfire"] = {
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1458.003101,
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["dps_started"] = false,
-							["end_time"] = 1666437404,
-							["aID"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 265,
-										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 939,
-										},
-										["n_dmg"] = 939,
-										["n_min"] = 211,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 939,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[63900] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 320,
-										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 320,
-										},
-										["n_dmg"] = 320,
-										["n_min"] = 320,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 320,
-										["c_max"] = 0,
-										["id"] = 63900,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27049] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 199,
-										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 199,
-										},
-										["n_dmg"] = 199,
-										["n_min"] = 199,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 199,
-										["c_max"] = 0,
-										["id"] = 27049,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PET",
-							["total"] = 1458.003101,
-							["last_dps"] = 356.7416444825462,
-							["custom"] = 0,
-							["last_event"] = 1666437404,
-							["damage_taken"] = 0.003101,
-							["start_time"] = 1666437400,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.002498,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Dustbelcher Ogre Mage"] = 1458,
-							},
-							["total"] = 1458.002498,
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["on_hold"] = false,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.002498,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1666437404,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-01C7FC88",
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-01C7FC88",
-							["last_dps"] = 356.7414969415626,
-							["custom"] = 0,
-							["last_event"] = 1666437404,
-							["damage_taken"] = 0.002498,
-							["start_time"] = 1666437400,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.004873,
-							["damage_from"] = {
-								["Bear <Mxzq>"] = true,
-							},
-							["targets"] = {
-							},
-							["total"] = 0.004873,
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.004873,
-							["fight_component"] = true,
-							["monster"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1666437404,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Dustbelcher Ogre Mage",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[20822] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Bear"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 20822,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["aID"] = "2720",
-							["serial"] = "Creature-0-4479-0-14165-2720-000053CF68",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1666437403,
-							["damage_taken"] = 1458.004873,
-							["start_time"] = 1666437404,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 177,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorb"] = 0.008251,
-							["last_hps"] = 0,
-							["healing_from"] = {
-							},
-							["targets"] = {
-							},
-							["targets_absorbs"] = {
-							},
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["totalover_without_pet"] = 0.008251,
-							["targets_overheal"] = {
-							},
-							["classe"] = "HUNTER",
-							["totalover"] = 72.008251,
-							["total_without_pet"] = 0.008251,
-							["iniciar_hps"] = false,
-							["healing_taken"] = 0.008251,
-							["end_time"] = 1666437404,
-							["total"] = 0.008251,
-							["aID"] = "4465-01C7FC88",
-							["heal_enemy_amt"] = 0,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["start_time"] = 1666437400,
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["custom"] = 0,
-							["last_event"] = 1666437400,
-							["on_hold"] = false,
-							["totaldenied"] = 0.008251,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["targets_overheal"] = {
-								["Bear <Mxzq>"] = 72,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PET",
-							["totalover"] = 72.002863,
-							["total_without_pet"] = 0.002863,
-							["total"] = 0.002863,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["totalabsorb"] = 0.002863,
-							["last_hps"] = 0,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.002863,
-							["healing_taken"] = 0.002863,
-							["start_time"] = 1666437400,
-							["end_time"] = 1666437404,
-							["healing_from"] = {
-							},
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[62800] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bear <Mxzq>"] = 72,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Bear <Mxzq>"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 72,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 62800,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["totaldenied"] = 0.002863,
-							["delay"] = 0,
-							["last_event"] = 1666437400,
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 177,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 177,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Mxzq",
-							["buff_uptime"] = 4,
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["last_event"] = 1666437404,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[27044] = {
-										["activedamt"] = 1,
-										["id"] = 27044,
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["aID"] = "4465-01C7FC88",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["spell_cast"] = {
-								[27047] = 1,
-								[63900] = 1,
-								[27049] = 1,
-							},
-							["tipo"] = 4,
-							["aID"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["serial"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["last_event"] = 0,
-						}, -- [2]
-						{
-							["monster"] = true,
-							["nome"] = "Dustbelcher Ogre Mage",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[20822] = 1,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4479-0-14165-2720-000053CF68",
-							["aID"] = "2720",
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 177,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxzq"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Mxzq", -- [1]
-				},
-				["CombatStartedAt"] = 11475.875,
-				["tempo_start"] = 1666437400,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 10879,
-				["playing_solo"] = true,
-				["totals"] = {
-					1458, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					1458, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "13:16:44",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Dustbelcher Ogre Mage",
-				["TotalElapsedCombatTime"] = 11469.536,
-				["CombatEndedAt"] = 11469.536,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Mxzq"] = 0.008251,
-							["Bear <Mxzq>"] = 0.002863,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Mxzq"] = 1458.002498,
-							["Bear <Mxzq>"] = 1458.003101,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 11469.536,
-				["combat_id"] = 177,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "13:16:40",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Dustbelcher Ogre Mage"] = 1,
-				},
-				["start_time"] = 11465.449,
-				["TimeData"] = {
-				},
-				["contra"] = "Dustbelcher Ogre Mage",
-			}, -- [5]
-			{
-				{
-					["combatId"] = 176,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.008126,
-							["damage_from"] = {
-								["Environment (Falling)"] = true,
-								["Scalding Whelp"] = true,
-							},
-							["targets"] = {
-								["Broken Tooth"] = 2613,
-							},
-							["total"] = 2613.008126,
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["on_hold"] = false,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1809.008126,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1666437010,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-01C7FC88",
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[75] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 628,
-										["targets"] = {
-											["Broken Tooth"] = 628,
-										},
-										["n_dmg"] = 628,
-										["n_min"] = 628,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 628,
-										["c_max"] = 0,
-										["id"] = 75,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27019] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1181,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Broken Tooth"] = 1181,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 1181,
-										["c_max"] = 1181,
-										["id"] = 27019,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1181,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-01C7FC88",
-							["last_dps"] = 1134.610562744304,
-							["custom"] = 0,
-							["last_event"] = 1666437009,
-							["damage_taken"] = 2220.008126,
-							["start_time"] = 1666437008,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.002114,
-							["damage_from"] = {
-								["Broken Tooth"] = true,
-							},
-							["targets"] = {
-								["Broken Tooth"] = 804,
-							},
-							["friendlyfire"] = {
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 2,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 804.002114,
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["dps_started"] = false,
-							["end_time"] = 1666437010,
-							["aID"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 267,
-										["targets"] = {
-											["Broken Tooth"] = 483,
-										},
-										["n_dmg"] = 483,
-										["n_min"] = 216,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 483,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[63900] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 321,
-										["targets"] = {
-											["Broken Tooth"] = 321,
-										},
-										["n_dmg"] = 321,
-										["n_min"] = 321,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 321,
-										["c_max"] = 0,
-										["id"] = 63900,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PET",
-							["total"] = 804.002114,
-							["last_dps"] = 349.1107746417893,
-							["custom"] = 0,
-							["last_event"] = 1666437009,
-							["damage_taken"] = 12.002114,
-							["start_time"] = 1666437008,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00701,
-							["total"] = 12.00701,
-							["damage_from"] = {
-								["Mxzq"] = true,
-								["Bear <Mxzq>"] = true,
-							},
-							["targets"] = {
-								["Bear <Mxzq>"] = 12,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 12.00701,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1666437010,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Broken Tooth",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 12,
-										["targets"] = {
-											["Bear <Mxzq>"] = 12,
-										},
-										["n_dmg"] = 12,
-										["n_min"] = 12,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 12,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["aID"] = "2850",
-							["serial"] = "Creature-0-4479-0-14165-2850-00005314D6",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1666437009,
-							["damage_taken"] = 2613.00701,
-							["start_time"] = 1666437009,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 176,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 176,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 176,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["spell_cast"] = {
-								[75] = 1,
-								[27019] = 1,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Mxzq",
-							["buff_uptime"] = 2,
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["last_event"] = 1666437010,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[27044] = {
-										["activedamt"] = 1,
-										["id"] = 27044,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["aID"] = "4465-01C7FC88",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["spell_cast"] = {
-								[63900] = 1,
-							},
-							["tipo"] = 4,
-							["aID"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["serial"] = "Pet-0-4479-0-14165-7443-010074C845",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 176,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxzq"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Mxzq", -- [1]
-				},
-				["CombatStartedAt"] = 11464.482,
-				["tempo_start"] = 1666437008,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 10878,
-				["playing_solo"] = true,
-				["totals"] = {
-					2624.987391, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					2613, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "13:10:10",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Broken Tooth",
-				["TotalElapsedCombatTime"] = 14.61200000000099,
-				["CombatEndedAt"] = 11126.914,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Mxzq"] = 2613.008126,
-							["Bear <Mxzq>"] = 804.002114,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 11075.438,
-				["combat_id"] = 176,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-					["Mxzq"] = {
-						{
-							true, -- [1]
-							3, -- [2]
-							41, -- [3]
-							1666437043.174, -- [4]
-							2961, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-							true, -- [1]
-							1, -- [2]
-							33, -- [3]
-							1666437046.594, -- [4]
-							2964, -- [5]
-							"Scalding Whelp", -- [6]
-							nil, -- [7]
-							1, -- [8]
-							false, -- [9]
-							-1, -- [10]
-							false, -- [11]
-							false, -- [12]
-						}, -- [2]
-						{
-							true, -- [1]
-							3, -- [2]
-							679, -- [3]
-							1666437272.951, -- [4]
-							5245, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [3]
-						{
-							true, -- [1]
-							3, -- [2]
-							1467, -- [3]
-							1666437347.364, -- [4]
-							5360, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 5,
-					},
-				},
-				["data_inicio"] = "13:10:08",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Broken Tooth"] = 1,
-				},
-				["start_time"] = 11073.135,
-				["TimeData"] = {
-				},
-				["contra"] = "Broken Tooth",
-			}, -- [6]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 175,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003908,
-							["damage_from"] = {
-								["Environment (Falling)"] = true,
-								["Giant Buzzard"] = true,
-								["Elder Crag Coyote"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["aID"] = "4465-01C7FC88",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.003908,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.003908,
-							["classe"] = "HUNTER",
-							["damage_taken"] = 8345.003907999999,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1666381374,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1666381374,
-							["serial"] = "Player-4465-01C7FC88",
-							["friendlyfire"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = -2147483648,
-							["totalabsorbed"] = 0.005966,
-							["end_time"] = 1666437008,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Mxzq"] = 8275,
-								["Vikkee"] = 3394,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["aID"] = "",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 11669.005966,
-							["last_event"] = 1666436906,
-							["dps_started"] = false,
-							["total"] = 11669.005966,
-							["delay"] = 1666436906,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Environment (Falling)",
-							["spells"] = {
-								["_ActorTable"] = {
-									[3] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3394,
-										["targets"] = {
-											["Mxzq"] = 8275,
-											["Vikkee"] = 3394,
-										},
-										["n_dmg"] = 11669,
-										["n_min"] = 317,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 11669,
-										["c_max"] = 0,
-										["id"] = 3,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 8,
-										["extra"] = {
-										},
-										["spellschool"] = 3,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["fight_component"] = true,
-							["damage_taken"] = 0.005966,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1666436964,
-							["serial"] = "",
-							["friendlyfire"] = {
-							},
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008147,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Mxzq"] = 35,
-							},
-							["pets"] = {
-							},
-							["delay"] = 0,
-							["aID"] = "2831",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 35.008147,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["monster"] = true,
-							["total"] = 35.008147,
-							["classe"] = "UNKNOW",
-							["end_time"] = 1666381374,
-							["nome"] = "Giant Buzzard",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 35,
-										["targets"] = {
-											["Mxzq"] = 35,
-										},
-										["n_dmg"] = 35,
-										["n_min"] = 35,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 35,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["fight_component"] = true,
-							["damage_taken"] = 0.008147,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1666381365,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1666381365,
-							["serial"] = "Creature-0-4448-0-2946-2831-0000520D2D",
-							["dps_started"] = false,
-						}, -- [3]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004935,
-							["total"] = 35.004935,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Mxzq"] = 35,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 35.004935,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1666436854,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Elder Crag Coyote",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 35,
-										["targets"] = {
-											["Mxzq"] = 35,
-										},
-										["n_dmg"] = 35,
-										["n_min"] = 35,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 35,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["aID"] = "2729",
-							["serial"] = "Creature-0-4479-0-14165-2729-000152D07E",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1666436841,
-							["damage_taken"] = 0.004935,
-							["start_time"] = 1666436853,
-							["delay"] = 1666436841,
-							["tipo"] = 1,
-						}, -- [4]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 175,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 175,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 175,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Mxzq",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-01C7FC88",
-							["buff_uptime"] = 20,
-							["tipo"] = 4,
-							["last_event"] = 1666436854,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[23252] = {
-										["activedamt"] = 1,
-										["id"] = 23252,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 1,
-									},
-									[57475] = {
-										["activedamt"] = 1,
-										["id"] = 57475,
-										["targets"] = {
-										},
-										["actived_at"] = 1666436749,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									[27044] = {
-										["activedamt"] = 1,
-										["id"] = 27044,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 1,
-									},
-									[75447] = {
-										["activedamt"] = 3,
-										["id"] = 75447,
-										["targets"] = {
-										},
-										["actived_at"] = 1666436749,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 3,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["classe"] = "HUNTER",
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 175,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxzq"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Mxzq", -- [1]
-				},
-				["CombatStartedAt"] = 11072.181,
-				["tempo_start"] = 1666381364,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 10876,
-				["playing_solo"] = true,
-				["totals"] = {
-					11738.992081, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = false,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "13:07:34",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Giant Buzzard",
-				["TotalElapsedCombatTime"] = 12.98199999999997,
-				["CombatEndedAt"] = 10919.339,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Mxzq"] = 0.003908,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 10919.339,
-				["combat_id"] = 175,
-				["spells_cast_timeline"] = {
-				},
-				["data_inicio"] = "21:42:45",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-					["Mxzq"] = {
-						{
-							true, -- [1]
-							3, -- [2]
-							1798, -- [3]
-							1666436874.833, -- [4]
-							4951, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-							true, -- [1]
-							3, -- [2]
-							1277, -- [3]
-							1666436891.597, -- [4]
-							3351, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [2]
-						{
-							true, -- [1]
-							3, -- [2]
-							569, -- [3]
-							1666436905.358, -- [4]
-							2207, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 4,
-					},
-				},
-				["start_time"] = 615.216,
-				["TimeData"] = {
-				},
-				["frags"] = {
-				},
-			}, -- [7]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 175,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003908,
-							["damage_from"] = {
-								["Environment (Falling)"] = true,
-								["Giant Buzzard"] = true,
-								["Elder Crag Coyote"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["aID"] = "4465-01C7FC88",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.003908,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.003908,
-							["classe"] = "HUNTER",
-							["damage_taken"] = 8345.003907999999,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1666381374,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1666381374,
-							["serial"] = "Player-4465-01C7FC88",
-							["friendlyfire"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = -2147483648,
-							["totalabsorbed"] = 0.005966,
-							["end_time"] = 1666437008,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Mxzq"] = 8275,
-								["Vikkee"] = 3394,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["aID"] = "",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 11669.005966,
-							["last_event"] = 1666436906,
-							["dps_started"] = false,
-							["total"] = 11669.005966,
-							["delay"] = 1666436906,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Environment (Falling)",
-							["spells"] = {
-								["_ActorTable"] = {
-									[3] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3394,
-										["targets"] = {
-											["Mxzq"] = 8275,
-											["Vikkee"] = 3394,
-										},
-										["n_dmg"] = 11669,
-										["n_min"] = 317,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 11669,
-										["c_max"] = 0,
-										["id"] = 3,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 8,
-										["extra"] = {
-										},
-										["spellschool"] = 3,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["fight_component"] = true,
-							["damage_taken"] = 0.005966,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1666436964,
-							["serial"] = "",
-							["friendlyfire"] = {
-							},
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008147,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Mxzq"] = 35,
-							},
-							["pets"] = {
-							},
-							["delay"] = 0,
-							["aID"] = "2831",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 35.008147,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["monster"] = true,
-							["total"] = 35.008147,
-							["classe"] = "UNKNOW",
-							["end_time"] = 1666381374,
-							["nome"] = "Giant Buzzard",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 35,
-										["targets"] = {
-											["Mxzq"] = 35,
-										},
-										["n_dmg"] = 35,
-										["n_min"] = 35,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 35,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["fight_component"] = true,
-							["damage_taken"] = 0.008147,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1666381365,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1666381365,
-							["serial"] = "Creature-0-4448-0-2946-2831-0000520D2D",
-							["dps_started"] = false,
-						}, -- [3]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004935,
-							["total"] = 35.004935,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Mxzq"] = 35,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 35.004935,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1666436854,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Elder Crag Coyote",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 35,
-										["targets"] = {
-											["Mxzq"] = 35,
-										},
-										["n_dmg"] = 35,
-										["n_min"] = 35,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 35,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["aID"] = "2729",
-							["serial"] = "Creature-0-4479-0-14165-2729-000152D07E",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1666436841,
-							["damage_taken"] = 0.004935,
-							["start_time"] = 1666436853,
-							["delay"] = 1666436841,
-							["tipo"] = 1,
-						}, -- [4]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 175,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 175,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 175,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Mxzq",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-01C7FC88",
-							["buff_uptime"] = 20,
-							["tipo"] = 4,
-							["last_event"] = 1666436854,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[23252] = {
-										["activedamt"] = 1,
-										["id"] = 23252,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 1,
-									},
-									[57475] = {
-										["activedamt"] = 1,
-										["id"] = 57475,
-										["targets"] = {
-										},
-										["actived_at"] = 1666436749,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									[27044] = {
-										["activedamt"] = 1,
-										["id"] = 27044,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 1,
-									},
-									[75447] = {
-										["activedamt"] = 3,
-										["id"] = 75447,
-										["targets"] = {
-										},
-										["actived_at"] = 1666436749,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 3,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["classe"] = "HUNTER",
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 175,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxzq"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Mxzq", -- [1]
-				},
-				["CombatStartedAt"] = 11072.181,
-				["tempo_start"] = 1666381364,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 10876,
-				["playing_solo"] = true,
-				["totals"] = {
-					11738.992081, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = false,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "13:07:34",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Giant Buzzard",
-				["TotalElapsedCombatTime"] = 12.98199999999997,
-				["CombatEndedAt"] = 10919.339,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Mxzq"] = 0.003908,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 10919.339,
-				["combat_id"] = 175,
-				["spells_cast_timeline"] = {
-				},
-				["data_inicio"] = "21:42:45",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-					["Mxzq"] = {
-						{
-							true, -- [1]
-							3, -- [2]
-							1798, -- [3]
-							1666436874.833, -- [4]
-							4951, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-							true, -- [1]
-							3, -- [2]
-							1277, -- [3]
-							1666436891.597, -- [4]
-							3351, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [2]
-						{
-							true, -- [1]
-							3, -- [2]
-							569, -- [3]
-							1666436905.358, -- [4]
-							2207, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 4,
-					},
-				},
-				["start_time"] = 615.216,
-				["TimeData"] = {
-				},
-				["frags"] = {
-				},
-			}, -- [8]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 174,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.008837,
-							["damage_taken"] = 0.008837,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Greater Rock Elemental"] = 2189,
-							},
-							["pets"] = {
-							},
-							["aID"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["custom"] = 0,
-							["classe"] = "PET",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 2189.008837,
-							["tipo"] = 1,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 2189.008837,
-							["friendlyfire_total"] = 0,
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 785,
-										["g_amt"] = 0,
-										["n_max"] = 205,
-										["targets"] = {
-											["Greater Rock Elemental"] = 1709,
-										},
-										["n_dmg"] = 924,
-										["n_min"] = 173,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 1709,
-										["c_max"] = 393,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 392,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[53532] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 144,
-										["targets"] = {
-											["Greater Rock Elemental"] = 144,
-										},
-										["n_dmg"] = 144,
-										["n_min"] = 144,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 144,
-										["c_max"] = 0,
-										["id"] = 53532,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									},
-									[27049] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 176,
-										["targets"] = {
-											["Greater Rock Elemental"] = 336,
-										},
-										["n_dmg"] = 336,
-										["n_min"] = 160,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 336,
-										["c_max"] = 0,
-										["id"] = 27049,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1666381332,
-							["last_dps"] = 366.4839840950973,
-							["colocacao"] = 1,
-							["last_event"] = 1666381332,
-							["on_hold"] = false,
-							["start_time"] = 1666381326,
-							["serial"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["friendlyfire"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.001743,
-							["damage_from"] = {
-								["Environment (Falling)"] = true,
-								["Giant Buzzard"] = true,
-							},
-							["targets"] = {
-								["Greater Rock Elemental"] = 2189,
-							},
-							["delay"] = 0,
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["custom"] = 0,
-							["tipo"] = 1,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.001743,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["total"] = 2189.001743,
-							["damage_taken"] = 1237.001743,
-							["aID"] = "4465-01C7FC88",
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 366.4827964172134,
-							["end_time"] = 1666381332,
-							["colocacao"] = 2,
-							["last_event"] = 1666381332,
-							["on_hold"] = false,
-							["start_time"] = 1666381326,
-							["serial"] = "Player-4465-01C7FC88",
-							["friendlyfire"] = {
-							},
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.001183,
-							["damage_from"] = {
-								["Bear <Mxzq>"] = true,
-							},
-							["targets"] = {
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.001183,
-							["end_time"] = 1666381332,
-							["fight_component"] = true,
-							["total"] = 0.001183,
-							["damage_taken"] = 2189.001183,
-							["on_hold"] = false,
-							["nome"] = "Greater Rock Elemental",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Bear"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["r_amt"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["b_dmg"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["PARRY"] = 1,
-										["BLOCK"] = 1,
-										["successful_casted"] = 0,
-										["extra"] = {
-										},
-										["n_amt"] = 0,
-										["DODGE"] = 1,
-										["a_dmg"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["aID"] = "2736",
-							["custom"] = 0,
-							["last_event"] = 1666381330,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1666381332,
-							["serial"] = "Creature-0-4448-0-2946-2736-000051CA54",
-							["monster"] = true,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 174,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorb"] = 0.001792,
-							["last_hps"] = 0,
-							["targets_overheal"] = {
-							},
-							["targets"] = {
-							},
-							["delay"] = 0,
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["iniciar_hps"] = false,
-							["healing_from"] = {
-							},
-							["classe"] = "HUNTER",
-							["totalover"] = 143.001792,
-							["total_without_pet"] = 0.001792,
-							["totalover_without_pet"] = 0.001792,
-							["totaldenied"] = 0.001792,
-							["aID"] = "4465-01C7FC88",
-							["end_time"] = 1666381332,
-							["healing_taken"] = 0.001792,
-							["heal_enemy_amt"] = 0,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["total"] = 0.001792,
-							["heal_enemy"] = {
-							},
-							["tipo"] = 2,
-							["custom"] = 0,
-							["last_event"] = 1666381331,
-							["on_hold"] = false,
-							["start_time"] = 1666381327,
-							["serial"] = "Player-4465-01C7FC88",
-							["targets_absorbs"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["healing_from"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 143.008026,
-							["total_without_pet"] = 0.008026,
-							["total"] = 0.008026,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["totalabsorb"] = 0.008026,
-							["last_hps"] = 0,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.008026,
-							["healing_taken"] = 0.008026,
-							["end_time"] = 1666381332,
-							["targets_overheal"] = {
-								["Bear <Mxzq>"] = 143,
-							},
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[62800] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bear <Mxzq>"] = 143,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Bear <Mxzq>"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 2,
-										["overheal"] = 143,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 62800,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_amt"] = 2,
-										["n_curado"] = 0,
-										["totaldenied"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["last_event"] = 1666381331,
-							["classe"] = "PET",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.008026,
-							["start_time"] = 1666381327,
-							["delay"] = 0,
-							["aID"] = "Pet-0-4448-0-2946-7443-010074C845",
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 174,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 174,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Mxzq",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["aID"] = "4465-01C7FC88",
-							["buff_uptime"] = 6,
-							["tipo"] = 4,
-							["last_event"] = 1666381332,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[27044] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 27044,
-										["uptime"] = 6,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["classe"] = "HUNTER",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["aID"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["serial"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["spell_cast"] = {
-								[27047] = 2,
-								[53532] = 1,
-								[27049] = 2,
-							},
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 174,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxzq"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Mxzq", -- [1]
-				},
-				["CombatStartedAt"] = 610.473,
-				["tempo_start"] = 1666381326,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					2188.98594, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-					["Mxzq"] = {
-						{
-							true, -- [1]
-							3, -- [2]
-							1208, -- [3]
-							1666381347.36, -- [4]
-							8368, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-							true, -- [1]
-							1, -- [2]
-							29, -- [3]
-							1666381360.018, -- [4]
-							7292, -- [5]
-							"Giant Buzzard", -- [6]
-							nil, -- [7]
-							1, -- [8]
-							false, -- [9]
-							-1, -- [10]
-							false, -- [11]
-							false, -- [12]
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 3,
-					},
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:42:13",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Greater Rock Elemental",
-				["TotalElapsedCombatTime"] = 5.972999999999956,
-				["CombatEndedAt"] = 583.237,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Mxzq"] = 2189.001743,
-							["Bear <Mxzq>"] = 2189.008837,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Mxzq"] = 0.001792,
-							["Bear <Mxzq>"] = 0.008026,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 583.237,
-				["combat_id"] = 174,
-				["data_inicio"] = "21:42:07",
-				["spells_cast_timeline"] = {
-				},
-				["combat_counter"] = 10875,
-				["totals_grupo"] = {
-					2189, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Greater Rock Elemental",
-				["start_time"] = 577.264,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Greater Rock Elemental"] = 1,
-				},
-			}, -- [9]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 173,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003082,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Rumbler"] = 2392,
-							},
-							["delay"] = 0,
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["custom"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4465-01C7FC88",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 2184.003082,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1666381321,
-							["damage_taken"] = 0.003082,
-							["on_hold"] = false,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-									[75] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1003,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Rumbler"] = 1003,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 1003,
-										["c_max"] = 1003,
-										["id"] = 75,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 1003,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									},
-									[27019] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1181,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Rumbler"] = 1181,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 1181,
-										["c_max"] = 1181,
-										["id"] = 27019,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 1181,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["extra"] = {
-										},
-										["spellschool"] = 64,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 4138.413636678383,
-							["total"] = 2392.003082,
-							["colocacao"] = 1,
-							["last_event"] = 1666381321,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1666381320,
-							["serial"] = "Player-4465-01C7FC88",
-							["classe"] = "HUNTER",
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007436,
-							["damage_from"] = {
-								["Mxzq"] = true,
-								["Bear <Mxzq>"] = true,
-							},
-							["targets"] = {
-								["Bear <Mxzq>"] = 26,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["aID"] = "2752",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 26.007436,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["end_time"] = 1666381321,
-							["damage_taken"] = 2392.007436,
-							["total"] = 26.007436,
-							["nome"] = "Rumbler",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Bear <Mxzq>"] = 26,
-										},
-										["n_dmg"] = 26,
-										["n_min"] = 26,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 26,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["monster"] = true,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1666381321,
-							["on_hold"] = false,
-							["start_time"] = 1666381321,
-							["serial"] = "Creature-0-4448-0-2946-2752-000052A4D2",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.00708,
-							["damage_taken"] = 26.00708,
-							["damage_from"] = {
-								["Rumbler"] = true,
-							},
-							["targets"] = {
-								["Rumbler"] = 208,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["aID"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 208.00708,
-							["last_event"] = 1666381321,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 208.00708,
-							["classe"] = "PET",
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 208,
-										["targets"] = {
-											["Rumbler"] = 208,
-										},
-										["n_dmg"] = 208,
-										["n_min"] = 208,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 208,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1666381321,
-							["last_dps"] = 359.8738408304657,
-							["colocacao"] = 2,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1666381321,
-							["serial"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["friendlyfire"] = {
-							},
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 173,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorb"] = 0.005583,
-							["last_hps"] = 0,
-							["targets_overheal"] = {
-							},
-							["targets"] = {
-							},
-							["delay"] = 0,
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["iniciar_hps"] = false,
-							["healing_from"] = {
-							},
-							["classe"] = "HUNTER",
-							["totalover"] = 72.005583,
-							["total_without_pet"] = 0.005583,
-							["totalover_without_pet"] = 0.005583,
-							["totaldenied"] = 0.005583,
-							["aID"] = "4465-01C7FC88",
-							["end_time"] = 1666381321,
-							["healing_taken"] = 0.005583,
-							["heal_enemy_amt"] = 0,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["total"] = 0.005583,
-							["heal_enemy"] = {
-							},
-							["tipo"] = 2,
-							["custom"] = 0,
-							["last_event"] = 1666381321,
-							["on_hold"] = false,
-							["start_time"] = 1666381321,
-							["serial"] = "Player-4465-01C7FC88",
-							["targets_absorbs"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["healing_from"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 72.007591,
-							["total_without_pet"] = 0.007591,
-							["total"] = 0.007591,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["totalabsorb"] = 0.007591,
-							["last_hps"] = 0,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.007591,
-							["healing_taken"] = 0.007591,
-							["end_time"] = 1666381321,
-							["targets_overheal"] = {
-								["Bear <Mxzq>"] = 72,
-							},
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[62800] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bear <Mxzq>"] = 72,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Bear <Mxzq>"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 72,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 62800,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 0,
-										["totaldenied"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["last_event"] = 1666381321,
-							["classe"] = "PET",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.007591,
-							["start_time"] = 1666381321,
-							["delay"] = 0,
-							["aID"] = "Pet-0-4448-0-2946-7443-010074C845",
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 173,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 173,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Mxzq",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["aID"] = "4465-01C7FC88",
-							["buff_uptime"] = 1,
-							["tipo"] = 4,
-							["last_event"] = 1666381321,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[27044] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 27044,
-										["uptime"] = 1,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["classe"] = "HUNTER",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["aID"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["serial"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["spell_cast"] = {
-								[27047] = 1,
-							},
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 173,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxzq"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Mxzq", -- [1]
-				},
-				["tempo_start"] = 1666381320,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 10874,
-				["playing_solo"] = true,
-				["totals"] = {
-					2418, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["totals_grupo"] = {
-					2392, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:42:02",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Rumbler",
-				["TotalElapsedCombatTime"] = 572.295,
-				["CombatEndedAt"] = 572.295,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Mxzq"] = 2392.003082,
-							["Bear <Mxzq>"] = 208.00708,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Mxzq"] = 0.005583,
-							["Bear <Mxzq>"] = 0.007591,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 572.295,
-				["combat_id"] = 173,
-				["data_inicio"] = "21:42:01",
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["contra"] = "Rumbler",
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 571.47,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Rumbler"] = 1,
-				},
-			}, -- [10]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 172,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.002342,
-							["damage_from"] = {
-								["Dustbelcher Lord"] = true,
-							},
-							["targets"] = {
-								["Dustbelcher Ogre Mage"] = 12733,
-								["Dustbelcher Shaman"] = 1726,
-								["Dustbelcher Lord"] = 4670,
-							},
-							["delay"] = 1666381268,
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["custom"] = 0,
-							["tipo"] = 1,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 6491.002342,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["total"] = 19129.002342,
-							["damage_taken"] = 59.002342,
-							["aID"] = "4465-01C7FC88",
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 585,
-										["targets"] = {
-											["Dustbelcher Lord"] = 1104,
-										},
-										["n_dmg"] = 1104,
-										["n_min"] = 519,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 1104,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[27019] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1181,
-										["g_amt"] = 0,
-										["n_max"] = 591,
-										["targets"] = {
-											["Dustbelcher Shaman"] = 591,
-											["Dustbelcher Ogre Mage"] = 1771,
-										},
-										["n_dmg"] = 1181,
-										["n_min"] = 590,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 2362,
-										["c_max"] = 1181,
-										["id"] = 27019,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 1181,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 64,
-									},
-									[75] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 2412,
-										["g_amt"] = 0,
-										["n_max"] = 613,
-										["targets"] = {
-											["Dustbelcher Shaman"] = 1135,
-											["Dustbelcher Ogre Mage"] = 1890,
-										},
-										["n_dmg"] = 613,
-										["n_min"] = 613,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 3025,
-										["c_max"] = 1277,
-										["id"] = 75,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 1135,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 369.2928887044153,
-							["end_time"] = 1666381298,
-							["colocacao"] = 1,
-							["last_event"] = 1666381297,
-							["on_hold"] = false,
-							["start_time"] = 1666381256,
-							["serial"] = "Player-4465-01C7FC88",
-							["friendlyfire"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.004615,
-							["damage_taken"] = 302.004615,
-							["damage_from"] = {
-								["Dustbelcher Ogre Mage"] = true,
-								["Dustbelcher Lord"] = true,
-							},
-							["targets"] = {
-								["Dustbelcher Ogre Mage"] = 9072,
-								["Dustbelcher Lord"] = 3566,
-							},
-							["pets"] = {
-							},
-							["aID"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["custom"] = 0,
-							["classe"] = "PET",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 12638.004615,
-							["tipo"] = 1,
-							["delay"] = 1666381268,
-							["dps_started"] = false,
-							["total"] = 12638.004615,
-							["friendlyfire_total"] = 0,
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 8,
-										["b_amt"] = 0,
-										["c_dmg"] = 3683,
-										["g_amt"] = 0,
-										["n_max"] = 237,
-										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 5880,
-											["Dustbelcher Lord"] = 1845,
-										},
-										["n_dmg"] = 4042,
-										["n_min"] = 193,
-										["g_dmg"] = 0,
-										["counter"] = 27,
-										["total"] = 7725,
-										["c_max"] = 537,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 421,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 19,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[63900] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 481,
-										["g_amt"] = 0,
-										["n_max"] = 335,
-										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 2115,
-											["Dustbelcher Lord"] = 324,
-										},
-										["n_dmg"] = 1958,
-										["n_min"] = 320,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 2439,
-										["c_max"] = 481,
-										["id"] = 63900,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 481,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["extra"] = {
-										},
-										["spellschool"] = 8,
-									},
-									[27049] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 353,
-										["g_amt"] = 0,
-										["n_max"] = 208,
-										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 404,
-											["Dustbelcher Lord"] = 940,
-										},
-										["n_dmg"] = 991,
-										["n_min"] = 188,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 1344,
-										["c_max"] = 353,
-										["id"] = 27049,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 353,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									},
-									[53532] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 287,
-										["g_amt"] = 0,
-										["n_max"] = 178,
-										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 673,
-											["Dustbelcher Lord"] = 457,
-										},
-										["n_dmg"] = 843,
-										["n_min"] = 158,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 1130,
-										["c_max"] = 287,
-										["id"] = 53532,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 287,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1666381298,
-							["last_dps"] = 243.981633139636,
-							["colocacao"] = 2,
-							["last_event"] = 1666381297,
-							["on_hold"] = false,
-							["start_time"] = 1666381256,
-							["serial"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["friendlyfire"] = {
-							},
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.002393,
-							["damage_from"] = {
-								["Mxzq"] = true,
-								["Bear <Mxzq>"] = true,
-							},
-							["targets"] = {
-								["Bear <Mxzq>"] = 114,
-							},
-							["delay"] = 1666381269,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 114.002393,
-							["end_time"] = 1666381298,
-							["monster"] = true,
-							["total"] = 114.002393,
-							["damage_taken"] = 12733.002393,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Dustbelcher Ogre Mage",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 20,
-										["targets"] = {
-											["Bear"] = 0,
-											["Bear <Mxzq>"] = 114,
-										},
-										["n_dmg"] = 114,
-										["n_min"] = 17,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 114,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["extra"] = {
-										},
-										["n_amt"] = 6,
-										["DODGE"] = 1,
-										["MISS"] = 1,
-									}, -- [1]
-									[20822] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Bear"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 20822,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 8,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["extra"] = {
-										},
-										["MISS"] = 8,
-									},
-									[6742] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 6742,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["aID"] = "2720",
-							["custom"] = 0,
-							["last_event"] = 1666381296,
-							["on_hold"] = false,
-							["start_time"] = 1666381266,
-							["serial"] = "Creature-0-4448-0-2946-2720-000052E779",
-							["fight_component"] = true,
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.005438,
-							["damage_from"] = {
-								["Mxzq"] = true,
-								["Bear <Mxzq>"] = true,
-							},
-							["targets"] = {
-								["Mxzq"] = 59,
-								["Bear <Mxzq>"] = 188,
-							},
-							["delay"] = 1666381270,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 247.005438,
-							["end_time"] = 1666381298,
-							["monster"] = true,
-							["total"] = 247.005438,
-							["damage_taken"] = 4670.005438,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Dustbelcher Lord",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 59,
-										["targets"] = {
-											["Bear <Mxzq>"] = 188,
-											["Mxzq"] = 59,
-											["Bear"] = 0,
-										},
-										["n_dmg"] = 247,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 247,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["extra"] = {
-										},
-										["n_amt"] = 7,
-										["DODGE"] = 2,
-										["MISS"] = 2,
-									}, -- [1]
-									[9128] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 9128,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[13730] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Bear"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 13730,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["extra"] = {
-										},
-										["MISS"] = 2,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["aID"] = "2719",
-							["custom"] = 0,
-							["last_event"] = 1666381292,
-							["on_hold"] = false,
-							["start_time"] = 1666381276,
-							["serial"] = "Creature-0-4448-0-2946-2719-000052DD3B",
-							["fight_component"] = true,
-						}, -- [4]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.006894,
-							["damage_from"] = {
-								["Mxzq"] = true,
-							},
-							["targets"] = {
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.006894,
-							["end_time"] = 1666381298,
-							["fight_component"] = true,
-							["total"] = 0.006894,
-							["damage_taken"] = 1726.006894,
-							["on_hold"] = false,
-							["nome"] = "Dustbelcher Shaman",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["aID"] = "2718",
-							["custom"] = 0,
-							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1666381298,
-							["serial"] = "Creature-0-4448-0-2946-2718-0000526904",
-							["monster"] = true,
-						}, -- [5]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 172,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["healing_from"] = {
-							},
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 273.003442,
-							["total_without_pet"] = 0.003442,
-							["total"] = 302.003442,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 2,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-01C7FC88",
-							["totalabsorb"] = 0.003442,
-							["last_hps"] = 5.830294831946565,
-							["targets"] = {
-								["Bear <Mxzq>"] = 302,
-							},
-							["totalover_without_pet"] = 0.003442,
-							["healing_taken"] = 0.003442,
-							["end_time"] = 1666381298,
-							["targets_overheal"] = {
-							},
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["last_event"] = 1666381297,
-							["classe"] = "HUNTER",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.003442,
-							["start_time"] = 1666381271,
-							["delay"] = 1666381279,
-							["aID"] = "4465-01C7FC88",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["targets_overheal"] = {
-								["Bear <Mxzq>"] = 273,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PET",
-							["totalover"] = 273.007853,
-							["total_without_pet"] = 302.007853,
-							["total"] = 302.007853,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["totalabsorb"] = 0.007853,
-							["last_hps"] = 5.83037998803066,
-							["targets"] = {
-								["Bear <Mxzq>"] = 302,
-							},
-							["totalover_without_pet"] = 0.007853,
-							["healing_taken"] = 302.007853,
-							["fight_component"] = true,
-							["end_time"] = 1666381298,
-							["last_event"] = 1666381297,
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[62800] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bear <Mxzq>"] = 273,
-										},
-										["n_max"] = 72,
-										["targets"] = {
-											["Bear <Mxzq>"] = 302,
-										},
-										["n_min"] = 18,
-										["counter"] = 8,
-										["overheal"] = 273,
-										["total"] = 302,
-										["c_max"] = 0,
-										["id"] = 62800,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_amt"] = 8,
-										["n_curado"] = 302,
-										["totaldenied"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["totaldenied"] = 0.007853,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["start_time"] = 1666381271,
-							["delay"] = 1666381279,
-							["healing_from"] = {
-								["Bear <Mxzq>"] = true,
-							},
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 172,
-					["_ActorTable"] = {
-						{
-							["received"] = 171.003433,
-							["resource"] = 0.003433,
-							["targets"] = {
-								["Mxzq"] = 171,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "HUNTER",
-							["passiveover"] = 0.003433,
-							["total"] = 171.003433,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-									[53398] = {
-										["total"] = 171,
-										["id"] = 53398,
-										["totalover"] = 0,
-										["targets"] = {
-											["Mxzq"] = 171,
-										},
-										["counter"] = 3,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["totalover"] = 0.003433,
-							["alternatepower"] = 0.003433,
-							["last_event"] = 1666381292,
-							["tipo"] = 3,
-							["aID"] = "4465-01C7FC88",
-							["serial"] = "Player-4465-01C7FC88",
-							["flag_original"] = 1297,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 172,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime"] = 69,
-							["nome"] = "Mxzq",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["aID"] = "4465-01C7FC88",
-							["spell_cast"] = {
-								[75] = 3,
-								[27019] = 3,
-							},
-							["last_event"] = 1666381302,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[27044] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 27044,
-										["uptime"] = 52,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[53257] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 53257,
-										["uptime"] = 7,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[2479] = {
-										["activedamt"] = 1,
-										["id"] = 2479,
-										["targets"] = {
-										},
-										["actived_at"] = 1666381246,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									[70893] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 70893,
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["classe"] = "HUNTER",
-						}, -- [1]
-						{
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["grupo"] = true,
-							["spell_cast"] = {
-								[27049] = 6,
-								[53532] = 5,
-								[27047] = 8,
-								[63900] = 6,
-								[61685] = 3,
-							},
-							["flag_original"] = 4369,
-							["tipo"] = 4,
-							["aID"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["pets"] = {
-							},
-							["serial"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["classe"] = "PET",
-						}, -- [2]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Dustbelcher Ogre Mage",
-							["aID"] = "2720",
-							["spell_cast"] = {
-								[20822] = 8,
-								[6742] = 1,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4448-0-2946-2720-000052E779",
-							["flag_original"] = 2632,
-						}, -- [3]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Dustbelcher Lord",
-							["aID"] = "2719",
-							["spell_cast"] = {
-								[9128] = 2,
-								[13730] = 2,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4448-0-2946-2719-000052E7CC",
-							["flag_original"] = 2632,
-						}, -- [4]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 172,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxzq"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Mxzq", -- [1]
-				},
-				["CombatStartedAt"] = 570.973,
-				["tempo_start"] = 1666381246,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					19490, -- [1]
-					302, -- [2]
-					{
-						0, -- [1]
-						[0] = 171,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:41:38",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Dustbelcher Ogre Mage",
-				["TotalElapsedCombatTime"] = 51.71600000000001,
-				["CombatEndedAt"] = 548.657,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Mxzq"] = 19129.002342,
-							["Bear <Mxzq>"] = 12638.004615,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Mxzq"] = 302.003442,
-							["Bear <Mxzq>"] = 302.007853,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 548.657,
-				["combat_id"] = 172,
-				["data_inicio"] = "21:40:46",
-				["spells_cast_timeline"] = {
-				},
-				["combat_counter"] = 10873,
-				["totals_grupo"] = {
-					19129, -- [1]
-					302, -- [2]
-					{
-						0, -- [1]
-						[0] = 171,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Dustbelcher Ogre Mage",
-				["start_time"] = 496.808,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Dustbelcher Ogre Mage"] = 7,
-					["Dustbelcher Shaman"] = 1,
-					["Dustbelcher Lord"] = 2,
-				},
-			}, -- [11]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 171,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.001659,
-							["damage_from"] = {
-								["Bear <Mxzq>"] = true,
-							},
-							["targets"] = {
-								["Bear <Mxzq>"] = 144,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["aID"] = "2719",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 144.001659,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["end_time"] = 1666381235,
-							["damage_taken"] = 7019.001659,
-							["total"] = 144.001659,
-							["nome"] = "Dustbelcher Lord",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 34,
-										["targets"] = {
-											["Bear <Mxzq>"] = 144,
-											["Bear"] = 0,
-										},
-										["n_dmg"] = 144,
-										["n_min"] = 26,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["r_amt"] = 0,
-										["total"] = 144,
-										["c_max"] = 0,
-										["b_dmg"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["BLOCK"] = 2,
-										["successful_casted"] = 0,
-										["extra"] = {
-										},
-										["n_amt"] = 5,
-										["DODGE"] = 2,
-										["MISS"] = 3,
-									}, -- [1]
-									[9128] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 9128,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["monster"] = true,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1666381233,
-							["on_hold"] = false,
-							["start_time"] = 1666381211,
-							["serial"] = "Creature-0-4448-0-2946-2719-000052E81A",
-							["classe"] = "UNKNOW",
-						}, -- [1]
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.002907,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Dustbelcher Lord"] = 7019,
-							},
-							["delay"] = 0,
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["custom"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4465-01C7FC88",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.002907,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1666381235,
-							["damage_taken"] = 0.002907,
-							["on_hold"] = false,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 438.9620329581001,
-							["total"] = 7019.002907,
-							["colocacao"] = 2,
-							["last_event"] = 1666381234,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1666381211,
-							["serial"] = "Player-4465-01C7FC88",
-							["classe"] = "HUNTER",
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.004789,
-							["damage_taken"] = 144.004789,
-							["damage_from"] = {
-								["Dustbelcher Lord"] = true,
-							},
-							["targets"] = {
-								["Dustbelcher Lord"] = 7019,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["aID"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 7019.004789000001,
-							["last_event"] = 1666381234,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 7019.004789000001,
-							["classe"] = "PET",
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 247,
-										["targets"] = {
-											["Dustbelcher Lord"] = 3277,
-										},
-										["n_dmg"] = 3277,
-										["n_min"] = 199,
-										["g_dmg"] = 0,
-										["counter"] = 15,
-										["total"] = 3277,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 15,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[63900] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 332,
-										["targets"] = {
-											["Dustbelcher Lord"] = 1316,
-										},
-										["n_dmg"] = 1316,
-										["n_min"] = 322,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 1316,
-										["c_max"] = 0,
-										["id"] = 63900,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["extra"] = {
-										},
-										["spellschool"] = 8,
-									},
-									[27049] = {
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 1601,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Dustbelcher Lord"] = 1601,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 1601,
-										["c_max"] = 418,
-										["id"] = 27049,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 387,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									},
-									[53532] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 179,
-										["targets"] = {
-											["Dustbelcher Lord"] = 825,
-										},
-										["n_dmg"] = 825,
-										["n_min"] = 153,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 825,
-										["c_max"] = 0,
-										["id"] = 53532,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1666381235,
-							["last_dps"] = 438.9621506566618,
-							["colocacao"] = 1,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1666381211,
-							["serial"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["friendlyfire"] = {
-							},
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 171,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["healing_from"] = {
-							},
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 72.00477000000001,
-							["total_without_pet"] = 0.00477,
-							["total"] = 144.00477,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-01C7FC88",
-							["totalabsorb"] = 0.00477,
-							["last_hps"] = 10.54439261916967,
-							["targets"] = {
-								["Bear <Mxzq>"] = 144,
-							},
-							["totalover_without_pet"] = 0.00477,
-							["healing_taken"] = 0.00477,
-							["end_time"] = 1666381235,
-							["targets_overheal"] = {
-							},
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["last_event"] = 1666381232,
-							["classe"] = "HUNTER",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.00477,
-							["start_time"] = 1666381223,
-							["delay"] = 0,
-							["aID"] = "4465-01C7FC88",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["targets_overheal"] = {
-								["Bear <Mxzq>"] = 72,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PET",
-							["totalover"] = 72.001845,
-							["total_without_pet"] = 144.001845,
-							["total"] = 144.001845,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 2,
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["totalabsorb"] = 0.001845,
-							["last_hps"] = 10.54417844328917,
-							["targets"] = {
-								["Bear <Mxzq>"] = 144,
-							},
-							["totalover_without_pet"] = 0.001845,
-							["healing_taken"] = 144.001845,
-							["fight_component"] = true,
-							["end_time"] = 1666381235,
-							["last_event"] = 1666381232,
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[62800] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bear <Mxzq>"] = 72,
-										},
-										["n_max"] = 62,
-										["targets"] = {
-											["Bear <Mxzq>"] = 144,
-										},
-										["n_min"] = 29,
-										["counter"] = 3,
-										["overheal"] = 72,
-										["total"] = 144,
-										["c_max"] = 0,
-										["id"] = 62800,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_amt"] = 3,
-										["n_curado"] = 144,
-										["totaldenied"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["totaldenied"] = 0.001845,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["start_time"] = 1666381223,
-							["delay"] = 0,
-							["healing_from"] = {
-								["Bear <Mxzq>"] = true,
-							},
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 171,
-					["_ActorTable"] = {
-						{
-							["received"] = 114.005916,
-							["resource"] = 0.005916,
-							["targets"] = {
-								["Mxzq"] = 114,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "HUNTER",
-							["passiveover"] = 0.005916,
-							["total"] = 114.005916,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-									[53398] = {
-										["total"] = 114,
-										["id"] = 53398,
-										["totalover"] = 114,
-										["targets"] = {
-											["Mxzq"] = 114,
-										},
-										["counter"] = 4,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["totalover"] = 114.005916,
-							["alternatepower"] = 0.005916,
-							["last_event"] = 1666381232,
-							["tipo"] = 3,
-							["aID"] = "4465-01C7FC88",
-							["serial"] = "Player-4465-01C7FC88",
-							["flag_original"] = 1297,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 171,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime"] = 74,
-							["nome"] = "Mxzq",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["aID"] = "4465-01C7FC88",
-							["spell_cast"] = {
-								[2383] = 1,
-								[2580] = 1,
-							},
-							["last_event"] = 1666381242,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[70893] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 3,
-										["id"] = 70893,
-										["uptime"] = 20,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[2479] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 2479,
-										["uptime"] = 25,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[2383] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 2383,
-										["uptime"] = 4,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[2580] = {
-										["activedamt"] = 1,
-										["id"] = 2580,
-										["targets"] = {
-										},
-										["actived_at"] = 1666381230,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									[27044] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 27044,
-										["uptime"] = 25,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["classe"] = "HUNTER",
-						}, -- [1]
-						{
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["grupo"] = true,
-							["spell_cast"] = {
-								[27047] = 3,
-								[63900] = 3,
-								[27049] = 4,
-								[53532] = 3,
-							},
-							["flag_original"] = 4369,
-							["tipo"] = 4,
-							["aID"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["pets"] = {
-							},
-							["serial"] = "Pet-0-4448-0-2946-7443-010074C845",
-							["classe"] = "PET",
-						}, -- [2]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Dustbelcher Lord",
-							["aID"] = "2719",
-							["spell_cast"] = {
-								[9128] = 1,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4448-0-2946-2719-000052E7EB",
-							["flag_original"] = 2632,
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 171,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxzq"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Mxzq", -- [1]
-				},
-				["tempo_start"] = 459.48,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 10872,
-				["playing_solo"] = true,
-				["totals"] = {
-					7163, -- [1]
-					144, -- [2]
-					{
-						0, -- [1]
-						[0] = 114,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["totals_grupo"] = {
-					7019, -- [1]
-					144, -- [2]
-					{
-						0, -- [1]
-						[0] = 114,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:40:36",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Dustbelcher Lord",
-				["TotalElapsedCombatTime"] = 486.224,
-				["CombatEndedAt"] = 486.224,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Mxzq"] = 7019.002907,
-							["Bear <Mxzq>"] = 7019.004789000001,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Mxzq"] = 144.00477,
-							["Bear <Mxzq>"] = 144.001845,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 486.224,
-				["combat_id"] = 171,
-				["data_inicio"] = "21:40:19",
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["contra"] = "Dustbelcher Lord",
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 469.251,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Dustbelcher Lord"] = 3,
-				},
-			}, -- [12]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 170,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.005734,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Dustbelcher Lord"] = 8544,
-								["Dustbelcher Ogre Mage"] = 1691,
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 5172.005734,
-							["aID"] = "4465-01C7FC88",
-							["dps_started"] = false,
-							["total"] = 10235.005734,
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1666364372,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1027,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Dustbelcher Lord"] = 1027,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 1027,
-										["c_max"] = 1027,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1027,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[27021] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 800,
-										["targets"] = {
-											["Dustbelcher Lord"] = 800,
-										},
-										["n_dmg"] = 800,
-										["n_min"] = 800,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 800,
-										["c_max"] = 0,
-										["id"] = 27021,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27019] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1217,
-										["g_amt"] = 0,
-										["n_max"] = 608,
-										["targets"] = {
-											["Dustbelcher Lord"] = 1825,
-										},
-										["n_dmg"] = 608,
-										["n_min"] = 608,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 1825,
-										["c_max"] = 1217,
-										["id"] = 27019,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1217,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[75] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 999,
-										["g_amt"] = 0,
-										["n_max"] = 521,
-										["targets"] = {
-											["Dustbelcher Lord"] = 1520,
-										},
-										["n_dmg"] = 521,
-										["n_min"] = 521,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 1520,
-										["c_max"] = 999,
-										["id"] = 75,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 999,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 635.6751589332717,
-							["end_time"] = 1666364372,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.005734,
-							["start_time"] = 1666364356,
-							["delay"] = 0,
-							["classe"] = "HUNTER",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.008404,
-							["last_dps"] = 314.4530404317984,
-							["damage_from"] = {
-								["Dustbelcher Lord"] = true,
-								["Dustbelcher Ogre Mage"] = true,
-							},
-							["targets"] = {
-								["Dustbelcher Lord"] = 3372,
-								["Dustbelcher Ogre Mage"] = 1691,
-							},
-							["pets"] = {
-							},
-							["end_time"] = 1666364372,
-							["custom"] = 0,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 5063.008404,
-							["friendlyfire"] = {
-							},
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 5063.008404,
-							["aID"] = "Pet-0-4480-0-178-7443-010074C845",
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 446,
-										["g_amt"] = 0,
-										["n_max"] = 234,
-										["targets"] = {
-											["Dustbelcher Lord"] = 1769,
-											["Dustbelcher Ogre Mage"] = 839,
-										},
-										["n_dmg"] = 2162,
-										["n_min"] = 202,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 2608,
-										["c_max"] = 446,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 446,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 10,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[53532] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 166,
-										["targets"] = {
-											["Dustbelcher Lord"] = 166,
-											["Dustbelcher Ogre Mage"] = 162,
-										},
-										["n_dmg"] = 328,
-										["n_min"] = 162,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 328,
-										["c_max"] = 0,
-										["id"] = 53532,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[63900] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 335,
-										["targets"] = {
-											["Dustbelcher Lord"] = 668,
-											["Dustbelcher Ogre Mage"] = 323,
-										},
-										["n_dmg"] = 991,
-										["n_min"] = 323,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 991,
-										["c_max"] = 0,
-										["id"] = 63900,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27049] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 1136,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Dustbelcher Lord"] = 769,
-											["Dustbelcher Ogre Mage"] = 367,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 1136,
-										["c_max"] = 397,
-										["id"] = 27049,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 367,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["tipo"] = 1,
-							["classe"] = "PET",
-							["colocacao"] = 2,
-							["last_event"] = 1666364372,
-							["on_hold"] = false,
-							["start_time"] = 1666364356,
-							["serial"] = "Pet-0-4480-0-178-7443-010074C845",
-							["damage_taken"] = 137.008404,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001621,
-							["damage_from"] = {
-								["Mxzq"] = true,
-								["Bear <Mxzq>"] = true,
-							},
-							["targets"] = {
-								["Bear <Mxzq>"] = 103,
-							},
-							["serial"] = "Creature-0-4480-0-178-2719-000052A295",
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["aID"] = "2719",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 103.001621,
-							["end_time"] = 1666364372,
-							["monster"] = true,
-							["total"] = 103.001621,
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1666364371,
-							["nome"] = "Dustbelcher Lord",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Bear"] = 0,
-											["Bear <Mxzq>"] = 103,
-										},
-										["n_dmg"] = 103,
-										["n_min"] = 24,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 103,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["fight_component"] = true,
-							["on_hold"] = false,
-							["damage_taken"] = 8544.001621,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1666364365,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.0034,
-							["damage_from"] = {
-								["Bear <Mxzq>"] = true,
-							},
-							["targets"] = {
-								["Bear <Mxzq>"] = 34,
-							},
-							["serial"] = "Creature-0-4480-0-178-2720-000052A250",
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["aID"] = "2720",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 34.0034,
-							["end_time"] = 1666364372,
-							["monster"] = true,
-							["total"] = 34.0034,
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1666364358,
-							["nome"] = "Dustbelcher Ogre Mage",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 19,
-										["targets"] = {
-											["Bear <Mxzq>"] = 34,
-										},
-										["n_dmg"] = 34,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 34,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["fight_component"] = true,
-							["on_hold"] = false,
-							["damage_taken"] = 1691.0034,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1666364369,
-							["delay"] = 1666364358,
-							["classe"] = "UNKNOW",
-						}, -- [4]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 170,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 4369,
-							["targets_overheal"] = {
-								["Bear <Mxzq>"] = 85,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PET",
-							["totalover"] = 85.006776,
-							["total_without_pet"] = 131.006776,
-							["total"] = 131.006776,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4480-0-178-7443-010074C845",
-							["totalabsorb"] = 0.006776,
-							["last_hps"] = 8.136561455797962,
-							["targets"] = {
-								["Bear <Mxzq>"] = 131,
-							},
-							["totalover_without_pet"] = 0.006776,
-							["healing_taken"] = 131.006776,
-							["fight_component"] = true,
-							["end_time"] = 1666364372,
-							["healing_from"] = {
-								["Bear <Mxzq>"] = true,
-							},
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[62800] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bear <Mxzq>"] = 85,
-										},
-										["n_max"] = 72,
-										["targets"] = {
-											["Bear <Mxzq>"] = 131,
-										},
-										["n_min"] = 15,
-										["counter"] = 3,
-										["overheal"] = 85,
-										["total"] = 131,
-										["c_max"] = 0,
-										["id"] = 62800,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 3,
-										["n_curado"] = 131,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["tipo"] = 2,
-							["start_time"] = 1666364357,
-							["custom"] = 0,
-							["last_event"] = 1666364370,
-							["aID"] = "Pet-0-4480-0-178-7443-010074C845",
-							["totaldenied"] = 0.006776,
-							["delay"] = 0,
-							["heal_enemy_amt"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 1300,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "HUNTER",
-							["totalover"] = 85.001335,
-							["total_without_pet"] = 0.001335,
-							["total"] = 131.001335,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 2,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-01C7FC88",
-							["totalabsorb"] = 0.001335,
-							["last_hps"] = 8.136223526476803,
-							["targets"] = {
-								["Bear <Mxzq>"] = 131,
-							},
-							["totalover_without_pet"] = 0.001335,
-							["healing_taken"] = 0.001335,
-							["end_time"] = 1666364372,
-							["healing_from"] = {
-							},
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["aID"] = "4465-01C7FC88",
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1666364370,
-							["start_time"] = 1666364357,
-							["totaldenied"] = 0.001335,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 170,
-					["_ActorTable"] = {
-						{
-							["received"] = 114.005069,
-							["resource"] = 0.005069,
-							["targets"] = {
-								["Mxzq"] = 114,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "HUNTER",
-							["passiveover"] = 0.005069,
-							["total"] = 114.005069,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-									[53398] = {
-										["total"] = 114,
-										["id"] = 53398,
-										["totalover"] = 57,
-										["targets"] = {
-											["Mxzq"] = 114,
-										},
-										["counter"] = 3,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["flag_original"] = 1297,
-							["alternatepower"] = 0.005069,
-							["last_event"] = 1666364372,
-							["aID"] = "4465-01C7FC88",
-							["tipo"] = 3,
-							["serial"] = "Player-4465-01C7FC88",
-							["totalover"] = 57.005069,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 170,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Mxzq",
-							["spell_cast"] = {
-								[27021] = 1,
-								[27019] = 2,
-								[75] = 2,
-							},
-							["classe"] = "HUNTER",
-							["buff_uptime"] = 41,
-							["last_event"] = 1666381211,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[53257] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 3,
-										["id"] = 53257,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[70893] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 22,
-										["id"] = 70893,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27044] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 16,
-										["id"] = 27044,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57475] = {
-										["activedamt"] = 2,
-										["id"] = 57475,
-										["targets"] = {
-										},
-										["actived_at"] = 1666381210,
-										["uptime"] = 0,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[75447] = {
-										["activedamt"] = 4,
-										["id"] = 75447,
-										["targets"] = {
-										},
-										["actived_at"] = 1666381210,
-										["uptime"] = 0,
-										["appliedamt"] = 4,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["aID"] = "4465-01C7FC88",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["classe"] = "PET",
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["aID"] = "Pet-0-4480-0-178-7443-010074C845",
-							["last_event"] = 0,
-							["spell_cast"] = {
-								[27049] = 3,
-								[53532] = 2,
-								[61685] = 1,
-								[27047] = 3,
-								[63900] = 2,
-							},
-							["serial"] = "Pet-0-4480-0-178-7443-010074C845",
-							["tipo"] = 4,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 170,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxzq"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Mxzq", -- [1]
-				},
-				["CombatStartedAt"] = 469.251,
-				["tempo_start"] = 1666364356,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 10870,
-				["playing_solo"] = true,
-				["totals"] = {
-					10372, -- [1]
-					131, -- [2]
-					{
-						0, -- [1]
-						[0] = 114,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					10235, -- [1]
-					131, -- [2]
-					{
-						0, -- [1]
-						[0] = 114,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "16:59:32",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Dustbelcher Ogre Mage",
-				["TotalElapsedCombatTime"] = 16.10100000002421,
-				["CombatEndedAt"] = 803512.981,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "16:59:16",
-				["end_time"] = 803512.981,
-				["combat_id"] = 170,
-				["frags"] = {
-					["Dustbelcher Lord"] = 3,
-					["Dustbelcher Ogre Mage"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 803496.88,
-				["contra"] = "Dustbelcher Ogre Mage",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Mxzq"] = 131.001335,
-							["Bear <Mxzq>"] = 131.006776,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Mxzq"] = 10235.005734,
-							["Bear <Mxzq>"] = 5063.008404,
-						}, -- [1]
-					},
-				},
-			}, -- [13]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 169,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.004333,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Dustbelcher Ogre Mage"] = 1852,
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["colocacao"] = 1,
-							["classe"] = "HUNTER",
-							["aID"] = "4465-01C7FC88",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.004333,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1666364352,
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1666364351,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["total"] = 1852.004333,
-							["last_dps"] = 584.5973273241722,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.004333,
-							["start_time"] = 1666364348,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.001861,
-							["on_hold"] = false,
-							["damage_from"] = {
-								["Dustbelcher Ogre Mage"] = true,
-							},
-							["targets"] = {
-								["Dustbelcher Ogre Mage"] = 1852,
-							},
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-4480-0-178-7443-010074C845",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1852.001861,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Pet-0-4480-0-178-7443-010074C845",
-							["dps_started"] = false,
-							["end_time"] = 1666364352,
-							["friendlyfire_total"] = 0,
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 867,
-										["g_amt"] = 0,
-										["n_max"] = 269,
-										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 1365,
-										},
-										["n_dmg"] = 498,
-										["n_min"] = 229,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 1365,
-										["c_max"] = 449,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 418,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[63900] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 325,
-										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 325,
-										},
-										["n_dmg"] = 325,
-										["n_min"] = 325,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 325,
-										["c_max"] = 0,
-										["id"] = 63900,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[53532] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 162,
-										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 162,
-										},
-										["n_dmg"] = 162,
-										["n_min"] = 162,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 162,
-										["c_max"] = 0,
-										["id"] = 53532,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["total"] = 1852.001861,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1666364351,
-							["damage_taken"] = 128.001861,
-							["start_time"] = 1666364348,
-							["delay"] = 0,
-							["last_dps"] = 584.5965470211419,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.003602,
-							["damage_from"] = {
-								["Bear <Mxzq>"] = true,
-							},
-							["targets"] = {
-								["Bear <Mxzq>"] = 128,
-							},
-							["serial"] = "Creature-0-4480-0-178-2720-000052AC82",
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["aID"] = "2720",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 128.003602,
-							["damage_taken"] = 1852.003602,
-							["dps_started"] = false,
-							["end_time"] = 1666364352,
-							["on_hold"] = false,
-							["last_event"] = 1666364350,
-							["nome"] = "Dustbelcher Ogre Mage",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20822] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 128,
-										["targets"] = {
-											["Bear <Mxzq>"] = 128,
-										},
-										["n_dmg"] = 128,
-										["n_min"] = 128,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 128,
-										["c_max"] = 0,
-										["id"] = 20822,
-										["r_dmg"] = 128,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["total"] = 128.003602,
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1666364350,
-							["delay"] = 0,
-							["fight_component"] = true,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 169,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 169,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 169,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Mxzq",
-							["buff_uptime"] = 4,
-							["classe"] = "HUNTER",
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["last_event"] = 1666364352,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[27044] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 4,
-										["id"] = 27044,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["aID"] = "4465-01C7FC88",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["tipo"] = 4,
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								[63900] = 1,
-								[53532] = 1,
-							},
-							["aID"] = "Pet-0-4480-0-178-7443-010074C845",
-							["classe"] = "PET",
-							["serial"] = "Pet-0-4480-0-178-7443-010074C845",
-							["last_event"] = 0,
-						}, -- [2]
-						{
-							["monster"] = true,
-							["tipo"] = 4,
-							["nome"] = "Dustbelcher Ogre Mage",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[20822] = 1,
-							},
-							["fight_component"] = true,
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-4480-0-178-2720-000052AC82",
-							["aID"] = "2720",
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 169,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxzq"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Mxzq", -- [1]
-				},
-				["tempo_start"] = 1666364348,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					1980, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "16:59:12",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Dustbelcher Ogre Mage",
-				["TotalElapsedCombatTime"] = 803492.746,
-				["CombatEndedAt"] = 803492.746,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "16:59:08",
-				["end_time"] = 803492.746,
-				["combat_id"] = 169,
-				["frags"] = {
-					["Dustbelcher Ogre Mage"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["combat_counter"] = 10869,
-				["totals_grupo"] = {
-					1852, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 803488.828,
-				["contra"] = "Dustbelcher Ogre Mage",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Mxzq"] = 1852.004333,
-							["Bear <Mxzq>"] = 1852.001861,
-						}, -- [1]
-					},
-				},
-			}, -- [14]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 168,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.001975,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Dustbelcher Ogre Mage"] = 1528,
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.001975,
-							["aID"] = "4465-01C7FC88",
-							["dps_started"] = false,
-							["total"] = 1528.001975,
-							["on_hold"] = false,
-							["last_event"] = 1666364341,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1666364343,
-							["last_dps"] = 757.5617129428083,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.001975,
-							["start_time"] = 1666364339,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.004191,
-							["on_hold"] = false,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Dustbelcher Ogre Mage"] = 1528,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["colocacao"] = 1,
-							["classe"] = "PET",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1528.004191,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Pet-0-4480-0-178-7443-010074C845",
-							["dps_started"] = false,
-							["end_time"] = 1666364343,
-							["aID"] = "Pet-0-4480-0-178-7443-010074C845",
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 424,
-										["g_amt"] = 0,
-										["n_max"] = 236,
-										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 882,
-										},
-										["n_dmg"] = 458,
-										["n_min"] = 222,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 882,
-										["c_max"] = 424,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 424,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[63900] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 322,
-										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 322,
-										},
-										["n_dmg"] = 322,
-										["n_min"] = 322,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 322,
-										["c_max"] = 0,
-										["id"] = 63900,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[53532] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 324,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 324,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 324,
-										["c_max"] = 324,
-										["id"] = 53532,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 324,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["total"] = 1528.004191,
-							["last_event"] = 1666364341,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.004191,
-							["start_time"] = 1666364339,
-							["delay"] = 0,
-							["last_dps"] = 757.5628116041865,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.003148,
-							["damage_from"] = {
-								["Bear <Mxzq>"] = true,
-							},
-							["targets"] = {
-							},
-							["serial"] = "Creature-0-4480-0-178-2720-000052AD26",
-							["pets"] = {
-							},
-							["aID"] = "2720",
-							["monster"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.003148,
-							["damage_taken"] = 1528.003148,
-							["fight_component"] = true,
-							["end_time"] = 1666364343,
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1666364339,
-							["nome"] = "Dustbelcher Ogre Mage",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Bear"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["PARRY"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1666364343,
-							["delay"] = 0,
-							["total"] = 0.003148,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 168,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorb"] = 0.007195,
-							["last_hps"] = 0,
-							["healing_from"] = {
-							},
-							["targets"] = {
-							},
-							["classe"] = "HUNTER",
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["totalover_without_pet"] = 0.007195,
-							["targets_overheal"] = {
-							},
-							["healing_taken"] = 0.007195,
-							["totalover"] = 71.007195,
-							["total_without_pet"] = 0.007195,
-							["iniciar_hps"] = false,
-							["start_time"] = 1666364340,
-							["aID"] = "4465-01C7FC88",
-							["end_time"] = 1666364343,
-							["total"] = 0.007195,
-							["heal_enemy_amt"] = 0,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["totaldenied"] = 0.007195,
-							["delay"] = 0,
-							["last_event"] = 1666364340,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["targets_overheal"] = {
-								["Bear <Mxzq>"] = 71,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PET",
-							["totalover"] = 71.002701,
-							["total_without_pet"] = 0.002701,
-							["total"] = 0.002701,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4480-0-178-7443-010074C845",
-							["totalabsorb"] = 0.002701,
-							["last_hps"] = 0,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.002701,
-							["healing_taken"] = 0.002701,
-							["end_time"] = 1666364343,
-							["healing_from"] = {
-							},
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[62800] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bear <Mxzq>"] = 71,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Bear <Mxzq>"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 71,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 62800,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["aID"] = "Pet-0-4480-0-178-7443-010074C845",
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1666364340,
-							["start_time"] = 1666364340,
-							["totaldenied"] = 0.002701,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 168,
-					["_ActorTable"] = {
-						{
-							["received"] = 31.00404,
-							["resource"] = 0.00404,
-							["targets"] = {
-								["Mxzq"] = 31,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "HUNTER",
-							["passiveover"] = 0.00404,
-							["total"] = 31.00404,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-									[53398] = {
-										["total"] = 31,
-										["id"] = 53398,
-										["totalover"] = 27,
-										["targets"] = {
-											["Mxzq"] = 31,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["flag_original"] = 1297,
-							["alternatepower"] = 0.00404,
-							["last_event"] = 1666364341,
-							["aID"] = "4465-01C7FC88",
-							["tipo"] = 3,
-							["serial"] = "Player-4465-01C7FC88",
-							["totalover"] = 27.00404,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 168,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Mxzq",
-							["buff_uptime"] = 4,
-							["classe"] = "HUNTER",
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["last_event"] = 1666364343,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[27044] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 4,
-										["id"] = 27044,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["aID"] = "4465-01C7FC88",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["tipo"] = 4,
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								[27047] = 1,
-								[63900] = 1,
-								[53532] = 1,
-							},
-							["aID"] = "Pet-0-4480-0-178-7443-010074C845",
-							["classe"] = "PET",
-							["serial"] = "Pet-0-4480-0-178-7443-010074C845",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 168,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxzq"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Mxzq", -- [1]
-				},
-				["CombatStartedAt"] = 803487.8790000001,
-				["tempo_start"] = 1666364339,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 10868,
-				["playing_solo"] = true,
-				["totals"] = {
-					1528, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 31,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					1528, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 31,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "16:59:03",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Dustbelcher Ogre Mage",
-				["TotalElapsedCombatTime"] = 3.533999999985099,
-				["CombatEndedAt"] = 803483.846,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "16:58:59",
-				["end_time"] = 803483.846,
-				["combat_id"] = 168,
-				["frags"] = {
-					["Dustbelcher Ogre Mage"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 803480.312,
-				["contra"] = "Dustbelcher Ogre Mage",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Mxzq"] = 0.007195,
-							["Bear <Mxzq>"] = 0.002701,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Mxzq"] = 1528.001975,
-							["Bear <Mxzq>"] = 1528.004191,
-						}, -- [1]
-					},
-				},
-			}, -- [15]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 167,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.008826,
-							["damage_from"] = {
-								["Dustbelcher Ogre Mage"] = true,
-							},
-							["targets"] = {
-								["Dustbelcher Ogre Mage"] = 1544,
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.008826,
-							["aID"] = "4465-01C7FC88",
-							["dps_started"] = false,
-							["total"] = 1544.008826,
-							["on_hold"] = false,
-							["last_event"] = 1666364330,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1666364330,
-							["last_dps"] = 723.1891456642926,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 180.008826,
-							["start_time"] = 1666364328,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.00413,
-							["on_hold"] = false,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Dustbelcher Ogre Mage"] = 1544,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["colocacao"] = 2,
-							["classe"] = "PET",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1544.00413,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Pet-0-4480-0-178-7443-010074C845",
-							["dps_started"] = false,
-							["end_time"] = 1666364330,
-							["aID"] = "Pet-0-4480-0-178-7443-010074C845",
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 407,
-										["g_amt"] = 0,
-										["n_max"] = 260,
-										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 891,
-										},
-										["n_dmg"] = 484,
-										["n_min"] = 224,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 891,
-										["c_max"] = 407,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 407,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -9748,279 +228,73 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[53532] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 169,
-										["targets"] = {
-											["Dustbelcher Ogre Mage"] = 169,
-										},
-										["n_dmg"] = 169,
-										["n_min"] = 169,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 169,
-										["c_max"] = 0,
-										["id"] = 53532,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 								},
-								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 1544.00413,
-							["last_event"] = 1666364330,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.00413,
-							["start_time"] = 1666364328,
-							["delay"] = 0,
-							["last_dps"] = 723.1869461326768,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003791,
-							["damage_from"] = {
-								["Bear <Mxzq>"] = true,
-							},
-							["targets"] = {
-								["Mxzq"] = 180,
-							},
-							["serial"] = "Creature-0-4480-0-178-2720-000052B217",
-							["pets"] = {
-							},
-							["aID"] = "2720",
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 180.003791,
-							["damage_taken"] = 1544.003791,
-							["monster"] = true,
-							["end_time"] = 1666364330,
-							["on_hold"] = false,
-							["last_event"] = 1666364330,
-							["nome"] = "Dustbelcher Ogre Mage",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20822] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 180,
-										["targets"] = {
-											["Mxzq"] = 180,
-										},
-										["n_dmg"] = 180,
-										["n_min"] = 180,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 180,
-										["c_max"] = 0,
-										["id"] = 20822,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
+							["end_time"] = 1666880107,
 							["friendlyfire"] = {
 							},
+							["last_dps"] = 556.1605338511342,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1666364330,
+							["damage_taken"] = 0.008694,
+							["start_time"] = 1666880105,
 							["delay"] = 0,
-							["total"] = 180.003791,
+							["last_event"] = 1666880105,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 341,
 					["tipo"] = 3,
-					["combatId"] = 167,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorb"] = 0.00501,
-							["last_hps"] = 0,
-							["healing_from"] = {
-							},
-							["targets"] = {
-							},
-							["classe"] = "HUNTER",
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["totalover_without_pet"] = 0.00501,
-							["targets_overheal"] = {
-							},
-							["healing_taken"] = 0.00501,
-							["totalover"] = 72.00501,
-							["total_without_pet"] = 0.00501,
-							["iniciar_hps"] = false,
-							["start_time"] = 1666364329,
-							["aID"] = "4465-01C7FC88",
-							["end_time"] = 1666364330,
-							["total"] = 0.00501,
-							["heal_enemy_amt"] = 0,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["totaldenied"] = 0.00501,
-							["delay"] = 0,
-							["last_event"] = 1666364329,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["targets_overheal"] = {
-								["Bear <Mxzq>"] = 72,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PET",
-							["totalover"] = 72.005658,
-							["total_without_pet"] = 0.005658,
-							["total"] = 0.005658,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4480-0-178-7443-010074C845",
-							["totalabsorb"] = 0.005658,
-							["last_hps"] = 0,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.005658,
-							["healing_taken"] = 0.005658,
-							["end_time"] = 1666364330,
-							["healing_from"] = {
-							},
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[62800] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bear <Mxzq>"] = 72,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Bear <Mxzq>"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 72,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 62800,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["aID"] = "Pet-0-4480-0-178-7443-010074C845",
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1666364329,
-							["start_time"] = 1666364329,
-							["totaldenied"] = 0.005658,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [2]
 					},
 				}, -- [2]
 				{
+					["combatId"] = 341,
 					["tipo"] = 7,
-					["combatId"] = 167,
 					["_ActorTable"] = {
 						{
-							["received"] = 57.008871,
-							["resource"] = 0.008871,
+							["received"] = 58.006354,
+							["resource"] = 0.006354,
 							["targets"] = {
-								["Mxzq"] = 57,
+								["Mxzq"] = 58,
 							},
 							["pets"] = {
 							},
 							["powertype"] = 0,
 							["classe"] = "HUNTER",
-							["passiveover"] = 0.008871,
-							["total"] = 57.008871,
+							["passiveover"] = 0.006354,
+							["total"] = 58.006354,
 							["nome"] = "Mxzq",
 							["spells"] = {
+								["tipo"] = 7,
 								["_ActorTable"] = {
 									[53398] = {
-										["total"] = 57,
+										["total"] = 58,
 										["id"] = 53398,
 										["totalover"] = 0,
 										["targets"] = {
-											["Mxzq"] = 57,
+											["Mxzq"] = 58,
 										},
 										["counter"] = 1,
 									},
 								},
-								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
-							["alternatepower"] = 0.008871,
-							["last_event"] = 1666364328,
+							["alternatepower"] = 0.006354,
+							["last_event"] = 1666880105,
 							["aID"] = "4465-01C7FC88",
 							["tipo"] = 3,
 							["serial"] = "Player-4465-01C7FC88",
-							["totalover"] = 0.008871,
+							["totalover"] = 0.006354,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
+					["combatId"] = 341,
 					["tipo"] = 9,
-					["combatId"] = 167,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
@@ -10028,71 +302,86 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["nome"] = "Mxzq",
-							["buff_uptime"] = 2,
-							["classe"] = "HUNTER",
+							["buff_uptime"] = 4,
 							["pets"] = {
 								"Bear <Mxzq>", -- [1]
 							},
-							["last_event"] = 1666364330,
+							["classe"] = "HUNTER",
+							["last_event"] = 1666880553,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
 									[27044] = {
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["id"] = 27044,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
 										["uptime"] = 2,
-										["id"] = 27044,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[53257] = {
+										["activedamt"] = 1,
+										["id"] = 53257,
+										["targets"] = {
+										},
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[57475] = {
+										["activedamt"] = 0,
+										["id"] = 57475,
+										["targets"] = {
+										},
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[75447] = {
+										["activedamt"] = 0,
+										["id"] = 75447,
+										["targets"] = {
+										},
+										["uptime"] = 0,
+										["appliedamt"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
 							["serial"] = "Player-4465-01C7FC88",
 							["aID"] = "4465-01C7FC88",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["tipo"] = 4,
 							["ownerName"] = "Mxzq",
 							["nome"] = "Bear <Mxzq>",
 							["grupo"] = true,
 							["pets"] = {
 							},
-							["spell_cast"] = {
-								[27047] = 1,
-								[63900] = 1,
-								[53532] = 1,
-							},
-							["aID"] = "Pet-0-4480-0-178-7443-010074C845",
 							["classe"] = "PET",
-							["serial"] = "Pet-0-4480-0-178-7443-010074C845",
+							["spell_cast"] = {
+								[63900] = 1,
+							},
+							["tipo"] = 4,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
 							["last_event"] = 0,
 						}, -- [2]
-						{
-							["monster"] = true,
-							["tipo"] = 4,
-							["nome"] = "Dustbelcher Ogre Mage",
-							["flag_original"] = 68168,
-							["spell_cast"] = {
-								[20822] = 1,
-							},
-							["fight_component"] = true,
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-4480-0-178-2720-000052B217",
-							["aID"] = "2720",
-						}, -- [3]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 341,
 					["tipo"] = 2,
-					["combatId"] = 167,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -10102,21 +391,24 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Mxzq", -- [1]
 				},
-				["tempo_start"] = 1666364328,
+				["tempo_start"] = 1666880105,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Dustbelcher Ogre Mage",
 				["cleu_events"] = {
 					["n"] = 1,
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					1724, -- [1]
+					1914, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 57,
+						[0] = 58,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -10124,46 +416,55 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
+				["TotalElapsedCombatTime"] = 162797.542,
+				["combat_counter"] = 11072,
 				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "16:58:50",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Dustbelcher Ogre Mage",
-				["TotalElapsedCombatTime"] = 803471.314,
-				["CombatEndedAt"] = 803471.314,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "16:58:48",
-				["end_time"] = 803471.314,
-				["combat_id"] = 167,
-				["frags"] = {
-					["Dustbelcher Ogre Mage"] = 1,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Mxzq"] = 1914.00662,
+							["Bear <Mxzq>"] = 723.008694,
+						}, -- [1]
+					},
 				},
-				["spells_cast_timeline"] = {
+				["end_time"] = 162797.542,
+				["player_last_events"] = {
 				},
-				["combat_counter"] = 10867,
+				["instance_type"] = "none",
+				["CombatEndedAt"] = 162797.542,
+				["data_inicio"] = "16:15:05",
 				["totals_grupo"] = {
-					1544, -- [1]
+					1914, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 57,
+						[0] = 58,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -10171,94 +472,173 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
+				["spells_cast_timeline"] = {
+				},
+				["data_fim"] = "16:15:07",
+				["combat_id"] = 341,
 				["CombatSkillCache"] = {
 				},
+				["frags"] = {
+					["Dustbelcher Ogre Mage"] = 1,
+				},
+				["start_time"] = 162795.646,
 				["TimeData"] = {
 				},
-				["start_time"] = 803469.179,
 				["contra"] = "Dustbelcher Ogre Mage",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Mxzq"] = 0.00501,
-							["Bear <Mxzq>"] = 0.005658,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Mxzq"] = 1544.008826,
-							["Bear <Mxzq>"] = 1544.00413,
-						}, -- [1]
-					},
-				},
-			}, -- [16]
+			}, -- [1]
 			{
 				{
+					["combatId"] = 340,
 					["tipo"] = 2,
-					["combatId"] = 166,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.007814,
+							["totalabsorbed"] = 0.005847,
 							["damage_from"] = {
-								["Environment (Falling)"] = true,
 							},
 							["targets"] = {
-								["Greater Rock Elemental"] = 2312,
+								["Dustbelcher Ogre Mage"] = 2532,
 							},
-							["serial"] = "Player-4465-01C7FC88",
+							["total"] = 2532.005847,
 							["pets"] = {
 								"Bear <Mxzq>", -- [1]
 							},
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["classe"] = "HUNTER",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 0.007814,
-							["aID"] = "4465-01C7FC88",
+							["total_without_pet"] = 1181.005847,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
-							["total"] = 2312.007814,
-							["on_hold"] = false,
-							["last_event"] = 1666364297,
+							["end_time"] = 1666880099,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-01C7FC88",
 							["nome"] = "Mxzq",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
-									[27016] = {
-										["c_amt"] = 0,
+									[27019] = {
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 1181,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Greater Rock Elemental"] = 0,
+											["Dustbelcher Ogre Mage"] = 1181,
 										},
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 27016,
+										["total"] = 1181,
+										["c_max"] = 1181,
+										["id"] = 27019,
 										["r_dmg"] = 0,
-										["IMMUNE"] = 1,
+										["spellschool"] = 64,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 1181,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-01C7FC88",
+							["last_dps"] = 1048.449626083419,
+							["custom"] = 0,
+							["last_event"] = 1666880099,
+							["damage_taken"] = 0.005847,
+							["start_time"] = 1666880096,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.001982,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Dustbelcher Ogre Mage"] = 1351,
+							},
+							["friendlyfire"] = {
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 2,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1351.001982,
+							["on_hold"] = false,
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["dps_started"] = false,
+							["end_time"] = 1666880099,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 422,
+										["g_amt"] = 0,
+										["n_max"] = 212,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 836,
+										},
+										["n_dmg"] = 414,
+										["n_min"] = 202,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 836,
+										["c_max"] = 422,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 422,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[63900] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 324,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 324,
+										},
+										["n_dmg"] = 324,
+										["n_min"] = 324,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 324,
+										["c_max"] = 0,
+										["id"] = 63900,
+										["r_dmg"] = 0,
 										["spellschool"] = 8,
 										["extra"] = {
 										},
@@ -10266,289 +646,137 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1666364298,
-							["last_dps"] = 473.2871676551878,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 765.007814,
-							["start_time"] = 1666364293,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.00756,
-							["on_hold"] = false,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Greater Rock Elemental"] = 2312,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["colocacao"] = 2,
-							["classe"] = "PET",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 2312.00756,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Pet-0-4480-0-178-7443-010074C845",
-							["dps_started"] = false,
-							["end_time"] = 1666364298,
-							["aID"] = "Pet-0-4480-0-178-7443-010074C845",
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 292,
-										["targets"] = {
-											["Greater Rock Elemental"] = 781,
-										},
-										["n_dmg"] = 781,
-										["n_min"] = 216,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 781,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[53532] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 739,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Greater Rock Elemental"] = 739,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 739,
-										["c_max"] = 739,
-										["id"] = 53532,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 739,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[27049] = {
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 792,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 191,
 										["targets"] = {
-											["Greater Rock Elemental"] = 792,
+											["Dustbelcher Ogre Mage"] = 191,
 										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 191,
+										["n_min"] = 191,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 792,
-										["c_max"] = 792,
+										["total"] = 191,
+										["c_max"] = 0,
 										["id"] = 27049,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 792,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 0,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 2312.00756,
-							["last_event"] = 1666364297,
+							["classe"] = "PET",
+							["total"] = 1351.001982,
+							["last_dps"] = 559.4211105571185,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.00756,
-							["start_time"] = 1666364293,
+							["last_event"] = 1666880099,
+							["damage_taken"] = 0.001982,
+							["start_time"] = 1666880096,
 							["delay"] = 0,
-							["last_dps"] = 473.2871156592819,
+							["tipo"] = 1,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00251,
+							["totalabsorbed"] = 0.001318,
 							["damage_from"] = {
+								["Mxzq"] = true,
 								["Bear <Mxzq>"] = true,
 							},
 							["targets"] = {
 							},
-							["serial"] = "Creature-0-4480-0-178-2736-000052A636",
+							["total"] = 0.001318,
 							["pets"] = {
 							},
-							["aID"] = "2736",
-							["monster"] = true,
+							["friendlyfire"] = {
+							},
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 0.00251,
-							["damage_taken"] = 2312.00251,
+							["total_without_pet"] = 0.001318,
 							["fight_component"] = true,
-							["end_time"] = 1666364298,
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1666364296,
-							["nome"] = "Greater Rock Elemental",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Bear"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["BLOCK"] = 2,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
+							["monster"] = true,
 							["dps_started"] = false,
+							["end_time"] = 1666880099,
+							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
+							["nome"] = "Dustbelcher Ogre Mage",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["aID"] = "2720",
+							["serial"] = "Creature-0-5571-0-5544-2720-00005A8A41",
 							["last_dps"] = 0,
-							["start_time"] = 1666364298,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 2532.001318,
+							["start_time"] = 1666880099,
 							["delay"] = 0,
-							["total"] = 0.00251,
+							["tipo"] = 1,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 340,
 					["tipo"] = 3,
-					["combatId"] = 166,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["targets_overheal"] = {
+							["totalabsorb"] = 0.002085,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["targets_absorbs"] = {
 							},
 							["pets"] = {
 								"Bear <Mxzq>", -- [1]
 							},
-							["iniciar_hps"] = false,
-							["aID"] = "4465-01C7FC88",
-							["totalover"] = 71.003707,
-							["total_without_pet"] = 1071.003707,
-							["total"] = 1071.003707,
-							["targets_absorbs"] = {
+							["totalover_without_pet"] = 0.002085,
+							["targets_overheal"] = {
 							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-01C7FC88",
-							["totalabsorb"] = 0.003707,
-							["last_hps"] = 235.3337084108688,
-							["targets"] = {
-								["Mxzq"] = 1071,
-							},
-							["totalover_without_pet"] = 0.003707,
-							["healing_taken"] = 1071.003707,
-							["fight_component"] = true,
-							["end_time"] = 1666364298,
 							["classe"] = "HUNTER",
+							["totalover"] = 71.002085,
+							["total_without_pet"] = 0.002085,
+							["iniciar_hps"] = false,
+							["healing_taken"] = 0.002085,
+							["end_time"] = 1666880099,
+							["total"] = 0.002085,
+							["aID"] = "4465-01C7FC88",
+							["heal_enemy_amt"] = 0,
 							["nome"] = "Mxzq",
 							["spells"] = {
-								["_ActorTable"] = {
-									[55502] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 268,
-										["targets"] = {
-											["Mxzq"] = 1071,
-										},
-										["n_min"] = 267,
-										["counter"] = 4,
-										["overheal"] = 0,
-										["total"] = 1071,
-										["c_max"] = 0,
-										["id"] = 55502,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 4,
-										["n_curado"] = 1071,
-										["absorbed"] = 0,
-									},
-								},
 								["tipo"] = 3,
+								["_ActorTable"] = {
+								},
 							},
 							["grupo"] = true,
-							["healing_from"] = {
-								["Mxzq"] = true,
+							["start_time"] = 1666880097,
+							["heal_enemy"] = {
 							},
-							["heal_enemy_amt"] = 0,
+							["serial"] = "Player-4465-01C7FC88",
 							["custom"] = 0,
-							["last_event"] = 1666364298,
-							["start_time"] = 1666364293,
-							["totaldenied"] = 0.003707,
+							["last_event"] = 1666880097,
+							["on_hold"] = false,
+							["totaldenied"] = 0.002085,
 							["delay"] = 0,
 							["tipo"] = 2,
 						}, -- [1]
@@ -10560,28 +788,30 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "Pet-0-4480-0-178-7443-010074C845",
-							["totalover"] = 71.005002,
-							["total_without_pet"] = 0.005002,
-							["total"] = 0.005002,
+							["classe"] = "PET",
+							["totalover"] = 71.007548,
+							["total_without_pet"] = 0.007548,
+							["total"] = 0.007548,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
 							},
-							["colocacao"] = 2,
 							["on_hold"] = false,
-							["serial"] = "Pet-0-4480-0-178-7443-010074C845",
-							["totalabsorb"] = 0.005002,
-							["last_hps"] = 0.001099099099076382,
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["totalabsorb"] = 0.007548,
+							["last_hps"] = 0,
 							["targets"] = {
 							},
-							["totalover_without_pet"] = 0.005002,
-							["healing_taken"] = 0.005002,
-							["end_time"] = 1666364298,
-							["classe"] = "PET",
+							["totalover_without_pet"] = 0.007548,
+							["healing_taken"] = 0.007548,
+							["start_time"] = 1666880097,
+							["end_time"] = 1666880099,
+							["healing_from"] = {
+							},
 							["ownerName"] = "Mxzq",
 							["nome"] = "Bear <Mxzq>",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									[62800] = {
 										["c_amt"] = 0,
@@ -10603,34 +833,1144 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 								},
-								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["healing_from"] = {
-							},
 							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1666364293,
-							["start_time"] = 1666364293,
-							["totaldenied"] = 0.005002,
-							["delay"] = 0,
 							["tipo"] = 2,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["totaldenied"] = 0.007548,
+							["delay"] = 0,
+							["last_event"] = 1666880097,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
+					["combatId"] = 340,
 					["tipo"] = 7,
-					["combatId"] = 166,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 340,
+					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
-							["received"] = 115.001851,
-							["resource"] = 0.001851,
+							["flag_original"] = 1047,
+							["spell_cast"] = {
+								[27019] = 1,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Mxzq",
+							["buff_uptime"] = 3,
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["last_event"] = 1666880099,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[27044] = {
+										["activedamt"] = 1,
+										["id"] = 27044,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[53257] = {
+										["activedamt"] = 1,
+										["id"] = 53257,
+										["targets"] = {
+										},
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["aID"] = "4465-01C7FC88",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["spell_cast"] = {
+								[27047] = 1,
+								[63900] = 1,
+								[27049] = 1,
+							},
+							["tipo"] = 4,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 340,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Mxzq"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Mxzq", -- [1]
+				},
+				["CombatStartedAt"] = 162795.326,
+				["tempo_start"] = 1666880096,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 11071,
+				["playing_solo"] = true,
+				["totals"] = {
+					2532, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					2532, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "16:14:59",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Dustbelcher Ogre Mage",
+				["TotalElapsedCombatTime"] = 162790.294,
+				["CombatEndedAt"] = 162790.294,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Mxzq"] = 0.002085,
+							["Bear <Mxzq>"] = 0.007548,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Mxzq"] = 2532.005847,
+							["Bear <Mxzq>"] = 1351.001982,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 162790.294,
+				["combat_id"] = 340,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "16:14:57",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Dustbelcher Ogre Mage"] = 1,
+				},
+				["start_time"] = 162787.427,
+				["TimeData"] = {
+				},
+				["contra"] = "Dustbelcher Ogre Mage",
+			}, -- [2]
+			{
+				{
+					["combatId"] = 339,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002751,
+							["damage_from"] = {
+								["Dustbelcher Ogre Mage"] = true,
+							},
+							["targets"] = {
+								["Dustbelcher Ogre Mage"] = 1920,
+							},
+							["total"] = 1920.002751,
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1669.002751,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1666880094,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-01C7FC88",
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1079,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 1079,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 1079,
+										["c_max"] = 1079,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 1079,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[27019] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 590,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 590,
+										},
+										["n_dmg"] = 590,
+										["n_min"] = 590,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 590,
+										["c_max"] = 0,
+										["id"] = 27019,
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-01C7FC88",
+							["last_dps"] = 1646.657590912708,
+							["custom"] = 0,
+							["last_event"] = 1666880093,
+							["damage_taken"] = 33.002751,
+							["start_time"] = 1666880092,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.006547,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Dustbelcher Ogre Mage"] = 251,
+							},
+							["friendlyfire"] = {
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 2,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 251.006547,
+							["on_hold"] = false,
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["dps_started"] = false,
+							["end_time"] = 1666880094,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 251,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 251,
+										},
+										["n_dmg"] = 251,
+										["n_min"] = 251,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 251,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["grupo"] = true,
+							["classe"] = "PET",
+							["total"] = 251.006547,
+							["last_dps"] = 215.2714811325483,
+							["custom"] = 0,
+							["last_event"] = 1666880093,
+							["damage_taken"] = 0.006547,
+							["start_time"] = 1666880093,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007692,
+							["total"] = 33.007692,
+							["damage_from"] = {
+								["Mxzq"] = true,
+								["Bear <Mxzq>"] = true,
+							},
+							["targets"] = {
+								["Mxzq"] = 33,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 33.007692,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1666880096,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Dustbelcher Ogre Mage",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 33,
+										["targets"] = {
+											["Mxzq"] = 33,
+										},
+										["n_dmg"] = 33,
+										["n_min"] = 33,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 33,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "2720",
+							["serial"] = "Creature-0-5571-0-5544-2720-00005A8A9A",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1666880096,
+							["damage_taken"] = 1920.007692,
+							["start_time"] = 1666880094,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 339,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorb"] = 0.003182,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["targets_absorbs"] = {
+							},
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["totalover_without_pet"] = 0.003182,
+							["targets_overheal"] = {
+							},
+							["classe"] = "HUNTER",
+							["totalover"] = 71.003182,
+							["total_without_pet"] = 0.003182,
+							["iniciar_hps"] = false,
+							["healing_taken"] = 0.003182,
+							["end_time"] = 1666880094,
+							["total"] = 0.003182,
+							["aID"] = "4465-01C7FC88",
+							["heal_enemy_amt"] = 0,
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+								},
+							},
+							["grupo"] = true,
+							["start_time"] = 1666880093,
+							["heal_enemy"] = {
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["custom"] = 0,
+							["last_event"] = 1666880093,
+							["on_hold"] = false,
+							["totaldenied"] = 0.003182,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["targets_overheal"] = {
+								["Bear <Mxzq>"] = 71,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PET",
+							["totalover"] = 71.007681,
+							["total_without_pet"] = 0.007681,
+							["total"] = 0.007681,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["totalabsorb"] = 0.007681,
+							["last_hps"] = 0,
+							["targets"] = {
+							},
+							["totalover_without_pet"] = 0.007681,
+							["healing_taken"] = 0.007681,
+							["start_time"] = 1666880093,
+							["end_time"] = 1666880094,
+							["healing_from"] = {
+							},
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[62800] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bear <Mxzq>"] = 71,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Bear <Mxzq>"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 1,
+										["overheal"] = 71,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 62800,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["totaldenied"] = 0.007681,
+							["delay"] = 0,
+							["last_event"] = 1666880093,
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 339,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 339,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Mxzq",
+							["buff_uptime"] = 2,
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["last_event"] = 1666880094,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[27044] = {
+										["activedamt"] = 1,
+										["id"] = 27044,
+										["targets"] = {
+										},
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["aID"] = "4465-01C7FC88",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["spell_cast"] = {
+								[27047] = 1,
+							},
+							["tipo"] = 4,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 339,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Mxzq"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Mxzq", -- [1]
+				},
+				["CombatStartedAt"] = 162787.027,
+				["tempo_start"] = 1666880092,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 11070,
+				["playing_solo"] = true,
+				["totals"] = {
+					1953, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1920, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "16:14:54",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Dustbelcher Ogre Mage",
+				["TotalElapsedCombatTime"] = 162784.543,
+				["CombatEndedAt"] = 162784.543,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Mxzq"] = 0.003182,
+							["Bear <Mxzq>"] = 0.007681,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Mxzq"] = 1920.002751,
+							["Bear <Mxzq>"] = 251.006547,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 162784.543,
+				["combat_id"] = 339,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+					["Mxzq"] = {
+						{
+							true, -- [1]
+							1, -- [2]
+							33, -- [3]
+							1666880095.722, -- [4]
+							6315, -- [5]
+							"Dustbelcher Ogre Mage", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 2,
+					},
+				},
+				["data_inicio"] = "16:14:53",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Dustbelcher Ogre Mage"] = 1,
+				},
+				["start_time"] = 162783.377,
+				["TimeData"] = {
+				},
+				["contra"] = "Dustbelcher Ogre Mage",
+			}, -- [3]
+			{
+				{
+					["combatId"] = 338,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003954,
+							["damage_from"] = {
+								["Dustbelcher Lord"] = true,
+							},
+							["targets"] = {
+								["Dustbelcher Lord"] = 4969,
+							},
+							["total"] = 4969.003954,
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 3778.003954,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1666880081,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-01C7FC88",
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[27021] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 779,
+										["targets"] = {
+											["Dustbelcher Lord"] = 1477,
+										},
+										["n_dmg"] = 1477,
+										["n_min"] = 698,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 1477,
+										["c_max"] = 0,
+										["id"] = 27021,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[75] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 591,
+										["targets"] = {
+											["Dustbelcher Lord"] = 1120,
+										},
+										["n_dmg"] = 1120,
+										["n_min"] = 529,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 1120,
+										["c_max"] = 0,
+										["id"] = 75,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[27019] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1181,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Dustbelcher Lord"] = 1181,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 1181,
+										["c_max"] = 1181,
+										["id"] = 27019,
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 1181,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-01C7FC88",
+							["last_dps"] = 1544.608005593263,
+							["custom"] = 0,
+							["last_event"] = 1666880081,
+							["damage_taken"] = 50.003954,
+							["start_time"] = 1666880078,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007243,
+							["total"] = 50.007243,
+							["damage_from"] = {
+								["Mxzq"] = true,
+								["Bear <Mxzq>"] = true,
+							},
+							["targets"] = {
+								["Mxzq"] = 50,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 50.007243,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1666880081,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Dustbelcher Lord",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 50,
+										["targets"] = {
+											["Mxzq"] = 50,
+										},
+										["n_dmg"] = 50,
+										["n_min"] = 50,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 50,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "2719",
+							["serial"] = "Creature-0-5571-0-5544-2719-00005A66D1",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1666880080,
+							["damage_taken"] = 4969.007243,
+							["start_time"] = 1666880080,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.005449,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Dustbelcher Lord"] = 1191,
+							},
+							["friendlyfire"] = {
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 2,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1191.005449,
+							["on_hold"] = false,
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["dps_started"] = false,
+							["end_time"] = 1666880081,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 227,
+										["targets"] = {
+											["Dustbelcher Lord"] = 227,
+										},
+										["n_dmg"] = 227,
+										["n_min"] = 227,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 227,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[63900] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 964,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Dustbelcher Lord"] = 964,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 964,
+										["c_max"] = 484,
+										["id"] = 63900,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 480,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["classe"] = "PET",
+							["total"] = 1191.005449,
+							["last_dps"] = 370.222396331504,
+							["custom"] = 0,
+							["last_event"] = 1666880081,
+							["damage_taken"] = 0.005449,
+							["start_time"] = 1666880080,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 338,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 338,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["received"] = 115.008702,
+							["resource"] = 0.008702,
 							["targets"] = {
 								["Mxzq"] = 115,
 							},
@@ -10638,11 +1978,11 @@ _detalhes_database = {
 							},
 							["powertype"] = 0,
 							["classe"] = "HUNTER",
-							["passiveover"] = 0.001851,
-							["fight_component"] = true,
-							["total"] = 115.001851,
+							["passiveover"] = 0.008702,
+							["total"] = 115.008702,
 							["nome"] = "Mxzq",
 							["spells"] = {
+								["tipo"] = 7,
 								["_ActorTable"] = {
 									[53398] = {
 										["total"] = 115,
@@ -10654,165 +1994,101 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
-								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
-							["alternatepower"] = 0.001851,
-							["last_event"] = 1666364297,
+							["alternatepower"] = 0.008702,
+							["last_event"] = 1666880081,
 							["aID"] = "4465-01C7FC88",
 							["tipo"] = 3,
 							["serial"] = "Player-4465-01C7FC88",
-							["totalover"] = 0.001851,
+							["totalover"] = 0.008702,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
+					["combatId"] = 338,
 					["tipo"] = 9,
-					["combatId"] = 166,
 					["_ActorTable"] = {
 						{
-							["fight_component"] = true,
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
 							["flag_original"] = 1047,
+							["spell_cast"] = {
+								[75] = 1,
+								[27019] = 1,
+							},
 							["buff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["nome"] = "Mxzq",
-							["spell_cast"] = {
-								[34026] = 1,
-								[19574] = 1,
-								[27016] = 1,
-								[33014] = 1,
-								[33667] = 1,
-								[55502] = 1,
+							["buff_uptime"] = 7,
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
 							},
-							["buff_uptime"] = 31,
 							["classe"] = "HUNTER",
+							["last_event"] = 1666880081,
 							["tipo"] = 4,
-							["aID"] = "4465-01C7FC88",
 							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[34026] = {
-										["activedamt"] = 1,
-										["id"] = 34026,
-										["targets"] = {
-										},
-										["actived_at"] = 1666364294,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[34471] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 4,
-										["id"] = 34471,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[70893] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 10,
-										["id"] = 70893,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[27044] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
 										["activedamt"] = 1,
-										["uptime"] = 5,
 										["id"] = 27044,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[34027] = {
-										["appliedamt"] = 0,
 										["targets"] = {
 										},
-										["activedamt"] = 0,
-										["uptime"] = 0,
-										["id"] = 34027,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[33014] = {
+										["uptime"] = 3,
 										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 4,
-										["id"] = 33014,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[33667] = {
-										["appliedamt"] = 1,
+									[53257] = {
+										["activedamt"] = 1,
+										["id"] = 53257,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 4,
-										["id"] = 33667,
+										["uptime"] = 1,
+										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[55502] = {
-										["appliedamt"] = 1,
+									[6150] = {
+										["activedamt"] = 1,
+										["id"] = 6150,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 4,
-										["id"] = 55502,
+										["uptime"] = 3,
+										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
 							["serial"] = "Player-4465-01C7FC88",
-							["last_event"] = 1666364307,
+							["aID"] = "4465-01C7FC88",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["tipo"] = 4,
 							["ownerName"] = "Mxzq",
 							["nome"] = "Bear <Mxzq>",
 							["grupo"] = true,
 							["pets"] = {
 							},
-							["spell_cast"] = {
-								[27047] = 1,
-								[53532] = 1,
-								[27049] = 1,
-							},
-							["aID"] = "Pet-0-4480-0-178-7443-010074C845",
 							["classe"] = "PET",
-							["serial"] = "Pet-0-4480-0-178-7443-010074C845",
+							["spell_cast"] = {
+								[63900] = 1,
+							},
+							["tipo"] = 4,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 338,
 					["tipo"] = 2,
-					["combatId"] = 166,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -10822,17 +2098,17 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Mxzq", -- [1]
 				},
-				["CombatStartedAt"] = 803467.664,
-				["tempo_start"] = 1666364293,
+				["CombatStartedAt"] = 162783.311,
+				["tempo_start"] = 1666880078,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 10866,
+				["combat_counter"] = 11069,
 				["playing_solo"] = true,
 				["totals"] = {
-					2311.995164, -- [1]
-					1071, -- [2]
+					5019, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 115,
@@ -10843,10 +2119,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -10854,8 +2130,8 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["totals_grupo"] = {
-					2312, -- [1]
-					1071, -- [2]
+					4969, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 115,
@@ -10866,46 +2142,1933 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "16:58:18",
+				["data_fim"] = "16:14:42",
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Greater Rock Elemental",
-				["TotalElapsedCombatTime"] = 803439.328,
-				["CombatEndedAt"] = 803439.328,
+				["enemy"] = "Dustbelcher Lord",
+				["TotalElapsedCombatTime"] = 162772.444,
+				["CombatEndedAt"] = 162772.444,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "16:58:14",
-				["end_time"] = 803439.328,
-				["combat_id"] = 166,
-				["frags"] = {
-					["Greater Rock Elemental"] = 1,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Mxzq"] = 4969.003954,
+							["Bear <Mxzq>"] = 1191.005449,
+						}, -- [1]
+					},
 				},
-				["spells_cast_timeline"] = {
-				},
+				["end_time"] = 162772.444,
+				["combat_id"] = 338,
 				["cleu_events"] = {
 					["n"] = 1,
 				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "16:14:38",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Dustbelcher Lord"] = 2,
+				},
+				["start_time"] = 162768.976,
+				["TimeData"] = {
+				},
+				["contra"] = "Dustbelcher Lord",
+			}, -- [4]
+			{
+				{
+					["combatId"] = 337,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.002758,
+							["damage_from"] = {
+								["Dustbelcher Ogre Mage"] = true,
+							},
+							["targets"] = {
+								["Dustbelcher Ogre Mage"] = 3171,
+							},
+							["total"] = 3171.002758,
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.002758,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1666880072,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-01C7FC88",
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-01C7FC88",
+							["last_dps"] = 341.5924548100217,
+							["custom"] = 0,
+							["last_event"] = 1666880071,
+							["damage_taken"] = 24.002758,
+							["start_time"] = 1666880062,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.003659,
+							["damage_from"] = {
+								["Dustbelcher Ogre Mage"] = true,
+							},
+							["targets"] = {
+								["Dustbelcher Ogre Mage"] = 3171,
+							},
+							["friendlyfire"] = {
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 3171.003659,
+							["on_hold"] = false,
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["dps_started"] = false,
+							["end_time"] = 1666880072,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 402,
+										["g_amt"] = 0,
+										["n_max"] = 258,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 1966,
+										},
+										["n_dmg"] = 1564,
+										["n_min"] = 206,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 1966,
+										["c_max"] = 402,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 402,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[63900] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 325,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 648,
+										},
+										["n_dmg"] = 648,
+										["n_min"] = 323,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 648,
+										["c_max"] = 0,
+										["id"] = 63900,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[27049] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 191,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 557,
+										},
+										["n_dmg"] = 557,
+										["n_min"] = 182,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 557,
+										["c_max"] = 0,
+										["id"] = 27049,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["classe"] = "PET",
+							["total"] = 3171.003659,
+							["last_dps"] = 341.5925518691621,
+							["custom"] = 0,
+							["last_event"] = 1666880071,
+							["damage_taken"] = 19.003659,
+							["start_time"] = 1666880062,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007784,
+							["total"] = 43.007784,
+							["damage_from"] = {
+								["Bear <Mxzq>"] = true,
+							},
+							["targets"] = {
+								["Mxzq"] = 24,
+								["Bear <Mxzq>"] = 19,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 43.007784,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1666880072,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Dustbelcher Ogre Mage",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 24,
+										["targets"] = {
+											["Bear <Mxzq>"] = 19,
+											["Mxzq"] = 24,
+											["Bear"] = 0,
+										},
+										["n_dmg"] = 43,
+										["n_min"] = 19,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 43,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[20822] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Bear"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 20822,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["aID"] = "2720",
+							["serial"] = "Creature-0-5571-0-5544-2720-00005A89F8",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1666880071,
+							["damage_taken"] = 3171.007784,
+							["start_time"] = 1666880064,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 337,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorb"] = 0.008068,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["targets_absorbs"] = {
+							},
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["totalover_without_pet"] = 0.008068,
+							["targets_overheal"] = {
+							},
+							["classe"] = "HUNTER",
+							["totalover"] = 144.008068,
+							["total_without_pet"] = 0.008068,
+							["iniciar_hps"] = false,
+							["healing_taken"] = 0.008068,
+							["end_time"] = 1666880072,
+							["total"] = 0.008068,
+							["aID"] = "4465-01C7FC88",
+							["heal_enemy_amt"] = 0,
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+								},
+							},
+							["grupo"] = true,
+							["start_time"] = 1666880063,
+							["heal_enemy"] = {
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["custom"] = 0,
+							["last_event"] = 1666880068,
+							["on_hold"] = false,
+							["totaldenied"] = 0.008068,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["targets_overheal"] = {
+								["Bear <Mxzq>"] = 144,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PET",
+							["totalover"] = 144.007716,
+							["total_without_pet"] = 0.007716,
+							["total"] = 0.007716,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["totalabsorb"] = 0.007716,
+							["last_hps"] = 0,
+							["targets"] = {
+							},
+							["totalover_without_pet"] = 0.007716,
+							["healing_taken"] = 0.007716,
+							["start_time"] = 1666880063,
+							["end_time"] = 1666880072,
+							["healing_from"] = {
+							},
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[62800] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bear <Mxzq>"] = 144,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Bear <Mxzq>"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 2,
+										["overheal"] = 144,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 62800,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["totaldenied"] = 0.007716,
+							["delay"] = 0,
+							["last_event"] = 1666880068,
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 337,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 337,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["spell_cast"] = {
+								[27019] = 1,
+								[75] = 1,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Mxzq",
+							["buff_uptime"] = 11,
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["last_event"] = 1666880072,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[27044] = {
+										["activedamt"] = 1,
+										["id"] = 27044,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[6150] = {
+										["activedamt"] = 1,
+										["id"] = 6150,
+										["targets"] = {
+										},
+										["uptime"] = 1,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["aID"] = "4465-01C7FC88",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["spell_cast"] = {
+								[27047] = 2,
+								[61685] = 1,
+								[63900] = 2,
+								[27049] = 3,
+							},
+							["tipo"] = 4,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["monster"] = true,
+							["nome"] = "Dustbelcher Ogre Mage",
+							["flag_original"] = 68168,
+							["spell_cast"] = {
+								[20822] = 1,
+							},
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["serial"] = "Creature-0-5571-0-5544-2720-00005A89F8",
+							["aID"] = "2720",
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 337,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Mxzq"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Mxzq", -- [1]
+				},
+				["CombatStartedAt"] = 162768.195,
+				["tempo_start"] = 1666880062,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 11068,
+				["playing_solo"] = true,
+				["totals"] = {
+					3214, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					3171, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "16:14:32",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Dustbelcher Ogre Mage",
+				["TotalElapsedCombatTime"] = 162763.142,
+				["CombatEndedAt"] = 162763.142,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Mxzq"] = 0.008068,
+							["Bear <Mxzq>"] = 0.007716,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Mxzq"] = 3171.002758,
+							["Bear <Mxzq>"] = 3171.003659,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 162763.142,
+				["combat_id"] = 337,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "16:14:22",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Dustbelcher Ogre Mage"] = 2,
+				},
+				["start_time"] = 162753.093,
+				["TimeData"] = {
+				},
+				["contra"] = "Dustbelcher Ogre Mage",
+			}, -- [5]
+			{
+				{
+					["combatId"] = 336,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002572,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Dustbelcher Ogre Mage"] = 2234,
+							},
+							["total"] = 2234.002572,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 2234.002572,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1666880055,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-01C7FC88",
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[75] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1053,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 1053,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 1053,
+										["c_max"] = 1053,
+										["id"] = 75,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 1053,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[27019] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1181,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 1181,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 1181,
+										["c_max"] = 1181,
+										["id"] = 27019,
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 1181,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-01C7FC88",
+							["last_dps"] = 22340.02572,
+							["custom"] = 0,
+							["last_event"] = 1666880054,
+							["damage_taken"] = 0.002572,
+							["start_time"] = 1666880054,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007373,
+							["damage_from"] = {
+								["Mxzq"] = true,
+							},
+							["targets"] = {
+							},
+							["total"] = 0.007373,
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.007373,
+							["fight_component"] = true,
+							["monster"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1666880055,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Dustbelcher Ogre Mage",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Mxzq"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "2720",
+							["serial"] = "Creature-0-5571-0-5544-2720-00005A87A2",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1666880061,
+							["damage_taken"] = 2234.007373,
+							["start_time"] = 1666880055,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 336,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 336,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 336,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Mxzq",
+							["buff_uptime"] = 1,
+							["pets"] = {
+							},
+							["classe"] = "HUNTER",
+							["last_event"] = 1666880055,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[27044] = {
+										["activedamt"] = 1,
+										["id"] = 27044,
+										["targets"] = {
+										},
+										["uptime"] = 1,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["aID"] = "4465-01C7FC88",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 336,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Mxzq"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Mxzq", -- [1]
+				},
+				["CombatStartedAt"] = 162751.809,
+				["tempo_start"] = 1666880054,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 11067,
+				["playing_solo"] = true,
+				["totals"] = {
+					2234, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					2234, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "16:14:15",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Dustbelcher Ogre Mage",
+				["TotalElapsedCombatTime"] = 162746.109,
+				["CombatEndedAt"] = 162746.109,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Mxzq"] = 2234.002572,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 162746.109,
+				["combat_id"] = 336,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "16:14:14",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Dustbelcher Ogre Mage"] = 1,
+				},
+				["start_time"] = 162744.893,
+				["TimeData"] = {
+				},
+				["contra"] = "Dustbelcher Ogre Mage",
+			}, -- [6]
+			{
+				{
+					["combatId"] = 335,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.006987,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Dustbelcher Ogre Mage"] = 1621,
+							},
+							["total"] = 1621.006987,
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.006987,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1666880053,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-01C7FC88",
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-01C7FC88",
+							["last_dps"] = 494.360166817713,
+							["custom"] = 0,
+							["last_event"] = 1666880051,
+							["damage_taken"] = 0.006987,
+							["start_time"] = 1666880048,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.007838,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Dustbelcher Ogre Mage"] = 1621,
+							},
+							["friendlyfire"] = {
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1621.007838,
+							["on_hold"] = false,
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["dps_started"] = false,
+							["end_time"] = 1666880053,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 470,
+										["g_amt"] = 0,
+										["n_max"] = 210,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 886,
+										},
+										["n_dmg"] = 416,
+										["n_min"] = 206,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 886,
+										["c_max"] = 470,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 470,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[63900] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 322,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 322,
+										},
+										["n_dmg"] = 322,
+										["n_min"] = 322,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 322,
+										["c_max"] = 0,
+										["id"] = 63900,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[27049] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 215,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 413,
+										},
+										["n_dmg"] = 413,
+										["n_min"] = 198,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 413,
+										["c_max"] = 0,
+										["id"] = 27049,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["classe"] = "PET",
+							["total"] = 1621.007838,
+							["last_dps"] = 494.3604263480576,
+							["custom"] = 0,
+							["last_event"] = 1666880051,
+							["damage_taken"] = 0.007838,
+							["start_time"] = 1666880048,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.006027,
+							["damage_from"] = {
+								["Bear <Mxzq>"] = true,
+							},
+							["targets"] = {
+							},
+							["total"] = 0.006027,
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.006027,
+							["fight_component"] = true,
+							["monster"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1666880053,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Dustbelcher Ogre Mage",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[20822] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 20822,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["aID"] = "2720",
+							["serial"] = "Creature-0-5571-0-5544-2720-00005A9059",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 1621.006027,
+							["start_time"] = 1666880053,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 335,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "HUNTER",
+							["totalover"] = 51.002287,
+							["total_without_pet"] = 0.002287,
+							["total"] = 21.002287,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-01C7FC88",
+							["totalabsorb"] = 0.002287,
+							["last_hps"] = 8.357456028630107,
+							["targets"] = {
+								["Bear <Mxzq>"] = 21,
+							},
+							["totalover_without_pet"] = 0.002287,
+							["healing_taken"] = 0.002287,
+							["end_time"] = 1666880053,
+							["healing_from"] = {
+							},
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1666880050,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-01C7FC88",
+							["totaldenied"] = 0.002287,
+							["delay"] = 0,
+							["last_event"] = 1666880050,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["targets_overheal"] = {
+								["Bear <Mxzq>"] = 51,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PET",
+							["totalover"] = 51.001555,
+							["total_without_pet"] = 21.001555,
+							["total"] = 21.001555,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 2,
+							["on_hold"] = false,
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["totalabsorb"] = 0.001555,
+							["last_hps"] = 8.357164743313755,
+							["targets"] = {
+								["Bear <Mxzq>"] = 21,
+							},
+							["totalover_without_pet"] = 0.001555,
+							["healing_taken"] = 21.001555,
+							["start_time"] = 1666880050,
+							["fight_component"] = true,
+							["end_time"] = 1666880053,
+							["healing_from"] = {
+								["Bear <Mxzq>"] = true,
+							},
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[62800] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bear <Mxzq>"] = 51,
+										},
+										["n_max"] = 21,
+										["targets"] = {
+											["Bear <Mxzq>"] = 21,
+										},
+										["n_min"] = 21,
+										["counter"] = 1,
+										["overheal"] = 51,
+										["total"] = 21,
+										["c_max"] = 0,
+										["id"] = 62800,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 21,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["totaldenied"] = 0.001555,
+							["delay"] = 0,
+							["last_event"] = 1666880050,
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 335,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 335,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Mxzq",
+							["buff_uptime"] = 5,
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["last_event"] = 1666880053,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[27044] = {
+										["activedamt"] = 1,
+										["id"] = 27044,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["aID"] = "4465-01C7FC88",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["classe"] = "PET",
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								[27047] = 1,
+								[27049] = 2,
+								[63900] = 1,
+							},
+							["tipo"] = 4,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["monster"] = true,
+							["nome"] = "Dustbelcher Ogre Mage",
+							["flag_original"] = 2632,
+							["spell_cast"] = {
+								[20822] = 1,
+							},
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["serial"] = "Creature-0-5571-0-5544-2720-00005A9059",
+							["aID"] = "2720",
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 335,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Mxzq"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Mxzq", -- [1]
+				},
+				["CombatStartedAt"] = 162744.326,
+				["tempo_start"] = 1666880048,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 11066,
+				["playing_solo"] = true,
+				["totals"] = {
+					1621, -- [1]
+					21, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1621, -- [1]
+					21, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "16:14:13",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Dustbelcher Ogre Mage",
+				["TotalElapsedCombatTime"] = 5.267000000021653,
+				["CombatEndedAt"] = 162744.11,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Mxzq"] = 21.002287,
+							["Bear <Mxzq>"] = 21.001555,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Mxzq"] = 1621.006987,
+							["Bear <Mxzq>"] = 1621.007838,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 162744.11,
+				["combat_id"] = 335,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "16:14:08",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Dustbelcher Ogre Mage"] = 1,
+				},
+				["start_time"] = 162738.843,
+				["TimeData"] = {
+				},
+				["contra"] = "Dustbelcher Ogre Mage",
+			}, -- [7]
+			{
+				{
+					["combatId"] = 334,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.004013,
+							["damage_from"] = {
+								["Environment (Falling)"] = true,
+								["Elder Crag Coyote"] = true,
+							},
+							["targets"] = {
+							},
+							["on_hold"] = false,
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.004013,
+							["aID"] = "4465-01C7FC88",
+							["dps_started"] = false,
+							["total"] = 0.004013,
+							["classe"] = "HUNTER",
+							["serial"] = "Player-4465-01C7FC88",
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["grupo"] = true,
+							["end_time"] = 1666880013,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 3815.004013,
+							["start_time"] = 1666880013,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = -2147483648,
+							["totalabsorbed"] = 0.001486,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Mxzq"] = 3781,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 3781.001486,
+							["on_hold"] = false,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1666880048,
+							["friendlyfire_total"] = 0,
+							["aID"] = "",
+							["nome"] = "Environment (Falling)",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[3] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3088,
+										["targets"] = {
+											["Mxzq"] = 3781,
+										},
+										["n_dmg"] = 3781,
+										["n_min"] = 693,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 3781,
+										["c_max"] = 0,
+										["id"] = 3,
+										["r_dmg"] = 0,
+										["spellschool"] = 3,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["total"] = 3781.001486,
+							["serial"] = "",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1666880038,
+							["damage_taken"] = 0.001486,
+							["start_time"] = 1666880021,
+							["delay"] = 1666880038,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.00583,
+							["total"] = 34.00583,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Mxzq"] = 34,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 34.00583,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1666880013,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Elder Crag Coyote",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 34,
+										["targets"] = {
+											["Mxzq"] = 34,
+										},
+										["n_dmg"] = 34,
+										["n_min"] = 34,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 34,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "2729",
+							["serial"] = "Creature-0-5571-0-5544-2729-00005975CB",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1666879994,
+							["damage_taken"] = 0.00583,
+							["start_time"] = 1666880012,
+							["delay"] = 1666879994,
+							["tipo"] = 1,
+						}, -- [3]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.006884,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["damage_from"] = {
+								["Dustbelcher Ogre Mage"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "PET",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.006884,
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["dps_started"] = false,
+							["end_time"] = 1666880048,
+							["friendlyfire_total"] = 0,
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["grupo"] = true,
+							["total"] = 0.006884,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 21.006884,
+							["start_time"] = 1666880048,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [4]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 334,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 334,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 334,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Mxzq",
+							["buff_uptime"] = 21,
+							["pets"] = {
+							},
+							["classe"] = "HUNTER",
+							["last_event"] = 1666880013,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[23252] = {
+										["activedamt"] = 1,
+										["id"] = 23252,
+										["targets"] = {
+										},
+										["actived_at"] = 1666879992,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									[5384] = {
+										["activedamt"] = 0,
+										["id"] = 5384,
+										["targets"] = {
+										},
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[27044] = {
+										["activedamt"] = 1,
+										["id"] = 27044,
+										["targets"] = {
+										},
+										["uptime"] = 21,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["aID"] = "4465-01C7FC88",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 334,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Mxzq"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Mxzq", -- [1]
+				},
+				["tempo_start"] = 1666879992,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Elder Crag Coyote",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					3814.989924, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["TotalElapsedCombatTime"] = 162704.334,
+				["combat_counter"] = 11065,
+				["frags_need_refresh"] = false,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Mxzq"] = 0.004013,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 162704.334,
 				["player_last_events"] = {
 					["Mxzq"] = {
 						{
 							true, -- [1]
 							3, -- [2]
-							765, -- [3]
-							1666364324.995, -- [4]
-							7829, -- [5]
+							693, -- [3]
+							1666880037.921, -- [4]
+							6729, -- [5]
 							"Environment (Falling)", -- [6]
 							nil, -- [7]
 							3, -- [8]
@@ -10976,640 +4139,30 @@ _detalhes_database = {
 						}, -- [32]
 						["n"] = 2,
 					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 803434.443,
-				["contra"] = "Greater Rock Elemental",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Mxzq"] = 1071.003707,
-							["Bear <Mxzq>"] = 0.005002,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Mxzq"] = 2312.007814,
-							["Bear <Mxzq>"] = 2312.00756,
-						}, -- [1]
-					},
-				},
-			}, -- [17]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 165,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.005552,
-							["damage_from"] = {
-								["Environment (Falling)"] = true,
-							},
-							["targets"] = {
-								["Ridge Huntress"] = 2481,
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1296.005552,
-							["aID"] = "4465-01C7FC88",
-							["dps_started"] = false,
-							["total"] = 2481.005552,
-							["on_hold"] = false,
-							["last_event"] = 1666363815,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-									[75] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1296,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Ridge Huntress"] = 1296,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 1296,
-										["c_max"] = 1296,
-										["id"] = 75,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1296,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1666363815,
-							["last_dps"] = 1535.27571283501,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 3958.005552,
-							["start_time"] = 1666363813,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.007349,
-							["on_hold"] = false,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Ridge Huntress"] = 1185,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["colocacao"] = 2,
-							["classe"] = "PET",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1185.007349,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Pet-0-4480-0-178-7443-010074C845",
-							["dps_started"] = false,
-							["end_time"] = 1666363815,
-							["aID"] = "Pet-0-4480-0-178-7443-010074C845",
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 864,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Ridge Huntress"] = 864,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 864,
-										["c_max"] = 438,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 426,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[63900] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 321,
-										["targets"] = {
-											["Ridge Huntress"] = 321,
-										},
-										["n_dmg"] = 321,
-										["n_min"] = 321,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 321,
-										["c_max"] = 0,
-										["id"] = 63900,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["total"] = 1185.007349,
-							["last_event"] = 1666363814,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.007349,
-							["start_time"] = 1666363813,
-							["delay"] = 0,
-							["last_dps"] = 733.2966268391086,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001572,
-							["damage_from"] = {
-								["Mxzq"] = true,
-								["Bear <Mxzq>"] = true,
-							},
-							["targets"] = {
-							},
-							["serial"] = "Creature-0-4480-0-178-2732-0002CF5218",
-							["pets"] = {
-							},
-							["aID"] = "2732",
-							["monster"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.001572,
-							["damage_taken"] = 2481.001572,
-							["fight_component"] = true,
-							["end_time"] = 1666363815,
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1666363813,
-							["nome"] = "Ridge Huntress",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Bear"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1666363815,
-							["delay"] = 0,
-							["total"] = 0.001572,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 165,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorb"] = 0.00145,
-							["last_hps"] = 0,
-							["healing_from"] = {
-							},
-							["targets"] = {
-							},
-							["classe"] = "HUNTER",
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["totalover_without_pet"] = 0.00145,
-							["targets_overheal"] = {
-							},
-							["healing_taken"] = 0.00145,
-							["totalover"] = 72.00145,
-							["total_without_pet"] = 0.00145,
-							["iniciar_hps"] = false,
-							["start_time"] = 1666363814,
-							["aID"] = "4465-01C7FC88",
-							["end_time"] = 1666363815,
-							["total"] = 0.00145,
-							["heal_enemy_amt"] = 0,
-							["nome"] = "Mxzq",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-01C7FC88",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["totaldenied"] = 0.00145,
-							["delay"] = 0,
-							["last_event"] = 1666363814,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["targets_overheal"] = {
-								["Bear <Mxzq>"] = 72,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PET",
-							["totalover"] = 72.005865,
-							["total_without_pet"] = 0.005865,
-							["total"] = 0.005865,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4480-0-178-7443-010074C845",
-							["totalabsorb"] = 0.005865,
-							["last_hps"] = 0,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.005865,
-							["healing_taken"] = 0.005865,
-							["end_time"] = 1666363815,
-							["healing_from"] = {
-							},
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[62800] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bear <Mxzq>"] = 72,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Bear <Mxzq>"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 72,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 62800,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["aID"] = "Pet-0-4480-0-178-7443-010074C845",
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1666363814,
-							["start_time"] = 1666363814,
-							["totaldenied"] = 0.005865,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 165,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 165,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[27016] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 0,
-										["id"] = 27016,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-								"Bear <Mxzq>", -- [1]
-							},
-							["aID"] = "4465-01C7FC88",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[27044] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 2,
-										["id"] = 27044,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 0,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[75] = 1,
-								[27016] = 1,
-							},
-							["buff_uptime"] = 2,
-							["nome"] = "Mxzq",
-							["last_event"] = 1666363815,
-							["tipo"] = 4,
-							["classe"] = "HUNTER",
-							["serial"] = "Player-4465-01C7FC88",
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["tipo"] = 4,
-							["ownerName"] = "Mxzq",
-							["nome"] = "Bear <Mxzq>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								[63900] = 1,
-								[27047] = 1,
-							},
-							["aID"] = "Pet-0-4480-0-178-7443-010074C845",
-							["classe"] = "PET",
-							["serial"] = "Pet-0-4480-0-178-7443-010074C845",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 165,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxzq"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Mxzq", -- [1]
-				},
-				["CombatStartedAt"] = 803432.845,
-				["tempo_start"] = 1666363813,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 10865,
-				["playing_solo"] = true,
-				["totals"] = {
-					2480.965972, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = -0.003312999999998567,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					2481, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "16:50:15",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Ridge Huntress",
-				["TotalElapsedCombatTime"] = 9.701000000000931,
-				["CombatEndedAt"] = 803197.764,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "16:50:14",
-				["end_time"] = 802956.098,
-				["combat_id"] = 165,
-				["frags"] = {
-					["Ridge Huntress"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-					["Mxzq"] = {
+					["Bear <Mxzq>"] = {
 						{
 							true, -- [1]
-							3, -- [2]
-							24, -- [3]
-							1666363959.62, -- [4]
-							8626, -- [5]
-							"Environment (Falling)", -- [6]
+							1, -- [2]
+							21, -- [3]
+							1666880047.538, -- [4]
+							0, -- [5]
+							"Dustbelcher Ogre Mage", -- [6]
 							nil, -- [7]
-							3, -- [8]
+							1, -- [8]
 							false, -- [9]
 							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
 						}, -- [1]
 						{
-							true, -- [1]
-							3, -- [2]
-							402, -- [3]
-							1666364121.867, -- [4]
-							8626, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
 						}, -- [2]
 						{
-							true, -- [1]
-							3, -- [2]
-							99, -- [3]
-							1666364123.184, -- [4]
-							8245, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
 						}, -- [3]
 						{
-							true, -- [1]
-							3, -- [2]
-							902, -- [3]
-							1666364197.555, -- [4]
-							8626, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
 						}, -- [4]
 						{
-							true, -- [1]
-							3, -- [2]
-							34, -- [3]
-							1666364244.441, -- [4]
-							8230, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
 						}, -- [5]
 						{
-							true, -- [1]
-							3, -- [2]
-							2497, -- [3]
-							1666364282.893, -- [4]
-							8614, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
 						}, -- [6]
 						{
 						}, -- [7]
@@ -11663,15 +4216,4484 @@ _detalhes_database = {
 						}, -- [31]
 						{
 						}, -- [32]
-						["n"] = 7,
+						["n"] = 2,
 					},
+				},
+				["instance_type"] = "none",
+				["CombatEndedAt"] = 162704.334,
+				["data_inicio"] = "16:13:12",
+				["totals_grupo"] = {
+					0, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["data_fim"] = "16:13:34",
+				["combat_id"] = 334,
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+				},
+				["start_time"] = 162683.16,
+				["TimeData"] = {
+				},
+				["pvp"] = true,
+			}, -- [8]
+			{
+				{
+					["combatId"] = 333,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.004406,
+							["damage_from"] = {
+								["Ridge Stalker Patriarch"] = true,
+							},
+							["targets"] = {
+								["Ridge Stalker Patriarch"] = 1986,
+							},
+							["pets"] = {
+							},
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["end_time"] = 1666879935,
+							["classe"] = "PET",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1986.004406,
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 1986.004406,
+							["friendlyfire_total"] = 0,
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 238,
+										["targets"] = {
+											["Ridge Stalker Patriarch"] = 1126,
+										},
+										["n_dmg"] = 1126,
+										["n_min"] = 201,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 1126,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[53532] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 160,
+										["targets"] = {
+											["Ridge Stalker Patriarch"] = 160,
+										},
+										["n_dmg"] = 160,
+										["n_min"] = 160,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 160,
+										["c_max"] = 0,
+										["id"] = 53532,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[27049] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 197,
+										["targets"] = {
+											["Ridge Stalker Patriarch"] = 377,
+										},
+										["n_dmg"] = 377,
+										["n_min"] = 180,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 377,
+										["c_max"] = 0,
+										["id"] = 27049,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[63900] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 323,
+										["targets"] = {
+											["Ridge Stalker Patriarch"] = 323,
+										},
+										["n_dmg"] = 323,
+										["n_min"] = 323,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 323,
+										["c_max"] = 0,
+										["id"] = 63900,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 290.8192130620309,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 39.004406,
+							["start_time"] = 1666879929,
+							["delay"] = 0,
+							["last_event"] = 1666879934,
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001594,
+							["aID"] = "4465-01C7FC88",
+							["damage_from"] = {
+								["Environment (Falling)"] = true,
+								["Ridge Stalker Patriarch"] = true,
+							},
+							["targets"] = {
+								["Ridge Stalker Patriarch"] = 1986,
+							},
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["colocacao"] = 2,
+							["end_time"] = 1666879935,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.001594,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 1986.001594,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-01C7FC88",
+							["last_dps"] = 290.8188012887113,
+							["custom"] = 0,
+							["last_event"] = 1666879934,
+							["damage_taken"] = 766.001594,
+							["start_time"] = 1666879929,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003223,
+							["aID"] = "2734",
+							["damage_from"] = {
+								["Bear <Mxzq>"] = true,
+							},
+							["targets"] = {
+								["Mxzq"] = 37,
+								["Bear <Mxzq>"] = 39,
+							},
+							["end_time"] = 1666879992,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 76.00322299999999,
+							["monster"] = true,
+							["dps_started"] = false,
+							["total"] = 76.00322299999999,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Ridge Stalker Patriarch",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 19,
+										["targets"] = {
+											["Bear"] = 0,
+											["Mxzq"] = 37,
+											["Bear <Mxzq>"] = 39,
+										},
+										["n_dmg"] = 76,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 76,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["serial"] = "Creature-0-5571-0-5544-2734-00005A224C",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1666879984,
+							["damage_taken"] = 1986.003223,
+							["start_time"] = 1666879928,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 333,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "HUNTER",
+							["totalover"] = 57.005458,
+							["total_without_pet"] = 0.005458,
+							["total"] = 14.005458,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 2,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-01C7FC88",
+							["totalabsorb"] = 0.005458,
+							["last_hps"] = 6.286112208250645,
+							["targets"] = {
+								["Bear <Mxzq>"] = 14,
+							},
+							["totalover_without_pet"] = 0.005458,
+							["healing_taken"] = 0.005458,
+							["end_time"] = 1666879935,
+							["healing_from"] = {
+							},
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1666879930,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-01C7FC88",
+							["totaldenied"] = 0.005458,
+							["delay"] = 0,
+							["last_event"] = 1666879930,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["targets_overheal"] = {
+								["Bear <Mxzq>"] = 57,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PET",
+							["totalover"] = 57.008631,
+							["total_without_pet"] = 14.008631,
+							["total"] = 14.008631,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["totalabsorb"] = 0.008631,
+							["last_hps"] = 6.287536355467878,
+							["targets"] = {
+								["Bear <Mxzq>"] = 14,
+							},
+							["totalover_without_pet"] = 0.008631,
+							["healing_taken"] = 14.008631,
+							["start_time"] = 1666879930,
+							["fight_component"] = true,
+							["end_time"] = 1666879935,
+							["healing_from"] = {
+								["Bear <Mxzq>"] = true,
+							},
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[62800] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bear <Mxzq>"] = 57,
+										},
+										["n_max"] = 14,
+										["targets"] = {
+											["Bear <Mxzq>"] = 14,
+										},
+										["n_min"] = 14,
+										["counter"] = 1,
+										["overheal"] = 57,
+										["total"] = 14,
+										["c_max"] = 0,
+										["id"] = 62800,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 14,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["totaldenied"] = 0.008631,
+							["delay"] = 0,
+							["last_event"] = 1666879930,
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 333,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 333,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Mxzq",
+							["buff_uptime"] = 7,
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["last_event"] = 1666879935,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[27044] = {
+										["activedamt"] = 1,
+										["id"] = 27044,
+										["targets"] = {
+										},
+										["uptime"] = 7,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["aID"] = "4465-01C7FC88",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["classe"] = "PET",
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								[27047] = 1,
+								[53532] = 1,
+								[63900] = 1,
+								[27049] = 2,
+							},
+							["tipo"] = 4,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 333,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Mxzq"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Mxzq", -- [1]
+				},
+				["CombatStartedAt"] = 162674.943,
+				["tempo_start"] = 1666879928,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 11064,
+				["playing_solo"] = true,
+				["totals"] = {
+					2061.996546, -- [1]
+					14, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1986, -- [1]
+					14, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "16:12:15",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Ridge Stalker Patriarch",
+				["TotalElapsedCombatTime"] = 162625.612,
+				["CombatEndedAt"] = 162625.612,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Mxzq"] = 14.005458,
+							["Bear <Mxzq>"] = 14.008631,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Mxzq"] = 1986.001594,
+							["Bear <Mxzq>"] = 1986.004406,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 162625.612,
+				["combat_id"] = 333,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+					["Mxzq"] = {
+						{
+							true, -- [1]
+							3, -- [2]
+							729, -- [3]
+							1666879952.855, -- [4]
+							8626, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+							true, -- [1]
+							1, -- [2]
+							19, -- [3]
+							1666879983.638, -- [4]
+							8248, -- [5]
+							"Ridge Stalker Patriarch", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 3,
+					},
+				},
+				["data_inicio"] = "16:12:08",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Ridge Stalker Patriarch"] = 1,
+				},
+				["start_time"] = 162618.783,
+				["TimeData"] = {
+				},
+				["contra"] = "Ridge Stalker Patriarch",
+			}, -- [9]
+			{
+				{
+					["combatId"] = 332,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.005384,
+							["damage_from"] = {
+								["Environment (Falling)"] = true,
+								["Ridge Stalker Patriarch"] = true,
+								["Scorched Guardian"] = true,
+							},
+							["targets"] = {
+								["Scalding Whelp"] = 1761,
+							},
+							["total"] = 1761.005384,
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 573.005384,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1666879606,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-01C7FC88",
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[75] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 573,
+										["targets"] = {
+											["Scalding Whelp"] = 573,
+										},
+										["n_dmg"] = 573,
+										["n_min"] = 573,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 573,
+										["c_max"] = 0,
+										["id"] = 75,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-01C7FC88",
+							["last_dps"] = 412.8969247376903,
+							["custom"] = 0,
+							["last_event"] = 1666879604,
+							["damage_taken"] = 1373.005384,
+							["start_time"] = 1666879601,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.002568,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Scalding Whelp"] = 1188,
+							},
+							["friendlyfire"] = {
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 2,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1188.002568,
+							["on_hold"] = false,
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["dps_started"] = false,
+							["end_time"] = 1666879606,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 231,
+										["targets"] = {
+											["Scalding Whelp"] = 662,
+										},
+										["n_dmg"] = 662,
+										["n_min"] = 202,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 662,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[63900] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 321,
+										["targets"] = {
+											["Scalding Whelp"] = 321,
+										},
+										["n_dmg"] = 321,
+										["n_min"] = 321,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 321,
+										["c_max"] = 0,
+										["id"] = 63900,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[27049] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 205,
+										["targets"] = {
+											["Scalding Whelp"] = 205,
+										},
+										["n_dmg"] = 205,
+										["n_min"] = 205,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 205,
+										["c_max"] = 0,
+										["id"] = 27049,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["classe"] = "PET",
+							["total"] = 1188.002568,
+							["last_dps"] = 278.5469092624186,
+							["custom"] = 0,
+							["last_event"] = 1666879604,
+							["damage_taken"] = 0.002568,
+							["start_time"] = 1666879601,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004159,
+							["damage_from"] = {
+								["Mxzq"] = true,
+								["Bear <Mxzq>"] = true,
+							},
+							["targets"] = {
+							},
+							["total"] = 0.004159,
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.004159,
+							["fight_component"] = true,
+							["monster"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1666879606,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Scalding Whelp",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Bear"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[34083] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Mxzq"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 34083,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["aID"] = "2725",
+							["serial"] = "Creature-0-5571-0-5544-2725-00005A4C35",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1666879604,
+							["damage_taken"] = 1761.004159,
+							["start_time"] = 1666879606,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 332,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorb"] = 0.006241,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["targets_absorbs"] = {
+							},
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["totalover_without_pet"] = 0.006241,
+							["targets_overheal"] = {
+							},
+							["classe"] = "HUNTER",
+							["totalover"] = 71.006241,
+							["total_without_pet"] = 0.006241,
+							["iniciar_hps"] = false,
+							["healing_taken"] = 0.006241,
+							["end_time"] = 1666879606,
+							["total"] = 0.006241,
+							["aID"] = "4465-01C7FC88",
+							["heal_enemy_amt"] = 0,
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+								},
+							},
+							["grupo"] = true,
+							["start_time"] = 1666879602,
+							["heal_enemy"] = {
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["custom"] = 0,
+							["last_event"] = 1666879602,
+							["on_hold"] = false,
+							["totaldenied"] = 0.006241,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["targets_overheal"] = {
+								["Bear <Mxzq>"] = 71,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PET",
+							["totalover"] = 71.003354,
+							["total_without_pet"] = 0.003354,
+							["total"] = 0.003354,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["totalabsorb"] = 0.003354,
+							["last_hps"] = 0,
+							["targets"] = {
+							},
+							["totalover_without_pet"] = 0.003354,
+							["healing_taken"] = 0.003354,
+							["start_time"] = 1666879602,
+							["end_time"] = 1666879606,
+							["healing_from"] = {
+							},
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[62800] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bear <Mxzq>"] = 71,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Bear <Mxzq>"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 1,
+										["overheal"] = 71,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 62800,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["totaldenied"] = 0.003354,
+							["delay"] = 0,
+							["last_event"] = 1666879602,
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 332,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 332,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["spell_cast"] = {
+								[75] = 1,
+								[27019] = 1,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Mxzq",
+							["buff_uptime"] = 7,
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["last_event"] = 1666879606,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[27044] = {
+										["activedamt"] = 1,
+										["id"] = 27044,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[6150] = {
+										["activedamt"] = 1,
+										["id"] = 6150,
+										["targets"] = {
+										},
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["aID"] = "4465-01C7FC88",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["spell_cast"] = {
+								[27047] = 1,
+								[63900] = 1,
+								[27049] = 1,
+							},
+							["tipo"] = 4,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["monster"] = true,
+							["nome"] = "Scalding Whelp",
+							["flag_original"] = 68168,
+							["spell_cast"] = {
+								[34083] = 1,
+							},
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["serial"] = "Creature-0-5571-0-5544-2725-00005A4C35",
+							["aID"] = "2725",
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 332,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Mxzq"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Mxzq", -- [1]
+				},
+				["CombatStartedAt"] = 162617.455,
+				["tempo_start"] = 1666879601,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 11063,
+				["playing_solo"] = true,
+				["totals"] = {
+					1760.98061, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1761, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "16:06:46",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Scalding Whelp",
+				["TotalElapsedCombatTime"] = 14.57899999999791,
+				["CombatEndedAt"] = 162361.795,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Mxzq"] = 0.006241,
+							["Bear <Mxzq>"] = 0.003354,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Mxzq"] = 1761.005384,
+							["Bear <Mxzq>"] = 1188.002568,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 162296.644,
+				["combat_id"] = 332,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+					["Mxzq"] = {
+						{
+							true, -- [1]
+							1, -- [2]
+							92, -- [3]
+							1666879655.911, -- [4]
+							8016, -- [5]
+							"Scorched Guardian", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [1]
+						{
+							true, -- [1]
+							3, -- [2]
+							849, -- [3]
+							1666879671.024, -- [4]
+							7924, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [2]
+						{
+							true, -- [1]
+							3, -- [2]
+							409, -- [3]
+							1666879855.656, -- [4]
+							8626, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [3]
+						{
+							true, -- [1]
+							1, -- [2]
+							23, -- [3]
+							1666879926.15, -- [4]
+							8626, -- [5]
+							"Ridge Stalker Patriarch", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 5,
+					},
+				},
+				["data_inicio"] = "16:06:42",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Scalding Whelp"] = 1,
+				},
+				["start_time"] = 162292.379,
+				["TimeData"] = {
+				},
+				["contra"] = "Scalding Whelp",
+			}, -- [10]
+			{
+				{
+					["combatId"] = 331,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001582,
+							["damage_from"] = {
+								["Environment (Falling)"] = true,
+								["Shadowforge Darkweaver"] = true,
+								["Scalding Whelp"] = true,
+							},
+							["targets"] = {
+							},
+							["on_hold"] = false,
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.001582,
+							["aID"] = "4465-01C7FC88",
+							["dps_started"] = false,
+							["total"] = 0.001582,
+							["classe"] = "HUNTER",
+							["serial"] = "Player-4465-01C7FC88",
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["grupo"] = true,
+							["end_time"] = 1666879431,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 2897.001582,
+							["start_time"] = 1666879431,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = -2147483648,
+							["totalabsorbed"] = 0.008435,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Mxzq"] = 2842,
+							},
+							["pets"] = {
+							},
+							["serial"] = "",
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 2842.008435,
+							["on_hold"] = false,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["total"] = 2842.008435,
+							["end_time"] = 1666879601,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Environment (Falling)",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[3] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2251,
+										["targets"] = {
+											["Mxzq"] = 2842,
+										},
+										["n_dmg"] = 2842,
+										["n_min"] = 591,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 2842,
+										["c_max"] = 0,
+										["id"] = 3,
+										["r_dmg"] = 0,
+										["spellschool"] = 3,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["aID"] = "",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1666879573,
+							["damage_taken"] = 0.008435,
+							["start_time"] = 1666879457,
+							["delay"] = 1666879573,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 331,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 331,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 331,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Mxzq",
+							["buff_uptime"] = 20,
+							["pets"] = {
+							},
+							["classe"] = "HUNTER",
+							["last_event"] = 1666879431,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[27044] = {
+										["activedamt"] = 1,
+										["id"] = 27044,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[23252] = {
+										["activedamt"] = 1,
+										["id"] = 23252,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["aID"] = "4465-01C7FC88",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 331,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Mxzq"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Mxzq", -- [1]
+				},
+				["CombatStartedAt"] = 162290.163,
+				["tempo_start"] = 1666879421,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 11062,
+				["playing_solo"] = true,
+				["totals"] = {
+					2841.988557, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					0, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = false,
+				["instance_type"] = "none",
+				["data_fim"] = "16:03:51",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Unknown",
+				["TotalElapsedCombatTime"] = 9.728000000002794,
+				["CombatEndedAt"] = 162168.461,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Mxzq"] = 0.001582,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 162121.864,
+				["combat_id"] = 331,
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+					["Mxzq"] = {
+						{
+							true, -- [1]
+							1, -- [2]
+							20, -- [3]
+							1666879467.428, -- [4]
+							6766, -- [5]
+							"Shadowforge Darkweaver", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [1]
+						{
+							true, -- [1]
+							3, -- [2]
+							591, -- [3]
+							1666879572.835, -- [4]
+							7807, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [2]
+						{
+							true, -- [1]
+							1, -- [2]
+							35, -- [3]
+							1666879598.858, -- [4]
+							7479, -- [5]
+							"Scalding Whelp", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 4,
+					},
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "16:03:41",
+				["start_time"] = 162111.664,
+				["TimeData"] = {
+				},
+				["frags"] = {
+				},
+			}, -- [11]
+			{
+				{
+					["combatId"] = 330,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.008303,
+							["damage_from"] = {
+								["Lesser Rock Elemental"] = true,
+								["Ridge Huntress"] = true,
+							},
+							["targets"] = {
+							},
+							["on_hold"] = false,
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.008303,
+							["aID"] = "4465-01C7FC88",
+							["dps_started"] = false,
+							["total"] = 0.008303,
+							["classe"] = "HUNTER",
+							["serial"] = "Player-4465-01C7FC88",
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["grupo"] = true,
+							["end_time"] = 1666879359,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 59.008303,
+							["start_time"] = 1666879359,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.007015,
+							["total"] = 32.007015,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Mxzq"] = 32,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 32.007015,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1666879359,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Lesser Rock Elemental",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 32,
+										["targets"] = {
+											["Mxzq"] = 32,
+										},
+										["n_dmg"] = 32,
+										["n_min"] = 32,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "2735",
+							["serial"] = "Creature-0-5571-0-5544-2735-00005A69CD",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1666879346,
+							["damage_taken"] = 0.007015,
+							["start_time"] = 1666879358,
+							["delay"] = 1666879346,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 330,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 330,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 330,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Mxzq",
+							["buff_uptime"] = 26,
+							["pets"] = {
+							},
+							["classe"] = "HUNTER",
+							["last_event"] = 1666879359,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[27044] = {
+										["activedamt"] = 1,
+										["id"] = 27044,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[23252] = {
+										["activedamt"] = 1,
+										["id"] = 23252,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["aID"] = "4465-01C7FC88",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 330,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Mxzq"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Mxzq", -- [1]
+				},
+				["CombatStartedAt"] = 162108.964,
+				["tempo_start"] = 1666879346,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 11061,
+				["playing_solo"] = true,
+				["totals"] = {
+					31.993529, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					0, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = false,
+				["instance_type"] = "none",
+				["data_fim"] = "16:02:39",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Lesser Rock Elemental",
+				["TotalElapsedCombatTime"] = 162049.986,
+				["CombatEndedAt"] = 162049.986,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Mxzq"] = 0.008303,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 162049.986,
+				["combat_id"] = 330,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+					["Mxzq"] = {
+						{
+							true, -- [1]
+							1, -- [2]
+							27, -- [3]
+							1666879417.659, -- [4]
+							8626, -- [5]
+							"Ridge Huntress", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 2,
+					},
+				},
+				["data_inicio"] = "16:02:26",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+				},
+				["start_time"] = 162037.015,
+				["TimeData"] = {
+				},
+				["contra"] = "Lesser Rock Elemental",
+			}, -- [12]
+			{
+				{
+					["combatId"] = 329,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006103,
+							["damage_from"] = {
+								["Environment (Falling)"] = true,
+								["Rock Elemental"] = true,
+							},
+							["targets"] = {
+								["Dustbelcher Shaman"] = 1902,
+								["Dustbelcher Ogre Mage"] = 3411,
+							},
+							["total"] = 5313.006103,
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 3460.006103,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1666879182,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-01C7FC88",
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 574,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 574,
+										},
+										["n_dmg"] = 574,
+										["n_min"] = 574,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 574,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[27019] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 2362,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Dustbelcher Shaman"] = 1181,
+											["Dustbelcher Ogre Mage"] = 1181,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 2362,
+										["c_max"] = 1181,
+										["id"] = 27019,
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 1181,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[75] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 524,
+										["targets"] = {
+											["Dustbelcher Shaman"] = 524,
+										},
+										["n_dmg"] = 524,
+										["n_min"] = 524,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 524,
+										["c_max"] = 0,
+										["id"] = 75,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-01C7FC88",
+							["last_dps"] = 431.5307101200202,
+							["custom"] = 0,
+							["last_event"] = 1666879181,
+							["damage_taken"] = 1429.006103,
+							["start_time"] = 1666879170,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.003477,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Dustbelcher Shaman"] = 197,
+								["Dustbelcher Ogre Mage"] = 1656,
+							},
+							["friendlyfire"] = {
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 2,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1853.003477,
+							["on_hold"] = false,
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["dps_started"] = false,
+							["end_time"] = 1666879182,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 457,
+										["g_amt"] = 0,
+										["n_max"] = 265,
+										["targets"] = {
+											["Dustbelcher Shaman"] = 197,
+											["Dustbelcher Ogre Mage"] = 1169,
+										},
+										["n_dmg"] = 909,
+										["n_min"] = 197,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 1366,
+										["c_max"] = 457,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 457,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[63900] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 487,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 487,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 487,
+										["c_max"] = 487,
+										["id"] = 63900,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 487,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["classe"] = "PET",
+							["total"] = 1853.003477,
+							["last_dps"] = 150.5038561565297,
+							["custom"] = 0,
+							["last_event"] = 1666879181,
+							["damage_taken"] = 0.003477,
+							["start_time"] = 1666879170,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007427,
+							["damage_from"] = {
+								["Mxzq"] = true,
+								["Bear <Mxzq>"] = true,
+							},
+							["targets"] = {
+							},
+							["total"] = 0.007427,
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.007427,
+							["fight_component"] = true,
+							["monster"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1666879182,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Dustbelcher Ogre Mage",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[20822] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Bear"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 20822,
+										["r_dmg"] = 0,
+										["MISS"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 2,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["aID"] = "2720",
+							["serial"] = "Creature-0-5571-0-5544-2720-00005A89FC",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1666879178,
+							["damage_taken"] = 3411.007427,
+							["start_time"] = 1666879182,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004612,
+							["damage_from"] = {
+								["Mxzq"] = true,
+								["Bear <Mxzq>"] = true,
+							},
+							["targets"] = {
+							},
+							["total"] = 0.004612,
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.004612,
+							["fight_component"] = true,
+							["monster"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1666879182,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Dustbelcher Shaman",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["aID"] = "2718",
+							["serial"] = "Creature-0-5571-0-5544-2718-00005940C8",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 1902.004612,
+							["start_time"] = 1666879182,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [4]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 329,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorb"] = 0.006251,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["targets_absorbs"] = {
+							},
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["totalover_without_pet"] = 0.006251,
+							["targets_overheal"] = {
+							},
+							["classe"] = "HUNTER",
+							["totalover"] = 72.006251,
+							["total_without_pet"] = 0.006251,
+							["iniciar_hps"] = false,
+							["healing_taken"] = 0.006251,
+							["end_time"] = 1666879182,
+							["total"] = 0.006251,
+							["aID"] = "4465-01C7FC88",
+							["heal_enemy_amt"] = 0,
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+								},
+							},
+							["grupo"] = true,
+							["start_time"] = 1666879181,
+							["heal_enemy"] = {
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["custom"] = 0,
+							["last_event"] = 1666879170,
+							["on_hold"] = false,
+							["totaldenied"] = 0.006251,
+							["delay"] = 1666879170,
+							["tipo"] = 2,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["targets_overheal"] = {
+								["Bear <Mxzq>"] = 72,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PET",
+							["totalover"] = 72.008686,
+							["total_without_pet"] = 0.008686,
+							["total"] = 0.008686,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["totalabsorb"] = 0.008686,
+							["last_hps"] = 0,
+							["targets"] = {
+							},
+							["totalover_without_pet"] = 0.008686,
+							["healing_taken"] = 0.008686,
+							["start_time"] = 1666879181,
+							["end_time"] = 1666879182,
+							["healing_from"] = {
+							},
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[62800] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bear <Mxzq>"] = 72,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Bear <Mxzq>"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 1,
+										["overheal"] = 72,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 62800,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["totaldenied"] = 0.008686,
+							["delay"] = 1666879170,
+							["last_event"] = 1666879170,
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 329,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["received"] = 57.008812,
+							["resource"] = 0.008812,
+							["targets"] = {
+								["Mxzq"] = 57,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "HUNTER",
+							["passiveover"] = 46.008812,
+							["total"] = 57.008812,
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[53398] = {
+										["total"] = 57,
+										["id"] = 53398,
+										["totalover"] = 0,
+										["targets"] = {
+											["Mxzq"] = 57,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["alternatepower"] = 0.008812,
+							["last_event"] = 1666879178,
+							["aID"] = "4465-01C7FC88",
+							["tipo"] = 3,
+							["serial"] = "Player-4465-01C7FC88",
+							["totalover"] = 0.008812,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 329,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["spell_cast"] = {
+								[27019] = 1,
+								[75] = 1,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Mxzq",
+							["buff_uptime"] = 23,
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["last_event"] = 1666879182,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[27044] = {
+										["activedamt"] = 1,
+										["id"] = 27044,
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[53257] = {
+										["activedamt"] = 2,
+										["id"] = 53257,
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["aID"] = "4465-01C7FC88",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["spell_cast"] = {
+								[27047] = 1,
+								[63900] = 1,
+							},
+							["tipo"] = 4,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["monster"] = true,
+							["nome"] = "Dustbelcher Ogre Mage",
+							["flag_original"] = 2632,
+							["spell_cast"] = {
+								[20822] = 2,
+							},
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["serial"] = "Creature-0-5571-0-5544-2720-00005A8A75",
+							["aID"] = "2720",
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 329,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Mxzq"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Mxzq", -- [1]
+				},
+				["CombatStartedAt"] = 162030.978,
+				["tempo_start"] = 1666879170,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 11060,
+				["playing_solo"] = true,
+				["totals"] = {
+					5312.987378, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 57,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					5313, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 57,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:59:43",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Dustbelcher Shaman",
+				["TotalElapsedCombatTime"] = 161873.413,
+				["CombatEndedAt"] = 161873.413,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Mxzq"] = 0.006251,
+							["Bear <Mxzq>"] = 0.008686,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Mxzq"] = 5313.006103,
+							["Bear <Mxzq>"] = 1853.003477,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 161873.413,
+				["combat_id"] = 329,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+					["Mxzq"] = {
+						{
+							true, -- [1]
+							3, -- [2]
+							661, -- [3]
+							1666879261.89, -- [4]
+							8626, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+							true, -- [1]
+							3, -- [2]
+							732, -- [3]
+							1666879299.988, -- [4]
+							8383, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [2]
+						{
+							true, -- [1]
+							1, -- [2]
+							36, -- [3]
+							1666879339.673, -- [4]
+							8068, -- [5]
+							"Rock Elemental", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 4,
+					},
+				},
+				["data_inicio"] = "15:59:30",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Dustbelcher Shaman"] = 1,
+					["Dustbelcher Ogre Mage"] = 2,
+				},
+				["start_time"] = 161861.101,
+				["TimeData"] = {
+				},
+				["contra"] = "Dustbelcher Ogre Mage",
+			}, -- [13]
+			{
+				{
+					["combatId"] = 328,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.005592,
+							["damage_from"] = {
+								["Dustbelcher Ogre Mage"] = true,
+							},
+							["targets"] = {
+								["Dustbelcher Ogre Mage"] = 1568,
+							},
+							["total"] = 1568.005592,
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.005592,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1666879157,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-01C7FC88",
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-01C7FC88",
+							["last_dps"] = 392.5902834245427,
+							["custom"] = 0,
+							["last_event"] = 1666879156,
+							["damage_taken"] = 219.005592,
+							["start_time"] = 1666879153,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.00325,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Dustbelcher Ogre Mage"] = 1568,
+							},
+							["friendlyfire"] = {
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 2,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1568.00325,
+							["on_hold"] = false,
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["dps_started"] = false,
+							["end_time"] = 1666879157,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 231,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 865,
+										},
+										["n_dmg"] = 865,
+										["n_min"] = 202,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 865,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[27049] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 206,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 206,
+										},
+										["n_dmg"] = 206,
+										["n_min"] = 206,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 206,
+										["c_max"] = 0,
+										["id"] = 27049,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[53532] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 175,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 175,
+										},
+										["n_dmg"] = 175,
+										["n_min"] = 175,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 175,
+										["c_max"] = 0,
+										["id"] = 53532,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[63900] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 322,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 322,
+										},
+										["n_dmg"] = 322,
+										["n_min"] = 322,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 322,
+										["c_max"] = 0,
+										["id"] = 63900,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["classe"] = "PET",
+							["total"] = 1568.00325,
+							["last_dps"] = 392.5896970449733,
+							["custom"] = 0,
+							["last_event"] = 1666879156,
+							["damage_taken"] = 0.00325,
+							["start_time"] = 1666879153,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003947,
+							["total"] = 219.003947,
+							["damage_from"] = {
+								["Bear <Mxzq>"] = true,
+							},
+							["targets"] = {
+								["Mxzq"] = 219,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 219.003947,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1666879157,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Dustbelcher Ogre Mage",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[20822] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 219,
+										["targets"] = {
+											["Mxzq"] = 219,
+										},
+										["n_dmg"] = 219,
+										["n_min"] = 219,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 219,
+										["c_max"] = 0,
+										["id"] = 20822,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["aID"] = "2720",
+							["serial"] = "Creature-0-5571-0-5544-2720-00005A8714",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1666879155,
+							["damage_taken"] = 1568.003947,
+							["start_time"] = 1666879155,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 328,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorb"] = 0.004905,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["targets_absorbs"] = {
+							},
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["totalover_without_pet"] = 0.004905,
+							["targets_overheal"] = {
+							},
+							["classe"] = "HUNTER",
+							["totalover"] = 72.004905,
+							["total_without_pet"] = 0.004905,
+							["iniciar_hps"] = false,
+							["healing_taken"] = 0.004905,
+							["end_time"] = 1666879157,
+							["total"] = 0.004905,
+							["aID"] = "4465-01C7FC88",
+							["heal_enemy_amt"] = 0,
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+								},
+							},
+							["grupo"] = true,
+							["start_time"] = 1666879153,
+							["heal_enemy"] = {
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["custom"] = 0,
+							["last_event"] = 1666879153,
+							["on_hold"] = false,
+							["totaldenied"] = 0.004905,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["targets_overheal"] = {
+								["Bear <Mxzq>"] = 72,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PET",
+							["totalover"] = 72.003767,
+							["total_without_pet"] = 0.003767,
+							["total"] = 0.003767,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["totalabsorb"] = 0.003767,
+							["last_hps"] = 0,
+							["targets"] = {
+							},
+							["totalover_without_pet"] = 0.003767,
+							["healing_taken"] = 0.003767,
+							["start_time"] = 1666879153,
+							["end_time"] = 1666879157,
+							["healing_from"] = {
+							},
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[62800] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bear <Mxzq>"] = 72,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Bear <Mxzq>"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 1,
+										["overheal"] = 72,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 62800,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["totaldenied"] = 0.003767,
+							["delay"] = 0,
+							["last_event"] = 1666879153,
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 328,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 328,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Mxzq",
+							["buff_uptime"] = 4,
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["last_event"] = 1666879157,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[27044] = {
+										["activedamt"] = 1,
+										["id"] = 27044,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["aID"] = "4465-01C7FC88",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["spell_cast"] = {
+								[27047] = 1,
+								[27049] = 1,
+								[63900] = 1,
+								[53532] = 1,
+							},
+							["tipo"] = 4,
+							["aID"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["serial"] = "Pet-0-5571-0-5544-7443-030074C845",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["monster"] = true,
+							["nome"] = "Dustbelcher Ogre Mage",
+							["flag_original"] = 68168,
+							["spell_cast"] = {
+								[20822] = 1,
+							},
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["serial"] = "Creature-0-5571-0-5544-2720-00005A8714",
+							["aID"] = "2720",
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 328,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Mxzq"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Mxzq", -- [1]
+				},
+				["CombatStartedAt"] = 161860.717,
+				["tempo_start"] = 1666879153,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 11059,
+				["playing_solo"] = true,
+				["totals"] = {
+					1787, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1568, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:59:17",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Dustbelcher Ogre Mage",
+				["TotalElapsedCombatTime"] = 161847.954,
+				["CombatEndedAt"] = 161847.954,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Mxzq"] = 0.004905,
+							["Bear <Mxzq>"] = 0.003767,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Mxzq"] = 1568.005592,
+							["Bear <Mxzq>"] = 1568.00325,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 161847.954,
+				["combat_id"] = 328,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:59:13",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Dustbelcher Ogre Mage"] = 1,
+				},
+				["start_time"] = 161843.489,
+				["TimeData"] = {
+				},
+				["contra"] = "Dustbelcher Ogre Mage",
+			}, -- [14]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 327,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.005379,
+							["damage_from"] = {
+								["Dustbelcher Lord"] = true,
+							},
+							["targets"] = {
+								["Dustbelcher Lord"] = 6761,
+								["Dustbelcher Ogre Mage"] = 1592,
+							},
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1827.005379,
+							["colocacao"] = 1,
+							["classe"] = "HUNTER",
+							["dps_started"] = false,
+							["total"] = 8353.005379,
+							["aID"] = "4465-01C7FC88",
+							["end_time"] = 1666865855,
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["_ActorTable"] = {
+									[75] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1123,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Dustbelcher Lord"] = 1123,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 1123,
+										["c_max"] = 1123,
+										["id"] = 75,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 1123,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[27021] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 704,
+										["targets"] = {
+											["Dustbelcher Lord"] = 704,
+										},
+										["n_dmg"] = 704,
+										["n_min"] = 704,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 704,
+										["c_max"] = 0,
+										["id"] = 27021,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["last_event"] = 1666865852,
+							["last_dps"] = 403.8585011363943,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 44.005379,
+							["start_time"] = 1666865834,
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.00168,
+							["pets"] = {
+							},
+							["aID"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["total_without_pet"] = 6526.001679999999,
+							["dps_started"] = false,
+							["total"] = 6526.001679999999,
+							["colocacao"] = 2,
+							["on_hold"] = false,
+							["serial"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["damage_from"] = {
+								["Dustbelcher Lord"] = true,
+							},
+							["targets"] = {
+								["Dustbelcher Lord"] = 4934,
+								["Dustbelcher Ogre Mage"] = 1592,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1666865855,
+							["friendlyfire"] = {
+							},
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 1193,
+										["g_amt"] = 0,
+										["n_max"] = 237,
+										["targets"] = {
+											["Dustbelcher Lord"] = 2674,
+											["Dustbelcher Ogre Mage"] = 870,
+										},
+										["n_dmg"] = 2351,
+										["n_min"] = 198,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["total"] = 3544,
+										["c_max"] = 399,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 395,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 11,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[63900] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 334,
+										["targets"] = {
+											["Dustbelcher Lord"] = 977,
+											["Dustbelcher Ogre Mage"] = 330,
+										},
+										["n_dmg"] = 1307,
+										["n_min"] = 321,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 1307,
+										["c_max"] = 0,
+										["id"] = 63900,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[27049] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 791,
+										["g_amt"] = 0,
+										["n_max"] = 206,
+										["targets"] = {
+											["Dustbelcher Lord"] = 959,
+											["Dustbelcher Ogre Mage"] = 392,
+										},
+										["n_dmg"] = 560,
+										["n_min"] = 175,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 1351,
+										["c_max"] = 399,
+										["id"] = 27049,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 392,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[53532] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 164,
+										["targets"] = {
+											["Dustbelcher Lord"] = 324,
+										},
+										["n_dmg"] = 324,
+										["n_min"] = 160,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 324,
+										["c_max"] = 0,
+										["id"] = 53532,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["classe"] = "PET",
+							["last_event"] = 1666865852,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 246.00168,
+							["start_time"] = 1666865834,
+							["delay"] = 0,
+							["last_dps"] = 315.5249083790146,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.00554,
+							["damage_from"] = {
+								["Mxzq"] = true,
+								["Bear <Mxzq>"] = true,
+							},
+							["targets"] = {
+								["Mxzq"] = 44,
+								["Bear <Mxzq>"] = 246,
+							},
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-5563-0-13099-2719-00005A581F",
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 290.00554,
+							["friendlyfire"] = {
+							},
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["total"] = 290.00554,
+							["aID"] = "2719",
+							["damage_taken"] = 6761.00554,
+							["nome"] = "Dustbelcher Lord",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 44,
+										["targets"] = {
+											["Bear"] = 0,
+											["Mxzq"] = 44,
+											["Bear <Mxzq>"] = 246,
+										},
+										["n_dmg"] = 290,
+										["n_min"] = 23,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 290,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 3,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 8,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[9128] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 9128,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[13730] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Bear"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 13730,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["end_time"] = 1666865855,
+							["on_hold"] = false,
+							["last_event"] = 1666865852,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["start_time"] = 1666865839,
+							["delay"] = 0,
+							["monster"] = true,
+						}, -- [3]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.008248,
+							["damage_from"] = {
+								["Bear <Mxzq>"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-5563-0-13099-2720-00005A57DE",
+							["aID"] = "2720",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.008248,
+							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["end_time"] = 1666865855,
+							["damage_taken"] = 1592.008248,
+							["fight_component"] = true,
+							["nome"] = "Dustbelcher Ogre Mage",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Bear"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[20822] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Mxzq"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 20822,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["total"] = 0.008248,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1666865837,
+							["monster"] = true,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["start_time"] = 1666865855,
+							["delay"] = 0,
+							["on_hold"] = false,
+						}, -- [4]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 327,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 4369,
+							["targets_overheal"] = {
+								["Bear <Mxzq>"] = 144,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PET",
+							["totalover"] = 144.004349,
+							["total_without_pet"] = 143.004349,
+							["total"] = 143.004349,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["totalabsorb"] = 0.004349,
+							["last_hps"] = 6.914100904127507,
+							["targets"] = {
+								["Bear <Mxzq>"] = 143,
+							},
+							["totalover_without_pet"] = 0.004349,
+							["healing_taken"] = 143.004349,
+							["fight_component"] = true,
+							["end_time"] = 1666865855,
+							["healing_from"] = {
+								["Bear <Mxzq>"] = true,
+							},
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["_ActorTable"] = {
+									[62800] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bear <Mxzq>"] = 144,
+										},
+										["n_max"] = 72,
+										["targets"] = {
+											["Bear <Mxzq>"] = 143,
+										},
+										["n_min"] = 71,
+										["counter"] = 4,
+										["overheal"] = 144,
+										["total"] = 143,
+										["c_max"] = 0,
+										["id"] = 62800,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 4,
+										["n_curado"] = 143,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["tipo"] = 2,
+							["start_time"] = 1666865834,
+							["custom"] = 0,
+							["last_event"] = 1666865850,
+							["aID"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["totaldenied"] = 0.004349,
+							["delay"] = 0,
+							["heal_enemy_amt"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = 1300,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "HUNTER",
+							["totalover"] = 144.003089,
+							["total_without_pet"] = 0.003089,
+							["total"] = 143.003089,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 2,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-01C7FC88",
+							["totalabsorb"] = 0.003089,
+							["last_hps"] = 6.914039984531703,
+							["targets"] = {
+								["Bear <Mxzq>"] = 143,
+							},
+							["totalover_without_pet"] = 0.003089,
+							["healing_taken"] = 0.003089,
+							["end_time"] = 1666865855,
+							["healing_from"] = {
+							},
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["aID"] = "4465-01C7FC88",
+							["heal_enemy_amt"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1666865850,
+							["start_time"] = 1666865834,
+							["totaldenied"] = 0.003089,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 327,
+					["_ActorTable"] = {
+						{
+							["received"] = 114.004177,
+							["resource"] = 0.004177,
+							["targets"] = {
+								["Mxzq"] = 114,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "HUNTER",
+							["passiveover"] = 0.004177,
+							["total"] = 114.004177,
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["_ActorTable"] = {
+									[53398] = {
+										["total"] = 114,
+										["id"] = 53398,
+										["totalover"] = 0,
+										["targets"] = {
+											["Mxzq"] = 114,
+										},
+										["counter"] = 2,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["alternatepower"] = 0.004177,
+							["last_event"] = 1666865849,
+							["aID"] = "4465-01C7FC88",
+							["tipo"] = 3,
+							["serial"] = "Player-4465-01C7FC88",
+							["totalover"] = 0.004177,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 327,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Mxzq",
+							["spell_cast"] = {
+								[75] = 1,
+								[27021] = 1,
+							},
+							["classe"] = "HUNTER",
+							["buff_uptime"] = 41,
+							["last_event"] = 1666879113,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[53257] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 0,
+										["id"] = 53257,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[70893] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 20,
+										["id"] = 70893,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[75447] = {
+										["activedamt"] = 3,
+										["id"] = 75447,
+										["targets"] = {
+										},
+										["actived_at"] = 1666879113,
+										["uptime"] = 0,
+										["appliedamt"] = 3,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									[57475] = {
+										["activedamt"] = 2,
+										["id"] = 57475,
+										["targets"] = {
+										},
+										["actived_at"] = 1666879113,
+										["uptime"] = 0,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									[27044] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 21,
+										["id"] = 27044,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["aID"] = "4465-01C7FC88",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["classe"] = "PET",
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["aID"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["last_event"] = 0,
+							["spell_cast"] = {
+								[27047] = 4,
+								[27049] = 5,
+								[63900] = 3,
+								[53532] = 1,
+							},
+							["serial"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["monster"] = true,
+							["tipo"] = 4,
+							["nome"] = "Dustbelcher Ogre Mage",
+							["flag_original"] = 68168,
+							["spell_cast"] = {
+								[20822] = 1,
+							},
+							["fight_component"] = true,
+							["pets"] = {
+							},
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5563-0-13099-2720-00005A57DE",
+							["aID"] = "2720",
+						}, -- [3]
+						{
+							["monster"] = true,
+							["tipo"] = 4,
+							["nome"] = "Dustbelcher Lord",
+							["flag_original"] = 2632,
+							["spell_cast"] = {
+								[9128] = 1,
+								[13730] = 1,
+							},
+							["fight_component"] = true,
+							["pets"] = {
+							},
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5563-0-13099-2719-0000DA5804",
+							["aID"] = "2719",
+						}, -- [4]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 327,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Mxzq"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Mxzq", -- [1]
+				},
+				["CombatStartedAt"] = 161842.699,
+				["tempo_start"] = 1666865834,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					8643, -- [1]
+					143, -- [2]
+					{
+						0, -- [1]
+						[0] = 114,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "12:17:35",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Dustbelcher Lord",
+				["TotalElapsedCombatTime"] = 148546.294,
+				["CombatEndedAt"] = 148546.294,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "12:17:15",
+				["end_time"] = 148546.294,
+				["combat_id"] = 327,
+				["frags"] = {
+					["Dustbelcher Ogre Mage"] = 1,
+					["Dustbelcher Lord"] = 3,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 11056,
+				["totals_grupo"] = {
+					8353, -- [1]
+					143, -- [2]
+					{
+						0, -- [1]
+						[0] = 114,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["CombatSkillCache"] = {
 				},
 				["TimeData"] = {
 				},
-				["start_time"] = 802954.482,
-				["contra"] = "Ridge Huntress",
+				["start_time"] = 148525.611,
+				["contra"] = "Dustbelcher Ogre Mage",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -11683,14 +8705,1818 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Mxzq"] = 0.00145,
-							["Bear <Mxzq>"] = 0.005865,
+							["Mxzq"] = 143.003089,
+							["Bear <Mxzq>"] = 143.004349,
 						}, -- [1]
 					},
 					["damage"] = {
 						{
-							["Mxzq"] = 2481.005552,
-							["Bear <Mxzq>"] = 1185.007349,
+							["Mxzq"] = 8353.005379,
+							["Bear <Mxzq>"] = 6526.001679999999,
+						}, -- [1]
+					},
+				},
+			}, -- [15]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 326,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001063,
+							["damage_from"] = {
+								["Dustbelcher Ogre Mage"] = true,
+							},
+							["targets"] = {
+								["Dustbelcher Ogre Mage"] = 1903,
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1181.001063,
+							["aID"] = "4465-01C7FC88",
+							["dps_started"] = false,
+							["total"] = 1903.001063,
+							["on_hold"] = false,
+							["last_event"] = 1666865828,
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["_ActorTable"] = {
+									[27019] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1181,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 1181,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 1181,
+										["c_max"] = 1181,
+										["id"] = 27019,
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 1181,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["end_time"] = 1666865829,
+							["last_dps"] = 660.7642579850427,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 34.001063,
+							["start_time"] = 1666865826,
+							["delay"] = 0,
+							["friendlyfire_total"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.008178,
+							["on_hold"] = false,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Dustbelcher Ogre Mage"] = 722,
+							},
+							["pets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["colocacao"] = 2,
+							["classe"] = "PET",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 722.008178,
+							["friendlyfire"] = {
+							},
+							["serial"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["dps_started"] = false,
+							["end_time"] = 1666865829,
+							["aID"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 242,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 242,
+										},
+										["n_dmg"] = 242,
+										["n_min"] = 242,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 242,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[63900] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 480,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 480,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 480,
+										["c_max"] = 480,
+										["id"] = 63900,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 480,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["total"] = 722.008178,
+							["last_event"] = 1666865828,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.008178,
+							["start_time"] = 1666865827,
+							["delay"] = 0,
+							["last_dps"] = 250.6972840273724,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003998,
+							["damage_from"] = {
+								["Mxzq"] = true,
+								["Bear <Mxzq>"] = true,
+							},
+							["targets"] = {
+								["Mxzq"] = 34,
+							},
+							["serial"] = "Creature-0-5563-0-13099-2720-00005A57A9",
+							["pets"] = {
+							},
+							["aID"] = "2720",
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 34.003998,
+							["damage_taken"] = 1903.003998,
+							["monster"] = true,
+							["end_time"] = 1666865834,
+							["on_hold"] = false,
+							["last_event"] = 1666865832,
+							["nome"] = "Dustbelcher Ogre Mage",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 34,
+										["targets"] = {
+											["Mxzq"] = 34,
+										},
+										["n_dmg"] = 34,
+										["n_min"] = 34,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 34,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["start_time"] = 1666865829,
+							["delay"] = 0,
+							["total"] = 34.003998,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 326,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorb"] = 0.005708,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["classe"] = "HUNTER",
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["totalover_without_pet"] = 0.005708,
+							["targets_overheal"] = {
+							},
+							["healing_taken"] = 0.005708,
+							["totalover"] = 72.005708,
+							["total_without_pet"] = 0.005708,
+							["iniciar_hps"] = false,
+							["start_time"] = 1666865827,
+							["aID"] = "4465-01C7FC88",
+							["end_time"] = 1666865829,
+							["total"] = 0.005708,
+							["heal_enemy_amt"] = 0,
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["totaldenied"] = 0.005708,
+							["delay"] = 0,
+							["last_event"] = 1666865827,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["targets_overheal"] = {
+								["Bear <Mxzq>"] = 72,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PET",
+							["totalover"] = 72.001863,
+							["total_without_pet"] = 0.001863,
+							["total"] = 0.001863,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["serial"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["totalabsorb"] = 0.001863,
+							["last_hps"] = 0,
+							["targets"] = {
+							},
+							["totalover_without_pet"] = 0.001863,
+							["healing_taken"] = 0.001863,
+							["end_time"] = 1666865829,
+							["healing_from"] = {
+							},
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["_ActorTable"] = {
+									[62800] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bear <Mxzq>"] = 72,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Bear <Mxzq>"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 1,
+										["overheal"] = 72,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 62800,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["aID"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["heal_enemy_amt"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1666865827,
+							["start_time"] = 1666865827,
+							["totaldenied"] = 0.001863,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 326,
+					["_ActorTable"] = {
+						{
+							["received"] = 57.005658,
+							["resource"] = 0.005658,
+							["targets"] = {
+								["Mxzq"] = 57,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "HUNTER",
+							["passiveover"] = 0.005658,
+							["total"] = 57.005658,
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["_ActorTable"] = {
+									[53398] = {
+										["total"] = 57,
+										["id"] = 53398,
+										["totalover"] = 0,
+										["targets"] = {
+											["Mxzq"] = 57,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["alternatepower"] = 0.005658,
+							["last_event"] = 1666865828,
+							["aID"] = "4465-01C7FC88",
+							["tipo"] = 3,
+							["serial"] = "Player-4465-01C7FC88",
+							["totalover"] = 0.005658,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 326,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Mxzq",
+							["buff_uptime"] = 6,
+							["classe"] = "HUNTER",
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["last_event"] = 1666865829,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[27044] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 27044,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[53257] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 3,
+										["id"] = 53257,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["aID"] = "4465-01C7FC88",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["tipo"] = 4,
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								[27047] = 1,
+								[63900] = 1,
+								[61685] = 1,
+							},
+							["aID"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["classe"] = "PET",
+							["serial"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 326,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Mxzq"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Mxzq", -- [1]
+				},
+				["CombatStartedAt"] = 148523.96,
+				["tempo_start"] = 1666865826,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 11055,
+				["playing_solo"] = true,
+				["totals"] = {
+					1937, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 57,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1903, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 57,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "12:17:10",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Dustbelcher Ogre Mage",
+				["TotalElapsedCombatTime"] = 148520.708,
+				["CombatEndedAt"] = 148520.708,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "12:17:07",
+				["end_time"] = 148520.708,
+				["combat_id"] = 326,
+				["frags"] = {
+					["Dustbelcher Ogre Mage"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+					["Mxzq"] = {
+						{
+							true, -- [1]
+							1, -- [2]
+							34, -- [3]
+							1666865833.257, -- [4]
+							8626, -- [5]
+							"Dustbelcher Ogre Mage", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 2,
+					},
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 148517.828,
+				["contra"] = "Dustbelcher Ogre Mage",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Mxzq"] = 0.005708,
+							["Bear <Mxzq>"] = 0.001863,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Mxzq"] = 1903.001063,
+							["Bear <Mxzq>"] = 722.008178,
+						}, -- [1]
+					},
+				},
+			}, -- [16]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 325,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.008979,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Dustbelcher Ogre Mage"] = 3285,
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1172.008979,
+							["aID"] = "4465-01C7FC88",
+							["dps_started"] = false,
+							["total"] = 3285.008979,
+							["on_hold"] = false,
+							["last_event"] = 1666865816,
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["_ActorTable"] = {
+									[27019] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 591,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 591,
+										},
+										["n_dmg"] = 591,
+										["n_min"] = 591,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 591,
+										["c_max"] = 0,
+										["id"] = 27019,
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[75] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 581,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 581,
+										},
+										["n_dmg"] = 581,
+										["n_min"] = 581,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 581,
+										["c_max"] = 0,
+										["id"] = 75,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["end_time"] = 1666865817,
+							["last_dps"] = 481.743507697826,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.008979,
+							["start_time"] = 1666865809,
+							["delay"] = 0,
+							["friendlyfire_total"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.004735,
+							["on_hold"] = false,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Dustbelcher Ogre Mage"] = 2113,
+							},
+							["pets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["colocacao"] = 2,
+							["classe"] = "PET",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 2113.004735,
+							["friendlyfire"] = {
+							},
+							["serial"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["dps_started"] = false,
+							["end_time"] = 1666865817,
+							["aID"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 1333,
+										["g_amt"] = 0,
+										["n_max"] = 243,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 1791,
+										},
+										["n_dmg"] = 458,
+										["n_min"] = 215,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 1791,
+										["c_max"] = 465,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 410,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[63900] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 322,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 322,
+										},
+										["n_dmg"] = 322,
+										["n_min"] = 322,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 322,
+										["c_max"] = 0,
+										["id"] = 63900,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["total"] = 2113.004735,
+							["last_event"] = 1666865816,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.004735,
+							["start_time"] = 1666865809,
+							["delay"] = 0,
+							["last_dps"] = 309.8701767113238,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.004538,
+							["damage_from"] = {
+								["Mxzq"] = true,
+								["Bear <Mxzq>"] = true,
+							},
+							["targets"] = {
+							},
+							["serial"] = "Creature-0-5563-0-13099-2720-00005A5845",
+							["pets"] = {
+							},
+							["aID"] = "2720",
+							["monster"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.004538,
+							["damage_taken"] = 3285.004538,
+							["fight_component"] = true,
+							["end_time"] = 1666865817,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1666865812,
+							["nome"] = "Dustbelcher Ogre Mage",
+							["spells"] = {
+								["_ActorTable"] = {
+									[20822] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Bear"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 20822,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["friendlyfire_total"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["start_time"] = 1666865817,
+							["delay"] = 0,
+							["total"] = 0.004538,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 325,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorb"] = 0.0044,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["classe"] = "HUNTER",
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["totalover_without_pet"] = 0.0044,
+							["targets_overheal"] = {
+							},
+							["healing_taken"] = 0.0044,
+							["totalover"] = 144.0044,
+							["total_without_pet"] = 0.0044,
+							["iniciar_hps"] = false,
+							["start_time"] = 1666865810,
+							["aID"] = "4465-01C7FC88",
+							["end_time"] = 1666865817,
+							["total"] = 0.0044,
+							["heal_enemy_amt"] = 0,
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["totaldenied"] = 0.0044,
+							["delay"] = 0,
+							["last_event"] = 1666865815,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["targets_overheal"] = {
+								["Bear <Mxzq>"] = 144,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PET",
+							["totalover"] = 144.002503,
+							["total_without_pet"] = 0.002503,
+							["total"] = 0.002503,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["serial"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["totalabsorb"] = 0.002503,
+							["last_hps"] = 0,
+							["targets"] = {
+							},
+							["totalover_without_pet"] = 0.002503,
+							["healing_taken"] = 0.002503,
+							["end_time"] = 1666865817,
+							["healing_from"] = {
+							},
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["_ActorTable"] = {
+									[62800] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bear <Mxzq>"] = 144,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Bear <Mxzq>"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 2,
+										["overheal"] = 144,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 62800,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["aID"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["heal_enemy_amt"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1666865815,
+							["start_time"] = 1666865810,
+							["totaldenied"] = 0.002503,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 325,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 325,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Mxzq",
+							["spell_cast"] = {
+								[75] = 1,
+								[27019] = 1,
+							},
+							["classe"] = "HUNTER",
+							["buff_uptime"] = 8,
+							["last_event"] = 1666865817,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[27044] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 27044,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["aID"] = "4465-01C7FC88",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["tipo"] = 4,
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								[27047] = 2,
+								[63900] = 1,
+							},
+							["aID"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["classe"] = "PET",
+							["serial"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["monster"] = true,
+							["tipo"] = 4,
+							["nome"] = "Dustbelcher Ogre Mage",
+							["flag_original"] = 2632,
+							["spell_cast"] = {
+								[20822] = 1,
+							},
+							["fight_component"] = true,
+							["pets"] = {
+							},
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5563-0-13099-2720-00005A5845",
+							["aID"] = "2720",
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 325,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Mxzq"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Mxzq", -- [1]
+				},
+				["CombatStartedAt"] = 148517.078,
+				["tempo_start"] = 1666865809,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 11054,
+				["playing_solo"] = true,
+				["totals"] = {
+					3285, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					3285, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "12:16:58",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Dustbelcher Ogre Mage",
+				["TotalElapsedCombatTime"] = 148508.595,
+				["CombatEndedAt"] = 148508.595,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "12:16:50",
+				["end_time"] = 148508.595,
+				["combat_id"] = 325,
+				["frags"] = {
+					["Dustbelcher Ogre Mage"] = 2,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 148500.992,
+				["contra"] = "Dustbelcher Ogre Mage",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Mxzq"] = 0.0044,
+							["Bear <Mxzq>"] = 0.002503,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Mxzq"] = 3285.008979,
+							["Bear <Mxzq>"] = 2113.004735,
+						}, -- [1]
+					},
+				},
+			}, -- [17]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 324,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.006369,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Dustbelcher Ogre Mage"] = 1664,
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.006369,
+							["aID"] = "4465-01C7FC88",
+							["dps_started"] = false,
+							["total"] = 1664.006369,
+							["on_hold"] = false,
+							["last_event"] = 1666865511,
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["end_time"] = 1666865512,
+							["last_dps"] = 524.9231447928322,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.006369,
+							["start_time"] = 1666865508,
+							["delay"] = 0,
+							["friendlyfire_total"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.008332,
+							["on_hold"] = false,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Dustbelcher Ogre Mage"] = 1664,
+							},
+							["pets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["colocacao"] = 1,
+							["classe"] = "PET",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1664.008332,
+							["friendlyfire"] = {
+							},
+							["serial"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["dps_started"] = false,
+							["end_time"] = 1666865512,
+							["aID"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 478,
+										["g_amt"] = 0,
+										["n_max"] = 232,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 1131,
+										},
+										["n_dmg"] = 653,
+										["n_min"] = 206,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 1131,
+										["c_max"] = 478,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 478,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[63900] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 324,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 324,
+										},
+										["n_dmg"] = 324,
+										["n_min"] = 324,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 324,
+										["c_max"] = 0,
+										["id"] = 63900,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[27049] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 209,
+										["targets"] = {
+											["Dustbelcher Ogre Mage"] = 209,
+										},
+										["n_dmg"] = 209,
+										["n_min"] = 209,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 209,
+										["c_max"] = 0,
+										["id"] = 27049,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["total"] = 1664.008332,
+							["last_event"] = 1666865511,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.008332,
+							["start_time"] = 1666865508,
+							["delay"] = 0,
+							["last_dps"] = 524.9237640357344,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007011,
+							["damage_from"] = {
+								["Bear <Mxzq>"] = true,
+							},
+							["targets"] = {
+							},
+							["serial"] = "Creature-0-5563-0-13099-2720-00005A274F",
+							["pets"] = {
+							},
+							["aID"] = "2720",
+							["monster"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.007011,
+							["damage_taken"] = 1664.007011,
+							["fight_component"] = true,
+							["end_time"] = 1666865512,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1666865511,
+							["nome"] = "Dustbelcher Ogre Mage",
+							["spells"] = {
+								["_ActorTable"] = {
+									[20822] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Bear"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 20822,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["friendlyfire_total"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["start_time"] = 1666865512,
+							["delay"] = 0,
+							["total"] = 0.007011,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 324,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorb"] = 0.006298,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["classe"] = "HUNTER",
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["totalover_without_pet"] = 0.006298,
+							["targets_overheal"] = {
+							},
+							["healing_taken"] = 0.006298,
+							["totalover"] = 71.006298,
+							["total_without_pet"] = 0.006298,
+							["iniciar_hps"] = false,
+							["start_time"] = 1666865508,
+							["aID"] = "4465-01C7FC88",
+							["end_time"] = 1666865512,
+							["total"] = 0.006298,
+							["heal_enemy_amt"] = 0,
+							["nome"] = "Mxzq",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["totaldenied"] = 0.006298,
+							["delay"] = 0,
+							["last_event"] = 1666865508,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["targets_overheal"] = {
+								["Bear <Mxzq>"] = 71,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PET",
+							["totalover"] = 71.002874,
+							["total_without_pet"] = 0.002874,
+							["total"] = 0.002874,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["serial"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["totalabsorb"] = 0.002874,
+							["last_hps"] = 0,
+							["targets"] = {
+							},
+							["totalover_without_pet"] = 0.002874,
+							["healing_taken"] = 0.002874,
+							["end_time"] = 1666865512,
+							["healing_from"] = {
+							},
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["spells"] = {
+								["_ActorTable"] = {
+									[62800] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Bear <Mxzq>"] = 71,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Bear <Mxzq>"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 1,
+										["overheal"] = 71,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 62800,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["aID"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["heal_enemy_amt"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1666865508,
+							["start_time"] = 1666865508,
+							["totaldenied"] = 0.002874,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 324,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 324,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Mxzq",
+							["buff_uptime"] = 4,
+							["classe"] = "HUNTER",
+							["pets"] = {
+								"Bear <Mxzq>", -- [1]
+							},
+							["last_event"] = 1666865512,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[27044] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 4,
+										["id"] = 27044,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-4465-01C7FC88",
+							["aID"] = "4465-01C7FC88",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["tipo"] = 4,
+							["ownerName"] = "Mxzq",
+							["nome"] = "Bear <Mxzq>",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								[27047] = 1,
+								[63900] = 1,
+								[27049] = 1,
+							},
+							["aID"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["classe"] = "PET",
+							["serial"] = "Pet-0-5563-0-13099-7443-010074C845",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["monster"] = true,
+							["tipo"] = 4,
+							["nome"] = "Dustbelcher Ogre Mage",
+							["flag_original"] = 68168,
+							["spell_cast"] = {
+								[20822] = 1,
+							},
+							["fight_component"] = true,
+							["pets"] = {
+							},
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5563-0-13099-2720-00005A274F",
+							["aID"] = "2720",
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 324,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Mxzq"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Mxzq", -- [1]
+				},
+				["CombatStartedAt"] = 148500.365,
+				["tempo_start"] = 1666865508,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 11053,
+				["playing_solo"] = true,
+				["totals"] = {
+					1664, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1664, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "12:11:53",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Dustbelcher Ogre Mage",
+				["TotalElapsedCombatTime"] = 148204.215,
+				["CombatEndedAt"] = 148204.215,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "12:11:49",
+				["end_time"] = 148204.215,
+				["combat_id"] = 324,
+				["frags"] = {
+					["Dustbelcher Ogre Mage"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 148199.832,
+				["contra"] = "Dustbelcher Ogre Mage",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Mxzq"] = 0.006298,
+							["Bear <Mxzq>"] = 0.002874,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Mxzq"] = 1664.006369,
+							["Bear <Mxzq>"] = 1664.008332,
 						}, -- [1]
 					},
 				},
@@ -11705,9 +10531,9 @@ _detalhes_database = {
 		["show_options"] = false,
 		["pos"] = {
 		},
-		["height"] = 18,
 		["cooldowns"] = {
 		},
+		["height"] = 18,
 		["framme_locked"] = false,
 		["show_conditions"] = {
 			["only_inside_instance"] = true,
@@ -11794,11 +10620,11 @@ _detalhes_database = {
 			["last_section_selected"] = "main",
 			["author"] = "Terciob",
 			["window_scale"] = 1,
-			["hide_on_combat"] = false,
-			["show_icon"] = 5,
-			["opened"] = 0,
 			["encounter_timers_dbm"] = {
 			},
+			["show_icon"] = 5,
+			["opened"] = 0,
+			["hide_on_combat"] = false,
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["font_color"] = {
@@ -11815,23 +10641,28 @@ _detalhes_database = {
 				1, -- [3]
 				0.5, -- [4]
 			},
+			["point"] = "RIGHT",
 			["main_frame_size"] = {
 				249.999740600586, -- [1]
 				89.9999694824219, -- [2]
 			},
-			["arrow_anchor_y"] = 0,
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
 				["hide"] = true,
 			},
-			["main_frame_locked"] = true,
+			["row_height"] = 18,
 			["arrow_anchor_x"] = 0,
-			["author"] = "Details! Team",
+			["scale"] = 1,
 			["row_texture"] = "Glamour2",
 			["square_grow_direction"] = "right",
-			["font_size"] = 10,
-			["main_frame_strata"] = "LOW",
+			["use_square_mode"] = false,
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
@@ -11843,14 +10674,9 @@ _detalhes_database = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["use_spark"] = false,
+			["font_size"] = 10,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -11858,18 +10684,28 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = -6.103515625e-05,
 				["x"] = 0.00311279296875,
-				["attribute_type"] = 1,
-				["update_speed"] = 0.05,
 				["size"] = 32,
+				["update_speed"] = 0.05,
+				["attribute_type"] = 1,
 			},
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["use_square_mode"] = false,
-			["scale"] = 1,
-			["row_height"] = 18,
-			["point"] = "RIGHT",
+			["use_spark"] = false,
+			["main_frame_strata"] = "LOW",
+			["main_frame_locked"] = true,
+			["arrow_anchor_y"] = 0,
 		},
+	},
+	["announce_prepots"] = {
+		["enabled"] = false,
+		["channel"] = "SELF",
+		["reverse"] = false,
+	},
+	["last_day"] = "27",
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["cached_talents"] = {
 		["Player-4465-01C7FC88"] = {
@@ -12604,106 +11440,120 @@ _detalhes_database = {
 			}, -- [81]
 		},
 	},
-	["announce_prepots"] = {
-		["enabled"] = false,
-		["channel"] = "SELF",
-		["reverse"] = false,
+	["character_data"] = {
+		["logons"] = 1980,
 	},
-	["cached_roles"] = {
-		["Player-4465-01870DC6"] = "DAMAGER",
-		["Player-4465-02BAD1D8"] = "DAMAGER",
-		["Player-4465-003D8D47"] = "DAMAGER",
-		["Player-4465-036BE4A4"] = "TANK",
-		["Player-4465-0250291E"] = "TANK",
-		["Player-4465-03753C93"] = "DAMAGER",
-		["Player-4465-02CC91B8"] = "DAMAGER",
-		["Player-4465-01487BDF"] = "DAMAGER",
-		["Player-4465-02D086C3"] = "DAMAGER",
-		["Player-4465-02D908D4"] = "HEALER",
-		["Player-4465-0218B725"] = "DAMAGER",
-		["Player-4465-02CDC2A2"] = "HEALER",
-		["Player-4465-02FEFF6C"] = "DAMAGER",
-		["Player-4465-026088A4"] = "DAMAGER",
-		["Player-4465-02BA90EF"] = "DAMAGER",
-		["Player-4465-0261EC2B"] = "TANK",
-		["Player-4465-02693FB0"] = "DAMAGER",
-		["Player-4465-02523198"] = "HEALER",
-		["Player-4465-01544D47"] = "DAMAGER",
-		["Player-4465-02288795"] = "DAMAGER",
-		["Player-4465-02C331B4"] = "HEALER",
-		["Player-4465-027ED863"] = "DAMAGER",
-		["Player-4465-0258A1EB"] = "TANK",
-		["Player-4465-036E6B94"] = "DAMAGER",
-		["Player-4465-02DFB699"] = "DAMAGER",
-		["Player-4465-02D51E4E"] = "DAMAGER",
-		["Player-4465-02CD6CBC"] = "HEALER",
-		["Player-4465-013E4AF1"] = "DAMAGER",
-		["Player-4465-024C462D"] = "DAMAGER",
-		["Player-4465-02B962BC"] = "TANK",
-		["Player-4465-03674D0F"] = "DAMAGER",
-		["Player-4465-0288F4DB"] = "DAMAGER",
-		["Player-4465-02C0CB57"] = "HEALER",
-		["Player-4465-01678225"] = "DAMAGER",
-		["Player-4465-02E5912F"] = "HEALER",
-		["Player-4465-02C372E2"] = "HEALER",
-		["Player-4465-01794E06"] = "HEALER",
-		["Player-4465-02E11076"] = "DAMAGER",
-		["Player-4465-02E6F563"] = "DAMAGER",
-		["Player-4465-02885F76"] = "TANK",
-		["Player-4465-036BB930"] = "TANK",
-		["Player-4465-02BF7599"] = "HEALER",
-		["Player-4465-02BCA418"] = "DAMAGER",
-		["Player-4465-02A80D1D"] = "HEALER",
-		["Player-4465-02C17AB0"] = "DAMAGER",
-		["Player-4465-02B6A009"] = "DAMAGER",
-		["Player-4465-02DF9BE1"] = "DAMAGER",
-		["Player-4465-02C807FC"] = "HEALER",
-		["Player-4465-02BAB8B7"] = "DAMAGER",
-		["Player-4465-01740F8E"] = "HEALER",
-		["Player-4465-029390FF"] = "TANK",
-		["Player-4465-02DE4EAD"] = "DAMAGER",
-		["Player-4465-02C18DB0"] = "TANK",
-		["Player-4465-02BDBFFA"] = "DAMAGER",
-		["Player-4465-000A80E7"] = "DAMAGER",
-		["Player-4465-02DEBEAF"] = "DAMAGER",
-		["Player-4465-02E58336"] = "DAMAGER",
-		["Player-4465-02DFB097"] = "DAMAGER",
-		["Player-4465-02E5F434"] = "TANK",
-		["Player-4465-02DC8E2E"] = "DAMAGER",
-		["Player-4465-028BE5FC"] = "DAMAGER",
-		["Player-4465-02DDED22"] = "DAMAGER",
-		["Player-4465-02C3C2E6"] = "HEALER",
-		["Player-4465-028A5465"] = "DAMAGER",
-		["Player-4465-02E44D83"] = "HEALER",
-		["Player-4465-01693BEB"] = "HEALER",
-		["Player-4465-02976C46"] = "TANK",
-		["Player-4465-0297669D"] = "DAMAGER",
-		["Player-4465-02EB3CD0"] = "DAMAGER",
-		["Player-4465-0275626C"] = "TANK",
-		["Player-4465-00F8D26F"] = "DAMAGER",
-		["Player-4465-02E29C09"] = "HEALER",
-		["Player-4465-0256CA59"] = "TANK",
-		["Player-4465-01C7FC88"] = "DAMAGER",
-		["Player-4465-01CBD6E9"] = "DAMAGER",
-		["Player-4465-02A4FBD7"] = "TANK",
-		["Player-4465-01739CFE"] = "DAMAGER",
-		["Player-4465-019144E8"] = "DAMAGER",
-		["Player-4465-02503EFC"] = "TANK",
-		["Player-4465-02CDCDC3"] = "TANK",
-		["Player-4465-02DF6FC1"] = "TANK",
-		["Player-4465-02E38B90"] = "DAMAGER",
-		["Player-4465-0010144A"] = "DAMAGER",
+	["local_instances_config"] = {
+		{
+			["modo"] = 2,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = true,
+			["verticalSnap"] = false,
+			["isLocked"] = true,
+			["is_open"] = true,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["snap"] = {
+				[3] = 2,
+			},
+			["segment"] = 0,
+			["mode"] = 2,
+			["attribute"] = 1,
+			["pos"] = {
+				["normal"] = {
+					["y"] = 609.8614501953125,
+					["x"] = -999.642219543457,
+					["w"] = 234.8974304199219,
+					["h"] = 136.6408386230469,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [1]
+		{
+			["modo"] = 2,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = true,
+			["verticalSnap"] = false,
+			["isLocked"] = true,
+			["is_open"] = true,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["snap"] = {
+				1, -- [1]
+			},
+			["segment"] = 0,
+			["mode"] = 2,
+			["attribute"] = 2,
+			["pos"] = {
+				["normal"] = {
+					["y"] = 609.8614501953125,
+					["x"] = -767.7062683105469,
+					["w"] = 228.9744110107422,
+					["h"] = 136.6408386230469,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [2]
+		{
+			["modo"] = 2,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = false,
+			["verticalSnap"] = false,
+			["isLocked"] = true,
+			["snap"] = {
+			},
+			["is_open"] = true,
+			["last_raid_plugin"] = "DETAILS_PLUGIN_TINY_THREAT",
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["segment"] = 0,
+			["mode"] = 2,
+			["attribute"] = 1,
+			["pos"] = {
+				["normal"] = {
+					["y"] = -517.3939361572266,
+					["x"] = 501.459716796875,
+					["w"] = 215.7857666015625,
+					["h"] = 170.4597473144531,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [3]
 	},
-	["last_day"] = "22",
-	["benchmark_db"] = {
-		["frame"] = {
-		},
-	},
-	["last_realversion"] = 146,
-	["combat_id"] = 181,
+	["combat_id"] = 341,
 	["savedStyles"] = {
 		{
-			["show_statusbar"] = false,
+			["hide_in_combat_type"] = 1,
 			["clickthrough_window"] = false,
 			["titlebar_shown"] = false,
 			["menu_anchor"] = {
@@ -12721,7 +11571,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["micro_displays_locked"] = false,
+			["bars_sort_direction"] = 1,
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -12733,43 +11583,31 @@ _detalhes_database = {
 				1, -- [3]
 			},
 			["clickthrough_toolbaricons"] = false,
-			["attribute_text"] = {
-				["enabled"] = true,
-				["shadow"] = false,
-				["side"] = 1,
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["custom_text"] = "{name}",
-				["text_face"] = "Arial Narrow",
-				["anchor"] = {
-					56, -- [1]
-					3, -- [2]
-				},
-				["text_size"] = 12,
-				["enable_custom_text"] = false,
-				["show_timer"] = false,
-			},
+			["clickthrough_rows"] = false,
 			["titlebar_texture"] = "Clean",
-			["ignore_mass_showhide"] = false,
-			["fontstrings_text_limit_offset"] = -10,
+			["switch_tank"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["switch_all_roles_after_wipe"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
 			["icon_desaturated"] = false,
 			["desaturated_menu"] = false,
-			["show_sidebars"] = false,
+			["micro_displays_side"] = 2,
 			["window_scale"] = 1,
 			["hide_icon"] = true,
 			["toolbar_side"] = 1,
 			["bg_g"] = 0.1333333333333333,
 			["menu_icons_alpha"] = 0.92,
 			["bg_b"] = 0.1333333333333333,
-			["rowareaborder_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
+			["switch_healer_in_combat"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
 			},
 			["color"] = {
 				0.07058823529411765, -- [1]
@@ -12856,12 +11694,12 @@ _detalhes_database = {
 			},
 			["skin"] = "Minimalistic",
 			["following"] = {
-				["enabled"] = false,
 				["bar_color"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 				},
+				["enabled"] = false,
 				["text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -12900,14 +11738,14 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["micro_displays_side"] = 2,
-			["bg_alpha"] = 0,
+			["show_sidebars"] = false,
+			["name"] = "vermin",
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["name"] = "vermin",
+			["version"] = 3,
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -12918,7 +11756,26 @@ _detalhes_database = {
 				["onenter"] = 1,
 			},
 			["fullborder_shown"] = false,
-			["clickthrough_rows"] = false,
+			["attribute_text"] = {
+				["show_timer"] = false,
+				["shadow"] = false,
+				["side"] = 1,
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["custom_text"] = "{name}",
+				["text_face"] = "Arial Narrow",
+				["anchor"] = {
+					56, -- [1]
+					3, -- [2]
+				},
+				["text_size"] = 12,
+				["enable_custom_text"] = false,
+				["enabled"] = true,
+			},
 			["rowareaborder_shown"] = false,
 			["rowareaborder_size"] = 0.5,
 			["clickthrough_incombatonly"] = false,
@@ -12930,7 +11787,7 @@ _detalhes_database = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["skin_custom"] = "vermin",
+			["micro_displays_locked"] = false,
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -12946,45 +11803,49 @@ _detalhes_database = {
 					0.07058823529411765, -- [3]
 				},
 			},
-			["bars_grow_direction"] = 1,
 			["row_show_animation"] = {
 				["anim"] = "Fade",
 				["options"] = {
 				},
+			},
+			["menu_anchor_down"] = {
+				16, -- [1]
+				-3, -- [2]
 			},
 			["grab_on_top"] = false,
 			["auto_hide_menu"] = {
 				["left"] = false,
 				["right"] = true,
 			},
-			["hide_in_combat_type"] = 1,
+			["show_statusbar"] = false,
 			["switch_damager_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["switch_healer_in_combat"] = {
+			["rowareaborder_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["bars_grow_direction"] = 1,
+			["auto_current"] = true,
+			["skin_custom"] = "vermin",
+			["switch_damager"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["menu_anchor_down"] = {
-				16, -- [1]
-				-3, -- [2]
-			},
-			["auto_current"] = true,
-			["bars_sort_direction"] = 1,
+			["bg_alpha"] = 0,
+			["hide_in_combat"] = false,
 			["row_info"] = {
-				["show_arena_role_icon"] = false,
+				["textR_outline"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
 				["textL_outline"] = false,
-				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-				["textR_show_data"] = {
-					true, -- [1]
-					true, -- [2]
-					false, -- [3]
-				},
-				["percent_type"] = 1,
+				["textR_outline_small"] = true,
+				["textL_outline_small"] = true,
+				["textL_enable_custom_text"] = false,
 				["fixed_text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -12996,12 +11857,7 @@ _detalhes_database = {
 					["between"] = 1,
 				},
 				["texture_background_class_color"] = false,
-				["textL_outline_small_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
+				["start_after_icon"] = true,
 				["font_face_file"] = "Fonts\\ARIALN.TTF",
 				["faction_icon_size_offset"] = -10,
 				["backdrop"] = {
@@ -13015,6 +11871,8 @@ _detalhes_database = {
 					["enabled"] = false,
 					["texture"] = "ThreatPlatesBorder",
 				},
+				["font_size"] = 11,
+				["textL_custom_text"] = "{data1}. {data3}{data2}",
 				["models"] = {
 					["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
 					["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
@@ -13023,13 +11881,16 @@ _detalhes_database = {
 					["lower_alpha"] = 0.1,
 					["upper_enabled"] = false,
 				},
-				["textL_custom_text"] = "{data1}. {data3}{data2}",
-				["font_size"] = 11,
 				["textL_translit_text"] = false,
-				["height"] = 19,
+				["texture_custom_file"] = "Interface\\",
 				["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
 				["icon_size_offset"] = 0,
-				["start_after_icon"] = true,
+				["textL_outline_small_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
 				["show_faction_icon"] = true,
 				["overlay_color"] = {
 					0.7, -- [1]
@@ -13037,14 +11898,18 @@ _detalhes_database = {
 					0.7, -- [3]
 					0, -- [4]
 				},
-				["textL_outline_small"] = true,
-				["textR_outline_small"] = true,
-				["arena_role_icon_size_offset"] = -10,
+				["textR_show_data"] = {
+					true, -- [1]
+					true, -- [2]
+					false, -- [3]
+				},
+				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+				["icon_file"] = "",
 				["icon_grayscale"] = false,
-				["textR_bracket"] = "(",
 				["use_spec_icons"] = false,
+				["textR_bracket"] = "(",
 				["texture_custom"] = "",
-				["textR_outline"] = false,
+				["show_arena_role_icon"] = false,
 				["fixed_texture_color"] = {
 					0, -- [1]
 					0, -- [2]
@@ -13078,33 +11943,23 @@ _detalhes_database = {
 					0, -- [1]
 					0, -- [2]
 				},
-				["icon_file"] = "",
+				["arena_role_icon_size_offset"] = -10,
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
-				["textL_enable_custom_text"] = false,
+				["percent_type"] = 1,
 				["fast_ps_update"] = false,
 				["textR_separator"] = "NONE",
-				["texture_custom_file"] = "Interface\\",
+				["height"] = 19,
 			},
-			["version"] = 3,
-			["hide_in_combat"] = false,
-			["switch_damager"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["switch_tank"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["switch_all_roles_after_wipe"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
+			["ignore_mass_showhide"] = false,
+			["fontstrings_text_limit_offset"] = -10,
 			["wallpaper"] = {
-				["enabled"] = false,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
 				["alpha"] = 0.5,
 				["width"] = 283.000183105469,
 				["texcoord"] = {
@@ -13116,12 +11971,7 @@ _detalhes_database = {
 				["height"] = 114.042518615723,
 				["anchor"] = "all",
 				["level"] = 2,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
+				["enabled"] = false,
 				["texture"] = "Interface\\AddOns\\Details\\images\\background",
 			},
 			["stretch_button_side"] = 2,
@@ -13136,11 +11986,8 @@ _detalhes_database = {
 			},
 		}, -- [1]
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["combat_counter"] = 10883,
+	["force_font_outline"] = "",
+	["combat_counter"] = 11072,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -13169,32 +12016,34 @@ _detalhes_database = {
 						["Giant Buzzard"] = 0,
 						["Lesser Rock Elemental"] = 0,
 						["Ridge Huntress"] = 0,
-						["Elder Crag Coyote"] = 0,
-						["Dustbelcher Lord"] = 0,
-						["Dustbelcher Shaman"] = 0,
+						["Starving Buzzard"] = 0,
 						["Rumbler"] = 0,
+						["Zaricotl"] = 0,
+						["Anathemus"] = 0,
+						["Crag Coyote"] = 0,
 						["Dustbelcher Mauler"] = 0,
-						["Greater Rock Elemental"] = 0,
 						["Rock Worm"] = 0,
+						["Greater Rock Elemental"] = 0,
+						["Dustbelcher Shaman"] = 0,
 						["Scalding Whelp"] = 0,
 						["Maraudine Scout"] = 0,
-						["Crag Coyote"] = 0,
-						["Anathemus"] = 0,
-						["Zaricotl"] = 0,
+						["Broken Tooth"] = 0,
+						["Dustbelcher Lord"] = 0,
+						["Elder Crag Coyote"] = 0,
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
-					["tipo"] = 1,
+					["total"] = 0.004149,
+					["last_event"] = 0,
 					["classe"] = "HUNTER",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004149,
-					["delay"] = 0,
+					["serial"] = "Player-4465-01C7FC88",
 					["dps_started"] = false,
 					["end_time"] = 1665664876,
 					["on_hold"] = false,
-					["damage_taken"] = 0.004149,
+					["last_dps"] = 0,
 					["nome"] = "Mxzq",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13205,8 +12054,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Dustbelcher Lord"] = 0,
 									["Dustbelcher Ogre Mage"] = 0,
+									["Dustbelcher Lord"] = 0,
+									["Rock Elemental"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -13216,15 +12066,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 							[27021] = {
 								["c_amt"] = 0,
@@ -13235,10 +12085,10 @@ _detalhes_database = {
 								["targets"] = {
 									["Dustbelcher Ogre Mage"] = 0,
 									["Felpaw Scavenger"] = 0,
-									["Dustbelcher Shaman"] = 0,
+									["Anathemus"] = 0,
 									["Zaricotl"] = 0,
 									["Dustbelcher Lord"] = 0,
-									["Anathemus"] = 0,
+									["Dustbelcher Shaman"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -13248,15 +12098,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 27021,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 							[75] = {
 								["c_amt"] = 0,
@@ -13265,17 +12115,19 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Rumbler"] = 0,
 									["Rock Elemental"] = 0,
-									["Anathemus"] = 0,
 									["Dustbelcher Mauler"] = 0,
-									["Crag Coyote"] = 0,
-									["War Golem"] = 0,
-									["Dustbelcher Ogre Mage"] = 0,
+									["Broken Tooth"] = 0,
+									["Rumbler"] = 0,
+									["Anathemus"] = 0,
+									["Ridge Stalker Patriarch"] = 0,
 									["Greater Rock Elemental"] = 0,
+									["War Golem"] = 0,
 									["Felpaw Scavenger"] = 0,
+									["Dustbelcher Ogre Mage"] = 0,
 									["Dustbelcher Shaman"] = 0,
 									["Dustbelcher Lord"] = 0,
+									["Crag Coyote"] = 0,
 									["Zaricotl"] = 0,
 									["Lesser Rock Elemental"] = 0,
 									["Ridge Huntress"] = 0,
@@ -13288,15 +12140,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 75,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 							[27016] = {
 								["c_amt"] = 0,
@@ -13306,8 +12158,8 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Dustbelcher Lord"] = 0,
-									["Greater Rock Elemental"] = 0,
 									["Anathemus"] = 0,
+									["Greater Rock Elemental"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -13316,6 +12168,33 @@ _detalhes_database = {
 								["total"] = 0,
 								["c_max"] = 0,
 								["id"] = 27016,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[49051] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Dustbelcher Ogre Mage"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 49051,
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["b_dmg"] = 0,
@@ -13336,15 +12215,16 @@ _detalhes_database = {
 								["targets"] = {
 									["Rock Elemental"] = 0,
 									["Dustbelcher Mauler"] = 0,
+									["Dustbelcher Lord"] = 0,
 									["War Golem"] = 0,
 									["Dustbelcher Shaman"] = 0,
 									["Greater Rock Elemental"] = 0,
 									["Felpaw Scavenger"] = 0,
-									["Rumbler"] = 0,
+									["Broken Tooth"] = 0,
 									["Dustbelcher Ogre Mage"] = 0,
 									["Zaricotl"] = 0,
 									["Lesser Rock Elemental"] = 0,
-									["Dustbelcher Lord"] = 0,
+									["Rumbler"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -13354,15 +12234,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 27019,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 							[2974] = {
 								["c_amt"] = 0,
@@ -13381,15 +12261,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 2974,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -13398,12 +12278,12 @@ _detalhes_database = {
 					["aID"] = "4465-01C7FC88",
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["friendlyfire"] = {
 					},
 					["start_time"] = 1665664873,
-					["serial"] = "Player-4465-01C7FC88",
-					["total"] = 0.004149,
+					["delay"] = 0,
+					["damage_taken"] = 0.004149,
 				}, -- [1]
 				{
 					["flag_original"] = 4369,
@@ -13423,32 +12303,34 @@ _detalhes_database = {
 						["Giant Buzzard"] = 0,
 						["Lesser Rock Elemental"] = 0,
 						["Ridge Huntress"] = 0,
-						["Elder Crag Coyote"] = 0,
-						["Dustbelcher Mauler"] = 0,
+						["Starving Buzzard"] = 0,
 						["Dustbelcher Ogre Mage"] = 0,
+						["Zaricotl"] = 0,
+						["Anathemus"] = 0,
+						["Crag Coyote"] = 0,
 						["Rumbler"] = 0,
-						["Dustbelcher Shaman"] = 0,
-						["Greater Rock Elemental"] = 0,
 						["Rock Worm"] = 0,
+						["Greater Rock Elemental"] = 0,
+						["Dustbelcher Shaman"] = 0,
 						["Scalding Whelp"] = 0,
 						["Maraudine Scout"] = 0,
-						["Crag Coyote"] = 0,
-						["Anathemus"] = 0,
-						["Zaricotl"] = 0,
+						["Broken Tooth"] = 0,
+						["Dustbelcher Mauler"] = 0,
+						["Elder Crag Coyote"] = 0,
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
-					["tipo"] = 1,
+					["total"] = 0.005914,
+					["last_event"] = 0,
 					["classe"] = "PET",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005914,
-					["delay"] = 0,
+					["serial"] = "Pet-0-4448-0-14698-7443-030074C845",
 					["dps_started"] = false,
 					["end_time"] = 1665664876,
 					["on_hold"] = false,
-					["damage_taken"] = 0.005914,
+					["last_dps"] = 0,
 					["nome"] = "Bear <Mxzq>",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13471,18 +12353,20 @@ _detalhes_database = {
 									["Giant Buzzard"] = 0,
 									["Lesser Rock Elemental"] = 0,
 									["Ridge Huntress"] = 0,
-									["Elder Crag Coyote"] = 0,
-									["Dustbelcher Mauler"] = 0,
+									["Starving Buzzard"] = 0,
 									["Dustbelcher Ogre Mage"] = 0,
+									["Zaricotl"] = 0,
+									["Anathemus"] = 0,
+									["Crag Coyote"] = 0,
 									["Rumbler"] = 0,
-									["Dustbelcher Shaman"] = 0,
-									["Greater Rock Elemental"] = 0,
 									["Rock Worm"] = 0,
+									["Greater Rock Elemental"] = 0,
+									["Dustbelcher Shaman"] = 0,
 									["Scalding Whelp"] = 0,
 									["Maraudine Scout"] = 0,
-									["Crag Coyote"] = 0,
-									["Anathemus"] = 0,
-									["Zaricotl"] = 0,
+									["Broken Tooth"] = 0,
+									["Dustbelcher Mauler"] = 0,
+									["Elder Crag Coyote"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -13492,59 +12376,16 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
-							[63900] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Ghostly Raider"] = 0,
-									["Dustbelcher Mauler"] = 0,
-									["Bloodfury Ambusher"] = 0,
-									["War Golem"] = 0,
-									["Dustbelcher Lord"] = 0,
-									["Felpaw Scavenger"] = 0,
-									["Giant Buzzard"] = 0,
-									["Ridge Huntress"] = 0,
-									["Elder Crag Coyote"] = 0,
-									["Dustbelcher Ogre Mage"] = 0,
-									["Rock Worm"] = 0,
-									["Dustbelcher Shaman"] = 0,
-									["Scalding Whelp"] = 0,
-									["Maraudine Scout"] = 0,
-									["Ridge Stalker Patriarch"] = 0,
-									["Anathemus"] = 0,
-									["Zaricotl"] = 0,
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 63900,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
-							},
 							[53532] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -13566,9 +12407,9 @@ _detalhes_database = {
 									["Greater Rock Elemental"] = 0,
 									["Rock Worm"] = 0,
 									["Scalding Whelp"] = 0,
-									["Dustbelcher Ogre Mage"] = 0,
-									["Rumbler"] = 0,
 									["Zaricotl"] = 0,
+									["Rumbler"] = 0,
+									["Dustbelcher Ogre Mage"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -13578,15 +12419,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 53532,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 							[27049] = {
 								["c_amt"] = 0,
@@ -13606,15 +12447,16 @@ _detalhes_database = {
 									["Giant Buzzard"] = 0,
 									["Lesser Rock Elemental"] = 0,
 									["Ridge Huntress"] = 0,
-									["Dustbelcher Ogre Mage"] = 0,
-									["Dustbelcher Shaman"] = 0,
+									["Starving Buzzard"] = 0,
+									["Zaricotl"] = 0,
+									["Anathemus"] = 0,
 									["Greater Rock Elemental"] = 0,
-									["Rock Worm"] = 0,
+									["Dustbelcher Shaman"] = 0,
 									["Scalding Whelp"] = 0,
 									["Maraudine Scout"] = 0,
 									["Rumbler"] = 0,
-									["Anathemus"] = 0,
-									["Zaricotl"] = 0,
+									["Rock Worm"] = 0,
+									["Dustbelcher Ogre Mage"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -13624,15 +12466,60 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 27049,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[63900] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Ghostly Raider"] = 0,
+									["Dustbelcher Mauler"] = 0,
+									["Bloodfury Ambusher"] = 0,
+									["War Golem"] = 0,
+									["Dustbelcher Lord"] = 0,
+									["Felpaw Scavenger"] = 0,
+									["Giant Buzzard"] = 0,
+									["Ridge Huntress"] = 0,
+									["Starving Buzzard"] = 0,
+									["Zaricotl"] = 0,
+									["Anathemus"] = 0,
+									["Ridge Stalker Patriarch"] = 0,
+									["Dustbelcher Shaman"] = 0,
+									["Rock Worm"] = 0,
+									["Scalding Whelp"] = 0,
+									["Maraudine Scout"] = 0,
+									["Broken Tooth"] = 0,
+									["Dustbelcher Ogre Mage"] = 0,
+									["Elder Crag Coyote"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 63900,
+								["r_dmg"] = 0,
 								["extra"] = {
 								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -13641,12 +12528,12 @@ _detalhes_database = {
 					["aID"] = "Pet-0-4448-0-14698-7443-030074C845",
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["friendlyfire"] = {
 					},
 					["start_time"] = 1665664873,
-					["serial"] = "Pet-0-4448-0-14698-7443-030074C845",
-					["total"] = 0.005914,
+					["delay"] = 0,
+					["damage_taken"] = 0.005914,
 				}, -- [2]
 				{
 					["flag_original"] = 2632,
@@ -13657,20 +12544,20 @@ _detalhes_database = {
 						["Mxzq"] = 0,
 						["Bear <Mxzq>"] = 0,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4448-0-14698-92-000D46D967",
 					["pets"] = {
 					},
-					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["end_time"] = 1665664876,
 					["friendlyfire_total"] = 0,
+					["aID"] = "92",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006372,
-					["dps_started"] = false,
 					["fight_component"] = true,
-					["end_time"] = 1665664876,
+					["dps_started"] = false,
+					["total"] = 0.006372,
 					["damage_taken"] = 0.006372,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["nome"] = "Rock Elemental",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13681,9 +12568,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Bear <Mxzq>"] = 0,
-									["Mxzq"] = 0,
 									["Bear"] = 0,
+									["Mxzq"] = 0,
+									["Bear <Mxzq>"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -13693,29 +12580,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 0.006372,
+					["on_hold"] = false,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["monster"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1665664873,
-					["serial"] = "Creature-0-4448-0-14698-92-000D46D967",
-					["aID"] = "92",
+					["delay"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [3]
 				{
 					["flag_original"] = 2632,
@@ -13723,24 +12610,25 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Icedtitan"] = 0,
-						["Mxzq"] = 0,
+						["Deathorder"] = 0,
 						["Bear <Mxzq>"] = 0,
+						["Mxzq"] = 0,
+						["Icedtitan"] = 0,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4448-0-14698-2720-000047DA68",
 					["pets"] = {
 					},
-					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["end_time"] = 1665664876,
 					["friendlyfire_total"] = 0,
+					["aID"] = "2720",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006498,
-					["dps_started"] = false,
 					["fight_component"] = true,
-					["end_time"] = 1665664876,
+					["dps_started"] = false,
+					["total"] = 0.006498,
 					["damage_taken"] = 0.006498,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["nome"] = "Dustbelcher Ogre Mage",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13751,10 +12639,11 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Icedtitan"] = 0,
-									["Bear"] = 0,
 									["Mxzq"] = 0,
+									["Icedtitan"] = 0,
+									["Deathorder"] = 0,
 									["Bear <Mxzq>"] = 0,
+									["Bear"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -13764,15 +12653,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 							[20822] = {
 								["c_amt"] = 0,
@@ -13781,10 +12670,10 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Icedtitan"] = 0,
+									["Bear"] = 0,
 									["Bear <Mxzq>"] = 0,
 									["Mxzq"] = 0,
-									["Bear"] = 0,
+									["Icedtitan"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -13794,15 +12683,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 20822,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 							[6742] = {
 								["c_amt"] = 0,
@@ -13820,29 +12709,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 6742,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 0.006498,
+					["on_hold"] = false,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["monster"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1665664873,
-					["serial"] = "Creature-0-4448-0-14698-2720-000047DA68",
-					["aID"] = "2720",
+					["delay"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [4]
 				{
 					["flag_original"] = 68168,
@@ -13854,20 +12743,20 @@ _detalhes_database = {
 						["Mxzq"] = 0,
 						["Bear <Mxzq>"] = 0,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4448-0-14698-2719-0000474B2E",
 					["pets"] = {
 					},
-					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["end_time"] = 1665664876,
 					["friendlyfire_total"] = 0,
+					["aID"] = "2719",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003096,
-					["dps_started"] = false,
 					["fight_component"] = true,
-					["end_time"] = 1665664876,
+					["dps_started"] = false,
+					["total"] = 0.003096,
 					["damage_taken"] = 0.003096,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["nome"] = "Dustbelcher Lord",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13879,9 +12768,9 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Unknown <Mxzq>"] = 0,
-									["Bear <Mxzq>"] = 0,
-									["Mxzq"] = 0,
 									["Bear"] = 0,
+									["Mxzq"] = 0,
+									["Bear <Mxzq>"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -13891,15 +12780,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 							[13730] = {
 								["c_amt"] = 0,
@@ -13919,15 +12808,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 13730,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 							[9128] = {
 								["c_amt"] = 0,
@@ -13945,29 +12834,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 9128,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 0.003096,
+					["on_hold"] = false,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["monster"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1665664873,
-					["serial"] = "Creature-0-4448-0-14698-2719-0000474B2E",
-					["aID"] = "2719",
+					["delay"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [5]
 				{
 					["flag_original"] = 68168,
@@ -13978,20 +12867,20 @@ _detalhes_database = {
 						["Mxzq"] = 0,
 						["Bear <Mxzq>"] = 0,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4448-0-14698-2734-000047F4D8",
 					["pets"] = {
 					},
-					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["end_time"] = 1665664876,
 					["friendlyfire_total"] = 0,
+					["aID"] = "2734",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007012,
-					["dps_started"] = false,
 					["fight_component"] = true,
-					["end_time"] = 1665664876,
+					["dps_started"] = false,
+					["total"] = 0.007012,
 					["damage_taken"] = 0.007012,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["nome"] = "Ridge Stalker Patriarch",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14002,9 +12891,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Bear"] = 0,
-									["Mxzq"] = 0,
 									["Bear <Mxzq>"] = 0,
+									["Mxzq"] = 0,
+									["Bear"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -14014,29 +12903,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 0.007012,
+					["on_hold"] = false,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["monster"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1665664873,
-					["serial"] = "Creature-0-4448-0-14698-2734-000047F4D8",
-					["aID"] = "2734",
+					["delay"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [6]
 				{
 					["flag_original"] = -2147483648,
@@ -14049,17 +12938,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["dps_started"] = false,
 					["on_hold"] = false,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007354,
-					["delay"] = 0,
+					["serial"] = "",
 					["fight_component"] = true,
 					["end_time"] = 1665664876,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.007354,
+					["last_dps"] = 0,
 					["nome"] = "Environment (Falling)",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14081,29 +12970,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 3,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["total"] = 0.007354,
-					["aID"] = "",
-					["custom"] = 0,
 					["last_event"] = 0,
+					["aID"] = "",
+					["total"] = 0.007354,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["friendlyfire"] = {
 					},
 					["start_time"] = 1665664873,
-					["serial"] = "",
-					["dps_started"] = false,
+					["delay"] = 0,
+					["damage_taken"] = 0.007354,
 				}, -- [7]
 				{
 					["flag_original"] = 2632,
@@ -14114,20 +13003,20 @@ _detalhes_database = {
 						["Mxzq"] = 0,
 						["Bear <Mxzq>"] = 0,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4448-0-14698-2732-000046D968",
 					["pets"] = {
 					},
-					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["end_time"] = 1665664876,
 					["friendlyfire_total"] = 0,
+					["aID"] = "2732",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007133,
-					["dps_started"] = false,
 					["fight_component"] = true,
-					["end_time"] = 1665664876,
+					["dps_started"] = false,
+					["total"] = 0.007133,
 					["damage_taken"] = 0.007133,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["nome"] = "Ridge Huntress",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14138,9 +13027,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Bear <Mxzq>"] = 0,
-									["Mxzq"] = 0,
 									["Bear"] = 0,
+									["Mxzq"] = 0,
+									["Bear <Mxzq>"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -14150,29 +13039,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 0.007133,
+					["on_hold"] = false,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["monster"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1665664873,
-					["serial"] = "Creature-0-4448-0-14698-2732-000046D968",
-					["aID"] = "2732",
+					["delay"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [8]
 				{
 					["flag_original"] = 68168,
@@ -14183,20 +13072,20 @@ _detalhes_database = {
 						["Mxzq"] = 0,
 						["Bear <Mxzq>"] = 0,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4448-0-14698-2725-000CC6D967",
 					["pets"] = {
 					},
-					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["end_time"] = 1665664876,
 					["friendlyfire_total"] = 0,
+					["aID"] = "2725",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008707,
-					["dps_started"] = false,
 					["fight_component"] = true,
-					["end_time"] = 1665664876,
+					["dps_started"] = false,
+					["total"] = 0.008707,
 					["damage_taken"] = 0.008707,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["nome"] = "Scalding Whelp",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14207,9 +13096,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Bear"] = 0,
-									["Mxzq"] = 0,
 									["Bear <Mxzq>"] = 0,
+									["Mxzq"] = 0,
+									["Bear"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -14219,15 +13108,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 							[34083] = {
 								["c_amt"] = 0,
@@ -14247,29 +13136,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 34083,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 0.008707,
+					["on_hold"] = false,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["monster"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1665664873,
-					["serial"] = "Creature-0-4448-0-14698-2725-000CC6D967",
-					["aID"] = "2725",
+					["delay"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [9]
 				{
 					["flag_original"] = 68168,
@@ -14280,20 +13169,20 @@ _detalhes_database = {
 						["Mxzq"] = 0,
 						["Bear <Mxzq>"] = 0,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4469-1-16020-8960-000046F6C7",
 					["pets"] = {
 					},
-					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["end_time"] = 1665664876,
 					["friendlyfire_total"] = 0,
+					["aID"] = "8960",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00779,
-					["dps_started"] = false,
 					["fight_component"] = true,
-					["end_time"] = 1665664876,
+					["dps_started"] = false,
+					["total"] = 0.00779,
 					["damage_taken"] = 0.00779,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["nome"] = "Felpaw Scavenger",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14315,15 +13204,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 							[3604] = {
 								["c_amt"] = 0,
@@ -14341,15 +13230,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 3604,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 							[3427] = {
 								["c_amt"] = 0,
@@ -14367,29 +13256,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 3427,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 0.00779,
+					["on_hold"] = false,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["monster"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1665664873,
-					["serial"] = "Creature-0-4469-1-16020-8960-000046F6C7",
-					["aID"] = "8960",
+					["delay"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [10]
 				{
 					["flag_original"] = 2632,
@@ -14399,20 +13288,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Bear <Mxzq>"] = 0,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4458-1-1206-4025-0002C6D968",
 					["pets"] = {
 					},
-					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["end_time"] = 1665664876,
 					["friendlyfire_total"] = 0,
+					["aID"] = "4025",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001349,
-					["dps_started"] = false,
 					["fight_component"] = true,
-					["end_time"] = 1665664876,
+					["dps_started"] = false,
+					["total"] = 0.001349,
 					["damage_taken"] = 0.001349,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["nome"] = "Bloodfury Ambusher",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14423,8 +13312,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Bear <Mxzq>"] = 0,
 									["Bear"] = 0,
+									["Bear <Mxzq>"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -14434,15 +13323,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 							[2608] = {
 								["c_amt"] = 0,
@@ -14461,29 +13350,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 2608,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 0.001349,
+					["on_hold"] = false,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["monster"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1665664873,
-					["serial"] = "Creature-0-4458-1-1206-4025-0002C6D968",
-					["aID"] = "4025",
+					["delay"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [11]
 				{
 					["flag_original"] = 68168,
@@ -14494,20 +13383,20 @@ _detalhes_database = {
 						["Mxzq"] = 0,
 						["Bear <Mxzq>"] = 0,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4447-1-21735-4654-0000C6D969",
 					["pets"] = {
 					},
-					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["end_time"] = 1665664876,
 					["friendlyfire_total"] = 0,
+					["aID"] = "4654",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004217,
-					["dps_started"] = false,
 					["fight_component"] = true,
-					["end_time"] = 1665664876,
+					["dps_started"] = false,
+					["total"] = 0.004217,
 					["damage_taken"] = 0.004217,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["nome"] = "Maraudine Scout",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14528,15 +13417,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 							[6660] = {
 								["c_amt"] = 0,
@@ -14555,29 +13444,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 6660,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 0.004217,
+					["on_hold"] = false,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["monster"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1665664873,
-					["serial"] = "Creature-0-4447-1-21735-4654-0000C6D969",
-					["aID"] = "4654",
+					["delay"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [12]
 				{
 					["flag_original"] = 68168,
@@ -14587,20 +13476,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Bear <Mxzq>"] = 0,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4447-1-21735-11686-0000473ABE",
 					["pets"] = {
 					},
-					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["end_time"] = 1665664876,
 					["friendlyfire_total"] = 0,
+					["aID"] = "11686",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00761,
-					["dps_started"] = false,
 					["fight_component"] = true,
-					["end_time"] = 1665664876,
+					["dps_started"] = false,
+					["total"] = 0.00761,
 					["damage_taken"] = 0.00761,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["nome"] = "Ghostly Raider",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14611,9 +13500,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Bear"] = 0,
-									["Mxzq"] = 0,
 									["Bear <Mxzq>"] = 0,
+									["Mxzq"] = 0,
+									["Bear"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -14623,15 +13512,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 							[17174] = {
 								["c_amt"] = 0,
@@ -14649,15 +13538,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 17174,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 							[6533] = {
 								["c_amt"] = 0,
@@ -14675,15 +13564,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 6533,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 							[6660] = {
 								["c_amt"] = 0,
@@ -14702,29 +13591,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 6660,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 0.00761,
+					["on_hold"] = false,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["monster"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1665664873,
-					["serial"] = "Creature-0-4447-1-21735-11686-0000473ABE",
-					["aID"] = "11686",
+					["delay"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [13]
 				{
 					["flag_original"] = 2632,
@@ -14735,20 +13624,20 @@ _detalhes_database = {
 						["Mxzq"] = 0,
 						["Bear <Mxzq>"] = 0,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4447-1-21735-11685-0000473BD5",
 					["pets"] = {
 					},
-					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["end_time"] = 1665664876,
 					["friendlyfire_total"] = 0,
+					["aID"] = "11685",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008228,
-					["dps_started"] = false,
 					["fight_component"] = true,
-					["end_time"] = 1665664876,
+					["dps_started"] = false,
+					["total"] = 0.008228,
 					["damage_taken"] = 0.008228,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["nome"] = "Maraudine Priest",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14770,15 +13659,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 							[11639] = {
 								["c_amt"] = 0,
@@ -14797,29 +13686,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 11639,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 0.008228,
+					["on_hold"] = false,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["monster"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1665664873,
-					["serial"] = "Creature-0-4447-1-21735-11685-0000473BD5",
-					["aID"] = "11685",
+					["delay"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [14]
 				{
 					["flag_original"] = 2632,
@@ -14829,20 +13718,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Bear <Mxzq>"] = 0,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4447-1-21735-11788-000146D969",
 					["pets"] = {
 					},
-					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["end_time"] = 1665664876,
 					["friendlyfire_total"] = 0,
+					["aID"] = "11788",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005655,
-					["dps_started"] = false,
 					["fight_component"] = true,
-					["end_time"] = 1665664876,
+					["dps_started"] = false,
+					["total"] = 0.005655,
 					["damage_taken"] = 0.005655,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["nome"] = "Rock Worm",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14863,15 +13752,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 							[44477] = {
 								["c_amt"] = 0,
@@ -14890,29 +13779,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 44477,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 0.005655,
+					["on_hold"] = false,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["monster"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1665664873,
-					["serial"] = "Creature-0-4447-1-21735-11788-000146D969",
-					["aID"] = "11788",
+					["delay"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [15]
 				{
 					["flag_original"] = 2632,
@@ -14922,20 +13811,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Bear <Mxzq>"] = 0,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4447-1-21735-11777-000046D969",
 					["pets"] = {
 					},
-					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["end_time"] = 1665664876,
 					["friendlyfire_total"] = 0,
+					["aID"] = "11777",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008282,
-					["dps_started"] = false,
 					["fight_component"] = true,
-					["end_time"] = 1665664876,
+					["dps_started"] = false,
+					["total"] = 0.008282,
 					["damage_taken"] = 0.008282,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["nome"] = "Shadowshard Rumbler",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14946,8 +13835,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Bear"] = 0,
 									["Bear <Mxzq>"] = 0,
+									["Bear"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -14957,29 +13846,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 0.008282,
+					["on_hold"] = false,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["monster"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1665664873,
-					["serial"] = "Creature-0-4447-1-21735-11777-000046D969",
-					["aID"] = "11777",
+					["delay"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [16]
 				{
 					["flag_original"] = 2632,
@@ -14989,20 +13878,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Bear <Mxzq>"] = 0,
 					},
-					["serial"] = "Creature-0-4448-0-14698-2735-0000C6D967",
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["end_time"] = 1665673715,
-					["friendlyfire_total"] = 0,
+					["last_dps"] = 0,
 					["aID"] = "2735",
+					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007769,
-					["fight_component"] = true,
 					["dps_started"] = false,
+					["fight_component"] = true,
 					["total"] = 0.007769,
 					["on_hold"] = false,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["nome"] = "Lesser Rock Elemental",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15013,9 +13902,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Bear"] = 0,
-									["Mxzq"] = 0,
 									["Bear <Mxzq>"] = 0,
+									["Mxzq"] = 0,
+									["Bear"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -15025,29 +13914,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["monster"] = true,
 					["friendlyfire"] = {
 					},
-					["monster"] = true,
+					["end_time"] = 1665673715,
 					["custom"] = 0,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["damage_taken"] = 0.007769,
 					["start_time"] = 1665673712,
-					["delay"] = 0,
-					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4448-0-14698-2735-0000C6D967",
+					["friendlyfire_total"] = 0,
 				}, -- [17]
 				{
 					["flag_original"] = 2632,
@@ -15057,20 +13946,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Mxzq"] = 0,
 					},
-					["serial"] = "Creature-0-4448-0-14698-2731-000046D968",
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["end_time"] = 1665673715,
-					["friendlyfire_total"] = 0,
+					["last_dps"] = 0,
 					["aID"] = "2731",
+					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001531,
-					["fight_component"] = true,
 					["dps_started"] = false,
+					["fight_component"] = true,
 					["total"] = 0.001531,
 					["on_hold"] = false,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["nome"] = "Ridge Stalker",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15091,29 +13980,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["monster"] = true,
 					["friendlyfire"] = {
 					},
-					["monster"] = true,
+					["end_time"] = 1665673715,
 					["custom"] = 0,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["damage_taken"] = 0.001531,
 					["start_time"] = 1665673712,
-					["delay"] = 0,
-					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4448-0-14698-2731-000046D968",
+					["friendlyfire_total"] = 0,
 				}, -- [18]
 				{
 					["flag_original"] = 2632,
@@ -15124,20 +14013,20 @@ _detalhes_database = {
 						["Mxzq"] = 0,
 						["Bear <Mxzq>"] = 0,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4448-0-14698-2831-000047203F",
 					["pets"] = {
 					},
-					["damage_taken"] = 0.008086,
-					["aID"] = "2831",
+					["fight_component"] = true,
 					["classe"] = "UNKNOW",
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008086,
 					["dps_started"] = false,
-					["fight_component"] = true,
+					["monster"] = true,
 					["total"] = 0.008086,
-					["last_dps"] = 0,
-					["tipo"] = 1,
+					["damage_taken"] = 0.008086,
+					["last_event"] = 0,
 					["nome"] = "Giant Buzzard",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15148,9 +14037,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Bear"] = 0,
-									["Mxzq"] = 0,
 									["Bear <Mxzq>"] = 0,
+									["Mxzq"] = 0,
+									["Bear"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -15160,29 +14049,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["monster"] = true,
+					["end_time"] = 1665686887,
 					["friendlyfire"] = {
 					},
-					["end_time"] = 1665686887,
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["on_hold"] = false,
 					["start_time"] = 1665686884,
-					["serial"] = "Creature-0-4448-0-14698-2831-000047203F",
-					["friendlyfire_total"] = 0,
+					["delay"] = 0,
+					["aID"] = "2831",
 				}, -- [19]
 				{
 					["flag_original"] = 68168,
@@ -15191,20 +14080,20 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4448-0-14698-2751-00004778D4",
 					["pets"] = {
 					},
-					["damage_taken"] = 0.003356,
-					["aID"] = "2751",
+					["fight_component"] = true,
 					["classe"] = "UNKNOW",
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003356,
 					["dps_started"] = false,
-					["fight_component"] = true,
+					["monster"] = true,
 					["total"] = 0.003356,
-					["last_dps"] = 0,
-					["tipo"] = 1,
+					["damage_taken"] = 0.003356,
+					["last_event"] = 0,
 					["nome"] = "War Golem",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15225,29 +14114,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["monster"] = true,
+					["end_time"] = 1665686887,
 					["friendlyfire"] = {
 					},
-					["end_time"] = 1665686887,
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["on_hold"] = false,
 					["start_time"] = 1665686884,
-					["serial"] = "Creature-0-4448-0-14698-2751-00004778D4",
-					["friendlyfire_total"] = 0,
+					["delay"] = 0,
+					["aID"] = "2751",
 				}, -- [20]
 				{
 					["flag_original"] = 2632,
@@ -15257,20 +14146,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Mxzq"] = 0,
 					},
-					["serial"] = "Creature-0-4448-0-14698-2730-0001C6D969",
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["total"] = 0.008129,
 					["friendlyfire_total"] = 0,
+					["aID"] = "2730",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008129,
-					["dps_started"] = false,
 					["monster"] = true,
-					["total"] = 0.008129,
+					["dps_started"] = false,
+					["end_time"] = 1665732649,
 					["on_hold"] = false,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["nome"] = "Rabid Crag Coyote",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15291,29 +14180,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["end_time"] = 1665732649,
+					["last_dps"] = 0,
 					["friendlyfire"] = {
 					},
-					["damage_taken"] = 0.008129,
+					["fight_component"] = true,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
+					["last_event"] = 0,
+					["damage_taken"] = 0.008129,
 					["start_time"] = 1665732646,
-					["delay"] = 0,
-					["aID"] = "2730",
+					["serial"] = "Creature-0-4448-0-14698-2730-0001C6D969",
+					["classe"] = "UNKNOW",
 				}, -- [21]
 				{
 					["flag_original"] = 68168,
@@ -15321,22 +14210,23 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
+						["Deathorder"] = 0,
 						["Bear <Mxzq>"] = 0,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4458-0-3559-2718-000149036A",
 					["pets"] = {
 					},
-					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["end_time"] = 1665735217,
 					["friendlyfire_total"] = 0,
+					["aID"] = "2718",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005805,
-					["dps_started"] = false,
 					["fight_component"] = true,
-					["end_time"] = 1665735217,
+					["dps_started"] = false,
+					["total"] = 0.005805,
 					["damage_taken"] = 0.005805,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["nome"] = "Dustbelcher Shaman",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15347,7 +14237,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Deathorder"] = 0,
 									["Bear <Mxzq>"] = 0,
+									["Bear"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -15357,15 +14249,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 							[8005] = {
 								["c_amt"] = 0,
@@ -15383,29 +14275,56 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 8005,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[9532] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Deathorder"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 9532,
+								["r_dmg"] = 0,
 								["extra"] = {
 								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 0.005805,
+					["on_hold"] = false,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["monster"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1665735214,
-					["serial"] = "Creature-0-4458-0-3559-2718-000149036A",
-					["aID"] = "2718",
+					["delay"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [22]
 				{
 					["flag_original"] = 68168,
@@ -15413,22 +14332,23 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
+						["Mxzq"] = 0,
 						["Bear <Mxzq>"] = 0,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4458-0-3559-2717-000149036A",
 					["pets"] = {
 					},
-					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["end_time"] = 1665735217,
 					["friendlyfire_total"] = 0,
+					["aID"] = "2717",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001495,
-					["dps_started"] = false,
 					["fight_component"] = true,
-					["end_time"] = 1665735217,
+					["dps_started"] = false,
+					["total"] = 0.001495,
 					["damage_taken"] = 0.001495,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["nome"] = "Dustbelcher Mauler",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15439,6 +14359,7 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Mxzq"] = 0,
 									["Bear <Mxzq>"] = 0,
 								},
 								["n_dmg"] = 0,
@@ -15449,6 +14370,33 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+									["extra_attack"] = 0,
+								},
+							}, -- [1]
+							[3391] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 3391,
+								["r_dmg"] = 0,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
@@ -15458,20 +14406,20 @@ _detalhes_database = {
 								["n_amt"] = 0,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
-							}, -- [1]
+							},
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 0.001495,
+					["on_hold"] = false,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["monster"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1665735214,
-					["serial"] = "Creature-0-4458-0-3559-2717-000149036A",
-					["aID"] = "2717",
+					["delay"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [23]
 				{
 					["flag_original"] = 2632,
@@ -15479,22 +14427,23 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
+						["Mxzq"] = 0,
 						["Bear <Mxzq>"] = 0,
 					},
-					["serial"] = "Creature-0-4458-0-3559-2736-000349036A",
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["end_time"] = 1665735289,
-					["friendlyfire_total"] = 0,
+					["last_dps"] = 0,
 					["aID"] = "2736",
+					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004978,
-					["fight_component"] = true,
 					["dps_started"] = false,
+					["fight_component"] = true,
 					["total"] = 0.004978,
 					["on_hold"] = false,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["nome"] = "Greater Rock Elemental",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15505,9 +14454,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Bear <Mxzq>"] = 0,
-									["Mxzq"] = 0,
 									["Bear"] = 0,
+									["Mxzq"] = 0,
+									["Bear <Mxzq>"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -15517,29 +14466,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["monster"] = true,
 					["friendlyfire"] = {
 					},
-					["monster"] = true,
+					["end_time"] = 1665735289,
 					["custom"] = 0,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["damage_taken"] = 0.004978,
 					["start_time"] = 1665735286,
-					["delay"] = 0,
-					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4458-0-3559-2736-000349036A",
+					["friendlyfire_total"] = 0,
 				}, -- [24]
 				{
 					["flag_original"] = 68168,
@@ -15548,21 +14497,22 @@ _detalhes_database = {
 					},
 					["targets"] = {
 						["Mxzq"] = 0,
+						["Bear <Mxzq>"] = 0,
 					},
-					["serial"] = "Creature-0-4458-0-3559-2729-000349036A",
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["total"] = 0.00165,
 					["friendlyfire_total"] = 0,
+					["aID"] = "2729",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00165,
-					["dps_started"] = false,
 					["monster"] = true,
-					["total"] = 0.00165,
+					["dps_started"] = false,
+					["end_time"] = 1665750684,
 					["damage_taken"] = 0.00165,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["nome"] = "Elder Crag Coyote",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15573,8 +14523,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Mxzq"] = 0,
 									["Bear"] = 0,
+									["Mxzq"] = 0,
+									["Bear <Mxzq>"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -15584,29 +14535,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["end_time"] = 1665750684,
+					["on_hold"] = false,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["fight_component"] = true,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
+					["last_event"] = 0,
+					["last_dps"] = 0,
 					["start_time"] = 1665750681,
-					["delay"] = 0,
-					["aID"] = "2729",
+					["serial"] = "Creature-0-4458-0-3559-2729-000349036A",
+					["classe"] = "UNKNOW",
 				}, -- [25]
 				{
 					["flag_original"] = 2632,
@@ -15616,20 +14567,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Mxzq"] = 0,
 					},
-					["serial"] = "Creature-0-4458-0-3559-2727-0000492D76",
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["end_time"] = 1665778942,
-					["friendlyfire_total"] = 0,
+					["damage_taken"] = 0.008178,
 					["aID"] = "2727",
+					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008178,
-					["fight_component"] = true,
 					["dps_started"] = false,
+					["fight_component"] = true,
 					["total"] = 0.008178,
 					["last_dps"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["nome"] = "Crag Coyote",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15651,29 +14602,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.008178,
+					["monster"] = true,
 					["friendlyfire"] = {
 					},
-					["monster"] = true,
+					["end_time"] = 1665778942,
 					["custom"] = 0,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["on_hold"] = false,
 					["start_time"] = 1665778939,
-					["delay"] = 0,
-					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4458-0-3559-2727-0000492D76",
+					["friendlyfire_total"] = 0,
 				}, -- [26]
 				{
 					["flag_original"] = 4369,
@@ -15681,22 +14632,22 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Dustbelcher Ogre Mage"] = 0,
 						["Dustbelcher Lord"] = 0,
+						["Dustbelcher Ogre Mage"] = 0,
 					},
 					["pets"] = {
 					},
-					["end_time"] = 1665778942,
-					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
+					["tipo"] = 1,
 					["classe"] = "PET",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002039,
-					["serial"] = "Pet-0-4458-0-3559-7443-060074C845",
+					["delay"] = 0,
 					["dps_started"] = false,
-					["total"] = 0.002039,
-					["friendlyfire"] = {
-					},
+					["end_time"] = 1665778942,
+					["damage_taken"] = 0.002039,
 					["on_hold"] = false,
 					["nome"] = "Unknown <Mxzq>",
 					["spells"] = {
@@ -15708,8 +14659,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Dustbelcher Ogre Mage"] = 0,
 									["Dustbelcher Lord"] = 0,
+									["Dustbelcher Ogre Mage"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -15719,43 +14670,16 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
-							[27049] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Dustbelcher Lord"] = 0,
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 27049,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
 							[63900] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -15763,8 +14687,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Dustbelcher Ogre Mage"] = 0,
 									["Dustbelcher Lord"] = 0,
+									["Dustbelcher Ogre Mage"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -15774,15 +14698,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 63900,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[53532] = {
 								["c_amt"] = 0,
@@ -15792,6 +14716,7 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Dustbelcher Lord"] = 0,
+									["Dustbelcher Ogre Mage"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -15801,15 +14726,43 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 53532,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[27049] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Dustbelcher Lord"] = 0,
+									["Dustbelcher Ogre Mage"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 27049,
+								["r_dmg"] = 0,
 								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
@@ -15818,11 +14771,11 @@ _detalhes_database = {
 					["aID"] = "Pet-0-4458-0-3559-7443-060074C845",
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.002039,
-					["start_time"] = 1665778939,
-					["delay"] = 0,
+					["last_event"] = 0,
 					["last_dps"] = 0,
+					["start_time"] = 1665778939,
+					["serial"] = "Pet-0-4458-0-3559-7443-060074C845",
+					["total"] = 0.002039,
 				}, -- [27]
 				{
 					["flag_original"] = 68168,
@@ -15832,20 +14785,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Bear <Mxzq>"] = 0,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-5563-0-13399-2752-000050894D",
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["end_time"] = 1666363432,
 					["friendlyfire_total"] = 0,
+					["aID"] = "2752",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008608,
-					["dps_started"] = false,
 					["fight_component"] = true,
-					["end_time"] = 1666363432,
+					["dps_started"] = false,
+					["total"] = 0.008608,
 					["damage_taken"] = 0.008608,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["nome"] = "Rumbler",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15856,8 +14809,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Bear <Mxzq>"] = 0,
 									["Bear"] = 0,
+									["Bear <Mxzq>"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -15867,29 +14820,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 0.008608,
+					["on_hold"] = false,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["monster"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1666363429,
-					["serial"] = "Creature-0-5563-0-13399-2752-000050894D",
-					["aID"] = "2752",
+					["delay"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [28]
 				{
 					["flag_original"] = 2632,
@@ -15899,20 +14852,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Bear <Mxzq>"] = 0,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4480-0-178-2754-0000515C00",
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.004116,
-					["aID"] = "2754",
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004116,
-					["total"] = 0.004116,
+					["dps_started"] = false,
 					["monster"] = true,
-					["end_time"] = 1666381211,
-					["last_dps"] = 0,
-					["tipo"] = 1,
+					["total"] = 0.004116,
+					["damage_taken"] = 0.004116,
+					["last_event"] = 0,
 					["nome"] = "Anathemus",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15923,8 +14876,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Bear"] = 0,
 									["Bear <Mxzq>"] = 0,
+									["Bear"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -15934,29 +14887,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["classe"] = "UNKNOW",
+					["end_time"] = 1666381211,
 					["friendlyfire"] = {
 					},
-					["friendlyfire_total"] = 0,
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["on_hold"] = false,
 					["start_time"] = 1666381208,
-					["serial"] = "Creature-0-4480-0-178-2754-0000515C00",
-					["fight_component"] = true,
+					["delay"] = 0,
+					["aID"] = "2754",
 				}, -- [29]
 				{
 					["flag_original"] = 2600,
@@ -15968,18 +14921,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["classe"] = "UNKNOW",
 					["friendlyfire"] = {
 					},
 					["aID"] = "2931",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002584,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4480-0-178-2931-0000528AD6",
 					["fight_component"] = true,
 					["end_time"] = 1666381211,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.002584,
+					["last_dps"] = 0,
 					["nome"] = "Zaricotl",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15990,7 +14943,139 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Bear"] = 0,
 									["Bear <Mxzq>"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
+						},
+						["tipo"] = 2,
+					},
+					["last_event"] = 0,
+					["total"] = 0.002584,
+					["dps_started"] = false,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["on_hold"] = false,
+					["start_time"] = 1666381208,
+					["delay"] = 0,
+					["damage_taken"] = 0.002584,
+				}, -- [30]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.002593,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Bear <Mxzq>"] = 0,
+					},
+					["serial"] = "Creature-0-4479-0-14165-2850-00005314D6",
+					["pets"] = {
+					},
+					["damage_taken"] = 0.002593,
+					["aID"] = "2850",
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.002593,
+					["dps_started"] = false,
+					["monster"] = true,
+					["end_time"] = 1666467053,
+					["last_dps"] = 0,
+					["last_event"] = 0,
+					["nome"] = "Broken Tooth",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Bear <Mxzq>"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
+						},
+						["tipo"] = 2,
+					},
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
+					["total"] = 0.002593,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["on_hold"] = false,
+					["start_time"] = 1666467050,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
+				}, -- [31]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.004339,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Mxzq"] = 0,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["total"] = 0.004339,
+					["friendlyfire_total"] = 0,
+					["aID"] = "2829",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.004339,
+					["monster"] = true,
+					["dps_started"] = false,
+					["end_time"] = 1666701383,
+					["damage_taken"] = 0.004339,
+					["tipo"] = 1,
+					["nome"] = "Starving Buzzard",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Mxzq"] = 0,
 									["Bear"] = 0,
 								},
 								["n_dmg"] = 0,
@@ -16014,16 +15099,17 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["dps_started"] = false,
-					["total"] = 0.002584,
+					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
+					["fight_component"] = true,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1666381208,
-					["serial"] = "Creature-0-4480-0-178-2931-0000528AD6",
+					["last_dps"] = 0,
+					["start_time"] = 1666701380,
+					["serial"] = "Creature-0-4469-0-641-2829-000056992A",
 					["classe"] = "UNKNOW",
-				}, -- [30]
+				}, -- [32]
 			},
 		}, -- [1]
 		{
@@ -16033,28 +15119,28 @@ _detalhes_database = {
 					["flag_original"] = 1300,
 					["totalabsorb"] = 0.002119,
 					["last_hps"] = 0,
-					["targets_overheal"] = {
+					["healing_from"] = {
 					},
 					["targets"] = {
 						["Unknown <Mxzq>"] = 0,
 						["Mxzq"] = 0,
 						["Bear <Mxzq>"] = 0,
 					},
-					["delay"] = 0,
+					["classe"] = "HUNTER",
 					["pets"] = {
 					},
-					["iniciar_hps"] = false,
-					["healing_from"] = {
+					["totalover_without_pet"] = 0.002119,
+					["targets_overheal"] = {
 					},
-					["heal_enemy_amt"] = 0,
+					["aID"] = "4465-01C7FC88",
 					["totalover"] = 0.002119,
 					["total_without_pet"] = 0.002119,
-					["totalover_without_pet"] = 0.002119,
-					["totaldenied"] = 0.002119,
-					["healing_taken"] = 0.002119,
+					["iniciar_hps"] = false,
+					["start_time"] = 1665664873,
+					["heal_enemy_amt"] = 0,
 					["total"] = 0.002119,
-					["classe"] = "HUNTER",
-					["aID"] = "4465-01C7FC88",
+					["end_time"] = 1665664876,
+					["healing_taken"] = 0.002119,
 					["nome"] = "Mxzq",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16077,26 +15163,26 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
-								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
+								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["end_time"] = 1665664876,
+					["targets_absorbs"] = {
+					},
 					["heal_enemy"] = {
 					},
-					["tipo"] = 2,
+					["serial"] = "Player-4465-01C7FC88",
 					["custom"] = 0,
 					["last_event"] = 0,
 					["on_hold"] = false,
-					["start_time"] = 1665664873,
-					["serial"] = "Player-4465-01C7FC88",
-					["targets_absorbs"] = {
-					},
+					["totaldenied"] = 0.002119,
+					["delay"] = 0,
+					["tipo"] = 2,
 				}, -- [1]
 				{
 					["flag_original"] = 4369,
@@ -16105,7 +15191,7 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["heal_enemy_amt"] = 0,
+					["aID"] = "Pet-0-4448-0-14698-7443-030074C845",
 					["totalover"] = 0.007312,
 					["total_without_pet"] = 0.007312,
 					["total"] = 0.007312,
@@ -16124,7 +15210,9 @@ _detalhes_database = {
 					["healing_taken"] = 0.007312,
 					["fight_component"] = true,
 					["end_time"] = 1665664876,
-					["aID"] = "Pet-0-4448-0-14698-7443-030074C845",
+					["targets_overheal"] = {
+						["Bear <Mxzq>"] = 0,
+					},
 					["nome"] = "Bear <Mxzq>",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16148,34 +15236,32 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
-								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
+								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["targets_overheal"] = {
-						["Bear <Mxzq>"] = 0,
-					},
-					["last_event"] = 0,
-					["custom"] = 0,
-					["tipo"] = 2,
-					["totaldenied"] = 0.007312,
-					["start_time"] = 1665664873,
-					["delay"] = 0,
 					["classe"] = "PET",
+					["heal_enemy_amt"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["start_time"] = 1665664873,
+					["totaldenied"] = 0.007312,
+					["delay"] = 0,
+					["tipo"] = 2,
 				}, -- [2]
 				{
 					["flag_original"] = 4369,
-					["targets_overheal"] = {
+					["healing_from"] = {
 					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["classe"] = "PET",
+					["heal_enemy_amt"] = 0,
 					["totalover"] = 0.007922,
 					["total_without_pet"] = 0.007922,
 					["total"] = 0.007922,
@@ -16194,8 +15280,7 @@ _detalhes_database = {
 					["healing_taken"] = 0.007922,
 					["fight_component"] = true,
 					["end_time"] = 1665778942,
-					["healing_from"] = {
-					},
+					["aID"] = "Pet-0-4458-0-3559-7443-060074C845",
 					["nome"] = "Unknown <Mxzq>",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16218,23 +15303,24 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
-								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
+								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["aID"] = "Pet-0-4458-0-3559-7443-060074C845",
-					["heal_enemy_amt"] = 0,
+					["targets_overheal"] = {
+					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
-					["start_time"] = 1665778939,
 					["totaldenied"] = 0.007922,
+					["start_time"] = 1665778939,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["classe"] = "PET",
 				}, -- [3]
 			},
 		}, -- [2]
@@ -16243,7 +15329,7 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["received"] = 0.002719,
-					["resource"] = 2.816864000000001,
+					["resource"] = 3.991463999999998,
 					["targets"] = {
 						["Mxzq"] = 0,
 					},
@@ -16269,13 +15355,13 @@ _detalhes_database = {
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["flag_original"] = 1297,
+					["totalover"] = 0.002719,
 					["aID"] = "4465-01C7FC88",
 					["tipo"] = 3,
-					["last_event"] = 0,
 					["alternatepower"] = 0.002719,
+					["last_event"] = 0,
 					["serial"] = "Player-4465-01C7FC88",
-					["totalover"] = 0.002719,
+					["flag_original"] = 1297,
 				}, -- [1]
 			},
 		}, -- [3]
@@ -16292,6 +15378,12 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
+							[2974] = {
+								["id"] = 2974,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
 							[15571] = {
 								["id"] = 15571,
 								["targets"] = {
@@ -16300,12 +15392,6 @@ _detalhes_database = {
 							},
 							[27016] = {
 								["id"] = 27016,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[2974] = {
-								["id"] = 2974,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -16319,8 +15405,8 @@ _detalhes_database = {
 							[24394] = {
 								["id"] = 24394,
 								["targets"] = {
-									["Dustbelcher Ogre Mage"] = 0,
 									["Dustbelcher Lord"] = 0,
+									["Dustbelcher Ogre Mage"] = 0,
 								},
 								["counter"] = 0,
 							},
@@ -16384,8 +15470,8 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[70893] = {
-								["id"] = 70893,
+							[34471] = {
+								["id"] = 34471,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -16414,8 +15500,8 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[33667] = {
-								["id"] = 33667,
+							[53257] = {
+								["id"] = 53257,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -16426,14 +15512,14 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[53257] = {
-								["id"] = 53257,
+							[33667] = {
+								["id"] = 33667,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
-							[34471] = {
-								["id"] = 34471,
+							[70893] = {
+								["id"] = 70893,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -16441,24 +15527,6 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["aID"] = "4465-01C7FC88",
-					["debuff_uptime"] = 0,
-					["cc_done"] = 0,
-					["buff_uptime_targets"] = {
-					},
-					["grupo"] = true,
-					["cc_done_targets"] = {
-						["Dustbelcher Ogre Mage"] = 0,
-						["Dustbelcher Lord"] = 0,
-					},
-					["pets"] = {
-					},
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["debuff_uptime_targets"] = {
-					},
-					["nome"] = "Mxzq",
-					["serial"] = "Player-4465-01C7FC88",
 					["spell_cast"] = {
 						[34026] = 0,
 						[5118] = 0,
@@ -16474,39 +15542,57 @@ _detalhes_database = {
 						[5116] = 0,
 						[781] = 0,
 						[27021] = 0,
+						[49051] = 0,
 						[55502] = 0,
 						[75] = 0,
 						[2580] = 0,
 						[2383] = 0,
 					},
+					["debuff_uptime"] = 0,
+					["cc_done"] = 0,
+					["buff_uptime_targets"] = {
+					},
+					["grupo"] = true,
+					["cc_done_targets"] = {
+						["Dustbelcher Lord"] = 0,
+						["Dustbelcher Ogre Mage"] = 0,
+					},
+					["pets"] = {
+					},
+					["nome"] = "Mxzq",
+					["last_event"] = 0,
+					["debuff_uptime_targets"] = {
+					},
+					["tipo"] = 4,
+					["serial"] = "Player-4465-01C7FC88",
+					["aID"] = "4465-01C7FC88",
 				}, -- [1]
 				{
-					["fight_component"] = true,
 					["flag_original"] = 4369,
+					["fight_component"] = true,
 					["last_event"] = 0,
 					["cc_done"] = 0,
 					["nome"] = "Bear <Mxzq>",
 					["grupo"] = true,
-					["cc_done_targets"] = {
-						["Dustbelcher Ogre Mage"] = 0,
-						["Dustbelcher Lord"] = 0,
-					},
-					["pets"] = {
-					},
+					["classe"] = "PET",
 					["spell_cast"] = {
 						[27049] = 0,
 						[53532] = 0,
+						[61685] = 0,
 						[27047] = 0,
 						[63900] = 0,
-						[61685] = 0,
+					},
+					["cc_done_targets"] = {
+						["Dustbelcher Lord"] = 0,
+						["Dustbelcher Ogre Mage"] = 0,
 					},
 					["cc_done_spells"] = {
 						["_ActorTable"] = {
 							[24394] = {
 								["id"] = 24394,
 								["targets"] = {
-									["Dustbelcher Ogre Mage"] = 0,
 									["Dustbelcher Lord"] = 0,
+									["Dustbelcher Ogre Mage"] = 0,
 								},
 								["counter"] = 0,
 							},
@@ -16514,179 +15600,196 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["aID"] = "Pet-0-4448-0-14698-7443-030074C845",
-					["classe"] = "PET",
+					["pets"] = {
+					},
 					["serial"] = "Pet-0-4448-0-14698-7443-030074C845",
 					["tipo"] = 4,
 				}, -- [2]
 				{
 					["monster"] = true,
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["nome"] = "Dustbelcher Ogre Mage",
-					["flag_original"] = 2632,
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						[20822] = 0,
 						[6742] = 0,
 					},
 					["fight_component"] = true,
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
 					["aID"] = "2720",
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-4448-0-14698-2720-000047DA68",
-					["pets"] = {
-					},
+					["flag_original"] = 2632,
 				}, -- [3]
 				{
 					["monster"] = true,
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["nome"] = "Dustbelcher Lord",
-					["flag_original"] = 68168,
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						[13730] = 0,
 						[9128] = 0,
 					},
 					["fight_component"] = true,
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
 					["aID"] = "2719",
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-4448-0-14698-2719-0000474B2E",
-					["pets"] = {
-					},
+					["flag_original"] = 68168,
 				}, -- [4]
 				{
 					["monster"] = true,
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["nome"] = "Felpaw Scavenger",
-					["flag_original"] = 68168,
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						[3604] = 0,
 						[3427] = 0,
 					},
 					["fight_component"] = true,
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
 					["aID"] = "8960",
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-4469-1-16020-8960-000046F6C7",
-					["pets"] = {
-					},
+					["flag_original"] = 68168,
 				}, -- [5]
 				{
 					["monster"] = true,
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["nome"] = "Bloodfury Ambusher",
-					["flag_original"] = 2632,
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						[2608] = 0,
 					},
 					["fight_component"] = true,
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
 					["aID"] = "4025",
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-4458-1-1206-4025-0002C6D968",
-					["pets"] = {
-					},
+					["flag_original"] = 2632,
 				}, -- [6]
 				{
 					["monster"] = true,
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["nome"] = "Maraudine Priest",
-					["flag_original"] = 2632,
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						[11639] = 0,
 					},
 					["fight_component"] = true,
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
 					["aID"] = "11685",
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-4447-1-21735-11685-0000473BD5",
-					["pets"] = {
-					},
+					["flag_original"] = 2632,
 				}, -- [7]
 				{
 					["monster"] = true,
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["nome"] = "Ghostly Raider",
-					["flag_original"] = 68168,
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						[17174] = 0,
 						[6533] = 0,
 						[6660] = 0,
 					},
 					["fight_component"] = true,
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
 					["aID"] = "11686",
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-4447-1-21735-11686-0000473ABE",
-					["pets"] = {
-					},
+					["flag_original"] = 68168,
 				}, -- [8]
 				{
 					["monster"] = true,
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["nome"] = "Rock Worm",
-					["flag_original"] = 2632,
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						[44477] = 0,
 					},
 					["fight_component"] = true,
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
 					["aID"] = "11788",
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-4447-1-21735-11788-000146D969",
-					["pets"] = {
-					},
+					["flag_original"] = 2632,
 				}, -- [9]
 				{
 					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["tipo"] = 4,
 					["nome"] = "Scalding Whelp",
+					["flag_original"] = 2632,
 					["spell_cast"] = {
 						[34083] = 0,
 					},
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["aID"] = "2725",
+					["serial"] = "Creature-0-4448-0-14698-2725-0006C6D967",
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["tipo"] = 4,
-					["aID"] = "2725",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4448-0-14698-2725-0006C6D967",
-					["flag_original"] = 2632,
 				}, -- [10]
 				{
 					["monster"] = true,
-					["aID"] = "2718",
-					["nome"] = "Dustbelcher Shaman",
-					["flag_original"] = 2632,
-					["pets"] = {
-					},
-					["fight_component"] = true,
 					["classe"] = "UNKNOW",
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["serial"] = "Creature-0-4458-0-3559-2718-0000491B83",
+					["nome"] = "Dustbelcher Shaman",
 					["spell_cast"] = {
 						[8005] = 0,
 					},
+					["pets"] = {
+					},
+					["fight_component"] = true,
+					["tipo"] = 4,
+					["aID"] = "2718",
+					["last_event"] = 0,
+					["serial"] = "Creature-0-4458-0-3559-2718-0000491B83",
+					["flag_original"] = 2632,
 				}, -- [11]
 				{
 					["fight_component"] = true,
-					["last_event"] = 0,
+					["aID"] = "Pet-0-4458-0-3559-7443-060074C845",
 					["nome"] = "Unknown <Mxzq>",
 					["grupo"] = true,
 					["pets"] = {
 					},
+					["tipo"] = 4,
+					["flag_original"] = 4369,
+					["last_event"] = 0,
+					["classe"] = "PET",
+					["serial"] = "Pet-0-4458-0-3559-7443-060074C845",
 					["spell_cast"] = {
 						[27049] = 0,
 						[53532] = 0,
-						[61685] = 0,
-						[63900] = 0,
 						[27047] = 0,
+						[63900] = 0,
+						[61685] = 0,
 					},
-					["flag_original"] = 4369,
-					["aID"] = "Pet-0-4458-0-3559-7443-060074C845",
-					["classe"] = "PET",
-					["serial"] = "Pet-0-4458-0-3559-7443-060074C845",
-					["tipo"] = 4,
 				}, -- [12]
+				{
+					["monster"] = true,
+					["last_event"] = 0,
+					["nome"] = "Dustbelcher Mauler",
+					["pets"] = {
+					},
+					["spell_cast"] = {
+						[3391] = 0,
+					},
+					["fight_component"] = true,
+					["aID"] = "2717",
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4469-0-641-2717-00034FA637",
+					["flag_original"] = 68168,
+				}, -- [13]
 			},
 		}, -- [4]
 		{
@@ -16704,7 +15807,7 @@ _detalhes_database = {
 		["alternate_power"] = {
 		},
 		["combat_counter"] = 10649,
-		["spells_cast_timeline"] = {
+		["frags"] = {
 		},
 		["totals"] = {
 			0, -- [1]
@@ -16713,21 +15816,21 @@ _detalhes_database = {
 				0, -- [1]
 				[0] = 0,
 				["alternatepower"] = 0,
-				[3] = 0,
 				[6] = 0,
+				[3] = 0,
 			}, -- [3]
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["cooldowns_defensive"] = 0,
-				["dispell"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
 				["interrupt"] = 0,
 				["debuff_uptime"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 0,
 			}, -- [4]
-			["frags_total"] = 0,
 			["voidzone_damage"] = 0,
+			["frags_total"] = 0,
 		},
 		["player_last_events"] = {
 		},
@@ -16737,6 +15840,35 @@ _detalhes_database = {
 		["__call"] = {
 		},
 		["data_inicio"] = 0,
+		["PhaseData"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+			}, -- [1]
+			["damage"] = {
+			},
+			["heal_section"] = {
+			},
+			["heal"] = {
+			},
+			["damage_section"] = {
+			},
+		},
+		["overall_refreshed"] = true,
+		["hasSaved"] = true,
+		["spells_cast_timeline"] = {
+		},
+		["data_fim"] = 0,
+		["cleu_events"] = {
+			["n"] = 1,
+		},
+		["CombatSkillCache"] = {
+		},
+		["cleu_timeline"] = {
+		},
+		["start_time"] = 0,
+		["TimeData"] = {
+		},
 		["totals_grupo"] = {
 			0, -- [1]
 			0, -- [2]
@@ -16744,165 +15876,34 @@ _detalhes_database = {
 				0, -- [1]
 				[0] = 0,
 				["alternatepower"] = 0,
-				[3] = 0,
 				[6] = 0,
+				[3] = 0,
 			}, -- [3]
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["cooldowns_defensive"] = 0,
-				["dispell"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
 				["interrupt"] = 0,
 				["debuff_uptime"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 0,
 			}, -- [4]
 		},
-		["overall_refreshed"] = true,
-		["hasSaved"] = true,
-		["frags"] = {
-		},
-		["data_fim"] = 0,
-		["cleu_timeline"] = {
-		},
-		["CombatSkillCache"] = {
-		},
-		["cleu_events"] = {
-			["n"] = 1,
-		},
-		["start_time"] = 0,
-		["TimeData"] = {
-		},
-		["PhaseData"] = {
-			{
-				1, -- [1]
-				1, -- [2]
-			}, -- [1]
-			["damage_section"] = {
-			},
-			["heal_section"] = {
-			},
-			["heal"] = {
-			},
-			["damage"] = {
-			},
-		},
 	},
-	["force_font_outline"] = "",
-	["local_instances_config"] = {
-		{
-			["modo"] = 2,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
-			["verticalSnap"] = false,
-			["isLocked"] = true,
-			["is_open"] = true,
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["snap"] = {
-				[3] = 2,
-			},
-			["segment"] = 0,
-			["mode"] = 2,
-			["attribute"] = 1,
-			["pos"] = {
-				["normal"] = {
-					["y"] = 573.7485961914062,
-					["x"] = -1059.562889099121,
-					["w"] = 234.8974151611328,
-					["h"] = 136.6408081054688,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [1]
-		{
-			["modo"] = 2,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
-			["verticalSnap"] = false,
-			["isLocked"] = true,
-			["is_open"] = true,
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["snap"] = {
-				1, -- [1]
-			},
-			["segment"] = 0,
-			["mode"] = 2,
-			["attribute"] = 2,
-			["pos"] = {
-				["normal"] = {
-					["y"] = 573.7485961914062,
-					["x"] = -827.6269836425781,
-					["w"] = 228.9744415283203,
-					["h"] = 136.6408081054688,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [2]
-		{
-			["modo"] = 2,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = false,
-			["verticalSnap"] = false,
-			["isLocked"] = true,
-			["snap"] = {
-			},
-			["is_open"] = true,
-			["last_raid_plugin"] = "DETAILS_PLUGIN_TINY_THREAT",
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["segment"] = 0,
-			["mode"] = 2,
-			["attribute"] = 1,
-			["pos"] = {
-				["normal"] = {
-					["y"] = -517.3939361572266,
-					["x"] = 501.459716796875,
-					["w"] = 215.7857666015625,
-					["h"] = 170.4597473144531,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [3]
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
-	["character_data"] = {
-		["logons"] = 1951,
+	["last_realversion"] = 146,
+	["benchmark_db"] = {
+		["frame"] = {
+		},
 	},
 	["announce_cooldowns"] = {
-		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
+		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -16910,10 +15911,92 @@ _detalhes_database = {
 		["last_difficulty"] = 15,
 		["last_raid"] = "",
 	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["cached_roles"] = {
+		["Player-4465-01870DC6"] = "DAMAGER",
+		["Player-4465-02BAD1D8"] = "DAMAGER",
+		["Player-4465-003D8D47"] = "DAMAGER",
+		["Player-4465-036BE4A4"] = "TANK",
+		["Player-4465-0250291E"] = "TANK",
+		["Player-4465-03753C93"] = "DAMAGER",
+		["Player-4465-02CC91B8"] = "DAMAGER",
+		["Player-4465-02A4FBD7"] = "TANK",
+		["Player-4465-02D086C3"] = "DAMAGER",
+		["Player-4465-02D908D4"] = "HEALER",
+		["Player-4465-0218B725"] = "DAMAGER",
+		["Player-4465-02CDC2A2"] = "HEALER",
+		["Player-4465-02FEFF6C"] = "DAMAGER",
+		["Player-4465-026088A4"] = "DAMAGER",
+		["Player-4465-02BAB8B7"] = "DAMAGER",
+		["Player-4465-0261EC2B"] = "TANK",
+		["Player-4465-02693FB0"] = "DAMAGER",
+		["Player-4465-02523198"] = "HEALER",
+		["Player-4465-01544D47"] = "DAMAGER",
+		["Player-4465-02288795"] = "DAMAGER",
+		["Player-4465-02C331B4"] = "HEALER",
+		["Player-4465-027ED863"] = "DAMAGER",
+		["Player-4465-0258A1EB"] = "TANK",
+		["Player-4465-036E6B94"] = "DAMAGER",
+		["Player-4465-02DFB699"] = "DAMAGER",
+		["Player-4465-02D51E4E"] = "DAMAGER",
+		["Player-4465-02CD6CBC"] = "HEALER",
+		["Player-4465-013E4AF1"] = "DAMAGER",
+		["Player-4465-024C462D"] = "DAMAGER",
+		["Player-4465-02B962BC"] = "TANK",
+		["Player-4465-03674D0F"] = "DAMAGER",
+		["Player-4465-0288F4DB"] = "DAMAGER",
+		["Player-4465-02C0CB57"] = "HEALER",
+		["Player-4465-01678225"] = "DAMAGER",
+		["Player-4465-02E5912F"] = "HEALER",
+		["Player-4465-02C372E2"] = "HEALER",
+		["Player-4465-01794E06"] = "HEALER",
+		["Player-4465-02E11076"] = "DAMAGER",
+		["Player-4465-02E6F563"] = "DAMAGER",
+		["Player-4465-02885F76"] = "TANK",
+		["Player-4465-01739CFE"] = "DAMAGER",
+		["Player-4465-02BF7599"] = "HEALER",
+		["Player-4465-019144E8"] = "DAMAGER",
+		["Player-4465-036BB930"] = "TANK",
+		["Player-4465-02C17AB0"] = "DAMAGER",
+		["Player-4465-02B6A009"] = "DAMAGER",
+		["Player-4465-02DF9BE1"] = "DAMAGER",
+		["Player-4465-0256CA59"] = "TANK",
+		["Player-4465-02BA90EF"] = "DAMAGER",
+		["Player-4465-01740F8E"] = "HEALER",
+		["Player-4465-029390FF"] = "TANK",
+		["Player-4465-02DE4EAD"] = "DAMAGER",
+		["Player-4465-02C18DB0"] = "TANK",
+		["Player-4465-02BDBFFA"] = "DAMAGER",
+		["Player-4465-000A80E7"] = "DAMAGER",
+		["Player-4465-02DEBEAF"] = "DAMAGER",
+		["Player-4465-02E58336"] = "DAMAGER",
+		["Player-4465-02DFB097"] = "DAMAGER",
+		["Player-4465-02E5F434"] = "TANK",
+		["Player-4465-02A80D1D"] = "HEALER",
+		["Player-4465-02DDED22"] = "DAMAGER",
+		["Player-4465-028BE5FC"] = "DAMAGER",
+		["Player-4465-02C3C2E6"] = "HEALER",
+		["Player-4465-028A5465"] = "DAMAGER",
+		["Player-4465-02E44D83"] = "HEALER",
+		["Player-4465-01693BEB"] = "HEALER",
+		["Player-4465-02976C46"] = "TANK",
+		["Player-4465-0297669D"] = "DAMAGER",
+		["Player-4465-02EB3CD0"] = "DAMAGER",
+		["Player-4465-0275626C"] = "TANK",
+		["Player-4465-00F8D26F"] = "DAMAGER",
+		["Player-4465-02E29C09"] = "HEALER",
+		["Player-4465-02C807FC"] = "HEALER",
+		["Player-4465-01C7FC88"] = "DAMAGER",
+		["Player-4465-01CBD6E9"] = "DAMAGER",
+		["Player-4465-01487BDF"] = "DAMAGER",
+		["Player-4465-02DC8E2E"] = "DAMAGER",
+		["Player-4465-02BCA418"] = "DAMAGER",
+		["Player-4465-02503EFC"] = "TANK",
+		["Player-4465-02CDCDC3"] = "TANK",
+		["Player-4465-02DF6FC1"] = "TANK",
+		["Player-4465-02E38B90"] = "DAMAGER",
+		["Player-4465-0010144A"] = "DAMAGER",
 	},
 	["cached_specs"] = {
+		["Player-4465-01C7FC88"] = 253,
 	},
 }

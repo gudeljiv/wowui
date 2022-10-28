@@ -1,10 +1,10 @@
-## Interface: 90207
+## Interface: 100000
 ## Title: Select
 ## Notes: This addon creates the /select macro command to create flyouts for items and spells.
 ## Author: Gello
 ## SavedVariables: SelectSettings
 ## SavedVariablesPerCharacter: SelectPerCharacterSettings
-## Version: 3.4.1
+## Version: 3.4.2
 ## X-WoWI-ID: 11607
 ## X-Wago-ID: 5bGok1G0
 ## X-Curse-Project-ID: 45081

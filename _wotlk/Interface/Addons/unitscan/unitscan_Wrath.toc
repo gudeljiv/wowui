@@ -1,7 +1,0 @@
-## Interface: 30400
-## Author: tablegrapes
-## Title: unitscan
-## Version: 3.4.0.4
-## Notes: Unit scanner with flashy alert 
-## SavedVariables: unitscan_targets
-unitscan.lua

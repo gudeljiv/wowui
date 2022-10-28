@@ -35,8 +35,8 @@ screen_height = GetSystemMetrics(1)
 monitor = str(screen_width)
 
 if monitor == "3840":
-    x = 10
-    y = 10
+    x = 20
+    y = 20
     p_offgcd_left = 105
     p_combat_left = 24
     p_interrupt_left = 42
@@ -44,8 +44,8 @@ if monitor == "3840":
     p_clss_left = 74
     p_rotation_left = 94
 if monitor == "2560":
-    x = 6
-    y = 6
+    x = 12
+    y = 12
     p_offgcd_left = 70
     p_combat_left = 17
     p_interrupt_left = 27
@@ -53,8 +53,8 @@ if monitor == "2560":
     p_clss_left = 49
     p_rotation_left = 60
 if monitor == "3072":
-    x = 9
-    y = 9
+    x = 18
+    y = 18
     p_combat_left = 22
     p_offgcd_left = 93
     p_interrupt_left = 37
@@ -140,8 +140,8 @@ with keyboard.Listener(on_press=on_press) as listener:
             start_time = time.time()
             active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
-            p_main = {"top": 0, "left": 0, "width": x*2, "height": y*2}
-            p_offgcd = {"top": 0, "left":  p_offgcd_left, "width": x*2, "height": y*2}
+            p_main = {"top": 0, "left": 0, "width": x, "height": y}
+            p_offgcd = {"top": 0, "left":  p_offgcd_left, "width": x, "height": y}
             p_combat = {"top": 0, "left": p_combat_left, "width": 7, "height": 7}
             p_interrupt = {"top": 0, "left": p_interrupt_left, "width": 7, "height": 7}
             p_behind = {"top": 0, "left": p_behind_left, "width": 7, "height": 7}
@@ -150,13 +150,13 @@ with keyboard.Listener(on_press=on_press) as listener:
 
             grabbed_image = dir_path + "/images/_/main.png".format(**p_main)
             main_image = sct.grab(p_main)
-            main = main_image.pixel(int(x/2), int(y/2))
+            # main = main_image.pixel(int(x/2), int(y/2))
             if debug:
                 mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
 
             q_image = dir_path + "/images/_/offgcd.png".format(**p_offgcd)
             offgcd_image = sct.grab(p_offgcd)
-            offgcd = offgcd_image.pixel(int(x/2), int(y/2))
+            # offgcd = offgcd_image.pixel(int(x/2), int(y/2))
             if debug:
                 mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=q_image)
 

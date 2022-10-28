@@ -10,7 +10,14 @@ import sys
 import mss
 import mss.tools
 import numpy
-import win32gui
+
+if(os.name == "posix"):
+    from AppKit import NSScreen
+    from AppKit import NSWorkspace
+else:
+    import win32gui
+    from win32api import GetSystemMetrics
+
 import math
 
 from pynput import keyboard
@@ -19,8 +26,8 @@ from os.path import isfile, join
 from os import listdir
 from os.path import exists
 from skimage.metrics import structural_similarity
-from win32api import GetSystemMetrics
 from datetime import datetime
+
 
 combat = False
 debug = False
@@ -29,14 +36,20 @@ dprint = False
 pause = True
 wow_class = "warrior"
 
-screen_width = GetSystemMetrics(0)
-screen_height = GetSystemMetrics(1)
+if os.name == "posix":
+    screen_width = NSScreen.mainScreen().frame().size.width
+    screen_height = NSScreen.mainScreen().frame().size.height
+else:
+    screen_width = GetSystemMetrics(0)
+    screen_height = GetSystemMetrics(1)
 
 monitor = str(screen_width)
 
 if monitor == "3840":
     x = 10
     y = 10
+    c_width = 7
+    c_height = 7
     p_offgcd_left = 105
     p_combat_left = 24
     p_interrupt_left = 42
@@ -46,6 +59,8 @@ if monitor == "3840":
 if monitor == "2560":
     x = 6
     y = 6
+    c_width = 7
+    c_height = 7
     p_offgcd_left = 70
     p_combat_left = 17
     p_interrupt_left = 27
@@ -55,12 +70,25 @@ if monitor == "2560":
 if monitor == "3072":
     x = 9
     y = 9
+    c_width = 7
+    c_height = 7
     p_combat_left = 22
     p_offgcd_left = 93
     p_interrupt_left = 37
     p_behind_left = 53
     p_clss_left = 66
     p_rotation_left = 70
+if monitor == "2048.0":
+    x = 11
+    y = 11
+    c_width = 5
+    c_height = 5
+    p_combat_left = 14
+    p_interrupt_left = 24
+    p_behind_left = 32
+    p_clss_left = 42
+    p_rotation_left = 51
+    p_offgcd_left = 59
 
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -68,23 +96,34 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 abilities_folder = dir_path + "\images\\" + monitor
 # abilities_list = [f for f in listdir(abilities_folder) if isfile(join(abilities_folder, f))]
 
+print(abilities_folder)
+
 healing = {}
-for skill in skills["healing"]:
-    healing[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+try:
+    for skill in skills["healing"]:
+        healing[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+except:
+    print("healing skills missing", datetime.now().strftime("%H:%M:%S"))
 
 abilities = {}
 # for ability in abilities_list:
 #     cv2grey = cv2.cvtColor(cv2.imread(abilities_folder + "/" + ability), cv2.COLOR_BGR2GRAY)
 #     abilities[ability.replace(".png", "")] = cv2grey
-
-for skill in skills[wow_class]:
-    abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
-    abilities = {**abilities, **healing}
+try:
+    for skill in skills[wow_class]:
+        abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+        abilities = {**abilities, **healing}
+except:
+    print("main skills missing", datetime.now().strftime("%H:%M:%S"))
 
 
 abilities_offgcd = {}
-for skill in skills["offgcd"][wow_class]:
-    abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+try:
+    for skill in skills["offgcd"][wow_class]:
+        abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+except:
+    print("offgcd skills missing", datetime.now().strftime("%H:%M:%S"))
+
 
 skills_loaded = "warrior"
 print("Script loaded and ready.", "Rotation is paused.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"))
@@ -93,6 +132,9 @@ print("Script loaded and ready.", "Rotation is paused.", "Monitor:", screen_widt
 def on_press(key):
     global debug, dprint, pause, mill
     # print(key)
+    if key == keyboard.Key.f7:
+        debug = not debug
+        print("debug:", debug)
 
 
 def parse_hex_color(string):
@@ -114,43 +156,54 @@ with keyboard.Listener(on_press=on_press) as listener:
 
         while True:
             start_time = time.time()
-            active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
+            if os.name == "posix":
+                active_window = NSWorkspace.sharedWorkspace().activeApplication()["NSApplicationBundleIdentifier"]
+            else:
+                active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
-            p_main = {"top": 0, "left": 0, "width": x*2, "height": y*2}
-            p_offgcd = {"top": 0, "left":  p_offgcd_left, "width": x*2, "height": y*2}
-            p_combat = {"top": 0, "left": p_combat_left, "width": 7, "height": 7}
-            p_interrupt = {"top": 0, "left": p_interrupt_left, "width": 7, "height": 7}
-            p_behind = {"top": 0, "left": p_behind_left, "width": 7, "height": 7}
-            p_clss = {"top": 0, "left": p_clss_left, "width": 7, "height": 7}
-            p_rotation = {"top": 0, "left": p_rotation_left, "width": 7, "height": 7}
+            # print(active_window)
 
-            grabbed_image = dir_path + "/images/_/main.png".format(**p_main)
-            main_image = sct.grab(p_main)
-            main = main_image.pixel(int(x/2), int(y/2))
-            mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
+            if active_window != "com.blizzard.worldofwarcraft":
+                continue
 
-            q_image = dir_path + "/images/_/offgcd.png".format(**p_offgcd)
-            offgcd_image = sct.grab(p_offgcd)
-            offgcd = offgcd_image.pixel(int(x/2), int(y/2))
-            mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=q_image)
+            if debug:
+                p_main = {"top": 0, "left": 0, "width": x, "height": y}
+                p_offgcd = {"top": 0, "left":  p_offgcd_left, "width": x, "height": y}
+                p_combat = {"top": 0, "left": p_combat_left, "width": c_width, "height": c_height}
+                p_interrupt = {"top": 0, "left": p_interrupt_left, "width": c_width, "height": c_height}
+                p_behind = {"top": 0, "left": p_behind_left, "width": c_width, "height": c_height}
+                p_clss = {"top": 0, "left": p_clss_left, "width": c_width, "height": c_height}
+                p_rotation = {"top": 0, "left": p_rotation_left, "width": c_width, "height": c_height}
 
-            combat_image = sct.grab(p_combat)
-            combat = combat_image.pixel(5, 5)
-            mss.tools.to_png(combat_image.rgb, combat_image.size, output="_robot/images/_/combat.png".format(**p_combat))
+                grabbed_image = dir_path + "/images/_/1. main.png".format(**p_main)
+                main_image = sct.grab(p_main)
+                mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
 
-            interrupt_image = sct.grab(p_interrupt)
-            interrupt = interrupt_image.pixel(5, 5)
-            mss.tools.to_png(interrupt_image.rgb, interrupt_image.size, output="_robot/images/_/interrupt.png".format(**p_interrupt))
+                q_image = dir_path + "/images/_/7. offgcd.png".format(**p_offgcd)
+                offgcd_image = sct.grab(p_offgcd)
+                mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=q_image)
 
-            behind_image = sct.grab(p_behind)
-            behind = behind_image.pixel(5, 5)
-            mss.tools.to_png(behind_image.rgb, behind_image.size, output="_robot/images/_/behind.png".format(**p_behind))
+                combat_image = sct.grab(p_combat)
+                combat = combat_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
+                mss.tools.to_png(combat_image.rgb, combat_image.size, output="_robot/images/_/2. combat.png".format(**p_combat))
 
-            clss_image = sct.grab(p_clss)
-            clss = clss_image.pixel(5, 5)
-            mss.tools.to_png(clss_image.rgb, clss_image.size, output="_robot/images/_/clss.png".format(**p_clss))
+                interrupt_image = sct.grab(p_interrupt)
+                interrupt = interrupt_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
+                mss.tools.to_png(interrupt_image.rgb, interrupt_image.size, output="_robot/images/_/3. interrupt.png".format(**p_interrupt))
 
-            hex = '#%02x%02x%02x' % clss
+                behind_image = sct.grab(p_behind)
+                behind = behind_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
+                mss.tools.to_png(behind_image.rgb, behind_image.size, output="_robot/images/_/4. behind.png".format(**p_behind))
 
-            print(hex, clss, datetime.now().strftime("%H:%M:%S"))
-            time.sleep(1)
+                clss_image = sct.grab(p_clss)
+                clss = clss_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
+                mss.tools.to_png(clss_image.rgb, clss_image.size, output="_robot/images/_/5. clss.png".format(**p_clss))
+
+                rotation_image = sct.grab(p_rotation)
+                rotation = rotation_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
+                mss.tools.to_png(rotation_image.rgb, rotation_image.size, output="_robot/images/_/6. rotation.png".format(**p_rotation))
+
+                hex = '#%02x%02x%02x' % clss
+
+
+

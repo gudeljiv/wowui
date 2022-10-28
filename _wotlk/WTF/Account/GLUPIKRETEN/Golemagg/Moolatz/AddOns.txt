@@ -191,3 +191,4 @@ XLoot_Group: disabled
 XLoot_Options: disabled
 Roll: disabled
 Gladdy: disabled
+NovaWorldBuffs: enabled
