@@ -38,7 +38,11 @@ function s.macro:UpdateAllMacros(callback)
             if body and body:match("/select ") then -- this macro has a /select
                 if select(4,GetBuildInfo())==100000 then -- annoyingly, in Dragonflight beta (but not ptr!) a button needs passed to /click to cast stuff
                     -- X should be LeftButton in theory, but that's too many characters and any single character works
-                    clicklineFormat = "/click [btn:2]S%03dM;S%03dA X"
+                    if GetCVarBool("ActionButtonUseKeyDown") then
+                        clicklineFormat = "/click [btn:2]S%03dM;S%03dA X"
+                    else
+                        clicklineFormat = "/click [btn:2]S%03dM;S%03dA"
+                    end
                 else
                     clicklineFormat = "/click [btn:2]S%03dM;S%03dA"
                 end

@@ -10,6 +10,7 @@ function s.action:Create(index,selectline)
     action.isActive = true
 
     action:SetAttribute("selectline",selectline)
+    action:RegisterForClicks("AnyDown","AnyUp")
 
     -- [@unit] conditions don't trigger a state change. pre-click wrap will set unit
     -- and cursor is not a valid unit, convert casts @cursor to a macrotext before the cast

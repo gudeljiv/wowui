@@ -78,6 +78,9 @@ function s.main:PLAYER_LOGIN()
     s.main.frame:RegisterEvent("PLAYER_REGEN_DISABLED")
     s.main.frame:RegisterEvent("PLAYER_REGEN_ENABLED")
     s.main.frame:RegisterEvent("PLAYER_EQUIPMENT_CHANGED")
+    if select(4,GetBuildInfo())==100000 then -- for 10.0.0 clients only
+        s.main.frame:RegisterEvent("CVAR_UPDATE")
+    end
 
     -- for now all caches are enabled from the start to improve reliability. note: moving this to an independent
     -- PLAYER_LOGIN from s.cache will often mean these caches will be empty/not enabled when first queried in this
@@ -128,12 +131,21 @@ function s.main:PLAYER_EQUIPMENT_CHANGED()
 	end
 end
 
+-- in 10.0.0, if ActionButtonUseKeyDown is 0 then /click needs a button; if 1 then it can't have a button (macro.lua)
+function s.main:CVAR_UPDATE(cvar,value)
+    if cvar=="ActionButtonUseKeyDown" then
+        s.main:UPDATE_MACROS()
+    end
+end
+
 -- the /select slash command actually does nothing and doesn't need to exist, but adding one to summon options
 -- if no parameters given
 SlashCmdList["SELECT"] = function(msg)
 	if (msg or ""):trim()=="" then
-		InterfaceOptionsFrame_Show()
-		InterfaceOptionsFrame_OpenToCategory("Select")
+        if select(4,GetBuildInfo())<100000 then
+		    InterfaceOptionsFrame_Show()
+        end
+        InterfaceOptionsFrame_OpenToCategory("Select")
 	end
 end
 SLASH_SELECT1 = "/select"

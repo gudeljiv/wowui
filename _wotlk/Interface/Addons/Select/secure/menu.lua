@@ -9,7 +9,7 @@ function s.menu:Create(action)
     local selectline = action:GetAttribute("selectline")
 
     local menu = CreateFrame("Button",format("S%03dM",index),action,"SecureHandlerClickTemplate,SecureHandlerStateTemplate")
-    menu:RegisterForClicks("AnyUp")
+    menu:RegisterForClicks("AnyDown","AnyUp")
 
     menu:SetScript("PreClick",s.menu.PreClick)
 
