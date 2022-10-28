@@ -27,12 +27,11 @@ function s.options.default()
     end
 end
 
-if select(4,GetBuildInfo())>=100000 then
-    local category = Settings.RegisterCanvasLayoutCategory(s.options, "Select")
-    Settings.RegisterAddOnCategory(category)
-else
-    InterfaceOptions_AddCategory(s.options)
-end
+-- if select(4,GetBuildInfo())>=100000 then
+--     local category = Settings.RegisterCanvasLayoutCategory(s.options, "Select")
+--     Settings.RegisterAddOnCategory(category)
+-- end
+InterfaceOptions_AddCategory(s.options)
 
 -- this enables/disabled the settings (makes them grey/uninteractive) depending on isEnabled; because changing settings can potentially
 -- set attributes, they're not enabled in combat; called when entering/leaving combat in main if optionsPanel is visible and in refresh above
