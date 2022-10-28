@@ -101,7 +101,7 @@ aoe.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassC
 
 local aoe_number
 xVermin.CheckIfLoadedWithTimer(
-	'RotationFrame_AOE',
+	'RotationFrame2',
 	function()
 		-- white -> skip
 		-- green -> single target
@@ -125,17 +125,17 @@ xVermin.CheckIfLoadedWithTimer(
 
 				aoe_number = 0
 				if IsAltKeyDown() or ChatFrame1EditBox:IsVisible() or IsMounted() or haveBuff then
-					RotationFrame_AOE:SetBackdropColor(1, 1, 1, 1) -- white
+					RotationFrame2:SetBackdropColor(1, 1, 1, 1) -- white
 				else
 					if InCombatLockdown() then
 						aoe_number = xVermin.AOE(skills_range[xVermin.Class])
 						if aoe_number > 1 then
-							RotationFrame_AOE:SetBackdropColor(1, 0, 0, 1) -- red --> DO AOE
+							RotationFrame2:SetBackdropColor(1, 0, 0, 1) -- red --> DO AOE
 						else
-							RotationFrame_AOE:SetBackdropColor(0, 1, 0, 1) -- green --> DO SINGLE TARGET
+							RotationFrame2:SetBackdropColor(0, 1, 0, 1) -- green --> DO SINGLE TARGET
 						end
 					else
-						RotationFrame_AOE:SetBackdropColor(1, 1, 1, 1) -- white --> OOC
+						RotationFrame2:SetBackdropColor(1, 1, 1, 1) -- white --> OOC
 					end
 				end
 				aoe.text:SetText(aoe_number)

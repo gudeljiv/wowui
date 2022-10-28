@@ -51,7 +51,7 @@ RXPCSettings = {
 		["Mxyz - Golemagg"] = {
 			["enableMinimapButton"] = false,
 			["enableTracker"] = false,
-			["frameHeight"] = 125.0002059936523,
+			["frameHeight"] = 125.0002212524414,
 			["xprate"] = 1.5,
 			["hardcore"] = false,
 		},

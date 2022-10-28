@@ -35,17 +35,21 @@ screen_height = GetSystemMetrics(1)
 monitor = str(screen_width)
 
 if monitor == "3840":
-    x = 20
-    y = 20
-    p_offgcd_left = 105
-    p_combat_left = 24
-    p_interrupt_left = 42
-    p_behind_left = 62
-    p_clss_left = 74
-    p_rotation_left = 94
+    x = 15
+    y = 15
+    c_width = 7
+    c_height = 7
+    p_offgcd_left = 21
+    p_combat_left = 39
+    p_interrupt_left = 57
+    p_behind_left = 74
+    p_clss_left = 88
+    p_rotation_left = 109
 if monitor == "2560":
     x = 12
     y = 12
+    c_width = 7
+    c_height = 7
     p_offgcd_left = 70
     p_combat_left = 17
     p_interrupt_left = 27
@@ -55,6 +59,8 @@ if monitor == "2560":
 if monitor == "3072":
     x = 18
     y = 18
+    c_width = 7
+    c_height = 7
     p_combat_left = 22
     p_offgcd_left = 93
     p_interrupt_left = 37
@@ -69,22 +75,27 @@ abilities_folder = dir_path + "\images\\" + monitor
 # abilities_list = [f for f in listdir(abilities_folder) if isfile(join(abilities_folder, f))]
 
 healing = {}
-for skill in skills["healing"]:
-    healing[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+try:
+    for skill in skills["healing"]:
+        healing[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+except:
+    print("healing abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
 
 abilities = {}
-# for ability in abilities_list:
-#     cv2grey = cv2.cvtColor(cv2.imread(abilities_folder + "/" + ability), cv2.COLOR_BGR2GRAY)
-#     abilities[ability.replace(".png", "")] = cv2grey
-
-for skill in skills[wow_class]:
-    abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
-    abilities = {**abilities, **healing}
+try:
+    for skill in skills[wow_class]:
+        abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+        abilities = {**abilities, **healing}
+except:
+    print("main abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
 
 
 abilities_offgcd = {}
-for skill in skills["offgcd"][wow_class]:
-    abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+try:
+    for skill in skills["offgcd"][wow_class]:
+        abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+except:
+    print("offgcd abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
 
 skills_loaded = "warrior"
 print("Script loaded and ready.", "Rotation is paused.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"))
@@ -92,8 +103,6 @@ print("Script loaded and ready.", "Rotation is paused.", "Monitor:", screen_widt
 
 def on_press(key):
     global debug, dprint, pause, mill
-
-    # print(key)
 
     try:
         if key == keyboard.Key.pause:
@@ -140,50 +149,47 @@ with keyboard.Listener(on_press=on_press) as listener:
             start_time = time.time()
             active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
-            p_main = {"top": 0, "left": 0, "width": x, "height": y}
-            p_offgcd = {"top": 0, "left":  p_offgcd_left, "width": x, "height": y}
-            p_combat = {"top": 0, "left": p_combat_left, "width": 7, "height": 7}
-            p_interrupt = {"top": 0, "left": p_interrupt_left, "width": 7, "height": 7}
-            p_behind = {"top": 0, "left": p_behind_left, "width": 7, "height": 7}
-            p_clss = {"top": 0, "left": p_clss_left, "width": 7, "height": 7}
-            p_rotation = {"top": 0, "left": p_rotation_left, "width": 7, "height": 7}
+            p_main = {"top": 2, "left": 2, "width": x, "height": y}
+            p_offgcd = {"top": 2, "left":  p_offgcd_left, "width": x, "height": y}
+            p_combat = {"top": 0, "left": p_combat_left, "width": c_width, "height": c_height}
+            p_interrupt = {"top": 0, "left": p_interrupt_left, "width": c_width, "height": c_height}
+            p_behind = {"top": 0, "left": p_behind_left, "width": c_width, "height": c_height}
+            p_clss = {"top": 0, "left": p_clss_left, "width": c_width, "height": c_height}
+            p_rotation = {"top": 0, "left": p_rotation_left, "width": c_width, "height": c_height}
 
-            grabbed_image = dir_path + "/images/_/main.png".format(**p_main)
+            grabbed_image = dir_path + "/images/_/1. main.png".format(**p_main)
             main_image = sct.grab(p_main)
             # main = main_image.pixel(int(x/2), int(y/2))
             if debug:
                 mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
 
-            q_image = dir_path + "/images/_/offgcd.png".format(**p_offgcd)
+            q_image = dir_path + "/images/_/6. offgcd.png".format(**p_offgcd)
             offgcd_image = sct.grab(p_offgcd)
             # offgcd = offgcd_image.pixel(int(x/2), int(y/2))
             if debug:
                 mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=q_image)
 
             combat_image = sct.grab(p_combat)
-            combat = combat_image.pixel(5, 5)
+            combat = combat_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
             if debug:
-                mss.tools.to_png(combat_image.rgb, combat_image.size, output="_robot/images/_/combat.png".format(**p_combat))
+                mss.tools.to_png(combat_image.rgb, combat_image.size, output="_robot/images/_/2. combat.png".format(**p_combat))
 
             interrupt_image = sct.grab(p_interrupt)
-            interrupt = interrupt_image.pixel(5, 5)
+            interrupt = interrupt_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
             if debug:
-                mss.tools.to_png(interrupt_image.rgb, interrupt_image.size, output="_robot/images/_/interrupt.png".format(**p_interrupt))
+                mss.tools.to_png(interrupt_image.rgb, interrupt_image.size, output="_robot/images/_/3. interrupt.png".format(**p_interrupt))
 
             behind_image = sct.grab(p_behind)
-            behind = behind_image.pixel(5, 5)
+            behind = behind_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
             if debug:
-                mss.tools.to_png(behind_image.rgb, behind_image.size, output="_robot/images/_/behind.png".format(**p_behind))
+                mss.tools.to_png(behind_image.rgb, behind_image.size, output="_robot/images/_/4. behind.png".format(**p_behind))
 
             clss_image = sct.grab(p_clss)
-            clss = clss_image.pixel(5, 5)
+            clss = clss_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
             if debug:
-                mss.tools.to_png(clss_image.rgb, clss_image.size, output="_robot/images/_/clss.png".format(**p_clss))
+                mss.tools.to_png(clss_image.rgb, clss_image.size, output="_robot/images/_/5. clss.png".format(**p_clss))
 
             hex = '#%02x%02x%02x' % clss
-
-            # if dprint:
-            #     print(hex)
 
             # matching closest class color to define in colors
             color_distance = 50
@@ -213,7 +219,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                         abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
                         abilities = {**abilities, **healing}
                     except:
-                        print("missing spell in " + wow_class + " --> " + skill["name"], datetime.now().strftime("%H:%M:%S"))
+                        print("missing spell in ", wow_class, " --> ", skill["name"], datetime.now().strftime("%H:%M:%S"))
 
                 abilities_offgcd = {}
                 try:
@@ -221,13 +227,6 @@ with keyboard.Listener(on_press=on_press) as listener:
                         abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
                 except:
                     print("offgcd error missing class --> ", wow_class, datetime.now().strftime("%H:%M:%S"))
-
-            # print(clss, '#%02x%02x%02x' % clss, wow_class)
-            # print(hex, combat, interrupt, wow_class)
-            # for skill in skills[wow_class]:
-            #     print(skill)
-            # time.sleep(1)
-            # continue
 
             if not debug and not pause:
 
@@ -250,16 +249,11 @@ with keyboard.Listener(on_press=on_press) as listener:
                 grabbed = cv2.cvtColor(numpy.array(main_image), cv2.COLOR_BGR2GRAY)
                 offgcd = cv2.cvtColor(numpy.array(offgcd_image), cv2.COLOR_BGR2GRAY)
 
-                # if dprint:
-                #     print("class", hex, wow_class)
-
                 # rotation
                 try:
                     for skill in skills[wow_class] + skills["healing"]:
                         for ability in abilities:
                             if ability == skill["name"]:
-                                # mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
-
                                 try:
                                     (score, diff) = structural_similarity(abilities[ability], grabbed, full=True)
                                     if score*100 > 90:

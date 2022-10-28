@@ -83,13 +83,17 @@ end
 -- 	end
 -- end)
 
--- local RotationTextureFrame = CreateFrame('Frame', 'RotationTextureFrame', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
--- RotationTextureFrame:SetSize(30, 30)
--- RotationTextureFrame:SetPoint('CENTER', 200, 50)
--- RotationTextureFrame:CreateBeautyBorder(8)
--- RotationTextureFrame.texture = RotationTextureFrame:CreateTexture(nil, 'BACKGROUND')
--- RotationTextureFrame.texture:SetPoint('CENTER')
--- RotationTextureFrame.texture:SetTexture(GetSpellTexture(78))
+local RotationTextureFrame = CreateFrame('Frame', 'RotationTextureFrame', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
+RotationTextureFrame:SetSize(30, 30)
+RotationTextureFrame:SetPoint('TOPLEFT', 0, 40)
+RotationTextureFrame:SetScale(0.4)
+RotationTextureFrame:CreateBeautyBorder(8)
+RotationTextureFrame:SetClampedToScreen(true)
+RotationTextureFrame.texture = RotationTextureFrame:CreateTexture(nil, 'BACKGROUND')
+RotationTextureFrame.texture:SetSize(RotationTextureFrame:GetSize())
+RotationTextureFrame.texture:SetPoint('CENTER')
+RotationTextureFrame.texture:SetTexture(GetSpellTexture(78))
+RotationTextureFrame:Hide()
 
 local data = {}
 local skills = {}

@@ -13,7 +13,7 @@ scale = 1232 / height
 -- local scale = tonumber(resolution_width) > 2000 and 0.55 or 768 / resolution_width
 
 xVermin.Config = {
-	UIscale = scale,
+	UIscale = 0.56,
 	font = {
 		arial = 'Fonts\\ARIALN.ttf',
 		atari = 'Interface\\AddOns\\xVermin\\Media\\Atari.ttf',
