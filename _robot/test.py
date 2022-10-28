@@ -10,6 +10,7 @@ import sys
 import mss
 import mss.tools
 import numpy
+import math
 
 if(os.name == "posix"):
     from AppKit import NSScreen
@@ -18,7 +19,6 @@ else:
     import win32gui
     from win32api import GetSystemMetrics
 
-import math
 
 from pynput import keyboard
 from pyautogui import *
@@ -27,7 +27,6 @@ from os import listdir
 from os.path import exists
 from skimage.metrics import structural_similarity
 from datetime import datetime
-
 
 combat = False
 debug = False
@@ -79,16 +78,15 @@ if monitor == "3072":
     p_clss_left = 66
     p_rotation_left = 70
 if monitor == "2048.0":
-    x = 11
-    y = 11
+    x = 8
+    y = 8
     c_width = 5
     c_height = 5
-    p_combat_left = 14
-    p_interrupt_left = 24
-    p_behind_left = 32
-    p_clss_left = 42
-    p_rotation_left = 51
-    p_offgcd_left = 59
+    p_offgcd_left = 13
+    p_combat_left = 24
+    p_interrupt_left = 33
+    p_behind_left = 43
+    p_clss_left = 52
 
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -167,19 +165,18 @@ with keyboard.Listener(on_press=on_press) as listener:
                 continue
 
             if debug:
-                p_main = {"top": 0, "left": 0, "width": x, "height": y}
-                p_offgcd = {"top": 0, "left":  p_offgcd_left, "width": x, "height": y}
+                p_main = {"top": 2, "left": 2, "width": x, "height": y}
+                p_offgcd = {"top": 2, "left":  p_offgcd_left, "width": x, "height": y}
                 p_combat = {"top": 0, "left": p_combat_left, "width": c_width, "height": c_height}
                 p_interrupt = {"top": 0, "left": p_interrupt_left, "width": c_width, "height": c_height}
                 p_behind = {"top": 0, "left": p_behind_left, "width": c_width, "height": c_height}
                 p_clss = {"top": 0, "left": p_clss_left, "width": c_width, "height": c_height}
-                p_rotation = {"top": 0, "left": p_rotation_left, "width": c_width, "height": c_height}
 
                 grabbed_image = dir_path + "/images/_/1. main.png".format(**p_main)
                 main_image = sct.grab(p_main)
                 mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
 
-                q_image = dir_path + "/images/_/7. offgcd.png".format(**p_offgcd)
+                q_image = dir_path + "/images/_/6. offgcd.png".format(**p_offgcd)
                 offgcd_image = sct.grab(p_offgcd)
                 mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=q_image)
 
@@ -198,10 +195,6 @@ with keyboard.Listener(on_press=on_press) as listener:
                 clss_image = sct.grab(p_clss)
                 clss = clss_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
                 mss.tools.to_png(clss_image.rgb, clss_image.size, output="_robot/images/_/5. clss.png".format(**p_clss))
-
-                rotation_image = sct.grab(p_rotation)
-                rotation = rotation_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
-                mss.tools.to_png(rotation_image.rgb, rotation_image.size, output="_robot/images/_/6. rotation.png".format(**p_rotation))
 
                 hex = '#%02x%02x%02x' % clss
 

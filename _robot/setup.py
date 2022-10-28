@@ -10,8 +10,16 @@ import sys
 import mss
 import mss.tools
 import numpy
-import win32gui
 import math
+import pyperclip
+
+if(os.name == "posix"):
+    from AppKit import NSScreen
+    from AppKit import NSWorkspace
+else:
+    import win32gui
+    from win32api import GetSystemMetrics
+
 
 from pynput import keyboard
 from pyautogui import *
@@ -19,7 +27,6 @@ from os.path import isfile, join
 from os import listdir
 from os.path import exists
 from skimage.metrics import structural_similarity
-from win32api import GetSystemMetrics
 from datetime import datetime
 
 combat = False
@@ -29,8 +36,12 @@ dprint = False
 pause = True
 wow_class = "warrior"
 
-screen_width = GetSystemMetrics(0)
-screen_height = GetSystemMetrics(1)
+if os.name == "posix":
+    screen_width = NSScreen.mainScreen().frame().size.width
+    screen_height = NSScreen.mainScreen().frame().size.height
+else:
+    screen_width = GetSystemMetrics(0)
+    screen_height = GetSystemMetrics(1)
 
 monitor = str(screen_width)
 
@@ -44,7 +55,6 @@ if monitor == "3840":
     p_interrupt_left = 57
     p_behind_left = 74
     p_clss_left = 88
-    p_rotation_left = 109
 if monitor == "2560":
     x = 12
     y = 12
@@ -55,7 +65,6 @@ if monitor == "2560":
     p_interrupt_left = 27
     p_behind_left = 38
     p_clss_left = 49
-    p_rotation_left = 60
 if monitor == "3072":
     x = 18
     y = 18
@@ -66,39 +75,24 @@ if monitor == "3072":
     p_interrupt_left = 37
     p_behind_left = 53
     p_clss_left = 66
-    p_rotation_left = 70
+if monitor == "2048.0":
+    x = 8
+    y = 8
+    c_width = 5
+    c_height = 5
+    p_offgcd_left = 13
+    p_combat_left = 24
+    p_interrupt_left = 33
+    p_behind_left = 43
+    p_clss_left = 52
 
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-abilities_folder = dir_path + "\images\\" + monitor
-
-# healing = {}
-# try:
-#     for skill in skills["healing"]:
-#         healing[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
-# except:
-#     print("healing abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
-
-# abilities = {}
-# try:
-#     for skill in skills[wow_class]:
-#         abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
-#         abilities = {**abilities, **healing}
-# except:
-#     print("main abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
-
-
-# abilities_offgcd = {}
-# try:
-#     for skill in skills["offgcd"][wow_class]:
-#         abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
-# except:
-#     print("offgcd abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
+abilities_folder = dir_path + "/images/" + monitor
 
 skills_loaded = "warrior"
 print("Script loaded and ready.", "Rotation is paused.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"))
-
 
 def on_press(key):
     global debug, dprint, pause, mill
@@ -112,7 +106,7 @@ def on_press(key):
 
 
 classes = {
-    "warrior", "druid", "rogue", "warlock", "mage", "hunter", "warlock", "death knight"
+    "warrior", "druid", "rogue", "warlock", "mage", "hunter", "death knight", "priest"
 }
 
 count = 0
@@ -123,7 +117,6 @@ with keyboard.Listener(on_press=on_press) as listener:
 
         while True:
             start_time = time.time()
-            active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
             p_main = {"top": 2, "left": 2, "width": x, "height": y}
             p_offgcd = {"top": 2, "left":  p_offgcd_left, "width": x, "height": y}
@@ -131,17 +124,6 @@ with keyboard.Listener(on_press=on_press) as listener:
             p_interrupt = {"top": 0, "left": p_interrupt_left, "width": c_width, "height": c_height}
             p_behind = {"top": 0, "left": p_behind_left, "width": c_width, "height": c_height}
             p_clss = {"top": 0, "left": p_clss_left, "width": c_width, "height": c_height}
-            p_rotation = {"top": 0, "left": p_rotation_left, "width": c_width, "height": c_height}
-
-            # m_image = dir_path + "/images/_/1. main.png".format(**p_main)
-            # main_image = sct.grab(p_main)
-            # if debug:
-            #     mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
-
-            # q_image = dir_path + "/images/_/6. offgcd.png".format(**p_offgcd)
-            # offgcd_image = sct.grab(p_offgcd)
-            # if debug:
-            #     mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=q_image)
 
             if count > 0:
                 quit()
@@ -151,7 +133,11 @@ with keyboard.Listener(on_press=on_press) as listener:
 
                 pyautogui.hotkey("enter")
                 time.sleep(0.1)
-                pyautogui.typewrite('/run RotationTextureFrame:Show()')
+                pyperclip.copy('/run RotationTextureFrame:Show()')
+                if os.name == "posix":
+                    pyautogui.hotkey('command', 'v')
+                else:
+                    pyautogui.hotkey('ctrl', 'v')
                 pyautogui.hotkey("enter")
 
                 for wclass in classes:
@@ -163,7 +149,11 @@ with keyboard.Listener(on_press=on_press) as listener:
                             # /run RotationTextureFrame.texture:SetTexture(GetSpellTexture("23881"))
                             pyautogui.hotkey("enter")
                             time.sleep(0.1)
-                            pyautogui.typewrite('/run RotationTextureFrame.texture:SetTexture(GetSpellTexture(' + str(skill["id"]) + '))')
+                            pyperclip.copy('/run RotationTextureFrame.texture:SetTexture(GetSpellTexture(' + str(skill["id"]) + '))')
+                            if os.name == "posix":
+                                pyautogui.hotkey('command', 'v')
+                            else:
+                                pyautogui.hotkey('ctrl', 'v')
                             pyautogui.hotkey("enter")
                             time.sleep(0.1)
 
@@ -179,7 +169,11 @@ with keyboard.Listener(on_press=on_press) as listener:
                             # /run RotationTextureFrame.texture:SetTexture(GetSpellTexture("23881"))
                             pyautogui.hotkey("enter")
                             time.sleep(0.1)
-                            pyautogui.typewrite('/run RotationTextureFrame.texture:SetTexture(GetSpellTexture(' + str(skill["id"]) + '))')
+                            pyperclip.copy('/run RotationTextureFrame.texture:SetTexture(GetSpellTexture(' + str(skill["id"]) + '))')
+                            if os.name == "posix":
+                                pyautogui.hotkey('command', 'v')
+                            else:
+                                pyautogui.hotkey('ctrl', 'v')
                             pyautogui.hotkey("enter")
                             time.sleep(0.1)
 
@@ -196,7 +190,11 @@ with keyboard.Listener(on_press=on_press) as listener:
                     print(number, wclass, skill["name"], abilities_folder + "/" + skill["name"]+".png")
                     pyautogui.hotkey("enter")
                     time.sleep(0.1)
-                    pyautogui.typewrite('/run RotationTextureFrame.texture:SetTexture(GetSpellTexture(' + str(skill["id"]) + '))')
+                    pyperclip.copy('/run RotationTextureFrame.texture:SetTexture(GetSpellTexture(' + str(skill["id"]) + '))')
+                    if os.name == "posix":
+                        pyautogui.hotkey('command', 'v')
+                    else:
+                        pyautogui.hotkey('ctrl', 'v')
                     pyautogui.hotkey("enter")
                     time.sleep(0.1)
 
@@ -208,5 +206,9 @@ with keyboard.Listener(on_press=on_press) as listener:
 
                 pyautogui.hotkey("enter")
                 time.sleep(0.1)
-                pyautogui.typewrite('/run RotationTextureFrame:Hide()')
+                pyperclip.copy('/run RotationTextureFrame:Hide()')
+                if os.name == "posix":
+                    pyautogui.hotkey('command', 'v')
+                else:
+                    pyautogui.hotkey('ctrl', 'v')
                 pyautogui.hotkey("enter")
