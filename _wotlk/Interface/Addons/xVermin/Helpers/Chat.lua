@@ -43,11 +43,13 @@ local function AddMessage(frame, text, ...)
 	return newAddMsg[frame:GetName()](frame, text, ...)
 end
 do
-	for i = 1, 5 do
+	for i = 1, 10 do
 		if i ~= 2 then -- skip combatlog
-			local f = _G[format('%s%d', 'ChatFrame', i)]
-			newAddMsg[format('%s%d', 'ChatFrame', i)] = f.AddMessage
-			f.AddMessage = AddMessage
+			if (_G['ChatFrame' .. i]) then
+				local f = _G[format('%s%d', 'ChatFrame', i)]
+				newAddMsg[format('%s%d', 'ChatFrame', i)] = f.AddMessage
+				f.AddMessage = AddMessage
+			end
 		end
 	end
 end
@@ -345,7 +347,7 @@ chat:SetScript(
 			function()
 				SetChat()
 				C_Timer.After(
-					1,
+					3,
 					function()
 						xVermin.SetChatChannels()
 					end

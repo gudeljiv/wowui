@@ -89,10 +89,14 @@ if monitor == "2048.0":
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-abilities_folder = dir_path + "/images/" + monitor
+if os.name == "posix":
+    abilities_folder = dir_path + "/images/" + monitor
+else:
+    abilities_folder = dir_path + "\images\\" + monitor
 
 skills_loaded = "warrior"
 print("Script loaded and ready.", "Rotation is paused.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"))
+
 
 def on_press(key):
     global debug, dprint, pause, mill

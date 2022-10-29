@@ -52,7 +52,7 @@ skills["warrior"] = [
     {"name": "shield slam", "id": 23922, "key": "4"},
     {"name": "devastate", "id": 20243, "key": "f2", "modifier": "ctrl"},
     {"name": "vigilance", "id": 50720, "key": "d", "modifier": "shift"},
-    {"name": "concussion blow", "id": 12809, "key": "g"},
+    {"name": "concussion blow", "id": 12809, "key": "8"},
     {"name": "hamstring", "id": 1715, "key": "1"}
 ]
 
@@ -100,7 +100,7 @@ skills["druid"] = [
     {"name": "mangle", "id": 33917, "key": "f3", "modifier": "ctrl"},
     {"name": "survival instincts", "id": 61336, "key": "d", "modifier": "alt"},
     {"name": "lacerate", "id": 33745, "key": "3"},
-    {"name": "berserk", "id": 50334, "key": "d", "modifier": "alt"},
+    {"name": "berserk", "id": 50334, "key": "r", "modifier": "alt"},
 ]
 
 skills["death knight"] = [

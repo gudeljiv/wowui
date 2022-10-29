@@ -191,5 +191,5 @@ Roll: disabled
 XLoot_Monitor: disabled
 XLoot_Master: disabled
 XLoot_Frame: disabled
-Gladdy: disabled
+Gladdy: enabled
 NovaWorldBuffs: enabled

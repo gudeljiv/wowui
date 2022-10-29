@@ -10,8 +10,16 @@ import sys
 import mss
 import mss.tools
 import numpy
-import win32gui
 import math
+import pyperclip
+
+if(os.name == "posix"):
+    from AppKit import NSScreen
+    from AppKit import NSWorkspace
+else:
+    import win32gui
+    from win32api import GetSystemMetrics
+
 
 from pynput import keyboard
 from pyautogui import *
@@ -19,7 +27,6 @@ from os.path import isfile, join
 from os import listdir
 from os.path import exists
 from skimage.metrics import structural_similarity
-from win32api import GetSystemMetrics
 from datetime import datetime
 
 combat = False
@@ -29,8 +36,12 @@ dprint = False
 pause = True
 wow_class = "warrior"
 
-screen_width = GetSystemMetrics(0)
-screen_height = GetSystemMetrics(1)
+if os.name == "posix":
+    screen_width = NSScreen.mainScreen().frame().size.width
+    screen_height = NSScreen.mainScreen().frame().size.height
+else:
+    screen_width = GetSystemMetrics(0)
+    screen_height = GetSystemMetrics(1)
 
 monitor = str(screen_width)
 
@@ -71,8 +82,10 @@ if monitor == "3072":
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-abilities_folder = dir_path + "\images\\" + monitor
-# abilities_list = [f for f in listdir(abilities_folder) if isfile(join(abilities_folder, f))]
+if os.name == "posix":
+    abilities_folder = dir_path + "/images/" + monitor
+else:
+    abilities_folder = dir_path + "\images\\" + monitor
 
 healing = {}
 try:
