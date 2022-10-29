@@ -1,59 +1,63 @@
 
 GladdyXZ = {
 	["profileKeys"] = {
-		["Mxzq - Golemagg"] = "Default",
-		["Battlearm - Golemagg"] = "Default",
-		["Mxyz - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "X",
+		["Mxyz - Golemagg"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
+		["Moolatz - Golemagg"] = "X",
+		["Mxzq - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Vermin - Golemagg"] = {
 			["buffsBuffsYOffset"] = -82.99993896484375,
 			["drXOffset"] = 329.8001708984375,
-			["buffsBuffsCooldownPos"] = "BOTTOM",
+			["buffsYOffset"] = 62.00006103515625,
 			["buffsCooldownPos"] = "TOP",
 			["racialXOffset"] = 255.900146484375,
 			["cooldownYOffset"] = 31.00006103515625,
-			["racialPos"] = "RIGHT",
+			["newLayout"] = true,
 			["ciXOffset"] = 80,
 			["castBarXOffset"] = -235.9000854492188,
-			["buffsBuffsXOffset"] = 28.9998779296875,
+			["racialAnchor"] = "trinket",
 			["drCooldownPos"] = "RIGHT",
 			["classIconPos"] = "LEFT",
 			["petXOffset"] = 181.0001220703125,
-			["growUp"] = false,
+			["buffsXOffset"] = 28.9998779296875,
 			["ciYOffset"] = -10.99993896484375,
 			["cooldownXPos"] = "LEFT",
 			["castBarPos"] = "LEFT",
 			["cooldownYPos"] = "TOP",
-			["trinketPos"] = "RIGHT",
-			["castBarYOffset"] = -30.5,
-			["ciAnchor"] = "healthBar",
-			["classIconXOffset"] = -74.9000244140625,
 			["petYOffset"] = -81.99993896484375,
+			["classIconXOffset"] = -74.9000244140625,
+			["ciAnchor"] = "healthBar",
+			["castBarYOffset"] = -30.5,
+			["trinketPos"] = "RIGHT",
 			["trinketXOffset"] = 182,
 			["drYOffset"] = -22.49993896484375,
-			["buffsXOffset"] = 28.9998779296875,
+			["growUp"] = false,
 			["ciPos"] = "TOP",
-			["racialAnchor"] = "trinket",
-			["newLayout"] = true,
+			["buffsBuffsXOffset"] = 28.9998779296875,
+			["racialPos"] = "RIGHT",
 			["padding"] = 1,
 			["bottomMargin"] = 95,
-			["buffsYOffset"] = 62.00006103515625,
+			["buffsBuffsCooldownPos"] = "BOTTOM",
 		},
 		["X"] = {
 			["drBorderColor"] = {
-				["b"] = 0.6431372549019607,
-				["g"] = 0.6431372549019607,
 				["r"] = 0.6431372549019607,
+				["g"] = 0.6431372549019607,
+				["b"] = 0.6431372549019607,
 			},
-			["cooldownBorderColor"] = {
-				["a"] = 0.5422002375125885,
-			},
+			["shadowsightTimerRelPoint1"] = "TOP",
 			["powerTextRightVOffset"] = 0,
 			["healthBarNameFontSize"] = 16,
 			["drFontScale"] = 0.9,
-			["drBorderStyle"] = "Interface\\AddOns\\Gladdy\\Images\\Border_rounded_blp",
+			["trinketBorderColor"] = {
+				["a"] = 0,
+				["r"] = 0.2588235294117647,
+				["g"] = 0.2588235294117647,
+				["b"] = 0.2588235294117647,
+			},
 			["npTremorFont"] = "Arial Narrow",
 			["auraListDefault"] = {
 				["6770"] = {
@@ -155,7 +159,7 @@ GladdyXZ = {
 				["1833"] = {
 					["enabled"] = false,
 				},
-				["31821"] = {
+				["16922"] = {
 					["enabled"] = false,
 				},
 				["51713"] = {
@@ -191,44 +195,43 @@ GladdyXZ = {
 				["34471"] = {
 					["enabled"] = false,
 				},
-				["19577"] = {
+				["6358"] = {
 					["enabled"] = false,
 				},
-				["49916"] = {
-					["enabled"] = false,
-				},
-				["64205"] = {
-					["enabled"] = false,
-				},
-				["31224"] = {
-					["enabled"] = false,
-				},
-				["51722"] = {
+				["31661"] = {
 					["enabled"] = false,
 				},
 				["29166"] = {
 					["enabled"] = false,
 				},
-				["1719"] = {
+				["31224"] = {
+					["enabled"] = false,
+				},
+				["45438"] = {
+					["enabled"] = false,
+				},
+				["64205"] = {
+					["enabled"] = false,
+				},
+				["1044"] = {
 					["enabled"] = false,
 				},
 				["19503"] = {
 					["enabled"] = false,
 				},
-				["33206"] = {
+				["49803"] = {
 					["enabled"] = false,
 				},
 				["871"] = {
 					["enabled"] = false,
 				},
-				["33395"] = {
+				["605"] = {
 					["enabled"] = false,
-					["priority"] = 19,
 				},
 				["16979"] = {
 					["enabled"] = false,
 				},
-				["1330"] = {
+				["64058"] = {
 					["enabled"] = false,
 				},
 				["26989"] = {
@@ -238,25 +241,25 @@ GladdyXZ = {
 				["20549"] = {
 					["enabled"] = false,
 				},
-				["44572"] = {
+				["49802"] = {
 					["enabled"] = false,
 				},
 				["1776"] = {
 					["enabled"] = false,
 				},
-				["64058"] = {
+				["1330"] = {
 					["enabled"] = false,
 				},
-				["49803"] = {
+				["44572"] = {
 					["enabled"] = false,
 				},
 				["2094"] = {
 					["enabled"] = false,
 				},
-				["2825"] = {
+				["18708"] = {
 					["enabled"] = false,
 				},
-				["47847"] = {
+				["33786"] = {
 					["enabled"] = false,
 				},
 				["12292"] = {
@@ -265,19 +268,19 @@ GladdyXZ = {
 				["49039"] = {
 					["enabled"] = false,
 				},
-				["32182"] = {
-					["enabled"] = false,
-				},
-				["19263"] = {
+				["47168"] = {
 					["enabled"] = false,
 				},
 				["12826"] = {
 					["enabled"] = false,
 				},
-				["55080"] = {
+				["19263"] = {
 					["enabled"] = false,
 				},
 				["48707"] = {
+					["enabled"] = false,
+				},
+				["55080"] = {
 					["enabled"] = false,
 				},
 				["74347"] = {
@@ -286,17 +289,17 @@ GladdyXZ = {
 				["6940"] = {
 					["enabled"] = false,
 				},
-				["18425"] = {
+				["53271"] = {
+					["enabled"] = false,
+				},
+				["34490"] = {
 					["enabled"] = false,
 				},
 				["42917"] = {
 					["enabled"] = false,
 					["priority"] = 19,
 				},
-				["34490"] = {
-					["enabled"] = false,
-				},
-				["53271"] = {
+				["18425"] = {
 					["enabled"] = false,
 				},
 				["4167"] = {
@@ -309,13 +312,13 @@ GladdyXZ = {
 					["enabled"] = false,
 					["priority"] = 19,
 				},
-				["47168"] = {
+				["32182"] = {
 					["enabled"] = false,
 				},
-				["33786"] = {
+				["47847"] = {
 					["enabled"] = false,
 				},
-				["18708"] = {
+				["2825"] = {
 					["enabled"] = false,
 				},
 				["23920"] = {
@@ -324,25 +327,26 @@ GladdyXZ = {
 				["5024"] = {
 					["enabled"] = false,
 				},
-				["605"] = {
+				["33395"] = {
+					["enabled"] = false,
+					["priority"] = 19,
+				},
+				["33206"] = {
 					["enabled"] = false,
 				},
-				["49802"] = {
+				["1719"] = {
 					["enabled"] = false,
 				},
-				["1044"] = {
-					["enabled"] = false,
-				},
-				["45438"] = {
+				["51722"] = {
 					["enabled"] = false,
 				},
 				["642"] = {
 					["enabled"] = false,
 				},
-				["31661"] = {
+				["49916"] = {
 					["enabled"] = false,
 				},
-				["6358"] = {
+				["19577"] = {
 					["enabled"] = false,
 				},
 				["8643"] = {
@@ -354,12 +358,13 @@ GladdyXZ = {
 				["26669"] = {
 					["enabled"] = false,
 				},
-				["16922"] = {
+				["31821"] = {
 					["enabled"] = false,
 				},
 			},
 			["castBarFont"] = "Arial Narrow",
-			["buffsXOffset"] = 29,
+			["classIconXOffset"] = -50,
+			["ciSize"] = 5,
 			["npTotems"] = false,
 			["trinketYOffset"] = 0.588592529296875,
 			["classIconBorderColor"] = {
@@ -367,7 +372,10 @@ GladdyXZ = {
 			},
 			["drIconPadding"] = 0.1,
 			["powerBarHeight"] = 12,
-			["powerMax"] = false,
+			["petHealthBarBorderColor"] = {
+				["a"] = 0,
+			},
+			["drFrameStrata"] = "HIGH",
 			["classIconYOffset"] = 0.8619050979614258,
 			["racialWidthFactor"] = 1,
 			["drEnabled"] = false,
@@ -379,7 +387,7 @@ GladdyXZ = {
 			["healthBarBgColor"] = {
 				["a"] = 0.4793903827667236,
 			},
-			["cooldownFont"] = "Arial Narrow",
+			["castBarWidth"] = 200,
 			["powerTextLeftHOffset"] = 1.900000000000006,
 			["locked"] = true,
 			["auraFont"] = "Arial Narrow",
@@ -394,30 +402,29 @@ GladdyXZ = {
 			["ciXOffset"] = -261.2501220703125,
 			["powerBarBgColor"] = {
 				["a"] = 0.345619261264801,
-				["b"] = 0,
-				["g"] = 0,
 				["r"] = 0,
+				["g"] = 0,
+				["b"] = 0,
 			},
 			["powerTextRightHOffset"] = -41,
 			["drHalfColor"] = {
 				["r"] = 0.01568627450980392,
 			},
 			["castBarIconStyle"] = "Interface\\AddOns\\Gladdy\\Images\\Border_Gloss",
-			["showMover"] = false,
 			["powerTextLeftVOffset"] = 13.40000000000001,
 			["healthBarHeight"] = 35,
 			["healthBarStealthColor"] = {
-				["b"] = 0.4549019607843137,
-				["g"] = 0.4549019607843137,
 				["r"] = 0.4549019607843137,
+				["g"] = 0.4549019607843137,
+				["b"] = 0.4549019607843137,
 			},
 			["trinketEnabled"] = false,
 			["racialXOffset"] = 163.2950134277344,
 			["racialBorderColor"] = {
 				["a"] = 0,
-				["b"] = 0.3215686274509804,
-				["g"] = 0.3215686274509804,
 				["r"] = 0.3215686274509804,
+				["g"] = 0.3215686274509804,
+				["b"] = 0.3215686274509804,
 			},
 			["rangeCheckEnabled"] = false,
 			["shadowsightAnnounce"] = false,
@@ -427,62 +434,30 @@ GladdyXZ = {
 			["petHealthBarFont"] = "Arial Narrow",
 			["drGrowDirection"] = "LEFT",
 			["classIconFrameStrata"] = "FULLSCREEN_DIALOG",
-			["powerPercentage"] = true,
-			["trinketSize"] = 48,
-			["healthTextLeftVOffset"] = 24,
+			["trinketWidthFactor"] = 1,
 			["trinketXOffset"] = 115.3906555175781,
-			["healthTextRightHOffset"] = -10,
+			["healthTextLeftVOffset"] = 24,
+			["ciAlpha"] = 0,
 			["shadowsightTimerX"] = 43.29921340942383,
-			["petXOffset"] = 281,
+			["petYOffset"] = -82,
 			["racialEnabled"] = false,
 			["auraInterruptColorsEnabled"] = false,
-			["drCategories"] = {
-				["incapacitate"] = {
-					["forceIcon"] = true,
-				},
-				["random_stun"] = {
-					["enabled"] = false,
-				},
-				["counterattack"] = {
-					["enabled"] = false,
-				},
-				["disarm"] = {
-					["enabled"] = false,
-				},
-				["charge"] = {
-					["enabled"] = false,
-				},
-				["random_root"] = {
-					["enabled"] = false,
-				},
-				["scatter"] = {
-					["enabled"] = false,
-				},
-				["horror"] = {
-					["enabled"] = false,
-				},
-				["fear"] = {
-					["icon"] = 136183,
-				},
-			},
+			["powerShowRace"] = false,
+			["healthBarTexture"] = "Melli",
 			["healthTextRightVOffset"] = -2,
 			["highlight"] = false,
 			["healthBarHealthFontSize"] = 14,
-			["healthMax"] = false,
-			["racialYOffset"] = 0.28271484375,
-			["ciSize"] = 5,
+			["ciBorderColor"] = {
+				["a"] = 0.5422002375125885,
+			},
+			["drDuration"] = 19.5,
+			["buffsBuffsXOffset"] = 29,
+			["powerPercentage"] = true,
 			["castBarYOffset"] = -10,
 			["petHealthBarTexture"] = "Melli",
-			["petHealthBarBorderColor"] = {
-				["a"] = 0,
-			},
+			["buffsBorderStyle"] = "Interface\\AddOns\\Gladdy\\Images\\Border_rounded_blp",
 			["racialSize"] = 48,
-			["trinketBorderColor"] = {
-				["a"] = 0,
-				["b"] = 0.2588235294117647,
-				["g"] = 0.2588235294117647,
-				["r"] = 0.2588235294117647,
-			},
+			["shadowsightTimerScale"] = 0.9,
 			["ciWidthFactor"] = 0.5,
 			["drXOffset"] = -95.12122344970703,
 			["ciEnabled"] = false,
@@ -493,10 +468,10 @@ GladdyXZ = {
 				["19244"] = {
 					["enabled"] = false,
 				},
-				["1766"] = {
+				["72"] = {
 					["enabled"] = false,
 				},
-				["72"] = {
+				["1766"] = {
 					["enabled"] = false,
 				},
 				["19675"] = {
@@ -533,6 +508,7 @@ GladdyXZ = {
 			},
 			["buffsEnabled"] = false,
 			["buffsFont"] = "Arial Narrow",
+			["hideBlizzard"] = "always",
 			["drLevelTextScale"] = 0.5,
 			["targetBorder"] = false,
 			["timerFormat"] = "seconds",
@@ -547,57 +523,82 @@ GladdyXZ = {
 			["healthBarFont"] = "Arial Narrow",
 			["petEnabled"] = false,
 			["castBarBorderSize"] = 3,
-			["shadowsightTimerRelPoint1"] = "TOP",
+			["cooldownBorderColor"] = {
+				["a"] = 0.5422002375125885,
+			},
 			["castBarXOffset"] = -210,
 			["classIconSize"] = 50,
 			["powerActual"] = false,
 			["castBarHeight"] = 25,
-			["powerShowRace"] = false,
-			["healthBarTexture"] = "Melli",
-			["shadowsightTimerScale"] = 0.9,
-			["ciBorderColor"] = {
-				["a"] = 0.5422002375125885,
+			["drCategories"] = {
+				["incapacitate"] = {
+					["forceIcon"] = true,
+				},
+				["random_stun"] = {
+					["enabled"] = false,
+				},
+				["counterattack"] = {
+					["enabled"] = false,
+				},
+				["disarm"] = {
+					["enabled"] = false,
+				},
+				["horror"] = {
+					["enabled"] = false,
+				},
+				["random_root"] = {
+					["enabled"] = false,
+				},
+				["scatter"] = {
+					["enabled"] = false,
+				},
+				["charge"] = {
+					["enabled"] = false,
+				},
+				["fear"] = {
+					["icon"] = 136183,
+				},
 			},
+			["drBorderStyle"] = "Interface\\AddOns\\Gladdy\\Images\\Border_rounded_blp",
+			["healthMax"] = false,
 			["shadowsightTimerY"] = -20.97173118591309,
 			["ciYOffset"] = -394.9999389648438,
 			["auraDebuffBorderColor"] = {
 				["a"] = 0,
 			},
-			["drDuration"] = 19.5,
 			["statusbarBorderOffset"] = 20,
 			["powerBarTexture"] = "Melli",
-			["buffsBorderStyle"] = "Interface\\AddOns\\Gladdy\\Images\\Border_rounded_blp",
-			["drFrameStrata"] = "HIGH",
-			["newLayout"] = true,
-			["buffsBuffsXOffset"] = 29,
-			["petHealthBarFontSize"] = 20,
-			["classIconXOffset"] = -50,
-			["powerBarFont"] = "Arial Narrow",
-			["petYOffset"] = -82,
-			["drLevelTextEnabled"] = false,
-			["castBarWidth"] = 200,
-			["drIconSize"] = 40,
 			["shadowsightTimerRelPoint2"] = "TOP",
+			["buffsXOffset"] = 29,
+			["powerMax"] = false,
+			["newLayout"] = true,
+			["petHealthBarFontSize"] = 20,
+			["petXOffset"] = 281,
+			["powerBarFont"] = "Arial Narrow",
+			["drLevelTextEnabled"] = false,
+			["cooldownFont"] = "Arial Narrow",
+			["trinketSize"] = 48,
+			["drIconSize"] = 40,
 			["healthTextLeft"] = "arena[arena]",
-			["trinketWidthFactor"] = 1,
 			["drYOffset"] = -3.244019508361816,
-			["ciAlpha"] = 0,
+			["racialYOffset"] = 0.28271484375,
+			["healthTextRightHOffset"] = -10,
 		},
 		["Default"] = {
 			["drBorderColor"] = {
-				["b"] = 0.6431372549019607,
-				["g"] = 0.6431372549019607,
 				["r"] = 0.6431372549019607,
+				["g"] = 0.6431372549019607,
+				["b"] = 0.6431372549019607,
 			},
 			["shadowsightTimerRelPoint1"] = "RIGHT",
 			["castBarXOffset"] = -29.89928436279297,
 			["shadowsightTimerX"] = -183.2110748291016,
 			["buffsFont"] = "Arial Narrow",
-			["locked"] = true,
+			["buffsDisableCircle"] = true,
 			["drDisableCircle"] = true,
 			["powerActual"] = false,
 			["trinketDisableCircle"] = true,
-			["auraFont"] = "Arial Narrow",
+			["trinketSize"] = 58,
 			["racialEnabled"] = false,
 			["drLevelTextScale"] = 0.5,
 			["healthBarNameFontSize"] = 15,
@@ -608,9 +609,9 @@ GladdyXZ = {
 			["bottomMargin"] = 24,
 			["drFontScale"] = 0.7000000000000001,
 			["trinketBorderColor"] = {
-				["b"] = 0.2588235294117647,
-				["g"] = 0.2588235294117647,
 				["r"] = 0.2588235294117647,
+				["g"] = 0.2588235294117647,
+				["b"] = 0.2588235294117647,
 			},
 			["highlight"] = false,
 			["totemPulseEnabled"] = false,
@@ -620,16 +621,22 @@ GladdyXZ = {
 			["castBarTexture"] = "Melli",
 			["shadowsightTimerShowTwoTimer"] = true,
 			["ciXOffset"] = 112.0001831054688,
-			["barWidth"] = 235,
+			["drGrowDirection"] = "LEFT",
 			["castBarIconSize"] = 24,
 			["drFont"] = "Arial Narrow",
-			["buffsDisableCircle"] = true,
+			["announcements"] = {
+				["resurrections"] = false,
+				["spellInterrupt"] = false,
+				["spec"] = false,
+				["drinks"] = false,
+				["trinketUsed"] = false,
+			},
 			["npTremorFont"] = "Arial Narrow",
 			["auraDisableCircle"] = true,
 			["ciYOffset"] = -3.99987804889679,
-			["cooldownMaxIconsPerLine"] = 4,
-			["buffsEnabled"] = false,
-			["trinketSize"] = 58,
+			["drIconSize"] = 48,
+			["castBarWidth"] = 324,
+			["petXOffset"] = 281,
 			["auraListDefault"] = {
 				["6770"] = {
 					["enabled"] = false,
@@ -730,7 +737,7 @@ GladdyXZ = {
 				["1833"] = {
 					["enabled"] = false,
 				},
-				["31821"] = {
+				["16922"] = {
 					["enabled"] = false,
 				},
 				["51713"] = {
@@ -766,43 +773,43 @@ GladdyXZ = {
 				["34471"] = {
 					["enabled"] = false,
 				},
-				["19577"] = {
+				["6358"] = {
 					["enabled"] = false,
 				},
-				["49916"] = {
-					["enabled"] = false,
-				},
-				["64205"] = {
-					["enabled"] = false,
-				},
-				["31224"] = {
-					["enabled"] = false,
-				},
-				["51722"] = {
+				["31661"] = {
 					["enabled"] = false,
 				},
 				["29166"] = {
 					["enabled"] = false,
 				},
-				["1719"] = {
+				["31224"] = {
+					["enabled"] = false,
+				},
+				["45438"] = {
+					["enabled"] = false,
+				},
+				["64205"] = {
+					["enabled"] = false,
+				},
+				["1044"] = {
 					["enabled"] = false,
 				},
 				["19503"] = {
 					["enabled"] = false,
 				},
-				["33206"] = {
+				["49803"] = {
 					["enabled"] = false,
 				},
 				["871"] = {
 					["enabled"] = false,
 				},
-				["33395"] = {
+				["605"] = {
 					["enabled"] = false,
 				},
 				["16979"] = {
 					["enabled"] = false,
 				},
-				["1330"] = {
+				["64058"] = {
 					["enabled"] = false,
 				},
 				["26989"] = {
@@ -811,25 +818,25 @@ GladdyXZ = {
 				["20549"] = {
 					["enabled"] = false,
 				},
-				["44572"] = {
+				["49802"] = {
 					["enabled"] = false,
 				},
 				["1776"] = {
 					["enabled"] = false,
 				},
-				["64058"] = {
+				["1330"] = {
 					["enabled"] = false,
 				},
-				["49803"] = {
+				["44572"] = {
 					["enabled"] = false,
 				},
 				["2094"] = {
 					["enabled"] = false,
 				},
-				["2825"] = {
+				["18708"] = {
 					["enabled"] = false,
 				},
-				["47847"] = {
+				["33786"] = {
 					["enabled"] = false,
 				},
 				["12292"] = {
@@ -838,19 +845,19 @@ GladdyXZ = {
 				["49039"] = {
 					["enabled"] = false,
 				},
-				["32182"] = {
-					["enabled"] = false,
-				},
-				["19263"] = {
+				["47168"] = {
 					["enabled"] = false,
 				},
 				["12826"] = {
 					["enabled"] = false,
 				},
-				["55080"] = {
+				["19263"] = {
 					["enabled"] = false,
 				},
 				["48707"] = {
+					["enabled"] = false,
+				},
+				["55080"] = {
 					["enabled"] = false,
 				},
 				["74347"] = {
@@ -859,16 +866,16 @@ GladdyXZ = {
 				["6940"] = {
 					["enabled"] = false,
 				},
-				["18425"] = {
-					["enabled"] = false,
-				},
-				["42917"] = {
+				["53271"] = {
 					["enabled"] = false,
 				},
 				["34490"] = {
 					["enabled"] = false,
 				},
-				["53271"] = {
+				["42917"] = {
+					["enabled"] = false,
+				},
+				["18425"] = {
 					["enabled"] = false,
 				},
 				["4167"] = {
@@ -880,13 +887,13 @@ GladdyXZ = {
 				["27010"] = {
 					["enabled"] = false,
 				},
-				["47168"] = {
+				["32182"] = {
 					["enabled"] = false,
 				},
-				["33786"] = {
+				["47847"] = {
 					["enabled"] = false,
 				},
-				["18708"] = {
+				["2825"] = {
 					["enabled"] = false,
 				},
 				["23920"] = {
@@ -895,25 +902,25 @@ GladdyXZ = {
 				["5024"] = {
 					["enabled"] = false,
 				},
-				["605"] = {
+				["33395"] = {
 					["enabled"] = false,
 				},
-				["49802"] = {
+				["33206"] = {
 					["enabled"] = false,
 				},
-				["1044"] = {
+				["1719"] = {
 					["enabled"] = false,
 				},
-				["45438"] = {
+				["51722"] = {
 					["enabled"] = false,
 				},
 				["642"] = {
 					["enabled"] = false,
 				},
-				["31661"] = {
+				["49916"] = {
 					["enabled"] = false,
 				},
-				["6358"] = {
+				["19577"] = {
 					["enabled"] = false,
 				},
 				["8643"] = {
@@ -925,29 +932,31 @@ GladdyXZ = {
 				["26669"] = {
 					["enabled"] = false,
 				},
-				["16922"] = {
+				["31821"] = {
 					["enabled"] = false,
 				},
 			},
-			["cooldownFont"] = "Arial Narrow",
-			["trinketFont"] = "Arial Narrow",
+			["auraFont"] = "Arial Narrow",
+			["racialYOffset"] = -0.4999999701976776,
 			["healthBarFont"] = "Arial Narrow",
-			["petYOffset"] = -82,
+			["petHealthBarTexture"] = "Melli",
 			["castBarFont"] = "Arial Narrow",
-			["cooldownFontScale"] = 0.8,
+			["cooldownBorderStyle"] = "Interface\\AddOns\\Gladdy\\Images\\Border_rounded_blp",
 			["buffsXOffset"] = 29,
 			["racialSize"] = 58,
-			["npTotems"] = false,
-			["petXOffset"] = 281,
-			["trinketWidthFactor"] = 1,
+			["cooldownFontScale"] = 0.8,
+			["locked"] = true,
+			["buffsBorderColor"] = {
+				["a"] = 0.5422002375125885,
+			},
 			["trinketYOffset"] = 5.960464477539063e-08,
-			["buffsBuffsXOffset"] = 29,
-			["racialYOffset"] = -0.4999999701976776,
+			["newLayout"] = true,
+			["healthBarHealthFontSize"] = 10,
 			["drXOffset"] = -103.8999252319336,
-			["classIconXOffset"] = -54.8997802734375,
-			["hideBlizzard"] = "always",
+			["castBarYOffset"] = -59.9998779296875,
+			["npTotems"] = false,
 			["racialDisableCircle"] = true,
-			["cooldownDisableCircle"] = true,
+			["castBarBorderSize"] = 3,
 			["classIconBorderColor"] = {
 				["a"] = 0.5422002375125885,
 			},
@@ -955,18 +964,14 @@ GladdyXZ = {
 			["healthBarTexture"] = "Melli",
 			["classIconSize"] = 58,
 			["castBarFontSize"] = 11.72811031341553,
-			["cooldownBorderColor"] = {
-				["b"] = 0.3843137254901961,
-				["g"] = 0.3843137254901961,
-				["r"] = 0.3843137254901961,
-			},
+			["cooldownMaxIconsPerLine"] = 4,
 			["castBarIconColor"] = {
 				["a"] = 0.5422002375125885,
 			},
-			["castBarBorderSize"] = 3,
-			["countdown"] = false,
-			["petHealthBarFontSize"] = 20,
-			["cooldownBorderStyle"] = "Interface\\AddOns\\Gladdy\\Images\\Border_rounded_blp",
+			["buffsEnabled"] = false,
+			["hideBlizzard"] = "always",
+			["drEnabled"] = false,
+			["cooldownDisableCircle"] = true,
 			["auraListInterrupts"] = {
 				["57994"] = {
 					["enabled"] = false,
@@ -974,10 +979,10 @@ GladdyXZ = {
 				["19244"] = {
 					["enabled"] = false,
 				},
-				["1766"] = {
+				["72"] = {
 					["enabled"] = false,
 				},
-				["72"] = {
+				["1766"] = {
 					["enabled"] = false,
 				},
 				["19675"] = {
@@ -994,75 +999,71 @@ GladdyXZ = {
 				},
 			},
 			["powerBarHeight"] = 12,
-			["announcements"] = {
-				["resurrections"] = false,
-				["spellInterrupt"] = false,
-				["spec"] = false,
-				["drinks"] = false,
-				["trinketUsed"] = false,
-			},
-			["cooldownXOffset"] = 353.9998779296875,
+			["countdown"] = false,
+			["targetBorder"] = false,
 			["shadowsightTimerY"] = 148.3888397216797,
-			["shadowsightTimerRelPoint2"] = "RIGHT",
-			["cooldownCooldownAlpha"] = 0.6000000000000001,
+			["classIconEnabled"] = false,
+			["buffsBuffsYOffset"] = -82.99993896484375,
 			["auraDebuffBorderColor"] = {
 				["a"] = 0.5422002375125885,
 			},
-			["powerMax"] = false,
-			["cooldownYGrowDirection"] = "DOWN",
-			["racialFont"] = "Arial Narrow",
-			["newLayout"] = true,
-			["frameScale"] = 0.8,
-			["drBorderColorsEnabled"] = false,
-			["buffsYOffset"] = 32,
+			["shadowsightTimerRelPoint2"] = "RIGHT",
 			["statusbarBorderOffset"] = 4.7,
+			["racialFont"] = "Arial Narrow",
+			["healthBarHeight"] = 45,
+			["frameScale"] = 0.8,
 			["powerBarTexture"] = "Melli",
+			["buffsYOffset"] = 32,
+			["cooldownYGrowDirection"] = "DOWN",
+			["drBorderColorsEnabled"] = false,
 			["powerShowSpec"] = false,
 			["racialWidthFactor"] = 1,
 			["healthBarBorderSize"] = 7.5,
 			["focusBorder"] = false,
-			["healthBarHeight"] = 45,
+			["classIconWidthFactor"] = 0.95,
 			["racialXOffset"] = 295.000732421875,
-			["drYOffset"] = -4.999878406524658,
+			["cooldownCooldownAlpha"] = 0.6000000000000001,
 			["racialBorderColor"] = {
-				["b"] = 0.3215686274509804,
-				["g"] = 0.3215686274509804,
 				["r"] = 0.3215686274509804,
+				["g"] = 0.3215686274509804,
+				["b"] = 0.3215686274509804,
 			},
+			["cooldownXOffset"] = 353.9998779296875,
+			["petHealthBarFontSize"] = 20,
 			["petEnabled"] = false,
-			["drEnabled"] = false,
-			["auraFontSizeScale"] = 0.9,
-			["buffsBuffsYOffset"] = -82.99993896484375,
-			["targetBorder"] = false,
+			["cooldownBorderColor"] = {
+				["r"] = 0.3843137254901961,
+				["g"] = 0.3843137254901961,
+				["b"] = 0.3843137254901961,
+			},
+			["castBarHeight"] = 23,
 			["cooldownIconPadding"] = 0,
 			["powerBarFont"] = "Arial Narrow",
-			["castBarHeight"] = 23,
 			["healthMax"] = false,
-			["drIconSize"] = 48,
-			["castBarYOffset"] = -59.9998779296875,
-			["buffsBorderColor"] = {
-				["a"] = 0.5422002375125885,
-			},
-			["healthBarHealthFontSize"] = 10,
+			["petYOffset"] = -82,
+			["drYOffset"] = -4.999878406524658,
+			["classIconXOffset"] = -54.8997802734375,
+			["trinketWidthFactor"] = 1,
+			["buffsBuffsXOffset"] = 29,
 			["powerBarBorderSize"] = 3.5,
-			["petHealthBarTexture"] = "Melli",
-			["classIconWidthFactor"] = 0.95,
+			["auraFontSizeScale"] = 0.9,
+			["powerMax"] = false,
 			["cooldownSize"] = 27.52403259277344,
-			["classIconEnabled"] = false,
-			["castBarWidth"] = 324,
+			["trinketFont"] = "Arial Narrow",
+			["cooldownFont"] = "Arial Narrow",
 			["petHealthBarFont"] = "Arial Narrow",
 			["cooldown"] = false,
-			["drGrowDirection"] = "LEFT",
+			["barWidth"] = 235,
 		},
-		["Mxyz - Golemagg"] = {
+		["Mxzq - Golemagg"] = {
 			["buffsBuffsYOffset"] = -82.99993896484375,
 			["drXOffset"] = 329.8001708984375,
 			["buffsYOffset"] = 62.00006103515625,
 			["buffsCooldownPos"] = "TOP",
-			["cooldownYOffset"] = 31.00006103515625,
 			["ciXOffset"] = 80,
-			["newLayout"] = true,
 			["racialXOffset"] = 255.900146484375,
+			["newLayout"] = true,
+			["cooldownYOffset"] = 31.00006103515625,
 			["castBarXOffset"] = -235.9000854492188,
 			["racialAnchor"] = "trinket",
 			["drCooldownPos"] = "RIGHT",
@@ -1088,15 +1089,49 @@ GladdyXZ = {
 			["bottomMargin"] = 95,
 			["buffsBuffsCooldownPos"] = "BOTTOM",
 		},
-		["Mxzq - Golemagg"] = {
-			["buffsBuffsYOffset"] = -82.99993896484375,
-			["drXOffset"] = 329.8001708984375,
+		["Moolatz - Golemagg"] = {
+			["buffsBuffsYOffset"] = -83.00018310546875,
+			["drXOffset"] = 329.80029296875,
 			["buffsBuffsCooldownPos"] = "BOTTOM",
 			["buffsCooldownPos"] = "TOP",
 			["ciXOffset"] = 80,
 			["racialXOffset"] = 255.900146484375,
 			["racialPos"] = "RIGHT",
+			["cooldownYOffset"] = 31,
+			["castBarXOffset"] = -235.9000854492188,
+			["buffsBuffsXOffset"] = 29,
+			["drCooldownPos"] = "RIGHT",
+			["classIconPos"] = "LEFT",
+			["petXOffset"] = 181,
+			["growUp"] = false,
+			["ciYOffset"] = -11,
+			["cooldownXPos"] = "LEFT",
+			["castBarPos"] = "LEFT",
+			["cooldownYPos"] = "TOP",
+			["trinketPos"] = "RIGHT",
+			["castBarYOffset"] = -30.50006103515625,
+			["ciAnchor"] = "healthBar",
+			["classIconXOffset"] = -74.9000244140625,
+			["petYOffset"] = -82.00018310546875,
+			["trinketXOffset"] = 182,
+			["drYOffset"] = -22.50006103515625,
+			["buffsXOffset"] = 29,
+			["ciPos"] = "TOP",
+			["racialAnchor"] = "trinket",
+			["newLayout"] = true,
+			["padding"] = 1,
+			["bottomMargin"] = 95.0001220703125,
+			["buffsYOffset"] = 62,
+		},
+		["Mxyz - Golemagg"] = {
+			["buffsBuffsYOffset"] = -82.99993896484375,
+			["drXOffset"] = 329.8001708984375,
+			["buffsBuffsCooldownPos"] = "BOTTOM",
+			["buffsCooldownPos"] = "TOP",
 			["cooldownYOffset"] = 31.00006103515625,
+			["ciXOffset"] = 80,
+			["racialPos"] = "RIGHT",
+			["racialXOffset"] = 255.900146484375,
 			["castBarXOffset"] = -235.9000854492188,
 			["buffsBuffsXOffset"] = 28.9998779296875,
 			["drCooldownPos"] = "RIGHT",

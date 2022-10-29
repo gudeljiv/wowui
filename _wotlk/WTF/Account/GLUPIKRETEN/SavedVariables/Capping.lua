@@ -11,18 +11,19 @@ CappingSettings = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["spacing"] = 1,
+			["lock"] = true,
+			["useMasterForQueue"] = false,
+			["fill"] = true,
+			["barTexture"] = "Melli",
+			["width"] = 220,
+			["height"] = 14,
 			["position"] = {
 				"TOPRIGHT", -- [1]
 				"TOPRIGHT", -- [2]
 				-336.0503540039063, -- [3]
 				-275.7182006835938, -- [4]
 			},
-			["spacing"] = 1,
-			["useMasterForQueue"] = false,
-			["fill"] = true,
-			["width"] = 220,
-			["height"] = 14,
-			["lock"] = true,
 		},
 	},
 }

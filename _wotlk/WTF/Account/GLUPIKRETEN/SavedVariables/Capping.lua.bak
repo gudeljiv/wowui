@@ -15,6 +15,7 @@ CappingSettings = {
 			["spacing"] = 1,
 			["useMasterForQueue"] = false,
 			["fill"] = true,
+			["barTexture"] = "Melli",
 			["width"] = 220,
 			["height"] = 14,
 			["position"] = {

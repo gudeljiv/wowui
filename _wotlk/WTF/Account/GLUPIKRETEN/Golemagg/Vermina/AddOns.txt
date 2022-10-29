@@ -177,7 +177,7 @@ XLoot_Frame: disabled
 XLoot: disabled
 XLoot_Group: disabled
 Roll: disabled
-Gladdy: disabled
+Gladdy: enabled
 NovaWorldBuffs: enabled
 LortiUI: disabled
 UberUI: disabled

@@ -185,4 +185,4 @@ XLoot_Frame: disabled
 XLoot_Master: disabled
 XLoot_Monitor: disabled
 teksLoot: disabled
-Gladdy: disabled
+Gladdy: enabled

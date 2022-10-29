@@ -190,5 +190,6 @@ XLoot: disabled
 XLoot_Group: disabled
 XLoot_Options: disabled
 Roll: disabled
-Gladdy: disabled
+Gladdy: enabled
 NovaWorldBuffs: enabled
+Capping_Options: enabled

@@ -591,9 +591,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 476465,
-		["timeStamp"] = 1502747.88,
-		["timeAtThisLevel"] = 31993,
+		["total"] = 476652,
+		["timeStamp"] = 1503547.089,
+		["timeAtThisLevel"] = 32180,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
