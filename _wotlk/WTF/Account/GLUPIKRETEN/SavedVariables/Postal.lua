@@ -1,31 +1,13 @@
 
 Postal3DB = {
-	["profileKeys"] = {
-		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-		["Vermina - Golemagg"] = "Vermina - Golemagg",
-		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
-		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
-		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
-		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
-		["Battitude - Golemagg"] = "Battitude - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
-		["Poklopac - Mirage Raceway"] = "Poklopac - Mirage Raceway",
-		["Provokator - Jin'do"] = "Provokator - Jin'do",
-		["Wells - Jin'do"] = "Wells - Jin'do",
-		["Tudum - Jin'do"] = "Tudum - Jin'do",
-		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
-		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
-	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
 				"Battitude|Golemagg|Horde|6|ROGUE", -- [1]
-				"Battlearm|Golemagg|Horde|73|DEATHKNIGHT", -- [2]
+				"Battlearm|Golemagg|Horde|74|DEATHKNIGHT", -- [2]
 				"Battlearm|Jin'do|Horde|2|SHAMAN", -- [3]
 				"Kaonac|Jin'do|Horde|1|PRIEST", -- [4]
-				"Moolatz|Golemagg|Horde|69|DRUID", -- [5]
+				"Moolatz|Golemagg|Horde|70|DRUID", -- [5]
 				"Mxyz|Golemagg|Horde|5|PRIEST", -- [6]
 				"Mxzq|Golemagg|Horde|71|HUNTER", -- [7]
 				"Pitchwise|Ashbringer|Horde|1|SHAMAN", -- [8]
@@ -39,6 +21,24 @@ Postal3DB = {
 				"Wells|Jin'do|Horde|8|DRUID", -- [16]
 			},
 		},
+	},
+	["profileKeys"] = {
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Vermina - Golemagg"] = "Vermina - Golemagg",
+		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
+		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
+		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
+		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
+		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+		["Battitude - Golemagg"] = "Battitude - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
+		["Poklopac - Mirage Raceway"] = "Poklopac - Mirage Raceway",
+		["Provokator - Jin'do"] = "Provokator - Jin'do",
+		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
+		["Tudum - Jin'do"] = "Tudum - Jin'do",
+		["Wells - Jin'do"] = "Wells - Jin'do",
+		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
@@ -59,7 +59,7 @@ Postal3DB = {
 				},
 			},
 		},
-		["Kaonac - Jin'do"] = {
+		["Pitchwise - Ashbringer"] = {
 		},
 		["Tudum - Ashbringer"] = {
 		},
@@ -70,7 +70,7 @@ Postal3DB = {
 				},
 			},
 		},
-		["Pitchwise - Ashbringer"] = {
+		["Moolatz - Golemagg"] = {
 		},
 		["Battitude - Golemagg"] = {
 		},
@@ -87,13 +87,13 @@ Postal3DB = {
 		},
 		["Provokator - Jin'do"] = {
 		},
-		["Wells - Jin'do"] = {
+		["Tandaram - Jin'do"] = {
 		},
 		["Tudum - Jin'do"] = {
 		},
-		["Tandaram - Jin'do"] = {
+		["Wells - Jin'do"] = {
 		},
-		["Moolatz - Golemagg"] = {
+		["Kaonac - Jin'do"] = {
 		},
 	},
 }

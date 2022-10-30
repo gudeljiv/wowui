@@ -192,4 +192,5 @@ XLoot_Options: disabled
 Roll: disabled
 Gladdy: enabled
 NovaWorldBuffs: enabled
-Capping_Options: enabled
+Capping_Options: disabled
+Capping: disabled

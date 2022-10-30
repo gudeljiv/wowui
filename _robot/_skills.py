@@ -31,6 +31,10 @@ skills["offgcd"]["death knight"] = [
     {"name": "anti-magic shell", "id": 48707, "key": "g"},
 ]
 
+skills["offgcd"]["hunter"] = [
+    {"name": "misdirection", "id": 34477, "key": "2", "modifier": "alt"},
+]
+
 
 skills["warrior"] = [
     {"name": "battle shout", "id": 2048, "key": "f4"},
@@ -79,7 +83,6 @@ skills["hunter"] = [
     {"name": "deterrence", "id": 19263, "key": "t", "modifier": "shift"},
     {"name": "trueshot aura", "id": 19506, "key": "1", "modifier": "alt"},
     {"name": "wing clip", "id": 2974, "key": "1", "modifier": "alt"},
-    {"name": "misdirection", "id": 34477, "key": "2", "modifier": "alt"},
     {"name": "hunter's mark", "id": 1130, "key": "3", "modifier": "alt"},
     {"name": "mend pet", "id": 136, "key": "v"},
     {"name": "cower pet", "id": 1742, "key": "4", "modifier": "ctrl"},

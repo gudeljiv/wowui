@@ -55,13 +55,6 @@ X: -27
 Y: 27
 W: 50
 H: 50
-Frame: RXPG_ARROW
-FrameLevel: 1
-Anchor: CENTER
-X: -153
-Y: -141
-W: 32
-H: 32
 Frame: RXPItemFrame
 FrameLevel: 1
 Anchor: CENTER
@@ -69,6 +62,13 @@ X: 325
 Y: -75
 W: 78
 H: 40
+Frame: RXPG_ARROW
+FrameLevel: 1
+Anchor: CENTER
+X: -153
+Y: -141
+W: 32
+H: 32
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM
