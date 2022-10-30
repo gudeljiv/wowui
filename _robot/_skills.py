@@ -87,6 +87,7 @@ skills["hunter"] = [
     {"name": "mend pet", "id": 136, "key": "v"},
     {"name": "cower pet", "id": 1742, "key": "4", "modifier": "ctrl"},
     {"name": "last stand pet", "id": 53478, "key": "5", "modifier": "ctrl"},
+    {"name": "kill shot", "id": 53351, "key": "e"},
 ]
 
 skills["druid"] = [

@@ -408,6 +408,7 @@ AtlasLootClassicDB = {
 			[33945] = "honor:2850",
 			[35000] = "honor:9500",
 			[35064] = "honor:19000",
+			[44231] = "EmblemOfHeroism:200",
 			[44431] = "honor:5700",
 			[31966] = "honor:13300",
 			[28919] = "honor:7600",
@@ -427,8 +428,8 @@ AtlasLootClassicDB = {
 			[33690] = "honor:6840",
 			[28130] = "honor:4750",
 			[33754] = "honor:8550",
-			[32962] = "honor:3990",
 			[35101] = "honor:9500",
+			[32962] = "honor:3990",
 			[31978] = "honor:3325",
 			[23467] = "honor:2500",
 			[16550] = "honor:2500",
@@ -496,10 +497,10 @@ AtlasLootClassicDB = {
 			[28920] = "honor:3800",
 			[31986] = "honor:13300",
 			[33916] = "honor:6840",
-			[41570] = "honor:1250",
 			[18461] = "honor:400",
+			[41570] = "honor:1250",
 			[37927] = "honor:5700",
-			[31378] = "honor:3800",
+			[31376] = "honor:4750",
 			[28307] = "honor:4750",
 			[35131] = "honor:5700",
 			[32450] = "honor:7125",
@@ -522,7 +523,7 @@ AtlasLootClassicDB = {
 			[33661] = "honor:12825",
 			[33693] = "honor:6840",
 			[24551] = "honor:2850",
-			[31376] = "honor:4750",
+			[31378] = "honor:3800",
 			[35320] = "honor:5130",
 			[32798] = "honor:5320",
 			[33853] = "honor:5130",
@@ -880,9 +881,22 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
+			["GUI"] = {
+				["selectedGameVersion"] = 2,
+				["selected"] = {
+					nil, -- [1]
+					"HellfireRamparts", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+				["point"] = {
+					"LEFT", -- [1]
+					nil, -- [2]
+					"LEFT", -- [3]
+					337.781494140625, -- [4]
+					156.011474609375, -- [5]
+				},
 			},
 			["Addons"] = {
 				["Favourites"] = {
@@ -895,22 +909,9 @@ AtlasLootClassicDB = {
 					},
 				},
 			},
-			["GUI"] = {
-				["point"] = {
-					"LEFT", -- [1]
-					nil, -- [2]
-					"LEFT", -- [3]
-					337.781494140625, -- [4]
-					156.011474609375, -- [5]
-				},
-				["selectedGameVersion"] = 2,
-				["selected"] = {
-					nil, -- [1]
-					"HellfireRamparts", -- [2]
-					nil, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Klhjakhsgdjh - Golemagg"] = {

@@ -309,7 +309,7 @@ end
 
 function unitscan.print(msg)
 	if ChatFrame7 then
-		ChatFrame7:AddMessage('UnitScan: ' .. YELLOW_FONT_COLOR_CODE .. msg)
+		ChatFrame7:AddMessage('UnitScan: ' .. msg)
 	end
 end
 
@@ -333,11 +333,11 @@ function unitscan.toggle_target(name)
 		unitscan_targets[key] = nil
 		found[key] = nil
 		-- unitscan.print('- ' .. key)
-		unitscan.print(RED_FONT_COLOR_CODE .. key .. YELLOW_FONT_COLOR_CODE .. ' removed')
+		unitscan.print(_G.RED_FONT_COLOR_CODE .. key .. _G.YELLOW_FONT_COLOR_CODE .. ' removed')
 	elseif key ~= '' then
 		unitscan_targets[key] = true
 		-- unitscan.print('+ ' .. key)
-		unitscan.print(GREEN_FONT_COLOR_CODE .. key .. YELLOW_FONT_COLOR_CODE .. ' added')
+		unitscan.print(_G.GREEN_FONT_COLOR_CODE .. key .. _G.YELLOW_FONT_COLOR_CODE .. ' added')
 	end
 end
 
@@ -348,7 +348,7 @@ function SlashCmdList.UNITSCAN(parameter)
 
 	if name == '' then
 		for _, key in ipairs(unitscan.sorted_targets()) do
-			unitscan.print(key)
+			unitscan.print(_G.YELLOW_FONT_COLOR_CODE .. key)
 		end
 	else
 		unitscan.toggle_target(name)

@@ -23,8 +23,6 @@ ItemRackUser = {
 	["CurrentSet"] = "DPS",
 	["SetMenuWrap"] = "OFF",
 	["ItemsUsed"] = {
-		["28041"] = 30,
-		["27416"] = 30,
 	},
 	["Events"] = {
 		["Enabled"] = {

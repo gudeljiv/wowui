@@ -11,8 +11,8 @@ CappingSettings = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["lock"] = true,
 			["spacing"] = 1,
+			["lock"] = true,
 			["useMasterForQueue"] = false,
 			["fill"] = true,
 			["barTexture"] = "Melli",
