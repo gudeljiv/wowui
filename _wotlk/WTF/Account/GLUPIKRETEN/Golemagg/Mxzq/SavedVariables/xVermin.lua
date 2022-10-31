@@ -5,7 +5,7 @@ xKillCount = {
 	},
 	["experience"] = {
 		["pulltotal"] = 0,
-		["totaltotal"] = 8875362,
+		["totaltotal"] = 8962773,
 	},
 	["position"] = {
 		["y"] = 286.524108886719,

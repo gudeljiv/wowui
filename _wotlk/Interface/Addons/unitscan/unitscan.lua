@@ -345,7 +345,6 @@ SLASH_UNITSCAN1 = '/unitscan'
 SLASH_UNITSCAN2 = '/us'
 function SlashCmdList.UNITSCAN(parameter)
 	local _, _, name = strfind(parameter, '^%s*(.-)%s*$')
-
 	if name == '' then
 		for _, key in ipairs(unitscan.sorted_targets()) do
 			unitscan.print(_G.YELLOW_FONT_COLOR_CODE .. key)

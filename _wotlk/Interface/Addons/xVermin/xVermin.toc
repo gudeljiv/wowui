@@ -33,6 +33,7 @@ Reputation/Reputation.lua
 
 Addons/AdiBags.lua
 Addons/ChocolateBar.lua
+Addons/ItemRack.lua
 Addons/LFG.lua
 Addons/Minimap.lua
 Addons/nMainBar.lua

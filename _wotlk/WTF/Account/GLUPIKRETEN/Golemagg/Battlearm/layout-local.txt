@@ -1,8 +1,15 @@
 Version: 1
+Frame: ItemRackButton13
+FrameLevel: 1
+Anchor: CENTER
+X: -393
+Y: -133
+W: 36
+H: 36
 Frame: RXPFrame
 FrameLevel: 1
-Anchor: BOTTOM
-X: 489
+Anchor: BOTTOMRIGHT
+X: -545
 Y: 0
 W: 235
 H: 28
@@ -67,7 +74,7 @@ FrameLevel: 1
 Anchor: CENTER
 X: -176
 Y: -161
-W: 81
+W: 79
 H: 40
 Frame: StanceButton1
 FrameLevel: 3

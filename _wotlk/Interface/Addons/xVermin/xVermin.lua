@@ -19,6 +19,10 @@ local function xInstallAddon()
 	SetCVar('AutoInteract', 0)
 	SetCVar('cursorsizepreferred', 0)
 
+	C_CVar.SetCVar('showArenaEnemyFrames', '1')
+	C_CVar.SetCVar('showArenaEnemyCastbar', '1')
+	C_CVar.SetCVar('showArenaEnemyPets', '1')
+
 	if Grid2 then
 		Grid2.db:SetProfile('xVermin')
 	end
@@ -272,30 +276,48 @@ f:SetScript(
 -- 	end
 -- )
 
--- local function myArenaStuff()
--- 	-- ArenaEnemyFrame1:ClearAllPoints()
--- 	-- ArenaEnemyFrame1:SetPoint('TOP', 'UIParent', 'TOP', -125, -70)
--- 	-- ArenaEnemyFrame2:ClearAllPoints()
--- 	-- ArenaEnemyFrame2:SetPoint('TOP', 'UIParent', 'TOP', 125, -70)
--- end
+FixArenaFrames = function()
+	ArenaEnemyFrame1:ClearAllPoints()
+	ArenaEnemyFrame1:SetPoint('RIGHT', PlayerFrame, 'LEFT', -100, -50)
+	ArenaEnemyFrame1HealthBarTextLeft:SetScale(0.7)
+	ArenaEnemyFrame1HealthBarTextRight:SetScale(0.7)
 
--- if IsAddOnLoaded('Blizzard_ArenaUI') then
--- 	myArenaStuff()
--- else
--- 	local f = CreateFrame('Frame')
--- 	f:RegisterEvent('ADDON_LOADED')
--- 	f:SetScript(
--- 		'OnEvent',
--- 		function(self, event, addonName)
--- 			print(addonName)
--- 			if addonName ~= 'Blizzard_ArenaUI' then
--- 				return
--- 			end
+	ArenaEnemyFrame2:ClearAllPoints()
+	ArenaEnemyFrame2:SetPoint('RIGHT', PlayerFrame, 'LEFT', -100, -100)
+	ArenaEnemyFrame2HealthBarTextLeft:SetScale(0.7)
+	ArenaEnemyFrame2HealthBarTextRight:SetScale(0.7)
 
--- 			myArenaStuff()
+	ArenaEnemyFrame3:ClearAllPoints()
+	ArenaEnemyFrame3:SetPoint('RIGHT', PlayerFrame, 'LEFT', -100, -150)
+	ArenaEnemyFrame3HealthBarTextLeft:SetScale(0.7)
+	ArenaEnemyFrame3HealthBarTextRight:SetScale(0.7)
 
--- 			self:UnregisterEvent('ADDON_LOADED')
--- 			self:SetScript('OnEvent', nil)
--- 		end
--- 	)
--- end
+	ArenaEnemyFrame1.SetPoint = function()
+	end
+	ArenaEnemyFrame2.SetPoint = function()
+	end
+	ArenaEnemyFrame3.SetPoint = function()
+	end
+
+	ArenaEnemyFrames:SetScale(1.2)
+end
+
+if IsAddOnLoaded('Blizzard_ArenaUI') then
+	FixArenaFrames()
+else
+	local f = CreateFrame('Frame')
+	f:RegisterEvent('ADDON_LOADED')
+	f:SetScript(
+		'OnEvent',
+		function(self, event, addonName)
+			if addonName ~= 'Blizzard_ArenaUI' then
+				return
+			end
+
+			FixArenaFrames()
+
+			self:UnregisterEvent('ADDON_LOADED')
+			self:SetScript('OnEvent', nil)
+		end
+	)
+end
