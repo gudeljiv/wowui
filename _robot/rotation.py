@@ -55,29 +55,36 @@ if monitor == "3840":
     p_interrupt_left = 57
     p_behind_left = 74
     p_clss_left = 88
-    p_rotation_left = 109
 if monitor == "2560":
     x = 12
     y = 12
-    c_width = 7
-    c_height = 7
-    p_offgcd_left = 70
-    p_combat_left = 17
-    p_interrupt_left = 27
-    p_behind_left = 38
-    p_clss_left = 49
-    p_rotation_left = 60
+    c_width = 5
+    c_height = 5
+    p_offgcd_left = 19
+    p_combat_left = 40
+    p_interrupt_left = 54
+    p_behind_left = 64
+    p_clss_left = 77
 if monitor == "3072":
-    x = 18
-    y = 18
-    c_width = 7
-    c_height = 7
-    p_combat_left = 22
-    p_offgcd_left = 93
-    p_interrupt_left = 37
-    p_behind_left = 53
-    p_clss_left = 66
-    p_rotation_left = 70
+    x = 12
+    y = 12
+    c_width = 5
+    c_height = 5
+    p_offgcd_left = 19
+    p_combat_left = 40
+    p_interrupt_left = 54
+    p_behind_left = 64
+    p_clss_left = 77
+if monitor == "2048.0":
+    x = 8
+    y = 8
+    c_width = 5
+    c_height = 5
+    p_offgcd_left = 13
+    p_combat_left = 24
+    p_interrupt_left = 33
+    p_behind_left = 43
+    p_clss_left = 52
 
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -168,7 +175,7 @@ with keyboard.Listener(on_press=on_press) as listener:
             p_interrupt = {"top": 0, "left": p_interrupt_left, "width": c_width, "height": c_height}
             p_behind = {"top": 0, "left": p_behind_left, "width": c_width, "height": c_height}
             p_clss = {"top": 0, "left": p_clss_left, "width": c_width, "height": c_height}
-            p_rotation = {"top": 0, "left": p_rotation_left, "width": c_width, "height": c_height}
+            # p_rotation = {"top": 0, "left": p_rotation_left, "width": c_width, "height": c_height}
 
             grabbed_image = dir_path + "/images/_/1. main.png".format(**p_main)
             main_image = sct.grab(p_main)

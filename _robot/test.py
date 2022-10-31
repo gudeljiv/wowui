@@ -45,38 +45,35 @@ else:
 monitor = str(screen_width)
 
 if monitor == "3840":
-    x = 10
-    y = 10
+    x = 15
+    y = 15
     c_width = 7
     c_height = 7
-    p_offgcd_left = 105
-    p_combat_left = 24
-    p_interrupt_left = 42
-    p_behind_left = 62
-    p_clss_left = 74
-    p_rotation_left = 94
+    p_offgcd_left = 21
+    p_combat_left = 39
+    p_interrupt_left = 57
+    p_behind_left = 74
+    p_clss_left = 88
 if monitor == "2560":
-    x = 6
-    y = 6
-    c_width = 7
-    c_height = 7
-    p_offgcd_left = 70
-    p_combat_left = 17
-    p_interrupt_left = 27
-    p_behind_left = 38
-    p_clss_left = 49
-    p_rotation_left = 60
+    x = 12
+    y = 12
+    c_width = 5
+    c_height = 5
+    p_offgcd_left = 19
+    p_combat_left = 40
+    p_interrupt_left = 54
+    p_behind_left = 64
+    p_clss_left = 77
 if monitor == "3072":
-    x = 9
-    y = 9
-    c_width = 7
-    c_height = 7
-    p_combat_left = 22
-    p_offgcd_left = 93
-    p_interrupt_left = 37
-    p_behind_left = 53
-    p_clss_left = 66
-    p_rotation_left = 70
+    x = 12
+    y = 12
+    c_width = 5
+    c_height = 5
+    p_offgcd_left = 19
+    p_combat_left = 40
+    p_interrupt_left = 54
+    p_behind_left = 64
+    p_clss_left = 77
 if monitor == "2048.0":
     x = 8
     y = 8
@@ -91,39 +88,6 @@ if monitor == "2048.0":
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-abilities_folder = dir_path + "\images\\" + monitor
-# abilities_list = [f for f in listdir(abilities_folder) if isfile(join(abilities_folder, f))]
-
-print(abilities_folder)
-
-healing = {}
-try:
-    for skill in skills["healing"]:
-        healing[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
-except:
-    print("healing skills missing", datetime.now().strftime("%H:%M:%S"))
-
-abilities = {}
-# for ability in abilities_list:
-#     cv2grey = cv2.cvtColor(cv2.imread(abilities_folder + "/" + ability), cv2.COLOR_BGR2GRAY)
-#     abilities[ability.replace(".png", "")] = cv2grey
-try:
-    for skill in skills[wow_class]:
-        abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
-        abilities = {**abilities, **healing}
-except:
-    print("main skills missing", datetime.now().strftime("%H:%M:%S"))
-
-
-abilities_offgcd = {}
-try:
-    for skill in skills["offgcd"][wow_class]:
-        abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
-except:
-    print("offgcd skills missing", datetime.now().strftime("%H:%M:%S"))
-
-
-skills_loaded = "warrior"
 print("Script loaded and ready.", "Rotation is paused.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"))
 
 
@@ -135,34 +99,12 @@ def on_press(key):
         print("debug:", debug)
 
 
-def parse_hex_color(string):
-    if string.startswith("#"):
-        string = string[1:]
-    r = int(string[0:2], 16)  # red color value
-    g = int(string[2:4], 16)  # green color value
-    b = int(string[4:6], 16)  # blue color value
-    return r, g, b
-
-
-def color_similarity(base_col_val, oth_col_val):
-    return math.sqrt(sum((base_col_val[i]-oth_col_val[i])**2 for i in range(3)))
-
-
 with keyboard.Listener(on_press=on_press) as listener:
 
     with mss.mss() as sct:
 
         while True:
             start_time = time.time()
-            if os.name == "posix":
-                active_window = NSWorkspace.sharedWorkspace().activeApplication()["NSApplicationBundleIdentifier"]
-            else:
-                active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
-
-            # print(active_window)
-
-            if active_window != "com.blizzard.worldofwarcraft":
-                continue
 
             if debug:
                 p_main = {"top": 2, "left": 2, "width": x, "height": y}
@@ -197,6 +139,3 @@ with keyboard.Listener(on_press=on_press) as listener:
                 mss.tools.to_png(clss_image.rgb, clss_image.size, output="_robot/images/_/5. clss.png".format(**p_clss))
 
                 hex = '#%02x%02x%02x' % clss
-
-
-
