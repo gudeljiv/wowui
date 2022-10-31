@@ -47,6 +47,26 @@ function ItemRack.InitButtons()
 		if ItemRack.MasqueGroups and ItemRack.MasqueGroups[1] then
 			ItemRack.MasqueGroups[1]:AddButton(button)
 		end
+
+		local iiid
+		if button then
+			iiid = string.match(ItemRack.GetID(i), '%d+')
+			button:CreateBeautyBorder(8)
+			if iiid and iiid ~= 0 then
+				local _, _, itemRarity = GetItemInfo(iiid)
+				if (itemRarity and itemRarity > 1) then
+					local r, g, b = GetItemQualityColor(itemRarity)
+					button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureWhite')
+					button:SetBeautyBorderColor(r, g, b)
+				else
+					button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureNormal')
+					button:SetBeautyBorderColor(1, 1, 1)
+				end
+			else
+				button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureNormal')
+				button:SetBeautyBorderColor(1, 1, 1)
+			end
+		end
 	end
 
 	ItemRack.CreateTimer('ButtonsDocking', ItemRack.ButtonsDocking, .2, 1) -- (repeat) on while buttons docking
@@ -121,6 +141,7 @@ function ItemRack.AddButton(id)
 	ItemRack.NewAnchor = id
 	_G['ItemRackButton' .. id .. 'Icon']:SetTexture(ItemRack.GetTextureBySlot(id))
 	button:Show()
+
 	ItemRack.UpdateButtonCooldowns()
 	if id == 20 then
 		ItemRack.UpdateCurrentSet()

@@ -13,5 +13,13 @@ IRF = function()
 	print('IRF')
 end
 
-hooksecurefunc('CharacterTrinket0Slot.UpdateTooltip', IRF)
+-- hooksecurefunc('CharacterTrinket0Slot.UpdateTooltip', IRF)
 -- hooksecurefunc('CharacterTrinket1Slot.UpdateTooltip', IRF)
+
+ItemRackButton13:HookScript(
+	'OnShow',
+	function()
+		ItemRackButton13:ClearAllPoints()
+		ItemRackButton13:SetPoint('RIGHT', PlayerFrame, 'LEFT', -5, -40)
+	end
+)

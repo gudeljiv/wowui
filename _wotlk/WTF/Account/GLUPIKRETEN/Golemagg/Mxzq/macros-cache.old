@@ -86,3 +86,8 @@ VER 3 0000000001000012 " " "132152"
 /dismount
 /petattack [@mouseover,exists,harm][]
 END
+VER 3 0000000001000013 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Green Wind Rider
+/cast Swift Gray Wolf
+END

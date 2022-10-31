@@ -1,6 +1,7 @@
-VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
-#showtooltip 
-/cast [@focus,exists,noharm][]Misdirection
+VER 3 0000000001000013 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Green Wind Rider
+/cast Swift Gray Wolf
 END
 VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -86,8 +87,7 @@ VER 3 0000000001000012 " " "132152"
 /dismount
 /petattack [@mouseover,exists,harm][]
 END
-VER 3 0000000001000013 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast Green Wind Rider
-/cast Swift Gray Wolf
+VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@focus,exists,noharm][]Misdirection
 END
