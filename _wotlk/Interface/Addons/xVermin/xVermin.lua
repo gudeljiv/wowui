@@ -278,19 +278,29 @@ f:SetScript(
 
 FixArenaFrames = function()
 	ArenaEnemyFrame1:ClearAllPoints()
-	ArenaEnemyFrame1:SetPoint('RIGHT', PlayerFrame, 'LEFT', -100, -50)
+	ArenaEnemyFrame1:SetPoint('RIGHT', PlayerFrame, 'LEFT', -30, -50)
 	ArenaEnemyFrame1HealthBarTextLeft:SetScale(0.7)
+	ArenaEnemyFrame1ManaBarTextLeft:SetScale(0.7)
 	ArenaEnemyFrame1HealthBarTextRight:SetScale(0.7)
+	ArenaEnemyFrame1ManaBarTextRight:SetScale(0.7)
 
 	ArenaEnemyFrame2:ClearAllPoints()
-	ArenaEnemyFrame2:SetPoint('RIGHT', PlayerFrame, 'LEFT', -100, -100)
+	ArenaEnemyFrame2:SetPoint('RIGHT', PlayerFrame, 'LEFT', -30, -100)
 	ArenaEnemyFrame2HealthBarTextLeft:SetScale(0.7)
+	ArenaEnemyFrame2ManaBarTextLeft:SetScale(0.7)
 	ArenaEnemyFrame2HealthBarTextRight:SetScale(0.7)
+	ArenaEnemyFrame2ManaBarTextRight:SetScale(0.7)
 
 	ArenaEnemyFrame3:ClearAllPoints()
-	ArenaEnemyFrame3:SetPoint('RIGHT', PlayerFrame, 'LEFT', -100, -150)
+	ArenaEnemyFrame3:SetPoint('RIGHT', PlayerFrame, 'LEFT', -30, -150)
 	ArenaEnemyFrame3HealthBarTextLeft:SetScale(0.7)
+	ArenaEnemyFrame3ManaBarTextLeft:SetScale(0.7)
 	ArenaEnemyFrame3HealthBarTextRight:SetScale(0.7)
+	ArenaEnemyFrame3ManaBarTextRight:SetScale(0.7)
+
+	ArenaEnemyFrame1:SetScale(1.4)
+	ArenaEnemyFrame2:SetScale(1.4)
+	ArenaEnemyFrame3:SetScale(1.4)
 
 	ArenaEnemyFrame1.SetPoint = function()
 	end
@@ -298,8 +308,6 @@ FixArenaFrames = function()
 	end
 	ArenaEnemyFrame3.SetPoint = function()
 	end
-
-	ArenaEnemyFrames:SetScale(1.2)
 end
 
 if IsAddOnLoaded('Blizzard_ArenaUI') then

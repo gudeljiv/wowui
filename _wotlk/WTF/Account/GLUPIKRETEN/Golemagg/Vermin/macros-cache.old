@@ -1,7 +1,6 @@
-VER 3 0000000001000016 " " "INV_MISC_QUESTIONMARK"
-#showtooltip [nocombat] Charge; Intercept
-/cast [nostance:1,nocombat] Battle Stance;[nostance:3,combat] Berserker Stance;
-/cast [nocombat] Charge; [combat] Intercept
+VER 3 0000000001000019 " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@cursor] Adamantite Grenade
 END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
@@ -82,7 +81,14 @@ VER 3 0000000001000018 " " "INV_MISC_QUESTIONMARK"
 /cast Heroic Strike
 /cast Bloodrage
 END
-VER 3 0000000001000019 " " "INV_MISC_QUESTIONMARK"
-#showtooltip 
-/cast [@cursor] Adamantite Grenade
+VER 3 0000000001000016 " " "INV_MISC_QUESTIONMARK"
+#showtooltip [nocombat] Charge; Intercept
+/cast [nostance:1,nocombat] Battle Stance;[nostance:3,combat] Berserker Stance;
+/cast [nocombat] Charge; [combat] Intercept
+END
+VER 3 000000000100001A " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [stance:3] Recklessness
+/cast [stance:1] Retaliation
+/cast [stance:2] Shield Wall
 END

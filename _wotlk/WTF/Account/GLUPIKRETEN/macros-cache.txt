@@ -19,12 +19,12 @@ VER 3 0000000000000018 "ASAB" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:28399
-/castsequence [combat] reset=combat item:13444
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:29451
+/use [nocombat]item:0
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000B "lvl enchant" "132089"
@@ -56,9 +56,8 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
-/run ArenaEnemyFrame1:ClearAllPoints()
-/run ArenaEnemyFrame1:SetPoint("LEFT", 0, 0);
-/run  ArenaEnemyFrame1:SetScale(1.2)
+/run ItemRackButton13:ClearAllPoints()
+/run ItemRackButton13:SetPoint('RIGHT', PlayerFrame, 'LEFT', -5, -40)
 END
 VER 3 000000000000001B "TSMMacro" "INV_Misc_Flower_01"
 /click TSMShoppingBuyoutBtn
