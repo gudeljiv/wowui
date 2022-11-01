@@ -1,9 +1,0 @@
-## Interface: 11401
-## Title: ClassicAggroHighlight
-## Notes: Adds aggro highlights to the Blizzard raid frames
-## Version: v1.3.2
-## Author: dev7355608
-## X-Curse-Project-ID: 358421
-## X-WoWI-ID: 25485
-
-ClassicAggroHighlight.xml

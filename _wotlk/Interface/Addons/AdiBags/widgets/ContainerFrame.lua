@@ -240,6 +240,7 @@ function containerProto:OnCreate(name, isBank, bagObject)
 	title:SetJustifyH('LEFT')
 	title:SetPoint('LEFT', headerLeftRegion, 'RIGHT', 4, 0)
 	title:SetPoint('RIGHT', headerRightRegion, 'LEFT', -4, 0)
+	title:SetScale(0.8)
 
 	local anchor = addon:CreateBagAnchorWidget(self, name, L[name])
 	anchor:SetAllPoints(title)
