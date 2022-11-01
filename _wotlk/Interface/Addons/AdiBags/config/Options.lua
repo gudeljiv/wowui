@@ -18,8 +18,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
-
-local addonName = "AdiBags"
+local addonName = 'AdiBags'
 local addon = LibStub('AceAddon-3.0'):GetAddon(addonName)
 local L = addon.L
 
@@ -45,16 +44,16 @@ local options
 --------------------------------------------------------------------------------
 
 local handlerProto = {}
-local handlerMeta = { __index = handlerProto }
+local handlerMeta = {__index = handlerProto}
 
 function handlerProto:ResolvePath(info)
 	local db = self.dbHolder.db.profile
 	local path = info.arg or info[#info]
-	if type(path) == "string" then
+	if type(path) == 'string' then
 		return db, path, path
-	elseif type(path) == "table" then
+	elseif type(path) == 'table' then
 		local n = #path
-		for i = 1, n-1 do
+		for i = 1, n - 1 do
 			db = db[path[i]]
 		end
 		return db, path[n], strjoin('.', unpack(path))
@@ -63,7 +62,7 @@ end
 
 function handlerProto:Get(info, ...)
 	local db, key = self:ResolvePath(info)
-	if info.type == "multiselect" then
+	if info.type == 'multiselect' then
 		local subKey = ...
 		return db[key] and db[key][subKey]
 	elseif info.type == 'color' then
@@ -84,7 +83,7 @@ function handlerProto:Set(info, value, ...)
 			local color = db[key]
 			color[1], color[2], color[3], color[4] = value, ...
 		else
-			db[key] = { value, ... }
+			db[key] = {value, ...}
 		end
 	else
 		db[key] = value
@@ -95,7 +94,7 @@ function handlerProto:Set(info, value, ...)
 	else
 		self.dbHolder:SendMessage('AdiBags_ConfigChanged', path)
 	end
-	if type(self.PostSet) == "function" then
+	if type(self.PostSet) == 'function' then
 		self:PostSet(path, value, ...)
 	end
 end
@@ -125,16 +124,16 @@ do
 	local filters = {
 		options = filterOptions,
 		count = 0,
-		nameAttribute = "filterName",
-		dbKey = "filters",
-		optionPath = "filters",
+		nameAttribute = 'filterName',
+		dbKey = 'filters',
+		optionPath = 'filters'
 	}
 	local modules = {
 		options = moduleOptions,
 		count = 0,
-		nameAttribute = "moduleName",
-		dbKey = "modules",
-		optionPath = "modules",
+		nameAttribute = 'moduleName',
+		dbKey = 'modules',
+		optionPath = 'modules'
 	}
 
 	function OnModuleCreated(self, module)
@@ -157,13 +156,19 @@ do
 					desc = L['Check to enable this module.'],
 					type = 'toggle',
 					order = 20,
-					get = function(info) return addon.db.profile[data.dbKey][name] end,
+					get = function(info)
+						return addon.db.profile[data.dbKey][name]
+					end,
 					set = function(info, value)
 						addon.db.profile[data.dbKey][name] = value
-						if value then module:Enable() else module:Disable() end
+						if value then
+							module:Enable()
+						else
+							module:Disable()
+						end
 						self:UpdateFilters()
-					end,
-				},
+					end
+				}
 			}
 		}
 		local extendedOptions
@@ -175,7 +180,7 @@ do
 			baseOptions.args.description = {
 				name = module.uiDesc,
 				type = 'description',
-				order = 10,
+				order = 10
 			}
 		end
 		if module.isFilter then
@@ -187,27 +192,31 @@ do
 				max = 100,
 				step = 1,
 				bigStep = 1,
-				get = function(info) return module:GetPriority() end,
-				set = function(info, value) module:SetPriority(value) end,
+				get = function(info)
+					return module:GetPriority()
+				end,
+				set = function(info, value)
+					module:SetPriority(value)
+				end
 			}
 		end
 
 		if module.GetOptions then
-			local opts, handler = safecall(module, "GetOptions")
+			local opts, handler = safecall(module, 'GetOptions')
 			if opts then
 				extendedOptions = {
 					handler = handler,
-					args = opts,
+					args = opts
 				}
 			end
 		end
 
-		data.options[name..'Basic'] = baseOptions
+		data.options[name .. 'Basic'] = baseOptions
 
 		if extendedOptions then
 			extendedOptions.name = module.uiName or L[name] or name
 			extendedOptions.desc = module.uiDesc
-			extendedOptions.type = "group"
+			extendedOptions.type = 'group'
 			extendedOptions.order = 1000 + data.count
 			data.options[name] = extendedOptions
 
@@ -215,14 +224,16 @@ do
 				extendedOptions.args.description = {
 					name = module.uiDesc,
 					type = 'description',
-					order = 1,
+					order = 1
 				}
 			end
 
 			baseOptions.args.configure = {
-				name = L["Configure"],
+				name = L['Configure'],
 				type = 'execute',
-				func = function() AceConfigDialog:SelectGroup(addonName, data.optionPath, name) end,
+				func = function()
+					AceConfigDialog:SelectGroup(addonName, data.optionPath, name)
+				end
 			}
 		end
 		data.count = data.count + 1
@@ -240,25 +251,29 @@ end
 --------------------------------------------------------------------------------
 
 local function GetOptions()
-	if options then return options end
+	if options then
+		return options
+	end
 
 	local lockOption = {
 		name = function()
-			return addon.anchor:IsShown() and L["Lock anchor"] or L["Unlock anchor"]
+			return addon.anchor:IsShown() and L['Lock anchor'] or L['Unlock anchor']
 		end,
-		desc = L["Click to toggle the bag anchor."],
+		desc = L['Click to toggle the bag anchor.'],
 		type = 'execute',
 		order = 110,
 		func = function()
 			addon:ToggleAnchor()
 		end,
-		disabled = function(info) return (info.handler and info.handler:IsDisabled(info)) or addon.db.profile.positionMode ~= 'anchored' end,
+		disabled = function(info)
+			return (info.handler and info.handler:IsDisabled(info)) or addon.db.profile.positionMode ~= 'anchored'
+		end
 	}
 
 	filterOptions._desc = {
 		name = L['Filters are used to dispatch items in bag sections. One item can only appear in one section. If the same item is selected by several filters, the one with the highest priority wins.'],
 		type = 'description',
-		order = 1,
+		order = 1
 	}
 	local profiles = LibStub('AceDBOptions-3.0'):GetOptionsTable(addon.db)
 	profiles.order = 600
@@ -274,7 +289,7 @@ local function GetOptions()
 		name = addonName..' DEV',
 		--@end-debug@]===]
 		--@non-debug@
-		name = addonName..' v1.9.26-bcc',
+		name = addonName .. ' v1.9.46',
 		--@end-non-debug@
 		type = 'group',
 		handler = addon:GetOptionHandler(addon),
@@ -287,14 +302,14 @@ local function GetOptions()
 				desc = L['Uncheck this to disable AdiBags.'],
 				type = 'toggle',
 				order = 100,
-				disabled = false,
+				disabled = false
 			},
 			rightClickConfig = {
 				name = L['Right-click to open options'],
 				desc = L['When checked, right-clicking on an empty space of a bag opens the configuration panel.'],
 				width = 'double',
 				type = 'toggle',
-				order = 110,
+				order = 110
 			},
 			bags = {
 				name = L['Bags'],
@@ -306,7 +321,7 @@ local function GetOptions()
 						desc = L['Select which bags AdiBags should display.'],
 						type = 'multiselect',
 						order = 90,
-						values = bagList,
+						values = bagList
 					},
 					automatically = {
 						name = L['Automatically...'],
@@ -315,10 +330,10 @@ local function GetOptions()
 						order = 95,
 						args = {
 							autoOpen = {
-								name = L["Open"],
+								name = L['Open'],
 								desc = L["Automatically open the bags at merchant's, bank, ..."],
 								type = 'toggle',
-								order = 95,
+								order = 95
 							}
 						}
 					},
@@ -335,7 +350,7 @@ local function GetOptions()
 								order = 100,
 								values = {
 									anchored = L['Anchored'],
-									manual = L['Manual'],
+									manual = L['Manual']
 								}
 							},
 							toggleAnchor = lockOption,
@@ -344,13 +359,15 @@ local function GetOptions()
 								desc = L['Click there to reset the bag positions and sizes.'],
 								type = 'execute',
 								order = 120,
-								func = function() addon:ResetBagPositions() end,
+								func = function()
+									addon:ResetBagPositions()
+								end
 							},
 							hideAnchor = {
 								name = L['Do not show anchor point'],
 								desc = L['Hide the colored corner shown when you move the bag.'],
 								type = 'toggle',
-								order = 125,
+								order = 125
 							},
 							scale = {
 								name = L['Scale'],
@@ -365,7 +382,7 @@ local function GetOptions()
 									addon.db.profile.scale = newScale
 									addon:LayoutBags()
 									addon:SendMessage('AdiBags_LayoutChanged')
-								end,
+								end
 							},
 							maxHeight = {
 								name = L['Maximum bag height'],
@@ -375,9 +392,9 @@ local function GetOptions()
 								isPercent = true,
 								min = 0.30,
 								max = 0.90,
-								step = 0.01,
-							},
-						},
+								step = 0.01
+							}
+						}
 					},
 					sections = {
 						name = L['Section layout'],
@@ -392,8 +409,21 @@ local function GetOptions()
 								set = function(info, compactLayout)
 									addon.db.profile.compactLayout = compactLayout
 									addon:SendMessage('AdiBags_LayoutChanged')
+								end
+							},
+							--[[
+							gridLayout = {
+								name = L['(BETA) Grid Layout'],
+								desc = L['When enabled, AdiBags switches to a grid layout with dragable sections.'],
+								type = 'toggle',
+								order = 135,
+								set = function(info, gridLayout)
+									addon.db.profile.gridLayout = gridLayout
+									ReloadUI()
+									addon:SendMessage('AdiBags_GridLayoutChanged')
 								end,
 							},
+							--]]
 							columnWidth = {
 								name = L['Column width'],
 								desc = L['Adjust the width of the bag columns.'],
@@ -407,7 +437,7 @@ local function GetOptions()
 										min = 4,
 										max = 20,
 										step = 1,
-										arg = { "columnWidth", "Backpack" },
+										arg = {'columnWidth', 'Backpack'}
 									},
 									Bank = {
 										name = L['Bank'],
@@ -415,21 +445,21 @@ local function GetOptions()
 										min = 4,
 										max = 20,
 										step = 1,
-										arg = { "columnWidth", "Bank" },
-									},
-								},
-							},
-						},
-					},
-				},
+										arg = {'columnWidth', 'Bank'}
+									}
+								}
+							}
+						}
+					}
+				}
 			},
 			skin = {
 				name = L['Skin'],
 				type = 'group',
 				order = 150,
 				args = {
-					bagFont = addon:CreateFontOptions(addon.bagFont, L["Bag title"], 10),
-					sectionFont = addon:CreateFontOptions(addon.sectionFont, L["Section header"], 15),
+					bagFont = addon:CreateFontOptions(addon.bagFont, L['Bag title'], 10),
+					sectionFont = addon:CreateFontOptions(addon.sectionFont, L['Section header'], 15),
 					background = {
 						name = L['Bag background'],
 						type = 'group',
@@ -442,16 +472,16 @@ local function GetOptions()
 								dialogControl = 'LSM30_Background',
 								values = AceGUIWidgetLSMlists.background,
 								order = 10,
-								arg = { "skin", "background" },
+								arg = {'skin', 'background'}
 							},
 							insets = {
 								name = L['Insets'],
 								type = 'range',
 								order = 20,
-								arg = { "skin", "insets" },
+								arg = {'skin', 'insets'},
 								min = -16,
 								max = 16,
-								step = 1,
+								step = 1
 							},
 							border = {
 								name = L['Border'],
@@ -459,34 +489,41 @@ local function GetOptions()
 								dialogControl = 'LSM30_Border',
 								values = AceGUIWidgetLSMlists.border,
 								order = 30,
-								arg = { "skin", "border" },
+								arg = {'skin', 'border'}
 							},
 							borderWidth = {
 								name = L['Border width'],
 								type = 'range',
 								order = 40,
-								arg = { "skin", "borderWidth" },
+								arg = {'skin', 'borderWidth'},
 								min = 1,
 								max = 64,
-								step = 1,
+								step = 1
 							},
 							backpackColor = {
 								name = L['Backpack color'],
 								type = 'color',
 								order = 50,
 								hasAlpha = true,
-								arg = { "skin", "BackpackColor" },
+								arg = {'skin', 'BackpackColor'}
 							},
 							bankColor = {
 								name = L['Bank color'],
 								type = 'color',
 								order = 60,
 								hasAlpha = true,
-								arg = { "skin", "BankColor" },
+								arg = {'skin', 'BankColor'}
 							},
-						},
+							reagentBankColor = {
+								name = L['Reagent bank color'],
+								type = 'color',
+								order = 70,
+								hasAlpha = true,
+								arg = {'skin', 'ReagentBankColor'}
+							}
+						}
 					}
-				},
+				}
 			},
 			items = {
 				name = L['Items'],
@@ -502,7 +539,7 @@ local function GetOptions()
 						values = {
 							default = L['By category, subcategory, quality and item level (default)'],
 							byName = L['By name'],
-							byQualityAndLevel = L['By quality and item level'],
+							byQualityAndLevel = L['By quality and item level']
 						}
 					},
 					quality = {
@@ -515,7 +552,7 @@ local function GetOptions()
 								name = L['Enabled'],
 								desc = L['Check this to display a colored border around items, based on item quality.'],
 								type = 'toggle',
-								order = 210,
+								order = 210
 							},
 							qualityOpacity = {
 								name = L['Opacity'],
@@ -528,7 +565,7 @@ local function GetOptions()
 								step = 0.05,
 								disabled = function(info)
 									return info.handler:IsDisabled(info) or not addon.db.profile.qualityHighlight
-								end,
+								end
 							},
 							dimJunk = {
 								name = L['Dim junk'],
@@ -537,15 +574,21 @@ local function GetOptions()
 								order = 225,
 								disabled = function(info)
 									return info.handler:IsDisabled(info) or not addon.db.profile.qualityHighlight
-								end,
-							},
-						},
+								end
+							}
+						}
+					},
+					questIndicator = {
+						name = L['Quest indicator'],
+						desc = L['Check this to display an indicator on quest items.'],
+						type = 'toggle',
+						order = 230
 					},
 					showBagType = {
 						name = L['Bag type'],
 						desc = L['Check this to display a bag type tag in the top left corner of items.'],
 						type = 'toggle',
-						order = 240,
+						order = 240
 					},
 					virtualStacks = {
 						name = L['Virtual stacks'],
@@ -556,14 +599,14 @@ local function GetOptions()
 							_desc = {
 								name = L['Virtual stacks display in one place items that actually spread over several bag slots.'],
 								type = 'description',
-								order = 1,
+								order = 1
 							},
 							freeSpace = {
 								name = L['Merge free space'],
 								desc = L['Show only one free slot for each kind of bags.'],
 								order = 10,
 								type = 'toggle',
-								arg = {'virtualStacks', 'freeSpace'},
+								arg = {'virtualStacks', 'freeSpace'}
 							},
 							others = {
 								name = L['Merge unstackable items'],
@@ -571,7 +614,7 @@ local function GetOptions()
 								order = 15,
 								width = 'double',
 								type = 'toggle',
-								arg = {'virtualStacks', 'others'},
+								arg = {'virtualStacks', 'others'}
 							},
 							stackable = {
 								name = L['Merge stackable items'],
@@ -579,11 +622,11 @@ local function GetOptions()
 								order = 20,
 								width = 'double',
 								type = 'toggle',
-								arg = {'virtualStacks', 'stackable'},
+								arg = {'virtualStacks', 'stackable'}
 							},
 							incomplete = {
 								name = L['... including incomplete stacks'],
-								desc= L['Merge incomplete stacks with complete ones.'],
+								desc = L['Merge incomplete stacks with complete ones.'],
 								order = 30,
 								width = 'double',
 								type = 'toggle',
@@ -603,41 +646,52 @@ local function GetOptions()
 									L['Keep all stacks together.'],
 									L['Separate unstackable items.'],
 									L['Separate incomplete stacks.'],
-									L['Show every distinct item stacks.'],
+									L['Show every distinct item stacks.']
 								},
 								disabled = function(info)
 									return info.handler:IsDisabled(info) or not (addon.db.profile.virtualStacks.stackable or addon.db.profile.virtualStacks.others)
 								end
-							},
+							}
 						}
-					},
-				},
+					}
+				}
 			},
 			filters = {
 				name = L['Filters'],
 				desc = L['Toggle and configure item filters.'],
 				type = 'group',
 				order = 400,
-				args = filterOptions,
+				args = filterOptions
 			},
 			modules = {
 				name = L['Plugins'],
 				desc = L['Toggle and configure plugins.'],
 				type = 'group',
 				order = 500,
-				args = moduleOptions,
+				args = moduleOptions
 			},
-			profiles = profiles,
+			profiles = profiles
 		},
 		plugins = {}
 	}
-	hooksecurefunc(addon, "OnModuleCreated", OnModuleCreated)
+	if addon.isRetail then
+		options['args']['bags']['args']['automatically']['args']['autoDeposit'] = {
+			name = L['Deposit reagents'],
+			desc = L['Automtically deposit all reagents into the reagent bank when you talk to the banker.'],
+			type = 'toggle',
+			order = 110,
+			disabled = function()
+				return not IsReagentBankUnlocked()
+			end
+		}
+	end
+	hooksecurefunc(addon, 'OnModuleCreated', OnModuleCreated)
 	for name, module in addon:IterateModules() do
 		OnModuleCreated(addon, module)
 	end
 	UpdateFilterOrder()
 
-	LibStub('ABEvent-1.0').RegisterMessage(addonName.."_Config", 'AdiBags_FiltersChanged', UpdateFilterOrder)
+	LibStub('ABEvent-1.0').RegisterMessage(addonName .. '_Config', 'AdiBags_FiltersChanged', UpdateFilterOrder)
 
 	return options
 end

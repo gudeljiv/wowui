@@ -22,23 +22,46 @@ along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 local addonName, addon = ...
 local L = addon.L
 
+-- Constants for detecting WoW version.
+addon.isRetail = WOW_PROJECT_ID == WOW_PROJECT_MAINLINE
+addon.isClassic = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
+addon.isBCC = WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC
+addon.isWrath = WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC
+
 --<GLOBALS
 local _G = _G
 local BACKPACK_CONTAINER = _G.BACKPACK_CONTAINER
 local BANK_CONTAINER = _G.BANK_CONTAINER
-local KEYRING_CONTAINER = _G.KEYRING_CONTAINER
+local REAGENTBANK_CONTAINER = _G.REAGENTBANK_CONTAINER
 local NUM_BAG_SLOTS = _G.NUM_BAG_SLOTS
 local NUM_BANKBAGSLOTS = _G.NUM_BANKBAGSLOTS
 local pairs = _G.pairs
 --GLOBALS>
 
--- Keyring, backpack, and bags
-local BAGS = { [KEYRING_CONTAINER] = KEYRING_CONTAINER, [BACKPACK_CONTAINER] = BACKPACK_CONTAINER }
+-- Backpack and bags
+local BAGS = { [BACKPACK_CONTAINER] = BACKPACK_CONTAINER }
 for i = 1, NUM_BAG_SLOTS do BAGS[i] = i end
 
--- Bank and bank bags
-local BANK = { [BANK_CONTAINER] = BANK_CONTAINER }
-for i = NUM_BAG_SLOTS + 1, NUM_BAG_SLOTS + NUM_BANKBAGSLOTS do BANK[i] = i end
+local BANK = {}
+local BANK_ONLY = {}
+local REAGENTBANK_ONLY = {}
+
+if addon.isRetail then
+	-- Base nank bags
+	BANK_ONLY = { [BANK_CONTAINER] = BANK_CONTAINER }
+	for i = NUM_BAG_SLOTS + 1, NUM_BAG_SLOTS + NUM_BANKBAGSLOTS do BANK_ONLY[i] = i end
+
+	--- Reagent bank bags
+	REAGENTBANK_ONLY = { [REAGENTBANK_CONTAINER] = REAGENTBANK_CONTAINER }
+
+	-- All bank bags
+	for _, bags in ipairs { BANK_ONLY, REAGENTBANK_ONLY } do
+		for id in pairs(bags) do BANK[id] = id end
+	end
+else
+	BANK = { [BANK_CONTAINER] = BANK_CONTAINER }
+	for i = NUM_BAG_SLOTS + 1, NUM_BAG_SLOTS + NUM_BANKBAGSLOTS do BANK[i] = i end
+end
 
 -- All bags
 local ALL = {}
@@ -49,6 +72,8 @@ end
 addon.BAG_IDS = {
 	BAGS = BAGS,
 	BANK = BANK,
+	BANK_ONLY = BANK_ONLY,
+	REAGENTBANK_ONLY = REAGENTBANK_ONLY,
 	ALL = ALL
 }
 
@@ -122,6 +147,7 @@ addon.DEFAULT_SETTINGS = {
 		qualityHighlight = true,
 		qualityOpacity = 1.0,
 		dimJunk = true,
+		questIndicator = true,
 		showBagType = true,
 		filters = { ['*'] = true },
 		filterPriorities = {},
@@ -139,11 +165,14 @@ addon.DEFAULT_SETTINGS = {
 			insets = 3,
 			BackpackColor = { 0, 0, 0, 1 },
 			BankColor = { 0, 0, 0.5, 1 },
+			ReagentBankColor = { 0, 0.5, 0, 1 },
 		},
 		rightClickConfig = true,
 		autoOpen = true,
 		hideAnchor = false,
+		autoDeposit = false,
 		compactLayout = false,
+		gridLayout = false,
 	},
 	char = {
 		collapsedSections = {

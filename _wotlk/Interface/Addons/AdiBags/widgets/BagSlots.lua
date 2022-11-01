@@ -18,6 +18,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
+
 local addonName, addon = ...
 local L = addon.L
 
@@ -48,7 +49,6 @@ local GetItemInfo = _G.GetItemInfo
 local GetNumBankSlots = _G.GetNumBankSlots
 local ipairs = _G.ipairs
 local IsInventoryItemLocked = _G.IsInventoryItemLocked
-local KEYRING_CONTAINER = _G.KEYRING_CONTAINER
 local next = _G.next
 local NUM_BAG_SLOTS = _G.NUM_BAG_SLOTS
 local NUM_BANKGENERIC_SLOTS = _G.NUM_BANKGENERIC_SLOTS
@@ -83,7 +83,7 @@ local BAG_IDS = addon.BAG_IDS
 
 local EmptyBag
 do
-	local swapFrame = CreateFrame('Frame')
+	local swapFrame = CreateFrame("Frame")
 	local otherBags = {}
 	local locked = {}
 	local timeout = 0
@@ -103,7 +103,7 @@ do
 		addon:Debug('FindSlotForItem', itemId, GetItemInfo(itemId), 'count=', itemCount, 'maxStack=', maxStack, 'family=', itemFamily, 'bags:', unpack(bags))
 		local bestBag, bestSlot, bestScore
 		for i, bag in pairs(bags) do
-			local scoreBonus = band(bag == KEYRING_CONTAINER and 256 or select(2, GetContainerNumFreeSlots(bag)) or 0, itemFamily) ~= 0 and maxStack or 0
+			local scoreBonus = band(select(2, GetContainerNumFreeSlots(bag)) or 0, itemFamily) ~= 0 and maxStack or 0
 			for slot = 1, GetContainerNumSlots(bag) do
 				local texture, slotCount, locked = GetContainerItemInfo(bag, slot)
 				if not locked and (not texture or GetContainerItemID(bag, slot) == itemId) then
@@ -169,39 +169,33 @@ do
 	end
 
 	swapFrame:Hide()
-	swapFrame:SetScript(
-		'OnUpdate',
-		function(self, elapsed)
-			if elapsed > timeout then
-				self:Done()
-			else
-				timeout = timeout - elapsed
-			end
+	swapFrame:SetScript('OnUpdate', function(self, elapsed)
+		if elapsed > timeout then
+			self:Done()
+		else
+			timeout = timeout - elapsed
 		end
-	)
+	end)
 
-	swapFrame:SetScript(
-		'OnEvent',
-		function(self, event, bagOrSlot)
-			addon:Debug(event, bagOrSlot)
-			if event == 'PLAYERBANKSLOTS_CHANGED' then
-				if bagOrSlot > 0 and bagOrSlot <= NUM_BANKGENERIC_SLOTS then
-					bagOrSlot = -1
-				else
-					return
-				end
-			end
-			locked[bagOrSlot] = nil
-			if not next(locked) then
-				self:Process()
+	swapFrame:SetScript('OnEvent', function(self, event, bagOrSlot)
+		addon:Debug(event, bagOrSlot)
+		if event == 'PLAYERBANKSLOTS_CHANGED' then
+			if bagOrSlot > 0 and bagOrSlot <= NUM_BANKGENERIC_SLOTS then
+				bagOrSlot = -1
+			else
+				return
 			end
 		end
-	)
+		locked[bagOrSlot] = nil
+		if not next(locked) then
+			self:Process()
+		end
+	end)
 
 	function EmptyBag(bag)
 		ClearCursor()
 		wipe(otherBags)
-		local bags = BAG_IDS[BAG_IDS.BANK[bag] and 'BANK' or 'BAGS']
+		local bags = BAG_IDS[BAG_IDS.BANK[bag] and "BANK_ONLY" or "BAGS"]
 		for otherBag in pairs(bags) do
 			if otherBag ~= bag then
 				tinsert(otherBags, otherBag)
@@ -221,8 +215,12 @@ end
 --------------------------------------------------------------------------------
 -- Regular bag buttons
 --------------------------------------------------------------------------------
-
-local bagButtonClass, bagButtonProto = addon:NewClass('BagSlotButton', 'Button', 'ItemButtonTemplate', 'ABEvent-1.0')
+local bagButtonClass, bagButtonProto
+if addon.isRetail then
+	bagButtonClass, bagButtonProto = addon:NewClass("BagSlotButton", "ItemButton", nil, "ABEvent-1.0")
+else
+	bagButtonClass, bagButtonProto = addon:NewClass("BagSlotButton", "Button", "ItemButtonTemplate", "ABEvent-1.0")
+end
 
 function bagButtonProto:OnCreate(bag)
 	self.bag = bag
@@ -232,8 +230,8 @@ function bagButtonProto:OnCreate(bag)
 	self:SetSize(ITEM_SIZE, ITEM_SIZE)
 
 	self:EnableMouse(true)
-	self:RegisterForDrag('LeftButton')
-	self:RegisterForClicks('LeftButtonUp', 'RightButtonUp')
+	self:RegisterForDrag("LeftButton")
+	self:RegisterForClicks("LeftButtonUp", "RightButtonUp")
 
 	self:SetScript('OnShow', self.OnShow)
 	self:SetScript('OnHide', self.OnHide)
@@ -244,7 +242,7 @@ function bagButtonProto:OnCreate(bag)
 	self:SetScript('OnClick', self.OnClick)
 	self.UpdateTooltip = self.OnEnter
 
-	self.Count = _G[self:GetName() .. 'Count']
+	self.Count = _G[self:GetName().."Count"]
 end
 
 function bagButtonProto:UpdateLock()
@@ -258,13 +256,13 @@ function bagButtonProto:UpdateLock()
 end
 
 function bagButtonProto:Update()
-	local icon = GetInventoryItemTexture('player', self.invSlot)
-	self.hasItem = not (not icon)
+	local icon = GetInventoryItemTexture("player", self.invSlot)
+	self.hasItem = not not icon
 	if self.hasItem then
 		local total, free = GetContainerNumSlots(self.bag), GetContainerNumFreeSlots(self.bag)
 		if total > 0 then
 			self.isEmpty = (total == free)
-			self.Count:SetFormattedText('%d', total - free)
+			self.Count:SetFormattedText("%d", total-free)
 			if free == 0 then
 				self.Count:SetTextColor(1, 0, 0)
 			else
@@ -283,9 +281,9 @@ function bagButtonProto:Update()
 end
 
 function bagButtonProto:OnShow()
-	self:RegisterEvent('BAG_UPDATE')
-	self:RegisterEvent('ITEM_LOCK_CHANGED')
-	self:RegisterMessage('AdiBags_GlobalLockChanged', 'Update')
+	self:RegisterEvent("BAG_UPDATE")
+	self:RegisterEvent("ITEM_LOCK_CHANGED")
+	self:RegisterMessage("AdiBags_GlobalLockChanged", "Update")
 	self:Update()
 end
 
@@ -295,8 +293,8 @@ function bagButtonProto:OnHide()
 end
 
 function bagButtonProto:OnEnter()
-	GameTooltip:SetOwner(self, 'ANCHOR_RIGHT')
-	if not GameTooltip:SetInventoryItem('player', self.invSlot) then
+	GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+	if not GameTooltip:SetInventoryItem("player", self.invSlot) then
 		if self.tooltipText then
 			GameTooltip:SetText(self.tooltipText)
 		end
@@ -316,7 +314,7 @@ end
 local pendingUpdate = {}
 
 function bagButtonProto:OnClick(button)
-	if self.hasItem and button == 'RightButton' then
+	if self.hasItem and button == "RightButton" then
 		if not self.isEmpty then
 			EmptyBag(self.bag)
 		end
@@ -351,12 +349,12 @@ end
 -- Bank bag buttons
 --------------------------------------------------------------------------------
 
-local bankButtonClass, bankButtonProto = addon:NewClass('BankSlotButton', 'BagSlotButton')
+local bankButtonClass, bankButtonProto = addon:NewClass("BankSlotButton", "BagSlotButton")
 
 function bankButtonProto:OnClick(button)
 	if self.toPurchase then
 		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION)
-		StaticPopup_Show('CONFIRM_BUY_BANK_SLOT')
+		StaticPopup_Show("CONFIRM_BUY_BANK_SLOT")
 	else
 		return bagButtonProto.OnClick(self, button)
 	end
@@ -374,10 +372,14 @@ function bankButtonProto:UpdateStatus()
 		local cost = GetBankSlotCost(bankSlot)
 		if bankSlot == numSlots + 1 then
 			BankFrame.nextSlotCost = cost
-			self.tooltipText = strjoin('', BANK_BAG_PURCHASE, '\n', COSTS_LABEL, ' ', GetCoinTextureString(cost), '\n', L['Click to purchase'])
+			self.tooltipText = strjoin("",
+				BANK_BAG_PURCHASE, "\n",
+				COSTS_LABEL, " ", GetCoinTextureString(cost), "\n",
+				L["Click to purchase"]
+			)
 			self.toPurchase = true
 		else
-			self.tooltipText = strjoin('', BANK_BAG_PURCHASE, '\n', COSTS_LABEL, ' ', GetCoinTextureString(cost))
+			self.tooltipText = strjoin("", BANK_BAG_PURCHASE, "\n", COSTS_LABEL, " ", GetCoinTextureString(cost))
 		end
 	end
 end
@@ -394,9 +396,9 @@ function bankButtonProto:PLAYERBANKSLOTS_CHANGED(event, bankSlot)
 end
 
 function bankButtonProto:OnShow()
-	self:RegisterEvent('PLAYERBANKSLOTS_CHANGED')
-	self:RegisterEvent('PLAYERBANKBAGSLOTS_CHANGED', 'UpdateStatus')
-	self:RegisterEvent('PLAYER_MONEY', 'UpdateStatus')
+	self:RegisterEvent("PLAYERBANKSLOTS_CHANGED")
+	self:RegisterEvent("PLAYERBANKBAGSLOTS_CHANGED", "UpdateStatus")
+	self:RegisterEvent("PLAYER_MONEY", "UpdateStatus")
 	bagButtonProto.OnShow(self)
 end
 
@@ -422,7 +424,7 @@ local function Panel_UpdateSkin(self)
 	if m == 0 then
 		self:SetBackdropBorderColor(0.5, 0.5, 0.5, a)
 	else
-		self:SetBackdropBorderColor(0.5 + (0.5 * r / m), 0.5 + (0.5 * g / m), 0.5 + (0.5 * b / m), a)
+		self:SetBackdropBorderColor(0.5+(0.5*r/m), 0.5+(0.5*g/m), 0.5+(0.5*b/m), a)
 	end
 end
 
@@ -437,20 +439,20 @@ end
 --------------------------------------------------------------------------------
 
 function addon:CreateBagSlotPanel(container, name, bags, isBank)
-	local self = CreateFrame('Frame', container:GetName() .. 'Bags', container, 'BackdropTemplate')
-	self:SetPoint('BOTTOMLEFT', container, 'TOPLEFT', 0, 4)
+	local self = CreateFrame("Frame", container:GetName().."Bags", container, "BackdropTemplate")
+	self:SetPoint("BOTTOMLEFT", container, "TOPLEFT", 0, 4)
 
 	self.openSound = isBank and SOUNDKIT.IG_MAINMENU_OPEN or SOUNDKIT.IG_BACKPACK_OPEN
 	self.closeSound = isBank and SOUNDKIT.IG_MAINMENU_CLOSE or SOUNDKIT.IG_BACKPACK_CLOSE
 	self:SetScript('OnShow', Panel_OnShow)
 	self:SetScript('OnHide', Panel_OnHide)
 
-	local title = self:CreateFontString(nil, 'OVERLAY')
+	local title = self:CreateFontString(nil, "OVERLAY")
 	self.Title = title
 	title:SetFontObject(addon.bagFont)
-	title:SetText(L['Equipped bags'])
-	title:SetJustifyH('LEFT')
-	title:SetPoint('TOPLEFT', BAG_INSET, -BAG_INSET)
+	title:SetText(L["Equipped bags"])
+	title:SetJustifyH("LEFT")
+	title:SetPoint("TOPLEFT", BAG_INSET, -BAG_INSET)
 
 	tsort(bags)
 	self.buttons = {}
@@ -458,10 +460,10 @@ function addon:CreateBagSlotPanel(container, name, bags, isBank)
 	local x = BAG_INSET
 	local height = 0
 	for i, bag in ipairs(bags) do
-		if bag ~= KEYRING_CONTAINER and bag ~= BACKPACK_CONTAINER and bag ~= BANK_CONTAINER then
+		if bag ~= BACKPACK_CONTAINER and bag ~= BANK_CONTAINER and bag ~= REAGENTBANK_CONTAINER then
 			local button = buttonClass:Create(bag)
 			button:SetParent(self)
-			button:SetPoint('TOPLEFT', x, -TOP_PADDING)
+			button:SetPoint("TOPLEFT", x, -TOP_PADDING)
 			button:Show()
 			x = x + ITEM_SIZE + ITEM_SPACING
 			tinsert(self.buttons, button)

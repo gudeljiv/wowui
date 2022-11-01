@@ -22,7 +22,7 @@ OmniCCDB = {
 	},
 	["global"] = {
 		["dbVersion"] = 6,
-		["addonVersion"] = "9.2.1",
+		["addonVersion"] = "10.0.1",
 	},
 	["profiles"] = {
 		["Default"] = {

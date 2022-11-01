@@ -9,404 +9,404 @@ AuctionFasterDb = {
 		},
 		["recentSearches"] = {
 			{
+				["value"] = "Greater Cosmic Essence",
+				["text"] = "Greater Cosmic Essence",
+			}, -- [1]
+			{
 				["value"] = "Talandra's Rose",
 				["text"] = "Talandra's Rose",
-			}, -- [1]
+			}, -- [2]
 			{
 				["value"] = "Lesser Planar Essence",
 				["text"] = "Lesser Planar Essence",
-			}, -- [2]
+			}, -- [3]
 			{
 				["value"] = "Tiger Lily",
 				["text"] = "Tiger Lily",
-			}, -- [3]
+			}, -- [4]
 			{
 				["value"] = "Eternal Fire",
 				["text"] = "Eternal Fire",
-			}, -- [4]
+			}, -- [5]
 			{
 				["value"] = "Crystallized Fire",
 				["text"] = "Crystallized Fire",
-			}, -- [5]
+			}, -- [6]
 			{
 				["value"] = "Infinite Dust",
 				["text"] = "Infinite Dust",
-			}, -- [6]
+			}, -- [7]
 			{
 				["value"] = "Greater Planar Essence",
 				["text"] = "Greater Planar Essence",
-			}, -- [7]
+			}, -- [8]
 			{
 				["value"] = "Damaged Necklace",
 				["text"] = "Damaged Necklace",
-			}, -- [8]
+			}, -- [9]
 			{
 				["value"] = "",
 				["text"] = "",
-			}, -- [9]
+			}, -- [10]
 			{
 				["value"] = "Lichbloom",
 				["text"] = "Lichbloom",
-			}, -- [10]
+			}, -- [11]
 			{
 				["value"] = "Icethorn",
 				["text"] = "Icethorn",
-			}, -- [11]
+			}, -- [12]
 			{
 				["value"] = "Eternal Life",
 				["text"] = "Eternal Life",
-			}, -- [12]
+			}, -- [13]
 			{
 				["value"] = "HEavy",
 				["text"] = "HEavy",
-			}, -- [13]
+			}, -- [14]
 			{
 				["value"] = "Heav",
 				["text"] = "Heav",
-			}, -- [14]
+			}, -- [15]
 			{
 				["value"] = "Rough Stone",
 				["text"] = "Rough Stone",
-			}, -- [15]
+			}, -- [16]
 			{
 				["value"] = "Aquamarine",
 				["text"] = "Aquamarine",
-			}, -- [16]
+			}, -- [17]
 			{
 				["value"] = "Star Ruby",
 				["text"] = "Star Ruby",
-			}, -- [17]
+			}, -- [18]
 			{
 				["value"] = "Jade",
 				["text"] = "Jade",
-			}, -- [18]
+			}, -- [19]
 			{
 				["value"] = "Citrine",
 				["text"] = "Citrine",
-			}, -- [19]
+			}, -- [20]
 			{
 				["value"] = "Iron Ore",
 				["text"] = "Iron Ore",
-			}, -- [20]
+			}, -- [21]
 			{
 				["value"] = "Moss Agate ",
 				["text"] = "Moss Agate ",
-			}, -- [21]
+			}, -- [22]
 			{
 				["value"] = "Tin Ore",
 				["text"] = "Tin Ore",
-			}, -- [22]
+			}, -- [23]
 			{
 				["value"] = "Lesser Moonstone ",
 				["text"] = "Lesser Moonstone ",
-			}, -- [23]
+			}, -- [24]
 			{
 				["value"] = "Saronite Bar",
 				["text"] = "Saronite Bar",
-			}, -- [24]
+			}, -- [25]
 			{
 				["value"] = "Saronite Ore",
 				["text"] = "Saronite Ore",
-			}, -- [25]
+			}, -- [26]
 			{
 				["value"] = "Crystallized Life",
 				["text"] = "Crystallized Life",
-			}, -- [26]
+			}, -- [27]
 			{
 				["value"] = "Goldclover",
 				["text"] = "Goldclover",
-			}, -- [27]
+			}, -- [28]
 			{
 				["value"] = "Deadnettle",
 				["text"] = "Deadnettle",
-			}, -- [28]
+			}, -- [29]
 			{
 				["value"] = "Copper ORe",
 				["text"] = "Copper ORe",
-			}, -- [29]
+			}, -- [30]
 			{
 				["value"] = "Gold Bar",
 				["text"] = "Gold Bar",
-			}, -- [30]
+			}, -- [31]
 			{
 				["value"] = "Gold Ore",
 				["text"] = "Gold Ore",
-			}, -- [31]
+			}, -- [32]
 			{
 				["value"] = "army knife",
 				["text"] = "army knife",
-			}, -- [32]
+			}, -- [33]
 			{
 				["value"] = "Crystallized Water",
 				["text"] = "Crystallized Water",
-			}, -- [33]
+			}, -- [34]
 			{
 				["value"] = "silk cloth",
 				["text"] = "silk cloth",
-			}, -- [34]
+			}, -- [35]
 			{
 				["value"] = "Iron Bar",
 				["text"] = "Iron Bar",
-			}, -- [35]
+			}, -- [36]
 			{
 				["value"] = "tigerseye",
 				["text"] = "tigerseye",
-			}, -- [36]
+			}, -- [37]
 			{
 				["value"] = "light leather",
 				["text"] = "light leather",
-			}, -- [37]
+			}, -- [38]
 			{
 				["value"] = "silver ",
 				["text"] = "silver ",
-			}, -- [38]
+			}, -- [39]
 			{
 				["value"] = "Cobalt Bar",
 				["text"] = "Cobalt Bar",
-			}, -- [39]
+			}, -- [40]
 			{
 				["value"] = "Mote of Fire",
 				["text"] = "Mote of Fire",
-			}, -- [40]
+			}, -- [41]
 			{
 				["value"] = "Mote of Earth",
 				["text"] = "Mote of Earth",
-			}, -- [41]
+			}, -- [42]
 			{
 				["value"] = "Dense Stone",
 				["text"] = "Dense Stone",
-			}, -- [42]
+			}, -- [43]
 			{
 				["value"] = "Mageweave Cloth",
 				["text"] = "Mageweave Cloth",
-			}, -- [43]
+			}, -- [44]
 			{
 				["value"] = "Mithril Ore",
 				["text"] = "Mithril Ore",
-			}, -- [44]
+			}, -- [45]
 			{
 				["value"] = "Mithril Bar",
 				["text"] = "Mithril Bar",
-			}, -- [45]
+			}, -- [46]
 			{
 				["value"] = "Solid Stone",
 				["text"] = "Solid Stone",
-			}, -- [46]
+			}, -- [47]
 			{
 				["value"] = "Steel Bar",
 				["text"] = "Steel Bar",
-			}, -- [47]
+			}, -- [48]
 			{
 				["value"] = "Medium Leather",
 				["text"] = "Medium Leather",
-			}, -- [48]
+			}, -- [49]
 			{
 				["value"] = "Wool Cloth",
 				["text"] = "Wool Cloth",
-			}, -- [49]
+			}, -- [50]
 			{
 				["value"] = "Heavy Stone",
 				["text"] = "Heavy Stone",
-			}, -- [50]
+			}, -- [51]
 			{
 				["value"] = "Silver Bar",
 				["text"] = "Silver Bar",
-			}, -- [51]
+			}, -- [52]
 			{
 				["value"] = "Linen Cloth",
 				["text"] = "Linen Cloth",
-			}, -- [52]
+			}, -- [53]
 			{
 				["value"] = "Coarse Stone",
 				["text"] = "Coarse Stone",
-			}, -- [53]
+			}, -- [54]
 			{
 				["value"] = "armor vellum III",
 				["text"] = "armor vellum III",
-			}, -- [54]
+			}, -- [55]
 			{
 				["value"] = "armorn vellum III",
 				["text"] = "armorn vellum III",
-			}, -- [55]
+			}, -- [56]
 			{
 				["value"] = "weapon vellum III",
 				["text"] = "weapon vellum III",
-			}, -- [56]
+			}, -- [57]
 			{
 				["value"] = "Lesser Moonstone",
 				["text"] = "Lesser Moonstone",
-			}, -- [57]
+			}, -- [58]
 			{
 				["value"] = "Moss Agate",
 				["text"] = "Moss Agate",
-			}, -- [58]
+			}, -- [59]
 			{
 				["value"] = "Shadowgem",
 				["text"] = "Shadowgem",
-			}, -- [59]
+			}, -- [60]
 			{
 				["value"] = "Bronze Bar",
 				["text"] = "Bronze Bar",
-			}, -- [60]
+			}, -- [61]
 			{
 				["value"] = "Bronze Bar ",
 				["text"] = "Bronze Bar ",
-			}, -- [61]
+			}, -- [62]
 			{
 				["value"] = "Malachite",
 				["text"] = "Malachite",
-			}, -- [62]
+			}, -- [63]
 			{
 				["value"] = "Copper ",
 				["text"] = "Copper ",
-			}, -- [63]
+			}, -- [64]
 			{
 				["value"] = "deck of nobles",
 				["text"] = "deck of nobles",
-			}, -- [64]
+			}, -- [65]
 			{
 				["value"] = "azure pigment",
 				["text"] = "azure pigment",
-			}, -- [65]
+			}, -- [66]
 			{
 				["value"] = "Fel Sharpening Stone",
 				["text"] = "Fel Sharpening Stone",
-			}, -- [66]
+			}, -- [67]
 			{
 				["value"] = "Fel Iron Bar",
 				["text"] = "Fel Iron Bar",
-			}, -- [67]
+			}, -- [68]
 			{
 				["value"] = "greatness",
 				["text"] = "greatness",
-			}, -- [68]
+			}, -- [69]
 			{
 				["value"] = "Ink of The Sea",
 				["text"] = "Ink of The Sea",
-			}, -- [69]
+			}, -- [70]
 			{
 				["value"] = "Glyph of the Ghoul",
 				["text"] = "Glyph of the Ghoul",
-			}, -- [70]
+			}, -- [71]
 			{
 				["value"] = "Glyph of Ghoul",
 				["text"] = "Glyph of Ghoul",
-			}, -- [71]
+			}, -- [72]
 			{
 				["value"] = "Ethereal ink",
 				["text"] = "Ethereal ink",
-			}, -- [72]
+			}, -- [73]
 			{
 				["value"] = "Nether Pigment",
 				["text"] = "Nether Pigment",
-			}, -- [73]
+			}, -- [74]
 			{
 				["value"] = "Wild Steelbloom",
 				["text"] = "Wild Steelbloom",
-			}, -- [74]
+			}, -- [75]
 			{
 				["value"] = "Liferoot",
 				["text"] = "Liferoot",
-			}, -- [75]
+			}, -- [76]
 			{
 				["value"] = "Felweed",
 				["text"] = "Felweed",
-			}, -- [76]
+			}, -- [77]
 			{
 				["value"] = "Dreamfoil",
 				["text"] = "Dreamfoil",
-			}, -- [77]
+			}, -- [78]
 			{
 				["value"] = "Blindweed",
 				["text"] = "Blindweed",
-			}, -- [78]
+			}, -- [79]
 			{
 				["value"] = "Arthas' Tears",
 				["text"] = "Arthas' Tears",
-			}, -- [79]
+			}, -- [80]
 			{
 				["value"] = "Wintersbite",
 				["text"] = "Wintersbite",
-			}, -- [80]
+			}, -- [81]
 			{
 				["value"] = "Goldthorn",
 				["text"] = "Goldthorn",
-			}, -- [81]
+			}, -- [82]
 			{
 				["value"] = "Fadeleaf",
 				["text"] = "Fadeleaf",
-			}, -- [82]
+			}, -- [83]
 			{
 				["value"] = "Khadgar's Whisker",
 				["text"] = "Khadgar's Whisker",
-			}, -- [83]
+			}, -- [84]
 			{
 				["value"] = "Kingsblood",
 				["text"] = "Kingsblood",
-			}, -- [84]
+			}, -- [85]
 			{
 				["value"] = "Mageroyal",
 				["text"] = "Mageroyal",
-			}, -- [85]
+			}, -- [86]
 			{
 				["value"] = "Briarthorn",
 				["text"] = "Briarthorn",
-			}, -- [86]
+			}, -- [87]
 			{
 				["value"] = "Stranglekelp",
 				["text"] = "Stranglekelp",
-			}, -- [87]
+			}, -- [88]
 			{
 				["value"] = "Peacebloom",
 				["text"] = "Peacebloom",
-			}, -- [88]
+			}, -- [89]
 			{
 				["value"] = "Alabaster Pigment",
 				["text"] = "Alabaster Pigment",
-			}, -- [89]
+			}, -- [90]
 			{
 				["value"] = "Copper Bar",
 				["text"] = "Copper Bar",
-			}, -- [90]
+			}, -- [91]
 			{
 				["value"] = "Arca",
 				["text"] = "Arca",
-			}, -- [91]
+			}, -- [92]
 			{
 				["value"] = "Titansteel Bar",
 				["text"] = "Titansteel Bar",
-			}, -- [92]
+			}, -- [93]
 			{
 				["value"] = "Titan",
 				["text"] = "Titan",
-			}, -- [93]
+			}, -- [94]
 			{
 				["value"] = "Arcane Dust",
 				["text"] = "Arcane Dust",
-			}, -- [94]
+			}, -- [95]
 			{
 				["value"] = "Frostweave Bag",
 				["text"] = "Frostweave Bag",
-			}, -- [95]
+			}, -- [96]
 			{
 				["value"] = "Cobalt Ore",
 				["text"] = "Cobalt Ore",
-			}, -- [96]
+			}, -- [97]
 			{
 				["value"] = "Titanium Ore",
 				["text"] = "Titanium Ore",
-			}, -- [97]
+			}, -- [98]
 			{
 				["value"] = "Titanium Bar",
 				["text"] = "Titanium Bar",
-			}, -- [98]
+			}, -- [99]
 			{
 				["value"] = "ace of nobles",
 				["text"] = "ace of nobles",
-			}, -- [99]
-			{
-				["value"] = "of nobles",
-				["text"] = "of nobles",
 			}, -- [100]
 		},
 	},
@@ -1305,8 +1305,28 @@ AuctionFasterDb = {
 					["weightedAverageBid"] = 10141,
 					["highestBid"] = 10150,
 				}, -- [7]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 5296949,
+					["totalQty"] = 527,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 527,
+					["weightedAverageBuy"] = 10345,
+					["totalBuy"] = 514309,
+					["lowestBuy"] = 9798,
+					["totalBid"] = 497185,
+					["weightedTotalBuy"] = 5452111,
+					["estimatedVolume"] = 3478.2,
+					["highestBid"] = 10421,
+					["weightedAverageBid"] = 10051,
+					["highestBuy"] = 10423,
+					["totalItems"] = 330,
+					["scanTime"] = 1667301750,
+					["lowestBid"] = 8854,
+					["averageBid"] = 9943,
+				}, -- [8]
 			},
-			["lastScanTime"] = 1667238857,
+			["lastScanTime"] = 1667301750,
 			["settings"] = {
 				["priceModel"] = "WeightedAverage",
 				["rememberLastPrice"] = false,
@@ -3332,26 +3352,6 @@ AuctionFasterDb = {
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
-					["weightedTotalBid"] = 4206495,
-					["totalQty"] = 299,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 299,
-					["weightedAverageBuy"] = 37224,
-					["totalBuy"] = 1853747,
-					["lowestBuy"] = 36997,
-					["totalBid"] = 1442648,
-					["weightedTotalBuy"] = 11130205,
-					["estimatedVolume"] = 8372,
-					["highestBid"] = 36280,
-					["weightedAverageBid"] = 14068,
-					["totalItems"] = 1400,
-					["scanTime"] = 1665474428,
-					["highestBuy"] = 38190,
-					["lowestBid"] = 1,
-					["averageBid"] = 28852,
-				}, -- [1]
-				{
-					["averageBuy"] = 1,
 					["weightedTotalBid"] = 33960313,
 					["totalQty"] = 963,
 					["averageQty"] = 0,
@@ -3369,7 +3369,7 @@ AuctionFasterDb = {
 					["scanTime"] = 1665584853,
 					["weightedAverageBid"] = 35265,
 					["highestBid"] = 35342,
-				}, -- [2]
+				}, -- [1]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 17424747,
@@ -3389,7 +3389,7 @@ AuctionFasterDb = {
 					["scanTime"] = 1665663869,
 					["lowestBid"] = 25250,
 					["averageBid"] = 29126,
-				}, -- [3]
+				}, -- [2]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 5566884,
@@ -3409,7 +3409,7 @@ AuctionFasterDb = {
 					["totalItems"] = 818,
 					["weightedAverageBid"] = 23195,
 					["highestBid"] = 23632,
-				}, -- [4]
+				}, -- [3]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 18852512,
@@ -3429,6 +3429,26 @@ AuctionFasterDb = {
 					["totalItems"] = 108,
 					["weightedAverageBid"] = 21595,
 					["highestBid"] = 22750,
+				}, -- [4]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 4850259,
+					["totalQty"] = 247,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 247,
+					["weightedAverageBuy"] = 19881,
+					["totalBuy"] = 962817,
+					["lowestBuy"] = 18807,
+					["totalBid"] = 929675,
+					["weightedTotalBuy"] = 4910685,
+					["estimatedVolume"] = 3625.960000000001,
+					["highestBid"] = 20122,
+					["weightedAverageBid"] = 19636,
+					["highestBuy"] = 20122,
+					["totalItems"] = 734,
+					["scanTime"] = 1667301756,
+					["lowestBid"] = 17867,
+					["averageBid"] = 18593,
 				}, -- [5]
 			},
 			["itemName"] = "Saronite Bar",
@@ -3440,9 +3460,9 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["alwaysUndercut"] = true,
 			},
-			["buy"] = 21497,
+			["buy"] = 18807,
 			["bid"] = 1,
-			["lastScanTime"] = 1667161673,
+			["lastScanTime"] = 1667301756,
 			["icon"] = 237049,
 			["itemId"] = 36913,
 		},
@@ -4632,26 +4652,6 @@ AuctionFasterDb = {
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
-					["weightedTotalBid"] = 13488904,
-					["totalQty"] = 696,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 696,
-					["weightedAverageBuy"] = 20264,
-					["totalBuy"] = 1005152,
-					["lowestBuy"] = 19498,
-					["totalBid"] = 959903,
-					["weightedTotalBuy"] = 14104137,
-					["estimatedVolume"] = 16258.56,
-					["highestBid"] = 20287,
-					["weightedAverageBid"] = 19380,
-					["totalItems"] = 1168,
-					["scanTime"] = 1665474425,
-					["highestBuy"] = 20291,
-					["lowestBid"] = 18523,
-					["averageBid"] = 19198,
-				}, -- [1]
-				{
-					["averageBuy"] = 1,
 					["weightedTotalBid"] = 16587051,
 					["totalQty"] = 897,
 					["averageQty"] = 0,
@@ -4669,7 +4669,7 @@ AuctionFasterDb = {
 					["scanTime"] = 1665584849,
 					["weightedAverageBid"] = 18491,
 					["highestBid"] = 19193,
-				}, -- [2]
+				}, -- [1]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 10145409,
@@ -4689,7 +4689,7 @@ AuctionFasterDb = {
 					["scanTime"] = 1665688826,
 					["weightedAverageBid"] = 16937,
 					["highestBid"] = 17650,
-				}, -- [3]
+				}, -- [2]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 9567190,
@@ -4709,6 +4709,26 @@ AuctionFasterDb = {
 					["totalItems"] = 1415,
 					["weightedAverageBid"] = 9873,
 					["highestBid"] = 10273,
+				}, -- [3]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 4073769,
+					["totalQty"] = 405,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 405,
+					["weightedAverageBuy"] = 10580,
+					["totalBuy"] = 529155,
+					["lowestBuy"] = 9999,
+					["totalBid"] = 503027,
+					["weightedTotalBuy"] = 4285253,
+					["estimatedVolume"] = 6002.099999999999,
+					["highestBid"] = 10066,
+					["weightedAverageBid"] = 10058,
+					["highestBuy"] = 10596,
+					["totalItems"] = 741,
+					["scanTime"] = 1667301754,
+					["lowestBid"] = 9861,
+					["averageBid"] = 10060,
 				}, -- [4]
 			},
 			["itemName"] = "Saronite Ore",
@@ -4720,9 +4740,9 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["alwaysUndercut"] = true,
 			},
-			["buy"] = 10321,
+			["buy"] = 9999,
 			["bid"] = 9805,
-			["lastScanTime"] = 1667161680,
+			["lastScanTime"] = 1667301754,
 			["icon"] = 237437,
 			["itemId"] = 36912,
 		},
@@ -7803,8 +7823,28 @@ AuctionFasterDb = {
 					["weightedAverageBid"] = 370478,
 					["highestBid"] = 370488,
 				}, -- [7]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 53116910,
+					["totalQty"] = 172,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 172,
+					["weightedAverageBuy"] = 326889,
+					["totalBuy"] = 16334755,
+					["lowestBuy"] = 319966,
+					["totalBid"] = 15516521,
+					["weightedTotalBuy"] = 56224922,
+					["estimatedVolume"] = 2590.32,
+					["highestBid"] = 329000,
+					["weightedAverageBid"] = 308819,
+					["highestBuy"] = 329879,
+					["totalItems"] = 753,
+					["scanTime"] = 1667301767,
+					["lowestBid"] = 278882,
+					["averageBid"] = 310330,
+				}, -- [8]
 			},
-			["lastScanTime"] = 1667238873,
+			["lastScanTime"] = 1667301767,
 			["settings"] = {
 				["priceModel"] = "WeightedAverage",
 				["rememberLastPrice"] = false,
@@ -9276,8 +9316,28 @@ AuctionFasterDb = {
 					["weightedAverageBid"] = 31590,
 					["highestBid"] = 33314,
 				}, -- [7]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 9271063,
+					["totalQty"] = 295,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 295,
+					["weightedAverageBuy"] = 32921,
+					["totalBuy"] = 1651570,
+					["lowestBuy"] = 30899,
+					["totalBid"] = 1575967,
+					["weightedTotalBuy"] = 9711726,
+					["estimatedVolume"] = 2312.8,
+					["highestBid"] = 31917,
+					["weightedAverageBid"] = 31427,
+					["highestBuy"] = 33596,
+					["totalItems"] = 392,
+					["scanTime"] = 1667301762,
+					["lowestBid"] = 28466,
+					["averageBid"] = 31519,
+				}, -- [8]
 			},
-			["lastScanTime"] = 1667238869,
+			["lastScanTime"] = 1667301762,
 			["settings"] = {
 				["priceModel"] = "WeightedAverage",
 				["rememberLastPrice"] = false,
@@ -14121,26 +14181,6 @@ AuctionFasterDb = {
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
-					["weightedTotalBid"] = 714624,
-					["totalQty"] = 787,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 787,
-					["weightedAverageBuy"] = 1060,
-					["totalBuy"] = 53423,
-					["lowestBuy"] = 1000,
-					["totalBid"] = 47313,
-					["weightedTotalBuy"] = 834559,
-					["estimatedVolume"] = 6075.64,
-					["averageBid"] = 946,
-					["lowestBid"] = 650,
-					["totalItems"] = 386,
-					["scanTime"] = 1665500400,
-					["highestBuy"] = 1094,
-					["weightedAverageBid"] = 908,
-					["highestBid"] = 1094,
-				}, -- [1]
-				{
-					["averageBuy"] = 1,
 					["weightedTotalBid"] = 1135576,
 					["totalQty"] = 679,
 					["averageQty"] = 0,
@@ -14158,7 +14198,7 @@ AuctionFasterDb = {
 					["totalItems"] = 144,
 					["lowestBid"] = 123,
 					["averageBid"] = 1767,
-				}, -- [2]
+				}, -- [1]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 1406056,
@@ -14178,7 +14218,7 @@ AuctionFasterDb = {
 					["totalItems"] = 447,
 					["weightedAverageBid"] = 1541,
 					["highestBid"] = 1897,
-				}, -- [3]
+				}, -- [2]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 709614,
@@ -14198,7 +14238,7 @@ AuctionFasterDb = {
 					["scanTime"] = 1665767946,
 					["weightedAverageBid"] = 1219,
 					["highestBid"] = 1450,
-				}, -- [4]
+				}, -- [3]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 376919,
@@ -14218,7 +14258,7 @@ AuctionFasterDb = {
 					["scanTime"] = 1666438013,
 					["lowestBid"] = 650,
 					["averageBid"] = 701,
-				}, -- [5]
+				}, -- [4]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 16656100,
@@ -14238,7 +14278,7 @@ AuctionFasterDb = {
 					["scanTime"] = 1666777018,
 					["weightedAverageBid"] = 17048,
 					["highestBid"] = 18994,
-				}, -- [6]
+				}, -- [5]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 863079,
@@ -14258,9 +14298,29 @@ AuctionFasterDb = {
 					["totalItems"] = 1312,
 					["weightedAverageBid"] = 1001,
 					["highestBid"] = 1050,
+				}, -- [6]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 686520,
+					["totalQty"] = 992,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 992,
+					["weightedAverageBuy"] = 759,
+					["totalBuy"] = 38046,
+					["lowestBuy"] = 753,
+					["totalBid"] = 34616,
+					["weightedTotalBuy"] = 753808,
+					["estimatedVolume"] = 23510.4,
+					["averageBid"] = 692,
+					["lowestBid"] = 649,
+					["scanTime"] = 1667301508,
+					["highestBuy"] = 765,
+					["totalItems"] = 1185,
+					["weightedAverageBid"] = 692,
+					["highestBid"] = 726,
 				}, -- [7]
 			},
-			["lastScanTime"] = 1666881117,
+			["lastScanTime"] = 1667301508,
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
@@ -14269,8 +14329,8 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["duration"] = 3,
 			},
-			["bid"] = 995,
-			["buy"] = 1047,
+			["bid"] = 649,
+			["buy"] = 1552,
 			["icon"] = 135236,
 			["itemId"] = 7912,
 		},
@@ -14668,86 +14728,6 @@ AuctionFasterDb = {
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
-					["weightedTotalBid"] = 21878516,
-					["totalQty"] = 117,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 117,
-					["weightedAverageBuy"] = 194325,
-					["totalBuy"] = 9523112,
-					["lowestBuy"] = 169987,
-					["totalBid"] = 9217662,
-					["weightedTotalBuy"] = 22736098,
-					["estimatedVolume"] = 402.48,
-					["averageBid"] = 184353,
-					["lowestBid"] = 160000,
-					["scanTime"] = 1665088523,
-					["highestBuy"] = 210525,
-					["totalItems"] = 172,
-					["weightedAverageBid"] = 186995,
-					["highestBid"] = 210525,
-				}, -- [1]
-				{
-					["averageBuy"] = 1,
-					["weightedTotalBid"] = 9212653,
-					["totalQty"] = 75,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 75,
-					["weightedAverageBuy"] = 156018,
-					["totalBuy"] = 7956410,
-					["lowestBuy"] = 146097,
-					["totalBid"] = 5603266,
-					["weightedTotalBuy"] = 11701387,
-					["estimatedVolume"] = 250.5,
-					["averageBid"] = 112065,
-					["lowestBid"] = 40100,
-					["highestBuy"] = 171281,
-					["totalItems"] = 167,
-					["scanTime"] = 1665167653,
-					["weightedAverageBid"] = 122835,
-					["highestBid"] = 162716,
-				}, -- [2]
-				{
-					["averageBuy"] = 1,
-					["weightedTotalBid"] = 9461621,
-					["totalQty"] = 58,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 58,
-					["weightedAverageBuy"] = 171716,
-					["totalBuy"] = 8600439,
-					["lowestBuy"] = 169899,
-					["totalBid"] = 8170389,
-					["weightedTotalBuy"] = 9959581,
-					["estimatedVolume"] = 1338.64,
-					["averageBid"] = 163407,
-					["lowestBid"] = 161404,
-					["scanTime"] = 1665238056,
-					["highestBuy"] = 172567,
-					["totalItems"] = 1154,
-					["weightedAverageBid"] = 163131,
-					["highestBid"] = 163939,
-				}, -- [3]
-				{
-					["averageBuy"] = 1,
-					["weightedTotalBid"] = 11081524,
-					["totalQty"] = 56,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 56,
-					["weightedAverageBuy"] = 208298,
-					["totalBuy"] = 10414974,
-					["lowestBuy"] = 208297,
-					["totalBid"] = 9894214,
-					["weightedTotalBuy"] = 11664724,
-					["estimatedVolume"] = 796.32,
-					["highestBid"] = 197885,
-					["weightedAverageBid"] = 197884,
-					["totalItems"] = 711,
-					["scanTime"] = 1665474453,
-					["highestBuy"] = 208300,
-					["lowestBid"] = 197883,
-					["averageBid"] = 197884,
-				}, -- [4]
-				{
-					["averageBuy"] = 1,
 					["weightedTotalBid"] = 9970164,
 					["totalQty"] = 50,
 					["averageQty"] = 0,
@@ -14765,7 +14745,27 @@ AuctionFasterDb = {
 					["scanTime"] = 1665663877,
 					["lowestBid"] = 199401,
 					["averageBid"] = 199403,
-				}, -- [5]
+				}, -- [1]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 27901391,
+					["totalQty"] = 151,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 151,
+					["weightedAverageBuy"] = 193156,
+					["totalBuy"] = 9657859,
+					["lowestBuy"] = 193155,
+					["totalBid"] = 9252190,
+					["weightedTotalBuy"] = 29166572,
+					["estimatedVolume"] = 2485.46,
+					["highestBid"] = 193158,
+					["weightedAverageBid"] = 184777,
+					["highestBuy"] = 193158,
+					["totalItems"] = 823,
+					["scanTime"] = 1667301760,
+					["lowestBid"] = 183497,
+					["averageBid"] = 185043,
+				}, -- [2]
 			},
 			["itemName"] = "Greater Cosmic Essence",
 			["settings"] = {
@@ -14778,7 +14778,7 @@ AuctionFasterDb = {
 			},
 			["itemId"] = 34055,
 			["bid"] = 40100,
-			["lastScanTime"] = 1665663877,
+			["lastScanTime"] = 1667301760,
 			["icon"] = 237016,
 			["buy"] = 144644,
 		},

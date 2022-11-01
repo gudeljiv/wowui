@@ -19,7 +19,6 @@ VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast Sunder Armor
-/cast Bloodrage
 END
 VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -28,28 +27,22 @@ VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 /cast [stance:1/3] Bloodrage
 /cast [stance:1/3] Death Wish
 /cast [stance:2] Shield Wall
-/use 14
-/use 13
 END
 VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast Shield Slam
 /cast Shield Block
-/use 13
-/use 14
 END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast Mortal Strike
-/cast Bloodrage
 END
 VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast Sweeping Strikes
-/cast Bloodrage
 END
 VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -66,8 +59,8 @@ VER 3 0000000001000015 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast Revenge
-/use 13
-/use 14
+/use Bladefist's Breadth
+/use First Mate's Pocketwatch
 END
 VER 3 0000000001000014 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Vigilance
@@ -76,12 +69,10 @@ END
 VER 3 0000000001000017 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Cleave
-/cast Bloodrage
 END
 VER 3 0000000001000018 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Heroic Strike
-/cast Bloodrage
 END
 VER 3 0000000001000016 " " "INV_MISC_QUESTIONMARK"
 #showtooltip [nocombat] Charge; Intercept
@@ -91,4 +82,9 @@ END
 VER 3 0000000001000019 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /cast [@cursor] Adamantite Grenade
+END
+VER 3 000000000100001B " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Concussion Blow
+/cast Bloodrage
 END

@@ -1,10 +1,10 @@
-tag be6010fece47cc4f121c8371e5dd7e0a7e6c917f v1.9.26-bcc
-Author:	Talyrius <contact@talyrius.net>
-Date:	Wed Sep 15 13:01:58 2021 -0700
+lightweight tag 95b17b92d788242d75c4b66a44f1f57ebc445147 v1.9.46
+Author:	GitHub <noreply@github.com>
+Date:	Sat Oct 29 10:40:30 2022 -0700
 
-commit 17594af17f03dd5f74782f619e6d1eda456b6e93
-Author: Talyrius <contact@talyrius.net>
-Date:   Wed Sep 15 13:01:06 2021 -0700
+commit 95b17b92d788242d75c4b66a44f1f57ebc445147
+Author: Antonio Lobato <aj.lobato@gmail.com>
+Date:   Sat Oct 29 10:40:30 2022 -0700
 
-    Updated for Patch 2.5.2: Overlords of Outland.
+    Another cooldown fix for banks. (#748)
 

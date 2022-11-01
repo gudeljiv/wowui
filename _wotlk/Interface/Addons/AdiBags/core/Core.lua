@@ -126,6 +126,9 @@ function addon:OnEnable()
 	self:RegisterEvent('BAG_UPDATE')
 	self:RegisterEvent('BAG_UPDATE_DELAYED')
 	self:RegisterBucketEvent('PLAYERBANKSLOTS_CHANGED', 0.01, 'BankUpdated')
+	if addon.isRetail then
+		self:RegisterBucketEvent('PLAYERREAGENTBANKSLOTS_CHANGED', 0.01, 'ReagentBankUpdated')
+	end
 
 	self:RegisterEvent('PLAYER_LEAVING_WORLD', 'Disable')
 
@@ -154,6 +157,10 @@ function addon:OnEnable()
 	self:RegisterEvent('AUCTION_HOUSE_CLOSED', 'UpdateInteractingWindow')
 	self:RegisterEvent('TRADE_SHOW', 'UpdateInteractingWindow')
 	self:RegisterEvent('TRADE_CLOSED', 'UpdateInteractingWindow')
+	self:RegisterEvent('GUILDBANKFRAME_OPENED', 'UpdateInteractingWindow')
+	self:RegisterEvent('GUILDBANKFRAME_CLOSED', 'UpdateInteractingWindow')
+	self:RegisterEvent('SOCKET_INFO_UPDATE', 'UpdateInteractingWindow')
+	self:RegisterEvent('SOCKET_INFO_CLOSE', 'UpdateInteractingWindow')
 
 	self:SetSortingOrder(self.db.profile.sortingOrder)
 
@@ -318,6 +325,10 @@ addon:SetDefaultModulePrototype(moduleProto)
 
 local updatedBags = {}
 local updatedBank = { [BANK_CONTAINER] = true }
+local updatedReagentBank = {}
+if addon.isRetail then
+	updatedReagentBank = { [REAGENTBANK_CONTAINER] = true }
+end
 
 function addon:BAG_UPDATE(event, bag)
 	updatedBags[bag] = true
@@ -333,6 +344,15 @@ function addon:BankUpdated(slots)
 	for slot in pairs(slots) do
 		if slot > 0 and slot <= NUM_BANKGENERIC_SLOTS then
 			return self:SendMessage('AdiBags_BagUpdated', updatedBank)
+		end
+	end
+end
+
+function addon:ReagentBankUpdated(slots)
+	-- Wrap several PLAYERREAGANBANKSLOTS_CHANGED into one AdiBags_BagUpdated message
+	for slot in pairs(slots) do
+		if slot > 0 and slot <= 98 then
+			return self:SendMessage('AdiBags_BagUpdated', updatedReagentBank)
 		end
 	end
 end
@@ -462,9 +482,9 @@ end
 
 local LSM = LibStub('LibSharedMedia-3.0')
 
-function addon:GetContainerSkin(containerName)
+function addon:GetContainerSkin(containerName, isReagentBank)
 	local skin = self.db.profile.skin
-	local r, g, b, a = unpack(skin[(containerName..'Color')], 1, 4)
+	local r, g, b, a = unpack(skin[isReagentBank and "ReagentBankColor" or (containerName..'Color')], 1, 4)
 	local backdrop = addon.BACKDROP
 	backdrop.bgFile = LSM:Fetch(LSM.MediaType.BACKGROUND, skin.background)
 	backdrop.edgeFile = LSM:Fetch(LSM.MediaType.BORDER, skin.border)

@@ -1,13 +1,13 @@
 -- Widget is based on the AceGUIWidget-DropDown.lua supplied with AceGUI-3.0
 -- Widget created by Yssaril
 
-local AceGUI = LibStub('AceGUI-3.0')
-local Media = LibStub('LibSharedMedia-3.0')
+local AceGUI = LibStub("AceGUI-3.0")
+local Media = LibStub("LibSharedMedia-3.0")
 
-local AGSMW = LibStub('AceGUISharedMediaWidgets-1.0')
+local AGSMW = LibStub("AceGUISharedMediaWidgets-1.0")
 
 do
-	local widgetType = 'LSM30_Background'
+	local widgetType = "LSM30_Background"
 	local widgetVersion = 13
 
 	local contentFrameCache = {}
@@ -20,7 +20,7 @@ do
 
 	local function ContentOnClick(this, button)
 		local self = this.obj
-		self:Fire('OnValueChanged', this.text:GetText())
+		self:Fire("OnValueChanged", this.text:GetText())
 		if self.dropdown then
 			self.dropdown = AGSMW:ReturnDropDownFrame(self.dropdown)
 		end
@@ -29,7 +29,7 @@ do
 	local function ContentOnEnter(this, button)
 		local self = this.obj
 		local text = this.text:GetText()
-		local background = self.list[text] ~= text and self.list[text] or Media:Fetch('background', text)
+		local background = self.list[text] ~= text and self.list[text] or Media:Fetch('background',text)
 		self.dropdown.bgTex:SetTexture(background)
 	end
 
@@ -38,29 +38,29 @@ do
 		if next(contentFrameCache) then
 			frame = table.remove(contentFrameCache)
 		else
-			frame = CreateFrame('Button', nil, UIParent, BackdropTemplateMixin and 'BackdropTemplate')
-			--frame:SetWidth(200)
-			frame:SetHeight(18)
-			frame:SetHighlightTexture([[Interface\QuestFrame\UI-QuestTitleHighlight]], 'ADD')
-			frame:SetScript('OnClick', ContentOnClick)
-			frame:SetScript('OnEnter', ContentOnEnter)
+			frame = CreateFrame("Button", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate")
+				--frame:SetWidth(200)
+				frame:SetHeight(18)
+				frame:SetHighlightTexture([[Interface\QuestFrame\UI-QuestTitleHighlight]], "ADD")
+				frame:SetScript("OnClick", ContentOnClick)
+				frame:SetScript("OnEnter", ContentOnEnter)
 
-			local check = frame:CreateTexture('OVERLAY')
-			check:SetWidth(16)
-			check:SetHeight(16)
-			check:SetPoint('LEFT', frame, 'LEFT', 1, -1)
-			check:SetTexture('Interface\\Buttons\\UI-CheckBox-Check')
-			check:Hide()
+			local check = frame:CreateTexture("OVERLAY")
+				check:SetWidth(16)
+				check:SetHeight(16)
+				check:SetPoint("LEFT",frame,"LEFT",1,-1)
+				check:SetTexture("Interface\\Buttons\\UI-CheckBox-Check")
+				check:Hide()
 			frame.check = check
 
-			local text = frame:CreateFontString(nil, 'OVERLAY', 'GameFontWhite')
-			local font, size = text:GetFont()
-			text:SetFont(font, size, 'OUTLINE')
+			local text = frame:CreateFontString(nil,"OVERLAY","GameFontWhite")
+				local font, size = text:GetFont()
+				text:SetFont(font,size,"OUTLINE")
 
-			text:SetPoint('TOPLEFT', check, 'TOPRIGHT', 1, 0)
-			text:SetPoint('BOTTOMRIGHT', frame, 'BOTTOMRIGHT', -2, 0)
-			text:SetJustifyH('LEFT')
-			text:SetText('Test Test Test Test Test Test Test')
+				text:SetPoint("TOPLEFT", check, "TOPRIGHT", 1, 0)
+				text:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -2, 0)
+				text:SetJustifyH("LEFT")
+				text:SetText("Test Test Test Test Test Test Test")
 			frame.text = text
 
 			frame.ReturnSelf = ReturnSelf
@@ -75,8 +75,8 @@ do
 	end
 
 	local function OnRelease(self)
-		self:SetText('')
-		self:SetLabel('')
+		self:SetText("")
+		self:SetLabel("")
 		self:SetDisabled(false)
 
 		self.value = nil
@@ -90,7 +90,7 @@ do
 
 	local function SetValue(self, value) -- Set the value to an item in the List.
 		if self.list then
-			self:SetText(value or '')
+			self:SetText(value or "")
 		end
 		self.value = value
 	end
@@ -100,25 +100,22 @@ do
 	end
 
 	local function SetList(self, list) -- Set the list of values for the dropdown (key => value pairs)
-		self.list = list or Media:HashTable('background')
+		self.list = list or Media:HashTable("background")
 	end
 
-	local function SetText(self, text) -- Set the text displayed in the box.
-		self.frame.text:SetText(text or '')
-		local background = self.list[text] ~= text and self.list[text] or Media:Fetch('background', text)
 
-		self.frame.displayButton:SetBackdrop(
-			{
-				bgFile = background,
-				edgeFile = 'Interface/Tooltips/UI-Tooltip-Border',
-				edgeSize = 16,
-				insets = {left = 4, right = 4, top = 4, bottom = 4}
-			}
-		)
+	local function SetText(self, text) -- Set the text displayed in the box.
+		self.frame.text:SetText(text or "")
+		local background = self.list[text] ~= text and self.list[text] or Media:Fetch('background',text)
+
+		self.frame.displayButton:SetBackdrop({bgFile = background,
+			edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+			edgeSize = 16,
+			insets = { left = 4, right = 4, top = 4, bottom = 4 }})
 	end
 
 	local function SetLabel(self, text) -- Set the text for the label.
-		self.frame.label:SetText(text or '')
+		self.frame.label:SetText(text or "")
 	end
 
 	local function AddItem(self, key, value) -- Add an item to the list.
@@ -127,28 +124,22 @@ do
 	end
 	local SetItemValue = AddItem -- Set the value of a item in the list. <<same as adding a new item>>
 
-	local function SetMultiselect(self, flag)
-	end -- Toggle multi-selecting. <<Dummy function to stay inline with the dropdown API>>
-	local function GetMultiselect()
-		return false
-	end
-	 -- Query the multi-select flag. <<Dummy function to stay inline with the dropdown API>>
-	local function SetItemDisabled(self, key)
-	end
-	 -- Disable one item in the list. <<Dummy function to stay inline with the dropdown API>>
+	local function SetMultiselect(self, flag) end -- Toggle multi-selecting. <<Dummy function to stay inline with the dropdown API>>
+	local function GetMultiselect() return false end-- Query the multi-select flag. <<Dummy function to stay inline with the dropdown API>>
+	local function SetItemDisabled(self, key) end-- Disable one item in the list. <<Dummy function to stay inline with the dropdown API>>
 
 	local function SetDisabled(self, disabled) -- Disable the widget.
 		self.disabled = disabled
 		if disabled then
 			self.frame:Disable()
-			self.frame.displayButton:SetBackdropColor(.2, .2, .2, 1)
+			self.frame.displayButton:SetBackdropColor(.2,.2,.2,1)
 		else
 			self.frame:Enable()
-			self.frame.displayButton:SetBackdropColor(1, 1, 1, 1)
+			self.frame.displayButton:SetBackdropColor(1,1,1,1)
 		end
 	end
 
-	local function textSort(a, b)
+	local function textSort(a,b)
 		return string.upper(a) < string.upper(b)
 	end
 
@@ -162,10 +153,10 @@ do
 			AceGUI:SetFocus(self)
 			self.dropdown = AGSMW:GetDropDownFrame()
 			local width = self.frame:GetWidth()
-			self.dropdown:SetPoint('TOPLEFT', self.frame, 'BOTTOMLEFT')
-			self.dropdown:SetPoint('TOPRIGHT', self.frame, 'BOTTOMRIGHT', width < 160 and (160 - width) or 0, 0)
+			self.dropdown:SetPoint("TOPLEFT", self.frame, "BOTTOMLEFT")
+			self.dropdown:SetPoint("TOPRIGHT", self.frame, "BOTTOMRIGHT", width < 160 and (160 - width) or 0, 0)
 			for k, v in pairs(self.list) do
-				sortedlist[#sortedlist + 1] = k
+				sortedlist[#sortedlist+1] = k
 			end
 			table.sort(sortedlist, textSort)
 			for i, k in ipairs(sortedlist) do
@@ -197,11 +188,11 @@ do
 	end
 
 	local function Drop_OnEnter(this)
-		this.obj:Fire('OnEnter')
+		this.obj:Fire("OnEnter")
 	end
 
 	local function Drop_OnLeave(this)
-		this.obj:Fire('OnLeave')
+		this.obj:Fire("OnLeave")
 	end
 
 	local function Constructor()
@@ -212,10 +203,10 @@ do
 		self.frame = frame
 		frame.obj = self
 		frame.dropButton.obj = self
-		frame.dropButton:SetScript('OnEnter', Drop_OnEnter)
-		frame.dropButton:SetScript('OnLeave', Drop_OnLeave)
-		frame.dropButton:SetScript('OnClick', ToggleDrop)
-		frame:SetScript('OnHide', OnHide)
+		frame.dropButton:SetScript("OnEnter", Drop_OnEnter)
+		frame.dropButton:SetScript("OnLeave", Drop_OnLeave)
+		frame.dropButton:SetScript("OnClick",ToggleDrop)
+		frame:SetScript("OnHide", OnHide)
 
 		self.alignoffset = 31
 
@@ -240,4 +231,5 @@ do
 	end
 
 	AceGUI:RegisterWidgetType(widgetType, Constructor, widgetVersion)
+
 end

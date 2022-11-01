@@ -29,6 +29,19 @@ f:RegisterEvent('BAG_UPDATE')
 f:SetScript(
 	'OnEvent',
 	function(self, event, isInitialLogin, isReloadingUi)
+		-- xVermin.CheckIfLoadedWithTimer(
+		-- 	'AdiBagsContainer1',
+		-- 	function()
+		-- AdiBagsContainer1SearchBox.Left:Hide()
+		-- AdiBagsContainer1SearchBox.Right:Hide()
+		-- AdiBagsContainer1SearchBox.Middle:Hide()
+		-- AdiBagsContainer1SearchBoxSearchIcon:Hide()
+		-- AdiBagsContainer1SearchBox:CreateBeautyBorder(8)
+		-- AdiBagsContainer1SearchBox:Hide()
+		-- 	end,
+		-- 	0.1
+		-- )
+
 		for i = 1, 1000 do
 			if _G['AdiBagsItemButton' .. i .. 'Count'] then
 				_G['AdiBagsItemButton' .. i .. 'Count']:SetScale(0.8)
