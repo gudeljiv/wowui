@@ -83,8 +83,6 @@ function QuestReward_Events(self, event, ...)
 		if (TempSell ~= nil) and (Watto_TempSell) then
 			Watto_TempSell[TempSell] = 1
 		end
-	else
-		self:CreateBeautyBorder(8)
 	end
 end
 

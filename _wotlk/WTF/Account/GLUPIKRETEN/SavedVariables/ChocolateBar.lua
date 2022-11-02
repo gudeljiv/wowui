@@ -661,9 +661,9 @@ CB_PlayedTime = {
 		["total"] = 29335,
 	},
 	["Vermina-Golemagg"] = {
-		["total"] = 139425,
-		["timeStamp"] = 174773.782,
-		["timeAtThisLevel"] = 2876,
+		["total"] = 139799,
+		["timeStamp"] = 61276.429,
+		["timeAtThisLevel"] = 3250,
 	},
 	["Poklopac-Dreadnaught"] = {
 		["total"] = 234439,
@@ -680,9 +680,9 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 418,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1081715,
-		["timeStamp"] = 1849294.076,
-		["timeAtThisLevel"] = 15568,
+		["total"] = 1084562,
+		["timeStamp"] = 62053.123,
+		["timeAtThisLevel"] = 18415,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
@@ -752,7 +752,9 @@ CB_PlayedTime = {
 		["total"] = 18945,
 	},
 	["Augustin-Golemagg"] = {
-		["total"] = 430801,
+		["total"] = 434688,
+		["timeStamp"] = 66347.726,
+		["timeAtThisLevel"] = 12625,
 	},
 	["Battlearm-"] = {
 		["total"] = 1786,

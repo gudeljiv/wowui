@@ -1,6 +1,7 @@
-VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
-/select Retribution Aura,Devotion Aura,Concentration Aura
-/click [btn:2]S121M;S121A
+VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/startattack
+/cast Judgement of Light
 END
 VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -48,8 +49,7 @@ VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 /select Seal of Command, Seal of Righteousness, Seal of Justice
 /click [btn:2]S132M;S132A
 END
-VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
-#showtooltip 
-/startattack
-/cast Judgement of Light
+VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
+/select Retribution Aura,Devotion Aura,Concentration Aura
+/click [btn:2]S133M;S133A
 END
