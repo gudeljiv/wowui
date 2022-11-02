@@ -1,10 +1,14 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
+		[106] = {
+		},
 		[104] = {
 		},
+		[105] = {
+		},
 	},
-	["currentStep"] = 104,
+	["currentStep"] = 106,
 	["phase"] = 6,
 	["currentGuideGroup"] = "RestedXP Horde 70-80",
 	["flightPaths"] = {
@@ -36,71 +40,63 @@ RXPCData = {
 		[99] = "Thrallmar, Hellfire Peninsula",
 		[58] = "Zoram'gar Outpost, Ashenvale",
 		[166] = "Emerald Sanctuary, Felwood",
+		[226] = "Transitus Shield, Coldarra",
 		[69] = "Moonglade",
-		[258] = "Taunka'le Village, Borean Tundra",
-		[289] = "Amber Ledge, Borean Tundra",
-		[259] = "Bor'gorok Outpost, Borean Tundra",
-		[118] = "Zabra'jin, Zangarmarsh",
+		[23] = "Orgrimmar, Durotar",
+		[295] = "Kamagua, Howling Fjord",
+		[252] = "Wyrmrest Temple, Dragonblight",
+		[30] = "Freewind Post, Thousand Needles",
 		[22] = "Thunder Bluff, Mulgore",
 		[102] = "Falcon Watch, Hellfire Peninsula",
-		[30] = "Freewind Post, Thousand Needles",
+		[118] = "Zabra'jin, Zangarmarsh",
 		[254] = "Venomspite, Dragonblight",
-		[29] = "Sun Rock Retreat, Stonetalon Mountains",
+		[40] = "Gadgetzan, Tanaris",
 		[141] = "Spinebreaker Ridge, Hellfire Peninsula",
-		[122] = "Area 52, Netherstorm",
+		[296] = "Unu'pe, Borean Tundra",
 		[72] = "Cenarion Hold, Silithus",
 		[128] = "Shattrath, Terokkar Forest",
 		[139] = "The Stormspire, Netherstorm",
 		[120] = "Garadar, Nagrand",
-		[296] = "Unu'pe, Borean Tundra",
-		[40] = "Gadgetzan, Tanaris",
+		[122] = "Area 52, Netherstorm",
+		[29] = "Sun Rock Retreat, Stonetalon Mountains",
 		[53] = "Everlook, Winterspring",
 		[61] = "Splintertree Post, Ashenvale",
-		[252] = "Wyrmrest Temple, Dragonblight",
-		[23] = "Orgrimmar, Durotar",
-		[295] = "Kamagua, Howling Fjord",
+		[259] = "Bor'gorok Outpost, Borean Tundra",
+		[289] = "Amber Ledge, Borean Tundra",
+		[258] = "Taunka'le Village, Borean Tundra",
 	},
 	["JoyousJourneys"] = true,
-	["currentGuideName"] = "70-72 Borean Tundra",
+	["currentGuideName"] = "72-74 Dragonblight",
 	["stepSkip"] = {
-		true, -- [1]
-		[31] = true,
-		[54] = true,
-		[62] = true,
-		[76] = true,
-		[77] = true,
-		[93] = true,
-		[16] = true,
-		[24] = true,
-		[28] = true,
-		[32] = true,
-		[79] = true,
-		[95] = true,
-		[56] = true,
-		[33] = true,
-		[49] = true,
-		[57] = true,
-		[66] = true,
-		[82] = true,
-		[98] = true,
-		[68] = true,
-		[84] = true,
-		[100] = true,
-		[69] = true,
-		[11] = true,
-		[15] = true,
-		[70] = true,
-		[102] = true,
-		[44] = true,
-		[18] = true,
-		[85] = true,
+		[87] = true,
 		[61] = true,
+		[16] = true,
+		[33] = true,
+		[66] = true,
+		[68] = true,
+		[70] = true,
+		[72] = true,
+		[39] = true,
+		[80] = true,
+		[82] = true,
+		[17] = true,
+		[11] = true,
+		[23] = true,
+		[64] = true,
+		[24] = true,
+		[48] = true,
+		[25] = true,
 		[19] = true,
-		[5] = true,
-		[65] = true,
+		[26] = true,
+		[41] = true,
+		[53] = true,
+		[55] = true,
+		[79] = true,
+		[47] = true,
+		[92] = true,
 	},
-	["GA"] = false,
 	["SoM"] = 1,
+	["GA"] = false,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -117,13 +113,13 @@ RXPCTrackingData = {
 							["xp"] = 41294,
 							["count"] = 32,
 						},
-						["Hellfire Peninsula"] = {
-							["xp"] = 2622,
-							["count"] = 4,
-						},
 						["Terokkar Forest"] = {
 							["xp"] = 43378,
 							["count"] = 29,
+						},
+						["Hellfire Peninsula"] = {
+							["xp"] = 2622,
+							["count"] = 4,
 						},
 					},
 					["timestamp"] = {
@@ -131,10 +127,10 @@ RXPCTrackingData = {
 							["monthDay"] = 7,
 							["day"] = 0,
 							["month"] = 9,
-							["weekday"] = 4,
+							["minute"] = 52,
 							["year"] = 2022,
 							["hour"] = 12,
-							["minute"] = 52,
+							["weekday"] = 4,
 						},
 						["finished"] = 692162,
 					},
@@ -145,13 +141,13 @@ RXPCTrackingData = {
 					["groupExperience"] = 626013,
 					["deaths"] = 22,
 					["mobs"] = {
-						["Alterac Valley"] = {
-							["xp"] = 396259,
-							["count"] = 137,
-						},
 						["Sethekk Halls"] = {
 							["xp"] = 16960,
 							["count"] = 6,
+						},
+						["Alterac Valley"] = {
+							["xp"] = 396259,
+							["count"] = 137,
 						},
 						["Hellfire Ramparts"] = {
 							["xp"] = 210994,
@@ -167,20 +163,20 @@ RXPCTrackingData = {
 							["monthDay"] = 10,
 							["day"] = 0,
 							["month"] = 9,
-							["minute"] = 0,
+							["weekday"] = 7,
 							["year"] = 2022,
 							["hour"] = 18,
-							["weekday"] = 7,
+							["minute"] = 0,
 						},
 						["finished"] = 720751,
 						["dateFinished"] = {
 							["monthDay"] = 11,
 							["day"] = 0,
 							["month"] = 9,
-							["minute"] = 31,
+							["weekday"] = 1,
 							["year"] = 2022,
 							["hour"] = 13,
-							["weekday"] = 1,
+							["minute"] = 31,
 						},
 						["started"] = 707365,
 					},
@@ -204,10 +200,10 @@ RXPCTrackingData = {
 							["monthDay"] = 11,
 							["day"] = 0,
 							["month"] = 9,
-							["minute"] = 19,
+							["weekday"] = 1,
 							["year"] = 2022,
 							["hour"] = 18,
-							["weekday"] = 1,
+							["minute"] = 19,
 						},
 						["started"] = 1664440163,
 					},
@@ -234,17 +230,17 @@ RXPCTrackingData = {
 							["xp"] = 15600,
 							["count"] = 1,
 						},
-						["Nagrand"] = {
-							["xp"] = 25348,
-							["count"] = 16,
+						["Terokkar Forest"] = {
+							["xp"] = 98779,
+							["count"] = 39,
 						},
 						["Sethekk Halls"] = {
 							["xp"] = 224830,
 							["count"] = 129,
 						},
-						["Terokkar Forest"] = {
-							["xp"] = 98779,
-							["count"] = 39,
+						["Nagrand"] = {
+							["xp"] = 25348,
+							["count"] = 16,
 						},
 					},
 					["timestamp"] = {
@@ -252,32 +248,32 @@ RXPCTrackingData = {
 							["monthDay"] = 7,
 							["day"] = 0,
 							["month"] = 9,
-							["weekday"] = 4,
+							["minute"] = 52,
 							["year"] = 2022,
 							["hour"] = 12,
-							["minute"] = 52,
+							["weekday"] = 4,
 						},
 						["finished"] = 707364,
 						["dateFinished"] = {
 							["monthDay"] = 10,
 							["day"] = 0,
 							["month"] = 9,
-							["minute"] = 0,
+							["weekday"] = 7,
 							["year"] = 2022,
 							["hour"] = 18,
-							["weekday"] = 7,
+							["minute"] = 0,
 						},
 						["started"] = 692163,
 					},
 					["quests"] = {
+						["Zangarmarsh"] = {
+							[9731] = 15600,
+						},
 						["Terokkar Forest"] = {
 							[9957] = 3900,
 							[10880] = 8100,
 							[9796] = 3825,
 							[10165] = 33900,
-						},
-						["Zangarmarsh"] = {
-							[9731] = 15600,
 						},
 					},
 				},
@@ -285,13 +281,13 @@ RXPCTrackingData = {
 					["groupExperience"] = 720758,
 					["deaths"] = 20,
 					["mobs"] = {
-						["Sethekk Halls"] = {
-							["xp"] = 348483,
-							["count"] = 271,
-						},
 						["Alterac Valley"] = {
 							["xp"] = 372275,
 							["count"] = 176,
+						},
+						["Sethekk Halls"] = {
+							["xp"] = 348483,
+							["count"] = 271,
 						},
 					},
 					["timestamp"] = {
@@ -299,20 +295,20 @@ RXPCTrackingData = {
 							["monthDay"] = 11,
 							["day"] = 0,
 							["month"] = 9,
-							["minute"] = 31,
+							["weekday"] = 1,
 							["year"] = 2022,
 							["hour"] = 13,
-							["weekday"] = 1,
+							["minute"] = 31,
 						},
 						["finished"] = 734114,
 						["dateFinished"] = {
 							["monthDay"] = 11,
 							["day"] = 0,
 							["month"] = 9,
-							["minute"] = 19,
+							["weekday"] = 1,
 							["year"] = 2022,
 							["hour"] = 18,
-							["weekday"] = 1,
+							["minute"] = 19,
 						},
 						["started"] = 720752,
 					},
@@ -437,6 +433,15 @@ RXPCComms = {
 					["timePlayed"] = 280.6680000000633,
 					["class"] = "WARRIOR",
 				},
+				["Ouii"] = {
+					["class"] = "HUNTER",
+					["level"] = 71,
+					["lastSeen"] = 1821053.14,
+					["xpPercentage"] = 0,
+					["isRxp"] = true,
+					["xp"] = 626,
+					["timePlayed"] = 5.651000000070781,
+				},
 				["Nechmewarri"] = {
 					["timePlayed"] = 0,
 					["class"] = "WARRIOR",
@@ -557,6 +562,11 @@ RXPCComms = {
 				["Brane"] = {
 					["timePlayed"] = 1369.167000000365,
 					["class"] = "SHAMAN",
+				},
+				["Fulcaneli"] = {
+					["timePlayed"] = 9.468000000109896,
+					["class"] = "DRUID",
+					["xp"] = 680,
 				},
 				["Alphadecay"] = {
 					["timePlayed"] = 292.6400000001304,
@@ -761,6 +771,11 @@ RXPCComms = {
 					["timePlayed"] = 0,
 					["level"] = 70,
 				},
+				["Revhole"] = {
+					["timePlayed"] = 0.03000000002793968,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 32100,
+				},
 				["Fratarrian"] = {
 					["timePlayed"] = 0,
 					["class"] = "DEATHKNIGHT",
@@ -774,9 +789,10 @@ RXPCComms = {
 					["timePlayed"] = 528.4710000003688,
 					["class"] = "DEATHKNIGHT",
 				},
-				["Bdfx"] = {
-					["timePlayed"] = 528.4710000003688,
-					["class"] = "DRUID",
+				["Deprî"] = {
+					["timePlayed"] = 0,
+					["class"] = "ROGUE",
+					["xp"] = 32100,
 				},
 				["Jusee"] = {
 					["timePlayed"] = 279.9579999996349,
@@ -787,22 +803,21 @@ RXPCComms = {
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 32100,
 				},
-				["Skuggsjá"] = {
-					["timePlayed"] = 276.4509999998845,
-					["class"] = "WARLOCK",
+				["Tepåse"] = {
+					["timePlayed"] = 63.37099999981001,
+					["class"] = "ROGUE",
 				},
-				["Agnæs"] = {
-					["timePlayed"] = 0,
-					["class"] = "PRIEST",
+				["Termixnator"] = {
+					["timePlayed"] = 1898.450999999885,
+					["class"] = "DEATHKNIGHT",
 				},
 				["Ripsquad"] = {
 					["timePlayed"] = 278.3670000000857,
 					["class"] = "HUNTER",
 				},
-				["Zexxar"] = {
-					["timePlayed"] = 0.01399999996647239,
-					["class"] = "WARLOCK",
-					["xp"] = 32100,
+				["Ìtächi"] = {
+					["timePlayed"] = 344.1700000003912,
+					["class"] = "WARRIOR",
 				},
 				["Kuboom"] = {
 					["level"] = 68,
@@ -812,22 +827,17 @@ RXPCComms = {
 					["timePlayed"] = 0,
 					["isRxp"] = true,
 				},
+				["Netzur"] = {
+					["timePlayed"] = 279.9579999996349,
+					["class"] = "DEATHKNIGHT",
+				},
 				["Hygienespray"] = {
 					["timePlayed"] = 299.6820000000298,
 					["class"] = "WARLOCK",
 				},
-				["Navajaplatea"] = {
-					["class"] = "ROGUE",
-					["lastSeen"] = 157293.062,
-					["xpPercentage"] = 0,
-					["isRxp"] = true,
-					["timePlayed"] = 0,
-					["level"] = 70,
-				},
-				["Jynxess"] = {
-					["timePlayed"] = 0.01399999996647239,
-					["class"] = "ROGUE",
-					["xp"] = 32100,
+				["Waiglpal"] = {
+					["timePlayed"] = 1466.601999999955,
+					["class"] = "PALADIN",
 				},
 				["Radaarhas"] = {
 					["timePlayed"] = 301.3610000000335,
@@ -841,33 +851,34 @@ RXPCComms = {
 					["timePlayed"] = 299.6820000000298,
 					["class"] = "DEATHKNIGHT",
 				},
+				["Sicco"] = {
+					["timePlayed"] = 369.1729999999516,
+					["class"] = "DEATHKNIGHT",
+				},
 				["Nonameaac"] = {
 					["timePlayed"] = 344.1700000003912,
 					["class"] = "HUNTER",
 				},
-				["Existhor"] = {
-					["timePlayed"] = 25.30899999989197,
-					["class"] = "WARLOCK",
-				},
-				["Zharl"] = {
-					["timePlayed"] = 1311.626000000048,
+				["Kyrpämyyrä"] = {
+					["timePlayed"] = 984.3009999999776,
 					["class"] = "SHAMAN",
+					["xp"] = 1448,
 				},
 				["Krutgumman"] = {
 					["timePlayed"] = 136.1409999998286,
 					["class"] = "WARLOCK",
 				},
-				["Félís"] = {
-					["timePlayed"] = 292.6400000001304,
-					["class"] = "DRUID",
+				["Vrykal"] = {
+					["timePlayed"] = 299.6820000000298,
+					["class"] = "DEATHKNIGHT",
 				},
 				["Voodooistt"] = {
 					["timePlayed"] = 329.4879999998957,
 					["class"] = "MAGE",
 				},
-				["Potentix"] = {
-					["timePlayed"] = 344.1700000003912,
-					["class"] = "WARRIOR",
+				["Agorr"] = {
+					["timePlayed"] = 329.4879999998957,
+					["class"] = "WARLOCK",
 				},
 				["Frenkensteyn"] = {
 					["timePlayed"] = 301.3610000000335,
@@ -882,65 +893,69 @@ RXPCComms = {
 					["class"] = "PALADIN",
 					["xp"] = 1448,
 				},
-				["Agorr"] = {
-					["timePlayed"] = 329.4879999998957,
-					["class"] = "WARLOCK",
+				["Potentix"] = {
+					["timePlayed"] = 344.1700000003912,
+					["class"] = "WARRIOR",
 				},
 				["Rokkun"] = {
 					["timePlayed"] = 301.3610000000335,
 					["class"] = "WARRIOR",
 				},
-				["Vrykal"] = {
-					["timePlayed"] = 299.6820000000298,
-					["class"] = "DEATHKNIGHT",
+				["Félís"] = {
+					["timePlayed"] = 292.6400000001304,
+					["class"] = "DRUID",
 				},
-				["Kyrpämyyrä"] = {
-					["timePlayed"] = 984.3009999999776,
+				["Zharl"] = {
+					["timePlayed"] = 1311.626000000048,
 					["class"] = "SHAMAN",
-					["xp"] = 1448,
 				},
-				["Sicco"] = {
-					["timePlayed"] = 369.1729999999516,
-					["class"] = "DEATHKNIGHT",
+				["Existhor"] = {
+					["timePlayed"] = 25.30899999989197,
+					["class"] = "WARLOCK",
 				},
 				["Mahîkonsan"] = {
 					["timePlayed"] = 113.3900000001304,
 					["class"] = "DEATHKNIGHT",
 				},
-				["Waiglpal"] = {
-					["timePlayed"] = 1466.601999999955,
-					["class"] = "PALADIN",
-				},
-				["Netzur"] = {
-					["timePlayed"] = 279.9579999996349,
-					["class"] = "DEATHKNIGHT",
-				},
-				["Ìtächi"] = {
-					["timePlayed"] = 344.1700000003912,
-					["class"] = "WARRIOR",
-				},
-				["Termixnator"] = {
-					["timePlayed"] = 1898.450999999885,
-					["class"] = "DEATHKNIGHT",
-				},
-				["Tepåse"] = {
-					["timePlayed"] = 63.37099999981001,
+				["Jynxess"] = {
+					["timePlayed"] = 0.01399999996647239,
 					["class"] = "ROGUE",
+					["xp"] = 32100,
+				},
+				["Navajaplatea"] = {
+					["class"] = "ROGUE",
+					["lastSeen"] = 157293.062,
+					["xpPercentage"] = 0,
+					["isRxp"] = true,
+					["timePlayed"] = 0,
+					["level"] = 70,
+				},
+				["Zexxar"] = {
+					["timePlayed"] = 0.01399999996647239,
+					["class"] = "WARLOCK",
+					["xp"] = 32100,
+				},
+				["Agnæs"] = {
+					["timePlayed"] = 0,
+					["class"] = "PRIEST",
+				},
+				["Skuggsjá"] = {
+					["timePlayed"] = 276.4509999998845,
+					["class"] = "WARLOCK",
 				},
 				["Bigblackdix"] = {
 					["timePlayed"] = 0.01399999996647239,
 					["class"] = "WARRIOR",
 					["xp"] = 32100,
 				},
-				["Deprî"] = {
-					["timePlayed"] = 0,
-					["class"] = "ROGUE",
-					["xp"] = 32100,
+				["Bdfx"] = {
+					["timePlayed"] = 528.4710000003688,
+					["class"] = "DRUID",
 				},
-				["Revhole"] = {
-					["timePlayed"] = 0.03000000002793968,
-					["class"] = "DEATHKNIGHT",
-					["xp"] = 32100,
+				["Gurfbelg"] = {
+					["timePlayed"] = 4.533999999985099,
+					["class"] = "ROGUE",
+					["xp"] = 1304,
 				},
 			},
 			["announcements"] = {
@@ -976,9 +991,9 @@ RXPCSettings = {
 			["hideCompletedSteps"] = true,
 			["enableBindAutomation"] = false,
 			["alwaysSendBranded"] = false,
-			["hideMiniMapPins"] = true,
-			["enableFlyStepAnnouncements"] = false,
 			["enableTracker"] = false,
+			["enableFlyStepAnnouncements"] = false,
+			["hideMiniMapPins"] = true,
 		},
 	},
 }

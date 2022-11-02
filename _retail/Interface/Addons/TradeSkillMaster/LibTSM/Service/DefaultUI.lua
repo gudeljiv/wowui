@@ -47,7 +47,7 @@ DefaultUI:OnModuleLoad(function()
 		Event.Register("MERCHANT_SHOW", function() private.HandleEvent(FRAMES.MERCHANT, true) end)
 		Event.Register("MERCHANT_CLOSED", function() private.HandleEvent(FRAMES.MERCHANT, false) end)
 	else
-		Event.Register("PLAYER_INTERACTION_MANAGER_FRAME_SHOW", function(_, frameType)
+		hooksecurefunc(PlayerInteractionFrameManager, "ShowFrame", function(_, frameType)
 			if frameType == Enum.PlayerInteractionType.MailInfo then
 				private.HandleEvent(FRAMES.MAIL, true)
 			elseif frameType == Enum.PlayerInteractionType.Auctioneer then

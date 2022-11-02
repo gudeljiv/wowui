@@ -22,6 +22,8 @@ local function update()
 		end
 	end
 
+	-- besti:CreateBeautyBorder(8)
+
 	if besti then
 		local qif = QuestInfo_GetRewardButton(QuestInfoFrame.rewardsFrame, besti)
 		f:ClearAllPoints()

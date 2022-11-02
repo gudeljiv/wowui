@@ -329,3 +329,33 @@ f:SetScript(
 -- 		end
 -- 	)
 -- end
+
+-- local bestp, besti = 0
+-- local questSkin = function()
+-- 	for i = 1, GetNumQuestChoices() do
+-- 		local name, _, qty = GetQuestItemInfo('choice', i)
+-- 		local link = GetQuestItemLink('choice', i)
+
+-- 		print(name)
+
+-- 		local price = link and select(11, GetItemInfo(link))
+-- 		if not price then
+-- 			return
+-- 		elseif (price * (qty or 1)) > bestp then
+-- 			bestp = price * (qty or 1)
+-- 			besti = i
+-- 		end
+-- 	end
+-- end
+
+-- hooksecurefunc('QuestInfo_GetRewardButton', questSkin)
+-- hooksecurefunc('QuestInfoItem_OnClick', questSkin)
+-- hooksecurefunc('QuestInfo_ShowRewards', questSkin)
+-- hooksecurefunc('QuestInfo_ShowRequiredMoney', questSkin)
+-- hooksecurefunc('QuestFrameProgressItems_Update', questSkin)
+-- hooksecurefunc('QuestLog_Update', questSkin)
+-- hooksecurefunc('QuestLogUpdateQuestCount', questSkin)
+-- hooksecurefunc('QuestLog_UpdateQuestDetails', questSkin)
+-- hooksecurefunc('QuestFrameItems_Update', questSkin)
+-- hooksecurefunc('QuestInfo_Display', questSkin)
+-- hooksecurefunc('QuestFrameGreetingPanel_OnShow', questSkin)

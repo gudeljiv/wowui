@@ -196,6 +196,16 @@ xVermin.IfUnitIsCastingInteruptable = function(unit)
 	return false
 end
 
+xVermin.IfUnitIsCastingNonInteruptable = function(unit)
+	local name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = UnitCastingInfo(unit)
+	local name_channeling, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible_chanelling, spellId = UnitChannelInfo(unit)
+	if (name_casting ~= nil and notInterruptible_casting) or (name_channeling ~= nil and notInterruptible_chanelling) then
+		return true
+	end
+	return false
+end
+xUnitCastingNonInteruptable = xVermin.IfUnitIsCastingNonInteruptable
+
 xVermin.IfUnitIsCasting = function(unit)
 	local name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = UnitCastingInfo(unit)
 	local name_channeling, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible_chanelling, spellId = UnitChannelInfo(unit)
