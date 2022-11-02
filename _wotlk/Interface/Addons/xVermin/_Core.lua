@@ -124,13 +124,13 @@ local keywords = {
 	['and'] = 'and',
 	['or'] = 'or'
 }
-xVermin.CheckIfLoadedWithTimer = function(condition, callback, timer)
+xVermin.CheckIfLoadedWithTimer = function(condition, callback, timer, waittime)
 	local count = 0
 
 	C_Timer.NewTicker(
 		timer or 1,
 		function(self)
-			if (count > xVermin.WaitTimeUntillAddonLoaded) then
+			if (count > (waittime or xVermin.WaitTimeUntillAddonLoaded)) then
 				self:Cancel()
 			end
 			count = count + 1
