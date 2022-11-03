@@ -136,13 +136,13 @@ def on_press(key):
             if pause:
                 if dprint:
                     print("Rotation is paused")
-                pyautogui.PAUSE = 2
                 pyautogui.hotkey("end")
+                # pyautogui.PAUSE = 2
             else:
                 if dprint:
                     print("Rotation is not paused")
-                pyautogui.PAUSE = 0.05
                 pyautogui.hotkey("home")
+                # pyautogui.PAUSE = 0
         if key == keyboard.Key.f8:
             dprint = not dprint
             print("dprint:", dprint)

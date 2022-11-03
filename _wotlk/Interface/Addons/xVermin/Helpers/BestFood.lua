@@ -268,7 +268,7 @@ function NeedsFoodBadly:IsUsableMPotion(potion)
 end
 
 function NeedsFoodBadly:IsUsableHealthstone(healthstone)
-	return not (not (healthstone and healthstone.lvl <= UnitLevel('player')))
+	return not (not (healthstone and select(5, GetItemInfo(healthstone.id)) <= UnitLevel('player')))
 end
 
 function NeedsFoodBadly:IsUsableHerb(herb)
@@ -477,7 +477,7 @@ function NeedsFoodBadly.BetterHealthstone(a, b)
 		return false
 	end
 
-	return a.hp >= b.hp
+	return a.id >= b.id
 end
 
 function NeedsFoodBadly.BetterManaGem(a, b)
@@ -934,24 +934,31 @@ NeedsFoodBadly.Potion = {
 }
 
 NeedsFoodBadly.Healthstone = {
-	[19004] = {id = 19004, name = 'Minor Healthstone', lvl = 10, hp = 110},
-	[19005] = {id = 19005, name = 'Minor Healthstone', lvl = 10, hp = 120},
-	[19006] = {id = 19006, name = 'Lesser Healthstone', lvl = 22, hp = 275},
-	[19007] = {id = 19007, name = 'Lesser Healthstone', lvl = 22, hp = 300},
-	[19008] = {id = 19008, name = 'Healthstone', lvl = 34, hp = 550},
-	[19009] = {id = 19009, name = 'Healthstone', lvl = 34, hp = 600},
-	[19010] = {id = 19010, name = 'Greater Healthstone', lvl = 46, hp = 880},
-	[19011] = {id = 19011, name = 'Greater Healthstone', lvl = 46, hp = 960},
-	[19012] = {id = 19012, name = 'Major Healthstone', lvl = 48, hp = 1320},
-	[5509] = {id = 5509, name = 'Healthstone', lvl = 34, hp = 500},
-	[19013] = {id = 19013, name = 'Major Healthstone', lvl = 48, hp = 1440},
-	[5510] = {id = 5510, name = 'Greater Healthstone', lvl = 46, hp = 800},
-	[5511] = {id = 5511, name = 'Lesser Healthstone', lvl = 22, hp = 250},
-	[5512] = {id = 5512, name = 'Minor Healthstone', lvl = 10, hp = 100},
-	[9421] = {id = 9421, name = 'Major Healthstone', lvl = 48, hp = 1200},
-	[22103] = {id = 22103, name = 'Master Healthstone', lvl = 60, hp = 2080},
-	[22104] = {id = 22104, name = 'Master Healthstone', lvl = 60, hp = 2288},
-	[22105] = {id = 22105, name = 'Master Healthstone', lvl = 60, hp = 2496}
+	[36892] = {id = 36892},
+	[36894] = {id = 36894},
+	[36893] = {id = 36893},
+	[5509] = {id = 5509},
+	[22105] = {id = 22105},
+	[9421] = {id = 9421},
+	[22103] = {id = 22103},
+	[5512] = {id = 5512},
+	[36891] = {id = 36891},
+	[42462] = {id = 42462},
+	[19011] = {id = 19011},
+	[36889] = {id = 36889},
+	[36890] = {id = 36890},
+	[5511] = {id = 5511},
+	[22104] = {id = 22104},
+	[19006] = {id = 19006},
+	[19010] = {id = 19010},
+	[19013] = {id = 19013},
+	[19009] = {id = 19009},
+	[19012] = {id = 19012},
+	[19004] = {id = 19004},
+	[19005] = {id = 19005},
+	[19007] = {id = 19007},
+	[19008] = {id = 19008},
+	[5510] = {id = 5510}
 }
 
 NeedsFoodBadly.ManaGem = {

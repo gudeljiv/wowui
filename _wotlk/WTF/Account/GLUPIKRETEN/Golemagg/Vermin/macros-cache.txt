@@ -42,6 +42,7 @@ VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast Sweeping Strikes
+/use Bloodrage
 END
 VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 #showtooltip

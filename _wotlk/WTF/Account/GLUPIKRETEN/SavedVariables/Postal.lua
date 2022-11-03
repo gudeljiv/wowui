@@ -18,7 +18,7 @@ Postal3DB = {
 				"Tudum|Ashbringer|Horde|4|WARRIOR", -- [13]
 				"Tudum|Jin'do|Horde|1|WARRIOR", -- [14]
 				"Vermina|Golemagg|Horde|31|PALADIN", -- [15]
-				"Vermin|Golemagg|Horde|79|WARRIOR", -- [16]
+				"Vermin|Golemagg|Horde|80|WARRIOR", -- [16]
 				"Wells|Jin'do|Horde|8|DRUID", -- [17]
 			},
 		},
