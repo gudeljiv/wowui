@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 7406,
 	["lastSanitation"] = 3,
-	["session"] = 7403,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -1342,20 +1342,20 @@ BugGrabberDB = {
 		}, -- [169]
 		{
 			["message"] = " (null)",
-			["session"] = 5326,
 			["time"] = "2022/04/11 11:49:12",
+			["session"] = 5326,
 			["counter"] = 15,
 		}, -- [170]
 		{
 			["message"] = "  (null)",
-			["session"] = 5326,
 			["time"] = "2022/04/13 16:37:53",
+			["session"] = 5326,
 			["counter"] = 4,
 		}, -- [171]
 		{
 			["message"] = "   (null)",
-			["session"] = 5326,
 			["time"] = "2022/06/02 15:20:51",
+			["session"] = 5326,
 			["counter"] = 1,
 		}, -- [172]
 		{
@@ -1749,62 +1749,62 @@ BugGrabberDB = {
 		}, -- [221]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-enUS.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [222]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-deDE.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [223]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-esES.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [224]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-esMX.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [225]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-frFR.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [226]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-itIT.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [227]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-koKR.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [228]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-ptBR.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [229]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-ruRU.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [230]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-zhCN.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [231]
 		{
@@ -2081,8 +2081,8 @@ BugGrabberDB = {
 		}, -- [266]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\xVermin-54000.lua is empty.",
-			["time"] = "2022/09/07 12:54:52",
 			["session"] = 5507,
+			["time"] = "2022/09/07 12:54:52",
 			["counter"] = 3,
 		}, -- [267]
 		{
@@ -2167,8 +2167,8 @@ BugGrabberDB = {
 		}, -- [277]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\Addons/nMainBar.lua is empty.",
-			["time"] = "2022/09/07 13:53:00",
 			["session"] = 5527,
+			["time"] = "2022/09/07 13:53:00",
 			["counter"] = 3,
 		}, -- [278]
 		{
@@ -2782,8 +2782,8 @@ BugGrabberDB = {
 		}, -- [356]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\Helpers/Chat.lua is empty.",
-			["session"] = 5820,
 			["time"] = "2022/09/19 19:24:24",
+			["session"] = 5820,
 			["counter"] = 3,
 		}, -- [357]
 		{
@@ -3886,8 +3886,8 @@ BugGrabberDB = {
 		}, -- [497]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Helpers/ActionButtons.lua",
-			["time"] = "2022/10/04 09:59:06",
 			["session"] = 6360,
+			["time"] = "2022/10/04 09:59:06",
 			["counter"] = 6,
 		}, -- [498]
 		{
@@ -5231,8 +5231,8 @@ BugGrabberDB = {
 		}, -- [669]
 		{
 			["message"] = "(null)",
-			["session"] = 7138,
 			["time"] = "2022/03/09 13:39:43",
+			["session"] = 7138,
 			["counter"] = 205,
 		}, -- [670]
 		{
@@ -5245,20 +5245,20 @@ BugGrabberDB = {
 		}, -- [671]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\xVermin\\Addons/NovaWorldBuffs.lua",
-			["time"] = "2022/10/25 16:05:00",
 			["session"] = 7145,
+			["time"] = "2022/10/25 16:05:00",
 			["counter"] = 1,
 		}, -- [672]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\xVermin\\Addons/NovaWorldBuffs.lua",
-			["time"] = "2022/10/25 16:05:00",
 			["session"] = 7145,
+			["time"] = "2022/10/25 16:05:00",
 			["counter"] = 1,
 		}, -- [673]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\xVermin\\Addons/NovaWorldBuffs.lua",
-			["time"] = "2022/10/25 16:05:00",
 			["session"] = 7145,
+			["time"] = "2022/10/25 16:05:00",
 			["counter"] = 1,
 		}, -- [674]
 		{
@@ -5278,44 +5278,44 @@ BugGrabberDB = {
 		}, -- [676]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\Dejunk\\src\\container.lua",
-			["session"] = 7185,
 			["time"] = "2022/10/27 16:37:20",
+			["session"] = 7185,
 			["counter"] = 2,
 		}, -- [677]
 		{
 			["message"] = "Interface\\AddOns\\Dejunk\\Dejunk.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\Dejunk\\src\\container.lua",
-			["session"] = 7185,
 			["time"] = "2022/10/27 16:37:20",
+			["session"] = 7185,
 			["counter"] = 2,
 		}, -- [678]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface\\AddOns\\Dejunk\\Dejunk.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\Dejunk\\src\\container.lua",
-			["session"] = 7185,
 			["time"] = "2022/10/27 16:37:20",
+			["session"] = 7185,
 			["counter"] = 2,
 		}, -- [679]
 		{
 			["message"] = "Interface\\AddOns\\WeakAuras\\locales.xml:1 Error loading Interface\\AddOns\\WeakAuras\\AuraEnvironmentWrappedSystems.lua",
-			["session"] = 7185,
 			["time"] = "2022/10/27 16:37:20",
+			["session"] = 7185,
 			["counter"] = 2,
 		}, -- [680]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface\\AddOns\\WeakAuras\\locales.xml:1 Error loading Interface\\AddOns\\WeakAuras\\AuraEnvironmentWrappedSystems.lua",
-			["session"] = 7185,
 			["time"] = "2022/10/27 16:37:20",
+			["session"] = 7185,
 			["counter"] = 2,
 		}, -- [681]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface\\AddOns\\Dejunk\\Dejunk.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\Dejunk\\src\\container.lua",
-			["session"] = 7185,
 			["time"] = "2022/10/27 16:37:20",
+			["session"] = 7185,
 			["counter"] = 2,
 		}, -- [682]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface\\AddOns\\WeakAuras\\locales.xml:1 Error loading Interface\\AddOns\\WeakAuras\\AuraEnvironmentWrappedSystems.lua",
-			["time"] = "2022/10/27 16:37:55",
 			["session"] = 7185,
+			["time"] = "2022/10/27 16:37:55",
 			["counter"] = 1,
 		}, -- [683]
 		{
@@ -6052,20 +6052,20 @@ BugGrabberDB = {
 		}, -- [777]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 (null)",
-			["session"] = 7400,
 			["time"] = "2022/10/31 21:00:28",
+			["session"] = 7400,
 			["counter"] = 25,
 		}, -- [778]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 (null)",
-			["session"] = 7400,
 			["time"] = "2022/10/31 21:00:28",
+			["session"] = 7400,
 			["counter"] = 25,
 		}, -- [779]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 (null)",
-			["session"] = 7400,
 			["time"] = "2022/10/31 21:00:28",
+			["session"] = 7400,
 			["counter"] = 25,
 		}, -- [780]
 		{
@@ -6108,5 +6108,13 @@ BugGrabberDB = {
 			["session"] = 7403,
 			["counter"] = 1,
 		}, -- [785]
+		{
+			["message"] = "Interface\\AddOns\\NugKeyFeedback\\Frame.lua:83: attempt to index local 'ga1' (a nil value)",
+			["time"] = "2022/11/03 09:06:58",
+			["locals"] = "self = NugKeyFeedback {\n 0 = <userdata>\n SPELL_UPDATE_COOLDOWN = <function> defined @Interface\\AddOns\\NugKeyFeedback\\NugKeyFeedback.lua:170\n PLAYER_LOGIN = <function> defined @Interface\\AddOns\\NugKeyFeedback\\NugKeyFeedback.lua:38\n UNIT_SPELLCAST_START = <function> defined @Interface\\AddOns\\NugKeyFeedback\\NugKeyFeedback.lua:128\n UNIT_SPELLCAST_CHANNEL_START = <function> defined @Interface\\AddOns\\NugKeyFeedback\\NugKeyFeedback.lua:142\n UNIT_SPELLCAST_DELAYED = <function> defined @Interface\\AddOns\\NugKeyFeedback\\NugKeyFeedback.lua:128\n db = <table> {\n }\n UNIT_SPELLCAST_STOP = <function> defined @Interface\\AddOns\\NugKeyFeedback\\NugKeyFeedback.lua:155\n CreateGUI = <function> defined @Interface\\AddOns\\NugKeyFeedback\\Options.lua:10\n SlashCmd = <function> defined @Interface\\AddOns\\NugKeyFeedback\\NugKeyFeedback.lua:308\n UNIT_SPELLCAST_SUCCEEDED = <function> defined @Interface\\AddOns\\NugKeyFeedback\\NugKeyFeedback.lua:236\n HookOptionsFrame = <function> defined @Interface\\AddOns\\NugKeyFeedback\\Options.lua:185\n CreateAnchor = <function> defined @Interface\\AddOns\\NugKeyFeedback\\Frame.lua:324\n UNIT_SPELLCAST_INTERRUPTED = <function> defined @Interface\\AddOns\\NugKeyFeedback\\NugKeyFeedback.lua:155\n CreateLastSpellIconLine = <function> defined @Interface\\AddOns\\NugKeyFeedback\\Frame.lua:277\n CreateFeedbackButton = <function> defined @Interface\\AddOns\\NugKeyFeedback\\Frame.lua:14\n HookUseAction = <function> defined @Interface\\AddOns\\NugKeyFeedback\\NugKeyFeedback.lua:228\n UNIT_SPELLCAST_CHANNEL_STOP = <function> defined @Interface\\AddOns\\NugKeyFeedback\\NugKeyFeedback.lua:155\n PLAYER_LOGOUT = <function> defined @Interface\\AddOns\\NugKeyFeedback\\NugKeyFeedback.lua:123\n RefreshSettings = <function> defined @Interface\\AddOns\\NugKeyFeedback\\NugKeyFeedback.lua:255\n UNIT_SPELLCAST_CHANNEL_UPDATE = <function> defined @Interface\\AddOns\\NugKeyFeedback\\NugKeyFeedback.lua:142\n HookDefaultBindings = <function> defined @Interface\\AddOns\\NugKeyFeedback\\NugKeyFeedback.lua:212\n UNIT_SPELLCAST_FAILED = <function> defined @Interface\\AddOns\\NugKeyFeedback\\NugKeyFeedback.lua:161\n}\nautoKeyup = nil\ndb = <table> {\n point = \"CENTER\"\n y = 0\n enableCast = true\n enableCooldown = true\n enableCastFlash = true\n x = 0\n enablePushEffect = true\n lineDirection = \"LEFT\"\n forceUseActionHook = false\n mirrorSize = 50\n lineIconSize = 38\n enableCastLine = true\n}\nmirror = NugKeyFeedbackMirror {\n 0 = <userdata>\n HotKey = NugKeyFeedbackMirrorHotKey {\n }\n NewActionTexture = <unnamed> {\n }\n Border = NugKeyFeedbackMirrorBorder {\n }\n Flash = NugKeyFeedbackMirrorFlash {\n }\n icon = NugKeyFeedbackMirrorIcon {\n }\n AutoCastable = <unnamed> {\n }\n SpellHighlightAnim = <unnamed> {\n }\n Count = NugKeyFeedbackMirrorCount {\n }\n glow = <unnamed> {\n }\n SpellHighlightTexture = <unnamed> {\n }\n _elapsed = 0\n NormalTexture = NugKeyFeedbackMirrorNormalTexture {\n }\n FlyoutBorderShadow = NugKeyFeedbackMirrorFlyoutBorderShadow {\n }\n FlyoutBorder = NugKeyFeedbackMirrorFlyoutBorder {\n }\n pushedCircle = <unnamed> {\n }\n AutoCastShine = NugKeyFeedbackMirrorShine {\n }\n FlyoutArrow = NugKeyFeedbackMirrorFlyoutArrow {\n }\n cooldown = NugKeyFeedbackMirrorCooldown {\n }\n Name = NugKeyFeedbackMirrorName {\n }\n}\nglow = <unnamed> {\n 0 = <userdata>\n blink = <unnamed> {\n }\n}\ngtex = <unnamed> {\n 0 = <userdata>\n}\nag = <unnamed> {\n 0 = <userdata>\n}\na2 = <unnamed> {\n 0 = <userdata>\n}\npushedCircle = <unnamed> {\n 0 = <userdata>\n grow = <unnamed> {\n }\n}\nsize = 50\npctex = <unnamed> {\n 0 = <userdata>\n}\ngag = <unnamed> {\n 0 = <userdata>\n}\nga1 = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n SetScaleFrom = <function> defined =[C]:-1\n SetScaleTo = <function> defined =[C]:-1\n}\n(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n SetScaleFrom = <function> defined =[C]:-1\n SetScaleTo = <function> defined =[C]:-1\n}\n(*temporary) = \"Scale\"\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'ga1' (a nil value)\"\nMasque = nil\naddonName = \"NugKeyFeedback\"\nMakeCompatibleAnimation = <function> defined @Interface\\AddOns\\NugKeyFeedback\\Frame.lua:5\n",
+			["stack"] = "[string \"@Interface\\AddOns\\NugKeyFeedback\\Frame.lua\"]:83: in function `CreateFeedbackButton'\n[string \"@Interface\\AddOns\\NugKeyFeedback\\NugKeyFeedback.lua\"]:59: in function <Interface\\AddOns\\NugKeyFeedback\\NugKeyFeedback.lua:38>\n[string \"=(tail call)\"]: ?",
+			["session"] = 7405,
+			["counter"] = 2,
+		}, -- [786]
 	},
 }
