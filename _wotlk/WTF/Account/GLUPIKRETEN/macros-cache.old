@@ -1,7 +1,3 @@
-VER 3 0000000000000012 " " "132143"
-#showtooltip
-/startattack
-END
 VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use Fel Sharpening Stone
@@ -14,13 +10,17 @@ END
 VER 3 0000000000000013 " " "132130"
 /click RotBotF3
 END
+VER 3 0000000000000012 " " "132143"
+#showtooltip
+/startattack
+END
 VER 3 0000000000000018 "ASAB" "INV_MISC_QUESTIONMARK"
 /run local s,b="SHOW_MULTI_ACTIONBAR_"b=not _G[s..1]for i=1,4 do _G[s..i]=b end InterfaceOptions_UpdateMultiActionBars()
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:0
-/castsequence [combat] reset=combat 
+/castsequence [combat] reset=combat item:13443,item:6149
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip

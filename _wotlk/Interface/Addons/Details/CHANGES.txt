@@ -1,64 +1,16 @@
-tag bee6ec628be58a51953e09b90dedd45de7e9b2bb Details.DF.Wrath.10258.146
+tag d8c07e343f99678ef49b14772a4f20ee9b999b6a Details.DF.Wrath.10259.146
 Author:	Tercio Jose <terciob19@hotmail.com>
-Date:	Wed Nov 2 13:32:28 2022 -0300
+Date:	Wed Nov 2 20:42:10 2022 -0300
 
-commit 61e7f2ad52bc05f2e4077fd405bd8235e0893dcb
+commit 32e0a5b8dfbcee5710e6d7b4fcec771e2964585e
 Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Wed Nov 2 13:32:09 2022 -0300
+Date:   Wed Nov 2 20:41:43 2022 -0300
 
-    Release with update to framework
+    Removed the encounter_start message from Wrath
 
-commit 45a980023cb09cebb5ca40da37d4a6a893a51d6e
+commit c48d032c1676bc5c4789fb12396a3d22a28a2d01
 Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Tue Nov 1 19:45:51 2022 -0300
+Date:   Wed Nov 2 20:08:36 2022 -0300
 
-    General fixes
-
-commit 422e24b826f6983b0699bb384cc8f20c3e5aa3af
-Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Sun Oct 30 18:17:25 2022 -0300
-
-    Fix warlock entering in combat due to periodic damage
-
-commit 422e24b826f6983b0699bb384cc8f20c3e5aa3af
-Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Sun Oct 30 18:17:25 2022 -0300
-
-    Fix warlock entering in combat due to periodic damage
-
-commit 886d7df56045699a569210725c2d24ea43f472ea
-Author: Flamanis <Flamanis@users.noreply.github.com>
-Date:   Sun Oct 30 12:42:23 2022 -0500
-
-    Fix Chat Embeds
-    
-    Fix GetTab to get the proper chat tab.
-    
-    When windows are ReleaseEmbed, clear the groupings and reset the windowSwitchButton parent so you can move the window.
-    
-    When single window is toggled off, save the current position of the second window so you can restore to the correct position.
-
-commit 886d7df56045699a569210725c2d24ea43f472ea
-Author: Flamanis <Flamanis@users.noreply.github.com>
-Date:   Sun Oct 30 12:42:23 2022 -0500
-
-    Fix Chat Embeds
-    
-    Fix GetTab to get the proper chat tab.
-    
-    When windows are ReleaseEmbed, clear the groupings and reset the windowSwitchButton parent so you can move the window.
-    
-    When single window is toggled off, save the current position of the second window so you can restore to the correct position.
-
-commit 4a198c599632b18ab80b2dfd91fcd469ccf7da66
-Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Fri Oct 28 11:51:44 2022 -0300
-
-    reinstall panel fixed, inspect range fixed (flamanis), evoker cooldowns added
-
-commit 4c11441c3eb1da7d61bfda946d43470a6ac16a02
-Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Wed Oct 26 21:50:34 2022 -0300
-
-    Round of general fixes
+    Fix for some error involving gradient color
 

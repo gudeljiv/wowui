@@ -1,0 +1,62 @@
+from _skills import skills
+from _colors import color
+import time
+
+import cv2
+import pyautogui
+
+import os
+import sys
+import mss
+import mss.tools
+import numpy
+import math
+import pyperclip
+
+if(os.name == "posix"):
+    from AppKit import NSScreen
+    from AppKit import NSWorkspace
+else:
+    import win32gui
+    from win32api import GetSystemMetrics
+
+
+from pynput import keyboard
+from pyautogui import *
+from os.path import isfile, join
+from os import listdir
+from os.path import exists
+from skimage.metrics import structural_similarity
+from datetime import datetime
+
+pyautogui.PAUSE = 1
+
+combat = False
+debug = False
+mill = False
+dprint = False
+pause = True
+wow_class = "warrior"
+
+print(wow_class)
+
+def on_press(key):
+    global debug, dprint, pause, mill
+
+    if key == keyboard.Key.f12:
+        print(pause)
+        pause = not pause
+        if pause:
+            print("Rotation is paused")
+            pyautogui.PAUSE = 1
+        else:
+            print("Rotation is not paused")
+            pyautogui.PAUSE = 0
+
+
+
+with keyboard.Listener(on_press=on_press) as listener:
+    with mss.mss() as sct:
+        while True:
+
+             pyautogui.typewrite("1001\n")
