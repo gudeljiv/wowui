@@ -29,6 +29,8 @@ from os.path import exists
 from skimage.metrics import structural_similarity
 from datetime import datetime
 
+pyautogui.PAUSE = 0
+
 combat = False
 debug = False
 mill = False
