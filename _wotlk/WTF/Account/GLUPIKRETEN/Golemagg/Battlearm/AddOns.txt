@@ -174,3 +174,4 @@ Capping_Options: enabled
 TacoTip: disabled
 Gladdy: enabled
 NovaWorldBuffs: enabled
+Masque: enabled

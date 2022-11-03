@@ -133,7 +133,7 @@ PitBull4: enabled
 PitBull4_DogTagTexts: enabled
 Pawn: enabled
 Masque_Caith: disabled
-Masque: disabled
+Masque: enabled
 Masque_Entropy: disabled
 Masque_Cainyx: disabled
 Masque_Gm_Sr: disabled

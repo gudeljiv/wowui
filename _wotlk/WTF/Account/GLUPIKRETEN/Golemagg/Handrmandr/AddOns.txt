@@ -168,3 +168,4 @@ XLoot_Options: disabled
 Roll: disabled
 Gladdy: enabled
 NovaWorldBuffs: enabled
+Masque: enabled

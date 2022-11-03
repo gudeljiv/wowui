@@ -250,10 +250,10 @@ RXPCComms = {
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 920,
 				},
-				["Rikric"] = {
-					["timePlayed"] = 179.5439999999944,
-					["class"] = "SHAMAN",
-					["xp"] = 8180,
+				["Brutikus"] = {
+					["timePlayed"] = 85.72200000006706,
+					["class"] = "WARRIOR",
+					["xp"] = 1376,
 				},
 				["Cholie"] = {
 					["timePlayed"] = 297.5709999999963,
@@ -300,20 +300,20 @@ RXPCComms = {
 					["class"] = "WARLOCK",
 					["xp"] = 1268,
 				},
-				["Sliburst"] = {
-					["timePlayed"] = 0,
-					["class"] = "MAGE",
-					["xp"] = 40901,
+				["Shotek"] = {
+					["timePlayed"] = 85.72200000006706,
+					["class"] = "DRUID",
+					["xp"] = 1376,
 				},
 				["Naylez"] = {
 					["timePlayed"] = 883.7549999998882,
 					["class"] = "WARRIOR",
 					["xp"] = 1268,
 				},
-				["Shotek"] = {
-					["timePlayed"] = 85.72200000006706,
-					["class"] = "DRUID",
-					["xp"] = 1376,
+				["Kreyshaw"] = {
+					["timePlayed"] = 0.03199999989010394,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 30150,
 				},
 				["Nabito"] = {
 					["timePlayed"] = 85.72200000006706,
@@ -390,10 +390,10 @@ RXPCComms = {
 					["class"] = "PRIEST",
 					["xp"] = 8180,
 				},
-				["Kreyshaw"] = {
-					["timePlayed"] = 0.03199999989010394,
-					["class"] = "DEATHKNIGHT",
-					["xp"] = 30150,
+				["Sliburst"] = {
+					["timePlayed"] = 0,
+					["class"] = "MAGE",
+					["xp"] = 40901,
 				},
 				["Johnylecitel"] = {
 					["timePlayed"] = 883.7549999998882,
@@ -425,10 +425,10 @@ RXPCComms = {
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 796,
 				},
-				["Brutikus"] = {
-					["timePlayed"] = 85.72200000006706,
-					["class"] = "WARRIOR",
-					["xp"] = 1376,
+				["Rikric"] = {
+					["timePlayed"] = 179.5439999999944,
+					["class"] = "SHAMAN",
+					["xp"] = 8180,
 				},
 			},
 		},
@@ -448,7 +448,7 @@ RXPCSettings = {
 			["enableFlyStepAnnouncements"] = false,
 			["enableLevelUpAnnounceSolo"] = false,
 			["alwaysSendBranded"] = false,
-			["frameHeight"] = 125.000114440918,
+			["frameHeight"] = 125.0001068115234,
 		},
 	},
 }

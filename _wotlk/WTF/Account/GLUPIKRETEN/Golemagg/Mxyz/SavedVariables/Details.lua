@@ -68,10 +68,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 597.393798828125,
-					["x"] = -979.6942291259766,
+					["y"] = 597.3938598632812,
+					["x"] = -1101.599021911621,
 					["w"] = 234.8974151611328,
-					["h"] = 136.6409606933594,
+					["h"] = 136.6409301757813,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -103,10 +103,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 597.393798828125,
-					["x"] = -747.7583312988281,
-					["w"] = 228.9744415283203,
-					["h"] = 136.6409606933594,
+					["y"] = 597.3938598632812,
+					["x"] = -869.6630859375,
+					["w"] = 228.9744262695313,
+					["h"] = 136.6409301757813,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -279,6 +279,22 @@ _detalhes_database = {
 			["use_square_mode"] = false,
 			["row_texture"] = "Glamour2",
 			["square_grow_direction"] = "right",
+			["y"] = -183.107162475586,
+			["author"] = "Details! Team",
+			["square_amount"] = 5,
+			["enabled"] = false,
+			["arrow_size"] = 10,
+			["font_size"] = 10,
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["use_spark"] = false,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -290,22 +306,6 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
-			["author"] = "Details! Team",
-			["square_amount"] = 5,
-			["enabled"] = false,
-			["arrow_size"] = 10,
-			["use_spark"] = false,
-			["row_spacement"] = 19,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["font_size"] = 10,
-			["y"] = -183.107162475586,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
@@ -320,20 +320,20 @@ _detalhes_database = {
 			["scale"] = 1,
 		},
 	},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["announce_prepots"] = {
 		["enabled"] = false,
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
-	["combat_counter"] = 4972,
 	["announce_damagerecord"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
+	["combat_counter"] = 4980,
 	["cached_talents"] = {
 	},
 	["ignore_nicktag"] = true,
@@ -914,7 +914,7 @@ _detalhes_database = {
 	},
 	["force_font_outline"] = "",
 	["character_data"] = {
-		["logons"] = 2286,
+		["logons"] = 2290,
 	},
 	["last_realversion"] = 146,
 	["announce_cooldowns"] = {

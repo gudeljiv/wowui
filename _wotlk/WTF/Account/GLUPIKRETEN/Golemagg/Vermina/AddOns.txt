@@ -182,3 +182,4 @@ NovaWorldBuffs: enabled
 LortiUI: disabled
 UberUI: disabled
 SUI: disabled
+Masque: enabled

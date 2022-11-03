@@ -37,6 +37,7 @@ Addons/ItemRack.lua
 Addons/LFG.lua
 Addons/Minimap.lua
 Addons/nMainBar.lua
+Addons/NugKeyFeedback.lua
 Addons/PallyPower.lua
 Addons/Questie.lua
 Addons/RangeDisplay.lua

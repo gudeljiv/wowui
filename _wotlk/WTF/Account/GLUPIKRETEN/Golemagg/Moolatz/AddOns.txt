@@ -194,3 +194,4 @@ Gladdy: enabled
 NovaWorldBuffs: enabled
 Capping_Options: disabled
 Capping: disabled
+Masque: enabled

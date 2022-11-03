@@ -114,8 +114,8 @@ H: 200
 Frame: GossipFrame
 FrameLevel: 1
 Anchor: TOPLEFT
-X: 0
-Y: -104
+X: -1
+Y: -125
 W: 384
 H: 512
 Frame: PetStableFrame
@@ -139,10 +139,3 @@ X: -27
 Y: 27
 W: 50
 H: 50
-Frame: NugThreatAnchor
-FrameLevel: 1
-Anchor: CENTER
-X: 474
-Y: -140
-W: 20
-H: 20

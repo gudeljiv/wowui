@@ -194,3 +194,4 @@ XLoot_Frame: disabled
 Gladdy: enabled
 NovaWorldBuffs: enabled
 VendorBait: disabled
+Masque: enabled

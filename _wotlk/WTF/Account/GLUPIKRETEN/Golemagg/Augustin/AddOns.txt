@@ -181,3 +181,4 @@ ElvUI_CustomTags: disabled
 kExtraBossFrames: disabled
 ElvUI_OptionsUI: disabled
 ElvUI: disabled
+Masque: enabled
