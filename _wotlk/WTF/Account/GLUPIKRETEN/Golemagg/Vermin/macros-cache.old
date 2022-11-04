@@ -1,8 +1,7 @@
-VER 3 000000000100001A " " "INV_MISC_QUESTIONMARK"
+VER 3 000000000100001B " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [stance:3] Recklessness
-/cast [stance:1] Retaliation
-/cast [stance:2] Shield Wall
+/cast Concussion Blow
+/cast Bloodrage
 END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
@@ -43,6 +42,7 @@ VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast Sweeping Strikes
+/use Bloodrage
 END
 VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -83,8 +83,9 @@ VER 3 0000000001000019 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /cast [@cursor] Adamantite Grenade
 END
-VER 3 000000000100001B " " "INV_MISC_QUESTIONMARK"
+VER 3 000000000100001A " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast Concussion Blow
-/cast Bloodrage
+/cast [stance:3] Recklessness
+/cast [stance:1] Retaliation
+/cast [stance:2] Shield Wall
 END

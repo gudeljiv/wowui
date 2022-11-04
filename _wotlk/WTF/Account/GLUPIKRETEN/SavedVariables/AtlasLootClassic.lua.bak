@@ -448,8 +448,8 @@ AtlasLootClassicDB = {
 			[28919] = "honor:7600",
 			[40722] = "EmblemOfValor:25",
 			[28309] = "honor:4750",
-			[42065] = "honor:33180",
 			[24549] = "honor:3800",
+			[42065] = "honor:33180",
 			[33689] = "honor:8550",
 			[28641] = "honor:3800",
 			[18427] = "honor:100",
@@ -512,8 +512,8 @@ AtlasLootClassicDB = {
 			[40692] = "EmblemOfHeroism:40",
 			[16335] = "honor:400",
 			[31379] = "honor:4750",
-			[28642] = "honor:3800",
 			[28137] = "honor:4750",
+			[28642] = "honor:3800",
 			[33691] = "honor:8550",
 			[24550] = "honor:9500",
 			[33755] = "honor:8550",
@@ -1090,6 +1090,10 @@ AtlasLootClassicDB = {
 					156.011474609375, -- [5]
 				},
 			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["Addons"] = {
 				["Favourites"] = {
 					["lists"] = {
@@ -1100,10 +1104,6 @@ AtlasLootClassicDB = {
 						},
 					},
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Judawise - Golemagg"] = {
@@ -1163,9 +1163,9 @@ AtlasLootClassicDB = {
 				},
 				["selected"] = {
 					nil, -- [1]
-					"AhnKahet", -- [2]
-					2, -- [3]
-					1, -- [4]
+					"NaxxramasWrath", -- [2]
+					14, -- [3]
+					9, -- [4]
 					0, -- [5]
 				},
 			},

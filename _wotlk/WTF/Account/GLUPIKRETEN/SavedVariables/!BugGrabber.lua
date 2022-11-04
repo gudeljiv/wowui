@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 7441,
+	["session"] = 7465,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -6119,28 +6119,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [786]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
-			["time"] = "2022/02/16 20:30:17",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:913: in function `TargetofTarget_Update'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:416: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
-			["session"] = 7429,
-			["counter"] = 22,
-		}, -- [787]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Questie' tried to call the protected function 'Questie_TrackedAchievements:SetHeight()'.",
-			["time"] = "2022/10/15 15:22:21",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:480: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:480>\n[string \"=[C]\"]: in function `SetHeight'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\AchievementTracker.lua\"]:67: in function `LoadAchievements'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\AchievementTracker.lua\"]:96: in function <...ddOns\\Questie\\Modules\\Tracker\\AchievementTracker.lua:89>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `Fire'\n[string \"@Interface\\AddOns\\AuctionFaster\\Libs\\AceEvent-3.0\\AceEvent-3.0-4.lua\"]:120: in function <...Ons\\AuctionFaster\\Libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
-			["session"] = 7430,
-			["counter"] = 2,
-		}, -- [788]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:271: attempt to compare nil with number",
 			["time"] = "2022/11/03 16:06:29",
 			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n BetterHealthstone = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:472\n IsUsableFood = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:222\n BetterFood = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:300\n IsUsableHerb = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:274\n IsUsableHealthstone = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:270\n Healthstone = <table> {\n }\n Food = <table> {\n }\n UpdateMacros = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:72\n BetterHPotion = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:434\n IsUsableHPotion = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:262\n IsUsablePetFood = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:228\n BetterManaGem = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:483\n IsUsableBuffFood = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:249\n BuildSequence = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:510\n BetterDrink = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:346\n BetterHerb = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:371\n IsUsableBuffDrink = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:258\n PetFood = <table> {\n }\n BetterOre = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:386\n IsUsableMPotion = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:266\n Potion = <table> {\n }\n ManaGem = <table> {\n }\n FindPairInPetFoodArray = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:240\n Bandage = <table> {\n }\n IsUsableDrink = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:253\n IsUsableManaGem = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:282\n Herb = <table> {\n }\n dirty = false\n BetterBandage = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:494\n BetterPetFood = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:401\n IsUsableBandage = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:296\n BetterMPotion = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:453\n Sorted = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:211\n BetterBuffDrink = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:423\n Ore = <table> {\n }\n IsUsableOre = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:278\n BetterBuffFood = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:412\n}\nhealthstone = <table> {\n id = 36894\n}\n(*temporary) = nil\n(*temporary) = 80\n(*temporary) = \"player\"\n(*temporary) = \"attempt to compare nil with number\"\n",
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Helpers/BestFood.lua\"]:271: in function `IsUsableHealthstone'\n[string \"@Interface\\AddOns\\xVermin\\Helpers/BestFood.lua\"]:119: in function `UpdateMacros'\n[string \"@Interface\\AddOns\\xVermin\\Helpers/BestFood.lua\"]:63: in function <Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:58>",
 			["session"] = 7432,
 			["counter"] = 2,
-		}, -- [789]
+		}, -- [787]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\PaperDollFrame.lua:2302: attempt to index global 'dialog' (a nil value)",
 			["time"] = "2022/11/03 16:20:50",
@@ -6148,14 +6133,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface_Wrath\\FrameXML\\PaperDollFrame.lua\"]:2302: in function `GearSetButton_OnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 7436,
 			["counter"] = 5,
-		}, -- [790]
-		{
-			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'unitscan' tried to call the protected function 'UNKNOWN()'.",
-			["time"] = "2022/09/25 11:24:28",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:42: in function `target'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:273: in function `UPDATE'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:3: in function <Interface\\AddOns\\unitscan\\unitscan.lua:3>",
-			["session"] = 7441,
-			["counter"] = 30,
-		}, -- [791]
+		}, -- [788]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'ArenaEnemyFrames:ClearAllPoints()'.",
 			["time"] = "2022/04/11 12:01:06",
@@ -6163,6 +6141,59 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:2525: in function `UIParentManageFramePositions'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:1831: in function <Interface_TBC\\FrameXML\\UIParent.lua:1818>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:2550: in function <Interface_TBC\\FrameXML\\UIParent.lua:2548>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\StanceBar.lua\"]:43: in function `StanceBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:56: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
 			["session"] = 7441,
 			["counter"] = 34,
+		}, -- [789]
+		{
+			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'unitscan' tried to call the protected function 'UNKNOWN()'.",
+			["time"] = "2022/09/25 11:24:28",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:42: in function `target'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:273: in function `UPDATE'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:3: in function <Interface\\AddOns\\unitscan\\unitscan.lua:3>",
+			["session"] = 7447,
+			["counter"] = 31,
+		}, -- [790]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'PetFrame:Hide()'.",
+			["time"] = "2022/11/04 13:03:50",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:480: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:480>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface\\FrameXML\\PetFrame_Shared.lua\"]:68: in function `PetFrame_Update'\n[string \"@Interface\\FrameXML\\PetFrame_Shared.lua\"]:95: in function `OnEvent'\n[string \"@Interface\\FrameXML\\UnitFrame.lua\"]:742: in function <Interface\\FrameXML\\UnitFrame.lua:740>",
+			["session"] = 7452,
+			["counter"] = 1,
+		}, -- [791]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Questie' tried to call the protected function 'Questie_TrackedAchievements:SetHeight()'.",
+			["time"] = "2022/10/15 15:22:21",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:480: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:480>\n[string \"=[C]\"]: in function `SetHeight'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\AchievementTracker.lua\"]:67: in function `LoadAchievements'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\AchievementTracker.lua\"]:96: in function <...ddOns\\Questie\\Modules\\Tracker\\AchievementTracker.lua:89>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `Fire'\n[string \"@Interface\\AddOns\\AuctionFaster\\Libs\\AceEvent-3.0\\AceEvent-3.0-4.lua\"]:120: in function <...Ons\\AuctionFaster\\Libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
+			["session"] = 7452,
+			["counter"] = 4,
 		}, -- [792]
+		{
+			["message"] = "Interface\\AddOns\\RingMenu\\options-Options.lua:281: attempt to call global 'AttemptToSaveBindings' (a nil value)",
+			["time"] = "2022/11/04 15:24:11",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n OnEnter = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1054\n GetCustomBindingType = <function> defined @Interface\\SharedXML\\CustomBindingButtonMixin.lua:131\n OnKeyDown = <function> defined @Interface\\SharedXML\\CustomBindingButtonMixin.lua:57\n OnClick = <function> defined @Interface\\SharedXML\\CustomBindingButtonMixin.lua:27\n KeyLabel = <unnamed> {\n }\n OnShow = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1045\n isBindingModeActive = true\n TopLeft = RingMenuOptionsPanelRingConfigTopLeft {\n }\n TopMiddle = RingMenuOptionsPanelRingConfigTopMiddle {\n }\n TopRight = RingMenuOptionsPanelRingConfigTopRight {\n }\n SetCustomBindingType = <function> defined @Interface\\SharedXML\\CustomBindingButtonMixin.lua:127\n MiddleMiddle = RingMenuOptionsPanelRingConfigMiddleMiddle {\n }\n widget = <table> {\n }\n BottomLeft = RingMenuOptionsPanelRingConfigBottomLeft {\n }\n isSelected = true\n CancelBinding = <function> defined @Interface\\SharedXML\\CustomBindingButtonMixin.lua:147\n OnMouseUp = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1036\n customBindingType = \"RingMenuToggle\"\n keys = <table> {\n }\n receivedNonMetaKeyInput = true\n OnMouseDown = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1021\n OnMouseWheel = <function> defined @Interface\\SharedXML\\CustomBindingButtonMixin.lua:52\n MiddleRight = RingMenuOptionsPanelRingConfigMiddleRight {\n }\n IsBindingModeButton = <function> defined @Interface\\SharedXML\\CustomBindingButtonMixin.lua:99\n OnLeave = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1062\n BottomMiddle = RingMenuOptionsPanelRingConfigBottomMiddle {\n }\n OnInput = <function> defined @Interface\\SharedXML\\CustomBindingButtonMixin.lua:65\n OnLoad = <function> defined @Interface\\SharedXML\\CustomBindingButtonMixin.lua:21\n SetBindingModeActive = <function> defined @Interface\\SharedXML\\CustomBindingButtonMixin.lua:103\n Text = RingMenuOptionsPanelRingConfigText {\n }\n IsBindingModeActive = <function> defined @Interface\\SharedXML\\CustomBindingButtonMixin.lua:139\n NotifyBindingCompleted = <function> defined @Interface\\SharedXML\\CustomBindingButtonMixin.lua:122\n MiddleLeft = RingMenuOptionsPanelRingConfigMiddleLeft {\n }\n OnEnable = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1050\n BottomRight = RingMenuOptionsPanelRingConfigBottomRight {\n }\n GetKeys = <function> defined @Interface\\SharedXML\\CustomBindingButtonMixin.lua:143\n selectedHighlight = <unnamed> {\n }\n OnKeyUp = <function> defined @Interface\\SharedXML\\CustomBindingButtonMixin.lua:61\n OnBindingTextChanged = <function> defined @Interface\\SharedXML\\CustomBindingButtonMixin.lua:135\n SetTextures = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:1009\n}\ncompletedSuccessfully = true\nkeys = <table> {\n 1 = \"CTRL\"\n 2 = \"J\"\n}\nmetaKeyMap = <table> {\n RALT = \"ALT\"\n LALT = \"ALT\"\n RSHIFT = \"SHIFT\"\n RCTRL = \"CTRL\"\n LSHIFT = \"SHIFT\"\n LCTRL = \"CTRL\"\n}\nkeyBind = \"CTRL-J\"\ncommand = \"CLICK RingMenuToggleRing2:LeftButton\"\n(*temporary) = nil\n(*temporary) = 1\n(*temporary) = \"attempt to call global 'AttemptToSaveBindings' (a nil value)\"\nunbindAllRingBindingKeyBinds = <function> defined @Interface\\AddOns\\RingMenu\\options.lua:14\ngetRingBindingCommand = <function> defined @Interface\\AddOns\\RingMenu\\options.lua:3\nwidgetChanged = <function> defined @Interface\\AddOns\\RingMenu\\options.lua:212\ngetRingBindingKeyBindsText = <function> defined @Interface\\AddOns\\RingMenu\\options.lua:21\n",
+			["stack"] = "[string \"@Interface\\AddOns\\RingMenu\\options-Options.lua\"]:281: in function <Interface\\AddOns\\RingMenu\\options.lua:259>\n[string \"@Interface\\AddOns\\RingMenu\\options-Options.lua\"]:378: in function `bindingCompletedCallback'\n[string \"@Interface\\FrameXML\\CustomBindingHandler.lua\"]:22: in function `CallOnBindingCompletedCallback'\n[string \"@Interface\\FrameXML\\CustomBindingManager.lua\"]:28: in function `OnBindingCompleted'\n[string \"@Interface\\SharedXML\\CustomBindingButtonMixin.lua\"]:123: in function `NotifyBindingCompleted'\n[string \"@Interface\\SharedXML\\CustomBindingButtonMixin.lua\"]:91: in function `OnInput'\n[string \"@Interface\\SharedXML\\CustomBindingButtonMixin.lua\"]:58: in function <Interface\\SharedXML\\CustomBindingButtonMixin.lua:57>",
+			["session"] = 7457,
+			["counter"] = 14,
+		}, -- [793]
+		{
+			["message"] = "Interface\\AddOns\\RingMenu\\options-Options.lua:47: attempt to call global 'AttemptToSaveBindings' (a nil value)",
+			["time"] = "2022/11/04 15:25:35",
+			["locals"] = "(*temporary) = nil\n(*temporary) = 1\n(*temporary) = \"attempt to call global 'AttemptToSaveBindings' (a nil value)\"\ngetRingBindingCommand = <function> defined @Interface\\AddOns\\RingMenu\\options.lua:3\n",
+			["stack"] = "[string \"@Interface\\AddOns\\RingMenu\\options-Options.lua\"]:47: in function <Interface\\AddOns\\RingMenu\\options.lua:40>\n[string \"@Interface\\AddOns\\RingMenu\\options-Options.lua\"]:74: in function `RingMenuOptionsPanel_RemoveRing'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 7457,
+			["counter"] = 1,
+		}, -- [794]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
+			["time"] = "2022/02/16 20:30:17",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:913: in function `TargetofTarget_Update'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:416: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
+			["session"] = 7458,
+			["counter"] = 23,
+		}, -- [795]
+		{
+			["message"] = "Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:347: attempt to compare number with nil",
+			["time"] = "2022/11/04 16:49:33",
+			["locals"] = "self = TellMeWhen_IconEditor {\n 0 = <userdata>\n UndoButton = <unnamed> {\n }\n GetCpuProfileReport = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:4438\n EnableModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:328\n RegisterTab = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3540\n baseName = \"TellMeWhen_Options\"\n IterateEmbeds = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:438\n GetBaseUpgrades = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:353\n RegisterDatabaseDefaults = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:342\n OnProfile = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:534\n GetCompareResultsPath = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3997\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:405\n desc = TellMeWhen_IconEditorDesc {\n }\n title = TellMeWhen_IconEditorTitle {\n }\n IsEnabled = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:447\n LoadGroup = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\GroupConfig.lua:365\n ScheduleTimer = <function> defined @Interface\\AddOns\\AuctionFaster\\Libs\\AceTimer-3.0\\AceTimer-3.0.lua:94\n DisableModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:346\n ShowChangelog = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\MainConfig.lua:151\n RegisterMessage = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n UnregisterMessage = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:153\n CurrentTab = <unnamed> {\n }\n isMoving = false\n ProcessChangelogData = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\MainConfig.lua:188\n db = <table> {\n }\n IterateModules = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:433\n ImportExport_DropDown = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\ImportExport.lua:1319\n SetDefaultModuleState = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:383\n SetEnabledState = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:420\n DisplayPage = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3701\n enabledState = true\n OkayButton = <unnamed> {\n }\n DistributeCheckAnchorsEvenly = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:732\n startX = -4.444558\n startY = -159.682526\n icontexture = TellMeWhen_IconEditorIconTexture {\n }\n HeaderBackground = <unnamed> {\n }\n history = <table> {\n }\n ExportBox = <unnamed> {\n }\n TabGroups = <table> {\n }\n CurrentTabGroup = <unnamed> {\n }\n SpellItemToIcon = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:415\n DistributeFrameAnchorsLaterally = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:700\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\AuctionFaster\\Libs\\AceTimer-3.0\\AceTimer-3.0.lua:147\n StopMovingOrSizing = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:640\n ResetButton = <unnamed> {\n }\n NewModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:231\n PositionPanels = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:650\n defaultModuleState = true\n Equiv_GenerateTips = <function> defined @Interface\\AddOns\\TellMeWhen\\Components\\Core\\Utils.lua:364\n DoUndoRedo = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:4079\n RegisterEvent = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n SaveSettings = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:827\n cursorStartX = 667.733337\n background = <unname",
+			["stack"] = "[string \"@Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua\"]:347: in function `GetRealNames'\n[string \"*:OnEnter\"]:6: in function <[string \"*:OnEnter\"]:1>",
+			["session"] = 7458,
+			["counter"] = 6,
+		}, -- [796]
 	},
 }

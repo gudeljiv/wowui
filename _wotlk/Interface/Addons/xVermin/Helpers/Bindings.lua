@@ -93,9 +93,11 @@ local function FixBindings()
 	SetBinding('F4', 'MULTIACTIONBAR3BUTTON4', 1)
 	SetBinding('F5', 'MULTIACTIONBAR3BUTTON5', 1)
 	SetBinding('F6', 'MULTIACTIONBAR3BUTTON6', 1)
-	SetBinding('SHIFT-R', 'MULTIACTIONBAR3BUTTON10', 1)
-	SetBinding('ALT-S', 'MULTIACTIONBAR3BUTTON11', 1)
-	SetBinding('SHIFT-S', 'MULTIACTIONBAR3BUTTON12', 1)
+	SetBinding('CTRL-F5', 'MULTIACTIONBAR3BUTTON8', 1)
+	SetBinding('CTRL-F4', 'MULTIACTIONBAR3BUTTON9', 1)
+	SetBinding('CTRL-F3', 'MULTIACTIONBAR3BUTTON10', 1)
+	SetBinding('CTRL-F2', 'MULTIACTIONBAR3BUTTON11', 1)
+	SetBinding('CTRL-F1', 'MULTIACTIONBAR3BUTTON12', 1)
 
 	-- if xVermin.Class == 'HUNTER' or xVermin.Class == 'WARLOCK' then
 	-- 	SetBinding('SHIFT-1', 'MULTIACTIONBAR4BUTTON1', 1)
@@ -131,9 +133,12 @@ local function FixBindings()
 	-- 	SetBinding("X", "MULTIACTIONBAR2BUTTON12", 1)
 	-- end
 
-	for i = 1, 12 do
-		SetBindingClick('CTRL-F' .. i, 'RingMenuRingFrame1Button' .. i)
-	end
+	-- for i = 6, 12 do
+	-- 	SetBindingClick('CTRL-F' .. i, 'RingMenuRingFrame1Button' .. i)
+	-- end
+	SetBindingClick('SHIFT-R', 'RingMenuRingFrame1Button1', 1)
+	SetBindingClick('SHIFT-S', 'RingMenuRingFrame1Button2', 1)
+	SetBindingClick('ALT-S', 'RingMenuRingFrame1Button3', 1)
 
 	-- SetBinding('CTRL-F1', 'EXTRABARBUTTON1', 1)
 	-- SetBinding('CTRL-F2', 'EXTRABARBUTTON2', 1)
@@ -291,6 +296,19 @@ local function ClearAllBindings()
 	SetBinding('F10', 'NONE', 2)
 	SetBinding('F11', 'NONE', 1)
 	SetBinding('F11', 'NONE', 2)
+
+	SetBinding('CTRL-F1', 'NONE', 1)
+	SetBinding('CTRL-F2', 'NONE', 1)
+	SetBinding('CTRL-F3', 'NONE', 1)
+	SetBinding('CTRL-F4', 'NONE', 1)
+	SetBinding('CTRL-F5', 'NONE', 1)
+	SetBinding('CTRL-F6', 'NONE', 1)
+	SetBinding('CTRL-F7', 'NONE', 1)
+	SetBinding('CTRL-F8', 'NONE', 1)
+	SetBinding('CTRL-F9', 'NONE', 1)
+	SetBinding('CTRL-F10', 'NONE', 1)
+	SetBinding('CTRL-F11', 'NONE', 1)
+	SetBinding('CTRL-F12', 'NONE', 1)
 
 	FixBindings()
 	SaveBindings(1)

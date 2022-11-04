@@ -505,7 +505,7 @@ Grid2DB = {
 							["frameHeight"] = 30,
 							["frameHeaderWidths"] = {
 							},
-							["barTexture"] = "Clean",
+							["barTexture"] = "Melli",
 							["mouseoverColor"] = {
 								["a"] = 1,
 								["b"] = 1,
@@ -513,7 +513,7 @@ Grid2DB = {
 								["r"] = 1,
 							},
 							["frameWidths"] = {
-								[10] = 150,
+								[10] = 140,
 							},
 							["frameBorderTexture"] = "None",
 							["frameBorderColor"] = {
@@ -534,7 +534,7 @@ Grid2DB = {
 							["mouseoverHighlight"] = false,
 							["orientation"] = "VERTICAL",
 							["frameWidth"] = 120,
-							["frameTexture"] = "Clean",
+							["frameTexture"] = "Melli",
 						}, -- [2]
 						{
 							["frameColor"] = {
@@ -568,7 +568,7 @@ Grid2DB = {
 								["g"] = 0,
 								["b"] = 0,
 							},
-							["frameTexture"] = "Clean",
+							["frameTexture"] = "Melli",
 							["orientation"] = "VERTICAL",
 							["frameHeights"] = {
 							},
@@ -583,6 +583,101 @@ Grid2DB = {
 							["frameHeaderWidths"] = {
 							},
 						}, -- [3]
+						{
+							["frameHeaderWidths"] = {
+							},
+							["fontSize"] = 11,
+							["frameHeaderHeights"] = {
+							},
+							["frameBorder"] = 1,
+							["iconSize"] = 14,
+							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
+							["frameBorderDistance"] = -1,
+							["frameHeight"] = 28,
+							["frameBorderColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["barTexture"] = "Clean",
+							["frameBorderTexture"] = "None",
+							["frameWidths"] = {
+								[25] = 100,
+							},
+							["frameTexture"] = "Melli",
+							["mouseoverHighlight"] = false,
+							["frameContentColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["frameColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["frameHeights"] = {
+							},
+							["orientation"] = "VERTICAL",
+							["frameWidth"] = 120,
+							["mouseoverColor"] = {
+								["a"] = 1,
+								["b"] = 1,
+								["g"] = 1,
+								["r"] = 1,
+							},
+						}, -- [4]
+						{
+							["frameHeaderWidths"] = {
+							},
+							["fontSize"] = 11,
+							["frameHeaderHeights"] = {
+							},
+							["frameBorder"] = 1,
+							["iconSize"] = 14,
+							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
+							["frameBorderDistance"] = 0,
+							["frameHeight"] = 30,
+							["frameBorderColor"] = {
+								["a"] = 0,
+								["r"] = 0.9607843137254902,
+								["g"] = 0.0196078431372549,
+								["b"] = 0,
+							},
+							["barTexture"] = "Melli",
+							["frameBorderTexture"] = "None",
+							["frameWidths"] = {
+								[40] = 68,
+							},
+							["frameTexture"] = "Melli",
+							["frameContentColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["frameHeights"] = {
+								[40] = 30,
+							},
+							["frameColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
+							["frameWidth"] = 120,
+							["mouseoverColor"] = {
+								["a"] = 1,
+								["b"] = 1,
+								["g"] = 1,
+								["r"] = 1,
+							},
+						}, -- [5]
 					},
 					["frameBorderDistance"] = 0,
 					["frameHeight"] = 30,
@@ -591,18 +686,10 @@ Grid2DB = {
 						["g"] = 0.0196078431372549,
 						["r"] = 0.9607843137254902,
 					},
-					["frameWidths"] = {
-						[40] = 68,
-						[25] = 110,
-					},
-					["frameHeights"] = {
-						[40] = 30,
-						[25] = 30,
-					},
 					["frameContentColor"] = {
 						["a"] = 0,
 					},
-					["frameTexture"] = "Clean",
+					["frameTexture"] = "Melli",
 					["frameWidth"] = 120,
 					["frameBorderTexture"] = "None",
 				},
@@ -1273,17 +1360,15 @@ Grid2DB = {
 					["BackgroundTexture"] = "None",
 					["BorderB"] = 0,
 					["layouts"] = {
-						[25] = "By Group & Class",
+						["raid@lfr"] = "By Group & Class",
 						["raid@pvp"] = "By Group & Class",
-						["raid@other"] = "By Group & Class",
 						["raid@none"] = "By Group & Class",
-						[40] = "By Group & Class",
 						["raid@mythic"] = "By Group & Class",
 						["raid@flex"] = "By Group & Class",
-						["raid@lfr"] = "By Group & Class",
+						["raid@other"] = "By Group & Class",
 					},
 					["BackgroundR"] = 0.1019607843137255,
-					["FrameDisplay"] = "Raid",
+					["FrameDisplay"] = "Never",
 					["BorderA"] = 0,
 					["BorderR"] = 0,
 					["Spacing"] = 2,
@@ -1301,12 +1386,12 @@ Grid2DB = {
 								["party"] = "By Group",
 								["solo"] = "By Group",
 								["raid"] = "By Group",
-								[5] = "By Group & Class",
+								[5] = "By Group",
 								["arena"] = "By Group",
 							},
 							["BackgroundR"] = 0.1019607843137255,
 							["ScaleSize"] = 1,
-							["FrameDisplay"] = "Always",
+							["FrameDisplay"] = "Grouped",
 							["BorderA"] = 0,
 							["BorderR"] = 0,
 							["Spacing"] = 0,
@@ -1414,6 +1499,92 @@ Grid2DB = {
 							["groupAnchors"] = {
 							},
 						}, -- [3]
+						{
+							["BackgroundTexture"] = "None",
+							["BorderB"] = 0,
+							["layouts"] = {
+								["party"] = "By Group",
+								["solo"] = "By Group",
+								[25] = "By Group",
+								["raid"] = "By Group",
+								["arena"] = "By Group",
+							},
+							["BackgroundR"] = 0.1019607843137255,
+							["ScaleSize"] = 1,
+							["FrameDisplay"] = "Raid",
+							["BorderA"] = 0,
+							["BorderR"] = 0,
+							["Spacing"] = 0,
+							["anchor"] = "LEFT",
+							["Positions"] = {
+							},
+							["groupHorizontals"] = {
+							},
+							["clamp"] = true,
+							["groupAnchor"] = "TOPLEFT",
+							["PosY"] = 0,
+							["anchors"] = {
+							},
+							["groupAnchors"] = {
+							},
+							["unitsPerColumns"] = {
+							},
+							["PosX"] = 0,
+							["horizontal"] = false,
+							["BackgroundA"] = 0,
+							["BackgroundG"] = 0.1019607843137255,
+							["BorderG"] = 0,
+							["BorderTexture"] = "None",
+							["Padding"] = 5,
+							["BackgroundB"] = 0.1019607843137255,
+							["FrameLock"] = false,
+						}, -- [4]
+						{
+							["BackgroundTexture"] = "None",
+							["BorderB"] = 0,
+							["layouts"] = {
+								["raid@lfr"] = "By Group & Class",
+								["solo"] = "By Group",
+								["raid@pvp"] = "By Group & Class",
+								["raid@other"] = "By Group & Class",
+								["party"] = "By Group",
+								["raid@mythic"] = "By Group & Class",
+								["raid@none"] = "By Group & Class",
+								[40] = "By Group",
+								["arena"] = "By Group",
+								["raid@flex"] = "By Group & Class",
+								["raid"] = "By Group",
+							},
+							["BackgroundR"] = 0.1019607843137255,
+							["ScaleSize"] = 1,
+							["FrameLock"] = false,
+							["BorderA"] = 0,
+							["BorderR"] = 0,
+							["Spacing"] = 2,
+							["anchor"] = "LEFT",
+							["Positions"] = {
+							},
+							["groupHorizontals"] = {
+							},
+							["BackgroundG"] = 0.1019607843137255,
+							["groupAnchor"] = "TOPLEFT",
+							["PosY"] = 0,
+							["anchors"] = {
+							},
+							["PosX"] = 0,
+							["unitsPerColumns"] = {
+							},
+							["BorderTexture"] = "None",
+							["horizontal"] = false,
+							["BackgroundA"] = 0,
+							["clamp"] = true,
+							["BorderG"] = 0,
+							["BackgroundB"] = 0.1019607843137255,
+							["Padding"] = 2,
+							["groupAnchors"] = {
+							},
+							["FrameDisplay"] = "Raid",
+						}, -- [5]
 					},
 					["BackgroundA"] = 0,
 					["BackgroundB"] = 0.1019607843137255,
@@ -7609,12 +7780,12 @@ Grid2DB = {
 			},
 			["themes"] = {
 				["enabled"] = {
-					["25"] = 0,
+					["25"] = 4,
 					["party"] = 1,
-					["default"] = 3,
-					["solo"] = 1,
-					["40"] = 0,
+					["default"] = 0,
+					["40"] = 5,
 					["15"] = 3,
+					["solo"] = 0,
 					["10"] = 2,
 				},
 				["indicators"] = {
@@ -7629,6 +7800,14 @@ Grid2DB = {
 					{
 						["text-down"] = true,
 					}, -- [3]
+					{
+						["name-5-10"] = true,
+					}, -- [4]
+					{
+						["name-5-10"] = true,
+						["health-number"] = true,
+						["mana-5-10"] = true,
+					}, -- [5]
 					[0] = {
 						["name-5-10"] = true,
 						["health-number"] = true,
@@ -7639,6 +7818,9 @@ Grid2DB = {
 					"5", -- [1]
 					"10", -- [2]
 					"15", -- [3]
+					"25", -- [4]
+					"40", -- [5]
+					[0] = "Default",
 				},
 			},
 		},

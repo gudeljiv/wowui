@@ -6,14 +6,14 @@ RingMenu_globalConfig = {
 RingMenu_ringConfig = {
 	{
 		["backdropColor"] = {
-			["a"] = 0.5,
+			["a"] = 0.5295702815055847,
 			["r"] = 0,
 			["g"] = 0,
 			["b"] = 0,
 		},
-		["radius"] = 125,
+		["radius"] = 110,
 		["backdropScale"] = 1.5,
-		["closeOnClick"] = false,
+		["closeOnClick"] = true,
 		["angle"] = 0,
 		["firstSlot"] = 13,
 		["numSlots"] = 12,

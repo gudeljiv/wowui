@@ -17,6 +17,7 @@ skills["offgcd"]["warrior"] = [
     {"name": "spell reflection", "type": "GetSpellTexture", "id": 23920, "key": "v"},
     {"name": "shield block", "type": "GetSpellTexture", "id": 2565, "key": "f4", "modifier": "ctrl"},
     {"name": "last stand", "type": "GetSpellTexture", "id": 12975, "key": "t", "modifier": "shift"},
+    {"name": "battlemaster's resolve", "type": "GetItemIcon", "id": 41589, "key": "1", "modifier": "alt"},
 ]
 
 skills["offgcd"]["druid"] = [
@@ -42,12 +43,12 @@ skills["warrior"] = [
     {"name": "commanding shout", "type": "GetSpellTexture", "id": 469, "key": "f6"},
     {"name": "demoralizing shout", "type": "GetSpellTexture", "id": 1160, "key": "f5"},
     {"name": "sunder armor", "type": "GetSpellTexture", "id": 7386, "key": "k"},
-    {"name": "bloodthirst", "type": "GetSpellTexture", "id": 23881, "key": "f2", "modifier": "ctrl"},
-    {"name": "mortal strike", "type": "GetSpellTexture", "id": 12294, "key": "f2", "modifier": "ctrl"},
-    {"name": "berserker rage", "type": "GetSpellTexture", "id": 18499, "key": "f1", "modifier": "ctrl"},
+    {"name": "bloodthirst", "type": "GetSpellTexture", "id": 23881, "key": "f1", "modifier": "ctrl"},
+    {"name": "mortal strike", "type": "GetSpellTexture", "id": 12294, "key": "f1", "modifier": "ctrl"},
+    {"name": "berserker rage", "type": "GetSpellTexture", "id": 18499, "key": "f4", "modifier": "ctrl"},
     {"name": "rend", "type": "GetSpellTexture", "id": 772, "key": "d", "modifier": "shift"},
     {"name": "overpower", "type": "GetSpellTexture", "id": 7384, "key": "6"},
-    {"name": "revenge", "type": "GetSpellTexture", "id": 6572, "key": "f5", "modifier": "ctrl"},
+    {"name": "revenge", "type": "GetSpellTexture", "id": 6572, "key": "f3", "modifier": "ctrl"},
     {"name": "execute", "type": "GetSpellTexture", "id": 5308, "key": "f"},
     {"name": "whirlwind", "type": "GetSpellTexture", "id": 1680, "key": "6"},
     {"name": "sweeping strikes", "type": "GetSpellTexture", "id": 12328, "key": "r", "modifier": "alt"},

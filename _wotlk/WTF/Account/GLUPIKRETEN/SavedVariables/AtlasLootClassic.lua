@@ -898,9 +898,9 @@ AtlasLootClassicDB = {
 				},
 				["selected"] = {
 					nil, -- [1]
-					"AhnKahet", -- [2]
-					2, -- [3]
-					1, -- [4]
+					"NaxxramasWrath", -- [2]
+					14, -- [3]
+					9, -- [4]
 					0, -- [5]
 				},
 			},
@@ -1004,10 +1004,6 @@ AtlasLootClassicDB = {
 					156.011474609375, -- [5]
 				},
 			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["Addons"] = {
 				["Favourites"] = {
 					["lists"] = {
@@ -1018,6 +1014,10 @@ AtlasLootClassicDB = {
 						},
 					},
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Klhjakhsgdjh - Golemagg"] = {

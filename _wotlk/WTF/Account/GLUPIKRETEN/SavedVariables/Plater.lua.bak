@@ -1,17 +1,69 @@
 
 PlaterDB = {
 	["captured_spells"] = {
-		[57567] = {
+		[75447] = {
+			["source"] = "Unknown",
 			["type"] = "BUFF",
-			["source"] = "Shaadrom",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 2729,
+		},
+		[19579] = {
+			["source"] = "Unknown",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 2729,
+		},
+		[47468] = {
+			["source"] = "Stonethief",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26125,
+		},
+		[6307] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Unknown",
+			["npcID"] = 416,
+		},
+		[51963] = {
+			["source"] = "Ebon Gargoyle",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27829,
+		},
+		[4511] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Unknown",
+			["npcID"] = 416,
+		},
+		[5232] = {
+			["source"] = "Sergra Darkthorn",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 3338,
+		},
+		[16609] = {
+			["source"] = "Thrall",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 4949,
+		},
+		[57567] = {
+			["source"] = "Fzuufun",
+			["type"] = "BUFF",
 			["event"] = "SPELL_AURA_APPLIED",
 			["npcID"] = 417,
 		},
 		[25228] = {
+			["source"] = "Fzuufun",
 			["type"] = "BUFF",
-			["source"] = "Shaadrom",
 			["event"] = "SPELL_AURA_APPLIED",
 			["npcID"] = 417,
+		},
+		[24529] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Unknown",
+			["npcID"] = 32517,
 		},
 	},
 	["captured_casts"] = {
@@ -623,6 +675,9 @@ PlaterDB = {
 		[34984] = {
 			["npcID"] = 21128,
 		},
+		[38085] = {
+			["npcID"] = 27898,
+		},
 		[13901] = {
 			["npcID"] = 19671,
 		},
@@ -963,17 +1018,17 @@ PlaterDB = {
 		[13583] = {
 			["npcID"] = 7158,
 		},
-		[32329] = {
-			["npcID"] = 17871,
-		},
 		[38205] = {
 			["npcID"] = 17870,
 		},
 		[34302] = {
 			["npcID"] = 16975,
 		},
-		[51901] = {
-			["npcID"] = 27254,
+		[32329] = {
+			["npcID"] = 17871,
+		},
+		[20716] = {
+			["npcID"] = 26277,
 		},
 		[59638] = {
 			["npcID"] = 31216,
@@ -984,32 +1039,41 @@ PlaterDB = {
 		[21971] = {
 			["npcID"] = 26607,
 		},
-		[36238] = {
-			["npcID"] = 22461,
-		},
 		[50832] = {
 			["npcID"] = 27235,
 		},
-		[43516] = {
-			["npcID"] = 24255,
-		},
-		[44518] = {
-			["npcID"] = 24686,
+		[16561] = {
+			["npcID"] = 20270,
 		},
 		[51806] = {
 			["npcID"] = 26828,
 		},
-		[6352] = {
-			["npcID"] = 3904,
+		[36238] = {
+			["npcID"] = 22461,
 		},
-		[8376] = {
-			["npcID"] = 4440,
+		[43516] = {
+			["npcID"] = 24255,
 		},
-		[34798] = {
-			["npcID"] = 18419,
+		[22651] = {
+			["npcID"] = 11490,
+		},
+		[44518] = {
+			["npcID"] = 24686,
 		},
 		[46772] = {
 			["npcID"] = 26206,
+		},
+		[6352] = {
+			["npcID"] = 3904,
+		},
+		[47964] = {
+			["npcID"] = 416,
+		},
+		[51797] = {
+			["npcID"] = 26257,
+		},
+		[47378] = {
+			["npcID"] = 26654,
 		},
 		[15797] = {
 			["npcID"] = 7448,
@@ -1017,23 +1081,23 @@ PlaterDB = {
 		[52926] = {
 			["npcID"] = 29001,
 		},
-		[47964] = {
-			["npcID"] = 416,
-		},
 		[48599] = {
 			["npcID"] = 23796,
-		},
-		[15785] = {
-			["npcID"] = 19306,
-		},
-		[48280] = {
-			["npcID"] = 23654,
 		},
 		[21071] = {
 			["npcID"] = 12206,
 		},
+		[48280] = {
+			["npcID"] = 23654,
+		},
+		[16564] = {
+			["npcID"] = 25387,
+		},
 		[49309] = {
 			["npcID"] = 32340,
+		},
+		[64102] = {
+			["npcID"] = 23778,
 		},
 		[36846] = {
 			["npcID"] = 20285,
@@ -1044,14 +1108,14 @@ PlaterDB = {
 		[9739] = {
 			["npcID"] = 18079,
 		},
-		[49843] = {
-			["npcID"] = 24872,
+		[36225] = {
+			["npcID"] = 19756,
 		},
 		[53278] = {
 			["npcID"] = 29136,
 		},
-		[49111] = {
-			["npcID"] = 27608,
+		[36604] = {
+			["npcID"] = 20774,
 		},
 		[5401] = {
 			["npcID"] = 3131,
@@ -1062,14 +1126,14 @@ PlaterDB = {
 		[33969] = {
 			["npcID"] = 18981,
 		},
-		[64102] = {
-			["npcID"] = 23778,
+		[31713] = {
+			["npcID"] = 4292,
 		},
 		[13895] = {
 			["npcID"] = 9016,
 		},
-		[36225] = {
-			["npcID"] = 19756,
+		[8040] = {
+			["npcID"] = 3840,
 		},
 		[21668] = {
 			["npcID"] = 13443,
@@ -1082,14 +1146,14 @@ PlaterDB = {
 		[43416] = {
 			["npcID"] = 23663,
 		},
-		[7483] = {
-			["npcID"] = 4279,
+		[51584] = {
+			["npcID"] = 26283,
 		},
 		[7487] = {
 			["npcID"] = 3927,
 		},
-		[43543] = {
-			["npcID"] = 23919,
+		[44477] = {
+			["npcID"] = 11788,
 		},
 		[44519] = {
 			["npcID"] = 24686,
@@ -1097,20 +1161,20 @@ PlaterDB = {
 		[11921] = {
 			["npcID"] = 19016,
 		},
-		[8040] = {
-			["npcID"] = 3840,
+		[7483] = {
+			["npcID"] = 4279,
 		},
 		[36228] = {
 			["npcID"] = 20800,
 		},
-		[44477] = {
-			["npcID"] = 11788,
+		[50319] = {
+			["npcID"] = 25465,
 		},
 		[20821] = {
 			["npcID"] = 740,
 		},
-		[348] = {
-			["npcID"] = 3183,
+		[11969] = {
+			["npcID"] = 4331,
 		},
 		[37582] = {
 			["npcID"] = 19984,
@@ -1123,32 +1187,32 @@ PlaterDB = {
 		[3256] = {
 			["npcID"] = 21306,
 		},
-		[18802] = {
-			["npcID"] = 23883,
-		},
-		[11969] = {
-			["npcID"] = 4331,
-		},
-		[50319] = {
-			["npcID"] = 25465,
-		},
-		[3264] = {
-			["npcID"] = 3452,
-		},
 		[49922] = {
 			["npcID"] = 25496,
-		},
-		[38861] = {
-			["npcID"] = 23440,
 		},
 		[51963] = {
 			["npcID"] = 27829,
 		},
+		[38361] = {
+			["npcID"] = 21102,
+		},
+		[3264] = {
+			["npcID"] = 3452,
+		},
+		[34345] = {
+			["npcID"] = 18870,
+		},
+		[38861] = {
+			["npcID"] = 23440,
+		},
+		[56277] = {
+			["npcID"] = 4949,
+		},
 		[36879] = {
 			["npcID"] = 20977,
 		},
-		[38361] = {
-			["npcID"] = 21102,
+		[49816] = {
+			["npcID"] = 25479,
 		},
 		[8996] = {
 			["npcID"] = 6523,
@@ -1159,8 +1223,8 @@ PlaterDB = {
 		[32330] = {
 			["npcID"] = 17732,
 		},
-		[56277] = {
-			["npcID"] = 4949,
+		[41448] = {
+			["npcID"] = 23441,
 		},
 		[38094] = {
 			["npcID"] = 21979,
@@ -1176,17 +1240,19 @@ PlaterDB = {
 			["npcID"] = 20885,
 			["encounterID"] = 1913,
 		},
-		[43135] = {
-			["npcID"] = 4394,
+		[36623] = {
+			["npcID"] = 22113,
 		},
-		[47962] = {
-			["npcID"] = 25334,
+		[36843] = {
+			["npcID"] = 18867,
 		},
 		[34791] = {
 			["npcID"] = 18405,
 		},
-		[36623] = {
-			["npcID"] = 22113,
+		[32370] = {
+			["encounterName"] = "Nexus-Prince Shaffar",
+			["npcID"] = 18430,
+			["encounterID"] = 1899,
 		},
 		[15230] = {
 			["npcID"] = 13197,
@@ -1194,8 +1260,8 @@ PlaterDB = {
 		[51681] = {
 			["npcID"] = 26605,
 		},
-		[36843] = {
-			["npcID"] = 18867,
+		[50677] = {
+			["npcID"] = 25334,
 		},
 		[15254] = {
 			["encounterName"] = "Nexus-Prince Shaffar",
@@ -1205,37 +1271,37 @@ PlaterDB = {
 		[7106] = {
 			["npcID"] = 3854,
 		},
-		[32370] = {
-			["encounterName"] = "Nexus-Prince Shaffar",
-			["npcID"] = 18430,
-			["encounterID"] = 1899,
+		[37945] = {
+			["npcID"] = 21462,
+		},
+		[38595] = {
+			["encounterName"] = "Priestess Delrissa",
+			["npcID"] = 24558,
+			["encounterID"] = 1895,
 		},
 		[25420] = {
 			["npcID"] = 25421,
 		},
-		[38030] = {
-			["npcID"] = 19784,
-		},
 		[5605] = {
 			["npcID"] = 10759,
 		},
-		[37945] = {
-			["npcID"] = 21462,
+		[9734] = {
+			["npcID"] = 3386,
 		},
-		[30851] = {
-			["npcID"] = 17395,
-		},
-		[49987] = {
-			["npcID"] = 25758,
+		[32735] = {
+			["npcID"] = 16946,
 		},
 		[32682] = {
 			["npcID"] = 18320,
 		},
+		[34642] = {
+			["npcID"] = 19507,
+		},
 		[61272] = {
 			["npcID"] = 32534,
 		},
-		[9734] = {
-			["npcID"] = 3386,
+		[20801] = {
+			["npcID"] = 18641,
 		},
 		[31707] = {
 			["npcID"] = 510,
@@ -1243,34 +1309,22 @@ PlaterDB = {
 		[6660] = {
 			["npcID"] = 3265,
 		},
-		[32735] = {
-			["npcID"] = 16946,
-		},
-		[36099] = {
-			["npcID"] = 20409,
-		},
-		[20801] = {
-			["npcID"] = 18641,
-		},
 		[17273] = {
 			["npcID"] = 19543,
+		},
+		[6778] = {
+			["npcID"] = 3673,
+		},
+		[37839] = {
+			["npcID"] = 21033,
+		},
+		[42740] = {
+			["npcID"] = 23960,
 		},
 		[44137] = {
 			["encounterName"] = "Priestess Delrissa",
 			["npcID"] = 24556,
 			["encounterID"] = 1895,
-		},
-		[6778] = {
-			["npcID"] = 3673,
-		},
-		[35267] = {
-			["npcID"] = 19168,
-		},
-		[42740] = {
-			["npcID"] = 23960,
-		},
-		[35058] = {
-			["npcID"] = 19716,
 		},
 		[42708] = {
 			["encounterName"] = "Ingvar the Plunderer",
@@ -1280,8 +1334,20 @@ PlaterDB = {
 		[37480] = {
 			["npcID"] = 21702,
 		},
-		[43562] = {
-			["npcID"] = 24019,
+		[15242] = {
+			["npcID"] = 17477,
+		},
+		[35058] = {
+			["npcID"] = 19716,
+		},
+		[20299] = {
+			["npcID"] = 24696,
+		},
+		[35267] = {
+			["npcID"] = 19168,
+		},
+		[36582] = {
+			["npcID"] = 19735,
 		},
 		[34163] = {
 			["npcID"] = 17871,
@@ -1304,8 +1370,8 @@ PlaterDB = {
 		[45608] = {
 			["npcID"] = 25339,
 		},
-		[20299] = {
-			["npcID"] = 24696,
+		[37488] = {
+			["npcID"] = 16951,
 		},
 		[8365] = {
 			["npcID"] = 4812,
@@ -1324,14 +1390,14 @@ PlaterDB = {
 		[29054] = {
 			["npcID"] = 18864,
 		},
-		[37488] = {
-			["npcID"] = 16951,
+		[12675] = {
+			["npcID"] = 9041,
+		},
+		[38750] = {
+			["npcID"] = 21500,
 		},
 		[38446] = {
 			["npcID"] = 22081,
-		},
-		[44504] = {
-			["npcID"] = 24690,
 		},
 		[7799] = {
 			["npcID"] = 416,
@@ -1339,17 +1405,17 @@ PlaterDB = {
 		[46983] = {
 			["npcID"] = 25040,
 		},
-		[12675] = {
-			["npcID"] = 9041,
+		[9616] = {
+			["npcID"] = 18136,
 		},
 		[37840] = {
 			["npcID"] = 22038,
 		},
+		[34931] = {
+			["npcID"] = 18331,
+		},
 		[48262] = {
 			["npcID"] = 23656,
-		},
-		[49317] = {
-			["npcID"] = 27682,
 		},
 		[33844] = {
 			["npcID"] = 19294,
@@ -1371,20 +1437,20 @@ PlaterDB = {
 			["npcID"] = 18344,
 			["encounterID"] = 1899,
 		},
-		[48198] = {
-			["npcID"] = 31282,
-		},
-		[6254] = {
-			["npcID"] = 3674,
-		},
-		[9616] = {
-			["npcID"] = 18136,
-		},
 		[53345] = {
 			["npcID"] = 29102,
 		},
 		[15611] = {
 			["npcID"] = 8928,
+		},
+		[12492] = {
+			["npcID"] = 5710,
+		},
+		[33324] = {
+			["npcID"] = 18500,
+		},
+		[35204] = {
+			["npcID"] = 18116,
 		},
 		[51587] = {
 			["npcID"] = 28410,
@@ -1392,11 +1458,11 @@ PlaterDB = {
 		[11642] = {
 			["npcID"] = 4285,
 		},
-		[37361] = {
-			["npcID"] = 11838,
-		},
 		[42476] = {
 			["npcID"] = 23739,
+		},
+		[37361] = {
+			["npcID"] = 11838,
 		},
 		[45577] = {
 			["npcID"] = 25451,
@@ -1407,8 +1473,14 @@ PlaterDB = {
 		[51779] = {
 			["npcID"] = 26232,
 		},
-		[12745] = {
-			["npcID"] = 7728,
+		[17274] = {
+			["npcID"] = 27107,
+		},
+		[33493] = {
+			["npcID"] = 18848,
+		},
+		[46824] = {
+			["npcID"] = 26206,
 		},
 		[12737] = {
 			["npcID"] = 23993,
@@ -1416,29 +1488,23 @@ PlaterDB = {
 		[36594] = {
 			["npcID"] = 20673,
 		},
-		[17274] = {
-			["npcID"] = 27107,
-		},
-		[46824] = {
-			["npcID"] = 26206,
-		},
 		[22421] = {
 			["npcID"] = 13280,
 		},
-		[35204] = {
-			["npcID"] = 18116,
+		[30853] = {
+			["npcID"] = 17395,
 		},
-		[12739] = {
-			["npcID"] = 17371,
+		[37788] = {
+			["npcID"] = 21797,
 		},
-		[11829] = {
-			["npcID"] = 16905,
+		[3110] = {
+			["npcID"] = 416,
 		},
 		[11762] = {
 			["npcID"] = 416,
 		},
-		[30853] = {
-			["npcID"] = 17395,
+		[16340] = {
+			["npcID"] = 10661,
 		},
 		[37841] = {
 			["npcID"] = 20749,
@@ -1452,11 +1518,13 @@ PlaterDB = {
 		[7951] = {
 			["npcID"] = 5756,
 		},
-		[37788] = {
-			["npcID"] = 21797,
+		[22907] = {
+			["encounterName"] = "Swamplord Musel'ek",
+			["npcID"] = 17826,
+			["encounterID"] = 1947,
 		},
-		[16340] = {
-			["npcID"] = 10661,
+		[35325] = {
+			["npcID"] = 20198,
 		},
 		[38033] = {
 			["npcID"] = 25073,
@@ -1464,16 +1532,14 @@ PlaterDB = {
 		[7967] = {
 			["npcID"] = 3654,
 		},
-		[44267] = {
-			["encounterName"] = "Priestess Delrissa",
-			["npcID"] = 24558,
-			["encounterID"] = 1895,
+		[45578] = {
+			["npcID"] = 25244,
 		},
 		[22661] = {
 			["npcID"] = 11492,
 		},
-		[16006] = {
-			["npcID"] = 13236,
+		[10915] = {
+			["npcID"] = 8127,
 		},
 		[35124] = {
 			["npcID"] = 18420,
@@ -1481,8 +1547,8 @@ PlaterDB = {
 		[36179] = {
 			["npcID"] = 20397,
 		},
-		[45578] = {
-			["npcID"] = 25244,
+		[8399] = {
+			["npcID"] = 4832,
 		},
 		[31948] = {
 			["encounterName"] = "Rokmar the Crackler",
@@ -1501,14 +1567,16 @@ PlaterDB = {
 		[11922] = {
 			["npcID"] = 5481,
 		},
-		[19816] = {
-			["npcID"] = 19657,
+		[42669] = {
+			["encounterName"] = "Ingvar the Plunderer",
+			["encounterID"] = 575,
+			["npcID"] = 23954,
 		},
 		[20791] = {
 			["npcID"] = 11324,
 		},
-		[11986] = {
-			["npcID"] = 18077,
+		[19816] = {
+			["npcID"] = 19657,
 		},
 		[20823] = {
 			["npcID"] = 20159,
@@ -1527,17 +1595,19 @@ PlaterDB = {
 		[36627] = {
 			["npcID"] = 20775,
 		},
-		[8399] = {
-			["npcID"] = 4832,
+		[6982] = {
+			["npcID"] = 2963,
 		},
-		[52356] = {
-			["npcID"] = 28768,
+		[46026] = {
+			["encounterName"] = "Priestess Delrissa",
+			["npcID"] = 24553,
+			["encounterID"] = 1895,
 		},
 		[16102] = {
 			["npcID"] = 19797,
 		},
-		[12058] = {
-			["npcID"] = 18080,
+		[36915] = {
+			["npcID"] = 20908,
 		},
 		[15095] = {
 			["npcID"] = 9024,
@@ -1545,11 +1615,11 @@ PlaterDB = {
 		[26098] = {
 			["npcID"] = 18450,
 		},
-		[48264] = {
-			["npcID"] = 23656,
+		[12058] = {
+			["npcID"] = 18080,
 		},
-		[12098] = {
-			["npcID"] = 5280,
+		[52356] = {
+			["npcID"] = 28768,
 		},
 		[35892] = {
 			["npcID"] = 24972,
@@ -1571,8 +1641,10 @@ PlaterDB = {
 			["npcID"] = 18344,
 			["encounterID"] = 1899,
 		},
-		[6982] = {
-			["npcID"] = 2963,
+		[35322] = {
+			["encounterName"] = "Gatewatcher Iron-Hand",
+			["encounterID"] = 1934,
+			["npcID"] = 19710,
 		},
 		[31405] = {
 			["npcID"] = 17771,
@@ -1583,13 +1655,11 @@ PlaterDB = {
 		[33111] = {
 			["npcID"] = 17371,
 		},
-		[35325] = {
-			["npcID"] = 20198,
+		[23337] = {
+			["npcID"] = 4624,
 		},
-		[35322] = {
-			["encounterName"] = "Gatewatcher Iron-Hand",
-			["encounterID"] = 1934,
-			["npcID"] = 19710,
+		[19725] = {
+			["npcID"] = 28939,
 		},
 		[11131] = {
 			["npcID"] = 7273,
@@ -1597,61 +1667,59 @@ PlaterDB = {
 		[8131] = {
 			["npcID"] = 4291,
 		},
-		[19725] = {
-			["npcID"] = 28939,
-		},
-		[34358] = {
-			["encounterName"] = "Commander Sarannis",
-			["npcID"] = 19486,
-			["encounterID"] = 1925,
-		},
 		[33335] = {
 			["encounterName"] = "Grandmaster Vorpil",
 			["npcID"] = 18634,
 			["encounterID"] = 1911,
 		},
+		[53348] = {
+			["npcID"] = 29102,
+		},
+		[17195] = {
+			["npcID"] = 19168,
+		},
 		[7124] = {
 			["npcID"] = 2529,
 		},
-		[23337] = {
-			["npcID"] = 4624,
+		[52521] = {
+			["npcID"] = 28658,
 		},
 		[23381] = {
 			["npcID"] = 18118,
 		},
-		[56138] = {
-			["npcID"] = 16299,
+		[46315] = {
+			["npcID"] = 25743,
 		},
-		[113] = {
-			["npcID"] = 4516,
+		[17435] = {
+			["npcID"] = 29109,
 		},
 		[33527] = {
 			["encounterName"] = "Darkweaver Syth",
 			["npcID"] = 19205,
 			["encounterID"] = 1903,
 		},
-		[52521] = {
-			["npcID"] = 28658,
+		[32888] = {
+			["npcID"] = 18506,
 		},
-		[17435] = {
-			["npcID"] = 29109,
+		[113] = {
+			["npcID"] = 4516,
 		},
 		[12258] = {
 			["npcID"] = 7342,
 		},
-		[53348] = {
-			["npcID"] = 29102,
+		[6685] = {
+			["npcID"] = 7155,
 		},
-		[3606] = {
-			["npcID"] = 2523,
+		[59710] = {
+			["npcID"] = 10181,
 		},
 		[30686] = {
 			["encounterName"] = "Omor the Unscarred",
 			["npcID"] = 17308,
 			["encounterID"] = 1891,
 		},
-		[36277] = {
-			["npcID"] = 21148,
+		[10277] = {
+			["npcID"] = 18452,
 		},
 		[13321] = {
 			["npcID"] = 17401,
@@ -1677,8 +1745,8 @@ PlaterDB = {
 		[50375] = {
 			["npcID"] = 24601,
 		},
-		[46315] = {
-			["npcID"] = 25743,
+		[3606] = {
+			["npcID"] = 2523,
 		},
 		[45324] = {
 			["npcID"] = 25197,
@@ -1694,8 +1762,8 @@ PlaterDB = {
 		[16588] = {
 			["npcID"] = 17084,
 		},
-		[6685] = {
-			["npcID"] = 7155,
+		[22662] = {
+			["npcID"] = 11492,
 		},
 		[51622] = {
 			["npcID"] = 26771,
@@ -1721,8 +1789,8 @@ PlaterDB = {
 		[12466] = {
 			["npcID"] = 18934,
 		},
-		[10277] = {
-			["npcID"] = 18452,
+		[33787] = {
+			["npcID"] = 17962,
 		},
 		[10436] = {
 			["npcID"] = 7402,
@@ -1747,14 +1815,16 @@ PlaterDB = {
 		[17883] = {
 			["npcID"] = 18312,
 		},
-		[32173] = {
-			["npcID"] = 17961,
+		[3396] = {
+			["npcID"] = 2350,
 		},
-		[33787] = {
-			["npcID"] = 17962,
+		[46024] = {
+			["encounterName"] = "Priestess Delrissa",
+			["npcID"] = 24556,
+			["encounterID"] = 1895,
 		},
-		[45101] = {
-			["npcID"] = 24979,
+		[49161] = {
+			["npcID"] = 27629,
 		},
 		[5262] = {
 			["npcID"] = 3197,
@@ -1762,28 +1832,28 @@ PlaterDB = {
 		[34871] = {
 			["npcID"] = 20115,
 		},
-		[3396] = {
-			["npcID"] = 2350,
-		},
-		[49161] = {
-			["npcID"] = 27629,
-		},
-		[46024] = {
-			["encounterName"] = "Priestess Delrissa",
-			["npcID"] = 24556,
-			["encounterID"] = 1895,
-		},
 		[33417] = {
 			["npcID"] = 18949,
 		},
 		[15982] = {
 			["npcID"] = 18069,
 		},
-		[8398] = {
-			["npcID"] = 4978,
+		[44538] = {
+			["npcID"] = 24698,
 		},
 		[56147] = {
 			["npcID"] = 16298,
+		},
+		[45046] = {
+			["npcID"] = 25033,
+		},
+		[33711] = {
+			["encounterName"] = "Murmur",
+			["npcID"] = 18708,
+			["encounterID"] = 1910,
+		},
+		[9573] = {
+			["npcID"] = 9537,
 		},
 		[50504] = {
 			["npcID"] = 25721,
@@ -1793,8 +1863,8 @@ PlaterDB = {
 			["encounterID"] = 1932,
 			["npcID"] = 19219,
 		},
-		[34232] = {
-			["npcID"] = 21783,
+		[46987] = {
+			["npcID"] = 11949,
 		},
 		[36246] = {
 			["npcID"] = 19541,
@@ -1802,8 +1872,8 @@ PlaterDB = {
 		[35255] = {
 			["npcID"] = 20478,
 		},
-		[20800] = {
-			["npcID"] = 11518,
+		[40062] = {
+			["npcID"] = 17414,
 		},
 		[9613] = {
 			["npcID"] = 19411,
@@ -1817,8 +1887,8 @@ PlaterDB = {
 		[33961] = {
 			["npcID"] = 18318,
 		},
-		[35511] = {
-			["npcID"] = 23177,
+		[39082] = {
+			["npcID"] = 22076,
 		},
 		[13745] = {
 			["npcID"] = 8913,
@@ -1826,16 +1896,18 @@ PlaterDB = {
 		[15799] = {
 			["npcID"] = 25446,
 		},
-		[46987] = {
-			["npcID"] = 11949,
+		[32325] = {
+			["encounterName"] = "Pandemonius",
+			["npcID"] = 18341,
+			["encounterID"] = 1900,
 		},
 		[33529] = {
 			["encounterName"] = "Darkweaver Syth",
 			["npcID"] = 19206,
 			["encounterID"] = 1903,
 		},
-		[39082] = {
-			["npcID"] = 22076,
+		[14900] = {
+			["npcID"] = 4424,
 		},
 		[34616] = {
 			["npcID"] = 19511,
@@ -1849,19 +1921,19 @@ PlaterDB = {
 		[11763] = {
 			["npcID"] = 416,
 		},
-		[11016] = {
-			["npcID"] = 7247,
+		[50538] = {
+			["npcID"] = 25687,
 		},
 		[27634] = {
 			["encounterName"] = "Priestess Delrissa",
 			["npcID"] = 24555,
 			["encounterID"] = 1895,
 		},
-		[6350] = {
-			["npcID"] = 3902,
+		[11016] = {
+			["npcID"] = 7247,
 		},
-		[35927] = {
-			["npcID"] = 19593,
+		[44479] = {
+			["npcID"] = 24684,
 		},
 		[16429] = {
 			["npcID"] = 18401,
@@ -1869,20 +1941,20 @@ PlaterDB = {
 		[32858] = {
 			["npcID"] = 18493,
 		},
-		[50538] = {
-			["npcID"] = 25687,
+		[7761] = {
+			["npcID"] = 1866,
 		},
-		[46317] = {
-			["npcID"] = 25743,
+		[44271] = {
+			["npcID"] = 24555,
 		},
 		[25748] = {
 			["npcID"] = 25453,
 		},
-		[36247] = {
-			["npcID"] = 22323,
+		[12890] = {
+			["npcID"] = 5709,
 		},
-		[44271] = {
-			["npcID"] = 24555,
+		[46317] = {
+			["npcID"] = 25743,
 		},
 		[35096] = {
 			["npcID"] = 19633,
@@ -1901,14 +1973,14 @@ PlaterDB = {
 		[7484] = {
 			["npcID"] = 4279,
 		},
-		[11899] = {
-			["npcID"] = 5650,
+		[34233] = {
+			["npcID"] = 17014,
 		},
-		[36345] = {
-			["npcID"] = 20988,
+		[31516] = {
+			["npcID"] = 21285,
 		},
-		[44479] = {
-			["npcID"] = 24684,
+		[34344] = {
+			["npcID"] = 19527,
 		},
 		[939] = {
 			["npcID"] = 4096,
@@ -1928,26 +2000,17 @@ PlaterDB = {
 		[22887] = {
 			["npcID"] = 17729,
 		},
-		[7761] = {
-			["npcID"] = 1866,
+		[38110] = {
+			["npcID"] = 19428,
 		},
-		[31516] = {
-			["npcID"] = 21285,
+		[16498] = {
+			["npcID"] = 7442,
 		},
 		[36631] = {
 			["npcID"] = 24770,
 		},
 		[55077] = {
 			["npcID"] = 29735,
-		},
-		[34344] = {
-			["npcID"] = 19527,
-		},
-		[38110] = {
-			["npcID"] = 19428,
-		},
-		[16498] = {
-			["npcID"] = 7442,
 		},
 		[11443] = {
 			["npcID"] = 7337,
@@ -1978,17 +2041,26 @@ PlaterDB = {
 		[5781] = {
 			["npcID"] = 2958,
 		},
+		[36345] = {
+			["npcID"] = 20988,
+		},
+		[11899] = {
+			["npcID"] = 5650,
+		},
+		[36247] = {
+			["npcID"] = 22323,
+		},
 		[7588] = {
 			["npcID"] = 4275,
 		},
 		[27267] = {
 			["npcID"] = 416,
 		},
-		[34233] = {
-			["npcID"] = 17014,
+		[15547] = {
+			["npcID"] = 18501,
 		},
-		[12890] = {
-			["npcID"] = 5709,
+		[35927] = {
+			["npcID"] = 19593,
 		},
 		[31407] = {
 			["npcID"] = 17729,
@@ -1996,28 +2068,26 @@ PlaterDB = {
 		[34170] = {
 			["npcID"] = 18420,
 		},
-		[14900] = {
-			["npcID"] = 4424,
+		[46988] = {
+			["npcID"] = 11949,
 		},
-		[15547] = {
-			["npcID"] = 18501,
+		[6350] = {
+			["npcID"] = 3902,
 		},
 		[15232] = {
 			["npcID"] = 18094,
 		},
-		[46988] = {
-			["npcID"] = 11949,
+		[35511] = {
+			["npcID"] = 23177,
 		},
 		[6605] = {
 			["npcID"] = 9166,
 		},
-		[32325] = {
-			["encounterName"] = "Pandemonius",
-			["npcID"] = 18341,
-			["encounterID"] = 1900,
+		[20800] = {
+			["npcID"] = 11518,
 		},
-		[40062] = {
-			["npcID"] = 17414,
+		[34232] = {
+			["npcID"] = 21783,
 		},
 		[20298] = {
 			["npcID"] = 31096,
@@ -2025,19 +2095,8 @@ PlaterDB = {
 		[43665] = {
 			["npcID"] = 24071,
 		},
-		[45046] = {
-			["npcID"] = 25033,
-		},
-		[9573] = {
-			["npcID"] = 9537,
-		},
-		[33711] = {
-			["encounterName"] = "Murmur",
-			["npcID"] = 18708,
-			["encounterID"] = 1910,
-		},
-		[959] = {
-			["npcID"] = 4427,
+		[8398] = {
+			["npcID"] = 4978,
 		},
 		[44224] = {
 			["encounterName"] = "Kael'thas Sunstrider",
@@ -2047,14 +2106,23 @@ PlaterDB = {
 		[45336] = {
 			["npcID"] = 24972,
 		},
-		[44538] = {
-			["npcID"] = 24698,
+		[959] = {
+			["npcID"] = 4427,
 		},
 		[32938] = {
 			["npcID"] = 18460,
 		},
 		[32129] = {
 			["npcID"] = 18328,
+		},
+		[45101] = {
+			["npcID"] = 24979,
+		},
+		[8422] = {
+			["npcID"] = 4289,
+		},
+		[32173] = {
+			["npcID"] = 17961,
 		},
 		[37847] = {
 			["npcID"] = 24979,
@@ -2065,8 +2133,8 @@ PlaterDB = {
 		[34842] = {
 			["npcID"] = 16975,
 		},
-		[8422] = {
-			["npcID"] = 4289,
+		[36277] = {
+			["npcID"] = 21148,
 		},
 		[32860] = {
 			["npcID"] = 18493,
@@ -2077,32 +2145,36 @@ PlaterDB = {
 		[42131] = {
 			["npcID"] = 23883,
 		},
-		[59710] = {
-			["npcID"] = 10181,
-		},
-		[22662] = {
-			["npcID"] = 11492,
-		},
-		[32888] = {
-			["npcID"] = 18506,
-		},
 		[6984] = {
 			["npcID"] = 4531,
 		},
-		[36153] = {
-			["npcID"] = 21065,
+		[56138] = {
+			["npcID"] = 16299,
 		},
 		[35331] = {
 			["npcID"] = 18283,
 		},
-		[16590] = {
-			["npcID"] = 8551,
-		},
 		[7132] = {
 			["npcID"] = 3863,
 		},
-		[17195] = {
-			["npcID"] = 19168,
+		[36153] = {
+			["npcID"] = 21065,
+		},
+		[34358] = {
+			["encounterName"] = "Commander Sarannis",
+			["npcID"] = 19486,
+			["encounterID"] = 1925,
+		},
+		[16590] = {
+			["npcID"] = 8551,
+		},
+		[15659] = {
+			["encounterName"] = "Darkweaver Syth",
+			["npcID"] = 18472,
+			["encounterID"] = 1903,
+		},
+		[38045] = {
+			["npcID"] = 21802,
 		},
 		[6725] = {
 			["npcID"] = 7335,
@@ -2110,13 +2182,11 @@ PlaterDB = {
 		[38391] = {
 			["npcID"] = 19643,
 		},
-		[38045] = {
-			["npcID"] = 21802,
+		[12098] = {
+			["npcID"] = 5280,
 		},
-		[15659] = {
-			["encounterName"] = "Darkweaver Syth",
-			["npcID"] = 18472,
-			["encounterID"] = 1903,
+		[48264] = {
+			["npcID"] = 23656,
 		},
 		[20794] = {
 			["npcID"] = 3263,
@@ -2127,8 +2197,8 @@ PlaterDB = {
 		[20826] = {
 			["npcID"] = 5617,
 		},
-		[36915] = {
-			["npcID"] = 20908,
+		[11986] = {
+			["npcID"] = 18077,
 		},
 		[54983] = {
 			["npcID"] = 24082,
@@ -2136,65 +2206,61 @@ PlaterDB = {
 		[12491] = {
 			["npcID"] = 7795,
 		},
-		[46026] = {
-			["encounterName"] = "Priestess Delrissa",
-			["npcID"] = 24553,
-			["encounterID"] = 1895,
-		},
-		[42669] = {
-			["encounterName"] = "Ingvar the Plunderer",
-			["encounterID"] = 575,
-			["npcID"] = 23954,
-		},
-		[10915] = {
-			["npcID"] = 8127,
-		},
-		[7800] = {
-			["npcID"] = 416,
+		[16006] = {
+			["npcID"] = 13236,
 		},
 		[47496] = {
 			["npcID"] = 26125,
 		},
-		[50092] = {
-			["npcID"] = 27791,
+		[44267] = {
+			["encounterName"] = "Priestess Delrissa",
+			["npcID"] = 24558,
+			["encounterID"] = 1895,
 		},
-		[22907] = {
-			["encounterName"] = "Swamplord Musel'ek",
-			["npcID"] = 17826,
-			["encounterID"] = 1947,
+		[7800] = {
+			["npcID"] = 416,
 		},
 		[15620] = {
 			["npcID"] = 17815,
 		},
-		[3110] = {
-			["npcID"] = 416,
+		[50092] = {
+			["npcID"] = 27791,
 		},
-		[32829] = {
-			["npcID"] = 18501,
+		[12739] = {
+			["npcID"] = 17371,
 		},
 		[38467] = {
 			["npcID"] = 21648,
 		},
+		[12745] = {
+			["npcID"] = 7728,
+		},
+		[32829] = {
+			["npcID"] = 18501,
+		},
+		[11829] = {
+			["npcID"] = 16905,
+		},
 		[33916] = {
 			["npcID"] = 16975,
-		},
-		[33493] = {
-			["npcID"] = 18848,
-		},
-		[22121] = {
-			["npcID"] = 13359,
 		},
 		[6535] = {
 			["npcID"] = 3273,
 		},
-		[12492] = {
-			["npcID"] = 5710,
-		},
-		[33324] = {
-			["npcID"] = 18500,
+		[22121] = {
+			["npcID"] = 13359,
 		},
 		[15530] = {
 			["npcID"] = 19258,
+		},
+		[6254] = {
+			["npcID"] = 3674,
+		},
+		[48198] = {
+			["npcID"] = 31282,
+		},
+		[49317] = {
+			["npcID"] = 27682,
 		},
 		[9574] = {
 			["npcID"] = 18794,
@@ -2202,11 +2268,13 @@ PlaterDB = {
 		[35195] = {
 			["npcID"] = 18121,
 		},
-		[34931] = {
-			["npcID"] = 18331,
+		[44504] = {
+			["npcID"] = 24690,
 		},
-		[38750] = {
-			["npcID"] = 21500,
+		[36173] = {
+			["encounterName"] = "Dalliah the Doomsayer",
+			["npcID"] = 20885,
+			["encounterID"] = 1913,
 		},
 		[31472] = {
 			["encounterName"] = "Chrono Lord Deja",
@@ -2221,10 +2289,8 @@ PlaterDB = {
 		[46608] = {
 			["npcID"] = 11949,
 		},
-		[36173] = {
-			["encounterName"] = "Dalliah the Doomsayer",
-			["npcID"] = 20885,
-			["encounterID"] = 1913,
+		[43562] = {
+			["npcID"] = 24019,
 		},
 		[51787] = {
 			["npcID"] = 26336,
@@ -2237,8 +2303,8 @@ PlaterDB = {
 			["encounterID"] = 571,
 			["npcID"] = 23953,
 		},
-		[36582] = {
-			["npcID"] = 19735,
+		[36333] = {
+			["npcID"] = 20990,
 		},
 		[33501] = {
 			["npcID"] = 18848,
@@ -2249,14 +2315,14 @@ PlaterDB = {
 		[42772] = {
 			["npcID"] = 23956,
 		},
-		[15242] = {
-			["npcID"] = 17477,
+		[36099] = {
+			["npcID"] = 20409,
 		},
-		[36333] = {
-			["npcID"] = 20990,
+		[49987] = {
+			["npcID"] = 25758,
 		},
-		[37839] = {
-			["npcID"] = 21033,
+		[30851] = {
+			["npcID"] = 17395,
 		},
 		[6909] = {
 			["npcID"] = 5475,
@@ -2267,8 +2333,8 @@ PlaterDB = {
 		[6917] = {
 			["npcID"] = 19350,
 		},
-		[34642] = {
-			["npcID"] = 19507,
+		[38030] = {
+			["npcID"] = 19784,
 		},
 		[7948] = {
 			["npcID"] = 5761,
@@ -2282,19 +2348,17 @@ PlaterDB = {
 		[11820] = {
 			["npcID"] = 26343,
 		},
-		[38595] = {
-			["encounterName"] = "Priestess Delrissa",
-			["npcID"] = 24558,
-			["encounterID"] = 1895,
+		[60211] = {
+			["npcID"] = 24079,
 		},
 		[11836] = {
 			["npcID"] = 7273,
 		},
-		[50677] = {
+		[47962] = {
 			["npcID"] = 25334,
 		},
-		[60211] = {
-			["npcID"] = 24079,
+		[43135] = {
+			["npcID"] = 4394,
 		},
 		[57606] = {
 			["npcID"] = 27881,
@@ -2308,8 +2372,8 @@ PlaterDB = {
 		[7992] = {
 			["npcID"] = 3277,
 		},
-		[41448] = {
-			["npcID"] = 23441,
+		[38557] = {
+			["npcID"] = 23652,
 		},
 		[8000] = {
 			["npcID"] = 4038,
@@ -2317,17 +2381,17 @@ PlaterDB = {
 		[8004] = {
 			["npcID"] = 3434,
 		},
-		[38557] = {
-			["npcID"] = 23652,
-		},
-		[49816] = {
-			["npcID"] = 25479,
-		},
-		[34345] = {
-			["npcID"] = 18870,
-		},
 		[30933] = {
 			["npcID"] = 23946,
+		},
+		[18802] = {
+			["npcID"] = 23883,
+		},
+		[348] = {
+			["npcID"] = 3183,
+		},
+		[49113] = {
+			["npcID"] = 26925,
 		},
 		[20811] = {
 			["npcID"] = 10760,
@@ -2335,8 +2399,8 @@ PlaterDB = {
 		[20827] = {
 			["npcID"] = 1653,
 		},
-		[49113] = {
-			["npcID"] = 26925,
+		[43543] = {
+			["npcID"] = 23919,
 		},
 		[33502] = {
 			["encounterName"] = "Grandmaster Vorpil",
@@ -2351,16 +2415,16 @@ PlaterDB = {
 		[4979] = {
 			["npcID"] = 3263,
 		},
-		[31713] = {
-			["npcID"] = 4292,
-		},
-		[36604] = {
-			["npcID"] = 20774,
-		},
 		[36705] = {
 			["encounterName"] = "Warp Splinter",
 			["encounterID"] = 1929,
 			["npcID"] = 17977,
+		},
+		[49843] = {
+			["npcID"] = 24872,
+		},
+		[49111] = {
+			["npcID"] = 27608,
 		},
 		[50094] = {
 			["npcID"] = 24228,
@@ -2371,8 +2435,8 @@ PlaterDB = {
 		[11021] = {
 			["npcID"] = 4324,
 		},
-		[16564] = {
-			["npcID"] = 25387,
+		[15785] = {
+			["npcID"] = 19306,
 		},
 		[7057] = {
 			["npcID"] = 3875,
@@ -2383,11 +2447,11 @@ PlaterDB = {
 		[35964] = {
 			["npcID"] = 19705,
 		},
-		[47378] = {
-			["npcID"] = 26654,
+		[34798] = {
+			["npcID"] = 18419,
 		},
-		[51797] = {
-			["npcID"] = 26257,
+		[8376] = {
+			["npcID"] = 4440,
 		},
 		[14146] = {
 			["npcID"] = 6557,
@@ -2397,23 +2461,23 @@ PlaterDB = {
 			["npcID"] = 24556,
 			["encounterID"] = 1895,
 		},
-		[22651] = {
-			["npcID"] = 11490,
+		[36646] = {
+			["npcID"] = 21346,
 		},
 		[37179] = {
 			["npcID"] = 20928,
 		},
-		[36646] = {
-			["npcID"] = 21346,
+		[22478] = {
+			["npcID"] = 11490,
 		},
-		[16561] = {
-			["npcID"] = 20270,
+		[51901] = {
+			["npcID"] = 27254,
 		},
 		[43413] = {
 			["npcID"] = 26827,
 		},
-		[22478] = {
-			["npcID"] = 11490,
+		[22334] = {
+			["npcID"] = 27410,
 		},
 		[29427] = {
 			["npcID"] = 17730,
@@ -2421,8 +2485,8 @@ PlaterDB = {
 		[15241] = {
 			["npcID"] = 17269,
 		},
-		[22334] = {
-			["npcID"] = 27410,
+		[47425] = {
+			["npcID"] = 26841,
 		},
 	},
 	["profileKeys"] = {
@@ -6261,7 +6325,7 @@ PlaterDB = {
 				["nameplateShowFriendlyNPCs"] = "Interface\\AddOns\\Plater\\Plater.lua:2012",
 				["nameplateSelectedScale"] = "Interface\\AddOns\\Plater\\Plater.lua:2012",
 				["nameplateMinAlphaDistance"] = "Interface\\AddOns\\Plater\\Plater.lua:4459",
-				["nameplateMotion"] = "Interface\\AddOns\\Plater\\Plater.lua:8331",
+				["nameplateMotion"] = "Interface\\AddOns\\Plater\\Plater.lua:8336",
 				["nameplateShowFriends"] = "Interface\\AddOns\\Plater\\Plater.lua:2012",
 				["nameplateMinScale"] = "Interface\\AddOns\\Plater\\Plater.lua:2012",
 				["nameplateShowDebuffsOnFriendly"] = "Interface\\AddOns\\Plater\\Plater.lua:2012",
@@ -8781,17 +8845,17 @@ PlaterDB = {
 					"Living Rot", -- [1]
 					"The Underrot", -- [2]
 				},
-				[7276] = {
-					"Zul'Farrak Dead Hero", -- [1]
-					"Zul'Farrak", -- [2]
+				[17819] = {
+					"Durnholde Sentry", -- [1]
+					"The Escape From Durnholde", -- [2]
 				},
 				[18634] = {
 					"Cabal Summoner", -- [1]
 					"Auchindoun: Shadow Labyrinth", -- [2]
 				},
-				[135007] = {
-					"Orb Guardian", -- [1]
-					"Temple of Sethraliss", -- [2]
+				[19865] = {
+					"Mutate Horror", -- [1]
+					"Tempest Keep: The Botanica", -- [2]
 				},
 				[8318] = {
 					"Atal'ai Slave", -- [1]
@@ -8837,9 +8901,9 @@ PlaterDB = {
 					"Theka the Martyr", -- [1]
 					"Zul'Farrak", -- [2]
 				},
-				[17819] = {
-					"Durnholde Sentry", -- [1]
-					"The Escape From Durnholde", -- [2]
+				[3640] = {
+					"Evolving Ectoplasm", -- [1]
+					"Wailing Caverns", -- [2]
 				},
 				[20904] = {
 					"Warden Mellichar", -- [1]
@@ -9001,9 +9065,9 @@ PlaterDB = {
 					"Infinite Assassin", -- [1]
 					"Opening of the Dark Portal", -- [2]
 				},
-				[3640] = {
-					"Evolving Ectoplasm", -- [1]
-					"Wailing Caverns", -- [2]
+				[135007] = {
+					"Orb Guardian", -- [1]
+					"Temple of Sethraliss", -- [2]
 				},
 				[17771] = {
 					"Murkblood Oracle", -- [1]
@@ -9013,9 +9077,9 @@ PlaterDB = {
 					"Ashvane Cannoneer", -- [1]
 					"Siege of Boralus", -- [2]
 				},
-				[19865] = {
-					"Mutate Horror", -- [1]
-					"Tempest Keep: The Botanica", -- [2]
+				[7276] = {
+					"Zul'Farrak Dead Hero", -- [1]
+					"Zul'Farrak", -- [2]
 				},
 				[134629] = {
 					"Scaled Krolusk Rider", -- [1]
@@ -9852,7 +9916,7 @@ PlaterDB = {
 				["nameplateTargetRadialPosition"] = "1",
 				["nameplateShowFriendlyPets"] = "0",
 			},
-			["login_counter"] = 3618,
+			["login_counter"] = 3666,
 			["extra_icon_caster_name"] = false,
 			["aura_cooldown_show_swipe"] = false,
 			["show_aggro_flash"] = true,
@@ -11533,8 +11597,7 @@ PlaterDB = {
 				{
 					["Enabled"] = false,
 					["Revision"] = 55,
-					["HooksTemp"] = {
-					},
+					["LastHookEdited"] = "Constructor",
 					["Author"] = "Izimode-Azralon",
 					["Desc"] = "Tint nameplates of Reaping Soul units (Mythic Dungeon Affix) depending on its target and role of the player",
 					["Hooks"] = {
@@ -11543,8 +11606,7 @@ PlaterDB = {
 						["Constructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    --npcs affected by this script\n    \n    envTable.npcIDs = {\n        [148716] = true, --risen soul\n        [148893] = true, --tormented soul\n        [148894] = true, --lost soul\n        \n        [127278] = true, --skittering feeder (tests and debug, also need to disable the load conditions)\n    }\n    \n    --detect aggro, if true it will see which group member the soul is attacking and override the color\n    envTable.detectAggro = true\n    \n    \nend\n\n\n",
 					},
 					["Prio"] = 99,
-					["Name"] = "M+ Bwonsamdi Reaping",
-					["PlaterCore"] = 1,
+					["Time"] = 1579030189,
 					["LoadConditions"] = {
 						["talent"] = {
 						},
@@ -11571,9 +11633,11 @@ PlaterDB = {
 						["spec"] = {
 						},
 					},
-					["Time"] = 1579030189,
+					["HooksTemp"] = {
+					},
+					["Name"] = "M+ Bwonsamdi Reaping",
 					["Icon"] = 2446016,
-					["LastHookEdited"] = "Constructor",
+					["PlaterCore"] = 1,
 				}, -- [15]
 				{
 					["Enabled"] = false,
