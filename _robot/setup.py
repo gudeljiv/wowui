@@ -56,14 +56,14 @@ if monitor == "3840":
     p_behind_left = 74
     p_clss_left = 88
 if monitor == "2560":
-    x = 12
-    y = 12
+    x = 8
+    y = 8
     c_width = 5
     c_height = 5
-    p_offgcd_left = 19
-    p_combat_left = 40
-    p_interrupt_left = 54
-    p_behind_left = 64
+    p_offgcd_left = 15
+    p_combat_left = 39
+    p_interrupt_left = 50
+    p_behind_left = 68
     p_clss_left = 77
 if monitor == "3072":
     x = 12

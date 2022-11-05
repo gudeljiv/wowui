@@ -103,7 +103,7 @@ skills["druid"] = [
     {"name": "ferocious bite", "type": "GetSpellTexture", "id": 22568, "key": "4"},
     {"name": "tiger's fury", "type": "GetSpellTexture", "id": 5217, "key": "6"},
     {"name": "barkskin", "type": "GetSpellTexture", "id": 22812, "key": "g"},
-    {"name": "mangle", "type": "GetSpellTexture", "id": 33917, "key": "f3", "modifier": "ctrl"},
+    {"name": "mangle", "type": "GetSpellTexture", "id": 33917, "key": "f2", "modifier": "ctrl"},
     {"name": "survival instincts", "type": "GetSpellTexture", "id": 61336, "key": "d", "modifier": "alt"},
     {"name": "lacerate", "type": "GetSpellTexture", "id": 33745, "key": "3"},
     {"name": "berserk", "type": "GetSpellTexture", "id": 50334, "key": "r", "modifier": "alt"},
