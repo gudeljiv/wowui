@@ -127,7 +127,6 @@ function ItemRack.newCharacterModelFrame_OnMouseUp(self, button)
 end
 
 function ItemRack.AddButton(id)
-	print('add', id)
 	ItemRackUser.Buttons[id] = {}
 	local button = _G['ItemRackButton' .. id]
 	button:ClearAllPoints()
@@ -151,25 +150,25 @@ function ItemRack.AddButton(id)
 		end
 	end
 
-	-- local iiid
-	-- if button then
-	-- 	iiid = string.match(ItemRack.GetID(id), '%d+')
-	-- 	button:CreateBeautyBorder(8)
-	-- 	if iiid and iiid ~= 0 then
-	-- 		local _, _, itemRarity = GetItemInfo(iiid)
-	-- 		if (itemRarity and itemRarity > 1) then
-	-- 			local r, g, b = GetItemQualityColor(itemRarity)
-	-- 			button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureWhite')
-	-- 			button:SetBeautyBorderColor(r, g, b)
-	-- 		else
-	-- 			button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureNormal')
-	-- 			button:SetBeautyBorderColor(1, 1, 1)
-	-- 		end
-	-- 	else
-	-- 		button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureNormal')
-	-- 		button:SetBeautyBorderColor(1, 1, 1)
-	-- 	end
-	-- end
+	local iiid
+	if button then
+		iiid = string.match(ItemRack.GetID(id), '%d+')
+		button:CreateBeautyBorder(8)
+		if iiid and iiid ~= 0 then
+			local _, _, itemRarity = GetItemInfo(iiid)
+			if (itemRarity and itemRarity > 1) then
+				local r, g, b = GetItemQualityColor(itemRarity)
+				button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureWhite')
+				button:SetBeautyBorderColor(r, g, b)
+			else
+				button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureNormal')
+				button:SetBeautyBorderColor(1, 1, 1)
+			end
+		else
+			button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureNormal')
+			button:SetBeautyBorderColor(1, 1, 1)
+		end
+	end
 end
 
 function ItemRack.RemoveButton(id)
