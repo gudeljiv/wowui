@@ -889,7 +889,8 @@ NeedsFoodBadly.Food = {
 	[33444] = {id = 33444, name = 'Pungent Seal Whey', lvl = 65, conj = false, mp = 12840},
 	[33443] = {id = 33443, name = 'Sour Goat Cheese', lvl = 65, conj = false, hp = 18480},
 	[33454] = {id = 33454, name = 'Salted Venison', lvl = 65, conj = false, hp = 18480},
-	[33449] = {id = 33449, name = 'Crusty Flatbread', lvl = 65, conj = false, hp = 18480}
+	[33449] = {id = 33449, name = 'Crusty Flatbread', lvl = 65, conj = false, hp = 18480},
+	[43523] = {id = 43523, name = 'Conjured Mana Strudel', lvl = 80, conj = true, hp = 22500, mp = 19200}
 }
 
 NeedsFoodBadly.Potion = {
