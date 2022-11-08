@@ -1,141 +1,530 @@
 
 PlaterDB = {
 	["captured_spells"] = {
-		[58514] = {
+		[49111] = {
+			["source"] = "Azure Dragon",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27608,
+		},
+		[50512] = {
+			["source"] = "Thane Torvald Eriksson",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27377,
+		},
+		[23737] = {
+			["type"] = "BUFF",
+			["source"] = "Sayge",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 14822,
+		},
+		[48619] = {
+			["source"] = "Flamebringer",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27292,
+		},
+		[14032] = {
 			["type"] = "DEBUFF",
-			["source"] = "Orgrimmar Grunt",
+			["source"] = "Green Priest",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 3296,
+			["npcID"] = 32343,
 		},
-		[25228] = {
+		[9080] = {
+			["type"] = "DEBUFF",
+			["source"] = "Green Warrior",
 			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 32321,
+		},
+		[17274] = {
+			["type"] = "DEBUFF",
+			["source"] = "Fordragon Battle Mage",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27695,
+		},
+		[56521] = {
 			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["npcID"] = 417,
-		},
-		[22888] = {
-			["type"] = "BUFF",
-			["source"] = "Overlord Runthak",
+			["source"] = "Freed Crusader",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 173758,
+			["npcID"] = 30274,
 		},
-		[47481] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Wurzelteufel",
-			["npcID"] = 26125,
+		[1604] = {
+			["type"] = "DEBUFF",
+			["source"] = "Fordragon Footman",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27518,
 		},
-		[47482] = {
+		[52719] = {
+			["source"] = "Westfall Brigade Marine",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Wurzelteufel",
-			["npcID"] = 26125,
+			["npcID"] = 27501,
 		},
-		[48011] = {
+		[23380] = {
+			["type"] = "DEBUFF",
+			["source"] = "Taunka Windfury",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27571,
+		},
+		[52223] = {
+			["source"] = "Dragonflayer Huscarl",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Sruutom",
-			["npcID"] = 417,
+			["npcID"] = 27260,
+		},
+		[27577] = {
+			["source"] = "Conquest Hold Raider",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27118,
+		},
+		[15572] = {
+			["source"] = "Horgrenn Hellcleave",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27718,
+		},
+		[51878] = {
+			["source"] = "Ice Serpent",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26446,
+		},
+		[17687] = {
+			["type"] = "BUFF",
+			["source"] = "Conquest Hold Berserker",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27500,
+		},
+		[75447] = {
+			["type"] = "BUFF",
+			["source"] = "Yoh",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 26293,
+		},
+		[56843] = {
+			["source"] = "Thane Torvald Eriksson",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27377,
+		},
+		[49481] = {
+			["type"] = "DEBUFF",
+			["source"] = "Fordragon Sentinel",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27576,
+		},
+		[31540] = {
+			["type"] = "BUFF",
+			["source"] = "Angrathar Aberration",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27631,
+		},
+		[49243] = {
+			["type"] = "DEBUFF",
+			["source"] = "Wyrmrest Defender",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27629,
+		},
+		[48620] = {
+			["source"] = "Flamebringer",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27292,
+		},
+		[25710] = {
+			["source"] = "Conquest Hold Raider",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27118,
+		},
+		[40504] = {
+			["source"] = "Frigid Abomination Attacker",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27531,
+		},
+		[49398] = {
+			["source"] = "Rustblood",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27717,
+		},
+		[12544] = {
+			["type"] = "BUFF",
+			["source"] = "Magister Surdiel",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 32170,
+		},
+		[52208] = {
+			["source"] = "Dragonflayer Flamebinder",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27259,
 		},
 		[35706] = {
-			["event"] = "SPELL_AURA_APPLIED",
 			["type"] = "BUFF",
 			["source"] = "Unknown",
+			["event"] = "SPELL_AURA_APPLIED",
 			["npcID"] = 17252,
 		},
-		[3600] = {
+		[49807] = {
+			["type"] = "BUFF",
+			["source"] = "Dragonflayer Huscarl",
 			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "DEBUFF",
-			["source"] = "Earthbind Totem",
-			["npcID"] = 2630,
+			["npcID"] = 27260,
 		},
-		[57566] = {
+		[12550] = {
+			["type"] = "BUFF",
+			["source"] = "Snowfall Glade Shaman",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 26201,
+		},
+		[25228] = {
 			["type"] = "BUFF",
 			["source"] = "Unknown",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 417,
+			["npcID"] = 17252,
+		},
+		[47168] = {
+			["source"] = "Silverbrook Hunter",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27546,
+		},
+		[35361] = {
+			["type"] = "BUFF",
+			["source"] = "Grove Walker",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 31228,
+		},
+		[51875] = {
+			["source"] = "Tundra Scavenger",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27294,
+		},
+		[50494] = {
+			["type"] = "BUFF",
+			["source"] = "Grand Necrolord Antiok",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 28006,
+		},
+		[38064] = {
+			["type"] = "DEBUFF",
+			["source"] = "Fordragon Battle Mage",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27695,
+		},
+		[31991] = {
+			["source"] = "Torgg Thundertotem",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27716,
+		},
+		[43410] = {
+			["source"] = "Venture Co. Straggler",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27570,
+		},
+		[52812] = {
+			["source"] = "Flamebringer",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27292,
+		},
+		[7870] = {
+			["type"] = "BUFF",
+			["source"] = "Tokseverus",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 185317,
+		},
+		[40505] = {
+			["source"] = "Dragonflayer Huscarl",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27260,
+		},
+		[11430] = {
+			["source"] = "Conqueror Krenna",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27727,
+		},
+		[52309] = {
+			["type"] = "BUFF",
+			["source"] = "Drakkari Warrior",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 26425,
+		},
+		[30991] = {
+			["type"] = "BUFF",
+			["source"] = "Troll Roof Stalker",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 23090,
+		},
+		[34298] = {
+			["source"] = "Ironhide",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27715,
+		},
+		[47014] = {
+			["type"] = "DEBUFF",
+			["source"] = "Budd",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 32663,
+		},
+		[50689] = {
+			["type"] = "BUFF",
+			["source"] = "Duke Vallenhal",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 26926,
+		},
+		[53824] = {
+			["source"] = "Garg",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 23745,
+		},
+		[15501] = {
+			["source"] = "Torgg Thundertotem",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27716,
+		},
+		[32019] = {
+			["source"] = "Tallhorn Stag",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26363,
+		},
+		[50324] = {
+			["type"] = "BUFF",
+			["source"] = "Frigid Necromancer",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27539,
 		},
 		[57567] = {
-			["event"] = "SPELL_AURA_APPLIED",
 			["type"] = "BUFF",
-			["source"] = "Unknown",
+			["source"] = "Flaazun",
+			["event"] = "SPELL_AURA_APPLIED",
 			["npcID"] = 417,
 		},
-		[4511] = {
+		[19579] = {
 			["type"] = "BUFF",
 			["source"] = "Unknown",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 416,
+			["npcID"] = 20748,
 		},
-		[24259] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "DEBUFF",
-			["source"] = "Sruutom",
-			["npcID"] = 417,
-		},
-		[52909] = {
-			["type"] = "BUFF",
-			["source"] = "Librarian Garren",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 25291,
-		},
-		[47468] = {
+		[61893] = {
+			["source"] = "Rustblood",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Spineflayer",
-			["npcID"] = 26125,
+			["npcID"] = 27717,
 		},
-		[33395] = {
+		[15578] = {
+			["source"] = "Dragonflayer Huscarl",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Water Elemental",
-			["npcID"] = 510,
+			["npcID"] = 27260,
 		},
-		[11767] = {
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 416,
-		},
-		[60956] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Sruutom",
-			["npcID"] = 417,
-		},
-		[23948] = {
-			["type"] = "BUFF",
-			["source"] = "Shadow Priestess Vandis",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 11055,
-		},
-		[57724] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "DEBUFF",
-			["source"] = "Unknown",
-			["npcID"] = 417,
-		},
-		[54053] = {
+		[13730] = {
+			["source"] = "Conquest Hold Raider",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Sloonum",
-			["npcID"] = 417,
+			["npcID"] = 27118,
 		},
-		[64695] = {
+		[12555] = {
+			["source"] = "Conqueror Krenna",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27727,
+		},
+		[39171] = {
+			["source"] = "Horgrenn Hellcleave",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27718,
+		},
+		[42746] = {
+			["source"] = "Rustblood",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27717,
+		},
+		[52011] = {
+			["source"] = "Snowplain Disciple",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26705,
+		},
+		[60778] = {
+			["type"] = "BUFF",
+			["source"] = "Alexstrasza the Life-Binder",
 			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 31333,
+		},
+		[48694] = {
 			["type"] = "DEBUFF",
-			["source"] = "Earthbind Totem",
-			["npcID"] = 2630,
+			["source"] = "Flamebringer",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27292,
+		},
+		[31664] = {
+			["source"] = "Frenzied Gargoyle",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27691,
+		},
+		[50370] = {
+			["source"] = "Westfall Brigade Marine",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27501,
+		},
+		[49110] = {
+			["source"] = "Wyrmrest Guardian",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26933,
+		},
+		[44415] = {
+			["source"] = "Green Priest",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 32343,
+		},
+		[52166] = {
+			["source"] = "Grom'thar the Thunderbringer",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27002,
+		},
+		[31279] = {
+			["source"] = "Ironhide",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27715,
+		},
+		[35918] = {
+			["type"] = "DEBUFF",
+			["source"] = "Amberpine Scout",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27117,
+		},
+		[52813] = {
+			["source"] = "Thane Torvald Eriksson",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27377,
+		},
+		[33132] = {
+			["source"] = "Corrupted Nova Totem",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 18179,
+		},
+		[57057] = {
+			["type"] = "BUFF",
+			["source"] = "Thane Torvald Eriksson",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27377,
+		},
+		[34829] = {
+			["source"] = "Thane Torvald Eriksson",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27377,
+		},
+		[20615] = {
+			["type"] = "DEBUFF",
+			["source"] = "Conquest Hold Raider",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27118,
+		},
+		[32323] = {
+			["source"] = "Ironhide",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27715,
+		},
+		[50054] = {
+			["type"] = "BUFF",
+			["source"] = "Venture Co. Evacuee",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27830,
+		},
+		[24453] = {
+			["type"] = "BUFF",
+			["source"] = "Arcturus",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 38453,
+		},
+		[11974] = {
+			["type"] = "BUFF",
+			["source"] = "Green Priest",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 32343,
 		},
 		[35696] = {
-			["event"] = "SPELL_AURA_APPLIED",
 			["type"] = "BUFF",
 			["source"] = "Unknown",
+			["event"] = "SPELL_AURA_APPLIED",
 			["npcID"] = 17252,
 		},
-		[19647] = {
+		[15786] = {
+			["source"] = "Gold Shaman",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Sruutom",
-			["npcID"] = 417,
+			["npcID"] = 32340,
 		},
-		[31707] = {
+		[51584] = {
+			["source"] = "Ice Revenant",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Water Elemental",
-			["npcID"] = 510,
+			["npcID"] = 26283,
+		},
+		[34827] = {
+			["type"] = "BUFF",
+			["source"] = "Warsong Shaman",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27678,
+		},
+		[49309] = {
+			["source"] = "Gold Shaman",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 32340,
+		},
+		[48297] = {
+			["source"] = "Onslaught Warhorse",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27213,
+		},
+		[49317] = {
+			["source"] = "Azure Drake",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27682,
+		},
+		[15284] = {
+			["source"] = "Conqueror Krenna",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27727,
+		},
+		[9128] = {
+			["type"] = "BUFF",
+			["source"] = "Green Warrior",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 32321,
+		},
+		[27269] = {
+			["type"] = "BUFF",
+			["source"] = "Unknown",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 416,
+		},
+		[42648] = {
+			["type"] = "BUFF",
+			["source"] = "Warsong Peon",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27558,
+		},
+		[3600] = {
+			["type"] = "DEBUFF",
+			["source"] = "Earthbind Totem",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 2630,
+		},
+		[48325] = {
+			["type"] = "BUFF",
+			["source"] = "Dregmar Runebrand",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27003,
+		},
+		[32736] = {
+			["source"] = "Green Warrior",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 32321,
+		},
+		[31567] = {
+			["type"] = "BUFF",
+			["source"] = "Amberpine Scout",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27117,
+		},
+		[31403] = {
+			["type"] = "BUFF",
+			["source"] = "Conquest Hold Berserker",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27500,
+		},
+		[15547] = {
+			["source"] = "Amberpine Scout",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27117,
+		},
+		[49113] = {
+			["source"] = "Wyrmrest Temple Drake",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26925,
 		},
 	},
 	["captured_casts"] = {
@@ -206,6 +595,9 @@ PlaterDB = {
 		[15497] = {
 			["npcID"] = 17963,
 		},
+		[52813] = {
+			["npcID"] = 27377,
+		},
 		[37500] = {
 			["npcID"] = 19554,
 		},
@@ -258,6 +650,9 @@ PlaterDB = {
 		},
 		[9591] = {
 			["npcID"] = 5280,
+		},
+		[61893] = {
+			["npcID"] = 27717,
 		},
 		[39419] = {
 			["npcID"] = 18213,
@@ -991,6 +1386,9 @@ PlaterDB = {
 		[8995] = {
 			["npcID"] = 6523,
 		},
+		[12492] = {
+			["npcID"] = 5710,
+		},
 		[38026] = {
 			["npcID"] = 19768,
 		},
@@ -1016,11 +1414,20 @@ PlaterDB = {
 			["encounterID"] = 1889,
 			["npcID"] = 18373,
 		},
+		[34829] = {
+			["npcID"] = 27377,
+		},
+		[50512] = {
+			["npcID"] = 27377,
+		},
 		[39337] = {
 			["npcID"] = 17870,
 		},
 		[34254] = {
 			["npcID"] = 18422,
+		},
+		[52812] = {
+			["npcID"] = 27292,
 		},
 		[15245] = {
 			["npcID"] = 19354,
@@ -1028,8 +1435,14 @@ PlaterDB = {
 		[8142] = {
 			["npcID"] = 5775,
 		},
+		[52209] = {
+			["npcID"] = 27259,
+		},
 		[44644] = {
 			["npcID"] = 24685,
+		},
+		[48325] = {
+			["npcID"] = 27003,
 		},
 		[47447] = {
 			["npcID"] = 26358,
@@ -1520,8 +1933,8 @@ PlaterDB = {
 		[43562] = {
 			["npcID"] = 24019,
 		},
-		[12492] = {
-			["npcID"] = 5710,
+		[53824] = {
+			["npcID"] = 23745,
 		},
 		[37488] = {
 			["npcID"] = 16951,
@@ -8997,17 +9410,17 @@ PlaterDB = {
 					"Living Rot", -- [1]
 					"The Underrot", -- [2]
 				},
-				[3640] = {
-					"Evolving Ectoplasm", -- [1]
-					"Wailing Caverns", -- [2]
+				[7276] = {
+					"Zul'Farrak Dead Hero", -- [1]
+					"Zul'Farrak", -- [2]
 				},
 				[18634] = {
 					"Cabal Summoner", -- [1]
 					"Auchindoun: Shadow Labyrinth", -- [2]
 				},
-				[7276] = {
-					"Zul'Farrak Dead Hero", -- [1]
-					"Zul'Farrak", -- [2]
+				[135007] = {
+					"Orb Guardian", -- [1]
+					"Temple of Sethraliss", -- [2]
 				},
 				[8318] = {
 					"Atal'ai Slave", -- [1]
@@ -9053,9 +9466,9 @@ PlaterDB = {
 					"Theka the Martyr", -- [1]
 					"Zul'Farrak", -- [2]
 				},
-				[135007] = {
-					"Orb Guardian", -- [1]
-					"Temple of Sethraliss", -- [2]
+				[17819] = {
+					"Durnholde Sentry", -- [1]
+					"The Escape From Durnholde", -- [2]
 				},
 				[17835] = {
 					"Infinite Assassin", -- [1]
@@ -9217,9 +9630,9 @@ PlaterDB = {
 					"Warden Mellichar", -- [1]
 					"Tempest Keep: The Arcatraz", -- [2]
 				},
-				[19865] = {
-					"Mutate Horror", -- [1]
-					"Tempest Keep: The Botanica", -- [2]
+				[3640] = {
+					"Evolving Ectoplasm", -- [1]
+					"Wailing Caverns", -- [2]
 				},
 				[18794] = {
 					"Cabal Ritualist", -- [1]
@@ -9229,9 +9642,9 @@ PlaterDB = {
 					"Ashvane Cannoneer", -- [1]
 					"Siege of Boralus", -- [2]
 				},
-				[17819] = {
-					"Durnholde Sentry", -- [1]
-					"The Escape From Durnholde", -- [2]
+				[19865] = {
+					"Mutate Horror", -- [1]
+					"Tempest Keep: The Botanica", -- [2]
 				},
 				[134629] = {
 					"Scaled Krolusk Rider", -- [1]
@@ -10067,7 +10480,7 @@ PlaterDB = {
 				["nameplateTargetRadialPosition"] = "1",
 				["nameplateShowFriendlyPets"] = "0",
 			},
-			["login_counter"] = 3749,
+			["login_counter"] = 3775,
 			["extra_icon_caster_name"] = false,
 			["aura_cooldown_show_swipe"] = false,
 			["show_aggro_flash"] = true,
@@ -11748,8 +12161,7 @@ PlaterDB = {
 				{
 					["Enabled"] = false,
 					["Revision"] = 55,
-					["HooksTemp"] = {
-					},
+					["LastHookEdited"] = "Constructor",
 					["Author"] = "Izimode-Azralon",
 					["Desc"] = "Tint nameplates of Reaping Soul units (Mythic Dungeon Affix) depending on its target and role of the player",
 					["Hooks"] = {
@@ -11758,8 +12170,7 @@ PlaterDB = {
 						["Constructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    --npcs affected by this script\n    \n    envTable.npcIDs = {\n        [148716] = true, --risen soul\n        [148893] = true, --tormented soul\n        [148894] = true, --lost soul\n        \n        [127278] = true, --skittering feeder (tests and debug, also need to disable the load conditions)\n    }\n    \n    --detect aggro, if true it will see which group member the soul is attacking and override the color\n    envTable.detectAggro = true\n    \n    \nend\n\n\n",
 					},
 					["Prio"] = 99,
-					["Name"] = "M+ Bwonsamdi Reaping",
-					["PlaterCore"] = 1,
+					["Time"] = 1579030189,
 					["LoadConditions"] = {
 						["talent"] = {
 						},
@@ -11786,9 +12197,11 @@ PlaterDB = {
 						["spec"] = {
 						},
 					},
-					["Time"] = 1579030189,
+					["HooksTemp"] = {
+					},
+					["Name"] = "M+ Bwonsamdi Reaping",
 					["Icon"] = 2446016,
-					["LastHookEdited"] = "Constructor",
+					["PlaterCore"] = 1,
 				}, -- [15]
 				{
 					["Enabled"] = false,

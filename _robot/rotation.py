@@ -97,14 +97,14 @@ else:
 healing = {}
 try:
     for skill in skills["healing"]:
-        healing[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+        healing[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"] + " H.png"), cv2.COLOR_BGR2GRAY)
 except:
     print("healing abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
 
 abilities = {}
 try:
     for skill in skills[wow_class]:
-        abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+        abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"] + " M.png"), cv2.COLOR_BGR2GRAY)
         abilities = {**abilities, **healing}
 except:
     print("main abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
@@ -113,7 +113,7 @@ except:
 abilities_offgcd = {}
 try:
     for skill in skills["offgcd"][wow_class]:
-        abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+        abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"] + " O.png"), cv2.COLOR_BGR2GRAY)
 except:
     print("offgcd abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
 
@@ -238,7 +238,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                 skills_loaded = wow_class
                 for skill in skills[wow_class]:
                     try:
-                        abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+                        abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"] + " M.png"), cv2.COLOR_BGR2GRAY)
                         abilities = {**abilities, **healing}
                     except:
                         print("missing spell in ", wow_class, " --> ", skill["name"], datetime.now().strftime("%H:%M:%S"))
@@ -246,7 +246,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                 abilities_offgcd = {}
                 try:
                     for skill in skills["offgcd"][wow_class]:
-                        abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"]+".png"), cv2.COLOR_BGR2GRAY)
+                        abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"] + " O.png"), cv2.COLOR_BGR2GRAY)
                 except:
                     print("offgcd error missing class --> ", wow_class, datetime.now().strftime("%H:%M:%S"))
 

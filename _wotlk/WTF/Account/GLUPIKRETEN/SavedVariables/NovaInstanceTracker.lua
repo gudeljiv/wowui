@@ -397,13 +397,13 @@ NITdatabase = {
 					["time"] = 1665607013,
 					["gold"] = 3123,
 					["ammo"] = 1286,
-					["fishingSkillMax"] = 0,
+					["ammoType"] = 2515,
 					["classEnglish"] = "HUNTER",
 					["realm"] = "Jin'do",
-					["cookingSkillMax"] = 0,
 					["isPetDead"] = false,
+					["cookingSkillMax"] = 0,
 					["raceLocalized"] = "Orc",
-					["ammoType"] = 2515,
+					["fishingSkillMax"] = 0,
 					["firstaidSkill"] = 0,
 					["petLoyaltyRate"] = 20,
 					["profSkillMax2"] = 0,
@@ -675,13 +675,13 @@ NITdatabase = {
 					["prof1"] = "Inscription",
 					["restedXP"] = 2381850,
 					["totalBagSlots"] = 68,
-					["freeBagSlots"] = 39,
+					["freeBagSlots"] = 38,
 					["arenaPoints"] = 0,
 					["guild"] = "CUBE",
 					["raceEnglish"] = "Orc",
 					["profSkillMax1"] = 450,
 					["resting"] = true,
-					["time"] = 1667828108,
+					["time"] = 1667911153,
 					["gold"] = 30372262,
 					["profSkill2"] = 125,
 					["realm"] = "Golemagg",
@@ -737,14 +737,57 @@ NITdatabase = {
 						[349] = 3,
 						[489] = 17,
 					},
-					["durabilityAverage"] = 98.75968992248062,
+					["durabilityAverage"] = 100,
 					["prof2"] = "Mining",
 					["savedInstances"] = {
 					},
 					["totalPetPoints"] = 0,
-					["honor"] = 19094,
+					["honor"] = 94,
 					["maxXP"] = 1539600,
 					["gender"] = "Male",
+					["profSkill2"] = 379,
+					["prof1"] = "Herbalism",
+					["petCurrentXP"] = 7768,
+					["restedXP"] = 2309400,
+					["totalBagSlots"] = 68,
+					["shadowLabAttune"] = true,
+					["petHappiness"] = 3,
+					["arenaPoints"] = 0,
+					["cooldowns"] = {
+					},
+					["firstaidSkillMax"] = 0,
+					["level"] = 71,
+					["freeBagSlots"] = 58,
+					["guild"] = "CUBE",
+					["profSkillMax1"] = 450,
+					["raceEnglish"] = "Orc",
+					["ammo"] = 11156,
+					["resting"] = true,
+					["race"] = "Orc",
+					["petLoyaltyRate"] = 20,
+					["currency"] = {
+					},
+					["time"] = 1667910758,
+					["gold"] = 2184892,
+					["firstaidSkill"] = 0,
+					["cookingSkillMax"] = 0,
+					["petLevel"] = 0,
+					["realm"] = "Golemagg",
+					["isPetDead"] = false,
+					["ammoType"] = 28056,
+					["raceLocalized"] = "Orc",
+					["fishingSkillMax"] = 0,
+					["playerName"] = "Mxzq",
+					["classEnglish"] = "HUNTER",
+					["hellfireCitadelAttune"] = true,
+					["currentXP"] = 1019017,
+					["guildRankName"] = "Alt",
+					["profSkillMax2"] = 450,
+					["hasPet"] = false,
+					["petFamily"] = "Bear",
+					["loyaltyString"] = "Tenacity",
+					["spentPetPoints"] = 0,
+					["classLocalized"] = "Hunter",
 					["marks"] = {
 						[20559] = 0,
 						[20560] = 0,
@@ -753,49 +796,6 @@ NITdatabase = {
 						[20558] = 0,
 						[47395] = 0,
 					},
-					["prof1"] = "Herbalism",
-					["spentPetPoints"] = 0,
-					["restedXP"] = 2309400,
-					["totalBagSlots"] = 68,
-					["shadowLabAttune"] = true,
-					["petCurrentXP"] = 7768,
-					["arenaPoints"] = 0,
-					["cooldowns"] = {
-					},
-					["petHappiness"] = 3,
-					["firstaidSkillMax"] = 0,
-					["level"] = 71,
-					["guildRankName"] = "Alt",
-					["freeBagSlots"] = 57,
-					["raceEnglish"] = "Orc",
-					["ammo"] = 11156,
-					["currency"] = {
-					},
-					["race"] = "Orc",
-					["petLoyaltyRate"] = 20,
-					["resting"] = true,
-					["time"] = 1667821763,
-					["gold"] = 2184892,
-					["firstaidSkill"] = 0,
-					["cookingSkillMax"] = 0,
-					["ammoType"] = 28056,
-					["realm"] = "Golemagg",
-					["petLevel"] = 0,
-					["isPetDead"] = false,
-					["raceLocalized"] = "Orc",
-					["fishingSkillMax"] = 0,
-					["playerName"] = "Mxzq",
-					["classEnglish"] = "HUNTER",
-					["hellfireCitadelAttune"] = true,
-					["profSkillMax1"] = 450,
-					["currentXP"] = 1019017,
-					["guild"] = "CUBE",
-					["profSkillMax2"] = 450,
-					["hasPet"] = false,
-					["loyaltyString"] = "Tenacity",
-					["petFamily"] = "Bear",
-					["classLocalized"] = "Hunter",
-					["profSkill2"] = 379,
 				},
 				["Mxyz"] = {
 					["fishingSkill"] = 0,
@@ -819,8 +819,8 @@ NITdatabase = {
 					["raceEnglish"] = "Scourge",
 					["profSkillMax1"] = 75,
 					["resting"] = true,
-					["time"] = 1667832393,
-					["gold"] = 98803923,
+					["time"] = 1667909607,
+					["gold"] = 93528813,
 					["currency"] = {
 					},
 					["realm"] = "Golemagg",
@@ -1127,16 +1127,16 @@ NITdatabase = {
 					["profSkill1"] = 366,
 					["instances"] = {
 						[585] = 4,
-						[30] = 59,
+						[30] = 60,
 						[555] = 1,
 						[540] = 1,
 						[556] = 9,
 						[557] = 2,
 						[542] = 5,
 						[543] = 10,
-						[489] = 21,
-						[529] = 16,
-						[607] = 8,
+						[489] = 22,
+						[529] = 17,
+						[607] = 11,
 						[546] = 4,
 						[547] = 1,
 						[329] = 20,
@@ -1147,24 +1147,24 @@ NITdatabase = {
 						[574] = 7,
 					},
 					["firstaidSkillMax"] = 450,
-					["profSkill2"] = 410,
+					["profSkill2"] = 411,
 					["savedInstances"] = {
 					},
-					["honor"] = 30918,
+					["honor"] = 23238,
 					["maxXP"] = 1691700,
 					["gender"] = "Male",
 					["prof1"] = "Enchanting",
 					["restedXP"] = 0,
 					["totalBagSlots"] = 88,
-					["freeBagSlots"] = 49,
+					["freeBagSlots"] = 51,
 					["auchindounAttune"] = true,
-					["arenaPoints"] = 75,
+					["arenaPoints"] = 100,
 					["currentXP"] = 0,
 					["raceEnglish"] = "Orc",
 					["profSkillMax1"] = 450,
 					["race"] = "Orc",
-					["time"] = 1667832006,
-					["gold"] = 23226046,
+					["time"] = 1667925797,
+					["gold"] = 26371195,
 					["currency"] = {
 					},
 					["marks"] = {
@@ -1186,7 +1186,7 @@ NITdatabase = {
 					["hellfireCitadelAttune"] = true,
 					["prof2"] = "Engineering",
 					["resting"] = true,
-					["durabilityAverage"] = 92.21052631578948,
+					["durabilityAverage"] = 100,
 					["guildRankName"] = "Member",
 					["cookingSkillMax"] = 75,
 					["cooldowns"] = {
@@ -1197,6 +1197,789 @@ NITdatabase = {
 				},
 			},
 			["instances"] = {
+				{
+					["isPvp"] = true,
+					["leftMoney"] = 0,
+					["group"] = {
+						["Sigd-Mograine"] = {
+							["class"] = "Warlock",
+							["level"] = 80,
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "Defias Brotherhood",
+						},
+						["Pulpillo-Mandokir"] = {
+							["class"] = "Rogue",
+							["level"] = 80,
+							["classEnglish"] = "ROGUE",
+							["guildName"] = "M A F I A",
+						},
+						["Richwilde-Venoxis"] = {
+							["level"] = 80,
+							["classEnglish"] = "PRIEST",
+							["class"] = "Priest",
+						},
+						["Levicritz-Venoxis"] = {
+							["class"] = "Rogue",
+							["level"] = 80,
+							["classEnglish"] = "ROGUE",
+							["guildName"] = "The Flame",
+						},
+						["Deadvoice-Venoxis"] = {
+							["class"] = "Death Knight",
+							["level"] = 80,
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Awakening",
+						},
+						["Joppenheimer"] = {
+							["level"] = 80,
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
+						},
+						["Curîous-Gehennas"] = {
+							["level"] = 80,
+							["classEnglish"] = "ROGUE",
+							["class"] = "Rogue",
+						},
+						["Toranix"] = {
+							["class"] = "Druid",
+							["level"] = 80,
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Hideout",
+						},
+						["Kezziah-Gehennas"] = {
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["class"] = "Warrior",
+						},
+						["Hexic-Gehennas"] = {
+							["class"] = "Shaman",
+							["level"] = 80,
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "Lac Lactis Meus Cactus",
+						},
+						["Vengeánce-Earthshaker"] = {
+							["class"] = "Rogue",
+							["level"] = 80,
+							["classEnglish"] = "ROGUE",
+							["guildName"] = "Zero Tolerance",
+						},
+						["Pyrotinni-Jin'do"] = {
+							["class"] = "Mage",
+							["level"] = 80,
+							["classEnglish"] = "MAGE",
+							["guildName"] = "whø æskéð",
+						},
+						["Vermin"] = {
+							["class"] = "Warrior",
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "CUBE",
+						},
+						["Sheeprine-Sulfuron"] = {
+							["class"] = "Mage",
+							["level"] = 80,
+							["classEnglish"] = "MAGE",
+							["guildName"] = "Quid de Lionel Jospin",
+						},
+						["Hypodoom-Gehennas"] = {
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["class"] = "Warrior",
+						},
+						["Lautuma-NethergardeKeep"] = {
+							["class"] = "Priest",
+							["level"] = 80,
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "Diversion",
+						},
+						["Khendrys-Mandokir"] = {
+							["class"] = "Rogue",
+							["level"] = 80,
+							["classEnglish"] = "ROGUE",
+							["guildName"] = "LOS MERCENARIOS",
+						},
+						["Drantodk-Sulfuron"] = {
+							["class"] = "Death Knight",
+							["level"] = 80,
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Myrmidons",
+						},
+						["Wulfsige"] = {
+							["class"] = "Warlock",
+							["level"] = 80,
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "Misanthropia",
+						},
+						["Tiscasso-NethergardeKeep"] = {
+							["class"] = "Warrior",
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Tagliapietre",
+						},
+						["Vérfakaszto"] = {
+							["level"] = 80,
+							["classEnglish"] = "MAGE",
+							["class"] = "Mage",
+						},
+						["Moistmike-Gehennas"] = {
+							["class"] = "Priest",
+							["level"] = 80,
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "Dreamstate",
+						},
+						["Wormwoodl-Razorfen"] = {
+							["class"] = "Warrior",
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "MVP",
+						},
+						["Wessonhoof-Giantstalker"] = {
+							["class"] = "Druid",
+							["level"] = 80,
+							["classEnglish"] = "DRUID",
+							["guildName"] = "HAPPY KIELISZEK",
+						},
+						["Lyserah-Venoxis"] = {
+							["class"] = "Paladin",
+							["level"] = 80,
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Roots",
+						},
+						["Helles-Ashbringer"] = {
+							["class"] = "Paladin",
+							["level"] = 80,
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Drumroll Please",
+						},
+						["Lichtkrieg-Venoxis"] = {
+							["class"] = "Paladin",
+							["level"] = 80,
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Zerg",
+						},
+						["Ganeeh-Everlook"] = {
+							["class"] = "Druid",
+							["level"] = 80,
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Power Puff Peons",
+						},
+						["Morsurenrv-Sulfuron"] = {
+							["class"] = "Druid",
+							["level"] = 80,
+							["classEnglish"] = "DRUID",
+							["guildName"] = "MyXo",
+						},
+						["Omgdead-NethergardeKeep"] = {
+							["class"] = "Shaman",
+							["level"] = 80,
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "Diversion",
+						},
+						["Hyperborea-Amnennar"] = {
+							["class"] = "Shaman",
+							["level"] = 80,
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "Les Vétérans",
+						},
+						["Kasber-Mograine"] = {
+							["level"] = 80,
+							["classEnglish"] = "WARLOCK",
+							["class"] = "Warlock",
+						},
+						["Jytinä-Gehennas"] = {
+							["class"] = "Shaman",
+							["level"] = 80,
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "Länki",
+						},
+						["Zizoudunet-Sulfuron"] = {
+							["level"] = 80,
+							["classEnglish"] = "MAGE",
+							["class"] = "Mage",
+						},
+						["Omjasim-Mograine"] = {
+							["level"] = 80,
+							["classEnglish"] = "WARLOCK",
+							["class"] = "Warlock",
+						},
+						["Astrá-Ashbringer"] = {
+							["class"] = "Paladin",
+							["level"] = 80,
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Laugh Tale",
+						},
+						["Lidhandril-Giantstalker"] = {
+							["class"] = "Paladin",
+							["level"] = 80,
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "S K O U P I D I A",
+						},
+						["Bottox-Mandokir"] = {
+							["class"] = "Priest",
+							["level"] = 80,
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "Dark Coconut Project",
+						},
+						["Drøødÿ-Sulfuron"] = {
+							["class"] = "Druid",
+							["level"] = 80,
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Aeternal",
+						},
+						["Raiserx-Transcendence"] = {
+							["level"] = 80,
+							["classEnglish"] = "SHAMAN",
+							["class"] = "Shaman",
+						},
+						["Kaisor-Auberdine"] = {
+							["class"] = "Paladin",
+							["level"] = 80,
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Fleurs de Lys",
+						},
+						["Zerenade-Ashbringer"] = {
+							["class"] = "Priest",
+							["level"] = 80,
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "Death Wish",
+						},
+						["Soultorch"] = {
+							["class"] = "Warlock",
+							["level"] = 80,
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "ATM",
+						},
+					},
+					["class"] = "Warrior",
+					["winningFaction"] = 0,
+					["leftTime"] = 1667919196,
+					["groupAverage"] = 80,
+					["enteredXP"] = 0,
+					["xpFromChat"] = 0,
+					["healing"] = 9454,
+					["faction"] = 0,
+					["damage"] = 49106,
+					["mobCountFromKill"] = 0,
+					["type"] = "bg",
+					["deaths"] = 2,
+					["honor"] = 4719,
+					["playerName"] = "Vermin",
+					["classEnglish"] = "WARRIOR",
+					["rep"] = {
+						["Frostwolf Clan: +"] = -575,
+					},
+					["enteredTime"] = 1667918632,
+					["instanceID"] = 30,
+					["kb"] = 0,
+					["hk"] = 16,
+					["instanceName"] = "Alterac Valley",
+					["enteredLevel"] = 80,
+				}, -- [1]
+				{
+					["isPvp"] = true,
+					["leftMoney"] = 0,
+					["group"] = {
+						["Hyperborea-Amnennar"] = {
+							["class"] = "Shaman",
+							["level"] = 80,
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "Les Vétérans",
+						},
+						["Sigd-Mograine"] = {
+							["class"] = "Warlock",
+							["level"] = 80,
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "Defias Brotherhood",
+						},
+						["Keeptalkin-Sulfuron"] = {
+							["class"] = "Priest",
+							["level"] = 80,
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "Løst Tribe",
+						},
+						["Kunychewsky-Auberdine"] = {
+							["class"] = "Rogue",
+							["level"] = 80,
+							["classEnglish"] = "ROGUE",
+							["guildName"] = "Overload",
+						},
+						["Jhinzu-Mandokir"] = {
+							["class"] = "Shaman",
+							["level"] = 80,
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "Rest in Peace",
+						},
+						["Pulpillo-Mandokir"] = {
+							["class"] = "Rogue",
+							["level"] = 80,
+							["classEnglish"] = "ROGUE",
+							["guildName"] = "M A F I A",
+						},
+						["Bãnê-MirageRaceway"] = {
+							["class"] = "Rogue",
+							["level"] = 80,
+							["classEnglish"] = "ROGUE",
+							["guildName"] = "Solemn",
+						},
+						["Trraxx-Venoxis"] = {
+							["class"] = "Warlock",
+							["level"] = 80,
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "Zuawanderer",
+						},
+						["Khori"] = {
+							["class"] = "Paladin",
+							["level"] = 80,
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Sequence",
+						},
+						["Curîous-Gehennas"] = {
+							["level"] = 80,
+							["classEnglish"] = "ROGUE",
+							["class"] = "Rogue",
+						},
+						["Raiserx-Transcendence"] = {
+							["level"] = 80,
+							["classEnglish"] = "SHAMAN",
+							["class"] = "Shaman",
+						},
+						["Nôrqux-Razorfen"] = {
+							["class"] = "Death Knight",
+							["level"] = 80,
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Sturmschreiter",
+						},
+						["Bajszosmarci-Ashbringer"] = {
+							["class"] = "Warrior",
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Phalanx",
+						},
+						["Loddanwarr-Gehennas"] = {
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["class"] = "Warrior",
+						},
+						["Helles-Ashbringer"] = {
+							["class"] = "Paladin",
+							["level"] = 80,
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Drumroll Please",
+						},
+						["Vermin"] = {
+							["class"] = "Warrior",
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "CUBE",
+						},
+					},
+					["class"] = "Warrior",
+					["winningFaction"] = 0,
+					["leftTime"] = 1667918601,
+					["groupAverage"] = 80,
+					["enteredXP"] = 0,
+					["xpFromChat"] = 0,
+					["healing"] = 1940,
+					["faction"] = 1,
+					["damage"] = 10445,
+					["mobCountFromKill"] = 0,
+					["type"] = "bg",
+					["deaths"] = 0,
+					["honor"] = 866,
+					["playerName"] = "Vermin",
+					["classEnglish"] = "WARRIOR",
+					["rep"] = {
+						["The Defilers: +"] = -10,
+					},
+					["enteredTime"] = 1667918509,
+					["instanceID"] = 529,
+					["kb"] = 0,
+					["hk"] = 5,
+					["instanceName"] = "Arathi Basin",
+					["enteredLevel"] = 80,
+				}, -- [2]
+				{
+					["isPvp"] = true,
+					["leftMoney"] = 0,
+					["group"] = {
+						["Imnothreat"] = {
+							["class"] = "Rogue",
+							["level"] = 80,
+							["classEnglish"] = "ROGUE",
+							["guildName"] = "Hummus",
+						},
+						["Snuggless"] = {
+							["class"] = "Druid",
+							["level"] = 80,
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Hummus",
+						},
+						["Hiksey"] = {
+							["level"] = 80,
+							["classEnglish"] = "PRIEST",
+							["class"] = "Priest",
+						},
+						["Caelena-Gehennas"] = {
+							["class"] = "Warlock",
+							["level"] = 80,
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "No Sleep Gang",
+						},
+						["Gipsokarton"] = {
+							["class"] = "Priest",
+							["level"] = 80,
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "Tangra",
+						},
+						["Vermin"] = {
+							["class"] = "Warrior",
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "CUBE",
+						},
+						["Vay-Gehennas"] = {
+							["class"] = "Druid",
+							["level"] = 80,
+							["classEnglish"] = "DRUID",
+							["guildName"] = "a bunch of what",
+						},
+						["Frodonubyes-Mograine"] = {
+							["class"] = "Druid",
+							["level"] = 80,
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Jobs Done",
+						},
+						["Maledictio-Mograine"] = {
+							["class"] = "Warlock",
+							["level"] = 80,
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "Migrationsverket",
+						},
+						["Bodoma-Mograine"] = {
+							["level"] = 80,
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
+						},
+						["Raigorstone"] = {
+							["class"] = "Warrior",
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Hellscream",
+						},
+					},
+					["class"] = "Warrior",
+					["leftTime"] = 1667913663,
+					["groupAverage"] = 80,
+					["enteredXP"] = 0,
+					["xpFromChat"] = 0,
+					["mobCountFromKill"] = 0,
+					["type"] = "bg",
+					["honor"] = 0,
+					["playerName"] = "Vermin",
+					["classEnglish"] = "WARRIOR",
+					["rep"] = {
+					},
+					["enteredTime"] = 1667913394,
+					["instanceID"] = 489,
+					["instanceName"] = "Warsong Gulch",
+					["enteredLevel"] = 80,
+				}, -- [3]
+				{
+					["isPvp"] = true,
+					["leftMoney"] = 0,
+					["group"] = {
+						["Nickenyfiken-Ashbringer"] = {
+							["level"] = 80,
+							["classEnglish"] = "WARLOCK",
+							["class"] = "Warlock",
+						},
+						["Slámadruid"] = {
+							["level"] = 80,
+							["classEnglish"] = "DRUID",
+							["class"] = "Druid",
+						},
+						["Tdog-Venoxis"] = {
+							["class"] = "Priest",
+							["level"] = 80,
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "Ninjapiraten",
+						},
+						["Ayne-Venoxis"] = {
+							["class"] = "Death Knight",
+							["level"] = 80,
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Acid Eskimo",
+						},
+						["Myvalik-Mograine"] = {
+							["level"] = 80,
+							["classEnglish"] = "SHAMAN",
+							["class"] = "Shaman",
+						},
+						["Rt-Ashbringer"] = {
+							["class"] = "Druid",
+							["level"] = 80,
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Gnome on a Stick",
+						},
+						["Jonax-Mandokir"] = {
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["class"] = "Warrior",
+						},
+						["Allor-Mograine"] = {
+							["class"] = "Hunter",
+							["level"] = 80,
+							["classEnglish"] = "HUNTER",
+							["guildName"] = "TRAUMA",
+						},
+						["Vermin"] = {
+							["class"] = "Warrior",
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "CUBE",
+						},
+					},
+					["class"] = "Warrior",
+					["leftTime"] = 1667912110,
+					["groupAverage"] = 80,
+					["enteredXP"] = 0,
+					["xpFromChat"] = 0,
+					["damage"] = 0,
+					["mobCountFromKill"] = 0,
+					["type"] = "bg",
+					["honor"] = 0,
+					["playerName"] = "Vermin",
+					["healing"] = 0,
+					["rep"] = {
+					},
+					["enteredTime"] = 1667912105,
+					["instanceID"] = 607,
+					["deaths"] = 0,
+					["classEnglish"] = "WARRIOR",
+					["faction"] = 0,
+					["instanceName"] = "Strand of the Ancients",
+					["kb"] = 0,
+					["hk"] = 0,
+					["enteredLevel"] = 80,
+				}, -- [4]
+				{
+					["isPvp"] = true,
+					["leftMoney"] = 0,
+					["group"] = {
+						["Franmacc-Mandokir"] = {
+							["class"] = "Warrior",
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Void",
+						},
+						["Koufar-Sulfuron"] = {
+							["class"] = "Warrior",
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Slytherin",
+						},
+						["Polymolie-Ashbringer"] = {
+							["level"] = 80,
+							["classEnglish"] = "MAGE",
+							["class"] = "Mage",
+						},
+						["Ohlequax-Venoxis"] = {
+							["class"] = "Mage",
+							["level"] = 80,
+							["classEnglish"] = "MAGE",
+							["guildName"] = "scuffed",
+						},
+						["Sylèx-Mograine"] = {
+							["class"] = "Mage",
+							["level"] = 80,
+							["classEnglish"] = "MAGE",
+							["guildName"] = "Hexproof",
+						},
+						["Lyxzh"] = {
+							["class"] = "Priest",
+							["level"] = 80,
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "Njordheim",
+						},
+						["Serrakar-Gehennas"] = {
+							["class"] = "Death Knight",
+							["level"] = 80,
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Minty Fresh",
+						},
+						["Lightbêêr-Venoxis"] = {
+							["class"] = "Paladin",
+							["level"] = 80,
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Revival",
+						},
+						["Varef-Gehennas"] = {
+							["class"] = "Paladin",
+							["level"] = 80,
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Resident Sleepers",
+						},
+						["Cheekbuster-Venoxis"] = {
+							["class"] = "Rogue",
+							["level"] = 80,
+							["classEnglish"] = "ROGUE",
+							["guildName"] = "H I V E",
+						},
+						["Freakzy-Sulfuron"] = {
+							["class"] = "Death Knight",
+							["level"] = 80,
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "No Stress Just Chill",
+						},
+						["Vermin"] = {
+							["class"] = "Warrior",
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "CUBE",
+						},
+					},
+					["class"] = "Warrior",
+					["leftTime"] = 1667910739,
+					["groupAverage"] = 80,
+					["enteredXP"] = 0,
+					["xpFromChat"] = 0,
+					["damage"] = 0,
+					["mobCountFromKill"] = 0,
+					["type"] = "bg",
+					["honor"] = 0,
+					["playerName"] = "Vermin",
+					["healing"] = 0,
+					["rep"] = {
+					},
+					["enteredTime"] = 1667910723,
+					["instanceID"] = 607,
+					["deaths"] = 0,
+					["classEnglish"] = "WARRIOR",
+					["faction"] = 0,
+					["instanceName"] = "Strand of the Ancients",
+					["kb"] = 0,
+					["hk"] = 0,
+					["enteredLevel"] = 80,
+				}, -- [5]
+				{
+					["isPvp"] = true,
+					["leftMoney"] = 0,
+					["group"] = {
+						["Oller"] = {
+							["class"] = "Hunter",
+							["level"] = 80,
+							["classEnglish"] = "HUNTER",
+							["guildName"] = "Back To Plan A",
+						},
+						["Koufar-Sulfuron"] = {
+							["class"] = "Warrior",
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Slytherin",
+						},
+						["Kamipriest-PyrewoodVillage"] = {
+							["class"] = "Priest",
+							["level"] = 80,
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "The Fifth Elephant",
+						},
+						["Polymolie-Ashbringer"] = {
+							["level"] = 80,
+							["classEnglish"] = "MAGE",
+							["class"] = "Mage",
+						},
+						["Bickcøggqtxy-Venoxis"] = {
+							["level"] = 80,
+							["classEnglish"] = "PRIEST",
+							["class"] = "Priest",
+						},
+						["Rusho-Venoxis"] = {
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["class"] = "Warrior",
+						},
+						["Druselg-Thekal"] = {
+							["class"] = "Shaman",
+							["level"] = 80,
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "Jungle Diff Victims",
+						},
+						["Rocamadour-Mograine"] = {
+							["level"] = 80,
+							["classEnglish"] = "PRIEST",
+							["class"] = "Priest",
+						},
+						["Pillevippen-Gehennas"] = {
+							["class"] = "Shaman",
+							["level"] = 80,
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "enjoyers",
+						},
+						["Evokè-Mograine"] = {
+							["class"] = "Death Knight",
+							["level"] = 80,
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "OGs",
+						},
+						["Protain-Mograine"] = {
+							["level"] = 80,
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
+						},
+						["Archfiends-Mograine"] = {
+							["class"] = "Mage",
+							["level"] = 80,
+							["classEnglish"] = "MAGE",
+							["guildName"] = "PREPOT",
+						},
+						["Flumpadoo-NethergardeKeep"] = {
+							["level"] = 80,
+							["classEnglish"] = "ROGUE",
+							["class"] = "Rogue",
+						},
+						["Lulzincoming-Mograine"] = {
+							["class"] = "Rogue",
+							["level"] = 80,
+							["classEnglish"] = "ROGUE",
+							["guildName"] = "IRONFORGE IS MY FIEF",
+						},
+						["Rylez-Gehennas"] = {
+							["class"] = "Priest",
+							["level"] = 80,
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "Myst",
+						},
+						["Vermin"] = {
+							["class"] = "Warrior",
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "CUBE",
+						},
+					},
+					["class"] = "Warrior",
+					["leftTime"] = 1667910700,
+					["groupAverage"] = 80,
+					["enteredXP"] = 0,
+					["xpFromChat"] = 0,
+					["damage"] = 137510,
+					["mobCountFromKill"] = 0,
+					["type"] = "bg",
+					["winningFaction"] = 1,
+					["honor"] = 5735,
+					["playerName"] = "Vermin",
+					["healing"] = 17738,
+					["rep"] = {
+					},
+					["enteredTime"] = 1667909683,
+					["instanceID"] = 607,
+					["deaths"] = 3,
+					["classEnglish"] = "WARRIOR",
+					["faction"] = 1,
+					["instanceName"] = "Strand of the Ancients",
+					["hk"] = 46,
+					["kb"] = 0,
+					["enteredLevel"] = 80,
+				}, -- [6]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -1320,7 +2103,7 @@ NITdatabase = {
 					["classEnglish"] = "WARRIOR",
 					["deaths"] = 4,
 					["enteredLevel"] = 80,
-				}, -- [1]
+				}, -- [7]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -1331,11 +2114,11 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "Trilogía",
 						},
-						["Tauriana-Gehennas"] = {
+						["Vermin"] = {
 							["level"] = 80,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Peaky Grinders",
+							["class"] = "Warrior",
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "CUBE",
 						},
 						["Éíi-Ashbringer"] = {
 							["level"] = 80,
@@ -1365,11 +2148,11 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["guildName"] = "Lowland Mercenaries",
 						},
-						["Vermin"] = {
+						["Tauriana-Gehennas"] = {
 							["level"] = 80,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "CUBE",
+							["class"] = "Druid",
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Peaky Grinders",
 						},
 						["Hushh-Gehennas"] = {
 							["level"] = 80,
@@ -1443,7 +2226,7 @@ NITdatabase = {
 					["classEnglish"] = "WARRIOR",
 					["deaths"] = 1,
 					["enteredLevel"] = 80,
-				}, -- [2]
+				}, -- [8]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -1707,7 +2490,7 @@ NITdatabase = {
 					["classEnglish"] = "WARRIOR",
 					["deaths"] = 1,
 					["enteredLevel"] = 80,
-				}, -- [3]
+				}, -- [9]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -1821,7 +2604,7 @@ NITdatabase = {
 					["kb"] = 2,
 					["classEnglish"] = "WARRIOR",
 					["enteredLevel"] = 80,
-				}, -- [4]
+				}, -- [10]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -2124,7 +2907,7 @@ NITdatabase = {
 					["classEnglish"] = "WARRIOR",
 					["deaths"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [5]
+				}, -- [11]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -2392,7 +3175,7 @@ NITdatabase = {
 					["classEnglish"] = "WARRIOR",
 					["deaths"] = 1,
 					["enteredLevel"] = 80,
-				}, -- [6]
+				}, -- [12]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -2532,7 +3315,7 @@ NITdatabase = {
 					["kb"] = 2,
 					["healing"] = 28921,
 					["enteredLevel"] = 80,
-				}, -- [7]
+				}, -- [13]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -2661,7 +3444,7 @@ NITdatabase = {
 							["icon"] = "Interface\\WorldStateFrame\\ColumnIcon-TowerCapture0",
 						}, -- [1]
 					},
-				}, -- [8]
+				}, -- [14]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -2773,7 +3556,7 @@ NITdatabase = {
 					["classEnglish"] = "HUNTER",
 					["deaths"] = 3,
 					["enteredLevel"] = 71,
-				}, -- [9]
+				}, -- [15]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -2895,7 +3678,7 @@ NITdatabase = {
 					["classEnglish"] = "HUNTER",
 					["deaths"] = 2,
 					["enteredLevel"] = 71,
-				}, -- [10]
+				}, -- [16]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -3006,7 +3789,7 @@ NITdatabase = {
 					["classEnglish"] = "HUNTER",
 					["deaths"] = 2,
 					["enteredLevel"] = 71,
-				}, -- [11]
+				}, -- [17]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -3130,7 +3913,7 @@ NITdatabase = {
 					["classEnglish"] = "HUNTER",
 					["deaths"] = 8,
 					["enteredLevel"] = 71,
-				}, -- [12]
+				}, -- [18]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -3244,7 +4027,7 @@ NITdatabase = {
 					["classEnglish"] = "HUNTER",
 					["deaths"] = 1,
 					["enteredLevel"] = 71,
-				}, -- [13]
+				}, -- [19]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -3353,7 +4136,7 @@ NITdatabase = {
 					["instanceID"] = 529,
 					["instanceName"] = "Arathi Basin",
 					["enteredLevel"] = 80,
-				}, -- [14]
+				}, -- [20]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -3449,7 +4232,7 @@ NITdatabase = {
 					["hk"] = 63,
 					["kb"] = 9,
 					["enteredLevel"] = 80,
-				}, -- [15]
+				}, -- [21]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -3614,7 +4397,7 @@ NITdatabase = {
 					["hk"] = 24,
 					["kb"] = 2,
 					["enteredLevel"] = 80,
-				}, -- [16]
+				}, -- [22]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -3726,7 +4509,7 @@ NITdatabase = {
 					["hk"] = 9,
 					["kb"] = 3,
 					["enteredLevel"] = 71,
-				}, -- [17]
+				}, -- [23]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -3837,7 +4620,7 @@ NITdatabase = {
 					["hk"] = 2,
 					["kb"] = 1,
 					["enteredLevel"] = 71,
-				}, -- [18]
+				}, -- [24]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -3955,7 +4738,7 @@ NITdatabase = {
 					["hk"] = 16,
 					["kb"] = 2,
 					["enteredLevel"] = 71,
-				}, -- [19]
+				}, -- [25]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -4243,7 +5026,7 @@ NITdatabase = {
 					["classEnglish"] = "WARRIOR",
 					["deaths"] = 4,
 					["enteredLevel"] = 80,
-				}, -- [20]
+				}, -- [26]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -4507,7 +5290,7 @@ NITdatabase = {
 					["hk"] = 30,
 					["kb"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [21]
+				}, -- [27]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -4594,7 +5377,7 @@ NITdatabase = {
 					["kb"] = 0,
 					["hk"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [22]
+				}, -- [28]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -4736,7 +5519,7 @@ NITdatabase = {
 					["hk"] = 13,
 					["kb"] = 1,
 					["enteredLevel"] = 80,
-				}, -- [23]
+				}, -- [29]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -4876,7 +5659,7 @@ NITdatabase = {
 					["hk"] = 46,
 					["kb"] = 6,
 					["enteredLevel"] = 80,
-				}, -- [24]
+				}, -- [30]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -5002,7 +5785,7 @@ NITdatabase = {
 					["kb"] = 3,
 					["classEnglish"] = "WARRIOR",
 					["enteredLevel"] = 80,
-				}, -- [25]
+				}, -- [31]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -5098,7 +5881,7 @@ NITdatabase = {
 					["deaths"] = 1,
 					["kb"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [26]
+				}, -- [32]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -5182,7 +5965,7 @@ NITdatabase = {
 					["kb"] = 0,
 					["classEnglish"] = "WARRIOR",
 					["enteredLevel"] = 80,
-				}, -- [27]
+				}, -- [33]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -5280,7 +6063,7 @@ NITdatabase = {
 					["kb"] = 0,
 					["faction"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [28]
+				}, -- [34]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -5417,7 +6200,7 @@ NITdatabase = {
 					["faction"] = 1,
 					["kb"] = 0,
 					["enteredLevel"] = 80,
-				}, -- [29]
+				}, -- [35]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -5540,7 +6323,7 @@ NITdatabase = {
 					["classEnglish"] = "WARRIOR",
 					["deaths"] = 4,
 					["enteredLevel"] = 80,
-				}, -- [30]
+				}, -- [36]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -5656,7 +6439,7 @@ NITdatabase = {
 					["classEnglish"] = "WARRIOR",
 					["deaths"] = 7,
 					["enteredLevel"] = 80,
-				}, -- [31]
+				}, -- [37]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -5927,7 +6710,7 @@ NITdatabase = {
 					["classEnglish"] = "WARRIOR",
 					["deaths"] = 1,
 					["enteredLevel"] = 80,
-				}, -- [32]
+				}, -- [38]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -6054,7 +6837,7 @@ NITdatabase = {
 					["classEnglish"] = "WARRIOR",
 					["deaths"] = 4,
 					["enteredLevel"] = 80,
-				}, -- [33]
+				}, -- [39]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -6197,7 +6980,7 @@ NITdatabase = {
 					["hk"] = 38,
 					["healing"] = 38801,
 					["enteredLevel"] = 80,
-				}, -- [34]
+				}, -- [40]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -6334,7 +7117,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["healing"] = 39688,
 					["enteredLevel"] = 80,
-				}, -- [35]
+				}, -- [41]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -6450,7 +7233,7 @@ NITdatabase = {
 					["hk"] = 13,
 					["healing"] = 8515,
 					["enteredLevel"] = 80,
-				}, -- [36]
+				}, -- [42]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -6565,7 +7348,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 2,
 					["enteredLevel"] = 80,
-				}, -- [37]
+				}, -- [43]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -6686,7 +7469,7 @@ NITdatabase = {
 					["hk"] = 30,
 					["deaths"] = 4,
 					["enteredLevel"] = 80,
-				}, -- [38]
+				}, -- [44]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -6808,7 +7591,7 @@ NITdatabase = {
 					["kb"] = 1,
 					["classEnglish"] = "WARRIOR",
 					["enteredLevel"] = 80,
-				}, -- [39]
+				}, -- [45]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -7072,7 +7855,7 @@ NITdatabase = {
 					["hk"] = 81,
 					["kb"] = 1,
 					["enteredLevel"] = 80,
-				}, -- [40]
+				}, -- [46]
 				{
 					["GUID"] = "Creature-0-4446-429-18927-11460-000163A7BF",
 					["leftMoney"] = 2025818,
@@ -7099,7 +7882,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 8942,
 					["GUIDSource"] = "nameplate1",
 					["enteredLevel"] = 71,
-				}, -- [41]
+				}, -- [47]
 				{
 					["leftMoney"] = 9849033,
 					["group"] = {
@@ -7123,7 +7906,7 @@ NITdatabase = {
 					["enteredMoney"] = 9849033,
 					["mobCount"] = 0,
 					["enteredLevel"] = 78,
-				}, -- [42]
+				}, -- [48]
 				{
 					["GUID"] = "Creature-0-4468-574-25201-24082-0000E125B0",
 					["leftMoney"] = 9849033,
@@ -7150,7 +7933,7 @@ NITdatabase = {
 					["enteredMoney"] = 9766785,
 					["mobCount"] = 20,
 					["enteredLevel"] = 77,
-				}, -- [43]
+				}, -- [49]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -7166,11 +7949,11 @@ NITdatabase = {
 							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
 						},
-						["Memoria-Auberdine"] = {
-							["level"] = 73,
-							["class"] = "Hunter",
-							["classEnglish"] = "HUNTER",
-							["guildName"] = "Injustice For All",
+						["Altarpain-MirageRaceway"] = {
+							["level"] = 70,
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Rerolled",
 						},
 						["Purpplehaze-Auberdine"] = {
 							["level"] = 79,
@@ -7178,10 +7961,11 @@ NITdatabase = {
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "EvØlve",
 						},
-						["Fatsnack-Mandokir"] = {
-							["level"] = 76,
-							["class"] = "Mage",
-							["classEnglish"] = "MAGE",
+						["Moolatz"] = {
+							["level"] = 70,
+							["class"] = "Druid",
+							["classEnglish"] = "DRUID",
+							["guildName"] = "CUBE",
 						},
 						["Maivi-Giantstalker"] = {
 							["level"] = 72,
@@ -7199,17 +7983,16 @@ NITdatabase = {
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
-						["Moolatz"] = {
-							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-							["guildName"] = "CUBE",
+						["Fatsnack-Mandokir"] = {
+							["level"] = 76,
+							["class"] = "Mage",
+							["classEnglish"] = "MAGE",
 						},
-						["Altarpain-MirageRaceway"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Rerolled",
+						["Memoria-Auberdine"] = {
+							["level"] = 73,
+							["class"] = "Hunter",
+							["classEnglish"] = "HUNTER",
+							["guildName"] = "Injustice For All",
 						},
 					},
 					["class"] = "Druid",
@@ -7234,7 +8017,7 @@ NITdatabase = {
 					["kb"] = 0,
 					["classEnglish"] = "DRUID",
 					["enteredLevel"] = 70,
-				}, -- [44]
+				}, -- [50]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -7328,7 +8111,7 @@ NITdatabase = {
 					["deaths"] = 2,
 					["kb"] = 0,
 					["enteredLevel"] = 71,
-				}, -- [45]
+				}, -- [51]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -7416,7 +8199,7 @@ NITdatabase = {
 					["kb"] = 3,
 					["faction"] = 0,
 					["enteredLevel"] = 71,
-				}, -- [46]
+				}, -- [52]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -7506,7 +8289,7 @@ NITdatabase = {
 					["classEnglish"] = "DEATHKNIGHT",
 					["deaths"] = 12,
 					["enteredLevel"] = 74,
-				}, -- [47]
+				}, -- [53]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -7589,7 +8372,7 @@ NITdatabase = {
 					["kb"] = 0,
 					["hk"] = 0,
 					["enteredLevel"] = 71,
-				}, -- [48]
+				}, -- [54]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -7678,7 +8461,7 @@ NITdatabase = {
 					["hk"] = 41,
 					["kb"] = 5,
 					["enteredLevel"] = 71,
-				}, -- [49]
+				}, -- [55]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -7766,7 +8549,7 @@ NITdatabase = {
 					["hk"] = 68,
 					["kb"] = 16,
 					["enteredLevel"] = 71,
-				}, -- [50]
+				}, -- [56]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -7869,7 +8652,7 @@ NITdatabase = {
 					["hk"] = 1,
 					["kb"] = 1,
 					["enteredLevel"] = 71,
-				}, -- [51]
+				}, -- [57]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -7955,7 +8738,7 @@ NITdatabase = {
 					["hk"] = 5,
 					["kb"] = 0,
 					["enteredLevel"] = 71,
-				}, -- [52]
+				}, -- [58]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -8039,7 +8822,7 @@ NITdatabase = {
 					["hk"] = 0,
 					["kb"] = 0,
 					["enteredLevel"] = 71,
-				}, -- [53]
+				}, -- [59]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -8125,7 +8908,7 @@ NITdatabase = {
 					["hk"] = 22,
 					["kb"] = 1,
 					["enteredLevel"] = 71,
-				}, -- [54]
+				}, -- [60]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -8205,7 +8988,7 @@ NITdatabase = {
 					["kb"] = 0,
 					["classEnglish"] = "HUNTER",
 					["enteredLevel"] = 71,
-				}, -- [55]
+				}, -- [61]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -8300,7 +9083,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 2,
 					["enteredLevel"] = 70,
-				}, -- [56]
+				}, -- [62]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -8402,7 +9185,7 @@ NITdatabase = {
 					["kb"] = 5,
 					["healing"] = 30132,
 					["enteredLevel"] = 69,
-				}, -- [57]
+				}, -- [63]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -8486,7 +9269,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 1,
 					["enteredLevel"] = 69,
-				}, -- [58]
+				}, -- [64]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -8578,7 +9361,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 15,
 					["enteredLevel"] = 74,
-				}, -- [59]
+				}, -- [65]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -8666,7 +9449,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 0,
 					["enteredLevel"] = 73,
-				}, -- [60]
+				}, -- [66]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -8754,7 +9537,7 @@ NITdatabase = {
 					["classEnglish"] = "WARRIOR",
 					["deaths"] = 3,
 					["enteredLevel"] = 77,
-				}, -- [61]
+				}, -- [67]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -8851,7 +9634,7 @@ NITdatabase = {
 					["classEnglish"] = "WARRIOR",
 					["deaths"] = 14,
 					["enteredLevel"] = 77,
-				}, -- [62]
+				}, -- [68]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -8940,7 +9723,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["healing"] = 26703,
 					["enteredLevel"] = 77,
-				}, -- [63]
+				}, -- [69]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -9044,7 +9827,7 @@ NITdatabase = {
 					["kb"] = 7,
 					["classEnglish"] = "WARRIOR",
 					["enteredLevel"] = 77,
-				}, -- [64]
+				}, -- [70]
 				{
 					["GUID"] = "Creature-0-4459-553-5456-17993-00025D3AD0",
 					["leftMoney"] = 15760287,
@@ -9073,7 +9856,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4459-553-5456-18405-0000DD3AD1",
 					["mobCount"] = 41,
 					["mergeSource"] = "mouseover",
-				}, -- [65]
+				}, -- [71]
 				{
 					["GUID"] = "Creature-0-4448-553-4070-17976-00005D2F17",
 					["leftMoney"] = 15306486,
@@ -9100,7 +9883,7 @@ NITdatabase = {
 					["enteredMoney"] = 15152545,
 					["mobCount"] = 46,
 					["enteredLevel"] = 76,
-				}, -- [66]
+				}, -- [72]
 				{
 					["GUID"] = "Creature-0-4460-553-22287-19608-0005DD2838",
 					["leftMoney"] = 15152545,
@@ -9127,7 +9910,7 @@ NITdatabase = {
 					["enteredMoney"] = 14773307,
 					["mobCount"] = 137,
 					["enteredLevel"] = 76,
-				}, -- [67]
+				}, -- [73]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -9214,7 +9997,7 @@ NITdatabase = {
 					["kb"] = 1,
 					["faction"] = 1,
 					["enteredLevel"] = 69,
-				}, -- [68]
+				}, -- [74]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -9301,7 +10084,7 @@ NITdatabase = {
 					["kb"] = 14,
 					["classEnglish"] = "DRUID",
 					["enteredLevel"] = 69,
-				}, -- [69]
+				}, -- [75]
 				{
 					["GUID"] = "Creature-0-4457-553-6016-18405-00015BDAA1",
 					["leftMoney"] = 14811975,
@@ -9328,7 +10111,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 0,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 76,
-				}, -- [70]
+				}, -- [76]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -9415,7 +10198,7 @@ NITdatabase = {
 					["hk"] = 74,
 					["kb"] = 14,
 					["enteredLevel"] = 73,
-				}, -- [71]
+				}, -- [77]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -9453,17 +10236,16 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["class"] = "Death Knight",
 						},
-						["Briskett-Gehennas"] = {
-							["class"] = "Warrior",
-							["level"] = 70,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Puta madre",
+						["Pumparr-Gehennas"] = {
+							["level"] = 79,
+							["classEnglish"] = "SHAMAN",
+							["class"] = "Shaman",
 						},
-						["Dagas-Jin'do"] = {
-							["class"] = "Rogue",
+						["Varricsmash"] = {
+							["class"] = "Warrior",
 							["level"] = 73,
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "Comando Cíclico",
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Verendum",
 						},
 						["Karapak-Sulfuron"] = {
 							["level"] = 75,
@@ -9480,11 +10262,11 @@ NITdatabase = {
 							["classEnglish"] = "ROGUE",
 							["class"] = "Rogue",
 						},
-						["Varricsmash"] = {
-							["class"] = "Warrior",
+						["Dagas-Jin'do"] = {
+							["class"] = "Rogue",
 							["level"] = 73,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Verendum",
+							["classEnglish"] = "ROGUE",
+							["guildName"] = "Comando Cíclico",
 						},
 						["Limon-Auberdine"] = {
 							["class"] = "Warrior",
@@ -9492,10 +10274,11 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "one eternity later",
 						},
-						["Pumparr-Gehennas"] = {
-							["level"] = 79,
-							["classEnglish"] = "SHAMAN",
-							["class"] = "Shaman",
+						["Briskett-Gehennas"] = {
+							["class"] = "Warrior",
+							["level"] = 70,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Puta madre",
 						},
 					},
 					["class"] = "Death Knight",
@@ -9521,7 +10304,7 @@ NITdatabase = {
 					["hk"] = 16,
 					["kb"] = 3,
 					["enteredLevel"] = 73,
-				}, -- [72]
+				}, -- [78]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -9634,7 +10417,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 3,
 					["enteredLevel"] = 69,
-				}, -- [73]
+				}, -- [79]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -9744,7 +10527,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 0,
 					["enteredLevel"] = 69,
-				}, -- [74]
+				}, -- [80]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -9862,7 +10645,7 @@ NITdatabase = {
 					["kb"] = 0,
 					["healing"] = 2194,
 					["enteredLevel"] = 69,
-				}, -- [75]
+				}, -- [81]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -9979,7 +10762,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 3,
 					["enteredLevel"] = 69,
-				}, -- [76]
+				}, -- [82]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -10095,7 +10878,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 4,
 					["enteredLevel"] = 69,
-				}, -- [77]
+				}, -- [83]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -10205,7 +10988,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 1,
 					["enteredLevel"] = 69,
-				}, -- [78]
+				}, -- [84]
 				{
 					["GUID"] = "Creature-0-5563-556-12461-18318-0002D41A5F",
 					["leftMoney"] = 4221106,
@@ -10263,7 +11046,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-5563-556-12461-4075-0002541A5F",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [79]
+				}, -- [85]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -10343,7 +11126,7 @@ NITdatabase = {
 					["kb"] = 0,
 					["classEnglish"] = "DRUID",
 					["enteredLevel"] = 69,
-				}, -- [80]
+				}, -- [86]
 				{
 					["GUID"] = "Creature-0-4448-542-27836-17377-000053FF09",
 					["leftMoney"] = 4168921,
@@ -10400,7 +11183,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4448-542-27836-17397-000253FF09",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [81]
+				}, -- [87]
 				{
 					["GUID"] = "Creature-0-5571-543-29703-17307-000053FA08",
 					["leftMoney"] = 4116721,
@@ -10455,7 +11238,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 22860,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 69,
-				}, -- [82]
+				}, -- [88]
 				{
 					["GUID"] = "Creature-0-4469-553-19327-19608-0008D3EAD0",
 					["leftMoney"] = 14290183,
@@ -10482,7 +11265,7 @@ NITdatabase = {
 					["enteredMoney"] = 13909321,
 					["mobCount"] = 137,
 					["enteredLevel"] = 76,
-				}, -- [83]
+				}, -- [89]
 				{
 					["leftMoney"] = 13909321,
 					["group"] = {
@@ -10506,7 +11289,7 @@ NITdatabase = {
 					["enteredMoney"] = 13909321,
 					["mobCount"] = 0,
 					["enteredLevel"] = 76,
-				}, -- [84]
+				}, -- [90]
 				{
 					["GUID"] = "Creature-0-4469-553-17794-17977-000053E241",
 					["leftMoney"] = 13909321,
@@ -10535,7 +11318,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4469-553-17794-17976-000053E241",
 					["mobCount"] = 142,
 					["enteredLevel"] = 76,
-				}, -- [85]
+				}, -- [91]
 				{
 					["GUID"] = "Creature-0-4479-553-26969-17977-000053DBD6",
 					["leftMoney"] = 13209054,
@@ -10564,7 +11347,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4479-553-26969-17993-000253DBD6",
 					["mobCount"] = 148,
 					["enteredLevel"] = 76,
-				}, -- [86]
+				}, -- [92]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -10677,7 +11460,7 @@ NITdatabase = {
 					["hk"] = 16,
 					["kb"] = 2,
 					["enteredLevel"] = 73,
-				}, -- [87]
+				}, -- [93]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -10793,7 +11576,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 7,
 					["enteredLevel"] = 68,
-				}, -- [88]
+				}, -- [94]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -10905,7 +11688,7 @@ NITdatabase = {
 					["kb"] = 3,
 					["healing"] = 7151,
 					["enteredLevel"] = 68,
-				}, -- [89]
+				}, -- [95]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -11016,7 +11799,7 @@ NITdatabase = {
 					["kb"] = 0,
 					["classEnglish"] = "DRUID",
 					["enteredLevel"] = 68,
-				}, -- [90]
+				}, -- [96]
 				{
 					["GUID"] = "Creature-0-4458-557-31010-14881-0002D3B577",
 					["leftMoney"] = 4504561,
@@ -11076,7 +11859,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4458-557-31010-19307-000053B9C7",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [91]
+				}, -- [97]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -11193,7 +11976,7 @@ NITdatabase = {
 							["icon"] = "Interface\\WorldStateFrame\\ColumnIcon-FlagCapture2.blp0",
 						}, -- [1]
 					},
-				}, -- [92]
+				}, -- [98]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -11214,17 +11997,16 @@ NITdatabase = {
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
-						["Víiic-Mandokir"] = {
-							["level"] = 64,
-							["class"] = "Shaman",
-							["classEnglish"] = "SHAMAN",
-							["guildName"] = "Asesinos a Sueldo",
+						["Prowo-Mograine"] = {
+							["level"] = 67,
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "The Wild Hunt",
 						},
-						["Onlyponçage-Sulfuron"] = {
+						["Slutknight-Jin'do"] = {
 							["level"] = 67,
 							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "NO PEX NO GAIN",
 						},
 						["Imsoopretty-Mograine"] = {
 							["level"] = 67,
@@ -11237,11 +12019,11 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["guildName"] = "droelf",
 						},
-						["Prowo-Mograine"] = {
-							["level"] = 67,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "The Wild Hunt",
+						["Víiic-Mandokir"] = {
+							["level"] = 64,
+							["class"] = "Shaman",
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "Asesinos a Sueldo",
 						},
 						["Rennyss-Jin'do"] = {
 							["level"] = 67,
@@ -11266,10 +12048,11 @@ NITdatabase = {
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "TRAUMA",
 						},
-						["Slutknight-Jin'do"] = {
+						["Onlyponçage-Sulfuron"] = {
 							["level"] = 67,
 							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "NO PEX NO GAIN",
 						},
 						["Whitéknight-Mograine"] = {
 							["level"] = 69,
@@ -11305,7 +12088,7 @@ NITdatabase = {
 					["deaths"] = 0,
 					["kb"] = 9,
 					["enteredLevel"] = 68,
-				}, -- [93]
+				}, -- [99]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -11425,7 +12208,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["deaths"] = 0,
 					["enteredLevel"] = 68,
-				}, -- [94]
+				}, -- [100]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -11533,7 +12316,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 3,
 					["enteredLevel"] = 68,
-				}, -- [95]
+				}, -- [101]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -11643,7 +12426,7 @@ NITdatabase = {
 					["kb"] = 3,
 					["classEnglish"] = "DRUID",
 					["enteredLevel"] = 68,
-				}, -- [96]
+				}, -- [102]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -11784,7 +12567,7 @@ NITdatabase = {
 					["classEnglish"] = "DEATHKNIGHT",
 					["deaths"] = 8,
 					["enteredLevel"] = 73,
-				}, -- [97]
+				}, -- [103]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -11907,7 +12690,7 @@ NITdatabase = {
 							["icon"] = "Interface\\WorldStateFrame\\ColumnIcon-FlagCapture2.blp0",
 						}, -- [1]
 					},
-				}, -- [98]
+				}, -- [104]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -12025,7 +12808,7 @@ NITdatabase = {
 							["icon"] = "Interface\\WorldStateFrame\\ColumnIcon-FlagCapture2.blp0",
 						}, -- [1]
 					},
-				}, -- [99]
+				}, -- [105]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -12366,7 +13149,7 @@ NITdatabase = {
 					["kb"] = 4,
 					["healing"] = 57183,
 					["enteredLevel"] = 67,
-				}, -- [100]
+				}, -- [106]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -12705,7 +13488,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 7,
 					["enteredLevel"] = 67,
-				}, -- [101]
+				}, -- [107]
 				{
 					["GUID"] = "Creature-0-4458-553-21134-18422-00005154E1",
 					["leftMoney"] = 13263861,
@@ -12732,7 +13515,7 @@ NITdatabase = {
 					["enteredMoney"] = 13113540,
 					["mobCount"] = 49,
 					["enteredLevel"] = 76,
-				}, -- [102]
+				}, -- [108]
 				{
 					["GUID"] = "Creature-0-4448-553-9416-19608-0008514EC1",
 					["leftMoney"] = 13113540,
@@ -12759,7 +13542,7 @@ NITdatabase = {
 					["enteredMoney"] = 12722111,
 					["mobCount"] = 149,
 					["enteredLevel"] = 75,
-				}, -- [103]
+				}, -- [109]
 				{
 					["GUID"] = "Creature-0-4447-553-15116-19608-0004501836",
 					["leftMoney"] = 12432070,
@@ -12786,7 +13569,7 @@ NITdatabase = {
 					["enteredMoney"] = 12075888,
 					["mobCount"] = 151,
 					["enteredLevel"] = 75,
-				}, -- [104]
+				}, -- [110]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -13079,7 +13862,7 @@ NITdatabase = {
 					["hk"] = 4,
 					["kb"] = 0,
 					["enteredLevel"] = 67,
-				}, -- [105]
+				}, -- [111]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -13377,7 +14160,7 @@ NITdatabase = {
 					["hk"] = 1,
 					["kb"] = 0,
 					["enteredLevel"] = 67,
-				}, -- [106]
+				}, -- [112]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -13676,7 +14459,7 @@ NITdatabase = {
 					["kb"] = 0,
 					["classEnglish"] = "DRUID",
 					["enteredLevel"] = 67,
-				}, -- [107]
+				}, -- [113]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -13975,7 +14758,7 @@ NITdatabase = {
 					["kb"] = 0,
 					["classEnglish"] = "DRUID",
 					["enteredLevel"] = 67,
-				}, -- [108]
+				}, -- [114]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -14270,7 +15053,7 @@ NITdatabase = {
 					["hk"] = 0,
 					["kb"] = 0,
 					["enteredLevel"] = 67,
-				}, -- [109]
+				}, -- [115]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -14569,7 +15352,7 @@ NITdatabase = {
 					["hk"] = 0,
 					["kb"] = 0,
 					["enteredLevel"] = 66,
-				}, -- [110]
+				}, -- [116]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -14859,7 +15642,7 @@ NITdatabase = {
 					["hk"] = 0,
 					["kb"] = 0,
 					["enteredLevel"] = 66,
-				}, -- [111]
+				}, -- [117]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -15155,7 +15938,7 @@ NITdatabase = {
 					["kb"] = 1,
 					["classEnglish"] = "DRUID",
 					["enteredLevel"] = 66,
-				}, -- [112]
+				}, -- [118]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -15449,7 +16232,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 0,
 					["enteredLevel"] = 66,
-				}, -- [113]
+				}, -- [119]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -15743,7 +16526,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 1,
 					["enteredLevel"] = 66,
-				}, -- [114]
+				}, -- [120]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -16039,7 +16822,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 1,
 					["enteredLevel"] = 66,
-				}, -- [115]
+				}, -- [121]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -16332,7 +17115,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 1,
 					["enteredLevel"] = 66,
-				}, -- [116]
+				}, -- [122]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -16635,7 +17418,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 2,
 					["enteredLevel"] = 66,
-				}, -- [117]
+				}, -- [123]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -16897,7 +17680,7 @@ NITdatabase = {
 					["kb"] = 4,
 					["healing"] = 9863,
 					["enteredLevel"] = 66,
-				}, -- [118]
+				}, -- [124]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -17185,7 +17968,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 0,
 					["enteredLevel"] = 65,
-				}, -- [119]
+				}, -- [125]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -17432,7 +18215,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 1,
 					["enteredLevel"] = 65,
-				}, -- [120]
+				}, -- [126]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -17700,7 +18483,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 3,
 					["enteredLevel"] = 65,
-				}, -- [121]
+				}, -- [127]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -17985,7 +18768,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 3,
 					["enteredLevel"] = 65,
-				}, -- [122]
+				}, -- [128]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -18286,7 +19069,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 1,
 					["enteredLevel"] = 65,
-				}, -- [123]
+				}, -- [129]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -18576,7 +19359,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 1,
 					["enteredLevel"] = 65,
-				}, -- [124]
+				}, -- [130]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -18865,7 +19648,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 1,
 					["enteredLevel"] = 65,
-				}, -- [125]
+				}, -- [131]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -19160,7 +19943,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 1,
 					["enteredLevel"] = 65,
-				}, -- [126]
+				}, -- [132]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -19453,7 +20236,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 0,
 					["enteredLevel"] = 65,
-				}, -- [127]
+				}, -- [133]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -19792,7 +20575,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 4,
 					["enteredLevel"] = 64,
-				}, -- [128]
+				}, -- [134]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -20096,7 +20879,7 @@ NITdatabase = {
 							["icon"] = "Interface\\WorldStateFrame\\ColumnIcon-GraveyardDefend0",
 						}, -- [1]
 					},
-				}, -- [129]
+				}, -- [135]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -20402,7 +21185,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 2,
 					["enteredLevel"] = 64,
-				}, -- [130]
+				}, -- [136]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -20700,7 +21483,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 1,
 					["enteredLevel"] = 64,
-				}, -- [131]
+				}, -- [137]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -21028,7 +21811,7 @@ NITdatabase = {
 							["icon"] = "Interface\\WorldStateFrame\\ColumnIcon-GraveyardDefend0",
 						}, -- [1]
 					},
-				}, -- [132]
+				}, -- [138]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -21313,7 +22096,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 2,
 					["enteredLevel"] = 64,
-				}, -- [133]
+				}, -- [139]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -21601,7 +22384,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 0,
 					["enteredLevel"] = 64,
-				}, -- [134]
+				}, -- [140]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -21906,7 +22689,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 1,
 					["enteredLevel"] = 64,
-				}, -- [135]
+				}, -- [141]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -22197,7 +22980,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 1,
 					["enteredLevel"] = 63,
-				}, -- [136]
+				}, -- [142]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -22494,7 +23277,7 @@ NITdatabase = {
 					["kb"] = 2,
 					["healing"] = 3558,
 					["enteredLevel"] = 63,
-				}, -- [137]
+				}, -- [143]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -22788,7 +23571,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 0,
 					["enteredLevel"] = 63,
-				}, -- [138]
+				}, -- [144]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -23073,7 +23856,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 0,
 					["enteredLevel"] = 63,
-				}, -- [139]
+				}, -- [145]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -23365,7 +24148,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 0,
 					["enteredLevel"] = 63,
-				}, -- [140]
+				}, -- [146]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -23491,11 +24274,11 @@ NITdatabase = {
 							["class"] = "Rogue",
 							["level"] = 70,
 						},
-						["Menicocco-Mograine"] = {
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["name"] = "Menicocco-Mograine",
-							["level"] = 70,
+						["Chatana-Everlook"] = {
+							["class"] = "Mage",
+							["classEnglish"] = "MAGE",
+							["name"] = "Chatana-Everlook",
+							["level"] = 65,
 						},
 						["Elantari-Auberdine"] = {
 							["name"] = "Elantari-Auberdine",
@@ -23529,12 +24312,12 @@ NITdatabase = {
 							["name"] = "Nelaihunt-Gehennas",
 							["level"] = 67,
 						},
-						["Turbotrusl-Mograine"] = {
-							["name"] = "Turbotrusl-Mograine",
-							["guildName"] = "Gang Starr",
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
-							["level"] = 65,
+						["Ramantion-Venoxis"] = {
+							["name"] = "Ramantion-Venoxis",
+							["guildName"] = "Plata o plomo",
+							["classEnglish"] = "DRUID",
+							["class"] = "Druid",
+							["level"] = 67,
 						},
 						["Pumpinggirl-Lakeshire"] = {
 							["name"] = "Pumpinggirl-Lakeshire",
@@ -23564,11 +24347,11 @@ NITdatabase = {
 							["class"] = "Mage",
 							["level"] = 71,
 						},
-						["Chatana-Everlook"] = {
-							["class"] = "Mage",
-							["classEnglish"] = "MAGE",
-							["name"] = "Chatana-Everlook",
-							["level"] = 65,
+						["Menicocco-Mograine"] = {
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Menicocco-Mograine",
+							["level"] = 70,
 						},
 						["Unikkatil"] = {
 							["class"] = "Death Knight",
@@ -23608,12 +24391,12 @@ NITdatabase = {
 							["name"] = "Sevarian-Ashbringer",
 							["level"] = 69,
 						},
-						["Ramantion-Venoxis"] = {
-							["name"] = "Ramantion-Venoxis",
-							["guildName"] = "Plata o plomo",
-							["classEnglish"] = "DRUID",
-							["class"] = "Druid",
-							["level"] = 67,
+						["Turbotrusl-Mograine"] = {
+							["name"] = "Turbotrusl-Mograine",
+							["guildName"] = "Gang Starr",
+							["classEnglish"] = "DEATHKNIGHT",
+							["class"] = "Death Knight",
+							["level"] = 65,
 						},
 						["Lesldysandy-Venoxis"] = {
 							["class"] = "Death Knight",
@@ -23678,7 +24461,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 3,
 					["enteredLevel"] = 63,
-				}, -- [141]
+				}, -- [147]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -23969,7 +24752,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 2,
 					["enteredLevel"] = 63,
-				}, -- [142]
+				}, -- [148]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -24269,7 +25052,7 @@ NITdatabase = {
 					["kb"] = 0,
 					["classEnglish"] = "DRUID",
 					["enteredLevel"] = 63,
-				}, -- [143]
+				}, -- [149]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -24577,7 +25360,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["healing"] = 1593,
 					["enteredLevel"] = 62,
-				}, -- [144]
+				}, -- [150]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -24880,7 +25663,7 @@ NITdatabase = {
 					["hk"] = 5,
 					["kb"] = 0,
 					["enteredLevel"] = 62,
-				}, -- [145]
+				}, -- [151]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -25161,7 +25944,7 @@ NITdatabase = {
 							["icon"] = "Interface\\WorldStateFrame\\ColumnIcon-TowerDefend0",
 						}, -- [1]
 					},
-				}, -- [146]
+				}, -- [152]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -25412,7 +26195,7 @@ NITdatabase = {
 					["classEnglish"] = "DEATHKNIGHT",
 					["deaths"] = 0,
 					["enteredLevel"] = 73,
-				}, -- [147]
+				}, -- [153]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -25702,7 +26485,7 @@ NITdatabase = {
 					["classEnglish"] = "DEATHKNIGHT",
 					["deaths"] = 4,
 					["enteredLevel"] = 73,
-				}, -- [148]
+				}, -- [154]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -26004,7 +26787,7 @@ NITdatabase = {
 					["classEnglish"] = "DEATHKNIGHT",
 					["deaths"] = 1,
 					["enteredLevel"] = 73,
-				}, -- [149]
+				}, -- [155]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -26322,7 +27105,7 @@ NITdatabase = {
 					["classEnglish"] = "DEATHKNIGHT",
 					["deaths"] = 5,
 					["enteredLevel"] = 73,
-				}, -- [150]
+				}, -- [156]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -26626,7 +27409,7 @@ NITdatabase = {
 					["classEnglish"] = "DEATHKNIGHT",
 					["deaths"] = 4,
 					["enteredLevel"] = 73,
-				}, -- [151]
+				}, -- [157]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -26930,7 +27713,7 @@ NITdatabase = {
 					["classEnglish"] = "DEATHKNIGHT",
 					["deaths"] = 2,
 					["enteredLevel"] = 73,
-				}, -- [152]
+				}, -- [158]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -27247,7 +28030,7 @@ NITdatabase = {
 					["hk"] = 4,
 					["healing"] = 47822,
 					["enteredLevel"] = 73,
-				}, -- [153]
+				}, -- [159]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -27546,7 +28329,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 4,
 					["enteredLevel"] = 73,
-				}, -- [154]
+				}, -- [160]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -27844,7 +28627,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 3,
 					["enteredLevel"] = 73,
-				}, -- [155]
+				}, -- [161]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -28146,7 +28929,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 2,
 					["enteredLevel"] = 73,
-				}, -- [156]
+				}, -- [162]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -28451,7 +29234,7 @@ NITdatabase = {
 					["deaths"] = 3,
 					["kb"] = 2,
 					["enteredLevel"] = 72,
-				}, -- [157]
+				}, -- [163]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -28706,7 +29489,7 @@ NITdatabase = {
 					["hk"] = 4,
 					["kb"] = 2,
 					["enteredLevel"] = 72,
-				}, -- [158]
+				}, -- [164]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -28972,7 +29755,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 3,
 					["enteredLevel"] = 72,
-				}, -- [159]
+				}, -- [165]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -29270,7 +30053,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 0,
 					["enteredLevel"] = 72,
-				}, -- [160]
+				}, -- [166]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -29572,7 +30355,7 @@ NITdatabase = {
 					["kb"] = 1,
 					["classEnglish"] = "DEATHKNIGHT",
 					["enteredLevel"] = 72,
-				}, -- [161]
+				}, -- [167]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -29872,7 +30655,7 @@ NITdatabase = {
 					["hk"] = 3,
 					["kb"] = 3,
 					["enteredLevel"] = 72,
-				}, -- [162]
+				}, -- [168]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -30171,7 +30954,7 @@ NITdatabase = {
 					["hk"] = 8,
 					["kb"] = 2,
 					["enteredLevel"] = 72,
-				}, -- [163]
+				}, -- [169]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -30431,7 +31214,7 @@ NITdatabase = {
 					["hk"] = 12,
 					["kb"] = 4,
 					["enteredLevel"] = 72,
-				}, -- [164]
+				}, -- [170]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -30692,7 +31475,7 @@ NITdatabase = {
 					["deaths"] = 2,
 					["kb"] = 3,
 					["enteredLevel"] = 72,
-				}, -- [165]
+				}, -- [171]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -30842,11 +31625,12 @@ NITdatabase = {
 							["name"] = "Sulyvahm-Mograine",
 							["class"] = "Shaman",
 						},
-						["Skuldir-Auberdine"] = {
-							["classEnglish"] = "DEATHKNIGHT",
-							["level"] = 76,
-							["name"] = "Skuldir-Auberdine",
-							["class"] = "Death Knight",
+						["Hpdealer"] = {
+							["name"] = "Hpdealer",
+							["guildName"] = "Nowhere to Run",
+							["classEnglish"] = "PRIEST",
+							["level"] = 73,
+							["class"] = "Priest",
 						},
 						["Davika-Razorfen"] = {
 							["name"] = "Davika-Razorfen",
@@ -30855,12 +31639,12 @@ NITdatabase = {
 							["level"] = 77,
 							["class"] = "Druid",
 						},
-						["Battlearm"] = {
-							["name"] = "Battlearm",
-							["guildName"] = "Ratnici podzemlja",
-							["classEnglish"] = "DEATHKNIGHT",
-							["level"] = 72,
-							["class"] = "Death Knight",
+						["Fameux-Sulfuron"] = {
+							["name"] = "Fameux-Sulfuron",
+							["guildName"] = "MICHEL LE GRAND FRERE",
+							["classEnglish"] = "DRUID",
+							["level"] = 71,
+							["class"] = "Druid",
 						},
 						["Fanafknive-Gehennas"] = {
 							["name"] = "Fanafknive-Gehennas",
@@ -30937,19 +31721,18 @@ NITdatabase = {
 							["level"] = 79,
 							["class"] = "Shaman",
 						},
-						["Fameux-Sulfuron"] = {
-							["name"] = "Fameux-Sulfuron",
-							["guildName"] = "MICHEL LE GRAND FRERE",
-							["classEnglish"] = "DRUID",
-							["level"] = 71,
-							["class"] = "Druid",
+						["Battlearm"] = {
+							["name"] = "Battlearm",
+							["guildName"] = "Ratnici podzemlja",
+							["classEnglish"] = "DEATHKNIGHT",
+							["level"] = 72,
+							["class"] = "Death Knight",
 						},
-						["Hpdealer"] = {
-							["name"] = "Hpdealer",
-							["guildName"] = "Nowhere to Run",
-							["classEnglish"] = "PRIEST",
-							["level"] = 73,
-							["class"] = "Priest",
+						["Skuldir-Auberdine"] = {
+							["classEnglish"] = "DEATHKNIGHT",
+							["level"] = 76,
+							["name"] = "Skuldir-Auberdine",
+							["class"] = "Death Knight",
 						},
 						["Insectwing-Mograine"] = {
 							["name"] = "Insectwing-Mograine",
@@ -30989,7 +31772,7 @@ NITdatabase = {
 					["classEnglish"] = "DEATHKNIGHT",
 					["deaths"] = 0,
 					["enteredLevel"] = 72,
-				}, -- [166]
+				}, -- [172]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -31281,7 +32064,7 @@ NITdatabase = {
 					["deaths"] = 5,
 					["kb"] = 1,
 					["enteredLevel"] = 62,
-				}, -- [167]
+				}, -- [173]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -31578,7 +32361,7 @@ NITdatabase = {
 					["kb"] = 1,
 					["classEnglish"] = "DEATHKNIGHT",
 					["enteredLevel"] = 72,
-				}, -- [168]
+				}, -- [174]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -31878,7 +32661,7 @@ NITdatabase = {
 					["hk"] = 2,
 					["kb"] = 1,
 					["enteredLevel"] = 71,
-				}, -- [169]
+				}, -- [175]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -32179,7 +32962,7 @@ NITdatabase = {
 					["hk"] = 8,
 					["kb"] = 2,
 					["enteredLevel"] = 71,
-				}, -- [170]
+				}, -- [176]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -32487,7 +33270,7 @@ NITdatabase = {
 					["hk"] = 31,
 					["kb"] = 5,
 					["enteredLevel"] = 71,
-				}, -- [171]
+				}, -- [177]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -32791,7 +33574,7 @@ NITdatabase = {
 					["hk"] = 6,
 					["kb"] = 2,
 					["enteredLevel"] = 71,
-				}, -- [172]
+				}, -- [178]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -33097,7 +33880,7 @@ NITdatabase = {
 					["kb"] = 0,
 					["classEnglish"] = "DEATHKNIGHT",
 					["enteredLevel"] = 71,
-				}, -- [173]
+				}, -- [179]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -33390,7 +34173,7 @@ NITdatabase = {
 					["deaths"] = 0,
 					["kb"] = 0,
 					["enteredLevel"] = 71,
-				}, -- [174]
+				}, -- [180]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -33694,7 +34477,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 1,
 					["enteredLevel"] = 71,
-				}, -- [175]
+				}, -- [181]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -34007,7 +34790,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 3,
 					["enteredLevel"] = 71,
-				}, -- [176]
+				}, -- [182]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -34302,7 +35085,7 @@ NITdatabase = {
 					["classEnglish"] = "DEATHKNIGHT",
 					["deaths"] = 0,
 					["enteredLevel"] = 71,
-				}, -- [177]
+				}, -- [183]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -34599,7 +35382,7 @@ NITdatabase = {
 					["classEnglish"] = "DEATHKNIGHT",
 					["deaths"] = 1,
 					["enteredLevel"] = 71,
-				}, -- [178]
+				}, -- [184]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -34872,7 +35655,7 @@ NITdatabase = {
 					["classEnglish"] = "DEATHKNIGHT",
 					["deaths"] = 1,
 					["enteredLevel"] = 71,
-				}, -- [179]
+				}, -- [185]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -35168,7 +35951,7 @@ NITdatabase = {
 					["classEnglish"] = "DEATHKNIGHT",
 					["deaths"] = 0,
 					["enteredLevel"] = 71,
-				}, -- [180]
+				}, -- [186]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -35468,7 +36251,7 @@ NITdatabase = {
 					["classEnglish"] = "DEATHKNIGHT",
 					["deaths"] = 0,
 					["enteredLevel"] = 71,
-				}, -- [181]
+				}, -- [187]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -35770,7 +36553,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 18,
 					["enteredLevel"] = 70,
-				}, -- [182]
+				}, -- [188]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -36060,7 +36843,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 3,
 					["enteredLevel"] = 70,
-				}, -- [183]
+				}, -- [189]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -36350,7 +37133,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 5,
 					["enteredLevel"] = 70,
-				}, -- [184]
+				}, -- [190]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -36635,7 +37418,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 0,
 					["enteredLevel"] = 70,
-				}, -- [185]
+				}, -- [191]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -36925,7 +37708,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 7,
 					["enteredLevel"] = 70,
-				}, -- [186]
+				}, -- [192]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -37226,7 +38009,7 @@ NITdatabase = {
 					["deaths"] = 2,
 					["honor"] = 2981,
 					["enteredLevel"] = 70,
-				}, -- [187]
+				}, -- [193]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -37511,7 +38294,7 @@ NITdatabase = {
 					["classEnglish"] = "DEATHKNIGHT",
 					["deaths"] = 4,
 					["enteredLevel"] = 70,
-				}, -- [188]
+				}, -- [194]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -37805,7 +38588,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["healing"] = 42008,
 					["enteredLevel"] = 70,
-				}, -- [189]
+				}, -- [195]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -38113,7 +38896,7 @@ NITdatabase = {
 					["kb"] = 23,
 					["classEnglish"] = "DEATHKNIGHT",
 					["enteredLevel"] = 70,
-				}, -- [190]
+				}, -- [196]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -38409,7 +39192,7 @@ NITdatabase = {
 					["kb"] = 14,
 					["classEnglish"] = "DEATHKNIGHT",
 					["enteredLevel"] = 70,
-				}, -- [191]
+				}, -- [197]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -38716,7 +39499,7 @@ NITdatabase = {
 					["hk"] = 201,
 					["kb"] = 20,
 					["enteredLevel"] = 70,
-				}, -- [192]
+				}, -- [198]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -39016,7 +39799,7 @@ NITdatabase = {
 					["kb"] = 7,
 					["classEnglish"] = "DEATHKNIGHT",
 					["enteredLevel"] = 70,
-				}, -- [193]
+				}, -- [199]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -39312,7 +40095,7 @@ NITdatabase = {
 					["hk"] = 16,
 					["kb"] = 1,
 					["enteredLevel"] = 70,
-				}, -- [194]
+				}, -- [200]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -39601,7 +40384,7 @@ NITdatabase = {
 					["hk"] = 57,
 					["kb"] = 13,
 					["enteredLevel"] = 70,
-				}, -- [195]
+				}, -- [201]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -39922,7 +40705,7 @@ NITdatabase = {
 					["kb"] = 12,
 					["classEnglish"] = "DEATHKNIGHT",
 					["enteredLevel"] = 70,
-				}, -- [196]
+				}, -- [202]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -40214,7 +40997,7 @@ NITdatabase = {
 					["kb"] = 3,
 					["hk"] = 22,
 					["enteredLevel"] = 70,
-				}, -- [197]
+				}, -- [203]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -40496,7 +41279,7 @@ NITdatabase = {
 					["hk"] = 4,
 					["kb"] = 1,
 					["enteredLevel"] = 70,
-				}, -- [198]
+				}, -- [204]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -40784,7 +41567,7 @@ NITdatabase = {
 					["deaths"] = 3,
 					["kb"] = 1,
 					["enteredLevel"] = 70,
-				}, -- [199]
+				}, -- [205]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -41099,7 +41882,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 11,
 					["enteredLevel"] = 70,
-				}, -- [200]
+				}, -- [206]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -41393,7 +42176,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 17,
 					["enteredLevel"] = 70,
-				}, -- [201]
+				}, -- [207]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -41699,7 +42482,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["kb"] = 5,
 					["enteredLevel"] = 70,
-				}, -- [202]
+				}, -- [208]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -41984,7 +42767,7 @@ NITdatabase = {
 					["kb"] = 4,
 					["healing"] = 27357,
 					["enteredLevel"] = 70,
-				}, -- [203]
+				}, -- [209]
 				{
 					["GUID"] = "Creature-0-4445-553-9280-19511-0000492150",
 					["leftMoney"] = 12026442,
@@ -42013,7 +42796,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4445-553-9280-17976-0000492150",
 					["GUIDSource"] = "target",
 					["enteredLevel"] = 75,
-				}, -- [204]
+				}, -- [210]
 				{
 					["GUID"] = "Creature-0-4447-553-4086-17993-0000C839DB",
 					["leftMoney"] = 16910933,
@@ -42041,7 +42824,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 5501,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 70,
-				}, -- [205]
+				}, -- [211]
 				{
 					["GUID"] = "Creature-0-4468-553-23087-19608-0005C82080",
 					["leftMoney"] = 11010026,
@@ -42069,7 +42852,7 @@ NITdatabase = {
 					["enteredMoney"] = 10644600,
 					["mobCount"] = 150,
 					["enteredLevel"] = 75,
-				}, -- [206]
+				}, -- [212]
 				{
 					["GUID"] = "Creature-0-4458-553-25816-19608-00064818FC",
 					["leftMoney"] = 10644600,
@@ -42099,7 +42882,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4458-553-25816-18419-0000C818FD",
 					["mobCount"] = 150,
 					["enteredLevel"] = 75,
-				}, -- [207]
+				}, -- [213]
 				{
 					["leftMoney"] = 1791152,
 					["group"] = {
@@ -42123,7 +42906,7 @@ NITdatabase = {
 					["enteredMoney"] = 1791152,
 					["mobCount"] = 0,
 					["enteredLevel"] = 71,
-				}, -- [208]
+				}, -- [214]
 				{
 					["GUID"] = "Creature-0-4458-349-15674-2914-000047E7A4",
 					["leftMoney"] = 0,
@@ -42150,7 +42933,7 @@ NITdatabase = {
 					["enteredMoney"] = 1787616,
 					["mobCount"] = 0,
 					["enteredLevel"] = 71,
-				}, -- [209]
+				}, -- [215]
 				{
 					["GUID"] = "Creature-0-4468-553-11007-19608-000947C434",
 					["leftMoney"] = 8513810,
@@ -42178,7 +42961,7 @@ NITdatabase = {
 					["enteredMoney"] = 8127703,
 					["mobCount"] = 148,
 					["enteredLevel"] = 74,
-				}, -- [210]
+				}, -- [216]
 				{
 					["GUID"] = "Creature-0-4447-553-20193-18421-0001C6D108",
 					["leftMoney"] = 8106558,
@@ -42208,7 +42991,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4447-553-20193-17976-000046D108",
 					["GUIDSource"] = "target",
 					["mergeSource"] = "mouseover",
-				}, -- [211]
+				}, -- [217]
 				{
 					["GUID"] = "Creature-0-4460-553-5124-19511-0002C6989B",
 					["leftMoney"] = 2219892,
@@ -42236,7 +43019,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 295563,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 74,
-				}, -- [212]
+				}, -- [218]
 				{
 					["GUID"] = "Creature-0-4459-553-28533-19557-0000C68BD6",
 					["leftMoney"] = 1884575,
@@ -42266,7 +43049,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4459-553-28533-17993-0001468BD6",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [213]
+				}, -- [219]
 				{
 					["GUID"] = "Creature-0-4445-553-22634-17980-0000453407",
 					["leftMoney"] = 25215270,
@@ -42294,7 +43077,7 @@ NITdatabase = {
 					["enteredMoney"] = 24832061,
 					["mobCount"] = 129,
 					["enteredLevel"] = 74,
-				}, -- [214]
+				}, -- [220]
 				{
 					["GUID"] = "Creature-0-5571-553-29680-19608-0009452812",
 					["leftMoney"] = 24832061,
@@ -42322,7 +43105,7 @@ NITdatabase = {
 					["enteredMoney"] = 24453827,
 					["mobCount"] = 147,
 					["enteredLevel"] = 74,
-				}, -- [215]
+				}, -- [221]
 				{
 					["GUID"] = "Creature-0-4479-553-6953-17993-0005C43259",
 					["leftMoney"] = 0,
@@ -42350,7 +43133,7 @@ NITdatabase = {
 					["enteredMoney"] = 23510901,
 					["mobCount"] = 115,
 					["enteredLevel"] = 74,
-				}, -- [216]
+				}, -- [222]
 				{
 					["GUID"] = "Creature-0-4479-553-4574-17977-00004427CF",
 					["leftMoney"] = 23510901,
@@ -42380,7 +43163,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4479-553-4574-17976-00004427CF",
 					["mobCount"] = 148,
 					["mergeSource"] = "mouseover",
-				}, -- [217]
+				}, -- [223]
 				{
 					["GUID"] = "Creature-0-4468-553-8631-17977-0000441FA9",
 					["leftMoney"] = 22655354,
@@ -42408,7 +43191,7 @@ NITdatabase = {
 					["enteredMoney"] = 22281093,
 					["mobCount"] = 149,
 					["enteredLevel"] = 73,
-				}, -- [218]
+				}, -- [224]
 				{
 					["GUID"] = "Creature-0-4468-553-31711-19608-000343EC77",
 					["leftMoney"] = 26553817,
@@ -42436,7 +43219,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 370489,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 73,
-				}, -- [219]
+				}, -- [225]
 				{
 					["GUID"] = "Creature-0-4480-553-31513-17977-000043E36E",
 					["leftMoney"] = 26183328,
@@ -42464,7 +43247,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 396668,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 73,
-				}, -- [220]
+				}, -- [226]
 				{
 					["GUID"] = "Creature-0-4447-553-22390-19608-000242BA2A",
 					["leftMoney"] = 26428664,
@@ -42492,7 +43275,7 @@ NITdatabase = {
 					["enteredMoney"] = 26028474,
 					["mobCount"] = 137,
 					["enteredLevel"] = 73,
-				}, -- [221]
+				}, -- [227]
 				{
 					["GUID"] = "Creature-0-5563-553-7631-19557-000242B6E3",
 					["leftMoney"] = 25864316,
@@ -42520,7 +43303,7 @@ NITdatabase = {
 					["enteredMoney"] = 25657069,
 					["mobCount"] = 64,
 					["enteredLevel"] = 73,
-				}, -- [222]
+				}, -- [228]
 				{
 					["GUID"] = "Creature-0-4479-553-16566-18405-000042A9B4",
 					["leftMoney"] = 0,
@@ -42550,7 +43333,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4479-553-16566-17993-000042A9B4",
 					["mobCount"] = 8,
 					["enteredLevel"] = 73,
-				}, -- [223]
+				}, -- [229]
 				{
 					["GUID"] = "Creature-0-4447-553-14238-19513-0000C296B4",
 					["leftMoney"] = 24918377,
@@ -42578,7 +43361,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 397552,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 72,
-				}, -- [224]
+				}, -- [230]
 				{
 					["GUID"] = "Creature-0-4448-553-26301-18421-0001428F3B",
 					["leftMoney"] = 24232054,
@@ -42606,7 +43389,7 @@ NITdatabase = {
 					["enteredMoney"] = 23991462,
 					["mobCount"] = 72,
 					["enteredLevel"] = 72,
-				}, -- [225]
+				}, -- [231]
 				{
 					["GUID"] = "Creature-0-5563-553-31362-19505-0000C1A044",
 					["leftMoney"] = 23744877,
@@ -42634,7 +43417,7 @@ NITdatabase = {
 					["enteredMoney"] = 23487469,
 					["mobCount"] = 84,
 					["enteredLevel"] = 72,
-				}, -- [226]
+				}, -- [232]
 				{
 					["GUID"] = "Creature-0-4460-553-17357-19508-0000419859",
 					["leftMoney"] = 23274561,
@@ -42679,7 +43462,7 @@ NITdatabase = {
 					["enteredMoney"] = 23008754,
 					["mobCount"] = 84,
 					["enteredLevel"] = 72,
-				}, -- [227]
+				}, -- [233]
 				{
 					["GUID"] = "Creature-0-4447-553-663-19608-0001413EA2",
 					["leftMoney"] = 22485924,
@@ -42707,7 +43490,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 353498,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 72,
-				}, -- [228]
+				}, -- [234]
 				{
 					["GUID"] = "Creature-0-5571-553-8093-19608-0006C13542",
 					["leftMoney"] = 22132426,
@@ -42737,7 +43520,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-5571-553-8093-17976-0000413542",
 					["mobCount"] = 137,
 					["enteredLevel"] = 72,
-				}, -- [229]
+				}, -- [235]
 				{
 					["leftMoney"] = 19507135,
 					["group"] = {
@@ -42761,7 +43544,7 @@ NITdatabase = {
 					["enteredMoney"] = 19507135,
 					["mobCount"] = 0,
 					["enteredLevel"] = 71,
-				}, -- [230]
+				}, -- [236]
 				{
 					["GUID"] = "Creature-0-5571-574-5437-24080-0001BF1B93",
 					["leftMoney"] = 19507135,
@@ -42788,7 +43571,7 @@ NITdatabase = {
 					["enteredMoney"] = 19487955,
 					["mobCount"] = 6,
 					["enteredLevel"] = 71,
-				}, -- [231]
+				}, -- [237]
 				{
 					["GUID"] = "Creature-0-4460-574-25520-23954-00003F16DE",
 					["leftMoney"] = 19487955,
@@ -42844,7 +43627,7 @@ NITdatabase = {
 					["enteredMoney"] = 19441733,
 					["mobCount"] = 108,
 					["enteredLevel"] = 71,
-				}, -- [232]
+				}, -- [238]
 				{
 					["GUID"] = "Creature-0-4448-553-25873-19608-0005BF0D0C",
 					["leftMoney"] = 19211552,
@@ -42872,7 +43655,7 @@ NITdatabase = {
 					["enteredMoney"] = 18875460,
 					["mobCount"] = 132,
 					["enteredLevel"] = 71,
-				}, -- [233]
+				}, -- [239]
 				{
 					["GUID"] = "Creature-0-4480-553-23232-18422-00023EFDB2",
 					["leftMoney"] = 20737425,
@@ -42900,7 +43683,7 @@ NITdatabase = {
 					["enteredMoney"] = 20582488,
 					["mobCount"] = 60,
 					["enteredLevel"] = 70,
-				}, -- [234]
+				}, -- [240]
 				{
 					["GUID"] = "Creature-0-5571-553-16343-19512-0001BB1967",
 					["leftMoney"] = 20439481,
@@ -42930,7 +43713,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-5571-553-16343-17993-00033B1967",
 					["mobCount"] = 87,
 					["enteredLevel"] = 70,
-				}, -- [235]
+				}, -- [241]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -43229,7 +44012,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["deaths"] = 1,
 					["enteredLevel"] = 61,
-				}, -- [236]
+				}, -- [242]
 				{
 					["GUID"] = "Creature-0-4458-553-12513-19557-0003394A36",
 					["leftMoney"] = 20067503,
@@ -43257,7 +44040,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 192814,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 70,
-				}, -- [237]
+				}, -- [243]
 				{
 					["GUID"] = "Creature-0-5571-553-9574-19505-0002382BB6",
 					["leftMoney"] = 19754722,
@@ -43287,7 +44070,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-5571-553-9574-18404-0000B82BB6",
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 70,
-				}, -- [238]
+				}, -- [244]
 				{
 					["GUID"] = "Creature-0-4480-553-9523-18421-0000B82213",
 					["leftMoney"] = 19477900,
@@ -43315,7 +44098,7 @@ NITdatabase = {
 					["enteredMoney"] = 19237335,
 					["mobCount"] = 74,
 					["enteredLevel"] = 70,
-				}, -- [239]
+				}, -- [245]
 				{
 					["GUID"] = "Creature-0-4445-574-1503-24137-000036D8E1",
 					["leftMoney"] = 1643814,
@@ -43373,7 +44156,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4445-574-1503-23961-000036D8CD",
 					["mobCount"] = 103,
 					["enteredLevel"] = 70,
-				}, -- [240]
+				}, -- [246]
 				{
 					["GUID"] = "Creature-0-4479-553-1245-17976-000036C91C",
 					["leftMoney"] = 19286986,
@@ -43403,7 +44186,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4479-553-1245-18404-000136C91C",
 					["mobCount"] = 46,
 					["enteredLevel"] = 70,
-				}, -- [241]
+				}, -- [247]
 				{
 					["leftMoney"] = 18932346,
 					["group"] = {
@@ -43427,7 +44210,7 @@ NITdatabase = {
 					["enteredMoney"] = 18932346,
 					["mobCount"] = 0,
 					["enteredLevel"] = 70,
-				}, -- [242]
+				}, -- [248]
 				{
 					["GUID"] = "Creature-0-4445-553-28340-17993-0004B6BCB5",
 					["leftMoney"] = 0,
@@ -43455,7 +44238,7 @@ NITdatabase = {
 					["enteredMoney"] = 18887850,
 					["mobCount"] = 16,
 					["enteredLevel"] = 70,
-				}, -- [243]
+				}, -- [249]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -43751,7 +44534,7 @@ NITdatabase = {
 					["hk"] = 19,
 					["healing"] = 5682,
 					["enteredLevel"] = 61,
-				}, -- [244]
+				}, -- [250]
 				{
 					["GUID"] = "Creature-0-4460-543-29681-17517-0000B57780",
 					["leftMoney"] = 2217677,
@@ -43807,7 +44590,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 25634,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 70,
-				}, -- [245]
+				}, -- [251]
 				{
 					["GUID"] = "Creature-0-4447-543-21202-17259-000035704B",
 					["leftMoney"] = 2192142,
@@ -43834,7 +44617,7 @@ NITdatabase = {
 					["enteredMoney"] = 2192142,
 					["mobCount"] = 0,
 					["enteredLevel"] = 70,
-				}, -- [246]
+				}, -- [252]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -44127,7 +44910,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["healing"] = 0,
 					["enteredLevel"] = 61,
-				}, -- [247]
+				}, -- [253]
 				{
 					["leftMoney"] = 2040884,
 					["group"] = {
@@ -44184,7 +44967,7 @@ NITdatabase = {
 					["enteredMoney"] = 2040884,
 					["mobCount"] = 0,
 					["enteredLevel"] = 60,
-				}, -- [248]
+				}, -- [254]
 				{
 					["GUID"] = "Creature-0-4448-543-8991-17517-00002F5B4C",
 					["leftMoney"] = 2040884,
@@ -44246,7 +45029,7 @@ NITdatabase = {
 					["enteredMoney"] = 2009495,
 					["mobCount"] = 104,
 					["enteredLevel"] = 60,
-				}, -- [249]
+				}, -- [255]
 				{
 					["GUID"] = "Creature-0-4459-552-29856-21962-00002EEE0A",
 					["leftMoney"] = 8104124,
@@ -44312,7 +45095,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4459-552-29856-20873-00012EEE0A",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [250]
+				}, -- [256]
 				{
 					["GUID"] = "Creature-0-4448-547-17349-21128-0000AC97D7",
 					["leftMoney"] = 2516901,
@@ -44368,7 +45151,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 59201,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 69,
-				}, -- [251]
+				}, -- [257]
 				{
 					["GUID"] = "Creature-0-4479-556-24830-18473-00002C8CC8",
 					["leftMoney"] = 2449471,
@@ -44426,7 +45209,7 @@ NITdatabase = {
 					["enteredMoney"] = 2403015,
 					["mobCount"] = 128,
 					["enteredLevel"] = 69,
-				}, -- [252]
+				}, -- [258]
 				{
 					["GUID"] = "Creature-0-4480-554-19810-19220-00002A1596",
 					["leftMoney"] = 2685515,
@@ -44487,7 +45270,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-4480-554-19810-19166-00022A10CF",
 					["mobCount"] = 72,
 					["enteredLevel"] = 69,
-				}, -- [253]
+				}, -- [259]
 				{
 					["GUID"] = "Creature-0-4445-585-15922-15479-000029EB96",
 					["leftMoney"] = 16107982,
@@ -44550,7 +45333,7 @@ NITdatabase = {
 					["rawMoneyCount"] = 36636,
 					["GUIDSource"] = "mouseover",
 					["enteredLevel"] = 70,
-				}, -- [254]
+				}, -- [260]
 				{
 					["GUID"] = "Creature-0-5571-585-11276-24688-000229E528",
 					["leftMoney"] = 15951446,
@@ -44606,7 +45389,7 @@ NITdatabase = {
 					["mergeGUID"] = "Creature-0-5571-585-11276-24683-000129E528",
 					["GUIDSource"] = "mouseover",
 					["mergeSource"] = "mouseover",
-				}, -- [255]
+				}, -- [261]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -44729,7 +45512,7 @@ NITdatabase = {
 					["instanceID"] = 566,
 					["instanceName"] = "Eye of the Storm",
 					["enteredLevel"] = 70,
-				}, -- [256]
+				}, -- [262]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -44834,7 +45617,7 @@ NITdatabase = {
 							["icon"] = "Interface\\WorldStateFrame\\ColumnIcon-FlagReturn0",
 						}, -- [1]
 					},
-				}, -- [257]
+				}, -- [263]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -44953,7 +45736,7 @@ NITdatabase = {
 					["kb"] = 0,
 					["faction"] = 1,
 					["enteredLevel"] = 70,
-				}, -- [258]
+				}, -- [264]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -45038,7 +45821,7 @@ NITdatabase = {
 					["kb"] = 3,
 					["faction"] = 0,
 					["enteredLevel"] = 70,
-				}, -- [259]
+				}, -- [265]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -45146,7 +45929,7 @@ NITdatabase = {
 					["kb"] = 2,
 					["mobCount"] = 0,
 					["deaths"] = 2,
-				}, -- [260]
+				}, -- [266]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -45243,7 +46026,7 @@ NITdatabase = {
 					["playerName"] = "Vermin",
 					["mobCount"] = 0,
 					["type"] = "bg",
-				}, -- [261]
+				}, -- [267]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -45352,7 +46135,7 @@ NITdatabase = {
 					["kb"] = 1,
 					["mobCount"] = 0,
 					["classEnglish"] = "WARRIOR",
-				}, -- [262]
+				}, -- [268]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -45466,7 +46249,7 @@ NITdatabase = {
 					["hk"] = 64,
 					["mobCount"] = 0,
 					["deaths"] = 4,
-				}, -- [263]
+				}, -- [269]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -45581,7 +46364,7 @@ NITdatabase = {
 					["hk"] = 32,
 					["mobCount"] = 0,
 					["deaths"] = 3,
-				}, -- [264]
+				}, -- [270]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -45699,7 +46482,7 @@ NITdatabase = {
 					["hk"] = 64,
 					["mobCount"] = 0,
 					["deaths"] = 6,
-				}, -- [265]
+				}, -- [271]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -45808,7 +46591,7 @@ NITdatabase = {
 					["hk"] = 19,
 					["mobCount"] = 0,
 					["deaths"] = 4,
-				}, -- [266]
+				}, -- [272]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -45920,7 +46703,7 @@ NITdatabase = {
 					["kb"] = 2,
 					["mobCount"] = 0,
 					["classEnglish"] = "WARRIOR",
-				}, -- [267]
+				}, -- [273]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -46033,7 +46816,7 @@ NITdatabase = {
 					["kb"] = 1,
 					["mobCount"] = 0,
 					["classEnglish"] = "WARRIOR",
-				}, -- [268]
+				}, -- [274]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -46147,7 +46930,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["mobCount"] = 0,
 					["deaths"] = 3,
-				}, -- [269]
+				}, -- [275]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -46260,7 +47043,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["mobCount"] = 0,
 					["deaths"] = 2,
-				}, -- [270]
+				}, -- [276]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -46376,7 +47159,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["mobCount"] = 0,
 					["deaths"] = 4,
-				}, -- [271]
+				}, -- [277]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -46490,7 +47273,7 @@ NITdatabase = {
 					["faction"] = 1,
 					["mobCount"] = 0,
 					["deaths"] = 2,
-				}, -- [272]
+				}, -- [278]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -46594,7 +47377,7 @@ NITdatabase = {
 					["playerName"] = "Vermin",
 					["mobCount"] = 0,
 					["type"] = "bg",
-				}, -- [273]
+				}, -- [279]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -46716,7 +47499,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["mobCount"] = 0,
 					["deaths"] = 6,
-				}, -- [274]
+				}, -- [280]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -46826,7 +47609,7 @@ NITdatabase = {
 					["kb"] = 0,
 					["mobCount"] = 0,
 					["classEnglish"] = "WARRIOR",
-				}, -- [275]
+				}, -- [281]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -46944,7 +47727,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["mobCount"] = 0,
 					["deaths"] = 5,
-				}, -- [276]
+				}, -- [282]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -47058,7 +47841,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["mobCount"] = 0,
 					["deaths"] = 1,
-				}, -- [277]
+				}, -- [283]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -47176,7 +47959,7 @@ NITdatabase = {
 					["faction"] = 1,
 					["mobCount"] = 0,
 					["deaths"] = 9,
-				}, -- [278]
+				}, -- [284]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -47291,7 +48074,7 @@ NITdatabase = {
 					["deaths"] = 0,
 					["mobCount"] = 0,
 					["honor"] = 729,
-				}, -- [279]
+				}, -- [285]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -47403,7 +48186,7 @@ NITdatabase = {
 					["kb"] = 2,
 					["mobCount"] = 0,
 					["classEnglish"] = "WARRIOR",
-				}, -- [280]
+				}, -- [286]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -47531,7 +48314,7 @@ NITdatabase = {
 					["hk"] = 23,
 					["mobCount"] = 0,
 					["deaths"] = 5,
-				}, -- [281]
+				}, -- [287]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -47646,7 +48429,7 @@ NITdatabase = {
 					["hk"] = 25,
 					["mobCount"] = 0,
 					["deaths"] = 8,
-				}, -- [282]
+				}, -- [288]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -47760,7 +48543,7 @@ NITdatabase = {
 					["hk"] = 21,
 					["mobCount"] = 0,
 					["deaths"] = 7,
-				}, -- [283]
+				}, -- [289]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -47874,7 +48657,7 @@ NITdatabase = {
 					["hk"] = 0,
 					["mobCount"] = 0,
 					["deaths"] = 1,
-				}, -- [284]
+				}, -- [290]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -47992,7 +48775,7 @@ NITdatabase = {
 					["hk"] = 0,
 					["mobCount"] = 0,
 					["deaths"] = 1,
-				}, -- [285]
+				}, -- [291]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -48032,17 +48815,11 @@ NITdatabase = {
 							["classEnglish"] = "ROGUE",
 							["guildName"] = "ALPHA TEAM",
 						},
-						["Mefistø"] = {
+						["Vilkazs-Thekal"] = {
 							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "DOOM inc",
-						},
-						["Dimqa-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Ukrainian Raiders",
+							["class"] = "Priest",
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "SQUAD",
 						},
 						["Bloodou-Gehennas"] = {
 							["level"] = 70,
@@ -48050,11 +48827,17 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "Hatréd",
 						},
-						["Vilkazs-Thekal"] = {
+						["Dimqa-Gehennas"] = {
 							["level"] = 70,
-							["class"] = "Priest",
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "SQUAD",
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Ukrainian Raiders",
+						},
+						["Mefistø"] = {
+							["level"] = 70,
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "DOOM inc",
 						},
 						["Vermin"] = {
 							["level"] = 70,
@@ -48107,7 +48890,7 @@ NITdatabase = {
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
 					["winningFaction"] = 1,
-				}, -- [286]
+				}, -- [292]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -48224,7 +49007,7 @@ NITdatabase = {
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
 					["winningFaction"] = 0,
-				}, -- [287]
+				}, -- [293]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -48336,7 +49119,7 @@ NITdatabase = {
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
 					["winningFaction"] = 0,
-				}, -- [288]
+				}, -- [294]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -48454,7 +49237,7 @@ NITdatabase = {
 					["hk"] = 67,
 					["mobCount"] = 0,
 					["winningFaction"] = 1,
-				}, -- [289]
+				}, -- [295]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -48568,7 +49351,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["mobCount"] = 0,
 					["deaths"] = 1,
-				}, -- [290]
+				}, -- [296]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -48680,7 +49463,7 @@ NITdatabase = {
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
 					["winningFaction"] = 0,
-				}, -- [291]
+				}, -- [297]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -48788,7 +49571,7 @@ NITdatabase = {
 					["faction"] = 0,
 					["mobCount"] = 0,
 					["winningFaction"] = 0,
-				}, -- [292]
+				}, -- [298]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -48905,7 +49688,7 @@ NITdatabase = {
 					["kb"] = 2,
 					["mobCount"] = 0,
 					["deaths"] = 9,
-				}, -- [293]
+				}, -- [299]
 				{
 					["isPvp"] = true,
 					["leftMoney"] = 0,
@@ -49017,1236 +49800,6 @@ NITdatabase = {
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
 					["winningFaction"] = 0,
-				}, -- [294]
-				{
-					["isPvp"] = true,
-					["leftMoney"] = 0,
-					["group"] = {
-						["Mansfield-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Nordfront",
-						},
-						["Stealthshot-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "The Boyz",
-						},
-						["Torosedudu"] = {
-							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Rerolling Stones",
-						},
-						["Vermin"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Ratnici podzemlja",
-						},
-						["Alicantes-Sulfuron"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-						},
-						["Dödsätaren-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Perite",
-						},
-						["Deadboné"] = {
-							["level"] = 70,
-							["class"] = "Warlock",
-							["classEnglish"] = "WARLOCK",
-						},
-						["Rakh-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Hydra",
-						},
-						["Darkine"] = {
-							["level"] = 70,
-							["class"] = "Warlock",
-							["classEnglish"] = "WARLOCK",
-							["guildName"] = "New Beginning",
-						},
-						["Mafroprofatô-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Muted",
-						},
-						["Alos-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Casual Crusaders",
-						},
-						["Holyassist"] = {
-							["level"] = 70,
-							["class"] = "Priest",
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "No Exit",
-						},
-						["Brabius-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Vashjlappen",
-						},
-						["Nechra-MirageRaceway"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Blackhearts",
-						},
-						["Safex-Mograine"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-						},
-					},
-					["class"] = "Warrior",
-					["leftTime"] = 1663335988,
-					["groupAverage"] = 70,
-					["damage"] = 50128,
-					["mobCountFromKill"] = 0,
-					["type"] = "bg",
-					["deaths"] = 3,
-					["honor"] = 458,
-					["playerName"] = "Vermin",
-					["healing"] = 12719,
-					["rep"] = {
-					},
-					["enteredTime"] = 1663335221,
-					["instanceID"] = 566,
-					["kb"] = 2,
-					["faction"] = 1,
-					["hk"] = 24,
-					["instanceName"] = "Eye of the Storm",
-					["classEnglish"] = "WARRIOR",
-					["mobCount"] = 0,
-					["winningFaction"] = 0,
-				}, -- [295]
-				{
-					["isPvp"] = true,
-					["leftMoney"] = 0,
-					["group"] = {
-						["Vermin"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Ratnici podzemlja",
-						},
-						["Nightgibber-Mograine"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Dyslectics ar teople poo",
-						},
-						["Xariath"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "UNIT",
-						},
-						["Flèx-Sulfuron"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Yuzupoppin-Amnennar"] = {
-							["level"] = 70,
-							["class"] = "Priest",
-							["classEnglish"] = "PRIEST",
-						},
-						["Miaknight-Venoxis"] = {
-							["class"] = "Death Knight",
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Backlash",
-						},
-						["Drukkhex-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Priest",
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "Never Lucky",
-						},
-						["Sevenswings-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "First Time Game",
-						},
-						["Rakh-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Hydra",
-						},
-						["Alos-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Casual Crusaders",
-						},
-						["Deatsreza"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Plague Masters",
-						},
-						["Lokhran-Sulfuron"] = {
-							["level"] = 70,
-							["class"] = "Hunter",
-							["classEnglish"] = "HUNTER",
-						},
-						["Mnsfourdegrz-Sulfuron"] = {
-							["level"] = 70,
-							["class"] = "Mage",
-							["classEnglish"] = "MAGE",
-							["guildName"] = "Blacklïst",
-						},
-						["Grovestrider-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Beverlo Hills",
-						},
-						["Börda-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Shaman",
-							["classEnglish"] = "SHAMAN",
-							["guildName"] = "Rival",
-						},
-						["Sparxy-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "One World One Dream",
-						},
-					},
-					["class"] = "Warrior",
-					["leftTime"] = 1663335175,
-					["groupAverage"] = 70,
-					["damage"] = 48843,
-					["mobCountFromKill"] = 0,
-					["type"] = "bg",
-					["honor"] = 136,
-					["kb"] = 0,
-					["playerName"] = "Vermin",
-					["classEnglish"] = "WARRIOR",
-					["rep"] = {
-					},
-					["enteredTime"] = 1663334516,
-					["instanceID"] = 566,
-					["healing"] = 1990,
-					["deaths"] = 8,
-					["hk"] = 8,
-					["instanceName"] = "Eye of the Storm",
-					["faction"] = 1,
-					["mobCount"] = 0,
-					["winningFaction"] = 0,
-				}, -- [296]
-				{
-					["isPvp"] = true,
-					["leftMoney"] = 0,
-					["group"] = {
-						["Jackperro-Mandokir"] = {
-							["level"] = 70,
-							["class"] = "Warlock",
-							["classEnglish"] = "WARLOCK",
-						},
-						["Karra-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Hunter",
-							["classEnglish"] = "HUNTER",
-						},
-						["Tiippana-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Jauhojengi",
-						},
-						["Zpandorum-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "It Hurts When I PvP",
-						},
-						["Halfcabb-Auberdine"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-						},
-						["Shipone-Mograine"] = {
-							["level"] = 70,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-						},
-						["Bullcatbear-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Inevitable",
-						},
-						["Coilslaw-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Winsløw-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-						},
-						["Aszumi-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "W I P E",
-						},
-						["Deathaspire-Giantstalker"] = {
-							["level"] = 70,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "The Bloated Murloc",
-						},
-						["Geranor-Venoxis"] = {
-							["level"] = 62,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Sapidk-Sulfuron"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Drûân-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Bananenbiegerei BootyBay",
-						},
-						["Pubu-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Toinen Kilta",
-						},
-						["Vermin"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Ratnici podzemlja",
-						},
-						["Ammagaddk-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Mirkkuh-MirageRaceway"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Törkyturvat",
-						},
-						["Novatronix-Razorfen"] = {
-							["level"] = 65,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Toughnutts-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Bambinos",
-						},
-						["Incarnata-Amnennar"] = {
-							["level"] = 70,
-							["class"] = "Mage",
-							["classEnglish"] = "MAGE",
-							["guildName"] = "RIP",
-						},
-						["Suriv"] = {
-							["level"] = 70,
-							["class"] = "Priest",
-							["classEnglish"] = "PRIEST",
-						},
-						["Ûrbanthedk-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Madras-Giantstalker"] = {
-							["level"] = 64,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "big fan",
-						},
-						["Kaskim-Mograine"] = {
-							["level"] = 70,
-							["class"] = "Mage",
-							["classEnglish"] = "MAGE",
-							["guildName"] = "kuumailmapallo",
-						},
-						["Laduin-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "Returning",
-						},
-						["Leog-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Shaman",
-							["classEnglish"] = "SHAMAN",
-						},
-						["Gewaltsmeyer-Venoxis"] = {
-							["level"] = 68,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Steelinho-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Aka Tonbo",
-						},
-						["Pïnga-Mandokir"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Immune",
-						},
-						["Elfbulance-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "A FEW OLD MEN",
-						},
-						["Iksmaster"] = {
-							["level"] = 69,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-						},
-						["Zyish"] = {
-							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-						},
-						["Frostepala-Mograine"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-						},
-						["Slumberman"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Redbox-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Arsir-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-						},
-						["Askalisk-Mograine"] = {
-							["level"] = 61,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "LAZY",
-						},
-						["Bouft-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Warlock",
-							["classEnglish"] = "WARLOCK",
-						},
-						["Mukbangasmr-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Toinen Kilta",
-						},
-						["Ramzolda-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-						},
-						["Augural-PyrewoodVillage"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-						},
-						["Gdomuz-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-					},
-					["class"] = "Warrior",
-					["leftTime"] = 1663258893,
-					["groupAverage"] = 69.2439024390244,
-					["damage"] = 0,
-					["mobCountFromKill"] = 0,
-					["type"] = "bg",
-					["honor"] = 0,
-					["playerName"] = "Vermin",
-					["healing"] = 0,
-					["rep"] = {
-					},
-					["enteredTime"] = 1663258733,
-					["instanceID"] = 30,
-					["classEnglish"] = "WARRIOR",
-					["hk"] = 0,
-					["faction"] = 0,
-					["instanceName"] = "Alterac Valley",
-					["kb"] = 0,
-					["mobCount"] = 0,
-					["deaths"] = 0,
-				}, -- [297]
-				{
-					["isPvp"] = true,
-					["leftMoney"] = 0,
-					["group"] = {
-						["Jackperro-Mandokir"] = {
-							["class"] = "Warlock",
-							["level"] = 70,
-							["classEnglish"] = "WARLOCK",
-							["guildName"] = "Evangelion",
-						},
-						["Karra-Venoxis"] = {
-							["level"] = 70,
-							["classEnglish"] = "HUNTER",
-							["class"] = "Hunter",
-						},
-						["Tiippana-Thekal"] = {
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
-						},
-						["Sgtfartalot"] = {
-							["level"] = 70,
-							["classEnglish"] = "WARRIOR",
-							["class"] = "Warrior",
-						},
-						["Halfcabb-Auberdine"] = {
-							["level"] = 70,
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
-						},
-						["Shipone-Mograine"] = {
-							["level"] = 70,
-							["classEnglish"] = "ROGUE",
-							["class"] = "Rogue",
-						},
-						["Bullcatbear-Gehennas"] = {
-							["level"] = 70,
-							["classEnglish"] = "DRUID",
-							["class"] = "Druid",
-						},
-						["Coilslaw-Gehennas"] = {
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
-						},
-						["Winsløw-Venoxis"] = {
-							["level"] = 70,
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
-						},
-						["Aszumi-Thekal"] = {
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
-						},
-						["Deathaspire-Giantstalker"] = {
-							["level"] = 70,
-							["classEnglish"] = "ROGUE",
-							["class"] = "Rogue",
-						},
-						["Xirevv-Venoxis"] = {
-							["level"] = 64,
-							["classEnglish"] = "HUNTER",
-							["class"] = "Hunter",
-						},
-						["Geranor-Venoxis"] = {
-							["level"] = 62,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
-						},
-						["Sapidk-Sulfuron"] = {
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
-						},
-						["Drûân-Venoxis"] = {
-							["class"] = "Warrior",
-							["level"] = 70,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Bananenbiegerei BootyBay",
-						},
-						["Pubu-Gehennas"] = {
-							["level"] = 70,
-							["classEnglish"] = "WARRIOR",
-							["class"] = "Warrior",
-						},
-						["Vermin"] = {
-							["class"] = "Warrior",
-							["level"] = 70,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Ratnici podzemlja",
-						},
-						["Ammagaddk-Gehennas"] = {
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
-						},
-						["Mirkkuh-MirageRaceway"] = {
-							["level"] = 70,
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
-						},
-						["Novatronix-Razorfen"] = {
-							["level"] = 65,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
-						},
-						["Gdomuz-Venoxis"] = {
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
-						},
-						["Incarnata-Amnennar"] = {
-							["class"] = "Mage",
-							["level"] = 70,
-							["classEnglish"] = "MAGE",
-							["guildName"] = "RIP",
-						},
-						["Redbox-Gehennas"] = {
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
-						},
-						["Bouft-Gehennas"] = {
-							["level"] = 70,
-							["classEnglish"] = "WARLOCK",
-							["class"] = "Warlock",
-						},
-						["Kaskim-Mograine"] = {
-							["level"] = 70,
-							["classEnglish"] = "MAGE",
-							["class"] = "Mage",
-						},
-						["Slumberman"] = {
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
-						},
-						["Leog-Gehennas"] = {
-							["level"] = 70,
-							["classEnglish"] = "SHAMAN",
-							["class"] = "Shaman",
-						},
-						["Laduin-Venoxis"] = {
-							["class"] = "Rogue",
-							["level"] = 70,
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "Returning",
-						},
-						["Steelinho-Thekal"] = {
-							["class"] = "Death Knight",
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Aka Tonbo",
-						},
-						["Pïnga-Mandokir"] = {
-							["class"] = "Paladin",
-							["level"] = 70,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Immune",
-						},
-						["Mukbangasmr-Gehennas"] = {
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
-						},
-						["Zyish"] = {
-							["level"] = 70,
-							["classEnglish"] = "DRUID",
-							["class"] = "Druid",
-						},
-						["Zpandorum-Thekal"] = {
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
-						},
-						["Toughnutts-Gehennas"] = {
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
-						},
-						["Arsir-Venoxis"] = {
-							["level"] = 70,
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
-						},
-						["Salutbro-MirageRaceway"] = {
-							["level"] = 70,
-							["classEnglish"] = "WARRIOR",
-							["class"] = "Warrior",
-						},
-						["Bmk-Gehennas"] = {
-							["level"] = 70,
-							["classEnglish"] = "WARRIOR",
-							["class"] = "Warrior",
-						},
-						["Askalisk-Mograine"] = {
-							["class"] = "Rogue",
-							["level"] = 61,
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "LAZY",
-						},
-						["Iksmaster"] = {
-							["level"] = 69,
-							["classEnglish"] = "ROGUE",
-							["class"] = "Rogue",
-						},
-						["Gewaltsmeyer-Venoxis"] = {
-							["class"] = "Death Knight",
-							["level"] = 68,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Frostwolfclan",
-						},
-						["Ramzolda-Gehennas"] = {
-							["level"] = 70,
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
-						},
-						["Madras-Giantstalker"] = {
-							["level"] = 64,
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
-						},
-						["Ûrbanthedk-Gehennas"] = {
-							["class"] = "Death Knight",
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Horde i Hagen",
-						},
-					},
-					["class"] = "Warrior",
-					["leftTime"] = 1663258709,
-					["groupAverage"] = 69.225,
-					["damage"] = 0,
-					["mobCountFromKill"] = 0,
-					["type"] = "bg",
-					["honor"] = 0,
-					["playerName"] = "Vermin",
-					["healing"] = 0,
-					["rep"] = {
-					},
-					["enteredTime"] = 1663258606,
-					["instanceID"] = 30,
-					["deaths"] = 0,
-					["faction"] = 0,
-					["hk"] = 0,
-					["instanceName"] = "Alterac Valley",
-					["kb"] = 0,
-					["mobCount"] = 0,
-					["classEnglish"] = "WARRIOR",
-				}, -- [298]
-				{
-					["isPvp"] = true,
-					["leftMoney"] = 0,
-					["type"] = "bg",
-					["honor"] = 0,
-					["group"] = {
-						["Hyperan-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Nighthawker-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-						},
-						["Jackperro-Mandokir"] = {
-							["level"] = 70,
-							["class"] = "Warlock",
-							["classEnglish"] = "WARLOCK",
-						},
-						["Karra-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Hunter",
-							["classEnglish"] = "HUNTER",
-						},
-						["Tiippana-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Zpandorum-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Halfcabb-Auberdine"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-						},
-						["Bullcatbear-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-						},
-						["Coilslaw-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Glaivine-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Warlock",
-							["classEnglish"] = "WARLOCK",
-						},
-						["Winsløw-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-						},
-						["Aszumi-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Fitchey-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Deathaspire-Giantstalker"] = {
-							["level"] = 70,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "The Bloated Murloc",
-						},
-						["Hellionx-MirageRaceway"] = {
-							["level"] = 70,
-							["class"] = "Priest",
-							["classEnglish"] = "PRIEST",
-						},
-						["Civilián-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-						},
-						["Rollingbáll-Mograine"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Drûân-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Bananenbiegerei BootyBay",
-						},
-						["Pubu-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-						},
-						["Vermin"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Ratnici podzemlja",
-						},
-						["Ammagaddk-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Mirkkuh-MirageRaceway"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-						},
-						["Novatronix-Razorfen"] = {
-							["level"] = 65,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Toughnutts-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Incarnata-Amnennar"] = {
-							["level"] = 70,
-							["class"] = "Mage",
-							["classEnglish"] = "MAGE",
-							["guildName"] = "RIP",
-						},
-						["Redbox-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Kaskim-Mograine"] = {
-							["level"] = 70,
-							["class"] = "Mage",
-							["classEnglish"] = "MAGE",
-						},
-						["Leog-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Shaman",
-							["classEnglish"] = "SHAMAN",
-						},
-						["Madras-Giantstalker"] = {
-							["level"] = 64,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-						},
-						["Geranor-Venoxis"] = {
-							["level"] = 62,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Mukbangasmr-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Dolere-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Zyish"] = {
-							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-						},
-						["Gewaltsmeyer-Venoxis"] = {
-							["level"] = 68,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Frostwolfclan",
-						},
-						["Ûrbanthedk-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Horde i Hagen",
-						},
-						["Iksmaster"] = {
-							["level"] = 69,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "Rebels",
-						},
-						["Salutbro-MirageRaceway"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-						},
-						["Askalisk-Mograine"] = {
-							["level"] = 61,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-						},
-						["Gdomuz-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Lunitz-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Ramzolda-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-						},
-						["Laduin-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-						},
-						["Sgtfartalot"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Synched",
-						},
-					},
-					["class"] = "Warrior",
-					["rep"] = {
-					},
-					["enteredTime"] = 1663258535,
-					["instanceID"] = 30,
-					["leftTime"] = 1663258564,
-					["groupAverage"] = 69.2051282051282,
-					["classEnglish"] = "WARRIOR",
-					["instanceName"] = "Alterac Valley",
-					["playerName"] = "Vermin",
-					["mobCount"] = 0,
-					["mobCountFromKill"] = 0,
-				}, -- [299]
-				{
-					["isPvp"] = true,
-					["leftMoney"] = 0,
-					["group"] = {
-						["Kratasas-Everlook"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Zulzhatar-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Shaman",
-							["classEnglish"] = "SHAMAN",
-						},
-						["Hotgluex"] = {
-							["level"] = 70,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "Sanguis Et Fletus",
-						},
-						["Guffén-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Azrite-Gehennas"] = {
-							["level"] = 67,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-						},
-						["Spërmminator-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Rød Stue",
-						},
-						["Gutidk-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Kyfarion-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Rød Stue",
-						},
-						["Squazzl-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-						},
-						["Sharorr-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-							["guildName"] = "DOeSnT NeeD You",
-						},
-						["Heltpåmånen-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Obsidius",
-						},
-						["Palladinium-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-						},
-						["Pstt"] = {
-							["level"] = 70,
-							["class"] = "Mage",
-							["classEnglish"] = "MAGE",
-							["guildName"] = "Sanguis Et Fletus",
-						},
-						["Stealthshot-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "The Boyz",
-						},
-						["Pvldruid"] = {
-							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-						},
-						["Horstinator-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-						},
-						["Damballas-NethergardeKeep"] = {
-							["level"] = 68,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Logray-Venoxis"] = {
-							["level"] = 62,
-							["class"] = "Hunter",
-							["classEnglish"] = "HUNTER",
-							["guildName"] = "PianoReeves",
-						},
-						["Sická-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-						},
-						["Exodone-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-						},
-						["Pattaya-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-						},
-						["Ctrlintro-Mandokir"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Asesinos a Sueldo",
-						},
-						["Nihell-Mandokir"] = {
-							["level"] = 70,
-							["class"] = "Warlock",
-							["classEnglish"] = "WARLOCK",
-							["guildName"] = "Rest in Peace",
-						},
-						["Tautobolt-Gehennas"] = {
-							["level"] = 68,
-							["class"] = "Warlock",
-							["classEnglish"] = "WARLOCK",
-						},
-						["Frozhoof"] = {
-							["level"] = 67,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Wakal-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Gozerian-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-						},
-						["Nakoa-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-						},
-						["Adendu-MirageRaceway"] = {
-							["level"] = 70,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-						},
-						["Evilnes-NethergardeKeep"] = {
-							["level"] = 70,
-							["class"] = "Mage",
-							["classEnglish"] = "MAGE",
-						},
-						["Bimbam-Ashbringer"] = {
-							["level"] = 70,
-							["class"] = "Warlock",
-							["classEnglish"] = "WARLOCK",
-						},
-						["Snortcrystal-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Priest",
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "BEEF BAR",
-						},
-						["Dkphode-Sulfuron"] = {
-							["level"] = 61,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Zergses-Everlook"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "critical",
-						},
-						["Mchadi-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-						},
-						["Twofingers-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "League of Assassins",
-						},
-						["Vermin"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Ratnici podzemlja",
-						},
-						["Aoshin-Venoxis"] = {
-							["level"] = 62,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Stellariosa-Razorfen"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-						},
-						["Kokstack-Mograine"] = {
-							["level"] = 69,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-					},
-					["class"] = "Warrior",
-					["leftTime"] = 1663257765,
-					["groupAverage"] = 69.07692307692308,
-					["damage"] = 0,
-					["mobCountFromKill"] = 0,
-					["type"] = "bg",
-					["deaths"] = 0,
-					["honor"] = 0,
-					["playerName"] = "Vermin",
-					["healing"] = 0,
-					["rep"] = {
-						["Frostwolf Clan: +"] = -36,
-					},
-					["enteredTime"] = 1663257756,
-					["instanceID"] = 30,
-					["kb"] = 0,
-					["hk"] = 0,
-					["faction"] = 0,
-					["instanceName"] = "Alterac Valley",
-					["classEnglish"] = "WARRIOR",
-					["mobCount"] = 0,
-					["winningFaction"] = 1,
 				}, -- [300]
 			},
 		},

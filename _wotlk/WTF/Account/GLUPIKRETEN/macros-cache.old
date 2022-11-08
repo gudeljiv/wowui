@@ -25,7 +25,7 @@ END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:33454
-/castsequence [combat] reset=combat item:33447
+/castsequence [combat] reset=combat 
 END
 VER 3 000000000000000B "lvl enchant" "132089"
 /click CraftCreateButton
@@ -44,7 +44,7 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:33447
+/use item:0
 END
 VER 3 0000000000000017 "Prsp" "Inv_misc_questionmark"
 #showtooltip item:2772

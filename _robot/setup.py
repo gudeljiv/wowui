@@ -96,6 +96,9 @@ else:
     abilities_folder = dir_path + "\images\\" + monitor
     slash = "\\"
 
+if not os.path.exists(abilities_folder):
+    os.makedirs(abilities_folder)
+
 skills_loaded = "warrior"
 print("Script loaded and ready.", "Rotation is paused.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"), os.name)
 
@@ -141,7 +144,17 @@ with keyboard.Listener(on_press=on_press) as listener:
                 count = count + 1
 
                 pyautogui.hotkey("enter")
-                pyperclip.copy('/run RotationTextureFrame:Show()')
+                pyperclip.copy('/run RotationTextureFrame1:Show()')
+                if os.name == "posix":
+                    pyautogui.hotkey('command', 'v')
+                else:
+                    pyautogui.hotkey('ctrl', 'v')
+                pyautogui.hotkey("enter")
+
+                time.sleep(time1)
+
+                pyautogui.hotkey("enter")
+                pyperclip.copy('/run RotationTextureFrame2:Show()')
                 if os.name == "posix":
                     pyautogui.hotkey('command', 'v')
                 else:
@@ -153,9 +166,9 @@ with keyboard.Listener(on_press=on_press) as listener:
                     try:
                         for skill in skills[wclass]:
                             number = number + 1
-                            print(number, wclass, skill["name"], abilities_folder + slash + skill["name"]+".png")
+                            print(number, wclass, skill["name"], abilities_folder + slash + skill["name"] + " M.png")
                             pyautogui.hotkey("enter")
-                            pyperclip.copy('/run RotationTextureFrame.texture:SetTexture(' + str(skill["type"]) + '(' + str(skill["id"]) + '))')
+                            pyperclip.copy('/run RotationTextureFrame1.texture:SetTexture(' + str(skill["type"]) + '(' + str(skill["id"]) + '))')
                             if os.name == "posix":
                                 pyautogui.hotkey('command', 'v')
                             else:
@@ -163,17 +176,17 @@ with keyboard.Listener(on_press=on_press) as listener:
                             time.sleep(time1)
                             pyautogui.hotkey("enter")
 
-                            m_image = abilities_folder + slash + str(skill["name"]) + ".png".format(**p_main)
+                            m_image = abilities_folder + slash + str(skill["name"]) + " M.png".format(**p_main)
                             main_image = sct.grab(p_main)
                             mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
                             time.sleep(time2)
 
                         for skill in skills["offgcd"][wclass]:
                             number = number + 1
-                            print(number, wclass, skill["name"], abilities_folder + slash + skill["name"]+".png")
+                            print(number, wclass, skill["name"], abilities_folder + slash + skill["name"] + " O.png")
                             # /run RotationTextureFrame.texture:SetTexture(GetSpellTexture("23881"))
                             pyautogui.hotkey("enter")
-                            pyperclip.copy('/run RotationTextureFrame.texture:SetTexture(' + str(skill["type"]) + '(' + str(skill["id"]) + '))')
+                            pyperclip.copy('/run RotationTextureFrame2.texture:SetTexture(' + str(skill["type"]) + '(' + str(skill["id"]) + '))')
                             if os.name == "posix":
                                 pyautogui.hotkey('command', 'v')
                             else:
@@ -181,9 +194,9 @@ with keyboard.Listener(on_press=on_press) as listener:
                             time.sleep(time1)
                             pyautogui.hotkey("enter")
 
-                            m_image = abilities_folder + slash + str(skill["name"]) + ".png".format(**p_main)
-                            main_image = sct.grab(p_main)
-                            mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
+                            o_image = abilities_folder + slash + str(skill["name"]) + " O.png".format(**p_offgcd)
+                            offgcd_image = sct.grab(p_offgcd)
+                            mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=o_image)
                             time.sleep(time2)
 
                     except:
@@ -191,9 +204,9 @@ with keyboard.Listener(on_press=on_press) as listener:
 
                 for skill in skills["healing"]:
                     number = number + 1
-                    print(number, wclass, skill["name"], abilities_folder + slash + skill["name"]+".png")
+                    print(number, wclass, skill["name"], abilities_folder + slash + skill["name"] + " H.png")
                     pyautogui.hotkey("enter")
-                    pyperclip.copy('/run RotationTextureFrame.texture:SetTexture(' + str(skill["type"]) + '(' + str(skill["id"]) + '))')
+                    pyperclip.copy('/run RotationTextureFrame1.texture:SetTexture(' + str(skill["type"]) + '(' + str(skill["id"]) + '))')
                     if os.name == "posix":
                         pyautogui.hotkey('command', 'v')
                     else:
@@ -201,13 +214,23 @@ with keyboard.Listener(on_press=on_press) as listener:
                     time.sleep(time1)
                     pyautogui.hotkey("enter")
 
-                    m_image = abilities_folder + slash + str(skill["name"]) + ".png".format(**p_main)
+                    m_image = abilities_folder + slash + str(skill["name"]) + " H.png".format(**p_main)
                     main_image = sct.grab(p_main)
                     mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
                     time.sleep(time2)
 
                 pyautogui.hotkey("enter")
-                pyperclip.copy('/run RotationTextureFrame:Hide()')
+                pyperclip.copy('/run RotationTextureFrame1:Hide()')
+                if os.name == "posix":
+                    pyautogui.hotkey('command', 'v')
+                else:
+                    pyautogui.hotkey('ctrl', 'v')
+                pyautogui.hotkey("enter")
+
+                time.sleep(time1)
+
+                pyautogui.hotkey("enter")
+                pyperclip.copy('/run RotationTextureFrame2:Hide()')
                 if os.name == "posix":
                     pyautogui.hotkey('command', 'v')
                 else:

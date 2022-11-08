@@ -20,11 +20,9 @@ ItemRackUser = {
 	},
 	["Hidden"] = {
 	},
-	["EnableEvents"] = "ON",
+	["CurrentSet"] = "DPS",
 	["SetMenuWrap"] = "OFF",
 	["ItemsUsed"] = {
-		["28041"] = 5,
-		["27416"] = 30,
 	},
 	["Events"] = {
 		["Enabled"] = {
@@ -32,10 +30,10 @@ ItemRackUser = {
 		["Set"] = {
 		},
 	},
-	["Alpha"] = 1,
-	["EnableQueues"] = "ON",
 	["Queues"] = {
 	},
+	["EnableQueues"] = "ON",
+	["Alpha"] = 1,
 	["MenuScale"] = 1.2,
-	["CurrentSet"] = "DPS",
+	["EnableEvents"] = "ON",
 }

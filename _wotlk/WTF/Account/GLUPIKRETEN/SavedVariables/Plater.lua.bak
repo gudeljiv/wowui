@@ -1,99 +1,11 @@
 
 PlaterDB = {
 	["captured_spells"] = {
-		[25228] = {
+		[63619] = {
 			["type"] = "BUFF",
-			["source"] = "Unknown",
+			["source"] = "Shadowfiend",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 417,
-		},
-		[31707] = {
-			["source"] = "Water Elemental",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 510,
-		},
-		[35706] = {
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 17252,
-		},
-		[35696] = {
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 17252,
-		},
-		[47481] = {
-			["source"] = "Wurzelteufel",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 26125,
-		},
-		[57567] = {
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 417,
-		},
-		[47482] = {
-			["source"] = "Wurzelteufel",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 26125,
-		},
-		[48011] = {
-			["source"] = "Sruutom",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 417,
-		},
-		[47468] = {
-			["source"] = "Spineflayer",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 26125,
-		},
-		[60956] = {
-			["type"] = "BUFF",
-			["source"] = "Sruutom",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 417,
-		},
-		[19647] = {
-			["source"] = "Sruutom",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 417,
-		},
-		[3600] = {
-			["type"] = "DEBUFF",
-			["source"] = "Earthbind Totem",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 2630,
-		},
-		[64695] = {
-			["type"] = "DEBUFF",
-			["source"] = "Earthbind Totem",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 2630,
-		},
-		[24259] = {
-			["type"] = "DEBUFF",
-			["source"] = "Sruutom",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 417,
-		},
-		[54053] = {
-			["source"] = "Sloonum",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 417,
-		},
-		[57724] = {
-			["type"] = "DEBUFF",
-			["source"] = "Unknown",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 417,
-		},
-		[33395] = {
-			["source"] = "Water Elemental",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 510,
+			["npcID"] = 19668,
 		},
 	},
 	["profiles"] = {
@@ -6456,21 +6368,21 @@ PlaterDB = {
 					"Atal'ai Slave", -- [1]
 					"Sunken Temple", -- [2]
 				},
+				[17819] = {
+					"Durnholde Sentry", -- [1]
+					"The Escape From Durnholde", -- [2]
+				},
 				[135007] = {
 					"Orb Guardian", -- [1]
 					"Temple of Sethraliss", -- [2]
-				},
-				[7276] = {
-					"Zul'Farrak Dead Hero", -- [1]
-					"Zul'Farrak", -- [2]
 				},
 				[17771] = {
 					"Murkblood Oracle", -- [1]
 					"Coilfang: The Underbog", -- [2]
 				},
-				[17819] = {
-					"Durnholde Sentry", -- [1]
-					"The Escape From Durnholde", -- [2]
+				[19865] = {
+					"Mutate Horror", -- [1]
+					"Tempest Keep: The Botanica", -- [2]
 				},
 				[16700] = {
 					"Shattered Hand Legionnaire", -- [1]
@@ -6496,9 +6408,9 @@ PlaterDB = {
 					"Theka the Martyr", -- [1]
 					"Zul'Farrak", -- [2]
 				},
-				[19865] = {
-					"Mutate Horror", -- [1]
-					"Tempest Keep: The Botanica", -- [2]
+				[3640] = {
+					"Evolving Ectoplasm", -- [1]
+					"Wailing Caverns", -- [2]
 				},
 				[20904] = {
 					"Warden Mellichar", -- [1]
@@ -6680,9 +6592,9 @@ PlaterDB = {
 					"Scaled Krolusk Rider", -- [1]
 					"Temple of Sethraliss", -- [2]
 				},
-				[3640] = {
-					"Evolving Ectoplasm", -- [1]
-					"Wailing Caverns", -- [2]
+				[7276] = {
+					"Zul'Farrak Dead Hero", -- [1]
+					"Zul'Farrak", -- [2]
 				},
 				[133852] = {
 					"Living Rot", -- [1]
@@ -7513,7 +7425,7 @@ PlaterDB = {
 				["nameplateShowFriends"] = "0",
 				["nameplatePersonalShowAlways"] = "1",
 			},
-			["login_counter"] = 3748,
+			["login_counter"] = 3768,
 			["extra_icon_caster_name"] = false,
 			["aura_cooldown_show_swipe"] = false,
 			["show_aggro_flash"] = true,
