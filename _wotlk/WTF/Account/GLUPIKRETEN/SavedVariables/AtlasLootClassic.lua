@@ -407,9 +407,9 @@ AtlasLootClassicDB = {
 			[40718] = "EmblemOfValor:25",
 			[40750] = "EmblemOfValor:40",
 			[33668] = "honor:6840",
-			[40878] = "honor:21700",
 			[28639] = "honor:3800",
 			[24547] = "honor:4750",
+			[40878] = "honor:21700",
 			[35103] = "honor:19000",
 			[34014] = "honor:5130",
 			[33813] = "honor:5130",
@@ -506,13 +506,13 @@ AtlasLootClassicDB = {
 			[33880] = "honor:6840",
 			[33688] = "honor:17100",
 			[28129] = "honor:3800",
-			[33944] = "honor:5130",
+			[28241] = "honor:2280",
 			[42991] = "EmblemOfHeroism:50",
 			[32793] = "honor:5320",
 			[42032] = "honor:33180",
 			[42064] = "honor:33180",
-			[28241] = "honor:2280",
 			[42128] = "honor:43400",
+			[33944] = "honor:5130",
 			[34999] = "honor:9500",
 			[16554] = "honor:2000",
 			[42028] = "honor:33180",
@@ -776,6 +776,11 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["minimapPos"] = 35.6918309653034,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -784,11 +789,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["minimapPos"] = 35.6918309653034,
-				["hide"] = true,
 			},
 		},
 		["Verminz - Golemagg"] = {
@@ -1176,6 +1176,10 @@ AtlasLootClassicDB = {
 					156.011474609375, -- [5]
 				},
 			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["Addons"] = {
 				["Favourites"] = {
 					["lists"] = {
@@ -1186,10 +1190,6 @@ AtlasLootClassicDB = {
 						},
 					},
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Judawise - Golemagg"] = {
@@ -1235,10 +1235,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["point"] = {
 					"TOP", -- [1]
@@ -1254,6 +1250,10 @@ AtlasLootClassicDB = {
 					9, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 	},

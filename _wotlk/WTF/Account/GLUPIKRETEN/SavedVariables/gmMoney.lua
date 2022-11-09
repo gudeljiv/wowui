@@ -26,7 +26,7 @@ GMMONEY = {
 			["CLASS"] = "HUNTER",
 		},
 		["Mxyz"] = {
-			["GOLD"] = 93528813,
+			["GOLD"] = 96039976,
 			["CLASS"] = "PRIEST",
 		},
 		["Handrmandr"] = {
@@ -54,7 +54,7 @@ GMMONEY = {
 			["CLASS"] = "WARLOCK",
 		},
 		["Vermin"] = {
-			["GOLD"] = 26371195,
+			["GOLD"] = 29210742,
 			["CLASS"] = "WARRIOR",
 		},
 	},

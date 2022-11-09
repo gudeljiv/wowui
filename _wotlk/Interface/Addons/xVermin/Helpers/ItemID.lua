@@ -11,7 +11,11 @@ local function AddItemID(tooltip)
 		local itemcount
 		if itemId then
 			tooltip:AddLine(' ')
-			tooltip:AddDoubleLine(_G.ORANGE_FONT_COLOR_CODE .. 'Item ID:|r ' .. _G.NORMAL_FONT_COLOR_CODE .. itemId .. '|r', _G.ORANGE_FONT_COLOR_CODE .. 'Item Level:|r ' .. _G.NORMAL_FONT_COLOR_CODE .. itemLevel .. '|r')
+			if itemLevel then
+				tooltip:AddDoubleLine(_G.ORANGE_FONT_COLOR_CODE .. 'Item ID:|r ' .. _G.NORMAL_FONT_COLOR_CODE .. itemId .. '|r', _G.ORANGE_FONT_COLOR_CODE .. 'Item Level:|r ' .. _G.NORMAL_FONT_COLOR_CODE .. itemLevel .. '|r')
+			else
+				tooltip:AddDoubleLine(_G.ORANGE_FONT_COLOR_CODE .. 'Item ID:|r ' .. _G.NORMAL_FONT_COLOR_CODE .. itemId .. '|r', _G.ORANGE_FONT_COLOR_CODE .. 'Item Level:|r ' .. _G.NORMAL_FONT_COLOR_CODE .. '-' .. '|r')
+			end
 			if sellPrice and sellPrice > 0 then
 				itemcount = GetItemCount(itemId)
 				if itemcount > 0 then
