@@ -418,13 +418,13 @@ RXPCComms = {
 					["class"] = "WARRIOR",
 				},
 				["Ouii"] = {
-					["xpPercentage"] = 0,
+					["timePlayed"] = 5.651000000070781,
 					["isRxp"] = true,
 					["lastSeen"] = 1821053.14,
-					["timePlayed"] = 5.651000000070781,
-					["level"] = 71,
-					["xp"] = 626,
+					["xpPercentage"] = 0,
 					["class"] = "HUNTER",
+					["xp"] = 626,
+					["level"] = 71,
 				},
 				["Nechmewarri"] = {
 					["timePlayed"] = 0,
@@ -804,9 +804,10 @@ RXPCComms = {
 					["timePlayed"] = 278.3670000000857,
 					["class"] = "HUNTER",
 				},
-				["Hygienespray"] = {
-					["timePlayed"] = 299.6820000000298,
-					["class"] = "WARLOCK",
+				["Jynxess"] = {
+					["timePlayed"] = 0.01399999996647239,
+					["class"] = "ROGUE",
+					["xp"] = 32100,
 				},
 				["Kuboom"] = {
 					["isRxp"] = true,
@@ -816,11 +817,6 @@ RXPCComms = {
 					["timePlayed"] = 0,
 					["class"] = "DRUID",
 				},
-				["Jynxess"] = {
-					["timePlayed"] = 0.01399999996647239,
-					["class"] = "ROGUE",
-					["xp"] = 32100,
-				},
 				["Navajaplatea"] = {
 					["level"] = 70,
 					["lastSeen"] = 157293.062,
@@ -828,6 +824,10 @@ RXPCComms = {
 					["class"] = "ROGUE",
 					["timePlayed"] = 0,
 					["isRxp"] = true,
+				},
+				["Hygienespray"] = {
+					["timePlayed"] = 299.6820000000298,
+					["class"] = "WARLOCK",
 				},
 				["Waiglpal"] = {
 					["timePlayed"] = 1466.601999999955,
@@ -841,10 +841,6 @@ RXPCComms = {
 					["timePlayed"] = 280.6680000000633,
 					["class"] = "DEATHKNIGHT",
 				},
-				["Nonameaac"] = {
-					["timePlayed"] = 344.1700000003912,
-					["class"] = "HUNTER",
-				},
 				["Zharl"] = {
 					["timePlayed"] = 1311.626000000048,
 					["class"] = "SHAMAN",
@@ -853,13 +849,17 @@ RXPCComms = {
 					["timePlayed"] = 25.30899999989197,
 					["class"] = "WARLOCK",
 				},
-				["Félís"] = {
-					["timePlayed"] = 292.6400000001304,
-					["class"] = "DRUID",
+				["Nonameaac"] = {
+					["timePlayed"] = 344.1700000003912,
+					["class"] = "HUNTER",
 				},
 				["Krutgumman"] = {
 					["timePlayed"] = 136.1409999998286,
 					["class"] = "WARLOCK",
+				},
+				["Félís"] = {
+					["timePlayed"] = 292.6400000001304,
+					["class"] = "DRUID",
 				},
 				["Vrykal"] = {
 					["timePlayed"] = 299.6820000000298,
@@ -983,7 +983,7 @@ RXPCSettings = {
 			["checkVersions"] = false,
 			["lockFrames"] = false,
 			["arrowText"] = 12,
-			["frameHeight"] = 125.0000152587891,
+			["frameHeight"] = 125.0000228881836,
 			["worldMapPinBackgroundOpacity"] = 0.3499999940395355,
 			["enableLevelUpAnnounceSolo"] = false,
 			["hideCompletedSteps"] = true,

@@ -318,29 +318,16 @@ function NeedsFoodBadly.BetterFood(a, b)
 		return false
 	end
 
-	-- local il_a = select(4, GetItemInfo(a.id))
-	-- local il_b = select(4, GetItemInfo(b.id))
-	-- local ic_a = GetItemCount(a.id)
-	-- local ic_b = GetItemCount(b.id)
-
-	-- if il_a == il_b then
-	-- 	return ic_a < ic_b
-	-- else
-	-- 	return il_a > il_b
-	-- end
-
-	-- -- return GetItemCount(a.id) <= GetItemCount(b.id)
-
-	-- -- print(a.name, a.hp, b.name, b.hp, a.hp > b.hp)
-
-	a_hp, b_hp = a.hp, b.hp
-	if a_hp < 1 then
-		a_hp = UnitHealthMax('player') * a_hp
+	-- ako je postotak hp na hrani
+	-- a_hp, b_hp = a.hp, b.hp
+	if a.hp < 1 then
+		a.hp = UnitHealthMax('player') * a.hp
 	end
-	if b_hp < 1 then
-		b_hp = UnitHealthMax('player') * b_hp
+	if b.hp < 1 then
+		b.hp = UnitHealthMax('player') * b.hp
 	end
-	return (a_hp > b_hp) or (a_hp == b_hp and GetItemCount(a.id) < GetItemCount(b.id))
+	return (a.hp > b.hp) or (a.hp == b.hp and GetItemCount(a.id) < GetItemCount(b.id))
+	-- return (a.id > b.id) or (a.id == b.id and GetItemCount(a.id) < GetItemCount(b.id))
 end
 
 function NeedsFoodBadly.BetterDrink(a, b)
@@ -357,15 +344,16 @@ function NeedsFoodBadly.BetterDrink(a, b)
 		return false
 	end
 
-	a_mp, b_mp = a.mp, b.mp
-	if a_mp < 1 then
-		a_mp = UnitHealthMax('player') * a_mp
+	-- ako je postotak mp na hrani
+	-- a_mp, b_mp = a.mp, b.mp
+	if a.mp < 1 then
+		a.mp = UnitHealthMax('player') * a.mp
 	end
-	if b_mp < 1 then
-		b_mp = UnitHealthMax('player') * b_mp
+	if b.mp < 1 then
+		b.mp = UnitHealthMax('player') * b.mp
 	end
 
-	return a_mp > b_mp or (a_mp == b_mp and GetItemCount(a.id) < GetItemCount(b.id))
+	return a.mp > b.mp or (a.mp == b.mp and GetItemCount(a.id) < GetItemCount(b.id))
 end
 
 function NeedsFoodBadly.BetterHerb(a, b)
@@ -890,7 +878,13 @@ NeedsFoodBadly.Food = {
 	[33443] = {id = 33443, name = 'Sour Goat Cheese', lvl = 65, conj = false, hp = 18480},
 	[33454] = {id = 33454, name = 'Salted Venison', lvl = 65, conj = false, hp = 18480},
 	[33449] = {id = 33449, name = 'Crusty Flatbread', lvl = 65, conj = false, hp = 18480},
-	[43523] = {id = 43523, name = 'Conjured Mana Strudel', lvl = 80, conj = true, hp = 22500, mp = 19200}
+	[43523] = {id = 43523, name = 'Conjured Mana Strudel', lvl = 80, conj = true, hp = 22500, mp = 19200},
+	[35954] = {id = 35954, name = 'Sweetened Goats Milk', lvl = 65, conj = false, mp = 7200},
+	[33445] = {id = 33445, name = 'Honeymint Tea', lvl = 75, conj = false, mp = 19200},
+	[35950] = {id = 35950, name = 'Sweet Potato Bread', lvl = 75, conj = false, hp = 22500},
+	[35952] = {id = 35952, name = 'Briny Hardcheese', lvl = 75, conj = false, hp = 22500},
+	[35953] = {id = 35953, name = 'Mead Basted Caribou', lvl = 75, conj = false, hp = 22500},
+	[35947] = {id = 35947, name = 'Sparkling Frostcap', lvl = 75, conj = false, hp = 22500}
 }
 
 NeedsFoodBadly.Potion = {

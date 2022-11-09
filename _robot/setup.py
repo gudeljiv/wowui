@@ -1,5 +1,6 @@
-from _skills import skills
-from _colors import color
+from _resources import skills
+from _resources import color
+from _resources import monitor_settings
 import time
 
 import cv2
@@ -45,46 +46,15 @@ else:
 
 monitor = str(screen_width)
 
-if monitor == "3840":
-    x = 15
-    y = 15
-    c_width = 7
-    c_height = 7
-    p_offgcd_left = 21
-    p_combat_left = 39
-    p_interrupt_left = 57
-    p_behind_left = 74
-    p_clss_left = 88
-if monitor == "2560":
-    x = 8
-    y = 8
-    c_width = 5
-    c_height = 5
-    p_offgcd_left = 15
-    p_combat_left = 39
-    p_interrupt_left = 50
-    p_behind_left = 68
-    p_clss_left = 77
-if monitor == "3072":
-    x = 12
-    y = 12
-    c_width = 5
-    c_height = 5
-    p_offgcd_left = 19
-    p_combat_left = 40
-    p_interrupt_left = 54
-    p_behind_left = 64
-    p_clss_left = 77
-if monitor == "2048.0":
-    x = 8
-    y = 8
-    c_width = 5
-    c_height = 5
-    p_offgcd_left = 13
-    p_combat_left = 24
-    p_interrupt_left = 33
-    p_behind_left = 43
-    p_clss_left = 52
+x = monitor_settings[monitor]["x"]
+y = monitor_settings[monitor]["y"]
+c_width = monitor_settings[monitor]["c_width"]
+c_height = monitor_settings[monitor]["c_height"]
+p_offgcd_left = monitor_settings[monitor]["p_offgcd_left"]
+p_combat_left = monitor_settings[monitor]["p_combat_left"]
+p_interrupt_left = monitor_settings[monitor]["p_interrupt_left"]
+p_behind_left = monitor_settings[monitor]["p_behind_left"]
+p_clss_left = monitor_settings[monitor]["p_clss_left"]
 
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
