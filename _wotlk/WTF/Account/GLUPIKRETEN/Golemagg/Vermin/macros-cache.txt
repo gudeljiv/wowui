@@ -88,3 +88,8 @@ VER 3 000000000100001A " " "INV_MISC_QUESTIONMARK"
 /cast [stance:1] Retaliation
 /cast [stance:2] Shield Wall
 END
+VER 3 000000000100001C " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Bloodthirst
+END

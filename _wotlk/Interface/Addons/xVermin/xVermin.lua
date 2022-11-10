@@ -257,6 +257,9 @@ f:SetScript(
 				end
 			end
 		)
+
+		MiniMapInstanceDifficulty:ClearAllPoints()
+		MiniMapInstanceDifficulty:SetPoint('TOPLEFT', Minimap, 'TOPLEFT', 0, 0)
 	end
 )
 
