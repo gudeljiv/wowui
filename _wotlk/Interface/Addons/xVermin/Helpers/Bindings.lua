@@ -74,7 +74,7 @@ local function FixBindings()
 	SetBinding('T', 'MULTIACTIONBAR1BUTTON4', 1)
 	SetBinding('SHIFT-T', 'MULTIACTIONBAR1BUTTON5', 1)
 	SetBinding('SHIFT-E', 'MULTIACTIONBAR1BUTTON6', 1)
-	SetBinding('SHIFT-D', 'MULTIACTIONBAR1BUTTON7', 1)
+	SetBinding('SHIFT-R', 'MULTIACTIONBAR1BUTTON7', 1)
 	SetBinding('K', 'MULTIACTIONBAR1BUTTON8', 1)
 
 	SetBinding('MOUSEWHEELDOWN', 'MULTIACTIONBAR2BUTTON1', 1)
@@ -136,7 +136,7 @@ local function FixBindings()
 	-- for i = 6, 12 do
 	-- 	SetBindingClick('CTRL-F' .. i, 'RingMenuRingFrame1Button' .. i)
 	-- end
-	SetBindingClick('SHIFT-R', 'RingMenuRingFrame1Button1', 1)
+	-- SetBindingClick('SHIFT-R', 'RingMenuRingFrame1Button1', 1)
 	SetBindingClick('SHIFT-S', 'RingMenuRingFrame1Button2', 1)
 	SetBindingClick('ALT-S', 'RingMenuRingFrame1Button3', 1)
 
@@ -202,6 +202,8 @@ local function ClearAllBindings()
 	SetBinding('Y', 'NONE', 1)
 	SetBinding('SHIFT-G', 'NONE', 1)
 	SetBinding('SHIFT-F', 'NONE', 1)
+	SetBinding('SHIFT-D', 'NONE', 1)
+	SetBinding('SHIFT-R', 'NONE', 1)
 
 	-- SetBinding('ALT-F1', 'NONE', 1)
 	-- SetBinding('ALT-F2', 'NONE', 1)

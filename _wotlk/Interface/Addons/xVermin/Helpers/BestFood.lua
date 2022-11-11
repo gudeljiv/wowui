@@ -880,11 +880,13 @@ NeedsFoodBadly.Food = {
 	[33449] = {id = 33449, name = 'Crusty Flatbread', lvl = 65, conj = false, hp = 18480},
 	[43523] = {id = 43523, name = 'Conjured Mana Strudel', lvl = 80, conj = true, hp = 22500, mp = 19200},
 	[35954] = {id = 35954, name = 'Sweetened Goats Milk', lvl = 65, conj = false, mp = 7200},
+	[41731] = {id = 41731, name = 'Yeti Milk', lvl = 75, conj = false, mp = 19200},
 	[33445] = {id = 33445, name = 'Honeymint Tea', lvl = 75, conj = false, mp = 19200},
 	[35950] = {id = 35950, name = 'Sweet Potato Bread', lvl = 75, conj = false, hp = 22500},
 	[35952] = {id = 35952, name = 'Briny Hardcheese', lvl = 75, conj = false, hp = 22500},
 	[35953] = {id = 35953, name = 'Mead Basted Caribou', lvl = 75, conj = false, hp = 22500},
-	[35947] = {id = 35947, name = 'Sparkling Frostcap', lvl = 75, conj = false, hp = 22500}
+	[35947] = {id = 35947, name = 'Sparkling Frostcap', lvl = 75, conj = false, hp = 22500},
+	[35948] = {id = 35948, name = 'Savory Snowplum', lvl = 75, conj = false, hp = 22500}
 }
 
 NeedsFoodBadly.Potion = {

@@ -18,7 +18,7 @@ local function AddItemID(tooltip)
 			end
 			if sellPrice and sellPrice > 0 then
 				itemcount = GetItemCount(itemId)
-				if itemcount > 0 then
+				if itemcount > 1 then
 					itempriceTotal = sellPrice * itemcount
 					tooltip:AddDoubleLine(_G.ORANGE_FONT_COLOR_CODE .. 'Vendor price:|r ' .. WHITE .. GetMoneyString(sellPrice) .. '|r', _G.ORANGE_FONT_COLOR_CODE .. itemcount .. 'x:|r ' .. WHITE .. GetMoneyString(itempriceTotal) .. '|r')
 				else
