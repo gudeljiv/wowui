@@ -26,9 +26,9 @@ RXPDB = {
 		["Battlearm - Jin'do"] = "global",
 		["Poklopac - Mirage Raceway"] = "global",
 		["Provokator - Jin'do"] = "global",
-		["Moolatz - Golemagg"] = "global",
-		["Wells - Jin'do"] = "global",
 		["Tudum - Jin'do"] = "global",
+		["Wells - Jin'do"] = "global",
+		["Moolatz - Golemagg"] = "global",
 	},
 	["profiles"] = {
 		["global"] = {

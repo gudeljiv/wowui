@@ -886,7 +886,8 @@ NeedsFoodBadly.Food = {
 	[35952] = {id = 35952, name = 'Briny Hardcheese', lvl = 75, conj = false, hp = 22500},
 	[35953] = {id = 35953, name = 'Mead Basted Caribou', lvl = 75, conj = false, hp = 22500},
 	[35947] = {id = 35947, name = 'Sparkling Frostcap', lvl = 75, conj = false, hp = 22500},
-	[35948] = {id = 35948, name = 'Savory Snowplum', lvl = 75, conj = false, hp = 22500}
+	[35948] = {id = 35948, name = 'Savory Snowplum', lvl = 75, conj = false, hp = 22500},
+	[44749] = {id = 44749, name = 'Salted Yeti Cheese', lvl = 65, conj = false, hp = 18480}
 }
 
 NeedsFoodBadly.Potion = {
