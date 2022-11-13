@@ -1,19 +1,28 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
+		[50] = {
+		},
+		[51] = {
+		},
 	},
-	["currentStep"] = 32,
+	["currentStep"] = 51,
 	["currentGuideName"] = "01-10 Durotar",
 	["stepSkip"] = {
+		[49] = true,
+		[33] = true,
+		[35] = true,
 		[14] = true,
 		[28] = true,
 		[15] = true,
 		[30] = true,
-		[16] = true,
-		[5] = true,
+		[45] = true,
+		[18] = true,
 		[19] = true,
 		[3] = true,
-		[18] = true,
+		[42] = true,
+		[16] = true,
+		[5] = true,
 	},
 	["flightPaths"] = {
 	},

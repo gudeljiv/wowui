@@ -1,19 +1,19 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[27] = {
-		},
 	},
-	["currentStep"] = 27,
+	["currentStep"] = 32,
 	["currentGuideName"] = "01-10 Durotar",
 	["stepSkip"] = {
-		[19] = true,
+		[14] = true,
+		[28] = true,
 		[15] = true,
+		[30] = true,
+		[16] = true,
+		[5] = true,
+		[19] = true,
 		[3] = true,
 		[18] = true,
-		[14] = true,
-		[5] = true,
-		[16] = true,
 	},
 	["flightPaths"] = {
 	},
@@ -66,6 +66,7 @@ RXPCSettings = {
 	["profiles"] = {
 		["Miqa - Golemagg"] = {
 			["enableFPAutomation"] = false,
+			["hardcore"] = false,
 			["enableLevelUpAnnounceGroup"] = false,
 			["enableMinimapButton"] = false,
 			["activeItemsScale"] = 1.2,
@@ -76,7 +77,6 @@ RXPCSettings = {
 			["alwaysSendBranded"] = false,
 			["enableBindAutomation"] = false,
 			["frameHeight"] = 125.0000152587891,
-			["hardcore"] = false,
 		},
 	},
 }
