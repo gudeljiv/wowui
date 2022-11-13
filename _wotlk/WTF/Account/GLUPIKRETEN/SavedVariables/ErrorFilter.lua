@@ -15,9 +15,10 @@ ErrorFilterDB = {
 		["Battlearm - Jin'do"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
 		["Provokator - Jin'do"] = "Default",
-		["Tudum - Jin'do"] = "Default",
-		["Wells - Jin'do"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
+		["Wells - Jin'do"] = "Default",
+		["Tudum - Jin'do"] = "Default",
+		["Miqa - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

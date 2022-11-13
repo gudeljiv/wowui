@@ -1,4 +1,11 @@
 Version: 1
+Frame: PetActionButton1
+FrameLevel: 3
+Anchor: BOTTOM
+X: -167
+Y: 134
+W: 30
+H: 30
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM
@@ -7,13 +14,6 @@ Y: 134
 W: 30
 H: 30
 Frame: PossessButton1
-FrameLevel: 3
-Anchor: BOTTOM
-X: -167
-Y: 134
-W: 30
-H: 30
-Frame: PetActionButton1
 FrameLevel: 3
 Anchor: BOTTOM
 X: -167

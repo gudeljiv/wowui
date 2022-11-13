@@ -1,0 +1,82 @@
+
+RXPCData = {
+	["completedWaypoints"] = {
+		[27] = {
+		},
+	},
+	["currentStep"] = 27,
+	["currentGuideName"] = "01-10 Durotar",
+	["stepSkip"] = {
+		[19] = true,
+		[15] = true,
+		[3] = true,
+		[18] = true,
+		[14] = true,
+		[5] = true,
+		[16] = true,
+	},
+	["flightPaths"] = {
+	},
+	["currentGuideGroup"] = "RestedXP Horde 1-30",
+}
+RXPCTrackingData = {
+	["profileKeys"] = {
+		["Miqa - Golemagg"] = "Miqa - Golemagg",
+	},
+	["profiles"] = {
+		["Miqa - Golemagg"] = {
+			["levels"] = {
+				{
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 13,
+							["day"] = 0,
+							["month"] = 11,
+							["minute"] = 40,
+							["year"] = 2022,
+							["hour"] = 11,
+							["weekday"] = 1,
+						},
+						["started"] = 0,
+					},
+					["quests"] = {
+					},
+				}, -- [1]
+			},
+		},
+	},
+}
+RXPCComms = {
+	["profileKeys"] = {
+		["Miqa - Golemagg"] = "Miqa - Golemagg",
+	},
+	["profiles"] = {
+		["Miqa - Golemagg"] = {
+		},
+	},
+}
+RXPCSettings = {
+	["profileKeys"] = {
+		["Miqa - Golemagg"] = "Miqa - Golemagg",
+	},
+	["profiles"] = {
+		["Miqa - Golemagg"] = {
+			["enableFPAutomation"] = false,
+			["enableLevelUpAnnounceGroup"] = false,
+			["enableMinimapButton"] = false,
+			["activeItemsScale"] = 1.2,
+			["checkVersions"] = false,
+			["enableTracker"] = false,
+			["enableFlyStepAnnouncements"] = false,
+			["enableLevelUpAnnounceSolo"] = false,
+			["alwaysSendBranded"] = false,
+			["enableBindAutomation"] = false,
+			["frameHeight"] = 125.0000152587891,
+			["hardcore"] = false,
+		},
+	},
+}

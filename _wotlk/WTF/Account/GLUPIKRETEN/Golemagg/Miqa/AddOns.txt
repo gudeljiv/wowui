@@ -1,0 +1,6 @@
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled
+nHealth: disabled
+nTooltip: enabled
+nPower: disabled
+ItemRackOptions: enabled
