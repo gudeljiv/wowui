@@ -2,6 +2,44 @@
 
 Group Bulletin Board 	
 
+3.08 
+- Fix for entries rapidly swapping places - Thanks to mnejing for fixing this
+- Russian localization - Shout out to tierggg for doing this
+
+3.07 
+- Updated left click to whisper the person what role you are and for which dungeon you are applying - Thanks to mnejing for adding this
+
+3.06
+- Fix for Naxx
+- Transaltion for Chinese 
+
+3.05
+- Removed the clicking noise in background
+
+3.04
+- Added auto refresh for lfg tool
+- Semi fixed add-on exploding on custom
+- BB should be honoring users selected lfg tool category unless it's not set
+
+3.03
+- Added tab for LFG Tool requests 
+- Never use custom in lfg tool because it makes things blow up
+- Added support for the lfg tool tab
+- Fixed a bug and introduced new ones
+- Too tired to update this properly 
+
+3.02 
+- Some fixes for wotlk panel
+
+3.01
+- Added new panel for wotlk dungeons
+- Added wotlk dungeons
+- Improved performance
+- Some clean up of code
+
+2.63
+- Improved performance (fingers crossed). All thanks to dkcas11 who made the changes unless it doesn't work then blame him
+
 2.62
 - No really, I fixed the bug that broke the addon
 - More Chinesse localization

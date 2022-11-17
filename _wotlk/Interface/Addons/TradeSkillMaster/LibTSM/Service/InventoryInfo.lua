@@ -5,35 +5,37 @@
 -- ------------------------------------------------------------------------------ --
 
 local _, TSM = ...
-local InventoryInfo = TSM.Init('Service.InventoryInfo')
-local Container = TSM.Include('Util.Container')
-local ItemInfo = TSM.Include('Service.ItemInfo')
-local TooltipScanning = TSM.Include('Service.TooltipScanning')
-local Event = TSM.Include('Util.Event')
-local SlotId = TSM.Include('Util.SlotId')
-local Table = TSM.Include('Util.Table')
+local InventoryInfo = TSM.Init("Service.InventoryInfo")
+local Container = TSM.Include("Util.Container")
+local ItemInfo = TSM.Include("Service.ItemInfo")
+local TooltipScanning = TSM.Include("Service.TooltipScanning")
+local Event = TSM.Include("Util.Event")
+local SlotId = TSM.Include("Util.SlotId")
+local Table = TSM.Include("Util.Table")
 local private = {
 	slotIdLocked = {},
 	slotIdSoulboundCached = {},
 	slotIdIsBoP = {},
-	slotIdIsBoA = {}
+	slotIdIsBoA = {},
 }
+
+
 
 -- ============================================================================
 -- Module Loading
 -- ============================================================================
 
-InventoryInfo:OnModuleLoad(
-	function()
-		Event.Register('ITEM_LOCKED', private.ItemLockedHandler)
-		Event.Register('ITEM_UNLOCKED', private.ItemUnlockedHandler)
-		Event.Register('BAG_UPDATE', private.BagUpdateHandler)
-		Event.Register('PLAYERBANKSLOTS_CHANGED', private.BankSlotChangedHandler)
-		if not TSM.IsWowClassic() then
-			Event.Register('PLAYERREAGENTBANKSLOTS_CHANGED', private.ReagentBankSlotChangedHandler)
-		end
+InventoryInfo:OnModuleLoad(function()
+	Event.Register("ITEM_LOCKED", private.ItemLockedHandler)
+	Event.Register("ITEM_UNLOCKED", private.ItemUnlockedHandler)
+	Event.Register("BAG_UPDATE", private.BagUpdateHandler)
+	Event.Register("PLAYERBANKSLOTS_CHANGED", private.BankSlotChangedHandler)
+	if not TSM.IsWowClassic() then
+		Event.Register("PLAYERREAGENTBANKSLOTS_CHANGED", private.ReagentBankSlotChangedHandler)
 	end
-)
+end)
+
+
 
 -- ============================================================================
 -- Module Functions
@@ -73,15 +75,8 @@ function InventoryInfo.IsSoulbound(bag, slot)
 	if private.slotIdSoulboundCached[slotId] then
 		return private.slotIdIsBoP[slotId], private.slotIdIsBoA[slotId]
 	end
-	if not TSMScanTooltip then
-		CreateFrame('GameTooltip', 'TSMScanTooltip', UIParent, 'GameTooltipTemplate')
-	end
-
-	TSMScanTooltip:SetOwner(UIParent, 'ANCHOR_NONE')
-	TSMScanTooltip:ClearLines()
-
-	if Container.GetItemID(bag, slot) == ItemString.ToId(ItemString.GetPetCage()) then
-		-- battle pets are never BoP or BoA
+	local scanned, isBOP, isBOA = TooltipScanning.IsSoulbound(bag, slot)
+	if scanned then
 		private.slotIdSoulboundCached[slotId] = true
 		private.slotIdIsBoP[slotId] = isBOP
 		private.slotIdIsBoA[slotId] = isBOA
@@ -90,39 +85,10 @@ function InventoryInfo.IsSoulbound(bag, slot)
 end
 
 function InventoryInfo.HasUsedCharges(bag, slot)
-	-- figure out if this item has a max number of charges
-	local itemId = Container.GetItemID(bag, slot)
-	if not itemId or itemId == ItemString.ToId(ItemString.GetPetCage()) then
-		return false
-	end
-	if not TSMScanTooltip then
-		CreateFrame('GameTooltip', 'TSMScanTooltip', UIParent, 'GameTooltipTemplate')
-	end
-
-	TSMScanTooltip:SetOwner(UIParent, 'ANCHOR_NONE')
-	TSMScanTooltip:ClearLines()
-	TSMScanTooltip:SetItemByID(itemId)
-
-	local maxCharges = private.GetScanTooltipCharges()
-	if not maxCharges then
-		return false
-	end
-
-	-- set TSMScanTooltip to show the inventory item
-	if bag == BANK_CONTAINER then
-		TSMScanTooltip:SetInventoryItem('player', BankButtonIDToInvSlotID(slot))
-	elseif bag == REAGENTBANK_CONTAINER then
-		TSMScanTooltip:SetInventoryItem('player', ReagentBankButtonIDToInvSlotID(slot))
-	else
-		TSMScanTooltip:SetBagItem(bag, slot)
-	end
-
-	-- check if there are used charges
-	if maxCharges and private.GetScanTooltipCharges() ~= maxCharges then
-		return true
-	end
-	return false
+	return TooltipScanning.HasUsedCharges(bag, slot)
 end
+
+
 
 -- ============================================================================
 -- Private Helper Functions

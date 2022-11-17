@@ -25,3 +25,10 @@ ItemRackButton13:HookScript(
 		end
 	end
 )
+
+xVermin.CheckIfLoadedWithTimer(
+	'LibDBIcon10_ItemRack',
+	function()
+		LibDBIcon10_ItemRack:Hide()
+	end
+)

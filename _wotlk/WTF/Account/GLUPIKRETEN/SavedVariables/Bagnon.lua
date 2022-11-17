@@ -58,18 +58,18 @@ Bagnon_Sets = {
 			["hiddenRules"] = {
 			},
 			["bagBreak"] = false,
-			["x"] = -327.91552734375,
+			["x"] = -377.439697265625,
 			["search"] = true,
 			["broker"] = false,
 			["reverseSlots"] = false,
-			["alpha"] = 1,
+			["y"] = -309.0076904296875,
 			["color"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.7392460405826569, -- [4]
 			},
-			["y"] = -233.4521484375,
+			["alpha"] = 1,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -166,8 +166,10 @@ Bagnon_Sets = {
 				"all/souls", -- [21]
 				"equip/ammo", -- [22]
 			},
-			["point"] = "TOPRIGHT",
+			["point"] = "TOPLEFT",
 			["hiddenBags"] = {
+				[11] = false,
+				[9] = false,
 			},
 			["color"] = {
 				0, -- [1]
@@ -180,21 +182,21 @@ Bagnon_Sets = {
 			["bagToggle"] = true,
 			["columns"] = 18,
 			["alpha"] = 1,
+			["scale"] = 1,
+			["bagBreak"] = false,
+			["x"] = 305.9025573730469,
+			["search"] = true,
+			["broker"] = false,
+			["itemScale"] = 1,
+			["hiddenRules"] = {
+			},
+			["y"] = -281.0208740234375,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
-			["bagBreak"] = false,
-			["x"] = -731.11328125,
-			["search"] = true,
-			["broker"] = false,
-			["y"] = -232.354248046875,
-			["hiddenRules"] = {
-			},
-			["itemScale"] = 1,
-			["scale"] = 1,
 		},
 	},
 	["countGuild"] = false,
@@ -211,10 +213,10 @@ Bagnon_Sets = {
 		["socketing"] = false,
 		["scrappingMachine"] = false,
 		["crafting"] = false,
-		["banker"] = false,
+		["voidStorageBanker"] = false,
 		["auctioneer"] = false,
 		["guildBanker"] = false,
-		["voidStorageBanker"] = false,
+		["banker"] = false,
 	},
 	["fridgeColor"] = {
 	},
@@ -236,15 +238,15 @@ Bagnon_Sets = {
 	["displayAuction"] = false,
 	["profiles"] = {
 	},
-	["displayCraft"] = false,
-	["soulColor"] = {
-	},
-	["glowPoor"] = true,
-	["normalColor"] = {
-	},
-	["glowQuality"] = true,
-	["colorSlots"] = false,
 	["keyColor"] = {
 	},
+	["soulColor"] = {
+	},
+	["glowQuality"] = true,
+	["normalColor"] = {
+	},
+	["glowPoor"] = true,
+	["colorSlots"] = false,
+	["displayCraft"] = false,
 	["displayScrapping"] = false,
 }
