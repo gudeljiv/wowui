@@ -266,7 +266,6 @@ with keyboard.Listener(on_press=on_press) as listener:
                         for skill in skills["offgcd"][wow_class]:
                             for ability in abilities_offgcd:
                                 if ability == skill["name"]:
-
                                     try:
                                         (score, diff) = structural_similarity(abilities_offgcd[ability], offgcd, full=True)
                                         if score*100 > 90:

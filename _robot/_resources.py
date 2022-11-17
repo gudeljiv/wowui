@@ -37,6 +37,10 @@ skills["offgcd"]["hunter"] = [
     {"name": "misdirection", "type": "GetSpellTexture", "id": 34477, "key": "2", "modifier": "alt"},
 ]
 
+skills["offgcd"]["rogue"] = [
+    {"name": "pick pocket", "type": "GetSpellTexture", "id": 921, "key": "f5", "modifier": "ctrl"},
+]
+
 
 skills["warrior"] = [
     {"name": "battle shout", "type": "GetSpellTexture", "id": 2048, "key": "f4"},
@@ -145,7 +149,7 @@ skills["shaman"] = [
 ]
 
 skills["rogue"] = [
-    {"name": "sinister strike", "type": "GetSpellTexture", "id": 1752, "key": "f2", "modifier": "ctrl"},
+    {"name": "sinister strike", "type": "GetSpellTexture", "id": 1752, "key": "f1", "modifier": "ctrl"},
     {"name": "eviscerate", "type": "GetSpellTexture", "id": 2098, "key": "4"},
 ]
 

@@ -135,7 +135,14 @@ H: 50
 Frame: GossipFrame
 FrameLevel: 1
 Anchor: TOPLEFT
-X: 0
-Y: -104
+X: -1
+Y: -125
 W: 384
 H: 512
+Frame: BagnonBankFrame1
+FrameLevel: 1
+Anchor: LEFT
+X: 94
+Y: 211
+W: 716
+H: 372
