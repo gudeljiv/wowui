@@ -5,12 +5,12 @@
 -- ------------------------------------------------------------------------------ --
 
 local _, TSM = ...
-local Wrapper = TSM.Init("Service.ItemTooltipClasses.Wrapper")
-local ExtraTip = TSM.Include("Service.ItemTooltipClasses.ExtraTip")
-local Builder = TSM.Include("Service.ItemTooltipClasses.Builder")
-local ItemInfo = TSM.Include("Service.ItemInfo")
-local Settings = TSM.Include("Service.Settings")
-local ItemString = TSM.Include("Util.ItemString")
+local Wrapper = TSM.Init('Service.ItemTooltipClasses.Wrapper')
+local ExtraTip = TSM.Include('Service.ItemTooltipClasses.ExtraTip')
+local Builder = TSM.Include('Service.ItemTooltipClasses.Builder')
+local ItemInfo = TSM.Include('Service.ItemInfo')
+local Settings = TSM.Include('Service.Settings')
+local ItemString = TSM.Include('Util.ItemString')
 local private = {
 	builder = nil,
 	settings = nil,
@@ -20,59 +20,58 @@ local private = {
 	tooltipMethodPosthooks = {},
 	lastMailTooltipUpdate = nil,
 	lastMailTooltipIndex = nil,
-	populateFunc = nil,
+	populateFunc = nil
 }
-
-
 
 -- ============================================================================
 -- Module Loading
 -- ============================================================================
 
-Wrapper:OnSettingsLoad(function()
-	private.builder = Builder.Create()
-	private.settings = Settings.NewView()
-		:AddKey("global", "tooltipOptions", "embeddedTooltip")
-		:AddKey("global", "tooltipOptions", "enabled")
-		:AddKey("global", "tooltipOptions", "tooltipShowModifier")
-	private.RegisterTooltip(GameTooltip)
-	private.RegisterTooltip(ItemRefTooltip)
-	if not TSM.IsWowClassic() then
-		private.RegisterTooltip(BattlePetTooltip)
-		private.RegisterTooltip(FloatingBattlePetTooltip)
-	end
-	local orig = OpenMailAttachment_OnEnter
-	OpenMailAttachment_OnEnter = function(self, index)
-		private.lastMailTooltipUpdate = private.lastMailTooltipUpdate or 0
-		if private.lastMailTooltipIndex ~= index or private.lastMailTooltipUpdate + 0.1 < GetTime() then
-			private.lastMailTooltipUpdate = GetTime()
-			private.lastMailTooltipIndex = index
-			orig(self, index)
+Wrapper:OnSettingsLoad(
+	function()
+		private.builder = Builder.Create()
+		private.settings = Settings.NewView():AddKey('global', 'tooltipOptions', 'embeddedTooltip'):AddKey('global', 'tooltipOptions', 'enabled'):AddKey('global', 'tooltipOptions', 'tooltipShowModifier')
+		private.RegisterTooltip(GameTooltip)
+		private.RegisterTooltip(ItemRefTooltip)
+		if not TSM.IsWowClassic() then
+			private.RegisterTooltip(BattlePetTooltip)
+			private.RegisterTooltip(FloatingBattlePetTooltip)
+		end
+		local orig = OpenMailAttachment_OnEnter
+		OpenMailAttachment_OnEnter = function(self, index)
+			private.lastMailTooltipUpdate = private.lastMailTooltipUpdate or 0
+			if private.lastMailTooltipIndex ~= index or private.lastMailTooltipUpdate + 0.1 < GetTime() then
+				private.lastMailTooltipUpdate = GetTime()
+				private.lastMailTooltipIndex = index
+				orig(self, index)
+			end
 		end
 	end
-end)
+)
 
-Wrapper:OnGameDataLoad(function()
-	if ArkInventory and ArkInventory.API and ArkInventory.API.CustomBattlePetTooltipReady then
-		hooksecurefunc(ArkInventory.API, "CustomBattlePetTooltipReady", function(tooltip, link)
-			link = ItemInfo.GetLink(ItemString.Get(link))
-			private.SetTooltipItem(tooltip, link)
-		end)
+Wrapper:OnGameDataLoad(
+	function()
+		if ArkInventory and ArkInventory.API and ArkInventory.API.CustomBattlePetTooltipReady then
+			hooksecurefunc(
+				ArkInventory.API,
+				'CustomBattlePetTooltipReady',
+				function(tooltip, link)
+					link = ItemInfo.GetLink(ItemString.Get(link))
+					private.SetTooltipItem(tooltip, link)
+				end
+			)
+		end
 	end
-end)
-
-
+)
 
 -- ============================================================================
 -- Module Functions
 -- ============================================================================
 
 function Wrapper.SetPopulateFunction(func)
-	assert(type(func) == "function" and not private.populateFunc)
+	assert(type(func) == 'function' and not private.populateFunc)
 	private.populateFunc = func
 end
-
-
 
 -- ============================================================================
 -- Private Helper Functions
@@ -86,17 +85,17 @@ function private.RegisterTooltip(tooltip)
 	if private.IsBattlePetTooltip(tooltip) then
 		if not private.hookedBattlepetGlobal then
 			private.hookedBattlepetGlobal = true
-			hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", private.OnTooltipSetBattlePet)
-			hooksecurefunc("BattlePetToolTip_Show", private.OnBattlePetTooltipShow)
+			hooksecurefunc('BattlePetTooltipTemplate_SetBattlePet', private.OnTooltipSetBattlePet)
+			hooksecurefunc('BattlePetToolTip_Show', private.OnBattlePetTooltipShow)
 		end
-		tooltip:HookScript("OnHide", private.OnTooltipCleared)
+		tooltip:HookScript('OnHide', private.OnTooltipCleared)
 	else
 		local scriptHooks = {
 			OnTooltipSetItem = private.OnTooltipSetItem,
 			OnTooltipCleared = private.OnTooltipCleared
 		}
 		for script, prehook in pairs(scriptHooks) do
-			if script == "OnTooltipSetItem" and TSM.IsWowDragonflightPTR() then
+			if script == 'OnTooltipSetItem' and TSM.IsWowDragonflightPTR() then
 				TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, private.OnTooltipSetItem)
 			else
 				tooltip:HookScript(script, prehook)
@@ -125,6 +124,8 @@ end
 
 function private.OnTooltipSetItem(tooltip)
 	local reg = private.tooltipRegistry[tooltip]
+	-- The new tooltip postcall is triggered for every other non-registered item tooltips
+	-- Gonna need to rewrite our tooltip scanning to the new method to save calls here
 	if not reg then
 		return
 	end
@@ -136,9 +137,9 @@ function private.OnTooltipSetItem(tooltip)
 	local testName, item = tooltip:GetItem()
 	if not item then
 		item = reg.item
-	elseif testName == "" then
+	elseif testName == '' then
 		-- this is likely a case where :GetItem() is broken for recipes - detect and try to fix it
-		if strmatch(item, "item:([0-9]*):") == "" then
+		if strmatch(item, 'item:([0-9]*):') == '' then
 			item = reg.item
 		end
 	end
@@ -163,12 +164,12 @@ function private.OnTooltipSetBattlePet(tooltip, data)
 		local maxHealth = data.maxHealth
 		local power = data.power
 		local speed = data.speed
-		local battlePetID = data.battlePetID or "0x0000000000000000"
+		local battlePetID = data.battlePetID or '0x0000000000000000'
 		local name = data.name
 		local customName = data.customName
 		local breedQuality = data.breedQuality
 		local colorCode = breedQuality == -1 and NORMAL_FONT_COLOR_CODE or (ITEM_QUALITY_COLORS[breedQuality] or ITEM_QUALITY_COLORS[0]).hex
-		link = format("%s|Hbattlepet:%d:%d:%d:%d:%d:%d:%s|h[%s]|h|r", colorCode, speciesID, level, breedQuality, maxHealth, power, speed, battlePetID, customName or name)
+		link = format('%s|Hbattlepet:%d:%d:%d:%d:%d:%d:%s|h[%s]|h|r', colorCode, speciesID, level, breedQuality, maxHealth, power, speed, battlePetID, customName or name)
 	end
 
 	private.SetTooltipItem(tooltip, link)
@@ -176,7 +177,9 @@ end
 
 function private.OnTooltipCleared(tooltip)
 	local reg = private.tooltipRegistry[tooltip]
-	if reg.ignoreOnCleared then return end
+	if reg.ignoreOnCleared then
+		return
+	end
 
 	reg.extraTipUsed = nil
 	reg.minWidth = 0
@@ -221,7 +224,7 @@ function private.SetTooltipItem(tooltip, link)
 
 	-- add all the lines
 	local targetTip = useExtraTip and reg.extraTip or tooltip
-	targetTip:AddLine(" ")
+	targetTip:AddLine(' ')
 	for _, left, right, lineColor in private.builder:_LineIterator() do
 		local r, g, b = lineColor:GetFractionalRGBA()
 		if right then
@@ -243,15 +246,13 @@ end
 function private.IsEnabled()
 	if not private.settings.enabled then
 		return false
-	elseif private.settings.tooltipShowModifier == "alt" and not IsAltKeyDown() then
+	elseif private.settings.tooltipShowModifier == 'alt' and not IsAltKeyDown() then
 		return false
-	elseif private.settings.tooltipShowModifier == "ctrl" and not IsControlKeyDown() then
+	elseif private.settings.tooltipShowModifier == 'ctrl' and not IsControlKeyDown() then
 		return false
 	end
 	return true
 end
-
-
 
 -- ============================================================================
 -- Hook Setup Code
@@ -262,9 +263,9 @@ do
 		private.OnTooltipCleared(self)
 		local reg = private.tooltipRegistry[self]
 		reg.ignoreOnCleared = true
-		if type(quantityFunc) == "number" then
+		if type(quantityFunc) == 'number' then
 			reg.quantity = quantityFunc
-		elseif type(quantityOffset) == "string" then
+		elseif type(quantityOffset) == 'string' then
 			local data = quantityFunc(...)
 			reg.quantity = data and data[quantityOffset] or nil
 		else
@@ -273,9 +274,11 @@ do
 		return reg
 	end
 	private.tooltipMethodPrehooks = {
-		SetQuestItem = function(self, ...) PreHookHelper(self, GetQuestItemInfo, 3, ...) end,
+		SetQuestItem = function(self, ...)
+			PreHookHelper(self, GetQuestItemInfo, 3, ...)
+		end,
 		SetQuestLogItem = function(self, type, ...)
-			local quantityFunc = type == "choice" and GetQuestLogChoiceInfo or GetQuestLogRewardInfo
+			local quantityFunc = type == 'choice' and GetQuestLogChoiceInfo or GetQuestLogRewardInfo
 			PreHookHelper(self, quantityFunc, 3, ...)
 		end,
 		SetRecipeReagentItem = function(self, ...)
@@ -315,7 +318,7 @@ do
 		end,
 		SetBagItem = function(self, ...)
 			if TSM.IsWowDragonflightPTR() then
-				PreHookHelper(self, C_Container.GetContainerItemInfo, "stackCount", ...)
+				PreHookHelper(self, C_Container.GetContainerItemInfo, 'stackCount', ...)
 			else
 				PreHookHelper(self, GetContainerItemInfo, 2, ...)
 			end
@@ -324,37 +327,63 @@ do
 			local reg = PreHookHelper(self, GetGuildBankItemInfo, 2, ...)
 			reg.item = GetGuildBankItemLink(...)
 		end,
-		SetVoidItem = function(self, ...) PreHookHelper(self, 1) end,
-		SetVoidDepositItem = function(self, ...) PreHookHelper(self, 1) end,
-		SetVoidWithdrawalItem = function(self, ...) PreHookHelper(self, 1) end,
-		SetInventoryItem = function(self, ...) PreHookHelper(self, GetInventoryItemCount, 1, ...) end,
+		SetVoidItem = function(self, ...)
+			PreHookHelper(self, 1)
+		end,
+		SetVoidDepositItem = function(self, ...)
+			PreHookHelper(self, 1)
+		end,
+		SetVoidWithdrawalItem = function(self, ...)
+			PreHookHelper(self, 1)
+		end,
+		SetInventoryItem = function(self, ...)
+			PreHookHelper(self, GetInventoryItemCount, 1, ...)
+		end,
 		SetMerchantItem = function(self, ...)
 			local reg = PreHookHelper(self, GetMerchantItemInfo, 4, ...)
 			reg.item = GetMerchantItemLink(...)
 		end,
-		SetMerchantCostItem = function(self, ...) PreHookHelper(self, GetMerchantItemCostItem, 2, ...) end,
-		SetBuybackItem = function(self, ...) PreHookHelper(self, GetBuybackItemInfo, 4, ...) end,
+		SetMerchantCostItem = function(self, ...)
+			PreHookHelper(self, GetMerchantItemCostItem, 2, ...)
+		end,
+		SetBuybackItem = function(self, ...)
+			PreHookHelper(self, GetBuybackItemInfo, 4, ...)
+		end,
 		SetAuctionItem = function(self, ...)
 			local reg = PreHookHelper(self, GetAuctionItemInfo, 3, ...)
 			reg.item = GetAuctionItemLink(...)
 		end,
-		SetAuctionSellItem = function(self, ...) PreHookHelper(self, GetAuctionSellItemInfo, 3, ...) end,
-		SetInboxItem = function(self, index) PreHookHelper(self, GetInboxItem, 4, index, 1) end,
-		SetSendMailItem = function(self, ...) PreHookHelper(self, GetSendMailItem, 4, ...) end,
-		SetLootItem = function(self, ...) PreHookHelper(self, GetLootSlotInfo, 3, ...) end,
-		SetLootRollItem = function(self, ...) PreHookHelper(self, GetLootRollItemInfo, 3, ...) end,
-		SetTradePlayerItem = function(self, ...) PreHookHelper(self, GetTradePlayerItemInfo, 3, ...) end,
-		SetTradeTargetItem = function(self, ...) PreHookHelper(self, GetTradeTargetItemInfo, 3, ...) end,
+		SetAuctionSellItem = function(self, ...)
+			PreHookHelper(self, GetAuctionSellItemInfo, 3, ...)
+		end,
+		SetInboxItem = function(self, index)
+			PreHookHelper(self, GetInboxItem, 4, index, 1)
+		end,
+		SetSendMailItem = function(self, ...)
+			PreHookHelper(self, GetSendMailItem, 4, ...)
+		end,
+		SetLootItem = function(self, ...)
+			PreHookHelper(self, GetLootSlotInfo, 3, ...)
+		end,
+		SetLootRollItem = function(self, ...)
+			PreHookHelper(self, GetLootRollItemInfo, 3, ...)
+		end,
+		SetTradePlayerItem = function(self, ...)
+			PreHookHelper(self, GetTradePlayerItemInfo, 3, ...)
+		end,
+		SetTradeTargetItem = function(self, ...)
+			PreHookHelper(self, GetTradeTargetItemInfo, 3, ...)
+		end,
 		SetHyperlink = function(self, link)
 			local reg = private.tooltipRegistry[self]
 			private.OnTooltipCleared(self)
 			reg.ignoreOnCleared = true
 			reg.item = link
-		end,
+		end
 	}
 	if not TSM.IsWowClassic() then
-		private.tooltipMethodPrehooks["SetAuctionItem"] = nil
-		private.tooltipMethodPrehooks["SetAuctionSellItem"] = nil
+		private.tooltipMethodPrehooks['SetAuctionItem'] = nil
+		private.tooltipMethodPrehooks['SetAuctionSellItem'] = nil
 	end
 
 	-- populate all the posthooks

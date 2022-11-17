@@ -59,7 +59,6 @@ VER 3 0000000001000015 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast Revenge
-/use Brutal Gladiator's Plate Gauntlets
 END
 VER 3 0000000001000014 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Vigilance
