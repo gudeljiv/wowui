@@ -15,6 +15,7 @@ local Log = TSM.Include("Util.Log")
 local ItemString = TSM.Include("Util.ItemString")
 local DefaultUI = TSM.Include("Service.DefaultUI")
 local Settings = TSM.Include("Service.Settings")
+local TooltipScanning = TSM.Include("Service.TooltipScanning")
 local private = {
 	settings = nil,
 	slotDB = nil,
@@ -222,20 +223,14 @@ function private.ScanGuildBank()
 end
 
 function private.ScanPetsDeferred()
-	if not TSMScanTooltip then
-		CreateFrame("GameTooltip", "TSMScanTooltip", UIParent, "GameTooltipTemplate")
-	end
-	TSMScanTooltip:SetOwner(UIParent, "ANCHOR_NONE")
-	TSMScanTooltip:ClearLines()
-
 	local numPetSlotIdsScanned = 0
 	local toRemove = TempTable.Acquire()
 	private.slotDB:BulkInsertStart()
 	for slotId in pairs(private.pendingPetSlotIds) do
 		local tab, slot = SlotId.Split(slotId)
-		local speciesId, level, rarity = TSMScanTooltip:SetGuildBankItem(tab, slot)
-		if speciesId and level and rarity then
-			local itemString = "p:"..speciesId..":"..level..":"..rarity
+		local speciesId, level, breedQuality = TooltipScanning.GetBuildBankBattlePetInfo(tab, slot)
+		if speciesId and level and breedQuality then
+			local itemString = "p:"..speciesId..":"..level..":"..breedQuality
 			if itemString then
 				tinsert(toRemove, slotId)
 				local _, quantity = GetGuildBankItemInfo(tab, slot)

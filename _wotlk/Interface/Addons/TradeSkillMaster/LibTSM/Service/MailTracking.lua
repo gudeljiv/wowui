@@ -16,12 +16,12 @@ local DefaultUI = TSM.Include("Service.DefaultUI")
 local ItemInfo = TSM.Include("Service.ItemInfo")
 local Settings = TSM.Include("Service.Settings")
 local AuctionTracking = TSM.Include("Service.AuctionTracking")
+local TooltipScanning = TSM.Include("Service.TooltipScanning")
 local private = {
 	settings = nil,
 	mailDB = nil,
 	itemDB = nil,
 	quantityDB = nil,
-	tooltip = nil,
 	callbacks = {},
 	expiresCallbacks = {},
 	cancelAuctionQuery = nil,
@@ -349,20 +349,13 @@ function private.ValidateCharacter(character)
 	return result
 end
 
-function private.GetInboxItemLink(index, num)
-	local link = GetInboxItemLink(index, num)
+function private.GetInboxItemLink(index, attachIndex)
+	local link = GetInboxItemLink(index, attachIndex)
 	if ItemString.GetBase(link) ~= ItemString.GetPetCage() then
 		return link
 	end
-
-	-- need to do tooltip scanning to get battlepet links
-	private.tooltip = private.tooltip or CreateFrame("GameTooltip", "TSM4MailingInboxTooltip", UIParent, "GameTooltipTemplate")
-	private.tooltip:SetOwner(UIParent, "ANCHOR_NONE")
-	private.tooltip:ClearLines()
-
-	local _, speciesId, level, breedQuality = private.tooltip:SetInboxItem(index, num)
+	local speciesId, level, breedQuality = TooltipScanning.GetInboxBattlePetInfo(index, attachIndex)
 	assert(speciesId and speciesId > 0)
-	private.tooltip:Hide()
 	return ItemInfo.GetLink(strjoin(":", "p", speciesId, level, breedQuality))
 end
 

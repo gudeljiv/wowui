@@ -196,7 +196,9 @@ function private.FSMCreate()
 		)
 		:AddState(FSM.NewState("ST_FRAME_OPEN")
 			:SetOnEnter(function(context)
-				OpenAllBags()
+				if TSM.IsWowClassic() then
+					OpenAllBags()
+				end
 				CheckInbox()
 				DoEmote("READ", nil, true)
 				HideUIPanel(MailFrame)
@@ -225,7 +227,9 @@ function private.FSMCreate()
 				return "ST_CLOSED"
 			end)
 			:AddEvent("EV_MAIL_SHOW", function(context)
-				OpenAllBags()
+				if TSM.IsWowClassic() then
+					OpenAllBags()
+				end
 				CheckInbox()
 
 				if not context.frame then

@@ -9,11 +9,13 @@ local Mail = TSM.Accounting:NewPackage("Mail")
 local Delay = TSM.Include("Util.Delay")
 local String = TSM.Include("Util.String")
 local ItemString = TSM.Include("Util.ItemString")
+local Container = TSM.Include("Util.Container")
 local DefaultUI = TSM.Include("Service.DefaultUI")
 local ItemInfo = TSM.Include("Service.ItemInfo")
 local InventoryInfo = TSM.Include("Service.InventoryInfo")
 local AuctionTracking = TSM.Include("Service.AuctionTracking")
 local Inventory = TSM.Include("Service.Inventory")
+local TooltipScanning = TSM.Include("Service.TooltipScanning")
 local private = {
 	hooks = {},
 }
@@ -92,18 +94,18 @@ function private.CanLootMailIndex(index, copper)
 		end
 		local _, _, _, count = GetInboxItem(index, j)
 		local quantity = count or 0
-		local maxUnique = private.GetInboxMaxUnique(index, j)
+		local maxUnique = TooltipScanning.GetInboxMaxUnique(index, j)
 		-- dont record unique items that we can't loot
 		local playerQty = Inventory.GetBagQuantity(itemString) + Inventory.GetBankQuantity(itemString) + Inventory.GetReagentBankQuantity(itemString)
 		if maxUnique > 0 and maxUnique < playerQty + quantity then
 			return
 		end
-		for bag = 0, NUM_BAG_SLOTS do
+		for bag = 0, Container.GetNumBags() do
 			if InventoryInfo.ItemWillGoInBag(link, bag) then
-				for slot = 1, GetContainerNumSlots(bag) do
-					local iString = ItemString.Get(GetContainerItemLink(bag, slot))
+				for slot = 1, Container.GetNumSlots(bag) do
+					local iString = ItemString.Get(Container.GetItemLink(bag, slot))
 					if iString == itemString then
-						local _, stackSize = GetContainerItemInfo(bag, slot)
+						local _, stackSize = Container.GetItemInfo(bag, slot)
 						local maxStackSize = ItemInfo.GetMaxStack(itemString) or 1
 						if (maxStackSize - stackSize) >= quantity then
 							return true
@@ -115,47 +117,6 @@ function private.CanLootMailIndex(index, copper)
 			end
 		end
 	end
-end
-
-function private.GetInboxMaxUnique(index, num)
-	if not num then
-		num = 1
-	end
-
-	if not TSMScanTooltip then
-		CreateFrame("GameTooltip", "TSMScanTooltip", UIParent, "GameTooltipTemplate")
-	end
-
-	TSMScanTooltip:SetOwner(UIParent, "ANCHOR_NONE")
-	TSMScanTooltip:ClearLines()
-
-	local _, speciesId = TSMScanTooltip:SetInboxItem(index, num)
-	if (speciesId or 0) > 0 then
-		return 0
-	else
-		for id = 2, TSMScanTooltip:NumLines() do
-			local text = private.GetTooltipText(_G["TSMScanTooltipTextLeft"..id])
-			if text then
-				if text == ITEM_UNIQUE then
-					return 1
-				else
-					local match = text and strmatch(text, "^"..ITEM_UNIQUE.." %((%d+)%)$")
-					if match then
-						return tonumber(match)
-					end
-				end
-			end
-		end
-	end
-
-	return 0
-end
-
-function private.GetTooltipText(text)
-	local textStr = strtrim(text and text:GetText() or "")
-	if textStr == "" then return end
-
-	return textStr
 end
 
 -- scans the mail that the player just attempted to collected (Pre-Hook)
@@ -377,18 +338,10 @@ function private.CheckSendMail(destination, currentSubject, ...)
 end
 
 function private.GetFirstInboxItemLink(index)
-	if not TSMAccountingMailTooltip then
-		CreateFrame("GameTooltip", "TSMAccountingMailTooltip", UIParent, "GameTooltipTemplate")
-	end
-	TSMAccountingMailTooltip:SetOwner(UIParent, "ANCHOR_NONE")
-	TSMAccountingMailTooltip:ClearLines()
-	local _, speciesId, level, breedQuality, maxHealth, power, speed = TSMAccountingMailTooltip:SetInboxItem(index)
-	local link = nil
-	if (speciesId or 0) > 0 then
-		link = ItemInfo.GetLink(strjoin(":", "p", speciesId, level, breedQuality, maxHealth, power, speed))
+	local speciesId, level, breedQuality, maxHealth, power, speed = TooltipScanning.GetInboxBattlePetInfo(index, 1)
+	if speciesId and speciesId > 0 then
+		return ItemInfo.GetLink(strjoin(":", "p", speciesId, level, breedQuality, maxHealth, power, speed))
 	else
-		link = GetInboxItemLink(index, 1)
+		return GetInboxItemLink(index, 1)
 	end
-	TSMAccountingMailTooltip:Hide()
-	return link
 end

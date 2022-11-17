@@ -96,7 +96,11 @@ function private.RegisterTooltip(tooltip)
 			OnTooltipCleared = private.OnTooltipCleared
 		}
 		for script, prehook in pairs(scriptHooks) do
-			tooltip:HookScript(script, prehook)
+			if script == "OnTooltipSetItem" and TSM.IsWowDragonflightPTR() then
+				TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, private.OnTooltipSetItem)
+			else
+				tooltip:HookScript(script, prehook)
+			end
 		end
 
 		for method, prehook in pairs(private.tooltipMethodPrehooks) do
@@ -121,6 +125,9 @@ end
 
 function private.OnTooltipSetItem(tooltip)
 	local reg = private.tooltipRegistry[tooltip]
+	if not reg then
+		return
+	end
 	if reg.hasItem then
 		return
 	end
@@ -257,6 +264,9 @@ do
 		reg.ignoreOnCleared = true
 		if type(quantityFunc) == "number" then
 			reg.quantity = quantityFunc
+		elseif type(quantityOffset) == "string" then
+			local data = quantityFunc(...)
+			reg.quantity = data and data[quantityOffset] or nil
 		else
 			reg.quantity = select(quantityOffset, quantityFunc(...))
 		end
@@ -287,18 +297,29 @@ do
 			end
 		end,
 		SetRecipeResultItem = function(self, ...)
-			if not TSM.IsWowClassic() then
-				-- TODO: Is this not used in DF?
-				return
-			end
 			private.OnTooltipCleared(self)
 			local reg = private.tooltipRegistry[self]
 			reg.ignoreOnCleared = true
-			local lNum, hNum = C_TradeSkillUI.GetRecipeNumItemsProduced(...)
+			local info = C_TradeSkillUI.GetRecipeSchematic(..., false)
+			local lNum, hNum = info.quantityMin, info.quantityMax
 			-- the quantity can be a range, so use a quantity of 1 if so
 			reg.quantity = lNum == hNum and lNum or 1
 		end,
-		SetBagItem = function(self, ...) PreHookHelper(self, GetContainerItemInfo, 2, ...) end,
+		SetTradeSkillItem = function(self, ...)
+			private.OnTooltipCleared(self)
+			local reg = private.tooltipRegistry[self]
+			reg.ignoreOnCleared = true
+			local lNum, hNum = GetTradeSkillNumMade(...)
+			-- the quantity can be a range, so use a quantity of 1 if so
+			reg.quantity = lNum == hNum and lNum or 1
+		end,
+		SetBagItem = function(self, ...)
+			if TSM.IsWowDragonflightPTR() then
+				PreHookHelper(self, C_Container.GetContainerItemInfo, "stackCount", ...)
+			else
+				PreHookHelper(self, GetContainerItemInfo, 2, ...)
+			end
+		end,
 		SetGuildBankItem = function(self, ...)
 			local reg = PreHookHelper(self, GetGuildBankItemInfo, 2, ...)
 			reg.item = GetGuildBankItemLink(...)
@@ -331,6 +352,10 @@ do
 			reg.item = link
 		end,
 	}
+	if not TSM.IsWowClassic() then
+		private.tooltipMethodPrehooks["SetAuctionItem"] = nil
+		private.tooltipMethodPrehooks["SetAuctionSellItem"] = nil
+	end
 
 	-- populate all the posthooks
 	local function TooltipMethodPostHook(self)
