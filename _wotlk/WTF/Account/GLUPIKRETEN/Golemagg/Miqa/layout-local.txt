@@ -48,10 +48,3 @@ X: 323
 Y: -75
 W: 78
 H: 40
-Frame: TellMeWhen_ConfigWarning
-FrameLevel: 1
-Anchor: TOP
-X: -15
-Y: -188
-W: 330
-H: 113

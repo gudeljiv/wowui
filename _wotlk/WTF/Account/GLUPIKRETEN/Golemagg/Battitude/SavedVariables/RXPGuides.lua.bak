@@ -115,7 +115,6 @@ RXPCSettings = {
 	["profiles"] = {
 		["Battitude - Golemagg"] = {
 			["enableCollectStepAnnouncements"] = false,
-			["hardcore"] = false,
 			["enableLevelUpAnnounceGroup"] = false,
 			["enableMinimapButton"] = false,
 			["checkVersions"] = false,
@@ -123,8 +122,9 @@ RXPCSettings = {
 			["enableFlyStepAnnouncements"] = false,
 			["xprate"] = 1.5,
 			["alwaysSendBranded"] = false,
+			["frameHeight"] = 125.0001068115234,
 			["enableLevelUpAnnounceSolo"] = false,
-			["frameHeight"] = 125.000114440918,
+			["hardcore"] = false,
 		},
 	},
 }
