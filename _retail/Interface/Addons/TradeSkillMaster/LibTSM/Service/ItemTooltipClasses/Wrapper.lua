@@ -96,7 +96,7 @@ function private.RegisterTooltip(tooltip)
 			OnTooltipCleared = private.OnTooltipCleared
 		}
 		for script, prehook in pairs(scriptHooks) do
-			if script == "OnTooltipSetItem" and TSM.IsWowDragonflightPTR() then
+			if not TSM.IsWowClassic() and script == "OnTooltipSetItem" then
 				TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, private.OnTooltipSetItem)
 			else
 				tooltip:HookScript(script, prehook)
@@ -134,7 +134,10 @@ function private.OnTooltipSetItem(tooltip)
 
 	tooltip:Show()
 	local testName, item = tooltip:GetItem()
-	if not item then
+	if not TSM.IsWowClassic() and reg.item then
+		-- GetItem() seems to be broken for recipes on retail, so just trust our own item if we have it
+		item = reg.item
+	elseif not item then
 		item = reg.item
 	elseif testName == "" then
 		-- this is likely a case where :GetItem() is broken for recipes - detect and try to fix it
@@ -314,10 +317,10 @@ do
 			reg.quantity = lNum == hNum and lNum or 1
 		end,
 		SetBagItem = function(self, ...)
-			if TSM.IsWowDragonflightPTR() then
-				PreHookHelper(self, C_Container.GetContainerItemInfo, "stackCount", ...)
-			else
+			if TSM.IsWowClassic() then
 				PreHookHelper(self, GetContainerItemInfo, 2, ...)
+			else
+				PreHookHelper(self, C_Container.GetContainerItemInfo, "stackCount", ...)
 			end
 		end,
 		SetGuildBankItem = function(self, ...)

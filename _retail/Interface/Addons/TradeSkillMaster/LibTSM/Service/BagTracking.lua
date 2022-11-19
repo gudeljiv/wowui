@@ -16,6 +16,7 @@ local TempTable = TSM.Include("Util.TempTable")
 local ItemString = TSM.Include("Util.ItemString")
 local DefaultUI = TSM.Include("Service.DefaultUI")
 local ItemInfo = TSM.Include("Service.ItemInfo")
+local TooltipScanning = TSM.Include("Service.TooltipScanning")
 local InventoryInfo = TSM.Include("Service.InventoryInfo")
 local Settings = TSM.Include("Service.Settings")
 local private = {
@@ -38,6 +39,7 @@ local private = {
 	isFirstBankOpen = true,
 	callbackQuery = nil, -- luacheck: ignore 1004 - just stored for GC reasons
 	callbacks = {},
+	itemLocation = ItemLocation:CreateEmpty(),
 }
 local BANK_BAG_SLOTS = {}
 
@@ -200,7 +202,7 @@ function BagTracking.CreateQueryBagsAuctionable()
 	return BagTracking.CreateQueryBags()
 		:Equal("isBoP", false)
 		:Equal("isBoA", false)
-		:Custom(private.NoUsedChargesQueryFilter)
+		:Custom(private.IsAuctionableQueryFilter)
 end
 
 function BagTracking.CreateQueryBagsItem(itemString)
@@ -219,7 +221,7 @@ function BagTracking.CreateQueryBagsItemAuctionable(itemString)
 	return BagTracking.CreateQueryBagsItem(itemString)
 		:Equal("isBoP", false)
 		:Equal("isBoA", false)
-		:Custom(private.NoUsedChargesQueryFilter)
+		:Custom(private.IsAuctionableQueryFilter)
 end
 
 function BagTracking.GetNumMailable(itemString)
@@ -480,8 +482,14 @@ end
 -- Private Helper Functions
 -- ============================================================================
 
-function private.NoUsedChargesQueryFilter(row)
-	return not InventoryInfo.HasUsedCharges(row:GetFields("bag", "slot"))
+function private.IsAuctionableQueryFilter(row)
+	if TSM.IsWowClassic() then
+		return not TooltipScanning.HasUsedCharges(row:GetFields("bag", "slot"))
+	else
+		private.itemLocation:Clear()
+		private.itemLocation:SetBagAndSlot(row:GetFields("bag", "slot"))
+		return C_AuctionHouse.IsSellItemValid(private.itemLocation)
+	end
 end
 
 function private.RemoveExtraSlots(bag, numSlots)

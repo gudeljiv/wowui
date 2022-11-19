@@ -84,10 +84,6 @@ function InventoryInfo.IsSoulbound(bag, slot)
 	return isBOP, isBOA
 end
 
-function InventoryInfo.HasUsedCharges(bag, slot)
-	return TooltipScanning.HasUsedCharges(bag, slot)
-end
-
 
 
 -- ============================================================================

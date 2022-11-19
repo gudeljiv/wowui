@@ -92,11 +92,7 @@ function Tooltip.Show(parent, data, noWrapping, xOffset)
 				info.quantity = 1
 				tinsert(private.optionalMatTable, info)
 			end
-			if TSM.IsWowDragonflightPTR() then
-				GameTooltip:SetRecipeResultItem(spellId, private.optionalMatTable, nil, level)
-			else
-				C_TradeSkillUI.SetTooltipRecipeResultItem(spellId, private.optionalMatTable, nil, level)
-			end
+			GameTooltip:SetRecipeResultItem(spellId, private.optionalMatTable, nil, level)
 		end
 	elseif type(data) == "string" and (strfind(data, "^\124c.+\124Hitem:") or ItemString.IsItem(data)) then
 		GameTooltip:SetHyperlink(ItemInfo.GetLink(data))

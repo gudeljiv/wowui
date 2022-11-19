@@ -474,13 +474,15 @@ function ProfessionUtil.GetRecipeToolInfo(craftString)
 			toolsStr, hasTools = GetTradeSkillTools(index)
 		end
 	else
-		if TSM.IsWowDragonflightPTR() then
-			local requirements = C_TradeSkillUI.GetRecipeRequirements(spellId)
-			local toolName, hasTool = private.HasRequiredTool(requirements)
-			toolsStr, hasTools = toolName, hasTool
-		else
-			toolsStr, hasTools = C_TradeSkillUI.GetRecipeTools(spellId)
+		for _, requirement in ipairs(C_TradeSkillUI.GetRecipeRequirements(spellId)) do
+			if requirement.type == Enum.RecipeRequirementType.Totem then
+				toolsStr = requirement.name
+				if not requirement.met then
+					return toolsStr, false
+				end
+			end
 		end
+		hasTools = true
 	end
 	return toolsStr, hasTools
 end
@@ -703,18 +705,4 @@ function private.GetPlayerCastingInfo()
 	else
 		return UnitCastingInfo("player")
 	end
-end
-
-function private.HasRequiredTool(requirements)
-	local toolName, hasTool = nil, true
-	for _, recipeRequirement in ipairs(requirements) do
-		if recipeRequirement.type == Enum.RecipeRequirementType.Totem then
-			toolName = recipeRequirement.name
-			if not recipeRequirement.met then
-				hasTool = false
-				return toolName, hasTool
-			end
-		end
-	end
-	return toolName, hasTool
 end
