@@ -1,3 +1,10 @@
+VER 3 0000000000000013 " " "132130"
+/click RotBotF3
+END
+VER 3 0000000000000012 " " "132143"
+#showtooltip
+/startattack
+END
 VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use Fel Sharpening Stone
@@ -6,13 +13,6 @@ END
 VER 3 000000000000000E " " "136106"
 /inspect
 /run SortBags()
-END
-VER 3 0000000000000013 " " "132130"
-/click RotBotF3
-END
-VER 3 0000000000000012 " " "132143"
-#showtooltip
-/startattack
 END
 VER 3 0000000000000018 "ASAB" "INV_MISC_QUESTIONMARK"
 /run local s,b="SHOW_MULTI_ACTIONBAR_"b=not _G[s..1]for i=1,4 do _G[s..i]=b end InterfaceOptions_UpdateMultiActionBars()
@@ -24,8 +24,8 @@ VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:35953
-/castsequence [combat] reset=combat item:33447
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
 END
 VER 3 000000000000000B "lvl enchant" "132089"
 /click CraftCreateButton
@@ -38,13 +38,13 @@ VER 3 0000000000000016 "Mill" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:33454
+#showtooltip item:0
 /cast feed pet
-/use item:33454
+/use item:0
 END
 VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:33447
+/use item:0
 END
 VER 3 0000000000000017 "Prsp" "Inv_misc_questionmark"
 #showtooltip item:2772
