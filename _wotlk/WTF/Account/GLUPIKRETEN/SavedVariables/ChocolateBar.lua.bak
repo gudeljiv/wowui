@@ -681,17 +681,17 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1286437,
-		["timeStamp"] = 9307.637,
-		["timeAtThisLevel"] = 193890,
+		["total"] = 1300679,
+		["timeStamp"] = 809601.256,
+		["timeAtThisLevel"] = 208132,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 255078,
-		["timeStamp"] = 20480.816,
-		["timeAtThisLevel"] = 249332,
+		["total"] = 255269,
+		["timeStamp"] = 820202.79,
+		["timeAtThisLevel"] = 249523,
 	},
 	["Tudum-Ashbringer"] = {
 		["total"] = 4569,

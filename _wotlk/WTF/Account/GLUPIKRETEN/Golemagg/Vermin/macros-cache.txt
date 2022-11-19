@@ -37,6 +37,7 @@ VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast Mortal Strike
+/use 10
 END
 VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
