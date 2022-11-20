@@ -488,7 +488,7 @@ function private.IsAuctionableQueryFilter(row)
 	else
 		private.itemLocation:Clear()
 		private.itemLocation:SetBagAndSlot(row:GetFields("bag", "slot"))
-		return C_AuctionHouse.IsSellItemValid(private.itemLocation)
+		return C_AuctionHouse.IsSellItemValid(private.itemLocation, false)
 	end
 end
 

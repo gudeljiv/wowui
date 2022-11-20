@@ -187,6 +187,7 @@ local DEFAULT_DB = {
 
 local SETTINGS_INFO = {
 	version = 105,
+	minVersion = 10,
 	global = {
 		debug = {
 			chatLoggingEnabled = { type = "boolean", default = false, lastModifiedVersion = 19 },
@@ -485,19 +486,17 @@ Settings:OnSettingsLoad(function()
 		local oldSyncMetadata = TempTable.Acquire()
 		local oldAccountKey = TempTable.Acquire()
 		local oldCharacters = TempTable.Acquire()
-		for key, value in upgradeObj:RemovedSettingIterator() do
-			local scopeType, scopeKey, _, settingKey = upgradeObj:GetKeyInfo(key)
-			if scopeType == "factionrealm" then
-				if settingKey == "inventory" then
-					oldInventoryData[scopeKey] = value
-				elseif settingKey == "syncMetadata" then
-					oldSyncMetadata[scopeKey] = value
-				elseif settingKey == "accountKey" then
-					oldAccountKey[scopeKey] = value
-				elseif settingKey == "characters" then
-					oldCharacters[scopeKey] = value
-				end
-			end
+		for _, key, value in upgradeObj:RemovedSettingIterator("factionrealm", nil, nil, "inventory") do
+			oldInventoryData[upgradeObj:GetScopeKey(key)] = value
+		end
+		for _, key, value in upgradeObj:RemovedSettingIterator("factionrealm", nil, nil, "syncMetadata") do
+			oldSyncMetadata[upgradeObj:GetScopeKey(key)] = value
+		end
+		for _, key, value in upgradeObj:RemovedSettingIterator("factionrealm", nil, nil, "accountKey") do
+			oldAccountKey[upgradeObj:GetScopeKey(key)] = value
+		end
+		for _, key, value in upgradeObj:RemovedSettingIterator("factionrealm", nil, nil, "characters") do
+			oldCharacters[upgradeObj:GetScopeKey(key)] = value
 		end
 		for factionrealm, characters in pairs(oldInventoryData) do
 			local syncMetadata = oldSyncMetadata[factionrealm] and oldSyncMetadata[factionrealm].TSM_CHARACTERS
@@ -567,154 +566,132 @@ Settings:OnSettingsLoad(function()
 				end
 			end
 		end
-		if prevVersion >= 10 then
-			for key, value in upgradeObj:RemovedSettingIterator() do
-				local scopeType, scopeKey, _, settingKey = upgradeObj:GetKeyInfo(key)
-				if scopeType == "realm" and settingKey == "goldLog" then
-					for character, data in pairs(value) do
-						ProcessGoldLogData(character, data, scopeKey)
-					end
-				end
+		for _, key, value in upgradeObj:RemovedSettingIterator("realm", nil, nil, "goldLog") do
+			local scopeKey = upgradeObj:GetScopeKey(key)
+			for character, data in pairs(value) do
+				ProcessGoldLogData(character, data, scopeKey)
 			end
 		end
 	end
 	if prevVersion < 36 then
-		for key, value in upgradeObj:RemovedSettingIterator() do
-			local scopeType, factionrealm, _, settingKey = upgradeObj:GetKeyInfo(key)
-			if scopeType == "factionrealm" and settingKey == "playerProfessions" then
-				for character, data in pairs(value) do
-					-- check if we know about this character
-					local syncScopeKey = db:GetSyncScopeKeyByCharacter(character, factionrealm)
-					if db:Get("sync", syncScopeKey, "internalData", "classKey") then
-						db:Set("sync", syncScopeKey, "internalData", "playerProfessions", data)
-					end
+		for _, key, value in upgradeObj:RemovedSettingIterator("factionrealm", nil, nil, "playerProfessions") do
+			local factionrealm = upgradeObj:GetScopeKey(key)
+			for character, data in pairs(value) do
+				-- check if we know about this character
+				local syncScopeKey = db:GetSyncScopeKeyByCharacter(character, factionrealm)
+				if db:Get("sync", syncScopeKey, "internalData", "classKey") then
+					db:Set("sync", syncScopeKey, "internalData", "playerProfessions", data)
 				end
-			end
-		end
-	end
-	if prevVersion < 53 and not TSM.IsWowClassic() then
-		for key, value in upgradeObj:RemovedSettingIterator() do
-			local scopeType, factionrealm, namespace, settingKey = upgradeObj:GetKeyInfo(key)
-			if scopeType == "factionrealm" and namespace == "internalData" and settingKey == "crafts" then
-				db:Set("factionrealm", factionrealm, "internalData", "crafts", value)
 			end
 		end
 	end
 	if prevVersion < 64 then
-		for key, value in upgradeObj:RemovedSettingIterator() do
-			local scopeType, _, namespace, settingKey = upgradeObj:GetKeyInfo(key)
-			if scopeType == "global" and namespace == "accountingOptions" and settingKey == "smartBuyPrice" and value then
-				-- show a dialog to inform the user that this was removed
-				StaticPopupDialogs["TSM_ACCOUNTING_SMART_AVG_REMOVED"] = {
-					text = L["The 'use smart average for purchase price' setting has been removed from TSM and replaced with a new 'SmartAvgBuy' price source. Please update your custom prices appropriately."],
-					button1 = OKAY,
-					timeout = 0,
-					whileDead = true,
-				}
-				Wow.ShowStaticPopupDialog("TSM_ACCOUNTING_SMART_AVG_REMOVED")
-			end
+		local hadValue = false
+		for _, _, value in upgradeObj:RemovedSettingIterator("global", nil, "accountingOptions", "smartBuyPrice") do
+			hadValue = hadValue or value
+		end
+		if hadValue then
+			-- show a dialog to inform the user that this was removed
+			StaticPopupDialogs["TSM_ACCOUNTING_SMART_AVG_REMOVED"] = {
+				text = L["The 'use smart average for purchase price' setting has been removed from TSM and replaced with a new 'SmartAvgBuy' price source. Please update your custom prices appropriately."],
+				button1 = OKAY,
+				timeout = 0,
+				whileDead = true,
+			}
+			Wow.ShowStaticPopupDialog("TSM_ACCOUNTING_SMART_AVG_REMOVED")
 		end
 	end
 	if prevVersion < 82 then
-		for key, value in upgradeObj:RemovedSettingIterator() do
-			local scopeType, scopeKey, namespace, settingKey = upgradeObj:GetKeyInfo(key)
-			if scopeType == "global" and namespace == "craftingUIContext" and settingKey == "professionScrollingTable" then
-				-- preserve the previous values
-				local newTbl = db:Get(scopeType, scopeKey, namespace, settingKey)
-				for col, width in pairs(value.colWidth) do
-					newTbl.colWidth[col] = width
-				end
-				for col, hidden in pairs(value.colHidden) do
-					newTbl.colHidden[col] = hidden
-				end
-				if value.collapsed then
-					for col, collapsed in pairs(value.collapsed) do
-						newTbl.collapsed[col] = collapsed
-					end
+		for _, key, value in upgradeObj:RemovedSettingIterator("global", nil, "craftingUIContext", "professionScrollingTable") do
+			-- preserve the previous values
+			local newTbl = db:Get("global", upgradeObj:GetScopeKey(key), "craftingUIContext", "professionScrollingTable")
+			for col, width in pairs(value.colWidth) do
+				newTbl.colWidth[col] = width
+			end
+			for col, hidden in pairs(value.colHidden) do
+				newTbl.colHidden[col] = hidden
+			end
+			if value.collapsed then
+				for col, collapsed in pairs(value.collapsed) do
+					newTbl.collapsed[col] = collapsed
 				end
 			end
 		end
 	end
 	if prevVersion < 89 then
-		for key, value in upgradeObj:RemovedSettingIterator() do
-			local scopeType, scopeKey, namespace, settingKey = upgradeObj:GetKeyInfo(key)
-			if scopeType == "global" and namespace == "craftingOptions" and settingKey == "defaultCraftPriceMethod" then
-				-- preserve the previous value
-				db:Set(scopeType, scopeKey, namespace, settingKey, value)
-			end
+		for _, key, value in upgradeObj:RemovedSettingIterator("global", nil, "craftingOptions", "defaultCraftPriceMethod") do
+			-- preserve the previous value
+			db:Set("global", upgradeObj:GetScopeKey(key), "craftingOptions", "defaultCraftPriceMethod", value)
 		end
 	end
 	if prevVersion < 96 then
-		for key, value in upgradeObj:RemovedSettingIterator() do
-			local scopeType, scopeKey, namespace, settingKey = upgradeObj:GetKeyInfo(key)
-			if scopeType == "global" and namespace == "userData" and settingKey == "savedShoppingSearches" then
-				-- convert how they are stored
-				local newTbl = db:Get(scopeType, scopeKey, namespace, settingKey)
-				for i, searchInfo in ipairs(value) do
-					local filter = searchInfo.filter
-					if searchInfo.name ~= filter then
-						newTbl.name[filter] = searchInfo.name
-					end
-					if searchInfo.isFavorite then
-						newTbl.isFavorite[filter] = true
-					end
-					newTbl.filters[i] = filter
+		for _, key, value in upgradeObj:RemovedSettingIterator("global", nil, "userData", "savedShoppingSearches") do
+			-- convert how they are stored
+			local newTbl = db:Get("global", upgradeObj:GetScopeKey(key), "userData", "savedShoppingSearches")
+			for i, searchInfo in ipairs(value) do
+				local filter = searchInfo.filter
+				if searchInfo.name ~= filter then
+					newTbl.name[filter] = searchInfo.name
 				end
-			elseif scopeType == "global" and namespace == "userData" and settingKey == "savedAuctioningSearches" then
-				-- convert how they are stored
-				local newTbl = db:Get(scopeType, scopeKey, namespace, settingKey)
-				for i, searchInfo in ipairs(value) do
-					local filter = searchInfo.filter
-					if searchInfo.name ~= filter then
-						newTbl.name[filter] = searchInfo.name
-					end
-					if searchInfo.isFavorite then
-						newTbl.isFavorite[filter] = true
-					end
-					newTbl.filters[i] = filter
-					newTbl.searchTypes[i] = searchInfo.searchType
+				if searchInfo.isFavorite then
+					newTbl.isFavorite[filter] = true
 				end
+				newTbl.filters[i] = filter
 			end
 		end
-	end
-	if prevVersion < 99 then
-		local IGNORED_COOLDOWN_SEP = "\001"
-		for key, value in upgradeObj:RemovedSettingIterator() do
-			local scopeType, factionrealm, namespace, settingKey = upgradeObj:GetKeyInfo(key)
-			if scopeType == "factionrealm" and namespace == "internalData" and settingKey == "crafts" then
-				local recipeData = {}
-				for spellId, data in pairs(value) do
-					recipeData["c:"..spellId] = data
+
+		for _, key, value in upgradeObj:RemovedSettingIterator("global", nil, "userData", "savedAuctioningSearches") do
+			-- convert how they are stored
+			local newTbl = db:Get("global", upgradeObj:GetScopeKey(key), "userData", "savedAuctioningSearches")
+			for i, searchInfo in ipairs(value) do
+				local filter = searchInfo.filter
+				if searchInfo.name ~= filter then
+					newTbl.name[filter] = searchInfo.name
 				end
-				db:Set("factionrealm", factionrealm, "internalData", "crafts", recipeData)
-			elseif scopeType == "factionrealm" and namespace == "userData" and settingKey == "craftingCooldownIgnore" then
-				local cooldownData = {}
-				for entry in pairs(value) do
-					local characterKey, spellId = strsplit(IGNORED_COOLDOWN_SEP, entry)
-					cooldownData[characterKey..IGNORED_COOLDOWN_SEP.."c:"..spellId] = true
+				if searchInfo.isFavorite then
+					newTbl.isFavorite[filter] = true
 				end
-				db:Set("factionrealm", factionrealm, "userData", "craftingCooldownIgnore", cooldownData)
-			elseif scopeType == "char" and namespace == "internalData" and settingKey == "craftingCooldowns" then
-				local cooldownData = {}
-				for spellId, data in pairs(value) do
-					cooldownData["c:"..spellId] = data
-				end
-				db:Set("char", factionrealm, "internalData", "craftingCooldowns", cooldownData)
+				newTbl.filters[i] = filter
+				newTbl.searchTypes[i] = searchInfo.searchType
 			end
 		end
 	end
 	if prevVersion < 105 and not TSM.IsWowClassic() then
-		for key, value in upgradeObj:RemovedSettingIterator() do
-			local scopeType, factionrealm, namespace, settingKey = upgradeObj:GetKeyInfo(key)
-			if scopeType == "factionrealm" and namespace == "internalData" and settingKey == "crafts" then
-				db:Set("factionrealm", factionrealm, "internalData", "crafts", value)
-			elseif scopeType == "factionrealm" and namespace == "userData" and settingKey == "craftingCooldownIgnore" then
-				db:Set("factionrealm", factionrealm, "userData", "craftingCooldownIgnore", value)
-			elseif scopeType == "char" and namespace == "internalData" and settingKey == "craftingCooldowns" then
-				db:Set("char", factionrealm, "internalData", "craftingCooldowns", value)
+		for _, key, value in upgradeObj:RemovedSettingIterator("factionrealm", nil, "internalData", "crafts") do
+			if prevVersion < 99 then
+				local newValue = {}
+				for spellId, data in pairs(value) do
+					newValue["c:"..spellId] = data
+				end
+				value = newValue
 			end
+			db:Set("factionrealm", upgradeObj:GetScopeKey(key), "internalData", "crafts", value)
+		end
+		for _, key, value in upgradeObj:RemovedSettingIterator("factionrealm", nil, "userData", "craftingCooldownIgnore") do
+			if prevVersion < 99 then
+				local IGNORED_COOLDOWN_SEP = "\001"
+				local newValue = {}
+				for entry in pairs(value) do
+					local characterKey, spellId = strsplit(IGNORED_COOLDOWN_SEP, entry)
+					newValue[characterKey..IGNORED_COOLDOWN_SEP.."c:"..spellId] = true
+				end
+				value = newValue
+			end
+			db:Set("factionrealm", upgradeObj:GetScopeKey(key), "userData", "craftingCooldownIgnore", value)
+		end
+		for _, key, value in upgradeObj:RemovedSettingIterator("char", nil, "internalData", "craftingCooldowns") do
+			if prevVersion < 99 then
+				local newValue = {}
+				for spellId, data in pairs(value) do
+					newValue["c:"..spellId] = data
+				end
+				value = newValue
+			end
+			db:Set("char", upgradeObj:GetScopeKey(key), "internalData", "craftingCooldowns", value)
 		end
 	end
+	-- NOTE: When adding migrations, be careful of multiple migrations modifying the same key, as
+	-- the RemovedSettingIterator value could be stale.
 end)
 
 
@@ -909,7 +886,8 @@ function private.Constructor(name, rawSettingsInfo)
 	assert(type(name) == "string")
 	assert(type(rawSettingsInfo) == "table")
 	local version = rawSettingsInfo.version
-	assert(type(version) == "number" and version >= 1)
+	local minVersion = rawSettingsInfo.minVersion
+	assert(type(version) == "number" and type(minVersion) == "number" and minVersion >= 1 and version >= minVersion)
 
 	-- get (and create if necessary) the global table
 	local db = _G[name]
@@ -923,7 +901,7 @@ function private.Constructor(name, rawSettingsInfo)
 	local hashDataParts = TempTable.Acquire()
 	local newLastModifiedVersion = TempTable.Acquire()
 	for scope, scopeSettingsInfo in pairs(rawSettingsInfo) do
-		if scope ~= "version" then
+		if scope ~= "version" and scope ~= "minVersion" then
 			assert(SCOPE_TYPES[scope], "Invalid scope: "..tostring(scope))
 			for namespace, namespaceSettingsInfo in pairs(scopeSettingsInfo) do
 				assert(type(namespace) == "string" and type(namespaceSettingsInfo) == "table")
@@ -960,7 +938,7 @@ function private.Constructor(name, rawSettingsInfo)
 	if not next(db) then
 		-- new DB
 		isValid = false
-	elseif not private.ValidateDB(db) then
+	elseif not private.ValidateDB(db, minVersion) then
 		-- corrupted DB
 		assert(not TSM.IsDevVersion(), "DB is not valid!")
 		isValid = false
@@ -1069,7 +1047,7 @@ function private.Constructor(name, rawSettingsInfo)
 			end
 		end
 		for scope, scopeInfo in pairs(settingsInfo) do
-			if scope ~= "version" then
+			if scope ~= "version" and scope ~= "minVersion" then
 				for namespace, namespaceInfo in pairs(scopeInfo) do
 					for settingKey, info in pairs(namespaceInfo) do
 						local settingLastModifiedVersion = db._lastModifiedVersion[strjoin(KEY_SEP, SCOPE_TYPES[scope], namespace, settingKey)]
@@ -1110,7 +1088,7 @@ function private.Constructor(name, rawSettingsInfo)
 		namespaceProxies = {},
 	}
 	for scopeType, scopeInfo in pairs(rawSettingsInfo) do
-		if scopeType ~= "version" then
+		if scopeType ~= "version" and scopeType ~= "minVersion" then
 			for namespace in pairs(scopeInfo) do
 				private.context[new].namespaceProxies[scopeType..KEY_SEP..namespace] = private.CreateNamespace(new, namespace, scopeType)
 			end
@@ -1142,8 +1120,21 @@ private.SettingsDBUpgradeObjMT = {
 			return private.upgradeContext.prevVersion
 		end,
 
-		RemovedSettingIterator = function(self)
-			return next, private.upgradeContext.removedSettings, nil
+		RemovedSettingIterator = function(self, filterScopeType, filterScopeKey, filterNamespace, filterSettingKey)
+			assert(not filterScopeType or SCOPE_TYPES[filterScopeType])
+			filterScopeType = filterScopeType and SCOPE_TYPES[filterScopeType] or ".+"
+			filterScopeKey = filterScopeKey and String.Escape(filterScopeKey) or ".+"
+			filterNamespace = filterNamespace and String.Escape(filterNamespace) or ".+"
+			filterSettingKey = filterSettingKey and String.Escape(filterSettingKey) or ".+"
+			local keyFilter = "^"..strjoin(KEY_SEP, filterScopeType, filterScopeKey, filterNamespace, filterSettingKey).."$"
+			local result = TempTable.Acquire()
+			for key, value in pairs(private.upgradeContext.removedSettings) do
+				if strmatch(key, keyFilter) then
+					tinsert(result, key)
+					tinsert(result, value)
+				end
+			end
+			return TempTable.Iterator(result, 2)
 		end,
 
 		GetKeyInfo = function(self, key)
@@ -1152,13 +1143,18 @@ private.SettingsDBUpgradeObjMT = {
 			if #parts == 4 then
 				scopeType, scopeKey, namespace, settingKey = TempTable.UnpackAndRelease(parts)
 				scopeType = private.ScopeReverseLookup(scopeType)
-			elseif #parts == 3 then
-				scopeType, scopeKey, settingKey = TempTable.UnpackAndRelease(parts)
-				scopeType = private.ScopeReverseLookup(scopeType)
 			else
 				error("Unknown key: "..tostring(key))
 			end
 			return scopeType, scopeKey, namespace, settingKey
+		end,
+
+		GetScopeKey = function(self, key)
+			local scopeKey = strmatch(key, "^.+@(.+)@.+@.+$")
+			if not scopeKey then
+				error("Unknown key: "..tostring(key))
+			end
+			return scopeKey
 		end,
 	},
 
@@ -1571,10 +1567,11 @@ function private.ScopeReverseLookup(scopeTypeShort)
 	end
 end
 
-function private.ValidateDB(db)
+function private.ValidateDB(db, minVersion)
 	-- make sure the DB we are loading from is valid
 	if #db > 0 then return end
 	if type(db._version) ~= "number" then return end
+	if db._version < minVersion then return end
 	if type(db._hash) ~= "number" then return end
 	if db._lastModifiedVersion ~= nil and type(db._lastModifiedVersion) ~= "table" then return end
 	if type(db._scopeKeys) ~= "table" then return end

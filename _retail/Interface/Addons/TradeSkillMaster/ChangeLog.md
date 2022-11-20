@@ -1,6 +1,7 @@
-## v4.11.70 Changes
+## v4.11.71 Changes
 
-* [Retail] Fixed issue with posting not ignoring items with used charges
-* [Retail] Added workaround for issue with recipe tooltips
+* [Retail] Fixed error when running Vendor/Disenchant search
+* [Retail] Fixed error when loading very old TSM settings
+* [Retail] Fixed issue with WoW showing error text when opening the AH
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)
