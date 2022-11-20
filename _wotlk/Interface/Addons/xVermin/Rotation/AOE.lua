@@ -3,7 +3,7 @@ local minRange, maxRange, unitcasting, unit, inRange, range, targetcasting
 
 local t = {
 	'Critter',
-	'Not specified',
+	-- 'Not specified',
 	'Totem',
 	'Non-combat Pet',
 	'Gas Cloud'

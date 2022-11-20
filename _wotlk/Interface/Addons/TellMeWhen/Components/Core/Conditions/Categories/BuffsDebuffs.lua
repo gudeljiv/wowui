@@ -116,6 +116,7 @@ end
 
 
 function Env.AuraTooltipNumber(...)
+	-- TODO: Replace GetParser with direct usage of C_TooltipInfo when available
 	local Parser, LT1, LT2 = TMW:GetParser()
 	local module = CNDT:NewModule("TooltipParser", "AceEvent-3.0")
 
@@ -284,7 +285,7 @@ ConditionCategory:RegisterCondition(2.5, "BUFFPERC", {
 		check:SetTexts(L["ONLYCHECKMINE"], L["ONLYCHECKMINE_DESC"])
 	end,
 	formatter = TMW.C.Formatter.PERCENT,
-	icon = "Interface\\Icons\\spell_holy_renew",
+	icon = "Interface\\Icons\\spell_holy_circleofrenewal",
 	tcoords = CNDT.COMMON.standardtcoords,
 	funcstr = function(c)
 		return [[AuraPercent(c.Unit, c.NameFirst, "HELPFUL]] .. (c.Checked and " PLAYER" or "") .. [[") c.Operator c.Level]]
@@ -320,7 +321,7 @@ ConditionCategory:RegisterCondition(2,	 "BUFFDURCOMP", {
 		check:SetTexts(L["ONLYCHECKMINE"], L["ONLYCHECKMINE_DESC"])
 	end,
 	useSUG = true,
-	icon = "Interface\\Icons\\spell_nature_resistnature",
+	icon = "Interface\\Icons\\spell_nature_rejuvenation",
 	tcoords = CNDT.COMMON.standardtcoords,
 	funcstr = function(c)
 		return [[AuraDur(c.Unit, c.NameFirst, "HELPFUL]] .. (c.Checked and " PLAYER" or "") .. [[") c.Operator AuraDur(c.Unit, c.NameFirst2, "HELPFUL]] .. (c.Checked2 and " PLAYER" or "") .. [[")]]
@@ -343,10 +344,34 @@ ConditionCategory:RegisterCondition(3,	 "BUFFSTACKS", {
 		check:SetTexts(L["ONLYCHECKMINE"], L["ONLYCHECKMINE_DESC"])
 	end,
 	texttable = setmetatable({[0] = format(STACKS, 0).." ("..L["ICONMENU_ABSENT"]..")"}, {__index = function(tbl, k) return format(STACKS, k) end}),
-	icon = "Interface\\Icons\\spell_holy_blessingofstrength",
+	icon = "Interface\\Icons\\inv_misc_herb_felblossom",
 	tcoords = CNDT.COMMON.standardtcoords,
 	funcstr = function(c)
 		return [[AuraStacks(c.Unit, c.NameFirst, "HELPFUL]] .. (c.Checked and " PLAYER" or "") .. [[") c.Operator c.Level]]
+	end,
+	events = function(ConditionObject, c)
+		return
+			ConditionObject:GetUnitChangedEventString(CNDT:GetUnit(c.Unit)),
+			ConditionObject:GenerateUnitAuraString(CNDT:GetUnit(c.Unit), TMW:GetSpells(c.Name).First, c.Checked)
+	end,
+})
+ConditionCategory:RegisterCondition(4,	 "BUFFTOOLTIP", {
+	text = L["ICONMENU_BUFF"] .. " - " .. L["TOOLTIPSCAN"],
+	tooltip = L["TOOLTIPSCAN_DESC"],
+	range = 500,
+	--texttable = {[0] = "0 ("..L["ICONMENU_ABSENT"]..")"},
+	name = function(editbox)
+		editbox:SetTexts(L["BUFFTOCHECK"], L["TOOLTIPSCAN_DESC"])
+	end,
+	useSUG = true,
+	check = function(check)
+		check:SetTexts(L["ONLYCHECKMINE"], L["ONLYCHECKMINE_DESC"])
+	end,
+	icon = "Interface\\Icons\\inv_elemental_primal_mana",
+	tcoords = CNDT.COMMON.standardtcoords,
+	hidden = TMW.isWrath,
+	funcstr = function(c)
+		return [[AuraVariableNumber(c.Unit, c.NameFirst, "HELPFUL]] .. (c.Checked and " PLAYER" or "") .. [[") c.Operator c.Level]]
 	end,
 	events = function(ConditionObject, c)
 		return
@@ -367,7 +392,7 @@ for i = 1, 3 do -- BUFFTOOLTIPSCAN
 		check = function(check)
 			check:SetTexts(L["ONLYCHECKMINE"], L["ONLYCHECKMINE_DESC"])
 		end,
-		icon = "Interface\\Icons\\spell_ice_lament",
+		icon = TMW.isWrath and "Interface\\Icons\\spell_ice_lament" or "Interface\\Icons\\ability_priest_clarityofwill",
 		tcoords = CNDT.COMMON.standardtcoords,
 		funcstr = function(c)
 			return [[AuraTooltipNumber(c.Unit, c.NameFirst, "HELPFUL]] .. (c.Checked and " PLAYER" or "") .. [[", ]] .. i .. [[) c.Operator c.Level]]
@@ -392,7 +417,7 @@ ConditionCategory:RegisterCondition(5,	 "BUFFNUMBER", {
 		check:SetTexts(L["ONLYCHECKMINE"], L["ONLYCHECKMINE_DESC"])
 	end,
 	texttable = function(k) return format(L["ACTIVE"], k) end,
-	icon = "Interface\\Icons\\spell_holy_sealofprotection",
+	icon = "Interface\\Icons\\ability_paladin_sacredcleansing",
 	tcoords = CNDT.COMMON.standardtcoords,
 	funcstr = function(c)
 		return [[AuraCount(c.Unit, c.Spells, "HELPFUL]] .. (c.Checked and " PLAYER" or "") .. [[") c.Operator c.Level]]
@@ -405,6 +430,30 @@ ConditionCategory:RegisterCondition(5,	 "BUFFNUMBER", {
 })
 
 ConditionCategory:RegisterSpacer(8)
+
+if UnitGetTotalAbsorbs then
+	ConditionCategory:RegisterCondition(9,	 "ABSORBAMT", {
+		text = L["ABSORBAMT"],
+		tooltip = L["ABSORBAMT_DESC"],
+		range = 50000,
+		icon = "Interface\\Icons\\spell_holy_powerwordshield",
+		formatter = TMW.C.Formatter.COMMANUMBER,
+		tcoords = CNDT.COMMON.standardtcoords,
+		Env = {
+			UnitGetTotalAbsorbs = UnitGetTotalAbsorbs,
+		},
+		funcstr = function(c)
+			return [[UnitGetTotalAbsorbs(c.Unit) c.Operator c.Level]]
+		end,
+		events = function(ConditionObject, c)
+			return
+				ConditionObject:GetUnitChangedEventString(CNDT:GetUnit(c.Unit)),
+				ConditionObject:GenerateNormalEventString("UNIT_ABSORB_AMOUNT_CHANGED", CNDT:GetUnit(c.Unit))
+		end,
+	})
+end
+
+ConditionCategory:RegisterSpacer(10)
 
 ConditionCategory:RegisterCondition(11,	 "DEBUFFDUR", {
 	text = L["ICONMENU_DEBUFF"] .. " - " .. L["DURATION"],
@@ -471,7 +520,7 @@ ConditionCategory:RegisterCondition(12.5,"DEBUFFPERC", {
 		check:SetTexts(L["ONLYCHECKMINE"], L["ONLYCHECKMINE_DESC"])
 	end,
 	formatter = TMW.C.Formatter.PERCENT,
-	icon = "Interface\\Icons\\ability_rogue_dualweild",
+	icon = TMW.isWrath and "Interface\\Icons\\ability_rogue_dualweild" or "Interface\\Icons\\spell_priest_voidshift",
 	tcoords = CNDT.COMMON.standardtcoords,
 	funcstr = function(c)
 		return [[AuraPercent(c.Unit, c.NameFirst, "HARMFUL]] .. (c.Checked and " PLAYER" or "") .. [[") c.Operator c.Level]]
@@ -542,6 +591,30 @@ ConditionCategory:RegisterCondition(13,	 "DEBUFFSTACKS", {
 			ConditionObject:GenerateUnitAuraString(CNDT:GetUnit(c.Unit), TMW:GetSpells(c.Name).First, c.Checked)
 	end,
 })
+ConditionCategory:RegisterCondition(14,	 "DEBUFFTOOLTIP", {
+	text = L["ICONMENU_DEBUFF"] .. " - " .. L["TOOLTIPSCAN"],
+	tooltip = L["TOOLTIPSCAN_DESC"],
+	range = 500,
+	--texttable = {[0] = "0 ("..L["ICONMENU_ABSENT"]..")"},
+	name = function(editbox)
+		editbox:SetTexts(L["DEBUFFTOCHECK"], L["TOOLTIPSCAN_DESC"])
+	end,
+	useSUG = true,
+	check = function(check)
+		check:SetTexts(L["ONLYCHECKMINE"], L["ONLYCHECKMINE_DESC"])
+	end,
+	icon = "Interface\\Icons\\spell_shadow_lifedrain",
+	tcoords = CNDT.COMMON.standardtcoords,
+	hidden = TMW.isWrath,
+	funcstr = function(c)
+		return [[AuraVariableNumber(c.Unit, c.NameFirst, "HARMFUL]] .. (c.Checked and " PLAYER" or "") .. [[") c.Operator c.Level]]
+	end,
+	events = function(ConditionObject, c)
+		return
+			ConditionObject:GetUnitChangedEventString(CNDT:GetUnit(c.Unit)),
+			ConditionObject:GenerateUnitAuraString(CNDT:GetUnit(c.Unit), TMW:GetSpells(c.Name).First, c.Checked)
+	end,
+})
 for i = 1, 3 do -- BUFFTOOLTIPSCAN
 	ConditionCategory:RegisterCondition(14 + 0.1*i,	 "DEBUFFTOOLTIPSCAN" .. i, {
 		text = L["ICONMENU_DEBUFF"] .. " - " .. L["TOOLTIPSCAN2"]:format(i),
@@ -580,7 +653,7 @@ ConditionCategory:RegisterCondition(15,	 "DEBUFFNUMBER", {
 		check:SetTexts(L["ONLYCHECKMINE"], L["ONLYCHECKMINE_DESC"])
 	end,
 	texttable = function(k) return format(L["ACTIVE"], k) end,
-	icon = "Interface\\Icons\\ability_hunter_quickshot",
+	icon = "Interface\\Icons\\spell_deathknight_frostfever",
 	tcoords = CNDT.COMMON.standardtcoords,
 	funcstr = function(c)
 		return [[AuraCount(c.Unit, c.Spells, "HARMFUL]] .. (c.Checked and " PLAYER" or "") .. [[") c.Operator c.Level]]

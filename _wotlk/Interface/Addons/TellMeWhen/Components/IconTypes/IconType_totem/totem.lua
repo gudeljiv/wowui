@@ -118,55 +118,89 @@ TMW:RegisterUpgrade(48017, {
 	end,
 })
 
-
-local function Totem_OnUpdate(icon, time)
-
-	-- Upvalue things that will be referenced in our loops.
-	local Slots, NameHash, NameFirst = icon.Slots, icon.Spells.Hash, icon.Spells.First
-	
-	-- Be careful here. Slots that are explicitly disabled by the user are set false.
-	-- Slots that are disabled internally are set nil (which could change table length).
-	for iSlot = 1, 5 do
-		if Slots[iSlot] then
-			local _, totemName, start, duration, totemIcon = GetTotemInfo(iSlot)
-			local totemNameLower = strlowerCache[totemName]
-			local totemInfo = totemRanks[totemNameLower]
-			
-			if
-				start ~= 0 and
-				totemName and
-				(
-					NameFirst == "" or
-					NameHash[totemNameLower] or
-					(totemInfo and (
-						-- By totem name, (e.g. "Searing Totem III")
-						NameHash[totemInfo.totemNameLower] or 
-						-- or by spellID,
-						NameHash[totemInfo.spellID] or 
-						-- Or by the spell name (which is the same as the rank 1 totem name) (e.g. "Searing Totem")
-						NameHash[totemInfo.spellNameLower])
+local Totem_OnUpdate
+if TMW.isWrath then
+	Totem_OnUpdate = function (icon, time)
+		-- Upvalue things that will be referenced in our loops.
+		local Slots, NameHash, NameFirst = icon.Slots, icon.Spells.Hash, icon.Spells.First
+		
+		-- Be careful here. Slots that are explicitly disabled by the user are set false.
+		-- Slots that are disabled internally are set nil (which could change table length).
+		for iSlot = 1, 5 do
+			if Slots[iSlot] then
+				local _, totemName, start, duration, totemIcon = GetTotemInfo(iSlot)
+				local totemNameLower = strlowerCache[totemName]
+				local totemInfo = totemRanks[totemNameLower]
+				
+				if
+					start ~= 0 and
+					totemName and
+					(
+						NameFirst == "" or
+						NameHash[totemNameLower] or
+						(totemInfo and (
+							-- By totem name, (e.g. "Searing Totem III")
+							NameHash[totemInfo.totemNameLower] or 
+							-- or by spellID,
+							NameHash[totemInfo.spellID] or 
+							-- Or by the spell name (which is the same as the rank 1 totem name) (e.g. "Searing Totem")
+							NameHash[totemInfo.spellNameLower])
+						)
 					)
-				)
-			then
-				-- The totem is present. Display it and stop.
-				icon:SetInfo("state; texture; start, duration; spell",
-					STATE_PRESENT,
-					totemIcon,
-					start, duration,
-					totemName
-				)
-				return
+				then
+					-- The totem is present. Display it and stop.
+					icon:SetInfo("state; texture; start, duration; spell",
+						STATE_PRESENT,
+						totemIcon,
+						start, duration,
+						totemName
+					)
+					return
+				end
 			end
 		end
+		
+		-- No totems were found. Display a blank state.
+		icon:SetInfo("state; texture; start, duration; spell",
+			STATE_ABSENT,
+			icon.FirstTexture,
+			0, 0,
+			NameFirst
+		)
 	end
-	
-	-- No totems were found. Display a blank state.
-	icon:SetInfo("state; texture; start, duration; spell",
-		STATE_ABSENT,
-		icon.FirstTexture,
-		0, 0,
-		NameFirst
-	)
+else 
+	Totem_OnUpdate = function(icon, time)
+
+		-- Upvalue things that will be referenced in our loops.
+		local Slots, NameStringHash, NameFirst = icon.Slots, icon.Spells.StringHash, icon.Spells.First
+		
+		-- Be careful here. Slots that are explicitly disabled by the user are set false.
+		-- Slots that are disabled internally are set nil (which could change table length).
+		for iSlot = 1, 5 do
+			if Slots[iSlot] then
+				local _, totemName, start, duration, totemIcon = GetTotemInfo(iSlot)
+
+				if start ~= 0 and totemName and (NameFirst == "" or NameStringHash[strlowerCache[totemName]]) then
+					-- The totem is present. Display it and stop.
+					icon:SetInfo("state; texture; start, duration; spell",
+						STATE_PRESENT,
+						totemIcon,
+						start, duration,
+						totemName
+					)
+					return
+				end
+			end
+		end
+		
+		-- No totems were found. Display a blank state.
+		icon:SetInfo("state; texture; start, duration; spell",
+			STATE_ABSENT,
+			icon.FirstTexture,
+			0, 0,
+			NameFirst
+		)
+	end
 end
 
 
@@ -215,7 +249,7 @@ function Type:Setup(icon)
 	if not icon.FirstTexture and onlySlot then
 		icon.FirstTexture = onlySlot.texture and TMW.get(onlySlot.texture)
 	end
-	if not icon.FirstTexture and totemRanks[icon.Spells.FirstString] then
+	if not icon.FirstTexture and totemRanks and totemRanks[icon.Spells.FirstString] then
 		icon.FirstTexture = GetSpellTexture(totemRanks[icon.Spells.FirstString].spellID)
 	end
 	if not icon.FirstTexture then

@@ -27,14 +27,16 @@ local Type = TMW.Classes.IconType:New("guardian")
 LibStub("AceEvent-3.0"):Embed(Type)
 Type.name = L["ICONMENU_GUARDIAN"]
 Type.desc = L["ICONMENU_GUARDIAN_DESC"]
-Type.menuIcon = GetSpellTexture(31687)
+Type.menuIcon = GetSpellTexture(TMW.isWrath and 31687 or 211158)
 Type.usePocketWatch = 1
 Type.AllowNoName = true
 Type.hasNoGCD = true
 Type.canControlGroup = true
+Type.hidden = TMW.isRetail and pclass ~= "WARLOCK"
 
 local STATE_PRESENT = TMW.CONST.STATE.DEFAULT_SHOW
 local STATE_ABSENT = TMW.CONST.STATE.DEFAULT_HIDE
+local STATE_PRESENT_EMPOWERED = "g_emp" 
 
 -- AUTOMATICALLY GENERATED: UsesAttributes
 Type:UsesAttributes("state")
@@ -46,10 +48,17 @@ Type:UsesAttributes("texture")
 
 Type:RegisterIconDefaults{
 	States = {
+		[STATE_PRESENT_EMPOWERED] = {Alpha = 1}
 	},
 
 	-- Sort the guardians by duration
 	Sort					= false,
+
+	-- Pick what duration to show.
+	-- "guardian" will only show the duration of the guardian.
+	-- "empower" will only show the duration of empower.
+	-- "either" will show one or the other.
+	GuardianDuration		= "guardian"
 }
 
 Type:RegisterConfigPanel_XMLTemplate(100, "TellMeWhen_ChooseName", {
@@ -58,6 +67,27 @@ Type:RegisterConfigPanel_XMLTemplate(100, "TellMeWhen_ChooseName", {
 	title = L["ICONMENU_CHOOSENAME3"] .. " " .. L["ICONMENU_CHOOSENAME_ORBLANK"],
 	text = L["ICONMENU_GUARDIAN_CHOOSENAME_DESC"],
 })
+
+if TMW.isRetail then
+	Type:RegisterConfigPanel_ConstructorFunc(120, "TellMeWhen_GuardianDuration", function(self)
+		self:SetTitle(TMW.L["ICONMENU_GUARDIAN_DUR"])
+		self:BuildSimpleCheckSettingFrame({
+			numPerRow = 3,
+			function(check)
+				check:SetTexts(L["ICONMENU_GUARDIAN_DUR_GUARDIAN"], nil)
+				check:SetSetting("GuardianDuration", "guardian")
+			end,
+			function(check)
+				check:SetTexts(L["ICONMENU_GUARDIAN_DUR_EMPOWER"], nil)
+				check:SetSetting("GuardianDuration", "empower")
+			end,
+			function(check)
+				check:SetTexts(L["ICONMENU_GUARDIAN_DUR_EITHER"], L["ICONMENU_GUARDIAN_DUR_EITHER_DESC"])
+				check:SetSetting("GuardianDuration", "either")
+			end,
+		})
+	end)
+end
 
 Type:RegisterConfigPanel_ConstructorFunc(170, "TellMeWhen_GuardianSortSettings", function(self)
 	self:SetTitle(TMW.L["SORTBY"])
@@ -79,10 +109,20 @@ Type:RegisterConfigPanel_ConstructorFunc(170, "TellMeWhen_GuardianSortSettings",
 	})
 end)
 
-Type:RegisterConfigPanel_XMLTemplate(165, "TellMeWhen_IconStates", {
-	[ STATE_PRESENT ] = { order = 2, text = "|cFF00FF00" .. L["ICONMENU_PRESENT"], },
-	[ STATE_ABSENT  ] = { order = 3, text = "|cFFFF0000" .. L["ICONMENU_ABSENT"],  },
-})
+
+
+if pclass == "WARLOCK" and TMW.isRetail then
+	Type:RegisterConfigPanel_XMLTemplate(165, "TellMeWhen_IconStates", {
+		[ STATE_PRESENT_EMPOWERED  ] = { order = 1, text = "|cFF00FF00" .. L["ICONMENU_PRESENT"] .. " - " .. L["ICONMENU_GUARDIAN_EMPOWERED"],  },
+		[ STATE_PRESENT ] = { order = 2, text = "|cFF00FF00" .. L["ICONMENU_PRESENT"] .. " - " .. L["ICONMENU_GUARDIAN_UNEMPOWERED"], },
+		[ STATE_ABSENT  ] = { order = 3, text = "|cFFFF0000" .. L["ICONMENU_ABSENT"],  },
+	})
+else
+	Type:RegisterConfigPanel_XMLTemplate(165, "TellMeWhen_IconStates", {
+		[ STATE_PRESENT ] = { order = 2, text = "|cFF00FF00" .. L["ICONMENU_PRESENT"], },
+		[ STATE_ABSENT  ] = { order = 3, text = "|cFFFF0000" .. L["ICONMENU_ABSENT"],  },
+	})
+end
 
 local function Info(duration, spell, triggerMatch, extraData)
 	local data = {
@@ -99,13 +139,47 @@ local function Info(duration, spell, triggerMatch, extraData)
 	return data
 end
 
-Type.GuardianInfo = {
+Type.GuardianInfo = TMW.isWrath and {
 	[510] = Info(45, 31687, false), -- Water Elemental
 	[19668] = Info(15, 34433, false), -- Shadowfiend
 	[15438] = Info(120, 32982, false), -- Fire ele totem
 	[15352] = Info(120, 2062, false), -- Earth ele totem
 	[89] = Info(60 * 5, 1122, false), -- Inferno (warlock)
 	[1964] = Info(30, 33831, false, { countable = true }), -- Treants (force of nature, druid)
+} or {
+	
+	[ 98035] = Info(12, 104316, false), -- Dreadstalker
+	[    89] = Info(30, 1122, false), -- Infernal (Destro)
+	[103673] = Info(20, 205180, false), -- Darkglare (Afflic)
+	
+	-- Wild Imp (HoG)
+	[ 55659] = Info(12, 211158, false, { 
+		isWildImp = true, 
+		triggerSpell = 105174, -- Not the real trigger spell. Set for the tooltip only.
+		-- triggerSpell = 104317,
+	}),
+
+ 	-- Wild Imp (Inner Demons passive)
+	[143622] = Info(12, 279910, true, { isWildImp = true, }),
+
+	[136398] = Info(15, 267987, true), -- Illidari Satyr (Inner Demons passive)
+	[136402] = Info(15, 268001, true), -- Ur'zul (Inner Demons passive)
+	[136403] = Info(15, 267991, true), -- Void Terror (Inner Demons passive)
+	[136404] = Info(15, 267992, true), -- Bilescourge (Inner Demons passive)
+	[136397] = Info(15, 267986, true), -- Prince Malchezzar (Inner Demons passive)
+	[136399] = Info(15, 267988, true), -- Vicious Hellhound (Inner Demons passive)
+	[136401] = Info(15, 267989, true), -- Eyes of Gul'dan (Inner Demons passive)
+	[136406] = Info(15, 267994, true), -- Shivarra (Inner Demons passive)
+	[136407] = Info(15, 267995, true), -- Wrathguard (Inner Demons passive)
+	[136408] = Info(15, 267996, true), -- Darkhound (Inner Demons passive)
+
+
+	[135816] = Info(15, 264119, true), -- Summon Vilefiend
+	[135002] = Info(15, 265187, true), -- Summon Demonic Tyrant
+
+	[ 17252] = Info(17, 111898, true), -- Grimorie: Felguard
+	[107024] = Info(15, 212459, true), -- Call Fel Lord
+	[107100] = Info(20, 201996, true), -- Call Observer
 }
 
 local GuardianInfo = Type.GuardianInfo
@@ -113,11 +187,7 @@ local GuardianInfo = Type.GuardianInfo
 function Type:RefreshNames()
 	for npcID, data in pairs(GuardianInfo) do
 		if not data.nameKnown then
-			local Parser, LT1 = TMW:GetParser()
-			Parser:SetOwner(UIParent, "ANCHOR_NONE")
-			Parser:SetHyperlink(("unit:Creature-0-0-0-0-%d"):format(npcID))
-			local name = LT1:GetText()
-			Parser:Hide()
+			local name = TMW:TryGetNPCName(npcID)
 
 			if not name or name == "" then
 				name = "NPC ID " .. npcID
@@ -157,7 +227,6 @@ local Guardian = TMW:NewClass(){
 		local info = GuardianInfo[self.npcID]
 		self.info = info
 
-		self.countable = info.countable
 		self.duration = info.duration
 		self.texture = info.texture
 	end,
@@ -168,18 +237,37 @@ local Guardian = TMW:NewClass(){
 		self.empowerDuration = 15
 	end,
 
-	GetTimeRemaining = function(self)
+	GetTimeRemaining = function(self, durationMode)
 		local start = self.summonedAt
 		local duration = self.duration
 
 		local guardianRemaining = duration - (TMW.time - start)
 
 		if guardianRemaining > 0 then
+
+			local empowerStart = self.empowerStart
+			local empowerDuration = self.empowerDuration
+
+			local empowerRemaining = empowerDuration - (TMW.time - empowerStart)
 			local displayedRemaining = guardianRemaining
 
-			return start, duration, displayedRemaining, guardianRemaining
-		else
-			return 0, 0, 0, 0
+			if durationMode == "guardian" then
+				-- keep the start/duration from the guardian that are set above
+			elseif durationMode == "empower" then
+				start, duration = empowerStart, empowerDuration
+				displayedRemaining = empowerRemaining
+			else
+				-- Show empower if appropriate - otherwise show the guardian's timer.
+				if empowerRemaining > 0 and guardianRemaining > empowerRemaining then
+					-- There is longer on the guardian than there is on empower. Show empower.
+					start, duration = empowerStart, empowerDuration
+					displayedRemaining = empowerRemaining
+				end
+			end
+
+			return start, duration, displayedRemaining, guardianRemaining, empowerRemaining
+		else 
+			return 0, 0, 0, 0, 0
 		end
 	end,
 }
@@ -196,6 +284,29 @@ function Type:COMBAT_LOG_EVENT_UNFILTERED(e)
 			Guardians[destGUID] = Guardian:New(destGUID, destName)
 		else
 			return
+		end
+	elseif (event == "SPELL_CAST_SUCCESS") and sourceGUID == pGUID then
+		if spellID == 265187 then
+
+			local consumptionLearned = select(10, GetTalentInfoByID(22479))
+			-- Summon Tyrant: duration +15 to all demons.
+			for guid, guardian in pairs(Guardians) do
+				if consumptionLearned and guardian.info.isWildImp then
+					-- If the consumption talent is learned, kill all wild imps.
+					Guardians[guid] = nil
+				else
+					-- Note that this event comes before the tyrant summon event,
+					-- so we won't accidentally give the tyrant empowered.
+					guardian:Empower()
+				end
+			end
+		elseif spellID == 196277 then
+			-- Implosion. Annoyingly doesn't trigger UNIT_DIED or SPELL_INSTAKILL. 
+			for guid, guardian in pairs(Guardians) do
+				if guardian.info.isWildImp then 
+					Guardians[guid] = nil
+				end
+			end
 		end
 	elseif event == "UNIT_DIED" or event == "SPELL_INSTAKILL" then
 		Guardians[destGUID] = nil
@@ -220,11 +331,18 @@ end
 
 local function YieldMatchedGuardian(icon, count, Guardian)
 	local presentAlpha = icon.States[STATE_PRESENT].Alpha
-	local start, duration, displayedRemaining, guardianRemaining = Guardian:GetTimeRemaining()
+	local empowerAlpha = icon.States[STATE_PRESENT_EMPOWERED].Alpha
+	local start, duration, displayedRemaining, guardianRemaining, empowerRemaining = Guardian:GetTimeRemaining(icon.GuardianDuration)
 	if guardianRemaining > 0 then
 
-		if presentAlpha > 0 and not icon:YieldInfo(true, STATE_PRESENT, start, duration, Guardian.texture, Guardian.countable and count or nil) then
-			return false
+		if empowerRemaining > 0 then
+			if empowerAlpha > 0 and not icon:YieldInfo(true, STATE_PRESENT_EMPOWERED, start, duration, Guardian.texture, count) then
+				return false
+			end
+		else
+			if presentAlpha > 0 and not icon:YieldInfo(true, STATE_PRESENT, start, duration, Guardian.texture, count) then
+				return false
+			end
 		end
 	end
 	return true
@@ -233,6 +351,8 @@ end
 local function OnUpdate(icon, time)
 	local NameHash = icon.NPCs.Hash
 	local presentAlpha = icon.States[STATE_PRESENT].Alpha
+	local empowerAlpha = icon.States[STATE_PRESENT_EMPOWERED].Alpha
+
 
 	local count = nil
 	if not icon:IsGroupController() then
@@ -245,9 +365,12 @@ local function OnUpdate(icon, time)
 			-- If the guardian matches the icon's name/id filters, and it would be shown based on opacity filters,
 			-- the include it in the count.
 			if (icon.Name == "" or NameHash[Guardian.nameLower] or NameHash[Guardian.npcID]) then
-				local _, _, _, guardianRemaining = Guardian:GetTimeRemaining()
+	
+				-- "guardian" is passed here because it is the simplest, fastest calculation,
+				-- and it doesn't affect the two values we care about here.
+				local _, _, _, guardianRemaining, empowerRemaining = Guardian:GetTimeRemaining("guardian")
 
-				if ((presentAlpha > 0 and guardianRemaining > 0)) then
+				if ((presentAlpha > 0 and guardianRemaining > 0) or (empowerAlpha > 0 and empowerRemaining > 0)) then
 					count = count + 1
 				end
 			end
@@ -263,6 +386,7 @@ local function OnUpdate(icon, time)
 			local iName = NPCs[i]
 
 			for GUID, Guardian in pairs(Guardians) do
+
 				if icon.Name == "" or Guardian.nameLower == iName or Guardian.npcID == iName then
 					if not YieldMatchedGuardian(icon, count, Guardian) then
 						return
@@ -312,11 +436,11 @@ function Type:Setup(icon)
 
 	icon:SetInfo("texture; reverse", icon.FirstTexture, true)
 
-	local sort = icon.Sort
+	local durationMode, sort = icon.GuardianDuration, icon.Sort
 	icon.GuardianCompareFunc = sort ~= false and function(a, b)
 		local _, aRemain, bRemain
-		local _, _, aRemain = a:GetTimeRemaining()
-		local _, _, bRemain = b:GetTimeRemaining()
+		local _, _, aRemain = a:GetTimeRemaining(durationMode)
+		local _, _, bRemain = b:GetTimeRemaining(durationMode)
 
 		return aRemain*sort > bRemain*sort
 	end or nil

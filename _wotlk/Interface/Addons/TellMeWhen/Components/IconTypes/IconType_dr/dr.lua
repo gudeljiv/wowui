@@ -30,7 +30,7 @@ local CL_CONTROL_PLAYER = COMBATLOG_OBJECT_CONTROL_PLAYER
 
 
 local DRList = LibStub("DRList-1.0")
-	
+
 local DRSpells = DRList:GetSpells()
 local PvEDRs = {}
 for spellID, category in pairs(DRSpells) do
@@ -166,7 +166,7 @@ TMW:RegisterCallback("TMW_EQUIVS_PROCESSING", function()
 	-- Create our own DR equivalencies in TMW using the data from DRList-1.0
 
 	if DRList then
-		local myCategories = {
+		local myCategories = TMW.isWrath and {
 			incapacitate = "DR-Incapacitate",
 			stun =         "DR-ControlledStun",
 			fear =         "DR-Fear",
@@ -174,25 +174,41 @@ TMW:RegisterCallback("TMW_EQUIVS_PROCESSING", function()
 			random_root =  "DR-RandomRoot",
 			random_stun =  "DR-RandomStun",
 			root =         "DR-ControlledRoot",
-			-- silence =      "DR-Silence",
-			kidney_shot =  "DR-KidneyShot",
-			death_coil =   "DR-DeathCoil",
+			silence =      "DR-Silence",
+			opener_stun =  "DR-OpenerStun",
+			horror =       "DR-Horrify",
 			disarm =       "DR-Disarm",
-			scatter_shot = "DR-Scatter",
-			disorient =    "DR-Disorient",
-			freezing_trap ="DR-FreezingTrap",
-			sleep =        "DR-Sleep",
-			unstable_affliction = "DR-UnstableAffliction",
+			scatter =      "DR-Scatter",
+		} or {
+			stun			= "DR-Stun",
+			silence			= "DR-Silence",
+			disorient		= "DR-Disorient",
+			root			= "DR-Root", 
+			incapacitate	= "DR-Incapacitate",
+			taunt 			= "DR-Taunt",
+			disarm 			= "DR-Disarm",
 		}
 
-		local ignored = {
+		local ignored = TMW.isWrath and {
 			knockback = true,
 			frost_shock = true,
+			cyclone = true,
+			counterattack = true,
+			charge = true,
+		} or {
+			rndstun = true,
+			fear = true,
+			mc = true,
+			cyclone = true,
+			shortdisorient = true,
+			horror = true,
+			disarm = true,
+			shortroot = true,
+			knockback = true,
 		}
-	
+		
 		TMW.BE.dr = {}
 		local dr = TMW.BE.dr
-
 		local usedCategories = {}
 		for spellID, category in pairs(DRList:GetSpells()) do
 			local k = myCategories[category]

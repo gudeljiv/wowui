@@ -39,7 +39,7 @@ local IsCaching
 
 SpellCache.CONST = {
 	-- A rough estimate of the highest spellID in the game. Doesn't have to be accurate at all - visual only.
-	MAX_SPELLID_GUESS = 280000,
+	MAX_SPELLID_GUESS = TMW.isWrath and 80000 or 400000,
 	
 	-- Maximum number of non-existant spellIDs that will be checked before the cache is declared complete.
 	MAX_FAILED_SPELLS = 2000,
@@ -47,6 +47,15 @@ SpellCache.CONST = {
 	WHITELIST = {
 		-- A list of spells that will fail other filters, but are still desired
 		[8178] = true, -- Grounding Totem Effect
+		[255016] = true, -- Grounding Totem Effect
+		[228911] = true, -- Odyn's test
+		[227626] = true, -- Odyn's test
+		[275529] = true, -- Test of Might
+		[275531] = true, -- Test of Might
+		[275532] = true, -- Test of Might
+		[275540] = true, -- Test of Might
+
+		-- Classic:
 		[3355] = true, -- Freezing Trap Effect
 		[14308] = true, -- Freezing Trap Effect
 		[14309] = true, -- Freezing Trap Effect
@@ -56,6 +65,32 @@ SpellCache.CONST = {
 	-- A list of spells that should be excluded from the cache
 	INVALID_SPELLS = {
 		[1852] = true, -- GM spell named silenced
+	  [250168] = true, -- Crashes the 9.0 PTR
+	},
+
+	BLACKLIST_TRADESKILL_TEXTURES = {
+		[136240] = true, -- ["Interface\\Icons\\Trade_Alchemy"] = true, 
+		[136241] = true, -- ["Interface\\Icons\\Trade_BlackSmithing"] = true, 
+
+		-- We can't include engineering because there are many valid "tradeskills" that use this icon,
+		-- just because its basically the default icon.
+		-- We will exclude all engineering tradeskills specifically.
+		-- Examples include the class "tradeskills" ("Druid", etc...) and the racial tradeskills ("Racial - Night Elf")
+		--[136243] = true, -- ["Interface\\Icons\\Trade_Engineering"] = true, 
+
+		[136247] = true, -- ["Interface\\Icons\\Trade_LeatherWorking"] = true, 
+
+		[136244] = true, -- ["Interface\\Icons\\Trade_Engraving"] = true, -- (enchanting)
+		[136245] = true, -- ["Interface\\Icons\\Trade_Fishing"] = true, 
+		[136246] = true, -- ["Interface\\Icons\\Trade_Herbalism"] = true, 
+		[136248] = true, -- ["Interface\\Icons\\Trade_Mining"] = true, 
+		[136249] = true, -- ["Interface\\Icons\\Trade_Tailoring"] = true, 
+		[237171] = true, -- ["Interface\\Icons\\INV_Inscription_Tradeskill01"] = true, 
+
+		[133971] = true, -- Cooking
+		[134071] = true, -- JC
+		[134366] = true, -- Skinning
+		[134708] = true, -- Mining
 	},
 
 	-- Any spell that uses these textures should be excluded.
@@ -181,15 +216,39 @@ TMW:RegisterCallback("TMW_OPTIONS_LOADED", function()
 	TMW:Fire("TMW_SPELLCACHE_EXPECTEDCACHELENGTH_UPDATED", TMW.IE.db.locale.SpellCacheLength)
 
 	local INVALID_TEXTURES = CONST.INVALID_TEXTURES
+	local BLACKLIST_TRADESKILL_TEXTURES = CONST.BLACKLIST_TRADESKILL_TEXTURES
+	local WHITELIST_TRADESKILLS = CONST.WHITELIST_TRADESKILLS
+	local WHITELIST = CONST.WHITELIST
 	local MAX_FAILED_SPELLS = CONST.MAX_FAILED_SPELLS
-	
+	local GetTradeSkillLineForRecipe = C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillLineForRecipe
+	local GetTradeSkillTexture = C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillTexture
+	local classLocalizedName = UnitClass("player")
+
+	local function findword(name, word)
+		return strfind(name, word) and strfind(name, "%f[%a]" .. word .. "%f[%A]")
+	end
+
+ 	local tradeSkillBlacklist = {
+		-- We don't blacklist mounts [777] because mounts are often checked as buffs.
+		[778] = false, -- Companions - no compelling reason to cache battle pet summon spells.
+
+		-- Forms of engineering (see BLACKLIST_TRADESKILL_TEXTURES above for why engineering is special)
+		[202] = false,
+		[2499] = false,
+		[2500] = false,
+		[2501] = false,
+		[2502] = false,
+		[2503] = false,
+		[2504] = false,
+		[2505] = false,
+		[2506] = false,
+	}
 	local isNameGood = { [""] = false }
 	local spellID, spellsFailed = 0, 0
 
 	-- The most recent failed spellID that was seen after a success.
 	-- nil if the last spellID was a success.
 	local lastFail = nil
-	local Parser, LT1 = TMW:GetParser()
 
 	local function SpellCacher()
 		local numToCheck = InCombatLockdown() and 10 or NumCachePerFrame
@@ -203,7 +262,7 @@ TMW:RegisterCallback("TMW_OPTIONS_LOADED", function()
 			end
 
 			local name, _, icon = GetSpellInfo(spellID)
-			local fail
+			local fail = false
 			if name then
 				spellsFailed = 0
 
@@ -211,52 +270,77 @@ TMW:RegisterCallback("TMW_OPTIONS_LOADED", function()
 				fail = INVALID_TEXTURES[icon] or false
 
 				if not fail then
-					-- Keep track of known good names. Don't do name checking on known good names.
-					-- Cache by the name before lowering it to avoid strlower() hits.
-					-- We store the lowered name as the value for good names, otherwise false.
-					local knownGood = isNameGood[name]
-					if knownGood == false then
-						fail = true
-					elseif knownGood ~= nil then
-						name = knownGood
-					else
-						local nameOriginal = name
-						name = strlower(name)
-						fail =
-							(strfind(name, "quest") and strfind(name, "%f[%a]quest%f[%A]")) or
-							(strfind(name, "trigger") and strfind(name, "%f[%a]trigger%f[%A]")) or
-							strfind(name, "[%]%[%%%+%?]") or -- no brackets, plus signs, percent signs, or question marks
-							(strfind(name, "visual") and strfind(name, "%f[%a]visual%f[%A]")) or
-							(strfind(name, "dnd") and strfind(name, "%f[%a]dnd%f[%A]")) or
-							(strfind(name, "event") and strfind(name, "%f[%a]event%f[%A]")) or
-							(strfind(name, "test") and strfind(name, "%f[%a]test%f[%A]")) or
-							strfind(name, "%d.%d") or -- Number Dot Number is probably a patch number, used often for internal spells
-							(strfind(name, "vehicle") and strfind(name, "%f[%a]vehicle%f[%A]")) or
-							(strfind(name, "credit") and strfind(name, "%f[%a]credit%f[%A]")) or
-							-- 'effect' is used quite bit in classic for lots of real things. Don't blacklist it.
-							-- (strfind(name, "effect") and strfind(name, "%f[%a]effect%f[%A]")) or
-							(strfind(name, "camera") and strfind(name, "%f[%a]camera%f[%A]")) or
-							(strfind(name, "ph") and strfind(name, "%f[%a]ph%f[%A]")) or
-							(strfind(name, "proc") and strfind(name, "%f[%a]proc%f[%A]")) or
-							(strfind(name, "debug") and strfind(name, "%f[%a]debug%f[%A]")) or
-							(strfind(name, "bunny") and strfind(name, "%f[%a]bunny%f[%A]")) or
-							strfind(name, ":%s?%d") or -- interferes with colon duration syntax
-							(strfind(name, "dmg") and strfind(name, "%f[%a]dmg%f[%A]"))
+					if GetTradeSkillLineForRecipe then
+						-- Get the tradeskillID of the spell.
+						-- There are tons of these. Some examples are
+						-- - "Druid"
+						-- - "Engineering"
+						-- - "Northrend Tailoring"
+						-- - "Racial - Night Elf"
+						-- - "Mounts"
+						-- - "Companions" (battlepets)
 
-						isNameGood[nameOriginal] = not fail and name or false
+						-- What we want to do is filter out anything that has a tradeskill that is some variant of an actual profession.
+						-- We do this by getting the texture of the tradeskill, since all variants of profession tradeskills use the same texture.
+						-- I couldn't find any other way to correlate this data without doing it by hand for hundreds of these.
+						local tradeSkillID, tradeSkillName = GetTradeSkillLineForRecipe(spellID)
+						local isTradeSkillOk = not tradeSkillID or tradeSkillBlacklist[tradeSkillID]
+						if isTradeSkillOk == nil then
+							-- We haven't made a determination yet for this tradeskill. Look for its texture.
+							local tex = GetTradeSkillTexture(tradeSkillID)
+							-- This tradeskill is ok if its texture isn't found in BLACKLIST_TRADESKILL_TEXTURES
+							isTradeSkillOk = not BLACKLIST_TRADESKILL_TEXTURES[tex]
+							tradeSkillBlacklist[tradeSkillID] = isTradeSkillOk
+						end
+
+						fail = not isTradeSkillOk
 					end
 
-					-- if not fail then
-					-- 	Parser:SetOwner(UIParent, "ANCHOR_NONE")
-					-- 	Parser:SetSpellByID(spellID)
-					-- 	local r, g, b = LT1:GetTextColor()
-					-- 	if g < .95 or r < .95 or b < .95 then
-					-- 		fail = true
-					-- 	end
-					-- end
-
 					if not fail then
-						Cache[spellID] = name
+						-- Keep track of known good names. Don't do name checking on known good names.
+						-- Cache by the name before lowering it to avoid strlower() hits.
+						-- We store the lowered name as the value for good names, otherwise false.
+						local knownGood = isNameGood[name]
+						if knownGood == false then
+							fail = true
+						elseif knownGood ~= nil then
+							name = knownGood
+						else 
+							local nameOriginal = name
+							name = strlower(name)
+							fail = 
+								(strfind(name, "quest") and strfind(name, "%f[%a]quest%f[%A]")) or
+								(strfind(name, "trigger") and strfind(name, "%f[%a]trigger%f[%A]")) or
+								strfind(name, "[%]%[%%%+%?]") or -- no brackets, plus signs, percent signs, or question marks
+								(strfind(name, "visual") and strfind(name, "%f[%a]visual%f[%A]")) or
+								(strfind(name, "dnd") and strfind(name, "%f[%a]dnd%f[%A]")) or
+								(strfind(name, "event") and strfind(name, "%f[%a]event%f[%A]")) or
+								(strfind(name, "test") and strfind(name, "%f[%a]test%f[%A]")) or
+								strfind(name, "%d.%d") or -- Number Dot Number is probably a patch number, used often for internal spells
+								(strfind(name, "vehicle") and strfind(name, "%f[%a]vehicle%f[%A]")) or
+								(strfind(name, "credit") and strfind(name, "%f[%a]credit%f[%A]")) or
+								
+								-- 'effect' is used quite bit in classic for lots of real things. Don't blacklist it.
+								-- (note: not sure if this is still true in wrath classic.)
+								(not TMW.isWrath and strfind(name, "effect") and strfind(name, "%f[%a]effect%f[%A]")) or
+
+								(strfind(name, "camera") and strfind(name, "%f[%a]camera%f[%A]")) or
+								-- "ph" was removed because it is so short and non-specific
+								-- that it interferes with words like Phönixflammen (https://de.wowhead.com/spell=194466/ph%C3%B6nixflammen)
+								-- due to the fact that lua isn't unicode aware.
+								--(strfind(name, "ph") and strfind(name, "%f[%a]ph%f[%A]")) or
+								(strfind(name, "proc") and strfind(name, "%f[%a]proc%f[%A]")) or
+								(strfind(name, "debug") and strfind(name, "%f[%a]debug%f[%A]")) or
+								(strfind(name, "bunny") and strfind(name, "%f[%a]bunny%f[%A]")) or
+								strfind(name, ":%s?%d") or -- interferes with colon duration syntax
+								(strfind(name, "dmg") and strfind(name, "%f[%a]dmg%f[%A]"))
+
+							isNameGood[nameOriginal] = not fail and name or false
+						end
+
+						if not fail then
+							Cache[spellID] = name
+						end
 					end
 				end
 
@@ -316,7 +400,10 @@ TMW:RegisterCallback("TMW_OPTIONS_LOADED", function()
 				Cache[spellID] = nil
 			end
 			for spellID in pairs(CONST.WHITELIST) do
-				Cache[spellID] = strlower(GetSpellInfo(spellID))
+				local name = GetSpellInfo(spellID)
+				if name then
+					Cache[spellID] = strlower(name)
+				end
 			end
 
 			IsCaching = nil

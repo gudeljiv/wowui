@@ -338,13 +338,13 @@ local function CLEU_OnEvent(icon, _, t, event, h,
 			extraName = arg2
 			spellID = arg4 -- the spell that was interrupted or the aura that was removed
 			spellName = arg5
-			tex = GetSpellTexture(spellName)
+			tex = GetSpellTexture(spellID)
 		elseif event == "SPELL_AURA_BROKEN_SPELL" or event == "SPELL_INTERRUPT_SPELL" then
 			extraID = arg4 -- the spell that broke it, or the spell that was interrupted
 			extraName = arg5
 			spellID = arg1 -- the spell that was broken, or the spell used to interrupt
 			spellName = arg2
-			tex = GetSpellTexture(spellName)
+			tex = GetSpellTexture(spellID)
 		elseif event == "ENVIRONMENTAL_DAMAGE" then
 			spellName = _G["ACTION_ENVIRONMENTAL_DAMAGE_" .. arg1]
 			tex = EnvironmentalTextures[arg1] or "Interface\\Icons\\INV_Misc_QuestionMark" -- arg1 is
@@ -405,11 +405,11 @@ local function CLEU_OnEvent(icon, _, t, event, h,
 			]]
 		end
 
-		local NameHash = icon.Spells.StringHash
+		local NameHash = icon.Spells.Hash
 		local duration
 		if icon.Name ~= "" and not EventsWithoutSpells[event] then
 			-- Filter the event by spell.
-			local key = (NameHash[strlowerCache[spellName]])
+			local key = (NameHash[spellID] or NameHash[strlowerCache[spellName]])
 			if not key then
 				-- We are filtering by spell, but the even't spell wasn't in the list of OK spells. Return out.
 				return
@@ -424,6 +424,8 @@ local function CLEU_OnEvent(icon, _, t, event, h,
 			end
 		end
 
+		TMW:Assert(tex or spellID)
+
 		-- Set the info that was obtained from the event:
 		local unit, GUID
 		if destUnit then
@@ -432,13 +434,11 @@ local function CLEU_OnEvent(icon, _, t, event, h,
 			unit, GUID = sourceUnit, sourceGUID
 		end
 
-		local spell = spellID ~= 0 and spellID or spellName
-
 		if icon:IsGroupController() then
 			tinsert(icon.capturedCLEUEvents, 1, {
 				TMW.time, duration or icon.CLEUDur,
-				tex or GetSpellTexture(spell),
-				spell,
+				tex or GetSpellTexture(spellID),
+				spellID or spellName,
 				extraID,
 				unit, GUID,
 				sourceUnit, sourceGUID,
@@ -448,8 +448,8 @@ local function CLEU_OnEvent(icon, _, t, event, h,
 			icon:SetInfo(
 				"start, duration; texture; spell; extraSpell; unit, GUID; sourceUnit, sourceGUID; destUnit, destGUID",
 				TMW.time, duration or icon.CLEUDur,
-				tex or GetSpellTexture(spell),
-				spell,
+				tex or GetSpellTexture(spellID),
+				spellID or spellName,
 				extraID,
 				unit, GUID,
 				sourceUnit, sourceGUID,
@@ -561,7 +561,7 @@ function Type:Setup(icon)
 
 	icon:SetInfo("texture", Type:GetConfigIconTexture(icon))
 
-	-- Tell the user if they have an icon that is going to respond to every fucking thing that happens.
+	-- Tell the user if they have an icon that is going to respond to every single thing that happens.
 	if icon.AllowAnyEvents and not icon.SourceUnits and not icon.DestUnits and icon.Name == "" and not icon.SourceFlags and not icon.DestFlags then
 		if TMW.Locked and icon.Enabled then
 			TMW:Warn(L["CLEU_NOFILTERS"]:format(icon:GetIconName(true)))

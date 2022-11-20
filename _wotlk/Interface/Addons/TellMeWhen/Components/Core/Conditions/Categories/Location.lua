@@ -61,19 +61,47 @@ ConditionCategory:RegisterCondition(1,	 "INSTANCE2", {
 
 	unit = false,
 	bitFlagTitle = L["CONDITIONPANEL_BITFLAGS_CHOOSEMENU_TYPES"],
-	bitFlags = {
+	bitFlags = TMW.isWrath and {
 		[01] = {order=01, text=L["CONDITIONPANEL_INSTANCETYPE_NONE"],                                space=true,   }, -- None (Outside)
 		[02] = {order=02, text=BATTLEGROUND,                                                                       }, -- Battleground
 		[03] = {order=03, text=ARENA,                                                                space=true,   }, -- Arena
 
 		[04] = {order=10, text=DUNGEON_DIFFICULTY_5PLAYER,                                                         }, -- 5-player
 		[05] = {order=11, text=DUNGEON_DIFFICULTY_5PLAYER_HEROIC,                                    space=true,   }, -- 5-player Heroic
-		[06] = {order=32, text=RAID_DIFFICULTY_10PLAYER,           }, -- 10-player raid (legacy)
-		[07] = {order=33, text=RAID_DIFFICULTY_25PLAYER,           }, -- 25-player raid (legacy)
-		[08] = {order=34, text=RAID_DIFFICULTY_10PLAYER_HEROIC,    }, -- 10-player heroic raid (legacy)
-		[09] = {order=35, text=RAID_DIFFICULTY_25PLAYER_HEROIC,    }, -- 25-player heroic raid (legacy)
+		[06] = {order=32, text=RAID_DIFFICULTY_10PLAYER,           }, -- 10-player raid 
+		[07] = {order=33, text=RAID_DIFFICULTY_25PLAYER,           }, -- 25-player raid 
+		[08] = {order=34, text=RAID_DIFFICULTY_10PLAYER_HEROIC,    }, -- 10-player heroic raid 
+		[09] = {order=35, text=RAID_DIFFICULTY_25PLAYER_HEROIC,    }, -- 25-player heroic raid 
 		
-		[12] = {order=36, text=RAID_DIFFICULTY_40PLAYER,           }, -- 40-man raid (legacy)
+		[12] = {order=36, text=RAID_DIFFICULTY_40PLAYER,           }, -- 40-man raid 
+	} or {
+		[01] = {order=01, text=L["CONDITIONPANEL_INSTANCETYPE_NONE"],                                space=true,   }, -- None (Outside)
+		[02] = {order=02, text=BATTLEGROUND,                                                                       }, -- Battleground
+		[03] = {order=03, text=ARENA,                                                                space=true,   }, -- Arena
+
+
+		[04] = {order=10, text=DUNGEON_DIFFICULTY_5PLAYER,                                                         }, -- 5-player
+		[05] = {order=11, text=DUNGEON_DIFFICULTY_5PLAYER_HEROIC,                                                  }, -- 5-player Heroic
+		[11] = {order=12, text=format("%s (%s)", DUNGEON_DIFFICULTY_5PLAYER, CHALLENGE_MODE),                      }, -- Challenge Mode 5-man
+		[24] = {order=13, text=format("%s (%s)", DUNGEON_DIFFICULTY_5PLAYER, PLAYER_DIFFICULTY_TIMEWALKER or "TW"),}, -- Warlords 5-man Timewalker
+		[23] = {order=14, text=format("%s (%s)", DUNGEON_DIFFICULTY_5PLAYER, PLAYER_DIFFICULTY6),    space=true,   }, -- Warlords 5-man Mythic
+
+
+		[14] = {order=17, text=GUILD_CHALLENGE_TYPE4,                                                              }, -- Normal scenario
+		[13] = {order=18, text=HEROIC_SCENARIO,                                                      space=true,   }, -- Heroic scenario
+
+
+		[18] = {order=21, text=format("%s (%s)", PLAYER_DIFFICULTY3, FLEX_RAID),                                   }, -- Warlords LFR Flex
+		[15] = {order=22, text=format("%s (%s)", PLAYER_DIFFICULTY1, FLEX_RAID),                                   }, -- Warlords Normal Flex
+		[16] = {order=23, text=format("%s (%s)", PLAYER_DIFFICULTY2, FLEX_RAID),                                   }, -- Warlords Heroic Flex
+		[17] = {order=24, text=PLAYER_DIFFICULTY6,                                                   space=true,   }, -- Warlords Mythic
+
+		[10] = {order=31, text=L["CONDITIONPANEL_INSTANCETYPE_LEGACY"]:format(RAID_FINDER),                        }, -- LFR (legacy, non-flex)
+		[06] = {order=32, text=L["CONDITIONPANEL_INSTANCETYPE_LEGACY"]:format(RAID_DIFFICULTY_10PLAYER),           }, -- 10-player raid (legacy)
+		[07] = {order=33, text=L["CONDITIONPANEL_INSTANCETYPE_LEGACY"]:format(RAID_DIFFICULTY_25PLAYER),           }, -- 25-player raid (legacy)
+		[08] = {order=34, text=L["CONDITIONPANEL_INSTANCETYPE_LEGACY"]:format(RAID_DIFFICULTY_10PLAYER_HEROIC),    }, -- 10-player heroic raid (legacy)
+		[09] = {order=35, text=L["CONDITIONPANEL_INSTANCETYPE_LEGACY"]:format(RAID_DIFFICULTY_25PLAYER_HEROIC),    }, -- 25-player heroic raid (legacy)
+		[12] = {order=36, text=L["CONDITIONPANEL_INSTANCETYPE_LEGACY"]:format(RAID_DIFFICULTY_40PLAYER),           }, -- 40-man raid (legacy)
 
 	},
 
@@ -90,9 +118,7 @@ ConditionCategory:RegisterCondition(1,	 "INSTANCE2", {
 				instanceDifficulty = 0
 			end
 
-			-- https://wow.tools/dbc/?dbc=difficulty&build=2.5.1.38692#page=1
-			-- Note that 148 is "20 Player" but this might not actually be used by AQ20?
-
+			
 			if z == "pvp" then
 				-- Battleground           (__ -> 02)
 				return 2
@@ -154,9 +180,36 @@ ConditionCategory:RegisterCondition(1,	 "INSTANCE2", {
 	funcstr = [[BITFLAGSMAPANDCHECK( GetZoneType2() )]],
 	events = function(ConditionObject, c)
 		return
-			ConditionObject:GenerateNormalEventString("ZONE_CHANGED_NEW_AREA")
+			ConditionObject:GenerateNormalEventString("ZONE_CHANGED_NEW_AREA"),
+			ConditionObject:GenerateNormalEventString("PLAYER_DIFFICULTY_CHANGED")
 	end,
 })
+
+if C_ChallengeMode then
+	ConditionCategory:RegisterCondition(1.1,  "KEYSTONELEVEL", {
+		text = L["CONDITIONPANEL_KEYSTONELEVEL"],
+		tooltip = L["CONDITIONPANEL_KEYSTONELEVEL_DESC"],
+		min = 0,
+		max = 30,
+		unit = false,
+		icon = "Interface\\Icons\\inv_relics_hourglass",
+		tcoords = CNDT.COMMON.standardtcoords,
+
+		Env = {
+			GetActiveKeystoneInfo = function()
+				return C_ChallengeMode.GetActiveKeystoneInfo() or 0
+			end
+		},
+
+		funcstr = [[(GetActiveKeystoneInfo() c.Operator c.Level)]],
+
+		events = function(ConditionObject, c)
+			return
+				ConditionObject:GenerateNormalEventString("SCENARIO_CRITERIA_UPDATE"),
+				ConditionObject:GenerateNormalEventString("CHALLENGE_MODE_START")
+		end
+	})
+end
 
 ConditionCategory:RegisterCondition(1.2, "GROUPSIZE", {
 	text = L["CONDITIONPANEL_GROUPSIZE"],
@@ -164,7 +217,7 @@ ConditionCategory:RegisterCondition(1.2, "GROUPSIZE", {
 	min = 0,
 	max = 40,
 	unit = false,
-	icon = "Interface\\Icons\\spell_shadow_haunting",
+	icon = "Interface\\Icons\\spell_deathknight_armyofthedead",
 	tcoords = CNDT.COMMON.standardtcoords,
 	Env = {
 		GetInstanceInfo = GetInstanceInfo,
@@ -293,19 +346,27 @@ ConditionCategory:RegisterCondition(13,   "LOC_CONTINENT", {
 	unit = false,
 	bitFlagTitle = L["CONDITIONPANEL_BITFLAGS_CHOOSEMENU_CONTINENT"],
 	bitFlags = (function()
-		local t = {}
-		-- 946 is the cosmic map ID.
-		for id, mapInfo in pairs(C_Map.GetMapChildrenInfo(946, Enum.UIMapType.Continent, true)) do
-			t[mapInfo.mapID] = mapInfo.name
+		if GetContinentMaps then -- Pre-wow-80000
+			local t = GetContinentMaps()
+			for continentID in pairs(t) do
+				t[continentID] = GetContinentName(continentID)
+			end
+			return t
+		else -- post-wow-80000
+			local t = {}
+			-- 946 is the cosmic map ID.
+			for id, mapInfo in pairs(C_Map.GetMapChildrenInfo(946, Enum.UIMapType.Continent, true)) do
+				t[mapInfo.mapID] = mapInfo.name
+			end
+			return t
 		end
-		return t
 	end)(),
 
 	nooperator = true,
-	icon = "Interface\\Icons\\inv_misc_map_01",
+	icon = "Interface\\Icons\\inv_misc_map02",
 	tcoords = CNDT.COMMON.standardtcoords,
 	Env = {
-		GetCurrentMapContinent = function()
+		GetCurrentMapContinent = _G.GetCurrentMapContinent or function()
 			local mapID = C_Map.GetBestMapForUnit("player")
 			if not mapID then return nil end
 			local mapInfo = C_Map.GetMapInfo(mapID)
@@ -339,7 +400,7 @@ ConditionCategory:RegisterCondition(14,   "LOC_ZONE", {
 	useSUG = "zone",
 	allowMultipleSUGEntires = true,
 
-	icon = "Interface\\Icons\\inv_misc_map_01",
+	icon = "Interface\\Icons\\inv_misc_map09",
 	tcoords = CNDT.COMMON.standardtcoords,
 	Env = {
 		GetZoneText = GetZoneText,
@@ -366,7 +427,7 @@ ConditionCategory:RegisterCondition(15,   "LOC_SUBZONE", {
 	allowMultipleSUGEntires = true,
 
 	nooperator = true,
-	icon = "Interface\\Icons\\inv_misc_map_01",
+	icon = "Interface\\Icons\\inv_misc_map07",
 	tcoords = CNDT.COMMON.standardtcoords,
 	Env = {
 		GetSubZoneText = GetSubZoneText,

@@ -54,6 +54,7 @@ UNITS.Units = {
 	{ value = "pettarget",			text = L["ICONMENU_PETTARGET"]										},
 	{ value = "mouseover",			text = L["ICONMENU_MOUSEOVER"]										},
 	{ value = "mouseovertarget",	text = L["ICONMENU_MOUSEOVERTARGET"]								},
+	{ value = "vehicle",			text = L["ICONMENU_VEHICLE"]										},
 	{ value = "nameplate",			text = L["ICONMENU_NAMEPLATE"],	range = 40							},
 	{ value = "party",				text = PARTY,				range = MAX_PARTY_MEMBERS				},
 	{ value = "raid",				text = RAID,				range = MAX_RAID_MEMBERS				},
@@ -241,7 +242,7 @@ local UnitSet = TMW:NewClass("UnitSet"){
 				self.allUnitsChangeOnEvent = false
 				
 			else
-				-- we found a unit and we dont really know what the fuck it is.
+				-- we found a unit and we dont really know what it is.
 				-- it MIGHT be a player name (or a derrivative thereof),
 				-- so register some events so that we can exchange it out with a real unitID when possible.
 
@@ -679,8 +680,16 @@ function UNITS:SubstituteGroupedUnit(oldunit)
 	return nil
 end
 
-
-do--function UNITS:TestUnit(unit)
+--function UNITS:TestUnit(unit)
+if UnitTokenFromGUID then
+	-- wow 10.0+
+	local UnitTokenFromGUID = UnitTokenFromGUID;
+	local UnitGUID = UnitGUID;
+	function UNITS:TestUnit(unit)
+		local guid = unit and UnitGUID(unit)
+		return guid and UnitTokenFromGUID(guid)
+	end
+else	
 	local TestTooltip = CreateFrame("GameTooltip")
 	local name, unitID
 	TestTooltip:SetScript("OnTooltipSetUnit", function(self)

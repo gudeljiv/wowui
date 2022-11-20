@@ -40,7 +40,7 @@ License: Public Domain
 -- @class file
 -- @name LibRangeCheck-2.0
 local MAJOR_VERSION = "LibRangeCheck-2.0"
-local MINOR_VERSION = tonumber(("@project-date-integer@"):match("%d+") or "9999999999999")
+local MINOR_VERSION = 10000000000001 -- mistakes were made...
 
 local lib, oldminor = LibStub:NewLibrary(MAJOR_VERSION, MINOR_VERSION)
 if not lib then

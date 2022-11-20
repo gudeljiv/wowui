@@ -17,8 +17,8 @@ local L = TMW.L
 local print = TMW.print
 local pairs, ipairs =
 	  pairs, ipairs
-local GetSpellInfo, UnitGUID, UnitCastingInfo, UnitChannelInfo =
-	  GetSpellInfo, UnitGUID, UnitCastingInfo, UnitChannelInfo
+local GetSpellInfo, UnitCastingInfo, UnitChannelInfo =
+	  GetSpellInfo, UnitCastingInfo, UnitChannelInfo
 
 local strlowerCache = TMW.strlowerCache
 
@@ -97,7 +97,7 @@ end)
 
 
 -- The unit spellcast events that the icon will register.
--- We keep them in a table because there's a fuckload of them.
+-- We keep them in a table because there's a lot of them.
 local events = {
 	UNIT_SPELLCAST_START = true,
 	UNIT_SPELLCAST_STOP = true,
@@ -109,9 +109,12 @@ local events = {
 	UNIT_SPELLCAST_CHANNEL_START = true,
 	UNIT_SPELLCAST_CHANNEL_UPDATE = true,
 	UNIT_SPELLCAST_CHANNEL_STOP = true,
-	--UNIT_SPELLCAST_INTERRUPTIBLE = true,
-	--UNIT_SPELLCAST_NOT_INTERRUPTIBLE = true,
 }
+if TMW.isRetail then
+	-- not available in wrath
+	events.UNIT_SPELLCAST_INTERRUPTIBLE = true
+	events.UNIT_SPELLCAST_NOT_INTERRUPTIBLE = true
+end
 
 
 local function Cast_OnEvent(icon, event, arg1)

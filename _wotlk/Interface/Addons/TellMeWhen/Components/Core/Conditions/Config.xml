@@ -1,6 +1,7 @@
 ﻿<Ui>
-
+	
 	<CheckButton name="TellMeWhen_ConditionEditorRuneCheckTemplate" virtual="true">
+		<!-- Wrath classic only -->
 		<KeyValues>
 			<KeyValue key="tmwClass" type="string" value="Config_Conditions_Rune"/>
 		</KeyValues>
@@ -20,6 +21,7 @@
 		</Layers>
 		<Scripts>
 			<OnLoad>
+				if not TMW.C.Config_Conditions_Rune then return end
 				TMW:CInit(self)
 			</OnLoad>
 		</Scripts>
@@ -335,7 +337,6 @@
 					</OnSizeChanged>
 				</Scripts>
 			</EditBox>
-
 			<Frame parentKey="Runes" hidden="true">
 				<Size x="1" y="58"/>
 				<Anchors>
@@ -543,15 +544,15 @@
 					</OnClick>
 				</Scripts>
 
-				<NormalTexture urgency="5" file="Interface\AddOns\TellMeWhen\Textures\Arrow" >
+				<NormalTexture file="Interface\AddOns\TellMeWhen\Textures\Arrow" >
 					<TexCoords left="0" right="1" top="0" bottom="1"/>
 					<Color r="1.0" g="0.92" b="0" a="0.7"/>
 				</NormalTexture>
-				<HighlightTexture urgency="5" file="Interface\AddOns\TellMeWhen\Textures\Arrow" alphaMode="ADD">
+				<HighlightTexture file="Interface\AddOns\TellMeWhen\Textures\Arrow" alphaMode="ADD">
 					<TexCoords left="0" right="1" top="0" bottom="1"/>
 					<Color r="1" g="1" b="1" a="0.4"/>
 				</HighlightTexture>
-				<DisabledTexture urgency="5" file="Interface\AddOns\TellMeWhen\Textures\Arrow" >
+				<DisabledTexture file="Interface\AddOns\TellMeWhen\Textures\Arrow" >
 					<TexCoords left="0" right="1" top="0" bottom="1"/>
 					<Color r="0" g="0" b="0" a="0.35"/>
 				</DisabledTexture>
@@ -575,15 +576,15 @@
 					</OnClick>
 				</Scripts>
 
-				<NormalTexture urgency="5" file="Interface\AddOns\TellMeWhen\Textures\Arrow" >
+				<NormalTexture file="Interface\AddOns\TellMeWhen\Textures\Arrow" >
 					<TexCoords left="0" right="1" top="1" bottom="0"/>
 					<Color r="1.0" g="0.92" b="0" a="0.7"/>
 				</NormalTexture>
-				<HighlightTexture urgency="5" file="Interface\AddOns\TellMeWhen\Textures\Arrow" alphaMode="ADD">
+				<HighlightTexture file="Interface\AddOns\TellMeWhen\Textures\Arrow" alphaMode="ADD">
 					<TexCoords left="0" right="1" top="1" bottom="0"/>
 					<Color r="1" g="1" b="1" a="0.4"/>
 				</HighlightTexture>
-				<DisabledTexture urgency="5" file="Interface\AddOns\TellMeWhen\Textures\Arrow" >
+				<DisabledTexture file="Interface\AddOns\TellMeWhen\Textures\Arrow" >
 					<TexCoords left="0" right="1" top="1" bottom="0"/>
 					<Color r="0" g="0" b="0" a="0.35"/>
 				</DisabledTexture>

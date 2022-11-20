@@ -1229,15 +1229,12 @@ function Module:Sorter_Bucket(suggestions, buckets)
 		elseif ClassSpellLookup[id] then
 			tinsert(buckets[3], id)
 		else
-			-- Classic: the aura cache just isn't useful, since it can't cache by spellID.
-	
-			-- local spellName = GetSpellInfo(id)
-			-- local auraSoruce = spellName and AuraCache_Cache[strlowerCache[spellName]]
-			-- if auraSoruce == 2 then
-			-- 	tinsert(buckets[4], id)
-			-- elseif auraSoruce == 1 then
-			-- 	tinsert(buckets[5], id)
-			-- else
+			local auraSoruce = AuraCache_Cache[id]
+			if auraSoruce == 2 then
+				tinsert(buckets[4], id)
+			elseif auraSoruce == 1 then
+				tinsert(buckets[5], id)
+			else
 				if SUGIsNumberInput then
 					tinsert(buckets[6 + floor(id/1000)], id)
 				else
@@ -1249,7 +1246,7 @@ function Module:Sorter_Bucket(suggestions, buckets)
 					--bucket.__sorter = spellSort
 					tinsert(bucket, id)
 				end
-			--end
+			end
 		end
 	end
 end
@@ -1286,7 +1283,7 @@ function Module:Entry_AddToList_1(f, id)
 		f.Name:SetText(name)
 		f.ID:SetText(id)
 
-		f.tooltipmethod = "TMW_SetSpellByIDWithClassIcon"
+		f.tooltipmethod = TMW.GameTooltip_SetSpellByIDWithClassIcon
 		f.tooltiparg = id
 
 		if TMW.EquivFirstIDLookup[name] then
@@ -1311,19 +1308,15 @@ function Module:Entry_Colorize_1(f, id)
 		return
 	end
 
-	-- Classic: the aura cache just isn't useful, since it can't cache by spellID.
-
-	-- local spellName = GetSpellInfo(id)
-	-- local auraSoruce = spellName and AuraCache_Cache[strlowerCache[spellName]]
-	
-	-- if auraSoruce == AuraCache.CONST.AURA_TYPE_NONPLAYER then
-	-- 	-- Color known NPC auras warrior brown.
-	-- 	f.Background:SetVertexColor(.78, .61, .43, 1)
-	-- elseif auraSoruce == AuraCache.CONST.AURA_TYPE_PLAYER then
-	-- 	-- Color known PLAYER auras a bright pink-ish/pruple-ish color that is similar to paladin pink,
-	-- 	-- but has sufficient contrast for distinguishing.
-	-- 	f.Background:SetVertexColor(.79, .30, 1, 1)
-	-- end
+	local whoCasted = AuraCache_Cache[id]
+	if whoCasted == AuraCache.CONST.AURA_TYPE_NONPLAYER then
+		 -- Color known NPC auras warrior brown.
+		f.Background:SetVertexColor(.78, .61, .43, 1)
+	elseif whoCasted == AuraCache.CONST.AURA_TYPE_PLAYER then
+		-- Color known PLAYER auras a bright pink-ish/pruple-ish color that is similar to paladin pink,
+		-- but has sufficient contrast for distinguishing.
+		f.Background:SetVertexColor(.79, .30, 1, 1)
+	end
 end
 
 
@@ -1335,11 +1328,11 @@ function Module:Entry_AddToList_1(f, id)
 		f.Name:SetText(name)
 		f.ID:SetText(id)
 
-		f.tooltipmethod = "TMW_SetSpellByIDWithClassIcon"
+		f.tooltipmethod = TMW.GameTooltip_SetSpellByIDWithClassIcon
 		f.tooltiparg = id
 
 		f.insert = id
-		if ClassSpellCache:GetCache()[pclass][id] and name and GetSpellTexture(name) then
+		if ClassSpellCache:GetPlayerSpells()[id] and name and GetSpellTexture(name) then
 			f.insert2 = name
 		end
 
@@ -1461,7 +1454,7 @@ function Module:Entry_AddToList_2(f, id)
 		f.insert = equiv
 		f.overrideInsertName = L["SUG_INSERTEQUIV"]
 
-		f.tooltipmethod = "TMW_SetEquiv"
+		f.tooltipmethod = TMW.GameTooltip_SetEquiv
 		f.tooltiparg = equiv
 
 		f.Icon:SetTexture(GetSpellTexture(id))
@@ -1533,7 +1526,7 @@ function Module:Entry_AddToList_2(f, id)
 		f.insert = equiv
 		f.overrideInsertName = L["SUG_INSERTEQUIV"]
 
-		f.tooltipmethod = "TMW_SetEquiv"
+		f.tooltipmethod = TMW.GameTooltip_SetEquiv
 		f.tooltiparg = equiv
 
 		f.Icon:SetTexture(GetSpellTexture(firstid))

@@ -67,6 +67,8 @@ function CNDT:LoadConfig(conditionSetName)
 	if not CNDT:GetSettings() then
 		return
 	end
+
+	CNDT:TryUpgradeSettings(CNDT:GetSettings())
 	
 	
 	TMW.HELP:Hide("CNDT_UNIT_MISSING")
@@ -445,52 +447,54 @@ end
 
 
 ---------- Runes ----------
-TMW:NewClass("Config_Conditions_Rune", "Config_CheckButton") {
-	OnNewInstance = function(self)
-		if self.death then
-			self.texture:SetTexture("Interface\\AddOns\\TellMeWhen\\Textures\\" .. self.runeType)
-		else
-			self.texture:SetTexture("Interface\\PlayerFrame\\UI-PlayerFrame-Deathknight-" .. self.runeType)
-		end
+if GetRuneType then
+	TMW:NewClass("Config_Conditions_Rune", "Config_CheckButton") {
+		OnNewInstance = function(self)
+			if self.death then
+				self.texture:SetTexture("Interface\\AddOns\\TellMeWhen\\Textures\\" .. self.runeType)
+			else
+				self.texture:SetTexture("Interface\\PlayerFrame\\UI-PlayerFrame-Deathknight-" .. self.runeType)
+			end
 
-		local title = _G["COMBAT_TEXT_RUNE_" .. (self.runeType):upper()]
-		if self.death then
-			title = COMBAT_TEXT_RUNE_DEATH .. " (" .. title .. ")"
-		end
+			local title = _G["COMBAT_TEXT_RUNE_" .. (self.runeType):upper()]
+			if self.death then
+				title = COMBAT_TEXT_RUNE_DEATH .. " (" .. title .. ")"
+			end
 
-		TMW:TT(self, title, "CONDITIONPANEL_RUNES_CHECK_DESC", true, false)
-	end,
+			TMW:TT(self, title, "CONDITIONPANEL_RUNES_CHECK_DESC", true, false)
+		end,
 
-	OnClick = function(self, button)
-		local settings = self:GetSettingTable()
+		OnClick = function(self, button)
+			local settings = self:GetSettingTable()
 
-		local checked = self:GetChecked()
+			local checked = self:GetChecked()
 
-		if checked then
-			PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
-		else
-			PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_OFF)
-		end
+			if checked then
+				PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
+			else
+				PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_OFF)
+			end
 
-		local index = self.key
+			local index = self.key
 
-		if settings and index then
-			TMW.CNDT:ToggleBitFlag(settings, index)
-			
-			self:OnSettingSaved()
-		end
-	end,
+			if settings and index then
+				TMW.CNDT:ToggleBitFlag(settings, index)
 
-	ReloadSetting = function(self)
-		local settings = self:GetSettingTable()
+				self:OnSettingSaved()
+			end
+		end,
 
-		local index = self.key
+		ReloadSetting = function(self)
+			local settings = self:GetSettingTable()
 
-		if settings and index then
-			self:SetChecked(CNDT:GetBitFlag(settings, index))
-		end
-	end,
-}
+			local index = self.key
+
+			if settings and index then
+				self:SetChecked(CNDT:GetBitFlag(settings, index))
+			end
+		end,
+	}
+end
 
 
 ---------- Parentheses ----------

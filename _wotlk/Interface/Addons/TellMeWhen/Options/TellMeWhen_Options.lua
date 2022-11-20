@@ -162,9 +162,9 @@ end
 -- WOW API HOOKS
 -- ----------------------
 
-function GameTooltip:TMW_SetEquiv(equiv)
-	GameTooltip:AddLine(L[equiv], HIGHLIGHT_FONT_COLOR.r, HIGHLIGHT_FONT_COLOR.g, HIGHLIGHT_FONT_COLOR.b, 1)
-	GameTooltip:AddLine(IE:Equiv_GenerateTips(equiv), NORMAL_FONT_COLOR.r, NORMAL_FONT_COLOR.g, NORMAL_FONT_COLOR.b, 1)
+function TMW.GameTooltip_SetEquiv(self, equiv)
+	self:AddLine(L[equiv], HIGHLIGHT_FONT_COLOR.r, HIGHLIGHT_FONT_COLOR.g, HIGHLIGHT_FONT_COLOR.b, 1)
+	self:AddLine(IE:Equiv_GenerateTips(equiv), NORMAL_FONT_COLOR.r, NORMAL_FONT_COLOR.g, NORMAL_FONT_COLOR.b, 1)
 end
 
 
@@ -185,7 +185,6 @@ TMW:NewClass("ChatEdit_InsertLink_Hook"){
 	end,
 }
 
-local old_ChatEdit_InsertLink = ChatEdit_InsertLink
 local function hook_ChatEdit_InsertLink(text)	
 	if type(text) ~= "string" then
 		return false
@@ -203,14 +202,9 @@ local function hook_ChatEdit_InsertLink(text)
 	return false
 end
 
-function ChatEdit_InsertLink(...)
-	local executionSuccess, insertSuccess = TMW.safecall(hook_ChatEdit_InsertLink, ...)
-	if executionSuccess and insertSuccess then
-		return insertSuccess
-	else
-		return old_ChatEdit_InsertLink(...)
-	end
-end
+hooksecurefunc("ChatEdit_InsertLink", function(...)
+	TMW.safecall(hook_ChatEdit_InsertLink, ...)
+end)
 
 
 
@@ -2116,7 +2110,7 @@ TMW:NewClass("Config_EditBox_Lua", "Config_EditBox") {
 	OnNewInstance_EditBox_Lua = function(self)
 		TMW.indentLib.enable(self, self.ColorTable, 4)
 
-		self:SetFont("Interface/Addons/TellMeWhen/Fonts/VeraMono.ttf", 11)
+		self:SetFont("Interface/Addons/TellMeWhen/Fonts/VeraMono.ttf", 11, "")
 
 		self:SetNewlineOnEnter(true)
 
@@ -2982,50 +2976,90 @@ TMW:NewClass("Config_ColorButton", "Button", "Config_Frame"){
 			return c.r, c.g, c.b, a, c.flags
 		else
 			return 0, 0, 0, 0, nil
-		end
+		end		
 	end,
 }
 
-TMW:NewClass("Config_Button_Rune", "Button", "Config_BitflagBase", "Config_Frame"){
-	-- Constructor
-	Runes = {
-		"Blood",
-		"Frost",
-		"Unholy",
-	},
+if TMW.isWrath then 
+	TMW:NewClass("Config_Button_Rune", "Button", "Config_BitflagBase", "Config_Frame"){
+		-- Constructor
+		Runes = {
+			"Blood",
+			"Unholy",
+			"Frost",
+		},
+	
+		OnNewInstance_Button_Rune = function(self)
+			self.runeNumber = self:GetID()
+	
+			-- detect what texture should be used
+			local runeSlot = ((self.runeNumber-1)%6)+1 -- gives 1, 2, 3, 4, 5, 6
+			local runeName = self.Runes[ceil(runeSlot/2)] -- Gives "Blood", "Unholy", "Frost"
+			
+			if self.runeNumber > 6 then
+				self.texture:SetTexture("Interface\\AddOns\\TellMeWhen\\Textures\\" .. runeName)
+			else
+				self.texture:SetTexture("Interface\\PlayerFrame\\UI-PlayerFrame-Deathknight-" .. runeName)
+			end
+	
+			self.bit = bit.lshift(1, self.runeNumber - 1)
+		end,
+	
+	
+		-- Methods
+		checked = false,
+		GetChecked = function(self)
+			return self.checked
+		end,
+	
+		SetChecked = function(self, checked)
+			self.checked = checked
+			if checked then
+				self.Check:SetTexture("Interface\\RAIDFRAME\\ReadyCheck-Ready")
+			else
+				self.Check:SetTexture(nil)
+			end
+		end,
+	}
+elseif TMW.isRetail then
+	TMW:NewClass("Config_Button_Rune", "Button", "Config_BitflagBase", "Config_Frame"){
+		-- Constructor
 
-	OnNewInstance_Button_Rune = function(self)
-		self.runeNumber = self:GetID()
+		OnNewInstance_Button_Rune = function(self)
+			if not self:GetRuneNumber() then
+				self:SetRuneNumber(self:GetID())
+			end
+		end,
 
-		-- detect what texture should be used
-		local runeType = ((self.runeNumber-1)%6)+1 -- gives 1, 2, 3, 4, 5, 6
-		local runeName = self.Runes[ceil(runeType/2)] -- Gives "Blood", "Unholy", "Frost"
-		
-		if self.runeNumber > 6 then
-			self.texture:SetTexture("Interface\\AddOns\\TellMeWhen\\Textures\\" .. runeName)
-		else
-			self.texture:SetTexture("Interface\\PlayerFrame\\UI-PlayerFrame-Deathknight-" .. runeName)
-		end
+		GetRuneNumber = function(self)
+			return self.runeNumber
+		end,
 
-		self.bit = bit.lshift(1, self.runeNumber - 1)
-	end,
+		SetRuneNumber = function(self, runeNumber)
+			self.runeNumber = runeNumber
+
+			self.texture:SetTexture("Interface\\PlayerFrame\\UI-PlayerFrame-Deathknight-SingleRune")
+
+			self:SetSettingBitID(self.runeNumber)
+		end,
 
 
-	-- Methods
-	checked = false,
-	GetChecked = function(self)
-		return self.checked
-	end,
+		-- Methods
+		checked = false,
+		GetChecked = function(self)
+			return self.checked
+		end,
 
-	SetChecked = function(self, checked)
-		self.checked = checked
-		if checked then
-			self.Check:SetTexture("Interface\\RAIDFRAME\\ReadyCheck-Ready")
-		else
-			self.Check:SetTexture(nil)
-		end
-	end,
-}
+		SetChecked = function(self, checked)
+			self.checked = checked
+			if checked then
+				self.Check:SetTexture("Interface\\RAIDFRAME\\ReadyCheck-Ready")
+			else
+				self.Check:SetTexture(nil)
+			end
+		end,
+	}
+end
 
 TMW:NewClass("Config_PointSelect", "Config_Frame"){
 
@@ -3238,21 +3272,50 @@ TMW:NewClass("Config_ColorPicker", "Config_Frame"){
 
 		self.StringEditbox:SetText(TMW:HSVAToColorString(h, s, v, a))
 
-		local r,g,b=TMW:HSVToRGB(h, 0, v)
-		self.SaturationSlider.Background:SetGradient("HORIZONTAL", r,g,b, TMW:HSVToRGB(h, 1, v))
-
-		local r,g,b=TMW:HSVToRGB(h, s, 0)
-		self.ValueSlider.Background:SetGradient("HORIZONTAL", r,g,b, TMW:HSVToRGB(h, s, 1))
-
-		for i = 1, self.HueSlider.NUM_SEGMENTS do
-			local r,g,b=TMW:HSVToRGB((i-1)/self.HueSlider.NUM_SEGMENTS, s, v)
-			self.HueSlider.textures[i]:SetGradient("HORIZONTAL", r,g,b, TMW:HSVToRGB(i/self.HueSlider.NUM_SEGMENTS, s, v))
+		if not self.AlphaSlider.Background.SetGradientAlpha then
+			-- Wow 10.0+
+			self.SaturationSlider.Background:SetGradient(
+				"HORIZONTAL", 
+				CreateColor(TMW:HSVToRGB(h, 0, v, 1)), 
+				CreateColor(TMW:HSVToRGB(h, 1, v, 1))
+			)
+	
+			self.ValueSlider.Background:SetGradient(
+				"HORIZONTAL", 
+				CreateColor(TMW:HSVToRGB(h, s, 0, 1)), 
+				CreateColor(TMW:HSVToRGB(h, s, 1, 1))
+			)
+	
+			for i = 1, self.HueSlider.NUM_SEGMENTS do
+				self.HueSlider.textures[i]:SetGradient(
+					"HORIZONTAL", 
+					CreateColor(TMW:HSVToRGB((i-1)/self.HueSlider.NUM_SEGMENTS, s, v, 1)), 
+					CreateColor(TMW:HSVToRGB(i/self.HueSlider.NUM_SEGMENTS, s, v, 1))
+				)
+			end
+	
+			self.AlphaSlider.Background:SetGradient(
+				"HORIZONTAL", 
+				CreateColor(TMW:HSVToRGB(h, s, v, 0)), 
+				CreateColor(TMW:HSVToRGB(h, s, v, 1))
+			)
+		else
+			local r,g,b=TMW:HSVToRGB(h, 0, v)
+			self.SaturationSlider.Background:SetGradient("HORIZONTAL", r,g,b, TMW:HSVToRGB(h, 1, v))
+	
+			local r,g,b=TMW:HSVToRGB(h, s, 0)
+			self.ValueSlider.Background:SetGradient("HORIZONTAL", r,g,b, TMW:HSVToRGB(h, s, 1))
+	
+			for i = 1, self.HueSlider.NUM_SEGMENTS do
+				local r,g,b=TMW:HSVToRGB((i-1)/self.HueSlider.NUM_SEGMENTS, s, v)
+				self.HueSlider.textures[i]:SetGradient("HORIZONTAL", r,g,b, TMW:HSVToRGB(i/self.HueSlider.NUM_SEGMENTS, s, v))
+			end
+	
+			local r,g,b=TMW:HSVToRGB(h, s, v)
+			self.AlphaSlider.Background:SetGradientAlpha("HORIZONTAL", r, g, b, 0, r, g, b, 1)
 		end
-
-		local r,g,b=TMW:HSVToRGB(h, s, v)
-		self.AlphaSlider.Background:SetGradientAlpha("HORIZONTAL", r, g, b, 0, r, g, b, 1)
-
-		self.swatch.swatch:SetColorTexture(r,g,b)
+		
+		self.swatch.swatch:SetColorTexture(TMW:HSVToRGB(h, s, v, a))
 		self.swatch.swatch:SetAlpha(a)
 
 
@@ -3589,6 +3652,12 @@ function IE:ResizeTabs()
 
 		prevTabGroup = tabGroup
 	end
+
+	-- New in Dragonflight: calling GetWidth on a child frame can trigger a 
+	-- resize of a parent frame for some reason! Which means that while the icon editor
+	-- is being initialized, its being resized before the tabs even exist!
+	if not prevTabGroup then return end
+
 	prevTabGroup:SetPoint("RIGHT", -interPadding)
 	-- Adjust the conatiner width to fit the tabs exactly so calculations are easy.
 	TMW.IE.Tabs.primary:SetWidth(primaryWidth)
@@ -4268,7 +4337,7 @@ local function makeColorFunc(greenBelow, redAbove)
 			-- the point where halfColor will be used.
 			-- If we don't multiply by 2, we would check if (percent > 0.5), but then
 			-- we would have to multiply that percentage by 2 later anyway in order to use the
-			-- full range of colors available (we would only get half the range of colors otherwise, which looks like shit)
+			-- full range of colors available (we would only get half the range of colors otherwise, which looks bad)
 			local doublePercent = percent * 2
 
 			if doublePercent > 1 then

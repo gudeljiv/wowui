@@ -52,6 +52,15 @@ function Env.CooldownDuration(spell, gcdAsUnusable)
 	return 0
 end
 
+local GetSpellCharges = GetSpellCharges
+function Env.RechargeDuration(spell)
+	local charges, maxCharges, start, duration = GetSpellCharges(spell)
+	if charges and charges ~= maxCharges then
+		return (duration == 0 and 0) or (duration - (TMW.time - start))
+	end
+	return 0
+end
+
 local SwingTimers = TMW.COMMON.SwingTimerMonitor.SwingTimers
 function Env.SwingDuration(slot)
 	local SwingTimer = SwingTimers[slot]
@@ -123,7 +132,6 @@ ConditionCategory:RegisterCondition(2,	 "SPELLCDCOMP", {
 			ConditionObject:GenerateNormalEventString("SPELL_UPDATE_COOLDOWN"),
 			ConditionObject:GenerateNormalEventString("SPELL_UPDATE_USABLE")
 	end,
-	-- what a shitty anticipate func
 	anticipate = [[
 		local start, duration = GetSpellCooldown(c.GCDReplacedNameFirst)
 		local start2, duration2 = GetSpellCooldown(c.GCDReplacedNameFirst2)
@@ -142,6 +150,70 @@ ConditionCategory:RegisterCondition(2,	 "SPELLCDCOMP", {
 })
 
 ConditionCategory:RegisterSpacer(2.4)
+
+if TMW.isRetail then
+	ConditionCategory:RegisterCondition(2.5, "SPELLCHARGES", {
+		text = L["SPELLCHARGES"],
+		tooltip = L["SPELLCHARGES_DESC"],
+		min = 0,
+		range = 5,
+		name = function(editbox)
+			editbox:SetTexts(L["SPELLTOCHECK"], L["CNDT_ONLYFIRST"])
+		end,
+		useSUG = "spell",
+		unit = PLAYER,
+		icon = "Interface\\Icons\\ability_monk_roll",
+		tcoords = CNDT.COMMON.standardtcoords,
+		Env = {
+			GetSpellCharges = GetSpellCharges,
+			GetSpellCount = GetSpellCount,
+		},
+		funcstr = [[(GetSpellCharges(c.NameFirst) or GetSpellCount(c.NameFirst)) c.Operator c.Level]],
+		events = function(ConditionObject, c)
+			return
+				ConditionObject:GenerateNormalEventString("SPELL_UPDATE_COOLDOWN"),
+				ConditionObject:GenerateNormalEventString("SPELL_UPDATE_USABLE"),
+				ConditionObject:GenerateNormalEventString("SPELL_UPDATE_CHARGES")
+		end,	
+	})
+	ConditionCategory:RegisterCondition(2.6, "SPELLCHARGETIME", {
+		text = L["SPELLCHARGETIME"],
+		tooltip = L["SPELLCHARGETIME_DESC"],
+		min = 0,
+		range = 30,
+		step = 0.1,
+		name = function(editbox)
+			editbox:SetTexts(L["SPELLTOCHECK"], L["CNDT_ONLYFIRST"])
+		end,
+		useSUG = "spell",
+		unit = PLAYER,
+		formatter = TMW.C.Formatter:New(function(value)
+			local s = TMW.C.Formatter.TIME_YDHMS:Format(value)
+			if value == 0 then
+				s = s .. " ("..L["SPELLCHARGES_FULLYCHARGED"]..")"
+			end
+			return s
+		end),
+		icon = "Interface\\Icons\\ability_warlock_handofguldan",
+		tcoords = CNDT.COMMON.standardtcoords,
+		Env = {
+			GetSpellCharges = GetSpellCharges,
+		},
+		funcstr = [[RechargeDuration(c.NameFirst) c.Operator c.Level]],
+		events = function(ConditionObject, c)
+			return
+				ConditionObject:GenerateNormalEventString("SPELL_UPDATE_COOLDOWN"),
+				ConditionObject:GenerateNormalEventString("SPELL_UPDATE_USABLE"),
+				ConditionObject:GenerateNormalEventString("SPELL_UPDATE_CHARGES")
+		end,
+		anticipate = [[
+			local _, _, start, duration = GetSpellCharges(c.NameFirst)
+			local VALUE = duration and start + (duration - c.Level) or huge
+		]],
+	})
+end
+
+ConditionCategory:RegisterSpacer(2.7)
 
 ConditionCategory:RegisterCondition(2.8, "LASTCAST", {
 	text = L["CONDITIONPANEL_LASTCAST"],
@@ -166,11 +238,31 @@ ConditionCategory:RegisterCondition(2.8, "LASTCAST", {
 			local pGUID = UnitGUID("player")
 			assert(pGUID, "pGUID was null when func string was generated!")
 
+			local blacklist = {
+				[204255] = true, -- Soul Fragment (happens after casting Sheer for DH tanks)
+				[324260] = true -- Sinful Revelation (https://github.com/ascott18/TellMeWhen/issues/1831)
+			}
+
 			module:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED",
 			function()
 				local _, e, _, sourceGuid, _, _, _, _, _, _, _, spellID, spellName = CombatLogGetCurrentEventInfo()
-				if e == "SPELL_CAST_SUCCESS" and sourceGuid == pGUID then
+				if e == "SPELL_CAST_SUCCESS" and sourceGuid == pGUID and not blacklist[spellID] then
 					Env.LastPlayerCastName = strlower(spellName)
+					Env.LastPlayerCastID = spellID
+					TMW:Fire("TMW_CNDT_LASTCAST_UPDATED")
+				end
+			end)
+
+			-- Spells that don't work with CLEU and must be tracked with USS.
+			local ussSpells = {
+				[189110] = true, -- Infernal Strike (DH)
+				[189111] = true, -- Infernal Strike (DH)
+				[195072] = true, -- Fel Rush (DH)
+			}
+			module:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED",
+			function(_, unit, _, spellID)
+				if unit == "player" and ussSpells[spellID] and not blacklist[spellID] then
+					Env.LastPlayerCastName = strlower(GetSpellInfo(spellID))
 					Env.LastPlayerCastID = spellID
 					TMW:Fire("TMW_CNDT_LASTCAST_UPDATED")
 				end
@@ -279,6 +371,47 @@ ConditionCategory:RegisterCondition(3.2, "AUTOSPELL", {
 })
 
 
+ConditionCategory:RegisterCondition(3.5,  "OVERLAYED", {
+	text = L["CONDITIONPANEL_OVERLAYED"],
+	tooltip = L["CONDITIONPANEL_OVERLAYED_DESC"],
+
+	bool = true,
+	
+	name = function(editbox)
+		editbox:SetTexts(L["CONDITIONPANEL_OVERLAYED"], L["CNDT_ONLYFIRST"])
+		editbox:SetLabel(L["SPELLTOCHECK"])
+	end,
+	useSUG = true,
+	unit = false,
+	icon = "Interface\\Icons\\inv_shield_05",
+	tcoords = CNDT.COMMON.standardtcoords,
+	Env = {
+		IsSpellOverlayed = IsSpellOverlayed,
+		OverlayedNameMap = {}
+	},
+	funcstr = function(c)
+		local module = CNDT:GetModule("OVERLAYED", true)
+		if not module then
+			module = CNDT:NewModule("OVERLAYED", "AceEvent-3.0")
+
+			local function handleEvent(event, arg1)
+				Env.OverlayedNameMap[strlowerCache[GetSpellInfo(arg1)]] = arg1
+			end
+
+			module:RegisterEvent("SPELL_ACTIVATION_OVERLAY_GLOW_SHOW", handleEvent)
+			module:RegisterEvent("SPELL_ACTIVATION_OVERLAY_GLOW_HIDE", handleEvent)
+		end
+
+		return [[BOOLCHECK( IsSpellOverlayed(OverlayedNameMap[c.NameFirst] or (isNumber[c.NameFirst] and c.NameFirst) or 0) )]]
+	end,
+	events = function(ConditionObject, c)
+		return
+			ConditionObject:GenerateNormalEventString("SPELL_UPDATE_USABLE"),
+			ConditionObject:GenerateNormalEventString("SPELL_ACTIVATION_OVERLAY_GLOW_SHOW"),
+			ConditionObject:GenerateNormalEventString("SPELL_ACTIVATION_OVERLAY_GLOW_HIDE")
+	end,
+})
+
 ConditionCategory:RegisterCondition(4,	 "MANAUSABLE", {
 	text = L["CONDITIONPANEL_MANAUSABLE"],
 	tooltip = L["CONDITIONPANEL_MANAUSABLE_DESC"],
@@ -292,7 +425,7 @@ ConditionCategory:RegisterCondition(4,	 "MANAUSABLE", {
 	useSUG = true,
 	unit = false,
 	formatter = TMW.C.Formatter.BOOL_USABLEUNUSABLE,
-	icon = "Interface\\Icons\\inv_potion_72",
+	icon = "Interface\\Icons\\inv_potion_137",
 	tcoords = CNDT.COMMON.standardtcoords,
 	funcstr = [[not BOOLCHECK( SpellHasNoMana(c.NameFirst) )]],
 	Env = {
@@ -317,7 +450,7 @@ ConditionCategory:RegisterCondition(4.5, "SPELLCOST", {
 	end,
 	useSUG = true,
 	unit = false,
-	icon = "Interface\\Icons\\inv_potion_74",
+	icon = "Interface\\Icons\\inv_potion_125",
 	tcoords = CNDT.COMMON.standardtcoords,
 	funcstr = [[(GetSpellCost(c.NameFirst) or 0) c.Operator c.Level]],
 	Env = {
@@ -351,7 +484,7 @@ ConditionCategory:RegisterCondition(6,	 "GCD", {
 	text = L["GCD_ACTIVE"],
 	bool = true,
 	unit = PLAYER,
-	icon = "Interface\\Icons\\spell_fire_flamebolt",
+	icon = "Interface\\Icons\\ability_hunter_steadyshot",
 	tcoords = CNDT.COMMON.standardtcoords,
 	funcstr = [[BOOLCHECK( (TMW.GCD > 0 and TMW.GCD < 1.7) )]],
 	events = function(ConditionObject, c)
@@ -395,8 +528,8 @@ ConditionCategory:RegisterCondition(11,	 "ITEMCD", {
 			ConditionObject:GenerateNormalEventString("BAG_UPDATE_COOLDOWN")
 	end,
 	anticipate = [[
-		local start, duration = c.Item:GetCooldown()
-		local VALUE = duration and start + (duration - c.Level) or huge
+		local start, duration, enable = c.Item:GetCooldown()
+		local VALUE = enable == 1 and duration and start + (duration - c.Level) or huge
 	]],
 })
 ConditionCategory:RegisterCondition(12,	 "ITEMCDCOMP", {
@@ -417,12 +550,13 @@ ConditionCategory:RegisterCondition(12,	 "ITEMCDCOMP", {
 		return
 			ConditionObject:GenerateNormalEventString("BAG_UPDATE_COOLDOWN")
 	end,
-	-- what a shitty anticipate func
 	anticipate = [[
-		local start, duration = c.Item:GetCooldown()
-		local start2, duration2 = c.Item2:GetCooldown()
+		local start, duration, enable = c.Item:GetCooldown()
+		local start2, duration2, enable2 = c.Item2:GetCooldown()
 		local VALUE
-		if duration and duration2 then
+		if enable == 0 or enable2 == 0 then
+			VALUE = huge
+		elseif duration and duration2 then
 			local v1, v2 = start + duration, start2 + duration2
 			VALUE = v1 < v2 and v1 or v2
 		elseif duration then
@@ -573,63 +707,31 @@ ConditionCategory:RegisterCondition(19.5,	 "OHSWING", {
 ConditionCategory:RegisterSpacer(20)
 
 local totemData = TMW.COMMON.CurrentClassTotems
-local totemRanks = TMW.COMMON.TotemRanks
 
-function Env.TotemHelper(slot, spellSet)
-	local _, totemName, start, duration = GetTotemInfo(slot)
-	local totemNameLower = strlowerCache[totemName]
-	local totemInfo = totemRanks[totemNameLower]
-	local Hash = spellSet and spellSet.Hash
-	
-	if
-		start ~= 0 and
-		totemName and
-		(
-			not spellSet or
-			Hash[totemNameLower] or
-			(totemInfo and (
-				-- By totem name, (e.g. "Searing Totem III")
-				Hash[totemInfo.totemNameLower] or
-				-- or by spellID,
-				Hash[totemInfo.spellID] or
-				-- Or by the spell name (which is the same as the rank 1 totem name) (e.g. "Searing Totem")
-				Hash[totemInfo.spellNameLower])
-			)
-		)
-	then
-		return duration and duration ~= 0 and (duration - (TMW.time - start)) or 0
+function Env.TotemHelper(slot, nameString)
+	local have, name, start, duration = GetTotemInfo(slot)
+	if nameString and nameString ~= "" and nameString ~= ";" and name and not strfind(nameString, Env.SemicolonConcatCache[name or ""]) then
+		return 0
 	end
-	return 0
+	return duration and duration ~= 0 and (duration - (TMW.time - start)) or 0
 end
 
-function Env.TotemHelperAny(spellSet)
-	local Hash = spellSet and spellSet.Hash
-	
+function Env.TotemHelperAny(nameString)
 	for slot = 1, 10 do
-		local have, totemName, start, duration = GetTotemInfo(slot)
+		local have, name, start, duration = GetTotemInfo(slot)
 		if have == nil then
 			return 0 -- `have` will be nil if the slot doesn't exist.
 		end
-		
-		local totemNameLower = strlowerCache[totemName]
-		local totemInfo = totemRanks[totemNameLower]
 
 		if
-			start ~= 0 and
-			totemName and
-			(
-				not spellSet or
-				Hash[totemNameLower] or
-				(totemInfo and (
-					-- By totem name, (e.g. "Searing Totem III")
-					Hash[totemInfo.totemNameLower] or
-					-- or by spellID,
-					Hash[totemInfo.spellID] or
-					-- Or by the spell name (which is the same as the rank 1 totem name) (e.g. "Searing Totem")
-					Hash[totemInfo.spellNameLower])
-				)
+			have and (
+				-- If we're not filtering by name,
+				(not nameString or nameString == "" or nameString == ";")
+				-- Or we are filtering by name and the name matches
+				or (name and strfind(nameString, Env.SemicolonConcatCache[name]))
 			)
 		then
+			-- Then return the time of this totem as the result.
 			return duration and duration ~= 0 and (duration - (TMW.time - start)) or 0
 		end
 		-- If the above condition didn't succeeed, continue on to the next totem.
@@ -650,18 +752,18 @@ ConditionCategory:RegisterCondition(20.1,	 "TOTEM_ANY", {
 		editbox:SetTexts(L["CNDT_TOTEMNAME"], L["CNDT_TOTEMNAME_DESC"])
 		editbox:SetLabel(L["CNDT_TOTEMNAME"] .. " " .. L["ICONMENU_CHOOSENAME_ORBLANK"])
 	end,
-	useSUG = "totem",
+	useSUG = true,
 	allowMultipleSUGEntires = true,
 	formatter = TMW.C.Formatter.TIME_0ABSENT,
-	icon = "Interface\\ICONS\\spell_nature_brilliance",
+	icon = "Interface\\ICONS\\spell_nature_groundingtotem",
 	tcoords = CNDT.COMMON.standardtcoords,
-	funcstr = [[TotemHelperAny(c.Spells) c.Operator c.Level]],
+	funcstr = [[TotemHelperAny(c.NameStrings) c.Operator c.Level]],
 	events = function(ConditionObject, c)
 		return
 			ConditionObject:GenerateNormalEventString("PLAYER_TOTEM_UPDATE")
 	end,
 	anticipate = function(c)
-		return [[local VALUE = time + TotemHelperAny(c.Spells) - c.Level]]
+		return [[local VALUE = time + TotemHelperAny(c.NameStrings) - c.Level]]
 	end,
 })
 
@@ -677,12 +779,12 @@ for i = 1, 5 do
 			editbox:SetTexts(L["CNDT_TOTEMNAME"], L["CNDT_TOTEMNAME_DESC"])
 			editbox:SetLabel(L["CNDT_TOTEMNAME"] .. " " .. L["ICONMENU_CHOOSENAME_ORBLANK"])
 		end,
-		useSUG = "totem",
+		useSUG = true,
 		allowMultipleSUGEntires = true,
 		formatter = TMW.C.Formatter.TIME_0ABSENT,
-		icon = totem and totem.texture or "Interface\\ICONS\\ability_shaman_tranquilmindtotem",
+		icon = totem and totem.texture or "Interface\\ICONS\\spell_nature_groundingtotem",
 		tcoords = CNDT.COMMON.standardtcoords,
-		funcstr = [[TotemHelper(]] .. i .. ((not totem or totem.hasVariableNames) and [[, c.Spells]] or "") .. [[) c.Operator c.Level]],
+		funcstr = [[TotemHelper(]] .. i .. ((not totem or totem.hasVariableNames) and [[, c.NameString]] or "") .. [[) c.Operator c.Level]],
 		events = function(ConditionObject, c)
 			return
 				ConditionObject:GenerateNormalEventString("PLAYER_TOTEM_UPDATE")
@@ -716,6 +818,8 @@ Env.UnitCast = function(unit, level, matchname)
 	end
 end
 Env.UnitCastTime = function(unit, level, matchname)
+	-- This function was added for use in Lua conditions.
+	-- There's intentionally no condition using it.
 	local name, _, _, _, endTime, _, _, notInterruptible = UnitCastingInfo(unit)
 	if not name then
 		name, _, _, _, endTime, _, notInterruptible = UnitChannelInfo(unit)
@@ -733,9 +837,43 @@ Env.UnitCastTime = function(unit, level, matchname)
 		return name ~= matchname and remaining or 0
 	end
 end
+Env.UnitCastPercent = function(unit, matchname)
+	local name, _, _, start, endTime, _, _, notInterruptible = UnitCastingInfo(unit)
+	if not name then
+		name, _, _, start, endTime, _, notInterruptible = UnitChannelInfo(unit)
+	end
+	if not name then 
+		return 0, nil
+	end
+	name = strlowerCache[name]
+	if matchname == "" and name then
+		matchname = name
+	end
+	local remaining = endTime and endTime/1000 - TMW.time or 0
+	local duration = endTime/1000 - start/1000
+	-- second return value is the percent-per-second, used by anticipate
+	return 1 - (remaining / duration), 1 / duration
+end
+local castEvents = function(ConditionObject, c)
+	return
+		ConditionObject:GetUnitChangedEventString(CNDT:GetUnit(c.Unit)),
+		ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_START", CNDT:GetUnit(c.Unit)),
+		ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_STOP", CNDT:GetUnit(c.Unit)),
+		ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_SUCCEEDED", CNDT:GetUnit(c.Unit)),
+		ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_FAILED", CNDT:GetUnit(c.Unit)),
+		ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_FAILED_QUIET", CNDT:GetUnit(c.Unit)),
+		ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_DELAYED", CNDT:GetUnit(c.Unit)),
+		ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_INTERRUPTED", CNDT:GetUnit(c.Unit)),
+		ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_CHANNEL_START", CNDT:GetUnit(c.Unit)),
+		ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_CHANNEL_UPDATE", CNDT:GetUnit(c.Unit)),
+		ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_CHANNEL_STOP", CNDT:GetUnit(c.Unit)),
+		TMW.isWrath and "false" or ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_INTERRUPTIBLE", CNDT:GetUnit(c.Unit)),
+		TMW.isWrath and "false" or ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_NOT_INTERRUPTIBLE", CNDT:GetUnit(c.Unit))
+end
 ConditionCategory:RegisterCondition(31,	 "CASTING", {
 	text = L["ICONMENU_CAST"],
-	min = 1,
+	text = L["ICONMENU_CAST_DESC"],
+	min = 0,
 	max = 2,
 	levelChecks = true,
 	nooperator = true,
@@ -752,22 +890,30 @@ ConditionCategory:RegisterCondition(31,	 "CASTING", {
 	end,
 	useSUG = true,
 	funcstr = [[UnitCast(c.Unit, c.Level, LOWER(c.NameString))]], -- LOWER is some gsub magic
-	events = function(ConditionObject, c)
-		return
-			ConditionObject:GetUnitChangedEventString(CNDT:GetUnit(c.Unit)),
-			ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_START", CNDT:GetUnit(c.Unit)),
-			ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_STOP", CNDT:GetUnit(c.Unit)),
-			ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_SUCCEEDED", CNDT:GetUnit(c.Unit)),
-			ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_FAILED", CNDT:GetUnit(c.Unit)),
-			ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_FAILED_QUIET", CNDT:GetUnit(c.Unit)),
-			ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_DELAYED", CNDT:GetUnit(c.Unit)),
-			ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_INTERRUPTED", CNDT:GetUnit(c.Unit)),
-			ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_CHANNEL_START", CNDT:GetUnit(c.Unit)),
-			ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_CHANNEL_UPDATE", CNDT:GetUnit(c.Unit)),
-			ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_CHANNEL_STOP", CNDT:GetUnit(c.Unit))
-			--,ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_INTERRUPTIBLE", CNDT:GetUnit(c.Unit))
-			--,ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_NOT_INTERRUPTIBLE", CNDT:GetUnit(c.Unit))
+	events = castEvents,
+})
+ConditionCategory:RegisterCondition(31.1,	 "CASTPERCENT", {
+	text = L["ICONMENU_CAST_PERCENT"],
+	tooltip = L["ICONMENU_CAST_PERCENT_DESC"],
+	percent = true,
+	formatter = TMW.C.Formatter.PERCENT,
+	min = 0,
+	max = 100,
+	icon = "Interface\\Icons\\Temp",
+	tcoords = CNDT.COMMON.standardtcoords,
+	name = function(editbox)
+		editbox:SetTexts(L["CONDITIONPANEL_CASTTOMATCH"], L["CONDITIONPANEL_CASTTOMATCH_DESC"])
+		editbox:SetLabel(L["CONDITIONPANEL_CASTTOMATCH"])
 	end,
+	useSUG = true,
+	funcstr = [[UnitCastPercent(c.Unit, LOWER(c.NameString)) c.Operator c.Level]],
+	events = castEvents,
+	anticipate = [[
+		local percent, percentPerSecond = UnitCastPercent(c.Unit, LOWER(c.NameString))
+		local VALUE = 
+			percentPerSecond == nil and huge or 
+			((c.Level - percent) / percentPerSecond) + time
+	]],
 })
 
 
@@ -786,9 +932,8 @@ local function CASTCOUNT_COMBAT_LOG_EVENT_UNFILTERED()
 			CastCounts[sourceGUID] = castsForGUID
 		end
 		
-		-- castsForGUID[spellName] = spellID
-		castsForGUID[spellName] = (castsForGUID[spellName] or 0) + 1
-		TMW:Fire("TMW_CNDT_CASTCOUNT_UPDATE")
+		castsForGUID[spellName] = spellID
+		castsForGUID[spellID] = (castsForGUID[spellID] or 0) + 1
 		TMW:Fire("TMW_CNDT_CASTCOUNT_UPDATE")
 	
 	elseif cleuEvent == "UNIT_DIED" then
@@ -817,9 +962,9 @@ function Env.UnitCastCount(...)
 			return 0
 		end
 		
-		-- if not isNumber[spell] then
-		-- 	spell = casts[spell] or spell -- spell name keys have values that are spellIDs
-		-- end
+		if not isNumber[spell] then
+			spell = casts[spell] or spell -- spell name keys have values that are spellIDs
+		end
 		return casts[spell] or 0
 	end
 	
@@ -829,7 +974,7 @@ ConditionCategory:RegisterCondition(32,	 "CASTCOUNT", {
 	text = L["CONDITIONPANEL_CASTCOUNT"],
 	tooltip = L["CONDITIONPANEL_CASTCOUNT_DESC"],
 	range = 10,
-	icon = "Interface\\Icons\\Temp",
+	icon = "Interface\\Icons\\spell_nature_lightningoverload",
 	name = function(editbox)
 		editbox:SetTexts(L["SPELLTOCHECK"], L["CNDT_ONLYFIRST"])
 	end,

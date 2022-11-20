@@ -108,6 +108,25 @@ ConditionCategory:RegisterCondition(3,    "COMBAT", {
 	end,
 })
 
+ConditionCategory:RegisterCondition(4,    "VEHICLE", {
+	text = L["CONDITIONPANEL_VEHICLE"],
+
+	bool = true,
+	
+	icon = "Interface\\Icons\\Ability_Vehicle_SiegeEngineCharge",
+	tcoords = CNDT.COMMON.standardtcoords,
+	Env = {
+		UnitHasVehicleUI = UnitHasVehicleUI,
+	},
+	funcstr = [[BOOLCHECK( UnitHasVehicleUI(c.Unit) )]],
+	events = function(ConditionObject, c)
+		return
+			ConditionObject:GetUnitChangedEventString(CNDT:GetUnit(c.Unit)),
+			ConditionObject:GenerateNormalEventString("UNIT_ENTERED_VEHICLE", CNDT:GetUnit(c.Unit)),
+			ConditionObject:GenerateNormalEventString("UNIT_EXITED_VEHICLE", CNDT:GetUnit(c.Unit))
+	end,
+})
+
 ConditionCategory:RegisterCondition(5,    "PVPFLAG", {
 	text = L["CONDITIONPANEL_PVPFLAG"],
 
@@ -134,7 +153,7 @@ ConditionCategory:RegisterCondition(6,    "REACT", {
 	defaultUnit = "target",
 	texttable = {[1] = L["ICONMENU_HOSTILE"], [2] = L["ICONMENU_FRIEND"]},
 	nooperator = true,
-	icon = "Interface\\Icons\\spell_holy_blessingofstamina",
+	icon = TMW.isRetail and "Interface\\Icons\\Warrior_talent_icon_FuryInTheBlood" or "Interface\\Icons\\spell_holy_blessingofstamina",
 	tcoords = CNDT.COMMON.standardtcoords,
 	Env = {
 		UnitIsEnemy = UnitIsEnemy,
@@ -167,6 +186,28 @@ ConditionCategory:RegisterCondition(6.2,  "ISPLAYER", {
 			ConditionObject:GetUnitChangedEventString(CNDT:GetUnit(c.Unit))
 	end,
 })
+
+if UnitGetIncomingHeals then
+	ConditionCategory:RegisterCondition(6.7,  "INCHEALS", {
+		text = L["INCHEALS"],
+		tooltip = L["INCHEALS_DESC"],
+		range = 50000,
+		icon = "Interface\\Icons\\spell_holy_flashheal",
+		tcoords = CNDT.COMMON.standardtcoords,
+		formatter = TMW.C.Formatter.COMMANUMBER,
+		Env = {
+			UnitGetIncomingHeals = UnitGetIncomingHeals,
+		},
+		funcstr = function(c)
+			return [[(UnitGetIncomingHeals(c.Unit) or 0) c.Operator c.Level]]
+		end,
+		events = function(ConditionObject, c)
+			return
+				ConditionObject:GetUnitChangedEventString(CNDT:GetUnit(c.Unit)),
+				ConditionObject:GenerateNormalEventString("UNIT_HEAL_PREDICTION", CNDT:GetUnit(c.Unit))
+		end,
+	})
+end
 
 
 ConditionCategory:RegisterSpacer(6.9)
@@ -437,7 +478,7 @@ ConditionCategory:RegisterCondition(12.1, "CLASSIFICATION2", {
 
 	defaultUnit = "target",
 
-	icon = "Interface\\Icons\\inv_jewelry_stormpiketrinket_05",
+	icon = "Interface\\Icons\\achievement_pvp_h_03",
 	tcoords = CNDT.COMMON.standardtcoords,
 
 	Env = {
@@ -504,6 +545,27 @@ ConditionCategory:RegisterCondition(13.1,   "UNITRACE", {
 			["BloodElf"] = {order = 11, text = Name("Blood Elf")},
 		}
 
+		if TMW.isRetail then
+			TMW:CopyTableInPlaceUsingDestinationMeta({
+				["Worgen"] = {order = 6, text = Name("Worgen")},
+				["VoidElf"] = {order = 6.1, text = Name("Void Elf")},
+				["LightforgedDraenei"] = {order = 6.2, text = Name("Lightforged Draenei")},
+				["DarkIronDwarf"] = {order = 6.3, text = Name("Dark Iron Dwarf")},
+				["KulTiran"] = {order = 6.4, text = Name("Kul Tiran")},
+				["Mechagnome"] = {order = 6.5, text = Name("Mechagnome"), space = true},
+				
+				["Goblin"] = {order = 12, text = Name("Goblin")},
+				["Nightborne"] = {order = 12.1, text = Name("Nightborne")},
+				["HighmountainTauren"] = {order = 12.2, text = Name("Highmountain Tauren")},
+				["MagharOrc"] = {order = 12.3, text = Name("Mag'har Orc")},
+				["ZandalariTroll"] = {order = 12.4, text = Name("Zandalari Troll")},
+				["Vulpera"] = {order = 12.5, text = Name("Vulpera"), space = true},
+
+				["Pandaren"] = {order = 13, text = Name("Pandaren")},
+				["Dracthyr"] = {order = 14, text = Name("Dracthyr")},
+			}, bitFlags, true)
+		end
+
 		for token, data in pairs(bitFlags) do
 			data.atlas = TMW:GetRaceIconInfo(token)
 			data.tcoords = CNDT.COMMON.standardtcoords
@@ -528,6 +590,7 @@ ConditionCategory:RegisterCondition(13.1,   "UNITRACE", {
 })
 
 
+
 ConditionCategory:RegisterSpacer(13.5)
 
 
@@ -539,7 +602,7 @@ ConditionCategory:RegisterCondition(17,   "THREATSCALED", {
 	max = 100,
 	defaultUnit = "target",
 	formatter = TMW.C.Formatter.PERCENT,
-	icon = GetSpellTexture(6612),
+	icon = "Interface\\Icons\\spell_misc_emotionangry",
 	tcoords = CNDT.COMMON.standardtcoords,
 	Env = {
 		UnitExists = UnitExists,
@@ -563,7 +626,7 @@ ConditionCategory:RegisterCondition(18,   "THREATRAW", {
 	max = 130,
 	defaultUnit = "target",
 	formatter = TMW.C.Formatter.PERCENT,
-	icon = GetSpellTexture(9174),
+	icon = "Interface\\Icons\\spell_misc_emotionhappy",
 	tcoords = CNDT.COMMON.standardtcoords,
 	Env = {
 		UnitExists = UnitExists,

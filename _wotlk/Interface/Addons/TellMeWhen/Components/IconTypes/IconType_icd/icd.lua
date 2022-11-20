@@ -101,14 +101,20 @@ TMW:RegisterCallback("TMW_GLOBAL_UPDATE", function()
 end)
 
 
-local function ICD_OnEvent(icon, event, unit, _, spellID)
-	local valid, spellName, _
+-- Auras that don't report a source, but can only be self-applied,
+-- so if the destination is the player, we know its the player's proc.
+local noSource = {
+	[159679] = true, -- mark of blackrock
+	[159678] = true, -- mark of shadowmoon
+}
+local function ICD_OnEvent(icon, event, ...)
+	local valid, spellID, spellName, _
 
 	if event == "COMBAT_LOG_EVENT_UNFILTERED" then
 		local cevent, sourceGUID
 		_, cevent, _, sourceGUID, _, _, _, destGUID, _, _, _, spellID, spellName = CombatLogGetCurrentEventInfo()
 
-		valid = (sourceGUID == pGUID) and (
+		valid = (sourceGUID == pGUID or (noSource[spellID] and destGUID == pGUID)) and (
 			cevent == "SPELL_AURA_APPLIED" or
 			cevent == "SPELL_AURA_REFRESH" or
 			cevent == "SPELL_ENERGIZE" or
@@ -118,9 +124,12 @@ local function ICD_OnEvent(icon, event, unit, _, spellID)
 			cevent == "SPELL_MISSED"
 		)
 
-	elseif unit == "player" and (event == "UNIT_SPELLCAST_SUCCEEDED" or event == "UNIT_SPELLCAST_CHANNEL_START" or event == "UNIT_SPELLCAST_START") then
+	elseif event == "UNIT_SPELLCAST_SUCCEEDED" or event == "UNIT_SPELLCAST_CHANNEL_START" or event == "UNIT_SPELLCAST_START" then
+		local unit
+		unit, _, spellID = ...
 		spellName = GetSpellInfo(spellID)
-		valid = true
+
+		valid = unit == "player"
 	end
 
 	if valid then
@@ -132,9 +141,9 @@ local function ICD_OnEvent(icon, event, unit, _, spellID)
 
 			icon.ICDStartTime = TMW.time
 			icon.ICDDuration = icon.Spells.Durations[Key]
-			icon:SetInfo("spell; texture",
+			icon:SetInfo("spell; texture", 
 				icon.ICDID,
-				GetSpellTexture(spellID == 0 and spellName or spellID)
+				GetSpellTexture(spellID)
 			)
 			icon.NextUpdateTime = 0
 		end

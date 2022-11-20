@@ -264,8 +264,10 @@ L["ICONMENU_DOTWATCH_NOFOUND_DESC"] = "Set the icon opacity level for when none 
 
 
 
-L["ICONMENU_GUARDIAN"] = "Guardians/Pets"
-L["ICONMENU_GUARDIAN_DESC"] = [[Tracks your active guardians and temporary pets.]]
+L["ICONMENU_GUARDIAN"] = "Guardians"
+L["ICONMENU_GUARDIAN_DESC"] = [[Tracks your active guardians. These are minor units like Wild Imps for Warlocks.
+
+This icon type works best when used as a group controller.]]
 L["ICONMENU_GUARDIAN_TRIGGER"] = "Triggered by: %s"
 L["ICONMENU_GUARDIAN_CHOOSENAME_DESC"] = [[Enter the Name or NPC ID of the guardians you want this icon to monitor.
 
@@ -315,6 +317,8 @@ L["ICONMENU_ICD_DESC"] = [=[Tracks the cooldown of a proc or a similar effect.
 
 L["ICONMENU_CAST"] = "Spell Cast"
 L["ICONMENU_CAST_DESC"] = [=[Tracks spell casts and channels.]=]
+L["ICONMENU_CAST_PERCENT"] = "Spell Cast Percent Completion"
+L["ICONMENU_CAST_PERCENT_DESC"] = [=[Tracks the completion percentage of spell casts and channels.]=]
 
 L["ICONMENU_UNITCNDTIC"] = "Unit Condition Icon"
 L["ICONMENU_UNITCNDTIC_DESC"] = [=[Tracks the state of conditions on a number of units.
@@ -656,6 +660,10 @@ L["ICONMENU_GCDASUNUSABLE"] = "Don't ignore GCD"
 L["ICONMENU_GCDASUNUSABLE_DESC"] = [[Normally, TellMeWhen classifies cooldowns on GCD as being usable.
 
 Enable this setting to prevent that behavior, making spells on the GCD be treated as unusable.]]
+
+L["ICONMENU_IGNORERUNES"] = "Ignore Runes"
+L["ICONMENU_IGNORERUNES_DESC"] = "Check this to treat the cooldown as usable if the only thing hindering it is a rune cooldown (or a global cooldown)."
+L["ICONMENU_IGNORERUNES_DESC_DISABLED"] = "You must enable the \"Cooldown check\" setting to enable the \"Ignore Runes\" setting."
 L["ICONMENU_DONTREFRESH"] = "Don't Refresh"
 L["ICONMENU_DONTREFRESH_DESC"] = "Check to force the cooldown to not reset if the trigger occurs while it is still counting down."
 L["ICONMENU_CLEU_NOREFRESH"] = "Don't Refresh"
@@ -874,6 +882,7 @@ L["TREEf"] = "Tree: %s"
 L["UIPANEL_ROLE_DESC"] = "Check to allow this group to show when your current specialization serves this role."
 L["ROLEf"] = "Role: %s"
 L["UIPANEL_PTSINTAL"] = "Points in talent"
+L["UIPANEL_TALENTLOADOUT"] = "Talent Loadout"
 L["UIPANEL_TALENTLEARNED"] = "Talent learned"
 L["UIPANEL_AZESSLEARNED"] = "Azerite Essence Active"
 L["UIPANEL_AZESSLEARNED_MAJOR"] = "Major Azerite Essence Active"
@@ -1106,9 +1115,7 @@ L["UIPANEL_FONT_HEIGHT_DESC"] = [[Set the maximum height of the text display. If
  If this text display is anchored on both its top and bottom sides, this setting will have no effect.]]
 
 L["UIPANEL_FONT_ROTATE"] = "Rotation"
-L["UIPANEL_FONT_ROTATE_DESC"] = [[Set the amount, in degrees, that you want to rotate the text display by.
-
-The way this is implemented is not supported by Blizzard, so if it behaves strangely, there isn't much that can be done.]]
+L["UIPANEL_FONT_ROTATE_DESC"] = [[Set the amount, in degrees, that you want to rotate the text display by.]]
 
 L["UIPANEL_FONT_XOFFS"] = "X Offset"
 L["UIPANEL_FONT_XOFFS_DESC"] = "The x-axis offset of the anchor"
@@ -1370,11 +1377,8 @@ The group of the icon being checked must be shown in order to check the icon.]=]
 L["CONDITIONPANEL_RUNES"] = "Rune Count"
 L["CONDITIONPANEL_RUNES_DESC3"] = [=[Use this condition type to check when the desired number of runes are available.]=]
 L["CONDITIONPANEL_RUNES_CHECK_DESC"] = [=[Check to count this rune type into the total count for the condition.]=]
-
 L["CONDITIONPANEL_RUNES_DESC_GENERIC"] = [=[Each rune is a check button. Check each rune to have it be counted into the conditions.
-
 The runes in the first row will not match death runes. The runes in the second row are the death rune version of each rune above.]=]
-
 
 L["CONDITIONPANEL_RUNESRECH"] = "Recharging Rune Count"
 L["CONDITIONPANEL_RUNESRECH_DESC"] = [=[Use this condition type to check when the desired number of runes are recharging.]=]
@@ -1393,6 +1397,7 @@ L["CONDITIONPANEL_CLASS"] = "Unit Class"
 L["CONDITIONPANEL_UNITRACE"] = "Unit Race"
 L["CONDITIONPANEL_UNITSPEC"] = "Unit Specialization"
 L["CONDITIONPANEL_UNITSPEC_CHOOSEMENU"] = "Choose Specs..."
+
 L["CONDITIONPANEL_UNITSPEC_DESC"] = [[This condition ONLY works for:
 |cff7fffff-|r Yourself
 |cff7fffff-|r Battleground enemies
@@ -1401,6 +1406,15 @@ L["CONDITIONPANEL_UNITSPEC_DESC"] = [[This condition ONLY works for:
 It does NOT work for: |TInterface/AddOns/TellMeWhen/Textures/Alert:0:2|t
 |cff7fffff-|r Group members
 |cff7fffff-|r Any other players]]
+
+L["CONDITIONPANEL_UNITSPEC_DESC_WRATH"] = [[This condition ONLY works for:
+|cff7fffff-|r Yourself
+
+It does NOT work for: |TInterface/AddOns/TellMeWhen/Textures/Alert:0:2|t
+|cff7fffff-|r Group members
+|cff7fffff-|r Enemy players
+|cff7fffff-|r Any other players]]
+
 L["CONDITIONPANEL_CLASSIFICATION"] = "Unit Classification"
 L["CONDITIONPANEL_CLASSIFICATION_DESC"] = "Checks the rare/elite/world boss status of a unit."
 L["CONDITIONPANEL_ROLE"] = "Unit Group Role"
@@ -2900,7 +2914,7 @@ L["DR-ControlledRoot"] = "Controlled roots"
 L["DR-Charge"] = "Charge"
 L["DR-CheapShot"] = "Cheap Shot / Pounce"
 L["DR-Hibernate"] = "Hibernate"
-L["DR-KidneyShot"] = "Kidney Shot"
+L["DR-OpenerStun"] = "Opener Stun"
 
 L["CONDITIONPANEL_CREATURETYPE"] = "Unit Creature Type"
 L["CONDITIONPANEL_CREATURETYPE_LABEL"] = "Creature Type(s)"

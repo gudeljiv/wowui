@@ -27,8 +27,8 @@ local math, max, ceil, floor, random, abs =
 local _G, coroutine, table, GetTime, CopyTable, tostringall, geterrorhandler, C_Timer =
 	  _G, coroutine, table, GetTime, CopyTable, tostringall, geterrorhandler, C_Timer
 
-local UnitAura, IsUsableSpell, GetFramerate =
-	  UnitAura, IsUsableSpell, GetFramerate
+local UnitAura, IsUsableSpell, GetRuneCooldown, GetSpecialization, GetSpecializationInfo, GetFramerate =
+	  UnitAura, IsUsableSpell, GetRuneCooldown, GetSpecialization, GetSpecializationInfo, GetFramerate
 
 local debugprofilestop = debugprofilestop_SAFE
 
@@ -713,7 +713,7 @@ function TMW:RGBToHSV(r, g, b)
 	return h, s, v
 end
 
-function TMW:HSVToRGB(h, s, v)
+function TMW:HSVToRGB(h, s, v, a)
 	local r, g, b
 
 	local i = floor(h * 6)
@@ -732,7 +732,7 @@ function TMW:HSVToRGB(h, s, v)
 	elseif i == 5 then r, g, b = v, p, q
 	end
 
-	return r, g, b
+	return r, g, b, a
 end
 
 local getColorsTemp = {}
@@ -1484,27 +1484,6 @@ end
 -- WoW API Helpers
 ---------------------------------
 
-local classInfo = {
-	[1] = C_CreatureInfo.GetClassInfo(1),
-	[2] = C_CreatureInfo.GetClassInfo(2),
-	[3] = C_CreatureInfo.GetClassInfo(3),
-	[4] = C_CreatureInfo.GetClassInfo(4),
-	[5] = C_CreatureInfo.GetClassInfo(5),
-	[6] = C_CreatureInfo.GetClassInfo(6),
-	[7] = C_CreatureInfo.GetClassInfo(7),
-	[8] = C_CreatureInfo.GetClassInfo(8),
-	[9] = C_CreatureInfo.GetClassInfo(9),
-	[11] = C_CreatureInfo.GetClassInfo(11),
-}
-function TMW.GetMaxClassID()
-	return 11
-end
-function TMW.GetClassInfo(classID)
-	local info = classInfo[classID]
-	if not info then return end
-	return info.className, info.classFile, info.classID
-end
-
 function TMW.SpellHasNoMana(spell)
 	-- TODO: in warlords, you can't determine spell costs anymore. Thanks, blizzard!
 	-- This function used to get the spell cost, and determine usability from that, 
@@ -1513,6 +1492,13 @@ function TMW.SpellHasNoMana(spell)
 
 	local _, nomana = IsUsableSpell(spell)
 	return nomana
+end
+
+function TMW.GetRuneCooldownDuration()
+	-- Round to a precision of 3 decimal points for comparison with returns from GetSpellCooldown
+	local _, duration = GetRuneCooldown(1)
+	if not duration then return 0 end
+	return floor(duration * 1e3 + 0.5) / 1e3
 end
 
 local function spellCostSorter(a, b)
@@ -1557,123 +1543,175 @@ function TMW.GetSpellCost(spell)
 	end
 end
 
-local classSpecIds = {
-	DRUID = {102,103,105},
-	HUNTER = {253,254,255},
-	MAGE = {62,63,64},
-	PALADIN = {65,66,70},
-	PRIEST = {256,257,258},
-	ROGUE = {259,260,261},
-	SHAMAN = {262,263,264},
-	WARLOCK = {265,266,267},
-	WARRIOR = {71,72,73},
-	DEATHKNIGHT = {250,251,252},
-}
-local specs = {
-	[253]	= {"Beast Mastery", 461112, "DAMAGER"},
-	[254]	= {"Marksmanship", 236179, "DAMAGER"},
-	[255]	= {"Survival", 461113, "DAMAGER"},
-
-	[71]	= {"Arms", 132355, "DAMAGER"},
-	[72]	= {"Fury", 132347, "DAMAGER"},
-	[73]	= {"Protection", 132341, "TANK"},
-
-	[65]	= {"Holy", 135920, "HEALER"},
-	[66]	= {"Protection", 236264, "TANK"},
-	[70]	= {"Retribution", 135873, "DAMAGER"},
-
-	[62]	= {"Arcane", 135932, "DAMAGER"},
-	[63]	= {"Fire", 135810, "DAMAGER"},
-	[64]	= {"Frost", 135846, "DAMAGER"},
-
-	[256]	= {"Discipline", 135940, "HEALER"},
-	[257]	= {"Holy", 237542, "HEALER"},
-	[258]	= {"Shadow", 136207, "DAMAGER"},
-
-	[265]	= {"Affliction", 136145, "DAMAGER"},
-	[266]	= {"Demonology", 136172, "DAMAGER"},
-	[267]	= {"Destruction", 136186, "DAMAGER"},
-
-	[102]	= {"Balance", 136096, "DAMAGER"},
-	[103]	= {"Feral", 132115, "DAMAGER"},
-	[105]	= {"Restoration", 136041, "HEALER"},
-
-	[262]	= {"Elemental", 136048, "DAMAGER"},
-	[263]	= {"Enhancement", 237581, "DAMAGER"},
-	[264]	= {"Restoration", 136052, "HEALER"},
-
-	[259]	= {"Assassination", 236270, "DAMAGER"},
-	[260]	= {"Combat", 236286, "DAMAGER"},
-	[261]	= {"Subtlety", 132320, "DAMAGER"},
-
-	[250]	= {"Blood", 135770, "DAMAGER"},
-	[251]	= {"Frost", 135773, "DAMAGER"},
-	[252]	= {"Unholy", 135775, "DAMAGER"},
-}
-
-function TMW.GetNumSpecializations()
-	return 3
-end
-
-function TMW.GetNumSpecializationsForClassID(classID)
-	return 3
-end
-
-function TMW.GetSpecializationInfoForClassID(classID, i) 
-	local _, slug = GetClassInfo(classID)
-	return TMW.GetSpecializationInfoByID(classSpecIds[slug][i])
-end
-
-function TMW.GetCurrentSpecialization()
-	local _, pclass = UnitClass("player")
-	local specIDs = classSpecIds[pclass]
+if TMW.isWrath then
+	local classInfo = {
+		[1] = C_CreatureInfo.GetClassInfo(1),
+		[2] = C_CreatureInfo.GetClassInfo(2),
+		[3] = C_CreatureInfo.GetClassInfo(3),
+		[4] = C_CreatureInfo.GetClassInfo(4),
+		[5] = C_CreatureInfo.GetClassInfo(5),
+		[6] = C_CreatureInfo.GetClassInfo(6),
+		[7] = C_CreatureInfo.GetClassInfo(7),
+		[8] = C_CreatureInfo.GetClassInfo(8),
+		[9] = C_CreatureInfo.GetClassInfo(9),
+		[11] = C_CreatureInfo.GetClassInfo(11),
+	}
+	function TMW.GetMaxClassID()
+		return 11
+	end
+	function TMW.GetClassInfo(classID)
+		local info = classInfo[classID]
+		if not info then return end
+		return info.className, info.classFile, info.classID
+	end
 	
-	local biggest = 0
-	local spec
-	for i = 1, #specIDs do
-		local _, _, points = GetTalentTabInfo(i)
-		if points > biggest then
-			biggest = points
-			spec = i
+	local classSpecIds = {
+		DRUID = {102,103,105},
+		HUNTER = {253,254,255},
+		MAGE = {62,63,64},
+		PALADIN = {65,66,70},
+		PRIEST = {256,257,258},
+		ROGUE = {259,260,261},
+		SHAMAN = {262,263,264},
+		WARLOCK = {265,266,267},
+		WARRIOR = {71,72,73},
+		DEATHKNIGHT = {250,251,252},
+	}
+	local specs = {
+		[253]	= {"Beast Mastery", 461112, "DAMAGER"},
+		[254]	= {"Marksmanship", 236179, "DAMAGER"},
+		[255]	= {"Survival", 461113, "DAMAGER"},
+	
+		[71]	= {"Arms", 132355, "DAMAGER"},
+		[72]	= {"Fury", 132347, "DAMAGER"},
+		[73]	= {"Protection", 132341, "TANK"},
+	
+		[65]	= {"Holy", 135920, "HEALER"},
+		[66]	= {"Protection", 236264, "TANK"},
+		[70]	= {"Retribution", 135873, "DAMAGER"},
+	
+		[62]	= {"Arcane", 135932, "DAMAGER"},
+		[63]	= {"Fire", 135810, "DAMAGER"},
+		[64]	= {"Frost", 135846, "DAMAGER"},
+	
+		[256]	= {"Discipline", 135940, "HEALER"},
+		[257]	= {"Holy", 237542, "HEALER"},
+		[258]	= {"Shadow", 136207, "DAMAGER"},
+	
+		[265]	= {"Affliction", 136145, "DAMAGER"},
+		[266]	= {"Demonology", 136172, "DAMAGER"},
+		[267]	= {"Destruction", 136186, "DAMAGER"},
+	
+		[102]	= {"Balance", 136096, "DAMAGER"},
+		[103]	= {"Feral", 132115, "DAMAGER"},
+		[105]	= {"Restoration", 136041, "HEALER"},
+	
+		[262]	= {"Elemental", 136048, "DAMAGER"},
+		[263]	= {"Enhancement", 237581, "DAMAGER"},
+		[264]	= {"Restoration", 136052, "HEALER"},
+	
+		[259]	= {"Assassination", 236270, "DAMAGER"},
+		[260]	= {"Combat", 236286, "DAMAGER"},
+		[261]	= {"Subtlety", 132320, "DAMAGER"},
+	
+		[250]	= {"Blood", 135770, "DAMAGER"},
+		[251]	= {"Frost", 135773, "DAMAGER"},
+		[252]	= {"Unholy", 135775, "DAMAGER"},
+	}
+	
+	function TMW.GetNumSpecializations()
+		return 3
+	end
+	
+	function TMW.GetNumSpecializationsForClassID(classID)
+		return 3
+	end
+	
+	function TMW.GetSpecializationInfoForClassID(classID, i) 
+		local _, slug = GetClassInfo(classID)
+		return TMW.GetSpecializationInfoByID(classSpecIds[slug][i])
+	end
+	
+	function TMW.GetCurrentSpecialization()
+		local _, pclass = UnitClass("player")
+		local specIDs = classSpecIds[pclass]
+		
+		local biggest = 0
+		local spec
+		for i = 1, #specIDs do
+			local _, _, points = GetTalentTabInfo(i)
+			if points > biggest then
+				biggest = points
+				spec = i
+			end
 		end
+	
+		return spec
 	end
-
-	return spec
-end
-
-function TMW.GetCurrentSpecializationID()
-	local _, pclass = UnitClass("player")
-	return classSpecIds[pclass][TMW.GetCurrentSpecialization()]
-end
-
-function TMW.GetSpecializationInfo(index)
-	local _, pclass = UnitClass("player")
-	return TMW.GetSpecializationInfoByID(classSpecIds[pclass][index])
-end
-
-function TMW.GetSpecializationInfoByID(specID)
-	local data = specs[specID]
-	-- 3rd param is description... I didn't include it because TMW doesn't need it.
-	return specID, data[1], nil, data[2], data[3]
-end
-
-function TMW.GetCurrentSpecializationRole()
-	-- Watch for PLAYER_SPECIALIZATION_CHANGED for changes to this func's return, and to
-
-	local activeSpec = GetActiveTalentGroup()
-	if not activeSpec or activeSpec == 0 then
-		return "DAMAGER"
+	
+	function TMW.GetCurrentSpecializationID()
+		local _, pclass = UnitClass("player")
+		return classSpecIds[pclass][TMW.GetCurrentSpecialization()]
 	end
+	
+	function TMW.GetSpecializationInfo(index)
+		local _, pclass = UnitClass("player")
+		return TMW.GetSpecializationInfoByID(classSpecIds[pclass][index])
+	end
+	
+	function TMW.GetSpecializationInfoByID(specID)
+		local data = specs[specID]
+		-- 3rd param is description... I didn't include it because TMW doesn't need it.
+		return specID, data[1], nil, data[2], data[3]
+	end
+	
+	function TMW.GetCurrentSpecializationRole()
+		-- Watch for PLAYER_SPECIALIZATION_CHANGED for changes to this func's return, and to
+	
+		local activeSpec = GetActiveTalentGroup()
+		if not activeSpec or activeSpec == 0 then
+			return "DAMAGER"
+		end
+	
+		return GetTalentGroupRole(activeSpec) or "DAMAGER"
+	end
+else
+	TMW.GetSpecializationInfoByID = GetSpecializationInfoByID
+	TMW.GetCurrentSpecializationID = GetCurrentSpecializationID
+	TMW.GetSpecializationInfo = GetSpecializationInfo
+	TMW.GetCurrentSpecialization = GetCurrentSpecialization
+	TMW.GetSpecializationInfoForClassID = GetSpecializationInfoForClassID
+	TMW.GetNumSpecializationsForClassID = GetNumSpecializationsForClassID
+	TMW.GetNumSpecializations = GetNumSpecializations
+	TMW.GetMaxClassID = GetNumClasses
+	TMW.GetClassInfo = GetClassInfo
+	function TMW.GetCurrentSpecializationID() 
+		return GetSpecializationInfo(GetSpecialization())
+	end
+	function TMW.GetCurrentSpecializationRole()
+		-- Watch for PLAYER_SPECIALIZATION_CHANGED for changes to this func's return, and to
+		-- UPDATE_SHAPESHIFT_FORM if the player is a warrior.
+		local currentSpec = GetSpecialization()
+		if not currentSpec then
+			return nil
+		end
 
-	return GetTalentGroupRole(activeSpec) or "DAMAGER"
+		local _, _, _, _, role = GetSpecializationInfo(currentSpec)
+		return role
+	end
 end
-
 
 do	-- TMW:GetParser()
 	local Parser, LT1, LT2, LT3, RT1, RT2, RT3
 	function TMW:GetParser()
 		if not Parser then
 			Parser = CreateFrame("GameTooltip")
+			if TooltipDataHandlerMixin then
+				-- in theory this could use TooltipDataHandlerMixin,
+				-- but the blizzard PTR tooltips explode if we dont use GameTooltipDataMixin
+				-- because somehow for some reason they need GetUnit?
+				Mixin(Parser, GameTooltipDataMixin)
+			end
 
 			LT1 = Parser:CreateFontString()
 			RT1 = Parser:CreateFontString()
@@ -1708,6 +1746,7 @@ end
 TMW:MakeSingleArgFunctionCached(TMW, "GetRaceIconInfo")
 
 function TMW:TryGetNPCName(id)
+	-- TODO: Replace GetParser with direct usage of C_TooltipInfo when available
     local tooltip, LT1 = TMW:GetParser()
     tooltip:SetOwner(UIParent, "ANCHOR_NONE")
     tooltip:SetHyperlink( string.format( "unit:Creature-0-0-0-0-%d:0000000000", id))
