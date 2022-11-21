@@ -1,14 +1,10 @@
 ------------------------------------------------------------------------
-r555 | Zimzarina | 2022-11-19 16:36:54 +0000 (Sat, 19 Nov 2022) | 1 line
-Changed paths:
-   M /trunk/Postal.toc
-
-Re-enabled Express.lua
-------------------------------------------------------------------------
-r554 | Zimzarina | 2022-11-19 16:35:31 +0000 (Sat, 19 Nov 2022) | 1 line
+r557 | Zimzarina | 2022-11-21 08:36:04 +0000 (Mon, 21 Nov 2022) | 1 line
 Changed paths:
    M /trunk/Modules/Express.lua
+   M /trunk/Modules/QuickAttach.lua
+   M /trunk/Postal.lua
 
-Fixed Express.lua for C_Container namespace changes in 10.0.2 patch
+Added support for reagent bag in 10.0.2 release to Express.lua and QuickAttach.lua.
 ------------------------------------------------------------------------
 
