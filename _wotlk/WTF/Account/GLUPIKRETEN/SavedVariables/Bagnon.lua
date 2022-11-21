@@ -180,17 +180,17 @@ Bagnon_Sets = {
 			["sort"] = true,
 			["spacing"] = 2,
 			["bagToggle"] = true,
-			["columns"] = 18,
+			["columns"] = 10,
 			["alpha"] = 1,
 			["scale"] = 1,
 			["bagBreak"] = false,
-			["x"] = 31.61697196960449,
+			["x"] = 450.0296020507813,
 			["search"] = true,
 			["broker"] = false,
 			["itemScale"] = 1,
 			["hiddenRules"] = {
 			},
-			["y"] = -280.3865966796875,
+			["y"] = -231.1328125,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]

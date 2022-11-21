@@ -3,6 +3,7 @@ BisTooltipDB = {
 	["profileKeys"] = {
 		["Vermin - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
+		["Mxyz - Golemagg"] = "Default",
 	},
 	["char"] = {
 		["Vermin - Golemagg"] = {
@@ -62,11 +63,73 @@ BisTooltipDB = {
 					["Destruction"] = true,
 				},
 			},
+			["phase_index"] = 2,
+			["spec_index"] = 3,
 			["minimapPos"] = 34.52921906708929,
 		},
 		["Battlearm - Golemagg"] = {
 			["version"] = 6.1,
 			["minimapPos"] = 31.14717728975205,
+		},
+		["Mxyz - Golemagg"] = {
+			["minimapPos"] = 34.44141119219025,
+			["filter_class_names"] = false,
+			["version"] = 6.1,
+			["filter_specs"] = {
+				["Warrior"] = {
+					["Fury"] = true,
+					["Protection"] = true,
+					["Arms"] = true,
+				},
+				["Paladin"] = {
+					["Protection"] = true,
+					["Holy"] = true,
+					["Retribution"] = true,
+				},
+				["Shaman"] = {
+					["Enhancement"] = true,
+					["Elemental"] = true,
+					["Restoration"] = true,
+				},
+				["Rogue"] = {
+					["Combat"] = true,
+					["Assassination"] = true,
+				},
+				["Mage"] = {
+					["Fire FFB"] = true,
+					["Frost"] = true,
+					["Fire"] = true,
+					["Arcane"] = true,
+				},
+				["Druid"] = {
+					["Restoration"] = true,
+					["Balance"] = true,
+					["Feral dps"] = true,
+					["Feral tank"] = true,
+				},
+				["Death knight"] = {
+					["Unholy"] = true,
+					["Frost"] = true,
+					["Blood tank"] = true,
+				},
+				["Hunter"] = {
+					["Marksmanship"] = true,
+					["Survival"] = true,
+					["Beast mastery"] = true,
+				},
+				["Warlock"] = {
+					["Demonology"] = true,
+					["Affliction"] = true,
+					["Destruction"] = true,
+				},
+				["Priest"] = {
+					["Discipline"] = true,
+					["Shadow"] = true,
+					["Holy"] = true,
+				},
+			},
+			["class_index"] = 10,
+			["phase_index"] = 2,
 		},
 	},
 }
