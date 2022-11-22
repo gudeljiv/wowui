@@ -8,6 +8,625 @@ _detalhes_database = {
 			{
 				{
 					["tipo"] = 2,
+					["combatId"] = 261,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002052,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Expert's Training Dummy"] = 18196,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["tipo"] = 1,
+							["aID"] = "4465-02B843FA",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 18196.002052,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1669141545,
+							["damage_taken"] = 0.002052,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 10,
+										["b_amt"] = 0,
+										["c_dmg"] = 4178,
+										["g_amt"] = 0,
+										["n_max"] = 222,
+										["targets"] = {
+											["Expert's Training Dummy"] = 6838,
+										},
+										["n_dmg"] = 2660,
+										["n_min"] = 167,
+										["g_dmg"] = 0,
+										["counter"] = 24,
+										["total"] = 6838,
+										["c_max"] = 489,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 382,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 14,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+									[33983] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 745,
+										["targets"] = {
+											["Expert's Training Dummy"] = 745,
+										},
+										["n_dmg"] = 745,
+										["n_min"] = 745,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 745,
+										["c_max"] = 0,
+										["id"] = 33983,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[27003] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 485,
+										["g_amt"] = 0,
+										["n_max"] = 475,
+										["targets"] = {
+											["Expert's Training Dummy"] = 3486,
+										},
+										["n_dmg"] = 3001,
+										["n_min"] = 217,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 3486,
+										["c_max"] = 485,
+										["id"] = 27003,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 485,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 7,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[27000] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 1956,
+										["g_amt"] = 0,
+										["n_max"] = 457,
+										["targets"] = {
+											["Expert's Training Dummy"] = 2413,
+										},
+										["n_dmg"] = 457,
+										["n_min"] = 457,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 2413,
+										["c_max"] = 1008,
+										["id"] = 27000,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 948,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[24248] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 3007,
+										["g_amt"] = 0,
+										["n_max"] = 1707,
+										["targets"] = {
+											["Expert's Training Dummy"] = 4714,
+										},
+										["n_dmg"] = 1707,
+										["n_min"] = 1707,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 4714,
+										["c_max"] = 3007,
+										["id"] = 24248,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 3007,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["last_dps"] = 626.2821660355775,
+							["total"] = 18196.002052,
+							["colocacao"] = 1,
+							["last_event"] = 1669141544,
+							["on_hold"] = false,
+							["start_time"] = 1669141516,
+							["serial"] = "Player-4465-02B843FA",
+							["classe"] = "DRUID",
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.007878,
+							["damage_from"] = {
+								["Moolatz"] = true,
+								["Donslash"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["tipo"] = 1,
+							["aID"] = "32666",
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.007878,
+							["delay"] = 0,
+							["fight_component"] = true,
+							["total"] = 0.007878,
+							["on_hold"] = false,
+							["damage_taken"] = 22545.007878,
+							["nome"] = "Expert's Training Dummy",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
+							["last_dps"] = 0,
+							["end_time"] = 1669141545,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1669141545,
+							["serial"] = "Creature-0-4447-1-7639-32666-0001749E8A",
+							["dps_started"] = false,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 261,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorb"] = 0.00591,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["healing_taken"] = 0.00591,
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["targets_overheal"] = {
+								["Moolatz"] = 1668,
+							},
+							["aID"] = "4465-02B843FA",
+							["totalover"] = 1668.00591,
+							["total_without_pet"] = 0.00591,
+							["totalover_without_pet"] = 0.00591,
+							["totaldenied"] = 0.00591,
+							["classe"] = "DRUID",
+							["total"] = 0.00591,
+							["heal_enemy_amt"] = 0,
+							["last_event"] = 1669141537,
+							["nome"] = "Moolatz",
+							["targets_absorbs"] = {
+							},
+							["grupo"] = true,
+							["end_time"] = 1669141545,
+							["heal_enemy"] = {
+							},
+							["delay"] = 0,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1669141518,
+							["serial"] = "Player-4465-02B843FA",
+							["spells"] = {
+								["_ActorTable"] = {
+									[34299] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Moolatz"] = 1668,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Moolatz"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 4,
+										["overheal"] = 1668,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 34299,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_amt"] = 4,
+										["n_curado"] = 0,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 261,
+					["_ActorTable"] = {
+						{
+							["received"] = 342.00875,
+							["resource"] = 0.00875,
+							["targets"] = {
+								["Moolatz"] = 342,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "DRUID",
+							["passiveover"] = 0.00875,
+							["total"] = 342.00875,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[68285] = {
+										["total"] = 282,
+										["id"] = 68285,
+										["totalover"] = 2422,
+										["targets"] = {
+											["Moolatz"] = 282,
+										},
+										["counter"] = 4,
+									},
+									[51178] = {
+										["total"] = 60,
+										["id"] = 51178,
+										["totalover"] = 0,
+										["targets"] = {
+											["Moolatz"] = 60,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["totalover"] = 2422.00875,
+							["alternatepower"] = 0.00875,
+							["last_event"] = 1669141537,
+							["tipo"] = 3,
+							["aID"] = "4465-02B843FA",
+							["serial"] = "Player-4465-02B843FA",
+							["flag_original"] = 1297,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 261,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[33983] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 33983,
+										["uptime"] = 22,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[16857] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 16857,
+										["uptime"] = 29,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[27003] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 27003,
+										["uptime"] = 18,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[26992] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 26992,
+										["uptime"] = 29,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[768] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 768,
+										["uptime"] = 29,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[33667] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 33667,
+										["uptime"] = 15,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[9846] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 9846,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[9885] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 9885,
+										["uptime"] = 29,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[69369] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = 69369,
+										["uptime"] = 15,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[24932] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 24932,
+										["uptime"] = 29,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 69,
+							["nome"] = "Moolatz",
+							["grupo"] = true,
+							["spell_cast"] = {
+								[24248] = 2,
+								[16857] = 1,
+								[33983] = 1,
+								[27003] = 2,
+								[9846] = 1,
+								[33667] = 1,
+								[27000] = 3,
+							},
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["last_event"] = 1669141545,
+							["debuff_uptime_targets"] = {
+							},
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["buff_uptime"] = 152,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 261,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 1073814.128,
+				["tempo_start"] = 1669141516,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					18195.965132, -- [1]
+					-0.01461700000032961, -- [2]
+					{
+						0, -- [1]
+						[0] = 281.995484,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 59.99693,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					18196, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 282,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 60,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = false,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "19:25:46",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Expert's Training Dummy",
+				["TotalElapsedCombatTime"] = 29.05400000000373,
+				["CombatEndedAt"] = 1073843.182,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "19:25:17",
+				["end_time"] = 1073843.182,
+				["combat_id"] = 261,
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["combat_counter"] = 13568,
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+				},
+				["start_time"] = 1073814.128,
+				["TimeData"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Moolatz"] = 18196.002052,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Moolatz"] = 0.00591,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+			}, -- [1]
+			{
+				{
+					["tipo"] = 2,
 					["combatId"] = 260,
 					["_ActorTable"] = {
 						{
@@ -22,15 +641,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["colocacao"] = 1,
+							["last_dps"] = 534.9471256146801,
 							["classe"] = "DRUID",
-							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 20642.004736,
-							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02B843FA",
 							["dps_started"] = false,
-							["end_time"] = 1667988407,
-							["on_hold"] = false,
+							["total"] = 20642.004736,
+							["friendlyfire"] = {
+							},
 							["last_event"] = 1667988404,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -179,15 +799,14 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 20642.004736,
-							["last_dps"] = 534.9471256146801,
+							["end_time"] = 1667988407,
+							["damage_taken"] = 0.004736,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1667988368,
 							["delay"] = 0,
-							["damage_taken"] = 0.004736,
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -199,18 +818,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
+							["classe"] = "UNKNOW",
+							["friendlyfire"] = {
+							},
 							["friendlyfire_total"] = 0,
-							["aID"] = "32666",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.008787,
 							["serial"] = "Creature-0-4469-1-48-32666-00006B101D",
-							["fight_component"] = true,
+							["dps_started"] = false,
 							["total"] = 0.008787,
-							["damage_taken"] = 20642.008787,
-							["friendlyfire"] = {
-							},
+							["fight_component"] = true,
+							["on_hold"] = false,
 							["nome"] = "Expert's Training Dummy",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -222,10 +841,10 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["on_hold"] = false,
+							["damage_taken"] = 20642.008787,
 							["start_time"] = 1667988407,
 							["delay"] = 0,
-							["classe"] = "UNKNOW",
+							["aID"] = "32666",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -242,25 +861,22 @@ _detalhes_database = {
 							},
 							["targets"] = {
 							},
-							["healing_taken"] = 0.004228,
+							["heal_enemy_amt"] = 0,
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.004228,
 							["healing_from"] = {
 							},
-							["heal_enemy_amt"] = 0,
+							["healing_taken"] = 0.004228,
 							["totalover"] = 1166.004228,
 							["total_without_pet"] = 0.004228,
 							["iniciar_hps"] = false,
 							["start_time"] = 1667988394,
 							["aID"] = "4465-02B843FA",
-							["total"] = 0.004228,
 							["end_time"] = 1667988407,
 							["classe"] = "DRUID",
+							["total"] = 0.004228,
 							["nome"] = "Moolatz",
-							["targets_absorbs"] = {
-							},
-							["grupo"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									[34299] = {
@@ -283,22 +899,25 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 4,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["delay"] = 1667988390,
 							["heal_enemy"] = {
 							},
-							["serial"] = "Player-4465-02B843FA",
+							["targets_absorbs"] = {
+							},
 							["custom"] = 0,
 							["last_event"] = 1667988400,
 							["on_hold"] = false,
 							["totaldenied"] = 0.004228,
-							["delay"] = 1667988390,
+							["serial"] = "Player-4465-02B843FA",
 							["tipo"] = 2,
 						}, -- [1]
 					},
@@ -308,28 +927,28 @@ _detalhes_database = {
 					["combatId"] = 260,
 					["_ActorTable"] = {
 						{
-							["received"] = 1213.006896,
+							["received"] = 1223.006896,
 							["resource"] = 0.006896,
 							["targets"] = {
-								["Moolatz"] = 1213,
+								["Moolatz"] = 1223,
 							},
 							["pets"] = {
 							},
 							["powertype"] = 1,
 							["classe"] = "DRUID",
 							["passiveover"] = 0.006896,
-							["total"] = 1213.006896,
+							["total"] = 1223.006896,
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["_ActorTable"] = {
 									[17057] = {
-										["total"] = 20,
+										["total"] = 30,
 										["id"] = 17057,
 										["totalover"] = 0,
 										["targets"] = {
-											["Moolatz"] = 20,
+											["Moolatz"] = 30,
 										},
-										["counter"] = 2,
+										["counter"] = 3,
 									},
 									[51178] = {
 										["total"] = 120,
@@ -355,7 +974,7 @@ _detalhes_database = {
 							["grupo"] = true,
 							["flag_original"] = 1297,
 							["alternatepower"] = 0.006896,
-							["last_event"] = 1667988581,
+							["last_event"] = 1669141073,
 							["aID"] = "4465-02B843FA",
 							["tipo"] = 3,
 							["serial"] = "Player-4465-02B843FA",
@@ -407,8 +1026,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["pets"] = {
-							},
+							["buff_uptime"] = 199,
 							["aID"] = "4465-02B843FA",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -505,14 +1123,15 @@ _detalhes_database = {
 								[33667] = 1,
 								[9846] = 2,
 							},
-							["buff_uptime"] = 199,
-							["nome"] = "Moolatz",
-							["last_event"] = 1667988407,
-							["tipo"] = 4,
-							["classe"] = "DRUID",
-							["serial"] = "Player-4465-02B843FA",
 							["debuff_uptime_targets"] = {
 							},
+							["nome"] = "Moolatz",
+							["last_event"] = 1667988407,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -537,10 +1156,10 @@ _detalhes_database = {
 				["combat_counter"] = 13562,
 				["playing_solo"] = true,
 				["totals"] = {
-					20641.962971, -- [1]
-					-0.04198199999997703, -- [2]
+					20641.901304, -- [1]
+					-0.07226899999997881, -- [2]
 					{
-						20, -- [1]
+						30, -- [1]
 						[0] = 1073,
 						["alternatepower"] = 0,
 						[3] = 120,
@@ -609,7 +1228,7 @@ _detalhes_database = {
 					20642, -- [1]
 					0, -- [2]
 					{
-						20, -- [1]
+						30, -- [1]
 						[0] = 1073,
 						["alternatepower"] = 0,
 						[3] = 120,
@@ -631,7 +1250,7 @@ _detalhes_database = {
 				},
 				["frags"] = {
 				},
-			}, -- [1]
+			}, -- [2]
 			{
 				{
 					["tipo"] = 2,
@@ -649,15 +1268,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["colocacao"] = 1,
+							["aID"] = "4465-02B843FA",
 							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 30661.00183,
-							["damage_taken"] = 0.00183,
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["total"] = 30661.00183,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["last_event"] = 1667643275,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -810,11 +1430,10 @@ _detalhes_database = {
 							["last_dps"] = 635.368999937838,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 0.00183,
 							["start_time"] = 1667643231,
 							["delay"] = 0,
-							["aID"] = "4465-02B843FA",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -826,9 +1445,9 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["friendlyfire_total"] = 0,
+							["damage_taken"] = 30661.008384,
 							["aID"] = "32666",
-							["on_hold"] = false,
-							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.008384,
@@ -836,7 +1455,8 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 0.008384,
 							["fight_component"] = true,
-							["damage_taken"] = 30661.008384,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Expert's Training Dummy",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -848,11 +1468,10 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1667643280,
 							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -875,15 +1494,15 @@ _detalhes_database = {
 							["iniciar_hps"] = false,
 							["healing_from"] = {
 							},
-							["classe"] = "DRUID",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 2038.00523,
 							["total_without_pet"] = 0.00523,
 							["totalover_without_pet"] = 0.00523,
 							["start_time"] = 1667643232,
-							["heal_enemy_amt"] = 0,
-							["total"] = 0.00523,
-							["healing_taken"] = 0.00523,
 							["aID"] = "4465-02B843FA",
+							["total"] = 0.00523,
+							["classe"] = "DRUID",
+							["healing_taken"] = 0.00523,
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -907,9 +1526,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 7,
 										["n_curado"] = 0,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -919,9 +1538,9 @@ _detalhes_database = {
 							["end_time"] = 1667643280,
 							["heal_enemy"] = {
 							},
-							["tipo"] = 2,
-							["custom"] = 0,
 							["last_event"] = 1667643273,
+							["custom"] = 0,
+							["tipo"] = 2,
 							["on_hold"] = false,
 							["totaldenied"] = 0.00523,
 							["delay"] = 0,
@@ -1025,7 +1644,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 247,
+							["pets"] = {
+							},
 							["aID"] = "4465-02B843FA",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -1122,14 +1742,13 @@ _detalhes_database = {
 								[33667] = 1,
 								[9846] = 2,
 							},
-							["tipo"] = 4,
+							["buff_uptime"] = 247,
 							["nome"] = "Moolatz",
 							["last_event"] = 1667643280,
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
-							["pets"] = {
+							["debuff_uptime_targets"] = {
 							},
 						}, -- [1]
 					},
@@ -1249,7 +1868,7 @@ _detalhes_database = {
 				},
 				["spells_cast_timeline"] = {
 				},
-			}, -- [2]
+			}, -- [3]
 			{
 				{
 					["tipo"] = 2,
@@ -1272,11 +1891,11 @@ _detalhes_database = {
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 5321.00205,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 5321.00205,
 							["friendlyfire"] = {
 							},
+							["dps_started"] = false,
+							["total"] = 5321.00205,
+							["damage_taken"] = 0.00205,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -1401,7 +2020,7 @@ _detalhes_database = {
 							["last_dps"] = 349.766781699868,
 							["colocacao"] = 1,
 							["last_event"] = 1667643211,
-							["damage_taken"] = 0.00205,
+							["on_hold"] = false,
 							["start_time"] = 1667643213,
 							["serial"] = "Player-4465-02B843FA",
 							["friendlyfire_total"] = 0,
@@ -1416,9 +2035,10 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
 							["classe"] = "UNKNOW",
-							["on_hold"] = false,
-							["aID"] = "32666",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.002194,
@@ -1426,8 +2046,7 @@ _detalhes_database = {
 							["fight_component"] = true,
 							["total"] = 0.002194,
 							["dps_started"] = false,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 5321.002194000001,
 							["nome"] = "Expert's Training Dummy",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -1439,10 +2058,10 @@ _detalhes_database = {
 							["end_time"] = 1667643209,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 5321.002194000001,
+							["on_hold"] = false,
 							["start_time"] = 1667643209,
 							["serial"] = "Creature-0-4446-1-12524-32666-0001E24E68",
-							["friendlyfire_total"] = 0,
+							["aID"] = "32666",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -1465,16 +2084,16 @@ _detalhes_database = {
 							["targets_overheal"] = {
 								["Moolatz"] = 291,
 							},
-							["aID"] = "4465-02B843FA",
+							["classe"] = "DRUID",
 							["totalover"] = 291.003501,
 							["total_without_pet"] = 0.003501,
 							["totalover_without_pet"] = 0.003501,
 							["totaldenied"] = 0.003501,
-							["healing_taken"] = 0.003501,
+							["heal_enemy_amt"] = 0,
 							["end_time"] = 1667643209,
 							["targets_absorbs"] = {
 							},
-							["classe"] = "DRUID",
+							["healing_taken"] = 0.003501,
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -1498,9 +2117,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -1510,13 +2129,13 @@ _detalhes_database = {
 							["total"] = 0.003501,
 							["heal_enemy"] = {
 							},
-							["tipo"] = 2,
-							["custom"] = 0,
 							["last_event"] = 1667643199,
+							["custom"] = 0,
+							["tipo"] = 2,
 							["on_hold"] = false,
 							["start_time"] = 1667643208,
 							["delay"] = 1667643199,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
 					},
 				}, -- [2]
@@ -1604,7 +2223,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 74,
+							["pets"] = {
+							},
 							["aID"] = "4465-02B843FA",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -1686,16 +2306,15 @@ _detalhes_database = {
 								[33983] = 1,
 								[9846] = 1,
 							},
-							["pets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["buff_uptime_targets"] = {
 							},
 							["last_event"] = 1667643209,
-							["tipo"] = 4,
+							["buff_uptime"] = 74,
 							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -1814,7 +2433,7 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-			}, -- [3]
+			}, -- [4]
 			{
 				{
 					["tipo"] = 2,
@@ -1832,16 +2451,15 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
+							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
-							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 8161.007271,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["total"] = 8161.007271,
-							["on_hold"] = false,
+							["damage_taken"] = 0.007271,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -1938,10 +2556,11 @@ _detalhes_database = {
 							["end_time"] = 1667643083,
 							["colocacao"] = 1,
 							["last_event"] = 1667643081,
-							["damage_taken"] = 0.007271,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1667643061,
 							["serial"] = "Player-4465-02B843FA",
-							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -1953,9 +2572,9 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["aID"] = "32666",
+							["friendlyfire_total"] = 0,
 							["total"] = 0.00329,
-							["classe"] = "UNKNOW",
+							["aID"] = "32666",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.00329,
@@ -1979,7 +2598,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1667643083,
 							["serial"] = "Creature-0-4446-1-12524-32666-0001E24E68",
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -2002,15 +2621,15 @@ _detalhes_database = {
 							["iniciar_hps"] = false,
 							["healing_from"] = {
 							},
-							["aID"] = "4465-02B843FA",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 582.0073709999999,
 							["total_without_pet"] = 0.007371,
 							["totalover_without_pet"] = 0.007371,
 							["totaldenied"] = 0.007371,
-							["heal_enemy_amt"] = 0,
-							["end_time"] = 1667643083,
-							["classe"] = "DRUID",
 							["healing_taken"] = 0.007371,
+							["end_time"] = 1667643083,
+							["aID"] = "4465-02B843FA",
+							["classe"] = "DRUID",
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -2034,9 +2653,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -2046,9 +2665,9 @@ _detalhes_database = {
 							["total"] = 0.007371,
 							["heal_enemy"] = {
 							},
-							["last_event"] = 1667643070,
-							["custom"] = 0,
 							["tipo"] = 2,
+							["custom"] = 0,
+							["last_event"] = 1667643070,
 							["on_hold"] = false,
 							["start_time"] = 1667643073,
 							["serial"] = "Player-4465-02B843FA",
@@ -2141,7 +2760,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 94,
+							["pets"] = {
+							},
 							["aID"] = "4465-02B843FA",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -2211,16 +2831,15 @@ _detalhes_database = {
 								[27003] = 2,
 								[9846] = 1,
 							},
-							["pets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["buff_uptime_targets"] = {
 							},
 							["last_event"] = 1667643083,
-							["tipo"] = 4,
+							["buff_uptime"] = 94,
 							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -2339,7 +2958,7 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-			}, -- [4]
+			}, -- [5]
 			{
 				{
 					["tipo"] = 2,
@@ -2357,16 +2976,15 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
+							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
-							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 10990.003108,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["total"] = 10990.003108,
-							["on_hold"] = false,
+							["damage_taken"] = 0.003108,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -2519,10 +3137,11 @@ _detalhes_database = {
 							["end_time"] = 1667643027,
 							["colocacao"] = 1,
 							["last_event"] = 1667643020,
-							["damage_taken"] = 0.003108,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1667642994,
 							["serial"] = "Player-4465-02B843FA",
-							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -2534,9 +3153,9 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["aID"] = "32666",
+							["friendlyfire_total"] = 0,
 							["total"] = 0.008092,
-							["classe"] = "UNKNOW",
+							["aID"] = "32666",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.008092,
@@ -2560,7 +3179,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1667643027,
 							["serial"] = "Creature-0-4446-1-12524-32666-0000624E68",
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -2583,15 +3202,15 @@ _detalhes_database = {
 							["iniciar_hps"] = false,
 							["healing_from"] = {
 							},
-							["aID"] = "4465-02B843FA",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 873.0085240000001,
 							["total_without_pet"] = 0.008524,
 							["totalover_without_pet"] = 0.008524,
 							["totaldenied"] = 0.008524,
-							["heal_enemy_amt"] = 0,
-							["end_time"] = 1667643027,
-							["classe"] = "DRUID",
 							["healing_taken"] = 0.008524,
+							["end_time"] = 1667643027,
+							["aID"] = "4465-02B843FA",
+							["classe"] = "DRUID",
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -2615,9 +3234,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 3,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -2627,9 +3246,9 @@ _detalhes_database = {
 							["total"] = 0.008524,
 							["heal_enemy"] = {
 							},
-							["last_event"] = 1667643014,
-							["custom"] = 0,
 							["tipo"] = 2,
+							["custom"] = 0,
+							["last_event"] = 1667643014,
 							["on_hold"] = false,
 							["start_time"] = 1667643019,
 							["serial"] = "Player-4465-02B843FA",
@@ -2733,7 +3352,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 161,
+							["pets"] = {
+							},
 							["aID"] = "4465-02B843FA",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -2829,16 +3449,15 @@ _detalhes_database = {
 								[33667] = 1,
 								[27000] = 1,
 							},
-							["pets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["buff_uptime_targets"] = {
 							},
 							["last_event"] = 1667643027,
-							["tipo"] = 4,
+							["buff_uptime"] = 161,
 							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -2957,7 +3576,7 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-			}, -- [5]
+			}, -- [6]
 			{
 				{
 					["tipo"] = 2,
@@ -2975,16 +3594,15 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
+							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
-							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2287.004506,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["total"] = 2287.004506,
-							["on_hold"] = false,
+							["damage_taken"] = 0.004506,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -3025,10 +3643,11 @@ _detalhes_database = {
 							["end_time"] = 1667642942,
 							["colocacao"] = 1,
 							["last_event"] = 1667642936,
-							["damage_taken"] = 0.004506,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1667642926,
 							["serial"] = "Player-4465-02B843FA",
-							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -3040,9 +3659,9 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["aID"] = "32666",
+							["friendlyfire_total"] = 0,
 							["total"] = 0.008007,
-							["classe"] = "UNKNOW",
+							["aID"] = "32666",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.008007,
@@ -3066,7 +3685,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1667642942,
 							["serial"] = "Creature-0-4446-1-12524-32666-0001E24E68",
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -3089,15 +3708,15 @@ _detalhes_database = {
 							["iniciar_hps"] = false,
 							["healing_from"] = {
 							},
-							["aID"] = "4465-02B843FA",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 584.003698,
 							["total_without_pet"] = 0.003698,
 							["totalover_without_pet"] = 0.003698,
 							["totaldenied"] = 0.003698,
-							["heal_enemy_amt"] = 0,
-							["end_time"] = 1667642942,
-							["classe"] = "DRUID",
 							["healing_taken"] = 0.003698,
+							["end_time"] = 1667642942,
+							["aID"] = "4465-02B843FA",
+							["classe"] = "DRUID",
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3121,9 +3740,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -3133,9 +3752,9 @@ _detalhes_database = {
 							["total"] = 0.003698,
 							["heal_enemy"] = {
 							},
-							["last_event"] = 1667642935,
-							["custom"] = 0,
 							["tipo"] = 2,
+							["custom"] = 0,
+							["last_event"] = 1667642935,
 							["on_hold"] = false,
 							["start_time"] = 1667642927,
 							["serial"] = "Player-4465-02B843FA",
@@ -3208,7 +3827,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 64,
+							["pets"] = {
+							},
 							["aID"] = "4465-02B843FA",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -3265,16 +3885,15 @@ _detalhes_database = {
 							["spell_cast"] = {
 								[16857] = 1,
 							},
-							["pets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["buff_uptime_targets"] = {
 							},
 							["last_event"] = 1667642942,
-							["tipo"] = 4,
+							["buff_uptime"] = 64,
 							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -3393,7 +4012,7 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-			}, -- [6]
+			}, -- [7]
 			{
 				{
 					["tipo"] = 2,
@@ -3411,16 +4030,15 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
+							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
-							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1519.008549,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["total"] = 1519.008549,
-							["on_hold"] = false,
+							["damage_taken"] = 0.008549,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -3461,10 +4079,11 @@ _detalhes_database = {
 							["end_time"] = 1667642921,
 							["colocacao"] = 1,
 							["last_event"] = 1667642915,
-							["damage_taken"] = 0.008549,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1667642910,
 							["serial"] = "Player-4465-02B843FA",
-							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -3476,9 +4095,9 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["aID"] = "32666",
+							["friendlyfire_total"] = 0,
 							["total"] = 0.008238,
-							["classe"] = "UNKNOW",
+							["aID"] = "32666",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.008238,
@@ -3502,7 +4121,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1667642921,
 							["serial"] = "Creature-0-4446-1-12524-32666-0000E24E68",
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -3525,15 +4144,15 @@ _detalhes_database = {
 							["iniciar_hps"] = false,
 							["healing_from"] = {
 							},
-							["aID"] = "4465-02B843FA",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 292.002184,
 							["total_without_pet"] = 0.002184,
 							["totalover_without_pet"] = 0.002184,
 							["totaldenied"] = 0.002184,
-							["heal_enemy_amt"] = 0,
-							["end_time"] = 1667642921,
-							["classe"] = "DRUID",
 							["healing_taken"] = 0.002184,
+							["end_time"] = 1667642921,
+							["aID"] = "4465-02B843FA",
+							["classe"] = "DRUID",
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3557,9 +4176,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -3569,9 +4188,9 @@ _detalhes_database = {
 							["total"] = 0.002184,
 							["heal_enemy"] = {
 							},
-							["last_event"] = 1667642910,
-							["custom"] = 0,
 							["tipo"] = 2,
+							["custom"] = 0,
+							["last_event"] = 1667642910,
 							["on_hold"] = false,
 							["start_time"] = 1667642920,
 							["serial"] = "Player-4465-02B843FA",
@@ -3644,7 +4263,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 44,
+							["pets"] = {
+							},
 							["aID"] = "4465-02B843FA",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -3701,16 +4321,15 @@ _detalhes_database = {
 							["spell_cast"] = {
 								[16857] = 1,
 							},
-							["pets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["buff_uptime_targets"] = {
 							},
 							["last_event"] = 1667642921,
-							["tipo"] = 4,
+							["buff_uptime"] = 44,
 							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -3829,7 +4448,7 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-			}, -- [7]
+			}, -- [8]
 			{
 				{
 					["tipo"] = 2,
@@ -3848,16 +4467,15 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
+							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
-							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 947.006672,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["total"] = 947.006672,
-							["on_hold"] = false,
+							["damage_taken"] = 15.006672,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -3898,10 +4516,11 @@ _detalhes_database = {
 							["end_time"] = 1667642901,
 							["colocacao"] = 1,
 							["last_event"] = 1667642895,
-							["damage_taken"] = 15.006672,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1667642891,
 							["serial"] = "Player-4465-02B843FA",
-							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -3913,9 +4532,9 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["aID"] = "32666",
+							["friendlyfire_total"] = 0,
 							["total"] = 0.008181,
-							["classe"] = "UNKNOW",
+							["aID"] = "32666",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.008181,
@@ -3939,7 +4558,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1667642901,
 							["serial"] = "Creature-0-4446-1-12524-32666-0001624E68",
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -3962,15 +4581,15 @@ _detalhes_database = {
 							["iniciar_hps"] = false,
 							["healing_from"] = {
 							},
-							["aID"] = "4465-02B843FA",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 291.001201,
 							["total_without_pet"] = 0.001201,
 							["totalover_without_pet"] = 0.001201,
 							["totaldenied"] = 0.001201,
-							["heal_enemy_amt"] = 0,
-							["end_time"] = 1667642901,
-							["classe"] = "DRUID",
 							["healing_taken"] = 0.001201,
+							["end_time"] = 1667642901,
+							["aID"] = "4465-02B843FA",
+							["classe"] = "DRUID",
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3994,9 +4613,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -4006,9 +4625,9 @@ _detalhes_database = {
 							["total"] = 0.001201,
 							["heal_enemy"] = {
 							},
-							["last_event"] = 1667642893,
-							["custom"] = 0,
 							["tipo"] = 2,
+							["custom"] = 0,
+							["last_event"] = 1667642893,
 							["on_hold"] = false,
 							["start_time"] = 1667642893,
 							["serial"] = "Player-4465-02B843FA",
@@ -4321,7 +4940,7 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-			}, -- [8]
+			}, -- [9]
 			{
 				{
 					["tipo"] = 2,
@@ -4339,16 +4958,15 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
+							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
-							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3058.005448,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["total"] = 3058.005448,
-							["on_hold"] = false,
+							["damage_taken"] = 0.005448,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -4389,10 +5007,11 @@ _detalhes_database = {
 							["end_time"] = 1667642859,
 							["colocacao"] = 1,
 							["last_event"] = 1667642852,
-							["damage_taken"] = 0.005448,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1667642838,
 							["serial"] = "Player-4465-02B843FA",
-							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -4404,9 +5023,9 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["aID"] = "32666",
+							["friendlyfire_total"] = 0,
 							["total"] = 0.00486,
-							["classe"] = "UNKNOW",
+							["aID"] = "32666",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.00486,
@@ -4430,7 +5049,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1667642859,
 							["serial"] = "Creature-0-4446-1-12524-32666-0001624E68",
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -4453,15 +5072,15 @@ _detalhes_database = {
 							["iniciar_hps"] = false,
 							["healing_from"] = {
 							},
-							["aID"] = "4465-02B843FA",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 584.0017700000001,
 							["total_without_pet"] = 0.00177,
 							["totalover_without_pet"] = 0.00177,
 							["totaldenied"] = 0.00177,
-							["heal_enemy_amt"] = 0,
-							["end_time"] = 1667642859,
-							["classe"] = "DRUID",
 							["healing_taken"] = 0.00177,
+							["end_time"] = 1667642859,
+							["aID"] = "4465-02B843FA",
+							["classe"] = "DRUID",
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -4485,9 +5104,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -4497,9 +5116,9 @@ _detalhes_database = {
 							["total"] = 0.00177,
 							["heal_enemy"] = {
 							},
-							["last_event"] = 1667642852,
-							["custom"] = 0,
 							["tipo"] = 2,
+							["custom"] = 0,
+							["last_event"] = 1667642852,
 							["on_hold"] = false,
 							["start_time"] = 1667642843,
 							["serial"] = "Player-4465-02B843FA",
@@ -4572,7 +5191,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 84,
+							["pets"] = {
+							},
 							["aID"] = "4465-02B843FA",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -4629,16 +5249,15 @@ _detalhes_database = {
 							["spell_cast"] = {
 								[16857] = 1,
 							},
-							["pets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["buff_uptime_targets"] = {
 							},
 							["last_event"] = 1667642859,
-							["tipo"] = 4,
+							["buff_uptime"] = 84,
 							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -4757,7 +5376,7 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-			}, -- [9]
+			}, -- [10]
 			{
 				{
 					["tipo"] = 2,
@@ -4868,7 +5487,7 @@ _detalhes_database = {
 						{
 							["flag_original"] = 1320,
 							["totalabsorbed"] = 0.008038,
-							["pvp_component"] = true,
+							["custom"] = 0,
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -4878,17 +5497,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["end_time"] = 1667249524,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4474-03995BCB",
+							["classe"] = "UNGROUPPLAYER",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1707.008038,
-							["delay"] = 0,
-							["classe"] = "UNGROUPPLAYER",
+							["pvp_component"] = true,
+							["friendlyfire_total"] = 0,
 							["fight_component"] = true,
 							["total"] = 1707.008038,
-							["friendlyfire"] = {
-							},
+							["serial"] = "Player-4474-03995BCB",
 							["dps_started"] = false,
 							["nome"] = "Дарелос-Пламегор",
 							["spells"] = {
@@ -4981,20 +5599,21 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["custom"] = 0,
 							["damage_taken"] = 0.008038,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
 							["colocacao"] = 2,
 							["last_event"] = 1667249523,
 							["last_dps"] = 243.6842309779641,
 							["start_time"] = 1667249522,
-							["serial"] = "Player-4474-03995BCB",
+							["delay"] = 0,
 							["pvp"] = true,
 						}, -- [2]
 						{
 							["flag_original"] = 1320,
 							["totalabsorbed"] = 0.00722,
-							["pvp_component"] = true,
+							["custom"] = 0,
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -5004,17 +5623,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["end_time"] = 1667249524,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4474-04B5FDAC",
+							["classe"] = "UNGROUPPLAYER",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1439.00722,
-							["delay"] = 0,
-							["classe"] = "UNGROUPPLAYER",
+							["pvp_component"] = true,
+							["friendlyfire_total"] = 0,
 							["fight_component"] = true,
 							["total"] = 1439.00722,
-							["friendlyfire"] = {
-							},
+							["serial"] = "Player-4474-04B5FDAC",
 							["dps_started"] = false,
 							["nome"] = "Шерифдуфи-Пламегор",
 							["spells"] = {
@@ -5051,20 +5669,21 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["custom"] = 0,
 							["damage_taken"] = 0.00722,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
 							["colocacao"] = 3,
 							["last_event"] = 1667249522,
 							["last_dps"] = 205.4257273376928,
 							["start_time"] = 1667249522,
-							["serial"] = "Player-4474-04B5FDAC",
+							["delay"] = 0,
 							["pvp"] = true,
 						}, -- [3]
 						{
 							["flag_original"] = 1300,
 							["totalabsorbed"] = 0.002022,
-							["pvp_component"] = true,
+							["custom"] = 0,
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -5074,17 +5693,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["end_time"] = 1667249524,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4441-039BA4F5",
+							["classe"] = "HUNTER",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 487.002022,
-							["delay"] = 1667249521,
-							["classe"] = "HUNTER",
+							["pvp_component"] = true,
+							["friendlyfire_total"] = 0,
 							["fight_component"] = true,
 							["total"] = 487.002022,
-							["friendlyfire"] = {
-							},
+							["serial"] = "Player-4441-039BA4F5",
 							["dps_started"] = false,
 							["nome"] = "Memoria-Auberdine",
 							["spells"] = {
@@ -5121,20 +5739,21 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["custom"] = 0,
 							["damage_taken"] = 0.002022,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
 							["colocacao"] = 4,
 							["last_event"] = 1667249521,
 							["last_dps"] = 69.52205881515805,
 							["start_time"] = 1667249523,
-							["serial"] = "Player-4441-039BA4F5",
+							["delay"] = 1667249521,
 							["pvp"] = true,
 						}, -- [4]
 						{
 							["flag_original"] = 1320,
 							["totalabsorbed"] = 0.005032,
-							["pvp_component"] = true,
+							["custom"] = 0,
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -5145,17 +5764,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["end_time"] = 1667249524,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4474-02506FC0",
+							["classe"] = "UNGROUPPLAYER",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 428.005032,
-							["delay"] = 0,
-							["classe"] = "UNGROUPPLAYER",
+							["pvp_component"] = true,
+							["friendlyfire_total"] = 0,
 							["fight_component"] = true,
 							["total"] = 428.005032,
-							["friendlyfire"] = {
-							},
+							["serial"] = "Player-4474-02506FC0",
 							["dps_started"] = false,
 							["nome"] = "Готян-Пламегор",
 							["spells"] = {
@@ -5220,20 +5838,21 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["custom"] = 0,
 							["damage_taken"] = 0.005032,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
 							["colocacao"] = 5,
 							["last_event"] = 1667249522,
 							["last_dps"] = 61.09993319060101,
 							["start_time"] = 1667249521,
-							["serial"] = "Player-4474-02506FC0",
+							["delay"] = 0,
 							["pvp"] = true,
 						}, -- [5]
 						{
 							["flag_original"] = 1320,
 							["totalabsorbed"] = 0.006003,
-							["pvp_component"] = true,
+							["custom"] = 0,
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -5243,17 +5862,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["end_time"] = 1667249524,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4474-04A80422",
+							["classe"] = "UNGROUPPLAYER",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 356.006003,
-							["delay"] = 0,
-							["classe"] = "UNGROUPPLAYER",
+							["pvp_component"] = true,
+							["friendlyfire_total"] = 0,
 							["fight_component"] = true,
 							["total"] = 356.006003,
-							["friendlyfire"] = {
-							},
+							["serial"] = "Player-4474-04A80422",
 							["dps_started"] = false,
 							["nome"] = "Рубежж-Пламегор",
 							["spells"] = {
@@ -5290,14 +5908,15 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["custom"] = 0,
 							["damage_taken"] = 0.006003,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
 							["colocacao"] = 6,
 							["last_event"] = 1667249522,
 							["last_dps"] = 50.82169921486555,
 							["start_time"] = 1667249520,
-							["serial"] = "Player-4474-04A80422",
+							["delay"] = 0,
 							["pvp"] = true,
 						}, -- [6]
 						{
@@ -5319,9 +5938,8 @@ _detalhes_database = {
 							["delay"] = 0,
 							["dps_started"] = false,
 							["total"] = 0.008529,
-							["friendlyfire"] = {
-							},
 							["on_hold"] = false,
+							["damage_taken"] = 672.008529,
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5333,7 +5951,8 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 672.008529,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1667642838,
 							["serial"] = "Player-4465-02B843FA",
 							["end_time"] = 1667642838,
@@ -5385,7 +6004,7 @@ _detalhes_database = {
 						{
 							["flag_original"] = 1300,
 							["totalabsorbed"] = 0.007134,
-							["serial"] = "Player-4454-044931B8",
+							["custom"] = 0,
 							["damage_from"] = {
 								["Calmyboy-MirageRaceway"] = true,
 								["Молимся-Пламегор"] = true,
@@ -5396,17 +6015,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["end_time"] = 1667249524,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4454-044931B8",
+							["classe"] = "PALADIN",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.007134,
-							["delay"] = 0,
-							["classe"] = "PALADIN",
+							["serial"] = "Player-4454-044931B8",
+							["friendlyfire_total"] = 0,
 							["fight_component"] = true,
 							["total"] = 0.007134,
-							["friendlyfire"] = {
-							},
+							["pvp_component"] = true,
 							["dps_started"] = false,
 							["nome"] = "Airforceone-MirageRaceway",
 							["spells"] = {
@@ -5415,14 +6033,15 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["custom"] = 0,
 							["last_dps"] = 0.002378,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
 							["colocacao"] = 6,
 							["last_event"] = 0,
 							["damage_taken"] = 976.007134,
 							["start_time"] = 1667249524,
-							["pvp_component"] = true,
+							["delay"] = 0,
 							["pvp"] = true,
 						}, -- [9]
 						{
@@ -5511,7 +6130,7 @@ _detalhes_database = {
 						{
 							["flag_original"] = 1298,
 							["totalabsorbed"] = 0.002085,
-							["serial"] = "Player-4454-04AD4921",
+							["custom"] = 0,
 							["damage_from"] = {
 								["Дарелос-Пламегор"] = true,
 								["Готян-Пламегор"] = true,
@@ -5524,23 +6143,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["end_time"] = 1667249524,
-							["friendlyfire_total"] = 475,
 							["classe"] = "DEATHKNIGHT",
+							["aID"] = "4454-04AD4921",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.002085,
-							["delay"] = 1667249518,
-							["aID"] = "4454-04AD4921",
+							["serial"] = "Player-4454-04AD4921",
+							["friendlyfire_total"] = 475,
 							["fight_component"] = true,
 							["total"] = 0.002085,
-							["friendlyfire"] = {
-								["Airforceone-MirageRaceway"] = {
-									["total"] = 475,
-									["spells"] = {
-										[6940] = 475,
-									},
-								},
-							},
+							["pvp_component"] = true,
 							["dps_started"] = false,
 							["nome"] = "Calmyboy-MirageRaceway",
 							["spells"] = {
@@ -5549,14 +6161,21 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["custom"] = 0,
 							["last_dps"] = 0.000695,
+							["friendlyfire"] = {
+								["Airforceone-MirageRaceway"] = {
+									["total"] = 475,
+									["spells"] = {
+										[6940] = 475,
+									},
+								},
+							},
 							["on_hold"] = false,
 							["colocacao"] = 6,
 							["last_event"] = 1667249518,
 							["damage_taken"] = 2942.002085,
 							["start_time"] = 1667249522,
-							["pvp_component"] = true,
+							["delay"] = 1667249518,
 							["pvp"] = true,
 						}, -- [12]
 					},
@@ -5593,9 +6212,9 @@ _detalhes_database = {
 							["healing_taken"] = 0.00686,
 							["fight_component"] = true,
 							["end_time"] = 1667249524,
-							["pvp_component"] = true,
 							["healing_from"] = {
 							},
+							["aID"] = "4454-044931B8",
 							["nome"] = "Airforceone-MirageRaceway",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5618,9 +6237,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 1,
 										["n_curado"] = 12732,
 										["totaldenied"] = 0,
-										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 								},
@@ -5634,7 +6253,7 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249522,
 							["delay"] = 0,
-							["aID"] = "4454-044931B8",
+							["pvp_component"] = true,
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
@@ -5667,10 +6286,10 @@ _detalhes_database = {
 							["healing_taken"] = 393.002889,
 							["fight_component"] = true,
 							["end_time"] = 1667249524,
-							["pvp_component"] = true,
 							["healing_from"] = {
 								["Purpplehaze-Auberdine"] = true,
 							},
+							["aID"] = "4441-027C4C2D",
 							["nome"] = "Purpplehaze-Auberdine",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5694,9 +6313,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 2,
 										["n_curado"] = 393,
 										["totaldenied"] = 0,
-										["n_amt"] = 2,
 										["absorbed"] = 0,
 									},
 								},
@@ -5710,7 +6329,7 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249521,
 							["delay"] = 1667249518,
-							["aID"] = "4441-027C4C2D",
+							["pvp_component"] = true,
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
@@ -5741,11 +6360,11 @@ _detalhes_database = {
 							["healing_taken"] = 13023.003929,
 							["fight_component"] = true,
 							["end_time"] = 1667249524,
-							["pvp_component"] = true,
 							["healing_from"] = {
 								["Calmyboy-MirageRaceway"] = true,
 								["Airforceone-MirageRaceway"] = true,
 							},
+							["aID"] = "4454-04AD4921",
 							["nome"] = "Calmyboy-MirageRaceway",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5769,9 +6388,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["n_amt"] = 5,
 										["n_curado"] = 291,
 										["totaldenied"] = 0,
+										["n_amt"] = 5,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -5786,7 +6405,7 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249520,
 							["delay"] = 0,
-							["aID"] = "4454-04AD4921",
+							["pvp_component"] = true,
 						}, -- [3]
 						{
 							["flag_original"] = 4370,
@@ -5815,7 +6434,9 @@ _detalhes_database = {
 							["healing_taken"] = 1505.008277,
 							["fight_component"] = true,
 							["end_time"] = 1667249524,
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Hathgarth <Purpplehaze-Auberdine>"] = true,
+							},
 							["ownerName"] = "Purpplehaze-Auberdine",
 							["nome"] = "Hathgarth <Purpplehaze-Auberdine>",
 							["spells"] = {
@@ -5839,17 +6460,15 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 1,
 										["n_curado"] = 1505,
 										["totaldenied"] = 0,
-										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
-							["healing_from"] = {
-								["Hathgarth <Purpplehaze-Auberdine>"] = true,
-							},
+							["classe"] = "PET",
 							["totaldenied"] = 0.008277,
 							["last_event"] = 1667249518,
 							["custom"] = 0,
@@ -5857,7 +6476,7 @@ _detalhes_database = {
 							["aID"] = "Pet-0-4468-489-4518-1860-020049119C",
 							["start_time"] = 1667249523,
 							["delay"] = 1667249518,
-							["classe"] = "PET",
+							["pvp_component"] = true,
 						}, -- [4]
 					},
 				}, -- [2]
@@ -6240,8 +6859,7 @@ _detalhes_database = {
 							["dispell"] = 1.002771,
 							["cooldowns_defensive"] = 1.006657,
 							["buff_uptime"] = 0,
-							["dispell_oque"] = {
-								[27216] = 1,
+							["pets"] = {
 							},
 							["aID"] = "4454-044931B8",
 							["cooldowns_defensive_targets"] = {
@@ -6358,7 +6976,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["pets"] = {
+							["dispell_oque"] = {
+								[27216] = 1,
 							},
 							["pvp_component"] = true,
 							["pvp"] = true,
@@ -6441,7 +7060,8 @@ _detalhes_database = {
 						}, -- [7]
 						{
 							["flag_original"] = 1298,
-							["buff_uptime"] = 0,
+							["pets"] = {
+							},
 							["classe"] = "DEATHKNIGHT",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -6559,14 +7179,13 @@ _detalhes_database = {
 							["fight_component"] = true,
 							["nome"] = "Calmyboy-MirageRaceway",
 							["grupo"] = true,
-							["aID"] = "4454-04AD4921",
+							["tipo"] = 4,
 							["serial"] = "Player-4454-04AD4921",
 							["buff_uptime_targets"] = {
 							},
-							["tipo"] = 4,
 							["last_event"] = 1667249520,
-							["pets"] = {
-							},
+							["buff_uptime"] = 0,
+							["aID"] = "4454-04AD4921",
 							["pvp_component"] = true,
 							["pvp"] = true,
 						}, -- [8]
@@ -6896,9 +7515,9 @@ _detalhes_database = {
 							["aID"] = "4813-044A8ED2",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
-									[53755] = {
+									[43045] = {
 										["activedamt"] = 1,
-										["id"] = 53755,
+										["id"] = 43045,
 										["targets"] = {
 										},
 										["actived_at"] = 1667249521,
@@ -6908,9 +7527,9 @@ _detalhes_database = {
 										["actived"] = true,
 										["appliedamt"] = 1,
 									},
-									[43015] = {
+									[53755] = {
 										["activedamt"] = 1,
-										["id"] = 43015,
+										["id"] = 53755,
 										["targets"] = {
 										},
 										["actived_at"] = 1667249521,
@@ -6932,9 +7551,9 @@ _detalhes_database = {
 										["actived"] = true,
 										["appliedamt"] = 1,
 									},
-									[43045] = {
+									[43015] = {
 										["activedamt"] = 1,
-										["id"] = 43045,
+										["id"] = 43015,
 										["targets"] = {
 										},
 										["actived_at"] = 1667249521,
@@ -7073,13 +7692,13 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Airforceone-MirageRaceway"] = true,
 					["Calmyboy-MirageRaceway"] = true,
+					["Fatsnack-Mandokir"] = true,
 					["Moolatz"] = true,
-					["Memoria-Auberdine"] = true,
 					["Maivi-Giantstalker"] = true,
+					["Boopa-Venoxis"] = true,
 					["Bopshop-Ashbringer"] = true,
 					["Purpplehaze-Auberdine"] = true,
-					["Boopa-Venoxis"] = true,
-					["Fatsnack-Mandokir"] = true,
+					["Memoria-Auberdine"] = true,
 				},
 				["raid_roster_indexed"] = {
 					"Airforceone-MirageRaceway", -- [1]
@@ -7295,7 +7914,7 @@ _detalhes_database = {
 				},
 				["frags"] = {
 				},
-			}, -- [10]
+			}, -- [11]
 			{
 				{
 					["tipo"] = 2,
@@ -7319,9 +7938,9 @@ _detalhes_database = {
 								["Memoria-Auberdine"] = true,
 							},
 							["targets"] = {
-								["Grr <Memoria-Auberdine>"] = 3300,
 								["Memoria-Auberdine"] = 8547,
 								["Moolatz"] = 4746,
+								["Grr <Memoria-Auberdine>"] = 3300,
 								["Maivi-Giantstalker"] = 7737,
 							},
 							["enemy"] = true,
@@ -7371,9 +7990,9 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 429,
 										["targets"] = {
-											["Grr <Memoria-Auberdine>"] = 588,
 											["Moolatz"] = 880,
 											["Memoria-Auberdine"] = 2870,
+											["Grr <Memoria-Auberdine>"] = 588,
 											["Maivi-Giantstalker"] = 1661,
 										},
 										["n_dmg"] = 5999,
@@ -7456,9 +8075,9 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 1272,
 										["targets"] = {
-											["Grr <Memoria-Auberdine>"] = 2712,
 											["Memoria-Auberdine"] = 3548,
 											["Moolatz"] = 3535,
+											["Grr <Memoria-Auberdine>"] = 2712,
 											["Maivi-Giantstalker"] = 1849,
 										},
 										["n_dmg"] = 5116,
@@ -7604,7 +8223,7 @@ _detalhes_database = {
 						{
 							["flag_original"] = 1300,
 							["totalabsorbed"] = 0.006544,
-							["last_dps"] = 370.4451715555555,
+							["pvp_component"] = true,
 							["damage_from"] = {
 								["Сварт-Пламегор"] = true,
 							},
@@ -7616,16 +8235,16 @@ _detalhes_database = {
 								"Grr <Memoria-Auberdine>", -- [1]
 							},
 							["end_time"] = 1667249517,
-							["friendlyfire_total"] = 0,
 							["classe"] = "HUNTER",
+							["aID"] = "4441-039BA4F5",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2886.006544,
 							["serial"] = "Player-4441-039BA4F5",
-							["aID"] = "4441-039BA4F5",
+							["friendlyfire_total"] = 0,
 							["dps_started"] = false,
 							["total"] = 3334.006544,
-							["on_hold"] = false,
+							["last_dps"] = 370.4451715555555,
 							["fight_component"] = true,
 							["nome"] = "Memoria-Auberdine",
 							["spells"] = {
@@ -7775,20 +8394,20 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["custom"] = 0,
-							["damage_taken"] = 8547.006544,
-							["delay"] = 0,
-							["colocacao"] = 2,
-							["last_event"] = 1667249515,
+							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
+							["colocacao"] = 2,
+							["last_event"] = 1667249515,
+							["damage_taken"] = 8547.006544,
 							["start_time"] = 1667249506,
-							["pvp_component"] = true,
+							["delay"] = 0,
 							["pvp"] = true,
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
 							["totalabsorbed"] = 0.006121,
-							["last_dps"] = 1023.668707,
+							["pvp_component"] = true,
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -7798,16 +8417,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["end_time"] = 1667249511,
-							["friendlyfire_total"] = 0,
 							["classe"] = "MAGE",
+							["aID"] = "4813-044A8ED2",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3071.006121,
 							["serial"] = "Player-4813-044A8ED2",
-							["aID"] = "4813-044A8ED2",
+							["friendlyfire_total"] = 0,
 							["dps_started"] = false,
 							["total"] = 3071.006121,
-							["on_hold"] = false,
+							["last_dps"] = 1023.668707,
 							["fight_component"] = true,
 							["nome"] = "Fatsnack-Mandokir",
 							["spells"] = {
@@ -7873,14 +8492,14 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["custom"] = 0,
-							["damage_taken"] = 0.006121,
-							["delay"] = 1667249501,
-							["colocacao"] = 3,
-							["last_event"] = 1667249501,
+							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
+							["colocacao"] = 3,
+							["last_event"] = 1667249501,
+							["damage_taken"] = 0.006121,
 							["start_time"] = 1667249510,
-							["pvp_component"] = true,
+							["delay"] = 1667249501,
 							["pvp"] = true,
 						}, -- [3]
 						{
@@ -8046,7 +8665,7 @@ _detalhes_database = {
 						{
 							["flag_original"] = 1300,
 							["totalabsorbed"] = 0.006972,
-							["last_dps"] = 0.002324,
+							["pvp_component"] = true,
 							["damage_from"] = {
 								["Сварт-Пламегор"] = true,
 							},
@@ -8056,16 +8675,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["end_time"] = 1667249511,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4811-0394EED3",
+							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.006972,
 							["serial"] = "Player-4811-0394EED3",
-							["classe"] = "MAGE",
+							["friendlyfire_total"] = 0,
 							["dps_started"] = false,
 							["total"] = 0.006972,
-							["on_hold"] = false,
+							["last_dps"] = 0.002324,
 							["fight_component"] = true,
 							["nome"] = "Maivi-Giantstalker",
 							["spells"] = {
@@ -8104,14 +8723,14 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["custom"] = 0,
-							["damage_taken"] = 7737.006972,
-							["delay"] = 0,
-							["colocacao"] = 6,
-							["last_event"] = 1667249503,
+							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
+							["colocacao"] = 6,
+							["last_event"] = 1667249503,
+							["damage_taken"] = 7737.006972,
 							["start_time"] = 1667249511,
-							["pvp_component"] = true,
+							["delay"] = 0,
 							["pvp"] = true,
 						}, -- [6]
 						{
@@ -8235,18 +8854,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["friendlyfire_total"] = 0,
+							["pvp_component"] = true,
 							["classe"] = "UNKNOW",
-							["on_hold"] = false,
-							["aID"] = "",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 739.005894,
-							["friendlyfire_total"] = 0,
+							["aID"] = "",
 							["delay"] = 1667249503,
 							["dps_started"] = false,
 							["end_time"] = 1667249511,
-							["friendlyfire"] = {
-							},
+							["last_dps"] = 0,
 							["fight_component"] = true,
 							["nome"] = "Environment (Falling)",
 							["spells"] = {
@@ -8284,19 +8902,20 @@ _detalhes_database = {
 							},
 							["total"] = 739.005894,
 							["tipo"] = 1,
-							["serial"] = "",
-							["last_dps"] = 0,
+							["on_hold"] = false,
+							["damage_taken"] = 0.005894,
 							["custom"] = 0,
 							["last_event"] = 1667249503,
-							["damage_taken"] = 0.005894,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1667249510,
-							["pvp_component"] = true,
+							["serial"] = "",
 							["pvp"] = true,
 						}, -- [9]
 						{
 							["flag_original"] = 4372,
 							["totalabsorbed"] = 0.002714,
-							["friendlyfire_total"] = 0,
+							["end_time"] = 1667249511,
 							["damage_from"] = {
 								["Сварт-Пламегор"] = true,
 							},
@@ -8315,7 +8934,7 @@ _detalhes_database = {
 							},
 							["aID"] = "Pet-0-4468-489-4518-25675-0A0076B350",
 							["dps_started"] = false,
-							["end_time"] = 1667249511,
+							["total"] = 448.002714,
 							["delay"] = 1667249506,
 							["ownerName"] = "Memoria-Auberdine",
 							["nome"] = "Grr <Memoria-Auberdine>",
@@ -8409,8 +9028,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
+							["friendlyfire_total"] = 0,
 							["fight_component"] = true,
-							["total"] = 448.002714,
 							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
@@ -8454,10 +9073,10 @@ _detalhes_database = {
 							["healing_taken"] = 1424.002571,
 							["fight_component"] = true,
 							["end_time"] = 1667249511,
-							["pvp_component"] = true,
 							["healing_from"] = {
 								["Moolatz"] = true,
 							},
+							["aID"] = "4465-02B843FA",
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -8480,9 +9099,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 1,
 										["n_curado"] = 210,
 										["totaldenied"] = 0,
-										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 									[26980] = {
@@ -8504,9 +9123,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 1,
 										["n_curado"] = 1214,
 										["totaldenied"] = 0,
-										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 								},
@@ -8520,7 +9139,7 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249509,
 							["delay"] = 0,
-							["aID"] = "4465-02B843FA",
+							["pvp_component"] = true,
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
@@ -8550,10 +9169,10 @@ _detalhes_database = {
 							["healing_taken"] = 786.004151,
 							["fight_component"] = true,
 							["end_time"] = 1667249511,
-							["pvp_component"] = true,
 							["healing_from"] = {
 								["Purpplehaze-Auberdine"] = true,
 							},
+							["aID"] = "4441-027C4C2D",
 							["nome"] = "Purpplehaze-Auberdine",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -8576,9 +9195,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 2,
 										["n_curado"] = 786,
 										["totaldenied"] = 0,
-										["n_amt"] = 2,
 										["absorbed"] = 0,
 									},
 								},
@@ -8592,7 +9211,7 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249510,
 							["delay"] = 1667249507,
-							["aID"] = "4441-027C4C2D",
+							["pvp_component"] = true,
 						}, -- [2]
 						{
 							["flag_original"] = 1352,
@@ -8625,10 +9244,10 @@ _detalhes_database = {
 							["healing_taken"] = 158.003517,
 							["fight_component"] = true,
 							["end_time"] = 1667249511,
-							["pvp_component"] = true,
 							["healing_from"] = {
 								["Молимся-Пламегор"] = true,
 							},
+							["aID"] = "4474-04B16B28",
 							["nome"] = "Молимся-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -8652,9 +9271,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 158,
 										["c_curado"] = 158,
+										["n_amt"] = 0,
 										["n_curado"] = 0,
 										["totaldenied"] = 0,
-										["n_amt"] = 0,
 										["absorbed"] = 0,
 									},
 									[15290] = {
@@ -8679,9 +9298,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 5,
 										["n_curado"] = 0,
 										["totaldenied"] = 0,
-										["n_amt"] = 5,
 										["absorbed"] = 0,
 									},
 								},
@@ -8695,7 +9314,7 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249508,
 							["delay"] = 1667249503,
-							["aID"] = "4474-04B16B28",
+							["pvp_component"] = true,
 						}, -- [3]
 						{
 							["flag_original"] = 1352,
@@ -8724,9 +9343,9 @@ _detalhes_database = {
 							["totalover_without_pet"] = 0.008298,
 							["healing_taken"] = 0.008298,
 							["end_time"] = 1667249511,
-							["pvp_component"] = true,
 							["healing_from"] = {
 							},
+							["aID"] = "4474-02506FC0",
 							["nome"] = "Готян-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -8741,7 +9360,7 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249511,
 							["delay"] = 0,
-							["aID"] = "4474-02506FC0",
+							["pvp_component"] = true,
 						}, -- [4]
 						{
 							["flag_original"] = 1352,
@@ -8772,9 +9391,9 @@ _detalhes_database = {
 							["totalover_without_pet"] = 0.005479,
 							["healing_taken"] = 0.005479,
 							["end_time"] = 1667249511,
-							["pvp_component"] = true,
 							["healing_from"] = {
 							},
+							["aID"] = "4474-047E5D59",
 							["nome"] = "Кейналай-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -8798,9 +9417,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 1,
 										["n_curado"] = 0,
 										["totaldenied"] = 0,
-										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 									[26980] = {
@@ -8823,9 +9442,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 1,
 										["n_curado"] = 0,
 										["totaldenied"] = 0,
-										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 								},
@@ -8839,7 +9458,7 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249509,
 							["delay"] = 1667249503,
-							["aID"] = "4474-047E5D59",
+							["pvp_component"] = true,
 						}, -- [5]
 						{
 							["flag_original"] = 1352,
@@ -8868,9 +9487,9 @@ _detalhes_database = {
 							["totalover_without_pet"] = 0.003648,
 							["healing_taken"] = 0.003648,
 							["end_time"] = 1667249511,
-							["pvp_component"] = true,
 							["healing_from"] = {
 							},
+							["aID"] = "4474-04A80422",
 							["nome"] = "Рубежж-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -8885,7 +9504,7 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249511,
 							["delay"] = 0,
-							["aID"] = "4474-04A80422",
+							["pvp_component"] = true,
 						}, -- [6]
 					},
 				}, -- [2]
@@ -9541,11 +10160,11 @@ _detalhes_database = {
 								[27079] = 1,
 								[27074] = 1,
 							},
-							["classe"] = "UNGROUPPLAYER",
+							["aID"] = "4474-02506FC0",
 							["pets"] = {
 							},
-							["aID"] = "4474-02506FC0",
 							["tipo"] = 4,
+							["classe"] = "UNGROUPPLAYER",
 							["serial"] = "Player-4474-02506FC0",
 							["pvp_component"] = true,
 							["pvp"] = true,
@@ -9880,14 +10499,14 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Airforceone-MirageRaceway"] = true,
 					["Calmyboy-MirageRaceway"] = true,
-					["Moolatz"] = true,
+					["Fatsnack-Mandokir"] = true,
 					["Boopa-Venoxis"] = true,
-					["Memoria-Auberdine"] = true,
+					["Altarpain-MirageRaceway"] = true,
 					["Maivi-Giantstalker"] = true,
 					["Purpplehaze-Auberdine"] = true,
 					["Bopshop-Ashbringer"] = true,
-					["Altarpain-MirageRaceway"] = true,
-					["Fatsnack-Mandokir"] = true,
+					["Memoria-Auberdine"] = true,
+					["Moolatz"] = true,
 				},
 				["raid_roster_indexed"] = {
 					"Airforceone-MirageRaceway", -- [1]
@@ -10494,14 +11113,14 @@ _detalhes_database = {
 					}, -- [1]
 					["damage"] = {
 						{
-							["Fatsnack-Mandokir"] = 3071.006121,
+							["Молимся-Пламегор"] = 0.006155,
 							["Сварт-Пламегор"] = 32279.008422,
-							["Moolatz"] = 0.005446,
+							["Memoria-Auberdine"] = 3334.015048,
 							["Maivi-Giantstalker"] = 0.006972,
 							["Готян-Пламегор"] = 0.008159,
 							["Boopa-Venoxis"] = 0.008508,
-							["Memoria-Auberdine"] = 3334.015048,
-							["Молимся-Пламегор"] = 0.006155,
+							["Moolatz"] = 0.005446,
+							["Fatsnack-Mandokir"] = 3071.006121,
 						}, -- [1]
 					},
 					["heal_section"] = {
@@ -10549,7 +11168,7 @@ _detalhes_database = {
 					["name"] = "Warsong Gulch",
 					["mapid"] = 489,
 				},
-			}, -- [11]
+			}, -- [12]
 			{
 				{
 					["tipo"] = 2,
@@ -10568,22 +11187,23 @@ _detalhes_database = {
 								["Молимся-Пламегор"] = 5464,
 								["Шерифдуфи-Пламегор"] = 14204,
 							},
-							["total"] = 20018.003749,
+							["dps_started"] = false,
 							["pets"] = {
 								"Grr <Memoria-Auberdine>", -- [1]
 							},
 							["last_dps"] = 1112.111319388889,
-							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 16534.003749,
-							["serial"] = "Player-4441-039BA4F5",
-							["classe"] = "HUNTER",
+							["on_hold"] = false,
+							["aID"] = "4441-039BA4F5",
 							["fight_component"] = true,
 							["end_time"] = 1667249474,
-							["delay"] = 1667249453,
-							["aID"] = "4441-039BA4F5",
+							["serial"] = "Player-4441-039BA4F5",
+							["classe"] = "HUNTER",
 							["nome"] = "Memoria-Auberdine",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -10877,16 +11497,15 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
+							["total"] = 20018.003749,
 							["last_event"] = 1667249453,
 							["custom"] = 0,
-							["on_hold"] = false,
 							["colocacao"] = 1,
 							["tipo"] = 1,
 							["damage_taken"] = 11013.003749,
 							["start_time"] = 1667249456,
 							["pvp_component"] = true,
-							["friendlyfire"] = {
-							},
+							["delay"] = 1667249453,
 						}, -- [1]
 						{
 							["flag_original"] = 1300,
@@ -10897,25 +11516,26 @@ _detalhes_database = {
 								["Сварт-Пламегор"] = true,
 							},
 							["targets"] = {
+								["Рубежж-Пламегор"] = 11864,
 								["Шерифдуфи-Пламегор"] = 2924,
 								["Белтико"] = 4827,
-								["Рубежж-Пламегор"] = 11864,
 							},
-							["total"] = 19615.001139,
+							["dps_started"] = false,
 							["pets"] = {
 							},
 							["last_dps"] = 817.291714125,
-							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 19615.001139,
-							["serial"] = "Player-4811-0394EED3",
-							["classe"] = "MAGE",
+							["on_hold"] = false,
+							["aID"] = "4811-0394EED3",
 							["fight_component"] = true,
 							["end_time"] = 1667249474,
-							["delay"] = 1667249466,
-							["aID"] = "4811-0394EED3",
+							["serial"] = "Player-4811-0394EED3",
+							["classe"] = "MAGE",
 							["nome"] = "Maivi-Giantstalker",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -11097,16 +11717,15 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
+							["total"] = 19615.001139,
 							["last_event"] = 1667249466,
 							["custom"] = 0,
-							["on_hold"] = false,
 							["colocacao"] = 2,
 							["tipo"] = 1,
 							["damage_taken"] = 9617.001139,
 							["start_time"] = 1667249450,
 							["pvp_component"] = true,
-							["friendlyfire"] = {
-							},
+							["delay"] = 1667249466,
 						}, -- [2]
 						{
 							["flag_original"] = 1352,
@@ -11475,21 +12094,22 @@ _detalhes_database = {
 								["Рубежж-Пламегор"] = 9009,
 								["Белтико"] = 1299,
 							},
-							["total"] = 17036.006271,
+							["dps_started"] = false,
 							["pets"] = {
 							},
 							["last_dps"] = 811.2383938571428,
-							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 17036.006271,
-							["serial"] = "Player-4477-02CA9A6D",
-							["classe"] = "MAGE",
+							["on_hold"] = false,
+							["aID"] = "4477-02CA9A6D",
 							["fight_component"] = true,
 							["end_time"] = 1667249474,
-							["delay"] = 1667249465,
-							["aID"] = "4477-02CA9A6D",
+							["serial"] = "Player-4477-02CA9A6D",
+							["classe"] = "MAGE",
 							["nome"] = "Boopa-Venoxis",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -11676,9 +12296,9 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 412,
 										["targets"] = {
+											["Белтико"] = 371,
 											["Молимся-Пламегор"] = 726,
 											["Рубежж-Пламегор"] = 1155,
-											["Белтико"] = 371,
 										},
 										["n_dmg"] = 2252,
 										["n_min"] = 63,
@@ -11737,16 +12357,15 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
+							["total"] = 17036.006271,
 							["last_event"] = 1667249474,
 							["custom"] = 0,
-							["on_hold"] = false,
 							["colocacao"] = 4,
 							["tipo"] = 1,
 							["damage_taken"] = 6865.006271,
 							["start_time"] = 1667249453,
 							["pvp_component"] = true,
-							["friendlyfire"] = {
-							},
+							["delay"] = 1667249465,
 						}, -- [4]
 						{
 							["flag_original"] = 1352,
@@ -12067,17 +12686,30 @@ _detalhes_database = {
 							["pets"] = {
 								"Hathgarth <Purpplehaze-Auberdine>", -- [1]
 							},
-							["on_hold"] = false,
-							["pvp_component"] = true,
-							["aID"] = "4441-027C4C2D",
+							["friendlyfire"] = {
+								["Purpplehaze-Auberdine"] = {
+									["spells"] = {
+										[55044] = 900,
+									},
+									["total"] = 900,
+								},
+								["Hathgarth <Purpplehaze-Auberdine>"] = {
+									["spells"] = {
+										[25228] = 2520,
+									},
+									["total"] = 2520,
+								},
+							},
+							["serial"] = "Player-4441-027C4C2D",
+							["classe"] = "WARLOCK",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 12643.004265,
-							["serial"] = "Player-4441-027C4C2D",
-							["friendlyfire_total"] = 3420,
+							["delay"] = 1667249467,
+							["aID"] = "4441-027C4C2D",
 							["fight_component"] = true,
 							["total"] = 12643.004265,
-							["classe"] = "WARLOCK",
+							["friendlyfire_total"] = 3420,
 							["dps_started"] = false,
 							["nome"] = "Purpplehaze-Auberdine",
 							["spells"] = {
@@ -12233,27 +12865,14 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["friendlyfire"] = {
-								["Purpplehaze-Auberdine"] = {
-									["spells"] = {
-										[55044] = 900,
-									},
-									["total"] = 900,
-								},
-								["Hathgarth <Purpplehaze-Auberdine>"] = {
-									["spells"] = {
-										[25228] = 2520,
-									},
-									["total"] = 2520,
-								},
-							},
+							["last_dps"] = 486.2693948076923,
 							["custom"] = 0,
 							["damage_taken"] = 19369.004265,
 							["colocacao"] = 6,
 							["tipo"] = 1,
-							["last_dps"] = 486.2693948076923,
+							["on_hold"] = false,
 							["start_time"] = 1667249453,
-							["delay"] = 1667249467,
+							["pvp_component"] = true,
 							["pvp"] = true,
 						}, -- [6]
 						{
@@ -12271,18 +12890,18 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["last_dps"] = 0,
+							["end_time"] = 1667249500,
 							["classe"] = "WARRIOR",
-							["aID"] = "4474-04A9CC5B",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2548.001769,
-							["friendlyfire_total"] = 0,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1667249500,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["total"] = 2548.001769,
+							["delay"] = 0,
+							["aID"] = "4474-04A9CC5B",
 							["nome"] = "Сварт-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -12314,6 +12933,58 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
+									[1715] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 1715,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[2457] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 2457,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 									[50622] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
@@ -12344,32 +13015,6 @@ _detalhes_database = {
 										},
 										["spellschool"] = 1,
 									},
-									[2457] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 2457,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[11578] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -12396,37 +13041,11 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[1715] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 1715,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 2548.001769,
+							["fight_component"] = true,
 							["serial"] = "Player-4474-04A9CC5B",
 							["damage_taken"] = 0.001769,
 							["custom"] = 0,
@@ -12623,7 +13242,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["on_hold"] = false,
-							["pvp_component"] = true,
+							["delay"] = 0,
 							["classe"] = "PALADIN",
 							["raid_targets"] = {
 							},
@@ -12633,7 +13252,7 @@ _detalhes_database = {
 							["aID"] = "4742-03A8E3B9",
 							["dps_started"] = false,
 							["end_time"] = 1667249474,
-							["delay"] = 0,
+							["serial"] = "Player-4742-03A8E3B9",
 							["friendlyfire_total"] = 0,
 							["nome"] = "Bopshop-Ashbringer",
 							["spells"] = {
@@ -12649,7 +13268,7 @@ _detalhes_database = {
 							["tipo"] = 1,
 							["damage_taken"] = 529.005147,
 							["start_time"] = 1667249474,
-							["serial"] = "Player-4742-03A8E3B9",
+							["pvp_component"] = true,
 							["pvp"] = true,
 						}, -- [9]
 						{
@@ -12662,7 +13281,7 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["delay"] = 0,
+							["serial"] = "Player-4454-044931B8",
 							["friendlyfire"] = {
 							},
 							["classe"] = "PALADIN",
@@ -12670,7 +13289,7 @@ _detalhes_database = {
 							},
 							["total_without_pet"] = 0.005138,
 							["aID"] = "4454-044931B8",
-							["serial"] = "Player-4454-044931B8",
+							["pvp_component"] = true,
 							["dps_started"] = false,
 							["total"] = 0.005138,
 							["friendlyfire_total"] = 0,
@@ -12689,7 +13308,7 @@ _detalhes_database = {
 							["tipo"] = 1,
 							["last_dps"] = 0,
 							["start_time"] = 1667249474,
-							["pvp_component"] = true,
+							["delay"] = 0,
 							["pvp"] = true,
 						}, -- [10]
 						{
@@ -12772,18 +13391,18 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["last_dps"] = 0,
+							["end_time"] = 1667249474,
 							["aID"] = "4474-04A803F9",
-							["classe"] = "PALADIN",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.001283,
-							["friendlyfire_total"] = 0,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1667249474,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.001283,
+							["delay"] = 0,
+							["classe"] = "PALADIN",
 							["nome"] = "Небославян-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -12895,7 +13514,7 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 0.001283,
+							["fight_component"] = true,
 							["serial"] = "Player-4474-04A803F9",
 							["damage_taken"] = 3627.001283,
 							["custom"] = 0,
@@ -13195,9 +13814,9 @@ _detalhes_database = {
 							["flag_original"] = 1352,
 							["totalabsorbed"] = 0.007872,
 							["damage_from"] = {
-								["Grr <Memoria-Auberdine>"] = true,
 								["Memoria-Auberdine"] = true,
 								["Grr <Memoria-Auberdine> <Memoria-Auberdine>"] = true,
+								["Grr <Memoria-Auberdine>"] = true,
 								["Maivi-Giantstalker"] = true,
 							},
 							["targets"] = {
@@ -13498,7 +14117,7 @@ _detalhes_database = {
 							["fight_component"] = true,
 							["friendlyfire"] = {
 							},
-							["aID"] = "Pet-0-4468-489-4518-25675-080076B350",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3484.00104,
@@ -13506,7 +14125,7 @@ _detalhes_database = {
 							["pvp_component"] = true,
 							["dps_started"] = false,
 							["total"] = 3484.00104,
-							["classe"] = "PET",
+							["aID"] = "Pet-0-4468-489-4518-25675-080076B350",
 							["ownerName"] = "Memoria-Auberdine",
 							["nome"] = "Grr <Memoria-Auberdine>",
 							["spells"] = {
@@ -13576,7 +14195,7 @@ _detalhes_database = {
 							},
 							["on_hold"] = false,
 							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
+							["classe"] = "PET",
 							["custom"] = 0,
 							["last_event"] = 1667249442,
 							["last_dps"] = 0,
@@ -13590,24 +14209,25 @@ _detalhes_database = {
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Bopshop-Ashbringer"] = 529,
-								["Boopa-Venoxis"] = 360,
-								["Airforceone-MirageRaceway"] = 405,
 								["Purpplehaze-Auberdine"] = 695,
+								["Bopshop-Ashbringer"] = 529,
+								["Airforceone-MirageRaceway"] = 405,
+								["Boopa-Venoxis"] = 360,
 							},
 							["pets"] = {
 							},
+							["classe"] = "UNKNOW",
+							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
-							["serial"] = "",
-							["aID"] = "",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1989.00341,
-							["classe"] = "UNKNOW",
-							["pvp_component"] = true,
+							["aID"] = "",
+							["serial"] = "",
 							["fight_component"] = true,
 							["end_time"] = 1667249474,
-							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
 							["nome"] = "Environment (Falling)",
 							["spells"] = {
@@ -13619,10 +14239,10 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 695,
 										["targets"] = {
-											["Bopshop-Ashbringer"] = 529,
-											["Boopa-Venoxis"] = 360,
-											["Airforceone-MirageRaceway"] = 405,
 											["Purpplehaze-Auberdine"] = 695,
+											["Bopshop-Ashbringer"] = 529,
+											["Airforceone-MirageRaceway"] = 405,
+											["Boopa-Venoxis"] = 360,
 										},
 										["n_dmg"] = 1989,
 										["n_min"] = 360,
@@ -13648,20 +14268,19 @@ _detalhes_database = {
 							},
 							["total"] = 1989.00341,
 							["last_event"] = 1667249441,
-							["damage_taken"] = 0.00341,
-							["friendlyfire"] = {
-							},
+							["last_dps"] = 0,
+							["delay"] = 1667249441,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["on_hold"] = false,
+							["damage_taken"] = 0.00341,
 							["start_time"] = 1667249472,
-							["delay"] = 1667249441,
+							["pvp_component"] = true,
 							["pvp"] = true,
 						}, -- [16]
 						{
 							["flag_original"] = 4370,
 							["totalabsorbed"] = 0.008256,
-							["end_time"] = 1667249474,
+							["tipo"] = 1,
 							["damage_from"] = {
 								["Purpplehaze-Auberdine"] = true,
 								["Рубежж-Пламегор"] = true,
@@ -13677,11 +14296,10 @@ _detalhes_database = {
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.008256,
-							["friendlyfire"] = {
-							},
 							["friendlyfire_total"] = 0,
+							["classe"] = "PET",
 							["dps_started"] = false,
-							["total"] = 0.008256,
+							["end_time"] = 1667249474,
 							["delay"] = 0,
 							["ownerName"] = "Purpplehaze-Auberdine",
 							["nome"] = "Hathgarth <Purpplehaze-Auberdine>",
@@ -13690,9 +14308,10 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["classe"] = "PET",
 							["fight_component"] = true,
-							["tipo"] = 1,
+							["total"] = 0.008256,
+							["friendlyfire"] = {
+							},
 							["damage_taken"] = 6621.008256,
 							["custom"] = 0,
 							["last_event"] = 0,
@@ -13713,18 +14332,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["friendlyfire_total"] = 0,
+							["pvp_component"] = true,
 							["classe"] = "PET",
-							["friendlyfire"] = {
-							},
-							["aID"] = "Pet-0-4468-489-4518-1860-0400751FD7",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.002892,
-							["friendlyfire_total"] = 0,
+							["aID"] = "Pet-0-4468-489-4518-1860-0400751FD7",
 							["serial"] = "Pet-0-4468-489-4518-1860-0400751FD7",
 							["fight_component"] = true,
 							["end_time"] = 1667249474,
-							["last_dps"] = 0,
+							["damage_taken"] = 9599.002892,
 							["dps_started"] = false,
 							["nome"] = "Белтико",
 							["spells"] = {
@@ -13734,13 +14352,14 @@ _detalhes_database = {
 							},
 							["total"] = 0.002892,
 							["last_event"] = 0,
-							["delay"] = 0,
-							["damage_taken"] = 9599.002892,
+							["friendlyfire"] = {
+							},
+							["on_hold"] = false,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["on_hold"] = false,
+							["last_dps"] = 0,
 							["start_time"] = 1667249474,
-							["pvp_component"] = true,
+							["delay"] = 0,
 							["pvp"] = true,
 						}, -- [18]
 						{
@@ -13754,7 +14373,8 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["aID"] = "4813-044A8ED2",
 							["classe"] = "MAGE",
 							["raid_targets"] = {
@@ -13763,8 +14383,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["dps_started"] = false,
 							["total"] = 158.001581,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 0.001581,
 							["tipo"] = 1,
 							["nome"] = "Fatsnack-Mandokir",
 							["spells"] = {
@@ -13805,7 +14424,7 @@ _detalhes_database = {
 							["end_time"] = 1667249499,
 							["custom"] = 0,
 							["last_event"] = 1667249499,
-							["damage_taken"] = 0.001581,
+							["on_hold"] = false,
 							["start_time"] = 1667249499,
 							["serial"] = "Player-4813-044A8ED2",
 							["pvp"] = true,
@@ -13821,7 +14440,8 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["classe"] = "DRUID",
 							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
@@ -13830,8 +14450,7 @@ _detalhes_database = {
 							["total"] = 0.005992,
 							["dps_started"] = false,
 							["end_time"] = 1667249500,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 293.005992,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -13844,7 +14463,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["damage_taken"] = 293.005992,
+							["on_hold"] = false,
 							["start_time"] = 1667249500,
 							["serial"] = "Player-4465-02B843FA",
 							["pvp"] = true,
@@ -13891,10 +14510,8 @@ _detalhes_database = {
 							["healing_taken"] = 3435.001105,
 							["fight_component"] = true,
 							["end_time"] = 1667249474,
-							["healing_from"] = {
-								["Кейналай-Пламегор"] = true,
-							},
 							["aID"] = "4474-047E5D59",
+							["pvp_component"] = true,
 							["nome"] = "Кейналай-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -13919,9 +14536,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 10,
 										["n_curado"] = 5368,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[26982] = {
@@ -13949,9 +14566,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 18,
 										["n_curado"] = 8376,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[18562] = {
@@ -13974,9 +14591,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 2,
 										["n_curado"] = 2428,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[53248] = {
@@ -14005,9 +14622,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 77,
 										["n_curado"] = 14050,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -14021,7 +14638,9 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.001105,
 							["delay"] = 1667249449,
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Кейналай-Пламегор"] = true,
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
@@ -14054,11 +14673,8 @@ _detalhes_database = {
 							["healing_taken"] = 12649.005078,
 							["fight_component"] = true,
 							["end_time"] = 1667249474,
-							["healing_from"] = {
-								["Hathgarth <Purpplehaze-Auberdine>"] = true,
-								["Purpplehaze-Auberdine"] = true,
-							},
 							["aID"] = "4441-027C4C2D",
+							["pvp_component"] = true,
 							["nome"] = "Purpplehaze-Auberdine",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -14082,9 +14698,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 12,
 										["n_curado"] = 2598,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[54181] = {
@@ -14107,9 +14723,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 17,
 										["n_curado"] = 1207,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -14123,7 +14739,10 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.005078,
 							["delay"] = 1667249452,
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Hathgarth <Purpplehaze-Auberdine>"] = true,
+								["Purpplehaze-Auberdine"] = true,
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 1352,
@@ -14155,10 +14774,8 @@ _detalhes_database = {
 							["healing_taken"] = 2645.001112,
 							["fight_component"] = true,
 							["end_time"] = 1667249474,
-							["healing_from"] = {
-								["Кейналай-Пламегор"] = true,
-							},
 							["aID"] = "4474-04A803F9",
+							["pvp_component"] = true,
 							["nome"] = "Небославян-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -14181,9 +14798,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 2444,
 										["c_curado"] = 5735,
+										["totaldenied"] = 0,
 										["n_amt"] = 0,
 										["n_curado"] = 0,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[27137] = {
@@ -14206,9 +14823,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 1675,
 										["c_curado"] = 3912,
+										["totaldenied"] = 0,
 										["n_amt"] = 0,
 										["n_curado"] = 0,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -14222,7 +14839,9 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.001112,
 							["delay"] = 1667249461,
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Кейналай-Пламегор"] = true,
+							},
 						}, -- [3]
 						{
 							["flag_original"] = 1352,
@@ -14256,12 +14875,8 @@ _detalhes_database = {
 							["healing_taken"] = 11811.002667,
 							["fight_component"] = true,
 							["end_time"] = 1667249474,
-							["healing_from"] = {
-								["Кейналай-Пламегор"] = true,
-								["Молимся-Пламегор"] = true,
-								["Небославян-Пламегор"] = true,
-							},
 							["aID"] = "4474-04B16B28",
+							["pvp_component"] = true,
 							["nome"] = "Молимся-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -14285,9 +14900,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 3,
 										["n_curado"] = 72,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[15290] = {
@@ -14311,9 +14926,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 67,
 										["n_curado"] = 1076,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[48065] = {
@@ -14336,9 +14951,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["n_curado"] = 2555,
 										["totaldenied"] = 0,
 										["n_amt"] = 7,
+										["n_curado"] = 2555,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -14362,9 +14977,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 8,
 										["n_curado"] = 270,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -14378,7 +14993,11 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.002667,
 							["delay"] = 1667249462,
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Кейналай-Пламегор"] = true,
+								["Молимся-Пламегор"] = true,
+								["Небославян-Пламегор"] = true,
+							},
 						}, -- [4]
 						{
 							["flag_original"] = 1352,
@@ -14411,12 +15030,8 @@ _detalhes_database = {
 							["healing_taken"] = 26454.004805,
 							["fight_component"] = true,
 							["end_time"] = 1667249474,
-							["healing_from"] = {
-								["Кейналай-Пламегор"] = true,
-								["Рубежж-Пламегор"] = true,
-								["Небославян-Пламегор"] = true,
-							},
 							["aID"] = "4474-04A80422",
+							["pvp_component"] = true,
 							["nome"] = "Рубежж-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -14440,9 +15055,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["n_curado"] = 1191,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
+										["n_curado"] = 1191,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -14466,9 +15081,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 10,
 										["n_curado"] = 1508,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[27235] = {
@@ -14491,9 +15106,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 1091,
 										["c_curado"] = 1091,
+										["totaldenied"] = 0,
 										["n_amt"] = 0,
 										["n_curado"] = 0,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -14507,7 +15122,11 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.004805,
 							["delay"] = 1667249470,
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Кейналай-Пламегор"] = true,
+								["Рубежж-Пламегор"] = true,
+								["Небославян-Пламегор"] = true,
+							},
 						}, -- [5]
 						{
 							["flag_original"] = 1300,
@@ -14538,10 +15157,8 @@ _detalhes_database = {
 							["healing_taken"] = 1630.002938,
 							["fight_component"] = true,
 							["end_time"] = 1667249474,
-							["healing_from"] = {
-								["Maivi-Giantstalker"] = true,
-							},
 							["aID"] = "4811-0394EED3",
+							["pvp_component"] = true,
 							["nome"] = "Maivi-Giantstalker",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -14565,9 +15182,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["n_curado"] = 1630,
 										["totaldenied"] = 0,
 										["n_amt"] = 4,
+										["n_curado"] = 1630,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -14582,7 +15199,9 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.002938,
 							["delay"] = 1667249471,
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Maivi-Giantstalker"] = true,
+							},
 						}, -- [6]
 						{
 							["flag_original"] = 1300,
@@ -14657,10 +15276,8 @@ _detalhes_database = {
 							["healing_taken"] = 121.007289,
 							["fight_component"] = true,
 							["end_time"] = 1667249474,
-							["healing_from"] = {
-								["Молимся-Пламегор"] = true,
-							},
 							["aID"] = "4474-02506FC0",
+							["pvp_component"] = true,
 							["nome"] = "Готян-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -14675,7 +15292,9 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.007289,
 							["delay"] = 0,
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Молимся-Пламегор"] = true,
+							},
 						}, -- [8]
 						{
 							["flag_original"] = 4370,
@@ -14705,9 +15324,7 @@ _detalhes_database = {
 							["healing_taken"] = 1207.004754,
 							["fight_component"] = true,
 							["end_time"] = 1667249474,
-							["healing_from"] = {
-								["Purpplehaze-Auberdine"] = true,
-							},
+							["classe"] = "PET",
 							["ownerName"] = "Purpplehaze-Auberdine",
 							["nome"] = "Hathgarth <Purpplehaze-Auberdine>",
 							["spells"] = {
@@ -14732,16 +15349,16 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["n_curado"] = 10051,
 										["totaldenied"] = 0,
 										["n_amt"] = 24,
+										["n_curado"] = 10051,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
-							["classe"] = "PET",
+							["pvp_component"] = true,
 							["start_time"] = 1667249462,
 							["aID"] = "Pet-0-4468-489-4518-1860-020049119C",
 							["custom"] = 0,
@@ -14749,7 +15366,9 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.004754,
 							["delay"] = 0,
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Purpplehaze-Auberdine"] = true,
+							},
 						}, -- [9]
 						{
 							["flag_original"] = 4372,
@@ -14805,9 +15424,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 10,
 										["n_curado"] = 703,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -15020,10 +15639,10 @@ _detalhes_database = {
 							["targets"] = {
 								["Memoria-Auberdine"] = 119,
 								["Maivi-Giantstalker"] = 462,
-								["Purpplehaze-Auberdine"] = 375,
-								["Boopa-Venoxis"] = 264,
-								["Airforceone-MirageRaceway"] = 266,
 								["Bopshop-Ashbringer"] = 210,
+								["Purpplehaze-Auberdine"] = 375,
+								["Airforceone-MirageRaceway"] = 266,
+								["Boopa-Venoxis"] = 264,
 							},
 							["pets"] = {
 							},
@@ -15043,10 +15662,10 @@ _detalhes_database = {
 										["targets"] = {
 											["Memoria-Auberdine"] = 119,
 											["Maivi-Giantstalker"] = 462,
-											["Purpplehaze-Auberdine"] = 375,
-											["Boopa-Venoxis"] = 264,
-											["Airforceone-MirageRaceway"] = 266,
 											["Bopshop-Ashbringer"] = 210,
+											["Purpplehaze-Auberdine"] = 375,
+											["Airforceone-MirageRaceway"] = 266,
+											["Boopa-Venoxis"] = 264,
 										},
 										["counter"] = 82,
 									},
@@ -16345,7 +16964,8 @@ _detalhes_database = {
 								1667249426.983, -- [1]
 								45438, -- [2]
 							},
-							["nome"] = "Maivi-Giantstalker",
+							["debuff_uptime_targets"] = {
+							},
 							["aID"] = "4811-0394EED3",
 							["interrupt_spells"] = {
 								["_ActorTable"] = {
@@ -16364,6 +16984,17 @@ _detalhes_database = {
 							},
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
+									[45438] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 11,
+										["id"] = 45438,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[33405] = {
 										["appliedamt"] = 1,
 										["targets"] = {
@@ -16372,17 +17003,6 @@ _detalhes_database = {
 										["uptime"] = 10,
 										["id"] = 33405,
 										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[74396] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 0,
-										["id"] = 74396,
-										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
@@ -16441,14 +17061,14 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[45438] = {
+									[74396] = {
 										["appliedamt"] = 1,
 										["targets"] = {
 										},
 										["activedamt"] = 1,
-										["uptime"] = 11,
-										["id"] = 45438,
-										["refreshamt"] = 0,
+										["uptime"] = 0,
+										["id"] = 74396,
+										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
@@ -16473,8 +17093,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime_targets"] = {
-							},
+							["nome"] = "Maivi-Giantstalker",
 							["interrupt_targets"] = {
 								["Шерифдуфи-Пламегор"] = 1,
 							},
@@ -16496,7 +17115,7 @@ _detalhes_database = {
 							["last_event"] = 1667249471,
 							["classe"] = "MAGE",
 							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
+							["buff_uptime_targets"] = {
 							},
 							["interrupt"] = 1.003266,
 							["serial"] = "Player-4811-0394EED3",
@@ -16595,13 +17214,13 @@ _detalhes_database = {
 								[52473] = 13,
 								[64494] = 1,
 							},
-							["aID"] = "Pet-0-4468-489-4518-25675-080076B350",
 							["last_event"] = 0,
+							["classe"] = "PET",
 							["tipo"] = 4,
 							["pets"] = {
 							},
 							["serial"] = "Pet-0-4468-489-4518-25675-080076B350",
-							["classe"] = "PET",
+							["aID"] = "Pet-0-4468-489-4518-25675-080076B350",
 						}, -- [10]
 						{
 							["flag_original"] = 1352,
@@ -16688,7 +17307,7 @@ _detalhes_database = {
 						}, -- [12]
 						{
 							["fight_component"] = true,
-							["aID"] = "4474-047E5D59",
+							["classe"] = "UNGROUPPLAYER",
 							["pvp_component"] = true,
 							["flag_original"] = 1352,
 							["nome"] = "Кейналай-Пламегор",
@@ -16703,9 +17322,9 @@ _detalhes_database = {
 								[18562] = 2,
 								[33891] = 1,
 							},
-							["tipo"] = 4,
 							["last_event"] = 0,
-							["classe"] = "UNGROUPPLAYER",
+							["tipo"] = 4,
+							["aID"] = "4474-047E5D59",
 							["serial"] = "Player-4474-047E5D59",
 							["pvp"] = true,
 						}, -- [13]
@@ -16961,11 +17580,11 @@ _detalhes_database = {
 							["spell_cast"] = {
 								[11740] = 1,
 							},
-							["aID"] = "4474-03995BCB",
+							["tipo"] = 4,
 							["pets"] = {
 							},
-							["tipo"] = 4,
 							["classe"] = "UNGROUPPLAYER",
+							["aID"] = "4474-03995BCB",
 							["pvp_component"] = true,
 							["serial"] = "Player-4474-03995BCB",
 							["pvp"] = true,
@@ -17188,7 +17807,7 @@ _detalhes_database = {
 						}, -- [25]
 						{
 							["fight_component"] = true,
-							["aID"] = "4474-02506FC0",
+							["classe"] = "UNGROUPPLAYER",
 							["pvp_component"] = true,
 							["flag_original"] = 1352,
 							["nome"] = "Готян-Пламегор",
@@ -17199,14 +17818,14 @@ _detalhes_database = {
 							["spell_cast"] = {
 								[33662] = 1,
 								[55359] = 4,
-								[1953] = 1,
-								[33938] = 1,
-								[48108] = 1,
 								[27074] = 2,
+								[1953] = 1,
+								[48108] = 1,
+								[33938] = 1,
 							},
-							["tipo"] = 4,
 							["last_event"] = 0,
-							["classe"] = "UNGROUPPLAYER",
+							["tipo"] = 4,
+							["aID"] = "4474-02506FC0",
 							["serial"] = "Player-4474-02506FC0",
 							["pvp"] = true,
 						}, -- [26]
@@ -17508,7 +18127,7 @@ _detalhes_database = {
 						}, -- [33]
 						{
 							["fight_component"] = true,
-							["aID"] = "4474-04A9CC5B",
+							["classe"] = "UNGROUPPLAYER",
 							["pvp_component"] = true,
 							["flag_original"] = 1352,
 							["nome"] = "Сварт-Пламегор",
@@ -17521,9 +18140,9 @@ _detalhes_database = {
 								[11578] = 1,
 								[1715] = 1,
 							},
-							["tipo"] = 4,
 							["last_event"] = 0,
-							["classe"] = "UNGROUPPLAYER",
+							["tipo"] = 4,
+							["aID"] = "4474-04A9CC5B",
 							["serial"] = "Player-4474-04A9CC5B",
 							["pvp"] = true,
 						}, -- [34]
@@ -18139,15 +18758,15 @@ _detalhes_database = {
 							["Calmyboy-MirageRaceway"] = 4959.005056,
 							["Готян-Пламегор"] = 16232.025655,
 							["Рубежж-Пламегор"] = 742.0249620000001,
-							["Сварт-Пламегор"] = 901.010485,
+							["Maivi-Giantstalker"] = 19615.001139,
 							["Дарелос-Пламегор"] = 0.003511,
 							["Кейналай-Пламегор"] = 0.011502,
-							["Fatsnack-Mandokir"] = 20232.002501,
-							["Небославян-Пламегор"] = 0.001283,
-							["Maivi-Giantstalker"] = 19615.001139,
-							["Purpplehaze-Auberdine"] = 15684.044618,
 							["Moolatz"] = 0.003581,
+							["Сварт-Пламегор"] = 901.010485,
+							["Небославян-Пламегор"] = 0.001283,
+							["Purpplehaze-Auberdine"] = 15684.044618,
 							["Memoria-Auberdine"] = 21560.0052,
+							["Fatsnack-Mandokir"] = 20232.002501,
 						}, -- [1]
 					},
 				},
@@ -18156,14 +18775,14 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Airforceone-MirageRaceway"] = true,
 					["Calmyboy-MirageRaceway"] = true,
-					["Fatsnack-Mandokir"] = true,
-					["Altarpain-MirageRaceway"] = true,
 					["Moolatz"] = true,
+					["Memoria-Auberdine"] = true,
+					["Fatsnack-Mandokir"] = true,
 					["Maivi-Giantstalker"] = true,
 					["Bopshop-Ashbringer"] = true,
 					["Boopa-Venoxis"] = true,
 					["Purpplehaze-Auberdine"] = true,
-					["Memoria-Auberdine"] = true,
+					["Altarpain-MirageRaceway"] = true,
 				},
 				["resincked"] = true,
 				["data_inicio"] = "21:50:27",
@@ -18559,7 +19178,7 @@ _detalhes_database = {
 					["Шерифдуфи-Пламегор"] = 1,
 					["Белтико"] = 1,
 				},
-			}, -- [12]
+			}, -- [13]
 			{
 				{
 					["tipo"] = 2,
@@ -18750,9 +19369,9 @@ _detalhes_database = {
 							["flag_original"] = 1298,
 							["totalabsorbed"] = 2860.005003,
 							["damage_from"] = {
+								["Белтико"] = true,
 								["Молимся-Пламегор"] = true,
 								["Рубежж-Пламегор"] = true,
-								["Белтико"] = true,
 							},
 							["targets"] = {
 								["Шерифдуфи-Пламегор"] = 801,
@@ -18785,9 +19404,9 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 531,
 										["targets"] = {
-											["Шерифдуфи-Пламегор"] = 478,
 											["Рубежж-Пламегор"] = 1061,
 											["Белтико"] = 1061,
+											["Шерифдуфи-Пламегор"] = 478,
 											["Небославян-Пламегор"] = 266,
 										},
 										["n_dmg"] = 2866,
@@ -19137,7 +19756,7 @@ _detalhes_database = {
 								"Grr <Memoria-Auberdine>", -- [1]
 							},
 							["on_hold"] = false,
-							["delay"] = 1667249393,
+							["serial"] = "Player-4441-039BA4F5",
 							["classe"] = "HUNTER",
 							["raid_targets"] = {
 							},
@@ -19147,7 +19766,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["dps_started"] = false,
 							["total"] = 201.003355,
-							["serial"] = "Player-4441-039BA4F5",
+							["pvp_component"] = true,
 							["aID"] = "4441-039BA4F5",
 							["nome"] = "Memoria-Auberdine",
 							["spells"] = {
@@ -19163,7 +19782,7 @@ _detalhes_database = {
 							["tipo"] = 1,
 							["last_dps"] = 67.00111833333334,
 							["start_time"] = 1667249409,
-							["pvp_component"] = true,
+							["delay"] = 1667249393,
 							["pvp"] = true,
 						}, -- [4]
 						{
@@ -19176,19 +19795,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Player-4811-0394EED3",
-							["damage_taken"] = 1038.007588,
+							["pvp_component"] = true,
+							["last_dps"] = 0.0007588,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.007588,
-							["friendlyfire"] = {
-							},
-							["pvp_component"] = true,
+							["on_hold"] = false,
+							["delay"] = 0,
 							["dps_started"] = false,
 							["total"] = 0.007588,
 							["aID"] = "4811-0394EED3",
-							["last_dps"] = 0.0007588,
+							["damage_taken"] = 1038.007588,
 							["nome"] = "Maivi-Giantstalker",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -19201,9 +19819,10 @@ _detalhes_database = {
 							["custom"] = 0,
 							["colocacao"] = 5,
 							["last_event"] = 0,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1667249410,
-							["delay"] = 0,
+							["serial"] = "Player-4811-0394EED3",
 							["classe"] = "MAGE",
 						}, -- [5]
 						{
@@ -19216,19 +19835,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Player-4465-02B843FA",
-							["damage_taken"] = 6537.001696,
+							["pvp_component"] = true,
+							["last_dps"] = 0.0001696,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.001696,
-							["friendlyfire"] = {
-							},
-							["pvp_component"] = true,
+							["on_hold"] = false,
+							["delay"] = 0,
 							["dps_started"] = false,
 							["total"] = 0.001696,
 							["aID"] = "4465-02B843FA",
-							["last_dps"] = 0.0001696,
+							["damage_taken"] = 6537.001696,
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -19241,9 +19859,10 @@ _detalhes_database = {
 							["custom"] = 0,
 							["colocacao"] = 6,
 							["last_event"] = 0,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1667249410,
-							["delay"] = 0,
+							["serial"] = "Player-4465-02B843FA",
 							["classe"] = "DRUID",
 						}, -- [6]
 						{
@@ -20230,17 +20849,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["aID"] = "",
+							["last_dps"] = 0,
 							["classe"] = "UNKNOW",
-							["damage_taken"] = 0.007098,
-							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 314.007098,
-							["aID"] = "",
-							["delay"] = 1667249403,
+							["friendlyfire_total"] = 0,
+							["pvp_component"] = true,
 							["dps_started"] = false,
 							["total"] = 314.007098,
-							["on_hold"] = false,
+							["damage_taken"] = 0.007098,
 							["fight_component"] = true,
 							["nome"] = "Environment (Falling)",
 							["spells"] = {
@@ -20278,12 +20897,12 @@ _detalhes_database = {
 							},
 							["end_time"] = 1667249410,
 							["tipo"] = 1,
+							["delay"] = 1667249403,
 							["friendlyfire"] = {
 							},
-							["pvp_component"] = true,
 							["custom"] = 0,
 							["last_event"] = 1667249403,
-							["last_dps"] = 0,
+							["on_hold"] = false,
 							["start_time"] = 1667249409,
 							["serial"] = "",
 							["pvp"] = true,
@@ -20300,7 +20919,7 @@ _detalhes_database = {
 							["delay"] = 1667249407,
 							["pets"] = {
 							},
-							["last_dps"] = 0,
+							["damage_taken"] = 3232.007489,
 							["classe"] = "PET",
 							["aID"] = "Pet-0-4468-489-4518-1860-0400751FD7",
 							["raid_targets"] = {
@@ -20308,9 +20927,8 @@ _detalhes_database = {
 							["total_without_pet"] = 303.007489,
 							["fight_component"] = true,
 							["dps_started"] = false,
-							["total"] = 303.007489,
-							["friendlyfire"] = {
-							},
+							["end_time"] = 1667249410,
+							["last_dps"] = 0,
 							["tipo"] = 1,
 							["nome"] = "Белтико",
 							["spells"] = {
@@ -20372,12 +20990,13 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["end_time"] = 1667249410,
-							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["total"] = 303.007489,
 							["custom"] = 0,
 							["last_event"] = 1667249407,
-							["damage_taken"] = 3232.007489,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1667249409,
 							["pvp_component"] = true,
 							["serial"] = "Pet-0-4468-489-4518-1860-0400751FD7",
@@ -20393,14 +21012,14 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Pet-0-4468-489-4518-25675-080076B350",
+							["delay"] = 1667249393,
 							["last_dps"] = 0,
 							["classe"] = "PET",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 201.005541,
 							["aID"] = "Pet-0-4468-489-4518-25675-080076B350",
-							["delay"] = 1667249393,
+							["pvp_component"] = true,
 							["dps_started"] = false,
 							["total"] = 201.005541,
 							["friendlyfire_total"] = 0,
@@ -20477,7 +21096,7 @@ _detalhes_database = {
 							["friendlyfire"] = {
 							},
 							["start_time"] = 1667249409,
-							["pvp_component"] = true,
+							["serial"] = "Pet-0-4468-489-4518-25675-080076B350",
 							["pvp"] = true,
 						}, -- [15]
 						{
@@ -20732,8 +21351,9 @@ _detalhes_database = {
 							["healing_taken"] = 0.0084,
 							["fight_component"] = true,
 							["end_time"] = 1667249410,
-							["aID"] = "4742-03A8E3B9",
 							["pvp_component"] = true,
+							["healing_from"] = {
+							},
 							["nome"] = "Bopshop-Ashbringer",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -20758,9 +21378,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 2489,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 2489,
 										["absorbed"] = 0,
 									},
 									[53653] = {
@@ -20783,9 +21403,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 									[27137] = {
@@ -20808,9 +21428,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 1045,
 										["c_curado"] = 3568,
+										["n_curado"] = 568,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 568,
 										["absorbed"] = 0,
 									},
 									[53654] = {
@@ -20833,9 +21453,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -20849,8 +21469,7 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249409,
 							["delay"] = 1667249405,
-							["healing_from"] = {
-							},
+							["aID"] = "4742-03A8E3B9",
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
@@ -20880,8 +21499,10 @@ _detalhes_database = {
 							["healing_taken"] = 3498.005918,
 							["fight_component"] = true,
 							["end_time"] = 1667249410,
-							["aID"] = "4477-02CA9A6D",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Boopa-Venoxis"] = true,
+							},
 							["nome"] = "Boopa-Venoxis",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -20904,9 +21525,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 3498,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 3498,
 										["absorbed"] = 0,
 									},
 								},
@@ -20920,9 +21541,7 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249409,
 							["delay"] = 1667249399,
-							["healing_from"] = {
-								["Boopa-Venoxis"] = true,
-							},
+							["aID"] = "4477-02CA9A6D",
 						}, -- [2]
 						{
 							["flag_original"] = 1352,
@@ -20953,8 +21572,10 @@ _detalhes_database = {
 							["healing_taken"] = 3076.00463,
 							["fight_component"] = true,
 							["end_time"] = 1667249410,
-							["aID"] = "4474-047E5D59",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Кейналай-Пламегор"] = true,
+							},
 							["nome"] = "Кейналай-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -20977,9 +21598,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 3076,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 3076,
 										["absorbed"] = 0,
 									},
 								},
@@ -20993,9 +21614,7 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249409,
 							["delay"] = 1667249385,
-							["healing_from"] = {
-								["Кейналай-Пламегор"] = true,
-							},
+							["aID"] = "4474-047E5D59",
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
@@ -21028,8 +21647,11 @@ _detalhes_database = {
 							["healing_taken"] = 2130.006704,
 							["fight_component"] = true,
 							["end_time"] = 1667249410,
-							["aID"] = "4441-027C4C2D",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Purpplehaze-Auberdine"] = true,
+								["Bopshop-Ashbringer"] = true,
+							},
 							["nome"] = "Purpplehaze-Auberdine",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -21053,9 +21675,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 10,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 									[47893] = {
@@ -21078,9 +21700,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 776,
 										["totaldenied"] = 0,
 										["n_amt"] = 5,
-										["n_curado"] = 776,
 										["absorbed"] = 0,
 									},
 								},
@@ -21094,10 +21716,7 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249404,
 							["delay"] = 1667249407,
-							["healing_from"] = {
-								["Purpplehaze-Auberdine"] = true,
-								["Bopshop-Ashbringer"] = true,
-							},
+							["aID"] = "4441-027C4C2D",
 						}, -- [4]
 						{
 							["flag_original"] = 1300,
@@ -21125,8 +21744,10 @@ _detalhes_database = {
 							["healing_taken"] = 5271.006694,
 							["fight_component"] = true,
 							["end_time"] = 1667249410,
-							["aID"] = "4454-044931B8",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Bopshop-Ashbringer"] = true,
+							},
 							["nome"] = "Airforceone-MirageRaceway",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -21141,9 +21762,7 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249410,
 							["delay"] = 0,
-							["healing_from"] = {
-								["Bopshop-Ashbringer"] = true,
-							},
+							["aID"] = "4454-044931B8",
 						}, -- [5]
 						{
 							["flag_original"] = 1300,
@@ -21172,8 +21791,9 @@ _detalhes_database = {
 							["totalover_without_pet"] = 0.00633,
 							["healing_taken"] = 0.00633,
 							["end_time"] = 1667249410,
-							["aID"] = "4441-039BA4F5",
 							["pvp_component"] = true,
+							["healing_from"] = {
+							},
 							["nome"] = "Memoria-Auberdine",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -21188,8 +21808,7 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249408,
 							["delay"] = 1667249391,
-							["healing_from"] = {
-							},
+							["aID"] = "4441-039BA4F5",
 						}, -- [6]
 						{
 							["flag_original"] = 4370,
@@ -21287,9 +21906,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -22151,8 +22770,8 @@ _detalhes_database = {
 							["enemy"] = true,
 							["pets"] = {
 							},
-							["aID"] = "4474-049F3E8D",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["classe"] = "UNGROUPPLAYER",
 							["spell_cast"] = {
 								[50212] = 1,
@@ -22160,7 +22779,7 @@ _detalhes_database = {
 								[48571] = 1,
 							},
 							["pvp_component"] = true,
-							["last_event"] = 0,
+							["aID"] = "4474-049F3E8D",
 						}, -- [7]
 						{
 							["flag_original"] = 1352,
@@ -22416,14 +23035,14 @@ _detalhes_database = {
 							["enemy"] = true,
 							["pets"] = {
 							},
-							["aID"] = "4474-04A9CC5B",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["classe"] = "UNGROUPPLAYER",
 							["spell_cast"] = {
 								[7384] = 1,
 							},
 							["pvp_component"] = true,
-							["last_event"] = 0,
+							["aID"] = "4474-04A9CC5B",
 						}, -- [11]
 						{
 							["flag_original"] = 1300,
@@ -22813,8 +23432,8 @@ _detalhes_database = {
 						}, -- [15]
 						{
 							["flag_original"] = 1352,
-							["aID"] = "4474-047E5D59",
 							["classe"] = "UNGROUPPLAYER",
+							["aID"] = "4474-047E5D59",
 							["fight_component"] = true,
 							["nome"] = "Кейналай-Пламегор",
 							["grupo"] = true,
@@ -22826,8 +23445,8 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["serial"] = "Player-4474-047E5D59",
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["pvp_component"] = true,
 							["pvp"] = true,
 						}, -- [16]
@@ -22854,10 +23473,10 @@ _detalhes_database = {
 							["nome"] = "Рубежж-Пламегор",
 							["grupo"] = true,
 							["spell_cast"] = {
-								[27211] = 1,
-								[27216] = 1,
-								[27223] = 1,
 								[27217] = 2,
+								[27216] = 1,
+								[27211] = 1,
+								[27223] = 1,
 							},
 							["cc_done_targets"] = {
 								["Boopa-Venoxis"] = 1,
@@ -23857,14 +24476,14 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Airforceone-MirageRaceway"] = true,
 					["Calmyboy-MirageRaceway"] = true,
-					["Memoria-Auberdine"] = true,
+					["Altarpain-MirageRaceway"] = true,
 					["Purpplehaze-Auberdine"] = true,
-					["Fatsnack-Mandokir"] = true,
+					["Moolatz"] = true,
 					["Maivi-Giantstalker"] = true,
 					["Boopa-Venoxis"] = true,
 					["Bopshop-Ashbringer"] = true,
-					["Moolatz"] = true,
-					["Altarpain-MirageRaceway"] = true,
+					["Fatsnack-Mandokir"] = true,
+					["Memoria-Auberdine"] = true,
 				},
 				["TimeData"] = {
 				},
@@ -23911,7 +24530,7 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-			}, -- [13]
+			}, -- [14]
 			{
 				{
 					["tipo"] = 2,
@@ -23929,17 +24548,17 @@ _detalhes_database = {
 							["last_event"] = 1667249348,
 							["pets"] = {
 							},
-							["last_dps"] = 1138.000939142857,
-							["delay"] = 1667249348,
-							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["pvp_component"] = true,
+							["aID"] = "4813-044A8ED2",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 7966.006574,
-							["pvp_component"] = true,
-							["classe"] = "MAGE",
+							["serial"] = "Player-4813-044A8ED2",
+							["friendlyfire_total"] = 0,
 							["fight_component"] = true,
 							["total"] = 7966.006574,
-							["aID"] = "4813-044A8ED2",
+							["classe"] = "MAGE",
 							["dps_started"] = false,
 							["nome"] = "Fatsnack-Mandokir",
 							["spells"] = {
@@ -24116,15 +24735,15 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
 							["damage_taken"] = 0.006574,
 							["colocacao"] = 1,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["last_dps"] = 1138.000939142857,
 							["start_time"] = 1667249347,
-							["serial"] = "Player-4813-044A8ED2",
+							["delay"] = 1667249348,
 							["pvp"] = true,
 						}, -- [1]
 						{
@@ -24343,25 +24962,25 @@ _detalhes_database = {
 								["Шерифдуфи-Пламегор"] = true,
 							},
 							["targets"] = {
+								["Молимся-Пламегор"] = 1681,
 								["Рубежж-Пламегор"] = 1855,
 								["Шерифдуфи-Пламегор"] = 680,
-								["Молимся-Пламегор"] = 1681,
 							},
 							["last_event"] = 1667249361,
 							["pets"] = {
 								"Grr <Memoria-Auberdine>", -- [1]
 							},
-							["damage_taken"] = 9663.008033,
-							["delay"] = 1667249358,
-							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["serial"] = "Player-4441-039BA4F5",
+							["classe"] = "HUNTER",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3513.008033,
-							["serial"] = "Player-4441-039BA4F5",
-							["aID"] = "4441-039BA4F5",
+							["pvp_component"] = true,
+							["friendlyfire_total"] = 0,
 							["fight_component"] = true,
 							["total"] = 4216.008033,
-							["classe"] = "HUNTER",
+							["aID"] = "4441-039BA4F5",
 							["dps_started"] = false,
 							["nome"] = "Memoria-Auberdine",
 							["spells"] = {
@@ -24567,15 +25186,15 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["last_dps"] = 281.0672022,
 							["custom"] = 0,
 							["friendlyfire"] = {
 							},
 							["colocacao"] = 3,
 							["tipo"] = 1,
-							["last_dps"] = 281.0672022,
+							["damage_taken"] = 9663.008033,
 							["start_time"] = 1667249348,
-							["pvp_component"] = true,
+							["delay"] = 1667249358,
 							["pvp"] = true,
 						}, -- [3]
 						{
@@ -24954,7 +25573,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["last_dps"] = 0.002993,
-							["serial"] = "Player-4474-03995BCB",
+							["pvp_component"] = true,
 							["aID"] = "4474-03995BCB",
 							["raid_targets"] = {
 							},
@@ -24964,7 +25583,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1667249354,
-							["pvp_component"] = true,
+							["delay"] = 0,
 							["classe"] = "UNGROUPPLAYER",
 							["nome"] = "Дарелос-Пламегор",
 							["spells"] = {
@@ -25032,7 +25651,7 @@ _detalhes_database = {
 							["tipo"] = 1,
 							["on_hold"] = false,
 							["start_time"] = 1667249354,
-							["delay"] = 0,
+							["serial"] = "Player-4474-03995BCB",
 							["pvp"] = true,
 						}, -- [6]
 						{
@@ -25088,14 +25707,14 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["pvp_component"] = true,
+							["delay"] = 0,
 							["on_hold"] = false,
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.006779,
 							["aID"] = "4477-02CA9A6D",
-							["delay"] = 0,
+							["serial"] = "Player-4477-02CA9A6D",
 							["dps_started"] = false,
 							["total"] = 0.006779,
 							["friendlyfire_total"] = 0,
@@ -25115,7 +25734,7 @@ _detalhes_database = {
 							["tipo"] = 1,
 							["damage_taken"] = 571.006779,
 							["start_time"] = 1667249354,
-							["serial"] = "Player-4477-02CA9A6D",
+							["pvp_component"] = true,
 							["pvp"] = true,
 						}, -- [8]
 						{
@@ -25129,7 +25748,8 @@ _detalhes_database = {
 							["serial"] = "Player-4811-0394EED3",
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["aID"] = "4811-0394EED3",
 							["classe"] = "MAGE",
 							["raid_targets"] = {
@@ -25138,8 +25758,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1667249363,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 100.004547,
 							["last_event"] = 0,
 							["nome"] = "Maivi-Giantstalker",
 							["spells"] = {
@@ -25152,7 +25771,7 @@ _detalhes_database = {
 							["total"] = 0.004547,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 100.004547,
+							["on_hold"] = false,
 							["start_time"] = 1667249363,
 							["delay"] = 0,
 							["pvp"] = true,
@@ -25169,7 +25788,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["last_dps"] = 0.001498,
-							["serial"] = "Player-4474-04A803F9",
+							["pvp_component"] = true,
 							["aID"] = "4474-04A803F9",
 							["raid_targets"] = {
 							},
@@ -25179,7 +25798,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1667249354,
-							["pvp_component"] = true,
+							["delay"] = 0,
 							["classe"] = "PALADIN",
 							["nome"] = "Небославян-Пламегор",
 							["spells"] = {
@@ -25247,7 +25866,7 @@ _detalhes_database = {
 							["tipo"] = 1,
 							["on_hold"] = false,
 							["start_time"] = 1667249354,
-							["delay"] = 0,
+							["serial"] = "Player-4474-04A803F9",
 							["pvp"] = true,
 						}, -- [10]
 						{
@@ -25262,18 +25881,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["classe"] = "UNKNOW",
+							["delay"] = 1667249355,
 							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["aID"] = "",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1803.003701,
-							["classe"] = "UNKNOW",
+							["aID"] = "",
 							["serial"] = "",
 							["fight_component"] = true,
 							["end_time"] = 1667249363,
-							["last_dps"] = 0,
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["nome"] = "Environment (Falling)",
 							["spells"] = {
@@ -25313,19 +25931,20 @@ _detalhes_database = {
 							},
 							["total"] = 1803.003701,
 							["last_event"] = 1667249355,
-							["pvp_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["damage_taken"] = 0.003701,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 0.003701,
+							["last_dps"] = 0,
 							["start_time"] = 1667249360,
-							["delay"] = 1667249355,
+							["pvp_component"] = true,
 							["pvp"] = true,
 						}, -- [11]
 						{
 							["flag_original"] = 4372,
 							["totalabsorbed"] = 146.004343,
-							["friendlyfire_total"] = 0,
+							["end_time"] = 1667249354,
 							["damage_from"] = {
 								["Шерифдуфи-Пламегор"] = true,
 								["Рубежж-Пламегор"] = true,
@@ -25346,7 +25965,7 @@ _detalhes_database = {
 							},
 							["classe"] = "PET",
 							["fight_component"] = true,
-							["end_time"] = 1667249354,
+							["total"] = 703.0043430000001,
 							["serial"] = "Pet-0-4468-489-4518-25675-070076B350",
 							["ownerName"] = "Memoria-Auberdine",
 							["nome"] = "Grr <Memoria-Auberdine>",
@@ -25413,8 +26032,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
+							["friendlyfire_total"] = 0,
 							["dps_started"] = false,
-							["total"] = 703.0043430000001,
 							["last_event"] = 1667249351,
 							["damage_taken"] = 941.0043430000001,
 							["custom"] = 0,
@@ -25463,10 +26082,10 @@ _detalhes_database = {
 							["healing_taken"] = 680.003873,
 							["fight_component"] = true,
 							["end_time"] = 1667249354,
-							["pvp_component"] = true,
 							["healing_from"] = {
 								["Шерифдуфи-Пламегор"] = true,
 							},
+							["aID"] = "4474-04B5FDAC",
 							["nome"] = "Шерифдуфи-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -25492,9 +26111,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 1117,
 										["c_curado"] = 1117,
+										["n_amt"] = 1,
 										["n_curado"] = 534,
 										["totaldenied"] = 0,
-										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 									[53653] = {
@@ -25517,9 +26136,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 1,
 										["n_curado"] = 0,
 										["totaldenied"] = 0,
-										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 									[27137] = {
@@ -25542,9 +26161,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 1,
 										["n_curado"] = 0,
 										["totaldenied"] = 0,
-										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 									[55019] = {
@@ -25567,9 +26186,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["n_amt"] = 1,
 										["n_curado"] = 146,
 										["totaldenied"] = 0,
+										["n_amt"] = 1,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -25593,9 +26212,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 1,
 										["n_curado"] = 0,
 										["totaldenied"] = 0,
-										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 								},
@@ -25609,7 +26228,7 @@ _detalhes_database = {
 							["last_event"] = 1667249351,
 							["totaldenied"] = 0.003873,
 							["delay"] = 1667249351,
-							["aID"] = "4474-04B5FDAC",
+							["pvp_component"] = true,
 						}, -- [1]
 						{
 							["flag_original"] = 1352,
@@ -25642,12 +26261,12 @@ _detalhes_database = {
 							["healing_taken"] = 1681.004775,
 							["fight_component"] = true,
 							["end_time"] = 1667249354,
-							["pvp_component"] = true,
 							["healing_from"] = {
 								["Молимся-Пламегор"] = true,
 								["Шерифдуфи-Пламегор"] = true,
 								["Небославян-Пламегор"] = true,
 							},
+							["aID"] = "4474-04B16B28",
 							["nome"] = "Молимся-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -25672,9 +26291,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 17,
 										["n_curado"] = 344,
 										["totaldenied"] = 0,
-										["n_amt"] = 17,
 										["absorbed"] = 0,
 									},
 									[48299] = {
@@ -25697,9 +26316,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 4,
 										["n_curado"] = 172,
 										["totaldenied"] = 0,
-										["n_amt"] = 4,
 										["absorbed"] = 0,
 									},
 								},
@@ -25713,7 +26332,7 @@ _detalhes_database = {
 							["last_event"] = 1667249351,
 							["totaldenied"] = 0.004775,
 							["delay"] = 1667249351,
-							["aID"] = "4474-04B16B28",
+							["pvp_component"] = true,
 						}, -- [2]
 						{
 							["flag_original"] = 1352,
@@ -25744,10 +26363,10 @@ _detalhes_database = {
 							["healing_taken"] = 462.001456,
 							["fight_component"] = true,
 							["end_time"] = 1667249354,
-							["pvp_component"] = true,
 							["healing_from"] = {
 								["Дарелос-Пламегор"] = true,
 							},
+							["aID"] = "4474-03995BCB",
 							["nome"] = "Дарелос-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -25770,9 +26389,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 2,
 										["n_curado"] = 462,
 										["totaldenied"] = 0,
-										["n_amt"] = 2,
 										["absorbed"] = 0,
 									},
 								},
@@ -25786,7 +26405,7 @@ _detalhes_database = {
 							["last_event"] = 1667249351,
 							["totaldenied"] = 0.001456,
 							["delay"] = 1667249351,
-							["aID"] = "4474-03995BCB",
+							["pvp_component"] = true,
 						}, -- [3]
 						{
 							["flag_original"] = 1300,
@@ -25816,9 +26435,9 @@ _detalhes_database = {
 							["totalover_without_pet"] = 0.005091,
 							["healing_taken"] = 0.005091,
 							["end_time"] = 1667249354,
-							["pvp_component"] = true,
 							["healing_from"] = {
 							},
+							["aID"] = "4441-039BA4F5",
 							["nome"] = "Memoria-Auberdine",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -25833,7 +26452,7 @@ _detalhes_database = {
 							["last_event"] = 1667249347,
 							["totaldenied"] = 0.005091,
 							["delay"] = 1667249347,
-							["aID"] = "4441-039BA4F5",
+							["pvp_component"] = true,
 						}, -- [4]
 						{
 							["flag_original"] = 1352,
@@ -25864,10 +26483,10 @@ _detalhes_database = {
 							["healing_taken"] = 124.002944,
 							["fight_component"] = true,
 							["end_time"] = 1667249354,
-							["pvp_component"] = true,
 							["healing_from"] = {
 								["Рубежж-Пламегор"] = true,
 							},
+							["aID"] = "4474-04A80422",
 							["nome"] = "Рубежж-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -25890,9 +26509,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 1,
 										["n_curado"] = 124,
 										["totaldenied"] = 0,
-										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 								},
@@ -25906,7 +26525,7 @@ _detalhes_database = {
 							["last_event"] = 1667249351,
 							["totaldenied"] = 0.002944,
 							["delay"] = 1667249351,
-							["aID"] = "4474-04A80422",
+							["pvp_component"] = true,
 						}, -- [5]
 						{
 							["flag_original"] = 1352,
@@ -25963,9 +26582,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 72,
 										["c_curado"] = 72,
+										["n_amt"] = 0,
 										["n_curado"] = 0,
 										["totaldenied"] = 0,
-										["n_amt"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -26011,10 +26630,10 @@ _detalhes_database = {
 							["healing_taken"] = 24.004169,
 							["fight_component"] = true,
 							["end_time"] = 1667249354,
-							["pvp_component"] = true,
 							["healing_from"] = {
 								["Молимся-Пламегор"] = true,
 							},
+							["aID"] = "4474-04B74E61",
 							["nome"] = "Ницшеподлсд-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -26029,7 +26648,7 @@ _detalhes_database = {
 							["last_event"] = 0,
 							["totaldenied"] = 0.004169,
 							["delay"] = 0,
-							["aID"] = "4474-04B74E61",
+							["pvp_component"] = true,
 						}, -- [7]
 						{
 							["flag_original"] = 1298,
@@ -26058,9 +26677,9 @@ _detalhes_database = {
 							["totalover_without_pet"] = 0.004031,
 							["healing_taken"] = 0.004031,
 							["end_time"] = 1667249354,
-							["pvp_component"] = true,
 							["healing_from"] = {
 							},
+							["aID"] = "4441-027C4C2D",
 							["nome"] = "Purpplehaze-Auberdine",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -26084,9 +26703,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 2,
 										["n_curado"] = 0,
 										["totaldenied"] = 0,
-										["n_amt"] = 2,
 										["absorbed"] = 0,
 									},
 								},
@@ -26100,7 +26719,7 @@ _detalhes_database = {
 							["last_event"] = 1667249347,
 							["totaldenied"] = 0.004031,
 							["delay"] = 1667249347,
-							["aID"] = "4441-027C4C2D",
+							["pvp_component"] = true,
 						}, -- [8]
 						{
 							["flag_original"] = 4372,
@@ -26130,7 +26749,9 @@ _detalhes_database = {
 							["healing_taken"] = 157.00169,
 							["fight_component"] = true,
 							["end_time"] = 1667249354,
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Grr <Memoria-Auberdine>"] = true,
+							},
 							["ownerName"] = "Memoria-Auberdine",
 							["nome"] = "Grr <Memoria-Auberdine>",
 							["spells"] = {
@@ -26155,17 +26776,15 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 5,
 										["n_curado"] = 157,
 										["totaldenied"] = 0,
-										["n_amt"] = 5,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
-							["healing_from"] = {
-								["Grr <Memoria-Auberdine>"] = true,
-							},
+							["classe"] = "PET",
 							["start_time"] = 1667249349,
 							["aID"] = "Pet-0-4468-489-4518-25675-070076B350",
 							["custom"] = 0,
@@ -26173,7 +26792,7 @@ _detalhes_database = {
 							["last_event"] = 1667249347,
 							["totaldenied"] = 0.00169,
 							["delay"] = 1667249347,
-							["classe"] = "PET",
+							["pvp_component"] = true,
 						}, -- [9]
 					},
 				}, -- [2]
@@ -26524,13 +27143,13 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[54861] = {
+									[43045] = {
 										["appliedamt"] = 1,
 										["targets"] = {
 										},
 										["activedamt"] = 1,
-										["uptime"] = 3,
-										["id"] = 54861,
+										["uptime"] = 12,
+										["id"] = 43045,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -26546,13 +27165,13 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[53755] = {
+									[54861] = {
 										["appliedamt"] = 1,
 										["targets"] = {
 										},
 										["activedamt"] = 1,
-										["uptime"] = 12,
-										["id"] = 53755,
+										["uptime"] = 3,
+										["id"] = 54861,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -26568,13 +27187,13 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[43045] = {
+									[53755] = {
 										["appliedamt"] = 1,
 										["targets"] = {
 										},
 										["activedamt"] = 1,
 										["uptime"] = 12,
-										["id"] = 43045,
+										["id"] = 53755,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -27038,7 +27657,7 @@ _detalhes_database = {
 						}, -- [9]
 						{
 							["fight_component"] = true,
-							["tipo"] = 4,
+							["last_event"] = 0,
 							["pvp_component"] = true,
 							["flag_original"] = 1352,
 							["nome"] = "Дарелос-Пламегор",
@@ -27050,15 +27669,15 @@ _detalhes_database = {
 								[19028] = 1,
 								[27250] = 1,
 							},
-							["classe"] = "UNGROUPPLAYER",
 							["aID"] = "4474-03995BCB",
-							["last_event"] = 0,
+							["classe"] = "UNGROUPPLAYER",
+							["tipo"] = 4,
 							["serial"] = "Player-4474-03995BCB",
 							["pvp"] = true,
 						}, -- [10]
 						{
 							["fight_component"] = true,
-							["tipo"] = 4,
+							["last_event"] = 0,
 							["pvp_component"] = true,
 							["flag_original"] = 1352,
 							["nome"] = "Шерифдуфи-Пламегор",
@@ -27073,9 +27692,9 @@ _detalhes_database = {
 								[33072] = 2,
 								[54757] = 1,
 							},
-							["classe"] = "UNGROUPPLAYER",
 							["aID"] = "4474-04B5FDAC",
-							["last_event"] = 0,
+							["classe"] = "UNGROUPPLAYER",
+							["tipo"] = 4,
 							["serial"] = "Player-4474-04B5FDAC",
 							["pvp"] = true,
 						}, -- [11]
@@ -27143,10 +27762,10 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "UNGROUPPLAYER",
-							["last_event"] = 0,
 							["aID"] = "4474-04B74E61",
-							["pvp_component"] = true,
 							["tipo"] = 4,
+							["pvp_component"] = true,
+							["last_event"] = 0,
 							["serial"] = "Player-4474-04B74E61",
 							["pvp"] = true,
 						}, -- [13]
@@ -27374,14 +27993,14 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Airforceone-MirageRaceway"] = true,
 					["Calmyboy-MirageRaceway"] = true,
-					["Altarpain-MirageRaceway"] = true,
-					["Moolatz"] = true,
 					["Memoria-Auberdine"] = true,
+					["Fatsnack-Mandokir"] = true,
+					["Altarpain-MirageRaceway"] = true,
 					["Maivi-Giantstalker"] = true,
 					["Bopshop-Ashbringer"] = true,
 					["Purpplehaze-Auberdine"] = true,
 					["Boopa-Venoxis"] = true,
-					["Fatsnack-Mandokir"] = true,
+					["Moolatz"] = true,
 				},
 				["raid_roster_indexed"] = {
 					"Airforceone-MirageRaceway", -- [1]
@@ -27829,7 +28448,7 @@ _detalhes_database = {
 					["name"] = "Warsong Gulch",
 					["mapid"] = 489,
 				},
-			}, -- [14]
+			}, -- [15]
 			{
 				{
 					["tipo"] = 2,
@@ -28440,21 +29059,22 @@ _detalhes_database = {
 								["Рубежж-Пламегор"] = 4796,
 								["Молимся-Пламегор"] = 518,
 							},
-							["total"] = 15766.003168,
+							["dps_started"] = false,
 							["pets"] = {
 							},
 							["on_hold"] = false,
-							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 15766.003168,
-							["delay"] = 1667249317,
-							["classe"] = "MAGE",
+							["damage_taken"] = 14850.003168,
+							["aID"] = "4477-02CA9A6D",
 							["fight_component"] = true,
 							["end_time"] = 1667249337,
-							["pvp_component"] = true,
-							["aID"] = "4477-02CA9A6D",
+							["delay"] = 1667249317,
+							["classe"] = "MAGE",
 							["nome"] = "Boopa-Venoxis",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -28465,9 +29085,9 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 531,
 										["targets"] = {
-											["Шерифдуфи-Пламегор"] = 478,
 											["Белтико"] = 530,
 											["Рубежж-Пламегор"] = 531,
+											["Шерифдуфи-Пламегор"] = 478,
 											["Небославян-Пламегор"] = 530,
 										},
 										["n_dmg"] = 2069,
@@ -28700,16 +29320,15 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
+							["total"] = 15766.003168,
 							["tipo"] = 1,
 							["colocacao"] = 3,
-							["damage_taken"] = 14850.003168,
 							["custom"] = 0,
 							["last_event"] = 1667249326,
 							["last_dps"] = 750.7620556190476,
 							["start_time"] = 1667249316,
 							["serial"] = "Player-4477-02CA9A6D",
-							["friendlyfire"] = {
-							},
+							["pvp_component"] = true,
 						}, -- [3]
 						{
 							["flag_original"] = 1300,
@@ -28726,23 +29345,22 @@ _detalhes_database = {
 								["Молимся-Пламегор"] = 6672,
 								["Сварт-Пламегор"] = 1746,
 							},
-							["end_time"] = 1667249314,
+							["fight_component"] = true,
 							["pets"] = {
 								"Grr <Memoria-Auberdine>", -- [1]
 							},
 							["damage_taken"] = 12303.005342,
-							["friendlyfire_total"] = 0,
+							["total"] = 9079.005342,
 							["aID"] = "4441-039BA4F5",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 8418.005342,
-							["friendlyfire"] = {
-							},
-							["classe"] = "HUNTER",
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
 							["dps_started"] = false,
-							["total"] = 9079.005342,
+							["end_time"] = 1667249314,
 							["delay"] = 1667249302,
-							["fight_component"] = true,
+							["classe"] = "HUNTER",
 							["nome"] = "Memoria-Auberdine",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -28979,13 +29597,14 @@ _detalhes_database = {
 							["grupo"] = true,
 							["tipo"] = 1,
 							["colocacao"] = 4,
-							["pvp_component"] = true,
+							["serial"] = "Player-4441-039BA4F5",
 							["custom"] = 0,
 							["last_event"] = 1667249302,
 							["last_dps"] = 756.5837785,
 							["start_time"] = 1667249302,
-							["serial"] = "Player-4441-039BA4F5",
-							["on_hold"] = false,
+							["pvp_component"] = true,
+							["friendlyfire"] = {
+							},
 						}, -- [4]
 						{
 							["flag_original"] = 1300,
@@ -29235,6 +29854,33 @@ _detalhes_database = {
 										["extra"] = {
 										},
 									},
+									[27173] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 129,
+										["targets"] = {
+											["Boopa-Venoxis"] = 643,
+										},
+										["n_dmg"] = 643,
+										["n_min"] = 128,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 643,
+										["c_max"] = 0,
+										["id"] = 27173,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
+									},
 									[53408] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -29250,32 +29896,6 @@ _detalhes_database = {
 										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = 53408,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[25898] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 25898,
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["b_dmg"] = 0,
@@ -29578,29 +30198,28 @@ _detalhes_database = {
 										["extra"] = {
 										},
 									},
-									[27173] = {
+									[25898] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 129,
+										["n_max"] = 0,
 										["targets"] = {
-											["Boopa-Venoxis"] = 643,
 										},
-										["n_dmg"] = 643,
-										["n_min"] = 128,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 643,
+										["counter"] = 0,
+										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = 27173,
+										["id"] = 25898,
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["b_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["a_amt"] = 0,
-										["n_amt"] = 5,
+										["n_amt"] = 0,
 										["a_dmg"] = 0,
 										["extra"] = {
 										},
@@ -29866,7 +30485,7 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Player-4454-044931B8",
+							["pvp_component"] = true,
 							["friendlyfire"] = {
 							},
 							["classe"] = "PALADIN",
@@ -29874,7 +30493,7 @@ _detalhes_database = {
 							},
 							["total_without_pet"] = 115.002515,
 							["friendlyfire_total"] = 0,
-							["pvp_component"] = true,
+							["delay"] = 1667249281,
 							["dps_started"] = false,
 							["total"] = 115.002515,
 							["aID"] = "4454-044931B8",
@@ -29921,7 +30540,7 @@ _detalhes_database = {
 							["last_event"] = 1667249281,
 							["on_hold"] = false,
 							["start_time"] = 1667249313,
-							["delay"] = 1667249281,
+							["serial"] = "Player-4454-044931B8",
 							["pvp"] = true,
 						}, -- [8]
 						{
@@ -30326,10 +30945,10 @@ _detalhes_database = {
 							["targets"] = {
 								["Дарелос-Пламегор"] = 2880,
 								["Fatsnack-Mandokir"] = 7248,
-								["Hathgarth <Purpplehaze-Auberdine>"] = 2408,
-								["Purpplehaze-Auberdine"] = 1600,
-								["Макнаке"] = 1401,
 								["Bopshop-Ashbringer"] = 4211,
+								["Hathgarth <Purpplehaze-Auberdine>"] = 2408,
+								["Макнаке"] = 1401,
+								["Purpplehaze-Auberdine"] = 1600,
 							},
 							["enemy"] = true,
 							["pets"] = {
@@ -31450,7 +32069,7 @@ _detalhes_database = {
 										["extra"] = {
 										},
 									},
-									[52610] = {
+									[48440] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
@@ -31464,7 +32083,7 @@ _detalhes_database = {
 										["counter"] = 0,
 										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = 52610,
+										["id"] = 48440,
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["b_dmg"] = 0,
@@ -31502,7 +32121,7 @@ _detalhes_database = {
 										["extra"] = {
 										},
 									},
-									[2782] = {
+									[52610] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
@@ -31516,7 +32135,7 @@ _detalhes_database = {
 										["counter"] = 0,
 										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = 2782,
+										["id"] = 52610,
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["b_dmg"] = 0,
@@ -31554,7 +32173,7 @@ _detalhes_database = {
 										["extra"] = {
 										},
 									},
-									[48440] = {
+									[2782] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
@@ -31568,7 +32187,7 @@ _detalhes_database = {
 										["counter"] = 0,
 										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = 48440,
+										["id"] = 2782,
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["b_dmg"] = 0,
@@ -31633,17 +32252,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["aID"] = "",
+							["friendlyfire"] = {
+							},
 							["classe"] = "UNKNOW",
-							["pvp_component"] = true,
-							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3318.001811,
-							["aID"] = "",
-							["delay"] = 1667249280,
+							["friendlyfire_total"] = 0,
+							["pvp_component"] = true,
 							["dps_started"] = false,
 							["total"] = 3318.001811,
-							["damage_taken"] = 0.001811,
+							["last_dps"] = 0,
 							["fight_component"] = true,
 							["nome"] = "Environment (Falling)",
 							["spells"] = {
@@ -31683,14 +32303,13 @@ _detalhes_database = {
 							},
 							["end_time"] = 1667249314,
 							["tipo"] = 1,
-							["on_hold"] = false,
-							["last_dps"] = 0,
+							["damage_taken"] = 0.001811,
+							["serial"] = "",
 							["custom"] = 0,
 							["last_event"] = 1667249280,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1667249312,
-							["serial"] = "",
+							["delay"] = 1667249280,
 							["pvp"] = true,
 						}, -- [15]
 						{
@@ -31708,7 +32327,7 @@ _detalhes_database = {
 							["delay"] = 1667249293,
 							["pets"] = {
 							},
-							["end_time"] = 1667249314,
+							["on_hold"] = false,
 							["aID"] = "Pet-0-4468-489-4518-1860-020057EDD8",
 							["classe"] = "PET",
 							["raid_targets"] = {
@@ -31717,7 +32336,7 @@ _detalhes_database = {
 							["fight_component"] = true,
 							["dps_started"] = false,
 							["total"] = 1951.001426,
-							["last_dps"] = 0,
+							["damage_taken"] = 8528.001425999999,
 							["tipo"] = 1,
 							["nome"] = "Макнаке",
 							["spells"] = {
@@ -31784,13 +32403,13 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["damage_taken"] = 8528.001425999999,
+							["end_time"] = 1667249314,
 							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1667249293,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1667249303,
 							["pvp_component"] = true,
 							["serial"] = "Pet-0-4468-489-4518-1860-020057EDD8",
@@ -31807,17 +32426,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["aID"] = "Pet-0-4468-489-4518-1860-0400751FD7",
+							["friendlyfire"] = {
+							},
 							["classe"] = "PET",
-							["pvp_component"] = true,
-							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1457.006655,
-							["aID"] = "Pet-0-4468-489-4518-1860-0400751FD7",
-							["delay"] = 1667249309,
+							["friendlyfire_total"] = 0,
+							["pvp_component"] = true,
 							["dps_started"] = false,
 							["total"] = 1457.006655,
-							["damage_taken"] = 1780.006655,
+							["last_dps"] = 0,
 							["fight_component"] = true,
 							["nome"] = "Белтико",
 							["spells"] = {
@@ -31883,14 +32503,13 @@ _detalhes_database = {
 							},
 							["end_time"] = 1667249314,
 							["tipo"] = 1,
-							["on_hold"] = false,
-							["last_dps"] = 0,
+							["damage_taken"] = 1780.006655,
+							["serial"] = "Pet-0-4468-489-4518-1860-0400751FD7",
 							["custom"] = 0,
 							["last_event"] = 1667249309,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1667249303,
-							["serial"] = "Pet-0-4468-489-4518-1860-0400751FD7",
+							["delay"] = 1667249309,
 							["pvp"] = true,
 						}, -- [17]
 						{
@@ -31906,17 +32525,17 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["on_hold"] = false,
+							["total"] = 1437.005392,
 							["classe"] = "PET",
-							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1437.005392,
-							["aID"] = "510",
-							["serial"] = "Creature-0-4468-489-4518-510-0000603468",
-							["fight_component"] = true,
-							["total"] = 1437.005392,
 							["friendlyfire"] = {
 							},
+							["aID"] = "510",
+							["fight_component"] = true,
+							["end_time"] = 1667249314,
+							["serial"] = "Creature-0-4468-489-4518-510-0000603468",
 							["ownerName"] = "Maivi-Giantstalker",
 							["nome"] = "Water Elemental <Maivi-Giantstalker>",
 							["spells"] = {
@@ -31953,8 +32572,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
+							["friendlyfire_total"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1667249314,
 							["pvp_component"] = true,
 							["damage_taken"] = 0.005392,
 							["custom"] = 0,
@@ -32101,14 +32720,14 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["pvp_component"] = true,
+							["serial"] = "Pet-0-4468-489-4518-1860-020049119C",
 							["damage_taken"] = 2941.001063,
 							["classe"] = "PET",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 837.0010629999999,
 							["aID"] = "Pet-0-4468-489-4518-1860-020049119C",
-							["serial"] = "Pet-0-4468-489-4518-1860-020049119C",
+							["delay"] = 1667249305,
 							["dps_started"] = false,
 							["total"] = 837.0010629999999,
 							["friendlyfire_total"] = 0,
@@ -32155,7 +32774,7 @@ _detalhes_database = {
 							["last_event"] = 1667249305,
 							["on_hold"] = false,
 							["start_time"] = 1667249311,
-							["delay"] = 1667249305,
+							["pvp_component"] = true,
 							["pvp"] = true,
 						}, -- [20]
 						{
@@ -32290,6 +32909,32 @@ _detalhes_database = {
 										["extra"] = {
 										},
 									},
+									[58984] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 58984,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
+									},
 									[53209] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -32313,32 +32958,6 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[3034] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 3034,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
 										["a_dmg"] = 0,
 										["extra"] = {
 										},
@@ -32370,7 +32989,7 @@ _detalhes_database = {
 										["extra"] = {
 										},
 									},
-									[58984] = {
+									[3034] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
@@ -32384,7 +33003,7 @@ _detalhes_database = {
 										["counter"] = 0,
 										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = 58984,
+										["id"] = 3034,
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["b_dmg"] = 0,
@@ -32416,9 +33035,9 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.002638,
 							["tipo"] = 1,
 							["damage_from"] = {
+								["Белтико"] = true,
 								["Рубежж-Пламегор"] = true,
 								["Молимся-Пламегор"] = true,
-								["Белтико"] = true,
 							},
 							["targets"] = {
 								["Рубежж-Пламегор"] = 661,
@@ -32701,11 +33320,8 @@ _detalhes_database = {
 							["healing_taken"] = 3019.006536,
 							["fight_component"] = true,
 							["end_time"] = 1667249314,
-							["healing_from"] = {
-								["Небославян-Пламегор"] = true,
-								["Кейналай-Пламегор"] = true,
-							},
 							["aID"] = "4474-047E5D59",
+							["pvp_component"] = true,
 							["nome"] = "Кейналай-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -32739,24 +33355,24 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 49,
 										["n_curado"] = 3476,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[26980] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
+											["Шерифдуфи-Пламегор"] = 1585,
 											["Молимся-Пламегор"] = 2410,
 											["Рубежж-Пламегор"] = 1935,
-											["Шерифдуфи-Пламегор"] = 1585,
 										},
 										["n_max"] = 964,
 										["targets"] = {
+											["Шерифдуфи-Пламегор"] = 453,
 											["Молимся-Пламегор"] = 1653,
 											["Рубежж-Пламегор"] = 0,
-											["Шерифдуфи-Пламегор"] = 453,
 										},
 										["n_min"] = 0,
 										["counter"] = 10,
@@ -32768,9 +33384,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 10,
 										["n_curado"] = 2106,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[26982] = {
@@ -32799,9 +33415,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 31,
 										["n_curado"] = 5825,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -32815,7 +33431,10 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249286,
 							["delay"] = 0,
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Небославян-Пламегор"] = true,
+								["Кейналай-Пламегор"] = true,
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 1300,
@@ -32849,10 +33468,8 @@ _detalhes_database = {
 							["healing_taken"] = 4966.006732,
 							["fight_component"] = true,
 							["end_time"] = 1667249314,
-							["healing_from"] = {
-								["Bopshop-Ashbringer"] = true,
-							},
 							["aID"] = "4742-03A8E3B9",
+							["pvp_component"] = true,
 							["nome"] = "Bopshop-Ashbringer",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -32878,9 +33495,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 863,
 										["c_curado"] = 2673,
+										["totaldenied"] = 0,
 										["n_amt"] = 1,
 										["n_curado"] = 2328,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[53653] = {
@@ -32903,9 +33520,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 2,
 										["n_curado"] = 0,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[27137] = {
@@ -32931,9 +33548,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 2502,
 										["c_curado"] = 2502,
+										["totaldenied"] = 0,
 										["n_amt"] = 4,
 										["n_curado"] = 3562,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[53654] = {
@@ -32956,9 +33573,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 1,
 										["n_curado"] = 136,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -32972,7 +33589,9 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249313,
 							["delay"] = 1667249308,
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Bopshop-Ashbringer"] = true,
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 1352,
@@ -33006,12 +33625,8 @@ _detalhes_database = {
 							["healing_taken"] = 10265.007561,
 							["fight_component"] = true,
 							["end_time"] = 1667249314,
-							["healing_from"] = {
-								["Кейналай-Пламегор"] = true,
-								["Молимся-Пламегор"] = true,
-								["Шерифдуфи-Пламегор"] = true,
-							},
 							["aID"] = "4474-04B16B28",
+							["pvp_component"] = true,
 							["nome"] = "Молимся-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -33035,9 +33650,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 3,
 										["n_curado"] = 72,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[15290] = {
@@ -33062,9 +33677,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 67,
 										["n_curado"] = 843,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[48299] = {
@@ -33087,9 +33702,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 7,
 										["n_curado"] = 224,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[48065] = {
@@ -33112,9 +33727,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["n_curado"] = 4067,
 										["totaldenied"] = 0,
 										["n_amt"] = 7,
+										["n_curado"] = 4067,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -33129,14 +33744,18 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249286,
 							["delay"] = 1667249294,
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Кейналай-Пламегор"] = true,
+								["Молимся-Пламегор"] = true,
+								["Шерифдуфи-Пламегор"] = true,
+							},
 						}, -- [3]
 						{
 							["flag_original"] = 1352,
 							["targets_overheal"] = {
+								["Шерифдуфи-Пламегор"] = 5524,
 								["Молимся-Пламегор"] = 278,
 								["Рубежж-Пламегор"] = 753,
-								["Шерифдуфи-Пламегор"] = 5524,
 							},
 							["pets"] = {
 							},
@@ -33156,21 +33775,17 @@ _detalhes_database = {
 							["totalabsorb"] = 0.00658,
 							["last_hps"] = 1611.002193333334,
 							["targets"] = {
+								["Шерифдуфи-Пламегор"] = 2375,
 								["Молимся-Пламегор"] = 1223,
 								["Рубежж-Пламегор"] = 1235,
-								["Шерифдуфи-Пламегор"] = 2375,
 							},
 							["enemy"] = true,
 							["totalover_without_pet"] = 0.00658,
 							["healing_taken"] = 4597.00658,
 							["fight_component"] = true,
 							["end_time"] = 1667249314,
-							["healing_from"] = {
-								["Кейналай-Пламегор"] = true,
-								["Шерифдуфи-Пламегор"] = true,
-								["Небославян-Пламегор"] = true,
-							},
 							["aID"] = "4474-04B5FDAC",
+							["pvp_component"] = true,
 							["nome"] = "Шерифдуфи-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -33196,9 +33811,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 1223,
 										["c_curado"] = 1223,
+										["totaldenied"] = 0,
 										["n_amt"] = 1,
 										["n_curado"] = 1235,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[53653] = {
@@ -33221,9 +33836,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 2,
 										["n_curado"] = 0,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[33074] = {
@@ -33246,9 +33861,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 1,
 										["n_curado"] = 2375,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -33262,7 +33877,11 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249313,
 							["delay"] = 1667249310,
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Кейналай-Пламегор"] = true,
+								["Шерифдуфи-Пламегор"] = true,
+								["Небославян-Пламегор"] = true,
+							},
 						}, -- [4]
 						{
 							["flag_original"] = 1300,
@@ -33293,9 +33912,8 @@ _detalhes_database = {
 							["healing_taken"] = 0.001219,
 							["fight_component"] = true,
 							["end_time"] = 1667249314,
-							["healing_from"] = {
-							},
 							["aID"] = "4454-044931B8",
+							["pvp_component"] = true,
 							["nome"] = "Airforceone-MirageRaceway",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -33318,9 +33936,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 3645,
 										["c_curado"] = 3645,
+										["totaldenied"] = 0,
 										["n_amt"] = 0,
 										["n_curado"] = 0,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[48784] = {
@@ -33343,9 +33961,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 1,
 										["n_curado"] = 791,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -33359,7 +33977,8 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249311,
 							["delay"] = 1667249285,
-							["pvp_component"] = true,
+							["healing_from"] = {
+							},
 						}, -- [5]
 						{
 							["flag_original"] = 1298,
@@ -33391,11 +34010,8 @@ _detalhes_database = {
 							["healing_taken"] = 4676.008083,
 							["fight_component"] = true,
 							["end_time"] = 1667249314,
-							["healing_from"] = {
-								["Purpplehaze-Auberdine"] = true,
-								["Bopshop-Ashbringer"] = true,
-							},
 							["aID"] = "4441-027C4C2D",
+							["pvp_component"] = true,
 							["nome"] = "Purpplehaze-Auberdine",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -33419,9 +34035,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 21,
 										["n_curado"] = 0,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[47893] = {
@@ -33444,9 +34060,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 10,
 										["n_curado"] = 3589,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -33460,7 +34076,10 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249290,
 							["delay"] = 1667249307,
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Purpplehaze-Auberdine"] = true,
+								["Bopshop-Ashbringer"] = true,
+							},
 						}, -- [6]
 						{
 							["flag_original"] = 1352,
@@ -33494,10 +34113,8 @@ _detalhes_database = {
 							["healing_taken"] = 2983.001613,
 							["fight_component"] = true,
 							["end_time"] = 1667249314,
-							["healing_from"] = {
-								["Кейналай-Пламегор"] = true,
-							},
 							["aID"] = "4474-04A803F9",
+							["pvp_component"] = true,
 							["nome"] = "Небославян-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -33521,9 +34138,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 1769,
 										["c_curado"] = 1769,
+										["totaldenied"] = 0,
 										["n_amt"] = 0,
 										["n_curado"] = 0,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[27137] = {
@@ -33546,9 +34163,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 1573,
 										["c_curado"] = 1573,
+										["totaldenied"] = 0,
 										["n_amt"] = 0,
 										["n_curado"] = 0,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -33562,7 +34179,9 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249311,
 							["delay"] = 1667249284,
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Кейналай-Пламегор"] = true,
+							},
 						}, -- [7]
 						{
 							["flag_original"] = 1352,
@@ -33594,13 +34213,8 @@ _detalhes_database = {
 							["healing_taken"] = 5434.002931,
 							["fight_component"] = true,
 							["end_time"] = 1667249314,
-							["healing_from"] = {
-								["Белтико"] = true,
-								["Кейналай-Пламегор"] = true,
-								["Шерифдуфи-Пламегор"] = true,
-								["Рубежж-Пламегор"] = true,
-							},
 							["aID"] = "4474-04A80422",
+							["pvp_component"] = true,
 							["nome"] = "Рубежж-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -33624,9 +34238,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 6,
 										["n_curado"] = 610,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -33640,7 +34254,12 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249313,
 							["delay"] = 1667249309,
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Рубежж-Пламегор"] = true,
+								["Кейналай-Пламегор"] = true,
+								["Белтико"] = true,
+								["Шерифдуфи-Пламегор"] = true,
+							},
 						}, -- [8]
 						{
 							["flag_original"] = 1300,
@@ -33669,10 +34288,8 @@ _detalhes_database = {
 							["healing_taken"] = 367.007304,
 							["fight_component"] = true,
 							["end_time"] = 1667249314,
-							["healing_from"] = {
-								["Memoria-Auberdine"] = true,
-							},
 							["aID"] = "4441-039BA4F5",
+							["pvp_component"] = true,
 							["nome"] = "Memoria-Auberdine",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -33695,9 +34312,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 1,
 										["n_curado"] = 367,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -33711,7 +34328,9 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249313,
 							["delay"] = 1667249291,
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Memoria-Auberdine"] = true,
+							},
 						}, -- [9]
 						{
 							["flag_original"] = 1298,
@@ -33765,9 +34384,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 4,
 										["n_curado"] = 0,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -33809,12 +34428,8 @@ _detalhes_database = {
 							["healing_taken"] = 12257.005322,
 							["fight_component"] = true,
 							["end_time"] = 1667249314,
-							["healing_from"] = {
-								["Bopshop-Ashbringer"] = true,
-								["Макнаке"] = true,
-								["Airforceone-MirageRaceway"] = true,
-							},
 							["aID"] = "4813-044A8ED2",
+							["pvp_component"] = true,
 							["nome"] = "Fatsnack-Mandokir",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -33829,7 +34444,11 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249314,
 							["delay"] = 0,
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Bopshop-Ashbringer"] = true,
+								["Макнаке"] = true,
+								["Airforceone-MirageRaceway"] = true,
+							},
 						}, -- [11]
 						{
 							["flag_original"] = 1352,
@@ -33857,9 +34476,8 @@ _detalhes_database = {
 							["totalover_without_pet"] = 0.0013,
 							["healing_taken"] = 0.0013,
 							["end_time"] = 1667249314,
-							["healing_from"] = {
-							},
 							["aID"] = "4474-04B74E61",
+							["pvp_component"] = true,
 							["nome"] = "Ницшеподлсд-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -33874,7 +34492,8 @@ _detalhes_database = {
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1667249314,
 							["delay"] = 0,
-							["pvp_component"] = true,
+							["healing_from"] = {
+							},
 						}, -- [12]
 						{
 							["flag_original"] = 4424,
@@ -33885,7 +34504,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "PET",
 							["totalover"] = 0.006525,
 							["total_without_pet"] = 3126.006525,
 							["total"] = 3126.006525,
@@ -33906,7 +34525,8 @@ _detalhes_database = {
 							["healing_taken"] = 1269.006525,
 							["fight_component"] = true,
 							["end_time"] = 1667249314,
-							["serial"] = "Pet-0-4468-489-4518-1860-020057EDD8",
+							["targets_overheal"] = {
+							},
 							["nome"] = "Макнаке",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -33930,9 +34550,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["n_curado"] = 2673,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
+										["n_curado"] = 2673,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -33955,24 +34575,23 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 1,
 										["n_curado"] = 453,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
-							["targets_overheal"] = {
-							},
+							["serial"] = "Pet-0-4468-489-4518-1860-020057EDD8",
+							["heal_enemy_amt"] = 0,
+							["totaldenied"] = 0.006525,
+							["custom"] = 0,
 							["tipo"] = 2,
 							["aID"] = "Pet-0-4468-489-4518-1860-020057EDD8",
-							["custom"] = 0,
-							["last_event"] = 1667249285,
-							["totaldenied"] = 0.006525,
 							["start_time"] = 1667249313,
 							["delay"] = 1667249285,
-							["classe"] = "PET",
+							["last_event"] = 1667249285,
 						}, -- [13]
 						{
 							["flag_original"] = 4424,
@@ -34028,9 +34647,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["n_curado"] = 2900,
 										["totaldenied"] = 0,
 										["n_amt"] = 7,
+										["n_curado"] = 2900,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -34054,7 +34673,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "Pet-0-4468-489-4518-1860-020049119C",
 							["totalover"] = 0.008405,
 							["total_without_pet"] = 0.008405,
 							["total"] = 0.008405,
@@ -34071,7 +34690,8 @@ _detalhes_database = {
 							["totalover_without_pet"] = 0.008405,
 							["healing_taken"] = 0.008405,
 							["end_time"] = 1667249314,
-							["pvp_component"] = true,
+							["targets_overheal"] = {
+							},
 							["ownerName"] = "Purpplehaze-Auberdine",
 							["nome"] = "Hathgarth <Purpplehaze-Auberdine>",
 							["spells"] = {
@@ -34079,16 +34699,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 3,
 							},
-							["targets_overheal"] = {
-							},
+							["pvp_component"] = true,
+							["heal_enemy_amt"] = 0,
+							["totaldenied"] = 0.008405,
+							["custom"] = 0,
 							["tipo"] = 2,
 							["classe"] = "PET",
-							["custom"] = 0,
-							["last_event"] = 0,
-							["totaldenied"] = 0.008405,
 							["start_time"] = 1667249314,
 							["delay"] = 0,
-							["aID"] = "Pet-0-4468-489-4518-1860-020049119C",
+							["last_event"] = 0,
 						}, -- [15]
 					},
 				}, -- [2]
@@ -34187,9 +34806,9 @@ _detalhes_database = {
 							["nome"] = "Calmyboy-MirageRaceway",
 							["spells"] = {
 								["_ActorTable"] = {
-									[49929] = {
+									[49920] = {
 										["total"] = 10,
-										["id"] = 49929,
+										["id"] = 49920,
 										["totalover"] = 0,
 										["targets"] = {
 											["Calmyboy-MirageRaceway"] = 10,
@@ -34205,18 +34824,18 @@ _detalhes_database = {
 										},
 										["counter"] = 1,
 									},
-									[57330] = {
+									[49929] = {
 										["total"] = 10,
-										["id"] = 57330,
+										["id"] = 49929,
 										["totalover"] = 0,
 										["targets"] = {
 											["Calmyboy-MirageRaceway"] = 10,
 										},
 										["counter"] = 1,
 									},
-									[49920] = {
+									[57330] = {
 										["total"] = 10,
-										["id"] = 49920,
+										["id"] = 57330,
 										["totalover"] = 0,
 										["targets"] = {
 											["Calmyboy-MirageRaceway"] = 10,
@@ -35665,17 +36284,6 @@ _detalhes_database = {
 										},
 										["appliedamt"] = 1,
 									},
-									[16595] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 16595,
-										["uptime"] = 2,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
 									[53755] = {
 										["counter"] = 0,
 										["actived"] = false,
@@ -35694,6 +36302,17 @@ _detalhes_database = {
 										["refreshamt"] = 0,
 										["id"] = 54371,
 										["uptime"] = 8,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[16595] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 16595,
+										["uptime"] = 2,
 										["targets"] = {
 										},
 										["appliedamt"] = 1,
@@ -35892,14 +36511,14 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["spell_cast"] = {
-								[781] = 1,
+								[27065] = 2,
 								[34490] = 1,
 								[75] = 4,
-								[27016] = 2,
+								[781] = 1,
 								[14325] = 1,
 								[53209] = 1,
 								[27046] = 1,
-								[27065] = 2,
+								[27016] = 2,
 							},
 							["serial"] = "Player-4441-039BA4F5",
 							["tipo"] = 4,
@@ -36022,7 +36641,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["nome"] = "Bopshop-Ashbringer",
+							["buff_uptime_targets"] = {
+							},
 							["dispell"] = 3.005277,
 							["pets"] = {
 							},
@@ -36047,49 +36667,6 @@ _detalhes_database = {
 								[33072] = 3,
 								[53563] = 1,
 							},
-							["dispell_oque"] = {
-								[27215] = 2,
-								[58180] = 1,
-							},
-							["dispell_spells"] = {
-								["_ActorTable"] = {
-									[4987] = {
-										["targets"] = {
-											["Fatsnack-Mandokir"] = 2,
-											["Bopshop-Ashbringer"] = 1,
-										},
-										["id"] = 4987,
-										["dispell_oque"] = {
-											[27215] = 2,
-											[58180] = 1,
-										},
-										["dispell"] = 3,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["aID"] = "4742-03A8E3B9",
-							["fight_component"] = true,
-							["debuff_uptime"] = 0,
-							["serial"] = "Player-4742-03A8E3B9",
-							["cc_done"] = 1.0022,
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["cc_done_targets"] = {
-								["Дарелос-Пламегор"] = 1,
-							},
-							["tipo"] = 4,
-							["buff_uptime"] = 26,
-							["last_event"] = 1667249307,
-							["buff_uptime_targets"] = {
-							},
-							["dispell_targets"] = {
-								["Fatsnack-Mandokir"] = 2,
-								["Bopshop-Ashbringer"] = 1,
-							},
-							["pvp_component"] = true,
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[53563] = {
@@ -36116,17 +36693,17 @@ _detalhes_database = {
 										["actived"] = true,
 										["appliedamt"] = 2,
 									},
-									[54149] = {
-										["activedamt"] = 3,
-										["id"] = 54149,
+									[20166] = {
+										["activedamt"] = 2,
+										["id"] = 20166,
 										["targets"] = {
 										},
-										["actived_at"] = 1667249285,
-										["uptime"] = 4,
+										["actived_at"] = 1667249307,
+										["uptime"] = 0,
 										["counter"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = true,
-										["appliedamt"] = 3,
+										["appliedamt"] = 2,
 									},
 									[2383] = {
 										["activedamt"] = 1,
@@ -36140,6 +36717,18 @@ _detalhes_database = {
 										["actived"] = true,
 										["appliedamt"] = 1,
 									},
+									[54149] = {
+										["activedamt"] = 3,
+										["id"] = 54149,
+										["targets"] = {
+										},
+										["actived_at"] = 1667249285,
+										["uptime"] = 4,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["appliedamt"] = 3,
+									},
 									[19746] = {
 										["activedamt"] = 3,
 										["id"] = 19746,
@@ -36152,20 +36741,50 @@ _detalhes_database = {
 										["actived"] = true,
 										["appliedamt"] = 3,
 									},
-									[20166] = {
-										["activedamt"] = 2,
-										["id"] = 20166,
+								},
+								["tipo"] = 9,
+							},
+							["dispell_spells"] = {
+								["_ActorTable"] = {
+									[4987] = {
 										["targets"] = {
+											["Fatsnack-Mandokir"] = 2,
+											["Bopshop-Ashbringer"] = 1,
 										},
-										["actived_at"] = 1667249307,
-										["uptime"] = 0,
+										["id"] = 4987,
+										["dispell_oque"] = {
+											[27215] = 2,
+											[58180] = 1,
+										},
+										["dispell"] = 3,
 										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 2,
 									},
 								},
 								["tipo"] = 9,
+							},
+							["aID"] = "4742-03A8E3B9",
+							["fight_component"] = true,
+							["debuff_uptime"] = 0,
+							["serial"] = "Player-4742-03A8E3B9",
+							["cc_done"] = 1.0022,
+							["nome"] = "Bopshop-Ashbringer",
+							["grupo"] = true,
+							["cc_done_targets"] = {
+								["Дарелос-Пламегор"] = 1,
+							},
+							["tipo"] = 4,
+							["buff_uptime"] = 26,
+							["last_event"] = 1667249307,
+							["debuff_uptime_targets"] = {
+							},
+							["dispell_oque"] = {
+								[27215] = 2,
+								[58180] = 1,
+							},
+							["pvp_component"] = true,
+							["dispell_targets"] = {
+								["Fatsnack-Mandokir"] = 2,
+								["Bopshop-Ashbringer"] = 1,
 							},
 						}, -- [10]
 						{
@@ -36269,11 +36888,11 @@ _detalhes_database = {
 								[48565] = 1,
 								[48573] = 1,
 								[5215] = 1,
-								[52610] = 1,
-								[33357] = 1,
-								[2782] = 1,
-								[27009] = 1,
 								[48440] = 1,
+								[33357] = 1,
+								[52610] = 1,
+								[27009] = 1,
+								[2782] = 1,
 								[49376] = 1,
 							},
 							["tipo"] = 4,
@@ -36296,8 +36915,8 @@ _detalhes_database = {
 							["enemy"] = true,
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["aID"] = "4474-04A9CC5B",
+							["tipo"] = 4,
 							["classe"] = "UNGROUPPLAYER",
 							["spell_cast"] = {
 								[2457] = 1,
@@ -36305,7 +36924,7 @@ _detalhes_database = {
 								[47485] = 1,
 							},
 							["pvp_component"] = true,
-							["tipo"] = 4,
+							["last_event"] = 0,
 						}, -- [13]
 						{
 							["flag_original"] = 1352,
@@ -36438,20 +37057,20 @@ _detalhes_database = {
 							["enemy"] = true,
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["aID"] = "4474-04B74E61",
+							["tipo"] = 4,
 							["classe"] = "UNGROUPPLAYER",
 							["spell_cast"] = {
 								[3044] = 1,
 								[5116] = 1,
 								[781] = 1,
-								[53209] = 1,
-								[3034] = 1,
-								[1978] = 1,
 								[58984] = 1,
+								[53209] = 1,
+								[1978] = 1,
+								[3034] = 1,
 							},
 							["pvp_component"] = true,
-							["tipo"] = 4,
+							["last_event"] = 0,
 						}, -- [17]
 						{
 							["flag_original"] = 1352,
@@ -36514,8 +37133,8 @@ _detalhes_database = {
 							["enemy"] = true,
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["aID"] = "4474-047E5D59",
+							["tipo"] = 4,
 							["classe"] = "UNGROUPPLAYER",
 							["spell_cast"] = {
 								[53248] = 2,
@@ -36524,7 +37143,7 @@ _detalhes_database = {
 								[33891] = 1,
 							},
 							["pvp_component"] = true,
-							["tipo"] = 4,
+							["last_event"] = 0,
 						}, -- [19]
 						{
 							["flag_original"] = 1352,
@@ -37265,14 +37884,14 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Airforceone-MirageRaceway"] = true,
 					["Calmyboy-MirageRaceway"] = true,
-					["Fatsnack-Mandokir"] = true,
+					["Moolatz"] = true,
 					["Boopa-Venoxis"] = true,
-					["Altarpain-MirageRaceway"] = true,
+					["Memoria-Auberdine"] = true,
 					["Maivi-Giantstalker"] = true,
 					["Purpplehaze-Auberdine"] = true,
 					["Bopshop-Ashbringer"] = true,
-					["Memoria-Auberdine"] = true,
-					["Moolatz"] = true,
+					["Altarpain-MirageRaceway"] = true,
+					["Fatsnack-Mandokir"] = true,
 				},
 				["raid_roster_indexed"] = {
 					"Airforceone-MirageRaceway", -- [1]
@@ -38484,13 +39103,13 @@ _detalhes_database = {
 						{
 							["Airforceone-MirageRaceway"] = 115.002515,
 							["Calmyboy-MirageRaceway"] = 3119.007181,
+							["Шерифдуфи-Пламегор"] = 5900.014137000001,
 							["Memoria-Auberdine"] = 9079.005342,
-							["Fatsnack-Mandokir"] = 25226.007327,
 							["Maivi-Giantstalker"] = 8150.001532,
+							["Purpplehaze-Auberdine"] = 19144.003173,
 							["Boopa-Venoxis"] = 15035.003168,
 							["Bopshop-Ashbringer"] = 0.006444,
-							["Purpplehaze-Auberdine"] = 19144.003173,
-							["Шерифдуфи-Пламегор"] = 5900.014137000001,
+							["Fatsnack-Mandokir"] = 25226.007327,
 						}, -- [1]
 					},
 					["heal_section"] = {
@@ -38503,12 +39122,12 @@ _detalhes_database = {
 							["Airforceone-MirageRaceway"] = 4436.001219,
 							["Purpplehaze-Auberdine"] = 3846.009809,
 							["Кейналай-Пламегор"] = 11407.013497,
-							["Fatsnack-Mandokir"] = 0.005322,
+							["Memoria-Auberdine"] = 367.007304,
 							["Небославян-Пламегор"] = 3342.001613,
 							["Bopshop-Ashbringer"] = 11201.006732,
 							["Boopa-Venoxis"] = 0.006728,
-							["Memoria-Auberdine"] = 367.007304,
 							["Шерифдуфи-Пламегор"] = 4833.015336,
+							["Fatsnack-Mandokir"] = 0.005322,
 						}, -- [1]
 					},
 					["damage_section"] = {
@@ -38562,7 +39181,7 @@ _detalhes_database = {
 				["TimeData"] = {
 				},
 				["data_inicio"] = "21:47:58",
-			}, -- [15]
+			}, -- [16]
 			{
 				{
 					["tipo"] = 2,
@@ -38574,9 +39193,9 @@ _detalhes_database = {
 							["end_time"] = 1667249261,
 							["damage_from"] = {
 								["Дарелос-Пламегор"] = true,
+								["Белтико"] = true,
 								["Молимся-Пламегор"] = true,
 								["Рубежж-Пламегор"] = true,
-								["Белтико"] = true,
 							},
 							["targets"] = {
 								["Коббал-Пламегор"] = 3870,
@@ -38595,24 +39214,17 @@ _detalhes_database = {
 							["pets"] = {
 								"Hathgarth <Purpplehaze-Auberdine>", -- [1]
 							},
-							["friendlyfire"] = {
-								["Hathgarth <Purpplehaze-Auberdine>"] = {
-									["spells"] = {
-										[25228] = 1560,
-									},
-									["total"] = 1560,
-								},
-							},
-							["serial"] = "Player-4441-027C4C2D",
-							["classe"] = "WARLOCK",
+							["last_dps"] = 1058.042193789474,
+							["delay"] = 1667249249,
+							["friendlyfire_total"] = 1560,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 96296.00841000001,
-							["delay"] = 1667249249,
-							["aID"] = "4441-027C4C2D",
+							["pvp_component"] = true,
+							["classe"] = "WARLOCK",
 							["fight_component"] = true,
 							["total"] = 100514.00841,
-							["friendlyfire_total"] = 1560,
+							["aID"] = "4441-027C4C2D",
 							["dps_started"] = false,
 							["nome"] = "Purpplehaze-Auberdine",
 							["spells"] = {
@@ -38841,9 +39453,9 @@ _detalhes_database = {
 										["n_max"] = 2298,
 										["targets"] = {
 											["Дарелос-Пламегор"] = 6031,
+											["Белтико"] = 2809,
 											["Рубежж-Пламегор"] = 9194,
 											["Макнаке <Дарелос-Пламегор>"] = 2001,
-											["Белтико"] = 2809,
 										},
 										["n_dmg"] = 9407,
 										["n_min"] = 418,
@@ -38929,14 +39541,21 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["last_dps"] = 1058.042193789474,
+							["on_hold"] = false,
 							["custom"] = 0,
 							["damage_taken"] = 27549.00841,
 							["colocacao"] = 1,
 							["tipo"] = 1,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+								["Hathgarth <Purpplehaze-Auberdine>"] = {
+									["spells"] = {
+										[25228] = 1560,
+									},
+									["total"] = 1560,
+								},
+							},
 							["start_time"] = 1667249166,
-							["pvp_component"] = true,
+							["serial"] = "Player-4441-027C4C2D",
 							["pvp"] = true,
 						}, -- [1]
 						{
@@ -38966,24 +39585,17 @@ _detalhes_database = {
 							["last_event"] = 1667249261,
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-								["Fatsnack-Mandokir"] = {
-									["spells"] = {
-										[12654] = 229,
-									},
-									["total"] = 229,
-								},
-							},
-							["serial"] = "Player-4813-044A8ED2",
-							["classe"] = "MAGE",
+							["last_dps"] = 1166.327371472727,
+							["delay"] = 1667249240,
+							["friendlyfire_total"] = 229,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 64148.005431,
-							["delay"] = 1667249240,
-							["aID"] = "4813-044A8ED2",
+							["pvp_component"] = true,
+							["classe"] = "MAGE",
 							["fight_component"] = true,
 							["total"] = 64148.005431,
-							["friendlyfire_total"] = 229,
+							["aID"] = "4813-044A8ED2",
 							["dps_started"] = false,
 							["nome"] = "Fatsnack-Mandokir",
 							["spells"] = {
@@ -39358,14 +39970,21 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["last_dps"] = 1166.327371472727,
+							["on_hold"] = false,
 							["custom"] = 0,
 							["damage_taken"] = 19424.005431,
 							["colocacao"] = 2,
 							["tipo"] = 1,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+								["Fatsnack-Mandokir"] = {
+									["spells"] = {
+										[12654] = 229,
+									},
+									["total"] = 229,
+								},
+							},
 							["start_time"] = 1667249206,
-							["pvp_component"] = true,
+							["serial"] = "Player-4813-044A8ED2",
 							["pvp"] = true,
 						}, -- [2]
 						{
@@ -39392,18 +40011,17 @@ _detalhes_database = {
 							["pets"] = {
 								"Risen Ghoul <Calmyboy-MirageRaceway>", -- [1]
 							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-4454-04AD4921",
-							["classe"] = "DEATHKNIGHT",
+							["last_dps"] = 666.0462354461538,
+							["delay"] = 1667249236,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 42694.005304,
-							["delay"] = 1667249236,
-							["aID"] = "4454-04AD4921",
+							["pvp_component"] = true,
+							["classe"] = "DEATHKNIGHT",
 							["fight_component"] = true,
 							["total"] = 43293.005304,
-							["friendlyfire_total"] = 0,
+							["aID"] = "4454-04AD4921",
 							["dps_started"] = false,
 							["nome"] = "Calmyboy-MirageRaceway",
 							["spells"] = {
@@ -39635,10 +40253,10 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 208,
 										["targets"] = {
-											["Шерифдуфи-Пламегор"] = 1081,
-											["Кейналай-Пламегор"] = 1248,
-											["Рубежж-Пламегор"] = 624,
 											["Молимся-Пламегор"] = 1270,
+											["Кейналай-Пламегор"] = 1248,
+											["Шерифдуфи-Пламегор"] = 1081,
+											["Рубежж-Пламегор"] = 624,
 										},
 										["n_dmg"] = 3227,
 										["n_min"] = 123,
@@ -39751,14 +40369,15 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["last_dps"] = 666.0462354461538,
+							["on_hold"] = false,
 							["custom"] = 0,
 							["damage_taken"] = 35381.005304,
 							["colocacao"] = 3,
 							["tipo"] = 1,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1667249196,
-							["pvp_component"] = true,
+							["serial"] = "Player-4454-04AD4921",
 							["pvp"] = true,
 						}, -- [3]
 						{
@@ -40836,9 +41455,9 @@ _detalhes_database = {
 							["end_time"] = 1667249261,
 							["damage_from"] = {
 								["Environment (Falling)"] = true,
+								["Рубежж-Пламегор"] = true,
 								["Молимся-Пламегор"] = true,
 								["Шерифдуфи-Пламегор"] = true,
-								["Рубежж-Пламегор"] = true,
 							},
 							["targets"] = {
 								["Ницшеподлсд-Пламегор"] = 223,
@@ -40851,18 +41470,17 @@ _detalhes_database = {
 							["pets"] = {
 								"Grr <Memoria-Auberdine>", -- [1]
 							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-4441-039BA4F5",
-							["classe"] = "HUNTER",
+							["last_dps"] = 686.7873448510638,
+							["delay"] = 1667249190,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 26152.005208,
-							["delay"] = 1667249190,
-							["aID"] = "4441-039BA4F5",
+							["pvp_component"] = true,
+							["classe"] = "HUNTER",
 							["fight_component"] = true,
 							["total"] = 32279.005208,
-							["friendlyfire_total"] = 0,
+							["aID"] = "4441-039BA4F5",
 							["dps_started"] = false,
 							["nome"] = "Memoria-Auberdine",
 							["spells"] = {
@@ -41136,14 +41754,15 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["last_dps"] = 686.7873448510638,
+							["on_hold"] = false,
 							["custom"] = 0,
 							["damage_taken"] = 11347.005208,
 							["colocacao"] = 6,
 							["tipo"] = 1,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1667249214,
-							["pvp_component"] = true,
+							["serial"] = "Player-4441-039BA4F5",
 							["pvp"] = true,
 						}, -- [6]
 						{
@@ -41171,24 +41790,17 @@ _detalhes_database = {
 							["last_event"] = 1667249259,
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-								["Boopa-Venoxis"] = {
-									["spells"] = {
-										[12654] = 421,
-									},
-									["total"] = 421,
-								},
-							},
-							["serial"] = "Player-4477-02CA9A6D",
-							["classe"] = "MAGE",
+							["last_dps"] = 373.308088,
+							["delay"] = 1667249254,
+							["friendlyfire_total"] = 421,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 28709.005144,
-							["delay"] = 1667249254,
-							["aID"] = "4477-02CA9A6D",
+							["pvp_component"] = true,
+							["classe"] = "MAGE",
 							["fight_component"] = true,
 							["total"] = 28709.005144,
-							["friendlyfire_total"] = 421,
+							["aID"] = "4477-02CA9A6D",
 							["dps_started"] = false,
 							["nome"] = "Boopa-Venoxis",
 							["spells"] = {
@@ -41472,14 +42084,21 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["last_dps"] = 373.308088,
+							["on_hold"] = false,
 							["custom"] = 0,
 							["damage_taken"] = 15856.005144,
 							["colocacao"] = 6,
 							["tipo"] = 1,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+								["Boopa-Venoxis"] = {
+									["spells"] = {
+										[12654] = 421,
+									},
+									["total"] = 421,
+								},
+							},
 							["start_time"] = 1667249203,
-							["pvp_component"] = true,
+							["serial"] = "Player-4477-02CA9A6D",
 							["pvp"] = true,
 						}, -- [7]
 						{
@@ -41509,24 +42128,17 @@ _detalhes_database = {
 							["pets"] = {
 								"Water Elemental <Maivi-Giantstalker>", -- [1]
 							},
-							["friendlyfire"] = {
-								["Maivi-Giantstalker"] = {
-									["spells"] = {
-										[38697] = 1410,
-									},
-									["total"] = 1410,
-								},
-							},
-							["serial"] = "Player-4811-0394EED3",
-							["classe"] = "MAGE",
+							["last_dps"] = 735.4287964285714,
+							["delay"] = 1667249258,
+							["friendlyfire_total"] = 1410,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 26266.001575,
-							["delay"] = 1667249258,
-							["aID"] = "4811-0394EED3",
+							["pvp_component"] = true,
+							["classe"] = "MAGE",
 							["fight_component"] = true,
 							["total"] = 27065.001575,
-							["friendlyfire_total"] = 1410,
+							["aID"] = "4811-0394EED3",
 							["dps_started"] = false,
 							["nome"] = "Maivi-Giantstalker",
 							["spells"] = {
@@ -41660,9 +42272,9 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 328,
 										["targets"] = {
-											["Молимся-Пламегор"] = 3138,
 											["Шерифдуфи-Пламегор"] = 641,
 											["Рубежж-Пламегор"] = 223,
+											["Молимся-Пламегор"] = 3138,
 											["Сварт-Пламегор"] = 1436,
 										},
 										["n_dmg"] = 2573,
@@ -41748,14 +42360,21 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["last_dps"] = 735.4287964285714,
+							["on_hold"] = false,
 							["custom"] = 0,
 							["damage_taken"] = 10810.001575,
 							["colocacao"] = 6,
 							["tipo"] = 1,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+								["Maivi-Giantstalker"] = {
+									["spells"] = {
+										[38697] = 1410,
+									},
+									["total"] = 1410,
+								},
+							},
 							["start_time"] = 1667249211,
-							["pvp_component"] = true,
+							["serial"] = "Player-4811-0394EED3",
 							["pvp"] = true,
 						}, -- [8]
 						{
@@ -42441,13 +43060,13 @@ _detalhes_database = {
 							["pvp"] = true,
 							["damage_from"] = {
 								["Environment (Falling)"] = true,
+								["Fatsnack-Mandokir"] = true,
 								["Airforceone-MirageRaceway"] = true,
-								["Memoria-Auberdine"] = true,
 								["Maivi-Giantstalker"] = true,
 								["Calmyboy-MirageRaceway"] = true,
 								["Purpplehaze-Auberdine"] = true,
 								["Boopa-Venoxis"] = true,
-								["Fatsnack-Mandokir"] = true,
+								["Memoria-Auberdine"] = true,
 							},
 							["targets"] = {
 								["Calmyboy-MirageRaceway"] = 3088,
@@ -42821,18 +43440,18 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["last_dps"] = 0,
-							["end_time"] = 1667249261,
-							["classe"] = "WARRIOR",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 16635.00896,
 							["friendlyfire"] = {
 							},
 							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["total"] = 16635.00896,
-							["delay"] = 1667249221,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 16635.00896,
+							["classe"] = "WARRIOR",
 							["aID"] = "4474-04A9CC5B",
+							["dps_started"] = false,
+							["end_time"] = 1667249261,
+							["delay"] = 1667249221,
+							["fight_component"] = true,
 							["nome"] = "Сварт-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -43300,7 +43919,7 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["fight_component"] = true,
+							["total"] = 16635.00896,
 							["serial"] = "Player-4474-04A9CC5B",
 							["damage_taken"] = 36812.00896,
 							["custom"] = 0,
@@ -44949,18 +45568,18 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["last_dps"] = 0,
-							["end_time"] = 1667249261,
-							["aID"] = "4474-047E5D59",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.001855,
 							["friendlyfire"] = {
 							},
 							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.001855,
-							["delay"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.001855,
+							["aID"] = "4474-047E5D59",
 							["classe"] = "UNGROUPPLAYER",
+							["dps_started"] = false,
+							["end_time"] = 1667249261,
+							["delay"] = 0,
+							["fight_component"] = true,
 							["nome"] = "Кейналай-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -45228,7 +45847,7 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["fight_component"] = true,
+							["total"] = 0.001855,
 							["serial"] = "Player-4474-047E5D59",
 							["damage_taken"] = 21156.001855,
 							["custom"] = 0,
@@ -45257,18 +45876,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["aID"] = "",
+							["damage_taken"] = 0.003995,
 							["classe"] = "UNKNOW",
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 10816.003995,
-							["aID"] = "",
-							["serial"] = "",
+							["friendlyfire_total"] = 0,
+							["delay"] = 1667249253,
 							["fight_component"] = true,
 							["end_time"] = 1667249261,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["nome"] = "Environment (Falling)",
 							["spells"] = {
@@ -45315,11 +45933,12 @@ _detalhes_database = {
 							},
 							["total"] = 10816.003995,
 							["last_event"] = 1667249253,
+							["serial"] = "",
 							["last_dps"] = 0,
-							["delay"] = 1667249253,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 0.003995,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1667249251,
 							["pvp_component"] = true,
 							["pvp"] = true,
@@ -45327,7 +45946,7 @@ _detalhes_database = {
 						{
 							["flag_original"] = 4372,
 							["totalabsorbed"] = 239.005103,
-							["tipo"] = 1,
+							["classe"] = "PET",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -45339,11 +45958,12 @@ _detalhes_database = {
 							},
 							["last_dps"] = 0,
 							["pvp_component"] = true,
-							["classe"] = "PET",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 6127.005103,
-							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
 							["aID"] = "Pet-0-4468-489-4518-25675-050076B350",
 							["dps_started"] = false,
 							["end_time"] = 1667249261,
@@ -45416,8 +46036,7 @@ _detalhes_database = {
 							},
 							["fight_component"] = true,
 							["total"] = 6127.005103,
-							["friendlyfire"] = {
-							},
+							["tipo"] = 1,
 							["damage_taken"] = 0.005103,
 							["custom"] = 0,
 							["last_event"] = 1667249258,
@@ -45429,7 +46048,7 @@ _detalhes_database = {
 						{
 							["flag_original"] = 4370,
 							["totalabsorbed"] = 0.002397,
-							["tipo"] = 1,
+							["classe"] = "PET",
 							["damage_from"] = {
 								["Коббал-Пламегор"] = true,
 								["Purpplehaze-Auberdine"] = true,
@@ -45442,11 +46061,12 @@ _detalhes_database = {
 							},
 							["last_dps"] = 0,
 							["pvp_component"] = true,
-							["classe"] = "PET",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 4218.002397,
-							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
 							["aID"] = "Pet-0-4468-489-4518-1860-020049119C",
 							["dps_started"] = false,
 							["end_time"] = 1667249261,
@@ -45491,8 +46111,7 @@ _detalhes_database = {
 							},
 							["fight_component"] = true,
 							["total"] = 4218.002397,
-							["friendlyfire"] = {
-							},
+							["tipo"] = 1,
 							["damage_taken"] = 2154.002397,
 							["custom"] = 0,
 							["last_event"] = 1667249230,
@@ -45504,7 +46123,7 @@ _detalhes_database = {
 						{
 							["flag_original"] = 4424,
 							["totalabsorbed"] = 0.008875,
-							["tipo"] = 1,
+							["classe"] = "PET",
 							["damage_from"] = {
 								["Fatsnack-Mandokir"] = true,
 							},
@@ -45515,11 +46134,12 @@ _detalhes_database = {
 							},
 							["last_dps"] = 0,
 							["pvp_component"] = true,
-							["classe"] = "PET",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2895.008875,
-							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
 							["aID"] = "19668",
 							["dps_started"] = false,
 							["end_time"] = 1667249261,
@@ -45587,8 +46207,7 @@ _detalhes_database = {
 							},
 							["fight_component"] = true,
 							["total"] = 2895.008875,
-							["friendlyfire"] = {
-							},
+							["tipo"] = 1,
 							["damage_taken"] = 2710.008875,
 							["custom"] = 0,
 							["last_event"] = 1667249194,
@@ -45609,18 +46228,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["aID"] = "Pet-0-4468-489-4518-1860-020057EDD8",
+							["damage_taken"] = 4025.001006,
 							["classe"] = "PET",
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1598.001006,
-							["aID"] = "Pet-0-4468-489-4518-1860-020057EDD8",
-							["serial"] = "Pet-0-4468-489-4518-1860-020057EDD8",
+							["friendlyfire_total"] = 0,
+							["delay"] = 1667249254,
 							["fight_component"] = true,
 							["end_time"] = 1667249261,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["nome"] = "Макнаке",
 							["spells"] = {
@@ -45684,11 +46302,12 @@ _detalhes_database = {
 							},
 							["total"] = 1598.001006,
 							["last_event"] = 1667249254,
+							["serial"] = "Pet-0-4468-489-4518-1860-020057EDD8",
 							["last_dps"] = 0,
-							["delay"] = 1667249254,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 4025.001006,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1667249254,
 							["pvp_component"] = true,
 							["pvp"] = true,
@@ -45696,7 +46315,7 @@ _detalhes_database = {
 						{
 							["flag_original"] = 4424,
 							["totalabsorbed"] = 0.007487,
-							["tipo"] = 1,
+							["classe"] = "PET",
 							["damage_from"] = {
 								["Purpplehaze-Auberdine"] = true,
 								["Fatsnack-Mandokir"] = true,
@@ -45710,11 +46329,12 @@ _detalhes_database = {
 							},
 							["last_dps"] = 0,
 							["pvp_component"] = true,
-							["classe"] = "PET",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1347.007487,
-							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
 							["aID"] = "Pet-0-4468-489-4518-1860-010057EDD8",
 							["dps_started"] = false,
 							["end_time"] = 1667249261,
@@ -45810,8 +46430,7 @@ _detalhes_database = {
 							},
 							["fight_component"] = true,
 							["total"] = 1347.007487,
-							["friendlyfire"] = {
-							},
+							["tipo"] = 1,
 							["damage_taken"] = 15217.007487,
 							["custom"] = 0,
 							["last_event"] = 1667249186,
@@ -45832,18 +46451,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["aID"] = "Pet-0-4468-489-4518-1860-0300751FD7",
+							["damage_taken"] = 7471.008040000001,
 							["classe"] = "PET",
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 993.0080399999999,
-							["aID"] = "Pet-0-4468-489-4518-1860-0300751FD7",
-							["serial"] = "Pet-0-4468-489-4518-1860-0300751FD7",
+							["friendlyfire_total"] = 0,
+							["delay"] = 1667249230,
 							["fight_component"] = true,
 							["end_time"] = 1667249261,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["nome"] = "Белтико",
 							["spells"] = {
@@ -45933,11 +46551,12 @@ _detalhes_database = {
 							},
 							["total"] = 993.0080399999999,
 							["last_event"] = 1667249230,
+							["serial"] = "Pet-0-4468-489-4518-1860-0300751FD7",
 							["last_dps"] = 0,
-							["delay"] = 1667249230,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 7471.008040000001,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1667249252,
 							["pvp_component"] = true,
 							["pvp"] = true,
@@ -45945,7 +46564,7 @@ _detalhes_database = {
 						{
 							["flag_original"] = 4372,
 							["totalabsorbed"] = 0.006877,
-							["tipo"] = 1,
+							["classe"] = "PET",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -45955,11 +46574,12 @@ _detalhes_database = {
 							},
 							["last_dps"] = 0,
 							["pvp_component"] = true,
-							["classe"] = "PET",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 799.006877,
-							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
 							["aID"] = "510",
 							["dps_started"] = false,
 							["end_time"] = 1667249261,
@@ -46001,8 +46621,7 @@ _detalhes_database = {
 							},
 							["fight_component"] = true,
 							["total"] = 799.006877,
-							["friendlyfire"] = {
-							},
+							["tipo"] = 1,
 							["damage_taken"] = 0.006877,
 							["custom"] = 0,
 							["last_event"] = 1667249258,
@@ -46014,7 +46633,7 @@ _detalhes_database = {
 						{
 							["flag_original"] = 8466,
 							["totalabsorbed"] = 0.002156,
-							["tipo"] = 1,
+							["classe"] = "PET",
 							["damage_from"] = {
 								["Коббал-Пламегор"] = true,
 							},
@@ -46026,11 +46645,12 @@ _detalhes_database = {
 							},
 							["last_dps"] = 0,
 							["pvp_component"] = true,
-							["classe"] = "PET",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 599.002156,
-							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
 							["aID"] = "26125",
 							["dps_started"] = false,
 							["end_time"] = 1667249261,
@@ -46074,8 +46694,7 @@ _detalhes_database = {
 							},
 							["fight_component"] = true,
 							["total"] = 599.002156,
-							["friendlyfire"] = {
-							},
+							["tipo"] = 1,
 							["damage_taken"] = 201.002156,
 							["custom"] = 0,
 							["last_event"] = 1667249185,
@@ -46162,9 +46781,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 2253,
 										["c_curado"] = 10149,
+										["n_curado"] = 4383,
 										["totaldenied"] = 0,
 										["n_amt"] = 4,
-										["n_curado"] = 4383,
 										["absorbed"] = 0,
 									},
 									[53653] = {
@@ -46187,19 +46806,19 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 9829,
 										["totaldenied"] = 0,
 										["n_amt"] = 9,
-										["n_curado"] = 9829,
 										["absorbed"] = 0,
 									},
 									[27137] = {
 										["c_amt"] = 4,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Рубежж-Пламегор"] = 3111,
-											["Кейналай-Пламегор"] = 1376,
-											["Молимся-Пламегор"] = 84,
 											["Шерифдуфи-Пламегор"] = 1218,
+											["Кейналай-Пламегор"] = 1376,
+											["Рубежж-Пламегор"] = 3111,
+											["Молимся-Пламегор"] = 84,
 										},
 										["n_max"] = 2138,
 										["targets"] = {
@@ -46220,9 +46839,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 559,
 										["c_curado"] = 7536,
+										["n_curado"] = 15125,
 										["totaldenied"] = 0,
 										["n_amt"] = 9,
-										["n_curado"] = 15125,
 										["absorbed"] = 0,
 									},
 									[55019] = {
@@ -46245,9 +46864,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["totaldenied"] = 0,
 										["n_amt"] = 8,
 										["n_curado"] = 2200,
+										["totaldenied"] = 0,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -46271,9 +46890,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 4416,
 										["totaldenied"] = 0,
 										["n_amt"] = 6,
-										["n_curado"] = 4416,
 										["absorbed"] = 0,
 									},
 								},
@@ -46297,14 +46916,14 @@ _detalhes_database = {
 						{
 							["flag_original"] = 1300,
 							["targets_overheal"] = {
+								["Fatsnack-Mandokir"] = 1523,
 								["Memoria-Auberdine"] = 2547,
 								["Airforceone-MirageRaceway"] = 3370,
-								["Fatsnack-Mandokir"] = 1523,
 								["Maivi-Giantstalker"] = 1043,
 								["Calmyboy-MirageRaceway"] = 282,
-								["Bopshop-Ashbringer"] = 27475,
 								["Purpplehaze-Auberdine"] = 2639,
 								["Boopa-Venoxis"] = 1349,
+								["Bopshop-Ashbringer"] = 27475,
 							},
 							["pets"] = {
 							},
@@ -46324,21 +46943,23 @@ _detalhes_database = {
 							["totalabsorb"] = 0.006438,
 							["last_hps"] = 2795.187902375,
 							["targets"] = {
+								["Fatsnack-Mandokir"] = 3093,
 								["Memoria-Auberdine"] = 1898,
 								["Airforceone-MirageRaceway"] = 2419,
-								["Fatsnack-Mandokir"] = 3093,
 								["Maivi-Giantstalker"] = 575,
 								["Calmyboy-MirageRaceway"] = 1920,
-								["Bopshop-Ashbringer"] = 23795,
 								["Purpplehaze-Auberdine"] = 6134,
 								["Boopa-Venoxis"] = 4889,
+								["Bopshop-Ashbringer"] = 23795,
 							},
 							["totalover_without_pet"] = 0.006438,
 							["healing_taken"] = 23795.006438,
 							["fight_component"] = true,
 							["end_time"] = 1667249261,
-							["aID"] = "4742-03A8E3B9",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Bopshop-Ashbringer"] = true,
+							},
 							["nome"] = "Bopshop-Ashbringer",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -46358,9 +46979,9 @@ _detalhes_database = {
 											["Fatsnack-Mandokir"] = 2343,
 											["Memoria-Auberdine"] = 1898,
 											["Calmyboy-MirageRaceway"] = 1920,
-											["Purpplehaze-Auberdine"] = 5243,
 											["Bopshop-Ashbringer"] = 2422,
 											["Boopa-Venoxis"] = 2302,
+											["Purpplehaze-Auberdine"] = 5243,
 										},
 										["n_min"] = 112,
 										["counter"] = 10,
@@ -46372,9 +46993,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 1164,
 										["c_curado"] = 3507,
+										["n_curado"] = 12733,
 										["totaldenied"] = 0,
 										["n_amt"] = 8,
-										["n_curado"] = 12733,
 										["absorbed"] = 0,
 									},
 									[53653] = {
@@ -46397,9 +47018,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 1380,
 										["totaldenied"] = 0,
 										["n_amt"] = 7,
-										["n_curado"] = 1380,
 										["absorbed"] = 0,
 									},
 									[27136] = {
@@ -46421,9 +47042,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 7018,
 										["c_curado"] = 7018,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 0,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 									[27137] = {
@@ -46454,9 +47075,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 1032,
 										["c_curado"] = 8551,
+										["n_curado"] = 7729,
 										["totaldenied"] = 0,
 										["n_amt"] = 7,
-										["n_curado"] = 7729,
 										["absorbed"] = 0,
 									},
 									[53654] = {
@@ -46479,9 +47100,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 3805,
 										["totaldenied"] = 0,
 										["n_amt"] = 8,
-										["n_curado"] = 3805,
 										["absorbed"] = 0,
 									},
 								},
@@ -46495,9 +47116,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.006438,
 							["delay"] = 1667249258,
-							["healing_from"] = {
-								["Bopshop-Ashbringer"] = true,
-							},
+							["aID"] = "4742-03A8E3B9",
 						}, -- [2]
 						{
 							["flag_original"] = 1352,
@@ -46544,8 +47163,11 @@ _detalhes_database = {
 							["healing_taken"] = 13449.001351,
 							["fight_component"] = true,
 							["end_time"] = 1667249261,
-							["aID"] = "4474-047E5D59",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Шерифдуфи-Пламегор"] = true,
+								["Кейналай-Пламегор"] = true,
+							},
 							["nome"] = "Кейналай-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -46585,9 +47207,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 9921,
 										["totaldenied"] = 0,
 										["n_amt"] = 103,
-										["n_curado"] = 9921,
 										["absorbed"] = 0,
 									},
 									[26979] = {
@@ -46609,9 +47231,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 2512,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 2512,
 										["absorbed"] = 0,
 									},
 									[26980] = {
@@ -46635,9 +47257,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 3281,
 										["totaldenied"] = 0,
 										["n_amt"] = 25,
-										["n_curado"] = 3281,
 										["absorbed"] = 0,
 									},
 									[26982] = {
@@ -46670,9 +47292,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 21717,
 										["totaldenied"] = 0,
 										["n_amt"] = 62,
-										["n_curado"] = 21717,
 										["absorbed"] = 0,
 									},
 									[18562] = {
@@ -46694,9 +47316,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 1821,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 1821,
 										["absorbed"] = 0,
 									},
 								},
@@ -46710,10 +47332,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.001351,
 							["delay"] = 1667249258,
-							["healing_from"] = {
-								["Шерифдуфи-Пламегор"] = true,
-								["Кейналай-Пламегор"] = true,
-							},
+							["aID"] = "4474-047E5D59",
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
@@ -46748,8 +47367,12 @@ _detalhes_database = {
 							["healing_taken"] = 34314.007016,
 							["fight_component"] = true,
 							["end_time"] = 1667249261,
-							["aID"] = "4441-027C4C2D",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Purpplehaze-Auberdine"] = true,
+								["Hathgarth <Purpplehaze-Auberdine>"] = true,
+								["Bopshop-Ashbringer"] = true,
+							},
 							["nome"] = "Purpplehaze-Auberdine",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -46773,9 +47396,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["totaldenied"] = 0,
 										["n_amt"] = 21,
 										["n_curado"] = 8943,
+										["totaldenied"] = 0,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -46799,9 +47422,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 8382,
 										["totaldenied"] = 0,
 										["n_amt"] = 26,
-										["n_curado"] = 8382,
 										["absorbed"] = 0,
 									},
 									[47860] = {
@@ -46824,9 +47447,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 									[54181] = {
@@ -46849,9 +47472,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 6638,
 										["totaldenied"] = 0,
 										["n_amt"] = 96,
-										["n_curado"] = 6638,
 										["absorbed"] = 0,
 									},
 								},
@@ -46865,11 +47488,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.007016,
 							["delay"] = 1667249249,
-							["healing_from"] = {
-								["Purpplehaze-Auberdine"] = true,
-								["Hathgarth <Purpplehaze-Auberdine>"] = true,
-								["Bopshop-Ashbringer"] = true,
-							},
+							["aID"] = "4441-027C4C2D",
 						}, -- [4]
 						{
 							["flag_original"] = 66888,
@@ -46922,9 +47541,9 @@ _detalhes_database = {
 										},
 										["n_max"] = 2268,
 										["targets"] = {
-											["Молимся-Пламегор"] = 2202,
 											["Рубежж-Пламегор"] = 1797,
 											["Шерифдуфи-Пламегор"] = 2255,
+											["Молимся-Пламегор"] = 2202,
 											["Небославян-Пламегор"] = 7786,
 										},
 										["n_min"] = 2255,
@@ -46937,9 +47556,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 1797,
 										["c_curado"] = 5107,
+										["n_curado"] = 8933,
 										["totaldenied"] = 0,
 										["n_amt"] = 5,
-										["n_curado"] = 8933,
 										["absorbed"] = 0,
 									},
 									[53653] = {
@@ -46962,9 +47581,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 									[53654] = {
@@ -46987,9 +47606,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 									[27137] = {
@@ -47015,9 +47634,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 1873,
 										["c_curado"] = 6654,
+										["n_curado"] = 5153,
 										["totaldenied"] = 0,
 										["n_amt"] = 4,
-										["n_curado"] = 5153,
 										["absorbed"] = 0,
 									},
 								},
@@ -47096,9 +47715,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 1641,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 1641,
 										["absorbed"] = 0,
 									},
 									[54181] = {
@@ -47123,9 +47742,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 1055,
 										["totaldenied"] = 0,
 										["n_amt"] = 25,
-										["n_curado"] = 1055,
 										["absorbed"] = 0,
 									},
 									[27235] = {
@@ -47147,9 +47766,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 2080,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 2080,
 										["absorbed"] = 0,
 									},
 									[28495] = {
@@ -47171,9 +47790,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 2382,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 2382,
 										["absorbed"] = 0,
 									},
 									[28189] = {
@@ -47196,9 +47815,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 3797,
 										["totaldenied"] = 0,
 										["n_amt"] = 24,
-										["n_curado"] = 3797,
 										["absorbed"] = 0,
 									},
 								},
@@ -47282,9 +47901,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 586,
 										["totaldenied"] = 0,
 										["n_amt"] = 3,
-										["n_curado"] = 586,
 										["absorbed"] = 0,
 									},
 									[33778] = {
@@ -47307,9 +47926,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 1109,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 1109,
 										["absorbed"] = 0,
 									},
 									[48440] = {
@@ -47337,9 +47956,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 1818,
 										["totaldenied"] = 0,
 										["n_amt"] = 13,
-										["n_curado"] = 1818,
 										["absorbed"] = 0,
 									},
 									[48442] = {
@@ -47364,9 +47983,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 2680,
 										["c_curado"] = 2680,
+										["n_curado"] = 3805,
 										["totaldenied"] = 0,
 										["n_amt"] = 23,
-										["n_curado"] = 3805,
 										["absorbed"] = 0,
 									},
 									[48450] = {
@@ -47389,9 +48008,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 995,
 										["totaldenied"] = 0,
 										["n_amt"] = 16,
-										["n_curado"] = 995,
 										["absorbed"] = 0,
 									},
 								},
@@ -47442,8 +48061,12 @@ _detalhes_database = {
 							["healing_taken"] = 13801.007879,
 							["fight_component"] = true,
 							["end_time"] = 1667249261,
-							["aID"] = "4454-04AD4921",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Calmyboy-MirageRaceway"] = true,
+								["Bopshop-Ashbringer"] = true,
+								["Airforceone-MirageRaceway"] = true,
+							},
 							["nome"] = "Calmyboy-MirageRaceway",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -47466,9 +48089,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 728,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 728,
 										["absorbed"] = 0,
 									},
 									[48707] = {
@@ -47491,9 +48114,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["totaldenied"] = 0,
 										["n_amt"] = 2,
 										["n_curado"] = 629,
+										["totaldenied"] = 0,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -47516,9 +48139,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 5088,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 5088,
 										["absorbed"] = 0,
 									},
 									[45470] = {
@@ -47540,9 +48163,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 2120,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 2120,
 										["absorbed"] = 0,
 									},
 									[49497] = {
@@ -47565,9 +48188,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["totaldenied"] = 0,
 										["n_amt"] = 3,
 										["n_curado"] = 82,
+										["totaldenied"] = 0,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -47590,9 +48213,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 546,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 546,
 										["absorbed"] = 0,
 									},
 									[52286] = {
@@ -47615,9 +48238,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["totaldenied"] = 0,
 										["n_amt"] = 8,
 										["n_curado"] = 1339,
+										["totaldenied"] = 0,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -47632,11 +48255,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.007879,
 							["delay"] = 1667249245,
-							["healing_from"] = {
-								["Calmyboy-MirageRaceway"] = true,
-								["Bopshop-Ashbringer"] = true,
-								["Airforceone-MirageRaceway"] = true,
-							},
+							["aID"] = "4454-04AD4921",
 						}, -- [8]
 						{
 							["flag_original"] = 1352,
@@ -47667,8 +48286,13 @@ _detalhes_database = {
 							["healing_taken"] = 14856.003282,
 							["fight_component"] = true,
 							["end_time"] = 1667249261,
-							["aID"] = "4474-04A9CC5B",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Коббал-Пламегор"] = true,
+								["Шерифдуфи-Пламегор"] = true,
+								["Молимся-Пламегор"] = true,
+								["Сварт-Пламегор"] = true,
+							},
 							["nome"] = "Сварт-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -47691,9 +48315,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 2757,
 										["totaldenied"] = 0,
 										["n_amt"] = 16,
-										["n_curado"] = 2757,
 										["absorbed"] = 0,
 									},
 									[29842] = {
@@ -47716,9 +48340,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 3527,
 										["totaldenied"] = 0,
 										["n_amt"] = 10,
-										["n_curado"] = 3527,
 										["absorbed"] = 0,
 									},
 									[43185] = {
@@ -47740,9 +48364,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 3495,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 3495,
 										["absorbed"] = 0,
 									},
 								},
@@ -47756,12 +48380,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.003282,
 							["delay"] = 1667249220,
-							["healing_from"] = {
-								["Коббал-Пламегор"] = true,
-								["Шерифдуфи-Пламегор"] = true,
-								["Молимся-Пламегор"] = true,
-								["Сварт-Пламегор"] = true,
-							},
+							["aID"] = "4474-04A9CC5B",
 						}, -- [9]
 						{
 							["flag_original"] = 1352,
@@ -47828,9 +48447,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["totaldenied"] = 0,
 										["n_amt"] = 17,
 										["n_curado"] = 5891,
+										["totaldenied"] = 0,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -47864,9 +48483,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 2930,
 										["totaldenied"] = 0,
 										["n_amt"] = 153,
-										["n_curado"] = 2930,
 										["absorbed"] = 0,
 									},
 									[48299] = {
@@ -47889,9 +48508,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 322,
 										["totaldenied"] = 0,
 										["n_amt"] = 9,
-										["n_curado"] = 322,
 										["absorbed"] = 0,
 									},
 									[75999] = {
@@ -47914,9 +48533,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 220,
 										["totaldenied"] = 0,
 										["n_amt"] = 4,
-										["n_curado"] = 220,
 										["absorbed"] = 0,
 									},
 								},
@@ -47971,8 +48590,11 @@ _detalhes_database = {
 							["healing_taken"] = 4584.006031,
 							["fight_component"] = true,
 							["end_time"] = 1667249261,
-							["aID"] = "4454-044931B8",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Airforceone-MirageRaceway"] = true,
+								["Bopshop-Ashbringer"] = true,
+							},
 							["nome"] = "Airforceone-MirageRaceway",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -47997,9 +48619,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 3062,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 3062,
 										["absorbed"] = 0,
 									},
 									[48784] = {
@@ -48025,9 +48647,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 2912,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 2912,
 										["absorbed"] = 0,
 									},
 									[20167] = {
@@ -48049,9 +48671,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 464,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 464,
 										["absorbed"] = 0,
 									},
 								},
@@ -48065,10 +48687,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.006031,
 							["delay"] = 1667249258,
-							["healing_from"] = {
-								["Airforceone-MirageRaceway"] = true,
-								["Bopshop-Ashbringer"] = true,
-							},
+							["aID"] = "4454-044931B8",
 						}, -- [11]
 						{
 							["flag_original"] = 1352,
@@ -48126,9 +48745,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["totaldenied"] = 0,
 										["n_amt"] = 5,
 										["n_curado"] = 1406,
+										["totaldenied"] = 0,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -48152,9 +48771,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 1747,
 										["totaldenied"] = 0,
 										["n_amt"] = 16,
-										["n_curado"] = 1747,
 										["absorbed"] = 0,
 									},
 									[28189] = {
@@ -48177,9 +48796,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 565,
 										["totaldenied"] = 0,
 										["n_amt"] = 5,
-										["n_curado"] = 565,
 										["absorbed"] = 0,
 									},
 								},
@@ -48257,9 +48876,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["totaldenied"] = 0,
 										["n_amt"] = 1,
 										["n_curado"] = 1158,
+										["totaldenied"] = 0,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -48307,8 +48926,9 @@ _detalhes_database = {
 							["healing_taken"] = 0.008271,
 							["fight_component"] = true,
 							["end_time"] = 1667249261,
-							["aID"] = "4465-02B843FA",
 							["pvp_component"] = true,
+							["healing_from"] = {
+							},
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -48331,9 +48951,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 1147,
 										["totaldenied"] = 0,
 										["n_amt"] = 7,
-										["n_curado"] = 1147,
 										["absorbed"] = 0,
 									},
 								},
@@ -48347,8 +48967,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.008271,
 							["delay"] = 1667249151,
-							["healing_from"] = {
-							},
+							["aID"] = "4465-02B843FA",
 						}, -- [14]
 						{
 							["flag_original"] = 1300,
@@ -48379,8 +48998,11 @@ _detalhes_database = {
 							["healing_taken"] = 2111.001528,
 							["fight_component"] = true,
 							["end_time"] = 1667249261,
-							["aID"] = "4441-039BA4F5",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Memoria-Auberdine"] = true,
+								["Bopshop-Ashbringer"] = true,
+							},
 							["nome"] = "Memoria-Auberdine",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -48404,9 +49026,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 213,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 213,
 										["absorbed"] = 0,
 									},
 								},
@@ -48420,10 +49042,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.001528,
 							["delay"] = 1667249256,
-							["healing_from"] = {
-								["Memoria-Auberdine"] = true,
-								["Bopshop-Ashbringer"] = true,
-							},
+							["aID"] = "4441-039BA4F5",
 						}, -- [15]
 						{
 							["flag_original"] = 1298,
@@ -48451,8 +49070,11 @@ _detalhes_database = {
 							["healing_taken"] = 6036.008405000001,
 							["fight_component"] = true,
 							["end_time"] = 1667249261,
-							["aID"] = "4477-02CA9A6D",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Moolatz"] = true,
+								["Bopshop-Ashbringer"] = true,
+							},
 							["nome"] = "Boopa-Venoxis",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -48467,10 +49089,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.008405,
 							["delay"] = 0,
-							["healing_from"] = {
-								["Moolatz"] = true,
-								["Bopshop-Ashbringer"] = true,
-							},
+							["aID"] = "4477-02CA9A6D",
 						}, -- [16]
 						{
 							["flag_original"] = 1298,
@@ -48498,8 +49117,12 @@ _detalhes_database = {
 							["healing_taken"] = 5687.006562000001,
 							["fight_component"] = true,
 							["end_time"] = 1667249261,
-							["aID"] = "4813-044A8ED2",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Bopshop-Ashbringer"] = true,
+								["Airforceone-MirageRaceway"] = true,
+								["Макнаке"] = true,
+							},
 							["nome"] = "Fatsnack-Mandokir",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -48514,11 +49137,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.006562,
 							["delay"] = 0,
-							["healing_from"] = {
-								["Bopshop-Ashbringer"] = true,
-								["Airforceone-MirageRaceway"] = true,
-								["Макнаке"] = true,
-							},
+							["aID"] = "4813-044A8ED2",
 						}, -- [17]
 						{
 							["flag_original"] = 1300,
@@ -48546,8 +49165,11 @@ _detalhes_database = {
 							["healing_taken"] = 2138.004385,
 							["fight_component"] = true,
 							["end_time"] = 1667249261,
-							["aID"] = "4811-0394EED3",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Airforceone-MirageRaceway"] = true,
+								["Bopshop-Ashbringer"] = true,
+							},
 							["nome"] = "Maivi-Giantstalker",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -48562,10 +49184,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.004385,
 							["delay"] = 0,
-							["healing_from"] = {
-								["Airforceone-MirageRaceway"] = true,
-								["Bopshop-Ashbringer"] = true,
-							},
+							["aID"] = "4811-0394EED3",
 						}, -- [18]
 						{
 							["flag_original"] = 1352,
@@ -48644,7 +49263,7 @@ _detalhes_database = {
 							["healing_taken"] = 6638.002368,
 							["fight_component"] = true,
 							["end_time"] = 1667249261,
-							["classe"] = "PET",
+							["pvp_component"] = true,
 							["ownerName"] = "Purpplehaze-Auberdine",
 							["nome"] = "Hathgarth <Purpplehaze-Auberdine>",
 							["spells"] = {
@@ -48669,16 +49288,18 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["totaldenied"] = 0,
 										["n_amt"] = 19,
 										["n_curado"] = 10855,
+										["totaldenied"] = 0,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Purpplehaze-Auberdine"] = true,
+							},
 							["start_time"] = 1667249251,
 							["aID"] = "Pet-0-4468-489-4518-1860-020049119C",
 							["custom"] = 0,
@@ -48686,9 +49307,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.002368,
 							["delay"] = 1667249221,
-							["healing_from"] = {
-								["Purpplehaze-Auberdine"] = true,
-							},
+							["classe"] = "PET",
 						}, -- [20]
 						{
 							["flag_original"] = 4424,
@@ -48718,7 +49337,7 @@ _detalhes_database = {
 							["healing_taken"] = 764.0063680000001,
 							["fight_component"] = true,
 							["end_time"] = 1667249261,
-							["classe"] = "PET",
+							["pvp_component"] = true,
 							["ownerName"] = "Дарелос-Пламегор",
 							["nome"] = "Макнаке <Дарелос-Пламегор>",
 							["spells"] = {
@@ -48743,16 +49362,18 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["totaldenied"] = 0,
 										["n_amt"] = 17,
 										["n_curado"] = 8775,
+										["totaldenied"] = 0,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Дарелос-Пламегор"] = true,
+							},
 							["start_time"] = 1667249246,
 							["aID"] = "Pet-0-4468-489-4518-1860-010057EDD8",
 							["custom"] = 0,
@@ -48760,9 +49381,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.006368,
 							["delay"] = 1667249189,
-							["healing_from"] = {
-								["Дарелос-Пламегор"] = true,
-							},
+							["classe"] = "PET",
 						}, -- [21]
 						{
 							["flag_original"] = 4424,
@@ -48822,9 +49441,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["totaldenied"] = 0,
 										["n_amt"] = 8,
 										["n_curado"] = 6102,
+										["totaldenied"] = 0,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -48894,9 +49513,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["totaldenied"] = 0,
 										["n_amt"] = 5,
 										["n_curado"] = 2900,
+										["totaldenied"] = 0,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -48940,7 +49559,7 @@ _detalhes_database = {
 							["healing_taken"] = 234.00704,
 							["fight_component"] = true,
 							["end_time"] = 1667249261,
-							["heal_enemy_amt"] = 0,
+							["pvp_component"] = true,
 							["ownerName"] = "Молимся-Пламегор",
 							["nome"] = "Shadowfiend <Молимся-Пламегор>",
 							["spells"] = {
@@ -48948,7 +49567,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 3,
 							},
-							["pvp_component"] = true,
+							["targets_overheal"] = {
+							},
 							["start_time"] = 1667249261,
 							["classe"] = "PET",
 							["custom"] = 0,
@@ -48956,8 +49576,7 @@ _detalhes_database = {
 							["last_event"] = 0,
 							["totaldenied"] = 0.00704,
 							["delay"] = 0,
-							["targets_overheal"] = {
-							},
+							["heal_enemy_amt"] = 0,
 						}, -- [24]
 						{
 							["flag_original"] = 4372,
@@ -49011,9 +49630,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 									[54131] = {
@@ -49036,9 +49655,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 11,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -49070,9 +49689,9 @@ _detalhes_database = {
 								["Memoria-Auberdine"] = 435,
 								["Maivi-Giantstalker"] = 1107,
 								["Fatsnack-Mandokir"] = 1206,
-								["Boopa-Venoxis"] = 1214,
 								["Bopshop-Ashbringer"] = 1439,
 								["Purpplehaze-Auberdine"] = 1473,
+								["Boopa-Venoxis"] = 1214,
 							},
 							["pets"] = {
 							},
@@ -49096,9 +49715,9 @@ _detalhes_database = {
 											["Memoria-Auberdine"] = 435,
 											["Maivi-Giantstalker"] = 1107,
 											["Fatsnack-Mandokir"] = 1206,
-											["Boopa-Venoxis"] = 1214,
 											["Bopshop-Ashbringer"] = 1439,
 											["Purpplehaze-Auberdine"] = 1473,
+											["Boopa-Venoxis"] = 1214,
 										},
 										["counter"] = 390,
 									},
@@ -50470,9 +51089,10 @@ _detalhes_database = {
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 239,
-							["nome"] = "Maivi-Giantstalker",
+							["buff_uptime_targets"] = {
+							},
 							["cc_done"] = 3.007549,
-							["interrupt"] = 2.006282,
+							["nome"] = "Maivi-Giantstalker",
 							["interrupt_targets"] = {
 								["Рубежж-Пламегор"] = 1,
 								["Шерифдуфи-Пламегор"] = 1,
@@ -50486,8 +51106,7 @@ _detalhes_database = {
 							["tipo"] = 4,
 							["classe"] = "MAGE",
 							["last_event"] = 1667249261,
-							["buff_uptime_targets"] = {
-							},
+							["interrupt"] = 2.006282,
 							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-4811-0394EED3",
@@ -50990,7 +51609,8 @@ _detalhes_database = {
 						}, -- [3]
 						{
 							["flag_original"] = 1300,
-							["nome"] = "Calmyboy-MirageRaceway",
+							["debuff_uptime_targets"] = {
+							},
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[45524] = {
@@ -51229,8 +51849,7 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["last_event"] = 1667249261,
-							["buff_uptime_targets"] = {
-							},
+							["nome"] = "Calmyboy-MirageRaceway",
 							["grupo"] = true,
 							["spell_cast"] = {
 								[45524] = 5,
@@ -51250,7 +51869,7 @@ _detalhes_database = {
 							["cc_break_oque"] = {
 								[28271] = 1,
 							},
-							["debuff_uptime_targets"] = {
+							["buff_uptime_targets"] = {
 							},
 							["tipo"] = 4,
 							["pets"] = {
@@ -51546,13 +52165,13 @@ _detalhes_database = {
 								[47837] = 1,
 								[47860] = 1,
 								[34936] = 1,
-								[47846] = 3,
+								[47891] = 3,
 								[55039] = 2,
 								[23035] = 1,
 								[47810] = 8,
-								[47891] = 3,
-								[17962] = 6,
 								[59171] = 4,
+								[17962] = 6,
+								[47846] = 3,
 							},
 							["buff_uptime_targets"] = {
 							},
@@ -51835,13 +52454,13 @@ _detalhes_database = {
 								[5116] = 1,
 								[27019] = 4,
 								[48848] = 1,
-								[53209] = 4,
+								[883] = 1,
 								[27016] = 5,
 								[27065] = 3,
-								[883] = 1,
+								[19506] = 1,
 								[75] = 14,
 								[53351] = 1,
-								[19506] = 1,
+								[53209] = 4,
 								[34490] = 2,
 								[27044] = 1,
 								[3045] = 1,
@@ -52008,13 +52627,13 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[19746] = {
-										["appliedamt"] = 2,
+									[31821] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["activedamt"] = 2,
-										["uptime"] = 73,
-										["id"] = 19746,
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 31821,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -52052,17 +52671,6 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[31821] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 6,
-										["id"] = 31821,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[20166] = {
 										["appliedamt"] = 1,
 										["targets"] = {
@@ -52070,6 +52678,17 @@ _detalhes_database = {
 										["activedamt"] = 1,
 										["uptime"] = 131,
 										["id"] = 20166,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[19746] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 73,
+										["id"] = 19746,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -52093,7 +52712,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["nome"] = "Bopshop-Ashbringer",
+							["buff_uptime_targets"] = {
+							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 81,
 							["buff_uptime"] = 558,
@@ -52121,13 +52741,12 @@ _detalhes_database = {
 								[33072] = 10,
 								[1044] = 1,
 							},
-							["buff_uptime_targets"] = {
-							},
+							["nome"] = "Bopshop-Ashbringer",
 							["dispell_targets"] = {
 								["Bopshop-Ashbringer"] = 1,
 							},
-							["tipo"] = 4,
 							["last_event"] = 1667249261,
+							["tipo"] = 4,
 							["cooldowns_defensive_spells"] = {
 								["_ActorTable"] = {
 									[498] = {
@@ -52600,7 +53219,7 @@ _detalhes_database = {
 						}, -- [15]
 						{
 							["fight_component"] = true,
-							["classe"] = "UNGROUPPLAYER",
+							["aID"] = "4474-047E5D59",
 							["pvp_component"] = true,
 							["flag_original"] = 1352,
 							["nome"] = "Кейналай-Пламегор",
@@ -52620,9 +53239,9 @@ _detalhes_database = {
 								[18562] = 1,
 								[768] = 1,
 							},
-							["last_event"] = 0,
 							["tipo"] = 4,
-							["aID"] = "4474-047E5D59",
+							["last_event"] = 0,
+							["classe"] = "UNGROUPPLAYER",
 							["serial"] = "Player-4474-047E5D59",
 							["pvp"] = true,
 						}, -- [16]
@@ -53071,10 +53690,10 @@ _detalhes_database = {
 							},
 							["nome"] = "Дарелос-Пламегор",
 							["cc_done_targets"] = {
-								["Purpplehaze-Auberdine"] = 1,
-								["Bopshop-Ashbringer"] = 1,
-								["Fatsnack-Mandokir"] = 1,
 								["Boopa-Venoxis"] = 1,
+								["Purpplehaze-Auberdine"] = 1,
+								["Fatsnack-Mandokir"] = 1,
+								["Bopshop-Ashbringer"] = 1,
 							},
 							["tipo"] = 4,
 							["last_event"] = 1667249200,
@@ -53581,9 +54200,9 @@ _detalhes_database = {
 							["grupo"] = true,
 							["need_refresh"] = true,
 							["spell_cast"] = {
-								[1044] = 2,
+								[25898] = 1,
 								[10308] = 1,
-								[53408] = 3,
+								[1044] = 2,
 								[33721] = 1,
 								[10278] = 1,
 								[4987] = 2,
@@ -53595,7 +54214,7 @@ _detalhes_database = {
 								[48800] = 1,
 								[53563] = 2,
 								[60347] = 1,
-								[25898] = 1,
+								[53408] = 3,
 							},
 							["pvp_component"] = true,
 							["dispell_oque"] = {
@@ -53905,8 +54524,8 @@ _detalhes_database = {
 								[59752] = 1,
 								[1715] = 1,
 								[7384] = 1,
+								[71] = 1,
 								[2457] = 2,
-								[47485] = 1,
 								[43185] = 1,
 								[20252] = 1,
 								[5246] = 1,
@@ -53914,7 +54533,7 @@ _detalhes_database = {
 								[47465] = 1,
 								[2458] = 1,
 								[11578] = 2,
-								[71] = 1,
+								[47485] = 1,
 							},
 							["cc_done_targets"] = {
 								["Fatsnack-Mandokir"] = 1,
@@ -59266,16 +59885,16 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Airforceone-MirageRaceway"] = true,
 					["Calmyboy-MirageRaceway"] = true,
-					["Moolatz"] = true,
-					["Memoria-Auberdine"] = true,
 					["Fatsnack-Mandokir"] = true,
+					["Altarpain-MirageRaceway"] = true,
+					["Moolatz"] = true,
 					["Maivi-Giantstalker"] = true,
 					["Bopshop-Ashbringer"] = true,
 					["Boopa-Venoxis"] = true,
 					["Purpplehaze-Auberdine"] = true,
-					["Altarpain-MirageRaceway"] = true,
+					["Memoria-Auberdine"] = true,
 				},
-			}, -- [16]
+			}, -- [17]
 			{
 				{
 					["tipo"] = 2,
@@ -59284,7 +59903,8 @@ _detalhes_database = {
 						{
 							["flag_original"] = 1298,
 							["totalabsorbed"] = 1593.006874,
-							["colocacao"] = 6,
+							["friendlyfire"] = {
+							},
 							["damage_from"] = {
 								["Коббал-Пламегор"] = true,
 								["Ницшеподлсд-Пламегор"] = true,
@@ -59299,16 +59919,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["total"] = 3854.006874,
-							["aID"] = "4454-04AD4921",
 							["friendlyfire_total"] = 0,
+							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3854.006874,
-							["delay"] = 1667249124,
-							["classe"] = "DEATHKNIGHT",
+							["serial"] = "Player-4454-04AD4921",
+							["aID"] = "4454-04AD4921",
 							["fight_component"] = true,
 							["end_time"] = 1667249130,
-							["serial"] = "Player-4454-04AD4921",
+							["damage_taken"] = 1537.006874,
 							["dps_started"] = false,
 							["nome"] = "Calmyboy-MirageRaceway",
 							["spells"] = {
@@ -59485,13 +60105,12 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["damage_taken"] = 1537.006874,
-							["friendlyfire"] = {
-							},
-							["on_hold"] = false,
+							["colocacao"] = 6,
+							["last_dps"] = 642.334479,
+							["delay"] = 1667249124,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["last_dps"] = 642.334479,
+							["on_hold"] = false,
 							["start_time"] = 1667249124,
 							["pvp_component"] = true,
 							["pvp"] = true,
@@ -59727,7 +60346,8 @@ _detalhes_database = {
 						{
 							["flag_original"] = 1300,
 							["totalabsorbed"] = 0.005028,
-							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -59739,16 +60359,16 @@ _detalhes_database = {
 								"Hathgarth <Purpplehaze-Auberdine>", -- [1]
 							},
 							["total"] = 11754.005028,
-							["aID"] = "4441-027C4C2D",
 							["friendlyfire_total"] = 0,
+							["classe"] = "WARLOCK",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 11754.005028,
-							["delay"] = 1667249124,
-							["classe"] = "WARLOCK",
+							["serial"] = "Player-4441-027C4C2D",
+							["aID"] = "4441-027C4C2D",
 							["fight_component"] = true,
 							["end_time"] = 1667249130,
-							["serial"] = "Player-4441-027C4C2D",
+							["damage_taken"] = 0.005028,
 							["dps_started"] = false,
 							["nome"] = "Purpplehaze-Auberdine",
 							["spells"] = {
@@ -59870,13 +60490,12 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["damage_taken"] = 0.005028,
-							["friendlyfire"] = {
-							},
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["last_dps"] = 2350.8010056,
+							["delay"] = 1667249124,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["last_dps"] = 2350.8010056,
+							["on_hold"] = false,
 							["start_time"] = 1667249126,
 							["pvp_component"] = true,
 							["pvp"] = true,
@@ -59894,16 +60513,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["on_hold"] = false,
-							["end_time"] = 1667249130,
-							["classe"] = "PET",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.005476,
 							["friendlyfire"] = {
 							},
 							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.005476,
+							["classe"] = "PET",
+							["aID"] = "Pet-0-4468-489-4518-1860-020049119C",
 							["fight_component"] = true,
-							["total"] = 0.005476,
+							["end_time"] = 1667249130,
 							["serial"] = "Pet-0-4468-489-4518-1860-020049119C",
 							["ownerName"] = "Purpplehaze-Auberdine",
 							["nome"] = "Hathgarth <Purpplehaze-Auberdine>",
@@ -59912,8 +60531,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["aID"] = "Pet-0-4468-489-4518-1860-020049119C",
 							["dps_started"] = false,
+							["total"] = 0.005476,
 							["delay"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
@@ -59996,7 +60615,8 @@ _detalhes_database = {
 						{
 							["flag_original"] = 1298,
 							["totalabsorbed"] = 591.00783,
-							["colocacao"] = 5,
+							["friendlyfire"] = {
+							},
 							["damage_from"] = {
 								["Молимся-Пламегор"] = true,
 								["Дарелос-Пламегор"] = true,
@@ -60012,16 +60632,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["total"] = 2465.00783,
-							["aID"] = "4477-02CA9A6D",
 							["friendlyfire_total"] = 0,
+							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2465.00783,
-							["delay"] = 0,
-							["classe"] = "MAGE",
+							["serial"] = "Player-4477-02CA9A6D",
+							["aID"] = "4477-02CA9A6D",
 							["fight_component"] = true,
 							["end_time"] = 1667249130,
-							["serial"] = "Player-4477-02CA9A6D",
+							["damage_taken"] = 5627.007830000001,
 							["dps_started"] = false,
 							["nome"] = "Boopa-Venoxis",
 							["spells"] = {
@@ -60089,13 +60709,12 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["damage_taken"] = 5627.007830000001,
-							["friendlyfire"] = {
-							},
-							["on_hold"] = false,
+							["colocacao"] = 5,
+							["last_dps"] = 0.00261,
+							["delay"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["last_dps"] = 0.00261,
+							["on_hold"] = false,
 							["start_time"] = 1667249129,
 							["pvp_component"] = true,
 							["pvp"] = true,
@@ -60230,7 +60849,8 @@ _detalhes_database = {
 						{
 							["flag_original"] = 1300,
 							["totalabsorbed"] = 0.00593,
-							["colocacao"] = 4,
+							["friendlyfire"] = {
+							},
 							["damage_from"] = {
 								["Дарелос-Пламегор"] = true,
 								["Ницшеподлсд-Пламегор"] = true,
@@ -60246,16 +60866,16 @@ _detalhes_database = {
 								"Grr <Memoria-Auberdine>", -- [1]
 							},
 							["total"] = 5257.00593,
-							["aID"] = "4441-039BA4F5",
 							["friendlyfire_total"] = 0,
+							["classe"] = "HUNTER",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 4287.00593,
-							["delay"] = 1667249124,
-							["classe"] = "HUNTER",
+							["serial"] = "Player-4441-039BA4F5",
+							["aID"] = "4441-039BA4F5",
 							["fight_component"] = true,
 							["end_time"] = 1667249130,
-							["serial"] = "Player-4441-039BA4F5",
+							["damage_taken"] = 4433.00593,
 							["dps_started"] = false,
 							["nome"] = "Memoria-Auberdine",
 							["spells"] = {
@@ -60350,13 +60970,12 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["damage_taken"] = 4433.00593,
-							["friendlyfire"] = {
-							},
-							["on_hold"] = false,
+							["colocacao"] = 4,
+							["last_dps"] = 1051.401186,
+							["delay"] = 1667249124,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["last_dps"] = 1051.401186,
+							["on_hold"] = false,
 							["start_time"] = 1667249126,
 							["pvp_component"] = true,
 							["pvp"] = true,
@@ -61258,7 +61877,15 @@ _detalhes_database = {
 						{
 							["flag_original"] = 1298,
 							["totalabsorbed"] = 0.007757,
-							["colocacao"] = 6,
+							["friendlyfire"] = {
+								["Fatsnack-Mandokir"] = {
+									["spells"] = {
+										[43043] = 126,
+										[12654] = 229,
+									},
+									["total"] = 355,
+								},
+							},
 							["damage_from"] = {
 								["Fatsnack-Mandokir"] = true,
 								["Сварт-Пламегор"] = true,
@@ -61270,16 +61897,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["total"] = 4525.007757,
-							["aID"] = "4813-044A8ED2",
 							["friendlyfire_total"] = 355,
+							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 4525.007757,
-							["delay"] = 0,
-							["classe"] = "MAGE",
+							["serial"] = "Player-4813-044A8ED2",
+							["aID"] = "4813-044A8ED2",
 							["fight_component"] = true,
 							["end_time"] = 1667249130,
-							["serial"] = "Player-4813-044A8ED2",
+							["damage_taken"] = 4895.007756999999,
 							["dps_started"] = false,
 							["nome"] = "Fatsnack-Mandokir",
 							["spells"] = {
@@ -61401,20 +62028,12 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["damage_taken"] = 4895.007756999999,
-							["friendlyfire"] = {
-								["Fatsnack-Mandokir"] = {
-									["spells"] = {
-										[43043] = 126,
-										[12654] = 229,
-									},
-									["total"] = 355,
-								},
-							},
-							["on_hold"] = false,
+							["colocacao"] = 6,
+							["last_dps"] = 565.625969625,
+							["delay"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["last_dps"] = 565.625969625,
+							["on_hold"] = false,
 							["start_time"] = 1667249122,
 							["pvp_component"] = true,
 							["pvp"] = true,
@@ -61432,16 +62051,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["on_hold"] = false,
-							["total"] = 970.001663,
-							["aID"] = "Pet-0-4468-489-4518-25675-040076B350",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 970.001663,
 							["friendlyfire"] = {
 							},
 							["classe"] = "PET",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 970.001663,
+							["aID"] = "Pet-0-4468-489-4518-25675-040076B350",
+							["friendlyfire_total"] = 0,
 							["fight_component"] = true,
-							["end_time"] = 1667249130,
+							["total"] = 970.001663,
 							["serial"] = "Pet-0-4468-489-4518-25675-040076B350",
 							["ownerName"] = "Memoria-Auberdine",
 							["nome"] = "Grr <Memoria-Auberdine>",
@@ -61506,8 +62125,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire_total"] = 0,
 							["dps_started"] = false,
+							["end_time"] = 1667249130,
 							["delay"] = 1667249124,
 							["last_dps"] = 0,
 							["custom"] = 0,
@@ -61530,18 +62149,18 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["on_hold"] = false,
-							["end_time"] = 1667249130,
-							["classe"] = "UNGROUPPLAYER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.008477,
 							["friendlyfire"] = {
 							},
 							["friendlyfire_total"] = 0,
-							["fight_component"] = true,
-							["total"] = 0.008477,
-							["pvp_component"] = true,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.008477,
+							["classe"] = "UNGROUPPLAYER",
 							["aID"] = "4474-047E5D59",
+							["fight_component"] = true,
+							["end_time"] = 1667249130,
+							["pvp_component"] = true,
+							["dps_started"] = false,
 							["nome"] = "Кейналай-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -61627,7 +62246,7 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["dps_started"] = false,
+							["total"] = 0.008477,
 							["delay"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
@@ -61836,8 +62455,10 @@ _detalhes_database = {
 							["healing_taken"] = 715.001501,
 							["fight_component"] = true,
 							["end_time"] = 1667249130,
-							["aID"] = "4474-04A80422",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Рубежж-Пламегор"] = true,
+							},
 							["nome"] = "Рубежж-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -61860,9 +62481,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 433,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 433,
 										["absorbed"] = 0,
 									},
 									[28189] = {
@@ -61884,9 +62505,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 282,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 282,
 										["absorbed"] = 0,
 									},
 								},
@@ -61900,9 +62521,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.001501,
 							["delay"] = 1667249127,
-							["healing_from"] = {
-								["Рубежж-Пламегор"] = true,
-							},
+							["aID"] = "4474-04A80422",
 						}, -- [1]
 						{
 							["flag_original"] = 1352,
@@ -61933,8 +62552,10 @@ _detalhes_database = {
 							["healing_taken"] = 4079.004059,
 							["fight_component"] = true,
 							["end_time"] = 1667249130,
-							["aID"] = "4474-04A9CC5B",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Сварт-Пламегор"] = true,
+							},
 							["nome"] = "Сварт-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -61957,9 +62578,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 1848,
 										["totaldenied"] = 0,
 										["n_amt"] = 9,
-										["n_curado"] = 1848,
 										["absorbed"] = 0,
 									},
 									[27235] = {
@@ -61981,9 +62602,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 2205,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 2205,
 										["absorbed"] = 0,
 									},
 									[20007] = {
@@ -62005,9 +62626,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 26,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 26,
 										["absorbed"] = 0,
 									},
 								},
@@ -62021,9 +62642,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.004059,
 							["delay"] = 0,
-							["healing_from"] = {
-								["Сварт-Пламегор"] = true,
-							},
+							["aID"] = "4474-04A9CC5B",
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
@@ -62054,8 +62673,9 @@ _detalhes_database = {
 							["totalover_without_pet"] = 0.004356,
 							["healing_taken"] = 0.004356,
 							["end_time"] = 1667249130,
-							["aID"] = "4441-027C4C2D",
 							["pvp_component"] = true,
+							["healing_from"] = {
+							},
 							["nome"] = "Purpplehaze-Auberdine",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -62078,9 +62698,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 1362,
 										["totaldenied"] = 0,
 										["n_amt"] = 7,
-										["n_curado"] = 1362,
 										["absorbed"] = 0,
 									},
 									[47893] = {
@@ -62103,9 +62723,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -62119,8 +62739,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.004356,
 							["delay"] = 1667249127,
-							["healing_from"] = {
-							},
+							["aID"] = "4441-027C4C2D",
 						}, -- [3]
 						{
 							["flag_original"] = 4370,
@@ -62148,7 +62767,7 @@ _detalhes_database = {
 							["healing_taken"] = 1362.006216,
 							["fight_component"] = true,
 							["end_time"] = 1667249130,
-							["classe"] = "PET",
+							["pvp_component"] = true,
 							["ownerName"] = "Purpplehaze-Auberdine",
 							["nome"] = "Hathgarth <Purpplehaze-Auberdine>",
 							["spells"] = {
@@ -62156,7 +62775,9 @@ _detalhes_database = {
 								},
 								["tipo"] = 3,
 							},
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Purpplehaze-Auberdine"] = true,
+							},
 							["start_time"] = 1667249130,
 							["aID"] = "Pet-0-4468-489-4518-1860-020049119C",
 							["custom"] = 0,
@@ -62164,9 +62785,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.006216,
 							["delay"] = 0,
-							["healing_from"] = {
-								["Purpplehaze-Auberdine"] = true,
-							},
+							["classe"] = "PET",
 						}, -- [4]
 						{
 							["flag_original"] = 1352,
@@ -62203,8 +62822,9 @@ _detalhes_database = {
 							["healing_taken"] = 0.003126,
 							["fight_component"] = true,
 							["end_time"] = 1667249130,
-							["aID"] = "4474-047E5D59",
 							["pvp_component"] = true,
+							["healing_from"] = {
+							},
 							["nome"] = "Кейналай-Пламегор",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -62229,9 +62849,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 1518,
 										["totaldenied"] = 0,
 										["n_amt"] = 5,
-										["n_curado"] = 1518,
 										["absorbed"] = 0,
 									},
 									[26980] = {
@@ -62259,9 +62879,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 2750,
 										["c_curado"] = 5611,
+										["n_curado"] = 4225,
 										["totaldenied"] = 0,
 										["n_amt"] = 11,
-										["n_curado"] = 4225,
 										["absorbed"] = 0,
 									},
 									[53248] = {
@@ -62285,9 +62905,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 877,
 										["totaldenied"] = 0,
 										["n_amt"] = 4,
-										["n_curado"] = 877,
 										["absorbed"] = 0,
 									},
 								},
@@ -62301,8 +62921,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.003126,
 							["delay"] = 0,
-							["healing_from"] = {
-							},
+							["aID"] = "4474-047E5D59",
 						}, -- [5]
 						{
 							["flag_original"] = 1352,
@@ -62357,9 +62976,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 598,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 598,
 										["absorbed"] = 0,
 									},
 								},
@@ -62436,9 +63055,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["totaldenied"] = 0,
 										["n_amt"] = 3,
 										["n_curado"] = 1100,
+										["totaldenied"] = 0,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -62461,9 +63080,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 3633,
 										["c_curado"] = 3633,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 0,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -62512,8 +63131,11 @@ _detalhes_database = {
 							["healing_taken"] = 347.003104,
 							["fight_component"] = true,
 							["end_time"] = 1667249130,
-							["aID"] = "4441-039BA4F5",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Memoria-Auberdine"] = true,
+								["Moolatz"] = true,
+							},
 							["nome"] = "Memoria-Auberdine",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -62536,9 +63158,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 242,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 242,
 										["absorbed"] = 0,
 									},
 								},
@@ -62552,10 +63174,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.003104,
 							["delay"] = 1667249122,
-							["healing_from"] = {
-								["Memoria-Auberdine"] = true,
-								["Moolatz"] = true,
-							},
+							["aID"] = "4441-039BA4F5",
 						}, -- [8]
 						{
 							["flag_original"] = 4372,
@@ -62584,7 +63203,7 @@ _detalhes_database = {
 							["healing_taken"] = 157.006687,
 							["fight_component"] = true,
 							["end_time"] = 1667249130,
-							["classe"] = "PET",
+							["pvp_component"] = true,
 							["ownerName"] = "Memoria-Auberdine",
 							["nome"] = "Grr <Memoria-Auberdine>",
 							["spells"] = {
@@ -62608,15 +63227,17 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 157,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 157,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
-							["pvp_component"] = true,
+							["healing_from"] = {
+								["Grr <Memoria-Auberdine>"] = true,
+							},
 							["start_time"] = 1667249128,
 							["aID"] = "Pet-0-4468-489-4518-25675-040076B350",
 							["custom"] = 0,
@@ -62624,9 +63245,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.006687,
 							["delay"] = 1667249122,
-							["healing_from"] = {
-								["Grr <Memoria-Auberdine>"] = true,
-							},
+							["classe"] = "PET",
 						}, -- [9]
 						{
 							["flag_original"] = 1352,
@@ -62682,9 +63301,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 854,
 										["totaldenied"] = 0,
 										["n_amt"] = 3,
-										["n_curado"] = 854,
 										["absorbed"] = 0,
 									},
 									[48442] = {
@@ -62707,9 +63326,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 2750,
 										["c_curado"] = 2750,
+										["n_curado"] = 244,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 244,
 										["absorbed"] = 0,
 									},
 								},
@@ -62783,9 +63402,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["totaldenied"] = 0,
 										["n_amt"] = 3,
 										["n_curado"] = 1783,
+										["totaldenied"] = 0,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -62836,8 +63455,9 @@ _detalhes_database = {
 							["healing_taken"] = 0.001713,
 							["fight_component"] = true,
 							["end_time"] = 1667249130,
-							["aID"] = "4465-02B843FA",
 							["pvp_component"] = true,
+							["healing_from"] = {
+							},
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -62862,9 +63482,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 1174,
 										["totaldenied"] = 0,
 										["n_amt"] = 4,
-										["n_curado"] = 1174,
 										["absorbed"] = 0,
 									},
 									[26981] = {
@@ -62889,9 +63509,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 524,
 										["totaldenied"] = 0,
 										["n_amt"] = 4,
-										["n_curado"] = 524,
 										["absorbed"] = 0,
 									},
 								},
@@ -62905,8 +63525,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.001713,
 							["delay"] = 1667249125,
-							["healing_from"] = {
-							},
+							["aID"] = "4465-02B843FA",
 						}, -- [12]
 						{
 							["flag_original"] = 1300,
@@ -62937,8 +63556,9 @@ _detalhes_database = {
 							["healing_taken"] = 0.00654,
 							["fight_component"] = true,
 							["end_time"] = 1667249130,
-							["aID"] = "4742-03A8E3B9",
 							["pvp_component"] = true,
+							["healing_from"] = {
+							},
 							["nome"] = "Bopshop-Ashbringer",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -62962,9 +63582,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 									[27136] = {
@@ -62986,9 +63606,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 4217,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 4217,
 										["absorbed"] = 0,
 									},
 									[53652] = {
@@ -63011,9 +63631,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 									[33074] = {
@@ -63035,9 +63655,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 3104,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["n_curado"] = 3104,
 										["absorbed"] = 0,
 									},
 								},
@@ -63051,8 +63671,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.00654,
 							["delay"] = 1667249126,
-							["healing_from"] = {
-							},
+							["aID"] = "4742-03A8E3B9",
 						}, -- [13]
 						{
 							["flag_original"] = 1300,
@@ -63080,8 +63699,10 @@ _detalhes_database = {
 							["healing_taken"] = 419.00222,
 							["fight_component"] = true,
 							["end_time"] = 1667249130,
-							["aID"] = "4811-0394EED3",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
 							["nome"] = "Maivi-Giantstalker",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -63096,9 +63717,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.00222,
 							["delay"] = 0,
-							["healing_from"] = {
-								["Moolatz"] = true,
-							},
+							["aID"] = "4811-0394EED3",
 						}, -- [14]
 						{
 							["flag_original"] = 1298,
@@ -63128,8 +63747,11 @@ _detalhes_database = {
 							["healing_taken"] = 9155.006184,
 							["fight_component"] = true,
 							["end_time"] = 1667249130,
-							["aID"] = "4813-044A8ED2",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Fatsnack-Mandokir"] = true,
+								["Bopshop-Ashbringer"] = true,
+							},
 							["nome"] = "Fatsnack-Mandokir",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -63152,9 +63774,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 1834,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 1834,
 										["absorbed"] = 0,
 									},
 								},
@@ -63168,10 +63790,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.006184,
 							["delay"] = 1667249124,
-							["healing_from"] = {
-								["Fatsnack-Mandokir"] = true,
-								["Bopshop-Ashbringer"] = true,
-							},
+							["aID"] = "4813-044A8ED2",
 						}, -- [15]
 						{
 							["flag_original"] = 1352,
@@ -63250,8 +63869,10 @@ _detalhes_database = {
 							["healing_taken"] = 332.005225,
 							["fight_component"] = true,
 							["end_time"] = 1667249130,
-							["aID"] = "4454-04AD4921",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Calmyboy-MirageRaceway"] = true,
+							},
 							["nome"] = "Calmyboy-MirageRaceway",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -63275,9 +63896,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 332,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 332,
 										["absorbed"] = 0,
 									},
 								},
@@ -63291,9 +63912,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.005225,
 							["delay"] = 1667249124,
-							["healing_from"] = {
-								["Calmyboy-MirageRaceway"] = true,
-							},
+							["aID"] = "4454-04AD4921",
 						}, -- [17]
 						{
 							["flag_original"] = 1352,
@@ -63348,9 +63967,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 3165,
 										["c_curado"] = 3165,
+										["n_curado"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 0,
-										["n_curado"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -63422,9 +64041,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["totaldenied"] = 0,
 										["n_amt"] = 1,
 										["n_curado"] = 411,
+										["totaldenied"] = 0,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -63470,8 +64089,10 @@ _detalhes_database = {
 							["healing_taken"] = 1174.006085,
 							["fight_component"] = true,
 							["end_time"] = 1667249130,
-							["aID"] = "4477-02CA9A6D",
 							["pvp_component"] = true,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
 							["nome"] = "Boopa-Venoxis",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -63486,9 +64107,7 @@ _detalhes_database = {
 							["tipo"] = 2,
 							["totaldenied"] = 0.006085,
 							["delay"] = 0,
-							["healing_from"] = {
-								["Moolatz"] = true,
-							},
+							["aID"] = "4477-02CA9A6D",
 						}, -- [20]
 					},
 				}, -- [2]
@@ -63513,12 +64132,12 @@ _detalhes_database = {
 							["nome"] = "Calmyboy-MirageRaceway",
 							["spells"] = {
 								["_ActorTable"] = {
-									[49923] = {
-										["total"] = 15,
-										["id"] = 49923,
+									[49920] = {
+										["total"] = 10,
+										["id"] = 49920,
 										["totalover"] = 0,
 										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 15,
+											["Calmyboy-MirageRaceway"] = 10,
 										},
 										["counter"] = 1,
 									},
@@ -63531,18 +64150,18 @@ _detalhes_database = {
 										},
 										["counter"] = 1,
 									},
-									[49929] = {
-										["total"] = 10,
-										["id"] = 49929,
+									[49923] = {
+										["total"] = 15,
+										["id"] = 49923,
 										["totalover"] = 0,
 										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 10,
+											["Calmyboy-MirageRaceway"] = 15,
 										},
 										["counter"] = 1,
 									},
-									[49920] = {
+									[49929] = {
 										["total"] = 10,
-										["id"] = 49920,
+										["id"] = 49929,
 										["totalover"] = 0,
 										["targets"] = {
 											["Calmyboy-MirageRaceway"] = 10,
@@ -63566,14 +64185,14 @@ _detalhes_database = {
 							["received"] = 169.002645,
 							["resource"] = 0.002645,
 							["targets"] = {
-								["Moolatz"] = 78,
+								["Fatsnack-Mandokir"] = 183,
 								["Purpplehaze-Auberdine"] = 240,
-								["Memoria-Auberdine"] = 52,
+								["Moolatz"] = 78,
 								["Maivi-Giantstalker"] = 169,
 								["Hathgarth <Purpplehaze-Auberdine>"] = 34,
 								["Boopa-Venoxis"] = 182,
 								["Bopshop-Ashbringer"] = 219,
-								["Fatsnack-Mandokir"] = 183,
+								["Memoria-Auberdine"] = 52,
 							},
 							["pets"] = {
 							},
@@ -63591,14 +64210,14 @@ _detalhes_database = {
 										["id"] = 57669,
 										["totalover"] = 0,
 										["targets"] = {
-											["Moolatz"] = 78,
+											["Fatsnack-Mandokir"] = 183,
 											["Purpplehaze-Auberdine"] = 240,
-											["Memoria-Auberdine"] = 52,
+											["Moolatz"] = 78,
 											["Maivi-Giantstalker"] = 169,
 											["Hathgarth <Purpplehaze-Auberdine>"] = 34,
 											["Boopa-Venoxis"] = 182,
 											["Bopshop-Ashbringer"] = 219,
-											["Fatsnack-Mandokir"] = 183,
+											["Memoria-Auberdine"] = 52,
 										},
 										["counter"] = 61,
 									},
@@ -64545,13 +65164,13 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[55610] = {
+									[48792] = {
 										["appliedamt"] = 1,
 										["targets"] = {
 										},
 										["activedamt"] = 1,
-										["uptime"] = 9,
-										["id"] = 55610,
+										["uptime"] = 6,
+										["id"] = 48792,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -64578,13 +65197,13 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[58578] = {
-										["appliedamt"] = 2,
+									[55610] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["activedamt"] = 2,
-										["uptime"] = 2,
-										["id"] = 58578,
+										["activedamt"] = 1,
+										["uptime"] = 9,
+										["id"] = 55610,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -64600,13 +65219,13 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[48792] = {
-										["appliedamt"] = 1,
+									[58578] = {
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 6,
-										["id"] = 48792,
+										["activedamt"] = 2,
+										["uptime"] = 2,
+										["id"] = 58578,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -64927,8 +65546,9 @@ _detalhes_database = {
 						}, -- [7]
 						{
 							["flag_original"] = 1300,
-							["buff_uptime"] = 0,
-							["classe"] = "PALADIN",
+							["pets"] = {
+							},
+							["aID"] = "4454-044931B8",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[32223] = {
@@ -65006,19 +65626,18 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["last_event"] = 1667249124,
+							["buff_uptime_targets"] = {
+							},
 							["nome"] = "Airforceone-MirageRaceway",
 							["grupo"] = true,
 							["spell_cast"] = {
 								[54428] = 1,
 							},
-							["aID"] = "4454-044931B8",
+							["classe"] = "PALADIN",
 							["pvp_component"] = true,
+							["last_event"] = 1667249124,
 							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
+							["buff_uptime"] = 0,
 							["serial"] = "Player-4454-044931B8",
 							["pvp"] = true,
 						}, -- [8]
@@ -65106,7 +65725,7 @@ _detalhes_database = {
 						}, -- [9]
 						{
 							["fight_component"] = true,
-							["classe"] = "UNGROUPPLAYER",
+							["aID"] = "4474-04A9CC5B",
 							["pvp_component"] = true,
 							["flag_original"] = 1352,
 							["nome"] = "Сварт-Пламегор",
@@ -65120,9 +65739,9 @@ _detalhes_database = {
 								[27235] = 1,
 								[23920] = 1,
 							},
-							["last_event"] = 0,
 							["tipo"] = 4,
-							["aID"] = "4474-04A9CC5B",
+							["last_event"] = 0,
+							["classe"] = "UNGROUPPLAYER",
 							["serial"] = "Player-4474-04A9CC5B",
 							["pvp"] = true,
 						}, -- [10]
@@ -65284,7 +65903,7 @@ _detalhes_database = {
 						}, -- [16]
 						{
 							["fight_component"] = true,
-							["classe"] = "UNGROUPPLAYER",
+							["aID"] = "4474-047E5D59",
 							["pvp_component"] = true,
 							["flag_original"] = 1352,
 							["nome"] = "Кейналай-Пламегор",
@@ -65297,9 +65916,9 @@ _detalhes_database = {
 								[26980] = 3,
 								[26982] = 1,
 							},
-							["last_event"] = 0,
 							["tipo"] = 4,
-							["aID"] = "4474-047E5D59",
+							["last_event"] = 0,
+							["classe"] = "UNGROUPPLAYER",
 							["serial"] = "Player-4474-047E5D59",
 							["pvp"] = true,
 						}, -- [17]
@@ -66041,9 +66660,9 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["pvp_component"] = true,
-							["tipo"] = 4,
 							["aID"] = "4465-02B843FA",
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["serial"] = "Player-4465-02B843FA",
 							["pvp"] = true,
 						}, -- [39]
@@ -66563,14 +67182,14 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Airforceone-MirageRaceway"] = true,
 					["Calmyboy-MirageRaceway"] = true,
-					["Moolatz"] = true,
-					["Memoria-Auberdine"] = true,
 					["Fatsnack-Mandokir"] = true,
+					["Altarpain-MirageRaceway"] = true,
+					["Moolatz"] = true,
 					["Maivi-Giantstalker"] = true,
 					["Bopshop-Ashbringer"] = true,
 					["Boopa-Venoxis"] = true,
 					["Purpplehaze-Auberdine"] = true,
-					["Altarpain-MirageRaceway"] = true,
+					["Memoria-Auberdine"] = true,
 				},
 				["frags"] = {
 				},
@@ -66610,19 +67229,19 @@ _detalhes_database = {
 							["Коббал-Пламегор"] = 255.001116,
 							["Ницшеподлсд-Пламегор"] = 1514.004787,
 							["Молимся-Пламегор"] = 8540.006453,
-							["Maivi-Giantstalker"] = 1004.005012,
+							["Небославян-Пламегор"] = 0.003209,
 							["Calmyboy-MirageRaceway"] = 3854.006874,
 							["Готян-Пламегор"] = 0.003541,
 							["Рубежж-Пламегор"] = 1478.00393,
-							["Сварт-Пламегор"] = 4540.005641,
+							["Maivi-Giantstalker"] = 1004.005012,
 							["Дарелос-Пламегор"] = 7524.006242,
 							["Кейналай-Пламегор"] = 0.008477,
-							["Memoria-Auberdine"] = 5257.00593,
-							["Небославян-Пламегор"] = 0.003209,
+							["Шерифдуфи-Пламегор"] = 0.006019,
+							["Сварт-Пламегор"] = 4540.005641,
 							["Purpplehaze-Auberdine"] = 11754.005028,
 							["Boopa-Venoxis"] = 2465.00783,
-							["Шерифдуфи-Пламегор"] = 0.006019,
 							["Fatsnack-Mandokir"] = 4525.007757,
+							["Memoria-Auberdine"] = 5257.00593,
 						}, -- [1]
 					},
 				},
@@ -66635,10243 +67254,6 @@ _detalhes_database = {
 				["TimeData"] = {
 				},
 				["spells_cast_timeline"] = {
-				},
-			}, -- [17]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 243,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.004649,
-							["colocacao"] = 1,
-							["damage_from"] = {
-								["Сварт-Пламегор"] = true,
-							},
-							["targets"] = {
-								["Коббал-Пламегор"] = 3776,
-								["Кейналай-Пламегор"] = 6971,
-								["Молимся-Пламегор"] = 3209,
-								["Сварт-Пламегор"] = 22088,
-								["Дарелос-Пламегор"] = 3599,
-								["Шерифдуфи-Пламегор"] = 3732,
-								["Рубежж-Пламегор"] = 2565,
-								["Ницшеподлсд-Пламегор"] = 14019,
-							},
-							["last_event"] = 1667249120,
-							["pets"] = {
-							},
-							["total"] = 59959.004649,
-							["aID"] = "4813-044A8ED2",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 59959.004649,
-							["delay"] = 0,
-							["classe"] = "MAGE",
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["serial"] = "Player-4813-044A8ED2",
-							["dps_started"] = false,
-							["nome"] = "Fatsnack-Mandokir",
-							["spells"] = {
-								["_ActorTable"] = {
-									[42944] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 1271,
-										["targets"] = {
-											["Сварт-Пламегор"] = 1271,
-										},
-										["n_dmg"] = 1271,
-										["n_min"] = 1271,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 1271,
-										["c_max"] = 0,
-										["id"] = 42944,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[43043] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 421,
-										["g_amt"] = 0,
-										["n_max"] = 150,
-										["targets"] = {
-											["Сварт-Пламегор"] = 1253,
-										},
-										["n_dmg"] = 832,
-										["n_min"] = 128,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 1253,
-										["c_max"] = 216,
-										["id"] = 43043,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 205,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[55359] = {
-										["c_amt"] = 7,
-										["b_amt"] = 0,
-										["c_dmg"] = 4974,
-										["g_amt"] = 0,
-										["n_max"] = 523,
-										["targets"] = {
-											["Дарелос-Пламегор"] = 1322,
-											["Ницшеподлсд-Пламегор"] = 2089,
-											["Шерифдуфи-Пламегор"] = 1254,
-											["Сварт-Пламегор"] = 3101,
-											["Коббал-Пламегор"] = 1642,
-										},
-										["n_dmg"] = 4434,
-										["n_min"] = 244,
-										["g_dmg"] = 0,
-										["counter"] = 17,
-										["total"] = 9408,
-										["c_max"] = 804,
-										["id"] = 55359,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 380,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 10,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[42872] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 1445,
-										["targets"] = {
-											["Сварт-Пламегор"] = 2786,
-										},
-										["n_dmg"] = 2786,
-										["n_min"] = 1341,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 2786,
-										["c_max"] = 0,
-										["id"] = 42872,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[42858] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1303,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Сварт-Пламегор"] = 1303,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 1303,
-										["c_max"] = 1303,
-										["id"] = 42858,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1303,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[55361] = {
-										["c_amt"] = 7,
-										["b_amt"] = 0,
-										["c_dmg"] = 12636,
-										["g_amt"] = 0,
-										["n_max"] = 1067,
-										["targets"] = {
-											["Коббал-Пламегор"] = 1848,
-											["Кейналай-Пламегор"] = 4937,
-											["Молимся-Пламегор"] = 2551,
-											["Сварт-Пламегор"] = 1067,
-											["Дарелос-Пламегор"] = 2092,
-											["Шерифдуфи-Пламегор"] = 1549,
-											["Рубежж-Пламегор"] = 2130,
-											["Ницшеподлсд-Пламегор"] = 5569,
-										},
-										["n_dmg"] = 9107,
-										["n_min"] = 697,
-										["g_dmg"] = 0,
-										["counter"] = 17,
-										["total"] = 21743,
-										["c_max"] = 1936,
-										["id"] = 55361,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1549,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 10,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[55039] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 1444,
-										["targets"] = {
-											["Сварт-Пламегор"] = 1444,
-										},
-										["n_dmg"] = 1444,
-										["n_min"] = 1444,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 1444,
-										["c_max"] = 0,
-										["id"] = 55039,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[12654] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 1311,
-										["targets"] = {
-											["Коббал-Пламегор"] = 286,
-											["Кейналай-Пламегор"] = 2034,
-											["Молимся-Пламегор"] = 658,
-											["Сварт-Пламегор"] = 3048,
-											["Дарелос-Пламегор"] = 185,
-											["Шерифдуфи-Пламегор"] = 929,
-											["Рубежж-Пламегор"] = 435,
-											["Ницшеподлсд-Пламегор"] = 2229,
-										},
-										["n_dmg"] = 9804,
-										["n_min"] = 76,
-										["g_dmg"] = 0,
-										["counter"] = 23,
-										["total"] = 9804,
-										["c_max"] = 0,
-										["id"] = 12654,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 23,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[42890] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 4529,
-										["g_amt"] = 0,
-										["n_max"] = 2735,
-										["targets"] = {
-											["Сварт-Пламегор"] = 4848,
-											["Ницшеподлсд-Пламегор"] = 4132,
-										},
-										["n_dmg"] = 4451,
-										["n_min"] = 319,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 8980,
-										["c_max"] = 4529,
-										["id"] = 42890,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 4529,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[42949] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1967,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Сварт-Пламегор"] = 1967,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 1967,
-										["c_max"] = 1967,
-										["id"] = 42949,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1967,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["damage_taken"] = 8905.004649,
-							["friendlyfire"] = {
-							},
-							["on_hold"] = false,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 2606.913245608696,
-							["start_time"] = 1667249098,
-							["pvp_component"] = true,
-							["pvp"] = true,
-						}, -- [1]
-						{
-							["flag_original"] = 1352,
-							["totalabsorbed"] = 0.004032,
-							["pets"] = {
-							},
-							["classe"] = "HUNTER",
-							["total_without_pet"] = 2860.004032,
-							["dps_started"] = false,
-							["total"] = 2860.004032,
-							["colocacao"] = 6,
-							["on_hold"] = false,
-							["serial"] = "Player-4474-04B74E61",
-							["pvp"] = true,
-							["damage_from"] = {
-								["Fatsnack-Mandokir"] = true,
-							},
-							["targets"] = {
-								["Calmyboy-MirageRaceway"] = 531,
-								["Memoria-Auberdine"] = 2329,
-							},
-							["enemy"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["pvp_component"] = true,
-							["aID"] = "4474-04B74E61",
-							["nome"] = "Ницшеподлсд-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[63468] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 59,
-										["targets"] = {
-											["Memoria-Auberdine"] = 350,
-										},
-										["n_dmg"] = 350,
-										["n_min"] = 58,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 350,
-										["c_max"] = 0,
-										["id"] = 63468,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[3044] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 16,
-											["Memoria-Auberdine"] = 18,
-										},
-										["n_dmg"] = 34,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 34,
-										["c_max"] = 0,
-										["id"] = 3044,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[75] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 394,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 338,
-											["Memoria-Auberdine"] = 394,
-										},
-										["n_dmg"] = 732,
-										["n_min"] = 168,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 732,
-										["c_max"] = 0,
-										["id"] = 75,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 3,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27065] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1562,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Memoria-Auberdine"] = 1562,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 1562,
-										["c_max"] = 1562,
-										["id"] = 27065,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1562,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[53209] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 53209,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[34120] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 156,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 156,
-										},
-										["n_dmg"] = 156,
-										["n_min"] = 156,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 156,
-										["c_max"] = 0,
-										["id"] = 34120,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[1978] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 5,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 21,
-											["Memoria-Auberdine"] = 5,
-										},
-										["n_dmg"] = 26,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 26,
-										["c_max"] = 0,
-										["id"] = 1978,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[5116] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 5116,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["damage_taken"] = 14019.004032,
-							["last_event"] = 1667249120,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0.001344,
-							["start_time"] = 1667249108,
-							["delay"] = 1667249105,
-							["friendlyfire"] = {
-							},
-						}, -- [2]
-						{
-							["flag_original"] = 1352,
-							["totalabsorbed"] = 0.00101,
-							["pets"] = {
-							},
-							["classe"] = "PRIEST",
-							["total_without_pet"] = 3314.00101,
-							["dps_started"] = false,
-							["total"] = 3314.00101,
-							["colocacao"] = 6,
-							["on_hold"] = false,
-							["serial"] = "Player-4474-04B16B28",
-							["pvp"] = true,
-							["damage_from"] = {
-								["Fatsnack-Mandokir"] = true,
-							},
-							["targets"] = {
-								["Calmyboy-MirageRaceway"] = 2188,
-								["Memoria-Auberdine"] = 1126,
-							},
-							["enemy"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["pvp_component"] = true,
-							["aID"] = "4474-04B16B28",
-							["nome"] = "Молимся-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[48155] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 48155,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[48124] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 827,
-										["g_amt"] = 0,
-										["n_max"] = 454,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 2188,
-										},
-										["n_dmg"] = 1361,
-										["n_min"] = 453,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 2188,
-										["c_max"] = 827,
-										["id"] = 48124,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 827,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[48045] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 48045,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[58381] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1126,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Memoria-Auberdine"] = 1126,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 1126,
-										["c_max"] = 1126,
-										["id"] = 58381,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1126,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["need_refresh"] = false,
-							["damage_taken"] = 3209.00101,
-							["last_event"] = 1667249118,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 311.6055048980002,
-							["start_time"] = 1667249120,
-							["delay"] = 1667249118,
-							["friendlyfire"] = {
-							},
-						}, -- [3]
-						{
-							["flag_original"] = 1352,
-							["totalabsorbed"] = 0.007132,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["total_without_pet"] = 0.007132,
-							["dps_started"] = false,
-							["total"] = 0.007132,
-							["colocacao"] = 6,
-							["on_hold"] = false,
-							["serial"] = "Player-4474-047E5D59",
-							["pvp"] = true,
-							["damage_from"] = {
-								["Fatsnack-Mandokir"] = true,
-							},
-							["targets"] = {
-							},
-							["enemy"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["friendlyfire"] = {
-							},
-							["tipo"] = 1,
-							["nome"] = "Кейналай-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[26980] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 26980,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 6,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26982] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 26982,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 3,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[18562] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 18562,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[53248] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 53248,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["damage_taken"] = 6971.007132,
-							["aID"] = "4474-047E5D59",
-							["custom"] = 0,
-							["last_event"] = 0,
-							["last_dps"] = 0.002377333333333333,
-							["start_time"] = 1667249121,
-							["delay"] = 0,
-							["pvp_component"] = true,
-						}, -- [4]
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.007538,
-							["colocacao"] = 2,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Коббал-Пламегор"] = 25753,
-								["Макнаке"] = 4673,
-								["Шерифдуфи-Пламегор"] = 991,
-							},
-							["last_event"] = 1667249120,
-							["pets"] = {
-								"Hathgarth <Purpplehaze-Auberdine>", -- [1]
-							},
-							["total"] = 31417.007538,
-							["aID"] = "4441-027C4C2D",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 30288.007538,
-							["delay"] = 0,
-							["classe"] = "WARLOCK",
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["serial"] = "Player-4441-027C4C2D",
-							["dps_started"] = false,
-							["nome"] = "Purpplehaze-Auberdine",
-							["spells"] = {
-								["_ActorTable"] = {
-									[17962] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 1519,
-										["g_amt"] = 0,
-										["n_max"] = 2000,
-										["targets"] = {
-											["Коббал-Пламегор"] = 3964,
-										},
-										["n_dmg"] = 2445,
-										["n_min"] = 445,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 3964,
-										["c_max"] = 760,
-										["id"] = 17962,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 759,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47813] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 492,
-										["targets"] = {
-											["Коббал-Пламегор"] = 3391,
-											["Макнаке"] = 2564,
-										},
-										["n_dmg"] = 5955,
-										["n_min"] = 394,
-										["g_dmg"] = 0,
-										["counter"] = 13,
-										["total"] = 5955,
-										["c_max"] = 0,
-										["id"] = 47813,
-										["r_dmg"] = 3006,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 13,
-										["b_dmg"] = 0,
-										["r_amt"] = 7,
-									},
-									[47864] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 384,
-										["targets"] = {
-											["Коббал-Пламегор"] = 3550,
-											["Макнаке"] = 2109,
-										},
-										["n_dmg"] = 5659,
-										["n_min"] = 221,
-										["g_dmg"] = 0,
-										["counter"] = 20,
-										["total"] = 5659,
-										["c_max"] = 0,
-										["id"] = 47864,
-										["r_dmg"] = 2713,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 20,
-										["b_dmg"] = 0,
-										["r_amt"] = 10,
-									},
-									[47810] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1634,
-										["g_amt"] = 0,
-										["n_max"] = 991,
-										["targets"] = {
-											["Коббал-Пламегор"] = 3648,
-											["Шерифдуфи-Пламегор"] = 991,
-										},
-										["n_dmg"] = 3005,
-										["n_min"] = 671,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 4639,
-										["c_max"] = 1634,
-										["id"] = 47810,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1634,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47837] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 4259,
-										["g_amt"] = 0,
-										["n_max"] = 2521,
-										["targets"] = {
-											["Коббал-Пламегор"] = 6780,
-										},
-										["n_dmg"] = 2521,
-										["n_min"] = 2521,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 6780,
-										["c_max"] = 4259,
-										["id"] = 47837,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 4259,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[59171] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3291,
-										["targets"] = {
-											["Коббал-Пламегор"] = 3291,
-										},
-										["n_dmg"] = 3291,
-										["n_min"] = 3291,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 3291,
-										["c_max"] = 0,
-										["id"] = 59171,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["damage_taken"] = 0.007538,
-							["friendlyfire"] = {
-							},
-							["on_hold"] = false,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 1365.956849478261,
-							["start_time"] = 1667249098,
-							["pvp_component"] = true,
-							["pvp"] = true,
-						}, -- [5]
-						{
-							["flag_original"] = 1352,
-							["totalabsorbed"] = 0.003909,
-							["pets"] = {
-							},
-							["classe"] = "DRUID",
-							["total_without_pet"] = 8301.003909,
-							["dps_started"] = false,
-							["total"] = 8301.003909,
-							["colocacao"] = 6,
-							["on_hold"] = false,
-							["serial"] = "Player-4474-049F3E8D",
-							["pvp"] = true,
-							["damage_from"] = {
-								["Fatsnack-Mandokir"] = true,
-								["Maivi-Giantstalker"] = true,
-								["Calmyboy-MirageRaceway"] = true,
-								["Purpplehaze-Auberdine"] = true,
-								["Hathgarth <Purpplehaze-Auberdine>"] = true,
-								["Boopa-Venoxis"] = true,
-							},
-							["targets"] = {
-								["Calmyboy-MirageRaceway"] = 2995,
-								["Bopshop-Ashbringer"] = 3170,
-								["Grr <Memoria-Auberdine>"] = 1770,
-								["Hathgarth <Purpplehaze-Auberdine>"] = 366,
-							},
-							["enemy"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["pvp_component"] = true,
-							["aID"] = "4474-049F3E8D",
-							["nome"] = "Коббал-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 293,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 293,
-										},
-										["n_dmg"] = 293,
-										["n_min"] = 293,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 293,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[48377] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 48377,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[53307] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 67,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 326,
-											["Hathgarth <Purpplehaze-Auberdine>"] = 331,
-										},
-										["n_dmg"] = 657,
-										["n_min"] = 65,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 657,
-										["c_max"] = 0,
-										["id"] = 53307,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 10,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[22842] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 22842,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[48567] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 110,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 301,
-										},
-										["n_dmg"] = 301,
-										["n_min"] = 41,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 301,
-										["c_max"] = 0,
-										["id"] = 48567,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[48479] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 602,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 602,
-										},
-										["n_dmg"] = 602,
-										["n_min"] = 602,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 602,
-										["c_max"] = 0,
-										["id"] = 48479,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[48573] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 1057,
-										["targets"] = {
-											["Bopshop-Ashbringer"] = 3170,
-										},
-										["n_dmg"] = 3170,
-										["n_min"] = 1056,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 3170,
-										["c_max"] = 0,
-										["id"] = 48573,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8983] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 8983,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[48440] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 48440,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27010] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 35,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 47,
-											["Hathgarth <Purpplehaze-Auberdine>"] = 35,
-										},
-										["n_dmg"] = 82,
-										["n_min"] = 23,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 82,
-										["c_max"] = 0,
-										["id"] = 27010,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[33357] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 33357,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[768] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 768,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[5229] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 5229,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[60089] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 433,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 433,
-										},
-										["n_dmg"] = 433,
-										["n_min"] = 433,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 433,
-										["c_max"] = 0,
-										["id"] = 60089,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[16979] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 16979,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[9634] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 9634,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[48563] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 2763,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Grr <Memoria-Auberdine>"] = 1770,
-											["Calmyboy-MirageRaceway"] = 993,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 2763,
-										["c_max"] = 1770,
-										["id"] = 48563,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 993,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27009] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 27009,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[16857] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 16857,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[61336] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 61336,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["need_refresh"] = false,
-							["damage_taken"] = 41408.003909,
-							["last_event"] = 1667249119,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 436.8949425789473,
-							["start_time"] = 1667249102,
-							["delay"] = 1667249099,
-							["friendlyfire"] = {
-							},
-						}, -- [6]
-						{
-							["flag_original"] = 1352,
-							["totalabsorbed"] = 0.00515,
-							["pets"] = {
-							},
-							["aID"] = "4474-04A80422",
-							["total_without_pet"] = 6111.00515,
-							["dps_started"] = false,
-							["total"] = 6111.00515,
-							["colocacao"] = 6,
-							["on_hold"] = false,
-							["serial"] = "Player-4474-04A80422",
-							["pvp"] = true,
-							["damage_from"] = {
-								["Fatsnack-Mandokir"] = true,
-								["Boopa-Venoxis"] = true,
-							},
-							["targets"] = {
-								["Calmyboy-MirageRaceway"] = 4633,
-								["Memoria-Auberdine"] = 1478,
-							},
-							["enemy"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["pvp_component"] = true,
-							["classe"] = "WARLOCK",
-							["nome"] = "Рубежж-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[27218] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 279,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 2147,
-											["Memoria-Auberdine"] = 344,
-										},
-										["n_dmg"] = 2491,
-										["n_min"] = 154,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 2491,
-										["c_max"] = 0,
-										["id"] = 27218,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 11,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27216] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 2105,
-										["g_amt"] = 0,
-										["n_max"] = 505,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 2486,
-											["Memoria-Auberdine"] = 1134,
-										},
-										["n_dmg"] = 1515,
-										["n_min"] = 505,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 3620,
-										["c_max"] = 1134,
-										["id"] = 27216,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 971,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27217] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 27217,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["need_refresh"] = false,
-							["damage_taken"] = 4925.00515,
-							["last_event"] = 1667249120,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 339.5837625,
-							["start_time"] = 1667249102,
-							["delay"] = 1667249114,
-							["friendlyfire"] = {
-							},
-						}, -- [7]
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 517.007502,
-							["colocacao"] = 4,
-							["damage_from"] = {
-								["Дарелос-Пламегор"] = true,
-								["Ницшеподлсд-Пламегор"] = true,
-								["Молимся-Пламегор"] = true,
-								["Коббал-Пламегор"] = true,
-								["Макнаке"] = true,
-								["Рубежж-Пламегор"] = true,
-								["Шерифдуфи-Пламегор"] = true,
-							},
-							["targets"] = {
-								["Дарелос-Пламегор"] = 4866,
-								["Шерифдуфи-Пламегор"] = 538,
-								["Коббал-Пламегор"] = 5388,
-							},
-							["last_event"] = 1667249119,
-							["pets"] = {
-							},
-							["total"] = 10792.007502,
-							["aID"] = "4454-04AD4921",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 10792.007502,
-							["delay"] = 0,
-							["classe"] = "DEATHKNIGHT",
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["serial"] = "Player-4454-04AD4921",
-							["dps_started"] = false,
-							["nome"] = "Calmyboy-MirageRaceway",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 890,
-										["targets"] = {
-											["Коббал-Пламегор"] = 1547,
-											["Шерифдуфи-Пламегор"] = 538,
-											["Дарелос-Пламегор"] = 1683,
-										},
-										["n_dmg"] = 3768,
-										["n_min"] = 507,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 3768,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[49909] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 440,
-										["targets"] = {
-											["Дарелос-Пламегор"] = 440,
-										},
-										["n_dmg"] = 440,
-										["n_min"] = 440,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 440,
-										["c_max"] = 0,
-										["id"] = 49909,
-										["r_dmg"] = 440,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 440,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 1,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
-									[49924] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 576,
-										["targets"] = {
-											["Коббал-Пламегор"] = 576,
-										},
-										["n_dmg"] = 576,
-										["n_min"] = 576,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 576,
-										["c_max"] = 0,
-										["id"] = 49924,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47632] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 735,
-										["targets"] = {
-											["Коббал-Пламегор"] = 1306,
-										},
-										["n_dmg"] = 1306,
-										["n_min"] = 571,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 1306,
-										["c_max"] = 0,
-										["id"] = 47632,
-										["r_dmg"] = 1306,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 2,
-									},
-									[55095] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 166,
-										["targets"] = {
-											["Дарелос-Пламегор"] = 730,
-										},
-										["n_dmg"] = 730,
-										["n_min"] = 116,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 730,
-										["c_max"] = 0,
-										["id"] = 55095,
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[49560] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Шерифдуфи-Пламегор"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 49560,
-										["r_dmg"] = 0,
-										["IMMUNE"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[55078] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 227,
-										["targets"] = {
-											["Коббал-Пламегор"] = 1356,
-											["Дарелос-Пламегор"] = 752,
-										},
-										["n_dmg"] = 2108,
-										["n_min"] = 119,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 2108,
-										["c_max"] = 0,
-										["id"] = 55078,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 11,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[49921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 506,
-										["targets"] = {
-											["Коббал-Пламегор"] = 603,
-											["Шерифдуфи-Пламегор"] = 0,
-											["Дарелос-Пламегор"] = 506,
-										},
-										["n_dmg"] = 1109,
-										["n_min"] = 284,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 1109,
-										["c_max"] = 0,
-										["id"] = 49921,
-										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[49930] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 755,
-										["targets"] = {
-											["Дарелос-Пламегор"] = 755,
-										},
-										["n_dmg"] = 755,
-										["n_min"] = 755,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 755,
-										["c_max"] = 0,
-										["id"] = 49930,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["damage_taken"] = 14389.007502,
-							["friendlyfire"] = {
-							},
-							["on_hold"] = false,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 513.9051191428572,
-							["start_time"] = 1667249100,
-							["pvp_component"] = true,
-							["pvp"] = true,
-						}, -- [8]
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 559.003996,
-							["colocacao"] = 6,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Дарелос-Пламегор"] = 1327,
-								["Шерифдуфи-Пламегор"] = 1860,
-								["Макнаке"] = 378,
-								["Коббал-Пламегор"] = 3050,
-							},
-							["last_event"] = 1667249120,
-							["pets"] = {
-							},
-							["total"] = 6615.003996,
-							["aID"] = "4811-0394EED3",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 6615.003996,
-							["delay"] = 1667249111,
-							["classe"] = "MAGE",
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["serial"] = "Player-4811-0394EED3",
-							["dps_started"] = false,
-							["nome"] = "Maivi-Giantstalker",
-							["spells"] = {
-								["_ActorTable"] = {
-									[38697] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 1139,
-										["targets"] = {
-											["Коббал-Пламегор"] = 2033,
-											["Дарелос-Пламегор"] = 768,
-										},
-										["n_dmg"] = 2801,
-										["n_min"] = 768,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 2801,
-										["c_max"] = 0,
-										["id"] = 38697,
-										["r_dmg"] = 2801,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["RESIST"] = 1,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 3,
-									},
-									[38692] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Коббал-Пламегор"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 38692,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27079] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 969,
-										["targets"] = {
-											["Шерифдуфи-Пламегор"] = 969,
-										},
-										["n_dmg"] = 969,
-										["n_min"] = 969,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 969,
-										["c_max"] = 0,
-										["id"] = 27079,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27087] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 547,
-										["targets"] = {
-											["Макнаке"] = 378,
-											["Шерифдуфи-Пламегор"] = 547,
-										},
-										["n_dmg"] = 925,
-										["n_min"] = 378,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 925,
-										["c_max"] = 0,
-										["id"] = 27087,
-										["r_dmg"] = 925,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 2,
-									},
-									[30455] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 359,
-										["g_amt"] = 0,
-										["n_max"] = 658,
-										["targets"] = {
-											["Дарелос-Пламегор"] = 559,
-											["Шерифдуфи-Пламегор"] = 281,
-											["Коббал-Пламегор"] = 1017,
-										},
-										["n_dmg"] = 1498,
-										["n_min"] = 281,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 1857,
-										["c_max"] = 359,
-										["id"] = 30455,
-										["r_dmg"] = 1298,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 359,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 3,
-									},
-									[10230] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 63,
-										["targets"] = {
-											["Шерифдуфи-Пламегор"] = 63,
-										},
-										["n_dmg"] = 63,
-										["n_min"] = 63,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 63,
-										["c_max"] = 0,
-										["id"] = 10230,
-										["r_dmg"] = 63,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["damage_taken"] = 0.003996,
-							["friendlyfire"] = {
-							},
-							["on_hold"] = false,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 809.500999,
-							["start_time"] = 1667249111,
-							["pvp_component"] = true,
-							["pvp"] = true,
-						}, -- [9]
-						{
-							["flag_original"] = 1352,
-							["totalabsorbed"] = 0.005819,
-							["pets"] = {
-							},
-							["aID"] = "4474-04B5FDAC",
-							["total_without_pet"] = 443.005819,
-							["dps_started"] = false,
-							["total"] = 443.005819,
-							["on_hold"] = false,
-							["serial"] = "Player-4474-04B5FDAC",
-							["pvp"] = true,
-							["damage_from"] = {
-								["Дарелос-Пламегор"] = true,
-								["Fatsnack-Mandokir"] = true,
-								["Maivi-Giantstalker"] = true,
-								["Calmyboy-MirageRaceway"] = true,
-								["Purpplehaze-Auberdine"] = true,
-							},
-							["targets"] = {
-								["Calmyboy-MirageRaceway"] = 443,
-							},
-							["enemy"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["pvp_component"] = true,
-							["last_event"] = 1667249102,
-							["nome"] = "Шерифдуфи-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20216] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 20216,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[53408] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 53408,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27136] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 27136,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[31884] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 31884,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[6940] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 6940,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[31821] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 31821,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[33072] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 33072,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 4,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[54158] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 443,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 443,
-										},
-										["n_dmg"] = 443,
-										["n_min"] = 443,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 443,
-										["c_max"] = 0,
-										["id"] = 54158,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[54428] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 54428,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27137] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 27137,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 3,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["damage_taken"] = 9590.005819,
-							["classe"] = "PALADIN",
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1667249120,
-							["delay"] = 1667249102,
-							["friendlyfire"] = {
-							},
-						}, -- [10]
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.008618,
-							["colocacao"] = 6,
-							["damage_from"] = {
-								["Дарелос-Пламегор"] = true,
-								["Макнаке"] = true,
-								["Коббал-Пламегор"] = true,
-							},
-							["targets"] = {
-							},
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["total"] = 0.008618,
-							["classe"] = "PALADIN",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.008618,
-							["delay"] = 0,
-							["aID"] = "4742-03A8E3B9",
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["serial"] = "Player-4742-03A8E3B9",
-							["dps_started"] = false,
-							["nome"] = "Bopshop-Ashbringer",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["damage_taken"] = 7749.008618,
-							["friendlyfire"] = {
-							},
-							["on_hold"] = false,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0.002872666666666667,
-							["start_time"] = 1667249121,
-							["pvp_component"] = true,
-							["pvp"] = true,
-						}, -- [11]
-						{
-							["flag_original"] = 1352,
-							["totalabsorbed"] = 0.00773,
-							["pets"] = {
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 18227.00773,
-							["dps_started"] = false,
-							["total"] = 18227.00773,
-							["colocacao"] = 3,
-							["on_hold"] = false,
-							["serial"] = "Player-4474-03995BCB",
-							["pvp"] = true,
-							["damage_from"] = {
-								["Fatsnack-Mandokir"] = true,
-								["Maivi-Giantstalker"] = true,
-								["Calmyboy-MirageRaceway"] = true,
-								["Grr <Memoria-Auberdine>"] = true,
-								["Memoria-Auberdine"] = true,
-							},
-							["targets"] = {
-								["Шерифдуфи-Пламегор"] = 2469,
-								["Memoria-Auberdine"] = 1851,
-								["Calmyboy-MirageRaceway"] = 3332,
-								["Bopshop-Ashbringer"] = 4062,
-								["Grr <Memoria-Auberdine>"] = 2425,
-								["Макнаке"] = 4088,
-							},
-							["enemy"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["friendlyfire"] = {
-							},
-							["tipo"] = 1,
-							["nome"] = "Дарелос-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[25228] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 222,
-										["targets"] = {
-											["Макнаке"] = 4088,
-										},
-										["n_dmg"] = 4088,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 48,
-										["total"] = 4088,
-										["c_max"] = 0,
-										["id"] = 25228,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 48,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[34936] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 34936,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27222] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 27222,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 3,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[32231] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 3064,
-										["g_amt"] = 0,
-										["n_max"] = 1851,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 3064,
-											["Memoria-Auberdine"] = 1851,
-										},
-										["n_dmg"] = 1851,
-										["n_min"] = 1851,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 4915,
-										["c_max"] = 3064,
-										["id"] = 32231,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 3064,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[6940] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 367,
-										["targets"] = {
-											["Шерифдуфи-Пламегор"] = 2469,
-										},
-										["n_dmg"] = 2469,
-										["n_min"] = 40,
-										["g_dmg"] = 0,
-										["counter"] = 17,
-										["total"] = 2469,
-										["c_max"] = 0,
-										["id"] = 6940,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 17,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[53307] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 73,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 268,
-											["Grr <Memoria-Auberdine>"] = 1022,
-										},
-										["n_dmg"] = 1290,
-										["n_min"] = 65,
-										["g_dmg"] = 0,
-										["counter"] = 18,
-										["total"] = 1290,
-										["c_max"] = 0,
-										["id"] = 53307,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 69,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 1,
-										["n_amt"] = 18,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27215] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 2702,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Grr <Memoria-Auberdine>"] = 1403,
-											["Bopshop-Ashbringer"] = 1299,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 2702,
-										["c_max"] = 1403,
-										["id"] = 27215,
-										["r_dmg"] = 1403,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1299,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
-									[17962] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 572,
-										["g_amt"] = 0,
-										["n_max"] = 1521,
-										["targets"] = {
-											["Bopshop-Ashbringer"] = 2763,
-										},
-										["n_dmg"] = 2191,
-										["n_min"] = 335,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 2763,
-										["c_max"] = 572,
-										["id"] = 17962,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 572,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["damage_taken"] = 17566.00773,
-							["aID"] = "4474-03995BCB",
-							["custom"] = 0,
-							["last_event"] = 1667249120,
-							["last_dps"] = 828.5003513636365,
-							["start_time"] = 1667249099,
-							["delay"] = 0,
-							["pvp_component"] = true,
-						}, -- [12]
-						{
-							["flag_original"] = 4424,
-							["totalabsorbed"] = 0.005336,
-							["damage_from"] = {
-								["Дарелос-Пламегор"] = true,
-								["Boopa-Venoxis"] = true,
-								["Purpplehaze-Auberdine"] = true,
-								["Maivi-Giantstalker"] = true,
-							},
-							["targets"] = {
-								["Calmyboy-MirageRaceway"] = 267,
-								["Bopshop-Ashbringer"] = 517,
-							},
-							["pets"] = {
-							},
-							["aID"] = "Pet-0-4445-489-17268-1860-030057EDD8",
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 784.0053359999999,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-4445-489-17268-1860-030057EDD8",
-							["fight_component"] = true,
-							["total"] = 784.0053359999999,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["nome"] = "Макнаке",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 179,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 267,
-											["Bopshop-Ashbringer"] = 517,
-										},
-										["n_dmg"] = 784,
-										["n_min"] = 128,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 784,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1667249121,
-							["last_event"] = 1667249114,
-							["damage_taken"] = 10459.005336,
-							["delay"] = 1667249114,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1667249114,
-							["pvp_component"] = true,
-							["pvp"] = true,
-						}, -- [13]
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.003254,
-							["colocacao"] = 6,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Коббал-Пламегор"] = 3441,
-								["Макнаке"] = 1320,
-								["Рубежж-Пламегор"] = 2360,
-							},
-							["last_event"] = 1667249118,
-							["pets"] = {
-							},
-							["total"] = 7121.003254,
-							["aID"] = "4477-02CA9A6D",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 7121.003254,
-							["delay"] = 1667249118,
-							["classe"] = "MAGE",
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["serial"] = "Player-4477-02CA9A6D",
-							["dps_started"] = false,
-							["nome"] = "Boopa-Venoxis",
-							["spells"] = {
-								["_ActorTable"] = {
-									[27074] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 496,
-										["targets"] = {
-											["Коббал-Пламегор"] = 496,
-										},
-										["n_dmg"] = 496,
-										["n_min"] = 496,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 496,
-										["c_max"] = 0,
-										["id"] = 27074,
-										["r_dmg"] = 496,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
-									[27079] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 796,
-										["targets"] = {
-											["Коббал-Пламегор"] = 796,
-										},
-										["n_dmg"] = 796,
-										["n_min"] = 796,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 796,
-										["c_max"] = 0,
-										["id"] = 27079,
-										["r_dmg"] = 796,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
-									[44457] = {
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 1582,
-										["g_amt"] = 0,
-										["n_max"] = 265,
-										["targets"] = {
-											["Коббал-Пламегор"] = 1069,
-											["Макнаке"] = 855,
-											["Рубежж-Пламегор"] = 1458,
-										},
-										["n_dmg"] = 1800,
-										["n_min"] = 184,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 3382,
-										["c_max"] = 464,
-										["id"] = 44457,
-										["r_dmg"] = 1117,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 309,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 8,
-										["b_dmg"] = 0,
-										["r_amt"] = 5,
-									},
-									[30455] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 210,
-										["targets"] = {
-											["Коббал-Пламегор"] = 404,
-										},
-										["n_dmg"] = 404,
-										["n_min"] = 194,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 404,
-										["c_max"] = 0,
-										["id"] = 30455,
-										["r_dmg"] = 404,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 2,
-									},
-									[12654] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 139,
-										["targets"] = {
-											["Коббал-Пламегор"] = 262,
-											["Рубежж-Пламегор"] = 371,
-										},
-										["n_dmg"] = 633,
-										["n_min"] = 69,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 633,
-										["c_max"] = 0,
-										["id"] = 12654,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[44461] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 531,
-										["targets"] = {
-											["Коббал-Пламегор"] = 414,
-											["Макнаке"] = 465,
-											["Рубежж-Пламегор"] = 531,
-										},
-										["n_dmg"] = 1410,
-										["n_min"] = 414,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 1410,
-										["c_max"] = 0,
-										["id"] = 44461,
-										["r_dmg"] = 879,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 2,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["damage_taken"] = 0.003254,
-							["friendlyfire"] = {
-							},
-							["on_hold"] = false,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 374.7896449473685,
-							["start_time"] = 1667249102,
-							["pvp_component"] = true,
-							["pvp"] = true,
-						}, -- [14]
-						{
-							["flag_original"] = 1352,
-							["totalabsorbed"] = 0.008284,
-							["friendlyfire"] = {
-							},
-							["damage_from"] = {
-							},
-							["targets"] = {
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["aID"] = "4474-04A803F9",
-							["pvp_component"] = true,
-							["classe"] = "PALADIN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.008284,
-							["friendlyfire_total"] = 0,
-							["last_event"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1667249121,
-							["total"] = 0.008284,
-							["on_hold"] = false,
-							["nome"] = "Небославян-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[27137] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 27137,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 5,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[33072] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 33072,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["serial"] = "Player-4474-04A803F9",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.008284,
-							["start_time"] = 1667249121,
-							["delay"] = 0,
-							["pvp"] = true,
-						}, -- [15]
-						{
-							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.006004,
-							["last_event"] = 1667249115,
-							["damage_from"] = {
-								["Коббал-Пламегор"] = true,
-							},
-							["targets"] = {
-								["Коббал-Пламегор"] = 1129,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["total"] = 1129.006004,
-							["aID"] = "Pet-0-4468-489-4518-1860-020049119C",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1129.006004,
-							["friendlyfire"] = {
-							},
-							["classe"] = "PET",
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["serial"] = "Pet-0-4468-489-4518-1860-020049119C",
-							["ownerName"] = "Purpplehaze-Auberdine",
-							["nome"] = "Hathgarth <Purpplehaze-Auberdine>",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 246,
-										["targets"] = {
-											["Коббал-Пламегор"] = 1129,
-										},
-										["n_dmg"] = 1129,
-										["n_min"] = 196,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 1129,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 2,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[47989] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Коббал-Пламегор"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 47989,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["RESIST"] = 1,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["delay"] = 1667249115,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 366.006004,
-							["start_time"] = 1667249110,
-							["pvp_component"] = true,
-							["pvp"] = true,
-						}, -- [16]
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.005869,
-							["colocacao"] = 6,
-							["damage_from"] = {
-								["Дарелос-Пламегор"] = true,
-								["Ницшеподлсд-Пламегор"] = true,
-								["Рубежж-Пламегор"] = true,
-								["Молимся-Пламегор"] = true,
-							},
-							["targets"] = {
-								["Дарелос-Пламегор"] = 7774,
-							},
-							["last_event"] = 1667249120,
-							["pets"] = {
-								"Grr <Memoria-Auberdine>", -- [1]
-							},
-							["total"] = 7774.005869000001,
-							["aID"] = "4441-039BA4F5",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 5063.005869000001,
-							["delay"] = 0,
-							["classe"] = "HUNTER",
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["serial"] = "Player-4441-039BA4F5",
-							["dps_started"] = false,
-							["nome"] = "Memoria-Auberdine",
-							["spells"] = {
-								["_ActorTable"] = {
-									[34490] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 374,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Дарелос-Пламегор"] = 374,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 374,
-										["c_max"] = 374,
-										["id"] = 34490,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 374,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[75] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 686,
-										["g_amt"] = 0,
-										["n_max"] = 564,
-										["targets"] = {
-											["Дарелос-Пламегор"] = 2182,
-										},
-										["n_dmg"] = 1496,
-										["n_min"] = 398,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 2182,
-										["c_max"] = 686,
-										["id"] = 75,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 686,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27065] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 454,
-										["targets"] = {
-											["Дарелос-Пламегор"] = 454,
-										},
-										["n_dmg"] = 454,
-										["n_min"] = 454,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 454,
-										["c_max"] = 0,
-										["id"] = 27065,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[53209] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 410,
-										["targets"] = {
-											["Дарелос-Пламегор"] = 410,
-										},
-										["n_dmg"] = 410,
-										["n_min"] = 410,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 410,
-										["c_max"] = 0,
-										["id"] = 53209,
-										["r_dmg"] = 410,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
-									[27019] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 890,
-										["g_amt"] = 0,
-										["n_max"] = 481,
-										["targets"] = {
-											["Дарелос-Пламегор"] = 1371,
-										},
-										["n_dmg"] = 481,
-										["n_min"] = 481,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 1371,
-										["c_max"] = 890,
-										["id"] = 27019,
-										["r_dmg"] = 890,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 890,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
-									[53254] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 272,
-										["targets"] = {
-											["Дарелос-Пламегор"] = 272,
-										},
-										["n_dmg"] = 272,
-										["n_min"] = 272,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 272,
-										["c_max"] = 0,
-										["id"] = 53254,
-										["r_dmg"] = 272,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["damage_taken"] = 6784.005869000001,
-							["friendlyfire"] = {
-							},
-							["on_hold"] = false,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 788.8343115000001,
-							["start_time"] = 1667249108,
-							["pvp_component"] = true,
-							["pvp"] = true,
-						}, -- [17]
-						{
-							["flag_original"] = 4372,
-							["totalabsorbed"] = 0.007629,
-							["last_event"] = 1667249120,
-							["damage_from"] = {
-								["Коббал-Пламегор"] = true,
-								["Дарелос-Пламегор"] = true,
-							},
-							["targets"] = {
-								["Дарелос-Пламегор"] = 2711,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["total"] = 2711.007629,
-							["aID"] = "Pet-0-4468-489-4518-25675-040076B350",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 2711.007629,
-							["friendlyfire"] = {
-							},
-							["classe"] = "PET",
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["serial"] = "Pet-0-4468-489-4518-25675-040076B350",
-							["ownerName"] = "Memoria-Auberdine",
-							["nome"] = "Grr <Memoria-Auberdine>",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 211,
-										["targets"] = {
-											["Дарелос-Пламегор"] = 1276,
-										},
-										["n_dmg"] = 1276,
-										["n_min"] = 127,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 1276,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[52473] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 594,
-										["g_amt"] = 0,
-										["n_max"] = 196,
-										["targets"] = {
-											["Дарелос-Пламегор"] = 1435,
-										},
-										["n_dmg"] = 841,
-										["n_min"] = 144,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 1435,
-										["c_max"] = 312,
-										["DODGE"] = 1,
-										["id"] = 52473,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 282,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["delay"] = 0,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 4195.007629,
-							["start_time"] = 1667249108,
-							["pvp_component"] = true,
-							["pvp"] = true,
-						}, -- [18]
-						{
-							["flag_original"] = 1352,
-							["totalabsorbed"] = 0.008378,
-							["pets"] = {
-							},
-							["classe"] = "WARRIOR",
-							["total_without_pet"] = 8905.008378,
-							["dps_started"] = false,
-							["total"] = 8905.008378,
-							["colocacao"] = 5,
-							["on_hold"] = false,
-							["serial"] = "Player-4474-04A9CC5B",
-							["pvp"] = true,
-							["damage_from"] = {
-								["Fatsnack-Mandokir"] = true,
-							},
-							["targets"] = {
-								["Fatsnack-Mandokir"] = 8905,
-							},
-							["enemy"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["friendlyfire"] = {
-							},
-							["tipo"] = 1,
-							["nome"] = "Сварт-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 953,
-										["targets"] = {
-											["Fatsnack-Mandokir"] = 1905,
-										},
-										["n_dmg"] = 1905,
-										["n_min"] = 952,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 1905,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[2687] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 2687,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[7384] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 2384,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Fatsnack-Mandokir"] = 2384,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 2384,
-										["c_max"] = 2384,
-										["id"] = 7384,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 2384,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47485] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 1397,
-										["targets"] = {
-											["Fatsnack-Mandokir"] = 1397,
-										},
-										["n_dmg"] = 1397,
-										["n_min"] = 1397,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 1397,
-										["c_max"] = 0,
-										["id"] = 47485,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[12721] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 142,
-										["targets"] = {
-											["Fatsnack-Mandokir"] = 268,
-										},
-										["n_dmg"] = 268,
-										["n_min"] = 126,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 268,
-										["c_max"] = 0,
-										["id"] = 12721,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[20252] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 20252,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[2457] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 2457,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47465] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 582,
-										["targets"] = {
-											["Fatsnack-Mandokir"] = 1048,
-										},
-										["n_dmg"] = 1048,
-										["n_min"] = 466,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 1048,
-										["c_max"] = 0,
-										["id"] = 47465,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[1680] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1672,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Fatsnack-Mandokir"] = 1672,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 1672,
-										["c_max"] = 1672,
-										["id"] = 1680,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1672,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[20253] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 231,
-										["targets"] = {
-											["Fatsnack-Mandokir"] = 231,
-										},
-										["n_dmg"] = 231,
-										["n_min"] = 231,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 231,
-										["c_max"] = 0,
-										["id"] = 20253,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[11578] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 11578,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[2458] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 2458,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["damage_taken"] = 22088.008378,
-							["aID"] = "4474-04A9CC5B",
-							["custom"] = 0,
-							["last_event"] = 1667249120,
-							["last_dps"] = 1484.168063,
-							["start_time"] = 1667249115,
-							["delay"] = 0,
-							["pvp_component"] = true,
-						}, -- [19]
-						{
-							["flag_original"] = 1352,
-							["totalabsorbed"] = 0.006586,
-							["friendlyfire"] = {
-							},
-							["damage_from"] = {
-							},
-							["targets"] = {
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["aID"] = "4474-02506FC0",
-							["pvp_component"] = true,
-							["classe"] = "MAGE",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.006586,
-							["friendlyfire_total"] = 0,
-							["last_event"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1667249121,
-							["total"] = 0.006586,
-							["on_hold"] = false,
-							["nome"] = "Готян-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[27128] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 27128,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[1953] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 1953,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["serial"] = "Player-4474-02506FC0",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.006586,
-							["start_time"] = 1667249121,
-							["delay"] = 0,
-							["pvp"] = true,
-						}, -- [20]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 243,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1352,
-							["targets_overheal"] = {
-								["Коббал-Пламегор"] = 707,
-								["Кейналай-Пламегор"] = 3349,
-								["Шерифдуфи-Пламегор"] = 223,
-								["Небославян-Пламегор"] = 3325,
-								["Сварт-Пламегор"] = 56,
-								["Ницшеподлсд-Пламегор"] = 720,
-								["Рубежж-Пламегор"] = 1680,
-								["Молимся-Пламегор"] = 2706,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "UNGROUPPLAYER",
-							["totalover"] = 12766.004189,
-							["total_without_pet"] = 42839.004189,
-							["total"] = 42839.004189,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4474-047E5D59",
-							["pvp"] = true,
-							["totalabsorb"] = 0.004189,
-							["last_hps"] = 1862.565399521739,
-							["targets"] = {
-								["Коббал-Пламегор"] = 19620,
-								["Ницшеподлсд-Пламегор"] = 3973,
-								["Молимся-Пламегор"] = 4055,
-								["Рубежж-Пламегор"] = 970,
-								["Дарелос-Пламегор"] = 1745,
-								["Кейналай-Пламегор"] = 6630,
-								["Шерифдуфи-Пламегор"] = 2421,
-								["Сварт-Пламегор"] = 1703,
-								["Макнаке"] = 1722,
-							},
-							["enemy"] = true,
-							["totalover_without_pet"] = 0.004189,
-							["healing_taken"] = 9392.004189,
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["aID"] = "4474-047E5D59",
-							["pvp_component"] = true,
-							["nome"] = "Кейналай-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[26980] = {
-										["c_amt"] = 3,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Коббал-Пламегор"] = 707,
-											["Кейналай-Пламегор"] = 1521,
-											["Молимся-Пламегор"] = 2512,
-											["Ницшеподлсд-Пламегор"] = 720,
-										},
-										["n_max"] = 1901,
-										["targets"] = {
-											["Коббал-Пламегор"] = 10140,
-											["Кейналай-Пламегор"] = 3016,
-											["Молимся-Пламегор"] = 2601,
-											["Ницшеподлсд-Пламегор"] = 2325,
-										},
-										["n_min"] = 305,
-										["counter"] = 31,
-										["overheal"] = 5460,
-										["total"] = 18082,
-										["c_max"] = 2827,
-										["id"] = 26980,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 1896,
-										["c_curado"] = 6845,
-										["totaldenied"] = 0,
-										["n_amt"] = 28,
-										["n_curado"] = 11237,
-										["absorbed"] = 0,
-									},
-									[26982] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Кейналай-Пламегор"] = 1635,
-											["Шерифдуфи-Пламегор"] = 22,
-											["Небославян-Пламегор"] = 2391,
-										},
-										["n_max"] = 775,
-										["targets"] = {
-											["Коббал-Пламегор"] = 3035,
-											["Кейналай-Пламегор"] = 2919,
-											["Молимся-Пламегор"] = 759,
-											["Небославян-Пламегор"] = 0,
-											["Дарелос-Пламегор"] = 1745,
-											["Ницшеподлсд-Пламегор"] = 759,
-											["Шерифдуфи-Пламегор"] = 775,
-										},
-										["n_min"] = 379,
-										["counter"] = 20,
-										["overheal"] = 4048,
-										["total"] = 9992,
-										["c_max"] = 0,
-										["id"] = 26982,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 20,
-										["n_curado"] = 9992,
-										["absorbed"] = 0,
-									},
-									[18562] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 3036,
-										["targets"] = {
-											["Коббал-Пламегор"] = 3036,
-										},
-										["n_min"] = 3036,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 3036,
-										["c_max"] = 0,
-										["id"] = 18562,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 3036,
-										["absorbed"] = 0,
-									},
-									[53248] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Кейналай-Пламегор"] = 193,
-											["Молимся-Пламегор"] = 194,
-											["Небославян-Пламегор"] = 934,
-											["Сварт-Пламегор"] = 56,
-											["Рубежж-Пламегор"] = 1680,
-											["Шерифдуфи-Пламегор"] = 201,
-										},
-										["n_max"] = 325,
-										["targets"] = {
-											["Коббал-Пламегор"] = 3409,
-											["Ницшеподлсд-Пламегор"] = 889,
-											["Молимся-Пламегор"] = 695,
-											["Рубежж-Пламегор"] = 970,
-											["Кейналай-Пламегор"] = 695,
-											["Шерифдуфи-Пламегор"] = 1646,
-											["Сварт-Пламегор"] = 1703,
-											["Макнаке"] = 1722,
-											["Небославян-Пламегор"] = 0,
-										},
-										["n_min"] = 36,
-										["counter"] = 62,
-										["overheal"] = 3258,
-										["total"] = 11729,
-										["c_max"] = 0,
-										["id"] = 53248,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 62,
-										["n_curado"] = 11729,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["start_time"] = 1667249098,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1667249120,
-							["tipo"] = 2,
-							["totaldenied"] = 0.004189,
-							["delay"] = 0,
-							["healing_from"] = {
-								["Шерифдуфи-Пламегор"] = true,
-								["Кейналай-Пламегор"] = true,
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["targets_overheal"] = {
-								["Purpplehaze-Auberdine"] = 1152,
-								["Hathgarth <Purpplehaze-Auberdine>"] = 3710,
-							},
-							["pets"] = {
-								"Hathgarth <Purpplehaze-Auberdine>", -- [1]
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "WARLOCK",
-							["totalover"] = 4862.003799,
-							["total_without_pet"] = 890.0037990000001,
-							["total"] = 890.0037990000001,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 6,
-							["on_hold"] = false,
-							["serial"] = "Player-4441-027C4C2D",
-							["pvp"] = true,
-							["totalabsorb"] = 0.003799,
-							["last_hps"] = 106.25094975,
-							["targets"] = {
-								["Purpplehaze-Auberdine"] = 515,
-								["Hathgarth <Purpplehaze-Auberdine>"] = 375,
-							},
-							["totalover_without_pet"] = 0.003799,
-							["healing_taken"] = 515.0037990000001,
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["aID"] = "4441-027C4C2D",
-							["pvp_component"] = true,
-							["nome"] = "Purpplehaze-Auberdine",
-							["spells"] = {
-								["_ActorTable"] = {
-									[54181] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Hathgarth <Purpplehaze-Auberdine>"] = 3710,
-										},
-										["n_max"] = 66,
-										["targets"] = {
-											["Hathgarth <Purpplehaze-Auberdine>"] = 375,
-										},
-										["n_min"] = 0,
-										["counter"] = 45,
-										["overheal"] = 3710,
-										["total"] = 375,
-										["c_max"] = 0,
-										["id"] = 54181,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 45,
-										["n_curado"] = 375,
-										["absorbed"] = 0,
-									},
-									[47893] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Purpplehaze-Auberdine"] = 1152,
-										},
-										["n_max"] = 416,
-										["targets"] = {
-											["Purpplehaze-Auberdine"] = 515,
-										},
-										["n_min"] = 0,
-										["counter"] = 4,
-										["overheal"] = 1152,
-										["total"] = 515,
-										["c_max"] = 0,
-										["id"] = 47893,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 4,
-										["n_curado"] = 515,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["start_time"] = 1667249098,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1667249120,
-							["tipo"] = 2,
-							["totaldenied"] = 0.003799,
-							["delay"] = 0,
-							["healing_from"] = {
-								["Purpplehaze-Auberdine"] = true,
-							},
-						}, -- [2]
-						{
-							["flag_original"] = 4370,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.002725,
-							["total_without_pet"] = 0.002725,
-							["total"] = 0.002725,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4468-489-4518-1860-020049119C",
-							["pvp"] = true,
-							["totalabsorb"] = 0.002725,
-							["last_hps"] = 0,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.002725,
-							["healing_taken"] = 375.002725,
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["classe"] = "PET",
-							["ownerName"] = "Purpplehaze-Auberdine",
-							["nome"] = "Hathgarth <Purpplehaze-Auberdine>",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["pvp_component"] = true,
-							["start_time"] = 1667249121,
-							["aID"] = "Pet-0-4468-489-4518-1860-020049119C",
-							["custom"] = 0,
-							["last_event"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.002725,
-							["delay"] = 0,
-							["healing_from"] = {
-								["Purpplehaze-Auberdine"] = true,
-							},
-						}, -- [3]
-						{
-							["flag_original"] = 1352,
-							["targets_overheal"] = {
-								["Готян-Пламегор"] = 31,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PRIEST",
-							["totalover"] = 31.005217,
-							["total_without_pet"] = 259.005217,
-							["total"] = 259.005217,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 6,
-							["on_hold"] = false,
-							["serial"] = "Player-4474-04B16B28",
-							["pvp"] = true,
-							["totalabsorb"] = 0.005217,
-							["last_hps"] = 0.001739,
-							["targets"] = {
-								["Коббал-Пламегор"] = 32,
-								["Ницшеподлсд-Пламегор"] = 33,
-								["Молимся-Пламегор"] = 162,
-								["Сварт-Пламегор"] = 32,
-							},
-							["enemy"] = true,
-							["totalover_without_pet"] = 0.005217,
-							["healing_taken"] = 4217.005217,
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["pvp_component"] = true,
-							["aID"] = "4474-04B16B28",
-							["nome"] = "Молимся-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[15290] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Готян-Пламегор"] = 31,
-										},
-										["n_max"] = 129,
-										["targets"] = {
-											["Коббал-Пламегор"] = 32,
-											["Ницшеподлсд-Пламегор"] = 33,
-											["Молимся-Пламегор"] = 162,
-											["Сварт-Пламегор"] = 32,
-											["Готян-Пламегор"] = 0,
-										},
-										["n_min"] = 33,
-										["counter"] = 6,
-										["overheal"] = 31,
-										["total"] = 259,
-										["c_max"] = 0,
-										["id"] = 15290,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 6,
-										["n_curado"] = 259,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["start_time"] = 1667249120,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1667249118,
-							["tipo"] = 2,
-							["totaldenied"] = 0.005217,
-							["delay"] = 1667249118,
-							["healing_from"] = {
-								["Молимся-Пламегор"] = true,
-								["Кейналай-Пламегор"] = true,
-							},
-						}, -- [4]
-						{
-							["flag_original"] = 1352,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "HUNTER",
-							["totalover"] = 0.004154,
-							["total_without_pet"] = 299.004154,
-							["total"] = 299.004154,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 6,
-							["on_hold"] = false,
-							["serial"] = "Player-4474-04B74E61",
-							["pvp"] = true,
-							["totalabsorb"] = 0.004154,
-							["last_hps"] = 0.001384666666666667,
-							["targets"] = {
-								["Ницшеподлсд-Пламегор"] = 299,
-							},
-							["enemy"] = true,
-							["totalover_without_pet"] = 0.004154,
-							["healing_taken"] = 8039.004154,
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["pvp_component"] = true,
-							["aID"] = "4474-04B74E61",
-							["nome"] = "Ницшеподлсд-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[34299] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 299,
-										["targets"] = {
-											["Ницшеподлсд-Пламегор"] = 299,
-										},
-										["n_min"] = 299,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 299,
-										["c_max"] = 0,
-										["id"] = 34299,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 299,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["start_time"] = 1667249120,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1667249114,
-							["tipo"] = 2,
-							["totaldenied"] = 0.004154,
-							["delay"] = 1667249114,
-							["healing_from"] = {
-								["Кейналай-Пламегор"] = true,
-								["Шерифдуфи-Пламегор"] = true,
-								["Небославян-Пламегор"] = true,
-								["Молимся-Пламегор"] = true,
-								["Ницшеподлсд-Пламегор"] = true,
-							},
-						}, -- [5]
-						{
-							["flag_original"] = 1352,
-							["targets_overheal"] = {
-								["Ницшеподлсд-Пламегор"] = 333,
-								["Рубежж-Пламегор"] = 1047,
-								["Небославян-Пламегор"] = 15516,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PALADIN",
-							["totalover"] = 16896.004837,
-							["total_without_pet"] = 11554.004837,
-							["total"] = 11554.004837,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 4,
-							["on_hold"] = false,
-							["serial"] = "Player-4474-04A803F9",
-							["pvp"] = true,
-							["totalabsorb"] = 0.004837,
-							["last_hps"] = 1650.572119571429,
-							["targets"] = {
-								["Коббал-Пламегор"] = 5632,
-								["Ницшеподлсд-Пламегор"] = 2863,
-								["Рубежж-Пламегор"] = 464,
-								["Дарелос-Пламегор"] = 2595,
-							},
-							["enemy"] = true,
-							["totalover_without_pet"] = 0.004837,
-							["healing_taken"] = 0.004837,
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["pvp_component"] = true,
-							["aID"] = "4474-04A803F9",
-							["nome"] = "Небославян-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[27137] = {
-										["c_amt"] = 1,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Рубежж-Пламегор"] = 1047,
-										},
-										["n_max"] = 1550,
-										["targets"] = {
-											["Коббал-Пламегор"] = 3082,
-											["Рубежж-Пламегор"] = 464,
-											["Дарелос-Пламегор"] = 2595,
-										},
-										["n_min"] = 464,
-										["counter"] = 5,
-										["overheal"] = 1047,
-										["total"] = 6141,
-										["c_max"] = 1852,
-										["id"] = 27137,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 1852,
-										["c_curado"] = 1852,
-										["totaldenied"] = 0,
-										["n_amt"] = 4,
-										["n_curado"] = 4289,
-										["absorbed"] = 0,
-									},
-									[53653] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Небославян-Пламегор"] = 8814,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Небославян-Пламегор"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 5,
-										["overheal"] = 8814,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 53653,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 5,
-										["n_curado"] = 0,
-										["absorbed"] = 0,
-									},
-									[53654] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Небославян-Пламегор"] = 6702,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Небославян-Пламегор"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 2,
-										["overheal"] = 6702,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 53654,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["n_curado"] = 0,
-										["absorbed"] = 0,
-									},
-									[33074] = {
-										["c_amt"] = 2,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Ницшеподлсд-Пламегор"] = 333,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Коббал-Пламегор"] = 2550,
-											["Ницшеподлсд-Пламегор"] = 2863,
-										},
-										["n_min"] = 0,
-										["counter"] = 2,
-										["overheal"] = 333,
-										["total"] = 5413,
-										["c_max"] = 2863,
-										["id"] = 33074,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 2550,
-										["c_curado"] = 5413,
-										["totaldenied"] = 0,
-										["n_amt"] = 0,
-										["n_curado"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["start_time"] = 1667249115,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1667249116,
-							["tipo"] = 2,
-							["totaldenied"] = 0.004837,
-							["delay"] = 1667249116,
-							["healing_from"] = {
-							},
-						}, -- [6]
-						{
-							["flag_original"] = 1352,
-							["targets_overheal"] = {
-								["Рубежж-Пламегор"] = 576,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "WARLOCK",
-							["totalover"] = 576.00621,
-							["total_without_pet"] = 1372.00621,
-							["total"] = 1372.00621,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 6,
-							["on_hold"] = false,
-							["serial"] = "Player-4474-04A80422",
-							["pvp"] = true,
-							["totalabsorb"] = 0.00621,
-							["last_hps"] = 0.00207,
-							["targets"] = {
-								["Рубежж-Пламегор"] = 1372,
-							},
-							["enemy"] = true,
-							["totalover_without_pet"] = 0.00621,
-							["healing_taken"] = 3191.00621,
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["pvp_component"] = true,
-							["aID"] = "4474-04A80422",
-							["nome"] = "Рубежж-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[63106] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Рубежж-Пламегор"] = 385,
-										},
-										["n_max"] = 432,
-										["targets"] = {
-											["Рубежж-Пламегор"] = 995,
-										},
-										["n_min"] = 192,
-										["counter"] = 5,
-										["overheal"] = 385,
-										["total"] = 995,
-										["c_max"] = 0,
-										["id"] = 63106,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 5,
-										["n_curado"] = 995,
-										["absorbed"] = 0,
-									},
-									[28189] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Рубежж-Пламегор"] = 191,
-										},
-										["n_max"] = 142,
-										["targets"] = {
-											["Рубежж-Пламегор"] = 377,
-										},
-										["n_min"] = 93,
-										["counter"] = 4,
-										["overheal"] = 191,
-										["total"] = 377,
-										["c_max"] = 0,
-										["id"] = 28189,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 4,
-										["n_curado"] = 377,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["start_time"] = 1667249114,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1667249118,
-							["tipo"] = 2,
-							["totaldenied"] = 0.00621,
-							["delay"] = 1667249118,
-							["healing_from"] = {
-								["Шерифдуфи-Пламегор"] = true,
-								["Кейналай-Пламегор"] = true,
-								["Рубежж-Пламегор"] = true,
-								["Небославян-Пламегор"] = true,
-							},
-						}, -- [7]
-						{
-							["flag_original"] = 1352,
-							["targets_overheal"] = {
-								["Дарелос-Пламегор"] = 300,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "WARLOCK",
-							["totalover"] = 300.006114,
-							["total_without_pet"] = 2592.006114,
-							["total"] = 2592.006114,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 6,
-							["on_hold"] = false,
-							["serial"] = "Player-4474-03995BCB",
-							["pvp"] = true,
-							["totalabsorb"] = 0.006114,
-							["last_hps"] = 125.8580162857143,
-							["targets"] = {
-								["Макнаке"] = 1285,
-								["Дарелос-Пламегор"] = 1307,
-							},
-							["enemy"] = true,
-							["totalover_without_pet"] = 0.006114,
-							["healing_taken"] = 11804.006114,
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["pvp_component"] = true,
-							["aID"] = "4474-03995BCB",
-							["nome"] = "Дарелос-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[54181] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 439,
-										["targets"] = {
-											["Макнаке"] = 1285,
-										},
-										["n_min"] = 48,
-										["counter"] = 7,
-										["overheal"] = 0,
-										["total"] = 1285,
-										["c_max"] = 0,
-										["id"] = 54181,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 7,
-										["n_curado"] = 1285,
-										["absorbed"] = 0,
-									},
-									[28189] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Дарелос-Пламегор"] = 300,
-										},
-										["n_max"] = 300,
-										["targets"] = {
-											["Дарелос-Пламегор"] = 839,
-										},
-										["n_min"] = 150,
-										["counter"] = 5,
-										["overheal"] = 300,
-										["total"] = 839,
-										["c_max"] = 0,
-										["id"] = 28189,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 5,
-										["n_curado"] = 839,
-										["absorbed"] = 0,
-									},
-									[30294] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 468,
-										["targets"] = {
-											["Дарелос-Пламегор"] = 468,
-										},
-										["n_min"] = 468,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 468,
-										["c_max"] = 0,
-										["id"] = 30294,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 468,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["start_time"] = 1667249108,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1667249119,
-							["tipo"] = 2,
-							["totaldenied"] = 0.006114,
-							["delay"] = 1667249114,
-							["healing_from"] = {
-								["Дарелос-Пламегор"] = true,
-								["Кейналай-Пламегор"] = true,
-								["Шерифдуфи-Пламегор"] = true,
-								["Небославян-Пламегор"] = true,
-								["Макнаке"] = true,
-							},
-						}, -- [8]
-						{
-							["flag_original"] = 1352,
-							["targets_overheal"] = {
-								["Ницшеподлсд-Пламегор"] = 2172,
-								["Кейналай-Пламегор"] = 1889,
-								["Шерифдуфи-Пламегор"] = 10598,
-								["Рубежж-Пламегор"] = 2220,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PALADIN",
-							["totalover"] = 16879.004005,
-							["total_without_pet"] = 19588.004005,
-							["total"] = 19588.004005,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 3,
-							["on_hold"] = false,
-							["serial"] = "Player-4474-04B5FDAC",
-							["pvp"] = true,
-							["totalabsorb"] = 0.004005,
-							["last_hps"] = 3917.600801,
-							["targets"] = {
-								["Дарелос-Пламегор"] = 5210,
-								["Ницшеподлсд-Пламегор"] = 871,
-								["Шерифдуфи-Пламегор"] = 1858,
-								["Кейналай-Пламегор"] = 2762,
-								["Рубежж-Пламегор"] = 385,
-								["Коббал-Пламегор"] = 8502,
-							},
-							["enemy"] = true,
-							["totalover_without_pet"] = 0.004005,
-							["healing_taken"] = 4279.004005,
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["pvp_component"] = true,
-							["aID"] = "4474-04B5FDAC",
-							["nome"] = "Шерифдуфи-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[33074] = {
-										["c_amt"] = 2,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Рубежж-Пламегор"] = 2220,
-											["Кейналай-Пламегор"] = 1889,
-										},
-										["n_max"] = 1251,
-										["targets"] = {
-											["Коббал-Пламегор"] = 3022,
-											["Кейналай-Пламегор"] = 2762,
-											["Рубежж-Пламегор"] = 385,
-											["Дарелос-Пламегор"] = 1251,
-										},
-										["n_min"] = 385,
-										["counter"] = 4,
-										["overheal"] = 4109,
-										["total"] = 7420,
-										["c_max"] = 3022,
-										["id"] = 33074,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 2762,
-										["c_curado"] = 5784,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["n_curado"] = 1636,
-										["absorbed"] = 0,
-									},
-									[27136] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 5480,
-										["targets"] = {
-											["Коббал-Пламегор"] = 5480,
-										},
-										["n_min"] = 5480,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 5480,
-										["c_max"] = 0,
-										["id"] = 27136,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 5480,
-										["absorbed"] = 0,
-									},
-									[27137] = {
-										["c_amt"] = 3,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Ницшеподлсд-Пламегор"] = 2172,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Дарелос-Пламегор"] = 3959,
-											["Ницшеподлсд-Пламегор"] = 871,
-										},
-										["n_min"] = 0,
-										["counter"] = 3,
-										["overheal"] = 2172,
-										["total"] = 4830,
-										["c_max"] = 2429,
-										["id"] = 27137,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 871,
-										["c_curado"] = 4830,
-										["totaldenied"] = 0,
-										["n_amt"] = 0,
-										["n_curado"] = 0,
-										["absorbed"] = 0,
-									},
-									[53652] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Шерифдуфи-Пламегор"] = 5120,
-										},
-										["n_max"] = 634,
-										["targets"] = {
-											["Шерифдуфи-Пламегор"] = 634,
-										},
-										["n_min"] = 634,
-										["counter"] = 1,
-										["overheal"] = 5120,
-										["total"] = 634,
-										["c_max"] = 0,
-										["id"] = 53652,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 634,
-										["absorbed"] = 0,
-									},
-									[53654] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Шерифдуфи-Пламегор"] = 5478,
-										},
-										["n_max"] = 1224,
-										["targets"] = {
-											["Шерифдуфи-Пламегор"] = 1224,
-										},
-										["n_min"] = 1224,
-										["counter"] = 2,
-										["overheal"] = 5478,
-										["total"] = 1224,
-										["c_max"] = 0,
-										["id"] = 53654,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["n_curado"] = 1224,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["start_time"] = 1667249116,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1667249120,
-							["tipo"] = 2,
-							["totaldenied"] = 0.004005,
-							["delay"] = 1667249116,
-							["healing_from"] = {
-								["Шерифдуфи-Пламегор"] = true,
-								["Кейналай-Пламегор"] = true,
-							},
-						}, -- [9]
-						{
-							["flag_original"] = 1352,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["totalover"] = 0.002225,
-							["total_without_pet"] = 6881.002225,
-							["total"] = 6881.002225,
-							["targets_absorbs"] = {
-								["Коббал-Пламегор"] = 517,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 5,
-							["on_hold"] = false,
-							["serial"] = "Player-4474-049F3E8D",
-							["pvp"] = true,
-							["totalabsorb"] = 517.002225,
-							["last_hps"] = 1146.833704166667,
-							["targets"] = {
-								["Коббал-Пламегор"] = 6881,
-							},
-							["enemy"] = true,
-							["totalover_without_pet"] = 0.002225,
-							["healing_taken"] = 40667.002225,
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["pvp_component"] = true,
-							["aID"] = "4474-049F3E8D",
-							["nome"] = "Коббал-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[48377] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 2568,
-										["targets"] = {
-											["Коббал-Пламегор"] = 2568,
-										},
-										["n_min"] = 2568,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 2568,
-										["c_max"] = 0,
-										["id"] = 48377,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 2568,
-										["absorbed"] = 0,
-									},
-									[22845] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 821,
-										["targets"] = {
-											["Коббал-Пламегор"] = 2954,
-										},
-										["n_min"] = 656,
-										["counter"] = 4,
-										["overheal"] = 0,
-										["total"] = 2954,
-										["c_max"] = 0,
-										["id"] = 22845,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 4,
-										["n_curado"] = 2954,
-										["absorbed"] = 0,
-									},
-									[34299] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 842,
-										["targets"] = {
-											["Коббал-Пламегор"] = 842,
-										},
-										["n_min"] = 842,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 842,
-										["c_max"] = 0,
-										["id"] = 34299,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 842,
-										["absorbed"] = 0,
-									},
-									[62606] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 517,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 517,
-										["targets"] = {
-											["Коббал-Пламегор"] = 517,
-										},
-										["n_min"] = 517,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 517,
-										["c_max"] = 0,
-										["id"] = 62606,
-										["targets_absorbs"] = {
-											["Коббал-Пламегор"] = 517,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 517,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["start_time"] = 1667249116,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1667249115,
-							["tipo"] = 2,
-							["totaldenied"] = 0.002225,
-							["delay"] = 1667249115,
-							["healing_from"] = {
-								["Коббал-Пламегор"] = true,
-								["Кейналай-Пламегор"] = true,
-								["Шерифдуфи-Пламегор"] = true,
-								["Небославян-Пламегор"] = true,
-								["Молимся-Пламегор"] = true,
-							},
-						}, -- [10]
-						{
-							["flag_original"] = 4424,
-							["healing_from"] = {
-								["Дарелос-Пламегор"] = true,
-								["Кейналай-Пламегор"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PET",
-							["totalover"] = 0.008861,
-							["total_without_pet"] = 947.008861,
-							["total"] = 947.008861,
-							["targets_absorbs"] = {
-								["Дарелос-Пламегор"] = 947,
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4445-489-17268-1860-030057EDD8",
-							["pvp"] = true,
-							["totalabsorb"] = 947.008861,
-							["last_hps"] = 0,
-							["targets"] = {
-								["Дарелос-Пламегор"] = 947,
-							},
-							["totalover_without_pet"] = 0.008861,
-							["healing_taken"] = 3007.008861,
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["targets_overheal"] = {
-							},
-							["nome"] = "Макнаке",
-							["spells"] = {
-								["_ActorTable"] = {
-									[47985] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 947,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 559,
-										["targets"] = {
-											["Дарелос-Пламегор"] = 947,
-										},
-										["n_min"] = 388,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 947,
-										["c_max"] = 0,
-										["id"] = 47985,
-										["targets_absorbs"] = {
-											["Дарелос-Пламегор"] = 947,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["n_curado"] = 947,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["pvp_component"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1667249120,
-							["custom"] = 0,
-							["last_event"] = 1667249101,
-							["aID"] = "Pet-0-4445-489-17268-1860-030057EDD8",
-							["totaldenied"] = 0.008861,
-							["delay"] = 1667249101,
-							["tipo"] = 2,
-						}, -- [11]
-						{
-							["flag_original"] = 1300,
-							["targets_overheal"] = {
-								["Maivi-Giantstalker"] = 1036,
-								["Bopshop-Ashbringer"] = 14125,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PALADIN",
-							["totalover"] = 15161.004817,
-							["total_without_pet"] = 21982.004817,
-							["total"] = 21982.004817,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 2,
-							["on_hold"] = false,
-							["serial"] = "Player-4742-03A8E3B9",
-							["pvp"] = true,
-							["totalabsorb"] = 0.004817,
-							["last_hps"] = 2442.444979666667,
-							["targets"] = {
-								["Calmyboy-MirageRaceway"] = 10562,
-								["Bopshop-Ashbringer"] = 8962,
-								["Memoria-Auberdine"] = 1112,
-								["Maivi-Giantstalker"] = 1346,
-							},
-							["totalover_without_pet"] = 0.004817,
-							["healing_taken"] = 10234.004817,
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["aID"] = "4742-03A8E3B9",
-							["pvp_component"] = true,
-							["nome"] = "Bopshop-Ashbringer",
-							["spells"] = {
-								["_ActorTable"] = {
-									[53654] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bopshop-Ashbringer"] = 4761,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Bopshop-Ashbringer"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 2,
-										["overheal"] = 4761,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 53654,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["n_curado"] = 0,
-										["absorbed"] = 0,
-									},
-									[53653] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bopshop-Ashbringer"] = 4170,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Bopshop-Ashbringer"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 2,
-										["overheal"] = 4170,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 53653,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["n_curado"] = 0,
-										["absorbed"] = 0,
-									},
-									[27136] = {
-										["c_amt"] = 1,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 4740,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 6663,
-											["Bopshop-Ashbringer"] = 4740,
-										},
-										["n_min"] = 4740,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 11403,
-										["c_max"] = 6663,
-										["id"] = 27136,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 6663,
-										["c_curado"] = 6663,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 4740,
-										["absorbed"] = 0,
-									},
-									[27137] = {
-										["c_amt"] = 1,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Maivi-Giantstalker"] = 1036,
-										},
-										["n_max"] = 1589,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 1589,
-											["Maivi-Giantstalker"] = 1346,
-										},
-										["n_min"] = 1589,
-										["counter"] = 2,
-										["overheal"] = 1036,
-										["total"] = 2935,
-										["c_max"] = 1346,
-										["id"] = 27137,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 1346,
-										["c_curado"] = 1346,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 1589,
-										["absorbed"] = 0,
-									},
-									[53652] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bopshop-Ashbringer"] = 5194,
-										},
-										["n_max"] = 1802,
-										["targets"] = {
-											["Bopshop-Ashbringer"] = 1802,
-										},
-										["n_min"] = 1802,
-										["counter"] = 1,
-										["overheal"] = 5194,
-										["total"] = 1802,
-										["c_max"] = 0,
-										["id"] = 53652,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 1802,
-										["absorbed"] = 0,
-									},
-									[33074] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 2420,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 2310,
-											["Bopshop-Ashbringer"] = 2420,
-											["Memoria-Auberdine"] = 1112,
-										},
-										["n_min"] = 1112,
-										["counter"] = 3,
-										["overheal"] = 0,
-										["total"] = 5842,
-										["c_max"] = 0,
-										["id"] = 33074,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 3,
-										["n_curado"] = 5842,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["start_time"] = 1667249113,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1667249116,
-							["tipo"] = 2,
-							["totaldenied"] = 0.004817,
-							["delay"] = 1667249116,
-							["healing_from"] = {
-								["Moolatz"] = true,
-								["Bopshop-Ashbringer"] = true,
-							},
-						}, -- [12]
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Maivi-Giantstalker"] = 630,
-								["Bopshop-Ashbringer"] = 1568,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["totalover"] = 2198.006905,
-							["total_without_pet"] = 4365.006905,
-							["total"] = 4365.006905,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 6,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02B843FA",
-							["pvp"] = true,
-							["totalabsorb"] = 0.006905,
-							["last_hps"] = 363.7505754166667,
-							["targets"] = {
-								["Calmyboy-MirageRaceway"] = 3093,
-								["Bopshop-Ashbringer"] = 1272,
-							},
-							["totalover_without_pet"] = 0.006905,
-							["healing_taken"] = 0.006905,
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["aID"] = "4465-02B843FA",
-							["pvp_component"] = true,
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["_ActorTable"] = {
-									[26981] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Maivi-Giantstalker"] = 630,
-											["Bopshop-Ashbringer"] = 880,
-										},
-										["n_max"] = 210,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 1048,
-											["Bopshop-Ashbringer"] = 0,
-											["Maivi-Giantstalker"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 12,
-										["overheal"] = 1510,
-										["total"] = 1048,
-										["c_max"] = 0,
-										["id"] = 26981,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 12,
-										["n_curado"] = 1048,
-										["absorbed"] = 0,
-									},
-									[33763] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 87,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 749,
-										},
-										["n_min"] = 29,
-										["counter"] = 10,
-										["overheal"] = 0,
-										["total"] = 749,
-										["c_max"] = 0,
-										["id"] = 33763,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 10,
-										["n_curado"] = 749,
-										["absorbed"] = 0,
-									},
-									[26980] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Bopshop-Ashbringer"] = 688,
-										},
-										["n_max"] = 1272,
-										["targets"] = {
-											["Bopshop-Ashbringer"] = 1272,
-										},
-										["n_min"] = 0,
-										["counter"] = 5,
-										["overheal"] = 688,
-										["total"] = 1272,
-										["c_max"] = 0,
-										["id"] = 26980,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 5,
-										["n_curado"] = 1272,
-										["absorbed"] = 0,
-									},
-									[33778] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 1296,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 1296,
-										},
-										["n_min"] = 1296,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 1296,
-										["c_max"] = 0,
-										["id"] = 33778,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 1296,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["start_time"] = 1667249101,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1667249120,
-							["tipo"] = 2,
-							["totaldenied"] = 0.006905,
-							["delay"] = 0,
-							["healing_from"] = {
-							},
-						}, -- [13]
-						{
-							["flag_original"] = 1298,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DEATHKNIGHT",
-							["totalover"] = 0.003146,
-							["total_without_pet"] = 5220.003146,
-							["total"] = 5220.003146,
-							["targets_absorbs"] = {
-								["Calmyboy-MirageRaceway"] = 31,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 6,
-							["on_hold"] = false,
-							["serial"] = "Player-4454-04AD4921",
-							["pvp"] = true,
-							["totalabsorb"] = 31.003146,
-							["last_hps"] = 1305.0007865,
-							["targets"] = {
-								["Calmyboy-MirageRaceway"] = 5220,
-							},
-							["totalover_without_pet"] = 0.003146,
-							["healing_taken"] = 18875.003146,
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["aID"] = "4454-04AD4921",
-							["pvp_component"] = true,
-							["nome"] = "Calmyboy-MirageRaceway",
-							["spells"] = {
-								["_ActorTable"] = {
-									[45470] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 1365,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 1365,
-										},
-										["n_min"] = 1365,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 1365,
-										["c_max"] = 0,
-										["id"] = 45470,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 1365,
-										["absorbed"] = 0,
-									},
-									[53365] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 546,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 546,
-										},
-										["n_min"] = 546,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 546,
-										["c_max"] = 0,
-										["id"] = 53365,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 546,
-										["absorbed"] = 0,
-									},
-									[49497] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 31,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 31,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 31,
-										},
-										["n_min"] = 31,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 31,
-										["c_max"] = 0,
-										["id"] = 49497,
-										["targets_absorbs"] = {
-											["Calmyboy-MirageRaceway"] = 31,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 31,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-									[48982] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 3278,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 3278,
-										},
-										["n_min"] = 3278,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 3278,
-										["c_max"] = 0,
-										["id"] = 48982,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 3278,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["start_time"] = 1667249118,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1667249113,
-							["tipo"] = 2,
-							["totaldenied"] = 0.003146,
-							["delay"] = 1667249113,
-							["healing_from"] = {
-								["Calmyboy-MirageRaceway"] = true,
-								["Bopshop-Ashbringer"] = true,
-								["Moolatz"] = true,
-							},
-						}, -- [14]
-						{
-							["flag_original"] = 1352,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "UNGROUPPLAYER",
-							["totalover"] = 0.002646,
-							["total_without_pet"] = 2457.002646,
-							["total"] = 2457.002646,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Player-4474-04A9CC5B",
-							["pvp"] = true,
-							["totalabsorb"] = 0.002646,
-							["last_hps"] = 0,
-							["targets"] = {
-								["Сварт-Пламегор"] = 2457,
-							},
-							["enemy"] = true,
-							["totalover_without_pet"] = 0.002646,
-							["healing_taken"] = 4192.002646,
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["aID"] = "4474-04A9CC5B",
-							["pvp_component"] = true,
-							["nome"] = "Сварт-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[16491] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 205,
-										["targets"] = {
-											["Сварт-Пламегор"] = 1638,
-										},
-										["n_min"] = 204,
-										["counter"] = 8,
-										["overheal"] = 0,
-										["total"] = 1638,
-										["c_max"] = 0,
-										["id"] = 16491,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 8,
-										["n_curado"] = 1638,
-										["absorbed"] = 0,
-									},
-									[34299] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 819,
-										["targets"] = {
-											["Сварт-Пламегор"] = 819,
-										},
-										["n_min"] = 819,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 819,
-										["c_max"] = 0,
-										["id"] = 34299,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 819,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["start_time"] = 1667249113,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1667249120,
-							["tipo"] = 2,
-							["totaldenied"] = 0.002646,
-							["delay"] = 1667249111,
-							["healing_from"] = {
-								["Кейналай-Пламегор"] = true,
-								["Молимся-Пламегор"] = true,
-								["Сварт-Пламегор"] = true,
-							},
-						}, -- [15]
-						{
-							["flag_original"] = 1300,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-								"Grr <Memoria-Auberdine>", -- [1]
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "HUNTER",
-							["totalover"] = 0.00211,
-							["total_without_pet"] = 364.00211,
-							["total"] = 990.00211,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Player-4441-039BA4F5",
-							["pvp"] = true,
-							["totalabsorb"] = 0.00211,
-							["last_hps"] = 0,
-							["targets"] = {
-								["Grr <Memoria-Auberdine>"] = 626,
-								["Memoria-Auberdine"] = 364,
-							},
-							["totalover_without_pet"] = 0.00211,
-							["healing_taken"] = 1476.00211,
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["aID"] = "4441-039BA4F5",
-							["pvp_component"] = true,
-							["nome"] = "Memoria-Auberdine",
-							["spells"] = {
-								["_ActorTable"] = {
-									[55502] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 122,
-										["targets"] = {
-											["Memoria-Auberdine"] = 364,
-										},
-										["n_min"] = 121,
-										["counter"] = 3,
-										["overheal"] = 0,
-										["total"] = 364,
-										["c_max"] = 0,
-										["id"] = 55502,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 3,
-										["n_curado"] = 364,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["start_time"] = 1667249114,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1667249120,
-							["tipo"] = 2,
-							["totaldenied"] = 0.00211,
-							["delay"] = 1667249114,
-							["healing_from"] = {
-								["Memoria-Auberdine"] = true,
-								["Bopshop-Ashbringer"] = true,
-							},
-						}, -- [16]
-						{
-							["flag_original"] = 4372,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.001843,
-							["total_without_pet"] = 626.001843,
-							["total"] = 626.001843,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4468-489-4518-25675-040076B350",
-							["pvp"] = true,
-							["totalabsorb"] = 0.001843,
-							["last_hps"] = 0,
-							["targets"] = {
-								["Grr <Memoria-Auberdine>"] = 626,
-							},
-							["totalover_without_pet"] = 0.001843,
-							["healing_taken"] = 626.001843,
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["classe"] = "PET",
-							["ownerName"] = "Memoria-Auberdine",
-							["nome"] = "Grr <Memoria-Auberdine>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[54131] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 79,
-										["targets"] = {
-											["Grr <Memoria-Auberdine>"] = 626,
-										},
-										["n_min"] = 78,
-										["counter"] = 8,
-										["overheal"] = 0,
-										["total"] = 626,
-										["c_max"] = 0,
-										["id"] = 54131,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 8,
-										["n_curado"] = 626,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["pvp_component"] = true,
-							["start_time"] = 1667249114,
-							["aID"] = "Pet-0-4468-489-4518-25675-040076B350",
-							["custom"] = 0,
-							["last_event"] = 1667249120,
-							["tipo"] = 2,
-							["totaldenied"] = 0.001843,
-							["delay"] = 1667249114,
-							["healing_from"] = {
-								["Grr <Memoria-Auberdine>"] = true,
-							},
-						}, -- [17]
-						{
-							["flag_original"] = 1300,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
-							["totalover"] = 0.007509,
-							["total_without_pet"] = 0.007509,
-							["total"] = 0.007509,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Player-4811-0394EED3",
-							["pvp"] = true,
-							["totalabsorb"] = 0.007509,
-							["last_hps"] = 0,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.007509,
-							["healing_taken"] = 1346.007509,
-							["fight_component"] = true,
-							["end_time"] = 1667249121,
-							["aID"] = "4811-0394EED3",
-							["pvp_component"] = true,
-							["nome"] = "Maivi-Giantstalker",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["start_time"] = 1667249121,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.007509,
-							["delay"] = 0,
-							["healing_from"] = {
-								["Bopshop-Ashbringer"] = true,
-							},
-						}, -- [18]
-						{
-							["flag_original"] = 1352,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
-							["totalover"] = 0.004773,
-							["total_without_pet"] = 0.004773,
-							["total"] = 0.004773,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Player-4474-02506FC0",
-							["pvp"] = true,
-							["totalabsorb"] = 0.004773,
-							["last_hps"] = 0,
-							["targets"] = {
-							},
-							["enemy"] = true,
-							["totalover_without_pet"] = 0.004773,
-							["healing_taken"] = 0.004773,
-							["end_time"] = 1667249121,
-							["pvp_component"] = true,
-							["aID"] = "4474-02506FC0",
-							["nome"] = "Готян-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["start_time"] = 1667249121,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.004773,
-							["delay"] = 0,
-							["healing_from"] = {
-							},
-						}, -- [19]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 243,
-					["_ActorTable"] = {
-						{
-							["received"] = 1437.005224,
-							["resource"] = 0.005224,
-							["targets"] = {
-								["Fatsnack-Mandokir"] = 1314,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "MAGE",
-							["passiveover"] = 0.005224,
-							["fight_component"] = true,
-							["total"] = 1314.005224,
-							["totalover"] = 0.005224,
-							["nome"] = "Fatsnack-Mandokir",
-							["spells"] = {
-								["_ActorTable"] = {
-									[67545] = {
-										["total"] = 1314,
-										["id"] = 67545,
-										["totalover"] = 0,
-										["targets"] = {
-											["Fatsnack-Mandokir"] = 1314,
-										},
-										["counter"] = 23,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["flag_original"] = 1298,
-							["alternatepower"] = 0.005224,
-							["tipo"] = 3,
-							["last_event"] = 1667249120,
-							["aID"] = "4813-044A8ED2",
-							["serial"] = "Player-4813-044A8ED2",
-							["pvp"] = true,
-						}, -- [1]
-						{
-							["received"] = 579.004392,
-							["resource"] = 0.004392,
-							["targets"] = {
-								["Дарелос-Пламегор"] = 58,
-								["Ницшеподлсд-Пламегор"] = 271,
-								["Шерифдуфи-Пламегор"] = 579,
-								["Макнаке"] = 0,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "PALADIN",
-							["passiveover"] = 0.004392,
-							["fight_component"] = true,
-							["total"] = 908.004392,
-							["totalover"] = 65.004392,
-							["nome"] = "Шерифдуфи-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20272] = {
-										["total"] = 579,
-										["id"] = 20272,
-										["totalover"] = 0,
-										["targets"] = {
-											["Шерифдуфи-Пламегор"] = 579,
-										},
-										["counter"] = 5,
-									},
-									[20268] = {
-										["total"] = 329,
-										["id"] = 20268,
-										["totalover"] = 65,
-										["targets"] = {
-											["Дарелос-Пламегор"] = 58,
-											["Ницшеподлсд-Пламегор"] = 271,
-											["Макнаке"] = 0,
-										},
-										["counter"] = 6,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["pvp_component"] = true,
-							["flag_original"] = 1352,
-							["alternatepower"] = 0.004392,
-							["tipo"] = 3,
-							["last_event"] = 1667249120,
-							["aID"] = "4474-04B5FDAC",
-							["serial"] = "Player-4474-04B5FDAC",
-							["pvp"] = true,
-						}, -- [2]
-						{
-							["received"] = 894.001963,
-							["resource"] = 0.001963,
-							["targets"] = {
-								["Коббал-Пламегор"] = 894,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["powertype"] = 1,
-							["classe"] = "DRUID",
-							["passiveover"] = 0.001963,
-							["fight_component"] = true,
-							["total"] = 894.001963,
-							["totalover"] = 0.001963,
-							["nome"] = "Коббал-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[17057] = {
-										["total"] = 10,
-										["id"] = 17057,
-										["totalover"] = 0,
-										["targets"] = {
-											["Коббал-Пламегор"] = 10,
-										},
-										["counter"] = 1,
-									},
-									[16959] = {
-										["total"] = 10,
-										["id"] = 16959,
-										["totalover"] = 0,
-										["targets"] = {
-											["Коббал-Пламегор"] = 10,
-										},
-										["counter"] = 2,
-									},
-									[5229] = {
-										["total"] = 27,
-										["id"] = 5229,
-										["totalover"] = 0,
-										["targets"] = {
-											["Коббал-Пламегор"] = 27,
-										},
-										["counter"] = 8,
-									},
-									[68285] = {
-										["total"] = 847,
-										["id"] = 68285,
-										["totalover"] = 0,
-										["targets"] = {
-											["Коббал-Пламегор"] = 847,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["flag_original"] = 1352,
-							["alternatepower"] = 0.001963,
-							["tipo"] = 3,
-							["last_event"] = 1667249111,
-							["aID"] = "4474-049F3E8D",
-							["serial"] = "Player-4474-049F3E8D",
-							["pvp"] = true,
-						}, -- [3]
-						{
-							["received"] = 75.008663,
-							["resource"] = 0.008663,
-							["targets"] = {
-								["Calmyboy-MirageRaceway"] = 75,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 6,
-							["classe"] = "DEATHKNIGHT",
-							["passiveover"] = 0.008663,
-							["fight_component"] = true,
-							["total"] = 75.008663,
-							["totalover"] = 0.008663,
-							["nome"] = "Calmyboy-MirageRaceway",
-							["spells"] = {
-								["_ActorTable"] = {
-									[49909] = {
-										["total"] = 10,
-										["id"] = 49909,
-										["totalover"] = 0,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 10,
-										},
-										["counter"] = 1,
-									},
-									[50422] = {
-										["total"] = 10,
-										["id"] = 50422,
-										["totalover"] = 0,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 10,
-										},
-										["counter"] = 1,
-									},
-									[49920] = {
-										["total"] = 30,
-										["id"] = 49920,
-										["totalover"] = 0,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 30,
-										},
-										["counter"] = 3,
-									},
-									[49929] = {
-										["total"] = 10,
-										["id"] = 49929,
-										["totalover"] = 0,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 10,
-										},
-										["counter"] = 1,
-									},
-									[49923] = {
-										["total"] = 15,
-										["id"] = 49923,
-										["totalover"] = 0,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 15,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["flag_original"] = 1298,
-							["alternatepower"] = 0.008663,
-							["tipo"] = 3,
-							["last_event"] = 1667249119,
-							["aID"] = "4454-04AD4921",
-							["serial"] = "Player-4454-04AD4921",
-							["pvp"] = true,
-						}, -- [4]
-						{
-							["received"] = 475.003265,
-							["resource"] = 0.003265,
-							["targets"] = {
-								["Boopa-Venoxis"] = 355,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "MAGE",
-							["passiveover"] = 0.003265,
-							["fight_component"] = true,
-							["total"] = 355.003265,
-							["totalover"] = 0.003265,
-							["nome"] = "Boopa-Venoxis",
-							["spells"] = {
-								["_ActorTable"] = {
-									[67545] = {
-										["total"] = 355,
-										["id"] = 67545,
-										["totalover"] = 0,
-										["targets"] = {
-											["Boopa-Venoxis"] = 355,
-										},
-										["counter"] = 6,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["flag_original"] = 1298,
-							["alternatepower"] = 0.003265,
-							["tipo"] = 3,
-							["last_event"] = 1667249112,
-							["aID"] = "4477-02CA9A6D",
-							["serial"] = "Player-4477-02CA9A6D",
-							["pvp"] = true,
-						}, -- [5]
-						{
-							["received"] = 271.005032,
-							["resource"] = 0.005032,
-							["targets"] = {
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "HUNTER",
-							["passiveover"] = 0.005032,
-							["fight_component"] = true,
-							["total"] = 0.005032,
-							["totalover"] = 0.005032,
-							["nome"] = "Ницшеподлсд-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["pvp_component"] = true,
-							["flag_original"] = 1352,
-							["alternatepower"] = 0.005032,
-							["tipo"] = 3,
-							["last_event"] = 0,
-							["aID"] = "4474-04B74E61",
-							["serial"] = "Player-4474-04B74E61",
-							["pvp"] = true,
-						}, -- [6]
-						{
-							["received"] = 91.002465,
-							["resource"] = 0.002465,
-							["targets"] = {
-								["Рубежж-Пламегор"] = 91,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "WARLOCK",
-							["passiveover"] = 0.002465,
-							["fight_component"] = true,
-							["total"] = 91.002465,
-							["totalover"] = 0.002465,
-							["nome"] = "Рубежж-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[48542] = {
-										["total"] = 91,
-										["id"] = 48542,
-										["totalover"] = 0,
-										["targets"] = {
-											["Рубежж-Пламегор"] = 91,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["pvp_component"] = true,
-							["flag_original"] = 1352,
-							["alternatepower"] = 0.002465,
-							["tipo"] = 3,
-							["last_event"] = 1667249108,
-							["aID"] = "4474-04A80422",
-							["serial"] = "Player-4474-04A80422",
-							["pvp"] = true,
-						}, -- [7]
-						{
-							["received"] = 5562.005296,
-							["resource"] = 0.005296,
-							["targets"] = {
-								["Дарелос-Пламегор"] = 5504,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "WARLOCK",
-							["passiveover"] = 0.005296,
-							["fight_component"] = true,
-							["total"] = 5504.005296,
-							["totalover"] = 0.005296,
-							["nome"] = "Дарелос-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[31818] = {
-										["total"] = 5376,
-										["id"] = 31818,
-										["totalover"] = 0,
-										["targets"] = {
-											["Дарелос-Пламегор"] = 5376,
-										},
-										["counter"] = 3,
-									},
-									[48542] = {
-										["total"] = 128,
-										["id"] = 48542,
-										["totalover"] = 0,
-										["targets"] = {
-											["Дарелос-Пламегор"] = 128,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["pvp_component"] = true,
-							["flag_original"] = 1352,
-							["alternatepower"] = 0.005296,
-							["tipo"] = 3,
-							["last_event"] = 1667249114,
-							["aID"] = "4474-03995BCB",
-							["serial"] = "Player-4474-03995BCB",
-							["pvp"] = true,
-						}, -- [8]
-						{
-							["received"] = 437.004931,
-							["resource"] = 0.004931,
-							["targets"] = {
-								["Небославян-Пламегор"] = 437,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "PALADIN",
-							["passiveover"] = 0.004931,
-							["fight_component"] = true,
-							["total"] = 437.004931,
-							["totalover"] = 0.004931,
-							["nome"] = "Небославян-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20272] = {
-										["total"] = 437,
-										["id"] = 20272,
-										["totalover"] = 0,
-										["targets"] = {
-											["Небославян-Пламегор"] = 437,
-										},
-										["counter"] = 3,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["pvp_component"] = true,
-							["flag_original"] = 1352,
-							["alternatepower"] = 0.004931,
-							["tipo"] = 3,
-							["last_event"] = 1667249114,
-							["aID"] = "4474-04A803F9",
-							["serial"] = "Player-4474-04A803F9",
-							["pvp"] = true,
-						}, -- [9]
-						{
-							["received"] = 497.008864,
-							["resource"] = 0.008864,
-							["targets"] = {
-								["Bopshop-Ashbringer"] = 351,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "PALADIN",
-							["passiveover"] = 0.008864,
-							["fight_component"] = true,
-							["total"] = 351.008864,
-							["totalover"] = 0.008864,
-							["nome"] = "Bopshop-Ashbringer",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20272] = {
-										["total"] = 351,
-										["id"] = 20272,
-										["totalover"] = 0,
-										["targets"] = {
-											["Bopshop-Ashbringer"] = 351,
-										},
-										["counter"] = 2,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["flag_original"] = 1300,
-							["alternatepower"] = 0.008864,
-							["tipo"] = 3,
-							["last_event"] = 1667249113,
-							["aID"] = "4742-03A8E3B9",
-							["serial"] = "Player-4742-03A8E3B9",
-							["pvp"] = true,
-						}, -- [10]
-						{
-							["received"] = 1046.0077,
-							["resource"] = 0.0077,
-							["targets"] = {
-								["Moolatz"] = 995,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "DRUID",
-							["passiveover"] = 86.0077,
-							["fight_component"] = true,
-							["total"] = 995.0077,
-							["totalover"] = 0.0077,
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["_ActorTable"] = {
-									[64372] = {
-										["total"] = 995,
-										["id"] = 64372,
-										["totalover"] = 0,
-										["targets"] = {
-											["Moolatz"] = 995,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["flag_original"] = 1297,
-							["alternatepower"] = 0.0077,
-							["tipo"] = 3,
-							["last_event"] = 1667249110,
-							["aID"] = "4465-02B843FA",
-							["serial"] = "Player-4465-02B843FA",
-							["pvp"] = true,
-						}, -- [11]
-						{
-							["received"] = 0.007637,
-							["resource"] = 0.007637,
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "PET",
-							["passiveover"] = 0.007637,
-							["fight_component"] = true,
-							["total"] = 0.007637,
-							["nome"] = "Макнаке",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 7,
-							},
-							["totalover"] = 0.007637,
-							["pvp_component"] = true,
-							["flag_original"] = 4424,
-							["alternatepower"] = 0.007637,
-							["tipo"] = 3,
-							["last_event"] = 0,
-							["aID"] = "Pet-0-4445-489-17268-1860-030057EDD8",
-							["serial"] = "Pet-0-4445-489-17268-1860-030057EDD8",
-							["pvp"] = true,
-						}, -- [12]
-						{
-							["received"] = 114.004192,
-							["resource"] = 0.004192,
-							["targets"] = {
-								["Memoria-Auberdine"] = 81,
-								["Purpplehaze-Auberdine"] = 161,
-								["Fatsnack-Mandokir"] = 123,
-								["Maivi-Giantstalker"] = 114,
-								["Hathgarth <Purpplehaze-Auberdine>"] = 70,
-								["Bopshop-Ashbringer"] = 146,
-								["Boopa-Venoxis"] = 120,
-								["Moolatz"] = 51,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "MAGE",
-							["passiveover"] = 0.004192,
-							["fight_component"] = true,
-							["total"] = 866.004192,
-							["totalover"] = 0.004192,
-							["nome"] = "Maivi-Giantstalker",
-							["spells"] = {
-								["_ActorTable"] = {
-									[57669] = {
-										["total"] = 866,
-										["id"] = 57669,
-										["totalover"] = 0,
-										["targets"] = {
-											["Memoria-Auberdine"] = 81,
-											["Purpplehaze-Auberdine"] = 161,
-											["Fatsnack-Mandokir"] = 123,
-											["Maivi-Giantstalker"] = 114,
-											["Hathgarth <Purpplehaze-Auberdine>"] = 70,
-											["Bopshop-Ashbringer"] = 146,
-											["Boopa-Venoxis"] = 120,
-											["Moolatz"] = 51,
-										},
-										["counter"] = 48,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["flag_original"] = 1300,
-							["alternatepower"] = 0.004192,
-							["tipo"] = 3,
-							["last_event"] = 1667249120,
-							["aID"] = "4811-0394EED3",
-							["serial"] = "Player-4811-0394EED3",
-							["pvp"] = true,
-						}, -- [13]
-						{
-							["received"] = 81.006374,
-							["resource"] = 0.006374,
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "HUNTER",
-							["passiveover"] = 0.006374,
-							["fight_component"] = true,
-							["total"] = 0.006374,
-							["totalover"] = 0.006374,
-							["nome"] = "Memoria-Auberdine",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["flag_original"] = 1300,
-							["alternatepower"] = 0.006374,
-							["tipo"] = 3,
-							["last_event"] = 0,
-							["aID"] = "4441-039BA4F5",
-							["serial"] = "Player-4441-039BA4F5",
-							["pvp"] = true,
-						}, -- [14]
-						{
-							["received"] = 161.003903,
-							["resource"] = 0.003903,
-							["targets"] = {
-							},
-							["pets"] = {
-								"Hathgarth <Purpplehaze-Auberdine>", -- [1]
-							},
-							["powertype"] = 0,
-							["classe"] = "WARLOCK",
-							["passiveover"] = 0.003903,
-							["fight_component"] = true,
-							["total"] = 0.003903,
-							["totalover"] = 0.003903,
-							["nome"] = "Purpplehaze-Auberdine",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["flag_original"] = 1298,
-							["alternatepower"] = 0.003903,
-							["tipo"] = 3,
-							["last_event"] = 0,
-							["aID"] = "4441-027C4C2D",
-							["serial"] = "Player-4441-027C4C2D",
-							["pvp"] = true,
-						}, -- [15]
-						{
-							["received"] = 70.007806,
-							["resource"] = 0.007806,
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "PET",
-							["passiveover"] = 0.007806,
-							["fight_component"] = true,
-							["total"] = 0.007806,
-							["ownerName"] = "Purpplehaze-Auberdine",
-							["nome"] = "Hathgarth <Purpplehaze-Auberdine>",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 7,
-							},
-							["totalover"] = 0.007806,
-							["pvp_component"] = true,
-							["flag_original"] = 4370,
-							["alternatepower"] = 0.007806,
-							["tipo"] = 3,
-							["last_event"] = 0,
-							["aID"] = "Pet-0-4468-489-4518-1860-020049119C",
-							["serial"] = "Pet-0-4468-489-4518-1860-020049119C",
-							["pvp"] = true,
-						}, -- [16]
-						{
-							["received"] = 24.007288,
-							["resource"] = 0.007288,
-							["targets"] = {
-								["Сварт-Пламегор"] = 24,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["powertype"] = 1,
-							["classe"] = "UNGROUPPLAYER",
-							["passiveover"] = 0.007288,
-							["fight_component"] = true,
-							["total"] = 24.007288,
-							["totalover"] = 0.007288,
-							["nome"] = "Сварт-Пламегор",
-							["spells"] = {
-								["_ActorTable"] = {
-									[2687] = {
-										["total"] = 20,
-										["id"] = 2687,
-										["totalover"] = 0,
-										["targets"] = {
-											["Сварт-Пламегор"] = 20,
-										},
-										["counter"] = 1,
-									},
-									[29131] = {
-										["total"] = 4,
-										["id"] = 29131,
-										["totalover"] = 0,
-										["targets"] = {
-											["Сварт-Пламегор"] = 4,
-										},
-										["counter"] = 4,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["flag_original"] = 1352,
-							["alternatepower"] = 0.007288,
-							["tipo"] = 3,
-							["last_event"] = 1667249120,
-							["aID"] = "4474-04A9CC5B",
-							["serial"] = "Player-4474-04A9CC5B",
-							["pvp"] = true,
-						}, -- [17]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 243,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[41425] = {
-										["activedamt"] = -1,
-										["id"] = 41425,
-										["targets"] = {
-										},
-										["actived_at"] = 1667249099,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[38697] = {
-										["appliedamt"] = 3,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 12,
-										["id"] = 38697,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[10230] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 1,
-										["id"] = 10230,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[12579] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 18,
-										["id"] = 12579,
-										["refreshamt"] = 5,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27087] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 2,
-										["id"] = 27087,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pvp_component"] = true,
-							["spell_cast"] = {
-								[38697] = 3,
-								[38692] = 1,
-								[27079] = 1,
-								[27087] = 1,
-								[30455] = 4,
-								[2139] = 1,
-								[10230] = 1,
-							},
-							["pets"] = {
-							},
-							["buff_uptime"] = 58,
-							["cc_done_spells"] = {
-								["_ActorTable"] = {
-									[10230] = {
-										["id"] = 10230,
-										["targets"] = {
-											["Шерифдуфи-Пламегор"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["aID"] = "4811-0394EED3",
-							["interrupt_spells"] = {
-								["_ActorTable"] = {
-									[2139] = {
-										["id"] = 2139,
-										["interrompeu_oque"] = {
-											[59170] = 1,
-										},
-										["targets"] = {
-											["Дарелос-Пламегор"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[54739] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 9,
-										["id"] = 54739,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[74396] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 2,
-										["id"] = 74396,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57669] = {
-										["appliedamt"] = 0,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 0,
-										["id"] = 57669,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[30482] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 30482,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57761] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 1,
-										["id"] = 57761,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27126] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 27126,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["interrompeu_oque"] = {
-								[59170] = 1,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 33,
-							["nome"] = "Maivi-Giantstalker",
-							["cc_done"] = 1.005469,
-							["debuff_uptime_targets"] = {
-							},
-							["interrupt_targets"] = {
-								["Дарелос-Пламегор"] = 1,
-							},
-							["grupo"] = true,
-							["cc_done_targets"] = {
-								["Шерифдуфи-Пламегор"] = 1,
-							},
-							["tipo"] = 4,
-							["classe"] = "MAGE",
-							["last_event"] = 1667249121,
-							["buff_uptime_targets"] = {
-							},
-							["interrupt"] = 1.0019,
-							["serial"] = "Player-4811-0394EED3",
-							["pvp"] = true,
-						}, -- [1]
-						{
-							["flag_original"] = 1300,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[12654] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 12,
-										["id"] = 12654,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[22959] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 17,
-										["id"] = 22959,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[44457] = {
-										["activedamt"] = -1,
-										["id"] = 44457,
-										["targets"] = {
-										},
-										["actived_at"] = 1667249114,
-										["uptime"] = 12,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[41425] = {
-										["activedamt"] = -1,
-										["id"] = 41425,
-										["targets"] = {
-										},
-										["actived_at"] = 1667249121,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 23,
-							["aID"] = "4477-02CA9A6D",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[30482] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 30482,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 41,
-							["pvp_component"] = true,
-							["nome"] = "Boopa-Venoxis",
-							["grupo"] = true,
-							["spell_cast"] = {
-								[27074] = 1,
-								[30455] = 2,
-								[27079] = 1,
-								[44457] = 2,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "MAGE",
-							["last_event"] = 1667249121,
-							["tipo"] = 4,
-							["pets"] = {
-							},
-							["serial"] = "Player-4477-02CA9A6D",
-							["pvp"] = true,
-						}, -- [2]
-						{
-							["flag_original"] = 1300,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[42944] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 1,
-										["id"] = 42944,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[42890] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 15,
-										["id"] = 42890,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[55359] = {
-										["activedamt"] = -2,
-										["id"] = 55359,
-										["targets"] = {
-										},
-										["actived_at"] = 1667249118,
-										["uptime"] = 10,
-										["appliedamt"] = 3,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[42949] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 4,
-										["id"] = 42949,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[64346] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 2,
-										["id"] = 64346,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[12654] = {
-										["activedamt"] = -1,
-										["id"] = 12654,
-										["targets"] = {
-										},
-										["actived_at"] = 1667249119,
-										["uptime"] = 20,
-										["appliedamt"] = 8,
-										["refreshamt"] = 8,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[22959] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 8,
-										["id"] = 22959,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 116,
-							["aID"] = "4813-044A8ED2",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[54741] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 11,
-										["id"] = 54741,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27126] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 27126,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1953] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 1,
-										["id"] = 1953,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[31643] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 1,
-										["id"] = 31643,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[43015] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 43015,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[43045] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 43045,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[48108] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 11,
-										["id"] = 48108,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53755] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 53755,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 60,
-							["pvp_component"] = true,
-							["nome"] = "Fatsnack-Mandokir",
-							["grupo"] = true,
-							["spell_cast"] = {
-								[42944] = 1,
-								[55359] = 3,
-								[42872] = 2,
-								[48108] = 3,
-								[1953] = 1,
-								[55039] = 1,
-								[42890] = 2,
-								[42949] = 1,
-								[42858] = 1,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "MAGE",
-							["last_event"] = 1667249121,
-							["tipo"] = 4,
-							["pets"] = {
-							},
-							["serial"] = "Player-4813-044A8ED2",
-							["pvp"] = true,
-						}, -- [3]
-						{
-							["flag_original"] = 1300,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[45524] = {
-										["activedamt"] = -1,
-										["id"] = 45524,
-										["targets"] = {
-										},
-										["actived_at"] = 1667249098,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[55078] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 15,
-										["id"] = 55078,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[55095] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 15,
-										["id"] = 55095,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["cooldowns_defensive"] = 1.001308,
-							["buff_uptime"] = 173,
-							["last_cooldown"] = {
-								1667249116.404, -- [1]
-								48792, -- [2]
-							},
-							["pvp_component"] = true,
-							["aID"] = "4454-04AD4921",
-							["cooldowns_defensive_targets"] = {
-								["Calmyboy-MirageRaceway"] = 1,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[64859] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 20,
-										["id"] = 64859,
-										["refreshamt"] = 3,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57330] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 57330,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[48263] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 48263,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53365] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 20,
-										["id"] = 53365,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[58578] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 58578,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[49016] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 7,
-										["id"] = 49016,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[48792] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 5,
-										["id"] = 48792,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[55610] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 55610,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[51911] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 1,
-										["id"] = 51911,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[50421] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 5,
-										["id"] = 50421,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53138] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 53138,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 30,
-							["nome"] = "Calmyboy-MirageRaceway",
-							["cooldowns_defensive_spells"] = {
-								["_ActorTable"] = {
-									[48792] = {
-										["id"] = 48792,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[48982] = 1,
-								[49920] = 4,
-								[47528] = 1,
-								[49576] = 1,
-								[49929] = 1,
-								[49923] = 1,
-								[49894] = 2,
-								[48792] = 1,
-								[49909] = 1,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 1667249121,
-							["classe"] = "DEATHKNIGHT",
-							["pets"] = {
-							},
-							["serial"] = "Player-4454-04AD4921",
-							["pvp"] = true,
-						}, -- [4]
-						{
-							["flag_original"] = 1300,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[17962] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 6,
-										["id"] = 17962,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[47813] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 18,
-										["id"] = 47813,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[47864] = {
-										["activedamt"] = -1,
-										["id"] = 47864,
-										["targets"] = {
-										},
-										["actived_at"] = 1667249120,
-										["uptime"] = 17,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[47810] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 12,
-										["id"] = 47810,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[18118] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 5,
-										["id"] = 18118,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 169,
-							["aID"] = "4441-027C4C2D",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[24870] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 24870,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[132] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 132,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[16591] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 16591,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53755] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 53755,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[47891] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 14,
-										["id"] = 47891,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[5697] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 5697,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[47893] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 47893,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[54758] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 11,
-										["id"] = 54758,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[54277] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 6,
-										["id"] = 54277,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 58,
-							["pvp_component"] = true,
-							["nome"] = "Purpplehaze-Auberdine",
-							["grupo"] = true,
-							["spell_cast"] = {
-								[17962] = 1,
-								[47813] = 2,
-								[47864] = 1,
-								[47810] = 2,
-								[47837] = 2,
-								[54758] = 1,
-								[59171] = 1,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "WARLOCK",
-							["last_event"] = 1667249121,
-							["tipo"] = 4,
-							["pets"] = {
-								"Hathgarth <Purpplehaze-Auberdine>", -- [1]
-							},
-							["serial"] = "Player-4441-027C4C2D",
-							["pvp"] = true,
-						}, -- [5]
-						{
-							["flag_original"] = 1300,
-							["buff_uptime"] = 69,
-							["pvp_component"] = true,
-							["nome"] = "Altarpain-MirageRaceway",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["classe"] = "DEATHKNIGHT",
-							["last_event"] = 1667249121,
-							["aID"] = "4454-049A4F40",
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[48263] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 48263,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[48778] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 48778,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57330] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 57330,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4454-049A4F40",
-							["pvp"] = true,
-						}, -- [6]
-						{
-							["flag_original"] = 1300,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[34490] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 2,
-										["id"] = 34490,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[5116] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 4,
-										["id"] = 5116,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27065] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 10,
-										["id"] = 27065,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[14325] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 18,
-										["id"] = 14325,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 58,
-							["aID"] = "4441-039BA4F5",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[35027] = {
-										["activedamt"] = 1,
-										["id"] = 35027,
-										["targets"] = {
-										},
-										["actived_at"] = 1667249098,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[35099] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 1,
-										["id"] = 35099,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[64494] = {
-										["activedamt"] = 1,
-										["id"] = 64494,
-										["targets"] = {
-										},
-										["actived_at"] = 1667249104,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[27044] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 27044,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[19506] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 19506,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[55502] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 4,
-										["id"] = 55502,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[34026] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 7,
-										["id"] = 34026,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 34,
-							["pvp_component"] = true,
-							["nome"] = "Memoria-Auberdine",
-							["grupo"] = true,
-							["spell_cast"] = {
-								[14325] = 1,
-								[27019] = 2,
-								[27065] = 1,
-								[75] = 4,
-								[53209] = 1,
-								[34490] = 1,
-								[55502] = 1,
-								[34026] = 1,
-								[5116] = 1,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "HUNTER",
-							["last_event"] = 1667249121,
-							["tipo"] = 4,
-							["pets"] = {
-								"Grr <Memoria-Auberdine>", -- [1]
-							},
-							["serial"] = "Player-4441-039BA4F5",
-							["pvp"] = true,
-						}, -- [7]
-						{
-							["flag_original"] = 1300,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[25771] = {
-										["activedamt"] = -1,
-										["id"] = 25771,
-										["targets"] = {
-										},
-										["actived_at"] = 1667249103,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 92,
-							["aID"] = "4454-044931B8",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[32223] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 32223,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[22724] = {
-										["appliedamt"] = 0,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 0,
-										["id"] = 22724,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[25898] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 25898,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[25780] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 25780,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[20165] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 20165,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 0,
-							["nome"] = "Airforceone-MirageRaceway",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "PALADIN",
-							["last_event"] = 1667249121,
-							["tipo"] = 4,
-							["pets"] = {
-							},
-							["serial"] = "Player-4454-044931B8",
-							["pvp"] = true,
-						}, -- [8]
-						{
-							["flag_original"] = 1300,
-							["dispell"] = 2.001386,
-							["buff_uptime"] = 115,
-							["aID"] = "4742-03A8E3B9",
-							["pvp_component"] = true,
-							["dispell_targets"] = {
-								["Bopshop-Ashbringer"] = 2,
-							},
-							["dispell_spells"] = {
-								["_ActorTable"] = {
-									[4987] = {
-										["dispell"] = 2,
-										["id"] = 4987,
-										["dispell_oque"] = {
-											[58180] = 1,
-											[27215] = 1,
-										},
-										["targets"] = {
-											["Bopshop-Ashbringer"] = 2,
-										},
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["dispell_oque"] = {
-								[58180] = 1,
-								[27215] = 1,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[53563] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 53563,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[20217] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 20217,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[31834] = {
-										["appliedamt"] = 3,
-										["targets"] = {
-										},
-										["activedamt"] = 3,
-										["uptime"] = 23,
-										["id"] = 31834,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[19746] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 19746,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[20166] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 23,
-										["id"] = 20166,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["nome"] = "Bopshop-Ashbringer",
-							["grupo"] = true,
-							["spell_cast"] = {
-								[4987] = 1,
-								[27137] = 2,
-								[27136] = 2,
-								[33072] = 3,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 1667249121,
-							["classe"] = "PALADIN",
-							["pets"] = {
-							},
-							["serial"] = "Player-4742-03A8E3B9",
-							["pvp"] = true,
-						}, -- [9]
-						{
-							["flag_original"] = 1352,
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "PALADIN",
-							["fight_component"] = true,
-							["nome"] = "Шерифдуфи-Пламегор",
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["spell_cast"] = {
-								[20216] = 1,
-								[53408] = 1,
-								[27136] = 1,
-								[31884] = 1,
-								[6940] = 1,
-								[31821] = 1,
-								[33072] = 4,
-								[54428] = 1,
-								[27137] = 3,
-							},
-							["pvp_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "4474-04B5FDAC",
-							["last_event"] = 0,
-							["serial"] = "Player-4474-04B5FDAC",
-							["pvp"] = true,
-						}, -- [10]
-						{
-							["flag_original"] = 1352,
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["cc_done_spells"] = {
-								["_ActorTable"] = {
-									[45334] = {
-										["id"] = 45334,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 1,
-										},
-										["counter"] = 1,
-									},
-									[8983] = {
-										["id"] = 8983,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 1,
-										},
-										["counter"] = 1,
-									},
-									[27010] = {
-										["id"] = 27010,
-										["targets"] = {
-											["Calmyboy-MirageRaceway"] = 1,
-											["Hathgarth"] = 1,
-										},
-										["counter"] = 2,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["aID"] = "4474-049F3E8D",
-							["fight_component"] = true,
-							["cc_done"] = 4.001551,
-							["nome"] = "Коббал-Пламегор",
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["spell_cast"] = {
-								[48479] = 2,
-								[9634] = 1,
-								[48563] = 1,
-								[16857] = 1,
-								[768] = 1,
-								[48377] = 1,
-								[27009] = 1,
-								[5229] = 1,
-								[48567] = 1,
-								[48440] = 1,
-								[33357] = 1,
-								[16979] = 1,
-								[22842] = 1,
-								[8983] = 1,
-								[61336] = 1,
-							},
-							["cc_done_targets"] = {
-								["Calmyboy-MirageRaceway"] = 3,
-								["Hathgarth"] = 1,
-							},
-							["pvp_component"] = true,
-							["last_event"] = 1667249115,
-							["tipo"] = 4,
-							["classe"] = "DRUID",
-							["serial"] = "Player-4474-049F3E8D",
-							["pvp"] = true,
-						}, -- [11]
-						{
-							["fight_component"] = true,
-							["classe"] = "UNGROUPPLAYER",
-							["pvp_component"] = true,
-							["flag_original"] = 1352,
-							["nome"] = "Кейналай-Пламегор",
-							["grupo"] = true,
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								[26980] = 6,
-								[26982] = 3,
-								[18562] = 1,
-								[53248] = 2,
-							},
-							["last_event"] = 0,
-							["tipo"] = 4,
-							["aID"] = "4474-047E5D59",
-							["serial"] = "Player-4474-047E5D59",
-							["pvp"] = true,
-						}, -- [12]
-						{
-							["flag_original"] = 1352,
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "WARLOCK",
-							["fight_component"] = true,
-							["nome"] = "Дарелос-Пламегор",
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["spell_cast"] = {
-								[17962] = 1,
-								[32231] = 2,
-								[27215] = 2,
-								[27222] = 3,
-								[34936] = 2,
-							},
-							["pvp_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "4474-03995BCB",
-							["last_event"] = 0,
-							["serial"] = "Player-4474-03995BCB",
-							["pvp"] = true,
-						}, -- [13]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Immolate",
-							["debuff_uptime"] = 3,
-							["spellschool"] = 4,
-							["debuff_uptime_targets"] = {
-								["Bopshop-Ashbringer"] = {
-									["uptime"] = 3,
-									["appliedamt"] = 0,
-									["activedamt"] = 0,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 27215,
-							["tipo"] = 4,
-							["last_event"] = 1667249102,
-							["damage_twin"] = "Дарелос-Пламегор",
-							["aID"] = "4474-03995BCB",
-							["serial"] = "Player-4474-03995BCB",
-							["pvp"] = true,
-						}, -- [14]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Conflagrate",
-							["debuff_uptime"] = 6,
-							["spellschool"] = 4,
-							["debuff_uptime_targets"] = {
-								["Bopshop-Ashbringer"] = {
-									["uptime"] = 6,
-									["appliedamt"] = 0,
-									["activedamt"] = 0,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 17962,
-							["tipo"] = 4,
-							["last_event"] = 1667249106,
-							["damage_twin"] = "Дарелос-Пламегор",
-							["aID"] = "4474-03995BCB",
-							["serial"] = "Player-4474-03995BCB",
-							["pvp"] = true,
-						}, -- [15]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Aftermath",
-							["debuff_uptime"] = 5,
-							["spellschool"] = 4,
-							["debuff_uptime_targets"] = {
-								["Bopshop-Ashbringer"] = {
-									["uptime"] = 5,
-									["appliedamt"] = 0,
-									["activedamt"] = 0,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 18118,
-							["tipo"] = 4,
-							["last_event"] = 1667249105,
-							["damage_twin"] = "Дарелос-Пламегор",
-							["aID"] = "4474-03995BCB",
-							["serial"] = "Player-4474-03995BCB",
-							["pvp"] = true,
-						}, -- [16]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Shadowfury",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 32,
-							["debuff_uptime_targets"] = {
-								["Calmyboy-MirageRaceway"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249100,
-									["appliedamt"] = 0,
-									["activedamt"] = -1,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-								["Bopshop-Ashbringer"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249100,
-									["appliedamt"] = 0,
-									["activedamt"] = -1,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-								["Fatsnack-Mandokir"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249100,
-									["appliedamt"] = 0,
-									["activedamt"] = -1,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 30414,
-							["tipo"] = 4,
-							["last_event"] = 1667249100,
-							["damage_twin"] = "Дарелос-Пламегор",
-							["aID"] = "4474-03995BCB",
-							["serial"] = "Player-4474-03995BCB",
-							["pvp"] = true,
-						}, -- [17]
-						{
-							["fight_component"] = true,
-							["flag_original"] = 1297,
-							["nome"] = "Moolatz",
-							["grupo"] = true,
-							["classe"] = "DRUID",
-							["spell_cast"] = {
-								[26981] = 3,
-								[33763] = 3,
-								[26980] = 1,
-							},
-							["pets"] = {
-							},
-							["pvp_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "4465-02B843FA",
-							["last_event"] = 0,
-							["serial"] = "Player-4465-02B843FA",
-							["pvp"] = true,
-						}, -- [18]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Infected Wounds",
-							["debuff_uptime"] = 9,
-							["spellschool"] = 8,
-							["debuff_uptime_targets"] = {
-								["Calmyboy-MirageRaceway"] = {
-									["uptime"] = 9,
-									["appliedamt"] = 0,
-									["activedamt"] = 0,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-								["Bopshop-Ashbringer"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249102,
-									["appliedamt"] = 0,
-									["activedamt"] = -1,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 58180,
-							["tipo"] = 4,
-							["last_event"] = 1667249114,
-							["damage_twin"] = "Коббал-Пламегор",
-							["aID"] = "4474-049F3E8D",
-							["serial"] = "Player-4474-049F3E8D",
-							["pvp"] = true,
-						}, -- [19]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Judgement of Wisdom",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 2,
-							["debuff_uptime_targets"] = {
-								["Calmyboy-MirageRaceway"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249102,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 20186,
-							["tipo"] = 4,
-							["last_event"] = 1667249102,
-							["damage_twin"] = "Шерифдуфи-Пламегор",
-							["aID"] = "4474-04B5FDAC",
-							["serial"] = "Player-4474-04B5FDAC",
-							["pvp"] = true,
-						}, -- [20]
-						{
-							["flag_original"] = 1352,
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "PALADIN",
-							["fight_component"] = true,
-							["nome"] = "Небославян-Пламегор",
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["spell_cast"] = {
-								[27137] = 5,
-								[33072] = 2,
-							},
-							["pvp_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "4474-04A803F9",
-							["last_event"] = 0,
-							["serial"] = "Player-4474-04A803F9",
-							["pvp"] = true,
-						}, -- [21]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Faerie Fire (Feral)",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 8,
-							["debuff_uptime_targets"] = {
-								["Calmyboy-MirageRaceway"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249103,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 16857,
-							["tipo"] = 4,
-							["last_event"] = 1667249103,
-							["damage_twin"] = "Коббал-Пламегор",
-							["aID"] = "4474-049F3E8D",
-							["serial"] = "Player-4474-049F3E8D",
-							["pvp"] = true,
-						}, -- [22]
-						{
-							["flag_original"] = 1352,
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "HUNTER",
-							["fight_component"] = true,
-							["nome"] = "Ницшеподлсд-Пламегор",
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["spell_cast"] = {
-								[3044] = 2,
-								[75] = 3,
-								[27065] = 1,
-								[53209] = 1,
-								[34120] = 1,
-								[1978] = 2,
-								[5116] = 1,
-							},
-							["pvp_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "4474-04B74E61",
-							["last_event"] = 0,
-							["serial"] = "Player-4474-04B74E61",
-							["pvp"] = true,
-						}, -- [23]
-						{
-							["flag_original"] = 4372,
-							["aID"] = "Pet-0-4468-489-4518-25675-040076B350",
-							["ownerName"] = "Memoria-Auberdine",
-							["nome"] = "Grr <Memoria-Auberdine>",
-							["fight_component"] = true,
-							["classe"] = "PET",
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								[61685] = 1,
-								[53401] = 1,
-								[64494] = 1,
-								[52473] = 9,
-							},
-							["pvp_component"] = true,
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Pet-0-4468-489-4518-25675-040076B350",
-							["pvp"] = true,
-						}, -- [24]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Feral Charge Effect",
-							["debuff_uptime"] = 4,
-							["spellschool"] = 1,
-							["debuff_uptime_targets"] = {
-								["Calmyboy-MirageRaceway"] = {
-									["uptime"] = 4,
-									["appliedamt"] = 0,
-									["activedamt"] = 0,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 45334,
-							["tipo"] = 4,
-							["last_event"] = 1667249108,
-							["damage_twin"] = "Коббал-Пламегор",
-							["aID"] = "4474-049F3E8D",
-							["serial"] = "Player-4474-049F3E8D",
-							["pvp"] = true,
-						}, -- [25]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Rake",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 1,
-							["debuff_uptime_targets"] = {
-								["Bopshop-Ashbringer"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249105,
-									["appliedamt"] = 0,
-									["activedamt"] = -1,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 48573,
-							["tipo"] = 4,
-							["last_event"] = 1667249105,
-							["damage_twin"] = "Коббал-Пламегор",
-							["aID"] = "4474-049F3E8D",
-							["serial"] = "Player-4474-049F3E8D",
-							["pvp"] = true,
-						}, -- [26]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Serpent Sting",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 8,
-							["debuff_uptime_targets"] = {
-								["Calmyboy-MirageRaceway"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249105,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-								["Memoria-Auberdine"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249117,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 1978,
-							["tipo"] = 4,
-							["last_event"] = 1667249117,
-							["damage_twin"] = "Ницшеподлсд-Пламегор",
-							["aID"] = "4474-04B74E61",
-							["serial"] = "Player-4474-04B74E61",
-							["pvp"] = true,
-						}, -- [27]
-						{
-							["flag_original"] = 66888,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Mangle (Bear)",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 1,
-							["debuff_uptime_targets"] = {
-								["Calmyboy-MirageRaceway"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249106,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 48563,
-							["tipo"] = 4,
-							["last_event"] = 1667249106,
-							["damage_twin"] = "Коббал-Пламегор",
-							["aID"] = "4474-049F3E8D",
-							["serial"] = "Player-4474-049F3E8D",
-							["pvp"] = true,
-						}, -- [28]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Curse of Tongues",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 32,
-							["debuff_uptime_targets"] = {
-								["Bopshop-Ashbringer"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249106,
-									["appliedamt"] = 0,
-									["activedamt"] = -1,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 11719,
-							["tipo"] = 4,
-							["last_event"] = 1667249106,
-							["damage_twin"] = "Дарелос-Пламегор",
-							["aID"] = "4474-03995BCB",
-							["serial"] = "Player-4474-03995BCB",
-							["pvp"] = true,
-						}, -- [29]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Concussive Shot",
-							["debuff_uptime"] = 3,
-							["spellschool"] = 64,
-							["debuff_uptime_targets"] = {
-								["Calmyboy-MirageRaceway"] = {
-									["uptime"] = 3,
-									["appliedamt"] = 0,
-									["activedamt"] = 0,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 5116,
-							["tipo"] = 4,
-							["last_event"] = 1667249110,
-							["damage_twin"] = "Ницшеподлсд-Пламегор",
-							["aID"] = "4474-04B74E61",
-							["serial"] = "Player-4474-04B74E61",
-							["pvp"] = true,
-						}, -- [30]
-						{
-							["flag_original"] = 66888,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Bash",
-							["debuff_uptime"] = 2,
-							["spellschool"] = 1,
-							["debuff_uptime_targets"] = {
-								["Calmyboy-MirageRaceway"] = {
-									["uptime"] = 2,
-									["appliedamt"] = 0,
-									["activedamt"] = 0,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 8983,
-							["tipo"] = 4,
-							["last_event"] = 1667249110,
-							["damage_twin"] = "Коббал-Пламегор",
-							["aID"] = "4474-049F3E8D",
-							["serial"] = "Player-4474-049F3E8D",
-							["pvp"] = true,
-						}, -- [31]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Trauma",
-							["debuff_uptime"] = 1,
-							["spellschool"] = 1,
-							["debuff_uptime_targets"] = {
-								["Fatsnack-Mandokir"] = {
-									["uptime"] = 1,
-									["actived_at"] = 1667249119,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-								["Purpplehaze-Auberdine"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249109,
-									["appliedamt"] = 0,
-									["activedamt"] = -1,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 46857,
-							["tipo"] = 4,
-							["last_event"] = 1667249119,
-							["damage_twin"] = "Сварт-Пламегор",
-							["aID"] = "4474-04A9CC5B",
-							["serial"] = "Player-4474-04A9CC5B",
-							["pvp"] = true,
-						}, -- [32]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Shadow Word: Pain",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 32,
-							["debuff_uptime_targets"] = {
-								["Calmyboy-MirageRaceway"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249109,
-									["appliedamt"] = 0,
-									["activedamt"] = -1,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 48124,
-							["tipo"] = 4,
-							["last_event"] = 1667249109,
-							["damage_twin"] = "Молимся-Пламегор",
-							["aID"] = "4474-04B16B28",
-							["serial"] = "Player-4474-04B16B28",
-							["pvp"] = true,
-						}, -- [33]
-						{
-							["flag_original"] = 66888,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Lacerate",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 1,
-							["debuff_uptime_targets"] = {
-								["Calmyboy-MirageRaceway"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249110,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 48567,
-							["tipo"] = 4,
-							["last_event"] = 1667249110,
-							["damage_twin"] = "Коббал-Пламегор",
-							["aID"] = "4474-049F3E8D",
-							["serial"] = "Player-4474-049F3E8D",
-							["pvp"] = true,
-						}, -- [34]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Corruption",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 32,
-							["debuff_uptime_targets"] = {
-								["Calmyboy-MirageRaceway"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249110,
-									["appliedamt"] = 0,
-									["activedamt"] = -1,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-								["Memoria-Auberdine"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249115,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 27216,
-							["tipo"] = 4,
-							["last_event"] = 1667249115,
-							["damage_twin"] = "Рубежж-Пламегор",
-							["aID"] = "4474-04A80422",
-							["serial"] = "Player-4474-04A80422",
-							["pvp"] = true,
-						}, -- [35]
-						{
-							["flag_original"] = 4370,
-							["aID"] = "Pet-0-4468-489-4518-1860-020049119C",
-							["ownerName"] = "Purpplehaze-Auberdine",
-							["nome"] = "Hathgarth <Purpplehaze-Auberdine>",
-							["fight_component"] = true,
-							["classe"] = "PET",
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								[47989] = 1,
-							},
-							["pvp_component"] = true,
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Pet-0-4468-489-4518-1860-020049119C",
-							["pvp"] = true,
-						}, -- [36]
-						{
-							["fight_component"] = true,
-							["classe"] = "UNGROUPPLAYER",
-							["pvp_component"] = true,
-							["flag_original"] = 1352,
-							["nome"] = "Сварт-Пламегор",
-							["grupo"] = true,
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								[2687] = 1,
-								[7384] = 1,
-								[47485] = 1,
-								[2458] = 1,
-								[1680] = 1,
-								[47465] = 1,
-								[20252] = 1,
-								[11578] = 1,
-								[2457] = 1,
-							},
-							["last_event"] = 0,
-							["tipo"] = 4,
-							["aID"] = "4474-04A9CC5B",
-							["serial"] = "Player-4474-04A9CC5B",
-							["pvp"] = true,
-						}, -- [37]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Charge Stun",
-							["debuff_uptime"] = 1,
-							["spellschool"] = 1,
-							["debuff_uptime_targets"] = {
-								["Fatsnack-Mandokir"] = {
-									["uptime"] = 1,
-									["appliedamt"] = 0,
-									["activedamt"] = 0,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 7922,
-							["tipo"] = 4,
-							["last_event"] = 1667249114,
-							["damage_twin"] = "Сварт-Пламегор",
-							["aID"] = "4474-04A9CC5B",
-							["serial"] = "Player-4474-04A9CC5B",
-							["pvp"] = true,
-						}, -- [38]
-						{
-							["flag_original"] = 66888,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Entangling Roots",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 8,
-							["debuff_uptime_targets"] = {
-								["Calmyboy-MirageRaceway"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249113,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 27010,
-							["tipo"] = 4,
-							["last_event"] = 1667249113,
-							["damage_twin"] = "Коббал-Пламегор",
-							["aID"] = "4474-049F3E8D",
-							["serial"] = "Player-4474-049F3E8D",
-							["pvp"] = true,
-						}, -- [39]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Rend",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 1,
-							["debuff_uptime_targets"] = {
-								["Fatsnack-Mandokir"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249114,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 47465,
-							["tipo"] = 4,
-							["last_event"] = 1667249114,
-							["damage_twin"] = "Сварт-Пламегор",
-							["aID"] = "4474-04A9CC5B",
-							["serial"] = "Player-4474-04A9CC5B",
-							["pvp"] = true,
-						}, -- [40]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Aimed Shot",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 1,
-							["debuff_uptime_targets"] = {
-								["Memoria-Auberdine"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249114,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 27065,
-							["tipo"] = 4,
-							["last_event"] = 1667249114,
-							["damage_twin"] = "Ницшеподлсд-Пламегор",
-							["aID"] = "4474-04B74E61",
-							["serial"] = "Player-4474-04B74E61",
-							["pvp"] = true,
-						}, -- [41]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Piercing Shots",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 1,
-							["debuff_uptime_targets"] = {
-								["Memoria-Auberdine"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249114,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 63468,
-							["tipo"] = 4,
-							["last_event"] = 1667249114,
-							["damage_twin"] = "Ницшеподлсд-Пламегор",
-							["aID"] = "4474-04B74E61",
-							["serial"] = "Player-4474-04B74E61",
-							["pvp"] = true,
-						}, -- [42]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Curse of Agony",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 32,
-							["debuff_uptime_targets"] = {
-								["Calmyboy-MirageRaceway"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249114,
-									["appliedamt"] = 0,
-									["activedamt"] = -1,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-								["Memoria-Auberdine"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249116,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 27218,
-							["tipo"] = 4,
-							["last_event"] = 1667249116,
-							["damage_twin"] = "Рубежж-Пламегор",
-							["aID"] = "4474-04A80422",
-							["serial"] = "Player-4474-04A80422",
-							["pvp"] = true,
-						}, -- [43]
-						{
-							["flag_original"] = 1352,
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "WARLOCK",
-							["fight_component"] = true,
-							["nome"] = "Рубежж-Пламегор",
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["spell_cast"] = {
-								[27218] = 1,
-								[27216] = 1,
-								[27217] = 1,
-							},
-							["pvp_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "4474-04A80422",
-							["last_event"] = 0,
-							["serial"] = "Player-4474-04A80422",
-							["pvp"] = true,
-						}, -- [44]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Misery",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 32,
-							["debuff_uptime_targets"] = {
-								["Calmyboy-MirageRaceway"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249115,
-									["appliedamt"] = 0,
-									["activedamt"] = -1,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-								["Memoria-Auberdine"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249117,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 33198,
-							["tipo"] = 4,
-							["last_event"] = 1667249117,
-							["damage_twin"] = "Молимся-Пламегор",
-							["aID"] = "4474-04B16B28",
-							["serial"] = "Player-4474-04B16B28",
-							["pvp"] = true,
-						}, -- [45]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Intercept",
-							["debuff_uptime"] = 1,
-							["spellschool"] = 1,
-							["debuff_uptime_targets"] = {
-								["Fatsnack-Mandokir"] = {
-									["uptime"] = 1,
-									["appliedamt"] = 0,
-									["activedamt"] = 0,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 20253,
-							["tipo"] = 4,
-							["last_event"] = 1667249116,
-							["damage_twin"] = "Сварт-Пламегор",
-							["aID"] = "4474-04A9CC5B",
-							["serial"] = "Player-4474-04A9CC5B",
-							["pvp"] = true,
-						}, -- [46]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Frost Trap Aura",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 16,
-							["debuff_uptime_targets"] = {
-								["Memoria-Auberdine"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249116,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 13810,
-							["tipo"] = 4,
-							["last_event"] = 1667249116,
-							["damage_twin"] = "Ницшеподлсд-Пламегор",
-							["aID"] = "4474-04B74E61",
-							["serial"] = "Player-4474-04B74E61",
-							["pvp"] = true,
-						}, -- [47]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Mortal Strike",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 1,
-							["debuff_uptime_targets"] = {
-								["Fatsnack-Mandokir"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249116,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 47485,
-							["tipo"] = 4,
-							["last_event"] = 1667249116,
-							["damage_twin"] = "Сварт-Пламегор",
-							["aID"] = "4474-04A9CC5B",
-							["serial"] = "Player-4474-04A9CC5B",
-							["pvp"] = true,
-						}, -- [48]
-						{
-							["flag_original"] = 1352,
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "PRIEST",
-							["fight_component"] = true,
-							["nome"] = "Молимся-Пламегор",
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["spell_cast"] = {
-								[48155] = 1,
-								[48045] = 1,
-							},
-							["pvp_component"] = true,
-							["tipo"] = 4,
-							["aID"] = "4474-04B16B28",
-							["last_event"] = 0,
-							["serial"] = "Player-4474-04B16B28",
-							["pvp"] = true,
-						}, -- [49]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Mind Flay",
-							["debuff_uptime"] = 1,
-							["spellschool"] = 32,
-							["debuff_uptime_targets"] = {
-								["Memoria-Auberdine"] = {
-									["uptime"] = 1,
-									["appliedamt"] = 0,
-									["activedamt"] = 0,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 48155,
-							["tipo"] = 4,
-							["last_event"] = 1667249118,
-							["damage_twin"] = "Молимся-Пламегор",
-							["aID"] = "4474-04B16B28",
-							["serial"] = "Player-4474-04B16B28",
-							["pvp"] = true,
-						}, -- [50]
-						{
-							["flag_original"] = 1352,
-							["tipo"] = 4,
-							["aID"] = "4474-02506FC0",
-							["last_event"] = 0,
-							["nome"] = "Готян-Пламегор",
-							["grupo"] = true,
-							["need_refresh"] = true,
-							["pets"] = {
-							},
-							["enemy"] = true,
-							["spell_cast"] = {
-								[27128] = 1,
-								[1953] = 1,
-							},
-							["classe"] = "MAGE",
-							["pvp_component"] = true,
-							["serial"] = "Player-4474-02506FC0",
-							["pvp"] = true,
-						}, -- [51]
-						{
-							["flag_original"] = 66888,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Mangle (Cat)",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 1,
-							["debuff_uptime_targets"] = {
-								["Fatsnack-Mandokir"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249118,
-									["appliedamt"] = 0,
-									["activedamt"] = -1,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 48565,
-							["tipo"] = 4,
-							["last_event"] = 1667249118,
-							["damage_twin"] = "Коббал-Пламегор",
-							["aID"] = "4474-049F3E8D",
-							["serial"] = "Player-4474-049F3E8D",
-							["pvp"] = true,
-						}, -- [52]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Deep Wounds",
-							["debuff_uptime"] = 1,
-							["spellschool"] = 1,
-							["debuff_uptime_targets"] = {
-								["Fatsnack-Mandokir"] = {
-									["uptime"] = 1,
-									["actived_at"] = 1667249119,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 12721,
-							["tipo"] = 4,
-							["last_event"] = 1667249119,
-							["damage_twin"] = "Сварт-Пламегор",
-							["aID"] = "4474-04A9CC5B",
-							["serial"] = "Player-4474-04A9CC5B",
-							["pvp"] = true,
-						}, -- [53]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Mind Sear",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 32,
-							["debuff_uptime_targets"] = {
-								["Calmyboy-MirageRaceway"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249120,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 48045,
-							["tipo"] = 4,
-							["last_event"] = 1667249120,
-							["damage_twin"] = "Молимся-Пламегор",
-							["aID"] = "4474-04B16B28",
-							["serial"] = "Player-4474-04B16B28",
-							["pvp"] = true,
-						}, -- [54]
-						{
-							["flag_original"] = 1352,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["classe"] = "UNGROUPPLAYER",
-							["boss_debuff"] = true,
-							["nome"] = "Drain Soul",
-							["debuff_uptime"] = 0,
-							["spellschool"] = 32,
-							["debuff_uptime_targets"] = {
-								["Calmyboy-MirageRaceway"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1667249120,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-							},
-							["grupo"] = true,
-							["pvp_component"] = true,
-							["damage_spellid"] = 27217,
-							["tipo"] = 4,
-							["last_event"] = 1667249120,
-							["damage_twin"] = "Рубежж-Пламегор",
-							["aID"] = "4474-04A80422",
-							["serial"] = "Player-4474-04A80422",
-							["pvp"] = true,
-						}, -- [55]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 243,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["is_pvp"] = {
-					["name"] = "Warsong Gulch",
-					["mapid"] = 489,
-				},
-				["raid_roster_indexed"] = {
-					"Airforceone-MirageRaceway", -- [1]
-					"Altarpain-MirageRaceway", -- [2]
-					"Calmyboy-MirageRaceway", -- [3]
-					"Purpplehaze-Auberdine", -- [4]
-					"Bopshop-Ashbringer", -- [5]
-					"Maivi-Giantstalker", -- [6]
-					"Fatsnack-Mandokir", -- [7]
-					"Memoria-Auberdine", -- [8]
-					"Boopa-Venoxis", -- [9]
-					"Moolatz", -- [10]
-				},
-				["CombatStartedAt"] = 43937.417,
-				["tempo_start"] = 1667249098,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["totals"] = {
-					172623, -- [1]
-					122235, -- [2]
-					{
-						71, -- [1]
-						[0] = 11668,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 75,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 1,
-						["dispell"] = 2,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					119838, -- [1]
-					120662, -- [2]
-					{
-						71, -- [1]
-						[0] = 11668,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 75,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 1,
-						["dispell"] = 2,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "pvp",
-				["hasSaved"] = true,
-				["data_fim"] = "21:45:21",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Макнаке",
-				["TotalElapsedCombatTime"] = 18.25600000000122,
-				["CombatEndedAt"] = 43955.673,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Коббал-Пламегор"] = 6881.002225,
-							["Ницшеподлсд-Пламегор"] = 299.004154,
-							["Молимся-Пламегор"] = 259.005217,
-							["Memoria-Auberdine"] = 990.00211,
-							["Calmyboy-MirageRaceway"] = 5220.003146,
-							["Готян-Пламегор"] = 0.004773,
-							["Рубежж-Пламегор"] = 1372.00621,
-							["Небославян-Пламегор"] = 11554.004837,
-							["Дарелос-Пламегор"] = 2592.006114,
-							["Кейналай-Пламегор"] = 42839.004189,
-							["Шерифдуфи-Пламегор"] = 19588.004005,
-							["Сварт-Пламегор"] = 2457.002646,
-							["Purpplehaze-Auberdine"] = 890.0037990000001,
-							["Bopshop-Ashbringer"] = 21982.004817,
-							["Maivi-Giantstalker"] = 0.007509,
-							["Moolatz"] = 4365.006905,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Ницшеподлсд-Пламегор"] = 2860.004032,
-							["Молимся-Пламегор"] = 3314.00101,
-							["Calmyboy-MirageRaceway"] = 10792.007502,
-							["Готян-Пламегор"] = 0.006586,
-							["Рубежж-Пламегор"] = 6111.00515,
-							["Memoria-Auberdine"] = 7774.005869000001,
-							["Maivi-Giantstalker"] = 6615.003996,
-							["Purpplehaze-Auberdine"] = 31417.007538,
-							["Коббал-Пламегор"] = 8301.003909,
-							["Дарелос-Пламегор"] = 18227.00773,
-							["Кейналай-Пламегор"] = 0.007132,
-							["Fatsnack-Mandokir"] = 59959.004649,
-							["Сварт-Пламегор"] = 8905.008378,
-							["Шерифдуфи-Пламегор"] = 443.005819,
-							["Bopshop-Ashbringer"] = 0.008618,
-							["Небославян-Пламегор"] = 0.008284,
-							["Boopa-Venoxis"] = 7121.003254,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 43960.149,
-				["combat_id"] = 243,
-				["data_inicio"] = "21:44:58",
-				["overall_added"] = true,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Макнаке"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_counter"] = 13516,
-				["start_time"] = 43937.417,
-				["TimeData"] = {
-				},
-				["raid_roster"] = {
-					["Airforceone-MirageRaceway"] = true,
-					["Calmyboy-MirageRaceway"] = true,
-					["Moolatz"] = true,
-					["Memoria-Auberdine"] = true,
-					["Fatsnack-Mandokir"] = true,
-					["Maivi-Giantstalker"] = true,
-					["Bopshop-Ashbringer"] = true,
-					["Boopa-Venoxis"] = true,
-					["Purpplehaze-Auberdine"] = true,
-					["Altarpain-MirageRaceway"] = true,
 				},
 			}, -- [18]
 		},
@@ -77035,7 +67417,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1666457070,
 	["active_profile"] = "xVermin",
-	["last_day"] = "19",
+	["last_day"] = "22",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -77155,21 +67537,6 @@ _detalhes_database = {
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["y"] = -183.107162475586,
-			["row_spacement"] = 19,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["font_size"] = 10,
-			["use_spark"] = false,
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -77181,6 +67548,21 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["use_spark"] = false,
+			["font_size"] = 10,
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
+			["y"] = -183.107162475586,
 			["use_square_mode"] = false,
 			["main_frame_locked"] = true,
 			["main_frame_size"] = {
@@ -77189,13 +67571,9 @@ _detalhes_database = {
 			},
 		},
 	},
+	["combat_counter"] = 13569,
 	["announce_firsthit"] = {
 		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["announce_prepots"] = {
-		["enabled"] = false,
-		["reverse"] = false,
 		["channel"] = "SELF",
 	},
 	["cached_roles"] = {
@@ -77230,7 +67608,7 @@ _detalhes_database = {
 		["Player-4477-0450A666"] = "DAMAGER",
 		["Player-4742-03A5A747"] = "HEALER",
 		["Player-4811-03907032"] = "TANK",
-		["Player-4477-03823715"] = "DAMAGER",
+		["Player-4701-03A1121A"] = "TANK",
 		["Player-4476-045A5FA3"] = "HEALER",
 		["Player-4477-04AC58D9"] = "DAMAGER",
 		["Player-4477-0492D49D"] = "DAMAGER",
@@ -77247,7 +67625,7 @@ _detalhes_database = {
 		["Player-4701-03547D0E"] = "DAMAGER",
 		["Player-4813-0488D695"] = "DAMAGER",
 		["Player-4477-04308ECE"] = "TANK",
-		["Player-4455-0497B664"] = "DAMAGER",
+		["Player-4742-03AE7BDB"] = "TANK",
 		["Player-4678-049EBB20"] = "DAMAGER",
 		["Player-4745-03ABF577"] = "TANK",
 		["Player-4464-0305FF16"] = "DAMAGER",
@@ -77256,29 +67634,29 @@ _detalhes_database = {
 		["Player-4476-0398C0FC"] = "DAMAGER",
 		["Player-4701-03A06AF0"] = "DAMAGER",
 		["Player-4701-0318A668"] = "DAMAGER",
-		["Player-4465-026361B6"] = "DAMAGER",
+		["Player-4815-046AECF6"] = "DAMAGER",
 		["Player-4442-01CB1178"] = "DAMAGER",
 		["Player-4455-02D2BF16"] = "DAMAGER",
 		["Player-4454-04B050FB"] = "TANK",
-		["Player-4476-0437163B"] = "DAMAGER",
+		["Player-4811-03B17C22"] = "DAMAGER",
 		["Player-4742-03ABFF78"] = "DAMAGER",
 		["Player-4477-04108EF6"] = "DAMAGER",
 		["Player-4816-04A28E83"] = "DAMAGER",
 		["Player-4456-04ABAE28"] = "DAMAGER",
-		["Player-4476-04B13412"] = "TANK",
+		["Player-4742-039ACC3F"] = "TANK",
 		["Player-4477-04B19F1F"] = "TANK",
 		["Player-4465-0382352D"] = "DAMAGER",
 		["Player-4477-04AFE932"] = "HEALER",
 		["Player-4701-03A4EB9E"] = "TANK",
 		["Player-4815-04687892"] = "DAMAGER",
-		["Player-4701-033C9FCA"] = "HEALER",
+		["Player-4742-019006C5"] = "DAMAGER",
 		["Player-4454-04A7535F"] = "TANK",
-		["Player-4477-0435E253"] = "DAMAGER",
+		["Player-4701-03121603"] = "DAMAGER",
 		["Player-4742-00BD292E"] = "DAMAGER",
 		["Player-4476-03DEBB4E"] = "DAMAGER",
 		["Player-4476-039F225E"] = "HEALER",
 		["Player-4701-03A3670C"] = "DAMAGER",
-		["Player-4441-0346828B"] = "DAMAGER",
+		["Player-4453-04AF41CF"] = "TANK",
 		["Player-4465-02DD7975"] = "DAMAGER",
 		["Player-4465-02E5C643"] = "DAMAGER",
 		["Player-4701-03A15E03"] = "TANK",
@@ -77286,7 +67664,7 @@ _detalhes_database = {
 		["Player-4465-02EE6D15"] = "DAMAGER",
 		["Player-4477-02E4768C"] = "HEALER",
 		["Player-4742-015E50F2"] = "DAMAGER",
-		["Player-4701-037EF2E6"] = "DAMAGER",
+		["Player-4476-01501919"] = "TANK",
 		["Player-4477-0475D930"] = "TANK",
 		["Player-4477-03824484"] = "DAMAGER",
 		["Player-4811-03A829E9"] = "DAMAGER",
@@ -77360,7 +67738,7 @@ _detalhes_database = {
 		["Player-4476-04741E06"] = "DAMAGER",
 		["Player-4742-03A82E01"] = "DAMAGER",
 		["Player-4815-04AADA85"] = "DAMAGER",
-		["Player-4701-03AD7E88"] = "DAMAGER",
+		["Player-4442-039853E6"] = "DAMAGER",
 		["Player-4454-04A7FA3E"] = "DAMAGER",
 		["Player-4476-03B77254"] = "DAMAGER",
 		["Player-4465-02E59964"] = "DAMAGER",
@@ -77370,16 +67748,16 @@ _detalhes_database = {
 		["Player-4742-03AC49F6"] = "DAMAGER",
 		["Player-4703-03A98A33"] = "DAMAGER",
 		["Player-4465-02E9A18A"] = "DAMAGER",
-		["Player-4454-04AEF3A1"] = "DAMAGER",
+		["Player-4465-02EE4B0B"] = "DAMAGER",
 		["Player-4816-0498582C"] = "DAMAGER",
-		["Player-4701-039CE156"] = "DAMAGER",
+		["Player-4476-049EE918"] = "TANK",
 		["Player-4745-03AEFA42"] = "HEALER",
 		["Player-4465-02DF3E1C"] = "DAMAGER",
 		["Player-4701-0385DACD"] = "TANK",
 		["Player-4477-048FA61B"] = "DAMAGER",
 		["Player-4477-04B0F889"] = "DAMAGER",
 		["Player-4816-04A13386"] = "DAMAGER",
-		["Player-4465-02E5EFB2"] = "DAMAGER",
+		["Player-4701-03A50970"] = "DAMAGER",
 		["Player-4465-03054348"] = "DAMAGER",
 		["Player-4454-02C312B6"] = "DAMAGER",
 		["Player-4464-037C0139"] = "DAMAGER",
@@ -77391,39 +67769,39 @@ _detalhes_database = {
 		["Player-4813-02094950"] = "DAMAGER",
 		["Player-4477-044DDCFF"] = "DAMAGER",
 		["Player-4465-03059CDE"] = "DAMAGER",
-		["Player-4465-02E8FE5F"] = "DAMAGER",
+		["Player-4465-00DFD773"] = "DAMAGER",
 		["Player-4465-02F7B5B1"] = "DAMAGER",
 		["Player-4701-03AD8CB5"] = "HEALER",
-		["Player-4455-032E747B"] = "HEALER",
+		["Player-4465-03738C3D"] = "DAMAGER",
 		["Player-4441-0392BC9E"] = "TANK",
 		["Player-4456-04AE4259"] = "TANK",
 		["Player-4742-03A04FAE"] = "DAMAGER",
 		["Player-4465-036BC0FF"] = "DAMAGER",
 		["Player-4811-03A3A380"] = "DAMAGER",
-		["Player-4465-024B4F54"] = "DAMAGER",
-		["Player-4476-03BD9E04"] = "DAMAGER",
+		["Player-4742-03A9B0B8"] = "DAMAGER",
+		["Player-4477-044DDB0F"] = "DAMAGER",
 		["Player-4466-038395AF"] = "DAMAGER",
-		["Player-4816-0497A055"] = "DAMAGER",
+		["Player-4464-03947026"] = "DAMAGER",
 		["Player-4813-01D67AE4"] = "DAMAGER",
 		["Player-4476-04A25747"] = "DAMAGER",
 		["Player-4476-03483CD8"] = "DAMAGER",
 		["Player-4815-046F53A9"] = "DAMAGER",
 		["Player-4465-02D53FF9"] = "TANK",
 		["Player-4701-039A4556"] = "DAMAGER",
-		["Player-4476-047292AB"] = "DAMAGER",
-		["Player-4476-04B17C80"] = "DAMAGER",
+		["Player-4465-02FD8F28"] = "DAMAGER",
+		["Player-4476-03DEC012"] = "HEALER",
 		["Player-4467-02B77199"] = "DAMAGER",
 		["Player-4476-036DF0DE"] = "TANK",
 		["Player-4477-03DF5CD9"] = "DAMAGER",
 		["Player-4701-03ADBAFD"] = "DAMAGER",
 		["Player-4815-047D7F11"] = "TANK",
-		["Player-4701-03AEB105"] = "DAMAGER",
+		["Player-4477-0438937C"] = "DAMAGER",
 		["Player-4815-048AB3B8"] = "DAMAGER",
 		["Player-4813-049C7CFE"] = "DAMAGER",
 		["Player-4466-0386640C"] = "DAMAGER",
 		["Player-4464-02789DCB"] = "DAMAGER",
 		["Player-4465-02E65254"] = "DAMAGER",
-		["Player-4813-04AC7347"] = "DAMAGER",
+		["Player-4476-03BEE8AF"] = "HEALER",
 		["Player-4701-03314E17"] = "TANK",
 		["Player-4742-03A32224"] = "DAMAGER",
 		["Player-4813-04AB8252"] = "DAMAGER",
@@ -77435,7 +67813,7 @@ _detalhes_database = {
 		["Player-4465-02E381E0"] = "DAMAGER",
 		["Player-4815-04BA2078"] = "DAMAGER",
 		["Player-4811-0394EED3"] = "DAMAGER",
-		["Player-4701-03A555C0"] = "DAMAGER",
+		["Player-4477-04AE4A1B"] = "TANK",
 		["Player-4476-046A3991"] = "TANK",
 		["Player-4465-02FD19EF"] = "DAMAGER",
 		["Player-4465-0385F4CC"] = "DAMAGER",
@@ -77445,7 +67823,7 @@ _detalhes_database = {
 		["Player-4815-04842C7D"] = "DAMAGER",
 		["Player-4701-03AE94B9"] = "DAMAGER",
 		["Player-4476-03996607"] = "DAMAGER",
-		["Player-4464-02F4F5C4"] = "HEALER",
+		["Player-4477-045DDB68"] = "DAMAGER",
 		["Player-4465-02C366BD"] = "DAMAGER",
 		["Player-4701-03A862AD"] = "DAMAGER",
 		["Player-4477-0434CD60"] = "HEALER",
@@ -77495,7 +67873,7 @@ _detalhes_database = {
 		["Player-4813-04A451E7"] = "DAMAGER",
 		["Player-4701-034CADED"] = "DAMAGER",
 		["Player-4441-03A78041"] = "DAMAGER",
-		["Player-4477-04B0F745"] = "TANK",
+		["Player-4815-04704580"] = "HEALER",
 		["Player-4477-04AF2CB5"] = "DAMAGER",
 		["Player-4701-03183B77"] = "DAMAGER",
 		["Player-4476-047B244F"] = "DAMAGER",
@@ -77503,7 +67881,7 @@ _detalhes_database = {
 		["Player-4701-0396DE85"] = "DAMAGER",
 		["Player-4465-02E88CAB"] = "DAMAGER",
 		["Player-4465-0051A6F9"] = "DAMAGER",
-		["Player-4477-01E0D74F"] = "DAMAGER",
+		["Player-4464-02F4F5C4"] = "HEALER",
 		["Player-4454-049A4F40"] = "DAMAGER",
 		["Player-4815-047F3B1D"] = "DAMAGER",
 		["Player-4811-03ABD32F"] = "DAMAGER",
@@ -77521,34 +67899,34 @@ _detalhes_database = {
 		["Player-4476-04417AC6"] = "DAMAGER",
 		["Player-4701-037C01FE"] = "DAMAGER",
 		["Player-4464-03A1E9FC"] = "DAMAGER",
-		["Player-4442-03A233F9"] = "DAMAGER",
+		["Player-4465-02BC5265"] = "TANK",
 		["Player-4701-031821B6"] = "DAMAGER",
 		["Player-4476-044A3B22"] = "DAMAGER",
-		["Player-4816-04A4EF03"] = "DAMAGER",
-		["Player-4477-01554A23"] = "DAMAGER",
+		["Player-4477-017B3259"] = "DAMAGER",
+		["Player-4701-03AEB105"] = "DAMAGER",
 		["Player-4701-03A6904B"] = "DAMAGER",
 		["Player-4476-040311B5"] = "HEALER",
-		["Player-4476-0470A68E"] = "DAMAGER",
+		["Player-4477-025CB6E7"] = "DAMAGER",
 		["Player-4465-02BC6B57"] = "DAMAGER",
-		["Player-4477-0438937C"] = "DAMAGER",
-		["Player-4476-03DEC012"] = "HEALER",
+		["Player-4464-03A50413"] = "DAMAGER",
 		["Player-4815-04684182"] = "DAMAGER",
+		["Player-4477-04B0F745"] = "TANK",
 		["Player-4701-0338B28C"] = "DAMAGER",
 		["Player-4742-03A9BAB1"] = "TANK",
-		["Player-4815-04704580"] = "HEALER",
-		["Player-4476-04912765"] = "DAMAGER",
-		["Player-4477-049D2371"] = "DAMAGER",
-		["Player-4465-037C458A"] = "DAMAGER",
-		["Player-4742-03A9B0B8"] = "DAMAGER",
+		["Player-4476-047292AB"] = "DAMAGER",
+		["Player-4816-0497A055"] = "DAMAGER",
+		["Player-4701-03ACC49F"] = "TANK",
+		["Player-4816-04A4EF03"] = "DAMAGER",
+		["Player-4476-046E4C72"] = "HEALER",
 		["Player-4701-038E51C3"] = "DAMAGER",
-		["Player-4476-03725EC6"] = "DAMAGER",
+		["Player-4477-049D2371"] = "DAMAGER",
 		["Player-4749-03960BD4"] = "TANK",
-		["Player-4477-044DDB0F"] = "DAMAGER",
+		["Player-4701-039CE156"] = "DAMAGER",
 		["Player-4701-03768151"] = "DAMAGER",
-		["Player-4742-03AD528C"] = "DAMAGER",
+		["Player-4441-01D32613"] = "DAMAGER",
 		["Player-4701-03190ACD"] = "HEALER",
-		["Player-4742-03A94213"] = "DAMAGER",
-		["Player-4465-00DFD773"] = "DAMAGER",
+		["Player-4701-03B23A66"] = "DAMAGER",
+		["Player-4455-032E747B"] = "HEALER",
 		["Player-4815-04865F8D"] = "DAMAGER",
 		["Player-4477-0483C796"] = "TANK",
 		["Player-4815-0478BF4C"] = "DAMAGER",
@@ -77560,7 +67938,7 @@ _detalhes_database = {
 		["Player-4454-04B10390"] = "DAMAGER",
 		["Player-4441-039A224C"] = "DAMAGER",
 		["Player-4465-0393E71A"] = "DAMAGER",
-		["Player-4477-0342C1F5"] = "DAMAGER",
+		["Player-4815-047F306B"] = "DAMAGER",
 		["Player-4813-048ADC15"] = "DAMAGER",
 		["Player-4476-03859B0C"] = "DAMAGER",
 		["Player-4815-04866DE7"] = "DAMAGER",
@@ -77571,35 +67949,35 @@ _detalhes_database = {
 		["Player-4701-01B19E9E"] = "DAMAGER",
 		["Player-4816-049C5BF5"] = "DAMAGER",
 		["Player-4477-0496ECB8"] = "DAMAGER",
-		["Player-4440-02F4FD8B"] = "DAMAGER",
-		["Player-4815-047F306B"] = "DAMAGER",
-		["Player-4465-02FD8F28"] = "DAMAGER",
-		["Player-4465-038B9318"] = "DAMAGER",
+		["Player-4477-01554A23"] = "DAMAGER",
+		["Player-4477-0342C1F5"] = "DAMAGER",
+		["Player-4815-048949EF"] = "DAMAGER",
 		["Player-4813-02719A94"] = "DAMAGER",
-		["Player-4701-03ACC49F"] = "TANK",
+		["Player-4465-02E5EFB2"] = "DAMAGER",
+		["Player-4465-038B9318"] = "DAMAGER",
 		["Player-4476-048528B8"] = "DAMAGER",
-		["Player-4465-02E8CB25"] = "DAMAGER",
-		["Player-4476-045E2483"] = "DAMAGER",
-		["Player-4464-039B4C1C"] = "DAMAGER",
-		["Player-4815-047ECA19"] = "DAMAGER",
+		["Player-4742-03AD528C"] = "DAMAGER",
+		["Player-4701-03AD7E88"] = "DAMAGER",
+		["Player-4476-04910C80"] = "TANK",
+		["Player-4465-03AE401A"] = "DAMAGER",
 		["Player-4476-04B108A6"] = "DAMAGER",
-		["Player-4477-045DDB68"] = "DAMAGER",
+		["Player-4476-0470A68E"] = "DAMAGER",
 		["Player-4701-037F988D"] = "DAMAGER",
 		["Player-4464-030692BC"] = "DAMAGER",
-		["Player-4701-0395CEF4"] = "DAMAGER",
-		["Player-4465-02EE4B0B"] = "DAMAGER",
-		["Player-4701-0161DD12"] = "HEALER",
+		["Player-4476-03BD9E04"] = "DAMAGER",
+		["Player-4454-04AEF3A1"] = "DAMAGER",
+		["Player-4813-04AC7347"] = "DAMAGER",
 		["Player-4742-03A9F661"] = "DAMAGER",
 		["Player-4477-03D66FE9"] = "DAMAGER",
 		["Player-4701-03185370"] = "HEALER",
 		["Player-4477-04AB3C76"] = "DAMAGER",
-		["Player-4442-039853E6"] = "DAMAGER",
+		["Player-4464-039B4C1C"] = "DAMAGER",
 		["Player-4742-03AE93BB"] = "DAMAGER",
 		["Player-4701-0193CA0E"] = "DAMAGER",
 		["Player-4816-049D2FC1"] = "DAMAGER",
-		["Player-4465-03AE401A"] = "DAMAGER",
+		["Player-4815-047ECA19"] = "DAMAGER",
 		["Player-4815-047A3574"] = "DAMAGER",
-		["Player-4815-048949EF"] = "DAMAGER",
+		["Player-4811-03A0A5E7"] = "DAMAGER",
 		["Player-4455-01F1007F"] = "DAMAGER",
 		["Player-4678-04AB9B9C"] = "DAMAGER",
 		["Player-4815-048BA7CE"] = "DAMAGER",
@@ -77609,17 +67987,17 @@ _detalhes_database = {
 		["Player-4465-03AEF9DA"] = "DAMAGER",
 		["Player-4477-033CC78F"] = "DAMAGER",
 		["Player-4701-0317C60F"] = "DAMAGER",
-		["Player-4701-038E0110"] = "DAMAGER",
+		["Player-4815-048AD744"] = "DAMAGER",
 		["Player-4476-0446F9BB"] = "DAMAGER",
 		["Player-4701-030F40D8"] = "DAMAGER",
 		["Player-4476-03A93254"] = "DAMAGER",
 		["Player-4678-01533823"] = "DAMAGER",
-		["Player-4813-04AC12A0"] = "TANK",
+		["Player-4811-03972E5D"] = "DAMAGER",
 		["Player-4477-03AFFDEF"] = "DAMAGER",
 		["Player-4442-02750566"] = "TANK",
-		["Player-4477-049ABDF5"] = "TANK",
-		["Player-4465-02E3211D"] = "DAMAGER",
 		["Player-4465-013A0F84"] = "DAMAGER",
+		["Player-4465-02E3211D"] = "DAMAGER",
+		["Player-4701-037EF2E6"] = "DAMAGER",
 		["Player-4476-031E57FF"] = "HEALER",
 		["Player-4453-03034DDE"] = "DAMAGER",
 		["Player-4815-046EF644"] = "DAMAGER",
@@ -77628,98 +68006,98 @@ _detalhes_database = {
 		["Player-4815-046C2A7B"] = "HEALER",
 		["Player-4742-037E7723"] = "DAMAGER",
 		["Player-4742-03A0AFBB"] = "HEALER",
-		["Player-4476-01501919"] = "TANK",
-		["Player-4454-04978A8A"] = "DAMAGER",
+		["Player-4742-039F4F93"] = "DAMAGER",
+		["Player-4813-046729B5"] = "TANK",
 		["Player-4465-02FEEA7A"] = "TANK",
 		["Player-4442-0316F41A"] = "DAMAGER",
 		["Player-4815-047801BA"] = "DAMAGER",
-		["Player-4701-03AD16B9"] = "TANK",
+		["Player-4455-04776DC5"] = "DAMAGER",
 		["Player-4742-03948F76"] = "TANK",
 		["Player-4465-02E63083"] = "DAMAGER",
 		["Player-4816-04AABCE2"] = "DAMAGER",
-		["Player-4742-039ACC3F"] = "TANK",
+		["Player-4701-038E0110"] = "DAMAGER",
 		["Player-4465-02E807F0"] = "DAMAGER",
-		["Player-4813-046729B5"] = "TANK",
+		["Player-4701-03ACB4A3"] = "TANK",
 		["Player-4742-03A07C0D"] = "DAMAGER",
 		["Player-4477-049CC442"] = "HEALER",
 		["Player-4465-02D7AAAD"] = "DAMAGER",
 		["Player-4476-0348CFF8"] = "HEALER",
 		["Player-4742-0116319B"] = "DAMAGER",
-		["Player-4465-02CBFC54"] = "DAMAGER",
-		["Player-4742-03AE7BDB"] = "TANK",
+		["Player-4465-036E4B91"] = "DAMAGER",
+		["Player-4455-04B1B277"] = "DAMAGER",
 		["Player-4466-025B57DB"] = "HEALER",
 		["Player-4477-03710961"] = "HEALER",
 		["Player-4465-00180435"] = "HEALER",
 		["Player-4476-047A79B6"] = "TANK",
-		["Player-4464-017B3546"] = "HEALER",
+		["Player-4465-02E7CDCC"] = "DAMAGER",
 		["Player-4477-04B00B48"] = "TANK",
 		["Player-4701-039A46F4"] = "DAMAGER",
 		["Player-4477-04AC58E4"] = "TANK",
-		["Player-4742-019006C5"] = "DAMAGER",
-		["Player-4454-04ADF86E"] = "DAMAGER",
+		["Player-4455-0497B664"] = "DAMAGER",
+		["Player-4701-032FFB2D"] = "DAMAGER",
 		["Player-4477-0134D639"] = "DAMAGER",
-		["Player-4465-036E4B91"] = "DAMAGER",
+		["Player-4477-04B04FFC"] = "DAMAGER",
 		["Player-4813-0345D5E4"] = "DAMAGER",
 		["Player-4454-04AC2BDA"] = "DAMAGER",
 		["Player-4701-0314CBB2"] = "DAMAGER",
 		["Player-4476-039AD178"] = "DAMAGER",
 		["Player-4464-03917935"] = "DAMAGER",
 		["Player-4465-0306C90B"] = "DAMAGER",
-		["Player-4464-0357F956"] = "DAMAGER",
+		["Player-4476-03725EC6"] = "DAMAGER",
 		["Player-4476-04AC275C"] = "DAMAGER",
 		["Player-4701-03948F92"] = "DAMAGER",
-		["Player-4815-049270B1"] = "DAMAGER",
+		["Player-4454-044931B8"] = "HEALER",
 		["Player-4701-03433F21"] = "DAMAGER",
-		["Player-4701-03B23A66"] = "DAMAGER",
+		["Player-4464-0357F956"] = "DAMAGER",
 		["Player-4442-0294A9E0"] = "DAMAGER",
 		["Player-4476-01F53742"] = "DAMAGER",
 		["Player-4465-0303B419"] = "DAMAGER",
 		["Player-4455-0453AE90"] = "DAMAGER",
 		["Player-4701-03A33B45"] = "DAMAGER",
-		["Player-4816-04A66A2B"] = "HEALER",
+		["Player-4465-01302DC1"] = "DAMAGER",
 		["Player-4701-034854B1"] = "TANK",
 		["Player-4476-04426261"] = "DAMAGER",
 		["Player-4701-037A70AA"] = "DAMAGER",
-		["Player-4476-04910C80"] = "TANK",
-		["Player-4701-0381B878"] = "TANK",
 		["Player-4742-03A8E3B9"] = "HEALER",
-		["Player-4701-03A1121A"] = "TANK",
+		["Player-4701-0381B878"] = "TANK",
+		["Player-4465-030FE63F"] = "DAMAGER",
+		["Player-4465-0234ED4B"] = "DAMAGER",
 		["Player-4440-03B20940"] = "DAMAGER",
-		["Player-4701-032FFB2D"] = "DAMAGER",
+		["Player-4464-039285F2"] = "DAMAGER",
 		["Player-4701-03433572"] = "DAMAGER",
 		["Player-4477-01524D23"] = "DAMAGER",
-		["Player-4455-04B1B277"] = "DAMAGER",
-		["Player-4465-01302DC1"] = "DAMAGER",
-		["Player-4465-02EA7F29"] = "TANK",
+		["Player-4477-03823715"] = "DAMAGER",
+		["Player-4816-04A66A2B"] = "HEALER",
+		["Player-4454-04ADF86E"] = "DAMAGER",
 		["Player-4816-049660C8"] = "DAMAGER",
-		["Player-4815-046AECF6"] = "DAMAGER",
-		["Player-4465-030FE63F"] = "DAMAGER",
 		["Player-4454-04B1C09B"] = "HEALER",
+		["Player-4465-038A5961"] = "DAMAGER",
+		["Player-4465-02E319A9"] = "DAMAGER",
 		["Player-4476-03AF9392"] = "DAMAGER",
 		["Player-4465-02E313C1"] = "DAMAGER",
 		["Player-4477-02D19813"] = "DAMAGER",
-		["Player-4813-03FAFF59"] = "DAMAGER",
+		["Player-4476-04B20B31"] = "DAMAGER",
 		["Player-4701-039D6727"] = "HEALER",
 		["Player-4816-0498BA7C"] = "DAMAGER",
 		["Player-4465-00EB7EF7"] = "DAMAGER",
 		["Player-4477-04986814"] = "DAMAGER",
 		["Player-4476-03BE36F8"] = "DAMAGER",
-		["Player-4465-0234ED4B"] = "DAMAGER",
+		["Player-4454-0494D4FF"] = "DAMAGER",
 		["Player-4813-033F9915"] = "DAMAGER",
-		["Player-4745-02786E99"] = "DAMAGER",
+		["Player-4701-00B2A495"] = "DAMAGER",
 		["Player-4464-00D247CA"] = "DAMAGER",
 		["Player-4464-0235BC47"] = "DAMAGER",
 		["Player-4703-038CCA4D"] = "DAMAGER",
 		["Player-4441-03ACC446"] = "DAMAGER",
-		["Player-4477-0340EAC4"] = "DAMAGER",
+		["Player-4815-046B4832"] = "DAMAGER",
 		["Player-4465-02E48B0A"] = "DAMAGER",
-		["Player-4701-00B2A495"] = "DAMAGER",
+		["Player-4441-02500ABE"] = "DAMAGER",
 		["Player-4476-03121BB3"] = "DAMAGER",
 		["Player-4454-03F8E5E1"] = "DAMAGER",
 		["Player-4745-03AE87D2"] = "DAMAGER",
 		["Player-4749-01882F48"] = "TANK",
-		["Player-4815-046B4832"] = "DAMAGER",
-		["Player-4441-02500ABE"] = "DAMAGER",
+		["Player-4815-0478FE1D"] = "DAMAGER",
+		["Player-4745-02786E99"] = "DAMAGER",
 		["Player-4815-049D2A2D"] = "TANK",
 		["Player-4816-04AAAC75"] = "HEALER",
 		["Player-4465-02E6D003"] = "DAMAGER",
@@ -77858,61 +68236,61 @@ _detalhes_database = {
 		["Player-4742-03AAC8EC"] = "DAMAGER",
 		["Player-4466-02B5CC92"] = "DAMAGER",
 		["Player-4442-03A24C28"] = "DAMAGER",
-		["Player-4815-0478FE1D"] = "DAMAGER",
+		["Player-4477-0340EAC4"] = "DAMAGER",
 		["Player-4455-03B86317"] = "DAMAGER",
 		["Player-4701-038C4C49"] = "TANK",
-		["Player-4454-0494D4FF"] = "DAMAGER",
+		["Player-4441-0346828B"] = "DAMAGER",
 		["Player-4701-0253A59C"] = "TANK",
-		["Player-4701-03121603"] = "DAMAGER",
-		["Player-4476-04B20B31"] = "DAMAGER",
+		["Player-4815-049AFB92"] = "DAMAGER",
+		["Player-4476-04912765"] = "DAMAGER",
 		["Player-4442-03A890B2"] = "DAMAGER",
-		["Player-4815-048AD744"] = "DAMAGER",
-		["Player-4465-02E319A9"] = "DAMAGER",
+		["Player-4813-03FAFF59"] = "DAMAGER",
+		["Player-4477-03B0A2B9"] = "DAMAGER",
 		["Player-4454-03DA221B"] = "HEALER",
 		["Player-4476-037CCE21"] = "DAMAGER",
 		["Player-4476-0445EEFA"] = "HEALER",
-		["Player-4464-039285F2"] = "DAMAGER",
+		["Player-4465-02EA7F29"] = "TANK",
 		["Player-4454-015B1818"] = "DAMAGER",
-		["Player-4465-038A5961"] = "DAMAGER",
+		["Player-4477-0435E253"] = "DAMAGER",
 		["Player-4742-03B2C1D8"] = "DAMAGER",
 		["Player-4815-04812FBB"] = "DAMAGER",
 		["Player-4476-043E8782"] = "DAMAGER",
 		["Player-4477-04A80F7F"] = "DAMAGER",
-		["Player-4815-049AFB92"] = "DAMAGER",
+		["Player-4742-03A94213"] = "DAMAGER",
 		["Player-4464-02E6DEE3"] = "HEALER",
 		["Player-4813-04AA8CF1"] = "DAMAGER",
 		["Player-4442-0245A2EB"] = "DAMAGER",
 		["Player-4465-02E67BDA"] = "DAMAGER",
 		["Player-4477-04037B1A"] = "HEALER",
-		["Player-4465-02E7CDCC"] = "DAMAGER",
+		["Player-4465-026361B6"] = "DAMAGER",
 		["Player-4745-03ACD4F8"] = "DAMAGER",
-		["Player-4811-03B17C22"] = "DAMAGER",
+		["Player-4476-0437163B"] = "DAMAGER",
 		["Player-4813-02E48DBE"] = "DAMAGER",
-		["Player-4477-04B04FFC"] = "DAMAGER",
-		["Player-4701-03ACB4A3"] = "TANK",
+		["Player-4476-04B13412"] = "TANK",
+		["Player-4701-033C9FCA"] = "HEALER",
 		["Player-4813-04A29CA2"] = "TANK",
 		["Player-4813-0331382B"] = "DAMAGER",
-		["Player-4453-04AF41CF"] = "TANK",
-		["Player-4477-03B0A2B9"] = "DAMAGER",
+		["Player-4477-049ABDF5"] = "TANK",
+		["Player-4701-03AD16B9"] = "TANK",
 		["Player-4813-01D54F92"] = "DAMAGER",
-		["Player-4455-04776DC5"] = "DAMAGER",
-		["Player-4477-04B09AC9"] = "DAMAGER",
-		["Player-4742-039F4F93"] = "DAMAGER",
-		["Player-4477-04751CB0"] = "TANK",
-		["Player-4476-048E9838"] = "HEALER",
-		["Player-4811-03990FCD"] = "DAMAGER",
-		["Player-4454-044931B8"] = "HEALER",
-		["Player-4701-039E6477"] = "DAMAGER",
-		["Player-4811-03972E5D"] = "DAMAGER",
-		["Player-4742-039FDD52"] = "DAMAGER",
-		["Player-4464-03947026"] = "DAMAGER",
-		["Player-4465-00F71EA1"] = "DAMAGER",
 		["Player-4816-04AB2CCF"] = "DAMAGER",
+		["Player-4477-04B09AC9"] = "DAMAGER",
+		["Player-4477-04751CB0"] = "TANK",
+		["Player-4811-03990FCD"] = "DAMAGER",
+		["Player-4476-048E9838"] = "HEALER",
+		["Player-4454-04978A8A"] = "DAMAGER",
+		["Player-4815-049270B1"] = "DAMAGER",
+		["Player-4701-039E6477"] = "DAMAGER",
+		["Player-4464-017B3546"] = "HEALER",
+		["Player-4742-039FDD52"] = "DAMAGER",
+		["Player-4465-02CBFC54"] = "DAMAGER",
+		["Player-4813-04AC12A0"] = "TANK",
+		["Player-4465-00F71EA1"] = "DAMAGER",
 		["Player-4703-02801BB8"] = "DAMAGER",
 		["Player-4454-04AEF283"] = "DAMAGER",
 		["Player-4465-0006893F"] = "DAMAGER",
 		["Player-4477-049818C5"] = "DAMAGER",
-		["Player-4441-01D32613"] = "DAMAGER",
+		["Player-4465-024B4F54"] = "DAMAGER",
 		["Player-4742-03A6E048"] = "TANK",
 		["Player-4441-038D83F6"] = "DAMAGER",
 		["Player-4465-038CD123"] = "DAMAGER",
@@ -77923,24 +68301,24 @@ _detalhes_database = {
 		["Player-4701-0397A822"] = "DAMAGER",
 		["Player-4465-02E7853C"] = "DAMAGER",
 		["Player-4465-02B843FA"] = "DAMAGER",
-		["Player-4811-03A0A5E7"] = "DAMAGER",
 		["Player-4477-04B061DC"] = "DAMAGER",
+		["Player-4701-0395CEF4"] = "DAMAGER",
 		["Player-4465-017E7EB8"] = "DAMAGER",
-		["Player-4701-03A50970"] = "DAMAGER",
+		["Player-4440-02F4FD8B"] = "DAMAGER",
 		["Player-4477-048752B2"] = "DAMAGER",
 		["Player-4816-04A26ADC"] = "DAMAGER",
 		["Player-4701-0317A62B"] = "DAMAGER",
 		["Player-4701-03AE5364"] = "DAMAGER",
-		["Player-4476-046E4C72"] = "HEALER",
-		["Player-4476-049EE918"] = "TANK",
+		["Player-4465-037C458A"] = "DAMAGER",
+		["Player-4465-02E8FE5F"] = "DAMAGER",
 		["Player-4477-033128B4"] = "DAMAGER",
 		["Player-4477-01D63F16"] = "DAMAGER",
 		["Player-4465-02E6D741"] = "DAMAGER",
-		["Player-4477-044E6A37"] = "DAMAGER",
+		["Player-4465-02E8CB25"] = "DAMAGER",
 		["Player-4464-03ABE422"] = "TANK",
 		["Player-4465-0377E597"] = "DAMAGER",
 		["Player-4701-03A78735"] = "DAMAGER",
-		["Player-4477-017B3259"] = "DAMAGER",
+		["Player-4476-045E2483"] = "DAMAGER",
 		["Player-4456-031C327F"] = "DAMAGER",
 		["Player-4745-0396F311"] = "DAMAGER",
 		["Player-4701-031DCB34"] = "DAMAGER",
@@ -77949,39 +68327,43 @@ _detalhes_database = {
 		["Player-4476-04AF2A2C"] = "DAMAGER",
 		["Player-4465-02C5D029"] = "DAMAGER",
 		["Player-4465-02E98A53"] = "TANK",
+		["Player-4476-04B17C80"] = "DAMAGER",
 		["Player-4476-04A933E9"] = "DAMAGER",
-		["Player-4464-03A50413"] = "DAMAGER",
 		["Player-4701-033E6408"] = "DAMAGER",
 		["Player-4476-04453DB0"] = "DAMAGER",
-		["Player-4477-025CB6E7"] = "DAMAGER",
+		["Player-4701-03A555C0"] = "DAMAGER",
 		["Player-4464-036DBEA4"] = "DAMAGER",
-		["Player-4465-03738C3D"] = "DAMAGER",
-		["Player-4476-03BEE8AF"] = "HEALER",
+		["Player-4701-0161DD12"] = "HEALER",
+		["Player-4442-03A233F9"] = "DAMAGER",
 		["Player-4477-01873D44"] = "TANK",
-		["Player-4465-02BC5265"] = "TANK",
-		["Player-4476-04B20381"] = "TANK",
+		["Player-4477-04007E9C"] = "DAMAGER",
+		["Player-4477-044E6A37"] = "DAMAGER",
 		["Player-4465-02E04F27"] = "HEALER",
 		["Player-4477-046B669A"] = "DAMAGER",
-		["Player-4477-04AE4A1B"] = "TANK",
+		["Player-4477-01E0D74F"] = "DAMAGER",
 		["Player-4813-04B1E45C"] = "DAMAGER",
 		["Player-4742-03A78F3C"] = "DAMAGER",
 		["Player-4816-04A0B653"] = "TANK",
+		["Player-4476-04B20381"] = "TANK",
 		["Player-4742-037B48BE"] = "DAMAGER",
-		["Player-4477-04007E9C"] = "DAMAGER",
 		["Player-4703-039E3940"] = "DAMAGER",
 		["Player-4465-0385235B"] = "DAMAGER",
 		["Player-4816-04B07FC6"] = "TANK",
 		["Player-4464-010E69E4"] = "DAMAGER",
 	},
-	["combat_counter"] = 13564,
+	["announce_prepots"] = {
+		["enabled"] = false,
+		["reverse"] = false,
+		["channel"] = "SELF",
+	},
 	["last_realversion"] = 146,
 	["character_data"] = {
-		["logons"] = 2302,
+		["logons"] = 2306,
 	},
-	["combat_id"] = 260,
+	["combat_id"] = 261,
 	["savedStyles"] = {
 		{
-			["hide_in_combat_type"] = 1,
+			["show_statusbar"] = false,
 			["clickthrough_window"] = false,
 			["titlebar_shown"] = false,
 			["menu_anchor"] = {
@@ -77999,7 +68381,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["bars_sort_direction"] = 1,
+			["skin_custom"] = "vermin",
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -78011,31 +68393,43 @@ _detalhes_database = {
 				1, -- [3]
 			},
 			["clickthrough_toolbaricons"] = false,
-			["clickthrough_rows"] = false,
+			["attribute_text"] = {
+				["enabled"] = true,
+				["shadow"] = false,
+				["side"] = 1,
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["custom_text"] = "{name}",
+				["text_face"] = "Arial Narrow",
+				["anchor"] = {
+					56, -- [1]
+					3, -- [2]
+				},
+				["text_size"] = 12,
+				["enable_custom_text"] = false,
+				["show_timer"] = false,
+			},
 			["titlebar_texture"] = "Clean",
-			["switch_tank"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["switch_all_roles_after_wipe"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
+			["ignore_mass_showhide"] = false,
+			["fontstrings_text_limit_offset"] = -10,
 			["icon_desaturated"] = false,
 			["desaturated_menu"] = false,
-			["micro_displays_side"] = 2,
+			["show_sidebars"] = false,
 			["window_scale"] = 1,
 			["hide_icon"] = true,
 			["toolbar_side"] = 1,
 			["bg_g"] = 0.1333333333333333,
 			["menu_icons_alpha"] = 0.92,
 			["bg_b"] = 0.1333333333333333,
-			["switch_healer_in_combat"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
+			["rowareaborder_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
 			["color"] = {
 				0.07058823529411765, -- [1]
@@ -78122,12 +68516,12 @@ _detalhes_database = {
 			},
 			["skin"] = "Minimalistic",
 			["following"] = {
+				["enabled"] = false,
 				["bar_color"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 				},
-				["enabled"] = false,
 				["text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -78166,14 +68560,14 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["show_sidebars"] = false,
-			["name"] = "vermin",
+			["micro_displays_side"] = 2,
+			["version"] = 3,
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["version"] = 3,
+			["bg_alpha"] = 0,
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -78184,26 +68578,7 @@ _detalhes_database = {
 				["onenter"] = 1,
 			},
 			["fullborder_shown"] = false,
-			["attribute_text"] = {
-				["show_timer"] = false,
-				["shadow"] = false,
-				["side"] = 1,
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["custom_text"] = "{name}",
-				["text_face"] = "Arial Narrow",
-				["anchor"] = {
-					56, -- [1]
-					3, -- [2]
-				},
-				["text_size"] = 12,
-				["enable_custom_text"] = false,
-				["enabled"] = true,
-			},
+			["clickthrough_rows"] = false,
 			["rowareaborder_shown"] = false,
 			["rowareaborder_size"] = 0.5,
 			["clickthrough_incombatonly"] = false,
@@ -78215,7 +68590,7 @@ _detalhes_database = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["micro_displays_locked"] = false,
+			["bars_sort_direction"] = 1,
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -78231,49 +68606,45 @@ _detalhes_database = {
 					0.07058823529411765, -- [3]
 				},
 			},
-			["row_show_animation"] = {
-				["anim"] = "Fade",
-				["options"] = {
-				},
-			},
 			["menu_anchor_down"] = {
 				16, -- [1]
 				-3, -- [2]
 			},
+			["bars_grow_direction"] = 1,
 			["grab_on_top"] = false,
 			["auto_hide_menu"] = {
 				["left"] = false,
 				["right"] = true,
 			},
-			["show_statusbar"] = false,
+			["hide_in_combat_type"] = 1,
 			["switch_damager_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["rowareaborder_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["bars_grow_direction"] = 1,
-			["auto_current"] = true,
-			["skin_custom"] = "vermin",
-			["switch_damager"] = {
+			["switch_healer_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["bg_alpha"] = 0,
-			["hide_in_combat"] = false,
+			["row_show_animation"] = {
+				["anim"] = "Fade",
+				["options"] = {
+				},
+			},
+			["auto_current"] = true,
+			["micro_displays_locked"] = false,
 			["row_info"] = {
-				["textR_outline"] = false,
+				["show_arena_role_icon"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
 				["textL_outline"] = false,
-				["textR_outline_small"] = true,
-				["textL_outline_small"] = true,
-				["textL_enable_custom_text"] = false,
+				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+				["textR_show_data"] = {
+					true, -- [1]
+					true, -- [2]
+					false, -- [3]
+				},
+				["percent_type"] = 1,
 				["fixed_text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -78285,7 +68656,12 @@ _detalhes_database = {
 					["between"] = 1,
 				},
 				["texture_background_class_color"] = false,
-				["start_after_icon"] = true,
+				["textL_outline_small_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
 				["font_face_file"] = "Fonts\\ARIALN.TTF",
 				["faction_icon_size_offset"] = -10,
 				["backdrop"] = {
@@ -78299,8 +68675,6 @@ _detalhes_database = {
 					["enabled"] = false,
 					["texture"] = "ThreatPlatesBorder",
 				},
-				["font_size"] = 11,
-				["textL_custom_text"] = "{data1}. {data3}{data2}",
 				["models"] = {
 					["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
 					["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
@@ -78309,16 +68683,13 @@ _detalhes_database = {
 					["lower_alpha"] = 0.1,
 					["upper_enabled"] = false,
 				},
+				["textL_custom_text"] = "{data1}. {data3}{data2}",
+				["font_size"] = 11,
 				["textL_translit_text"] = false,
-				["texture_custom_file"] = "Interface\\",
+				["height"] = 19,
 				["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
 				["icon_size_offset"] = 0,
-				["textL_outline_small_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
+				["start_after_icon"] = true,
 				["show_faction_icon"] = true,
 				["overlay_color"] = {
 					0.7, -- [1]
@@ -78326,18 +68697,14 @@ _detalhes_database = {
 					0.7, -- [3]
 					0, -- [4]
 				},
-				["textR_show_data"] = {
-					true, -- [1]
-					true, -- [2]
-					false, -- [3]
-				},
-				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-				["icon_file"] = "",
+				["textL_outline_small"] = true,
+				["textR_outline_small"] = true,
+				["arena_role_icon_size_offset"] = -10,
 				["icon_grayscale"] = false,
-				["use_spec_icons"] = false,
 				["textR_bracket"] = "(",
+				["use_spec_icons"] = false,
 				["texture_custom"] = "",
-				["show_arena_role_icon"] = false,
+				["textR_outline"] = false,
 				["fixed_texture_color"] = {
 					0, -- [1]
 					0, -- [2]
@@ -78371,23 +68738,33 @@ _detalhes_database = {
 					0, -- [1]
 					0, -- [2]
 				},
-				["arena_role_icon_size_offset"] = -10,
+				["icon_file"] = "",
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
-				["percent_type"] = 1,
+				["textL_enable_custom_text"] = false,
 				["fast_ps_update"] = false,
 				["textR_separator"] = "NONE",
-				["height"] = 19,
+				["texture_custom_file"] = "Interface\\",
 			},
-			["ignore_mass_showhide"] = false,
-			["fontstrings_text_limit_offset"] = -10,
+			["name"] = "vermin",
+			["hide_in_combat"] = false,
+			["switch_damager"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["switch_tank"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["switch_all_roles_after_wipe"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
 			["wallpaper"] = {
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
+				["enabled"] = false,
 				["alpha"] = 0.5,
 				["width"] = 283.000183105469,
 				["texcoord"] = {
@@ -78399,7 +68776,12 @@ _detalhes_database = {
 				["height"] = 114.042518615723,
 				["anchor"] = "all",
 				["level"] = 2,
-				["enabled"] = false,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
 				["texture"] = "Interface\\AddOns\\Details\\images\\background",
 			},
 			["stretch_button_side"] = 2,
@@ -78470,13 +68852,13 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 261,
 								["targets"] = {
+									["Memoria-Auberdine"] = 261,
 									["Altarpain-MirageRaceway"] = 0,
-									["Fatsnack-Mandokir"] = 0,
 									["Maivi-Giantstalker"] = 2405,
 									["Purpplehaze-Auberdine"] = 0,
 									["Bopshop-Ashbringer"] = 0,
 									["Airforceone-MirageRaceway"] = 0,
-									["Memoria-Auberdine"] = 261,
+									["Fatsnack-Mandokir"] = 0,
 								},
 								["n_dmg"] = 261,
 								["n_min"] = 0,
@@ -78695,13 +69077,13 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 1272,
 								["targets"] = {
+									["Memoria-Auberdine"] = 3548,
 									["Fatsnack-Mandokir"] = 0,
-									["Moolatz"] = 3535,
 									["Maivi-Giantstalker"] = 1849,
 									["Purpplehaze-Auberdine"] = 0,
 									["Bopshop-Ashbringer"] = 0,
 									["Grr <Memoria-Auberdine>"] = 2712,
-									["Memoria-Auberdine"] = 3548,
+									["Moolatz"] = 3535,
 								},
 								["n_dmg"] = 5116,
 								["n_min"] = 0,
@@ -78755,10 +69137,10 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 1868,
 								["targets"] = {
-									["Fatsnack-Mandokir"] = 0,
-									["Bopshop-Ashbringer"] = 0,
-									["Memoria-Auberdine"] = 1868,
 									["Altarpain-MirageRaceway"] = 0,
+									["Bopshop-Ashbringer"] = 0,
+									["Fatsnack-Mandokir"] = 0,
+									["Memoria-Auberdine"] = 1868,
 								},
 								["n_dmg"] = 1868,
 								["n_min"] = 0,
@@ -78811,10 +69193,10 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Fatsnack-Mandokir"] = 0,
-									["Bopshop-Ashbringer"] = 0,
-									["Airforceone-MirageRaceway"] = 0,
 									["Altarpain-MirageRaceway"] = 0,
+									["Bopshop-Ashbringer"] = 0,
+									["Fatsnack-Mandokir"] = 0,
+									["Airforceone-MirageRaceway"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -79092,10 +69474,10 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Fatsnack-Mandokir"] = 0,
-									["Bopshop-Ashbringer"] = 0,
-									["Airforceone-MirageRaceway"] = 0,
 									["Altarpain-MirageRaceway"] = 0,
+									["Bopshop-Ashbringer"] = 0,
+									["Fatsnack-Mandokir"] = 0,
+									["Airforceone-MirageRaceway"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -79644,14 +70026,14 @@ _detalhes_database = {
 						["Airforceone-MirageRaceway"] = 501,
 						["Calmyboy-MirageRaceway"] = 530,
 						["Hathgarth <Purpplehaze-Auberdine>"] = 0,
-						["Fatsnack-Mandokir"] = 1304,
-						["Purpplehaze-Auberdine"] = 0,
-						["Memoria-Auberdine"] = 0,
-						["Maivi-Giantstalker"] = 0,
-						["Bopshop-Ashbringer"] = 0,
-						["Boopa-Venoxis"] = 0,
-						["Grr <Memoria-Auberdine>"] = 0,
 						["Altarpain-MirageRaceway"] = 0,
+						["Bopshop-Ashbringer"] = 0,
+						["Fatsnack-Mandokir"] = 1304,
+						["Maivi-Giantstalker"] = 0,
+						["Boopa-Venoxis"] = 0,
+						["Purpplehaze-Auberdine"] = 0,
+						["Grr <Memoria-Auberdine>"] = 0,
+						["Memoria-Auberdine"] = 0,
 					},
 					["enemy"] = true,
 					["pets"] = {
@@ -80110,14 +70492,14 @@ _detalhes_database = {
 								["targets"] = {
 									["Airforceone-MirageRaceway"] = 501,
 									["Calmyboy-MirageRaceway"] = 0,
-									["Fatsnack-Mandokir"] = 1304,
-									["Purpplehaze-Auberdine"] = 0,
-									["Memoria-Auberdine"] = 0,
-									["Maivi-Giantstalker"] = 0,
-									["Bopshop-Ashbringer"] = 0,
-									["Boopa-Venoxis"] = 0,
-									["Grr <Memoria-Auberdine>"] = 0,
 									["Altarpain-MirageRaceway"] = 0,
+									["Bopshop-Ashbringer"] = 0,
+									["Fatsnack-Mandokir"] = 1304,
+									["Maivi-Giantstalker"] = 0,
+									["Boopa-Venoxis"] = 0,
+									["Purpplehaze-Auberdine"] = 0,
+									["Grr <Memoria-Auberdine>"] = 0,
+									["Memoria-Auberdine"] = 0,
 								},
 								["n_dmg"] = 1805,
 								["n_min"] = 0,
@@ -80258,14 +70640,14 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Calmyboy-MirageRaceway"] = 0,
-									["Fatsnack-Mandokir"] = 0,
-									["Purpplehaze-Auberdine"] = 0,
-									["Memoria-Auberdine"] = 0,
-									["Maivi-Giantstalker"] = 0,
-									["Bopshop-Ashbringer"] = 0,
-									["Boopa-Venoxis"] = 0,
-									["Grr <Memoria-Auberdine>"] = 0,
 									["Altarpain-MirageRaceway"] = 0,
+									["Bopshop-Ashbringer"] = 0,
+									["Fatsnack-Mandokir"] = 0,
+									["Maivi-Giantstalker"] = 0,
+									["Boopa-Venoxis"] = 0,
+									["Purpplehaze-Auberdine"] = 0,
+									["Grr <Memoria-Auberdine>"] = 0,
+									["Memoria-Auberdine"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -80374,13 +70756,13 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 530,
 								["targets"] = {
-									["Boopa-Venoxis"] = 0,
+									["Bopshop-Ashbringer"] = 0,
 									["Memoria-Auberdine"] = 0,
 									["Maivi-Giantstalker"] = 0,
 									["Calmyboy-MirageRaceway"] = 530,
-									["Purpplehaze-Auberdine"] = 0,
+									["Boopa-Venoxis"] = 0,
 									["Grr <Memoria-Auberdine>"] = 0,
-									["Bopshop-Ashbringer"] = 0,
+									["Purpplehaze-Auberdine"] = 0,
 								},
 								["n_dmg"] = 530,
 								["n_min"] = 0,
@@ -80593,12 +70975,12 @@ _detalhes_database = {
 								["n_max"] = 349,
 								["targets"] = {
 									["Hathgarth <Unknown>"] = 0,
-									["Boopa-Venoxis"] = 0,
+									["Purpplehaze-Auberdine"] = 0,
 									["Maivi-Giantstalker"] = 0,
 									["Calmyboy-MirageRaceway"] = 349,
-									["Hathgarth <Purpplehaze-Auberdine>"] = 0,
 									["Bopshop-Ashbringer"] = 0,
-									["Purpplehaze-Auberdine"] = 0,
+									["Hathgarth <Purpplehaze-Auberdine>"] = 0,
+									["Boopa-Venoxis"] = 0,
 								},
 								["n_dmg"] = 349,
 								["n_min"] = 0,
@@ -81035,12 +71417,12 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Memoria-Auberdine"] = 0,
-									["Boopa-Venoxis"] = 0,
+									["Purpplehaze-Auberdine"] = 0,
 									["Fatsnack-Mandokir"] = 0,
 									["Maivi-Giantstalker"] = 0,
 									["Calmyboy-MirageRaceway"] = 0,
+									["Boopa-Venoxis"] = 0,
 									["Bopshop-Ashbringer"] = 0,
-									["Purpplehaze-Auberdine"] = 0,
 									["Infernal"] = 0,
 								},
 								["n_dmg"] = 0,
@@ -81653,9 +72035,9 @@ _detalhes_database = {
 						["Сварт-Пламегор"] = true,
 					},
 					["targets"] = {
-						["Ishotmyknee-MirageRaceway"] = 0,
 						["Jtf-Mograine"] = 0,
 						["Expert's Training Dummy"] = 0,
+						["Ishotmyknee-MirageRaceway"] = 0,
 						["Bob"] = 0,
 					},
 					["pets"] = {
@@ -81682,9 +72064,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Ishotmyknee-MirageRaceway"] = 0,
 									["Jtf-Mograine"] = 0,
 									["Expert's Training Dummy"] = 0,
+									["Ishotmyknee-MirageRaceway"] = 0,
 									["Bob"] = 0,
 								},
 								["n_dmg"] = 0,
@@ -81766,9 +72148,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Ishotmyknee-MirageRaceway"] = 0,
 									["Jtf-Mograine"] = 0,
 									["Expert's Training Dummy"] = 0,
+									["Ishotmyknee-MirageRaceway"] = 0,
 									["Bob"] = 0,
 								},
 								["n_dmg"] = 0,
@@ -82267,12 +72649,12 @@ _detalhes_database = {
 						["Warmønger"] = 0,
 						["Elantari-Auberdine"] = 0,
 						["Gajus"] = 0,
-						["Шерифдуфи-Пламегор"] = 0,
+						["Peanutcookie"] = 0,
 						["Geja"] = 0,
 						["Gramsnnoses"] = 0,
 						["Purpplehaze-Auberdine"] = 0,
 						["Pêloni"] = 0,
-						["Peanutcookie"] = 0,
+						["Altarpain-MirageRaceway"] = 0,
 						["Niêllus"] = 0,
 						["Megashrimp"] = 0,
 						["Punkter"] = 0,
@@ -82283,7 +72665,7 @@ _detalhes_database = {
 						["Rhaenyrà"] = 0,
 						["Deatherocc"] = 0,
 						["Кейналай-Пламегор"] = 0,
-						["Altarpain-MirageRaceway"] = 0,
+						["Шерифдуфи-Пламегор"] = 0,
 						["Сварт-Пламегор"] = 0,
 						["Lilboom"] = 0,
 						["Bopshop-Ashbringer"] = 0,
@@ -82293,17 +72675,16 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["damage_taken"] = 0.013156,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
 					["aID"] = "",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 739.013156,
 					["classe"] = "UNKNOW",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["total"] = 739.013156,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.013156,
 					["tipo"] = 1,
 					["nome"] = "Environment (Falling)",
 					["spells"] = {
@@ -82340,12 +72721,12 @@ _detalhes_database = {
 									["Warmønger"] = 0,
 									["Elantari-Auberdine"] = 0,
 									["Gajus"] = 0,
-									["Шерифдуфи-Пламегор"] = 0,
+									["Peanutcookie"] = 0,
 									["Geja"] = 0,
 									["Gramsnnoses"] = 0,
 									["Purpplehaze-Auberdine"] = 0,
 									["Pêloni"] = 0,
-									["Peanutcookie"] = 0,
+									["Altarpain-MirageRaceway"] = 0,
 									["Niêllus"] = 0,
 									["Megashrimp"] = 0,
 									["Punkter"] = 0,
@@ -82356,7 +72737,7 @@ _detalhes_database = {
 									["Rhaenyrà"] = 0,
 									["Deatherocc"] = 0,
 									["Кейналай-Пламегор"] = 0,
-									["Altarpain-MirageRaceway"] = 0,
+									["Шерифдуфи-Пламегор"] = 0,
 									["Сварт-Пламегор"] = 0,
 									["Lilboom"] = 0,
 									["Bopshop-Ashbringer"] = 0,
@@ -82384,12 +72765,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["dps_started"] = false,
-					["end_time"] = 1667249512,
 					["on_hold"] = false,
+					["end_time"] = 1667249512,
+					["fight_component"] = true,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1667249508,
 					["serial"] = "",
 					["pvp"] = true,
@@ -82504,9 +72886,9 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Коббал-Пламегор"] = 0,
+									["Макнаке"] = 0,
 									["Шерифдуфи-Пламегор"] = 0,
 									["Белтико"] = 0,
-									["Макнаке"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -82863,17 +73245,16 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["damage_taken"] = 3300.008013,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
 					["aID"] = "Pet-0-4468-489-4518-25675-0A0076B350",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 448.008013,
 					["classe"] = "PET",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["total"] = 448.008013,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 3300.008013,
 					["tipo"] = 1,
 					["nome"] = "Grr <Memoria-Auberdine>",
 					["spells"] = {
@@ -82974,12 +73355,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["dps_started"] = false,
-					["end_time"] = 1667249512,
 					["on_hold"] = false,
+					["end_time"] = 1667249512,
+					["fight_component"] = true,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1667249507,
 					["serial"] = "Pet-0-4468-489-4518-25675-0A0076B350",
 					["pvp"] = true,
@@ -84310,10 +74692,10 @@ _detalhes_database = {
 						["Grr <Memoria-Auberdine>"] = 0,
 						["Boopa-Venoxis"] = 0,
 						["Дарелос-Пламегор"] = 0,
-						["Fatsnack-Mandokir"] = 0,
-						["Memoria-Auberdine"] = 0,
-						["Maivi-Giantstalker"] = 0,
 						["Шерифдуфи-Пламегор"] = 0,
+						["Fatsnack-Mandokir"] = 0,
+						["Maivi-Giantstalker"] = 0,
+						["Memoria-Auberdine"] = 0,
 						["Bopshop-Ashbringer"] = 0,
 						["Макнаке"] = 0,
 						["Purpplehaze-Auberdine"] = 0,
@@ -85170,14 +75552,14 @@ _detalhes_database = {
 					},
 					["targets"] = {
 						["Calmyboy-MirageRaceway"] = 0,
-						["Memoria-Auberdine"] = 0,
-						["Boopa-Venoxis"] = 0,
-						["Fatsnack-Mandokir"] = 1439,
-						["Maivi-Giantstalker"] = 0,
-						["Purpplehaze-Auberdine"] = 0,
-						["Bopshop-Ashbringer"] = 0,
-						["Grr <Memoria-Auberdine>"] = 0,
 						["Moolatz"] = 0,
+						["Purpplehaze-Auberdine"] = 0,
+						["Memoria-Auberdine"] = 0,
+						["Maivi-Giantstalker"] = 0,
+						["Bopshop-Ashbringer"] = 0,
+						["Boopa-Venoxis"] = 0,
+						["Grr <Memoria-Auberdine>"] = 0,
+						["Fatsnack-Mandokir"] = 1439,
 					},
 					["pets"] = {
 					},
@@ -86874,7 +77256,8 @@ _detalhes_database = {
 					["serial"] = "Player-4742-03A8E3B9",
 					["pets"] = {
 					},
-					["damage_taken"] = 0.007077,
+					["friendlyfire"] = {
+					},
 					["friendlyfire_total"] = 0,
 					["aID"] = "4742-03A8E3B9",
 					["raid_targets"] = {
@@ -86883,8 +77266,7 @@ _detalhes_database = {
 					["end_time"] = 1667476930,
 					["dps_started"] = false,
 					["total"] = 0.007077,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["last_event"] = 0,
 					["nome"] = "Bopshop-Ashbringer",
 					["spells"] = {
@@ -86978,7 +77360,7 @@ _detalhes_database = {
 					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["on_hold"] = false,
+					["damage_taken"] = 0.007077,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
 					["pvp"] = true,
@@ -86989,14 +77371,14 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
+						["Altarpain-MirageRaceway"] = 0,
+						["Infernal <Purpplehaze-Auberdine>"] = 0,
 						["Memoria-Auberdine"] = 0,
-						["Bopshop-Ashbringer"] = 0,
-						["Airforceone-MirageRaceway"] = 0,
 						["Maivi-Giantstalker"] = 0,
 						["Calmyboy-MirageRaceway"] = 0,
+						["Bopshop-Ashbringer"] = 0,
 						["Boopa-Venoxis"] = 0,
-						["Infernal <Purpplehaze-Auberdine>"] = 0,
-						["Altarpain-MirageRaceway"] = 0,
+						["Airforceone-MirageRaceway"] = 0,
 					},
 					["enemy"] = true,
 					["pets"] = {
@@ -87640,7 +78022,8 @@ _detalhes_database = {
 					["serial"] = "Pet-0-4468-489-4518-1860-020049119C",
 					["pets"] = {
 					},
-					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["aID"] = "Pet-0-4468-489-4518-1860-020049119C",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
@@ -87649,7 +78032,7 @@ _detalhes_database = {
 					["classe"] = "PET",
 					["dps_started"] = false,
 					["end_time"] = 1667476930,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["last_event"] = 0,
 					["nome"] = "Hathgarth <Purpplehaze-Auberdine>",
 					["spells"] = {
@@ -87714,13 +78097,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["fight_component"] = true,
 					["total"] = 0.006191,
-					["damage_taken"] = 0.006191,
+					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.006191,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
 					["pvp"] = true,
@@ -87739,7 +78121,8 @@ _detalhes_database = {
 					["serial"] = "Pet-0-4468-489-4518-1860-0400751FD7",
 					["pets"] = {
 					},
-					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["aID"] = "Pet-0-4468-489-4518-1860-0400751FD7",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
@@ -87748,7 +78131,7 @@ _detalhes_database = {
 					["classe"] = "PET",
 					["dps_started"] = false,
 					["end_time"] = 1667476930,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["last_event"] = 0,
 					["nome"] = "Белтико",
 					["spells"] = {
@@ -87838,13 +78221,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["fight_component"] = true,
 					["total"] = 0.001006,
-					["damage_taken"] = 0.001006,
+					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.001006,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
 					["pvp"] = true,
@@ -87861,20 +78243,19 @@ _detalhes_database = {
 						["Infernal <Purpplehaze-Auberdine>"] = 0,
 						["Memoria-Auberdine"] = 0,
 						["Boopa-Venoxis"] = 0,
+						["Altarpain-MirageRaceway"] = 0,
 						["Fatsnack-Mandokir"] = 0,
-						["Moolatz"] = 0,
 						["Maivi-Giantstalker"] = 0,
 						["Risen Ghoul <Calmyboy-MirageRaceway>"] = 0,
 						["Bopshop-Ashbringer"] = 0,
 						["Grr <Memoria-Auberdine>"] = 0,
-						["Altarpain-MirageRaceway"] = 0,
+						["Moolatz"] = 0,
 					},
 					["enemy"] = true,
 					["pets"] = {
 					},
 					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["classe"] = "UNGROUPPLAYER",
 					["raid_targets"] = {
 					},
@@ -87883,7 +78264,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["end_time"] = 1667476930,
 					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
+					["damage_taken"] = 0.001607,
 					["nome"] = "Коббал-Пламегор",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -87896,13 +78277,13 @@ _detalhes_database = {
 								["targets"] = {
 									["Airforceone-MirageRaceway"] = 0,
 									["Calmyboy-MirageRaceway"] = 0,
+									["Altarpain-MirageRaceway"] = 0,
 									["Fatsnack-Mandokir"] = 0,
-									["Memoria-Auberdine"] = 0,
 									["Maivi-Giantstalker"] = 0,
 									["Boopa-Venoxis"] = 0,
 									["Bopshop-Ashbringer"] = 0,
 									["Moolatz"] = 0,
-									["Altarpain-MirageRaceway"] = 0,
+									["Memoria-Auberdine"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -88568,13 +78949,13 @@ _detalhes_database = {
 								["targets"] = {
 									["Airforceone-MirageRaceway"] = 0,
 									["Calmyboy-MirageRaceway"] = 0,
+									["Altarpain-MirageRaceway"] = 0,
 									["Fatsnack-Mandokir"] = 0,
-									["Memoria-Auberdine"] = 0,
 									["Maivi-Giantstalker"] = 0,
 									["Boopa-Venoxis"] = 0,
 									["Bopshop-Ashbringer"] = 0,
 									["Moolatz"] = 0,
-									["Altarpain-MirageRaceway"] = 0,
+									["Memoria-Auberdine"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -88979,10 +79360,11 @@ _detalhes_database = {
 					["total"] = 0.001607,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.001607,
+					["on_hold"] = false,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 				}, -- [22]
 				{
 					["flag_original"] = 1352,
@@ -88990,14 +79372,14 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Airforceone-MirageRaceway"] = 0,
+						["Fatsnack-Mandokir"] = 0,
 						["Boopa-Venoxis"] = 0,
-						["Memoria-Auberdine"] = 0,
+						["Airforceone-MirageRaceway"] = 0,
 						["Maivi-Giantstalker"] = 0,
 						["Calmyboy-MirageRaceway"] = 0,
 						["Bopshop-Ashbringer"] = 0,
 						["Horde Battle Standard"] = 0,
-						["Fatsnack-Mandokir"] = 0,
+						["Memoria-Auberdine"] = 0,
 					},
 					["enemy"] = true,
 					["pets"] = {
@@ -89080,13 +79462,13 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Fatsnack-Mandokir"] = 0,
 									["Airforceone-MirageRaceway"] = 0,
-									["Memoria-Auberdine"] = 0,
 									["Maivi-Giantstalker"] = 0,
 									["Calmyboy-MirageRaceway"] = 0,
 									["Bopshop-Ashbringer"] = 0,
 									["Boopa-Venoxis"] = 0,
-									["Fatsnack-Mandokir"] = 0,
+									["Memoria-Auberdine"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -89191,13 +79573,13 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Fatsnack-Mandokir"] = 0,
 									["Airforceone-MirageRaceway"] = 0,
-									["Memoria-Auberdine"] = 0,
 									["Maivi-Giantstalker"] = 0,
 									["Calmyboy-MirageRaceway"] = 0,
 									["Bopshop-Ashbringer"] = 0,
 									["Boopa-Venoxis"] = 0,
-									["Fatsnack-Mandokir"] = 0,
+									["Memoria-Auberdine"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -89251,13 +79633,13 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Fatsnack-Mandokir"] = 0,
 									["Airforceone-MirageRaceway"] = 0,
-									["Memoria-Auberdine"] = 0,
 									["Maivi-Giantstalker"] = 0,
 									["Calmyboy-MirageRaceway"] = 0,
 									["Bopshop-Ashbringer"] = 0,
 									["Boopa-Venoxis"] = 0,
-									["Fatsnack-Mandokir"] = 0,
+									["Memoria-Auberdine"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -89521,6 +79903,37 @@ _detalhes_database = {
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
+							[75] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Memoria-Auberdine"] = 0,
+									["Maivi-Giantstalker"] = 0,
+									["Calmyboy-MirageRaceway"] = 0,
+									["Boopa-Venoxis"] = 0,
+									["Bopshop-Ashbringer"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 75,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
 							[19506] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -89569,37 +79982,6 @@ _detalhes_database = {
 								["total"] = 0,
 								["c_max"] = 0,
 								["id"] = 53209,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[75] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Memoria-Auberdine"] = 0,
-									["Maivi-Giantstalker"] = 0,
-									["Calmyboy-MirageRaceway"] = 0,
-									["Boopa-Venoxis"] = 0,
-									["Bopshop-Ashbringer"] = 0,
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 75,
 								["r_dmg"] = 0,
 								["extra"] = {
 								},
@@ -89721,7 +80103,7 @@ _detalhes_database = {
 					["serial"] = "Creature-0-4468-489-4518-510-0000603468",
 					["pets"] = {
 					},
-					["fight_component"] = true,
+					["on_hold"] = false,
 					["aID"] = "510",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
@@ -89730,7 +80112,8 @@ _detalhes_database = {
 					["classe"] = "PET",
 					["dps_started"] = false,
 					["total"] = 0.003937,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["last_event"] = 0,
 					["nome"] = "Water Elemental <Maivi-Giantstalker>",
 					["spells"] = {
@@ -89768,13 +80151,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["fight_component"] = true,
 					["end_time"] = 1667476930,
-					["damage_taken"] = 0.003937,
+					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["on_hold"] = false,
+					["damage_taken"] = 0.003937,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
 					["pvp"] = true,
@@ -89790,7 +80172,7 @@ _detalhes_database = {
 					["serial"] = "Creature-0-4468-489-4518-19668-000060341B",
 					["pets"] = {
 					},
-					["fight_component"] = true,
+					["on_hold"] = false,
 					["aID"] = "19668",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
@@ -89799,7 +80181,8 @@ _detalhes_database = {
 					["classe"] = "PET",
 					["dps_started"] = false,
 					["total"] = 0.002662,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["last_event"] = 0,
 					["nome"] = "Shadowfiend <Молимся-Пламегор>",
 					["spells"] = {
@@ -89860,13 +80243,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["fight_component"] = true,
 					["end_time"] = 1667476930,
-					["damage_taken"] = 0.002662,
+					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["on_hold"] = false,
+					["damage_taken"] = 0.002662,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
 					["pvp"] = true,
@@ -89883,7 +80265,8 @@ _detalhes_database = {
 					["serial"] = "Pet-0-4468-489-4518-1860-010057EDD8",
 					["pets"] = {
 					},
-					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["aID"] = "Pet-0-4468-489-4518-1860-010057EDD8",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
@@ -89892,7 +80275,7 @@ _detalhes_database = {
 					["classe"] = "PET",
 					["dps_started"] = false,
 					["end_time"] = 1667476930,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["last_event"] = 0,
 					["nome"] = "Макнаке <Дарелос-Пламегор>",
 					["spells"] = {
@@ -89980,13 +80363,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["fight_component"] = true,
 					["total"] = 0.001008,
-					["damage_taken"] = 0.001008,
+					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.001008,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
 					["pvp"] = true,
@@ -90003,7 +80385,7 @@ _detalhes_database = {
 					["serial"] = "Creature-0-4468-489-4518-26125-0000603416",
 					["pets"] = {
 					},
-					["fight_component"] = true,
+					["on_hold"] = false,
 					["aID"] = "26125",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
@@ -90012,7 +80394,8 @@ _detalhes_database = {
 					["classe"] = "PET",
 					["dps_started"] = false,
 					["total"] = 0.005303,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["last_event"] = 0,
 					["nome"] = "Risen Ghoul <Calmyboy-MirageRaceway>",
 					["spells"] = {
@@ -90048,13 +80431,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["fight_component"] = true,
 					["end_time"] = 1667476930,
-					["damage_taken"] = 0.005303,
+					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["on_hold"] = false,
+					["damage_taken"] = 0.005303,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
 					["pvp"] = true,
@@ -90071,8 +80453,7 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["classe"] = "PET",
 					["raid_targets"] = {
 					},
@@ -90081,7 +80462,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["end_time"] = 1667476930,
 					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
+					["damage_taken"] = 0.007328,
 					["nome"] = "Паук",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -90149,10 +80530,11 @@ _detalhes_database = {
 					["total"] = 0.007328,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.007328,
+					["on_hold"] = false,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 				}, -- [28]
 				{
 					["flag_original"] = 1300,
@@ -90486,7 +80868,8 @@ _detalhes_database = {
 					["serial"] = "Player-4441-027C4C2D",
 					["pets"] = {
 					},
-					["damage_taken"] = 0.002657,
+					["friendlyfire"] = {
+					},
 					["friendlyfire_total"] = 0,
 					["aID"] = "4441-027C4C2D",
 					["raid_targets"] = {
@@ -90495,8 +80878,7 @@ _detalhes_database = {
 					["end_time"] = 1667476930,
 					["dps_started"] = false,
 					["total"] = 0.002657,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["last_event"] = 0,
 					["nome"] = "Unknown",
 					["spells"] = {
@@ -90509,7 +80891,7 @@ _detalhes_database = {
 					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["on_hold"] = false,
+					["damage_taken"] = 0.002657,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
 					["pvp"] = true,
@@ -90525,7 +80907,8 @@ _detalhes_database = {
 					["serial"] = "Pet-0-4468-489-4518-1860-010049119C",
 					["pets"] = {
 					},
-					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["aID"] = "Pet-0-4468-489-4518-1860-010049119C",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
@@ -90534,7 +80917,7 @@ _detalhes_database = {
 					["classe"] = "PET",
 					["dps_started"] = false,
 					["end_time"] = 1667476930,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["last_event"] = 0,
 					["nome"] = "Hathgarth <Unknown>",
 					["spells"] = {
@@ -90569,13 +80952,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["fight_component"] = true,
 					["total"] = 0.001752,
-					["damage_taken"] = 0.001752,
+					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.001752,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
 					["pvp"] = true,
@@ -90591,7 +80973,8 @@ _detalhes_database = {
 					["serial"] = "Pet-0-4445-571-473-25675-020076B350",
 					["pets"] = {
 					},
-					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["aID"] = "Pet-0-4445-571-473-25675-020076B350",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
@@ -90600,7 +80983,7 @@ _detalhes_database = {
 					["classe"] = "PET",
 					["dps_started"] = false,
 					["end_time"] = 1667476930,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["last_event"] = 0,
 					["nome"] = "Grr <Unknown>",
 					["spells"] = {
@@ -90662,13 +81045,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["fight_component"] = true,
 					["total"] = 0.006073,
-					["damage_taken"] = 0.006073,
+					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.006073,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
 					["pvp"] = true,
@@ -90684,7 +81066,8 @@ _detalhes_database = {
 					["serial"] = "Pet-0-4445-571-473-25675-020076B350",
 					["pets"] = {
 					},
-					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["aID"] = "Pet-0-4445-571-473-25675-020076B350",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
@@ -90693,7 +81076,7 @@ _detalhes_database = {
 					["classe"] = "PET",
 					["dps_started"] = false,
 					["end_time"] = 1667476930,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["last_event"] = 0,
 					["nome"] = "Grr",
 					["spells"] = {
@@ -90728,13 +81111,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["fight_component"] = true,
 					["total"] = 0.004301,
-					["damage_taken"] = 0.004301,
+					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.004301,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
 					["pvp"] = true,
@@ -90749,7 +81131,7 @@ _detalhes_database = {
 					["serial"] = "Creature-0-4468-489-4518-14466-000060329C",
 					["pets"] = {
 					},
-					["fight_component"] = true,
+					["on_hold"] = false,
 					["aID"] = "14466",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
@@ -90758,7 +81140,8 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["dps_started"] = false,
 					["total"] = 0.00628,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["last_event"] = 0,
 					["nome"] = "Horde Battle Standard",
 					["spells"] = {
@@ -90766,13 +81149,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["fight_component"] = true,
 					["end_time"] = 1667476930,
-					["damage_taken"] = 0.00628,
+					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["on_hold"] = false,
+					["damage_taken"] = 0.00628,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
 					["pvp"] = true,
@@ -90795,7 +81177,7 @@ _detalhes_database = {
 					["serial"] = "Creature-0-4468-489-4518-89-00006032F1",
 					["pets"] = {
 					},
-					["fight_component"] = true,
+					["on_hold"] = false,
 					["aID"] = "89",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
@@ -90804,7 +81186,8 @@ _detalhes_database = {
 					["classe"] = "PET",
 					["dps_started"] = false,
 					["total"] = 0.001311,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["last_event"] = 0,
 					["nome"] = "Infernal <Purpplehaze-Auberdine>",
 					["spells"] = {
@@ -90875,13 +81258,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["fight_component"] = true,
 					["end_time"] = 1667476930,
-					["damage_taken"] = 0.001311,
+					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["on_hold"] = false,
+					["damage_taken"] = 0.001311,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
 					["pvp"] = true,
@@ -95290,7 +85672,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008383,
-					["damage_taken"] = 0.008383,
+					["on_hold"] = false,
 					["classe"] = "DEATHKNIGHT",
 					["dps_started"] = false,
 					["end_time"] = 1667476930,
@@ -95864,13 +86246,13 @@ _detalhes_database = {
 						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["last_event"] = 0,
 					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.008383,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
 					["pvp"] = true,
@@ -95892,7 +86274,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007866,
-					["damage_taken"] = 0.007866,
+					["on_hold"] = false,
 					["classe"] = "DRUID",
 					["dps_started"] = false,
 					["end_time"] = 1667476930,
@@ -95929,7 +86311,7 @@ _detalhes_database = {
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							}, -- [1]
-							[33983] = {
+							[27008] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
@@ -95937,7 +86319,6 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Boraborabora-Jin'do"] = 0,
-									["Nemesis-Gehennas"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -95945,7 +86326,7 @@ _detalhes_database = {
 								["counter"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = 33983,
+								["id"] = 27008,
 								["r_dmg"] = 0,
 								["extra"] = {
 								},
@@ -96009,13 +86390,15 @@ _detalhes_database = {
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
-							[9846] = {
+							[33983] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Boraborabora-Jin'do"] = 0,
+									["Nemesis-Gehennas"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -96023,7 +86406,7 @@ _detalhes_database = {
 								["counter"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = 9846,
+								["id"] = 33983,
 								["r_dmg"] = 0,
 								["extra"] = {
 								},
@@ -96324,14 +86707,13 @@ _detalhes_database = {
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
-							[27008] = {
+							[9846] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Boraborabora-Jin'do"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -96339,7 +86721,7 @@ _detalhes_database = {
 								["counter"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = 27008,
+								["id"] = 9846,
 								["r_dmg"] = 0,
 								["extra"] = {
 								},
@@ -96355,13 +86737,13 @@ _detalhes_database = {
 						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["last_event"] = 0,
 					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.007866,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
 					["pvp"] = true,
@@ -96379,7 +86761,8 @@ _detalhes_database = {
 					["serial"] = "Pet-0-4457-489-13573-17199-02006340FD",
 					["pets"] = {
 					},
-					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["aID"] = "Pet-0-4457-489-13573-17199-02006340FD",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
@@ -96388,7 +86771,7 @@ _detalhes_database = {
 					["classe"] = "PET",
 					["dps_started"] = false,
 					["end_time"] = 1667476930,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["last_event"] = 0,
 					["nome"] = "Bob",
 					["spells"] = {
@@ -96454,13 +86837,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["fight_component"] = true,
 					["total"] = 0.003713,
-					["damage_taken"] = 0.003713,
+					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.003713,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
 					["pvp"] = true,
@@ -96477,7 +86859,8 @@ _detalhes_database = {
 					["serial"] = "Pet-0-4457-489-13573-417-040076D689",
 					["pets"] = {
 					},
-					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["aID"] = "Pet-0-4457-489-13573-417-040076D689",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
@@ -96486,7 +86869,7 @@ _detalhes_database = {
 					["classe"] = "PET",
 					["dps_started"] = false,
 					["end_time"] = 1667476930,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["last_event"] = 0,
 					["nome"] = "Khaaroon <Brynte-Ashbringer>",
 					["spells"] = {
@@ -96576,13 +86959,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["fight_component"] = true,
 					["total"] = 0.00274,
-					["damage_taken"] = 0.00274,
+					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.00274,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
 					["pvp"] = true,
@@ -96598,7 +86980,8 @@ _detalhes_database = {
 					["serial"] = "Pet-0-4457-489-13573-178449-070076F6C5",
 					["pets"] = {
 					},
-					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["aID"] = "Pet-0-4457-489-13573-178449-070076F6C5",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
@@ -96607,7 +86990,7 @@ _detalhes_database = {
 					["classe"] = "PET",
 					["dps_started"] = false,
 					["end_time"] = 1667476930,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["last_event"] = 0,
 					["nome"] = "Murry <Kaniballen-Mograine>",
 					["spells"] = {
@@ -96643,13 +87026,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["fight_component"] = true,
 					["total"] = 0.002766,
-					["damage_taken"] = 0.002766,
+					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.002766,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
 					["pvp"] = true,
@@ -97466,7 +87848,7 @@ _detalhes_database = {
 					["serial"] = "Creature-0-4457-489-13573-27893-00005E4ABD",
 					["pets"] = {
 					},
-					["fight_component"] = true,
+					["on_hold"] = false,
 					["aID"] = "27893",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
@@ -97475,7 +87857,8 @@ _detalhes_database = {
 					["classe"] = "PET",
 					["dps_started"] = false,
 					["total"] = 0.002218,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["last_event"] = 0,
 					["nome"] = "Rune Weapon <Gigabitsall-PyrewoodVillage>",
 					["spells"] = {
@@ -97508,7 +87891,7 @@ _detalhes_database = {
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							}, -- [1]
-							[55260] = {
+							[55078] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
@@ -97523,7 +87906,7 @@ _detalhes_database = {
 								["counter"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = 55260,
+								["id"] = 55078,
 								["r_dmg"] = 0,
 								["extra"] = {
 								},
@@ -97589,7 +87972,7 @@ _detalhes_database = {
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
-							[62036] = {
+							[55260] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
@@ -97604,7 +87987,7 @@ _detalhes_database = {
 								["counter"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = 62036,
+								["id"] = 55260,
 								["r_dmg"] = 0,
 								["extra"] = {
 								},
@@ -97643,7 +88026,7 @@ _detalhes_database = {
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
-							[55078] = {
+							[62036] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
@@ -97658,7 +88041,7 @@ _detalhes_database = {
 								["counter"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = 55078,
+								["id"] = 62036,
 								["r_dmg"] = 0,
 								["extra"] = {
 								},
@@ -97673,13 +88056,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["fight_component"] = true,
 					["end_time"] = 1667476930,
-					["damage_taken"] = 0.002218,
+					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["on_hold"] = false,
+					["damage_taken"] = 0.002218,
 					["start_time"] = 1667476927,
 					["delay"] = 0,
 					["pvp"] = true,
@@ -97694,7 +88076,7 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["aID"] = "32666",
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
@@ -97703,7 +88085,8 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1667643216,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.008524,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Expert's Training Dummy",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -97715,11 +88098,10 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.008524,
 					["start_time"] = 1667643213,
 					["delay"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 				}, -- [58]
 				{
 					["flag_original"] = 4424,
@@ -97735,7 +88117,8 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["fight_component"] = true,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["classe"] = "PET",
 					["raid_targets"] = {
 					},
@@ -97744,7 +88127,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["end_time"] = 1667643216,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.004935,
+					["on_hold"] = false,
 					["nome"] = "Макнаке",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -97840,11 +88223,10 @@ _detalhes_database = {
 					["total"] = 0.004935,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["on_hold"] = false,
+					["damage_taken"] = 0.004935,
 					["start_time"] = 1667643213,
 					["delay"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 				}, -- [59]
 			},
 		}, -- [1]
@@ -97918,9 +88300,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[75999] = {
@@ -97943,9 +88325,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 158,
+								["n_amt"] = 0,
 								["n_curado"] = 0,
 								["totaldenied"] = 0,
-								["n_amt"] = 0,
 								["absorbed"] = 0,
 							},
 							[48065] = {
@@ -97968,9 +88350,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[48067] = {
@@ -97993,9 +88375,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[33110] = {
@@ -98021,9 +88403,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[15290] = {
@@ -98057,9 +88439,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_amt"] = 5,
 								["n_curado"] = 0,
 								["totaldenied"] = 0,
-								["n_amt"] = 5,
 								["absorbed"] = 0,
 							},
 						},
@@ -98129,9 +88511,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[27128] = {
@@ -98154,9 +88536,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -98258,9 +88640,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[26979] = {
@@ -98283,9 +88665,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[26980] = {
@@ -98326,9 +88708,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_amt"] = 1,
 								["n_curado"] = 0,
 								["totaldenied"] = 0,
-								["n_amt"] = 1,
 								["absorbed"] = 0,
 							},
 							[26982] = {
@@ -98370,9 +88752,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_amt"] = 1,
 								["n_curado"] = 0,
 								["totaldenied"] = 0,
-								["n_amt"] = 1,
 								["absorbed"] = 0,
 							},
 							[18562] = {
@@ -98399,9 +88781,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -98482,9 +88864,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[63106] = {
@@ -98507,9 +88889,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[27220] = {
@@ -98531,9 +88913,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[27235] = {
@@ -98556,9 +88938,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[28189] = {
@@ -98581,9 +88963,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[28610] = {
@@ -98606,9 +88988,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -98683,9 +89065,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[54181] = {
@@ -98711,9 +89093,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[47860] = {
@@ -98736,9 +89118,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[47893] = {
@@ -98761,9 +89143,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_amt"] = 4,
 								["n_curado"] = 1179,
 								["totaldenied"] = 0,
-								["n_amt"] = 4,
 								["absorbed"] = 0,
 							},
 						},
@@ -98840,9 +89222,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[33778] = {
@@ -98867,9 +89249,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[26981] = {
@@ -98899,9 +89281,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_amt"] = 1,
 								["n_curado"] = 210,
 								["totaldenied"] = 0,
-								["n_amt"] = 1,
 								["absorbed"] = 0,
 							},
 							[33763] = {
@@ -98926,9 +89308,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[34299] = {
@@ -98951,9 +89333,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[26980] = {
@@ -98964,10 +89346,10 @@ _detalhes_database = {
 								},
 								["n_max"] = 1214,
 								["targets"] = {
-									["Boopa-Venoxis"] = 0,
-									["Bopshop-Ashbringer"] = 0,
-									["Moolatz"] = 1214,
 									["Purpplehaze-Auberdine"] = 0,
+									["Boopa-Venoxis"] = 0,
+									["Moolatz"] = 1214,
+									["Bopshop-Ashbringer"] = 0,
 								},
 								["n_min"] = 0,
 								["counter"] = 1,
@@ -98979,9 +89361,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_amt"] = 1,
 								["n_curado"] = 1214,
 								["totaldenied"] = 0,
-								["n_amt"] = 1,
 								["absorbed"] = 0,
 							},
 						},
@@ -99054,9 +89436,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_amt"] = 1,
 								["n_curado"] = 1505,
 								["totaldenied"] = 0,
-								["n_amt"] = 1,
 								["absorbed"] = 0,
 							},
 							[47986] = {
@@ -99079,9 +89461,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -99151,9 +89533,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[48707] = {
@@ -99176,9 +89558,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[48982] = {
@@ -99200,9 +89582,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[45470] = {
@@ -99224,9 +89606,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[49497] = {
@@ -99249,9 +89631,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[53365] = {
@@ -99274,9 +89656,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[52286] = {
@@ -99299,9 +89681,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_amt"] = 5,
 								["n_curado"] = 291,
 								["totaldenied"] = 0,
-								["n_amt"] = 5,
 								["absorbed"] = 0,
 							},
 						},
@@ -99340,14 +89722,14 @@ _detalhes_database = {
 					["totalabsorb"] = 0.009944999999999999,
 					["last_hps"] = 0,
 					["targets"] = {
+						["Memoria-Auberdine"] = 0,
+						["Bopshop-Ashbringer"] = 0,
 						["Fatsnack-Mandokir"] = 0,
-						["Boopa-Venoxis"] = 0,
-						["Airforceone-MirageRaceway"] = 0,
 						["Maivi-Giantstalker"] = 0,
 						["Calmyboy-MirageRaceway"] = 0,
+						["Boopa-Venoxis"] = 0,
 						["Purpplehaze-Auberdine"] = 0,
-						["Bopshop-Ashbringer"] = 0,
-						["Memoria-Auberdine"] = 0,
+						["Airforceone-MirageRaceway"] = 0,
 					},
 					["totalover_without_pet"] = 0.009944999999999999,
 					["healing_taken"] = 0.009944999999999999,
@@ -99376,9 +89758,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[27154] = {
@@ -99400,9 +89782,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_amt"] = 1,
 								["n_curado"] = 12732,
 								["totaldenied"] = 0,
-								["n_amt"] = 1,
 								["absorbed"] = 0,
 							},
 							[53653] = {
@@ -99425,9 +89807,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[53654] = {
@@ -99449,9 +89831,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[33074] = {
@@ -99465,14 +89847,14 @@ _detalhes_database = {
 								},
 								["n_max"] = 0,
 								["targets"] = {
+									["Memoria-Auberdine"] = 0,
+									["Boopa-Venoxis"] = 0,
 									["Airforceone-MirageRaceway"] = 0,
-									["Bopshop-Ashbringer"] = 0,
-									["Fatsnack-Mandokir"] = 0,
 									["Maivi-Giantstalker"] = 0,
 									["Calmyboy-MirageRaceway"] = 0,
+									["Bopshop-Ashbringer"] = 0,
 									["Purpplehaze-Auberdine"] = 0,
-									["Boopa-Venoxis"] = 0,
-									["Memoria-Auberdine"] = 0,
+									["Fatsnack-Mandokir"] = 0,
 								},
 								["n_min"] = 0,
 								["counter"] = 0,
@@ -99484,9 +89866,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[48784] = {
@@ -99499,14 +89881,14 @@ _detalhes_database = {
 								},
 								["n_max"] = 0,
 								["targets"] = {
+									["Memoria-Auberdine"] = 0,
+									["Bopshop-Ashbringer"] = 0,
 									["Fatsnack-Mandokir"] = 0,
-									["Boopa-Venoxis"] = 0,
-									["Airforceone-MirageRaceway"] = 0,
 									["Maivi-Giantstalker"] = 0,
 									["Calmyboy-MirageRaceway"] = 0,
+									["Boopa-Venoxis"] = 0,
 									["Purpplehaze-Auberdine"] = 0,
-									["Bopshop-Ashbringer"] = 0,
-									["Memoria-Auberdine"] = 0,
+									["Airforceone-MirageRaceway"] = 0,
 								},
 								["n_min"] = 0,
 								["counter"] = 0,
@@ -99518,9 +89900,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -99623,9 +90005,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[27154] = {
@@ -99648,9 +90030,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[53653] = {
@@ -99675,9 +90057,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[27235] = {
@@ -99699,9 +90081,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[27137] = {
@@ -99739,9 +90121,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[55502] = {
@@ -99763,9 +90145,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[53654] = {
@@ -99790,9 +90172,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -99860,9 +90242,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -99889,22 +90271,22 @@ _detalhes_database = {
 						["Grr <Memoria-Auberdine>"] = 0,
 						["Memoria-Auberdine"] = 0,
 					},
-					["heal_enemy_amt"] = 0,
+					["healing_taken"] = 0.00563,
 					["pets"] = {
 					},
 					["totalover_without_pet"] = 0.00563,
 					["targets_overheal"] = {
 						["Memoria-Auberdine"] = 0,
 					},
-					["classe"] = "HUNTER",
+					["heal_enemy_amt"] = 0,
 					["totalover"] = 0.00563,
 					["total_without_pet"] = 0.00563,
 					["iniciar_hps"] = false,
 					["start_time"] = 1667476927,
-					["healing_taken"] = 0.00563,
+					["aID"] = "4441-039BA4F5",
 					["end_time"] = 1667476930,
 					["total"] = 0.00563,
-					["aID"] = "4441-039BA4F5",
+					["classe"] = "HUNTER",
 					["nome"] = "Memoria-Auberdine",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -99928,9 +90310,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[55502] = {
@@ -99952,9 +90334,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -99967,11 +90349,11 @@ _detalhes_database = {
 					["targets_absorbs"] = {
 					},
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 2,
 					["on_hold"] = false,
 					["totaldenied"] = 0.00563,
 					["delay"] = 0,
-					["tipo"] = 2,
+					["last_event"] = 0,
 				}, -- [12]
 				{
 					["flag_original"] = 4372,
@@ -100021,9 +90403,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[34299] = {
@@ -100046,9 +90428,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -100118,9 +90500,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -100140,14 +90522,14 @@ _detalhes_database = {
 				{
 					["flag_original"] = 1300,
 					["targets_overheal"] = {
+						["Memoria-Auberdine"] = 0,
+						["Boopa-Venoxis"] = 0,
 						["Fatsnack-Mandokir"] = 0,
-						["Bopshop-Ashbringer"] = 0,
-						["Airforceone-MirageRaceway"] = 0,
 						["Maivi-Giantstalker"] = 0,
 						["Calmyboy-MirageRaceway"] = 0,
+						["Bopshop-Ashbringer"] = 0,
 						["Purpplehaze-Auberdine"] = 0,
-						["Boopa-Venoxis"] = 0,
-						["Memoria-Auberdine"] = 0,
+						["Airforceone-MirageRaceway"] = 0,
 					},
 					["pets"] = {
 					},
@@ -100165,14 +90547,14 @@ _detalhes_database = {
 					["totalabsorb"] = 0.002065,
 					["last_hps"] = 0,
 					["targets"] = {
+						["Memoria-Auberdine"] = 0,
+						["Boopa-Venoxis"] = 0,
 						["Airforceone-MirageRaceway"] = 0,
-						["Bopshop-Ashbringer"] = 0,
-						["Fatsnack-Mandokir"] = 0,
 						["Maivi-Giantstalker"] = 0,
 						["Calmyboy-MirageRaceway"] = 0,
+						["Bopshop-Ashbringer"] = 0,
 						["Purpplehaze-Auberdine"] = 0,
-						["Boopa-Venoxis"] = 0,
-						["Memoria-Auberdine"] = 0,
+						["Fatsnack-Mandokir"] = 0,
 					},
 					["totalover_without_pet"] = 0.002065,
 					["healing_taken"] = 0.002065,
@@ -100207,9 +90589,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[27154] = {
@@ -100231,9 +90613,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[34299] = {
@@ -100255,9 +90637,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[53653] = {
@@ -100284,9 +90666,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[27136] = {
@@ -100313,9 +90695,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[27137] = {
@@ -100349,9 +90731,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[53652] = {
@@ -100376,9 +90758,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[33074] = {
@@ -100394,13 +90776,13 @@ _detalhes_database = {
 								},
 								["n_max"] = 0,
 								["targets"] = {
-									["Memoria-Auberdine"] = 0,
-									["Airforceone-MirageRaceway"] = 0,
-									["Purpplehaze-Auberdine"] = 0,
-									["Calmyboy-MirageRaceway"] = 0,
-									["Bopshop-Ashbringer"] = 0,
-									["Boopa-Venoxis"] = 0,
 									["Fatsnack-Mandokir"] = 0,
+									["Memoria-Auberdine"] = 0,
+									["Boopa-Venoxis"] = 0,
+									["Calmyboy-MirageRaceway"] = 0,
+									["Purpplehaze-Auberdine"] = 0,
+									["Bopshop-Ashbringer"] = 0,
+									["Airforceone-MirageRaceway"] = 0,
 								},
 								["n_min"] = 0,
 								["counter"] = 0,
@@ -100412,9 +90794,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -100481,9 +90863,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[12051] = {
@@ -100506,9 +90888,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -100579,9 +90961,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -100649,9 +91031,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[67489] = {
@@ -100673,9 +91055,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[12051] = {
@@ -100697,9 +91079,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[27128] = {
@@ -100722,9 +91104,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -100790,9 +91172,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[34299] = {
@@ -100815,9 +91197,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[47985] = {
@@ -100842,9 +91224,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -100916,9 +91298,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -101071,9 +91453,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -101227,9 +91609,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -101295,9 +91677,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -101368,9 +91750,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[34299] = {
@@ -101393,9 +91775,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -101464,9 +91846,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[48982] = {
@@ -101488,9 +91870,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[50475] = {
@@ -101513,9 +91895,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[53365] = {
@@ -101537,9 +91919,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -101591,7 +91973,7 @@ _detalhes_database = {
 					["nome"] = "Boraborabora-Jin'do",
 					["spells"] = {
 						["_ActorTable"] = {
-							[49272] = {
+							[379] = {
 								["c_amt"] = 0,
 								["totalabsorb"] = 0,
 								["targets_overheal"] = {
@@ -101605,14 +91987,14 @@ _detalhes_database = {
 								["overheal"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = 49272,
+								["id"] = 379,
 								["targets_absorbs"] = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[61300] = {
@@ -101637,9 +92019,33 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
+								["absorbed"] = 0,
+							},
+							[49272] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+								},
+								["n_max"] = 0,
+								["targets"] = {
+									["Boraborabora-Jin'do"] = 0,
+								},
+								["n_min"] = 0,
+								["counter"] = 0,
+								["overheal"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 49272,
+								["targets_absorbs"] = {
+								},
+								["c_min"] = 0,
+								["c_curado"] = 0,
 								["n_curado"] = 0,
+								["totaldenied"] = 0,
+								["n_amt"] = 0,
 								["absorbed"] = 0,
 							},
 							[52752] = {
@@ -101662,33 +92068,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
-								["absorbed"] = 0,
-							},
-							[379] = {
-								["c_amt"] = 0,
-								["totalabsorb"] = 0,
-								["targets_overheal"] = {
-								},
-								["n_max"] = 0,
-								["targets"] = {
-									["Boraborabora-Jin'do"] = 0,
-								},
-								["n_min"] = 0,
-								["counter"] = 0,
-								["overheal"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 379,
-								["targets_absorbs"] = {
-								},
-								["c_min"] = 0,
-								["c_curado"] = 0,
-								["totaldenied"] = 0,
-								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -101767,9 +92149,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[75999] = {
@@ -101791,9 +92173,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[48065] = {
@@ -101818,9 +92200,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[48070] = {
@@ -101845,9 +92227,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[15290] = {
@@ -101876,9 +92258,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -101947,9 +92329,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[31771] = {
@@ -101972,9 +92354,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -102045,9 +92427,33 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
+								["absorbed"] = 0,
+							},
+							[48443] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+								},
+								["n_max"] = 0,
+								["targets"] = {
+									["Jtf-Mograine"] = 0,
+								},
+								["n_min"] = 0,
+								["counter"] = 0,
+								["overheal"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 48443,
+								["targets_absorbs"] = {
+								},
+								["c_min"] = 0,
+								["c_curado"] = 0,
 								["n_curado"] = 0,
+								["totaldenied"] = 0,
+								["n_amt"] = 0,
 								["absorbed"] = 0,
 							},
 							[48450] = {
@@ -102069,33 +92475,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
-								["absorbed"] = 0,
-							},
-							[33778] = {
-								["c_amt"] = 0,
-								["totalabsorb"] = 0,
-								["targets_overheal"] = {
-								},
-								["n_max"] = 0,
-								["targets"] = {
-									["Jtf-Mograine"] = 0,
-								},
-								["n_min"] = 0,
-								["counter"] = 0,
-								["overheal"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 33778,
-								["targets_absorbs"] = {
-								},
-								["c_min"] = 0,
-								["c_curado"] = 0,
-								["totaldenied"] = 0,
-								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[62606] = {
@@ -102118,9 +92500,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[48440] = {
@@ -102142,9 +92524,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[48377] = {
@@ -102166,9 +92548,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[50424] = {
@@ -102190,12 +92572,12 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
-							[48443] = {
+							[33778] = {
 								["c_amt"] = 0,
 								["totalabsorb"] = 0,
 								["targets_overheal"] = {
@@ -102209,14 +92591,14 @@ _detalhes_database = {
 								["overheal"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = 48443,
+								["id"] = 33778,
 								["targets_absorbs"] = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -102286,9 +92668,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[63106] = {
@@ -102310,9 +92692,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[54181] = {
@@ -102335,9 +92717,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -102407,9 +92789,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[48982] = {
@@ -102431,9 +92813,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[50475] = {
@@ -102456,9 +92838,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[53365] = {
@@ -102480,9 +92862,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[45470] = {
@@ -102504,9 +92886,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -102619,9 +93001,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[26980] = {
@@ -102644,9 +93026,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[26982] = {
@@ -102671,9 +93053,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[33763] = {
@@ -102696,9 +93078,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[33778] = {
@@ -102720,9 +93102,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -102793,9 +93175,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -102908,9 +93290,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[59545] = {
@@ -102933,9 +93315,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -103005,9 +93387,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -103076,9 +93458,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -103146,9 +93528,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[34299] = {
@@ -103170,9 +93552,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -103238,9 +93620,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -103292,7 +93674,7 @@ _detalhes_database = {
 					["nome"] = "Elantari-Auberdine",
 					["spells"] = {
 						["_ActorTable"] = {
-							[31852] = {
+							[34263] = {
 								["c_amt"] = 0,
 								["totalabsorb"] = 0,
 								["targets_overheal"] = {
@@ -103306,15 +93688,14 @@ _detalhes_database = {
 								["overheal"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = 31852,
+								["id"] = 34263,
 								["targets_absorbs"] = {
-									["Elantari-Auberdine"] = 0,
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[66235] = {
@@ -103336,9 +93717,34 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
+								["absorbed"] = 0,
+							},
+							[31852] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+								},
+								["n_max"] = 0,
+								["targets"] = {
+									["Elantari-Auberdine"] = 0,
+								},
+								["n_min"] = 0,
+								["counter"] = 0,
+								["overheal"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 31852,
+								["targets_absorbs"] = {
+									["Elantari-Auberdine"] = 0,
+								},
+								["c_min"] = 0,
+								["c_curado"] = 0,
 								["n_curado"] = 0,
+								["totaldenied"] = 0,
+								["n_amt"] = 0,
 								["absorbed"] = 0,
 							},
 							[34299] = {
@@ -103361,33 +93767,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
-								["absorbed"] = 0,
-							},
-							[34263] = {
-								["c_amt"] = 0,
-								["totalabsorb"] = 0,
-								["targets_overheal"] = {
-								},
-								["n_max"] = 0,
-								["targets"] = {
-									["Elantari-Auberdine"] = 0,
-								},
-								["n_min"] = 0,
-								["counter"] = 0,
-								["overheal"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 34263,
-								["targets_absorbs"] = {
-								},
-								["c_min"] = 0,
-								["c_curado"] = 0,
-								["totaldenied"] = 0,
-								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -103454,9 +93836,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[31228] = {
@@ -103479,9 +93861,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -103565,9 +93947,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[53654] = {
@@ -103590,9 +93972,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[53653] = {
@@ -103615,9 +93997,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[27136] = {
@@ -103639,9 +94021,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[27137] = {
@@ -103674,9 +94056,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[53652] = {
@@ -103699,9 +94081,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[33074] = {
@@ -103734,9 +94116,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -103810,9 +94192,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[54181] = {
@@ -103837,9 +94219,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[30294] = {
@@ -103861,9 +94243,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[27235] = {
@@ -103885,9 +94267,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[28495] = {
@@ -103909,9 +94291,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[27223] = {
@@ -103933,9 +94315,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -104010,9 +94392,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[22845] = {
@@ -104034,9 +94416,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[33778] = {
@@ -104059,9 +94441,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[62606] = {
@@ -104084,9 +94466,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[48440] = {
@@ -104114,9 +94496,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[48442] = {
@@ -104141,9 +94523,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[48377] = {
@@ -104165,9 +94547,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[48450] = {
@@ -104191,9 +94573,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -104262,9 +94644,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[29842] = {
@@ -104287,9 +94669,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[20007] = {
@@ -104311,9 +94693,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[43185] = {
@@ -104335,9 +94717,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[16491] = {
@@ -104359,9 +94741,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[27235] = {
@@ -104383,9 +94765,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -104408,7 +94790,7 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["received"] = 247.005729,
-					["resource"] = 0.169347,
+					["resource"] = 0.213563,
 					["targets"] = {
 						["Готян-Пламегор"] = 0,
 					},
@@ -104422,9 +94804,9 @@ _detalhes_database = {
 					["nome"] = "Готян-Пламегор",
 					["spells"] = {
 						["_ActorTable"] = {
-							[48542] = {
+							[27103] = {
 								["total"] = 0,
-								["id"] = 48542,
+								["id"] = 27103,
 								["totalover"] = 0,
 								["targets"] = {
 									["Готян-Пламегор"] = 0,
@@ -104449,6 +94831,15 @@ _detalhes_database = {
 								},
 								["counter"] = 1,
 							},
+							[48542] = {
+								["total"] = 0,
+								["id"] = 48542,
+								["totalover"] = 0,
+								["targets"] = {
+									["Готян-Пламегор"] = 0,
+								},
+								["counter"] = 0,
+							},
 							[29077] = {
 								["total"] = 202,
 								["id"] = 29077,
@@ -104457,15 +94848,6 @@ _detalhes_database = {
 									["Готян-Пламегор"] = 0,
 								},
 								["counter"] = 2,
-							},
-							[27103] = {
-								["total"] = 0,
-								["id"] = 27103,
-								["totalover"] = 0,
-								["targets"] = {
-									["Готян-Пламегор"] = 0,
-								},
-								["counter"] = 0,
 							},
 						},
 						["tipo"] = 7,
@@ -104482,7 +94864,7 @@ _detalhes_database = {
 				}, -- [1]
 				{
 					["received"] = 411.011577,
-					["resource"] = 0.32666,
+					["resource"] = 0.421632,
 					["targets"] = {
 						["Коббал-Пламегор"] = 0,
 						["Кейналай-Пламегор"] = 0,
@@ -104548,7 +94930,7 @@ _detalhes_database = {
 				}, -- [2]
 				{
 					["received"] = 1.009251,
-					["resource"] = 0.3589730000000003,
+					["resource"] = 0.4708570000000006,
 					["targets"] = {
 						["Сварт-Пламегор"] = 0,
 					},
@@ -104614,7 +94996,7 @@ _detalhes_database = {
 				}, -- [3]
 				{
 					["received"] = 1977.010526,
-					["resource"] = 0.408592,
+					["resource"] = 0.529349,
 					["targets"] = {
 						["Purpplehaze-Auberdine"] = 0,
 					},
@@ -104652,7 +95034,7 @@ _detalhes_database = {
 				}, -- [4]
 				{
 					["received"] = 41.010607,
-					["resource"] = 0.4665130000000001,
+					["resource"] = 0.5962280000000002,
 					["targets"] = {
 						["Boopa-Venoxis"] = 0,
 					},
@@ -104717,7 +95099,7 @@ _detalhes_database = {
 				}, -- [5]
 				{
 					["received"] = 2460.008538,
-					["resource"] = 0.3337970000000002,
+					["resource"] = 0.4167730000000006,
 					["targets"] = {
 						["Fatsnack-Mandokir"] = 0,
 					},
@@ -104791,7 +95173,7 @@ _detalhes_database = {
 				}, -- [6]
 				{
 					["received"] = 0.0086,
-					["resource"] = 0.389696,
+					["resource"] = 0.485024,
 					["targets"] = {
 						["Дарелос-Пламегор"] = 0,
 						["Ницшеподлсд-Пламегор"] = 0,
@@ -104903,7 +95285,7 @@ _detalhes_database = {
 				}, -- [7]
 				{
 					["received"] = 0.001293,
-					["resource"] = 0.212059,
+					["resource"] = 0.264638,
 					["targets"] = {
 						["Рубежж-Пламегор"] = 0,
 					},
@@ -104949,7 +95331,7 @@ _detalhes_database = {
 				}, -- [8]
 				{
 					["received"] = 0.004517,
-					["resource"] = 0.4564279999999998,
+					["resource"] = 0.5934759999999998,
 					["targets"] = {
 						["Bopshop-Ashbringer"] = 0,
 					},
@@ -105012,18 +95394,18 @@ _detalhes_database = {
 				}, -- [9]
 				{
 					["received"] = 0.007939,
-					["resource"] = 0.28144,
+					["resource"] = 0.369876,
 					["targets"] = {
 						["Airforceone-MirageRaceway"] = 0,
 						["Hathgarth <Purpplehaze-Auberdine>"] = 0,
-						["Moolatz"] = 0,
-						["Purpplehaze-Auberdine"] = 0,
-						["Memoria-Auberdine"] = 0,
-						["Maivi-Giantstalker"] = 0,
-						["Boopa-Venoxis"] = 0,
-						["Bopshop-Ashbringer"] = 0,
-						["Water Elemental <Maivi-Giantstalker>"] = 0,
 						["Fatsnack-Mandokir"] = 0,
+						["Boopa-Venoxis"] = 0,
+						["Moolatz"] = 0,
+						["Maivi-Giantstalker"] = 0,
+						["Bopshop-Ashbringer"] = 0,
+						["Purpplehaze-Auberdine"] = 0,
+						["Water Elemental <Maivi-Giantstalker>"] = 0,
+						["Memoria-Auberdine"] = 0,
 					},
 					["pets"] = {
 					},
@@ -105042,14 +95424,14 @@ _detalhes_database = {
 								["targets"] = {
 									["Airforceone-MirageRaceway"] = 0,
 									["Hathgarth <Purpplehaze-Auberdine>"] = 0,
-									["Moolatz"] = 0,
-									["Purpplehaze-Auberdine"] = 0,
-									["Memoria-Auberdine"] = 0,
-									["Maivi-Giantstalker"] = 0,
-									["Boopa-Venoxis"] = 0,
-									["Bopshop-Ashbringer"] = 0,
-									["Water Elemental <Maivi-Giantstalker>"] = 0,
 									["Fatsnack-Mandokir"] = 0,
+									["Boopa-Venoxis"] = 0,
+									["Moolatz"] = 0,
+									["Maivi-Giantstalker"] = 0,
+									["Bopshop-Ashbringer"] = 0,
+									["Purpplehaze-Auberdine"] = 0,
+									["Water Elemental <Maivi-Giantstalker>"] = 0,
+									["Memoria-Auberdine"] = 0,
 								},
 								["counter"] = 0,
 							},
@@ -105077,7 +95459,7 @@ _detalhes_database = {
 				}, -- [10]
 				{
 					["received"] = 0.002324,
-					["resource"] = 0.326919,
+					["resource"] = 0.4410289999999998,
 					["targets"] = {
 						["Memoria-Auberdine"] = 0,
 					},
@@ -105115,7 +95497,7 @@ _detalhes_database = {
 				}, -- [11]
 				{
 					["received"] = 0.006877,
-					["resource"] = 0.3917919999999998,
+					["resource"] = 0.5099839999999998,
 					["targets"] = {
 						["Коббал-Пламегор"] = 0,
 						["Белтико"] = 0,
@@ -105197,7 +95579,7 @@ _detalhes_database = {
 				}, -- [12]
 				{
 					["received"] = 0.006235,
-					["resource"] = 0.207662,
+					["resource"] = 0.263814,
 					["targets"] = {
 						["Airforceone-MirageRaceway"] = 0,
 					},
@@ -105261,7 +95643,7 @@ _detalhes_database = {
 				}, -- [13]
 				{
 					["received"] = 0.007207,
-					["resource"] = 0.398436,
+					["resource"] = 0.5228449999999999,
 					["targets"] = {
 						["Коббал-Пламегор"] = 0,
 						["Шерифдуфи-Пламегор"] = 0,
@@ -105347,7 +95729,7 @@ _detalhes_database = {
 				}, -- [14]
 				{
 					["received"] = 0.002787,
-					["resource"] = 0.057309,
+					["resource"] = 0.081541,
 					["targets"] = {
 						["Белтико"] = 0,
 					},
@@ -105384,7 +95766,7 @@ _detalhes_database = {
 				}, -- [15]
 				{
 					["received"] = 0.002681,
-					["resource"] = 0.230562,
+					["resource"] = 0.2804550000000001,
 					["targets"] = {
 						["Коббал-Пламегор"] = 0,
 						["Кейналай-Пламегор"] = 0,
@@ -105393,7 +95775,7 @@ _detalhes_database = {
 					["enemy"] = true,
 					["pets"] = {
 					},
-					["powertype"] = 1,
+					["powertype"] = 0,
 					["classe"] = "DRUID",
 					["passiveover"] = 0.002681,
 					["fight_component"] = true,
@@ -105505,7 +95887,7 @@ _detalhes_database = {
 				}, -- [16]
 				{
 					["received"] = 0.003388,
-					["resource"] = 0.351091,
+					["resource"] = 0.443732,
 					["targets"] = {
 						["Calmyboy-MirageRaceway"] = 0,
 					},
@@ -105622,7 +96004,7 @@ _detalhes_database = {
 				}, -- [17]
 				{
 					["received"] = 0.002994,
-					["resource"] = 0.449046,
+					["resource"] = 0.7270320000000006,
 					["targets"] = {
 						["Moolatz"] = 0,
 					},
@@ -105686,7 +96068,7 @@ _detalhes_database = {
 				}, -- [18]
 				{
 					["received"] = 0.006416,
-					["resource"] = 0.08796999999999999,
+					["resource"] = 0.11377,
 					["targets"] = {
 					},
 					["pets"] = {
@@ -105713,7 +96095,7 @@ _detalhes_database = {
 				}, -- [19]
 				{
 					["received"] = 0.00457,
-					["resource"] = 0.185703,
+					["resource"] = 0.236095,
 					["targets"] = {
 						["Дарелос-Пламегор"] = 0,
 					},
@@ -105761,7 +96143,7 @@ _detalhes_database = {
 				}, -- [20]
 				{
 					["received"] = 0.005552,
-					["resource"] = 0.185558,
+					["resource"] = 0.23225,
 					["targets"] = {
 						["Ницшеподлсд-Пламегор"] = 0,
 					},
@@ -105800,7 +96182,7 @@ _detalhes_database = {
 				}, -- [21]
 				{
 					["received"] = 0.008333,
-					["resource"] = 0.042524,
+					["resource"] = 0.05771999999999999,
 					["targets"] = {
 					},
 					["pets"] = {
@@ -105827,7 +96209,7 @@ _detalhes_database = {
 				}, -- [22]
 				{
 					["received"] = 0.008724,
-					["resource"] = 0.05134799999999998,
+					["resource"] = 0.07029199999999997,
 					["targets"] = {
 						["Молимся-Пламегор"] = 0,
 					},
@@ -105864,7 +96246,7 @@ _detalhes_database = {
 				}, -- [23]
 				{
 					["received"] = 0.001901,
-					["resource"] = 0.125363,
+					["resource"] = 0.172429,
 					["targets"] = {
 					},
 					["pets"] = {
@@ -105891,7 +96273,7 @@ _detalhes_database = {
 				}, -- [24]
 				{
 					["received"] = 0.005029,
-					["resource"] = 0.128751,
+					["resource"] = 0.151662,
 					["targets"] = {
 						["Макнаке"] = 0,
 					},
@@ -107168,9 +97550,9 @@ _detalhes_database = {
 								},
 								["targets"] = {
 									["Дарелос-Пламегор"] = 0,
+									["Рубежж-Пламегор"] = 0,
 									["Молимся-Пламегор"] = 0,
 									["Шерифдуфи-Пламегор"] = 0,
-									["Рубежж-Пламегор"] = 0,
 								},
 								["counter"] = 0,
 							},
@@ -107187,9 +97569,9 @@ _detalhes_database = {
 					["nome"] = "Maivi-Giantstalker",
 					["interrupt_targets"] = {
 						["Дарелос-Пламегор"] = 0,
+						["Рубежж-Пламегор"] = 0,
 						["Молимся-Пламегор"] = 0,
 						["Шерифдуфи-Пламегор"] = 0,
-						["Рубежж-Пламегор"] = 0,
 					},
 					["grupo"] = true,
 					["cooldowns_defensive_spells"] = {
@@ -107667,8 +98049,8 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[55502] = {
-								["id"] = 55502,
+							[69369] = {
+								["id"] = 69369,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -107679,8 +98061,8 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[9846] = {
-								["id"] = 9846,
+							[26992] = {
+								["id"] = 26992,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -107691,8 +98073,8 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[26992] = {
-								["id"] = 26992,
+							[9846] = {
+								["id"] = 9846,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -107709,8 +98091,8 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[69369] = {
-								["id"] = 69369,
+							[55502] = {
+								["id"] = 55502,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -108522,10 +98904,10 @@ _detalhes_database = {
 							[15487] = {
 								["id"] = 15487,
 								["targets"] = {
-									["Purpplehaze-Auberdine"] = 0,
-									["Boopa-Venoxis"] = 0,
-									["Fatsnack-Mandokir"] = 0,
 									["Bopshop-Ashbringer"] = 0,
+									["Purpplehaze-Auberdine"] = 0,
+									["Fatsnack-Mandokir"] = 0,
+									["Boopa-Venoxis"] = 0,
 								},
 								["counter"] = 0,
 							},
@@ -108543,10 +98925,10 @@ _detalhes_database = {
 					["dispell_targets"] = {
 						["Fatsnack-Mandokir"] = 0,
 						["Maivi-Giantstalker"] = 0,
-						["Boopa-Venoxis"] = 0,
-						["Purpplehaze-Auberdine"] = 0,
-						["Макнаке"] = 0,
 						["Bopshop-Ashbringer"] = 0,
+						["Boopa-Venoxis"] = 0,
+						["Макнаке"] = 0,
+						["Purpplehaze-Auberdine"] = 0,
 					},
 					["dispell_spells"] = {
 						["_ActorTable"] = {
@@ -108616,11 +98998,11 @@ _detalhes_database = {
 					["cc_done_targets"] = {
 						["Memoria-Auberdine"] = 0,
 						["Fatsnack-Mandokir"] = 0,
-						["Bopshop-Ashbringer"] = 0,
-						["Calmyboy-MirageRaceway"] = 0,
-						["Boopa-Venoxis"] = 0,
-						["Purpplehaze-Auberdine"] = 0,
 						["Hathgarth"] = 0,
+						["Calmyboy-MirageRaceway"] = 0,
+						["Purpplehaze-Auberdine"] = 0,
+						["Boopa-Venoxis"] = 0,
+						["Bopshop-Ashbringer"] = 0,
 					},
 					["tipo"] = 4,
 					["aID"] = "4474-04B16B28",
@@ -109541,8 +99923,20 @@ _detalhes_database = {
 					},
 					["cooldowns_defensive"] = 0,
 					["buff_uptime"] = 0,
-					["cooldowns_defensive_targets"] = {
-						["Calmyboy-MirageRaceway"] = 0,
+					["interrupt_spells"] = {
+						["_ActorTable"] = {
+							[47528] = {
+								["id"] = 47528,
+								["interrompeu_oque"] = {
+								},
+								["targets"] = {
+									["Дарелос-Пламегор"] = 0,
+									["Шерифдуфи-Пламегор"] = 0,
+								},
+								["counter"] = 0,
+							},
+						},
+						["tipo"] = 9,
 					},
 					["cooldowns_defensive_spells"] = {
 						["_ActorTable"] = {
@@ -109570,21 +99964,9 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["aID"] = "4454-04AD4921",
-					["interrupt_spells"] = {
-						["_ActorTable"] = {
-							[47528] = {
-								["id"] = 47528,
-								["interrompeu_oque"] = {
-								},
-								["targets"] = {
-									["Дарелос-Пламегор"] = 0,
-									["Шерифдуфи-Пламегор"] = 0,
-								},
-								["counter"] = 0,
-							},
-						},
-						["tipo"] = 9,
+					["classe"] = "DEATHKNIGHT",
+					["cooldowns_defensive_targets"] = {
+						["Calmyboy-MirageRaceway"] = 0,
 					},
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -109756,16 +100138,15 @@ _detalhes_database = {
 					},
 					["fight_component"] = true,
 					["debuff_uptime"] = 0,
-					["debuff_uptime_targets"] = {
-					},
-					["classe"] = "DEATHKNIGHT",
+					["interrupt"] = 0,
+					["aID"] = "4454-04AD4921",
 					["nome"] = "Calmyboy-MirageRaceway",
 					["interrupt_targets"] = {
 						["Дарелос-Пламегор"] = 0,
 						["Шерифдуфи-Пламегор"] = 0,
 					},
-					["cc_break"] = 0,
-					["buff_uptime_targets"] = {
+					["grupo"] = true,
+					["debuff_uptime_targets"] = {
 					},
 					["spell_cast"] = {
 						[49929] = 0,
@@ -109793,9 +100174,10 @@ _detalhes_database = {
 					},
 					["cc_break_oque"] = {
 					},
-					["grupo"] = true,
+					["cc_break"] = 0,
 					["tipo"] = 4,
-					["interrupt"] = 0,
+					["buff_uptime_targets"] = {
+					},
 					["cc_break_targets"] = {
 						["Небославян-Пламегор"] = 0,
 					},
@@ -110669,18 +101051,30 @@ _detalhes_database = {
 					["aID"] = "4474-04A80422",
 					["cc_done"] = 0,
 					["nome"] = "Рубежж-Пламегор",
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["enemy"] = true,
-					["pets"] = {
+					["spell_cast"] = {
+						[17928] = 0,
+						[6215] = 0,
+						[27216] = 0,
+						[27217] = 0,
+						[27218] = 0,
+						[27235] = 0,
+						[27220] = 0,
+						[11735] = 0,
+						[23161] = 0,
+						[42292] = 0,
+						[27223] = 0,
+						[28189] = 0,
+						[27211] = 0,
+						[27209] = 0,
+						[27210] = 0,
+						[17941] = 0,
+						[28610] = 0,
+						[30404] = 0,
+						[27222] = 0,
 					},
-					["cc_done_targets"] = {
-						["Maivi-Giantstalker"] = 0,
-						["Memoria-Auberdine"] = 0,
-						["Grr"] = 0,
-						["Calmyboy-MirageRaceway"] = 0,
-						["Boopa-Venoxis"] = 0,
-						["Purpplehaze-Auberdine"] = 0,
-						["Hathgarth"] = 0,
+					["pets"] = {
 					},
 					["cc_done_spells"] = {
 						["_ActorTable"] = {
@@ -110714,29 +101108,17 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["classe"] = "WARLOCK",
-					["last_event"] = 0,
-					["serial"] = "Player-4474-04A80422",
-					["spell_cast"] = {
-						[17928] = 0,
-						[6215] = 0,
-						[27216] = 0,
-						[27217] = 0,
-						[27218] = 0,
-						[27235] = 0,
-						[27220] = 0,
-						[11735] = 0,
-						[23161] = 0,
-						[42292] = 0,
-						[27223] = 0,
-						[28189] = 0,
-						[27211] = 0,
-						[27209] = 0,
-						[27210] = 0,
-						[17941] = 0,
-						[28610] = 0,
-						[30404] = 0,
-						[27222] = 0,
+					["cc_done_targets"] = {
+						["Maivi-Giantstalker"] = 0,
+						["Memoria-Auberdine"] = 0,
+						["Grr"] = 0,
+						["Calmyboy-MirageRaceway"] = 0,
+						["Boopa-Venoxis"] = 0,
+						["Purpplehaze-Auberdine"] = 0,
+						["Hathgarth"] = 0,
 					},
+					["serial"] = "Player-4474-04A80422",
+					["tipo"] = 4,
 				}, -- [34]
 				{
 					["flag_original"] = 1352,
@@ -111350,9 +101732,9 @@ _detalhes_database = {
 						[1978] = 0,
 						[19263] = 0,
 						[5116] = 0,
+						[75] = 0,
 						[19506] = 0,
 						[53209] = 0,
-						[75] = 0,
 						[3045] = 0,
 						[13809] = 0,
 						[23989] = 0,
@@ -111360,9 +101742,9 @@ _detalhes_database = {
 					["classe"] = "UNGROUPPLAYER",
 					["pets"] = {
 					},
+					["tipo"] = 4,
 					["aID"] = "4474-04B74E61",
 					["last_event"] = 0,
-					["tipo"] = 4,
 					["serial"] = "Player-4474-04B74E61",
 					["pvp"] = true,
 				}, -- [51]
@@ -112228,7 +102610,7 @@ _detalhes_database = {
 				{
 					["flag_original"] = 1300,
 					["buff_uptime"] = 0,
-					["aID"] = "4811-0394EED3",
+					["classe"] = "MAGE",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[27044] = {
@@ -112457,13 +102839,13 @@ _detalhes_database = {
 						[2139] = 0,
 						[12472] = 0,
 					},
-					["pets"] = {
-					},
+					["tipo"] = 4,
 					["buff_uptime_targets"] = {
 					},
-					["tipo"] = 4,
 					["last_event"] = 0,
-					["classe"] = "MAGE",
+					["aID"] = "4811-0394EED3",
+					["pets"] = {
+					},
 					["serial"] = "Player-4811-0394EED3",
 					["pvp"] = true,
 				}, -- [87]
@@ -112617,8 +102999,8 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[54499] = {
-								["id"] = 54499,
+							[66233] = {
+								["id"] = 66233,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -112635,14 +103017,14 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[63529] = {
-								["id"] = 63529,
+							[54499] = {
+								["id"] = 54499,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
-							[66233] = {
-								["id"] = 66233,
+							[63529] = {
+								["id"] = 63529,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -113517,10 +103899,10 @@ _detalhes_database = {
 					["nome"] = "Poséidon-Mograine",
 					["pets"] = {
 					},
-					["aID"] = "4701-0317FBC6",
 					["tipo"] = 4,
-					["last_event"] = 0,
 					["classe"] = "DRUID",
+					["last_event"] = 0,
+					["aID"] = "4701-0317FBC6",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[26992] = {
@@ -113864,9 +104246,9 @@ _detalhes_database = {
 					["classe"] = "SHAMAN",
 					["pets"] = {
 					},
+					["tipo"] = 4,
 					["aID"] = "4749-0376ABC9",
 					["last_event"] = 0,
-					["tipo"] = 4,
 					["serial"] = "Player-4749-0376ABC9",
 					["pvp"] = true,
 				}, -- [105]
@@ -113904,7 +104286,7 @@ _detalhes_database = {
 					["enemy"] = true,
 					["pets"] = {
 					},
-					["last_event"] = 0,
+					["tipo"] = 4,
 					["spell_cast"] = {
 						[49919] = 0,
 						[50842] = 0,
@@ -113921,8 +104303,8 @@ _detalhes_database = {
 						[56815] = 0,
 						[55260] = 0,
 					},
-					["tipo"] = 4,
 					["aID"] = "4453-04B6A8DF",
+					["last_event"] = 0,
 					["serial"] = "Player-4453-04B6A8DF",
 					["pvp"] = true,
 				}, -- [107]
@@ -113934,8 +104316,8 @@ _detalhes_database = {
 					["enemy"] = true,
 					["spell_cast"] = {
 						[5116] = 0,
+						[13159] = 0,
 						[27019] = 0,
-						[5118] = 0,
 						[23989] = 0,
 						[781] = 0,
 						[27016] = 0,
@@ -113948,14 +104330,14 @@ _detalhes_database = {
 						[34490] = 0,
 						[27021] = 0,
 						[43185] = 0,
-						[13159] = 0,
+						[5118] = 0,
 					},
 					["classe"] = "HUNTER",
 					["pets"] = {
 					},
+					["tipo"] = 4,
 					["aID"] = "4454-03FF66D8",
 					["last_event"] = 0,
-					["tipo"] = 4,
 					["serial"] = "Player-4454-03FF66D8",
 					["pvp"] = true,
 				}, -- [108]
@@ -114335,23 +104717,23 @@ _detalhes_database = {
 				}, -- [117]
 				{
 					["flag_original"] = 1320,
+					["pets"] = {
+					},
+					["aID"] = "4742-03B510A8",
+					["cc_done"] = 0,
+					["nome"] = "Scntmist-Ashbringer",
+					["grupo"] = true,
+					["last_event"] = 0,
+					["cc_done_targets"] = {
+						["Boraborabora-Jin'do"] = 0,
+						["Lestoat-Mograine"] = 0,
+					},
 					["spell_cast"] = {
 						[1784] = 0,
 						[26863] = 0,
 						[51713] = 0,
 						[8643] = 0,
 						[2094] = 0,
-					},
-					["last_event"] = 0,
-					["cc_done"] = 0,
-					["nome"] = "Scntmist-Ashbringer",
-					["grupo"] = true,
-					["tipo"] = 4,
-					["pets"] = {
-					},
-					["cc_done_targets"] = {
-						["Boraborabora-Jin'do"] = 0,
-						["Lestoat-Mograine"] = 0,
 					},
 					["cc_done_spells"] = {
 						["_ActorTable"] = {
@@ -114381,7 +104763,7 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["classe"] = "ROGUE",
-					["aID"] = "4742-03B510A8",
+					["tipo"] = 4,
 					["serial"] = "Player-4742-03B510A8",
 					["pvp"] = true,
 				}, -- [118]
