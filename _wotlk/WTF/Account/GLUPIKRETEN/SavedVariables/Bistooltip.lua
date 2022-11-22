@@ -65,8 +65,6 @@ BisTooltipDB = {
 				},
 			},
 			["minimapPos"] = 34.52921906708929,
-			["spec_index"] = 3,
-			["phase_index"] = 2,
 		},
 		["Battlearm - Golemagg"] = {
 			["version"] = 6.1,

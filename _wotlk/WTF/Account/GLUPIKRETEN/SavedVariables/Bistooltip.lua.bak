@@ -9,7 +9,7 @@ BisTooltipDB = {
 	["char"] = {
 		["Vermin - Golemagg"] = {
 			["class_index"] = 10,
-			["filter_class_names"] = true,
+			["filter_class_names"] = false,
 			["version"] = 6.1,
 			["filter_specs"] = {
 				["Warrior"] = {
@@ -64,8 +64,6 @@ BisTooltipDB = {
 					["Destruction"] = true,
 				},
 			},
-			["phase_index"] = 2,
-			["spec_index"] = 3,
 			["minimapPos"] = 34.52921906708929,
 		},
 		["Battlearm - Golemagg"] = {
