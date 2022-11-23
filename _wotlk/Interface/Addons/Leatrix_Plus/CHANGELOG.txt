@@ -1,3 +1,10 @@
+3.0.59 - 22nd November 2022
+- Updated 'Sell junk automatically' ('Automation') internal code.
+- Fixed a rare and situational Lua error with 'Restore chat messages' ('Chat').
+
+3.0.58 - 22nd November 2022
+- Added flight times.
+
 3.0.57 - 18th November 2022
 - Added flight times.
 

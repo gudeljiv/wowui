@@ -16,8 +16,8 @@ H: 30
 Frame: PossessButton1
 FrameLevel: 3
 Anchor: BOTTOM
-X: -167
-Y: 134
+X: -147
+Y: 171
 W: 30
 H: 30
 Frame: ScriptErrorsFrame
