@@ -129,9 +129,10 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "gmL",
 				},
-				["AdiBags"] = {
-					["enabled"] = false,
+				["CharacterNotes"] = {
+					["align"] = "right",
 					["isNew"] = false,
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
 				["DBM"] = {
@@ -185,10 +186,9 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "WA",
 				},
-				["KiwiPlates"] = {
-					["align"] = "right",
+				["AdiBags"] = {
+					["enabled"] = false,
 					["isNew"] = false,
-					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
 				["Broker Currency"] = {
@@ -528,7 +528,7 @@ ChocolateBarDB = {
 					["isNew"] = false,
 					["barName"] = "ChocolateBar2",
 				},
-				["CharacterNotes"] = {
+				["KiwiPlates"] = {
 					["align"] = "right",
 					["isNew"] = false,
 					["showText"] = false,
@@ -646,17 +646,17 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 935056,
-		["timeAtThisLevel"] = 919,
-		["timeStamp"] = 1221282.811,
+		["total"] = 942443,
+		["timeAtThisLevel"] = 8306,
+		["timeStamp"] = 1239762.153,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 222242,
-		["timeStamp"] = 1212951.769,
-		["timeAtThisLevel"] = 20435,
+		["total"] = 222390,
+		["timeStamp"] = 1240808.743,
+		["timeAtThisLevel"] = 20583,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
@@ -700,9 +700,9 @@ CB_PlayedTime = {
 		["total"] = 1786,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 256838,
-		["timeAtThisLevel"] = 251092,
-		["timeStamp"] = 1213115.681,
+		["total"] = 256896,
+		["timeAtThisLevel"] = 251150,
+		["timeStamp"] = 1240535.639,
 	},
 	["Tudum-Ashbringer"] = {
 		["total"] = 4569,
@@ -777,9 +777,9 @@ CB_PlayedTime = {
 		["total"] = 129,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1373503,
-		["timeAtThisLevel"] = 280956,
-		["timeStamp"] = 1228684.043,
+		["total"] = 1373551,
+		["timeAtThisLevel"] = 281004,
+		["timeStamp"] = 1240236.189,
 	},
 	["Grgur-"] = {
 		["total"] = 1248,

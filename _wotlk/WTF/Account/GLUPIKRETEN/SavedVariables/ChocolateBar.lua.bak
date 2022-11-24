@@ -146,10 +146,9 @@ ChocolateBarDB = {
 					["showIcon"] = false,
 					["customLabel"] = "gmL",
 				},
-				["KiwiPlates"] = {
-					["align"] = "right",
+				["AdiBags"] = {
+					["enabled"] = false,
 					["isNew"] = false,
-					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
 				["DBM"] = {
@@ -209,7 +208,7 @@ ChocolateBarDB = {
 					["showIcon"] = false,
 					["customLabel"] = "WA",
 				},
-				["CharacterNotes"] = {
+				["KiwiPlates"] = {
 					["align"] = "right",
 					["isNew"] = false,
 					["showText"] = false,
@@ -549,9 +548,10 @@ ChocolateBarDB = {
 					["isNew"] = false,
 					["barName"] = "ChocolateBar2",
 				},
-				["AdiBags"] = {
-					["enabled"] = false,
+				["CharacterNotes"] = {
+					["align"] = "right",
 					["isNew"] = false,
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
 				["gmMoney"] = {
@@ -646,9 +646,9 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 935056,
-		["timeStamp"] = 1221282.811,
-		["timeAtThisLevel"] = 919,
+		["total"] = 942443,
+		["timeStamp"] = 1239762.153,
+		["timeAtThisLevel"] = 8306,
 	},
 	["Mxyzptlk-Golemagg"] = {
 		["total"] = 29335,
@@ -692,17 +692,17 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1369951,
-		["timeStamp"] = 1213188.297,
-		["timeAtThisLevel"] = 277404,
+		["total"] = 1373551,
+		["timeStamp"] = 1240236.189,
+		["timeAtThisLevel"] = 281004,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 256838,
-		["timeStamp"] = 1213115.681,
-		["timeAtThisLevel"] = 251092,
+		["total"] = 256896,
+		["timeStamp"] = 1240535.639,
+		["timeAtThisLevel"] = 251150,
 	},
 	["Tudum-Ashbringer"] = {
 		["total"] = 4569,
