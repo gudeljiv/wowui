@@ -1,6 +1,5 @@
 
 ChocolateBarDB = {
-	["addonVersion"] = "v3.8.5",
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Default",
 		["Blooq - Genesis"] = "Default",
@@ -14,18 +13,18 @@ ChocolateBarDB = {
 		["Handrmandr - Genesis"] = "Default",
 		["Poklopac - Dreadnaught"] = "Default",
 		["Mxym - Golemagg"] = "Default",
-		["Grgur - Golemagg"] = "Default",
+		["Kosturko - Golemagg"] = "Default",
 		["Verminz - Genesis"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
 		["Pitchwise - Genesis"] = "Default",
-		["Miqa - Golemagg"] = "Default",
+		["Tudum - Jin'do"] = "Default",
 		["Antun - Golemagg"] = "Default",
 		["Provokator - Jin'do"] = "Default",
-		["Konac - Dreadnaught"] = "Default",
-		["Whatevs - Stonespine"] = "Default",
+		["Tandaram - Jin'do"] = "Default",
+		["Wells - Jin'do"] = "Default",
 		["Ozrencic - Golemagg"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
 		["Handrmandr - Golemagg"] = "Default",
@@ -39,28 +38,29 @@ ChocolateBarDB = {
 		["Mxys - Golemagg"] = "Default",
 		["Pitchwise - Dreadnaught"] = "Default",
 		["Kaonac - Jin'do"] = "Default",
-		["Klhjakhsgdjh - Golemagg"] = "Default",
+		["Battlearm - Jin'do"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 		["Spija - Genesis"] = "Default",
-		["Dotwise - Golemagg"] = "Default",
-		["Paydo - Dreadmist"] = "Default",
-		["Vermin - Golemagg"] = "Default",
-		["Vermins - Stonespine"] = "Default",
-		["Testxv - Golemagg"] = "Default",
-		["Korupcija - Genesis"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
-		["Korupcija - Stonespine"] = "Default",
-		["Pitchwise - Ashbringer"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
+		["Paydo - Dreadmist"] = "Default",
+		["Korupcija - Stonespine"] = "Default",
+		["Vermins - Stonespine"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Korupcija - Genesis"] = "Default",
+		["Testxv - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Pitchwise - Ashbringer"] = "Default",
+		["Dotwise - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
-		["Battlearm - Jin'do"] = "Default",
+		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Wells - Jin'do"] = "Default",
-		["Tandaram - Jin'do"] = "Default",
-		["Tudum - Jin'do"] = "Default",
-		["Kosturko - Golemagg"] = "Default",
+		["Whatevs - Stonespine"] = "Default",
+		["Konac - Dreadnaught"] = "Default",
+		["Miqa - Golemagg"] = "Default",
+		["Grgur - Golemagg"] = "Default",
 	},
+	["addonVersion"] = "v3.8.5",
 	["profiles"] = {
 		["Default"] = {
 			["locked"] = false,
@@ -71,17 +71,30 @@ ChocolateBarDB = {
 				["tile"] = true,
 				["color"] = {
 					["a"] = 0,
-					["r"] = 0,
-					["g"] = 0,
 					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
 				},
 				["textureName"] = "None",
 			},
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
+			["forceColor"] = false,
 			["objSettings"] = {
+				["Plater"] = {
+					["enabled"] = false,
+					["index"] = 3,
+					["isNew"] = false,
+					["showLabel"] = true,
+					["showIcon"] = false,
+					["barName"] = "ChocolateBar2",
+					["showText"] = false,
+					["customLabel"] = "P",
+				},
+				["Omen"] = {
+					["enabled"] = false,
+					["align"] = "center",
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+				},
 				["RangeDisplay"] = {
 					["enabled"] = false,
 					["align"] = "right",
@@ -89,29 +102,15 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
-				["BagnonLauncher"] = {
+				["FarmHud"] = {
 					["enabled"] = false,
-					["align"] = "right",
-					["isNew"] = false,
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
-				},
-				["Plater"] = {
-					["enabled"] = false,
-					["index"] = 3,
+					["index"] = 2,
 					["isNew"] = false,
 					["showLabel"] = true,
-					["showText"] = false,
-					["barName"] = "ChocolateBar2",
 					["showIcon"] = false,
-					["customLabel"] = "P",
-				},
-				["VuhDo"] = {
-					["enabled"] = false,
-					["align"] = "right",
-					["isNew"] = false,
+					["barName"] = "ChocolateBar2",
 					["showText"] = false,
-					["barName"] = "ChocolateBar1",
+					["customLabel"] = "FH",
 				},
 				["PitBull4"] = {
 					["enabled"] = false,
@@ -125,15 +124,14 @@ ChocolateBarDB = {
 					["index"] = 2,
 					["align"] = "right",
 					["showLabel"] = true,
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
 					["showIcon"] = false,
+					["barName"] = "ChocolateBar1",
+					["showText"] = false,
 					["customLabel"] = "gmL",
 				},
-				["KiwiPlates"] = {
-					["align"] = "right",
+				["AdiBags"] = {
+					["enabled"] = false,
 					["isNew"] = false,
-					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
 				["DBM"] = {
@@ -141,27 +139,24 @@ ChocolateBarDB = {
 					["index"] = 1,
 					["isNew"] = false,
 					["showLabel"] = true,
-					["showText"] = false,
-					["barName"] = "ChocolateBar2",
 					["showIcon"] = false,
+					["barName"] = "ChocolateBar2",
+					["showText"] = false,
 					["customLabel"] = "DBM",
 				},
-				["Atlas"] = {
-					["align"] = "right",
-					["showLabel"] = true,
-					["showText"] = false,
+				["Hekili"] = {
+					["enabled"] = false,
+					["isNew"] = false,
 					["barName"] = "ChocolateBar1",
-					["showIcon"] = false,
-					["customLabel"] = "A",
 				},
 				["Outfitter"] = {
 					["barName"] = "ChocolateBar1",
 				},
-				["BigWigs"] = {
-					["index"] = 2,
-					["align"] = "center",
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
+				["CB_PlayedTime"] = {
+					["enabled"] = false,
+					["index"] = 4,
+					["isNew"] = false,
+					["barName"] = "ChocolateBar2",
 				},
 				["AskMrRobot"] = {
 					["align"] = "right",
@@ -173,59 +168,59 @@ ChocolateBarDB = {
 					["isNew"] = false,
 					["barName"] = "ChocolateBar1",
 				},
-				["FarmHud"] = {
+				["VuhDo"] = {
 					["enabled"] = false,
-					["index"] = 2,
+					["align"] = "right",
 					["isNew"] = false,
-					["showLabel"] = true,
 					["showText"] = false,
-					["barName"] = "ChocolateBar2",
-					["showIcon"] = false,
-					["customLabel"] = "FH",
+					["barName"] = "ChocolateBar1",
 				},
 				["WeakAuras"] = {
 					["enabled"] = false,
 					["align"] = "right",
 					["isNew"] = false,
 					["showLabel"] = true,
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
 					["showIcon"] = false,
+					["barName"] = "ChocolateBar1",
+					["showText"] = false,
 					["customLabel"] = "WA",
 				},
-				["CharacterNotes"] = {
+				["KiwiPlates"] = {
 					["align"] = "right",
 					["isNew"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
 				["Broker Currency"] = {
-					["index"] = 1,
+					["widthBehavior"] = "free",
 					["align"] = "center",
 					["showIcon"] = false,
 					["barName"] = "ChocolateBar2",
-					["widthBehavior"] = "free",
+					["index"] = 1,
 				},
 				["Questie"] = {
 					["enabled"] = false,
 					["index"] = 1,
 					["isNew"] = false,
 					["showLabel"] = true,
-					["showIcon"] = false,
-					["barName"] = "ChocolateBar2",
 					["showText"] = false,
+					["barName"] = "ChocolateBar2",
+					["showIcon"] = false,
 					["customLabel"] = "Q",
 				},
-				["Hekili"] = {
-					["enabled"] = false,
-					["isNew"] = false,
+				["Atlas"] = {
+					["align"] = "right",
+					["showLabel"] = true,
+					["showIcon"] = false,
 					["barName"] = "ChocolateBar1",
+					["showText"] = false,
+					["customLabel"] = "A",
 				},
-				["CB_PlayedTime"] = {
-					["enabled"] = false,
-					["index"] = 4,
-					["isNew"] = false,
-					["barName"] = "ChocolateBar2",
+				["BigWigs"] = {
+					["index"] = 2,
+					["align"] = "center",
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
 				},
 				["Details"] = {
 					["enabled"] = false,
@@ -239,6 +234,15 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
+				["|cff00fe00LootAppraiser Wrath|r"] = {
+					["enabled"] = false,
+					["index"] = 3,
+					["isNew"] = false,
+					["showText"] = false,
+					["barName"] = "ChocolateBar2",
+					["showIcon"] = false,
+					["customLabel"] = "LA",
+				},
 				["Track Everything"] = {
 					["enabled"] = false,
 					["index"] = 4,
@@ -250,45 +254,11 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "TE",
 				},
-				["|cff00fe00LootAppraiser Wrath|r"] = {
+				["Leatrix_Maps"] = {
 					["enabled"] = false,
-					["index"] = 3,
-					["isNew"] = false,
-					["showIcon"] = false,
-					["barName"] = "ChocolateBar2",
-					["showText"] = false,
-					["customLabel"] = "LA",
-				},
-				["TestNoText"] = {
-					["enabled"] = false,
-					["index"] = 4,
-					["barName"] = "ChocolateBar1",
-				},
-				["Dugi"] = {
-					["barName"] = "ChocolateBar1",
-				},
-				["ItemRack"] = {
-					["index"] = 3,
 					["align"] = "right",
 					["isNew"] = false,
-					["showLabel"] = true,
-					["showIcon"] = false,
-					["barName"] = "ChocolateBar1",
 					["showText"] = false,
-					["customLabel"] = "IR",
-				},
-				["AutoVendor"] = {
-					["index"] = 4,
-					["align"] = "right",
-					["showLabel"] = true,
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
-					["showIcon"] = false,
-					["customLabel"] = "AV",
-				},
-				["DetailsStreamer"] = {
-					["enabled"] = false,
-					["isNew"] = false,
 					["barName"] = "ChocolateBar1",
 				},
 				["PoisonCharges"] = {
@@ -302,13 +272,40 @@ ChocolateBarDB = {
 					["showIcon"] = false,
 					["customLabel"] = "BIS",
 				},
+				["ItemRack"] = {
+					["index"] = 3,
+					["align"] = "right",
+					["isNew"] = false,
+					["showLabel"] = true,
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+					["showIcon"] = false,
+					["customLabel"] = "IR",
+				},
+				["AutoVendor"] = {
+					["index"] = 4,
+					["align"] = "right",
+					["showLabel"] = true,
+					["showIcon"] = false,
+					["barName"] = "ChocolateBar1",
+					["showText"] = false,
+					["customLabel"] = "AV",
+				},
+				["DetailsStreamer"] = {
+					["enabled"] = false,
+					["isNew"] = false,
+					["barName"] = "ChocolateBar1",
+				},
+				["Dugi"] = {
+					["barName"] = "ChocolateBar1",
+				},
 				["GearQuipper"] = {
 					["index"] = 3,
 					["isNew"] = false,
 					["showLabel"] = true,
-					["showText"] = false,
-					["barName"] = "ChocolateBar2",
 					["showIcon"] = false,
+					["barName"] = "ChocolateBar2",
+					["showText"] = false,
 					["customLabel"] = "GQ",
 				},
 				["Puggle_Broker"] = {
@@ -316,61 +313,66 @@ ChocolateBarDB = {
 					["align"] = "right",
 					["isNew"] = false,
 					["showLabel"] = true,
-					["showIcon"] = false,
-					["barName"] = "ChocolateBar1",
 					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+					["showIcon"] = false,
 					["customLabel"] = "P",
 				},
-				["TradeSkillMaster"] = {
+				["Details!"] = {
+					["widthBehavior"] = "free",
+					["align"] = "center",
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+					["index"] = 3,
+				},
+				["Skada"] = {
+					["enabled"] = false,
+					["barName"] = "ChocolateBar1",
+				},
+				["Grid2"] = {
+					["enabled"] = false,
 					["index"] = 2,
 					["isNew"] = false,
 					["showLabel"] = true,
 					["showIcon"] = false,
 					["barName"] = "ChocolateBar2",
 					["showText"] = false,
-					["customLabel"] = "TSM",
-				},
-				["Skada"] = {
-					["enabled"] = false,
-					["barName"] = "ChocolateBar1",
-				},
-				["BugSack"] = {
-					["index"] = 3,
-					["isNew"] = false,
-					["showIcon"] = false,
-					["barName"] = "ChocolateBar2",
-					["customLabel"] = "B",
+					["customLabel"] = "G2",
 				},
 				["NWB"] = {
 					["enabled"] = false,
 					["index"] = 3,
 					["isNew"] = false,
 					["showLabel"] = true,
-					["showIcon"] = false,
-					["barName"] = "ChocolateBar2",
 					["showText"] = false,
+					["barName"] = "ChocolateBar2",
+					["showIcon"] = false,
 					["customLabel"] = "N",
 				},
-				["GatherMate2"] = {
+				["MoreChocolate"] = {
 					["enabled"] = false,
 					["align"] = "right",
 					["isNew"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
-				["NIT"] = {
-					["index"] = 1,
+				["Broker_KillTrack"] = {
+					["index"] = 2,
+					["showLabel"] = true,
+					["showText"] = false,
+					["barName"] = "ChocolateBar2",
+					["showIcon"] = false,
+					["customLabel"] = "KT",
+				},
+				["PallyPower"] = {
+					["enabled"] = false,
+					["index"] = 2,
 					["isNew"] = false,
 					["showLabel"] = true,
 					["showText"] = false,
 					["barName"] = "ChocolateBar2",
 					["showIcon"] = false,
-					["customLabel"] = "NIT",
-				},
-				["CB_Entertainer"] = {
-					["enabled"] = false,
-					["index"] = 2,
-					["barName"] = "ChocolateBar1",
+					["customLabel"] = "PP",
 				},
 				["CB_ItemLevel"] = {
 					["enabled"] = false,
@@ -389,30 +391,29 @@ ChocolateBarDB = {
 					["widthBehavior"] = "free",
 					["customLabel"] = "L",
 				},
-				["PallyPower"] = {
+				["CB_Entertainer"] = {
+					["enabled"] = false,
+					["index"] = 2,
+					["barName"] = "ChocolateBar1",
+				},
+				["LFGBulletinBoard"] = {
 					["enabled"] = false,
 					["index"] = 2,
 					["isNew"] = false,
 					["showLabel"] = true,
-					["showIcon"] = false,
+					["showText"] = false,
 					["barName"] = "ChocolateBar2",
-					["showText"] = false,
-					["customLabel"] = "PP",
-				},
-				["TownsfolkTracker"] = {
-					["enabled"] = false,
-					["align"] = "right",
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
+					["showIcon"] = false,
+					["customLabel"] = "LFG",
 				},
 				["AtlasLoot"] = {
 					["index"] = 1,
 					["align"] = "right",
 					["isNew"] = false,
 					["showLabel"] = true,
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
 					["showIcon"] = false,
+					["barName"] = "ChocolateBar1",
+					["showText"] = false,
 					["customLabel"] = "AL",
 				},
 				["Prat"] = {
@@ -426,9 +427,9 @@ ChocolateBarDB = {
 					["index"] = 3,
 					["align"] = "right",
 					["showLabel"] = true,
-					["showIcon"] = false,
-					["barName"] = "ChocolateBar1",
 					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+					["showIcon"] = false,
 					["customLabel"] = "R",
 				},
 				["TellMeWhen"] = {
@@ -436,9 +437,9 @@ ChocolateBarDB = {
 					["index"] = 2,
 					["isNew"] = false,
 					["showLabel"] = true,
-					["showText"] = false,
-					["barName"] = "ChocolateBar2",
 					["showIcon"] = false,
+					["barName"] = "ChocolateBar2",
+					["showText"] = false,
 					["customLabel"] = "TMW",
 				},
 				["PlayedTime"] = {
@@ -446,52 +447,48 @@ ChocolateBarDB = {
 					["index"] = 6,
 					["barName"] = "ChocolateBar1",
 				},
-				["LFGBulletinBoard"] = {
+				["TownsfolkTracker"] = {
 					["enabled"] = false,
-					["index"] = 2,
-					["isNew"] = false,
-					["showLabel"] = true,
-					["showIcon"] = false,
-					["barName"] = "ChocolateBar2",
+					["align"] = "right",
 					["showText"] = false,
-					["customLabel"] = "LFG",
+					["barName"] = "ChocolateBar1",
 				},
 				["MinimapIcon"] = {
 					["enabled"] = false,
 					["index"] = 1,
 					["barName"] = "ChocolateBar1",
 				},
-				["Broker_KillTrack"] = {
-					["index"] = 2,
+				["NIT"] = {
+					["index"] = 1,
+					["isNew"] = false,
 					["showLabel"] = true,
 					["showIcon"] = false,
 					["barName"] = "ChocolateBar2",
 					["showText"] = false,
-					["customLabel"] = "KT",
+					["customLabel"] = "NIT",
 				},
-				["MoreChocolate"] = {
+				["GatherMate2"] = {
 					["enabled"] = false,
 					["align"] = "right",
 					["isNew"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
-				["Grid2"] = {
-					["enabled"] = false,
+				["BugSack"] = {
+					["index"] = 3,
+					["isNew"] = false,
+					["showIcon"] = false,
+					["barName"] = "ChocolateBar2",
+					["customLabel"] = "B",
+				},
+				["TradeSkillMaster"] = {
 					["index"] = 2,
 					["isNew"] = false,
 					["showLabel"] = true,
 					["showText"] = false,
 					["barName"] = "ChocolateBar2",
 					["showIcon"] = false,
-					["customLabel"] = "G2",
-				},
-				["Details!"] = {
-					["index"] = 3,
-					["align"] = "center",
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
-					["widthBehavior"] = "free",
+					["customLabel"] = "TSM",
 				},
 				["NPCScan"] = {
 					["isNew"] = false,
@@ -503,11 +500,9 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
-				["Leatrix_Maps"] = {
+				["TestNoText"] = {
 					["enabled"] = false,
-					["align"] = "right",
-					["isNew"] = false,
-					["showText"] = false,
+					["index"] = 4,
 					["barName"] = "ChocolateBar1",
 				},
 				["Dejunk"] = {
@@ -515,9 +510,9 @@ ChocolateBarDB = {
 					["align"] = "right",
 					["isNew"] = false,
 					["showLabel"] = true,
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
 					["showIcon"] = false,
+					["barName"] = "ChocolateBar1",
+					["showText"] = false,
 					["customLabel"] = "DJ",
 				},
 				["Plexus"] = {
@@ -533,9 +528,10 @@ ChocolateBarDB = {
 					["isNew"] = false,
 					["barName"] = "ChocolateBar2",
 				},
-				["AdiBags"] = {
-					["enabled"] = false,
+				["CharacterNotes"] = {
+					["align"] = "right",
 					["isNew"] = false,
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
 				["gmMoney"] = {
@@ -544,9 +540,10 @@ ChocolateBarDB = {
 					["showIcon"] = false,
 					["barName"] = "ChocolateBar1",
 				},
-				["Omen"] = {
+				["BagnonLauncher"] = {
 					["enabled"] = false,
-					["align"] = "center",
+					["align"] = "right",
+					["isNew"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
@@ -558,7 +555,17 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 				},
 			},
+			["gap"] = 0,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
+			["fixedStrata"] = true,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["fontName"] = "Friz Quadrata TT",
+			["textOffset"] = 2,
+			["height"] = 20,
+			["desaturated"] = false,
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -574,23 +581,16 @@ ChocolateBarDB = {
 					["barPoint"] = "TOPRIGHT",
 					["barName"] = "ChocolateBar2",
 					["align"] = "custom",
-					["width"] = 147,
-					["index"] = 1,
 					["barOffx"] = -88.3325424194336,
+					["index"] = 1,
+					["width"] = 147,
 				},
 			},
-			["desaturated"] = false,
-			["forceColor"] = false,
-			["gap"] = 0,
-			["textOffset"] = 2,
-			["height"] = 20,
-			["fixedStrata"] = true,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["textColor"] = {
 				["a"] = 1,
-				["b"] = 1,
-				["g"] = 1,
 				["r"] = 1,
+				["g"] = 1,
+				["b"] = 1,
 			},
 		},
 	},
@@ -604,8 +604,8 @@ CB_PlayedTime = {
 	},
 	["Moolatz-Golemagg"] = {
 		["total"] = 486819,
-		["timeAtThisLevel"] = 8219,
 		["timeStamp"] = 1074210.914,
+		["timeAtThisLevel"] = 8219,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -633,8 +633,8 @@ CB_PlayedTime = {
 	},
 	["Battitude-Golemagg"] = {
 		["total"] = 14555,
-		["timeStamp"] = 655476.6730000001,
 		["timeAtThisLevel"] = 1660,
+		["timeStamp"] = 655476.6730000001,
 	},
 	["Whatevs-"] = {
 		["total"] = 213,
@@ -646,25 +646,25 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 930496,
-		["timeStamp"] = 1133993.349,
-		["timeAtThisLevel"] = 76693,
+		["total"] = 935056,
+		["timeAtThisLevel"] = 919,
+		["timeStamp"] = 1221282.811,
 	},
-	["Mxyzptlk-Golemagg"] = {
-		["total"] = 29335,
+	["Mxyzptlk-"] = {
+		["total"] = 8794,
 	},
-	["Tandaram-Jin'do"] = {
-		["total"] = 97,
-		["timeStamp"] = 59401.909,
-		["timeAtThisLevel"] = 97,
+	["Battlearm-Golemagg"] = {
+		["total"] = 222242,
+		["timeStamp"] = 1212951.769,
+		["timeAtThisLevel"] = 20435,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
 	},
 	["Pitchwise-Ashbringer"] = {
 		["total"] = 2973,
-		["timeAtThisLevel"] = 2973,
 		["timeStamp"] = 1551182.832,
+		["timeAtThisLevel"] = 2973,
 	},
 	["Moolatz-Dreadnaught"] = {
 		["total"] = 33043,
@@ -672,15 +672,15 @@ CB_PlayedTime = {
 	["Dotwise-"] = {
 		["total"] = 3924,
 	},
-	["Vermina-Golemagg"] = {
-		["total"] = 139799,
-		["timeStamp"] = 61276.429,
-		["timeAtThisLevel"] = 3250,
+	["Tudum-Jin'do"] = {
+		["total"] = 316,
+		["timeAtThisLevel"] = 316,
+		["timeStamp"] = 60887.198,
 	},
 	["Provokator-Jin'do"] = {
 		["total"] = 22720,
-		["timeStamp"] = 45739.499,
 		["timeAtThisLevel"] = 418,
+		["timeStamp"] = 45739.499,
 	},
 	["Poklopac-Dreadnaught"] = {
 		["total"] = 234439,
@@ -691,110 +691,110 @@ CB_PlayedTime = {
 	["Nitwit-Dreadnaught"] = {
 		["total"] = 8735,
 	},
-	["Vermin-Golemagg"] = {
-		["total"] = 1368641,
-		["timeStamp"] = 1138791.569,
-		["timeAtThisLevel"] = 276094,
+	["Wells-Jin'do"] = {
+		["total"] = 11721,
+		["timeAtThisLevel"] = 4960,
+		["timeStamp"] = 774953.806,
 	},
-	["Koloman-"] = {
-		["total"] = 129,
+	["Battlearm-"] = {
+		["total"] = 1786,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 256805,
-		["timeStamp"] = 1134055.905,
-		["timeAtThisLevel"] = 251059,
+		["total"] = 256838,
+		["timeAtThisLevel"] = 251092,
+		["timeStamp"] = 1213115.681,
 	},
 	["Tudum-Ashbringer"] = {
 		["total"] = 4569,
-		["timeStamp"] = 43801.78,
 		["timeAtThisLevel"] = 1067,
+		["timeStamp"] = 43801.78,
 	},
 	["Kaonac-Jin'do"] = {
 		["total"] = 1,
-		["timeAtThisLevel"] = 1,
 		["timeStamp"] = 60973.364,
-	},
-	["Konac-Dreadnaught"] = {
-		["total"] = 89354,
+		["timeAtThisLevel"] = 1,
 	},
 	["Pitchwise-Dreadnaught"] = {
 		["total"] = 140587,
+	},
+	["Konac-Dreadnaught"] = {
+		["total"] = 89354,
 	},
 	["Handrmandr-Golemagg"] = {
 		["total"] = 1,
 	},
 	["Poklopac-MirageRaceway"] = {
 		["total"] = 333,
-		["timeStamp"] = 1556922.984,
 		["timeAtThisLevel"] = 333,
+		["timeStamp"] = 1556922.984,
 	},
 	["Judawise-"] = {
 		["total"] = 437,
 	},
-	["Greshnik-Dreadnaught"] = {
-		["total"] = 576,
+	["Verminz-"] = {
+		["total"] = 311368,
 	},
 	["Battlearm-Jin'do"] = {
 		["total"] = 489,
-		["timeStamp"] = 59180.812,
 		["timeAtThisLevel"] = 132,
-	},
-	["Korupcija-"] = {
-		["total"] = 21359,
-	},
-	["Elohssa-"] = {
-		["total"] = 3552,
-	},
-	["Miqa-Golemagg"] = {
-		["total"] = 4736,
-		["timeAtThisLevel"] = 1493,
-		["timeStamp"] = 8103.358,
-	},
-	["Pitchwise-"] = {
-		["total"] = 390,
-	},
-	["Dmitar-"] = {
-		["total"] = 1872,
-	},
-	["Nitwit-"] = {
-		["total"] = 680,
+		["timeStamp"] = 59180.812,
 	},
 	["Kosturko-"] = {
 		["total"] = 1457,
 	},
-	["Verminz-"] = {
-		["total"] = 311368,
+	["Elohssa-"] = {
+		["total"] = 3552,
+	},
+	["Dmitar-"] = {
+		["total"] = 1872,
+	},
+	["Pitchwise-"] = {
+		["total"] = 390,
+	},
+	["Miqa-Golemagg"] = {
+		["total"] = 4736,
+		["timeStamp"] = 8103.358,
+		["timeAtThisLevel"] = 1493,
+	},
+	["Nitwit-"] = {
+		["total"] = 680,
+	},
+	["Korupcija-"] = {
+		["total"] = 21359,
+	},
+	["Greshnik-Dreadnaught"] = {
+		["total"] = 576,
 	},
 	["Paydo-"] = {
 		["total"] = 18945,
 	},
 	["Augustin-Golemagg"] = {
 		["total"] = 434688,
-		["timeStamp"] = 66347.726,
 		["timeAtThisLevel"] = 12625,
+		["timeStamp"] = 66347.726,
 	},
-	["Battlearm-"] = {
-		["total"] = 1786,
+	["Koloman-"] = {
+		["total"] = 129,
 	},
-	["Wells-Jin'do"] = {
-		["total"] = 11721,
-		["timeStamp"] = 774953.806,
-		["timeAtThisLevel"] = 4960,
+	["Vermin-Golemagg"] = {
+		["total"] = 1373503,
+		["timeAtThisLevel"] = 280956,
+		["timeStamp"] = 1228684.043,
 	},
 	["Grgur-"] = {
 		["total"] = 1248,
 	},
-	["Tudum-Jin'do"] = {
-		["total"] = 316,
-		["timeStamp"] = 60887.198,
-		["timeAtThisLevel"] = 316,
+	["Vermina-Golemagg"] = {
+		["total"] = 139799,
+		["timeAtThisLevel"] = 3250,
+		["timeStamp"] = 61276.429,
 	},
-	["Battlearm-Golemagg"] = {
-		["total"] = 221647,
-		["timeAtThisLevel"] = 19840,
-		["timeStamp"] = 1140109.403,
+	["Tandaram-Jin'do"] = {
+		["total"] = 97,
+		["timeAtThisLevel"] = 97,
+		["timeStamp"] = 59401.909,
 	},
-	["Mxyzptlk-"] = {
-		["total"] = 8794,
+	["Mxyzptlk-Golemagg"] = {
+		["total"] = 29335,
 	},
 }
