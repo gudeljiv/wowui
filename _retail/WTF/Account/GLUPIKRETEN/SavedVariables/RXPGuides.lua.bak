@@ -1,0 +1,15 @@
+
+RXPData = {
+	["trainGenericSpells"] = true,
+	["gameVersion"] = 100002,
+}
+RXPDB = {
+	["profileKeys"] = {
+		["Vermins - Dentarg"] = "global",
+		["Tuka - Dentarg"] = "global",
+	},
+	["profiles"] = {
+		["global"] = {
+		},
+	},
+}

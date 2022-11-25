@@ -1,7 +1,7 @@
 !Colorz: disabled
 !Beautycase: disabled
-AdiBags: disabled
-AdiBags_Config: disabled
+AdiBags: enabled
+AdiBags_Config: enabled
 Align: disabled
 Aptechka: disabled
 AptechkaOptions: disabled

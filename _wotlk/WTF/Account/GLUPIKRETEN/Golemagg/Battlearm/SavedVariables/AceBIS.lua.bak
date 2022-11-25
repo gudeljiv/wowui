@@ -1,0 +1,13 @@
+
+AceBISGears = {
+	["FuryWarrior"] = true,
+	["SurvivalHunter"] = true,
+	["UnholyDeath Knight"] = true,
+	["AssassinationRogue"] = true,
+	["EnhancementShaman"] = true,
+	["P1"] = true,
+	["RetributionPaladin"] = true,
+	["FeralDruid"] = true,
+	["P0"] = true,
+	["ArmWarrior"] = true,
+}

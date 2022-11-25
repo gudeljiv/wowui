@@ -64,8 +64,8 @@ TrainAll: disabled
 WeaponSwingTimer: disabled
 whoaThickFrames_Classic: disabled
 CharacterStatsClassic: disabled
-TradeSkillMaster: enabled
-TradeSkillMaster_AppHelper: enabled
+TradeSkillMaster: disabled
+TradeSkillMaster_AppHelper: disabled
 nBuff: disabled
 nHealth: disabled
 nMainbar: disabled
@@ -88,8 +88,8 @@ DBM-AQ20: disabled
 DBM-AQ40: disabled
 DBM-ZG: disabled
 Questie: disabled
-ElvUI: enabled
-ElvUI_OptionsUI: enabled
+ElvUI: disabled
+ElvUI_OptionsUI: disabled
 ElvUI_VisualAuraTimers: disabled
 ElvUI_ExtraActionBars: disabled
 ElvUI_CastBarOverlay: disabled
@@ -100,3 +100,12 @@ ElvUI_DTBars2: disabled
 ElvUI_QuestXP: disabled
 ElvUI_CustomTags: disabled
 kExtraBossFrames: disabled
+Blizzard_ObjectiveTracker: enabled
+Blizzard_CompactRaidFrames: enabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: disabled
+RXPGuides: disabled
+WeakAuras: disabled
+WeakAurasModelPaths: disabled
+WeakAurasOptions: disabled
+WeakAurasTemplates: disabled

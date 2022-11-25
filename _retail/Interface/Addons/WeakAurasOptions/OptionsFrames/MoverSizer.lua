@@ -123,7 +123,7 @@ local function ConstructMover(frame)
   offscreenText:Hide()
   offscreenText:SetPoint("CENTER", arrow, "CENTER")
 
-  local lineX = frame:CreateLine(nil, "OVERLAY", 7)
+  local lineX = frame:CreateLine(nil, "OVERLAY")
   lineX:SetThickness(2)
   lineX:SetColorTexture(1,1,0)
   lineX:SetStartPoint("BOTTOMLEFT", UIParent)
@@ -131,7 +131,7 @@ local function ConstructMover(frame)
   lineX:Hide()
   lineX:SetIgnoreParentAlpha(true)
 
-  local lineY = frame:CreateLine(nil, "OVERLAY", 7)
+  local lineY = frame:CreateLine(nil, "OVERLAY")
   lineY:SetThickness(2)
   lineY:SetColorTexture(1,1,0)
   lineY:SetStartPoint("TOPLEFT", UIParent)
@@ -381,9 +381,9 @@ local function BuildAlignLines(mover)
     skipIds[child.id] = true
   end
 
-  for k, v in pairs(WeakAuras.displayButtons) do
-    local region = v.view.region
-    if not skipIds[k] and v.view.visibility ~= 0 and region then
+  for k, v in pairs(OptionsPrivate.displayButtons) do
+    local region = WeakAuras.GetRegion(v.data.id)
+    if not skipIds[k] and v.view.visibility ~= 0 and region and not region:IsAnchoringRestricted() then
       local scale = region:GetEffectiveScale() / UIParent:GetEffectiveScale()
       if not IsControlKeyDown() then
         tinsert(x, (region:GetLeft() or 0) * scale)
@@ -519,11 +519,13 @@ local function ConstructMoverSizer(parent)
     if data.regionType == "group" then
       mover:SetWidth((region.trx - region.blx) * scale)
       mover:SetHeight((region.try - region.bly) * scale)
-      mover:SetPoint("BOTTOMLEFT", mover.anchor or UIParent, mover.anchorPoint or "CENTER", (xOff + region.blx) * scale, (yOff + region.bly) * scale)
+      mover:SetPoint("BOTTOMLEFT", mover.anchor or UIParent, mover.anchorPoint or "CENTER",
+                     (xOff + region.blx) * scale, (yOff + region.bly) * scale)
     else
       mover:SetWidth(region:GetWidth() * scale)
       mover:SetHeight(region:GetHeight() * scale)
-      mover:SetPoint(mover.selfPoint or "CENTER", mover.anchor or UIParent, mover.anchorPoint or "CENTER", xOff * scale, yOff * scale)
+      mover:SetPoint(mover.selfPoint or "CENTER", mover.anchor or UIParent, mover.anchorPoint or "CENTER",
+                     xOff * scale, yOff * scale)
     end
     frame:SetPoint("BOTTOMLEFT", mover, "BOTTOMLEFT", -8, -8)
     frame:SetPoint("TOPRIGHT", mover, "TOPRIGHT", 8, 8)
@@ -635,7 +637,7 @@ local function ConstructMoverSizer(parent)
         data.yOffset = dY / scale
       end
       region:ResetPosition()
-      WeakAuras.Add(data, nil, true)
+      WeakAuras.Add(data)
       WeakAuras.UpdateThumbnail(data)
       local xOff, yOff
       mover.selfPoint, mover.anchor, mover.anchorPoint, xOff, yOff = region:GetPoint(1)
@@ -643,7 +645,8 @@ local function ConstructMoverSizer(parent)
       if data.regionType == "group" then
         mover:SetWidth((region.trx - region.blx) * scale)
         mover:SetHeight((region.try - region.bly) * scale)
-        mover:SetPoint("BOTTOMLEFT", mover.anchor, mover.anchorPoint, (xOff + region.blx) * scale, (yOff + region.bly) * scale)
+        mover:SetPoint("BOTTOMLEFT", mover.anchor, mover.anchorPoint,
+                       (xOff + region.blx) * scale, (yOff + region.bly) * scale)
       else
         mover:SetWidth(region:GetWidth() * scale)
         mover:SetHeight(region:GetHeight() * scale)
@@ -651,7 +654,8 @@ local function ConstructMoverSizer(parent)
       end
       OptionsPrivate.Private.AddParents(data)
       WeakAuras.FillOptions()
-      OptionsPrivate.Private.Animate("display", data.uid, "main", data.animation.main, WeakAuras.regions[data.id].region, false, nil, true)
+      OptionsPrivate.Private.Animate("display", data.uid, "main", data.animation.main,
+                                     OptionsPrivate.Private.EnsureRegion(data.id), false, nil, true)
       -- hide alignment lines
       frame.lineY:Hide()
       frame.lineX:Hide()
@@ -775,7 +779,8 @@ local function ConstructMoverSizer(parent)
         frame.text:Hide()
         frame:SetScript("OnUpdate", nil)
         WeakAuras.FillOptions()
-        OptionsPrivate.Private.Animate("display", data.uid, "main", data.animation.main, WeakAuras.regions[data.id].region, false, nil, true)
+        OptionsPrivate.Private.Animate("display", data.uid, "main", data.animation.main,
+                                       OptionsPrivate.Private.EnsureRegion(data.id), false, nil, true)
         -- hide alignment lines
         frame.lineY:Hide()
         frame.lineX:Hide()

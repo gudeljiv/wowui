@@ -1,4 +1,5 @@
 if not WeakAuras.IsLibsOK() then return end
+--- @type string, Private
 local AddonName, Private = ...
 
 local L = WeakAuras.L;
@@ -189,7 +190,11 @@ local funcs = {
     end
   end,
   UpdateTimerTick = function(self)
-    if self.tick_placement_mode == "ValueOffset" and self.state and self.state.progressType == "timed" and not self.paused then
+    if self.tick_placement_mode == "ValueOffset"
+       and self.state
+       and self.state.progressType == "timed"
+       and not self.paused
+    then
       if not self.TimerTick then
         self.TimerTick = self.UpdateTickPlacement
         self.parent:UpdateRegionHasTimerTick()
@@ -271,7 +276,9 @@ local funcs = {
     end
     local side = inverse and auraBarAnchorInverse or auraBarAnchor
     self:ClearAllPoints()
-    self:SetPoint("CENTER", self.parent.bar, side[self.orientation], offsetx + self.tick_xOffset, offsety + self.tick_yOffset)
+    self:SetPoint("CENTER", self.parent.bar, side[self.orientation],
+                  offsetx + self.tick_xOffset,
+                  offsety + self.tick_yOffset)
   end,
   SetAutomaticLength = function(self, automatic_length)
     if self.automatic_length ~= automatic_length then
@@ -409,4 +416,5 @@ local function supports(regionType)
   return regionType == "aurabar"
 end
 
-WeakAuras.RegisterSubRegionType("subtick", L["Tick"], supports, create, modify, onAcquire, onRelease, default, nil, properties);
+WeakAuras.RegisterSubRegionType("subtick", L["Tick"], supports, create, modify, onAcquire, onRelease,
+                                default, nil, properties);

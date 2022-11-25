@@ -1,7 +1,9 @@
+local AddonName, TemplatePrivate = ...
 local WeakAuras = WeakAuras
 if not WeakAuras.IsWrathClassic() then return end
 local L = WeakAuras.L
-local GetSpellInfo, tinsert, GetItemInfo, GetSpellDescription, C_Timer, Spell = GetSpellInfo, tinsert, GetItemInfo, GetSpellDescription, C_Timer, Spell
+local GetSpellInfo, tinsert, GetItemInfo, GetSpellDescription, C_Timer, Spell
+    = GetSpellInfo, tinsert, GetItemInfo, GetSpellDescription, C_Timer, Spell
 
 -- The templates tables are created on demand
 local templates =
@@ -1272,18 +1274,4 @@ itemInfoReceived:SetScript("OnEvent", function()
 end);
 
 
--- Enrich Display templates with default values
-for regionType, regionData in pairs(WeakAuras.regionOptions) do
-  if (regionData.templates) then
-    for _, item in ipairs(regionData.templates) do
-      for k, v in pairs(WeakAuras.regionTypes[regionType].default) do
-        if (item.data[k] == nil) then
-          item.data[k] = v;
-        end
-      end
-    end
-  end
-end
-
-
-WeakAuras.triggerTemplates = templates;
+TemplatePrivate.triggerTemplates = templates

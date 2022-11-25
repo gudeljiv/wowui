@@ -1,4 +1,5 @@
 if not WeakAuras.IsLibsOK() then return end
+--- @type string, Private
 local AddonName, Private = ...
 
 local SharedMedia = LibStub("LibSharedMedia-3.0");
@@ -342,7 +343,7 @@ local barPrototype = {
           local width = additionalBar.width or 0;
           local offset = additionalBar.offset or 0;
 
-          if (width ~= 0) then
+          if (width ~= 0 and valueWidth ~= 0) then
             if (forwardDirection) then
               startProgress = self.value + offset / valueWidth;
               endProgress = self.value + (width + offset) / valueWidth;
@@ -999,7 +1000,11 @@ local function create(parent)
   region.regionType = "aurabar"
   region:SetMovable(true);
   region:SetResizable(true);
-  region:SetMinResize(1, 1);
+  if region.SetResizeBounds then
+    region:SetResizeBounds(1, 1)
+  else
+    region:SetMinResize(1, 1)
+  end
 
   -- Create statusbar (inherit prototype)
   local bar = CreateFrame("Frame", nil, region);

@@ -3,10 +3,10 @@ AdiBagsDB = {
 	["char"] = {
 		["Vermin - Golemagg"] = {
 			["collapsedSections"] = {
-				["Bag #3#Bag #3"] = true,
+				["Bag #1#Bag #1"] = true,
 				["Bag #2#Bag #2"] = true,
 				["Bag #4#Bag #4"] = true,
-				["Bag #1#Bag #1"] = true,
+				["Bag #3#Bag #3"] = true,
 			},
 		},
 	},
@@ -53,28 +53,28 @@ AdiBagsDB = {
 						[2449] = "Trade Goods#Herbs",
 						[2772] = "Trade Goods#Mining",
 						[3355] = "Trade Goods#Herbs",
-						[3859] = "Trade Goods#Mining",
+						[11084] = "Trade Goods#Enchanting",
 						[3576] = "Trade Goods#Mining",
 						[2450] = "Trade Goods#Herbs",
 						[2836] = "Trade Goods#Mining",
 						[2592] = "Trade Goods#Cloth",
 						[3860] = "Trade Goods#Mining",
 						[2835] = "Trade Goods#Mining",
-						[2775] = "Trade Goods#Mining",
+						[2838] = "Trade Goods#Mining",
 						[3358] = "Trade Goods#Herbs",
 						[3577] = "Trade Goods#Mining",
-						[2841] = "Trade Goods#Mining",
-						[1710] = "Consumable#Potions",
-						[10620] = "Trade Goods#Mining",
-						[3356] = "Trade Goods#Herbs",
-						[2589] = "Trade Goods#Cloth",
-						[929] = "Consumable#Potions",
-						[2581] = "Trade Goods#Bandages",
 						[11083] = "Trade Goods#Enchanting",
+						[2581] = "Trade Goods#Bandages",
+						[10620] = "Trade Goods#Mining",
+						[929] = "Consumable#Potions",
+						[2589] = "Trade Goods#Cloth",
+						[3356] = "Trade Goods#Herbs",
+						[1710] = "Consumable#Potions",
+						[2841] = "Trade Goods#Mining",
 						[2452] = "Trade Goods#Herbs",
-						[2838] = "Trade Goods#Mining",
+						[2775] = "Trade Goods#Mining",
 						[10939] = "Trade Goods#Enchanting",
-						[11084] = "Trade Goods#Enchanting",
+						[3859] = "Trade Goods#Mining",
 					},
 				},
 			},
@@ -104,7 +104,9 @@ AdiBagsDB = {
 		},
 		["Equipment"] = {
 		},
-		["AdiBags_TooltipInfo"] = {
+		["MoneyFrame"] = {
+		},
+		["ItemSets"] = {
 		},
 		["DataSource"] = {
 			["profiles"] = {
@@ -115,28 +117,28 @@ AdiBagsDB = {
 		},
 		["CurrencyFrame"] = {
 		},
-		["ItemSets"] = {
-		},
 		["Junk"] = {
 		},
-		["MoneyFrame"] = {
+		["AdiBags_TooltipInfo"] = {
 		},
 	},
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Default",
-		["Mxym - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
 		["Handrmandr - Dentarg"] = "Default",
-		["Augustin - Golemagg"] = "Default",
-		["Grgur - Golemagg"] = "Default",
-		["Jaroslav - Golemagg"] = "Default",
-		["Mxys - Golemagg"] = "Default",
-		["Klhjakhsgdjh - Golemagg"] = "Default",
-		["Antun - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
-		["Vermins - Dentarg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 		["Pitchwise - Dentarg"] = "Default",
+		["Konza - Dentarg"] = "Default",
+		["Mxym - Golemagg"] = "Default",
+		["Tuka - Dentarg"] = "Default",
+		["Augustin - Golemagg"] = "Default",
+		["Grgur - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Klhjakhsgdjh - Golemagg"] = "Default",
+		["Antun - Golemagg"] = "Default",
+		["Vermins - Dentarg"] = "Default",
+		["Mxys - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 	},
 	["profiles"] = {
@@ -144,7 +146,10 @@ AdiBagsDB = {
 			["virtualStacks"] = {
 				["incomplete"] = true,
 			},
-			["scale"] = 1,
+			["columnWidth"] = {
+				["Backpack"] = 6,
+				["Bank"] = 8,
+			},
 			["maxHeight"] = 0.3,
 			["skin"] = {
 				["BankColor"] = {
@@ -161,14 +166,14 @@ AdiBagsDB = {
 					["xOffset"] = -177.833374023438,
 					["yOffset"] = 386.666717529297,
 				},
+				["Bank"] = {
+					["xOffset"] = 130.8575439453125,
+					["yOffset"] = -285.8861083984375,
+				},
 				["Backpack"] = {
 					["xOffset"] = -361.459716796875,
 					["point"] = "TOPRIGHT",
 					["yOffset"] = -500.3392333984375,
-				},
-				["Bank"] = {
-					["xOffset"] = 130.8575439453125,
-					["yOffset"] = -285.8861083984375,
 				},
 			},
 			["filters"] = {
@@ -183,10 +188,7 @@ AdiBagsDB = {
 				["ItemLevel"] = false,
 			},
 			["positionMode"] = "manual",
-			["columnWidth"] = {
-				["Bank"] = 8,
-				["Backpack"] = 6,
-			},
+			["scale"] = 1,
 		},
 	},
 }

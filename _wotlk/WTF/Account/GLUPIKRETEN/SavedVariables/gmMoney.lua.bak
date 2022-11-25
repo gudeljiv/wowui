@@ -1,16 +1,28 @@
 
 GMMONEY = {
+	["Hydraxian Waterlords"] = {
+		["Battlearm"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "HUNTER",
+		},
+	},
+	["Mirage Raceway"] = {
+		["Poklopac"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "HUNTER",
+		},
+	},
 	["Golemagg"] = {
 		["Battlearm"] = {
-			["GOLD"] = 18265682,
+			["GOLD"] = 27519082,
 			["CLASS"] = "DEATHKNIGHT",
 		},
 		["Mxzq"] = {
-			["GOLD"] = 5408280,
+			["GOLD"] = 7830476,
 			["CLASS"] = "HUNTER",
 		},
 		["Mxyz"] = {
-			["GOLD"] = 11570395,
+			["GOLD"] = 12936375,
 			["CLASS"] = "PRIEST",
 		},
 		["Handrmandr"] = {
@@ -42,20 +54,8 @@ GMMONEY = {
 			["CLASS"] = "WARLOCK",
 		},
 		["Vermin"] = {
-			["GOLD"] = 111895677,
+			["GOLD"] = 113694837,
 			["CLASS"] = "WARRIOR",
-		},
-	},
-	["Mirage Raceway"] = {
-		["Poklopac"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "HUNTER",
-		},
-	},
-	["Hydraxian Waterlords"] = {
-		["Battlearm"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "HUNTER",
 		},
 	},
 	["Jin'do"] = {
@@ -84,6 +84,22 @@ GMMONEY = {
 			["CLASS"] = "HUNTER",
 		},
 	},
+	["Ashbringer"] = {
+		["Tudum"] = {
+			["GOLD"] = 112,
+			["CLASS"] = "WARRIOR",
+		},
+		["Pitchwise"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "SHAMAN",
+		},
+	},
+	["Stonespine"] = {
+		["Vermins"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+	},
 	["Dreadnaught"] = {
 		["Poklopac"] = {
 			["GOLD"] = 686231,
@@ -108,22 +124,6 @@ GMMONEY = {
 		["Pitchwise"] = {
 			["GOLD"] = 70411,
 			["CLASS"] = "WARRIOR",
-		},
-	},
-	["Stonespine"] = {
-		["Vermins"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "WARRIOR",
-		},
-	},
-	["Ashbringer"] = {
-		["Tudum"] = {
-			["GOLD"] = 112,
-			["CLASS"] = "WARRIOR",
-		},
-		["Pitchwise"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "SHAMAN",
 		},
 	},
 }

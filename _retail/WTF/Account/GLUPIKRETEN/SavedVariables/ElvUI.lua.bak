@@ -14,23 +14,23 @@ ElvDB = {
 						nil, -- [2]
 						nil, -- [3]
 						nil, -- [4]
-						{
-							nil, -- [1]
-							nil, -- [2]
-							nil, -- [3]
-							true, -- [4]
-						}, -- [5]
+						nil, -- [5]
 						nil, -- [6]
+						nil, -- [7]
+						nil, -- [8]
 						{
 							nil, -- [1]
 							nil, -- [2]
 							nil, -- [3]
 							true, -- [4]
-						}, -- [7]
-						nil, -- [8]
-						nil, -- [9]
+						}, -- [9]
 						nil, -- [10]
-						nil, -- [11]
+						{
+							nil, -- [1]
+							nil, -- [2]
+							nil, -- [3]
+							true, -- [4]
+						}, -- [11]
 						nil, -- [12]
 						{
 							nil, -- [1]
@@ -52,18 +52,6 @@ ElvDB = {
 		},
 		["general"] = {
 			["UIScale"] = 0.5333333333333333,
-		},
-		["nameplates"] = {
-			["filters"] = {
-				["ElvUI_NonTarget"] = {
-				},
-				["ElvUI_Explosives"] = {
-				},
-				["ElvUI_Target"] = {
-				},
-				["ElvUI_Boss"] = {
-				},
-			},
 		},
 	},
 	["DisabledAddOns"] = {
@@ -97,9 +85,9 @@ ElvDB = {
 					["size"] = 50,
 				},
 				["valuecolor"] = {
-					["b"] = 0.427450031042099,
-					["g"] = 0.6078417897224426,
-					["r"] = 0.7764688730239868,
+					["b"] = 0.4470588564872742,
+					["g"] = 0.8274510502815247,
+					["r"] = 0.6666666865348816,
 				},
 				["font"] = "Arial Narrow",
 				["objectiveFrameHeight"] = 400,
@@ -167,9 +155,9 @@ ElvDB = {
 				["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,-1,191",
 				["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-342,100",
 				["BelowMinimapContainerMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-4,-274",
-				["ArenaHeaderMover"] = "BOTTOMRIGHT,ElvUIParent,RIGHT,-105,-165",
-				["TalkingHeadFrameMover"] = "BOTTOM,ElvUIParent,BOTTOM,-1,373",
 				["ElvAB_6"] = "BOTTOM,ElvUIParent,BOTTOM,-1,139",
+				["TalkingHeadFrameMover"] = "BOTTOM,ElvUIParent,BOTTOM,-1,373",
+				["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,97",
 				["AltPowerBarMover"] = "TOP,ElvUIParent,TOP,-1,-36",
 				["ElvUIBankMover"] = "BOTTOMLEFT,LeftChatPanel,BOTTOMLEFT,0,25",
 				["ElvAB_5"] = "BOTTOM,ElvUIParent,BOTTOM,0,4",
@@ -181,7 +169,7 @@ ElvDB = {
 				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,273",
 				["AzeriteBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-3,-245",
 				["HonorBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-3,-255",
-				["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,97",
+				["ArenaHeaderMover"] = "BOTTOMRIGHT,ElvUIParent,RIGHT,-105,-165",
 				["TooltipMover"] = "BOTTOMRIGHT,RightChatToggleButton,BOTTOMRIGHT,0,0",
 				["ElvUF_TankMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-186",
 				["BossHeaderMover"] = "BOTTOMRIGHT,ElvUIParent,RIGHT,-105,-165",
@@ -210,7 +198,7 @@ ElvDB = {
 			},
 			["layoutSetting"] = "dpsCaster",
 			["unitframe"] = {
-				["smoothbars"] = true,
+				["font"] = "Arial Narrow",
 				["units"] = {
 					["raid3"] = {
 						["rdebuffs"] = {
@@ -392,7 +380,7 @@ ElvDB = {
 						},
 					},
 				},
-				["font"] = "Arial Narrow",
+				["statusbar"] = "Melli",
 				["colors"] = {
 					["healthclass"] = true,
 					["auraBarBuff"] = {
@@ -412,7 +400,7 @@ ElvDB = {
 						["r"] = 0.1,
 					},
 				},
-				["statusbar"] = "Melli",
+				["smoothbars"] = true,
 			},
 			["datatexts"] = {
 				["font"] = "Arial Narrow",
@@ -502,7 +490,7 @@ ElvDB = {
 			["Korupcija"] = 69,
 			["Mulac"] = 66,
 			["Handrmandr"] = 83,
-			["Vermins"] = 16766292,
+			["Vermins"] = 1956766292,
 			["Govance"] = 38,
 			["Konza"] = 29,
 			["Kostur"] = 34,
@@ -576,16 +564,16 @@ ElvPrivateDB = {
 			["install_complete"] = 12.91,
 		},
 		["Vermins - Dentarg"] = {
-			["general"] = {
-				["normTex"] = "Melli",
-				["dmgfont"] = "Arial Narrow",
-				["nameplateFont"] = "Arial Narrow",
-				["namefont"] = "Arial Narrow",
-				["nameplateLargeFont"] = "Arial Narrow",
-				["glossTex"] = "Melli",
-			},
 			["bags"] = {
 				["enable"] = false,
+			},
+			["general"] = {
+				["normTex"] = "Melli",
+				["nameplateFont"] = "Arial Narrow",
+				["glossTex"] = "Melli",
+				["namefont"] = "Arial Narrow",
+				["nameplateLargeFont"] = "Arial Narrow",
+				["dmgfont"] = "Arial Narrow",
 			},
 			["install_complete"] = 12.91,
 		},

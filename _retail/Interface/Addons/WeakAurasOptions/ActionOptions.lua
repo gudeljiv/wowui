@@ -102,8 +102,8 @@ function OptionsPrivate.GetActionOptions(data)
         name = L["Message Type"],
         order = 2,
         values = OptionsPrivate.Private.send_chat_message_types,
+        sorting = OptionsPrivate.Private.SortOrderForValues(OptionsPrivate.Private.send_chat_message_types),
         disabled = function() return not data.actions.start.do_message end,
-        control = "WeakAurasSortedDropdown"
       },
       start_message_warning = {
         type = "description",
@@ -198,6 +198,7 @@ function OptionsPrivate.GetActionOptions(data)
       },
       start_sound_repeat = {
         type = "range",
+        control = "WeakAurasSpinBox",
         width = WeakAuras.normalWidth,
         name = L["Repeat After"],
         order = 8.2,
@@ -219,8 +220,8 @@ function OptionsPrivate.GetActionOptions(data)
         name = L["Sound"],
         order = 8.4,
         values = OptionsPrivate.Private.sound_types,
+        sorting = OptionsPrivate.Private.SortOrderForValues(OptionsPrivate.Private.sound_types),
         disabled = function() return not data.actions.start.do_sound end,
-        control = "WeakAurasSortedDropdown"
       },
       start_sound_channel = {
         type = "select",
@@ -358,6 +359,7 @@ function OptionsPrivate.GetActionOptions(data)
       },
       start_glow_lines = {
         type = "range",
+        control = "WeakAurasSpinBox",
         width = WeakAuras.normalWidth,
         name = L["Lines & Particles"],
         order = 10.81,
@@ -377,6 +379,7 @@ function OptionsPrivate.GetActionOptions(data)
       },
       start_glow_frequency = {
         type = "range",
+        control = "WeakAurasSpinBox",
         width = WeakAuras.normalWidth,
         name = L["Frequency"],
         order = 10.82,
@@ -396,6 +399,7 @@ function OptionsPrivate.GetActionOptions(data)
       },
       start_glow_length = {
         type = "range",
+        control = "WeakAurasSpinBox",
         width = WeakAuras.normalWidth,
         name = L["Length"],
         order = 10.83,
@@ -414,6 +418,7 @@ function OptionsPrivate.GetActionOptions(data)
       },
       start_glow_thickness = {
         type = "range",
+        control = "WeakAurasSpinBox",
         width = WeakAuras.normalWidth,
         name = L["Thickness"],
         order = 10.84,
@@ -432,6 +437,7 @@ function OptionsPrivate.GetActionOptions(data)
       },
       start_glow_XOffset = {
         type = "range",
+        control = "WeakAurasSpinBox",
         width = WeakAuras.normalWidth,
         name = L["X-Offset"],
         order = 10.85,
@@ -448,6 +454,7 @@ function OptionsPrivate.GetActionOptions(data)
       },
       start_glow_YOffset = {
         type = "range",
+        control = "WeakAurasSpinBox",
         width = WeakAuras.normalWidth,
         name = L["Y-Offset"],
         order = 10.86,
@@ -464,6 +471,7 @@ function OptionsPrivate.GetActionOptions(data)
       },
       start_glow_scale = {
         type = "range",
+        control = "WeakAurasSpinBox",
         width = WeakAuras.normalWidth,
         name = L["Scale"],
         order = 10.87,
@@ -517,8 +525,8 @@ function OptionsPrivate.GetActionOptions(data)
         name = L["Message Type"],
         order = 22,
         values = OptionsPrivate.Private.send_chat_message_types,
+        sorting = OptionsPrivate.Private.SortOrderForValues(OptionsPrivate.Private.send_chat_message_types),
         disabled = function() return not data.actions.finish.do_message end,
-        control = "WeakAurasSortedDropdown"
       },
       finish_message_warning = {
         type = "description",
@@ -580,7 +588,7 @@ function OptionsPrivate.GetActionOptions(data)
         name = L["Voice"],
         order = 23.2,
         disabled = function() return not data.actions.finish.do_message end,
-        hidden = function() return (not WeakAuras.IsRetail()) or data.actions.finish.message_type ~= "TTS" end,
+        hidden = function() return (WeakAuras.IsClassic()) or data.actions.finish.message_type ~= "TTS" end,
         values = OptionsPrivate.Private.tts_voices,
         desc = L["Available Voices are system specific"]
       },
@@ -607,8 +615,8 @@ function OptionsPrivate.GetActionOptions(data)
         name = L["Sound"],
         order = 28.1,
         values = OptionsPrivate.Private.sound_types,
+        sorting = OptionsPrivate.Private.SortOrderForValues(OptionsPrivate.Private.sound_types),
         disabled = function() return not data.actions.finish.do_sound end,
-        control = "WeakAurasSortedDropdown"
       },
       finish_sound_channel = {
         type = "select",
@@ -752,6 +760,7 @@ function OptionsPrivate.GetActionOptions(data)
       },
       finish_glow_lines = {
         type = "range",
+        control = "WeakAurasSpinBox",
         width = WeakAuras.normalWidth,
         name = L["Lines & Particles"],
         order = 30.81,
@@ -771,6 +780,7 @@ function OptionsPrivate.GetActionOptions(data)
       },
       finish_glow_frequency = {
         type = "range",
+        control = "WeakAurasSpinBox",
         width = WeakAuras.normalWidth,
         name = L["Frequency"],
         order = 30.82,
@@ -790,6 +800,7 @@ function OptionsPrivate.GetActionOptions(data)
       },
       finish_glow_length = {
         type = "range",
+        control = "WeakAurasSpinBox",
         width = WeakAuras.normalWidth,
         name = L["Length"],
         order = 30.83,
@@ -808,6 +819,7 @@ function OptionsPrivate.GetActionOptions(data)
       },
       finish_glow_thickness = {
         type = "range",
+        control = "WeakAurasSpinBox",
         width = WeakAuras.normalWidth,
         name = L["Thickness"],
         order = 30.84,
@@ -826,6 +838,7 @@ function OptionsPrivate.GetActionOptions(data)
       },
       finish_glow_XOffset = {
         type = "range",
+        control = "WeakAurasSpinBox",
         width = WeakAuras.normalWidth,
         name = L["X-Offset"],
         order = 30.85,
@@ -842,6 +855,7 @@ function OptionsPrivate.GetActionOptions(data)
       },
       finish_glow_YOffset = {
         type = "range",
+        control = "WeakAurasSpinBox",
         width = WeakAuras.normalWidth,
         name = L["Y-Offset"],
         order = 30.86,
@@ -858,6 +872,7 @@ function OptionsPrivate.GetActionOptions(data)
       },
       finish_glow_scale = {
         type = "range",
+        control = "WeakAurasSpinBox",
         width = WeakAuras.normalWidth,
         name = L["Scale"],
         order = 30.87,

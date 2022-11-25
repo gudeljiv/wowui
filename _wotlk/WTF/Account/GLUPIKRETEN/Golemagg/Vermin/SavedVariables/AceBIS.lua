@@ -1,0 +1,22 @@
+
+AceBISGears = {
+	["FuryWarrior"] = true,
+	["SurvivalHunter"] = true,
+	["ProtectionWarrior"] = true,
+	["ArcaneMage"] = true,
+	["UnholyDeath Knight"] = true,
+	["RetributionPaladin"] = true,
+	["FeralDruid"] = true,
+	["ArmWarrior"] = true,
+	["ElementalShaman"] = true,
+	["EnhancementShaman"] = true,
+	["ProtectionPaladin"] = true,
+	["ShadowPriest"] = true,
+	["AssassinationRogue"] = true,
+	["RestorationDruid"] = true,
+	["AfflictionWarlock"] = true,
+	["BalanceDruid"] = true,
+	["RestorationShaman"] = true,
+	["P0"] = true,
+	["P1"] = true,
+}

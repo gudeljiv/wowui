@@ -31,7 +31,7 @@ Postal3DB = {
 				"Miqa|Golemagg|Horde|6|PRIEST", -- [6]
 				"Moolatz|Golemagg|Horde|70|DRUID", -- [7]
 				"Mxyz|Golemagg|Horde|5|PRIEST", -- [8]
-				"Mxzq|Golemagg|Horde|72|HUNTER", -- [9]
+				"Mxzq|Golemagg|Horde|73|HUNTER", -- [9]
 				"Pitchwise|Ashbringer|Horde|1|SHAMAN", -- [10]
 				"Poklopac|Mirage Raceway|Horde|1|HUNTER", -- [11]
 				"Provokator|Jin'do|Horde|11|HUNTER", -- [12]

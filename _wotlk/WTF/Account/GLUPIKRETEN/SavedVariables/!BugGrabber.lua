@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 7686,
+	["session"] = 7696,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -6402,54 +6402,61 @@ BugGrabberDB = {
 			["counter"] = 32,
 		}, -- [823]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'LFGBulletinBoard' tried to call the protected function 'Search()'.",
-			["time"] = "2022/11/17 17:34:09",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:480: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:480>\n[string \"=[C]\"]: in function `Search'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:225: in function `LFGBrowse_DoSearch'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:178: in function `SearchActiveEntry'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGParentFrame.lua\"]:92: in function `LFGParentFrame_SearchActiveEntry'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGListing.lua\"]:67: in function <...s\\Blizzard_LookingForGroupUI\\Blizzard_LFGListing.lua:49>",
-			["session"] = 7650,
-			["counter"] = 4,
-		}, -- [824]
-		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Questie' tried to call the protected function 'Questie_TrackedAchievements:SetHeight()'.",
 			["time"] = "2022/10/15 15:22:21",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:480: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:480>\n[string \"=[C]\"]: in function `SetHeight'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\AchievementTracker.lua\"]:67: in function `LoadAchievements'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\AchievementTracker.lua\"]:96: in function <...ddOns\\Questie\\Modules\\Tracker\\AchievementTracker.lua:89>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `Fire'\n[string \"@Interface\\AddOns\\AuctionFaster\\Libs\\AceEvent-3.0\\AceEvent-3.0-4.lua\"]:120: in function <...Ons\\AuctionFaster\\Libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 7653,
 			["counter"] = 13,
-		}, -- [825]
+		}, -- [824]
 		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'NugKeyFeedback' tried to call the protected function 'CopyToClipboard()'.",
 			["time"] = "2022/11/22 11:26:17",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:480: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:480>\n[string \"=[C]\"]: in function `CopyToClipboard'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:97: in function `FrameStackTooltip_HandleFrameCommand'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:67: in function `command'\n[string \"@Interface\\SharedXML\\KeyCommand.lua\"]:47: in function `Update'\n[string \"@Interface\\SharedXML\\KeyCommand.lua\"]:111: in function `KeyCommand_Update'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:301: in function <...e\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools.lua:300>",
 			["session"] = 7659,
 			["counter"] = 1,
-		}, -- [826]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'AutoEquipCursorItem()'.",
-			["time"] = "2022/11/22 11:44:30",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:480: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:480>\n[string \"=[C]\"]: in function `AutoEquipCursorItem'\n[string \"*:OnMouseUp\"]:4: in function `oldCharacterModelFrame_OnMouseUp'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRackButtons.lua\"]:126: in function <Interface\\AddOns\\ItemRack\\ItemRackButtons.lua:122>",
-			["session"] = 7660,
-			["counter"] = 1,
-		}, -- [827]
+		}, -- [825]
 		{
 			["message"] = "TellMeWhen: Unknown class DRUID",
 			["time"] = "2022/11/22 19:13:45",
 			["stack"] = "[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Spells\\ClassSpellCache.lua\"]:276: in function <...ellMeWhen\\Components\\Core\\Spells\\ClassSpellCache.lua:228>\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.6.lua\"]:695: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:694>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[2]\"]:9: in function <[string \"safecall Dispatcher[2]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.6.lua\"]:827: in function `Fire'\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.6.lua\"]:1183: in function `InitializeDatabase'\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.6.lua\"]:1093: in function `?'\n[string \"@Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:119: in function <...ibs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...ibs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `Fire'\n[string \"@Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\AceEvent-3.0\\AceEvent-3.0-4.lua\"]:120: in function <...s\\AddOnSkins\\Libs\\Ace3\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 7666,
 			["counter"] = 3,
+		}, -- [826]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'AutoEquipCursorItem()'.",
+			["time"] = "2022/11/22 11:44:30",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:480: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:480>\n[string \"=[C]\"]: in function `AutoEquipCursorItem'\n[string \"*:OnMouseUp\"]:4: in function `oldCharacterModelFrame_OnMouseUp'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRackButtons.lua\"]:126: in function <Interface\\AddOns\\ItemRack\\ItemRackButtons.lua:122>",
+			["session"] = 7688,
+			["counter"] = 2,
+		}, -- [827]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'LFGBulletinBoard' tried to call the protected function 'Search()'.",
+			["time"] = "2022/11/17 17:34:09",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:480: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:480>\n[string \"=[C]\"]: in function `Search'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:225: in function `LFGBrowse_DoSearch'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:178: in function `SearchActiveEntry'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGParentFrame.lua\"]:92: in function `LFGParentFrame_SearchActiveEntry'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGListing.lua\"]:67: in function <...s\\Blizzard_LookingForGroupUI\\Blizzard_LFGListing.lua:49>",
+			["session"] = 7691,
+			["counter"] = 5,
 		}, -- [828]
+		{
+			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'unitscan' tried to call the protected function 'UNKNOWN()'.",
+			["time"] = "2022/09/25 11:24:28",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:42: in function `target'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:273: in function `UPDATE'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:3: in function <Interface\\AddOns\\unitscan\\unitscan.lua:3>",
+			["session"] = 7692,
+			["counter"] = 49,
+		}, -- [829]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
 			["time"] = "2022/02/16 20:30:17",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:913: in function `TargetofTarget_Update'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:416: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
-			["session"] = 7679,
-			["counter"] = 40,
-		}, -- [829]
-		{
-			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'unitscan' tried to call the protected function 'UNKNOWN()'.",
-			["time"] = "2022/09/25 11:24:28",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:42: in function `target'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:273: in function `UPDATE'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:3: in function <Interface\\AddOns\\unitscan\\unitscan.lua:3>",
-			["session"] = 7681,
-			["counter"] = 48,
+			["session"] = 7692,
+			["counter"] = 41,
 		}, -- [830]
+		{
+			["message"] = "Interface\\AddOns\\AceBIS\\GearWindow.lua:592: bad argument #1 to 'next' (table expected, got nil)",
+			["time"] = "2022/11/25 09:21:34",
+			["stack"] = "[string \"=[C]\"]: in function `next'\n[string \"@Interface\\AddOns\\AceBIS\\GearWindow.lua\"]:592: in function <Interface\\AddOns\\AceBIS\\GearWindow.lua:568>\n[string \"@Interface\\AddOns\\AceBIS\\GearWindow.lua\"]:981: in function `InitUI'\n[string \"@Interface\\AddOns\\AceBIS\\AceBIS-4.0.9.lua\"]:397: in function <Interface\\AddOns\\AceBIS\\AceBIS.lua:382>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:70: in function <...ace\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:65>\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:527: in function `EnableAddon'\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:630: in function <...ace\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:615>",
+			["session"] = 7693,
+			["counter"] = 2,
+		}, -- [831]
 	},
 }
