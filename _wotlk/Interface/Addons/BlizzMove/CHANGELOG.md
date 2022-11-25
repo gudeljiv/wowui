@@ -1,7 +1,6 @@
 # BlizzMove
 
-## [v3.5.5](https://github.com/Kiatra/BlizzMove/tree/v3.5.5) (2022-11-15)
-[Full Changelog](https://github.com/Kiatra/BlizzMove/compare/v3.5.4...v3.5.5) [Previous Releases](https://github.com/Kiatra/BlizzMove/releases)
+## [v3.5.6](https://github.com/Kiatra/BlizzMove/tree/v3.5.6) (2022-11-23)
+[Full Changelog](https://github.com/Kiatra/BlizzMove/compare/v3.5.5...v3.5.6) [Previous Releases](https://github.com/Kiatra/BlizzMove/releases)
 
-- TOC bump  
-- Corrected a small mistake in Professions Orders UI, and some minor cleanup  
+- Made BlizzMove hooks more robust when other addons try to overwrite them  

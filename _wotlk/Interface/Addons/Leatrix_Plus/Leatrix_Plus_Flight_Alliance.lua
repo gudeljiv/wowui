@@ -618,6 +618,7 @@
 				["0.53:0.61:0.47:0.59:0.41:0.73:0.52:0.72"] = 416, -- Thelsamar, Ironforge, Stormwind, Morgan's Vigil
 				["0.53:0.61:0.45:0.56:0.44:0.45:0.50:0.42"] = 323, -- Thelsamar, Menethil Harbor, Southshore, Aerie Peak
 				["0.53:0.61:0.47:0.65:0.41:0.73:0.50:0.75"] = 304, -- Thelsamar, Thorium Point, Stormwind, Lakeshire
+				["0.53:0.61:0.47:0.59:0.48:0.39"] = 319, -- Thelsamar, Ironforge, Chillwind Camp
 
 				-- Alliance: Thondroril River (Western Plaguelands)
 				["0.51:0.36:0.48:0.39:0.50:0.42"] = 123, -- Thondroril River, Chillwind Camp, Aerie Peak
@@ -1886,6 +1887,7 @@
 				["0.17:0.53:0.21:0.49:0.24:0.40:0.28:0.28:0.57:0.21:0.64:0.19"] = 294, -- Amber Ledge, Fizzcrank Airstrip, River's Heart, Death's Rise, Bouldercrag's Refuge, Ulduar
 				["0.17:0.53:0.21:0.49:0.24:0.40:0.28:0.28:0.57:0.21"] = 265, -- Amber Ledge, Fizzcrank Airstrip, River's Heart, Death's Rise, Bouldercrag's Refuge
 				["0.17:0.53:0.22:0.61:0.29:0.57:0.49:0.58:0.60:0.52:0.73:0.54"] = 268, -- Amber Ledge, Valiance Keep, Unu'pe, Moa'ki, Wintergarde Keep, Amberpine Lodge
+				["0.17:0.53:0.22:0.61:0.29:0.57:0.49:0.58:0.52:0.38"] = 245, -- Amber Ledge, Valiance Keep, Unu'pe, Moa'ki, Dalaran
 
 				-- Alliance: Borean Tundra: Fizzcrank Airstrip
 				["0.21:0.49:0.17:0.53"] = 45, -- Fizzcrank Airstrip, Amber Ledge
@@ -3175,7 +3177,7 @@
 				["0.56:0.36:0.52:0.38:0.64:0.42:0.72:0.40:0.83:0.46:0.88:0.60"] = 317, -- The Argent Vanguard, Dalaran, Ebon Watch, The Argent Stand, Westfall Brigade, Fort Wildervar
 
 				-- Alliance: Icecrown: The Shadow Vault
-				["0.38:0.21:0.52:0.38"] = 166, -- The Shadow Vault, Dalaran (Brenda Adams, Thomas Burns, Jamie Erving, Alexander Götz and Jeff S Higgins repored 191 while Steven Bannister, Darrin Pearson, Toby Harris, James Rhee and Leatrix reported 166)
+				["0.38:0.21:0.52:0.38"] = 166, -- The Shadow Vault, Dalaran (Владимир Зорг reported 231, Brenda Adams, Thomas Burns, Jamie Erving, Alexander Götz and Jeff S Higgins repored 191 while Steven Bannister, Darrin Pearson, Toby Harris, James Rhee and Leatrix reported 166)
 				["0.38:0.21:0.46:0.46:0.60:0.52"] = 277, -- The Shadow Vault, Fordragon Hold, Wintergarde Keep
 				["0.38:0.21:0.52:0.38:0.64:0.42:0.72:0.40"] = 295, -- Das Schattengewölbe, Dalaran, Schwarze Wacht, Argentumwache
 				["0.38:0.21:0.28:0.28"] = 78, -- The Shadow Vault, Death's Rise
@@ -3452,6 +3454,8 @@
 				["0.72:0.29:0.78:0.38:0.83:0.46:0.73:0.54:0.76:0.67:0.88:0.72"] = 374, -- Dun Nifflelem, Zim'Torga, Westfall Brigade, Amberpine Lodge, Westguard Keep, Valgarde Port
 				["0.72:0.29:0.64:0.19:0.57:0.33"] = 187, -- Dun Nifflelem, Ulduar, Frosthold
 				["0.72:0.29:0.62:0.36:0.52:0.38:0.56:0.36"] = 181, -- Dun Nifflelem, K3, Dalaran, The Argent Vanguard
+				["0.72:0.29:0.62:0.36:0.52:0.38:0.56:0.36:0.38:0.21"] = 328, -- Dun Nifflelem, K3, Dalaran, The Argent Vanguard, The Shadow Vault
+				["0.72:0.29:0.78:0.38:0.72:0.40:0.64:0.42:0.54:0.52"] = 284, -- Dun Nifflelem, Zim'Torga, The Argent Stand, Ebon Watch, Wyrmrest Temple
 
 				-- Alliance: The Storm Peaks: Frosthold
 				["0.57:0.33:0.56:0.36:0.52:0.34"] = 61, -- Frosthold, The Argent Vanguard, Crusaders' Pinnacle
