@@ -25,6 +25,9 @@ RXPCTrackingData = {
 					["timestamp"] = {
 					},
 					["quests"] = {
+						["Orgrimmar"] = {
+							[65435] = 707,
+						},
 					},
 				},
 			},

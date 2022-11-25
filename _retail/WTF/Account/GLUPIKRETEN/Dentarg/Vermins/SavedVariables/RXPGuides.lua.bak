@@ -47,7 +47,8 @@ RXPCSettings = {
 	["profiles"] = {
 		["Vermins - Dentarg"] = {
 			["hardcore"] = false,
-			["frameHeight"] = 124.9999160766602,
+			["showEnabled"] = false,
+			["frameHeight"] = 124.9999313354492,
 		},
 	},
 }

@@ -77,17 +77,17 @@ VER 3 0100000000000035 "ms aoe" "INV_Misc_QuestionMark"
 /cast Deadly Calm
 /use Blood Fury
 END
-VER 3 0100000000000006 "tank" "INV_Misc_QuestionMark"
-#showtooltip Shield Slam
-/startattack
-/cast Shield Slam
-/cast Blood Fury
-/cast Berserker Rage
-END
 VER 3 010000000000000C "tank" "INV_Misc_QuestionMark"
 #showtooltip Revenge
 /startattack
 /cast Revenge
+/cast Blood Fury
+/cast Berserker Rage
+END
+VER 3 0100000000000006 "tank" "INV_Misc_QuestionMark"
+#showtooltip Shield Slam
+/startattack
+/cast Shield Slam
 /cast Blood Fury
 /cast Berserker Rage
 END

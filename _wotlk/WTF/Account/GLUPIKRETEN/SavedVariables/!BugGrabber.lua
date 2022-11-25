@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 7696,
+	["session"] = 7698,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -6437,26 +6437,26 @@ BugGrabberDB = {
 			["counter"] = 5,
 		}, -- [828]
 		{
+			["message"] = "Interface\\AddOns\\AceBIS\\GearWindow.lua:592: bad argument #1 to 'next' (table expected, got nil)",
+			["time"] = "2022/11/25 09:21:34",
+			["stack"] = "[string \"=[C]\"]: in function `next'\n[string \"@Interface\\AddOns\\AceBIS\\GearWindow.lua\"]:592: in function <Interface\\AddOns\\AceBIS\\GearWindow.lua:568>\n[string \"@Interface\\AddOns\\AceBIS\\GearWindow.lua\"]:981: in function `InitUI'\n[string \"@Interface\\AddOns\\AceBIS\\AceBIS-4.0.9.lua\"]:397: in function <Interface\\AddOns\\AceBIS\\AceBIS.lua:382>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:70: in function <...ace\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:65>\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:527: in function `EnableAddon'\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:630: in function <...ace\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:615>",
+			["session"] = 7697,
+			["counter"] = 3,
+		}, -- [829]
+		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'unitscan' tried to call the protected function 'UNKNOWN()'.",
 			["time"] = "2022/09/25 11:24:28",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:42: in function `target'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:273: in function `UPDATE'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:3: in function <Interface\\AddOns\\unitscan\\unitscan.lua:3>",
-			["session"] = 7692,
-			["counter"] = 49,
-		}, -- [829]
+			["session"] = 7698,
+			["counter"] = 50,
+		}, -- [830]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
 			["time"] = "2022/02/16 20:30:17",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:913: in function `TargetofTarget_Update'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:416: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
-			["session"] = 7692,
-			["counter"] = 41,
-		}, -- [830]
-		{
-			["message"] = "Interface\\AddOns\\AceBIS\\GearWindow.lua:592: bad argument #1 to 'next' (table expected, got nil)",
-			["time"] = "2022/11/25 09:21:34",
-			["stack"] = "[string \"=[C]\"]: in function `next'\n[string \"@Interface\\AddOns\\AceBIS\\GearWindow.lua\"]:592: in function <Interface\\AddOns\\AceBIS\\GearWindow.lua:568>\n[string \"@Interface\\AddOns\\AceBIS\\GearWindow.lua\"]:981: in function `InitUI'\n[string \"@Interface\\AddOns\\AceBIS\\AceBIS-4.0.9.lua\"]:397: in function <Interface\\AddOns\\AceBIS\\AceBIS.lua:382>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:70: in function <...ace\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:65>\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:527: in function `EnableAddon'\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:630: in function <...ace\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:615>",
-			["session"] = 7693,
-			["counter"] = 2,
+			["session"] = 7698,
+			["counter"] = 42,
 		}, -- [831]
 	},
 }
