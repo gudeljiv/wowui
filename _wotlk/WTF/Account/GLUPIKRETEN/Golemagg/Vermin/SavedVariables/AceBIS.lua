@@ -13,10 +13,10 @@ AceBISGears = {
 	["ProtectionPaladin"] = true,
 	["ShadowPriest"] = true,
 	["AssassinationRogue"] = true,
-	["RestorationDruid"] = true,
 	["AfflictionWarlock"] = true,
+	["P0"] = true,
 	["BalanceDruid"] = true,
 	["RestorationShaman"] = true,
-	["P0"] = true,
+	["RestorationDruid"] = true,
 	["P1"] = true,
 }

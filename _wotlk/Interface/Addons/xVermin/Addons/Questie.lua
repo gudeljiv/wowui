@@ -21,8 +21,8 @@ xVermin.CheckIfLoadedWithTimer(
 		-- 	}
 		-- )
 		-- Questie_BaseFrame:SetBackdropColor(0, 0, 0, 0.6)
-		-- Questie_BaseFrame:ClearAllPoints()
-		-- Questie_BaseFrame:SetPoint('TOPRIGHT', 'CustomContainer_2', 'BOTTOMRIGHT', 1, -10)
+		Questie_BaseFrame:ClearAllPoints()
+		Questie_BaseFrame:SetPoint('TOPRIGHT', 'CustomContainer_2', 'BOTTOMRIGHT', 1, -10)
 		-- if (Questie_BaseFrame:GetWidth() < width) then
 		-- 	Questie_BaseFrame:SetWidth(width)
 		-- end

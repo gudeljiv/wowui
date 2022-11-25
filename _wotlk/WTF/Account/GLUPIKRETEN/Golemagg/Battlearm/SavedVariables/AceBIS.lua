@@ -2,6 +2,7 @@
 AceBISGears = {
 	["FuryWarrior"] = true,
 	["SurvivalHunter"] = true,
+	["RestorationShaman"] = true,
 	["UnholyDeath Knight"] = true,
 	["AssassinationRogue"] = true,
 	["P1"] = true,

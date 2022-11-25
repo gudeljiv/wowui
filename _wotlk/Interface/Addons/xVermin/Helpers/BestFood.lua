@@ -882,6 +882,7 @@ NeedsFoodBadly.Food = {
 	[35954] = {id = 35954, name = 'Sweetened Goats Milk', lvl = 65, conj = false, mp = 7200},
 	[41731] = {id = 41731, name = 'Yeti Milk', lvl = 75, conj = false, mp = 19200},
 	[33445] = {id = 33445, name = 'Honeymint Tea', lvl = 75, conj = false, mp = 19200},
+	[44750] = {id = 44750, name = 'Mountain Water', lvl = 65, conj = false, mp = 7200},
 	[35950] = {id = 35950, name = 'Sweet Potato Bread', lvl = 75, conj = false, hp = 22500},
 	[35952] = {id = 35952, name = 'Briny Hardcheese', lvl = 75, conj = false, hp = 22500},
 	[35953] = {id = 35953, name = 'Mead Basted Caribou', lvl = 75, conj = false, hp = 22500},
