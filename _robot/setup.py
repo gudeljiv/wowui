@@ -88,8 +88,8 @@ classes = {
     "warrior", "druid", "rogue", "warlock", "mage", "hunter", "death knight", "priest"
 }
 
-time1 = 0.1
-time2 = 0.2
+time1 = 2
+time2 = 0.5
 
 count = 0
 number = 0
@@ -143,9 +143,9 @@ with keyboard.Listener(on_press=on_press) as listener:
                                 pyautogui.hotkey('command', 'v')
                             else:
                                 pyautogui.hotkey('ctrl', 'v')
-                            time.sleep(time1)
                             pyautogui.hotkey("enter")
 
+                            time.sleep(time1)
                             m_image = abilities_folder + slash + str(skill["name"]) + " M.png".format(**p_main)
                             main_image = sct.grab(p_main)
                             mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
@@ -161,9 +161,9 @@ with keyboard.Listener(on_press=on_press) as listener:
                                 pyautogui.hotkey('command', 'v')
                             else:
                                 pyautogui.hotkey('ctrl', 'v')
-                            time.sleep(time1)
                             pyautogui.hotkey("enter")
 
+                            time.sleep(time1)
                             o_image = abilities_folder + slash + str(skill["name"]) + " O.png".format(**p_offgcd)
                             offgcd_image = sct.grab(p_offgcd)
                             mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=o_image)
@@ -181,9 +181,9 @@ with keyboard.Listener(on_press=on_press) as listener:
                         pyautogui.hotkey('command', 'v')
                     else:
                         pyautogui.hotkey('ctrl', 'v')
-                    time.sleep(time1)
                     pyautogui.hotkey("enter")
 
+                    time.sleep(time1)
                     m_image = abilities_folder + slash + str(skill["name"]) + " H.png".format(**p_main)
                     main_image = sct.grab(p_main)
                     mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)

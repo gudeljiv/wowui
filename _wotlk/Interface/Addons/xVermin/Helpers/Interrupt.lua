@@ -49,9 +49,9 @@ TargetFrame:HookScript(
 				if bear and select(2, GetSpellCooldown('Bash')) == 0 and CheckInteractDistance('target', 3) then
 					RotationFrame3:SetBackdropColor(0, 1, 0, 1)
 				end
-				if cat and select(2, GetSpellCooldown('Maim')) == 0 and CheckInteractDistance('target', 3) then
-					RotationFrame3:SetBackdropColor(0, 1, 0, 1)
-				end
+			-- if cat and select(2, GetSpellCooldown('Maim')) == 0 and CheckInteractDistance('target', 3) then
+			-- 	RotationFrame3:SetBackdropColor(0, 1, 0, 1)
+			-- end
 			end
 
 			-- DEATHKNIGHT INTERRUPT

@@ -129,7 +129,7 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "gmL",
 				},
-				["CharacterNotes"] = {
+				["KiwiPlates"] = {
 					["align"] = "right",
 					["isNew"] = false,
 					["showText"] = false,
@@ -186,9 +186,10 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "WA",
 				},
-				["AdiBags"] = {
-					["enabled"] = false,
+				["CharacterNotes"] = {
+					["align"] = "right",
 					["isNew"] = false,
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
 				["Broker Currency"] = {
@@ -528,10 +529,9 @@ ChocolateBarDB = {
 					["isNew"] = false,
 					["barName"] = "ChocolateBar2",
 				},
-				["KiwiPlates"] = {
-					["align"] = "right",
+				["AdiBags"] = {
+					["enabled"] = false,
 					["isNew"] = false,
-					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
 				["gmMoney"] = {
@@ -603,9 +603,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 486819,
-		["timeStamp"] = 1074210.914,
-		["timeAtThisLevel"] = 8219,
+		["total"] = 505036,
+		["timeStamp"] = 19724.667,
+		["timeAtThisLevel"] = 5287,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -646,17 +646,17 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 951866,
-		["timeAtThisLevel"] = 6185,
-		["timeStamp"] = 1326278.11,
+		["total"] = 953363,
+		["timeAtThisLevel"] = 7682,
+		["timeStamp"] = 19991.143,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 223558,
-		["timeStamp"] = 1326155.492,
-		["timeAtThisLevel"] = 21751,
+		["total"] = 223922,
+		["timeStamp"] = 11165.232,
+		["timeAtThisLevel"] = 22115,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
@@ -700,9 +700,9 @@ CB_PlayedTime = {
 		["total"] = 1786,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 257159,
-		["timeAtThisLevel"] = 251413,
-		["timeStamp"] = 1299016.259,
+		["total"] = 257220,
+		["timeAtThisLevel"] = 251474,
+		["timeStamp"] = 8978.228000000001,
 	},
 	["Tudum-Ashbringer"] = {
 		["total"] = 4569,
@@ -777,9 +777,9 @@ CB_PlayedTime = {
 		["total"] = 129,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1377486,
-		["timeAtThisLevel"] = 284939,
-		["timeStamp"] = 1310783.592,
+		["total"] = 1377970,
+		["timeAtThisLevel"] = 285423,
+		["timeStamp"] = 9382.063,
 	},
 	["Grgur-"] = {
 		["total"] = 1248,

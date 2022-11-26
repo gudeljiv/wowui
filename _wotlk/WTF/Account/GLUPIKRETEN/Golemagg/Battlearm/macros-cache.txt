@@ -1,3 +1,17 @@
+VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Death Pact
+/cast [nopet]Raise Dead;Death Pact
+END
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Death Strike
+/use Bladefist's Breadth
+END
+VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor]Death and Decay
+END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
@@ -13,18 +27,4 @@ VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast Heart Strike
-END
-VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Death Pact
-/cast [nopet]Raise Dead;Death Pact
-END
-VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast Death Strike
-/use Bladefist's Breadth
-END
-VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@cursor]Death and Decay
 END
