@@ -435,77 +435,7 @@ AuctionFasterDb = {
 	["pricing"] = {
 		["maxBidDeviation"] = 20,
 	},
-	["favorites"] = {
-		{
-			["text"] = "Icethorn",
-		}, -- [1]
-		{
-			["text"] = "Lichbloom",
-		}, -- [2]
-		{
-			["text"] = "Adder's Tongue",
-		}, -- [3]
-		{
-			["text"] = "Goldclover",
-		}, -- [4]
-		{
-			["text"] = "Talandra's Rose",
-		}, -- [5]
-		{
-			["text"] = "Tiger Lily",
-		}, -- [6]
-		{
-			["text"] = "Eternal Life",
-		}, -- [7]
-		{
-			["text"] = "Crystallized Life",
-		}, -- [8]
-		{
-			["text"] = "Saronite Ore",
-		}, -- [9]
-		{
-			["text"] = "Saronite Bar",
-		}, -- [10]
-		{
-			["text"] = "Greater Cosmic Essence",
-		}, -- [11]
-		{
-			["text"] = "Lesser Cosmic Essence",
-		}, -- [12]
-		{
-			["text"] = "Infinite Dust",
-		}, -- [13]
-		{
-			["text"] = "Greater Planar Essence",
-		}, -- [14]
-		{
-			["text"] = "Lesser Planar Essence",
-		}, -- [15]
-		{
-			["text"] = "Arcane Dust",
-		}, -- [16]
-		{
-			["text"] = "Mithril Ore",
-		}, -- [17]
-		{
-			["text"] = "Mithril Bar",
-		}, -- [18]
-		{
-			["text"] = "Crystallized Fire",
-		}, -- [19]
-		{
-			["text"] = "Eternal Fire",
-		}, -- [20]
-		{
-			["text"] = "Aquamarine",
-		}, -- [21]
-		{
-			["text"] = "Iron Ore",
-		}, -- [22]
-		{
-			["text"] = "Titansteel Bar",
-		}, -- [23]
-	},
+	["fastMode"] = true,
 	["sniper"] = {
 		["refreshInterval"] = 5,
 	},
@@ -6086,15 +6016,35 @@ AuctionFasterDb = {
 					["weightedTotalBuy"] = 495009,
 					["estimatedVolume"] = 216,
 					["averageBid"] = 1599,
-					["totalItems"] = 30,
 					["lowestBid"] = 1031,
+					["totalItems"] = 30,
 					["scanTime"] = 1669410950,
-					["weightedAverageBid"] = 1807,
 					["highestBuy"] = 3000,
+					["weightedAverageBid"] = 1807,
 					["highestBid"] = 1948,
 				}, -- [7]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 411791,
+					["totalQty"] = 227,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 227,
+					["weightedAverageBuy"] = 2279,
+					["totalBuy"] = 90309,
+					["lowestBuy"] = 2041,
+					["totalBid"] = 65439,
+					["weightedTotalBuy"] = 517452,
+					["estimatedVolume"] = 227,
+					["averageBid"] = 1677,
+					["lowestBid"] = 1030,
+					["scanTime"] = 1669460815,
+					["highestBuy"] = 3000,
+					["totalItems"] = 39,
+					["weightedAverageBid"] = 1814,
+					["highestBid"] = 1948,
+				}, -- [8]
 			},
-			["lastScanTime"] = 1669410950,
+			["lastScanTime"] = 1669460815,
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
@@ -6103,8 +6053,8 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["useCustomDuration"] = false,
 			},
-			["bid"] = 1635,
-			["buy"] = 2044,
+			["bid"] = 1632,
+			["buy"] = 2040,
 			["icon"] = 237133,
 			["itemId"] = 10648,
 		},
@@ -6790,11 +6740,11 @@ AuctionFasterDb = {
 					["weightedTotalBuy"] = 6612121,
 					["estimatedVolume"] = 2405.52,
 					["averageBid"] = 8180,
-					["totalItems"] = 156,
 					["lowestBid"] = 8060,
+					["totalItems"] = 156,
 					["scanTime"] = 1669410953,
-					["weightedAverageBid"] = 8165,
 					["highestBuy"] = 8875,
+					["weightedAverageBid"] = 8165,
 					["highestBid"] = 8869,
 				}, -- [7]
 			},
@@ -7492,15 +7442,35 @@ AuctionFasterDb = {
 					["weightedTotalBuy"] = 15656874,
 					["estimatedVolume"] = 185.26,
 					["averageBid"] = 254836,
-					["totalItems"] = 157,
 					["lowestBid"] = 189999,
+					["totalItems"] = 157,
 					["scanTime"] = 1669410928,
-					["weightedAverageBid"] = 254759,
 					["highestBuy"] = 283092,
+					["weightedAverageBid"] = 254759,
 					["highestBid"] = 280262,
 				}, -- [8]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 13106504,
+					["totalQty"] = 63,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 63,
+					["weightedAverageBuy"] = 220719,
+					["totalBuy"] = 10825997,
+					["lowestBuy"] = 199793,
+					["totalBid"] = 10181111,
+					["weightedTotalBuy"] = 13905310,
+					["estimatedVolume"] = 192.78,
+					["averageBid"] = 203622,
+					["lowestBid"] = 149900,
+					["scanTime"] = 1669460806,
+					["highestBuy"] = 247999,
+					["totalItems"] = 153,
+					["weightedAverageBid"] = 208039,
+					["highestBid"] = 236135,
+				}, -- [9]
 			},
-			["lastScanTime"] = 1669410928,
+			["lastScanTime"] = 1669460806,
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
@@ -7509,10 +7479,10 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["duration"] = 3,
 			},
-			["bid"] = 189999,
+			["bid"] = 159833,
 			["itemId"] = 7909,
 			["icon"] = 134088,
-			["buy"] = 259998,
+			["buy"] = 259792,
 		},
 		["15186Praetorian Leggings of Agility"] = {
 			["prices"] = {
@@ -8853,11 +8823,11 @@ AuctionFasterDb = {
 					["weightedTotalBuy"] = 5462631,
 					["estimatedVolume"] = 3201.42,
 					["averageBid"] = 7341,
-					["totalItems"] = 229,
 					["lowestBid"] = 3198,
+					["totalItems"] = 229,
 					["scanTime"] = 1669410961,
-					["weightedAverageBid"] = 7384,
 					["highestBuy"] = 7888,
+					["weightedAverageBid"] = 7384,
 					["highestBid"] = 7725,
 				}, -- [4]
 			},
@@ -10266,43 +10236,64 @@ AuctionFasterDb = {
 			["icon"] = 134105,
 			["buy"] = 179968,
 		},
-		["44271Four of Nobles"] = {
+		["40037Inscribed Monarch Topaz"] = {
+			["stackSize"] = 1,
+			["itemName"] = "Inscribed Monarch Topaz",
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
-					["weightedTotalBid"] = 146784504,
-					["totalQty"] = 12,
+					["weightedTotalBid"] = 10150288,
+					["totalQty"] = 50,
 					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 12,
-					["weightedAverageBuy"] = 12761842,
-					["totalBuy"] = 153142116,
-					["lowestBuy"] = 12279989,
-					["totalBid"] = 146784504,
-					["weightedTotalBuy"] = 153142104,
-					["estimatedVolume"] = 12,
-					["highestBid"] = 12999996,
-					["weightedAverageBid"] = 12232042,
-					["scanTime"] = 1667658684,
-					["highestBuy"] = 13602309,
-					["totalItems"] = 12,
-					["lowestBid"] = 11665990,
-					["averageBid"] = 12232042,
+					["totalQtyWithBuy"] = 50,
+					["weightedAverageBuy"] = 214526,
+					["totalBuy"] = 10726361,
+					["lowestBuy"] = 149997,
+					["totalBid"] = 10150288,
+					["weightedTotalBuy"] = 10726311,
+					["estimatedVolume"] = 68,
+					["averageBid"] = 203005,
+					["lowestBid"] = 134997,
+					["totalItems"] = 68,
+					["scanTime"] = 1669037359,
+					["highestBuy"] = 389999,
+					["weightedAverageBid"] = 203005,
+					["highestBid"] = 370500,
 				}, -- [1]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 7438291,
+					["totalQty"] = 50,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 50,
+					["weightedAverageBuy"] = 157257,
+					["totalBuy"] = 7862908,
+					["lowestBuy"] = 157253,
+					["totalBid"] = 7438291,
+					["weightedTotalBuy"] = 7862858,
+					["estimatedVolume"] = 95,
+					["highestBid"] = 157258,
+					["weightedAverageBid"] = 148765,
+					["totalItems"] = 95,
+					["scanTime"] = 1669207784,
+					["highestBuy"] = 157261,
+					["lowestBid"] = 141527,
+					["averageBid"] = 148765,
+				}, -- [2]
 			},
-			["itemName"] = "Four of Nobles",
+			["lastScanTime"] = 1669207784,
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
-				["duration"] = 3,
-				["alwaysUndercut"] = true,
-				["rememberStack"] = true,
 				["useCustomDuration"] = false,
+				["duration"] = 3,
+				["rememberStack"] = true,
+				["alwaysUndercut"] = true,
 			},
-			["itemId"] = 44271,
-			["bid"] = 11665990,
-			["lastScanTime"] = 1667658684,
-			["icon"] = 237168,
-			["buy"] = 12279988,
+			["bid"] = 141527,
+			["itemId"] = 40037,
+			["icon"] = 237218,
+			["buy"] = 157252,
 		},
 		["44273Six of Nobles"] = {
 			["prices"] = {
@@ -10501,64 +10492,43 @@ AuctionFasterDb = {
 			["icon"] = 134020,
 			["buy"] = 8927,
 		},
-		["40037Inscribed Monarch Topaz"] = {
-			["stackSize"] = 1,
-			["itemName"] = "Inscribed Monarch Topaz",
+		["44271Four of Nobles"] = {
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
-					["weightedTotalBid"] = 10150288,
-					["totalQty"] = 50,
+					["weightedTotalBid"] = 146784504,
+					["totalQty"] = 12,
 					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 50,
-					["weightedAverageBuy"] = 214526,
-					["totalBuy"] = 10726361,
-					["lowestBuy"] = 149997,
-					["totalBid"] = 10150288,
-					["weightedTotalBuy"] = 10726311,
-					["estimatedVolume"] = 68,
-					["averageBid"] = 203005,
-					["lowestBid"] = 134997,
-					["totalItems"] = 68,
-					["scanTime"] = 1669037359,
-					["highestBuy"] = 389999,
-					["weightedAverageBid"] = 203005,
-					["highestBid"] = 370500,
+					["totalQtyWithBuy"] = 12,
+					["weightedAverageBuy"] = 12761842,
+					["totalBuy"] = 153142116,
+					["lowestBuy"] = 12279989,
+					["totalBid"] = 146784504,
+					["weightedTotalBuy"] = 153142104,
+					["estimatedVolume"] = 12,
+					["highestBid"] = 12999996,
+					["weightedAverageBid"] = 12232042,
+					["scanTime"] = 1667658684,
+					["highestBuy"] = 13602309,
+					["totalItems"] = 12,
+					["lowestBid"] = 11665990,
+					["averageBid"] = 12232042,
 				}, -- [1]
-				{
-					["averageBuy"] = 1,
-					["weightedTotalBid"] = 7438291,
-					["totalQty"] = 50,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 50,
-					["weightedAverageBuy"] = 157257,
-					["totalBuy"] = 7862908,
-					["lowestBuy"] = 157253,
-					["totalBid"] = 7438291,
-					["weightedTotalBuy"] = 7862858,
-					["estimatedVolume"] = 95,
-					["highestBid"] = 157258,
-					["weightedAverageBid"] = 148765,
-					["totalItems"] = 95,
-					["scanTime"] = 1669207784,
-					["highestBuy"] = 157261,
-					["lowestBid"] = 141527,
-					["averageBid"] = 148765,
-				}, -- [2]
 			},
-			["lastScanTime"] = 1669207784,
+			["itemName"] = "Four of Nobles",
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
-				["useCustomDuration"] = false,
 				["duration"] = 3,
-				["rememberStack"] = true,
 				["alwaysUndercut"] = true,
+				["rememberStack"] = true,
+				["useCustomDuration"] = false,
 			},
-			["bid"] = 141527,
-			["itemId"] = 40037,
-			["icon"] = 237218,
-			["buy"] = 157252,
+			["itemId"] = 44271,
+			["bid"] = 11665990,
+			["lastScanTime"] = 1667658684,
+			["icon"] = 237168,
+			["buy"] = 12279988,
 		},
 		["39343Azure Pigment"] = {
 			["stackSize"] = 1,
@@ -15698,65 +15668,6 @@ AuctionFasterDb = {
 			["icon"] = 134206,
 			["buy"] = 3866,
 		},
-		["43109Icy Pigment"] = {
-			["stackSize"] = 20,
-			["itemName"] = "Icy Pigment",
-			["prices"] = {
-				{
-					["averageBuy"] = 1,
-					["weightedTotalBid"] = 17425092,
-					["totalQty"] = 128,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 128,
-					["weightedAverageBuy"] = 140073,
-					["totalBuy"] = 7003641,
-					["lowestBuy"] = 140064,
-					["totalBid"] = 6821494,
-					["weightedTotalBuy"] = 17929399,
-					["estimatedVolume"] = 522.24,
-					["highestBid"] = 140083,
-					["weightedAverageBid"] = 136133,
-					["scanTime"] = 1665595052,
-					["highestBuy"] = 140086,
-					["totalItems"] = 204,
-					["lowestBid"] = 133061,
-					["averageBid"] = 136429,
-				}, -- [1]
-				{
-					["averageBuy"] = 1,
-					["weightedTotalBid"] = 29076540,
-					["totalQty"] = 196,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 196,
-					["weightedAverageBuy"] = 503645,
-					["totalBuy"] = 72637364,
-					["lowestBuy"] = 154996,
-					["totalBid"] = 3860101,
-					["weightedTotalBuy"] = 98714500,
-					["estimatedVolume"] = 196,
-					["highestBid"] = 155489,
-					["weightedAverageBid"] = 148349,
-					["highestBuy"] = 37500000,
-					["totalItems"] = 28,
-					["scanTime"] = 1666955452,
-					["lowestBid"] = 1,
-					["averageBid"] = 137860,
-				}, -- [2]
-			},
-			["lastScanTime"] = 1666955452,
-			["settings"] = {
-				["priceModel"] = "Simple",
-				["rememberLastPrice"] = false,
-				["duration"] = 3,
-				["alwaysUndercut"] = true,
-				["rememberStack"] = true,
-				["useCustomDuration"] = false,
-			},
-			["bid"] = 123996,
-			["buy"] = 154995,
-			["icon"] = 237153,
-			["itemId"] = 43109,
-		},
 		["39502Resilient Parchment"] = {
 			["stackSize"] = 20,
 			["itemName"] = "Resilient Parchment",
@@ -15815,6 +15726,65 @@ AuctionFasterDb = {
 			["buy"] = 16995,
 			["icon"] = 237053,
 			["itemId"] = 39502,
+		},
+		["43109Icy Pigment"] = {
+			["stackSize"] = 20,
+			["itemName"] = "Icy Pigment",
+			["prices"] = {
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 17425092,
+					["totalQty"] = 128,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 128,
+					["weightedAverageBuy"] = 140073,
+					["totalBuy"] = 7003641,
+					["lowestBuy"] = 140064,
+					["totalBid"] = 6821494,
+					["weightedTotalBuy"] = 17929399,
+					["estimatedVolume"] = 522.24,
+					["highestBid"] = 140083,
+					["weightedAverageBid"] = 136133,
+					["scanTime"] = 1665595052,
+					["highestBuy"] = 140086,
+					["totalItems"] = 204,
+					["lowestBid"] = 133061,
+					["averageBid"] = 136429,
+				}, -- [1]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 29076540,
+					["totalQty"] = 196,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 196,
+					["weightedAverageBuy"] = 503645,
+					["totalBuy"] = 72637364,
+					["lowestBuy"] = 154996,
+					["totalBid"] = 3860101,
+					["weightedTotalBuy"] = 98714500,
+					["estimatedVolume"] = 196,
+					["highestBid"] = 155489,
+					["weightedAverageBid"] = 148349,
+					["highestBuy"] = 37500000,
+					["totalItems"] = 28,
+					["scanTime"] = 1666955452,
+					["lowestBid"] = 1,
+					["averageBid"] = 137860,
+				}, -- [2]
+			},
+			["lastScanTime"] = 1666955452,
+			["settings"] = {
+				["priceModel"] = "Simple",
+				["rememberLastPrice"] = false,
+				["duration"] = 3,
+				["alwaysUndercut"] = true,
+				["rememberStack"] = true,
+				["useCustomDuration"] = false,
+			},
+			["bid"] = 123996,
+			["buy"] = 154995,
+			["icon"] = 237153,
+			["itemId"] = 43109,
 		},
 		["3819Wintersbite"] = {
 			["prices"] = {
@@ -16476,43 +16446,43 @@ AuctionFasterDb = {
 			["icon"] = 135253,
 			["itemId"] = 23528,
 		},
-		["36326Halgrind Gloves of the Champion"] = {
+		["23737Adamantite Grenade"] = {
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
-					["weightedTotalBid"] = 123500,
-					["totalQty"] = 1,
+					["weightedTotalBid"] = 2893756,
+					["totalQty"] = 96,
 					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 1,
-					["weightedAverageBuy"] = 130000,
-					["totalBuy"] = 130001,
-					["lowestBuy"] = 130000,
-					["totalBid"] = 123500,
-					["weightedTotalBuy"] = 130000,
-					["estimatedVolume"] = 2.3,
-					["highestBid"] = 123500,
-					["weightedAverageBid"] = 123500,
-					["totalItems"] = 115,
-					["scanTime"] = 1665075643,
-					["highestBuy"] = 130000,
-					["lowestBid"] = 123500,
-					["averageBid"] = 123500,
+					["totalQtyWithBuy"] = 96,
+					["weightedAverageBuy"] = 31204,
+					["totalBuy"] = 543261,
+					["lowestBuy"] = 2497,
+					["totalBid"] = 481086,
+					["weightedTotalBuy"] = 2995631,
+					["estimatedVolume"] = 124.8,
+					["highestBid"] = 250000,
+					["weightedAverageBid"] = 30143,
+					["scanTime"] = 1665566116,
+					["highestBuy"] = 250000,
+					["totalItems"] = 65,
+					["lowestBid"] = 498,
+					["averageBid"] = 9621,
 				}, -- [1]
 			},
-			["itemName"] = "Halgrind Gloves of the Champion",
+			["itemName"] = "Adamantite Grenade",
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
-				["useCustomDuration"] = false,
 				["duration"] = 3,
-				["rememberStack"] = true,
 				["alwaysUndercut"] = true,
+				["rememberStack"] = true,
+				["useCustomDuration"] = false,
 			},
-			["buy"] = 130000,
-			["bid"] = 123500,
-			["lastScanTime"] = 1665075643,
-			["icon"] = 132976,
-			["itemId"] = 36326,
+			["buy"] = 2496,
+			["bid"] = 1996,
+			["lastScanTime"] = 1665566116,
+			["icon"] = 133716,
+			["itemId"] = 23737,
 		},
 		["20975Design: The Jade Eye"] = {
 			["prices"] = {
@@ -16874,43 +16844,43 @@ AuctionFasterDb = {
 			["icon"] = 237465,
 			["itemId"] = 36329,
 		},
-		["23737Adamantite Grenade"] = {
+		["36326Halgrind Gloves of the Champion"] = {
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
-					["weightedTotalBid"] = 2893756,
-					["totalQty"] = 96,
+					["weightedTotalBid"] = 123500,
+					["totalQty"] = 1,
 					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 96,
-					["weightedAverageBuy"] = 31204,
-					["totalBuy"] = 543261,
-					["lowestBuy"] = 2497,
-					["totalBid"] = 481086,
-					["weightedTotalBuy"] = 2995631,
-					["estimatedVolume"] = 124.8,
-					["highestBid"] = 250000,
-					["weightedAverageBid"] = 30143,
-					["scanTime"] = 1665566116,
-					["highestBuy"] = 250000,
-					["totalItems"] = 65,
-					["lowestBid"] = 498,
-					["averageBid"] = 9621,
+					["totalQtyWithBuy"] = 1,
+					["weightedAverageBuy"] = 130000,
+					["totalBuy"] = 130001,
+					["lowestBuy"] = 130000,
+					["totalBid"] = 123500,
+					["weightedTotalBuy"] = 130000,
+					["estimatedVolume"] = 2.3,
+					["highestBid"] = 123500,
+					["weightedAverageBid"] = 123500,
+					["totalItems"] = 115,
+					["scanTime"] = 1665075643,
+					["highestBuy"] = 130000,
+					["lowestBid"] = 123500,
+					["averageBid"] = 123500,
 				}, -- [1]
 			},
-			["itemName"] = "Adamantite Grenade",
+			["itemName"] = "Halgrind Gloves of the Champion",
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
-				["duration"] = 3,
-				["alwaysUndercut"] = true,
-				["rememberStack"] = true,
 				["useCustomDuration"] = false,
+				["duration"] = 3,
+				["rememberStack"] = true,
+				["alwaysUndercut"] = true,
 			},
-			["buy"] = 2496,
-			["bid"] = 1996,
-			["lastScanTime"] = 1665566116,
-			["icon"] = 133716,
-			["itemId"] = 23737,
+			["buy"] = 130000,
+			["bid"] = 123500,
+			["lastScanTime"] = 1665075643,
+			["icon"] = 132976,
+			["itemId"] = 36326,
 		},
 		["36906Icethorn"] = {
 			["prices"] = {
@@ -21708,6 +21678,76 @@ AuctionFasterDb = {
 			["itemId"] = 3820,
 		},
 	},
-	["fastMode"] = true,
+	["favorites"] = {
+		{
+			["text"] = "Icethorn",
+		}, -- [1]
+		{
+			["text"] = "Lichbloom",
+		}, -- [2]
+		{
+			["text"] = "Adder's Tongue",
+		}, -- [3]
+		{
+			["text"] = "Goldclover",
+		}, -- [4]
+		{
+			["text"] = "Talandra's Rose",
+		}, -- [5]
+		{
+			["text"] = "Tiger Lily",
+		}, -- [6]
+		{
+			["text"] = "Eternal Life",
+		}, -- [7]
+		{
+			["text"] = "Crystallized Life",
+		}, -- [8]
+		{
+			["text"] = "Saronite Ore",
+		}, -- [9]
+		{
+			["text"] = "Saronite Bar",
+		}, -- [10]
+		{
+			["text"] = "Greater Cosmic Essence",
+		}, -- [11]
+		{
+			["text"] = "Lesser Cosmic Essence",
+		}, -- [12]
+		{
+			["text"] = "Infinite Dust",
+		}, -- [13]
+		{
+			["text"] = "Greater Planar Essence",
+		}, -- [14]
+		{
+			["text"] = "Lesser Planar Essence",
+		}, -- [15]
+		{
+			["text"] = "Arcane Dust",
+		}, -- [16]
+		{
+			["text"] = "Mithril Ore",
+		}, -- [17]
+		{
+			["text"] = "Mithril Bar",
+		}, -- [18]
+		{
+			["text"] = "Crystallized Fire",
+		}, -- [19]
+		{
+			["text"] = "Eternal Fire",
+		}, -- [20]
+		{
+			["text"] = "Aquamarine",
+		}, -- [21]
+		{
+			["text"] = "Iron Ore",
+		}, -- [22]
+		{
+			["text"] = "Titansteel Bar",
+		}, -- [23]
+	},
 	["defaultTab"] = "NONE",
 }
