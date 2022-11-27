@@ -1,329 +1,49 @@
 
 PlaterDB = {
 	["captured_spells"] = {
-		[57984] = {
-			["encounterName"] = "Kel'Thuzad",
-			["source"] = "Greater Fire Elemental",
-			["npcID"] = 15438,
+		[27050] = {
+			["source"] = "Mccouille",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 1114,
-		},
-		[22888] = {
-			["type"] = "BUFF",
-			["source"] = "Overlord Runthak",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 173758,
-		},
-		[35696] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["npcID"] = 17252,
-		},
-		[59638] = {
-			["encounterName"] = "Kel'Thuzad",
-			["source"] = "Mirror Image",
-			["npcID"] = 31216,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 1114,
-		},
-		[53403] = {
-			["encounterName"] = "Kel'Thuzad",
-			["type"] = "BUFF",
-			["source"] = "Wolf",
-			["npcID"] = 24516,
-			["event"] = "SPELL_AURA_APPLIED",
-			["encounterID"] = 1114,
-		},
-		[27810] = {
-			["encounterName"] = "Kel'Thuzad",
-			["source"] = "Kel'Thuzad",
-			["npcID"] = 15990,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 1114,
-		},
-		[57567] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["npcID"] = 417,
-		},
-		[27812] = {
-			["encounterName"] = "Kel'Thuzad",
-			["source"] = "Shadow Fissure",
-			["npcID"] = 16129,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 1114,
-		},
-		[52474] = {
-			["encounterName"] = "Kel'Thuzad",
-			["source"] = "Wolf",
-			["npcID"] = 24516,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 1114,
-		},
-		[27819] = {
-			["encounterName"] = "Kel'Thuzad",
-			["source"] = "Kel'Thuzad",
-			["npcID"] = 15990,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 1114,
-		},
-		[23600] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Gold Warrior",
-			["npcID"] = 32322,
-		},
-		[32736] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Gold Warrior",
-			["npcID"] = 32322,
-		},
-		[16231] = {
-			["type"] = "DEBUFF",
-			["source"] = "Bloodfury Slayer",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 4024,
-		},
-		[36589] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Sinewy Wolf",
-			["npcID"] = 31233,
-		},
-		[29386] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Green Paladin",
-			["npcID"] = 32342,
-		},
-		[64495] = {
-			["encounterName"] = "Kel'Thuzad",
-			["type"] = "BUFF",
-			["source"] = "Wolf",
-			["npcID"] = 24516,
-			["event"] = "SPELL_AURA_APPLIED",
-			["encounterID"] = 1114,
-		},
-		[70893] = {
-			["encounterName"] = "Kel'Thuzad",
-			["type"] = "BUFF",
-			["source"] = "Wolf",
-			["npcID"] = 24516,
-			["event"] = "SPELL_AURA_APPLIED",
-			["encounterID"] = 1114,
-		},
-		[19134] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Gold Warrior",
-			["npcID"] = 32322,
-		},
-		[57724] = {
-			["encounterName"] = "Kel'Thuzad",
-			["type"] = "DEBUFF",
-			["source"] = "Wolf",
-			["npcID"] = 24516,
-			["event"] = "SPELL_AURA_APPLIED",
-			["encounterID"] = 1114,
-		},
-		[27808] = {
-			["encounterName"] = "Kel'Thuzad",
-			["source"] = "Kel'Thuzad",
-			["npcID"] = 15990,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 1114,
-		},
-		[53148] = {
-			["encounterName"] = "Kel'Thuzad",
-			["type"] = "DEBUFF",
-			["source"] = "Wolf",
-			["npcID"] = 24516,
-			["event"] = "SPELL_AURA_APPLIED",
-			["encounterID"] = 1114,
-		},
-		[9128] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Gold Warrior",
-			["npcID"] = 32322,
-		},
-		[47468] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Toothcruncher",
-			["npcID"] = 26125,
-		},
-		[12470] = {
-			["encounterName"] = "Kel'Thuzad",
-			["source"] = "Greater Fire Elemental",
-			["npcID"] = 15438,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 1114,
-		},
-		[58875] = {
-			["encounterName"] = "Kel'Thuzad",
-			["type"] = "BUFF",
-			["source"] = "Spirit Wolf",
-			["npcID"] = 29264,
-			["event"] = "SPELL_AURA_APPLIED",
-			["encounterID"] = 1114,
-		},
-		[9080] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Gold Warrior",
-			["npcID"] = 32322,
-		},
-		[28467] = {
-			["encounterName"] = "Kel'Thuzad",
-			["source"] = "Unstoppable Abomination",
-			["npcID"] = 16428,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 1114,
-		},
-		[59637] = {
-			["encounterName"] = "Kel'Thuzad",
-			["source"] = "Mirror Image",
-			["npcID"] = 31216,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 1114,
-		},
-		[25228] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Cattwena",
-			["npcID"] = 1863,
-		},
-		[28470] = {
-			["encounterName"] = "Kel'Thuzad",
-			["type"] = "BUFF",
-			["source"] = "Guardian of Icecrown",
-			["npcID"] = 16441,
-			["event"] = "SPELL_AURA_APPLIED",
-			["encounterID"] = 1114,
-		},
-		[61684] = {
-			["encounterName"] = "Kel'Thuzad",
-			["type"] = "BUFF",
-			["source"] = "Wolf",
-			["npcID"] = 24516,
-			["event"] = "SPELL_AURA_APPLIED",
-			["encounterID"] = 1114,
-		},
-		[53401] = {
-			["encounterName"] = "Kel'Thuzad",
-			["type"] = "BUFF",
-			["source"] = "Wolf",
-			["npcID"] = 24516,
-			["event"] = "SPELL_AURA_APPLIED",
-			["encounterID"] = 1114,
+			["npcID"] = 923,
 		},
 		[3600] = {
-			["event"] = "SPELL_AURA_APPLIED",
 			["type"] = "DEBUFF",
 			["source"] = "Earthbind Totem",
+			["event"] = "SPELL_AURA_APPLIED",
 			["npcID"] = 2630,
 		},
-		[51963] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Ebon Gargoyle",
-			["npcID"] = 27829,
+		[64494] = {
+			["type"] = "BUFF",
+			["source"] = "Mccouille",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 923,
 		},
-		[13005] = {
+		[47482] = {
+			["source"] = "Ribstealer",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Green Paladin",
-			["npcID"] = 32342,
-		},
-		[15532] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Gold Mage",
-			["npcID"] = 32341,
+			["npcID"] = 26125,
 		},
 		[64695] = {
-			["event"] = "SPELL_AURA_APPLIED",
 			["type"] = "DEBUFF",
 			["source"] = "Earthbind Totem",
+			["event"] = "SPELL_AURA_APPLIED",
 			["npcID"] = 2630,
 		},
-		[28478] = {
-			["encounterName"] = "Kel'Thuzad",
-			["source"] = "Kel'Thuzad",
-			["npcID"] = 15990,
+		[47468] = {
+			["source"] = "Cryptrobber",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 1114,
+			["npcID"] = 26125,
 		},
-		[28479] = {
-			["encounterName"] = "Kel'Thuzad",
-			["source"] = "Kel'Thuzad",
-			["npcID"] = 15990,
+		[51963] = {
+			["source"] = "Ebon Gargoyle",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 1114,
+			["npcID"] = 27829,
 		},
-		[32982] = {
-			["encounterName"] = "Kel'Thuzad",
-			["source"] = "Fire Elemental Totem",
-			["npcID"] = 15439,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 1114,
-		},
-		[35361] = {
-			["event"] = "SPELL_AURA_APPLIED",
+		[54131] = {
 			["type"] = "BUFF",
-			["source"] = "Grove Walker",
-			["npcID"] = 31228,
-		},
-		[29385] = {
+			["source"] = "Mccouille",
 			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Green Paladin",
-			["npcID"] = 32342,
-		},
-		[1604] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "DEBUFF",
-			["source"] = "Gold Warrior",
-			["npcID"] = 32322,
-		},
-		[61685] = {
-			["encounterName"] = "Kel'Thuzad",
-			["type"] = "BUFF",
-			["source"] = "Wolf",
-			["npcID"] = 24516,
-			["event"] = "SPELL_AURA_APPLIED",
-			["encounterID"] = 1114,
-		},
-		[53434] = {
-			["encounterName"] = "Kel'Thuzad",
-			["type"] = "BUFF",
-			["source"] = "Wolf",
-			["npcID"] = 24516,
-			["event"] = "SPELL_AURA_APPLIED",
-			["encounterID"] = 1114,
-		},
-		[12544] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Magister Surdiel",
-			["npcID"] = 32170,
-		},
-		[29544] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "DEBUFF",
-			["source"] = "Gold Warrior",
-			["npcID"] = 32322,
-		},
-		[20424] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Green Paladin",
-			["npcID"] = 32342,
-		},
-		[54261] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Gold Mage",
-			["npcID"] = 32341,
-		},
-		[35706] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["npcID"] = 17252,
+			["npcID"] = 923,
 		},
 	},
 	["profiles"] = {
@@ -4166,6 +3886,33 @@ PlaterDB = {
 				["nameplateShowFriends"] = "Interface\\AddOns\\Plater\\Plater.lua:2062",
 			},
 			["aura_cache_by_name"] = {
+				["judgement of wisdom"] = {
+					20186, -- [1]
+					20268, -- [2]
+					53408, -- [3]
+				},
+				["rake"] = {
+					1822, -- [1]
+					1823, -- [2]
+					1824, -- [3]
+					9904, -- [4]
+					24331, -- [5]
+					24332, -- [6]
+					27003, -- [7]
+					27556, -- [8]
+					27638, -- [9]
+					36332, -- [10]
+					48573, -- [11]
+					48574, -- [12]
+					53499, -- [13]
+					54668, -- [14]
+					59881, -- [15]
+					59882, -- [16]
+					59883, -- [17]
+					59884, -- [18]
+					59885, -- [19]
+					59886, -- [20]
+				},
 				["sunder armor"] = {
 					7386, -- [1]
 					7405, -- [2]
@@ -4197,10 +3944,17 @@ PlaterDB = {
 					65936, -- [28]
 					71554, -- [29]
 				},
-				["judgement of wisdom"] = {
-					20186, -- [1]
-					20268, -- [2]
-					53408, -- [3]
+				["faerie fire"] = {
+					770, -- [1]
+					6950, -- [2]
+					13424, -- [3]
+					13752, -- [4]
+					16498, -- [5]
+					20656, -- [6]
+					21670, -- [7]
+					25602, -- [8]
+					32129, -- [9]
+					65863, -- [10]
 				},
 			},
 			["url"] = "https://wago.io/g-jp-v2zw/5",
@@ -8321,13 +8075,13 @@ PlaterDB = {
 					"Shadowfang Darksoul", -- [1]
 					"Shadowfang Keep", -- [2]
 				},
-				[6487] = {
-					"Arcanist Doan", -- [1]
-					"Scarlet Monastery", -- [2]
-				},
 				[19220] = {
 					"Pathaleon the Calculator", -- [1]
 					"Tempest Keep: The Mechanar", -- [2]
+				},
+				[6487] = {
+					"Arcanist Doan", -- [1]
+					"Scarlet Monastery", -- [2]
 				},
 				[4424] = {
 					"Aggem Thorncurse", -- [1]
@@ -8781,13 +8535,13 @@ PlaterDB = {
 					"Portal Keeper", -- [1]
 					"Violet Hold", -- [2]
 				},
-				[134139] = {
-					"Shrine Templar", -- [1]
-					"Shrine of the Storm", -- [2]
-				},
 				[16375] = {
 					"Sewage Slime", -- [1]
 					"Naxxramas", -- [2]
+				},
+				[134139] = {
+					"Shrine Templar", -- [1]
+					"Shrine of the Storm", -- [2]
 				},
 				[29364] = {
 					"Void Sentry", -- [1]
@@ -9229,7 +8983,9 @@ PlaterDB = {
 				},
 			},
 			["extra_icon_anchor"] = {
-				["x"] = 14,
+				["y"] = 16,
+				["x"] = -55,
+				["side"] = 1,
 			},
 			["extra_icon_wide_icon"] = false,
 			["range_check_alpha"] = 0.199999988079071,
@@ -9245,10 +9001,9 @@ PlaterDB = {
 			},
 			["aura_cooldown_edge_texture"] = "Interface\\GLUES\\loadingOld",
 			["castbar_icon_x_offset"] = 1,
-			["extra_icon_show_purge"] = true,
+			["debuff_show_cc"] = false,
 			["transparency_behavior"] = 2,
 			["aura_consolidate"] = true,
-			["extra_icon_width"] = 26,
 			["health_statusbar_texture"] = "Melli",
 			["hook_auto_imported"] = {
 				["Color Automation"] = 1,
@@ -9330,7 +9085,7 @@ PlaterDB = {
 				["nameplateMinAlphaDistance"] = "-158489.31924611",
 				["nameplatePersonalShowAlways"] = "1",
 			},
-			["login_counter"] = 4204,
+			["login_counter"] = 4231,
 			["extra_icon_caster_name"] = false,
 			["aura_cooldown_show_swipe"] = false,
 			["show_aggro_flash"] = true,
@@ -11011,7 +10766,8 @@ PlaterDB = {
 				{
 					["Enabled"] = false,
 					["Revision"] = 55,
-					["LastHookEdited"] = "Constructor",
+					["HooksTemp"] = {
+					},
 					["Author"] = "Izimode-Azralon",
 					["Desc"] = "Tint nameplates of Reaping Soul units (Mythic Dungeon Affix) depending on its target and role of the player",
 					["Hooks"] = {
@@ -11020,7 +10776,11 @@ PlaterDB = {
 						["Constructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    --npcs affected by this script\n    \n    envTable.npcIDs = {\n        [148716] = true, --risen soul\n        [148893] = true, --tormented soul\n        [148894] = true, --lost soul\n        \n        [127278] = true, --skittering feeder (tests and debug, also need to disable the load conditions)\n    }\n    \n    --detect aggro, if true it will see which group member the soul is attacking and override the color\n    envTable.detectAggro = true\n    \n    \nend\n\n\n",
 					},
 					["Prio"] = 99,
+					["Name"] = "M+ Bwonsamdi Reaping",
+					["PlaterCore"] = 1,
+					["LastHookEdited"] = "Constructor",
 					["Time"] = 1579030189,
+					["Icon"] = 2446016,
 					["LoadConditions"] = {
 						["talent"] = {
 						},
@@ -11046,11 +10806,6 @@ PlaterDB = {
 							["Enabled"] = true,
 							["117"] = true,
 						},
-					},
-					["PlaterCore"] = 1,
-					["Name"] = "M+ Bwonsamdi Reaping",
-					["Icon"] = 2446016,
-					["HooksTemp"] = {
 					},
 				}, -- [15]
 				{
@@ -12165,11 +11920,9 @@ PlaterDB = {
 			["extra_icon_auras"] = {
 				"Sunder Armor", -- [1]
 			},
-			["aura2_grow_direction"] = 1,
 			["ui_parent_cast_level"] = 10,
 			["ui_parent_buff2_level"] = 10,
 			["range_check_in_range_or_target_alpha_friendlies"] = 1,
-			["extra_icon_show_enrage"] = true,
 			["cast_statusbar_spark_color"] = {
 				0.98823529411765, -- [1]
 				[3] = 0.94117647058823,
@@ -12181,8 +11934,8 @@ PlaterDB = {
 			["ui_parent_scale_tune"] = 1.71999979019165,
 			["ui_parent_buff_strata"] = "LOW",
 			["healthbar_framelevel"] = 0,
-			["hover_highlight_alpha"] = 0.09999999403953552,
 			["ui_parent_buff_level"] = 10,
+			["hover_highlight_alpha"] = 0.09999999403953552,
 			["health_statusbar_bgtexture"] = "Melli",
 			["indicator_raidmark_anchor"] = {
 				["x"] = -40,
@@ -12240,7 +11993,6 @@ PlaterDB = {
 				0.96000000089407, -- [4]
 			},
 			["update_throttle"] = 0.09999999403953552,
-			["range_check_enabled"] = false,
 			["not_affecting_combat_alpha"] = 1,
 			["use_health_animation"] = true,
 			["target_highlight_alpha"] = 1,
@@ -12250,6 +12002,7 @@ PlaterDB = {
 				},
 			},
 			["auto_toggle_stacking_enabled"] = true,
+			["range_check_enabled"] = false,
 			["target_shady_alpha"] = 0.597934901714325,
 			["target_highlight_height"] = 21,
 			["indicator_raidmark_scale"] = 0.699999988079071,
@@ -12285,11 +12038,12 @@ PlaterDB = {
 				},
 			},
 			["number_region_first_run"] = true,
-			["aura_alpha"] = 1,
 			["health_animation_time_dilatation"] = 2.869999885559082,
 			["aura_grow_direction"] = 3,
+			["aura_alpha"] = 1,
 			["cast_statusbar_fadeout_time"] = 0.4999999701976776,
 			["ghost_auras"] = {
+				["height"] = 10.23566341400147,
 				["auras"] = {
 					["PRIEST"] = {
 						[3] = {
@@ -12304,6 +12058,8 @@ PlaterDB = {
 						}, -- [1]
 					},
 				},
+				["alpha"] = 0.8486258387565613,
+				["width"] = 10.23566341400147,
 			},
 			["script_data_trash"] = {
 				{
@@ -12429,8 +12185,9 @@ PlaterDB = {
 				["Relics 9.2 M Dungeons"] = 2,
 				["Fixate On You"] = 11,
 			},
+			["aura2_grow_direction"] = 1,
 			["range_check_alpha_friendlies"] = 1,
-			["extra_icon_height"] = 26,
+			["extra_icon_height"] = 30,
 			["auto_toggle_stacking"] = {
 				["party"] = false,
 				["arena"] = false,
@@ -19249,10 +19006,8 @@ PlaterDB = {
 		[55334] = {
 			["npcID"] = 16163,
 		},
-		[59965] = {
-			["encounterName"] = "The Prophet Tharon'ja",
-			["npcID"] = 26632,
-			["encounterID"] = 375,
+		[52705] = {
+			["npcID"] = 28938,
 		},
 		[59389] = {
 			["encounterName"] = "Prince Keleseth",
@@ -19262,9 +19017,6 @@ PlaterDB = {
 		[16429] = {
 			["npcID"] = 18401,
 		},
-		[52705] = {
-			["npcID"] = 28938,
-		},
 		[57467] = {
 			["encounterName"] = "The Four Horsemen",
 			["npcID"] = 16064,
@@ -19272,6 +19024,11 @@ PlaterDB = {
 		},
 		[59663] = {
 			["npcID"] = 31775,
+		},
+		[59965] = {
+			["encounterName"] = "The Prophet Tharon'ja",
+			["npcID"] = 26632,
+			["encounterID"] = 375,
 		},
 		[20811] = {
 			["npcID"] = 10760,
@@ -19492,11 +19249,11 @@ PlaterDB = {
 		[49348] = {
 			["npcID"] = 27677,
 		},
-		[54338] = {
-			["npcID"] = 16020,
-		},
 		[59183] = {
 			["npcID"] = 28584,
+		},
+		[5403] = {
+			["npcID"] = 2624,
 		},
 		[16590] = {
 			["npcID"] = 8551,
@@ -19506,8 +19263,8 @@ PlaterDB = {
 			["npcID"] = 29304,
 			["encounterID"] = 383,
 		},
-		[5403] = {
-			["npcID"] = 2624,
+		[56862] = {
+			["npcID"] = 30419,
 		},
 		[51779] = {
 			["npcID"] = 26232,
@@ -19515,17 +19272,17 @@ PlaterDB = {
 		[8363] = {
 			["npcID"] = 4803,
 		},
-		[56862] = {
-			["npcID"] = 30419,
+		[39419] = {
+			["npcID"] = 18213,
 		},
 		[56065] = {
 			["npcID"] = 15981,
 		},
-		[39419] = {
-			["npcID"] = 18213,
-		},
 		[6270] = {
 			["npcID"] = 3678,
+		},
+		[54338] = {
+			["npcID"] = 16020,
 		},
 		[38026] = {
 			["npcID"] = 19768,
@@ -19649,9 +19406,6 @@ PlaterDB = {
 			["encounterName"] = "Grandmaster Vorpil",
 			["npcID"] = 18634,
 		},
-		[34829] = {
-			["npcID"] = 27377,
-		},
 		[59416] = {
 			["encounterName"] = "King Dred",
 			["encounterID"] = 373,
@@ -19660,11 +19414,14 @@ PlaterDB = {
 		[50512] = {
 			["npcID"] = 27377,
 		},
+		[3264] = {
+			["npcID"] = 3452,
+		},
 		[58817] = {
 			["npcID"] = 28341,
 		},
-		[3264] = {
-			["npcID"] = 3452,
+		[15493] = {
+			["npcID"] = 9056,
 		},
 		[56898] = {
 			["npcID"] = 30319,
@@ -19672,16 +19429,16 @@ PlaterDB = {
 		[59009] = {
 			["npcID"] = 26638,
 		},
-		[15493] = {
-			["npcID"] = 9056,
-		},
-		[7487] = {
-			["npcID"] = 3927,
-		},
 		[44164] = {
 			["encounterName"] = "Priestess Delrissa",
 			["encounterID"] = 1895,
 			["npcID"] = 24656,
+		},
+		[7487] = {
+			["npcID"] = 3927,
+		},
+		[34829] = {
+			["npcID"] = 27377,
 		},
 		[46983] = {
 			["npcID"] = 25040,
@@ -19807,9 +19564,6 @@ PlaterDB = {
 		[7761] = {
 			["npcID"] = 1866,
 		},
-		[11962] = {
-			["npcID"] = 19411,
-		},
 		[49309] = {
 			["npcID"] = 32340,
 		},
@@ -19819,20 +19573,23 @@ PlaterDB = {
 		[14515] = {
 			["npcID"] = 4428,
 		},
-		[47496] = {
-			["npcID"] = 26125,
-		},
 		[33796] = {
 			["npcID"] = 16896,
+		},
+		[47496] = {
+			["npcID"] = 26125,
 		},
 		[53765] = {
 			["npcID"] = 28471,
 		},
-		[25054] = {
-			["npcID"] = 27677,
+		[45577] = {
+			["npcID"] = 25451,
 		},
 		[38753] = {
 			["npcID"] = 19754,
+		},
+		[11962] = {
+			["npcID"] = 19411,
 		},
 		[33487] = {
 			["npcID"] = 18794,
@@ -19955,8 +19712,8 @@ PlaterDB = {
 			["encounterID"] = 1895,
 			["npcID"] = 24553,
 		},
-		[57477] = {
-			["npcID"] = 30575,
+		[7162] = {
+			["npcID"] = 5661,
 		},
 		[48201] = {
 			["npcID"] = 27248,
@@ -19967,19 +19724,21 @@ PlaterDB = {
 		[38094] = {
 			["npcID"] = 21979,
 		},
-		[7162] = {
-			["npcID"] = 5661,
+		[15228] = {
+			["npcID"] = 11604,
 		},
 		[50504] = {
 			["npcID"] = 25721,
-		},
-		[15228] = {
-			["npcID"] = 11604,
 		},
 		[56934] = {
 			["encounterName"] = "Grand Magus Telestra",
 			["npcID"] = 26731,
 			["encounterID"] = 520,
+		},
+		[48920] = {
+			["encounterName"] = "King Dred",
+			["encounterID"] = 373,
+			["npcID"] = 27483,
 		},
 		[56837] = {
 			["npcID"] = 26727,
@@ -19996,16 +19755,14 @@ PlaterDB = {
 		[36623] = {
 			["npcID"] = 22113,
 		},
-		[48920] = {
-			["encounterName"] = "King Dred",
-			["encounterID"] = 373,
-			["npcID"] = 27483,
+		[22121] = {
+			["npcID"] = 13359,
 		},
 		[61315] = {
 			["npcID"] = 30353,
 		},
-		[22121] = {
-			["npcID"] = 13359,
+		[57477] = {
+			["npcID"] = 30575,
 		},
 		[36879] = {
 			["npcID"] = 20977,
@@ -20027,33 +19784,33 @@ PlaterDB = {
 		[12890] = {
 			["npcID"] = 5709,
 		},
-		[56326] = {
-			["npcID"] = 29368,
-		},
 		[44639] = {
 			["npcID"] = 24696,
+		},
+		[8137] = {
+			["npcID"] = 6553,
 		},
 		[55814] = {
 			["encounterName"] = "Eck the Ferocious",
 			["npcID"] = 29932,
 			["encounterID"] = 1988,
 		},
-		[8137] = {
-			["npcID"] = 6553,
-		},
 		[41440] = {
 			["npcID"] = 23441,
 		},
-		[58053] = {
-			["npcID"] = 30189,
-		},
 		[38085] = {
 			["npcID"] = 27898,
+		},
+		[58053] = {
+			["npcID"] = 30189,
 		},
 		[31623] = {
 			["encounterName"] = "Swamplord Musel'ek",
 			["encounterID"] = 1947,
 			["npcID"] = 17826,
+		},
+		[56326] = {
+			["npcID"] = 29368,
 		},
 		[57799] = {
 			["encounterName"] = "Herald Volazj",
@@ -20077,14 +19834,14 @@ PlaterDB = {
 		[38045] = {
 			["npcID"] = 21802,
 		},
-		[46987] = {
-			["npcID"] = 11949,
+		[10277] = {
+			["npcID"] = 18452,
 		},
 		[36176] = {
 			["npcID"] = 22862,
 		},
-		[10277] = {
-			["npcID"] = 18452,
+		[61893] = {
+			["npcID"] = 27717,
 		},
 		[11131] = {
 			["npcID"] = 7273,
@@ -20092,10 +19849,8 @@ PlaterDB = {
 		[15241] = {
 			["npcID"] = 17269,
 		},
-		[55815] = {
-			["encounterName"] = "Eck the Ferocious",
-			["npcID"] = 29932,
-			["encounterID"] = 1988,
+		[59696] = {
+			["npcID"] = 24082,
 		},
 		[59013] = {
 			["encounterName"] = "Trollgore",
@@ -20108,20 +19863,20 @@ PlaterDB = {
 		[15305] = {
 			["npcID"] = 8983,
 		},
-		[45580] = {
-			["npcID"] = 25444,
+		[46987] = {
+			["npcID"] = 11949,
 		},
 		[22478] = {
 			["npcID"] = 11490,
 		},
-		[61893] = {
-			["npcID"] = 27717,
+		[3635] = {
+			["npcID"] = 4150,
 		},
 		[13322] = {
 			["npcID"] = 2964,
 		},
-		[59696] = {
-			["npcID"] = 24082,
+		[12470] = {
+			["npcID"] = 15438,
 		},
 		[32914] = {
 			["npcID"] = 18437,
@@ -20135,14 +19890,14 @@ PlaterDB = {
 		[16561] = {
 			["npcID"] = 20270,
 		},
-		[3635] = {
-			["npcID"] = 4150,
-		},
-		[12470] = {
-			["npcID"] = 15438,
+		[49816] = {
+			["npcID"] = 25479,
 		},
 		[15497] = {
 			["npcID"] = 17963,
+		},
+		[45580] = {
+			["npcID"] = 25444,
 		},
 		[59973] = {
 			["encounterName"] = "The Prophet Tharon'ja",
@@ -20157,9 +19912,6 @@ PlaterDB = {
 			["npcID"] = 29271,
 			["encounterID"] = 2661,
 		},
-		[56775] = {
-			["npcID"] = 26722,
-		},
 		[36486] = {
 			["npcID"] = 20798,
 		},
@@ -20167,6 +19919,9 @@ PlaterDB = {
 			["encounterName"] = "Amanitar",
 			["npcID"] = 30435,
 			["encounterID"] = 1989,
+		},
+		[56775] = {
+			["npcID"] = 26722,
 		},
 		[37840] = {
 			["npcID"] = 22038,
@@ -20209,8 +19964,10 @@ PlaterDB = {
 		[15801] = {
 			["npcID"] = 11600,
 		},
-		[49816] = {
-			["npcID"] = 25479,
+		[55815] = {
+			["encounterName"] = "Eck the Ferocious",
+			["npcID"] = 29932,
+			["encounterID"] = 1988,
 		},
 		[34642] = {
 			["npcID"] = 19507,
@@ -20229,11 +19986,11 @@ PlaterDB = {
 			["encounterID"] = 1900,
 			["npcID"] = 18341,
 		},
-		[61568] = {
-			["npcID"] = 30111,
-		},
 		[22414] = {
 			["npcID"] = 11464,
+		},
+		[61568] = {
+			["npcID"] = 30111,
 		},
 		[36846] = {
 			["npcID"] = 20285,
@@ -20275,11 +20032,11 @@ PlaterDB = {
 		[37841] = {
 			["npcID"] = 20749,
 		},
-		[42526] = {
-			["npcID"] = 23876,
-		},
 		[49161] = {
 			["npcID"] = 27629,
+		},
+		[42526] = {
+			["npcID"] = 23876,
 		},
 		[38033] = {
 			["npcID"] = 25073,
@@ -20375,8 +20132,8 @@ PlaterDB = {
 		[7279] = {
 			["npcID"] = 3295,
 		},
-		[45577] = {
-			["npcID"] = 25451,
+		[25054] = {
+			["npcID"] = 27677,
 		},
 		[7295] = {
 			["npcID"] = 3914,

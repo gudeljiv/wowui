@@ -1,31 +1,15 @@
 
 RXPCData = {
+	["GA"] = true,
 	["completedWaypoints"] = {
-		[52] = {
-		},
 	},
-	["currentStep"] = 52,
-	["currentGuideName"] = "01-10 Durotar",
+	["currentStep"] = 1,
+	["currentGuideName"] = "",
 	["stepSkip"] = {
-		[45] = true,
-		[33] = true,
-		[35] = true,
-		[14] = true,
-		[28] = true,
-		[15] = true,
-		[30] = true,
-		[16] = true,
-		[50] = true,
-		[18] = true,
-		[19] = true,
-		[3] = true,
-		[42] = true,
-		[49] = true,
-		[5] = true,
 	},
 	["flightPaths"] = {
 	},
-	["currentGuideGroup"] = "RestedXP Horde 1-30",
+	["currentGuideGroup"] = "",
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -84,7 +68,7 @@ RXPCSettings = {
 			["enableLevelUpAnnounceSolo"] = false,
 			["alwaysSendBranded"] = false,
 			["enableBindAutomation"] = false,
-			["frameHeight"] = 125.0000152587891,
+			["frameHeight"] = 125.0000228881836,
 		},
 	},
 }

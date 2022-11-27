@@ -1,6 +1,6 @@
-VER 3 0000000001000017 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,help,nodead][] Lifebloom
+/cast [@mouseover,help,nodead][] Rejuvenation
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -52,6 +52,8 @@ VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
 /cast [form:1] Mangle (Bear)
 /cast [form:3] Mangle (Cat)
 /cast Innervate
+/use 13
+/use 14
 END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtoltip 
@@ -76,7 +78,7 @@ VER 3 0000000001000016 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast [@mouseover,exists,nodead][help][] Faerie Fire (Feral)
 END
-VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000017 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,help,nodead][] Rejuvenation
+/cast [@mouseover,help,nodead][] Lifebloom
 END

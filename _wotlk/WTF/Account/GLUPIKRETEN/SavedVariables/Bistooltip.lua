@@ -3,6 +3,7 @@ BisTooltipDB = {
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
+		["Miqa - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
@@ -70,6 +71,9 @@ BisTooltipDB = {
 			},
 			["class_index"] = 10,
 			["phase_index"] = 2,
+		},
+		["Miqa - Golemagg"] = {
+			["version"] = 6.1,
 		},
 		["Battlearm - Golemagg"] = {
 			["version"] = 6.1,

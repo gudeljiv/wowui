@@ -101,7 +101,7 @@ skills["druid"] = [
     {"name": "swipe", "type": "GetSpellTexture", "id": 50256, "key": "2"},
     {"name": "demoralizing roar", "type": "GetSpellTexture", "id": 99, "key": "3", "modifier": "alt"},
     {"name": "claw", "type": "GetSpellTexture", "id": 1082, "key": "1"},
-    {"name": "shred", "type": "GetSpellTexture", "id": 5221, "key": "2"},
+    {"name": "shred", "type": "GetSpellTexture", "id": 5221, "key": "8"},
     {"name": "rip", "type": "GetSpellTexture", "id": 1079, "key": "5"},
     {"name": "rake", "type": "GetSpellTexture", "id": 1822, "key": "3"},
     {"name": "faerie fire", "type": "GetSpellTexture", "id": 770, "key": "e"},

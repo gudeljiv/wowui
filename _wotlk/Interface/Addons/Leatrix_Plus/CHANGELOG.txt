@@ -1,3 +1,7 @@
+3.0.61 - 27th November 2022
+- 3.4.1: For 'Automate gossip' ('Automation'), replaced the (now removed) NPC types with NPC IDs.
+- Added flight times.
+
 3.0.60 - 23rd November 2022
 - Updated for game version 3.4.1 (currently on the PTR).  This is a major update as there are a lot of code changes in 3.4.1.
 - These options have been updated for 3.4.1: Automate quests, Automate gossip, Sell junk automatically, Resize quest text, Resize mail text, Resize book text, Hide chat buttons, Restore chat messages and Show flight times.

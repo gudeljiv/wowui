@@ -52,12 +52,13 @@ VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
 /cast [form:1] Mangle (Bear)
 /cast [form:3] Mangle (Cat)
 /cast Innervate
+/use 13
+/use 14
 END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
-#showtoltip 
+#showtoltip
 /startattack
 /cast [stealth] Pounce; [form:1] Maul; [form:3] Claw; [@mouseover,help,nodead][] Regrowth
-/use Bladefist's Breadth
 END
 VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
 #showtooltip

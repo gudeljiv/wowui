@@ -3,6 +3,8 @@ AceBISGears = {
 	["ElementalShaman"] = true,
 	["FuryWarrior"] = true,
 	["SurvivalHunter"] = true,
+	["ArmWarrior"] = true,
+	["P0"] = true,
 	["ProtectionWarrior"] = true,
 	["ArcaneMage"] = true,
 	["UnholyDeath Knight"] = true,
@@ -11,6 +13,6 @@ AceBISGears = {
 	["ShadowPriest"] = true,
 	["RetributionPaladin"] = true,
 	["FeralDruid"] = true,
-	["P0"] = true,
-	["ArmWarrior"] = true,
+	["AfflictionWarlock"] = true,
+	["BalanceDruid"] = true,
 }
