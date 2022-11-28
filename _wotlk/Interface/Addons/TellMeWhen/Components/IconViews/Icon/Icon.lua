@@ -166,7 +166,6 @@ View:ImplementsModule(
 		Module.container:ClearAllPoints()
 		Module.container:SetSize(sizeX - 2 * inset, sizeY - 2 * inset)
 		Module.container:SetPoint('TOPLEFT', inset, -inset)
-		Module.container:CreateBeautyBorder(8)
 		Module:Enable()
 
 		---------- Skin-Dependent Module Layout ----------

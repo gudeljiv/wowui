@@ -5,6 +5,1325 @@ _detalhes_database = {
 	["mythic_dungeon_id"] = 0,
 	["tabela_historico"] = {
 		["tabelas"] = {
+			{
+				{
+					["combatId"] = 980,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.004159,
+							["damage_from"] = {
+								["Environment (Fire)"] = true,
+							},
+							["targets"] = {
+								["Expert's Training Dummy"] = 254759,
+							},
+							["on_hold"] = true,
+							["pets"] = {
+								"Bloodworm <Battlearm>", -- [1]
+							},
+							["isTank"] = true,
+							["colocacao"] = 1,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 247833.004159,
+							["timeMachine"] = 4,
+							["avoidance"] = {
+								["overall"] = {
+									["DODGE"] = 0,
+									["FULL_ABSORB_AMT"] = 0,
+									["BLOCKED_AMT"] = 0,
+									["BLOCKED_HITS"] = 0,
+									["FULL_ABSORBED"] = 0,
+									["ALL"] = 1,
+									["PARTIAL_ABSORBED"] = 0,
+									["PARRY"] = 0,
+									["PARTIAL_ABSORB_AMT"] = 0,
+									["ABSORB"] = 0,
+									["ABSORB_AMT"] = 0,
+									["FULL_HIT"] = 1,
+									["HITS"] = 0,
+									["FULL_HIT_AMT"] = 14,
+								},
+								["Environment (Fire)"] = {
+									["DODGE"] = 0,
+									["FULL_ABSORB_AMT"] = 0,
+									["BLOCKED_AMT"] = 0,
+									["BLOCKED_HITS"] = 0,
+									["FULL_ABSORBED"] = 0,
+									["ALL"] = 1,
+									["PARTIAL_ABSORBED"] = 0,
+									["PARRY"] = 0,
+									["PARTIAL_ABSORB_AMT"] = 0,
+									["ABSORB"] = 0,
+									["ABSORB_AMT"] = 0,
+									["FULL_HIT"] = 1,
+									["HITS"] = 0,
+									["FULL_HIT_AMT"] = 14,
+								},
+							},
+							["dps_started"] = true,
+							["total"] = 254759.004159,
+							["aID"] = "4465-036D491F",
+							["classe"] = "DEATHKNIGHT",
+							["nome"] = "Battlearm",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 9,
+										["b_amt"] = 0,
+										["c_dmg"] = 23797,
+										["g_amt"] = 0,
+										["n_max"] = 1395,
+										["targets"] = {
+											["Expert's Training Dummy"] = 46539,
+										},
+										["n_dmg"] = 22742,
+										["n_min"] = 1139,
+										["g_dmg"] = 0,
+										["counter"] = 27,
+										["ChartData"] = {
+											[38] = 16600,
+											[107] = 46539,
+											[62] = 27069,
+											[5] = 2373,
+											[92] = 42545,
+											[77] = 33103,
+											[47] = 21815,
+											[14] = 6164,
+											[20] = 8755,
+											[32] = 12563,
+											[95] = 42545,
+											[56] = 25757,
+											[80] = 34365,
+											[65] = 29492,
+											[41] = 19256,
+											[17] = 7559,
+											[98] = 45274,
+											[29] = 12563,
+											[83] = 37121,
+											[50] = 21815,
+											[68] = 30631,
+											[35] = 13759,
+											[11] = 3670,
+											[101] = 46539,
+											[59] = 27069,
+											[86] = 38431,
+											[26] = 11264,
+											[71] = 31887,
+											[44] = 20477,
+											[104] = 46539,
+											[89] = 39735,
+											[53] = 23042,
+											[74] = 33103,
+											[23] = 9997,
+											[9] = 3670,
+										},
+										["total"] = 46539,
+										["c_max"] = 2841,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 2373,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 18,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[55260] = {
+										["c_amt"] = 23,
+										["b_amt"] = 0,
+										["c_dmg"] = 62372,
+										["g_amt"] = 0,
+										["n_max"] = 1580,
+										["targets"] = {
+											["Expert's Training Dummy"] = 79257,
+										},
+										["n_dmg"] = 16885,
+										["n_min"] = 644,
+										["g_dmg"] = 0,
+										["counter"] = 38,
+										["ChartData"] = {
+											[38] = 25488,
+											[107] = 79257,
+											[62] = 50428,
+											[92] = 70748,
+											[77] = 62754,
+											[47] = 35231,
+											[14] = 3208,
+											[20] = 6727,
+											[32] = 25488,
+											[95] = 79257,
+											[56] = 47183,
+											[80] = 62754,
+											[65] = 50428,
+											[41] = 29905,
+											[17] = 3208,
+											[98] = 79257,
+											[29] = 17547,
+											[83] = 70748,
+											[50] = 35231,
+											[68] = 50428,
+											[35] = 25488,
+											[11] = 3208,
+											[101] = 79257,
+											[59] = 47183,
+											[86] = 70748,
+											[26] = 17547,
+											[71] = 56025,
+											[44] = 35231,
+											[104] = 79257,
+											[89] = 70748,
+											[53] = 38527,
+											[74] = 60486,
+											[23] = 6727,
+										},
+										["total"] = 79257,
+										["c_max"] = 3923,
+										["id"] = 55260,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 1546,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 15,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[49924] = {
+										["c_amt"] = 7,
+										["b_amt"] = 0,
+										["c_dmg"] = 27678,
+										["g_amt"] = 0,
+										["n_max"] = 1776,
+										["targets"] = {
+											["Expert's Training Dummy"] = 38575,
+										},
+										["n_dmg"] = 10897,
+										["n_min"] = 1392,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["ChartData"] = {
+											[38] = 14747,
+											[107] = 38575,
+											[62] = 21905,
+											[92] = 35295,
+											[77] = 27769,
+											[47] = 16374,
+											[14] = 3318,
+											[20] = 8590,
+											[32] = 13101,
+											[95] = 35295,
+											[56] = 20513,
+											[80] = 31520,
+											[65] = 23413,
+											[41] = 14747,
+											[17] = 4762,
+											[98] = 37071,
+											[29] = 13101,
+											[83] = 31520,
+											[50] = 20513,
+											[68] = 27769,
+											[35] = 14747,
+											[11] = 3318,
+											[101] = 38575,
+											[59] = 21905,
+											[86] = 35295,
+											[26] = 8590,
+											[71] = 27769,
+											[44] = 14747,
+											[104] = 38575,
+											[89] = 35295,
+											[53] = 20513,
+											[74] = 27769,
+											[23] = 8590,
+											[9] = 3318,
+										},
+										["total"] = 38575,
+										["c_max"] = 4511,
+										["id"] = 49924,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 3318,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[55095] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 243,
+										["targets"] = {
+											["Expert's Training Dummy"] = 25959,
+										},
+										["n_dmg"] = 25959,
+										["n_min"] = 212,
+										["g_dmg"] = 0,
+										["counter"] = 109,
+										["ChartData"] = {
+											[38] = 8646,
+											[107] = 23044,
+											[62] = 12562,
+											[5] = 424,
+											[92] = 20376,
+											[77] = 16495,
+											[47] = 9374,
+											[14] = 1849,
+											[20] = 3790,
+											[32] = 6945,
+											[95] = 20618,
+											[56] = 10752,
+											[80] = 17466,
+											[65] = 13469,
+											[41] = 8889,
+											[17] = 2819,
+											[98] = 20860,
+											[29] = 5974,
+											[83] = 18436,
+											[50] = 9617,
+											[68] = 14376,
+											[35] = 7917,
+											[11] = 879,
+											[101] = 21103,
+											[59] = 11658,
+											[86] = 19406,
+											[26] = 5003,
+											[71] = 15283,
+											[44] = 9131,
+											[104] = 22073,
+											[89] = 20133,
+											[53] = 9844,
+											[74] = 15525,
+											[23] = 4032,
+											[9] = 636,
+										},
+										["total"] = 25959,
+										["c_max"] = 0,
+										["id"] = 55095,
+										["r_dmg"] = 0,
+										["spellschool"] = 16,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 109,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[49903] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 602,
+										["targets"] = {
+											["Expert's Training Dummy"] = 1752,
+										},
+										["n_dmg"] = 1752,
+										["n_min"] = 549,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[38] = 1150,
+											[107] = 1752,
+											[62] = 1150,
+											[5] = 549,
+											[92] = 1752,
+											[77] = 1150,
+											[47] = 1150,
+											[14] = 549,
+											[20] = 549,
+											[32] = 549,
+											[95] = 1752,
+											[56] = 1150,
+											[80] = 1150,
+											[65] = 1150,
+											[41] = 1150,
+											[17] = 549,
+											[98] = 1752,
+											[29] = 549,
+											[83] = 1150,
+											[50] = 1150,
+											[68] = 1150,
+											[35] = 549,
+											[11] = 549,
+											[101] = 1752,
+											[59] = 1150,
+											[86] = 1150,
+											[26] = 549,
+											[71] = 1150,
+											[44] = 1150,
+											[104] = 1752,
+											[89] = 1752,
+											[53] = 1150,
+											[74] = 1150,
+											[23] = 549,
+											[9] = 549,
+										},
+										["total"] = 1752,
+										["c_max"] = 0,
+										["id"] = 49903,
+										["r_dmg"] = 0,
+										["spellschool"] = 16,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[55078] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 250,
+										["targets"] = {
+											["Expert's Training Dummy"] = 26022,
+										},
+										["n_dmg"] = 26022,
+										["n_min"] = 233,
+										["g_dmg"] = 0,
+										["counter"] = 106,
+										["ChartData"] = {
+											[38] = 8470,
+											[107] = 23026,
+											[62] = 12252,
+											[92] = 20281,
+											[77] = 16286,
+											[47] = 8970,
+											[14] = 1481,
+											[20] = 3480,
+											[32] = 6725,
+											[95] = 20531,
+											[56] = 10386,
+											[80] = 17286,
+											[65] = 13185,
+											[41] = 8470,
+											[17] = 2480,
+											[98] = 20780,
+											[29] = 5726,
+											[83] = 18284,
+											[50] = 9220,
+											[68] = 14119,
+											[35] = 7723,
+											[11] = 482,
+											[101] = 21030,
+											[59] = 11319,
+											[86] = 19283,
+											[26] = 4727,
+											[71] = 15054,
+											[44] = 8720,
+											[104] = 22028,
+											[89] = 20281,
+											[53] = 9453,
+											[74] = 15288,
+											[23] = 3729,
+											[9] = 233,
+										},
+										["total"] = 26022,
+										["c_max"] = 0,
+										["id"] = 55078,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 106,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[49921] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 5128,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Expert's Training Dummy"] = 5128,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[38] = 1566,
+											[107] = 5128,
+											[62] = 3383,
+											[5] = 1566,
+											[92] = 5128,
+											[77] = 3383,
+											[47] = 3383,
+											[14] = 1566,
+											[20] = 1566,
+											[32] = 1566,
+											[95] = 5128,
+											[56] = 3383,
+											[80] = 3383,
+											[65] = 3383,
+											[41] = 3383,
+											[17] = 1566,
+											[98] = 5128,
+											[29] = 1566,
+											[83] = 3383,
+											[50] = 3383,
+											[68] = 3383,
+											[35] = 1566,
+											[11] = 1566,
+											[101] = 5128,
+											[59] = 3383,
+											[86] = 3383,
+											[26] = 1566,
+											[71] = 3383,
+											[44] = 3383,
+											[104] = 5128,
+											[89] = 3383,
+											[53] = 3383,
+											[74] = 3383,
+											[23] = 1566,
+											[9] = 1566,
+										},
+										["total"] = 5128,
+										["c_max"] = 1817,
+										["id"] = 49921,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 1566,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[47632] = {
+										["c_amt"] = 8,
+										["b_amt"] = 0,
+										["c_dmg"] = 13494,
+										["g_amt"] = 0,
+										["n_max"] = 808,
+										["targets"] = {
+											["Expert's Training Dummy"] = 24601,
+										},
+										["n_dmg"] = 11107,
+										["n_min"] = 768,
+										["g_dmg"] = 0,
+										["counter"] = 22,
+										["ChartData"] = {
+											[38] = 10047,
+											[107] = 24601,
+											[62] = 14847,
+											[92] = 22107,
+											[77] = 19725,
+											[47] = 12541,
+											[14] = 5060,
+											[20] = 5060,
+											[32] = 6674,
+											[95] = 22914,
+											[56] = 14078,
+											[80] = 19725,
+											[65] = 15616,
+											[41] = 10047,
+											[17] = 5060,
+											[98] = 24601,
+											[29] = 6674,
+											[83] = 20532,
+											[50] = 13309,
+											[68] = 15616,
+											[35] = 8360,
+											[11] = 3373,
+											[101] = 24601,
+											[59] = 14847,
+											[86] = 21300,
+											[26] = 5867,
+											[71] = 18110,
+											[44] = 12541,
+											[104] = 24601,
+											[89] = 21300,
+											[53] = 13309,
+											[74] = 18918,
+											[23] = 5867,
+											[9] = 1687,
+										},
+										["total"] = 24601,
+										["c_max"] = 1687,
+										["id"] = 47632,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 1686,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 14,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["friendlyfire"] = {
+							},
+							["serial"] = "Player-4465-036D491F",
+							["last_dps"] = 2356.544943054752,
+							["custom"] = 0,
+							["last_event"] = 1669653128,
+							["damage_taken"] = 14.004159,
+							["start_time"] = 1669653012,
+							["delay"] = 1669653128,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.002647,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Expert's Training Dummy"] = 6926,
+							},
+							["aID"] = "28017",
+							["pets"] = {
+							},
+							["colocacao"] = 2,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 6926.002647,
+							["on_hold"] = false,
+							["serial"] = "Creature-0-4479-1-471-28017-000004E218",
+							["dps_started"] = false,
+							["total"] = 6926.002647,
+							["classe"] = "PET",
+							["ownerName"] = "Battlearm",
+							["nome"] = "Bloodworm <Battlearm>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 8,
+										["b_amt"] = 0,
+										["c_dmg"] = 1020,
+										["g_amt"] = 0,
+										["n_max"] = 72,
+										["targets"] = {
+											["Expert's Training Dummy"] = 6926,
+										},
+										["n_dmg"] = 5906,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 99,
+										["total"] = 6926,
+										["c_max"] = 143,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 50,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 91,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["grupo"] = true,
+							["end_time"] = 1669653120,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 64.06618116306167,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.002647,
+							["start_time"] = 1669653055,
+							["delay"] = 1669653069,
+							["last_event"] = 1669653115,
+						}, -- [2]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.002647,
+							["friendlyfire"] = {
+							},
+							["damage_from"] = {
+								["Battlearm"] = true,
+								["Bloodworm <Battlearm>"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.002647,
+							["aID"] = "32666",
+							["dps_started"] = false,
+							["total"] = 0.002647,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4479-1-471-32666-0000FDEADB",
+							["nome"] = "Expert's Training Dummy",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["end_time"] = 1669653120,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 254759.002647,
+							["start_time"] = 1669653120,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 980,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+								["Battlearm"] = 36253,
+							},
+							["pets"] = {
+								"Bloodworm <Battlearm>", -- [1]
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "DEATHKNIGHT",
+							["totalover"] = 36447.007809,
+							["total_without_pet"] = 674.007809,
+							["total"] = 678.007809,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["isTank"] = true,
+							["serial"] = "Player-4465-036D491F",
+							["totalabsorb"] = 0.007809,
+							["last_hps"] = 6.271636517519874,
+							["targets"] = {
+								["Battlearm"] = 678,
+							},
+							["totalover_without_pet"] = 0.007809,
+							["healing_taken"] = 678.007809,
+							["fight_component"] = true,
+							["end_time"] = 1669653120,
+							["healing_from"] = {
+								["Bloodworm <Battlearm>"] = true,
+								["Battlearm"] = true,
+							},
+							["nome"] = "Battlearm",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[53365] = {
+										["c_amt"] = 4,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Battlearm"] = 4679,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Battlearm"] = 335,
+										},
+										["n_min"] = 0,
+										["counter"] = 9,
+										["overheal"] = 4679,
+										["total"] = 335,
+										["c_max"] = 335,
+										["id"] = 53365,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 335,
+										["n_curado"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 5,
+										["absorbed"] = 0,
+									},
+									[45470] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Battlearm"] = 31574,
+										},
+										["n_max"] = 339,
+										["targets"] = {
+											["Battlearm"] = 339,
+										},
+										["n_min"] = 0,
+										["counter"] = 14,
+										["overheal"] = 31574,
+										["total"] = 339,
+										["c_max"] = 0,
+										["id"] = 45470,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 339,
+										["totaldenied"] = 0,
+										["n_amt"] = 14,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1669653027,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-036D491F",
+							["totaldenied"] = 0.007809,
+							["delay"] = 1669653081,
+							["last_event"] = 1669653115,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["targets_overheal"] = {
+								["Battlearm"] = 194,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PET",
+							["totalover"] = 194.007864,
+							["total_without_pet"] = 4.007864,
+							["total"] = 4.007864,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 2,
+							["on_hold"] = false,
+							["serial"] = "Creature-0-4479-1-471-28017-000004E218",
+							["totalabsorb"] = 0.007864,
+							["last_hps"] = 0.0370731219994743,
+							["targets"] = {
+								["Battlearm"] = 4,
+							},
+							["totalover_without_pet"] = 0.007864,
+							["healing_taken"] = 0.007864,
+							["start_time"] = 1669653055,
+							["fight_component"] = true,
+							["end_time"] = 1669653120,
+							["healing_from"] = {
+							},
+							["ownerName"] = "Battlearm",
+							["nome"] = "Bloodworm <Battlearm>",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[50454] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Battlearm"] = 194,
+										},
+										["n_max"] = 2,
+										["targets"] = {
+											["Battlearm"] = 4,
+										},
+										["n_min"] = 0,
+										["counter"] = 99,
+										["overheal"] = 194,
+										["total"] = 4,
+										["c_max"] = 0,
+										["id"] = 50454,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 4,
+										["totaldenied"] = 0,
+										["n_amt"] = 99,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "28017",
+							["totaldenied"] = 0.007864,
+							["delay"] = 1669653069,
+							["last_event"] = 1669653115,
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 980,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["received"] = 540.00135,
+							["resource"] = 0.00135,
+							["targets"] = {
+								["Battlearm"] = 540,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 6,
+							["classe"] = "DEATHKNIGHT",
+							["passiveover"] = 0.00135,
+							["fight_component"] = true,
+							["total"] = 540.00135,
+							["nome"] = "Battlearm",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[45529] = {
+										["total"] = 20,
+										["id"] = 45529,
+										["totalover"] = 0,
+										["targets"] = {
+											["Battlearm"] = 20,
+										},
+										["counter"] = 2,
+									},
+									[49903] = {
+										["total"] = 20,
+										["id"] = 49903,
+										["totalover"] = 0,
+										["targets"] = {
+											["Battlearm"] = 20,
+										},
+										["counter"] = 2,
+									},
+									[45463] = {
+										["total"] = 210,
+										["id"] = 45463,
+										["totalover"] = 0,
+										["targets"] = {
+											["Battlearm"] = 210,
+										},
+										["counter"] = 14,
+									},
+									[57330] = {
+										["total"] = 10,
+										["id"] = 57330,
+										["totalover"] = 0,
+										["targets"] = {
+											["Battlearm"] = 10,
+										},
+										["counter"] = 1,
+									},
+									[49919] = {
+										["total"] = 30,
+										["id"] = 49919,
+										["totalover"] = 0,
+										["targets"] = {
+											["Battlearm"] = 30,
+										},
+										["counter"] = 3,
+									},
+									[50842] = {
+										["total"] = 60,
+										["id"] = 50842,
+										["totalover"] = 0,
+										["targets"] = {
+											["Battlearm"] = 60,
+										},
+										["counter"] = 6,
+									},
+									[55260] = {
+										["total"] = 190,
+										["id"] = 55260,
+										["totalover"] = 0,
+										["targets"] = {
+											["Battlearm"] = 190,
+										},
+										["counter"] = 19,
+									},
+								},
+							},
+							["grupo"] = true,
+							["tipo"] = 3,
+							["flag_original"] = 1297,
+							["alternatepower"] = 0.00135,
+							["last_event"] = 1669653113,
+							["aID"] = "4465-036D491F",
+							["isTank"] = true,
+							["serial"] = "Player-4465-036D491F",
+							["totalover"] = 0.00135,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 980,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[55095] = {
+										["activedamt"] = 4,
+										["id"] = 55095,
+										["targets"] = {
+										},
+										["uptime"] = 106,
+										["appliedamt"] = 12,
+										["refreshamt"] = 9,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[55078] = {
+										["activedamt"] = 4,
+										["id"] = 55078,
+										["targets"] = {
+										},
+										["uptime"] = 99,
+										["appliedamt"] = 12,
+										["refreshamt"] = 9,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 643,
+							["aID"] = "4465-036D491F",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[53138] = {
+										["activedamt"] = 1,
+										["id"] = 53138,
+										["targets"] = {
+										},
+										["uptime"] = 108,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[64859] = {
+										["activedamt"] = 1,
+										["id"] = 64859,
+										["targets"] = {
+										},
+										["uptime"] = 97,
+										["appliedamt"] = 1,
+										["refreshamt"] = 63,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[48263] = {
+										["activedamt"] = 1,
+										["id"] = 48263,
+										["targets"] = {
+										},
+										["uptime"] = 108,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[57330] = {
+										["activedamt"] = 1,
+										["id"] = 57330,
+										["targets"] = {
+										},
+										["uptime"] = 106,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[50449] = {
+										["activedamt"] = 1,
+										["id"] = 50449,
+										["targets"] = {
+										},
+										["uptime"] = 103,
+										["appliedamt"] = 1,
+										["refreshamt"] = 54,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[53365] = {
+										["activedamt"] = 3,
+										["id"] = 53365,
+										["targets"] = {
+										},
+										["uptime"] = 81,
+										["appliedamt"] = 3,
+										["refreshamt"] = 6,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[45529] = {
+										["activedamt"] = 2,
+										["id"] = 45529,
+										["targets"] = {
+										},
+										["uptime"] = 40,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 205,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[49903] = 2,
+								[45529] = 2,
+								[50842] = 6,
+								[45463] = 14,
+								[57330] = 1,
+								[49919] = 3,
+								[49893] = 14,
+								[55260] = 19,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Battlearm",
+							["last_event"] = 1669653120,
+							["pets"] = {
+							},
+							["classe"] = "DEATHKNIGHT",
+							["serial"] = "Player-4465-036D491F",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 980,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Battlearm"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Battlearm", -- [1]
+				},
+				["tempo_start"] = 1669653012,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Expert's Training Dummy",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					254758.980742, -- [1]
+					677.991958, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 540,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["TotalElapsedCombatTime"] = 1585421.691,
+				["combat_counter"] = 2934,
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Battlearm"] = 678.007809,
+							["Bloodworm <Battlearm>"] = 4.007864,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Battlearm"] = 248848.004159,
+							["Bloodworm <Battlearm>"] = 6926.002647,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 1585421.691,
+				["player_last_events"] = {
+					["Battlearm"] = {
+						{
+							true, -- [1]
+							6, -- [2]
+							14, -- [3]
+							1669653180.424, -- [4]
+							15196, -- [5]
+							"Environment (Fire)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["CombatEndedAt"] = 1585421.691,
+				["data_inicio"] = "17:30:12",
+				["totals_grupo"] = {
+					254759, -- [1]
+					678, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 540,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["data_fim"] = "17:32:00",
+				["combat_id"] = 980,
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Bloodworm"] = 4,
+				},
+				["start_time"] = 1585313.584,
+				["TimeData"] = {
+				},
+				["pvp"] = true,
+			}, -- [1]
 		},
 	},
 	["ocd_tracker"] = {
@@ -164,7 +1483,10 @@ _detalhes_database = {
 				0.5, -- [4]
 			},
 			["scale"] = 1,
-			["arrow_anchor_y"] = 0,
+			["main_frame_size"] = {
+				249.999740600586, -- [1]
+				89.9999694824219, -- [2]
+			},
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
@@ -185,17 +1507,6 @@ _detalhes_database = {
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["y"] = -183.107162475586,
-			["row_spacement"] = 19,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["author"] = "Details! Team",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["font_size"] = 10,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -207,25 +1518,720 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["y"] = -183.107162475586,
+			["use_spark"] = false,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["use_spark"] = false,
-			["main_frame_strata"] = "LOW",
+			["font_size"] = 10,
+			["author"] = "Details! Team",
 			["main_frame_locked"] = true,
-			["main_frame_size"] = {
-				249.999740600586, -- [1]
-				89.9999694824219, -- [2]
-			},
+			["arrow_anchor_y"] = 0,
 		},
 	},
-	["character_data"] = {
-		["logons"] = 324,
+	["data_harvested_for_charts"] = {
 	},
-	["last_day"] = "28",
+	["announce_prepots"] = {
+		["enabled"] = false,
+		["channel"] = "SELF",
+		["reverse"] = false,
+	},
 	["announce_damagerecord"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
+	},
+	["character_data"] = {
+		["logons"] = 326,
+	},
+	["last_day"] = "28",
+	["local_instances_config"] = {
+		{
+			["modo"] = 2,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = true,
+			["verticalSnap"] = false,
+			["isLocked"] = true,
+			["is_open"] = true,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["snap"] = {
+				[3] = 2,
+			},
+			["segment"] = 0,
+			["mode"] = 2,
+			["attribute"] = 1,
+			["pos"] = {
+				["normal"] = {
+					["y"] = 596.4414672851562,
+					["x"] = -1101.599021911621,
+					["w"] = 234.8974151611328,
+					["h"] = 138.5456237792969,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [1]
+		{
+			["modo"] = 2,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = true,
+			["verticalSnap"] = false,
+			["isLocked"] = true,
+			["is_open"] = true,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["snap"] = {
+				1, -- [1]
+			},
+			["segment"] = 0,
+			["mode"] = 2,
+			["attribute"] = 2,
+			["pos"] = {
+				["normal"] = {
+					["y"] = 596.4414672851562,
+					["x"] = -869.6630859375,
+					["w"] = 228.9744262695313,
+					["h"] = 138.5456237792969,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [2]
+		{
+			["modo"] = 2,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = false,
+			["verticalSnap"] = false,
+			["isLocked"] = true,
+			["snap"] = {
+			},
+			["is_open"] = true,
+			["last_raid_plugin"] = "DETAILS_PLUGIN_TINY_THREAT",
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["segment"] = 0,
+			["mode"] = 2,
+			["attribute"] = 1,
+			["pos"] = {
+				["normal"] = {
+					["y"] = -517.3939361572266,
+					["x"] = 501.459716796875,
+					["w"] = 215.7857666015625,
+					["h"] = 170.4597473144531,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [3]
+	},
+	["force_font_outline"] = "",
+	["combat_id"] = 980,
+	["savedStyles"] = {
+		{
+			["hide_in_combat_type"] = 1,
+			["clickthrough_window"] = false,
+			["titlebar_shown"] = false,
+			["menu_anchor"] = {
+				16, -- [1]
+				0, -- [2]
+				["side"] = 2,
+			},
+			["bg_r"] = 0.1333333333333333,
+			["fullborder_size"] = 0.5,
+			["hide_out_of_combat"] = false,
+			["color_buttons"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
+			["skin_custom"] = "vermin",
+			["use_auto_align_multi_fontstrings"] = true,
+			["tooltip"] = {
+				["n_abilities"] = 3,
+				["n_enemies"] = 3,
+			},
+			["switch_all_roles_in_combat"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["clickthrough_toolbaricons"] = false,
+			["clickthrough_rows"] = false,
+			["titlebar_texture"] = "Clean",
+			["switch_tank"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["switch_all_roles_after_wipe"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["icon_desaturated"] = false,
+			["desaturated_menu"] = false,
+			["micro_displays_side"] = 2,
+			["window_scale"] = 1,
+			["hide_icon"] = true,
+			["toolbar_side"] = 1,
+			["bg_g"] = 0.1333333333333333,
+			["menu_icons_alpha"] = 0.92,
+			["bg_b"] = 0.1333333333333333,
+			["switch_healer_in_combat"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["color"] = {
+				0.07058823529411765, -- [1]
+				0.07058823529411765, -- [2]
+				0.07058823529411765, -- [3]
+				0, -- [4]
+			},
+			["hide_on_context"] = {
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [1]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 48,
+				}, -- [2]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [3]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [4]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [5]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [6]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [7]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [8]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [9]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [10]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [11]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [12]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [13]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [14]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [15]
+			},
+			["skin"] = "Minimalistic",
+			["following"] = {
+				["bar_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+				["enabled"] = false,
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+			},
+			["switch_healer"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["fontstrings_text2_anchor"] = 70,
+			["menu_icons_size"] = 0.8500000238418579,
+			["bars_inverted"] = false,
+			["menu_icons"] = {
+				false, -- [1]
+				true, -- [2]
+				false, -- [3]
+				false, -- [4]
+				false, -- [5]
+				false, -- [6]
+				["space"] = -4,
+				["shadow"] = false,
+			},
+			["instance_button_anchor"] = {
+				-27, -- [1]
+				1, -- [2]
+			},
+			["total_bar"] = {
+				["enabled"] = false,
+				["only_in_group"] = false,
+				["icon"] = "Interface\\ICONS\\INV_Sigil_Thorim",
+				["color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+			},
+			["show_sidebars"] = false,
+			["version"] = 3,
+			["switch_tank_in_combat"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["bg_alpha"] = 0,
+			["fontstrings_text4_anchor"] = 4,
+			["plugins_grow_direction"] = 1,
+			["menu_alpha"] = {
+				["enabled"] = false,
+				["onleave"] = 1,
+				["ignorebars"] = false,
+				["iconstoo"] = true,
+				["onenter"] = 1,
+			},
+			["fullborder_shown"] = false,
+			["attribute_text"] = {
+				["show_timer"] = false,
+				["shadow"] = false,
+				["side"] = 1,
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["custom_text"] = "{name}",
+				["text_face"] = "Arial Narrow",
+				["anchor"] = {
+					56, -- [1]
+					3, -- [2]
+				},
+				["text_size"] = 12,
+				["enable_custom_text"] = false,
+				["enabled"] = true,
+			},
+			["rowareaborder_shown"] = false,
+			["rowareaborder_size"] = 0.5,
+			["clickthrough_incombatonly"] = false,
+			["fullborder_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["backdrop_texture"] = "Details Ground",
+			["hide_in_combat_alpha"] = 0,
+			["bars_sort_direction"] = 1,
+			["strata"] = "LOW",
+			["libwindow"] = {
+				["y"] = -20,
+				["x"] = 2.012314325838815e-05,
+				["point"] = "TOPLEFT",
+				["scale"] = 1,
+			},
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					0.07058823529411765, -- [1]
+					0.07058823529411765, -- [2]
+					0.07058823529411765, -- [3]
+				},
+			},
+			["menu_anchor_down"] = {
+				16, -- [1]
+				-3, -- [2]
+			},
+			["bars_grow_direction"] = 1,
+			["grab_on_top"] = false,
+			["auto_hide_menu"] = {
+				["left"] = false,
+				["right"] = true,
+			},
+			["show_statusbar"] = false,
+			["switch_damager_in_combat"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["rowareaborder_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["row_show_animation"] = {
+				["anim"] = "Fade",
+				["options"] = {
+				},
+			},
+			["auto_current"] = true,
+			["micro_displays_locked"] = false,
+			["switch_damager"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["name"] = "vermin",
+			["hide_in_combat"] = false,
+			["row_info"] = {
+				["textR_outline"] = false,
+				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
+				["textL_outline"] = false,
+				["textR_outline_small"] = true,
+				["textL_outline_small"] = true,
+				["textL_enable_custom_text"] = false,
+				["fixed_text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+				["space"] = {
+					["right"] = 0,
+					["left"] = 0,
+					["between"] = 1,
+				},
+				["texture_background_class_color"] = false,
+				["start_after_icon"] = true,
+				["font_face_file"] = "Fonts\\ARIALN.TTF",
+				["faction_icon_size_offset"] = -10,
+				["backdrop"] = {
+					["color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["size"] = 12,
+					["enabled"] = false,
+					["texture"] = "ThreatPlatesBorder",
+				},
+				["font_size"] = 11,
+				["textL_custom_text"] = "{data1}. {data3}{data2}",
+				["models"] = {
+					["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
+					["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
+					["upper_alpha"] = 0.5,
+					["lower_enabled"] = false,
+					["lower_alpha"] = 0.1,
+					["upper_enabled"] = false,
+				},
+				["textL_translit_text"] = false,
+				["texture_custom_file"] = "Interface\\",
+				["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
+				["icon_size_offset"] = 0,
+				["textL_outline_small_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["show_faction_icon"] = true,
+				["overlay_color"] = {
+					0.7, -- [1]
+					0.7, -- [2]
+					0.7, -- [3]
+					0, -- [4]
+				},
+				["textR_show_data"] = {
+					true, -- [1]
+					true, -- [2]
+					false, -- [3]
+				},
+				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+				["icon_file"] = "",
+				["icon_grayscale"] = false,
+				["use_spec_icons"] = false,
+				["textR_bracket"] = "(",
+				["texture_custom"] = "",
+				["show_arena_role_icon"] = false,
+				["fixed_texture_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["textL_show_number"] = true,
+				["textR_enable_custom_text"] = false,
+				["textR_outline_small_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["textR_custom_text"] = "{data1} ({data2}, {data3}%)",
+				["texture"] = "Clean",
+				["textR_class_colors"] = false,
+				["texture_background_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
+				["overlay_texture"] = "Clean",
+				["fixed_texture_background_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0.07912671566009521, -- [4]
+				},
+				["textL_class_colors"] = false,
+				["texture_background"] = "Clean",
+				["alpha"] = 1,
+				["no_icon"] = true,
+				["icon_offset"] = {
+					0, -- [1]
+					0, -- [2]
+				},
+				["arena_role_icon_size_offset"] = -10,
+				["font_face"] = "Arial Narrow",
+				["texture_class_colors"] = true,
+				["percent_type"] = 1,
+				["fast_ps_update"] = false,
+				["textR_separator"] = "NONE",
+				["height"] = 19,
+			},
+			["ignore_mass_showhide"] = false,
+			["fontstrings_text_limit_offset"] = -10,
+			["wallpaper"] = {
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["alpha"] = 0.5,
+				["width"] = 283.000183105469,
+				["texcoord"] = {
+					0, -- [1]
+					1, -- [2]
+					0, -- [3]
+					0.7, -- [4]
+				},
+				["height"] = 114.042518615723,
+				["anchor"] = "all",
+				["level"] = 2,
+				["enabled"] = false,
+				["texture"] = "Interface\\AddOns\\Details\\images\\background",
+			},
+			["stretch_button_side"] = 2,
+			["titlebar_height"] = 16,
+			["fontstrings_text3_anchor"] = 35,
+			["use_multi_fontstrings"] = true,
+			["titlebar_texture_color"] = {
+				0.2, -- [1]
+				0.2, -- [2]
+				0.2, -- [3]
+				0, -- [4]
+			},
+		}, -- [1]
+	},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["combat_counter"] = 2934,
+	["announce_deaths"] = {
+		["enabled"] = false,
+		["last_hits"] = 1,
+		["only_first"] = 5,
+		["where"] = 1,
+	},
+	["tabela_overall"] = {
+		{
+			["tipo"] = 2,
+			["_ActorTable"] = {
+			},
+		}, -- [1]
+		{
+			["tipo"] = 3,
+			["_ActorTable"] = {
+			},
+		}, -- [2]
+		{
+			["tipo"] = 7,
+			["_ActorTable"] = {
+			},
+		}, -- [3]
+		{
+			["tipo"] = 9,
+			["_ActorTable"] = {
+			},
+		}, -- [4]
+		{
+			["tipo"] = 2,
+			["_ActorTable"] = {
+			},
+		}, -- [5]
+		["raid_roster"] = {
+		},
+		["raid_roster_indexed"] = {
+		},
+		["tempo_start"] = 1669653012,
+		["last_events_tables"] = {
+		},
+		["alternate_power"] = {
+		},
+		["combat_counter"] = 2933,
+		["totals"] = {
+			0, -- [1]
+			0, -- [2]
+			{
+				0, -- [1]
+				[0] = 0,
+				["alternatepower"] = 0,
+				[3] = 0,
+				[6] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["debuff_uptime"] = 0,
+				["cooldowns_defensive"] = 0,
+				["interrupt"] = 0,
+				["dispell"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
+			}, -- [4]
+			["frags_total"] = 0,
+			["voidzone_damage"] = 0,
+		},
+		["player_last_events"] = {
+		},
+		["frags_need_refresh"] = false,
+		["aura_timeline"] = {
+		},
+		["__call"] = {
+		},
+		["data_inicio"] = 0,
+		["spells_cast_timeline"] = {
+		},
+		["totals_grupo"] = {
+			0, -- [1]
+			0, -- [2]
+			{
+				0, -- [1]
+				[0] = 0,
+				["alternatepower"] = 0,
+				[3] = 0,
+				[6] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["debuff_uptime"] = 0,
+				["cooldowns_defensive"] = 0,
+				["interrupt"] = 0,
+				["dispell"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
+			}, -- [4]
+		},
+		["frags"] = {
+		},
+		["data_fim"] = 0,
+		["cleu_events"] = {
+			["n"] = 1,
+		},
+		["CombatSkillCache"] = {
+		},
+		["cleu_timeline"] = {
+		},
+		["start_time"] = 0,
+		["TimeData"] = {
+			["Raid Damage Done"] = {
+			},
+		},
+		["PhaseData"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+			}, -- [1]
+			["heal_section"] = {
+			},
+			["heal"] = {
+			},
+			["damage_section"] = {
+			},
+			["damage"] = {
+			},
+		},
+	},
+	["last_realversion"] = 147,
+	["benchmark_db"] = {
+		["frame"] = {
+		},
 	},
 	["cached_talents"] = {
 		["Player-4465-036D491F"] = {
@@ -1023,694 +3029,6 @@ _detalhes_database = {
 			}, -- [88]
 		},
 	},
-	["data_harvested_for_charts"] = {
-	},
-	["local_instances_config"] = {
-		{
-			["modo"] = 2,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
-			["verticalSnap"] = false,
-			["isLocked"] = true,
-			["is_open"] = true,
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["snap"] = {
-				[3] = 2,
-			},
-			["segment"] = 0,
-			["mode"] = 2,
-			["attribute"] = 1,
-			["pos"] = {
-				["normal"] = {
-					["y"] = 596.4414672851562,
-					["x"] = -1101.599021911621,
-					["w"] = 234.8974151611328,
-					["h"] = 138.5456237792969,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [1]
-		{
-			["modo"] = 2,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
-			["verticalSnap"] = false,
-			["isLocked"] = true,
-			["is_open"] = true,
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["snap"] = {
-				1, -- [1]
-			},
-			["segment"] = 0,
-			["mode"] = 2,
-			["attribute"] = 2,
-			["pos"] = {
-				["normal"] = {
-					["y"] = 596.4414672851562,
-					["x"] = -869.6630859375,
-					["w"] = 228.9744262695313,
-					["h"] = 138.5456237792969,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [2]
-		{
-			["modo"] = 2,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = false,
-			["verticalSnap"] = false,
-			["isLocked"] = true,
-			["snap"] = {
-			},
-			["is_open"] = true,
-			["last_raid_plugin"] = "DETAILS_PLUGIN_TINY_THREAT",
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["segment"] = 0,
-			["mode"] = 2,
-			["attribute"] = 1,
-			["pos"] = {
-				["normal"] = {
-					["y"] = -517.3939361572266,
-					["x"] = 501.459716796875,
-					["w"] = 215.7857666015625,
-					["h"] = 170.4597473144531,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [3]
-	},
-	["force_font_outline"] = "",
-	["combat_id"] = 979,
-	["savedStyles"] = {
-		{
-			["hide_in_combat_type"] = 1,
-			["clickthrough_window"] = false,
-			["titlebar_shown"] = false,
-			["menu_anchor"] = {
-				16, -- [1]
-				0, -- [2]
-				["side"] = 2,
-			},
-			["bg_r"] = 0.1333333333333333,
-			["fullborder_size"] = 0.5,
-			["hide_out_of_combat"] = false,
-			["color_buttons"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["bars_sort_direction"] = 1,
-			["use_auto_align_multi_fontstrings"] = true,
-			["tooltip"] = {
-				["n_abilities"] = 3,
-				["n_enemies"] = 3,
-			},
-			["switch_all_roles_in_combat"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["clickthrough_toolbaricons"] = false,
-			["clickthrough_rows"] = false,
-			["titlebar_texture"] = "Clean",
-			["switch_tank"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["switch_all_roles_after_wipe"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["icon_desaturated"] = false,
-			["desaturated_menu"] = false,
-			["micro_displays_side"] = 2,
-			["window_scale"] = 1,
-			["hide_icon"] = true,
-			["toolbar_side"] = 1,
-			["bg_g"] = 0.1333333333333333,
-			["menu_icons_alpha"] = 0.92,
-			["bg_b"] = 0.1333333333333333,
-			["switch_healer_in_combat"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["color"] = {
-				0.07058823529411765, -- [1]
-				0.07058823529411765, -- [2]
-				0.07058823529411765, -- [3]
-				0, -- [4]
-			},
-			["hide_on_context"] = {
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [1]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 48,
-				}, -- [2]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [3]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [4]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [5]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [6]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [7]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [8]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [9]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [10]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [11]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [12]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [13]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [14]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [15]
-			},
-			["skin"] = "Minimalistic",
-			["following"] = {
-				["bar_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-				["enabled"] = false,
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
-			["switch_healer"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["fontstrings_text2_anchor"] = 70,
-			["menu_icons_size"] = 0.8500000238418579,
-			["bars_inverted"] = false,
-			["menu_icons"] = {
-				false, -- [1]
-				true, -- [2]
-				false, -- [3]
-				false, -- [4]
-				false, -- [5]
-				false, -- [6]
-				["space"] = -4,
-				["shadow"] = false,
-			},
-			["instance_button_anchor"] = {
-				-27, -- [1]
-				1, -- [2]
-			},
-			["total_bar"] = {
-				["enabled"] = false,
-				["only_in_group"] = false,
-				["icon"] = "Interface\\ICONS\\INV_Sigil_Thorim",
-				["color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
-			["show_sidebars"] = false,
-			["name"] = "vermin",
-			["switch_tank_in_combat"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["version"] = 3,
-			["fontstrings_text4_anchor"] = 4,
-			["plugins_grow_direction"] = 1,
-			["menu_alpha"] = {
-				["enabled"] = false,
-				["onleave"] = 1,
-				["ignorebars"] = false,
-				["iconstoo"] = true,
-				["onenter"] = 1,
-			},
-			["fullborder_shown"] = false,
-			["attribute_text"] = {
-				["show_timer"] = false,
-				["shadow"] = false,
-				["side"] = 1,
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["custom_text"] = "{name}",
-				["text_face"] = "Arial Narrow",
-				["anchor"] = {
-					56, -- [1]
-					3, -- [2]
-				},
-				["text_size"] = 12,
-				["enable_custom_text"] = false,
-				["enabled"] = true,
-			},
-			["rowareaborder_shown"] = false,
-			["rowareaborder_size"] = 0.5,
-			["clickthrough_incombatonly"] = false,
-			["fullborder_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["backdrop_texture"] = "Details Ground",
-			["hide_in_combat_alpha"] = 0,
-			["micro_displays_locked"] = false,
-			["strata"] = "LOW",
-			["libwindow"] = {
-				["y"] = -20,
-				["x"] = 2.012314325838815e-05,
-				["point"] = "TOPLEFT",
-				["scale"] = 1,
-			},
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					0.07058823529411765, -- [1]
-					0.07058823529411765, -- [2]
-					0.07058823529411765, -- [3]
-				},
-			},
-			["row_show_animation"] = {
-				["anim"] = "Fade",
-				["options"] = {
-				},
-			},
-			["menu_anchor_down"] = {
-				16, -- [1]
-				-3, -- [2]
-			},
-			["grab_on_top"] = false,
-			["auto_hide_menu"] = {
-				["left"] = false,
-				["right"] = true,
-			},
-			["show_statusbar"] = false,
-			["switch_damager_in_combat"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["rowareaborder_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["bars_grow_direction"] = 1,
-			["auto_current"] = true,
-			["skin_custom"] = "vermin",
-			["switch_damager"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["bg_alpha"] = 0,
-			["hide_in_combat"] = false,
-			["row_info"] = {
-				["textR_outline"] = false,
-				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
-				["textL_outline"] = false,
-				["textR_outline_small"] = true,
-				["textL_outline_small"] = true,
-				["textL_enable_custom_text"] = false,
-				["fixed_text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-				["space"] = {
-					["right"] = 0,
-					["left"] = 0,
-					["between"] = 1,
-				},
-				["texture_background_class_color"] = false,
-				["start_after_icon"] = true,
-				["font_face_file"] = "Fonts\\ARIALN.TTF",
-				["faction_icon_size_offset"] = -10,
-				["backdrop"] = {
-					["color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["size"] = 12,
-					["enabled"] = false,
-					["texture"] = "ThreatPlatesBorder",
-				},
-				["font_size"] = 11,
-				["textL_custom_text"] = "{data1}. {data3}{data2}",
-				["models"] = {
-					["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
-					["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
-					["upper_alpha"] = 0.5,
-					["lower_enabled"] = false,
-					["lower_alpha"] = 0.1,
-					["upper_enabled"] = false,
-				},
-				["textL_translit_text"] = false,
-				["texture_custom_file"] = "Interface\\",
-				["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
-				["icon_size_offset"] = 0,
-				["textL_outline_small_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["show_faction_icon"] = true,
-				["overlay_color"] = {
-					0.7, -- [1]
-					0.7, -- [2]
-					0.7, -- [3]
-					0, -- [4]
-				},
-				["textR_show_data"] = {
-					true, -- [1]
-					true, -- [2]
-					false, -- [3]
-				},
-				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-				["icon_file"] = "",
-				["icon_grayscale"] = false,
-				["use_spec_icons"] = false,
-				["textR_bracket"] = "(",
-				["texture_custom"] = "",
-				["show_arena_role_icon"] = false,
-				["fixed_texture_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["textL_show_number"] = true,
-				["textR_enable_custom_text"] = false,
-				["textR_outline_small_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["textR_custom_text"] = "{data1} ({data2}, {data3}%)",
-				["texture"] = "Clean",
-				["textR_class_colors"] = false,
-				["texture_background_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
-				["overlay_texture"] = "Clean",
-				["fixed_texture_background_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0.07912671566009521, -- [4]
-				},
-				["textL_class_colors"] = false,
-				["texture_background"] = "Clean",
-				["alpha"] = 1,
-				["no_icon"] = true,
-				["icon_offset"] = {
-					0, -- [1]
-					0, -- [2]
-				},
-				["arena_role_icon_size_offset"] = -10,
-				["font_face"] = "Arial Narrow",
-				["texture_class_colors"] = true,
-				["percent_type"] = 1,
-				["fast_ps_update"] = false,
-				["textR_separator"] = "NONE",
-				["height"] = 19,
-			},
-			["ignore_mass_showhide"] = false,
-			["fontstrings_text_limit_offset"] = -10,
-			["wallpaper"] = {
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["alpha"] = 0.5,
-				["width"] = 283.000183105469,
-				["texcoord"] = {
-					0, -- [1]
-					1, -- [2]
-					0, -- [3]
-					0.7, -- [4]
-				},
-				["height"] = 114.042518615723,
-				["anchor"] = "all",
-				["level"] = 2,
-				["enabled"] = false,
-				["texture"] = "Interface\\AddOns\\Details\\images\\background",
-			},
-			["stretch_button_side"] = 2,
-			["titlebar_height"] = 16,
-			["fontstrings_text3_anchor"] = 35,
-			["use_multi_fontstrings"] = true,
-			["titlebar_texture_color"] = {
-				0.2, -- [1]
-				0.2, -- [2]
-				0.2, -- [3]
-				0, -- [4]
-			},
-		}, -- [1]
-	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["combat_counter"] = 2928,
-	["announce_deaths"] = {
-		["enabled"] = false,
-		["last_hits"] = 1,
-		["only_first"] = 5,
-		["where"] = 1,
-	},
-	["tabela_overall"] = {
-		{
-			["tipo"] = 2,
-			["_ActorTable"] = {
-			},
-		}, -- [1]
-		{
-			["tipo"] = 3,
-			["_ActorTable"] = {
-			},
-		}, -- [2]
-		{
-			["tipo"] = 7,
-			["_ActorTable"] = {
-			},
-		}, -- [3]
-		{
-			["tipo"] = 9,
-			["_ActorTable"] = {
-			},
-		}, -- [4]
-		{
-			["tipo"] = 2,
-			["_ActorTable"] = {
-			},
-		}, -- [5]
-		["raid_roster"] = {
-		},
-		["raid_roster_indexed"] = {
-		},
-		["tempo_start"] = 1558328.336,
-		["last_events_tables"] = {
-		},
-		["alternate_power"] = {
-		},
-		["frags"] = {
-		},
-		["combat_counter"] = 2924,
-		["totals"] = {
-			0, -- [1]
-			0, -- [2]
-			{
-				0, -- [1]
-				[0] = 0,
-				["alternatepower"] = 0,
-				[6] = 0,
-				[3] = 0,
-			}, -- [3]
-			{
-				["buff_uptime"] = 0,
-				["ress"] = 0,
-				["dead"] = 0,
-				["cc_break"] = 0,
-				["interrupt"] = 0,
-				["debuff_uptime"] = 0,
-				["dispell"] = 0,
-				["cooldowns_defensive"] = 0,
-			}, -- [4]
-			["voidzone_damage"] = 0,
-			["frags_total"] = 0,
-		},
-		["player_last_events"] = {
-		},
-		["frags_need_refresh"] = false,
-		["aura_timeline"] = {
-		},
-		["__call"] = {
-		},
-		["data_inicio"] = 0,
-		["end_time"] = 1558328.336,
-		["PhaseData"] = {
-			{
-				1, -- [1]
-				1, -- [2]
-			}, -- [1]
-			["damage"] = {
-			},
-			["heal_section"] = {
-			},
-			["heal"] = {
-			},
-			["damage_section"] = {
-			},
-		},
-		["overall_refreshed"] = true,
-		["hasSaved"] = true,
-		["spells_cast_timeline"] = {
-		},
-		["data_fim"] = 0,
-		["cleu_events"] = {
-			["n"] = 1,
-		},
-		["CombatSkillCache"] = {
-		},
-		["cleu_timeline"] = {
-		},
-		["start_time"] = 1558328.336,
-		["TimeData"] = {
-		},
-		["totals_grupo"] = {
-			0, -- [1]
-			0, -- [2]
-			{
-				0, -- [1]
-				[0] = 0,
-				["alternatepower"] = 0,
-				[6] = 0,
-				[3] = 0,
-			}, -- [3]
-			{
-				["buff_uptime"] = 0,
-				["ress"] = 0,
-				["dead"] = 0,
-				["cc_break"] = 0,
-				["interrupt"] = 0,
-				["debuff_uptime"] = 0,
-				["dispell"] = 0,
-				["cooldowns_defensive"] = 0,
-			}, -- [4]
-		},
-	},
-	["last_realversion"] = 147,
-	["benchmark_db"] = {
-		["frame"] = {
-		},
-	},
-	["announce_prepots"] = {
-		["enabled"] = false,
-		["channel"] = "SELF",
-		["reverse"] = false,
-	},
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {
 		},
@@ -1737,7 +3055,7 @@ _detalhes_database = {
 		["Player-4816-049A050E"] = "DAMAGER",
 		["Player-4465-02FA0FDF"] = "HEALER",
 		["Player-4701-038D60B9"] = "DAMAGER",
-		["Player-4476-03998DB8"] = "DAMAGER",
+		["Player-4465-0307CA4A"] = "TANK",
 		["Player-4465-0299B55C"] = "TANK",
 		["Player-4745-039D2943"] = "HEALER",
 		["Player-4477-04AE5B48"] = "TANK",
@@ -1747,7 +3065,7 @@ _detalhes_database = {
 		["Player-4476-0378085D"] = "HEALER",
 		["Player-4815-0473E66B"] = "DAMAGER",
 		["Player-4476-04AE2F3F"] = "DAMAGER",
-		["Player-4476-039405CA"] = "DAMAGER",
+		["Player-4476-04866D47"] = "DAMAGER",
 		["Player-4476-024AACC3"] = "DAMAGER",
 		["Player-4813-04AFE4D3"] = "HEALER",
 		["Player-4742-03913487"] = "DAMAGER",
@@ -1755,36 +3073,36 @@ _detalhes_database = {
 		["Player-4454-0279DF98"] = "DAMAGER",
 		["Player-4701-03A1121A"] = "DAMAGER",
 		["Player-4465-00081016"] = "HEALER",
-		["Player-4464-02E663F2"] = "DAMAGER",
+		["Player-4476-032A3F23"] = "DAMAGER",
 		["Player-4465-02F2E726"] = "TANK",
-		["Player-4742-03A852BB"] = "DAMAGER",
+		["Player-4701-03ACBDD8"] = "DAMAGER",
 		["Player-4464-01050922"] = "DAMAGER",
-		["Player-4465-03A6BCC0"] = "DAMAGER",
+		["Player-4742-039A572F"] = "DAMAGER",
 		["Player-4465-02E15058"] = "DAMAGER",
 		["Player-4701-037B32C6"] = "DAMAGER",
 		["Player-4441-016DB9FE"] = "DAMAGER",
 		["Player-4465-011B96A9"] = "DAMAGER",
 		["Player-4745-039F36B1"] = "DAMAGER",
 		["Player-4745-03727E39"] = "HEALER",
-		["Player-4442-039B5486"] = "HEALER",
-		["Player-4464-03085F44"] = "DAMAGER",
+		["Player-4813-03BD7394"] = "DAMAGER",
+		["Player-4816-04ADC475"] = "DAMAGER",
 		["Player-4816-04954F4A"] = "DAMAGER",
 		["Player-4477-045DAFDD"] = "DAMAGER",
-		["Player-4701-0330463A"] = "DAMAGER",
+		["Player-4464-0375088A"] = "DAMAGER",
 		["Player-4476-0130518C"] = "DAMAGER",
 		["Player-4477-043BCCDF"] = "DAMAGER",
-		["Player-4476-04803CC4"] = "DAMAGER",
+		["Player-4465-016E0739"] = "DAMAGER",
 		["Player-4477-04A2264C"] = "DAMAGER",
 		["Player-4701-03ACDA58"] = "HEALER",
 		["Player-4701-039E1335"] = "DAMAGER",
 		["Player-4464-022917BB"] = "HEALER",
-		["Player-4465-0394AE47"] = "DAMAGER",
+		["Player-4442-039E39B5"] = "DAMAGER",
 		["Player-4701-037A918E"] = "DAMAGER",
 		["Player-4701-03A80F5E"] = "DAMAGER",
 		["Player-4456-04AC45AA"] = "TANK",
 		["Player-4477-046B1A4F"] = "TANK",
-		["Player-4477-0480EFA6"] = "DAMAGER",
-		["Player-4476-04448BE2"] = "DAMAGER",
+		["Player-4701-0387F280"] = "DAMAGER",
+		["Player-4466-01C0757D"] = "DAMAGER",
 		["Player-4742-03ACD810"] = "DAMAGER",
 		["Player-4701-03AC5016"] = "DAMAGER",
 		["Player-4476-03DA19CE"] = "DAMAGER",
@@ -1804,19 +3122,19 @@ _detalhes_database = {
 		["Player-4816-0496B4C7"] = "DAMAGER",
 		["Player-4701-033C9FCA"] = "HEALER",
 		["Player-4745-03A0A4FE"] = "DAMAGER",
-		["Player-4465-027ED4E9"] = "DAMAGER",
-		["Player-4455-039FFA99"] = "DAMAGER",
+		["Player-4477-044DFAA6"] = "DAMAGER",
+		["Player-4815-0468E5C7"] = "HEALER",
 		["Player-4701-03A3670C"] = "DAMAGER",
 		["Player-4476-049DE298"] = "HEALER",
 		["Player-4477-045BC99C"] = "DAMAGER",
 		["Player-4465-02FEFF6C"] = "DAMAGER",
 		["Player-4464-02EC75D7"] = "DAMAGER",
-		["Player-4476-047BB1CB"] = "DAMAGER",
-		["Player-4477-049CFB39"] = "DAMAGER",
+		["Player-4455-03ACF094"] = "DAMAGER",
+		["Player-4465-02F8BD35"] = "HEALER",
 		["Player-4745-039BE38C"] = "DAMAGER",
 		["Player-4815-0497121D"] = "DAMAGER",
 		["Player-4465-024AD6C5"] = "HEALER",
-		["Player-4476-03347BF2"] = "TANK",
+		["Player-4476-0497D169"] = "DAMAGER",
 		["Player-4745-038C86B0"] = "DAMAGER",
 		["Player-4465-02BD1A57"] = "DAMAGER",
 		["Player-4466-026BB097"] = "DAMAGER",
@@ -1827,7 +3145,7 @@ _detalhes_database = {
 		["Player-4745-0398CA81"] = "TANK",
 		["Player-4815-046AF443"] = "DAMAGER",
 		["Player-4701-03872796"] = "DAMAGER",
-		["Player-4701-03863EE1"] = "HEALER",
+		["Player-4476-039CAE85"] = "DAMAGER",
 		["Player-4701-03803449"] = "DAMAGER",
 		["Player-4465-03ACE165"] = "DAMAGER",
 		["Player-4811-0396CC64"] = "DAMAGER",
@@ -1835,37 +3153,37 @@ _detalhes_database = {
 		["Player-4701-0380FE6B"] = "HEALER",
 		["Player-4477-0154CD42"] = "DAMAGER",
 		["Player-4477-01CF1F92"] = "DAMAGER",
-		["Player-4441-03A9B5DD"] = "DAMAGER",
-		["Player-4464-0391EB4D"] = "DAMAGER",
+		["Player-4701-03AB68B5"] = "DAMAGER",
+		["Player-4476-04AE3902"] = "DAMAGER",
 		["Player-4745-03A156CA"] = "HEALER",
-		["Player-4745-03AA8DDA"] = "DAMAGER",
+		["Player-4701-036B8893"] = "TANK",
 		["Player-4701-039E3A18"] = "DAMAGER",
 		["Player-4441-036AAAB8"] = "DAMAGER",
-		["Player-4701-0383B749"] = "DAMAGER",
+		["Player-4467-037094ED"] = "TANK",
 		["Player-4477-01876F5F"] = "TANK",
 		["Player-4745-03A199BA"] = "TANK",
 		["Player-4476-04706398"] = "TANK",
 		["Player-4477-04A28808"] = "DAMAGER",
 		["Player-4464-025726FF"] = "DAMAGER",
 		["Player-4476-0479ABCC"] = "HEALER",
-		["Player-4701-03A9B4BF"] = "DAMAGER",
+		["Player-4464-0306B10A"] = "DAMAGER",
 		["Player-4477-01F808F7"] = "DAMAGER",
 		["Player-4813-01D80813"] = "HEALER",
 		["Player-4465-037BFEA0"] = "DAMAGER",
 		["Player-4464-025E184D"] = "DAMAGER",
-		["Player-4465-019554C1"] = "DAMAGER",
+		["Player-4465-02FF3E10"] = "DAMAGER",
 		["Player-4742-039CACFA"] = "TANK",
 		["Player-4465-02ED3795"] = "DAMAGER",
 		["Player-4813-0458CC32"] = "DAMAGER",
 		["Player-4701-03A38FEF"] = "DAMAGER",
-		["Player-4464-007F108A"] = "DAMAGER",
+		["Player-4477-01198F17"] = "DAMAGER",
 		["Player-4476-03015C06"] = "DAMAGER",
-		["Player-4465-02EBCC43"] = "HEALER",
+		["Player-4477-04935827"] = "DAMAGER",
 		["Player-4701-03ABFB9E"] = "TANK",
 		["Player-4701-00B45FDF"] = "DAMAGER",
 		["Player-4815-047893BF"] = "DAMAGER",
 		["Player-4466-03778EA8"] = "DAMAGER",
-		["Player-4742-03A49B57"] = "DAMAGER",
+		["Player-4464-039F3CF0"] = "DAMAGER",
 		["Player-4477-03330B31"] = "DAMAGER",
 		["Player-4465-02E3F72A"] = "DAMAGER",
 		["Player-4465-03A88CA1"] = "DAMAGER",
@@ -1873,7 +3191,7 @@ _detalhes_database = {
 		["Player-4701-03138CB7"] = "DAMAGER",
 		["Player-4476-046DB79A"] = "HEALER",
 		["Player-4465-02FB044C"] = "DAMAGER",
-		["Player-4477-0481B68C"] = "TANK",
+		["Player-4476-032CE393"] = "DAMAGER",
 		["Player-4465-021D527B"] = "DAMAGER",
 		["Player-4464-01E848F6"] = "DAMAGER",
 		["Player-4465-02FD343C"] = "DAMAGER",
@@ -1899,63 +3217,63 @@ _detalhes_database = {
 		["Player-4742-01774678"] = "DAMAGER",
 		["Player-4749-03955ED6"] = "DAMAGER",
 		["Player-4742-039FCB87"] = "DAMAGER",
-		["Player-4456-04A430DE"] = "DAMAGER",
+		["Player-4477-03B4113B"] = "DAMAGER",
 		["Player-4477-00DFC3FD"] = "DAMAGER",
 		["Player-4465-039F79D6"] = "DAMAGER",
-		["Player-4477-04378F14"] = "DAMAGER",
+		["Player-4454-04408028"] = "DAMAGER",
 		["Player-4465-01841E43"] = "DAMAGER",
 		["Player-4476-0431AFF7"] = "TANK",
-		["Player-4476-0451889E"] = "DAMAGER",
-		["Player-4813-0475EA99"] = "DAMAGER",
+		["Player-4701-03A70892"] = "TANK",
+		["Player-4465-025EDA45"] = "DAMAGER",
 		["Player-4701-032CE0B1"] = "HEALER",
 		["Player-4476-043F4143"] = "DAMAGER",
-		["Player-4465-02F9658C"] = "DAMAGER",
+		["Player-4815-04933427"] = "DAMAGER",
 		["Player-4476-040A6FD2"] = "DAMAGER",
 		["Player-4811-0376F997"] = "DAMAGER",
 		["Player-4477-049283BB"] = "DAMAGER",
 		["Player-4476-04AF9ACA"] = "DAMAGER",
-		["Player-4476-045DA25F"] = "DAMAGER",
-		["Player-4465-02F6967B"] = "DAMAGER",
+		["Player-4477-047E7465"] = "DAMAGER",
+		["Player-4476-0428399F"] = "HEALER",
 		["Player-4477-049E4DF3"] = "DAMAGER",
-		["Player-4455-04A7A689"] = "HEALER",
+		["Player-4464-007F108A"] = "DAMAGER",
 		["Player-4476-044A87EA"] = "DAMAGER",
-		["Player-4477-04A89E35"] = "DAMAGER",
-		["Player-4455-04A4E2D9"] = "DAMAGER",
+		["Player-4701-039374D8"] = "DAMAGER",
+		["Player-4701-03A402CC"] = "DAMAGER",
 		["Player-4476-043DF28A"] = "HEALER",
 		["Player-4701-037D8687"] = "DAMAGER",
 		["Player-4476-043E6647"] = "HEALER",
-		["Player-4464-0375A192"] = "DAMAGER",
+		["Player-4742-01273877"] = "DAMAGER",
 		["Player-4464-02DD4F66"] = "DAMAGER",
 		["Player-4815-048D4C06"] = "DAMAGER",
 		["Player-4701-03A43453"] = "DAMAGER",
 		["Player-4742-03A9728C"] = "DAMAGER",
 		["Player-4455-035343C4"] = "DAMAGER",
-		["Player-4477-04A8D113"] = "DAMAGER",
+		["Player-4477-04433D79"] = "DAMAGER",
 		["Player-4465-02F81302"] = "DAMAGER",
-		["Player-4476-03B45F04"] = "TANK",
-		["Player-4813-0379DA20"] = "HEALER",
+		["Player-4477-046A34AB"] = "DAMAGER",
+		["Player-4476-0451889E"] = "DAMAGER",
 		["Player-4745-03A107E8"] = "DAMAGER",
-		["Player-4701-039374D8"] = "DAMAGER",
+		["Player-4815-048D3BE8"] = "TANK",
 		["Player-4476-03B2034D"] = "HEALER",
 		["Player-4464-02032F08"] = "DAMAGER",
-		["Player-4465-003136B8"] = "TANK",
+		["Player-4476-03D9E841"] = "DAMAGER",
 		["Player-4476-0459F94B"] = "DAMAGER",
 		["Player-4455-022679F7"] = "DAMAGER",
 		["Player-4476-043C8519"] = "DAMAGER",
 		["Player-4476-036D1F71"] = "DAMAGER",
-		["Player-4477-046A34AB"] = "DAMAGER",
+		["Player-4477-0468838B"] = "DAMAGER",
 		["Player-4701-03852F93"] = "DAMAGER",
 		["Player-4465-01B23B15"] = "DAMAGER",
 		["Player-4813-04B75D48"] = "HEALER",
 		["Player-4465-013F76D5"] = "DAMAGER",
 		["Player-4477-04780724"] = "DAMAGER",
-		["Player-4477-044E06DC"] = "DAMAGER",
+		["Player-4454-036235DA"] = "DAMAGER",
 		["Player-4742-03A08348"] = "DAMAGER",
-		["Player-4701-039E5D51"] = "DAMAGER",
+		["Player-4455-04A4E2D9"] = "DAMAGER",
 		["Player-4465-036EA09C"] = "DAMAGER",
-		["Player-4742-01273877"] = "DAMAGER",
+		["Player-4476-046B13A5"] = "DAMAGER",
 		["Player-4465-02F9CC87"] = "DAMAGER",
-		["Player-4477-047C0BCF"] = "DAMAGER",
+		["Player-4477-044E06DC"] = "DAMAGER",
 		["Player-4464-02EFF76B"] = "DAMAGER",
 		["Player-4441-03A6BE88"] = "TANK",
 		["Player-4476-043E4E65"] = "DAMAGER",
@@ -1963,185 +3281,185 @@ _detalhes_database = {
 		["Player-4701-0371167A"] = "TANK",
 		["Player-4464-03A55223"] = "DAMAGER",
 		["Player-4477-03AF4EEC"] = "DAMAGER",
-		["Player-4742-03AA2DA0"] = "DAMAGER",
+		["Player-4465-0376C7E5"] = "DAMAGER",
 		["Player-4701-039B21CA"] = "DAMAGER",
 		["Player-4476-01509016"] = "DAMAGER",
 		["Player-4742-03A753C7"] = "DAMAGER",
-		["Player-4465-025EDA45"] = "DAMAGER",
+		["Player-4742-03A1788E"] = "TANK",
 		["Player-4815-048C367E"] = "DAMAGER",
 		["Player-4455-049340D7"] = "HEALER",
-		["Player-4464-039F3CF0"] = "DAMAGER",
+		["Player-4701-03195041"] = "DAMAGER",
 		["Player-4464-03AB7990"] = "DAMAGER",
-		["Player-4465-02F8EB05"] = "DAMAGER",
+		["Player-4477-04A89E35"] = "DAMAGER",
 		["Player-4813-048EA6C3"] = "TANK",
-		["Player-4742-03A129C5"] = "DAMAGER",
+		["Player-4467-00B5D271"] = "TANK",
 		["Player-4465-0389E6E3"] = "DAMAGER",
-		["Player-4745-03A1C0F8"] = "DAMAGER",
+		["Player-4477-0486E0BC"] = "DAMAGER",
 		["Player-4464-0257163F"] = "DAMAGER",
-		["Player-4477-03B4113B"] = "DAMAGER",
-		["Player-4464-00EEA13D"] = "DAMAGER",
-		["Player-4476-01F55869"] = "HEALER",
+		["Player-4465-036C7471"] = "DAMAGER",
+		["Player-4745-03A1C0F8"] = "DAMAGER",
+		["Player-4476-03B45F04"] = "TANK",
 		["Player-4742-03A9B0B8"] = "DAMAGER",
-		["Player-4476-043005F9"] = "DAMAGER",
+		["Player-4464-00EEA13D"] = "DAMAGER",
 		["Player-4815-046D6336"] = "TANK",
 		["Player-4477-03A4BA90"] = "TANK",
 		["Player-4742-03AF4BEF"] = "DAMAGER",
 		["Player-4456-049FFA2B"] = "DAMAGER",
 		["Player-4477-01D63F16"] = "DAMAGER",
 		["Player-4477-021C061B"] = "DAMAGER",
-		["Player-4815-048D3BE8"] = "TANK",
-		["Player-4701-03A402CC"] = "DAMAGER",
-		["Player-4477-04433D79"] = "DAMAGER",
+		["Player-4701-039E5D51"] = "DAMAGER",
+		["Player-4454-04AEA81A"] = "DAMAGER",
+		["Player-4465-02F6967B"] = "DAMAGER",
 		["Player-4742-03A6B4D9"] = "DAMAGER",
 		["Player-4745-02549718"] = "HEALER",
-		["Player-4465-039104E0"] = "TANK",
-		["Player-4701-036B8893"] = "TANK",
-		["Player-4476-0428399F"] = "HEALER",
-		["Player-4464-037362DF"] = "DAMAGER",
-		["Player-4813-04A4CDFD"] = "DAMAGER",
-		["Player-4745-03A26BC7"] = "DAMAGER",
-		["Player-4815-046A5AD6"] = "DAMAGER",
-		["Player-4701-03911C69"] = "DAMAGER",
+		["Player-4701-014692E5"] = "DAMAGER",
+		["Player-4701-0388DA1C"] = "TANK",
 		["Player-4441-0083A168"] = "DAMAGER",
+		["Player-4464-037362DF"] = "DAMAGER",
+		["Player-4477-0481B68C"] = "TANK",
+		["Player-4813-04A4CDFD"] = "DAMAGER",
+		["Player-4455-04A7A689"] = "HEALER",
+		["Player-4701-03911C69"] = "DAMAGER",
+		["Player-4465-02F8EB05"] = "DAMAGER",
 		["Player-4454-047F42B6"] = "DAMAGER",
-		["Player-4454-04AEA81A"] = "DAMAGER",
+		["Player-4477-044C114C"] = "DAMAGER",
 		["Player-4701-00E745C9"] = "DAMAGER",
-		["Player-4454-04408028"] = "DAMAGER",
-		["Player-4440-02C8369D"] = "DAMAGER",
-		["Player-4742-039F4F93"] = "DAMAGER",
-		["Player-4477-01BBC7E0"] = "DAMAGER",
 		["Player-4476-043B7CB8"] = "DAMAGER",
+		["Player-4440-02C8369D"] = "DAMAGER",
+		["Player-4465-039104E0"] = "TANK",
+		["Player-4477-01BBC7E0"] = "DAMAGER",
+		["Player-4476-04497E9F"] = "TANK",
 		["Player-4811-038D6C70"] = "TANK",
 		["Player-4813-031A6276"] = "DAMAGER",
 		["Player-4816-04A295A1"] = "DAMAGER",
-		["Player-4813-0489EA7E"] = "DAMAGER",
-		["Player-4745-039EE68D"] = "DAMAGER",
+		["Player-4477-04AD49BA"] = "DAMAGER",
+		["Player-4742-039F2CC2"] = "DAMAGER",
 		["Player-4476-047F5775"] = "DAMAGER",
 		["Player-4813-04B71D9E"] = "DAMAGER",
 		["Player-4464-03A8BE76"] = "DAMAGER",
 		["Player-4476-039756DC"] = "DAMAGER",
-		["Player-4701-03AB68B5"] = "DAMAGER",
+		["Player-4465-02F9658C"] = "DAMAGER",
 		["Player-4476-04AF024B"] = "HEALER",
 		["Player-4440-03781FB7"] = "DAMAGER",
 		["Player-4813-03356821"] = "HEALER",
 		["Player-4464-02E6E6E3"] = "DAMAGER",
-		["Player-4476-03BF467A"] = "DAMAGER",
-		["Player-4476-0479ACB0"] = "DAMAGER",
+		["Player-4745-039EE68D"] = "DAMAGER",
+		["Player-4476-02DF31A9"] = "DAMAGER",
 		["Player-4477-03B1304D"] = "DAMAGER",
-		["Player-4476-03D9E841"] = "DAMAGER",
+		["Player-4476-04AD8098"] = "DAMAGER",
 		["Player-4442-03A233F9"] = "DAMAGER",
 		["Player-4464-02BE8BA4"] = "DAMAGER",
-		["Player-4815-046C9FF0"] = "DAMAGER",
-		["Player-4476-039CAE85"] = "DAMAGER",
-		["Player-4477-0486E0BC"] = "DAMAGER",
+		["Player-4476-0479ACB0"] = "DAMAGER",
+		["Player-4701-03A6BDC5"] = "HEALER",
+		["Player-4742-03AA0D43"] = "HEALER",
 		["Player-4701-0331E81B"] = "DAMAGER",
 		["Player-4745-039EFDDB"] = "DAMAGER",
 		["Player-4465-02EC85AB"] = "DAMAGER",
-		["Player-4465-0376C7E5"] = "DAMAGER",
-		["Player-4465-036C7471"] = "DAMAGER",
-		["Player-4477-044C114C"] = "DAMAGER",
+		["Player-4745-03A26BC7"] = "DAMAGER",
+		["Player-4813-0379DA20"] = "HEALER",
+		["Player-4815-046A5AD6"] = "DAMAGER",
 		["Player-4476-048357AB"] = "HEALER",
-		["Player-4477-04935827"] = "DAMAGER",
-		["Player-4815-046A2410"] = "DAMAGER",
-		["Player-4815-04933427"] = "DAMAGER",
+		["Player-4813-03697BE6"] = "DAMAGER",
+		["Player-4813-04AB6435"] = "HEALER",
+		["Player-4476-04883531"] = "TANK",
 		["Player-4476-036E6765"] = "DAMAGER",
 		["Player-4476-046C1C32"] = "DAMAGER",
 		["Player-4477-0474AEB9"] = "DAMAGER",
-		["Player-4701-00CB75BF"] = "DAMAGER",
-		["Player-4465-02FF3E10"] = "DAMAGER",
+		["Player-4465-003136B8"] = "TANK",
+		["Player-4477-0330CC03"] = "DAMAGER",
 		["Player-4815-04A82990"] = "TANK",
 		["Player-4440-03460F42"] = "DAMAGER",
 		["Player-4477-049924FC"] = "HEALER",
 		["Player-4742-038EF625"] = "HEALER",
 		["Player-4742-03A43236"] = "DAMAGER",
-		["Player-4701-014692E5"] = "DAMAGER",
-		["Player-4476-04AE3902"] = "DAMAGER",
+		["Player-4701-00CB75BF"] = "DAMAGER",
+		["Player-4477-04ABF967"] = "DAMAGER",
 		["Player-4476-033ECEF1"] = "DAMAGER",
-		["Player-4701-03A6BDC5"] = "HEALER",
-		["Player-4476-046574DC"] = "DAMAGER",
-		["Player-4813-03BD7394"] = "DAMAGER",
-		["Player-4464-03A31419"] = "DAMAGER",
+		["Player-4815-046C9FF0"] = "DAMAGER",
+		["Player-4440-01BAB09D"] = "DAMAGER",
+		["Player-4745-03AA8DDA"] = "DAMAGER",
+		["Player-4476-047C42B0"] = "DAMAGER",
 		["Player-4701-039C2776"] = "DAMAGER",
 		["Player-4477-04AE68D6"] = "TANK",
-		["Player-4465-036EF9BF"] = "TANK",
+		["Player-4476-046574DC"] = "DAMAGER",
 		["Player-4476-03A8BD3F"] = "DAMAGER",
-		["Player-4813-04A271D1"] = "DAMAGER",
+		["Player-4464-0391EB4D"] = "DAMAGER",
 		["Player-4476-04348A70"] = "DAMAGER",
 		["Player-4477-02BB50E3"] = "DAMAGER",
 		["Player-4464-03063DAB"] = "DAMAGER",
 		["Player-4477-043357C6"] = "TANK",
-		["Player-4441-037CAC41"] = "TANK",
+		["Player-4465-03000F13"] = "DAMAGER",
 		["Player-4813-04A7D9ED"] = "DAMAGER",
-		["Player-4477-04ABF967"] = "DAMAGER",
-		["Player-4476-02DF31A9"] = "DAMAGER",
-		["Player-4701-03AB210C"] = "TANK",
-		["Player-4464-039EA567"] = "DAMAGER",
+		["Player-4477-04341245"] = "DAMAGER",
+		["Player-4441-037CAC41"] = "TANK",
+		["Player-4701-0330463A"] = "DAMAGER",
+		["Player-4742-03A312FF"] = "DAMAGER",
 		["Player-4477-040F798C"] = "TANK",
 		["Player-4455-0355C29B"] = "HEALER",
 		["Player-4745-03A112BD"] = "DAMAGER",
-		["Player-4701-03A263D4"] = "HEALER",
-		["Player-4442-039BD552"] = "DAMAGER",
-		["Player-4464-0375088A"] = "DAMAGER",
-		["Player-4477-044A7863"] = "DAMAGER",
+		["Player-4701-03863EE1"] = "HEALER",
+		["Player-4701-0392FB28"] = "DAMAGER",
+		["Player-4742-03A49B57"] = "DAMAGER",
+		["Player-4476-043005F9"] = "DAMAGER",
 		["Player-4477-04AB6C82"] = "HEALER",
-		["Player-4440-01BAB09D"] = "DAMAGER",
 		["Player-4477-03B048D5"] = "DAMAGER",
+		["Player-4455-04872530"] = "TANK",
 		["Player-4441-02CA1EB4"] = "HEALER",
 		["Player-4811-0371E6CA"] = "DAMAGER",
 		["Player-4477-0454507F"] = "HEALER",
 		["Player-4476-0434BC6A"] = "DAMAGER",
-		["Player-4701-03A70892"] = "TANK",
+		["Player-4476-03BC8416"] = "DAMAGER",
 		["Player-4464-016EFF39"] = "DAMAGER",
 		["Player-4477-03C0180D"] = "DAMAGER",
 		["Player-4442-03A4B7BB"] = "DAMAGER",
 		["Player-4701-030B8F6C"] = "DAMAGER",
 		["Player-4441-03A82D64"] = "DAMAGER",
 		["Player-4701-0310CA37"] = "TANK",
-		["Player-4815-0478703C"] = "DAMAGER",
+		["Player-4742-03A129C5"] = "DAMAGER",
 		["Player-4476-01FE0711"] = "DAMAGER",
 		["Player-4476-039B3C62"] = "DAMAGER",
 		["Player-4454-04A896DB"] = "TANK",
 		["Player-4476-0473B146"] = "DAMAGER",
-		["Player-4701-030E08E3"] = "DAMAGER",
+		["Player-4476-043DD1C6"] = "DAMAGER",
 		["Player-4813-01D40A52"] = "DAMAGER",
 		["Player-4701-039C79C5"] = "DAMAGER",
 		["Player-4464-0393BA8C"] = "HEALER",
-		["Player-4477-04341245"] = "DAMAGER",
+		["Player-4464-0375A192"] = "DAMAGER",
 		["Player-4455-03BB710D"] = "DAMAGER",
 		["Player-4477-04960BE6"] = "DAMAGER",
 		["Player-4701-039058EE"] = "DAMAGER",
 		["Player-4742-03A120DF"] = "HEALER",
-		["Player-4464-0217819F"] = "DAMAGER",
+		["Player-4742-039F4F93"] = "DAMAGER",
 		["Player-4454-04A5C88C"] = "DAMAGER",
 		["Player-4476-0309EF8A"] = "DAMAGER",
-		["Player-4465-03000F13"] = "DAMAGER",
+		["Player-4477-049CFB39"] = "DAMAGER",
 		["Player-4476-046B9B21"] = "DAMAGER",
-		["Player-4476-043DD1C6"] = "DAMAGER",
-		["Player-4455-03ACF094"] = "DAMAGER",
+		["Player-4701-030E08E3"] = "DAMAGER",
+		["Player-4477-03B07A08"] = "DAMAGER",
 		["Player-4811-0388C7C8"] = "DAMAGER",
-		["Player-4476-03902BA7"] = "DAMAGER",
+		["Player-4465-027ED4E9"] = "DAMAGER",
 		["Player-4742-03A1D17B"] = "TANK",
 		["Player-4742-039D7D67"] = "DAMAGER",
 		["Player-4745-00D5DD37"] = "DAMAGER",
 		["Player-4701-037AF721"] = "HEALER",
 		["Player-4476-043AA7B3"] = "DAMAGER",
-		["Player-4701-03A99A21"] = "DAMAGER",
+		["Player-4476-045DA25F"] = "DAMAGER",
 		["Player-4815-049D2A2D"] = "TANK",
-		["Player-4815-0468E5C7"] = "HEALER",
-		["Player-4477-04036702"] = "DAMAGER",
-		["Player-4477-044DFAA6"] = "DAMAGER",
+		["Player-4701-03A99A21"] = "DAMAGER",
+		["Player-4815-047CC538"] = "TANK",
+		["Player-4455-039FFA99"] = "DAMAGER",
 		["Player-4811-0376F17B"] = "DAMAGER",
-		["Player-4476-03BC8416"] = "DAMAGER",
-		["Player-4742-03A8F4FE"] = "DAMAGER",
+		["Player-4476-03902BA7"] = "DAMAGER",
+		["Player-4464-039EA567"] = "DAMAGER",
 		["Player-4476-04851E00"] = "DAMAGER",
 		["Player-4442-02486670"] = "HEALER",
 		["Player-4701-0317DEC6"] = "DAMAGER",
-		["Player-4816-04ADC475"] = "DAMAGER",
-		["Player-4465-016E0739"] = "DAMAGER",
+		["Player-4742-03A8F4FE"] = "DAMAGER",
+		["Player-4476-04448BE2"] = "DAMAGER",
 		["Player-4745-0393C92E"] = "DAMAGER",
 		["Player-4477-049AD439"] = "HEALER",
-		["Player-4477-044BF5A5"] = "DAMAGER",
-		["Player-4701-0375C9E5"] = "DAMAGER",
+		["Player-4465-0394AE47"] = "DAMAGER",
+		["Player-4813-0266088E"] = "DAMAGER",
 		["Player-4465-03099B03"] = "DAMAGER",
 		["Player-4813-04A55E14"] = "TANK",
 		["Player-4815-04829EF7"] = "DAMAGER",
@@ -2160,33 +3478,33 @@ _detalhes_database = {
 		["Player-4464-02FD5E80"] = "HEALER",
 		["Player-4477-04AAF5F0"] = "DAMAGER",
 		["Player-4455-0475903A"] = "DAMAGER",
-		["Player-4466-01C0757D"] = "DAMAGER",
-		["Player-4701-0387F280"] = "DAMAGER",
-		["Player-4742-03A312FF"] = "DAMAGER",
+		["Player-4477-0480EFA6"] = "DAMAGER",
+		["Player-4476-04803CC4"] = "DAMAGER",
+		["Player-4476-0409CC5E"] = "DAMAGER",
 		["Player-4465-02DFDB4D"] = "DAMAGER",
 		["Player-4464-02BDD2AA"] = "DAMAGER",
 		["Player-4815-048E4AAE"] = "DAMAGER",
 		["Player-4465-02BC8143"] = "DAMAGER",
-		["Player-4476-039D4D18"] = "DAMAGER",
-		["Player-4701-0392FB28"] = "DAMAGER",
+		["Player-4442-0169B0B1"] = "DAMAGER",
+		["Player-4816-04AAA00F"] = "DAMAGER",
 		["Player-4465-036EB6B5"] = "HEALER",
 		["Player-4701-03A9CD53"] = "TANK",
-		["Player-4477-0447C497"] = "HEALER",
+		["Player-4464-03085F44"] = "DAMAGER",
 		["Player-4742-03AB0C71"] = "DAMAGER",
 		["Player-4477-04A6423B"] = "TANK",
-		["Player-4476-043D153C"] = "DAMAGER",
+		["Player-4477-03B357D5"] = "DAMAGER",
 		["Player-4815-047A7A8F"] = "DAMAGER",
-		["Player-4476-046B13A5"] = "DAMAGER",
+		["Player-4477-044A7863"] = "DAMAGER",
 		["Player-4466-01BAC702"] = "DAMAGER",
 		["Player-4476-04810264"] = "DAMAGER",
 		["Player-4477-00F46C89"] = "DAMAGER",
-		["Player-4442-0169B0B1"] = "DAMAGER",
+		["Player-4742-03A852BB"] = "DAMAGER",
 		["Player-4476-038517C3"] = "DAMAGER",
-		["Player-4701-03ACBDD8"] = "DAMAGER",
-		["Player-4477-03B07A08"] = "DAMAGER",
+		["Player-4477-0447C497"] = "HEALER",
+		["Player-4464-0217819F"] = "DAMAGER",
 		["Player-4701-03A6904B"] = "DAMAGER",
-		["Player-4476-032A3F23"] = "DAMAGER",
-		["Player-4477-03B357D5"] = "DAMAGER",
+		["Player-4464-02E663F2"] = "DAMAGER",
+		["Player-4476-043D153C"] = "DAMAGER",
 		["Player-4476-0446AD73"] = "DAMAGER",
 		["Player-4815-0493145C"] = "TANK",
 		["Player-4465-0393EE6F"] = "DAMAGER",
@@ -2196,25 +3514,25 @@ _detalhes_database = {
 		["Player-4749-02EC6287"] = "DAMAGER",
 		["Player-4464-02B6C7BE"] = "TANK",
 		["Player-4476-0471A287"] = "DAMAGER",
-		["Player-4701-0399CF73"] = "DAMAGER",
+		["Player-4455-020C5B2D"] = "HEALER",
 		["Player-4465-03A7A7A6"] = "TANK",
 		["Player-4465-010FDAAD"] = "DAMAGER",
-		["Player-4455-020C5B2D"] = "HEALER",
-		["Player-4476-04866D47"] = "DAMAGER",
-		["Player-4476-0437DB08"] = "DAMAGER",
+		["Player-4476-046BD84B"] = "DAMAGER",
+		["Player-4465-00C6CC89"] = "DAMAGER",
+		["Player-4701-0399CF73"] = "DAMAGER",
 		["Player-4476-03A7F56B"] = "DAMAGER",
 		["Player-4465-037F65F5"] = "HEALER",
 		["Player-4477-03626ECA"] = "DAMAGER",
 		["Player-4701-037F788A"] = "DAMAGER",
-		["Player-4701-0389DB3D"] = "HEALER",
+		["Player-4476-03C0EB83"] = "DAMAGER",
 		["Player-4466-039B0DBE"] = "DAMAGER",
 		["Player-4813-01D56DFE"] = "DAMAGER",
-		["Player-4742-03A7A093"] = "DAMAGER",
+		["Player-4476-039405CA"] = "DAMAGER",
 		["Player-4464-03083874"] = "HEALER",
-		["Player-4745-03A505EA"] = "DAMAGER",
+		["Player-4742-03A7A093"] = "DAMAGER",
 		["Player-4701-03AAADEB"] = "TANK",
 		["Player-4815-0468985B"] = "DAMAGER",
-		["Player-4465-0307CA4A"] = "TANK",
+		["Player-4745-03A505EA"] = "DAMAGER",
 		["Player-4476-043DDBFF"] = "HEALER",
 		["Player-4441-036D81A8"] = "DAMAGER",
 		["Player-4455-04ABBBDE"] = "DAMAGER",
@@ -2346,8 +3664,8 @@ _detalhes_database = {
 		["Player-4456-049CDEEF"] = "DAMAGER",
 		["Player-4816-04AC4252"] = "DAMAGER",
 		["Player-4701-03AC368D"] = "DAMAGER",
+		["Player-4742-038F4967"] = "DAMAGER",
 		["Player-4476-03B7A4F5"] = "DAMAGER",
-		["Player-4745-03A170B3"] = "DAMAGER",
 		["Player-4701-03AA38A2"] = "DAMAGER",
 		["Player-4476-0351A4DE"] = "DAMAGER",
 		["Player-4454-045E432E"] = "HEALER",
@@ -2359,17 +3677,17 @@ _detalhes_database = {
 		["Player-4701-0317F618"] = "DAMAGER",
 		["Player-4464-039EC2B2"] = "TANK",
 		["Player-4476-04AF9AAD"] = "DAMAGER",
-		["Player-4455-04925A21"] = "TANK",
+		["Player-4476-04A788BC"] = "DAMAGER",
 		["Player-4742-03A1133A"] = "TANK",
 		["Player-4476-03FFB5D7"] = "DAMAGER",
 		["Player-4467-02C21C61"] = "TANK",
-		["Player-4476-04A788BC"] = "DAMAGER",
-		["Player-4464-03ABFEA7"] = "DAMAGER",
+		["Player-4455-04925A21"] = "TANK",
+		["Player-4476-043F57E4"] = "DAMAGER",
 		["Player-4703-03A7806B"] = "DAMAGER",
 		["Player-4742-03AAC83D"] = "DAMAGER",
 		["Player-4742-03AB5F31"] = "HEALER",
 		["Player-4476-048D8816"] = "DAMAGER",
-		["Player-4476-043F57E4"] = "DAMAGER",
+		["Player-4464-03ABFEA7"] = "DAMAGER",
 		["Player-4701-039D4D73"] = "DAMAGER",
 		["Player-4476-0479C6BF"] = "DAMAGER",
 		["Player-4701-03975F91"] = "TANK",
@@ -2378,10 +3696,10 @@ _detalhes_database = {
 		["Player-4815-047D9BFA"] = "DAMAGER",
 		["Player-4464-02D2E3EE"] = "DAMAGER",
 		["Player-4465-02F71739"] = "HEALER",
-		["Player-4455-04A6E16A"] = "DAMAGER",
-		["Player-4813-04A22A47"] = "DAMAGER",
-		["Player-4465-02776938"] = "DAMAGER",
 		["Player-4464-0153769E"] = "DAMAGER",
+		["Player-4813-04A22A47"] = "DAMAGER",
+		["Player-4455-04A6E16A"] = "DAMAGER",
+		["Player-4465-02776938"] = "DAMAGER",
 		["Player-4813-0493B229"] = "TANK",
 		["Player-4476-043F8A81"] = "TANK",
 		["Player-4816-04A5B2B0"] = "DAMAGER",
@@ -2397,7 +3715,7 @@ _detalhes_database = {
 		["Player-4477-04ADCA35"] = "DAMAGER",
 		["Player-4815-048124C6"] = "TANK",
 		["Player-4745-03A0596B"] = "DAMAGER",
-		["Player-4701-03A4185E"] = "DAMAGER",
+		["Player-4477-0483952F"] = "DAMAGER",
 		["Player-4477-044A0510"] = "DAMAGER",
 		["Player-4476-01743430"] = "DAMAGER",
 		["Player-4816-04A7ABF0"] = "DAMAGER",
@@ -2413,24 +3731,24 @@ _detalhes_database = {
 		["Player-4476-014E2BBD"] = "DAMAGER",
 		["Player-4477-04B02C27"] = "DAMAGER",
 		["Player-4476-044CCD46"] = "DAMAGER",
-		["Player-4476-03DEA967"] = "HEALER",
+		["Player-4477-0493A4CB"] = "DAMAGER",
 		["Player-4476-03370FC8"] = "DAMAGER",
 		["Player-4476-04931FEB"] = "DAMAGER",
 		["Player-4701-0378745C"] = "DAMAGER",
 		["Player-4811-0376F21A"] = "DAMAGER",
-		["Player-4477-0493A4CB"] = "DAMAGER",
 		["Player-4477-048D0C63"] = "DAMAGER",
+		["Player-4476-03DEA967"] = "HEALER",
 		["Player-4477-04A72041"] = "DAMAGER",
 		["Player-4742-03A6B5C8"] = "TANK",
 		["Player-4701-03A0EF91"] = "DAMAGER",
 		["Player-4701-0310C887"] = "DAMAGER",
 		["Player-4701-03712047"] = "DAMAGER",
 		["Player-4465-02EAE720"] = "DAMAGER",
-		["Player-4477-0483952F"] = "DAMAGER",
+		["Player-4465-038C5AFA"] = "DAMAGER",
 		["Player-4455-047F0C92"] = "DAMAGER",
 		["Player-4466-016FB5EE"] = "DAMAGER",
 		["Player-4701-0383FE0D"] = "DAMAGER",
-		["Player-4465-038C5AFA"] = "DAMAGER",
+		["Player-4701-03A4185E"] = "DAMAGER",
 		["Player-4465-036C7628"] = "DAMAGER",
 		["Player-4477-048CC92F"] = "DAMAGER",
 		["Player-4816-049322B1"] = "TANK",
@@ -2445,7 +3763,7 @@ _detalhes_database = {
 		["Player-4701-03A533A6"] = "DAMAGER",
 		["Player-4742-03A058A4"] = "DAMAGER",
 		["Player-4465-037A7917"] = "DAMAGER",
-		["Player-4742-038F4967"] = "DAMAGER",
+		["Player-4745-03A170B3"] = "DAMAGER",
 		["Player-4816-04A0BDDF"] = "HEALER",
 		["Player-4477-037E65E1"] = "HEALER",
 		["Player-4441-010A7583"] = "DAMAGER",
@@ -2492,7 +3810,7 @@ _detalhes_database = {
 		["Player-4701-030CCA0A"] = "DAMAGER",
 		["Player-4465-0358D5B0"] = "DAMAGER",
 		["Player-4816-04AD7DF1"] = "TANK",
-		["Player-4465-0395B54D"] = "DAMAGER",
+		["Player-4476-03998DB8"] = "DAMAGER",
 		["Player-4701-03AA7295"] = "DAMAGER",
 		["Player-4476-0377E623"] = "DAMAGER",
 		["Player-4813-01EA2570"] = "DAMAGER",
@@ -2501,114 +3819,114 @@ _detalhes_database = {
 		["Player-4476-04AE6441"] = "DAMAGER",
 		["Player-4815-04938AA5"] = "DAMAGER",
 		["Player-4476-03F148A7"] = "TANK",
-		["Player-4465-00C6CC89"] = "DAMAGER",
+		["Player-4465-0395B54D"] = "DAMAGER",
 		["Player-4476-0433F272"] = "DAMAGER",
 		["Player-4456-04A31408"] = "DAMAGER",
 		["Player-4467-0388DA00"] = "DAMAGER",
 		["Player-4701-03AB8666"] = "HEALER",
 		["Player-4476-043E7E12"] = "TANK",
-		["Player-4742-039A572F"] = "DAMAGER",
+		["Player-4465-036EF9BF"] = "TANK",
 		["Player-4815-04766F99"] = "DAMAGER",
 		["Player-4816-049B36F9"] = "DAMAGER",
-		["Player-4476-03B1B0F5"] = "HEALER",
-		["Player-4476-046BD84B"] = "DAMAGER",
+		["Player-4476-039D4D18"] = "DAMAGER",
+		["Player-4476-0437DB08"] = "DAMAGER",
 		["Player-4441-01591380"] = "DAMAGER",
 		["Player-4477-0453D1EE"] = "DAMAGER",
-		["Player-4442-039E39B5"] = "DAMAGER",
-		["Player-4476-0409CC5E"] = "DAMAGER",
+		["Player-4477-044BF5A5"] = "DAMAGER",
+		["Player-4442-039BD552"] = "DAMAGER",
 		["Player-4701-03151B57"] = "DAMAGER",
 		["Player-4815-046BAF2F"] = "DAMAGER",
-		["Player-4813-0266088E"] = "DAMAGER",
+		["Player-4476-03BEE0F1"] = "DAMAGER",
 		["Player-4441-03A180DC"] = "DAMAGER",
-		["Player-4476-03C0EB83"] = "DAMAGER",
+		["Player-4701-0375C9E5"] = "DAMAGER",
 		["Player-4464-0303EE79"] = "DAMAGER",
 		["Player-4464-0103FB0E"] = "DAMAGER",
-		["Player-4813-04A66D95"] = "DAMAGER",
-		["Player-4701-039E5EEB"] = "TANK",
 		["Player-4701-0392190F"] = "TANK",
+		["Player-4813-04A66D95"] = "DAMAGER",
+		["Player-4742-03AA2DA0"] = "DAMAGER",
 		["Player-4465-031A1B3C"] = "HEALER",
 		["Player-4701-0312A03B"] = "DAMAGER",
 		["Player-4454-032A5ED0"] = "DAMAGER",
 		["Player-4701-03916D48"] = "DAMAGER",
-		["Player-4477-0468838B"] = "DAMAGER",
+		["Player-4476-047BB1CB"] = "DAMAGER",
 		["Player-4464-023DED58"] = "DAMAGER",
-		["Player-4465-02F8BD35"] = "HEALER",
+		["Player-4442-039B5486"] = "HEALER",
 		["Player-4464-03AB5EFD"] = "DAMAGER",
-		["Player-4476-0497D169"] = "DAMAGER",
+		["Player-4465-03A6BCC0"] = "DAMAGER",
 		["Player-4477-00CF1ABB"] = "DAMAGER",
 		["Player-4701-02279AF5"] = "DAMAGER",
-		["Player-4811-038EFC19"] = "HEALER",
+		["Player-4476-03B1B0F5"] = "HEALER",
 		["Player-4815-0496EF20"] = "DAMAGER",
-		["Player-4455-04872530"] = "TANK",
+		["Player-4811-038EFC19"] = "HEALER",
 		["Player-4813-04A8C423"] = "DAMAGER",
 		["Player-4476-043EAEC0"] = "HEALER",
-		["Player-4816-04AAA00F"] = "DAMAGER",
+		["Player-4813-04A271D1"] = "DAMAGER",
 		["Player-4465-02FD6B1B"] = "DAMAGER",
 		["Player-4476-038AE059"] = "DAMAGER",
 		["Player-4467-0372474E"] = "TANK",
 		["Player-4464-02BF1348"] = "DAMAGER",
 		["Player-4813-01D7CB42"] = "DAMAGER",
-		["Player-4742-039D4518"] = "HEALER",
+		["Player-4813-0475EA99"] = "DAMAGER",
 		["Player-4476-03A3CD61"] = "DAMAGER",
-		["Player-4467-037094ED"] = "TANK",
+		["Player-4441-03A9B5DD"] = "DAMAGER",
 		["Player-4440-036DB580"] = "TANK",
-		["Player-4476-04AC40C7"] = "DAMAGER",
+		["Player-4742-03AA907B"] = "DAMAGER",
 		["Player-4745-03AA44E0"] = "DAMAGER",
-		["Player-4476-047C42B0"] = "DAMAGER",
-		["Player-4477-0330CC03"] = "DAMAGER",
-		["Player-4464-0306B10A"] = "DAMAGER",
-		["Player-4813-04AB6435"] = "HEALER",
-		["Player-4813-03697BE6"] = "DAMAGER",
+		["Player-4464-03A31419"] = "DAMAGER",
+		["Player-4701-03AB210C"] = "TANK",
+		["Player-4742-039D4518"] = "HEALER",
+		["Player-4701-0383B749"] = "DAMAGER",
+		["Player-4476-04AC40C7"] = "DAMAGER",
 		["Player-4701-0337BAC0"] = "DAMAGER",
-		["Player-4742-03AA0D43"] = "HEALER",
+		["Player-4476-03923418"] = "HEALER",
 		["Player-4742-03AB268A"] = "DAMAGER",
 		["Player-4742-03A9E08C"] = "DAMAGER",
-		["Player-4701-0388DA1C"] = "TANK",
+		["Player-4465-019554C1"] = "DAMAGER",
 		["Player-4454-04A97CD9"] = "DAMAGER",
 		["Player-4701-03900211"] = "DAMAGER",
 		["Player-4465-03B1FC74"] = "TANK",
-		["Player-4476-032CE393"] = "DAMAGER",
-		["Player-4476-043D2A03"] = "TANK",
-		["Player-4477-04AD49BA"] = "DAMAGER",
-		["Player-4476-03BEE0F1"] = "DAMAGER",
-		["Player-4815-047CC538"] = "TANK",
+		["Player-4815-046A2410"] = "DAMAGER",
+		["Player-4701-0389DB3D"] = "HEALER",
+		["Player-4465-02EBCC43"] = "HEALER",
+		["Player-4477-04036702"] = "DAMAGER",
+		["Player-4815-0478703C"] = "DAMAGER",
 		["Player-4464-03A4CA7F"] = "DAMAGER",
-		["Player-4476-04497E9F"] = "TANK",
+		["Player-4476-043D2A03"] = "TANK",
 		["Player-4476-038A53CA"] = "DAMAGER",
 		["Player-4701-03AC80AD"] = "HEALER",
 		["Player-4476-032E6B6E"] = "DAMAGER",
-		["Player-4477-04599B52"] = "DAMAGER",
+		["Player-4813-0489EA7E"] = "DAMAGER",
 		["Player-4815-0470C585"] = "DAMAGER",
-		["Player-4745-03A2F706"] = "DAMAGER",
+		["Player-4477-04599B52"] = "DAMAGER",
 		["Player-4476-043D8050"] = "TANK",
 		["Player-4815-049EEE19"] = "DAMAGER",
-		["Player-4742-03AA907B"] = "DAMAGER",
-		["Player-4701-037D2947"] = "DAMAGER",
-		["Player-4477-047E7465"] = "DAMAGER",
+		["Player-4456-04A430DE"] = "DAMAGER",
+		["Player-4477-04378F14"] = "DAMAGER",
+		["Player-4745-03A2F706"] = "DAMAGER",
 		["Player-4477-047E1AB5"] = "DAMAGER",
-		["Player-4465-03046BC3"] = "DAMAGER",
-		["Player-4701-037D291E"] = "DAMAGER",
+		["Player-4477-047C0BCF"] = "DAMAGER",
+		["Player-4701-037D2947"] = "DAMAGER",
 		["Player-4440-03ADD51C"] = "DAMAGER",
 		["Player-4477-03B76073"] = "DAMAGER",
 		["Player-4477-0403A505"] = "DAMAGER",
 		["Player-4476-0128F1E1"] = "DAMAGER",
 		["Player-4465-030486D9"] = "DAMAGER",
 		["Player-4464-038D8396"] = "DAMAGER",
-		["Player-4477-01198F17"] = "DAMAGER",
+		["Player-4477-04A8D113"] = "DAMAGER",
 		["Player-4811-036A5701"] = "DAMAGER",
-		["Player-4701-03195041"] = "DAMAGER",
-		["Player-4454-036235DA"] = "DAMAGER",
-		["Player-4467-00B5D271"] = "TANK",
+		["Player-4476-01F55869"] = "HEALER",
+		["Player-4476-03BF467A"] = "DAMAGER",
+		["Player-4701-037D291E"] = "DAMAGER",
 		["Player-4742-03A31355"] = "DAMAGER",
 		["Player-4476-045E232D"] = "DAMAGER",
-		["Player-4742-03A1788E"] = "TANK",
+		["Player-4813-04ABC8A8"] = "DAMAGER",
 		["Player-4477-03E8F245"] = "DAMAGER",
 		["Player-4811-038A3846"] = "DAMAGER",
 		["Player-4477-03840F82"] = "DAMAGER",
 		["Player-4742-03A9BAB1"] = "TANK",
 		["Player-4701-03A97FE2"] = "DAMAGER",
-		["Player-4813-04ABC8A8"] = "DAMAGER",
-		["Player-4477-028E3819"] = "DAMAGER",
+		["Player-4476-03347BF2"] = "TANK",
+		["Player-4465-025059B2"] = "TANK",
 		["Player-4453-0484FAA0"] = "DAMAGER",
 		["Player-4477-0496AB7D"] = "DAMAGER",
 		["Player-4815-047A5287"] = "DAMAGER",
@@ -2620,16 +3938,16 @@ _detalhes_database = {
 		["Player-4476-03B949C9"] = "DAMAGER",
 		["Player-4477-044BC7FC"] = "DAMAGER",
 		["Player-4477-046B669A"] = "DAMAGER",
-		["Player-4476-03923418"] = "HEALER",
-		["Player-4476-04AD8098"] = "DAMAGER",
+		["Player-4701-03A9B4BF"] = "DAMAGER",
+		["Player-4701-039E5EEB"] = "TANK",
 		["Player-4742-03A78F3C"] = "DAMAGER",
 		["Player-4465-02FCA47C"] = "DAMAGER",
 		["Player-4466-02BFC16D"] = "DAMAGER",
-		["Player-4476-04883531"] = "TANK",
+		["Player-4701-03A263D4"] = "HEALER",
 		["Player-4476-032FC61F"] = "TANK",
-		["Player-4742-039F2CC2"] = "DAMAGER",
+		["Player-4477-028E3819"] = "DAMAGER",
 		["Player-4464-0385A1F9"] = "DAMAGER",
-		["Player-4465-025059B2"] = "TANK",
+		["Player-4465-03046BC3"] = "DAMAGER",
 	},
 	["cached_specs"] = {
 	},

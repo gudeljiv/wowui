@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 7740,
+	["session"] = 7742,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -6460,25 +6460,25 @@ BugGrabberDB = {
 			["counter"] = 2,
 		}, -- [831]
 		{
-			["message"] = "Interface\\AddOns\\AceBIS\\GearWindow.lua:592: bad argument #1 to 'next' (table expected, got nil)",
-			["time"] = "2022/11/25 09:21:34",
-			["stack"] = "[string \"=[C]\"]: in function `next'\n[string \"@Interface\\AddOns\\AceBIS\\GearWindow.lua\"]:592: in function <Interface\\AddOns\\AceBIS\\GearWindow.lua:568>\n[string \"@Interface\\AddOns\\AceBIS\\GearWindow.lua\"]:981: in function `InitUI'\n[string \"@Interface\\AddOns\\AceBIS\\AceBIS-4.0.9.lua\"]:397: in function <Interface\\AddOns\\AceBIS\\AceBIS.lua:382>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:70: in function <...ace\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:65>\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:527: in function `EnableAddon'\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:630: in function <...ace\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:615>",
-			["session"] = 7738,
-			["counter"] = 11,
-		}, -- [832]
-		{
 			["message"] = "...ns\\TellMeWhen\\Components\\Core\\Common\\PlayerNames.lua:100: attempt to concatenate field '?' (a nil value)",
 			["time"] = "2022/11/26 13:26:50",
 			["stack"] = "[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Common\\PlayerNames.lua\"]:100: in function `?'\n[string \"@Interface\\AddOns\\AceBIS\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:119: in function <...BIS\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AceBIS\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...BIS\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\AceBIS\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `Fire'\n[string \"@Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\AceEvent-3.0\\AceEvent-3.0-4.lua\"]:120: in function <...s\\AddOnSkins\\Libs\\Ace3\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 7739,
 			["counter"] = 199,
-		}, -- [833]
+		}, -- [832]
 		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'unitscan' tried to call the protected function 'UNKNOWN()'.",
 			["time"] = "2022/09/25 11:24:28",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:42: in function `target'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:273: in function `UPDATE'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:3: in function <Interface\\AddOns\\unitscan\\unitscan.lua:3>",
 			["session"] = 7740,
 			["counter"] = 57,
+		}, -- [833]
+		{
+			["message"] = "Interface\\AddOns\\AceBIS\\GearWindow.lua:592: bad argument #1 to 'next' (table expected, got nil)",
+			["time"] = "2022/11/25 09:21:34",
+			["stack"] = "[string \"=[C]\"]: in function `next'\n[string \"@Interface\\AddOns\\AceBIS\\GearWindow.lua\"]:592: in function <Interface\\AddOns\\AceBIS\\GearWindow.lua:568>\n[string \"@Interface\\AddOns\\AceBIS\\GearWindow.lua\"]:981: in function `InitUI'\n[string \"@Interface\\AddOns\\AceBIS\\AceBIS-4.0.9.lua\"]:397: in function <Interface\\AddOns\\AceBIS\\AceBIS.lua:382>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:70: in function <...ace\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:65>\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:527: in function `EnableAddon'\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:630: in function <...ace\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:615>",
+			["session"] = 7742,
+			["counter"] = 13,
 		}, -- [834]
 	},
 }
