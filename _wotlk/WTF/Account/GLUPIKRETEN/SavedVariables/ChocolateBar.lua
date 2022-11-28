@@ -129,9 +129,10 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "gmL",
 				},
-				["AdiBags"] = {
-					["enabled"] = false,
+				["CharacterNotes"] = {
+					["align"] = "right",
 					["isNew"] = false,
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
 				["DBM"] = {
@@ -185,10 +186,9 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "WA",
 				},
-				["KiwiPlates"] = {
-					["align"] = "right",
+				["AdiBags"] = {
+					["enabled"] = false,
 					["isNew"] = false,
-					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
 				["Broker Currency"] = {
@@ -528,7 +528,7 @@ ChocolateBarDB = {
 					["isNew"] = false,
 					["barName"] = "ChocolateBar2",
 				},
-				["CharacterNotes"] = {
+				["KiwiPlates"] = {
 					["align"] = "right",
 					["isNew"] = false,
 					["showText"] = false,
@@ -603,9 +603,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 527799,
-		["timeStamp"] = 1565547.943,
-		["timeAtThisLevel"] = 97,
+		["total"] = 529180,
+		["timeStamp"] = 1589964.702,
+		["timeAtThisLevel"] = 1478,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -646,9 +646,9 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 965889,
-		["timeAtThisLevel"] = 8647,
-		["timeStamp"] = 1566942.287,
+		["total"] = 968085,
+		["timeAtThisLevel"] = 1162,
+		["timeStamp"] = 1591417.897,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,
@@ -752,9 +752,9 @@ CB_PlayedTime = {
 		["total"] = 390,
 	},
 	["Miqa-Golemagg"] = {
-		["total"] = 5485,
-		["timeStamp"] = 1558479.806,
-		["timeAtThisLevel"] = 437,
+		["total"] = 5522,
+		["timeStamp"] = 1591334.904,
+		["timeAtThisLevel"] = 474,
 	},
 	["Nitwit-"] = {
 		["total"] = 680,
@@ -777,9 +777,9 @@ CB_PlayedTime = {
 		["total"] = 129,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1390224,
-		["timeAtThisLevel"] = 297677,
-		["timeStamp"] = 1564658.71,
+		["total"] = 1391082,
+		["timeAtThisLevel"] = 298535,
+		["timeStamp"] = 1590710.155,
 	},
 	["Grgur-"] = {
 		["total"] = 1248,
