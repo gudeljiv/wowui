@@ -1,10 +1,16 @@
-tag ba9ccc7a62e9c901f4a53528502cbb3a8d810d47 Details.DF.Wrath.10301.147
+tag 05b5915e9e52f6442cb9a656fbfe486e056060e8 Details.DF.Wrath.10302.147
 Author:	Tercio Jose <terciob19@hotmail.com>
-Date:	Sun Nov 27 18:36:13 2022 -0300
+Date:	Mon Nov 28 13:00:26 2022 -0300
 
-commit eb60b77c323ad2705da088b3ad6c69bb2b7ed0a5
+commit 8f6cfe4d69065c33ff0610d7777faddfe1ffc4b7
 Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Sun Nov 27 18:35:35 2022 -0300
+Date:   Mon Nov 28 13:00:11 2022 -0300
 
-    Wrath error fixes
+    Round of Fixes
+
+commit 06faed2fb08588e8a238303c9effa1edd896e767
+Author: Tercio Jose <terciob19@hotmail.com>
+Date:   Sun Nov 27 21:52:56 2022 -0300
+
+    empower fix
 
