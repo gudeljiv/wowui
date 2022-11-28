@@ -15,10 +15,10 @@
 -- ADDON GLOBALS AND LOCALS
 -- ---------------------------------
 
-TELLMEWHEN_VERSION = "10.0.2"
+TELLMEWHEN_VERSION = "10.0.5"
 
 TELLMEWHEN_VERSION_MINOR = ""
-local projectVersion = "10.0.2" -- comes out like "6.2.2-21-g4e91cee"
+local projectVersion = "10.0.5" -- comes out like "6.2.2-21-g4e91cee"
 if projectVersion:find("project%-version") then
 	TELLMEWHEN_VERSION_MINOR = "dev"
 elseif strmatch(projectVersion, "%-%d+%-") then
@@ -26,7 +26,7 @@ elseif strmatch(projectVersion, "%-%d+%-") then
 end
 
 TELLMEWHEN_VERSION_FULL = TELLMEWHEN_VERSION .. " " .. TELLMEWHEN_VERSION_MINOR
-TELLMEWHEN_VERSIONNUMBER = 100200 -- NEVER DECREASE THIS NUMBER (duh?).  IT IS ALSO ONLY INTERNAL (for versioning of)
+TELLMEWHEN_VERSIONNUMBER = 100500 -- NEVER DECREASE THIS NUMBER (duh?).  IT IS ALSO ONLY INTERNAL (for versioning of)
 
 TELLMEWHEN_FORCECHANGELOG = 86005 -- if the user hasn't seen the changelog until at least this version, show it to them.
 
@@ -76,6 +76,7 @@ end
 local L = LibStub("AceLocale-3.0"):GetLocale("TellMeWhen", true)
 
 LSM:Register("font", "Open Sans Regular", "Interface/Addons/TellMeWhen/Fonts/OpenSans-Regular.ttf")
+LSM:Register("font", "Roboto Mono", "Interface/Addons/TellMeWhen/Fonts/RobotoMono-Regular.ttf")
 LSM:Register("font", "Vera Mono", "Interface/Addons/TellMeWhen/Fonts/VeraMono.ttf")
 
 -- Standalone versions of these libs are LoD
@@ -808,37 +809,37 @@ do
 	function TMW:Fire(event, ...)
 		local funcs = callbackregistry[event]
 
-		if funcs then
-			local wasInProgress = firingsInProgress
-			firingsInProgress = true
+		if not funcs then return end
+		
+		local wasInProgress = firingsInProgress
+		firingsInProgress = true
+		
+		local funcsNeedsFix
+		for t = 1, #funcs do
+			local args = funcs[t]
 			
-			local funcsNeedsFix
-			for t = 1, #funcs do
-				local args = funcs[t]
-				
-				if args then
-					local method = args.func
-					for index = 1, args.n do
-						local arg1 = args[index]
+			if args then
+				local method = args.func
+				for index = 1, args.n do
+					local arg1 = args[index]
 
-						if arg1 == nil then
-							funcsNeedsFix = true
-						elseif arg1 ~= true then
-							safecall(method, arg1, event, ...)
-						else
-							safecall(method, event, ...)
-						end
+					if arg1 == nil then
+						funcsNeedsFix = true
+					elseif arg1 ~= true then
+						safecall(method, arg1, event, ...)
+					else
+						safecall(method, event, ...)
 					end
 				end
 			end
-			
-			if not wasInProgress then
-				firingsInProgress = false
+		end
+		
+		if not wasInProgress then
+			firingsInProgress = false
 
-				if funcsNeedsFix then
-					for i = #funcs, 1, -1 do
-						cleanup(event, i, funcs[i])
-					end
+			if funcsNeedsFix then
+				for i = #funcs, 1, -1 do
+					cleanup(event, i, funcs[i])
 				end
 			end
 		end
@@ -1084,6 +1085,7 @@ function TMW:PLAYER_LOGIN()
 		TMW:RegisterEvent("CHARACTER_POINTS_CHANGED", "PLAYER_SPECIALIZATION_CHANGED")
 	else
 		TMW:RegisterEvent("PLAYER_SPECIALIZATION_CHANGED")
+		TMW:RegisterEvent("TRAIT_CONFIG_UPDATED", "PLAYER_SPECIALIZATION_CHANGED")
 	end
 
 

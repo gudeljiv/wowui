@@ -37,19 +37,18 @@ local COMBATLOG_OBJECT_TYPE_PLAYER = COMBATLOG_OBJECT_TYPE_PLAYER
 Env.GetSpellCooldown = GetSpellCooldown
 Env.GetItemCooldown = GetItemCooldown
 
-
 local GetSpellCooldown = GetSpellCooldown
 function Env.CooldownDuration(spell, gcdAsUnusable)
 	if spell == "gcd" then
 		local start, duration = GetSpellCooldown(TMW.GCDSpell)
-		return duration == 0 and 0 or (duration - (TMW.time - start))
+		return duration == 0 and 0 or (duration - (TMW.time - start)), start, duration
 	end
 
 	local start, duration = GetSpellCooldown(spell)
 	if duration then
-		return ((duration == 0 or (not gcdAsUnusable and OnGCD(duration))) and 0) or (duration - (TMW.time - start))
+		return ((duration == 0 or (not gcdAsUnusable and OnGCD(duration))) and 0) or (duration - (TMW.time - start)), start, duration
 	end
-	return 0
+	return 0, 0, 0
 end
 
 local GetSpellCharges = GetSpellCharges
@@ -96,14 +95,14 @@ ConditionCategory:RegisterCondition(1,	 "SPELLCD", {
 	formatter = TMW.C.Formatter.TIME_0USABLE,
 	icon = "Interface\\Icons\\spell_holy_divineintervention",
 	tcoords = CNDT.COMMON.standardtcoords,
-	funcstr = [[CooldownDuration(c.NameFirst, c.Checked) c.Operator c.Level]],
+	funcstr = [[CooldownDuration(c.OwnSpells.First, c.Checked) c.Operator c.Level]],
 	events = function(ConditionObject, c)
 		return
 			ConditionObject:GenerateNormalEventString("SPELL_UPDATE_COOLDOWN"),
 			ConditionObject:GenerateNormalEventString("SPELL_UPDATE_USABLE")
 	end,
 	anticipate = [[
-		local start, duration = GetSpellCooldown(c.GCDReplacedNameFirst)
+		local _, start, duration = GetSpellCooldown(c.OwnSpells.First)
 		local VALUE = duration and start + (duration - c.Level) or huge
 	]],
 })
@@ -126,15 +125,15 @@ ConditionCategory:RegisterCondition(2,	 "SPELLCDCOMP", {
 	unit = PLAYER,
 	icon = "Interface\\Icons\\spell_holy_divineintervention",
 	tcoords = CNDT.COMMON.standardtcoords,
-	funcstr = [[CooldownDuration(c.NameFirst, c.Checked) c.Operator CooldownDuration(c.NameFirst2, c.Checked2)]],
+	funcstr = [[CooldownDuration(c.OwnSpells.First, c.Checked) c.Operator CooldownDuration(c.OwnSpells2.First, c.Checked2)]],
 	events = function(ConditionObject, c)
 		return
 			ConditionObject:GenerateNormalEventString("SPELL_UPDATE_COOLDOWN"),
 			ConditionObject:GenerateNormalEventString("SPELL_UPDATE_USABLE")
 	end,
 	anticipate = [[
-		local start, duration = GetSpellCooldown(c.GCDReplacedNameFirst)
-		local start2, duration2 = GetSpellCooldown(c.GCDReplacedNameFirst2)
+		local _, start, duration = GetSpellCooldown(c.OwnSpells.First)
+		local _, start2, duration2 = GetSpellCooldown(c.OwnSpells2.First)
 		local VALUE
 		if duration and duration2 then
 			local v1, v2 = start + duration, start2 + duration2
@@ -168,7 +167,7 @@ if TMW.isRetail then
 			GetSpellCharges = GetSpellCharges,
 			GetSpellCount = GetSpellCount,
 		},
-		funcstr = [[(GetSpellCharges(c.NameFirst) or GetSpellCount(c.NameFirst)) c.Operator c.Level]],
+		funcstr = [[(GetSpellCharges(c.OwnSpells.First) or GetSpellCount(c.OwnSpells.First)) c.Operator c.Level]],
 		events = function(ConditionObject, c)
 			return
 				ConditionObject:GenerateNormalEventString("SPELL_UPDATE_COOLDOWN"),
@@ -199,7 +198,7 @@ if TMW.isRetail then
 		Env = {
 			GetSpellCharges = GetSpellCharges,
 		},
-		funcstr = [[RechargeDuration(c.NameFirst) c.Operator c.Level]],
+		funcstr = [[RechargeDuration(c.OwnSpells.First) c.Operator c.Level]],
 		events = function(ConditionObject, c)
 			return
 				ConditionObject:GenerateNormalEventString("SPELL_UPDATE_COOLDOWN"),
@@ -207,7 +206,7 @@ if TMW.isRetail then
 				ConditionObject:GenerateNormalEventString("SPELL_UPDATE_CHARGES")
 		end,
 		anticipate = [[
-			local _, _, start, duration = GetSpellCharges(c.NameFirst)
+			local _, _, start, duration = GetSpellCharges(c.OwnSpells.First)
 			local VALUE = duration and start + (duration - c.Level) or huge
 		]],
 	})
@@ -270,9 +269,9 @@ ConditionCategory:RegisterCondition(2.8, "LASTCAST", {
 		end
 
 		if c.Level == 1 then
-			return [[LastPlayerCastName ~= LOWER(c.NameFirst) and LastPlayerCastID ~= c.NameFirst]] 
+			return [[LastPlayerCastName ~= LOWER(c.Spells.First) and LastPlayerCastID ~= c.Spells.First]] 
 		end
-		return [[LastPlayerCastName == LOWER(c.NameFirst) or LastPlayerCastID == c.NameFirst]] 
+		return [[LastPlayerCastName == LOWER(c.Spells.First) or LastPlayerCastID == c.Spells.First]] 
 	end,
 	events = function(ConditionObject, c)
 		local pGUID = UnitGUID("player")
@@ -314,7 +313,7 @@ ConditionCategory:RegisterCondition(3,	 "REACTIVE", {
 	formatter = TMW.C.Formatter.BOOL_USABLEUNUSABLE,
 	icon = "Interface\\Icons\\ability_warrior_revenge",
 	tcoords = CNDT.COMMON.standardtcoords,
-	funcstr = [[BOOLCHECK( ReactiveHelper(c.NameFirst, c.Checked) )]],
+	funcstr = [[BOOLCHECK( ReactiveHelper(c.OwnSpells.First, c.Checked) )]],
 	events = function(ConditionObject, c)
 		return
 			ConditionObject:GenerateNormalEventString("SPELL_UPDATE_USABLE")
@@ -338,7 +337,7 @@ ConditionCategory:RegisterCondition(3.1, "CURRENTSPELL", {
 	Env = {
 		IsCurrentSpell = IsCurrentSpell,
 	},
-	funcstr = [[BOOLCHECK( IsCurrentSpell(c.NameFirst) )]],
+	funcstr = [[BOOLCHECK( IsCurrentSpell(c.OwnSpells.First) )]],
 	events = function(ConditionObject, c)
 		return
 			ConditionObject:GenerateNormalEventString("CURRENT_SPELL_CAST_CHANGED")
@@ -362,7 +361,7 @@ ConditionCategory:RegisterCondition(3.2, "AUTOSPELL", {
 	Env = {
 		IsAutoRepeatSpell = IsAutoRepeatSpell,
 	},
-	funcstr = [[BOOLCHECK( IsAutoRepeatSpell(c.NameFirst) )]],
+	funcstr = [[BOOLCHECK( IsAutoRepeatSpell(c.OwnSpells.First) )]],
 	events = function(ConditionObject, c)
 		return
 			ConditionObject:GenerateNormalEventString("START_AUTOREPEAT_SPELL"),
@@ -370,7 +369,7 @@ ConditionCategory:RegisterCondition(3.2, "AUTOSPELL", {
 	end,
 })
 
-
+if IsSpellOverlayed then
 ConditionCategory:RegisterCondition(3.5,  "OVERLAYED", {
 	text = L["CONDITIONPANEL_OVERLAYED"],
 	tooltip = L["CONDITIONPANEL_OVERLAYED_DESC"],
@@ -402,7 +401,7 @@ ConditionCategory:RegisterCondition(3.5,  "OVERLAYED", {
 			module:RegisterEvent("SPELL_ACTIVATION_OVERLAY_GLOW_HIDE", handleEvent)
 		end
 
-		return [[BOOLCHECK( IsSpellOverlayed(OverlayedNameMap[c.NameFirst] or (isNumber[c.NameFirst] and c.NameFirst) or 0) )]]
+		return [[BOOLCHECK( IsSpellOverlayed(OverlayedNameMap[c.Spells.First] or (isNumber[c.Spells.First] and c.Spells.First) or 0) )]]
 	end,
 	events = function(ConditionObject, c)
 		return
@@ -411,6 +410,7 @@ ConditionCategory:RegisterCondition(3.5,  "OVERLAYED", {
 			ConditionObject:GenerateNormalEventString("SPELL_ACTIVATION_OVERLAY_GLOW_HIDE")
 	end,
 })
+end
 
 ConditionCategory:RegisterCondition(4,	 "MANAUSABLE", {
 	text = L["CONDITIONPANEL_MANAUSABLE"],
@@ -427,7 +427,7 @@ ConditionCategory:RegisterCondition(4,	 "MANAUSABLE", {
 	formatter = TMW.C.Formatter.BOOL_USABLEUNUSABLE,
 	icon = "Interface\\Icons\\inv_potion_137",
 	tcoords = CNDT.COMMON.standardtcoords,
-	funcstr = [[not BOOLCHECK( SpellHasNoMana(c.NameFirst) )]],
+	funcstr = [[not BOOLCHECK( SpellHasNoMana(c.OwnSpells.First) )]],
 	Env = {
 		SpellHasNoMana = TMW.SpellHasNoMana
 	},
@@ -452,7 +452,7 @@ ConditionCategory:RegisterCondition(4.5, "SPELLCOST", {
 	unit = false,
 	icon = "Interface\\Icons\\inv_potion_125",
 	tcoords = CNDT.COMMON.standardtcoords,
-	funcstr = [[(GetSpellCost(c.NameFirst) or 0) c.Operator c.Level]],
+	funcstr = [[(GetSpellCost(c.OwnSpells.First) or 0) c.Operator c.Level]],
 	Env = {
 		GetSpellCost = TMW.GetSpellCost
 	},
@@ -477,7 +477,7 @@ ConditionCategory:RegisterCondition(5,	 "SPELLRANGE", {
 		IsSpellInRange = LibStub("SpellRange-1.0").IsSpellInRange,
 	},
 	funcstr = function(c)
-		return 1-c.Level .. [[ == (IsSpellInRange(c.NameFirst, c.Unit) or 0)]]
+		return 1-c.Level .. [[ == (IsSpellInRange(c.OwnSpells.First, c.Unit) or 0)]]
 	end,
 })
 ConditionCategory:RegisterCondition(6,	 "GCD", {
@@ -707,31 +707,66 @@ ConditionCategory:RegisterCondition(19.5,	 "OHSWING", {
 ConditionCategory:RegisterSpacer(20)
 
 local totemData = TMW.COMMON.CurrentClassTotems
+local totemRanks = TMW.COMMON.TotemRanks or {}
 
-function Env.TotemHelper(slot, nameString)
-	local have, name, start, duration = GetTotemInfo(slot)
-	if nameString and nameString ~= "" and nameString ~= ";" and name and not strfind(nameString, Env.SemicolonConcatCache[name or ""]) then
-		return 0
+function Env.TotemHelper(slot, spellSet)
+	local _, totemName, start, duration = GetTotemInfo(slot)
+	local totemNameLower = strlowerCache[totemName]
+	local totemInfo = totemRanks[totemNameLower]
+
+	local matchAny = not spellSet or spellSet.Name == ""
+	local Hash = not matchAny and spellSet.Hash
+	
+	if
+		start ~= 0 and
+		totemName and
+		(
+			matchAny or
+			Hash[totemNameLower] or
+			(totemInfo and (
+				-- By totem name, (e.g. "Searing Totem III")
+				Hash[totemInfo.totemNameLower] or
+				-- or by spellID,
+				Hash[totemInfo.spellID] or
+				-- Or by the spell name (which is the same as the rank 1 totem name) (e.g. "Searing Totem")
+				Hash[totemInfo.spellNameLower])
+			)
+		)
+	then
+		return duration and duration ~= 0 and (duration - (TMW.time - start)) or 0
 	end
-	return duration and duration ~= 0 and (duration - (TMW.time - start)) or 0
+	return 0
 end
 
-function Env.TotemHelperAny(nameString)
+function Env.TotemHelperAny(spellSet)
+	local matchAny = spellSet.Name == ""
+	local Hash = not matchAny and spellSet.Hash
+	
 	for slot = 1, 10 do
-		local have, name, start, duration = GetTotemInfo(slot)
+		local have, totemName, start, duration = GetTotemInfo(slot)
 		if have == nil then
 			return 0 -- `have` will be nil if the slot doesn't exist.
 		end
+		
+		local totemNameLower = strlowerCache[totemName]
+		local totemInfo = totemRanks[totemNameLower]
 
 		if
-			have and (
-				-- If we're not filtering by name,
-				(not nameString or nameString == "" or nameString == ";")
-				-- Or we are filtering by name and the name matches
-				or (name and strfind(nameString, Env.SemicolonConcatCache[name]))
+			start ~= 0 and
+			totemName and
+			(
+				matchAny or
+				Hash[totemNameLower] or
+				(totemInfo and (
+					-- By totem name, (e.g. "Searing Totem III")
+					Hash[totemInfo.totemNameLower] or
+					-- or by spellID,
+					Hash[totemInfo.spellID] or
+					-- Or by the spell name (which is the same as the rank 1 totem name) (e.g. "Searing Totem")
+					Hash[totemInfo.spellNameLower])
+				)
 			)
 		then
-			-- Then return the time of this totem as the result.
 			return duration and duration ~= 0 and (duration - (TMW.time - start)) or 0
 		end
 		-- If the above condition didn't succeeed, continue on to the next totem.
@@ -740,6 +775,7 @@ function Env.TotemHelperAny(nameString)
 	-- No results were found.
 	return 0
 end
+
 
 
 ConditionCategory:RegisterCondition(20.1,	 "TOTEM_ANY", {
@@ -752,18 +788,18 @@ ConditionCategory:RegisterCondition(20.1,	 "TOTEM_ANY", {
 		editbox:SetTexts(L["CNDT_TOTEMNAME"], L["CNDT_TOTEMNAME_DESC"])
 		editbox:SetLabel(L["CNDT_TOTEMNAME"] .. " " .. L["ICONMENU_CHOOSENAME_ORBLANK"])
 	end,
-	useSUG = true,
+	useSUG = TMW.isWrath and "totem" or true,
 	allowMultipleSUGEntires = true,
 	formatter = TMW.C.Formatter.TIME_0ABSENT,
 	icon = "Interface\\ICONS\\spell_nature_groundingtotem",
 	tcoords = CNDT.COMMON.standardtcoords,
-	funcstr = [[TotemHelperAny(c.NameStrings) c.Operator c.Level]],
+	funcstr = [[TotemHelperAny(c.Spells) c.Operator c.Level]],
 	events = function(ConditionObject, c)
 		return
 			ConditionObject:GenerateNormalEventString("PLAYER_TOTEM_UPDATE")
 	end,
 	anticipate = function(c)
-		return [[local VALUE = time + TotemHelperAny(c.NameStrings) - c.Level]]
+		return [[local VALUE = time + TotemHelperAny(c.Spells) - c.Level]]
 	end,
 })
 
@@ -779,12 +815,12 @@ for i = 1, 5 do
 			editbox:SetTexts(L["CNDT_TOTEMNAME"], L["CNDT_TOTEMNAME_DESC"])
 			editbox:SetLabel(L["CNDT_TOTEMNAME"] .. " " .. L["ICONMENU_CHOOSENAME_ORBLANK"])
 		end,
-		useSUG = true,
+		useSUG = TMW.isWrath and "totem" or true,
 		allowMultipleSUGEntires = true,
 		formatter = TMW.C.Formatter.TIME_0ABSENT,
 		icon = totem and totem.texture or "Interface\\ICONS\\spell_nature_groundingtotem",
 		tcoords = CNDT.COMMON.standardtcoords,
-		funcstr = [[TotemHelper(]] .. i .. ((not totem or totem.hasVariableNames) and [[, c.NameString]] or "") .. [[) c.Operator c.Level]],
+		funcstr = [[TotemHelper(]] .. i .. ((not totem or totem.hasVariableNames) and [[, c.Spells]] or "") .. [[) c.Operator c.Level]],
 		events = function(ConditionObject, c)
 			return
 				ConditionObject:GenerateNormalEventString("PLAYER_TOTEM_UPDATE")
@@ -867,6 +903,9 @@ local castEvents = function(ConditionObject, c)
 		ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_CHANNEL_START", CNDT:GetUnit(c.Unit)),
 		ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_CHANNEL_UPDATE", CNDT:GetUnit(c.Unit)),
 		ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_CHANNEL_STOP", CNDT:GetUnit(c.Unit)),
+		TMW.isWrath and "false" or ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_EMPOWER_START", CNDT:GetUnit(c.Unit)),
+		TMW.isWrath and "false" or ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_EMPOWER_UPDATE", CNDT:GetUnit(c.Unit)),
+		TMW.isWrath and "false" or ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_EMPOWER_STOP", CNDT:GetUnit(c.Unit)),
 		TMW.isWrath and "false" or ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_INTERRUPTIBLE", CNDT:GetUnit(c.Unit)),
 		TMW.isWrath and "false" or ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_NOT_INTERRUPTIBLE", CNDT:GetUnit(c.Unit))
 end
@@ -886,10 +925,10 @@ ConditionCategory:RegisterCondition(31,	 "CASTING", {
 	tcoords = CNDT.COMMON.standardtcoords,
 	name = function(editbox)
 		editbox:SetTexts(L["CONDITIONPANEL_CASTTOMATCH"], L["CONDITIONPANEL_CASTTOMATCH_DESC"])
-		editbox:SetLabel(L["CONDITIONPANEL_CASTTOMATCH"])
+		editbox:SetLabel(L["CONDITIONPANEL_CASTTOMATCH"] .. " " .. L["ICONMENU_CHOOSENAME_ORBLANK"])
 	end,
 	useSUG = true,
-	funcstr = [[UnitCast(c.Unit, c.Level, LOWER(c.NameString))]], -- LOWER is some gsub magic
+	funcstr = [[UnitCast(c.Unit, c.Level, c.Spells.FirstString)]],
 	events = castEvents,
 })
 ConditionCategory:RegisterCondition(31.1,	 "CASTPERCENT", {
@@ -903,18 +942,74 @@ ConditionCategory:RegisterCondition(31.1,	 "CASTPERCENT", {
 	tcoords = CNDT.COMMON.standardtcoords,
 	name = function(editbox)
 		editbox:SetTexts(L["CONDITIONPANEL_CASTTOMATCH"], L["CONDITIONPANEL_CASTTOMATCH_DESC"])
-		editbox:SetLabel(L["CONDITIONPANEL_CASTTOMATCH"])
+		editbox:SetLabel(L["CONDITIONPANEL_CASTTOMATCH"] .. " " .. L["ICONMENU_CHOOSENAME_ORBLANK"])
 	end,
 	useSUG = true,
-	funcstr = [[UnitCastPercent(c.Unit, LOWER(c.NameString)) c.Operator c.Level]],
+	funcstr = [[UnitCastPercent(c.Unit, c.Spells.FirstString) c.Operator c.Level]],
 	events = castEvents,
 	anticipate = [[
-		local percent, percentPerSecond = UnitCastPercent(c.Unit, LOWER(c.NameString))
+		local percent, percentPerSecond = UnitCastPercent(c.Unit, c.Spells.FirstString)
 		local VALUE = 
 			percentPerSecond == nil and huge or 
 			((c.Level - percent) / percentPerSecond) + time
 	]],
 })
+
+if GetUnitEmpowerStageDuration then
+	
+	function Env.GetCurrentEmpowerStage(unit, matchname)
+		-- all of the function calls in this function combined,
+		-- assuming the worst case of current cast is on its last stage,
+		-- use less CPU than a single UnitAura call.
+		-- So perf here isn't an issue and no caching is needed here.
+		local name, _, _, start, _, _, _, _, _, numStages = UnitChannelInfo(unit);
+
+		if not numStages or numStages == 0 or (matchname ~= "" and strlowerCache[name] ~= matchname) then
+			return 0, 0
+		end
+
+		local stageEnd = start/1000
+		local time = TMW.time
+		for i = 0, numStages - 1 do
+			local duration = GetUnitEmpowerStageDuration(unit, i)
+			stageEnd = stageEnd + duration/1000
+			if stageEnd > time then
+				return i, stageEnd
+			end
+		end
+		return numStages, stageEnd + GetUnitEmpowerHoldAtMaxTime(unit)/1000
+	end
+
+	ConditionCategory:RegisterCondition(31.2,  "EMPOWEREDSTAGE", {
+		text = L["EMPOWEREDSTAGE"],
+		tooltip = L["EMPOWEREDSTAGE_DESC"],
+		useSUG = "spell",	
+		name = function(editbox)
+			editbox:SetTexts(L["CONDITIONPANEL_CASTTOMATCH"], L["CONDITIONPANEL_CASTTOMATCH_DESC"])
+			editbox:SetLabel(L["CONDITIONPANEL_CASTTOMATCH"] .. " " .. L["ICONMENU_CHOOSENAME_ORBLANK"])
+		end,
+		min = 0,
+		max = 5,
+		icon = "Interface\\Icons\\inv_10_enchanting2_elementalswirl_color1",
+
+		tcoords = CNDT.COMMON.standardtcoords,
+
+		funcstr = [[GetCurrentEmpowerStage(c.Unit, c.Spells.FirstString) c.Operator c.Level]],
+		anticipate = [[
+			-- Doesn't anticpiate the specific stage we're looking for.
+			-- Only the next stage change. Which is plenty good enough.
+			local _, VALUE = GetCurrentEmpowerStage(c.Unit, c.Spells.FirstString)
+		]],
+
+		events = function(ConditionObject, c)
+			return
+				ConditionObject:GetUnitChangedEventString(CNDT:GetUnit(c.Unit)),
+				ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_EMPOWER_START", CNDT:GetUnit(c.Unit)),
+				ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_EMPOWER_UPDATE", CNDT:GetUnit(c.Unit)),
+				ConditionObject:GenerateNormalEventString("UNIT_SPELLCAST_EMPOWER_STOP", CNDT:GetUnit(c.Unit))
+		end,
+	})
+end
 
 
 
@@ -984,7 +1079,7 @@ ConditionCategory:RegisterCondition(32,	 "CASTCOUNT", {
 		 -- attempt initialization if it hasn't been done already
 		Env.UnitCastCount("none", "none")
 		
-		return [[UnitCastCount(c.Unit, c.NameFirst) c.Operator c.Level]]
+		return [[UnitCastCount(c.Unit, c.Spells.First) c.Operator c.Level]]
 	end,
 	events = function(ConditionObject, c)
 		return

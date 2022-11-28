@@ -27,13 +27,16 @@ local wipe =
       wipe
 local GetTalentInfo, GetNumTalents, GetGlyphLink, GetSpellInfo = 
       GetTalentInfo, GetNumTalents, GetGlyphLink, GetSpellInfo
-local GetSpecializationInfo, GetNumSpecializationsForClassID, GetSpecializationInfoForClassID, GetNumClasses, GetClassInfo = 
-      GetSpecializationInfo, GetNumSpecializationsForClassID, GetSpecializationInfoForClassID, GetNumClasses, GetClassInfo
+local GetSpecializationInfo, GetNumSpecializationsForClassID, GetSpecializationInfoForClassID, GetNumClasses = 
+      GetSpecializationInfo, GetNumSpecializationsForClassID, GetSpecializationInfoForClassID, GetNumClasses
 local GetNumBattlefieldScores, RequestBattlefieldScoreData, GetBattlefieldScore, GetNumArenaOpponents, GetArenaOpponentSpec =
       GetNumBattlefieldScores, RequestBattlefieldScoreData, GetBattlefieldScore, GetNumArenaOpponents, GetArenaOpponentSpec
 local UnitAura, IsInJailersTower, C_SpecializationInfo, GetPvpTalentInfoByID =
 	  UnitAura, IsInJailersTower, C_SpecializationInfo, GetPvpTalentInfoByID
 	  
+local GetClassInfo = TMW.GetClassInfo
+local GetMaxClassID = TMW.GetMaxClassID
+
 local ConditionCategory = CNDT:GetCategory("TALENTS", 1.4, L["CNDTCAT_TALENTS"], true, false)
 
 
@@ -92,8 +95,8 @@ ConditionCategory:RegisterCondition(0.1,  "UNITSPEC", {
 	bitFlagTitle = L["CONDITIONPANEL_UNITSPEC_CHOOSEMENU"],
 	bitFlags = (function()
 		local t = {}
-		for i = 1, TMW.GetMaxClassID() do
-			local _, class, classID = TMW.GetClassInfo(i)
+		for i = 1, GetMaxClassID() do
+			local _, class, classID = GetClassInfo(i)
 			if classID then
 				specNameToRole[class] = {}
 				for j = 1, TMW.GetNumSpecializationsForClassID(classID) do
@@ -184,8 +187,8 @@ ConditionCategory:RegisterCondition(0.2,  "CLASS2", {
 	bitFlagTitle = L["CONDITIONPANEL_BITFLAGS_CHOOSECLASS"],
 	bitFlags = (function()
 		local t = {}
-		for classID = 1, TMW.GetMaxClassID() do
-			local name, token = TMW.GetClassInfo(classID)
+		for classID = 1, GetMaxClassID() do
+			local name, token = GetClassInfo(classID)
 			if name then
 				t[classID] = {
 					order = classID,
@@ -521,7 +524,7 @@ if C_Traits then
 		tcoords = CNDT.COMMON.standardtcoords,
 		funcstr = function(c)
 			setupTalentEvents()
-			return [[(TalentMap[c.NameFirst] or 0) c.Operator c.Level]]
+			return [[(TalentMap[c.Spells.First] or 0) c.Operator c.Level]]
 		end,
 		events = talentEvents,
 	})
@@ -578,7 +581,7 @@ elseif GetNumTalentTabs then
 			CNDT:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED", "CHARACTER_POINTS_CHANGED")
 			CNDT:CHARACTER_POINTS_CHANGED()
 
-			return [[(TalentMap[c.NameString] or 0) c.Operator c.Level]]
+			return [[(TalentMap[c.Spells.FirstString] or 0) c.Operator c.Level]]
 		end,
 		events = function(ConditionObject, c)
 			return
@@ -634,7 +637,7 @@ else
 			CNDT:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED", "PLAYER_TALENT_UPDATE")
 			CNDT:PLAYER_TALENT_UPDATE()
 		
-			return [[BOOLCHECK( TalentMap[LOWER(c.NameFirst)] )]]
+			return [[BOOLCHECK( TalentMap[LOWER(c.Spells.First)] )]]
 		end,
 		events = function(ConditionObject, c)
 			return
@@ -688,7 +691,7 @@ if GetGlyphSocketInfo then
 			CNDT:RegisterEvent("GLYPH_UPDATED",  "GLYPH_UPDATED")
 			CNDT:GLYPH_UPDATED()
 		
-			return [[BOOLCHECK( GlyphLookup[c.NameFirst] )]]
+			return [[BOOLCHECK( GlyphLookup[c.Spells.First] )]]
 		end,
 		Env = {
 			GlyphLookup = {},
@@ -737,7 +740,7 @@ if GetPvpTalentInfoByID then
 			CNDT:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED", "PLAYER_TALENT_UPDATE")
 			CNDT:PLAYER_TALENT_UPDATE()
 		
-			return [[BOOLCHECK( PvpTalentMap[LOWER(c.NameFirst)] )]]
+			return [[BOOLCHECK( PvpTalentMap[LOWER(c.Spells.First)] )]]
 		end,
 		events = function(ConditionObject, c)
 			return
@@ -761,7 +764,7 @@ if IsInJailersTower then
 	end
 	function AnimaPowWatcher:OnLocationUpdate()
 		if IsInJailersTower() and not self.watching then
-			self:RegisterEvent("UNIT_AURA")
+			self:RegisterUnitEvent("UNIT_AURA", "player")
 			self.watching = true
 			self:UNIT_AURA(nil, "player")
 		elseif not IsInJailersTower() and self.watching then
@@ -801,7 +804,7 @@ if IsInJailersTower then
 		tcoords = CNDT.COMMON.standardtcoords,
 		funcstr = function(c)
 			AnimaPowWatcher:Init()
-			return [[(CurrentAnimaPows[LOWER(c.NameFirst)] or 0) c.Operator c.Level]]
+			return [[(CurrentAnimaPows[LOWER(c.Spells.First)] or 0) c.Operator c.Level]]
 		end,
 		events = function(ConditionObject, c)
 			return
@@ -939,7 +942,7 @@ if C_AzeriteEssence and TMW.isRetail then
 				CNDT:RegisterEvent("AZERITE_ESSENCE_ACTIVATED", "AZERITE_ESSENCE_UPDATE")
 				CNDT:AZERITE_ESSENCE_UPDATE()
 				
-				return [[BOOLCHECK( AzeriteEssenceMap]] .. kind .. [[[LOWER(c.NameFirst)] )]]
+				return [[BOOLCHECK( AzeriteEssenceMap]] .. kind .. [[[LOWER(c.Spells.First)] )]]
 			end,
 			events = function(ConditionObject, c)
 				return

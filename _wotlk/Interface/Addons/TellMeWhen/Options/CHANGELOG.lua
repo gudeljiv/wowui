@@ -3,6 +3,25 @@ if not TMW then return end
 TMW.CHANGELOG_LASTVER="7.4.0"
 
 TMW.CHANGELOG = [==[
+## v10.0.5
+* Implement new WoW 10.0 Aura handling capabilities, resulting in an overwhelming performance improvement for the buff/debuff handling parts of TMW.
+* #2025 - Add events to Combat Event icons for empowered spell casts.
+* Fix #2026 - [string "Condition_ITEMSPELL"]:3: attempt to index field '?' (a nil value)
+* Fix #2027 - Shapeshift, Zone/Subzone, Loadout, Name, NpcID, and Creature Type conditions broken.
+* Fix #2029 - Unit Exists condition against "player" is always `true`, even if False is checked.
+* Fix #2030 - Unit Conditions were being ignored
+
+## v10.0.4
+*  Fix bugs in totem conditions (and a few others) introduced in 10.0.3
+
+## v10.0.3
+* Fix ClassSpellCache.lua:171: attempt to index field 'SpellData' (a nil value)
+* Fix #2019 - Expired totems are now treated as absent by the totem icon type, even if the wow API says they still exist.
+* Fix #2017 - Add workarounds for Blizzard bugs around some Evoker ability and talent combinations.
+* Wrath: Fix #2011 - PlayerNames.lua:100 attempt to concatenate field '?' (a nil value) 
+* Wrath: Fix #2016 - "Unknown class DRUID"
+* Wrath: Fix #2006 - Totems conditions once again function against any totem rank.
+
 ## v10.0.2
 * Unified codebase for Retail and Wrath versions.
 * #1992 - Added Talent Loadout condition.

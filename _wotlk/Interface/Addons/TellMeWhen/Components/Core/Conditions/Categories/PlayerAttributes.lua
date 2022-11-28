@@ -25,9 +25,9 @@ local _, pclass = UnitClass("Player")
 
 local IsInInstance, GetInstanceDifficulty, GetNumShapeshiftForms, GetShapeshiftFormInfo = 
 	  IsInInstance, GetInstanceDifficulty, GetNumShapeshiftForms, GetShapeshiftFormInfo
-local GetPetActionInfo, GetNumTrackingTypes, GetTrackingInfo = 
-	  GetPetActionInfo, GetNumTrackingTypes, GetTrackingInfo
-	  
+local GetPetActionInfo = GetPetActionInfo
+local GetNumTrackingTypes = GetNumTrackingTypes or C_Minimap.GetNumTrackingTypes
+local GetTrackingInfo = GetTrackingInfo or C_Minimap.GetTrackingInfo
 	  
 local ConditionCategory = CNDT:GetCategory("ATTRIBUTES_PLAYER", 2, L["CNDTCAT_ATTRIBUTES_PLAYER"], false, false)
 
@@ -189,14 +189,14 @@ ConditionCategory:RegisterCondition(6,	 "STANCE", {
 			end
 
 			if i == 0 then
-				return NONE
+				return strlowerCache[NONE]
 			else
 				local icons, active, catable, spellID = GetShapeshiftFormInfo(i)
-				return spellID and GetSpellInfo(spellID) or ""
+				return spellID and strlowerCache[GetSpellInfo(spellID)] or ""
 			end
 		end
 	},
-	funcstr = [[BOOLCHECK(MULTINAMECHECK(  GetShapeshiftForm() or ""  ))]],
+	funcstr = [[BOOLCHECK(c.Spells.StringHash[GetShapeshiftForm() or ""])]],
 	events = function(ConditionObject, c)
 		return
 			ConditionObject:GenerateNormalEventString("UPDATE_SHAPESHIFT_FORM")
@@ -225,7 +225,7 @@ ConditionCategory:RegisterCondition(12,	 "AUTOCAST", {
 	Env = {
 		GetSpellAutocast = GetSpellAutocast,
 	},
-	funcstr = [[BOOLCHECK( select(2, GetSpellAutocast(c.NameString)) )]],
+	funcstr = [[BOOLCHECK( select(2, GetSpellAutocast(c.Spells.FirstString)) )]],
 	events = function(ConditionObject, c)
 		return
 			ConditionObject:GenerateNormalEventString("PET_BAR_UPDATE")
@@ -355,7 +355,7 @@ ConditionCategory:RegisterCondition(16,	 "TRACKING", {
 		CNDT:RegisterEvent("MINIMAP_UPDATE_TRACKING")
 		CNDT:MINIMAP_UPDATE_TRACKING()
 	
-		return [[BOOLCHECK( Tracking[c.NameString] )]]
+		return [[BOOLCHECK( Tracking[c.Spells.FirstString] )]]
 	end,
 	events = function(ConditionObject, c)
 		return
