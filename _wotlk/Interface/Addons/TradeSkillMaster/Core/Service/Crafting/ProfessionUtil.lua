@@ -4,7 +4,7 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
+local TSM = select(2, ...) ---@type TSM
 local ProfessionUtil = TSM.Crafting:NewPackage("ProfessionUtil")
 local ProfessionInfo = TSM.Include("Data.ProfessionInfo")
 local CraftString = TSM.Include("Util.CraftString")
@@ -16,7 +16,6 @@ local RecipeString = TSM.Include("Util.RecipeString")
 local TempTable = TSM.Include("Util.TempTable")
 local ItemInfo = TSM.Include("Service.ItemInfo")
 local BagTracking = TSM.Include("Service.BagTracking")
-local Inventory = TSM.Include("Service.Inventory")
 local CustomPrice = TSM.Include("Service.CustomPrice")
 local private = {
 	craftQuantity = nil,
@@ -30,6 +29,7 @@ local private = {
 	preparedSpellId = nil,
 	preparedTime = 0,
 	categoryInfoTemp = {},
+	timeoutTimer = nil,
 }
 local PROFESSION_LOOKUP = {
 	["Costura"] = "Sastrería",
@@ -45,6 +45,7 @@ local PROFESSION_LOOKUP = {
 -- ============================================================================
 
 function ProfessionUtil.OnInitialize()
+	private.timeoutTimer = Delay.CreateTimer("PROFESSION_UTIL_TIMEOUT", private.CraftTimeoutMonitor)
 	Event.Register("UNIT_SPELLCAST_SUCCEEDED", function(_, unit, _, spellId)
 		if unit ~= "player" then
 			return
@@ -60,13 +61,15 @@ function ProfessionUtil.OnInitialize()
 			end
 		end
 
-		-- check if we need to update bank quantity manually
-		for _, itemString, quantity in TSM.Crafting.MatIterator(private.craftString) do
-			local bankQuantity = Inventory.GetBagQuantity(itemString) + Inventory.GetReagentBankQuantity(itemString)
-			local bankUsed = quantity - bankQuantity
-			if bankUsed > 0 and bankUsed <= bankQuantity then
-				Log.Info("Used %d from bank", bankUsed)
-				BagTracking.ForceBankQuantityDeduction(itemString, bankUsed)
+		if not TSM.IsWowClassic() then
+			-- check if we need to update bank quantity manually
+			for _, itemString, quantity in TSM.Crafting.MatIterator(private.craftString) do
+				local bagQuantity, bankQuantity, reagentBankQuantity = BagTracking.GetQuantities(itemString)
+				local bankUsed = quantity - bagQuantity
+				if bankUsed > 0 and bankUsed <= (bankQuantity + reagentBankQuantity) then
+					Log.Info("Used %d from bank", bankUsed)
+					BagTracking.ForceBankQuantityDeduction(itemString, bankUsed)
+				end
 			end
 		end
 
@@ -164,6 +167,14 @@ function ProfessionUtil.GetResultInfo(craftString)
 	end
 end
 
+function ProfessionUtil.GetPlayerMatQuantity(itemString)
+	if TSM.IsWowClassic() then
+		return BagTracking.GetBagQuantity(itemString)
+	else
+		return BagTracking.GetTotalQuantity(itemString)
+	end
+end
+
 function ProfessionUtil.GetNumCraftable(craftString, level)
 	local num, numAll = math.huge, math.huge
 	local spellId = CraftString.GetSpellId(craftString)
@@ -175,11 +186,7 @@ function ProfessionUtil.GetNumCraftable(craftString, level)
 		if not itemString or not quantity or totalQuantity == 0 then
 			return 0, 0
 		end
-		local bagQuantity = Inventory.GetBagQuantity(itemString)
-		if not TSM.IsWowClassic() then
-			bagQuantity = bagQuantity + Inventory.GetReagentBankQuantity(itemString) + Inventory.GetBankQuantity(itemString)
-		end
-		num = min(num, floor(bagQuantity / quantity))
+		num = min(num, floor(ProfessionUtil.GetPlayerMatQuantity(itemString) / quantity))
 		numAll = min(numAll, floor(totalQuantity / quantity))
 	end
 	if num == math.huge or numAll == math.huge then
@@ -199,18 +206,18 @@ function ProfessionUtil.GetNumCraftableRecipeString(recipeString)
 		if not itemString or not quantity or totalQuantity == 0 then
 			return 0, 0
 		end
-		local bagQuantity = Inventory.GetBagQuantity(itemString)
+		local bagQuantity = BagTracking.GetBagQuantity(itemString)
 		if not TSM.IsWowClassic() then
-			bagQuantity = bagQuantity + Inventory.GetReagentBankQuantity(itemString) + Inventory.GetBankQuantity(itemString)
+			bagQuantity = bagQuantity + BagTracking.GetReagentBankQuantity(itemString) + BagTracking.GetBankQuantity(itemString)
 		end
 		num = min(num, floor(bagQuantity / quantity))
 		numAll = min(numAll, floor(totalQuantity / quantity))
 	end
 	for _, _, itemId in RecipeString.OptionalMatIterator(recipeString) do
 		local optionalMatItemString = ItemString.Get(itemId)
-		local bagQuantity = Inventory.GetBagQuantity(optionalMatItemString)
+		local bagQuantity = BagTracking.GetBagQuantity(optionalMatItemString)
 		if not TSM.IsWowClassic() then
-			bagQuantity = bagQuantity + Inventory.GetReagentBankQuantity(optionalMatItemString) + Inventory.GetBankQuantity(optionalMatItemString)
+			bagQuantity = bagQuantity + BagTracking.GetReagentBankQuantity(optionalMatItemString) + BagTracking.GetBankQuantity(optionalMatItemString)
 		end
 		num = min(num, bagQuantity)
 	end
@@ -228,11 +235,7 @@ function ProfessionUtil.IsCraftable(craftString, level)
 		if not itemString or not quantity then
 			return false
 		end
-		local bagQuantity = Inventory.GetBagQuantity(itemString)
-		if not TSM.IsWowClassic() then
-			bagQuantity = bagQuantity + Inventory.GetReagentBankQuantity(itemString) + Inventory.GetBankQuantity(itemString)
-		end
-		if floor(bagQuantity / quantity) == 0 then
+		if floor(ProfessionUtil.GetPlayerMatQuantity(itemString) / quantity) == 0 then
 			return false
 		end
 	end
@@ -242,20 +245,11 @@ end
 function ProfessionUtil.GetNumCraftableFromDB(craftString, optionalMats)
 	local num = math.huge
 	for _, itemString, quantity in TSM.Crafting.MatIterator(craftString) do
-		local bagQuantity = Inventory.GetBagQuantity(itemString)
-		if not TSM.IsWowClassic() then
-			bagQuantity = bagQuantity + Inventory.GetReagentBankQuantity(itemString) + Inventory.GetBankQuantity(itemString)
-		end
-		num = min(num, floor(bagQuantity / quantity))
+		num = min(num, floor(ProfessionUtil.GetPlayerMatQuantity(itemString) / quantity))
 	end
 	if optionalMats then
 		for _, itemId in pairs(optionalMats) do
-			local itemString = ItemString.Get(itemId)
-			local bagQuantity = Inventory.GetBagQuantity(itemString)
-			if not TSM.IsWowClassic() then
-				bagQuantity = bagQuantity + Inventory.GetReagentBankQuantity(itemString) + Inventory.GetBankQuantity(itemString)
-			end
-			num = min(num, bagQuantity)
+			num = min(num, ProfessionUtil.GetPlayerMatQuantity(ItemString.Get(itemId)))
 		end
 	end
 	if num == math.huge then
@@ -268,19 +262,10 @@ function ProfessionUtil.GetNumCraftableFromDBRecipeString(recipeString)
 	local num = math.huge
 	local craftString = CraftString.FromRecipeString(recipeString)
 	for _, itemString, quantity in TSM.Crafting.MatIterator(craftString) do
-		local bagQuantity = Inventory.GetBagQuantity(itemString)
-		if not TSM.IsWowClassic() then
-			bagQuantity = bagQuantity + Inventory.GetReagentBankQuantity(itemString) + Inventory.GetBankQuantity(itemString)
-		end
-		num = min(num, floor(bagQuantity / quantity))
+		num = min(num, floor(ProfessionUtil.GetPlayerMatQuantity(itemString) / quantity))
 	end
 	for _, _, itemId in RecipeString.OptionalMatIterator(recipeString) do
-		local optionalMatItemString = ItemString.Get(itemId)
-		local bagQuantity = Inventory.GetBagQuantity(optionalMatItemString)
-		if not TSM.IsWowClassic() then
-			bagQuantity = bagQuantity + Inventory.GetReagentBankQuantity(optionalMatItemString) + Inventory.GetBankQuantity(optionalMatItemString)
-		end
-		num = min(num, bagQuantity)
+		num = min(num, ProfessionUtil.GetPlayerMatQuantity(ItemString.Get(itemId)))
 	end
 	if num == math.huge then
 		return 0
@@ -412,7 +397,7 @@ function ProfessionUtil.Craft(craftString, recipeId, quantity, useVellum, callba
 	end
 	private.castingTimeout = nil
 	private.craftTimeout = nil
-	Delay.AfterTime("PROFESSION_CRAFT_TIMEOUT_MONITOR", 0.5, private.CraftTimeoutMonitor, 0.5)
+	private.timeoutTimer:RunForTime(0.5)
 	return quantity
 end
 
@@ -618,7 +603,8 @@ function ProfessionUtil.GetCraftResultTooltipFromRecipeString(recipeString)
 		if TSM.Crafting.ProfessionState.IsClassicCrafting() then
 			tooltip = "craft:"..(TSM.Crafting.ProfessionScanner.GetIndexByCraftString(craftString) or craftString)
 		else
-			tooltip = "enchant:"..craftString
+			local spellId = RecipeString.GetSpellId(recipeString)
+			tooltip = "enchant:"..spellId
 		end
 	else
 		texture = ItemInfo.GetTexture(itemString) or texture
@@ -653,17 +639,18 @@ function private.DoCraftCallback(result, isDone)
 		private.craftBaseString = nil
 		private.craftCallback = nil
 		private.craftName = nil
-		Delay.Cancel("PROFESSION_CRAFT_TIMEOUT_MONITOR")
+		private.timeoutTimer:Cancel()
 	end
 	callback(result, isDone)
 end
 
 function private.CraftTimeoutMonitor()
+	private.timeoutTimer:RunForTime(0.5)
 	if not private.craftSpellId then
 		Log.Info("No longer crafting")
 		private.castingTimeout = nil
 		private.craftTimeout = nil
-		Delay.Cancel("PROFESSION_CRAFT_TIMEOUT_MONITOR")
+		private.timeoutTimer:Cancel()
 		return
 	end
 	local _, _, _, _, castEndTimeMs, _, _, _, spellId = private.GetPlayerCastingInfo()
@@ -686,7 +673,7 @@ function private.CraftTimeoutMonitor()
 		Log.Err("Crafting something else (%s, %s)", private.craftSpellId, spellId)
 		private.castingTimeout = nil
 		private.craftTimeout = nil
-		Delay.Cancel("PROFESSION_CRAFT_TIMEOUT_MONITOR")
+		private.timeoutTimer:Cancel()
 		return
 	end
 

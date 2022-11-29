@@ -4,8 +4,8 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
-local Settings = TSM.Init("Service.Settings")
+local TSM = select(2, ...) ---@type TSM
+local Settings = TSM.Init("Service.Settings") ---@class Service.Settings
 local L = TSM.Include("Locale").GetTable()
 local TempTable = TSM.Include("Util.TempTable")
 local Table = TSM.Include("Util.Table")
@@ -15,6 +15,7 @@ local Log = TSM.Include("Util.Log")
 local Sound = TSM.Include("Util.Sound")
 local CSV = TSM.Include("Util.CSV")
 local Wow = TSM.Include("Util.Wow")
+local Reactive = TSM.Include("Util.Reactive")
 local private = {
 	context = {},
 	proxies = {},
@@ -30,15 +31,22 @@ local KEY_SEP = "@"
 local SCOPE_KEY_SEP = " - "
 local GLOBAL_SCOPE_KEY = " "
 local DEFAULT_PROFILE_NAME = "Default"
-local PLAYER = UnitName("player")
-local FACTION = UnitFactionGroup("player")
-local REALM = GetRealmName()
+local PLAYER = Wow.GetCharacterName()
+local FACTION = Wow.GetFactionName()
+local REALM = Wow.GetRealmName()
 local VALID_TYPES = {
 	boolean = true,
 	string = true,
 	table = true,
 	number = true,
 }
+---@alias ScopeType
+---|'"global"'
+---|'"profile"'
+---|'"realm"'
+---|'"factionrealm"'
+---|'"char"'
+---|'"sync"'
 local SCOPE_TYPES = {
 	global = "g",
 	profile = "p",
@@ -69,6 +77,11 @@ local DEFAULT_DB = {
 		sync = {},
 	},
 	_lastModifiedVersion = {},
+}
+local ACCESSIBLE_FACTIONS = TSM.IsWowClassic() and { FACTION } or {
+	"Horde",
+	"Alliance",
+	"Neutral"
 }
 
 -- Changelog:
@@ -184,9 +197,15 @@ local DEFAULT_DB = {
 -- [103] updated global.auctionUIContext.auctioningAuctionScrollingTable, global.auctionUIContext.myAuctionsScrollingTable, global.auctionUIContext.shoppingAuctionScrollingTable, global.auctionUIContext.sniperScrollingTable, global.auctionUIContext.professionScrollingTable
 -- [104] removed factionrealm.internalData.{csvAuctionDBScan,auctionDBScanTime,auctionDBScanHash}
 -- [105] updated factionrealm.internalData.crafts, factionrealm.userData.craftingCooldownIgnore, char.internalData.craftingCooldowns
+-- [106] added global.userData.ungroupedItemMode
+-- [107] added global.tooltipOptions.{destroyTooltipFormat,convertTooltipFormat}, removed global.tooltipOptions.{deTooltip,millTooltip,prospectTooltip,transformTooltip,detailedDestroyTooltip}
+-- [108] updated global.tooltipOptions.moduleTooltips
+-- [109] updated global.craftingUIContext.professionScrollingTable
+-- [110] remove factionrealm.auctioningOptions.whitelist on retail
+-- [111] updated global.craftingUIContext.{professionScrollingTable,professionDividedContainer}
 
 local SETTINGS_INFO = {
-	version = 105,
+	version = 111,
 	minVersion = 10,
 	global = {
 		debug = {
@@ -233,8 +252,9 @@ local SETTINGS_INFO = {
 			matsScrollingTable = { type = "table", default = { colWidth = { name = 242, price = 100, professions = 310, num = 100 }, colHidden = {} }, lastModifiedVersion = 55 },
 			gatheringDividedContainer = { type = "table", default = { leftWidth = 284 }, lastModifiedVersion = 55 },
 			gatheringScrollingTable = { type = "table", default = { colWidth = { name = 206, sources = 160, have = 50, need = 50 }, colHidden = {} }, lastModifiedVersion = 55 },
-			professionScrollingTable = { type = "table", default = { colWidth = { name = not TSM.IsWowClassic() and 240 or 288, qty = 54, rank = not TSM.IsWowClassic() and 40 or nil, craftingCost = 100, itemValue = 100, profit = 100, profitPct = 50, saleRate = 30 }, colHidden = { craftingCost = true, itemValue = true, profitPct = true }, collapsed = {} }, lastModifiedVersion = 103 },
-			professionDividedContainer = { type = "table", default = { leftWidth = 520 }, lastModifiedVersion = 55 },
+			professionScrollingTable = { type = "table", default = { colWidth = { name = 322, qty = 54, craftingCost = 100, itemValue = 100, profit = 100, profitPct = 50, saleRate = 30 }, colHidden = { craftingCost = true, itemValue = true, profitPct = true }, collapsed = {} }, lastModifiedVersion = 111 },
+			professionDividedContainer = { type = "table", default = { leftWidth = 556 }, lastModifiedVersion = 111 },
+			professionDividedContainerBottom = { type = "table", default = { leftWidth = 348 }, lastModifiedVersion = 109 },
 		},
 		destroyingUIContext = {
 			frame = { type = "table", default = { width = 296, height = 442, centerX = 0, centerY = 0, scale = 1 }, lastModifiedVersion = 55 },
@@ -335,15 +355,12 @@ local SETTINGS_INFO = {
 			enabled = { type = "boolean", default = true, lastModifiedVersion = 20 },
 			embeddedTooltip = { type = "boolean", default = true, lastModifiedVersion = 10 },
 			customPriceTooltips = { type = "table", default = {}, lastModifiedVersion = 10 },
-			moduleTooltips = { type = "table", default = {}, lastModifiedVersion = 10 },
+			moduleTooltips = { type = "table", default = {}, lastModifiedVersion = 108 },
 			vendorBuyTooltip = { type = "boolean", default = true, lastModifiedVersion = 10 },
 			vendorSellTooltip = { type = "boolean", default = true, lastModifiedVersion = 10 },
 			groupNameTooltip = { type = "boolean", default = true, lastModifiedVersion = 10 },
-			detailedDestroyTooltip = { type = "boolean", default = false, lastModifiedVersion = 10 },
-			millTooltip = { type = "boolean", default = true, lastModifiedVersion = 10 },
-			prospectTooltip = { type = "boolean", default = true, lastModifiedVersion = 10 },
-			deTooltip = { type = "boolean", default = true, lastModifiedVersion = 10 },
-			transformTooltip = { type = "boolean", default = true, lastModifiedVersion = 10 },
+			destroyTooltipFormat = { type = "string", default = "simple", lastModifiedVersion = 107 },
+			convertTooltipFormat = { type = "string", default = "simple", lastModifiedVersion = 107 },
 			operationTooltips = { type = "table", default = {}, lastModifiedVersion = 10 },
 			tooltipShowModifier = { type = "string", default = "none", lastModifiedVersion = 10 },
 			inventoryTooltipFormat = { type = "string", default = "full", lastModifiedVersion = 10 },
@@ -356,6 +373,7 @@ local SETTINGS_INFO = {
 			savedShoppingSearches = { type = "table", default = { filters = {}, name = {}, isFavorite = {} }, lastModifiedVersion = 96 },
 			vendoringIgnore = { type = "table", default = {}, lastModifiedVersion = 10 },
 			savedAuctioningSearches = { type = "table", default = { filters = {}, searchTypes = {}, name = {}, isFavorite = {} }, lastModifiedVersion = 96 },
+			ungroupedItemMode = { type = "string", default = "specific", lastModifiedVersion = 106 },
 		},
 	},
 	profile = {
@@ -392,7 +410,7 @@ local SETTINGS_INFO = {
 			ignoreGuilds = { type = "table", default = {}, lastModifiedVersion = 10 },
 		},
 		auctioningOptions = {
-			whitelist = { type = "table", default = {}, lastModifiedVersion = 10 },
+			whitelist = TSM.IsWowClassic() and { type = "table", default = {}, lastModifiedVersion = 10 } or nil,
 		},
 		gatheringContext = {
 			crafter = { type = "string", default = "", lastModifiedVersion = 32 },
@@ -690,6 +708,16 @@ Settings:OnSettingsLoad(function()
 			db:Set("char", upgradeObj:GetScopeKey(key), "internalData", "craftingCooldowns", value)
 		end
 	end
+	if prevVersion < 108 then
+		for _, key, value in upgradeObj:RemovedSettingIterator("global", nil, "tooltipOptions", "moduleTooltips") do
+			-- update AuctionDB.{marketValue,regionMarketValue} values
+			if value.AuctionDB then
+				value.AuctionDB.marketValue = value.AuctionDB.marketValue and "withTrend" or "none"
+				value.AuctionDB.regionMarketValue = value.AuctionDB.regionMarketValue and "noTrend" or "none"
+			end
+			db:Set("global", upgradeObj:GetScopeKey(key), "tooltipOptions", "moduleTooltips", value)
+		end
+	end
 	-- NOTE: When adding migrations, be careful of multiple migrations modifying the same key, as
 	-- the RemovedSettingIterator value could be stale.
 end)
@@ -706,6 +734,8 @@ function Settings.GetDB()
 	return private.db
 end
 
+---Creates a new settings view.
+---@return SettingsView
 function Settings.NewView()
 	assert(private.db)
 	return private.CreateView(private.db)
@@ -719,16 +749,16 @@ function Settings.Set(scope, scopeKey, namespace, key, value)
 	return private.db:Set(scope, scopeKey, namespace, key, value)
 end
 
-function Settings.GetCurrentSyncAccountKey()
-	return private.db:GetSyncAccountKey()
+function Settings.GetCurrentSyncAccountKey(factionrealm)
+	return private.db:GetSyncAccountKey(factionrealm)
 end
 
 function Settings.GetSyncScopeKeyByCharacter(character, factionrealm)
 	return private.db:GetSyncScopeKeyByCharacter(character, factionrealm)
 end
 
-function Settings.GetCharacterSyncAccountKey(character)
-	return private.context[private.db].db._syncOwner[private.db:GetSyncScopeKeyByCharacter(character)]
+function Settings.GetCharacterSyncAccountKey(character, factionrealm)
+	return private.context[private.db].db._syncOwner[private.db:GetSyncScopeKeyByCharacter(character, factionrealm)]
 end
 
 function Settings.ShowSyncSVCopyError()
@@ -754,6 +784,23 @@ function Settings.CharacterByAccountFactionrealmIterator(account, factionrealm)
 	return TempTable.Iterator(result)
 end
 
+function Settings.AccessibleCharacterIterator()
+	local result = TempTable.Acquire()
+	for realm in private.db:GetConnectedRealmIterator("realm") do
+		for _, faction in ipairs(ACCESSIBLE_FACTIONS) do
+			local factionrealm = strjoin(SCOPE_KEY_SEP, faction, realm)
+			for scopeKey in pairs(private.context[private.db].db._syncOwner) do
+				local character = strmatch(scopeKey, "^(.+)"..String.Escape(SCOPE_KEY_SEP..factionrealm))
+				if character then
+					tinsert(result, factionrealm)
+					tinsert(result, character)
+				end
+			end
+		end
+	end
+	return TempTable.Iterator(result, 2)
+end
+
 function Settings.CharacterByFactionrealmIterator(factionrealm)
 	factionrealm = factionrealm or SCOPE_KEYS.factionrealm
 	local result = TempTable.Acquire()
@@ -766,8 +813,8 @@ function Settings.CharacterByFactionrealmIterator(factionrealm)
 	return TempTable.Iterator(result)
 end
 
-function Settings.IsCurrentAccountOwner(character)
-	return Settings.GetCharacterSyncAccountKey(character) == Settings.GetCurrentSyncAccountKey()
+function Settings.IsCurrentAccountOwner(character, factionrealm)
+	return Settings.GetCharacterSyncAccountKey(character, factionrealm) == Settings.GetCurrentSyncAccountKey(factionrealm)
 end
 
 function Settings.ConnectedFactionrealmAltCharacterIterator()
@@ -1365,15 +1412,11 @@ private.SettingsDBMethods = {
 		TempTable.Release(scopeKeysToRemove)
 	end,
 
-	RemoveSyncCharacter = function(self, character)
+	RemoveSyncCharacter = function(self, character, factionrealm)
 		local settingsDB = private.context[self].db
-		local scopeKey = self:GetSyncScopeKeyByCharacter(character)
+		local scopeKey = self:GetSyncScopeKeyByCharacter(character, factionrealm)
 		self:DeleteScope("sync", scopeKey)
 		settingsDB._syncOwner[scopeKey] = nil
-	end,
-
-	GetSyncOwnerAccountKey = function(self, character)
-		return private.context[self].db._syncOwner[self:GetSyncScopeKeyByCharacter(character)]
 	end,
 
 	FactionrealmCharacterIterator = function(self, factionrealm)
@@ -1449,40 +1492,132 @@ local NAMESPACE_MT = {
 
 
 -- ============================================================================
--- Setting View Class (see Settings.CreateView(...))
+-- Setting View Class (see Settings.NewView(...))
 -- ============================================================================
 
-local VIEW_METHODS = {
-	AddKey = function(self, scopeType, namespace, key)
-		local viewInfo = private.views[self]
-		assert(viewInfo and not viewInfo.keyProxies[key])
-		viewInfo.scopeNamespace[key] = scopeType..KEY_SEP..namespace
-		viewInfo.keyProxies[key] = private.context[viewInfo.settingsDB].namespaceProxies[viewInfo.scopeNamespace[key]]
-		return self
-	end,
-	RegisterCallback = function(self, key, callback)
-		local viewInfo = private.views[self]
-		assert(callback and not viewInfo.callbacks[key])
-		viewInfo.callbacks[key] = callback
-		return self
-	end,
-	GetDefaultReadOnly = function(self, key)
-		local viewInfo = private.views[self]
-		local scope, namespace = strsplit(KEY_SEP, viewInfo.scopeNamespace[key])
-		assert(scope and namespace)
-		return viewInfo.settingsDB:GetDefaultReadOnly(scope, namespace, key)
-	end,
-}
+local VIEW_METHODS = {} ---@class SettingsView
+
+---Adds a key to the view.
+---@param scopeType ScopeType The scope type
+---@param namespace string The namespace
+---@param key string The setting key
+---@return SettingsView
+function VIEW_METHODS:AddKey(scopeType, namespace, key)
+	assert(scopeType and namespace and key)
+	local viewInfo = private.views[self]
+	assert(viewInfo and not viewInfo.scopeLookup[key])
+	viewInfo.scopeLookup[key] = scopeType
+	viewInfo.namespaceLookup[key] = namespace
+	return self
+end
+
+---Registers a callback for when a key changes.
+---@param key string The setting key
+---@param callback fun() The callback function
+---@return SettingsView
+function VIEW_METHODS:RegisterCallback(key, callback)
+	local viewInfo = private.views[self]
+	assert(callback and not viewInfo.callbacks[key] and viewInfo.scopeLookup[key])
+	viewInfo.callbacks[key] = callback
+	return self
+end
+
+---Gets a publisher for when a key changes.
+---@param key string The setting key
+---@return ReactivePublisher
+function VIEW_METHODS:PublisherForKey(key)
+	local viewInfo = private.views[self]
+	assert(viewInfo.scopeLookup[key])
+	if not viewInfo.stream then
+		viewInfo.stream = Reactive.CreateStream()
+		viewInfo.stream:SetScript("OnPublisherCommit", private.StreamOnPublisherCommit)
+	end
+	return viewInfo.stream:Publisher()
+		:IgnoreDuplicatesWithKeys(key)
+		:MapWithKey(key)
+		:IgnoreDuplicates()
+end
+
+---Gets the read-only default for a key.
+---@param key string The setting key
+---@return unknown
+function VIEW_METHODS:GetDefaultReadOnly(key)
+	local viewInfo = private.views[self]
+	return viewInfo.settingsDB:GetDefaultReadOnly(viewInfo.scopeLookup[key], viewInfo.namespaceLookup[key], key)
+end
+
+---Returns an iterator over all accessible values for a key.
+---@param key string The setting key
+---@return fun():number, ...unknown
+function VIEW_METHODS:AccessibleValueIterator(key)
+	local viewInfo = private.views[self]
+	local scopeType = viewInfo.scopeLookup[key]
+	local result = TempTable.Acquire()
+	for realm in viewInfo.settingsDB:GetConnectedRealmIterator("realm") do
+		for _, faction in ipairs(ACCESSIBLE_FACTIONS) do
+			local factionrealm = strjoin(SCOPE_KEY_SEP, faction, realm)
+			if scopeType == "sync" then
+				for scopeKey in pairs(private.context[viewInfo.settingsDB].db._syncOwner) do
+					local character = strmatch(scopeKey, "^(.+)"..String.Escape(SCOPE_KEY_SEP..factionrealm))
+					if character then
+						local value = viewInfo.settingsDB:Get(viewInfo.scopeLookup[key], scopeKey, viewInfo.namespaceLookup[key], key)
+						if value ~= nil then
+							tinsert(result, value)
+							tinsert(result, character)
+							tinsert(result, factionrealm)
+							tinsert(result, scopeKey)
+						end
+					end
+				end
+			elseif scopeType == "factionrealm" then
+				local value = viewInfo.settingsDB:Get(viewInfo.scopeLookup[key], factionrealm, viewInfo.namespaceLookup[key], key)
+				if value ~= nil then
+					tinsert(result, value)
+					tinsert(result, factionrealm)
+				end
+			else
+				error("Invalid scopeType: "..tostring(scopeType))
+			end
+		end
+	end
+	if scopeType == "sync" then
+		return TempTable.Iterator(result, 4)
+	elseif scopeType == "factionrealm" then
+		return TempTable.Iterator(result, 2)
+	else
+		error("Invalid scopeType: "..tostring(scopeType))
+	end
+end
+
+---Get the setting value for a given scope key.
+---@param key string The setting key
+---@param ... string The character followed by the factionrealm for sync scope keys or just the single scope key otherwise
+---@return unknown
+function VIEW_METHODS:GetForScopeKey(key, ...)
+	local viewInfo = private.views[self]
+	local scopeType = viewInfo.scopeLookup[key]
+	local scopeKey = nil
+	if scopeType == "sync" then
+		assert(select("#", ...) == 2)
+		scopeKey = viewInfo.settingsDB:GetSyncScopeKeyByCharacter(...)
+	else
+		assert(select("#", ...) == 1)
+		scopeKey = ...
+	end
+	return viewInfo.settingsDB:Get(viewInfo.scopeLookup[key], scopeKey, viewInfo.namespaceLookup[key], key)
+end
 
 local VIEW_MT = {
 	__index = function(self, key)
 		if VIEW_METHODS[key] then
 			return VIEW_METHODS[key]
 		end
-		return private.views[self].keyProxies[key][key]
+		local viewInfo = private.views[self]
+		return viewInfo.settingsDB:Get(viewInfo.scopeLookup[key], nil, viewInfo.namespaceLookup[key], key)
 	end,
 	__newindex = function(self, key, value)
-		private.views[self].keyProxies[key][key] = value
+		local viewInfo = private.views[self]
+		viewInfo.settingsDB:Set(viewInfo.scopeLookup[key], nil, viewInfo.namespaceLookup[key], key, value)
 	end,
 	__metatable = false,
 }
@@ -1528,8 +1663,8 @@ function private.CreateView(settingsDB)
 	local view = setmetatable({}, VIEW_MT)
 	private.views[view] = {
 		settingsDB = settingsDB,
-		keyProxies = {},
-		scopeNamespace = {},
+		scopeLookup = {},
+		namespaceLookup = {},
 		callbacks = {},
 	}
 	return view
@@ -1544,9 +1679,14 @@ function private.SetDBKeyValue(db, key, value)
 		return
 	end
 	scopeType = private.ScopeReverseLookup(scopeType)
-	for _, info in pairs(private.views) do
-		if info.callbacks[settingKey] and info.scopeNamespace[settingKey] == scopeType..KEY_SEP..namespace then
-			info.callbacks[settingKey]()
+	for view, viewInfo in pairs(private.views) do
+		if viewInfo.scopeLookup[settingKey] == scopeType and viewInfo.namespaceLookup[settingKey] == namespace then
+			if viewInfo.callbacks[settingKey] then
+				viewInfo.callbacks[settingKey]()
+			end
+			if viewInfo.stream then
+				viewInfo.stream:Send(view)
+			end
 		end
 	end
 end
@@ -1668,4 +1808,17 @@ function private.FactionrealmByRealmIteratorHelper(realm, prevValue)
 	elseif strmatch(prevValue, "^Alliance") then
 		return strjoin(SCOPE_KEY_SEP, "Neutral", realm)
 	end
+end
+
+function private.StreamOnPublisherCommit(stream)
+	-- Find the view which this stream belongs to
+	local streamView = nil
+	for view, viewInfo in pairs(private.views) do
+		if viewInfo.stream == stream then
+			streamView = view
+			break
+		end
+	end
+	assert(streamView)
+	stream:Send(streamView)
 end

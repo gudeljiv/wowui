@@ -4,7 +4,7 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
+local TSM = select(2, ...) ---@type TSM
 local ProfessionScanner = TSM.Crafting:NewPackage("ProfessionScanner")
 local ProfessionInfo = TSM.Include("Data.ProfessionInfo")
 local CraftString = TSM.Include("Util.CraftString")
@@ -26,6 +26,7 @@ local private = {
 	categorySkillLevelCache = { lastUpdate = 0 },
 	recipeInfoCache = {},
 	prevScannedHash = nil,
+	scanTimer = nil,
 }
 -- don't want to scan a bunch of times when the profession first loads so add a 10 frame debounce to update events
 local SCAN_DEBOUNCE_FRAMES = 10
@@ -67,6 +68,7 @@ function ProfessionScanner.OnInitialize()
 			:AddNumberField("stepExp")
 			:Commit()
 	end
+	private.scanTimer = Delay.CreateTimer("PROFESSION_SCAN", private.ScanProfession)
 	TSM.Crafting.ProfessionState.RegisterUpdateCallback(private.ProfessionStateUpdate)
 	if TSM.IsWowClassic() then
 		Event.Register("CRAFT_UPDATE", private.OnTradeSkillUpdateEvent)
@@ -173,12 +175,12 @@ function private.ProfessionStateUpdate()
 		private.prevScannedHash = nil
 		private.OnTradeSkillUpdateEvent()
 	else
-		Delay.Cancel("PROFESSION_SCAN_DELAY")
+		private.scanTimer:Cancel()
 	end
 end
 
 function private.OnTradeSkillUpdateEvent()
-	Delay.Cancel("PROFESSION_SCAN_DELAY")
+	private.scanTimer:Cancel()
 	private.QueueProfessionScan()
 end
 
@@ -198,7 +200,7 @@ end
 -- ============================================================================
 
 function private.QueueProfessionScan()
-	Delay.AfterFrame("PROFESSION_SCAN_DELAY", SCAN_DEBOUNCE_FRAMES, private.ScanProfession)
+	private.scanTimer:RunForFrames(SCAN_DEBOUNCE_FRAMES)
 end
 
 function private.ScanProfession()

@@ -7,7 +7,7 @@
 --- Item Info Functions
 -- @module ItemInfo
 
-local _, TSM = ...
+local TSM = select(2, ...) ---@type TSM
 local ItemInfo = TSM.Init("Service.ItemInfo")
 local L = TSM.Include("Locale").GetTable()
 local ItemClass = TSM.Include("Data.ItemClass")
@@ -22,6 +22,7 @@ local Math = TSM.Include("Util.Math")
 local String = TSM.Include("Util.String")
 local Log = TSM.Include("Util.Log")
 local Table = TSM.Include("Util.Table")
+local Reactive = TSM.Include("Util.Reactive")
 local DefaultUI = TSM.Include("Service.DefaultUI")
 local Settings = TSM.Include("Service.Settings")
 local private = {
@@ -33,9 +34,12 @@ local private = {
 	availableItems = {},
 	rebuildStage = nil,
 	settings = nil,
-	infoChangeCallbacks = {},
 	hasChanged = false,
 	lastDebugLog = 0,
+	stream = nil,
+	processInfoTimer = nil,
+	processAvailableTimer = nil,
+	merchantTimer = nil,
 }
 local ITEM_MAX_ID = 999999
 local SEP_CHAR = "\002"
@@ -44,7 +48,8 @@ local MAX_REQUESTED_ITEM_INFO = 50
 local MAX_REQUESTS_PER_ITEM = 5
 local UNKNOWN_ITEM_NAME = L["Unknown Item"]
 local PLACEHOLDER_ITEM_NAME = L["Example Item"]
-local DB_VERSION = 8
+local UNKNOWN_ITEM_TEXTURE = 136254
+local DB_VERSION = 9
 local ENCODING_NUM_BITS = 6
 local ENCODING_NUM_VALUES = 2 ^ ENCODING_NUM_BITS
 local ENCODING_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
@@ -148,6 +153,10 @@ local REBUILD_STAGE = {
 
 ItemInfo:OnModuleLoad(function()
 	private.rebuildStage = REBUILD_STAGE.IDLE
+	private.stream = Reactive.CreateStream()
+	private.processAvailableTimer = Delay.CreateTimer("ITEM_INFO_PROCESS_AVAILABLE", private.ProcessAvailableItems)
+	private.processInfoTimer = Delay.CreateTimer("ITEM_INFO_PROCESS_INFO", private.ProcessItemInfo)
+	private.merchantTimer = Delay.CreateTimer("ITEM_INFO_SCAN_MERCHANT", private.ScanMerchant)
 end)
 
 ItemInfo:OnSettingsLoad(function()
@@ -159,7 +168,7 @@ ItemInfo:OnSettingsLoad(function()
 			return
 		end
 		private.availableItems[itemId] = true
-		Delay.AfterFrame("ITEM_INFO_DELAY", 0, private.ProcessAvailableItems)
+		private.processAvailableTimer:RunForTime(0)
 	end)
 
 	-- load the item info database
@@ -285,13 +294,15 @@ ItemInfo:OnSettingsLoad(function()
 		end
 	end
 	private.db:BulkInsertEnd()
-	private.DoInfoChangedCallbacks()
+	private.stream:Send(nil)
 
 	-- process pending item info every 0.05 seconds
-	Delay.AfterTime("PROCESS_ITEM_INFO", 0, private.ProcessItemInfo, ITEM_INFO_INTERVAL)
+	private.processInfoTimer:RunForTime(0)
 	-- scan the merchant when the goods are shown
 	DefaultUI.RegisterMerchantVisibleCallback(private.ScanMerchant, true)
-	Event.Register("MERCHANT_UPDATE", private.UpdateMerchant)
+	Event.Register("MERCHANT_UPDATE", function()
+		private.merchantTimer:RunForTime(0.1)
+	end)
 end)
 
 ItemInfo:OnModuleUnload(function()
@@ -448,10 +459,10 @@ function ItemInfo.ClearDB()
 	ReloadUI()
 end
 
---- Register a callback which is called when item info changes.
--- @tparam function callback The function to be called
-function ItemInfo.RegisterInfoChangeCallback(callback)
-	tinsert(private.infoChangeCallbacks, callback)
+--- Gets a publisher for item info changes.
+-- @treturn ReactivePublisher The publisher
+function ItemInfo.GetPublisher()
+	return private.stream:Publisher()
 end
 
 --- Sets whether or not query updates are paused on the item info DB
@@ -518,10 +529,6 @@ function ItemInfo.ItemNameToItemString(name)
 	return result
 end
 
-function ItemInfo.GetDBForJoin()
-	return private.db
-end
-
 --- Get the name.
 -- @tparam string item The item
 -- @treturn ?string The name
@@ -566,23 +573,17 @@ function ItemInfo.GetLink(item)
 	end
 	local link = nil
 	local itemStringType, speciesId, level, quality, health, power, speed, petId = strsplit(":", itemString)
+	local name = ItemInfo.GetName(item) or UNKNOWN_ITEM_NAME
+	local wowItemString = nil
 	if itemStringType == "p" then
-		local name = ItemInfo.GetName(item) or UNKNOWN_ITEM_NAME
-		local fullItemString = strjoin(":", speciesId, level or "", quality or "", health or "", power or "", speed or "", petId or "")
 		quality = tonumber(quality) or 0
-		local qualityColor = ITEM_QUALITY_COLORS[quality] and ITEM_QUALITY_COLORS[quality].hex or "|cffff0000"
-		link = qualityColor.."|Hbattlepet:"..fullItemString.."|h["..name.."]|h|r"
-	elseif ItemString.ParseLevel(itemString) then
-		local name = ItemInfo.GetName(item) or UNKNOWN_ITEM_NAME
-		quality = ItemInfo.GetQuality(item)
-		local qualityColor = ITEM_QUALITY_COLORS[quality] and ITEM_QUALITY_COLORS[quality].hex or "|cffff0000"
-		return qualityColor.."|H"..ItemString.ToWow(itemString).."|h["..name.."]|h|r"
+		wowItemString = strjoin(":", "battlepet", speciesId, level or "", quality or "", health or "", power or "", speed or "", petId or "")
 	else
-		local name = ItemInfo.GetName(item) or UNKNOWN_ITEM_NAME
 		quality = ItemInfo.GetQuality(item)
-		local qualityColor = ITEM_QUALITY_COLORS[quality] and ITEM_QUALITY_COLORS[quality].hex or "|cffff0000"
-		link = qualityColor.."|H"..ItemString.ToWow(itemString).."|h["..name.."]|h|r"
+		wowItemString = ItemString.ToWow(itemString)
 	end
+	local qualityColor = ITEM_QUALITY_COLORS[quality] and ITEM_QUALITY_COLORS[quality].hex or "|cffff0000"
+	link = qualityColor.."|H"..wowItemString.."|h["..name.."]|h|r"
 	return link
 end
 
@@ -796,6 +797,8 @@ function ItemInfo.GetTexture(item)
 	local itemString = ItemString.Get(item)
 	if not itemString then
 		return nil
+	elseif itemString == ItemString.GetUnknown() then
+		return UNKNOWN_ITEM_TEXTURE
 	elseif ItemString.ParseLevel(itemString) then
 		itemString = ItemString.GetBaseFast(itemString)
 	end
@@ -986,7 +989,7 @@ function ItemInfo.FetchInfo(item)
 	end
 	private.priorityPendingItems[itemString] = true
 
-	Delay.AfterTime("PROCESS_ITEM_INFO", 0, private.ProcessItemInfo, ITEM_INFO_INTERVAL)
+	private.processInfoTimer:RunForTime(0)
 end
 
 --- Generalize an item link.
@@ -997,7 +1000,7 @@ function ItemInfo.GeneralizeLink(itemLink)
 	if not itemString then return end
 	if ItemString.IsItem(itemString) and not strmatch(itemString, "i:[0-9]+:[0-9%-]*:[0-9]*") then
 		-- swap out the itemString part of the link
-		local leader, quality, _, name, trailer, trailer2, extra = ("\124"):split(itemLink)
+		local leader, quality, _, name, trailer, trailer2, extra = strsplit("\124", itemLink)
 		if trailer2 and not extra then
 			return strjoin("\124", leader, quality, "H"..ItemString.ToWow(itemString), name, trailer, trailer2)
 		end
@@ -1005,13 +1008,16 @@ function ItemInfo.GeneralizeLink(itemLink)
 	return ItemInfo.GetLink(itemString)
 end
 
---- Match an item filter to the item info database.
--- @tparam ItemFilter itemFilter The itemFilter object to match
--- @tparam table result The table to populate with results
-function ItemInfo.MatchItemFilter(itemFilter, result)
-	local query = private.db:NewQuery()
-		:Select("itemString")
-		:OrderBy("name", true)
+---Creates a query which matches the specified item filter.
+---@param itemFilter ItemFilter The item filter
+---@param query? DatabaseQuery Optionally, an existing query to reset and reuse
+---@return DatabaseQuery
+function ItemInfo.MatchItemFilterQuery(itemFilter, query)
+	if query then
+		query:Reset()
+	else
+		query = private.db:NewQuery()
+	end
 
 	local str = itemFilter:GetStr()
 	if str then
@@ -1058,8 +1064,7 @@ function ItemInfo.MatchItemFilter(itemFilter, result)
 		query:Equal("invSlotId", invSlotId)
 	end
 
-	query:AsTable(result)
-	query:Release()
+	return query
 end
 
 
@@ -1129,6 +1134,7 @@ function private.ProcessPendingItemInfo(itemString)
 end
 
 function private.ProcessItemInfo()
+	private.processInfoTimer:RunForTime(ITEM_INFO_INTERVAL)
 	if InCombatLockdown() then
 		return
 	end
@@ -1212,14 +1218,15 @@ function private.ProcessItemInfo()
 	if private.rebuildStage == REBUILD_STAGE.IDLE and numRequested >= maxRequests / 2 and Table.Count(private.pendingItems) >= REBUILD_MSG_THRESHOLD then
 		private.rebuildStage = REBUILD_STAGE.TRIGGERED
 		-- delay this message to make it more likely to be seen and make sure we're actually rebuilding
-		Delay.AfterTime(3, private.ShowRebuildMessage)
+		local timer = Delay.CreateTimer("ITEM_INFO_REBUILD_MESSAGE", private.ShowRebuildMessage)
+		timer:RunForTime(1)
 	end
 	if not next(private.pendingItems) then
 		if private.rebuildStage == REBUILD_STAGE.NOTIFIED then
 			Log.PrintUser(L["Done rebuilding item cache."])
 			private.rebuildStage = REBUILD_STAGE.IDLE
 		end
-		Delay.Cancel("PROCESS_ITEM_INFO")
+		private.processInfoTimer:Cancel()
 	end
 
 	private.db:SetQueryUpdatesPaused(false)
@@ -1250,15 +1257,11 @@ function private.ScanMerchant()
 				end
 				if newValue ~= currentValue then
 					private.settings.vendorItems[itemString] = newValue
-					private.DoInfoChangedCallbacks(itemString)
+					private.stream:Send(itemString)
 				end
 			end
 		end
 	end
-end
-
-function private.UpdateMerchant()
-	Delay.AfterTime(0.1, private.ScanMerchant)
 end
 
 function private.CheckFieldValue(key, value)
@@ -1317,7 +1320,7 @@ function private.SetSingleField(itemString, key, value)
 	private.CreateDBRowIfNotExists(itemString)
 	private.db:SetUniqueRowField("itemString", itemString, key, value)
 	private.hasChanged = true
-	private.DoInfoChangedCallbacks(itemString)
+	private.stream:Send(itemString)
 end
 
 function private.SetItemInfoInstantFields(itemString, texture, classId, subClassId, invSlotId)
@@ -1331,7 +1334,7 @@ function private.SetItemInfoInstantFields(itemString, texture, classId, subClass
 	private.db:SetUniqueRowField("itemString", itemString, "subClassId", subClassId)
 	private.db:SetUniqueRowField("itemString", itemString, "invSlotId", invSlotId)
 	private.hasChanged = true
-	private.DoInfoChangedCallbacks(itemString)
+	private.stream:Send(itemString)
 end
 
 function private.StoreGetItemInfoInstant(itemString)
@@ -1421,7 +1424,7 @@ function private.SetGetItemInfoFields(itemString, name, minLevel, itemLevel, max
 	private.db:SetUniqueRowField("itemString", itemString, "isCraftingReagent", isCraftingReagent)
 	private.db:SetUniqueRowField("itemString", itemString, "expansionId", expansionId)
 	private.hasChanged = true
-	private.DoInfoChangedCallbacks(itemString)
+	private.stream:Send(itemString)
 end
 
 function private.StoreGetItemInfo(itemString)
@@ -1533,12 +1536,6 @@ function private.ProcessAvailableItems()
 	TempTable.Release(processedItems)
 
 	private.db:SetQueryUpdatesPaused(false)
-end
-
-function private.DoInfoChangedCallbacks(itemString)
-	for _, callback in ipairs(private.infoChangeCallbacks) do
-		callback(itemString)
-	end
 end
 
 function private.NameSortHelper(a, b)

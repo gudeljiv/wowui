@@ -1,7 +1,5 @@
-## v4.11.71 Changes
+## v4.12.1 Changes
 
-* [Retail] Fixed error when running Vendor/Disenchant search
-* [Retail] Fixed error when loading very old TSM settings
-* [Retail] Fixed issue with WoW showing error text when opening the AH
+* Fixed error when selling via Vendoring UI
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

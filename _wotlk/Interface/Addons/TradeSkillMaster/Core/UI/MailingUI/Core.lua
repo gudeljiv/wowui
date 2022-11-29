@@ -4,7 +4,7 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
+local TSM = select(2, ...) ---@type TSM
 local MailingUI = TSM.UI:NewPackage("MailingUI")
 local L = TSM.Include("Locale").GetTable()
 local Delay = TSM.Include("Util.Delay")
@@ -20,6 +20,7 @@ local private = {
 	fsm = nil,
 	defaultUISwitchBtn = nil,
 	isVisible = false,
+	showTimer = nil,
 }
 local MIN_FRAME_SIZE = { width = 575, height = 400 }
 
@@ -113,12 +114,10 @@ end
 -- ============================================================================
 
 function private.FSMCreate()
-	local function MailShowDelayed()
-		private.fsm:ProcessEvent("EV_MAIL_SHOW")
-	end
+	private.showTimer = Delay.CreateTimer("MAILING_SHOW", function() private.fsm:ProcessEvent("EV_MAIL_SHOW") end)
 	DefaultUI.RegisterMailVisibleCallback(function(visible)
 		if visible then
-			Delay.AfterFrame("MAIL_SHOW_DELAYED", 0, MailShowDelayed)
+			private.showTimer:RunForFrames(0)
 		else
 			private.fsm:ProcessEvent("EV_MAIL_CLOSED")
 		end

@@ -51,7 +51,7 @@ function private.PopulateCostLine(tooltip, itemString)
 	end
 
 	local costText = tooltip:FormatMoney(cost)
-	local profitText = tooltip:FormatMoney(profit, profit and Theme.GetFeedbackColor(profit >= 0 and "GREEN" or "RED") or nil)
+	local profitText = tooltip:FormatMoney(profit, profit and Theme.GetColor(profit >= 0 and "FEEDBACK_GREEN" or "FEEDBACK_RED") or nil)
 	tooltip:AddLine(L["Crafting Cost"], format(L["%s (%s profit)"], costText, profitText))
 end
 

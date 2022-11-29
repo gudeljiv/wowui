@@ -475,7 +475,7 @@ function AuctionQuery._SendWowQuery(self)
 	local maxLevel = self._maxLevel ~= math.huge and self._maxLevel or nil
 	if TSM.IsWowClassic() then
 		if self._specifiedPage == "LAST" then
-			self._page = max(ceil(select(2, GetNumAuctionItems("list")) / NUM_AUCTION_ITEMS_PER_PAGE) - 1, 0)
+			self._page = max(AuctionHouseWrapper.GetNumPages() - 1, 0)
 		elseif self._specifiedPage == "FIRST" then
 			self._page = 0
 		elseif self._specifiedPage then
@@ -587,12 +587,7 @@ end
 
 function AuctionQuery._BrowseIsDone(self, isRetry)
 	if TSM.IsWowClassic() then
-		local numAuctions, totalAuctions = GetNumAuctionItems("list")
-		if totalAuctions <= NUM_AUCTION_ITEMS_PER_PAGE and numAuctions ~= totalAuctions then
-			-- there are cases where we get (0, 1) from the API - no idea why so just assume we're not done
-			return false
-		end
-		local numPages = ceil(totalAuctions / NUM_AUCTION_ITEMS_PER_PAGE)
+		local numPages = AuctionHouseWrapper.GetNumPages()
 		if self._specifiedPage then
 			if isRetry then
 				return false
