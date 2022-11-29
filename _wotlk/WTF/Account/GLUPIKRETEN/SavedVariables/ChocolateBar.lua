@@ -129,7 +129,7 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "gmL",
 				},
-				["CharacterNotes"] = {
+				["KiwiPlates"] = {
 					["align"] = "right",
 					["isNew"] = false,
 					["showText"] = false,
@@ -186,9 +186,10 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "WA",
 				},
-				["AdiBags"] = {
-					["enabled"] = false,
+				["CharacterNotes"] = {
+					["align"] = "right",
 					["isNew"] = false,
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
 				["Broker Currency"] = {
@@ -528,10 +529,9 @@ ChocolateBarDB = {
 					["isNew"] = false,
 					["barName"] = "ChocolateBar2",
 				},
-				["KiwiPlates"] = {
-					["align"] = "right",
+				["AdiBags"] = {
+					["enabled"] = false,
 					["isNew"] = false,
-					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
 				["gmMoney"] = {
@@ -646,17 +646,17 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 968085,
-		["timeAtThisLevel"] = 1162,
-		["timeStamp"] = 1591417.897,
+		["total"] = 969694,
+		["timeAtThisLevel"] = 2771,
+		["timeStamp"] = 1677100.482,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 225243,
-		["timeStamp"] = 1650166.399,
-		["timeAtThisLevel"] = 23436,
+		["total"] = 225590,
+		["timeStamp"] = 1678798.619,
+		["timeAtThisLevel"] = 23783,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
@@ -700,9 +700,9 @@ CB_PlayedTime = {
 		["total"] = 1786,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 257818,
-		["timeAtThisLevel"] = 252072,
-		["timeStamp"] = 1642079.738,
+		["total"] = 258099,
+		["timeAtThisLevel"] = 252353,
+		["timeStamp"] = 1679471.923,
 	},
 	["Tudum-Ashbringer"] = {
 		["total"] = 4569,
@@ -754,9 +754,9 @@ CB_PlayedTime = {
 		["total"] = 390,
 	},
 	["Miqa-Golemagg"] = {
-		["total"] = 5591,
-		["timeStamp"] = 1642370.378,
-		["timeAtThisLevel"] = 543,
+		["total"] = 5617,
+		["timeStamp"] = 1679499.821,
+		["timeAtThisLevel"] = 569,
 	},
 	["Nitwit-"] = {
 		["total"] = 680,

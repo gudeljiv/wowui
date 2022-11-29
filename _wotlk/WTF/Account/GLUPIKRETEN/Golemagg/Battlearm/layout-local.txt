@@ -76,6 +76,13 @@ X: -176
 Y: -161
 W: 79
 H: 40
+Frame: TellMeWhen_ConfigWarning
+FrameLevel: 1
+Anchor: TOP
+X: 1
+Y: -247
+W: 330
+H: 113
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM
@@ -83,10 +90,3 @@ X: -232
 Y: 134
 W: 30
 H: 30
-Frame: BugSackFrame
-FrameLevel: 1
-Anchor: CENTER
-X: -122
-Y: -3
-W: 800
-H: 310

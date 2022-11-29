@@ -125,6 +125,7 @@ skills["death knight"] = [
     {"name": "icebound fortitude", "type": "GetSpellTexture", "id": 48792, "key": "t"},
     {"name": "horn of winter", "type": "GetSpellTexture", "id": 57330, "key": "f4"},
     {"name": "pestilence", "type": "GetSpellTexture", "id": 50842, "key": "3"},
+    {"name": "death and decay", "type": "GetSpellTexture", "id": 49936, "key": "r", "modifier": "alt"},
 ]
 
 skills["priest"] = [

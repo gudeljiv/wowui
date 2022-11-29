@@ -1,6 +1,6 @@
 
 AceBISGears = {
-	["P1"] = true,
-	["ProtectionWarrior"] = true,
 	["ProtectionPaladin"] = true,
+	["ProtectionWarrior"] = true,
+	["P1"] = true,
 }

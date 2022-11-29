@@ -146,9 +146,10 @@ ChocolateBarDB = {
 					["showIcon"] = false,
 					["customLabel"] = "gmL",
 				},
-				["AdiBags"] = {
-					["enabled"] = false,
+				["CharacterNotes"] = {
+					["align"] = "right",
 					["isNew"] = false,
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
 				["DBM"] = {
@@ -208,10 +209,9 @@ ChocolateBarDB = {
 					["showIcon"] = false,
 					["customLabel"] = "WA",
 				},
-				["KiwiPlates"] = {
-					["align"] = "right",
+				["AdiBags"] = {
+					["enabled"] = false,
 					["isNew"] = false,
-					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
 				["Broker Currency"] = {
@@ -548,7 +548,7 @@ ChocolateBarDB = {
 					["isNew"] = false,
 					["barName"] = "ChocolateBar2",
 				},
-				["CharacterNotes"] = {
+				["KiwiPlates"] = {
 					["align"] = "right",
 					["isNew"] = false,
 					["showText"] = false,
@@ -646,9 +646,9 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 968085,
-		["timeStamp"] = 1591417.897,
-		["timeAtThisLevel"] = 1162,
+		["total"] = 969694,
+		["timeStamp"] = 1677100.482,
+		["timeAtThisLevel"] = 2771,
 	},
 	["Mxyzptlk-Golemagg"] = {
 		["total"] = 29335,
@@ -692,17 +692,17 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1395422,
-		["timeStamp"] = 1646708.328,
-		["timeAtThisLevel"] = 302875,
+		["total"] = 1398867,
+		["timeStamp"] = 1650525.98,
+		["timeAtThisLevel"] = 306320,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 257818,
-		["timeStamp"] = 1642079.738,
-		["timeAtThisLevel"] = 252072,
+		["total"] = 258099,
+		["timeStamp"] = 1679471.923,
+		["timeAtThisLevel"] = 252353,
 	},
 	["Tudum-Ashbringer"] = {
 		["total"] = 4569,
@@ -792,9 +792,9 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 316,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 225243,
-		["timeAtThisLevel"] = 23436,
-		["timeStamp"] = 1650166.399,
+		["total"] = 225590,
+		["timeAtThisLevel"] = 23783,
+		["timeStamp"] = 1678798.619,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,
