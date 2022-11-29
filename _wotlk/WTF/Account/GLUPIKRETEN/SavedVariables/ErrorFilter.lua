@@ -11,14 +11,15 @@ ErrorFilterDB = {
 		["Tudum - Ashbringer"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Pitchwise - Ashbringer"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
 		["Provokator - Jin'do"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
 		["Wells - Jin'do"] = "Default",
 		["Tudum - Jin'do"] = "Default",
 		["Miqa - Golemagg"] = "Default",
+		["Handrmandr - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

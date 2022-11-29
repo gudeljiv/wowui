@@ -1,16 +1,16 @@
-tag 05b5915e9e52f6442cb9a656fbfe486e056060e8 Details.DF.Wrath.10302.147
+tag 95470c7db59056ec08167c848961d9079c21ea37 Details.DF.Wrath.10304.147
 Author:	Tercio Jose <terciob19@hotmail.com>
-Date:	Mon Nov 28 13:00:26 2022 -0300
+Date:	Mon Nov 28 15:24:44 2022 -0300
 
-commit 8f6cfe4d69065c33ff0610d7777faddfe1ffc4b7
+commit 4b3237f809684fd51fd5f5e3cef427c1fb34ba3d
 Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Mon Nov 28 13:00:11 2022 -0300
+Date:   Mon Nov 28 15:24:03 2022 -0300
 
-    Round of Fixes
+    pkgmeta for compare tab replacement
 
-commit 06faed2fb08588e8a238303c9effa1edd896e767
+commit 2c7559de05a22f1f9e5066915a2b4f595b9b6a65
 Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Sun Nov 27 21:52:56 2022 -0300
+Date:   Mon Nov 28 15:21:41 2022 -0300
 
-    empower fix
+    Merge Crushing Blow (warrior)
 

@@ -26,11 +26,11 @@ GMMONEY = {
 			["CLASS"] = "HUNTER",
 		},
 		["Mxyz"] = {
-			["GOLD"] = 10985987,
+			["GOLD"] = 10890287,
 			["CLASS"] = "PRIEST",
 		},
 		["Handrmandr"] = {
-			["GOLD"] = 0,
+			["GOLD"] = 4,
 			["CLASS"] = "WARRIOR",
 		},
 		["Battitude"] = {
@@ -50,7 +50,7 @@ GMMONEY = {
 			["CLASS"] = "PALADIN",
 		},
 		["Miqa"] = {
-			["GOLD"] = 5989997,
+			["GOLD"] = 6383869,
 			["CLASS"] = "PRIEST",
 		},
 		["Mxyzptlk"] = {
@@ -58,7 +58,7 @@ GMMONEY = {
 			["CLASS"] = "WARLOCK",
 		},
 		["Vermin"] = {
-			["GOLD"] = 98631733,
+			["GOLD"] = 101093525,
 			["CLASS"] = "WARRIOR",
 		},
 	},

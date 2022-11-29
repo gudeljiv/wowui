@@ -83,3 +83,10 @@ X: -232
 Y: 134
 W: 30
 H: 30
+Frame: BugSackFrame
+FrameLevel: 1
+Anchor: CENTER
+X: -122
+Y: -3
+W: 800
+H: 310

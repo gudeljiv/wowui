@@ -603,9 +603,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 529180,
-		["timeAtThisLevel"] = 1478,
-		["timeStamp"] = 1589964.702,
+		["total"] = 529916,
+		["timeAtThisLevel"] = 2214,
+		["timeStamp"] = 1642747.448,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -646,9 +646,9 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 965889,
-		["timeStamp"] = 1566942.287,
-		["timeAtThisLevel"] = 8647,
+		["total"] = 968085,
+		["timeStamp"] = 1591417.897,
+		["timeAtThisLevel"] = 1162,
 	},
 	["Mxyzptlk-Golemagg"] = {
 		["total"] = 29335,
@@ -692,17 +692,17 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1391082,
-		["timeStamp"] = 1590710.155,
-		["timeAtThisLevel"] = 298535,
+		["total"] = 1395422,
+		["timeStamp"] = 1646708.328,
+		["timeAtThisLevel"] = 302875,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 257701,
-		["timeStamp"] = 1558527.965,
-		["timeAtThisLevel"] = 251955,
+		["total"] = 257818,
+		["timeStamp"] = 1642079.738,
+		["timeAtThisLevel"] = 252072,
 	},
 	["Tudum-Ashbringer"] = {
 		["total"] = 4569,
@@ -721,7 +721,9 @@ CB_PlayedTime = {
 		["total"] = 140587,
 	},
 	["Handrmandr-Golemagg"] = {
-		["total"] = 1,
+		["total"] = 119,
+		["timeAtThisLevel"] = 119,
+		["timeStamp"] = 1642498.68,
 	},
 	["Poklopac-MirageRaceway"] = {
 		["total"] = 333,
@@ -746,9 +748,9 @@ CB_PlayedTime = {
 		["total"] = 3552,
 	},
 	["Miqa-Golemagg"] = {
-		["total"] = 5522,
-		["timeAtThisLevel"] = 474,
-		["timeStamp"] = 1591334.904,
+		["total"] = 5591,
+		["timeAtThisLevel"] = 543,
+		["timeStamp"] = 1642370.378,
 	},
 	["Pitchwise-"] = {
 		["total"] = 390,
@@ -790,9 +792,9 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 316,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 224919,
-		["timeAtThisLevel"] = 23112,
-		["timeStamp"] = 1585204.88,
+		["total"] = 225243,
+		["timeAtThisLevel"] = 23436,
+		["timeStamp"] = 1650166.399,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,

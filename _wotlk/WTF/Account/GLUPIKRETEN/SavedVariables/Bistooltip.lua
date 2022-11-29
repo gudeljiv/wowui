@@ -4,9 +4,10 @@ BisTooltipDB = {
 		["Mxzq - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
 		["Miqa - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Handrmandr - Golemagg"] = "Default",
 	},
 	["char"] = {
 		["Mxzq - Golemagg"] = {
@@ -75,13 +76,6 @@ BisTooltipDB = {
 		["Miqa - Golemagg"] = {
 			["version"] = 6.1,
 		},
-		["Battlearm - Golemagg"] = {
-			["version"] = 6.1,
-			["minimapPos"] = 31.14717728975205,
-		},
-		["Moolatz - Golemagg"] = {
-			["version"] = 6.1,
-		},
 		["Vermin - Golemagg"] = {
 			["class_index"] = 10,
 			["filter_class_names"] = false,
@@ -141,6 +135,16 @@ BisTooltipDB = {
 			},
 			["minimapPos"] = 34.52921906708929,
 			["phase_index"] = 2,
+		},
+		["Battlearm - Golemagg"] = {
+			["version"] = 6.1,
+			["minimapPos"] = 31.14717728975205,
+		},
+		["Moolatz - Golemagg"] = {
+			["version"] = 6.1,
+		},
+		["Handrmandr - Golemagg"] = {
+			["version"] = 6.1,
 		},
 	},
 }

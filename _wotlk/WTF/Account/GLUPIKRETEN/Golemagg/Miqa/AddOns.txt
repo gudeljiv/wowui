@@ -4,3 +4,4 @@ nHealth: disabled
 nTooltip: enabled
 nPower: disabled
 ItemRackOptions: enabled
+Leatrix_Plus: enabled

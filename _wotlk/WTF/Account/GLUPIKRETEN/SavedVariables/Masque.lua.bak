@@ -6,6 +6,7 @@ MasqueDB = {
 	},
 	["profileKeys"] = {
 		["Vermin - Golemagg"] = "Default",
+		["Handrmandr - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
 		["Miqa - Golemagg"] = "Default",
 		["Mxzq - Golemagg"] = "Default",

@@ -4494,11 +4494,11 @@ AuctionFasterDb = {
 					["weightedTotalBuy"] = 17414471,
 					["estimatedVolume"] = 4864.38,
 					["averageBid"] = 14311,
-					["totalItems"] = 251,
 					["lowestBid"] = 10799,
+					["totalItems"] = 251,
 					["scanTime"] = 1669659061,
-					["weightedAverageBid"] = 14379,
 					["highestBuy"] = 17979,
+					["weightedAverageBid"] = 14379,
 					["highestBid"] = 14383,
 				}, -- [2]
 			},
@@ -5647,11 +5647,11 @@ AuctionFasterDb = {
 					["weightedTotalBuy"] = 9122622,
 					["estimatedVolume"] = 1073.8,
 					["averageBid"] = 17469,
-					["totalItems"] = 130,
 					["lowestBid"] = 9000,
+					["totalItems"] = 130,
 					["scanTime"] = 1669659065,
-					["weightedAverageBid"] = 19777,
 					["highestBuy"] = 24786,
+					["weightedAverageBid"] = 19777,
 					["highestBid"] = 24786,
 				}, -- [8]
 			},
@@ -7682,8 +7682,28 @@ AuctionFasterDb = {
 					["weightedAverageBid"] = 208039,
 					["highestBid"] = 236135,
 				}, -- [9]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 10011072,
+					["totalQty"] = 54,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 54,
+					["weightedAverageBuy"] = 194204,
+					["totalBuy"] = 9787786,
+					["lowestBuy"] = 160000,
+					["totalBid"] = 9321744,
+					["weightedTotalBuy"] = 10487064,
+					["estimatedVolume"] = 206.28,
+					["averageBid"] = 186434,
+					["lowestBid"] = 151500,
+					["highestBuy"] = 213989,
+					["totalItems"] = 191,
+					["scanTime"] = 1669709982,
+					["weightedAverageBid"] = 185390,
+					["highestBid"] = 203290,
+				}, -- [10]
 			},
-			["lastScanTime"] = 1669460806,
+			["lastScanTime"] = 1669709982,
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
@@ -7692,10 +7712,10 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["alwaysUndercut"] = true,
 			},
-			["bid"] = 159833,
+			["bid"] = 151500,
 			["itemId"] = 7909,
 			["icon"] = 134088,
-			["buy"] = 259792,
+			["buy"] = 229999,
 		},
 		["15186Praetorian Leggings of Agility"] = {
 			["prices"] = {
@@ -14624,46 +14644,6 @@ AuctionFasterDb = {
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
-					["weightedTotalBid"] = 592588,
-					["totalQty"] = 947,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 947,
-					["weightedAverageBuy"] = 658,
-					["totalBuy"] = 32484,
-					["lowestBuy"] = 123,
-					["totalBid"] = 30811,
-					["weightedTotalBuy"] = 623926,
-					["estimatedVolume"] = 5416.84,
-					["averageBid"] = 616,
-					["lowestBid"] = 123,
-					["totalItems"] = 286,
-					["scanTime"] = 1667658900,
-					["highestBuy"] = 663,
-					["weightedAverageBid"] = 625,
-					["highestBid"] = 629,
-				}, -- [1]
-				{
-					["averageBuy"] = 1,
-					["weightedTotalBid"] = 14230,
-					["totalQty"] = 10,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 10,
-					["weightedAverageBuy"] = 1498,
-					["totalBuy"] = 1499,
-					["lowestBuy"] = 1498,
-					["totalBid"] = 1423,
-					["weightedTotalBuy"] = 14980,
-					["estimatedVolume"] = 80,
-					["highestBid"] = 1423,
-					["weightedAverageBid"] = 1423,
-					["scanTime"] = 1667908482,
-					["highestBuy"] = 1498,
-					["totalItems"] = 400,
-					["lowestBid"] = 1423,
-					["averageBid"] = 1423,
-				}, -- [2]
-				{
-					["averageBuy"] = 1,
 					["weightedTotalBid"] = 77354991,
 					["totalQty"] = 162,
 					["averageQty"] = 0,
@@ -14681,7 +14661,7 @@ AuctionFasterDb = {
 					["highestBuy"] = 31101411,
 					["weightedAverageBid"] = 477499,
 					["highestBid"] = 717866,
-				}, -- [3]
+				}, -- [1]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 334687,
@@ -14701,7 +14681,7 @@ AuctionFasterDb = {
 					["scanTime"] = 1668888023,
 					["weightedAverageBid"] = 557,
 					["highestBid"] = 591,
-				}, -- [4]
+				}, -- [2]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 443331,
@@ -14721,7 +14701,7 @@ AuctionFasterDb = {
 					["totalItems"] = 188,
 					["weightedAverageBid"] = 614,
 					["highestBid"] = 660,
-				}, -- [5]
+				}, -- [3]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 790860,
@@ -14741,7 +14721,7 @@ AuctionFasterDb = {
 					["highestBuy"] = 835,
 					["lowestBid"] = 787,
 					["averageBid"] = 790,
-				}, -- [6]
+				}, -- [4]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 1075337,
@@ -14761,9 +14741,29 @@ AuctionFasterDb = {
 					["highestBuy"] = 1400,
 					["weightedAverageBid"] = 1140,
 					["highestBid"] = 1362,
-				}, -- [7]
+				}, -- [5]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 1849849,
+					["totalQty"] = 867,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 867,
+					["weightedAverageBuy"] = 2492,
+					["totalBuy"] = 124723,
+					["lowestBuy"] = 2490,
+					["totalBid"] = 108845,
+					["weightedTotalBuy"] = 2161409,
+					["estimatedVolume"] = 13403.82,
+					["averageBid"] = 2176,
+					["lowestBid"] = 2000,
+					["highestBuy"] = 2499,
+					["totalItems"] = 773,
+					["scanTime"] = 1669709866,
+					["weightedAverageBid"] = 2133,
+					["highestBid"] = 2496,
+				}, -- [6]
 			},
-			["lastScanTime"] = 1669308294,
+			["lastScanTime"] = 1669709866,
 			["settings"] = {
 				["priceModel"] = "Stack",
 				["rememberLastPrice"] = false,
@@ -14772,8 +14772,8 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["alwaysUndercut"] = true,
 			},
-			["bid"] = 1182,
-			["buy"] = 1244,
+			["bid"] = 1100,
+			["buy"] = 1889,
 			["icon"] = 135236,
 			["itemId"] = 7912,
 		},
@@ -20095,15 +20095,35 @@ AuctionFasterDb = {
 					["weightedTotalBuy"] = 3196735,
 					["estimatedVolume"] = 801.04,
 					["averageBid"] = 24707,
-					["totalItems"] = 323,
 					["lowestBid"] = 1650,
+					["totalItems"] = 323,
 					["scanTime"] = 1669659076,
-					["weightedAverageBid"] = 17362,
 					["highestBuy"] = 41183,
+					["weightedAverageBid"] = 17362,
 					["highestBid"] = 39124,
 				}, -- [5]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 15782725,
+					["totalQty"] = 746,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 746,
+					["weightedAverageBuy"] = 23422,
+					["totalBuy"] = 1168900,
+					["lowestBuy"] = 19600,
+					["totalBid"] = 1067931,
+					["weightedTotalBuy"] = 17473008,
+					["estimatedVolume"] = 3357,
+					["averageBid"] = 21358,
+					["lowestBid"] = 18620,
+					["highestBuy"] = 24488,
+					["totalItems"] = 225,
+					["scanTime"] = 1669709947,
+					["weightedAverageBid"] = 21156,
+					["highestBid"] = 23264,
+				}, -- [6]
 			},
-			["lastScanTime"] = 1669659076,
+			["lastScanTime"] = 1669709947,
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
@@ -20112,10 +20132,10 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["duration"] = 3,
 			},
-			["bid"] = 19993,
+			["bid"] = 18620,
 			["itemId"] = 38558,
 			["icon"] = 237410,
-			["buy"] = 24992,
+			["buy"] = 19599,
 		},
 		["44264Five of Prisms"] = {
 			["prices"] = {
@@ -22839,6 +22859,8 @@ AuctionFasterDb = {
 			["buy"] = 2844,
 		},
 		["36927Twilight Opal"] = {
+			["stackSize"] = 1,
+			["itemName"] = "Twilight Opal",
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
@@ -22860,8 +22882,28 @@ AuctionFasterDb = {
 					["weightedAverageBid"] = 42210,
 					["highestBid"] = 42257,
 				}, -- [1]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 4359325,
+					["totalQty"] = 76,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 76,
+					["weightedAverageBuy"] = 59904,
+					["totalBuy"] = 2880627,
+					["lowestBuy"] = 52570,
+					["totalBid"] = 2761403,
+					["weightedTotalBuy"] = 4552734,
+					["estimatedVolume"] = 380,
+					["averageBid"] = 55228,
+					["lowestBid"] = 49943,
+					["highestBuy"] = 69000,
+					["totalItems"] = 250,
+					["scanTime"] = 1669709883,
+					["weightedAverageBid"] = 57359,
+					["highestBid"] = 65550,
+				}, -- [2]
 			},
-			["itemName"] = "Twilight Opal",
+			["lastScanTime"] = 1669709883,
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
@@ -22870,11 +22912,10 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["duration"] = 3,
 			},
+			["bid"] = 49943,
 			["itemId"] = 36927,
-			["bid"] = 40029,
-			["lastScanTime"] = 1669568232,
 			["icon"] = 237194,
-			["buy"] = 44474,
+			["buy"] = 52569,
 		},
 	},
 	["favorites"] = {

@@ -2,6 +2,7 @@
 AddOnSkinsDB = {
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Default",
+		["Handrmandr - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
 		["Miqa - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",

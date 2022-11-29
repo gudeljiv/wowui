@@ -8,7 +8,7 @@ Bagnon_VoidStorage: enabled
 BagBrother: enabled
 RXPGuides: enabled
 nPower: disabled
-Leatrix_Plus: disabled
+Leatrix_Plus: enabled
 TradeSkillMaster: enabled
 NeatPlates: disabled
 whoaThickFrames_BCC: disabled

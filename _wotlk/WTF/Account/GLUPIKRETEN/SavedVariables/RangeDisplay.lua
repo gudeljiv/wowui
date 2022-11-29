@@ -21,6 +21,7 @@ RangeDisplayDB3 = {
 		["Antun - Golemagg"] = "Default",
 		["Provokator - Jin'do"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
+		["Handrmandr - Golemagg"] = "Default",
 		["Vermina - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Kaonac - Jin'do"] = "Default",
