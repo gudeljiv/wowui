@@ -49,7 +49,7 @@ local MAX_REQUESTS_PER_ITEM = 5
 local UNKNOWN_ITEM_NAME = L["Unknown Item"]
 local PLACEHOLDER_ITEM_NAME = L["Example Item"]
 local UNKNOWN_ITEM_TEXTURE = 136254
-local DB_VERSION = 9
+local DB_VERSION = 11
 local ENCODING_NUM_BITS = 6
 local ENCODING_NUM_VALUES = 2 ^ ENCODING_NUM_BITS
 local ENCODING_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
@@ -486,6 +486,9 @@ end
 function ItemInfo.StoreItemInfoByLink(itemLink)
 	-- see if we can extract the quality and name from the link
 	local colorHex, name = strmatch(itemLink, "^(\124cff[0-9a-z]+)\124[Hh].+\124h%[(.+)%]\124h\124r$")
+	if name then
+		name = gsub(name, " \124A:.+\124a", "")
+	end
 	if name == "" or name == UNKNOWN_ITEM_NAME or name == PLACEHOLDER_ITEM_NAME then
 		name = nil
 	end
@@ -553,6 +556,9 @@ function ItemInfo.GetName(item)
 	if not name then
 		-- if we got passed an item link, we can maybe extract the name from it
 		name = strmatch(item, "^\124cff[0-9a-z]+\124[Hh].+\124h%[(.+)%]\124h\124r$")
+		if name then
+			name = gsub(name, " \124A:.+\124a", "")
+		end
 		if name == "" or name == UNKNOWN_ITEM_NAME or name == PLACEHOLDER_ITEM_NAME then
 			name = nil
 		end

@@ -307,7 +307,7 @@ function private.GetItemTooltip(self, data)
 	for _, _, itemId in RecipeString.OptionalMatIterator(recipeString) do
 		local matItemString = "i:"..itemId
 		local numHave = TSM.Crafting.ProfessionUtil.GetPlayerMatQuantity(matItemString)
-		local numNeed = 1 * numQueued
+		local numNeed = TSM.Crafting.GetOptionalMatQuantity(craftString, itemId)* numQueued
 		local color = Theme.GetColor(numHave >= numNeed and "FEEDBACK_GREEN" or "FEEDBACK_RED")
 		tinsert(tooltipLines, color:ColorText(numHave.."/"..numNeed).." - "..(ItemInfo.GetName(matItemString) or "?"))
 	end

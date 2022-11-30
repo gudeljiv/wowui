@@ -488,6 +488,7 @@ function private.GetQtyCellText(self, data)
 		return ""
 	end
 	local num, numAll = TSM.Crafting.ProfessionUtil.GetNumCraftable(data)
+	-- TODO: Support optional materials here
 	if num == numAll then
 		if num > 0 then
 			return Theme.GetColor("FEEDBACK_GREEN"):ColorText(num)
@@ -540,7 +541,7 @@ end
 
 function private.GetSaleRateCellText(self, data)
 	local saleRate = self._isCraftString[data] and TSM.Crafting.Cost.GetSaleRateByCraftString(data)
-	return saleRate and format("%0.2f", saleRate) or ""
+	return saleRate and format("%0.3f", saleRate) or ""
 end
 
 function private.GetCostsByCraftString(craftString)

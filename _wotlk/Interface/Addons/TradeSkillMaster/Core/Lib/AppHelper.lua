@@ -136,7 +136,7 @@ function AppHelper.GetMessage()
 end
 
 function AppHelper.GetNews()
-	return private.appInfo.news
+	return private.appInfo and private.appInfo.news or nil
 end
 
 function AppHelper.GetRegion()

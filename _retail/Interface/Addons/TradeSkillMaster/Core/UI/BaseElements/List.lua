@@ -143,12 +143,13 @@ function List:Draw()
 	self:_DrawVFrames()
 
 	-- Add/hide rows as needed
+	local backgroundColor = self._state.backgroundColor
 	local maxVisibleRows = self:_GetMaxVisibleRows()
 	for i = #self._rowElements + 1, maxVisibleRows do
 		local row = private.rowPool:Get()
 		row:Acquire(self._content, self._rowHeight, self:__closure("_HandleRowFrameEvent"))
 		row:SetOffset(i - 1)
-		row:SetBackgroundColor(self._state.backgroundColor)
+		row:SetBackgroundColor(backgroundColor)
 		self:_HandleRowAcquired(row)
 		self._rowElements[i] = row
 	end

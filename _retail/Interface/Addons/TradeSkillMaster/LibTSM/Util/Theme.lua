@@ -18,7 +18,7 @@ local private = {
 	currentColorSetKey = nil,
 	fontFrame = nil,
 	currentFontSet = nil,
-	stream = nil,
+	streams = {},
 	publisherKey = {},
 	publishKeysTemp = {},
 }
@@ -194,17 +194,6 @@ Theme:OnModuleLoad(function()
 		local fontPath = obj:GetWowFont()
 		private.QueueFontLoad(fontPath)
 	end
-
-	private.stream = Reactive.CreateStream()
-	private.stream:SetScript("OnPublisherCommit", function(stream, publisher)
-		local key = private.publisherKey[publisher]
-		assert(key)
-		stream:Send(key)
-	end)
-	private.stream:SetScript("OnPublisherCancelled", function(_, publisher)
-		assert(private.publisherKey[publisher])
-		private.publisherKey[publisher] = nil
-	end)
 end)
 
 
@@ -232,12 +221,18 @@ function Theme.RegisterColorSet(key, name, colorSet)
 	private.colorSets[key] = colorSet
 end
 
----Gets a theme color publisher which publishes deduplicated hex color strings.
+---Gets a theme color publisher which publishes deduplicated color values.
 ---@param key string The theme color key
 ---@return ReactivePublisher
 function Theme.GetPublisher(key)
 	assert(Theme.IsValidColor(key))
-	local publisher = private.stream:Publisher()
+	local colorKey = private.GetColorKeyInfo(key)
+	if not private.streams[colorKey] then
+		local stream = Reactive.CreateStream()
+		stream:SetScript("OnPublisherCancelled", private.HandlePublisherCancel)
+		private.streams[colorKey] = stream
+	end
+	local publisher = private.streams[colorKey]:PublisherWithInitialValue(key)
 		:IgnoreIfNotEquals(key)
 		:MapWithFunction(Theme.GetColor)
 		:IgnoreDuplicatesWithMethod("GetHex")
@@ -452,8 +447,13 @@ function private.HandleColorChange(changedColorSetKey, changedColorKey)
 		colorSetKey = colorSetKey or private.currentColorSetKey
 		if not private.publishKeysTemp[key] and colorSetKey == changedColorSetKey and (not changedColorKey or colorKey == changedColorKey) then
 			private.publishKeysTemp[key] = true
-			private.stream:Send(key)
+			private.streams[colorKey]:Send(key)
 		end
 	end
 	wipe(private.publishKeysTemp)
+end
+
+function private.HandlePublisherCancel(_, publisher)
+	assert(private.publisherKey[publisher])
+	private.publisherKey[publisher] = nil
 end

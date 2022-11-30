@@ -55,8 +55,8 @@ end
 function private.GetText()
 	local amount = private.settings.money
 	if private.settings.showTotalMoney then
-		for _, money in private.settings:AccessibleValueIterator("money") do
-			if money > 0 then
+		for _, money, character, factionrealm in private.settings:AccessibleValueIterator("money") do
+			if money > 0 and not Wow.IsPlayer(character, factionrealm) then
 				amount = amount + money
 			end
 		end
