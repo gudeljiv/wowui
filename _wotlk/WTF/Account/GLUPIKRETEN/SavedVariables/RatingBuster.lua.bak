@@ -1,10 +1,19 @@
 
 RatingBusterDB = {
 	["profileKeys"] = {
+		["Vermin - Golemagg"] = "WARRIOR",
 		["Battlearm - Golemagg"] = "DEATHKNIGHT",
+		["Mxyz - Golemagg"] = "PRIEST",
+		["Mxzq - Golemagg"] = "HUNTER",
 	},
 	["profiles"] = {
 		["DEATHKNIGHT"] = {
+		},
+		["WARRIOR"] = {
+		},
+		["HUNTER"] = {
+		},
+		["PRIEST"] = {
 		},
 	},
 }

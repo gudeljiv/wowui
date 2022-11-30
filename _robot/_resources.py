@@ -64,7 +64,8 @@ skills["warrior"] = [
     {"name": "vigilance", "type": "GetSpellTexture", "id": 50720, "key": "r", "modifier": "shift"},
     {"name": "concussion blow", "type": "GetSpellTexture", "id": 12809, "key": "8"},
     {"name": "hamstring", "type": "GetSpellTexture", "id": 1715, "key": "1"},
-    {"name": "slam", "type": "GetSpellTexture", "id": 47475, "key": "f2", "modifier": "ctrl"}
+    {"name": "slam", "type": "GetSpellTexture", "id": 47475, "key": "f2", "modifier": "ctrl"},
+    {"name": "shattering throw", "type": "GetSpellTexture", "id": 64382, "key": "7"}
 ]
 
 

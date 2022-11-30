@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 7764,
+	["session"] = 7772,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -6452,28 +6452,20 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [830]
 		{
-			["message"] = "...ns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua:681: attempt to index local 'displayData' (a nil value)",
-			["time"] = "2022/11/26 12:45:26",
-			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n RolesText = <unnamed> {\n }\n Roles = <table> {\n }\n Role2 = <unnamed> {\n }\n Role1 = <unnamed> {\n }\n Role3 = <unnamed> {\n }\n}\ndisplayData = nil\ndisabled = true\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'displayData' (a nil value)\"\nLFGBROWSE_DELISTED_FONT_COLOR = <table> {\n b = 0.300000\n g = 0.300000\n r = 0.300000\n}\n",
-			["stack"] = "[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:681: in function `LFGBrowseGroupDataDisplaySolo_Update'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:653: in function `LFGBrowseGroupDataDisplay_Update'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:328: in function `LFGBrowseSearchEntry_Update'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:346: in function <...ns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua:341>",
-			["session"] = 7754,
-			["counter"] = 3,
-		}, -- [831]
-		{
 			["message"] = "...ns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua:1188: attempt to index local 'roles2' (a nil value)",
 			["time"] = "2022/11/29 10:26:23",
 			["locals"] = "searchResultID1 = 225\nsearchResultID2 = 228\nsearchResultInfo1 = <table> {\n comment = \"\"\n leaderName = \"Invikurt\"\n voiceChat = \"\"\n newPlayerFriendly = false\n searchResultID = 225\n isWarMode = false\n isDelisted = false\n numGuildMates = 0\n requiredItemLevel = 0\n hasSelf = false\n numBNetFriends = 0\n numMembers = 1\n name = \"\"\n age = 1864\n autoAccept = false\n activityIDs = <table> {\n }\n numCharFriends = 0\n requiredHonorLevel = 0\n}\nsearchResultInfo2 = <table> {\n comment = \"|Kr57|k\"\n leaderName = \"Lashante\"\n voiceChat = \"\"\n newPlayerFriendly = true\n searchResultID = 228\n isWarMode = false\n isDelisted = true\n numGuildMates = 0\n requiredItemLevel = 0\n hasSelf = false\n numBNetFriends = 0\n numMembers = 1\n name = \"\"\n age = 1246\n autoAccept = false\n activityIDs = <table> {\n }\n numCharFriends = 0\n requiredHonorLevel = 0\n}\nhasSelf1 = false\nhasSelf2 = false\nisSolo1 = true\nisSolo2 = true\nroleOrderings = <table> {\n 1 = \"TANK\"\n 2 = \"HEALER\"\n 3 = \"DAMAGER\"\n}\nroles1 = <table> {\n HUNTER = 0\n WARRIOR = 1\n ROGUE = 0\n DAMAGER = 1\n LEADER_ROLE_HEALER = false\n NOROLE = 0\n HEALER_REMAINING = 0\n DRUID = 0\n DEATHKNIGHT = 0\n TANK = 0\n DAMAGER_REMAINING = 0\n LEADER_ROLE_DAMAGER = true\n HEALER = 0\n PRIEST = 0\n TANK_REMAINING = 0\n WARLOCK = 0\n MAGE = 0\n SHAMAN = 0\n PALADIN = 0\n LEADER_ROLE_TANK = false\n}\nroles2 = nil\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = \"TANK\"\n 2 = \"HEALER\"\n 3 = \"DAMAGER\"\n}\n(for control) = 1\n_ = 1\ndesiredRole = \"TANK\"\ncanPerformRole1 = false\n(*temporary) = \"LEADER_ROLE_TANK\"\n(*temporary) = \"TANK\"\n(*temporary) = \"attempt to index local 'roles2' (a nil value)\"\nactiveEntryInfo = nil\nactiveEntryUseDungeonRoles = false\ngroupMemberCounts = <table> {\n HUNTER = 0\n WARRIOR = 0\n PALADIN = 0\n DAMAGER = 0\n HEALER = 0\n NOROLE = 0\n PRIEST = 0\n MAGE = 0\n WARLOCK = 0\n SHAMAN = 0\n DEATHKNIGHT = 0\n DRUID = 0\n TANK = 0\n ROGUE = 0\n}\nLFGBROWSE_DUNGEON_NUM_TANKS_EXPECTED = 1\nLFGBROWSE_DUNGEON_NUM_HEALERS_EXPECTED = 1\nLFGBROWSE_DUNGEON_NUM_DPS_EXPECTED = 3\nHasRemainingSlotsForLocalPlayerRole = <function> defined @Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua:1103\n",
 			["stack"] = "[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:1188: in function <...ns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua:1127>\n[string \"=[C]\"]: in function `sort'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:1230: in function `LFGBrowseUtil_SortSearchResults'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:121: in function `UpdateResultList'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:112: in function <...ns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua:110>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_Wrath\\FrameXML\\UIParent.lua\"]:2214: in function `SetUIPanel'\n[string \"@Interface_Wrath\\FrameXML\\UIParent.lua\"]:2059: in function `ShowUIPanel'\n[string \"@Interface_Wrath\\FrameXML\\UIParent.lua\"]:1927: in function <Interface_Wrath\\FrameXML\\UIParent.lua:1923>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface_Wrath\\FrameXML\\UIParent.lua\"]:2733: in function `ShowUIPanel'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGParentFrame.lua\"]:48: in function `ShowLFGParentFrame'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGParentFrame.lua\"]:73: in function `ToggleLFGParentFrame'\n[string \"TOGGLELFGPARENT\"]:1: in function <[string \"TOGGLELFGPARENT\"]:1>",
 			["session"] = 7754,
 			["counter"] = 1,
-		}, -- [832]
+		}, -- [831]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'PlayerFrame:SetAttribute()'.",
 			["time"] = "2022/11/02 09:21:50",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:480: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:480>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface\\FrameXML\\UnitFrame.lua\"]:165: in function `UnitFrame_SetUnit'\n[string \"@Interface\\FrameXML\\PlayerFrame.lua\"]:296: in function `PlayerFrame_ToVehicleArt'\n[string \"@Interface\\FrameXML\\PlayerFrame.lua\"]:274: in function `PlayerFrame_UpdateArt'\n[string \"@Interface\\FrameXML\\PlayerFrame.lua\"]:204: in function <Interface\\FrameXML\\PlayerFrame.lua:138>",
 			["session"] = 7756,
 			["counter"] = 3,
-		}, -- [833]
+		}, -- [832]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
 			["time"] = "2022/02/16 20:30:17",
@@ -6481,20 +6473,28 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:913: in function `TargetofTarget_Update'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:416: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
 			["session"] = 7759,
 			["counter"] = 45,
-		}, -- [834]
+		}, -- [833]
 		{
-			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'unitscan' tried to call the protected function 'UNKNOWN()'.",
-			["time"] = "2022/09/25 11:24:28",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:42: in function `target'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:273: in function `UPDATE'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:3: in function <Interface\\AddOns\\unitscan\\unitscan.lua:3>",
-			["session"] = 7759,
-			["counter"] = 59,
-		}, -- [835]
+			["message"] = "...ns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua:681: attempt to index local 'displayData' (a nil value)",
+			["time"] = "2022/11/26 12:45:26",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n RolesText = <unnamed> {\n }\n Roles = <table> {\n }\n Role2 = <unnamed> {\n }\n Role1 = <unnamed> {\n }\n Role3 = <unnamed> {\n }\n}\ndisplayData = nil\ndisabled = true\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'displayData' (a nil value)\"\nLFGBROWSE_DELISTED_FONT_COLOR = <table> {\n b = 0.300000\n g = 0.300000\n r = 0.300000\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:681: in function `LFGBrowseGroupDataDisplaySolo_Update'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:653: in function `LFGBrowseGroupDataDisplay_Update'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:328: in function `LFGBrowseSearchEntry_Update'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:346: in function <...ns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua:341>",
+			["session"] = 7765,
+			["counter"] = 4,
+		}, -- [834]
 		{
 			["message"] = "Interface\\AddOns\\AceBIS\\GearWindow.lua:592: bad argument #1 to 'next' (table expected, got nil)",
 			["time"] = "2022/11/25 09:21:34",
 			["stack"] = "[string \"=[C]\"]: in function `next'\n[string \"@Interface\\AddOns\\AceBIS\\GearWindow.lua\"]:592: in function <Interface\\AddOns\\AceBIS\\GearWindow.lua:568>\n[string \"@Interface\\AddOns\\AceBIS\\GearWindow.lua\"]:981: in function `InitUI'\n[string \"@Interface\\AddOns\\AceBIS\\AceBIS-4.0.9.lua\"]:397: in function <Interface\\AddOns\\AceBIS\\AceBIS.lua:382>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:70: in function <...ace\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:65>\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:527: in function `EnableAddon'\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:630: in function <...ace\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:615>",
-			["session"] = 7763,
-			["counter"] = 16,
+			["session"] = 7769,
+			["counter"] = 19,
+		}, -- [835]
+		{
+			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'unitscan' tried to call the protected function 'UNKNOWN()'.",
+			["time"] = "2022/09/25 11:24:28",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:42: in function `target'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:273: in function `UPDATE'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:3: in function <Interface\\AddOns\\unitscan\\unitscan.lua:3>",
+			["session"] = 7770,
+			["counter"] = 60,
 		}, -- [836]
 	},
 }

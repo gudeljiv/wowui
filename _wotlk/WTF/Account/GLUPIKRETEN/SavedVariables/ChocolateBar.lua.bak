@@ -130,9 +130,10 @@ ChocolateBarDB = {
 					["showIcon"] = false,
 					["customLabel"] = "gmL",
 				},
-				["AdiBags"] = {
-					["enabled"] = false,
+				["KiwiPlates"] = {
+					["align"] = "right",
 					["isNew"] = false,
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
 				["DBM"] = {
@@ -192,7 +193,7 @@ ChocolateBarDB = {
 					["showIcon"] = false,
 					["customLabel"] = "WA",
 				},
-				["KiwiPlates"] = {
+				["CharacterNotes"] = {
 					["align"] = "right",
 					["isNew"] = false,
 					["showText"] = false,
@@ -532,10 +533,9 @@ ChocolateBarDB = {
 					["isNew"] = false,
 					["barName"] = "ChocolateBar2",
 				},
-				["CharacterNotes"] = {
-					["align"] = "right",
+				["AdiBags"] = {
+					["enabled"] = false,
 					["isNew"] = false,
-					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
 				["gmMoney"] = {
@@ -646,9 +646,9 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 969694,
-		["timeStamp"] = 1677100.482,
-		["timeAtThisLevel"] = 2771,
+		["total"] = 971382,
+		["timeStamp"] = 1736191.586,
+		["timeAtThisLevel"] = 4459,
 	},
 	["Mxyzptlk-Golemagg"] = {
 		["total"] = 29335,
@@ -692,17 +692,17 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1398867,
-		["timeStamp"] = 1650525.98,
-		["timeAtThisLevel"] = 306320,
+		["total"] = 1406623,
+		["timeStamp"] = 1732242.056,
+		["timeAtThisLevel"] = 314076,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 258099,
-		["timeStamp"] = 1679471.923,
-		["timeAtThisLevel"] = 252353,
+		["total"] = 258118,
+		["timeStamp"] = 1740809.781,
+		["timeAtThisLevel"] = 252372,
 	},
 	["Tudum-Ashbringer"] = {
 		["total"] = 4569,
@@ -792,9 +792,9 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 316,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 226252,
-		["timeAtThisLevel"] = 24445,
-		["timeStamp"] = 8447.888,
+		["total"] = 228521,
+		["timeAtThisLevel"] = 26714,
+		["timeStamp"] = 1735457.981,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,
