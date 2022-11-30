@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 7762,
+	["session"] = 7764,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -6493,8 +6493,8 @@ BugGrabberDB = {
 			["message"] = "Interface\\AddOns\\AceBIS\\GearWindow.lua:592: bad argument #1 to 'next' (table expected, got nil)",
 			["time"] = "2022/11/25 09:21:34",
 			["stack"] = "[string \"=[C]\"]: in function `next'\n[string \"@Interface\\AddOns\\AceBIS\\GearWindow.lua\"]:592: in function <Interface\\AddOns\\AceBIS\\GearWindow.lua:568>\n[string \"@Interface\\AddOns\\AceBIS\\GearWindow.lua\"]:981: in function `InitUI'\n[string \"@Interface\\AddOns\\AceBIS\\AceBIS-4.0.9.lua\"]:397: in function <Interface\\AddOns\\AceBIS\\AceBIS.lua:382>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:70: in function <...ace\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:65>\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:527: in function `EnableAddon'\n[string \"@Interface\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:630: in function <...ace\\AddOns\\AceBIS\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:615>",
-			["session"] = 7760,
-			["counter"] = 15,
+			["session"] = 7763,
+			["counter"] = 16,
 		}, -- [836]
 	},
 }

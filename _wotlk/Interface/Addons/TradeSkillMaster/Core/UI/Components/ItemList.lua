@@ -317,7 +317,9 @@ function ItemList:_HandleQueryUpdate(query)
 			Table.RemoveRange(self._data, dataStartOffset + 1, dataStartOffset + dataLen)
 		end
 		dataLen = query:Count()
-		Table.InsertFill(self._data, dataStartOffset + 1, dataLen, 0)
+		if dataLen > 0 then
+			Table.InsertFill(self._data, dataStartOffset + 1, dataLen, 0)
+		end
 		for i, uuid in query:UUIDIterator() do
 			self._data[dataStartOffset + i] = uuid
 			local itemString, icon, text = query:GetSelectedFieldsByUUID(uuid)

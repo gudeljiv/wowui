@@ -9,7 +9,7 @@ local Stream = TSM.Init("Util.ReactiveClasses.Stream") ---@class Util.ReactiveCl
 local Publisher = TSM.Include("Util.ReactiveClasses.Publisher")
 local Table = TSM.Include("Util.Table")
 local ReactiveStream = TSM.Include("LibTSMClass").DefineClass("ReactiveStream") ---@class ReactiveStream
-
+local NO_INITIAL_VALUE = newproxy()
 
 
 
@@ -46,14 +46,27 @@ function ReactiveStream:Publisher()
 	local publisher = Publisher.Get()
 	publisher:_Acquire(self)
 	tinsert(self._publishers, publisher)
+	self._publishers[publisher] = NO_INITIAL_VALUE
+	return publisher
+end
+
+---Creates a new publisher for the stream.
+---@param sendInitialValue any An initial value to send to the new publisher once it's committed
+---@return ReactivePublisher @The publisher object
+function ReactiveStream:PublisherWithInitialValue(initialValue)
+	local publisher = Publisher.Get()
+	publisher:_Acquire(self)
+	tinsert(self._publishers, publisher)
+	self._publishers[publisher] = initialValue
 	return publisher
 end
 
 ---Sends a new data value the stream's publishers.
 ---@param data table The data to send
 function ReactiveStream:Send(data)
-	for _, publisher in pairs(self._publishers) do
-		publisher:_HandleData(data)
+	local publishers = self._publishers
+	for i = 1, #publishers do
+		publishers[i]:_HandleData(data)
 	end
 end
 
@@ -92,7 +105,12 @@ function ReactiveStream:_HandlePublisherEvent(publisher, event)
 		if self._scripts.OnPublisherCommit then
 			self._scripts.OnPublisherCommit(self, publisher)
 		end
+		local initialValue = self._publishers[publisher]
+		if initialValue ~= NO_INITIAL_VALUE then
+			publisher:_HandleData(initialValue)
+		end
 	elseif event == "OnCancel" then
+		self._publishers[publisher] = nil
 		assert(Table.RemoveByValue(self._publishers, publisher) == 1)
 		if self._scripts.OnPublisherCancelled then
 			self._scripts.OnPublisherCancelled(self, publisher)

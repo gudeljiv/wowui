@@ -203,9 +203,12 @@ local ACCESSIBLE_FACTIONS = TSM.IsWowClassic() and { FACTION } or {
 -- [109] updated global.craftingUIContext.professionScrollingTable
 -- [110] remove factionrealm.auctioningOptions.whitelist on retail
 -- [111] updated global.craftingUIContext.{professionScrollingTable,professionDividedContainer}
+-- [112] updated global.craftingUIContext.professionScrollingTable
+-- [113] updated global.craftingUIContext.professionDividedContainerBottom
+-- [114] updated factionrealm.internalData.crafts
 
 local SETTINGS_INFO = {
-	version = 111,
+	version = 114,
 	minVersion = 10,
 	global = {
 		debug = {
@@ -252,9 +255,9 @@ local SETTINGS_INFO = {
 			matsScrollingTable = { type = "table", default = { colWidth = { name = 242, price = 100, professions = 310, num = 100 }, colHidden = {} }, lastModifiedVersion = 55 },
 			gatheringDividedContainer = { type = "table", default = { leftWidth = 284 }, lastModifiedVersion = 55 },
 			gatheringScrollingTable = { type = "table", default = { colWidth = { name = 206, sources = 160, have = 50, need = 50 }, colHidden = {} }, lastModifiedVersion = 55 },
-			professionScrollingTable = { type = "table", default = { colWidth = { name = 322, qty = 54, craftingCost = 100, itemValue = 100, profit = 100, profitPct = 50, saleRate = 30 }, colHidden = { craftingCost = true, itemValue = true, profitPct = true }, collapsed = {} }, lastModifiedVersion = 111 },
+			professionScrollingTable = { type = "table", default = { colWidth = { name = 310, qty = 54, craftingCost = 100, itemValue = 100, profit = 100, profitPct = 50, saleRate = 42 }, colHidden = { craftingCost = true, itemValue = true, profitPct = true }, collapsed = {} }, lastModifiedVersion = 112 },
 			professionDividedContainer = { type = "table", default = { leftWidth = 556 }, lastModifiedVersion = 111 },
-			professionDividedContainerBottom = { type = "table", default = { leftWidth = 348 }, lastModifiedVersion = 109 },
+			professionDividedContainerBottom = { type = "table", default = { leftWidth = TSM.IsWowClassic() and 390 or 348 }, lastModifiedVersion = 113 },
 		},
 		destroyingUIContext = {
 			frame = { type = "table", default = { width = 296, height = 442, centerX = 0, centerY = 0, scale = 1 }, lastModifiedVersion = 55 },
@@ -399,7 +402,7 @@ local SETTINGS_INFO = {
 			mailDisenchantablesChar = { type = "string", default = "", lastModifiedVersion = 49 },
 			mailExcessGoldChar = { type = "string", default = "", lastModifiedVersion = 49 },
 			mailExcessGoldLimit = { type = "number", default = 10000000000, lastModifiedVersion = 49 },
-			crafts = { type = "table", default = {}, lastModifiedVersion = 105 },
+			crafts = { type = "table", default = {}, lastModifiedVersion = 114 },
 			craftingQueue = { type = "table", default = {}, lastModifiedVersion = 101 },
 			mats = { type = "table", default = {}, lastModifiedVersion = 10 },
 			guildGoldLog = { type = "table", default = {}, lastModifiedVersion = 25 },
@@ -675,16 +678,6 @@ Settings:OnSettingsLoad(function()
 		end
 	end
 	if prevVersion < 105 and not TSM.IsWowClassic() then
-		for _, key, value in upgradeObj:RemovedSettingIterator("factionrealm", nil, "internalData", "crafts") do
-			if prevVersion < 99 then
-				local newValue = {}
-				for spellId, data in pairs(value) do
-					newValue["c:"..spellId] = data
-				end
-				value = newValue
-			end
-			db:Set("factionrealm", upgradeObj:GetScopeKey(key), "internalData", "crafts", value)
-		end
 		for _, key, value in upgradeObj:RemovedSettingIterator("factionrealm", nil, "userData", "craftingCooldownIgnore") do
 			if prevVersion < 99 then
 				local IGNORED_COOLDOWN_SEP = "\001"
@@ -716,6 +709,50 @@ Settings:OnSettingsLoad(function()
 				value.AuctionDB.regionMarketValue = value.AuctionDB.regionMarketValue and "noTrend" or "none"
 			end
 			db:Set("global", upgradeObj:GetScopeKey(key), "tooltipOptions", "moduleTooltips", value)
+		end
+	end
+	if prevVersion < 114 then
+		if TSM.IsWowClassic() then
+			if prevVersion >= 105 then
+				for _, key, value in upgradeObj:RemovedSettingIterator("factionrealm", nil, "internalData", "crafts") do
+					db:Set("factionrealm", upgradeObj:GetScopeKey(key), "internalData", "crafts", value)
+				end
+			end
+		else
+			if prevVersion < 105 then
+				for _, key, value in upgradeObj:RemovedSettingIterator("factionrealm", nil, "internalData", "crafts") do
+					if prevVersion < 99 then
+						local newValue = {}
+						for spellId, data in pairs(value) do
+							newValue["c:"..spellId] = data
+						end
+						value = newValue
+					end
+					for _, craft in pairs(value) do
+						if craft.mats then
+							for itemString in pairs(craft.mats) do
+								if strmatch(itemString, "^o:") then
+									craft.mats[itemString] = 1
+								end
+							end
+						end
+					end
+					db:Set("factionrealm", upgradeObj:GetScopeKey(key), "internalData", "crafts", value)
+				end
+			else
+				for _, key, value in upgradeObj:RemovedSettingIterator("factionrealm", nil, "internalData", "crafts") do
+					for _, craft in pairs(value) do
+						if craft.mats then
+							for itemString in pairs(craft.mats) do
+								if strmatch(itemString, "^o:") then
+									craft.mats[itemString] = 1
+								end
+							end
+						end
+					end
+					db:Set("factionrealm", upgradeObj:GetScopeKey(key), "internalData", "crafts", value)
+				end
+			end
 		end
 	end
 	-- NOTE: When adding migrations, be careful of multiple migrations modifying the same key, as
@@ -1528,11 +1565,8 @@ end
 function VIEW_METHODS:PublisherForKey(key)
 	local viewInfo = private.views[self]
 	assert(viewInfo.scopeLookup[key])
-	if not viewInfo.stream then
-		viewInfo.stream = Reactive.CreateStream()
-		viewInfo.stream:SetScript("OnPublisherCommit", private.StreamOnPublisherCommit)
-	end
-	return viewInfo.stream:Publisher()
+	viewInfo.stream = viewInfo.stream or Reactive.CreateStream()
+	return viewInfo.stream:PublisherWithInitialValue(self)
 		:IgnoreDuplicatesWithKeys(key)
 		:MapWithKey(key)
 		:IgnoreDuplicates()
@@ -1808,17 +1842,4 @@ function private.FactionrealmByRealmIteratorHelper(realm, prevValue)
 	elseif strmatch(prevValue, "^Alliance") then
 		return strjoin(SCOPE_KEY_SEP, "Neutral", realm)
 	end
-end
-
-function private.StreamOnPublisherCommit(stream)
-	-- Find the view which this stream belongs to
-	local streamView = nil
-	for view, viewInfo in pairs(private.views) do
-		if viewInfo.stream == stream then
-			streamView = view
-			break
-		end
-	end
-	assert(streamView)
-	stream:Send(streamView)
 end

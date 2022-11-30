@@ -88,6 +88,9 @@ local ELEMENT_STYLE_KEYS = {
 	"_roundedCorners",
 	"_borderSize",
 }
+local IGNORED_FRAMES = {
+	GlobalFXDialogModelScene = true
+}
 
 
 
@@ -174,7 +177,7 @@ function private.OnUpdate(self)
 
 	local frame = EnumerateFrames()
 	while frame do
-		if frame ~= self.highlightFrame and not frame:IsForbidden() and frame:IsVisible() and MouseIsOver(frame) then
+		if frame ~= self.highlightFrame and not frame:IsForbidden() and frame:IsVisible() and MouseIsOver(frame) and not IGNORED_FRAMES[frame:GetName() or ""] then
 			tinsert(framesByStrata[frame:GetFrameStrata()], frame)
 			for _, region in Vararg.Iterator(frame:GetRegions()) do
 				if region:IsObjectType("Texture") and not region:IsForbidden() and region:IsVisible() and MouseIsOver(region) and UIElements.GetByFrame(region) then

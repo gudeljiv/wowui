@@ -50,7 +50,7 @@ function Crafting.OnInitialize()
 	local used = TempTable.Acquire()
 	for _, craftInfo in pairs(TSM.db.factionrealm.internalData.crafts) do
 		for itemString in pairs(craftInfo.mats) do
-			if strmatch(itemString, "^o:") then
+			if strmatch(itemString, "^[qof]:") then
 				local _, _, matList = strsplit(":", itemString)
 				for matItemId in String.SplitIterator(matList, ",") do
 					used["i:"..matItemId] = true
@@ -114,7 +114,7 @@ function Crafting.OnInitialize()
 				matFirstItemString[craftString] = matItemString
 				matFirstQuantity[craftString] = matQuantity
 			end
-			if strmatch(matItemString, "^o:") then
+			if strmatch(matItemString, "^[qof]:") then
 				local _, _, matList = strsplit(":", matItemString)
 				for matItemId in String.SplitIterator(matList, ",") do
 					local optionalMatItemString = "i:"..matItemId
@@ -321,7 +321,7 @@ function Crafting.MatIterator(craftString)
 	return private.matDB:NewQuery()
 		:Select("itemString", "quantity")
 		:Equal("craftString", craftString)
-		:GreaterThan("quantity", 0)
+		:Matches("itemString", "^i:")
 		:IteratorAndRelease()
 end
 
@@ -331,7 +331,26 @@ function Crafting.OptionalMatIterator(craftString)
 		:VirtualField("slotId", "number", private.OptionalMatSlotIdVirtualField, "itemString")
 		:VirtualField("text", "string", private.OptionalMatTextVirtualField, "itemString")
 		:Equal("craftString", craftString)
-		:LessThan("quantity", 0)
+		:Matches("itemString", "^[qof]:")
+		:OrderBy("slotId", true)
+		:IteratorAndRelease()
+end
+
+function Crafting.GetOptionalMatQuantity(craftString, matItemId)
+	local query = private.matDB:NewQuery()
+		:Select("quantity")
+		:Equal("craftString", craftString)
+		:Matches("itemString", "^[qof]:")
+		:Contains("itemString", tostring(matItemId))
+	return query:GetFirstResultAndRelease()
+end
+
+function Crafting.QualityMatIterator(craftString)
+	return private.matDB:NewQuery()
+		:Select("itemString", "slotId")
+		:VirtualField("slotId", "number", private.OptionalMatSlotIdVirtualField, "itemString")
+		:Equal("craftString", craftString)
+		:Matches("itemString", "^q:")
 		:OrderBy("slotId", true)
 		:IteratorAndRelease()
 end
@@ -339,7 +358,7 @@ end
 function Crafting.HasOptionalMats(craftString)
 	local numOptionalMats = private.matDB:NewQuery()
 		:Equal("craftString", craftString)
-		:LessThan("quantity", 0)
+		:Matches("itemString", "^[qof]:")
 		:CountAndRelease()
 	return numOptionalMats > 0
 end
@@ -544,14 +563,14 @@ function Crafting.SetMats(craftString, matQuantities)
 				:SetField("quantity", quantity)
 				:Create()
 			private.HandleMatDBAddRow(itemString)
-			if quantity > 0 then
-				private.MatItemDBUpdateOrInsert(itemString, profession)
-			else
+			if strmatch(itemString, "^[qof]:") then
 				local _, _, matList = strsplit(":", itemString)
 				for matItemId in String.SplitIterator(matList, ",") do
 					local optionalMatItemString = "i:"..matItemId
 					private.MatItemDBUpdateOrInsert(optionalMatItemString, profession)
 				end
+			else
+				private.MatItemDBUpdateOrInsert(itemString, profession)
 			end
 		end
 	end
@@ -630,7 +649,7 @@ end
 function private.ProcessRemovedMats(removedMats)
 	private.matItemDB:SetQueryUpdatesPaused(true)
 	for itemString in pairs(removedMats) do
-		if strmatch(itemString, "^o:") then
+		if strmatch(itemString, "^[qof]:") then
 			local _, _, matList = strsplit(":", itemString)
 			for matItemId in String.SplitIterator(matList, ",") do
 				local optionalMatItemString = "i:"..matItemId
@@ -674,7 +693,7 @@ function private.MatDBDeleteCraftStrings(craftStrings)
 end
 
 function private.HandleMatDBAddRow(itemString)
-	if strmatch(itemString, "^o:") then
+	if strmatch(itemString, "^[qof]:") then
 		local _, _, matList = strsplit(":", itemString)
 		for matItemId in String.SplitIterator(matList, ",") do
 			local optionalMatItemString = "i:"..matItemId
@@ -686,7 +705,7 @@ function private.HandleMatDBAddRow(itemString)
 end
 
 function private.HandleMatDBDeleteRow(itemString)
-	if strmatch(itemString, "^o:") then
+	if strmatch(itemString, "^[qof]:") then
 		local _, _, matList = strsplit(":", itemString)
 		for matItemId in String.SplitIterator(matList, ",") do
 			local optionalMatItemString = "i:"..matItemId

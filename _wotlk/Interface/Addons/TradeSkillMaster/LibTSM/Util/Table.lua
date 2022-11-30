@@ -380,6 +380,7 @@ function Table.RotateRight(tbl, amount, startIndex, endIndex)
 	startIndex = startIndex or 1
 	endIndex = endIndex or #tbl
 	local len = endIndex - startIndex + 1
+	assert(len > 0)
 	amount = (amount + len) % len
 	assert(amount >= 0)
 	if amount == 0 then
@@ -399,6 +400,10 @@ end
 ---@param endIndex number The last index to remove
 function Table.RemoveRange(tbl, startIndex, endIndex)
 	local numToRemove = endIndex - startIndex + 1
+	if numToRemove == 0 then
+		return
+	end
+	assert(numToRemove > 0)
 	Table.RotateRight(tbl, -numToRemove, startIndex)
 	for i = #tbl, #tbl - (numToRemove - 1), -1 do
 		tbl[i] = nil

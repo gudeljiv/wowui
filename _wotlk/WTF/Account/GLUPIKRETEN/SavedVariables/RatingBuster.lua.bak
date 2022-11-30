@@ -1,0 +1,10 @@
+
+RatingBusterDB = {
+	["profileKeys"] = {
+		["Battlearm - Golemagg"] = "DEATHKNIGHT",
+	},
+	["profiles"] = {
+		["DEATHKNIGHT"] = {
+		},
+	},
+}

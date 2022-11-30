@@ -83,7 +83,7 @@ function private.GetCraftingFrame()
 	TSM.UI.AnalyticsRecordPathChange("crafting", "crafting")
 	private.filterText = ""
 	local frame = UIElements.New("DividedContainer", "crafting")
-		:SetMinWidth(200, 189)
+		:SetMinWidth(200, TSM.IsWowClassic() and 147 or 189)
 		:SetVertical()
 		:HideDivider()
 		:SetSettingsContext(private.settings, "professionDividedContainerBottom")
@@ -524,7 +524,7 @@ end
 function private.OptionalMatsOnClick(button)
 	button:GetBaseElement():ShowDialogFrame(UIElements.New("Frame", "frame")
 		:SetLayout("VERTICAL")
-		:SetSize(478, 308)
+		:SetSize(478, 368)
 		:SetPadding(12)
 		:AddAnchor("CENTER")
 		:SetMouseEnabled(true)
@@ -666,8 +666,13 @@ function private.AddOptionalRows(frame, selectedCraftString)
 		else
 			row:GetElement("title.icon")
 				:Show()
-			row:GetElement("title.removeBtn")
-				:Show()
+			if strmatch(matList, "^q:") then
+				row:GetElement("title.removeBtn")
+					:Hide()
+			else
+				row:GetElement("title.removeBtn")
+					:Show()
+			end
 		end
 		row:GetElement("title")
 			:Draw()
@@ -708,7 +713,7 @@ end
 
 function private.GetOptionalReagentSelection(viewContainer)
 	local matTable = TempTable.Acquire()
-	local slotId, matList = strmatch(viewContainer:GetParentElement():GetContext(), "o:(%d):(.+)")
+	local slotId, matList = strmatch(viewContainer:GetParentElement():GetContext(), "^[qof]:(%d):(.+)")
 	slotId = tonumber(slotId)
 	for itemId in String.SplitIterator(matList, ",") do
 		tinsert(matTable, ItemInfo.GetLink("i:"..itemId))
@@ -737,7 +742,7 @@ function private.GetOptionalReagentSelection(viewContainer)
 		)
 		:AddChild(UIElements.New("Frame", "container")
 			:SetLayout("VERTICAL")
-			:SetHeight(214)
+			:SetHeight(274)
 			:SetBackgroundColor("PRIMARY_BG_ALT", true)
 			:AddChild(UIElements.New("SelectionList", "list")
 				:SetMargin(0, 0, 10, 10)
@@ -970,7 +975,7 @@ function private.FSMCreate()
 		sort(private.optionalMatOrderTemp)
 		for _, slotId in ipairs(private.optionalMatOrderTemp) do
 			local itemString = "i:"..private.optionalMats[slotId]
-			private.matsDB:BulkInsertNewRow(itemString, 1)
+			private.matsDB:BulkInsertNewRow(itemString, TSM.Crafting.GetOptionalMatQuantity(context.selectedCraftString, private.optionalMats[slotId]))
 		end
 		wipe(private.optionalMatOrderTemp)
 		private.matsDB:BulkInsertEnd()
@@ -1078,6 +1083,12 @@ function private.FSMCreate()
 				private.optionalMats[k] = nil
 			end
 		end
+		for _, itemString, dataSlotIndex in TSM.Crafting.QualityMatIterator(context.selectedCraftString) do
+			local _, matList = strmatch(itemString, "q:(%d):(.+)")
+			if not private.optionalMats[dataSlotIndex] then
+				private.optionalMats[dataSlotIndex] = strmatch(matList, "^(%d+)")
+			end
+		end
 		fsmPrivate.UpdateRecipeTooltip(context)
 		local spellId = CraftString.GetSpellId(context.selectedCraftString)
 		local rank = CraftString.GetRank(context.selectedCraftString)
@@ -1176,9 +1187,11 @@ function private.FSMCreate()
 			matsFrame:GetElement("optionalMatsBtn")
 				:SetContext(context.selectedCraftString)
 				:Show()
+				:Draw()
 		else
 			matsFrame:GetElement("optionalMatsBtn")
 				:Hide()
+				:Draw()
 		end
 		local spellId = CraftString.GetSpellId(context.selectedCraftString)
 		local level = CraftString.GetLevel(context.selectedCraftString)
@@ -1318,7 +1331,7 @@ function private.FSMCreate()
 		if private.IsProfessionLoaded() and context.selectedCraftString then
 			local toolsStr, hasTools = TSM.Crafting.ProfessionUtil.GetRecipeToolInfo(context.selectedCraftString)
 			local detailsFrame = context.frame:GetElement("details")
-			local errorText = detailsFrame:GetElement("header.error")
+			local headerFrame = detailsFrame:GetElement("header")
 			local canCraft, errStr = false, nil
 			local spellId = CraftString.GetSpellId(context.selectedCraftString)
 			local rank = CraftString.GetRank(context.selectedCraftString)
@@ -1332,8 +1345,9 @@ function private.FSMCreate()
 			else
 				canCraft = true
 			end
-			errorText:SetText(errStr or "")
-				:Draw()
+			headerFrame:GetElement("error")
+				:SetText(errStr or "")
+			headerFrame:Draw()
 			local currentProfession = TSM.Crafting.ProfessionState.GetCurrentProfession()
 			local isEnchant, vellumable = TSM.Crafting.ProfessionUtil.IsEnchant(context.selectedCraftString)
 			local _, resultItemString = TSM.Crafting.ProfessionUtil.GetResultInfo(context.selectedCraftString)
@@ -1404,6 +1418,7 @@ function private.FSMCreate()
 				context.recipeString = nil
 				context.craftingQuantity = nil
 				context.craftingType = nil
+				context.selectedCraftString = nil
 			end)
 			:AddTransition("ST_FRAME_CLOSED")
 			:AddTransition("ST_FRAME_OPEN_NO_PROFESSION")
@@ -1419,9 +1434,12 @@ function private.FSMCreate()
 		)
 		:AddState(FSM.NewState("ST_FRAME_OPEN_NO_PROFESSION")
 			:SetOnEnter(function(context)
+				context.frame:GetBaseElement():HideDialog()
 				context.recipeString = nil
 				context.craftingQuantity = nil
 				context.craftingType = nil
+				context.selectedCraftString = nil
+				wipe(private.optionalMats)
 				if not context.queueQuery then
 					context.queueQuery = TSM.Crafting.Queue.CreateQuery()
 					context.queueQuery:SetUpdateCallback(fsmPrivate.QueueUpdateCallback)
@@ -1462,6 +1480,7 @@ function private.FSMCreate()
 					recipeList:SetSelection(context.selectedCraftString)
 				end
 				fsmPrivate.UpdateContentPage(context)
+				fsmPrivate.UpdateOptionalMaterials(context)
 				fsmPrivate.UpdateFilter(context)
 				fsmPrivate.UpdateQueueFrame(context)
 				if not context.queueQuery then
@@ -1476,6 +1495,7 @@ function private.FSMCreate()
 				context.recipeQuery = nil
 				context.professionQuery:Release()
 				context.professionQuery = nil
+				context.selectedCraftString = nil
 			end)
 			:AddTransition("ST_FRAME_OPEN_NO_PROFESSION")
 			:AddTransition("ST_FRAME_CLOSED")
@@ -1502,7 +1522,7 @@ function private.FSMCreate()
 						:End()
 				end
 				if private.haveSkillUp then
-					context.recipeQuery:NotEqual("difficulty", Enum.TradeskillRelativeDifficulty.Trivial)
+					context.recipeQuery:NotEqual("difficulty", TSM.IsWowClassic() and "trivial" or Enum.TradeskillRelativeDifficulty.Trivial)
 				end
 				if private.haveMaterials then
 					context.recipeQuery:Custom(private.HaveMaterialsFilterHelper)
@@ -1637,9 +1657,6 @@ function private.ItemLinkedCallback(name, itemLink)
 		return
 	end
 	local input = private.professionFrame:GetElement("top.left.controls.filterInput")
-	if not input:HasFocus() then
-		return
-	end
 	input:SetValue(ItemInfo.GetName(ItemString.GetBase(itemLink)))
 		:SetFocused(false)
 		:Draw()

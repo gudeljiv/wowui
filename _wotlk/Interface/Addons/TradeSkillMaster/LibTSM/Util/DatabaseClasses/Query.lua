@@ -101,9 +101,6 @@ function DatabaseQuery:__init()
 	self._sortValueCache = {}
 	self._resultDependencies = {}
 	self._stream = Reactive.CreateStream()
-	self._stream:SetScript("OnPublisherCommit", function(stream, publisher)
-		stream:Send()
-	end)
 end
 
 function DatabaseQuery:_Acquire(db)
@@ -1106,7 +1103,7 @@ end
 ---Gets a publisher for query result changes.
 ---@return ReactivePublisher
 function DatabaseQuery:Publisher()
-	return self._stream:Publisher()
+	return self._stream:PublisherWithInitialValue(nil)
 end
 
 
