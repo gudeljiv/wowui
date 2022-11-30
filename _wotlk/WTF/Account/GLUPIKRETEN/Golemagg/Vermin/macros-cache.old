@@ -16,7 +16,6 @@ VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 /cast [stance:1/3] Bloodrage
 /cast [stance:1/3] Death Wish
 /cast [stance:2] Shield Wall
-/use Loatheb's Shadow
 END
 VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -51,6 +50,9 @@ VER 3 0000000001000015 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast Revenge
+/use [stance:2] 10
+/use [stance:2] 13
+/use [stance:2] 14
 END
 VER 3 0000000001000014 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Vigilance
