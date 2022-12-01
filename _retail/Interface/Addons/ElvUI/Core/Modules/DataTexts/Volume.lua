@@ -18,9 +18,22 @@ local Sound_GameSystem_GetOutputDriverNameByIndex = Sound_GameSystem_GetOutputDr
 local Sound_GameSystem_GetNumOutputDrivers = Sound_GameSystem_GetNumOutputDrivers
 local Sound_GameSystem_RestartSoundSystem = Sound_GameSystem_RestartSoundSystem
 
+local Sound_CVars = {
+	Sound_EnableAllSound = true,
+	Sound_EnableSFX = true,
+	Sound_EnableAmbience = true,
+	Sound_EnableDialog = true,
+	Sound_EnableMusic = true,
+	Sound_MasterVolume = true,
+	Sound_SFXVolume = true,
+	Sound_AmbienceVolume = true,
+	Sound_DialogVolume = true,
+	Sound_MusicVolume = true
+}
+
 local AudioStreams = {
 	{ Name = _G.MASTER, Volume = 'Sound_MasterVolume', Enabled = 'Sound_EnableAllSound' },
-	{ Name = _G.SOUND_VOLUME, Volume = 'Sound_SFXVolume', Enabled = 'Sound_EnableSFX' },
+	{ Name = _G.SOUND_VOLUME or _G.FX_VOLUME, Volume = 'Sound_SFXVolume', Enabled = 'Sound_EnableSFX' },
 	{ Name = _G.AMBIENCE_VOLUME, Volume = 'Sound_AmbienceVolume', Enabled = 'Sound_EnableAmbience' },
 	{ Name = _G.DIALOG_VOLUME, Volume = 'Sound_DialogVolume', Enabled = 'Sound_EnableDialog' },
 	{ Name = _G.MUSIC_VOLUME, Volume = 'Sound_MusicVolume', Enabled = 'Sound_EnableMusic' }
@@ -37,13 +50,9 @@ local function GetStreamString(stream, tooltip)
 	if not stream then stream = AudioStreams[1] end
 
 	local color = GetCVarBool(AudioStreams[1].Enabled) and GetCVarBool(stream.Enabled) and '00FF00' or 'FF3333'
-	local level = GetCVar(stream.Volume) * 100
+	local level = (GetCVar(stream.Volume) or 0) * 100
 
-	if tooltip then
-		return format('|cFF%s%.f%%|r', color, level)
-	else
-		return format('%s: |cFF%s%.f%%|r', stream.Name, color, level)
-	end
+	return (tooltip and format('|cFF%s%.f%%|r', color, level)) or format('%s: |cFF%s%.f%%|r', stream.Name, color, level)
 end
 
 local function SelectStream(_, ...)
@@ -71,8 +80,7 @@ local function SelectSoundOutput(_, ...)
 	Sound_GameSystem_RestartSoundSystem()
 end
 
-local numDevices = Sound_GameSystem_GetNumOutputDrivers()
-for i = 0, numDevices - 1 do
+for i = 0, Sound_GameSystem_GetNumOutputDrivers() - 1 do
 	tinsert(deviceMenu, { text = Sound_GameSystem_GetOutputDriverNameByIndex(i), checked = function() return i == tonumber(GetCVar('Sound_OutputDriverIndex')) end, func = SelectSoundOutput, arg1 = i })
 end
 
@@ -122,12 +130,13 @@ function OnEvent(self, event, arg1)
 	activeStream = AudioStreams[activeIndex]
 	panel = self
 
-	if event == 'ELVUI_FORCE_UPDATE' then
-		self:EnableMouseWheel(true)
-		self:SetScript('OnMouseWheel', onMouseWheel)
-	end
+	local force = event == 'ELVUI_FORCE_UPDATE'
+	if force or (event == 'CVAR_UPDATE' and (E.Retail and Sound_CVars[arg1] or arg1 == 'ELVUI_VOLUME')) then
+		if force then
+			self:EnableMouseWheel(true)
+			self:SetScript('OnMouseWheel', onMouseWheel)
+		end
 
-	if event == 'CVAR_UPDATE' and arg1 == 'ELVUI_VOLUME' or event == 'ELVUI_FORCE_UPDATE' then
 		self.text:SetText(GetStreamString(activeStream))
 	end
 end
@@ -135,17 +144,21 @@ end
 local function OnClick(self, button)
 	if button == 'LeftButton' then
 		if IsShiftKeyDown() then
-			ShowOptionsPanel(_G.VideoOptionsFrame, _G.GameMenuFrame, SOUND)
+			if E.Retail then
+				_G.Settings.OpenToCategory(_G.Settings.AUDIO_CATEGORY_ID)
+			else
+				ShowOptionsPanel(_G.VideoOptionsFrame, _G.GameMenuFrame, SOUND)
+			end
 			return
 		end
 
-		DT:SetEasyMenuAnchor(DT.EasyMenu, self)
-		_G.EasyMenu(menu, DT.EasyMenu, nil, nil, nil, 'MENU')
+		E:SetEasyMenuAnchor(E.EasyMenu, self)
+		_G.EasyMenu(menu, E.EasyMenu, nil, nil, nil, 'MENU')
 	elseif button == 'MiddleButton' then
 		SetCVar(AudioStreams[1].Enabled, GetCVarBool(AudioStreams[1].Enabled) and 0 or 1, 'ELVUI_VOLUME')
 	elseif button == 'RightButton' then
-		DT:SetEasyMenuAnchor(DT.EasyMenu, self)
-		_G.EasyMenu(IsShiftKeyDown() and deviceMenu or toggleMenu, DT.EasyMenu, nil, nil, nil, 'MENU')
+		E:SetEasyMenuAnchor(E.EasyMenu, self)
+		_G.EasyMenu(IsShiftKeyDown() and deviceMenu or toggleMenu, E.EasyMenu, nil, nil, nil, 'MENU')
 	end
 end
 

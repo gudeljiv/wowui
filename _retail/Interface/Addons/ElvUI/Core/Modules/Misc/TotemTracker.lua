@@ -2,6 +2,7 @@ local E, L, V, P, G = unpack(ElvUI)
 local T = E:GetModule('TotemTracker')
 
 local _G = _G
+local next = next
 local unpack = unpack
 
 local CreateFrame = CreateFrame
@@ -11,22 +12,41 @@ local MAX_TOTEMS = MAX_TOTEMS
 -- SHAMAN_TOTEM_PRIORITIES does not work here because we need to swap 3/4 instead of 1/2
 local priority = E.myclass == 'SHAMAN' and { [1]=1, [2]=2, [3]=4, [4]=3 } or STANDARD_TOTEM_PRIORITIES
 
-function T:Update()
-	for i = 1, MAX_TOTEMS do
-		local button = T.bar[priority[i]]
-		local totem = _G['TotemFrameTotem'..i]
-		if totem:IsShown() then
-			local _, _, startTime, duration, icon = GetTotemInfo(totem.slot)
+function T:UpdateButton(button, totem)
+	if not (button and totem) then return end
 
-			button:Show()
-			button.iconTexture:SetTexture(icon)
-			button.cooldown:SetCooldown(startTime, duration)
+	local haveTotem, _, startTime, duration, icon = GetTotemInfo(totem.slot)
 
+	button:SetShown(haveTotem and duration > 0)
+
+	if haveTotem then
+		button.iconTexture:SetTexture(icon)
+		button.cooldown:SetCooldown(startTime, duration)
+
+		if totem:GetParent() ~= button.holder then
 			totem:ClearAllPoints()
 			totem:SetParent(button.holder)
 			totem:SetAllPoints(button.holder)
-		else
-			button:Hide()
+		end
+	end
+end
+
+function T:HideTotem()
+	T:UpdateButton(T.bar[priority[self.layoutIndex]], self)
+end
+
+function T:Update()
+	if E.Retail then
+		for totem in next, _G.TotemFrame.totemPool.activeObjects do
+			T:UpdateButton(T.bar[priority[totem.layoutIndex]], totem)
+
+			if totem:GetScript('OnHide') ~= T.HideTotem then
+				totem:SetScript('OnHide', T.HideTotem)
+			end
+		end
+	else
+		for i = 1, MAX_TOTEMS do
+			T:UpdateButton(T.bar[priority[i]], _G['TotemFrameTotem'..i])
 		end
 	end
 end

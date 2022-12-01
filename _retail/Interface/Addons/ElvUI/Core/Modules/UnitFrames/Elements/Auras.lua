@@ -21,10 +21,19 @@ UF.SideAnchor = { TOP = true, BOTTOM = true, LEFT = true, RIGHT = true }
 UF.GrowthPoints = { UP = 'BOTTOM', DOWN = 'TOP', RIGHT = 'LEFT', LEFT = 'RIGHT' }
 UF.MatchGrowthY = { TOP = 'TOP', BOTTOM = 'BOTTOM' }
 UF.MatchGrowthX = { LEFT = 'LEFT', RIGHT = 'RIGHT' }
+UF.SourceStacks = { -- stack any source
+	[370898] = 'Permeating Chill'	-- Evoker
+}
 UF.ExcludeStacks = {
-	[113862] = 'Greater Invisibility', -- Mage
-	[295378] = 'Concentrated Flame', -- Heart of Azeroth
-	[324631] = 'Fleshcraft' -- Necrolord
+	[113862] = 'Greater Invisibility',	-- Mage
+	[295378] = 'Concentrated Flame',	-- Heart of Azeroth
+	[324631] = 'Fleshcraft',			-- Necrolord
+
+	-- Rogue Animacharges
+	[323560] = 'Echoing Reprimand',	-- 2 Stack
+	[354838] = 'Echoing Reprimand',	-- 3 Stack
+	[323558] = 'Echoing Reprimand',	-- 4 Stack
+	[323559] = 'Echoing Reprimand',	-- 5 Stack
 }
 
 UF.SmartPosition = {
@@ -58,8 +67,8 @@ UF.SmartPosition.FLUID_DEBUFFS_ON_BUFFS = E:CopyTable({fluid = true}, UF.SmartPo
 function UF:Construct_Buffs(frame)
 	local buffs = CreateFrame('Frame', '$parentBuffs', frame)
 	buffs.PreSetPosition = self.SortAuras
-	buffs.PostCreateIcon = self.Construct_AuraIcon
-	buffs.PostUpdateIcon = self.PostUpdateAura
+	buffs.PostCreateButton = self.Construct_AuraIcon
+	buffs.PostUpdateButton = self.PostUpdateAura
 	buffs.SetPosition = self.SetPosition
 	buffs.PreUpdate = self.PreUpdateAura
 	buffs.CustomFilter = self.AuraFilter
@@ -76,8 +85,8 @@ end
 function UF:Construct_Debuffs(frame)
 	local debuffs = CreateFrame('Frame', '$parentDebuffs', frame)
 	debuffs.PreSetPosition = self.SortAuras
-	debuffs.PostCreateIcon = self.Construct_AuraIcon
-	debuffs.PostUpdateIcon = self.PostUpdateAura
+	debuffs.PostCreateButton = self.Construct_AuraIcon
+	debuffs.PostUpdateButton = self.PostUpdateAura
 	debuffs.SetPosition = self.SetPosition
 	debuffs.PreUpdate = self.PreUpdateAura
 	debuffs.CustomFilter = self.AuraFilter
@@ -201,25 +210,24 @@ end
 function UF:Construct_AuraIcon(button)
 	button:SetTemplate(nil, nil, nil, nil, true)
 
-	button.cd:SetReverse(true)
-	button.cd:SetDrawEdge(false)
-	button.cd:SetInside(button, UF.BORDER, UF.BORDER)
+	button.Cooldown:SetReverse(true)
+	button.Cooldown:SetDrawEdge(false)
+	button.Cooldown:SetInside(button, UF.BORDER, UF.BORDER)
 
-	button.icon:SetInside(button, UF.BORDER, UF.BORDER)
-	button.icon:SetDrawLayer('ARTWORK')
+	button.Icon:SetInside(button, UF.BORDER, UF.BORDER)
+	button.Icon:SetDrawLayer('ARTWORK')
 
-	button.count:ClearAllPoints()
-	button.count:Point('BOTTOMRIGHT', 1, 1)
-	button.count:SetJustifyH('RIGHT')
+	button.Count:ClearAllPoints()
+	button.Count:Point('BOTTOMRIGHT', 1, 1)
+	button.Count:SetJustifyH('RIGHT')
 
-	button.overlay:SetTexture()
-	button.stealable:SetTexture()
+	button.Overlay:SetTexture()
+	button.Stealable:SetTexture()
 
 	button:RegisterForClicks('RightButtonUp')
 	button:SetScript('OnClick', UF.Aura_OnClick)
 
-	button.cd.CooldownOverride = 'unitframe'
-	E:RegisterCooldown(button.cd)
+	E:RegisterCooldown(button.Cooldown, 'unitframe')
 
 	local auras = button:GetParent()
 	local frame = auras:GetParent()
@@ -232,10 +240,10 @@ function UF:UpdateAuraSettings(button)
 	local db = button.db
 	if db then
 		local point = db.countPosition or 'CENTER'
-		button.count:ClearAllPoints()
-		button.count:SetJustifyH(point:find('RIGHT') and 'RIGHT' or 'LEFT')
-		button.count:Point(point, db.countXOffset, db.countYOffset)
-		button.count:FontTemplate(LSM:Fetch('font', db.countFont), db.countFontSize, db.countFontOutline)
+		button.Count:ClearAllPoints()
+		button.Count:SetJustifyH(point:find('RIGHT') and 'RIGHT' or 'LEFT')
+		button.Count:Point(point, db.countXOffset, db.countYOffset)
+		button.Count:FontTemplate(LSM:Fetch('font', db.countFont), db.countFontSize, db.countFontOutline)
 	end
 
 	if button.auraInfo then
@@ -244,7 +252,7 @@ function UF:UpdateAuraSettings(button)
 		button.auraInfo = {}
 	end
 
-	button.needsIconTrim = true
+	button.needsButtonTrim = true
 	button.needsUpdateCooldownPosition = true
 end
 
@@ -261,13 +269,13 @@ function UF:EnableDisable_Auras(frame)
 end
 
 function UF:UpdateAuraCooldownPosition(button)
-	button.cd.timer.text:ClearAllPoints()
+	button.Cooldown.timer.text:ClearAllPoints()
 	local point = (button.db and button.db.durationPosition) or 'CENTER'
 	if point == 'CENTER' then
-		button.cd.timer.text:Point(point, 1, 0)
+		button.Cooldown.timer.text:Point(point, 1, 0)
 	else
 		local bottom, right = point:find('BOTTOM'), point:find('RIGHT')
-		button.cd.timer.text:Point(point, right and -1 or 1, bottom and 1 or -1)
+		button.Cooldown.timer.text:Point(point, right and -1 or 1, bottom and 1 or -1)
 	end
 
 	button.needsUpdateCooldownPosition = nil
@@ -443,15 +451,14 @@ function UF:PostUpdateAura(_, button)
 	end
 
 	button:SetBackdropBorderColor(r, g, b)
-	button.icon:SetDesaturated(button.isDebuff and enemyNPC and button.canDesaturate)
-	button.matches = nil -- stackAuras
+	button.Icon:SetDesaturated(button.isDebuff and enemyNPC and button.canDesaturate)
 
-	if button.needsIconTrim then
+	if button.needsButtonTrim then
 		AB:TrimIcon(button)
-		button.needsIconTrim = nil
+		button.needsButtonTrim = nil
 	end
 
-	if button.needsUpdateCooldownPosition and (button.cd and button.cd.timer and button.cd.timer.text) then
+	if button.needsUpdateCooldownPosition and (button.Cooldown and button.Cooldown.timer and button.Cooldown.timer.text) then
 		UF:UpdateAuraCooldownPosition(button)
 	end
 end
@@ -489,7 +496,7 @@ function UF:ConvertFilters(auras, priority)
 
 	local special, filters = G.unitframe.specialFilters, E.global.unitframe.aurafilters
 
-	for _, name in next, {strsplit(',', priority)} do
+	for _, name in next, { strsplit(',', priority) } do
 		local friend, enemy = strmatch(name, '^Friendly:([^,]*)'), strmatch(name, '^Enemy:([^,]*)')
 		local real = friend or enemy or name
 		local custom = filters[real]
@@ -508,7 +515,7 @@ function UF:ConvertFilters(auras, priority)
 	end
 end
 
-function UF:CheckFilter(source, spellName, spellID, canDispel, isFriend, isPlayer, unitIsCaster, myPet, otherPet, isBossDebuff, allowDuration, noDuration, castByPlayer, nameplateShowSelf, nameplateShowAll, filterList)
+function UF:CheckFilter(source, spellName, spellID, canDispel, isFriend, isPlayer, unitIsCaster, myPet, otherPet, isBossDebuff, allowDuration, noDuration, isMount, castByPlayer, nameplateShowSelf, nameplateShowAll, filterList)
 	for _, data in next, filterList do
 		local status = data.status
 		local skip = (status == 1 and not isFriend) or (status == 2 and isFriend)
@@ -533,6 +540,7 @@ function UF:CheckFilter(source, spellName, spellID, canDispel, isFriend, isPlaye
 				local name = data.name
 				local found = (allowDuration and ((name == 'Personal' and isPlayer)
 					or (name == 'nonPersonal' and not isPlayer)
+					or (name == 'Mount' and isMount)
 					or (name == 'Boss' and isBossDebuff)
 					or (name == 'MyPet' and myPet)
 					or (name == 'OtherPet' and otherPet)
@@ -546,6 +554,7 @@ function UF:CheckFilter(source, spellName, spellID, canDispel, isFriend, isPlaye
 				-- Blacklists
 				or ((name == 'blockCastByPlayers' and castByPlayer)
 				or (name == 'blockNoDuration' and noDuration)
+				or (name == 'blockMount' and isMount)
 				or (name == 'blockNonPersonal' and not isPlayer)
 				or (name == 'blockDispellable' and canDispel)
 				or (name == 'blockNotDispellable' and not canDispel)) and 0
@@ -573,16 +582,20 @@ function UF:AuraFilter(unit, button, name, icon, count, debuffType, duration, ex
 	if not db then return true end
 
 	if db.stackAuras and not UF.ExcludeStacks[spellID] then
-		local matching = source and castByPlayer and format('%s:%s', source, name) or name
+		local matching = source and castByPlayer and format('%s:%s', UF.SourceStacks[spellID] or source, name) or name
+		local amount = (count and count > 0 and count) or 1
 		local stack = self.stacks[matching]
 		if not stack then
 			self.stacks[matching] = button
+			button.matches = amount
 		elseif stack.texture == icon then
-			stack.matches = (stack.matches or 1) + ((count and count > 0 and count) or 1)
-			stack.count:SetText(stack.matches)
+			stack.matches = (stack.matches or 1) + amount
+			stack.Count:SetText(stack.matches)
 
 			return false
 		end
+	elseif button.matches then
+		button.matches = nil -- stackAuras
 	end
 
 	if UF:AuraUnchanged(button.auraInfo, name, icon, count, debuffType, duration, expiration, source, isStealable, nameplateShowPersonal, spellID, canApplyAura, isBossDebuff, castByPlayer, nameplateShowAll) then
@@ -614,11 +627,12 @@ function UF:AuraFilter(unit, button, name, icon, count, debuffType, duration, ex
 	button.name = name
 	button.priority = 0
 
+	local isMount = E.MountIDs[spellID]
 	local noDuration = (not duration or duration == 0)
 	local allowDuration = noDuration or (duration and duration > 0 and (not db.maxDuration or db.maxDuration == 0 or duration <= db.maxDuration) and (not db.minDuration or db.minDuration == 0 or duration >= db.minDuration))
 
 	if self.filterList then
-		local filterCheck, spellPriority = UF:CheckFilter(source, name, spellID, button.canDispel, button.isFriend, button.isPlayer, button.unitIsCaster, button.myPet, button.otherPet, isBossDebuff, allowDuration, noDuration, castByPlayer, nameplateShowPersonal, nameplateShowAll, self.filterList)
+		local filterCheck, spellPriority = UF:CheckFilter(source, name, spellID, button.canDispel, button.isFriend, button.isPlayer, button.unitIsCaster, button.myPet, button.otherPet, isBossDebuff, allowDuration, noDuration, isMount, castByPlayer, nameplateShowPersonal, nameplateShowAll, self.filterList)
 		if spellPriority then button.priority = spellPriority end -- this is the only difference from auarbars code
 		button.filterPass = filterCheck
 		return filterCheck

@@ -274,6 +274,8 @@ RXPGuides.RegisterGuide([[
 #subgroup Herbalism
 << Alliance
 #name 1-375 Alliance
+
+
 step << Mage
     #completewith next
     .zone Stormwind City >> Teleport to Stormwind

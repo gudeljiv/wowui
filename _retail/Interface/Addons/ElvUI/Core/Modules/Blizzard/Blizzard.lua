@@ -71,8 +71,7 @@ function B:Initialize()
 		B:DisableHelpTip()
 		B:DisableNPE()
 		B:SkinBlizzTimers()
-		B:PositionTalkingHead()
-		B:PositionVehicleFrame()
+		B:HandleTalkingHead()
 
 		E:CreateMover(_G.LossOfControlFrame, 'LossControlMover', L["Loss Control Icon"])
 
@@ -83,13 +82,17 @@ function B:Initialize()
 			B:PositionAltPowerBar()
 			B:SkinAltPowerBar()
 		end
-	elseif (E.TBC or E.Classic) and E.db.general.objectiveTracker then
-		B:QuestWatch_MoveFrames()
-		hooksecurefunc('QuestWatch_Update', B.QuestWatch_AddQuestClick)
 	end
 
-	if (E.Retail or E.Wrath) and not E:IsAddOnEnabled('DugisGuideViewerZ') and not E:IsAddOnEnabled('!KalielsTracker') then
-		B:MoveObjectiveFrame()
+	if not E.Classic then
+		B:PositionVehicleFrame()
+
+		if not (E:IsAddOnEnabled('DugisGuideViewerZ') or E:IsAddOnEnabled('!KalielsTracker')) then
+			B:MoveObjectiveFrame()
+		end
+	elseif E.db.general.objectiveTracker then -- classic check
+		B:QuestWatch_MoveFrames()
+		hooksecurefunc('QuestWatch_Update', B.QuestWatch_AddQuestClick)
 	end
 
 	-- Battle.Net Frame

@@ -1,7 +1,6 @@
-VER 3 000000000100001B " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast Concussion Blow
-/cast Bloodrage
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@cursor] Saronite Bomb
 END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -74,7 +73,16 @@ VER 3 000000000100001A " " "INV_MISC_QUESTIONMARK"
 /cast [stance:1] Retaliation
 /cast [stance:2] Shield Wall
 END
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip 
-/cast [@cursor] Saronite Bomb
+VER 3 000000000100001B " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Concussion Blow
+/cast Bloodrage
+END
+VER 3 000000000100001C " " "INV_MISC_QUESTIONMARK"
+#showtooltip 15
+/use 15
+END
+VER 3 000000000100001D " " "INV_MISC_QUESTIONMARK"
+#showtooltip 10
+/use 10
 END

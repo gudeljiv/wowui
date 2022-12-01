@@ -2,7 +2,8 @@ local E, L, V, P, G = unpack(ElvUI)
 local S = E:GetModule('Skins')
 
 local _G = _G
-local gsub, pairs, ipairs, select, unpack, strmatch, strfind = gsub, pairs, ipairs, select, unpack, strmatch, strfind
+local gsub, next, strmatch, strfind = gsub, next, strmatch, strfind
+local pairs, ipairs, unpack = pairs, ipairs, unpack
 
 local GetMoney = GetMoney
 local GetQuestID = GetQuestID
@@ -49,13 +50,19 @@ end
 local function HandleReward(frame)
 	if not frame then return end
 
+	for _, Region in next, { frame:GetRegions() } do
+		if Region:IsObjectType('Texture') and Region:GetTexture() == [[Interface\Spellbook\Spellbook-Parts]] then
+			Region:SetTexture('')
+		end
+	end
+
 	if frame.Icon then
 		frame.Icon:SetDrawLayer('ARTWORK')
 		S:HandleIcon(frame.Icon, true)
-	end
 
-	if frame.IconBorder then
-		frame.IconBorder:Kill()
+		if frame.IconBorder then
+			S:HandleIconBorder(frame.IconBorder, frame.Icon.backdrop)
+		end
 	end
 
 	if frame.Count then
@@ -81,13 +88,6 @@ local function HandleReward(frame)
 		frame.CircleBackground:SetAlpha(0)
 		frame.CircleBackgroundGlow:SetAlpha(0)
 	end
-
-	for i = 1, frame:GetNumRegions() do
-		local Region = select(i, frame:GetRegions())
-		if Region and Region:IsObjectType('Texture') and Region:GetTexture() == [[Interface\Spellbook\Spellbook-Parts]] then
-			Region:SetTexture('')
-		end
-	end
 end
 
 local function NewSealStyle()
@@ -101,7 +101,7 @@ function S:QuestInfo_StyleScrollFrame(scrollFrame, widthOverride, heightOverride
 	end
 
 	if not scrollFrame.spellTex then
-		scrollFrame.spellTex = scrollFrame:CreateTexture(nil, 'BACKGROUND', 1)
+		scrollFrame.spellTex = scrollFrame:CreateTexture(nil, 'BACKGROUND', nil, 1)
 	end
 
 	local material = GetQuestBackgroundMaterial()
@@ -183,14 +183,12 @@ function S:QuestInfoItem_OnClick() -- self is not S
 end
 
 function S:QuestLogQuests_Update() -- self is not S
-	for i = 1, _G.QuestMapFrame.QuestsFrame.Contents:GetNumChildren() do
-		local child = select(i, _G.QuestMapFrame.QuestsFrame.Contents:GetChildren())
-		if child and child.ButtonText and not child.questID then
+	for _, child in next, { _G.QuestMapFrame.QuestsFrame.Contents:GetChildren() } do
+		if child.ButtonText and not child.questID then
 			child:Size(16, 16)
 
-			for x = 1, child:GetNumRegions() do
-				local tex = select(x, child:GetRegions())
-				if tex and tex.GetAtlas then
+			for _, tex in next, { child:GetRegions() } do
+				if tex.GetAtlas then
 					local atlas = tex:GetAtlas()
 					if atlas == 'Campaign_HeaderIcon_Closed' or atlas == 'Campaign_HeaderIcon_ClosedPressed' then
 						tex:SetTexture(E.Media.Textures.PlusButton)
@@ -220,8 +218,6 @@ function S:QuestInfo_Display(parentFrame) -- self is template, not S
 		end
 
 		HandleReward(questItem)
-
-		S:HandleIconBorder(questItem.IconBorder, questItem.Icon.backdrop)
 
 		questItem.NameFrame:Hide()
 		questItem.Name:SetTextColor(1, 1, 1)
@@ -272,6 +268,11 @@ function S:QuestInfo_Display(parentFrame) -- self is template, not S
 			local r, g, b = followerReward.PortraitFrame.PortraitRingQuality:GetVertexColor()
 			followerReward.PortraitFrame.squareBG:SetBackdropBorderColor(r, g, b)
 		end
+	end
+
+	-- MajorFaction Rewards thing
+	for spellIcon in rewardsFrame.reputationRewardPool:EnumerateActive() do
+		HandleReward(spellIcon)
 	end
 
 	if E.private.skins.parchmentRemoverEnable then
@@ -444,11 +445,11 @@ function S:BlizzardQuestFrames()
 	_G.QuestRewardScrollChildFrame:StripTextures(true)
 	_G.QuestFrameProgressPanel:StripTextures(true)
 	_G.QuestFrameRewardPanel:StripTextures(true)
-	S:HandleButton(_G.QuestFrameAcceptButton)
-	S:HandleButton(_G.QuestFrameDeclineButton)
-	S:HandleButton(_G.QuestFrameCompleteButton)
-	S:HandleButton(_G.QuestFrameGoodbyeButton)
-	S:HandleButton(_G.QuestFrameCompleteQuestButton)
+	S:HandleButton(_G.QuestFrameAcceptButton, true)
+	S:HandleButton(_G.QuestFrameDeclineButton, true)
+	S:HandleButton(_G.QuestFrameCompleteButton, true)
+	S:HandleButton(_G.QuestFrameGoodbyeButton, true)
+	S:HandleButton(_G.QuestFrameCompleteQuestButton, true)
 
 	for i = 1, 6 do
 		local button = _G['QuestProgressItem'..i]

@@ -14,12 +14,12 @@ function S:Blizzard_Channels()
 	CreateChannelPopup:StripTextures()
 	CreateChannelPopup:SetTemplate('Transparent')
 
+	S:HandleButton(ChannelFrame.SettingsButton) -- using -4, 4
 	S:HandleButton(ChannelFrame.NewButton)
-	S:HandleButton(ChannelFrame.SettingsButton)
+	ChannelFrame.NewButton:ClearAllPoints()
+	ChannelFrame.NewButton:Point('BOTTOMLEFT', ChannelFrame, 4, 4) -- make it match settings button
 
-	S:HandleScrollBar(ChannelFrame.ChannelRoster.ScrollFrame.scrollBar)
-	ChannelFrame.ChannelRoster.ScrollFrame.scrollBar:Point('TOPLEFT', ChannelFrame.ChannelRoster.ScrollFrame, 'TOPRIGHT', 1, -13)
-	ChannelFrame.ChannelRoster.ScrollFrame.scrollBar:Point('BOTTOMLEFT', ChannelFrame.ChannelRoster.ScrollFrame, 'BOTTOMRIGHT', 1, 13)
+	S:HandleTrimScrollBar(ChannelFrame.ChannelRoster.ScrollBar)
 
 	S:HandleScrollBar(ChannelFrame.ChannelList.ScrollBar)
 	ChannelFrame.ChannelList.ScrollBar:Point('BOTTOMLEFT', ChannelFrame.ChannelList, 'BOTTOMRIGHT', 0, 15)

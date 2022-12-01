@@ -1,28 +1,22 @@
 local E, L, V, P, G = unpack(ElvUI)
 local B = E:GetModule('Bags')
 local AB = E:GetModule('ActionBars')
+local LSM = E.Libs.LSM
 
 local _G = _G
 local gsub = gsub
 local ipairs = ipairs
 local unpack = unpack
 local tinsert = tinsert
+local hooksecurefunc = hooksecurefunc
 
-local LSM = E.Libs.LSM
 local CreateFrame = CreateFrame
 local GameTooltip = GameTooltip
-local GetBagSlotFlag = GetBagSlotFlag
 local GetCVarBool = GetCVarBool
-local IsModifiedClick = IsModifiedClick
 local RegisterStateDriver = RegisterStateDriver
 local CalculateTotalNumberOfFreeBagSlots = CalculateTotalNumberOfFreeBagSlots
-local KeybindFrames_InQuickKeybindMode = KeybindFrames_InQuickKeybindMode
-local BackpackButton_OnModifiedClick = BackpackButton_OnModifiedClick
-local BackpackButton_OnClick = BackpackButton_OnClick
 
 local NUM_BAG_FRAMES = NUM_BAG_FRAMES
-local LE_BAG_FILTER_FLAG_EQUIPMENT = LE_BAG_FILTER_FLAG_EQUIPMENT
-local NUM_LE_BAG_FILTER_FLAGS = NUM_LE_BAG_FILTER_FLAGS
 
 local commandNames = {
 	[-1] = 'TOGGLEBACKPACK',
@@ -72,16 +66,24 @@ function B:KeyRing_OnLeave()
 end
 
 function B:SkinBag(bag)
-	local icon = _G[bag:GetName()..'IconTexture']
+	local icon = bag.icon or _G[bag:GetName()..'IconTexture']
 	bag.oldTex = icon:GetTexture()
 
-	bag:StripTextures()
+	bag:StripTextures(E.Retail)
 	bag:SetTemplate()
 	bag:StyleButton(true)
-	bag.IconBorder:Kill()
+
+	if E.Retail then
+		bag:GetNormalTexture():SetAlpha(0)
+		bag:GetHighlightTexture():SetAlpha(0)
+		bag.CircleMask:Hide()
+
+		icon.Show = nil
+		icon:Show()
+	end
 
 	icon:SetInside()
-	icon:SetTexture(bag.oldTex == 1721259 and E.Media.Textures.Backpack or bag.oldTex)
+	icon:SetTexture((not bag.oldTex or bag.oldTex == 1721259) and E.Media.Textures.Backpack or bag.oldTex)
 	icon:SetTexCoord(unpack(E.TexCoords))
 end
 
@@ -147,27 +149,7 @@ function B:SizeAndPositionBagBar()
 			end
 		end
 
-		for j = LE_BAG_FILTER_FLAG_EQUIPMENT, NUM_LE_BAG_FILTER_FLAGS do
-			if GetBagSlotFlag(i - 1, j) then -- active
-				if E.Retail then
-					button.filterIcon:SetTexture(B.BAG_FILTER_ICONS[j])
-					button.filterIcon:SetShown(E.db.bags.showAssignedIcon)
-				end
-
-				local r, g, b, a = unpack(B.AssignmentColors[j])
-
-				button.forcedBorderColors = {r, g, b, a}
-				button:SetBackdropBorderColor(r, g, b, a)
-				break -- this loop
-			else
-				if E.Retail then
-					button.filterIcon:SetShown(false)
-				end
-
-				button.forcedBorderColors = nil
-				button:SetBackdropBorderColor(unpack(E.media.bordercolor))
-			end
-		end
+		B:GetBagAssignedInfo(button)
 	end
 
 	local btnSize = bagBarSize * (NUM_BAG_FRAMES + 1)
@@ -195,31 +177,28 @@ function B:UpdateMainButtonCount()
 	mainCount:SetText(CalculateTotalNumberOfFreeBagSlots())
 end
 
-function B:MainMenuBarBackpackButton_OnClick(button)
-	if E.Retail and (E.private.actionbar.enable and AB.KeyBinder.active or KeybindFrames_InQuickKeybindMode()) then return end
-
-	if IsModifiedClick() then
-		BackpackButton_OnModifiedClick(self, button)
-	else
-		BackpackButton_OnClick(self, button)
-	end
-end
-
 function B:BagButton_OnClick(key)
 	if E.Retail and key == 'RightButton' then
 		B.AssignBagDropdown.holder = self
 		_G.ToggleDropDownMenu(1, nil, B.AssignBagDropdown, 'cursor')
-	elseif self.bagID == 0 then
-		B.MainMenuBarBackpackButton_OnClick(self, key)
-	else
-		_G.BagSlotButton_OnClick(self)
+	end
+end
+
+function B:BagButton_UpdateTextures()
+	local pushed = self:GetPushedTexture()
+	pushed:SetInside()
+	pushed:SetColorTexture(0.9, 0.8, 0.1, 0.3)
+
+	if self.SlotHighlightTexture then
+		self.SlotHighlightTexture:SetColorTexture(1, 1, 1, 0.3)
+		self.SlotHighlightTexture:SetInside()
 	end
 end
 
 function B:LoadBagBar()
 	if not E.private.bags.bagBar then return end
 
-	B.BagBar = CreateFrame('Frame', 'ElvUIBags', E.UIParent)
+	B.BagBar = CreateFrame('Frame', 'ElvUIBagBar', E.UIParent)
 	B.BagBar:Point('TOPRIGHT', _G.RightChatPanel, 'TOPLEFT', -4, 0)
 	B.BagBar:CreateBackdrop(E.db.bags.transparent and 'Transparent', nil, nil, nil, nil, nil, nil, true)
 	B.BagBar:SetScript('OnEnter', B.BagBar_OnEnter)
@@ -241,6 +220,7 @@ function B:LoadBagBar()
 
 	tinsert(B.BagBar.buttons, _G.MainMenuBarBackpackButton)
 	B:SkinBag(_G.MainMenuBarBackpackButton)
+	B.BagButton_UpdateTextures(_G.MainMenuBarBackpackButton)
 
 	for i = 0, NUM_BAG_FRAMES-1 do
 		local b = _G['CharacterBag'..i..'Slot']
@@ -249,11 +229,29 @@ function B:LoadBagBar()
 		b:SetParent(B.BagBar)
 		B:SkinBag(b)
 
-		if not E.Retail then
+		if E.Retail then
+			hooksecurefunc(b, 'UpdateTextures', B.BagButton_UpdateTextures)
+		else
+			B.BagButton_UpdateTextures(b)
+
 			b.commandName = commandNames[i]
 		end
 
 		tinsert(B.BagBar.buttons, b)
+	end
+
+	local ReagentSlot = _G.CharacterReagentBag0Slot
+	if ReagentSlot then
+		ReagentSlot:SetParent(B.BagBar)
+		ReagentSlot:HookScript('OnEnter', B.BagButton_OnEnter)
+		ReagentSlot:HookScript('OnLeave', B.BagButton_OnLeave)
+
+		B:SkinBag(ReagentSlot)
+
+		tinsert(B.BagBar.buttons, ReagentSlot)
+
+		hooksecurefunc(ReagentSlot, 'UpdateTextures', B.BagButton_UpdateTextures)
+		hooksecurefunc(ReagentSlot, 'SetBarExpanded', B.SizeAndPositionBagBar)
 	end
 
 	local KeyRing = _G.KeyRingButton
@@ -272,18 +270,18 @@ function B:LoadBagBar()
 	end
 
 	for i, button in ipairs(B.BagBar.buttons) do
-		button.bagID = i - 1
+		button.BagID = i - 1
 
 		if E.Retail then -- Item Assignment
 			B:CreateFilterIcon(button)
 		end
 
 		if button ~= KeyRing then
-			button:SetScript('OnClick', B.BagButton_OnClick)
+			button:HookScript('OnClick', B.BagButton_OnClick)
 		end
 	end
 
-	E:CreateMover(B.BagBar, 'BagsMover', L["Bags"], nil, nil, nil, nil, nil, 'bags,general')
+	E:CreateMover(B.BagBar, 'BagsMover', L["Bag Bar"], nil, nil, nil, nil, nil, 'bags,general')
 	B.BagBar:SetPoint('BOTTOMLEFT', B.BagBar.mover)
 	B:RegisterEvent('BAG_SLOT_FLAGS_UPDATED', 'SizeAndPositionBagBar')
 	B:RegisterEvent('BAG_UPDATE_DELAYED', 'UpdateMainButtonCount')

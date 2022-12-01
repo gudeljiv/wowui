@@ -49,11 +49,11 @@ RXPCSettings = {
 	},
 	["profiles"] = {
 		["Mxyz - Golemagg"] = {
+			["hardcore"] = false,
 			["enableMinimapButton"] = false,
 			["enableTracker"] = false,
 			["frameHeight"] = 125.0001068115234,
 			["xprate"] = 1.5,
-			["hardcore"] = false,
 		},
 	},
 }

@@ -2,59 +2,65 @@ local E, L, V, P, G = unpack(ElvUI)
 local S = E:GetModule('Skins')
 
 local _G = _G
-local pairs, unpack = pairs, unpack
+local next, unpack = next, unpack
+local hooksecurefunc = hooksecurefunc
 
 function S:Blizzard_TrainerUI()
 	if not (E.private.skins.blizzard.enable and E.private.skins.blizzard.trainer) then return end
 
-	--Class Trainer Frame
-	local StripAllTextures = {
+	for _, object in next, {
 		_G.ClassTrainerScrollFrameScrollChild,
 		_G.ClassTrainerFrameSkillStepButton,
 		_G.ClassTrainerFrameBottomInset,
-	}
+	} do
+		object:StripTextures()
+	end
 
-	local buttons = {
-		_G.ClassTrainerTrainButton,
-	}
-
-	local KillTextures = {
+	for _, texture in next, {
 		_G.ClassTrainerFramePortrait,
 		_G.ClassTrainerScrollFrameScrollBarBG,
 		_G.ClassTrainerScrollFrameScrollBarTop,
 		_G.ClassTrainerScrollFrameScrollBarBottom,
 		_G.ClassTrainerScrollFrameScrollBarMiddle,
-	}
-
-	for _, object in pairs(StripAllTextures) do
-		object:StripTextures()
-	end
-
-	for _, texture in pairs(KillTextures) do
+	} do
 		texture:Kill()
 	end
 
-	for i = 1, #buttons do
-		buttons[i]:StripTextures()
-		S:HandleButton(buttons[i])
+	for _, button in next, { _G.ClassTrainerTrainButton } do
+		button:StripTextures()
+		S:HandleButton(button)
 	end
 
 	local ClassTrainerFrame = _G.ClassTrainerFrame
 	S:HandlePortraitFrame(ClassTrainerFrame)
 
-	for i= 1, #ClassTrainerFrame.scrollFrame.buttons do
-		local button = _G['ClassTrainerScrollFrameButton'..i]
-		button:StripTextures()
-		button:StyleButton()
-		button.icon:SetTexCoord(unpack(E.TexCoords))
-		button:CreateBackdrop()
-		button.backdrop:SetOutside(button.icon)
-		button.icon:SetParent(button.backdrop)
-		button.selectedTex:SetColorTexture(1, 1, 1, 0.3)
-		button.selectedTex:SetInside()
-	end
+	hooksecurefunc(ClassTrainerFrame.ScrollBox, 'Update', function(frame)
+		for _, button in next, { frame.ScrollTarget:GetChildren() } do
+			if not button.IsSkinned then
+				S:HandleIcon(button.icon, true)
+				button:CreateBackdrop('Transparent')
+				button.backdrop:Point('TOPLEFT', button.icon, 'TOPRIGHT', 1, 0)
+				button.backdrop:Point('BOTTOMRIGHT', button.icon, 'BOTTOMRIGHT', 253, 0)
 
-	S:HandleScrollBar(_G.ClassTrainerScrollFrameScrollBar)
+				button.name:SetParent(button.backdrop)
+				button.name:Point('TOPLEFT', button.icon, 'TOPRIGHT', 6, -2)
+				button.subText:SetParent(button.backdrop)
+				button.money:SetParent(button.backdrop)
+				button.money:Point('TOPRIGHT', button, 'TOPRIGHT', 5, -8)
+
+				button:SetNormalTexture(E.Media.Textures.Invisible)
+				button:SetHighlightTexture(E.Media.Textures.Invisible)
+				button.disabledBG:SetTexture()
+				button.selectedTex:SetInside(button.backdrop)
+				local r, g, b = unpack(E.media.rgbvaluecolor)
+				button.selectedTex:SetColorTexture(r, g, b, .25)
+
+				button.IsSkinned = true
+			end
+		end
+	end)
+
+	S:HandleTrimScrollBar(_G.ClassTrainerFrame.ScrollBar)
 	S:HandleDropDownBox(_G.ClassTrainerFrameFilterDropDown, 155)
 
 	ClassTrainerFrame:Height(ClassTrainerFrame:GetHeight() + 5)

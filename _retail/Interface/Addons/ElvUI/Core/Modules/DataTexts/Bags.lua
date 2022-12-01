@@ -3,16 +3,16 @@ local DT = E:GetModule('DataTexts')
 
 local format = format
 local strjoin = strjoin
-local GetBagName = GetBagName
 local ToggleAllBags = ToggleAllBags
-local GetBackpackCurrencyInfo = GetBackpackCurrencyInfo
-local GetContainerNumFreeSlots = GetContainerNumFreeSlots
-local GetContainerNumSlots = GetContainerNumSlots
 local GetInventoryItemQuality = GetInventoryItemQuality
 local GetInventoryItemTexture = GetInventoryItemTexture
 local GetItemQualityColor = GetItemQualityColor
-local C_CurrencyInfo_GetBackpackCurrencyInfo = C_CurrencyInfo.GetBackpackCurrencyInfo
-local MAX_WATCHED_TOKENS = MAX_WATCHED_TOKENS
+
+local GetBagName = GetBagName or (C_Container and C_Container.GetBagName)
+local GetContainerNumFreeSlots = GetContainerNumFreeSlots or (C_Container and C_Container.GetContainerNumFreeSlots)
+local GetContainerNumSlots = GetContainerNumSlots or (C_Container and C_Container.GetContainerNumSlots)
+
+local MAX_WATCHED_TOKENS = MAX_WATCHED_TOKENS or 3
 local NUM_BAG_SLOTS = NUM_BAG_SLOTS
 local CURRENCY = CURRENCY
 
@@ -79,17 +79,17 @@ local function OnEnter()
 
 	if E.Retail or E.Wrath then
 		for i = 1, MAX_WATCHED_TOKENS do
-			local info = E.Retail and C_CurrencyInfo_GetBackpackCurrencyInfo(i) or E.Wrath and {}
-			if E.Wrath then info.name, info.quantity, info.iconFileID, info.currencyTypesID = GetBackpackCurrencyInfo(i) end
-			if not (info and info.name) then break end
+			local info, name = DT:BackpackCurrencyInfo(i)
+			if not name then break end
 
 			if i == 1 then
 				DT.tooltip:AddLine(' ')
 				DT.tooltip:AddLine(CURRENCY)
 				DT.tooltip:AddLine(' ')
 			end
+
 			if info.quantity then
-				DT.tooltip:AddDoubleLine(format(iconString, info.iconFileID, info.name), info.quantity, 1, 1, 1, 1, 1, 1)
+				DT.tooltip:AddDoubleLine(format(iconString, info.iconFileID, name), info.quantity, 1, 1, 1, 1, 1, 1)
 			end
 		end
 	end

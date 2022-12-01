@@ -144,7 +144,7 @@ function NP:SetCVars()
 
 	NP:SetCVar('nameplateMotion', NP.db.motionType == 'STACKED' and 1 or 0)
 
-	if E.TBC or E.Wrath then
+	if E.Wrath then
 		NP:SetCVar('nameplateMaxDistance', NP.db.loadDistance)
 	end
 
@@ -450,7 +450,7 @@ function NP:GetClassAnchor()
 end
 
 function NP:SetupTarget(nameplate, removed)
-	if not NP.db.units then return end
+	if not (NP.db.units and NP.db.units.TARGET) then return end
 
 	local TCP = _G.ElvNP_TargetClassPower
 	local cp = NP.db.units.TARGET.classpower
@@ -817,7 +817,7 @@ local optionsTable = {
 	'ShowAll'
 }
 
-if E.TBC or E.Wrath then
+if E.Wrath then
 	tinsert(optionsTable, 'NameplateMaxDistanceSlider')
 end
 

@@ -10,14 +10,14 @@ function S:HelpFrame()
 	main:StripTextures()
 	main:CreateBackdrop('Transparent')
 	main.backdrop:SetOutside(main, 8, 8)
-	S:HandleCloseButton(_G.HelpFrameCloseButton, main.backdrop)
+	S:HandleCloseButton(main.CloseButton, main.backdrop)
 
 	local browser = _G.HelpBrowser
 	browser.BrowserInset:StripTextures()
 	browser:CreateBackdrop()
 	browser.backdrop:ClearAllPoints()
-	browser.backdrop:SetPoint('TOPLEFT', browser, 'TOPLEFT', -1, 1)
-	browser.backdrop:SetPoint('BOTTOMRIGHT', browser, 'BOTTOMRIGHT', 1, -2)
+	browser.backdrop:Point('TOPLEFT', browser, 'TOPLEFT', -1, 1)
+	browser.backdrop:Point('BOTTOMRIGHT', browser, 'BOTTOMRIGHT', 1, -2)
 end
 
 S:AddCallback('HelpFrame')

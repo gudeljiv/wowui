@@ -30,21 +30,24 @@ function E:Cooldown_BelowScale(cd)
 end
 
 function E:Cooldown_OnUpdate(elapsed)
+	if self.paused then return 0 end
+
 	local forced = elapsed == -1
 	if forced then
 		self.nextUpdate = 0
 	elseif self.nextUpdate > 0 then
 		self.nextUpdate = self.nextUpdate - elapsed
-		return
+		return 1
 	end
 
-	if not E:Cooldown_IsEnabled(self) then
-		E:Cooldown_StopTimer(self)
+	if not E:Cooldown_TimerEnabled(self) then
+		E:Cooldown_TimerStop(self)
+		return 2
 	else
 		local now = GetTime()
 
 		if self.endCooldown and now >= self.endCooldown then
-			E:Cooldown_StopTimer(self)
+			E:Cooldown_TimerStop(self)
 		elseif E:Cooldown_BelowScale(self) then
 			self.text:SetText('')
 			if not forced then
@@ -100,25 +103,27 @@ function E:Cooldown_OnSizeChanged(cd, width, force)
 	end
 end
 
-function E:Cooldown_IsEnabled(cd)
-	if cd.forceEnabled then
+function E:Cooldown_TimerEnabled(timer)
+	if timer.forceEnabled then
 		return true
-	elseif cd.forceDisabled then
+	elseif timer.forceDisabled then
 		return false
-	elseif cd.reverseToggle ~= nil then
-		return cd.reverseToggle
+	elseif timer.reverseToggle ~= nil then
+		return timer.reverseToggle
 	else
-		return E.db.cooldown.enable
+		return E:CooldownEnabled()
 	end
 end
 
-function E:Cooldown_ForceUpdate(cd)
-	E.Cooldown_OnUpdate(cd, -1)
-	cd:Show()
+function E:Cooldown_TimerUpdate(timer)
+	local status = E.Cooldown_OnUpdate(timer, -1)
+	if not status then
+		timer:Show()
+	end
 end
 
-function E:Cooldown_StopTimer(cd)
-	cd:Hide()
+function E:Cooldown_TimerStop(timer)
+	timer:Hide()
 end
 
 function E:Cooldown_Options(timer, db, parent)
@@ -143,7 +148,8 @@ function E:Cooldown_Options(timer, db, parent)
 	timer.roundTime = E.db.cooldown.roundTime
 
 	if db.reverse ~= nil then
-		timer.reverseToggle = (E.db.cooldown.enable and not db.reverse) or (db.reverse and not E.db.cooldown.enable)
+		local enabled = E:CooldownEnabled()
+		timer.reverseToggle = (enabled and not db.reverse) or (db.reverse and not enabled)
 	else
 		timer.reverseToggle = nil
 	end
@@ -211,6 +217,8 @@ end
 
 E.RegisteredCooldowns = {}
 function E:OnSetCooldown(start, duration, modRate)
+	if self.isHooked ~= 1 then return end
+
 	if not self.forceDisabled and (start and duration) and (duration > MIN_DURATION) then
 		local timer = self.timer or E:CreateCooldownTimer(self)
 		timer.start = start
@@ -218,22 +226,74 @@ function E:OnSetCooldown(start, duration, modRate)
 		timer.modRate = modRate
 		timer.endTime = start + duration
 		timer.endCooldown = timer.endTime - 0.05
+		timer.paused = nil -- a new cooldown was called
 
-		E:Cooldown_ForceUpdate(timer)
+		E:Cooldown_TimerUpdate(timer)
 	elseif self.timer then
-		E:Cooldown_StopTimer(self.timer)
+		E:Cooldown_TimerStop(self.timer)
 	end
 end
 
-function E:RegisterCooldown(cooldown)
+function E:OnPauseCooldown()
+	local timer = self.timer
+	if timer then
+		timer.paused = GetTime()
+	end
+end
+
+function E:OnResumeCooldown()
+	local timer = self.timer
+	if timer and timer.paused then
+		timer.endTime = timer.start + timer.duration + (GetTime() - timer.paused) -- calcuate time since paused
+		timer.endCooldown = timer.endTime - 0.05
+
+		timer.paused = nil
+
+		E:Cooldown_TimerUpdate(self.timer)
+	end
+end
+
+-- USED BY WEAKAURAS
+function E:CooldownEnabled()
+	return E.db.cooldown.enable
+end
+
+-- USED BY WEAKAURAS
+function E:ToggleCooldown(cooldown, switch)
+	cooldown.isHooked = switch and 1 or 0
+
+	if cooldown.timer then
+		if switch then
+			E:Cooldown_TimerUpdate(cooldown.timer)
+		else
+			E:Cooldown_TimerStop(cooldown.timer)
+		end
+	end
+end
+
+-- USED BY WEAKAURAS
+function E:RegisterCooldown(cooldown, module)
 	if not cooldown.isHooked then
 		hooksecurefunc(cooldown, 'SetCooldown', E.OnSetCooldown)
-		cooldown.isHooked = true
+
+		if cooldown.Pause then
+			hooksecurefunc(cooldown, 'Pause', E.OnPauseCooldown)
+			hooksecurefunc(cooldown, 'Resume', E.OnResumeCooldown)
+		end
 	end
 
+	E:ToggleCooldown(cooldown, true)
+
 	if not cooldown.isRegisteredCooldown then
-		local module = (cooldown.CooldownOverride or 'global')
-		if not E.RegisteredCooldowns[module] then E.RegisteredCooldowns[module] = {} end
+		if module then
+			cooldown.CooldownOverride = module
+		else
+			module = cooldown.CooldownOverride or 'global'
+		end
+
+		if not E.RegisteredCooldowns[module] then
+			E.RegisteredCooldowns[module] = {}
+		end
 
 		tinsert(E.RegisteredCooldowns[module], cooldown)
 		cooldown.isRegisteredCooldown = true
@@ -245,9 +305,9 @@ function E:ToggleBlizzardCooldownText(cd, timer, request)
 	if timer and cd and cd.SetHideCountdownNumbers then
 		local forceHide = cd.hideText or timer.hideBlizzard
 		if request then
-			return forceHide or E:Cooldown_IsEnabled(timer)
+			return forceHide or E:Cooldown_TimerEnabled(timer)
 		else
-			cd:SetHideCountdownNumbers(forceHide or E:Cooldown_IsEnabled(timer))
+			cd:SetHideCountdownNumbers(forceHide or E:Cooldown_TimerEnabled(timer))
 		end
 	end
 end
@@ -302,23 +362,39 @@ function E:UpdateCooldownOverride(module)
 	end
 end
 
-function E:GetCooldownColors(db)
-	if not db then db = E.db.cooldown end -- just incase someone calls this without a first arg use the global
-	local ab = E.db.actionbar.cooldown -- used only for target aura colors, they get pushed into the main table
+do
+	local function RGB(db) return E:CopyTable({r = 1, g = 1, b = 1}, db) end
+	local function HEX(db) return E:RGBToHex(db.r, db.g, db.b) end
+	local dummy9th = '|cFFffffff'
 
-	return
-	--> time colors (0 - 9) <-- 7 is mod rate, which is different from text colors (as mod rate has no indicator)
-	db.daysColor, db.hoursColor, db.minutesColor, db.secondsColor, db.expiringColor, db.mmssColor, db.hhmmColor, db.modRateColor, ab.targetAuraColor, ab.expiringAuraColor,
-	--> text colors (0 - 8) <--
-	E:RGBToHex(db.daysIndicator.r, db.daysIndicator.g, db.daysIndicator.b),
-	E:RGBToHex(db.hoursIndicator.r, db.hoursIndicator.g, db.hoursIndicator.b),
-	E:RGBToHex(db.minutesIndicator.r, db.minutesIndicator.g, db.minutesIndicator.b),
-	E:RGBToHex(db.secondsIndicator.r, db.secondsIndicator.g, db.secondsIndicator.b),
-	E:RGBToHex(db.expireIndicator.r, db.expireIndicator.g, db.expireIndicator.b),
-	E:RGBToHex(db.mmssColorIndicator.r, db.mmssColorIndicator.g, db.mmssColorIndicator.b),
-	E:RGBToHex(db.hhmmColorIndicator.r, db.hhmmColorIndicator.g, db.hhmmColorIndicator.b),
-	E:RGBToHex(ab.targetAuraIndicator.r, ab.targetAuraIndicator.g, ab.targetAuraIndicator.b),
-	E:RGBToHex(ab.expiringAuraIndicator.r, ab.expiringAuraIndicator.g, ab.expiringAuraIndicator.b)
+	function E:GetCooldownColors(db)
+		if not db then db = E.db.cooldown end -- just incase someone calls this without a first arg use the global
+		local ab = E.db.actionbar.cooldown -- used only for target aura colors, they get pushed into the main table
+
+		return
+		--> time colors (0 - 9) <-- 7 is mod rate, which is different from text colors (as mod rate has no indicator)
+		RGB(db.daysColor),
+		RGB(db.hoursColor),
+		RGB(db.minutesColor),
+		RGB(db.secondsColor),
+		RGB(db.expiringColor),
+		RGB(db.mmssColor),
+		RGB(db.hhmmColor),
+		RGB(db.modRateColor),
+		RGB(ab.targetAuraColor),
+		RGB(ab.expiringAuraColor),
+		--> text colors (0 - 9) <--
+		HEX(db.daysIndicator),
+		HEX(db.hoursIndicator),
+		HEX(db.minutesIndicator),
+		HEX(db.secondsIndicator),
+		HEX(db.expireIndicator),
+		HEX(db.mmssColorIndicator),
+		HEX(db.hhmmColorIndicator),
+		HEX(ab.targetAuraIndicator),
+		HEX(ab.expiringAuraIndicator),
+		dummy9th -- this shouldn't happen but ya know :)
+	end
 end
 
 function E:UpdateCooldownSettings(module)
@@ -328,9 +404,9 @@ function E:UpdateCooldownSettings(module)
 	-- global is the main call from config, all is the core file calls
 	local isModule = module and (module ~= 'global' and module ~= 'all') and E.db[module] and E.db[module].cooldown
 	if isModule then
-		if not E.TimeColors[module] then E.TimeColors[module] = {} end
-		if not E.TimeIndicatorColors[module] then E.TimeIndicatorColors[module] = {} end
-		db, timeColors, textColors = E.db[module].cooldown, E.TimeColors[module], E.TimeIndicatorColors[module]
+		if not timeColors[module] then timeColors[module] = {} end
+		if not textColors[module] then textColors[module] = {} end
+		db, timeColors, textColors = E.db[module].cooldown, timeColors[module], textColors[module]
 	end
 
 	--> color for TIME that has X remaining <--
@@ -354,6 +430,7 @@ function E:UpdateCooldownSettings(module)
 	textColors[6], -- hhmmColorIndicator
 	textColors[7], -- targetAuraIndicator
 	textColors[8], -- expiringAuraIndicator
+	textColors[9], -- dummy9th
 	_ = E:GetCooldownColors(db)
 
 	if module == 'actionbar' then	-- special population for target aura as they only have 2 colors (expiring or not)

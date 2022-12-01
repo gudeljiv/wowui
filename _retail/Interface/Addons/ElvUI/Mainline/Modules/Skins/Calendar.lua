@@ -2,7 +2,7 @@ local E, L, V, P, G = unpack(ElvUI)
 local S = E:GetModule('Skins')
 
 local _G = _G
-local next, select, unpack = next, select, unpack
+local next, unpack = next, unpack
 
 local CLASS_SORT_ORDER = CLASS_SORT_ORDER
 local CLASS_ICON_TCOORDS = CLASS_ICON_TCOORDS
@@ -17,20 +17,9 @@ local function SkinContainer(frame, container)
 	end
 end
 
-local function StripClassTextures(button)
-	for y = 1, button:GetNumRegions() do
-		local region = select(y, button:GetRegions())
-		if region:GetObjectType() == 'Texture' then
-			local texture = region:GetTexture()
-			if texture == [[Interface\Glues\CharacterCreate\UI-CharacterCreate-Classes]] then
-				local c = CLASS_ICON_TCOORDS[button.class]
-				region:SetTexCoord(c[1] + 0.02, c[2] - 0.02, c[3] + 0.02, c[4] - 0.02)
-				region:SetInside()
-			else
-				region:SetTexture(nil)
-			end
-		end
-	end
+local function StripClassTextures(button, class)
+	local tcoords = CLASS_ICON_TCOORDS[class]
+	button:SetTexCoord(tcoords[1] + .022, tcoords[2] - .025, tcoords[3] + .022, tcoords[4] - .025)
 end
 
 local function HandleEventIcon(icon)
@@ -70,7 +59,6 @@ function S:Blizzard_Calendar()
 	_G.CalendarMonthBackground:SetAlpha(0)
 	_G.CalendarYearBackground:SetAlpha(0)
 	_G.CalendarFrameModalOverlay:SetAlpha(.25)
-	_G.CalendarViewHolidayInfoTexture:SetAlpha(0)
 	_G.CalendarTexturePickerFrameButtonBackground:Hide()
 	_G.CalendarTexturePickerAcceptButtonBorder:Hide()
 	_G.CalendarTexturePickerCancelButtonBorder:Hide()
@@ -146,6 +134,7 @@ function S:Blizzard_Calendar()
 	_G.CalendarCreateEventFrame:SetTemplate('Transparent')
 	_G.CalendarCreateEventFrame:Point('TOPLEFT', CalendarFrame, 'TOPRIGHT', 3, -24)
 	_G.CalendarCreateEventFrame.Header:StripTextures()
+	S:HandleTrimScrollBar(_G.CalendarCreateEventInviteList.ScrollBar)
 
 	S:HandleButton(_G.CalendarCreateEventCreateButton, true)
 	S:HandleButton(_G.CalendarCreateEventMassInviteButton, true)
@@ -177,10 +166,11 @@ function S:Blizzard_Calendar()
 	_G.CalendarClassButton1:Point('TOPLEFT', _G.CalendarClassButtonContainer, 'TOPLEFT', E.PixelMode and 3 or 5, 0)
 
 	local lastClassButton
-	for index in next, CLASS_SORT_ORDER do
-		local button = _G['CalendarClassButton'..index]
-		local count = _G['CalendarClassButton'..index..'Count']
-		StripClassTextures(button)
+	for i, class in next, CLASS_SORT_ORDER do
+		local button = _G['CalendarClassButton'..i]
+		local count = _G['CalendarClassButton'..i..'Count']
+		StripClassTextures(button:GetNormalTexture(), class)
+		button:GetRegions():Hide()
 		button:SetTemplate()
 		button:Size(28)
 
@@ -205,7 +195,6 @@ function S:Blizzard_Calendar()
 	_G.CalendarTexturePickerFrame.Header:StripTextures()
 	_G.CalendarTexturePickerFrame:SetTemplate('Transparent')
 
-	S:HandleScrollBar(_G.CalendarTexturePickerScrollBar)
 	S:HandleButton(_G.CalendarTexturePickerAcceptButton, true)
 	S:HandleButton(_G.CalendarTexturePickerCancelButton, true)
 	S:HandleButton(_G.CalendarCreateEventInviteButton, true)
@@ -220,6 +209,7 @@ function S:Blizzard_Calendar()
 	S:HandleEditBox(_G.CalendarMassInviteMinLevelEdit)
 	S:HandleEditBox(_G.CalendarMassInviteMaxLevelEdit)
 	S:HandleCloseButton(_G.CalendarMassInviteCloseButton)
+	S:HandleButton(_G.CalendarMassInviteAcceptButton)
 
 	--Raid View
 	_G.CalendarViewRaidFrame:StripTextures()
@@ -244,7 +234,6 @@ function S:Blizzard_Calendar()
 	_G.CalendarViewEventInviteListSection:StripTextures()
 
 	S:HandleCloseButton(_G.CalendarViewEventCloseButton)
-	S:HandleScrollBar(_G.CalendarViewEventInviteListScrollFrameScrollBar)
 	S:HandleButton(_G.CalendarViewEventAcceptButton)
 	S:HandleButton(_G.CalendarViewEventTentativeButton)
 	S:HandleButton(_G.CalendarViewEventRemoveButton)
@@ -255,12 +244,8 @@ function S:Blizzard_Calendar()
 	_G.CalendarEventPickerFrame.Header:StripTextures()
 	_G.CalendarEventPickerFrame:SetTemplate('Transparent')
 
-	S:HandleScrollBar(_G.CalendarEventPickerScrollBar)
+	S:HandleTrimScrollBar(_G.CalendarEventPickerFrame.ScrollBar)
 	S:HandleButton(_G.CalendarEventPickerCloseButton, true)
-
-	S:HandleScrollBar(_G.CalendarCreateEventDescriptionScrollFrameScrollBar)
-	S:HandleScrollBar(_G.CalendarCreateEventInviteListScrollFrameScrollBar)
-	S:HandleScrollBar(_G.CalendarViewEventDescriptionScrollFrameScrollBar)
 end
 
 S:AddCallbackForAddon('Blizzard_Calendar')

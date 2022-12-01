@@ -27,7 +27,7 @@ local GetBindingKey = GetBindingKey
 local SetBinding = SetBinding
 local SaveBindings = SaveBindings
 local GetCurrentBindingSet = GetCurrentBindingSet
-local GetSpecialization = (E.Classic or E.TBC or E.Wrath and LCS.GetSpecialization) or GetSpecialization
+local GetSpecialization = (E.Classic or E.Wrath and LCS.GetSpecialization) or GetSpecialization
 
 local ERR_NOT_IN_COMBAT = ERR_NOT_IN_COMBAT
 local LE_PARTY_CATEGORY_HOME = LE_PARTY_CATEGORY_HOME
@@ -65,7 +65,6 @@ E.myname = UnitName('player')
 E.myrealm = GetRealmName()
 E.mynameRealm = format('%s - %s', E.myname, E.myrealm) -- contains spaces/dashes in realm (for profile keys)
 E.myspec = E.Retail and GetSpecialization()
-E.wowpatch, E.wowbuild, E.wowdate, E.wowtoc = GetBuildInfo()
 E.wowbuild = tonumber(E.wowbuild)
 E.physicalWidth, E.physicalHeight = GetPhysicalScreenSize()
 E.screenWidth, E.screenHeight = GetScreenWidth(), GetScreenHeight()
@@ -73,6 +72,7 @@ E.resolution = format('%dx%d', E.physicalWidth, E.physicalHeight)
 E.perfect = 768 / E.physicalHeight
 E.NewSign = [[|TInterface\OptionsFrame\UI-OptionsFrame-NewFeatureIcon:14:14|t]]
 E.TexturePath = [[Interface\AddOns\ElvUI\Media\Textures\]] -- for plugins?
+E.ClearTexture = E.Retail and 0 or '' -- used to clear: Set (Normal, Disabled, Checked, Pushed, Highlight) Texture
 E.UserList = {}
 
 -- oUF Defines
@@ -150,10 +150,16 @@ E.UIParent:SetPoint('BOTTOM')
 E.UIParent.origHeight = E.UIParent:GetHeight()
 E.snapBars[#E.snapBars + 1] = E.UIParent
 
-E.HiddenFrame = CreateFrame('Frame')
+E.UFParent = _G.ElvUFParent -- created in oUF
+E.UFParent:SetParent(E.UIParent)
+E.UFParent:SetFrameStrata('LOW')
+
+E.HiddenFrame = CreateFrame('Frame', nil, _G.UIParent)
+E.HiddenFrame:SetPoint('BOTTOM')
+E.HiddenFrame:SetSize(1,1)
 E.HiddenFrame:Hide()
 
-do -- used in optionsUI
+do -- used in options
 	E.DEFAULT_FILTER = {}
 	for filter, tbl in pairs(G.unitframe.aurafilters) do
 		E.DEFAULT_FILTER[filter] = tbl.type
@@ -229,7 +235,10 @@ function E:SetColorTable(t, data)
 	end
 
 	if t and (type(t) == 'table') then
-		t[1], t[2], t[3], t[4] = E:UpdateColorTable(data)
+		local r, g, b, a = E:UpdateColorTable(data)
+
+		t.r, t.g, t.b, t.a = r, g, b, a
+		t[1], t[2], t[3], t[4] = r, g, b, a
 	else
 		t = E:GetColorTable(data)
 	end
@@ -237,21 +246,21 @@ function E:SetColorTable(t, data)
 	return t
 end
 
+function E:VerifyColorTable(data)
+	if data.r > 1 or data.r < 0 then data.r = 1 end
+	if data.g > 1 or data.g < 0 then data.g = 1 end
+	if data.b > 1 or data.b < 0 then data.b = 1 end
+	if data.a and (data.a > 1 or data.a < 0) then data.a = 1 end
+end
+
 function E:UpdateColorTable(data)
 	if not data.r or not data.g or not data.b then
 		error('UpdateColorTable: Could not unpack color values.')
 	end
 
-	if data.r > 1 or data.r < 0 then data.r = 1 end
-	if data.g > 1 or data.g < 0 then data.g = 1 end
-	if data.b > 1 or data.b < 0 then data.b = 1 end
-	if data.a and (data.a > 1 or data.a < 0) then data.a = 1 end
+	E:VerifyColorTable(data)
 
-	if data.a then
-		return data.r, data.g, data.b, data.a
-	else
-		return data.r, data.g, data.b
-	end
+	return data.r, data.g, data.b, data.a
 end
 
 function E:GetColorTable(data)
@@ -259,16 +268,10 @@ function E:GetColorTable(data)
 		error('GetColorTable: Could not unpack color values.')
 	end
 
-	if data.r > 1 or data.r < 0 then data.r = 1 end
-	if data.g > 1 or data.g < 0 then data.g = 1 end
-	if data.b > 1 or data.b < 0 then data.b = 1 end
-	if data.a and (data.a > 1 or data.a < 0) then data.a = 1 end
+	E:VerifyColorTable(data)
 
-	if data.a then
-		return {data.r, data.g, data.b, data.a}
-	else
-		return {data.r, data.g, data.b}
-	end
+	local r, g, b, a = data.r, data.g, data.b, data.a
+	return { r, g, b, a, r = r, g = g, b = b, a = a }
 end
 
 function E:UpdateMedia(mediaType)
@@ -892,6 +895,8 @@ do
 					E:Print(L["ElvUI is out of date. You can download the newest version from www.tukui.org. Get premium membership and have ElvUI automatically updated with the Tukui Client!"])
 
 					if msg and ((msg - ver) >= 0.05) and not inCombat then
+						E.PopupDialogs.ELVUI_UPDATE_AVAILABLE.text = L["ElvUI is five or more revisions out of date. You can download the newest version from www.tukui.org. Get premium membership and have ElvUI automatically updated with the Tukui Client!"]..format('|n|nSender %s : Version %s', sender, msg)
+
 						E:StaticPopup_Show('ELVUI_UPDATE_AVAILABLE')
 					end
 
@@ -1513,12 +1518,9 @@ function E:UpdateMisc(skipCallback)
 	AFK:Toggle()
 
 	if E.Retail then
-		Blizzard:SetObjectiveFrameHeight()
 		TotemTracker:PositionAndSize()
 	elseif E.Wrath then
 		ActionBars:PositionAndSizeTotemBar()
-	elseif E.TBC then
-		TotemTracker:PositionAndSize()
 	end
 
 	if not skipCallback then
@@ -1847,13 +1849,11 @@ function E:DBConversions()
 end
 
 function E:ConvertActionBarKeybinds()
-	for oldKeybind, newKeybind in pairs({ ELVUIBAR6BUTTON = 'ELVUIBAR2BUTTON', EXTRABAR7BUTTON = 'ELVUIBAR7BUTTON', EXTRABAR8BUTTON = 'ELVUIBAR8BUTTON', EXTRABAR9BUTTON = 'ELVUIBAR9BUTTON', EXTRABAR10BUTTON = 'ELVUIBAR10BUTTON' }) do
+	for oldcmd, newcmd in pairs({ ELVUIBAR6BUTTON = 'ELVUIBAR2BUTTON', EXTRABAR7BUTTON = 'ELVUIBAR7BUTTON', EXTRABAR8BUTTON = 'ELVUIBAR8BUTTON', EXTRABAR9BUTTON = 'ELVUIBAR9BUTTON', EXTRABAR10BUTTON = 'ELVUIBAR10BUTTON' }) do
 		for i = 1, 12 do
-			local keys = { GetBindingKey(format('%s%d', oldKeybind, i)) }
-			if next(keys) then
-				for _, key in pairs(keys) do
-					SetBinding(key, format('%s%d', newKeybind, i))
-				end
+			local oldkey, newkey = format('%s%d', oldcmd, i), format('%s%d', newcmd, i)
+			for _, key in next, { GetBindingKey(oldkey) } do
+				SetBinding(key, newkey)
 			end
 		end
 	end
@@ -1867,8 +1867,10 @@ end
 function E:RefreshModulesDB()
 	-- this function is specifically used to reference the new database
 	-- onto the unitframe module, its useful dont delete! D:
-	wipe(UnitFrames.db) --old ref, dont need so clear it
-	UnitFrames.db = E.db.unitframe --new ref
+	if UnitFrames.db then
+		wipe(UnitFrames.db) --old ref, dont need so clear it
+		UnitFrames.db = E.db.unitframe --new ref
+	end
 end
 
 do

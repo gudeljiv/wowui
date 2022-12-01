@@ -3,6 +3,7 @@ local S = E:GetModule('Skins')
 local LCG = E.Libs.CustomGlow
 
 local _G = _G
+local next = next
 local unpack, ipairs, pairs = unpack, ipairs, pairs
 local min, strlower, select = min, strlower, select
 
@@ -211,7 +212,7 @@ function S:LookingForGroupFrames()
 	_G.LFDQueueFrameRoleButtonHealer.shortageBorder:Kill()
 	S:HandleCloseButton(_G.LFGDungeonReadyStatusCloseButton)
 
-	local RoleButtons1 = {
+	for _, roleButton in pairs({
 		_G.LFDQueueFrameRoleButtonHealer,
 		_G.LFDQueueFrameRoleButtonDPS,
 		_G.LFDQueueFrameRoleButtonLeader,
@@ -229,9 +230,7 @@ function S:LookingForGroupFrames()
 		_G.RolePollPopupRoleButtonTank,
 		_G.RolePollPopupRoleButtonHealer,
 		_G.RolePollPopupRoleButtonDPS,
-	}
-
-	for _, roleButton in pairs(RoleButtons1) do
+	}) do
 		local checkButton = roleButton.checkButton or roleButton.CheckButton
 
 		S:HandleCheckBox(checkButton, nil, nil, true)
@@ -262,14 +261,11 @@ function S:LookingForGroupFrames()
 		end
 	end)
 
-	--Fix issue with role buttons overlapping each other (Blizzard bug)
-	local repositionCheckButtons = {
+	for _, checkButton in pairs({ --Fix issue with role buttons overlapping each other (Blizzard bug)
 		_G.LFGListApplicationDialog.TankButton.CheckButton,
 		_G.LFGListApplicationDialog.HealerButton.CheckButton,
 		_G.LFGListApplicationDialog.DamagerButton.CheckButton,
-	}
-
-	for _, checkButton in pairs(repositionCheckButtons) do
+	}) do
 		checkButton:ClearAllPoints()
 		checkButton:Point('BOTTOMLEFT', 0, 0)
 	end
@@ -326,11 +322,7 @@ function S:LookingForGroupFrames()
 	_G.RaidFinderQueueFrameRoleButtonDPSBackground:SetTexture(E.Media.Textures.RolesHQ)
 
 	hooksecurefunc('LFG_DisableRoleButton', function(button)
-		if button.checkButton:GetChecked() then
-			button.checkButton:SetAlpha(1)
-		else
-			button.checkButton:SetAlpha(0)
-		end
+		button.checkButton:SetAlpha(button.checkButton:GetChecked() and 1 or 0)
 
 		if button.background then
 			button.background:Show()
@@ -363,7 +355,14 @@ function S:LookingForGroupFrames()
 	for i = 1, 3 do
 		S:HandleTab(_G['PVEFrameTab'..i])
 	end
-	_G.PVEFrameTab1:Point('BOTTOMLEFT', PVEFrame, 'BOTTOMLEFT', 19, E.PixelMode and -31 or -32)
+
+	-- Reposition Tabs
+	_G.PVEFrameTab1:ClearAllPoints()
+	_G.PVEFrameTab2:ClearAllPoints()
+	_G.PVEFrameTab3:ClearAllPoints()
+	_G.PVEFrameTab1:Point('BOTTOMLEFT', _G.PVEFrame, 'BOTTOMLEFT', -3, -32)
+	_G.PVEFrameTab2:Point('TOPLEFT', _G.PVEFrameTab1, 'TOPRIGHT', -5, 0)
+	_G.PVEFrameTab3:Point('TOPLEFT', _G.PVEFrameTab2, 'TOPRIGHT', -5, 0)
 
 	-- Raid finder
 	S:HandleButton(_G.LFDQueueFrameFindGroupButton)
@@ -374,9 +373,10 @@ function S:LookingForGroupFrames()
 	HandleGoldIcon('LFDQueueFrameRandomScrollFrameChildFrameMoneyReward')
 	HandleGoldIcon('RaidFinderQueueFrameScrollFrameChildFrameMoneyReward')
 
+	--[[ ToDO: DF
 	for i = 1, _G.NUM_LFD_CHOICE_BUTTONS do
 		S:HandleCheckBox(_G['LFDQueueFrameSpecificListButton'..i].enableButton, nil, true)
-	end
+	end]]
 
 	hooksecurefunc('LFGDungeonListButton_SetDungeon', function(button)
 		if button and button.expandOrCollapseButton:IsShown() then
@@ -388,10 +388,11 @@ function S:LookingForGroupFrames()
 		end
 	end)
 
+	--[[ ToDO: DF
 	for i = 1, _G.NUM_LFR_CHOICE_BUTTONS do
 		local bu = _G['LFRQueueFrameSpecificListButton'..i].enableButton
 		S:HandleCheckBox(bu, nil, true)
-	end
+	end]]
 
 	S:HandleDropDownBox(_G.LFDQueueFrameTypeDropDown)
 
@@ -403,13 +404,9 @@ function S:LookingForGroupFrames()
 	S:HandleButton(_G.RaidFinderFrameFindRaidButton)
 	_G.RaidFinderQueueFrame:StripTextures()
 	_G.RaidFinderQueueFrameScrollFrameScrollBar:StripTextures()
-	S:HandleScrollBar(_G.RaidFinderQueueFrameScrollFrameScrollBar)
 
 	--Skin Reward Items (This works for all frames, LFD, Raid, Scenario)
 	hooksecurefunc('LFGRewardsFrame_SetItemButton', SkinItemButton)
-
-	-- Looking for raid
-	_G.LFRBrowseFrameListScrollFrame:StripTextures()
 
 	_G.LFRBrowseFrame:HookScript('OnShow', function()
 		if not _G.LFRBrowseFrameListScrollFrameScrollBar.skinned then
@@ -420,19 +417,15 @@ function S:LookingForGroupFrames()
 
 	_G.LFRBrowseFrameRoleInset:DisableDrawLayer('BORDER')
 	_G.RaidBrowserFrameBg:Hide()
-	_G.LFRQueueFrameSpecificListScrollFrameScrollBackgroundTopLeft:Hide()
-	_G.LFRQueueFrameSpecificListScrollFrameScrollBackgroundBottomRight:Hide()
-	_G.LFRQueueFrameCommentScrollFrame:SetTemplate()
+
 	_G.LFRBrowseFrameColumnHeader1:Width(94) --Fix the columns being slightly off
 	_G.LFRBrowseFrameColumnHeader2:Width(38)
-	_G.LFDQueueFrameSpecificListScrollFrame:StripTextures()
 
 	_G.RaidBrowserFrame:SetTemplate('Transparent')
 	S:HandleCloseButton(_G.RaidBrowserFrameCloseButton)
 	S:HandleButton(_G.LFRQueueFrameFindGroupButton)
 	S:HandleButton(_G.LFRQueueFrameAcceptCommentButton)
-	S:HandleScrollBar(_G.LFRQueueFrameCommentScrollFrameScrollBar)
-	S:HandleScrollBar(_G.LFDQueueFrameSpecificListScrollFrameScrollBar)
+	S:HandleTrimScrollBar(_G.LFDQueueFrameSpecific.ScrollBar)
 
 	local RoleButtons2 = {
 		_G.LFRQueueFrameRoleButtonHealer,
@@ -441,12 +434,13 @@ function S:LookingForGroupFrames()
 	}
 
 	_G.RaidBrowserFrame:HookScript('OnShow', function()
-		if not _G.LFRQueueFrameSpecificListScrollFrameScrollBar.skinned then
-			S:HandleScrollBar(_G.LFRQueueFrameSpecificListScrollFrameScrollBar)
+		local scrollBar = _G.LFRQueueFrameSpecificListScrollFrameScrollBar
+		if not scrollBar.skinned then
+			S:HandleScrollBar(scrollBar)
 			_G.LFRBrowseFrame:StripTextures()
 
 			for _, roleButton in pairs(RoleButtons2) do
-				roleButton:SetNormalTexture('')
+				roleButton:SetNormalTexture(E.ClearTexture)
 				S:HandleCheckBox(roleButton.checkButton, nil, true)
 				roleButton:GetChildren():SetFrameLevel(roleButton:GetChildren():GetFrameLevel() + 1)
 			end
@@ -485,7 +479,7 @@ function S:LookingForGroupFrames()
 			S:HandleButton(_G.LFRBrowseFrameInviteButton)
 			S:HandleButton(_G.LFRBrowseFrameSendMessageButton)
 
-			_G.LFRQueueFrameSpecificListScrollFrameScrollBar.skinned = true
+			scrollBar.skinned = true
 		end
 	end)
 
@@ -552,8 +546,6 @@ function S:LookingForGroupFrames()
 	S:HandleEditBox(LFGListFrame.EntryCreation.ActivityFinder.Dialog.EntryBox)
 	S:HandleButton(LFGListFrame.EntryCreation.ActivityFinder.Dialog.SelectButton)
 	S:HandleButton(LFGListFrame.EntryCreation.ActivityFinder.Dialog.CancelButton)
-	S:HandleScrollBar(_G.LFGListEntryCreationSearchScrollFrameScrollBar)
-	S:HandleScrollBar(_G.LFGListCreationDescriptionScrollBar)
 
 	_G.LFGListApplicationDialog:StripTextures()
 	_G.LFGListApplicationDialog:SetTemplate('Transparent')
@@ -573,13 +565,13 @@ function S:LookingForGroupFrames()
 	S:HandleEditBox(LFGListFrame.SearchPanel.SearchBox)
 	S:HandleButton(LFGListFrame.SearchPanel.BackButton)
 	S:HandleButton(LFGListFrame.SearchPanel.SignUpButton)
-	S:HandleButton(_G.LFGListSearchPanelScrollFrameScrollChild.StartGroupButton)
+	S:HandleButton(_G.LFGListFrame.SearchPanel.ScrollBox.StartGroupButton)
 	LFGListFrame.SearchPanel.BackButton:ClearAllPoints()
 	LFGListFrame.SearchPanel.BackButton:Point('BOTTOMLEFT', -1, 3)
 	LFGListFrame.SearchPanel.SignUpButton:ClearAllPoints()
 	LFGListFrame.SearchPanel.SignUpButton:Point('BOTTOMRIGHT', -6, 3)
 	LFGListFrame.SearchPanel.ResultsInset:StripTextures()
-	S:HandleScrollBar(_G.LFGListSearchPanelScrollFrameScrollBar)
+	S:HandleTrimScrollBar(_G.LFGListFrame.SearchPanel.ScrollBar)
 
 	S:HandleButton(LFGListFrame.SearchPanel.FilterButton)
 	LFGListFrame.SearchPanel.FilterButton:Point('LEFT', LFGListFrame.SearchPanel.SearchBox, 'RIGHT', 5, 0)
@@ -607,9 +599,8 @@ function S:LookingForGroupFrames()
 	end)
 
 	hooksecurefunc('LFGListSearchPanel_UpdateAutoComplete', function(panel)
-		for i = 1, LFGListFrame.SearchPanel.AutoCompleteFrame:GetNumChildren() do
-			local child = select(i, LFGListFrame.SearchPanel.AutoCompleteFrame:GetChildren())
-			if child and not child.isSkinned and child:IsObjectType('Button') then
+		for _, child in next, { LFGListFrame.SearchPanel.AutoCompleteFrame:GetChildren() } do
+			if not child.isSkinned and child:IsObjectType('Button') then
 				S:HandleButton(child)
 				child.isSkinned = true
 			end
@@ -627,6 +618,7 @@ function S:LookingForGroupFrames()
 				button.moved = true
 			end
 		end
+
 		panel.AutoCompleteFrame:Height(numResults * (panel.AutoCompleteFrame.Results[1]:GetHeight() + 3.5) + 8)
 	end)
 
@@ -647,10 +639,10 @@ function S:LookingForGroupFrames()
 	LFGListFrame.ApplicationViewer.Inset:StripTextures()
 	LFGListFrame.ApplicationViewer.Inset:SetTemplate('Transparent')
 
-	S:HandleButton(LFGListFrame.ApplicationViewer.NameColumnHeader, true)
-	S:HandleButton(LFGListFrame.ApplicationViewer.RoleColumnHeader, true)
-	S:HandleButton(LFGListFrame.ApplicationViewer.ItemLevelColumnHeader, true)
-	S:HandleButton(LFGListFrame.ApplicationViewer.RatingColumnHeader, true)
+	S:HandleButton(LFGListFrame.ApplicationViewer.NameColumnHeader)
+	S:HandleButton(LFGListFrame.ApplicationViewer.RoleColumnHeader)
+	S:HandleButton(LFGListFrame.ApplicationViewer.ItemLevelColumnHeader)
+	S:HandleButton(LFGListFrame.ApplicationViewer.RatingColumnHeader)
 	LFGListFrame.ApplicationViewer.NameColumnHeader:ClearAllPoints()
 	LFGListFrame.ApplicationViewer.NameColumnHeader:Point('BOTTOMLEFT', LFGListFrame.ApplicationViewer.Inset, 'TOPLEFT', 0, 1)
 	LFGListFrame.ApplicationViewer.NameColumnHeader.Label:FontTemplate()
@@ -670,20 +662,16 @@ function S:LookingForGroupFrames()
 	LFGListFrame.ApplicationViewer.RefreshButton:ClearAllPoints()
 	LFGListFrame.ApplicationViewer.RefreshButton:Point('BOTTOMRIGHT', LFGListFrame.ApplicationViewer.Inset, 'TOPRIGHT', 16, 4)
 
-	S:HandleButton(LFGListFrame.ApplicationViewer.RemoveEntryButton, true)
-	S:HandleButton(LFGListFrame.ApplicationViewer.EditButton, true)
-	S:HandleButton(LFGListFrame.ApplicationViewer.BrowseGroupsButton, true)
+	S:HandleButton(LFGListFrame.ApplicationViewer.RemoveEntryButton)
+	S:HandleButton(LFGListFrame.ApplicationViewer.EditButton)
+	S:HandleButton(LFGListFrame.ApplicationViewer.BrowseGroupsButton)
 	LFGListFrame.ApplicationViewer.EditButton:ClearAllPoints()
 	LFGListFrame.ApplicationViewer.EditButton:Point('BOTTOMRIGHT', -6, 3)
 	LFGListFrame.ApplicationViewer.BrowseGroupsButton:ClearAllPoints()
 	LFGListFrame.ApplicationViewer.BrowseGroupsButton:Point('BOTTOMLEFT', -1, 3)
 	LFGListFrame.ApplicationViewer.BrowseGroupsButton:Size(120, 22)
 
-	local LFGListApplicationViewerScrollFrameScrollBar = _G.LFGListApplicationViewerScrollFrameScrollBar
-	S:HandleScrollBar(LFGListApplicationViewerScrollFrameScrollBar)
-	LFGListApplicationViewerScrollFrameScrollBar:ClearAllPoints()
-	LFGListApplicationViewerScrollFrameScrollBar:Point('TOPLEFT', LFGListFrame.ApplicationViewer.Inset, 'TOPRIGHT', 0, -16)
-	LFGListApplicationViewerScrollFrameScrollBar:Point('BOTTOMLEFT', LFGListFrame.ApplicationViewer.Inset, 'BOTTOMRIGHT', 0, 16)
+	S:HandleTrimScrollBar(LFGListFrame.ApplicationViewer.ScrollBar)
 
 	hooksecurefunc('LFGListApplicationViewer_UpdateInfo', function(frame)
 		frame.RemoveEntryButton:ClearAllPoints()
@@ -751,7 +739,7 @@ function S:Blizzard_ChallengesUI()
 
 	hooksecurefunc(KeyStoneFrame, 'OnKeystoneSlotted', HandleAffixIcons)
 
-	hooksecurefunc('ChallengesFrame_Update', function(frame)
+	hooksecurefunc(ChallengesFrame, 'Update', function(frame)
 		for _, child in ipairs(frame.DungeonIcons) do
 			if not child.template then
 				child:GetRegions():SetAlpha(0)

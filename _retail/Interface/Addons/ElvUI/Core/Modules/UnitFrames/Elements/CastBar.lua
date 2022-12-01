@@ -3,7 +3,8 @@ local UF = E:GetModule('UnitFrames')
 local LSM = E.Libs.LSM
 local ElvUF = E.oUF
 
-local unpack, tonumber, abs = unpack, tonumber, abs
+local abs, next = abs, next
+local unpack, tonumber = unpack, tonumber
 
 local CreateFrame = CreateFrame
 local GetTalentInfo = GetTalentInfo
@@ -16,6 +17,77 @@ local UnitSpellHaste = UnitSpellHaste
 
 local ticks = {}
 
+do
+	local pipMapColor = {4, 1, 2, 3}
+	function UF:CastBar_UpdatePip(pip, stage, texture)
+		local color = UF.db.colors.empoweredCast[pipMapColor[stage]]
+		pip.texture:SetVertexColor(color.r, color.g, color.b, pip.pipAlpha)
+		pip.texture:SetTexture(texture)
+	end
+
+	local pipMapAlpha = {2, 3, 4, 1}
+	function UF:UpdatePipStep(stage) -- self is element
+		local onlyThree = (stage == 3 and self.numStages == 3) and 4
+		local pip = self.Pips[pipMapAlpha[onlyThree or stage]]
+		if not pip then return end
+
+		pip.texture:SetAlpha(1)
+		E:UIFrameFadeOut(pip.texture, pip.pipTimer, pip.pipStart, pip.pipFaded)
+	end
+end
+
+function UF:PostUpdatePip(pip, stage) -- self is element
+	pip.texture:SetAlpha(pip.pipAlpha or 1)
+
+	local pips = self.Pips
+	local numStages = self.numStages
+	local reverse = self:GetReverseFill()
+
+	if stage == numStages then
+		local firstPip = pips[1]
+		local anchor = pips[numStages]
+		if reverse then
+			firstPip.texture:Point('RIGHT', self, 'LEFT', 0, 0)
+			firstPip.texture:Point('LEFT', anchor, 3, 0)
+		else
+			firstPip.texture:Point('LEFT', self, 'RIGHT', 0, 0)
+			firstPip.texture:Point('RIGHT', anchor, -3, 0)
+		end
+	end
+
+	if stage ~= 1 then
+		local anchor = pips[stage - 1]
+		if reverse then
+			pip.texture:Point('RIGHT', -3, 0)
+			pip.texture:Point('LEFT', anchor, 3, 0)
+		else
+			pip.texture:Point('LEFT', 3, 0)
+			pip.texture:Point('RIGHT', anchor, -3, 0)
+		end
+	end
+end
+
+function UF:CreatePip(stage)
+	local pip = CreateFrame('Frame', nil, self, 'CastingBarFrameStagePipTemplate')
+
+	pip.BasePip:SetAlpha(0)
+
+	pip.texture = pip:CreateTexture(nil, 'ARTWORK', nil, 2)
+	pip.texture:Point('BOTTOM')
+	pip.texture:Point('TOP')
+
+	pip.pipStart = 1.0 -- alpha on hit
+	pip.pipAlpha = 0.3 -- alpha on init
+	pip.pipFaded = 0.6 -- alpha when passed
+	pip.pipTimer = 0.4 -- fading time to passed
+
+	UF.statusbars[pip.texture] = true
+
+	UF:CastBar_UpdatePip(pip, stage, LSM:Fetch('statusbar', UF.db.statusbar))
+
+	return pip
+end
+
 function UF:Construct_Castbar(frame, moverName)
 	local castbar = CreateFrame('StatusBar', '$parent_CastBar', frame)
 	castbar:SetFrameLevel(frame.RaisedElementParent.CastBarLevel)
@@ -27,6 +99,10 @@ function UF:Construct_Castbar(frame, moverName)
 	castbar.PostCastStop = UF.PostCastStop
 	castbar.PostCastInterruptible = UF.PostCastInterruptible
 	castbar.PostCastFail = UF.PostCastFail
+	castbar.UpdatePipStep = UF.UpdatePipStep
+	castbar.PostUpdatePip = UF.PostUpdatePip
+	castbar.CreatePip = UF.CreatePip
+
 	castbar:SetClampedToScreen(true)
 	castbar:CreateBackdrop(nil, nil, nil, nil, true)
 
@@ -44,13 +120,14 @@ function UF:Construct_Castbar(frame, moverName)
 	castbar.Text:SetWordWrap(false)
 	castbar.Text:FontTemplate()
 
-	castbar.Spark_ = castbar:CreateTexture(nil, 'OVERLAY')
+	castbar.Spark_ = castbar:CreateTexture(nil, 'OVERLAY', nil, 3)
 	castbar.Spark_:SetTexture(E.media.blankTex)
-	castbar.Spark_:SetVertexColor(1, 1, 1, 0.4)
+	castbar.Spark_:SetVertexColor(0.9, 0.9, 0.9, 0.6)
+	castbar.Spark_:SetBlendMode('ADD')
 	castbar.Spark_:Width(2)
 
 	--Set to castbar.SafeZone
-	castbar.LatencyTexture = castbar:CreateTexture(nil, 'OVERLAY')
+	castbar.LatencyTexture = castbar:CreateTexture(nil, 'OVERLAY', nil, 2)
 	castbar.LatencyTexture:SetTexture(E.media.blankTex)
 	castbar.LatencyTexture:SetVertexColor(0.69, 0.31, 0.31, 0.75)
 
@@ -106,6 +183,12 @@ function UF:Configure_Castbar(frame)
 
 	if db.strataAndLevel and db.strataAndLevel.useCustomLevel then
 		castbar:SetFrameLevel(db.strataAndLevel.frameLevel)
+	end
+
+	--Empowered
+	local pipTexture = LSM:Fetch('statusbar', UF.db.statusbar)
+	for stage, pip in next, castbar.Pips do
+		UF:CastBar_UpdatePip(pip, stage, pipTexture)
 	end
 
 	--Latency
@@ -254,9 +337,9 @@ function UF:Configure_Castbar(frame)
 
 	if castbar.Holder.mover then
 		if db.overlayOnFrame ~= 'None' or not db.enable then
-			E:DisableMover(castbar.Holder.mover:GetName())
+			E:DisableMover(castbar.Holder.mover.name)
 		else
-			E:EnableMover(castbar.Holder.mover:GetName())
+			E:EnableMover(castbar.Holder.mover.name)
 		end
 	end
 
@@ -365,22 +448,22 @@ end
 function UF:GetInterruptColor(db, unit)
 	local colors = ElvUF.colors
 	local customColor = db and db.castbar and db.castbar.customColor
-	local custom, r, g, b = customColor and customColor.enable and customColor, colors.castColor[1], colors.castColor[2], colors.castColor[3]
+	local custom, r, g, b = customColor and customColor.enable and customColor, colors.castColor.r, colors.castColor.g, colors.castColor.b
 
 	if self.notInterruptible and (UnitIsPlayer(unit) or (unit ~= 'player' and UnitCanAttack('player', unit))) then
 		if custom and custom.colorNoInterrupt then
 			return custom.colorNoInterrupt.r, custom.colorNoInterrupt.g, custom.colorNoInterrupt.b
 		else
-			return colors.castNoInterrupt[1], colors.castNoInterrupt[2], colors.castNoInterrupt[3]
+			return colors.castNoInterrupt.r, colors.castNoInterrupt.g, colors.castNoInterrupt.b
 		end
 	elseif ((custom and custom.useClassColor) or (not custom and UF.db.colors.castClassColor)) and UnitIsPlayer(unit) then
 		local _, Class = UnitClass(unit)
 		local t = Class and colors.class[Class]
-		if t then return t[1], t[2], t[3] end
+		if t then return t.r, t.g, t.b end
 	elseif (custom and custom.useReactionColor) or (not custom and UF.db.colors.castReactionColor) then
 		local Reaction = UnitReaction(unit, 'player')
 		local t = Reaction and colors.reaction[Reaction]
-		if t then return t[1], t[2], t[3] end
+		if t then return t.r, t.g, t.b end
 	elseif custom then
 		return customColor.color.r, customColor.color.g, customColor.color.b
 	end

@@ -74,7 +74,7 @@ function E:SetMoverPoints(name, parent)
 
 	if parent then
 		parent:ClearAllPoints()
-		parent:SetPoint(point1, parent.mover, 0, 0)
+		parent:SetPoint(point1, parent.mover, nil, 0, 0)
 	end
 end
 
@@ -177,7 +177,7 @@ local function OnMouseDown(self, button)
 		elseif IsShiftKeyDown() then
 			self:Hide() --Allow hiding a mover temporarily
 		elseif self.configString then
-			E:ToggleOptionsUI(self.configString) --OpenConfig
+			E:ToggleOptions(self.configString) --OpenConfig
 		end
 	end
 end

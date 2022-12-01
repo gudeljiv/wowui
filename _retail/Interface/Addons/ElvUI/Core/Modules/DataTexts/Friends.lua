@@ -69,7 +69,7 @@ local menuList = {
 }
 
 local function inviteClick(_, name, guid)
-	DT.EasyMenu:Hide()
+	E.EasyMenu:Hide()
 
 	if not (name and name ~= '') then return end
 	local isBNet = type(name) == 'number'
@@ -101,7 +101,7 @@ local function inviteClick(_, name, guid)
 end
 
 local function whisperClick(_, name, battleNet)
-	DT.EasyMenu:Hide()
+	E.EasyMenu:Hide()
 
 	if battleNet then
 		ChatFrame_SendBNetTell(name)
@@ -144,13 +144,14 @@ local clientList = {
 	RTRO =	{ index = 11, tag = 'AC',	name = 'Arcade Collection'},
 	WLBY =	{ index = 12, tag = 'CB4',	name = 'Crash Bandicoot 4'},
 	VIPR =	{ index = 13, tag = 'BO4',	name = 'COD: Black Ops 4'},
-	ODIN =	{ index = 14, tag = 'MW',	name = 'COD: Modern Warfare'},
-	LAZR =	{ index = 15, tag = 'MW2',	name = 'COD: Modern Warfare 2'},
-	ZEUS =	{ index = 16, tag = 'CW',	name = 'COD: Cold War'},
-	FORE =	{ index = 17, tag = 'VG',	name = 'COD: Vanguard'},
-	GRY = 	{ index = 18, tag = 'AR',	name = 'Warcraft Arclight Rumble'},
-	App =	{ index = 19, tag = 'App',	name = 'App'},
-	BSAp =	{ index = 20, tag = L["Mobile"], name = L["Mobile"]}
+	ODIN =	{ index = 14, tag = 'WZ',	name = 'COD: Warzone'},
+	AUKS =	{ index = 15, tag = 'WZ2',	name = 'COD: Warzone 2'},
+	LAZR =	{ index = 16, tag = 'MW2',	name = 'COD: Modern Warfare 2'},
+	ZEUS =	{ index = 17, tag = 'CW',	name = 'COD: Cold War'},
+	FORE =	{ index = 18, tag = 'VG',	name = 'COD: Vanguard'},
+	GRY = 	{ index = 19, tag = 'AR',	name = 'Warcraft Arclight Rumble'},
+	App =	{ index = 20, tag = 'App',	name = 'App'},
+	BSAp =	{ index = 21, tag = L["Mobile"], name = L["Mobile"]}
 }
 
 DT.clientFullName = {}
@@ -424,8 +425,8 @@ local function Click(self, btn)
 			end
 		end
 
-		DT:SetEasyMenuAnchor(DT.EasyMenu, self)
-		_G.EasyMenu(menuList, DT.EasyMenu, nil, nil, nil, 'MENU')
+		E:SetEasyMenuAnchor(E.EasyMenu, self)
+		_G.EasyMenu(menuList, E.EasyMenu, nil, nil, nil, 'MENU')
 	elseif InCombatLockdown() then
 		_G.UIErrorsFrame:AddMessage(E.InfoColor.._G.ERR_NOT_IN_COMBAT)
 	else

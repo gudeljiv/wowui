@@ -5,7 +5,7 @@ local E, L, V, P, G = unpack(ElvUI)
 local LCS = E.Libs.LCS
 
 local _G = _G
-local wipe, max = wipe, max
+local wipe, max, next = wipe, max, next
 local type, ipairs, pairs, unpack = type, ipairs, pairs, unpack
 local strfind, strlen, tonumber, tostring = strfind, strlen, tonumber, tostring
 
@@ -14,8 +14,8 @@ local GetAddOnEnableState = GetAddOnEnableState
 local GetBattlefieldArenaFaction = GetBattlefieldArenaFaction
 local GetInstanceInfo = GetInstanceInfo
 local GetNumGroupMembers = GetNumGroupMembers
-local GetSpecialization = (E.Classic or E.TBC or E.Wrath and LCS.GetSpecialization) or GetSpecialization
-local GetSpecializationRole = (E.Classic or E.TBC or E.Wrath and LCS.GetSpecializationRole) or GetSpecializationRole
+local GetSpecialization = (E.Classic or E.Wrath and LCS.GetSpecialization) or GetSpecialization
+local GetSpecializationRole = (E.Classic or E.Wrath and LCS.GetSpecializationRole) or GetSpecializationRole
 local hooksecurefunc = hooksecurefunc
 local InCombatLockdown = InCombatLockdown
 local IsAddOnLoaded = IsAddOnLoaded
@@ -43,6 +43,9 @@ local GameMenuButtonAddons = GameMenuButtonAddons
 local GameMenuButtonLogout = GameMenuButtonLogout
 local GameMenuFrame = GameMenuFrame
 
+local C_MountJournal_GetMountIDs = C_MountJournal and C_MountJournal.GetMountIDs
+local C_MountJournal_GetMountInfoByID = C_MountJournal and C_MountJournal.GetMountInfoByID
+local C_MountJournal_GetMountInfoExtraByID = C_MountJournal and C_MountJournal.GetMountInfoExtraByID
 local C_PetBattles_IsInBattle = C_PetBattles and C_PetBattles.IsInBattle
 local C_PvP_IsRatedBattleground = C_PvP and C_PvP.IsRatedBattleground
 
@@ -51,6 +54,9 @@ local FACTION_ALLIANCE = FACTION_ALLIANCE
 local FACTION_HORDE = FACTION_HORDE
 local PLAYER_FACTION_GROUP = PLAYER_FACTION_GROUP
 -- GLOBALS: ElvDB, ElvUF
+
+E.MountIDs = {}
+E.MountText = {}
 
 function E:ClassColor(class, usePriestColor)
 	if not class then return end
@@ -169,7 +175,7 @@ end
 function E:GetThreatStatusColor(status, nothreat)
 	local color = ElvUF.colors.threat[status]
 	if color then
-		return color[1], color[2], color[3], color[4] or 1
+		return color.r, color.g, color.b, color.a or 1
 	elseif nothreat then
 		if status == -1 then -- how or why?
 			return 1, 1, 1, 1
@@ -466,17 +472,17 @@ function E:PLAYER_ENTERING_WORLD(_, initLogin, isReload)
 end
 
 function E:PLAYER_REGEN_ENABLED()
-	if E.ShowOptionsUI then
-		E:ToggleOptionsUI()
+	if E.ShowOptions then
+		E:ToggleOptions()
 
-		E.ShowOptionsUI = nil
+		E.ShowOptions = nil
 	end
 end
 
 function E:PLAYER_REGEN_DISABLED()
 	local err
 
-	if IsAddOnLoaded('ElvUI_OptionsUI') then
+	if IsAddOnLoaded('ElvUI_Options') then
 		local ACD = E.Libs.AceConfigDialog
 		if ACD and ACD.OpenFrames and ACD.OpenFrames.ElvUI then
 			ACD:Close('ElvUI')
@@ -584,6 +590,13 @@ function E:LoadAPI()
 	E:RegisterEvent('UI_SCALE_CHANGED', 'PixelScaleChanged')
 
 	if E.Retail then
+		for _, mountID in next, C_MountJournal_GetMountIDs() do
+			local _, _, sourceText = C_MountJournal_GetMountInfoExtraByID(mountID)
+			local _, spellID = C_MountJournal_GetMountInfoByID(mountID)
+			E.MountIDs[spellID] = mountID
+			E.MountText[mountID] = sourceText
+		end
+
 		E:RegisterEvent('NEUTRAL_FACTION_SELECT_RESULT')
 		E:RegisterEvent('PET_BATTLE_CLOSE', 'AddNonPetBattleFrames')
 		E:RegisterEvent('PET_BATTLE_OPENING_START', 'RemoveNonPetBattleFrames')
@@ -631,7 +644,7 @@ function E:LoadAPI()
 
 	local GameMenuButton = CreateFrame('Button', nil, GameMenuFrame, 'GameMenuButtonTemplate')
 	GameMenuButton:SetScript('OnClick', function()
-		E:ToggleOptionsUI() --We already prevent it from opening in combat
+		E:ToggleOptions() --We already prevent it from opening in combat
 		if not InCombatLockdown() then
 			HideUIPanel(GameMenuFrame)
 		end

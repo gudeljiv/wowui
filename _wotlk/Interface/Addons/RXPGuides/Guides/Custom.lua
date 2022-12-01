@@ -1,275 +1,203 @@
 RXPGuides.RegisterGuide([[
-#version 9
+#version 13
 #wotlk
 #group RestedXP Mage AoE 68-80
 << Mage
 #name 68-80 Mage AoE
 
-step
-#completewith WHFP << Horde
-#completewith VKHS << Alliance
-+Welcome to the RXPGuides AoE Mage 68-80 Guide!
-.link https://discord.com/invite/ApNgbdQNQy >> As this is Beta, the guide may have some bugs. If you encounter any while playing through, report them here!
 step << Horde
-#completewith BTZep1
-.zone Orgrimmar >> Teleport to Orgrimmar
+#completewith HFZep1
+.zone Undercity >> Teleport to Undercity
 step << Horde
-#level 68
-.goto Orgrimmar,38.4,86.1
->>Go downstairs
-.trainer >> Train your class spells
+.goto Undercity,85.1,10.0
+.train 27101 >> Train your class spells
+.xp <68,1
 step << Horde
-#label BTZep1
-.goto Durotar,41.6,18.2,30,0
-.goto Durotar,41.4,17.6
-.zone BoreanTundra >>Take the Zeppelin from Durotar to Borean Tundra
+#completewith next
+.goto Undercity,82.36,15.31
+.goto Undercity,67.88,14.97,30 >> Go to the Reagent Vendor on your right and perform a Logout Skip by positioning your character on the highest part of the lowest staircase until it looks like they're floating, then logging out and back in.
+.link https://www.youtube.com/watch?v=-Bi95bCN8dM >> CLICK HERE for an example
+>>If you can't do this, just run out of Undercity normally
 step << Horde
-#completewith end
-#label WHHS
-.goto BoreanTundra,41.92,54.49
-.home >> Set your Hearthstone to Warsong Hold
+#label HFZep1
+.goto Undercity,66.23,4.43,30,0
+.goto Tirisfal Glades,59.97,58.56,30,0
+.goto Tirisfal Glades,58.98,59.07
+.zone HowlingFjord >>Take the Zeppelin from Tirisfal Glades to Howling Fjord
 step << Horde
-#completewith end
-#requires WHHS
-#label WHFP
-.goto BoreanTundra,40.72,52.54,20,0
-.goto BoreanTundra,40.36,51.39
->> Take the stairs, and then the elevator to the top of the building
-.fp Warsong Hold >> Get the Warsong Hold flight path
+.goto HowlingFjord,79.05,29.70
+.fp Vengeance Landing >> Get the Vengeance Landing flight path
+step << Horde
+#label VLHS
+#completewith Seals
+.goto HowlingFjord,79.10,30.41,20,0
+.goto BoreanTundra,79.73,30.85
+.home >> Set your Hearthstone to Vengeance Landing
 step << Alliance
 #completewith Boat1
-.zone Stormwind City >> Teleport to Stormwind
+.zone Ironforge >> Teleport to Ironforge
 step << Alliance
-#level 68
-.goto Stormwind City,49.2,87.7
-.trainer >> Train your class spells
+.goto Ironforge,28.6,7.2
+.train 27101 >> Train your class spells
+.xp <68,1
+step << Alliance
+#completewith next
+.goto Ironforge,55.51,47.75
+.fly Wetlands>> Fly to Wetlands
+.zoneskip Wetlands
+.zoneskip HowlingFjord
 step << Alliance
 #label Boat1
-.goto Stormwind City,43.5,52.7,70,0
-.goto Stormwind City,17.7,25.5
-.zone BoreanTundra >>Travel to the Stormwind Harbor. Get onto the boat when it comes. Take it to Borean Tundra
+.goto Wetlands,4.7,57.3
+.zone HowlingFjord >>Get onto the boat when it comes. Take it to Howling Fjord.
+>>Note: This used to be the Auberdine boat but has been changed to the Howling Fjord boat in Wrath.
 step << Alliance
-#completewith end
-#label VKFP
-.goto BoreanTundra,58.9,68.3
-.fp Valiance Keep >> Get the Valiance Keep flight path
-step << Alliance
-#completewith end
-#requires VKFP
 #label VKHS
-.goto BoreanTundra,58.5,68.3,15,0
-.goto BoreanTundra,58.3,68.1
->>Go inside the Inn
-.home >> Set your Hearthstone to Valiance Keep
-step << skip
-.loop 75,BoreanTundra,54.0,48.8,55.1,42.4,53.6,39.2,54.8,38.4,61.8,40.0,62.2,31.7,55.6,27.1,57.3,34.2
-.xp 72 >> AoE grind Mammoths, Wolves, Machines, Hawks and Caribous to 72
+#completewith Seals
+.goto HowlingFjord,58.6,63.1,15,0
+.goto HowlingFjord,58.39,62.45
+.home >> Set your Hearthstone to Valgarde
+>>Buy some of the new food/water if you wish
+step << Alliance
+.goto HowlingFjord,59.79,63.24
+.fp Valgarde >>Get the Valgarde Flight Path
 step
-#requires WHFP << Horde
+#requires VLHS << Horde
 #requires VKHS << Alliance
-.loop 75,BoreanTundra,48.77,48.69,42.48,47.53,43.11,42.42,47.18,40.43,48.77,48.69
-.xp 69 >> AoE grind Rhinos to 69
+.loop 60,HowlingFjord,77.97,71.27,79.14,70.12,80.10,70.93,79.20,71.53,78.32,72.94,79.82,72.86,79.46,74.32,77.95,75.45,77.79,74.25,77.44,72.61,77.20,76.31,75.88,76.91,74.34,76.55,77.97,71.27
+.xp 69 >> AoE grind Seals to 69
 step
-#level 69
 #completewith next
 .zone Undercity >> Teleport to Undercity << Horde
 .zone Stormwind City >> Teleport to Stormwind << Alliance
+.xp <69,1
 step
-#level 69
 .goto Undercity,85.1,10.0 << Horde
 .goto Stormwind City,49.2,87.7 << Alliance
-.trainer >> Train your class spells
+.train 27124 >> Train your class spells
+.xp <69,1
 step
 #completewith next
-.hs >> Hearth to Valiance Keep << Alliance
-.hs >> Hearth to Conquest Hold << Horde
+.hs >> Hearth to Valgarde << Alliance
+.hs >> Hearth to Vengeance Landing << Horde
 step
-.loop 75,BoreanTundra,48.77,48.69,42.48,47.53,43.11,42.42,47.18,40.43,48.77,48.69
-.xp 70 >> AoE grind Rhinos to 70
+.loop 60,HowlingFjord,77.97,71.27,79.14,70.12,80.10,70.93,79.20,71.53,78.32,72.94,79.82,72.86,79.46,74.32,77.95,75.45,77.79,74.25,77.44,72.61,77.20,76.31,75.88,76.91,74.34,76.55,77.97,71.27
+.xp 70 >> AoE grind Seals to 70
 step
-#level 70
 #completewith next
 .zone Undercity >> Teleport to Undercity << Horde
 .zone Stormwind City >> Teleport to Stormwind << Alliance
+.xp <70,1
 step
-#level 70
 .goto Undercity,85.1,10.0 << Horde
 .goto Stormwind City,49.2,87.7 << Alliance
-.trainer >> Train your class spells
+.train 27126 >> Train your class spells
+.xp <70,1
 step
 #completewith next
-.hs >> Hearth to Conquest Hold << Horde
-.hs >> Hearth to Valiance Keep << Alliance
-step << skip
-.loop 75,BoreanTundra,48.77,48.69,42.48,47.53,43.11,42.42,47.18,40.43
-.line BoreanTundra,48.77,48.69,42.48,47.53,43.11,42.42,47.18,40.43
-.xp 71 >> AoE grind Rhinos to 71
-step << skip
-#level 71
+.hs >> Hearth to Vengeance Landing << Horde
+.hs >> Hearth to Valgarde << Alliance
+step
+#label Seals
+.loop 60,HowlingFjord,77.97,71.27,79.14,70.12,80.10,70.93,79.20,71.53,78.32,72.94,79.82,72.86,79.46,74.32,77.95,75.45,77.79,74.25,77.44,72.61,77.20,76.31,75.88,76.91,74.34,76.55,77.97,71.27
+.xp 72 >> AoE grind Seals to 72
+step
 #completewith next
 .zone Undercity >> Teleport to Undercity << Horde
 .zone Stormwind City >> Teleport to Stormwind << Alliance
-step << skip
-#level 71
-.goto Undercity,85.1,10.0 << Horde
-.goto Stormwind City,49.2,87.7 << Alliance
-.trainer >> Train your class spells
-step << skip
-#completewith next
-.hs >> Hearth to Conquest Hold << Horde
-.hs >> Hearth to Valiance Keep << Alliance
+.xp <72,1
 step
-.loop 75,BoreanTundra,48.77,48.69,42.48,47.53,43.11,42.42,47.18,40.43,48.77,48.69
-.xp 72 >> AoE grind Rhinos to 72
-step << skip
-#level 72
-#completewith next
-.zone Undercity >> Teleport to Undercity << Horde
-.zone Stormwind City >> Teleport to Stormwind << Alliance
-step << skip
-#level 72
 .goto Undercity,85.1,10.0 << Horde
 .goto Stormwind City,49.2,87.7 << Alliance
-.trainer >> Train your class spells
-step << skip
+.train 42930 >> Train your class spells
+.xp <72,1
+step
 #completewith next
-.hs >> Hearth to Conquest Hold << Horde
-.hs >> Hearth to Valiance Keep << Alliance
-step << skip
-#completewith end
-#label ALFP
-.goto BoreanTundra,45.33,34.62
->>Travel to Amber Ledge
-.fp Amber Ledge >> Get the Amber Ledge flight path
+.hs >> Hearth to Vengeance Landing << Horde
+.hs >> Hearth to Valgarde << Alliance
 step << Horde
-#completewith end
-#label TaunFP
-.goto BoreanTundra,77.76,37.77
->>Travel to Taunka'le
-.fp Taunka'le Village >> Get the Taunka'le Village flight path
+.goto HowlingFjord,49.6,11.6
+.fp Camp Winterhoof >> Get the Camp Winterhoof flight path
+step << Horde
+.goto HowlingFjord,26.0,25.1
+.fp Apothecary Camp >> Get the Apothecary Camp flight path
+step << Horde
+.goto GrizzlyHills,22.0,64.5
+>>Talk to Kragh
+.fp Conquest Hold >> Get the Conquest Hold flight path
 step << Alliance
-#completewith end
-#label UnuFP
-.goto BoreanTundra,78.54,51.53
->>Travel to Unu'pe
-.fp Unu'pe >> Get the Unu'pe flight path
-step << Alliance
-.goto BoreanTundra,82.17,46.41
->>Talk to Private Casey
-.accept 12157 >>Accept The Lost Courier
+.goto HowlingFjord,31.26,43.98
+.fp Westguard Keep >> Get the Westguard Keep flight path
 step
 #completewith next
-.goto Dragonblight,12.39,55.22
+.goto Dragonblight,92.39,64.02
 .zone Dragonblight >> Travel to Dragonblight
 step << Horde
-#completewith end
-#label AgmarFP
-.goto Dragonblight,37.51,45.77
->>Travel to Agmar's Hammer
-.fp Agmar's Hammer >> Get the Agmar's Hammer flight path
-step << Horde
-#completewith end
-#requires WyrmFP
-#label WyrmFP
-.goto Dragonblight,60.32,51.55
->>Travel to Wyrmrest Temple
-.fp Wyrmrest Temple >> Get the Wyrmrest Temple flight path
-step << Horde
-#completewith end
-#requires WyrmFP
-#label VenomFP
 .goto Dragonblight,76.48,62.20
 .fp Venomspite >> Get the Venomspite flight path
 step << Horde
-#completewith end
-#requires VenomFP
-#label VenomHS
+#completewith Onslaught
 .goto Dragonblight,76.87,63.13
 .home >>Set your Hearth to Venomspite
 step << Alliance
-#completewith end
-#label StarsFP
-.goto Dragonblight,29.15,55.32
->>Travel to Stars' Rest
-.fp Stars' Rest >> Get the Stars' Rest Flight Path
-step << Alliance
-.goto Dragonblight,28.84,56.16
->>Talk to Lanson
-.turnin 12157 >>Turn in The Lost Courier
-.accept 12171 >>Accept Of Traitors and Treason
-step << Alliance
-.goto Dragonblight,29.16,55.37
->>Talk to Palena
->>Accepting this quest will send you flying to Wintergarde Keep
-.turnin 12171 >>Turn in Of Traitors and Treason
-.accept 12174 >>Accept High Commander Halford Wyrmbane
-step << Alliance
-#completewith end
-#label WinterFP
 .goto Dragonblight,77.08,49.86
-.fp Wintergarde Keep>>Get the Wintergarde Keep Flight Path
+.fp Wintergarde Keep >>Get the Wintergarde Keep Flight Path
 step << Alliance
-#requires WinterFP
-.goto Dragonblight,78.59,48.18
->>Talk to Halford Wyrmbane
-.turnin 12174 >>Turn in High Commander Halford Wyrmbane
-.accept 12235 >>Accept Naxxramas and the Fall of Wintergarde
-step << Alliance
-#completewith end
-#label WinterHS
-.goto Dragonblight,77.46,51.43
-.home >>Set your Hearthstone to Wintergarde Keep
-step << Alliance
-#requires WinterHS
 .goto Dragonblight,77.18,50.09
 >>Go back up toward the Flight Master. talk to Urik
-.turnin 12235 >>Turn in Naxxramas and the Fall of Wintergarde
 .accept 12237 >>Accept Flight of the Wintergarde Defender
-step << skip
-#completewith next
-.cast 48388 >> Use the Gryphon Whistle to mount a Wintergarde Gryphon. You can use this to fly in Wintergarde and The Carrion Fields
-.use 37287
-step << skip
-#requires VenomHS
-.loop 50,Dragonblight,87.90,41.21,87.00,42.19,86.45,40.12,85.51,41.24,83.78,41.98,84.14,40.72,84.49,37.06,87.64,35.43,87.90,41.21
-.xp 73 >> AoE grind the Scarlets to 73
-step << skip
-#level 73
-#completewith next
-.zone Undercity >> Teleport to Undercity << Horde
-.zone Stormwind City >> Teleport to Stormwind << Alliance
-step << skip
-#level 73
-.goto Undercity,85.1,10.0 << Horde
-.goto Stormwind City,49.2,87.7 << Alliance
-.trainer >> Train your class spells
-step << skip
-#level 73
-#label WinterHS1
-#completewith next
-.hs >> Hearth to Venomspite << Horde
-.hs >> Hearth to Wintergarde Keep << Alliance
 step << Alliance
 #requires WinterHS1
 #completewith next
 .cast 48388 >> Use the Gryphon Whistle to mount a Wintergarde Gryphon. You can use this to fly in Wintergarde and The Carrion Fields
 .use 37287
+step << Alliance
+.waypoint Dragonblight,86.38,50.91,0,rescue,VEHICLE_PASSENGERS_CHANGED,VEHICLE_UPDATE
+>>Use "Rescue Villager" (1) to pick up Helpless Villagers (you can only pick up one at a time). Use "Drop Off Villager" (2) to drop them off at the filight master. Use "Soar" (3) on cooldown to move faster.
+.complete 12237,1 
+.goto Dragonblight,77.13,49.78
+.use 37287
+step << Alliance
+.goto Dragonblight,77.16,50.10
+>>Dismount the Gryphon, talk to Urik
+.turnin 12237 >>Turn in Flight of the Wintergarde Defender
+.accept 12251 >>Accept Return to the High Commander
+step << Alliance
+#completewith Onslaught
+.goto Dragonblight,77.46,51.43
+.home >>Set your Hearthstone to Wintergarde Keep
+step << Alliance
+.goto Dragonblight,78.47,48.28
+>>Talk to Halford
+.turnin 12251 >>Turn in Return to the High Commander
 step
+#label Onslaught
 .loop 50,Dragonblight,87.90,41.21,87.00,42.19,86.45,40.12,85.51,41.24,83.78,41.98,84.14,40.72,84.49,37.06,87.64,35.43,87.90,41.21
 .xp 74 >> AoE grind the Scarlets to 74
 step
-#label WinterHS2
+.goto Undercity,85.1,10.0 << Horde
+.goto Stormwind City,49.2,87.7 << Alliance
+.train 42939 >> Train your class spells
+.xp <74,1
+step
 #completewith next
 .hs >> Hearth to Venomspite << Horde
 .hs >> Hearth to Wintergarde Keep << Alliance
 step
+.loop 50,Dragonblight,87.90,41.21,87.00,42.19,86.45,40.12,85.51,41.24,83.78,41.98,84.14,40.72,84.49,37.06,87.64,35.43,87.90,41.21
+.xp 76 >> AoE grind the Scarlets to 76
+step
 #completewith next
-.goto Dragonblight,77.08,49.86 << Alliance
-.fly Stars' Rest>>Fly to Stars' Rest << Alliance
-.goto Dragonblight,76.48,62.20 << Horde
-.fly Agmar >>Fly to Agmar's Hammer << Horde
-.zoneskip Dalaran
-.zoneskip SholazarBasin
+.hs >> Hearth to Venomspite << Horde
+.hs >> Hearth to Wintergarde Keep << Alliance
+step
+.goto Dragonblight,60.32,51.55
+>>Travel to Wyrmrest Temple
+.fp Wyrmrest Temple >> Get the Wyrmrest Temple flight path
+step << Horde
+.goto Dragonblight,37.51,45.77
+>>Travel to Agmar's Hammer
+.fp Agmar's Hammer >> Get the Agmar's Hammer flight path
 step << Horde
 .goto Dragonblight,38.05,46.22
 >>Talk to Aethas
@@ -281,6 +209,10 @@ step << Horde
 .zone Dalaran >>Ask Aethas for a teleport to Dalaran
 .zoneskip SholazarBasin
 .skipgossip
+step << Alliance
+.goto Dragonblight,29.15,55.32
+>>Head east into Dragonblight
+.fp Stars' Rest >> Get the Stars' Rest Flight Path
 step << Alliance
 .goto Dragonblight,29.0,55.5
 >>Talk to Modera
@@ -297,13 +229,12 @@ step
 .abandon 12794 >> Abandon The Magical Kingdom of Dalaran. DO NOT TURN THIS IN << Alliance
 step
 .goto Dalaran,56.3,46.7
-.trainer >>Go inside the building. Train your Dalaran Portals
+.train 53140 >>Go inside the building. Train Teleport: Dalaran
 step
 .goto Dalaran,54.94,46.19
-.trainer >> Train your class spells
+.train 42920 >> Train your class spells
+.xp <76,1
 step
-#completewith end
-#label DalaranFP
 .goto Dalaran,72.18,45.77
 .fp Dalaran >> Get the Dalaran flight path
 step
@@ -368,25 +299,15 @@ step
 >>AoE the Venture Co. in Swindlegrin's Dig
 .complete 12524,1 
 step
-.loop 75,SholazarBasin,36.21,51.02,37.13,45.50,32.88,45.11,31.67,48.72
-.xp 75 >> AoE the Venture Co. to 75
-step
 .goto SholazarBasin,37.35,45.78,50,0
 .goto SholazarBasin,33.31,45.31,50,0
 .goto SholazarBasin,33.13,47.90
 >>AoE the Venture Co. in Swindlegrin's Dig
 .complete 12524,1 
 step
-#level 75
-#completewith next
-.zone Dalaran >> Teleport to Dalaran
-step
-#level 75
-.goto Dalaran,54.94,46.19
-.trainer >> Train your class spells
-step
 #completewith Debaar1
 .hs >> Hearth to Nesingwary's Base Camp
+.cooldown item,6948,>0
 step
 >>Return to Nesingwary's Base Camp. Talk to Hemet and Debaar
 .turnin 12688 >>Turn in Engineering a Disaster
@@ -423,10 +344,6 @@ step
 .complete 12525,1 
 .complete 12525,2 
 step
-#label VentureCo2
-.loop 75,SholazarBasin,36.21,51.02,37.13,45.50,32.88,45.11,31.67,48.72
-.xp 76 >> AoE the Venture Co. to 76
-step
 .goto SholazarBasin,33.2,45.7,50,0
 .goto SholazarBasin,37.03,46.72
 >>Loot the various spare parts found around Swindlegrin's Dig
@@ -435,16 +352,9 @@ step
 >>Kill any mob in Sholazar for the Golden Engagement Ring. Don't focus on this quest at all
 .complete 12624,1 
 step
-#level 76
-#completewith next
-.zone Dalaran >> Teleport to Dalaran
-step
-#level 76
-.goto Dalaran,54.94,46.19
-.trainer >> Train your class spells
-step
 #completewith Debaar1
 .hs >> Hearth to Nesingwary's Base Camp
+.cooldown item,6948,>0
 step
 #completewith end
 #label NesFP
@@ -479,9 +389,8 @@ step
 #completewith next
 .zone Dalaran >> Teleport to Dalaran
 step
-#level 77
 .goto Dalaran,54.94,46.19
-.trainer >> Train your class spells
+.train 42985 >> Train your class spells
 step
 .goto Dalaran,69.81,45.45
 .train 54197 >> Train Cold Weather Flying from Hira
@@ -494,12 +403,11 @@ step
 >>If you have 295 or more spell hit (and the Precision talent) skip this step
 .xp 78 >> AoE the Venture Co. to 78
 step
-#completewith next
 .zone Dalaran >> Teleport to Dalaran
 step
-#level 78
 .goto Dalaran,54.94,46.19
-.trainer >> Train your class spells
+.train 42859 >> Train your class spells
+.xp <78,1
 step
 #completewith next
 .goto IcecrownGlacier,59.0,73.8
@@ -508,13 +416,13 @@ step
 .goto IcecrownGlacier,59.0,73.8
 .xp 79 >> AoE the Undead to 79
 step
-#level 79
 #completewith next
 .zone Dalaran >> Teleport to Dalaran
+.xp <79,1
 step
-#level 79
 .goto Dalaran,54.94,46.19
-.trainer >> Train your class spells
+.train 43008 >> Train your class spells
+.xp <79,1
 step
 #completewith next
 .goto IcecrownGlacier,59.0,73.8
@@ -522,12 +430,9 @@ step
 step
 .goto IcecrownGlacier,59.0,73.8
 .xp 80 >> AoE the Undead to 80
-step
-+Congratulations on finishing the RestedXP 68-80 AoE leveling guide! Thank you for using RestedXP.
-.link https://discord.com/invite/ApNgbdQNQy >> As this is Beta, the guide may have had some bugs. If you encountered any while playing through, report them here!
 ]])
 RXPGuides.RegisterGuide([[
-#version 9
+#version 13
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -545,7 +450,7 @@ step << skip
 +Once you finish the guide, it is highly recommended you copy your character over to the PTR and give the Turn in Guide a test whirl on the PTR so you know the route better!
 ]])
 RXPGuides.RegisterGuide([[
-#version 9
+#version 13
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -1004,7 +909,7 @@ step << Alliance
 .collect 29443,11,10511,1
 ]])
 RXPGuides.RegisterGuide([[
-#version 9
+#version 13
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -2940,7 +2845,7 @@ step
 .complete 11008,1
 ]])
 RXPGuides.RegisterGuide([[
-#version 9
+#version 13
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -2956,7 +2861,7 @@ step
 .show25quests >> CLICK HERE to see the list of 25 best quests for your character
 ]])
 RXPGuides.RegisterGuide([[
-#version 9
+#version 13
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -4850,7 +4755,7 @@ step
 .accept 11016 >> Accept Nethermine Flayer Hide
 ]])
 RXPGuides.RegisterGuide([[
-#version 9
+#version 13
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -4895,7 +4800,7 @@ step
 .collect 30542,1
 ]])
 RXPGuides.RegisterGuide([[
-#version 9
+#version 13
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -6502,4 +6407,4 @@ step
 .goto Tanaris,57.6,62.7
 >> Enter The Black Morass and turn in the quest
 .turnin 10297 >> Turn in The Opening of the Dark Portal
-]]);
+]])

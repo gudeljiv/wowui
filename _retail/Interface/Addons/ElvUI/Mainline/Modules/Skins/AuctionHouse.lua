@@ -2,7 +2,7 @@ local E, L, V, P, G = unpack(ElvUI)
 local S = E:GetModule('Skins')
 
 local _G = _G
-local pairs, ipairs, select = pairs, ipairs, select
+local next, pairs, unpack = next, pairs, unpack
 local hooksecurefunc = hooksecurefunc
 local CreateFrame = CreateFrame
 
@@ -53,10 +53,8 @@ local function HandleListIcon(frame)
 end
 
 local function HandleSummaryIcons(frame)
-	for i = 1, 23 do
-		local child = select(i, frame.ScrollFrame.scrollChild:GetChildren())
-
-		if child and child.Icon then
+	for _, child in next, { frame.ScrollTarget:GetChildren() } do
+		if child.Icon then
 			if not child.IsSkinned then
 				S:HandleIcon(child.Icon)
 
@@ -80,17 +78,15 @@ local function SkinItemDisplay(frame)
 	local ItemButton = ItemDisplay.ItemButton
 	ItemButton.CircleMask:Hide()
 
-	-- We skin the new IconBorder from the AH, it looks really cool tbh.
-	ItemButton.Icon:SetTexCoord(.08, .92, .08, .92)
-	ItemButton.Icon:Size(44)
-	ItemButton.IconBorder:SetTexCoord(.08, .92, .08, .92)
+	S:HandleIcon(ItemButton.Icon, true)
+	S:HandleIconBorder(ItemButton.IconBorder, ItemButton.Icon.backdrop)
+	ItemButton:GetHighlightTexture():Hide()
 end
 
 local function HandleHeaders(frame)
 	local maxHeaders = frame.HeaderContainer:GetNumChildren()
-	for i = 1, maxHeaders do
-		local header = select(i, frame.HeaderContainer:GetChildren())
-		if header and not header.IsSkinned then
+	for i, header in next, { frame.HeaderContainer:GetChildren() } do
+		if not header.IsSkinned then
 			header:DisableDrawLayer('BACKGROUND')
 
 			if not header.backdrop then
@@ -122,10 +118,9 @@ local function HandleSellFrame(frame)
 
 	local ItemButton = ItemDisplay.ItemButton
 	if ItemButton.IconMask then ItemButton.IconMask:Hide() end
-	if ItemButton.IconBorder then ItemButton.IconBorder:Kill() end
 
 	ItemButton.EmptyBackground:Hide()
-	ItemButton:SetPushedTexture('')
+	ItemButton:SetPushedTexture(E.ClearTexture)
 	ItemButton.Highlight:SetColorTexture(1, 1, 1, .25)
 	ItemButton.Highlight:SetAllPoints(ItemButton.Icon)
 
@@ -134,6 +129,10 @@ local function HandleSellFrame(frame)
 	S:HandleButton(frame.QuantityInput.MaxButton)
 	S:HandleEditBox(frame.PriceInput.MoneyInputFrame.GoldBox)
 	S:HandleEditBox(frame.PriceInput.MoneyInputFrame.SilverBox)
+
+	if ItemButton.IconBorder then
+		S:HandleIconBorder(ItemButton.IconBorder, ItemButton.Icon.backdrop)
+	end
 
 	if frame.SecondaryPriceInput then
 		S:HandleEditBox(frame.SecondaryPriceInput.MoneyInputFrame.GoldBox)
@@ -158,14 +157,17 @@ local function HandleTokenSellFrame(frame)
 
 	local ItemButton = ItemDisplay.ItemButton
 	if ItemButton.IconMask then ItemButton.IconMask:Hide() end
-	if ItemButton.IconBorder then ItemButton.IconBorder:Kill() end
 
 	ItemButton.EmptyBackground:Hide()
-	ItemButton:SetPushedTexture('')
+	ItemButton:SetPushedTexture(E.ClearTexture)
 	ItemButton.Highlight:SetColorTexture(1, 1, 1, .25)
 	ItemButton.Highlight:SetAllPoints(ItemButton.Icon)
 
 	S:HandleIcon(ItemButton.Icon, true)
+
+	if ItemButton.IconBorder then
+		S:HandleIconBorder(ItemButton.IconBorder, ItemButton.Icon.backdrop)
+	end
 
 	S:HandleButton(frame.PostButton)
 	HandleAuctionButtons(frame.DummyRefreshButton)
@@ -183,19 +185,45 @@ local function HandleSellList(frame, hasHeader, fitScrollBar)
 		HandleAuctionButtons(frame.RefreshFrame.RefreshButton)
 	end
 
-	S:HandleScrollBar(frame.ScrollFrame.scrollBar)
+	S:HandleTrimScrollBar(frame.ScrollBar)
 
 	if fitScrollBar then
-		frame.ScrollFrame.scrollBar:ClearAllPoints()
-		frame.ScrollFrame.scrollBar:Point('TOPLEFT', frame.ScrollFrame, 'TOPRIGHT', 1, -16)
-		frame.ScrollFrame.scrollBar:Point('BOTTOMLEFT', frame.ScrollFrame, 'BOTTOMRIGHT', 1, 16)
+		frame.ScrollBar:ClearAllPoints()
+		frame.ScrollBar:Point('TOPRIGHT', frame, 1, -16)
+		frame.ScrollBar:Point('BOTTOMRIGHT', frame, 1, 16)
 	end
 
 	if hasHeader then
-		frame.ScrollFrame:SetTemplate('Transparent')
+		frame.ScrollBox:SetTemplate('Transparent')
+
 		hooksecurefunc(frame, 'RefreshScrollFrame', HandleHeaders)
 	else
-		hooksecurefunc(frame, 'RefreshListDisplay', HandleSummaryIcons)
+		hooksecurefunc(frame.ScrollBox, 'Update', HandleSummaryIcons)
+	end
+end
+
+local function HandleTabs(arg1)
+	local frame = _G.AuctionHouseFrame
+	if not arg1 or arg1 ~= frame then return end
+
+	local lastTab = _G.AuctionHouseFrameBuyTab
+	for index, tab in next, frame.Tabs do
+		-- we can move addon tabs but only skin the blizzard ones (AddonSkins handles the rest)
+		local blizzTab = tab == _G.AuctionHouseFrameBuyTab or tab == _G.AuctionHouseFrameSellTab or tab == _G.AuctionHouseFrameAuctionsTab
+		if blizzTab and not tab.backdrop then
+			S:HandleTab(tab)
+		end
+
+		-- tab positions
+		tab:ClearAllPoints()
+
+		if index == 1 then
+			tab:Point('BOTTOMLEFT', frame, 'BOTTOMLEFT', -3, -32)
+		else -- skinned ones can be closer together
+			tab:Point('TOPLEFT', lastTab, 'TOPRIGHT', (tab.backdrop or tab.Backdrop) and -5 or 0, 0)
+		end
+
+		lastTab = tab
 	end
 end
 
@@ -206,20 +234,9 @@ local function LoadSkin()
 	local Frame = _G.AuctionHouseFrame
 	S:HandlePortraitFrame(Frame)
 
-	local AuctionHouseTabs = {
-		_G.AuctionHouseFrameBuyTab,
-		_G.AuctionHouseFrameSellTab,
-		_G.AuctionHouseFrameAuctionsTab,
-	}
-
-	for _, tab in pairs(AuctionHouseTabs) do
-		if tab then
-			S:HandleTab(tab)
-		end
-	end
-
-	_G.AuctionHouseFrameBuyTab:ClearAllPoints()
-	_G.AuctionHouseFrameBuyTab:Point('BOTTOMLEFT', Frame, 'BOTTOMLEFT', 0, -30)
+	-- handle tab spacing
+	hooksecurefunc('PanelTemplates_SetNumTabs', HandleTabs)
+	HandleTabs(Frame) -- call it once to setup our tabs
 
 	-- SearchBar Frame
 	HandleSearchBarFrame(Frame.SearchBar)
@@ -228,30 +245,16 @@ local function LoadSkin()
 
 	--[[ Categorie List ]]--
 	local Categories = Frame.CategoriesList
-	Categories.ScrollFrame:StripTextures()
-	Categories.Background:Hide()
-	Categories.NineSlice:Hide()
-	Categories:SetTemplate('Transparent')
+	Categories:StripTextures()
+	Categories.NineSlice:SetTemplate('Transparent')
+	Categories.NineSlice:SetInside(Categories)
+	S:HandleTrimScrollBar(Categories.ScrollBar)
 
-	S:HandleScrollBar(_G.AuctionHouseFrameScrollBar)
-	_G.AuctionHouseFrameScrollBar:ClearAllPoints()
-	_G.AuctionHouseFrameScrollBar:Point('TOPRIGHT', Categories, -5, -22)
-	_G.AuctionHouseFrameScrollBar:Point('BOTTOMRIGHT', Categories, -5, 22)
-
-	for i = 1, _G.NUM_FILTERS_TO_DISPLAY do
-		local button = Categories.FilterButtons[i]
-
-		button:StripTextures(true)
-		button:StyleButton()
-
-		button.SelectedTexture:SetInside(button)
-	end
-
-	hooksecurefunc('AuctionFrameFilters_UpdateCategories', function(categoriesList, _)
-		for _, button in ipairs(categoriesList.FilterButtons) do
-			button.SelectedTexture:SetAtlas(nil)
-			button.SelectedTexture:SetColorTexture(0.7, 0.7, 0.7, 0.4)
-		end
+	hooksecurefunc('AuctionHouseFilterButton_SetUp', function(button)
+		local r, g, b = unpack(E.media.rgbvaluecolor)
+		button.NormalTexture:SetAlpha(0)
+		button.SelectedTexture:SetColorTexture(r, g, b, .25)
+		button.HighlightTexture:SetColorTexture(1, 1, 1, .1)
 	end)
 
 	--[[ Browse Frame ]]--
@@ -260,12 +263,11 @@ local function LoadSkin()
 	local BrowseList = Browse.ItemList
 	BrowseList:StripTextures()
 	hooksecurefunc(BrowseList, 'RefreshScrollFrame', HandleHeaders)
-	BrowseList.ResultsText:SetParent(BrowseList.ScrollFrame)
-	S:HandleScrollBar(BrowseList.ScrollFrame.scrollBar)
-	BrowseList.ScrollFrame:SetTemplate('Transparent')
-	BrowseList.ScrollFrame.scrollBar:ClearAllPoints()
-	BrowseList.ScrollFrame.scrollBar:Point('TOPLEFT', BrowseList.ScrollFrame, 'TOPRIGHT', 1, -16)
-	BrowseList.ScrollFrame.scrollBar:Point('BOTTOMLEFT', BrowseList.ScrollFrame, 'BOTTOMRIGHT', 1, 16)
+	S:HandleTrimScrollBar(BrowseList.ScrollBar)
+	BrowseList:SetTemplate('Transparent')
+	BrowseList.ScrollBar:ClearAllPoints()
+	BrowseList.ScrollBar:Point('TOPRIGHT', BrowseList, 1, -16)
+	BrowseList.ScrollBar:Point('BOTTOMRIGHT', BrowseList, 1, 16)
 
 	--[[ BuyOut Frame]]
 	local CommoditiesBuyFrame = Frame.CommoditiesBuyFrame
@@ -276,7 +278,7 @@ local function LoadSkin()
 	CommoditiesBuyList:StripTextures()
 	CommoditiesBuyList:SetTemplate('Transparent')
 	S:HandleButton(CommoditiesBuyList.RefreshFrame.RefreshButton)
-	S:HandleScrollBar(CommoditiesBuyList.ScrollFrame.scrollBar)
+	S:HandleTrimScrollBar(CommoditiesBuyList.ScrollBar)
 
 	local BuyDisplay = Frame.CommoditiesBuyFrame.BuyDisplay
 	S:HandleEditBox(BuyDisplay.QuantityInput.InputBox)
@@ -294,7 +296,7 @@ local function LoadSkin()
 	local ItemBuyList = ItemBuyFrame.ItemList
 	ItemBuyList:StripTextures()
 	ItemBuyList:SetTemplate('Transparent')
-	S:HandleScrollBar(ItemBuyList.ScrollFrame.scrollBar)
+	S:HandleTrimScrollBar(ItemBuyList.ScrollBar)
 	S:HandleButton(ItemBuyList.RefreshFrame.RefreshButton)
 	hooksecurefunc(ItemBuyList, 'RefreshScrollFrame', HandleHeaders)
 
@@ -305,7 +307,6 @@ local function LoadSkin()
 
 	for _, EditBox in pairs(EditBoxes) do
 		S:HandleEditBox(EditBox)
-		--EditBox:SetTextInsets(1, 1, -1, 1)
 	end
 
 	S:HandleButton(ItemBuyFrame.BidFrame.BidButton)
@@ -360,9 +361,9 @@ local function LoadSkin()
 	SummaryList:SetTemplate('Transparent')
 	S:HandleButton(AuctionsFrame.CancelAuctionButton)
 
-	SummaryList.ScrollFrame.scrollBar:ClearAllPoints()
-	SummaryList.ScrollFrame.scrollBar:Point('TOPRIGHT', SummaryList, -3, -20)
-	SummaryList.ScrollFrame.scrollBar:Point('BOTTOMRIGHT', SummaryList, -3, 20)
+	SummaryList.ScrollBar:ClearAllPoints()
+	SummaryList.ScrollBar:Point('TOPRIGHT', SummaryList, -3, -20)
+	SummaryList.ScrollBar:Point('BOTTOMRIGHT', SummaryList, -3, 20)
 
 	local AllAuctionsList = AuctionsFrame.AllAuctionsList
 	HandleSellList(AllAuctionsList, true, true)
@@ -396,12 +397,13 @@ local function LoadSkin()
 	local ItemButton = Token.ItemButton
 	S:HandleIcon(ItemButton.Icon, true)
 	ItemButton.Icon.backdrop:SetBackdropBorderColor(0, .8, 1)
+	ItemButton:GetHighlightTexture():Hide()
+	ItemButton.CircleMask:Hide()
 	ItemButton.IconBorder:Kill()
 
 	--WoW Token Tutorial Frame
 	local WowTokenGameTimeTutorial = Frame.WoWTokenResults.GameTimeTutorial
 	WowTokenGameTimeTutorial.NineSlice:Hide()
-	WowTokenGameTimeTutorial.TitleBg:SetAlpha(0)
 	WowTokenGameTimeTutorial:SetTemplate('Transparent')
 	S:HandleCloseButton(WowTokenGameTimeTutorial.CloseButton)
 	S:HandleButton(WowTokenGameTimeTutorial.RightDisplay.StoreButton)

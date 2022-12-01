@@ -4,10 +4,10 @@ BisTooltipDB = {
 		["Mxzq - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
 		["Miqa - Golemagg"] = "Default",
-		["Handrmandr - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Handrmandr - Golemagg"] = "Default",
 	},
 	["char"] = {
 		["Mxzq - Golemagg"] = {
@@ -20,8 +20,8 @@ BisTooltipDB = {
 			["filter_specs"] = {
 				["Warrior"] = {
 					["Fury"] = true,
-					["Protection"] = true,
 					["Arms"] = true,
+					["Protection"] = true,
 				},
 				["Paladin"] = {
 					["Protection"] = true,
@@ -38,15 +38,15 @@ BisTooltipDB = {
 					["Assassination"] = true,
 				},
 				["Mage"] = {
-					["Fire FFB"] = true,
+					["Arcane"] = true,
 					["Frost"] = true,
 					["Fire"] = true,
-					["Arcane"] = true,
+					["Fire FFB"] = true,
 				},
 				["Druid"] = {
-					["Restoration"] = true,
-					["Balance"] = true,
 					["Feral dps"] = true,
+					["Balance"] = true,
+					["Restoration"] = true,
 					["Feral tank"] = true,
 				},
 				["Death knight"] = {
@@ -56,34 +56,24 @@ BisTooltipDB = {
 				},
 				["Hunter"] = {
 					["Marksmanship"] = true,
-					["Survival"] = true,
 					["Beast mastery"] = true,
+					["Survival"] = true,
+				},
+				["Priest"] = {
+					["Discipline"] = true,
+					["Holy"] = true,
+					["Shadow"] = true,
 				},
 				["Warlock"] = {
 					["Demonology"] = true,
 					["Affliction"] = true,
 					["Destruction"] = true,
 				},
-				["Priest"] = {
-					["Discipline"] = true,
-					["Shadow"] = true,
-					["Holy"] = true,
-				},
 			},
-			["class_index"] = 10,
 			["phase_index"] = 2,
+			["class_index"] = 10,
 		},
 		["Miqa - Golemagg"] = {
-			["version"] = 6.1,
-		},
-		["Handrmandr - Golemagg"] = {
-			["version"] = 6.1,
-		},
-		["Battlearm - Golemagg"] = {
-			["version"] = 6.1,
-			["minimapPos"] = 31.14717728975205,
-		},
-		["Moolatz - Golemagg"] = {
 			["version"] = 6.1,
 		},
 		["Vermin - Golemagg"] = {
@@ -93,8 +83,8 @@ BisTooltipDB = {
 			["filter_specs"] = {
 				["Warrior"] = {
 					["Fury"] = true,
-					["Arms"] = true,
 					["Protection"] = true,
+					["Arms"] = true,
 				},
 				["Paladin"] = {
 					["Protection"] = true,
@@ -111,15 +101,15 @@ BisTooltipDB = {
 					["Assassination"] = true,
 				},
 				["Mage"] = {
-					["Arcane"] = true,
+					["Fire FFB"] = true,
 					["Frost"] = true,
 					["Fire"] = true,
-					["Fire FFB"] = true,
+					["Arcane"] = true,
 				},
 				["Druid"] = {
-					["Feral dps"] = true,
-					["Balance"] = true,
 					["Restoration"] = true,
+					["Balance"] = true,
+					["Feral dps"] = true,
 					["Feral tank"] = true,
 				},
 				["Death knight"] = {
@@ -129,22 +119,32 @@ BisTooltipDB = {
 				},
 				["Hunter"] = {
 					["Marksmanship"] = true,
-					["Beast mastery"] = true,
 					["Survival"] = true,
-				},
-				["Priest"] = {
-					["Discipline"] = true,
-					["Holy"] = true,
-					["Shadow"] = true,
+					["Beast mastery"] = true,
 				},
 				["Warlock"] = {
 					["Demonology"] = true,
 					["Affliction"] = true,
 					["Destruction"] = true,
 				},
+				["Priest"] = {
+					["Discipline"] = true,
+					["Shadow"] = true,
+					["Holy"] = true,
+				},
 			},
-			["phase_index"] = 2,
 			["minimapPos"] = 34.52921906708929,
+			["phase_index"] = 2,
+		},
+		["Battlearm - Golemagg"] = {
+			["version"] = 6.1,
+			["minimapPos"] = 31.14717728975205,
+		},
+		["Moolatz - Golemagg"] = {
+			["version"] = 6.1,
+		},
+		["Handrmandr - Golemagg"] = {
+			["version"] = 6.1,
 		},
 	},
 }

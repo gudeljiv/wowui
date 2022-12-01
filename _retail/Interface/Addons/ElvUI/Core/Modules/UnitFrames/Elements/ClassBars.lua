@@ -7,7 +7,6 @@ local wipe = wipe
 local next = next
 local pairs = pairs
 local ipairs = ipairs
-local unpack = unpack
 local CreateFrame = CreateFrame
 local MAX_COMBO_POINTS = MAX_COMBO_POINTS
 -- GLOBALS: ElvUF_Player
@@ -66,13 +65,13 @@ function UF:ClassPower_UpdateColor(powerType, rune)
 	local colors = UF.db.colors.classResources
 	local fallback = UF.db.colors.power[powerType]
 
-	if isRunes and E.Retail and UF.db.colors.chargingRunes then
-		UF:Runes_UpdateCharged(self, custom_backdrop)
+	if isRunes and UF.db.colors.chargingRunes then
+		UF:Runes_UpdateCharged(self, rune, custom_backdrop)
 	elseif isRunes and rune then
 		local color = colors.DEATHKNIGHT[rune.runeType or 0]
 		UF:ClassPower_SetBarColor(rune, color.r, color.g, color.b, custom_backdrop)
 	else
-		local classColor = (isRunes and colors.DEATHKNIGHT) or (powerType == 'COMBO_POINTS' and colors.comboPoints) or (powerType == 'CHI' and colors.MONK) or (powerType == 'Totems' and colors.SHAMAN)
+		local classColor = (isRunes and colors.DEATHKNIGHT) or (powerType == 'COMBO_POINTS' and colors.comboPoints) or (powerType == 'ESSENCE' and colors.EVOKER) or (powerType == 'CHI' and colors.MONK) or (powerType == 'Totems' and colors.SHAMAN)
 		for i, bar in ipairs(self) do
 			local color = (isRunes and classColor[bar.runeType or 0]) or (classColor and classColor[i]) or colors[E.myclass] or fallback
 			UF:ClassPower_SetBarColor(bar, color.r, color.g, color.b, custom_backdrop)
@@ -200,7 +199,7 @@ function UF:Configure_ClassBar(frame)
 		bars:SetFrameLevel(50) --RaisedElementParent uses 100, we want it lower than this
 
 		if bars.Holder and bars.Holder.mover then
-			E:DisableMover(bars.Holder.mover:GetName())
+			E:DisableMover(bars.Holder.mover.name)
 		end
 	elseif frame.CLASSBAR_DETACHED then
 		bars.Holder:Size(db.classbar.detachedWidth, db.classbar.height)
@@ -209,9 +208,9 @@ function UF:Configure_ClassBar(frame)
 		bars:Point('BOTTOMLEFT', bars.Holder, 'BOTTOMLEFT', UF.BORDER + UF.SPACING, UF.BORDER + UF.SPACING)
 
 		if not bars.Holder.mover then
-			E:CreateMover(bars.Holder, 'ClassBarMover', L["Classbar"], nil, nil, nil, 'ALL,SOLO', nil, 'unitframe,individualUnits,player,classbar')
+			E:CreateMover(bars.Holder, 'ClassBarMover', L["Class Bar"], nil, nil, nil, 'ALL,SOLO', nil, 'unitframe,individualUnits,player,classbar')
 		else
-			E:EnableMover(bars.Holder.mover:GetName())
+			E:EnableMover(bars.Holder.mover.name)
 		end
 
 		bars:SetFrameStrata(db.classbar.strataAndLevel.useCustomStrata and db.classbar.strataAndLevel.frameStrata or 'LOW')
@@ -228,7 +227,7 @@ function UF:Configure_ClassBar(frame)
 		bars:SetFrameLevel(frame.Health:GetFrameLevel() + 10) --Health uses 10, Power uses (Health + 5) when attached
 
 		if bars.Holder and bars.Holder.mover then
-			E:DisableMover(bars.Holder.mover:GetName())
+			E:DisableMover(bars.Holder.mover.name)
 		end
 	end
 
@@ -386,12 +385,12 @@ function UF:UpdateClassBar(current, maxBars, hasMaxChanged, powerType, chargedPo
 		UF.ClassPower_UpdateColor(self, powerType)
 
 		if chargedPoints then
-			local r, g, b = unpack(ElvUF.colors.chargedComboPoint)
+			local color = ElvUF.colors.chargedComboPoint
 			for _, cIndex in next, chargedPoints do
 				local cPoint = self[cIndex]
 				if cPoint then
-					cPoint:SetStatusBarColor(r, g, b)
-					cPoint.bg:SetVertexColor(r * .35, g * .35, b * .35)
+					cPoint:SetStatusBarColor(color.r, color.g, color.b)
+					cPoint.bg:SetVertexColor(color.r * .35, color.g * .35, color.b * .35)
 				end
 			end
 		end
@@ -401,12 +400,36 @@ end
 -------------------------------------------------------------
 -- DEATHKNIGHT
 -------------------------------------------------------------
-function UF:Runes_UpdateCharged(runes, custom_backdrop)
+
+function UF:Runes_GetColor(rune, colors, classPower)
+	local value = rune:GetValue()
+
+	if E.Wrath then
+		local _, maxDuration = rune:GetMinMaxValues()
+		local duration = value == maxDuration and 1 or ((value * maxDuration) / 255) + .35
+
+		local color = colors[rune.runeType or 0]
+		return color.r * duration, color.g * duration, color.b * duration
+	else -- classPower is for nameplates only
+		local color = (value == 1 and classPower) or colors[(value and value ~= 1 and -1) or rune.runeType or 0]
+		return color.r, color.g, color.b
+	end
+end
+
+function UF:Runes_UpdateCharged(runes, rune, custom_backdrop)
 	local colors = UF.db.colors.classResources.DEATHKNIGHT
-	for _, bar in ipairs(runes) do
-		local value = bar:GetValue()
-		local color = colors[(value and value ~= 1 and -1) or bar.runeType or 0]
-		UF:ClassPower_SetBarColor(bar, color.r, color.g, color.b, custom_backdrop)
+	if not custom_backdrop then
+		custom_backdrop = UF.db.colors.customclasspowerbackdrop and UF.db.colors.classpower_backdrop
+	end
+
+	if rune then
+		local r, g, b = UF:Runes_GetColor(rune, colors)
+		UF:ClassPower_SetBarColor(rune, r, g, b, UF.db.colors.customclasspowerbackdrop and UF.db.colors.classpower_backdrop)
+	elseif runes then
+		for _, bar in ipairs(runes) do
+			local r, g, b = UF:Runes_GetColor(bar, colors)
+			UF:ClassPower_SetBarColor(bar, r, g, b, custom_backdrop)
+		end
 	end
 end
 
@@ -414,10 +437,20 @@ function UF:Runes_PostUpdate(_, hasVehicle, allReady)
 	local frame = self.origParent or self:GetParent()
 	local db = frame.db
 
-	self:SetShown(not hasVehicle and not db.classbar.autoHide or not allReady)
+	if hasVehicle then
+		self:SetShown(false)
+	else
+		self:SetShown(not db.classbar.autoHide or not allReady)
+	end
 
-	if E.Retail and UF.db.colors.chargingRunes then
-		UF:Runes_UpdateCharged(self, UF.db.colors.customclasspowerbackdrop and UF.db.colors.classpower_backdrop)
+	if UF.db.colors.chargingRunes then
+		UF:Runes_UpdateCharged(self)
+	end
+end
+
+function UF:Runes_UpdateChargedColor()
+	if UF.db.colors.chargingRunes then
+		UF:Runes_UpdateCharged(nil, self)
 	end
 end
 
@@ -439,6 +472,8 @@ function UF:Construct_DeathKnightResourceBar(frame)
 		UF.classbars[rune] = true
 
 		rune:CreateBackdrop(nil, nil, nil, nil, true)
+		rune.PostUpdateColor = UF.Runes_UpdateChargedColor
+		rune.__owner = runes
 		rune.backdrop:SetParent(runes)
 
 		rune.bg = rune:CreateTexture(nil, 'BORDER')

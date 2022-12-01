@@ -3,8 +3,10 @@ local AB = E:GetModule('ActionBars')
 local Skins = E:GetModule('Skins')
 
 local _G = _G
-local tonumber, format = tonumber, format
-local select, pairs, floor = select, pairs, floor
+local tonumber = tonumber
+local next, format = next, format
+local hooksecurefunc = hooksecurefunc
+
 local CreateFrame = CreateFrame
 local HideUIPanel = HideUIPanel
 local GameTooltip_Hide = GameTooltip_Hide
@@ -20,9 +22,11 @@ local SecureActionButton_OnClick = SecureActionButton_OnClick
 local SetBinding = SetBinding
 local GameTooltip = GameTooltip
 local SpellBook_GetSpellBookSlot = SpellBook_GetSpellBookSlot
-local MAX_ACCOUNT_MACROS = MAX_ACCOUNT_MACROS
+
 local CHARACTER_SPECIFIC_KEYBINDING_TOOLTIP = CHARACTER_SPECIFIC_KEYBINDING_TOOLTIP
 local CHARACTER_SPECIFIC_KEYBINDINGS = CHARACTER_SPECIFIC_KEYBINDINGS
+local QUICK_KEYBIND_MODE = QUICK_KEYBIND_MODE
+local MAX_ACCOUNT_MACROS = MAX_ACCOUNT_MACROS
 
 local bind = CreateFrame('Frame', 'ElvUI_KeyBinder', E.UIParent)
 AB.KeyBinder = bind
@@ -80,7 +84,8 @@ function AB:BindListener(key)
 	end
 
 	--Check if this button can open a flyout menu
-	local isFlyout = (bind.button.FlyoutArrow and bind.button.FlyoutArrow:IsShown())
+	local hasArrow = bind.button.FlyoutArrow or (bind.button.FlyoutArrowContainer and bind.button.FlyoutArrowContainer.FlyoutArrowNormal)
+	local isFlyout = (hasArrow and hasArrow:IsShown())
 
 	if key == 'LSHIFT' or key == 'RSHIFT' or key == 'LCTRL' or key == 'RCTRL'
 	or key == 'LALT' or key == 'RALT' or key == 'UNKNOWN' then return end
@@ -170,22 +175,21 @@ function AB:BindUpdate(button, spellmacro)
 	button.bindstring = nil -- keep this clean
 
 	if spellmacro == 'FLYOUT' then
-		bind.name = button.spellName
-		button.bindstring = spellmacro..' '..bind.name
+		bind.name = button.spellName or button:GetAttribute('spellName') -- attribute is from the LAB custom flyout
+		if bind.name then button.bindstring = 'SPELL '..bind.name end
 	elseif spellmacro == 'SPELL' then
 		button.id = SpellBook_GetSpellBookSlot(button)
-		bind.name = GetSpellBookItemName(button.id, _G.SpellBookFrame.bookType)
-		button.bindstring = spellmacro..' '..bind.name
+		bind.name = button.id and GetSpellBookItemName(button.id, _G.SpellBookFrame.bookType) or nil
+		if bind.name then button.bindstring = 'SPELL '..bind.name end
 	elseif spellmacro == 'MACRO' then
-		button.id = button:GetID()
+		button.id = button.selectionIndex or button:GetID()
 
-		-- no clue what this is, leaving it alone tho lol
-		if floor(.5+select(2,_G.MacroFrameTab1Text:GetTextColor())*10)*0.1==.8 then
+		if _G.MacroFrame.selectedTab == 2 then
 			button.id = button.id + MAX_ACCOUNT_MACROS
 		end
 
 		bind.name = GetMacroInfo(button.id)
-		button.bindstring = spellmacro..' '..bind.name
+		if bind.name then button.bindstring = 'MACRO '..bind.name end
 	elseif spellmacro == 'MICRO' then
 		bind.name = button.tooltipText
 		button.bindstring = button.commandName
@@ -225,7 +229,7 @@ function AB:BindUpdate(button, spellmacro)
 	end
 
 	if button.bindstring then
-		button.bindings = {GetBindingKey(button.bindstring)}
+		button.bindings = { GetBindingKey(button.bindstring) }
 		AB:BindTooltip(triggerTooltip)
 	end
 end
@@ -254,36 +258,49 @@ do
 		AB:BindUpdate(button, 'MACRO')
 	end
 
-	local macro, binding = false, false
+	local function MacroFrame_FirstUpdate(frame)
+		for _, button in next, { frame.MacroSelector.ScrollBox.ScrollTarget:GetChildren() } do
+			button:HookScript('OnEnter', OnEnter)
+		end
+
+		AB:Unhook(frame, 'Update')
+	end
+
 	function AB:ADDON_LOADED(_, addon)
 		if addon == 'Blizzard_MacroUI' then
-			for i = 1, MAX_ACCOUNT_MACROS do
-				_G['MacroButton'..i]:HookScript('OnEnter', OnEnter)
+			if _G.MacroFrame.Update then
+				AB:SecureHook(_G.MacroFrame, 'Update', MacroFrame_FirstUpdate)
+			else
+				for i = 1, MAX_ACCOUNT_MACROS do
+					_G['MacroButton'..i]:HookScript('OnEnter', OnEnter)
+				end
 			end
 
-			macro = true
-		elseif addon == 'Blizzard_BindingUI' then
-			local parent = _G.KeyBindingFrame
-
-			if parent.quickKeybindButton then
-				parent.quickKeybindButton:Hide()
-			end
-
-			local frame = CreateFrame('Button', 'ElvUI_KeybindButton', parent, 'OptionsButtonTemplate')
-			frame:Width(150)
-			frame:Point('LEFT', parent.bindingsContainer)
-			frame:Point('BOTTOM', parent.cancelButton)
-			frame:SetScript('OnClick', keybindButtonClick)
-			frame:SetText('ElvUI Keybind')
-
-			Skins:HandleButton(frame)
-
-			binding = true
-		end
-
-		if macro and binding then
 			AB:UnregisterEvent('ADDON_LOADED')
 		end
+	end
+end
+
+do
+	local function UpdateScrollBox(scrollBox)
+		for _, element in next, { scrollBox.ScrollTarget:GetChildren() } do
+			local data = element and element.data
+			if data and data.buttonText == QUICK_KEYBIND_MODE then
+				local button = element.Button
+				if button and button:GetScript('OnClick') ~= keybindButtonClick then
+					button:SetScript('OnClick', keybindButtonClick)
+					button:SetFormattedText('%s Keybind', E.title)
+				end
+			end
+		end
+	end
+
+	function AB:SettingsDisplayCategory(category)
+		local list = category.name ~= 'Keybindings' and self:GetSettingsList()
+		if not list or not list.ScrollBox then return end
+
+		UpdateScrollBox(list.ScrollBox)
+		hooksecurefunc(list.ScrollBox, 'Update', UpdateScrollBox)
 	end
 end
 
@@ -298,6 +315,10 @@ function AB:LoadKeyBinder()
 	bind.texture:SetColorTexture(0, 0, 0, .25)
 	bind:Hide()
 
+	if E.Retail then
+		hooksecurefunc(_G.SettingsPanel, 'DisplayCategory', AB.SettingsDisplayCategory)
+	end
+
 	bind:SetScript('OnEnter', function(b) local db = b.button:GetParent().db if db and db.mouseover then AB:Button_OnEnter(b.button) end end)
 	bind:SetScript('OnLeave', function(b) AB:BindHide() local db = b.button:GetParent().db if db and db.mouseover then AB:Button_OnLeave(b.button) end end)
 	bind:SetScript('OnKeyUp', function(_, key) self:BindListener(key) end)
@@ -310,7 +331,7 @@ function AB:LoadKeyBinder()
 	end
 
 	local function buttonOnEnter(b) AB:BindUpdate(b) end
-	for b in pairs(self.handledbuttons) do
+	for b in next, self.handledbuttons do
 		if b:IsProtected() and b:IsObjectType('CheckButton') and not b.isFlyout then
 			b:HookScript('OnEnter', buttonOnEnter)
 		end
@@ -332,7 +353,7 @@ function AB:LoadKeyBinder()
 
 	bind.Popup = Popup
 
-	Popup.header = CreateFrame('Button', 'ElvUIBindPopupWindowHeader', Popup, 'OptionsButtonTemplate')
+	Popup.header = CreateFrame('Button', 'ElvUIBindPopupWindowHeader', Popup, 'UIPanelButtonTemplate')
 	Popup.header:Size(100, 25)
 	Popup.header:Point('CENTER', Popup, 'TOP')
 	Popup.header:RegisterForClicks('AnyUp', 'AnyDown')
@@ -348,17 +369,17 @@ function AB:LoadKeyBinder()
 	Popup.desc:Point('BOTTOMRIGHT', -18, 48)
 	Popup.desc:SetText(L["BINDINGS_HELP"])
 
-	Popup.save = CreateFrame('Button', 'ElvUIBindPopupWindowSaveButton', Popup, 'OptionsButtonTemplate')
+	Popup.save = CreateFrame('Button', 'ElvUIBindPopupWindowSaveButton', Popup, 'UIPanelButtonTemplate')
 	Popup.save:SetText(L["Save"])
 	Popup.save:Width(150)
 	Popup.save:SetScript('OnClick', function() AB:DeactivateBindMode(true) end)
 
-	Popup.discard = CreateFrame('Button', 'ElvUIBindPopupWindowDiscardButton', Popup, 'OptionsButtonTemplate')
+	Popup.discard = CreateFrame('Button', 'ElvUIBindPopupWindowDiscardButton', Popup, 'UIPanelButtonTemplate')
 	Popup.discard:Width(150)
 	Popup.discard:SetText(L["Discard"])
 	Popup.discard:SetScript('OnClick', function() AB:DeactivateBindMode(false) end)
 
-	Popup.perCharCheck = CreateFrame('CheckButton', 'ElvUIBindPopupWindowCheckButton', Popup, 'OptionsCheckButtonTemplate')
+	Popup.perCharCheck = CreateFrame('CheckButton', 'ElvUIBindPopupWindowCheckButton', Popup, 'UICheckButtonTemplate')
 	_G[Popup.perCharCheck:GetName()..'Text']:SetText(CHARACTER_SPECIFIC_KEYBINDINGS)
 	Popup.perCharCheck:SetScript('OnLeave', GameTooltip_Hide)
 	Popup.perCharCheck:SetScript('OnShow', function(checkBtn) checkBtn:SetChecked(GetCurrentBindingSet() == 2) end)

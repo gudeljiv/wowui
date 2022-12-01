@@ -10,7 +10,7 @@ local translitMark = '!'
 
 local _G = _G
 local next, type, gmatch, gsub, format = next, type, gmatch, gsub, format
-local unpack, ipairs, pairs, wipe, floor, ceil = unpack, ipairs, pairs, wipe, floor, ceil
+local ipairs, pairs, wipe, floor, ceil = ipairs, pairs, wipe, floor, ceil
 local strfind, strmatch, strlower, strsplit = strfind, strmatch, strlower, strsplit
 local utf8lower, utf8sub, utf8len = string.utf8lower, string.utf8sub, string.utf8len
 
@@ -27,7 +27,7 @@ local GetQuestDifficultyColor = GetQuestDifficultyColor
 local GetRaidRosterInfo = GetRaidRosterInfo
 local GetRelativeDifficultyColor = GetRelativeDifficultyColor
 local GetRuneCooldown = GetRuneCooldown
-local GetSpecialization = (E.Classic or E.TBC or E.Wrath and LCS.GetSpecialization) or GetSpecialization
+local GetSpecialization = (E.Classic or E.Wrath and LCS.GetSpecialization) or GetSpecialization
 local GetSpecializationInfo = GetSpecializationInfo
 local GetTime = GetTime
 local GetTitleName = GetTitleName
@@ -35,8 +35,10 @@ local GetUnitSpeed = GetUnitSpeed
 local HasPetUI = HasPetUI
 local IsInGroup = IsInGroup
 local IsInRaid = IsInRaid
+local IsInInstance = IsInInstance
 local QuestDifficultyColors = QuestDifficultyColors
 local UnitBattlePetLevel = UnitBattlePetLevel
+local UnitAffectingCombat = UnitAffectingCombat
 local UnitClass = UnitClass
 local UnitClassification = UnitClassification
 local UnitDetailedThreatSituation = UnitDetailedThreatSituation
@@ -195,13 +197,9 @@ local function GetClassPower(Class)
 		max = UnitHealthMax('player')
 
 		local staggerRatio = min / max
-		if staggerRatio >= STAGGER_RED_TRANSITION then
-			r, g, b = unpack(ElvUF.colors.power.STAGGER[STAGGER_RED_INDEX])
-		elseif staggerRatio >= STAGGER_YELLOW_TRANSITION then
-			r, g, b = unpack(ElvUF.colors.power.STAGGER[STAGGER_YELLOW_INDEX])
-		else
-			r, g, b = unpack(ElvUF.colors.power.STAGGER[STAGGER_GREEN_INDEX])
-		end
+		local staggerIndex = (staggerRatio >= STAGGER_RED_TRANSITION and STAGGER_RED_INDEX) or (staggerRatio >= STAGGER_YELLOW_TRANSITION and STAGGER_YELLOW_INDEX) or STAGGER_GREEN_INDEX
+		local color = ElvUF.colors.power.STAGGER[staggerIndex]
+		r, g, b = color.r, color.g, color.b
 	end
 
 	-- try special powers or combo points
@@ -221,24 +219,18 @@ local function GetClassPower(Class)
 		end
 
 		if min > 0 then
-			local powerColor = ElvUF.colors.ClassBars[Class]
-			if monk then -- chi is a table
-				r, g, b = unpack(powerColor[min])
-			elseif dk then
-				r, g, b = unpack(E.Wrath and ElvUF.colors.class.DEATHKNIGHT or powerColor[spec ~= 5 and spec or 1])
-			else
-				r, g, b = unpack(powerColor)
-			end
+			local power = ElvUF.colors.ClassBars[Class]
+			local color = (monk and power[min]) or (dk and (E.Wrath and ElvUF.colors.class.DEATHKNIGHT or power[spec ~= 5 and spec or 1])) or power
+			r, g, b = color.r, color.g, color.b
 		end
 	elseif not r then
 		min = UnitPower('player', POWERTYPE_COMBOPOINTS)
 		max = UnitPowerMax('player', POWERTYPE_COMBOPOINTS)
 
 		if min > 0 then
-			local r1, g1, b1 = unpack(ElvUF.colors.ComboPoints[1])
-			local r2, g2, b2 = unpack(ElvUF.colors.ComboPoints[2])
-			local r3, g3, b3 = unpack(ElvUF.colors.ComboPoints[3])
-			r, g, b = ElvUF:ColorGradient(min, max, r1, g1, b1, r2, g2, b2, r3, g3, b3)
+			local combo = ElvUF.colors.ComboPoints
+			local c1, c2, c3 = combo[1], combo[2], combo[3]
+			r, g, b = ElvUF:ColorGradient(min, max, c1.r, c1.g, c1.b, c2.r, c2.g, c2.b, c3.r, c3.g, c3.b)
 		end
 	end
 
@@ -248,7 +240,8 @@ local function GetClassPower(Class)
 		min = UnitPower('player', POWERTYPE_MANA)
 		max = UnitPowerMax('player', POWERTYPE_MANA)
 
-		r, g, b = unpack(ElvUF.colors.power.MANA)
+		local mana = ElvUF.colors.power.MANA
+		r, g, b = mana.r, mana.g, mana.b
 	end
 
 	return min or 0, max or 0, r or 1, g or 1, b or 1
@@ -324,7 +317,7 @@ for textFormat in pairs(E.GetFormattedTextStyles) do
 		if min ~= 0 then
 			return E:GetFormattedText(textFormat, min, max)
 		end
-	end, E.Classic or E.TBC)
+	end, E.Classic)
 
 	E:AddTag(format('altpower:%s', tagFormat), 'UNIT_POWER_UPDATE UNIT_POWER_BAR_SHOW UNIT_POWER_BAR_HIDE', function(unit)
 		local cur = UnitPower(unit, POWERTYPE_ALTERNATE)
@@ -377,7 +370,7 @@ for textFormat in pairs(E.GetFormattedTextStyles) do
 			if min ~= 0 then
 				return E:GetFormattedText(textFormat, min, max, nil, true)
 			end
-		end, E.Classic or E.TBC)
+		end, E.Classic)
 	end
 end
 
@@ -550,17 +543,17 @@ end)
 E:AddTag('selectioncolor', 'UNIT_NAME_UPDATE UNIT_FACTION INSTANCE_ENCOUNTER_ENGAGE_UNIT', function(unit)
 	local selection = NP:UnitSelectionType(unit)
 	local cs = ElvUF.colors.selection[selection]
-	return (cs and Hex(cs[1], cs[2], cs[3])) or '|cFFcccccc'
+	return (cs and Hex(cs.r, cs.g, cs.b)) or '|cFFcccccc'
 end)
 
 E:AddTag('classcolor', 'UNIT_NAME_UPDATE UNIT_FACTION INSTANCE_ENCOUNTER_ENGAGE_UNIT', function(unit)
 	if UnitIsPlayer(unit) then
 		local _, unitClass = UnitClass(unit)
 		local cs = ElvUF.colors.class[unitClass]
-		return (cs and Hex(cs[1], cs[2], cs[3])) or '|cFFcccccc'
+		return (cs and Hex(cs.r, cs.g, cs.b)) or '|cFFcccccc'
 	else
 		local cr = ElvUF.colors.reaction[UnitReaction(unit, 'player')]
-		return (cr and Hex(cr[1], cr[2], cr[3])) or '|cFFcccccc'
+		return (cr and Hex(cr.r, cr.g, cr.b)) or '|cFFcccccc'
 	end
 end)
 
@@ -571,8 +564,8 @@ end)
 E:AddTag('reactioncolor', 'UNIT_NAME_UPDATE UNIT_FACTION', function(unit)
 	local unitReaction = UnitReaction(unit, 'player')
 	if unitReaction then
-		local reaction = ElvUF.colors.reaction[unitReaction]
-		return Hex(reaction[1], reaction[2], reaction[3])
+		local color = ElvUF.colors.reaction[unitReaction]
+		return Hex(color.r, color.g, color.b)
 	else
 		return '|cFFc2c2c2'
 	end
@@ -665,8 +658,8 @@ E:AddTag('classpowercolor', 'UNIT_POWER_FREQUENT UNIT_DISPLAYPOWER'..(E.Retail a
 end)
 
 E:AddTag('manacolor', 'UNIT_POWER_FREQUENT UNIT_DISPLAYPOWER', function()
-	local r, g, b = unpack(ElvUF.colors.power.MANA)
-	return Hex(r, g, b)
+	local color = ElvUF.colors.power.MANA
+	return Hex(color.r, color.g, color.b)
 end)
 
 E:AddTag('incomingheals:personal', 'UNIT_HEAL_PREDICTION', function(unit)
@@ -794,7 +787,7 @@ E:AddTag('specialization', 'PLAYER_TALENT_UPDATE', function(unit)
 			return currentSpecName
 		end
 	end
-end)
+end, not E.Retail)
 
 E:AddTag('name:title', 'UNIT_NAME_UPDATE INSTANCE_ENCOUNTER_ENGAGE_UNIT', function(unit)
 	return UnitIsPlayer(unit) and UnitPVPName(unit) or UnitName(unit)
@@ -1102,7 +1095,7 @@ end
 
 do
 	local function GetTitleNPC(unit, custom)
-		if UnitIsPlayer(unit) then return end
+		if UnitIsPlayer(unit) or (E.Wrath and UnitAffectingCombat('player') and IsInInstance()) then return end
 
 		E.ScanTooltip:SetOwner(_G.UIParent, 'ANCHOR_NONE')
 		E.ScanTooltip:SetUnit(unit)
@@ -1129,6 +1122,8 @@ end
 
 do
 	local function GetQuestData(unit, which, Hex)
+		if UnitIsPlayer(unit) or (E.Wrath and UnitAffectingCombat('player') and IsInInstance()) then return end
+
 		E.ScanTooltip:SetOwner(_G.UIParent, 'ANCHOR_NONE')
 		E.ScanTooltip:SetUnit(unit)
 		E.ScanTooltip:Show()
@@ -1183,27 +1178,22 @@ do
 	E.TagFunctions.GetQuestData = GetQuestData
 
 	E:AddTag('quest:text', 'QUEST_LOG_UPDATE', function(unit)
-		if UnitIsPlayer(unit) then return end
 		return GetQuestData(unit, nil, Hex)
 	end)
 
 	E:AddTag('quest:full', 'QUEST_LOG_UPDATE', function(unit)
-		if UnitIsPlayer(unit) then return end
 		return GetQuestData(unit, 'full', Hex)
 	end)
 
 	E:AddTag('quest:info', 'QUEST_LOG_UPDATE', function(unit)
-		if UnitIsPlayer(unit) then return end
 		return GetQuestData(unit, 'info', Hex)
 	end)
 
 	E:AddTag('quest:title', 'QUEST_LOG_UPDATE', function(unit)
-		if UnitIsPlayer(unit) then return end
 		return GetQuestData(unit, 'title', Hex)
 	end)
 
 	E:AddTag('quest:count', 'QUEST_LOG_UPDATE', function(unit)
-		if UnitIsPlayer(unit) then return end
 		return GetQuestData(unit, 'count', Hex)
 	end)
 end
@@ -1375,19 +1365,19 @@ E.TagInfo = {
 		['cpoints'] = { category = 'Classpower', description = "Displays amount of combo points the player has (only for player, shows nothing on 0)" },
 		['arcanecharges'] = { hidden = not E.Retail, category = 'Classpower', description = "Displays the arcane charges (Mage)" },
 		['chi'] = { hidden = not E.Retail, category = 'Classpower', description = "Displays the chi points (Monk)" },
-		['classpower:current-max-percent'] = { hidden = E.Classic or E.TBC, category = 'Classpower', description = "Displays the unit's current and max amount of special power, separated by a dash (% when not full power)" },
-		['classpower:current-max'] = { hidden = E.Classic or E.TBC, category = 'Classpower', description = "Displays the unit's current and max amount of special power, separated by a dash" },
-		['classpower:current-percent'] = { hidden = E.Classic or E.TBC, category = 'Classpower', description = "Displays the unit's current and percentage amount of special power, separated by a dash" },
-		['classpower:current'] = { hidden = E.Classic or E.TBC, category = 'Classpower', description = "Displays the unit's current amount of special power" },
-		['classpower:deficit'] = { hidden = E.Classic or E.TBC, category = 'Classpower', description = "Displays the unit's special power as a deficit (Total Special Power - Current Special Power = -Deficit)" },
-		['classpower:percent'] = { hidden = E.Classic or E.TBC, category = 'Classpower', description = "Displays the unit's current amount of special power as a percentage" },
-		['classpower:current-max-percent:shortvalue'] = { hidden = E.Classic or E.TBC, category = 'Classpower', description = "" },
-		['classpower:current-max:shortvalue'] = { hidden = E.Classic or E.TBC, category = 'Classpower', description = "" },
-		['classpower:current-percent:shortvalue'] = { hidden = E.Classic or E.TBC, category = 'Classpower', description = "" },
-		['classpower:current:shortvalue'] = { hidden = E.Classic or E.TBC, category = 'Classpower', description = "" },
-		['classpower:deficit:shortvalue'] = { hidden = E.Classic or E.TBC, category = 'Classpower', description = "" },
+		['classpower:current-max-percent'] = { hidden = E.Classic, category = 'Classpower', description = "Displays the unit's current and max amount of special power, separated by a dash (% when not full power)" },
+		['classpower:current-max'] = { hidden = E.Classic, category = 'Classpower', description = "Displays the unit's current and max amount of special power, separated by a dash" },
+		['classpower:current-percent'] = { hidden = E.Classic, category = 'Classpower', description = "Displays the unit's current and percentage amount of special power, separated by a dash" },
+		['classpower:current'] = { hidden = E.Classic, category = 'Classpower', description = "Displays the unit's current amount of special power" },
+		['classpower:deficit'] = { hidden = E.Classic, category = 'Classpower', description = "Displays the unit's special power as a deficit (Total Special Power - Current Special Power = -Deficit)" },
+		['classpower:percent'] = { hidden = E.Classic, category = 'Classpower', description = "Displays the unit's current amount of special power as a percentage" },
+		['classpower:current-max-percent:shortvalue'] = { hidden = E.Classic, category = 'Classpower', description = "" },
+		['classpower:current-max:shortvalue'] = { hidden = E.Classic, category = 'Classpower', description = "" },
+		['classpower:current-percent:shortvalue'] = { hidden = E.Classic, category = 'Classpower', description = "" },
+		['classpower:current:shortvalue'] = { hidden = E.Classic, category = 'Classpower', description = "" },
+		['classpower:deficit:shortvalue'] = { hidden = E.Classic, category = 'Classpower', description = "" },
 		['holypower'] = { hidden = not E.Retail, category = 'Classpower', description = "Displays the holy power (Paladin)" },
-		['runes'] = { hidden = E.Classic or E.TBC, category = 'Classpower', description = "Displays the runes (Death Knight)" },
+		['runes'] = { hidden = E.Classic, category = 'Classpower', description = "Displays the runes (Death Knight)" },
 		['soulshards'] = { hidden = not E.Retail, category = 'Classpower', description = "Displays the soulshards (Warlock)" },
 	-- Colors
 		['altpowercolor'] = { hidden = not E.Retail, category = 'Colors', description = "Changes the text color to the current alternative power color (Blizzard defined)" },

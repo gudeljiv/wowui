@@ -1,19 +1,18 @@
 local E, L, V, P, G = unpack(ElvUI)
 local B = E:GetModule('Blizzard')
 
--- _G.VehicleSeatIndicator doesn't exist (yet?)
-if E.Wrath then return end
-
 local _G = _G
 local hooksecurefunc = hooksecurefunc
 local GetVehicleUIIndicator = GetVehicleUIIndicator
 local GetVehicleUIIndicatorSeat = GetVehicleUIIndicatorSeat
-local VehicleSeatIndicator_SetUpVehicle = VehicleSeatIndicator_SetUpVehicle
 
-local function SetPosition(_,_,anchor)
-	if anchor == 'MinimapCluster' or anchor == _G.MinimapCluster then
+-- GLOBALS: VehicleSeatIndicator_UnloadTextures
+
+local function SetPosition(_, _, relativeTo)
+	local mover = _G.VehicleSeatIndicator.mover
+	if mover and relativeTo ~= mover then
 		_G.VehicleSeatIndicator:ClearAllPoints()
-		_G.VehicleSeatIndicator:Point('TOPLEFT', _G.VehicleSeatMover, 'TOPLEFT', 0, 0)
+		_G.VehicleSeatIndicator:Point('TOPLEFT', mover, 'TOPLEFT', 0, 0)
 	end
 end
 
@@ -21,11 +20,13 @@ local function VehicleSetUp(vehicleID)
 	local size = E.db.general.vehicleSeatIndicatorSize
 	_G.VehicleSeatIndicator:Size(size)
 
-	local _, numSeatIndicators = GetVehicleUIIndicator(vehicleID)
-	if numSeatIndicators then
+	if not vehicleID then return end
+
+	local _, numIndicators = GetVehicleUIIndicator(vehicleID)
+	if numIndicators then
 		local fourth = size * 0.25
 
-		for i = 1, numSeatIndicators do
+		for i = 1, numIndicators do
 			local button = _G['VehicleSeatIndicatorButton'..i]
 			button:Size(fourth)
 
@@ -37,23 +38,32 @@ local function VehicleSetUp(vehicleID)
 end
 
 function B:UpdateVehicleFrame()
-	if _G.VehicleSeatIndicator.currSkin then
-		VehicleSeatIndicator_SetUpVehicle(_G.VehicleSeatIndicator.currSkin)
-	end
+	VehicleSetUp(_G.VehicleSeatIndicator.currSkin)
 end
 
 function B:PositionVehicleFrame()
-	local VehicleSeatIndicator = _G.VehicleSeatIndicator
-	if not VehicleSeatIndicator.PositionVehicleFrameHooked then
-		hooksecurefunc(VehicleSeatIndicator, 'SetPoint', SetPosition)
+	local indicator = _G.VehicleSeatIndicator
+	if not indicator.PositionVehicleFrameHooked then
+		hooksecurefunc(indicator, 'SetPoint', SetPosition)
 		hooksecurefunc('VehicleSeatIndicator_SetUpVehicle', VehicleSetUp)
-		E:CreateMover(VehicleSeatIndicator, 'VehicleSeatMover', L["Vehicle Seat Frame"], nil, nil, nil, nil, nil, 'general,blizzUIImprovements')
-		VehicleSeatIndicator.PositionVehicleFrameHooked = true
+
+		indicator:ClearAllPoints()
+		indicator:SetPoint('TOPRIGHT', _G.MinimapCluster, 'BOTTOMRIGHT', 0, 0)
+		indicator:Size(E.db.general.vehicleSeatIndicatorSize)
+
+		E:CreateMover(indicator, 'VehicleSeatMover', L["Vehicle Seat Frame"], nil, nil, nil, nil, nil, 'general,blizzUIImprovements')
+		indicator.PositionVehicleFrameHooked = true
 	end
 
-	VehicleSeatIndicator:Size(E.db.general.vehicleSeatIndicatorSize)
+	B:UpdateVehicleFrame()
 
-	if VehicleSeatIndicator.currSkin then
-		VehicleSetUp(VehicleSeatIndicator.currSkin)
+	if E.Retail and E.private.actionbar.enable then -- fix a taint when actionbars in use
+		VehicleSeatIndicator_UnloadTextures = function()
+			_G.VehicleSeatIndicatorBackgroundTexture:SetTexture()
+			_G.VehicleSeatIndicator:Hide()
+			_G.VehicleSeatIndicator.currSkin = nil
+
+			_G.DurabilityFrame:SetAlerts()
+		end
 	end
 end

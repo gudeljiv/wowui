@@ -18,7 +18,7 @@ function E:AreOtherAddOnsEnabled()
 
 	for i = 1, GetNumAddOns() do
 		local name = GetAddOnInfo(i)
-		if name ~= 'ElvUI' and name ~= 'ElvUI_OptionsUI' and name ~= 'ElvUI_CPU' and E:IsAddOnEnabled(name) then
+		if name ~= 'ElvUI' and name ~= 'ElvUI_Options' and name ~= 'ElvUI_Libraries' and name ~= 'ElvUI_CPU' and E:IsAddOnEnabled(name) then
 			if EP[name] then plugins = true else addons = true end
 		end
 	end
@@ -43,6 +43,7 @@ local EnglishClassName = {
 	SHAMAN = 'Shaman',
 	WARLOCK = 'Warlock',
 	WARRIOR = 'Warrior',
+	EVOKER = 'Evoker'
 }
 
 local EnglishSpecName = {
@@ -82,6 +83,8 @@ local EnglishSpecName = {
 	[73] = 'Protection',
 	[577] = 'Havoc',
 	[581] = 'Vengeance',
+	[1467] = 'Devastation',
+	[1468] = 'Preservation',
 }
 
 local function GetSpecName()
@@ -122,7 +125,7 @@ end
 local function CloseClicked()
 	if E.StatusReportToggled then
 		E.StatusReportToggled = nil
-		E:ToggleOptionsUI()
+		E:ToggleOptions()
 	end
 end
 
