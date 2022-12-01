@@ -10,6 +10,7 @@ local Publisher = TSM.Include("Util.ReactiveClasses.Publisher")
 local Table = TSM.Include("Util.Table")
 local ReactiveStream = TSM.Include("LibTSMClass").DefineClass("ReactiveStream") ---@class ReactiveStream
 local NO_INITIAL_VALUE = newproxy()
+local NIL_INITIAL_VALUE = newproxy()
 
 
 
@@ -32,6 +33,8 @@ end
 function ReactiveStream:__init()
 	self._publishers = {}
 	self._scripts = {}
+	self._sending = false
+	self._sendQueue = {}
 end
 
 
@@ -57,17 +60,32 @@ function ReactiveStream:PublisherWithInitialValue(initialValue)
 	local publisher = Publisher.Get()
 	publisher:_Acquire(self)
 	tinsert(self._publishers, publisher)
-	self._publishers[publisher] = initialValue
+	if initialValue == nil then
+		self._publishers[publisher] = NIL_INITIAL_VALUE
+	else
+		self._publishers[publisher] = initialValue
+	end
 	return publisher
 end
 
 ---Sends a new data value the stream's publishers.
 ---@param data table The data to send
 function ReactiveStream:Send(data)
+	local sendQueue = self._sendQueue
+	assert(not self._sending and #sendQueue == 0)
+	self._sending = true
 	local publishers = self._publishers
 	for i = 1, #publishers do
-		publishers[i]:_HandleData(data)
+		sendQueue[i] = publishers[i]
 	end
+	for i = 1, #sendQueue do
+		local publisher = sendQueue[i]
+		if self._publishers[publisher] ~= nil then
+			publisher:_HandleData(data)
+		end
+	end
+	wipe(sendQueue)
+	self._sending = false
 end
 
 ---Registers a script handler on the stream.
@@ -106,6 +124,9 @@ function ReactiveStream:_HandlePublisherEvent(publisher, event)
 			self._scripts.OnPublisherCommit(self, publisher)
 		end
 		local initialValue = self._publishers[publisher]
+		if initialValue == NIL_INITIAL_VALUE then
+			initialValue = nil
+		end
 		if initialValue ~= NO_INITIAL_VALUE then
 			publisher:_HandleData(initialValue)
 		end
