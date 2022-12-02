@@ -124,7 +124,7 @@ skills["death knight"] = [
     {"name": "death coil", "type": "GetSpellTexture", "id": 6789, "key": "4"},
     {"name": "blood boil", "type": "GetSpellTexture", "id": 48721, "key": "e"},
     {"name": "icebound fortitude", "type": "GetSpellTexture", "id": 48792, "key": "t"},
-    {"name": "horn of winter", "type": "GetSpellTexture", "id": 57330, "key": "f4"},
+    {"name": "horn of winter", "type": "GetSpellTexture", "id": 57330, "key": "f5"},
     {"name": "pestilence", "type": "GetSpellTexture", "id": 50842, "key": "3"},
     {"name": "death and decay", "type": "GetSpellTexture", "id": 49936, "key": "r", "modifier": "alt"},
 ]

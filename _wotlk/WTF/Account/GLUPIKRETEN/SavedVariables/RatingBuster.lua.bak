@@ -5,14 +5,17 @@ RatingBusterDB = {
 		["Mxyz - Golemagg"] = "PRIEST",
 		["Miqa - Golemagg"] = "PRIEST",
 		["Battlearm - Golemagg"] = "DEATHKNIGHT",
+		["Moolatz - Golemagg"] = "DRUID",
 		["Vermin - Golemagg"] = "WARRIOR",
 	},
 	["profiles"] = {
-		["DEATHKNIGHT"] = {
+		["HUNTER"] = {
 		},
 		["WARRIOR"] = {
 		},
-		["HUNTER"] = {
+		["DRUID"] = {
+		},
+		["DEATHKNIGHT"] = {
 		},
 		["PRIEST"] = {
 		},

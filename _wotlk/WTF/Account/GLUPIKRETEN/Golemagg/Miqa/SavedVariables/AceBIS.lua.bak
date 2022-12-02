@@ -1,6 +1,15 @@
 
 AceBISGears = {
-	["P1"] = true,
-	["ProtectionWarrior"] = true,
+	["EnhancementShaman"] = true,
 	["ProtectionPaladin"] = true,
+	["ProtectionWarrior"] = true,
+	["RestorationShaman"] = true,
+	["UnholyDeath Knight"] = true,
+	["AssassinationRogue"] = true,
+	["ArmWarrior"] = true,
+	["FuryWarrior"] = true,
+	["RetributionPaladin"] = true,
+	["FeralDruid"] = true,
+	["SurvivalHunter"] = true,
+	["P1"] = true,
 }
