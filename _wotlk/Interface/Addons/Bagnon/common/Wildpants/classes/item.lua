@@ -5,9 +5,9 @@
 
 local ADDON, Addon = ...
 local Item = Addon.Tipped:NewClass('Item', Addon.IsRetail and 'ItemButton' or 'Button', 'ContainerFrameItemButtonTemplate', true)
+local C = LibStub('C_Everywhere').Container
 local Search = LibStub('LibItemSearch-1.2')
 local Unfit = LibStub('Unfit-1.0')
-local C = LibStub('C_Everywhere').Container
 
 Item.SlotTypes = {
 	[-3] = 'reagent',
@@ -52,7 +52,7 @@ function Item:Construct()
 	b.Flash = b:CreateAnimationGroup()
 	b.IconGlow = b:CreateTexture(nil, 'OVERLAY', nil, -1)
 	b.Cooldown, b.QuestBorder = _G[name .. 'Cooldown'], _G[name .. 'IconQuestTexture']
-	b.UpdateTooltip = self.ShowTooltip
+	b.UpdateTooltip = self.OnEnter
 
 	b.newitemglowAnim:SetLooping('NONE')
 	b.IconOverlay:SetAtlas('AzeriteIconFrame')
@@ -93,8 +93,8 @@ function Item:GetBlizzard(id)
 		local slot = (id-1) % 36 + 1
 		local b = _G[format('ContainerFrame%dItem%d', bag, slot)]
 		if b then
-				b:ClearAllPoints()
-				return self:Bind(b)
+			b:ClearAllPoints()
+			return self:Bind(b)
 		end
     end
 end
@@ -134,10 +134,7 @@ function Item:OnHide()
 		StackSplitFrame:Hide()
 	end
 
-	if self:IsNew() then
-		C_NewItems.RemoveNewItem(self:GetBag(), self:GetID())
-	end
-
+	self:UnmarkNew()
 	self:UnregisterAll()
 end
 
@@ -180,14 +177,13 @@ end
 function Item:OnEnter()
 	if self.info.cached then
 		self:AttachDummy()
-	else
-		self:RegisterEvent(C_TooltipInfo and 'TOOLTIP_DATA_UPDATE' or 'GET_ITEM_INFO_RECEIVED', 'ShowTooltip')
+	elseif self.hasItem then
 		self:ShowTooltip()
+		self:UnmarkNew()
 	end
 end
 
 function Item:OnLeave()
-	self:UnregisterEvent(C_TooltipInfo and 'TOOLTIP_DATA_UPDATE' or 'GET_ITEM_INFO_RECEIVED')
 	self:Super(Item):OnLeave()
 	ResetCursor()
 end
@@ -208,11 +204,15 @@ function Item:Update()
 end
 
 function Item:UpdateSecondary()
-	if self:GetFrame() then
+	if self:GetFrame() and self.hasItem then
 		self:UpdateFocus()
 		self:UpdateSearch()
 		self:UpdateCooldown()
 		self:UpdateUpgradeIcon()
+
+		if self.hasItem and GameTooltip:IsOwned(self) then
+			self:ShowTooltip()
+		end
 	end
 end
 
@@ -225,53 +225,46 @@ end
 --[[ Appearance ]]--
 
 function Item:UpdateBorder()
-	local id, quality, link = self.info.id, self.info.quality, self.info.link
+	local quality, link = self.info.quality, self.info.link
 	local new = Addon.sets.glowNew and self:IsNew()
-	local quest, questID = self:IsQuestItem()
-	local overlay = self:GetOverlay()
-	local paid = self:IsPaid()
-	local r,g,b = 0,0,0
+	local quest, bang = self:GetQuestInfo()
+	local r,g,b
 
-	if id then
-		if Addon.sets.glowQuest and quest then
+	SetItemButtonQuality(self, quality, link, false, self.info.isBound)
+
+	if link then
+		if Addon.sets.glowQuest and quest or bang then
 			r,g,b = 1, .82, .2
-		elseif Addon.sets.glowUnusable and Unfit:IsItemUnusable(id) then
+		elseif Addon.sets.glowUnusable and Unfit:IsItemUnusable(link) then
 			r,g,b = RED_FONT_COLOR.r, RED_FONT_COLOR.g, RED_FONT_COLOR.b
 		elseif Addon.sets.glowSets and Search:InSet(link) then
-	  	r,g,b = .2, 1, .8
+	  		r,g,b = .2, 1, .8
 		elseif Addon.sets.glowQuality and quality and quality > 1 then
 			r,g,b = GetItemQualityColor(quality)
+		end
+
+		if r then
+			self.IconGlow:SetVertexColor(r,g,b, Addon.sets.glowAlpha)
+			self.IconBorder:SetVertexColor(r,g,b)
 		end
 	end
 
 	if new and not self.flashAnim:IsPlaying() then
 		self.flashAnim:Play()
 		self.newitemglowAnim:Play()
+		self.NewItemTexture:SetAtlas(quality and NEW_ITEM_ATLAS_BY_QUALITY[quality] or 'bags-glow-white')
 	end
 
-	if overlay then
-		self.IconOverlay:SetAtlas(overlay)
-		self.IconOverlay:SetVertexColor(r,g,b)
-	end
-
-	self.IconBorder:SetTexture(id and C_ArtifactUI and C_ArtifactUI.GetRelicInfoByItemID(id) and 'Interface/Artifacts/RelicIconFrame' or 'Interface/Common/WhiteIconFrame')
-	self.IconBorder:SetVertexColor(r,g,b)
-	self.IconBorder:SetShown(r)
-
-	self.IconGlow:SetVertexColor(r,g,b, Addon.sets.glowAlpha)
 	self.IconGlow:SetShown(r)
-
-	self.NewItemTexture:SetAtlas(quality and NEW_ITEM_ATLAS_BY_QUALITY[quality] or 'bags-glow-white')
-	self.NewItemTexture:SetShown(new and not paid)
-
+	self.IconBorder:SetShown(r)
+	self.QuestBorder:SetShown(bang)
+	self.NewItemTexture:SetShown(new)
+	self.BattlepayItemTexture:SetShown(new and self:IsPaid())
 	self.JunkIcon:SetShown(Addon.sets.glowPoor and quality == 0 and not self.info.worthless)
-	self.BattlepayItemTexture:SetShown(new and paid)
-	self.QuestBorder:SetShown(questID)
-	self.IconOverlay:SetShown(overlay)
 end
 
 function Item:UpdateSlotColor()
-	if not self.info.id then
+	if not self.hasItem then
 		local color = Addon.sets.colorSlots and Addon.sets[self:GetSlotType() .. 'Color'] or {}
 		local r,g,b = color[1] or 1, color[2] or 1, color[3] or 1
 
@@ -284,7 +277,7 @@ end
 
 function Item:UpdateUpgradeIcon()
 	local isUpgrade = self:IsUpgrade()
-	if isUpgrade == nil then
+	if self.hasItem and isUpgrade == nil then
 		self:Delay(0.5, 'UpdateUpgradeIcon')
 	else
 		self.UpgradeIcon:SetShown(isUpgrade)
@@ -296,12 +289,12 @@ function Item:SetLocked(locked)
 end
 
 function Item:UpdateCooldown()
-	if self.info.id and (not self.info.cached) then
-			local start, duration, enable = C.GetContainerItemCooldown(self:GetBag(), self:GetID())
-			local fade = duration > 0 and 0.4 or 1
+	if self.hasItem and not self.info.cached then
+		local start, duration, enable = C.GetContainerItemCooldown(self:GetBag(), self:GetID())
+		local fade = duration > 0 and 0.4 or 1
 
-			CooldownFrame_Set(self.Cooldown, start, duration, enable)
-			SetItemButtonTextureVertexColor(self, fade,fade,fade)
+		CooldownFrame_Set(self.Cooldown, start, duration, enable)
+		SetItemButtonTextureVertexColor(self, fade,fade,fade)
 	else
 		CooldownFrame_Set(self.Cooldown, 0,0,0)
 		self.Cooldown:Hide()
@@ -341,14 +334,18 @@ function Item:OnItemFlashed(_, itemID)
 	end
 end
 
+function Item:UnmarkNew()
+	if self:IsNew() then
+		C_NewItems.RemoveNewItem(self:GetBag(), self:GetID())
+	end
+end
+
 
 --[[ Tooltip ]]--
 
 function Item:ShowTooltip()
-	if not self.info.cached then
-		(self:GetInventorySlot() and BankFrameItemButton_OnEnter or
-		 ContainerFrameItemButtonMixin and ContainerFrameItemButtonMixin.OnUpdate or ContainerFrameItemButton_OnEnter)(self)
-	end
+	(self:GetInventorySlot() and BankFrameItemButton_OnEnter or
+		ContainerFrameItemButtonMixin and ContainerFrameItemButtonMixin.OnUpdate or ContainerFrameItemButton_OnEnter)(self)
 end
 
 function Item:AttachDummy()
@@ -401,49 +398,6 @@ end
 
 --[[ Data ]]--
 
-function Item:IsQuestItem()
-	if self.info.id then
-		if not self.info.cached and C.GetContainerItemQuestInfo then
-			local info = C.GetContainerItemQuestInfo(self:GetBag(), self:GetID())
-			if info then
-				return info.isQuestItem, (info.questID and not info.isActive)
-			end
-		else
-			return self.info.class == Enum.ItemClass.Questitem or Search:ForQuest(self.info.link)
-		end
-	end
-end
-
-function Item:IsUpgrade()
-	if PawnShouldItemLinkHaveUpgradeArrow then
-		return self:GetItem() and PawnShouldItemLinkHaveUpgradeArrow(self:GetItem()) or false
-	elseif IsContainerItemAnUpgrade then
-		return not self:IsCached() and IsContainerItemAnUpgrade(self:GetBag(), self:GetID())
-	else
-		return false
-	end
-end
-
-function Item:GetOverlay()
-	local id, link = self.info.id, self.info.link
-	return id and C_AzeriteEmpoweredItem and C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItemByID(id) and 'AzeriteIconFrame'
-			or id and IsCosmeticItem and IsCosmeticItem(id) and not C_TransmogCollection.PlayerHasTransmogByItemInfo(id) and 'CosmeticIconFrame'
-			or id and C_Soulbinds and C_Soulbinds.IsItemConduitByItemInfo(id) and 'ConduitIconFrame'
-			or link and IsCorruptedItem and IsCorruptedItem(link) and 'Nzoth-inventory-icon'
-end
-
-function Item:IsNew()
-	return self:GetBag() and C_NewItems.IsNewItem(self:GetBag(), self:GetID())
-end
-
-function Item:IsPaid()
-	return C.IsBattlePayItem(self:GetBag(), self:GetID())
-end
-
-function Item:IsSlot(bag, slot)
-	return self:GetBag() == bag and self:GetID() == slot
-end
-
 function Item:GetInfo()
 	return self:GetFrame():GetItemInfo(self:GetBag(), self:GetID())
 end
@@ -471,4 +425,39 @@ end
 
 function Item:GetEmptyItemIcon()
 	return Addon.sets.emptySlots and 'Interface/PaperDoll/UI-Backpack-EmptySlot'
+end
+
+function Item:GetQuestInfo()
+	if self.hasItem then
+		if not self.info.cached and C.GetContainerItemQuestInfo then
+			local info = C.GetContainerItemQuestInfo(self:GetBag(), self:GetID())
+			if info then
+				return info.isQuestItem, (info.questID and not info.isActive)
+			end
+		else
+			return self.info.class == Enum.ItemClass.Questitem or Search:ForQuest(self.info.link)
+		end
+	end
+end
+
+function Item:IsSlot(bag, slot)
+	return self:GetBag() == bag and self:GetID() == slot
+end
+
+function Item:IsNew()
+	return self:GetBag() and C_NewItems.IsNewItem(self:GetBag(), self:GetID())
+end
+
+function Item:IsPaid()
+	return C.IsBattlePayItem(self:GetBag(), self:GetID())
+end
+
+function Item:IsUpgrade()
+	if PawnShouldItemLinkHaveUpgradeArrow then
+		return self:GetItem() and PawnShouldItemLinkHaveUpgradeArrow(self:GetItem()) or false
+	elseif IsContainerItemAnUpgrade then
+		return not self:IsCached() and IsContainerItemAnUpgrade(self:GetBag(), self:GetID())
+	else
+		return false
+	end
 end
