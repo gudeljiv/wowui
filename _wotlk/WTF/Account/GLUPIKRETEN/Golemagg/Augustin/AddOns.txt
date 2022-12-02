@@ -182,3 +182,5 @@ kExtraBossFrames: disabled
 ElvUI_OptionsUI: disabled
 ElvUI: disabled
 Masque: enabled
+AceBIS: disabled
+Bistooltip: disabled

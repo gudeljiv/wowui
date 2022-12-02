@@ -195,3 +195,5 @@ NovaWorldBuffs: enabled
 Capping_Options: disabled
 Capping: disabled
 Masque: enabled
+AceBIS: disabled
+Bistooltip: disabled

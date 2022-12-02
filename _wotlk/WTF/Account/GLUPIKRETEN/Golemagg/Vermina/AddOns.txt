@@ -183,3 +183,5 @@ LortiUI: disabled
 UberUI: disabled
 SUI: disabled
 Masque: enabled
+AceBIS: disabled
+Bistooltip: disabled

@@ -175,3 +175,5 @@ TacoTip: disabled
 Gladdy: enabled
 NovaWorldBuffs: enabled
 Masque: enabled
+AceBIS: disabled
+Bistooltip: disabled

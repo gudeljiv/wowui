@@ -31,6 +31,7 @@ skills["offgcd"]["death knight"] = [
     {"name": "blood tap", "type": "GetSpellTexture", "id": 45529, "key": "f4", "modifier": "ctrl"},
     {"name": "anti-magic shell", "type": "GetSpellTexture", "id": 48707, "key": "g"},
     {"name": "battlemaster's resolve", "type": "GetItemIcon", "id": 41589, "key": "1", "modifier": "alt"},
+    {"name": "empower rune weapon", "type": "GetSpellTexture", "id": 47568, "key": "e", "modifier": "shift"},
 ]
 
 skills["offgcd"]["hunter"] = [
@@ -127,6 +128,11 @@ skills["death knight"] = [
     {"name": "horn of winter", "type": "GetSpellTexture", "id": 57330, "key": "f5"},
     {"name": "pestilence", "type": "GetSpellTexture", "id": 50842, "key": "3"},
     {"name": "death and decay", "type": "GetSpellTexture", "id": 49936, "key": "r", "modifier": "alt"},
+    {"name": "howling blast", "type": "GetSpellTexture", "id": 51410, "key": "f1", "modifier": "ctrl"},
+    {"name": "obliterate", "type": "GetSpellTexture", "id": 51424, "key": "t", "modifier": "shift"},
+    {"name": "frost strike", "type": "GetSpellTexture", "id": 51419, "key": "6"},
+    {"name": "unbreakable armor", "type": "GetSpellTexture", "id": 51271, "key": "h"},
+    {"name": "blood strike", "type": "GetSpellTexture", "id": 49929, "key": "f2", "modifier": "ctrl"},
 ]
 
 skills["priest"] = [

@@ -197,3 +197,5 @@ XLoot_Group: disabled
 XLoot_Options: disabled
 Roll: disabled
 Gladdy: enabled
+AceBIS: disabled
+Bistooltip: disabled

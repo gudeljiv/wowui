@@ -187,3 +187,5 @@ XLoot_Monitor: disabled
 teksLoot: disabled
 Gladdy: enabled
 Masque: enabled
+AceBIS: disabled
+Bistooltip: disabled

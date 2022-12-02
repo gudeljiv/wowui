@@ -195,3 +195,5 @@ Gladdy: enabled
 NovaWorldBuffs: enabled
 VendorBait: disabled
 Masque: enabled
+AceBIS: disabled
+Bistooltip: disabled

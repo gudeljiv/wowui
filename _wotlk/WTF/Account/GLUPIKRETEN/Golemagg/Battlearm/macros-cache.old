@@ -6,8 +6,6 @@ VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast Death Strike
-/use 13
-/use 14
 END
 VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -24,5 +22,5 @@ END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
-/cast Heart Strike
+/cast [spec:1]Heart Strike;[spec:2]Howling Blast
 END
