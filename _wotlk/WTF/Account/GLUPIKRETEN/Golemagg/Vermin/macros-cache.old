@@ -26,7 +26,7 @@ END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
-/cast Mortal Strike
+/cast Bloodthirst
 /use 10
 END
 VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
@@ -77,4 +77,12 @@ VER 3 000000000100001B " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Concussion Blow
 /cast Bloodrage
+END
+VER 3 000000000100001C " " "INV_MISC_QUESTIONMARK"
+#showtooltip 15
+/use 15
+END
+VER 3 000000000100001D " " "INV_MISC_QUESTIONMARK"
+#showtooltip 10
+/use 10
 END
