@@ -6,20 +6,20 @@ local width = 235
 xVermin.CheckIfLoadedWithTimer(
 	'Questie_BaseFrame',
 	function()
-		-- if not Questie_BaseFrame.SetBackdrop then
-		-- 	Mixin(Questie_BaseFrame, BackdropTemplateMixin)
-		-- end
-		-- Questie_BaseFrame:CreateBeautyBorder(8)
-		-- Questie_BaseFrame:SetBackdrop(
-		-- 	{
-		-- 		bgFile = 'Interface\\Buttons\\WHITE8x8',
-		-- 		edgeFile = '',
-		-- 		tile = false,
-		-- 		tileSize = 0,
-		-- 		edgeSize = 0,
-		-- 		insets = {left = 0, right = 0, top = 0, bottom = 0}
-		-- 	}
-		-- )
+		if not Questie_BaseFrame.SetBackdrop then
+			Mixin(Questie_BaseFrame, BackdropTemplateMixin)
+		end
+		Questie_BaseFrame:CreateBeautyBorder(8)
+		Questie_BaseFrame:SetBackdrop(
+			{
+				bgFile = 'Interface\\Buttons\\WHITE8x8',
+				edgeFile = '',
+				tile = false,
+				tileSize = 0,
+				edgeSize = 0,
+				insets = {left = 0, right = 0, top = 0, bottom = 0}
+			}
+		)
 		-- Questie_BaseFrame:SetBackdropColor(0, 0, 0, 0.6)
 		Questie_BaseFrame:ClearAllPoints()
 		Questie_BaseFrame:SetPoint('TOPRIGHT', 'CustomContainer_2', 'BOTTOMRIGHT', 1, -10)

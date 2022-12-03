@@ -408,9 +408,9 @@ AtlasLootClassicDB = {
 			[40718] = "EmblemOfValor:25",
 			[40750] = "EmblemOfValor:40",
 			[33668] = "honor:6840",
-			[40878] = "honor:21700",
 			[28639] = "honor:3800",
 			[24547] = "honor:4750",
+			[40878] = "honor:21700",
 			[35103] = "honor:19000",
 			[34014] = "honor:5130",
 			[33813] = "honor:5130",
@@ -512,8 +512,8 @@ AtlasLootClassicDB = {
 			[32793] = "honor:5320",
 			[42032] = "honor:33180",
 			[42064] = "honor:33180",
+			[28241] = "honor:2280",
 			[33944] = "honor:5130",
-			[42128] = "honor:43400",
 			[34999] = "honor:9500",
 			[16554] = "honor:2000",
 			[42028] = "honor:33180",
@@ -652,7 +652,7 @@ AtlasLootClassicDB = {
 			[18839] = "honor:1",
 			[35095] = "honor:9500",
 			[22852] = "honor:1000",
-			[28241] = "honor:2280",
+			[42128] = "honor:43400",
 			[33309] = "honor:3325",
 			[28451] = "honor:4750",
 			[48718] = "EmblemOfHeroism:65",
@@ -1101,10 +1101,6 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Testxv - Golemagg"] = {
-		},
-		["Battlearm - Hydraxian Waterlords"] = {
-		},
 		["xVermin"] = {
 			["GUI"] = {
 				["selectedGameVersion"] = 2,
@@ -1138,6 +1134,10 @@ AtlasLootClassicDB = {
 					},
 				},
 			},
+		},
+		["Testxv - Golemagg"] = {
+		},
+		["Battlearm - Hydraxian Waterlords"] = {
 		},
 		["Pitchwise - Ashbringer"] = {
 			["minimap"] = {
@@ -1178,6 +1178,21 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["Addons"] = {
+				["Favourites"] = {
+					["lists"] = {
+						["ProfileBase"] = {
+							["mainItems"] = {
+								[8] = true,
+							},
+						},
+					},
+				},
+			},
 			["GUI"] = {
 				["point"] = {
 					"LEFT", -- [1]
@@ -1193,21 +1208,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["Addons"] = {
-				["Favourites"] = {
-					["lists"] = {
-						["ProfileBase"] = {
-							["mainItems"] = {
-								[8] = true,
-							},
-						},
-					},
-				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Judawise - Golemagg"] = {
@@ -1247,10 +1247,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -1266,6 +1262,10 @@ AtlasLootClassicDB = {
 					7, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Miqa - Golemagg"] = {

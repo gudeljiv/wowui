@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 7809,
+	["session"] = 7813,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -6496,5 +6496,20 @@ BugGrabberDB = {
 			["session"] = 7796,
 			["counter"] = 32,
 		}, -- [836]
+		{
+			["message"] = "Lua error in aura 'Swing Timer': Duration Function\nWeakAuras Version: 5.2.2\nAura Version: 1.0.7\n[string \"return function()\"]:40: attempt to perform arithmetic on field 'pauseTime' (a nil value)",
+			["time"] = "2022/12/03 13:43:42",
+			["stack"] = "[string \"return function()\"]:40: in function <[string \"return function()\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:438: in function `ActivateEvent'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:621: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:543>\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:736: in function `ScanUnitEvents'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:917: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:913>",
+			["session"] = 7810,
+			["counter"] = 42,
+		}, -- [837]
+		{
+			["message"] = "[string \"prinf(GetShapeshiftFormInfo(3))\"]:1: attempt to call global 'prinf' (a nil value)",
+			["time"] = "2022/12/03 14:02:00",
+			["locals"] = "(*temporary) = nil\n(*temporary) = 132275\n(*temporary) = false\n(*temporary) = true\n(*temporary) = 2458\n(*temporary) = \"attempt to call global 'prinf' (a nil value)\"\n",
+			["stack"] = "[string \"prinf(GetShapeshiftFormInfo(3))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 7810,
+			["counter"] = 1,
+		}, -- [838]
 	},
 }

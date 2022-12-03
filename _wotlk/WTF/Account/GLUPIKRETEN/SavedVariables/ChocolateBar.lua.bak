@@ -697,9 +697,9 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1429301,
-		["timeStamp"] = 82631.672,
-		["timeAtThisLevel"] = 336754,
+		["total"] = 1437719,
+		["timeStamp"] = 2014006.336,
+		["timeAtThisLevel"] = 345172,
 	},
 	["Koloman-"] = {
 		["total"] = 129,

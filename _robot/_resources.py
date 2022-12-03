@@ -13,11 +13,12 @@ skills["offgcd"] = dict()
 skills["offgcd"]["warrior"] = [
     {"name": "heroic strike", "type": "GetSpellTexture", "id": 78, "key": "2"},
     {"name": "cleave", "type": "GetSpellTexture", "id": 845, "key": "3"},
-    {"name": "shield wall", "type": "GetSpellTexture", "id": 871, "key": "t"},
+    {"name": "shield wall", "type": "GetSpellTexture", "id": 871, "key": "e", "modifier": "alt"},
     {"name": "spell reflection", "type": "GetSpellTexture", "id": 23920, "key": "v"},
     {"name": "shield block", "type": "GetSpellTexture", "id": 2565, "key": "f4", "modifier": "ctrl"},
     {"name": "last stand", "type": "GetSpellTexture", "id": 12975, "key": "t", "modifier": "shift"},
     {"name": "battlemaster's resolve", "type": "GetItemIcon", "id": 41589, "key": "1", "modifier": "alt"},
+    {"name": "blood fury", "type": "GetSpellTexture", "id": 20572, "key": "f5", "modifier": "ctrl"},
 ]
 
 skills["offgcd"]["druid"] = [
@@ -66,7 +67,9 @@ skills["warrior"] = [
     {"name": "concussion blow", "type": "GetSpellTexture", "id": 12809, "key": "8"},
     {"name": "hamstring", "type": "GetSpellTexture", "id": 1715, "key": "1"},
     {"name": "slam", "type": "GetSpellTexture", "id": 47475, "key": "f2", "modifier": "ctrl"},
-    {"name": "shattering throw", "type": "GetSpellTexture", "id": 64382, "key": "7"}
+    {"name": "shattering throw", "type": "GetSpellTexture", "id": 64382, "key": "7"},
+    {"name": "death wish", "type": "GetSpellTexture", "id": 12292, "key": "r", "modifier": "alt"},
+    {"name": "recklessness", "type": "GetSpellTexture", "id": 1719, "key": "e", "modifier": "alt"},
 ]
 
 
