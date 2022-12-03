@@ -1,5 +1,7 @@
-## v4.12.4 Changes
+## v4.12.5 Changes
 
-* [All] Various bug fixes
+* [Retail] Updated bonusIds tracked by TSM
+* [Retail] Fixed error when running Vendor search
+* [Retail] Fixed error when opening mail
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

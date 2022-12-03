@@ -349,10 +349,21 @@ function private.CheckSendMail(destination, currentSubject, ...)
 end
 
 function private.GetFirstInboxItemLink(index)
-	local speciesId, level, breedQuality, maxHealth, power, speed = TooltipScanning.GetInboxBattlePetInfo(index, 1)
+	-- Find the first attachment index with an item
+	local attachIndex = nil
+	for i = 1, ATTACHMENTS_MAX do
+		if GetInboxItem(index, i) then
+			attachIndex = i
+			break
+		end
+	end
+	if not attachIndex then
+		error(format("Invalid attachIndex for index %s", tostring(index)))
+	end
+	local speciesId, level, breedQuality, maxHealth, power, speed = TooltipScanning.GetInboxBattlePetInfo(index, attachIndex)
 	if speciesId and speciesId > 0 then
 		return ItemInfo.GetLink(strjoin(":", "p", speciesId, level, breedQuality, maxHealth, power, speed))
 	else
-		return GetInboxItemLink(index, 1)
+		return GetInboxItemLink(index, attachIndex)
 	end
 end
