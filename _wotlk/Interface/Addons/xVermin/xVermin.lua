@@ -249,17 +249,26 @@ f:SetScript(
 			end
 		)
 
-		PetFrame:HookScript(
-			'OnEnter',
-			function(self)
-				print('mouseover')
-				self.OnEnter = function()
-				end
-			end
-		)
+		-- PetFrame:HookScript(
+		-- 	'OnEnter',
+		-- 	function(self)
+		-- 		print('mouseover')
+		-- 		self.OnEnter = function()
+		-- 		end
+		-- 	end
+		-- )
 
 		MiniMapInstanceDifficulty:ClearAllPoints()
 		MiniMapInstanceDifficulty:SetPoint('TOPLEFT', Minimap, 'TOPLEFT', 0, 0)
+
+		-- RuneFrame:HookScript(
+		-- 	'OnShow',
+		-- 	function(self)
+		-- 		self:Hide()
+		-- 	end
+		-- )
+
+		-- RuneFrame:Hide()
 	end
 )
 

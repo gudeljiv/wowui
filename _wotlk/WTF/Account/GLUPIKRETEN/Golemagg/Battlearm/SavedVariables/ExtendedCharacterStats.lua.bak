@@ -84,7 +84,6 @@ ExtendedCharacterStats = {
 				},
 			},
 			["display"] = true,
-			["refName"] = "RangedHeader",
 			["crit"] = {
 				["statColor"] = "d32f2f",
 				["display"] = true,
@@ -92,6 +91,7 @@ ExtendedCharacterStats = {
 				["refName"] = "RangedCritChance",
 				["textColor"] = "ff6659",
 			},
+			["refName"] = "RangedHeader",
 			["penetration"] = {
 				["isTbcOnly"] = true,
 				["statColor"] = "00766c",
@@ -130,33 +130,33 @@ ExtendedCharacterStats = {
 				["text"] = "Parry Chance",
 				["refName"] = "ParryChance",
 			},
-			["display"] = true,
+			["armor"] = {
+				["display"] = true,
+				["text"] = "Armor",
+				["refName"] = "Armor",
+			},
 			["critReduction"] = {
 				["display"] = true,
 				["isTbcOnly"] = true,
 				["refName"] = "CritReduction",
 				["text"] = "Crit Reduction",
 			},
-			["defenseRating"] = {
+			["avoidance"] = {
 				["display"] = true,
-				["text"] = "Defense Rating",
-				["refName"] = "DefenseRating",
+				["text"] = "Avoidance",
+				["refName"] = "Avoidance",
 			},
 			["dodge"] = {
 				["display"] = true,
 				["text"] = "Dodge Chance",
 				["refName"] = "DodgeChance",
 			},
-			["avoidance"] = {
+			["defenseRating"] = {
 				["display"] = true,
-				["text"] = "Avoidance",
-				["refName"] = "Avoidance",
+				["text"] = "Defense Rating",
+				["refName"] = "DefenseRating",
 			},
-			["armor"] = {
-				["display"] = true,
-				["text"] = "Armor",
-				["refName"] = "Armor",
-			},
+			["display"] = true,
 			["refName"] = "DefenseHeader",
 			["blockValue"] = {
 				["display"] = true,
@@ -429,18 +429,6 @@ ExtendedCharacterStats = {
 				["textColor"] = "c8a600",
 			},
 			["text"] = "Melee",
-			["expertiseRating"] = {
-				["display"] = true,
-				["isTbcOnly"] = true,
-				["refName"] = "ExpertiseRating",
-				["text"] = "Expertise Rating",
-			},
-			["expertise"] = {
-				["display"] = true,
-				["isTbcOnly"] = true,
-				["refName"] = "Expertise",
-				["text"] = "Expertise",
-			},
 			["hasteRating"] = {
 				["isTbcOnly"] = true,
 				["statColor"] = "ffd740",
@@ -449,22 +437,17 @@ ExtendedCharacterStats = {
 				["refName"] = "MeleeHasteRating",
 				["textColor"] = "c8a600",
 			},
-			["penetration"] = {
+			["expertise"] = {
+				["display"] = true,
 				["isTbcOnly"] = true,
-				["statColor"] = "00766c",
-				["display"] = true,
-				["text"] = "Armor Penetration",
-				["refName"] = "MeleeArmorPenetration",
-				["textColor"] = "009688",
+				["refName"] = "Expertise",
+				["text"] = "Expertise",
 			},
-			["display"] = true,
-			["refName"] = "MeleeHeader",
-			["crit"] = {
-				["statColor"] = "d32f2f",
+			["expertiseRating"] = {
 				["display"] = true,
-				["text"] = "Crit Chance",
-				["refName"] = "MeleeCritChance",
-				["textColor"] = "ff6659",
+				["isTbcOnly"] = true,
+				["refName"] = "ExpertiseRating",
+				["text"] = "Expertise Rating",
 			},
 			["hit"] = {
 				["bossLevel"] = {
@@ -500,6 +483,23 @@ ExtendedCharacterStats = {
 					["refName"] = "MeleeHitBonus",
 					["textColor"] = "85bb5c",
 				},
+			},
+			["display"] = true,
+			["refName"] = "MeleeHeader",
+			["crit"] = {
+				["statColor"] = "d32f2f",
+				["display"] = true,
+				["text"] = "Crit Chance",
+				["refName"] = "MeleeCritChance",
+				["textColor"] = "ff6659",
+			},
+			["penetration"] = {
+				["isTbcOnly"] = true,
+				["statColor"] = "00766c",
+				["display"] = true,
+				["text"] = "Armor Penetration",
+				["refName"] = "MeleeArmorPenetration",
+				["textColor"] = "009688",
 			},
 		},
 	},

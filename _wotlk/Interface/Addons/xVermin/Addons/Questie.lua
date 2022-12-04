@@ -45,6 +45,16 @@ xVermin.CheckIfLoadedWithTimer(
 					end
 				end
 
+				if IsInInstance() then
+					if Questie_BaseFrame:IsVisible() then
+						Questie_BaseFrame:Hide()
+					end
+				else
+					if not Questie_BaseFrame:IsVisible() then
+						Questie_BaseFrame:Show()
+					end
+				end
+
 				-- if (Questie_BaseFrame:GetWidth() < width) then
 				-- 	Questie_BaseFrame:SetWidth(width)
 				-- end
