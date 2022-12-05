@@ -5,7 +5,7 @@ Postal3DB = {
 			["alts"] = {
 				"Augustin|Golemagg|Horde|54|MAGE", -- [1]
 				"Battitude|Golemagg|Horde|6|ROGUE", -- [2]
-				"Battlearm|Golemagg|Horde|77|DEATHKNIGHT", -- [3]
+				"Battlearm|Golemagg|Horde|78|DEATHKNIGHT", -- [3]
 				"Battlearm|Jin'do|Horde|2|SHAMAN", -- [4]
 				"Handrmandr|Golemagg|Horde|1|WARRIOR", -- [5]
 				"Kaonac|Jin'do|Horde|1|PRIEST", -- [6]

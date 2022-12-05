@@ -1,5 +1,5 @@
 
-local MAJOR, MINOR = "LibColors-1.0", tonumber((gsub("r111","r",""))) or 9999;
+local MAJOR, MINOR = "LibColors-1.0", tonumber((gsub("r112","r",""))) or 9999;
 local lib = LibStub:NewLibrary(MAJOR, MINOR)
 local _G,string,tonumber,rawset,type = _G,string,tonumber,rawset,type
 local hex = "%02x";

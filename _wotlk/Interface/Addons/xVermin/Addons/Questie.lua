@@ -1,5 +1,5 @@
 local _, xVermin = ...
-local ib, numQuests
+local ib, numQuests, showQuestieFrame
 
 local width = 235
 
@@ -35,7 +35,9 @@ xVermin.CheckIfLoadedWithTimer(
 				end
 
 				_, numQuests = GetNumQuestLogEntries()
-				if numQuests > 0 then
+				showQuestieFrame = (not IsInInstance() and numQuests > 0) and true or false
+
+				if showQuestieFrame then
 					if not Questie_BaseFrame:IsVisible() then
 						Questie_BaseFrame:Show()
 					end
@@ -45,15 +47,27 @@ xVermin.CheckIfLoadedWithTimer(
 					end
 				end
 
-				if IsInInstance() then
-					if Questie_BaseFrame:IsVisible() then
-						Questie_BaseFrame:Hide()
-					end
-				else
-					if not Questie_BaseFrame:IsVisible() then
-						Questie_BaseFrame:Show()
-					end
-				end
+				-- if numQuests > 0 then
+				-- 	if not Questie_BaseFrame:IsVisible() then
+				-- 		Questie_BaseFrame:Show()
+				-- 	end
+				-- else
+				-- 	if Questie_BaseFrame:IsVisible() then
+				-- 		Questie_BaseFrame:Hide()
+				-- 	end
+				-- end
+
+				-- if IsInInstance() then
+				-- 	if Questie_BaseFrame:IsVisible() then
+				-- 		Questie_BaseFrame:Hide()
+				-- 	end
+				-- else
+				-- 	if numQuests > 0 then
+				-- 		if not Questie_BaseFrame:IsVisible() then
+				-- 			Questie_BaseFrame:Show()
+				-- 		end
+				-- 	end
+				-- end
 
 				-- if (Questie_BaseFrame:GetWidth() < width) then
 				-- 	Questie_BaseFrame:SetWidth(width)

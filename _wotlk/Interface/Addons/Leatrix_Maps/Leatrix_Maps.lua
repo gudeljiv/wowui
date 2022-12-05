@@ -1,6 +1,6 @@
 ﻿
 	----------------------------------------------------------------------
-	-- 	Leatrix Maps 3.0.62 (30th November 2022)
+	-- 	Leatrix Maps 3.0.64 (5th December 2022)
 	----------------------------------------------------------------------
 
 	-- 10:Func, 20:Comm, 30:Evnt, 40:Panl
@@ -12,7 +12,7 @@
 	local LeaMapsLC, LeaMapsCB, LeaDropList, LeaConfigList = {}, {}, {}, {}
 
 	-- Version
-	LeaMapsLC["AddonVer"] = "3.0.62"
+	LeaMapsLC["AddonVer"] = "3.0.64"
 
 	-- Get locale table
 	local void, Leatrix_Maps = ...
@@ -77,6 +77,11 @@
 		-- Hide right-click to zoom out button and message
 		WorldMapZoomOutButton:Hide()
 		WorldMapMagnifyingGlassButton:Hide()
+
+		-- Set map frame strata to ensure other windows can interleave with it
+		WorldMapFrame:SetFrameStrata("MEDIUM")
+		WorldMapFrame.BorderFrame:SetFrameStrata("MEDIUM")
+		WorldMapFrame.BorderFrame:SetFrameLevel(1)
 
 		----------------------------------------------------------------------
 		-- Show zone dropdown menu

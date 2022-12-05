@@ -1,7 +1,6 @@
 # ChocolateBar
 
-## [v3.8.5](https://github.com/Kiatra/ChocolateBar/tree/v3.8.5) (2022-08-31)
-[Full Changelog](https://github.com/Kiatra/ChocolateBar/commits/v3.8.5) [Previous Releases](https://github.com/Kiatra/ChocolateBar/releases)
+## [v3.9.1](https://github.com/Kiatra/ChocolateBar/tree/v3.9.1) (2022-12-04)
+[Full Changelog](https://github.com/Kiatra/ChocolateBar/compare/v3.9...v3.9.1) 
 
-- Merge pull request #11 from mrbuds/master  
-    Fixes for CB\_GameMusic & CB\_Laucher  
+- Update main.yml  

@@ -1,13 +1,13 @@
 
 local addon, ns = ...;
 local L = ns.L;
-ns.debugMode = "9.0.11-release"=="@".."project-version".."@";
+ns.debugMode = "9.1.1-release"=="@".."project-version".."@";
 LibStub("HizurosSharedTools").RegisterPrint(ns,addon,"FH/TP");
 
 local HBD = LibStub("HereBeDragons-2.0")
 local HBDPins = LibStub("HereBeDragons-Pins-2.0")
 
-local EnableMouse
+local EnableMouse, SetShown
 local pi2 = math.pi*2;
 local media, media_blizz = "Interface\\AddOns\\FarmHud\\media\\", "Interface\\Minimap\\";
 local minDistanceBetween = 12;
@@ -72,12 +72,22 @@ local TrailPathIconValues = {
 
 FarmHudTrailPathPinMixin = {}
 
-function FarmHudTrailPathPinMixin:UpdatePin(facing,pinIcon,scale)
+local function UpdateVisibility(self)
+	local HUD = FarmHud:IsShown();
+	SetShown(self,HUD or (not HUD and FarmHudDB.trailPathOnMinimap))
+end
+
+FarmHudTrailPathPinMixin.Show = UpdateVisibility
+FarmHudTrailPathPinMixin.SetShown = UpdateVisibility;
+FarmHudTrailPathPinMixin.EnableMouse = function() end;
+
+function FarmHudTrailPathPinMixin:UpdatePin(facing,onCluster)
 	-- facing
-	if facing and IsOpened then
+	if facing and onCluster then
 		self.pin.Facing.Rotate :SetRadians(self.info.f - facing);
 	end
 	-- texture
+	local pinIcon = (onCluster and FarmHudDB.rotation and FarmHudDB.trailPathIcon) or "dot2";
 	if self.info.currentPinIcon ~= pinIcon then
 		local icon = trailPathIcons[pinIcon];
 		if icon then
@@ -92,6 +102,7 @@ function FarmHudTrailPathPinMixin:UpdatePin(facing,pinIcon,scale)
 		end
 	end
 	-- scaling
+	local scale = onCluster and FarmHudDB.trailPathScale or 0.7;
 	if self.info.currentPinScale~=scale then
 		self.pin :SetScale(scale);
 		self.info.currentPinScale = scale;
@@ -101,6 +112,12 @@ function FarmHudTrailPathPinMixin:UpdatePin(facing,pinIcon,scale)
 		self.pin.icon :SetVertexColor(unpack(FarmHudDB.trailPathColor1))
 		self.info.currentPinColor1 = FarmHudDB.trailPathColor1;
 	end
+
+	-- Force EnableMouse off
+	EnableMouse(self,false);
+
+	-- visibility
+	UpdateVisibility(self);
 end
 
 local function GetMicrotime()
@@ -108,63 +125,56 @@ local function GetMicrotime()
 end
 
 local function TrailPath_TickerFunc()
-	local x,y,instance = HBD :GetPlayerWorldPosition();
+	-- get position from HereBeDragon
+	local x,y,instance = HBD:GetPlayerWorldPosition();
 
+	-- skip function on invalid result; in dungeons/raids
+	if not (x and y and instance) then
+		return
+	end
+
+	local registerNew = true;
+	local currentTime = GetMicrotime();
 	local currentFacing = GetPlayerFacing() or 0; -- 0 - 6.5
+	local IsOnCluster = FarmHud:IsShown();
 
-	if x and y and instance then
-		if lastX and lastY and lastM==instance then
-			local a, distance = HBD :GetWorldVector(instance,lastX,lastY,x,y);
-			if distance < minDistanceBetween then
-				x,y = nil,nil;
-				if currentFacing then
-					trailPathActive[1].info.f = currentFacing;
-				end
-			end
+	-- check distance between current and prev. position; skip function
+	if trailPathActive[1] then
+		local a, distance =  HBD:GetWorldVector(instance,trailPathActive[1].info.x,trailPathActive[1].info.y,x,y);
+		if distance <= minDistanceBetween then
+			trailPathActive[1].info.f = currentFacing;
+			trailPathActive[1]:UpdatePin(nil,IsOnCluster);
+			registerNew = false;
 		end
 	end
 
-	if x and y and instance then
-		local entry,new = trailPathPool[1],false;
-		if not entry then
-			entry = CreateFrame("Frame",nil,FarmHud,"FarmHudTrailPathPinTemplate");
+	if registerNew then
+		-- reuse pin frame from pool or create new
+		local entry = trailPathPool[1];
+		if entry then
+			tremove(trailPathPool,1);
+		else
+			entry = CreateFrame("Frame",nil,nil,"FarmHudTrailPathPinTemplate");
 			entry.info = {};
 			entry.pin.Facing:Play();
 			entry:EnableMouse(false);
-			new = true;
-		elseif entry: IsMouseEnabled() then
-			entry: EnableMouse(false)
 		end
 
-		lastX,lastY,lastM = x,y,instance;
+		-- update info table entries
 		entry.info.map = instance;
 		entry.info.x = x;
 		entry.info.y = y;
 		entry.info.f = currentFacing;
-		entry.info.t = GetMicrotime();
+		entry.info.t = currentTime;
+		entry:UpdatePin(nil,IsInCluster);
+
+		-- register pin frame at HereBeDragon
 		HBDPins:AddMinimapIconWorld(FarmHud, entry, instance, x, y );
 		tinsert(trailPathActive,1,entry);
-		if not new then
-			tremove(trailPathPool,1);
-		end
 	end
 
+	-- check pin frame too old; remove or update
 	if #trailPathActive>0 then
-		local currentScale,currentPinIcon = FarmHudDB.trailPathScale;
-		local currentTime = GetMicrotime();
-		local IsOnCluster = trailPathActive[1] :GetParent()~=Minimap;
-		if IsOnCluster then
-			if FarmHudDB.rotation then
-				currentPinIcon = FarmHudDB.trailPathIcon or "arrow01";
-			else
-				currentPinIcon = "dot02";
-			end
-			IsOpened = true;
-		else
-			currentPinIcon = "dot02"
-			currentScale = 0.7;
-			IsOpened = false;
-		end
 		for i=#trailPathActive, 1, -1 do
 			local v = trailPathActive[i];
 			if i>1 and (i>FarmHudDB.trailPathCount or (v.info.t and currentTime-v.info.t>(FarmHudDB.trailPathTimeout*100))) then
@@ -173,10 +183,7 @@ local function TrailPath_TickerFunc()
 				tinsert(trailPathPool,v);
 				tremove(trailPathActive,i);
 			else
-				if i==1 then
-					trailPathActive[i].info.t = currentTime;
-				end
-				trailPathActive[i]:UpdatePin(currentFacing,currentPinIcon,currentScale);
+ 				trailPathActive[i]:UpdatePin(currentFacing,IsOnCluster);
 			end
 		end
 	end
@@ -202,7 +209,13 @@ end
 local module = {};
 
 module.dbDefaults = {
-	trailPathShow = true, trailPathCount = 32, trailPathTimeout = 60, trailPathIcon = "arrow01", trailPathColor1 = {1,.2,.2,1,.75}, trailPathScale = 1,
+	trailPathShow = true,
+	trailPathOnMinimap = true,
+	trailPathCount = 32,
+	trailPathTimeout = 60,
+	trailPathIcon = "arrow01",
+	trailPathColor1 = {1,.2,.2,1,.75},
+	trailPathScale = 1,
 };
 
 function module.AddOptions()
@@ -212,27 +225,31 @@ function module.AddOptions()
 			name = L["TrailPath"],
 			args = {
 				trailPathShow = {
-					type = "toggle", order = 0, width = "full",
-					name = L["TrailPathShow"]
+					type = "toggle", order = 1,
+					name = L["TrailPathShow"], -- desc = L["TrailPathShowDesc"],
+				},
+				trailPathOnMinimap = {
+					type = "toggle", order = 2,
+					name = L["TrailPathOnMinimap"], desc = L["TrailPathOnMinimapDesc"],
 				},
 				trailPathCount = {
-					type = "range", order = 1,
+					type = "range", order = 3,
 					name = L["TrailPathCount"], desc = L["TrailPathCountDesc"],
 					min = 10, step = 1, max = 64,
 				},
 				trailPathTimeout = {
-					type = "range", order = 2,
+					type = "range", order = 4,
 					name = L["TrailPathTimeout"], desc = L["TrailPathTimeoutDesc"],
 					min = 10, step = 10, max = 600,
 				},
 				-- TODO: header ?
 				trailPathIcon = {
-					type = "select", order = 4,
+					type = "select", order = 5,
 					name = L["TrailPathIcon"], desc = L["TrailPathIconDesc"],
 					values = TrailPathIconValues
 				},
 				trailPathScale = {
-					type = "range", order = 5,
+					type = "range", order = 6,
 					name = L["TrailPathScale"], desc = L["TrailPathScaleDesc"],
 					min=0.1, step=0.1, max=1, isPercent = true
 				},
@@ -249,19 +266,19 @@ function module.AddOptions()
 				},
 				]]
 				trailPathColor1 = {
-					type = "color", order = 6,
+					type = "color", order = 7,
 					name = COLOR, desc = L["TrailPathColorsDesc"],
 					hasAlpha = true,
 					hidden = false -- function to check color mode
 				},
 				--[[
 				trailPathColor2 = {
-					type = "color", order = 6,
+					type = "color", order = 8,
 					name = COLOR.." 2", desc = L["TrailPathColorsDesc"],
 					hidden = false -- function to check color mode
 				},
 				trailPathColor3 = {
-					type = "color", order = 6,
+					type = "color", order = 9,
 					name = COLOR.." 2", desc = L["TrailPathColorsDesc"],
 					hidden = false -- function to check color mode
 				},
@@ -292,6 +309,9 @@ function module.PLAYER_ENTERING_WORLD()
 end
 
 function module.OnLoad()
+	local mt = getmetatable(FarmHud).__index;
+	EnableMouse,SetShown = mt.EnableMouse, mt.SetShown;
+
 	-- prepare trailPathIcons texture coords from coords_pos entries
 	FarmHud.UpdateTrailPath = UpdateTrailPath;
 

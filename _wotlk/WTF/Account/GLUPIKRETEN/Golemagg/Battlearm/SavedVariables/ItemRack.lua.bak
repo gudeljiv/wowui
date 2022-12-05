@@ -24,6 +24,7 @@ ItemRackUser = {
 	["Sets"] = {
 		["~CombatQueue"] = {
 			["equip"] = {
+				[16] = "34997:3368:::::::78:::::::::",
 			},
 		},
 		["~Unequip"] = {
@@ -36,6 +37,7 @@ ItemRackUser = {
 	},
 	["EnableEvents"] = "ON",
 	["ItemsUsed"] = {
+		["41589"] = 30,
 	},
 	["QueuesEnabled"] = {
 		[13] = false,

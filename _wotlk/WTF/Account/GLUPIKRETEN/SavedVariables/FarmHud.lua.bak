@@ -1,5 +1,6 @@
 
 FarmHudDB = {
+	["trailPathOnMinimap"] = true,
 	["tracking^134153"] = "false",
 	["cardinalpoints_color2"] = {
 		1, -- [1]

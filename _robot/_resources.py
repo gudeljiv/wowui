@@ -135,7 +135,7 @@ skills["death knight"] = [
     {"name": "obliterate", "type": "GetSpellTexture", "id": 51424, "key": "t", "modifier": "shift"},
     {"name": "frost strike", "type": "GetSpellTexture", "id": 51419, "key": "6"},
     {"name": "unbreakable armor", "type": "GetSpellTexture", "id": 51271, "key": "h"},
-    {"name": "blood strike", "type": "GetSpellTexture", "id": 49929, "key": "f2", "modifier": "ctrl"},
+    {"name": "blood strike", "type": "GetSpellTexture", "id": 49929, "key": "f5", "modifier": "ctrl"},
 ]
 
 skills["priest"] = [

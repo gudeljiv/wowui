@@ -1,9 +1,9 @@
+VER 3 0000000000000013 " " "132130"
+/click RotBotF3
+END
 VER 3 000000000000000E " " "136106"
 /inspect
 /run SortBags()
-END
-VER 3 0000000000000013 " " "132130"
-/click RotBotF3
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
