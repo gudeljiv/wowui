@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 7834,
+	["session"] = 7836,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -6511,5 +6511,21 @@ BugGrabberDB = {
 			["session"] = 7830,
 			["counter"] = 15,
 		}, -- [838]
+		{
+			["message"] = "[string \"UnitSetRole(player,\"DPS\")\"]:1: Usage: UnitSetRole(\"unit\", \"role\"",
+			["time"] = "2022/12/05 18:10:29",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"DPS\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `UnitSetRole'\n[string \"UnitSetRole(player,\"DPS\")\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 7836,
+			["counter"] = 1,
+		}, -- [839]
+		{
+			["message"] = "[string \"UnitSetRole(player,\"DAMAGER\")\"]:1: Usage: UnitSetRole(\"unit\", \"role\"",
+			["time"] = "2022/12/05 18:13:11",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"DAMAGER\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `UnitSetRole'\n[string \"UnitSetRole(player,\"DAMAGER\")\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 7836,
+			["counter"] = 1,
+		}, -- [840]
 	},
 }

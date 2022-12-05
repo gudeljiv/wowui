@@ -1,9 +1,11 @@
 
 EventTraceSavedVars = {
 	["ShowTimestamp"] = true,
-	["LogEventsWhenHidden"] = false,
+	["Size"] = {
+		["Height"] = 824.82177734375,
+		["Width"] = 734.8215942382812,
+	},
 	["ShowArguments"] = true,
-	["LogCREvents"] = true,
 	["Filters"] = {
 		["User"] = {
 			{
@@ -98,8 +100,6 @@ EventTraceSavedVars = {
 			}, -- [18]
 		},
 	},
-	["Size"] = {
-		["Height"] = 824.8217163085938,
-		["Width"] = 734.821533203125,
-	},
+	["LogCREvents"] = true,
+	["LogEventsWhenHidden"] = false,
 }
