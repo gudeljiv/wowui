@@ -1,7 +1,7 @@
 
 QuestReward_Options = {
-	["QLevel"] = 3,
+	["QLevelOnOff"] = "on",
 	["MasterOnOff"] = "on",
 	["Version"] = "1.3.7",
-	["QLevelOnOff"] = "on",
+	["QLevel"] = 3,
 }

@@ -24,6 +24,7 @@ skills["offgcd"]["warrior"] = [
 skills["offgcd"]["druid"] = [
     {"name": "maul", "type": "GetSpellTexture", "id": 6807, "key": "1"},
     {"name": "nature's grasp", "type": "GetSpellTexture", "id": 16689, "key": "f", "modifier": "alt"},
+    {"name": "battlemaster's resolve", "type": "GetItemIcon", "id": 41589, "key": "1", "modifier": "alt"},
 ]
 
 skills["offgcd"]["death knight"] = [
