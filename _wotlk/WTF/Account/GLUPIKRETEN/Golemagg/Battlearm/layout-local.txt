@@ -41,6 +41,13 @@ X: -330
 Y: -128
 W: 128
 H: 64
+Frame: ColorPickerFrame
+FrameLevel: 121
+Anchor: CENTER
+X: 7
+Y: 36
+W: 365
+H: 200
 Frame: ItemRackButton13
 FrameLevel: 1
 Anchor: CENTER
@@ -83,13 +90,6 @@ X: 0
 Y: 0
 W: 2
 H: 34
-Frame: TellMeWhen_ConfigWarning
-FrameLevel: 1
-Anchor: TOP
-X: -10
-Y: -111
-W: 330
-H: 113
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM

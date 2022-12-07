@@ -28,13 +28,15 @@ xVermin.Pestilence = function(range)
 		if UnitExists(unit) and not xVermin.HasValue(t, UnitCreatureType(unit)) and xAOE(15) > 1 then
 			units = units + 1
 			for i = 1, 40 do
-				local name, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, shouldConsolidate, spellId = UnitDebuff(unit, i)
+				local name, icon, count, debuffType, duration, expirationTime, unitCaster, canStealOrPurge, _, spellId, canApplyAura, isBossAura = UnitDebuff(unit, i)
 
-				if (name == 'Frost Fever') then
-					frost_fever = frost_fever + 1
-				end
-				if (name == 'Blood Plague') then
-					blood_plague = blood_plague + 1
+				if name then
+					if name == 'Frost Fever' and unitCaster == 'player' then
+						frost_fever = frost_fever + 1
+					end
+					if name == 'Blood Plague' and unitCaster == 'player' then
+						blood_plague = blood_plague + 1
+					end
 				end
 			end
 		end
@@ -44,18 +46,20 @@ xVermin.Pestilence = function(range)
 		t_ff = false
 		t_bp = false
 		for i = 1, 40 do
-			local name, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, shouldConsolidate, spellId = UnitDebuff('target', i)
+			local name, icon, count, debuffType, duration, expirationTime, unitCaster, canStealOrPurge, _, spellId, canApplyAura, isBossAura = UnitDebuff('target', i)
 
-			if name == 'Frost Fever' then
+			if name == 'Frost Fever' and unitCaster == 'player' then
 				t_ff = true
 			end
-			if name == 'Blood Plague' then
+			if name == 'Blood Plague' and unitCaster == 'player' then
 				t_bp = true
 			end
 		end
 	else
 		return false
 	end
+
+	-- print(units, frost_fever, blood_plague, t_ff, t_bp)
 
 	if not t_ff or not t_bp then
 		return false
