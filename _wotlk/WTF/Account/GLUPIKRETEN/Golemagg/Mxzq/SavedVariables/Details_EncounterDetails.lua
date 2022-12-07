@@ -856,12 +856,17 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Grand Magus Telestra",
 		},
-		[48210] = {
-			["school"] = 32,
+		[48096] = {
+			["school"] = 20,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_HEAL"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Grand Magus Telestra",
+			["source"] = "Keristrasza",
 		},
 		[42702] = {
 			["school"] = 32,
@@ -896,25 +901,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Dragonflayer Runecaster",
 		},
-		[48096] = {
-			["school"] = 20,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Keristrasza",
-		},
-		[37132] = {
-			["school"] = 64,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Azure Magus",
-		},
 		[43649] = {
 			["school"] = 32,
 			["token"] = {
@@ -924,13 +910,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Dalronn the Controller",
 		},
-		[33833] = {
+		[37132] = {
 			["school"] = 64,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Crazed Mana-Wraith",
+			["source"] = "Azure Magus",
 		},
 		[35314] = {
 			["school"] = 64,
@@ -940,12 +925,35 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nethermancer Sepethrea",
 		},
+		[33833] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Crazed Mana-Wraith",
+		},
+		[51460] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Jaffrost",
+		},
 		[50424] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_HEAL"] = true,
 			},
 			["source"] = "Mechano-Lord Capacitus",
+		},
+		[51399] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Twisted Visage",
 		},
 		[48400] = {
 			["school"] = 16,
@@ -956,20 +964,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Frost Tomb",
 		},
-		[51460] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Jaffrost",
-		},
-		[51399] = {
+		[55969] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "Twisted Visage",
+			["source"] = "Prince Taldaram",
 		},
 		[29882] = {
 			["school"] = 64,
@@ -980,21 +980,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Crazed Mana-Surge",
 		},
-		[55969] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_HEAL"] = true,
-			},
-			["source"] = "Prince Taldaram",
-		},
-		[33132] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Corrupted Nova Totem",
-		},
 		[42972] = {
 			["school"] = 8,
 			["type"] = "DEBUFF",
@@ -1004,12 +989,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Dragonflayer Strategist",
 		},
-		[55078] = {
-			["school"] = 32,
+		[33132] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Jaffrost",
+			["source"] = "Corrupted Nova Totem",
 		},
 		[47696] = {
 			["school"] = 64,
@@ -1017,6 +1003,20 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "Crazed Mana-Surge",
+		},
+		[55078] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Jaffrost",
+		},
+		[31981] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Mennu the Betrayer",
 		},
 		[30926] = {
 			["school"] = 4,
@@ -1026,12 +1026,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Vazruden the Herald",
 		},
-		[31981] = {
-			["school"] = 1,
+		[47747] = {
+			["school"] = 64,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Mennu the Betrayer",
+			["source"] = "Anomalus",
 		},
 		[56130] = {
 			["school"] = 8,
@@ -1051,15 +1053,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Grand Magus Telestra",
 		},
-		[43651] = {
-			["school"] = 1,
+		[47731] = {
+			["school"] = 64,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Skarvald the Constructor",
+			["source"] = "Grand Magus Telestra",
+		},
+		[48210] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "Grand Magus Telestra",
 		},
 		[43667] = {
 			["school"] = 32,
@@ -1069,15 +1078,6 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Prince Keleseth",
-		},
-		[47747] = {
-			["school"] = 64,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Anomalus",
 		},
 		[8362] = {
 			["school"] = 2,
@@ -1171,13 +1171,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nethermancer Sepethrea",
 		},
-		[54962] = {
+		[40504] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Dragonflayer Strategist",
+			["source"] = "Quagmirran",
 		},
 		[50401] = {
 			["school"] = 16,
@@ -1193,23 +1193,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Twisted Visage",
 		},
-		[47699] = {
-			["school"] = 64,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Crystalline Keeper",
-		},
-		[57599] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Twisted Visage",
-		},
 		[22858] = {
 			["school"] = 1,
 			["token"] = {
@@ -1217,18 +1200,9 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Watchkeeper Gargolmar",
 		},
-		[40504] = {
+		[57599] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Quagmirran",
-		},
-		[57589] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
@@ -1241,6 +1215,32 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Raging Flames",
+		},
+		[47699] = {
+			["school"] = 64,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Crystalline Keeper",
+		},
+		[57589] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Twisted Visage",
+		},
+		[54962] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Dragonflayer Strategist",
 		},
 		[30695] = {
 			["school"] = 32,
@@ -1295,6 +1295,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Crystalline Keeper",
 		},
+		[43651] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Skarvald the Constructor",
+		},
 		[50302] = {
 			["school"] = 64,
 			["token"] = {
@@ -1309,16 +1319,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Grand Magus Telestra",
-		},
-		[47731] = {
-			["school"] = 64,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Grand Magus Telestra",
 		},

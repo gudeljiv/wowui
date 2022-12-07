@@ -83,6 +83,7 @@ xVermin.lua
 Rotation/_Core.lua
 Rotation/_Frames.lua
 Rotation/AOE.lua
+Rotation/Pestilence.lua
 Rotation/Warrior.lua
 
 

@@ -1,16 +1,5 @@
 
 EncounterDetailsDB = {
-	["emotes"] = {
-		{
-			["boss"] = "Herald Volazj",
-		}, -- [1]
-		{
-			["boss"] = "Herald Volazj",
-		}, -- [2]
-		{
-			["boss"] = "Jedoga Shadowseeker",
-		}, -- [3]
-	},
 	["encounter_spells"] = {
 		[38197] = {
 			["school"] = 64,
@@ -420,23 +409,25 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Twisted Visage",
 		},
-		[30926] = {
-			["school"] = 4,
+		[57601] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Nazan",
+			["source"] = "Twisted Visage",
 		},
-		[57657] = {
+		[33919] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Twisted Visage",
+			["source"] = "Tavarok",
 		},
 		[55964] = {
 			["school"] = 1,
@@ -454,34 +445,29 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Prince Taldaram",
 		},
-		[48210] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_HEAL"] = true,
-			},
-			["source"] = "Watchkeeper Gargolmar",
-		},
-		[33919] = {
-			["school"] = 1,
+		[32361] = {
+			["school"] = 8,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Tavarok",
 		},
-		[33527] = {
-			["school"] = 64,
-			["type"] = "DEBUFF",
+		[57602] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Syth Arcane Elemental",
+			["source"] = "Twisted Visage",
+		},
+		[57803] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "Twisted Visage",
 		},
 		[20754] = {
 			["school"] = 4,
@@ -492,17 +478,10 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Bleeding Hollow Darkcaster",
 		},
-		[15241] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Bleeding Hollow Darkcaster",
-		},
-		[57589] = {
+		[57635] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Twisted Visage",
 		},
@@ -515,14 +494,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Twisted Visage",
 		},
-		[9438] = {
-			["school"] = 64,
-			["type"] = "BUFF",
+		[57942] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Talon King Ikiss",
+			["source"] = "Herald Volazj",
+		},
+		[34942] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Ethereal Darkcaster",
 		},
 		[57655] = {
 			["school"] = 1,
@@ -533,16 +518,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Twisted Visage",
 		},
-		[33529] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[30926] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Syth Shadow Elemental",
+			["source"] = "Nazan",
 		},
 		[32325] = {
 			["school"] = 32,
@@ -553,23 +535,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Pandemonius",
 		},
-		[30707] = {
+		[30686] = {
 			["school"] = 32,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Omor the Unscarred",
 		},
-		[33111] = {
-			["school"] = 32,
-			["type"] = "BUFF",
+		[55927] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Shadowmoon Warlock",
+			["source"] = "Flame Sphere",
 		},
 		[57802] = {
 			["school"] = 8,
@@ -598,13 +578,29 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Keli'dan the Breaker",
 		},
-		[57941] = {
+		[9438] = {
+			["school"] = 64,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Talon King Ikiss",
+		},
+		[17228] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Keli'dan the Breaker",
+		},
+		[57949] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Herald Volazj",
 		},
@@ -616,53 +612,44 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Prince Taldaram",
 		},
-		[57949] = {
+		[57941] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Herald Volazj",
 		},
-		[17228] = {
+		[33111] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Shadowmoon Warlock",
+		},
+		[30707] = {
 			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Keli'dan the Breaker",
+			["source"] = "Omor the Unscarred",
 		},
-		[55927] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Flame Sphere",
-		},
-		[30686] = {
+		[33529] = {
 			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Omor the Unscarred",
-		},
-		[34942] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Ethereal Darkcaster",
-		},
-		[57942] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Herald Volazj",
+			["source"] = "Syth Shadow Elemental",
 		},
 		[35748] = {
 			["school"] = 32,
@@ -675,36 +662,37 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Fiendish Hound",
 		},
-		[57635] = {
+		[57589] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "Twisted Visage",
 		},
-		[57803] = {
-			["school"] = 8,
+		[15241] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_HEAL"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Twisted Visage",
+			["source"] = "Bleeding Hollow Darkcaster",
 		},
-		[57602] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Twisted Visage",
-		},
-		[32361] = {
-			["school"] = 8,
+		[33527] = {
+			["school"] = 64,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Tavarok",
+			["source"] = "Syth Arcane Elemental",
+		},
+		[48210] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "Watchkeeper Gargolmar",
 		},
 		[32363] = {
 			["school"] = 4,
@@ -715,14 +703,26 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nexus-Prince Shaffar",
 		},
-		[57601] = {
-			["school"] = 32,
+		[57657] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Twisted Visage",
 		},
+	},
+	["emotes"] = {
+		{
+			["boss"] = "Herald Volazj",
+		}, -- [1]
+		{
+			["boss"] = "Herald Volazj",
+		}, -- [2]
+		{
+			["boss"] = "Jedoga Shadowseeker",
+		}, -- [3]
 	},
 }
