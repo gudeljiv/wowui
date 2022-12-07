@@ -25,7 +25,7 @@ xVermin.Pestilence = function(range)
 
 	for i = 1, 40 do
 		local unit = 'nameplate' .. i
-		if UnitExists(unit) and not xVermin.HasValue(t, UnitCreatureType(unit)) and xAOE(15) then
+		if UnitExists(unit) and not xVermin.HasValue(t, UnitCreatureType(unit)) and xAOE(15) > 1 then
 			units = units + 1
 			for i = 1, 40 do
 				local name, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, shouldConsolidate, spellId = UnitDebuff(unit, i)
@@ -57,13 +57,11 @@ xVermin.Pestilence = function(range)
 		return false
 	end
 
-	print(units, frost_fever, blood_plague, t_ff, t_bp)
-
 	if not t_ff or not t_bp then
 		return false
 	end
 
-	if units > frost_fever or units > blood_plague then
+	if units > frost_fever or units > blood_plague and xAOE(15) > 1 then
 		return true
 	else
 		return false
