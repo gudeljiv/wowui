@@ -25,14 +25,16 @@ VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 /use item:33447
 END
 VER 3 000000000000001C "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Clam Master K
+/targetexact Duke Vallenhal
 END
 VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
 END
 VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
-/run print(UnitAura("target", 1, "HELPFULL"))
+/run RuneFrame:SetScale(1.05)
+/run RuneFrame:ClearAllPoints()
+/run RuneFrame:SetPoint("TOPRIGHT", PlayerFrameManaBar, "BOTTOMRIGHT", 10, -5)
 END
 VER 3 000000000000001B "TSMMacro" "INV_Misc_Flower_01"
 /click TSMShoppingBuyoutBtn

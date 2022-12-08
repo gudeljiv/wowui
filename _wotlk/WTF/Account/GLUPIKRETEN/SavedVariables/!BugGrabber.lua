@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 7871,
+	["session"] = 7883,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -6489,21 +6489,13 @@ BugGrabberDB = {
 			["counter"] = 4,
 		}, -- [835]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Questie' tried to call the protected function 'Questie_BaseFrame:SetHeight()'.",
-			["time"] = "2022/09/09 16:54:48",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetHeight'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:1248: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua\"]:356: in function `val'\n[string \"@Interface\\AddOns\\Questie\\Modules\\TaskQueue.lua\"]:8: in function <Interface\\AddOns\\Questie\\Modules\\TaskQueue.lua:6>",
-			["session"] = 7830,
-			["counter"] = 15,
-		}, -- [836]
-		{
 			["message"] = "[string \"UnitSetRole(player,\"DPS\")\"]:1: Usage: UnitSetRole(\"unit\", \"role\"",
 			["time"] = "2022/12/05 18:10:29",
 			["locals"] = "(*temporary) = nil\n(*temporary) = \"DPS\"\n",
 			["stack"] = "[string \"=[C]\"]: in function `UnitSetRole'\n[string \"UnitSetRole(player,\"DPS\")\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 7836,
 			["counter"] = 1,
-		}, -- [837]
+		}, -- [836]
 		{
 			["message"] = "[string \"UnitSetRole(player,\"DAMAGER\")\"]:1: Usage: UnitSetRole(\"unit\", \"role\"",
 			["time"] = "2022/12/05 18:13:11",
@@ -6511,14 +6503,14 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `UnitSetRole'\n[string \"UnitSetRole(player,\"DAMAGER\")\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 7836,
 			["counter"] = 1,
-		}, -- [838]
+		}, -- [837]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'LFGBulletinBoard' tried to call the protected function 'Search()'.",
 			["time"] = "2022/11/17 17:34:09",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:480: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:480>\n[string \"=[C]\"]: in function `Search'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:225: in function `LFGBrowse_DoSearch'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:178: in function `SearchActiveEntry'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGParentFrame.lua\"]:92: in function `LFGParentFrame_SearchActiveEntry'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGListing.lua\"]:67: in function <...s\\Blizzard_LookingForGroupUI\\Blizzard_LFGListing.lua:49>",
 			["session"] = 7850,
 			["counter"] = 7,
-		}, -- [839]
+		}, -- [838]
 		{
 			["message"] = "Interface\\AddOns\\TellMeWhen\\TellMeWhen-10.0.5.lua:2666: [string \"return not xAOE(10) > 1\"]:1: attempt to compare number with boolean",
 			["time"] = "2022/12/07 11:55:26",
@@ -6526,28 +6518,28 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-10.0.5.lua\"]:2666: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:2655>",
 			["session"] = 7850,
 			["counter"] = 1,
-		}, -- [840]
+		}, -- [839]
 		{
 			["message"] = "[string \"return not xAOE(10) > 1\"]:1: attempt to compare number with boolean",
 			["time"] = "2022/12/07 11:55:19",
 			["stack"] = "[string \"return not xAOE(10) > 1\"]:1: in function `LF_0000027741336610'\n[string \"Condition_LUA_CURRENTSPELL_RAGE_ABS_LUA\"]:3: in function `CheckFunction'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:266: in function <...eWhen\\Components\\Core\\Conditions\\ConditionObject.lua:260>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:235: in function `RegisterForUpdating'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:319: in function `DeclareExternalUpdater'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Icon.lua\"]:1051: in function `Setup'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua\"]:71: in function <Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:65>\n[string \"=(tail call)\"]: ?\n...\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:1123: in function `CScriptCall'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:974: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:962>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:1034: in function `CScriptBubble'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:1463: in function `OnSettingSaved'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:2051: in function `SaveSetting'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:2023: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:2020>",
 			["session"] = 7850,
 			["counter"] = 167,
-		}, -- [841]
+		}, -- [840]
 		{
 			["message"] = "[string \"return not xAOE(5) > 1\"]:1: attempt to compare number with boolean",
 			["time"] = "2022/12/07 11:54:04",
 			["stack"] = "[string \"return not xAOE(5) > 1\"]:1: in function `LF_000002774421BDC0'\n[string \"Condition_DEBUFFSTACKS_DEBUFFDUR_HEALTH_INSTANCE2_LUA_STANCE_DEBUFFSTACKS_DEBUFFDUR_LUA_REACTIVE\"]:7: in function `CheckFunction'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:266: in function <...eWhen\\Components\\Core\\Conditions\\ConditionObject.lua:260>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:235: in function `RegisterForUpdating'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:319: in function `DeclareExternalUpdater'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Icon.lua\"]:1051: in function `Setup'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua\"]:71: in function <Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:65>\n[string \"=(tail call)\"]: ?\n...\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:1123: in function `CScriptCall'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:974: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:962>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:1034: in function `CScriptBubble'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:1463: in function `OnSettingSaved'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:2051: in function `SaveSetting'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:2023: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:2020>",
 			["session"] = 7850,
 			["counter"] = 10,
-		}, -- [842]
+		}, -- [841]
 		{
 			["message"] = "[string \"Condition_LUA_STANCE\"]:3: [string \"xAOE(5) > 1 then...\"]:1: unexpected symbol near '>'",
 			["time"] = "2022/12/07 12:05:09",
 			["stack"] = "[string \"=[C]\"]: in function `error'\n[string \"Condition_LUA_STANCE\"]:3: in function `CheckFunction'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:266: in function <...eWhen\\Components\\Core\\Conditions\\ConditionObject.lua:260>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:235: in function `RegisterForUpdating'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:319: in function `DeclareExternalUpdater'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Icon.lua\"]:1051: in function `Setup'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua\"]:71: in function <Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:65>\n[string \"=(tail call)\"]: ?\n...\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:1123: in function `CScriptCall'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:1668: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:1665>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:1126: in function `CScriptCall'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:1467: in function `RequestReload'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:3555: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:3534>",
 			["session"] = 7851,
 			["counter"] = 2,
-		}, -- [843]
+		}, -- [842]
 		{
 			["message"] = "Interface\\AddOns\\TellMeWhen\\TellMeWhen-10.0.5.lua:2666: [string \"return xRange(10) > 1\"]:1: attempt to compare number with boolean",
 			["time"] = "2022/12/07 12:34:21",
@@ -6555,21 +6547,21 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-10.0.5.lua\"]:2666: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:2655>",
 			["session"] = 7852,
 			["counter"] = 1,
-		}, -- [844]
+		}, -- [843]
 		{
 			["message"] = "[string \"return xRange(10) > 1\"]:1: attempt to compare number with boolean",
 			["time"] = "2022/12/07 12:34:21",
 			["stack"] = "[string \"return xRange(10) > 1\"]:1: in function `LF_0000027685B06830'\n[string \"Condition_DEBUFFDUR_DEBUFFDUR_DEBUFFDUR_DEBUFFDUR_DEBUFFDUR_DEBUFFDUR_DEBUFFDUR_LUA\"]:10: in function `CheckFunction'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:266: in function `Check'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Icon.lua\"]:770: in function <Interface\\AddOns\\TellMeWhen\\Components\\Core\\Icon.lua:741>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-10.0.5.lua\"]:2626: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:2588>",
 			["session"] = 7852,
 			["counter"] = 25,
-		}, -- [845]
+		}, -- [844]
 		{
 			["message"] = "[string \"return xRange(15) > 1\"]:1: attempt to compare number with boolean",
 			["time"] = "2022/12/07 12:35:05",
 			["stack"] = "[string \"return xRange(15) > 1\"]:1: in function `LF_0000027681078A48'\n[string \"Condition_DEBUFFDUR_DEBUFFDUR_DEBUFFDUR_DEBUFFDUR_DEBUFFDUR_DEBUFFDUR_DEBUFFDUR_LUA\"]:10: in function `CheckFunction'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:266: in function `Check'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Icon.lua\"]:770: in function <Interface\\AddOns\\TellMeWhen\\Components\\Core\\Icon.lua:741>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-10.0.5.lua\"]:2626: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:2588>",
 			["session"] = 7852,
 			["counter"] = 154,
-		}, -- [846]
+		}, -- [845]
 		{
 			["message"] = "[string \"print(UnitDebuff(\"target\", \"Frost Fever\"))\"]:1: Usage: UnitDebuff(\"unit\", [index][, \"filter\"])",
 			["time"] = "2022/12/07 12:58:44",
@@ -6577,7 +6569,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `UnitDebuff'\n[string \"print(UnitDebuff(\"target\", \"Frost Fever\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 7853,
 			["counter"] = 2,
-		}, -- [847]
+		}, -- [846]
 		{
 			["message"] = "[string \"print(FindAuraByName(\"Frost Fever\", \"target...\"]:1: attempt to call global 'FindAuraByName' (a nil value)",
 			["time"] = "2022/12/07 13:01:02",
@@ -6585,7 +6577,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(FindAuraByName(\"Frost Fever\", \"target\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 7853,
 			["counter"] = 1,
-		}, -- [848]
+		}, -- [847]
 		{
 			["message"] = "[string \"print(UnitAura(\"player\", \"Blood Presence\"))\"]:1: Usage: UnitAura(\"unit\", [index][, \"filter\"])",
 			["time"] = "2022/12/07 13:04:37",
@@ -6593,15 +6585,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `UnitAura'\n[string \"print(UnitAura(\"player\", \"Blood Presence\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 7853,
 			["counter"] = 1,
-		}, -- [849]
-		{
-			["message"] = "Interface\\AddOns\\AskMrRobotClassic\\Gear.lua:1182: attempt to index field '?' (a nil value)",
-			["time"] = "2022/12/07 13:29:16",
-			["locals"] = "self = <table> {\n UpdateMinimap = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Core.lua:267\n StopLogging = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\CombatLog.lua:299\n SlashCommand = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Core.lua:234\n SetJunkUiState = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Junk.lua:523\n HideShopWindow = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Shopping.lua:30\n HideCover = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\ui\\Ui.lua:280\n CreateItemLink = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Constants.lua:150\n SpecIds = <table> {\n }\n ReleaseTabLog = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\CombatLog.lua:136\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\AceAddon-3.0\\AceAddon-3.0.lua:405\n ShowCover = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\ui\\Ui.lua:262\n IsEnabled = <function> defined @Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\AceAddon-3.0\\AceAddon-3.0.lua:447\n ProfessionIds = <table> {\n }\n RefreshJunkUi = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Junk.lua:549\n RegisterMessage = <function> defined @Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:85\n UnregisterMessage = <function> defined @Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:148\n IsSupportedInstanceId = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\AskMrRobotClassic-Serializer\\AskMrRobotClassic-Serializer.lua:324\n SetItemTooltip = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\ui\\Ui.lua:397\n ReleaseTabGear = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Gear.lua:504\n CreateFont = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\ui\\Ui.lua:84\n db = <table> {\n }\n SetEnabledState = <function> defined @Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\AceAddon-3.0\\AceAddon-3.0.lua:420\n ShowAlert = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\ui\\Ui.lua:290\n OnEnable = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Core.lua:195\n GetActiveSetupLabel = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Gear.lua:405\n ReleaseTabExport = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Export.lua:103\n InitializeGear = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Gear.lua:1210\n spairs = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Core.lua:318\n SetSpellTooltip = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\ui\\Ui.lua:411\n OnInitialize = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Core.lua:147\n UnregisterAllEvents = <function> defined @Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:169\n InitializeCombatLog = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\CombatLog.lua:337\n MIN_ADDON_VERSION = 1\n Deserialize = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Libs\\AceSerializer-3.0\\AceSerializer-3.0.lua:246\n GetActiveUiTab = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\ui\\Ui.lua:388\n GetName = <function> defined @Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\AceAddon-3.0\\AceAddon-3.0.lua:275\n SpecIcons = <table> {\n }\n name = \"AskMrRobotClassic\"\n MIN_IMPORT_VERSION = 1\n Contains = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Core.lua:350\n Disable = <function> defined @Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\AceAddon-3.0\\AceAddon-3.0.lua:310\n ParseItemLink = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\AskMrRobotClassic-Serializer\\AskMrRobotClassic-Serializer.lua:235\n ShowShopWindow = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Shopping.lua:55\n CreateTexture = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\ui\\Ui.lua:94\n Print = <function> defined @Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\AceConsole-3.0\\AceConsole-3.0.lua:50\n RenderTabExport = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Export.lua:65\n ShowTab = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\ui\\Ui.lua:381\n Serialize = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Libs",
-			["stack"] = "[string \"@Interface\\AddOns\\AskMrRobotClassic\\Gear.lua\"]:1182: in function `EquipGearSet'\n[string \"@Interface\\AddOns\\AskMrRobotClassic\\Core.lua\"]:29: in function `OnClick'\n[string \"@Interface\\AddOns\\Masque\\Libs\\LibDBIcon-1.0\\LibDBIcon-1.0-45.lua\"]:144: in function <...e\\AddOns\\Masque\\Libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:142>",
-			["session"] = 7861,
-			["counter"] = 1,
-		}, -- [850]
+		}, -- [848]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
 			["time"] = "2022/02/16 20:30:17",
@@ -6609,6 +6593,38 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:913: in function `TargetofTarget_Update'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:416: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
 			["session"] = 7863,
 			["counter"] = 49,
+		}, -- [849]
+		{
+			["message"] = "Interface\\AddOns\\AskMrRobotClassic\\Gear.lua:1182: attempt to index field '?' (a nil value)",
+			["time"] = "2022/12/07 13:29:16",
+			["locals"] = "self = <table> {\n UpdateMinimap = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Core.lua:267\n StopLogging = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\CombatLog.lua:299\n SlashCommand = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Core.lua:234\n SetJunkUiState = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Junk.lua:523\n HideShopWindow = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Shopping.lua:30\n HideCover = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\ui\\Ui.lua:280\n CreateItemLink = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Constants.lua:150\n SpecIds = <table> {\n }\n ReleaseTabLog = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\CombatLog.lua:136\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\AceAddon-3.0\\AceAddon-3.0.lua:405\n ShowCover = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\ui\\Ui.lua:262\n IsEnabled = <function> defined @Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\AceAddon-3.0\\AceAddon-3.0.lua:447\n ProfessionIds = <table> {\n }\n RefreshJunkUi = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Junk.lua:549\n RegisterMessage = <function> defined @Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:85\n UnregisterMessage = <function> defined @Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:148\n IsSupportedInstanceId = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\AskMrRobotClassic-Serializer\\AskMrRobotClassic-Serializer.lua:324\n SetItemTooltip = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\ui\\Ui.lua:397\n ReleaseTabGear = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Gear.lua:504\n CreateFont = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\ui\\Ui.lua:84\n db = <table> {\n }\n SetEnabledState = <function> defined @Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\AceAddon-3.0\\AceAddon-3.0.lua:420\n ShowAlert = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\ui\\Ui.lua:290\n OnEnable = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Core.lua:195\n GetActiveSetupLabel = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Gear.lua:405\n ReleaseTabExport = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Export.lua:103\n InitializeGear = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Gear.lua:1210\n spairs = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Core.lua:318\n SetSpellTooltip = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\ui\\Ui.lua:411\n OnInitialize = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Core.lua:147\n UnregisterAllEvents = <function> defined @Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:169\n InitializeCombatLog = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\CombatLog.lua:337\n MIN_ADDON_VERSION = 1\n Deserialize = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Libs\\AceSerializer-3.0\\AceSerializer-3.0.lua:246\n GetActiveUiTab = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\ui\\Ui.lua:388\n GetName = <function> defined @Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\AceAddon-3.0\\AceAddon-3.0.lua:275\n SpecIcons = <table> {\n }\n name = \"AskMrRobotClassic\"\n MIN_IMPORT_VERSION = 1\n Contains = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Core.lua:350\n Disable = <function> defined @Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\AceAddon-3.0\\AceAddon-3.0.lua:310\n ParseItemLink = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\AskMrRobotClassic-Serializer\\AskMrRobotClassic-Serializer.lua:235\n ShowShopWindow = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Shopping.lua:55\n CreateTexture = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\ui\\Ui.lua:94\n Print = <function> defined @Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\AceConsole-3.0\\AceConsole-3.0.lua:50\n RenderTabExport = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Export.lua:65\n ShowTab = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\ui\\Ui.lua:381\n Serialize = <function> defined @Interface\\AddOns\\AskMrRobotClassic\\Libs",
+			["stack"] = "[string \"@Interface\\AddOns\\AskMrRobotClassic\\Gear.lua\"]:1182: in function `EquipGearSet'\n[string \"@Interface\\AddOns\\AskMrRobotClassic\\Core.lua\"]:29: in function `OnClick'\n[string \"@Interface\\AddOns\\Masque\\Libs\\LibDBIcon-1.0\\LibDBIcon-1.0-45.lua\"]:144: in function <...e\\AddOns\\Masque\\Libs\\LibDBIcon-1.0\\LibDBIcon-1.0.lua:142>",
+			["session"] = 7874,
+			["counter"] = 3,
+		}, -- [850]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Questie' tried to call the protected function 'Questie_BaseFrame:SetHeight()'.",
+			["time"] = "2022/09/09 16:54:48",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetHeight'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:1248: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua\"]:356: in function `val'\n[string \"@Interface\\AddOns\\Questie\\Modules\\TaskQueue.lua\"]:8: in function <Interface\\AddOns\\Questie\\Modules\\TaskQueue.lua:6>",
+			["session"] = 7878,
+			["counter"] = 16,
 		}, -- [851]
+		{
+			["message"] = "[string \"Rune1Cooldown:SetVertexColor(1,1,1,1)\"]:1: attempt to call method 'SetVertexColor' (a nil value)",
+			["time"] = "2022/12/08 15:49:38",
+			["locals"] = "(*temporary) = nil\n(*temporary) = Rune1Cooldown {\n 0 = <userdata>\n _occ_priority = 1\n _occ_show = true\n _occ_gcd = false\n _occ_kind = \"default\"\n _occ_duration = 10\n _occ_start = 2443254.861000\n _occ_settings = <table> {\n }\n}\n(*temporary) = 1\n(*temporary) = 1\n(*temporary) = 1\n(*temporary) = 1\n(*temporary) = \"attempt to call method 'SetVertexColor' (a nil value)\"\n",
+			["stack"] = "[string \"Rune1Cooldown:SetVertexColor(1,1,1,1)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 7882,
+			["counter"] = 1,
+		}, -- [852]
+		{
+			["message"] = "[string \"Rune1Cooldown:SetBackdropColor(1,1,1,1)\"]:1: attempt to call method 'SetBackdropColor' (a nil value)",
+			["time"] = "2022/12/08 15:51:12",
+			["locals"] = "(*temporary) = nil\n(*temporary) = Rune1Cooldown {\n 0 = <userdata>\n _occ_priority = 1\n _occ_show = true\n _occ_gcd = false\n _occ_kind = \"default\"\n _occ_duration = 10\n _occ_start = 2443313.614000\n _occ_settings = <table> {\n }\n}\n(*temporary) = 1\n(*temporary) = 1\n(*temporary) = 1\n(*temporary) = 1\n(*temporary) = \"attempt to call method 'SetBackdropColor' (a nil value)\"\n",
+			["stack"] = "[string \"Rune1Cooldown:SetBackdropColor(1,1,1,1)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 7882,
+			["counter"] = 1,
+		}, -- [853]
 	},
 }

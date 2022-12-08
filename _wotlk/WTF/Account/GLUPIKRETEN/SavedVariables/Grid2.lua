@@ -9170,20 +9170,12 @@ Grid2DB = {
 						["b"] = 1,
 					},
 				},
-				["buff-Regrowth-mine"] = {
-					["type"] = "buff",
-					["spellName"] = 8936,
-					["mine"] = 1,
+				["debuff-Poison"] = {
 					["load"] = {
 						["playerClass"] = {
 							["DRUID"] = true,
+							["PALADIN"] = true,
 						},
-					},
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 1,
 					},
 				},
 				["debuff-Disease"] = {
@@ -9203,21 +9195,8 @@ Grid2DB = {
 						},
 					},
 				},
-				["buff-Rejuvenation-mine"] = {
-					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
-					["load"] = {
-						["playerClass"] = {
-							["DRUID"] = true,
-						},
-					},
-					["mine"] = 1,
-					["spellName"] = 1058,
+				["name"] = {
+					["defaultName"] = 1,
 				},
 				["buff-Thorns-mine"] = {
 					["type"] = "buff",
@@ -9245,18 +9224,39 @@ Grid2DB = {
 						},
 					},
 				},
-				["name"] = {
-					["defaultName"] = 1,
+				["buff-Rejuvenation-mine"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["load"] = {
+						["playerClass"] = {
+							["DRUID"] = true,
+						},
+					},
+					["mine"] = 1,
+					["spellName"] = 1058,
 				},
 				["heals-incoming"] = {
 					["includePlayerHeals"] = true,
 				},
-				["debuff-Poison"] = {
+				["buff-Regrowth-mine"] = {
+					["type"] = "buff",
+					["spellName"] = 8936,
+					["mine"] = 1,
 					["load"] = {
 						["playerClass"] = {
 							["DRUID"] = true,
-							["PALADIN"] = true,
 						},
+					},
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
 					},
 				},
 			},

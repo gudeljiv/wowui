@@ -48,3 +48,10 @@ X: 323
 Y: -75
 W: 78
 H: 40
+Frame: AmrUiFrame1
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 1000
+H: 700

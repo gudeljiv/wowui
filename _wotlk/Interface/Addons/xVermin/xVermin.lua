@@ -261,14 +261,14 @@ f:SetScript(
 		MiniMapInstanceDifficulty:ClearAllPoints()
 		MiniMapInstanceDifficulty:SetPoint('TOPLEFT', Minimap, 'TOPLEFT', 0, 0)
 
-		-- RuneFrame:HookScript(
-		-- 	'OnShow',
-		-- 	function(self)
-		-- 		self:Hide()
-		-- 	end
-		-- )
-
-		-- RuneFrame:Hide()
+		xVermin.CheckIfLoadedWithTimer(
+			'RuneFrame',
+			function()
+				RuneFrame:SetScale(1.05)
+				RuneFrame:ClearAllPoints()
+				RuneFrame:SetPoint('TOPRIGHT', PlayerFrameManaBar, 'BOTTOMRIGHT', 10, -5)
+			end
+		)
 	end
 )
 
