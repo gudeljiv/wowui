@@ -436,14 +436,14 @@ Grid2DB = {
 							},
 							["BackgroundG"] = 0.1019607843137255,
 							["groupAnchor"] = "TOPRIGHT",
-							["PosY"] = 12.69827947300792,
+							["PosY"] = 12.3427252722754,
 							["anchors"] = {
 							},
 							["groupAnchors"] = {
 							},
 							["unitsPerColumns"] = {
 							},
-							["PosX"] = -271.4415526693274,
+							["PosX"] = -271.4416210287027,
 							["horizontal"] = false,
 							["BackgroundA"] = 0,
 							["clamp"] = true,
@@ -1316,7 +1316,7 @@ Grid2DB = {
 								["g"] = 0,
 								["r"] = 0,
 							},
-							["mouseoverHighlight"] = false,
+							["mouseoverHighlight"] = true,
 							["frameHeights"] = {
 								[5] = 25,
 							},
@@ -1351,7 +1351,7 @@ Grid2DB = {
 								[10] = 140,
 							},
 							["frameBorderTexture"] = "None",
-							["mouseoverHighlight"] = false,
+							["mouseoverHighlight"] = true,
 							["orientation"] = "VERTICAL",
 							["frameHeights"] = {
 								[10] = 25,
@@ -1395,7 +1395,7 @@ Grid2DB = {
 								[40] = 68,
 							},
 							["frameTexture"] = "Melli",
-							["mouseoverHighlight"] = false,
+							["mouseoverHighlight"] = true,
 							["orientation"] = "VERTICAL",
 							["frameColor"] = {
 								["a"] = 0,
@@ -1422,6 +1422,7 @@ Grid2DB = {
 						}, -- [3]
 					},
 					["frameBorderDistance"] = 0,
+					["mouseoverHighlight"] = true,
 					["frameHeight"] = 30,
 					["frameTexture"] = "Melli",
 					["frameContentColor"] = {
@@ -7346,7 +7347,6 @@ Grid2DB = {
 					["type"] = "alpha",
 				},
 				["mouseover"] = {
-					["thickness"] = 1,
 					["linesCount"] = 12,
 					["location"] = {
 						["y"] = 0,
@@ -9170,12 +9170,20 @@ Grid2DB = {
 						["b"] = 1,
 					},
 				},
-				["debuff-Poison"] = {
+				["buff-Regrowth-mine"] = {
+					["type"] = "buff",
+					["spellName"] = 8936,
+					["mine"] = 1,
 					["load"] = {
 						["playerClass"] = {
 							["DRUID"] = true,
-							["PALADIN"] = true,
 						},
+					},
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
 					},
 				},
 				["debuff-Disease"] = {
@@ -9195,8 +9203,21 @@ Grid2DB = {
 						},
 					},
 				},
-				["name"] = {
-					["defaultName"] = 1,
+				["buff-Rejuvenation-mine"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["load"] = {
+						["playerClass"] = {
+							["DRUID"] = true,
+						},
+					},
+					["mine"] = 1,
+					["spellName"] = 1058,
 				},
 				["buff-Thorns-mine"] = {
 					["type"] = "buff",
@@ -9224,39 +9245,18 @@ Grid2DB = {
 						},
 					},
 				},
-				["buff-Rejuvenation-mine"] = {
-					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
-					["load"] = {
-						["playerClass"] = {
-							["DRUID"] = true,
-						},
-					},
-					["mine"] = 1,
-					["spellName"] = 1058,
+				["name"] = {
+					["defaultName"] = 1,
 				},
 				["heals-incoming"] = {
 					["includePlayerHeals"] = true,
 				},
-				["buff-Regrowth-mine"] = {
-					["type"] = "buff",
-					["spellName"] = 8936,
-					["mine"] = 1,
+				["debuff-Poison"] = {
 					["load"] = {
 						["playerClass"] = {
 							["DRUID"] = true,
+							["PALADIN"] = true,
 						},
-					},
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 1,
 					},
 				},
 			},

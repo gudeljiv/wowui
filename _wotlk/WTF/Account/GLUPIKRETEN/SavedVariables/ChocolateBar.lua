@@ -1,6 +1,6 @@
 
 ChocolateBarDB = {
-	["addonVersion"] = "v3.9.1",
+	["addonVersion"] = "v3.9.5",
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Default",
 		["Blooq - Genesis"] = "Default",
@@ -619,9 +619,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 539216,
-		["timeAtThisLevel"] = 11514,
-		["timeStamp"] = 2440186.712,
+		["total"] = 545780,
+		["timeAtThisLevel"] = 4694,
+		["timeStamp"] = 2520323.018,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -708,9 +708,9 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1447414,
-		["timeStamp"] = 2439190.202,
-		["timeAtThisLevel"] = 354867,
+		["total"] = 1451143,
+		["timeStamp"] = 2512004.458,
+		["timeAtThisLevel"] = 358596,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
@@ -764,9 +764,9 @@ CB_PlayedTime = {
 		["total"] = 3552,
 	},
 	["Miqa-Golemagg"] = {
-		["total"] = 7695,
-		["timeAtThisLevel"] = 2647,
-		["timeStamp"] = 2436268.91,
+		["total"] = 7805,
+		["timeAtThisLevel"] = 2757,
+		["timeStamp"] = 2509001.094,
 	},
 	["Pitchwise-"] = {
 		["total"] = 390,

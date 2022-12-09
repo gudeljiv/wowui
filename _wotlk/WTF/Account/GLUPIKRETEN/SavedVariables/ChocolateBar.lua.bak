@@ -60,7 +60,7 @@ ChocolateBarDB = {
 		["Miqa - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 	},
-	["addonVersion"] = "v3.9.1",
+	["addonVersion"] = "v3.9.5",
 	["profiles"] = {
 		["Default"] = {
 			["locked"] = false,
@@ -619,9 +619,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 539216,
-		["timeStamp"] = 2440186.712,
-		["timeAtThisLevel"] = 11514,
+		["total"] = 545748,
+		["timeStamp"] = 2520291.193,
+		["timeAtThisLevel"] = 4662,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -670,9 +670,9 @@ CB_PlayedTime = {
 		["total"] = 8794,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 309743,
-		["timeStamp"] = 2443218.208,
-		["timeAtThisLevel"] = 2485,
+		["total"] = 310115,
+		["timeStamp"] = 2443590.618,
+		["timeAtThisLevel"] = 2857,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
@@ -770,9 +770,9 @@ CB_PlayedTime = {
 		["total"] = 390,
 	},
 	["Miqa-Golemagg"] = {
-		["total"] = 7695,
-		["timeStamp"] = 2436268.91,
-		["timeAtThisLevel"] = 2647,
+		["total"] = 7805,
+		["timeStamp"] = 2509001.094,
+		["timeAtThisLevel"] = 2757,
 	},
 	["Nitwit-"] = {
 		["total"] = 680,
@@ -795,9 +795,9 @@ CB_PlayedTime = {
 		["total"] = 129,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1447414,
-		["timeAtThisLevel"] = 354867,
-		["timeStamp"] = 2439190.202,
+		["total"] = 1451143,
+		["timeAtThisLevel"] = 358596,
+		["timeStamp"] = 2512004.458,
 	},
 	["Grgur-"] = {
 		["total"] = 1248,

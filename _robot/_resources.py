@@ -118,6 +118,7 @@ skills["druid"] = [
     {"name": "survival instincts", "type": "GetSpellTexture", "id": 61336, "key": "d", "modifier": "alt"},
     {"name": "lacerate", "type": "GetSpellTexture", "id": 33745, "key": "3"},
     {"name": "berserk", "type": "GetSpellTexture", "id": 50334, "key": "r", "modifier": "alt"},
+    {"name": "savage roar", "type": "GetSpellTexture", "id": 52610, "key": "e", "modifier": "shift"},
 ]
 
 skills["death knight"] = [

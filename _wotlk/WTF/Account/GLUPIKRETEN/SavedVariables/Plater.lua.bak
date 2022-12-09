@@ -1,30 +1,46 @@
 
 PlaterDB = {
 	["captured_spells"] = {
-		[52139] = {
-			["source"] = "Gigantaur",
+		[48639] = {
+			["encounterName"] = "Skadi the Ruthless",
+			["source"] = "Ymirjar Warrior",
+			["encounterID"] = 581,
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 26836,
+			["npcID"] = 26690,
 		},
-		[50370] = {
-			["source"] = "Loguhn",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 26196,
+		[58875] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Spirit Wolf",
+			["npcID"] = 29264,
 		},
-		[19647] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Zhaadhun",
-			["npcID"] = 417,
+		[4511] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Unknown",
+			["npcID"] = 416,
 		},
-		[27050] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Wolf",
-			["npcID"] = 25791,
+		[48703] = {
+			["source"] = "Dragonflayer Fanatic",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 26553,
 		},
-		[51430] = {
+		[12611] = {
+			["source"] = "Green Mage",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Minion of Kaw",
-			["npcID"] = 25880,
+			["npcID"] = 32324,
+		},
+		[20615] = {
+			["source"] = "Gold Warrior",
+			["type"] = "DEBUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 32322,
+		},
+		[59083] = {
+			["source"] = "Dragonflayer Seer",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26554,
 		},
 		[57566] = {
 			["event"] = "SPELL_AURA_APPLIED",
@@ -32,73 +48,188 @@ PlaterDB = {
 			["source"] = "Zhaadhun",
 			["npcID"] = 417,
 		},
-		[50689] = {
-			["source"] = "Luthion the Vile",
+		[48400] = {
+			["encounterName"] = "Prince Keleseth",
+			["type"] = "DEBUFF",
+			["source"] = "Frost Tomb",
+			["npcID"] = 23965,
+			["event"] = "SPELL_AURA_APPLIED",
+			["encounterID"] = 571,
+		},
+		[59243] = {
+			["source"] = "Ymirjar Flesh Hunter",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26670,
+		},
+		[9613] = {
+			["source"] = "En'kilah Necromancer",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 25378,
+		},
+		[8599] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Dragonflayer Metalworker",
+			["npcID"] = 24078,
+		},
+		[42476] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Valgarde Defender",
+			["npcID"] = 23739,
+		},
+		[50668] = {
+			["source"] = "Darkfallen Bloodbearer",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26115,
+		},
+		[54261] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Gold Mage",
+			["npcID"] = 32341,
+		},
+		[48193] = {
+			["source"] = "Dragonflayer Tribesman",
 			["type"] = "BUFF",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 27860,
+			["npcID"] = 23651,
 		},
-		[59638] = {
-			["encounterName"] = "Archavon the Stone Watcher",
-			["source"] = "Mirror Image",
-			["npcID"] = 31216,
+		[51786] = {
 			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Indu'le Warrior",
+			["npcID"] = 26344,
+		},
+		[39586] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Gold Shaman",
+			["npcID"] = 32340,
+		},
+		[63619] = {
+			["encounterName"] = "Archavon the Stone Watcher",
+			["type"] = "BUFF",
+			["source"] = "Shadowfiend",
+			["npcID"] = 19668,
+			["event"] = "SPELL_AURA_APPLIED",
 			["encounterID"] = 772,
 		},
-		[75447] = {
+		[50349] = {
+			["source"] = "Darkfallen Bloodbearer",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26115,
+		},
+		[55491] = {
+			["source"] = "Ricky",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 10807,
+		},
+		[51946] = {
+			["source"] = "Dragonbone Condor",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 26483,
+		},
+		[52473] = {
+			["source"] = "Ricky",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 10807,
+		},
+		[43291] = {
+			["source"] = "Dragonflayer Berserker",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 24216,
+		},
+		[20424] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Green Paladin",
+			["npcID"] = 32342,
+		},
+		[35706] = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["type"] = "BUFF",
 			["source"] = "Unknown",
-			["npcID"] = 32517,
-		},
-		[54052] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Zhaadhun",
-			["npcID"] = 417,
-		},
-		[5915] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Loot Crazed Diver",
-			["npcID"] = 25836,
-		},
-		[32919] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Sinewy Wolf",
-			["npcID"] = 31233,
-		},
-		[50522] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Gorloc Mud Splasher",
-			["npcID"] = 25699,
-		},
-		[50992] = {
-			["source"] = "Prince Valanar",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 25601,
-		},
-		[44179] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Dragonflayer Installation I",
-			["npcID"] = 24538,
-		},
-		[47996] = {
-			["encounterName"] = "Archavon the Stone Watcher",
-			["source"] = "Oriknash",
 			["npcID"] = 17252,
+		},
+		[34189] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Loot Crazed Poacher",
+			["npcID"] = 25806,
+		},
+		[59244] = {
+			["source"] = "Ymirjar Flesh Hunter",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 772,
+			["npcID"] = 26670,
 		},
 		[32736] = {
 			["source"] = "Green Warrior",
 			["event"] = "SPELL_CAST_SUCCESS",
 			["npcID"] = 32321,
 		},
+		[42972] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Dragonflayer Strategist",
+			["npcID"] = 23956,
+		},
+		[50653] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Enslaved Proto-Drake",
+			["npcID"] = 24083,
+		},
+		[34828] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Warsong Shaman",
+			["npcID"] = 27678,
+		},
 		[3600] = {
 			["event"] = "SPELL_CAST_SUCCESS",
 			["source"] = "Earthbind Totem",
 			["npcID"] = 2630,
+		},
+		[50206] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Churn",
+			["npcID"] = 25418,
+		},
+		[49711] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Clam Master K",
+			["npcID"] = 25800,
+		},
+		[51787] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Indu'le Mystic",
+			["npcID"] = 26336,
+		},
+		[48258] = {
+			["encounterName"] = "Svala Sorrowgrave",
+			["source"] = "Svala Sorrowgrave",
+			["encounterID"] = 577,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26668,
+		},
+		[42669] = {
+			["encounterName"] = "Ingvar the Plunderer",
+			["source"] = "Ingvar the Plunderer",
+			["encounterID"] = 575,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 23954,
+		},
+		[51899] = {
+			["source"] = "Dahlia Suntouch",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27680,
+		},
+		[46310] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Kaw the Mammoth Destroyer",
+			["npcID"] = 25802,
+		},
+		[53480] = {
+			["source"] = "Bear",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26643,
 		},
 		[52474] = {
 			["encounterName"] = "Archavon the Stone Watcher",
@@ -107,12 +238,190 @@ PlaterDB = {
 			["event"] = "SPELL_CAST_SUCCESS",
 			["encounterID"] = 772,
 		},
-		[32982] = {
+		[6713] = {
+			["source"] = "Green Warrior",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 32321,
+		},
+		[55077] = {
+			["source"] = "Savage Worg",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 29735,
+		},
+		[43931] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Enslaved Proto-Drake",
+			["npcID"] = 24083,
+		},
+		[67837] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Wormhole",
+			["npcID"] = 35646,
+		},
+		[52139] = {
+			["source"] = "Gigantaur",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26836,
+		},
+		[61353] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Warp-Huntress Kula",
+			["npcID"] = 32711,
+		},
+		[45528] = {
+			["source"] = "Wind Tamer Oril",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 26725,
+		},
+		[61385] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Harold Lane",
+			["npcID"] = 25804,
+		},
+		[50207] = {
+			["source"] = "Raging Boiler",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 25417,
+		},
+		[55860] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Shoveltusk Stag",
+			["npcID"] = 23691,
+		},
+		[57984] = {
 			["encounterName"] = "Archavon the Stone Watcher",
-			["source"] = "Fire Elemental Totem",
-			["npcID"] = 15439,
+			["source"] = "Greater Fire Elemental",
+			["npcID"] = 15438,
 			["event"] = "SPELL_CAST_SUCCESS",
 			["encounterID"] = 772,
+		},
+		[15043] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Gold Mage",
+			["npcID"] = 32341,
+		},
+		[42702] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Tunneling Ghoul",
+			["npcID"] = 24084,
+		},
+		[51437] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Smoldering Skeleton",
+			["npcID"] = 27360,
+		},
+		[55078] = {
+			["encounterName"] = "Archavon the Stone Watcher",
+			["type"] = "DEBUFF",
+			["source"] = "Rune Weapon",
+			["npcID"] = 27893,
+			["event"] = "SPELL_AURA_APPLIED",
+			["encounterID"] = 772,
+		},
+		[24529] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Gost",
+			["npcID"] = 3619,
+		},
+		[12544] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Magister Surdiel",
+			["npcID"] = 32170,
+		},
+		[51613] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Corrupted Rager",
+			["npcID"] = 21223,
+		},
+		[49106] = {
+			["source"] = "Ymirjar Berserker",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26696,
+		},
+		[50655] = {
+			["source"] = "Beryl Mage Hunter",
+			["type"] = "DEBUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 25585,
+		},
+		[48132] = {
+			["encounterName"] = "Gortok Palehoof",
+			["source"] = "Massive Jormungar",
+			["encounterID"] = 579,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26685,
+		},
+		[49170] = {
+			["source"] = "Ymirjar Dusk Shaman",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 26694,
+		},
+		[31827] = {
+			["source"] = "Valgarde Defender",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 23739,
+		},
+		[38056] = {
+			["source"] = "En'kilah Ghoul",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 25393,
+		},
+		[19579] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Unknown",
+			["npcID"] = 32517,
+		},
+		[53434] = {
+			["encounterName"] = "Archavon the Stone Watcher",
+			["type"] = "BUFF",
+			["source"] = "Hiéna",
+			["npcID"] = 17280,
+			["event"] = "SPELL_AURA_APPLIED",
+			["encounterID"] = 772,
+		},
+		[54983] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Proto-Drake Handler",
+			["npcID"] = 24082,
+		},
+		[43757] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Dragonflayer Forge Master",
+			["npcID"] = 24079,
+		},
+		[44795] = {
+			["source"] = "Fezzix Geartwist",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 25849,
+		},
+		[55095] = {
+			["encounterName"] = "Archavon the Stone Watcher",
+			["type"] = "DEBUFF",
+			["source"] = "Rune Weapon",
+			["npcID"] = 27893,
+			["event"] = "SPELL_AURA_APPLIED",
+			["encounterID"] = 772,
+		},
+		[16609] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Thrall",
+			["npcID"] = 4949,
+		},
+		[35230] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Msshi'fn",
+			["npcID"] = 17924,
 		},
 		[12169] = {
 			["source"] = "Jlarborn the Strategist",
@@ -125,10 +434,151 @@ PlaterDB = {
 			["event"] = "SPELL_CAST_SUCCESS",
 			["npcID"] = 3099,
 		},
-		[72898] = {
-			["source"] = "Water Elemental",
+		[50688] = {
+			["source"] = "Luthion the Vile",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 37994,
+			["npcID"] = 27860,
+		},
+		[13730] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Winterskorn Defender",
+			["npcID"] = 24015,
+		},
+		[59407] = {
+			["encounterName"] = "Svala Sorrowgrave",
+			["type"] = "BUFF",
+			["source"] = "Ritual Channeler",
+			["encounterID"] = 577,
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27281,
+		},
+		[32851] = {
+			["encounterName"] = "Archavon the Stone Watcher",
+			["type"] = "BUFF",
+			["source"] = "Oriknash",
+			["npcID"] = 17252,
+			["event"] = "SPELL_AURA_APPLIED",
+			["encounterID"] = 772,
+		},
+		[15786] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Gold Shaman",
+			["npcID"] = 32340,
+		},
+		[28993] = {
+			["source"] = "Dahlia Suntouch",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27680,
+		},
+		[23380] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Taunka Windfury",
+			["npcID"] = 27571,
+		},
+		[59008] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Sinewy Wolf",
+			["npcID"] = 31233,
+		},
+		[29544] = {
+			["source"] = "Gold Warrior",
+			["type"] = "DEBUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 32322,
+		},
+		[53515] = {
+			["source"] = "Ricky",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 10807,
+		},
+		[50992] = {
+			["source"] = "Prince Valanar",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 25601,
+		},
+		[38233] = {
+			["source"] = "Jlarborn the Strategist",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 24215,
+		},
+		[59264] = {
+			["encounterName"] = "Gortok Palehoof",
+			["source"] = "Ferocious Rhino",
+			["encounterID"] = 579,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26686,
+		},
+		[53148] = {
+			["source"] = "Bear",
+			["type"] = "DEBUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 26643,
+		},
+		[13323] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Gold Mage",
+			["npcID"] = 32341,
+		},
+		[49092] = {
+			["encounterName"] = "Skadi the Ruthless",
+			["source"] = "Ymirjar Harpooner",
+			["encounterID"] = 581,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26692,
+		},
+		[50689] = {
+			["source"] = "Luthion the Vile",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27860,
+		},
+		[5915] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Loot Crazed Diver",
+			["npcID"] = 25836,
+		},
+		[59408] = {
+			["encounterName"] = "Svala Sorrowgrave",
+			["type"] = "DEBUFF",
+			["source"] = "Ritual Channeler",
+			["encounterID"] = 577,
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 27281,
+		},
+		[34944] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Coilfang Scale-Healer",
+			["npcID"] = 21126,
+		},
+		[48246] = {
+			["encounterName"] = "Svala Sorrowgrave",
+			["source"] = "Flame Brazier",
+			["encounterID"] = 577,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27273,
+		},
+		[61548] = {
+			["source"] = "Ymirjar Berserker",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 26696,
+		},
+		[48278] = {
+			["encounterName"] = "Svala Sorrowgrave",
+			["source"] = "Ritual Channeler",
+			["encounterID"] = 577,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27281,
+		},
+		[52909] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Librarian Garren",
+			["npcID"] = 25291,
 		},
 		[42705] = {
 			["encounterName"] = "Ingvar the Plunderer",
@@ -138,152 +588,159 @@ PlaterDB = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["npcID"] = 23954,
 		},
-		[43931] = {
+		[36589] = {
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Enslaved Proto-Drake",
-			["npcID"] = 24083,
+			["source"] = "Sinewy Wolf",
+			["npcID"] = 31233,
 		},
-		[32019] = {
+		[61676] = {
+			["encounterName"] = "Archavon the Stone Watcher",
+			["source"] = "Hiéna",
+			["npcID"] = 17280,
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Marsh Caribou",
-			["npcID"] = 25680,
+			["encounterID"] = 772,
 		},
-		[42729] = {
-			["encounterName"] = "Ingvar the Plunderer",
-			["source"] = "Ingvar the Plunderer",
-			["encounterID"] = 575,
+		[53532] = {
+			["source"] = "Bear",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 23954,
+			["npcID"] = 26643,
 		},
-		[43757] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Dragonflayer Forge Master",
-			["npcID"] = 24079,
+		[24259] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Zhaadhun",
+			["npcID"] = 417,
 		},
-		[46315] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Wooly Mammoth Bull",
-			["npcID"] = 25743,
+		[29385] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Green Paladin",
+			["npcID"] = 32342,
+		},
+		[75446] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Unknown",
+			["npcID"] = 4397,
+		},
+		[43935] = {
+			["source"] = "Dragonflayer Bonecrusher",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 24069,
 		},
 		[50658] = {
 			["source"] = "Beryl Treasure Hunter",
 			["event"] = "SPELL_CAST_SUCCESS",
 			["npcID"] = 25353,
 		},
-		[55095] = {
+		[60894] = {
 			["encounterName"] = "Archavon the Stone Watcher",
-			["type"] = "DEBUFF",
-			["source"] = "Rune Weapon",
-			["npcID"] = 27893,
-			["event"] = "SPELL_AURA_APPLIED",
+			["source"] = "Archavon the Stone Watcher",
+			["npcID"] = 31125,
+			["event"] = "SPELL_CAST_SUCCESS",
 			["encounterID"] = 772,
 		},
-		[33844] = {
+		[59409] = {
+			["encounterName"] = "Svala Sorrowgrave",
+			["source"] = "Svala Sorrowgrave",
+			["encounterID"] = 577,
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Ancient Watcher",
-			["npcID"] = 31229,
+			["npcID"] = 26668,
 		},
-		[57567] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["npcID"] = 417,
+		[43664] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Proto-Drake Handler",
+			["npcID"] = 24082,
 		},
-		[8599] = {
-			["event"] = "SPELL_AURA_APPLIED",
+		[11974] = {
+			["source"] = "Gold Priest",
 			["type"] = "BUFF",
-			["source"] = "Dragonflayer Metalworker",
-			["npcID"] = 24078,
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 32325,
+		},
+		[49317] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Azure Drake",
+			["npcID"] = 27682,
+		},
+		[54954] = {
+			["source"] = "Ticking Bomb",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 29684,
+		},
+		[11986] = {
+			["source"] = "Snowfall Glade Shaman",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26201,
 		},
 		[21401] = {
 			["event"] = "SPELL_CAST_SUCCESS",
 			["source"] = "Gold Shaman",
 			["npcID"] = 32340,
 		},
-		[57846] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Dragonflayer Ironhelm",
-			["npcID"] = 23961,
+		[50994] = {
+			["source"] = "Woodlands Walker",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 26421,
 		},
-		[61353] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Warp-Huntress Kula",
-			["npcID"] = 32711,
-		},
-		[27047] = {
-			["source"] = "Bear",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 26643,
-		},
-		[19579] = {
+		[35696] = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["type"] = "BUFF",
 			["source"] = "Unknown",
-			["npcID"] = 32517,
+			["npcID"] = 17252,
 		},
-		[32063] = {
-			["source"] = "En'kilah Necromancer",
+		[47481] = {
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 25378,
+			["source"] = "Toothflayer",
+			["npcID"] = 26125,
 		},
-		[9053] = {
+		[43936] = {
+			["source"] = "Dragonflayer Bonecrusher",
+			["type"] = "DEBUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 24069,
+		},
+		[48583] = {
+			["encounterName"] = "Skarvold & Dalronn",
+			["source"] = "Skarvald the Constructor",
+			["encounterID"] = 573,
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Naxxanar Skeletal Mage",
-			["npcID"] = 25396,
+			["npcID"] = 24200,
 		},
-		[51009] = {
-			["source"] = "Prince Valanar",
+		[49110] = {
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 25601,
+			["source"] = "Wyrmrest Guardian",
+			["npcID"] = 26933,
 		},
-		[51782] = {
-			["source"] = "Deranged Indu'le Villager",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 26411,
-		},
-		[6713] = {
-			["source"] = "Green Warrior",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 32321,
-		},
-		[11971] = {
-			["source"] = "Dragonflayer Thane",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 23660,
-		},
-		[54261] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Gold Mage",
-			["npcID"] = 32341,
-		},
-		[58867] = {
-			["encounterName"] = "Archavon the Stone Watcher",
-			["source"] = "Spirit Wolf",
-			["npcID"] = 29264,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 772,
-		},
-		[58875] = {
+		[35361] = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["type"] = "BUFF",
-			["source"] = "Spirit Wolf",
-			["npcID"] = 29264,
+			["source"] = "Grove Walker",
+			["npcID"] = 31228,
 		},
-		[41440] = {
+		[33844] = {
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Nedar, Lord of Rhinos",
-			["npcID"] = 25801,
+			["source"] = "Ancient Watcher",
+			["npcID"] = 31229,
 		},
-		[51732] = {
-			["source"] = "Arcane Wyrm",
+		[15659] = {
+			["source"] = "Storm Tempest",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 26322,
+			["npcID"] = 26045,
 		},
-		[35336] = {
-			["source"] = "Young Sporebat",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 20387,
+		[43649] = {
+			["encounterName"] = "Skarvold & Dalronn",
+			["source"] = "Dalronn the Controller",
+			["encounterID"] = 573,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 24201,
+		},
+		[22120] = {
+			["source"] = "Curator Insivius",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 25448,
 		},
 		[50324] = {
 			["source"] = "Frigid Necromancer",
@@ -291,70 +748,29 @@ PlaterDB = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["npcID"] = 27539,
 		},
-		[58747] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "DEBUFF",
-			["source"] = "Dragonflayer Invader",
-			["npcID"] = 24051,
-		},
-		[16564] = {
-			["source"] = "En'kilah Gargoyle",
+		[51873] = {
+			["source"] = "Duke Vallenhal",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 25387,
+			["npcID"] = 26926,
 		},
-		[17843] = {
-			["source"] = "Green Priest",
+		[32982] = {
+			["encounterName"] = "Archavon the Stone Watcher",
+			["source"] = "Fire Elemental Totem",
+			["npcID"] = 15439,
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 32343,
+			["encounterID"] = 772,
 		},
-		[42476] = {
+		[42723] = {
+			["encounterName"] = "Ingvar the Plunderer",
+			["source"] = "Ingvar the Plunderer",
+			["encounterID"] = 575,
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Valgarde Defender",
-			["npcID"] = 23739,
-		},
-		[54954] = {
-			["source"] = "Ticking Bomb",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 29684,
-		},
-		[53432] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Harold Lane",
-			["npcID"] = 25804,
-		},
-		[19134] = {
-			["source"] = "Gold Warrior",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 32322,
-		},
-		[49113] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Wyrmrest Temple Drake",
-			["npcID"] = 26925,
+			["npcID"] = 23954,
 		},
 		[46316] = {
 			["event"] = "SPELL_CAST_SUCCESS",
 			["source"] = "Wooly Mammoth Bull",
 			["npcID"] = 25743,
-		},
-		[50688] = {
-			["source"] = "Luthion the Vile",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 27860,
-		},
-		[53434] = {
-			["encounterName"] = "Archavon the Stone Watcher",
-			["type"] = "BUFF",
-			["source"] = "Hiéna",
-			["npcID"] = 17280,
-			["event"] = "SPELL_AURA_APPLIED",
-			["encounterID"] = 772,
-		},
-		[61385] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "DEBUFF",
-			["source"] = "Harold Lane",
-			["npcID"] = 25804,
 		},
 		[54508] = {
 			["encounterName"] = "Archavon the Stone Watcher",
@@ -364,68 +780,153 @@ PlaterDB = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["encounterID"] = 772,
 		},
-		[27577] = {
+		[19134] = {
 			["source"] = "Gold Warrior",
 			["event"] = "SPELL_CAST_SUCCESS",
 			["npcID"] = 32322,
 		},
-		[15537] = {
-			["source"] = "Prince Valanar",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 25601,
+		[50995] = {
+			["source"] = "Thassarian",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 198875,
 		},
-		[61672] = {
+		[9080] = {
+			["source"] = "Dragonflayer Thane",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 23660,
+		},
+		[29386] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Green Paladin",
+			["npcID"] = 32342,
+		},
+		[47482] = {
 			["encounterName"] = "Archavon the Stone Watcher",
-			["type"] = "DEBUFF",
+			["source"] = "Risen Ghoul",
+			["npcID"] = 26125,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["encounterID"] = 772,
+		},
+		[43410] = {
+			["source"] = "Dragonflayer Vrykul",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 23652,
+		},
+		[35250] = {
+			["source"] = "Lieutenant Ta'zinni",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26815,
+		},
+		[12170] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Valgarde Defender",
+			["npcID"] = 23739,
+		},
+		[29426] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Alliance Conscript",
+			["npcID"] = 27564,
+		},
+		[49111] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Azure Dragon",
+			["npcID"] = 27608,
+		},
+		[60880] = {
+			["encounterName"] = "Archavon the Stone Watcher",
 			["source"] = "Archavon the Stone Watcher",
 			["npcID"] = 31125,
-			["event"] = "SPELL_AURA_APPLIED",
+			["event"] = "SPELL_CAST_SUCCESS",
 			["encounterID"] = 772,
 		},
-		[24529] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Gost",
-			["npcID"] = 3619,
-		},
-		[13446] = {
+		[39945] = {
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Tunneling Ghoul",
-			["npcID"] = 24084,
+			["source"] = "Warsong Shaman",
+			["npcID"] = 27678,
 		},
-		[49711] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Clam Master K",
-			["npcID"] = 25800,
-		},
-		[50994] = {
-			["source"] = "Woodlands Walker",
+		[9128] = {
+			["source"] = "Green Warrior",
 			["type"] = "BUFF",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 26421,
+			["npcID"] = 32321,
 		},
-		[70893] = {
+		[40504] = {
+			["source"] = "En'kilah Abomination",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 25383,
+		},
+		[48201] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Apothecary Vicky Levine",
+			["npcID"] = 27248,
+		},
+		[15284] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Coilfang Champion",
+			["npcID"] = 17957,
+		},
+		[32588] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Heigarr the Horrible",
+			["npcID"] = 26266,
+		},
+		[38556] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Kaskala Defender",
+			["npcID"] = 25764,
+		},
+		[43187] = {
+			["source"] = "Daggercap Hawk",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 24172,
+		},
+		[42708] = {
+			["encounterName"] = "Ingvar the Plunderer",
+			["source"] = "Ingvar the Plunderer",
+			["encounterID"] = 575,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 23954,
+		},
+		[56521] = {
+			["source"] = "Freed Crusader",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 30274,
+		},
+		[46317] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Wooly Mammoth Bull",
+			["npcID"] = 25743,
+		},
+		[42772] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Dragonflayer Strategist",
+			["npcID"] = 23956,
+		},
+		[27047] = {
+			["source"] = "Bear",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26643,
+		},
+		[47994] = {
 			["encounterName"] = "Archavon the Stone Watcher",
-			["type"] = "BUFF",
-			["source"] = "Hiéna",
-			["npcID"] = 17280,
-			["event"] = "SPELL_AURA_APPLIED",
+			["source"] = "Oriknash",
+			["npcID"] = 17252,
+			["event"] = "SPELL_CAST_SUCCESS",
 			["encounterID"] = 772,
 		},
-		[11986] = {
-			["source"] = "Snowfall Glade Shaman",
+		[51587] = {
+			["source"] = "Dragonflayer Spiritualist",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 26201,
+			["npcID"] = 28410,
 		},
-		[15496] = {
-			["source"] = "Dragonflayer Tribesman",
+		[59268] = {
+			["encounterName"] = "Gortok Palehoof",
+			["source"] = "Gortok Palehoof",
+			["encounterID"] = 579,
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 23651,
-		},
-		[49241] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Ruby Watcher",
-			["npcID"] = 27542,
+			["npcID"] = 26687,
 		},
 		[48090] = {
 			["encounterName"] = "Archavon the Stone Watcher",
@@ -435,112 +936,306 @@ PlaterDB = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["encounterID"] = 772,
 		},
-		[47982] = {
-			["event"] = "SPELL_AURA_APPLIED",
+		[38204] = {
+			["source"] = "Unbound Seer",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 33422,
+		},
+		[16145] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Coilfang Champion",
+			["npcID"] = 17957,
+		},
+		[56785] = {
+			["source"] = "Scourge Hulk",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26555,
+		},
+		[48292] = {
+			["encounterName"] = "King Ymiron",
+			["source"] = "King Ymiron",
+			["encounterID"] = 583,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26861,
+		},
+		[47675] = {
+			["source"] = "Arctic Grizzly",
 			["type"] = "BUFF",
-			["source"] = "Garrot",
-			["npcID"] = 416,
-		},
-		[54983] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Proto-Drake Handler",
-			["npcID"] = 24082,
-		},
-		[63900] = {
-			["source"] = "Freaky",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 3099,
-		},
-		[50995] = {
-			["source"] = "Thassarian",
-			["type"] = "BUFF",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 198875,
+			["npcID"] = 26482,
 		},
-		[29426] = {
+		[51779] = {
+			["source"] = "Focus Wizard",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Alliance Conscript",
-			["npcID"] = 27564,
+			["npcID"] = 26816,
 		},
-		[47257] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Anub'ar Cultist",
-			["npcID"] = 26319,
-		},
-		[8374] = {
-			["source"] = "Jlarborn the Strategist",
+		[11831] = {
+			["source"] = "Curator Insivius",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 24215,
+			["npcID"] = 25448,
 		},
-		[1604] = {
-			["source"] = "En'kilah Ghoul",
-			["type"] = "DEBUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 25393,
-		},
-		[53401] = {
-			["encounterName"] = "Archavon the Stone Watcher",
-			["type"] = "BUFF",
-			["source"] = "Hiéna",
-			["npcID"] = 17280,
-			["event"] = "SPELL_AURA_APPLIED",
-			["encounterID"] = 772,
-		},
-		[50349] = {
-			["source"] = "Darkfallen Bloodbearer",
+		[9791] = {
+			["source"] = "Dragonflayer Bonecrusher",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 26115,
+			["npcID"] = 24069,
+		},
+		[43651] = {
+			["encounterName"] = "Skarvold & Dalronn",
+			["source"] = "Skarvald the Constructor",
+			["encounterID"] = 573,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 24200,
+		},
+		[43667] = {
+			["encounterName"] = "Prince Keleseth",
+			["source"] = "Prince Keleseth",
+			["npcID"] = 23953,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["encounterID"] = 571,
+		},
+		[48291] = {
+			["encounterName"] = "King Ymiron",
+			["source"] = "King Ymiron",
+			["encounterID"] = 583,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26861,
+		},
+		[51875] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Tundra Scavenger",
+			["npcID"] = 27294,
 		},
 		[43417] = {
 			["source"] = "Dragonflayer Death Weaver",
 			["event"] = "SPELL_CAST_SUCCESS",
 			["npcID"] = 23658,
 		},
-		[53425] = {
+		[38621] = {
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Harold Lane",
-			["npcID"] = 25804,
+			["source"] = "Proto-Drake Handler",
+			["npcID"] = 24082,
 		},
-		[45528] = {
-			["source"] = "Wind Tamer Oril",
-			["type"] = "BUFF",
+		[61549] = {
+			["source"] = "Ymirjar Berserker",
+			["type"] = "DEBUFF",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 26725,
+			["npcID"] = 26696,
 		},
-		[20792] = {
-			["source"] = "Captain Emmy Malin",
+		[35076] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "A'dal",
+			["npcID"] = 18481,
+		},
+		[22766] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Daggerfen Assassin",
+			["npcID"] = 18116,
+		},
+		[16564] = {
+			["source"] = "En'kilah Gargoyle",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 26762,
+			["npcID"] = 25387,
 		},
-		[12470] = {
+		[15090] = {
+			["source"] = "Green Priest",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 32343,
+		},
+		[50370] = {
+			["source"] = "Loguhn",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26196,
+		},
+		[59330] = {
+			["encounterName"] = "Skadi the Ruthless",
+			["source"] = "Skadi the Ruthless",
+			["encounterID"] = 581,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26693,
+		},
+		[58678] = {
 			["encounterName"] = "Archavon the Stone Watcher",
-			["source"] = "Greater Fire Elemental",
-			["npcID"] = 15438,
+			["source"] = "Archavon the Stone Watcher",
+			["npcID"] = 31125,
 			["event"] = "SPELL_CAST_SUCCESS",
 			["encounterID"] = 772,
 		},
-		[46317] = {
+		[35198] = {
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Wooly Mammoth Bull",
-			["npcID"] = 25743,
+			["source"] = "Terror Totem",
+			["npcID"] = 20455,
 		},
-		[44795] = {
-			["source"] = "Fezzix Geartwist",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 25849,
-		},
-		[50668] = {
-			["source"] = "Darkfallen Bloodbearer",
+		[47468] = {
+			["encounterName"] = "Archavon the Stone Watcher",
+			["source"] = "Risen Ghoul",
+			["npcID"] = 26125,
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 26115,
+			["encounterID"] = 772,
 		},
-		[12544] = {
+		[59237] = {
+			["source"] = "Ymirjar Savage",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26669,
+		},
+		[17139] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Coilfang Scale-Healer",
+			["npcID"] = 21126,
+		},
+		[35197] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Umbrafen Witchdoctor",
+			["npcID"] = 20115,
+		},
+		[9739] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Kayra Longmane",
+			["npcID"] = 17969,
+		},
+		[15496] = {
+			["source"] = "Dragonflayer Tribesman",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 23651,
+		},
+		[48260] = {
+			["encounterName"] = "Gortok Palehoof",
+			["source"] = "Gortok Palehoof",
+			["encounterID"] = 579,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26687,
+		},
+		[49113] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Wyrmrest Temple Drake",
+			["npcID"] = 26925,
+		},
+		[31551] = {
+			["source"] = "Proto-Drake Rider",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 24849,
+		},
+		[49026] = {
+			["source"] = "Bloodthirsty Tundra Wolf",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26672,
+		},
+		[48139] = {
+			["encounterName"] = "Gortok Palehoof",
+			["type"] = "BUFF",
+			["source"] = "Ravenous Furbolg",
+			["encounterID"] = 579,
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 26684,
+		},
+		[51732] = {
+			["source"] = "Arcane Wyrm",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26322,
+		},
+		[25025] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Warsong Shaman",
+			["npcID"] = 27678,
+		},
+		[8374] = {
+			["source"] = "Jlarborn the Strategist",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 24215,
+		},
+		[46670] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Taunka'le Evacuee",
+			["npcID"] = 26167,
+		},
+		[6754] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Coilfang Slavehandler",
+			["npcID"] = 17959,
+		},
+		[34827] = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["type"] = "BUFF",
-			["source"] = "Magister Surdiel",
-			["npcID"] = 32170,
+			["source"] = "Warsong Shaman",
+			["npcID"] = 27678,
+		},
+		[48267] = {
+			["encounterName"] = "Svala Sorrowgrave",
+			["type"] = "DEBUFF",
+			["source"] = "Svala Sorrowgrave",
+			["encounterID"] = 577,
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 26668,
+		},
+		[44179] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Dragonflayer Installation I",
+			["npcID"] = 24538,
+		},
+		[48640] = {
+			["encounterName"] = "Skadi the Ruthless",
+			["source"] = "Ymirjar Warrior",
+			["encounterID"] = 581,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26690,
+		},
+		[54431] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Clam Master K",
+			["npcID"] = 25800,
+		},
+		[13005] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Green Paladin",
+			["npcID"] = 32342,
+		},
+		[59079] = {
+			["source"] = "Dragonflayer Deathseeker",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26550,
+		},
+		[43650] = {
+			["encounterName"] = "Skarvold & Dalronn",
+			["source"] = "Dalronn the Controller",
+			["encounterID"] = 573,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 24201,
+		},
+		[15572] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Dragonflayer Metalworker",
+			["npcID"] = 24078,
+		},
+		[59110] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Dappled Stag",
+			["npcID"] = 31236,
+		},
+		[59637] = {
+			["encounterName"] = "Archavon the Stone Watcher",
+			["source"] = "Mirror Image",
+			["npcID"] = 31216,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["encounterID"] = 772,
+		},
+		[7289] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Umbrafen Witchdoctor",
+			["npcID"] = 20115,
+		},
+		[42724] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Karen \"I Don't Caribou\" the Culler",
+			["npcID"] = 25803,
+		},
+		[32064] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Dragonflayer Prisoner",
+			["npcID"] = 24253,
 		},
 		[12530] = {
 			["event"] = "SPELL_AURA_APPLIED",
@@ -556,195 +1251,163 @@ PlaterDB = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["encounterID"] = 772,
 		},
-		[11974] = {
-			["source"] = "Gold Priest",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 32325,
-		},
-		[13730] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "DEBUFF",
-			["source"] = "Winterskorn Defender",
-			["npcID"] = 24015,
-		},
-		[50206] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "DEBUFF",
-			["source"] = "Churn",
-			["npcID"] = 25418,
-		},
-		[15550] = {
-			["source"] = "Scourged Mammoth",
+		[42870] = {
+			["source"] = "Dragonflayer Invader",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 25452,
+			["npcID"] = 24051,
 		},
-		[67837] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Wormhole",
-			["npcID"] = 35646,
-		},
-		[32064] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Dragonflayer Prisoner",
-			["npcID"] = 24253,
-		},
-		[22888] = {
-			["source"] = "Overlord Runthak",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 173758,
-		},
-		[51777] = {
-			["source"] = "Focus Wizard",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 26816,
-		},
-		[34189] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Loot Crazed Poacher",
-			["npcID"] = 25806,
-		},
-		[14032] = {
-			["source"] = "Gold Priest",
-			["type"] = "DEBUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 32325,
-		},
-		[57724] = {
+		[47996] = {
 			["encounterName"] = "Archavon the Stone Watcher",
-			["type"] = "DEBUFF",
-			["source"] = "Spirit Wolf",
-			["npcID"] = 29264,
-			["event"] = "SPELL_AURA_APPLIED",
+			["source"] = "Oriknash",
+			["npcID"] = 17252,
+			["event"] = "SPELL_CAST_SUCCESS",
 			["encounterID"] = 772,
 		},
-		[47983] = {
-			["source"] = "Unknown",
+		[59254] = {
+			["source"] = "Ymirjar Necromancer",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 28368,
+		},
+		[12550] = {
+			["source"] = "Snowfall Glade Shaman",
 			["type"] = "BUFF",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 416,
+			["npcID"] = 26201,
 		},
-		[38556] = {
+		[51897] = {
+			["source"] = "Dahlia Suntouch",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Kaskala Defender",
-			["npcID"] = 25764,
+			["npcID"] = 27680,
 		},
-		[43664] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Proto-Drake Handler",
-			["npcID"] = 24082,
+		[50361] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Frigid Ghoul",
+			["npcID"] = 27534,
 		},
-		[15572] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Dragonflayer Metalworker",
-			["npcID"] = 24078,
-		},
-		[43935] = {
-			["source"] = "Dragonflayer Bonecrusher",
+		[49172] = {
+			["source"] = "Ymirjar Dusk Shaman",
 			["type"] = "BUFF",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 24069,
+			["npcID"] = 26694,
 		},
-		[57458] = {
+		[59331] = {
+			["encounterName"] = "Skadi the Ruthless",
+			["source"] = "Skadi the Ruthless",
+			["encounterID"] = 581,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26693,
+		},
+		[75447] = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["type"] = "BUFF",
 			["source"] = "Unknown",
 			["npcID"] = 32517,
 		},
-		[43410] = {
+		[49091] = {
+			["encounterName"] = "Skadi the Ruthless",
+			["source"] = "Ymirjar Harpooner",
+			["encounterID"] = 581,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26692,
+		},
+		[38557] = {
 			["source"] = "Dragonflayer Vrykul",
 			["event"] = "SPELL_CAST_SUCCESS",
 			["npcID"] = 23652,
 		},
-		[57984] = {
-			["encounterName"] = "Archavon the Stone Watcher",
-			["source"] = "Greater Fire Elemental",
-			["npcID"] = 15438,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 772,
+		[47257] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Anub'ar Cultist",
+			["npcID"] = 26319,
 		},
-		[57475] = {
+		[31272] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Storm Tempest",
+			["npcID"] = 26045,
+		},
+		[59267] = {
+			["encounterName"] = "Gortok Palehoof",
+			["source"] = "Gortok Palehoof",
+			["encounterID"] = 579,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26687,
+		},
+		[51781] = {
+			["source"] = "Deranged Indu'le Villager",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 26411,
+		},
+		[31807] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Keleth",
+			["npcID"] = 17901,
+		},
+		[1604] = {
+			["source"] = "En'kilah Ghoul",
+			["type"] = "DEBUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 25393,
+		},
+		[59273] = {
+			["encounterName"] = "Gortok Palehoof",
+			["source"] = "Ravenous Furbolg",
+			["encounterID"] = 579,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26684,
+		},
+		[59265] = {
+			["encounterName"] = "Gortok Palehoof",
+			["source"] = "Frenzied Worgen",
+			["encounterID"] = 579,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26683,
+		},
+		[57482] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Cat",
+			["npcID"] = 28097,
+		},
+		[59241] = {
+			["source"] = "Ymirjar Flesh Hunter",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26670,
+		},
+		[59255] = {
+			["source"] = "Ymirjar Necromancer",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 28368,
+		},
+		[53442] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Kili'ua",
+			["npcID"] = 26521,
+		},
+		[25228] = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["type"] = "BUFF",
 			["source"] = "Unknown",
-			["npcID"] = 32517,
-		},
-		[6533] = {
-			["source"] = "Snowfall Glade Wolvar",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 26198,
-		},
-		[42708] = {
-			["encounterName"] = "Ingvar the Plunderer",
-			["source"] = "Ingvar the Plunderer",
-			["encounterID"] = 575,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 23954,
-		},
-		[9128] = {
-			["source"] = "Green Warrior",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 32321,
-		},
-		[42724] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Karen \"I Don't Caribou\" the Culler",
-			["npcID"] = 25803,
-		},
-		[53148] = {
-			["source"] = "Bear",
-			["type"] = "DEBUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 26643,
-		},
-		[46310] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Kaw the Mammoth Destroyer",
-			["npcID"] = 25802,
-		},
-		[50653] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Enslaved Proto-Drake",
-			["npcID"] = 24083,
-		},
-		[35361] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Grove Walker",
-			["npcID"] = 31228,
-		},
-		[15090] = {
-			["source"] = "Green Priest",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 32343,
-		},
-		[42772] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Dragonflayer Strategist",
-			["npcID"] = 23956,
-		},
-		[24259] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "DEBUFF",
-			["source"] = "Zhaadhun",
 			["npcID"] = 417,
 		},
-		[38621] = {
+		[51430] = {
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Proto-Drake Handler",
-			["npcID"] = 24082,
+			["source"] = "Minion of Kaw",
+			["npcID"] = 25880,
 		},
-		[32851] = {
+		[7367] = {
+			["source"] = "Dragonflayer Worg",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 24063,
+		},
+		[59638] = {
 			["encounterName"] = "Archavon the Stone Watcher",
-			["type"] = "BUFF",
-			["source"] = "Oriknash",
-			["npcID"] = 17252,
-			["event"] = "SPELL_AURA_APPLIED",
+			["source"] = "Mirror Image",
+			["npcID"] = 31216,
+			["event"] = "SPELL_CAST_SUCCESS",
 			["encounterID"] = 772,
 		},
 		[46119] = {
@@ -753,310 +1416,23 @@ PlaterDB = {
 			["source"] = "Arch Druid Lathorius",
 			["npcID"] = 25809,
 		},
-		[50207] = {
-			["source"] = "Raging Boiler",
+		[19647] = {
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 25417,
-		},
-		[64495] = {
-			["encounterName"] = "Archavon the Stone Watcher",
-			["type"] = "BUFF",
-			["source"] = "Hiéna",
-			["npcID"] = 17280,
-			["event"] = "SPELL_AURA_APPLIED",
-			["encounterID"] = 772,
-		},
-		[63619] = {
-			["encounterName"] = "Archavon the Stone Watcher",
-			["type"] = "BUFF",
-			["source"] = "Shadowfiend",
-			["npcID"] = 19668,
-			["event"] = "SPELL_AURA_APPLIED",
-			["encounterID"] = 772,
-		},
-		[35696] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["npcID"] = 17252,
-		},
-		[4511] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["npcID"] = 416,
-		},
-		[48972] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Emberwyrm",
-			["npcID"] = 26286,
-		},
-		[11831] = {
-			["source"] = "Curator Insivius",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 25448,
-		},
-		[58678] = {
-			["encounterName"] = "Archavon the Stone Watcher",
-			["source"] = "Archavon the Stone Watcher",
-			["npcID"] = 31125,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 772,
-		},
-		[55491] = {
-			["source"] = "Ricky",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10807,
-		},
-		[43649] = {
-			["encounterName"] = "Skarvold & Dalronn",
-			["source"] = "Dalronn the Controller",
-			["encounterID"] = 573,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 24201,
-		},
-		[47482] = {
-			["encounterName"] = "Archavon the Stone Watcher",
-			["source"] = "Risen Ghoul",
-			["npcID"] = 26125,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 772,
-		},
-		[35250] = {
-			["source"] = "Lieutenant Ta'zinni",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 26815,
-		},
-		[48193] = {
-			["source"] = "Dragonflayer Tribesman",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 23651,
-		},
-		[43936] = {
-			["source"] = "Dragonflayer Bonecrusher",
-			["type"] = "DEBUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 24069,
-		},
-		[42669] = {
-			["encounterName"] = "Ingvar the Plunderer",
-			["source"] = "Ingvar the Plunderer",
-			["encounterID"] = 575,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 23954,
-		},
-		[43187] = {
-			["source"] = "Daggercap Hawk",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 24172,
-		},
-		[50335] = {
-			["source"] = "En'kilah Abomination",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 25383,
-		},
-		[51873] = {
-			["source"] = "Duke Vallenhal",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 26926,
-		},
-		[54431] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Clam Master K",
-			["npcID"] = 25800,
-		},
-		[36589] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Sinewy Wolf",
-			["npcID"] = 31233,
-		},
-		[42972] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Dragonflayer Strategist",
-			["npcID"] = 23956,
-		},
-		[54965] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Dragonflayer Runecaster",
-			["npcID"] = 23960,
-		},
-		[9791] = {
-			["source"] = "Dragonflayer Bonecrusher",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 24069,
-		},
-		[39171] = {
-			["source"] = "Curator Insivius",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 25448,
-		},
-		[47675] = {
-			["source"] = "Arctic Grizzly",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 26482,
-		},
-		[38232] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Dragonflayer Overseer",
-			["npcID"] = 24085,
-		},
-		[12170] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Valgarde Defender",
-			["npcID"] = 23739,
-		},
-		[54962] = {
-			["source"] = "Dragonflayer Strategist",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 23956,
-		},
-		[31272] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Storm Tempest",
-			["npcID"] = 26045,
-		},
-		[60894] = {
-			["encounterName"] = "Archavon the Stone Watcher",
-			["source"] = "Archavon the Stone Watcher",
-			["npcID"] = 31125,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 772,
-		},
-		[49722] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Enslaved Proto-Drake",
-			["npcID"] = 24083,
-		},
-		[53515] = {
-			["source"] = "Ricky",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 10807,
-		},
-		[28993] = {
-			["source"] = "Dahlia Suntouch",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 27680,
-		},
-		[22120] = {
-			["source"] = "Curator Insivius",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 25448,
-		},
-		[31551] = {
-			["source"] = "Proto-Drake Rider",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 24849,
-		},
-		[55077] = {
-			["source"] = "Savage Worg",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 29735,
-		},
-		[46670] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Taunka'le Evacuee",
-			["npcID"] = 26167,
-		},
-		[31600] = {
-			["source"] = "En'kilah Crypt Fiend",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 25386,
-		},
-		[52909] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Librarian Garren",
-			["npcID"] = 25291,
-		},
-		[42723] = {
-			["encounterName"] = "Ingvar the Plunderer",
-			["source"] = "Ingvar the Plunderer",
-			["encounterID"] = 575,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 23954,
-		},
-		[43650] = {
-			["encounterName"] = "Skarvold & Dalronn",
-			["source"] = "Dalronn the Controller",
-			["encounterID"] = 573,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 24201,
-		},
-		[44415] = {
-			["source"] = "Gold Priest",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 32325,
-		},
-		[50655] = {
-			["source"] = "Beryl Mage Hunter",
-			["type"] = "DEBUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 25585,
-		},
-		[38056] = {
-			["source"] = "En'kilah Ghoul",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 25393,
-		},
-		[53480] = {
-			["source"] = "Bear",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 26643,
-		},
-		[51587] = {
-			["source"] = "Dragonflayer Spiritualist",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 28410,
-		},
-		[45985] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Bloodspore Firestarter",
-			["npcID"] = 25470,
-		},
-		[25228] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Unknown",
+			["source"] = "Zhaadhun",
 			["npcID"] = 417,
 		},
-		[51963] = {
-			["source"] = "Ebon Gargoyle",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 27829,
-		},
-		[9080] = {
-			["source"] = "Dragonflayer Thane",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 23660,
-		},
-		[42702] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Tunneling Ghoul",
-			["npcID"] = 24084,
-		},
-		[35570] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Dragonflayer Overseer",
-			["npcID"] = 24085,
-		},
-		[48583] = {
-			["encounterName"] = "Skarvold & Dalronn",
-			["source"] = "Skarvald the Constructor",
-			["encounterID"] = 573,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 24200,
-		},
-		[39586] = {
+		[33625] = {
 			["event"] = "SPELL_CAST_SUCCESS",
 			["source"] = "Gold Shaman",
 			["npcID"] = 32340,
+		},
+		[48142] = {
+			["encounterName"] = "Gortok Palehoof",
+			["type"] = "BUFF",
+			["source"] = "Frenzied Worgen",
+			["encounterID"] = 579,
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 26683,
 		},
 		[11640] = {
 			["source"] = "High Priest Naferset",
@@ -1064,56 +1440,327 @@ PlaterDB = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["npcID"] = 26076,
 		},
-		[7367] = {
-			["source"] = "Dragonflayer Worg",
+		[67834] = {
+			["source"] = "Wormhole",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 24063,
+			["npcID"] = 35646,
+		},
+		[59239] = {
+			["source"] = "Ymirjar Savage",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26669,
+		},
+		[35238] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Withered Bog Lord",
+			["npcID"] = 19402,
+		},
+		[45985] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Bloodspore Firestarter",
+			["npcID"] = 25470,
+		},
+		[13704] = {
+			["source"] = "Gold Priest",
+			["type"] = "DEBUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 32325,
+		},
+		[57567] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Unknown",
+			["npcID"] = 417,
+		},
+		[51009] = {
+			["source"] = "Prince Valanar",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 25601,
+		},
+		[42472] = {
+			["source"] = "Dragonflayer Raider",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 23557,
+		},
+		[20792] = {
+			["source"] = "Captain Emmy Malin",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26762,
+		},
+		[57458] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Unknown",
+			["npcID"] = 32517,
+		},
+		[59081] = {
+			["source"] = "Dragonflayer Seer",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26554,
+		},
+		[34871] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Umbrafen Witchdoctor",
+			["npcID"] = 20115,
+		},
+		[51750] = {
+			["encounterName"] = "King Ymiron",
+			["source"] = "King Ymiron",
+			["encounterID"] = 583,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26861,
+		},
+		[49722] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Enslaved Proto-Drake",
+			["npcID"] = 24083,
+		},
+		[51782] = {
+			["source"] = "Deranged Indu'le Villager",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26411,
+		},
+		[49243] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Wyrmrest Defender",
+			["npcID"] = 27629,
+		},
+		[51777] = {
+			["source"] = "Focus Wizard",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 26816,
+		},
+		[22888] = {
+			["source"] = "Overlord Runthak",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 173758,
+		},
+		[42648] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Warsong Peon",
+			["npcID"] = 27558,
+		},
+		[53425] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Harold Lane",
+			["npcID"] = 25804,
+		},
+		[53432] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Harold Lane",
+			["npcID"] = 25804,
+		},
+		[31600] = {
+			["source"] = "En'kilah Crypt Fiend",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 25386,
+		},
+		[51963] = {
+			["source"] = "Ebon Gargoyle",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 27829,
+		},
+		[15550] = {
+			["source"] = "Scourged Mammoth",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 25452,
+		},
+		[45608] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Spirit Talker Snarlfang",
+			["npcID"] = 25339,
+		},
+		[50335] = {
+			["source"] = "En'kilah Abomination",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 25383,
+		},
+		[17843] = {
+			["source"] = "Green Priest",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 32343,
 		},
 		[27049] = {
 			["source"] = "Bear",
 			["event"] = "SPELL_CAST_SUCCESS",
 			["npcID"] = 26643,
 		},
-		[43291] = {
-			["source"] = "Dragonflayer Berserker",
+		[42780] = {
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 24216,
+			["source"] = "Dragonflayer Ironhelm",
+			["npcID"] = 23961,
 		},
-		[51946] = {
-			["source"] = "Dragonbone Condor",
+		[31664] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Frenzied Gargoyle",
+			["npcID"] = 27691,
+		},
+		[48972] = {
+			["event"] = "SPELL_AURA_APPLIED",
 			["type"] = "BUFF",
+			["source"] = "Emberwyrm",
+			["npcID"] = 26286,
+		},
+		[32191] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Coilfang Observer",
+			["npcID"] = 17938,
+		},
+		[47982] = {
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 26483,
+			["type"] = "BUFF",
+			["source"] = "Garrot",
+			["npcID"] = 416,
 		},
-		[47481] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Toothflayer",
-			["npcID"] = 26125,
-		},
-		[33625] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Gold Shaman",
-			["npcID"] = 32340,
-		},
-		[48400] = {
-			["encounterName"] = "Prince Keleseth",
-			["type"] = "DEBUFF",
-			["source"] = "Frost Tomb",
-			["npcID"] = 23965,
-			["event"] = "SPELL_AURA_APPLIED",
-			["encounterID"] = 571,
-		},
-		[38557] = {
-			["source"] = "Dragonflayer Vrykul",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 23652,
-		},
-		[61676] = {
+		[53401] = {
 			["encounterName"] = "Archavon the Stone Watcher",
+			["type"] = "BUFF",
 			["source"] = "Hiéna",
 			["npcID"] = 17280,
+			["event"] = "SPELL_AURA_APPLIED",
+			["encounterID"] = 772,
+		},
+		[39171] = {
+			["source"] = "Curator Insivius",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 25448,
+		},
+		[70893] = {
+			["encounterName"] = "Archavon the Stone Watcher",
+			["type"] = "BUFF",
+			["source"] = "Hiéna",
+			["npcID"] = 17280,
+			["event"] = "SPELL_AURA_APPLIED",
+			["encounterID"] = 772,
+		},
+		[72898] = {
+			["source"] = "Water Elemental",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 37994,
+		},
+		[67838] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Wormhole",
+			["npcID"] = 35646,
+		},
+		[63900] = {
+			["source"] = "Freaky",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 3099,
+		},
+		[11971] = {
+			["source"] = "Dragonflayer Thane",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 23660,
+		},
+		[30219] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Chinilraksha",
+			["npcID"] = 17252,
+		},
+		[57475] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Unknown",
+			["npcID"] = 32517,
+		},
+		[64494] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Wolf",
+			["npcID"] = 25791,
+		},
+		[23600] = {
+			["source"] = "Gold Warrior",
+			["type"] = "DEBUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 32322,
+		},
+		[11820] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Indu'le Fisherman",
+			["npcID"] = 26343,
+		},
+		[58921] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Father Kamaros",
+			["npcID"] = 32800,
+		},
+		[17883] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Coilfang Observer",
+			["npcID"] = 17938,
+		},
+		[43665] = {
+			["source"] = "Dragonflayer Heartsplitter",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 24071,
+		},
+		[32919] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Sinewy Wolf",
+			["npcID"] = 31233,
+		},
+		[49241] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Ruby Watcher",
+			["npcID"] = 27542,
+		},
+		[23145] = {
+			["source"] = "Unknown",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 10807,
+		},
+		[13446] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Tunneling Ghoul",
+			["npcID"] = 24084,
+		},
+		[58867] = {
+			["encounterName"] = "Archavon the Stone Watcher",
+			["source"] = "Spirit Wolf",
+			["npcID"] = 29264,
 			["event"] = "SPELL_CAST_SUCCESS",
 			["encounterID"] = 772,
+		},
+		[38232] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Dragonflayer Overseer",
+			["npcID"] = 24085,
+		},
+		[9672] = {
+			["source"] = "Naxxanar Skeletal Mage",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 25396,
+		},
+		[42729] = {
+			["encounterName"] = "Ingvar the Plunderer",
+			["source"] = "Ingvar the Plunderer",
+			["encounterID"] = 575,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 23954,
+		},
+		[12470] = {
+			["encounterName"] = "Archavon the Stone Watcher",
+			["source"] = "Greater Fire Elemental",
+			["npcID"] = 15438,
+			["event"] = "SPELL_CAST_SUCCESS",
+			["encounterID"] = 772,
+		},
+		[32063] = {
+			["source"] = "En'kilah Necromancer",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 25378,
 		},
 		[61684] = {
 			["encounterName"] = "Archavon the Stone Watcher",
@@ -1123,250 +1770,39 @@ PlaterDB = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["encounterID"] = 772,
 		},
-		[53532] = {
-			["source"] = "Bear",
+		[9053] = {
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 26643,
+			["source"] = "Naxxanar Skeletal Mage",
+			["npcID"] = 25396,
 		},
-		[13704] = {
-			["source"] = "Gold Priest",
-			["type"] = "DEBUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 32325,
-		},
-		[55078] = {
-			["encounterName"] = "Archavon the Stone Watcher",
-			["type"] = "DEBUFF",
-			["source"] = "Rune Weapon",
-			["npcID"] = 27893,
-			["event"] = "SPELL_AURA_APPLIED",
-			["encounterID"] = 772,
-		},
-		[35706] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["npcID"] = 17252,
-		},
-		[51779] = {
-			["source"] = "Focus Wizard",
+		[48697] = {
+			["source"] = "Scourge Hulk",
 			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 26816,
+			["npcID"] = 26555,
 		},
-		[51897] = {
-			["source"] = "Dahlia Suntouch",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 27680,
-		},
-		[42870] = {
-			["source"] = "Dragonflayer Invader",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 24051,
-		},
-		[47468] = {
-			["encounterName"] = "Archavon the Stone Watcher",
-			["source"] = "Risen Ghoul",
-			["npcID"] = 26125,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 772,
-		},
-		[43651] = {
-			["encounterName"] = "Skarvold & Dalronn",
-			["source"] = "Skarvald the Constructor",
-			["encounterID"] = 573,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 24200,
-		},
-		[47994] = {
-			["encounterName"] = "Archavon the Stone Watcher",
-			["source"] = "Oriknash",
-			["npcID"] = 17252,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 772,
-		},
-		[43667] = {
-			["encounterName"] = "Prince Keleseth",
-			["source"] = "Prince Keleseth",
-			["npcID"] = 23953,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 571,
-		},
-		[12550] = {
-			["source"] = "Snowfall Glade Shaman",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 26201,
-		},
-		[42780] = {
+		[57846] = {
 			["event"] = "SPELL_CAST_SUCCESS",
 			["source"] = "Dragonflayer Ironhelm",
 			["npcID"] = 23961,
 		},
-		[51944] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Injured Mammoth",
-			["npcID"] = 26711,
-		},
-		[49309] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Gold Shaman",
-			["npcID"] = 32340,
-		},
-		[49317] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Azure Drake",
-			["npcID"] = 27682,
-		},
-		[51875] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Tundra Scavenger",
-			["npcID"] = 27294,
-		},
-		[43665] = {
-			["source"] = "Dragonflayer Heartsplitter",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 24071,
-		},
-		[50361] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "DEBUFF",
-			["source"] = "Frigid Ghoul",
-			["npcID"] = 27534,
-		},
-		[51899] = {
-			["source"] = "Dahlia Suntouch",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 27680,
-		},
-		[42472] = {
-			["source"] = "Dragonflayer Raider",
+		[48276] = {
+			["encounterName"] = "Svala Sorrowgrave",
 			["type"] = "BUFF",
+			["source"] = "Svala Sorrowgrave",
+			["encounterID"] = 577,
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 23557,
+			["npcID"] = 26668,
 		},
-		[49110] = {
+		[50522] = {
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Wyrmrest Guardian",
-			["npcID"] = 26933,
+			["source"] = "Gorloc Mud Splasher",
+			["npcID"] = 25699,
 		},
-		[15786] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Gold Shaman",
-			["npcID"] = 32340,
-		},
-		[56521] = {
-			["source"] = "Freed Crusader",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 30274,
-		},
-		[64494] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Wolf",
-			["npcID"] = 25791,
-		},
-		[9672] = {
-			["source"] = "Naxxanar Skeletal Mage",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 25396,
-		},
-		[60880] = {
-			["encounterName"] = "Archavon the Stone Watcher",
-			["source"] = "Archavon the Stone Watcher",
-			["npcID"] = 31125,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 772,
-		},
-		[52473] = {
-			["source"] = "Ricky",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 10807,
-		},
-		[14514] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Gold Mage",
-			["npcID"] = 32341,
-		},
-		[40504] = {
-			["source"] = "En'kilah Abomination",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 25383,
-		},
-		[59637] = {
-			["encounterName"] = "Archavon the Stone Watcher",
-			["source"] = "Mirror Image",
-			["npcID"] = 31216,
-			["event"] = "SPELL_CAST_SUCCESS",
-			["encounterID"] = 772,
-		},
-		[61685] = {
-			["source"] = "Bear",
-			["type"] = "BUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 26643,
-		},
-		[38233] = {
-			["source"] = "Jlarborn the Strategist",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 24215,
-		},
-		[15043] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Gold Mage",
-			["npcID"] = 32341,
-		},
-		[9613] = {
-			["source"] = "En'kilah Necromancer",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 25378,
-		},
-		[23145] = {
+		[47983] = {
 			["source"] = "Unknown",
 			["type"] = "BUFF",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 10807,
-		},
-		[55860] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Shoveltusk Stag",
-			["npcID"] = 23691,
-		},
-		[32588] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Heigarr the Horrible",
-			["npcID"] = 26266,
-		},
-		[31827] = {
-			["source"] = "Valgarde Defender",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 23739,
-		},
-		[45987] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Bloodspore Harvester",
-			["npcID"] = 25467,
-		},
-		[20615] = {
-			["source"] = "Gold Warrior",
-			["type"] = "DEBUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 32322,
-		},
-		[29544] = {
-			["source"] = "Gold Warrior",
-			["type"] = "DEBUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 32322,
-		},
-		[23600] = {
-			["source"] = "Gold Warrior",
-			["type"] = "DEBUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 32322,
+			["npcID"] = 416,
 		},
 		[54131] = {
 			["encounterName"] = "Archavon the Stone Watcher",
@@ -1376,10 +1812,19 @@ PlaterDB = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["encounterID"] = 772,
 		},
-		[15659] = {
-			["source"] = "Storm Tempest",
-			["event"] = "SPELL_CAST_SUCCESS",
-			["npcID"] = 26045,
+		[57724] = {
+			["encounterName"] = "Archavon the Stone Watcher",
+			["type"] = "DEBUFF",
+			["source"] = "Spirit Wolf",
+			["npcID"] = 29264,
+			["event"] = "SPELL_AURA_APPLIED",
+			["encounterID"] = 772,
+		},
+		[45987] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Bloodspore Harvester",
+			["npcID"] = 25467,
 		},
 		[19615] = {
 			["source"] = "Bear",
@@ -1387,27 +1832,207 @@ PlaterDB = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["npcID"] = 26643,
 		},
-		[49111] = {
+		[59305] = {
+			["encounterName"] = "King Ymiron",
+			["source"] = "King Ymiron",
+			["encounterID"] = 583,
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Azure Dragon",
-			["npcID"] = 27608,
+			["npcID"] = 26861,
 		},
-		[59008] = {
+		[59246] = {
+			["encounterName"] = "Skadi the Ruthless",
+			["source"] = "Ymirjar Witch Doctor",
+			["encounterID"] = 581,
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Sinewy Wolf",
-			["npcID"] = 31233,
+			["npcID"] = 26691,
 		},
-		[75446] = {
+		[38064] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Fordragon Battle Mage",
+			["npcID"] = 27695,
+		},
+		[35336] = {
+			["source"] = "Young Sporebat",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 20387,
+		},
+		[35570] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Dragonflayer Overseer",
+			["npcID"] = 24085,
+		},
+		[64495] = {
+			["encounterName"] = "Archavon the Stone Watcher",
+			["type"] = "BUFF",
+			["source"] = "Hiéna",
+			["npcID"] = 17280,
+			["event"] = "SPELL_AURA_APPLIED",
+			["encounterID"] = 772,
+		},
+		[32610] = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["npcID"] = 4397,
+			["source"] = "Horde Field Scout",
+			["npcID"] = 18564,
 		},
-		[51781] = {
-			["source"] = "Deranged Indu'le Villager",
+		[54965] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Dragonflayer Runecaster",
+			["npcID"] = 23960,
+		},
+		[48702] = {
+			["source"] = "Dragonflayer Fanatic",
 			["type"] = "BUFF",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 26411,
+			["npcID"] = 26553,
+		},
+		[15532] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Gold Mage",
+			["npcID"] = 32341,
+		},
+		[15537] = {
+			["source"] = "Prince Valanar",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 25601,
+		},
+		[32019] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Marsh Caribou",
+			["npcID"] = 25680,
+		},
+		[44415] = {
+			["source"] = "Gold Priest",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 32325,
+		},
+		[48616] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Burning Depths Necrolyte",
+			["npcID"] = 27356,
+		},
+		[49309] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Gold Shaman",
+			["npcID"] = 32340,
+		},
+		[31540] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Angrathar Aberration",
+			["npcID"] = 27631,
+		},
+		[54962] = {
+			["source"] = "Dragonflayer Strategist",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 23956,
+		},
+		[14032] = {
+			["source"] = "Gold Priest",
+			["type"] = "DEBUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 32325,
+		},
+		[41440] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Nedar, Lord of Rhinos",
+			["npcID"] = 25801,
+		},
+		[51944] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Injured Mammoth",
+			["npcID"] = 26711,
+		},
+		[61672] = {
+			["encounterName"] = "Archavon the Stone Watcher",
+			["type"] = "DEBUFF",
+			["source"] = "Archavon the Stone Watcher",
+			["npcID"] = 31125,
+			["event"] = "SPELL_AURA_APPLIED",
+			["encounterID"] = 772,
+		},
+		[61685] = {
+			["source"] = "Bear",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 26643,
+		},
+		[27050] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Wolf",
+			["npcID"] = 25791,
+		},
+		[54052] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Zhaadhun",
+			["npcID"] = 417,
+		},
+		[27577] = {
+			["source"] = "Gold Warrior",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 32322,
+		},
+		[35235] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Withered Bog Lord",
+			["npcID"] = 19402,
+		},
+		[12024] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Darkspear Spear Thrower",
+			["npcID"] = 27560,
+		},
+		[6533] = {
+			["source"] = "Snowfall Glade Wolvar",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26198,
+		},
+		[14514] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Gold Mage",
+			["npcID"] = 32341,
+		},
+		[58747] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Dragonflayer Invader",
+			["npcID"] = 24051,
+		},
+		[35244] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Starving Fungal Giant",
+			["npcID"] = 18125,
+		},
+		[35273] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Fungal Giant",
+			["npcID"] = 19734,
+		},
+		[32077] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Bog Lord",
+			["npcID"] = 18127,
+		},
+		[59322] = {
+			["encounterName"] = "Skadi the Ruthless",
+			["type"] = "BUFF",
+			["source"] = "Skadi the Ruthless",
+			["encounterID"] = 581,
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 26693,
+		},
+		[46315] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Wooly Mammoth Bull",
+			["npcID"] = 25743,
 		},
 	},
 	["captured_casts"] = {
@@ -15195,21 +15820,21 @@ PlaterDB = {
 					"Wildspawn Hellcaller", -- [1]
 					"Dire Maul", -- [2]
 				},
-				[6487] = {
-					"Arcanist Doan", -- [1]
-					"Scarlet Monastery", -- [2]
+				[4440] = {
+					"Razorfen Totemic", -- [1]
+					"Razorfen Kraul", -- [2]
 				},
 				[4424] = {
 					"Aggem Thorncurse", -- [1]
 					"Razorfen Kraul", -- [2]
 				},
-				[8876] = {
-					"Sandfury Acolyte", -- [1]
-					"Zul'Farrak", -- [2]
+				[27979] = {
+					"Forged Iron Trogg", -- [1]
+					"Halls of Stone", -- [2]
 				},
-				[4440] = {
-					"Razorfen Totemic", -- [1]
-					"Razorfen Kraul", -- [2]
+				[6487] = {
+					"Arcanist Doan", -- [1]
+					"Scarlet Monastery", -- [2]
 				},
 				[8892] = {
 					"Anvilrage Footman", -- [1]
@@ -15231,9 +15856,9 @@ PlaterDB = {
 					"Tortured Skeleton", -- [1]
 					"Auchindoun: Shadow Labyrinth", -- [2]
 				},
-				[27979] = {
-					"Forged Iron Trogg", -- [1]
-					"Halls of Stone", -- [2]
+				[8876] = {
+					"Sandfury Acolyte", -- [1]
+					"Zul'Farrak", -- [2]
 				},
 				[11518] = {
 					"Jergosh the Invoker", -- [1]
@@ -16107,7 +16732,7 @@ PlaterDB = {
 				["y"] = 15.5,
 				["side"] = 7,
 			},
-			["aura_alpha"] = 1,
+			["cast_statusbar_texture"] = "Melli",
 			["auto_toggle_friendly"] = {
 				["cities"] = false,
 				["world"] = false,
@@ -16200,7 +16825,7 @@ PlaterDB = {
 				["nameplateTargetRadialPosition"] = "1",
 				["nameplateShowFriendlyPets"] = "0",
 			},
-			["login_counter"] = 4545,
+			["login_counter"] = 4566,
 			["extra_icon_caster_name"] = false,
 			["aura_cooldown_show_swipe"] = false,
 			["show_aggro_flash"] = true,
@@ -17893,9 +18518,6 @@ PlaterDB = {
 					["Prio"] = 99,
 					["Name"] = "M+ Bwonsamdi Reaping",
 					["PlaterCore"] = 1,
-					["LastHookEdited"] = "Constructor",
-					["Time"] = 1579030189,
-					["Icon"] = 2446016,
 					["LoadConditions"] = {
 						["talent"] = {
 						},
@@ -17922,6 +18544,9 @@ PlaterDB = {
 						["spec"] = {
 						},
 					},
+					["Time"] = 1579030189,
+					["Icon"] = 2446016,
+					["LastHookEdited"] = "Constructor",
 				}, -- [15]
 				{
 					["Enabled"] = false,
@@ -24280,7 +24905,7 @@ PlaterDB = {
 			["castbar_target_anchor"] = {
 				["side"] = 11,
 			},
-			["cast_statusbar_texture"] = "Melli",
+			["aura_alpha"] = 1,
 			["extra_icon_height"] = 28,
 			["auto_toggle_stacking"] = {
 				["party"] = false,

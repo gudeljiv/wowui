@@ -1061,7 +1061,7 @@ function NIT:recalcLockoutsFrame()
 	lockoutsFrame:SetHeight(lockoutsFrame.fs2:GetStringHeight() + 40);
 end
 
-local NITInstanceFrame = CreateFrame("ScrollFrame", "NITInstanceFrame", UIParent, NIT:addBackdrop("InputScrollFrameTemplate"));
+local NITInstanceFrame = CreateFrame("ScrollFrame", "NITInstanceFrame", UIParent, NIT:addBackdrop("NIT_InputScrollFrameTemplate"));
 local instanceFrameWidth = 620;
 NITInstanceFrame:Hide();
 NITInstanceFrame:SetToplevel(true);
@@ -1090,15 +1090,15 @@ NITInstanceFrame:HookScript("OnUpdate", function(self, arg)
 		NIT:recalcInstanceLineFrames();
 	end
 end)
---NITInstanceFrame.fsCalc = NITInstanceFrame:CreateFontString("NITInstanceFrameFSCalc", "LOW");
+--NITInstanceFrame.fsCalc = NITInstanceFrame:CreateFontString("NITInstanceFrameFSCalc", "ARTWORK");
 --NITInstanceFrame.fsCalc:SetFont(NIT.regionFont, 14);
-NITInstanceFrame.fs = NITInstanceFrame.EditBox:CreateFontString("NITInstanceFrameFS", "HIGH");
+NITInstanceFrame.fs = NITInstanceFrame.EditBox:CreateFontString("NITInstanceFrameFS", "ARTWORK");
 NITInstanceFrame.fs:SetPoint("TOP", 0, -0);
 NITInstanceFrame.fs:SetFont(NIT.regionFont, 14);
-NITInstanceFrame.fs2 = NITInstanceFrame:CreateFontString("NITInstanceFrameFS", "HIGH");
+NITInstanceFrame.fs2 = NITInstanceFrame:CreateFontString("NITInstanceFrameFS", "ARTWORK");
 NITInstanceFrame.fs2:SetPoint("TOPLEFT", 0, -14);
 NITInstanceFrame.fs2:SetFont(NIT.regionFont, 14);
-NITInstanceFrame.fs3 = NITInstanceFrame:CreateFontString("NITbuffListFrameFS", "HIGH");
+NITInstanceFrame.fs3 = NITInstanceFrame:CreateFontString("NITbuffListFrameFS", "ARTWORK");
 NITInstanceFrame.fs3:SetPoint("BOTTOM", 0, -20);
 NITInstanceFrame.fs3:SetFont(NIT.regionFont, 14);
 
@@ -1114,7 +1114,7 @@ NITInstanceDragFrame.tooltip:SetPoint("CENTER", NITInstanceDragFrame, "TOP", 0, 
 NITInstanceDragFrame.tooltip:SetFrameStrata("TOOLTIP");
 NITInstanceDragFrame.tooltip:SetFrameLevel(9);
 NITInstanceDragFrame.tooltip:SetAlpha(.8);
-NITInstanceDragFrame.tooltip.fs = NITInstanceDragFrame.tooltip:CreateFontString("NITInstanceDragTooltipFS", "HIGH");
+NITInstanceDragFrame.tooltip.fs = NITInstanceDragFrame.tooltip:CreateFontString("NITInstanceDragTooltipFS", "ARTWORK");
 NITInstanceDragFrame.tooltip.fs:SetPoint("CENTER", 0, 0.5);
 NITInstanceDragFrame.tooltip.fs:SetFont(NIT.regionFont, 12);
 NITInstanceDragFrame.tooltip.fs:SetText("Hold to drag");
@@ -1480,7 +1480,7 @@ function NIT:openInstanceLogFrame()
 		NITInstanceFrame:SetHeight(NIT.db.global.instanceWindowHeight);
 		NITInstanceFrame:SetWidth(NIT.db.global.instanceWindowWidth);
 		local fontSize = false;
-		NITInstanceFrame.EditBox:SetFont(NIT.regionFont, 14);
+		NITInstanceFrame.EditBox:SetFont(NIT.regionFont, 14, "");
 		NITInstanceFrame.EditBox:SetWidth(NITInstanceFrame:GetWidth() - 30);
 		NITInstanceFrame:Show();
 		--Changing scroll position requires a slight delay.
@@ -1523,7 +1523,7 @@ function NIT:createInstanceLineFrame(type, data, count)
 		obj.count = count;
 		--Keep track of the real instance ID and not just the frame count for use with tooltip data etc.
 		obj.id = count;
-		local bg = obj:CreateTexture(nil, "HIGH");
+		local bg = obj:CreateTexture(nil, "ARTWORK");
 		bg:SetAllPoints(obj);
 		obj.texture = bg;
 		obj.fs = obj:CreateFontString(type .. "NITInstanceLineFS", "ARTWORK");
@@ -1604,7 +1604,7 @@ end
 function NIT:createTitleInstanceLineFrame()
 	if (not _G["titleNITInstanceLine"]) then
 		local obj = CreateFrame("Frame", "titleNITInstanceLine", NITInstanceFrame.EditBox);
-		local bg = obj:CreateTexture(nil, "HIGH");
+		local bg = obj:CreateTexture(nil, "ARTWORK");
 		bg:SetAllPoints(obj);
 		obj.texture = bg;
 		obj.fs = obj:CreateFontString("titleNITInstanceLineFS", "ARTWORK");
@@ -1970,7 +1970,9 @@ function NIT:recalcInstanceLineFramesTooltip(obj)
 					text = text .. "\n\n|cFFB75EFFPurple Team|r";
 					local _, first = next(data.purpleTeam);
 					if (first) then
-						text = text .. "  (|cFFB75EFF" .. first.teamName .. "|r)";
+						if (NIT.isTBC) then
+							text = text .. "  (|cFFB75EFF" .. first.teamName .. "|r)";
+						end
 						local delta = first.newTeamRating - first.teamRating;
 						if (delta > 0) then
 							delta = "+" .. delta;
@@ -1999,7 +2001,9 @@ function NIT:recalcInstanceLineFramesTooltip(obj)
 					text = text .. "\n\n|cFFFFD101Gold Team|r";
 					local _, first = next(data.goldTeam);
 					if (first) then
-						text = text .. "  (|cFFFFD101" .. first.teamName .. "|r)";
+						if (NIT.isTBC) then
+							text = text .. "  (|cFFFFD101" .. first.teamName .. "|r)";
+						end
 						local delta = first.newTeamRating - first.teamRating;
 						if (delta > 0) then
 							delta = "+" .. delta;
@@ -2218,7 +2222,7 @@ function NIT:getAltLockoutString(char)
 	return msg;
 end
 
-local NITInstanceFrameDeleteConfirm = CreateFrame("ScrollFrame", "NITInstanceFrameDC", UIParent, NIT:addBackdrop("InputScrollFrameTemplate"));
+local NITInstanceFrameDeleteConfirm = CreateFrame("ScrollFrame", "NITInstanceFrameDC", UIParent, NIT:addBackdrop("NIT_InputScrollFrameTemplate"));
 NITInstanceFrameDeleteConfirm:Hide();
 NITInstanceFrameDeleteConfirm:SetToplevel(true);
 NITInstanceFrameDeleteConfirm:SetHeight(130);
@@ -2243,7 +2247,7 @@ NITInstanceFrameDeleteConfirm.EditBox:SetScript("OnHide", function(self, arg)
 	NITInstanceFrameDCDelete:SetScript("OnClick", function(self, arg) end);
 end)
 
-NITInstanceFrameDeleteConfirm.fs = NITInstanceFrameDeleteConfirm:CreateFontString("NITInstanceFrameFS", "HIGH");
+NITInstanceFrameDeleteConfirm.fs = NITInstanceFrameDeleteConfirm:CreateFontString("NITInstanceFrameFS", "ARTWORK");
 NITInstanceFrameDeleteConfirm.fs:SetPoint("TOP", 0, -4);
 NITInstanceFrameDeleteConfirm.fs:SetFont(NIT.regionFont, 14);
 NITInstanceFrameDeleteConfirm.fs:SetText("Instance data missing");
@@ -2333,7 +2337,7 @@ function NIT:openDeleteConfirmFrame(num, displayNum)
 end
 
 ---Trade Log---
-local NITTradeLogFrame = CreateFrame("ScrollFrame", "NITTradeLogFrame", UIParent, NIT:addBackdrop("InputScrollFrameTemplate"));
+local NITTradeLogFrame = CreateFrame("ScrollFrame", "NITTradeLogFrame", UIParent, NIT:addBackdrop("NIT_InputScrollFrameTemplate"));
 NITTradeLogFrame:Hide();
 NITTradeLogFrame:SetToplevel(true);
 NITTradeLogFrame:SetMovable(true);
@@ -2346,7 +2350,7 @@ NITTradeLogFrame.CharCount:Hide();
 --NITTradeLogFrame:SetFrameLevel(128);
 NITTradeLogFrame:SetFrameStrata("MEDIUM");
 NITTradeLogFrame.EditBox:SetAutoFocus(false);
-NITTradeLogFrame.EditBox:SetFont(NIT.regionFont, 10);
+NITTradeLogFrame.EditBox:SetFont(NIT.regionFont, 10, "");
 NITTradeLogFrame.EditBox:SetScript("OnKeyDown", function(self, arg)
 	NITTradeLogFrame.EditBox:ClearFocus();
 end)
@@ -2360,7 +2364,7 @@ NITTradeLogFrame:HookScript("OnUpdate", function(self, arg)
 		buffUpdateTime = GetServerTime();
 	end
 end)
-NITTradeLogFrame.fs = NITTradeLogFrame.EditBox:CreateFontString("NITTradeLogFrameFS", "HIGH");
+NITTradeLogFrame.fs = NITTradeLogFrame.EditBox:CreateFontString("NITTradeLogFrameFS", "ARTWORK");
 NITTradeLogFrame.fs:SetPoint("TOP", 0, 0);
 NITTradeLogFrame.fs:SetFont(NIT.regionFont, 14);
 
@@ -2375,7 +2379,7 @@ NITTradeLogDragFrame.tooltip:SetPoint("CENTER", NITTradeLogDragFrame, "TOP", 0, 
 NITTradeLogDragFrame.tooltip:SetFrameStrata("TOOLTIP");
 NITTradeLogDragFrame.tooltip:SetFrameLevel(9);
 NITTradeLogDragFrame.tooltip:SetAlpha(.8);
-NITTradeLogDragFrame.tooltip.fs = NITTradeLogDragFrame.tooltip:CreateFontString("NITTradeLogDragTooltipFS", "HIGH");
+NITTradeLogDragFrame.tooltip.fs = NITTradeLogDragFrame.tooltip:CreateFontString("NITTradeLogDragTooltipFS", "ARTWORK");
 NITTradeLogDragFrame.tooltip.fs:SetPoint("CENTER", 0, 0.5);
 NITTradeLogDragFrame.tooltip.fs:SetFont(NIT.regionFont, 13);
 NITTradeLogDragFrame.tooltip.fs:SetText("Hold to drag");
@@ -2464,7 +2468,7 @@ function NIT:openTradeLogFrame()
 		NITTradeLogFrame:SetHeight(NIT.db.global.tradeWindowHeight);
 		NITTradeLogFrame:SetWidth(NIT.db.global.tradeWindowWidth);
 		local fontSize = false
-		NITTradeLogFrame.EditBox:SetFont(NIT.regionFont, 13);
+		NITTradeLogFrame.EditBox:SetFont(NIT.regionFont, 13, "");
 		NIT:recalcTradeLogFrame();
 		NITTradeLogFrame.EditBox:SetWidth(NITTradeLogFrame:GetWidth() - 30);
 		NITTradeLogFrame:Show();
@@ -2534,7 +2538,7 @@ function NIT:resetTradeData()
 end
 
 --Copy Paste.
-local NITTradeCopyFrame = CreateFrame("ScrollFrame", "NITTradeCopyFrame", UIParent, NIT:addBackdrop("InputScrollFrameTemplate"));
+local NITTradeCopyFrame = CreateFrame("ScrollFrame", "NITTradeCopyFrame", UIParent, NIT:addBackdrop("NIT_InputScrollFrameTemplate"));
 NITTradeCopyFrame:Hide();
 NITTradeCopyFrame:SetToplevel(true);
 NITTradeCopyFrame:SetMovable(true);
@@ -2574,7 +2578,7 @@ NITTradeCopyDragFrame:SetBackdrop({
 });
 NITTradeCopyDragFrame:SetBackdropColor(0,0,0,0.9);
 NITTradeCopyDragFrame:SetBackdropBorderColor(0.235, 0.235, 0.235);
-NITTradeCopyDragFrame.fs = NITTradeCopyDragFrame:CreateFontString("NITTradeCopyDragFrameFS", "HIGH");
+NITTradeCopyDragFrame.fs = NITTradeCopyDragFrame:CreateFontString("NITTradeCopyDragFrameFS", "ARTWORK");
 --NITTradeCopyDragFrame.fs:SetPoint("CENTER", 0, 0);
 NITTradeCopyDragFrame.fs:SetPoint("TOP", 0, -5);
 NITTradeCopyDragFrame.fs:SetFont(NIT.regionFont, 14);
@@ -2789,7 +2793,7 @@ function NIT:openTradeCopyFrame()
 	else
 		NITTradeCopyFrame:SetHeight(NIT.db.global.tradeWindowHeight + 5.5);
 		NITTradeCopyFrame:SetWidth(NIT.db.global.tradeWindowWidth);
-		NITTradeCopyFrame.EditBox:SetFont(NIT.regionFont, 14);
+		NITTradeCopyFrame.EditBox:SetFont(NIT.regionFont, 14, "");
 		NITTradeCopyFrame.EditBox:SetWidth(NITTradeCopyFrame:GetWidth() - 30);
 		NIT.copyTradeRecordsSlider.editBox:SetText(NIT.db.global.copyTradeRecords);
 		NITTradeCopyFrame:Show();
@@ -2913,7 +2917,7 @@ function NIT:calcRested(currentXP, maxXP, time, resting, restedXP, online)
 	return percent, bubbles, totalRestedXP;
 end
 
-local NITAltsFrame = CreateFrame("ScrollFrame", "NITAltsFrame", UIParent, NIT:addBackdrop("InputScrollFrameTemplate"));
+local NITAltsFrame = CreateFrame("ScrollFrame", "NITAltsFrame", UIParent, NIT:addBackdrop("NIT_InputScrollFrameTemplate"));
 local altsFrameWidth = 550;
 NITAltsFrame:Hide();
 NITAltsFrame:SetToplevel(true);
@@ -2942,7 +2946,7 @@ NITAltsFrame:HookScript("OnUpdate", function(self, arg)
 		NIT:recalcAltsLineFrames();
 	end
 end)
-NITAltsFrame.fs = NITAltsFrame.EditBox:CreateFontString("NITAltsFrameFS", "HIGH");
+NITAltsFrame.fs = NITAltsFrame.EditBox:CreateFontString("NITAltsFrameFS", "ARTWORK");
 NITAltsFrame.fs:SetPoint("TOP", 0, -0);
 NITAltsFrame.fs:SetFont(NIT.regionFont, 14);
 
@@ -2958,7 +2962,7 @@ NITAltsDragFrame.tooltip:SetPoint("CENTER", NITAltsDragFrame, "TOP", 0, 12);
 NITAltsDragFrame.tooltip:SetFrameStrata("TOOLTIP");
 NITAltsDragFrame.tooltip:SetFrameLevel(9);
 NITAltsDragFrame.tooltip:SetAlpha(.8);
-NITAltsDragFrame.tooltip.fs = NITAltsDragFrame.tooltip:CreateFontString("NITAltsDragTooltipFS", "HIGH");
+NITAltsDragFrame.tooltip.fs = NITAltsDragFrame.tooltip:CreateFontString("NITAltsDragTooltipFS", "ARTWORK");
 NITAltsDragFrame.tooltip.fs:SetPoint("CENTER", 0, 0.5);
 NITAltsDragFrame.tooltip.fs:SetFont(NIT.regionFont, 12);
 NITAltsDragFrame.tooltip.fs:SetText("Hold to drag");
@@ -3125,7 +3129,7 @@ function NIT:openAltsFrame()
 		NITAltsFrame:SetHeight(NIT.db.global.charsWindowHeight);
 		NITAltsFrame:SetWidth(NIT.db.global.charsWindowWidth);
 		local fontSize = false;
-		NITAltsFrame.EditBox:SetFont(NIT.regionFont, 14);
+		NITAltsFrame.EditBox:SetFont(NIT.regionFont, 14, "");
 		NITAltsFrame.EditBox:SetWidth(NITAltsFrame:GetWidth() - 30);
 		NITAltsFrame:Show();
 		NIT.charsMinLevelSlider.editBox:SetText(NIT.db.global.charsMinLevel);
@@ -3183,7 +3187,7 @@ function NIT:createAltsLineFrame(type, data, count)
 		local obj = CreateFrame("Frame", type .. "NITAltsLine", NITAltsFrame.EditBox);
 		obj.name = data.name;
 		obj.count = count;
-		local bg = obj:CreateTexture(nil, "HIGH");
+		local bg = obj:CreateTexture(nil, "ARTWORK");
 		bg:SetAllPoints(obj);
 		obj.texture = bg;
 		obj.fs = obj:CreateFontString(type .. "NITAltsLineFS", "ARTWORK");
@@ -3872,7 +3876,7 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 	obj.tooltip:SetHeight(obj.tooltip.fs:GetStringHeight() + 12);
 end
 
-local NITCharsFrameDeleteConfirm = CreateFrame("ScrollFrame", "NITCharsFrameDC", UIParent, NIT:addBackdrop("InputScrollFrameTemplate"));
+local NITCharsFrameDeleteConfirm = CreateFrame("ScrollFrame", "NITCharsFrameDC", UIParent, NIT:addBackdrop("NIT_InputScrollFrameTemplate"));
 NITCharsFrameDeleteConfirm:Hide();
 NITCharsFrameDeleteConfirm:SetToplevel(true);
 NITCharsFrameDeleteConfirm:SetHeight(130);
@@ -3897,7 +3901,7 @@ NITCharsFrameDeleteConfirm.EditBox:SetScript("OnHide", function(self, arg)
 	NITCharsFrameDCDelete:SetScript("OnClick", function(self, arg) end);
 end)
 
-NITCharsFrameDeleteConfirm.fs = NITCharsFrameDeleteConfirm:CreateFontString("NITCharsFrameFS", "HIGH");
+NITCharsFrameDeleteConfirm.fs = NITCharsFrameDeleteConfirm:CreateFontString("NITCharsFrameFS", "ARTWORK");
 NITCharsFrameDeleteConfirm.fs:SetPoint("TOP", 0, -4);
 NITCharsFrameDeleteConfirm.fs:SetFont(NIT.regionFont, 14);
 NITCharsFrameDeleteConfirm.fs:SetText("Character data missing");
@@ -4115,10 +4119,10 @@ function NIT:createSimpleTextFrame(name, width, height, x, y, borderSpacing)
 	frame:SetFrameLevel(10);
 	frame:SetClampedToScreen(true);
 	frame:SetPoint("TOP", UIParent, "CENTER", x, y);
-	frame.fs = frame:CreateFontString(name .. "FS", "HIGH");
+	frame.fs = frame:CreateFontString(name .. "FS", "ARTWORK");
 	frame.fs:SetPoint("TOP", 0, -3);
 	frame.fs:SetFont(NIT.regionFont, 14);
-	frame.fs2 = frame:CreateFontString(name .. "FS", "HIGH");
+	frame.fs2 = frame:CreateFontString(name .. "FS", "ARTWORK");
 	frame.fs2:SetPoint("TOPLEFT", 7, -25);
 	frame.fs2:SetFont(NIT.regionFont, 14);
 	frame.fs2:SetJustifyH("LEFT");

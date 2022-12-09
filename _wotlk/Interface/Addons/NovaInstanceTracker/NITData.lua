@@ -4,6 +4,9 @@
 
 local L = LibStub("AceLocale-3.0"):GetLocale("NovaInstanceTracker");
 local version = GetAddOnMetadata("NovaInstanceTracker", "Version") or 9999;
+local GetContainerNumFreeSlots = GetContainerNumFreeSlots or C_Container.GetContainerNumFreeSlots;
+local GetContainerNumSlots = GetContainerNumSlots or C_Container.GetContainerNumSlots;
+
 --TBC compatibility.
 local IsQuestFlaggedCompleted = IsQuestFlaggedCompleted;
 if (C_QuestLog.IsQuestFlaggedCompleted) then
@@ -585,7 +588,7 @@ function NIT:recordBgStats()
 	end
 	local instance = NIT.data.instances[1];
 	local totalPlayers = GetNumBattlefieldScores();
-	local mapID = C_Map.GetBestMapForUnit("player");
+	--local mapID = C_Map.GetBestMapForUnit("player");
 	if (NIT.data.instances[1].type == "bg") then
 		for i = 1, totalPlayers do
 			local name, kb, hk, deaths, honor, faction, rank, race, class, classEnglish, damage, healing = GetBattlefieldScore(i);
@@ -652,21 +655,30 @@ function NIT:recordBgStats()
 					race = race,
 				};
 				local teamName, teamRating, newTeamRating, teamMMR = GetBattlefieldTeamInfo(faction);
-				if (teamName) then
-					t.teamName = teamName;
-				end
-				if (teamRating) then
-					t.teamRating = teamRating;
-				end
-				if (newTeamRating) then
-					t.newTeamRating = newTeamRating;
-				end
+				--if (NIT.isTBC) then
+					if (teamName) then
+						t.teamName = teamName;
+					end
+					if (teamRating) then
+						t.teamRating = teamRating;
+					end
+					if (newTeamRating) then
+						t.newTeamRating = newTeamRating;
+					end
+				--end
 				if (teamMMR) then
 					t.teamMMR = teamMMR;
 				end
 				if (faction == 0) then
+					if (teamName == "" and instance.purpleTeam and instance.purpleTeam[name] and instance.purpleTeam[name].teamName) then
+						--If team name is showing an empty string but we already have a team name recorded then use the already recorded name instead and don't overwrite.
+						t.teamName = instance.purpleTeam[name].teamName;
+					end
 					purpleTeam[name] = t;
 				else
+					if (teamName == "" and instance.goldTeam and instance.goldTeam[name] and instance.goldTeam[name].teamName) then
+						t.teamName = instance.goldTeam[name].teamName;
+					end
 					goldTeam[name] = t;
 				end
 				if (name == me) then
@@ -700,6 +712,7 @@ function NIT:recordBgStats()
 	--instance.pvpStats = stats;
 	NIT:recordGroupInfo();
 end
+hooksecurefunc("WorldStateScoreFrame_OnShow", function(...) NIT:recordBgStats() end);
 
 --Seems to be some issue with it not recording as an arena if we check before the zone data is upedated properly in blizz's end?
 local function doubleCheckArena()
@@ -736,7 +749,7 @@ function NIT:enteredInstance(isReload, isLogon, checkAgain)
 	--instanceType was showing "pvp" at the start of tbc, now it shows "arena".
 	--Leave some redunant checks here in place anyway incase it ever reverts back.
 	if (instanceType == "pvp" or instanceType == "arena") then
-		if (NIT:isInArena()) then
+		if (NIT:isInArena() or instanceType == "arena") then
 			type = "arena";
 		elseif (UnitInBattleground("player")) then
 			type = "bg";
@@ -2017,6 +2030,8 @@ local currencyItems = {
 	[135947] = "Emblem of Heroism",
 	[135885] = "Emblem of Conquest",
 	[334365] = "Emblem of Frost",
+	[134375] = "Stone Keeper's Shards",
+	[133408] = "Wintergrasp Mark of Honor",
 	--Profession tokens.
 	[134411] = "Epicurean's Award",
 	[134138] = "Dalaran Jewelcrafter's Token",

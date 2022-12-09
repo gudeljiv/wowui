@@ -303,8 +303,28 @@ AuctionFasterDb = {
 					["lowestBid"] = 17099,
 					["averageBid"] = 24837,
 				}, -- [5]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 218456,
+					["totalQty"] = 9,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 9,
+					["weightedAverageBuy"] = 24422,
+					["totalBuy"] = 219809,
+					["lowestBuy"] = 20000,
+					["totalBid"] = 218456,
+					["weightedTotalBuy"] = 219800,
+					["estimatedVolume"] = 9,
+					["highestBid"] = 24932,
+					["weightedAverageBid"] = 24272,
+					["totalItems"] = 9,
+					["scanTime"] = 1670576856,
+					["highestBuy"] = 24975,
+					["lowestBid"] = 19000,
+					["averageBid"] = 24272,
+				}, -- [6]
 			},
-			["lastScanTime"] = 1670249098,
+			["lastScanTime"] = 1670576856,
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
@@ -313,8 +333,8 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["alwaysUndercut"] = true,
 			},
-			["bid"] = 17099,
-			["buy"] = 17997,
+			["bid"] = 19000,
+			["buy"] = 19999,
 			["icon"] = 135144,
 			["itemId"] = 11288,
 		},
@@ -1123,8 +1143,28 @@ AuctionFasterDb = {
 					["weightedAverageBid"] = 3554,
 					["highestBid"] = 3893,
 				}, -- [4]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 7389682,
+					["totalQty"] = 908,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 908,
+					["weightedAverageBuy"] = 8398,
+					["totalBuy"] = 419987,
+					["lowestBuy"] = 8395,
+					["totalBid"] = 406463,
+					["weightedTotalBuy"] = 7626207,
+					["estimatedVolume"] = 10115.12,
+					["highestBid"] = 8396,
+					["weightedAverageBid"] = 8138,
+					["totalItems"] = 557,
+					["scanTime"] = 1670576851,
+					["highestBuy"] = 8402,
+					["lowestBid"] = 7975,
+					["averageBid"] = 8129,
+				}, -- [5]
 			},
-			["lastScanTime"] = 1669808634,
+			["lastScanTime"] = 1670576851,
 			["settings"] = {
 				["priceModel"] = "WeightedAverage",
 				["rememberLastPrice"] = false,
@@ -1133,10 +1173,10 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["useCustomDuration"] = false,
 			},
-			["bid"] = 3554,
+			["bid"] = 8138,
 			["itemId"] = 36901,
 			["icon"] = 134211,
-			["buy"] = 3710,
+			["buy"] = 8398,
 		},
 		["36504Cleft-Edged Hammer of Spirit"] = {
 			["prices"] = {
@@ -2824,8 +2864,28 @@ AuctionFasterDb = {
 					["lowestBid"] = 16995,
 					["averageBid"] = 17012,
 				}, -- [2]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 14638838,
+					["totalQty"] = 900,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 900,
+					["weightedAverageBuy"] = 18000,
+					["totalBuy"] = 900082,
+					["lowestBuy"] = 17995,
+					["totalBid"] = 815964,
+					["weightedTotalBuy"] = 16200249,
+					["estimatedVolume"] = 8892,
+					["highestBid"] = 18010,
+					["weightedAverageBid"] = 16265,
+					["totalItems"] = 494,
+					["scanTime"] = 1670576862,
+					["highestBuy"] = 18099,
+					["lowestBid"] = 15000,
+					["averageBid"] = 16319,
+				}, -- [3]
 			},
-			["lastScanTime"] = 1669568204,
+			["lastScanTime"] = 1670576862,
 			["settings"] = {
 				["priceModel"] = "WeightedAverage",
 				["rememberLastPrice"] = false,
@@ -2834,10 +2894,10 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["useCustomDuration"] = false,
 			},
-			["bid"] = 17107,
+			["bid"] = 16265,
 			["itemId"] = 36905,
 			["icon"] = 134225,
-			["buy"] = 17889,
+			["buy"] = 18000,
 		},
 		["33458Scroll of Intellect VI"] = {
 			["stackSize"] = 20,
@@ -4073,8 +4133,28 @@ AuctionFasterDb = {
 					["weightedAverageBid"] = 3513,
 					["highestBid"] = 3623,
 				}, -- [5]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 4159190,
+					["totalQty"] = 827,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 827,
+					["weightedAverageBuy"] = 5231,
+					["totalBuy"] = 259293,
+					["lowestBuy"] = 4683,
+					["totalBid"] = 249051,
+					["weightedTotalBuy"] = 4326672,
+					["estimatedVolume"] = 4184.62,
+					["highestBid"] = 5220,
+					["weightedAverageBid"] = 5029,
+					["totalItems"] = 253,
+					["scanTime"] = 1670576875,
+					["highestBuy"] = 5250,
+					["lowestBid"] = 4449,
+					["averageBid"] = 4981,
+				}, -- [6]
 			},
-			["lastScanTime"] = 1669808662,
+			["lastScanTime"] = 1670576875,
 			["settings"] = {
 				["priceModel"] = "WeightedAverage",
 				["rememberLastPrice"] = false,
@@ -4083,10 +4163,10 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["useCustomDuration"] = false,
 			},
-			["bid"] = 3513,
+			["bid"] = 5029,
 			["itemId"] = 36904,
 			["icon"] = 134224,
-			["buy"] = 3629,
+			["buy"] = 5231,
 		},
 		["23425Adamantite Ore"] = {
 			["stackSize"] = 20,
@@ -5537,26 +5617,6 @@ AuctionFasterDb = {
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
-					["weightedTotalBid"] = 2463071,
-					["totalQty"] = 253,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 253,
-					["weightedAverageBuy"] = 9990,
-					["totalBuy"] = 499421,
-					["lowestBuy"] = 9978,
-					["totalBid"] = 477919,
-					["weightedTotalBuy"] = 2527497,
-					["estimatedVolume"] = 632.5,
-					["averageBid"] = 9558,
-					["lowestBid"] = 9000,
-					["highestBuy"] = 9995,
-					["totalItems"] = 125,
-					["scanTime"] = 1668810124,
-					["weightedAverageBid"] = 9735,
-					["highestBid"] = 9995,
-				}, -- [1]
-				{
-					["averageBuy"] = 1,
 					["weightedTotalBid"] = 1900632,
 					["totalQty"] = 224,
 					["averageQty"] = 0,
@@ -5574,7 +5634,7 @@ AuctionFasterDb = {
 					["highestBuy"] = 9733,
 					["lowestBid"] = 6923,
 					["averageBid"] = 8855,
-				}, -- [2]
+				}, -- [1]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 2146821,
@@ -5594,7 +5654,7 @@ AuctionFasterDb = {
 					["totalItems"] = 138,
 					["lowestBid"] = 6250,
 					["averageBid"] = 8792,
-				}, -- [3]
+				}, -- [2]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 1500649,
@@ -5614,7 +5674,7 @@ AuctionFasterDb = {
 					["scanTime"] = 1669207773,
 					["weightedAverageBid"] = 8068,
 					["highestBid"] = 8498,
-				}, -- [4]
+				}, -- [3]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 2470870,
@@ -5634,7 +5694,7 @@ AuctionFasterDb = {
 					["totalItems"] = 76,
 					["weightedAverageBid"] = 16044,
 					["highestBid"] = 23749,
-				}, -- [5]
+				}, -- [4]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 8168292,
@@ -5654,7 +5714,7 @@ AuctionFasterDb = {
 					["totalItems"] = 130,
 					["lowestBid"] = 9000,
 					["averageBid"] = 17469,
-				}, -- [6]
+				}, -- [5]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 440750,
@@ -5674,7 +5734,7 @@ AuctionFasterDb = {
 					["totalItems"] = 216,
 					["weightedAverageBid"] = 8815,
 					["highestBid"] = 8815,
-				}, -- [7]
+				}, -- [6]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 6897170,
@@ -5694,7 +5754,7 @@ AuctionFasterDb = {
 					["highestBuy"] = 9200,
 					["weightedAverageBid"] = 8411,
 					["highestBid"] = 9197,
-				}, -- [8]
+				}, -- [7]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 4826435,
@@ -5714,7 +5774,7 @@ AuctionFasterDb = {
 					["highestBuy"] = 31101411,
 					["weightedAverageBid"] = 18281,
 					["highestBid"] = 74433,
-				}, -- [9]
+				}, -- [8]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 1340005,
@@ -5734,7 +5794,7 @@ AuctionFasterDb = {
 					["scanTime"] = 1670147407,
 					["lowestBid"] = 10147,
 					["averageBid"] = 10313,
-				}, -- [10]
+				}, -- [9]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 3877599,
@@ -5754,7 +5814,7 @@ AuctionFasterDb = {
 					["highestBuy"] = 7111111,
 					["lowestBid"] = 1,
 					["averageBid"] = 6996,
-				}, -- [11]
+				}, -- [10]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 3103380,
@@ -5774,7 +5834,7 @@ AuctionFasterDb = {
 					["totalItems"] = 131,
 					["lowestBid"] = 9402,
 					["averageBid"] = 10328,
-				}, -- [12]
+				}, -- [11]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 3776925,
@@ -5794,9 +5854,29 @@ AuctionFasterDb = {
 					["totalItems"] = 259,
 					["weightedAverageBid"] = 8603,
 					["highestBid"] = 9474,
+				}, -- [12]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 2785367,
+					["totalQty"] = 327,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 327,
+					["weightedAverageBuy"] = 8918,
+					["totalBuy"] = 454244,
+					["lowestBuy"] = 7397,
+					["totalBid"] = 433636,
+					["weightedTotalBuy"] = 2916338,
+					["estimatedVolume"] = 804.42,
+					["highestBid"] = 9964,
+					["weightedAverageBid"] = 8517,
+					["totalItems"] = 123,
+					["scanTime"] = 1670576868,
+					["highestBuy"] = 9995,
+					["lowestBid"] = 5666,
+					["averageBid"] = 8672,
 				}, -- [13]
 			},
-			["lastScanTime"] = 1670504098,
+			["lastScanTime"] = 1670576868,
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
@@ -5805,8 +5885,8 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["useCustomDuration"] = false,
 			},
-			["bid"] = 6688,
-			["buy"] = 8361,
+			["bid"] = 5916,
+			["buy"] = 7396,
 			["icon"] = 236869,
 			["itemId"] = 33448,
 		},
@@ -7269,6 +7349,8 @@ AuctionFasterDb = {
 			["itemId"] = 38698,
 		},
 		["44327Elixir of Deadly Strikes"] = {
+			["stackSize"] = 1,
+			["itemName"] = "Elixir of Deadly Strikes",
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
@@ -7330,8 +7412,28 @@ AuctionFasterDb = {
 					["lowestBid"] = 1,
 					["averageBid"] = 9691,
 				}, -- [3]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 844306,
+					["totalQty"] = 131,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 131,
+					["weightedAverageBuy"] = 689976,
+					["totalBuy"] = 57630246,
+					["lowestBuy"] = 6894,
+					["totalBid"] = 258572,
+					["weightedTotalBuy"] = 90386938,
+					["estimatedVolume"] = 131,
+					["highestBid"] = 7500,
+					["weightedAverageBid"] = 6445,
+					["totalItems"] = 42,
+					["scanTime"] = 1670576837,
+					["highestBuy"] = 31101411,
+					["lowestBid"] = 1,
+					["averageBid"] = 6156,
+				}, -- [4]
 			},
-			["itemName"] = "Elixir of Deadly Strikes",
+			["lastScanTime"] = 1670576837,
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
@@ -7340,11 +7442,10 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["alwaysUndercut"] = true,
 			},
+			["bid"] = 5514,
 			["itemId"] = 44327,
-			["bid"] = 6074,
-			["lastScanTime"] = 1670249071,
 			["icon"] = 236882,
-			["buy"] = 7593,
+			["buy"] = 6893,
 		},
 		["2838Heavy Stone"] = {
 			["stackSize"] = 5,
@@ -10353,8 +10454,28 @@ AuctionFasterDb = {
 					["weightedAverageBid"] = 3890,
 					["highestBid"] = 4068,
 				}, -- [4]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 3781021,
+					["totalQty"] = 889,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 889,
+					["weightedAverageBuy"] = 4462,
+					["totalBuy"] = 222692,
+					["lowestBuy"] = 4345,
+					["totalBid"] = 212213,
+					["weightedTotalBuy"] = 3967600,
+					["estimatedVolume"] = 4053.84,
+					["highestBid"] = 4375,
+					["weightedAverageBid"] = 4253,
+					["totalItems"] = 228,
+					["scanTime"] = 1670576820,
+					["highestBuy"] = 4490,
+					["lowestBid"] = 4128,
+					["averageBid"] = 4244,
+				}, -- [5]
 			},
-			["lastScanTime"] = 1669890626,
+			["lastScanTime"] = 1670576820,
 			["settings"] = {
 				["priceModel"] = "WeightedAverage",
 				["rememberLastPrice"] = false,
@@ -10363,8 +10484,8 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["useCustomDuration"] = false,
 			},
-			["bid"] = 3890,
-			["buy"] = 4267,
+			["bid"] = 4253,
+			["buy"] = 4462,
 			["icon"] = 134264,
 			["itemId"] = 33568,
 		},
@@ -15203,8 +15324,28 @@ AuctionFasterDb = {
 					["lowestBid"] = 1,
 					["averageBid"] = 2588,
 				}, -- [6]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 7258742,
+					["totalQty"] = 841,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 841,
+					["weightedAverageBuy"] = 8874,
+					["totalBuy"] = 441145,
+					["lowestBuy"] = 7998,
+					["totalBid"] = 425834,
+					["weightedTotalBuy"] = 7463678,
+					["estimatedVolume"] = 1295.14,
+					["highestBid"] = 8945,
+					["weightedAverageBid"] = 8631,
+					["totalItems"] = 77,
+					["scanTime"] = 1670576873,
+					["highestBuy"] = 8989,
+					["lowestBid"] = 4975,
+					["averageBid"] = 8516,
+				}, -- [7]
 			},
-			["lastScanTime"] = 1670249118,
+			["lastScanTime"] = 1670576873,
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
@@ -15213,10 +15354,10 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["useCustomDuration"] = false,
 			},
-			["bid"] = 7959,
+			["bid"] = 6397,
 			["itemId"] = 36907,
 			["icon"] = 134222,
-			["buy"] = 9949,
+			["buy"] = 7997,
 		},
 		["36326Halgrind Gloves of the Soldier"] = {
 			["prices"] = {
@@ -15646,8 +15787,28 @@ AuctionFasterDb = {
 					["weightedAverageBid"] = 15500,
 					["highestBid"] = 15500,
 				}, -- [2]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 3154819,
+					["totalQty"] = 278,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 278,
+					["weightedAverageBuy"] = 11773,
+					["totalBuy"] = 587657,
+					["lowestBuy"] = 11678,
+					["totalBid"] = 567323,
+					["weightedTotalBuy"] = 3272995,
+					["estimatedVolume"] = 1023.04,
+					["highestBid"] = 11840,
+					["weightedAverageBid"] = 11348,
+					["totalItems"] = 184,
+					["scanTime"] = 1670576827,
+					["highestBuy"] = 11899,
+					["lowestBid"] = 11095,
+					["averageBid"] = 11346,
+				}, -- [3]
 			},
-			["lastScanTime"] = 1669890630,
+			["lastScanTime"] = 1670576827,
 			["settings"] = {
 				["priceModel"] = "WeightedAverage",
 				["rememberLastPrice"] = false,
@@ -15656,10 +15817,10 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["useCustomDuration"] = false,
 			},
-			["bid"] = 15500,
+			["bid"] = 11348,
 			["itemId"] = 37704,
 			["icon"] = 237004,
-			["buy"] = 15500,
+			["buy"] = 11773,
 		},
 		["36929Huge Citrine"] = {
 			["stackSize"] = 1,
@@ -16544,8 +16705,28 @@ AuctionFasterDb = {
 					["lowestBid"] = 121131,
 					["averageBid"] = 121131,
 				}, -- [2]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 236191,
+					["totalQty"] = 2,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 2,
+					["weightedAverageBuy"] = 121123,
+					["totalBuy"] = 242249,
+					["lowestBuy"] = 121123,
+					["totalBid"] = 236191,
+					["weightedTotalBuy"] = 242247,
+					["estimatedVolume"] = 2,
+					["highestBid"] = 121124,
+					["weightedAverageBid"] = 118095,
+					["totalItems"] = 2,
+					["scanTime"] = 1670576831,
+					["highestBuy"] = 121124,
+					["lowestBid"] = 115067,
+					["averageBid"] = 118095,
+				}, -- [3]
 			},
-			["lastScanTime"] = 1670249061,
+			["lastScanTime"] = 1670576831,
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
@@ -16554,10 +16735,10 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["alwaysUndercut"] = true,
 			},
-			["bid"] = 121130,
+			["bid"] = 115067,
 			["itemId"] = 21948,
 			["icon"] = 134939,
-			["buy"] = 121130,
+			["buy"] = 121122,
 		},
 		["42745Glyph of Ice Lance"] = {
 			["stackSize"] = 1,
@@ -19349,8 +19530,28 @@ AuctionFasterDb = {
 					["weightedAverageBid"] = 7636,
 					["highestBid"] = 60000,
 				}, -- [3]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 723455,
+					["totalQty"] = 111,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 111,
+					["weightedAverageBuy"] = 567043,
+					["totalBuy"] = 37636163,
+					["lowestBuy"] = 5248,
+					["totalBid"] = 307624,
+					["weightedTotalBuy"] = 62941855,
+					["estimatedVolume"] = 111,
+					["highestBid"] = 60000,
+					["weightedAverageBid"] = 6517,
+					["totalItems"] = 42,
+					["scanTime"] = 1670576871,
+					["highestBuy"] = 31101411,
+					["lowestBid"] = 3756,
+					["averageBid"] = 7324,
+				}, -- [4]
 			},
-			["lastScanTime"] = 1670504128,
+			["lastScanTime"] = 1670576871,
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
@@ -19359,10 +19560,10 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["alwaysUndercut"] = true,
 			},
-			["bid"] = 5137,
+			["bid"] = 4197,
 			["itemId"] = 22829,
 			["icon"] = 134756,
-			["buy"] = 6422,
+			["buy"] = 5247,
 		},
 		["36328Halgrind Legplates of the Boar"] = {
 			["prices"] = {
@@ -19909,6 +20110,26 @@ AuctionFasterDb = {
 					["lowestBid"] = 77624,
 					["averageBid"] = 77624,
 				}, -- [2]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 136483,
+					["totalQty"] = 2,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 2,
+					["weightedAverageBuy"] = 69991,
+					["totalBuy"] = 139984,
+					["lowestBuy"] = 69990,
+					["totalBid"] = 136483,
+					["weightedTotalBuy"] = 139982,
+					["estimatedVolume"] = 2,
+					["highestBid"] = 69992,
+					["weightedAverageBid"] = 68241,
+					["totalItems"] = 2,
+					["scanTime"] = 1670576834,
+					["highestBuy"] = 69992,
+					["lowestBid"] = 66491,
+					["averageBid"] = 68241,
+				}, -- [3]
 			},
 			["itemName"] = "Design: The Jade Eye",
 			["settings"] = {
@@ -19920,10 +20141,10 @@ AuctionFasterDb = {
 				["alwaysUndercut"] = true,
 			},
 			["itemId"] = 20975,
-			["bid"] = 77623,
-			["lastScanTime"] = 1670249065,
+			["bid"] = 66491,
+			["lastScanTime"] = 1670576834,
 			["icon"] = 134939,
-			["buy"] = 77623,
+			["buy"] = 69989,
 		},
 		["23354Crystalized Mana Residue"] = {
 			["prices"] = {
@@ -21282,46 +21503,26 @@ AuctionFasterDb = {
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
-					["weightedTotalBid"] = 872806,
-					["totalQty"] = 76,
+					["weightedTotalBid"] = 744397,
+					["totalQty"] = 81,
 					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 76,
-					["weightedAverageBuy"] = 11845,
-					["totalBuy"] = 591705,
-					["lowestBuy"] = 11746,
-					["totalBid"] = 578735,
-					["weightedTotalBuy"] = 900259,
-					["estimatedVolume"] = 89.68,
-					["highestBid"] = 12029,
-					["weightedAverageBid"] = 11484,
+					["totalQtyWithBuy"] = 81,
+					["weightedAverageBuy"] = 10346,
+					["totalBuy"] = 546431,
+					["lowestBuy"] = 8864,
+					["totalBid"] = 466015,
+					["weightedTotalBuy"] = 838095,
+					["estimatedVolume"] = 95.58000000000001,
+					["highestBid"] = 12487,
+					["weightedAverageBid"] = 9190,
 					["totalItems"] = 59,
-					["scanTime"] = 1667476542,
-					["highestBuy"] = 12129,
-					["lowestBid"] = 11159,
-					["averageBid"] = 11574,
+					["scanTime"] = 1670576841,
+					["highestBuy"] = 12487,
+					["lowestBid"] = 7367,
+					["averageBid"] = 9320,
 				}, -- [1]
-				{
-					["averageBuy"] = 1,
-					["weightedTotalBid"] = 441553,
-					["totalQty"] = 51,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 51,
-					["weightedAverageBuy"] = 8778,
-					["totalBuy"] = 438961,
-					["lowestBuy"] = 8773,
-					["totalBid"] = 433216,
-					["weightedTotalBuy"] = 447686,
-					["estimatedVolume"] = 157.08,
-					["highestBid"] = 8782,
-					["weightedAverageBid"] = 8657,
-					["scanTime"] = 1667658872,
-					["highestBuy"] = 8782,
-					["totalItems"] = 154,
-					["lowestBid"] = 8335,
-					["averageBid"] = 8664,
-				}, -- [2]
 			},
-			["lastScanTime"] = 1667658872,
+			["lastScanTime"] = 1670576841,
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
@@ -21330,8 +21531,8 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["alwaysUndercut"] = true,
 			},
-			["bid"] = 8335,
-			["buy"] = 8772,
+			["bid"] = 7367,
+			["buy"] = 8863,
 			["icon"] = 134753,
 			["itemId"] = 40109,
 		},
@@ -22680,8 +22881,28 @@ AuctionFasterDb = {
 					["weightedAverageBid"] = 12359,
 					["highestBid"] = 12662,
 				}, -- [11]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 10423420,
+					["totalQty"] = 860,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 860,
+					["weightedAverageBuy"] = 13314,
+					["totalBuy"] = 665752,
+					["lowestBuy"] = 13308,
+					["totalBid"] = 609791,
+					["weightedTotalBuy"] = 11450473,
+					["estimatedVolume"] = 7636.799999999999,
+					["highestBid"] = 13313,
+					["weightedAverageBid"] = 12120,
+					["totalItems"] = 444,
+					["scanTime"] = 1670576864,
+					["highestBuy"] = 13316,
+					["lowestBid"] = 11984,
+					["averageBid"] = 12195,
+				}, -- [12]
 			},
-			["lastScanTime"] = 1670503942,
+			["lastScanTime"] = 1670576864,
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
@@ -22690,8 +22911,8 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["alwaysUndercut"] = true,
 			},
-			["bid"] = 11995,
-			["buy"] = 13324,
+			["bid"] = 11984,
+			["buy"] = 13307,
 			["icon"] = 237410,
 			["itemId"] = 38558,
 		},
@@ -23380,26 +23601,6 @@ AuctionFasterDb = {
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
-					["weightedTotalBid"] = 1779753,
-					["totalQty"] = 461,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 461,
-					["weightedAverageBuy"] = 4023,
-					["totalBuy"] = 201245,
-					["lowestBuy"] = 3695,
-					["totalBid"] = 196174,
-					["weightedTotalBuy"] = 1854665,
-					["estimatedVolume"] = 5605.76,
-					["averageBid"] = 3923,
-					["lowestBid"] = 3511,
-					["highestBuy"] = 4133,
-					["totalItems"] = 608,
-					["scanTime"] = 1668810109,
-					["weightedAverageBid"] = 3860,
-					["highestBid"] = 4112,
-				}, -- [1]
-				{
-					["averageBuy"] = 1,
 					["weightedTotalBid"] = 4511242,
 					["totalQty"] = 988,
 					["averageQty"] = 0,
@@ -23417,7 +23618,7 @@ AuctionFasterDb = {
 					["scanTime"] = 1668887764,
 					["weightedAverageBid"] = 4566,
 					["highestBid"] = 4803,
-				}, -- [2]
+				}, -- [1]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 4352251,
@@ -23437,7 +23638,7 @@ AuctionFasterDb = {
 					["totalItems"] = 608,
 					["lowestBid"] = 3797,
 					["averageBid"] = 4606,
-				}, -- [3]
+				}, -- [2]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 1468974,
@@ -23457,7 +23658,7 @@ AuctionFasterDb = {
 					["scanTime"] = 1669037363,
 					["lowestBid"] = 4046,
 					["averageBid"] = 4220,
-				}, -- [4]
+				}, -- [3]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 4247244,
@@ -23477,7 +23678,7 @@ AuctionFasterDb = {
 					["scanTime"] = 1669207747,
 					["weightedAverageBid"] = 5032,
 					["highestBid"] = 5285,
-				}, -- [5]
+				}, -- [4]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 4431677,
@@ -23497,7 +23698,7 @@ AuctionFasterDb = {
 					["highestBuy"] = 4980,
 					["lowestBid"] = 4465,
 					["averageBid"] = 4721,
-				}, -- [6]
+				}, -- [5]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 3816875,
@@ -23517,7 +23718,7 @@ AuctionFasterDb = {
 					["highestBuy"] = 4000,
 					["weightedAverageBid"] = 3875,
 					["highestBid"] = 3875,
-				}, -- [7]
+				}, -- [6]
 				{
 					["averageBuy"] = 1,
 					["weightedTotalBid"] = 4263643,
@@ -23537,9 +23738,29 @@ AuctionFasterDb = {
 					["totalItems"] = 318,
 					["weightedAverageBid"] = 5289,
 					["highestBid"] = 5386,
+				}, -- [7]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 3424720,
+					["totalQty"] = 831,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 831,
+					["weightedAverageBuy"] = 4326,
+					["totalBuy"] = 215854,
+					["lowestBuy"] = 3999,
+					["totalBid"] = 206671,
+					["weightedTotalBuy"] = 3595425,
+					["estimatedVolume"] = 16985.64,
+					["highestBid"] = 4346,
+					["weightedAverageBid"] = 4121,
+					["totalItems"] = 1022,
+					["scanTime"] = 1670576847,
+					["highestBuy"] = 4348,
+					["lowestBid"] = 3799,
+					["averageBid"] = 4133,
 				}, -- [8]
 			},
-			["lastScanTime"] = 1670504113,
+			["lastScanTime"] = 1670576847,
 			["settings"] = {
 				["priceModel"] = "WeightedAverage",
 				["rememberLastPrice"] = false,
@@ -23548,10 +23769,10 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["useCustomDuration"] = false,
 			},
-			["bid"] = 5289,
+			["bid"] = 4121,
 			["itemId"] = 33470,
 			["icon"] = 132908,
-			["buy"] = 5415,
+			["buy"] = 4326,
 		},
 		["36326Halgrind Gloves of the Wolf"] = {
 			["prices"] = {
