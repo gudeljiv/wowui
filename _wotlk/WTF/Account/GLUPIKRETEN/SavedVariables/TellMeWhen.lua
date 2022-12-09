@@ -14,13 +14,13 @@ TellMeWhenDB = {
 		["Augustin - Golemagg"] = "MAGE",
 		["Tudum - Jin'do"] = "WARRIOR",
 		["Pitchwise - Ashbringer"] = "SHAMAN",
-		["Vermin - Golemagg"] = "WARRIOR",
-		["Miqa - Golemagg"] = "PRIEST",
-		["Poklopac - Mirage Raceway"] = "HUNTER",
+		["Mxyzptlk - Golemagg"] = "WARLOCK",
 		["Provokator - Jin'do"] = "HUNTER",
+		["Poklopac - Mirage Raceway"] = "HUNTER",
+		["Miqa - Golemagg"] = "PRIEST",
 		["Wells - Jin'do"] = "DRUID",
 		["Moolatz - Golemagg"] = "DRUID",
-		["Mxyzptlk - Golemagg"] = "WARLOCK",
+		["Vermin - Golemagg"] = "WARRIOR",
 		["Moolatz - Dreadnaught"] = "DRUID",
 	},
 	["global"] = {
@@ -1616,10 +1616,10 @@ TellMeWhenDB = {
 									["Name"] = "xAOE(5) > 1",
 								}, -- [3]
 								{
-									["Type"] = "SPEC",
 									["Level"] = 2,
-									["PrtsAfter"] = 1,
 									["AndOr"] = "OR",
+									["PrtsAfter"] = 1,
+									["Type"] = "SPEC",
 								}, -- [4]
 								{
 									["Name"] = "Defensive Stance; Battle Stance",
@@ -2140,10 +2140,10 @@ TellMeWhenDB = {
 									["Name"] = "xAOE(5) == 1",
 								}, -- [1]
 								{
-									["Type"] = "STANCE",
 									["AndOr"] = "OR",
-									["Name"] = "Battle Stance; Berserker Stance",
+									["Type"] = "STANCE",
 									["PrtsAfter"] = 1,
+									["Name"] = "Battle Stance; Berserker Stance",
 								}, -- [2]
 								{
 									["Level"] = 1,
@@ -3638,6 +3638,8 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
+							["DurationMinEnabled"] = true,
+							["DurationMin"] = 15,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
@@ -3646,8 +3648,6 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["DurationMinEnabled"] = true,
-							["DurationMin"] = 15,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -3798,6 +3798,8 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
+							["DurationMinEnabled"] = true,
+							["DurationMin"] = 15,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
@@ -3806,8 +3808,6 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["DurationMinEnabled"] = true,
-							["DurationMin"] = 15,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -3925,7 +3925,7 @@ TellMeWhenDB = {
 						["point"] = "LEFT",
 						["relativePoint"] = "LEFT",
 					},
-					["Locked"] = true,
+					["Scale"] = 0.4,
 					["Name"] = "DEBUG",
 					["Icons"] = {
 						{
@@ -3940,7 +3940,7 @@ TellMeWhenDB = {
 							},
 						}, -- [1]
 					},
-					["Scale"] = 0.4,
+					["Locked"] = true,
 				}, -- [7]
 			},
 			["NumGroups"] = 7,
@@ -3948,7 +3948,6 @@ TellMeWhenDB = {
 		},
 		["ROGUE"] = {
 			["Locked"] = true,
-			["Version"] = 92500,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -4186,8 +4185,8 @@ TellMeWhenDB = {
 				{
 					["GUID"] = "TMW:group:1ZThAKUg1Y0w",
 					["Columns"] = 1,
-					["Locked"] = true,
 					["Scale"] = 0.4,
+					["Locked"] = true,
 					["Name"] = "Rotation OFFGCD",
 					["Icons"] = {
 						{
@@ -4207,15 +4206,20 @@ TellMeWhenDB = {
 				}, -- [5]
 			},
 			["NumGroups"] = 5,
+			["Version"] = 92500,
 		},
 		["MAGE"] = {
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TQvxnAfbGyU",
-					["Scale"] = 1,
-					["Name"] = "Spells",
-					["Alpha"] = 0,
 					["Locked"] = true,
+					["Point"] = {
+						["y"] = -5,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
+					["Alpha"] = 0,
+					["Scale"] = 1,
 					["Columns"] = 20,
 					["Icons"] = {
 						{
@@ -4320,11 +4324,7 @@ TellMeWhenDB = {
 							["GUID"] = "TMW:icon:1TWYMfcUzmi6",
 						},
 					},
-					["Point"] = {
-						["y"] = -5,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
+					["Name"] = "Spells",
 				}, -- [1]
 				{
 					["GUID"] = "TMW:group:1TWYSTcQ410f",
@@ -5221,7 +5221,6 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
-							["DurationMin"] = 15,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
@@ -5231,6 +5230,7 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["DurationMinEnabled"] = true,
+							["DurationMin"] = 15,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -5298,7 +5298,6 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
-							["DurationMin"] = 15,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
@@ -5308,6 +5307,7 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["DurationMinEnabled"] = true,
+							["DurationMin"] = 15,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -5371,8 +5371,8 @@ TellMeWhenDB = {
 				{
 					["GUID"] = "TMW:group:1ZM=EKbLryuK",
 					["Columns"] = 1,
-					["Locked"] = true,
 					["Scale"] = 0.4,
+					["Locked"] = true,
 					["Name"] = "DEBUG",
 					["Icons"] = {
 						{
@@ -5400,7 +5400,6 @@ TellMeWhenDB = {
 		},
 		["WARLOCK"] = {
 			["Locked"] = true,
-			["NumGroups"] = 5,
 			["Version"] = 91200,
 			["Groups"] = {
 				{
@@ -5502,14 +5501,14 @@ TellMeWhenDB = {
 				}, -- [3]
 				{
 					["GUID"] = "TMW:group:1V6ky7Uf4nZ5",
-					["Name"] = "Warlock Spells",
 					["Point"] = {
 						["y"] = -5,
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
+					["Name"] = "Warlock Spells",
 					["Alpha"] = 0,
-					["Locked"] = true,
+					["Scale"] = 1,
 					["Columns"] = 20,
 					["Icons"] = {
 						{
@@ -5627,7 +5626,7 @@ TellMeWhenDB = {
 							["Name"] = "healh",
 						},
 					},
-					["Scale"] = 1,
+					["Locked"] = true,
 				}, -- [4]
 				{
 					["GUID"] = "TMW:group:1YWt9BdVNgGm",
@@ -5669,10 +5668,10 @@ TellMeWhenDB = {
 					["OnlyInCombat"] = true,
 				}, -- [5]
 			},
+			["NumGroups"] = 5,
 		},
 		["PALADIN"] = {
 			["Locked"] = true,
-			["Version"] = 92500,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -6115,6 +6114,7 @@ TellMeWhenDB = {
 				}, -- [4]
 			},
 			["NumGroups"] = 4,
+			["Version"] = 92500,
 		},
 		["DRUID"] = {
 			["Version"] = 100500,
@@ -6269,9 +6269,9 @@ TellMeWhenDB = {
 								}, -- [4]
 								{
 									["Type"] = "STANCE",
-									["AndOr"] = "OR",
 									["Name"] = "Cat Form",
 									["PrtsBefore"] = 1,
+									["AndOr"] = "OR",
 								}, -- [5]
 								{
 									["Type"] = "LUA",
@@ -8184,6 +8184,8 @@ TellMeWhenDB = {
 		},
 		["DEATHKNIGHT"] = {
 			["Locked"] = true,
+			["NumGroups"] = 5,
+			["Version"] = 100500,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -9770,8 +9772,6 @@ TellMeWhenDB = {
 					["OnlyInCombat"] = true,
 				}, -- [5]
 			},
-			["NumGroups"] = 5,
-			["Version"] = 100500,
 		},
 	},
 }

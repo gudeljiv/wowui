@@ -35,7 +35,7 @@ LBISSettings = {
 		["RestorationDruid"] = true,
 		["SubtletyRogue"] = true,
 	},
-	["SelectedSpec"] = "",
+	["SelectedSpec"] = "Cat Druid",
 	["minimap"] = {
 		["minimapPos"] = 180,
 		["hide"] = true,
@@ -49,5 +49,5 @@ LBISSettings = {
 	["SelectedSourceType"] = "All",
 	["SelectedSlot"] = "All",
 	["ShowPriority"] = true,
-	["SelectedPhase"] = "All",
+	["SelectedPhase"] = "PreRaid",
 }
