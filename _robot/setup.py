@@ -89,7 +89,7 @@ classes = {
 }
 
 time1 = 0.5
-time2 = 0.5
+time2 = 1
 
 count = 0
 number = 0
