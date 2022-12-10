@@ -44,6 +44,10 @@ skills["offgcd"]["rogue"] = [
     {"name": "pick pocket", "type": "GetSpellTexture", "id": 921, "key": "f5", "modifier": "ctrl"},
 ]
 
+skills["offgcd"]["paladin"] = [
+
+]
+
 
 skills["warrior"] = [
     {"name": "battle shout", "type": "GetSpellTexture", "id": 2048, "key": "f4"},

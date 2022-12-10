@@ -1,14 +1,15 @@
 
 AddOnSkinsDB = {
 	["profileKeys"] = {
-		["Mxzq - Golemagg"] = "Default",
 		["Handrmandr - Golemagg"] = "Default",
+		["Vermina - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
-		["Miqa - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
 		["Battitude - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Miqa - Golemagg"] = "Default",
+		["Mxzq - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -50,18 +51,18 @@ AddOnSkinsDB = {
 			["StatusBarTexture"] = "Melli",
 			["Blizzard_EncounterJournal"] = false,
 			["Blizzard_TradeWindow"] = false,
-			["Blizzard_RaidUI"] = false,
+			["Blizzard_Merchant"] = false,
 			["ChocolateBar"] = false,
-			["Blizzard_PetStable"] = false,
+			["Blizzard_AuctionUI"] = false,
 			["Blizzard_TrainerUI"] = false,
 			["Blizzard_Options"] = false,
 			["Blizzard_DebugTools"] = false,
 			["ItemRack"] = false,
 			["Blizzard_Others"] = false,
-			["Blizzard_AuctionUI"] = false,
-			["Blizzard_StackSplit"] = false,
-			["Blizzard_Merchant"] = false,
 			["Blizzard_Alerts"] = false,
+			["Blizzard_StackSplit"] = false,
+			["Blizzard_PetStable"] = false,
+			["Blizzard_RaidUI"] = false,
 		},
 	},
 }

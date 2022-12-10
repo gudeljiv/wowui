@@ -619,9 +619,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 554272,
-		["timeStamp"] = 2545183.278,
-		["timeAtThisLevel"] = 821,
+		["total"] = 556982,
+		["timeStamp"] = 154561.225,
+		["timeAtThisLevel"] = 3531,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -770,9 +770,9 @@ CB_PlayedTime = {
 		["total"] = 390,
 	},
 	["Miqa-Golemagg"] = {
-		["total"] = 7805,
-		["timeStamp"] = 2509001.094,
-		["timeAtThisLevel"] = 2757,
+		["total"] = 8028,
+		["timeStamp"] = 154397.896,
+		["timeAtThisLevel"] = 2980,
 	},
 	["Nitwit-"] = {
 		["total"] = 680,
@@ -795,9 +795,9 @@ CB_PlayedTime = {
 		["total"] = 129,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1451143,
-		["timeAtThisLevel"] = 358596,
-		["timeStamp"] = 2512004.458,
+		["total"] = 1451394,
+		["timeAtThisLevel"] = 358847,
+		["timeStamp"] = 154041.625,
 	},
 	["Grgur-"] = {
 		["total"] = 1248,

@@ -619,9 +619,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 554307,
-		["timeAtThisLevel"] = 856,
-		["timeStamp"] = 2545215.627,
+		["total"] = 556982,
+		["timeAtThisLevel"] = 3531,
+		["timeStamp"] = 154561.225,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -689,9 +689,9 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Vermina-Golemagg"] = {
-		["total"] = 139799,
-		["timeStamp"] = 61276.429,
-		["timeAtThisLevel"] = 3250,
+		["total"] = 139983,
+		["timeStamp"] = 159890.905,
+		["timeAtThisLevel"] = 3434,
 	},
 	["Provokator-Jin'do"] = {
 		["total"] = 22720,
@@ -708,9 +708,9 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1451143,
-		["timeStamp"] = 2512004.458,
-		["timeAtThisLevel"] = 358596,
+		["total"] = 1451394,
+		["timeStamp"] = 154041.625,
+		["timeAtThisLevel"] = 358847,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
@@ -764,9 +764,9 @@ CB_PlayedTime = {
 		["total"] = 3552,
 	},
 	["Miqa-Golemagg"] = {
-		["total"] = 7805,
-		["timeAtThisLevel"] = 2757,
-		["timeStamp"] = 2509001.094,
+		["total"] = 8028,
+		["timeAtThisLevel"] = 2980,
+		["timeStamp"] = 154397.896,
 	},
 	["Pitchwise-"] = {
 		["total"] = 390,

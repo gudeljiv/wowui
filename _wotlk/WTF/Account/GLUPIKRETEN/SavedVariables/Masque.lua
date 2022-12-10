@@ -5,14 +5,15 @@ MasqueDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Vermin - Golemagg"] = "Default",
-		["Handrmandr - Golemagg"] = "Default",
-		["Mxyz - Golemagg"] = "Default",
-		["Miqa - Golemagg"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
+		["Vermina - Golemagg"] = "Default",
+		["Mxyz - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
 		["Battitude - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Miqa - Golemagg"] = "Default",
+		["Handrmandr - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -631,6 +632,11 @@ MasqueDB = {
 					["SkinID"] = "Brownstone",
 				},
 				["WeakAuras_nM1gaKxdJzN"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Brownstone",
+				},
+				["WeakAuras_91mA2IkcG5o"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
