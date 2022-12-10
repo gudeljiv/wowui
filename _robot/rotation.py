@@ -67,14 +67,14 @@ else:
 healing = {}
 try:
     for skill in skills["healing"]:
-        healing[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"] + " H.png"), cv2.COLOR_BGR2GRAY)
+        healing[skill["name"]] = cv2.imread(abilities_folder + "/" + skill["name"] + " H.png")
 except:
     print("healing abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
 
 abilities = {}
 try:
     for skill in skills[wow_class]:
-        abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"] + " M.png"), cv2.COLOR_BGR2GRAY)
+        abilities[skill["name"]] = cv2.imread(abilities_folder + "/" + skill["name"] + " M.png")
         abilities = {**abilities, **healing}
 except:
     print("main abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
@@ -83,7 +83,7 @@ except:
 abilities_offgcd = {}
 try:
     for skill in skills["offgcd"][wow_class]:
-        abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"] + " O.png"), cv2.COLOR_BGR2GRAY)
+        abilities_offgcd[skill["name"]] = cv2.imread(abilities_folder + "/"+skill["name"] + " O.png")
 except:
     print("offgcd abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
 
@@ -208,7 +208,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                 skills_loaded = wow_class
                 for skill in skills[wow_class]:
                     try:
-                        abilities[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/" + skill["name"] + " M.png"), cv2.COLOR_BGR2GRAY)
+                        abilities[skill["name"]] = cv2.imread(abilities_folder + "/" + skill["name"] + " M.png")
                         abilities = {**abilities, **healing}
                     except:
                         print("missing spell in ", wow_class, " --> ", skill["name"], datetime.now().strftime("%H:%M:%S"))
@@ -216,7 +216,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                 abilities_offgcd = {}
                 try:
                     for skill in skills["offgcd"][wow_class]:
-                        abilities_offgcd[skill["name"]] = cv2.cvtColor(cv2.imread(abilities_folder + "/"+skill["name"] + " O.png"), cv2.COLOR_BGR2GRAY)
+                        abilities_offgcd[skill["name"]] = cv2.imread(abilities_folder + "/"+skill["name"] + " O.png")
                 except:
                     print("offgcd error missing class --> ", wow_class, datetime.now().strftime("%H:%M:%S"))
 
@@ -238,8 +238,8 @@ with keyboard.Listener(on_press=on_press) as listener:
                         print("interrupt", "f9", f"Finish in: {round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S"))
                     pyautogui.hotkey("f9")
 
-                grabbed = cv2.cvtColor(numpy.array(main_image), cv2.COLOR_BGR2GRAY)
-                offgcd = cv2.cvtColor(numpy.array(offgcd_image), cv2.COLOR_BGR2GRAY)
+                grabbed = numpy.array(main_image)[:, :, :3]
+                offgcd = numpy.array(offgcd_image)[:, :, :3]
 
                 # rotation
                 try:
@@ -247,7 +247,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                         for ability in abilities:
                             if ability == skill["name"]:
                                 try:
-                                    (score, diff) = structural_similarity(abilities[ability], grabbed, full=True)
+                                    score = structural_similarity(abilities[ability], grabbed, channel_axis=2)
                                     if score*100 > 90:
                                         if dprint:
                                             print(ability, skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S"))
@@ -267,7 +267,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                             for ability in abilities_offgcd:
                                 if ability == skill["name"]:
                                     try:
-                                        (score, diff) = structural_similarity(abilities_offgcd[ability], offgcd, full=True)
+                                        score = structural_similarity(abilities_offgcd[ability], offgcd, channel_axis=2)
                                         if score*100 > 90:
                                             if dprint:
                                                 print(ability, skill["name"], skill["key"], score*100,

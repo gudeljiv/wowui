@@ -57,6 +57,7 @@ p_clss_left = monitor_settings[monitor]["p_clss_left"]
 
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
+abilities_folder = dir_path + "\images\\" + monitor
 
 print("Script loaded and ready.", "Rotation is paused.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"))
 
@@ -67,6 +68,18 @@ def on_press(key):
     if key == keyboard.Key.f7:
         debug = not debug
         print("debug:", debug)
+
+
+image1 = cv2.imread(abilities_folder + "/judgement of light M.png")
+image2 = cv2.imread(abilities_folder + "/judgement of light M.png")
+image3 = cv2.cvtColor(cv2.imread(abilities_folder + "/judgement of light M.png"), cv2.COLOR_BGR2GRAY)
+image4 = cv2.cvtColor(cv2.imread(abilities_folder + "/judgement of light M.png"), cv2.COLOR_BGR2GRAY)
+
+print(image1.shape, image2.shape, image3.shape, image4.shape)
+
+
+score = structural_similarity(image1, image2, channel_axis=2)
+print(score)
 
 
 with keyboard.Listener(on_press=on_press) as listener:
