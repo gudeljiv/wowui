@@ -1,9 +1,9 @@
-VER 3 0000000000000013 " " "132130"
-/click RotBotF3
-END
 VER 3 000000000000000E " " "136106"
 /inspect
 /run SortBags()
+END
+VER 3 0000000000000013 " " "132130"
+/click RotBotF3
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
@@ -25,7 +25,7 @@ VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 /use item:33447
 END
 VER 3 000000000000001C "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Nishera the Garden Keeper
+//RestedXP Guides - current step has no configured targets
 END
 VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 #showtooltip

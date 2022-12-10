@@ -44,6 +44,10 @@ skills["offgcd"]["rogue"] = [
     {"name": "pick pocket", "type": "GetSpellTexture", "id": 921, "key": "f5", "modifier": "ctrl"},
 ]
 
+skills["offgcd"]["paladin"] = [
+
+]
+
 
 skills["warrior"] = [
     {"name": "battle shout", "type": "GetSpellTexture", "id": 2048, "key": "f4"},
@@ -146,9 +150,9 @@ skills["priest"] = [
 
 skills["paladin"] = [
     {"name": "blessing of might", "type": "GetSpellTexture", "id": 19740, "key": "f1"},
-    {"name": "exorcism", "type": "GetSpellTexture", "id": 879, "key": "f1", "modifier": "ctrl"},
-    {"name": "judgement of light", "type": "GetSpellTexture", "id": 20271, "key": "f2", "modifier": "ctrl"},
-    {"name": "judgement of wisdom", "type": "GetSpellTexture", "id": 53408, "key": "f3", "modifier": "ctrl"},
+    {"name": "exorcism", "type": "GetSpellTexture", "id": 879, "key": "f3", "modifier": "ctrl"},
+    {"name": "judgement of light", "type": "GetSpellTexture", "id": 20271, "key": "f1", "modifier": "ctrl"},
+    {"name": "judgement of wisdom", "type": "GetSpellTexture", "id": 53408, "key": "f2", "modifier": "ctrl"},
     {"name": "lay on hands", "type": "GetSpellTexture", "id": 633, "key": "k"},
     {"name": "purify", "type": "GetSpellTexture", "id": 1152, "key": "t"},
     {"name": "divine protection", "type": "GetSpellTexture", "id": 498, "key": "r", "modifier": "alt"},

@@ -1,10 +1,8 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[120] = {
-		},
 	},
-	["currentStep"] = 120,
+	["currentStep"] = 137,
 	["phase"] = 6,
 	["currentGuideGroup"] = "RestedXP Horde 1-30",
 	["flightPaths"] = {
@@ -12,41 +10,47 @@ RXPCData = {
 		[25] = "Crossroads, The Barrens",
 		[58] = "Zoram'gar Outpost, Ashenvale",
 		[30] = "Freewind Post, Thousand Needles",
+		[22] = "Thunder Bluff, Mulgore",
 		[42] = "Camp Mojache, Feralas",
 		[80] = "Ratchet, The Barrens",
-		[22] = "Thunder Bluff, Mulgore",
 		[23] = "Orgrimmar, Durotar",
 		[77] = "Camp Taurajo, The Barrens",
 	},
 	["JoyousJourneys"] = true,
-	["currentGuideName"] = "27-30 Lower Barrens / Thousand Needles",
+	["currentGuideName"] = "26-30 Ashenvale / Thousand Needles",
 	["stepSkip"] = {
-		[30] = true,
-		[60] = true,
-		[8] = true,
-		[16] = true,
-		[9] = true,
-		[18] = true,
-		[36] = true,
-		[72] = true,
-		[40] = true,
-		[80] = true,
-		[11] = true,
-		[22] = true,
-		[44] = true,
-		[12] = true,
+		nil, -- [1]
+		true, -- [2]
+		true, -- [3]
+		true, -- [4]
+		true, -- [5]
+		true, -- [6]
+		true, -- [7]
+		true, -- [8]
+		[58] = true,
 		[59] = true,
-		[5] = true,
-		[112] = true,
-		[67] = true,
-		[26] = true,
-		[78] = true,
-		[53] = true,
-		[100] = true,
-		[109] = true,
-		[37] = true,
-		[29] = true,
-		[81] = true,
+		[89] = true,
+		[32] = true,
+		[33] = true,
+		[97] = true,
+		[20] = true,
+		[126] = true,
+		[73] = true,
+		[90] = true,
+		[66] = true,
+		[46] = true,
+		[24] = true,
+		[107] = true,
+		[65] = true,
+		[50] = true,
+		[69] = true,
+		[102] = true,
+		[104] = true,
+		[106] = true,
+		[28] = true,
+		[83] = true,
+		[135] = true,
+		[17] = true,
 	},
 	["SoM"] = 1,
 }
@@ -142,15 +146,16 @@ RXPCSettings = {
 	},
 	["profiles"] = {
 		["Vermina - Golemagg"] = {
-			["hardcore"] = false,
 			["enableLevelUpAnnounceGroup"] = false,
 			["enableMinimapButton"] = false,
 			["checkVersions"] = false,
 			["enableTracker"] = false,
-			["enableFlyStepAnnouncements"] = false,
+			["frameHeight"] = 125.0000152587891,
+			["macroAnnounced"] = true,
 			["enableLevelUpAnnounceSolo"] = false,
 			["alwaysSendBranded"] = false,
-			["frameHeight"] = 125.0000152587891,
+			["enableFlyStepAnnouncements"] = false,
+			["hardcore"] = false,
 		},
 	},
 }

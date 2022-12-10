@@ -35,7 +35,7 @@ LBISSettings = {
 		["AfflictionWarlock"] = true,
 		["SubtletyRogue"] = true,
 	},
-	["SelectedSpec"] = "",
+	["SelectedSpec"] = "Cat Druid",
 	["minimap"] = {
 		["minimapPos"] = 180,
 		["hide"] = true,
@@ -49,5 +49,5 @@ LBISSettings = {
 	["PriorityList"] = {
 	},
 	["ShowPriority"] = true,
-	["SelectedPhase"] = "All",
+	["SelectedPhase"] = "PreRaid",
 }
