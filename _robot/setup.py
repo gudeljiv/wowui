@@ -88,8 +88,8 @@ classes = {
     "warrior", "druid", "rogue", "warlock", "mage", "hunter", "death knight", "priest", "paladin"
 }
 
-time1 = 0.5
-time2 = 1
+time1 = 0.2
+time2 = 0.5
 
 count = 0
 number = 0

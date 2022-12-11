@@ -58,8 +58,8 @@ H: 64
 Frame: FriendsFrame
 FrameLevel: 1
 Anchor: TOPLEFT
-X: 16
-Y: -116
+X: 19
+Y: -139
 W: 338
 H: 424
 Frame: nTooltip_Anchor

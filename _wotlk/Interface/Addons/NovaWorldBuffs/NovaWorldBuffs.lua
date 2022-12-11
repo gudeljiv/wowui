@@ -2059,7 +2059,7 @@ function NWB:placeSilithystMarker()
 	if (not _G["NWBSilithystMarkerMini"]) then
 		--Minimap marker.
 		local obj = CreateFrame("FRAME", "NWBSilithystMarkerMini");
-		local bg = obj:CreateTexture(nil, "MEDIUM");
+		local bg = obj:CreateTexture(nil, "ARTWORK");
 		bg:SetTexture("Interface\\Icons\\spell_nature_timestop");
 		bg:SetAllPoints(obj);
 		obj.texture = bg;
@@ -3281,6 +3281,13 @@ end
 
 function NWB:recordChronoData(trade)
 	local found;
+	local GetContainerNumSlots = GetContainerNumSlots or C_Container.GetContainerNumSlots;
+	local GetContainerItemCooldown = GetContainerItemCooldown or C_Container.GetContainerItemCooldown;
+	local GetItemCooldown = GetItemCooldown or C_Container.GetItemCooldown;
+	--GetItemCooldown is missing PTR.
+	if (not GetItemCooldown) then
+		return;
+	end
 	for bag = 0, NUM_BAG_SLOTS do
 		for slot = 1, GetContainerNumSlots(bag) do
 			local item = Item:CreateFromBagAndSlot(bag, slot);
@@ -5539,6 +5546,10 @@ function NWB:updateMinimapButton(tooltip, frame)
 			if (C_QuestLog.IsQuestFlaggedCompleted(11503)) then
 				table.insert(completedQuests, "|cFF9CD6DE" .. L["Nagrand Halaa"] .. ":  |cFF00C800Completed|r" .. ".");
 			end
+			--Wintergrasp.
+			--if (C_QuestLog.IsQuestFlaggedCompleted(13183)) then
+			--	table.insert(completedQuests, "|cFF9CD6DE" .. L["Victory in Wintergrasp"] .. ":  |cFF00C800Completed|r" .. ".");
+			--end
 		else
 			if (C_QuestLog.IsQuestFlaggedCompleted(10106)) then
 				table.insert(completedQuests, "|cFF9CD6DE" .. L["Hellfire Towers"] .. ": |cFF00C800Completed|r" .. ".");
@@ -6549,7 +6560,7 @@ function NWB:createSongflowerMarkers()
 		obj.type = k;
 		obj.name = L["Songflower"];
 		obj.subZone = v.subZone;
-		local bg = obj:CreateTexture(nil, "MEDIUM");
+		local bg = obj:CreateTexture(nil, "ARTWORK");
 		bg:SetTexture(iconLocation);
 		bg:SetAllPoints(obj);
 		obj.texture = bg;
@@ -6633,7 +6644,7 @@ function NWB:createSongflowerMarkers()
 		obj.type = k;
 		obj.name = L["Songflower"];
 		obj.subZone = v.subZone;
-		local bg = obj:CreateTexture(nil, "MEDIUM");
+		local bg = obj:CreateTexture(nil, "ARTWORK");
 		bg:SetTexture(iconLocation);
 		bg:SetAllPoints(obj);
 		obj.texture = bg;
@@ -6718,7 +6729,7 @@ function NWB:createTuberMarkers()
 		obj.type = k;
 		obj.name = L["Whipper Root Tuber"];
 		obj.subZone = v.subZone;
-		local bg = obj:CreateTexture(nil, "MEDIUM");
+		local bg = obj:CreateTexture(nil, "ARTWORK");
 		bg:SetTexture(iconLocation);
 		bg:SetAllPoints(obj);
 		obj.texture = bg;
@@ -6773,7 +6784,7 @@ function NWB:createTuberMarkers()
 		obj.type = k;
 		obj.name = L["Whipper Root Tuber"];
 		obj.subZone = v.subZone;
-		local bg = obj:CreateTexture(nil, "MEDIUM");
+		local bg = obj:CreateTexture(nil, "ARTWORK");
 		bg:SetTexture(iconLocation);
 		bg:SetAllPoints(obj);
 		obj.texture = bg;
@@ -6828,7 +6839,7 @@ function NWB:createDragonMarkers()
 		obj.type = k;
 		obj.name = L["Night Dragon's Breath"];
 		obj.subZone = v.subZone;
-		local bg = obj:CreateTexture(nil, "MEDIUM");
+		local bg = obj:CreateTexture(nil, "ARTWORK");
 		bg:SetTexture(iconLocation);
 		bg:SetAllPoints(obj);
 		obj.texture = bg;
@@ -6883,7 +6894,7 @@ function NWB:createDragonMarkers()
 		obj.type = k;
 		obj.name = L["Night Dragon's Breath"];
 		obj.subZone = v.subZone;
-		local bg = obj:CreateTexture(nil, "MEDIUM");
+		local bg = obj:CreateTexture(nil, "ARTWORK");
 		bg:SetTexture(iconLocation);
 		bg:SetAllPoints(obj);
 		obj.texture = bg;
@@ -7155,7 +7166,7 @@ function NWB:createWorldbuffMarker(type, data, layer, count)
 			--Worldmap marker.
 			local obj = CreateFrame("Frame", type .. layer .. "NWBWorldMap", WorldMapFrame);
 			obj.name = data.name;
-			local bg = obj:CreateTexture(nil, "MEDIUM");
+			local bg = obj:CreateTexture(nil, "ARTWORK");
 			bg:SetTexture(data.icon);
 			bg:SetAllPoints(obj);
 			obj.texture = bg;
@@ -7251,7 +7262,7 @@ function NWB:createWorldbuffMarker(type, data, layer, count)
 		--Worldmap marker.
 		local obj = CreateFrame("Frame", type .. "NWBWorldMap", WorldMapFrame);
 		obj.name = data.name;
-		local bg = obj:CreateTexture(nil, "MEDIUM");
+		local bg = obj:CreateTexture(nil, "ARTWORK");
 		bg:SetTexture(data.icon);
 		bg:SetAllPoints(obj);
 		obj.texture = bg;
@@ -7639,7 +7650,7 @@ local function getNextDmfCalender()
 							local zone;
 							if (event.iconTexture == 235448) then
 								zone = "Elwynn Forest";
-							elseif (event.iconTexture == 235453) then
+							elseif (event.iconTexture == 235455) then
 								zone = "Outlands";
 							else
 								zone = "Mulgore";
@@ -7656,7 +7667,7 @@ local function getNextDmfCalender()
 							local zone;
 							if (event.iconTexture == 235446) then
 								zone = "Elwynn Forest";
-							elseif (event.iconTexture == 235455) then
+							elseif (event.iconTexture == 235453) then
 								zone = "Outlands";
 							else
 								zone = "Mulgore";
@@ -7985,7 +7996,7 @@ function NWB:createDmfMarkers()
 	--Darkmoon Faire zone map marker.
 	local icon = "Interface\\AddOns\\NovaWorldBuffs\\Media\\dmf";
 	local obj = CreateFrame("Frame", "NWBDMF", WorldMapFrame);
-	local bg = obj:CreateTexture(nil, "MEDIUM");
+	local bg = obj:CreateTexture(nil, "ARTWORK");
 	bg:SetTexture(icon);
 	bg:SetAllPoints(obj);
 	obj.texture = bg;
@@ -8037,7 +8048,7 @@ function NWB:createDmfMarkers()
 	
 	--Darkmoon Faire continent marker.
 	local obj = CreateFrame("Frame", "NWBDMFContinent", WorldMapFrame);
-	local bg = obj:CreateTexture(nil, "MEDIUM");
+	local bg = obj:CreateTexture(nil, "ARTWORK");
 	bg:SetTexture(icon);
 	bg:SetAllPoints(obj);
 	obj.texture = bg;
@@ -8049,7 +8060,7 @@ function NWB:createDmfMarkers()
 	obj.tooltip:SetPoint("CENTER", obj, "CENTER", 0, 46);
 	obj.tooltip:SetFrameStrata("TOOLTIP");
 	obj.tooltip:SetFrameLevel(9);
-	obj.tooltip.fs = obj.tooltip:CreateFontString("NWBDMFContinentTooltipFS", "HIGH");
+	obj.tooltip.fs = obj.tooltip:CreateFontString("NWBDMFContinentTooltipFS", "ARTWORK");
 	obj.tooltip.fs:SetPoint("CENTER", 0, 0);
 	obj.tooltip.fs:SetFont(NWB.regionFont, 14);
 	obj.tooltip.fs:SetText("|Cff00ff00Darkmoon Faire");
@@ -8109,7 +8120,7 @@ end
 ---Buff tracking frame---
 ---===================---
 
-local NWBbuffListFrame = CreateFrame("ScrollFrame", "NWBbuffListFrame", UIParent, NWB:addBackdrop("InputScrollFrameTemplate"));
+local NWBbuffListFrame = CreateFrame("ScrollFrame", "NWBbuffListFrame", UIParent, NWB:addBackdrop("NWB_InputScrollFrameTemplate"));
 NWBbuffListFrame:Hide();
 NWBbuffListFrame:SetToplevel(true);
 NWBbuffListFrame:SetMovable(true);
@@ -8137,15 +8148,15 @@ NWBbuffListFrame:HookScript("OnUpdate", function(self, arg)
 		buffUpdateTime = GetServerTime();
 	end
 end)
-NWBbuffListFrame.fs = NWBbuffListFrame.EditBox:CreateFontString("NWBbuffListFrameFS", "HIGH");
+NWBbuffListFrame.fs = NWBbuffListFrame.EditBox:CreateFontString("NWBbuffListFrameFS", "ARTWORK");
 NWBbuffListFrame.fs:SetPoint("TOP", 0, 0);
 NWBbuffListFrame.fs:SetFont(NWB.regionFont, 14);
 NWBbuffListFrame.fs:SetText("|cffffff00" .. L["Your Current World Buffs"]);
-NWBbuffListFrame.fs2 = NWBbuffListFrame.EditBox:CreateFontString("NWBbuffListFrameFS2", "HIGH");
+NWBbuffListFrame.fs2 = NWBbuffListFrame.EditBox:CreateFontString("NWBbuffListFrameFS2", "ARTWORK");
 NWBbuffListFrame.fs2:SetPoint("TOP", 0, -16);
 NWBbuffListFrame.fs2:SetFont(NWB.regionFont, 13);
 NWBbuffListFrame.fs2:SetText("|cffffff00Mouseover char names for extra info");
-NWBbuffListFrame.fs3 = NWBbuffListFrame.EditBox:CreateFontString("NWBbuffListFrameFS3", "HIGH");
+NWBbuffListFrame.fs3 = NWBbuffListFrame.EditBox:CreateFontString("NWBbuffListFrameFS3", "ARTWORK");
 NWBbuffListFrame.fs3:SetPoint("TOPLEFT", 1, -32);
 NWBbuffListFrame.fs3:SetFont(NWB.regionFont, 13);
 --NWBbuffListFrame.fs3:SetText("");
@@ -8162,7 +8173,7 @@ NWBbuffListDragFrame.tooltip:SetPoint("CENTER", NWBbuffListDragFrame, "TOP", 0, 
 NWBbuffListDragFrame.tooltip:SetFrameStrata("TOOLTIP");
 NWBbuffListDragFrame.tooltip:SetFrameLevel(9);
 NWBbuffListDragFrame.tooltip:SetAlpha(.8);
-NWBbuffListDragFrame.tooltip.fs = NWBbuffListDragFrame.tooltip:CreateFontString("NWBbuffListDragTooltipFS", "HIGH");
+NWBbuffListDragFrame.tooltip.fs = NWBbuffListDragFrame.tooltip:CreateFontString("NWBbuffListDragTooltipFS", "ARTWORK");
 NWBbuffListDragFrame.tooltip.fs:SetPoint("CENTER", 0, 0.5);
 NWBbuffListDragFrame.tooltip.fs:SetFont(NWB.regionFont, 12);
 NWBbuffListDragFrame.tooltip.fs:SetText("Hold to drag");
@@ -8298,7 +8309,7 @@ end)
 
 NWBbuffListFrameWipeButton.tooltip = CreateFrame("Frame", "NWBbuffListResetButtonTooltip", NWBbuffListFrame, "TooltipBorderedFrameTemplate");
 NWBbuffListFrameWipeButton.tooltip:SetPoint("CENTER", NWBbuffListFrameWipeButton, "TOP", 0, 14);
-NWBbuffListFrameWipeButton.tooltip.fs = NWBbuffListFrameWipeButton.tooltip:CreateFontString("NWBbuffListDragTooltipFS", "HIGH");
+NWBbuffListFrameWipeButton.tooltip.fs = NWBbuffListFrameWipeButton.tooltip:CreateFontString("NWBbuffListDragTooltipFS", "ARTWORK");
 NWBbuffListFrameWipeButton.tooltip.fs:SetPoint("CENTER", 0, 0.5);
 NWBbuffListFrameWipeButton.tooltip.fs:SetFont(NWB.regionFont, 12);
 NWBbuffListFrameWipeButton.tooltip:SetFrameLevel(132);
@@ -8363,7 +8374,7 @@ function NWB:createBuffsLineFrame(type, data)
 	if (not _G[type .. "NWBBuffsLine"]) then
 		local obj = CreateFrame("Frame", type .. "NWBBuffsLine", NWBbuffListFrame.EditBox);
 		obj.id = type;
-		local bg = obj:CreateTexture(nil, "HIGH");
+		local bg = obj:CreateTexture(nil, "ARTWORK");
 		bg:SetAllPoints(obj);
 		obj.texture = bg;
 		obj.fs = obj:CreateFontString(type .. "NWBBuffsLineFS", "ARTWORK");
@@ -8459,7 +8470,7 @@ function NWB:openBuffListFrame()
 		NWBbuffListFrame:SetHeight(NWB.db.global.buffWindowHeight);
 		NWBbuffListFrame:SetWidth(NWB.db.global.buffWindowWidth);
 		local fontSize = false;
-		NWBbuffListFrame.EditBox:SetFont(NWB.regionFont, 14);
+		NWBbuffListFrame.EditBox:SetFont(NWB.regionFont, 14, "");
 		NWBbuffListFrame.EditBox:SetWidth(NWBbuffListFrame:GetWidth() - 30);
 		NWBbuffListFrame:Show();
 		--Changing scroll position requires a slight delay.
@@ -9219,7 +9230,7 @@ local gameVersions = {
 ---====================---
 
 --This is actually the timers frame, it was orginally only used on layered servers hence the name.
-local NWBlayerFrame = CreateFrame("ScrollFrame", "NWBlayerFrame", UIParent, NWB:addBackdrop("InputScrollFrameTemplate"));
+local NWBlayerFrame = CreateFrame("ScrollFrame", "NWBlayerFrame", UIParent, NWB:addBackdrop("NWB_InputScrollFrameTemplate"));
 NWBlayerFrame:Hide();
 NWBlayerFrame:SetToplevel(true);
 NWBlayerFrame:SetMovable(true);
@@ -9253,16 +9264,16 @@ NWBlayerFrame:HookScript("OnUpdate", function(self, arg)
 	end
 end)
 
-NWBlayerFrame.fs = NWBlayerFrame.EditBox:CreateFontString("NWBlayerFrameFS", "HIGH");
+NWBlayerFrame.fs = NWBlayerFrame.EditBox:CreateFontString("NWBlayerFrameFS", "ARTWORK");
 NWBlayerFrame.fs:SetPoint("TOP", 0, -0);
 NWBlayerFrame.fs:SetFont(NWB.regionFont, 14);
 NWBlayerFrame.fs:SetText(NWB.prefixColor .. "NovaWorldBuffs v" .. version .. "|r");
-NWBlayerFrame.fs2 = NWBlayerFrame.EditBox:CreateFontString("NWBlayerFrameFS", "HIGH");
+NWBlayerFrame.fs2 = NWBlayerFrame.EditBox:CreateFontString("NWBlayerFrameFS", "ARTWORK");
 NWBlayerFrame.fs2:SetPoint("TOPLEFT", 0, -14);
 NWBlayerFrame.fs2:SetFont(NWB.regionFont, 14);
 NWBlayerFrame.fs2:SetText("|cFF9CD6DETarget any NPC to see your current layer.|r");
-NWBlayerFrame.fs3 = NWBlayerFrame:CreateFontString("NWBbuffListFrameFS", "HIGH");
---NWBlayerFrame.fs3 = NWBlayerFrame.EditBox:CreateFontString("NWBbuffListFrameFS", "HIGH");
+NWBlayerFrame.fs3 = NWBlayerFrame:CreateFontString("NWBbuffListFrameFS", "ARTWORK");
+--NWBlayerFrame.fs3 = NWBlayerFrame.EditBox:CreateFontString("NWBbuffListFrameFS", "ARTWORK");
 NWBlayerFrame.fs3:SetPoint("BOTTOM", 0, 20);
 NWBlayerFrame.fs3:SetFont(NWB.regionFont, 14);
 NWBlayerFrame.fs3:SetText("|cFFDEDE42" .. L["layerFrameMsgOne"] .. "\n" .. L["layerFrameMsgTwo"]);
@@ -9283,7 +9294,7 @@ NWBlayerDragFrame.tooltip:SetPoint("CENTER", NWBlayerDragFrame, "TOP", 0, 12);
 NWBlayerDragFrame.tooltip:SetFrameStrata("TOOLTIP");
 NWBlayerDragFrame.tooltip:SetFrameLevel(9);
 NWBlayerDragFrame.tooltip:SetAlpha(.8);
-NWBlayerDragFrame.tooltip.fs = NWBlayerDragFrame.tooltip:CreateFontString("NWBlayerDragTooltipFS", "HIGH");
+NWBlayerDragFrame.tooltip.fs = NWBlayerDragFrame.tooltip:CreateFontString("NWBlayerDragTooltipFS", "ARTWORK");
 NWBlayerDragFrame.tooltip.fs:SetPoint("CENTER", 0, 0.5);
 NWBlayerDragFrame.tooltip.fs:SetFont(NWB.regionFont, 12);
 NWBlayerDragFrame.tooltip.fs:SetText("Hold to drag");
@@ -9457,7 +9468,7 @@ NWBGuildLayersButton:SetScript("OnHide", function(self)
 end)
 
 --Copy Paste.
-local NWBCopyFrame = CreateFrame("ScrollFrame", "NWBCopyFrame", UIParent, NWB:addBackdrop("InputScrollFrameTemplate"));
+local NWBCopyFrame = CreateFrame("ScrollFrame", "NWBCopyFrame", UIParent, NWB:addBackdrop("NWB_InputScrollFrameTemplate"));
 NWBCopyFrame:Hide();
 NWBCopyFrame:SetToplevel(true);
 NWBCopyFrame:SetMovable(true);
@@ -9501,7 +9512,7 @@ NWBCopyDragFrame:SetBackdrop({
 });
 NWBCopyDragFrame:SetBackdropColor(0,0,0,0.9);
 NWBCopyDragFrame:SetBackdropBorderColor(0.235, 0.235, 0.235);
-NWBCopyDragFrame.fs = NWBCopyDragFrame:CreateFontString("NWBCopyDragFrameFS", "HIGH");
+NWBCopyDragFrame.fs = NWBCopyDragFrame:CreateFontString("NWBCopyDragFrameFS", "ARTWORK");
 NWBCopyDragFrame.fs:SetPoint("CENTER", 0, 0);
 NWBCopyDragFrame.fs:SetFont(NWB.regionFont, 14);
 NWBCopyDragFrame.fs:SetText(NWB.prefixColor .. "NovaWorldBuffs Copy Frame|r");
@@ -9592,7 +9603,7 @@ function NWB:openCopyFrame()
 	else
 		NWBCopyFrame:SetHeight(300);
 		NWBCopyFrame:SetWidth(450);
-		NWBCopyFrame.EditBox:SetFont(NWB.regionFont, 14);
+		NWBCopyFrame.EditBox:SetFont(NWB.regionFont, 14, "");
 		NWBCopyFrame.EditBox:SetWidth(NWBCopyFrame:GetWidth() - 30);
 		NWBCopyFrame:Show();
 		NWB:recalcCopyFrame();
@@ -9661,7 +9672,7 @@ function NWB:openLayerFrame()
 		NWBlayerFrame:SetWidth(NWB.db.global.timerWindowWidth);
 		NWB:syncBuffsWithCurrentDuration();
 		local fontSize = false
-		NWBlayerFrame.EditBox:SetFont(NWB.regionFont, 14);
+		NWBlayerFrame.EditBox:SetFont(NWB.regionFont, 14, "");
 		NWB:recalclayerFrame();
 		NWBlayerFrame.EditBox:SetWidth(NWBlayerFrame:GetWidth() - 30);
 		NWBlayerFrame:Show();
@@ -11041,6 +11052,8 @@ function NWB:setCurrentLayerText(unit)
 			end
 			NWB.currentLayer = count;
 			NWB_CurrentLayer = count;
+			local me = UnitName("player");
+			NWB.hasL[me .. "-" .. GetRealmName()] = tostring(count);
 			NWB.lastKnownLayer = count;
 			NWB.lastKnownLayerID = k;
 			if ((GetServerTime() - NWB.lastJoinedGroup) > NWB.lastJoinedGroupCooldown) then
@@ -11455,7 +11468,7 @@ function NWB:resetLayerMaps()
 end
 
 --Layer map display.
-local NWBLayerMapFrame = CreateFrame("ScrollFrame", "NWBLayerMapFrame", UIParent, NWB:addBackdrop("InputScrollFrameTemplate"));
+local NWBLayerMapFrame = CreateFrame("ScrollFrame", "NWBLayerMapFrame", UIParent, NWB:addBackdrop("NWB_InputScrollFrameTemplate"));
 NWBLayerMapFrame:Hide();
 NWBLayerMapFrame:SetToplevel(true);
 NWBLayerMapFrame:SetMovable(true);
@@ -11485,7 +11498,7 @@ NWBLayerMapFrame:HookScript("OnUpdate", function(self, arg)
 		layerMapUpdateTime = GetServerTime();
 	end
 end)
-NWBLayerMapFrame.fs = NWBLayerMapFrame:CreateFontString("NWBLayerMapFrameFS", "HIGH");
+NWBLayerMapFrame.fs = NWBLayerMapFrame:CreateFontString("NWBLayerMapFrameFS", "ARTWORK");
 NWBLayerMapFrame.fs:SetPoint("TOP", 0, -0);
 NWBLayerMapFrame.fs:SetFont(NWB.regionFont, 14);
 NWBLayerMapFrame.fs:SetText("|cFFFFFF00Layer Mapping for " .. GetRealmName() .. "|r");
@@ -11502,7 +11515,7 @@ NWBLayerMapDragFrame.tooltip:SetPoint("CENTER", NWBLayerMapDragFrame, "TOP", 0, 
 NWBLayerMapDragFrame.tooltip:SetFrameStrata("TOOLTIP");
 NWBLayerMapDragFrame.tooltip:SetFrameLevel(9);
 NWBLayerMapDragFrame.tooltip:SetAlpha(.8);
-NWBLayerMapDragFrame.tooltip.fs = NWBLayerMapDragFrame.tooltip:CreateFontString("NWBLayerMapDragTooltipFS", "HIGH");
+NWBLayerMapDragFrame.tooltip.fs = NWBLayerMapDragFrame.tooltip:CreateFontString("NWBLayerMapDragTooltipFS", "ARTWORK");
 NWBLayerMapDragFrame.tooltip.fs:SetPoint("CENTER", 0, 0.5);
 NWBLayerMapDragFrame.tooltip.fs:SetFont(NWB.regionFont, 12);
 NWBLayerMapDragFrame.tooltip.fs:SetText("Hold to drag");
@@ -11566,7 +11579,7 @@ function NWB:openLayerMapFrame()
 		NWBLayerMapFrame:SetHeight(300);
 		NWBLayerMapFrame:SetWidth(450);
 		local fontSize = false
-		NWBLayerMapFrame.EditBox:SetFont(NWB.regionFont, 14);
+		NWBLayerMapFrame.EditBox:SetFont(NWB.regionFont, 14, "");
 		NWBLayerMapFrame.EditBox:SetWidth(NWBLayerMapFrame:GetWidth() - 30);
 		NWBLayerMapFrame:Show();
 		NWB:recalcLayerMapFrame()
@@ -11825,24 +11838,24 @@ end
 --	return true;
 --end
 	
-local MinimapLayerFrame = CreateFrame("Frame", "MinimapLayerFrame", Minimap);
-MinimapLayerFrame:SetPoint("TOPLEFT", -10, -5);
+local MinimapLayerFrame = CreateFrame("Frame", "MinimapLayerFrame", Minimap, "ThinGoldEdgeTemplate");
+MinimapLayerFrame:SetPoint("BOTTOM", 2, 4);
 MinimapLayerFrame:SetFrameStrata("HIGH");
 MinimapLayerFrame:SetFrameLevel(9);
 MinimapLayerFrame:SetMovable(true);
 MinimapLayerFrame.fs = MinimapLayerFrame:CreateFontString("MinimapLayerFrameFS", "ARTWORK");
 MinimapLayerFrame.fs:SetPoint("CENTER", 0, 0);
 MinimapLayerFrame.fs:SetFont("Fonts\\ARIALN.ttf", 10); --No region font here, "Layer" in english always.
-MinimapLayerFrame.fs:SetText("NL");
+MinimapLayerFrame.fs:SetText("No Layer");
 MinimapLayerFrame:SetWidth(46);
 MinimapLayerFrame:SetHeight(17);
 MinimapLayerFrame:Hide();
 MinimapLayerFrame.tooltip = CreateFrame("Frame", "NWBVersionDragTooltip", MinimapLayerFrame, "TooltipBorderedFrameTemplate");
 MinimapLayerFrame.tooltip:SetPoint("CENTER", MinimapLayerFrame, "TOP", 0, 12);
 MinimapLayerFrame.tooltip:SetFrameStrata("TOOLTIP");
-MinimapLayerFrame.tooltip:SetFrameLevel(12);
+MinimapLayerFrame.tooltip:SetFrameLevel(9);
 --MinimapLayerFrame.tooltip:SetAlpha(.9);
-MinimapLayerFrame.tooltip.fs = MinimapLayerFrame.tooltip:CreateFontString("NWBVersionDragTooltipFS", "HIGH");
+MinimapLayerFrame.tooltip.fs = MinimapLayerFrame.tooltip:CreateFontString("NWBVersionDragTooltipFS", "ARTWORK");
 MinimapLayerFrame.tooltip.fs:SetPoint("CENTER", 0, 0.5);
 MinimapLayerFrame.tooltip.fs:SetFont(NWB.regionFont, 10);
 MinimapLayerFrame.tooltip.fs:SetText("Target a NPC to\nupdate your layer");
@@ -11891,12 +11904,12 @@ function NWB:recalcMinimapLayerFrame(zoneID, event, unit)
 	if ((GetServerTime() - NWB.lastJoinedGroup) < 5) then
 		--Don't update minimap frame for a few seconds after joining group.
 		NWB:toggleMinimapLayerFrame("hide");
-		MinimapLayerFrame.fs:SetText("NL");
+		MinimapLayerFrame.fs:SetText("No Layer");
 		return;
 	end
 	if (not NWB.db.global.minimapLayerFrame or not NWB.isLayered) then
 		NWB:toggleMinimapLayerFrame("hide");
-		MinimapLayerFrame.fs:SetText("NL");
+		MinimapLayerFrame.fs:SetText("No Layer");
 		return;
 	end
 	local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
@@ -11913,6 +11926,8 @@ function NWB:recalcMinimapLayerFrame(zoneID, event, unit)
 				end
 				NWB.currentLayer = count;
 				NWB_CurrentLayer = count;
+				local me = UnitName("player");
+				NWB.hasL[me .. "-" .. GetRealmName()] = tostring(count);
 				NWB.lastKnownLayer = count;
 				NWB.lastKnownLayerID = k;
 				NWB.lastKnownLayerTime = GetServerTime();
@@ -11924,15 +11939,15 @@ function NWB:recalcMinimapLayerFrame(zoneID, event, unit)
 	if (foundLayer or (NWB.faction == "Horde" and zone == 1454)
 			or (NWB.faction == "Alliance" and zone == 1453)) then
 		if (NWB.currentLayer > 0) then
-			MinimapLayerFrame.fs:SetText(NWB.mmColor .. "L" .. NWB.lastKnownLayer);
+			MinimapLayerFrame.fs:SetText(NWB.mmColor .. "Layer " .. NWB.lastKnownLayer);
 			MinimapLayerFrame.fs:SetFont("Fonts\\ARIALN.ttf", 12);
 			NWB_CurrentLayer = NWB.lastKnownLayer;
 		elseif (layerNum > 0) then
-			MinimapLayerFrame.fs:SetText(NWB.mmColor .. "L" .. layerNum);
+			MinimapLayerFrame.fs:SetText(NWB.mmColor .. "Layer " .. layerNum);
 			MinimapLayerFrame.fs:SetFont("Fonts\\ARIALN.ttf", 12);
 			NWB_CurrentLayer = layerNum;
 		else
-			MinimapLayerFrame.fs:SetText(NWB.mmColor .. "NL");
+			MinimapLayerFrame.fs:SetText(NWB.mmColor .. "No Layer");
 			MinimapLayerFrame.fs:SetFont("Fonts\\ARIALN.ttf", 10);
 			NWB_CurrentLayer = 0;
 		end
@@ -11953,10 +11968,12 @@ function NWB:recalcMinimapLayerFrame(zoneID, event, unit)
 				if (v.layerMap and next(v.layerMap)) then
 					for zone, map in pairs(v.layerMap) do
 						if (zone == zoneID) then
-							MinimapLayerFrame.fs:SetText("L" .. backupCount);
+							MinimapLayerFrame.fs:SetText("Layer " .. backupCount);
 							MinimapLayerFrame.fs:SetFont("Fonts\\ARIALN.ttf", 12);
 							foundBackup = true;
 							NWB_CurrentLayer = backupCount;
+							local me = UnitName("player");
+							NWB.hasL[me .. "-" .. GetRealmName()] = tostring(backupCount);
 							if (NWB.currentLayerShared ~= backupCount) then
 								NWB:sendL(backupCount, "recalc minimap backup");
 								NWB.currentLayerShared = backupCount;
@@ -12020,7 +12037,7 @@ function SlashCmdList.NWBLAYERSCMD(msg, editBox)
 end
 
 --Version guild display.
-local NWBVersionFrame = CreateFrame("ScrollFrame", "NWBVersionFrame", UIParent, NWB:addBackdrop("InputScrollFrameTemplate"));
+local NWBVersionFrame = CreateFrame("ScrollFrame", "NWBVersionFrame", UIParent, NWB:addBackdrop("NWB_InputScrollFrameTemplate"));
 NWBVersionFrame:Hide();
 NWBVersionFrame:SetToplevel(true);
 NWBVersionFrame:SetMovable(true);
@@ -12050,7 +12067,7 @@ NWBVersionFrame:HookScript("OnUpdate", function(self, arg)
 		versionUpdateTime = GetServerTime();
 	end
 end)
-NWBVersionFrame.fs = NWBVersionFrame:CreateFontString("NWBVersionFrameFS", "HIGH");
+NWBVersionFrame.fs = NWBVersionFrame:CreateFontString("NWBVersionFrameFS", "ARTWORK");
 NWBVersionFrame.fs:SetPoint("TOP", 0, -0);
 NWBVersionFrame.fs:SetFont(NWB.regionFont, 14);
 NWBVersionFrame.fs:SetText("|cFFFFFF00Guild versions seen since logon|r");
@@ -12067,7 +12084,7 @@ NWBVersionDragFrame.tooltip:SetPoint("CENTER", NWBVersionDragFrame, "TOP", 0, 12
 NWBVersionDragFrame.tooltip:SetFrameStrata("TOOLTIP");
 NWBVersionDragFrame.tooltip:SetFrameLevel(9);
 NWBVersionDragFrame.tooltip:SetAlpha(.8);
-NWBVersionDragFrame.tooltip.fs = NWBVersionDragFrame.tooltip:CreateFontString("NWBVersionDragTooltipFS", "HIGH");
+NWBVersionDragFrame.tooltip.fs = NWBVersionDragFrame.tooltip:CreateFontString("NWBVersionDragTooltipFS", "ARTWORK");
 NWBVersionDragFrame.tooltip.fs:SetPoint("CENTER", 0, 0.5);
 NWBVersionDragFrame.tooltip.fs:SetFont(NWB.regionFont, 12);
 NWBVersionDragFrame.tooltip.fs:SetText("Hold to drag");
@@ -12128,7 +12145,7 @@ function NWB:openVersionFrame()
 		NWBVersionFrame:SetHeight(300);
 		NWBVersionFrame:SetWidth(450);
 		local fontSize = false
-		NWBVersionFrame.EditBox:SetFont(NWB.regionFont, 14);
+		NWBVersionFrame.EditBox:SetFont(NWB.regionFont, 14, "");
 		NWBVersionFrame.EditBox:SetWidth(NWBVersionFrame:GetWidth() - 30);
 		NWBVersionFrame:Show();
 		NWB:recalcVersionFrame();
@@ -13132,7 +13149,7 @@ function NWB:createNaxxMarkers()
 	local iconLocation = "Interface\\AddOns\\NovaWorldBuffs\\Media\\Naxx.tga";
 	--Worldmap marker.
 	local obj = CreateFrame("Frame", "NWBNaxxMarker", WorldMapFrame);
-	local bg = obj:CreateTexture(nil, "MEDIUM");
+	local bg = obj:CreateTexture(nil, "ARTWORK");
 	bg:SetTexture(iconLocation);
 	bg:SetAllPoints(obj);
 	obj.texture = bg;
@@ -13158,7 +13175,7 @@ function NWB:createNaxxMarkers()
 	
 	--Minimap marker.
 	local obj = CreateFrame("FRAME", "NWBNaxxMarkerMini");
-	local bg = obj:CreateTexture(nil, "MEDIUM");
+	local bg = obj:CreateTexture(nil, "ARTWORK");
 	bg:SetTexture(iconLocation);
 	bg:SetAllPoints(obj);
 	obj.texture = bg;
@@ -13426,16 +13443,16 @@ if (NWB.isClassic) then
 	NWBDmfFrame:SetBackdropColor(0,0,0,.6);
 	NWBDmfFrame:SetFrameLevel(128);
 	NWBDmfFrame:SetFrameStrata("MEDIUM");
-	NWBDmfFrame.fs = NWBDmfFrame:CreateFontString("NWBDmfFrameFS", "HIGH");
+	NWBDmfFrame.fs = NWBDmfFrame:CreateFontString("NWBDmfFrameFS", "ARTWORK");
 	NWBDmfFrame.fs:SetPoint("TOP", 0, -3);
 	NWBDmfFrame.fs:SetFont(NWB.regionFont, 14);
 	NWBDmfFrame.fs:SetText(NWB.prefixColor .. "NWB Stuck Helper");
-	NWBDmfFrame.fs2 = NWBDmfFrame:CreateFontString("NWBDmfFrameFS2", "HIGH");
+	NWBDmfFrame.fs2 = NWBDmfFrame:CreateFontString("NWBDmfFrameFS2", "ARTWORK");
 	NWBDmfFrame.fs2:SetPoint("TOP", 0, -65);
 	NWBDmfFrame.fs2:SetFont(NWB.regionFont, 14);
 	local iwtKeybind = "";
 	NWBDmfFrame.fs2:SetText("Current Interact With Target keybind: |cffffa500" .. iwtKeybind);
-	NWBDmfFrame.fs3 = NWBDmfFrame:CreateFontString("NWBDmfFrameFS", "HIGH");
+	NWBDmfFrame.fs3 = NWBDmfFrame:CreateFontString("NWBDmfFrameFS", "ARTWORK");
 	NWBDmfFrame.fs3:SetPoint("TOP", 0, -19);
 	NWBDmfFrame.fs3:SetFont(NWB.regionFont, 14);
 	NWBDmfFrame.fs3:SetText("|cffffff00Target Sayge and be in interact range\nbefore starting.");
@@ -13460,7 +13477,7 @@ if (NWB.isClassic) then
 	NWBDmfDragFrame.tooltip:SetFrameStrata("TOOLTIP");
 	NWBDmfDragFrame.tooltip:SetFrameLevel(9);
 	NWBDmfDragFrame.tooltip:SetAlpha(.8);
-	NWBDmfDragFrame.tooltip.fs = NWBDmfDragFrame.tooltip:CreateFontString("NWBDmfDragTooltipFS", "HIGH");
+	NWBDmfDragFrame.tooltip.fs = NWBDmfDragFrame.tooltip:CreateFontString("NWBDmfDragTooltipFS", "ARTWORK");
 	NWBDmfDragFrame.tooltip.fs:SetPoint("CENTER", 0, 0.5);
 	NWBDmfDragFrame.tooltip.fs:SetFont(NWB.regionFont, 12);
 	NWBDmfDragFrame.tooltip.fs:SetText("Hold to drag");

@@ -27,6 +27,9 @@ local c = addon.c;
 local version = GetAddOnMetadata("NovaWorldBuffs", "Version") or 9999;
 local L = LibStub("AceLocale-3.0"):GetLocale("NovaWorldBuffs");
 local time, elapsed = 0, 0;
+local GetContainerNumFreeSlots = GetContainerNumFreeSlots or C_Container.GetContainerNumFreeSlots;
+local GetContainerNumSlots = GetContainerNumSlots or C_Container.GetContainerNumSlots;
+
 --TBC compatibility.
 local IsQuestFlaggedCompleted = IsQuestFlaggedCompleted;
 if (C_QuestLog.IsQuestFlaggedCompleted) then
@@ -2198,7 +2201,7 @@ function NWB:cleanupSettingsData()
 	end
 end
 
-local NWBTimerLogFrame = CreateFrame("ScrollFrame", "NWBTimerLogFrame", UIParent, NWB:addBackdrop("InputScrollFrameTemplate"));
+local NWBTimerLogFrame = CreateFrame("ScrollFrame", "NWBTimerLogFrame", UIParent, NWB:addBackdrop("NWB_InputScrollFrameTemplate"));
 NWBTimerLogFrame:Hide();
 NWBTimerLogFrame:SetToplevel(true);
 NWBTimerLogFrame:SetMovable(true);
@@ -2228,7 +2231,7 @@ NWBTimerLogFrame:HookScript("OnUpdate", function(self, arg)
 		timerLogUpdateTime = GetServerTime();
 	end
 end)
-NWBTimerLogFrame.fs = NWBTimerLogFrame:CreateFontString("NWBTimerLogFrameFS", "HIGH");
+NWBTimerLogFrame.fs = NWBTimerLogFrame:CreateFontString("NWBTimerLogFrameFS", "ARTWORK");
 NWBTimerLogFrame.fs:SetPoint("TOP", 0, -0);
 NWBTimerLogFrame.fs:SetFont(NWB.regionFont, 14);
 NWBTimerLogFrame.fs:SetText("|cFFFFFF00NovaWorldBuffs Timer Log|r");
@@ -2245,7 +2248,7 @@ NWBTimerLogDragFrame.tooltip:SetPoint("CENTER", NWBTimerLogDragFrame, "TOP", 0, 
 NWBTimerLogDragFrame.tooltip:SetFrameStrata("TOOLTIP");
 NWBTimerLogDragFrame.tooltip:SetFrameLevel(9);
 NWBTimerLogDragFrame.tooltip:SetAlpha(.8);
-NWBTimerLogDragFrame.tooltip.fs = NWBTimerLogDragFrame.tooltip:CreateFontString("NWBTimerLogDragTooltipFS", "HIGH");
+NWBTimerLogDragFrame.tooltip.fs = NWBTimerLogDragFrame.tooltip:CreateFontString("NWBTimerLogDragTooltipFS", "ARTWORK");
 NWBTimerLogDragFrame.tooltip.fs:SetPoint("CENTER", 0, 0.5);
 NWBTimerLogDragFrame.tooltip.fs:SetFont(NWB.regionFont, 12);
 NWBTimerLogDragFrame.tooltip.fs:SetText("Hold to drag");
@@ -2344,7 +2347,7 @@ function NWB:openTimerLogFrame()
 		NWBTimerLogFrame:SetHeight(300);
 		NWBTimerLogFrame:SetWidth(590);
 		local fontSize = false
-		NWBTimerLogFrame.EditBox:SetFont(NWB.regionFont, 14);
+		NWBTimerLogFrame.EditBox:SetFont(NWB.regionFont, 14, "");
 		NWBTimerLogFrame.EditBox:SetWidth(NWBTimerLogFrame:GetWidth() - 30);
 		NWBTimerLogFrame:Show();
 		NWB:recalcTimerLogFrame();
@@ -3105,7 +3108,7 @@ function NWB:getBagSlots()
 	return freeSlots, totalSlots;
 end
 
-local NWBLFrame = CreateFrame("ScrollFrame", "NWBLFrame", UIParent, NWB:addBackdrop("InputScrollFrameTemplate"));
+local NWBLFrame = CreateFrame("ScrollFrame", "NWBLFrame", UIParent, NWB:addBackdrop("NWB_InputScrollFrameTemplate"));
 NWBLFrame:Hide();
 NWBLFrame:SetToplevel(true);
 NWBLFrame:SetMovable(true);
@@ -3135,7 +3138,7 @@ NWBLFrame:HookScript("OnUpdate", function(self, arg)
 		NWB:recalcLFrame();
 	end
 end)
-NWBLFrame.fs = NWBLFrame:CreateFontString("NWBLFrameFS", "HIGH");
+NWBLFrame.fs = NWBLFrame:CreateFontString("NWBLFrameFS", "ARTWORK");
 NWBLFrame.fs:SetPoint("TOP", 0, -0);
 NWBLFrame.fs:SetFont(NWB.regionFont, 14);
 NWBLFrame.fs:SetText("|cFFFFFF00Guild Layers|r");
@@ -3152,7 +3155,7 @@ NWBLDragFrame.tooltip:SetPoint("CENTER", NWBLDragFrame, "TOP", 0, 12);
 NWBLDragFrame.tooltip:SetFrameStrata("TOOLTIP");
 NWBLDragFrame.tooltip:SetFrameLevel(9);
 NWBLDragFrame.tooltip:SetAlpha(.8);
-NWBLDragFrame.tooltip.fs = NWBLDragFrame.tooltip:CreateFontString("NWBLDragTooltipFS", "HIGH");
+NWBLDragFrame.tooltip.fs = NWBLDragFrame.tooltip:CreateFontString("NWBLDragTooltipFS", "ARTWORK");
 NWBLDragFrame.tooltip.fs:SetPoint("CENTER", 0, 0.5);
 NWBLDragFrame.tooltip.fs:SetFont(NWB.regionFont, 12);
 NWBLDragFrame.tooltip.fs:SetText("Hold to drag");
@@ -3246,7 +3249,7 @@ function NWB:openLFrame()
 		NWBLFrame:SetHeight(400);
 		NWBLFrame:SetWidth(400);
 		local fontSize = false
-		NWBLFrame.EditBox:SetFont(NWB.regionFont, 14);
+		NWBLFrame.EditBox:SetFont(NWB.regionFont, 14, "");
 		NWBLFrame.EditBox:SetWidth(NWBLFrame:GetWidth() - 30);
 		NWBLFrame:Show();
 		NWB:recalcLFrame();
@@ -3896,7 +3899,7 @@ function NWB:createTerokkarMarker(type, data, layer, count)
 			--Worldmap marker.
 			local obj = CreateFrame("Frame", type .. layer .. "NWBTerokkarMap", WorldMapFrame);
 			obj.name = data.name;
-			local bg = obj:CreateTexture(nil, "MEDIUM");
+			local bg = obj:CreateTexture(nil, "ARTWORK");
 			bg:SetTexture(data.icon);
 			bg:SetTexCoord(0.1, 0.6, 0.1, 0.6);
 			bg:SetAllPoints(obj);
@@ -4020,7 +4023,7 @@ function NWB:createTerokkarMarker(type, data, layer, count)
 			--Worldmap marker.
 			local obj = CreateFrame("Frame", type .. "NWBTerokkarMap", WorldMapFrame);
 			obj.name = data.name;
-			local bg = obj:CreateTexture(nil, "MEDIUM");
+			local bg = obj:CreateTexture(nil, "ARTWORK");
 			bg:SetTexture(data.icon);
 			bg:SetTexCoord(0.1, 0.6, 0.1, 0.6);
 			bg:SetAllPoints(obj);
@@ -4986,7 +4989,7 @@ end
 function NWB:createShatDailyMarkers()
 	if (not _G["NWBDailyMap"]) then
 		local obj = CreateFrame("Frame", "NWBDailyMap", WorldMapFrame);
-		local bg = obj:CreateTexture(nil, "MEDIUM");
+		local bg = obj:CreateTexture(nil, "ARTWORK");
 		bg:SetTexture("Interface\\AddOns\\NovaWorldBuffs\\Media\\portalgreen");
 		bg:SetAllPoints(obj);
 		obj.texture = bg;
@@ -5053,7 +5056,7 @@ function NWB:createShatDailyMarkers()
 	end
 	if (not _G["NWBHeroicMap"]) then
 		local obj = CreateFrame("Frame", "NWBHeroicMap", WorldMapFrame);
-		local bg = obj:CreateTexture(nil, "MEDIUM");
+		local bg = obj:CreateTexture(nil, "ARTWORK");
 		bg:SetTexture("Interface\\AddOns\\NovaWorldBuffs\\Media\\portalred");
 		bg:SetAllPoints(obj);
 		obj.texture = bg;

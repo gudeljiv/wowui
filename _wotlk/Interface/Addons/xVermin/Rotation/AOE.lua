@@ -1,5 +1,5 @@
 local _, xVermin = ...
-local minRange, maxRange, unitcasting, unit, inRange, range, targetcasting
+local minRange, maxRange, unitcasting, unit, inRange, range, targetcasting, rangecasting
 
 local t = {
 	'Critter',
@@ -13,10 +13,11 @@ local t = {
 -- 2 = Trade, 11.11 yards
 -- 3 = Duel, 9.9 yards
 -- 4 = Follow, 28 yards
-xVermin.AOE = function(range)
+xVermin.AOE = function(range, casting)
 	range = range or 5
 	inRange = 0
-	xVermin.rangecasting = 0
+	rangecasting = 0
+	casting = casting or false
 
 	for i = 1, 40 do
 		unit = 'nameplate' .. i
@@ -27,7 +28,7 @@ xVermin.AOE = function(range)
 
 			if unitcasting then
 				if not targetcasting then
-					xVermin.rangecasting = xVermin.rangecasting + 1
+					rangecasting = rangecasting + 1
 				else
 					if (xVermin.Class == 'WARRIOR') then
 						local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance
@@ -35,13 +36,13 @@ xVermin.AOE = function(range)
 						local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
 						if defensive or (battle and IsEquippedItemType('Shields')) then
 							if IsSpellInRange('Shield Bash', 'target') == 0 or select(2, GetSpellCooldown('Shield Bash')) > 0 then
-								xVermin.rangecasting = xVermin.rangecasting + 1
+								rangecasting = rangecasting + 1
 							end
 						end
 					end
 					if (xVermin.Class == 'DEATHKNIGHT') then
 						if IsSpellInRange('Mind Freeze', 'target') == 0 or select(2, GetSpellCooldown('Mind Freeze')) > 0 then
-							xVermin.rangecasting = xVermin.rangecasting + 1
+							rangecasting = rangecasting + 1
 						end
 					end
 				end
@@ -59,14 +60,12 @@ xVermin.AOE = function(range)
 			end
 		end
 	end
-	if xVermin.rangecasting > 0 then
+	if rangecasting > 0 then
 		RotationFrame_AOERANGECASTING:SetBackdropColor(0, 1, 0.5, 1)
-		xVermin.R6_Occupied = true
 	else
-		xVermin.R6_Occupied = false
 		RotationFrame_AOERANGECASTING:SetBackdropColor(1, 1, 1, 1)
 	end
-	return inRange
+	return casting and rangecasting or inRange
 end
 xAOE = xVermin.AOE
 
@@ -99,7 +98,16 @@ aoe.text:SetFont(xVermin.Config.font.arial, 22, 'NONE')
 aoe.text:SetPoint('CENTER', AOE_TARGETS, 'CENTER', 0, 0)
 aoe.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
-local aoe_number
+aoe_casting = CreateFrame('Frame', 'AOE_TARGETS_CASTING')
+aoe_casting:SetPoint('RIGHT', PlayerFrame, 'LEFT', 23, -3)
+aoe_casting:SetWidth(0)
+aoe_casting:SetHeight(0)
+aoe_casting.text = aoe_casting:CreateFontString(nil, 'ARTWORK')
+aoe_casting.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
+aoe_casting.text:SetPoint('CENTER', AOE_TARGETS_CASTING, 'CENTER', 0, 0)
+aoe_casting.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+
+local aoe_number, aoe_casting_number
 xVermin.CheckIfLoadedWithTimer(
 	'RotationFrame2',
 	function()
@@ -124,11 +132,13 @@ xVermin.CheckIfLoadedWithTimer(
 				end
 
 				aoe_number = 0
+				aoe_casting_number = 0
 				if IsAltKeyDown() or ChatFrame1EditBox:IsVisible() or IsMounted() or haveBuff then
 					RotationFrame2:SetBackdropColor(1, 1, 1, 1) -- white
 				else
 					if InCombatLockdown() then
 						aoe_number = xVermin.AOE(skills_range[xVermin.Class])
+						aoe_casting_number = xVermin.AOE(skills_range[xVermin.Class], true)
 						if aoe_number > 1 then
 							RotationFrame2:SetBackdropColor(1, 0, 0, 1) -- red --> DO AOE
 						else
@@ -141,6 +151,10 @@ xVermin.CheckIfLoadedWithTimer(
 				aoe.text:SetText(aoe_number)
 				aoe:SetWidth(aoe.text:GetStringWidth())
 				aoe:SetHeight(aoe.text:GetStringHeight())
+
+				aoe_casting.text:SetText(aoe_casting_number)
+				aoe_casting:SetWidth(aoe_casting.text:GetStringWidth())
+				aoe_casting:SetHeight(aoe_casting.text:GetStringHeight())
 			end
 		)
 	end

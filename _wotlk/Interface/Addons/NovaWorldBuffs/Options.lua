@@ -3096,7 +3096,7 @@ function NWB:getNoOverwrite(info)
 end
 
 --DMF settings list frame.
-local NWBDMFListFrame = CreateFrame("ScrollFrame", "NWBDMFListFrame", UIParent, NWB:addBackdrop("InputScrollFrameTemplate"));
+local NWBDMFListFrame = CreateFrame("ScrollFrame", "NWBDMFListFrame", UIParent, NWB:addBackdrop("NWB_InputScrollFrameTemplate"));
 NWBDMFListFrame:Hide();
 NWBDMFListFrame:SetToplevel(true);
 NWBDMFListFrame:SetMovable(true);
@@ -3126,7 +3126,7 @@ NWBDMFListFrame:HookScript("OnUpdate", function(self, arg)
 		NWB:recalcDMFListFrame();
 	end
 end)
-NWBDMFListFrame.fs = NWBDMFListFrame:CreateFontString("NWBDMFListFrameFS", "HIGH");
+NWBDMFListFrame.fs = NWBDMFListFrame:CreateFontString("NWBDMFListFrameFS", "ARTWORK");
 NWBDMFListFrame.fs:SetPoint("TOP", 0, -0);
 NWBDMFListFrame.fs:SetFont(NWB.regionFont, 14);
 NWBDMFListFrame.fs:SetText("|cFFFFFF00Darkmoon Faire Buff Settings|r");
@@ -3143,7 +3143,7 @@ NWBDMFListDragFrame.tooltip:SetPoint("CENTER", NWBDMFListDragFrame, "TOP", 0, 12
 NWBDMFListDragFrame.tooltip:SetFrameStrata("TOOLTIP");
 NWBDMFListDragFrame.tooltip:SetFrameLevel(9);
 NWBDMFListDragFrame.tooltip:SetAlpha(.8);
-NWBDMFListDragFrame.tooltip.fs = NWBDMFListDragFrame.tooltip:CreateFontString("NWBDMFListDragTooltipFS", "HIGH");
+NWBDMFListDragFrame.tooltip.fs = NWBDMFListDragFrame.tooltip:CreateFontString("NWBDMFListDragTooltipFS", "ARTWORK");
 NWBDMFListDragFrame.tooltip.fs:SetPoint("CENTER", 0, 0.5);
 NWBDMFListDragFrame.tooltip.fs:SetFont(NWB.regionFont, 12);
 NWBDMFListDragFrame.tooltip.fs:SetText("Hold to drag");
@@ -3201,7 +3201,7 @@ function NWB:openDMFListFrame()
 		NWBDMFListFrame:SetHeight(300);
 		NWBDMFListFrame:SetWidth(450);
 		local fontSize = false
-		NWBDMFListFrame.EditBox:SetFont(NWB.regionFont, 14);
+		NWBDMFListFrame.EditBox:SetFont(NWB.regionFont, 14, "");
 		NWBDMFListFrame.EditBox:SetWidth(NWBDMFListFrame:GetWidth() - 30);
 		NWBDMFListFrame:Show();
 		NWB:recalcDMFListFrame();

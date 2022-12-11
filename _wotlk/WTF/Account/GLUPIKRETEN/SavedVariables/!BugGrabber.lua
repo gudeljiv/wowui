@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 7906,
+	["session"] = 7924,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -6640,5 +6640,36 @@ BugGrabberDB = {
 			["session"] = 7906,
 			["counter"] = 3,
 		}, -- [855]
+		{
+			["message"] = "Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs-2.39.lua:222: attempt to compare number with nil",
+			["time"] = "2022/12/11 10:25:05",
+			["locals"] = "self = <table> {\n setIgnoreKillData = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:3082\n removeOldLayers = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:9792\n setMiddle0 = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:2210\n setGuildNpcDialogue = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:2336\n modules = <table> {\n }\n getTrimDataCharInput = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:3036\n getLayerOffset = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:3609\n getShowWorldMapMarkers = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1925\n dragonLib = <table> {\n }\n getGuildNpcDialogue = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:2345\n versionCheck = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NWBData.lua:217\n getMiddle0 = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:2214\n recalcVersionFrame = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:12152\n setSoundsDisableInBattlegrounds = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:2803\n heraldYell = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:13374\n lastDataSent = 1670750696\n setMiddle10 = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:2183\n getMySongflowerOnly = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:2448\n syncBuffsWithCurrentDuration = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:3121\n resetTimerLog = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NWBData.lua:2186\n getMiddle10 = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:2187\n db = <table> {\n }\n getSoundsDisableInBattlegrounds = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:2807\n setOnyBuff = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:2308\n setTerokkarMiddle10 = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:3672\n setCurrentLayerText = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:10997\n getGuildL = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:3658\n getDmfFrame = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:3552\n timerCleanup = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:3359\n untrackBuff = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:2700\n createBuffsLineFrame = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:8362\n setDmfFrame = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:3545\n setTrimDataCharInput = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:3032\n setGuildL = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:3651\n setShowTuberWorldmapMarkers = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:2491\n getShowAllAlts = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:2026\n doResetTimerData = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:4807\n setChat5 = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:2120\n getChat5 = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:2124\n setLayered = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:3337\n setShowDmfMap = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:2586\n getTimeStampZone = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1915\n openLayerMapFrame = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:11558\n getShowTuberWorldmapMarkers = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:2496\n getChat30 = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:2097\n doStealth = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:2079\n getShowDmfMap = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:2591\n checkGuildMasterSetting = <function> defined @Interface\\AddOns\\NovaWorldB",
+			["stack"] = "[string \"@Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs-2.39.lua\"]:222: in function `printBuffTimers'\n[string \"@Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs-2.39.lua\"]:3696: in function <Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:3694>",
+			["session"] = 7909,
+			["counter"] = 3,
+		}, -- [856]
+		{
+			["message"] = "TellMeWhen: [string \"return xAOE(10) > 2\"]:1: attempt to compare number with string",
+			["time"] = "2022/12/11 11:10:17",
+			["stack"] = "[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-10.0.5.lua\"]:2806: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:2763>",
+			["session"] = 7913,
+			["counter"] = 1,
+		}, -- [857]
+		{
+			["message"] = "[string \"AOE_TARGETS_CASTING.text:SetFont(xVermin.Co...\"]:1: attempt to index global 'xVermin' (a nil value)",
+			["time"] = "2022/12/11 11:41:27",
+			["locals"] = "(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'xVermin' (a nil value)\"\n",
+			["stack"] = "[string \"AOE_TARGETS_CASTING.text:SetFont(xVermin.Config.font.arial, 12, 'NONE')\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2977: in function <Interface\\FrameXML\\ChatFrame.lua:2970>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 7921,
+			["counter"] = 1,
+		}, -- [858]
+		{
+			["message"] = "[string \"AOE_TARGETS_CASTING.text:SetFont(12, 'NONE'...\"]:1: Usage: <unnamed>:SetFont(\"font\", fontHeight [, flags])",
+			["time"] = "2022/12/11 11:41:50",
+			["locals"] = "(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = 12\n(*temporary) = \"NONE\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `SetFont'\n[string \"AOE_TARGETS_CASTING.text:SetFont(12, 'NONE')\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2977: in function <Interface\\FrameXML\\ChatFrame.lua:2970>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 7921,
+			["counter"] = 1,
+		}, -- [859]
 	},
 }
