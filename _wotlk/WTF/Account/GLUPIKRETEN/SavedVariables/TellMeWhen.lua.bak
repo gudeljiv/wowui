@@ -1609,8 +1609,8 @@ TellMeWhenDB = {
 									["Name"] = "xAOE(5) > 1",
 								}, -- [3]
 								{
-									["AndOr"] = "OR",
 									["Level"] = 2,
+									["AndOr"] = "OR",
 									["PrtsAfter"] = 1,
 									["Type"] = "SPEC",
 								}, -- [4]
@@ -1685,7 +1685,7 @@ TellMeWhenDB = {
 							["GUID"] = "TMW:icon:1TQv_Lti1RyX",
 							["Conditions"] = {
 								{
-									["Name"] = "xAOE(10) == 1",
+									["Name"] = "xAOE(5) == 1",
 									["Type"] = "LUA",
 								}, -- [1]
 								{
@@ -1789,7 +1789,7 @@ TellMeWhenDB = {
 							["Type"] = "cooldown",
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
-							["RangeCheck"] = true,
+							["ManaCheck"] = true,
 							["GUID"] = "TMW:icon:1TYYu4EDbfSz",
 							["Name"] = "Sunder Armor",
 							["SettingsPerView"] = {
@@ -1869,7 +1869,7 @@ TellMeWhenDB = {
 								["n"] = 10,
 							},
 							["HideIfNoUnits"] = true,
-							["ManaCheck"] = true,
+							["RangeCheck"] = true,
 							["States"] = {
 								{
 								}, -- [1]
@@ -1954,7 +1954,7 @@ TellMeWhenDB = {
 								{
 									["PrtsBefore"] = 2,
 									["Type"] = "LUA",
-									["Name"] = "xAOE(10) > 1",
+									["Name"] = "xAOE(5) > 1",
 								}, -- [2]
 								{
 									["Type"] = "RAGE_ABS",
@@ -1965,7 +1965,7 @@ TellMeWhenDB = {
 								{
 									["PrtsBefore"] = 1,
 									["Type"] = "LUA",
-									["Name"] = "xAOE(10) > 2",
+									["Name"] = "xAOE(5) > 2",
 									["AndOr"] = "OR",
 								}, -- [4]
 								{
@@ -2089,7 +2089,7 @@ TellMeWhenDB = {
 									["PrtsBefore"] = 1,
 									["Type"] = "LUA",
 									["PrtsAfter"] = 1,
-									["Name"] = "-- local red, green, blue, alpha = RotationFrame_AOERANGECASTING:GetBackdropColor()\n-- if xRound(red,2) == 0 and xRound(green,2) ==1 and xRound(blue,2) == 0.5 then\n--    return true\n-- end\nxAOE(10,rangecasting) > 0",
+									["Name"] = "xAOE(10,true) > 0",
 								}, -- [3]
 								{
 									["Type"] = "NAME",
@@ -3435,11 +3435,11 @@ TellMeWhenDB = {
 							},
 						}, -- [18]
 						{
-							["GUID"] = "TMW:icon:1ZPI5_kvU7St",
+							["Enabled"] = true,
 							["Type"] = "item",
 							["Name"] = "Battlemaster's Resolve",
 							["OnlyInBags"] = true,
-							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1ZPI5_kvU7St",
 							["Conditions"] = {
 								{
 									["Type"] = "HEALTH",

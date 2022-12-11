@@ -7,3 +7,4 @@ ItemRackOptions: enabled
 Leatrix_Plus: enabled
 AceBIS: disabled
 Bistooltip: disabled
+NovaWorldBuffs: disabled

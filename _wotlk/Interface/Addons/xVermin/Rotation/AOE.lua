@@ -78,7 +78,7 @@ local skills_range = {
 	['MAGE'] = 10,
 	['WARLOCK'] = 10,
 	['SHAMAN'] = 10,
-	['WARRIOR'] = 10,
+	['WARRIOR'] = 5,
 	['PALADIN'] = 10,
 	['DEATHKNIGHT'] = 10,
 	['ROGUE'] = 10,
@@ -99,11 +99,11 @@ aoe.text:SetPoint('CENTER', AOE_TARGETS, 'CENTER', 0, 0)
 aoe.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
 aoe_casting = CreateFrame('Frame', 'AOE_TARGETS_CASTING')
-aoe_casting:SetPoint('RIGHT', PlayerFrame, 'LEFT', 23, -3)
+aoe_casting:SetPoint('RIGHT', PlayerFrame, 'LEFT', 21, 4)
 aoe_casting:SetWidth(0)
 aoe_casting:SetHeight(0)
 aoe_casting.text = aoe_casting:CreateFontString(nil, 'ARTWORK')
-aoe_casting.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
+aoe_casting.text:SetFont(xVermin.Config.font.arial, 8, 'NONE')
 aoe_casting.text:SetPoint('CENTER', AOE_TARGETS_CASTING, 'CENTER', 0, 0)
 aoe_casting.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
@@ -138,7 +138,7 @@ xVermin.CheckIfLoadedWithTimer(
 				else
 					if InCombatLockdown() then
 						aoe_number = xVermin.AOE(skills_range[xVermin.Class])
-						aoe_casting_number = xVermin.AOE(skills_range[xVermin.Class], true)
+						aoe_casting_number = xVermin.AOE(35, true)
 						if aoe_number > 1 then
 							RotationFrame2:SetBackdropColor(1, 0, 0, 1) -- red --> DO AOE
 						else

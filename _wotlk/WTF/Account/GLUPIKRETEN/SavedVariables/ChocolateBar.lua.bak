@@ -708,9 +708,9 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1453170,
-		["timeStamp"] = 2685828.952,
-		["timeAtThisLevel"] = 360623,
+		["total"] = 1454485,
+		["timeStamp"] = 2708869.067,
+		["timeAtThisLevel"] = 361938,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
@@ -808,9 +808,9 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 316,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 316819,
-		["timeAtThisLevel"] = 9561,
-		["timeStamp"] = 2687684.42,
+		["total"] = 319665,
+		["timeAtThisLevel"] = 12407,
+		["timeStamp"] = 2711813.84,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,

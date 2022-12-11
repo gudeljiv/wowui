@@ -168,7 +168,7 @@ XLoot_Group: disabled
 XLoot_Options: disabled
 Roll: disabled
 Gladdy: enabled
-NovaWorldBuffs: enabled
+NovaWorldBuffs: disabled
 ElvUI_VisualAuraTimers: disabled
 ElvUI_ExtraActionBars: disabled
 ElvUI_CastBarOverlay: disabled

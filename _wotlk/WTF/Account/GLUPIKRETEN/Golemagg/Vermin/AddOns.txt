@@ -192,7 +192,7 @@ XLoot_Monitor: disabled
 XLoot_Master: disabled
 XLoot_Frame: disabled
 Gladdy: enabled
-NovaWorldBuffs: enabled
+NovaWorldBuffs: disabled
 VendorBait: disabled
 Masque: enabled
 AceBIS: disabled

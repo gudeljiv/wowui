@@ -13,7 +13,7 @@ END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:35953
-/castsequence [combat] reset=combat item:33447
+/castsequence [combat] reset=combat item:36893,item:33447
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:33449
@@ -29,11 +29,11 @@ VER 3 000000000000001C "RXPTargeting" "Ability_eyeoftheowl"
 END
 VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:36893
 END
 VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
-/run AOE_TARGETS_CASTING:SetPoint('RIGHT', PlayerFrame, 'LEFT', 23, -3)
-/run AOE_TARGETS_CASTING.text:SetFont(12, 'NONE')
+/run AOE_TARGETS_CASTING:ClearAllPoints()
+/run AOE_TARGETS_CASTING:SetPoint('RIGHT', PlayerFrame, 'LEFT', 21, 4)
 END
 VER 3 000000000000001B "TSMMacro" "INV_Misc_Flower_01"
 /click TSMShoppingBuyoutBtn

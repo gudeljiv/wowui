@@ -8,64 +8,65 @@ local t = {
 	'Gas Cloud'
 }
 
--- 1 = Inspect, 28 yards
--- 2 = Trade, 11.11 yards
--- 3 = Duel, 9.9 yards
--- 4 = Follow, 28 yards
-xVermin.Pestilence = function()
-	local frost_fever = 0
-	local blood_plague = 0
-	local t_ff = false
-	local t_bp = false
+xVermin.Pestilence = function(number_of_nameplates)
+	number_of_nameplates = number_of_nameplates or 15
+	local has_frost_fever = 0
+	local has_blood_plague = 0
+	local target_has_frost_fever = false
+	local target_has_blood_plague = false
 	local units = 0
 
 	if xVermin.Class ~= 'DEATHKNIGHT' then
 		return false
 	end
 
+	if xAOE(10) < 1 then
+		return false
+	end
+
+	if not UnitExists('target') then
+		return false
+	end
+
+	-- TARGET
+	target_has_frost_fever = false
+	target_has_blood_plague = false
 	for i = 1, 40 do
+		local name, icon, count, debuffType, duration, expirationTime, unitCaster, canStealOrPurge, _, spellId, canApplyAura, isBossAura = UnitDebuff('target', i)
+
+		if name == 'Frost Fever' and unitCaster == 'player' then
+			target_has_frost_fever = true
+		end
+		if name == 'Blood Plague' and unitCaster == 'player' then
+			target_has_blood_plague = true
+		end
+	end
+
+	if not target_has_frost_fever or not target_has_blood_plague then
+		return false
+	end
+
+	-- NAMEPLATES
+	for i = 1, number_of_nameplates do
 		local unit = 'nameplate' .. i
-		if UnitExists(unit) and not xVermin.HasValue(t, UnitCreatureType(unit)) and xAOE(10) > 1 then
+		if UnitExists(unit) and not xVermin.HasValue(t, UnitCreatureType(unit)) and xRange(10, unit) then
 			units = units + 1
-			for i = 1, 40 do
+			for i = 1, 20 do
 				local name, icon, count, debuffType, duration, expirationTime, unitCaster, canStealOrPurge, _, spellId, canApplyAura, isBossAura = UnitDebuff(unit, i)
 
 				if name then
 					if name == 'Frost Fever' and unitCaster == 'player' then
-						frost_fever = frost_fever + 1
+						has_frost_fever = has_frost_fever + 1
 					end
 					if name == 'Blood Plague' and unitCaster == 'player' then
-						blood_plague = blood_plague + 1
+						has_blood_plague = has_blood_plague + 1
 					end
 				end
 			end
 		end
 	end
 
-	if UnitExists('target') then
-		t_ff = false
-		t_bp = false
-		for i = 1, 40 do
-			local name, icon, count, debuffType, duration, expirationTime, unitCaster, canStealOrPurge, _, spellId, canApplyAura, isBossAura = UnitDebuff('target', i)
-
-			if name == 'Frost Fever' and unitCaster == 'player' then
-				t_ff = true
-			end
-			if name == 'Blood Plague' and unitCaster == 'player' then
-				t_bp = true
-			end
-		end
-	else
-		return false
-	end
-
-	-- print(units, frost_fever, blood_plague, t_ff, t_bp)
-
-	if not t_ff or not t_bp then
-		return false
-	end
-
-	if units > frost_fever or units > blood_plague and xAOE(10) > 1 then
+	if units > has_frost_fever or units > has_blood_plague then
 		return true
 	else
 		return false

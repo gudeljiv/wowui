@@ -283,7 +283,7 @@ SpellActivationOverlayDB = {
 	["alert"] = {
 		["enabled"] = true,
 		["opacity"] = 1,
-		["offset"] = 140,
+		["offset"] = 235.0873413085938,
 		["scale"] = 1.100000023841858,
 	},
 	["version"] = 70,

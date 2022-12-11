@@ -173,7 +173,7 @@ InspectEquip: disabled
 Capping_Options: enabled
 TacoTip: disabled
 Gladdy: enabled
-NovaWorldBuffs: enabled
+NovaWorldBuffs: disabled
 Masque: enabled
 AceBIS: disabled
 Bistooltip: disabled

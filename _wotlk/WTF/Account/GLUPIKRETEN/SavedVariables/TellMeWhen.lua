@@ -1618,8 +1618,8 @@ TellMeWhenDB = {
 								{
 									["Type"] = "SPEC",
 									["PrtsAfter"] = 1,
-									["AndOr"] = "OR",
 									["Level"] = 2,
+									["AndOr"] = "OR",
 								}, -- [4]
 								{
 									["Type"] = "STANCE",
@@ -1707,7 +1707,7 @@ TellMeWhenDB = {
 							["Conditions"] = {
 								{
 									["Type"] = "LUA",
-									["Name"] = "xAOE(10) == 1",
+									["Name"] = "xAOE(5) == 1",
 								}, -- [1]
 								{
 									["Type"] = "CURRENTSPELL",
@@ -1830,7 +1830,7 @@ TellMeWhenDB = {
 								{
 									["Type"] = "LUA",
 									["PrtsAfter"] = 1,
-									["Name"] = "xAOE(5) == 1",
+									["Name"] = "xAOE(5) > 0",
 								}, -- [5]
 								{
 									["Type"] = "STANCE",
@@ -1974,7 +1974,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								{
 									["Type"] = "LUA",
-									["Name"] = "xAOE(10) > 1",
+									["Name"] = "xAOE(5) > 1",
 									["PrtsBefore"] = 2,
 								}, -- [2]
 								{
@@ -1985,7 +1985,7 @@ TellMeWhenDB = {
 								}, -- [3]
 								{
 									["Type"] = "LUA",
-									["Name"] = "xAOE(10) > 2",
+									["Name"] = "xAOE(5) > 2",
 									["PrtsBefore"] = 1,
 									["AndOr"] = "OR",
 								}, -- [4]
@@ -2793,8 +2793,16 @@ TellMeWhenDB = {
 									["Type"] = "BUFFDUR",
 									["Operator"] = "~=",
 									["Name"] = "Bloodlust",
+									["PrtsBefore"] = 1,
 								}, -- [2]
-								["n"] = 2,
+								{
+									["Type"] = "DEBUFFDUR",
+									["PrtsAfter"] = 1,
+									["Operator"] = "~=",
+									["AndOr"] = "OR",
+									["Name"] = "Sated",
+								}, -- [3]
+								["n"] = 3,
 							},
 							["GUID"] = "TMW:icon:1ZYr3kQJ=Fa1",
 							["States"] = {
@@ -2820,8 +2828,16 @@ TellMeWhenDB = {
 									["Type"] = "BUFFDUR",
 									["Operator"] = "~=",
 									["Name"] = "Bloodlust",
+									["PrtsBefore"] = 1,
 								}, -- [2]
-								["n"] = 2,
+								{
+									["Type"] = "DEBUFFDUR",
+									["PrtsAfter"] = 1,
+									["Operator"] = "~=",
+									["AndOr"] = "OR",
+									["Name"] = "Sated",
+								}, -- [3]
+								["n"] = 3,
 							},
 							["GUID"] = "TMW:icon:1ZYr3kQXDQKM",
 							["States"] = {
@@ -2847,8 +2863,16 @@ TellMeWhenDB = {
 									["Type"] = "BUFFDUR",
 									["Operator"] = "~=",
 									["Name"] = "Bloodlust",
+									["PrtsBefore"] = 1,
 								}, -- [2]
-								["n"] = 2,
+								{
+									["Type"] = "DEBUFFDUR",
+									["PrtsAfter"] = 1,
+									["Operator"] = "~=",
+									["AndOr"] = "OR",
+									["Name"] = "Sated",
+								}, -- [3]
+								["n"] = 3,
 							},
 							["GUID"] = "TMW:icon:1ZYr3kQhGs06",
 							["States"] = {

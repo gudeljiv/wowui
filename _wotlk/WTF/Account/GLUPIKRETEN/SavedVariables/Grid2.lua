@@ -1391,7 +1391,7 @@ Grid2DB = {
 							},
 							["BackgroundG"] = 0.1019607843137255,
 							["groupAnchor"] = "TOPLEFT",
-							["PosY"] = 0,
+							["PosY"] = -0.3556011978030256,
 							["anchors"] = {
 							},
 							["PosX"] = 0,
@@ -9855,21 +9855,13 @@ Grid2DB = {
 						["b"] = 0.00392156862745098,
 					},
 				},
-				["buff-Regrowth-mine"] = {
-					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
+				["debuff-Poison"] = {
 					["load"] = {
 						["playerClass"] = {
+							["PALADIN"] = true,
 							["DRUID"] = true,
 						},
 					},
-					["mine"] = 1,
-					["spellName"] = 8936,
 				},
 				["heals-incoming"] = {
 					["includePlayerHeals"] = true,
@@ -9899,21 +9891,8 @@ Grid2DB = {
 					["mine"] = false,
 					["spellName"] = 1126,
 				},
-				["buff-Rejuvenation-mine"] = {
-					["type"] = "buff",
-					["spellName"] = 1058,
-					["mine"] = 1,
-					["load"] = {
-						["playerClass"] = {
-							["DRUID"] = true,
-						},
-					},
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 1,
-					},
+				["name"] = {
+					["defaultName"] = 1,
 				},
 				["debuff-Disease"] = {
 					["load"] = {
@@ -9932,13 +9911,21 @@ Grid2DB = {
 						},
 					},
 				},
-				["debuff-Poison"] = {
+				["buff-Regrowth-mine"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
 					["load"] = {
 						["playerClass"] = {
-							["PALADIN"] = true,
 							["DRUID"] = true,
 						},
 					},
+					["mine"] = 1,
+					["spellName"] = 8936,
 				},
 				["buff-Thorns-mine"] = {
 					["type"] = "buff",
@@ -9966,8 +9953,21 @@ Grid2DB = {
 						},
 					},
 				},
-				["name"] = {
-					["defaultName"] = 1,
+				["buff-Rejuvenation-mine"] = {
+					["type"] = "buff",
+					["spellName"] = 1058,
+					["mine"] = 1,
+					["load"] = {
+						["playerClass"] = {
+							["DRUID"] = true,
+						},
+					},
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
 				},
 				["buff-Renew-mine"] = {
 					["type"] = "buff",

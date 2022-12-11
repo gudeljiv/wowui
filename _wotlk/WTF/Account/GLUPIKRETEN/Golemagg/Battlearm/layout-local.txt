@@ -48,6 +48,13 @@ X: -27
 Y: 27
 W: 50
 H: 50
+Frame: TellMeWhen_ConfigWarning
+FrameLevel: 1
+Anchor: TOP
+X: -7
+Y: -183
+W: 330
+H: 113
 Frame: RXPItemFrame
 FrameLevel: 1
 Anchor: CENTER
