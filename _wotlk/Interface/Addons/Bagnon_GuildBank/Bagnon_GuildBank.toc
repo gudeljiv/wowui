@@ -5,4 +5,4 @@
 ## RequiredDeps: Bagnon
 ## LoadOnDemand: 1
 
-..\Bagnon\addons\guild\guild.xml
+..\BagBrother\addons\guild\guild.xml
