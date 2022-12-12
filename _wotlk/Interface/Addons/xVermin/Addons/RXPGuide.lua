@@ -1,4 +1,5 @@
 local _, xVermin = ...
+local ib
 
 xVermin.CheckIfLoadedWithTimer(
 	'RXPFrame',
