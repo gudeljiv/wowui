@@ -44,9 +44,10 @@ skills["offgcd"]["rogue"] = [
     {"name": "pick pocket", "type": "GetSpellTexture", "id": 921, "key": "f5", "modifier": "ctrl"},
 ]
 
-skills["offgcd"]["paladin"] = [
-
-]
+skills["offgcd"]["paladin"] = []
+skills["offgcd"]["priest"] = []
+skills["offgcd"]["warlock"] = []
+skills["offgcd"]["shaman"] = []
 
 
 skills["warrior"] = [
@@ -145,9 +146,6 @@ skills["death knight"] = [
     {"name": "mark of blood", "type": "GetSpellTexture", "id": 49005, "key": "k"},
 ]
 
-skills["priest"] = [
-]
-
 skills["paladin"] = [
     {"name": "blessing of might", "type": "GetSpellTexture", "id": 19740, "key": "f1"},
     {"name": "exorcism", "type": "GetSpellTexture", "id": 879, "key": "f3", "modifier": "ctrl"},
@@ -163,14 +161,13 @@ skills["paladin"] = [
     {"name": "seal of vengeance", "type": "GetSpellTexture", "id": 31801, "key": "f", "modifier": "alt"},
 ]
 
-skills["shaman"] = [
-]
-
 skills["rogue"] = [
     {"name": "sinister strike", "type": "GetSpellTexture", "id": 1752, "key": "f1", "modifier": "ctrl"},
     {"name": "eviscerate", "type": "GetSpellTexture", "id": 2098, "key": "4"},
 ]
 
+skills["shaman"] = []
+skills["priest"] = []
 
 color = dict()
 color["#ff9f13"] = "druid"

@@ -25,7 +25,7 @@ local priorityListTabButton;
 local open_tab = "ItemList";
 function LBIS.BrowserWindow:RefreshItems()    
 
-    if LBISSettings.ShowPriority then
+    if LBISSettings.ShowCustom then
         priorityListTabButton:Show()
     else
         priorityListTabButton:Hide()
@@ -37,8 +37,8 @@ function LBIS.BrowserWindow:RefreshItems()
         LBIS.GemList:UpdateItems();
     elseif open_tab == "EnchantList" then
         LBIS.EnchantList:UpdateItems();        
-    elseif open_tab == "PriorityList" then
-        LBIS.PriorityList:UpdateItems();
+    elseif open_tab == "CustomList" then
+        LBIS.CustomList:UpdateItems();
     end
 end
 
@@ -94,6 +94,7 @@ function LBIS.BrowserWindow:UpdateItemsForSpec(rowFunc)
         return;
     end
 
+    LBIS.SearchFrame:HideSearchFrame();
     LBIS.BrowserWindow.Window.Unavailable:Hide();
 
     local window = LBIS.BrowserWindow.Window;
@@ -145,13 +146,13 @@ function LBIS.BrowserWindow:UpdateItemsForSpec(rowFunc)
     window.ScrollFrame:SetScrollChild(window.Container);
 end
 
-function createTabs(window, content) 
+local function createTabs(window, content) 
 
     local itemListTabButton = CreateFrame("Button", "ContainerTab1", window, "CharacterFrameTabButtonTemplate")
     local itemListTabString = itemListTabButton:CreateFontString("ItemListTabText", "OVERLAY", "GameFontNormalSmall");
     itemListTabString:SetPoint("CENTER", itemListTabButton, "CENTER", 0, 3);
     itemListTabString:SetText(LBIS.L["Items"]);
-    itemListTabButton:SetPoint("CENTER", window, "BOTTOMLEFT", 60, -12);
+    itemListTabButton:SetPoint("CENTER", window, "BOTTOMLEFT", 60, -15);
     itemListTabButton:SetScript("OnClick", function(self)
         PanelTemplates_SetTab(content, 1);
         open_tab = "ItemList";
@@ -185,13 +186,13 @@ function createTabs(window, content)
 
 
     priorityListTabButton = CreateFrame("Button", "ContainerTab4", window, "CharacterFrameTabButtonTemplate")
-    local priorityListTabString = priorityListTabButton:CreateFontString("PriorityListTabText", "OVERLAY", "GameFontNormalSmall");
+    local priorityListTabString = priorityListTabButton:CreateFontString("CustomListTabText", "OVERLAY", "GameFontNormalSmall");
     priorityListTabString:SetPoint("CENTER", priorityListTabButton, "CENTER", 0, 3);
-    priorityListTabString:SetText(LBIS.L["Priority"]);
+    priorityListTabString:SetText(LBIS.L["Custom"]);
     priorityListTabButton:SetPoint("LEFT", enchantListTabButton, "RIGHT", -16, 0);
     priorityListTabButton:SetScript("OnClick", function(self)
         PanelTemplates_SetTab(content, 4);
-        open_tab = "PriorityList";
+        open_tab = "CustomList";
     
         LBIS.BrowserWindow:RefreshItems();
     end);
@@ -200,7 +201,7 @@ function createTabs(window, content)
     PanelTemplates_SetTab(content, 1);
 end
 
-function createDropDowns(window)
+local function createDropDowns(window)
     local getSpecList = function()
         local specList = {};
         for specId, spec in pairs(LBIS.ClassSpec) do
@@ -215,7 +216,7 @@ function createDropDowns(window)
         table.sort(specList);
         return specList;
     end
-
+    
     local spec_opts = {
         ['name']='spec',
         ['parent']=window,
@@ -228,21 +229,23 @@ function createDropDowns(window)
         end
     }
     window.SpecDropDown = LBIS:CreateDropdown(spec_opts, 140);
-    window.SpecDropDown:SetPoint("TOPLEFT", window, 20, -28);      
+    window.SpecDropDown:SetPoint("TOPLEFT", window, 15, -28);
 
     local slot_opts = {
         ['name']='slot',
         ['parent']=window,
         ['title']='Slot:',
-        ['items']= { LBIS.L["All"], LBIS.L["Head"], LBIS.L["Shoulder"], LBIS.L["Back"], LBIS.L["Chest"], LBIS.L["Wrist"], LBIS.L["Hands"], LBIS.L["Waist"], LBIS.L["Legs"], LBIS.L["Feet"], LBIS.L["Neck"], LBIS.L["Ring"], LBIS.L["Trinket"], LBIS.L["Main Hand"], LBIS.L["Off Hand"], LBIS.L["Two Hand"], LBIS.L["Ranged/Relic"] },        
+        ['items']= { LBIS.L["All"], LBIS.L["Head"], LBIS.L["Shoulder"], LBIS.L["Back"], LBIS.L["Chest"], LBIS.L["Wrist"], 
+            LBIS.L["Hands"], LBIS.L["Waist"], LBIS.L["Legs"], LBIS.L["Feet"], LBIS.L["Neck"], LBIS.L["Ring"], LBIS.L["Trinket"], 
+            LBIS.L["Main Hand"], LBIS.L["Off Hand"], LBIS.L["Two Hand"], LBIS.L["Ranged/Relic"] },        
         ['defaultVal']=LBISSettings.SelectedSlot,
         ['changeFunc']=function(dropdown_frame, dropdown_val)
             LBISSettings.SelectedSlot = dropdown_val;
             LBIS.BrowserWindow:RefreshItems()
         end
     }
-    window.SlotDropDown = LBIS:CreateDropdown(slot_opts, 150);
-    window.SlotDropDown:SetPoint("TOPLEFT", window, 200, -28);
+    window.SlotDropDown = LBIS:CreateDropdown(slot_opts, 90);
+    window.SlotDropDown:SetPoint("TOPLEFT", window, 195, -28);
 
     local phase_opts = {
         ['name']='phase',
@@ -255,8 +258,8 @@ function createDropDowns(window)
             LBIS.BrowserWindow:RefreshItems();
         end
     }
-    window.PhaseDropDown = LBIS:CreateDropdown(phase_opts, 115);
-    window.PhaseDropDown:SetPoint("TOPLEFT", window, 340, -28);
+    window.PhaseDropDown = LBIS:CreateDropdown(phase_opts, 70);
+    window.PhaseDropDown:SetPoint("TOPLEFT", window, 330, -28);
 
     local source_opts = {
         ['name']='source',
@@ -269,8 +272,8 @@ function createDropDowns(window)
             LBIS.BrowserWindow:RefreshItems();
         end
     }
-    window.SourceDropDown = LBIS:CreateDropdown(source_opts, 155);
-    window.SourceDropDown:SetPoint("TOPLEFT", window, 455, -28);
+    window.SourceDropDown = LBIS:CreateDropdown(source_opts, 110);
+    window.SourceDropDown:SetPoint("TOPLEFT", window, 450, -28);
 
     local zone_opts = {
         ['name']='zone',
@@ -296,7 +299,16 @@ end
 function LBIS.BrowserWindow:CreateBrowserWindow()
     local step = 25;
     local windowName = "LootBrowserWindow";
-    local window = CreateFrame("Frame", windowName, UIParent, "BasicFrameTemplateWithInset");
+    local window = CreateFrame("Frame", windowName, UIParent, "InsetFrameTemplate");
+    local windowCloseButton = CreateFrame("Button", windowName.."CloseButton", window)
+    windowCloseButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", 0, 0)
+    windowCloseButton:SetSize(32, 32);
+    windowCloseButton:SetNormalTexture("Interface\\Buttons\\UI-Panel-MinimizeButton-Up");
+    windowCloseButton:SetPushedTexture("Interface\\Buttons\\UI-Panel-MinimizeButton-Down")
+    windowCloseButton:SetScript("OnClick", function(self)
+        window:Hide();
+    end);
+    
     local scrollframe = CreateFrame("ScrollFrame", "ScrollFrame", window);
     local scrollbar = CreateFrame("Slider", "ScrollBar", scrollframe, "UIPanelScrollBarTemplate");
     local content = CreateFrame("Frame", "Container", scrollframe);
@@ -304,6 +316,9 @@ function LBIS.BrowserWindow:CreateBrowserWindow()
 	tinsert(UISpecialFrames, windowName)	-- allow ESC close
 
     local function UpdateScrollValue(self, delta)
+        if not scrollbar:IsEnabled() then
+            return;
+        end
         if(delta == 1 and scrollbar:GetValue() >= 0) then
             if(scrollbar:GetValue()-step < 0) then
                 scrollbar:SetValue(0);
@@ -341,7 +356,7 @@ function LBIS.BrowserWindow:CreateBrowserWindow()
     scrollframe:SetPoint("TOPLEFT", 10, -60);
     scrollframe:SetPoint("BOTTOMRIGHT", -25, 10);
 
-    scrollbar:SetPoint("TOPLEFT", window, "TOPRIGHT", -22, -78);
+    scrollbar:SetPoint("TOPLEFT", window, "TOPRIGHT", -22, -75);
     scrollbar:SetPoint("BOTTOMLEFT", window, "BOTTOMRIGHT", 22, 20);
     scrollbar:SetMinMaxValues(0,0);
     scrollbar:SetWidth(16);
@@ -363,21 +378,23 @@ function LBIS.BrowserWindow:CreateBrowserWindow()
     window:SetScript("OnDragStop", function(self) self:StopMovingOrSizing() end);    
 
     createTabs(window, content);
-    
-	local f = CreateFrame("Frame", name, content);				
+
+    local f = CreateFrame("Frame", nil, content);				
 	t = f:CreateFontString(nil, nil, "GameFontNormal");
 	t:SetText("Wowhead Guide not available");
 	t:SetPoint("CENTER");				
 	f:SetSize(scrollframe:GetWidth(), scrollframe:GetHeight());
 	f:ClearAllPoints();
-	f:SetPoint("TOPLEFT", content, 0, point);
+	f:SetPoint("TOPLEFT", content, 0, 0);
     f:Hide();
 
     LBIS.BrowserWindow.Window = window;
     LBIS.BrowserWindow.Window.ScrollFrame = scrollframe;
     LBIS.BrowserWindow.Window.ScrollBar = scrollbar;
-    LBIS.BrowserWindow.Window.Container = content;    
+    LBIS.BrowserWindow.Window.Container = content;
     LBIS.BrowserWindow.Window.Unavailable = f;
+
+    LBIS.SearchFrame:CreateSearch();
 
     LBIS:RegisterTooltip();
 

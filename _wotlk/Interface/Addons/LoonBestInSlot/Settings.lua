@@ -6,7 +6,7 @@ LBISSettingsDefault =
 	SelectedSourceType = LBIS.L["All"], 
 	SelectedZone = LBIS.L["All"], 
 	SelectedZoneNumber = LBIS.L["All"],
-	ShowPriority = false,
+	ShowCustom = false,
 	minimap = { 
 		hide = false, 
 		minimapPos = 180
@@ -51,10 +51,15 @@ LBISSettingsDefault =
 		--[LBIS.L["Phase 3"]] = true,
 		--[LBIS.L["Phase 4"]] = true,
 		--[LBIS.L["Phase 5"]] = true
-	},
-	PriorityList = {
 	}
 };
+
+LBISServerSettingsDefault = 
+{
+	ItemCache = {},
+	CustomList = {},
+	LastCacheDate = nil,
+}
 
 local lbis_options = {
 	name = "Loon Best In Slot",
@@ -477,10 +482,10 @@ local lbis_options = {
 		},
 		show = {
 			type = "toggle",
-			name = "*BETA*:"..LBIS.L["Show Priority"],
-			desc = "*BETA*:"..LBIS.L["Show Priority"],
-			get = function(info) return LBISSettings.ShowPriority end,
-			set = function(info, val) LBISSettings.ShowPriority = val end,
+			name = "*BETA*:"..LBIS.L["Show Custom"],
+			desc = "*BETA*:"..LBIS.L["Show Custom"],
+			get = function(info) return LBISSettings.ShowCustom end,
+			set = function(info, val) LBISSettings.ShowCustom = val end,
 			width = 1.1,
 			order = 43,
 		},
@@ -506,7 +511,7 @@ end
 function LBIS:CreateSettings()
 
 	LBISSettings = CopyDefaults(LBISSettingsDefault, LBISSettings);
-	LBISPrioritySettings = LBISPrioritySettings or {};
+	LBISServerSettings = CopyDefaults(LBISServerSettingsDefault, LBISServerSettings);
 
 	LibStub("AceConfig-3.0"):RegisterOptionsTable("Loon Best In Slot", lbis_options, nil)
 	LibStub("AceConfigDialog-3.0"):AddToBlizOptions("Loon Best In Slot"):SetParent(InterfaceOptionsFramePanelContainer)

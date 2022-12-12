@@ -38,16 +38,17 @@ LBISSettings = {
 	["SelectedSpec"] = "",
 	["minimap"] = {
 		["minimapPos"] = 180,
-		["hide"] = false,
+		["hide"] = true,
 	},
 	["PhaseTooltip"] = {
 		["PreRaid"] = true,
 		["Phase 1"] = true,
 	},
+	["ShowCustom"] = false,
 	["SelectedSlot"] = "All",
 	["SelectedSourceType"] = "All",
 	["PriorityList"] = {
 	},
-	["ShowPriority"] = false,
+	["ShowPriority"] = true,
 	["SelectedPhase"] = "All",
 }

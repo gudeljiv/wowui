@@ -2,7 +2,7 @@
 ## Title: Loon Best In Slot
 ## Notes: 
 ## OptionalDeps: LibExtraTip
-## SavedVariables: LBISPrioritySettings
+## SavedVariables: LBISServerSettings
 ## SavedVariablesPerCharacter: LBISSettings
 ## Version: 4.4.0
 
@@ -10,10 +10,9 @@ libs\LibStub.lua
 libs\CallbackHandler-1.0.lua
 libs\LibDataBroker-1.1.lua
 libs\LibDBIcon-1.0.lua
-
 libs\AceGUI-3.0\AceGUI-3.0.xml
 libs\AceConfig-3.0\AceConfig-3.0.xml
-libs\LibExtraTip\Load.xml
+libs\LibUIDropDownMenu\LibUIDropDownMenu.xml
 
 Localization\Localization.xml
 
@@ -29,8 +28,9 @@ UpdateTooltips.lua
 UserItemCache.lua
 MinimapButton.lua
 
-LootBrowser.lua
-ItemList.lua
-GemList.lua
-EnchantList.lua
-PriorityList.lua
+UI\LootBrowser.lua
+UI\ItemList.lua
+UI\GemList.lua
+UI\EnchantList.lua
+UI\CustomList.lua
+UI\SearchFrame.lua

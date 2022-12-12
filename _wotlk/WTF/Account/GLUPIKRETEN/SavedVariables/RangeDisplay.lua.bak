@@ -27,7 +27,7 @@ RangeDisplayDB3 = {
 		["Kaonac - Jin'do"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Miqa - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Pitchwise - Ashbringer"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
@@ -38,7 +38,7 @@ RangeDisplayDB3 = {
 		["Vermin - Golemagg"] = "Default",
 		["Tudum - Jin'do"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

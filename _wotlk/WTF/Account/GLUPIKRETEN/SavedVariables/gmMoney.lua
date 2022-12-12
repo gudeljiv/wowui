@@ -1,5 +1,73 @@
 
 GMMONEY = {
+	["Ashbringer"] = {
+		["Tudum"] = {
+			["GOLD"] = 112,
+			["CLASS"] = "WARRIOR",
+		},
+		["Pitchwise"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "SHAMAN",
+		},
+	},
+	["Mirage Raceway"] = {
+		["Poklopac"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "HUNTER",
+		},
+	},
+	["Golemagg"] = {
+		["Battlearm"] = {
+			["GOLD"] = 46588831,
+			["CLASS"] = "DEATHKNIGHT",
+		},
+		["Mxzq"] = {
+			["GOLD"] = 14941829,
+			["CLASS"] = "HUNTER",
+		},
+		["Mxyz"] = {
+			["GOLD"] = 11921015,
+			["CLASS"] = "PRIEST",
+		},
+		["Handrmandr"] = {
+			["GOLD"] = 4,
+			["CLASS"] = "WARRIOR",
+		},
+		["Battitude"] = {
+			["GOLD"] = 69,
+			["CLASS"] = "ROGUE",
+		},
+		["Moolatz"] = {
+			["GOLD"] = 18677598,
+			["CLASS"] = "DRUID",
+		},
+		["Augustin"] = {
+			["GOLD"] = 97067,
+			["CLASS"] = "MAGE",
+		},
+		["Vermina"] = {
+			["GOLD"] = 263370,
+			["CLASS"] = "PALADIN",
+		},
+		["Miqa"] = {
+			["GOLD"] = 9225436,
+			["CLASS"] = "PRIEST",
+		},
+		["Mxyzptlk"] = {
+			["GOLD"] = 172735,
+			["CLASS"] = "WARLOCK",
+		},
+		["Vermin"] = {
+			["GOLD"] = 99806582,
+			["CLASS"] = "WARRIOR",
+		},
+	},
+	["Stonespine"] = {
+		["Vermins"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+	},
 	["Dreadnaught"] = {
 		["Poklopac"] = {
 			["GOLD"] = 686231,
@@ -24,34 +92,6 @@ GMMONEY = {
 		["Pitchwise"] = {
 			["GOLD"] = 70411,
 			["CLASS"] = "WARRIOR",
-		},
-	},
-	["Mirage Raceway"] = {
-		["Poklopac"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "HUNTER",
-		},
-	},
-	["Hydraxian Waterlords"] = {
-		["Battlearm"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "HUNTER",
-		},
-	},
-	["Stonespine"] = {
-		["Vermins"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "WARRIOR",
-		},
-	},
-	["Ashbringer"] = {
-		["Tudum"] = {
-			["GOLD"] = 112,
-			["CLASS"] = "WARRIOR",
-		},
-		["Pitchwise"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "SHAMAN",
 		},
 	},
 	["Jin'do"] = {
@@ -80,50 +120,10 @@ GMMONEY = {
 			["CLASS"] = "HUNTER",
 		},
 	},
-	["Golemagg"] = {
+	["Hydraxian Waterlords"] = {
 		["Battlearm"] = {
-			["GOLD"] = 46588831,
-			["CLASS"] = "DEATHKNIGHT",
-		},
-		["Mxzq"] = {
-			["GOLD"] = 14660664,
+			["GOLD"] = 0,
 			["CLASS"] = "HUNTER",
-		},
-		["Mxyz"] = {
-			["GOLD"] = 11921015,
-			["CLASS"] = "PRIEST",
-		},
-		["Handrmandr"] = {
-			["GOLD"] = 4,
-			["CLASS"] = "WARRIOR",
-		},
-		["Battitude"] = {
-			["GOLD"] = 69,
-			["CLASS"] = "ROGUE",
-		},
-		["Moolatz"] = {
-			["GOLD"] = 16660770,
-			["CLASS"] = "DRUID",
-		},
-		["Augustin"] = {
-			["GOLD"] = 97067,
-			["CLASS"] = "MAGE",
-		},
-		["Vermina"] = {
-			["GOLD"] = 263370,
-			["CLASS"] = "PALADIN",
-		},
-		["Miqa"] = {
-			["GOLD"] = 9242284,
-			["CLASS"] = "PRIEST",
-		},
-		["Mxyzptlk"] = {
-			["GOLD"] = 172735,
-			["CLASS"] = "WARLOCK",
-		},
-		["Vermin"] = {
-			["GOLD"] = 99900737,
-			["CLASS"] = "WARRIOR",
 		},
 	},
 }

@@ -2254,10 +2254,10 @@ L["Make Operations Global?"] = "Make Operations Global?"
 L["Management Options"] = "Verwaltungsoptionen"
 L["Many commonly-used actions in TSM can be added to a macro and bound to your scroll wheel. Use the options below to setup this macro and scroll wheel binding."] = "Viele häufig verwendete Aktionen in TSM können in ein Makro umgewandelt und an dein Mausrad gebunden werden. Benutze dazu die folgenden Optionen."
 L["Map Ping"] = "Klick auf Minimap"
-L["Market Value"] = "Marktwert"
 L["Market value"] = "Marktwert"
-L["Market value price source"] = "Marktpreis Preisquelle"
+L["Market Value"] = "Marktwert"
 L["Market Value Price Source"] = "Marktwert-Preisquelle"
+L["Market value price source"] = "Marktpreis Preisquelle"
 L["Mat cost"] = "Mats Kosten"
 L["Mat Price"] = "Mat Preis"
 --[[Translation missing --]]
@@ -2279,8 +2279,8 @@ L["Max Price"] = "Max. Preis"
 L["Max quantity"] = "Max. Menge"
 L["Max restock quantity"] = "Max. Menge Nachschub"
 L["Max Sell Price"] = "Max. Verkaufspreis"
-L["Max shopping price"] = "Max. Einkaufspreis"
 L["Max Shopping Price"] = "Max. Einkaufspreis"
+L["Max shopping price"] = "Max. Einkaufspreis"
 L["Max sniper price"] = "Max. Sniper Preis"
 L["Maximum amount already posted."] = "Maximale Anzahl von Auktionen bereits erstellt."
 --[[Translation missing --]]
@@ -2305,9 +2305,9 @@ L["Min 0 - Max 20"] = "Min 0 - Max 20"
 --[[Translation missing --]]
 L["Min 0.5 - Max 10"] = "Min 0.5 - Max 10"
 L["Min Buy Price"] = "Min Kaufpreis"
+L["Min Buyout"] = "Min Sofortkaufpreis"
 --[[Translation missing --]]
 L["Min buyout"] = "Min buyout"
-L["Min Buyout"] = "Min Sofortkaufpreis"
 --[[Translation missing --]]
 L["Min number of expires"] = "Min number of expires"
 --[[Translation missing --]]
@@ -2682,9 +2682,9 @@ L["Sale"] = "Verkauf"
 L["Sale Data"] = "Sale Data"
 L["Sale information"] = "Verkaufsinformationen"
 L["Sale Price"] = "Verkaufspreis"
+L["Sale Rate"] = "Verkaufsrate"
 --[[Translation missing --]]
 L["Sale rate"] = "Sale rate"
-L["Sale Rate"] = "Verkaufsrate"
 L["Sales"] = "Umsatz"
 L["SALES"] = "VERKÄUFE"
 L["Save"] = "Speichern"
@@ -4409,13 +4409,13 @@ L["Many commonly-used actions in TSM can be added to a macro and bound to your s
 --[[Translation missing --]]
 L["Map Ping"] = "Map Ping"
 --[[Translation missing --]]
-L["Market value"] = "Market value"
---[[Translation missing --]]
 L["Market Value"] = "Market Value"
 --[[Translation missing --]]
-L["Market Value Price Source"] = "Market Value Price Source"
+L["Market value"] = "Market value"
 --[[Translation missing --]]
 L["Market value price source"] = "Market value price source"
+--[[Translation missing --]]
+L["Market Value Price Source"] = "Market Value Price Source"
 --[[Translation missing --]]
 L["Mat cost"] = "Mat cost"
 --[[Translation missing --]]
@@ -4451,9 +4451,9 @@ L["Max restock quantity"] = "Max restock quantity"
 --[[Translation missing --]]
 L["Max Sell Price"] = "Max Sell Price"
 --[[Translation missing --]]
-L["Max shopping price"] = "Max shopping price"
---[[Translation missing --]]
 L["Max Shopping Price"] = "Max Shopping Price"
+--[[Translation missing --]]
+L["Max shopping price"] = "Max shopping price"
 --[[Translation missing --]]
 L["Max sniper price"] = "Max sniper price"
 --[[Translation missing --]]
@@ -4487,9 +4487,9 @@ L["Min 0.5 - Max 10"] = "Min 0.5 - Max 10"
 --[[Translation missing --]]
 L["Min Buy Price"] = "Min Buy Price"
 --[[Translation missing --]]
-L["Min buyout"] = "Min buyout"
---[[Translation missing --]]
 L["Min Buyout"] = "Min Buyout"
+--[[Translation missing --]]
+L["Min buyout"] = "Min buyout"
 --[[Translation missing --]]
 L["Min number of expires"] = "Min number of expires"
 --[[Translation missing --]]
@@ -5016,9 +5016,9 @@ L["Sale information"] = "Sale information"
 --[[Translation missing --]]
 L["Sale Price"] = "Sale Price"
 --[[Translation missing --]]
-L["Sale rate"] = "Sale rate"
---[[Translation missing --]]
 L["Sale Rate"] = "Sale Rate"
+--[[Translation missing --]]
+L["Sale rate"] = "Sale rate"
 --[[Translation missing --]]
 L["Sales"] = "Sales"
 --[[Translation missing --]]
@@ -8593,8 +8593,8 @@ L["Max Price"] = "Prix max"
 L["Max quantity"] = "Quantité max"
 L["Max restock quantity"] = "Quantité max de réapprovisionnement"
 L["Max Sell Price"] = "Prix de vente max"
-L["Max shopping price"] = "Prix d'achat max"
 L["Max Shopping Price"] = "Prix d'achat max"
+L["Max shopping price"] = "Prix d'achat max"
 L["Max sniper price"] = "Prix Sniper max"
 L["Maximum amount already posted."] = "Quantité maximale déjà postée."
 L["Maximum auction price"] = "Prix d'enchère maximum"
@@ -8611,8 +8611,8 @@ L["Min"] = "Min"
 L["Min 0 - Max 20"] = "Min 0 - Max 20"
 L["Min 0.5 - Max 10"] = "Min 0.5 - Max 10"
 L["Min Buy Price"] = "Prix d'achat min"
-L["Min buyout"] = "Prix de rachat min"
 L["Min Buyout"] = "Prix de rachat min"
+L["Min buyout"] = "Prix de rachat min"
 L["Min number of expires"] = "Nombre minimum d'expirations"
 L["Min profit amount"] = "Montant du profit minimum"
 L["Min restock quantity"] = "Quantité minimale à réapprovisionner"
@@ -8895,8 +8895,8 @@ L["Sale"] = "Vente"
 L["Sale Data"] = "Données de vente"
 L["Sale information"] = "Informations sur la vente"
 L["Sale Price"] = "Prix de vente"
-L["Sale rate"] = "Taux de vente"
 L["Sale Rate"] = "Taux de vente"
+L["Sale rate"] = "Taux de vente"
 L["Sales"] = "Ventes"
 L["SALES"] = "VENTES"
 L["Save"] = "Sauver"
@@ -9728,8 +9728,8 @@ L["Deposit Cost"] = "Costo di Deposito"
 L["Deposit reagents"] = "Deposito reagenti"
 L["Deselect All"] = "Deseleziona Tutto"
 L["Destroy Next"] = "Distruggi il Prossimo"
-L["Destroy Value"] = "Valore Distruzione"
 L["Destroy value"] = "valore Distruzione"
+L["Destroy Value"] = "Valore Distruzione"
 L["Destroy value source"] = "Fonte del valore di Distruzione"
 L["Destroying"] = "Distruggendo"
 L["Destroying %s button"] = "Distruggendo %s button"
@@ -11700,12 +11700,12 @@ L["Make Operations Global?"] = "작업을 전체적으로 할까요?"
 L["Management Options"] = "관리 옵션"
 L["Many commonly-used actions in TSM can be added to a macro and bound to your scroll wheel. Use the options below to setup this macro and scroll wheel binding."] = "TSM에서 일반적으로 사용되는 많은 활동들은 메크로에 추가되어 스크롤 휠에 연결할 수 있습니다. 아래 설정을 사용하여 매크로를 설정하고 스크롤 휠에 지정하세요."
 L["Map Ping"] = "미니맵 표시음(ping)"
-L["Market Value"] = "시장 가격"
 L["Market value"] = "시장 가격"
---[[Translation missing --]]
-L["Market value price source"] = "Market value price source"
+L["Market Value"] = "시장 가격"
 --[[Translation missing --]]
 L["Market Value Price Source"] = "Market Value Price Source"
+--[[Translation missing --]]
+L["Market value price source"] = "Market value price source"
 --[[Translation missing --]]
 L["Mat cost"] = "Mat cost"
 --[[Translation missing --]]
@@ -13563,11 +13563,11 @@ L["Make Operations Global?"] = "Tornar Operações Globais?"
 L["Management Options"] = "Opções de Gerenciamento"
 L["Many commonly-used actions in TSM can be added to a macro and bound to your scroll wheel. Use the options below to setup this macro and scroll wheel binding."] = "Várias tarefas constantemente usadas no TSM podem ser adicionadas à uma macro e vinculadas ao botão de rolagem de seu mouse. Use as opções abaixo para ajustar esta macro e vinculá-la."
 L["Map Ping"] = "Mapeamento"
-L["Market value"] = "Valor de mercado"
 L["Market Value"] = "Valor de Mercado"
-L["Market Value Price Source"] = "Fonte de Preço de Valor de Mercado"
+L["Market value"] = "Valor de mercado"
 --[[Translation missing --]]
 L["Market value price source"] = "Market value price source"
+L["Market Value Price Source"] = "Fonte de Preço de Valor de Mercado"
 L["Mat cost"] = "Custo do material"
 L["Mat Price"] = "Preço do Material"
 --[[Translation missing --]]
@@ -13591,9 +13591,9 @@ L["Max quantity"] = "Quantidade máxima"
 --[[Translation missing --]]
 L["Max restock quantity"] = "Max restock quantity"
 L["Max Sell Price"] = "Preço Máximo de Venda"
-L["Max Shopping Price"] = "Preço Máximo de Compra"
 --[[Translation missing --]]
 L["Max shopping price"] = "Max shopping price"
+L["Max Shopping Price"] = "Preço Máximo de Compra"
 --[[Translation missing --]]
 L["Max sniper price"] = "Max sniper price"
 L["Maximum amount already posted."] = "Quantidade máxima já postada."
@@ -13621,8 +13621,8 @@ L["Min 0 - Max 20"] = "Min 0 - Max 20"
 --[[Translation missing --]]
 L["Min 0.5 - Max 10"] = "Min 0.5 - Max 10"
 L["Min Buy Price"] = "Preço Mínimo de Compra"
-L["Min Buyout"] = "Arremate Mínimo"
 L["Min buyout"] = "Valor mínimo de compra"
+L["Min Buyout"] = "Arremate Mínimo"
 --[[Translation missing --]]
 L["Min number of expires"] = "Min number of expires"
 L["Min profit amount"] = "Lucro mínimo"
@@ -13989,8 +13989,8 @@ L["Sale Data"] = "Dados de Venda"
 --[[Translation missing --]]
 L["Sale information"] = "Sale information"
 L["Sale Price"] = "Preço de Venda"
-L["Sale Rate"] = "Taxa de Venda"
 L["Sale rate"] = "Taxa de venda"
+L["Sale Rate"] = "Taxa de Venda"
 L["Sales"] = "Vendas"
 L["SALES"] = "VENDAS"
 L["Save"] = "Salvar"
@@ -15185,10 +15185,10 @@ L["Make Operations Global?"] = "Сделать операции глобальн
 L["Management Options"] = "Дополнительные настройки"
 L["Many commonly-used actions in TSM can be added to a macro and bound to your scroll wheel. Use the options below to setup this macro and scroll wheel binding."] = "Многие часто используемые действия в TSM можно привязать к прокрутке колеса мыши с помощью макросов. Используйте настройки ниже, чтобы экономить время."
 L["Map Ping"] = "Звук пингования по карте"
-L["Market Value"] = "Рыночная цена аукциона (14дн.)"
 L["Market value"] = "Рыночная цена аукциона (14дн.)"
-L["Market value price source"] = "Источник рыночной цены"
+L["Market Value"] = "Рыночная цена аукциона (14дн.)"
 L["Market Value Price Source"] = "Источник рыночной цены"
+L["Market value price source"] = "Источник рыночной цены"
 L["Mat cost"] = "Стоимость мат-ов"
 L["Mat Price"] = "Цена мат-ов"
 L["Match stack size"] = "Совпадение размера стопки"
@@ -17967,10 +17967,10 @@ L["Make Operations Global?"] = "是作業全局化？"
 L["Management Options"] = "管理選項"
 L["Many commonly-used actions in TSM can be added to a macro and bound to your scroll wheel. Use the options below to setup this macro and scroll wheel binding."] = "TSM許多動作可以添加巨集並綁定滑鼠滾輪。使用以下選項以創建巨集並綁定滑鼠滾輪。"
 L["Map Ping"] = "地圖Ping"
-L["Market value"] = "市值"
 L["Market Value"] = "市值"
-L["Market Value Price Source"] = "市值價格來源"
+L["Market value"] = "市值"
 L["Market value price source"] = "市值價格來源"
+L["Market Value Price Source"] = "市值價格來源"
 L["Mat cost"] = "原材料成本"
 L["Mat Price"] = "材料價格"
 L["Match stack size"] = "匹配堆疊大小"

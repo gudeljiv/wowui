@@ -15,16 +15,16 @@ OmniCCDB = {
 		["Handrmandr - Golemagg"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
 		["Augustin - Golemagg"] = "Default",
-		["Tudum - Jin'do"] = "Default",
-		["Provokator - Jin'do"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
+		["Miqa - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
-		["Miqa - Golemagg"] = "Default",
+		["Provokator - Jin'do"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Pitchwise - Ashbringer"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
+		["Tudum - Jin'do"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -138,7 +138,6 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["version"] = "8.1.1",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
@@ -254,6 +253,8 @@ OmniCC4Config = {
 			["minDuration"] = 3,
 		},
 	},
+	["version"] = "8.1.1",
+	["engine"] = "AniUpdater",
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -264,5 +265,4 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
-	["engine"] = "AniUpdater",
 }

@@ -8,7 +8,7 @@ local Item = Addon.Tipped:NewClass('Item', Addon.IsRetail and 'ItemButton' or 'B
 local C = LibStub('C_Everywhere').Container
 local Search = LibStub('ItemSearch-1.3')
 
-Item.SlotTypes = {
+Item.BagFamilies = {
 	[-3] = 'reagent',
 	[0x00001] = 'quiver',
 	[0x00002] = 'quiver',
@@ -33,8 +33,8 @@ Item.SlotTypes = {
 
 function Item:New(parent, bag, slot)
 	local b = self:Super(Item):New(parent)
-	b.bagID, b.slotIndex = bag, slot
 	b:SetID(slot)
+	b.bag = bag
 
 	if b:IsVisible() then
 		b:Update()
@@ -198,7 +198,7 @@ function Item:Update()
 	self:UpdateSlotColor()
 	self:UpdateBorder()
 
-	SetItemButtonTexture(self, self.info.icon or self:GetEmptyItemIcon())
+	SetItemButtonTexture(self, self.info.icon or (Addon.sets.emptySlots and 'Interface/PaperDoll/UI-Backpack-EmptySlot'))
 	SetItemButtonCount(self, self.info.count)
 end
 
@@ -264,7 +264,7 @@ end
 
 function Item:UpdateSlotColor()
 	if not self.hasItem then
-		local color = Addon.sets.colorSlots and Addon.sets[self:GetSlotType() .. 'Color'] or {}
+		local color = Addon.sets.colorSlots and Addon.sets[self:GetBagFamily() .. 'Color'] or {}
 		local r,g,b = color[1] or 1, color[2] or 1, color[3] or 1
 
 		SetItemButtonTextureVertexColor(self, r,g,b)
@@ -305,7 +305,7 @@ end
 
 function Item:UpdateSearch()
 	local search = Addon.canSearch and Addon.search or ''
-	local matches = search == '' or self.hasItem and Search:Matches(self, search)
+	local matches = search == '' or self.hasItem and Search:Matches(self:GetQuery(), search)
 
 	self:SetAlpha(matches and 1 or 0.3)
 	self:SetLocked(not matches or self.info.locked)
@@ -395,23 +395,15 @@ function Item:AttachDummy()
 end
 
 
---[[ Data ]]--
-
-function Item:GetInfo()
-	return self:GetFrame():GetItemInfo(self:GetBag(), self:GetID())
-end
-
-function Item:GetItem() -- for legacy purposes
-	return self.info.link
-end
+--[[ Proprieties ]]--
 
 function Item:GetBag()
-	return self.bagID
+	return self.bag
 end
 
-function Item:GetSlotType()
+function Item:GetBagFamily()
 	local bag = self:GetFrame():GetBagInfo(self:GetBag())
-	return self.SlotTypes[bag.family] or 'normal'
+	return self.BagFamilies[bag.family] or 'normal'
 end
 
 function Item:GetInventorySlot()
@@ -422,8 +414,12 @@ function Item:GetInventorySlot()
 	return api and api(self:GetID())
 end
 
-function Item:GetEmptyItemIcon()
-	return Addon.sets.emptySlots and 'Interface/PaperDoll/UI-Backpack-EmptySlot'
+function Item:GetQuery()
+	return {bagID = self:GetBag(), slotIndex = self:GetID()}
+end
+
+function Item:GetInfo()
+	return self:GetFrame():GetItemInfo(self:GetBag(), self:GetID())
 end
 
 function Item:GetQuestInfo()

@@ -10,8 +10,8 @@ ItemRackUser = {
 		[13] = {
 		},
 		[14] = {
-			["Side"] = "LEFT",
 			["DockTo"] = 13,
+			["Side"] = "LEFT",
 		},
 	},
 	["Sets"] = {
@@ -26,10 +26,10 @@ ItemRackUser = {
 	},
 	["Hidden"] = {
 	},
-	["CurrentSet"] = "dps",
+	["EnableEvents"] = "ON",
 	["SetMenuWrap"] = "OFF",
 	["ItemsUsed"] = {
-		["37557"] = 30,
+		["37557"] = 5,
 	},
 	["Events"] = {
 		["Enabled"] = {
@@ -37,10 +37,10 @@ ItemRackUser = {
 		["Set"] = {
 		},
 	},
+	["Alpha"] = 1,
+	["EnableQueues"] = "ON",
 	["Queues"] = {
 	},
-	["EnableQueues"] = "ON",
-	["Alpha"] = 1,
 	["MenuScale"] = 1.2,
-	["EnableEvents"] = "ON",
+	["CurrentSet"] = "dps",
 }

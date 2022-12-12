@@ -7,5 +7,6 @@ WSEDB = {
 		["Miqa - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
+		["Mxzq - Golemagg"] = "Default",
 	},
 }
