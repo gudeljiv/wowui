@@ -19,4 +19,10 @@ SRTIExternalUF = {
 		"Grid2LayoutHeader1UnitButton4", -- [4]
 		"Grid2LayoutHeader1UnitButton5", -- [5]
 	},
+	["shadowedunitframes"] = {
+		"SUFUnittarget", -- [1]
+		"SUFUnittargettarget", -- [2]
+		"SUFUnitfocus", -- [3]
+		"SUFUnitfocustarget", -- [4]
+	},
 }

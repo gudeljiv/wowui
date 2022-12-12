@@ -10,22 +10,22 @@ Details_StreamerDB = {
 		["Kaonac - Jin'do"] = "Mxyz - Golemagg",
 		["Handrmandr - Golemagg"] = "Mxyz - Golemagg",
 		["Wells - Jin'do"] = "Mxyz - Golemagg",
-		["Konac - Dreadnaught"] = "Mxyz - Golemagg",
+		["Tandaram - Jin'do"] = "Mxyz - Golemagg",
 		["Poklopac - Dreadnaught"] = "Mxyz - Golemagg",
 		["Pitchwise - Dreadnaught"] = "Mxyz - Golemagg",
-		["Battlearm - Hydraxian Waterlords"] = "Mxyz - Golemagg",
-		["Pitchwise - Ashbringer"] = "Mxyz - Golemagg",
+		["Nitwit - Dreadnaught"] = "Mxyz - Golemagg",
+		["Tudum - Jin'do"] = "Mxyz - Golemagg",
 		["Tudum - Ashbringer"] = "Mxyz - Golemagg",
 		["Augustin - Golemagg"] = "Mxyz - Golemagg",
-		["Moolatz - Golemagg"] = "Mxyz - Golemagg",
-		["Miqa - Golemagg"] = "Mxyz - Golemagg",
+		["Pitchwise - Ashbringer"] = "Mxyz - Golemagg",
+		["Provokator - Jin'do"] = "Mxyz - Golemagg",
 		["Vermin - Golemagg"] = "Mxyz - Golemagg",
 		["Battlearm - Jin'do"] = "Mxyz - Golemagg",
 		["Poklopac - Mirage Raceway"] = "Mxyz - Golemagg",
-		["Provokator - Jin'do"] = "Mxyz - Golemagg",
-		["Tudum - Jin'do"] = "Mxyz - Golemagg",
-		["Nitwit - Dreadnaught"] = "Mxyz - Golemagg",
-		["Tandaram - Jin'do"] = "Mxyz - Golemagg",
+		["Miqa - Golemagg"] = "Mxyz - Golemagg",
+		["Moolatz - Golemagg"] = "Mxyz - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Mxyz - Golemagg",
+		["Konac - Dreadnaught"] = "Mxyz - Golemagg",
 		["Moolatz - Dreadnaught"] = "Mxyz - Golemagg",
 	},
 	["profiles"] = {
@@ -45,7 +45,10 @@ Details_StreamerDB = {
 				0.5, -- [4]
 			},
 			["scale"] = 1,
-			["arrow_anchor_y"] = 0,
+			["main_frame_size"] = {
+				249.999740600586, -- [1]
+				89.9999694824219, -- [2]
+			},
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
@@ -56,7 +59,7 @@ Details_StreamerDB = {
 			["point"] = "RIGHT",
 			["row_texture"] = "Glamour2",
 			["square_grow_direction"] = "right",
-			["author"] = "Details! Team",
+			["use_square_mode"] = false,
 			["row_color"] = {
 				0.443137254901961, -- [1]
 				0.592156862745098, -- [2]
@@ -86,18 +89,15 @@ Details_StreamerDB = {
 			},
 			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["y"] = -183.107162475586,
 			["use_spark"] = false,
-			["font_size"] = 10,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["y"] = -183.107162475586,
-			["use_square_mode"] = false,
+			["font_size"] = 10,
+			["author"] = "Details! Team",
 			["main_frame_locked"] = true,
-			["main_frame_size"] = {
-				249.999740600586, -- [1]
-				89.9999694824219, -- [2]
-			},
+			["arrow_anchor_y"] = 0,
 		},
 	},
 }

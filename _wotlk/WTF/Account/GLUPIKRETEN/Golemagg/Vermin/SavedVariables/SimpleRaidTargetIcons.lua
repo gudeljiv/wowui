@@ -12,14 +12,6 @@ SRTISaved = {
 	["singlehover"] = false,
 }
 SRTIExternalUF = {
-	["blizzard_compactraidframes"] = {
-		"CompactRaidFrame1", -- [1]
-		"CompactRaidFrame2", -- [2]
-		"CompactRaidFrame3", -- [3]
-		"CompactRaidFrame4", -- [4]
-		"CompactRaidFrame5", -- [5]
-		"CompactRaidFrame6", -- [6]
-	},
 	["aptechka"] = {
 		"NugRaid1UnitButton1", -- [1]
 		"NugRaid2UnitButton1", -- [2]
@@ -34,6 +26,10 @@ SRTIExternalUF = {
 		"NugRaid1UnitButton4", -- [11]
 		"NugRaid1UnitButton5", -- [12]
 	},
+	["pitbull4"] = {
+		"PitBull4_Frames_Target", -- [1]
+		"PitBull4_Frames_Target's target", -- [2]
+	},
 	["grid2"] = {
 		"Grid2LayoutHeader1UnitButton1", -- [1]
 		"Grid2LayoutHeader1UnitButton2", -- [2]
@@ -46,8 +42,18 @@ SRTIExternalUF = {
 		"Grid2LayoutHeader2UnitButton4", -- [9]
 		"Grid2LayoutHeader2UnitButton5", -- [10]
 	},
-	["pitbull4"] = {
-		"PitBull4_Frames_Target", -- [1]
-		"PitBull4_Frames_Target's target", -- [2]
+	["shadowedunitframes"] = {
+		"SUFUnittarget", -- [1]
+		"SUFUnittargettarget", -- [2]
+		"SUFUnitfocus", -- [3]
+		"SUFUnitfocustarget", -- [4]
+	},
+	["blizzard_compactraidframes"] = {
+		"CompactRaidFrame1", -- [1]
+		"CompactRaidFrame2", -- [2]
+		"CompactRaidFrame3", -- [3]
+		"CompactRaidFrame4", -- [4]
+		"CompactRaidFrame5", -- [5]
+		"CompactRaidFrame6", -- [6]
 	},
 }

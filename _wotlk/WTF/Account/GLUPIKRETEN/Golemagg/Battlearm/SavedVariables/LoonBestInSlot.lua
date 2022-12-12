@@ -35,7 +35,7 @@ LBISSettings = {
 		["RestorationDruid"] = true,
 		["SubtletyRogue"] = true,
 	},
-	["SelectedSpec"] = "Fury Warrior",
+	["SelectedSpec"] = "Frost Death Knight",
 	["minimap"] = {
 		["minimapPos"] = 180,
 		["hide"] = true,
@@ -44,10 +44,11 @@ LBISSettings = {
 		["Phase 1"] = true,
 		["PreRaid"] = true,
 	},
+	["ShowPriority"] = true,
+	["SelectedSlot"] = "Main Hand",
+	["SelectedSourceType"] = "All",
+	["ShowCustom"] = false,
 	["PriorityList"] = {
 	},
-	["SelectedSourceType"] = "All",
-	["SelectedSlot"] = "All",
-	["ShowPriority"] = true,
-	["SelectedPhase"] = "BIS",
+	["SelectedPhase"] = "All",
 }

@@ -166,6 +166,7 @@ local function SkinFocus(init)
 end
 
 hooksecurefunc('TargetFrame_UpdateAuras', SkinTarget)
+-- TargetFrame:HookScript('OnUpdate', SkinTarget)
 FocusFrame:HookScript('OnUpdate', SkinFocus)
 PetFrame:HookScript('OnUpdate', SkinPet)
 SkinTarget(true)
