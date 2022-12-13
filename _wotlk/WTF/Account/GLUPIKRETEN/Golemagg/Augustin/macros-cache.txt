@@ -1,8 +1,3 @@
-VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast [mod:alt]Fireball(Rank 1);Fireball
-END
 VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [mod:shift]Portal: Undercity;Teleport: Undercity
@@ -24,6 +19,11 @@ VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast Fire Blast
+END
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast [mod:alt]Fireball(Rank 1);Fireball
 END
 VER 3 0000000001000008 "VuhDoDCShieldData" "Ability_Repair"
 P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1MR[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]

@@ -8,3 +8,5 @@ Leatrix_Plus: enabled
 AceBIS: disabled
 Bistooltip: disabled
 NovaWorldBuffs: disabled
+ShadowedUF_Options: disabled
+ShadowedUnitFrames: disabled

@@ -199,3 +199,5 @@ Roll: disabled
 Gladdy: enabled
 AceBIS: disabled
 Bistooltip: disabled
+ShadowedUF_Options: disabled
+ShadowedUnitFrames: disabled

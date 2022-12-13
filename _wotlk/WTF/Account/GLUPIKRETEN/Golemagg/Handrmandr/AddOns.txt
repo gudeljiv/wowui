@@ -171,3 +171,5 @@ NovaWorldBuffs: disabled
 Masque: enabled
 AceBIS: disabled
 Bistooltip: disabled
+ShadowedUF_Options: disabled
+ShadowedUnitFrames: disabled
