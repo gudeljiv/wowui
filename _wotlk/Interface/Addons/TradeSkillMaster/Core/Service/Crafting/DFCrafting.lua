@@ -132,7 +132,7 @@ function private.CraftingCostHelper(craftString, mats, neededSkill, maxAddedSkil
 			weight = weight + matWeight * quantity
 			local matCost = qualityMatCostTemp[matItemString]
 			if not matCost then
-				currentMatCost = nil
+				currentMatCost = math.huge
 				break
 			end
 			currentMatCost = currentMatCost + matCost * quantity
