@@ -142,15 +142,20 @@ f:SetScript(
 			end
 		)
 
-		PlayerFrame:HookScript(
-			'OnUpdate',
+		xVermin.CheckIfLoadedWithTimer(
+			'PlayerFrame',
 			function()
-				if UnitHealth('player') > 0 then
-					PlayerFrameHealthBarText:SetText(xVermin.FormatValue(UnitHealth('player')) .. ' / ' .. xVermin.FormatValue(UnitHealthMax('player')))
-				else
-					PlayerFrameHealthBarText:Hide()
-					PlayerFrameManaBarText:Hide()
-				end
+				PlayerFrame:HookScript(
+					'OnUpdate',
+					function()
+						if UnitHealth('player') > 0 then
+							PlayerFrameHealthBarText:SetText(xVermin.FormatValue(UnitHealth('player')) .. ' / ' .. xVermin.FormatValue(UnitHealthMax('player')))
+						else
+							PlayerFrameHealthBarText:Hide()
+							PlayerFrameManaBarText:Hide()
+						end
+					end
+				)
 			end
 		)
 
@@ -178,15 +183,21 @@ f:SetScript(
 		TargetFrameNameBackground:SetVertexColor(0, 0, 0, 0.5)
 		TargetFrameNameBackground.SetVertexColor = function()
 		end
-		TargetFrame:HookScript(
-			'OnUpdate',
+
+		xVermin.CheckIfLoadedWithTimer(
+			'TargetFrame',
 			function()
-				if UnitHealth('target') > 0 then
-					TargetFrameTextureFrame.HealthBarText:SetText(xVermin.FormatValue(UnitHealth('target')) .. ' / ' .. xVermin.FormatValue(UnitHealthMax('target')))
-				else
-					TargetFrameTextureFrame.HealthBarText:Hide()
-					TargetFrameTextureFrame.ManaBarText:Hide()
-				end
+				TargetFrame:HookScript(
+					'OnUpdate',
+					function()
+						if UnitHealth('target') > 0 then
+							TargetFrameTextureFrame.HealthBarText:SetText(xVermin.FormatValue(UnitHealth('target')) .. ' / ' .. xVermin.FormatValue(UnitHealthMax('target')))
+						else
+							TargetFrameTextureFrame.HealthBarText:Hide()
+							TargetFrameTextureFrame.ManaBarText:Hide()
+						end
+					end
+				)
 			end
 		)
 

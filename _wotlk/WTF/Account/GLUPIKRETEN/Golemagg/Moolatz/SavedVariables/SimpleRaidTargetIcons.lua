@@ -46,4 +46,9 @@ SRTIExternalUF = {
 		"NugRaid1UnitButton4", -- [11]
 		"NugRaid1UnitButton5", -- [12]
 	},
+	["shadowedunitframes"] = {
+		"SUFUnittarget", -- [1]
+		"SUFUnittargettarget", -- [2]
+		"SUFUnitfocus", -- [3]
+	},
 }

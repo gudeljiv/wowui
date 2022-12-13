@@ -99,9 +99,22 @@ f:SetBackdropColor(1, 1, 1, 1)
 f = CreateFrame('Frame', 'RotationFrame1', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
 f:SetFrameStrata('TOOLTIP')
 f:SetWidth(3)
-f:SetHeight(40)
+f:SetHeight(35)
 f:ClearAllPoints()
-f:SetPoint('LEFT', PlayerFrame, 'RIGHT', 0, 6)
+
+xVermin.CheckIfLoadedWithTimer(
+	'PlayerFrame',
+	function()
+		f:SetPoint('LEFT', PlayerFrame, 'RIGHT', 0, 6)
+	end
+)
+xVermin.CheckIfLoadedWithTimer(
+	'SUFUnitplayer',
+	function()
+		f:SetPoint('LEFT', SUFUnitplayer, 'RIGHT', 0, 0)
+	end
+)
+
 f:SetFrameStrata('BACKGROUND')
 f:SetBackdrop(
 	{

@@ -44,11 +44,11 @@ LBISSettings = {
 		["PreRaid"] = true,
 		["Phase 1"] = true,
 	},
-	["ShowCustom"] = false,
+	["ShowPriority"] = true,
 	["SelectedSlot"] = "All",
 	["SelectedSourceType"] = "All",
+	["ShowCustom"] = false,
 	["PriorityList"] = {
 	},
-	["ShowPriority"] = true,
 	["SelectedPhase"] = "All",
 }

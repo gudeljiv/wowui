@@ -217,5 +217,5 @@ DBM-VoA: enabled
 DBM-VPVEM: enabled
 DBM-WorldEvents: enabled
 DBM-ZulAman: enabled
-ShadowedUF_Options: disabled
-ShadowedUnitFrames: disabled
+ShadowedUF_Options: enabled
+ShadowedUnitFrames: enabled

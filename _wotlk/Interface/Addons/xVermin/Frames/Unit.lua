@@ -15,7 +15,7 @@ if xVermin.Class == 'HUNTER' then
 
 	CharacterAmmoSlotCount:Hide()
 
-	PlayerFrame:HookScript(
+	UIParent:HookScript(
 		'OnUpdate',
 		function()
 			local ammoCount = GetInventoryItemCount('player', GetInventorySlotInfo('AmmoSlot'))
@@ -39,7 +39,7 @@ us.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassCo
 
 local usVisible = false
 
-PlayerFrame:HookScript(
+UIParent:HookScript(
 	'OnUpdate',
 	function()
 		speed = math.floor(GetUnitSpeed('player') / 0.07 + 0.5) -- weird lua rounding

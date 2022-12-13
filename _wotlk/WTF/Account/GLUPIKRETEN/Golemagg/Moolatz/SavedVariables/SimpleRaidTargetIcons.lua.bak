@@ -20,6 +20,11 @@ SRTIExternalUF = {
 		"CompactRaidFrame5", -- [5]
 		"CompactRaidFrame6", -- [6]
 	},
+	["shadowedunitframes"] = {
+		"SUFUnittarget", -- [1]
+		"SUFUnittargettarget", -- [2]
+		"SUFUnitfocus", -- [3]
+	},
 	["aptechka"] = {
 		"NugRaid1UnitButton1", -- [1]
 		"NugRaid2UnitButton1", -- [2]

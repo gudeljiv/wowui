@@ -7,159 +7,159 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 253,
 					["tipo"] = 2,
+					["combatId"] = 274,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006973,
+							["totalabsorbed"] = 0.006779,
 							["damage_from"] = {
-								["Ice Heart Jormungar Feeder"] = true,
+								["Environment (Fire)"] = true,
+								["Ice Heart Jormungar Spawn"] = true,
 							},
 							["targets"] = {
-								["Ice Heart Jormungar Feeder"] = 10192,
+								["Ice Heart Jormungar Spawn"] = 5636,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 10192.006973,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1670839498,
-							["friendlyfire_total"] = 0,
+							["total_without_pet"] = 5636.006778999999,
 							["aID"] = "4465-02B843FA",
+							["dps_started"] = false,
+							["end_time"] = 1670959154,
+							["damage_taken"] = 243.006779,
+							["total"] = 5636.006778999999,
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 1014,
-										["g_amt"] = 0,
-										["n_max"] = 274,
-										["targets"] = {
-											["Ice Heart Jormungar Feeder"] = 2015,
-										},
-										["n_dmg"] = 1001,
-										["n_min"] = 229,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["ChartData"] = {
-											[6] = 2015,
-										},
-										["total"] = 2015,
-										["c_max"] = 513,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 501,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[48565] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 2200,
+										["c_dmg"] = 514,
+										["g_amt"] = 0,
+										["n_max"] = 239,
+										["targets"] = {
+											["Ice Heart Jormungar Spawn"] = 753,
+										},
+										["n_dmg"] = 239,
+										["n_min"] = 239,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[5] = 753,
+										},
+										["total"] = 753,
+										["c_max"] = 514,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 514,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+									[48573] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 661,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Ice Heart Jormungar Feeder"] = 2200,
+											["Ice Heart Jormungar Spawn"] = 661,
 										},
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
 										["ChartData"] = {
-											[6] = 2200,
+											[5] = 661,
 										},
-										["total"] = 2200,
-										["c_max"] = 2200,
-										["id"] = 48565,
+										["total"] = 661,
+										["c_max"] = 661,
+										["id"] = 48573,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
-										["c_min"] = 2200,
+										["c_min"] = 661,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
-									[48569] = {
+									[48565] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 2126,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Ice Heart Jormungar Spawn"] = 2126,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 2126,
+										},
+										["total"] = 2126,
+										["c_max"] = 2126,
+										["id"] = 48565,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 2126,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[48576] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 581,
+										["n_max"] = 1946,
 										["targets"] = {
-											["Ice Heart Jormungar Feeder"] = 581,
+											["Ice Heart Jormungar Spawn"] = 1946,
 										},
-										["n_dmg"] = 581,
-										["n_min"] = 581,
+										["n_dmg"] = 1946,
+										["n_min"] = 1946,
 										["g_dmg"] = 0,
 										["counter"] = 1,
 										["ChartData"] = {
-											[6] = 581,
+											[5] = 1946,
 										},
-										["total"] = 581,
+										["total"] = 1946,
 										["c_max"] = 0,
-										["id"] = 48569,
+										["id"] = 48576,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[48573] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 292,
-										["targets"] = {
-											["Ice Heart Jormungar Feeder"] = 292,
-										},
-										["n_dmg"] = 292,
-										["n_min"] = 292,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["ChartData"] = {
-											[6] = 292,
-										},
-										["total"] = 292,
-										["c_max"] = 0,
-										["id"] = 48573,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
 									},
 									[53307] = {
 										["c_amt"] = 0,
@@ -168,161 +168,131 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 75,
 										["targets"] = {
-											["Ice Heart Jormungar Feeder"] = 150,
+											["Ice Heart Jormungar Spawn"] = 150,
 										},
 										["n_dmg"] = 150,
 										["n_min"] = 75,
 										["g_dmg"] = 0,
 										["counter"] = 2,
 										["ChartData"] = {
-											[6] = 150,
+											[5] = 150,
 										},
 										["total"] = 150,
 										["c_max"] = 0,
 										["id"] = 53307,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[48576] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 4954,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Ice Heart Jormungar Feeder"] = 4954,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["ChartData"] = {
-											[6] = 4954,
-										},
-										["total"] = 4954,
-										["c_max"] = 4954,
-										["id"] = 48576,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
-										["c_min"] = 4954,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 8,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 10192.006973,
+							["last_dps"] = 865.081623773938,
+							["friendlyfire_total"] = 0,
+							["colocacao"] = 1,
+							["last_event"] = 1670959154,
+							["on_hold"] = false,
+							["start_time"] = 1670959148,
 							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 1717.560999862749,
-							["custom"] = 0,
-							["last_event"] = 1670839497,
-							["damage_taken"] = 256.006973,
-							["start_time"] = 1670839492,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004249,
+							["totalabsorbed"] = 0.006264,
 							["damage_from"] = {
 								["Moolatz"] = true,
 							},
 							["targets"] = {
-								["Moolatz"] = 256,
+								["Moolatz"] = 233,
 							},
-							["total"] = 256.004249,
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-							},
+							["last_dps"] = 0,
+							["tipo"] = 1,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 256.004249,
+							["total_without_pet"] = 233.006264,
+							["end_time"] = 1670959154,
 							["fight_component"] = true,
-							["monster"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1670839498,
+							["total"] = 233.006264,
+							["damage_taken"] = 5636.006264,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Ice Heart Jormungar Feeder",
+							["nome"] = "Ice Heart Jormungar Spawn",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 256,
+										["n_max"] = 122,
 										["targets"] = {
-											["Moolatz"] = 256,
+											["Moolatz"] = 233,
 										},
-										["n_dmg"] = 256,
-										["n_min"] = 256,
+										["n_dmg"] = 233,
+										["n_min"] = 111,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 256,
+										["counter"] = 3,
+										["total"] = 233,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 2,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "26358",
-							["serial"] = "Creature-0-4446-571-16693-26358-000016F992",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["aID"] = "26359",
 							["custom"] = 0,
-							["last_event"] = 1670839496,
-							["damage_taken"] = 10192.004249,
-							["start_time"] = 1670839496,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["last_event"] = 1670959152,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1670959148,
+							["serial"] = "Creature-0-4446-571-16687-26359-000018C5D5",
+							["monster"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 253,
 					["tipo"] = 3,
+					["combatId"] = 274,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Moolatz"] = 300,
+							["healing_from"] = {
+								["Moolatz"] = true,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["totalover"] = 300.005762,
-							["total_without_pet"] = 260.005762,
-							["total"] = 260.005762,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.006181,
+							["total_without_pet"] = 3266.006181,
+							["total"] = 3266.006181,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
@@ -330,90 +300,1690 @@ _detalhes_database = {
 							["colocacao"] = 1,
 							["on_hold"] = false,
 							["serial"] = "Player-4465-02B843FA",
-							["totalabsorb"] = 0.005762,
-							["last_hps"] = 99.9637685585752,
+							["totalabsorb"] = 0.006181,
+							["last_hps"] = 501.3056302278799,
 							["targets"] = {
-								["Moolatz"] = 260,
+								["Moolatz"] = 3266,
 							},
-							["totalover_without_pet"] = 0.005762,
-							["healing_taken"] = 260.005762,
+							["totalover_without_pet"] = 0.006181,
+							["healing_taken"] = 3266.006181,
 							["fight_component"] = true,
-							["end_time"] = 1670839498,
-							["healing_from"] = {
-								["Moolatz"] = true,
-							},
+							["end_time"] = 1670959154,
+							["last_event"] = 1670959153,
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
+									[48440] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 316,
+										["targets"] = {
+											["Moolatz"] = 632,
+										},
+										["n_min"] = 316,
+										["counter"] = 2,
+										["overheal"] = 0,
+										["total"] = 632,
+										["c_max"] = 0,
+										["id"] = 48440,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 632,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+									[48442] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 1811,
+										["targets"] = {
+											["Moolatz"] = 2075,
+										},
+										["n_min"] = 264,
+										["counter"] = 2,
+										["overheal"] = 0,
+										["total"] = 2075,
+										["c_max"] = 0,
+										["id"] = 48442,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 2075,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
 									[34299] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Moolatz"] = 300,
 										},
-										["n_max"] = 260,
+										["n_max"] = 559,
 										["targets"] = {
-											["Moolatz"] = 260,
+											["Moolatz"] = 559,
 										},
-										["n_min"] = 260,
+										["n_min"] = 559,
 										["counter"] = 1,
-										["overheal"] = 300,
-										["total"] = 260,
+										["overheal"] = 0,
+										["total"] = 559,
 										["c_max"] = 0,
 										["id"] = 34299,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 260,
-										["totaldenied"] = 0,
 										["n_amt"] = 1,
+										["n_curado"] = 559,
+										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1670839494,
+							["targets_overheal"] = {
+							},
+							["aID"] = "4465-02B843FA",
 							["custom"] = 0,
 							["tipo"] = 2,
-							["aID"] = "4465-02B843FA",
-							["totaldenied"] = 0.005762,
+							["totaldenied"] = 0.006181,
+							["start_time"] = 1670959149,
 							["delay"] = 0,
-							["last_event"] = 1670839494,
+							["classe"] = "DRUID",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 253,
 					["tipo"] = 7,
+					["combatId"] = 274,
 					["_ActorTable"] = {
 						{
-							["received"] = 159.008211,
-							["resource"] = 0.008211,
+							["received"] = 756.004935,
+							["resource"] = 0.004935,
 							["targets"] = {
-								["Moolatz"] = 159,
+								["Moolatz"] = 756,
 							},
 							["pets"] = {
 							},
 							["powertype"] = 0,
 							["classe"] = "DRUID",
-							["passiveover"] = 6.008211,
+							["passiveover"] = 0.004935,
 							["fight_component"] = true,
-							["total"] = 159.008211,
+							["total"] = 756.004935,
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[68285] = {
-										["total"] = 99,
+										["total"] = 756,
 										["id"] = 68285,
-										["totalover"] = 658,
+										["totalover"] = 0,
 										["targets"] = {
-											["Moolatz"] = 99,
+											["Moolatz"] = 756,
 										},
 										["counter"] = 1,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["totalover"] = 0.004935,
+							["alternatepower"] = 0.004935,
+							["last_event"] = 1670959152,
+							["tipo"] = 3,
+							["aID"] = "4465-02B843FA",
+							["serial"] = "Player-4465-02B843FA",
+							["flag_original"] = 1297,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 274,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[48565] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 48565,
+										["uptime"] = 2,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48573] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 48573,
+										["uptime"] = 1,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[16857] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 16857,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 52,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[48442] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48442,
+										["uptime"] = 5,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48420] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48420,
+										["uptime"] = 5,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[768] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 768,
+										["uptime"] = 5,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 377749,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[57940] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 57940,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[24932] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 24932,
+										["uptime"] = 5,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[26991] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 26991,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[53307] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 53307,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48440] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48440,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48834] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48834,
+										["uptime"] = 2,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[69369] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 69369,
+										["uptime"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 7,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[768] = 1,
+								[16857] = 1,
+								[48576] = 1,
+								[48573] = 1,
+								[48442] = 1,
+								[48565] = 1,
+							},
+							["tipo"] = 4,
+							["nome"] = "Moolatz",
+							["last_event"] = 1670959154,
+							["classe"] = "DRUID",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["debuff_uptime_targets"] = {
+							},
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 274,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = "Player-4465-02B843FA",
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["tempo_start"] = 1670959148,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 15055,
+				["playing_solo"] = true,
+				["totals"] = {
+					5868.961738, -- [1]
+					3266, -- [2]
+					{
+						0, -- [1]
+						[0] = 756,
+						["alternatepower"] = 0,
+						[6] = -0.004851999999999634,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					5636, -- [1]
+					3266, -- [2]
+					{
+						0, -- [1]
+						[0] = 756,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:19:15",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Ice Heart Jormungar Spawn",
+				["TotalElapsedCombatTime"] = 2891466.68,
+				["CombatEndedAt"] = 2891466.68,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Moolatz"] = 5636.006778999999,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Moolatz"] = 3266.006181,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 2891466.68,
+				["combat_id"] = 274,
+				["data_inicio"] = "20:19:08",
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["contra"] = "Ice Heart Jormungar Spawn",
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+					["Moolatz"] = {
+						{
+							true, -- [1]
+							6, -- [2]
+							10, -- [3]
+							1670959354.279, -- [4]
+							13980, -- [5]
+							"Environment (Fire)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 2,
+					},
+				},
+				["start_time"] = 2891460.165,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Ice Heart Jormungar Spawn"] = 1,
+				},
+			}, -- [1]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 273,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002941,
+							["damage_from"] = {
+								["Ice Heart Jormungar Spawn"] = true,
+							},
+							["targets"] = {
+								["Ice Heart Jormungar Spawn"] = 5472,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["tipo"] = 1,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 5472.002941,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["total"] = 5472.002941,
+							["damage_taken"] = 205.002941,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 1047,
+										["g_amt"] = 0,
+										["n_max"] = 226,
+										["targets"] = {
+											["Ice Heart Jormungar Spawn"] = 1273,
+										},
+										["n_dmg"] = 226,
+										["n_min"] = 226,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 1273,
+										["c_max"] = 527,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 520,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+									[48565] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 965,
+										["targets"] = {
+											["Ice Heart Jormungar Spawn"] = 965,
+										},
+										["n_dmg"] = 965,
+										["n_min"] = 965,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 965,
+										["c_max"] = 0,
+										["id"] = 48565,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[48569] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 534,
+										["targets"] = {
+											["Ice Heart Jormungar Spawn"] = 534,
+										},
+										["n_dmg"] = 534,
+										["n_min"] = 534,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 534,
+										["c_max"] = 0,
+										["id"] = 48569,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[48573] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 659,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Ice Heart Jormungar Spawn"] = 659,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 659,
+										["c_max"] = 659,
+										["id"] = 48573,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 659,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[53307] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75,
+										["targets"] = {
+											["Ice Heart Jormungar Spawn"] = 149,
+										},
+										["n_dmg"] = 149,
+										["n_min"] = 74,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 149,
+										["c_max"] = 0,
+										["id"] = 53307,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 8,
+									},
+									[48576] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1892,
+										["targets"] = {
+											["Ice Heart Jormungar Spawn"] = 1892,
+										},
+										["n_dmg"] = 1892,
+										["n_min"] = 1892,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 1892,
+										["c_max"] = 0,
+										["id"] = 48576,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["last_dps"] = 1674.932029694668,
+							["end_time"] = 1670959124,
+							["colocacao"] = 1,
+							["last_event"] = 1670959123,
+							["on_hold"] = false,
+							["start_time"] = 1670959120,
+							["serial"] = "Player-4465-02B843FA",
+							["friendlyfire"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006253,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 205,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 205.006253,
+							["end_time"] = 1670959124,
+							["monster"] = true,
+							["total"] = 205.006253,
+							["damage_taken"] = 5472.006253,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Ice Heart Jormungar Spawn",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 110,
+										["targets"] = {
+											["Moolatz"] = 205,
+										},
+										["n_dmg"] = 205,
+										["n_min"] = 95,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 205,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["aID"] = "26359",
+							["custom"] = 0,
+							["last_event"] = 1670959123,
+							["on_hold"] = false,
+							["start_time"] = 1670959121,
+							["serial"] = "Creature-0-4446-571-16687-26359-00001786AF",
+							["fight_component"] = true,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 273,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.001105,
+							["total_without_pet"] = 560.001105,
+							["total"] = 560.001105,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02B843FA",
+							["totalabsorb"] = 0.001105,
+							["last_hps"] = 453.8096474248247,
+							["targets"] = {
+								["Moolatz"] = 560,
+							},
+							["totalover_without_pet"] = 0.001105,
+							["healing_taken"] = 560.001105,
+							["fight_component"] = true,
+							["end_time"] = 1670959124,
+							["last_event"] = 1670959121,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[34299] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 560,
+										["targets"] = {
+											["Moolatz"] = 560,
+										},
+										["n_min"] = 560,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 560,
+										["c_max"] = 0,
+										["id"] = 34299,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 560,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["targets_overheal"] = {
+							},
+							["aID"] = "4465-02B843FA",
+							["custom"] = 0,
+							["tipo"] = 2,
+							["totaldenied"] = 0.001105,
+							["start_time"] = 1670959121,
+							["delay"] = 0,
+							["classe"] = "DRUID",
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 273,
+					["_ActorTable"] = {
+						{
+							["received"] = 0.003567,
+							["resource"] = 0.003567,
+							["targets"] = {
+								["Moolatz"] = 0,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "DRUID",
+							["passiveover"] = 0.003567,
+							["fight_component"] = true,
+							["total"] = 0.003567,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[68285] = {
+										["total"] = 0,
+										["id"] = 68285,
+										["totalover"] = 757,
+										["targets"] = {
+											["Moolatz"] = 0,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["totalover"] = 757.003567,
+							["alternatepower"] = 0.003567,
+							["last_event"] = 1670959121,
+							["tipo"] = 3,
+							["aID"] = "4465-02B843FA",
+							["serial"] = "Player-4465-02B843FA",
+							["flag_original"] = 1297,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 273,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[48565] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 48565,
+										["uptime"] = 3,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48573] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 48573,
+										["uptime"] = 2,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[16857] = {
+										["activedamt"] = -1,
+										["id"] = 16857,
+										["targets"] = {
+										},
+										["actived_at"] = 1670959123,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["appliedamt"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 32,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[48420] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48420,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[22812] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 22812,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[768] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 768,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 377749,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[57940] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 57940,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[24932] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 24932,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[26991] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 26991,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[53307] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 53307,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[16870] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 16870,
+										["uptime"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 5,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[48569] = 1,
+								[48573] = 1,
+								[48576] = 1,
+							},
+							["tipo"] = 4,
+							["nome"] = "Moolatz",
+							["last_event"] = 1670959124,
+							["classe"] = "DRUID",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["debuff_uptime_targets"] = {
+							},
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 273,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = "Player-4465-02B843FA",
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 2891458.548,
+				["tempo_start"] = 1670959120,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					5677, -- [1]
+					560, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:18:44",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Ice Heart Jormungar Spawn",
+				["TotalElapsedCombatTime"] = 2891436.197,
+				["CombatEndedAt"] = 2891436.197,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Moolatz"] = 5472.002941,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Moolatz"] = 560.001105,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 2891436.197,
+				["combat_id"] = 273,
+				["data_inicio"] = "20:18:41",
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 15054,
+				["totals_grupo"] = {
+					5472, -- [1]
+					560, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Ice Heart Jormungar Spawn",
+				["start_time"] = 2891432.38,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Ice Heart Jormungar Spawn"] = 1,
+				},
+			}, -- [2]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 272,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.004577,
+							["damage_from"] = {
+								["Ice Heart Jormungar Feeder"] = true,
+							},
+							["targets"] = {
+								["Ice Heart Jormungar Feeder"] = 19853,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["tipo"] = 1,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 19853.004577,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["total"] = 19853.004577,
+							["damage_taken"] = 3906.004577,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 10,
+										["b_amt"] = 0,
+										["c_dmg"] = 5303,
+										["g_amt"] = 0,
+										["n_max"] = 276,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 7506,
+										},
+										["n_dmg"] = 2203,
+										["n_min"] = 221,
+										["g_dmg"] = 0,
+										["counter"] = 19,
+										["ChartData"] = {
+											[17] = 7007,
+											[12] = 4800,
+											[14] = 5753,
+											[9] = 3292,
+											[5] = 2483,
+										},
+										["total"] = 7506,
+										["c_max"] = 626,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 499,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 9,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+									[48565] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 2192,
+										["g_amt"] = 0,
+										["n_max"] = 1057,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 3249,
+										},
+										["n_dmg"] = 1057,
+										["n_min"] = 1057,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[17] = 3249,
+											[12] = 3249,
+											[14] = 3249,
+											[9] = 3249,
+											[5] = 2192,
+										},
+										["total"] = 3249,
+										["c_max"] = 2192,
+										["id"] = 48565,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 2192,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[48569] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1193,
+										["g_amt"] = 0,
+										["n_max"] = 574,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 2824,
+										},
+										["n_dmg"] = 1631,
+										["n_min"] = 528,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["ChartData"] = {
+											[17] = 1631,
+											[12] = 1102,
+											[14] = 1102,
+											[9] = 1102,
+											[5] = 528,
+										},
+										["total"] = 2824,
+										["c_max"] = 1193,
+										["id"] = 48569,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 1193,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[48573] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 659,
+										["g_amt"] = 0,
+										["n_max"] = 858,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 3524,
+										},
+										["n_dmg"] = 2865,
+										["n_min"] = 291,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["ChartData"] = {
+											[17] = 3524,
+											[12] = 1808,
+											[14] = 2666,
+											[9] = 1517,
+											[5] = 659,
+										},
+										["total"] = 3524,
+										["c_max"] = 659,
+										["id"] = 48573,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 659,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[53307] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 520,
+										},
+										["n_dmg"] = 520,
+										["n_min"] = 74,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["ChartData"] = {
+											[17] = 446,
+											[12] = 297,
+											[14] = 372,
+											[9] = 223,
+											[5] = 223,
+										},
+										["total"] = 520,
+										["c_max"] = 0,
+										["id"] = 53307,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 7,
+										["extra"] = {
+										},
+										["spellschool"] = 8,
+									},
+									[48576] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2230,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 2230,
+										},
+										["n_dmg"] = 2230,
+										["n_min"] = 2230,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[17] = 2230,
+											[12] = 2230,
+											[14] = 2230,
+											[9] = 2230,
+											[5] = 2230,
+										},
+										["total"] = 2230,
+										["c_max"] = 0,
+										["id"] = 48576,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["last_dps"] = 1026.048094323873,
+							["end_time"] = 1670959112,
+							["colocacao"] = 1,
+							["last_event"] = 1670959112,
+							["on_hold"] = false,
+							["start_time"] = 1670959092,
+							["serial"] = "Player-4465-02B843FA",
+							["friendlyfire"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.001179,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 3906,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 3906.001179,
+							["end_time"] = 1670959120,
+							["monster"] = true,
+							["total"] = 3906.001179,
+							["damage_taken"] = 19853.001179,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Ice Heart Jormungar Feeder",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 294,
+										["targets"] = {
+											["Moolatz"] = 1767,
+										},
+										["n_dmg"] = 1767,
+										["n_min"] = 219,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 1767,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["extra"] = {
+										},
+										["n_amt"] = 7,
+										["DODGE"] = 4,
+										["MISS"] = 1,
+									}, -- [1]
+									[47447] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 522,
+										["targets"] = {
+											["Moolatz"] = 2139,
+										},
+										["n_dmg"] = 2139,
+										["n_min"] = 365,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 2139,
+										["c_max"] = 0,
+										["id"] = 47447,
+										["r_dmg"] = 1617,
+										["r_amt"] = 4,
+										["b_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["aID"] = "26358",
+							["custom"] = 0,
+							["last_event"] = 1670959115,
+							["on_hold"] = false,
+							["start_time"] = 1670959094,
+							["serial"] = "Creature-0-4446-571-16687-26358-000018C614",
+							["fight_component"] = true,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 272,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.00762,
+							["total_without_pet"] = 1678.00762,
+							["total"] = 1678.00762,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02B843FA",
+							["totalabsorb"] = 0.00762,
+							["last_hps"] = 105.6946094723277,
+							["targets"] = {
+								["Moolatz"] = 1678,
+							},
+							["totalover_without_pet"] = 0.00762,
+							["healing_taken"] = 1678.00762,
+							["fight_component"] = true,
+							["end_time"] = 1670959112,
+							["last_event"] = 1670959108,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[34299] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 560,
+										["targets"] = {
+											["Moolatz"] = 1678,
+										},
+										["n_min"] = 559,
+										["counter"] = 3,
+										["overheal"] = 0,
+										["total"] = 1678,
+										["c_max"] = 0,
+										["id"] = 34299,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_amt"] = 3,
+										["n_curado"] = 1678,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["targets_overheal"] = {
+							},
+							["aID"] = "4465-02B843FA",
+							["custom"] = 0,
+							["tipo"] = 2,
+							["totaldenied"] = 0.00762,
+							["start_time"] = 1670959094,
+							["delay"] = 0,
+							["classe"] = "DRUID",
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 272,
+					["_ActorTable"] = {
+						{
+							["received"] = 60.006718,
+							["resource"] = 0.006718,
+							["targets"] = {
+								["Moolatz"] = 60,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "DRUID",
+							["passiveover"] = 0.006718,
+							["fight_component"] = true,
+							["total"] = 60.006718,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[68285] = {
+										["total"] = 0,
+										["id"] = 68285,
+										["totalover"] = 2271,
+										["targets"] = {
+											["Moolatz"] = 0,
+										},
+										["counter"] = 3,
 									},
 									[51178] = {
 										["total"] = 60,
@@ -425,186 +1995,213 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
-							["alternatepower"] = 0.008211,
-							["last_event"] = 1670839496,
-							["aID"] = "4465-02B843FA",
+							["totalover"] = 2271.006718,
+							["alternatepower"] = 0.006718,
+							["last_event"] = 1670959108,
 							["tipo"] = 3,
+							["aID"] = "4465-02B843FA",
 							["serial"] = "Player-4465-02B843FA",
-							["totalover"] = 658.008211,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 253,
 					["tipo"] = 9,
+					["combatId"] = 272,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[48565] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 48565,
+										["uptime"] = 16,
 										["targets"] = {
 										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 2,
 									},
 									[48573] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 48573,
+										["uptime"] = 12,
 										["targets"] = {
 										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 2,
 									},
 									[16857] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 16857,
+										["uptime"] = 17,
 										["targets"] = {
 										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 2,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 42,
+							["buff_uptime"] = 154,
 							["aID"] = "4465-02B843FA",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[768] = {
-										["activedamt"] = 1,
-										["id"] = 768,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57940] = {
-										["activedamt"] = 1,
-										["id"] = 57940,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[50212] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 50212,
+										["uptime"] = 6,
 										["targets"] = {
 										},
-										["uptime"] = 2,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[48834] = {
-										["activedamt"] = 1,
-										["id"] = 48834,
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48420] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48420,
+										["uptime"] = 20,
 										["targets"] = {
 										},
-										["uptime"] = 6,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
-									[53307] = {
+									[768] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
-										["id"] = 53307,
+										["refreshamt"] = 0,
+										["id"] = 768,
+										["uptime"] = 20,
 										["targets"] = {
 										},
-										["uptime"] = 6,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
-									[26991] = {
+									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
-										["id"] = 26991,
+										["refreshamt"] = 0,
+										["id"] = 377749,
+										["uptime"] = 20,
 										["targets"] = {
 										},
-										["uptime"] = 6,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
+									},
+									[57940] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 57940,
+										["uptime"] = 20,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
 									},
 									[24932] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 24932,
+										["uptime"] = 20,
 										["targets"] = {
 										},
-										["uptime"] = 6,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
+									},
+									[26991] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 26991,
+										["uptime"] = 20,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[53307] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 53307,
+										["uptime"] = 20,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[69369] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 69369,
+										["uptime"] = 8,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
-							["debuff_uptime"] = 9,
+							["debuff_uptime"] = 45,
 							["buff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["spell_cast"] = {
-								[48565] = 1,
-								[16857] = 1,
-								[48569] = 1,
-								[48573] = 1,
+								[48565] = 2,
+								[16857] = 2,
 								[48576] = 1,
+								[48573] = 2,
 								[50212] = 1,
-								[768] = 1,
+								[48569] = 3,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["nome"] = "Moolatz",
-							["last_event"] = 1670839498,
+							["last_event"] = 1670959112,
+							["classe"] = "DRUID",
 							["pets"] = {
 							},
-							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
+						{
+							["monster"] = true,
+							["last_event"] = 0,
+							["nome"] = "Ice Heart Jormungar Feeder",
+							["aID"] = "26358",
+							["spell_cast"] = {
+								[47447] = 1,
+							},
+							["fight_component"] = true,
+							["tipo"] = 4,
+							["classe"] = "UNKNOW",
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-4446-571-16687-26358-000018CA5D",
+							["flag_original"] = 68168,
+						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 253,
 					["tipo"] = 2,
+					["combatId"] = 272,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -614,44 +2211,141 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Moolatz", -- [1]
 				},
-				["tempo_start"] = 1670839492,
+				["CombatStartedAt"] = 2891430.951,
+				["tempo_start"] = 1670959092,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Ice Heart Jormungar Feeder",
 				["cleu_events"] = {
 					["n"] = 1,
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					10448, -- [1]
-					260, -- [2]
+					23759, -- [1]
+					1678, -- [2]
 					{
 						0, -- [1]
-						[0] = 99,
+						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 60,
 						[6] = 0,
+						[3] = 60,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["TotalElapsedCombatTime"] = 2771809.216,
-				["combat_counter"] = 15031,
+				["player_last_events"] = {
+					["Moolatz"] = {
+						{
+							true, -- [1]
+							47447, -- [2]
+							417, -- [3]
+							1670959113.182, -- [4]
+							8708, -- [5]
+							"Ice Heart Jormungar Feeder", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [1]
+						{
+							true, -- [1]
+							47447, -- [2]
+							522, -- [3]
+							1670959116.148, -- [4]
+							8319, -- [5]
+							"Ice Heart Jormungar Feeder", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 3,
+					},
+				},
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:18:32",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Ice Heart Jormungar Feeder",
+				["TotalElapsedCombatTime"] = 2891424.019,
+				["CombatEndedAt"] = 2891424.019,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -661,317 +2355,212 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Moolatz"] = 19853.004577,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Moolatz"] = 260.005762,
+							["Moolatz"] = 1678.00762,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Moolatz"] = 10192.006973,
-						}, -- [1]
-					},
 				},
-				["end_time"] = 2771809.216,
-				["player_last_events"] = {
+				["end_time"] = 2891424.019,
+				["combat_id"] = 272,
+				["data_inicio"] = "20:18:13",
+				["spells_cast_timeline"] = {
 				},
-				["instance_type"] = "none",
-				["CombatEndedAt"] = 2771809.216,
-				["data_inicio"] = "11:04:52",
+				["combat_counter"] = 15053,
 				["totals_grupo"] = {
-					10192, -- [1]
-					260, -- [2]
+					19853, -- [1]
+					1678, -- [2]
 					{
 						0, -- [1]
-						[0] = 99,
+						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 60,
 						[6] = 0,
+						[3] = 60,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "11:04:59",
-				["combat_id"] = 253,
 				["CombatSkillCache"] = {
 				},
-				["frags"] = {
-					["Ice Heart Jormungar Feeder"] = 1,
-				},
-				["start_time"] = 2771802.765,
+				["contra"] = "Ice Heart Jormungar Feeder",
+				["start_time"] = 2891404.67,
 				["TimeData"] = {
 				},
-				["contra"] = "Ice Heart Jormungar Feeder",
-			}, -- [1]
+				["frags"] = {
+					["Ice Heart Jormungar Feeder"] = 2,
+				},
+			}, -- [3]
 			{
 				{
-					["combatId"] = 252,
 					["tipo"] = 2,
+					["combatId"] = 271,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008053,
-							["total"] = 1143.008053,
-							["damage_from"] = {
-								["Moolatz"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 1143,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1143.008053,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1670839416,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Coldwind Waste Huntress",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 311,
-										["targets"] = {
-											["Moolatz"] = 1143,
-										},
-										["n_dmg"] = 1143,
-										["n_min"] = 250,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 1143,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[49865] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 49865,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["aID"] = "26575",
-							["serial"] = "Creature-0-4446-571-16693-26575-000016F768",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1670839414,
-							["damage_taken"] = 10327.008053,
-							["start_time"] = 1670839406,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008851,
+							["totalabsorbed"] = 0.008654,
 							["damage_from"] = {
 								["Ice Heart Jormungar Feeder"] = true,
-								["Coldwind Waste Huntress"] = true,
 							},
 							["targets"] = {
-								["Coldwind Waste Huntress"] = 10327,
+								["Ice Heart Jormungar Feeder"] = 9616,
 							},
-							["total"] = 10327.008851,
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 10327.008851,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1670839416,
+							["total_without_pet"] = 9616.008654000001,
 							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["total"] = 9616.008654000001,
+							["damage_taken"] = 821.008654,
 							["aID"] = "4465-02B843FA",
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 1,
+										["c_amt"] = 3,
 										["b_amt"] = 0,
-										["c_dmg"] = 629,
+										["c_dmg"] = 1564,
 										["g_amt"] = 0,
-										["n_max"] = 286,
+										["n_max"] = 239,
 										["targets"] = {
-											["Coldwind Waste Huntress"] = 1347,
+											["Ice Heart Jormungar Feeder"] = 2491,
 										},
-										["n_dmg"] = 718,
-										["n_min"] = 212,
+										["n_dmg"] = 927,
+										["n_min"] = 228,
 										["g_dmg"] = 0,
 										["counter"] = 7,
 										["ChartData"] = {
-											[5] = 432,
-											[8] = 1347,
+											[5] = 2252,
 										},
-										["total"] = 1347,
-										["c_max"] = 629,
+										["total"] = 2491,
+										["c_max"] = 541,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["MISS"] = 3,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
-										["c_min"] = 629,
+										["c_min"] = 509,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["n_amt"] = 4,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[48565] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 2231,
+										["c_dmg"] = 2187,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Coldwind Waste Huntress"] = 2231,
+											["Ice Heart Jormungar Feeder"] = 2187,
 										},
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
 										["ChartData"] = {
-											[5] = 2231,
-											[8] = 2231,
+											[5] = 2187,
 										},
-										["total"] = 2231,
-										["c_max"] = 2231,
+										["total"] = 2187,
+										["c_max"] = 2187,
 										["id"] = 48565,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
-										["c_min"] = 2231,
+										["c_min"] = 2187,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
-									[48576] = {
+									[48569] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1192,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 1192,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 1192,
+										},
+										["total"] = 1192,
+										["c_max"] = 1192,
+										["id"] = 48569,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 1192,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[48573] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 2218,
+										["n_max"] = 865,
 										["targets"] = {
-											["Coldwind Waste Huntress"] = 2218,
+											["Ice Heart Jormungar Feeder"] = 1157,
 										},
-										["n_dmg"] = 2218,
-										["n_min"] = 2218,
+										["n_dmg"] = 1157,
+										["n_min"] = 292,
 										["g_dmg"] = 0,
-										["counter"] = 1,
+										["counter"] = 2,
 										["ChartData"] = {
-											[8] = 2218,
+											[5] = 1157,
 										},
-										["total"] = 2218,
+										["total"] = 1157,
 										["c_max"] = 0,
-										["id"] = 48576,
+										["id"] = 48573,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[48573] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 674,
-										["g_amt"] = 0,
-										["n_max"] = 897,
-										["targets"] = {
-											["Coldwind Waste Huntress"] = 1571,
-										},
-										["n_dmg"] = 897,
-										["n_min"] = 897,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["ChartData"] = {
-											[8] = 674,
-										},
-										["total"] = 1571,
-										["c_max"] = 674,
-										["id"] = 48573,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["n_amt"] = 2,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
-										["c_min"] = 674,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
 									},
 									[53307] = {
 										["c_amt"] = 0,
@@ -980,91 +2569,161 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 75,
 										["targets"] = {
-											["Coldwind Waste Huntress"] = 297,
+											["Ice Heart Jormungar Feeder"] = 225,
 										},
-										["n_dmg"] = 297,
-										["n_min"] = 74,
+										["n_dmg"] = 225,
+										["n_min"] = 75,
 										["g_dmg"] = 0,
-										["counter"] = 4,
+										["counter"] = 3,
 										["ChartData"] = {
-											[5] = 223,
-											[8] = 297,
+											[5] = 225,
 										},
-										["total"] = 297,
+										["total"] = 225,
 										["c_max"] = 0,
 										["id"] = 53307,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[48569] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 2663,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Coldwind Waste Huntress"] = 2663,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["ChartData"] = {
-											[8] = 1325,
-										},
-										["total"] = 2663,
-										["c_max"] = 1338,
-										["id"] = 48569,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["n_amt"] = 3,
 										["extra"] = {
 										},
+										["spellschool"] = 8,
+									},
+									[48576] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2364,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 2364,
+										},
+										["n_dmg"] = 2364,
+										["n_min"] = 2364,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 2364,
+										},
+										["total"] = 2364,
+										["c_max"] = 0,
+										["id"] = 48576,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
-										["c_min"] = 1325,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
+							["last_dps"] = 1441.896634329551,
+							["end_time"] = 1670959086,
+							["colocacao"] = 1,
+							["last_event"] = 1670959086,
+							["on_hold"] = false,
+							["start_time"] = 1670959079,
 							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 1094.658559584297,
-							["custom"] = 0,
-							["last_event"] = 1670839415,
-							["damage_taken"] = 1403.008851,
-							["start_time"] = 1670839406,
+							["friendlyfire"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.00146,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 821,
+							},
 							["delay"] = 0,
+							["pets"] = {
+							},
+							["last_dps"] = 0,
 							["tipo"] = 1,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 821.00146,
+							["end_time"] = 1670959086,
+							["monster"] = true,
+							["total"] = 821.00146,
+							["damage_taken"] = 9616.00146,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Ice Heart Jormungar Feeder",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 299,
+										["targets"] = {
+											["Moolatz"] = 821,
+										},
+										["n_dmg"] = 821,
+										["n_min"] = 242,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 821,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["aID"] = "26358",
+							["custom"] = 0,
+							["last_event"] = 1670959084,
+							["on_hold"] = false,
+							["start_time"] = 1670959080,
+							["serial"] = "Creature-0-4446-571-16687-26358-000018CA9C",
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 252,
 					["tipo"] = 3,
+					["combatId"] = 271,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Moolatz"] = true,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["totalover"] = 0.00262,
-							["total_without_pet"] = 559.00262,
-							["total"] = 559.00262,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.00732,
+							["total_without_pet"] = 1191.00732,
+							["total"] = 1191.00732,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
@@ -1072,21 +2731,18 @@ _detalhes_database = {
 							["colocacao"] = 1,
 							["on_hold"] = false,
 							["serial"] = "Player-4465-02B843FA",
-							["totalabsorb"] = 0.00262,
-							["last_hps"] = 57.32772228393019,
+							["totalabsorb"] = 0.00732,
+							["last_hps"] = 297.677410635143,
 							["targets"] = {
-								["Moolatz"] = 559,
+								["Moolatz"] = 1191,
 							},
-							["totalover_without_pet"] = 0.00262,
-							["healing_taken"] = 559.00262,
+							["totalover_without_pet"] = 0.00732,
+							["healing_taken"] = 1191.00732,
 							["fight_component"] = true,
-							["end_time"] = 1670839416,
-							["healing_from"] = {
-								["Moolatz"] = true,
-							},
+							["end_time"] = 1670959086,
+							["last_event"] = 1670959083,
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[34299] = {
 										["c_amt"] = 0,
@@ -1107,54 +2763,4527 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 1,
 										["n_curado"] = 559,
 										["totaldenied"] = 0,
-										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+									[48440] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 316,
+										["targets"] = {
+											["Moolatz"] = 632,
+										},
+										["n_min"] = 316,
+										["counter"] = 2,
+										["overheal"] = 0,
+										["total"] = 632,
+										["c_max"] = 0,
+										["id"] = 48440,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 632,
+										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1670839411,
+							["targets_overheal"] = {
+							},
+							["aID"] = "4465-02B843FA",
 							["custom"] = 0,
 							["tipo"] = 2,
-							["aID"] = "4465-02B843FA",
-							["totaldenied"] = 0.00262,
+							["totaldenied"] = 0.00732,
+							["start_time"] = 1670959079,
 							["delay"] = 0,
-							["last_event"] = 1670839411,
+							["classe"] = "DRUID",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 252,
 					["tipo"] = 7,
+					["combatId"] = 271,
 					["_ActorTable"] = {
 						{
-							["received"] = 186.003439,
-							["resource"] = 0.003439,
+							["received"] = 585.001417,
+							["resource"] = 0.001417,
 							["targets"] = {
-								["Moolatz"] = 186,
+								["Moolatz"] = 585,
 							},
 							["pets"] = {
 							},
 							["powertype"] = 0,
 							["classe"] = "DRUID",
-							["passiveover"] = 10.003439,
+							["passiveover"] = 0.001417,
 							["fight_component"] = true,
-							["total"] = 186.003439,
+							["total"] = 585.001417,
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[68285] = {
-										["total"] = 126,
+										["total"] = 585,
 										["id"] = 68285,
-										["totalover"] = 630,
+										["totalover"] = 172,
 										["targets"] = {
-											["Moolatz"] = 126,
+											["Moolatz"] = 585,
 										},
 										["counter"] = 1,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["totalover"] = 172.001417,
+							["alternatepower"] = 0.001417,
+							["last_event"] = 1670959079,
+							["tipo"] = 3,
+							["aID"] = "4465-02B843FA",
+							["serial"] = "Player-4465-02B843FA",
+							["flag_original"] = 1297,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 271,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[48565] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 48565,
+										["uptime"] = 7,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48573] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 48573,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[16857] = {
+										["activedamt"] = -1,
+										["id"] = 16857,
+										["targets"] = {
+										},
+										["actived_at"] = 1670959086,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["appliedamt"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 64,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[48420] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48420,
+										["uptime"] = 7,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[768] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 768,
+										["uptime"] = 7,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 377749,
+										["uptime"] = 7,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[57940] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 57940,
+										["uptime"] = 7,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[24932] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 24932,
+										["uptime"] = 7,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[26991] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 26991,
+										["uptime"] = 7,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[53307] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 53307,
+										["uptime"] = 7,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48440] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48440,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48834] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48834,
+										["uptime"] = 7,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[16870] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 16870,
+										["uptime"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[69369] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 69369,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 13,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[48569] = 1,
+								[48573] = 1,
+								[48576] = 1,
+							},
+							["tipo"] = 4,
+							["nome"] = "Moolatz",
+							["last_event"] = 1670959086,
+							["classe"] = "DRUID",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["debuff_uptime_targets"] = {
+							},
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 271,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = "Player-4465-02B843FA",
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 2891404.562,
+				["tempo_start"] = 1670959079,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					10437, -- [1]
+					1191, -- [2]
+					{
+						0, -- [1]
+						[0] = 585,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:18:07",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Ice Heart Jormungar Feeder",
+				["TotalElapsedCombatTime"] = 2891398.428,
+				["CombatEndedAt"] = 2891398.428,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Moolatz"] = 9616.008654000001,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Moolatz"] = 1191.00732,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 2891398.428,
+				["combat_id"] = 271,
+				["data_inicio"] = "20:18:00",
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 15052,
+				["totals_grupo"] = {
+					9616, -- [1]
+					1191, -- [2]
+					{
+						0, -- [1]
+						[0] = 585,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Ice Heart Jormungar Feeder",
+				["start_time"] = 2891391.475,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Ice Heart Jormungar Feeder"] = 1,
+				},
+			}, -- [4]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 270,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.004591,
+							["damage_from"] = {
+								["Rattlebore"] = true,
+							},
+							["targets"] = {
+								["Rattlebore"] = 72548,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["tipo"] = 1,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 72548.004591,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["total"] = 72548.004591,
+							["damage_taken"] = 37629.004591,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 9,
+										["b_amt"] = 0,
+										["c_dmg"] = 6556,
+										["g_amt"] = 0,
+										["n_max"] = 563,
+										["targets"] = {
+											["Rattlebore"] = 11033,
+										},
+										["n_dmg"] = 4477,
+										["n_min"] = 218,
+										["g_dmg"] = 0,
+										["counter"] = 23,
+										["ChartData"] = {
+											[83] = 9567,
+											[59] = 6733,
+											[8] = 3404,
+											[62] = 7231,
+											[32] = 4728,
+											[17] = 3733,
+											[35] = 5675,
+											[5] = 2280,
+											[38] = 5675,
+											[20] = 3733,
+											[41] = 5675,
+											[11] = 3733,
+											[68] = 7231,
+											[86] = 11033,
+											[23] = 4259,
+											[80] = 8844,
+											[47] = 5675,
+											[74] = 8281,
+											[65] = 7231,
+											[50] = 5675,
+											[26] = 4728,
+											[71] = 8281,
+											[53] = 5675,
+											[14] = 3733,
+											[77] = 8281,
+											[56] = 6733,
+											[29] = 4728,
+											[44] = 5675,
+										},
+										["total"] = 11033,
+										["c_max"] = 1058,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["PARRY"] = 2,
+										["c_min"] = 505,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 12,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+									}, -- [1]
+									[48479] = {
+										["c_amt"] = 3,
+										["b_amt"] = 1,
+										["c_dmg"] = 8951,
+										["g_amt"] = 0,
+										["n_max"] = 1753,
+										["targets"] = {
+											["Rattlebore"] = 23880,
+										},
+										["n_dmg"] = 14929,
+										["n_min"] = 1109,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["ChartData"] = {
+											[83] = 23880,
+											[59] = 13614,
+											[62] = 13614,
+											[32] = 5963,
+											[17] = 2985,
+											[35] = 5963,
+											[38] = 9054,
+											[20] = 2985,
+											[41] = 12059,
+											[68] = 17031,
+											[86] = 23880,
+											[23] = 2985,
+											[80] = 23880,
+											[47] = 12059,
+											[74] = 20328,
+											[65] = 15922,
+											[50] = 12059,
+											[26] = 4464,
+											[71] = 17031,
+											[53] = 12059,
+											[14] = 1232,
+											[77] = 23880,
+											[56] = 12059,
+											[29] = 4464,
+											[44] = 12059,
+										},
+										["total"] = 23880,
+										["c_max"] = 3552,
+										["id"] = 48479,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 1555,
+										["extra"] = {
+										},
+										["a_amt"] = 0,
+										["c_min"] = 2308,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 10,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
+									},
+									[48563] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 930,
+										["targets"] = {
+											["Rattlebore"] = 930,
+										},
+										["n_dmg"] = 930,
+										["n_min"] = 930,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[77] = 930,
+											[74] = 930,
+											[56] = 930,
+											[71] = 930,
+											[62] = 930,
+											[68] = 930,
+											[80] = 930,
+											[83] = 930,
+											[65] = 930,
+											[59] = 930,
+											[86] = 930,
+										},
+										["total"] = 930,
+										["c_max"] = 0,
+										["id"] = 48563,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[48565] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 923,
+										["targets"] = {
+											["Rattlebore"] = 923,
+										},
+										["n_dmg"] = 923,
+										["n_min"] = 923,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[83] = 923,
+											[59] = 923,
+											[8] = 923,
+											[62] = 923,
+											[32] = 923,
+											[17] = 923,
+											[35] = 923,
+											[5] = 923,
+											[38] = 923,
+											[20] = 923,
+											[41] = 923,
+											[11] = 923,
+											[68] = 923,
+											[86] = 923,
+											[23] = 923,
+											[80] = 923,
+											[47] = 923,
+											[74] = 923,
+											[65] = 923,
+											[50] = 923,
+											[26] = 923,
+											[71] = 923,
+											[53] = 923,
+											[14] = 923,
+											[77] = 923,
+											[56] = 923,
+											[29] = 923,
+											[44] = 923,
+										},
+										["total"] = 923,
+										["c_max"] = 0,
+										["id"] = 48565,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[48573] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 865,
+										["targets"] = {
+											["Rattlebore"] = 4034,
+										},
+										["n_dmg"] = 4034,
+										["n_min"] = 291,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["ChartData"] = {
+											[83] = 3176,
+											[59] = 2885,
+											[8] = 2020,
+											[62] = 2885,
+											[32] = 2885,
+											[17] = 2885,
+											[35] = 2885,
+											[5] = 1156,
+											[38] = 2885,
+											[20] = 2885,
+											[41] = 2885,
+											[11] = 2885,
+											[68] = 2885,
+											[86] = 4034,
+											[23] = 2885,
+											[80] = 2885,
+											[47] = 2885,
+											[74] = 2885,
+											[65] = 2885,
+											[50] = 2885,
+											[26] = 2885,
+											[71] = 2885,
+											[53] = 2885,
+											[14] = 2885,
+											[77] = 2885,
+											[56] = 2885,
+											[29] = 2885,
+											[44] = 2885,
+										},
+										["total"] = 4034,
+										["c_max"] = 0,
+										["id"] = 48573,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[53307] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75,
+										["targets"] = {
+											["Rattlebore"] = 1430,
+										},
+										["n_dmg"] = 1430,
+										["n_min"] = 52,
+										["g_dmg"] = 0,
+										["counter"] = 21,
+										["ChartData"] = {
+											[83] = 1356,
+											[59] = 1155,
+											[8] = 224,
+											[62] = 1208,
+											[32] = 679,
+											[17] = 380,
+											[35] = 753,
+											[5] = 224,
+											[38] = 827,
+											[20] = 530,
+											[41] = 901,
+											[11] = 276,
+											[68] = 1208,
+											[86] = 1430,
+											[23] = 530,
+											[80] = 1282,
+											[47] = 954,
+											[74] = 1208,
+											[65] = 1208,
+											[50] = 954,
+											[26] = 530,
+											[71] = 1208,
+											[53] = 1006,
+											[14] = 380,
+											[77] = 1282,
+											[56] = 1155,
+											[29] = 604,
+											[44] = 901,
+										},
+										["total"] = 1430,
+										["c_max"] = 0,
+										["id"] = 53307,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 21,
+										["extra"] = {
+										},
+										["spellschool"] = 8,
+									},
+									[48567] = {
+										["c_amt"] = 9,
+										["b_amt"] = 1,
+										["c_dmg"] = 6985,
+										["g_amt"] = 0,
+										["n_max"] = 653,
+										["targets"] = {
+											["Rattlebore"] = 14291,
+										},
+										["n_dmg"] = 7306,
+										["n_min"] = 50,
+										["g_dmg"] = 0,
+										["counter"] = 32,
+										["ChartData"] = {
+											[83] = 14291,
+											[59] = 9374,
+											[62] = 9861,
+											[32] = 4929,
+											[17] = 407,
+											[35] = 6098,
+											[38] = 7267,
+											[20] = 1053,
+											[41] = 7835,
+											[68] = 10736,
+											[86] = 14291,
+											[23] = 2209,
+											[80] = 13638,
+											[47] = 8970,
+											[74] = 11560,
+											[65] = 10324,
+											[50] = 8970,
+											[26] = 2861,
+											[71] = 11148,
+											[53] = 8970,
+											[14] = 107,
+											[77] = 12985,
+											[56] = 9065,
+											[29] = 4206,
+											[44] = 8402,
+										},
+										["total"] = 14291,
+										["c_max"] = 1345,
+										["id"] = 48567,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 95,
+										["a_dmg"] = 0,
+										["c_min"] = 95,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 23,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[20549] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Rattlebore"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[77] = 0,
+											[50] = 0,
+											[47] = 0,
+											[74] = 0,
+											[56] = 0,
+											[59] = 0,
+											[86] = 0,
+											[62] = 0,
+											[65] = 0,
+											[83] = 0,
+											[53] = 0,
+											[68] = 0,
+											[80] = 0,
+											[44] = 0,
+											[71] = 0,
+										},
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 20549,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["IMMUNE"] = 1,
+									},
+									[48569] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 4639,
+										["g_amt"] = 0,
+										["n_max"] = 733,
+										["targets"] = {
+											["Rattlebore"] = 5934,
+										},
+										["n_dmg"] = 1295,
+										["n_min"] = 562,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["ChartData"] = {
+											[83] = 4084,
+											[59] = 4084,
+											[8] = 4084,
+											[62] = 4084,
+											[32] = 4084,
+											[17] = 4084,
+											[35] = 4084,
+											[5] = 3351,
+											[38] = 4084,
+											[20] = 4084,
+											[41] = 4084,
+											[11] = 4084,
+											[68] = 4084,
+											[86] = 5934,
+											[23] = 4084,
+											[80] = 4084,
+											[47] = 4084,
+											[74] = 4084,
+											[65] = 4084,
+											[50] = 4084,
+											[26] = 4084,
+											[71] = 4084,
+											[53] = 4084,
+											[14] = 4084,
+											[77] = 4084,
+											[56] = 4084,
+											[29] = 4084,
+											[44] = 4084,
+										},
+										["total"] = 5934,
+										["c_max"] = 1679,
+										["id"] = 48569,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["PARRY"] = 1,
+										["c_min"] = 1288,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+									},
+									[48561] = {
+										["c_amt"] = 1,
+										["b_amt"] = 1,
+										["c_dmg"] = 399,
+										["g_amt"] = 0,
+										["n_max"] = 271,
+										["targets"] = {
+											["Rattlebore"] = 1111,
+										},
+										["n_dmg"] = 712,
+										["n_min"] = 220,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["ChartData"] = {
+											[83] = 1111,
+											[59] = 840,
+											[62] = 840,
+											[68] = 840,
+											[74] = 1111,
+											[41] = 840,
+											[44] = 840,
+											[47] = 840,
+											[65] = 840,
+											[50] = 840,
+											[38] = 620,
+											[71] = 840,
+											[53] = 840,
+											[35] = 399,
+											[77] = 1111,
+											[56] = 840,
+											[80] = 1111,
+											[86] = 1111,
+										},
+										["total"] = 1111,
+										["c_max"] = 399,
+										["id"] = 48561,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 399,
+										["a_dmg"] = 0,
+										["c_min"] = 399,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[49799] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 4965,
+										["g_amt"] = 0,
+										["n_max"] = 804,
+										["targets"] = {
+											["Rattlebore"] = 8982,
+										},
+										["n_dmg"] = 4017,
+										["n_min"] = 803,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["ChartData"] = {
+											[83] = 8982,
+											[59] = 8982,
+											[8] = 803,
+											[62] = 8982,
+											[32] = 8982,
+											[17] = 4868,
+											[35] = 8982,
+											[38] = 8982,
+											[20] = 7327,
+											[41] = 8982,
+											[11] = 1606,
+											[68] = 8982,
+											[86] = 8982,
+											[23] = 8982,
+											[80] = 8982,
+											[47] = 8982,
+											[74] = 8982,
+											[65] = 8982,
+											[50] = 8982,
+											[26] = 8982,
+											[71] = 8982,
+											[53] = 8982,
+											[14] = 3213,
+											[77] = 8982,
+											[56] = 8982,
+											[29] = 8982,
+											[44] = 8982,
+										},
+										["total"] = 8982,
+										["c_max"] = 1655,
+										["id"] = 49799,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 1655,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["last_dps"] = 837.5240076541969,
+							["end_time"] = 1670959065,
+							["colocacao"] = 1,
+							["last_event"] = 1670959064,
+							["on_hold"] = false,
+							["start_time"] = 1670958977,
+							["serial"] = "Player-4465-02B843FA",
+							["friendlyfire"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 782.004252,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 37629,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 37629.004252,
+							["end_time"] = 1670959065,
+							["monster"] = true,
+							["total"] = 37629.004252,
+							["damage_taken"] = 72548.004252,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Rattlebore",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2610,
+										["targets"] = {
+											["Moolatz"] = 28578,
+										},
+										["n_dmg"] = 28578,
+										["n_min"] = 782,
+										["g_dmg"] = 0,
+										["counter"] = 35,
+										["total"] = 28578,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_amt"] = 6,
+										["a_dmg"] = 6251,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["extra"] = {
+										},
+										["n_amt"] = 21,
+										["DODGE"] = 11,
+										["MISS"] = 3,
+									}, -- [1]
+									[48287] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1179,
+										["targets"] = {
+											["Moolatz"] = 1179,
+										},
+										["n_dmg"] = 1179,
+										["n_min"] = 1179,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 1179,
+										["c_max"] = 0,
+										["id"] = 48287,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 1179,
+										["c_min"] = 0,
+										["successful_casted"] = 3,
+										["a_amt"] = 1,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["DODGE"] = 2,
+									},
+									[51203] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1359,
+										["targets"] = {
+											["Moolatz"] = 3765,
+										},
+										["n_dmg"] = 3765,
+										["n_min"] = 1158,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 3765,
+										["c_max"] = 0,
+										["id"] = 51203,
+										["r_dmg"] = 3765,
+										["r_amt"] = 3,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 5,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["extra"] = {
+										},
+										["MISS"] = 2,
+									},
+									[47447] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 478,
+										["targets"] = {
+											["Moolatz"] = 4107,
+										},
+										["n_dmg"] = 4107,
+										["n_min"] = 364,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 4107,
+										["c_max"] = 0,
+										["id"] = 47447,
+										["r_dmg"] = 2790,
+										["r_amt"] = 7,
+										["b_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 2,
+										["a_amt"] = 0,
+										["n_amt"] = 10,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["aID"] = "26360",
+							["custom"] = 0,
+							["last_event"] = 1670959063,
+							["on_hold"] = false,
+							["start_time"] = 1670958978,
+							["serial"] = "Creature-0-4446-571-16687-26360-000018C763",
+							["fight_component"] = true,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 270,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.007053,
+							["total_without_pet"] = 27335.007053,
+							["total"] = 27335.007053,
+							["targets_absorbs"] = {
+								["Moolatz"] = 6142,
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02B843FA",
+							["totalabsorb"] = 6142.007053,
+							["last_hps"] = 324.3741195323835,
+							["targets"] = {
+								["Moolatz"] = 27335,
+							},
+							["totalover_without_pet"] = 0.007053,
+							["healing_taken"] = 27335.007053,
+							["fight_component"] = true,
+							["end_time"] = 1670959065,
+							["last_event"] = 1670959061,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[34299] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 889,
+										["targets"] = {
+											["Moolatz"] = 6127,
+										},
+										["n_min"] = 559,
+										["counter"] = 9,
+										["overheal"] = 0,
+										["total"] = 6127,
+										["c_max"] = 0,
+										["id"] = 34299,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_amt"] = 9,
+										["n_curado"] = 6127,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+									[43185] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 2776,
+										["targets"] = {
+											["Moolatz"] = 2776,
+										},
+										["n_min"] = 2776,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 2776,
+										["c_max"] = 0,
+										["id"] = 43185,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 2776,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+									[33778] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 1920,
+										["targets"] = {
+											["Moolatz"] = 1920,
+										},
+										["n_min"] = 1920,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 1920,
+										["c_max"] = 0,
+										["id"] = 33778,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 1920,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+									[62606] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 6142,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 820,
+										["targets"] = {
+											["Moolatz"] = 6142,
+										},
+										["n_min"] = 744,
+										["counter"] = 8,
+										["overheal"] = 0,
+										["total"] = 6142,
+										["c_max"] = 0,
+										["id"] = 62606,
+										["targets_absorbs"] = {
+											["Moolatz"] = 6142,
+										},
+										["c_curado"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 6142,
+										["totaldenied"] = 0,
+										["n_amt"] = 8,
+										["is_shield"] = true,
+										["absorbed"] = 0,
+									},
+									[55503] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 765,
+										["targets"] = {
+											["Moolatz"] = 3824,
+										},
+										["n_min"] = 764,
+										["counter"] = 5,
+										["overheal"] = 0,
+										["total"] = 3824,
+										["c_max"] = 0,
+										["id"] = 55503,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_amt"] = 5,
+										["n_curado"] = 3824,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+									[48442] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 1930,
+										["targets"] = {
+											["Moolatz"] = 3784,
+										},
+										["n_min"] = 264,
+										["counter"] = 8,
+										["overheal"] = 0,
+										["total"] = 3784,
+										["c_max"] = 0,
+										["id"] = 48442,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_amt"] = 8,
+										["n_curado"] = 3784,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+									[48440] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 316,
+										["targets"] = {
+											["Moolatz"] = 1578,
+										},
+										["n_min"] = 315,
+										["counter"] = 5,
+										["overheal"] = 0,
+										["total"] = 1578,
+										["c_max"] = 0,
+										["id"] = 48440,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_amt"] = 5,
+										["n_curado"] = 1578,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+									[48450] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 137,
+										["targets"] = {
+											["Moolatz"] = 1184,
+										},
+										["n_min"] = 46,
+										["counter"] = 10,
+										["overheal"] = 0,
+										["total"] = 1184,
+										["c_max"] = 0,
+										["id"] = 48450,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_amt"] = 10,
+										["n_curado"] = 1184,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["targets_overheal"] = {
+							},
+							["aID"] = "4465-02B843FA",
+							["custom"] = 0,
+							["tipo"] = 2,
+							["totaldenied"] = 0.007053,
+							["start_time"] = 1670958978,
+							["delay"] = 0,
+							["classe"] = "DRUID",
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 270,
+					["_ActorTable"] = {
+						{
+							["received"] = 4084.00859,
+							["resource"] = 0.00859,
+							["targets"] = {
+								["Moolatz"] = 4084,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "DRUID",
+							["passiveover"] = 696.00859,
+							["fight_component"] = true,
+							["total"] = 4084.00859,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[68285] = {
+										["total"] = 2585,
+										["id"] = 68285,
+										["totalover"] = 4224,
+										["targets"] = {
+											["Moolatz"] = 2585,
+										},
+										["counter"] = 9,
+									},
+									[51178] = {
+										["total"] = 91,
+										["id"] = 51178,
+										["totalover"] = 29,
+										["targets"] = {
+											["Moolatz"] = 91,
+										},
+										["counter"] = 2,
+									},
+									[64372] = {
+										["total"] = 1279,
+										["id"] = 64372,
+										["totalover"] = 0,
+										["targets"] = {
+											["Moolatz"] = 1279,
+										},
+										["counter"] = 1,
+									},
+									[16959] = {
+										["total"] = 50,
+										["id"] = 16959,
+										["totalover"] = 0,
+										["targets"] = {
+											["Moolatz"] = 50,
+										},
+										["counter"] = 10,
+									},
+									[5229] = {
+										["total"] = 59,
+										["id"] = 5229,
+										["totalover"] = 0,
+										["targets"] = {
+											["Moolatz"] = 59,
+										},
+										["counter"] = 21,
+									},
+									[17057] = {
+										["total"] = 20,
+										["id"] = 17057,
+										["totalover"] = 0,
+										["targets"] = {
+											["Moolatz"] = 20,
+										},
+										["counter"] = 2,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["totalover"] = 4253.00859,
+							["alternatepower"] = 0.00859,
+							["last_event"] = 1670959061,
+							["tipo"] = 3,
+							["aID"] = "4465-02B843FA",
+							["serial"] = "Player-4465-02B843FA",
+							["flag_original"] = 1297,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 270,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[48565] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 48565,
+										["uptime"] = 55,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[49799] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 49799,
+										["uptime"] = 16,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48573] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 48573,
+										["uptime"] = 12,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[48559] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 48559,
+										["uptime"] = 75,
+										["targets"] = {
+										},
+										["appliedamt"] = 3,
+									},
+									[48567] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 18,
+										["id"] = 48567,
+										["uptime"] = 65,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[48563] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 48563,
+										["uptime"] = 32,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[16857] = {
+										["activedamt"] = -1,
+										["id"] = 16857,
+										["targets"] = {
+										},
+										["actived_at"] = 1670959064,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["appliedamt"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["cooldowns_defensive"] = 3.006221,
+							["buff_uptime"] = 840,
+							["last_cooldown"] = {
+								1670959042.744, -- [1]
+								22812, -- [2]
+							},
+							["aID"] = "4465-02B843FA",
+							["cooldowns_defensive_targets"] = {
+								["Moolatz"] = 3,
+							},
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[62606] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 9,
+										["refreshamt"] = 10,
+										["id"] = 62606,
+										["uptime"] = 37,
+										["targets"] = {
+										},
+										["appliedamt"] = 9,
+									},
+									[53307] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 53307,
+										["uptime"] = 88,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48442] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48442,
+										["uptime"] = 21,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[22812] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = 22812,
+										["uptime"] = 24,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[50212] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = 50212,
+										["uptime"] = 9,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[48418] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = 48418,
+										["uptime"] = 63,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 377749,
+										["uptime"] = 88,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48420] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = 48420,
+										["uptime"] = 14,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[57940] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 57940,
+										["uptime"] = 88,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[16870] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 5,
+										["refreshamt"] = 0,
+										["id"] = 16870,
+										["uptime"] = 3,
+										["targets"] = {
+										},
+										["appliedamt"] = 5,
+									},
+									[52610] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 52610,
+										["uptime"] = 19,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[44055] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 44055,
+										["uptime"] = 15,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[9634] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = 9634,
+										["uptime"] = 63,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[48440] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48440,
+										["uptime"] = 15,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[17057] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = 17057,
+										["uptime"] = 12,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[26991] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 26991,
+										["uptime"] = 88,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48834] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = 48834,
+										["uptime"] = 20,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[5229] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = 5229,
+										["uptime"] = 19,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[768] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = 768,
+										["uptime"] = 14,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									[69369] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 69369,
+										["uptime"] = 8,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[55503] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 55503,
+										["uptime"] = 5,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[61336] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 61336,
+										["uptime"] = 20,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[24932] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 4,
+										["refreshamt"] = 0,
+										["id"] = 24932,
+										["uptime"] = 77,
+										["targets"] = {
+										},
+										["appliedamt"] = 4,
+									},
+									[48450] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 4,
+										["id"] = 48450,
+										["uptime"] = 10,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48848] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48848,
+										["uptime"] = 20,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 255,
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[48563] = 1,
+								[61336] = 1,
+								[48565] = 1,
+								[48442] = 1,
+								[48567] = 12,
+								[22812] = 2,
+								[50212] = 2,
+								[48479] = 14,
+								[48573] = 2,
+								[48450] = 3,
+								[9634] = 2,
+								[43185] = 1,
+								[52610] = 1,
+								[44055] = 1,
+								[55503] = 1,
+								[5229] = 2,
+								[768] = 1,
+								[49799] = 1,
+								[48559] = 3,
+								[48569] = 6,
+								[48561] = 4,
+								[48440] = 1,
+								[48848] = 1,
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["classe"] = "DRUID",
+							["last_event"] = 1670959065,
+							["pets"] = {
+							},
+							["nome"] = "Moolatz",
+							["cooldowns_defensive_spells"] = {
+								["_ActorTable"] = {
+									[22812] = {
+										["id"] = 22812,
+										["targets"] = {
+											["Moolatz"] = 2,
+										},
+										["counter"] = 2,
+									},
+									[61336] = {
+										["id"] = 61336,
+										["targets"] = {
+											["Moolatz"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime_targets"] = {
+							},
+						}, -- [1]
+						{
+							["monster"] = true,
+							["last_event"] = 0,
+							["nome"] = "Rattlebore",
+							["aID"] = "26360",
+							["spell_cast"] = {
+								[48287] = 3,
+								[51203] = 5,
+								[47447] = 2,
+							},
+							["fight_component"] = true,
+							["tipo"] = 4,
+							["classe"] = "UNKNOW",
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-4446-571-16687-26360-000018C763",
+							["flag_original"] = 68168,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 270,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = "Player-4465-02B843FA",
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 2891390.325,
+				["tempo_start"] = 1670958977,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					110177, -- [1]
+					27335, -- [2]
+					{
+						129, -- [1]
+						[0] = 3864,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 91,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 3,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:17:45",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Rattlebore",
+				["TotalElapsedCombatTime"] = 2891376.893,
+				["CombatEndedAt"] = 2891376.893,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Moolatz"] = 72548.004591,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Moolatz"] = 27335.007053,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 2891376.893,
+				["combat_id"] = 270,
+				["data_inicio"] = "20:16:18",
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 15051,
+				["totals_grupo"] = {
+					72548, -- [1]
+					27335, -- [2]
+					{
+						129, -- [1]
+						[0] = 3864,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 91,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 3,
+					}, -- [4]
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Rattlebore",
+				["start_time"] = 2891289.454,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Rattlebore"] = 1,
+				},
+			}, -- [5]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 269,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006878,
+							["damage_from"] = {
+								["Ice Heart Jormungar Feeder"] = true,
+							},
+							["targets"] = {
+								["Ice Heart Jormungar Feeder"] = 10363,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["tipo"] = 1,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 10363.006878,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["total"] = 10363.006878,
+							["damage_taken"] = 296.006878,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 1566,
+										["g_amt"] = 0,
+										["n_max"] = 239,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 2266,
+										},
+										["n_dmg"] = 700,
+										["n_min"] = 230,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["ChartData"] = {
+											[5] = 2266,
+										},
+										["total"] = 2266,
+										["c_max"] = 529,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 510,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+									[48565] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 952,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 952,
+										},
+										["n_dmg"] = 952,
+										["n_min"] = 952,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 952,
+										},
+										["total"] = 952,
+										["c_max"] = 0,
+										["id"] = 48565,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[48569] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 528,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 528,
+										},
+										["n_dmg"] = 528,
+										["n_min"] = 528,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 528,
+										},
+										["total"] = 528,
+										["c_max"] = 0,
+										["id"] = 48569,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[48573] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 662,
+										["g_amt"] = 0,
+										["n_max"] = 864,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 1526,
+										},
+										["n_dmg"] = 864,
+										["n_min"] = 864,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[5] = 1526,
+										},
+										["total"] = 1526,
+										["c_max"] = 662,
+										["id"] = 48573,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 662,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[53307] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 75,
+										},
+										["n_dmg"] = 75,
+										["n_min"] = 75,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 75,
+										},
+										["total"] = 75,
+										["c_max"] = 0,
+										["id"] = 53307,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 8,
+									},
+									[48576] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 5016,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 5016,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 5016,
+										},
+										["total"] = 5016,
+										["c_max"] = 5016,
+										["id"] = 48576,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 5016,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["last_dps"] = 1717.435677498441,
+							["end_time"] = 1670958958,
+							["colocacao"] = 1,
+							["last_event"] = 1670958958,
+							["on_hold"] = false,
+							["start_time"] = 1670958952,
+							["serial"] = "Player-4465-02B843FA",
+							["friendlyfire"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.002683,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 296,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 296.002683,
+							["end_time"] = 1670958958,
+							["monster"] = true,
+							["total"] = 296.002683,
+							["damage_taken"] = 10363.002683,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Ice Heart Jormungar Feeder",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 296,
+										["targets"] = {
+											["Moolatz"] = 296,
+										},
+										["n_dmg"] = 296,
+										["n_min"] = 296,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 296,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 1,
+										["spellschool"] = 1,
+										["DODGE"] = 2,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["aID"] = "26358",
+							["custom"] = 0,
+							["last_event"] = 1670958956,
+							["on_hold"] = false,
+							["start_time"] = 1670958954,
+							["serial"] = "Creature-0-4446-571-16687-26358-000018CDB3",
+							["fight_component"] = true,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 269,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 551.00811,
+							["total_without_pet"] = 8.00811,
+							["total"] = 8.00811,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02B843FA",
+							["totalabsorb"] = 0.00811,
+							["last_hps"] = 80.08109999999999,
+							["targets"] = {
+								["Moolatz"] = 8,
+							},
+							["totalover_without_pet"] = 0.00811,
+							["healing_taken"] = 8.00811,
+							["fight_component"] = true,
+							["end_time"] = 1670958958,
+							["last_event"] = 1670958952,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[34299] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Moolatz"] = 551,
+										},
+										["n_max"] = 8,
+										["targets"] = {
+											["Moolatz"] = 8,
+										},
+										["n_min"] = 8,
+										["counter"] = 1,
+										["overheal"] = 551,
+										["total"] = 8,
+										["c_max"] = 0,
+										["id"] = 34299,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 8,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["targets_overheal"] = {
+								["Moolatz"] = 551,
+							},
+							["aID"] = "4465-02B843FA",
+							["custom"] = 0,
+							["tipo"] = 2,
+							["totaldenied"] = 0.00811,
+							["start_time"] = 1670958952,
+							["delay"] = 0,
+							["classe"] = "DRUID",
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 269,
+					["_ActorTable"] = {
+						{
+							["received"] = 0.003496,
+							["resource"] = 0.003496,
+							["targets"] = {
+								["Moolatz"] = 0,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "DRUID",
+							["passiveover"] = 12.003496,
+							["fight_component"] = true,
+							["total"] = 0.003496,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[68285] = {
+										["total"] = 0,
+										["id"] = 68285,
+										["totalover"] = 756,
+										["targets"] = {
+											["Moolatz"] = 0,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["totalover"] = 756.003496,
+							["alternatepower"] = 0.003496,
+							["last_event"] = 1670958952,
+							["tipo"] = 3,
+							["aID"] = "4465-02B843FA",
+							["serial"] = "Player-4465-02B843FA",
+							["flag_original"] = 1297,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 269,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[48565] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 48565,
+										["uptime"] = 5,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48573] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 48573,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[16857] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 16857,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 48,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[48420] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48420,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48834] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48834,
+										["uptime"] = 5,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 377749,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[57940] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 57940,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[24932] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 24932,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[26991] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 26991,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[53307] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 53307,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[69369] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 69369,
+										["uptime"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[768] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 768,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[16870] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 16870,
+										["uptime"] = 1,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 15,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[48565] = 1,
+								[16857] = 1,
+								[48569] = 1,
+								[48573] = 1,
+								[48576] = 1,
+							},
+							["tipo"] = 4,
+							["nome"] = "Moolatz",
+							["last_event"] = 1670958958,
+							["classe"] = "DRUID",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["debuff_uptime_targets"] = {
+							},
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 269,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = "Player-4465-02B843FA",
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 2891287.688,
+				["tempo_start"] = 1670958952,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					10659, -- [1]
+					8, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:15:58",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Ice Heart Jormungar Feeder",
+				["TotalElapsedCombatTime"] = 2891270.203,
+				["CombatEndedAt"] = 2891270.203,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Moolatz"] = 10363.006878,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Moolatz"] = 8.00811,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 2891270.203,
+				["combat_id"] = 269,
+				["data_inicio"] = "20:15:52",
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 15050,
+				["totals_grupo"] = {
+					10363, -- [1]
+					8, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Ice Heart Jormungar Feeder",
+				["start_time"] = 2891264.119,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Ice Heart Jormungar Feeder"] = 1,
+				},
+			}, -- [6]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 268,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006081,
+							["damage_from"] = {
+								["Ice Heart Jormungar Feeder"] = true,
+							},
+							["targets"] = {
+								["Ice Heart Jormungar Feeder"] = 10208,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["tipo"] = 1,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 10208.006081,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["total"] = 10208.006081,
+							["damage_taken"] = 610.006081,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 633,
+										["g_amt"] = 0,
+										["n_max"] = 281,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 1656,
+										},
+										["n_dmg"] = 1023,
+										["n_min"] = 228,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["ChartData"] = {
+											[5] = 1656,
+										},
+										["total"] = 1656,
+										["c_max"] = 633,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 633,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+									[48565] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 955,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 955,
+										},
+										["n_dmg"] = 955,
+										["n_min"] = 955,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 955,
+										},
+										["total"] = 955,
+										["c_max"] = 0,
+										["id"] = 48565,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[48569] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1326,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 1326,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 1326,
+										},
+										["total"] = 1326,
+										["c_max"] = 1326,
+										["id"] = 48569,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 1326,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[48573] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 864,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 1156,
+										},
+										["n_dmg"] = 1156,
+										["n_min"] = 292,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[5] = 1156,
+										},
+										["total"] = 1156,
+										["c_max"] = 0,
+										["id"] = 48573,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[53307] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 149,
+										},
+										["n_dmg"] = 149,
+										["n_min"] = 74,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[5] = 149,
+										},
+										["total"] = 149,
+										["c_max"] = 0,
+										["id"] = 53307,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 8,
+									},
+									[48576] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 4966,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 4966,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 4966,
+										},
+										["total"] = 4966,
+										["c_max"] = 4966,
+										["id"] = 48576,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 4966,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["last_dps"] = 2479.476823401057,
+							["end_time"] = 1670958936,
+							["colocacao"] = 1,
+							["last_event"] = 1670958934,
+							["on_hold"] = false,
+							["start_time"] = 1670958930,
+							["serial"] = "Player-4465-02B843FA",
+							["friendlyfire"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003607,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 610,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 610.003607,
+							["end_time"] = 1670958936,
+							["monster"] = true,
+							["total"] = 610.003607,
+							["damage_taken"] = 10208.003607,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Ice Heart Jormungar Feeder",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 308,
+										["targets"] = {
+											["Moolatz"] = 610,
+										},
+										["n_dmg"] = 610,
+										["n_min"] = 302,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 610,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["aID"] = "26358",
+							["custom"] = 0,
+							["last_event"] = 1670958932,
+							["on_hold"] = false,
+							["start_time"] = 1670958930,
+							["serial"] = "Creature-0-4446-571-16687-26358-000018CF46",
+							["fight_component"] = true,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 268,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.002744,
+							["total_without_pet"] = 1192.002744,
+							["total"] = 1192.002744,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02B843FA",
+							["totalabsorb"] = 0.002744,
+							["last_hps"] = 345.5080417671113,
+							["targets"] = {
+								["Moolatz"] = 1192,
+							},
+							["totalover_without_pet"] = 0.002744,
+							["healing_taken"] = 1192.002744,
+							["fight_component"] = true,
+							["end_time"] = 1670958936,
+							["last_event"] = 1670958933,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[48440] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 316,
+										["targets"] = {
+											["Moolatz"] = 632,
+										},
+										["n_min"] = 316,
+										["counter"] = 2,
+										["overheal"] = 0,
+										["total"] = 632,
+										["c_max"] = 0,
+										["id"] = 48440,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 632,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+									[34299] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 560,
+										["targets"] = {
+											["Moolatz"] = 560,
+										},
+										["n_min"] = 560,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 560,
+										["c_max"] = 0,
+										["id"] = 34299,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 560,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["targets_overheal"] = {
+							},
+							["aID"] = "4465-02B843FA",
+							["custom"] = 0,
+							["tipo"] = 2,
+							["totaldenied"] = 0.002744,
+							["start_time"] = 1670958930,
+							["delay"] = 0,
+							["classe"] = "DRUID",
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 268,
+					["_ActorTable"] = {
+						{
+							["received"] = 551.004919,
+							["resource"] = 0.004919,
+							["targets"] = {
+								["Moolatz"] = 551,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 3,
+							["classe"] = "DRUID",
+							["passiveover"] = 4.004919,
+							["fight_component"] = true,
+							["total"] = 551.004919,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[51178] = {
+										["total"] = 60,
+										["id"] = 51178,
+										["totalover"] = 0,
+										["targets"] = {
+											["Moolatz"] = 60,
+										},
+										["counter"] = 1,
+									},
+									[68285] = {
+										["total"] = 491,
+										["id"] = 68285,
+										["totalover"] = 265,
+										["targets"] = {
+											["Moolatz"] = 491,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["totalover"] = 265.004919,
+							["alternatepower"] = 0.004919,
+							["last_event"] = 1670958932,
+							["tipo"] = 3,
+							["aID"] = "4465-02B843FA",
+							["serial"] = "Player-4465-02B843FA",
+							["flag_original"] = 1297,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 268,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[48565] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 48565,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48573] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 48573,
+										["uptime"] = 3,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[16857] = {
+										["activedamt"] = -1,
+										["id"] = 16857,
+										["targets"] = {
+										},
+										["actived_at"] = 1670958934,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["appliedamt"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 61,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[50212] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 50212,
+										["uptime"] = 5,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48420] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48420,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[768] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 768,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 377749,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[57940] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 57940,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[24932] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 24932,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[26991] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 26991,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[53307] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 53307,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48440] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48440,
+										["uptime"] = 3,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48834] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48834,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[69369] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 69369,
+										["uptime"] = 3,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[16870] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 16870,
+										["uptime"] = 2,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 7,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[48565] = 1,
+								[50212] = 1,
+								[48569] = 1,
+								[48573] = 1,
+								[48576] = 1,
+							},
+							["tipo"] = 4,
+							["nome"] = "Moolatz",
+							["last_event"] = 1670958936,
+							["classe"] = "DRUID",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["debuff_uptime_targets"] = {
+							},
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 268,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = "Player-4465-02B843FA",
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 2891263.802,
+				["tempo_start"] = 1670958930,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					10818, -- [1]
+					1192, -- [2]
+					{
+						0, -- [1]
+						[0] = 491,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 60,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:15:37",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Ice Heart Jormungar Feeder",
+				["TotalElapsedCombatTime"] = 2891248.352,
+				["CombatEndedAt"] = 2891248.352,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Moolatz"] = 10208.006081,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Moolatz"] = 1192.002744,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 2891248.352,
+				["combat_id"] = 268,
+				["data_inicio"] = "20:15:30",
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 15049,
+				["totals_grupo"] = {
+					10208, -- [1]
+					1192, -- [2]
+					{
+						0, -- [1]
+						[0] = 491,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 60,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Ice Heart Jormungar Feeder",
+				["start_time"] = 2891241.868,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Ice Heart Jormungar Feeder"] = 1,
+				},
+			}, -- [7]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 267,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006445,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 146,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 146.006445,
+							["end_time"] = 1670958906,
+							["monster"] = true,
+							["total"] = 146.006445,
+							["damage_taken"] = 75.006445,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Ice Heart Jormungar Spawn",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 146,
+										["targets"] = {
+											["Moolatz"] = 146,
+										},
+										["n_dmg"] = 146,
+										["n_min"] = 146,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 146,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["aID"] = "26359",
+							["custom"] = 0,
+							["last_event"] = 1670958905,
+							["on_hold"] = false,
+							["start_time"] = 1670958905,
+							["serial"] = "Creature-0-4446-571-16687-26359-000018CF17",
+							["fight_component"] = true,
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002001,
+							["damage_from"] = {
+								["Ice Heart Jormungar Spawn"] = true,
+							},
+							["targets"] = {
+								["Ice Heart Jormungar Spawn"] = 75,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["tipo"] = 1,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 75.002001,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["total"] = 75.002001,
+							["damage_taken"] = 146.002001,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[53307] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75,
+										["targets"] = {
+											["Ice Heart Jormungar Spawn"] = 75,
+										},
+										["n_dmg"] = 75,
+										["n_min"] = 75,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 75,
+										["c_max"] = 0,
+										["id"] = 53307,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 8,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["last_dps"] = 750.0200100000001,
+							["end_time"] = 1670958906,
+							["colocacao"] = 1,
+							["last_event"] = 1670958905,
+							["on_hold"] = false,
+							["start_time"] = 1670958905,
+							["serial"] = "Player-4465-02B843FA",
+							["friendlyfire"] = {
+							},
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 267,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 267,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 267,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["nome"] = "Moolatz",
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
+							["pets"] = {
+							},
+							["aID"] = "4465-02B843FA",
+							["buff_uptime"] = 7,
+							["tipo"] = 4,
+							["last_event"] = 1670958906,
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[768] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 768,
+										["uptime"] = 1,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[57940] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 57940,
+										["uptime"] = 1,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 377749,
+										["uptime"] = 1,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[53307] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 53307,
+										["uptime"] = 1,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[24932] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 24932,
+										["uptime"] = 1,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[26991] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 26991,
+										["uptime"] = 1,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48420] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48420,
+										["uptime"] = 1,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["classe"] = "DRUID",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 267,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = "Player-4465-02B843FA",
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 2891240.268,
+				["tempo_start"] = 1670958905,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					221, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = false,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:15:06",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Ice Heart Jormungar Spawn",
+				["TotalElapsedCombatTime"] = 2891217.714,
+				["CombatEndedAt"] = 2891217.714,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Moolatz"] = 75.002001,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 2891217.714,
+				["combat_id"] = 267,
+				["data_inicio"] = "20:15:06",
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 15048,
+				["totals_grupo"] = {
+					75, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Ice Heart Jormungar Spawn",
+				["start_time"] = 2891217.517,
+				["TimeData"] = {
+				},
+				["frags"] = {
+				},
+			}, -- [8]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 266,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002554,
+							["damage_from"] = {
+								["Ice Heart Jormungar Feeder"] = true,
+								["Ice Heart Jormungar Spawn"] = true,
+							},
+							["targets"] = {
+								["Ice Heart Jormungar Feeder"] = 12594,
+								["Ice Heart Jormungar Spawn"] = 3093,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["tipo"] = 1,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 15687.002554,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["total"] = 15687.002554,
+							["damage_taken"] = 2879.002554,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 7,
+										["b_amt"] = 1,
+										["c_dmg"] = 4397,
+										["g_amt"] = 0,
+										["n_max"] = 242,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 2131,
+											["Ice Heart Jormungar Spawn"] = 2944,
+										},
+										["n_dmg"] = 678,
+										["n_min"] = 195,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["ChartData"] = {
+											[5] = 3419,
+											[8] = 4335,
+										},
+										["total"] = 5075,
+										["c_max"] = 675,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 195,
+										["a_dmg"] = 0,
+										["c_min"] = 545,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+									[48565] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 962,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 962,
+										},
+										["n_dmg"] = 962,
+										["n_min"] = 962,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 962,
+											[8] = 962,
+										},
+										["total"] = 962,
+										["c_max"] = 0,
+										["id"] = 48565,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[48569] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1365,
+										["g_amt"] = 0,
+										["n_max"] = 614,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 1979,
+										},
+										["n_dmg"] = 614,
+										["n_min"] = 614,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[5] = 1979,
+											[8] = 1979,
+										},
+										["total"] = 1979,
+										["c_max"] = 1365,
+										["id"] = 48569,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 1365,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[48573] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 897,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 1195,
+										},
+										["n_dmg"] = 1195,
+										["n_min"] = 298,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[5] = 1195,
+											[8] = 1195,
+										},
+										["total"] = 1195,
+										["c_max"] = 0,
+										["id"] = 48573,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[53307] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 149,
+											["Ice Heart Jormungar Spawn"] = 149,
+										},
+										["n_dmg"] = 298,
+										["n_min"] = 74,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["ChartData"] = {
+											[5] = 223,
+											[8] = 298,
+										},
+										["total"] = 298,
+										["c_max"] = 0,
+										["id"] = 53307,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["extra"] = {
+										},
+										["spellschool"] = 8,
+									},
+									[48576] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 6178,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 6178,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 6178,
+											[8] = 6178,
+										},
+										["total"] = 6178,
+										["c_max"] = 6178,
+										["id"] = 48576,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 6178,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["last_dps"] = 1491.159938590516,
+							["end_time"] = 1670958881,
+							["colocacao"] = 1,
+							["last_event"] = 1670958880,
+							["on_hold"] = false,
+							["start_time"] = 1670958870,
+							["serial"] = "Player-4465-02B843FA",
+							["friendlyfire"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.002349,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 2632,
+							},
+							["delay"] = 1670958888,
+							["pets"] = {
+							},
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 2632.002349,
+							["end_time"] = 1670958905,
+							["monster"] = true,
+							["total"] = 2632.002349,
+							["damage_taken"] = 12594.002349,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Ice Heart Jormungar Feeder",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 255,
+										["targets"] = {
+											["Moolatz"] = 472,
+										},
+										["n_dmg"] = 472,
+										["n_min"] = 217,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 472,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 2,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
+									}, -- [1]
+									[47447] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 540,
+										["targets"] = {
+											["Moolatz"] = 2160,
+										},
+										["n_dmg"] = 2160,
+										["n_min"] = 378,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 2160,
+										["c_max"] = 0,
+										["id"] = 47447,
+										["r_dmg"] = 1620,
+										["r_amt"] = 4,
+										["b_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["aID"] = "26358",
+							["custom"] = 0,
+							["last_event"] = 1670958888,
+							["on_hold"] = false,
+							["start_time"] = 1670958886,
+							["serial"] = "Creature-0-4446-571-16687-26358-000018CDA7",
+							["fight_component"] = true,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.005782,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 247,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 247.005782,
+							["end_time"] = 1670958881,
+							["monster"] = true,
+							["total"] = 247.005782,
+							["damage_taken"] = 3093.005782,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Ice Heart Jormungar Spawn",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 129,
+										["targets"] = {
+											["Moolatz"] = 247,
+										},
+										["n_dmg"] = 247,
+										["n_min"] = 118,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 247,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 2,
+										["spellschool"] = 1,
+										["DODGE"] = 2,
+									}, -- [1]
+									[43358] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 43358,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["aID"] = "26359",
+							["custom"] = 0,
+							["last_event"] = 1670958879,
+							["on_hold"] = false,
+							["start_time"] = 1670958875,
+							["serial"] = "Creature-0-4446-571-16687-26359-000018CDC3",
+							["fight_component"] = true,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 266,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 231.00242,
+							["total_without_pet"] = 881.00242,
+							["total"] = 881.00242,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02B843FA",
+							["totalabsorb"] = 0.00242,
+							["last_hps"] = 124.3300056427113,
+							["targets"] = {
+								["Moolatz"] = 881,
+							},
+							["totalover_without_pet"] = 0.00242,
+							["healing_taken"] = 881.00242,
+							["fight_component"] = true,
+							["end_time"] = 1670958881,
+							["last_event"] = 1670958877,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[34299] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Moolatz"] = 231,
+										},
+										["n_max"] = 553,
+										["targets"] = {
+											["Moolatz"] = 881,
+										},
+										["n_min"] = 328,
+										["counter"] = 2,
+										["overheal"] = 231,
+										["total"] = 881,
+										["c_max"] = 0,
+										["id"] = 34299,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 881,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["targets_overheal"] = {
+								["Moolatz"] = 231,
+							},
+							["aID"] = "4465-02B843FA",
+							["custom"] = 0,
+							["tipo"] = 2,
+							["totaldenied"] = 0.00242,
+							["start_time"] = 1670958870,
+							["delay"] = 0,
+							["classe"] = "DRUID",
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 266,
+					["_ActorTable"] = {
+						{
+							["received"] = 60.001289,
+							["resource"] = 0.001289,
+							["targets"] = {
+								["Moolatz"] = 60,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "DRUID",
+							["passiveover"] = 4.001289,
+							["fight_component"] = true,
+							["total"] = 60.001289,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[68285] = {
+										["total"] = 0,
+										["id"] = 68285,
+										["totalover"] = 1513,
+										["targets"] = {
+											["Moolatz"] = 0,
+										},
+										["counter"] = 2,
 									},
 									[51178] = {
 										["total"] = 60,
@@ -1166,247 +7295,263 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
-							["alternatepower"] = 0.003439,
-							["last_event"] = 1670839414,
-							["aID"] = "4465-02B843FA",
+							["totalover"] = 1513.001289,
+							["alternatepower"] = 0.001289,
+							["last_event"] = 1670958877,
 							["tipo"] = 3,
+							["aID"] = "4465-02B843FA",
 							["serial"] = "Player-4465-02B843FA",
-							["totalover"] = 630.003439,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 252,
 					["tipo"] = 9,
+					["combatId"] = 266,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[48565] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 48565,
+										["uptime"] = 4,
 										["targets"] = {
 										},
-										["uptime"] = 4,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48573] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 48573,
+										["uptime"] = 3,
 										["targets"] = {
 										},
-										["uptime"] = 3,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[16857] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 16857,
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["uptime"] = 5,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 70,
+							["buff_uptime"] = 112,
 							["aID"] = "4465-02B843FA",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[50212] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 50212,
+										["uptime"] = 6,
 										["targets"] = {
 										},
-										["uptime"] = 2,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48420] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48420,
+										["uptime"] = 11,
 										["targets"] = {
 										},
-										["uptime"] = 7,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48848] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48848,
+										["uptime"] = 11,
 										["targets"] = {
 										},
-										["uptime"] = 5,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[768] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 768,
+										["uptime"] = 11,
 										["targets"] = {
 										},
-										["uptime"] = 7,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
+									},
+									[377749] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 377749,
+										["uptime"] = 11,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
 									},
 									[57940] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 57940,
+										["uptime"] = 11,
 										["targets"] = {
 										},
-										["uptime"] = 10,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[24932] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 24932,
+										["uptime"] = 11,
 										["targets"] = {
 										},
-										["uptime"] = 7,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[26991] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 26991,
+										["uptime"] = 11,
 										["targets"] = {
 										},
-										["uptime"] = 10,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[53307] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 53307,
+										["uptime"] = 11,
 										["targets"] = {
 										},
-										["uptime"] = 10,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[69369] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 69369,
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["uptime"] = 3,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[33943] = {
-										["activedamt"] = 1,
-										["id"] = 33943,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48834] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48834,
+										["uptime"] = 10,
 										["targets"] = {
 										},
-										["uptime"] = 5,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[16870] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 16870,
+										["uptime"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 1,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
-							["debuff_uptime"] = 12,
+							["debuff_uptime"] = 14,
 							["buff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["spell_cast"] = {
 								[48565] = 1,
-								[16857] = 1,
-								[48576] = 1,
+								[50212] = 1,
 								[48569] = 2,
 								[48573] = 1,
 								[48848] = 1,
-								[50212] = 1,
-								[768] = 1,
+								[48576] = 1,
+								[16857] = 1,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["nome"] = "Moolatz",
-							["last_event"] = 1670839416,
+							["last_event"] = 1670958881,
+							["classe"] = "DRUID",
 							["pets"] = {
 							},
-							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
-							["nome"] = "Coldwind Waste Huntress",
-							["flag_original"] = 68168,
-							["spell_cast"] = {
-								[49865] = 1,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
 							["last_event"] = 0,
+							["nome"] = "Ice Heart Jormungar Feeder",
+							["aID"] = "26358",
+							["spell_cast"] = {
+								[47447] = 1,
+							},
+							["fight_component"] = true,
+							["tipo"] = 4,
+							["classe"] = "UNKNOW",
 							["pets"] = {
 							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4446-571-16693-26575-000016F768",
-							["aID"] = "26575",
+							["serial"] = "Creature-0-4446-571-16687-26358-000018CDA7",
+							["flag_original"] = 68168,
 						}, -- [2]
+						{
+							["monster"] = true,
+							["last_event"] = 0,
+							["nome"] = "Ice Heart Jormungar Spawn",
+							["aID"] = "26359",
+							["spell_cast"] = {
+								[43358] = 1,
+							},
+							["fight_component"] = true,
+							["tipo"] = 4,
+							["classe"] = "UNKNOW",
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-4446-571-16687-26359-000018CDC3",
+							["flag_original"] = 68168,
+						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 252,
 					["tipo"] = 2,
+					["combatId"] = 266,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1416,66 +7561,153 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Moolatz", -- [1]
 				},
-				["CombatStartedAt"] = 2771802.765,
-				["tempo_start"] = 1670839406,
+				["CombatStartedAt"] = 2891215.531,
+				["tempo_start"] = 1670958870,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 15030,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
-					11469.992514, -- [1]
-					558.996998, -- [2]
+					18566, -- [1]
+					881, -- [2]
 					{
 						0, -- [1]
-						[0] = 126,
+						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 60,
 						[6] = 0,
+						[3] = 60,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["totals_grupo"] = {
-					10327, -- [1]
-					559, -- [2]
-					{
-						0, -- [1]
-						[0] = 126,
-						["alternatepower"] = 0,
-						[3] = 60,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
+					["Moolatz"] = {
+						{
+							true, -- [1]
+							47447, -- [2]
+							378, -- [3]
+							1670958882.615, -- [4]
+							13043, -- [5]
+							"Ice Heart Jormungar Feeder", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [1]
+						{
+							true, -- [1]
+							47447, -- [2]
+							378, -- [3]
+							1670958885.634, -- [4]
+							12711, -- [5]
+							"Ice Heart Jormungar Feeder", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [2]
+						{
+							true, -- [1]
+							47447, -- [2]
+							378, -- [3]
+							1670958888.684, -- [4]
+							12356, -- [5]
+							"Ice Heart Jormungar Feeder", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 4,
+					},
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["data_fim"] = "11:03:37",
+				["hasSaved"] = true,
+				["data_fim"] = "20:14:41",
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Coldwind Waste Huntress",
-				["TotalElapsedCombatTime"] = 11.35100000025705,
-				["CombatEndedAt"] = 2771744.845,
+				["enemy"] = "Ice Heart Jormungar Feeder",
+				["TotalElapsedCombatTime"] = 0.8670000000856817,
+				["CombatEndedAt"] = 2891205.364,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -1485,35 +7717,1653 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Moolatz"] = 15687.002554,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Moolatz"] = 559.00262,
+							["Moolatz"] = 881.00242,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
+				},
+				["end_time"] = 2891192.815,
+				["combat_id"] = 266,
+				["data_inicio"] = "20:14:31",
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 15047,
+				["totals_grupo"] = {
+					15687, -- [1]
+					881, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 60,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Ice Heart Jormungar Feeder",
+				["start_time"] = 2891182.295,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Ice Heart Jormungar Feeder"] = 1,
+				},
+			}, -- [9]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 265,
+					["_ActorTable"] = {
 						{
-							["Moolatz"] = 10327.008851,
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007623,
+							["damage_from"] = {
+								["Environment (Falling)"] = true,
+								["Ice Heart Jormungar Feeder"] = true,
+							},
+							["targets"] = {
+								["Ice Heart Jormungar Feeder"] = 9903,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["tipo"] = 1,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 9903.007623,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["total"] = 9903.007623,
+							["damage_taken"] = 2350.007623,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 1133,
+										["g_amt"] = 0,
+										["n_max"] = 246,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 3015,
+										},
+										["n_dmg"] = 1882,
+										["n_min"] = 227,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["ChartData"] = {
+											[5] = 1852,
+											[8] = 2547,
+										},
+										["total"] = 3015,
+										["c_max"] = 578,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 555,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 8,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+									[48565] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 2235,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 2235,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 2235,
+											[8] = 2235,
+										},
+										["total"] = 2235,
+										["c_max"] = 2235,
+										["id"] = 48565,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 2235,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[48576] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2046,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 2046,
+										},
+										["n_dmg"] = 2046,
+										["n_min"] = 2046,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 2046,
+											[8] = 2046,
+										},
+										["total"] = 2046,
+										["c_max"] = 0,
+										["id"] = 48576,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[48573] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 864,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 1156,
+										},
+										["n_dmg"] = 1156,
+										["n_min"] = 292,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[8] = 292,
+										},
+										["total"] = 1156,
+										["c_max"] = 0,
+										["id"] = 48573,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[53307] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 224,
+										},
+										["n_dmg"] = 224,
+										["n_min"] = 74,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[5] = 149,
+											[8] = 149,
+										},
+										["total"] = 224,
+										["c_max"] = 0,
+										["id"] = 53307,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["extra"] = {
+										},
+										["spellschool"] = 8,
+									},
+									[48569] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1227,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 1227,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 1227,
+											[8] = 1227,
+										},
+										["total"] = 1227,
+										["c_max"] = 1227,
+										["id"] = 48569,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 1227,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["last_dps"] = 872.5885649010276,
+							["end_time"] = 1670958651,
+							["colocacao"] = 1,
+							["last_event"] = 1670958650,
+							["on_hold"] = false,
+							["start_time"] = 1670958640,
+							["serial"] = "Player-4465-02B843FA",
+							["friendlyfire"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.00783,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 2193,
+								["Xso"] = 217,
+							},
+							["delay"] = 1670958716,
+							["pets"] = {
+							},
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["aID"] = "26358",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 2410.00783,
+							["dps_started"] = false,
+							["fight_component"] = true,
+							["end_time"] = 1670958870,
+							["damage_taken"] = 9903.00783,
+							["total"] = 2410.00783,
+							["nome"] = "Ice Heart Jormungar Feeder",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 265,
+										["targets"] = {
+											["Moolatz"] = 508,
+											["Xso"] = 217,
+										},
+										["n_dmg"] = 725,
+										["n_min"] = 217,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 725,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 3,
+										["spellschool"] = 1,
+										["DODGE"] = 3,
+									}, -- [1]
+									[47447] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 468,
+										["targets"] = {
+											["Moolatz"] = 1685,
+										},
+										["n_dmg"] = 1685,
+										["n_min"] = 234,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 1685,
+										["c_max"] = 0,
+										["id"] = 47447,
+										["r_dmg"] = 1217,
+										["r_amt"] = 4,
+										["b_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
+							["monster"] = true,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["last_event"] = 1670958716,
+							["on_hold"] = false,
+							["start_time"] = 1670958852,
+							["serial"] = "Creature-0-4446-571-16687-26358-000018CDCD",
+							["classe"] = "UNKNOW",
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 265,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 258.002301,
+							["total_without_pet"] = 301.002301,
+							["total"] = 301.002301,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02B843FA",
+							["totalabsorb"] = 0.002301,
+							["last_hps"] = 1003.341003956289,
+							["targets"] = {
+								["Moolatz"] = 301,
+							},
+							["totalover_without_pet"] = 0.002301,
+							["healing_taken"] = 301.002301,
+							["fight_component"] = true,
+							["end_time"] = 1670958651,
+							["last_event"] = 1670958640,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[34299] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Moolatz"] = 258,
+										},
+										["n_max"] = 301,
+										["targets"] = {
+											["Moolatz"] = 301,
+										},
+										["n_min"] = 301,
+										["counter"] = 1,
+										["overheal"] = 258,
+										["total"] = 301,
+										["c_max"] = 0,
+										["id"] = 34299,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 301,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["targets_overheal"] = {
+								["Moolatz"] = 258,
+							},
+							["aID"] = "4465-02B843FA",
+							["custom"] = 0,
+							["tipo"] = 2,
+							["totaldenied"] = 0.002301,
+							["start_time"] = 1670958650,
+							["delay"] = 1670958640,
+							["classe"] = "DRUID",
 						}, -- [1]
 					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 265,
+					["_ActorTable"] = {
+						{
+							["received"] = 0.006616,
+							["resource"] = 0.006616,
+							["targets"] = {
+								["Moolatz"] = 0,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "DRUID",
+							["passiveover"] = 0.006616,
+							["fight_component"] = true,
+							["total"] = 0.006616,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[68285] = {
+										["total"] = 0,
+										["id"] = 68285,
+										["totalover"] = 756,
+										["targets"] = {
+											["Moolatz"] = 0,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["totalover"] = 756.006616,
+							["alternatepower"] = 0.006616,
+							["last_event"] = 1670958640,
+							["tipo"] = 3,
+							["aID"] = "4465-02B843FA",
+							["serial"] = "Player-4465-02B843FA",
+							["flag_original"] = 1297,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 265,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[48565] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 48565,
+										["uptime"] = 8,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48573] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 48573,
+										["uptime"] = 3,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[16857] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 16857,
+										["uptime"] = 9,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 98,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[48420] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48420,
+										["uptime"] = 11,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48848] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48848,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[768] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 768,
+										["uptime"] = 11,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 377749,
+										["uptime"] = 11,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[57940] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 57940,
+										["uptime"] = 11,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[24932] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 24932,
+										["uptime"] = 11,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[26991] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 26991,
+										["uptime"] = 11,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[53307] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 53307,
+										["uptime"] = 11,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[69369] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 69369,
+										["uptime"] = 8,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48834] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48834,
+										["uptime"] = 9,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 20,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[48565] = 1,
+								[16857] = 1,
+								[48576] = 1,
+								[48573] = 1,
+								[48569] = 1,
+							},
+							["tipo"] = 4,
+							["nome"] = "Moolatz",
+							["last_event"] = 1670958651,
+							["classe"] = "DRUID",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["debuff_uptime_targets"] = {
+							},
+						}, -- [1]
+						{
+							["monster"] = true,
+							["last_event"] = 0,
+							["nome"] = "Ice Heart Jormungar Feeder",
+							["aID"] = "26358",
+							["spell_cast"] = {
+								[47447] = 1,
+							},
+							["fight_component"] = true,
+							["tipo"] = 4,
+							["classe"] = "UNKNOW",
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-4446-571-16687-26358-000018CDCD",
+							["flag_original"] = 68168,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 265,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = "Player-4465-02B843FA",
 				},
-				["end_time"] = 2771727.01,
-				["combat_id"] = 252,
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 2891178.88,
+				["tempo_start"] = 1670958640,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
 				["cleu_events"] = {
 					["n"] = 1,
 				},
+				["playing_solo"] = true,
+				["totals"] = {
+					12312.989086, -- [1]
+					301, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+					["Moolatz"] = {
+						{
+							true, -- [1]
+							47447, -- [2]
+							374, -- [3]
+							1670958652.585, -- [4]
+							13004, -- [5]
+							"Ice Heart Jormungar Feeder", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [1]
+						{
+							true, -- [1]
+							47447, -- [2]
+							281, -- [3]
+							1670958655.569, -- [4]
+							12676, -- [5]
+							"Ice Heart Jormungar Feeder", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [2]
+						{
+							true, -- [1]
+							47447, -- [2]
+							234, -- [3]
+							1670958658.552, -- [4]
+							12418, -- [5]
+							"Ice Heart Jormungar Feeder", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [3]
+						{
+							true, -- [1]
+							47447, -- [2]
+							328, -- [3]
+							1670958661.569, -- [4]
+							12231, -- [5]
+							"Ice Heart Jormungar Feeder", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [4]
+						{
+							true, -- [1]
+							3, -- [2]
+							157, -- [3]
+							1670958860.316, -- [4]
+							13980, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 6,
+					},
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:10:51",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Ice Heart Jormungar Feeder",
+				["TotalElapsedCombatTime"] = 2890963.065,
+				["CombatEndedAt"] = 2890963.065,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Moolatz"] = 9903.007623,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Moolatz"] = 301.002301,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 2890963.065,
+				["combat_id"] = 265,
+				["data_inicio"] = "20:10:40",
 				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 15046,
+				["totals_grupo"] = {
+					9903, -- [1]
+					301, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Ice Heart Jormungar Feeder",
+				["start_time"] = 2890951.716,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Ice Heart Jormungar Feeder"] = 1,
+				},
+			}, -- [10]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 264,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007202,
+							["damage_from"] = {
+								["Ice Heart Jormungar Feeder"] = true,
+							},
+							["targets"] = {
+								["Ice Heart Jormungar Feeder"] = 10001,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["tipo"] = 1,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 10001.007202,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["total"] = 10001.007202,
+							["damage_taken"] = 568.007202,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 297,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 1029,
+										},
+										["n_dmg"] = 1029,
+										["n_min"] = 234,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["ChartData"] = {
+											[5] = 1029,
+										},
+										["total"] = 1029,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+									}, -- [1]
+									[48565] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 993,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 993,
+										},
+										["n_dmg"] = 993,
+										["n_min"] = 993,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 993,
+										},
+										["total"] = 993,
+										["c_max"] = 0,
+										["id"] = 48565,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[48569] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 609,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 1215,
+										},
+										["n_dmg"] = 1215,
+										["n_min"] = 606,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[5] = 1215,
+										},
+										["total"] = 1215,
+										["c_max"] = 0,
+										["id"] = 48569,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[48573] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 675,
+										["g_amt"] = 0,
+										["n_max"] = 898,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 1573,
+										},
+										["n_dmg"] = 898,
+										["n_min"] = 898,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[5] = 1573,
+										},
+										["total"] = 1573,
+										["c_max"] = 675,
+										["id"] = 48573,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 675,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[53307] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 74,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 74,
+										},
+										["n_dmg"] = 74,
+										["n_min"] = 74,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 74,
+										},
+										["total"] = 74,
+										["c_max"] = 0,
+										["id"] = 53307,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 8,
+									},
+									[48576] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 5117,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 5117,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 5117,
+										},
+										["total"] = 5117,
+										["c_max"] = 5117,
+										["id"] = 48576,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 5117,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["last_dps"] = 1990.646338079555,
+							["end_time"] = 1670958630,
+							["colocacao"] = 1,
+							["last_event"] = 1670958629,
+							["on_hold"] = false,
+							["start_time"] = 1670958624,
+							["serial"] = "Player-4465-02B843FA",
+							["friendlyfire"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004418,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 568,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 568.004418,
+							["end_time"] = 1670958640,
+							["monster"] = true,
+							["total"] = 568.004418,
+							["damage_taken"] = 10001.004418,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Ice Heart Jormungar Feeder",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 301,
+										["targets"] = {
+											["Moolatz"] = 568,
+										},
+										["n_dmg"] = 568,
+										["n_min"] = 267,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 568,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 2,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["aID"] = "26358",
+							["custom"] = 0,
+							["last_event"] = 1670958640,
+							["on_hold"] = false,
+							["start_time"] = 1670958625,
+							["serial"] = "Creature-0-4446-571-16687-26358-000018CDFD",
+							["fight_component"] = true,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 264,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 293.004755,
+							["total_without_pet"] = 267.004755,
+							["total"] = 267.004755,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02B843FA",
+							["totalabsorb"] = 0.004755,
+							["last_hps"] = 136.4357460442721,
+							["targets"] = {
+								["Moolatz"] = 267,
+							},
+							["totalover_without_pet"] = 0.004755,
+							["healing_taken"] = 267.004755,
+							["fight_component"] = true,
+							["end_time"] = 1670958630,
+							["last_event"] = 1670958626,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[34299] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Moolatz"] = 293,
+										},
+										["n_max"] = 267,
+										["targets"] = {
+											["Moolatz"] = 267,
+										},
+										["n_min"] = 267,
+										["counter"] = 1,
+										["overheal"] = 293,
+										["total"] = 267,
+										["c_max"] = 0,
+										["id"] = 34299,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 267,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["targets_overheal"] = {
+								["Moolatz"] = 293,
+							},
+							["aID"] = "4465-02B843FA",
+							["custom"] = 0,
+							["tipo"] = 2,
+							["totaldenied"] = 0.004755,
+							["start_time"] = 1670958626,
+							["delay"] = 0,
+							["classe"] = "DRUID",
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 264,
+					["_ActorTable"] = {
+						{
+							["received"] = 24.007103,
+							["resource"] = 0.007103,
+							["targets"] = {
+								["Moolatz"] = 24,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "DRUID",
+							["passiveover"] = 4.007103,
+							["fight_component"] = true,
+							["total"] = 24.007103,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[68285] = {
+										["total"] = 0,
+										["id"] = 68285,
+										["totalover"] = 757,
+										["targets"] = {
+											["Moolatz"] = 0,
+										},
+										["counter"] = 1,
+									},
+									[51178] = {
+										["total"] = 24,
+										["id"] = 51178,
+										["totalover"] = 36,
+										["targets"] = {
+											["Moolatz"] = 24,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["totalover"] = 793.007103,
+							["alternatepower"] = 0.007103,
+							["last_event"] = 1670958626,
+							["tipo"] = 3,
+							["aID"] = "4465-02B843FA",
+							["serial"] = "Player-4465-02B843FA",
+							["flag_original"] = 1297,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 264,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[48565] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 48565,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48573] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 48573,
+										["uptime"] = 3,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[16857] = {
+										["activedamt"] = -1,
+										["id"] = 16857,
+										["targets"] = {
+										},
+										["actived_at"] = 1670958629,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["appliedamt"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 61,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[50212] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 50212,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48420] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48420,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48848] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48848,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[768] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 768,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 377749,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[57940] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 57940,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[24932] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 24932,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[26991] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 26991,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[53307] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 53307,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[69369] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 69369,
+										["uptime"] = 2,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48834] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48834,
+										["uptime"] = 5,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[16870] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = 16870,
+										["uptime"] = 2,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 7,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[48565] = 1,
+								[50212] = 1,
+								[48569] = 2,
+								[48573] = 1,
+								[48848] = 1,
+								[48576] = 1,
+							},
+							["tipo"] = 4,
+							["nome"] = "Moolatz",
+							["last_event"] = 1670958630,
+							["classe"] = "DRUID",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["debuff_uptime_targets"] = {
+							},
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 264,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = "Player-4465-02B843FA",
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 2890951.716,
+				["tempo_start"] = 1670958624,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					10569, -- [1]
+					267, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 24,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["player_last_events"] = {
 					["Moolatz"] = {
 						{
 							true, -- [1]
 							1, -- [2]
-							260, -- [3]
-							1670839491.886, -- [4]
+							301, -- [3]
+							1670958640.435, -- [4]
 							13980, -- [5]
 							"Ice Heart Jormungar Feeder", -- [6]
 							nil, -- [7]
@@ -1588,370 +9438,15 @@ _detalhes_database = {
 						["n"] = 2,
 					},
 				},
-				["data_inicio"] = "11:03:27",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Coldwind Waste Huntress"] = 1,
-				},
-				["start_time"] = 2771717.259,
-				["TimeData"] = {
-				},
-				["contra"] = "Coldwind Waste Huntress",
-			}, -- [2]
-			{
-				{
-					["combatId"] = 251,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.001748,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Coldwind Waste Huntress"] = 10011,
-							},
-							["total"] = 10011.001748,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["on_hold"] = false,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.001748,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1670839389,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 13052.15351772783,
-							["custom"] = 0,
-							["last_event"] = 1670839389,
-							["damage_taken"] = 0.001748,
-							["start_time"] = 1670839388,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.002305,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Coldwind Waste Huntress"] = 10011,
-							},
-							["friendlyfire"] = {
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 10011.002305,
-							["on_hold"] = false,
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FBC2",
-							["dps_started"] = false,
-							["end_time"] = 1670839389,
-							["aID"] = "",
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[47921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 7101,
-										["targets"] = {
-											["Coldwind Waste Huntress"] = 7101,
-										},
-										["n_dmg"] = 7101,
-										["n_min"] = 7101,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 7101,
-										["c_max"] = 0,
-										["id"] = 47921,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47938] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 2910,
-										["targets"] = {
-											["Coldwind Waste Huntress"] = 2910,
-										},
-										["n_dmg"] = 2910,
-										["n_min"] = 2910,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 2910,
-										["c_max"] = 0,
-										["id"] = 47938,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PET",
-							["total"] = 10011.002305,
-							["last_dps"] = 13052.15424393383,
-							["custom"] = 0,
-							["last_event"] = 1670839389,
-							["damage_taken"] = 0.002305,
-							["start_time"] = 1670839388,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.00654,
-							["damage_from"] = {
-								["Xink's Shredder <Moolatz>"] = true,
-							},
-							["targets"] = {
-							},
-							["total"] = 0.00654,
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.00654,
-							["fight_component"] = true,
-							["monster"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1670839389,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Coldwind Waste Huntress",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["aID"] = "26575",
-							["serial"] = "Creature-0-4446-571-16693-26575-000016E875",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 10011.00654,
-							["start_time"] = 1670839389,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 251,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 251,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 251,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 4,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["classe"] = "DRUID",
-							["last_event"] = 1670839389,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[47920] = {
-										["activedamt"] = 1,
-										["id"] = 47920,
-										["targets"] = {
-										},
-										["uptime"] = 1,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[26991] = {
-										["activedamt"] = 1,
-										["id"] = 26991,
-										["targets"] = {
-										},
-										["uptime"] = 1,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53307] = {
-										["activedamt"] = 1,
-										["id"] = 53307,
-										["targets"] = {
-										},
-										["uptime"] = 1,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57940] = {
-										["activedamt"] = 1,
-										["id"] = 57940,
-										["targets"] = {
-										},
-										["uptime"] = 1,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["spell_cast"] = {
-								[47938] = 1,
-							},
-							["tipo"] = 4,
-							["aID"] = "",
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FBC2",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 251,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = "Player-4465-02B843FA",
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 2771715.661,
-				["tempo_start"] = 1670839388,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 15029,
-				["playing_solo"] = true,
-				["totals"] = {
-					10011, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					10011, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["data_fim"] = "11:03:10",
+				["hasSaved"] = true,
+				["data_fim"] = "20:10:31",
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Coldwind Waste Huntress",
-				["TotalElapsedCombatTime"] = 1.5,
-				["CombatEndedAt"] = 2771700.675,
+				["enemy"] = "Ice Heart Jormungar Feeder",
+				["TotalElapsedCombatTime"] = 2890942.324,
+				["CombatEndedAt"] = 2890942.324,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -1961,5175 +9456,120 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Moolatz"] = 10001.007202,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
+							["Moolatz"] = 267.004755,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Moolatz"] = 10011.001748,
-							["Xink's Shredder <Moolatz>"] = 10011.002305,
-						}, -- [1]
-					},
 				},
-				["end_time"] = 2771700.675,
-				["combat_id"] = 251,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["end_time"] = 2890942.324,
+				["combat_id"] = 264,
+				["data_inicio"] = "20:10:24",
 				["spells_cast_timeline"] = {
 				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "11:03:09",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Coldwind Waste Huntress"] = 1,
-				},
-				["start_time"] = 2771699.175,
-				["TimeData"] = {
-				},
-				["contra"] = "Coldwind Waste Huntress",
-			}, -- [3]
-			{
-				{
-					["combatId"] = 250,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.004728,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Coldwind Witch"] = 8285,
-							},
-							["total"] = 8285.004728,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["on_hold"] = false,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.004728,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1670839364,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 4073.25699511342,
-							["custom"] = 0,
-							["last_event"] = 1670839363,
-							["damage_taken"] = 0.004728,
-							["start_time"] = 1670839361,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.003937,
-							["damage_from"] = {
-								["Coldwind Witch"] = true,
-							},
-							["targets"] = {
-								["Coldwind Witch"] = 8285,
-							},
-							["friendlyfire"] = {
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 2,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 8285.003937,
-							["on_hold"] = false,
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FBC2",
-							["dps_started"] = false,
-							["end_time"] = 1670839364,
-							["aID"] = "",
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[47938] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4728,
-										["targets"] = {
-											["Coldwind Witch"] = 8285,
-										},
-										["n_dmg"] = 8285,
-										["n_min"] = 3557,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 8285,
-										["c_max"] = 0,
-										["id"] = 47938,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PET",
-							["total"] = 8285.003937,
-							["last_dps"] = 4073.256606224531,
-							["custom"] = 0,
-							["last_event"] = 1670839363,
-							["damage_taken"] = 192.003937,
-							["start_time"] = 1670839361,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.006505,
-							["total"] = 192.006505,
-							["damage_from"] = {
-								["Xink's Shredder <Moolatz>"] = true,
-							},
-							["targets"] = {
-								["Xink's Shredder <Moolatz>"] = 192,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 192.006505,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1670839364,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Coldwind Witch",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 192,
-										["targets"] = {
-											["Xink's Shredder <Moolatz>"] = 192,
-										},
-										["n_dmg"] = 192,
-										["n_min"] = 192,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 192,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["aID"] = "26577",
-							["serial"] = "Creature-0-4446-571-16693-26577-000016E4A0",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1670839362,
-							["damage_taken"] = 8285.006505,
-							["start_time"] = 1670839362,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 250,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 250,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 250,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 12,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["classe"] = "DRUID",
-							["last_event"] = 1670839364,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[47920] = {
-										["activedamt"] = 1,
-										["id"] = 47920,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[26991] = {
-										["activedamt"] = 1,
-										["id"] = 26991,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53307] = {
-										["activedamt"] = 1,
-										["id"] = 53307,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57940] = {
-										["activedamt"] = 1,
-										["id"] = 57940,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["spell_cast"] = {
-								[47938] = 1,
-							},
-							["tipo"] = 4,
-							["aID"] = "",
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FBC2",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 250,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = "Player-4465-02B843FA",
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["tempo_start"] = 1670839361,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Coldwind Witch",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					8477, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["TotalElapsedCombatTime"] = 2771674.807,
-				["combat_counter"] = 15028,
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 8285.004728,
-							["Xink's Shredder <Moolatz>"] = 8285.003937,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 2771674.807,
-				["player_last_events"] = {
-				},
-				["instance_type"] = "none",
-				["CombatEndedAt"] = 2771674.807,
-				["data_inicio"] = "11:02:42",
+				["combat_counter"] = 15045,
 				["totals_grupo"] = {
-					8285, -- [1]
-					0, -- [2]
+					10001, -- [1]
+					267, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 24,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "11:02:44",
-				["combat_id"] = 250,
 				["CombatSkillCache"] = {
 				},
-				["frags"] = {
-					["Coldwind Witch"] = 1,
-				},
-				["start_time"] = 2771672.556,
+				["contra"] = "Ice Heart Jormungar Feeder",
+				["start_time"] = 2890935.973,
 				["TimeData"] = {
 				},
-				["contra"] = "Coldwind Witch",
-			}, -- [4]
-			{
-				{
-					["combatId"] = 249,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.002523,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Coldwind Waste Huntress"] = 10279,
-							},
-							["total"] = 10279.002523,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["on_hold"] = false,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.002523,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1670839349,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 7088.967256330742,
-							["custom"] = 0,
-							["last_event"] = 1670839349,
-							["damage_taken"] = 0.002523,
-							["start_time"] = 1670839347,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.008802,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Coldwind Waste Huntress"] = 10279,
-							},
-							["friendlyfire"] = {
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 10279.008802,
-							["on_hold"] = false,
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FBC2",
-							["dps_started"] = false,
-							["end_time"] = 1670839349,
-							["aID"] = "",
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[47921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 6689,
-										["targets"] = {
-											["Coldwind Waste Huntress"] = 6689,
-										},
-										["n_dmg"] = 6689,
-										["n_min"] = 6689,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 6689,
-										["c_max"] = 0,
-										["id"] = 47921,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47938] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3590,
-										["targets"] = {
-											["Coldwind Waste Huntress"] = 3590,
-										},
-										["n_dmg"] = 3590,
-										["n_min"] = 3590,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 3590,
-										["c_max"] = 0,
-										["id"] = 47938,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PET",
-							["total"] = 10279.008802,
-							["last_dps"] = 7088.97158667557,
-							["custom"] = 0,
-							["last_event"] = 1670839349,
-							["damage_taken"] = 0.008802,
-							["start_time"] = 1670839347,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.008021,
-							["damage_from"] = {
-								["Xink's Shredder <Moolatz>"] = true,
-							},
-							["targets"] = {
-							},
-							["total"] = 0.008021,
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.008021,
-							["fight_component"] = true,
-							["monster"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1670839349,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Coldwind Waste Huntress",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["aID"] = "26575",
-							["serial"] = "Creature-0-4446-571-16693-26575-000016E3BD",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 10279.008021,
-							["start_time"] = 1670839349,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 249,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 249,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 249,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 8,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["classe"] = "DRUID",
-							["last_event"] = 1670839349,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[47920] = {
-										["activedamt"] = 1,
-										["id"] = 47920,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[26991] = {
-										["activedamt"] = 1,
-										["id"] = 26991,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53307] = {
-										["activedamt"] = 1,
-										["id"] = 53307,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57940] = {
-										["activedamt"] = 1,
-										["id"] = 57940,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["spell_cast"] = {
-								[47938] = 1,
-							},
-							["tipo"] = 4,
-							["aID"] = "",
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FBC2",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 249,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = "Player-4465-02B843FA",
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 2771671.539,
-				["tempo_start"] = 1670839347,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 15027,
-				["playing_solo"] = true,
-				["totals"] = {
-					10279, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					10279, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "11:02:30",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Coldwind Waste Huntress",
-				["TotalElapsedCombatTime"] = 1.700000000186265,
-				["CombatEndedAt"] = 2771660.172,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 10279.002523,
-							["Xink's Shredder <Moolatz>"] = 10279.008802,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 2771660.172,
-				["combat_id"] = 249,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "11:02:28",
-				["CombatSkillCache"] = {
-				},
 				["frags"] = {
-					["Coldwind Waste Huntress"] = 1,
+					["Ice Heart Jormungar Feeder"] = 1,
 				},
-				["start_time"] = 2771658.472,
-				["TimeData"] = {
-				},
-				["contra"] = "Coldwind Waste Huntress",
-			}, -- [5]
-			{
-				{
-					["combatId"] = 248,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.008375,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Coldwind Waste Huntress"] = 11020,
-							},
-							["total"] = 11020.008375,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["on_hold"] = false,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.008375,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1670839308,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 26490.40473478616,
-							["custom"] = 0,
-							["last_event"] = 1670839307,
-							["damage_taken"] = 0.008375,
-							["start_time"] = 1670839307,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.005953,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Coldwind Waste Huntress"] = 11020,
-							},
-							["friendlyfire"] = {
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 2,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 11020.005953,
-							["on_hold"] = false,
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FBC2",
-							["dps_started"] = false,
-							["end_time"] = 1670839308,
-							["aID"] = "",
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[47921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 6960,
-										["targets"] = {
-											["Coldwind Waste Huntress"] = 6960,
-										},
-										["n_dmg"] = 6960,
-										["n_min"] = 6960,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 6960,
-										["c_max"] = 0,
-										["id"] = 47921,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47938] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4060,
-										["targets"] = {
-											["Coldwind Waste Huntress"] = 4060,
-										},
-										["n_dmg"] = 4060,
-										["n_min"] = 4060,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 4060,
-										["c_max"] = 0,
-										["id"] = 47938,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PET",
-							["total"] = 11020.005953,
-							["last_dps"] = 26490.39891267077,
-							["custom"] = 0,
-							["last_event"] = 1670839307,
-							["damage_taken"] = 0.005953,
-							["start_time"] = 1670839307,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004527,
-							["damage_from"] = {
-								["Xink's Shredder <Moolatz>"] = true,
-							},
-							["targets"] = {
-							},
-							["total"] = 0.004527,
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.004527,
-							["fight_component"] = true,
-							["monster"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1670839308,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Coldwind Waste Huntress",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["aID"] = "26575",
-							["serial"] = "Creature-0-4446-571-16693-26575-000016E39E",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 11020.004527,
-							["start_time"] = 1670839308,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 248,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 248,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 248,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 4,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["classe"] = "DRUID",
-							["last_event"] = 1670839308,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[47920] = {
-										["activedamt"] = 1,
-										["id"] = 47920,
-										["targets"] = {
-										},
-										["uptime"] = 1,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[26991] = {
-										["activedamt"] = 1,
-										["id"] = 26991,
-										["targets"] = {
-										},
-										["uptime"] = 1,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53307] = {
-										["activedamt"] = 1,
-										["id"] = 53307,
-										["targets"] = {
-										},
-										["uptime"] = 1,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57940] = {
-										["activedamt"] = 1,
-										["id"] = 57940,
-										["targets"] = {
-										},
-										["uptime"] = 1,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["spell_cast"] = {
-								[47938] = 1,
-							},
-							["tipo"] = 4,
-							["aID"] = "",
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FBC2",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 248,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = "Player-4465-02B843FA",
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["tempo_start"] = 1670839307,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Coldwind Waste Huntress",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					11020, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["TotalElapsedCombatTime"] = 2771619.287,
-				["combat_counter"] = 15026,
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 11020.008375,
-							["Xink's Shredder <Moolatz>"] = 11020.005953,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 2771619.287,
-				["player_last_events"] = {
-				},
-				["instance_type"] = "none",
-				["CombatEndedAt"] = 2771619.287,
-				["data_inicio"] = "11:01:48",
-				["totals_grupo"] = {
-					11020, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "11:01:49",
-				["combat_id"] = 248,
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Coldwind Waste Huntress"] = 1,
-				},
-				["start_time"] = 2771618.07,
-				["TimeData"] = {
-				},
-				["contra"] = "Coldwind Waste Huntress",
-			}, -- [6]
-			{
-				{
-					["combatId"] = 247,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.004109,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Coldwind Waste Huntress"] = 13030,
-							},
-							["total"] = 13030.004109,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["on_hold"] = false,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.004109,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1670839302,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 3341.026694695169,
-							["custom"] = 0,
-							["last_event"] = 1670839301,
-							["damage_taken"] = 0.004109,
-							["start_time"] = 1670839297,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.002125,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Coldwind Waste Huntress"] = 13030,
-							},
-							["friendlyfire"] = {
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 2,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 13030.002125,
-							["on_hold"] = false,
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FBC2",
-							["dps_started"] = false,
-							["end_time"] = 1670839302,
-							["aID"] = "",
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[47921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 7330,
-										["targets"] = {
-											["Coldwind Waste Huntress"] = 7330,
-										},
-										["n_dmg"] = 7330,
-										["n_min"] = 7330,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 7330,
-										["c_max"] = 0,
-										["id"] = 47921,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47938] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 2955,
-										["targets"] = {
-											["Coldwind Waste Huntress"] = 5700,
-										},
-										["n_dmg"] = 5700,
-										["n_min"] = 2745,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 5700,
-										["c_max"] = 0,
-										["id"] = 47938,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PET",
-							["total"] = 13030.002125,
-							["last_dps"] = 3341.02618597722,
-							["custom"] = 0,
-							["last_event"] = 1670839301,
-							["damage_taken"] = 0.002125,
-							["start_time"] = 1670839297,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.002803,
-							["damage_from"] = {
-								["Xink's Shredder <Moolatz>"] = true,
-							},
-							["targets"] = {
-							},
-							["total"] = 0.002803,
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.002803,
-							["fight_component"] = true,
-							["monster"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1670839302,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Coldwind Waste Huntress",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["aID"] = "26575",
-							["serial"] = "Creature-0-4446-571-16693-26575-000016E389",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 13030.002803,
-							["start_time"] = 1670839302,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 247,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 247,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 247,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 20,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["classe"] = "DRUID",
-							["last_event"] = 1670839302,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[47920] = {
-										["activedamt"] = 1,
-										["id"] = 47920,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[26991] = {
-										["activedamt"] = 1,
-										["id"] = 26991,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53307] = {
-										["activedamt"] = 1,
-										["id"] = 53307,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57940] = {
-										["activedamt"] = 1,
-										["id"] = 57940,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["spell_cast"] = {
-								[47938] = 2,
-							},
-							["tipo"] = 4,
-							["aID"] = "",
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FBC2",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 247,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = "Player-4465-02B843FA",
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 2771617.686,
-				["tempo_start"] = 1670839297,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 15025,
-				["playing_solo"] = true,
-				["totals"] = {
-					13030, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					13030, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "11:01:43",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Coldwind Waste Huntress",
-				["TotalElapsedCombatTime"] = 5.033999999985099,
-				["CombatEndedAt"] = 2771613.62,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 13030.004109,
-							["Xink's Shredder <Moolatz>"] = 13030.002125,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 2771613.62,
-				["combat_id"] = 247,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "11:01:38",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Coldwind Waste Huntress"] = 1,
-				},
-				["start_time"] = 2771608.586,
-				["TimeData"] = {
-				},
-				["contra"] = "Coldwind Waste Huntress",
-			}, -- [7]
-			{
-				{
-					["combatId"] = 246,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.007545,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Coldwind Witch"] = 8241,
-							},
-							["friendlyfire"] = {
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 8241.007545,
-							["on_hold"] = false,
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FBC2",
-							["dps_started"] = false,
-							["end_time"] = 1670839258,
-							["aID"] = "",
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[47938] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4334,
-										["targets"] = {
-											["Coldwind Witch"] = 8241,
-										},
-										["n_dmg"] = 8241,
-										["n_min"] = 3907,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 8241,
-										["c_max"] = 0,
-										["id"] = 47938,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PET",
-							["total"] = 8241.007545,
-							["last_dps"] = 4416.402757419883,
-							["custom"] = 0,
-							["last_event"] = 1670839258,
-							["damage_taken"] = 0.007545,
-							["start_time"] = 1670839256,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.006868,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Coldwind Witch"] = 8241,
-							},
-							["total"] = 8241.006868,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["on_hold"] = false,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.006868,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1670839258,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 4416.402394611737,
-							["custom"] = 0,
-							["last_event"] = 1670839258,
-							["damage_taken"] = 0.006868,
-							["start_time"] = 1670839256,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00655,
-							["damage_from"] = {
-								["Xink's Shredder <Moolatz>"] = true,
-							},
-							["targets"] = {
-							},
-							["total"] = 0.00655,
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.00655,
-							["fight_component"] = true,
-							["monster"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1670839258,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Coldwind Witch",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Xink's Shredder"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["aID"] = "26577",
-							["serial"] = "Creature-0-4446-571-16693-26577-000016E3F1",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1670839257,
-							["damage_taken"] = 8241.00655,
-							["start_time"] = 1670839258,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 246,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 246,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 246,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 8,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["classe"] = "DRUID",
-							["last_event"] = 1670839258,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[47920] = {
-										["activedamt"] = 1,
-										["id"] = 47920,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[26991] = {
-										["activedamt"] = 1,
-										["id"] = 26991,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53307] = {
-										["activedamt"] = 1,
-										["id"] = 53307,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57940] = {
-										["activedamt"] = 1,
-										["id"] = 57940,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["spell_cast"] = {
-								[47938] = 1,
-							},
-							["tipo"] = 4,
-							["aID"] = "",
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FBC2",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 246,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = "Player-4465-02B843FA",
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 2771567.617,
-				["tempo_start"] = 1670839256,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 15024,
-				["playing_solo"] = true,
-				["totals"] = {
-					8241, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					8241, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "11:00:59",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Coldwind Witch",
-				["TotalElapsedCombatTime"] = 1.865999999921769,
-				["CombatEndedAt"] = 2771569.483,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 8241.006868,
-							["Xink's Shredder <Moolatz>"] = 8241.007545,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 2771569.483,
-				["combat_id"] = 246,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "11:00:57",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Coldwind Witch"] = 1,
-				},
-				["start_time"] = 2771567.617,
-				["TimeData"] = {
-				},
-				["contra"] = "Coldwind Witch",
-			}, -- [8]
-			{
-				{
-					["combatId"] = 245,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.00766,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Coldwind Waste Huntress"] = 11327,
-							},
-							["total"] = 11327.00766,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["on_hold"] = false,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.00766,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1670839251,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 3632.779878378743,
-							["custom"] = 0,
-							["last_event"] = 1670839251,
-							["damage_taken"] = 0.00766,
-							["start_time"] = 1670839248,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.005567,
-							["damage_from"] = {
-								["Coldwind Waste Huntress"] = true,
-							},
-							["targets"] = {
-								["Coldwind Waste Huntress"] = 11327,
-							},
-							["friendlyfire"] = {
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 2,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 11327.005567,
-							["on_hold"] = false,
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FBC2",
-							["dps_started"] = false,
-							["end_time"] = 1670839251,
-							["aID"] = "",
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[47921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4620,
-										["targets"] = {
-											["Coldwind Waste Huntress"] = 4620,
-										},
-										["n_dmg"] = 4620,
-										["n_min"] = 4620,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 4620,
-										["c_max"] = 0,
-										["id"] = 47921,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47938] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4005,
-										["targets"] = {
-											["Coldwind Waste Huntress"] = 6707,
-										},
-										["n_dmg"] = 6707,
-										["n_min"] = 2702,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 6707,
-										["c_max"] = 0,
-										["id"] = 47938,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PET",
-							["total"] = 11327.005567,
-							["last_dps"] = 3632.779207115113,
-							["custom"] = 0,
-							["last_event"] = 1670839251,
-							["damage_taken"] = 235.005567,
-							["start_time"] = 1670839248,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.006723,
-							["total"] = 235.006723,
-							["damage_from"] = {
-								["Xink's Shredder <Moolatz>"] = true,
-							},
-							["targets"] = {
-								["Xink's Shredder <Moolatz>"] = 235,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 235.006723,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1670839251,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Coldwind Waste Huntress",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 235,
-										["targets"] = {
-											["Xink's Shredder <Moolatz>"] = 235,
-										},
-										["n_dmg"] = 235,
-										["n_min"] = 235,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 235,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["aID"] = "26575",
-							["serial"] = "Creature-0-4446-571-16693-26575-000096E3CD",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1670839250,
-							["damage_taken"] = 11327.006723,
-							["start_time"] = 1670839250,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 245,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 245,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 245,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 12,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["classe"] = "DRUID",
-							["last_event"] = 1670839251,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[47920] = {
-										["activedamt"] = 1,
-										["id"] = 47920,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[26991] = {
-										["activedamt"] = 1,
-										["id"] = 26991,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53307] = {
-										["activedamt"] = 1,
-										["id"] = 53307,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57940] = {
-										["activedamt"] = 1,
-										["id"] = 57940,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["spell_cast"] = {
-								[47938] = 2,
-							},
-							["tipo"] = 4,
-							["aID"] = "",
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FBC2",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 245,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = "Player-4465-02B843FA",
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 2771559.049,
-				["tempo_start"] = 1670839248,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 15023,
-				["playing_solo"] = true,
-				["totals"] = {
-					11562, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					11327, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "11:00:52",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Coldwind Waste Huntress",
-				["TotalElapsedCombatTime"] = 3.117999999783933,
-				["CombatEndedAt"] = 2771562.167,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 11327.00766,
-							["Xink's Shredder <Moolatz>"] = 11327.005567,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 2771562.167,
-				["combat_id"] = 245,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "11:00:49",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Coldwind Waste Huntress"] = 1,
-				},
-				["start_time"] = 2771559.049,
-				["TimeData"] = {
-				},
-				["contra"] = "Coldwind Waste Huntress",
-			}, -- [9]
-			{
-				{
-					["combatId"] = 244,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004536,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Coldwind Waste Huntress"] = 12364,
-							},
-							["total"] = 12364.004536,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["on_hold"] = false,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.004536,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1670839233,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 2361.796473029216,
-							["custom"] = 0,
-							["last_event"] = 1670839232,
-							["damage_taken"] = 0.004536,
-							["start_time"] = 1670839227,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.007239,
-							["damage_from"] = {
-								["Coldwind Waste Huntress"] = true,
-							},
-							["targets"] = {
-								["Coldwind Waste Huntress"] = 12364,
-							},
-							["friendlyfire"] = {
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 12364.007239,
-							["on_hold"] = false,
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FB31",
-							["dps_started"] = false,
-							["end_time"] = 1670839233,
-							["aID"] = "",
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[47921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 5938,
-										["targets"] = {
-											["Coldwind Waste Huntress"] = 5938,
-										},
-										["n_dmg"] = 5938,
-										["n_min"] = 5938,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 5938,
-										["c_max"] = 0,
-										["id"] = 47921,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47938] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3266,
-										["targets"] = {
-											["Coldwind Waste Huntress"] = 6426,
-										},
-										["n_dmg"] = 6426,
-										["n_min"] = 3160,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 6426,
-										["c_max"] = 0,
-										["id"] = 47938,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PET",
-							["total"] = 12364.007239,
-							["last_dps"] = 2361.796989361594,
-							["custom"] = 0,
-							["last_event"] = 1670839232,
-							["damage_taken"] = 226.007239,
-							["start_time"] = 1670839227,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.007767,
-							["total"] = 226.007767,
-							["damage_from"] = {
-								["Xink's Shredder <Moolatz>"] = true,
-							},
-							["targets"] = {
-								["Xink's Shredder <Moolatz>"] = 226,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 226.007767,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1670839233,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Coldwind Waste Huntress",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 226,
-										["targets"] = {
-											["Xink's Shredder <Moolatz>"] = 226,
-										},
-										["n_dmg"] = 226,
-										["n_min"] = 226,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 226,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[49865] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 49865,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["aID"] = "26575",
-							["serial"] = "Creature-0-4446-571-16693-26575-000016E3CD",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1670839232,
-							["damage_taken"] = 12364.007767,
-							["start_time"] = 1670839232,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 244,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 244,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 244,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 24,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["classe"] = "DRUID",
-							["last_event"] = 1670839233,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[47920] = {
-										["activedamt"] = 1,
-										["id"] = 47920,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[26991] = {
-										["activedamt"] = 1,
-										["id"] = 26991,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53307] = {
-										["activedamt"] = 1,
-										["id"] = 53307,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57940] = {
-										["activedamt"] = 1,
-										["id"] = 57940,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["spell_cast"] = {
-								[47938] = 2,
-							},
-							["tipo"] = 4,
-							["aID"] = "",
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FB31",
-							["last_event"] = 0,
-						}, -- [2]
-						{
-							["monster"] = true,
-							["nome"] = "Coldwind Waste Huntress",
-							["flag_original"] = 68168,
-							["spell_cast"] = {
-								[49865] = 1,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4446-571-16693-26575-000016E3CD",
-							["aID"] = "26575",
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 244,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = "Player-4465-02B843FA",
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 2771537.915,
-				["tempo_start"] = 1670839227,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 15022,
-				["playing_solo"] = true,
-				["totals"] = {
-					12590, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					12364, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "11:00:34",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Coldwind Waste Huntress",
-				["TotalElapsedCombatTime"] = 6.501000000163913,
-				["CombatEndedAt"] = 2771544.416,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 12364.004536,
-							["Xink's Shredder <Moolatz>"] = 12364.007239,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 2771544.416,
-				["combat_id"] = 244,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "11:00:27",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Coldwind Waste Huntress"] = 1,
-				},
-				["start_time"] = 2771537.915,
-				["TimeData"] = {
-				},
-				["contra"] = "Coldwind Waste Huntress",
-			}, -- [10]
-			{
-				{
-					["combatId"] = 243,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.008114,
-							["total"] = 4648.008114,
-							["damage_from"] = {
-								["Xink's Shredder <Moolatz>"] = true,
-							},
-							["targets"] = {
-								["Xink's Shredder <Moolatz>"] = 4648,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 4648.008114,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1670839210,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Coldwind Witch",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 233,
-										["targets"] = {
-											["Xink's Shredder <Moolatz>"] = 1266,
-										},
-										["n_dmg"] = 1266,
-										["n_min"] = 182,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 1266,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[51877] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 901,
-										["targets"] = {
-											["Xink's Shredder <Moolatz>"] = 3382,
-										},
-										["n_dmg"] = 3382,
-										["n_min"] = 790,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 3382,
-										["c_max"] = 0,
-										["id"] = 51877,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 4,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["aID"] = "26577",
-							["serial"] = "Creature-0-4446-571-16693-26577-000016E411",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1670839208,
-							["damage_taken"] = 24034.008114,
-							["start_time"] = 1670839182,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.00306,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Mistress of the Coldwind"] = 54223,
-								["Coldwind Waste Huntress"] = 11198,
-								["Coldwind Witch"] = 24034,
-							},
-							["total"] = 89455.00306,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["on_hold"] = false,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.00306,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1670839210,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 3262.63779487174,
-							["custom"] = 0,
-							["last_event"] = 1670839209,
-							["damage_taken"] = 0.00306,
-							["start_time"] = 1670839189,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.007595,
-							["damage_from"] = {
-								["Mistress of the Coldwind"] = true,
-								["Coldwind Waste Huntress"] = true,
-								["Coldwind Witch"] = true,
-							},
-							["targets"] = {
-								["Mistress of the Coldwind"] = 54223,
-								["Coldwind Waste Huntress"] = 11198,
-								["Coldwind Witch"] = 24034,
-							},
-							["friendlyfire"] = {
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 89455.007595,
-							["on_hold"] = false,
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FB31",
-							["dps_started"] = false,
-							["end_time"] = 1670839210,
-							["aID"] = "",
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[47921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 7359,
-										["targets"] = {
-											["Mistress of the Coldwind"] = 19645,
-											["Coldwind Waste Huntress"] = 11198,
-											["Coldwind Witch"] = 24034,
-										},
-										["n_dmg"] = 54877,
-										["n_min"] = 5280,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 54877,
-										["c_max"] = 0,
-										["id"] = 47921,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 9,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47938] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4038,
-										["targets"] = {
-											["Mistress of the Coldwind"] = 34578,
-										},
-										["n_dmg"] = 34578,
-										["n_min"] = 2805,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 34578,
-										["c_max"] = 0,
-										["id"] = 47938,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 10,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PET",
-							["total"] = 89455.007595,
-							["last_dps"] = 3262.637960274031,
-							["custom"] = 0,
-							["last_event"] = 1670839209,
-							["damage_taken"] = 20892.007595,
-							["start_time"] = 1670839189,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [3]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.006185,
-							["total"] = 14869.006185,
-							["damage_from"] = {
-								["Xink's Shredder <Moolatz>"] = true,
-							},
-							["targets"] = {
-								["Xink's Shredder <Moolatz>"] = 14869,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 14869.006185,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1670839210,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Mistress of the Coldwind",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 1447,
-										["targets"] = {
-											["Xink's Shredder"] = 0,
-											["Xink's Shredder <Moolatz>"] = 3862,
-										},
-										["n_dmg"] = 3862,
-										["n_min"] = 1195,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 3862,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[38210] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 38210,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[52814] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 2268,
-										["targets"] = {
-											["Xink's Shredder <Moolatz>"] = 11007,
-										},
-										["n_dmg"] = 11007,
-										["n_min"] = 2096,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 11007,
-										["c_max"] = 0,
-										["id"] = 52814,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 5,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["aID"] = "26578",
-							["serial"] = "Creature-0-4446-571-16693-26578-000016E310",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1670839207,
-							["damage_taken"] = 54223.006185,
-							["start_time"] = 1670839190,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [4]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.008244,
-							["total"] = 1375.008244,
-							["damage_from"] = {
-								["Xink's Shredder <Moolatz>"] = true,
-							},
-							["targets"] = {
-								["Xink's Shredder <Moolatz>"] = 1375,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1375.008244,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1670839210,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Coldwind Waste Huntress",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 254,
-										["targets"] = {
-											["Xink's Shredder"] = 0,
-											["Xink's Shredder <Moolatz>"] = 1375,
-										},
-										["n_dmg"] = 1375,
-										["n_min"] = 200,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 1375,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[49865] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 49865,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["aID"] = "26575",
-							["serial"] = "Creature-0-4446-571-16693-26575-000016E3FC",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1670839207,
-							["damage_taken"] = 11198.008244,
-							["start_time"] = 1670839195,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [5]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 243,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["totalover"] = 0.005024,
-							["total_without_pet"] = 0.005024,
-							["total"] = 4567.005024,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 2,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02B843FA",
-							["totalabsorb"] = 0.005024,
-							["last_hps"] = 184.5180002411925,
-							["targets"] = {
-								["Xink's Shredder <Moolatz>"] = 4567,
-							},
-							["totalover_without_pet"] = 0.005024,
-							["healing_taken"] = 0.005024,
-							["end_time"] = 1670839210,
-							["healing_from"] = {
-							},
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1670839206,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "4465-02B843FA",
-							["totaldenied"] = 0.005024,
-							["delay"] = 0,
-							["last_event"] = 1670839206,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PET",
-							["totalover"] = 0.007856,
-							["total_without_pet"] = 4567.007856,
-							["total"] = 4567.007856,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FB31",
-							["totalabsorb"] = 0.007856,
-							["last_hps"] = 184.5181146608119,
-							["targets"] = {
-								["Xink's Shredder <Moolatz>"] = 4567,
-							},
-							["totalover_without_pet"] = 0.007856,
-							["healing_taken"] = 4567.007856,
-							["start_time"] = 1670839206,
-							["fight_component"] = true,
-							["end_time"] = 1670839210,
-							["healing_from"] = {
-								["Xink's Shredder <Moolatz>"] = true,
-							},
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[47966] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 4567,
-										["targets"] = {
-											["Xink's Shredder <Moolatz>"] = 4567,
-										},
-										["n_min"] = 4567,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 4567,
-										["c_max"] = 0,
-										["id"] = 47966,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 4567,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "",
-							["totaldenied"] = 0.007856,
-							["delay"] = 0,
-							["last_event"] = 1670839206,
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 243,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 243,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 112,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["classe"] = "DRUID",
-							["last_event"] = 1670839210,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[47920] = {
-										["activedamt"] = 1,
-										["id"] = 47920,
-										["targets"] = {
-										},
-										["uptime"] = 28,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[26991] = {
-										["activedamt"] = 1,
-										["id"] = 26991,
-										["targets"] = {
-										},
-										["uptime"] = 28,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53307] = {
-										["activedamt"] = 1,
-										["id"] = 53307,
-										["targets"] = {
-										},
-										["uptime"] = 28,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57940] = {
-										["activedamt"] = 1,
-										["id"] = 57940,
-										["targets"] = {
-										},
-										["uptime"] = 28,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["classe"] = "PET",
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["spell_cast"] = {
-								[47921] = 3,
-								[47938] = 10,
-								[47966] = 1,
-							},
-							["tipo"] = 4,
-							["aID"] = "",
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FB31",
-							["last_event"] = 0,
-						}, -- [2]
-						{
-							["monster"] = true,
-							["nome"] = "Mistress of the Coldwind",
-							["flag_original"] = 68168,
-							["spell_cast"] = {
-								[38210] = 1,
-								[52814] = 5,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4446-571-16693-26578-000016E310",
-							["aID"] = "26578",
-						}, -- [3]
-						{
-							["monster"] = true,
-							["nome"] = "Coldwind Waste Huntress",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[49865] = 1,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4446-571-16693-26575-000016E3FC",
-							["aID"] = "26575",
-						}, -- [4]
-						{
-							["monster"] = true,
-							["nome"] = "Coldwind Witch",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[51877] = 4,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4446-571-16693-26577-000016E46F",
-							["aID"] = "26577",
-						}, -- [5]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 243,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = "Player-4465-02B843FA",
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["tempo_start"] = 1670839182,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Coldwind Witch",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					110347, -- [1]
-					4566.984995999999, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["TotalElapsedCombatTime"] = 2771520.897,
-				["combat_counter"] = 15021,
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Moolatz"] = 4567.005024,
-							["Xink's Shredder <Moolatz>"] = 4567.007856,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 89455.00306,
-							["Xink's Shredder <Moolatz>"] = 89455.007595,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 2771520.897,
-				["player_last_events"] = {
-				},
-				["instance_type"] = "none",
-				["CombatEndedAt"] = 2771520.897,
-				["data_inicio"] = "10:59:43",
-				["totals_grupo"] = {
-					89455, -- [1]
-					4567, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "11:00:10",
-				["combat_id"] = 243,
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Mistress of the Coldwind"] = 1,
-					["Coldwind Waste Huntress"] = 1,
-					["Coldwind Witch"] = 2,
-				},
-				["start_time"] = 2771493.062,
-				["TimeData"] = {
-				},
-				["contra"] = "Coldwind Witch",
 			}, -- [11]
 			{
 				{
-					["combatId"] = 242,
 					["tipo"] = 2,
+					["combatId"] = 263,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.00815,
+							["totalabsorbed"] = 0.001686,
 							["damage_from"] = {
+								["Ice Heart Jormungar Feeder"] = true,
 							},
 							["targets"] = {
-								["Coldwind Waste Huntress"] = 11318,
+								["Ice Heart Jormungar Feeder"] = 11145,
 							},
-							["total"] = 11318.00815,
+							["serial"] = "Player-4465-02B843FA",
 							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
 							},
-							["on_hold"] = false,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.00815,
 							["colocacao"] = 1,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 11145.001686,
+							["aID"] = "4465-02B843FA",
+							["dps_started"] = false,
+							["total"] = 11145.001686,
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1670839163,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
+							["last_event"] = 1670958480,
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 7301.940742812963,
-							["custom"] = 0,
-							["last_event"] = 1670839162,
-							["damage_taken"] = 0.00815,
-							["start_time"] = 1670839161,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.007885,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Coldwind Waste Huntress"] = 11318,
-							},
-							["friendlyfire"] = {
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 2,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 11318.007885,
-							["on_hold"] = false,
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FB31",
-							["dps_started"] = false,
-							["end_time"] = 1670839163,
-							["aID"] = "",
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[47921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 7311,
-										["targets"] = {
-											["Coldwind Waste Huntress"] = 7311,
-										},
-										["n_dmg"] = 7311,
-										["n_min"] = 7311,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 7311,
-										["c_max"] = 0,
-										["id"] = 47921,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47938] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4007,
-										["targets"] = {
-											["Coldwind Waste Huntress"] = 4007,
-										},
-										["n_dmg"] = 4007,
-										["n_min"] = 4007,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 4007,
-										["c_max"] = 0,
-										["id"] = 47938,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PET",
-							["total"] = 11318.007885,
-							["last_dps"] = 7301.94057184522,
-							["custom"] = 0,
-							["last_event"] = 1670839162,
-							["damage_taken"] = 0.007885,
-							["start_time"] = 1670839161,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003785,
-							["damage_from"] = {
-								["Xink's Shredder <Moolatz>"] = true,
-							},
-							["targets"] = {
-							},
-							["total"] = 0.003785,
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.003785,
-							["fight_component"] = true,
-							["monster"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1670839163,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Coldwind Waste Huntress",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["aID"] = "26575",
-							["serial"] = "Creature-0-4446-571-16693-26575-000016E416",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 11318.003785,
-							["start_time"] = 1670839163,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 242,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 242,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 242,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 8,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["classe"] = "DRUID",
-							["last_event"] = 1670839163,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[47920] = {
-										["activedamt"] = 1,
-										["id"] = 47920,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[26991] = {
-										["activedamt"] = 1,
-										["id"] = 26991,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53307] = {
-										["activedamt"] = 1,
-										["id"] = 53307,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57940] = {
-										["activedamt"] = 1,
-										["id"] = 57940,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["spell_cast"] = {
-								[47938] = 1,
-							},
-							["tipo"] = 4,
-							["aID"] = "",
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FB31",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 242,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = "Player-4465-02B843FA",
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 2771490.928,
-				["tempo_start"] = 1670839161,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 15020,
-				["playing_solo"] = true,
-				["totals"] = {
-					11318, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					11318, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "10:59:23",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Coldwind Waste Huntress",
-				["TotalElapsedCombatTime"] = 1.916999999899417,
-				["CombatEndedAt"] = 2771473.878,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 11318.00815,
-							["Xink's Shredder <Moolatz>"] = 11318.007885,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 2771473.878,
-				["combat_id"] = 242,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "10:59:21",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Coldwind Waste Huntress"] = 1,
-				},
-				["start_time"] = 2771471.961,
-				["TimeData"] = {
-				},
-				["contra"] = "Coldwind Waste Huntress",
-			}, -- [12]
-			{
-				{
-					["combatId"] = 241,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006595,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Coldwind Waste Huntress"] = 25909,
-							},
-							["total"] = 25909.006595,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["on_hold"] = false,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.006595,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1670839154,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 3954.969713797649,
-							["custom"] = 0,
-							["last_event"] = 1670839154,
-							["damage_taken"] = 0.006595,
-							["start_time"] = 1670839147,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.004946,
-							["damage_from"] = {
-								["Coldwind Waste Huntress"] = true,
-							},
-							["targets"] = {
-								["Coldwind Waste Huntress"] = 25909,
-							},
-							["friendlyfire"] = {
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 2,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 25909.004946,
-							["on_hold"] = false,
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FB31",
-							["dps_started"] = false,
-							["end_time"] = 1670839154,
-							["aID"] = "",
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[47921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 5622,
-										["targets"] = {
-											["Coldwind Waste Huntress"] = 10609,
-										},
-										["n_dmg"] = 10609,
-										["n_min"] = 4987,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 10609,
-										["c_max"] = 0,
-										["id"] = 47921,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47938] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4118,
-										["targets"] = {
-											["Coldwind Waste Huntress"] = 15300,
-										},
-										["n_dmg"] = 15300,
-										["n_min"] = 3601,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 15300,
-										["c_max"] = 0,
-										["id"] = 47938,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PET",
-							["total"] = 25909.004946,
-							["last_dps"] = 3954.969462080354,
-							["custom"] = 0,
-							["last_event"] = 1670839154,
-							["damage_taken"] = 827.004946,
-							["start_time"] = 1670839147,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003058,
-							["total"] = 827.003058,
-							["damage_from"] = {
-								["Xink's Shredder <Moolatz>"] = true,
-							},
-							["targets"] = {
-								["Xink's Shredder <Moolatz>"] = 827,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 827.003058,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1670839154,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Coldwind Waste Huntress",
-							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_amt"] = 5,
+										["b_amt"] = 1,
+										["c_dmg"] = 2760,
 										["g_amt"] = 0,
-										["n_max"] = 283,
+										["n_max"] = 250,
 										["targets"] = {
-											["Xink's Shredder <Moolatz>"] = 827,
+											["Ice Heart Jormungar Feeder"] = 3908,
 										},
-										["n_dmg"] = 827,
-										["n_min"] = 262,
+										["n_dmg"] = 1148,
+										["n_min"] = 174,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 827,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[49865] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 49865,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["aID"] = "26575",
-							["serial"] = "Creature-0-4446-571-16693-26575-000016E4E4",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1670839153,
-							["damage_taken"] = 25909.003058,
-							["start_time"] = 1670839149,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 241,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 241,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 241,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 28,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["classe"] = "DRUID",
-							["last_event"] = 1670839154,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[47920] = {
-										["activedamt"] = 1,
-										["id"] = 47920,
-										["targets"] = {
-										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[26991] = {
-										["activedamt"] = 1,
-										["id"] = 26991,
-										["targets"] = {
-										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53307] = {
-										["activedamt"] = 1,
-										["id"] = 53307,
-										["targets"] = {
-										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57940] = {
-										["activedamt"] = 1,
-										["id"] = 57940,
-										["targets"] = {
-										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["spell_cast"] = {
-								[47938] = 4,
-							},
-							["tipo"] = 4,
-							["aID"] = "",
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FB31",
-							["last_event"] = 0,
-						}, -- [2]
-						{
-							["monster"] = true,
-							["nome"] = "Coldwind Waste Huntress",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[49865] = 1,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4446-571-16693-26575-000016E44F",
-							["aID"] = "26575",
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 241,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = "Player-4465-02B843FA",
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 2771458.393,
-				["tempo_start"] = 1670839147,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 15019,
-				["playing_solo"] = true,
-				["totals"] = {
-					26736, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					25909, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "10:59:14",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Coldwind Waste Huntress",
-				["TotalElapsedCombatTime"] = 6.5519999996759,
-				["CombatEndedAt"] = 2771464.945,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 25909.006595,
-							["Xink's Shredder <Moolatz>"] = 25909.004946,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 2771464.945,
-				["combat_id"] = 241,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "10:59:08",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Coldwind Waste Huntress"] = 2,
-				},
-				["start_time"] = 2771458.293,
-				["TimeData"] = {
-				},
-				["contra"] = "Coldwind Waste Huntress",
-			}, -- [13]
-			{
-				{
-					["combatId"] = 240,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003234,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Coldwind Waste Huntress"] = 10875,
-							},
-							["total"] = 10875.003234,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["on_hold"] = false,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.003234,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1670839104,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 2696.504644985498,
-							["custom"] = 0,
-							["last_event"] = 1670839102,
-							["damage_taken"] = 0.003234,
-							["start_time"] = 1670839098,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.006464,
-							["damage_from"] = {
-								["Coldwind Waste Huntress"] = true,
-							},
-							["targets"] = {
-								["Coldwind Waste Huntress"] = 10875,
-							},
-							["friendlyfire"] = {
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 10875.006464,
-							["on_hold"] = false,
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FB31",
-							["dps_started"] = false,
-							["end_time"] = 1670839104,
-							["aID"] = "",
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[47921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 6475,
-										["targets"] = {
-											["Coldwind Waste Huntress"] = 6475,
-										},
-										["n_dmg"] = 6475,
-										["n_min"] = 6475,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 6475,
-										["c_max"] = 0,
-										["id"] = 47921,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47938] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4400,
-										["targets"] = {
-											["Coldwind Waste Huntress"] = 4400,
-										},
-										["n_dmg"] = 4400,
-										["n_min"] = 4400,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 4400,
-										["c_max"] = 0,
-										["id"] = 47938,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["classe"] = "PET",
-							["total"] = 10875.006464,
-							["last_dps"] = 2696.505445878134,
-							["custom"] = 0,
-							["last_event"] = 1670839102,
-							["damage_taken"] = 559.006464,
-							["start_time"] = 1670839098,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.004251,
-							["total"] = 559.0042510000001,
-							["damage_from"] = {
-								["Xink's Shredder <Moolatz>"] = true,
-							},
-							["targets"] = {
-								["Xink's Shredder <Moolatz>"] = 559,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 559.0042510000001,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1670839104,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Coldwind Waste Huntress",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 283,
-										["targets"] = {
-											["Xink's Shredder <Moolatz>"] = 559,
-										},
-										["n_dmg"] = 559,
-										["n_min"] = 276,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 559,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[49865] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 49865,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["aID"] = "26575",
-							["serial"] = "Creature-0-4446-571-16693-26575-000016E2AC",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1670839102,
-							["damage_taken"] = 10875.004251,
-							["start_time"] = 1670839100,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 240,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 240,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 240,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 24,
-							["pets"] = {
-								"Xink's Shredder <Moolatz>", -- [1]
-							},
-							["classe"] = "DRUID",
-							["last_event"] = 1670839104,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[47920] = {
-										["activedamt"] = 1,
-										["id"] = 47920,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[26991] = {
-										["activedamt"] = 1,
-										["id"] = 26991,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53307] = {
-										["activedamt"] = 1,
-										["id"] = 53307,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57940] = {
-										["activedamt"] = 1,
-										["id"] = 57940,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [1]
-						{
-							["monster"] = true,
-							["nome"] = "Coldwind Waste Huntress",
-							["flag_original"] = 68168,
-							["spell_cast"] = {
-								[49865] = 1,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4446-571-16693-26575-000016E2AC",
-							["aID"] = "26575",
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Moolatz",
-							["nome"] = "Xink's Shredder <Moolatz>",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["spell_cast"] = {
-								[47938] = 1,
-							},
-							["tipo"] = 4,
-							["aID"] = "",
-							["serial"] = "Vehicle-0-4446-571-16693-27061-000016FB31",
-							["last_event"] = 0,
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 240,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = "Player-4465-02B843FA",
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 2771409.457,
-				["tempo_start"] = 1670839098,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 15018,
-				["playing_solo"] = true,
-				["totals"] = {
-					11434, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					10875, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "10:58:24",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Coldwind Waste Huntress",
-				["TotalElapsedCombatTime"] = 5.25,
-				["CombatEndedAt"] = 2771414.707,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 10875.003234,
-							["Xink's Shredder <Moolatz>"] = 10875.006464,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 2771414.707,
-				["combat_id"] = 240,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "10:58:19",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Coldwind Waste Huntress"] = 1,
-				},
-				["start_time"] = 2771409.457,
-				["TimeData"] = {
-				},
-				["contra"] = "Coldwind Waste Huntress",
-			}, -- [14]
-			{
-				{
-					["combatId"] = 239,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005811,
-							["damage_from"] = {
-								["Dragonbone Condor"] = true,
-							},
-							["targets"] = {
-								["Dragonbone Condor"] = 11852,
-							},
-							["total"] = 11852.005811,
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 11852.005811,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1670838960,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 1754,
-										["g_amt"] = 0,
-										["n_max"] = 290,
-										["targets"] = {
-											["Dragonbone Condor"] = 2044,
-										},
-										["n_dmg"] = 290,
-										["n_min"] = 290,
-										["g_dmg"] = 0,
-										["counter"] = 7,
+										["counter"] = 10,
 										["ChartData"] = {
-											[14] = 540,
-											[17] = 2044,
+											[5] = 2454,
+											[8] = 3388,
 										},
-										["total"] = 2044,
-										["c_max"] = 645,
-										["a_dmg"] = 0,
+										["total"] = 3908,
+										["c_max"] = 580,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 2,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["PARRY"] = 1,
-										["c_min"] = 540,
+										["a_dmg"] = 0,
+										["c_min"] = 520,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 174,
 										["r_amt"] = 0,
 									}, -- [1]
 									[48565] = {
@@ -7137,23 +9577,22 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 1005,
+										["n_max"] = 1007,
 										["targets"] = {
-											["Dragonbone Condor"] = 1005,
+											["Ice Heart Jormungar Feeder"] = 1007,
 										},
-										["n_dmg"] = 1005,
-										["n_min"] = 1005,
+										["n_dmg"] = 1007,
+										["n_min"] = 1007,
 										["g_dmg"] = 0,
-										["counter"] = 2,
+										["counter"] = 1,
 										["ChartData"] = {
-											[14] = 1005,
-											[17] = 1005,
+											[5] = 1007,
+											[8] = 1007,
 										},
-										["total"] = 1005,
+										["total"] = 1007,
 										["c_max"] = 0,
 										["id"] = 48565,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
@@ -7168,29 +9607,29 @@ _detalhes_database = {
 									[48569] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 1339,
+										["c_dmg"] = 1191,
 										["g_amt"] = 0,
-										["n_max"] = 598,
+										["n_max"] = 562,
 										["targets"] = {
-											["Dragonbone Condor"] = 1937,
+											["Ice Heart Jormungar Feeder"] = 1753,
 										},
-										["n_dmg"] = 598,
-										["n_min"] = 598,
+										["n_dmg"] = 562,
+										["n_min"] = 562,
 										["g_dmg"] = 0,
-										["counter"] = 3,
+										["counter"] = 2,
 										["ChartData"] = {
-											[17] = 598,
+											[5] = 1753,
+											[8] = 1753,
 										},
-										["total"] = 1937,
-										["c_max"] = 1339,
+										["total"] = 1753,
+										["c_max"] = 1191,
 										["id"] = 48569,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 1339,
+										["c_min"] = 1191,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
@@ -7204,18 +9643,852 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 897,
 										["targets"] = {
-											["Dragonbone Condor"] = 1194,
+											["Ice Heart Jormungar Feeder"] = 2092,
 										},
-										["n_dmg"] = 1194,
-										["n_min"] = 297,
+										["n_dmg"] = 2092,
+										["n_min"] = 298,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[5] = 1195,
+											[8] = 2092,
+										},
+										["total"] = 2092,
+										["c_max"] = 0,
+										["id"] = 48573,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[53307] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 150,
+										},
+										["n_dmg"] = 150,
+										["n_min"] = 75,
 										["g_dmg"] = 0,
 										["counter"] = 2,
 										["ChartData"] = {
-											[17] = 297,
+											[5] = 75,
+											[8] = 150,
 										},
-										["total"] = 1194,
+										["total"] = 150,
 										["c_max"] = 0,
+										["id"] = 53307,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[48576] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2235,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 2235,
+										},
+										["n_dmg"] = 2235,
+										["n_min"] = 2235,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 2235,
+										["c_max"] = 0,
+										["id"] = 48576,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["last_dps"] = 1046.380779825926,
+							["end_time"] = 1670958482,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 550.0016860000001,
+							["start_time"] = 1670958471,
+							["delay"] = 0,
+							["classe"] = "DRUID",
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007134,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 550,
+							},
+							["serial"] = "Creature-0-4446-571-16687-26358-000018CD3B",
+							["pets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["aID"] = "26358",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 550.007134,
+							["end_time"] = 1670958482,
+							["monster"] = true,
+							["total"] = 550.007134,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1670958480,
+							["nome"] = "Ice Heart Jormungar Feeder",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 291,
+										["targets"] = {
+											["Moolatz"] = 550,
+										},
+										["n_dmg"] = 550,
+										["n_min"] = 259,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 550,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 3,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["fight_component"] = true,
+							["on_hold"] = false,
+							["damage_taken"] = 11145.007134,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["start_time"] = 1670958474,
+							["delay"] = 0,
+							["classe"] = "UNKNOW",
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 263,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+								["Moolatz"] = 468,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["aID"] = "4465-02B843FA",
+							["totalover"] = 468.008676,
+							["total_without_pet"] = 652.008676,
+							["total"] = 652.008676,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02B843FA",
+							["totalabsorb"] = 0.008676,
+							["last_hps"] = 61.21572396917352,
+							["targets"] = {
+								["Moolatz"] = 652,
+							},
+							["totalover_without_pet"] = 0.008676,
+							["healing_taken"] = 652.008676,
+							["fight_component"] = true,
+							["end_time"] = 1670958482,
+							["classe"] = "DRUID",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[34299] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Moolatz"] = 468,
+										},
+										["n_max"] = 550,
+										["targets"] = {
+											["Moolatz"] = 652,
+										},
+										["n_min"] = 102,
+										["counter"] = 2,
+										["overheal"] = 468,
+										["total"] = 652,
+										["c_max"] = 0,
+										["id"] = 34299,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 652,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
+							["heal_enemy_amt"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1670958480,
+							["start_time"] = 1670958472,
+							["totaldenied"] = 0.008676,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 263,
+					["_ActorTable"] = {
+						{
+							["received"] = 0.006004,
+							["resource"] = 0.006004,
+							["targets"] = {
+								["Moolatz"] = 0,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "DRUID",
+							["passiveover"] = 0.006004,
+							["fight_component"] = true,
+							["total"] = 0.006004,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[68285] = {
+										["total"] = 0,
+										["id"] = 68285,
+										["totalover"] = 1512,
+										["targets"] = {
+											["Moolatz"] = 0,
+										},
+										["counter"] = 2,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["alternatepower"] = 0.006004,
+							["last_event"] = 1670958480,
+							["aID"] = "4465-02B843FA",
+							["tipo"] = 3,
+							["serial"] = "Player-4465-02B843FA",
+							["totalover"] = 1512.006004,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 263,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[48565] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 9,
+										["id"] = 48565,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[48573] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 8,
 										["id"] = 48573,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[16857] = {
+										["activedamt"] = -1,
+										["id"] = 16857,
+										["targets"] = {
+										},
+										["actived_at"] = 1670958480,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 94,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[48420] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 11,
+										["id"] = 48420,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[48848] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 5,
+										["id"] = 48848,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[768] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 11,
+										["id"] = 768,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[377749] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 11,
+										["id"] = 377749,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[57940] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 11,
+										["id"] = 57940,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[24932] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 11,
+										["id"] = 24932,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[26991] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 11,
+										["id"] = 26991,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[53307] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 11,
+										["id"] = 53307,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[69369] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 2,
+										["id"] = 69369,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[48834] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = 48834,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 17,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[48569] = 2,
+								[48573] = 1,
+								[48576] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1670958482,
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["nome"] = "Moolatz",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 263,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = "Player-4465-02B843FA",
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 2890935.796,
+				["tempo_start"] = 1670958471,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					11695, -- [1]
+					652, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:08:02",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Ice Heart Jormungar Feeder",
+				["TotalElapsedCombatTime"] = 2890794.223,
+				["CombatEndedAt"] = 2890794.223,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:07:52",
+				["end_time"] = 2890794.223,
+				["combat_id"] = 263,
+				["frags"] = {
+					["Ice Heart Jormungar Feeder"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 15043,
+				["totals_grupo"] = {
+					11145, -- [1]
+					652, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 2890783.572,
+				["contra"] = "Ice Heart Jormungar Feeder",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Moolatz"] = 652.008676,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 11145.001686,
+						}, -- [1]
+					},
+				},
+			}, -- [12]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 262,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.005387,
+							["damage_from"] = {
+								["Ice Heart Jormungar Feeder"] = true,
+							},
+							["targets"] = {
+								["Ice Heart Jormungar Feeder"] = 9937,
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 9937.005387000001,
+							["aID"] = "4465-02B843FA",
+							["dps_started"] = false,
+							["total"] = 9937.005387000001,
+							["on_hold"] = false,
+							["last_event"] = 1670958459,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 295,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 785,
+										},
+										["n_dmg"] = 785,
+										["n_min"] = 244,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 785,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[48565] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 952,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 952,
+										},
+										["n_dmg"] = 952,
+										["n_min"] = 952,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 952,
+										["c_max"] = 0,
+										["id"] = 48565,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[48569] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1373,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 1373,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 1373,
+										["c_max"] = 1373,
+										["id"] = 48569,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 1373,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[48573] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 671,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 671,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 671,
+										["c_max"] = 671,
+										["id"] = 48573,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 671,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[53307] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 74,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 148,
+										},
+										["n_dmg"] = 148,
+										["n_min"] = 74,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 148,
+										["c_max"] = 0,
+										["id"] = 53307,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[48576] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 6008,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 6008,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 6008,
+										["c_max"] = 6008,
+										["id"] = 48576,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 6008,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["end_time"] = 1670958460,
+							["last_dps"] = 3168.68794234339,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 500.005387,
+							["start_time"] = 1670958456,
+							["delay"] = 0,
+							["friendlyfire_total"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.002584,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 500,
+							},
+							["serial"] = "Creature-0-4446-571-16687-26358-000018C82F",
+							["pets"] = {
+							},
+							["aID"] = "26358",
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 500.002584,
+							["damage_taken"] = 9937.002584,
+							["monster"] = true,
+							["end_time"] = 1670958460,
+							["on_hold"] = false,
+							["last_event"] = 1670958459,
+							["nome"] = "Ice Heart Jormungar Feeder",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 282,
+										["targets"] = {
+											["Moolatz"] = 500,
+										},
+										["n_dmg"] = 500,
+										["n_min"] = 218,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 500,
+										["c_max"] = 0,
+										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
@@ -7227,6 +10500,614 @@ _detalhes_database = {
 										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["start_time"] = 1670958457,
+							["delay"] = 0,
+							["total"] = 500.002584,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 262,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+								["Moolatz"] = 277,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["aID"] = "4465-02B843FA",
+							["totalover"] = 277.00341,
+							["total_without_pet"] = 282.00341,
+							["total"] = 282.00341,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02B843FA",
+							["totalabsorb"] = 0.00341,
+							["last_hps"] = 248.2424383933067,
+							["targets"] = {
+								["Moolatz"] = 282,
+							},
+							["totalover_without_pet"] = 0.00341,
+							["healing_taken"] = 282.00341,
+							["fight_component"] = true,
+							["end_time"] = 1670958460,
+							["classe"] = "DRUID",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[34299] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Moolatz"] = 277,
+										},
+										["n_max"] = 282,
+										["targets"] = {
+											["Moolatz"] = 282,
+										},
+										["n_min"] = 282,
+										["counter"] = 1,
+										["overheal"] = 277,
+										["total"] = 282,
+										["c_max"] = 0,
+										["id"] = 34299,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 282,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
+							["heal_enemy_amt"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1670958457,
+							["start_time"] = 1670958457,
+							["totaldenied"] = 0.00341,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 262,
+					["_ActorTable"] = {
+						{
+							["received"] = 60.007638,
+							["resource"] = 0.007638,
+							["targets"] = {
+								["Moolatz"] = 60,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "DRUID",
+							["passiveover"] = 0.007638,
+							["fight_component"] = true,
+							["total"] = 60.007638,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[68285] = {
+										["total"] = 0,
+										["id"] = 68285,
+										["totalover"] = 756,
+										["targets"] = {
+											["Moolatz"] = 0,
+										},
+										["counter"] = 1,
+									},
+									[51178] = {
+										["total"] = 60,
+										["id"] = 51178,
+										["totalover"] = 0,
+										["targets"] = {
+											["Moolatz"] = 60,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["alternatepower"] = 0.007638,
+							["last_event"] = 1670958458,
+							["aID"] = "4465-02B843FA",
+							["tipo"] = 3,
+							["serial"] = "Player-4465-02B843FA",
+							["totalover"] = 756.007638,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 262,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[48565] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 3,
+										["id"] = 48565,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[48573] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 2,
+										["id"] = 48573,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[16857] = {
+										["activedamt"] = -1,
+										["id"] = 16857,
+										["targets"] = {
+										},
+										["actived_at"] = 1670958459,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 35,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[50212] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 2,
+										["id"] = 50212,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[48420] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 4,
+										["id"] = 48420,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[48848] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 4,
+										["id"] = 48848,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[768] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 4,
+										["id"] = 768,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[377749] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 4,
+										["id"] = 377749,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[57940] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 4,
+										["id"] = 57940,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[24932] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 4,
+										["id"] = 24932,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[26991] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 4,
+										["id"] = 26991,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[53307] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 4,
+										["id"] = 53307,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[69369] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 1,
+										["id"] = 69369,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 5,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[48569] = 1,
+								[50212] = 1,
+								[48573] = 1,
+								[48576] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1670958460,
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["nome"] = "Moolatz",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 262,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = "Player-4465-02B843FA",
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 2890782.454,
+				["tempo_start"] = 1670958456,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 15042,
+				["playing_solo"] = true,
+				["totals"] = {
+					10437, -- [1]
+					282, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 60,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					9937, -- [1]
+					282, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 60,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:07:40",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Ice Heart Jormungar Feeder",
+				["TotalElapsedCombatTime"] = 2890772.188,
+				["CombatEndedAt"] = 2890772.188,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:07:37",
+				["end_time"] = 2890772.188,
+				["combat_id"] = 262,
+				["frags"] = {
+					["Ice Heart Jormungar Feeder"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 2890768.819,
+				["contra"] = "Ice Heart Jormungar Feeder",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Moolatz"] = 282.00341,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 9937.005387000001,
+						}, -- [1]
+					},
+				},
+			}, -- [13]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 261,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001485,
+							["damage_from"] = {
+								["Ice Heart Jormungar Feeder"] = true,
+							},
+							["targets"] = {
+								["Ice Heart Jormungar Feeder"] = 11923,
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 11923.001485,
+							["aID"] = "4465-02B843FA",
+							["dps_started"] = false,
+							["total"] = 11923.001485,
+							["on_hold"] = false,
+							["last_event"] = 1670958283,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 5,
+										["b_amt"] = 0,
+										["c_dmg"] = 2592,
+										["g_amt"] = 0,
+										["n_max"] = 286,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 3794,
+										},
+										["n_dmg"] = 1202,
+										["n_min"] = 220,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["ChartData"] = {
+											[8] = 2932,
+											[11] = 3794,
+											[5] = 1954,
+										},
+										["total"] = 3794,
+										["c_max"] = 576,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 1,
+										["c_min"] = 495,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[48565] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 997,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 997,
+										},
+										["n_dmg"] = 997,
+										["n_min"] = 997,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[8] = 997,
+											[11] = 997,
+										},
+										["total"] = 997,
+										["c_max"] = 0,
+										["id"] = 48565,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[48569] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1379,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 1379,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[11] = 1379,
+										},
+										["total"] = 1379,
+										["c_max"] = 1379,
+										["id"] = 48569,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 1379,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[48573] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 298,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 298,
+										},
+										["n_dmg"] = 298,
+										["n_min"] = 298,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[11] = 298,
+										},
+										["total"] = 298,
+										["c_max"] = 0,
+										["id"] = 48573,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[53307] = {
 										["c_amt"] = 0,
@@ -7235,18 +11116,16 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 75,
 										["targets"] = {
-											["Dragonbone Condor"] = 373,
+											["Ice Heart Jormungar Feeder"] = 373,
 										},
 										["n_dmg"] = 373,
 										["n_min"] = 74,
 										["g_dmg"] = 0,
 										["counter"] = 5,
 										["ChartData"] = {
-											[11] = 149,
-											[17] = 373,
-											[8] = 149,
-											[14] = 299,
-											[5] = 74,
+											[8] = 224,
+											[11] = 373,
+											[5] = 149,
 										},
 										["total"] = 373,
 										["c_max"] = 0,
@@ -7266,25 +11145,28 @@ _detalhes_database = {
 									[48576] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 5299,
+										["c_dmg"] = 5082,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Dragonbone Condor"] = 5299,
+											["Ice Heart Jormungar Feeder"] = 5082,
 										},
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 5299,
-										["c_max"] = 5299,
+										["ChartData"] = {
+											[11] = 5082,
+										},
+										["total"] = 5082,
+										["c_max"] = 5082,
 										["id"] = 48576,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 5299,
+										["c_min"] = 5082,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
@@ -7292,59 +11174,58 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 564.3274836117988,
+							["end_time"] = 1670958286,
+							["last_dps"] = 818.3815969024186,
 							["custom"] = 0,
-							["last_event"] = 1670838959,
-							["damage_taken"] = 1256.005811,
-							["start_time"] = 1670838939,
-							["delay"] = 0,
 							["tipo"] = 1,
+							["damage_taken"] = 1335.001485,
+							["start_time"] = 1670958272,
+							["delay"] = 0,
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.006252,
-							["total"] = 1256.006252,
+							["totalabsorbed"] = 0.003946,
 							["damage_from"] = {
 								["Moolatz"] = true,
 							},
 							["targets"] = {
-								["Moolatz"] = 1256,
+								["Moolatz"] = 1335,
 							},
+							["serial"] = "Creature-0-4446-571-16687-26358-000018C8FC",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "26358",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 1256.006252,
+							["total_without_pet"] = 1335.003946,
+							["damage_taken"] = 11923.003946,
+							["monster"] = true,
+							["end_time"] = 1670958286,
 							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1670838960,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Dragonbone Condor",
+							["last_event"] = 1670958283,
+							["nome"] = "Ice Heart Jormungar Feeder",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 282,
+										["n_max"] = 298,
 										["targets"] = {
-											["Moolatz"] = 1256,
+											["Moolatz"] = 1335,
 										},
-										["n_dmg"] = 1256,
-										["n_min"] = 222,
+										["n_dmg"] = 1335,
+										["n_min"] = 223,
 										["g_dmg"] = 0,
 										["counter"] = 7,
-										["total"] = 1256,
+										["total"] = 1335,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -7360,7 +11241,7 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[51946] = {
+									[47447] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
@@ -7374,7 +11255,7 @@ _detalhes_database = {
 										["counter"] = 0,
 										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = 51946,
+										["id"] = 47447,
 										["r_dmg"] = 0,
 										["extra"] = {
 										},
@@ -7387,22 +11268,24 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "26483",
-							["serial"] = "Creature-0-4446-571-16693-26483-000016E088",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1670838959,
-							["damage_taken"] = 11852.006252,
-							["start_time"] = 1670838939,
-							["delay"] = 0,
 							["tipo"] = 1,
+							["last_dps"] = 0,
+							["start_time"] = 1670958272,
+							["delay"] = 0,
+							["total"] = 1335.003946,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 239,
 					["tipo"] = 3,
+					["combatId"] = 261,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -7411,10 +11294,10 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["totalover"] = 0.003163,
-							["total_without_pet"] = 542.003163,
-							["total"] = 542.003163,
+							["aID"] = "4465-02B843FA",
+							["totalover"] = 0.007654,
+							["total_without_pet"] = 1119.007654,
+							["total"] = 1119.007654,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
@@ -7422,1160 +11305,319 @@ _detalhes_database = {
 							["colocacao"] = 1,
 							["on_hold"] = false,
 							["serial"] = "Player-4465-02B843FA",
-							["totalabsorb"] = 0.003163,
-							["last_hps"] = 36.82587056579554,
+							["totalabsorb"] = 0.007654,
+							["last_hps"] = 109.6958782484725,
 							["targets"] = {
-								["Moolatz"] = 542,
+								["Moolatz"] = 1119,
 							},
-							["totalover_without_pet"] = 0.003163,
-							["healing_taken"] = 542.003163,
+							["totalover_without_pet"] = 0.007654,
+							["healing_taken"] = 1119.007654,
 							["fight_component"] = true,
-							["end_time"] = 1670838960,
-							["healing_from"] = {
-								["Moolatz"] = true,
-							},
+							["end_time"] = 1670958286,
+							["classe"] = "DRUID",
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[34299] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
 										},
-										["n_max"] = 542,
+										["n_max"] = 560,
 										["targets"] = {
-											["Moolatz"] = 542,
+											["Moolatz"] = 1119,
 										},
-										["n_min"] = 542,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 542,
-										["c_max"] = 0,
-										["id"] = 34299,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 542,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1670838954,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "4465-02B843FA",
-							["totaldenied"] = 0.003163,
-							["delay"] = 0,
-							["last_event"] = 1670838954,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 239,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["received"] = 153.004561,
-							["resource"] = 0.004561,
-							["targets"] = {
-								["Moolatz"] = 153,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "DRUID",
-							["passiveover"] = 0.004561,
-							["fight_component"] = true,
-							["total"] = 153.004561,
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[68285] = {
-										["total"] = 93,
-										["id"] = 68285,
-										["totalover"] = 649,
-										["targets"] = {
-											["Moolatz"] = 93,
-										},
-										["counter"] = 1,
-									},
-									[51178] = {
-										["total"] = 60,
-										["id"] = 51178,
-										["totalover"] = 0,
-										["targets"] = {
-											["Moolatz"] = 60,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
-							["grupo"] = true,
-							["flag_original"] = 1297,
-							["alternatepower"] = 0.004561,
-							["last_event"] = 1670838955,
-							["aID"] = "4465-02B843FA",
-							["tipo"] = 3,
-							["serial"] = "Player-4465-02B843FA",
-							["totalover"] = 649.004561,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 239,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[48565] = {
-										["activedamt"] = 0,
-										["id"] = 48565,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[48573] = {
-										["activedamt"] = 0,
-										["id"] = 48573,
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[16857] = {
-										["activedamt"] = 0,
-										["id"] = 16857,
-										["targets"] = {
-										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 114,
-							["aID"] = "4465-02B843FA",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[50212] = {
-										["activedamt"] = 1,
-										["id"] = 50212,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[48848] = {
-										["activedamt"] = 1,
-										["id"] = 48848,
-										["targets"] = {
-										},
-										["uptime"] = 8,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[48834] = {
-										["activedamt"] = 1,
-										["id"] = 48834,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57940] = {
-										["activedamt"] = 1,
-										["id"] = 57940,
-										["targets"] = {
-										},
-										["uptime"] = 21,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[24932] = {
-										["activedamt"] = 1,
-										["id"] = 24932,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[26991] = {
-										["activedamt"] = 1,
-										["id"] = 26991,
-										["targets"] = {
-										},
-										["uptime"] = 21,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53307] = {
-										["activedamt"] = 1,
-										["id"] = 53307,
-										["targets"] = {
-										},
-										["uptime"] = 21,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[69369] = {
-										["activedamt"] = 1,
-										["id"] = 69369,
-										["targets"] = {
-										},
-										["uptime"] = 1,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[33943] = {
-										["activedamt"] = 1,
-										["id"] = 33943,
-										["targets"] = {
-										},
-										["uptime"] = 11,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[768] = {
-										["activedamt"] = 1,
-										["id"] = 768,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 16,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[48565] = 2,
-								[16857] = 1,
-								[48569] = 3,
-								[48576] = 1,
-								[48573] = 1,
-								[48848] = 1,
-								[50212] = 1,
-								[768] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["nome"] = "Moolatz",
-							["last_event"] = 1670838960,
-							["pets"] = {
-							},
-							["classe"] = "DRUID",
-							["serial"] = "Player-4465-02B843FA",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["monster"] = true,
-							["nome"] = "Dragonbone Condor",
-							["flag_original"] = 68168,
-							["spell_cast"] = {
-								[51946] = 1,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4446-571-16693-26483-000016E088",
-							["aID"] = "26483",
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 239,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = "Player-4465-02B843FA",
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["tempo_start"] = 1670838939,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Dragonbone Condor",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					13107.98673, -- [1]
-					542, -- [2]
-					{
-						0, -- [1]
-						[0] = 93,
-						["alternatepower"] = 0,
-						[3] = 60,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["TotalElapsedCombatTime"] = 2771271.365,
-				["combat_counter"] = 15017,
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Moolatz"] = 542.003163,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 11852.005811,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 2771271.365,
-				["player_last_events"] = {
-				},
-				["instance_type"] = "none",
-				["CombatEndedAt"] = 2771271.365,
-				["data_inicio"] = "10:55:40",
-				["totals_grupo"] = {
-					11852, -- [1]
-					542, -- [2]
-					{
-						0, -- [1]
-						[0] = 93,
-						["alternatepower"] = 0,
-						[3] = 60,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "10:56:01",
-				["combat_id"] = 239,
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Dragonbone Condor"] = 1,
-				},
-				["start_time"] = 2771250.363,
-				["TimeData"] = {
-				},
-				["contra"] = "Dragonbone Condor",
-			}, -- [15]
-			{
-				{
-					["combatId"] = 238,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008397,
-							["total"] = 2763.008397,
-							["damage_from"] = {
-								["Moolatz"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 2763,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 2763.008397,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1670838867,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Hulking Jormungar",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 975,
-										["targets"] = {
-											["Moolatz"] = 2763,
-										},
-										["n_dmg"] = 2763,
-										["n_min"] = 857,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 2763,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["aID"] = "26293",
-							["serial"] = "Creature-0-4446-571-16693-26293-000016F9F5",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1670838861,
-							["damage_taken"] = 10845.008397,
-							["start_time"] = 1670838857,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.00853,
-							["damage_from"] = {
-								["Hulking Jormungar"] = true,
-							},
-							["targets"] = {
-								["Hulking Jormungar"] = 10845,
-							},
-							["total"] = 10845.00853,
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 10845.00853,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1670838867,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 2709,
-										["g_amt"] = 0,
-										["n_max"] = 337,
-										["targets"] = {
-											["Hulking Jormungar"] = 3598,
-										},
-										["n_dmg"] = 889,
-										["n_min"] = 217,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["ChartData"] = {
-											[5] = 2057,
-											[8] = 3598,
-										},
-										["total"] = 3598,
-										["c_max"] = 785,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 511,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[48569] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 3350,
-										["g_amt"] = 0,
-										["n_max"] = 741,
-										["targets"] = {
-											["Hulking Jormungar"] = 4091,
-										},
-										["n_dmg"] = 741,
-										["n_min"] = 741,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[5] = 4091,
-											[8] = 4091,
-										},
-										["total"] = 4091,
-										["c_max"] = 1685,
-										["id"] = 48569,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1665,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[48565] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 916,
-										["targets"] = {
-											["Hulking Jormungar"] = 916,
-										},
-										["n_dmg"] = 916,
-										["n_min"] = 916,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["ChartData"] = {
-											[5] = 916,
-											[8] = 916,
-										},
-										["total"] = 916,
-										["c_max"] = 0,
-										["id"] = 48565,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[53307] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 75,
-										["targets"] = {
-											["Hulking Jormungar"] = 223,
-										},
-										["n_dmg"] = 223,
-										["n_min"] = 74,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[5] = 223,
-											[8] = 223,
-										},
-										["total"] = 223,
-										["c_max"] = 0,
-										["id"] = 53307,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[48573] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 863,
-										["targets"] = {
-											["Hulking Jormungar"] = 2017,
-										},
-										["n_dmg"] = 2017,
-										["n_min"] = 291,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[5] = 1154,
-											[8] = 2017,
-										},
-										["total"] = 2017,
-										["c_max"] = 0,
-										["id"] = 48573,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 1455.510472442368,
-							["custom"] = 0,
-							["last_event"] = 1670838865,
-							["damage_taken"] = 2763.00853,
-							["start_time"] = 1670838857,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 238,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["totalover"] = 0.008058,
-							["total_without_pet"] = 3690.008058,
-							["total"] = 3690.008058,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02B843FA",
-							["totalabsorb"] = 0.008058,
-							["last_hps"] = 379.7085879858694,
-							["targets"] = {
-								["Moolatz"] = 3690,
-							},
-							["totalover_without_pet"] = 0.008058,
-							["healing_taken"] = 3690.008058,
-							["fight_component"] = true,
-							["end_time"] = 1670838939,
-							["healing_from"] = {
-								["Moolatz"] = true,
-							},
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[48440] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 316,
-										["targets"] = {
-											["Moolatz"] = 1579,
-										},
-										["n_min"] = 315,
-										["counter"] = 5,
-										["overheal"] = 0,
-										["total"] = 1579,
-										["c_max"] = 0,
-										["id"] = 48440,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 1579,
-										["totaldenied"] = 0,
-										["n_amt"] = 5,
-										["absorbed"] = 0,
-									},
-									[33778] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 641,
-										["targets"] = {
-											["Moolatz"] = 641,
-										},
-										["n_min"] = 641,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 641,
-										["c_max"] = 0,
-										["id"] = 33778,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 641,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-									[34299] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 612,
-										["targets"] = {
-											["Moolatz"] = 1154,
-										},
-										["n_min"] = 542,
+										["n_min"] = 559,
 										["counter"] = 2,
 										["overheal"] = 0,
-										["total"] = 1154,
+										["total"] = 1119,
 										["c_max"] = 0,
 										["id"] = 34299,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 1154,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
-										["absorbed"] = 0,
-									},
-									[48450] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 46,
-										["targets"] = {
-											["Moolatz"] = 316,
-										},
-										["n_min"] = 45,
-										["counter"] = 7,
-										["overheal"] = 0,
-										["total"] = 316,
-										["c_max"] = 0,
-										["id"] = 48450,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 316,
-										["totaldenied"] = 0,
-										["n_amt"] = 7,
+										["n_curado"] = 1119,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
 							["heal_enemy_amt"] = 0,
-							["start_time"] = 1670838894,
 							["custom"] = 0,
+							["last_event"] = 1670958282,
+							["start_time"] = 1670958276,
+							["totaldenied"] = 0.007654,
+							["delay"] = 0,
 							["tipo"] = 2,
-							["aID"] = "4465-02B843FA",
-							["totaldenied"] = 0.008058,
-							["delay"] = 1670838903,
-							["last_event"] = 1670838903,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 238,
 					["tipo"] = 7,
+					["combatId"] = 261,
 					["_ActorTable"] = {
 						{
-							["received"] = 470.004326,
-							["resource"] = 0.004326,
+							["received"] = 60.002066,
+							["resource"] = 0.002066,
 							["targets"] = {
-								["Moolatz"] = 470,
+								["Moolatz"] = 60,
 							},
 							["pets"] = {
 							},
 							["powertype"] = 0,
 							["classe"] = "DRUID",
-							["passiveover"] = 0.004326,
+							["passiveover"] = 0.002066,
 							["fight_component"] = true,
-							["total"] = 470.004326,
+							["total"] = 60.002066,
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
-									[51178] = {
-										["total"] = 60,
-										["id"] = 51178,
-										["totalover"] = 0,
-										["targets"] = {
-											["Moolatz"] = 60,
-										},
-										["counter"] = 1,
-									},
 									[68285] = {
 										["total"] = 0,
 										["id"] = 68285,
-										["totalover"] = 1485,
+										["totalover"] = 1512,
 										["targets"] = {
 											["Moolatz"] = 0,
 										},
 										["counter"] = 2,
 									},
-									[64372] = {
-										["total"] = 410,
-										["id"] = 64372,
+									[51178] = {
+										["total"] = 60,
+										["id"] = 51178,
 										["totalover"] = 0,
 										["targets"] = {
-											["Moolatz"] = 410,
+											["Moolatz"] = 60,
 										},
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
-							["alternatepower"] = 0.004326,
-							["last_event"] = 1670838901,
+							["alternatepower"] = 0.002066,
+							["last_event"] = 1670958282,
 							["aID"] = "4465-02B843FA",
 							["tipo"] = 3,
 							["serial"] = "Player-4465-02B843FA",
-							["totalover"] = 1485.004326,
+							["totalover"] = 1512.002066,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 238,
 					["tipo"] = 9,
+					["combatId"] = 261,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[49799] = {
-										["activedamt"] = 0,
-										["id"] = 49799,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[48565] = {
-										["activedamt"] = 0,
-										["id"] = 48565,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["activedamt"] = 0,
+										["uptime"] = 3,
+										["id"] = 48565,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[48573] = {
-										["activedamt"] = 0,
-										["id"] = 48573,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["activedamt"] = 0,
+										["uptime"] = 2,
+										["id"] = 48573,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[16857] = {
-										["activedamt"] = -1,
-										["id"] = 16857,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["actived_at"] = 1670838865,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
+										["activedamt"] = 0,
+										["uptime"] = 4,
+										["id"] = 16857,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["cooldowns_defensive"] = 1.006585,
-							["buff_uptime"] = 92,
-							["last_cooldown"] = {
-								1670838862.146, -- [1]
-								22812, -- [2]
-							},
-							["aID"] = "4465-02B843FA",
-							["cooldowns_defensive_targets"] = {
-								["Moolatz"] = 1,
-							},
-							["buff_uptime_spells"] = {
 								["tipo"] = 9,
+							},
+							["buff_uptime"] = 114,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[50212] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 4,
 										["id"] = 50212,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[48420] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
+										["uptime"] = 14,
+										["id"] = 48420,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[48848] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[44055] = {
-										["activedamt"] = 1,
-										["id"] = 44055,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[22812] = {
-										["activedamt"] = 1,
-										["id"] = 22812,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[48834] = {
-										["activedamt"] = 1,
-										["id"] = 48834,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57940] = {
-										["activedamt"] = 1,
-										["id"] = 57940,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[24932] = {
-										["activedamt"] = 1,
-										["id"] = 24932,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[26991] = {
-										["activedamt"] = 1,
-										["id"] = 26991,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53307] = {
-										["activedamt"] = 1,
-										["id"] = 53307,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[52610] = {
-										["activedamt"] = 1,
-										["id"] = 52610,
-										["targets"] = {
-										},
-										["uptime"] = 8,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[16870] = {
-										["activedamt"] = 1,
-										["id"] = 16870,
-										["targets"] = {
-										},
-										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["id"] = 48848,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[768] = {
-										["activedamt"] = 1,
-										["id"] = 768,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 14,
+										["id"] = 768,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[69369] = {
-										["activedamt"] = 1,
-										["id"] = 69369,
+									[377749] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 8,
+										["activedamt"] = 1,
+										["uptime"] = 14,
+										["id"] = 377749,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[57940] = {
 										["appliedamt"] = 1,
-										["refreshamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 14,
+										["id"] = 57940,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[24932] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 14,
+										["id"] = 24932,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[26991] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 14,
+										["id"] = 26991,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[53307] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 14,
+										["id"] = 53307,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[48834] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 48834,
+										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
-							["debuff_uptime"] = 17,
-							["cooldowns_defensive_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[22812] = {
-										["id"] = 22812,
-										["targets"] = {
-											["Moolatz"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
+							["debuff_uptime"] = 9,
 							["buff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["spell_cast"] = {
 								[48565] = 1,
-								[50212] = 1,
-								[48569] = 3,
-								[52610] = 1,
+								[16857] = 1,
+								[47435] = 1,
+								[48576] = 1,
 								[48573] = 1,
-								[49799] = 1,
-								[22812] = 1,
-								[44055] = 1,
+								[48848] = 1,
+								[48569] = 1,
+								[50212] = 1,
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["nome"] = "Moolatz",
-							["last_event"] = 1670838867,
+							["last_event"] = 1670958286,
+							["tipo"] = 4,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
-							["tipo"] = 4,
+							["nome"] = "Moolatz",
 						}, -- [1]
+						{
+							["monster"] = true,
+							["tipo"] = 4,
+							["nome"] = "Ice Heart Jormungar Feeder",
+							["flag_original"] = 68168,
+							["spell_cast"] = {
+								[47447] = 1,
+							},
+							["fight_component"] = true,
+							["pets"] = {
+							},
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-571-16687-26358-000018C8FC",
+							["aID"] = "26358",
+						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 238,
 					["tipo"] = 2,
+					["combatId"] = 261,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -8585,20 +11627,20 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Moolatz", -- [1]
 				},
-				["CombatStartedAt"] = 2771248.747,
-				["tempo_start"] = 1670838857,
+				["CombatStartedAt"] = 2890767.376,
+				["tempo_start"] = 1670958272,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 15016,
+				["combat_counter"] = 15041,
 				["playing_solo"] = true,
 				["totals"] = {
-					13608, -- [1]
-					3690, -- [2]
+					13257.991165, -- [1]
+					1119, -- [2]
 					{
 						0, -- [1]
-						[0] = 410,
+						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 60,
 						[6] = 0,
@@ -8606,10 +11648,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 1,
-						["interrupt"] = 0,
+						["cooldowns_defensive"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -8617,11 +11659,11 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["totals_grupo"] = {
-					10845, -- [1]
-					3690, -- [2]
+					11923, -- [1]
+					1119, -- [2]
 					{
 						0, -- [1]
-						[0] = 410,
+						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 60,
 						[6] = 0,
@@ -8629,442 +11671,184 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 1,
-						["interrupt"] = 0,
+						["cooldowns_defensive"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["data_fim"] = "10:54:28",
+				["hasSaved"] = true,
+				["data_fim"] = "20:04:47",
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Hulking Jormungar",
-				["TotalElapsedCombatTime"] = 2771178.309,
-				["CombatEndedAt"] = 2771178.309,
+				["enemy"] = "Ice Heart Jormungar Feeder",
+				["TotalElapsedCombatTime"] = 2890598.86,
+				["CombatEndedAt"] = 2890598.86,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "20:04:33",
+				["end_time"] = 2890598.86,
+				["combat_id"] = 261,
+				["frags"] = {
+					["Ice Heart Jormungar Feeder"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 2890584.291,
+				["contra"] = "Ice Heart Jormungar Feeder",
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Moolatz"] = 1154.008058,
+							["Moolatz"] = 1119.007654,
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Moolatz"] = 10845.00853,
+							["Moolatz"] = 11923.001485,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 2771178.309,
-				["combat_id"] = 238,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-					["Moolatz"] = {
-						{
-							false, -- [1]
-							48440, -- [2]
-							316, -- [3]
-							1670838891.665, -- [4]
-							9125, -- [5]
-							"Moolatz", -- [6]
-							nil, -- [7]
-							0, -- [8]
-						}, -- [1]
-						{
-							false, -- [1]
-							48440, -- [2]
-							316, -- [3]
-							1670838894.665, -- [4]
-							9464, -- [5]
-							"Moolatz", -- [6]
-							nil, -- [7]
-							0, -- [8]
-						}, -- [2]
-						{
-							false, -- [1]
-							48450, -- [2]
-							45, -- [3]
-							1670838895.715, -- [4]
-							9803, -- [5]
-							"Moolatz", -- [6]
-							nil, -- [7]
-							0, -- [8]
-						}, -- [3]
-						{
-							false, -- [1]
-							48450, -- [2]
-							45, -- [3]
-							1670838896.715, -- [4]
-							9848, -- [5]
-							"Moolatz", -- [6]
-							nil, -- [7]
-							0, -- [8]
-						}, -- [4]
-						{
-							false, -- [1]
-							48440, -- [2]
-							316, -- [3]
-							1670838897.665, -- [4]
-							9915, -- [5]
-							"Moolatz", -- [6]
-							nil, -- [7]
-							0, -- [8]
-						}, -- [5]
-						{
-							false, -- [1]
-							48450, -- [2]
-							45, -- [3]
-							1670838897.665, -- [4]
-							10231, -- [5]
-							"Moolatz", -- [6]
-							nil, -- [7]
-							0, -- [8]
-						}, -- [6]
-						{
-							false, -- [1]
-							48450, -- [2]
-							45, -- [3]
-							1670838898.715, -- [4]
-							10276, -- [5]
-							"Moolatz", -- [6]
-							nil, -- [7]
-							0, -- [8]
-						}, -- [7]
-						{
-							false, -- [1]
-							48450, -- [2]
-							46, -- [3]
-							1670838899.716, -- [4]
-							10344, -- [5]
-							"Moolatz", -- [6]
-							nil, -- [7]
-							0, -- [8]
-						}, -- [8]
-						{
-							false, -- [1]
-							48440, -- [2]
-							315, -- [3]
-							1670838900.649, -- [4]
-							10390, -- [5]
-							"Moolatz", -- [6]
-							nil, -- [7]
-							0, -- [8]
-						}, -- [9]
-						{
-							false, -- [1]
-							48450, -- [2]
-							45, -- [3]
-							1670838900.649, -- [4]
-							10705, -- [5]
-							"Moolatz", -- [6]
-							nil, -- [7]
-							0, -- [8]
-						}, -- [10]
-						{
-							false, -- [1]
-							48450, -- [2]
-							45, -- [3]
-							1670838901.716, -- [4]
-							10773, -- [5]
-							"Moolatz", -- [6]
-							nil, -- [7]
-							0, -- [8]
-						}, -- [11]
-						{
-							false, -- [1]
-							33778, -- [2]
-							641, -- [3]
-							1670838901.716, -- [4]
-							10773, -- [5]
-							"Moolatz", -- [6]
-							nil, -- [7]
-							0, -- [8]
-						}, -- [12]
-						{
-							false, -- [1]
-							48440, -- [2]
-							316, -- [3]
-							1670838903.632, -- [4]
-							11482, -- [5]
-							"Moolatz", -- [6]
-							nil, -- [7]
-							0, -- [8]
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 14,
-					},
-				},
-				["data_inicio"] = "10:54:18",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Hulking Jormungar"] = 1,
-				},
-				["start_time"] = 2771168.591,
-				["TimeData"] = {
-				},
-				["contra"] = "Hulking Jormungar",
-			}, -- [16]
+			}, -- [14]
 			{
 				{
-					["combatId"] = 237,
 					["tipo"] = 2,
+					["combatId"] = 260,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003222,
+							["totalabsorbed"] = 0.005009,
 							["damage_from"] = {
-								["Hulking Jormungar"] = true,
+								["Ice Heart Jormungar Spawn"] = true,
 							},
 							["targets"] = {
-								["Hulking Jormungar"] = 34864,
+								["Ice Heart Jormungar Spawn"] = 9666,
 							},
-							["total"] = 34864.003222,
+							["serial"] = "Player-4465-02B843FA",
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 34864.003222,
 							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1670838836,
-							["friendlyfire_total"] = 0,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 9666.005009,
 							["aID"] = "4465-02B843FA",
+							["dps_started"] = false,
+							["total"] = 9666.005009,
+							["on_hold"] = false,
+							["last_event"] = 1670958271,
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 9,
-										["b_amt"] = 1,
-										["c_dmg"] = 6212,
+										["c_amt"] = 6,
+										["b_amt"] = 2,
+										["c_dmg"] = 3064,
 										["g_amt"] = 0,
-										["n_max"] = 362,
+										["n_max"] = 236,
 										["targets"] = {
-											["Hulking Jormungar"] = 9382,
+											["Ice Heart Jormungar Feeder"] = 0,
+											["Ice Heart Jormungar Spawn"] = 5962,
 										},
-										["n_dmg"] = 3170,
-										["n_min"] = 250,
+										["n_dmg"] = 2898,
+										["n_min"] = 179,
 										["g_dmg"] = 0,
-										["counter"] = 19,
+										["counter"] = 25,
 										["ChartData"] = {
-											[11] = 6009,
-											[17] = 9078,
-											[8] = 5096,
-											[14] = 7741,
-											[5] = 3061,
+											[26] = 5200,
+											[14] = 3788,
+											[29] = 5200,
+											[8] = 1886,
+											[41] = 5962,
+											[32] = 5200,
+											[5] = 912,
+											[38] = 5728,
+											[20] = 5200,
+											[11] = 2871,
+											[35] = 5200,
+											[23] = 5200,
+											[17] = 4700,
 										},
-										["total"] = 9382,
-										["c_max"] = 846,
+										["total"] = 5962,
+										["c_max"] = 528,
 										["id"] = 1,
 										["r_dmg"] = 0,
+										["EVADE"] = 6,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 479,
+										["c_min"] = 498,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 10,
-										["b_dmg"] = 250,
+										["n_amt"] = 13,
+										["b_dmg"] = 359,
 										["r_amt"] = 0,
 									}, -- [1]
 									[48565] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 2230,
+										["c_dmg"] = 2135,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Hulking Jormungar"] = 2230,
+											["Ice Heart Jormungar Spawn"] = 2135,
 										},
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
 										["ChartData"] = {
-											[11] = 2230,
-											[17] = 2230,
-											[8] = 2230,
-											[14] = 2230,
-											[5] = 2230,
+											[26] = 2135,
+											[14] = 2135,
+											[29] = 2135,
+											[8] = 2135,
+											[41] = 2135,
+											[32] = 2135,
+											[5] = 2135,
+											[38] = 2135,
+											[20] = 2135,
+											[11] = 2135,
+											[35] = 2135,
+											[23] = 2135,
+											[17] = 2135,
 										},
-										["total"] = 2230,
-										["c_max"] = 2230,
+										["total"] = 2135,
+										["c_max"] = 2135,
 										["id"] = 48565,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 2230,
+										["c_min"] = 2135,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[49799] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 3725,
-										["g_amt"] = 0,
-										["n_max"] = 822,
-										["targets"] = {
-											["Hulking Jormungar"] = 6191,
-										},
-										["n_dmg"] = 2466,
-										["n_min"] = 822,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["ChartData"] = {
-											[11] = 2685,
-											[14] = 3507,
-											[17] = 6191,
-											[8] = 0,
-										},
-										["total"] = 6191,
-										["c_max"] = 1863,
-										["id"] = 49799,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["PARRY"] = 1,
-										["c_min"] = 1862,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[48569] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 3312,
-										["g_amt"] = 0,
-										["n_max"] = 774,
-										["targets"] = {
-											["Hulking Jormungar"] = 4776,
-										},
-										["n_dmg"] = 1464,
-										["n_min"] = 690,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["ChartData"] = {
-											[11] = 3170,
-											[17] = 4776,
-											[8] = 2480,
-											[14] = 3170,
-											[5] = 2480,
-										},
-										["total"] = 4776,
-										["c_max"] = 1706,
-										["id"] = 48569,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1606,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[48573] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 1157,
-										["targets"] = {
-											["Hulking Jormungar"] = 5399,
-										},
-										["n_dmg"] = 5399,
-										["n_min"] = 385,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["ChartData"] = {
-											[11] = 2699,
-											[17] = 5399,
-											[8] = 1542,
-											[14] = 4242,
-											[5] = 385,
-										},
-										["total"] = 5399,
-										["c_max"] = 0,
-										["id"] = 48573,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -9075,20 +11859,28 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 75,
 										["targets"] = {
-											["Hulking Jormungar"] = 448,
+											["Ice Heart Jormungar Spawn"] = 1569,
 										},
-										["n_dmg"] = 448,
+										["n_dmg"] = 1569,
 										["n_min"] = 74,
 										["g_dmg"] = 0,
-										["counter"] = 6,
+										["counter"] = 21,
 										["ChartData"] = {
-											[11] = 299,
-											[17] = 448,
-											[8] = 299,
-											[14] = 374,
-											[5] = 224,
+											[26] = 1046,
+											[14] = 596,
+											[29] = 1196,
+											[8] = 298,
+											[41] = 1569,
+											[32] = 1271,
+											[5] = 74,
+											[38] = 1494,
+											[20] = 746,
+											[11] = 447,
+											[35] = 1419,
+											[23] = 971,
+											[17] = 671,
 										},
-										["total"] = 448,
+										["total"] = 1569,
 										["c_max"] = 0,
 										["id"] = 53307,
 										["r_dmg"] = 0,
@@ -9099,32 +11891,33 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 6,
+										["n_amt"] = 21,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[48576] = {
-										["c_amt"] = 1,
+									[16857] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 6438,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Hulking Jormungar"] = 6438,
+											["Ice Heart Jormungar Feeder"] = 0,
 										},
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 6438,
-										["c_max"] = 6438,
-										["id"] = 48576,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 16857,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["EVADE"] = 1,
+										["spellschool"] = 8,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 6438,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
@@ -9132,63 +11925,63 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 1812.52941108585,
+							["end_time"] = 1670958237,
+							["last_dps"] = 229.2097652198488,
 							["custom"] = 0,
-							["last_event"] = 1670838835,
-							["damage_taken"] = 5569.003222,
-							["start_time"] = 1670838817,
-							["delay"] = 0,
 							["tipo"] = 1,
+							["damage_taken"] = 2799.005009,
+							["start_time"] = 1670958195,
+							["delay"] = 0,
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001529,
-							["total"] = 5569.001529,
+							["totalabsorbed"] = 0.003699,
 							["damage_from"] = {
 								["Moolatz"] = true,
 							},
 							["targets"] = {
-								["Moolatz"] = 5569,
+								["Moolatz"] = 2799,
 							},
+							["serial"] = "Creature-0-4446-571-16687-26359-000018CC64",
 							["pets"] = {
 							},
-							["monster"] = true,
+							["aID"] = "26359",
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 5569.001529,
+							["total_without_pet"] = 2799.003699,
+							["damage_taken"] = 9666.003699,
+							["monster"] = true,
+							["end_time"] = 1670958237,
 							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1670838857,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Hulking Jormungar",
+							["last_event"] = 1670958236,
+							["nome"] = "Ice Heart Jormungar Spawn",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 1015,
+										["n_max"] = 154,
 										["targets"] = {
-											["Moolatz"] = 5147,
+											["Moolatz"] = 2799,
 										},
-										["n_dmg"] = 5147,
-										["n_min"] = 701,
+										["n_dmg"] = 2799,
+										["n_min"] = 110,
 										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 5147,
+										["counter"] = 31,
+										["total"] = 2799,
 										["c_max"] = 0,
+										["MISS"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 2,
+										["DODGE"] = 9,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
@@ -9196,66 +11989,68 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 6,
+										["n_amt"] = 21,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[50293] = {
+									[43358] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 106,
+										["n_max"] = 0,
 										["targets"] = {
-											["Moolatz"] = 422,
 										},
-										["n_dmg"] = 422,
-										["n_min"] = 105,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 422,
+										["counter"] = 0,
+										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = 50293,
+										["id"] = 43358,
 										["r_dmg"] = 0,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
-										["successful_casted"] = 1,
+										["successful_casted"] = 3,
 										["a_amt"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 0,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "26293",
-							["serial"] = "Creature-0-4446-571-16693-26293-000016E136",
-							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
 							["custom"] = 0,
-							["last_event"] = 1670838840,
-							["damage_taken"] = 34864.001529,
-							["start_time"] = 1670838833,
-							["delay"] = 1670838840,
 							["tipo"] = 1,
+							["last_dps"] = 0,
+							["start_time"] = 1670958198,
+							["delay"] = 0,
+							["total"] = 2799.003699,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 237,
 					["tipo"] = 3,
+					["combatId"] = 260,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["targets_overheal"] = {
+								["Moolatz"] = 616,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["totalover"] = 0.001331,
-							["total_without_pet"] = 3587.001331,
-							["total"] = 3587.001331,
+							["aID"] = "4465-02B843FA",
+							["totalover"] = 616.0054339999999,
+							["total_without_pet"] = 1609.005434,
+							["total"] = 1609.005434,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
@@ -9263,990 +12058,68 @@ _detalhes_database = {
 							["colocacao"] = 1,
 							["on_hold"] = false,
 							["serial"] = "Player-4465-02B843FA",
-							["totalabsorb"] = 0.001331,
-							["last_hps"] = 186.4830429438167,
+							["totalabsorb"] = 0.005434,
+							["last_hps"] = 41.78800732421359,
 							["targets"] = {
-								["Moolatz"] = 3587,
+								["Moolatz"] = 1609,
 							},
-							["totalover_without_pet"] = 0.001331,
-							["healing_taken"] = 3587.001331,
+							["totalover_without_pet"] = 0.005434,
+							["healing_taken"] = 1609.005434,
 							["fight_component"] = true,
-							["end_time"] = 1670838836,
-							["healing_from"] = {
-								["Moolatz"] = true,
-							},
+							["end_time"] = 1670958237,
+							["classe"] = "DRUID",
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[34299] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
+											["Moolatz"] = 616,
 										},
-										["n_max"] = 543,
+										["n_max"] = 559,
 										["targets"] = {
-											["Moolatz"] = 2169,
+											["Moolatz"] = 1609,
 										},
-										["n_min"] = 542,
+										["n_min"] = 234,
 										["counter"] = 4,
-										["overheal"] = 0,
-										["total"] = 2169,
+										["overheal"] = 616,
+										["total"] = 1609,
 										["c_max"] = 0,
 										["id"] = 34299,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 2169,
 										["totaldenied"] = 0,
 										["n_amt"] = 4,
-										["absorbed"] = 0,
-									},
-									[55502] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 284,
-										["targets"] = {
-											["Moolatz"] = 1418,
-										},
-										["n_min"] = 283,
-										["counter"] = 5,
-										["overheal"] = 0,
-										["total"] = 1418,
-										["c_max"] = 0,
-										["id"] = 55502,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 1418,
-										["totaldenied"] = 0,
-										["n_amt"] = 5,
+										["n_curado"] = 1609,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1670838817,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "4465-02B843FA",
-							["totaldenied"] = 0.001331,
-							["delay"] = 0,
-							["last_event"] = 1670838835,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 237,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["received"] = 144.005916,
-							["resource"] = 0.005916,
-							["targets"] = {
-								["Moolatz"] = 144,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "DRUID",
-							["passiveover"] = 26.005916,
-							["fight_component"] = true,
-							["total"] = 144.005916,
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[68285] = {
-										["total"] = 99,
-										["id"] = 68285,
-										["totalover"] = 2872,
-										["targets"] = {
-											["Moolatz"] = 99,
-										},
-										["counter"] = 4,
-									},
-									[51178] = {
-										["total"] = 45,
-										["id"] = 51178,
-										["totalover"] = 15,
-										["targets"] = {
-											["Moolatz"] = 45,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
-							["grupo"] = true,
-							["flag_original"] = 1297,
-							["alternatepower"] = 0.005916,
-							["last_event"] = 1670838835,
-							["aID"] = "4465-02B843FA",
-							["tipo"] = 3,
-							["serial"] = "Player-4465-02B843FA",
-							["totalover"] = 2887.005916,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 237,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[49799] = {
-										["activedamt"] = 0,
-										["id"] = 49799,
-										["targets"] = {
-										},
-										["uptime"] = 11,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[48565] = {
-										["activedamt"] = 0,
-										["id"] = 48565,
-										["targets"] = {
-										},
-										["uptime"] = 17,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[48573] = {
-										["activedamt"] = 0,
-										["id"] = 48573,
-										["targets"] = {
-										},
-										["uptime"] = 14,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[16857] = {
-										["activedamt"] = 0,
-										["id"] = 16857,
-										["targets"] = {
-										},
-										["uptime"] = 18,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 150,
-							["aID"] = "4465-02B843FA",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[50212] = {
-										["activedamt"] = 1,
-										["id"] = 50212,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[48848] = {
-										["activedamt"] = 1,
-										["id"] = 48848,
-										["targets"] = {
-										},
-										["uptime"] = 19,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[768] = {
-										["activedamt"] = 1,
-										["id"] = 768,
-										["targets"] = {
-										},
-										["uptime"] = 19,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[55502] = {
-										["activedamt"] = 1,
-										["id"] = 55502,
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57940] = {
-										["activedamt"] = 1,
-										["id"] = 57940,
-										["targets"] = {
-										},
-										["uptime"] = 19,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[24932] = {
-										["activedamt"] = 1,
-										["id"] = 24932,
-										["targets"] = {
-										},
-										["uptime"] = 19,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[26991] = {
-										["activedamt"] = 1,
-										["id"] = 26991,
-										["targets"] = {
-										},
-										["uptime"] = 19,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53307] = {
-										["activedamt"] = 1,
-										["id"] = 53307,
-										["targets"] = {
-										},
-										["uptime"] = 19,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[52610] = {
-										["activedamt"] = 1,
-										["id"] = 52610,
-										["targets"] = {
-										},
-										["uptime"] = 17,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[69369] = {
-										["activedamt"] = 2,
-										["id"] = 69369,
-										["targets"] = {
-										},
-										["uptime"] = 9,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[16870] = {
-										["activedamt"] = 3,
-										["id"] = 16870,
-										["targets"] = {
-										},
-										["uptime"] = 0,
-										["appliedamt"] = 3,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 60,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[48569] = 4,
-								[50212] = 1,
-								[48848] = 1,
-								[16857] = 1,
-								[55502] = 1,
-								[48565] = 1,
-								[48573] = 2,
-								[52610] = 1,
-								[48576] = 1,
-								[49799] = 2,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["nome"] = "Moolatz",
-							["last_event"] = 1670838836,
-							["pets"] = {
-							},
-							["classe"] = "DRUID",
-							["serial"] = "Player-4465-02B843FA",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["monster"] = true,
-							["nome"] = "Hulking Jormungar",
-							["flag_original"] = 68168,
-							["spell_cast"] = {
-								[50293] = 1,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4446-571-16693-26293-000016E136",
-							["aID"] = "26293",
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 237,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = "Player-4465-02B843FA",
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 2771165.625,
-				["tempo_start"] = 1670838817,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 15015,
-				["playing_solo"] = true,
-				["totals"] = {
-					40433, -- [1]
-					3587, -- [2]
-					{
-						0, -- [1]
-						[0] = 99,
-						["alternatepower"] = 0,
-						[3] = 45,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					34864, -- [1]
-					3587, -- [2]
-					{
-						0, -- [1]
-						[0] = 99,
-						["alternatepower"] = 0,
-						[3] = 45,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "10:53:57",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Hulking Jormungar",
-				["TotalElapsedCombatTime"] = 2771147.124,
-				["CombatEndedAt"] = 2771147.124,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Moolatz"] = 3587.001331,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 34864.003222,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 2771147.124,
-				["combat_id"] = 237,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-					["Moolatz"] = {
-						{
-							true, -- [1]
-							50293, -- [2]
-							106, -- [3]
-							1670838837.212, -- [4]
-							9893, -- [5]
-							"Hulking Jormungar", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-							false, -- [11]
-							false, -- [12]
-						}, -- [1]
-						{
-							true, -- [1]
-							50293, -- [2]
-							105, -- [3]
-							1670838840.213, -- [4]
-							9832, -- [5]
-							"Hulking Jormungar", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-							false, -- [11]
-							false, -- [12]
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 3,
-					},
-				},
-				["data_inicio"] = "10:53:37",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Hulking Jormungar"] = 1,
-				},
-				["start_time"] = 2771127.889,
-				["TimeData"] = {
-				},
-				["contra"] = "Hulking Jormungar",
-			}, -- [17]
-			{
-				{
-					["combatId"] = 236,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004635,
-							["damage_from"] = {
-								["Jormungar Tunneler"] = true,
-							},
-							["targets"] = {
-								["Jormungar Tunneler"] = 10703,
-							},
-							["total"] = 10703.004635,
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 10703.004635,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1670838793,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 3,
-										["b_amt"] = 1,
-										["c_dmg"] = 1509,
-										["g_amt"] = 0,
-										["n_max"] = 228,
-										["targets"] = {
-											["Jormungar Tunneler"] = 2997,
-										},
-										["n_dmg"] = 1488,
-										["n_min"] = 162,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["ChartData"] = {
-											[5] = 1617,
-											[8] = 2286,
-										},
-										["total"] = 2997,
-										["c_max"] = 513,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 493,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 7,
-										["b_dmg"] = 162,
-										["r_amt"] = 0,
-									}, -- [1]
-									[48565] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 930,
-										["targets"] = {
-											["Jormungar Tunneler"] = 930,
-										},
-										["n_dmg"] = 930,
-										["n_min"] = 930,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["ChartData"] = {
-											[5] = 930,
-											[8] = 930,
-										},
-										["total"] = 930,
-										["c_max"] = 0,
-										["id"] = 48565,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[48569] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1171,
-										["g_amt"] = 0,
-										["n_max"] = 522,
-										["targets"] = {
-											["Jormungar Tunneler"] = 1693,
-										},
-										["n_dmg"] = 522,
-										["n_min"] = 522,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["ChartData"] = {
-											[5] = 522,
-											[8] = 522,
-										},
-										["total"] = 1693,
-										["c_max"] = 1171,
-										["id"] = 48569,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1171,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[48573] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 662,
-										["g_amt"] = 0,
-										["n_max"] = 864,
-										["targets"] = {
-											["Jormungar Tunneler"] = 3253,
-										},
-										["n_dmg"] = 2591,
-										["n_min"] = 863,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["ChartData"] = {
-											[5] = 1526,
-											[8] = 2389,
-										},
-										["total"] = 3253,
-										["c_max"] = 662,
-										["id"] = 48573,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 662,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[53307] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 74,
-										["targets"] = {
-											["Jormungar Tunneler"] = 74,
-										},
-										["n_dmg"] = 74,
-										["n_min"] = 74,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["ChartData"] = {
-											[5] = 74,
-											[8] = 74,
-										},
-										["total"] = 74,
-										["c_max"] = 0,
-										["id"] = 53307,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[48576] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 1756,
-										["targets"] = {
-											["Jormungar Tunneler"] = 1756,
-										},
-										["n_dmg"] = 1756,
-										["n_min"] = 1756,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["ChartData"] = {
-											[5] = 1756,
-											[8] = 1756,
-										},
-										["total"] = 1756,
-										["c_max"] = 0,
-										["id"] = 48576,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 955.625413823393,
-							["custom"] = 0,
-							["last_event"] = 1670838791,
-							["damage_taken"] = 1083.004635,
-							["start_time"] = 1670838781,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008866,
-							["total"] = 1083.008866,
-							["damage_from"] = {
-								["Moolatz"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 1083,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1083.008866,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1670838817,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Jormungar Tunneler",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 281,
-										["targets"] = {
-											["Moolatz"] = 281,
-										},
-										["n_dmg"] = 281,
-										["n_min"] = 281,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 281,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 4,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[51879] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 244,
-										["targets"] = {
-											["Moolatz"] = 802,
-										},
-										["n_dmg"] = 802,
-										["n_min"] = 97,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 802,
-										["c_max"] = 0,
-										["id"] = 51879,
-										["r_dmg"] = 316,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 3,
-									},
-								},
-							},
-							["aID"] = "26467",
-							["serial"] = "Creature-0-4446-571-16693-26467-000016E144",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1670838801,
-							["damage_taken"] = 10703.008866,
-							["start_time"] = 1670838801,
-							["delay"] = 1670838801,
-							["tipo"] = 1,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 236,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["totalover"] = 0.005923,
-							["total_without_pet"] = 1084.005923,
-							["total"] = 1084.005923,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02B843FA",
-							["totalabsorb"] = 0.005923,
-							["last_hps"] = 110.2192092530866,
-							["targets"] = {
-								["Moolatz"] = 1084,
-							},
-							["totalover_without_pet"] = 0.005923,
-							["healing_taken"] = 1084.005923,
-							["fight_component"] = true,
-							["end_time"] = 1670838793,
 							["healing_from"] = {
 								["Moolatz"] = true,
 							},
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[34299] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 542,
-										["targets"] = {
-											["Moolatz"] = 1084,
-										},
-										["n_min"] = 542,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 1084,
-										["c_max"] = 0,
-										["id"] = 34299,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 1084,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
 							["heal_enemy_amt"] = 0,
-							["start_time"] = 1670838782,
 							["custom"] = 0,
+							["last_event"] = 1670958233,
+							["start_time"] = 1670958219,
+							["totaldenied"] = 0.005434,
+							["delay"] = 1670958209,
 							["tipo"] = 2,
-							["aID"] = "4465-02B843FA",
-							["totaldenied"] = 0.005923,
-							["delay"] = 0,
-							["last_event"] = 1670838791,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 236,
 					["tipo"] = 7,
+					["combatId"] = 260,
 					["_ActorTable"] = {
 						{
-							["received"] = 0.008929,
-							["resource"] = 0.008929,
+							["received"] = 0.004702,
+							["resource"] = 0.004702,
 							["targets"] = {
 								["Moolatz"] = 0,
 							},
@@ -10254,62 +12127,50 @@ _detalhes_database = {
 							},
 							["powertype"] = 0,
 							["classe"] = "DRUID",
-							["passiveover"] = 0.008929,
+							["passiveover"] = 0.004702,
 							["fight_component"] = true,
-							["total"] = 0.008929,
+							["total"] = 0.004702,
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[68285] = {
 										["total"] = 0,
 										["id"] = 68285,
-										["totalover"] = 1484,
+										["totalover"] = 3027,
 										["targets"] = {
 											["Moolatz"] = 0,
 										},
-										["counter"] = 2,
+										["counter"] = 4,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
-							["alternatepower"] = 0.008929,
-							["last_event"] = 1670838791,
+							["alternatepower"] = 0.004702,
+							["last_event"] = 1670958233,
 							["aID"] = "4465-02B843FA",
 							["tipo"] = 3,
 							["serial"] = "Player-4465-02B843FA",
-							["totalover"] = 1484.008929,
+							["totalover"] = 3027.004702,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 236,
 					["tipo"] = 9,
+					["combatId"] = 260,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[48565] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 0,
+										["uptime"] = 41,
 										["id"] = 48565,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[48573] = {
-										["activedamt"] = 0,
-										["id"] = 48573,
-										["targets"] = {
-										},
-										["uptime"] = 9,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -10319,129 +12180,151 @@ _detalhes_database = {
 										["id"] = 16857,
 										["targets"] = {
 										},
-										["actived_at"] = 1670838791,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
+										["actived_at"] = 1670958236,
+										["uptime"] = 20,
+										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 70,
+							["buff_uptime"] = 309,
 							["aID"] = "4465-02B843FA",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[768] = {
-										["activedamt"] = 1,
-										["id"] = 768,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 42,
+										["id"] = 768,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[57940] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 42,
 										["id"] = 57940,
-										["targets"] = {
-										},
-										["uptime"] = 12,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[48834] = {
-										["activedamt"] = 1,
-										["id"] = 48834,
+									[16870] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53307] = {
 										["activedamt"] = 1,
-										["id"] = 53307,
-										["targets"] = {
-										},
-										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["uptime"] = 15,
+										["id"] = 16870,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[26991] = {
-										["activedamt"] = 1,
-										["id"] = 26991,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 42,
+										["id"] = 26991,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[24932] = {
-										["activedamt"] = 1,
-										["id"] = 24932,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 12,
+										["activedamt"] = 1,
+										["uptime"] = 42,
+										["id"] = 24932,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[53307] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 42,
+										["id"] = 53307,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[377749] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 42,
+										["id"] = 377749,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[48420] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 42,
+										["id"] = 48420,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
-							["debuff_uptime"] = 19,
+							["debuff_uptime"] = 61,
 							["buff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["spell_cast"] = {
-								[48569] = 2,
-								[48573] = 1,
-								[48576] = 1,
+								[16857] = 1,
+								[50305] = 1,
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["nome"] = "Moolatz",
-							["last_event"] = 1670838793,
+							["last_event"] = 1670958237,
+							["tipo"] = 4,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
-							["tipo"] = 4,
+							["nome"] = "Moolatz",
 						}, -- [1]
 						{
 							["monster"] = true,
-							["nome"] = "Jormungar Tunneler",
-							["flag_original"] = 68168,
+							["tipo"] = 4,
+							["nome"] = "Ice Heart Jormungar Spawn",
+							["flag_original"] = 2632,
 							["spell_cast"] = {
-								[51879] = 1,
+								[43358] = 3,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4446-571-16693-26467-000016E144",
-							["aID"] = "26467",
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-571-16687-26359-000018CC64",
+							["aID"] = "26359",
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 236,
 					["tipo"] = 2,
+					["combatId"] = 260,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -10451,19 +12334,19 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Moolatz", -- [1]
 				},
-				["CombatStartedAt"] = 2771127.706,
-				["tempo_start"] = 1670838781,
+				["CombatStartedAt"] = 2890570.99,
+				["tempo_start"] = 1670958195,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 15014,
+				["combat_counter"] = 15040,
 				["playing_solo"] = true,
 				["totals"] = {
-					11786, -- [1]
-					1084, -- [2]
+					12464.98708, -- [1]
+					1609, -- [2]
 					{
-						0, -- [1]
+						-0.008386999999999034, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
@@ -10472,10 +12355,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -10483,8 +12366,8 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["totals_grupo"] = {
-					10703, -- [1]
-					1084, -- [2]
+					9666, -- [1]
+					1609, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -10495,168 +12378,2272 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["data_fim"] = "10:53:13",
+				["hasSaved"] = true,
+				["data_fim"] = "20:03:58",
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Jormungar Tunneler",
-				["TotalElapsedCombatTime"] = 2771103.737,
-				["CombatEndedAt"] = 2771103.737,
+				["enemy"] = "Ice Heart Jormungar Spawn",
+				["TotalElapsedCombatTime"] = 2890549.357,
+				["CombatEndedAt"] = 2890549.357,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "20:03:15",
+				["end_time"] = 2890549.357,
+				["combat_id"] = 260,
+				["frags"] = {
+					["Ice Heart Jormungar Spawn"] = 2,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 2890507.186,
+				["contra"] = "Ice Heart Jormungar Spawn",
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Moolatz"] = 1084.005923,
+							["Moolatz"] = 1609.005434,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 9666.005009,
+						}, -- [1]
+					},
+				},
+			}, -- [15]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 259,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00698,
+							["damage_from"] = {
+								["Ice Heart Jormungar Feeder"] = true,
+							},
+							["targets"] = {
+								["Ice Heart Jormungar Feeder"] = 9812,
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 9812.00698,
+							["aID"] = "4465-02B843FA",
+							["dps_started"] = false,
+							["total"] = 9812.00698,
+							["on_hold"] = false,
+							["last_event"] = 1670958186,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 1783,
+										["g_amt"] = 0,
+										["n_max"] = 281,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 2840,
+										},
+										["n_dmg"] = 1057,
+										["n_min"] = 235,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["ChartData"] = {
+											[6] = 2206,
+										},
+										["total"] = 2840,
+										["c_max"] = 634,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 540,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[48565] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 957,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 957,
+										},
+										["n_dmg"] = 957,
+										["n_min"] = 957,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[6] = 957,
+										},
+										["total"] = 957,
+										["c_max"] = 0,
+										["id"] = 48565,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[48576] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2264,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 2264,
+										},
+										["n_dmg"] = 2264,
+										["n_min"] = 2264,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[6] = 2264,
+										},
+										["total"] = 2264,
+										["c_max"] = 0,
+										["id"] = 48576,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[48573] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 864,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 1156,
+										},
+										["n_dmg"] = 1156,
+										["n_min"] = 292,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[6] = 1156,
+										},
+										["total"] = 1156,
+										["c_max"] = 0,
+										["id"] = 48573,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[53307] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 75,
+										},
+										["n_dmg"] = 75,
+										["n_min"] = 75,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 75,
+										["c_max"] = 0,
+										["id"] = 53307,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[48569] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1348,
+										["g_amt"] = 0,
+										["n_max"] = 593,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 2520,
+										},
+										["n_dmg"] = 1172,
+										["n_min"] = 579,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[6] = 2520,
+										},
+										["total"] = 2520,
+										["c_max"] = 1348,
+										["id"] = 48569,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 1348,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["end_time"] = 1670958188,
+							["last_dps"] = 1552.778442758626,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 304.00698,
+							["start_time"] = 1670958180,
+							["delay"] = 0,
+							["friendlyfire_total"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003794,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 304,
+							},
+							["serial"] = "Creature-0-4446-571-16687-26358-000018C955",
+							["pets"] = {
+							},
+							["aID"] = "26358",
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 304.003794,
+							["damage_taken"] = 9812.003794,
+							["monster"] = true,
+							["end_time"] = 1670958188,
+							["on_hold"] = false,
+							["last_event"] = 1670958186,
+							["nome"] = "Ice Heart Jormungar Feeder",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 304,
+										["targets"] = {
+											["Moolatz"] = 304,
+										},
+										["n_dmg"] = 304,
+										["n_min"] = 304,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 304,
+										["c_max"] = 0,
+										["DODGE"] = 2,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["start_time"] = 1670958186,
+							["delay"] = 0,
+							["total"] = 304.003794,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 259,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorb"] = 0.004461,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["classe"] = "DRUID",
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.004461,
+							["targets_overheal"] = {
+								["Moolatz"] = 559,
+							},
+							["healing_taken"] = 0.004461,
+							["totalover"] = 559.004461,
+							["total_without_pet"] = 0.004461,
+							["iniciar_hps"] = false,
+							["start_time"] = 1670958181,
+							["aID"] = "4465-02B843FA",
+							["end_time"] = 1670958188,
+							["total"] = 0.004461,
+							["heal_enemy_amt"] = 0,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[34299] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Moolatz"] = 559,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Moolatz"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 1,
+										["overheal"] = 559,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 34299,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["totaldenied"] = 0.004461,
+							["delay"] = 0,
+							["last_event"] = 1670958181,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 259,
+					["_ActorTable"] = {
+						{
+							["received"] = 25.002173,
+							["resource"] = 0.002173,
+							["targets"] = {
+								["Moolatz"] = 25,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "DRUID",
+							["passiveover"] = 0.002173,
+							["total"] = 25.002173,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[68285] = {
+										["total"] = 0,
+										["id"] = 68285,
+										["totalover"] = 756,
+										["targets"] = {
+											["Moolatz"] = 0,
+										},
+										["counter"] = 1,
+									},
+									[51178] = {
+										["total"] = 25,
+										["id"] = 51178,
+										["totalover"] = 35,
+										["targets"] = {
+											["Moolatz"] = 25,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["alternatepower"] = 0.002173,
+							["last_event"] = 1670958181,
+							["aID"] = "4465-02B843FA",
+							["tipo"] = 3,
+							["serial"] = "Player-4465-02B843FA",
+							["totalover"] = 791.002173,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 259,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[48565] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 6,
+										["id"] = 48565,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[48573] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 5,
+										["id"] = 48573,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[16857] = {
+										["activedamt"] = -1,
+										["id"] = 16857,
+										["targets"] = {
+										},
+										["actived_at"] = 1670958186,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[50212] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 50212,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[48420] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 48420,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[48834] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 48834,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[377749] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 377749,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[57940] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 57940,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[24932] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 24932,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[26991] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 26991,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[53307] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 53307,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[69369] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 4,
+										["id"] = 69369,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[16870] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 1,
+										["id"] = 16870,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[768] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 768,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 11,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[48569] = 3,
+								[50212] = 1,
+								[48573] = 1,
+								[48576] = 1,
+							},
+							["buff_uptime"] = 75,
+							["nome"] = "Moolatz",
+							["last_event"] = 1670958188,
+							["tipo"] = 4,
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["debuff_uptime_targets"] = {
+							},
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 259,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = "Player-4465-02B843FA",
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 2890505.803,
+				["tempo_start"] = 1670958180,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 15039,
+				["playing_solo"] = true,
+				["totals"] = {
+					10116, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 25,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					9812, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 25,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:03:09",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Ice Heart Jormungar Feeder",
+				["TotalElapsedCombatTime"] = 2890500.521,
+				["CombatEndedAt"] = 2890500.521,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:03:01",
+				["end_time"] = 2890500.521,
+				["combat_id"] = 259,
+				["frags"] = {
+					["Ice Heart Jormungar Feeder"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 2890492.352,
+				["contra"] = "Ice Heart Jormungar Feeder",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Moolatz"] = 0.004461,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 9812.00698,
+						}, -- [1]
+					},
+				},
+			}, -- [16]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 258,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00424,
+							["damage_from"] = {
+								["Ice Heart Jormungar Feeder"] = true,
+							},
+							["targets"] = {
+								["Ice Heart Jormungar Feeder"] = 9696,
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 9696.00424,
+							["aID"] = "4465-02B843FA",
+							["dps_started"] = false,
+							["total"] = 9696.00424,
+							["on_hold"] = false,
+							["last_event"] = 1670958109,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 538,
+										["g_amt"] = 0,
+										["n_max"] = 286,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 1361,
+										},
+										["n_dmg"] = 823,
+										["n_min"] = 252,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 1361,
+										["c_max"] = 538,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 538,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[48565] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 943,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 943,
+										},
+										["n_dmg"] = 943,
+										["n_min"] = 943,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 943,
+										["c_max"] = 0,
+										["id"] = 48565,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[48569] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 608,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 608,
+										},
+										["n_dmg"] = 608,
+										["n_min"] = 608,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 608,
+										["c_max"] = 0,
+										["id"] = 48569,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[48573] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 672,
+										["g_amt"] = 0,
+										["n_max"] = 891,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 1563,
+										},
+										["n_dmg"] = 891,
+										["n_min"] = 891,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 1563,
+										["c_max"] = 672,
+										["id"] = 48573,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 672,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[53307] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 75,
+										},
+										["n_dmg"] = 75,
+										["n_min"] = 75,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 75,
+										["c_max"] = 0,
+										["id"] = 53307,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[48576] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 5146,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 5146,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 5146,
+										["c_max"] = 5146,
+										["id"] = 48576,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 5146,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["end_time"] = 1670958110,
+							["last_dps"] = 2433.736004195844,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 268.00424,
+							["start_time"] = 1670958105,
+							["delay"] = 0,
+							["friendlyfire_total"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003507,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 268,
+							},
+							["serial"] = "Creature-0-4446-571-16687-26358-000018C993",
+							["pets"] = {
+							},
+							["aID"] = "26358",
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 268.003507,
+							["damage_taken"] = 9696.003507,
+							["monster"] = true,
+							["end_time"] = 1670958110,
+							["on_hold"] = false,
+							["last_event"] = 1670958107,
+							["nome"] = "Ice Heart Jormungar Feeder",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 268,
+										["targets"] = {
+											["Moolatz"] = 268,
+										},
+										["n_dmg"] = 268,
+										["n_min"] = 268,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 268,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["start_time"] = 1670958107,
+							["delay"] = 0,
+							["total"] = 268.003507,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 258,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorb"] = 0.003262,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["classe"] = "DRUID",
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.003262,
+							["targets_overheal"] = {
+								["Moolatz"] = 559,
+							},
+							["healing_taken"] = 0.003262,
+							["totalover"] = 559.003262,
+							["total_without_pet"] = 0.003262,
+							["iniciar_hps"] = false,
+							["start_time"] = 1670958106,
+							["aID"] = "4465-02B843FA",
+							["end_time"] = 1670958110,
+							["total"] = 0.003262,
+							["heal_enemy_amt"] = 0,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[34299] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Moolatz"] = 559,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Moolatz"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 1,
+										["overheal"] = 559,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 34299,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["totaldenied"] = 0.003262,
+							["delay"] = 0,
+							["last_event"] = 1670958106,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 258,
+					["_ActorTable"] = {
+						{
+							["received"] = 60.001057,
+							["resource"] = 0.001057,
+							["targets"] = {
+								["Moolatz"] = 60,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "DRUID",
+							["passiveover"] = 0.001057,
+							["total"] = 60.001057,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[68285] = {
+										["total"] = 0,
+										["id"] = 68285,
+										["totalover"] = 757,
+										["targets"] = {
+											["Moolatz"] = 0,
+										},
+										["counter"] = 1,
+									},
+									[51178] = {
+										["total"] = 60,
+										["id"] = 51178,
+										["totalover"] = 0,
+										["targets"] = {
+											["Moolatz"] = 60,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["alternatepower"] = 0.001057,
+							["last_event"] = 1670958106,
+							["aID"] = "4465-02B843FA",
+							["tipo"] = 3,
+							["serial"] = "Player-4465-02B843FA",
+							["totalover"] = 757.001057,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 258,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[48565] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 4,
+										["id"] = 48565,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[48573] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 3,
+										["id"] = 48573,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[16857] = {
+										["activedamt"] = -1,
+										["id"] = 16857,
+										["targets"] = {
+										},
+										["actived_at"] = 1670958109,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[50212] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 4,
+										["id"] = 50212,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[48420] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 5,
+										["id"] = 48420,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[48848] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 5,
+										["id"] = 48848,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[768] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 5,
+										["id"] = 768,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[377749] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 5,
+										["id"] = 377749,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[57940] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 5,
+										["id"] = 57940,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[24932] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 5,
+										["id"] = 24932,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[26991] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 5,
+										["id"] = 26991,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[53307] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 5,
+										["id"] = 53307,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[69369] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 1,
+										["id"] = 69369,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 7,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[50212] = 1,
+								[48569] = 2,
+								[48573] = 1,
+								[48848] = 1,
+								[48576] = 1,
+							},
+							["buff_uptime"] = 45,
+							["nome"] = "Moolatz",
+							["last_event"] = 1670958110,
+							["tipo"] = 4,
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["debuff_uptime_targets"] = {
+							},
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 258,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = "Player-4465-02B843FA",
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 2890490.419,
+				["tempo_start"] = 1670958105,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 15038,
+				["playing_solo"] = true,
+				["totals"] = {
+					9964, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 60,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					9696, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 60,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:01:51",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Ice Heart Jormungar Feeder",
+				["TotalElapsedCombatTime"] = 2890422.281,
+				["CombatEndedAt"] = 2890422.281,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:01:46",
+				["end_time"] = 2890422.281,
+				["combat_id"] = 258,
+				["frags"] = {
+					["Ice Heart Jormungar Feeder"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 2890417.532,
+				["contra"] = "Ice Heart Jormungar Feeder",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Moolatz"] = 0.003262,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 9696.00424,
+						}, -- [1]
+					},
+				},
+			}, -- [17]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 257,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00816,
+							["damage_from"] = {
+								["Ice Heart Jormungar Feeder"] = true,
+							},
+							["targets"] = {
+								["Ice Heart Jormungar Feeder"] = 9825,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["classe"] = "DRUID",
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 9825.00816,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 9825.00816,
+							["damage_taken"] = 1297.00816,
+							["tipo"] = 1,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 4,
+										["b_amt"] = 1,
+										["c_dmg"] = 2049,
+										["g_amt"] = 0,
+										["n_max"] = 236,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 3134,
+										},
+										["n_dmg"] = 1085,
+										["n_min"] = 173,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["ChartData"] = {
+											[5] = 1879,
+										},
+										["total"] = 3134,
+										["c_max"] = 518,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 173,
+										["a_dmg"] = 0,
+										["c_min"] = 505,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+									[48565] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 2163,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 2163,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 2163,
+										},
+										["total"] = 2163,
+										["c_max"] = 2163,
+										["id"] = 48565,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 2163,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[48569] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 514,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 514,
+										},
+										["n_dmg"] = 514,
+										["n_min"] = 514,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 514,
+										},
+										["total"] = 514,
+										["c_max"] = 0,
+										["id"] = 48569,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[48573] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 662,
+										["g_amt"] = 0,
+										["n_max"] = 865,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 1527,
+										},
+										["n_dmg"] = 865,
+										["n_min"] = 865,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[5] = 662,
+										},
+										["total"] = 1527,
+										["c_max"] = 662,
+										["id"] = 48573,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 662,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[53307] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 223,
+										},
+										["n_dmg"] = 223,
+										["n_min"] = 74,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[5] = 149,
+										},
+										["total"] = 223,
+										["c_max"] = 0,
+										["id"] = 53307,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["extra"] = {
+										},
+										["spellschool"] = 8,
+									},
+									[48576] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2264,
+										["targets"] = {
+											["Ice Heart Jormungar Feeder"] = 2264,
+										},
+										["n_dmg"] = 2264,
+										["n_min"] = 2264,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 2264,
+										},
+										["total"] = 2264,
+										["c_max"] = 0,
+										["id"] = 48576,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["end_time"] = 1670957945,
+							["last_dps"] = 1097.766274894605,
+							["colocacao"] = 1,
+							["last_event"] = 1670957944,
+							["on_hold"] = false,
+							["start_time"] = 1670957936,
+							["serial"] = "Player-4465-02B843FA",
+							["aID"] = "4465-02B843FA",
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.002817,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 1297,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["damage_taken"] = 9825.002817,
+							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1297.002817,
+							["monster"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1670957945,
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["nome"] = "Ice Heart Jormungar Feeder",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 299,
+										["targets"] = {
+											["Moolatz"] = 817,
+										},
+										["n_dmg"] = 817,
+										["n_min"] = 258,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 817,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 3,
+										["spellschool"] = 1,
+										["MISS"] = 1,
+									}, -- [1]
+									[47447] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 480,
+										["targets"] = {
+											["Moolatz"] = 480,
+										},
+										["n_dmg"] = 480,
+										["n_min"] = 480,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 480,
+										["c_max"] = 0,
+										["id"] = 47447,
+										["r_dmg"] = 480,
+										["r_amt"] = 1,
+										["b_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
+									},
+								},
+								["tipo"] = 2,
+							},
+							["total"] = 1297.002817,
+							["on_hold"] = false,
+							["fight_component"] = true,
+							["custom"] = 0,
+							["last_event"] = 1670957944,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1670957937,
+							["serial"] = "Creature-0-4446-571-16687-26358-000018C63D",
+							["aID"] = "26358",
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 257,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "DRUID",
+							["totalover"] = 301.005568,
+							["total_without_pet"] = 817.005568,
+							["total"] = 817.005568,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02B843FA",
+							["totalabsorb"] = 0.005568,
+							["last_hps"] = 91.28553832687206,
+							["targets"] = {
+								["Moolatz"] = 817,
+							},
+							["totalover_without_pet"] = 0.005568,
+							["healing_taken"] = 817.005568,
+							["fight_component"] = true,
+							["end_time"] = 1670957945,
+							["tipo"] = 2,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[34299] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Moolatz"] = 301,
+										},
+										["n_max"] = 557,
+										["targets"] = {
+											["Moolatz"] = 817,
+										},
+										["n_min"] = 260,
+										["counter"] = 2,
+										["overheal"] = 301,
+										["total"] = 817,
+										["c_max"] = 0,
+										["id"] = 34299,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 817,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["targets_overheal"] = {
+								["Moolatz"] = 301,
+							},
+							["aID"] = "4465-02B843FA",
+							["custom"] = 0,
+							["last_event"] = 1670957943,
+							["totaldenied"] = 0.005568,
+							["start_time"] = 1670957937,
+							["delay"] = 0,
+							["heal_enemy_amt"] = 0,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 257,
+					["_ActorTable"] = {
+						{
+							["received"] = 0.004058,
+							["resource"] = 0.004058,
+							["targets"] = {
+								["Moolatz"] = 0,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "DRUID",
+							["passiveover"] = 0.004058,
+							["fight_component"] = true,
+							["total"] = 0.004058,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									[68285] = {
+										["total"] = 0,
+										["id"] = 68285,
+										["totalover"] = 1513,
+										["targets"] = {
+											["Moolatz"] = 0,
+										},
+										["counter"] = 2,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["totalover"] = 1513.004058,
+							["alternatepower"] = 0.004058,
+							["last_event"] = 1670957943,
+							["tipo"] = 3,
+							["aID"] = "4465-02B843FA",
+							["serial"] = "Player-4465-02B843FA",
+							["flag_original"] = 1297,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 257,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[48565] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 48565,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48573] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 48573,
+										["uptime"] = 5,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[16857] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 16857,
+										["uptime"] = 7,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 74,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[48420] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48420,
+										["uptime"] = 9,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[48834] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 48834,
+										["uptime"] = 7,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 377749,
+										["uptime"] = 9,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[57940] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 57940,
+										["uptime"] = 9,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[24932] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 24932,
+										["uptime"] = 9,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[26991] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 26991,
+										["uptime"] = 9,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[53307] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 53307,
+										["uptime"] = 9,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[69369] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 69369,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[768] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 768,
+										["uptime"] = 9,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 18,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[48565] = 1,
+								[16857] = 1,
+								[48569] = 1,
+								[48573] = 1,
+								[48576] = 1,
+							},
+							["nome"] = "Moolatz",
+							["tipo"] = 4,
+							["last_event"] = 1670957945,
+							["classe"] = "DRUID",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["debuff_uptime_targets"] = {
+							},
+						}, -- [1]
+						{
+							["monster"] = true,
+							["pets"] = {
+							},
+							["nome"] = "Ice Heart Jormungar Feeder",
+							["aID"] = "26358",
+							["spell_cast"] = {
+								[47447] = 1,
+							},
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["serial"] = "Creature-0-4446-571-16687-26358-000018C63D",
+							["flag_original"] = 68168,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 257,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = "Player-4465-02B843FA",
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 2890415.797,
+				["tempo_start"] = 1670957936,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 15036,
+				["playing_solo"] = true,
+				["totals"] = {
+					11122, -- [1]
+					817, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					9825, -- [1]
+					817, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "19:59:05",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Ice Heart Jormungar Feeder",
+				["TotalElapsedCombatTime"] = 2890257.022,
+				["CombatEndedAt"] = 2890257.022,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "19:58:56",
+				["end_time"] = 2890257.022,
+				["combat_id"] = 257,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Moolatz"] = 9825.00816,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Moolatz"] = 817.005568,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Moolatz"] = 10703.004635,
-						}, -- [1]
-					},
 				},
-				["end_time"] = 2771103.737,
-				["combat_id"] = 236,
+				["frags"] = {
+					["Ice Heart Jormungar Feeder"] = 1,
+				},
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["spells_cast_timeline"] = {
-				},
 				["player_last_events"] = {
-					["Moolatz"] = {
-						{
-							true, -- [1]
-							51879, -- [2]
-							110, -- [3]
-							1670838795.793, -- [4]
-							11751, -- [5]
-							"Jormungar Tunneler", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-							false, -- [11]
-							false, -- [12]
-						}, -- [1]
-						{
-							true, -- [1]
-							51879, -- [2]
-							109, -- [3]
-							1670838798.743, -- [4]
-							11662, -- [5]
-							"Jormungar Tunneler", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-							false, -- [11]
-							false, -- [12]
-						}, -- [2]
-						{
-							true, -- [1]
-							51879, -- [2]
-							97, -- [3]
-							1670838801.793, -- [4]
-							11600, -- [5]
-							"Jormungar Tunneler", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-							false, -- [11]
-							false, -- [12]
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 4,
-					},
 				},
-				["data_inicio"] = "10:53:02",
 				["CombatSkillCache"] = {
 				},
-				["frags"] = {
-					["Jormungar Tunneler"] = 1,
-				},
-				["start_time"] = 2771092.537,
+				["contra"] = "Ice Heart Jormungar Feeder",
+				["start_time"] = 2890248.072,
 				["TimeData"] = {
 				},
-				["contra"] = "Jormungar Tunneler",
+				["spells_cast_timeline"] = {
+				},
 			}, -- [18]
 		},
 	},
@@ -10880,7 +14867,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1670613589,
 	["active_profile"] = "xVermin",
-	["last_day"] = "12",
+	["last_day"] = "13",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -10941,6 +14928,21 @@ _detalhes_database = {
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
+			["y"] = -183.107162475586,
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["font_size"] = 10,
+			["use_spark"] = false,
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -10952,21 +14954,6 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["row_spacement"] = 19,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["use_spark"] = false,
-			["font_size"] = 10,
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
-			["y"] = -183.107162475586,
 			["use_square_mode"] = false,
 			["main_frame_locked"] = true,
 			["main_frame_size"] = {
@@ -11038,9 +15025,13 @@ _detalhes_database = {
 			["author"] = "Terciob",
 		},
 	},
-	["last_realversion"] = 148,
 	["announce_firsthit"] = {
 		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["announce_prepots"] = {
+		["enabled"] = false,
+		["reverse"] = false,
 		["channel"] = "SELF",
 	},
 	["cached_roles"] = {
@@ -11061,7 +15052,7 @@ _detalhes_database = {
 		["Player-4465-03AD8EAD"] = "TANK",
 		["Player-4742-039D00FC"] = "DAMAGER",
 		["Player-4464-02FDEC4C"] = "DAMAGER",
-		["Player-4476-0174B4FA"] = "DAMAGER",
+		["Player-4701-0122E843"] = "DAMAGER",
 		["Player-4476-04B14D2D"] = "DAMAGER",
 		["Player-4477-0431F1D8"] = "HEALER",
 		["Player-4742-03AA8FD8"] = "DAMAGER",
@@ -11080,7 +15071,7 @@ _detalhes_database = {
 		["Player-4465-03BC7E0A"] = "TANK",
 		["Player-4476-045A5FA3"] = "HEALER",
 		["Player-4477-04AC58D9"] = "DAMAGER",
-		["Player-4464-039285F2"] = "DAMAGER",
+		["Player-4477-0492D49D"] = "DAMAGER",
 		["Player-4813-02222E15"] = "DAMAGER",
 		["Player-4477-03DEB911"] = "DAMAGER",
 		["Player-4742-03A8E3B9"] = "HEALER",
@@ -11088,8 +15079,8 @@ _detalhes_database = {
 		["Player-4476-0497ED95"] = "DAMAGER",
 		["Player-4476-039A50EC"] = "DAMAGER",
 		["Player-4477-0219D057"] = "DAMAGER",
-		["Player-4467-0059B681"] = "DAMAGER",
-		["Player-4465-0303B419"] = "DAMAGER",
+		["Player-4701-037A70AA"] = "DAMAGER",
+		["Player-4742-03A1872F"] = "DAMAGER",
 		["Player-4465-035D7E33"] = "DAMAGER",
 		["Player-4701-03821C78"] = "DAMAGER",
 		["Player-4477-02CA9A6D"] = "DAMAGER",
@@ -11111,13 +15102,13 @@ _detalhes_database = {
 		["Player-4442-01CB1178"] = "DAMAGER",
 		["Player-4455-02D2BF16"] = "DAMAGER",
 		["Player-4454-04B050FB"] = "TANK",
-		["Player-4811-03B17C22"] = "DAMAGER",
+		["Player-4476-0437163B"] = "DAMAGER",
 		["Player-4742-03ABFF78"] = "DAMAGER",
-		["Player-4477-04108EF6"] = "DAMAGER",
+		["Player-4813-02E48DBE"] = "DAMAGER",
 		["Player-4816-04A28E83"] = "DAMAGER",
 		["Player-4456-04ABAE28"] = "DAMAGER",
-		["Player-4465-02CBFC54"] = "DAMAGER",
-		["Player-4477-04B19F1F"] = "TANK",
+		["Player-4476-04B13412"] = "TANK",
+		["Player-4701-03ACB4A3"] = "TANK",
 		["Player-4465-0382352D"] = "DAMAGER",
 		["Player-4477-04AFE932"] = "HEALER",
 		["Player-4701-03A4EB9E"] = "TANK",
@@ -11125,40 +15116,40 @@ _detalhes_database = {
 		["Player-4465-03BC55D9"] = "HEALER",
 		["Player-4742-019006C5"] = "DAMAGER",
 		["Player-4454-04A7535F"] = "TANK",
-		["Player-4465-036E4B91"] = "DAMAGER",
+		["Player-4477-0435E253"] = "DAMAGER",
 		["Player-4742-00BD292E"] = "DAMAGER",
 		["Player-4476-03DEBB4E"] = "DAMAGER",
 		["Player-4476-039F225E"] = "HEALER",
 		["Player-4701-03A3670C"] = "DAMAGER",
-		["Player-4815-049AFB92"] = "DAMAGER",
+		["Player-4453-04AF41CF"] = "TANK",
 		["Player-4465-02BF5019"] = "DAMAGER",
 		["Player-4465-02DD7975"] = "DAMAGER",
 		["Player-4465-02E5C643"] = "DAMAGER",
-		["Player-4701-03A15E03"] = "TANK",
+		["Player-4477-03B0A2B9"] = "DAMAGER",
 		["Player-4477-0459D267"] = "HEALER",
 		["Player-4465-02EE6D15"] = "DAMAGER",
 		["Player-4477-02E4768C"] = "HEALER",
 		["Player-4742-015E50F2"] = "DAMAGER",
-		["Player-4476-01501919"] = "TANK",
+		["Player-4816-04AB2CCF"] = "DAMAGER",
 		["Player-4477-0475D930"] = "TANK",
-		["Player-4477-03824484"] = "DAMAGER",
+		["Player-4465-02E593AE"] = "TANK",
 		["Player-4811-03A829E9"] = "DAMAGER",
 		["Player-4464-03B09BF3"] = "DAMAGER",
 		["Player-4815-047AE592"] = "DAMAGER",
-		["Player-4701-02B64917"] = "DAMAGER",
+		["Player-4477-03AFFDEF"] = "DAMAGER",
 		["Player-4465-02E58934"] = "TANK",
 		["Player-4477-04751CB0"] = "TANK",
 		["Player-4745-038C86B0"] = "DAMAGER",
 		["Player-4476-04ADE0AB"] = "DAMAGER",
 		["Player-4477-04B195D7"] = "DAMAGER",
 		["Player-4441-03A9BC79"] = "DAMAGER",
-		["Player-4701-031718F2"] = "DAMAGER",
+		["Player-4476-04AA9AC7"] = "DAMAGER",
 		["Player-4476-04B1B64C"] = "DAMAGER",
 		["Player-4476-043C007E"] = "DAMAGER",
 		["Player-4476-0399B934"] = "HEALER",
 		["Player-4477-0339BEBB"] = "DAMAGER",
 		["Player-4464-0299D63E"] = "DAMAGER",
-		["Player-4440-02EE2860"] = "DAMAGER",
+		["Player-4701-03A8EC2A"] = "TANK",
 		["Player-4476-0493D27B"] = "DAMAGER",
 		["Player-4745-03A7F75C"] = "TANK",
 		["Player-4701-032EA8FF"] = "DAMAGER",
@@ -11173,15 +15164,15 @@ _detalhes_database = {
 		["Player-4701-0317C60F"] = "DAMAGER",
 		["Player-4465-0277B076"] = "HEALER",
 		["Player-4465-03AEF9DA"] = "DAMAGER",
-		["Player-4703-0229962D"] = "DAMAGER",
+		["Player-4678-01533823"] = "DAMAGER",
 		["Player-4477-04AC9720"] = "HEALER",
 		["Player-4465-02FC3628"] = "DAMAGER",
-		["Player-4476-011E03D0"] = "DAMAGER",
+		["Player-4477-033CC78F"] = "DAMAGER",
 		["Player-4476-048E2734"] = "DAMAGER",
 		["Player-4701-0381C253"] = "TANK",
 		["Player-4464-039801A9"] = "DAMAGER",
-		["Player-4476-043CF37C"] = "DAMAGER",
-		["Player-4813-03964084"] = "DAMAGER",
+		["Player-4466-00CC40C0"] = "DAMAGER",
+		["Player-4701-0313FB68"] = "DAMAGER",
 		["Player-4811-03972E5D"] = "DAMAGER",
 		["Player-4465-02E4A3DF"] = "DAMAGER",
 		["Player-4465-02E72E83"] = "DAMAGER",
@@ -11197,7 +15188,7 @@ _detalhes_database = {
 		["Player-4476-04616A94"] = "DAMAGER",
 		["Player-4455-04AFD28A"] = "DAMAGER",
 		["Player-4465-02E896F9"] = "DAMAGER",
-		["Player-4745-03BD9591"] = "DAMAGER",
+		["Player-4465-036946B4"] = "DAMAGER",
 		["Player-4465-03044A2B"] = "HEALER",
 		["Player-4441-028525FD"] = "TANK",
 		["Player-4476-043DA6F0"] = "TANK",
@@ -11209,117 +15200,117 @@ _detalhes_database = {
 		["Player-4465-02E88FBB"] = "DAMAGER",
 		["Player-4742-03A12EDF"] = "DAMAGER",
 		["Player-4465-03AC740D"] = "TANK",
-		["Player-4440-02F4FD8B"] = "DAMAGER",
+		["Player-4701-03AEB105"] = "DAMAGER",
 		["Player-4745-00F1ABD7"] = "HEALER",
 		["Player-4453-046930FE"] = "DAMAGER",
 		["Player-4811-0385DD31"] = "DAMAGER",
 		["Player-4742-03AB7390"] = "DAMAGER",
 		["Player-4811-03A2F5FE"] = "DAMAGER",
 		["Player-4465-038B9A6C"] = "TANK",
-		["Player-4465-02C366BD"] = "DAMAGER",
+		["Player-4476-043CF37C"] = "DAMAGER",
 		["Player-4701-037ABC90"] = "DAMAGER",
-		["Player-4442-039853E6"] = "DAMAGER",
+		["Player-4465-036E4B91"] = "DAMAGER",
 		["Player-4476-04741E06"] = "DAMAGER",
-		["Player-4477-0438937C"] = "DAMAGER",
+		["Player-4465-02EE4B0B"] = "DAMAGER",
 		["Player-4466-01714E69"] = "HEALER",
-		["Player-4477-01554A23"] = "DAMAGER",
-		["Player-4701-0388DA1C"] = "TANK",
-		["Player-4815-04684182"] = "DAMAGER",
-		["Player-4815-0478BF4C"] = "DAMAGER",
+		["Player-4742-03A9BAB1"] = "TANK",
+		["Player-4476-04912765"] = "DAMAGER",
+		["Player-4745-03AEFA42"] = "HEALER",
+		["Player-4465-02E5EFB2"] = "DAMAGER",
 		["Player-4465-0264E620"] = "DAMAGER",
 		["Player-4477-049818C5"] = "DAMAGER",
 		["Player-4815-04AADA85"] = "DAMAGER",
-		["Player-4464-03A50413"] = "DAMAGER",
-		["Player-4441-01D32613"] = "DAMAGER",
-		["Player-4464-039B4C1C"] = "DAMAGER",
-		["Player-4454-04A7FA3E"] = "DAMAGER",
-		["Player-4476-03DEC012"] = "HEALER",
+		["Player-4465-02BC5265"] = "TANK",
+		["Player-4742-03CDE839"] = "DAMAGER",
+		["Player-4442-039853E6"] = "DAMAGER",
+		["Player-4701-03185370"] = "HEALER",
+		["Player-4815-048AB3B8"] = "DAMAGER",
+		["Player-4466-00BAF052"] = "DAMAGER",
+		["Player-4701-031A8022"] = "DAMAGER",
+		["Player-4813-048ADC15"] = "DAMAGER",
 		["Player-4742-03C44CDF"] = "DAMAGER",
-		["Player-4476-03B77254"] = "DAMAGER",
-		["Player-4701-03A50970"] = "DAMAGER",
-		["Player-4477-04C24C57"] = "DAMAGER",
 		["Player-4465-02E59964"] = "DAMAGER",
-		["Player-4476-03BD9E04"] = "DAMAGER",
+		["Player-4701-039CE156"] = "DAMAGER",
 		["Player-4476-02190D0D"] = "DAMAGER",
-		["Player-4465-03059CDE"] = "DAMAGER",
+		["Player-4465-0275B09D"] = "DAMAGER",
 		["Player-4455-04B05EED"] = "TANK",
-		["Player-4701-0375684A"] = "DAMAGER",
+		["Player-4476-03BD9E04"] = "DAMAGER",
 		["Player-4815-0470CBEB"] = "DAMAGER",
 		["Player-4742-03AC49F6"] = "DAMAGER",
-		["Player-4816-04A0B653"] = "TANK",
-		["Player-4701-03ACB4A3"] = "TANK",
+		["Player-4464-03A50413"] = "DAMAGER",
+		["Player-4476-0469A0BF"] = "TANK",
 		["Player-4703-03A98A33"] = "DAMAGER",
 		["Player-4465-02E9A18A"] = "DAMAGER",
-		["Player-4465-02EE4B0B"] = "DAMAGER",
 		["Player-4454-04AEF3A1"] = "DAMAGER",
+		["Player-4701-0375684A"] = "DAMAGER",
 		["Player-4701-0338B28C"] = "DAMAGER",
 		["Player-4816-0498582C"] = "DAMAGER",
-		["Player-4465-02C5D029"] = "DAMAGER",
-		["Player-4701-039CE156"] = "DAMAGER",
-		["Player-4745-03AEFA42"] = "HEALER",
+		["Player-4815-04684182"] = "DAMAGER",
+		["Player-4815-0478BF4C"] = "DAMAGER",
+		["Player-4476-04B108A6"] = "DAMAGER",
 		["Player-4465-02DF3E1C"] = "DAMAGER",
 		["Player-4701-0385DACD"] = "TANK",
-		["Player-4476-049EE918"] = "TANK",
-		["Player-4465-00DFD773"] = "DAMAGER",
-		["Player-4811-036C57B9"] = "DAMAGER",
-		["Player-4701-03185370"] = "HEALER",
-		["Player-4441-03D6D040"] = "DAMAGER",
+		["Player-4476-0403334D"] = "HEALER",
 		["Player-4477-017B3259"] = "DAMAGER",
+		["Player-4477-049D2371"] = "DAMAGER",
+		["Player-4465-02E8FE5F"] = "DAMAGER",
+		["Player-4441-03D6D040"] = "DAMAGER",
+		["Player-4464-03BCEA34"] = "DAMAGER",
 		["Player-4816-0497A055"] = "DAMAGER",
 		["Player-4477-048FA61B"] = "DAMAGER",
 		["Player-4477-04B0F889"] = "DAMAGER",
 		["Player-4465-03054348"] = "DAMAGER",
 		["Player-4816-04A13386"] = "DAMAGER",
-		["Player-4465-02E5EFB2"] = "DAMAGER",
-		["Player-4465-0275B09D"] = "DAMAGER",
-		["Player-4701-03C1C37D"] = "DAMAGER",
+		["Player-4701-03A50970"] = "DAMAGER",
+		["Player-4464-03E635DA"] = "DAMAGER",
+		["Player-4454-02C312B6"] = "DAMAGER",
 		["Player-4465-03BE24BF"] = "DAMAGER",
 		["Player-4477-0483C796"] = "TANK",
-		["Player-4477-049D2371"] = "DAMAGER",
+		["Player-4440-02F4FD8B"] = "DAMAGER",
 		["Player-4456-02327E4B"] = "DAMAGER",
 		["Player-4742-03AE7CC5"] = "HEALER",
 		["Player-4477-0487FE8C"] = "DAMAGER",
-		["Player-4701-03AD7E88"] = "DAMAGER",
+		["Player-4701-03ACC49F"] = "TANK",
 		["Player-4465-02E6D741"] = "DAMAGER",
 		["Player-4476-0434D3BB"] = "DAMAGER",
 		["Player-4813-01D7BCF1"] = "DAMAGER",
 		["Player-4441-039A224C"] = "DAMAGER",
 		["Player-4476-043E6F98"] = "DAMAGER",
-		["Player-4467-02B77199"] = "DAMAGER",
-		["Player-4476-046E4C72"] = "HEALER",
+		["Player-4703-02801BB8"] = "DAMAGER",
+		["Player-4465-037C458A"] = "DAMAGER",
 		["Player-4813-02094950"] = "DAMAGER",
 		["Player-4476-03859B0C"] = "DAMAGER",
 		["Player-4477-044DDCFF"] = "DAMAGER",
-		["Player-4464-03BCEA34"] = "DAMAGER",
-		["Player-4465-02E8FE5F"] = "DAMAGER",
+		["Player-4465-03059CDE"] = "DAMAGER",
+		["Player-4465-00DFD773"] = "DAMAGER",
 		["Player-4465-02F7B5B1"] = "DAMAGER",
 		["Player-4701-03AD8CB5"] = "HEALER",
 		["Player-4476-03552E16"] = "DAMAGER",
 		["Player-4465-03BC4CFD"] = "HEALER",
-		["Player-4455-032E747B"] = "HEALER",
+		["Player-4465-03738C3D"] = "DAMAGER",
 		["Player-4815-04779E1B"] = "DAMAGER",
 		["Player-4441-0392BC9E"] = "TANK",
-		["Player-4476-04B108A6"] = "DAMAGER",
-		["Player-4815-047D7F11"] = "TANK",
-		["Player-4477-02C5E13B"] = "DAMAGER",
-		["Player-4815-048AB3B8"] = "DAMAGER",
-		["Player-4456-04AE4259"] = "TANK",
-		["Player-4477-0492D49D"] = "DAMAGER",
-		["Player-4465-03738C3D"] = "DAMAGER",
-		["Player-4742-03A04FAE"] = "DAMAGER",
-		["Player-4465-03B562BE"] = "HEALER",
-		["Player-4454-02C312B6"] = "DAMAGER",
-		["Player-4465-036BC0FF"] = "DAMAGER",
-		["Player-4742-03A32224"] = "DAMAGER",
-		["Player-4811-03A3A380"] = "DAMAGER",
 		["Player-4465-024B4F54"] = "DAMAGER",
-		["Player-4477-044DDB0F"] = "DAMAGER",
+		["Player-4455-04973286"] = "DAMAGER",
+		["Player-4477-01D63F16"] = "DAMAGER",
+		["Player-4467-02B77199"] = "DAMAGER",
+		["Player-4456-04AE4259"] = "TANK",
+		["Player-4476-04910C80"] = "TANK",
+		["Player-4477-02C5E13B"] = "DAMAGER",
+		["Player-4476-03725EC6"] = "DAMAGER",
+		["Player-4465-03B562BE"] = "HEALER",
+		["Player-4477-04C24C57"] = "DAMAGER",
+		["Player-4465-036BC0FF"] = "DAMAGER",
+		["Player-4442-02750566"] = "TANK",
+		["Player-4811-03A3A380"] = "DAMAGER",
+		["Player-4742-03A9B0B8"] = "DAMAGER",
+		["Player-4441-01D32613"] = "DAMAGER",
 		["Player-4455-027D0B5F"] = "DAMAGER",
 		["Player-4466-038395AF"] = "DAMAGER",
-		["Player-4442-03A233F9"] = "DAMAGER",
-		["Player-4813-048ADC15"] = "DAMAGER",
-		["Player-4464-01448D50"] = "DAMAGER",
-		["Player-4742-03A1872F"] = "DAMAGER",
+		["Player-4742-03A82E01"] = "DAMAGER",
+		["Player-4701-03AD7E88"] = "DAMAGER",
+		["Player-4467-0389B948"] = "DAMAGER",
+		["Player-4464-02F4F5C4"] = "HEALER",
 		["Player-4465-03BC6756"] = "DAMAGER",
 		["Player-4464-03947026"] = "DAMAGER",
 		["Player-4477-04AB3C76"] = "DAMAGER",
@@ -11327,191 +15318,191 @@ _detalhes_database = {
 		["Player-4465-0301A91B"] = "DAMAGER",
 		["Player-4476-04A25747"] = "DAMAGER",
 		["Player-4476-03483CD8"] = "DAMAGER",
-		["Player-4477-03B0BF5D"] = "DAMAGER",
+		["Player-4477-044DDB0F"] = "DAMAGER",
 		["Player-4815-046F53A9"] = "DAMAGER",
 		["Player-4465-02D53FF9"] = "TANK",
 		["Player-4701-039A4556"] = "DAMAGER",
 		["Player-4465-013A0F84"] = "DAMAGER",
-		["Player-4465-02FD8F28"] = "DAMAGER",
-		["Player-4701-0381C047"] = "DAMAGER",
+		["Player-4476-047292AB"] = "DAMAGER",
+		["Player-4477-0254B481"] = "DAMAGER",
 		["Player-4476-04B17C80"] = "DAMAGER",
 		["Player-4476-04A933E9"] = "DAMAGER",
 		["Player-4476-036DF0DE"] = "TANK",
-		["Player-4476-04910C80"] = "TANK",
+		["Player-4477-03DF5CD9"] = "DAMAGER",
 		["Player-4701-03ADBAFD"] = "DAMAGER",
-		["Player-4701-0161DD12"] = "HEALER",
-		["Player-4701-03AEB105"] = "DAMAGER",
+		["Player-4815-047D7F11"] = "TANK",
+		["Player-4477-0438937C"] = "DAMAGER",
 		["Player-4476-0470A68E"] = "DAMAGER",
 		["Player-4813-049C7CFE"] = "DAMAGER",
 		["Player-4701-037B706E"] = "DAMAGER",
-		["Player-4465-02DF9BD4"] = "DAMAGER",
+		["Player-4440-02EE2860"] = "DAMAGER",
 		["Player-4466-0386640C"] = "DAMAGER",
 		["Player-4464-02789DCB"] = "DAMAGER",
 		["Player-4464-00193680"] = "DAMAGER",
 		["Player-4465-02EA181B"] = "DAMAGER",
-		["Player-4465-036946B4"] = "DAMAGER",
-		["Player-4477-04AE4A1B"] = "TANK",
+		["Player-4465-02FA1B75"] = "DAMAGER",
+		["Player-4701-0381C047"] = "DAMAGER",
 		["Player-4465-02E65254"] = "DAMAGER",
-		["Player-4813-04AC7347"] = "DAMAGER",
-		["Player-4701-03314E17"] = "TANK",
-		["Player-4476-04006B6C"] = "DAMAGER",
-		["Player-4476-04912765"] = "DAMAGER",
-		["Player-4815-04B53E93"] = "DAMAGER",
 		["Player-4476-044A3B22"] = "DAMAGER",
+		["Player-4701-03314E17"] = "TANK",
+		["Player-4464-01448D50"] = "DAMAGER",
+		["Player-4742-03A32224"] = "DAMAGER",
+		["Player-4815-04B53E93"] = "DAMAGER",
+		["Player-4742-037B48BE"] = "DAMAGER",
 		["Player-4813-04AB8252"] = "DAMAGER",
 		["Player-4703-0150AA81"] = "DAMAGER",
-		["Player-4465-039104E0"] = "TANK",
-		["Player-4465-02BC5265"] = "TANK",
-		["Player-4813-048F740A"] = "DAMAGER",
-		["Player-4477-0254B481"] = "DAMAGER",
-		["Player-4742-039ACC3F"] = "TANK",
-		["Player-4476-0469A0BF"] = "TANK",
+		["Player-4701-031821B6"] = "DAMAGER",
+		["Player-4701-0388DA1C"] = "TANK",
+		["Player-4465-02DF9BD4"] = "DAMAGER",
+		["Player-4442-03A233F9"] = "DAMAGER",
+		["Player-4701-03880021"] = "DAMAGER",
+		["Player-4476-039D69A3"] = "TANK",
 		["Player-4476-031E57FF"] = "HEALER",
-		["Player-4745-03CC0CA6"] = "DAMAGER",
+		["Player-4742-039ACC3F"] = "TANK",
 		["Player-4477-03BE2D39"] = "TANK",
 		["Player-4477-03D9F7B6"] = "DAMAGER",
-		["Player-4464-017B3546"] = "HEALER",
-		["Player-4476-0437163B"] = "DAMAGER",
+		["Player-4477-03A7BF8F"] = "HEALER",
+		["Player-4745-03BD9591"] = "DAMAGER",
 		["Player-4465-02E381E0"] = "DAMAGER",
 		["Player-4815-04BA2078"] = "DAMAGER",
-		["Player-4477-01E0D74F"] = "DAMAGER",
+		["Player-4745-03CC0CA6"] = "DAMAGER",
 		["Player-4745-03BD4EEF"] = "DAMAGER",
 		["Player-4811-0394EED3"] = "DAMAGER",
-		["Player-4701-03A555C0"] = "DAMAGER",
+		["Player-4477-04AE4A1B"] = "TANK",
 		["Player-4476-046A3991"] = "TANK",
-		["Player-4701-037EF2E6"] = "DAMAGER",
-		["Player-4813-04B1E45C"] = "DAMAGER",
+		["Player-4465-02C366BD"] = "DAMAGER",
+		["Player-4465-02FD19EF"] = "DAMAGER",
 		["Player-4465-0385F4CC"] = "DAMAGER",
 		["Player-4477-044E6A37"] = "DAMAGER",
 		["Player-4701-03436126"] = "DAMAGER",
 		["Player-4816-04B1862D"] = "DAMAGER",
 		["Player-4815-04842C7D"] = "DAMAGER",
 		["Player-4701-03AE94B9"] = "DAMAGER",
-		["Player-4477-04AEB731"] = "DAMAGER",
+		["Player-4477-04B00B48"] = "TANK",
 		["Player-4476-0348CFF8"] = "HEALER",
-		["Player-4476-03A93254"] = "DAMAGER",
-		["Player-4813-04AC12A0"] = "TANK",
+		["Player-4477-01E0D74F"] = "DAMAGER",
+		["Player-4477-01BAFA29"] = "TANK",
 		["Player-4476-03996607"] = "DAMAGER",
 		["Player-4476-04BCCDDA"] = "DAMAGER",
 		["Player-4477-045DDB68"] = "DAMAGER",
-		["Player-4678-01533823"] = "DAMAGER",
-		["Player-4476-043CB34D"] = "DAMAGER",
-		["Player-4464-0397E0EB"] = "DAMAGER",
-		["Player-4455-04973286"] = "DAMAGER",
+		["Player-4813-03964084"] = "DAMAGER",
+		["Player-4701-031718F2"] = "DAMAGER",
+		["Player-4701-02B64917"] = "DAMAGER",
+		["Player-4816-04A0B653"] = "TANK",
 		["Player-4701-03A862AD"] = "DAMAGER",
-		["Player-4477-04B00B48"] = "TANK",
+		["Player-4745-03ACD4F8"] = "DAMAGER",
 		["Player-4701-01B92F3F"] = "DAMAGER",
 		["Player-4454-02157755"] = "HEALER",
-		["Player-4465-028BE5A6"] = "TANK",
+		["Player-4464-02952068"] = "DAMAGER",
 		["Player-4465-02FB50C6"] = "HEALER",
 		["Player-4701-03D45C0D"] = "DAMAGER",
-		["Player-4442-02750566"] = "TANK",
+		["Player-4703-0229962D"] = "DAMAGER",
 		["Player-4477-0434CD60"] = "HEALER",
 		["Player-4742-03BE74D7"] = "DAMAGER",
-		["Player-4477-01BAFA29"] = "TANK",
+		["Player-4442-0245A2EB"] = "DAMAGER",
 		["Player-4811-0376A82F"] = "DAMAGER",
-		["Player-4454-049A4F40"] = "DAMAGER",
-		["Player-4701-03A8EC2A"] = "TANK",
+		["Player-4465-036E0E98"] = "DAMAGER",
+		["Player-4465-033FFE5A"] = "TANK",
 		["Player-4701-0170B8CB"] = "DAMAGER",
 		["Player-4476-0171287A"] = "DAMAGER",
-		["Player-4465-02F9C482"] = "DAMAGER",
+		["Player-4477-045E9A39"] = "DAMAGER",
 		["Player-4477-0251F461"] = "HEALER",
-		["Player-4464-02F4F5C4"] = "HEALER",
+		["Player-4701-039FF4C4"] = "HEALER",
 		["Player-4465-02F33F5C"] = "DAMAGER",
 		["Player-4745-03A13FCE"] = "DAMAGER",
 		["Player-4441-02675BD0"] = "DAMAGER",
-		["Player-4477-03B0030C"] = "DAMAGER",
+		["Player-4701-03A15E03"] = "TANK",
 		["Player-4476-020DE31E"] = "DAMAGER",
-		["Player-4442-0202BFC6"] = "DAMAGER",
+		["Player-4477-04AEB731"] = "DAMAGER",
 		["Player-4464-039C5E72"] = "DAMAGER",
 		["Player-4465-036D9970"] = "TANK",
-		["Player-4813-046729B5"] = "TANK",
+		["Player-4441-0346828B"] = "DAMAGER",
 		["Player-4701-03772FC7"] = "DAMAGER",
 		["Player-4465-01405DB1"] = "HEALER",
-		["Player-4476-04417AC6"] = "DAMAGER",
+		["Player-4813-048F740A"] = "DAMAGER",
 		["Player-4477-04B139E2"] = "HEALER",
 		["Player-4476-048743EA"] = "DAMAGER",
-		["Player-4467-0389B948"] = "DAMAGER",
-		["Player-4464-02952068"] = "DAMAGER",
-		["Player-4465-02E593AE"] = "TANK",
-		["Player-4815-048E2849"] = "DAMAGER",
+		["Player-4465-028BE5A6"] = "TANK",
+		["Player-4816-04960596"] = "DAMAGER",
+		["Player-4742-039F4F93"] = "DAMAGER",
+		["Player-4477-03824484"] = "DAMAGER",
 		["Player-4816-04A4EF03"] = "DAMAGER",
-		["Player-4816-04AB2CCF"] = "DAMAGER",
+		["Player-4815-048E2849"] = "DAMAGER",
 		["Player-4456-0483F826"] = "DAMAGER",
 		["Player-4465-02E59B91"] = "DAMAGER",
 		["Player-4476-04B20381"] = "TANK",
 		["Player-4477-044870C4"] = "DAMAGER",
-		["Player-4816-04970EF3"] = "DAMAGER",
-		["Player-4465-0051A6F9"] = "DAMAGER",
+		["Player-4477-04108EF6"] = "DAMAGER",
+		["Player-4813-03FAFF59"] = "DAMAGER",
 		["Player-4701-03A93222"] = "DAMAGER",
 		["Player-4441-039EF4DF"] = "DAMAGER",
 		["Player-4742-03CC6AB9"] = "DAMAGER",
-		["Player-4701-03880021"] = "DAMAGER",
+		["Player-4701-039E5EEB"] = "TANK",
 		["Player-4477-038C55F7"] = "DAMAGER",
 		["Player-4811-03AED575"] = "DAMAGER",
-		["Player-4477-045E9A39"] = "DAMAGER",
-		["Player-4476-039D69A3"] = "TANK",
-		["Player-4477-0435E253"] = "DAMAGER",
-		["Player-4476-04B13412"] = "TANK",
+		["Player-4701-03121603"] = "DAMAGER",
+		["Player-4476-03B77254"] = "DAMAGER",
+		["Player-4455-0497B664"] = "DAMAGER",
+		["Player-4465-02CBFC54"] = "DAMAGER",
 		["Player-4464-013199FE"] = "DAMAGER",
-		["Player-4815-04812FBB"] = "DAMAGER",
+		["Player-4476-04417AC6"] = "DAMAGER",
 		["Player-4465-02FDE92E"] = "DAMAGER",
-		["Player-4442-03BA74B1"] = "DAMAGER",
+		["Player-4816-04970EF3"] = "DAMAGER",
 		["Player-4476-04462387"] = "DAMAGER",
-		["Player-4465-036E0E98"] = "DAMAGER",
-		["Player-4477-046EF79F"] = "DAMAGER",
-		["Player-4454-04ADF86E"] = "DAMAGER",
+		["Player-4816-04966C53"] = "DAMAGER",
+		["Player-4477-04B0F745"] = "TANK",
+		["Player-4442-0103F1DD"] = "DAMAGER",
 		["Player-4465-036F53F4"] = "HEALER",
 		["Player-4749-032E0F4D"] = "DAMAGER",
-		["Player-4465-026361B6"] = "DAMAGER",
+		["Player-4815-04681CF4"] = "DAMAGER",
 		["Player-4816-04AAAC75"] = "HEALER",
 		["Player-4701-039F29B2"] = "DAMAGER",
 		["Player-4816-049E445C"] = "HEALER",
 		["Player-4464-03AC997B"] = "DAMAGER",
 		["Player-4476-048B093D"] = "TANK",
 		["Player-4701-03B56B3B"] = "DAMAGER",
-		["Player-4442-0103F1DD"] = "DAMAGER",
-		["Player-4476-047292AB"] = "DAMAGER",
-		["Player-4476-04AFA29A"] = "DAMAGER",
+		["Player-4476-045E2483"] = "DAMAGER",
 		["Player-4701-0375A9A0"] = "DAMAGER",
-		["Player-4477-0331BBCA"] = "DAMAGER",
+		["Player-4476-04AFA29A"] = "DAMAGER",
+		["Player-4440-01D96E82"] = "HEALER",
+		["Player-4467-0059B681"] = "DAMAGER",
 		["Player-4465-03D64083"] = "DAMAGER",
 		["Player-4745-028D7870"] = "DAMAGER",
 		["Player-4464-02CE48C9"] = "HEALER",
 		["Player-4701-03ACBD13"] = "TANK",
-		["Player-4465-033FFE5A"] = "TANK",
-		["Player-4816-04966C53"] = "DAMAGER",
+		["Player-4442-0202BFC6"] = "DAMAGER",
+		["Player-4701-030F2A42"] = "DAMAGER",
 		["Player-4476-04B20B31"] = "DAMAGER",
 		["Player-4701-034CADED"] = "DAMAGER",
 		["Player-4441-03A78041"] = "DAMAGER",
 		["Player-4815-04704580"] = "HEALER",
 		["Player-4477-04AF2CB5"] = "DAMAGER",
 		["Player-4701-03183B77"] = "DAMAGER",
-		["Player-4742-03BA657E"] = "DAMAGER",
+		["Player-4476-047B244F"] = "DAMAGER",
 		["Player-4465-02E3B4C2"] = "DAMAGER",
 		["Player-4701-0396DE85"] = "DAMAGER",
 		["Player-4465-02E88CAB"] = "DAMAGER",
-		["Player-4742-03AAC8EC"] = "DAMAGER",
+		["Player-4465-0051A6F9"] = "DAMAGER",
 		["Player-4816-04A2C4A2"] = "HEALER",
-		["Player-4476-045E2483"] = "DAMAGER",
+		["Player-4454-049A4F40"] = "DAMAGER",
 		["Player-4815-047F3B1D"] = "DAMAGER",
-		["Player-4476-043D9AC5"] = "DAMAGER",
+		["Player-4811-03ABD32F"] = "DAMAGER",
 		["Player-4465-02E736D5"] = "DAMAGER",
 		["Player-4476-03AF9392"] = "DAMAGER",
-		["Player-4701-037A70AA"] = "DAMAGER",
-		["Player-4815-04865F8D"] = "DAMAGER",
+		["Player-4477-046EF79F"] = "DAMAGER",
+		["Player-4477-04A9A5A5"] = "DAMAGER",
 		["Player-4701-03ACAEC7"] = "DAMAGER",
 		["Player-4742-03A4D61E"] = "DAMAGER",
-		["Player-4813-049AA8CC"] = "HEALER",
+		["Player-4811-037AFCE9"] = "DAMAGER",
 		["Player-4477-0381B354"] = "DAMAGER",
 		["Player-4477-044E1AB3"] = "DAMAGER",
 		["Player-4465-02E8515A"] = "DAMAGER",
 		["Player-4815-049B168D"] = "DAMAGER",
-		["Player-4477-04A9A5A5"] = "DAMAGER",
+		["Player-4815-04812FBB"] = "DAMAGER",
 		["Player-4701-037C01FE"] = "DAMAGER",
 		["Player-4464-03A1E9FC"] = "DAMAGER",
-		["Player-4465-0226937A"] = "DAMAGER",
-		["Player-4811-037AFCE9"] = "DAMAGER",
+		["Player-4477-045BA6E7"] = "TANK",
+		["Player-4464-039285F2"] = "DAMAGER",
 		["Player-4465-02EA7F29"] = "TANK",
 		["Player-4477-04C90426"] = "DAMAGER",
 		["Player-4465-02E0EA77"] = "HEALER",
@@ -11519,26 +15510,26 @@ _detalhes_database = {
 		["Player-4476-040311B5"] = "HEALER",
 		["Player-4477-03823715"] = "DAMAGER",
 		["Player-4465-02BC6B57"] = "DAMAGER",
-		["Player-4811-03ABD32F"] = "DAMAGER",
+		["Player-4476-043D9AC5"] = "DAMAGER",
 		["Player-4701-03743A17"] = "HEALER",
-		["Player-4813-03FAFF59"] = "DAMAGER",
+		["Player-4477-039B3773"] = "DAMAGER",
 		["Player-4465-00F4F733"] = "DAMAGER",
-		["Player-4476-047B244F"] = "DAMAGER",
-		["Player-4742-03A94213"] = "DAMAGER",
+		["Player-4742-03BA657E"] = "DAMAGER",
+		["Player-4454-04978A8A"] = "DAMAGER",
 		["Player-4701-03130686"] = "DAMAGER",
-		["Player-4815-04681CF4"] = "DAMAGER",
+		["Player-4701-033BD796"] = "DAMAGER",
 		["Player-4813-04A451E7"] = "DAMAGER",
 		["Player-4742-03D2CA6E"] = "DAMAGER",
 		["Player-4701-038E51C3"] = "DAMAGER",
-		["Player-4454-04978A8A"] = "DAMAGER",
+		["Player-4701-03B23A66"] = "DAMAGER",
 		["Player-4749-03960BD4"] = "TANK",
 		["Player-4465-02E47675"] = "DAMAGER",
 		["Player-4701-03768151"] = "DAMAGER",
 		["Player-4465-02BD4F10"] = "DAMAGER",
 		["Player-4701-03190ACD"] = "HEALER",
-		["Player-4701-03B23A66"] = "DAMAGER",
+		["Player-4742-03A94213"] = "DAMAGER",
 		["Player-4465-02BE8F0E"] = "DAMAGER",
-		["Player-4440-01D96E82"] = "HEALER",
+		["Player-4477-025CB6E7"] = "DAMAGER",
 		["Player-4465-03D36725"] = "DAMAGER",
 		["Player-4477-03B0DC75"] = "DAMAGER",
 		["Player-4813-04840D9B"] = "DAMAGER",
@@ -11594,11 +15585,11 @@ _detalhes_database = {
 		["Player-4742-03AE93BB"] = "DAMAGER",
 		["Player-4465-02EA7916"] = "DAMAGER",
 		["Player-4701-03195F54"] = "DAMAGER",
+		["Player-4815-048AD744"] = "DAMAGER",
 		["Player-4477-049ABDF5"] = "TANK",
-		["Player-4701-038E0110"] = "DAMAGER",
 		["Player-4701-032FFB2D"] = "DAMAGER",
 		["Player-4465-0257E5E8"] = "DAMAGER",
-		["Player-4815-048AD744"] = "DAMAGER",
+		["Player-4701-038E0110"] = "DAMAGER",
 		["Player-4476-0446F9BB"] = "DAMAGER",
 		["Player-4701-030F40D8"] = "DAMAGER",
 		["Player-4467-03A32262"] = "HEALER",
@@ -11632,17 +15623,17 @@ _detalhes_database = {
 		["Player-4742-03A07C0D"] = "DAMAGER",
 		["Player-4477-03309471"] = "DAMAGER",
 		["Player-4465-02D7AAAD"] = "DAMAGER",
-		["Player-4476-043A875B"] = "DAMAGER",
 		["Player-4701-031837B4"] = "TANK",
+		["Player-4742-0116319B"] = "DAMAGER",
 		["Player-4476-03DD0581"] = "TANK",
 		["Player-4815-046EF644"] = "DAMAGER",
 		["Player-4466-025B57DB"] = "HEALER",
 		["Player-4464-0396327A"] = "DAMAGER",
 		["Player-4465-00180435"] = "HEALER",
 		["Player-4464-037C0139"] = "DAMAGER",
-		["Player-4455-04B1B277"] = "DAMAGER",
-		["Player-4477-04AC58E4"] = "TANK",
 		["Player-4477-03B1CDB8"] = "TANK",
+		["Player-4477-04AC58E4"] = "TANK",
+		["Player-4701-039A46F4"] = "DAMAGER",
 		["Player-4476-047A79B6"] = "TANK",
 		["Player-4701-0380607A"] = "DAMAGER",
 		["Player-4455-04776DC5"] = "DAMAGER",
@@ -11662,19 +15653,19 @@ _detalhes_database = {
 		["Player-4465-0306C90B"] = "DAMAGER",
 		["Player-4442-0294A9E0"] = "DAMAGER",
 		["Player-4476-01F53742"] = "DAMAGER",
-		["Player-4465-0234ED4B"] = "DAMAGER",
+		["Player-4465-02E313C1"] = "DAMAGER",
 		["Player-4455-0453AE90"] = "DAMAGER",
 		["Player-4701-03A33B45"] = "DAMAGER",
-		["Player-4465-02E313C1"] = "DAMAGER",
-		["Player-4701-034854B1"] = "TANK",
 		["Player-4476-04426261"] = "DAMAGER",
+		["Player-4701-034854B1"] = "TANK",
+		["Player-4465-0234ED4B"] = "DAMAGER",
 		["Player-4816-04A66A2B"] = "HEALER",
 		["Player-4465-038A5961"] = "DAMAGER",
 		["Player-4701-0381B878"] = "TANK",
 		["Player-4477-0340EAC4"] = "DAMAGER",
 		["Player-4701-0320DA9C"] = "DAMAGER",
 		["Player-4440-03B20940"] = "DAMAGER",
-		["Player-4701-00B2A495"] = "DAMAGER",
+		["Player-4745-02786E99"] = "DAMAGER",
 		["Player-4701-03433572"] = "DAMAGER",
 		["Player-4477-01524D23"] = "DAMAGER",
 		["Player-4465-03BC49FF"] = "DAMAGER",
@@ -11695,7 +15686,7 @@ _detalhes_database = {
 		["Player-4476-03BE36F8"] = "DAMAGER",
 		["Player-4477-047354C1"] = "DAMAGER",
 		["Player-4813-033F9915"] = "DAMAGER",
-		["Player-4745-02786E99"] = "DAMAGER",
+		["Player-4441-02500ABE"] = "DAMAGER",
 		["Player-4464-00D247CA"] = "DAMAGER",
 		["Player-4464-0235BC47"] = "DAMAGER",
 		["Player-4703-038CCA4D"] = "DAMAGER",
@@ -11708,14 +15699,14 @@ _detalhes_database = {
 		["Player-4745-03AE87D2"] = "DAMAGER",
 		["Player-4749-01882F48"] = "TANK",
 		["Player-4815-046B4832"] = "DAMAGER",
-		["Player-4441-02500ABE"] = "DAMAGER",
-		["Player-4465-0397241B"] = "DAMAGER",
+		["Player-4701-00B2A495"] = "DAMAGER",
+		["Player-4742-027E8CB3"] = "DAMAGER",
 		["Player-4742-03CBFC84"] = "TANK",
 		["Player-4465-02E6D003"] = "DAMAGER",
 		["Player-4742-03D77DF6"] = "HEALER",
 		["Player-4745-03CC0CA4"] = "DAMAGER",
-		["Player-4476-04AD6F93"] = "DAMAGER",
-		["Player-4464-02F07619"] = "DAMAGER",
+		["Player-4464-03A5B73A"] = "DAMAGER",
+		["Player-4465-0397241B"] = "DAMAGER",
 		["Player-4477-03B79518"] = "DAMAGER",
 		["Player-4454-04536716"] = "DAMAGER",
 		["Player-4465-03A9FD4A"] = "DAMAGER",
@@ -11725,10 +15716,10 @@ _detalhes_database = {
 		["Player-4476-00CE2193"] = "DAMAGER",
 		["Player-4701-0396FA64"] = "HEALER",
 		["Player-4476-04B14ECD"] = "TANK",
-		["Player-4464-03A5B73A"] = "DAMAGER",
+		["Player-4476-043DC4C7"] = "DAMAGER",
 		["Player-4815-047BB17B"] = "TANK",
 		["Player-4476-0363277B"] = "HEALER",
-		["Player-4742-027E8CB3"] = "DAMAGER",
+		["Player-4464-02F07619"] = "DAMAGER",
 		["Player-4455-02B2CED1"] = "DAMAGER",
 		["Player-4476-04C7ADD7"] = "DAMAGER",
 		["Player-4465-0390D423"] = "DAMAGER",
@@ -11743,23 +15734,23 @@ _detalhes_database = {
 		["Player-4813-04A00117"] = "HEALER",
 		["Player-4477-0435A20B"] = "HEALER",
 		["Player-4465-03943A7E"] = "DAMAGER",
-		["Player-4476-043DC4C7"] = "DAMAGER",
+		["Player-4476-04AD6F93"] = "DAMAGER",
 		["Player-4477-0451096B"] = "HEALER",
 		["Player-4815-04C45C23"] = "DAMAGER",
 		["Player-4454-047744AF"] = "TANK",
 		["Player-4811-036D5C26"] = "DAMAGER",
 		["Player-4465-02EAD55A"] = "DAMAGER",
-		["Player-4742-03B4594E"] = "DAMAGER",
+		["Player-4701-038F9723"] = "TANK",
 		["Player-4455-04A7F214"] = "DAMAGER",
 		["Player-4465-036CDF58"] = "DAMAGER",
 		["Player-4476-03121BB3"] = "DAMAGER",
 		["Player-4476-02888C00"] = "DAMAGER",
 		["Player-4813-034F9148"] = "DAMAGER",
 		["Player-4476-043E1E57"] = "DAMAGER",
-		["Player-4477-033D0677"] = "DAMAGER",
+		["Player-4742-03B4594E"] = "DAMAGER",
 		["Player-4815-0485721E"] = "HEALER",
 		["Player-4813-04AC6A76"] = "DAMAGER",
-		["Player-4701-038F9723"] = "TANK",
+		["Player-4477-033D0677"] = "DAMAGER",
 		["Player-4477-03710961"] = "HEALER",
 		["Player-4701-03B77D10"] = "DAMAGER",
 		["Player-4476-03C08F87"] = "HEALER",
@@ -11768,12 +15759,12 @@ _detalhes_database = {
 		["Player-4701-03AB7C8D"] = "DAMAGER",
 		["Player-4477-04006AE8"] = "DAMAGER",
 		["Player-4701-03AD16B9"] = "TANK",
-		["Player-4701-039A46F4"] = "DAMAGER",
+		["Player-4455-04B1B277"] = "DAMAGER",
 		["Player-4456-0408ABB5"] = "DAMAGER",
 		["Player-4816-04AD7DF1"] = "TANK",
 		["Player-4815-047ECA19"] = "DAMAGER",
 		["Player-4701-0386A058"] = "DAMAGER",
-		["Player-4742-0116319B"] = "DAMAGER",
+		["Player-4476-043A875B"] = "DAMAGER",
 		["Player-4815-0492E950"] = "DAMAGER",
 		["Player-4464-03062885"] = "DAMAGER",
 		["Player-4464-036BD5CB"] = "DAMAGER",
@@ -11820,7 +15811,7 @@ _detalhes_database = {
 		["Player-4454-00879854"] = "DAMAGER",
 		["Player-4476-043B540B"] = "HEALER",
 		["Player-4701-030CCA0A"] = "DAMAGER",
-		["Player-4701-038C4C49"] = "TANK",
+		["Player-4476-0174B4FA"] = "DAMAGER",
 		["Player-4465-02E87F18"] = "DAMAGER",
 		["Player-4476-04806366"] = "TANK",
 		["Player-4465-02E7F109"] = "TANK",
@@ -11830,153 +15821,149 @@ _detalhes_database = {
 		["Player-4701-037F37F7"] = "DAMAGER",
 		["Player-4477-018CDD1B"] = "DAMAGER",
 		["Player-4701-037FAE0C"] = "DAMAGER",
-		["Player-4477-045BA6E7"] = "TANK",
+		["Player-4465-0226937A"] = "DAMAGER",
 		["Player-4465-02A3F8AB"] = "HEALER",
 		["Player-4813-04A729EA"] = "DAMAGER",
 		["Player-4701-03AE5EF8"] = "DAMAGER",
 		["Player-4454-04966AB7"] = "DAMAGER",
-		["Player-4464-0357F956"] = "DAMAGER",
-		["Player-4701-039FF4C4"] = "HEALER",
+		["Player-4465-0303B419"] = "DAMAGER",
+		["Player-4477-0331BBCA"] = "DAMAGER",
 		["Player-4476-049F1D18"] = "DAMAGER",
-		["Player-4477-025CB6E7"] = "DAMAGER",
+		["Player-4815-04865F8D"] = "DAMAGER",
 		["Player-4477-04BFB40B"] = "TANK",
 		["Player-4465-02679F4E"] = "DAMAGER",
-		["Player-4455-0497B664"] = "DAMAGER",
+		["Player-4464-0357F956"] = "DAMAGER",
 		["Player-4703-011FF165"] = "DAMAGER",
 		["Player-4476-04B051C4"] = "DAMAGER",
-		["Player-4701-033BD796"] = "DAMAGER",
+		["Player-4465-02FD8F28"] = "DAMAGER",
 		["Player-4466-02B5CC92"] = "DAMAGER",
 		["Player-4442-03A24C28"] = "DAMAGER",
-		["Player-4465-03E1BA65"] = "DAMAGER",
-		["Player-4701-0122E843"] = "DAMAGER",
-		["Player-4813-02E48DBE"] = "DAMAGER",
-		["Player-4477-039B3773"] = "DAMAGER",
+		["Player-4465-026361B6"] = "DAMAGER",
+		["Player-4811-03B17C22"] = "DAMAGER",
+		["Player-4701-038C4C49"] = "TANK",
+		["Player-4742-03AAC8EC"] = "DAMAGER",
 		["Player-4701-0253A59C"] = "TANK",
+		["Player-4813-046729B5"] = "TANK",
 		["Player-4701-033C9FCA"] = "HEALER",
-		["Player-4701-03121603"] = "DAMAGER",
 		["Player-4442-03A890B2"] = "DAMAGER",
-		["Player-4441-0346828B"] = "DAMAGER",
-		["Player-4477-03B0A2B9"] = "DAMAGER",
+		["Player-4815-049AFB92"] = "DAMAGER",
+		["Player-4701-037EF2E6"] = "DAMAGER",
 		["Player-4454-03DA221B"] = "HEALER",
 		["Player-4476-037CCE21"] = "DAMAGER",
 		["Player-4476-0445EEFA"] = "HEALER",
-		["Player-4742-039F4F93"] = "DAMAGER",
+		["Player-4476-043CB34D"] = "DAMAGER",
 		["Player-4454-015B1818"] = "DAMAGER",
-		["Player-4477-03AFFDEF"] = "DAMAGER",
+		["Player-4455-032E747B"] = "HEALER",
 		["Player-4742-03B2C1D8"] = "DAMAGER",
-		["Player-4477-03A7BF8F"] = "HEALER",
+		["Player-4454-04ADF86E"] = "DAMAGER",
 		["Player-4476-043E8782"] = "DAMAGER",
 		["Player-4477-04A80F7F"] = "DAMAGER",
-		["Player-4476-04AA9AC7"] = "DAMAGER",
+		["Player-4813-049AA8CC"] = "HEALER",
 		["Player-4464-02E6DEE3"] = "HEALER",
 		["Player-4813-04AA8CF1"] = "DAMAGER",
-		["Player-4442-0245A2EB"] = "DAMAGER",
+		["Player-4464-03917935"] = "DAMAGER",
 		["Player-4465-02E67BDA"] = "DAMAGER",
 		["Player-4477-04037B1A"] = "HEALER",
-		["Player-4477-04B0F745"] = "TANK",
-		["Player-4745-03ACD4F8"] = "DAMAGER",
-		["Player-4701-030F2A42"] = "DAMAGER",
-		["Player-4466-00CC40C0"] = "DAMAGER",
+		["Player-4476-011E03D0"] = "DAMAGER",
+		["Player-4464-017B3546"] = "HEALER",
+		["Player-4476-03A93254"] = "DAMAGER",
+		["Player-4455-03C26D2F"] = "DAMAGER",
 		["Player-4476-043F283F"] = "DAMAGER",
-		["Player-4477-033CC78F"] = "DAMAGER",
+		["Player-4811-03AD70E4"] = "DAMAGER",
 		["Player-4813-04A29CA2"] = "TANK",
 		["Player-4813-0331382B"] = "DAMAGER",
-		["Player-4701-0313FB68"] = "DAMAGER",
-		["Player-4811-03AD70E4"] = "DAMAGER",
+		["Player-4465-03E1BA65"] = "DAMAGER",
+		["Player-4813-04AC12A0"] = "TANK",
 		["Player-4813-01D54F92"] = "DAMAGER",
 		["Player-4465-012FE71E"] = "DAMAGER",
 		["Player-4477-04B09AC9"] = "DAMAGER",
-		["Player-4455-03C26D2F"] = "DAMAGER",
+		["Player-4442-03BA74B1"] = "DAMAGER",
 		["Player-4813-04C1CE01"] = "DAMAGER",
 		["Player-4476-048E9838"] = "HEALER",
-		["Player-4465-02FA1B75"] = "DAMAGER",
+		["Player-4477-04B19F1F"] = "TANK",
 		["Player-4477-04C0B6B5"] = "DAMAGER",
 		["Player-4701-039E6477"] = "DAMAGER",
-		["Player-4701-039E5EEB"] = "TANK",
+		["Player-4476-049EE918"] = "TANK",
 		["Player-4742-039FDD52"] = "DAMAGER",
-		["Player-4703-02801BB8"] = "DAMAGER",
-		["Player-4742-037B48BE"] = "DAMAGER",
-		["Player-4453-04AF41CF"] = "TANK",
-		["Player-4476-0485F452"] = "DAMAGER",
-		["Player-4816-04960596"] = "DAMAGER",
-		["Player-4465-0006893F"] = "DAMAGER",
+		["Player-4477-046B669A"] = "DAMAGER",
 		["Player-4455-04B0CB85"] = "DAMAGER",
-		["Player-4742-03A82E01"] = "DAMAGER",
+		["Player-4464-039B4C1C"] = "DAMAGER",
+		["Player-4476-0485F452"] = "DAMAGER",
+		["Player-4454-04A7FA3E"] = "DAMAGER",
+		["Player-4465-0006893F"] = "DAMAGER",
+		["Player-4465-02F9C482"] = "DAMAGER",
+		["Player-4477-04007E9C"] = "DAMAGER",
 		["Player-4742-03A6E048"] = "TANK",
 		["Player-4441-038D83F6"] = "DAMAGER",
 		["Player-4465-038CD123"] = "DAMAGER",
 		["Player-4813-0280FD95"] = "DAMAGER",
 		["Player-4701-032E3169"] = "DAMAGER",
-		["Player-4701-031A8022"] = "DAMAGER",
-		["Player-4477-04007E9C"] = "DAMAGER",
+		["Player-4464-0397E0EB"] = "DAMAGER",
+		["Player-4477-03B0030C"] = "DAMAGER",
 		["Player-4701-0397A822"] = "DAMAGER",
 		["Player-4465-02E7853C"] = "DAMAGER",
 		["Player-4465-02B843FA"] = "DAMAGER",
-		["Player-4464-03E635DA"] = "DAMAGER",
-		["Player-4476-0403334D"] = "HEALER",
-		["Player-4465-017E7EB8"] = "DAMAGER",
 		["Player-4477-02601D29"] = "DAMAGER",
+		["Player-4701-0161DD12"] = "HEALER",
+		["Player-4465-017E7EB8"] = "DAMAGER",
+		["Player-4742-03A04FAE"] = "DAMAGER",
 		["Player-4477-048752B2"] = "DAMAGER",
 		["Player-4816-04A26ADC"] = "DAMAGER",
 		["Player-4701-0317A62B"] = "DAMAGER",
 		["Player-4701-03AE5364"] = "DAMAGER",
-		["Player-4465-037C458A"] = "DAMAGER",
-		["Player-4742-03CDE839"] = "DAMAGER",
-		["Player-4477-033128B4"] = "DAMAGER",
-		["Player-4477-01D63F16"] = "DAMAGER",
-		["Player-4465-0377590B"] = "DAMAGER",
+		["Player-4476-046E4C72"] = "HEALER",
 		["Player-4813-02719A94"] = "DAMAGER",
+		["Player-4477-033128B4"] = "DAMAGER",
+		["Player-4477-03B0BF5D"] = "DAMAGER",
+		["Player-4465-0377590B"] = "DAMAGER",
+		["Player-4476-01501919"] = "TANK",
 		["Player-4464-03ABE422"] = "TANK",
 		["Player-4465-0377E597"] = "DAMAGER",
 		["Player-4701-03A78735"] = "DAMAGER",
-		["Player-4701-03ACC49F"] = "TANK",
+		["Player-4701-03C1C37D"] = "DAMAGER",
 		["Player-4456-031C327F"] = "DAMAGER",
 		["Player-4745-0396F311"] = "DAMAGER",
 		["Player-4701-031DCB34"] = "DAMAGER",
-		["Player-4464-03917935"] = "DAMAGER",
+		["Player-4813-04AC7347"] = "DAMAGER",
 		["Player-4477-048F2DAF"] = "DAMAGER",
 		["Player-4476-04AF2A2C"] = "DAMAGER",
-		["Player-4742-03A9BAB1"] = "TANK",
+		["Player-4465-02C5D029"] = "DAMAGER",
 		["Player-4465-02E98A53"] = "TANK",
-		["Player-4465-02FD19EF"] = "DAMAGER",
-		["Player-4476-03725EC6"] = "DAMAGER",
+		["Player-4701-030C5040"] = "DAMAGER",
+		["Player-4813-04B1E45C"] = "DAMAGER",
 		["Player-4701-033E6408"] = "DAMAGER",
 		["Player-4476-04453DB0"] = "DAMAGER",
-		["Player-4742-03A9B0B8"] = "DAMAGER",
+		["Player-4811-036C57B9"] = "DAMAGER",
 		["Player-4464-036DBEA4"] = "DAMAGER",
 		["Player-4701-03BE0B90"] = "TANK",
-		["Player-4701-030C5040"] = "DAMAGER",
+		["Player-4476-03DEC012"] = "HEALER",
 		["Player-4477-01873D44"] = "TANK",
 		["Player-4454-04BCCC4E"] = "DAMAGER",
-		["Player-4477-03DF5CD9"] = "DAMAGER",
+		["Player-4465-039104E0"] = "TANK",
 		["Player-4465-02E04F27"] = "HEALER",
-		["Player-4477-046B669A"] = "DAMAGER",
-		["Player-4466-00BAF052"] = "DAMAGER",
-		["Player-4701-031821B6"] = "DAMAGER",
-		["Player-4742-03A78F3C"] = "DAMAGER",
+		["Player-4701-0397F7A8"] = "DAMAGER",
 		["Player-4476-03BEE8AF"] = "HEALER",
 		["Player-4465-0189BBD2"] = "DAMAGER",
-		["Player-4701-0397F7A8"] = "DAMAGER",
+		["Player-4742-03A78F3C"] = "DAMAGER",
+		["Player-4476-04006B6C"] = "DAMAGER",
+		["Player-4701-03A555C0"] = "DAMAGER",
+		["Player-4477-01554A23"] = "DAMAGER",
 		["Player-4703-039E3940"] = "DAMAGER",
 		["Player-4465-0385235B"] = "DAMAGER",
 		["Player-4816-04B07FC6"] = "TANK",
 		["Player-4464-010E69E4"] = "DAMAGER",
 	},
-	["announce_prepots"] = {
-		["enabled"] = false,
-		["reverse"] = false,
-		["channel"] = "SELF",
-	},
 	["data_harvested_for_charts"] = {
 	},
+	["combat_counter"] = 15056,
 	["character_data"] = {
-		["logons"] = 2338,
+		["logons"] = 2342,
 	},
 	["force_font_outline"] = "",
-	["combat_id"] = 253,
+	["combat_id"] = 274,
 	["savedStyles"] = {
 		{
-			["hide_in_combat_type"] = 1,
+			["show_statusbar"] = false,
 			["clickthrough_window"] = false,
 			["titlebar_shown"] = false,
 			["menu_anchor"] = {
@@ -11994,7 +15981,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["bars_sort_direction"] = 1,
+			["skin_custom"] = "vermin",
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -12006,31 +15993,43 @@ _detalhes_database = {
 				1, -- [3]
 			},
 			["clickthrough_toolbaricons"] = false,
-			["clickthrough_rows"] = false,
+			["attribute_text"] = {
+				["enabled"] = true,
+				["shadow"] = false,
+				["side"] = 1,
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["custom_text"] = "{name}",
+				["text_face"] = "Arial Narrow",
+				["anchor"] = {
+					56, -- [1]
+					3, -- [2]
+				},
+				["text_size"] = 12,
+				["enable_custom_text"] = false,
+				["show_timer"] = false,
+			},
 			["titlebar_texture"] = "Clean",
-			["switch_tank"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["switch_all_roles_after_wipe"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
+			["ignore_mass_showhide"] = false,
+			["fontstrings_text_limit_offset"] = -10,
 			["icon_desaturated"] = false,
 			["desaturated_menu"] = false,
-			["micro_displays_side"] = 2,
+			["show_sidebars"] = false,
 			["window_scale"] = 1,
 			["hide_icon"] = true,
 			["toolbar_side"] = 1,
 			["bg_g"] = 0.1333333333333333,
 			["menu_icons_alpha"] = 0.92,
 			["bg_b"] = 0.1333333333333333,
-			["switch_healer_in_combat"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
+			["rowareaborder_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
 			["color"] = {
 				0.07058823529411765, -- [1]
@@ -12117,12 +16116,12 @@ _detalhes_database = {
 			},
 			["skin"] = "Minimalistic",
 			["following"] = {
+				["enabled"] = false,
 				["bar_color"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 				},
-				["enabled"] = false,
 				["text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -12161,14 +16160,14 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["show_sidebars"] = false,
-			["name"] = "vermin",
+			["micro_displays_side"] = 2,
+			["version"] = 3,
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["version"] = 3,
+			["bg_alpha"] = 0,
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -12179,26 +16178,7 @@ _detalhes_database = {
 				["onenter"] = 1,
 			},
 			["fullborder_shown"] = false,
-			["attribute_text"] = {
-				["show_timer"] = false,
-				["shadow"] = false,
-				["side"] = 1,
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["custom_text"] = "{name}",
-				["text_face"] = "Arial Narrow",
-				["anchor"] = {
-					56, -- [1]
-					3, -- [2]
-				},
-				["text_size"] = 12,
-				["enable_custom_text"] = false,
-				["enabled"] = true,
-			},
+			["clickthrough_rows"] = false,
 			["rowareaborder_shown"] = false,
 			["rowareaborder_size"] = 0.5,
 			["clickthrough_incombatonly"] = false,
@@ -12210,7 +16190,7 @@ _detalhes_database = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["micro_displays_locked"] = false,
+			["bars_sort_direction"] = 1,
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -12226,49 +16206,45 @@ _detalhes_database = {
 					0.07058823529411765, -- [3]
 				},
 			},
-			["row_show_animation"] = {
-				["anim"] = "Fade",
-				["options"] = {
-				},
-			},
 			["menu_anchor_down"] = {
 				16, -- [1]
 				-3, -- [2]
 			},
+			["bars_grow_direction"] = 1,
 			["grab_on_top"] = false,
 			["auto_hide_menu"] = {
 				["left"] = false,
 				["right"] = true,
 			},
-			["show_statusbar"] = false,
+			["hide_in_combat_type"] = 1,
 			["switch_damager_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["rowareaborder_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["bars_grow_direction"] = 1,
-			["auto_current"] = true,
-			["skin_custom"] = "vermin",
-			["switch_damager"] = {
+			["switch_healer_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["bg_alpha"] = 0,
-			["hide_in_combat"] = false,
+			["row_show_animation"] = {
+				["anim"] = "Fade",
+				["options"] = {
+				},
+			},
+			["auto_current"] = true,
+			["micro_displays_locked"] = false,
 			["row_info"] = {
-				["textR_outline"] = false,
+				["show_arena_role_icon"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
 				["textL_outline"] = false,
-				["textR_outline_small"] = true,
-				["textL_outline_small"] = true,
-				["textL_enable_custom_text"] = false,
+				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+				["textR_show_data"] = {
+					true, -- [1]
+					true, -- [2]
+					false, -- [3]
+				},
+				["percent_type"] = 1,
 				["fixed_text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -12280,7 +16256,12 @@ _detalhes_database = {
 					["between"] = 1,
 				},
 				["texture_background_class_color"] = false,
-				["start_after_icon"] = true,
+				["textL_outline_small_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
 				["font_face_file"] = "Fonts\\ARIALN.TTF",
 				["faction_icon_size_offset"] = -10,
 				["backdrop"] = {
@@ -12294,8 +16275,6 @@ _detalhes_database = {
 					["enabled"] = false,
 					["texture"] = "ThreatPlatesBorder",
 				},
-				["font_size"] = 11,
-				["textL_custom_text"] = "{data1}. {data3}{data2}",
 				["models"] = {
 					["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
 					["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
@@ -12304,16 +16283,13 @@ _detalhes_database = {
 					["lower_alpha"] = 0.1,
 					["upper_enabled"] = false,
 				},
+				["textL_custom_text"] = "{data1}. {data3}{data2}",
+				["font_size"] = 11,
 				["textL_translit_text"] = false,
-				["texture_custom_file"] = "Interface\\",
+				["height"] = 19,
 				["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
 				["icon_size_offset"] = 0,
-				["textL_outline_small_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
+				["start_after_icon"] = true,
 				["show_faction_icon"] = true,
 				["overlay_color"] = {
 					0.7, -- [1]
@@ -12321,18 +16297,14 @@ _detalhes_database = {
 					0.7, -- [3]
 					0, -- [4]
 				},
-				["textR_show_data"] = {
-					true, -- [1]
-					true, -- [2]
-					false, -- [3]
-				},
-				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-				["icon_file"] = "",
+				["textL_outline_small"] = true,
+				["textR_outline_small"] = true,
+				["arena_role_icon_size_offset"] = -10,
 				["icon_grayscale"] = false,
-				["use_spec_icons"] = false,
 				["textR_bracket"] = "(",
+				["use_spec_icons"] = false,
 				["texture_custom"] = "",
-				["show_arena_role_icon"] = false,
+				["textR_outline"] = false,
 				["fixed_texture_color"] = {
 					0, -- [1]
 					0, -- [2]
@@ -12366,23 +16338,33 @@ _detalhes_database = {
 					0, -- [1]
 					0, -- [2]
 				},
-				["arena_role_icon_size_offset"] = -10,
+				["icon_file"] = "",
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
-				["percent_type"] = 1,
+				["textL_enable_custom_text"] = false,
 				["fast_ps_update"] = false,
 				["textR_separator"] = "NONE",
-				["height"] = 19,
+				["texture_custom_file"] = "Interface\\",
 			},
-			["ignore_mass_showhide"] = false,
-			["fontstrings_text_limit_offset"] = -10,
+			["name"] = "vermin",
+			["hide_in_combat"] = false,
+			["switch_damager"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["switch_tank"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["switch_all_roles_after_wipe"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
 			["wallpaper"] = {
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
+				["enabled"] = false,
 				["alpha"] = 0.5,
 				["width"] = 283.000183105469,
 				["texcoord"] = {
@@ -12394,7 +16376,12 @@ _detalhes_database = {
 				["height"] = 114.042518615723,
 				["anchor"] = "all",
 				["level"] = 2,
-				["enabled"] = false,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
 				["texture"] = "Interface\\AddOns\\Details\\images\\background",
 			},
 			["stretch_button_side"] = 2,
@@ -12493,15 +16480,16 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["nome"] = "Panici",
+					["friendlyfire_total"] = 0,
 					["classe"] = "WARRIOR",
-					["aID"] = "4465-02BAEC5F",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 848828.178148,
-					["last_dps"] = 0,
+					["damage_taken"] = 392649.178148,
 					["dps_started"] = false,
 					["total"] = 848828.178148,
-					["damage_taken"] = 392649.178148,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["boss_fight_component"] = true,
 					["spells"] = {
@@ -12752,11 +16740,11 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 387,
 								["targets"] = {
-									["Crystalline Tender"] = 2664,
+									["Alliance Berserker"] = 4028,
 									["Grand Magus Telestra"] = 1684,
 									["Mage Slayer"] = 6436,
 									["Crazed Mana-Wraith"] = 2552,
-									["Azure Scale-Binder"] = 2064,
+									["Crystalline Tender"] = 2664,
 									["Mage Hunter Initiate"] = 4264,
 									["Mage Hunter Ascendant"] = 16167,
 									["Alliance Ranger"] = 338,
@@ -12766,7 +16754,7 @@ _detalhes_database = {
 									["Alliance Cleric"] = 368,
 									["Azure Enforcer"] = 4555,
 									["Crazed Mana-Surge"] = 4833,
-									["Alliance Berserker"] = 4028,
+									["Azure Scale-Binder"] = 2064,
 								},
 								["n_dmg"] = 35021,
 								["n_min"] = 0,
@@ -13102,20 +17090,19 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1670612611,
 					["serial"] = "Player-4465-02BAEC5F",
-					["friendlyfire_total"] = 0,
+					["aID"] = "4465-02BAEC5F",
 				}, -- [1]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.009517999999999999,
 					["damage_from"] = {
-						["Moolatz"] = true,
-						["Biznam <Töman>"] = true,
-						["Panici"] = true,
 						["Töman"] = true,
+						["Biznam <Töman>"] = true,
+						["Moolatz"] = true,
+						["Panici"] = true,
 					},
 					["targets"] = {
 						["Panici"] = 3804,
@@ -13123,8 +17110,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["aID"] = "26722",
 					["raid_targets"] = {
@@ -13132,8 +17118,9 @@ _detalhes_database = {
 					["total_without_pet"] = 3804.009518,
 					["monster"] = true,
 					["fight_component"] = true,
-					["end_time"] = 1670613681,
-					["on_hold"] = false,
+					["total"] = 3804.009518,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["nome"] = "Azure Magus",
 					["spells"] = {
@@ -13199,12 +17186,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 3804.009518,
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 76879.009518,
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1670613681,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670613653,
 					["serial"] = "Creature-0-4448-576-13885-26722-0000138A54",
 					["dps_started"] = false,
@@ -13252,44 +17239,53 @@ _detalhes_database = {
 						["Sarathstra"] = 0,
 						["Onslaught Footman"] = 0,
 						["Dragonbone Condor"] = 0,
+						["Ice Heart Jormungar Feeder"] = 0,
+						["Rattlebore"] = 0,
+						["Icefist"] = 0,
+						["Arctic Grizzly"] = 0,
 						["Frigid Geist Attacker"] = 0,
 						["Anomalus"] = 61214,
+						["Hulking Jormungar"] = 0,
 						["Mage Hunter Ascendant"] = 82594,
+						["Coldwind Witch"] = 0,
+						["Keristrasza"] = 115716,
 						["Onslaught Raven Priest"] = 0,
-						["Icefist"] = 0,
+						["Emaciated Mammoth Bull"] = 0,
+						["Mage Hunter Initiate"] = 91869,
 						["Crystalline Protector"] = 103752,
-						["Arctic Grizzly"] = 0,
+						["Frigid Ghoul Attacker"] = 0,
 						["Ormorok the Tree-Shaper"] = 79409,
 						["Frigid Necromancer Attacker"] = 0,
-						["Chaotic Rift"] = 12898,
+						["Jormungar Tunneler"] = 0,
 						["Grand Magus Telestra"] = 73779,
-						["Keristrasza"] = 115716,
-						["Frigid Abomination Attacker"] = 0,
-						["Azure Magus"] = 35620,
 						["Alliance Cleric"] = 30900,
+						["Frigid Abomination Attacker"] = 0,
+						["Coldwind Waste Huntress"] = 0,
+						["Crystalline Tender"] = 98455,
 						["High General Abbendis"] = 0,
-						["Frigid Ghoul Attacker"] = 0,
+						["Mistress of the Coldwind"] = 0,
 						["Alliance Commander"] = 27867,
 						["Reanimated Frost Wyrm"] = 0,
-						["Crystalline Tender"] = 98455,
-						["Crystalline Keeper"] = 127220,
+						["Azure Magus"] = 35620,
+						["Chaotic Rift"] = 12898,
 						["Azure Enforcer"] = 67372,
-						["Mage Hunter Initiate"] = 91869,
-						["Emaciated Mammoth Bull"] = 0,
+						["Crystalline Keeper"] = 127220,
+						["Ice Heart Jormungar Spawn"] = 0,
 					},
 					["delay"] = 0,
 					["pets"] = {
 					},
 					["nome"] = "Moolatz",
+					["friendlyfire_total"] = 0,
 					["classe"] = "DRUID",
-					["aID"] = "4465-02B843FA",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 1522380.164584,
-					["last_dps"] = 0,
+					["damage_taken"] = 158424.164584,
 					["dps_started"] = false,
 					["total"] = 1522380.164584,
-					["damage_taken"] = 158424.164584,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["boss_fight_component"] = true,
 					["spells"] = {
@@ -13316,27 +17312,33 @@ _detalhes_database = {
 									["Sarathstra"] = 0,
 									["Onslaught Footman"] = 0,
 									["Dragonbone Condor"] = 0,
+									["Ice Heart Jormungar Feeder"] = 0,
 									["Frigid Geist Attacker"] = 0,
 									["Anomalus"] = 17960,
 									["Mage Hunter Ascendant"] = 22500,
+									["Rattlebore"] = 0,
 									["Onslaught Raven Priest"] = 0,
-									["Crystalline Protector"] = 36484,
-									["Ormorok the Tree-Shaper"] = 21946,
 									["Icefist"] = 0,
-									["Grand Magus Telestra"] = 18377,
 									["Frigid Necromancer Attacker"] = 0,
-									["Frigid Abomination Attacker"] = 0,
-									["Crazed Mana-Surge"] = 36908,
+									["Crystalline Protector"] = 36484,
+									["Hulking Jormungar"] = 0,
+									["Ormorok the Tree-Shaper"] = 21946,
 									["Crystalline Keeper"] = 22445,
+									["Jormungar Tunneler"] = 0,
+									["Grand Magus Telestra"] = 18377,
+									["Azure Magus"] = 9670,
+									["Frigid Abomination Attacker"] = 0,
+									["Coldwind Waste Huntress"] = 0,
+									["Mage Hunter Initiate"] = 29442,
 									["High General Abbendis"] = 0,
 									["Frigid Ghoul Attacker"] = 0,
 									["Alliance Commander"] = 13854,
-									["Azure Magus"] = 9670,
-									["Mage Hunter Initiate"] = 29442,
 									["Crystalline Tender"] = 15207,
-									["Azure Enforcer"] = 21860,
 									["Steward"] = 21114,
+									["Crazed Mana-Surge"] = 36908,
+									["Azure Enforcer"] = 21860,
 									["Emaciated Mammoth Bull"] = 0,
+									["Ice Heart Jormungar Spawn"] = 0,
 								},
 								["n_dmg"] = 161321,
 								["n_min"] = 0,
@@ -13364,6 +17366,7 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Rattlebore"] = 0,
 									["Sarathstra"] = 0,
 									["High General Abbendis"] = 0,
 								},
@@ -13393,33 +17396,39 @@ _detalhes_database = {
 								["n_max"] = 77,
 								["targets"] = {
 									["Crystalline Frayer"] = 1383,
-									["Frigid Geist Attacker"] = 0,
-									["Frigid Necromancer Attacker"] = 0,
-									["Mage Hunter Initiate"] = 306,
+									["Ice Revenant"] = 0,
+									["Crazed Mana-Surge"] = 77,
 									["Alliance Ranger"] = 308,
-									["Icefist"] = 0,
-									["Onslaught Raven Priest"] = 0,
 									["Azure Warder"] = 77,
 									["Steward"] = 461,
-									["Crystalline Protector"] = 383,
-									["Arctic Grizzly"] = 0,
-									["Ormorok the Tree-Shaper"] = 76,
 									["Shadowy Tormentor"] = 0,
-									["Ice Revenant"] = 0,
-									["Grand Magus Telestra"] = 76,
-									["Onslaught Footman"] = 0,
 									["Crazed Mana-Wraith"] = 385,
 									["Crystalline Tender"] = 231,
 									["Sarathstra"] = 0,
+									["Onslaught Footman"] = 0,
+									["Dragonbone Condor"] = 0,
+									["Ice Heart Jormungar Feeder"] = 0,
+									["Frigid Geist Attacker"] = 0,
+									["Frigid Necromancer Attacker"] = 0,
+									["Onslaught Raven Priest"] = 0,
+									["Crystalline Protector"] = 383,
+									["Ormorok the Tree-Shaper"] = 76,
+									["Rattlebore"] = 0,
+									["Jormungar Tunneler"] = 0,
+									["Grand Magus Telestra"] = 76,
+									["Hulking Jormungar"] = 0,
+									["Keristrasza"] = 77,
+									["Coldwind Waste Huntress"] = 0,
+									["Icefist"] = 0,
 									["High General Abbendis"] = 0,
-									["Crazed Mana-Surge"] = 77,
+									["Arctic Grizzly"] = 0,
 									["Alliance Commander"] = 77,
 									["Reanimated Frost Wyrm"] = 0,
-									["Dragonbone Condor"] = 0,
-									["Keristrasza"] = 77,
-									["Azure Enforcer"] = 77,
 									["Crystalline Keeper"] = 997,
+									["Mage Hunter Initiate"] = 306,
+									["Azure Enforcer"] = 77,
 									["Emaciated Mammoth Bull"] = 0,
+									["Ice Heart Jormungar Spawn"] = 0,
 								},
 								["n_dmg"] = 4991,
 								["n_min"] = 0,
@@ -13461,27 +17470,33 @@ _detalhes_database = {
 									["Sarathstra"] = 0,
 									["Onslaught Footman"] = 0,
 									["Dragonbone Condor"] = 0,
+									["Ice Heart Jormungar Feeder"] = 0,
 									["Frigid Geist Attacker"] = 0,
 									["Anomalus"] = 950,
 									["Mage Hunter Ascendant"] = 11449,
+									["Rattlebore"] = 0,
 									["Onslaught Raven Priest"] = 0,
-									["Crystalline Protector"] = 6375,
-									["Ormorok the Tree-Shaper"] = 2249,
 									["Icefist"] = 0,
-									["Grand Magus Telestra"] = 7513,
 									["Frigid Necromancer Attacker"] = 0,
-									["Frigid Abomination Attacker"] = 0,
-									["Crazed Mana-Surge"] = 11919,
+									["Crystalline Protector"] = 6375,
+									["Hulking Jormungar"] = 0,
+									["Ormorok the Tree-Shaper"] = 2249,
 									["Crystalline Keeper"] = 6181,
+									["Jormungar Tunneler"] = 0,
+									["Grand Magus Telestra"] = 7513,
+									["Azure Magus"] = 928,
+									["Frigid Abomination Attacker"] = 0,
+									["Coldwind Waste Huntress"] = 0,
+									["Mage Hunter Initiate"] = 9893,
 									["High General Abbendis"] = 0,
 									["Frigid Ghoul Attacker"] = 0,
 									["Alliance Commander"] = 997,
-									["Azure Magus"] = 928,
-									["Mage Hunter Initiate"] = 9893,
 									["Crystalline Tender"] = 8559,
-									["Azure Enforcer"] = 6967,
 									["Steward"] = 5777,
+									["Crazed Mana-Surge"] = 11919,
+									["Azure Enforcer"] = 6967,
 									["Emaciated Mammoth Bull"] = 0,
+									["Ice Heart Jormungar Spawn"] = 0,
 								},
 								["n_dmg"] = 52217,
 								["n_min"] = 0,
@@ -13508,6 +17523,7 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Rattlebore"] = 0,
 									["Sarathstra"] = 0,
 									["High General Abbendis"] = 0,
 								},
@@ -13529,6 +17545,33 @@ _detalhes_database = {
 								["extra"] = {
 								},
 							},
+							[20549] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Rattlebore"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 20549,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
 							[48569] = {
 								["c_amt"] = 27,
 								["b_amt"] = 1,
@@ -13536,35 +17579,41 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 823,
 								["targets"] = {
-									["Azure Magus"] = 1581,
-									["Frigid Geist Attacker"] = 0,
-									["Azure Scale-Binder"] = 3254,
-									["Mage Hunter Initiate"] = 2659,
-									["Mage Hunter Ascendant"] = 2737,
-									["Alliance Ranger"] = 5576,
 									["Icefist"] = 0,
-									["Onslaught Raven Priest"] = 0,
-									["Crystalline Keeper"] = 4990,
-									["Steward"] = 1120,
-									["Crystalline Protector"] = 3256,
 									["Ice Revenant"] = 0,
-									["Alliance Cleric"] = 3052,
+									["Azure Scale-Binder"] = 3254,
+									["Crazed Mana-Surge"] = 4942,
+									["Alliance Ranger"] = 5576,
+									["Azure Warder"] = 4445,
+									["Steward"] = 1120,
 									["Shadowy Tormentor"] = 0,
-									["Crystalline Tender"] = 4177,
-									["Grand Magus Telestra"] = 3323,
 									["Mage Slayer"] = 2957,
 									["Crazed Mana-Wraith"] = 262,
 									["Alliance Berserker"] = 9881,
 									["Sarathstra"] = 0,
+									["Onslaught Footman"] = 0,
+									["Dragonbone Condor"] = 0,
+									["Ice Heart Jormungar Feeder"] = 0,
+									["Frigid Geist Attacker"] = 0,
+									["Mage Hunter Ascendant"] = 2737,
+									["Onslaught Raven Priest"] = 0,
+									["Crystalline Protector"] = 3256,
+									["Rattlebore"] = 0,
+									["Jormungar Tunneler"] = 0,
+									["Grand Magus Telestra"] = 3323,
+									["Ice Heart Jormungar Spawn"] = 0,
+									["Crystalline Frayer"] = 774,
+									["Coldwind Waste Huntress"] = 0,
+									["Crystalline Tender"] = 4177,
 									["High General Abbendis"] = 0,
 									["Frigid Ghoul Attacker"] = 0,
 									["Alliance Commander"] = 3253,
-									["Crystalline Frayer"] = 774,
-									["Crazed Mana-Surge"] = 4942,
-									["Dragonbone Condor"] = 0,
-									["Onslaught Footman"] = 0,
-									["Azure Warder"] = 4445,
+									["Crystalline Keeper"] = 4990,
 									["Emaciated Mammoth Bull"] = 0,
+									["Mage Hunter Initiate"] = 2659,
+									["Azure Magus"] = 1581,
+									["Alliance Cleric"] = 3052,
+									["Hulking Jormungar"] = 0,
 								},
 								["n_dmg"] = 19457,
 								["n_min"] = 0,
@@ -13624,6 +17673,7 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Rattlebore"] = 0,
 									["Sarathstra"] = 0,
 									["High General Abbendis"] = 0,
 								},
@@ -13667,26 +17717,32 @@ _detalhes_database = {
 									["Sarathstra"] = 0,
 									["Onslaught Footman"] = 0,
 									["Dragonbone Condor"] = 0,
+									["Ice Heart Jormungar Feeder"] = 0,
 									["Frigid Geist Attacker"] = 0,
 									["Anomalus"] = 11930,
 									["Mage Hunter Ascendant"] = 8826,
+									["Rattlebore"] = 0,
 									["Onslaught Raven Priest"] = 0,
-									["Crystalline Protector"] = 23827,
-									["Ormorok the Tree-Shaper"] = 15728,
+									["Ice Heart Jormungar Spawn"] = 0,
 									["Icefist"] = 0,
-									["Grand Magus Telestra"] = 13086,
+									["Crystalline Protector"] = 23827,
 									["Frigid Necromancer Attacker"] = 0,
-									["Frigid Abomination Attacker"] = 0,
+									["Ormorok the Tree-Shaper"] = 15728,
 									["Crazed Mana-Surge"] = 16034,
+									["Jormungar Tunneler"] = 0,
+									["Grand Magus Telestra"] = 13086,
 									["Crystalline Keeper"] = 12218,
+									["Frigid Abomination Attacker"] = 0,
+									["Coldwind Waste Huntress"] = 0,
+									["Azure Magus"] = 6811,
 									["High General Abbendis"] = 0,
 									["Frigid Ghoul Attacker"] = 0,
 									["Alliance Commander"] = 5832,
-									["Azure Magus"] = 6811,
 									["Mage Hunter Initiate"] = 14651,
 									["Crystalline Tender"] = 7315,
-									["Azure Enforcer"] = 10716,
 									["Steward"] = 13507,
+									["Azure Enforcer"] = 10716,
+									["Hulking Jormungar"] = 0,
 									["Emaciated Mammoth Bull"] = 0,
 								},
 								["n_dmg"] = 212072,
@@ -13716,22 +17772,27 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 2499,
 								["targets"] = {
+									["Emaciated Mammoth Bull"] = 0,
+									["Ice Revenant"] = 0,
+									["Keristrasza"] = 8066,
+									["Onslaught Raven Priest"] = 0,
+									["Ormorok the Tree-Shaper"] = 5963,
 									["Shadowy Tormentor"] = 0,
-									["Icefist"] = 0,
+									["Jormungar Tunneler"] = 0,
 									["Grand Magus Telestra"] = 1965,
 									["Mage Slayer"] = 2750,
-									["Ice Revenant"] = 0,
-									["Alliance Berserker"] = 855,
-									["Mage Hunter Initiate"] = 2401,
-									["Onslaught Footman"] = 0,
-									["Emaciated Mammoth Bull"] = 0,
-									["Dragonbone Condor"] = 0,
-									["Onslaught Raven Priest"] = 0,
+									["Ice Heart Jormungar Spawn"] = 0,
 									["Crystalline Tender"] = 6535,
 									["Crystalline Frayer"] = 0,
-									["Keristrasza"] = 8066,
+									["Onslaught Footman"] = 0,
 									["Chaotic Rift <Anomalus>"] = 2127,
-									["Ormorok the Tree-Shaper"] = 5963,
+									["Dragonbone Condor"] = 0,
+									["Mage Hunter Initiate"] = 2401,
+									["Alliance Berserker"] = 855,
+									["Icefist"] = 0,
+									["Ice Heart Jormungar Feeder"] = 0,
+									["Hulking Jormungar"] = 0,
+									["Coldwind Waste Huntress"] = 0,
 								},
 								["n_dmg"] = 5740,
 								["n_min"] = 0,
@@ -13807,36 +17868,6 @@ _detalhes_database = {
 								},
 								["IMMUNE"] = 2,
 							},
-							[27007] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 303,
-								["targets"] = {
-									["Ormorok the Tree-Shaper"] = 1817,
-									["High General Abbendis"] = 0,
-									["Onslaught Raven Priest"] = 0,
-									["Onslaught Footman"] = 0,
-								},
-								["n_dmg"] = 1817,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 6,
-								["total"] = 1817,
-								["c_max"] = 0,
-								["id"] = 27007,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 6,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
-							},
 							[60089] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -13864,100 +17895,32 @@ _detalhes_database = {
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
-							[49799] = {
-								["c_amt"] = 23,
-								["b_amt"] = 0,
-								["c_dmg"] = 45514,
-								["g_amt"] = 0,
-								["n_max"] = 1029,
-								["targets"] = {
-									["Grand Magus Telestra"] = 10630,
-									["Azure Magus"] = 8022,
-									["Sarathstra"] = 0,
-									["Azure Scale-Binder"] = 8622,
-									["Crazed Mana-Surge"] = 4311,
-									["High General Abbendis"] = 0,
-									["Keristrasza"] = 13314,
-									["Anomalus"] = 8541,
-									["Crystalline Keeper"] = 2788,
-									["Azure Warder"] = 5692,
-									["Alliance Cleric"] = 2472,
-									["Crystalline Protector"] = 5634,
-									["Crystalline Tender"] = 2690,
-									["Ormorok the Tree-Shaper"] = 15226,
-								},
-								["n_dmg"] = 42428,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 76,
-								["total"] = 87942,
-								["c_max"] = 2332,
-								["id"] = 49799,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 48,
-								["extra"] = {
-								},
-								["IMMUNE"] = 5,
-							},
-							[32747] = {
+							[27007] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["n_max"] = 303,
 								["targets"] = {
+									["Ormorok the Tree-Shaper"] = 1817,
 									["High General Abbendis"] = 0,
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 32747,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
-							},
-							[48561] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["High General Abbendis"] = 0,
-									["Sarathstra"] = 0,
 									["Onslaught Raven Priest"] = 0,
 									["Onslaught Footman"] = 0,
 								},
-								["n_dmg"] = 0,
+								["n_dmg"] = 1817,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
+								["counter"] = 6,
+								["total"] = 1817,
 								["c_max"] = 0,
-								["id"] = 48561,
+								["id"] = 27007,
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 0,
+								["n_amt"] = 6,
 								["a_dmg"] = 0,
 								["extra"] = {
 								},
@@ -14014,6 +17977,134 @@ _detalhes_database = {
 								},
 								["DODGE"] = 2,
 							},
+							[49799] = {
+								["c_amt"] = 23,
+								["b_amt"] = 0,
+								["c_dmg"] = 45514,
+								["g_amt"] = 0,
+								["n_max"] = 1029,
+								["targets"] = {
+									["Rattlebore"] = 0,
+									["Azure Scale-Binder"] = 8622,
+									["Grand Magus Telestra"] = 10630,
+									["Azure Magus"] = 8022,
+									["Crazed Mana-Surge"] = 4311,
+									["Anomalus"] = 8541,
+									["Sarathstra"] = 0,
+									["High General Abbendis"] = 0,
+									["Crystalline Tender"] = 2690,
+									["Hulking Jormungar"] = 0,
+									["Crystalline Keeper"] = 2788,
+									["Azure Warder"] = 5692,
+									["Alliance Cleric"] = 2472,
+									["Crystalline Protector"] = 5634,
+									["Keristrasza"] = 13314,
+									["Ormorok the Tree-Shaper"] = 15226,
+								},
+								["n_dmg"] = 42428,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 76,
+								["total"] = 87942,
+								["c_max"] = 2332,
+								["id"] = 49799,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 48,
+								["extra"] = {
+								},
+								["IMMUNE"] = 5,
+							},
+							[32747] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["High General Abbendis"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 32747,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[48561] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Onslaught Raven Priest"] = 0,
+									["Rattlebore"] = 0,
+									["High General Abbendis"] = 0,
+									["Sarathstra"] = 0,
+									["Onslaught Footman"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 48561,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[16857] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Ice Heart Jormungar Feeder"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 16857,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
 							[27150] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -14063,11 +18154,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1670612649,
 					["serial"] = "Player-4465-02B843FA",
-					["friendlyfire_total"] = 0,
+					["aID"] = "4465-02B843FA",
 				}, -- [3]
 				{
 					["flag_original"] = 1298,
@@ -14123,15 +18213,28 @@ _detalhes_database = {
 						"Biznam <Töman>", -- [1]
 					},
 					["nome"] = "Töman",
+					["friendlyfire_total"] = 11857,
 					["classe"] = "WARLOCK",
-					["aID"] = "4465-01FBAA97",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 857777.165556,
-					["last_dps"] = 0,
+					["damage_taken"] = 52587.16555600001,
 					["dps_started"] = false,
 					["total"] = 891346.1655560001,
-					["damage_taken"] = 52587.16555600001,
+					["friendlyfire"] = {
+						["Töman"] = {
+							["total"] = 2105,
+							["spells"] = {
+								[32231] = 0,
+							},
+						},
+						["Biznam <Töman>"] = {
+							["total"] = 9752,
+							["spells"] = {
+								[25228] = 0,
+							},
+						},
+					},
 					["tipo"] = 1,
 					["boss_fight_component"] = true,
 					["spells"] = {
@@ -14646,23 +18749,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-						["Töman"] = {
-							["total"] = 2105,
-							["spells"] = {
-								[32231] = 0,
-							},
-						},
-						["Biznam <Töman>"] = {
-							["total"] = 9752,
-							["spells"] = {
-								[25228] = 0,
-							},
-						},
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1670612926,
 					["serial"] = "Player-4465-01FBAA97",
-					["friendlyfire_total"] = 11857,
+					["aID"] = "4465-01FBAA97",
 				}, -- [4]
 				{
 					["flag_original"] = 4370,
@@ -14701,10 +18791,17 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 33569.088012,
-					["damage_taken"] = 21050.088012,
+					["friendlyfire"] = {
+						["Biznam <Töman>"] = {
+							["total"] = 635,
+							["spells"] = {
+								[27267] = 0,
+							},
+						},
+					},
 					["dps_started"] = false,
 					["total"] = 33569.088012,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["ownerName"] = "Töman",
 					["boss_fight_component"] = true,
 					["spells"] = {
@@ -14758,25 +18855,18 @@ _detalhes_database = {
 					["friendlyfire_total"] = 635,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670613436,
 					["serial"] = "Pet-0-4448-576-13885-416-010037274A",
-					["friendlyfire"] = {
-						["Biznam <Töman>"] = {
-							["total"] = 635,
-							["spells"] = {
-								[27267] = 0,
-							},
-						},
-					},
+					["damage_taken"] = 21050.088012,
 				}, -- [5]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.042849,
 					["damage_from"] = {
-						["Panici"] = true,
 						["Moolatz"] = true,
 						["Töman"] = true,
+						["Panici"] = true,
 						["Happyglow"] = true,
 					},
 					["targets"] = {
@@ -14790,8 +18880,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
@@ -14799,8 +18888,9 @@ _detalhes_database = {
 					["total_without_pet"] = 88248.04284899999,
 					["fight_component"] = true,
 					["dps_started"] = false,
-					["end_time"] = 1670613738,
-					["on_hold"] = false,
+					["total"] = 88248.04284899999,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["nome"] = "Mage Hunter Ascendant",
 					["spells"] = {
@@ -15177,12 +19267,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 88248.04284899999,
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 297304.042849,
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1670613738,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670613584,
 					["serial"] = "Creature-0-4448-576-13885-26727-0003938A54",
 					["aID"] = "26727",
@@ -15191,9 +19281,9 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["totalabsorbed"] = 0.021143,
 					["damage_from"] = {
-						["Moolatz"] = true,
 						["Töman"] = true,
 						["Panici"] = true,
+						["Moolatz"] = true,
 						["Happyglow"] = true,
 					},
 					["targets"] = {
@@ -15202,8 +19292,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
@@ -15211,8 +19300,9 @@ _detalhes_database = {
 					["total_without_pet"] = 19467.021143,
 					["fight_component"] = true,
 					["dps_started"] = false,
-					["end_time"] = 1670613738,
-					["on_hold"] = false,
+					["total"] = 19467.021143,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["nome"] = "Mage Slayer",
 					["spells"] = {
@@ -15337,12 +19427,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 19467.021143,
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 222979.021143,
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1670613738,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670613651,
 					["serial"] = "Creature-0-4448-576-13885-26730-0002138A54",
 					["aID"] = "26730",
@@ -15375,26 +19465,27 @@ _detalhes_database = {
 					["targets"] = {
 						["Crystalline Keeper"] = 924,
 						["Alliance Commander"] = 265,
-						["Crystalline Tender"] = 924,
+						["Anomalus"] = 554,
 						["Crystalline Frayer"] = 1180,
 						["Crazed Mana-Wraith"] = 133,
+						["Crystalline Tender"] = 924,
 						["Chaotic Rift"] = 358,
-						["Anomalus"] = 554,
 						["Ormorok the Tree-Shaper"] = 133,
 					},
 					["delay"] = 0,
 					["pets"] = {
 					},
 					["nome"] = "Twercks",
+					["friendlyfire_total"] = 0,
 					["classe"] = "DRUID",
-					["aID"] = "4465-02EC02FB",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 4471.125411999999,
-					["last_dps"] = 0,
+					["damage_taken"] = 96347.125412,
 					["dps_started"] = false,
 					["total"] = 4471.125411999999,
-					["damage_taken"] = 96347.125412,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["boss_fight_component"] = true,
 					["spells"] = {
@@ -15471,11 +19562,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1670613668,
 					["serial"] = "Player-4465-02EC02FB",
-					["friendlyfire_total"] = 0,
+					["aID"] = "4465-02EC02FB",
 				}, -- [8]
 				{
 					["flag_original"] = 1298,
@@ -15535,15 +19625,22 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["nome"] = "Happyglow",
+					["friendlyfire_total"] = 1251,
 					["classe"] = "PALADIN",
-					["aID"] = "4465-030509FE",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 1180196.167907,
-					["last_dps"] = 0,
+					["damage_taken"] = 193111.167907,
 					["dps_started"] = false,
 					["total"] = 1180196.167907,
-					["damage_taken"] = 193111.167907,
+					["friendlyfire"] = {
+						["Happyglow"] = {
+							["total"] = 1251,
+							["spells"] = {
+								[27138] = 0,
+							},
+						},
+					},
 					["tipo"] = 1,
 					["boss_fight_component"] = true,
 					["spells"] = {
@@ -16159,25 +20256,18 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-						["Happyglow"] = {
-							["total"] = 1251,
-							["spells"] = {
-								[27138] = 0,
-							},
-						},
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1670612818,
 					["serial"] = "Player-4465-030509FE",
-					["friendlyfire_total"] = 1251,
+					["aID"] = "4465-030509FE",
 				}, -- [9]
 				{
 					["flag_original"] = 2632,
 					["totalabsorbed"] = 0.034132,
 					["damage_from"] = {
-						["Panici"] = true,
 						["Moolatz"] = true,
 						["Töman"] = true,
+						["Panici"] = true,
 						["Happyglow"] = true,
 					},
 					["targets"] = {
@@ -16189,8 +20279,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["aID"] = "26800",
 					["raid_targets"] = {
@@ -16198,8 +20287,9 @@ _detalhes_database = {
 					["total_without_pet"] = 15162.034132,
 					["monster"] = true,
 					["fight_component"] = true,
-					["end_time"] = 1670613757,
-					["on_hold"] = false,
+					["total"] = 15162.034132,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["nome"] = "Alliance Berserker",
 					["spells"] = {
@@ -16320,12 +20410,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 15162.034132,
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 222014.034132,
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1670613757,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670613697,
 					["serial"] = "Creature-0-4448-576-13885-26800-0000138A8C",
 					["dps_started"] = false,
@@ -16342,7 +20432,7 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["total"] = 0.018305,
-					["damage_taken"] = 21.018305,
+					["last_dps"] = 0,
 					["aID"] = "32261",
 					["raid_targets"] = {
 					},
@@ -16351,7 +20441,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["end_time"] = 1670613757,
 					["classe"] = "UNKNOW",
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["nome"] = "Crystal Spider",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16364,7 +20454,7 @@ _detalhes_database = {
 					},
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["damage_taken"] = 21.018305,
 					["start_time"] = 1670613754,
 					["serial"] = "Creature-0-4448-576-13885-32261-0001938A54",
 					["friendlyfire_total"] = 0,
@@ -16390,8 +20480,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["aID"] = "26805",
 					["raid_targets"] = {
@@ -16399,8 +20488,9 @@ _detalhes_database = {
 					["total_without_pet"] = 27520.021824,
 					["monster"] = true,
 					["fight_component"] = true,
-					["end_time"] = 1670613786,
-					["on_hold"] = false,
+					["total"] = 27520.021824,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["nome"] = "Alliance Cleric",
 					["spells"] = {
@@ -16524,12 +20614,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 27520.021824,
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 156365.021824,
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1670613786,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670613724,
 					["serial"] = "Creature-0-4448-576-13885-26805-0000138A8C",
 					["dps_started"] = false,
@@ -16555,8 +20645,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["aID"] = "26802",
 					["raid_targets"] = {
@@ -16564,8 +20653,9 @@ _detalhes_database = {
 					["total_without_pet"] = 33141.012863,
 					["monster"] = true,
 					["fight_component"] = true,
-					["end_time"] = 1670613818,
-					["on_hold"] = false,
+					["total"] = 33141.012863,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["nome"] = "Alliance Ranger",
 					["spells"] = {
@@ -16690,12 +20780,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 33141.012863,
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 112461.012863,
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1670613818,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670613759,
 					["serial"] = "Creature-0-4448-576-13885-26802-0001138A8C",
 					["dps_started"] = false,
@@ -16719,8 +20809,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["aID"] = "27949",
 					["raid_targets"] = {
@@ -16728,8 +20817,9 @@ _detalhes_database = {
 					["total_without_pet"] = 19880.010764,
 					["monster"] = true,
 					["fight_component"] = true,
-					["end_time"] = 1670613853,
-					["on_hold"] = false,
+					["total"] = 19880.010764,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["nome"] = "Alliance Commander",
 					["spells"] = {
@@ -16877,12 +20967,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 19880.010764,
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 79274.01076399999,
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1670613853,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670613822,
 					["serial"] = "Creature-0-4448-576-13885-27949-0000138A8C",
 					["dps_started"] = false,
@@ -16891,9 +20981,9 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["totalabsorbed"] = 0.026239,
 					["damage_from"] = {
-						["Moolatz"] = true,
 						["Panici"] = true,
 						["Töman"] = true,
+						["Moolatz"] = true,
 						["Happyglow"] = true,
 					},
 					["targets"] = {
@@ -16903,8 +20993,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["aID"] = "26728",
 					["raid_targets"] = {
@@ -16912,8 +21001,9 @@ _detalhes_database = {
 					["total_without_pet"] = 29412.026239,
 					["monster"] = true,
 					["fight_component"] = true,
-					["end_time"] = 1670613984,
-					["on_hold"] = false,
+					["total"] = 29412.026239,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["nome"] = "Mage Hunter Initiate",
 					["spells"] = {
@@ -17008,12 +21098,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 29412.026239,
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 225695.026239,
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1670613984,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670613853,
 					["serial"] = "Creature-0-4448-576-13885-26728-0000138A54",
 					["dps_started"] = false,
@@ -17036,8 +21126,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["aID"] = "26729",
 					["raid_targets"] = {
@@ -17045,8 +21134,9 @@ _detalhes_database = {
 					["total_without_pet"] = 26214.031425,
 					["monster"] = true,
 					["fight_component"] = true,
-					["end_time"] = 1670613984,
-					["on_hold"] = false,
+					["total"] = 26214.031425,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["nome"] = "Steward",
 					["spells"] = {
@@ -17145,12 +21235,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 26214.031425,
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 222978.031425,
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1670613984,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670613891,
 					["serial"] = "Creature-0-4448-576-13885-26729-0000138A54",
 					["dps_started"] = false,
@@ -17176,8 +21266,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
@@ -17186,9 +21275,10 @@ _detalhes_database = {
 					["total"] = 55690.008823,
 					["dps_started"] = false,
 					["end_time"] = 1670614093,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
-					["boss_fight_component"] = true,
+					["nome"] = "Grand Magus Telestra",
 					["spells"] = {
 						["_ActorTable"] = {
 							{
@@ -17315,10 +21405,10 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 441,
 								["targets"] = {
-									["Moolatz"] = 354,
-									["Biznam <Töman>"] = 865,
-									["Panici"] = 341,
 									["Töman"] = 356,
+									["Biznam <Töman>"] = 865,
+									["Moolatz"] = 354,
+									["Panici"] = 341,
 								},
 								["n_dmg"] = 1916,
 								["n_min"] = 0,
@@ -17428,12 +21518,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["nome"] = "Grand Magus Telestra",
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 192196.008823,
+					["friendlyfire_total"] = 0,
+					["boss_fight_component"] = true,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670614049,
 					["serial"] = "Creature-0-4448-576-13885-26731-0000138A54",
 					["aID"] = "26731",
@@ -17454,8 +21544,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["aID"] = "",
 					["raid_targets"] = {
@@ -17464,9 +21553,10 @@ _detalhes_database = {
 					["total"] = 16427.008975,
 					["monster"] = true,
 					["end_time"] = 1670614093,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
-					["boss_fight_component"] = true,
+					["nome"] = "[*] Gravity Well",
 					["spells"] = {
 						["_ActorTable"] = {
 							[47765] = {
@@ -17504,12 +21594,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["nome"] = "[*] Gravity Well",
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 0.008975,
+					["friendlyfire_total"] = 0,
+					["boss_fight_component"] = true,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670614079,
 					["serial"] = "",
 					["dps_started"] = false,
@@ -17532,19 +21622,19 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["total"] = 4966.019986,
+					["aID"] = "",
 					["friendlyfire_total"] = 0,
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 4966.019986,
 					["dps_started"] = false,
 					["fight_component"] = true,
-					["total"] = 4966.019986,
-					["damage_taken"] = 0.019986,
+					["end_time"] = 1670614093,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
-					["boss_fight_component"] = true,
+					["nome"] = "Environment (Falling)",
 					["spells"] = {
 						["_ActorTable"] = {
 							[3] = {
@@ -17584,15 +21674,15 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["nome"] = "Environment (Falling)",
+					["last_dps"] = 0,
 					["on_hold"] = false,
-					["end_time"] = 1670614093,
+					["boss_fight_component"] = true,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.019986,
 					["start_time"] = 1670614072,
 					["serial"] = "",
-					["aID"] = "",
+					["classe"] = "UNKNOW",
 				}, -- [19]
 				{
 					["flag_original"] = 68168,
@@ -17616,8 +21706,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
@@ -17625,8 +21714,9 @@ _detalhes_database = {
 					["total_without_pet"] = 25030.016341,
 					["fight_component"] = true,
 					["dps_started"] = false,
-					["end_time"] = 1670614271,
-					["on_hold"] = false,
+					["total"] = 25030.016341,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["nome"] = "Azure Scale-Binder",
 					["spells"] = {
@@ -17724,12 +21814,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 25030.016341,
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 181166.016341,
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1670614271,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670614167,
 					["serial"] = "Creature-0-4448-576-13885-26735-0000138A55",
 					["aID"] = "26735",
@@ -17755,8 +21845,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
@@ -17764,8 +21853,9 @@ _detalhes_database = {
 					["total_without_pet"] = 149629.053184,
 					["fight_component"] = true,
 					["dps_started"] = false,
-					["end_time"] = 1670614271,
-					["on_hold"] = false,
+					["total"] = 149629.053184,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["nome"] = "Azure Enforcer",
 					["spells"] = {
@@ -17871,12 +21961,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 149629.053184,
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 265017.053184,
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1670614271,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670614120,
 					["serial"] = "Creature-0-4448-576-13885-26734-0000138A55",
 					["aID"] = "26734",
@@ -17886,39 +21976,39 @@ _detalhes_database = {
 					["totalabsorbed"] = 0.05730200000000001,
 					["damage_from"] = {
 						["Twercks"] = true,
-						["Azure Enforcer"] = true,
+						["Azure Scale-Binder"] = true,
 						["Töman"] = true,
 						["Happyglow"] = true,
-						["Azure Scale-Binder"] = true,
 						["Biznam <Töman>"] = true,
+						["Azure Enforcer"] = true,
 						["Panici"] = true,
 						["Moolatz"] = true,
 					},
 					["targets"] = {
 						["Twercks"] = 7759,
-						["Azure Scale-Binder"] = 740,
+						["Azure Enforcer"] = 30482,
 						["Moolatz"] = 7611,
 						["Happyglow"] = 9335,
-						["Azure Enforcer"] = 30482,
 						["Biznam <Töman>"] = 7551,
+						["Azure Scale-Binder"] = 740,
 						["Panici"] = 14569,
 						["Töman"] = 6041,
 					},
 					["pets"] = {
 					},
+					["monster"] = true,
 					["classe"] = "UNKNOW",
-					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 84088.05730199999,
-					["dps_started"] = false,
+					["damage_taken"] = 266447.057302,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 					["total"] = 84088.05730199999,
 					["aID"] = "26746",
-					["last_dps"] = 0,
-					["boss_fight_component"] = true,
+					["on_hold"] = false,
+					["nome"] = "Crazed Mana-Wraith",
 					["spells"] = {
 						["_ActorTable"] = {
 							{
@@ -17968,11 +22058,11 @@ _detalhes_database = {
 								["n_max"] = 422,
 								["targets"] = {
 									["Twercks"] = 7370,
-									["Azure Scale-Binder"] = 421,
+									["Azure Enforcer"] = 21068,
 									["Moolatz"] = 5436,
 									["Happyglow"] = 8428,
-									["Azure Enforcer"] = 21068,
 									["Biznam <Töman>"] = 4709,
+									["Azure Scale-Binder"] = 421,
 									["Panici"] = 12510,
 									["Töman"] = 5443,
 								},
@@ -17998,17 +22088,17 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1670614271,
 					["tipo"] = 1,
-					["nome"] = "Crazed Mana-Wraith",
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 266447.057302,
-					["start_time"] = 1670614115,
-					["serial"] = "Creature-0-4448-576-13885-26746-0000138CCB",
 					["friendlyfire"] = {
 					},
+					["custom"] = 0,
+					["last_event"] = 0,
+					["last_dps"] = 0,
+					["start_time"] = 1670614115,
+					["serial"] = "Creature-0-4448-576-13885-26746-0000138CCB",
+					["boss_fight_component"] = true,
 				}, -- [22]
 				{
 					["flag_original"] = 2632,
@@ -18031,8 +22121,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
@@ -18040,8 +22129,9 @@ _detalhes_database = {
 					["total_without_pet"] = 20101.014946,
 					["fight_component"] = true,
 					["dps_started"] = false,
-					["end_time"] = 1670614333,
-					["on_hold"] = false,
+					["total"] = 20101.014946,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["nome"] = "Chaotic Rift",
 					["spells"] = {
@@ -18081,12 +22171,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 20101.014946,
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 50169.014946,
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1670614333,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670614277,
 					["serial"] = "Creature-0-4448-576-13885-26918-0000138A55",
 					["aID"] = "26918",
@@ -18095,9 +22185,9 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.027581,
 					["damage_from"] = {
-						["Moolatz"] = true,
 						["Panici"] = true,
 						["Töman"] = true,
+						["Moolatz"] = true,
 						["Happyglow"] = true,
 					},
 					["targets"] = {
@@ -18110,8 +22200,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["aID"] = "26737",
 					["raid_targets"] = {
@@ -18119,8 +22208,9 @@ _detalhes_database = {
 					["total_without_pet"] = 47962.027581,
 					["monster"] = true,
 					["fight_component"] = true,
-					["end_time"] = 1670614354,
-					["on_hold"] = false,
+					["total"] = 47962.027581,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["nome"] = "Crazed Mana-Surge",
 					["spells"] = {
@@ -18249,12 +22339,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 47962.027581,
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 293586.027581,
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1670614354,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670614271,
 					["serial"] = "Creature-0-4448-576-13885-26737-0003138A54",
 					["dps_started"] = false,
@@ -18280,8 +22370,7 @@ _detalhes_database = {
 					["pets"] = {
 						"Chaotic Rift <Anomalus>", -- [1]
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
@@ -18290,9 +22379,10 @@ _detalhes_database = {
 					["total"] = 24637.008966,
 					["dps_started"] = false,
 					["end_time"] = 1670614497,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
-					["boss_fight_component"] = true,
+					["nome"] = "Anomalus",
 					["spells"] = {
 						["_ActorTable"] = {
 							{
@@ -18433,12 +22523,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["nome"] = "Anomalus",
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 192199.008966,
+					["friendlyfire_total"] = 0,
+					["boss_fight_component"] = true,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670614445,
 					["serial"] = "Creature-0-4448-576-13885-26763-0000138A54",
 					["aID"] = "26763",
@@ -18461,13 +22551,12 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["monster"] = true,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["aID"] = "26918",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 5958.010607,
-					["last_dps"] = 0,
+					["damage_taken"] = 18923.010607,
 					["delay"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1670614497,
@@ -18540,7 +22629,8 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 18923.010607,
+					["friendlyfire"] = {
+					},
 					["last_event"] = 0,
 					["boss_fight_component"] = true,
 					["custom"] = 0,
@@ -18570,8 +22660,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
@@ -18579,8 +22668,9 @@ _detalhes_database = {
 					["total_without_pet"] = 34173.03152400001,
 					["fight_component"] = true,
 					["dps_started"] = false,
-					["end_time"] = 1670614721,
-					["on_hold"] = false,
+					["total"] = 34173.03152400001,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["nome"] = "Crystalline Frayer",
 					["spells"] = {
@@ -18735,12 +22825,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 34173.03152400001,
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 121844.031524,
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1670614721,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670614610,
 					["serial"] = "Creature-0-4448-576-13885-26793-0009138A55",
 					["aID"] = "26793",
@@ -18765,8 +22855,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
@@ -18774,8 +22863,9 @@ _detalhes_database = {
 					["total_without_pet"] = 47326.021782,
 					["fight_component"] = true,
 					["dps_started"] = false,
-					["end_time"] = 1670614721,
-					["on_hold"] = false,
+					["total"] = 47326.021782,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["nome"] = "Crystalline Tender",
 					["spells"] = {
@@ -18870,12 +22960,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 47326.021782,
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 293190.021782,
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1670614721,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670614608,
 					["serial"] = "Creature-0-4448-576-13885-28231-0000138A56",
 					["aID"] = "28231",
@@ -18901,8 +22991,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
@@ -18910,8 +22999,9 @@ _detalhes_database = {
 					["total_without_pet"] = 45924.015034,
 					["fight_component"] = true,
 					["dps_started"] = false,
-					["end_time"] = 1670614721,
-					["on_hold"] = false,
+					["total"] = 45924.015034,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["nome"] = "Crystalline Protector",
 					["spells"] = {
@@ -19046,12 +23136,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 45924.015034,
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 230121.015034,
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1670614721,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670614624,
 					["serial"] = "Creature-0-4448-576-13885-26792-0000138A55",
 					["aID"] = "26792",
@@ -19075,20 +23165,19 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["aID"] = "26782",
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 118281.041038,
-					["on_hold"] = false,
+					["damage_taken"] = 367172.0410379999,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 118281.041038,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
-					["boss_fight_component"] = true,
+					["on_hold"] = false,
+					["nome"] = "Crystalline Keeper",
 					["spells"] = {
 						["_ActorTable"] = {
 							{
@@ -19220,16 +23309,17 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1670614721,
 					["tipo"] = 1,
-					["nome"] = "Crystalline Keeper",
+					["last_dps"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 367172.0410379999,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1670614578,
 					["serial"] = "Creature-0-4448-576-13885-26782-0001138A55",
-					["last_dps"] = 0,
+					["boss_fight_component"] = true,
 				}, -- [30]
 				{
 					["flag_original"] = 68168,
@@ -19251,8 +23341,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
@@ -19261,9 +23350,10 @@ _detalhes_database = {
 					["total"] = 18458.012624,
 					["dps_started"] = false,
 					["end_time"] = 1670614932,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
-					["boss_fight_component"] = true,
+					["nome"] = "Ormorok the Tree-Shaper",
 					["spells"] = {
 						["_ActorTable"] = {
 							{
@@ -19409,12 +23499,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["nome"] = "Ormorok the Tree-Shaper",
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 192199.012624,
+					["friendlyfire_total"] = 0,
+					["boss_fight_component"] = true,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670614886,
 					["serial"] = "Creature-0-4448-576-13885-26794-0000138A54",
 					["aID"] = "26794",
@@ -19432,8 +23522,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["aID"] = "",
 					["raid_targets"] = {
@@ -19442,9 +23531,10 @@ _detalhes_database = {
 					["total"] = 8783.003868,
 					["monster"] = true,
 					["end_time"] = 1670614932,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
-					["boss_fight_component"] = true,
+					["nome"] = "[*] Crystal Spike",
 					["spells"] = {
 						["_ActorTable"] = {
 							[47944] = {
@@ -19479,12 +23569,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["nome"] = "[*] Crystal Spike",
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 0.003868,
+					["friendlyfire_total"] = 0,
+					["boss_fight_component"] = true,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670614918,
 					["serial"] = "",
 					["dps_started"] = false,
@@ -19493,9 +23583,9 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.012794,
 					["damage_from"] = {
-						["Panici"] = true,
 						["Moolatz"] = true,
 						["Töman"] = true,
+						["Panici"] = true,
 						["Happyglow"] = true,
 					},
 					["targets"] = {
@@ -19505,8 +23595,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["aID"] = "26716",
 					["raid_targets"] = {
@@ -19514,8 +23603,9 @@ _detalhes_database = {
 					["total_without_pet"] = 5943.012794,
 					["monster"] = true,
 					["fight_component"] = true,
-					["end_time"] = 1670615048,
-					["on_hold"] = false,
+					["total"] = 5943.012794,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["nome"] = "Azure Warder",
 					["spells"] = {
@@ -19579,12 +23669,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 5943.012794,
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 77743.012794,
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1670615048,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670615027,
 					["serial"] = "Creature-0-4448-576-13885-26716-0000138A54",
 					["dps_started"] = false,
@@ -19593,9 +23683,9 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.006454,
 					["damage_from"] = {
-						["Panici"] = true,
 						["Moolatz"] = true,
 						["Töman"] = true,
+						["Panici"] = true,
 						["Happyglow"] = true,
 					},
 					["targets"] = {
@@ -19608,8 +23698,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
@@ -19618,9 +23707,10 @@ _detalhes_database = {
 					["total"] = 73596.006454,
 					["dps_started"] = false,
 					["end_time"] = 1670615121,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
-					["boss_fight_component"] = true,
+					["nome"] = "Keristrasza",
 					["spells"] = {
 						["_ActorTable"] = {
 							{
@@ -19655,35 +23745,31 @@ _detalhes_database = {
 								["DODGE"] = 4,
 								["a_dmg"] = 0,
 							}, -- [1]
-							[50997] = {
+							[8599] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 1336,
+								["n_max"] = 0,
 								["targets"] = {
-									["Happyglow"] = 1336,
-									["Twercks"] = 1160,
 								},
-								["n_dmg"] = 2496,
+								["n_dmg"] = 0,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 4,
-								["total"] = 2496,
+								["counter"] = 0,
+								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = 50997,
-								["r_dmg"] = 2496,
-								["r_amt"] = 2,
+								["id"] = 8599,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 2,
-								["a_amt"] = 0,
 								["c_min"] = 0,
-								["successful_casted"] = 4,
+								["successful_casted"] = 1,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
 								["a_dmg"] = 0,
-								["RESIST"] = 1,
 								["extra"] = {
 								},
-								["MISS"] = 1,
 							},
 							[50155] = {
 								["c_amt"] = 0,
@@ -19714,6 +23800,36 @@ _detalhes_database = {
 								["extra"] = {
 								},
 							},
+							[50997] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 1336,
+								["targets"] = {
+									["Happyglow"] = 1336,
+									["Twercks"] = 1160,
+								},
+								["n_dmg"] = 2496,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 4,
+								["total"] = 2496,
+								["c_max"] = 0,
+								["id"] = 50997,
+								["r_dmg"] = 2496,
+								["r_amt"] = 2,
+								["b_dmg"] = 0,
+								["n_amt"] = 2,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 4,
+								["a_dmg"] = 0,
+								["RESIST"] = 1,
+								["extra"] = {
+								},
+								["MISS"] = 1,
+							},
 							[48096] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -19742,41 +23858,15 @@ _detalhes_database = {
 								["extra"] = {
 								},
 							},
-							[8599] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 8599,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 1,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
-							},
 						},
 						["tipo"] = 2,
 					},
-					["nome"] = "Keristrasza",
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 248193.006454,
+					["friendlyfire_total"] = 0,
+					["boss_fight_component"] = true,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670615050,
 					["serial"] = "Creature-0-4448-576-13885-26723-0000138A54",
 					["aID"] = "26723",
@@ -19796,8 +23886,7 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["aID"] = "",
 					["raid_targets"] = {
@@ -19806,9 +23895,10 @@ _detalhes_database = {
 					["total"] = 15477.015346,
 					["monster"] = true,
 					["end_time"] = 1670615121,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
-					["boss_fight_component"] = true,
+					["nome"] = "[*] Intense Cold",
 					["spells"] = {
 						["_ActorTable"] = {
 							[48095] = {
@@ -19845,12 +23935,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["nome"] = "[*] Intense Cold",
-					["friendlyfire_total"] = 0,
 					["damage_taken"] = 0.015346,
+					["friendlyfire_total"] = 0,
+					["boss_fight_component"] = true,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670615051,
 					["serial"] = "",
 					["dps_started"] = false,
@@ -19866,16 +23956,16 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["total"] = 0.008334,
+					["monster"] = true,
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
-					["aID"] = "26483",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008334,
-					["monster"] = true,
 					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1670680668,
-					["damage_taken"] = 0.008334,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Dragonbone Condor",
 					["spells"] = {
@@ -19936,16 +24026,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["total"] = 0.008334,
 					["friendlyfire"] = {
 					},
-					["fight_component"] = true,
+					["damage_taken"] = 0.008334,
 					["custom"] = 0,
 					["last_event"] = 0,
 					["last_dps"] = 0,
 					["start_time"] = 1670680665,
 					["serial"] = "Creature-0-4457-571-5243-26483-000013E4C5",
-					["classe"] = "UNKNOW",
+					["aID"] = "26483",
 				}, -- [36]
 				{
 					["flag_original"] = 68168,
@@ -19963,16 +24053,16 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["total"] = 0.004266,
+					["monster"] = true,
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
-					["aID"] = "27210",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004266,
-					["monster"] = true,
 					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1670680668,
-					["damage_taken"] = 0.004266,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "High General Abbendis",
 					["spells"] = {
@@ -19984,9 +24074,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Moolatz"] = 0,
 									["Dikappa"] = 0,
 									["Wellroasted"] = 0,
-									["Moolatz"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -20122,16 +24212,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["total"] = 0.004266,
 					["friendlyfire"] = {
 					},
-					["fight_component"] = true,
+					["damage_taken"] = 0.004266,
 					["custom"] = 0,
 					["last_event"] = 0,
 					["last_dps"] = 0,
 					["start_time"] = 1670680665,
 					["serial"] = "Creature-0-4457-571-5243-27210-0000147309",
-					["classe"] = "UNKNOW",
+					["aID"] = "27210",
 				}, -- [37]
 				{
 					["flag_original"] = 1298,
@@ -20145,8 +24235,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["tipo"] = 1,
 					["classe"] = "DEATHKNIGHT",
 					["raid_targets"] = {
@@ -20155,8 +24244,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1670680668,
-					["damage_taken"] = 0.006902,
 					["on_hold"] = false,
+					["damage_taken"] = 0.006902,
 					["nome"] = "Dikappa",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -20528,7 +24617,8 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1670680665,
 					["serial"] = "Player-4465-036E0E98",
 					["total"] = 0.006902,
@@ -20540,23 +24630,23 @@ _detalhes_database = {
 					},
 					["targets"] = {
 						["Magicslette"] = 0,
+						["Moolatz"] = 0,
 						["Wellroasted"] = 0,
 						["Dikappa"] = 0,
-						["Moolatz"] = 0,
 					},
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["total"] = 0.003292,
+					["monster"] = true,
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
-					["aID"] = "27202",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003292,
-					["monster"] = true,
 					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1670680668,
-					["damage_taken"] = 0.003292,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Onslaught Raven Priest",
 					["spells"] = {
@@ -20569,9 +24659,9 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Magicslette"] = 0,
+									["Moolatz"] = 0,
 									["Wellroasted"] = 0,
 									["Dikappa"] = 0,
-									["Moolatz"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -20599,9 +24689,9 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Magicslette"] = 0,
+									["Moolatz"] = 0,
 									["Wellroasted"] = 0,
 									["Dikappa"] = 0,
-									["Moolatz"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -20650,16 +24740,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["total"] = 0.003292,
 					["friendlyfire"] = {
 					},
-					["fight_component"] = true,
+					["damage_taken"] = 0.003292,
 					["custom"] = 0,
 					["last_event"] = 0,
 					["last_dps"] = 0,
 					["start_time"] = 1670680665,
 					["serial"] = "Creature-0-4457-571-5243-27202-000014727A",
-					["classe"] = "UNKNOW",
+					["aID"] = "27202",
 				}, -- [39]
 				{
 					["flag_original"] = 2632,
@@ -20676,16 +24766,16 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["total"] = 0.003262,
+					["monster"] = true,
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
-					["aID"] = "27203",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003262,
-					["monster"] = true,
 					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1670680668,
-					["damage_taken"] = 0.003262,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Onslaught Footman",
 					["spells"] = {
@@ -20725,16 +24815,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["total"] = 0.003262,
 					["friendlyfire"] = {
 					},
-					["fight_component"] = true,
+					["damage_taken"] = 0.003262,
 					["custom"] = 0,
 					["last_event"] = 0,
 					["last_dps"] = 0,
 					["start_time"] = 1670680665,
 					["serial"] = "Creature-0-4457-571-5243-27203-000014727A",
-					["classe"] = "UNKNOW",
+					["aID"] = "27203",
 				}, -- [40]
 				{
 					["flag_original"] = 1298,
@@ -20746,8 +24836,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["tipo"] = 1,
 					["classe"] = "MAGE",
 					["raid_targets"] = {
@@ -20756,8 +24845,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1670680668,
-					["damage_taken"] = 0.007388,
 					["on_hold"] = false,
+					["damage_taken"] = 0.007388,
 					["nome"] = "Magicslette",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -20796,7 +24885,8 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1670680665,
 					["serial"] = "Player-4465-02EA181B",
 					["total"] = 0.007388,
@@ -20811,8 +24901,9 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["on_hold"] = false,
-					["damage_taken"] = 0.003127,
+					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["aID"] = "27209",
 					["raid_targets"] = {
 					},
@@ -20821,8 +24912,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1670680668,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.003127,
 					["nome"] = "Torturer Alphonse",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -20861,7 +24951,7 @@ _detalhes_database = {
 					["total"] = 0.003127,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670680665,
 					["serial"] = "Creature-0-4457-571-5243-27209-00001460C4",
 					["classe"] = "UNKNOW",
@@ -20876,8 +24966,9 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["on_hold"] = false,
-					["damage_taken"] = 0.007396,
+					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["aID"] = "27211",
 					["raid_targets"] = {
 					},
@@ -20886,8 +24977,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1670680668,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.007396,
 					["nome"] = "Onslaught Executioner",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -20926,7 +25016,7 @@ _detalhes_database = {
 					["total"] = 0.007396,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1670680665,
 					["serial"] = "Creature-0-4457-571-5243-27211-0000146C25",
 					["classe"] = "UNKNOW",
@@ -20942,16 +25032,16 @@ _detalhes_database = {
 					["serial"] = "Creature-0-4457-571-5243-26858-0000148F51",
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["end_time"] = 1670692466,
+					["friendlyfire_total"] = 0,
 					["aID"] = "26858",
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005009,
+					["fight_component"] = true,
 					["dps_started"] = false,
-					["monster"] = true,
-					["end_time"] = 1670692466,
-					["on_hold"] = false,
+					["total"] = 0.005009,
+					["last_dps"] = 0,
 					["last_event"] = 0,
 					["nome"] = "Sarathstra",
 					["spells"] = {
@@ -20986,16 +25076,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["fight_component"] = true,
+					["damage_taken"] = 0.005009,
 					["friendlyfire"] = {
 					},
-					["total"] = 0.005009,
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.005009,
+					["on_hold"] = false,
 					["start_time"] = 1670692463,
 					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [44]
 				{
 					["flag_original"] = 68168,
@@ -21008,16 +25098,16 @@ _detalhes_database = {
 					["serial"] = "Creature-0-4457-571-5243-26966-0000148F8A",
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["end_time"] = 1670692466,
+					["friendlyfire_total"] = 0,
 					["aID"] = "26966",
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006775,
+					["fight_component"] = true,
 					["dps_started"] = false,
-					["monster"] = true,
-					["end_time"] = 1670692466,
-					["on_hold"] = false,
+					["total"] = 0.006775,
+					["last_dps"] = 0,
 					["last_event"] = 0,
 					["nome"] = "Shadowy Tormentor",
 					["spells"] = {
@@ -21052,16 +25142,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["fight_component"] = true,
+					["damage_taken"] = 0.006775,
 					["friendlyfire"] = {
 					},
-					["total"] = 0.006775,
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.006775,
+					["on_hold"] = false,
 					["start_time"] = 1670692463,
 					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [45]
 				{
 					["flag_original"] = 68168,
@@ -21075,16 +25165,16 @@ _detalhes_database = {
 					["serial"] = "Creature-0-4457-571-5243-27685-000094937E",
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["end_time"] = 1670692466,
+					["friendlyfire_total"] = 0,
 					["aID"] = "27685",
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003569,
+					["fight_component"] = true,
 					["dps_started"] = false,
-					["monster"] = true,
-					["end_time"] = 1670692466,
-					["on_hold"] = false,
+					["total"] = 0.003569,
+					["last_dps"] = 0,
 					["last_event"] = 0,
 					["nome"] = "Frigid Ghoul Attacker",
 					["spells"] = {
@@ -21147,16 +25237,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["fight_component"] = true,
+					["damage_taken"] = 0.003569,
 					["friendlyfire"] = {
 					},
-					["total"] = 0.003569,
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.003569,
+					["on_hold"] = false,
 					["start_time"] = 1670692463,
 					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [46]
 				{
 					["flag_original"] = 68168,
@@ -21170,16 +25260,16 @@ _detalhes_database = {
 					["serial"] = "Creature-0-4457-571-5243-27686-0000949314",
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["end_time"] = 1670692466,
+					["friendlyfire_total"] = 0,
 					["aID"] = "27686",
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004106,
+					["fight_component"] = true,
 					["dps_started"] = false,
-					["monster"] = true,
-					["end_time"] = 1670692466,
-					["on_hold"] = false,
+					["total"] = 0.004106,
+					["last_dps"] = 0,
 					["last_event"] = 0,
 					["nome"] = "Frigid Geist Attacker",
 					["spells"] = {
@@ -21215,16 +25305,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["fight_component"] = true,
+					["damage_taken"] = 0.004106,
 					["friendlyfire"] = {
 					},
-					["total"] = 0.004106,
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.004106,
+					["on_hold"] = false,
 					["start_time"] = 1670692463,
 					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [47]
 				{
 					["flag_original"] = 2632,
@@ -21237,16 +25327,16 @@ _detalhes_database = {
 					["serial"] = "Creature-0-4457-571-5243-27687-0000149314",
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["end_time"] = 1670692466,
+					["friendlyfire_total"] = 0,
 					["aID"] = "27687",
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007839,
+					["fight_component"] = true,
 					["dps_started"] = false,
-					["monster"] = true,
-					["end_time"] = 1670692466,
-					["on_hold"] = false,
+					["total"] = 0.007839,
+					["last_dps"] = 0,
 					["last_event"] = 0,
 					["nome"] = "Frigid Necromancer Attacker",
 					["spells"] = {
@@ -21334,16 +25424,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["fight_component"] = true,
+					["damage_taken"] = 0.007839,
 					["friendlyfire"] = {
 					},
-					["total"] = 0.007839,
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.007839,
+					["on_hold"] = false,
 					["start_time"] = 1670692463,
 					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [48]
 				{
 					["flag_original"] = 68168,
@@ -21357,16 +25447,16 @@ _detalhes_database = {
 					["serial"] = "Creature-0-4457-571-5243-27531-00001492D1",
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["end_time"] = 1670692466,
+					["friendlyfire_total"] = 0,
 					["aID"] = "27531",
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007002,
+					["fight_component"] = true,
 					["dps_started"] = false,
-					["monster"] = true,
-					["end_time"] = 1670692466,
-					["on_hold"] = false,
+					["total"] = 0.007002,
+					["last_dps"] = 0,
 					["last_event"] = 0,
 					["nome"] = "Frigid Abomination Attacker",
 					["spells"] = {
@@ -21429,16 +25519,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["fight_component"] = true,
+					["damage_taken"] = 0.007002,
 					["friendlyfire"] = {
 					},
-					["total"] = 0.007002,
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.007002,
+					["on_hold"] = false,
 					["start_time"] = 1670692463,
 					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [49]
 				{
 					["flag_original"] = 68168,
@@ -21451,16 +25541,16 @@ _detalhes_database = {
 					["serial"] = "Creature-0-4457-571-5243-26283-0000146B64",
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["end_time"] = 1670692466,
+					["friendlyfire_total"] = 0,
 					["aID"] = "26283",
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001601,
+					["fight_component"] = true,
 					["dps_started"] = false,
-					["monster"] = true,
-					["end_time"] = 1670692466,
-					["on_hold"] = false,
+					["total"] = 0.001601,
+					["last_dps"] = 0,
 					["last_event"] = 0,
 					["nome"] = "Ice Revenant",
 					["spells"] = {
@@ -21522,16 +25612,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["fight_component"] = true,
+					["damage_taken"] = 0.001601,
 					["friendlyfire"] = {
 					},
-					["total"] = 0.001601,
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.001601,
+					["on_hold"] = false,
 					["start_time"] = 1670692463,
 					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [50]
 				{
 					["flag_original"] = 68168,
@@ -21543,16 +25633,16 @@ _detalhes_database = {
 					["serial"] = "Creature-0-4457-571-5243-26482-000011FFEC",
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["end_time"] = 1670692466,
+					["friendlyfire_total"] = 0,
 					["aID"] = "26482",
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005126,
+					["fight_component"] = true,
 					["dps_started"] = false,
-					["monster"] = true,
-					["end_time"] = 1670692466,
-					["on_hold"] = false,
+					["total"] = 0.005126,
+					["last_dps"] = 0,
 					["last_event"] = 0,
 					["nome"] = "Arctic Grizzly",
 					["spells"] = {
@@ -21560,16 +25650,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["fight_component"] = true,
+					["damage_taken"] = 0.005126,
 					["friendlyfire"] = {
 					},
-					["total"] = 0.005126,
+					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.005126,
+					["on_hold"] = false,
 					["start_time"] = 1670692463,
 					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [51]
 				{
 					["flag_original"] = 68168,
@@ -21582,15 +25672,15 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
+					["on_hold"] = false,
+					["aID"] = "26841",
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005954,
 					["dps_started"] = false,
 					["fight_component"] = true,
-					["end_time"] = 1670752690,
+					["total"] = 0.005954,
 					["damage_taken"] = 0.005954,
 					["tipo"] = 1,
 					["nome"] = "Reanimated Frost Wyrm",
@@ -21653,16 +25743,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 0.005954,
+					["monster"] = true,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["end_time"] = 1670752690,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1670752687,
 					["serial"] = "Creature-0-4457-571-5243-26841-0000140360",
-					["aID"] = "26841",
+					["friendlyfire_total"] = 0,
 				}, -- [52]
 				{
 					["flag_original"] = 68136,
@@ -21674,9 +25764,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
-					["on_hold"] = false,
+					["damage_taken"] = 0.002909,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
@@ -21685,7 +25774,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1670752690,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["nome"] = "Emaciated Mammoth Bull",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -21751,7 +25840,8 @@ _detalhes_database = {
 					["total"] = 0.002909,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.002909,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1670752687,
 					["serial"] = "Creature-0-4457-571-5243-26271-000014BCF7",
 					["aID"] = "26271",
@@ -21767,16 +25857,16 @@ _detalhes_database = {
 					["serial"] = "Creature-0-4446-571-16693-27004-000015A8FD",
 					["pets"] = {
 					},
-					["friendlyfire_total"] = 0,
 					["fight_component"] = true,
-					["aID"] = "27004",
+					["classe"] = "UNKNOW",
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00162,
-					["end_time"] = 1670753409,
 					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 0.00162,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["last_event"] = 0,
 					["nome"] = "Icefist",
 					["spells"] = {
@@ -21838,16 +25928,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["end_time"] = 1670753409,
 					["friendlyfire"] = {
 					},
-					["classe"] = "UNKNOW",
+					["on_hold"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
 					["damage_taken"] = 0.00162,
 					["start_time"] = 1670753406,
 					["delay"] = 0,
-					["monster"] = true,
+					["aID"] = "27004",
 				}, -- [54]
 				{
 					["flag_original"] = 1298,
@@ -21868,9 +25958,8 @@ _detalhes_database = {
 					["serial"] = "Player-4465-037180FA",
 					["dps_started"] = false,
 					["end_time"] = 1670753409,
-					["damage_taken"] = 0.001282,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Xskull",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -22098,11 +26187,939 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1670753406,
 					["delay"] = 0,
-					["on_hold"] = false,
+					["damage_taken"] = 0.001282,
 				}, -- [55]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.008427,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Moolatz"] = 0,
+						["Xso"] = 0,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.008427,
+					["dps_started"] = false,
+					["fight_component"] = true,
+					["end_time"] = 1670957779,
+					["damage_taken"] = 0.008427,
+					["tipo"] = 1,
+					["nome"] = "Ice Heart Jormungar Feeder",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+									["Xso"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							}, -- [1]
+							[47447] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 47447,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["total"] = 0.008427,
+					["friendlyfire"] = {
+					},
+					["last_dps"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1670957776,
+					["serial"] = "Creature-0-4446-571-16693-26358-000016F992",
+					["aID"] = "26358",
+				}, -- [56]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.001203,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Moolatz"] = 0,
+						["Xink's Shredder <Moolatz>"] = 0,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.001203,
+					["dps_started"] = false,
+					["fight_component"] = true,
+					["end_time"] = 1670957779,
+					["damage_taken"] = 0.001203,
+					["tipo"] = 1,
+					["nome"] = "Coldwind Waste Huntress",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Xink's Shredder"] = 0,
+									["Xink's Shredder <Moolatz>"] = 0,
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							}, -- [1]
+							[49865] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 49865,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+						},
+						["tipo"] = 2,
+					},
+					["total"] = 0.001203,
+					["friendlyfire"] = {
+					},
+					["last_dps"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1670957776,
+					["serial"] = "Creature-0-4446-571-16693-26575-000016F768",
+					["aID"] = "26575",
+				}, -- [57]
+				{
+					["flag_original"] = 4369,
+					["totalabsorbed"] = 0.005857,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Mistress of the Coldwind"] = 0,
+						["Coldwind Waste Huntress"] = 0,
+						["Coldwind Witch"] = 0,
+					},
+					["pets"] = {
+					},
+					["on_hold"] = false,
+					["tipo"] = 1,
+					["classe"] = "PET",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.005857,
+					["delay"] = 0,
+					["dps_started"] = false,
+					["total"] = 0.005857,
+					["friendlyfire"] = {
+					},
+					["last_dps"] = 0,
+					["nome"] = "Xink's Shredder <Moolatz>",
+					["spells"] = {
+						["_ActorTable"] = {
+							[47921] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Mistress of the Coldwind"] = 0,
+									["Coldwind Waste Huntress"] = 0,
+									["Coldwind Witch"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 47921,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[47938] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Mistress of the Coldwind"] = 0,
+									["Coldwind Waste Huntress"] = 0,
+									["Coldwind Witch"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 47938,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+						},
+						["tipo"] = 2,
+					},
+					["grupo"] = true,
+					["aID"] = "",
+					["friendlyfire_total"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["damage_taken"] = 0.005857,
+					["start_time"] = 1670957776,
+					["serial"] = "Vehicle-0-4446-571-16693-27061-000016FBC2",
+					["end_time"] = 1670957779,
+				}, -- [58]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.006701,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Xink's Shredder <Moolatz>"] = 0,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.006701,
+					["dps_started"] = false,
+					["fight_component"] = true,
+					["end_time"] = 1670957779,
+					["damage_taken"] = 0.006701,
+					["tipo"] = 1,
+					["nome"] = "Coldwind Witch",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Xink's Shredder"] = 0,
+									["Xink's Shredder <Moolatz>"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							}, -- [1]
+							[51877] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Xink's Shredder <Moolatz>"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 51877,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+						},
+						["tipo"] = 2,
+					},
+					["total"] = 0.006701,
+					["friendlyfire"] = {
+					},
+					["last_dps"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1670957776,
+					["serial"] = "Creature-0-4446-571-16693-26577-000016E4A0",
+					["aID"] = "26577",
+				}, -- [59]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.002315,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Xink's Shredder <Moolatz>"] = 0,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.002315,
+					["dps_started"] = false,
+					["fight_component"] = true,
+					["end_time"] = 1670957779,
+					["damage_taken"] = 0.002315,
+					["tipo"] = 1,
+					["nome"] = "Mistress of the Coldwind",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Xink's Shredder"] = 0,
+									["Xink's Shredder <Moolatz>"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							}, -- [1]
+							[38210] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 38210,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[52814] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Xink's Shredder <Moolatz>"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 52814,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+						},
+						["tipo"] = 2,
+					},
+					["total"] = 0.002315,
+					["friendlyfire"] = {
+					},
+					["last_dps"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1670957776,
+					["serial"] = "Creature-0-4446-571-16693-26578-000016E310",
+					["aID"] = "26578",
+				}, -- [60]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.005083,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Moolatz"] = 0,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.005083,
+					["dps_started"] = false,
+					["fight_component"] = true,
+					["end_time"] = 1670957779,
+					["damage_taken"] = 0.005083,
+					["tipo"] = 1,
+					["nome"] = "Hulking Jormungar",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							}, -- [1]
+							[50293] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 50293,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+						},
+						["tipo"] = 2,
+					},
+					["total"] = 0.005083,
+					["friendlyfire"] = {
+					},
+					["last_dps"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1670957776,
+					["serial"] = "Creature-0-4446-571-16693-26293-000016F9F5",
+					["aID"] = "26293",
+				}, -- [61]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.002208,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Moolatz"] = 0,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.002208,
+					["dps_started"] = false,
+					["fight_component"] = true,
+					["end_time"] = 1670957779,
+					["damage_taken"] = 0.002208,
+					["tipo"] = 1,
+					["nome"] = "Jormungar Tunneler",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							}, -- [1]
+							[51879] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 51879,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+						},
+						["tipo"] = 2,
+					},
+					["total"] = 0.002208,
+					["friendlyfire"] = {
+					},
+					["last_dps"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1670957776,
+					["serial"] = "Creature-0-4446-571-16693-26467-000016E144",
+					["aID"] = "26467",
+				}, -- [62]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.008212,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Moolatz"] = 0,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.008212,
+					["aID"] = "26359",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.008212,
+					["total"] = 0.008212,
+					["monster"] = true,
+					["end_time"] = 1670958576,
+					["last_dps"] = 0,
+					["tipo"] = 1,
+					["nome"] = "Ice Heart Jormungar Spawn",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							}, -- [1]
+							[43358] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 43358,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+						},
+						["tipo"] = 2,
+					},
+					["classe"] = "UNKNOW",
+					["friendlyfire"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1670958573,
+					["serial"] = "Creature-0-4446-571-16687-26359-000018CC64",
+					["fight_component"] = true,
+				}, -- [63]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.005947,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Moolatz"] = 0,
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["aID"] = "26360",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.005947,
+					["end_time"] = 1670959184,
+					["fight_component"] = true,
+					["dps_started"] = false,
+					["total"] = 0.005947,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["nome"] = "Rattlebore",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
+							[51203] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 51203,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[47447] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 47447,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[48287] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 48287,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+					},
+					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
+					["serial"] = "Creature-0-4446-571-16687-26360-000018C763",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1670959181,
+					["delay"] = 0,
+					["damage_taken"] = 0.005947,
+				}, -- [64]
 			},
 		}, -- [1]
 		{
@@ -22165,9 +27182,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 116,
 								["n_curado"] = 44121,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[43185] = {
@@ -22190,9 +27207,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 1,
 								["n_curado"] = 281,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -22276,9 +27293,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 330,
+								["totaldenied"] = 0,
 								["n_amt"] = 6,
 								["n_curado"] = 1265,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[26982] = {
@@ -22309,9 +27326,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 468,
 								["n_curado"] = 187508,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[34299] = {
@@ -22334,9 +27351,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 2,
 								["n_curado"] = 197,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[26979] = {
@@ -22359,9 +27376,92 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 3,
 								["n_curado"] = 15792,
+								["absorbed"] = 0,
+							},
+							[33778] = {
+								["c_amt"] = 1,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+									["Panici"] = 6476,
+									["Happyglow"] = 3615,
+								},
+								["n_max"] = 1436,
+								["targets"] = {
+									["Panici"] = 2170,
+									["Happyglow"] = 0,
+								},
+								["n_min"] = 0,
+								["counter"] = 6,
+								["overheal"] = 10091,
+								["total"] = 2170,
+								["c_max"] = 0,
+								["id"] = 33778,
+								["targets_absorbs"] = {
+								},
+								["c_min"] = 0,
+								["c_curado"] = 0,
 								["totaldenied"] = 0,
+								["n_amt"] = 5,
+								["n_curado"] = 2170,
+								["absorbed"] = 0,
+							},
+							[26980] = {
+								["c_amt"] = 6,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+									["Töman"] = 10787,
+									["Moolatz"] = 2225,
+									["Panici"] = 32667,
+									["Happyglow"] = 14370,
+								},
+								["n_max"] = 2580,
+								["targets"] = {
+									["Töman"] = 6785,
+									["Moolatz"] = 9503,
+									["Panici"] = 44014,
+									["Happyglow"] = 20018,
+								},
+								["n_min"] = 0,
+								["counter"] = 163,
+								["overheal"] = 60049,
+								["total"] = 80320,
+								["c_max"] = 3745,
+								["id"] = 26980,
+								["targets_absorbs"] = {
+								},
+								["c_min"] = 0,
+								["c_curado"] = 19377,
+								["totaldenied"] = 0,
+								["n_amt"] = 157,
+								["n_curado"] = 60943,
+								["absorbed"] = 0,
+							},
+							[54755] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+								},
+								["n_max"] = 563,
+								["targets"] = {
+									["Panici"] = 560,
+									["Happyglow"] = 1121,
+								},
+								["n_min"] = 0,
+								["counter"] = 3,
+								["overheal"] = 0,
+								["total"] = 1681,
+								["c_max"] = 0,
+								["id"] = 54755,
+								["targets_absorbs"] = {
+								},
+								["c_min"] = 0,
+								["c_curado"] = 0,
+								["totaldenied"] = 0,
+								["n_amt"] = 3,
+								["n_curado"] = 1681,
 								["absorbed"] = 0,
 							},
 							[33763] = {
@@ -22388,65 +27488,35 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 55,
 								["n_curado"] = 11185,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
-							[26980] = {
-								["c_amt"] = 6,
-								["totalabsorb"] = 0,
-								["targets_overheal"] = {
-									["Panici"] = 32667,
-									["Töman"] = 10787,
-									["Moolatz"] = 2225,
-									["Happyglow"] = 14370,
-								},
-								["n_max"] = 2580,
-								["targets"] = {
-									["Panici"] = 44014,
-									["Töman"] = 6785,
-									["Moolatz"] = 9503,
-									["Happyglow"] = 20018,
-								},
-								["n_min"] = 0,
-								["counter"] = 163,
-								["overheal"] = 60049,
-								["total"] = 80320,
-								["c_max"] = 3745,
-								["id"] = 26980,
-								["targets_absorbs"] = {
-								},
-								["c_min"] = 0,
-								["c_curado"] = 19377,
-								["n_amt"] = 157,
-								["n_curado"] = 60943,
-								["totaldenied"] = 0,
-								["absorbed"] = 0,
-							},
-							[54755] = {
+							[18562] = {
 								["c_amt"] = 0,
 								["totalabsorb"] = 0,
 								["targets_overheal"] = {
 								},
-								["n_max"] = 563,
+								["n_max"] = 4462,
 								["targets"] = {
-									["Panici"] = 560,
-									["Happyglow"] = 1121,
+									["Moolatz"] = 2921,
+									["Panici"] = 3349,
+									["Happyglow"] = 4462,
 								},
 								["n_min"] = 0,
 								["counter"] = 3,
 								["overheal"] = 0,
-								["total"] = 1681,
+								["total"] = 10732,
 								["c_max"] = 0,
-								["id"] = 54755,
+								["id"] = 18562,
 								["targets_absorbs"] = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
-								["n_amt"] = 3,
-								["n_curado"] = 1681,
 								["totaldenied"] = 0,
+								["n_amt"] = 3,
+								["n_curado"] = 10732,
 								["absorbed"] = 0,
 							},
 							[53248] = {
@@ -22479,62 +27549,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 2200,
 								["n_curado"] = 294570,
-								["totaldenied"] = 0,
-								["absorbed"] = 0,
-							},
-							[18562] = {
-								["c_amt"] = 0,
-								["totalabsorb"] = 0,
-								["targets_overheal"] = {
-								},
-								["n_max"] = 4462,
-								["targets"] = {
-									["Moolatz"] = 2921,
-									["Panici"] = 3349,
-									["Happyglow"] = 4462,
-								},
-								["n_min"] = 0,
-								["counter"] = 3,
-								["overheal"] = 0,
-								["total"] = 10732,
-								["c_max"] = 0,
-								["id"] = 18562,
-								["targets_absorbs"] = {
-								},
-								["c_min"] = 0,
-								["c_curado"] = 0,
-								["n_amt"] = 3,
-								["n_curado"] = 10732,
-								["totaldenied"] = 0,
-								["absorbed"] = 0,
-							},
-							[33778] = {
-								["c_amt"] = 1,
-								["totalabsorb"] = 0,
-								["targets_overheal"] = {
-									["Panici"] = 6476,
-									["Happyglow"] = 3615,
-								},
-								["n_max"] = 1436,
-								["targets"] = {
-									["Panici"] = 2170,
-									["Happyglow"] = 0,
-								},
-								["n_min"] = 0,
-								["counter"] = 6,
-								["overheal"] = 10091,
-								["total"] = 2170,
-								["c_max"] = 0,
-								["id"] = 33778,
-								["targets_absorbs"] = {
-								},
-								["c_min"] = 0,
-								["c_curado"] = 0,
-								["n_amt"] = 5,
-								["n_curado"] = 2170,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -22610,9 +27627,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 4,
 								["n_curado"] = 5723,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[54181] = {
@@ -22635,9 +27652,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 710,
 								["n_curado"] = 8684,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[27220] = {
@@ -22660,9 +27677,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 9,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[27235] = {
@@ -22685,9 +27702,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 1,
 								["n_curado"] = 1511,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[28189] = {
@@ -22710,9 +27727,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 191,
 								["n_curado"] = 10553,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -22801,6 +27818,7 @@ _detalhes_database = {
 					["last_hps"] = 0,
 					["targets"] = {
 						["Moolatz"] = 0,
+						["Xink's Shredder <Moolatz>"] = 0,
 					},
 					["totalover_without_pet"] = 0.197045,
 					["healing_taken"] = 158712.197045,
@@ -22832,9 +27850,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[43185] = {
@@ -22856,9 +27874,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 1,
 								["n_curado"] = 2759,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[34299] = {
@@ -22881,9 +27899,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 140,
 								["n_curado"] = 28238,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[48377] = {
@@ -22906,9 +27924,33 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
+								["absorbed"] = 0,
+							},
+							[55503] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+								},
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_min"] = 0,
+								["counter"] = 0,
+								["overheal"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 55503,
+								["targets_absorbs"] = {
+								},
+								["c_min"] = 0,
+								["c_curado"] = 0,
 								["n_curado"] = 0,
+								["totaldenied"] = 0,
+								["n_amt"] = 0,
 								["absorbed"] = 0,
 							},
 							[62606] = {
@@ -22931,9 +27973,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[48450] = {
@@ -22955,9 +27997,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[48440] = {
@@ -22979,9 +28021,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[33778] = {
@@ -23003,9 +28045,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[55502] = {
@@ -23027,9 +28069,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 18,
 								["n_curado"] = 5363,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[48442] = {
@@ -23052,9 +28094,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -23146,9 +28188,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 588,
 								["n_curado"] = 58049,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[54172] = {
@@ -23179,9 +28221,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 77,
 								["n_curado"] = 40238,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[34299] = {
@@ -23204,9 +28246,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 92,
 								["n_curado"] = 20874,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -23292,9 +28334,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 346,
 								["n_curado"] = 71784,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -23317,9 +28359,9 @@ _detalhes_database = {
 					["healing_from"] = {
 					},
 					["targets"] = {
+						["Moolatz"] = 0,
 						["Opoghop"] = 0,
 						["Wellroasted"] = 0,
-						["Moolatz"] = 0,
 					},
 					["delay"] = 0,
 					["pets"] = {
@@ -23374,9 +28416,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[27135] = {
@@ -23399,9 +28441,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[54203] = {
@@ -23424,9 +28466,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -23483,9 +28525,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[53365] = {
@@ -23507,9 +28549,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[34299] = {
@@ -23531,9 +28573,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[43185] = {
@@ -23555,9 +28597,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -23634,9 +28676,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -23694,9 +28736,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -23721,22 +28763,22 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["aID"] = "4465-037180FA",
+					["classe"] = "ROGUE",
 					["pets"] = {
 					},
 					["totalover_without_pet"] = 0.004009,
 					["targets_overheal"] = {
 						["Xskull"] = 0,
 					},
-					["healing_taken"] = 0.004009,
+					["aID"] = "4465-037180FA",
 					["totalover"] = 0.004009,
 					["total_without_pet"] = 0.004009,
 					["iniciar_hps"] = false,
 					["start_time"] = 1670753406,
-					["classe"] = "ROGUE",
+					["heal_enemy_amt"] = 0,
 					["total"] = 0.004009,
 					["end_time"] = 1670753409,
-					["heal_enemy_amt"] = 0,
+					["healing_taken"] = 0.004009,
 					["nome"] = "Xskull",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -23760,9 +28802,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -23775,12 +28817,80 @@ _detalhes_database = {
 					},
 					["serial"] = "Player-4465-037180FA",
 					["custom"] = 0,
-					["tipo"] = 2,
+					["last_event"] = 0,
 					["on_hold"] = false,
 					["totaldenied"] = 0.004009,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 2,
 				}, -- [12]
+				{
+					["flag_original"] = 4369,
+					["targets_overheal"] = {
+					},
+					["pets"] = {
+					},
+					["iniciar_hps"] = false,
+					["heal_enemy_amt"] = 0,
+					["totalover"] = 0.001712,
+					["total_without_pet"] = 0.001712,
+					["total"] = 0.001712,
+					["targets_absorbs"] = {
+					},
+					["heal_enemy"] = {
+					},
+					["on_hold"] = false,
+					["serial"] = "Vehicle-0-4446-571-16693-27061-000016FB31",
+					["totalabsorb"] = 0.001712,
+					["last_hps"] = 0,
+					["targets"] = {
+						["Xink's Shredder <Moolatz>"] = 0,
+					},
+					["totalover_without_pet"] = 0.001712,
+					["healing_taken"] = 0.001712,
+					["fight_component"] = true,
+					["end_time"] = 1670957779,
+					["classe"] = "PET",
+					["nome"] = "Xink's Shredder <Moolatz>",
+					["spells"] = {
+						["_ActorTable"] = {
+							[47966] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+								},
+								["n_max"] = 0,
+								["targets"] = {
+									["Xink's Shredder <Moolatz>"] = 0,
+								},
+								["n_min"] = 0,
+								["counter"] = 0,
+								["overheal"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 47966,
+								["targets_absorbs"] = {
+								},
+								["c_min"] = 0,
+								["c_curado"] = 0,
+								["n_curado"] = 0,
+								["totaldenied"] = 0,
+								["n_amt"] = 0,
+								["absorbed"] = 0,
+							},
+						},
+						["tipo"] = 3,
+					},
+					["grupo"] = true,
+					["healing_from"] = {
+					},
+					["tipo"] = 2,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["totaldenied"] = 0.001712,
+					["start_time"] = 1670957776,
+					["delay"] = 0,
+					["aID"] = "",
+				}, -- [13]
 			},
 		}, -- [2]
 		{
@@ -23862,7 +28972,7 @@ _detalhes_database = {
 				}, -- [1]
 				{
 					["flag_original"] = 1297,
-					["resource"] = 0.6742430000000001,
+					["resource"] = 0.8786390000000002,
 					["targets"] = {
 						["Moolatz"] = 0,
 					},
@@ -24548,15 +29658,76 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["classe"] = "WARRIOR",
+					["aID"] = "4465-02BAEC5F",
 					["dispell"] = 8.028314,
 					["cooldowns_defensive"] = 4.015148,
-					["pets"] = {
-					},
-					["aID"] = "4465-02BAEC5F",
+					["buff_uptime"] = 5139,
+					["classe"] = "WARRIOR",
 					["cooldowns_defensive_targets"] = {
 						["Panici"] = 4,
 					},
+					["dispell_oque"] = {
+						[25058] = 1,
+						[50182] = 2,
+						[50994] = 1,
+						[47699] = 4,
+					},
+					["dispell_spells"] = {
+						["_ActorTable"] = {
+							[30356] = {
+								["targets"] = {
+									["Mage Hunter Ascendant"] = 2,
+									["Crystalline Tender"] = 1,
+									["Mage Hunter Initiate"] = 1,
+									["Crystalline Keeper"] = 4,
+								},
+								["id"] = 30356,
+								["dispell_oque"] = {
+									[25058] = 1,
+									[50182] = 2,
+									[50994] = 1,
+									[47699] = 4,
+								},
+								["dispell"] = 8,
+								["counter"] = 0,
+							},
+						},
+						["tipo"] = 9,
+					},
+					["nome"] = "Panici",
+					["fight_component"] = true,
+					["debuff_uptime"] = 1699,
+					["pets"] = {
+					},
+					["serial"] = "Player-4465-02BAEC5F",
+					["buff_uptime_targets"] = {
+					},
+					["grupo"] = true,
+					["spell_cast"] = {
+						[355] = 29,
+						[40538] = 1,
+						[2687] = 7,
+						[2565] = 25,
+						[25231] = 76,
+						[30022] = 192,
+						[25264] = 89,
+						[871] = 2,
+						[43185] = 1,
+						[46968] = 22,
+						[12975] = 2,
+						[20572] = 1,
+						[50227] = 86,
+						[469] = 2,
+						[30324] = 95,
+						[30356] = 68,
+						[30357] = 53,
+						[1161] = 2,
+					},
+					["tipo"] = 4,
+					["debuff_uptime_targets"] = {
+					},
+					["last_event"] = 0,
+					["boss_fight_component"] = true,
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[60344] = {
@@ -24682,67 +29853,6 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["dispell_spells"] = {
-						["_ActorTable"] = {
-							[30356] = {
-								["targets"] = {
-									["Mage Hunter Ascendant"] = 2,
-									["Crystalline Tender"] = 1,
-									["Mage Hunter Initiate"] = 1,
-									["Crystalline Keeper"] = 4,
-								},
-								["id"] = 30356,
-								["dispell_oque"] = {
-									[25058] = 1,
-									[50182] = 2,
-									[50994] = 1,
-									[47699] = 4,
-								},
-								["dispell"] = 8,
-								["counter"] = 0,
-							},
-						},
-						["tipo"] = 9,
-					},
-					["buff_uptime_targets"] = {
-					},
-					["fight_component"] = true,
-					["debuff_uptime"] = 1699,
-					["buff_uptime"] = 5139,
-					["serial"] = "Player-4465-02BAEC5F",
-					["boss_fight_component"] = true,
-					["grupo"] = true,
-					["spell_cast"] = {
-						[355] = 29,
-						[40538] = 1,
-						[2687] = 7,
-						[2565] = 25,
-						[25231] = 76,
-						[30022] = 192,
-						[25264] = 89,
-						[871] = 2,
-						[43185] = 1,
-						[46968] = 22,
-						[12975] = 2,
-						[20572] = 1,
-						[50227] = 86,
-						[469] = 2,
-						[30324] = 95,
-						[30356] = 68,
-						[30357] = 53,
-						[1161] = 2,
-					},
-					["tipo"] = 4,
-					["debuff_uptime_targets"] = {
-					},
-					["last_event"] = 0,
-					["nome"] = "Panici",
-					["dispell_targets"] = {
-						["Mage Hunter Ascendant"] = 2,
-						["Crystalline Tender"] = 1,
-						["Mage Hunter Initiate"] = 1,
-						["Crystalline Keeper"] = 4,
-					},
 					["cooldowns_defensive_spells"] = {
 						["_ActorTable"] = {
 							[12975] = {
@@ -24762,11 +29872,11 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["dispell_oque"] = {
-						[25058] = 1,
-						[50182] = 2,
-						[50994] = 1,
-						[47699] = 4,
+					["dispell_targets"] = {
+						["Mage Hunter Ascendant"] = 2,
+						["Crystalline Tender"] = 1,
+						["Mage Hunter Initiate"] = 1,
+						["Crystalline Keeper"] = 4,
 					},
 				}, -- [1]
 				{
@@ -24880,7 +29990,7 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["fight_component"] = true,
-					["boss_fight_component"] = true,
+					["nome"] = "Twercks",
 					["grupo"] = true,
 					["spell_cast"] = {
 						[53248] = 88,
@@ -24891,11 +30001,11 @@ _detalhes_database = {
 						[18562] = 3,
 						[26979] = 3,
 					},
-					["nome"] = "Twercks",
-					["classe"] = "DRUID",
-					["last_event"] = 0,
 					["buff_uptime_targets"] = {
 					},
+					["classe"] = "DRUID",
+					["last_event"] = 0,
+					["boss_fight_component"] = true,
 					["tipo"] = 4,
 					["serial"] = "Player-4465-02EC02FB",
 					["buff_uptime"] = 6100,
@@ -25271,26 +30381,30 @@ _detalhes_database = {
 						[62078] = 99,
 						[768] = 2,
 						[49799] = 13,
+						[50305] = 0,
+						[55503] = 0,
 						[61336] = 1,
 						[5229] = 0,
+						[48450] = 0,
 						[6795] = 0,
+						[48569] = 56,
 						[49376] = 5,
 						[48559] = 0,
 						[48561] = 0,
 						[48563] = 0,
 						[48565] = 76,
 						[48567] = 0,
-						[48569] = 56,
+						[47435] = 0,
 						[48571] = 36,
 						[48573] = 101,
-						[48848] = 11,
+						[48377] = 0,
 						[22812] = 1,
 						[8983] = 0,
-						[48377] = 0,
 						[22842] = 0,
 						[50212] = 39,
 						[9634] = 0,
 						[33357] = 0,
+						[48848] = 11,
 						[44055] = 1,
 						[5215] = 0,
 					},
@@ -25394,7 +30508,8 @@ _detalhes_database = {
 					["ress_targets"] = {
 						["Twercks"] = 1,
 					},
-					["boss_fight_component"] = true,
+					["buff_uptime_targets"] = {
+					},
 					["cooldowns_defensive"] = 2.01109,
 					["pets"] = {
 					},
@@ -25419,21 +30534,57 @@ _detalhes_database = {
 					},
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
-							[62606] = {
-								["id"] = 62606,
+							[33357] = {
+								["id"] = 33357,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
-							[53307] = {
+							[377749] = {
+								["id"] = 377749,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[48418] = {
+								["id"] = 48418,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[48420] = {
+								["id"] = 48420,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[47920] = {
+								["id"] = 47920,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[26990] = {
+								["id"] = 26990,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[26991] = {
 								["counter"] = 0,
 								["activedamt"] = 33,
 								["appliedamt"] = 33,
-								["id"] = 53307,
+								["id"] = 26991,
 								["uptime"] = 1113,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["refreshamt"] = 1,
+							},
+							[48440] = {
+								["id"] = 48440,
+								["targets"] = {
+								},
+								["counter"] = 0,
 							},
 							[48442] = {
 								["id"] = 48442,
@@ -25451,73 +30602,31 @@ _detalhes_database = {
 								},
 								["refreshamt"] = 0,
 							},
-							[5215] = {
+							[55502] = {
 								["counter"] = 0,
 								["activedamt"] = 4,
 								["appliedamt"] = 4,
-								["id"] = 5215,
-								["uptime"] = 5,
+								["id"] = 55502,
+								["uptime"] = 18,
 								["targets"] = {
 								},
 								["refreshamt"] = 0,
 							},
-							[48848] = {
+							[50212] = {
 								["counter"] = 0,
-								["activedamt"] = 13,
-								["appliedamt"] = 13,
-								["id"] = 48848,
-								["uptime"] = 200,
+								["activedamt"] = 39,
+								["appliedamt"] = 39,
+								["id"] = 50212,
+								["uptime"] = 228,
 								["targets"] = {
 								},
 								["refreshamt"] = 0,
 							},
-							[22812] = {
-								["counter"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 1,
-								["id"] = 22812,
-								["uptime"] = 12,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							[33943] = {
-								["id"] = 33943,
+							[48450] = {
+								["id"] = 48450,
 								["targets"] = {
 								},
 								["counter"] = 0,
-							},
-							[9634] = {
-								["id"] = 9634,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[33357] = {
-								["id"] = 33357,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[57940] = {
-								["counter"] = 0,
-								["activedamt"] = 33,
-								["appliedamt"] = 33,
-								["id"] = 57940,
-								["uptime"] = 1113,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							[61336] = {
-								["counter"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 1,
-								["id"] = 61336,
-								["uptime"] = 20,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
 							},
 							[52610] = {
 								["counter"] = 0,
@@ -25529,74 +30638,12 @@ _detalhes_database = {
 								},
 								["refreshamt"] = 18,
 							},
-							[44055] = {
-								["counter"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 1,
-								["id"] = 44055,
-								["uptime"] = 15,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							[26991] = {
-								["counter"] = 0,
-								["activedamt"] = 33,
-								["appliedamt"] = 33,
-								["id"] = 26991,
-								["uptime"] = 1113,
-								["targets"] = {
-								},
-								["refreshamt"] = 1,
-							},
-							[55502] = {
-								["counter"] = 0,
-								["activedamt"] = 4,
-								["appliedamt"] = 4,
-								["id"] = 55502,
-								["uptime"] = 18,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							[16870] = {
-								["counter"] = 0,
-								["activedamt"] = 63,
-								["appliedamt"] = 63,
-								["id"] = 16870,
-								["uptime"] = 56,
-								["targets"] = {
-								},
-								["refreshamt"] = 1,
-							},
-							[26990] = {
-								["id"] = 26990,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
 							[48834] = {
 								["counter"] = 0,
 								["activedamt"] = 46,
 								["appliedamt"] = 46,
 								["id"] = 48834,
 								["uptime"] = 419,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							[5229] = {
-								["id"] = 5229,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[768] = {
-								["counter"] = 0,
-								["activedamt"] = 35,
-								["appliedamt"] = 35,
-								["id"] = 768,
-								["uptime"] = 1100,
 								["targets"] = {
 								},
 								["refreshamt"] = 0,
@@ -25611,18 +30658,6 @@ _detalhes_database = {
 								},
 								["refreshamt"] = 24,
 							},
-							[17057] = {
-								["id"] = 17057,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[22842] = {
-								["id"] = 22842,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
 							[24932] = {
 								["counter"] = 0,
 								["activedamt"] = 35,
@@ -25633,21 +30668,137 @@ _detalhes_database = {
 								},
 								["refreshamt"] = 0,
 							},
-							[48440] = {
-								["id"] = 48440,
+							[768] = {
+								["counter"] = 0,
+								["activedamt"] = 35,
+								["appliedamt"] = 35,
+								["id"] = 768,
+								["uptime"] = 1100,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							[61336] = {
+								["counter"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 61336,
+								["uptime"] = 20,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							[5229] = {
+								["id"] = 5229,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
-							[50212] = {
+							[57940] = {
 								["counter"] = 0,
-								["activedamt"] = 39,
-								["appliedamt"] = 39,
-								["id"] = 50212,
-								["uptime"] = 228,
+								["activedamt"] = 33,
+								["appliedamt"] = 33,
+								["id"] = 57940,
+								["uptime"] = 1113,
 								["targets"] = {
 								},
 								["refreshamt"] = 0,
+							},
+							[62606] = {
+								["id"] = 62606,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[33943] = {
+								["id"] = 33943,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[5215] = {
+								["counter"] = 0,
+								["activedamt"] = 4,
+								["appliedamt"] = 4,
+								["id"] = 5215,
+								["uptime"] = 5,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							[55503] = {
+								["id"] = 55503,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[22812] = {
+								["counter"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 22812,
+								["uptime"] = 12,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							[53307] = {
+								["counter"] = 0,
+								["activedamt"] = 33,
+								["appliedamt"] = 33,
+								["id"] = 53307,
+								["uptime"] = 1113,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							[48848] = {
+								["counter"] = 0,
+								["activedamt"] = 13,
+								["appliedamt"] = 13,
+								["id"] = 48848,
+								["uptime"] = 200,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							[9634] = {
+								["id"] = 9634,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[22842] = {
+								["id"] = 22842,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[16870] = {
+								["counter"] = 0,
+								["activedamt"] = 63,
+								["appliedamt"] = 63,
+								["id"] = 16870,
+								["uptime"] = 56,
+								["targets"] = {
+								},
+								["refreshamt"] = 1,
+							},
+							[44055] = {
+								["counter"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 44055,
+								["uptime"] = 15,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							[17057] = {
+								["id"] = 17057,
+								["targets"] = {
+								},
+								["counter"] = 0,
 							},
 						},
 						["tipo"] = 9,
@@ -25655,11 +30806,9 @@ _detalhes_database = {
 					["serial"] = "Player-4465-02B843FA",
 					["fight_component"] = true,
 					["ress"] = 1.001981,
-					["debuff_uptime_targets"] = {
-					},
+					["nome"] = "Moolatz",
 					["cc_done"] = 3.018920000000001,
-					["buff_uptime_targets"] = {
-					},
+					["boss_fight_component"] = true,
 					["grupo"] = true,
 					["cc_done_targets"] = {
 						["Alliance Berserker"] = 1,
@@ -25681,7 +30830,8 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["last_event"] = 0,
-					["nome"] = "Moolatz",
+					["debuff_uptime_targets"] = {
+					},
 					["debuff_uptime"] = 2282,
 					["cooldowns_defensive_spells"] = {
 						["_ActorTable"] = {
@@ -25716,12 +30866,12 @@ _detalhes_database = {
 					["flag_original"] = 4370,
 					["pets"] = {
 					},
-					["aID"] = "Pet-0-4448-576-13885-416-010037274A",
+					["tipo"] = 4,
 					["nome"] = "Biznam <Töman>",
 					["last_event"] = 0,
-					["tipo"] = 4,
-					["serial"] = "Pet-0-4448-576-13885-416-010037274A",
 					["classe"] = "PET",
+					["serial"] = "Pet-0-4448-576-13885-416-010037274A",
+					["aID"] = "Pet-0-4448-576-13885-416-010037274A",
 				}, -- [5]
 				{
 					["monster"] = true,
@@ -25828,6 +30978,100 @@ _detalhes_database = {
 					},
 					["last_event"] = 0,
 					["dispell"] = 1.003298,
+					["dispell_targets"] = {
+						["Happyglow"] = 1,
+					},
+					["buff_uptime"] = 6499,
+					["interrupt"] = 2.009538,
+					["cc_done_spells"] = {
+						["_ActorTable"] = {
+							[10308] = {
+								["id"] = 10308,
+								["targets"] = {
+									["Crystalline Tender"] = 1,
+								},
+								["counter"] = 1,
+							},
+						},
+						["tipo"] = 9,
+					},
+					["classe"] = "PALADIN",
+					["interrupt_spells"] = {
+						["_ActorTable"] = {
+							[32747] = {
+								["id"] = 32747,
+								["counter"] = 2,
+								["targets"] = {
+									["Crazed Mana-Surge"] = 1,
+									["Crystalline Tender"] = 1,
+								},
+								["interrompeu_oque"] = {
+									[48054] = 1,
+									[51972] = 1,
+								},
+							},
+						},
+						["tipo"] = 9,
+					},
+					["dispell_oque"] = {
+						[50997] = 1,
+					},
+					["dispell_spells"] = {
+						["_ActorTable"] = {
+							[4987] = {
+								["targets"] = {
+									["Happyglow"] = 1,
+								},
+								["id"] = 4987,
+								["dispell_oque"] = {
+									[50997] = 1,
+								},
+								["dispell"] = 1,
+								["counter"] = 0,
+							},
+						},
+						["tipo"] = 9,
+					},
+					["interrompeu_oque"] = {
+						[48054] = 1,
+						[51972] = 1,
+					},
+					["fight_component"] = true,
+					["debuff_uptime"] = 2378,
+					["pets"] = {
+					},
+					["cc_done"] = 1.010609,
+					["debuff_uptime_targets"] = {
+					},
+					["interrupt_targets"] = {
+						["Crazed Mana-Surge"] = 1,
+						["Crystalline Tender"] = 1,
+					},
+					["grupo"] = true,
+					["spell_cast"] = {
+						[20424] = 336,
+						[54428] = 8,
+						[35395] = 105,
+						[27138] = 38,
+						[53408] = 14,
+						[27139] = 13,
+						[33479] = 1,
+						[10308] = 1,
+						[27173] = 85,
+						[53385] = 85,
+						[20217] = 1,
+						[20271] = 61,
+						[28730] = 4,
+						[31884] = 3,
+						[62124] = 1,
+						[27180] = 26,
+						[34519] = 1,
+						[4987] = 1,
+					},
+					["cc_done_targets"] = {
+						["Crystalline Tender"] = 1,
+					},
+					["aID"] = "4465-030509FE",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[33479] = {
@@ -25966,106 +31210,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["buff_uptime"] = 6499,
-					["nome"] = "Happyglow",
-					["cc_done_spells"] = {
-						["_ActorTable"] = {
-							[10308] = {
-								["id"] = 10308,
-								["targets"] = {
-									["Crystalline Tender"] = 1,
-								},
-								["counter"] = 1,
-							},
-						},
-						["tipo"] = 9,
-					},
-					["classe"] = "PALADIN",
-					["interrupt_spells"] = {
-						["_ActorTable"] = {
-							[32747] = {
-								["id"] = 32747,
-								["counter"] = 2,
-								["targets"] = {
-									["Crazed Mana-Surge"] = 1,
-									["Crystalline Tender"] = 1,
-								},
-								["interrompeu_oque"] = {
-									[48054] = 1,
-									[51972] = 1,
-								},
-							},
-						},
-						["tipo"] = 9,
-					},
-					["dispell_targets"] = {
-						["Happyglow"] = 1,
-					},
-					["dispell_spells"] = {
-						["_ActorTable"] = {
-							[4987] = {
-								["targets"] = {
-									["Happyglow"] = 1,
-								},
-								["id"] = 4987,
-								["dispell_oque"] = {
-									[50997] = 1,
-								},
-								["dispell"] = 1,
-								["counter"] = 0,
-							},
-						},
-						["tipo"] = 9,
-					},
-					["interrompeu_oque"] = {
-						[48054] = 1,
-						[51972] = 1,
-					},
-					["fight_component"] = true,
-					["debuff_uptime"] = 2378,
-					["pets"] = {
-					},
-					["cc_done"] = 1.010609,
-					["debuff_uptime_targets"] = {
-					},
-					["interrupt_targets"] = {
-						["Crazed Mana-Surge"] = 1,
-						["Crystalline Tender"] = 1,
-					},
-					["grupo"] = true,
-					["spell_cast"] = {
-						[20424] = 336,
-						[54428] = 8,
-						[35395] = 105,
-						[27138] = 38,
-						[53408] = 14,
-						[27139] = 13,
-						[33479] = 1,
-						[10308] = 1,
-						[27173] = 85,
-						[53385] = 85,
-						[20217] = 1,
-						[20271] = 61,
-						[28730] = 4,
-						[31884] = 3,
-						[62124] = 1,
-						[27180] = 26,
-						[34519] = 1,
-						[4987] = 1,
-					},
-					["cc_done_targets"] = {
-						["Crystalline Tender"] = 1,
-					},
-					["aID"] = "4465-030509FE",
-					["dispell_oque"] = {
-						[50997] = 1,
-					},
 					["tipo"] = 4,
-					["boss_fight_component"] = true,
 					["buff_uptime_targets"] = {
 					},
+					["boss_fight_component"] = true,
 					["serial"] = "Player-4465-030509FE",
-					["interrupt"] = 2.009538,
+					["nome"] = "Happyglow",
 				}, -- [7]
 				{
 					["flag_original"] = 68168,
@@ -26351,13 +31501,6 @@ _detalhes_database = {
 					["debuff_uptime"] = 8,
 					["spellschool"] = 64,
 					["debuff_uptime_targets"] = {
-						["Moolatz"] = {
-							["uptime"] = 2,
-							["refreshamt"] = 0,
-							["activedamt"] = 0,
-							["actived"] = false,
-							["appliedamt"] = 0,
-						},
 						["Panici"] = {
 							["uptime"] = 2,
 							["refreshamt"] = 0,
@@ -26366,6 +31509,13 @@ _detalhes_database = {
 							["appliedamt"] = 0,
 						},
 						["Töman"] = {
+							["uptime"] = 2,
+							["refreshamt"] = 0,
+							["activedamt"] = 0,
+							["actived"] = false,
+							["appliedamt"] = 0,
+						},
+						["Moolatz"] = {
 							["uptime"] = 2,
 							["refreshamt"] = 0,
 							["activedamt"] = 0,
@@ -26505,12 +31655,12 @@ _detalhes_database = {
 						[47688] = 3,
 						[47737] = 7,
 					},
-					["last_event"] = 0,
+					["aID"] = "26918",
 					["boss_fight_component"] = true,
 					["classe"] = "UNKNOW",
-					["aID"] = "26918",
-					["serial"] = "Creature-0-4448-576-13885-26918-0000138DC4",
 					["tipo"] = 4,
+					["serial"] = "Creature-0-4448-576-13885-26918-0000138DC4",
+					["last_event"] = 0,
 				}, -- [26]
 				{
 					["flag_original"] = 2632,
@@ -26737,10 +31887,10 @@ _detalhes_database = {
 					["last_event"] = 0,
 					["boss_fight_component"] = true,
 					["spell_cast"] = {
-						[50997] = 4,
-						[50155] = 4,
-						[48096] = 3,
 						[8599] = 1,
+						[50155] = 4,
+						[50997] = 4,
+						[48096] = 3,
 					},
 					["pets"] = {
 					},
@@ -26808,20 +31958,14 @@ _detalhes_database = {
 				}, -- [37]
 				{
 					["flag_original"] = 1047,
-					["pets"] = {
-					},
-					["nome"] = "Magicslette",
-					["grupo"] = true,
-					["buff_uptime_targets"] = {
-					},
 					["spell_cast"] = {
 						[48712] = 0,
 						[27079] = 0,
 						[42930] = 0,
-						[5019] = 0,
 						[27088] = 0,
-						[42925] = 0,
 						[27103] = 0,
+						[42925] = 0,
+						[5019] = 0,
 						[1953] = 0,
 						[27085] = 0,
 						[38697] = 0,
@@ -26830,8 +31974,14 @@ _detalhes_database = {
 						[27082] = 0,
 						[33405] = 0,
 					},
-					["classe"] = "MAGE",
+					["nome"] = "Magicslette",
+					["grupo"] = true,
+					["buff_uptime_targets"] = {
+					},
 					["buff_uptime"] = 0,
+					["classe"] = "MAGE",
+					["pets"] = {
+					},
 					["tipo"] = 4,
 					["aID"] = "4465-02EA181B",
 					["buff_uptime_spells"] = {
@@ -27245,8 +32395,8 @@ _detalhes_database = {
 					["flag_original"] = 1047,
 					["debuff_uptime_spells"] = {
 						["_ActorTable"] = {
-							[51585] = {
-								["id"] = 51585,
+							[58683] = {
+								["id"] = 58683,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -27257,14 +32407,14 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[48672] = {
-								["id"] = 48672,
+							[51585] = {
+								["id"] = 51585,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
-							[58683] = {
-								["id"] = 58683,
+							[48672] = {
+								["id"] = 48672,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -27353,16 +32503,164 @@ _detalhes_database = {
 						[48668] = 0,
 						[57934] = 0,
 					},
-					["tipo"] = 4,
+					["debuff_uptime_targets"] = {
+					},
 					["nome"] = "Xskull",
 					["last_event"] = 0,
-					["aID"] = "4465-037180FA",
+					["tipo"] = 4,
 					["pets"] = {
 					},
 					["serial"] = "Player-4465-037180FA",
-					["debuff_uptime_targets"] = {
-					},
+					["aID"] = "4465-037180FA",
 				}, -- [52]
+				{
+					["monster"] = true,
+					["aID"] = "26575",
+					["nome"] = "Coldwind Waste Huntress",
+					["flag_original"] = 68168,
+					["pets"] = {
+					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4446-571-16693-26575-000016F768",
+					["spell_cast"] = {
+						[49865] = 0,
+					},
+				}, -- [53]
+				{
+					["flag_original"] = 4369,
+					["last_event"] = 0,
+					["nome"] = "Xink's Shredder <Moolatz>",
+					["grupo"] = true,
+					["pets"] = {
+					},
+					["tipo"] = 4,
+					["aID"] = "",
+					["classe"] = "PET",
+					["serial"] = "Vehicle-0-4446-571-16693-27061-000016FBC2",
+					["spell_cast"] = {
+						[47921] = 0,
+						[47938] = 0,
+						[47966] = 0,
+					},
+				}, -- [54]
+				{
+					["monster"] = true,
+					["aID"] = "26578",
+					["nome"] = "Mistress of the Coldwind",
+					["flag_original"] = 68168,
+					["pets"] = {
+					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4446-571-16693-26578-000016E310",
+					["spell_cast"] = {
+						[38210] = 0,
+						[52814] = 0,
+					},
+				}, -- [55]
+				{
+					["monster"] = true,
+					["aID"] = "26577",
+					["nome"] = "Coldwind Witch",
+					["flag_original"] = 2632,
+					["pets"] = {
+					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4446-571-16693-26577-000016E46F",
+					["spell_cast"] = {
+						[51877] = 0,
+					},
+				}, -- [56]
+				{
+					["monster"] = true,
+					["aID"] = "26293",
+					["nome"] = "Hulking Jormungar",
+					["flag_original"] = 68168,
+					["pets"] = {
+					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4446-571-16693-26293-000016E136",
+					["spell_cast"] = {
+						[50293] = 0,
+					},
+				}, -- [57]
+				{
+					["monster"] = true,
+					["aID"] = "26467",
+					["nome"] = "Jormungar Tunneler",
+					["flag_original"] = 68168,
+					["pets"] = {
+					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4446-571-16693-26467-000016E144",
+					["spell_cast"] = {
+						[51879] = 0,
+					},
+				}, -- [58]
+				{
+					["monster"] = true,
+					["last_event"] = 0,
+					["nome"] = "Ice Heart Jormungar Feeder",
+					["pets"] = {
+					},
+					["spell_cast"] = {
+						[47447] = 0,
+					},
+					["fight_component"] = true,
+					["aID"] = "26358",
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4446-571-16687-26358-000018C63D",
+					["flag_original"] = 68168,
+				}, -- [59]
+				{
+					["monster"] = true,
+					["flag_original"] = 2632,
+					["nome"] = "Ice Heart Jormungar Spawn",
+					["tipo"] = 4,
+					["spell_cast"] = {
+						[43358] = 0,
+					},
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["aID"] = "26359",
+					["serial"] = "Creature-0-4446-571-16687-26359-000018CC64",
+					["pets"] = {
+					},
+				}, -- [60]
+				{
+					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["nome"] = "Rattlebore",
+					["spell_cast"] = {
+						[51203] = 0,
+						[47447] = 0,
+						[48287] = 0,
+					},
+					["pets"] = {
+					},
+					["fight_component"] = true,
+					["flag_original"] = 68168,
+					["aID"] = "26360",
+					["last_event"] = 0,
+					["serial"] = "Creature-0-4446-571-16687-26360-000018C763",
+					["tipo"] = 4,
+				}, -- [61]
 			},
 		}, -- [4]
 		{
@@ -28438,7 +33736,7 @@ _detalhes_database = {
 			}, -- [85]
 		},
 	},
-	["combat_counter"] = 15031,
+	["last_realversion"] = 148,
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {
 		},
@@ -28455,6 +33753,5 @@ _detalhes_database = {
 		["channel"] = "SELF",
 	},
 	["cached_specs"] = {
-		["Player-4465-02B843FA"] = 103,
 	},
 }

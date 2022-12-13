@@ -89,23 +89,34 @@ local skills_range = {
 -- AOE TARGETS
 -----------------------------------------------------------------------------------------------------------------------------
 
+-- aoe:SetPoint('RIGHT', PlayerFrame, 'LEFT', 15, 3)
+-- aoe_casting:SetPoint('RIGHT', PlayerFrame, 'LEFT', 21, 4)
+
 aoe = CreateFrame('Frame', 'AOE_TARGETS')
-aoe:SetPoint('RIGHT', PlayerFrame, 'LEFT', 15, 3)
-aoe:SetWidth(0)
-aoe:SetHeight(0)
-aoe.text = aoe:CreateFontString(nil, 'ARTWORK')
-aoe.text:SetFont(xVermin.Config.font.arial, 22, 'NONE')
+aoe:SetPoint('CENTER', UIParent, 'CENTER', -55, -30)
+aoe:SetWidth(50)
+aoe:SetHeight(50)
+aoe.text = aoe:CreateFontString(nil, 'LOW')
+aoe.text:SetFont(xVermin.Config.font.arial, 18, 'NONE')
 aoe.text:SetPoint('CENTER', AOE_TARGETS, 'CENTER', 0, 0)
 aoe.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+aoe.shadow_text = aoe:CreateFontString(nil, 'BACKGROUND')
+aoe.shadow_text:SetFont(xVermin.Config.font.arial, 18, 'NONE')
+aoe.shadow_text:SetPoint('CENTER', AOE_TARGETS, 'CENTER', 1, -1)
+aoe.shadow_text:SetTextColor(0, 0, 0, 0.2)
 
 aoe_casting = CreateFrame('Frame', 'AOE_TARGETS_CASTING')
-aoe_casting:SetPoint('RIGHT', PlayerFrame, 'LEFT', 21, 4)
-aoe_casting:SetWidth(0)
-aoe_casting:SetHeight(0)
-aoe_casting.text = aoe_casting:CreateFontString(nil, 'ARTWORK')
-aoe_casting.text:SetFont(xVermin.Config.font.arial, 8, 'NONE')
+aoe_casting:SetPoint('CENTER', UIParent, 'CENTER', 55, -30)
+aoe_casting:SetWidth(50)
+aoe_casting:SetHeight(50)
+aoe_casting.text = aoe_casting:CreateFontString(nil, 'LOW')
+aoe_casting.text:SetFont(xVermin.Config.font.arial, 18, 'NONE')
 aoe_casting.text:SetPoint('CENTER', AOE_TARGETS_CASTING, 'CENTER', 0, 0)
 aoe_casting.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+aoe_casting.shadow_text = aoe_casting:CreateFontString(nil, 'BACKGROUND')
+aoe_casting.shadow_text:SetFont(xVermin.Config.font.arial, 18, 'NONE')
+aoe_casting.shadow_text:SetPoint('CENTER', AOE_TARGETS_CASTING, 'CENTER', 1, -1)
+aoe_casting.shadow_text:SetTextColor(0, 0, 0, 0.2)
 
 local aoe_number, aoe_casting_number
 xVermin.CheckIfLoadedWithTimer(
@@ -114,7 +125,7 @@ xVermin.CheckIfLoadedWithTimer(
 		-- white -> skip
 		-- green -> single target
 		-- red -> aoe
-		PlayerFrame:HookScript(
+		UIParent:HookScript(
 			'OnUpdate',
 			function()
 				-- local red, green, blue, alpha = RotationFrame_AOERANGECASTING:GetBackdropColor()
@@ -148,13 +159,11 @@ xVermin.CheckIfLoadedWithTimer(
 						RotationFrame2:SetBackdropColor(1, 1, 1, 1) -- white --> OOC
 					end
 				end
-				aoe.text:SetText(aoe_number)
-				aoe:SetWidth(aoe.text:GetStringWidth())
-				aoe:SetHeight(aoe.text:GetStringHeight())
 
+				aoe.text:SetText(aoe_number)
+				aoe.shadow_text:SetText(aoe_number)
 				aoe_casting.text:SetText(aoe_casting_number)
-				aoe_casting:SetWidth(aoe_casting.text:GetStringWidth())
-				aoe_casting:SetHeight(aoe_casting.text:GetStringHeight())
+				aoe_casting.shadow_text:SetText(aoe_casting_number)
 			end
 		)
 	end

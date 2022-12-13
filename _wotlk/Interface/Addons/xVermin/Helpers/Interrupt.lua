@@ -5,10 +5,10 @@ local _, xVermin = ...
 -- 2 = Trade, 11.11 yards
 -- 3 = Duel, 9.9 yards
 -- 4 = Follow, 28 yards
-TargetFrame:HookScript(
+UIParent:HookScript(
 	'OnUpdate',
 	function(self)
-		if xVermin.IfUnitIsCastingInteruptable('target') then
+		if UnitExists('target') and xVermin.IfUnitIsCastingInteruptable('target') then
 			-- WARRIOR INTERRUPT
 			if (xVermin.Class == 'WARRIOR') then
 				local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance

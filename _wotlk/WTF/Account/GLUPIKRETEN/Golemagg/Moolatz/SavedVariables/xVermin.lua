@@ -4,8 +4,8 @@ xKillCount = {
 	["killLog"] = {
 	},
 	["experience"] = {
-		["totaltotal"] = 15023737,
-		["pulltotal"] = 1542,
+		["totaltotal"] = 15287185,
+		["pulltotal"] = 78988,
 	},
 	["position"] = {
 		["y"] = 6.829553127288818,
