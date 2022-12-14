@@ -1,3 +1,7 @@
+VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][]Death Grip
+END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
@@ -20,8 +24,4 @@ END
 VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,exists][]Dark Command
-END
-VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover,exists][]Death Grip
 END
