@@ -205,7 +205,7 @@ Bagnon_Sets = {
 	["mineColor"] = {
 	},
 	["displayTrade"] = false,
-	["version"] = "10.0.12",
+	["version"] = "10.0.14",
 	["display"] = {
 		["merchant"] = false,
 		["tradePartner"] = false,

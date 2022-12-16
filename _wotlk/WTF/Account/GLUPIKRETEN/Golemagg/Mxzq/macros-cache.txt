@@ -42,9 +42,8 @@ VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast Chimera Shot
-/use 13
-/use 14
+/stopcasting
+/cast Explosive Shot
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -57,10 +56,6 @@ VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 /cast Bestial Wrath
 /use 13
 /use 14
-END
-VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
-#showtooltip 
-/cast [@pet,exists]Misdirection
 END
 VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -82,5 +77,10 @@ VER 3 0000000001000012 " " "132152"
 END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
-/cast [@focus,exists,noharm][]Misdirection
+/cast [@focus,exists,noharm][@pet,exists][]Misdirection
+END
+VER 3 0000000001000013 " " "132328"
+#showtooltip
+/dismount
+/petfollow
 END

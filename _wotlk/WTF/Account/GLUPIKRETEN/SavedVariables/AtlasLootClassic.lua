@@ -1046,6 +1046,10 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -1061,10 +1065,6 @@ AtlasLootClassicDB = {
 					9, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Paydo - Dreadmist"] = {
@@ -1151,17 +1151,17 @@ AtlasLootClassicDB = {
 			},
 			["GUI"] = {
 				["point"] = {
-					"LEFT", -- [1]
+					nil, -- [1]
 					nil, -- [2]
-					"LEFT", -- [3]
-					337.781494140625, -- [4]
-					156.011474609375, -- [5]
+					"CENTER", -- [3]
+					-223.1707611083984, -- [4]
+					100.1385955810547, -- [5]
 				},
 				["selected"] = {
 					nil, -- [1]
-					"TheCullingOfStratholme", -- [2]
-					4, -- [3]
-					7, -- [4]
+					"TheEyeOfEternity", -- [2]
+					nil, -- [3]
+					9, -- [4]
 					0, -- [5]
 				},
 			},

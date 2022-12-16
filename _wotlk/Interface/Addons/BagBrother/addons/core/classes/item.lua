@@ -28,6 +28,11 @@ Item.BagFamilies = {
  	[0x10000] = 'fridge'
 }
 
+Item.Backgrounds = {
+	LAYOUT_STYLE_MODERN and 'item/weapon/1_null',
+	'interface/paperdoll/ui-backpack-emptyslot'
+}
+
 
 --[[ Construct ]]--
 
@@ -133,7 +138,7 @@ function Item:OnHide()
 		StackSplitFrame:Hide()
 	end
 
-	self:UnmarkNew()
+	self:MarkSeen()
 	self:UnregisterAll()
 end
 
@@ -178,7 +183,7 @@ function Item:OnEnter()
 		self:AttachDummy()
 	elseif self.hasItem then
 		self:ShowTooltip()
-		self:UnmarkNew()
+		self:MarkSeen()
 	end
 end
 
@@ -196,9 +201,10 @@ function Item:Update()
 	self.readable = self.info.readable -- for blizzard template
 	self:Delay(0.05, 'UpdateSecondary')
 	self:UpdateSlotColor()
+	self:UpdateCooldown()
 	self:UpdateBorder()
 
-	SetItemButtonTexture(self, self.info.icon or (Addon.sets.emptySlots and 'Interface/PaperDoll/UI-Backpack-EmptySlot'))
+	SetItemButtonTexture(self, self.info.icon or self.Backgrounds[Addon.sets.slotBackground])
 	SetItemButtonCount(self, self.info.count)
 end
 
@@ -206,8 +212,8 @@ function Item:UpdateSecondary()
 	if self:GetFrame() then
 		self:UpdateFocus()
 		self:UpdateSearch()
-		self:UpdateCooldown()
 		self:UpdateUpgradeIcon()
+		self:UpdateNewItemAnimation()
 
 		if self.hasItem and GameTooltip:IsOwned(self) then
 			self:ShowTooltip()
@@ -221,11 +227,10 @@ function Item:UpdateLocked()
 end
 
 
---[[ Appearance ]]--
+--[[ Basic Appearance ]]--
 
 function Item:UpdateBorder()
 	local quality, id = self.info.quality, self.info.id
-	local new = Addon.sets.glowNew and self:IsNew()
 	local quest, bang = self:GetQuestInfo()
 	local r,g,b
 
@@ -248,17 +253,9 @@ function Item:UpdateBorder()
 		end
 	end
 
-	if new and not self.flashAnim:IsPlaying() then
-		self.flashAnim:Play()
-		self.newitemglowAnim:Play()
-		self.NewItemTexture:SetAtlas(quality and NEW_ITEM_ATLAS_BY_QUALITY[quality] or 'bags-glow-white')
-	end
-
 	self.IconGlow:SetShown(r)
 	self.IconBorder:SetShown(r)
 	self.QuestBorder:SetShown(bang)
-	self.NewItemTexture:SetShown(new)
-	self.BattlepayItemTexture:SetShown(new and self:IsPaid())
 	self.JunkIcon:SetShown(Addon.sets.glowPoor and quality == 0 and not self.info.worthless)
 end
 
@@ -274,19 +271,6 @@ function Item:UpdateSlotColor()
 	end
 end
 
-function Item:UpdateUpgradeIcon()
-	local isUpgrade = self:IsUpgrade()
-	if isUpgrade == nil then
-		self:Delay(0.5, 'UpdateUpgradeIcon')
-	else
-		self.UpgradeIcon:SetShown(isUpgrade)
-	end
-end
-
-function Item:SetLocked(locked)
-	SetItemButtonDesaturated(self, locked)
-end
-
 function Item:UpdateCooldown()
 	if self.hasItem and not self.info.cached then
 		local start, duration, enable = C.GetContainerItemCooldown(self:GetBag(), self:GetID())
@@ -300,8 +284,12 @@ function Item:UpdateCooldown()
 	end
 end
 
+function Item:SetLocked(locked)
+	SetItemButtonDesaturated(self, locked)
+end
 
---[[ Searches ]]--
+
+--[[ Secondary Highlights ]]--
 
 function Item:UpdateSearch()
 	local search = Addon.canSearch and Addon.search or ''
@@ -319,6 +307,35 @@ function Item:UpdateFocus()
 	end
 end
 
+function Item:UpdateUpgradeIcon()
+	local isUpgrade = self:IsUpgrade()
+	if isUpgrade == nil then
+		self:Delay(0.5, 'UpdateUpgradeIcon')
+	else
+		self.UpgradeIcon:SetShown(isUpgrade)
+	end
+end
+
+function Item:UpdateNewItemAnimation()
+	local new = Addon.sets.glowNew and self:IsNew()
+
+	self.BattlepayItemTexture:SetShown(new and self:IsPaid())
+	self.NewItemTexture:SetShown(new)
+
+	if new then
+		self.NewItemTexture:SetAtlas(quality and NEW_ITEM_ATLAS_BY_QUALITY[quality] or 'bags-glow-white')
+		self.newitemglowAnim:Play()
+		self.flashAnim:Play()
+	end
+end
+
+function Item:MarkSeen()
+	if self.NewItemTexture:IsShown() then
+		C_NewItems.RemoveNewItem(self:GetBag(), self:GetID())
+		self:UpdateNewItemAnimation()
+	end
+end
+
 function Item:FlashFind(mouse)
 	if IsAltKeyDown() and mouse == 'LeftButton' and Addon.sets.flashFind and self.info.id then
 		self:SendSignal('FLASH_ITEM', self.info.id)
@@ -330,12 +347,6 @@ function Item:OnItemFlashed(_, itemID)
 	self.Flash:Stop()
 	if self.info.id == itemID then
 		self.Flash:Play()
-	end
-end
-
-function Item:UnmarkNew()
-	if self:IsNew() then
-		C_NewItems.RemoveNewItem(self:GetBag(), self:GetID())
 	end
 end
 

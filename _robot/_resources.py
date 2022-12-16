@@ -38,6 +38,10 @@ skills["offgcd"]["death knight"] = [
 
 skills["offgcd"]["hunter"] = [
     {"name": "misdirection", "type": "GetSpellTexture", "id": 34477, "key": "2", "modifier": "alt"},
+    {"name": "kill command", "type": "GetSpellTexture", "id": 34026, "key": "4"},
+    {"name": "aspect of the hawk", "type": "GetSpellTexture", "id": 13165, "key": "f1"},
+    {"name": "aspect of the dragonhawk", "type": "GetSpellTexture", "id": 61846, "key": "f1"},
+    {"name": "aspect of the viper", "type": "GetSpellTexture", "id": 34074, "key": "f5"},
 ]
 
 skills["offgcd"]["rogue"] = [
@@ -90,12 +94,9 @@ skills["warlock"] = [
 skills["hunter"] = [
     {"name": "concussive shot", "type": "GetSpellTexture", "id": 5116, "key": "1"},
     {"name": "steady shot", "type": "GetSpellTexture", "id": 34120, "key": "2"},
-    {"name": "kill command", "type": "GetSpellTexture", "id": 34026, "key": "4"},
     {"name": "serpent sting", "type": "GetSpellTexture", "id": 1978, "key": "f3", "modifier": "ctrl"},
     {"name": "multi-shot", "type": "GetSpellTexture", "id": 2643, "key": "f1", "modifier": "ctrl"},
     {"name": "arcane shot", "type": "GetSpellTexture", "id": 3044, "key": "f2", "modifier": "ctrl"},
-    {"name": "aspect of the hawk", "type": "GetSpellTexture", "id": 13165, "key": "f1"},
-    {"name": "aspect of the viper", "type": "GetSpellTexture", "id": 34074, "key": "f5"},
     {"name": "chimera shot", "type": "GetSpellTexture", "id": 53209, "key": "3"},
     {"name": "aimed shot", "type": "GetSpellTexture", "id": 19434, "key": "6"},
     {"name": "deterrence", "type": "GetSpellTexture", "id": 19263, "key": "t", "modifier": "shift"},
@@ -106,6 +107,9 @@ skills["hunter"] = [
     {"name": "cower pet", "type": "GetSpellTexture", "id": 1742, "key": "4", "modifier": "ctrl"},
     {"name": "last stand pet", "type": "GetSpellTexture", "id": 53478, "key": "5", "modifier": "ctrl"},
     {"name": "kill shot", "type": "GetSpellTexture", "id": 53351, "key": "e"},
+    {"name": "explosive shot", "type": "GetSpellTexture", "id": 60052, "key": "3"},
+    {"name": "black arrow", "type": "GetSpellTexture", "id": 63671, "key": "5"},
+    {"name": "explosive trap", "type": "GetSpellTexture", "id": 49066, "key": "g"},
 ]
 
 skills["druid"] = [

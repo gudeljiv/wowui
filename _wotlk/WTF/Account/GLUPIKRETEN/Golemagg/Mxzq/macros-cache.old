@@ -12,13 +12,12 @@ VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/petattack
-/startattack
 /cast Hunter's Mark
 END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Serpent Sting
 /cast !Auto Shot
+/startattack
 /cast Serpent Sting
 END
 VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
@@ -32,11 +31,13 @@ END
 VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Multi-Shot
 /cast !Auto Shot
+/startattack
 /cast Multi-Shot
 END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Arcane Shot
 /cast !Auto Shot
+/startattack
 /cast Arcane Shot
 END
 VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
@@ -63,6 +64,7 @@ VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
+/stopcasting
 /cast Kill Shot
 /use 13
 /use 14

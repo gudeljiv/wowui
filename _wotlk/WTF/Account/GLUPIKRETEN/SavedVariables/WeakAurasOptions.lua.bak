@@ -51800,10 +51800,10 @@ WeakAurasOptionsSaved = {
 	["spellCacheStrings"] = true,
 	["spellCacheAchivements"] = true,
 	["frame"] = {
-		["xOffset"] = 370.5225219726563,
-		["yOffset"] = 1271.142822265625,
+		["xOffset"] = 480.3634338378906,
+		["width"] = 1002.632141113281,
 		["height"] = 980.2842407226562,
-		["width"] = 1002.632080078125,
+		["yOffset"] = 1257.8095703125,
 	},
 	["build"] = "46902",
 }
