@@ -1089,6 +1089,7 @@ local class_specs_coords = {
 		[196043] = true,
 		[195820] = true,
 		[196642] = true,
+		--[189886] = true,
 	}
 
 	--update the settings cache for scritps
@@ -1229,6 +1230,9 @@ local class_specs_coords = {
 					if isTalentLearned(62083) then --Firestarter
 						highExecute = 0.9
 					end
+					if IsPlayerSpell(384581) then -- Arcane Bombardment
+						lowExecute = 0.35
+					end
 					
 				elseif (class == "WARRIOR") then
 					-- Execute is baseline
@@ -1334,6 +1338,7 @@ local class_specs_coords = {
 		local unitFrame = plateFrame.unitFrame
 		local castBarFade = unitFrame.castBar.fadeOutAnimation:IsPlaying() --and profile.cast_statusbar_use_fade_effects
 		local nameplateAlpha = 1
+		local occlusionAlpha = tonumber(GetCVar ("nameplateOccludedAlphaMult")) or 1
 		if DB_USE_UIPARENT and profile.honor_blizzard_plate_alpha then
 		--if DB_USE_UIPARENT end
 			nameplateAlpha = plateFrame:GetAlpha()
@@ -1360,8 +1365,10 @@ local class_specs_coords = {
 		elseif (plateFrame [MEMBER_NOCOMBAT] or unitFrame.isWidgetOnlyMode) then
 			if unitFrame.isWidgetOnlyMode then
 				unitFrame:SetAlpha (1)
-			elseif nameplateAlpha < profile.not_affecting_combat_alpha then
+			elseif nameplateAlpha < profile.not_affecting_combat_alpha and nameplateAlpha >= occlusionAlpha then
 				unitFrame:SetAlpha (nameplateAlpha)
+			else
+				unitFrame:SetAlpha (profile.not_affecting_combat_alpha)
 			end
 			--unitFrame:SetAlpha (profile.not_affecting_combat_alpha) -- already set if necessary
 			unitFrame.healthBar:SetAlpha (1)
@@ -1840,14 +1847,18 @@ local class_specs_coords = {
 	
 	--> run a scheduled update for a nameplate, functions can create schedules when some events are triggered when the client doesn't have the data yet
 	function Plater.RunScheduledUpdate (timerObject) --private
+		Plater.StartLogPerformanceCore("Plater-Core", "Update", "RunScheduledUpdate")
+
 		local plateFrame = timerObject.plateFrame
 		local unitGUID = timerObject.GUID
+		local forceUpdate = timerObject.forceUpdate
+		
 		
 		--checking the serial of the unit is the same in case this nameplate is being used on another unit
-		if (plateFrame:IsShown() and unitGUID == plateFrame [MEMBER_GUID]) then
+		if (plateFrame:IsShown() and (unitGUID == plateFrame [MEMBER_GUID])) or (forceUpdate) then
 			--save user input data (usualy set from scripts) before call the unit added event
 				local unitFrame = plateFrame.unitFrame
-				if not unitFrame.PlaterOnScreen then
+				if not unitFrame.PlaterOnScreen and not force then
 					return
 				end
 				local customHealthBarWidth = unitFrame.customHealthBarWidth
@@ -1862,7 +1873,8 @@ local class_specs_coords = {
 				local customBorderColor = unitFrame.customBorderColor
 			
 			--full refresh the nameplate, this will override user data from scripts
-			Plater.RunFunctionForEvent ("NAME_PLATE_UNIT_ADDED", unitFrame [MEMBER_UNITID])
+			unitFrame:SetUnit (nil)
+			Plater.RunFunctionForEvent ("NAME_PLATE_UNIT_ADDED", plateFrame [MEMBER_UNITID])
 			
 			--restore user input data
 				unitFrame.customHealthBarWidth = customHealthBarWidth
@@ -1889,24 +1901,32 @@ local class_specs_coords = {
 					Plater.UpdateBorderColor (plateFrame.unitFrame)
 				end
 		end
+		
+		Plater.EndLogPerformanceCore("Plater-Core", "Update", "RunScheduledUpdate")
 	end
 
 	--run a delayed update on the namepalte, this is used when the client receives an information from the server but does not update the state immediately
 	--this usualy happens with faction and flag changes
-	function Plater.ScheduleUpdateForNameplate (plateFrame) --private
+	function Plater.ScheduleUpdateForNameplate (plateFrame, force) --private
 	
-		if not plateFrame.unitFrame.PlaterOnScreen then
+		if not plateFrame.unitFrame.PlaterOnScreen and not force then
 			return
 		end
 	
 		--check if there's already an update scheduled for this unit
 		if (plateFrame.HasUpdateScheduled and not plateFrame.HasUpdateScheduled._cancelled) then
-			return
-		else
-			plateFrame.HasUpdateScheduled = C_Timer.NewTimer (0, Plater.RunScheduledUpdate) --next frame
-			plateFrame.HasUpdateScheduled.plateFrame = plateFrame
-			plateFrame.HasUpdateScheduled.GUID = plateFrame [MEMBER_GUID]
+			if force and not plateFrame.HasUpdateScheduled.forceUpdate then
+				plateFrame.HasUpdateScheduled:Cancel()
+			else
+				return
+			end
 		end
+		
+		plateFrame.HasUpdateScheduled = C_Timer.NewTimer (0, Plater.RunScheduledUpdate) --next frame
+		plateFrame.HasUpdateScheduled.plateFrame = plateFrame
+		plateFrame.HasUpdateScheduled.GUID = plateFrame [MEMBER_GUID]
+		plateFrame.HasUpdateScheduled.forceUpdate = force
+	
 	end
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2499,154 +2519,6 @@ local class_specs_coords = {
 		end
 	end
 	
-	function Plater.PlaterDefaultWidgetLayout(widgetContainerFrame, sortedWidgets)
-		--ViragDevTool_AddData({ctime = GetTime(), unit = widgetContainerFrame:GetParent().unit or "nil", stack = debugstack(), wc = widgetContainerFrame, widgets = sortedWidgets, children = (widgetContainerFrame.GetLayoutChildren and widgetContainerFrame:GetLayoutChildren() or nil), wcp = widgetContainerFrame:GetParent()}, "WidgetContainer - " .. (widgetContainerFrame:GetParent().unit or "nil"))
-		local horizontalRowContainer = nil
-		local horizontalRowHeight = 0
-		local horizontalRowWidth = 0
-		local totalWidth = 0
-		local totalHeight = 0
-
-		widgetContainerFrame.horizontalRowContainerPool:ReleaseAll()
-
-		for index, widgetFrame in ipairs(sortedWidgets) do
-			widgetFrame:ClearAllPoints()
-
-			local widgetSetUsesVertical = widgetContainerFrame.widgetSetLayoutDirection == Enum.UIWidgetSetLayoutDirection.Vertical
-			local widgetUsesVertical = widgetFrame.layoutDirection == Enum.UIWidgetLayoutDirection.Vertical
-
-			local useOverlapLayout = widgetFrame.layoutDirection == Enum.UIWidgetLayoutDirection.Overlap
-			local useVerticalLayout = widgetUsesVertical or (widgetFrame.layoutDirection == Enum.UIWidgetLayoutDirection.Default and widgetSetUsesVertical)
-
-			if useOverlapLayout then
-				-- This widget uses overlap layout
-
-				if index == 1 then
-					-- But this is the first widget in the set, so just anchor it to the widget container
-					if widgetSetUsesVertical then
-						widgetFrame:SetPoint(widgetContainerFrame.verticalAnchorPoint, widgetContainerFrame)
-					else
-						widgetFrame:SetPoint(widgetContainerFrame.horizontalAnchorPoint, widgetContainerFrame)
-					end
-				else
-					-- This is not the first widget in the set, so anchor it so it overlaps the previous widget
-					local relative = sortedWidgets[index - 1]
-					if widgetSetUsesVertical then
-						-- Overlap it vertically
-						widgetFrame:SetPoint(widgetContainerFrame.verticalAnchorPoint, relative, widgetContainerFrame.verticalAnchorPoint, 0, 0)
-					else
-						-- Overlap it horizontally
-						widgetFrame:SetPoint(widgetContainerFrame.horizontalAnchorPoint, relative, widgetContainerFrame.horizontalAnchorPoint, 0, 0)
-					end
-				end
-				
-				local width, height = widgetFrame:GetSize()
-				if width > totalWidth then
-					totalWidth = width
-				end
-				if height > totalHeight then
-					totalHeight = height
-				end
-
-				widgetFrame:SetParent(widgetContainerFrame)
-			elseif useVerticalLayout then
-				-- This widget uses vertical layout
-
-				if index == 1 then
-					-- This is the first widget in the set, so just anchor it to the widget container
-					widgetFrame:SetPoint(widgetContainerFrame.verticalAnchorPoint, widgetContainerFrame)
-				else
-					-- This is not the first widget in the set, so anchor it to the previous widget (or the horizontalRowContainer if that exists)
-					local relative = horizontalRowContainer or sortedWidgets[index - 1]
-					widgetFrame:SetPoint(widgetContainerFrame.verticalAnchorPoint, relative, widgetContainerFrame.verticalRelativePoint, 0, widgetContainerFrame.verticalAnchorYOffset)
-
-					if horizontalRowContainer then
-						-- This widget is vertical, so horizontalRowContainer is done. Call layout on it and clear horizontalRowContainer
-						--horizontalRowContainer:Layout()
-						
-						horizontalRowContainer:SetSize(horizontalRowWidth, horizontalRowHeight)
-						totalWidth = totalWidth + horizontalRowWidth
-						totalHeight = totalHeight + horizontalRowHeight
-						horizontalRowHeight = 0
-						horizontalRowWidth = 0
-						horizontalRowContainer = nil
-					end
-					
-					totalHeight = totalHeight + widgetContainerFrame.verticalAnchorYOffset
-				end
-
-				widgetFrame:SetParent(widgetContainerFrame)
-				
-				local width, height = widgetFrame:GetSize()
-				if width > totalWidth then
-					totalWidth = width
-				end
-				totalHeight = totalHeight + height
-			else
-				-- This widget uses horizontal layout
-
-				local forceNewRow = widgetFrame.layoutDirection == Enum.UIWidgetLayoutDirection.HorizontalForceNewRow
-				local needNewRowContainer = not horizontalRowContainer or forceNewRow
-				if needNewRowContainer then 
-					-- We either don't have a horizontalRowContainer or this widget has requested a new row be started
-					if horizontalRowContainer then
-						--horizontalRowContainer:Layout()
-						horizontalRowContainer:SetSize(horizontalRowWidth, horizontalRowHeight)
-						totalWidth = totalWidth + horizontalRowWidth
-						totalHeight = totalHeight + horizontalRowHeight
-						horizontalRowHeight = 0
-						horizontalRowWidth = 0
-					end
-
-					local newHorizontalRowContainer = widgetContainerFrame.horizontalRowContainerPool:Acquire()
-					newHorizontalRowContainer:Show()
-
-					if index == 1 then
-						-- This is the first widget in the set, so just anchor it to the widget container
-						newHorizontalRowContainer:SetPoint(widgetContainerFrame.verticalAnchorPoint, widgetContainerFrame, widgetContainerFrame.verticalAnchorPoint)
-					else
-						-- This is not the first widget in the set, so anchor it to the previous widget (or the horizontalRowContainer if that exists)
-						local relative = horizontalRowContainer or sortedWidgets[index - 1]
-						newHorizontalRowContainer:SetPoint(widgetContainerFrame.verticalAnchorPoint, relative, widgetContainerFrame.verticalRelativePoint, 0, widgetContainerFrame.verticalAnchorYOffset)
-						
-						totalHeight = totalHeight + widgetContainerFrame.verticalAnchorYOffset
-					end
-					widgetFrame:SetPoint('TOPLEFT', newHorizontalRowContainer)
-					widgetFrame:SetParent(newHorizontalRowContainer)
-					
-					horizontalRowWidth = horizontalRowWidth + (widgetFrame:GetWidth() * widgetFrame:GetScale())
-					
-					-- The old horizontalRowContainer is no longer needed for anchoring, so set it to newHorizontalRowContainer
-					horizontalRowContainer = newHorizontalRowContainer
-				else
-					-- horizontalRowContainer already existed, so we just keep going in it, anchoring to the previous widget
-					local relative = sortedWidgets[index - 1]
-					widgetFrame:SetParent(horizontalRowContainer)
-					widgetFrame:SetPoint(widgetContainerFrame.horizontalAnchorPoint, relative, widgetContainerFrame.horizontalRelativePoint, widgetContainerFrame.horizontalAnchorXOffset, 0)
-					
-					horizontalRowWidth = horizontalRowWidth + widgetFrame:GetWidth() + widgetContainerFrame.horizontalAnchorXOffset
-				end
-				
-				local widgetHeight = widgetFrame:GetHeight()
-				if widgetHeight > horizontalRowHeight then
-					horizontalRowHeight = widgetHeight
-				end
-			end
-		end
-
-		if horizontalRowContainer then
-			--horizontalRowContainer:Layout()
-			--horizontalRowContainer:SetSize(horizontalRowWidth*horizontalRowContainer:GetEffectiveScale(), horizontalRowHeight*horizontalRowContainer:GetEffectiveScale())
-			horizontalRowContainer:SetSize(horizontalRowWidth, horizontalRowHeight)
-			totalWidth = totalWidth + horizontalRowWidth
-			totalHeight = totalHeight + horizontalRowHeight
-		end
-		--widgetContainerFrame:Layout()
-		--ViragDevTool_AddData({ctime = GetTime(), totalWidth = totalWidth, totalHeight = totalHeight, horizontalRowWidth = horizontalRowWidth, horizontalRowHeight = horizontalRowHeight}, "WidgetContainerSize - " .. (widgetContainerFrame:GetParent().unit or "nil"))
-		--widgetContainerFrame:SetSize(totalWidth*widgetContainerFrame:GetEffectiveScale(), totalHeight*widgetContainerFrame:GetEffectiveScale())
-		widgetContainerFrame:SetSize(totalWidth, totalHeight)
-	end
-	
 	--store all functions for all events that will be registered inside OnInit
 	local last_UPDATE_SHAPESHIFT_FORM = GetTime()
 	local last_GetShapeshiftForm = GetShapeshiftForm()
@@ -2662,14 +2534,15 @@ local class_specs_coords = {
 			if (plateFrame) then
 				--rules if can schedule an update for unit flag event:
 				
-				--nameplate is from a npc which the player cannot attack and now the player can attack
-				local playerCannotAttack = plateFrame.PlayerCannotAttack
-				--the player is in open world, dungeons and raids does trigger unit flag event but won't need a full refresh
-				local playerInOpenWorld = IS_IN_OPEN_WORLD or Plater.ZoneInstanceType == "pvp" or Plater.ZoneInstanceType == "arena"
+				--has the hostility changed?
+				local reactionChanged = plateFrame [MEMBER_REACTION] ~= UnitReaction(unit, "player")
 				
-				if (playerCannotAttack or playerInOpenWorld) then
+				--can the user attack or no longer attack?
+				local attackableChanged = plateFrame.PlayerCannotAttack ~= not UnitCanAttack ("player", unit)
+				
+				if (reactionChanged or attackableChanged) then
 					--print ("UNIT_FLAG", plateFrame, issecure(), unit, unit and UnitName (unit))
-					Plater.ScheduleUpdateForNameplate (plateFrame)
+					Plater.ScheduleUpdateForNameplate (plateFrame, true)
 				end
 			end
 		end,
@@ -2682,7 +2555,7 @@ local class_specs_coords = {
 			--fires when somebody changes faction near the player
 			local plateFrame = C_NamePlate.GetNamePlateForUnit (unit, issecure())
 			if (plateFrame) then
-				Plater.ScheduleUpdateForNameplate (plateFrame)
+				Plater.ScheduleUpdateForNameplate (plateFrame, true)
 			end
 		end,
 
@@ -3639,8 +3512,9 @@ local class_specs_coords = {
 				castBar.FrameDownlayer:SetFrameLevel(castBar:GetFrameLevel()-1)
 				castBar.FrameDownlayer:SetAllPoints()
 
-				--pushing the spell name up
+				--pushing the spell name and timer up
 				castBar.Text:SetParent (castBar.FrameOverlay)
+				castBar.percentText:SetParent (castBar.FrameOverlay)
 				--does have a border but its alpha is zero by default
 				castBar.FrameOverlay:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1})
 				castBar.FrameOverlay:SetBackdropBorderColor (1, 1, 1, 0)
@@ -3713,15 +3587,7 @@ local class_specs_coords = {
 				plateFrame.unitFrame.aggroGlowLower:SetBlendMode ("ADD")
 				plateFrame.unitFrame.aggroGlowLower:SetHeight (4)
 				plateFrame.unitFrame.aggroGlowLower:Hide()
-				
-			--> widget container
-			if IS_WOW_PROJECT_MAINLINE then
-				plateFrame.unitFrame.WidgetContainer = CreateFrame("frame", "", plateFrame.unitFrame, "UIWidgetContainerNoResizeTemplate")
-				plateFrame.unitFrame.WidgetContainer.horizontalRowContainerPool = CreateFramePool("FRAME", plateFrame.unitFrame.WidgetContainer);
-				Plater.SetAnchor (plateFrame.unitFrame.WidgetContainer, Plater.db.profile.widget_bar_anchor, plateFrame.unitFrame)
-				plateFrame.unitFrame.WidgetContainer:SetScale(Plater.db.profile.widget_bar_scale)
-				plateFrame.unitFrame.WidgetContainer:UnregisterForWidgetSet()
-			end
+
 			
 			--> name plate created hook
 				if (HOOK_NAMEPLATE_CREATED.ScriptAmount > 0) then
@@ -3814,7 +3680,7 @@ local class_specs_coords = {
 					end
 				end
 			end
-			local isPlateEnabled = not isSoftInteractObject and ((DB_PLATE_CONFIG [actorType].module_enabled and not isWidgetOnlyMode) or (isWidgetOnlyMode and Plater.db.profile.usePlaterWidget)) or (not Plater.db.profile.ignore_softinteract_objects and isSoftInteractObject)
+			local isPlateEnabled = not isSoftInteractObject and (DB_PLATE_CONFIG [actorType].module_enabled and not isWidgetOnlyMode) or (not Plater.db.profile.ignore_softinteract_objects and isSoftInteractObject)
 			isPlateEnabled = (isPlayer or not Plater.ForceBlizzardNameplateUnits[plateFrame [MEMBER_NPCID]]) and isPlateEnabled
 			
 			local blizzardPlateFrameID = tostring(plateFrame.UnitFrame)
@@ -4193,15 +4059,13 @@ local class_specs_coords = {
 			
 			--widget container update
 			if IS_WOW_PROJECT_MAINLINE then
-				Plater.SetAnchor (unitFrame.WidgetContainer, Plater.db.profile.widget_bar_anchor, unitFrame)
-				plateFrame.unitFrame.WidgetContainer:SetScale(Plater.db.profile.widget_bar_scale)
-				unitFrame.WidgetContainer:UnregisterForWidgetSet()
-				local widgetSetId = UnitWidgetSet(unitID)
-				local playerControlled = UnitPlayerControlled(unitID)
-				if widgetSetId and ((playerControlled and UnitIsOwnerOrControllerOfUnit('player', unitID)) or not playerControlled) then
-					--unitFrame.WidgetContainer:RegisterForWidgetSet(widgetSetId)
-					unitFrame.WidgetContainer:RegisterForWidgetSet(widgetSetId, Plater.PlaterDefaultWidgetLayout, nil, unitID);
-					unitFrame.WidgetContainer:ProcessAllWidgets()
+				plateFrame.unitFrame.WidgetContainer = plateFrame.UnitFrame.WidgetContainer
+				if plateFrame.unitFrame.WidgetContainer then
+					plateFrame.unitFrame.WidgetContainer:SetParent(plateFrame.unitFrame)
+					plateFrame.unitFrame.WidgetContainer:ClearAllPoints()
+					plateFrame.unitFrame.WidgetContainer:SetIgnoreParentScale(true)
+					plateFrame.unitFrame.WidgetContainer:SetScale(Plater.db.profile.widget_bar_scale)
+					Plater.SetAnchor (plateFrame.unitFrame.WidgetContainer, Plater.db.profile.widget_bar_anchor, plateFrame.unitFrame)
 				end
 			end
 			
@@ -4335,8 +4199,11 @@ local class_specs_coords = {
 			plateFrame.unitFrame:SetUnit (nil)
 			
 			-- remove widgets
-			if IS_WOW_PROJECT_MAINLINE then
-				plateFrame.unitFrame.WidgetContainer:UnregisterForWidgetSet()
+			if IS_WOW_PROJECT_MAINLINE and plateFrame.unitFrame.WidgetContainer then
+				plateFrame.unitFrame.WidgetContainer:SetIgnoreParentScale(false)
+				plateFrame.unitFrame.WidgetContainer:SetParent(plateFrame)
+				plateFrame.unitFrame.WidgetContainer:ClearAllPoints()
+				plateFrame.unitFrame.WidgetContainer:SetPoint('TOP', plateFrame.castBar, 'BOTTOM')
 			end
 			
 			--community patch by Ariani#0960 (discord)
@@ -4567,6 +4434,8 @@ function Plater.OnInit() --private --~oninit ~init
 			SetCVar ("nameplateSelectedAlpha", 1)
 			SetCVar ("nameplateNotSelectedAlpha", 1)
 			SetCVar ("nameplateRemovalAnimation", DB_USE_QUICK_HIDE and 0 or 1)
+			SetCVar ("nameplateShowFriendlyBuffs", 0)
+			SetCVar ("nameplateShowPersonalCooldowns", 0)
 		end
 	
 	--schedule data update
@@ -6909,17 +6778,6 @@ end
 			end
 		end
 
-		--[[
-		plateFrame.unitFrame.WidgetContainer:UnregisterForWidgetSet()
-		local widgetSetId = UnitWidgetSet(plateFrame.unitFrame [MEMBER_UNITID])
-		local playerControlled = UnitPlayerControlled(plateFrame.unitFrame [MEMBER_UNITID])
-		if widgetSetId and ((playerControlled and UnitIsOwnerOrControllerOfUnit('player', plateFrame.unitFrame [MEMBER_UNITID])) or not playerControlled) then
-			--plateFrame.unitFrame.WidgetContainer:RegisterForWidgetSet(widgetSetId)
-			plateFrame.unitFrame.WidgetContainer:RegisterForWidgetSet(widgetSetId, Plater.PlaterDefaultWidgetLayout, nil, plateFrame.unitFrame [MEMBER_UNITID]);
-			plateFrame.unitFrame.WidgetContainer:ProcessAllWidgets()
-		end
-		]]--
-
 		Plater.CheckRange (plateFrame, true) --disabled on 2018-10-09 | enabled back on 2020-1-16
 
 	end
@@ -8000,7 +7858,7 @@ end
 				unitFrame.healthBar:UNIT_HEALTH()
 			end
 			
-			if IS_WOW_PROJECT_MAINLINE then
+			if IS_WOW_PROJECT_MAINLINE and unitFrame.WidgetContainer then
 				Plater.SetAnchor (unitFrame.WidgetContainer, profile.widget_bar_anchor, unitFrame)
 				plateFrame.unitFrame.WidgetContainer:SetScale(Plater.db.profile.widget_bar_scale)
 			end
