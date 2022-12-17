@@ -47,7 +47,7 @@ FollowMePls: enabled
 GatherMate2: enabled
 GatherMate2_Data: enabled
 gmMoney: enabled
-Grid2: enabled
+Grid2: disabled
 Grid2Options: enabled
 Grid2RaidDebuffs: enabled
 Grid2RaidDebuffsOptions: enabled
