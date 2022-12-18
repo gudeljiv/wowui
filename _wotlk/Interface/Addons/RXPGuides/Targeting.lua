@@ -29,7 +29,8 @@ local proxmityPolling = {
     lastMatch = 0,
     matchTimeout = 5,
     scanData = {},
-    scannedTargets = {}
+    scannedTargets = {},
+    rareAnnounced = {}
 }
 
 local friendlyTargets = {}
@@ -423,6 +424,7 @@ function addon.targeting.CheckTargetProximity()
             end
 
             proxmityPolling.match = false
+            wipe(proxmityPolling.rareAnnounced)
             wipe(proxmityPolling.scannedTargets)
             addon.targeting.activeTargetFrame:Hide()
 
@@ -443,10 +445,19 @@ function addon.targeting:ADDON_ACTION_FORBIDDEN(_, forbiddenAddon, func)
         return
     end
 
-    proxmityPolling.scannedTargets[proxmityPolling.scanData.name] =
-        proxmityPolling.scanData.kind
+    local scannedName = proxmityPolling.scanData.name
+
+    proxmityPolling.scannedTargets[scannedName] = proxmityPolling.scanData.kind
     proxmityPolling.lastMatch = GetTime()
     self:UpdateTargetFrame()
+
+    if proxmityPolling.scanData.kind == 'rare' and
+        addon.settings.db.profile.notifyOnRares and
+        not proxmityPolling.rareAnnounced[scannedName] then
+
+        proxmityPolling.rareAnnounced[scannedName] = true
+        addon.comms.PrettyPrint(L("Rare Found! %s is nearby."), scannedName) -- TODO locale
+    end
 
     -- Only notify sound once per step
     if proxmityPolling.match or proxmityPolling.scanData.kind == 'friendly' then
@@ -504,7 +515,6 @@ function addon.targeting:CanCreateMacro() return GetNumMacros() < 119 end
 function addon.targeting:CreateTargetFrame()
     if self.activeTargetFrame then return end
 
-    -- TOOD add scale setting
     self.activeTargetFrame = CreateFrame("Frame", "RXPTargetFrame", UIParent,
                                          BackdropTemplateMixin and
                                              "BackdropTemplate" or nil)
@@ -548,7 +558,7 @@ function addon.targeting:CreateTargetFrame()
     f.title.text:ClearAllPoints()
     f.title.text:SetPoint("CENTER", f.title, 0, 2)
     f.title.text:SetJustifyH("CENTER")
-    f.title.text:SetJustifyV("CENTER")
+    f.title.text:SetJustifyV("MIDDLE")
     f.title.text:SetTextColor(1, 1, 1)
     f.title.text:SetFont(addon.font, 9, "")
     f.title.text:SetText("Active Targets")
@@ -559,6 +569,7 @@ function addon.targeting:CreateTargetFrame()
     f.title:SetScript("OnMouseUp", f.onMouseUp)
 
     f:SetHeight(40)
+    f:SetScale(addon.settings.db.profile.activeTargetScale)
 end
 
 function addon.targeting:RenderTargetFrameBackground()
@@ -653,7 +664,7 @@ function addon.targeting:UpdateTargetFrame(kind)
             btn:SetAttribute("type", "macro")
             btn:SetSize(25, 25)
             if btn.RegisterForClicks then
-                btn:RegisterForClicks("AnyUp","AnyDown")
+                btn:RegisterForClicks("AnyUp", "AnyDown")
             end
             tinsert(enemyTargetButtons, btn)
             local n = #enemyTargetButtons
@@ -722,7 +733,7 @@ function addon.targeting:UpdateTargetFrame(kind)
             btn:SetAttribute("type", "macro")
             btn:SetSize(25, 25)
             if btn.RegisterForClicks then
-                btn:RegisterForClicks("AnyUp","AnyDown")
+                btn:RegisterForClicks("AnyUp", "AnyDown")
             end
             tinsert(friendlyTargetButtons, btn)
             local n = #friendlyTargetButtons
@@ -826,9 +837,4 @@ function addon.targeting:LoadRares()
 
     rareTargets = addon.rares[zone] or {}
     self:UpdateTargetFrame()
-
-    if addon.settings.db.profile.debug then
-        print("Rares in zone:", zone)
-        for i, name in ipairs(rareTargets) do print("- " .. name) end
-    end
 end

@@ -1,30 +1,57 @@
 # RestedXP Guides
 
-## [v4.4.5](https://github.com/RestedXP/RXPGuides/tree/v4.4.5) (2022-11-28)
-[Full Changelog](https://github.com/RestedXP/RXPGuides/compare/v4.4.4...v4.4.5) [Previous Releases](https://github.com/RestedXP/RXPGuides/releases)
+## [v4.4.7](https://github.com/RestedXP/RXPGuides/tree/v4.4.7) (2022-12-12)
+[Full Changelog](https://github.com/RestedXP/RXPGuides/compare/v4.4.6...v4.4.7) [Previous Releases](https://github.com/RestedXP/RXPGuides/releases)
 
-- fixed container functions  
-- item frame tweaks  
-- item/targeting window improvements  
-- disabled gold assistant for mainline client  
-- fixed world quest logic  
-- fixed typo  
-- Update Alliance-Night Elf\_Teldrassil.lua  
-    Teldrassil polish and fixes  
-- Update default target channel to master  
-- Attempt fixing trailing target marks  
-- enabled quest sharing for mainline client  
-- quest sharing option  
-- Update RestedXP Horde 20-30.lua (#138)  
-    * Made A "Call of Air" Accept Step Shaman-Only  
-- Update RestedXP Alliance 23-30.lua (#137)  
-    * Moved Goldshire Inn Warlock Training Step (During Legend of Stalvan Chain) to Stormwind  
-- Update RestedXP Alliance 1-23 Draenei.lua (#136)  
-    * Added ".isOnQuest" Checks to "I Shoot Magic Into The Darkness" Chain  
-- Update RestedXP Horde 20-30.lua (#135)  
-    * Added XP Gate to "Ordanus" Kill Step ("Ordanus" Accept Step Has XP Gate)  
-- Update RestedXP Alliance 11-23.lua (#134)  
-    * Separated "Containing the Threat" Accept Step from "Truth or Fiction" Turn-In  
-    * Added .isOnQuest to "Truth or Fiction" Turn-in Step  
-- Update RestedXP Horde 20-30.lua (#139)  
-    * Made "Call of Air" Accept Step Shaman-Only  
+- Cleanup xp skips and detection (#143)  
+    * Allow disabling XP based skips, aka lazy loremaster  
+    * Move XP/arrow settings to new Guide Routing tab  
+    * Add automatic XP rate detection, including heirlooms and Joyous Journeys  
+    * Fix SoM setting continually being forced on  
+- Update Icecrown Gunship Pre Quests.lua  
+    Typo fix and Rizzy coordinate fix  
+- Update RestedXP Horde 1-20 BloodElf.lua  
+    * Updated Grind Step Detail  
+- Update RestedXP Horde 20-30.lua  
+    * Commented spell name in Warlock class training step  
+- Update RestedXP Alliance 11-23.lua  
+    * Minor Instruction Change  
+    * Removed Quest Reward Automation from "Washed Ashore"  
+    * Accommodated Rogues and Warlocks in Blood Watch Deathskip/Velen-related quests  
+- Update RestedXP Alliance 1-14 Human.lua  
+    * Adjusted mining pick purchase to a collect step  
+    * Removed XP Gate from mining pick purchase to match mining training  
+    * Replaced "fly to Ironforge" step  after Thelsamar with "hearth to Stormwind" step  
+- Pandaren\_The\_Wandering\_Isle  
+    -Added Colours  
+    -Added missing .targets  
+    -fixed missing .targets  
+    -Split some steps to avoid confusion  
+- fixed text alignment issues  
+- Fix compareNextLevelSplit conditional  
+- Remove erroring Classic guides  
+- Exile's Reach  
+    -Colours added where applicable  
+    -Fixed a couple of incorrect/missing .targets  
+    -Minor formatting Fixes  
+    -Other minor fixes  
+- Update Classic-Alliance-1-14\_DwarfGnome.lua  
+- Update Classic-Alliance-1-14\_DwarfGnome.lua  
+    .target and text updates  
+- added missing nil check  
+- Item cooldown fixes for classic ptr  
+- improved classic ptr compatibility  
+- Update Classic-Alliance-1-14\_DwarfGnome.lua  
+    .target and colored text update  
+    Condensed stickies  
+- classic ptr support  
+- AceGUI update  
+- disabled window title for sticky steps  
+- improved quest handling  
+- classic fixes  
+- Update Classic-Alliance-1-14\_DwarfGnome.lua  
+    .target and colored text updates  
+- added a chromie time toggle  
+- Update RestedXP Alliance 1-14 Dwarf-Gnome.lua  
+    Start of text color / .target additions  
+- Add Dredd rare data to Classic (#142)  

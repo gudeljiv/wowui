@@ -52,7 +52,6 @@ VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
 /cast [form:1] Mangle (Bear)
 /cast [form:3] Mangle (Cat)
 /cast Innervate
-/use Warsong's Fervor
 END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtoltip

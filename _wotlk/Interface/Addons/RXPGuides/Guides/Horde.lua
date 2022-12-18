@@ -1,5 +1,5 @@
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Horde 30-45
@@ -724,7 +724,7 @@ step
 .accept 1184 >> Accept Parts of the Swarm
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Horde 30-45
@@ -805,11 +805,12 @@ step
 .complete 1365,1
 .unitscan Khan Dez'hepah
 step
-#sticky
+#completewith next
 #label shadowstalkers
 .goto Desolace,76.70,19.40,0
 >> Kill Shadowstalkers. Loot them for their scalp
-.complete 1481,1
+.complete 1481,1 
+.isOnQuest 1481
 step
 .isOnQuest 1434
 .goto Desolace,76.70,19.40
@@ -819,6 +820,12 @@ step
 .complete 1434,3
 .complete 1434,4
 .unitscan Hatefury Rogue
+.isOnQuest 1434
+step
+.goto Desolace,76.70,19.40,0
+>>Finsh killing Shadowstalkers. Loot them for their scalp
+.complete 1481,1 
+.isOnQuest 1481
 step
 .isOnQuest 1435
 .goto Desolace,55.20,30.10
@@ -830,7 +837,7 @@ step
 .turnin 5501 >> Turn in Bone Collector
 step
 .goto Desolace,52.60,54.40
-.turnin 1481 >> Turn in The Corrupter
+.turnin -1481 >> Turn in The Corrupter
 step
 >>Run back to Ghost Walker Post
 .isOnQuest 1434
@@ -849,7 +856,7 @@ step
 .zoneskip Orgrimmar
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Horde 30-45
@@ -1712,7 +1719,7 @@ step
 
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Horde 30-45
@@ -2449,7 +2456,7 @@ step << wotlk
 .accept 669 >> Accept Sunken Treasure
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Horde 30-45
@@ -3185,7 +3192,7 @@ step
 .abandon 1173
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Horde 30-45
@@ -3827,7 +3834,7 @@ step
 .turnin 208 >> Turn in Big Game Hunter
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Horde 45-60
@@ -4865,7 +4872,7 @@ step
 .turnin 32 >> Turn in Rise of the Silithid
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Horde 45-60
@@ -5467,7 +5474,7 @@ step
 .turnin 580 >> Turn in Whiskey Slim's Lost Grog
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Horde 45-60
@@ -5946,7 +5953,7 @@ step
 .turnin 3444 >> Turn in The Stone Circle
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Horde 45-60
@@ -6392,7 +6399,7 @@ step
 .fly Splintertree Post >> Fly to Splintertree Post
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Horde 45-60
@@ -6824,7 +6831,7 @@ step
 .turnin 4300 >>Turn in Bone-Bladed Weapons
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Horde 45-60
@@ -7495,7 +7502,7 @@ step
 .accept 9407 >>Accept Through the Dark Portal
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Horde 60-70
@@ -10190,7 +10197,7 @@ step
 >>You are now attuned to Karazhan - Congratulations!
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Horde 60-70
@@ -11237,7 +11244,7 @@ step
 .turnin 9728 >> Turn in A Warm Welcome
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Horde 60-70
@@ -12745,7 +12752,7 @@ step
 .zone Shattrath City >> Travel to Shattrath
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Horde 60-70
@@ -14322,7 +14329,7 @@ step
 .isQuestComplete 9852
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Horde 60-70
@@ -15945,7 +15952,7 @@ step
 .abandon 10912 >> Abandon The Hound-Master
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #group RestedXP Horde 60-70
 << Horde
@@ -16669,7 +16676,7 @@ step
 .isQuestTurnedIn 10276
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #tbc
 #group RestedXP Horde 60-70
 << Horde
@@ -17082,7 +17089,7 @@ step
 .use 31763
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #tbc
 #group RestedXP Horde 60-70
 << Horde
@@ -19945,7 +19952,7 @@ step
 .goto Shattrath City,42.79,91.70
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #group RestedXP Horde 70-80
 #name 68-71 Howling Fjord
@@ -20694,12 +20701,18 @@ step
 .complete 11259,2 
 .goto HowlingFjord,46.72,32.82
 step
-#label Dismember
 .use 33343 >>After entering the buildings, use the Brave's Torch.
 .complete 11258,3 
 .goto HowlingFjord,45.93,30.71
 .complete 11258,2 
 .goto HowlingFjord,46.39,28.13
+step
+#label Dismember
+.goto HowlingFjord,43.66,28.57
+.use 33321 >>Use the Brave's Flare and Brave's Torch near the tower and longhouse.
+.use 33323
+.complete 11258,1 
+.complete 11259,1 
 step
 .goto HowlingFjord,44.9,29.2,70,0
 .goto HowlingFjord,44.8,34.9
@@ -20919,7 +20932,7 @@ step
 .fp Apothecary Camp >> Get the Apothecary Camp flight path.
 .target Lilleth Radescu
 step
-#completewith next
+#completewith Turmoil
 .goto HowlingFjord,26.0,25.1
 .fly Camp Winterhoof >> Fly to Camp Winterhoof
 step
@@ -22385,7 +22398,7 @@ step << Warrior
 .xp <73,1
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Horde 60-70
@@ -22816,7 +22829,7 @@ step
 .turnin 10547 >>Turn in Of Thistleheads and Eggs...
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Horde 60-70
@@ -23241,7 +23254,7 @@ step
 .turnin 10547 >>Turn in Of Thistleheads and Eggs...
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #group RestedXP Horde 70-80
 << Horde
@@ -25444,7 +25457,7 @@ step
 .zone Dragonblight >> Travel to Dragonblight
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #group RestedXP Dungeon Cleave 70-80
 << Horde
@@ -26765,7 +26778,7 @@ step << skip
 >>Ding Level 80 - Congratulations!
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #group RestedXP Dungeon Cleave 70-80
 << Horde
@@ -27284,12 +27297,12 @@ step
 .xp <73,1
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #group RestedXP Horde 70-80
 << Horde
 #name 71-72 Borean Tundra
-#next 72-74 Dragonblight
+#next 72-74 Dragonblight; 74-75 Grizzly Hills
 step << !DK !Druid
 #completewith next
 .goto Orgrimmar,48.9,91.8,60 >> Exit Orgrimmar
@@ -30162,8 +30175,9 @@ step
 .zone Dragonblight >> Travel to Dragonblight
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
+#xprate <1.5
 #group RestedXP Horde 70-80
 << Horde
 #name 72-74 Dragonblight
@@ -31986,7 +32000,7 @@ step
 .skipgossip
 step
 #questguide
->>Return to Rokhan
+>>Talk to Captain Gort in Agmar's Hammer
 .turnin 12097 >>Turn in Sarathstra, Scourge of the North
 .goto Dragonblight,35.81,48.39
 step
@@ -32821,7 +32835,7 @@ step
 .zone Grizzly Hills >> Travel to Grizzly Hills
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #group RestedXP Horde 70-80
 << Horde
@@ -35153,7 +35167,7 @@ step
 .skipgossip 26853,2
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #group RestedXP Dungeon Cleave 70-80
 << Horde
@@ -35166,7 +35180,7 @@ step
 .xp 77 >> Grind the mobs in Zol'Maz until your lockouts expire. Try to take one corner of the subzone each to force dynamic respawns
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #group RestedXP Horde 70-80
 << Horde

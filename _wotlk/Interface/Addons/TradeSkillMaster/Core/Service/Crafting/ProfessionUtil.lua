@@ -11,6 +11,7 @@ local CraftString = TSM.Include("Util.CraftString")
 local Event = TSM.Include("Util.Event")
 local Log = TSM.Include("Util.Log")
 local Delay = TSM.Include("Util.Delay")
+local Table = TSM.Include("Util.Table")
 local ItemString = TSM.Include("Util.ItemString")
 local RecipeString = TSM.Include("Util.RecipeString")
 local TempTable = TSM.Include("Util.TempTable")
@@ -30,6 +31,7 @@ local private = {
 	preparedTime = 0,
 	categoryInfoTemp = {},
 	timeoutTimer = nil,
+	resultQualityTemp = {},
 }
 local PROFESSION_LOOKUP = {
 	["Costura"] = "Sastrería",
@@ -443,6 +445,17 @@ function ProfessionUtil.GetRecipeResultItem(craftString)
 	else
 		local resultItems = C_TradeSkillUI.GetRecipeQualityItemIDs(spellId)
 		if resultItems then
+			wipe(private.resultQualityTemp)
+			for i = 1, #resultItems do
+				local itemId = resultItems[i]
+				local itemString = "i:"..itemId
+				local quality = C_TradeSkillUI.GetItemCraftedQualityByItemInfo(itemId) or C_TradeSkillUI.GetItemReagentQualityByItemInfo(itemId) or ItemInfo.GetCraftedQuality(itemString)
+				if not quality then
+					return
+				end
+				private.resultQualityTemp[itemId] = quality
+			end
+			Table.SortWithValueLookup(resultItems, private.resultQualityTemp)
 			for i = 1, #resultItems do
 				local link = ItemInfo.GetLink("i:"..resultItems[i])
 				if not link then
@@ -476,7 +489,9 @@ function ProfessionUtil.GetRecipeInfo(craftString)
 end
 
 function ProfessionUtil.GetRecipeQualityInfo(craftString)
-	assert(not TSM.IsWowClassic())
+	if TSM.IsWowClassic() then
+		return
+	end
 	local spellId = CraftString.GetSpellId(craftString)
 	-- TODO: Do we need this info?
 	local info = C_TradeSkillUI.GetRecipeSchematic(spellId, false, 1)
@@ -540,8 +555,8 @@ function ProfessionUtil.GetNumMats(spellId, level)
 			if data.reagentType == Enum.CraftingReagentType.Basic then
 				if data.dataSlotType == Enum.TradeskillSlotDataType.Reagent then
 					num = num + 1
-				--[[elseif data.dataSlotType == Enum.TradeskillSlotDataType.ModifiedReagent then
-					num = num + 1--]]
+				elseif data.dataSlotType == Enum.TradeskillSlotDataType.ModifiedReagent then
+					num = num + 1
 				end
 			end
 		end

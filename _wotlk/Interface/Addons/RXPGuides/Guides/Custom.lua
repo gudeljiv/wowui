@@ -1,5 +1,5 @@
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #group RestedXP Mage AoE 68-80
 << Mage
@@ -432,7 +432,7 @@ step
 .xp 80 >> AoE the Undead to 80
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -450,7 +450,7 @@ step << skip
 +Once you finish the guide, it is highly recommended you copy your character over to the PTR and give the Turn in Guide a test whirl on the PTR so you know the route better!
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -909,7 +909,7 @@ step << Alliance
 .collect 29443,11,10511,1
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -2845,7 +2845,7 @@ step
 .complete 11008,1
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -2861,7 +2861,7 @@ step
 .show25quests >> CLICK HERE to see the list of 25 best quests for your character
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -4755,7 +4755,7 @@ step
 .accept 11016 >> Accept Nethermine Flayer Hide
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -4800,7 +4800,7 @@ step
 .collect 30542,1
 ]])
 RXPGuides.RegisterGuide([[
-#version 13
+#version 15
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation

@@ -1,5 +1,5 @@
-## v4.12.9 Changes
+## v4.12.11 Changes
 
-* [All] Fixed a login error for some profession
+* [Classic] Fixed error when opening profession
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

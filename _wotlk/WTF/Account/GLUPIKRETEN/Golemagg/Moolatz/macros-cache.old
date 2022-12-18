@@ -80,3 +80,7 @@ VER 3 0000000001000017 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,help,nodead][] Lifebloom
 END
+VER 3 0000000001000018 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Gift of the Wild
+/cast [btn:2]Gift of the Wild;Mark of the Wild
+END
