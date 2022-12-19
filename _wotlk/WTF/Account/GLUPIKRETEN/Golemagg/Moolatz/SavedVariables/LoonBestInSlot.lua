@@ -45,10 +45,10 @@ LBISSettings = {
 		["PreRaid"] = true,
 	},
 	["ShowPriority"] = true,
+	["SelectedSlot"] = "All",
+	["SelectedSourceType"] = "All",
+	["ShowCustom"] = false,
 	["PriorityList"] = {
 	},
-	["SelectedSourceType"] = "All",
-	["SelectedSlot"] = "All",
-	["ShowCustom"] = false,
 	["SelectedPhase"] = "PreRaid",
 }

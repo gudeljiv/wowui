@@ -7,13 +7,13 @@ VER 3 0000000000000013 " " "132130"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:33444
-/castsequence [combat] reset=combat item:22832
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:33443
-/castsequence [combat] reset=combat item:33447,item:22829
+/use [nocombat]item:35953
+/castsequence [combat] reset=combat item:33447
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:0
@@ -25,7 +25,7 @@ VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 /use item:33447
 END
 VER 3 000000000000001C "RXPTargeting" "Ability_eyeoftheowl"
-//RestedXP Guides - current step has no configured targets
+/targetexact Engineer Reed
 END
 VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 #showtooltip
