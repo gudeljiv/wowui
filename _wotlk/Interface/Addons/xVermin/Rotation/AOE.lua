@@ -100,10 +100,14 @@ aoe.text = aoe:CreateFontString(nil, 'LOW')
 aoe.text:SetFont(xVermin.Config.font.arial, 18, 'NONE')
 aoe.text:SetPoint('CENTER', AOE_TARGETS, 'CENTER', 0, 0)
 aoe.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
-aoe.shadow_text = aoe:CreateFontString(nil, 'BACKGROUND')
-aoe.shadow_text:SetFont(xVermin.Config.font.arial, 18, 'NONE')
-aoe.shadow_text:SetPoint('CENTER', AOE_TARGETS, 'CENTER', 1, -1)
-aoe.shadow_text:SetTextColor(0, 0, 0, 0.2)
+
+aoe.text:SetShadowColor(0, 0, 0, 1.0)
+aoe.text:SetShadowOffset(0.8, -0.8)
+
+-- aoe.shadow_text = aoe:CreateFontString(nil, 'BACKGROUND')
+-- aoe.shadow_text:SetFont(xVermin.Config.font.arial, 18, 'NONE')
+-- aoe.shadow_text:SetPoint('CENTER', AOE_TARGETS, 'CENTER', 1, -1)
+-- aoe.shadow_text:SetTextColor(0, 0, 0, 0.2)
 
 aoe_casting = CreateFrame('Frame', 'AOE_TARGETS_CASTING')
 aoe_casting:SetPoint('CENTER', UIParent, 'CENTER', 55, -30)
@@ -113,10 +117,14 @@ aoe_casting.text = aoe_casting:CreateFontString(nil, 'LOW')
 aoe_casting.text:SetFont(xVermin.Config.font.arial, 18, 'NONE')
 aoe_casting.text:SetPoint('CENTER', AOE_TARGETS_CASTING, 'CENTER', 0, 0)
 aoe_casting.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
-aoe_casting.shadow_text = aoe_casting:CreateFontString(nil, 'BACKGROUND')
-aoe_casting.shadow_text:SetFont(xVermin.Config.font.arial, 18, 'NONE')
-aoe_casting.shadow_text:SetPoint('CENTER', AOE_TARGETS_CASTING, 'CENTER', 1, -1)
-aoe_casting.shadow_text:SetTextColor(0, 0, 0, 0.2)
+
+aoe_casting.text:SetShadowColor(0, 0, 0, 1.0)
+aoe_casting.text:SetShadowOffset(0.8, -0.8)
+
+-- aoe_casting.shadow_text = aoe_casting:CreateFontString(nil, 'BACKGROUND')
+-- aoe_casting.shadow_text:SetFont(xVermin.Config.font.arial, 18, 'NONE')
+-- aoe_casting.shadow_text:SetPoint('CENTER', AOE_TARGETS_CASTING, 'CENTER', 1, -1)
+-- aoe_casting.shadow_text:SetTextColor(0, 0, 0, 0.2)
 
 local aoe_number, aoe_casting_number
 xVermin.CheckIfLoadedWithTimer(
@@ -161,9 +169,9 @@ xVermin.CheckIfLoadedWithTimer(
 				end
 
 				aoe.text:SetText(aoe_number)
-				aoe.shadow_text:SetText(aoe_number)
+				-- aoe.shadow_text:SetText(aoe_number)
 				aoe_casting.text:SetText(aoe_casting_number)
-				aoe_casting.shadow_text:SetText(aoe_casting_number)
+				-- aoe_casting.shadow_text:SetText(aoe_casting_number)
 			end
 		)
 	end
