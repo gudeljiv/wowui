@@ -540,8 +540,7 @@ function private.ScanRecipe(professionName, craftString, inactiveCraftStrings)
 	local haveInvalidMats = false
 	local numReagents = TSM.Crafting.ProfessionUtil.GetNumMats(spellId, level)
 	for i = 1, numReagents do
-		local matItemLink, name, _, quantity, isQualityMat = TSM.Crafting.ProfessionUtil.GetMatInfo(spellId, i, level)
-		local matItemString = ItemString.GetBase(matItemLink)
+		local matItemString, name, _, quantity, isQualityMat = TSM.Crafting.ProfessionUtil.GetMatInfo(spellId, i, level)
 		if not matItemString then
 			Log.Warn("Failed to get itemString for mat %d (%s, %s)", i, tostring(professionName), tostring(craftString))
 			haveInvalidMats = true

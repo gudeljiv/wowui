@@ -32,6 +32,7 @@ local private = {
 	categoryInfoTemp = {},
 	timeoutTimer = nil,
 	resultQualityTemp = {},
+	itemLocation = ItemLocation:CreateEmpty(),
 }
 local PROFESSION_LOOKUP = {
 	["Costura"] = "Sastrería",
@@ -152,6 +153,10 @@ function ProfessionUtil.GetResultInfo(craftString)
 			indirectSpellId = spellId
 		end
 		local itemString = ProfessionInfo.GetIndirectCraftResult(indirectSpellId)
+		if type(itemString) == "table" then
+			-- TODO: Update the caller to handle multiple result items
+			itemString = itemString[1]
+		end
 		if itemString and (not TSM.IsWowClassic() or TSM.IsWowWrathClassic()) then
 			return TSM.UI.GetColoredItemName(itemString), itemString, ItemInfo.GetTexture(itemString)
 		elseif ProfessionInfo.IsEngineeringTinker(spellId) then
@@ -187,8 +192,7 @@ function ProfessionUtil.GetNumCraftable(craftString, level)
 	local spellId = CraftString.GetSpellId(craftString)
 	level = level or CraftString.GetLevel(craftString)
 	for i = 1, ProfessionUtil.GetNumMats(spellId, level) do
-		local matItemLink, _, _, quantity = ProfessionUtil.GetMatInfo(spellId, i, level)
-		local itemString = ItemString.Get(matItemLink)
+		local itemString, _, _, quantity = ProfessionUtil.GetMatInfo(spellId, i, level)
 		local totalQuantity = CustomPrice.GetItemPrice(itemString, "NumInventory") or 0
 		if not itemString or not quantity or totalQuantity == 0 then
 			return 0, 0
@@ -208,8 +212,7 @@ function ProfessionUtil.GetNumCraftableRecipeString(recipeString)
 	local spellId = RecipeString.GetSpellId(recipeString)
 	local level = RecipeString.GetLevel(recipeString)
 	for i = 1, ProfessionUtil.GetNumMats(spellId, level) do
-		local matItemLink, _, _, quantity = ProfessionUtil.GetMatInfo(spellId, i, level)
-		local itemString = ItemString.Get(matItemLink)
+		local itemString, _, _, quantity = ProfessionUtil.GetMatInfo(spellId, i, level)
 		local totalQuantity = CustomPrice.GetItemPrice(itemString, "NumInventory") or 0
 		if not itemString or not quantity or totalQuantity == 0 then
 			return 0, 0
@@ -239,8 +242,7 @@ end
 function ProfessionUtil.IsCraftable(craftString, level)
 	local spellId = CraftString.GetSpellId(craftString)
 	for i = 1, ProfessionUtil.GetNumMats(spellId, level) do
-		local matItemLink, _, _, quantity = ProfessionUtil.GetMatInfo(spellId, i, level)
-		local itemString = ItemString.Get(matItemLink)
+		local itemString, _, _, quantity = ProfessionUtil.GetMatInfo(spellId, i, level)
 		if not itemString or not quantity then
 			return false
 		end
@@ -299,8 +301,7 @@ function ProfessionUtil.IsEnchant(craftString)
 			return false, false
 		end
 		local recipeInfo = C_TradeSkillUI.GetRecipeInfo(spellId)
-		local altVerb = recipeInfo.alternateVerb
-		return altVerb and true or false, true
+		return recipeInfo.isEnchantingRecipe, true
 	end
 end
 
@@ -365,6 +366,18 @@ function ProfessionUtil.Craft(craftString, recipeId, quantity, useVellum, callba
 		-- We can only craft one of this item due to a bug on Blizzard's end
 		quantity = 1
 	end
+	local enchantItemLocation = nil
+	if not TSM.IsWowClassic() and useVellum and isEnchant and vellumable then
+		local bag, slot = BagTracking.CreateQueryBagsItem(ProfessionInfo.GetVellumItemString())
+			:Select("bag", "slot")
+			:GetFirstResultAndRelease()
+		if not bag then
+			return 0
+		end
+		private.itemLocation:Clear()
+		private.itemLocation:SetBagAndSlot(bag, slot)
+		enchantItemLocation = private.itemLocation
+	end
 	private.craftQuantity = quantity
 	private.craftString = craftString
 	private.craftSpellId = spellId
@@ -389,13 +402,17 @@ function ProfessionUtil.Craft(craftString, recipeId, quantity, useVellum, callba
 				tinsert(optionalMats, info)
 			end
 		end
-		C_TradeSkillUI.CraftRecipe(spellId, quantity, optionalMats, level)
+		if enchantItemLocation then
+			C_TradeSkillUI.CraftEnchant(spellId, quantity, optionalMats, enchantItemLocation)
+		else
+			C_TradeSkillUI.CraftRecipe(spellId, quantity, optionalMats, level)
+		end
 		for _, info in pairs(optionalMats) do
 			TempTable.Release(info)
 		end
 		TempTable.Release(optionalMats)
 	end
-	if useVellum and isEnchant and vellumable then
+	if TSM.IsWowClassic() and useVellum and isEnchant and vellumable then
 		local indirectSpellId = nil
 		if TSM.IsWowWrathClassic() then
 			local itemLink = ProfessionUtil.GetRecipeResultItem(craftString)
@@ -495,15 +512,21 @@ function ProfessionUtil.GetRecipeQualityInfo(craftString)
 	local spellId = CraftString.GetSpellId(craftString)
 	-- TODO: Do we need this info?
 	local info = C_TradeSkillUI.GetRecipeSchematic(spellId, false, 1)
+	local isItem = info.recipeType == Enum.TradeskillRecipeType.Item
+	local isEnchant = info.recipeType == Enum.TradeskillRecipeType.Enchant
 	if not info.hasCraftingOperationInfo or info.hasGatheringOperationInfo then
 		return
-	elseif info.recipeType ~= Enum.TradeskillRecipeType.Item then
+	elseif not isItem and not isEnchant then
 		return
-	elseif not info.outputItemID or not ItemInfo.IsCommodity("i:"..info.outputItemID) then
+	elseif isItem and not info.outputItemID then
 		return
 	end
 	local operationInfo = C_TradeSkillUI.GetCraftingOperationInfo(spellId, EMPTY_MATS_TABLE)
 	if not operationInfo then
+		return
+	end
+	if isItem and not ItemInfo.IsCommodity("i:"..info.outputItemID) and operationInfo.isQualityCraft then
+		-- TODO: Support crafts where the quality results in higher item level gear
 		return
 	end
 	return operationInfo.baseDifficulty, operationInfo.quality
@@ -566,10 +589,11 @@ function ProfessionUtil.GetNumMats(spellId, level)
 end
 
 function ProfessionUtil.GetMatInfo(spellId, index, level, qualityIndex)
-	local itemLink, name, texture, quantity, isQualityMat = nil, nil, nil, nil, nil
+	local itemString, name, texture, quantity, isQualityMat = nil, nil, nil, nil, nil
 	if TSM.IsWowClassic() then
 		spellId = TSM.Crafting.ProfessionScanner.GetIndexByCraftString(CraftString.Get(spellId)) or spellId
-		itemLink = TSM.Crafting.ProfessionState.IsClassicCrafting() and GetCraftReagentItemLink(spellId, index) or GetTradeSkillReagentItemLink(spellId, index)
+		local itemLink = TSM.Crafting.ProfessionState.IsClassicCrafting() and GetCraftReagentItemLink(spellId, index) or GetTradeSkillReagentItemLink(spellId, index)
+		itemString = ItemString.Get(itemLink)
 		if TSM.Crafting.ProfessionState.IsClassicCrafting() then
 			name, texture, quantity = GetCraftReagentInfo(spellId, index)
 		else
@@ -580,26 +604,21 @@ function ProfessionUtil.GetMatInfo(spellId, index, level, qualityIndex)
 		local reagentSlotInfo = info.reagentSlotSchematics[index]
 		if reagentSlotInfo.reagentType == Enum.CraftingReagentType.Basic then
 			if reagentSlotInfo.dataSlotType == Enum.TradeskillSlotDataType.Reagent then
-				local reagentDataInfo = reagentSlotInfo.reagents[1]
-				itemLink = C_TradeSkillUI.GetRecipeFixedReagentItemLink(spellId, reagentSlotInfo.dataSlotIndex)
-				name, texture, quantity = ItemInfo.GetName(itemLink), ItemInfo.GetTexture(reagentDataInfo.itemID), reagentSlotInfo.quantityRequired
-				if itemLink then
-					name = name or ItemInfo.GetName(itemLink)
-					texture = texture or ItemInfo.GetTexture(itemLink)
-				end
+				local itemLink = C_TradeSkillUI.GetRecipeFixedReagentItemLink(spellId, reagentSlotInfo.dataSlotIndex)
+				itemString = ItemString.Get(itemLink)
+				name, texture, quantity = ItemInfo.GetName(itemLink), ItemInfo.GetTexture(itemString), reagentSlotInfo.quantityRequired
 			elseif reagentSlotInfo.dataSlotType == Enum.TradeskillSlotDataType.ModifiedReagent then
 				isQualityMat = true
 				local reagentDataInfo = reagentSlotInfo.reagents[qualityIndex or 1]
-				itemLink = C_TradeSkillUI.GetRecipeQualityReagentItemLink(spellId, reagentSlotInfo.dataSlotIndex, qualityIndex or 1)
-				name, texture, quantity = ItemInfo.GetName(itemLink), ItemInfo.GetTexture(reagentDataInfo.itemID), reagentSlotInfo.quantityRequired
-				if itemLink then
-					name = name or ItemInfo.GetName(itemLink)
-					texture = texture or ItemInfo.GetTexture(itemLink)
-				end
+				local itemLink = C_TradeSkillUI.GetRecipeQualityReagentItemLink(spellId, reagentSlotInfo.dataSlotIndex, qualityIndex or 1)
+				-- NOTE: For some reason, the above API doesn't always work (i.e. with 'Handful of Serevite Bolts')
+				itemString = itemLink and ItemString.Get(itemLink) or "i:"..reagentDataInfo.itemID
+				itemLink = itemLink or ItemInfo.GetLink(reagentDataInfo.itemID)
+				name, texture, quantity = ItemInfo.GetName(itemLink), ItemInfo.GetTexture(itemString), reagentSlotInfo.quantityRequired
 			end
 		end
 	end
-	return itemLink, name, texture, quantity, isQualityMat
+	return itemString, name, texture, quantity, isQualityMat
 end
 
 function ProfessionUtil.CloseTradeSkill(closeBoth)
