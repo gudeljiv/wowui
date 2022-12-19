@@ -234,7 +234,7 @@ function GBB.UpdateLfgTool()
 		return
 	end
 
-	GBB.GetLfgList()
+	-- GBB.GetLfgList()
 	GBB.LfgUpdateList()
 end
 
@@ -251,7 +251,7 @@ function GBB.UpdateLfgToolNoSearch()
 	end
 
 	GBB.LfgRequestList = {}
-	GBB.GetLfgList()
+	-- GBB.GetLfgList()
 	GBB.LfgUpdateList()
 end
 
