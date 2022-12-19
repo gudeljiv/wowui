@@ -45,10 +45,10 @@ LBISSettings = {
 		["Phase 1"] = true,
 	},
 	["ShowPriority"] = true,
-	["ShowCustom"] = false,
-	["SelectedSourceType"] = "All",
 	["PriorityList"] = {
 	},
+	["SelectedSourceType"] = "All",
 	["SelectedSlot"] = "Back",
+	["ShowCustom"] = false,
 	["SelectedPhase"] = "BIS",
 }
