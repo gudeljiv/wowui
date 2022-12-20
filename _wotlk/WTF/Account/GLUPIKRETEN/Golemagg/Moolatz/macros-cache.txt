@@ -62,10 +62,6 @@ VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,help,nodead][help][] Growl
 END
-VER 3 0000000001000013 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast Mark of the Wild
-END
 VER 3 0000000001000015 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,exists,nodead][help][] Regrowth
@@ -86,5 +82,10 @@ END
 VER 3 0000000001000019 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cancelform
-/cast cat form
+/use Cat Form
+END
+VER 3 000000000100001A " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cancelform
+/use Travel Form
 END

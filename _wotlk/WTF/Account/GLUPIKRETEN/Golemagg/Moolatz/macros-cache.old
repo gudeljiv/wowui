@@ -83,3 +83,8 @@ VER 3 0000000001000018 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Gift of the Wild
 /cast [btn:2]Gift of the Wild;Mark of the Wild
 END
+VER 3 0000000001000019 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cancelform
+/cast cat form
+END

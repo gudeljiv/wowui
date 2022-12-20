@@ -32,3 +32,27 @@ local _, xVermin = ...
 -- behindCheck:UnregisterEvent('COMBAT_LOG_EVENT_UNFILTERED')
 
 -- return true
+
+local bt = CreateFrame('BUTTON', 'BehindTarget')
+local indicator = false
+
+bt:SetScript(
+	'OnClick',
+	function(self, event)
+		indicator = not indicator
+		if indicator then
+			RotationFrame4:SetBackdropColor(0, 0, 1, 1)
+		else
+			RotationFrame4:SetBackdropColor(1, 1, 1, 1)
+		end
+	end
+)
+
+xVermin.BehindTarget = function()
+	if UnitExists('target') then
+		return indicator
+	else
+		return false
+	end
+end
+xBehindTarget = xVermin.BehindTarget

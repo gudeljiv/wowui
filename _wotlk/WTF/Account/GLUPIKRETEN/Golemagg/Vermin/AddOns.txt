@@ -199,3 +199,4 @@ AceBIS: disabled
 Bistooltip: disabled
 ShadowedUF_Options: enabled
 ShadowedUnitFrames: enabled
+RatingBuster: enabled

@@ -34,8 +34,10 @@ xVermin.CheckIfLoadedWithTimer(
 					return
 				end
 
+				local in_instance, type = IsInInstance()
+
 				_, numQuests = GetNumQuestLogEntries()
-				showQuestieFrame = (not IsInInstance() and numQuests > 0) and true or false
+				showQuestieFrame = (not in_instance and numQuests > 0) and true or false
 
 				if showQuestieFrame then
 					if not Questie_BaseFrame:IsVisible() then

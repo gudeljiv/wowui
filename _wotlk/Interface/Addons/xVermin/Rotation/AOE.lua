@@ -102,7 +102,7 @@ aoe.text:SetPoint('CENTER', AOE_TARGETS, 'CENTER', 0, 0)
 aoe.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
 aoe.text:SetShadowColor(0, 0, 0, 1.0)
-aoe.text:SetShadowOffset(0.8, -0.8)
+aoe.text:SetShadowOffset(2, -2)
 
 -- aoe.shadow_text = aoe:CreateFontString(nil, 'BACKGROUND')
 -- aoe.shadow_text:SetFont(xVermin.Config.font.arial, 18, 'NONE')
@@ -119,7 +119,7 @@ aoe_casting.text:SetPoint('CENTER', AOE_TARGETS_CASTING, 'CENTER', 0, 0)
 aoe_casting.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
 aoe_casting.text:SetShadowColor(0, 0, 0, 1.0)
-aoe_casting.text:SetShadowOffset(0.8, -0.8)
+aoe_casting.text:SetShadowOffset(2, -2)
 
 -- aoe_casting.shadow_text = aoe_casting:CreateFontString(nil, 'BACKGROUND')
 -- aoe_casting.shadow_text:SetFont(xVermin.Config.font.arial, 18, 'NONE')
