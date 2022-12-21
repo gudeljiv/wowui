@@ -51797,13 +51797,13 @@ WeakAurasOptionsSaved = {
 			["spells"] = "51203=136007",
 		},
 	},
-	["spellCacheStrings"] = true,
-	["spellCacheAchivements"] = true,
 	["frame"] = {
 		["xOffset"] = 875.2839660644531,
-		["width"] = 1002.632263183594,
-		["height"] = 980.2842407226562,
 		["yOffset"] = 1285.111206054688,
+		["height"] = 980.2842407226562,
+		["width"] = 1002.632263183594,
 	},
+	["spellCacheStrings"] = true,
+	["spellCacheAchivements"] = true,
 	["build"] = "47168",
 }

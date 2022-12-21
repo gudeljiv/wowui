@@ -1745,10 +1745,10 @@ AskMrRobotDbClassic = {
 				[37257] = 1,
 				[40678] = 1,
 				[41503] = 6,
-				[33447] = 53,
-				[43145] = 17,
-				[6948] = 1,
 				[40188] = 1,
+				[43145] = 17,
+				[33447] = 53,
+				[6948] = 1,
 				[39246] = 1,
 				[38617] = 1,
 				[37093] = 48,
@@ -1766,7 +1766,7 @@ AskMrRobotDbClassic = {
 			["LastVersion"] = 11,
 			["Logging"] = {
 				["LastDiff"] = 1,
-				["LastZone"] = "Kalimdor",
+				["LastZone"] = "Northrend",
 			},
 			["GearSetups"] = {
 				{
@@ -2245,11 +2245,11 @@ AskMrRobotDbClassic = {
 						},
 					}, -- [15]
 					{
-						["enchantId"] = 3828,
+						["enchantId"] = 0,
 						["suffixId"] = 0,
 						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:37852:3828:::::::80:::::::::|h[Colossal Skull-Clad Cleaver]|h|r",
-						["id"] = 37852,
+						["link"] = "|cffa335ee|Hitem:40343::::::::80:::::::::|h[Armageddon]|h|r",
+						["id"] = 40343,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
@@ -2261,11 +2261,11 @@ AskMrRobotDbClassic = {
 						},
 					}, -- [16]
 					{
-						["enchantId"] = 0,
+						["enchantId"] = 3828,
 						["suffixId"] = 0,
 						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:40343::::::::80:::::::::|h[Armageddon]|h|r",
-						["id"] = 40343,
+						["link"] = "|cffa335ee|Hitem:37852:3828:::::::80:::::::::|h[Colossal Skull-Clad Cleaver]|h|r",
+						["id"] = 37852,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
@@ -3386,8 +3386,8 @@ AskMrRobotDbClassic = {
 				{
 					[7] = {
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["level"] = 0,
+						["suffixId"] = 0,
 						["link"] = "|cff9d9d9d|Hitem:52::::::::7:::::::::|h[Neophyte's Pants]|h|r",
 						["id"] = 52,
 						["gemIds"] = {
@@ -3402,8 +3402,8 @@ AskMrRobotDbClassic = {
 					},
 					[15] = {
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["level"] = 0,
+						["suffixId"] = 0,
 						["link"] = "|cffffffff|Hitem:4920::::::::7:::::::::|h[Battleworn Cape]|h|r",
 						["id"] = 4920,
 						["gemIds"] = {
@@ -3418,8 +3418,8 @@ AskMrRobotDbClassic = {
 					},
 					[18] = {
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["level"] = 0,
+						["suffixId"] = 0,
 						["link"] = "|cff1eff00|Hitem:11287::::::::7:::::::::|h[Lesser Magic Wand]|h|r",
 						["id"] = 11287,
 						["gemIds"] = {
@@ -3434,8 +3434,8 @@ AskMrRobotDbClassic = {
 					},
 					[5] = {
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["level"] = 0,
+						["suffixId"] = 0,
 						["link"] = "|cff9d9d9d|Hitem:6144::::::::7:::::::::|h[Neophyte's Robe]|h|r",
 						["id"] = 6144,
 						["gemIds"] = {
@@ -3450,8 +3450,8 @@ AskMrRobotDbClassic = {
 					},
 					[16] = {
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["level"] = 0,
+						["suffixId"] = 0,
 						["link"] = "|cffffffff|Hitem:5778::::::::7:::::::::|h[Primitive Walking Stick]|h|r",
 						["id"] = 5778,
 						["gemIds"] = {
@@ -4158,11 +4158,11 @@ AskMrRobotDbClassic = {
 				},
 				[7] = {
 					[4941] = 10,
-					[4305] = 5,
+					[2321] = 33,
 					[4945] = 1,
 					[2320] = 7,
+					[4305] = 5,
 					[3182] = 9,
-					[2321] = 33,
 				},
 				[8] = {
 				},
@@ -7598,9 +7598,6 @@ AskMrRobotDbClassic = {
 	},
 	["profiles"] = {
 		["Vermin - Golemagg"] = {
-			["options"] = {
-				["uiScale"] = 0.9,
-			},
 			["Logging"] = {
 				["Auto"] = {
 					[649] = {
@@ -7646,6 +7643,9 @@ AskMrRobotDbClassic = {
 			["window"] = {
 				["top"] = 1094.620239257813,
 				["left"] = 1216.543090820313,
+			},
+			["options"] = {
+				["uiScale"] = 0.9,
 			},
 			["minimap"] = {
 				["hide"] = true,

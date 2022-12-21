@@ -553,8 +553,8 @@ AtlasLootClassicDB = {
 			[41566] = "honor:1250",
 			[18436] = "honor:200",
 			[22852] = "honor:1000",
+			[40689] = "EmblemOfHeroism:40",
 			[41712] = "EmblemOfHeroism:30",
-			[18826] = "honor:2500",
 			[40721] = "EmblemOfValor:25",
 			[35327] = "honor:3990",
 			[18874] = "honor:5000",
@@ -566,8 +566,8 @@ AtlasLootClassicDB = {
 			[32793] = "honor:5320",
 			[42032] = "honor:33180",
 			[42064] = "honor:33180",
+			[33944] = "honor:5130",
 			[28241] = "honor:2280",
-			[42128] = "honor:43400",
 			[34999] = "honor:9500",
 			[28305] = "honor:4750",
 			[35130] = "honor:5700",
@@ -670,10 +670,10 @@ AtlasLootClassicDB = {
 			[32450] = "honor:7125",
 			[41268] = "EmblemOfHeroism:30",
 			[35162] = "honor:7600",
-			[33944] = "honor:5130",
+			[42128] = "honor:43400",
 			[28919] = "honor:7600",
 			[31967] = "honor:5320",
-			[40689] = "EmblemOfHeroism:40",
+			[18826] = "honor:2500",
 			[28930] = "honor:3800",
 			[40888] = "honor:27580",
 			[48685] = "EmblemOfHeroism:40",
@@ -1155,6 +1155,8 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
+		["Battlearm - Hydraxian Waterlords"] = {
+		},
 		["xVermin"] = {
 			["GUI"] = {
 				["selectedGameVersion"] = 2,
@@ -1190,8 +1192,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Testxv - Golemagg"] = {
-		},
-		["Battlearm - Hydraxian Waterlords"] = {
 		},
 		["Pitchwise - Ashbringer"] = {
 			["minimap"] = {
@@ -1232,6 +1232,21 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["Addons"] = {
+				["Favourites"] = {
+					["lists"] = {
+						["ProfileBase"] = {
+							["mainItems"] = {
+								[8] = true,
+							},
+						},
+					},
+				},
+			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -1246,21 +1261,6 @@ AtlasLootClassicDB = {
 					nil, -- [3]
 					9, -- [4]
 					0, -- [5]
-				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
-			["Addons"] = {
-				["Favourites"] = {
-					["lists"] = {
-						["ProfileBase"] = {
-							["mainItems"] = {
-								[8] = true,
-							},
-						},
-					},
 				},
 			},
 		},
@@ -1301,19 +1301,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
-			["showCompanionLearnedInfo"] = false,
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
-			["Addons"] = {
-				["Favourites"] = {
-					["showListInTT"] = false,
-				},
-			},
-			["Tooltip"] = {
-				["useGameTooltip"] = false,
-			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -1330,7 +1317,20 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
+			["showCompanionLearnedInfo"] = false,
+			["Addons"] = {
+				["Favourites"] = {
+					["showListInTT"] = false,
+				},
+			},
+			["Tooltip"] = {
+				["useGameTooltip"] = false,
+			},
 			["showItemLvlInTT"] = false,
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 		},
 		["Miqa - Golemagg"] = {
 			["GUI"] = {

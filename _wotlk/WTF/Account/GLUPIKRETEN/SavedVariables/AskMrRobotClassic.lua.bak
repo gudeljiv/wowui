@@ -1748,7 +1748,7 @@ AskMrRobotDbClassic = {
 				[34722] = 37,
 				[43145] = 17,
 				[6657] = 27,
-				[40188] = 1,
+				[6948] = 1,
 				[39764] = 1,
 				[38617] = 1,
 				[37093] = 48,
@@ -1756,8 +1756,8 @@ AskMrRobotDbClassic = {
 				[38303] = 2,
 				[40767] = 1,
 				[39246] = 1,
-				[6948] = 1,
 				[33447] = 53,
+				[40188] = 1,
 				[40678] = 1,
 				[38698] = 4,
 				[40544] = 1,
@@ -1766,7 +1766,7 @@ AskMrRobotDbClassic = {
 			["LastVersion"] = 11,
 			["Logging"] = {
 				["LastDiff"] = 1,
-				["LastZone"] = "Kalimdor",
+				["LastZone"] = "Northrend",
 			},
 			["Equipped"] = {
 				{
@@ -1996,22 +1996,6 @@ AskMrRobotDbClassic = {
 						},
 					}, -- [15]
 					{
-						["link"] = "|cffa335ee|Hitem:37852:3828:::::::80:::::::::|h[Colossal Skull-Clad Cleaver]|h|r",
-						["id"] = 37852,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["enchantId"] = 3828,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					}, -- [16]
-					{
 						["link"] = "|cffa335ee|Hitem:40343::::::::80:::::::::|h[Armageddon]|h|r",
 						["id"] = 40343,
 						["gemIds"] = {
@@ -2021,6 +2005,22 @@ AskMrRobotDbClassic = {
 							0, -- [4]
 						},
 						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					}, -- [16]
+					{
+						["link"] = "|cffa335ee|Hitem:37852:3828:::::::80:::::::::|h[Colossal Skull-Clad Cleaver]|h|r",
+						["id"] = 37852,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["enchantId"] = 3828,
 						["suffixId"] = 0,
 						["level"] = 0,
 						["upgradeId"] = 0,
@@ -7447,11 +7447,11 @@ AskMrRobotDbClassic = {
 				},
 				[7] = {
 					[4941] = 10,
-					[3182] = 9,
+					[4305] = 5,
 					[4945] = 1,
 					[2320] = 7,
+					[3182] = 9,
 					[2321] = 33,
-					[4305] = 5,
 				},
 				[8] = {
 				},
@@ -7598,9 +7598,6 @@ AskMrRobotDbClassic = {
 	},
 	["profiles"] = {
 		["Vermin - Golemagg"] = {
-			["options"] = {
-				["uiScale"] = 0.9,
-			},
 			["Logging"] = {
 				["Auto"] = {
 					[649] = {
@@ -7646,6 +7643,9 @@ AskMrRobotDbClassic = {
 			["window"] = {
 				["top"] = 1094.620239257813,
 				["left"] = 1216.543090820313,
+			},
+			["options"] = {
+				["uiScale"] = 0.9,
 			},
 			["minimap"] = {
 				["hide"] = true,

@@ -522,6 +522,7 @@ ChocolateBarDB = {
 					["widthBehavior"] = "free",
 				},
 				["AddonCpuUsage"] = {
+					["enabled"] = false,
 					["align"] = "right",
 					["isNew"] = false,
 					["showLabel"] = true,
@@ -718,9 +719,9 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1495630,
-		["timeStamp"] = 3490163.28,
-		["timeAtThisLevel"] = 403083,
+		["total"] = 1497921,
+		["timeStamp"] = 3549193.924,
+		["timeAtThisLevel"] = 405374,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
@@ -774,9 +775,9 @@ CB_PlayedTime = {
 		["total"] = 3552,
 	},
 	["Miqa-Golemagg"] = {
-		["total"] = 9146,
-		["timeAtThisLevel"] = 4098,
-		["timeStamp"] = 3380445.895,
+		["total"] = 9244,
+		["timeAtThisLevel"] = 4196,
+		["timeStamp"] = 3553798.363,
 	},
 	["Pitchwise-"] = {
 		["total"] = 390,

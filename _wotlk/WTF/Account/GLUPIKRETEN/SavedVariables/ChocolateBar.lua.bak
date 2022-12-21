@@ -780,9 +780,9 @@ CB_PlayedTime = {
 		["total"] = 390,
 	},
 	["Miqa-Golemagg"] = {
-		["total"] = 9146,
-		["timeStamp"] = 3380445.895,
-		["timeAtThisLevel"] = 4098,
+		["total"] = 9214,
+		["timeStamp"] = 3553769.198,
+		["timeAtThisLevel"] = 4166,
 	},
 	["Nitwit-"] = {
 		["total"] = 680,
@@ -805,9 +805,9 @@ CB_PlayedTime = {
 		["total"] = 129,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1495569,
-		["timeAtThisLevel"] = 403022,
-		["timeStamp"] = 3490102.68,
+		["total"] = 1497921,
+		["timeAtThisLevel"] = 405374,
+		["timeStamp"] = 3549193.924,
 	},
 	["Grgur-"] = {
 		["total"] = 1248,

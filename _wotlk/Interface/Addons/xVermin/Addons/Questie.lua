@@ -30,11 +30,7 @@ xVermin.CheckIfLoadedWithTimer(
 		Questie_BaseFrame:HookScript(
 			'OnUpdate',
 			function(self)
-				if InCombatLockdown() then
-					return
-				end
-
-				local in_instance, type = IsInInstance()
+				local in_instance, type_of_instance = IsInInstance()
 
 				_, numQuests = GetNumQuestLogEntries()
 				showQuestieFrame = (not in_instance and numQuests > 0) and true or false
@@ -47,6 +43,10 @@ xVermin.CheckIfLoadedWithTimer(
 					if Questie_BaseFrame:IsVisible() then
 						Questie_BaseFrame:Hide()
 					end
+				end
+
+				if InCombatLockdown() then
+					return
 				end
 
 				-- if numQuests > 0 then

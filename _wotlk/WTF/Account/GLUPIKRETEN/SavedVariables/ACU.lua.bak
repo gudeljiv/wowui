@@ -2,6 +2,7 @@
 AddonCpuUsageDB = {
 	["profileKeys"] = {
 		["Vermin - Golemagg"] = "Default",
+		["Miqa - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
