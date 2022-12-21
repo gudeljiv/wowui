@@ -1,5 +1,55 @@
 
 AtlasLootClassicDB = {
+	["profileKeys"] = {
+		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
+		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
+		["Verminz - Golemagg"] = "Verminz - Golemagg",
+		["Greshnik - Dreadnaught"] = "Default",
+		["Battitude - Golemagg"] = "Default",
+		["Korupcija - Stonespine"] = "Korupcija - Stonespine",
+		["Wells - Jin'do"] = "Default",
+		["Poklopac - Dreadnaught"] = "Poklopac - Dreadnaught",
+		["Mxym - Golemagg"] = "Default",
+		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
+		["Augustin - Golemagg"] = "Default",
+		["Grgur - Golemagg"] = "Default",
+		["Koloman - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Antun - Golemagg"] = "Default",
+		["Provokator - Jin'do"] = "xVermin",
+		["Ozrencic - Golemagg"] = "Ozrencic - Golemagg",
+		["Moolatz - Dreadnaught"] = "Default",
+		["Handrmandr - Golemagg"] = "Default",
+		["Vermina - Golemagg"] = "Default",
+		["Pitchwise - Golemagg"] = "Pitchwise - Golemagg",
+		["Elohssa - Stonespine"] = "Elohssa - Stonespine",
+		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
+		["Paydo - Dreadmist"] = "Paydo - Dreadmist",
+		["Mxys - Golemagg"] = "Default",
+		["Miqa - Golemagg"] = "Default",
+		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
+		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
+		["Moolatz - Golemagg"] = "Default",
+		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Mxzq - Golemagg"] = "Default",
+		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
+		["Vermins - Stonespine"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
+		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
+		["Dmitar - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
+		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
+		["Poklopac - Mirage Raceway"] = "Poklopac - Mirage Raceway",
+		["Judawise - Golemagg"] = "Judawise - Golemagg",
+		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
+		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
+		["Tudum - Jin'do"] = "Tudum - Jin'do",
+		["Whatevs - Stonespine"] = "Default",
+	},
 	["global"] = {
 		["__addonrevision"] = 3000007,
 		["VendorPrice"] = {
@@ -325,10 +375,10 @@ AtlasLootClassicDB = {
 			[35151] = "honor:7600",
 			[28381] = "honor:4750",
 			[28445] = "honor:4750",
-			[43236] = "honor:12",
+			[32455] = "honor:1",
 			[28806] = "honor:3040",
-			[28805] = "honor:3800",
-			[34576] = "honor:3990",
+			[40860] = "EmblemOfValor:30",
+			[40803] = "EmblemOfValor:30",
 			[31594] = "honor:3800",
 			[40682] = "EmblemOfHeroism:40",
 			[40714] = "EmblemOfHeroism:15",
@@ -343,65 +393,65 @@ AtlasLootClassicDB = {
 			[33841] = "honor:5130",
 			[42057] = "honor:16590",
 			[33905] = "honor:6840",
-			[28422] = "honor:3800",
+			[32817] = "honor:3990",
 			[34992] = "honor:9500",
 			[35024] = "honor:9500",
 			[34033] = "honor:4275",
 			[28813] = "honor:3800",
-			[41273] = "EmblemOfValor:30",
+			[44902] = "cpvpWintergrasp:40",
 			[35152] = "honor:7600",
 			[31379] = "honor:4750",
-			[35133] = "honor:5700",
+			[41271] = "EmblemOfHeroism:30",
 			[31962] = "honor:6650",
 			[28909] = "arcanerune:8",
 			[28925] = "honor:3800",
-			[31377] = "honor:4750",
+			[28308] = "honor:4750",
 			[32026] = "honor:6650",
 			[41314] = "EmblemOfValor:45",
 			[32058] = "honor:6650",
-			[32991] = "honor:4750",
-			[41278] = "EmblemOfHeroism:30",
-			[40779] = "EmblemOfHeroism:45",
+			[35037] = "honor:9500",
+			[44231] = "EmblemOfHeroism:200",
+			[18871] = "honor:5000",
 			[40683] = "EmblemOfHeroism:40",
 			[40715] = "EmblemOfHeroism:15",
 			[40747] = "EmblemOfValor:40",
-			[18871] = "honor:5000",
+			[40779] = "EmblemOfHeroism:45",
 			[41659] = "EmblemOfValor:45",
 			[41279] = "EmblemOfValor:30",
 			[28126] = "honor:3800",
-			[41272] = "EmblemOfHeroism:45",
+			[28332] = "honor:4750",
 			[42985] = "EmblemOfHeroism:40",
-			[40711] = "EmblemOfHeroism:15",
+			[41308] = "EmblemOfValor:45",
 			[42026] = "honor:16590",
 			[42058] = "honor:16590",
 			[33906] = "honor:5130",
 			[42122] = "honor:21700",
 			[34993] = "honor:9500",
 			[35025] = "honor:7600",
-			[28807] = "honor:3800",
+			[34577] = "honor:3990",
 			[28302] = "honor:4750",
-			[35103] = "honor:19000",
+			[41770] = "EmblemOfHeroism:30",
 			[28334] = "honor:4750",
 			[41291] = "EmblemOfValor:30",
 			[41290] = "EmblemOfHeroism:30",
 			[28903] = "arcanerune:2",
 			[41054] = "honor:43400",
-			[35136] = "honor:7600",
-			[41658] = "EmblemOfHeroism:45",
+			[41284] = "EmblemOfValor:30",
+			[41313] = "EmblemOfHeroism:45",
 			[28446] = "honor:3800",
 			[35110] = "honor:2850",
-			[28331] = "honor:4750",
-			[28314] = "honor:4750",
-			[35172] = "honor:5700",
+			[34014] = "honor:5130",
 			[41675] = "EmblemOfHeroism:45",
+			[41771] = "EmblemOfValor:30",
+			[31595] = "honor:3800",
 			[40684] = "EmblemOfHeroism:40",
 			[40716] = "EmblemOfHeroism:15",
-			[41771] = "EmblemOfValor:30",
+			[40748] = "EmblemOfValor:40",
 			[41048] = "honor:43400",
-			[30490] = "honor:5320",
-			[28638] = "honor:4750",
+			[32992] = "honor:3800",
 			[24546] = "honor:3800",
-			[31990] = "honor:5320",
+			[28638] = "honor:4750",
+			[18848] = "honor:2500",
 			[35082] = "honor:14250",
 			[33811] = "honor:6840",
 			[42027] = "honor:33180",
@@ -419,57 +469,57 @@ AtlasLootClassicDB = {
 			[31963] = "honor:6650",
 			[28910] = "arcanerune:8",
 			[28926] = "honor:3800",
-			[28645] = "honor:3800",
+			[32816] = "honor:3990",
 			[32027] = "honor:6650",
-			[33668] = "honor:6840",
+			[35101] = "honor:9500",
 			[32059] = "honor:5320",
-			[28851] = "honor:3800",
-			[35132] = "honor:5700",
+			[41302] = "EmblemOfValor:45",
+			[41270] = "EmblemOfHeroism:45",
 			[41676] = "EmblemOfValor:45",
 			[40685] = "EmblemOfHeroism:40",
 			[34579] = "honor:3990",
 			[40749] = "EmblemOfValor:40",
 			[40781] = "EmblemOfValor:45",
-			[35177] = "honor:5700",
+			[18853] = "honor:400",
 			[18840] = "honor:2500",
 			[28127] = "honor:4750",
-			[32789] = "honor:5320",
-			[41069] = "honor:43400",
 			[33812] = "honor:6840",
-			[32821] = "honor:3990",
 			[33876] = "honor:5130",
+			[32789] = "honor:5320",
+			[32821] = "honor:3990",
+			[42060] = "honor:16590",
 			[33908] = "honor:6840",
-			[31586] = "honor:3800",
+			[28922] = "honor:3800",
 			[34995] = "honor:9500",
-			[28335] = "honor:3800",
-			[33885] = "honor:6840",
+			[35155] = "honor:7600",
+			[44115] = "cpvpWintergrasp:9",
 			[41229] = "honor:43400",
 			[28319] = "honor:2850",
-			[35155] = "honor:7600",
+			[28335] = "honor:3800",
 			[41325] = "EmblemOfValor:45",
 			[33898] = "honor:6840",
 			[28383] = "honor:3800",
-			[32798] = "honor:5320",
-			[41064] = "honor:27580",
-			[41224] = "honor:27580",
+			[18461] = "honor:400",
+			[31978] = "honor:3325",
+			[32813] = "honor:3990",
 			[28447] = "honor:3800",
-			[28643] = "honor:4750",
+			[24551] = "honor:2850",
 			[34578] = "honor:3990",
-			[33661] = "honor:12825",
-			[42020] = "honor:16590",
+			[44914] = "cpvpWintergrasp:25",
+			[33895] = "honor:6840",
 			[31986] = "honor:13300",
-			[40638] = "EmblemOfValor:60",
+			[35166] = "honor:5700",
 			[40718] = "EmblemOfValor:25",
 			[40750] = "EmblemOfValor:40",
 			[29470] = "honor:16650",
-			[16341] = "honor:200",
-			[28639] = "honor:3800",
+			[31987] = "honor:5320",
 			[24547] = "honor:4750",
-			[16550] = "honor:2500",
-			[42061] = "honor:16590",
+			[28639] = "honor:3800",
+			[40878] = "honor:21700",
+			[33877] = "honor:6840",
 			[33813] = "honor:5130",
 			[42029] = "honor:33180",
-			[33877] = "honor:6840",
+			[42061] = "honor:16590",
 			[33909] = "honor:6840",
 			[33737] = "honor:8550",
 			[34996] = "honor:9500",
@@ -479,26 +529,26 @@ AtlasLootClassicDB = {
 			[16555] = "honor:2000",
 			[35156] = "honor:7600",
 			[30344] = "honor:2280",
-			[42028] = "honor:33180",
+			[28138] = "honor:4750",
 			[31964] = "honor:5320",
 			[28911] = "arcanerune:8",
-			[40717] = "EmblemOfValor:25",
-			[28313] = "honor:4750",
+			[28854] = "honor:3800",
+			[40877] = "honor:21700",
 			[32028] = "honor:6650",
 			[32044] = "honor:6650",
 			[32060] = "honor:6650",
-			[34540] = "honor:17100",
+			[28646] = "honor:4750",
 			[28644] = "honor:3800",
-			[35163] = "honor:7600",
-			[35131] = "honor:5700",
+			[41301] = "EmblemOfHeroism:45",
+			[41269] = "EmblemOfHeroism:45",
 			[18841] = "honor:1",
 			[40751] = "EmblemOfValor:40",
 			[40783] = "EmblemOfValor:45",
-			[28307] = "honor:4750",
+			[31376] = "honor:4750",
 			[23467] = "honor:2500",
 			[40879] = "honor:43400",
 			[42021] = "honor:16590",
-			[42062] = "honor:33180",
+			[15199] = "honor:10000",
 			[32791] = "honor:5320",
 			[42030] = "honor:33180",
 			[33878] = "honor:6840",
@@ -506,52 +556,52 @@ AtlasLootClassicDB = {
 			[33942] = "honor:2850",
 			[34997] = "honor:19000",
 			[32983] = "honor:4750",
-			[28243] = "honor:2280",
+			[42132] = "honor:43400",
 			[35093] = "honor:9500",
 			[28320] = "honor:2850",
-			[15199] = "honor:10000",
+			[35157] = "honor:7600",
 			[16554] = "honor:2000",
 			[23253] = "honor:1250",
 			[28128] = "honor:4750",
-			[32819] = "honor:3990",
+			[33056] = "honor:3990",
 			[35317] = "honor:5130",
 			[28333] = "honor:3800",
 			[28448] = "honor:4750",
-			[37927] = "honor:5700",
+			[40859] = "EmblemOfValor:30",
 			[31378] = "honor:3800",
-			[35112] = "honor:9500",
+			[28476] = "honor:9500",
 			[35071] = "honor:9500",
-			[28443] = "honor:3800",
+			[33065] = "honor:3990",
 			[40688] = "EmblemOfHeroism:40",
 			[40720] = "EmblemOfValor:25",
-			[33068] = "honor:3990",
-			[42063] = "honor:33180",
+			[28640] = "honor:3800",
+			[33879] = "honor:6840",
 			[40816] = "EmblemOfHeroism:45",
 			[33687] = "honor:12825",
-			[28640] = "honor:3800",
-			[31853] = "honor:50",
-			[40693] = "EmblemOfHeroism:40",
+			[40880] = "honor:43400",
+			[32984] = "honor:3800",
+			[18828] = "honor:2500",
 			[32792] = "honor:5320",
 			[42031] = "honor:33180",
-			[33879] = "honor:6840",
+			[42063] = "honor:33180",
 			[33911] = "honor:6840",
 			[33943] = "honor:3990",
 			[34998] = "honor:7600",
-			[32984] = "honor:3800",
-			[33743] = "honor:12825",
+			[31853] = "honor:50",
+			[32790] = "honor:5320",
 			[35094] = "honor:9500",
-			[18839] = "honor:1",
 			[41296] = "EmblemOfValor:45",
-			[28933] = "honor:7600",
+			[35158] = "honor:7600",
+			[35109] = "honor:19000",
 			[44429] = "honor:5700",
 			[31965] = "honor:6650",
 			[28912] = "arcanerune:8",
 			[28928] = "honor:3800",
 			[16549] = "honor:2500",
-			[42025] = "honor:16590",
+			[42943] = "EmblemOfHeroism:65",
 			[32045] = "honor:6650",
 			[41566] = "honor:1250",
-			[18436] = "honor:200",
+			[40888] = "honor:27580",
 			[22852] = "honor:1000",
 			[40689] = "EmblemOfHeroism:40",
 			[41712] = "EmblemOfHeroism:30",
@@ -561,7 +611,7 @@ AtlasLootClassicDB = {
 			[40817] = "EmblemOfHeroism:45",
 			[33688] = "honor:17100",
 			[28129] = "honor:3800",
-			[41570] = "honor:1250",
+			[28919] = "honor:7600",
 			[42991] = "EmblemOfHeroism:50",
 			[32793] = "honor:5320",
 			[42032] = "honor:33180",
@@ -569,30 +619,30 @@ AtlasLootClassicDB = {
 			[33944] = "honor:5130",
 			[28241] = "honor:2280",
 			[34999] = "honor:9500",
-			[28305] = "honor:4750",
-			[35130] = "honor:5700",
 			[35095] = "honor:9500",
-			[32962] = "honor:3990",
+			[41268] = "EmblemOfHeroism:30",
+			[28305] = "honor:4750",
+			[32450] = "honor:7125",
 			[28309] = "honor:4750",
-			[32988] = "honor:5320",
+			[31855] = "honor:50",
 			[23254] = "honor:1000",
 			[28385] = "honor:3800",
-			[28449] = "honor:3800",
-			[35319] = "honor:5130",
-			[33947] = "honor:5130",
 			[29472] = "honor:16650",
+			[35319] = "honor:5130",
+			[42131] = "honor:43400",
+			[28449] = "honor:3800",
 			[32055] = "honor:13300",
 			[33716] = "honor:17100",
-			[28920] = "honor:3800",
+			[48677] = "EmblemOfHeroism:40",
 			[35038] = "honor:9500",
 			[31598] = "honor:4750",
 			[41713] = "EmblemOfValor:30",
 			[40722] = "EmblemOfValor:25",
-			[33880] = "honor:6840",
-			[18428] = "honor:200",
-			[28642] = "honor:3800",
-			[33689] = "honor:8550",
 			[28641] = "honor:3800",
+			[33755] = "honor:8550",
+			[24550] = "honor:9500",
+			[33689] = "honor:8550",
+			[24549] = "honor:3800",
 			[18427] = "honor:100",
 			[42992] = "EmblemOfHeroism:50",
 			[32794] = "honor:5320",
@@ -604,23 +654,23 @@ AtlasLootClassicDB = {
 			[40719] = "EmblemOfValor:25",
 			[35064] = "honor:19000",
 			[41234] = "honor:43400",
-			[44912] = "cpvpWintergrasp:25",
+			[40820] = "EmblemOfValor:45",
 			[35160] = "honor:7600",
-			[34066] = "honor:5130",
+			[33881] = "honor:5130",
 			[44431] = "honor:5700",
 			[31966] = "honor:13300",
-			[18831] = "honor:5000",
+			[30489] = "honor:6650",
 			[28929] = "honor:3800",
 			[32014] = "honor:13300",
 			[48683] = "EmblemOfHeroism:40",
 			[32046] = "honor:6650",
-			[40724] = "EmblemOfValor:25",
+			[16335] = "honor:400",
 			[32814] = "honor:3990",
-			[33067] = "honor:3990",
-			[34580] = "honor:3990",
+			[42944] = "EmblemOfHeroism:40",
+			[28139] = "honor:3800",
 			[40691] = "EmblemOfHeroism:40",
 			[40723] = "EmblemOfValor:25",
-			[42129] = "honor:43400",
+			[40836] = "EmblemOfHeroism:45",
 			[28137] = "honor:4750",
 			[40819] = "EmblemOfValor:45",
 			[33690] = "honor:6840",
@@ -628,201 +678,151 @@ AtlasLootClassicDB = {
 			[33754] = "honor:8550",
 			[35073] = "honor:4750",
 			[29469] = "honor:16650",
-			[28140] = "honor:4750",
+			[33734] = "honor:8550",
 			[42066] = "honor:33180",
-			[33946] = "honor:3990",
+			[32788] = "honor:5320",
 			[42130] = "honor:43400",
 			[35001] = "honor:7600",
-			[35161] = "honor:7600",
+			[34129] = "honor:16650",
 			[35065] = "honor:5700",
 			[31375] = "honor:3800",
 			[35129] = "honor:5700",
 			[15200] = "honor:100",
-			[35320] = "honor:5130",
-			[32818] = "honor:3990",
 			[28295] = "honor:4750",
-			[34129] = "honor:16650",
-			[32788] = "honor:5320",
-			[33734] = "honor:8550",
+			[32818] = "honor:3990",
+			[35320] = "honor:5130",
+			[35161] = "honor:7600",
+			[33946] = "honor:3990",
+			[28140] = "honor:4750",
 			[28450] = "honor:3800",
 			[48716] = "EmblemOfHeroism:40",
 			[41587] = "honor:5700",
-			[40836] = "EmblemOfHeroism:45",
-			[28139] = "honor:3800",
-			[42944] = "EmblemOfHeroism:40",
+			[42129] = "honor:43400",
+			[34580] = "honor:3990",
+			[33067] = "honor:3990",
 			[40692] = "EmblemOfHeroism:40",
-			[16335] = "honor:400",
-			[30489] = "honor:6650",
-			[33881] = "honor:5130",
-			[40820] = "EmblemOfValor:45",
+			[40724] = "EmblemOfValor:25",
+			[18831] = "honor:5000",
+			[34066] = "honor:5130",
+			[44912] = "cpvpWintergrasp:25",
 			[33691] = "honor:8550",
-			[24550] = "honor:9500",
-			[33755] = "honor:8550",
-			[24549] = "honor:3800",
+			[28642] = "honor:3800",
+			[18428] = "honor:200",
+			[33880] = "honor:6840",
 			[32796] = "honor:5320",
-			[48677] = "EmblemOfHeroism:40",
+			[28920] = "honor:3800",
 			[42067] = "honor:33180",
 			[33915] = "honor:6840",
-			[42131] = "honor:43400",
+			[33947] = "honor:5130",
 			[35002] = "honor:9500",
-			[31855] = "honor:50",
+			[32988] = "honor:5320",
 			[35066] = "honor:9500",
-			[32450] = "honor:7125",
-			[41268] = "EmblemOfHeroism:30",
+			[32962] = "honor:3990",
+			[35130] = "honor:5700",
 			[35162] = "honor:7600",
 			[42128] = "honor:43400",
-			[28919] = "honor:7600",
+			[41570] = "honor:1250",
 			[31967] = "honor:5320",
 			[18826] = "honor:2500",
 			[28930] = "honor:3800",
-			[40888] = "honor:27580",
+			[18436] = "honor:200",
 			[48685] = "EmblemOfHeroism:40",
-			[42943] = "EmblemOfHeroism:65",
+			[42025] = "honor:16590",
 			[41588] = "honor:5700",
-			[35109] = "honor:19000",
-			[35158] = "honor:7600",
-			[32790] = "honor:5320",
-			[18828] = "honor:2500",
+			[28933] = "honor:7600",
+			[18839] = "honor:1",
+			[33743] = "honor:12825",
+			[40693] = "EmblemOfHeroism:40",
 			[18844] = "honor:2500",
 			[18860] = "honor:5000",
-			[40880] = "honor:43400",
-			[33065] = "honor:3990",
+			[33068] = "honor:3990",
+			[28443] = "honor:3800",
 			[33692] = "honor:8550",
-			[28476] = "honor:9500",
+			[35112] = "honor:9500",
 			[33756] = "honor:8550",
-			[40859] = "EmblemOfValor:30",
+			[37927] = "honor:5700",
 			[32797] = "honor:5320",
-			[33056] = "honor:3990",
+			[32819] = "honor:3990",
 			[42068] = "honor:33180",
 			[33916] = "honor:6840",
-			[42132] = "honor:43400",
-			[35157] = "honor:7600",
+			[28243] = "honor:2280",
+			[42062] = "honor:33180",
 			[32989] = "honor:3990",
 			[35067] = "honor:7600",
-			[31376] = "honor:4750",
-			[41269] = "EmblemOfHeroism:45",
-			[41301] = "EmblemOfHeroism:45",
+			[28307] = "honor:4750",
+			[35131] = "honor:5700",
+			[35163] = "honor:7600",
 			[28355] = "honor:2850",
-			[28646] = "honor:4750",
-			[40877] = "honor:21700",
-			[28854] = "honor:3800",
-			[28138] = "honor:4750",
+			[34540] = "honor:17100",
+			[28313] = "honor:4750",
+			[40717] = "EmblemOfValor:25",
+			[42028] = "honor:33180",
 			[33309] = "honor:3325",
 			[28451] = "honor:4750",
 			[48718] = "EmblemOfHeroism:65",
 			[41589] = "honor:5700",
-			[40878] = "honor:21700",
+			[16550] = "honor:2500",
 			[31584] = "honor:3040",
-			[31987] = "honor:5320",
+			[16341] = "honor:200",
 			[40694] = "EmblemOfHeroism:40",
-			[35166] = "honor:5700",
+			[40638] = "EmblemOfValor:60",
 			[23464] = "honor:3750",
-			[33895] = "honor:6840",
-			[44914] = "cpvpWintergrasp:25",
+			[42020] = "honor:16590",
+			[33661] = "honor:12825",
 			[33693] = "honor:6840",
-			[24551] = "honor:2850",
-			[32813] = "honor:3990",
-			[31978] = "honor:3325",
-			[18461] = "honor:400",
+			[28643] = "honor:4750",
+			[41224] = "honor:27580",
+			[41064] = "honor:27580",
+			[32798] = "honor:5320",
 			[33853] = "honor:5130",
-			[44115] = "cpvpWintergrasp:9",
+			[33885] = "honor:6840",
 			[33917] = "honor:5130",
-			[28922] = "honor:3800",
-			[42060] = "honor:16590",
+			[31586] = "honor:3800",
+			[41069] = "honor:43400",
 			[32990] = "honor:5320",
 			[35068] = "honor:9500",
-			[18853] = "honor:400",
-			[41270] = "EmblemOfHeroism:45",
-			[41302] = "EmblemOfValor:45",
-			[35101] = "honor:9500",
-			[32816] = "honor:3990",
+			[35177] = "honor:5700",
+			[35132] = "honor:5700",
+			[28851] = "honor:3800",
+			[33668] = "honor:6840",
+			[28645] = "honor:3800",
 			[31968] = "honor:6650",
 			[31984] = "honor:13300",
 			[28931] = "honor:5700",
-			[18848] = "honor:2500",
+			[31990] = "honor:5320",
 			[48687] = "EmblemOfHeroism:40",
-			[32992] = "honor:3800",
+			[30490] = "honor:5320",
 			[41590] = "honor:5700",
-			[40748] = "EmblemOfValor:40",
-			[31595] = "honor:3800",
-			[34014] = "honor:5130",
+			[35172] = "honor:5700",
+			[28314] = "honor:4750",
+			[28331] = "honor:4750",
 			[40695] = "EmblemOfHeroism:40",
-			[41313] = "EmblemOfHeroism:45",
-			[41284] = "EmblemOfValor:30",
+			[41658] = "EmblemOfHeroism:45",
+			[35136] = "honor:7600",
 			[18877] = "honor:5000",
 			[33662] = "honor:8550",
 			[33694] = "honor:8550",
 			[40887] = "honor:13790",
-			[41770] = "EmblemOfHeroism:30",
-			[34577] = "honor:3990",
-			[41308] = "EmblemOfValor:45",
-			[28332] = "honor:4750",
+			[35103] = "honor:19000",
+			[28807] = "honor:3800",
+			[40711] = "EmblemOfHeroism:15",
+			[41272] = "EmblemOfHeroism:45",
 			[33886] = "honor:6840",
 			[33918] = "honor:5130",
 			[28244] = "honor:2850",
-			[44231] = "EmblemOfHeroism:200",
-			[35037] = "honor:9500",
+			[41278] = "EmblemOfHeroism:30",
+			[32991] = "honor:4750",
 			[35069] = "honor:9500",
-			[28308] = "honor:4750",
-			[41271] = "EmblemOfHeroism:30",
+			[31377] = "honor:4750",
+			[35133] = "honor:5700",
 			[35165] = "honor:7600",
-			[44902] = "cpvpWintergrasp:40",
-			[32817] = "honor:3990",
-			[40803] = "EmblemOfValor:30",
-			[40860] = "EmblemOfValor:30",
+			[41273] = "EmblemOfValor:30",
+			[28422] = "honor:3800",
+			[34576] = "honor:3990",
+			[28805] = "honor:3800",
 			[40440] = "honor:9500",
-			[32455] = "honor:1",
+			[43236] = "honor:12",
 		},
-	},
-	["profileKeys"] = {
-		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
-		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Verminz - Golemagg"] = "Verminz - Golemagg",
-		["Greshnik - Dreadnaught"] = "Default",
-		["Battitude - Golemagg"] = "Default",
-		["Korupcija - Stonespine"] = "Korupcija - Stonespine",
-		["Wells - Jin'do"] = "Default",
-		["Poklopac - Dreadnaught"] = "Poklopac - Dreadnaught",
-		["Mxym - Golemagg"] = "Default",
-		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
-		["Augustin - Golemagg"] = "Default",
-		["Grgur - Golemagg"] = "Default",
-		["Koloman - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Antun - Golemagg"] = "Default",
-		["Provokator - Jin'do"] = "xVermin",
-		["Ozrencic - Golemagg"] = "Ozrencic - Golemagg",
-		["Moolatz - Dreadnaught"] = "Default",
-		["Handrmandr - Golemagg"] = "Default",
-		["Vermina - Golemagg"] = "Default",
-		["Pitchwise - Golemagg"] = "Pitchwise - Golemagg",
-		["Elohssa - Stonespine"] = "Elohssa - Stonespine",
-		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
-		["Paydo - Dreadmist"] = "Paydo - Dreadmist",
-		["Mxys - Golemagg"] = "Default",
-		["Whatevs - Stonespine"] = "Default",
-		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
-		["Tudum - Jin'do"] = "Tudum - Jin'do",
-		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
-		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
-		["Mxyzptlk - Golemagg"] = "Default",
-		["Mxzq - Golemagg"] = "Default",
-		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
-		["Vermins - Stonespine"] = "Default",
-		["Battlearm - Golemagg"] = "Default",
-		["Dmitar - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
-		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
-		["Testxv - Golemagg"] = "Testxv - Golemagg",
-		["Jaroslav - Golemagg"] = "Default",
-		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
-		["Poklopac - Mirage Raceway"] = "Poklopac - Mirage Raceway",
-		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
-		["Moolatz - Golemagg"] = "Default",
-		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
-		["Miqa - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {
@@ -832,11 +832,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["minimapPos"] = 35.6918309653034,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -846,12 +841,13 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
-		},
-		["Verminz - Golemagg"] = {
 			["minimap"] = {
 				["shown"] = false,
+				["minimapPos"] = 35.6918309653034,
 				["hide"] = true,
 			},
+		},
+		["Verminz - Golemagg"] = {
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -861,13 +857,12 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
-		},
-		["Greshnik - Dreadnaught"] = {
 			["minimap"] = {
-				["minimapPos"] = 169.4891806500867,
 				["shown"] = false,
 				["hide"] = true,
 			},
+		},
+		["Greshnik - Dreadnaught"] = {
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -876,6 +871,11 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["minimapPos"] = 169.4891806500867,
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Battitude - Golemagg"] = {
@@ -901,10 +901,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Poklopac - Dreadnaught"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -921,6 +917,10 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 		},
 		["Mxym - Golemagg"] = {
 			["GUI"] = {
@@ -934,16 +934,16 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Tudum - Ashbringer"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
 					"AhnKahet", -- [2]
 					[5] = 0,
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Augustin - Golemagg"] = {
@@ -985,6 +985,10 @@ AtlasLootClassicDB = {
 		["Whatevs - Stonespine"] = {
 		},
 		["Handrmandr - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -992,12 +996,12 @@ AtlasLootClassicDB = {
 					[5] = 0,
 				},
 			},
+		},
+		["Vermina - Golemagg"] = {
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
 			},
-		},
-		["Vermina - Golemagg"] = {
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -1007,12 +1011,8 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 		},
-		["Tudum - Jin'do"] = {
+		["Miqa - Golemagg"] = {
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -1030,11 +1030,6 @@ AtlasLootClassicDB = {
 		["Elohssa - Stonespine"] = {
 		},
 		["Nitwit - Dreadnaught"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["minimapPos"] = 257.3785370538875,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -1044,10 +1039,49 @@ AtlasLootClassicDB = {
 					64.74999237060547, -- [5]
 				},
 			},
+			["minimap"] = {
+				["shown"] = false,
+				["minimapPos"] = 257.3785370538875,
+				["hide"] = true,
+			},
 		},
-		["Tandaram - Jin'do"] = {
+		["Vermin - Golemagg"] = {
+			["showCompanionLearnedInfo"] = false,
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["Addons"] = {
+				["Favourites"] = {
+					["showListInTT"] = false,
+				},
+			},
+			["Tooltip"] = {
+				["useGameTooltip"] = false,
+			},
+			["GUI"] = {
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					-324.396728515625, -- [4]
+					140.6667633056641, -- [5]
+				},
+				["selected"] = {
+					nil, -- [1]
+					"ObsidianSanctum", -- [2]
+					2, -- [3]
+					9, -- [4]
+					0, -- [5]
+				},
+			},
+			["showItemLvlInTT"] = false,
 		},
 		["Paydo - Dreadmist"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -1064,10 +1098,6 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 		},
 		["Mxys - Golemagg"] = {
 			["minimap"] = {
@@ -1075,24 +1105,7 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Pitchwise - Dreadnaught"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
-			["GUI"] = {
-				["selected"] = {
-					nil, -- [1]
-					"ShadowfangKeep", -- [2]
-					12, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-			},
-		},
-		["Kaonac - Jin'do"] = {
-		},
-		["Greenwise - Golemagg"] = {
+		["Moolatz - Golemagg"] = {
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -1105,6 +1118,23 @@ AtlasLootClassicDB = {
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
+			},
+		},
+		["Kaonac - Jin'do"] = {
+		},
+		["Konac - Dreadnaught"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"RazorfenDowns", -- [2]
+					6, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
 			},
 		},
 		["Mxzq - Golemagg"] = {
@@ -1113,15 +1143,40 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Poklopac - Mirage Raceway"] = {
+		["Default"] = {
+			["GUI"] = {
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					-223.1707611083984, -- [4]
+					100.1385955810547, -- [5]
+				},
+				["selected"] = {
+					nil, -- [1]
+					"TheCullingOfStratholme", -- [2]
+					nil, -- [3]
+					9, -- [4]
+					0, -- [5]
+				},
+			},
+			["Addons"] = {
+				["Favourites"] = {
+					["lists"] = {
+						["ProfileBase"] = {
+							["mainItems"] = {
+								[8] = true,
+							},
+						},
+					},
+				},
+			},
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
 			},
 		},
-		["Battlearm - Jin'do"] = {
-		},
-		["Moolatz - Dreadnaught"] = {
+		["Klhjakhsgdjh - Golemagg"] = {
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
@@ -1136,11 +1191,43 @@ AtlasLootClassicDB = {
 				},
 			},
 		},
-		["Battlearm - Golemagg"] = {
+		["Moolatz - Dreadnaught"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+		},
+		["Kosturko - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
 		},
 		["Vermins - Stonespine"] = {
 		},
 		["Korupcija - Stonespine"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -1149,10 +1236,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Battlearm - Hydraxian Waterlords"] = {
@@ -1175,10 +1258,6 @@ AtlasLootClassicDB = {
 					156.011474609375, -- [5]
 				},
 			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["Addons"] = {
 				["Favourites"] = {
 					["lists"] = {
@@ -1189,6 +1268,10 @@ AtlasLootClassicDB = {
 						},
 					},
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Testxv - Golemagg"] = {
@@ -1199,69 +1282,16 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Kosturko - Golemagg"] = {
-			["GUI"] = {
-				["selected"] = {
-					nil, -- [1]
-					"Ragefire", -- [2]
-					nil, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
+		["Battlearm - Golemagg"] = {
 		},
 		["Jaroslav - Golemagg"] = {
 		},
-		["Klhjakhsgdjh - Golemagg"] = {
-			["GUI"] = {
-				["selected"] = {
-					nil, -- [1]
-					"Ragefire", -- [2]
-					nil, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
+		["Battlearm - Jin'do"] = {
 		},
-		["Default"] = {
+		["Poklopac - Mirage Raceway"] = {
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
-			},
-			["Addons"] = {
-				["Favourites"] = {
-					["lists"] = {
-						["ProfileBase"] = {
-							["mainItems"] = {
-								[8] = true,
-							},
-						},
-					},
-				},
-			},
-			["GUI"] = {
-				["point"] = {
-					nil, -- [1]
-					nil, -- [2]
-					"CENTER", -- [3]
-					-223.1707611083984, -- [4]
-					100.1385955810547, -- [5]
-				},
-				["selected"] = {
-					nil, -- [1]
-					"TheCullingOfStratholme", -- [2]
-					nil, -- [3]
-					9, -- [4]
-					0, -- [5]
-				},
 			},
 		},
 		["Judawise - Golemagg"] = {
@@ -1270,22 +1300,7 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Konac - Dreadnaught"] = {
-			["GUI"] = {
-				["selected"] = {
-					nil, -- [1]
-					"RazorfenDowns", -- [2]
-					6, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
-		},
-		["Moolatz - Golemagg"] = {
+		["Greenwise - Golemagg"] = {
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
@@ -1300,39 +1315,24 @@ AtlasLootClassicDB = {
 				},
 			},
 		},
-		["Vermin - Golemagg"] = {
+		["Pitchwise - Dreadnaught"] = {
 			["GUI"] = {
-				["point"] = {
-					nil, -- [1]
-					nil, -- [2]
-					"CENTER", -- [3]
-					-324.396728515625, -- [4]
-					140.6667633056641, -- [5]
-				},
 				["selected"] = {
 					nil, -- [1]
-					"NaxxramasWrath", -- [2]
-					15, -- [3]
-					9, -- [4]
+					"ShadowfangKeep", -- [2]
+					12, -- [3]
+					1, -- [4]
 					0, -- [5]
 				},
 			},
-			["showCompanionLearnedInfo"] = false,
-			["Addons"] = {
-				["Favourites"] = {
-					["showListInTT"] = false,
-				},
-			},
-			["Tooltip"] = {
-				["useGameTooltip"] = false,
-			},
-			["showItemLvlInTT"] = false,
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
 			},
 		},
-		["Miqa - Golemagg"] = {
+		["Tandaram - Jin'do"] = {
+		},
+		["Tudum - Jin'do"] = {
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]

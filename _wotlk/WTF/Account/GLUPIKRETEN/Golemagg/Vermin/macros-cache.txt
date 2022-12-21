@@ -11,6 +11,7 @@ VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 #showtooltip
+/use Blood Fury
 /use 10
 /use 13
 /use 14
@@ -24,6 +25,7 @@ END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
+/cast [nostance:3,combat]Berserker Stance
 /cast [spec:1]Mortal Strike;[spec:2]Bloodthirst
 /cast Bloodrage
 END
