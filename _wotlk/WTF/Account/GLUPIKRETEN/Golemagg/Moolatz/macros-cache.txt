@@ -60,7 +60,7 @@ VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,help,nodead][help][] Growl
+/cast [@mouseover,help,nodead][] Growl
 END
 VER 3 0000000001000015 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -69,7 +69,7 @@ END
 VER 3 0000000001000016 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
-/cast [@mouseover,exists,nodead][help][] Faerie Fire (Feral)
+/cast [@mouseover,exists,nodead][] Faerie Fire (Feral)
 END
 VER 3 0000000001000017 " " "INV_MISC_QUESTIONMARK"
 #showtooltip

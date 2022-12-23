@@ -37,6 +37,7 @@ local private = {
 	professionsKeys = {},
 	showDelayFrame = 0,
 	filterText = "",
+	dialogFilterText = "",
 	haveSkillUp = false,
 	haveMaterials = false,
 	professionFrame = nil,
@@ -146,12 +147,11 @@ function private.GetCraftingFrame()
 			:SetRightChild(UIElements.New("Frame", "right")
 				:SetLayout("VERTICAL")
 				:SetMargin(2, 0, 0, 0)
-				:AddChild(UIElements.New("GroupSelector", "restock")
+				:AddChild(UIElements.New("ActionButton", "restockDialog")
 					:SetMargin(0, 0, 0, 4)
-					:SetDialogInfo(364, 386, L["Restock Groups"], L["Restock Selected Groups"])
 					:SetHeight(24)
 					:SetText(L["Restock Groups"])
-					:SetScript("OnSelectionChanged", private.RestockOnSelectionChanged)
+					:SetScript("OnClick", private.RestockShowDialog)
 				)
 				:AddChild(UIElements.New("Frame", "queue")
 					:SetLayout("VERTICAL")
@@ -467,13 +467,165 @@ function private.RecipeListOnSelectionChanged(list)
 	private.fsm:ProcessEvent("EV_RECIPE_SELECTION_CHANGED")
 end
 
-function private.RestockOnSelectionChanged(groupSelector)
+function private.RestockShowDialog(groupTree)
+	groupTree:GetBaseElement():ShowDialogFrame(UIElements.New("Frame", "frame", "DIALOG")
+		:SetLayout("VERTICAL")
+		:SetSize(540, 420)
+		:SetPadding(8)
+		:AddAnchor("CENTER")
+		:SetBackgroundColor("FRAME_BG", true)
+		:SetMouseEnabled(true)
+		:AddChild(UIElements.New("Frame", "header")
+			:SetLayout("HORIZONTAL")
+			:SetHeight(24)
+			:SetMargin(0, 0, 0, 8)
+			:AddChild(UIElements.New("Text", "title")
+				:SetMargin(32, 8, 0, 0)
+				:SetFont("BODY_BODY1_BOLD")
+				:SetJustifyH("CENTER")
+				:SetText(L["Restock TSM Groups"])
+			)
+			:AddChild(UIElements.New("Button", "closeBtn")
+				:SetBackgroundAndSize("iconPack.24x24/Close/Default")
+				:SetScript("OnClick", private.DialogCloseBtnOnClick)
+			)
+		)
+		:AddChild(UIElements.New("Frame", "container")
+			:SetLayout("VERTICAL")
+			:SetPadding(2)
+			:SetBackgroundColor("PRIMARY_BG")
+			:SetBorderColor("ACTIVE_BG")
+			:AddChild(UIElements.New("Frame", "header")
+				:SetLayout("HORIZONTAL")
+				:SetHeight(24)
+				:SetMargin(8)
+				:AddChild(UIElements.New("Input", "input")
+					:AllowItemInsert(true)
+					:SetIconTexture("iconPack.18x18/Search")
+					:SetClearButtonEnabled(true)
+					:SetHintText(L["Search Groups"])
+					:SetScript("OnValueChanged", private.DialogFilterOnValueChanged)
+				)
+				:AddChild(UIElements.New("Button", "expandAllBtn")
+					:SetSize(24, 24)
+					:SetMargin(8, 0, 0, 0)
+					:SetBackground("iconPack.18x18/Expand All")
+					:SetScript("OnClick", private.ExpandAllGroupsOnClick)
+					:SetTooltip(L["Expand / Collapse All Groups"])
+				)
+				:AddChild(UIElements.New("Button", "selectAllBtn")
+					:SetSize(24, 24)
+					:SetMargin(8, 0, 0, 0)
+					:SetBackground("iconPack.18x18/Select All")
+					:SetScript("OnClick", private.SelectAllGroupsOnClick)
+					:SetTooltip(L["Select / Deselect All Groups"])
+				)
+			)
+			:AddChild(UIElements.New("ApplicationGroupTree", "groupTree")
+				:SetSettingsContext(private.settings, "groupTree")
+				:SetQuery(TSM.Groups.CreateQuery(), "Crafting")
+				:SetSearchString(private.dialogFilterText)
+				:SetScript("OnGroupSelectionChanged", private.GroupTreeOnGroupSelectionChanged)
+			)
+		)
+		:AddChild(UIElements.New("Frame", "footer")
+			:SetLayout("HORIZONTAL")
+			:SetHeight(26)
+			:SetBackgroundColor("PRIMARY_BG")
+			:AddChild(UIElements.New("Spacer", "spacer"))
+			:AddChild(UIElements.New("Text", "groupsText")
+				:SetFont("BODY_BODY2_MEDIUM")
+				:SetJustifyH("RIGHT")
+				:SetText(format(L["%d Groups Selected"], 0))
+			)
+			:AddChild(UIElements.New("Texture", "vline")
+				:SetWidth(1)
+				:SetMargin(8, 8, 2, 2)
+				:SetColor("ACTIVE_BG_ALT")
+			)
+			:AddChild(UIElements.New("Text", "itemsText")
+				:SetWidth("AUTO")
+				:SetMargin(0, 8, 0, 0)
+				:SetFont("BODY_BODY2_MEDIUM")
+				:SetJustifyH("RIGHT")
+				:SetText(L["Total Items"]..": ".."0")
+			)
+		)
+		:AddChild(UIElements.New("ActionButton", "restockBtn")
+			:SetHeight(24)
+			:SetMargin(0, 0, 8, 0)
+			:SetText(L["Restock Groups"])
+			:SetScript("OnClick", private.RestockGroupsOnClick)
+		)
+		:SetScript("OnUpdate", private.DialogFrameOnUpdate)
+	)
+end
+
+function private.DialogFrameOnUpdate(frame)
+	frame:SetScript("OnUpdate", nil)
+	private.DialogFilterOnValueChanged(frame:GetElement("container.header.input"))
+	private.GroupTreeOnGroupSelectionChanged(frame:GetElement("container.groupTree"))
+end
+
+function private.DialogCloseBtnOnClick(button)
+	button:GetBaseElement():HideDialog()
+end
+
+function private.DialogFilterOnValueChanged(input)
+	local text = strlower(input:GetValue())
+	if text == private.dialogFilterText then
+		return
+	end
+	private.dialogFilterText = text
+
+	input:GetElement("__parent.__parent.groupTree")
+		:SetSearchString(private.dialogFilterText)
+		:Draw()
+end
+
+function private.ExpandAllGroupsOnClick(button)
+	button:GetElement("__parent.__parent.groupTree")
+		:ToggleExpandAll()
+end
+
+function private.SelectAllGroupsOnClick(button)
+	button:GetElement("__parent.__parent.groupTree")
+		:ToggleSelectAll()
+end
+
+function private.GroupTreeOnGroupSelectionChanged(groupTree)
+	groupTree:GetElement("__parent.__parent.restockBtn")
+		:SetDisabled(groupTree:IsSelectionCleared())
+		:Draw()
+
+	local numGroups, numItems = 0, 0
+	for _, groupPath in groupTree:SelectedGroupsIterator() do
+		numGroups = numGroups + 1
+		if groupPath == TSM.CONST.ROOT_GROUP_PATH then
+			-- TODO
+		else
+			for _ in TSM.Groups.ItemIterator(groupPath) do
+				numItems = numItems + 1
+			end
+		end
+	end
+	groupTree:GetElement("__parent.__parent.footer.groupsText")
+		:SetText(format(L["%d Groups Selected"], numGroups))
+	groupTree:GetElement("__parent.__parent.footer.itemsText")
+		:SetText(L["Total Items"]..": "..numItems)
+
+	groupTree:GetElement("__parent.__parent.footer")
+		:Draw()
+end
+
+function private.RestockGroupsOnClick(button)
 	local groups = TempTable.Acquire()
-	for groupPath in groupSelector:SelectedGroupIterator() do
+	for _, groupPath in button:GetElement("__parent.container.groupTree"):SelectedGroupsIterator() do
 		tinsert(groups, groupPath)
 	end
 	TSM.Crafting.Queue.RestockGroups(groups)
 	TempTable.Release(groups)
+	button:GetBaseElement():HideDialog()
 end
 
 function private.RecipeListOnRowClick(list, data, mouseButton)
@@ -1433,7 +1585,6 @@ function private.FSMCreate()
 		)
 		:AddState(FSM.NewState("ST_FRAME_OPEN_NO_PROFESSION")
 			:SetOnEnter(function(context)
-				context.frame:GetBaseElement():HideDialog()
 				context.recipeString = nil
 				context.craftingQuantity = nil
 				context.craftingType = nil

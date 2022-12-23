@@ -45,10 +45,10 @@ LBISSettings = {
 		["PreRaid"] = true,
 	},
 	["ShowPriority"] = true,
-	["ShowCustom"] = false,
-	["SelectedSourceType"] = "All",
 	["PriorityList"] = {
 	},
-	["SelectedSlot"] = "Back",
-	["SelectedPhase"] = "BIS",
+	["SelectedSourceType"] = "All",
+	["SelectedSlot"] = "Ranged/Relic",
+	["ShowCustom"] = false,
+	["SelectedPhase"] = "All",
 }
