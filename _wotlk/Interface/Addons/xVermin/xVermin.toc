@@ -35,6 +35,7 @@ Addons/AdiBags.lua
 Addons/BISTooltip.lua
 Addons/ChocolateBar.lua
 Addons/ECS.lua
+Addons/GDKP.lua
 Addons/ItemRack.lua
 Addons/LFG.lua
 Addons/Minimap.lua
