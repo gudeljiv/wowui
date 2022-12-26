@@ -8,7 +8,7 @@ VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,exists,nodead][help][] Healing Touch(Rank 1)
+/cast [@mouseover,exists,nodead][help][] Nourish
 END
 VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip

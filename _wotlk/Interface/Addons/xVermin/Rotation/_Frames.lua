@@ -101,22 +101,6 @@ f:SetFrameStrata('TOOLTIP')
 f:SetWidth(3)
 f:SetHeight(35)
 f:ClearAllPoints()
-
-xVermin.CheckIfLoadedWithTimer(
-	'PlayerFrame',
-	function()
-		f:SetPoint('LEFT', PlayerFrame, 'RIGHT', 0, 6)
-	end
-)
-xVermin.CheckIfLoadedWithTimer(
-	'SUFUnitplayer',
-	function()
-		f:SetPoint('LEFT', SUFUnitplayer, 'RIGHT', 0, 0)
-	end,
-	1,
-	60
-)
-
 f:SetFrameStrata('BACKGROUND')
 f:SetBackdrop(
 	{
@@ -129,3 +113,6 @@ f:SetBackdrop(
 	}
 )
 f:SetBackdropColor(1, 0, 0, 0.9)
+
+-- f:SetPoint('LEFT', PlayerFrame, 'RIGHT', 0, 6)
+f:SetPoint('CENTER', UIParent, 'CENTER', -135, -90)

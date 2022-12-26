@@ -1,4 +1,4 @@
-LBIS.ReCacheDate = time({year=2022, month=12, day=10, hour=22})
+LBIS.ReCacheDate = time({year=2022, month=12, day=22, hour=22})
 
 function LBIS:PreCacheItems()
     if LBIS.AllItemsCached then return LBIS.AllItemsCached; end
@@ -22,11 +22,11 @@ function LBIS:PreCacheItems()
             local itemCount = 1;
             for _, itemId in pairs(LBISServerSettings.CustomList[prioSpec][prioSlot]) do                
 
-                if LBIS.CustomList.Items[itemId] == nil then
-                    LBIS.CustomList.Items[itemId] = {};
+                if LBIS.CustomEditList.Items[itemId] == nil then
+                    LBIS.CustomEditList.Items[itemId] = {};
                 end
 
-                LBIS.CustomList.Items[itemId][prioSpec] = itemCount;
+                LBIS.CustomEditList.Items[itemId][prioSpec] = itemCount;
                 itemCount = itemCount + 1;
             end
         end
@@ -76,35 +76,35 @@ function LBIS:TableLength(T)
 end
 
 local itemSlots = {};
-itemSlots["INVTYPE_NON_EQUIP"] = "None";
-itemSlots["INVTYPE_HEAD"] = "Head";
-itemSlots["INVTYPE_NECK"] = "Neck";
-itemSlots["INVTYPE_SHOULDER"] = "Shoulder";
-itemSlots["INVTYPE_BODY"] = "Shirt";
-itemSlots["INVTYPE_CHEST"] = "Chest";
-itemSlots["INVTYPE_WAIST"] = "Waist";
-itemSlots["INVTYPE_LEGS"] = "Legs";
-itemSlots["INVTYPE_FEET"] = "Feet";
-itemSlots["INVTYPE_WRIST"] = "Wrist";
-itemSlots["INVTYPE_HAND"] = "Hands";
-itemSlots["INVTYPE_FINGER"] = "Ring";
-itemSlots["INVTYPE_TRINKET"] = "Trinket";
-itemSlots["INVTYPE_WEAPON"] = "One Hand";
-itemSlots["INVTYPE_SHIELD"] = "One Hand";
-itemSlots["INVTYPE_RANGED"] = "Ranged/Relic";
-itemSlots["INVTYPE_CLOAK"] = "Back";
-itemSlots["INVTYPE_2HWEAPON"] = "Two Hand";
-itemSlots["INVTYPE_BAG"] = "Bag";
-itemSlots["INVTYPE_TABARD"] = "Tabard";
-itemSlots["INVTYPE_ROBE"] = "Chest";
-itemSlots["INVTYPE_WEAPONMAINHAND"] = "One Hand";
-itemSlots["INVTYPE_WEAPONOFFHAND"] = "One Hand";
-itemSlots["INVTYPE_HOLDABLE"] = "Ranged/Relic";
-itemSlots["INVTYPE_AMMO"] = "Ammo";
-itemSlots["INVTYPE_THROWN"] = "Ranged/Relic";
-itemSlots["INVTYPE_RANGEDRIGHT"] = "Ranged/Relic";
-itemSlots["INVTYPE_QUIVER"] = "Quiver";
-itemSlots["INVTYPE_RELIC"] = "Ranged/Relic";
+itemSlots["INVTYPE_NON_EQUIP"] = LBIS.L["None"];
+itemSlots["INVTYPE_HEAD"] = LBIS.L["Head"];
+itemSlots["INVTYPE_NECK"] = LBIS.L["Neck"];
+itemSlots["INVTYPE_SHOULDER"] = LBIS.L["Shoulder"];
+itemSlots["INVTYPE_BODY"] = LBIS.L["Shirt"];
+itemSlots["INVTYPE_CHEST"] = LBIS.L["Chest"];
+itemSlots["INVTYPE_WAIST"] = LBIS.L["Waist"];
+itemSlots["INVTYPE_LEGS"] = LBIS.L["Legs"];
+itemSlots["INVTYPE_FEET"] = LBIS.L["Feet"];
+itemSlots["INVTYPE_WRIST"] = LBIS.L["Wrist"];
+itemSlots["INVTYPE_HAND"] = LBIS.L["Hands"];
+itemSlots["INVTYPE_FINGER"] = LBIS.L["Ring"];
+itemSlots["INVTYPE_TRINKET"] = LBIS.L["Trinket"];
+itemSlots["INVTYPE_WEAPON"] = LBIS.L["Main Hand"].."/"..LBIS.L["Off Hand"];
+itemSlots["INVTYPE_SHIELD"] = LBIS.L["Off Hand"];
+itemSlots["INVTYPE_RANGED"] = LBIS.L["Ranged/Relic"];
+itemSlots["INVTYPE_CLOAK"] = LBIS.L["Back"];
+itemSlots["INVTYPE_2HWEAPON"] = LBIS.L["Two Hand"];
+itemSlots["INVTYPE_BAG"] = LBIS.L["Bag"];
+itemSlots["INVTYPE_TABARD"] = LBIS.L["Tabard"];
+itemSlots["INVTYPE_ROBE"] = LBIS.L["Chest"];
+itemSlots["INVTYPE_WEAPONMAINHAND"] = LBIS.L["Main Hand"];
+itemSlots["INVTYPE_WEAPONOFFHAND"] = LBIS.L["Off Hand"];
+itemSlots["INVTYPE_HOLDABLE"] = LBIS.L["Off Hand"];
+itemSlots["INVTYPE_AMMO"] = LBIS.L["Ammo"];
+itemSlots["INVTYPE_THROWN"] = LBIS.L["Ranged/Relic"];
+itemSlots["INVTYPE_RANGEDRIGHT"] = LBIS.L["Ranged/Relic"];
+itemSlots["INVTYPE_QUIVER"] = LBIS.L["Quiver"];
+itemSlots["INVTYPE_RELIC"] = LBIS.L["Ranged/Relic"];
 function LBIS:GetItemInfo(itemId, returnFunc)
 
     if not itemId or itemId <= 0 then
@@ -219,17 +219,20 @@ function LBIS:CreateDropdown(opts, width)
 end
 
 local itemIsOnEnter = false;
-
-
-function LBIS:UpdateTooltipOnButton(b, item)
-    b.ItemId = item.Id;
-    b.ItemLink = item.Link;
-end
-
 function LBIS:SetTooltipOnButton(b, item, isSpell)
     
     b.ItemId = item.Id;
     b.ItemLink = item.Link;
+
+    b.ShowTooltip = function ()
+        GameTooltip:SetOwner(b, "ANCHOR_RIGHT");
+        GameTooltip:SetItemByID(b.ItemId);
+        GameTooltip:Show();
+    end
+
+    b.HideTooltip = function ()
+        GameTooltip:Hide();
+    end
 
     b:SetScript("OnClick", 
         function(self, button)
@@ -252,17 +255,17 @@ function LBIS:SetTooltipOnButton(b, item, isSpell)
                 GameTooltip:SetSpellByID(b.ItemId);
             end
             GameTooltip:Show();
-            itemIsOnEnter = true;
+            itemIsOnEnter = GameTooltip;
                 
             if IsShiftKeyDown() and itemIsOnEnter then
-                GameTooltip_ShowCompareItem(tooltip)
+                GameTooltip_ShowCompareItem(GameTooltip)
             end
         end
     );
 
     b:SetScript("OnLeave", 
         function(self)
-            itemIsOnEnter = false;
+            itemIsOnEnter = nil;
             GameTooltip:SetOwner(UIParent, "ANCHOR_NONE");
             GameTooltip:Hide();
         end
@@ -270,12 +273,14 @@ function LBIS:SetTooltipOnButton(b, item, isSpell)
 end
 
 function LBIS:RegisterTooltip()
-	LBIS:RegisterEvent("MODIFIER_STATE_CHANGED", function()
-        if IsShiftKeyDown() and itemIsOnEnter then
-            GameTooltip_ShowCompareItem()
-        else
-            ShoppingTooltip1:Hide()
-            ShoppingTooltip2:Hide()
+    LBIS:RegisterEvent("MODIFIER_STATE_CHANGED", function(key, down)
+        if itemIsOnEnter then
+            if IsShiftKeyDown() then
+                GameTooltip_ShowCompareItem(itemIsOnEnter)
+            else
+                ShoppingTooltip1:Hide()
+                ShoppingTooltip2:Hide()
+            end
         end
     end);
 end
@@ -287,7 +292,7 @@ function LBIS:spairs(t, order)
 
     if t ~= nil then
         for k in pairs(t) do keys[#keys+1] = k end
-
+        
         -- if order function given, sort by it by passing the table and keys a, b,
         -- otherwise just sort the keys 
         if order then

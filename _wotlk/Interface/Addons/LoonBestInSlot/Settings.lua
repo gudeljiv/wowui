@@ -3,6 +3,7 @@ LBISSettingsDefault =
 	SelectedSpec = "", 
 	SelectedSlot = LBIS.L["All"], 
 	SelectedPhase = LBIS.L["All"], 
+	SelectedRank = LBIS.L["All"], 
 	SelectedSourceType = LBIS.L["All"], 
 	SelectedZone = LBIS.L["All"], 
 	SelectedZoneNumber = LBIS.L["All"],
@@ -482,8 +483,8 @@ local lbis_options = {
 		},
 		show = {
 			type = "toggle",
-			name = "*BETA*:"..LBIS.L["Show Custom"],
-			desc = "*BETA*:"..LBIS.L["Show Custom"],
+			name = LBIS.L["Show Custom"],
+			desc = LBIS.L["Show Custom"],
 			get = function(info) return LBISSettings.ShowCustom end,
 			set = function(info, val) LBISSettings.ShowCustom = val end,
 			width = 1.1,

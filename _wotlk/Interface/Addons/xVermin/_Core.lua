@@ -170,7 +170,7 @@ xVermin.CheckIfLoadedWithTimer = function(condition, callback, timer, waittime)
 				c = c or _G[v]
 			end
 
-			if (c) then
+			if c then
 				callback()
 				self:Cancel()
 			end

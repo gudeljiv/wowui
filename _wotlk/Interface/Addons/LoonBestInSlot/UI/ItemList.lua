@@ -18,8 +18,9 @@ itemSlotOrder[LBIS.L["Ring"]] = 10;
 itemSlotOrder[LBIS.L["Trinket"]] = 11;
 itemSlotOrder[LBIS.L["Main Hand"]] = 12;
 itemSlotOrder[LBIS.L["Off Hand"]] = 13;
-itemSlotOrder[LBIS.L["Two Hand"]] = 14;
-itemSlotOrder[LBIS.L["Ranged/Relic"]] = 15;
+itemSlotOrder[LBIS.L["Main Hand/Off Hand"]] = 14;
+itemSlotOrder[LBIS.L["Two Hand"]] = 15;
+itemSlotOrder[LBIS.L["Ranged/Relic"]] = 16;
 
 local function itemSortFunction(table, k1, k2)
 
@@ -33,7 +34,7 @@ local function itemSortFunction(table, k1, k2)
         item1Score = item1Score + 1000;
     end
     if itemSlotOrder[item1.Slot] > itemSlotOrder[item2.Slot] then
-        item2Score = item2Score +  1000;
+        item2Score = item2Score + 1000;
     end
 
     if string.find(item1.Bis, "BIS") ~= nil then
@@ -54,43 +55,6 @@ local function itemSortFunction(table, k1, k2)
     else
         return item1Score > item2Score
     end
-end
-
-local alSources = {};
-alSources["honor"] = LBIS.L["Honor Points"];
-alSources["honorA"] = LBIS.L["Honor Points"];
-alSources["honorH"] = LBIS.L["Honor Points"];
-alSources["BoJ"] = LBIS.L["Badges of Justice"];
-alSources["SpiritShard"] = LBIS.L["Spirit Shards"];
-alSources["pvpArathi"] = LBIS.L["Arathi Basin Marks"];
-alSources["pvpWarsong"] = LBIS.L["Warsong Gulch Marks"];
-alSources["pvpAlterac"] = LBIS.L["Alterac Vally Marks"];
-alSources["pvpEye"] = LBIS.L["Eye of the Storm Marks"];
-alSources["arena"] = LBIS.L["Arena Points"];
-alSources["EmblemOfValor"] = LBIS.L["Emblem of Valor"];
-alSources["EmblemOfHeroism"] = LBIS.L["Emblem of Heroism"];
-
-local function getVendorText(vendorText, sourceLocationText)
-    local sourceText;
-    local source1, source1Amount, source2, source2Amount, source3, source3Amount = strsplit(":", vendorText)
-
-    if source1 ~= nil and source1 ~= "" and alSources[source1] ~= nil then
-        sourceText = alSources[source1].." ("..source1Amount..")"
-        sourceNumberText = "";
-    end
-
-    if source2 ~= nil and source2 ~= "" and alSources[source2] ~= nil then
-        sourceText = sourceText..", "..alSources[source2].." ("..source2Amount..")"
-    end
-
-    if source3 ~= nil and source3 ~= "" and alSources[source3] ~= nil then
-        sourceText = sourceText..", "..alSources[source3].." ("..source3Amount..")"
-    end	
-	
-    if sourceLocationText ~= "" then
-        sourceText = sourceText.." - "..sourceLocationText;    
-    end
-    return sourceText;
 end
 
 local function printSource(itemId, specItemSource, dl)
@@ -141,7 +105,7 @@ end
 local function IsInSlot(specItem)
     if LBISSettings.SelectedSlot == LBIS.L["All"] then
         return true;
-    elseif LBISSettings.SelectedSlot == specItem.Slot then
+    elseif strfind(specItem.Slot, LBISSettings.SelectedSlot) ~= nil then
         return true;
     end
     return false;
@@ -363,6 +327,7 @@ function LBIS.ItemList:UpdateItems()
     
     LBIS.BrowserWindow.Window.SlotDropDown:Show();
     LBIS.BrowserWindow.Window.PhaseDropDown:Show();
+    LBIS.BrowserWindow.Window.RankDropDown:Hide();
     LBIS.BrowserWindow.Window.SourceDropDown:Show();
     LBIS.BrowserWindow.Window.RaidDropDown:Show();
 
@@ -371,7 +336,7 @@ function LBIS.ItemList:UpdateItems()
         local specItems = LBIS.SpecItems[LBIS.SpecToName[LBISSettings.SelectedSpec]];
         
         if specItems == nil then
-            LBIS.BrowserWindow.Window.Unavailable:Show();
+            LBIS.BrowserWindow.Window.ShowUnavailable();
         end
 
         for itemId, specItem in LBIS:spairs(specItems, itemSortFunction) do

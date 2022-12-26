@@ -88,6 +88,7 @@ LBIS:AddItem(spec, "37850", LBIS.L["Waist"], "Alt") --Flowing Sash of Order
 LBIS:AddItem(spec, "44309", LBIS.L["Waist"], "Alt") --Sash of Jordan
 LBIS:AddItem(spec, "44302", LBIS.L["Waist"], "Alt") --Belt of Dark Mending
 LBIS:AddItem(spec, "34541", LBIS.L["Waist"], "Alt") --Belt of the Malefic
+LBIS:AddItem(spec, "34853", LBIS.L["Waist"], "Alt") --Belt of the Forgotten Conqueror
 LBIS:AddItem(spec, "40697", LBIS.L["Waist"], "Alt") --Elegant Temple Gardens' Girdle
 
 LBIS:AddItem(spec, "34386", LBIS.L["Legs"], "BIS") --Pantaloons of Growing Strife
