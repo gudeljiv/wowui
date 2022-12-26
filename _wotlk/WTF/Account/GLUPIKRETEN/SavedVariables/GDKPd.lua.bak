@@ -21,14 +21,14 @@ GDKPd_DB = {
 		},
 		["Battlearm - Golemagg"] = {
 			["movable"] = false,
-			["appearScale"] = 1.2,
+			["showAuctionDurationTimerText"] = true,
 			["point"] = {
 				["y"] = -196.5608367919922,
 				["relative"] = "TOPRIGHT",
 				["point"] = "TOPRIGHT",
 				["x"] = -401.7457580566406,
 			},
-			["showAuctionDurationTimerText"] = true,
+			["appearScale"] = 1.2,
 		},
 		["Moolatz - Golemagg"] = {
 			["movable"] = false,

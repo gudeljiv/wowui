@@ -45,10 +45,10 @@ LBISSettings = {
 		["Phase 1"] = true,
 	},
 	["ShowPriority"] = true,
+	["SelectedSlot"] = "Trinket",
+	["SelectedSourceType"] = "All",
+	["ShowCustom"] = false,
 	["PriorityList"] = {
 	},
-	["SelectedSourceType"] = "All",
-	["SelectedSlot"] = "Trinket",
-	["ShowCustom"] = false,
 	["SelectedPhase"] = "All",
 }
