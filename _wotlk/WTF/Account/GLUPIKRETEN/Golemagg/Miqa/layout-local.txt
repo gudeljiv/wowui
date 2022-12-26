@@ -48,3 +48,10 @@ X: 323
 Y: -75
 W: 78
 H: 40
+Frame: GDKPd_Anchor
+FrameLevel: 1
+Anchor: TOPRIGHT
+X: -254
+Y: -261
+W: 300
+H: 60

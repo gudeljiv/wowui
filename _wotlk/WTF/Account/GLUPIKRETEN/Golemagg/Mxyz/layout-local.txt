@@ -139,3 +139,10 @@ X: -27
 Y: 27
 W: 50
 H: 50
+Frame: GDKPd_Anchor
+FrameLevel: 1
+Anchor: TOPRIGHT
+X: -243
+Y: -267
+W: 300
+H: 60

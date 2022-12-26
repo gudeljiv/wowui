@@ -55,7 +55,6 @@ VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtoltip
-/startattack
 /cast [stealth] Pounce; [form:1] Maul; [form:3] Claw; [@mouseover,help,nodead][] Regrowth
 END
 VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"

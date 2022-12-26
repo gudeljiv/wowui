@@ -62,6 +62,13 @@ X: -402
 Y: -197
 W: 300
 H: 60
+Frame: GroupBulletinBoardFrame
+FrameLevel: 1
+Anchor: RIGHT
+X: -202
+Y: 99
+W: 670
+H: 752
 Frame: nTooltip_Anchor
 FrameLevel: 1
 Anchor: BOTTOMRIGHT
@@ -76,13 +83,6 @@ X: -157
 Y: -179
 W: 32
 H: 32
-Frame: GroupBulletinBoardFrame
-FrameLevel: 1
-Anchor: RIGHT
-X: -202
-Y: 99
-W: 670
-H: 752
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM

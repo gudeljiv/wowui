@@ -112,7 +112,9 @@ xVermin.CheckIfLoadedWithTimer(
 	'SUFUnitplayer',
 	function()
 		f:SetPoint('LEFT', SUFUnitplayer, 'RIGHT', 0, 0)
-	end
+	end,
+	1,
+	60
 )
 
 f:SetFrameStrata('BACKGROUND')
