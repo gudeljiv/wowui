@@ -128,6 +128,8 @@ skills["druid"] = [
     {"name": "lacerate", "type": "GetSpellTexture", "id": 33745, "key": "3"},
     {"name": "berserk", "type": "GetSpellTexture", "id": 50334, "key": "r", "modifier": "alt"},
     {"name": "savage roar", "type": "GetSpellTexture", "id": 52610, "key": "e", "modifier": "shift"},
+    {"name": "abolish poison", "type": "GetSpellTexture", "id": 2893, "key": "t"},
+    {"name": "remove curse", "type": "GetSpellTexture", "id": 2782, "key": "t", "modifier": "shift"},
 ]
 
 skills["death knight"] = [

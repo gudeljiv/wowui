@@ -42,6 +42,7 @@ Addons/Minimap.lua
 Addons/nMainBar.lua
 Addons/NugKeyFeedback.lua
 Addons/PallyPower.lua
+Addons/ShadowedUnitFrames.lua
 Addons/Questie.lua
 Addons/RangeDisplay.lua
 Addons/RXPGuide.lua

@@ -7,11 +7,11 @@ AskMrRobotDbClassic = {
 			},
 			["Glyphs"] = {
 				{
-					58367, -- [1]
-					58095, -- [2]
+					58366, -- [1]
+					58098, -- [2]
 					58096, -- [3]
-					58370, -- [4]
-					68164, -- [5]
+					58384, -- [4]
+					58095, -- [5]
 					58357, -- [6]
 				}, -- [1]
 			},
@@ -1748,7 +1748,7 @@ AskMrRobotDbClassic = {
 				[34722] = 37,
 				[43145] = 17,
 				[6657] = 27,
-				[33447] = 53,
+				[40188] = 1,
 				[39764] = 1,
 				[38617] = 1,
 				[37093] = 48,
@@ -1756,8 +1756,8 @@ AskMrRobotDbClassic = {
 				[38303] = 2,
 				[40767] = 1,
 				[39246] = 1,
-				[40188] = 1,
 				[6948] = 1,
+				[33447] = 53,
 				[40678] = 1,
 				[38698] = 4,
 				[40544] = 1,
@@ -1771,274 +1771,274 @@ AskMrRobotDbClassic = {
 			["Equipped"] = {
 				{
 					{
-						["enchantId"] = 3817,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:40528:3817:41398:41432:::::80:::::::::|h[Valorous Dreadnaught Helmet]|h|r",
-						["id"] = 40528,
+						["link"] = "|cffa335ee|Hitem:40546::41380:40034:::::80:::::::::|h[Valorous Dreadnaught Greathelm]|h|r",
+						["id"] = 40546,
 						["gemIds"] = {
-							41398, -- [1]
-							41432, -- [2]
+							41380, -- [1]
+							40034, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
 						["relicBonusIds"] = {
 						},
 					}, -- [1]
 					{
-						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:40065::::::::80:::::::::|h[Fool's Trial]|h|r",
-						["id"] = 40065,
+						["link"] = "|cffa335ee|Hitem:39246::::::::80:::::::::|h[Amulet of Autopsy]|h|r",
+						["id"] = 39246,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
 						["relicBonusIds"] = {
 						},
 					}, -- [2]
 					{
-						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:40530::40037::::::80:::::::::|h[Valorous Dreadnaught Shoulderplates]|h|r",
-						["id"] = 40530,
+						["link"] = "|cffa335ee|Hitem:40548::40034::::::80:::::::::|h[Valorous Dreadnaught Pauldrons]|h|r",
+						["id"] = 40548,
 						["gemIds"] = {
-							40037, -- [1]
+							40034, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
 						["relicBonusIds"] = {
 						},
 					}, -- [3]
 					nil, -- [4]
 					{
-						["enchantId"] = 3252,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:40525:3252:41432:41432:::::80:::::::::|h[Valorous Dreadnaught Battleplate]|h|r",
-						["id"] = 40525,
+						["link"] = "|cffa335ee|Hitem:40544:3297:40008:40034:::::80:::::::::|h[Valorous Dreadnaught Breastplate]|h|r",
+						["id"] = 40544,
 						["gemIds"] = {
-							41432, -- [1]
-							41432, -- [2]
+							40008, -- [1]
+							40034, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["enchantId"] = 3297,
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
 						["relicBonusIds"] = {
 						},
 					}, -- [5]
 					{
-						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:40694::40088:39900:::::80:::::::::|h[Jorach's Crocolisk Skin Belt]|h|r",
-						["id"] = 40694,
+						["link"] = "|cffa335ee|Hitem:40263::40008::::::80:::::::::|h[Fleshless Girdle]|h|r",
+						["id"] = 40263,
 						["gemIds"] = {
-							40088, -- [1]
-							39900, -- [2]
+							40008, -- [1]
+							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
 						["relicBonusIds"] = {
 						},
 					}, -- [6]
 					{
-						["enchantId"] = 3823,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:40529:3823:41432:41432:::::80:::::::::|h[Valorous Dreadnaught Legplates]|h|r",
-						["id"] = 40529,
+						["link"] = "|cffa335ee|Hitem:37193:3326:40034:40015:::::80:::::::::|h[Staggering Legplates]|h|r",
+						["id"] = 37193,
 						["gemIds"] = {
-							41432, -- [1]
-							41432, -- [2]
+							40034, -- [1]
+							40015, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["enchantId"] = 3326,
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
 						["relicBonusIds"] = {
 						},
 					}, -- [7]
 					{
-						["enchantId"] = 3606,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:44306:3606:41432:41432:::::80:::::::::|h[Death-Inured Sabatons]|h|r",
-						["id"] = 44306,
+						["link"] = "|cff0070dd|Hitem:37618::::::::80:::::::::|h[Greaves of Ancient Evil]|h|r",
+						["id"] = 37618,
 						["gemIds"] = {
-							41432, -- [1]
-							41432, -- [2]
+							0, -- [1]
+							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
 						["relicBonusIds"] = {
 						},
 					}, -- [8]
 					{
-						["enchantId"] = 1600,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:40330:1600:41432::::::80:::::::::|h[Bracers of Unrelenting Attack]|h|r",
-						["id"] = 40330,
+						["link"] = "|cffa335ee|Hitem:39764:3850:::::::80:::::::::|h[Bindings of the Hapless Prey]|h|r",
+						["id"] = 39764,
 						["gemIds"] = {
-							41432, -- [1]
+							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["enchantId"] = 3850,
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
 						["relicBonusIds"] = {
 						},
 					}, -- [9]
 					{
-						["enchantId"] = 3604,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:40261:3604:::::::80:::::::::|h[Crude Discolored Battlegrips]|h|r",
-						["id"] = 40261,
+						["link"] = "|cffa335ee|Hitem:40545:3604:40034::::::80:::::::::|h[Valorous Dreadnaught Handguards]|h|r",
+						["id"] = 40545,
 						["gemIds"] = {
-							0, -- [1]
+							40034, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["enchantId"] = 3604,
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
 						["relicBonusIds"] = {
 						},
 					}, -- [10]
 					{
-						["enchantId"] = 3839,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:39401:3839:::::::80:::::::::|h[Circle of Death]|h|r",
-						["id"] = 39401,
+						["link"] = "|cffa335ee|Hitem:40370:3791:::::::80:::::::::|h[Gatekeeper]|h|r",
+						["id"] = 40370,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["enchantId"] = 3791,
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
 						["relicBonusIds"] = {
 						},
 					}, -- [11]
 					{
-						["enchantId"] = 3839,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:40075:3839:::::::80:::::::::|h[Ruthlessness]|h|r",
-						["id"] = 40075,
+						["link"] = "|cff0070dd|Hitem:38617::::::::80:::::::::|h[Woeful Band]|h|r",
+						["id"] = 38617,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
 						["relicBonusIds"] = {
 						},
 					}, -- [12]
 					{
-						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:40684::::::::80:::::::::|h[Mirror of Truth]|h|r",
-						["id"] = 40684,
+						["link"] = "|cff0070dd|Hitem:37220::::::::80:::::::::|h[Essence of Gossamer]|h|r",
+						["id"] = 37220,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
 						["relicBonusIds"] = {
 						},
 					}, -- [13]
 					{
-						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:39257::::::::80:::::::::|h[Loatheb's Shadow]|h|r",
-						["id"] = 39257,
+						["link"] = "|cff0070dd|Hitem:40767::::::::80:::::::::|h[Sonic Booster]|h|r",
+						["id"] = 40767,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
 						["relicBonusIds"] = {
 						},
 					}, -- [14]
 					{
-						["enchantId"] = 3605,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:40250:3605:::::::80:::::::::|h[Aged Winter Cloak]|h|r",
-						["id"] = 40250,
+						["link"] = "|cff0070dd|Hitem:44188::::::::80:::::::::|h[Cloak of Peaceful Resolutions]|h|r",
+						["id"] = 44188,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
 						["relicBonusIds"] = {
 						},
 					}, -- [15]
 					{
-						["enchantId"] = 3828,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:40343:3828:::::::80:::::::::|h[Armageddon]|h|r",
-						["id"] = 40343,
+						["link"] = "|cffa335ee|Hitem:37401:2673:::::::80:::::::::|h[Red Sword of Courage]|h|r",
+						["id"] = 37401,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["enchantId"] = 2673,
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
 						["relicBonusIds"] = {
 						},
 					}, -- [16]
 					{
-						["enchantId"] = 3828,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:37852:3828:::::::80:::::::::|h[Colossal Skull-Clad Cleaver]|h|r",
-						["id"] = 37852,
+						["link"] = "|cffa335ee|Hitem:40475:3849:::::::80:::::::::|h[Barricade of Eternity]|h|r",
+						["id"] = 40475,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["enchantId"] = 3849,
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
 						["relicBonusIds"] = {
 						},
 					}, -- [17]
 					{
-						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:40716::::::::80:::::::::|h[Lillehoff's Winged Blades]|h|r",
-						["id"] = 40716,
+						["link"] = "|cff0070dd|Hitem:43187::::::::80:::::::::|h[Weighted Throwing Axe]|h|r",
+						["id"] = 43187,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
 						["upgradeId"] = 0,
 						["relicBonusIds"] = {
 						},
@@ -3386,8 +3386,8 @@ AskMrRobotDbClassic = {
 				{
 					[7] = {
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["level"] = 0,
+						["suffixId"] = 0,
 						["link"] = "|cff9d9d9d|Hitem:52::::::::7:::::::::|h[Neophyte's Pants]|h|r",
 						["id"] = 52,
 						["gemIds"] = {
@@ -3402,8 +3402,8 @@ AskMrRobotDbClassic = {
 					},
 					[15] = {
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["level"] = 0,
+						["suffixId"] = 0,
 						["link"] = "|cffffffff|Hitem:4920::::::::7:::::::::|h[Battleworn Cape]|h|r",
 						["id"] = 4920,
 						["gemIds"] = {
@@ -3418,8 +3418,8 @@ AskMrRobotDbClassic = {
 					},
 					[18] = {
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["level"] = 0,
+						["suffixId"] = 0,
 						["link"] = "|cff1eff00|Hitem:11287::::::::7:::::::::|h[Lesser Magic Wand]|h|r",
 						["id"] = 11287,
 						["gemIds"] = {
@@ -3434,8 +3434,8 @@ AskMrRobotDbClassic = {
 					},
 					[5] = {
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["level"] = 0,
+						["suffixId"] = 0,
 						["link"] = "|cff9d9d9d|Hitem:6144::::::::7:::::::::|h[Neophyte's Robe]|h|r",
 						["id"] = 6144,
 						["gemIds"] = {
@@ -3450,8 +3450,8 @@ AskMrRobotDbClassic = {
 					},
 					[16] = {
 						["enchantId"] = 0,
-						["suffixId"] = 0,
 						["level"] = 0,
+						["suffixId"] = 0,
 						["link"] = "|cffffffff|Hitem:5778::::::::7:::::::::|h[Primitive Walking Stick]|h|r",
 						["id"] = 5778,
 						["gemIds"] = {
@@ -5694,7 +5694,7 @@ AskMrRobotDbClassic = {
 			},
 			["Logging"] = {
 				["LastDiff"] = 1,
-				["LastZone"] = "Kalimdor",
+				["LastZone"] = "Northrend",
 			},
 			["FirstUse"] = false,
 			["Equipped"] = {
@@ -5703,8 +5703,8 @@ AskMrRobotDbClassic = {
 						["enchantId"] = 0,
 						["suffixId"] = 0,
 						["level"] = 0,
-						["link"] = "|cff0070dd|Hitem:44412::::::::80:::::::::|h[Faceguard of Punishment]|h|r",
-						["id"] = 44412,
+						["link"] = "|cff0070dd|Hitem:37237::::::::80:::::::::|h[Chitin Shell Greathelm]|h|r",
+						["id"] = 37237,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
@@ -6066,7 +6066,7 @@ AskMrRobotDbClassic = {
 				},
 				[-1] = {
 					{
-						["link"] = "|cff1eff00|Hitem:11122::::::::78:::::::::|h[Carrot on a Stick]|h|r",
+						["link"] = "|cff1eff00|Hitem:11122::::::::80:::::::::|h[Carrot on a Stick]|h|r",
 						["id"] = 11122,
 						["gemIds"] = {
 							0, -- [1]
@@ -6081,6 +6081,22 @@ AskMrRobotDbClassic = {
 						["relicBonusIds"] = {
 						},
 					}, -- [1]
+					{
+						["link"] = "|cffa335ee|Hitem:34989::::::::80:::::::::|h[Brutal Gladiator's Bonegrinder]|h|r",
+						["id"] = 34989,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					}, -- [2]
 				},
 				[9] = {
 				},
@@ -6498,17 +6514,17 @@ AskMrRobotDbClassic = {
 			},
 			["Logging"] = {
 				["LastDiff"] = 1,
-				["LastZone"] = "Northrend",
+				["LastZone"] = "Kalimdor",
 			},
 			["LastVersion"] = 11,
 			["Equipped"] = {
 				{
 					{
-						["link"] = "|cffa335ee|Hitem:34999::41398:39953:::::80:::::::::|h[Brutal Gladiator's Dragonhide Helm]|h|r",
-						["id"] = 34999,
+						["link"] = "|cff0070dd|Hitem:37636::::::::80:::::::::|h[Helm of Cheated Fate]|h|r",
+						["id"] = 37636,
 						["gemIds"] = {
-							41398, -- [1]
-							39953, -- [2]
+							0, -- [1]
+							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
@@ -6536,11 +6552,11 @@ AskMrRobotDbClassic = {
 						},
 					}, -- [2]
 					{
-						["link"] = "|cffa335ee|Hitem:35001::39905:39905:::::80:::::::::|h[Brutal Gladiator's Dragonhide Spaulders]|h|r",
-						["id"] = 35001,
+						["link"] = "|cffa335ee|Hitem:40494::::::::80:::::::::|h[Valorous Dreamwalker Shoulderpads]|h|r",
+						["id"] = 40494,
 						["gemIds"] = {
-							39905, -- [1]
-							39905, -- [2]
+							0, -- [1]
+							0, -- [2]
 							0, -- [3]
 							0, -- [4]
 						},
@@ -6601,8 +6617,8 @@ AskMrRobotDbClassic = {
 						},
 					}, -- [7]
 					{
-						["link"] = "|cffa335ee|Hitem:35137::::::::80:::::::::|h[Guardian's Dragonhide Boots]|h|r",
-						["id"] = 35137,
+						["link"] = "|cff0070dd|Hitem:43172::::::::80:::::::::|h[Rhino Hide Kneeboots]|h|r",
+						["id"] = 43172,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
@@ -6617,8 +6633,8 @@ AskMrRobotDbClassic = {
 						},
 					}, -- [8]
 					{
-						["link"] = "|cff0070dd|Hitem:38537::::::::80:::::::::|h[Cuffs of the Decapitator]|h|r",
-						["id"] = 38537,
+						["link"] = "|cffa335ee|Hitem:37853::::::::80:::::::::|h[Advanced Tooled-Leather Bands]|h|r",
+						["id"] = 37853,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
@@ -6649,8 +6665,8 @@ AskMrRobotDbClassic = {
 						},
 					}, -- [10]
 					{
-						["link"] = "|cffa335ee|Hitem:35131::::::::80:::::::::|h[Guardian's Band of Triumph]|h|r",
-						["id"] = 35131,
+						["link"] = "|cffa335ee|Hitem:37642::::::::80:::::::::|h[Hemorrhaging Circle]|h|r",
+						["id"] = 37642,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
@@ -6759,6 +6775,7 @@ AskMrRobotDbClassic = {
 				},
 				[-1] = {
 					[11122] = 1,
+					[34989] = 1,
 				},
 				[9] = {
 				},
@@ -7436,11 +7453,11 @@ AskMrRobotDbClassic = {
 				},
 				[7] = {
 					[4941] = 10,
-					[2321] = 33,
+					[3182] = 9,
 					[4945] = 1,
 					[2320] = 7,
+					[2321] = 33,
 					[4305] = 5,
-					[3182] = 9,
 				},
 				[8] = {
 				},
@@ -7880,9 +7897,6 @@ AskMrRobotDbClassic = {
 			},
 		},
 		["Moolatz - Golemagg"] = {
-			["options"] = {
-				["uiScale"] = 0.85,
-			},
 			["Logging"] = {
 				["Auto"] = {
 					[649] = {
@@ -7924,6 +7938,9 @@ AskMrRobotDbClassic = {
 						false, -- [2]
 					},
 				},
+			},
+			["options"] = {
+				["uiScale"] = 0.85,
 			},
 			["minimap"] = {
 				["hide"] = true,

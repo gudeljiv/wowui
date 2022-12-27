@@ -27,6 +27,13 @@ X: -36
 Y: 150
 W: 128
 H: 64
+Frame: GDKPd_Anchor
+FrameLevel: 1
+Anchor: TOPRIGHT
+X: -254
+Y: -261
+W: 300
+H: 60
 Frame: nTooltip_Anchor
 FrameLevel: 1
 Anchor: BOTTOMRIGHT
@@ -48,10 +55,3 @@ X: 323
 Y: -75
 W: 78
 H: 40
-Frame: GDKPd_Anchor
-FrameLevel: 1
-Anchor: TOPRIGHT
-X: -254
-Y: -261
-W: 300
-H: 60

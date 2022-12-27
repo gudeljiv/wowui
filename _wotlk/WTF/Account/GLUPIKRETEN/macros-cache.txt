@@ -1,19 +1,19 @@
+VER 3 0000000000000013 " " "132130"
+/click BehindTarget
+END
 VER 3 000000000000000E " " "136106"
 /inspect
 /run SortBags()
 END
-VER 3 0000000000000013 " " "132130"
-/click BehindTarget
-END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:43523
+/use [nocombat]item:0
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:43523
-/castsequence [combat] reset=combat item:33447
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:0
@@ -22,7 +22,7 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:33447
+/use item:0
 END
 VER 3 000000000000001C "RXPTargeting" "Ability_eyeoftheowl"
 /targetexact Gurgthock
@@ -32,9 +32,8 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
-/run RotationFrame1:ClearAllPoints()
-/run RotationFrame1:SetPoint('CENTER', UIParent, 'CENTER', -135, -90)
-/run RotationFrame1:SetWidth(2)
+/run TargetFrameSpellBar:ClearAllPoints()
+/run TargetFrameSpellBar:SetPoint('CENTER', UIParent, 'CENTER', 245, -175)
 END
 VER 3 000000000000001B "TSMMacro" "INV_Misc_Flower_01"
 /click TSMShoppingBuyoutBtn
