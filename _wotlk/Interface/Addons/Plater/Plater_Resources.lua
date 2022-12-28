@@ -1121,7 +1121,8 @@ end
             --charges changed
             local chargedPowerPoints = GetUnitChargedPowerPoints("player")
             --chargedPowerPoints = {[1] = random(1,2), [2] = random(3,5)} --testing
-            for i = 1, resourceBar.widgetsInUseAmount do
+            local maxPowerPoints = UnitPowerMax("player", Plater.Resources.playerResourceId)
+            for i = 1, maxPowerPoints do
                 local widget = resourceBar.widgets[i]
                 local isCharged = chargedPowerPoints and tContains(chargedPowerPoints, i)
                 if (widget.isCharged ~= isCharged) then
@@ -1362,9 +1363,6 @@ end
         self.EssenceFilling.CircleAnim:SetAnimationSpeedMultiplier(animationSpeedMultiplier)
     end
     function resourceWidgetsFunctions.OnEssenceChanged(mainResourceFrame, resourceBar, forcedRefresh, event, unit, powerType)
-        if event == "UNIT_POWER_FREQUENT" then
-            print(event, UnitPower("player", Plater.Resources.playerResourceId), UnitPartialPower("player", Plater.Resources.playerResourceId, true) / 1000.0, UnitPowerMax("player", Plater.Resources.playerResourceId))
-        end
         if (event == "UNIT_MAXPOWER" and DB_PLATER_RESOURCE_SHOW_DEPLETED) then
             Plater.Resources.UpdateResourcesFor_ShowDepleted(mainResourceFrame, resourceBar)
             forcedRefresh = true

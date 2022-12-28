@@ -1,15 +1,15 @@
 
 GDKPd_DB = {
+	["global"] = {
+		["shownPopupAddonMsg4_2"] = true,
+		["minimapPos"] = 33.64834214119968,
+	},
 	["profileKeys"] = {
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
 		["Miqa - Golemagg"] = "Miqa - Golemagg",
 		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
 		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
-	},
-	["global"] = {
-		["shownPopupAddonMsg4_2"] = true,
-		["minimapPos"] = 33.64834214119968,
 	},
 	["profiles"] = {
 		["Vermin - Golemagg"] = {
@@ -41,14 +41,14 @@ GDKPd_DB = {
 		},
 		["Battlearm - Golemagg"] = {
 			["movable"] = false,
-			["showAuctionDurationTimerText"] = true,
+			["appearScale"] = 1.2,
 			["point"] = {
 				["y"] = -196.5608367919922,
 				["relative"] = "TOPRIGHT",
 				["point"] = "TOPRIGHT",
 				["x"] = -401.7457580566406,
 			},
-			["appearScale"] = 1.2,
+			["showAuctionDurationTimerText"] = true,
 		},
 		["Moolatz - Golemagg"] = {
 			["playerbalancepoint"] = {

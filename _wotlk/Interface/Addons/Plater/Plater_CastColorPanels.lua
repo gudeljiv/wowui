@@ -547,9 +547,6 @@ function Plater.CreateCastColorOptionsFrame(castColorFrame)
         --send to raid button
         local sendToRaidButton = DF:CreateButton(line, function()end, headerTable[7].width, 20, "Click to Select", -1, nil, nil, nil, nil, nil, DF:GetTemplate ("button", "OPTIONS_BUTTON_TEMPLATE"), DF:GetTemplate ("font", "PLATER_BUTTON"))
         line.sendToRaidButton = sendToRaidButton
-        if (GetRealmName() ~= "Azralon") then --debug among friends
-            sendToRaidButton:Disable()
-        end
 
         --location
         --local npcLocationLabel = DF:CreateLabel(line, "", 10, "white", nil, "npcLocationLabel")
@@ -1253,7 +1250,7 @@ function Plater.CreateCastColorOptionsFrame(castColorFrame)
     --callback from have clicked in the 'Share With Raid' button
     local latestMenuClicked = false
     local onSendToRaidButtonClicked = function(self, button, spellId)
-        if (spellId == latestMenuClicked) then
+        if (spellId == latestMenuClicked and GameCooltip:IsShown()) then
             GameCooltip:Hide()
             latestMenuClicked = false
             return

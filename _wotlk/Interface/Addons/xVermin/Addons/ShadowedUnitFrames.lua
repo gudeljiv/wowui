@@ -1,5 +1,5 @@
 local _, xVermin = ...
-local ib
+local indicator
 local count = 0
 
 C_Timer.NewTicker(
@@ -45,3 +45,25 @@ C_Timer.NewTicker(
 		end
 	end
 )
+
+-- xVermin.CheckIfLoadedWithTimer(
+-- 	'SUFUnitplayer',
+-- 	function()
+-- 		SUFUnitplayer:HookScript(
+-- 			'OnUpdate',
+-- 			function()
+-- 				for i = 1, 20 do
+-- 					indicator = _G['SUFUnitplayer.auraIndicators.indicator-' .. i]
+-- 					-- print(indicator:GetName())
+-- 					if indicator then
+-- 						print('ima:', indicator)
+-- 						indicator:CreateBeautyBorder(6)
+-- 					end
+-- 				end
+-- 			end
+-- 		)
+-- 	end
+-- )
+
+-- SUFUnitplayer.auraIndicators.indicator-9
+-- SUFHEaderpartyUnitButton1.auraIndicators.indicator-9

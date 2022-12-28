@@ -35,7 +35,7 @@ LBISSettings = {
 		["AfflictionWarlock"] = true,
 		["SubtletyRogue"] = true,
 	},
-	["SelectedSpec"] = "Restoration Druid",
+	["SelectedSpec"] = "Cat Druid",
 	["minimap"] = {
 		["minimapPos"] = 180,
 		["hide"] = true,
