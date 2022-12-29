@@ -640,9 +640,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 681443,
-		["timeStamp"] = 260901.468,
-		["timeAtThisLevel"] = 63984,
+		["total"] = 681559,
+		["timeStamp"] = 273359.185,
+		["timeAtThisLevel"] = 64100,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -683,9 +683,9 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 979172,
-		["timeAtThisLevel"] = 516,
-		["timeStamp"] = 3143182.684,
+		["total"] = 985007,
+		["timeAtThisLevel"] = 6351,
+		["timeStamp"] = 280709.302,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,
@@ -824,9 +824,9 @@ CB_PlayedTime = {
 		["total"] = 1248,
 	},
 	["Vermina-Golemagg"] = {
-		["total"] = 149335,
-		["timeAtThisLevel"] = 4402,
-		["timeStamp"] = 3235715.92,
+		["total"] = 150404,
+		["timeAtThisLevel"] = 769,
+		["timeStamp"] = 279933.627,
 	},
 	["Tandaram-Jin'do"] = {
 		["total"] = 97,

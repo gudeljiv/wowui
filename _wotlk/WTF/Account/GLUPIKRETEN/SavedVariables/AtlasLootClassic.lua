@@ -637,21 +637,21 @@ AtlasLootClassicDB = {
 			[16335] = "honor:400",
 			[37927] = "honor:5700",
 			[33734] = "honor:8550",
+			[40689] = "EmblemOfHeroism:40",
 			[41712] = "EmblemOfHeroism:30",
-			[18826] = "honor:2500",
 			[40721] = "EmblemOfValor:25",
 			[32788] = "honor:5320",
 			[18874] = "honor:5000",
 			[40817] = "EmblemOfHeroism:45",
 			[33688] = "honor:17100",
 			[28129] = "honor:3800",
-			[42128] = "honor:43400",
+			[33944] = "honor:5130",
 			[42991] = "EmblemOfHeroism:50",
 			[32793] = "honor:5320",
 			[42032] = "honor:33180",
 			[42064] = "honor:33180",
-			[33944] = "honor:5130",
 			[28241] = "honor:2280",
+			[42128] = "honor:43400",
 			[34999] = "honor:9500",
 			[28450] = "honor:3800",
 			[34129] = "honor:16650",
@@ -732,7 +732,7 @@ AtlasLootClassicDB = {
 			[48716] = "EmblemOfHeroism:40",
 			[41587] = "honor:5700",
 			[41570] = "honor:1250",
-			[40689] = "EmblemOfHeroism:40",
+			[18826] = "honor:2500",
 			[35327] = "honor:3990",
 			[40692] = "EmblemOfHeroism:40",
 			[40724] = "EmblemOfValor:25",
@@ -1272,6 +1272,8 @@ AtlasLootClassicDB = {
 				},
 			},
 		},
+		["Battlearm - Hydraxian Waterlords"] = {
+		},
 		["xVermin"] = {
 			["GUI"] = {
 				["selectedGameVersion"] = 2,
@@ -1307,8 +1309,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Testxv - Golemagg"] = {
-		},
-		["Battlearm - Hydraxian Waterlords"] = {
 		},
 		["Pitchwise - Ashbringer"] = {
 			["minimap"] = {
