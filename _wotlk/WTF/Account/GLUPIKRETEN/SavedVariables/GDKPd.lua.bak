@@ -1,15 +1,15 @@
 
 GDKPd_DB = {
+	["global"] = {
+		["shownPopupAddonMsg4_2"] = true,
+		["minimapPos"] = 33.64834214119968,
+	},
 	["profileKeys"] = {
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
 		["Miqa - Golemagg"] = "Miqa - Golemagg",
 		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
 		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
-	},
-	["global"] = {
-		["shownPopupAddonMsg4_2"] = true,
-		["minimapPos"] = 33.64834214119968,
 	},
 	["profiles"] = {
 		["Vermin - Golemagg"] = {

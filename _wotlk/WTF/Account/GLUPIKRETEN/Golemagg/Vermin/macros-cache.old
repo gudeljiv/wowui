@@ -25,7 +25,7 @@ END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
-/cast [nostance:3,combat]Berserker Stance
+/cast [nostance:2/3]Berserker Stance
 /cast [spec:1]Mortal Strike;[spec:2]Bloodthirst
 /cast Bloodrage
 END

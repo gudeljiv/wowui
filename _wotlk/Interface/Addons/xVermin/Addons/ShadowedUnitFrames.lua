@@ -26,7 +26,8 @@ C_Timer.NewTicker(
 
 			TargetFrameSpellBar:SetParent(UIParent)
 			TargetFrameSpellBar:ClearAllPoints()
-			TargetFrameSpellBar:SetPoint('CENTER', UIParent, 'CENTER', 245, -175)
+			-- TargetFrameSpellBar:SetPoint('CENTER', UIParent, 'CENTER', 245, -175)
+			TargetFrameSpellBar:SetPoint('CENTER', CastingBarFrame, 'CENTER', 15, 40)
 
 			TargetFrameSpellBar.Icon:SetScale(1.6)
 			-- TargetFrameSpellBar.Icon:CreateBeautyBorder(8)
