@@ -1,12 +1,10 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[106] = {
-		},
 	},
-	["currentStep"] = 106,
+	["currentStep"] = 1,
 	["phase"] = 6,
-	["currentGuideGroup"] = "+RestedXP Northrend Daily Quests",
+	["currentGuideGroup"] = "",
 	["flightPaths"] = {
 		[122] = "Area 52, Netherstorm",
 		[123] = "Shadowmoon Village, Shadowmoon Valley",
@@ -96,26 +94,10 @@ RXPCData = {
 		[324] = "Camp Tunka'lo, The Storm Peaks",
 	},
 	["JoyousJourneys"] = true,
-	["currentGuideName"] = "Icecrown Gunship Unlock Daily Quests",
+	["currentGuideName"] = "",
 	["stepSkip"] = {
-		[83] = true,
-		[95] = true,
-		[97] = true,
-		[80] = true,
-		[22] = true,
-		[23] = true,
-		[92] = true,
-		[24] = true,
-		[50] = true,
-		[69] = true,
-		[7] = true,
-		[54] = true,
-		[13] = true,
-		[58] = true,
-		[29] = true,
-		[17] = true,
 	},
-	["GA"] = true,
+	["GA"] = false,
 	["SoM"] = 1,
 }
 RXPCTrackingData = {
@@ -478,13 +460,13 @@ RXPCComms = {
 					["class"] = "WARRIOR",
 				},
 				["Ouii"] = {
-					["xpPercentage"] = 0,
+					["timePlayed"] = 5.651000000070781,
 					["isRxp"] = true,
 					["lastSeen"] = 1821053.14,
-					["timePlayed"] = 5.651000000070781,
-					["level"] = 71,
-					["xp"] = 626,
+					["xpPercentage"] = 0,
 					["class"] = "HUNTER",
+					["xp"] = 626,
+					["level"] = 71,
 				},
 				["Nechmewarri"] = {
 					["timePlayed"] = 0,
@@ -918,9 +900,10 @@ RXPCComms = {
 					["timePlayed"] = 279.9579999996349,
 					["class"] = "DEATHKNIGHT",
 				},
-				["Konkordoto"] = {
-					["timePlayed"] = 25.30899999989197,
-					["class"] = "DEATHKNIGHT",
+				["Zexxar"] = {
+					["timePlayed"] = 0.01399999996647239,
+					["class"] = "WARLOCK",
+					["xp"] = 32100,
 				},
 				["Problemas"] = {
 					["class"] = "PALADIN",
@@ -985,13 +968,9 @@ RXPCComms = {
 					["timePlayed"] = 136.1409999998286,
 					["class"] = "WARLOCK",
 				},
-				["Debeauvoir"] = {
-					["level"] = 80,
-					["lastSeen"] = 266146.833,
-					["xpPercentage"] = 0,
-					["class"] = "PALADIN",
-					["timePlayed"] = 0,
-					["isRxp"] = true,
+				["Ripsquad"] = {
+					["timePlayed"] = 278.3670000000857,
+					["class"] = "HUNTER",
 				},
 				["Nonameaac"] = {
 					["timePlayed"] = 344.1700000003912,
@@ -1009,9 +988,13 @@ RXPCComms = {
 					["timePlayed"] = 329.4879999998957,
 					["class"] = "WARLOCK",
 				},
-				["Hygienespray"] = {
-					["timePlayed"] = 299.6820000000298,
-					["class"] = "WARLOCK",
+				["Navajaplatea"] = {
+					["class"] = "ROGUE",
+					["lastSeen"] = 157293.062,
+					["xpPercentage"] = 0,
+					["isRxp"] = true,
+					["timePlayed"] = 0,
+					["level"] = 70,
 				},
 				["Existhor"] = {
 					["timePlayed"] = 25.30899999989197,
@@ -1029,13 +1012,9 @@ RXPCComms = {
 					["timePlayed"] = 278.3670000000857,
 					["class"] = "ROGUE",
 				},
-				["Navajaplatea"] = {
-					["class"] = "ROGUE",
-					["lastSeen"] = 157293.062,
-					["xpPercentage"] = 0,
-					["isRxp"] = true,
-					["timePlayed"] = 0,
-					["level"] = 70,
+				["Hygienespray"] = {
+					["timePlayed"] = 299.6820000000298,
+					["class"] = "WARLOCK",
 				},
 				["Xskull"] = {
 					["class"] = "ROGUE",
@@ -1045,9 +1024,13 @@ RXPCComms = {
 					["timePlayed"] = 0,
 					["level"] = 80,
 				},
-				["Ripsquad"] = {
-					["timePlayed"] = 278.3670000000857,
-					["class"] = "HUNTER",
+				["Debeauvoir"] = {
+					["level"] = 80,
+					["lastSeen"] = 266146.833,
+					["xpPercentage"] = 0,
+					["class"] = "PALADIN",
+					["timePlayed"] = 0,
+					["isRxp"] = true,
 				},
 				["Voodooistt"] = {
 					["timePlayed"] = 329.4879999998957,
@@ -1069,10 +1052,9 @@ RXPCComms = {
 					["timePlayed"] = 301.3610000000335,
 					["class"] = "PALADIN",
 				},
-				["Zexxar"] = {
-					["timePlayed"] = 0.01399999996647239,
-					["class"] = "WARLOCK",
-					["xp"] = 32100,
+				["Konkordoto"] = {
+					["timePlayed"] = 25.30899999989197,
+					["class"] = "DEATHKNIGHT",
 				},
 				["Anicitus"] = {
 					["timePlayed"] = 984.3009999999776,

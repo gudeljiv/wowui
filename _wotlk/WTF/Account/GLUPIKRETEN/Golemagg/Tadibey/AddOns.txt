@@ -1,0 +1,9 @@
+Grid2: disabled
+Grid2Options: disabled
+Grid2RaidDebuffs: disabled
+Grid2LDB: disabled
+Grid2RaidDebuffsOptions: disabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled
+nPower: disabled
+nHealth: disabled

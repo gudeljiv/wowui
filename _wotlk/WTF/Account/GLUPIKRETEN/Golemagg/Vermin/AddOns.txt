@@ -7,10 +7,10 @@ Sorted: disabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 Grid2: disabled
-Grid2Options: enabled
-Grid2RaidDebuffs: enabled
-Grid2RaidDebuffsOptions: enabled
-Grid2LDB: enabled
+Grid2Options: disabled
+Grid2RaidDebuffs: disabled
+Grid2RaidDebuffsOptions: disabled
+Grid2LDB: disabled
 Blizzard_CompactRaidFrames: disabled
 Blizzard_CUFProfiles: disabled
 Bagnon: enabled

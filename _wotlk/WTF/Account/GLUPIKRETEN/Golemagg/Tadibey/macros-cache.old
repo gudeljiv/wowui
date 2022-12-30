@@ -1,0 +1,9 @@
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help,exists][]Healing Wave
+END
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Lightning Bolt
+END

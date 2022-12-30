@@ -460,13 +460,13 @@ RXPCComms = {
 					["class"] = "WARRIOR",
 				},
 				["Ouii"] = {
-					["class"] = "HUNTER",
 					["level"] = 71,
+					["class"] = "HUNTER",
 					["lastSeen"] = 1821053.14,
-					["xpPercentage"] = 0,
+					["timePlayed"] = 5.651000000070781,
 					["isRxp"] = true,
 					["xp"] = 626,
-					["timePlayed"] = 5.651000000070781,
+					["xpPercentage"] = 0,
 				},
 				["Nechmewarri"] = {
 					["timePlayed"] = 0,
@@ -902,14 +902,14 @@ RXPCComms = {
 					["timePlayed"] = 0,
 					["class"] = "PRIEST",
 				},
+				["Konkordoto"] = {
+					["timePlayed"] = 25.30899999989197,
+					["class"] = "DEATHKNIGHT",
+				},
 				["Zexxar"] = {
 					["timePlayed"] = 0.01399999996647239,
 					["class"] = "WARLOCK",
 					["xp"] = 32100,
-				},
-				["Konkordoto"] = {
-					["timePlayed"] = 25.30899999989197,
-					["class"] = "DEATHKNIGHT",
 				},
 				["Problemas"] = {
 					["level"] = 80,
@@ -969,10 +969,6 @@ RXPCComms = {
 					["timePlayed"] = 329.4879999998957,
 					["class"] = "MAGE",
 				},
-				["Ripsquad"] = {
-					["timePlayed"] = 278.3670000000857,
-					["class"] = "HUNTER",
-				},
 				["Debeauvoir"] = {
 					["isRxp"] = true,
 					["lastSeen"] = 266146.833,
@@ -980,6 +976,10 @@ RXPCComms = {
 					["level"] = 80,
 					["timePlayed"] = 0,
 					["class"] = "PALADIN",
+				},
+				["Ripsquad"] = {
+					["timePlayed"] = 278.3670000000857,
+					["class"] = "HUNTER",
 				},
 				["Xskull"] = {
 					["level"] = 80,
@@ -997,6 +997,10 @@ RXPCComms = {
 					["timePlayed"] = 0,
 					["class"] = "DRUID",
 				},
+				["Hygienespray"] = {
+					["timePlayed"] = 299.6820000000298,
+					["class"] = "WARLOCK",
+				},
 				["Navajaplatea"] = {
 					["level"] = 70,
 					["lastSeen"] = 157293.062,
@@ -1004,10 +1008,6 @@ RXPCComms = {
 					["class"] = "ROGUE",
 					["timePlayed"] = 0,
 					["isRxp"] = true,
-				},
-				["Hygienespray"] = {
-					["timePlayed"] = 299.6820000000298,
-					["class"] = "WARLOCK",
 				},
 				["Yaaw"] = {
 					["timePlayed"] = 278.3670000000857,

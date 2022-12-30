@@ -10,3 +10,8 @@ Bistooltip: disabled
 NovaWorldBuffs: disabled
 ShadowedUF_Options: enabled
 ShadowedUnitFrames: enabled
+Grid2: disabled
+Grid2Options: disabled
+Grid2RaidDebuffs: disabled
+Grid2LDB: disabled
+Grid2RaidDebuffsOptions: disabled

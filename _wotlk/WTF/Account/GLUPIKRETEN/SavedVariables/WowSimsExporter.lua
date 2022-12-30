@@ -1,13 +1,15 @@
 
 WSEDB = {
 	["profileKeys"] = {
-		["Vermin - Golemagg"] = "Default",
+		["Mxzq - Golemagg"] = "Default",
 		["Vermina - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
-		["Miqa - Golemagg"] = "Default",
-		["Mxzq - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
+		["Battitude - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Miqa - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
+		["Tadibey - Golemagg"] = "Default",
 	},
 }

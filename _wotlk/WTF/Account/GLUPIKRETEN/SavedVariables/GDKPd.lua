@@ -1,26 +1,28 @@
 
 GDKPd_DB = {
 	["profileKeys"] = {
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Vermina - Golemagg"] = "Vermina - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Miqa - Golemagg"] = "Miqa - Golemagg",
 		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
 		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
-		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Battitude - Golemagg"] = "Battitude - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Miqa - Golemagg"] = "Miqa - Golemagg",
+		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
 	},
 	["global"] = {
 		["shownPopupAddonMsg4_2"] = true,
 		["minimapPos"] = 33.64834214119968,
 	},
 	["profiles"] = {
-		["Vermin - Golemagg"] = {
+		["Mxzq - Golemagg"] = {
 			["movable"] = false,
 			["point"] = {
-				["y"] = -276.0317077636719,
+				["y"] = -281.1111145019531,
 				["relative"] = "TOPRIGHT",
 				["point"] = "TOPRIGHT",
-				["x"] = -322.3811645507813,
+				["x"] = -349.0480346679688,
 			},
 		},
 		["Vermina - Golemagg"] = {
@@ -39,15 +41,6 @@ GDKPd_DB = {
 				["relative"] = "TOPRIGHT",
 				["point"] = "TOPRIGHT",
 				["x"] = -243.016357421875,
-			},
-		},
-		["Miqa - Golemagg"] = {
-			["movable"] = false,
-			["point"] = {
-				["y"] = -261.4287719726563,
-				["relative"] = "TOPRIGHT",
-				["point"] = "TOPRIGHT",
-				["x"] = -254.4450073242188,
 			},
 		},
 		["Battlearm - Golemagg"] = {
@@ -74,13 +67,40 @@ GDKPd_DB = {
 				["x"] = -349.1272277832031,
 			},
 		},
-		["Mxzq - Golemagg"] = {
+		["Battitude - Golemagg"] = {
 			["movable"] = false,
 			["point"] = {
 				["y"] = -281.1111145019531,
 				["relative"] = "TOPRIGHT",
 				["point"] = "TOPRIGHT",
-				["x"] = -349.0480346679688,
+				["x"] = -331.9052429199219,
+			},
+		},
+		["Vermin - Golemagg"] = {
+			["movable"] = false,
+			["point"] = {
+				["y"] = -276.0317077636719,
+				["relative"] = "TOPRIGHT",
+				["point"] = "TOPRIGHT",
+				["x"] = -322.3811645507813,
+			},
+		},
+		["Miqa - Golemagg"] = {
+			["movable"] = false,
+			["point"] = {
+				["y"] = -261.4287719726563,
+				["relative"] = "TOPRIGHT",
+				["point"] = "TOPRIGHT",
+				["x"] = -254.4450073242188,
+			},
+		},
+		["Tadibey - Golemagg"] = {
+			["movable"] = false,
+			["point"] = {
+				["y"] = -280.857177734375,
+				["relative"] = "TOPRIGHT",
+				["point"] = "TOPRIGHT",
+				["x"] = -327.8730773925781,
 			},
 		},
 	},

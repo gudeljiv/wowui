@@ -85,7 +85,7 @@ def on_press(key):
 
 
 classes = {
-    "warrior", "druid", "rogue", "warlock", "mage", "hunter", "death knight", "priest", "paladin"
+    "warrior", "druid", "rogue", "warlock", "mage", "hunter", "death knight", "priest", "paladin", "shaman"
 }
 
 time1 = 0.2

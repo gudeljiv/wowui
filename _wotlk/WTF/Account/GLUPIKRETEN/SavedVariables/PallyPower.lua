@@ -17,17 +17,19 @@ PallyPowerDB = {
 				["autobutton"] = false,
 			},
 			["buffscale"] = 1,
-			["layout"] = "Layout 6",
-			["seal"] = 6,
-			["auras"] = false,
-			["ShowTooltips"] = false,
-			["configscale"] = 1.2,
-			["rfbuff"] = false,
-			["enable"] = true,
+			["SalvInCombat"] = true,
+			["seal"] = 2,
 			["minimap"] = {
 				["show"] = false,
 			},
-			["SalvInCombat"] = true,
+			["ShowTooltips"] = false,
+			["configscale"] = 1.059132082598661,
+			["WrathTransition"] = true,
+			["display"] = {
+				["enableDragHandle"] = false,
+			},
+			["enable"] = true,
+			["border"] = "None",
 			["rf"] = false,
 		},
 		["Other"] = {
@@ -35,6 +37,7 @@ PallyPowerDB = {
 			["minimap"] = {
 				["show"] = false,
 			},
+			["WrathTransition"] = true,
 		},
 	},
 }
@@ -43,35 +46,17 @@ PallyPower_Assignments = {
 PallyPower_NormalAssignments = {
 }
 PallyPower_AuraAssignments = {
-	["Carroll"] = 0,
-	["Rojïn-Razorfen"] = 2,
-	["Nezrin"] = 2,
-	["Sapexcz"] = 1,
-	["Pakse"] = 0,
-	["Phalanxy"] = 1,
-	["Maiscrack"] = 0,
-	["Meeyak"] = 0,
-	["Vermina"] = 1,
-	["Bellicosa"] = 7,
-	["Puru-Transcendence"] = 1,
-	["Konvice"] = 3,
-	["Hemabussen"] = 0,
-	["Tathame"] = 0,
-	["Thyger"] = 2,
-	["Eshquîa"] = 3,
-	["Darcassan"] = 0,
-	["Frufransen-Firemaw"] = 1,
-	["Axxos"] = 7,
-	["Kadiy"] = 1,
-	["Jnxz"] = 0,
-	["Unholyrpirit-Gehennas"] = 3,
-	["Auckes-Gehennas"] = 1,
-	["Dixuck"] = 3,
-	["Yamadin"] = 2,
-	["Paintjenll-Gehennas"] = 0,
-	["Canestengyno"] = 1,
 }
-PallyPower_SavedPresets = nil
+PallyPower_SavedPresets = {
+	["PallyPower_Assignments"] = {
+		[0] = {
+		},
+	},
+	["PallyPower_NormalAssignments"] = {
+		[0] = {
+		},
+	},
+}
 PallyPower_ChanNames = {
 	[0] = "None",
 }

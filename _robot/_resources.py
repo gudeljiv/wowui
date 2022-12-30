@@ -174,7 +174,10 @@ skills["rogue"] = [
     {"name": "eviscerate", "type": "GetSpellTexture", "id": 2098, "key": "4"},
 ]
 
-skills["shaman"] = []
+skills["shaman"] = [
+    {"name": "lighning bolt", "type": "GetSpellTexture", "id": 403, "key": "f1", "modifier": "ctrl"},
+    {"name": "healing wave", "type": "GetSpellTexture", "id": 331, "key": "e"},
+]
 skills["priest"] = []
 
 color = dict()
@@ -186,6 +189,7 @@ color["#a8a6fd"] = "warlock"
 color["#dd365a"] = "death knight"
 color["#ffacd4"] = "paladin"
 color["#ffff8b"] = "rogue"
+color["#0092f1"] = "shaman"
 
 monitor_settings = dict()
 monitor_settings["3840"] = {

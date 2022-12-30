@@ -1,15 +1,15 @@
 
 RXPCData = {
-	["currentGuideGroup"] = "",
+	["stepSkip"] = {
+	},
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
-	["GA"] = true,
-	["stepSkip"] = {
-	},
+	["currentGuideName"] = "",
+	["currentGuideGroup"] = "",
 	["flightPaths"] = {
 	},
-	["currentGuideName"] = "",
+	["GA"] = true,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {

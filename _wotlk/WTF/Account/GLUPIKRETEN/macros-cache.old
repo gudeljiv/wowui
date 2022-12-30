@@ -8,26 +8,26 @@ END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
 /cancelaura [form:5] Flight Form;[form:3,combat] Cat Form
-/cast [noform:3] Cat Form
+/cast Cat Form
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:33444
-/castsequence [combat] reset=combat item:33448
+/use [nocombat]item:1645
+/castsequence [combat] reset=combat item:3385
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:33449
-/castsequence [combat] reset=combat item:33447
+/use [nocombat]item:3771
+/castsequence [combat] reset=combat item:929
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:0
+#showtooltip item:33454
 /cast feed pet
-/use item:0
+/use item:33454
 END
 VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:33447
+/use item:929
 END
 VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 #showtooltip Prowl
@@ -36,15 +36,16 @@ VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 /cast Prowl
 END
 VER 3 000000000000001C "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Yulda the Stormspeaker
+//RestedXP Guides - current step has no configured targets
 END
 VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
 END
 VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
-/run TargetFrameSpellBar:ClearAllPoints()
-/run TargetFrameSpellBar:SetPoint('CENTER', CastingBarFrame, 'CENTER', 15, 40)
+/run PallyPowerFrame:ClearAllPoints()
+/run PallyPowerFrame:SetPoint('TOPRIGHT', CustomContainer_2, 'BOTTOMRIGHT', -100, -76)
+/run PallyPower:UpdateLayout()
 END
 VER 3 000000000000001B "TSMMacro" "INV_Misc_Flower_01"
 /click TSMShoppingBuyoutBtn

@@ -4,26 +4,32 @@ RatingBusterDB = {
 		["Mxzq - Golemagg"] = "HUNTER",
 		["Vermina - Golemagg"] = "PALADIN",
 		["Mxyz - Golemagg"] = "PRIEST",
-		["Miqa - Golemagg"] = "PRIEST",
 		["Augustin - Golemagg"] = "MAGE",
-		["Battlearm - Golemagg"] = "DEATHKNIGHT",
 		["Moolatz - Golemagg"] = "DRUID",
+		["Battitude - Golemagg"] = "ROGUE",
 		["Vermin - Golemagg"] = "WARRIOR",
+		["Miqa - Golemagg"] = "PRIEST",
+		["Battlearm - Golemagg"] = "DEATHKNIGHT",
+		["Tadibey - Golemagg"] = "SHAMAN",
 	},
 	["profiles"] = {
-		["HUNTER"] = {
+		["DEATHKNIGHT"] = {
 		},
 		["WARRIOR"] = {
 		},
-		["PALADIN"] = {
+		["ROGUE"] = {
 		},
 		["MAGE"] = {
 		},
+		["PRIEST"] = {
+		},
+		["PALADIN"] = {
+		},
 		["DRUID"] = {
 		},
-		["DEATHKNIGHT"] = {
+		["HUNTER"] = {
 		},
-		["PRIEST"] = {
+		["SHAMAN"] = {
 		},
 	},
 }
