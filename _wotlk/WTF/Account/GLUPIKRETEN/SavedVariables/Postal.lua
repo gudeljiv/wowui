@@ -16,7 +16,7 @@ Postal3DB = {
 				"Pitchwise|Ashbringer|Horde|1|SHAMAN", -- [11]
 				"Poklopac|Mirage Raceway|Horde|1|HUNTER", -- [12]
 				"Provokator|Jin'do|Horde|11|HUNTER", -- [13]
-				"Tadibey|Golemagg|Horde|3|SHAMAN", -- [14]
+				"Tadibey|Golemagg|Horde|6|SHAMAN", -- [14]
 				"Tandaram|Jin'do|Horde|1|WARRIOR", -- [15]
 				"Tudum|Ashbringer|Horde|4|WARRIOR", -- [16]
 				"Tudum|Jin'do|Horde|1|WARRIOR", -- [17]

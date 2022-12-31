@@ -2392,11 +2392,11 @@ AskMrRobotDbClassic = {
 				},
 				[7] = {
 					[4941] = 10,
-					[3182] = 9,
+					[4305] = 5,
 					[4945] = 1,
 					[2320] = 7,
+					[3182] = 9,
 					[2321] = 33,
-					[4305] = 5,
 				},
 				[8] = {
 				},
@@ -5376,7 +5376,7 @@ AskMrRobotDbClassic = {
 				[34722] = 37,
 				[43145] = 17,
 				[6657] = 27,
-				[40188] = 1,
+				[6948] = 1,
 				[39764] = 1,
 				[38617] = 1,
 				[37093] = 48,
@@ -5384,8 +5384,8 @@ AskMrRobotDbClassic = {
 				[38303] = 2,
 				[40767] = 1,
 				[39246] = 1,
-				[6948] = 1,
 				[33447] = 53,
+				[40188] = 1,
 				[40678] = 1,
 				[38698] = 4,
 				[40544] = 1,
@@ -6377,6 +6377,38 @@ AskMrRobotDbClassic = {
 						["relicBonusIds"] = {
 						},
 					}, -- [24]
+					{
+						["link"] = "|cffffffff|Hitem:38561::::::::7:::::::::|h[Jormungar Scale]|h|r",
+						["id"] = 38561,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					}, -- [25]
+					{
+						["link"] = "|cffffffff|Hitem:38558::::::::7:::::::::|h[Nerubian Chitin]|h|r",
+						["id"] = 38558,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					}, -- [26]
 				},
 				[5] = {
 				},
@@ -6574,9 +6606,10 @@ AskMrRobotDbClassic = {
 				[10] = {
 				},
 				[-1] = {
-					[38558] = 426,
-					[38557] = 2,
-					[44128] = 1,
+					[38558] = 446,
+					[38557] = 16,
+					[44128] = 5,
+					[38561] = 14,
 				},
 				[5] = {
 				},
@@ -8309,11 +8342,11 @@ AskMrRobotDbClassic = {
 					},
 				}, -- [1]
 			},
-			["FirstUse"] = false,
+			["LastVersion"] = 11,
 			["BagItemsAndCounts"] = {
 				[6948] = 1,
 			},
-			["LastVersion"] = 11,
+			["FirstUse"] = false,
 			["Logging"] = {
 				["LastDiff"] = 1,
 				["LastZone"] = "Kalimdor",

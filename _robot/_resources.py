@@ -175,7 +175,7 @@ skills["rogue"] = [
 ]
 
 skills["shaman"] = [
-    {"name": "lighning bolt", "type": "GetSpellTexture", "id": 403, "key": "f1", "modifier": "ctrl"},
+    {"name": "lighning bolt", "type": "GetSpellTexture", "id": 403, "key": "1"},
     {"name": "healing wave", "type": "GetSpellTexture", "id": 331, "key": "e"},
 ]
 skills["priest"] = []
