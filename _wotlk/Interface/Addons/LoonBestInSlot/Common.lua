@@ -69,6 +69,19 @@ function LBIS:GetPhaseNumbers(phaseText)
     return firstNumber, lastNumber;
 end
 
+function LBIS:FindInPhase(phaseText, phase)
+
+    local phaseNumber = tonumber(phase);
+
+    local firstNumber, lastNumber = LBIS:GetPhaseNumbers(phaseText);
+
+    if firstNumber == nil then
+        return false;
+    end
+
+    return tonumber(firstNumber) <= phaseNumber and tonumber(lastNumber) >= phaseNumber;               
+end
+
 function LBIS:TableLength(T)
   local count = 0
   for _ in pairs(T) do count = count + 1 end
@@ -149,7 +162,7 @@ function LBIS:GetSpellInfo(spellId, returnFunc)
         returnFunc({ Name = nil, Link = nil, Quality = nil, Type = nil, SubType = nil, Texture = nil });
     end
 
-    local cachedSpell = LBIS.WowSpellCache[spellId];
+    local cachedSpell = LBIS.SpellCache[spellId];
 
     if cachedSpell then
         returnFunc(cachedSpell);
@@ -167,7 +180,7 @@ function LBIS:GetSpellInfo(spellId, returnFunc)
             };
 
             if name then
-                LBIS.WowSpellCache[spellId] = newSpell;
+                LBIS.SpellCache[spellId] = newSpell;
             end
             
             returnFunc(newSpell);
@@ -357,4 +370,17 @@ function LBIS:GetItemIdFromLink(itemLink)
     "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*):?(%-?%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?")
 
     return Id;
+end
+
+function LBIS:DeepCopy(src, dst)
+	if type(src) ~= "table" then return {} end
+	if type(dst) ~= "table" then dst = {} end
+	for k, v in pairs(src) do
+		if type(v) == "table" then
+			dst[k] = LBIS:DeepCopy(v, dst[k])
+		elseif type(v) ~= type(dst[k]) then
+			dst[k] = v
+		end
+	end
+	return dst
 end

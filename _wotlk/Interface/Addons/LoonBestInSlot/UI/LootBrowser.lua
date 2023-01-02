@@ -106,7 +106,7 @@ function LBIS.BrowserWindow:UpdateItemsForSpec(rowFunc)
     if LBISSettings.SelectedSpec == "" then
         return;
     end
-
+    
     LBIS.SearchFrame:HideSearchFrame();
     LBIS.BrowserWindow.Window.HideUnavailable();
 
@@ -233,7 +233,7 @@ local function createDropDowns(window)
                 specString = spec.Spec.." "..specString;
             end
             table.insert(specList, specString)
-            LBIS.SpecToName[specString] = specId;
+            LBIS.NameToSpecId[specString] = specId;
         end
         table.sort(specList);
         return specList;
@@ -273,7 +273,7 @@ local function createDropDowns(window)
         ['name']='phase',
         ['parent']=window,
         ['title']='Phase:',
-        ['items']= { LBIS.L["All"], LBIS.L["PreRaid"], LBIS.L["Phase 1"], "BIS" },
+        ['items']= { LBIS.L["All"], LBIS.L["PreRaid"], LBIS.L["Phase 1"], "BIS" }, --LBIS.L["Phase 2"], LBIS.L["Phase 3"], LBIS.L["Phase 4"], LBIS.L["Phase 5"],
         ['defaultVal']=LBISSettings.SelectedPhase,
         ['changeFunc']=function(dropdown_frame, dropdown_val)
             LBISSettings.SelectedPhase = dropdown_val;
