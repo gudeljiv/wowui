@@ -9,29 +9,29 @@ PallyPowerDB = {
 		["Battitude - Golemagg"] = "Other",
 		["Mxyzptlk - Golemagg"] = "Other",
 		["Miqa - Golemagg"] = "Other",
-		["Vermin - Golemagg"] = "Other",
-		["Battlearm - Golemagg"] = "Other",
 		["Tadibey - Golemagg"] = "Other",
+		["Battlearm - Golemagg"] = "Other",
+		["Vermin - Golemagg"] = "Other",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["autobuff"] = {
-				["autobutton"] = false,
-			},
 			["buffscale"] = 1,
-			["SalvInCombat"] = true,
 			["seal"] = 2,
-			["minimap"] = {
-				["show"] = false,
-			},
-			["ShowTooltips"] = false,
-			["configscale"] = 1.059132082598661,
-			["WrathTransition"] = true,
 			["display"] = {
-				["enableDragHandle"] = false,
+				["frameLocked"] = true,
 			},
 			["enable"] = true,
 			["border"] = "None",
+			["minimap"] = {
+				["show"] = false,
+			},
+			["configscale"] = 0.9967937838582688,
+			["autobuff"] = {
+				["autobutton"] = false,
+			},
+			["SalvInCombat"] = true,
+			["WrathTransition"] = true,
+			["ShowTooltips"] = false,
 			["rf"] = false,
 		},
 		["Other"] = {
@@ -48,13 +48,13 @@ PallyPower_Assignments = {
 		3, -- [1]
 		3, -- [2]
 		3, -- [3]
-		3, -- [4]
+		1, -- [4]
 		1, -- [5]
 		3, -- [6]
 		3, -- [7]
 		3, -- [8]
 		3, -- [9]
-		2, -- [10]
+		3, -- [10]
 		2, -- [11]
 	},
 }
@@ -63,6 +63,7 @@ PallyPower_NormalAssignments = {
 PallyPower_AuraAssignments = {
 	["Vermina"] = 2,
 	["Tökfilkó"] = 0,
+	["Skodicek"] = 1,
 }
 PallyPower_SavedPresets = {
 	["PallyPower_Assignments"] = {

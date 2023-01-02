@@ -1,31 +1,28 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		{
-		}, -- [1]
-		{
-		}, -- [2]
 	},
-	["currentStep"] = 2,
+	["currentStep"] = 1,
 	["phase"] = 6,
-	["currentGuideGroup"] = "RestedXP Horde 30-45",
+	["currentGuideGroup"] = "",
 	["flightPaths"] = {
 		[61] = "Splintertree Post, Ashenvale",
 		[25] = "Crossroads, The Barrens",
 		[58] = "Zoram'gar Outpost, Ashenvale",
 		[30] = "Freewind Post, Thousand Needles",
-		[22] = "Thunder Bluff, Mulgore",
 		[80] = "Ratchet, The Barrens",
-		[40] = "Gadgetzan, Tanaris",
 		[42] = "Camp Mojache, Feralas",
+		[40] = "Gadgetzan, Tanaris",
+		[22] = "Thunder Bluff, Mulgore",
 		[23] = "Orgrimmar, Durotar",
 		[77] = "Camp Taurajo, The Barrens",
 	},
 	["JoyousJourneys"] = true,
-	["currentGuideName"] = "30-33 Hillsbrad / Arathi / Shimmering Flats",
+	["currentGuideName"] = "",
 	["stepSkip"] = {
 	},
 	["SoM"] = 1,
+	["GA"] = false,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -122,42 +119,62 @@ RXPCComms = {
 					["xp"] = 480,
 				},
 				["Dærçël"] = {
-					["class"] = "WARRIOR",
+					["level"] = 41,
 					["lastSeen"] = 1211747.255,
 					["xpPercentage"] = 26,
-					["isRxp"] = true,
+					["class"] = "WARRIOR",
 					["timePlayed"] = 436.8549999999814,
-					["level"] = 41,
+					["isRxp"] = true,
+				},
+				["Edos"] = {
+					["timePlayed"] = 1956.787999999825,
+					["class"] = "SHAMAN",
+					["xp"] = 24,
+				},
+				["Clutzor"] = {
+					["timePlayed"] = 1956.787999999825,
+					["class"] = "HUNTER",
+					["xp"] = 24,
 				},
 				["Itsthickas"] = {
-					["class"] = "WARRIOR",
+					["level"] = 36,
 					["lastSeen"] = 368140.301,
 					["xpPercentage"] = 5,
-					["isRxp"] = true,
+					["class"] = "WARRIOR",
 					["timePlayed"] = 2174.201999999991,
-					["level"] = 36,
+					["isRxp"] = true,
 				},
 				["Brangrixon"] = {
-					["class"] = "HUNTER",
+					["level"] = 41,
 					["lastSeen"] = 1211747.481,
 					["xpPercentage"] = 82,
-					["isRxp"] = true,
+					["class"] = "HUNTER",
 					["timePlayed"] = 3172.202000000048,
-					["level"] = 41,
+					["isRxp"] = true,
 				},
 				["Robinhuud"] = {
 					["timePlayed"] = 436.8549999999814,
 					["class"] = "HUNTER",
 					["xp"] = 198,
 				},
+				["Bigshady"] = {
+					["timePlayed"] = 1956.787999999825,
+					["class"] = "HUNTER",
+					["xp"] = 24,
+				},
+				["Zyanna"] = {
+					["timePlayed"] = 1463.705999999773,
+					["class"] = "PALADIN",
+					["xp"] = 279,
+				},
 				["Deamontria"] = {
 					["timePlayed"] = 2735.347000000067,
 					["class"] = "WARLOCK",
 					["xp"] = 368,
 				},
-				["Valkyrij"] = {
+				["Tökfilkó"] = {
 					["timePlayed"] = 2735.347000000067,
-					["class"] = "MAGE",
+					["class"] = "PALADIN",
 					["xp"] = 368,
 				},
 				["Stockmoe"] = {
@@ -165,15 +182,15 @@ RXPCComms = {
 					["class"] = "SHAMAN",
 					["xp"] = 480,
 				},
-				["Tökfilkó"] = {
-					["timePlayed"] = 2735.347000000067,
-					["class"] = "PALADIN",
-					["xp"] = 368,
-				},
 				["Skaampiet"] = {
 					["timePlayed"] = 2174.201999999991,
 					["class"] = "SHAMAN",
 					["xp"] = 480,
+				},
+				["Valkyrij"] = {
+					["timePlayed"] = 2735.347000000067,
+					["class"] = "MAGE",
+					["xp"] = 368,
 				},
 			},
 		},
@@ -192,17 +209,18 @@ RXPCSettings = {
 			["enableLevelUpAnnounceGroup"] = false,
 			["enableMinimapButton"] = false,
 			["activeItemsScale"] = 1.2,
-			["frameHeight"] = 125.0000152587891,
-			["checkVersions"] = false,
-			["enableTargetMacro"] = false,
-			["enableTracker"] = false,
 			["enableBindAutomation"] = false,
-			["macroAnnounced"] = true,
-			["alwaysSendBranded"] = false,
+			["checkVersions"] = false,
 			["enableTargetAutomation"] = false,
+			["enableTracker"] = false,
+			["frameHeight"] = 125.0000152587891,
+			["macroAnnounced"] = true,
+			["enableLevelUpAnnounceSolo"] = false,
+			["alwaysSendBranded"] = false,
+			["xprate"] = 1.7,
 			["enableFlyStepAnnouncements"] = false,
 			["hideInRaid"] = true,
-			["enableLevelUpAnnounceSolo"] = false,
+			["enableTargetMacro"] = false,
 		},
 	},
 }

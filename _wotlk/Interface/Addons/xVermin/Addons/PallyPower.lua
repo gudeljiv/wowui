@@ -62,17 +62,25 @@ xVermin.CheckIfLoadedWithTimer(
 				-- end
 			end
 		)
+	end
+)
 
-		-- PallyPowerFrame:HookScript(
-		-- 	'OnUpdate',
-		-- 	function(self)
-		-- 		PallyPowerFrame:ClearAllPoints()
-		-- 		if Questie_BaseFrame and Questie_BaseFrame:IsVisible() then
-		-- 			PallyPowerFrame:SetPoint('TOPLEFT', Questie_BaseFrame, 'TOPLEFT', -105, -66)
-		-- 		else
-		-- 			PallyPowerFrame:SetPoint('TOPRIGHT', CustomContainer_2, 'BOTTOMRIGHT', -100, -76)
-		-- 		end
-		-- 	end
-		-- )
+xVermin.CheckIfLoadedWithTimer(
+	'PallyPowerFrame',
+	function()
+		PallyPowerFrame:HookScript(
+			'OnUpdate',
+			function(self)
+				if InCombatLockdown() then
+					return
+				end
+				PallyPowerFrame:ClearAllPoints()
+				if Questie_BaseFrame and Questie_BaseFrame:IsVisible() then
+					PallyPowerFrame:SetPoint('TOPLEFT', Questie_BaseFrame, 'TOPLEFT', -105, -66)
+				else
+					PallyPowerFrame:SetPoint('TOPRIGHT', CustomContainer_2, 'BOTTOMRIGHT', -100, -76)
+				end
+			end
+		)
 	end
 )

@@ -38,16 +38,18 @@ xVermin.CheckIfLoadedWithTimer(
 				if showQuestieFrame then
 					if not Questie_BaseFrame:IsVisible() then
 						Questie_BaseFrame:Show()
-						if PallyPowerFrame then
-							PallyPowerFrame:SetPoint('TOPLEFT', Questie_BaseFrame, 'TOPLEFT', -105, -66)
-						end
+					-- if PallyPowerFrame then
+					-- 	PallyPowerFrame:ClearAllPoints()
+					-- 	PallyPowerFrame:SetPoint('TOPLEFT', Questie_BaseFrame, 'TOPLEFT', -105, -66)
+					-- end
 					end
 				else
 					if Questie_BaseFrame:IsVisible() then
 						Questie_BaseFrame:Hide()
-						if PallyPowerFrame then
-							PallyPowerFrame:SetPoint('TOPRIGHT', CustomContainer_2, 'BOTTOMRIGHT', -100, -76)
-						end
+					-- if PallyPowerFrame then
+					-- 	PallyPowerFrame:ClearAllPoints()
+					-- 	PallyPowerFrame:SetPoint('TOPRIGHT', CustomContainer_2, 'BOTTOMRIGHT', -100, -76)
+					-- end
 					end
 				end
 
