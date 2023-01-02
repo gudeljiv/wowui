@@ -61,6 +61,13 @@ UIParent:HookScript(
 				end
 			end
 
+			-- SHAMAN INTERRUPT
+			if (xVermin.Class == 'SHAMAN') then
+				if select(2, GetSpellCooldown('Wind Shear')) == 0 and IsSpellInRange('Wind Shear', 'target') == 1 then
+					RotationFrame3:SetBackdropColor(0, 1, 0, 1)
+				end
+			end
+
 			-- HUNTER INTERRUPT
 			if (xVermin.Class == 'HUNTER') then
 				if select(2, GetSpellCooldown('Silencing Shot')) == 0 and IsSpellInRange('Silencing Shot', 'target') == 1 then

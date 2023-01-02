@@ -1,12 +1,14 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[5] = {
+		[11] = {
 		},
 	},
-	["currentStep"] = 5,
+	["currentStep"] = 11,
 	["currentGuideName"] = "01-10 Durotar",
 	["stepSkip"] = {
+		[8] = true,
+		[6] = true,
 		[2] = true,
 	},
 	["flightPaths"] = {
@@ -30,10 +32,10 @@ RXPCTrackingData = {
 							["monthDay"] = 30,
 							["day"] = 0,
 							["month"] = 12,
-							["minute"] = 30,
+							["weekday"] = 6,
 							["year"] = 2022,
 							["hour"] = 13,
-							["weekday"] = 6,
+							["minute"] = 30,
 						},
 						["started"] = 0,
 					},
@@ -64,22 +66,21 @@ RXPCSettings = {
 			["enableFPAutomation"] = false,
 			["hardcore"] = false,
 			["enableLevelUpAnnounceGroup"] = false,
-			["enableLevelUpAnnounceSolo"] = false,
+			["enableFlyStepAnnouncements"] = false,
 			["enableMinimapButton"] = false,
 			["activeItemsScale"] = 1.2,
-			["showEnabled"] = false,
 			["checkVersions"] = false,
 			["enableTargetMacro"] = false,
 			["lockFrames"] = false,
 			["enableTracker"] = false,
-			["enableFlyStepAnnouncements"] = false,
 			["frameHeight"] = 125.0000152587891,
-			["xprate"] = 1.5,
-			["alwaysSendBranded"] = false,
 			["enableTargetAutomation"] = false,
+			["enableLevelUpAnnounceSolo"] = false,
+			["alwaysSendBranded"] = false,
+			["enableBindAutomation"] = false,
 			["enableQuestRewardAutomation"] = true,
 			["hideInRaid"] = false,
-			["enableBindAutomation"] = false,
+			["xprate"] = 1.5,
 		},
 	},
 }

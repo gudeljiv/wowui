@@ -8,8 +8,10 @@ PallyPowerDB = {
 		["Moolatz - Golemagg"] = "Other",
 		["Battitude - Golemagg"] = "Other",
 		["Mxyzptlk - Golemagg"] = "Other",
+		["Miqa - Golemagg"] = "Other",
 		["Vermin - Golemagg"] = "Other",
 		["Battlearm - Golemagg"] = "Other",
+		["Tadibey - Golemagg"] = "Other",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -42,10 +44,25 @@ PallyPowerDB = {
 	},
 }
 PallyPower_Assignments = {
+	["Vermina"] = {
+		3, -- [1]
+		3, -- [2]
+		3, -- [3]
+		3, -- [4]
+		1, -- [5]
+		3, -- [6]
+		3, -- [7]
+		3, -- [8]
+		3, -- [9]
+		2, -- [10]
+		2, -- [11]
+	},
 }
 PallyPower_NormalAssignments = {
 }
 PallyPower_AuraAssignments = {
+	["Vermina"] = 2,
+	["Tökfilkó"] = 0,
 }
 PallyPower_SavedPresets = {
 	["PallyPower_Assignments"] = {
