@@ -6,8 +6,8 @@
 
 local TSM = select(2, ...) ---@type TSM
 local DFCrafting = TSM.Crafting:NewPackage("DFCrafting")
-local String = TSM.Include("Util.String")
 local CraftString = TSM.Include("Util.CraftString")
+local MatString = TSM.Include("Util.MatString")
 local TempTable = TSM.Include("Util.TempTable")
 local Table = TSM.Include("Util.Table")
 local ProfessionInfo = TSM.Include("Data.ProfessionInfo")
@@ -54,16 +54,13 @@ function DFCrafting.GetOptionalMats(craftString, mats, optionalMats)
 	local totalWeight = 0
 	local qualityMatCostTemp = private.AcquireTempTable()
 	for matString, quantity in pairs(mats) do
-		local prefix = strsub(matString, 1, 2)
-		if prefix == "i:" then
+		local matType = MatString.GetType(matString)
+		if matType == MatString.TYPE.NORMAL then
 			-- Not worrying about regular mats here
-		elseif prefix == "q:" then
+		elseif matType == MatString.TYPE.QUALITY then
 			local isFirst = true
-			local _, dataSlotIndex, itemList = strsplit(":", matString)
-			dataSlotIndex = tonumber(dataSlotIndex)
 			local hasValidCost = false
-			for matItemString in String.SplitIterator(itemList, ",") do
-				matItemString = "i:"..matItemString
+			for matItemString in MatString.ItemIterator(matString) do
 				qualityMatCostTemp[matItemString] = TSM.Crafting.Cost.GetMatCost(matItemString)
 				hasValidCost = hasValidCost or qualityMatCostTemp[matItemString] ~= nil
 				if isFirst then
@@ -76,7 +73,7 @@ function DFCrafting.GetOptionalMats(craftString, mats, optionalMats)
 				return false
 			end
 			assert(not isFirst)
-		elseif prefix == "f:" or prefix == "o:" then
+		elseif matType == MatString.TYPE.OPTIONAL or matType == MatString.TYPE.FINISHING then
 			-- Ignore for now
 		else
 			error("Invalid matString: "..tostring(matString))
@@ -111,15 +108,15 @@ function DFCrafting.GetOptionalMats(craftString, mats, optionalMats)
 			lowestQualityMatCost = currentMatCost
 			wipe(optionalMats)
 			for matString in pairs(mats) do
-				local prefix = strsub(matString, 1, 2)
-				if prefix == "i:" then
+				local matType = MatString.GetType(matString)
+				if matType == MatString.TYPE.NORMAL then
 					-- Not worrying about regular mats here
-				elseif prefix == "q:" then
+				elseif matType == MatString.TYPE.QUALITY then
 					local quality = qualities[matString]
 					local matItemString = "i:"..strmatch(matString, QUALITY_MAT_STRING_ITEM_ID_PATTERNS[quality])
 					tinsert(optionalMats, matItemString)
 					optionalMats[matItemString] = matString
-				elseif prefix == "f:" or prefix == "o:" then
+				elseif matType == MatString.TYPE.FINISHING or matType == MatString.TYPE.OPTIONAL then
 					-- Ignore for now
 				else
 					error("Invalid matString: "..tostring(matString))

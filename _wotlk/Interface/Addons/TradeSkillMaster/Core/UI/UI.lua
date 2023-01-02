@@ -54,20 +54,37 @@ end
 function UI.GetColoredItemName(item, tintPct)
 	local name = ItemInfo.GetName(item)
 	local quality = ItemInfo.GetQuality(item)
-	return UI.GetQualityColoredText(name, quality, tintPct)
+	return UI.GetQualityColoredText(name, quality, nil, tintPct)
+end
+
+--- Colors an item name based on its quality.
+-- @tparam string item The item to retrieve the name and quality of
+-- @tparam[opt=0] number tintPct The tintPct to apply to the quality color
+-- @treturn string The colored name
+function UI.GetColoredCraftedItemName(item, tintPct)
+	local name = ItemInfo.GetName(item)
+	local quality = ItemInfo.GetQuality(item)
+	local craftedQuality = ItemInfo.GetCraftedQuality(item)
+	return UI.GetQualityColoredText(name, quality, craftedQuality, tintPct)
 end
 
 --- Colors an item name based on its quality.
 -- @tparam string name The name of the item
 -- @tparam number quality The quality of the item
+-- @tparam number craftedQuality The crafted quality of the item
 -- @tparam[opt=0] number tintPct The tintPct to apply to the quality color
 -- @treturn string The colored name
-function UI.GetQualityColoredText(name, quality, tintPct)
+function UI.GetQualityColoredText(name, quality, craftedQuality, tintPct)
 	if not name or not quality then
 		return
 	end
 	local color = Theme.GetItemQualityColor(quality)
-	return color:GetTint(tintPct or 0):ColorText(name)
+	local result = color:GetTint(tintPct or 0):ColorText(name)
+	local craftedQualityIcon = craftedQuality and Professions.GetChatIconMarkupForQuality(craftedQuality, true)
+	if craftedQualityIcon then
+		result = result..craftedQualityIcon
+	end
+	return result
 end
 
 --- Gets the string representation of an auction time left.

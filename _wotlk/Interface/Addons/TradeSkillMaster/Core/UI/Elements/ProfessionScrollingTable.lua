@@ -19,6 +19,7 @@ local Log = TSM.Include("Util.Log")
 local ScriptWrapper = TSM.Include("Util.ScriptWrapper")
 local Event = TSM.Include("Util.Event")
 local ItemInfo = TSM.Include("Service.ItemInfo")
+local Profession = TSM.Include("Service.Profession")
 local ProfessionScrollingTable = TSM.Include("LibTSMClass").DefineClass("ProfessionScrollingTable", TSM.UI.ScrollingTable)
 local UIElements = TSM.Include("UI.UIElements")
 UIElements.Register(ProfessionScrollingTable)
@@ -53,7 +54,7 @@ function ProfessionScrollingTable.__init(self)
 	self._isCraftString = {}
 	self._favoritesContextTable = nil
 	if TSM.IsWowClassic() then
-		TSM.Crafting.ProfessionState.RegisterUpdateCallback(function()
+		Profession.RegisterStateCallback(function()
 			wipe(private.categoryInfoCache.numIndents)
 		end)
 	end
@@ -229,9 +230,10 @@ function ProfessionScrollingTable._UpdateData(self)
 	-- populate the data
 	wipe(self._data)
 	wipe(self._isCraftString)
+	local insertedSpellId = TempTable.Acquire()
 	for _, craftString in self._query:Iterator() do
 		local spellId = CraftString.GetSpellId(craftString)
-		if self._favoritesContextTable[spellId] then
+		if self._favoritesContextTable[spellId] and not insertedSpellId[spellId] then
 			local categoryId = -1
 			if categoryId ~= currentCategoryPath[#currentCategoryPath] then
 				-- this is a new category
@@ -250,12 +252,13 @@ function ProfessionScrollingTable._UpdateData(self)
 			if not self._contextTable.collapsed[categoryId] and not self:_IsCategoryHidden(categoryId) then
 				tinsert(self._data, craftString)
 				self._isCraftString[craftString] = true
+				insertedSpellId[spellId] = true
 			end
 		end
 	end
 	for _, craftString, categoryId in self._query:Iterator() do
 		local spellId = CraftString.GetSpellId(craftString)
-		if not self._favoritesContextTable[spellId] then
+		if not self._favoritesContextTable[spellId] and not insertedSpellId[spellId] then
 			if categoryId ~= currentCategoryPath[#currentCategoryPath] then
 				-- this is a new category
 				local newCategoryPath = TempTable.Acquire()
@@ -280,9 +283,11 @@ function ProfessionScrollingTable._UpdateData(self)
 			if not self._contextTable.collapsed[categoryId] and not self:_IsCategoryHidden(categoryId) then
 				tinsert(self._data, craftString)
 				self._isCraftString[craftString] = true
+				insertedSpellId[spellId] = true
 			end
 		end
 	end
+	TempTable.Release(insertedSpellId)
 	TempTable.Release(currentCategoryPath)
 	if not foundSelection then
 		-- try to select the first visible craft string
@@ -327,7 +332,7 @@ end
 function private.PopulateCategoryInfoCache(categoryId)
 	-- numIndents always gets set, so use that to know whether or not this category is already cached
 	if not private.categoryInfoCache.numIndents[categoryId] then
-		local name, numIndents, parentCategoryId, currentSkillLevel, maxSkillLevel = TSM.Crafting.ProfessionUtil.GetCategoryInfo(categoryId)
+		local name, numIndents, parentCategoryId, currentSkillLevel, maxSkillLevel = Profession.CategoryInfo(categoryId)
 		private.categoryInfoCache.name[categoryId] = name
 		private.categoryInfoCache.numIndents[categoryId] = numIndents
 		private.categoryInfoCache.parent[categoryId] = parentCategoryId
@@ -405,7 +410,7 @@ function private.GetCategoryGroupPath(categoryId)
 		tinsert(parts, 1, private.categoryInfoCache.name[categoryId])
 		categoryId = private.categoryInfoCache.parent[categoryId]
 	end
-	local name = TSM.Crafting.ProfessionUtil.GetCurrentProfessionInfo()
+	local name = Profession.GetSkillLine()
 	tinsert(parts, 1, name)
 	return TSM.Groups.Path.Join(TempTable.UnpackAndRelease(parts))
 end
@@ -414,9 +419,9 @@ function private.GetNameCellText(self, data)
 	if self._isCraftString[data] then
 		local name = TSM.Crafting.ProfessionScanner.GetNameByCraftString(data)
 		local color = nil
-		if TSM.Crafting.ProfessionUtil.IsGuildProfession() then
+		if Profession.IsGuild() then
 			color = Theme.GetProfessionDifficultyColor("easy")
-		elseif TSM.Crafting.ProfessionUtil.IsNPCProfession() then
+		elseif Profession.IsNPC() then
 			color = Theme.GetProfessionDifficultyColor("nodifficulty")
 		else
 			local difficulty = TSM.Crafting.ProfessionScanner.GetDifficultyByCraftString(data)
@@ -591,11 +596,11 @@ function private.RowOnClick(row, mouseButton)
 end
 
 function private.IsPlayerProfession()
-	return not (TSM.Crafting.ProfessionUtil.IsNPCProfession() or TSM.Crafting.ProfessionUtil.IsLinkedProfession() or TSM.Crafting.ProfessionUtil.IsGuildProfession())
+	return not (Profession.IsNPC() or Profession.IsLinked() or Profession.IsGuild())
 end
 
 function private.OnChatMsgSkill(_, msg)
-	local name = TSM.Crafting.ProfessionUtil.GetCurrentProfessionInfo()
+	local name = Profession.GetSkillLine()
 	if not strmatch(msg, name) then
 		return
 	end

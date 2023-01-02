@@ -18,6 +18,7 @@ local Theme = TSM.Include("Util.Theme")
 local TextureAtlas = TSM.Include("Util.TextureAtlas")
 local ScriptWrapper = TSM.Include("Util.ScriptWrapper")
 local ItemInfo = TSM.Include("Service.ItemInfo")
+local Profession = TSM.Include("Service.Profession")
 local CraftingQueueList = TSM.Include("LibTSMClass").DefineClass("CraftingQueueList", TSM.UI.ScrollingTable)
 local UIElements = TSM.Include("UI.UIElements")
 UIElements.Register(CraftingQueueList)
@@ -257,7 +258,7 @@ end
 function private.GetItemText(self, data)
 	if type(data) == "string" then
 		local profession, players = strsplit(CATEGORY_SEP, data)
-		local name = TSM.Crafting.ProfessionUtil.GetCurrentProfessionInfo()
+		local name = Profession.GetSkillLine()
 		local isValid = private.PlayersContains(players, UnitName("player")) and strlower(profession) == strlower(name or "")
 		local text = Theme.GetColor("INDICATOR"):ColorText(profession).." ("..players..")"
 		if isValid then
@@ -277,7 +278,7 @@ end
 function private.GetItemTooltip(self, data)
 	if type(data) == "string" then
 		local profession, players = strsplit(CATEGORY_SEP, data)
-		local name = TSM.Crafting.ProfessionUtil.GetCurrentProfessionInfo()
+		local name = Profession.GetSkillLine()
 		if not private.PlayersContains(players, UnitName("player")) then
 			return L["You are not on one of the listed characters."]
 		elseif strlower(profession) ~= strlower(name or "") then
@@ -312,7 +313,7 @@ function private.GetItemTooltip(self, data)
 		local color = Theme.GetColor(numHave >= numNeed and "FEEDBACK_GREEN" or "FEEDBACK_RED")
 		tinsert(tooltipLines, color:ColorText(numHave.."/"..numNeed).." - "..(ItemInfo.GetName(matItemString) or "?"))
 	end
-	if TSM.Crafting.ProfessionUtil.GetRemainingCooldown(craftString) then
+	if Profession.GetRemainingCooldown(craftString) then
 		tinsert(tooltipLines, Theme.GetColor("FEEDBACK_RED"):ColorText(L["On Cooldown"]))
 	end
 	return strjoin("\n", TempTable.UnpackAndRelease(tooltipLines)), true, true
@@ -413,7 +414,7 @@ function private.GetQty(self, data)
 	local numCraftable = min(self._numCraftableCache[data], numQueued)
 	local recipeString = data:GetField("recipeString")
 	local craftString = CraftString.FromRecipeString(recipeString)
-	local onCooldown = TSM.Crafting.ProfessionUtil.GetRemainingCooldown(craftString)
+	local onCooldown = Profession.GetRemainingCooldown(craftString)
 	local color = Theme.GetColor(((numCraftable == 0 or onCooldown) and "FEEDBACK_RED") or (numCraftable < numQueued and "FEEDBACK_YELLOW") or "FEEDBACK_GREEN")
 	return color:ColorText(format("%s / %s", numCraftable, numQueued))
 end
@@ -428,7 +429,7 @@ function private.CategorySortComparator(a, b)
 	local aProfession, aPlayers = strsplit(CATEGORY_SEP, a)
 	local bProfession, bPlayers = strsplit(CATEGORY_SEP, b)
 	if aProfession ~= bProfession then
-		local currentProfession = TSM.Crafting.ProfessionUtil.GetCurrentProfessionInfo()
+		local currentProfession = Profession.GetSkillLine()
 		currentProfession = strlower(currentProfession or "")
 		if aProfession == currentProfession then
 			return true

@@ -50,7 +50,9 @@ function CraftingMatList:Release()
 	wipe(self._quantity)
 	wipe(self._playerQuantity)
 	self.__super:Release()
-	self._query:Release()
+	if self._query then
+		self._query:Release()
+	end
 	self._query = nil
 end
 

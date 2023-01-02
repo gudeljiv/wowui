@@ -1,7 +1,6 @@
-## v4.12.13 Changes
+## v4.12.15 Changes
 
-* [All] Fixed error when importing very large groups
-* [All] Saving 'Restock Groups' selection between sessions
-* [All] Fixed groups without Crafting operations showing up in 'Restock Groups' dialog
+* [All] Fixed tooltip error
+* [Retail] Fixed error when switching professions via dropdown
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

@@ -5,18 +5,19 @@
 -- ------------------------------------------------------------------------------ --
 
 local TSM = select(2, ...) ---@type TSM
-local ProfessionState = TSM.Crafting:NewPackage("ProfessionState")
+local State = TSM.Init("Service.ProfessionHelpers.State") ---@class Service.ProfessionHelpers.State
 local Event = TSM.Include("Util.Event")
 local Delay = TSM.Include("Util.Delay")
 local FSM = TSM.Include("Util.FSM")
 local Log = TSM.Include("Util.Log")
 local private = {
 	fsm = nil,
-	updateCallbacks = {},
+	callbacks = {},
 	isClosed = true,
 	craftOpen = nil,
 	tradeSkillOpen = nil,
 	professionName = nil,
+	skillId = nil,
 	readyTimer = nil,
 }
 local WAIT_FRAME_DELAY = 5
@@ -24,35 +25,46 @@ local WAIT_FRAME_DELAY = 5
 
 
 -- ============================================================================
+-- Module Loading
+-- ============================================================================
+
+State:OnModuleLoad(function()
+	private.CreateFSM()
+end)
+
+
+
+-- ============================================================================
 -- Module Functions
 -- ============================================================================
 
-function ProfessionState.OnInitialize()
-	private.readyTimer = Delay.CreateTimer("PROFESSION_STATE_READY", function()
-		private.readyTimer:RunForFrames(WAIT_FRAME_DELAY)
-		private.fsm:ProcessEvent("EV_FRAME_DELAY")
-	end)
-	private.CreateFSM()
+function State.RegisterCallback(callback)
+	tinsert(private.callbacks, callback)
 end
 
-function ProfessionState.RegisterUpdateCallback(callback)
-	tinsert(private.updateCallbacks, callback)
-end
-
-function ProfessionState.GetIsClosed()
+function State.IsClosed()
 	return private.isClosed
 end
 
-function ProfessionState.IsClassicCrafting()
+function State.IsClassicCrafting()
 	return TSM.IsWowVanillaClassic() and private.craftOpen
 end
 
-function ProfessionState.SetCraftOpen(open)
+function State.SetClassicCraftingOpen(open)
+	assert(TSM.IsWowClassic())
 	private.craftOpen = open
 end
 
-function ProfessionState.GetCurrentProfession()
-	return private.professionName
+function State.IsDataStable()
+	return TSM.IsWowClassic() or (C_TradeSkillUI.IsTradeSkillReady() and not C_TradeSkillUI.IsDataSourceChanging())
+end
+
+function State.GetCurrentProfession()
+	return private.professionName, private.skillId
+end
+
+function State.GetSkillLine()
+	return private.GetSkillLine()
 end
 
 
@@ -62,6 +74,10 @@ end
 -- ============================================================================
 
 function private.CreateFSM()
+	private.readyTimer = Delay.CreateTimer("PROFESSION_STATE_READY", function()
+		private.readyTimer:RunForFrames(WAIT_FRAME_DELAY)
+		private.fsm:ProcessEvent("EV_FRAME_DELAY")
+	end)
 	if TSM.IsWowClassic() and not IsAddOnLoaded("Blizzard_CraftUI") then
 		LoadAddOn("Blizzard_CraftUI")
 	end
@@ -73,21 +89,11 @@ function private.CreateFSM()
 	end)
 	Event.Register("TRADE_SKILL_CLOSE", function()
 		private.tradeSkillOpen = false
-		if not private.craftOpen then
+		if TSM.IsWowClassic() and not private.craftOpen then
 			private.fsm:ProcessEvent("EV_TRADE_SKILL_CLOSE")
 		end
 	end)
-	if not TSM.IsWowClassic() then
-		Event.Register("GARRISON_TRADESKILL_NPC_CLOSED", function()
-			private.fsm:ProcessEvent("EV_TRADE_SKILL_CLOSE")
-		end)
-		Event.Register("TRADE_SKILL_DATA_SOURCE_CHANGED", function()
-			private.fsm:ProcessEvent("EV_TRADE_SKILL_DATA_SOURCE_CHANGED")
-		end)
-		Event.Register("TRADE_SKILL_DATA_SOURCE_CHANGING", function()
-			private.fsm:ProcessEvent("EV_TRADE_SKILL_DATA_SOURCE_CHANGING")
-		end)
-	else
+	if TSM.IsWowClassic() then
 		Event.Register("CRAFT_SHOW", function()
 			private.craftOpen = true
 			private.fsm:ProcessEvent("EV_TRADE_SKILL_SHOW")
@@ -103,26 +109,26 @@ function private.CreateFSM()
 		Event.Register("CRAFT_UPDATE", function()
 			private.fsm:ProcessEvent("EV_TRADE_SKILL_DATA_SOURCE_CHANGED")
 		end)
-	end
-	local function ToggleDefaultCraftButton()
-		if not CraftCreateButton then
-			return
-		end
-		if private.craftOpen then
-			CraftCreateButton:Show()
-		else
-			CraftCreateButton:Hide()
-		end
+	else
+		Event.Register("GARRISON_TRADESKILL_NPC_CLOSED", function()
+			private.fsm:ProcessEvent("EV_TRADE_SKILL_CLOSE")
+		end)
+		Event.Register("TRADE_SKILL_DATA_SOURCE_CHANGED", function()
+			private.fsm:ProcessEvent("EV_TRADE_SKILL_DATA_SOURCE_CHANGED")
+		end)
+		Event.Register("TRADE_SKILL_DATA_SOURCE_CHANGING", function()
+			private.fsm:ProcessEvent("EV_TRADE_SKILL_DATA_SOURCE_CHANGING")
+		end)
 	end
 	private.fsm = FSM.New("PROFESSION_STATE")
 		:AddState(FSM.NewState("ST_CLOSED")
 			:SetOnEnter(function()
 				private.isClosed = true
-				private.RunUpdateCallbacks()
+				private.RunCallbacks()
 			end)
 			:SetOnExit(function()
 				private.isClosed = false
-				private.RunUpdateCallbacks()
+				private.RunCallbacks()
 			end)
 			:AddTransition("ST_WAITING_FOR_DATA")
 			:AddEventTransition("EV_TRADE_SKILL_SHOW", "ST_WAITING_FOR_DATA")
@@ -144,7 +150,7 @@ function private.CreateFSM()
 			:AddTransition("ST_DATA_CHANGING")
 			:AddTransition("ST_CLOSED")
 			:AddEvent("EV_FRAME_DELAY", function()
-				if TSM.Crafting.ProfessionUtil.IsDataStable() then
+				if State.IsDataStable() then
 					return "ST_SHOWN"
 				end
 			end)
@@ -153,18 +159,17 @@ function private.CreateFSM()
 		)
 		:AddState(FSM.NewState("ST_SHOWN")
 			:SetOnEnter(function()
-				local name = TSM.Crafting.ProfessionUtil.GetCurrentProfessionInfo()
+				local name, skillId = private.GetSkillLine()
 				assert(name)
-				Log.Info("Showing profession: %s", name)
+				Log.Info("Showing profession: %s (%s)", name, tostring(skillId))
 				private.professionName = name
-				if TSM.IsWowVanillaClassic() then
-					ToggleDefaultCraftButton()
-				end
-				private.RunUpdateCallbacks()
+				private.skillId = skillId
+				private.RunCallbacks()
 			end)
 			:SetOnExit(function()
 				private.professionName = nil
-				private.RunUpdateCallbacks()
+				private.skillId = nil
+				private.RunCallbacks()
 			end)
 			:AddTransition("ST_DATA_CHANGING")
 			:AddTransition("ST_CLOSED")
@@ -186,8 +191,18 @@ end
 -- Private Helper Functions
 -- ============================================================================
 
-function private.RunUpdateCallbacks()
-	for _, callback in ipairs(private.updateCallbacks) do
-		callback(private.professionName)
+function private.RunCallbacks()
+	for _, callback in ipairs(private.callbacks) do
+		callback()
+	end
+end
+
+function private.GetSkillLine()
+	if TSM.IsWowClassic() then
+		local name = State.IsClassicCrafting() and GetCraftSkillLine(1) or GetTradeSkillLine()
+		return name
+	else
+		local info = C_TradeSkillUI.GetBaseProfessionInfo()
+		return info.parentProfessionName or info.professionName, info.profession
 	end
 end

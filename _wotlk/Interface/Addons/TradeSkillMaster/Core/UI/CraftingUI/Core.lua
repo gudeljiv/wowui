@@ -12,6 +12,7 @@ local Event = TSM.Include("Util.Event")
 local Log = TSM.Include("Util.Log")
 local ScriptWrapper = TSM.Include("Util.ScriptWrapper")
 local Settings = TSM.Include("Service.Settings")
+local Profession = TSM.Include("Service.Profession")
 local UIElements = TSM.Include("UI.UIElements")
 local private = {
 	settings = nil,
@@ -166,12 +167,12 @@ function private.FSMCreate()
 		Event.Register("CRAFT_SHOW", function()
 			CloseTradeSkill()
 			private.craftOpen = true
-			TSM.Crafting.ProfessionState.SetCraftOpen(true)
+			Profession.SetClassicCraftingOpen(true)
 			private.fsm:ProcessEvent("EV_TRADE_SKILL_SHOW")
 		end)
 		Event.Register("CRAFT_CLOSE", function()
 			private.craftOpen = false
-			TSM.Crafting.ProfessionState.SetCraftOpen(false)
+			Profession.SetClassicCraftingOpen(false)
 			if not private.tradeSkillOpen then
 				private.fsm:ProcessEvent("EV_TRADE_SKILL_CLOSED")
 			end
@@ -226,8 +227,7 @@ function private.FSMCreate()
 			end)
 			:AddEvent("EV_TRADE_SKILL_SHOW", function(context)
 				TSM.Crafting.ProfessionScanner.SetDisabled(private.settings.showDefault)
-				local name, skillId = TSM.Crafting.ProfessionUtil.GetCurrentProfessionInfo()
-				if CraftingUI.IsProfessionIgnored(name, skillId) then
+				if CraftingUI.IsProfessionIgnored(Profession.GetSkillLine()) then
 					return "ST_DEFAULT_OPEN", true
 				elseif private.settings.showDefault then
 					return "ST_DEFAULT_OPEN"
@@ -290,11 +290,11 @@ function private.FSMCreate()
 			:AddTransition("ST_FRAME_OPEN")
 			:AddTransition("ST_DEFAULT_OPEN")
 			:AddEvent("EV_FRAME_HIDE", function(context)
-				TSM.Crafting.ProfessionUtil.CloseTradeSkill(false, private.craftOpen)
+				Profession.CloseTradeSkill(false)
 				return "ST_CLOSED"
 			end)
 			:AddEvent("EV_TRADE_SKILL_SHOW", function(context)
-				if CraftingUI.IsProfessionIgnored(TSM.Crafting.ProfessionUtil.GetCurrentProfessionInfo()) then
+				if CraftingUI.IsProfessionIgnored(Profession.GetSkillLine()) then
 					return "ST_DEFAULT_OPEN", true
 				else
 					if private.settings.showDefault then
@@ -325,7 +325,7 @@ function private.FSMCreate()
 				end
 				context.frame = private.CreateMainFrame()
 				context.frame:Show()
-				if TSM.Crafting.ProfessionUtil.GetCurrentProfessionInfo() then
+				if Profession.GetSkillLine() then
 					context.frame:GetElement("titleFrame.switchBtn"):Show()
 				else
 					context.frame:GetElement("titleFrame.switchBtn"):Hide()
@@ -355,11 +355,11 @@ function private.FSMCreate()
 			:AddTransition("ST_CLOSED")
 			:AddTransition("ST_DEFAULT_OPEN")
 			:AddEvent("EV_FRAME_HIDE", function(context)
-				TSM.Crafting.ProfessionUtil.CloseTradeSkill(true)
+				Profession.CloseTradeSkill(true)
 				return "ST_CLOSED"
 			end)
 			:AddEvent("EV_TRADE_SKILL_SHOW", function(context)
-				if CraftingUI.IsProfessionIgnored(TSM.Crafting.ProfessionUtil.GetCurrentProfessionInfo()) then
+				if CraftingUI.IsProfessionIgnored(Profession.GetSkillLine()) then
 					return "ST_DEFAULT_OPEN", true
 				end
 				context.frame:GetElement("titleFrame.switchBtn"):Show()

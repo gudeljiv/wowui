@@ -218,7 +218,7 @@ function private.StateToFontSpacing(state)
 	end
 	-- There's a Blizzard bug where spacing incorrectly gets applied to embedded textures, so just set it to 0 in that case
 	-- TODO: come up with a better fix if we need multi-line text with embedded textures
-	if strfind(state.textStr, "\124T") then
+	if strfind(state.textStr, "|[TA]") then
 		return 0
 	end
 	return Theme.GetFont(state.font):GetSpacing()
