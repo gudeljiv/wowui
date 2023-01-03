@@ -84,12 +84,25 @@ def on_press(key):
         return
 
 
+def parse_hex_color(string):
+    if string.startswith("#"):
+        string = string[1:]
+    r = int(string[0:2], 16)  # red color value
+    g = int(string[2:4], 16)  # green color value
+    b = int(string[4:6], 16)  # blue color value
+    return r, g, b
+
+
+def color_similarity(base_col_val, oth_col_val):
+    return math.sqrt(sum((base_col_val[i]-oth_col_val[i])**2 for i in range(3)))
+
+
 classes = {
     "warrior", "druid", "rogue", "warlock", "mage", "hunter", "death knight", "priest", "paladin", "shaman"
 }
 
-time1 = 0.2
-time2 = 0.2
+time1 = 0.1
+time2 = 0.1
 
 count = 0
 number = 0
@@ -106,6 +119,29 @@ with keyboard.Listener(on_press=on_press) as listener:
             p_interrupt = {"top": 0, "left": p_interrupt_left, "width": c_width, "height": c_height}
             p_behind = {"top": 0, "left": p_behind_left, "width": c_width, "height": c_height}
             p_clss = {"top": 0, "left": p_clss_left, "width": c_width, "height": c_height}
+
+            clss_image = sct.grab(p_clss)
+            clss = clss_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
+            hex = '#%02x%02x%02x' % clss
+
+            # matching closest class color to define in colors
+            color_distance = 50
+            found_class = False
+            for c in color:
+                rgb = parse_hex_color(c)
+                # print(color[c], c, rgb, clss, color_similarity(rgb, clss))
+                if color_similarity(rgb, clss) <= color_distance:
+                    color_distance = color_similarity(rgb, clss)
+                    hex = c
+                    found_class = True
+
+            if not found_class:
+                continue
+
+            try:
+                wow_class = color[hex]
+            except:
+                wow_class = "warrior"
 
             if count > 0:
                 quit()
@@ -131,50 +167,50 @@ with keyboard.Listener(on_press=on_press) as listener:
                     pyautogui.hotkey('ctrl', 'v')
                 pyautogui.hotkey("enter")
 
-                for wclass in classes:
+                # for wow_class in classes:
 
-                    try:
-                        for skill in skills[wclass]:
-                            number = number + 1
-                            print(number, wclass, skill["name"], abilities_folder + slash + skill["name"] + " M.png")
-                            pyautogui.hotkey("enter")
-                            pyperclip.copy('/run RotationTextureFrame1.texture:SetTexture(' + str(skill["type"]) + '(' + str(skill["id"]) + '))')
-                            if os.name == "posix":
-                                pyautogui.hotkey('command', 'v')
-                            else:
-                                pyautogui.hotkey('ctrl', 'v')
-                            pyautogui.hotkey("enter")
+                try:
+                    for skill in skills[wow_class]:
+                        number = number + 1
+                        print(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " M.png")
+                        pyautogui.hotkey("enter")
+                        pyperclip.copy('/run RotationTextureFrame1.texture:SetTexture(' + str(skill["type"]) + '(' + str(skill["id"]) + '))')
+                        if os.name == "posix":
+                            pyautogui.hotkey('command', 'v')
+                        else:
+                            pyautogui.hotkey('ctrl', 'v')
+                        pyautogui.hotkey("enter")
 
-                            time.sleep(time1)
-                            m_image = abilities_folder + slash + str(skill["name"]) + " M.png".format(**p_main)
-                            main_image = sct.grab(p_main)
-                            mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
-                            time.sleep(time2)
+                        time.sleep(time1)
+                        m_image = abilities_folder + slash + str(skill["name"]) + " M.png".format(**p_main)
+                        main_image = sct.grab(p_main)
+                        mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
+                        time.sleep(time2)
 
-                        for skill in skills["offgcd"][wclass]:
-                            number = number + 1
-                            print(number, wclass, skill["name"], abilities_folder + slash + skill["name"] + " O.png")
-                            # /run RotationTextureFrame.texture:SetTexture(GetSpellTexture("23881"))
-                            pyautogui.hotkey("enter")
-                            pyperclip.copy('/run RotationTextureFrame2.texture:SetTexture(' + str(skill["type"]) + '(' + str(skill["id"]) + '))')
-                            if os.name == "posix":
-                                pyautogui.hotkey('command', 'v')
-                            else:
-                                pyautogui.hotkey('ctrl', 'v')
-                            pyautogui.hotkey("enter")
+                    for skill in skills["offgcd"][wow_class]:
+                        number = number + 1
+                        print(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " O.png")
+                        # /run RotationTextureFrame.texture:SetTexture(GetSpellTexture("23881"))
+                        pyautogui.hotkey("enter")
+                        pyperclip.copy('/run RotationTextureFrame2.texture:SetTexture(' + str(skill["type"]) + '(' + str(skill["id"]) + '))')
+                        if os.name == "posix":
+                            pyautogui.hotkey('command', 'v')
+                        else:
+                            pyautogui.hotkey('ctrl', 'v')
+                        pyautogui.hotkey("enter")
 
-                            time.sleep(time1)
-                            o_image = abilities_folder + slash + str(skill["name"]) + " O.png".format(**p_offgcd)
-                            offgcd_image = sct.grab(p_offgcd)
-                            mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=o_image)
-                            time.sleep(time2)
+                        time.sleep(time1)
+                        o_image = abilities_folder + slash + str(skill["name"]) + " O.png".format(**p_offgcd)
+                        offgcd_image = sct.grab(p_offgcd)
+                        mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=o_image)
+                        time.sleep(time2)
 
-                    except:
-                        print("no class", wclass)
+                except:
+                    print("no class", wow_class)
 
                 for skill in skills["healing"]:
                     number = number + 1
-                    print(number, wclass, skill["name"], abilities_folder + slash + skill["name"] + " H.png")
+                    print(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " H.png")
                     pyautogui.hotkey("enter")
                     pyperclip.copy('/run RotationTextureFrame1.texture:SetTexture(' + str(skill["type"]) + '(' + str(skill["id"]) + '))')
                     if os.name == "posix":

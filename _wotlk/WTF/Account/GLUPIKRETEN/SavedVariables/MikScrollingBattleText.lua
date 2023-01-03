@@ -66,19 +66,19 @@ MSBTProfiles_SavedVars = {
 				["PET_INCOMING_DEFLECT"] = {
 					["scrollArea"] = "Custom3",
 				},
-				["PET_OUTGOING_EVADE"] = {
+				["PET_OUTGOING_HOT"] = {
 					["scrollArea"] = "Custom2",
 				},
 				["PET_OUTGOING_HOT_CRIT"] = {
 					["scrollArea"] = "Custom2",
 				},
-				["PET_OUTGOING_DAMAGE"] = {
+				["PET_OUTGOING_EVADE"] = {
 					["scrollArea"] = "Custom2",
 				},
 				["PET_INCOMING_DAMAGE"] = {
 					["scrollArea"] = "Custom3",
 				},
-				["PET_OUTGOING_IMMUNE"] = {
+				["PET_OUTGOING_MISS"] = {
 					["scrollArea"] = "Custom2",
 				},
 				["PET_INCOMING_SPELL_DODGE"] = {
@@ -90,8 +90,8 @@ MSBTProfiles_SavedVars = {
 				["PET_OUTGOING_BLOCK"] = {
 					["scrollArea"] = "Custom2",
 				},
-				["PET_OUTGOING_SPELL_DEFLECT"] = {
-					["scrollArea"] = "Custom2",
+				["PET_INCOMING_SPELL_DAMAGE_SHIELD_CRIT"] = {
+					["scrollArea"] = "Custom3",
 				},
 				["PET_OUTGOING_HEAL"] = {
 					["scrollArea"] = "Custom2",
@@ -108,8 +108,8 @@ MSBTProfiles_SavedVars = {
 				["PET_INCOMING_HEAL_CRIT"] = {
 					["scrollArea"] = "Custom3",
 				},
-				["PET_OUTGOING_ABSORB"] = {
-					["scrollArea"] = "Custom2",
+				["PET_INCOMING_ABSORB"] = {
+					["scrollArea"] = "Custom3",
 				},
 				["PET_OUTGOING_SPELL_RESIST"] = {
 					["scrollArea"] = "Custom2",
@@ -120,7 +120,7 @@ MSBTProfiles_SavedVars = {
 				["PET_INCOMING_SPELL_RESIST"] = {
 					["scrollArea"] = "Custom3",
 				},
-				["PET_OUTGOING_SPELL_DAMAGE_SHIELD"] = {
+				["PET_OUTGOING_DEFLECT"] = {
 					["scrollArea"] = "Custom2",
 				},
 				["PET_INCOMING_SPELL_MISS"] = {
@@ -132,7 +132,7 @@ MSBTProfiles_SavedVars = {
 				["PET_INCOMING_SPELL_IMMUNE"] = {
 					["scrollArea"] = "Custom3",
 				},
-				["PET_INCOMING_DAMAGE_CRIT"] = {
+				["PET_INCOMING_SPELL_DOT"] = {
 					["scrollArea"] = "Custom3",
 				},
 				["PET_INCOMING_SPELL_BLOCK"] = {
@@ -153,13 +153,13 @@ MSBTProfiles_SavedVars = {
 				["PET_INCOMING_SPELL_DAMAGE_CRIT"] = {
 					["scrollArea"] = "Custom3",
 				},
-				["PET_INCOMING_SPELL_DOT"] = {
+				["PET_INCOMING_DAMAGE_CRIT"] = {
 					["scrollArea"] = "Custom3",
 				},
 				["PET_INCOMING_SPELL_DEFLECT"] = {
 					["scrollArea"] = "Custom3",
 				},
-				["PET_OUTGOING_DEFLECT"] = {
+				["PET_OUTGOING_SPELL_DAMAGE_SHIELD"] = {
 					["scrollArea"] = "Custom2",
 				},
 				["PET_INCOMING_BLOCK"] = {
@@ -168,16 +168,16 @@ MSBTProfiles_SavedVars = {
 				["PET_INCOMING_HOT"] = {
 					["scrollArea"] = "Custom3",
 				},
-				["PET_INCOMING_ABSORB"] = {
-					["scrollArea"] = "Custom3",
-				},
-				["PET_INCOMING_SPELL_DAMAGE_SHIELD_CRIT"] = {
-					["scrollArea"] = "Custom3",
-				},
-				["PET_OUTGOING_MISS"] = {
+				["PET_OUTGOING_ABSORB"] = {
 					["scrollArea"] = "Custom2",
 				},
-				["PET_OUTGOING_HOT"] = {
+				["PET_OUTGOING_SPELL_DEFLECT"] = {
+					["scrollArea"] = "Custom2",
+				},
+				["PET_OUTGOING_IMMUNE"] = {
+					["scrollArea"] = "Custom2",
+				},
+				["PET_OUTGOING_DAMAGE"] = {
 					["scrollArea"] = "Custom2",
 				},
 			},
@@ -186,12 +186,12 @@ MSBTProfiles_SavedVars = {
 				["Notification"] = {
 					["disabled"] = true,
 				},
-				["Outgoing"] = {
-					["stickyTextAlignIndex"] = 3,
-					["offsetX"] = 360,
-					["iconAlign"] = "Left",
+				["Incoming"] = {
+					["stickyTextAlignIndex"] = 1,
+					["offsetX"] = -400,
+					["iconAlign"] = "Right",
 					["offsetY"] = 50,
-					["textAlignIndex"] = 3,
+					["textAlignIndex"] = 1,
 				},
 				["Custom2"] = {
 					["critFontSize"] = 22,
@@ -203,20 +203,6 @@ MSBTProfiles_SavedVars = {
 					["offsetX"] = 270,
 					["normalFontSize"] = 10,
 				},
-				["Custom1"] = {
-					["direction"] = "Up",
-					["disabled"] = true,
-					["stickyBehavior"] = "Normal",
-					["stickyDirection"] = "Up",
-					["scrollHeight"] = 160,
-					["name"] = "CRIT",
-					["offsetY"] = 1,
-					["critFontSize"] = 36,
-					["offsetX"] = -20,
-				},
-				["Static"] = {
-					["disabled"] = true,
-				},
 				["Custom3"] = {
 					["critFontSize"] = 16,
 					["scrollHeight"] = 110,
@@ -226,12 +212,26 @@ MSBTProfiles_SavedVars = {
 					["scrollWidth"] = 10,
 					["normalFontSize"] = 10,
 				},
-				["Incoming"] = {
-					["stickyTextAlignIndex"] = 1,
-					["offsetX"] = -400,
-					["iconAlign"] = "Right",
+				["Static"] = {
+					["disabled"] = true,
+				},
+				["Custom1"] = {
+					["direction"] = "Up",
+					["disabled"] = true,
+					["stickyBehavior"] = "Normal",
+					["stickyDirection"] = "Up",
+					["scrollHeight"] = 160,
+					["name"] = "CRIT",
+					["offsetY"] = 1,
+					["offsetX"] = -20,
+					["critFontSize"] = 36,
+				},
+				["Outgoing"] = {
+					["stickyTextAlignIndex"] = 3,
+					["offsetX"] = 360,
+					["iconAlign"] = "Left",
 					["offsetY"] = 50,
-					["textAlignIndex"] = 1,
+					["textAlignIndex"] = 3,
 				},
 			},
 			["normalFontName"] = "MSBT Yellowjacket",
@@ -239,30 +239,21 @@ MSBTProfiles_SavedVars = {
 			["normalFontSize"] = 15,
 		},
 		["Multibox master"] = {
-			["creationVersion"] = "5.7.123",
+			["normalFontSize"] = 15,
 			["powerThrottleDuration"] = 2,
 			["critFontName"] = "MSBT Yellowjacket",
-			["groupNumbers"] = true,
-			["hideFullHoTOverheals"] = false,
-			["normalFontName"] = "MSBT Yellowjacket",
 			["scrollAreas"] = {
 				["Outgoing"] = {
 					["stickyTextAlignIndex"] = 3,
 					["offsetX"] = 360,
-					["textAlignIndex"] = 3,
-					["behavior"] = "MSBT_NORMAL",
-					["offsetY"] = 50,
-					["animationStyle"] = "Straight",
 					["iconAlign"] = "Left",
-				},
-				["Incoming"] = {
-					["stickyTextAlignIndex"] = 1,
-					["offsetX"] = -400,
-					["iconAlign"] = "Right",
 					["behavior"] = "MSBT_NORMAL",
 					["offsetY"] = 50,
-					["textAlignIndex"] = 1,
+					["textAlignIndex"] = 3,
 					["animationStyle"] = "Straight",
+				},
+				["Notification"] = {
+					["disabled"] = true,
 				},
 				["Static"] = {
 					["disabled"] = true,
@@ -274,11 +265,20 @@ MSBTProfiles_SavedVars = {
 					["offsetY"] = 0,
 					["name"] = "CRIT",
 				},
-				["Notification"] = {
-					["disabled"] = true,
+				["Incoming"] = {
+					["stickyTextAlignIndex"] = 1,
+					["offsetX"] = -400,
+					["animationStyle"] = "Straight",
+					["iconAlign"] = "Right",
+					["offsetY"] = 50,
+					["textAlignIndex"] = 1,
+					["behavior"] = "MSBT_NORMAL",
 				},
 			},
-			["normalFontSize"] = 15,
+			["hideFullHoTOverheals"] = false,
+			["normalFontName"] = "MSBT Yellowjacket",
+			["groupNumbers"] = true,
+			["creationVersion"] = "5.7.123",
 		},
 	},
 }

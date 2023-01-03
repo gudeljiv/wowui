@@ -20,6 +20,7 @@ PallyPowerDB = {
 			["display"] = {
 				["frameLocked"] = true,
 			},
+			["freeassign"] = false,
 			["enable"] = true,
 			["border"] = "None",
 			["minimap"] = {
@@ -45,16 +46,16 @@ PallyPowerDB = {
 }
 PallyPower_Assignments = {
 	["Vermina"] = {
-		3, -- [1]
-		3, -- [2]
+		2, -- [1]
+		2, -- [2]
 		3, -- [3]
 		1, -- [4]
 		1, -- [5]
-		3, -- [6]
+		2, -- [6]
 		3, -- [7]
 		3, -- [8]
 		3, -- [9]
-		3, -- [10]
+		2, -- [10]
 		2, -- [11]
 	},
 }
