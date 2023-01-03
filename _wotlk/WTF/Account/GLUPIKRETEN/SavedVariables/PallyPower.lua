@@ -36,10 +36,10 @@ PallyPowerDB = {
 		},
 		["Other"] = {
 			["enable"] = true,
+			["WrathTransition"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
-			["WrathTransition"] = true,
 		},
 	},
 }

@@ -587,21 +587,21 @@ AtlasLootClassicDB = {
 			[40724] = "EmblemOfValor:25",
 			[37927] = "honor:5700",
 			[35327] = "honor:3990",
-			[41712] = "EmblemOfHeroism:30",
 			[18826] = "honor:2500",
+			[40689] = "EmblemOfHeroism:40",
 			[40721] = "EmblemOfValor:25",
 			[41570] = "honor:1250",
 			[18874] = "honor:5000",
 			[40817] = "EmblemOfHeroism:45",
 			[33688] = "honor:17100",
 			[28129] = "honor:3800",
-			[42128] = "honor:43400",
+			[28241] = "honor:2280",
 			[42991] = "EmblemOfHeroism:50",
 			[32793] = "honor:5320",
 			[42032] = "honor:33180",
 			[42064] = "honor:33180",
+			[42128] = "honor:43400",
 			[33944] = "honor:5130",
-			[28241] = "honor:2280",
 			[34999] = "honor:9500",
 			[47661] = "EmblemOfTriumph:25",
 			[35095] = "honor:9500",
@@ -682,7 +682,7 @@ AtlasLootClassicDB = {
 			[48716] = "EmblemOfHeroism:40",
 			[41587] = "honor:5700",
 			[32788] = "honor:5320",
-			[40689] = "EmblemOfHeroism:40",
+			[41712] = "EmblemOfHeroism:30",
 			[33734] = "honor:8550",
 			[40692] = "EmblemOfHeroism:40",
 			[16335] = "honor:400",
@@ -1299,11 +1299,10 @@ AtlasLootClassicDB = {
 					-355.9999694824219, -- [4]
 					78.99998474121094, -- [5]
 				},
-				["selectedGameVersion"] = 1,
 				["selected"] = {
 					nil, -- [1]
-					"Uldaman", -- [2]
-					10, -- [3]
+					"TheEyeOfEternity", -- [2]
+					nil, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},

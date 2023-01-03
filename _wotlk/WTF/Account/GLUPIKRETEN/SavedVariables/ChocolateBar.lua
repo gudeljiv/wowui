@@ -15,11 +15,11 @@ ChocolateBarDB = {
 		["Konac - Dreadnaught"] = "Default",
 		["Poklopac - Dreadnaught"] = "Default",
 		["Mxym - Golemagg"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
+		["Grgur - Golemagg"] = "Default",
 		["Verminz - Genesis"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
 		["Augustin - Golemagg"] = "Default",
-		["Grgur - Golemagg"] = "Default",
+		["Tudum - Jin'do"] = "Default",
 		["Koloman - Golemagg"] = "Default",
 		["Pitchwise - Genesis"] = "Default",
 		["Miqa - Golemagg"] = "Default",
@@ -59,7 +59,7 @@ ChocolateBarDB = {
 		["Judawise - Golemagg"] = "Default",
 		["Wells - Jin'do"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
-		["Tudum - Jin'do"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
 	},
 	["profiles"] = {
@@ -641,9 +641,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 694584,
-		["timeAtThisLevel"] = 77125,
-		["timeStamp"] = 615969.797,
+		["total"] = 694754,
+		["timeAtThisLevel"] = 77295,
+		["timeStamp"] = 683044.359,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -716,9 +716,9 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 316,
 	},
 	["Vermina-Golemagg"] = {
-		["total"] = 168007,
-		["timeStamp"] = 621536.183,
-		["timeAtThisLevel"] = 4033,
+		["total"] = 170187,
+		["timeStamp"] = 683205.067,
+		["timeAtThisLevel"] = 1031,
 	},
 	["Provokator-Jin'do"] = {
 		["total"] = 22720,
@@ -735,9 +735,9 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1532401,
-		["timeStamp"] = 616680.87,
-		["timeAtThisLevel"] = 439854,
+		["total"] = 1533607,
+		["timeStamp"] = 682238.182,
+		["timeAtThisLevel"] = 441060,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
@@ -835,9 +835,9 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 420009,
-		["timeAtThisLevel"] = 90334,
-		["timeStamp"] = 1213425.618,
+		["total"] = 423544,
+		["timeAtThisLevel"] = 93869,
+		["timeStamp"] = 682602.6,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,
