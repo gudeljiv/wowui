@@ -873,6 +873,7 @@ AskMrRobotDbClassic = {
 			},
 		},
 		["Vermina - Golemagg"] = {
+			["FirstUse"] = false,
 			["Talents"] = {
 				"503501500200130400000000000000000000000000000000000000000000000000000000000000", -- [1]
 			},
@@ -881,6 +882,269 @@ AskMrRobotDbClassic = {
 					54943, -- [1]
 					57979, -- [2]
 					54937, -- [3]
+				}, -- [1]
+			},
+			["BagItemsAndCounts"] = {
+				[5117] = 5,
+				[6948] = 1,
+				[3385] = 5,
+				[1708] = 18,
+				[43367] = 1,
+				[5799] = 1,
+				[3771] = 14,
+				[14542] = 1,
+				[12564] = 1,
+				[4265] = 2,
+				[7005] = 1,
+				[929] = 6,
+			},
+			["Logging"] = {
+				["LastDiff"] = 1,
+				["LastZone"] = "Eastern Kingdoms",
+			},
+			["LastVersion"] = 11,
+			["Equipped"] = {
+				{
+					[13] = {
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffe6cc80|Hitem:42992::::::::38:::::::::|h[Discerning Eye of the Beast]|h|r",
+						["id"] = 42992,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					},
+					[7] = {
+						["enchantId"] = 15,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cff0070dd|Hitem:10410:15:::::::38:::::::::|h[Leggings of the Fang]|h|r",
+						["id"] = 10410,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					},
+					[14] = {
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffe6cc80|Hitem:42992::::::::38:::::::::|h[Discerning Eye of the Beast]|h|r",
+						["id"] = 42992,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					},
+					[2] = {
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cff1eff00|Hitem:25438::::::::38:::::::::|h[Malachite Pendant]|h|r",
+						["id"] = 25438,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					},
+					[15] = {
+						["enchantId"] = 0,
+						["suffixId"] = 854,
+						["level"] = 0,
+						["link"] = "|cff1eff00|Hitem:7474::::::854:1127460480:38:::::::::|h[Regal Cloak of the Eagle]|h|r",
+						["id"] = 7474,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					},
+					[8] = {
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cff0070dd|Hitem:19509::::::::38:::::::::|h[Dusty Mail Boots]|h|r",
+						["id"] = 19509,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					},
+					[16] = {
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffe6cc80|Hitem:42948::::::::38:::::::::|h[Devout Aurastone Hammer]|h|r",
+						["id"] = 42948,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					},
+					[17] = {
+						["enchantId"] = 0,
+						["suffixId"] = 1191,
+						["level"] = 0,
+						["link"] = "|cff1eff00|Hitem:9873::::::1191:502877568:38:::::::::|h[Renegade Shield of the Bear]|h|r",
+						["id"] = 9873,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					},
+					[5] = {
+						["enchantId"] = 1893,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffe6cc80|Hitem:48691:1893:::::::38:::::::::|h[Tattered Dreadmist Robe]|h|r",
+						["id"] = 48691,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					},
+					[10] = {
+						["enchantId"] = 0,
+						["suffixId"] = 854,
+						["level"] = 0,
+						["link"] = "|cff1eff00|Hitem:9823::::::854:794989824:38:::::::::|h[Durable Gloves of the Eagle]|h|r",
+						["id"] = 9823,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					},
+					[3] = {
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffe6cc80|Hitem:42985::::::::38:::::::::|h[Tattered Dreadmist Mantle]|h|r",
+						["id"] = 42985,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					},
+					[11] = {
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cff1eff00|Hitem:20960::::::::38:::::::::|h[Engraved Truesilver Ring]|h|r",
+						["id"] = 20960,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					},
+					[6] = {
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cff0070dd|Hitem:6319::::::::38:::::::::|h[Girdle of the Blindwatcher]|h|r",
+						["id"] = 6319,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					},
+					[12] = {
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cff1eff00|Hitem:20828::::::::38:::::::::|h[Ring of Twilight Shadows]|h|r",
+						["id"] = 20828,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					},
+					[9] = {
+						["enchantId"] = 0,
+						["suffixId"] = 841,
+						["level"] = 0,
+						["link"] = "|cff1eff00|Hitem:15306::::::841:2015066112:38:::::::::|h[Feral Bindings of the Eagle]|h|r",
+						["id"] = 15306,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					},
 				}, -- [1]
 			},
 			["BagItems"] = {
@@ -1076,270 +1340,6 @@ AskMrRobotDbClassic = {
 					["relicBonusIds"] = {
 					},
 				}, -- [12]
-			},
-			["LastVersion"] = 11,
-			["BagItemsAndCounts"] = {
-				[5117] = 5,
-				[6948] = 1,
-				[3385] = 5,
-				[1708] = 18,
-				[43367] = 1,
-				[5799] = 1,
-				[3771] = 14,
-				[14542] = 1,
-				[12564] = 1,
-				[4265] = 2,
-				[7005] = 1,
-				[929] = 6,
-			},
-			["FirstUse"] = false,
-			["Logging"] = {
-				["LastDiff"] = 1,
-				["LastZone"] = "Eastern Kingdoms",
-			},
-			["Equipped"] = {
-				{
-					[13] = {
-						["enchantId"] = 0,
-						["level"] = 0,
-						["suffixId"] = 0,
-						["link"] = "|cffe6cc80|Hitem:42992::::::::38:::::::::|h[Discerning Eye of the Beast]|h|r",
-						["id"] = 42992,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					},
-					[7] = {
-						["enchantId"] = 15,
-						["level"] = 0,
-						["suffixId"] = 0,
-						["link"] = "|cff0070dd|Hitem:10410:15:::::::38:::::::::|h[Leggings of the Fang]|h|r",
-						["id"] = 10410,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					},
-					[14] = {
-						["enchantId"] = 0,
-						["level"] = 0,
-						["suffixId"] = 0,
-						["link"] = "|cffe6cc80|Hitem:42992::::::::38:::::::::|h[Discerning Eye of the Beast]|h|r",
-						["id"] = 42992,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					},
-					[2] = {
-						["enchantId"] = 0,
-						["level"] = 0,
-						["suffixId"] = 0,
-						["link"] = "|cff1eff00|Hitem:25438::::::::38:::::::::|h[Malachite Pendant]|h|r",
-						["id"] = 25438,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					},
-					[15] = {
-						["enchantId"] = 0,
-						["level"] = 0,
-						["suffixId"] = 854,
-						["link"] = "|cff1eff00|Hitem:7474::::::854:1127460480:38:::::::::|h[Regal Cloak of the Eagle]|h|r",
-						["id"] = 7474,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					},
-					[8] = {
-						["enchantId"] = 0,
-						["level"] = 0,
-						["suffixId"] = 0,
-						["link"] = "|cff0070dd|Hitem:19509::::::::38:::::::::|h[Dusty Mail Boots]|h|r",
-						["id"] = 19509,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					},
-					[16] = {
-						["enchantId"] = 0,
-						["level"] = 0,
-						["suffixId"] = 0,
-						["link"] = "|cffe6cc80|Hitem:42948::::::::38:::::::::|h[Devout Aurastone Hammer]|h|r",
-						["id"] = 42948,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					},
-					[17] = {
-						["enchantId"] = 0,
-						["level"] = 0,
-						["suffixId"] = 1191,
-						["link"] = "|cff1eff00|Hitem:9873::::::1191:502877568:38:::::::::|h[Renegade Shield of the Bear]|h|r",
-						["id"] = 9873,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					},
-					[5] = {
-						["enchantId"] = 1893,
-						["level"] = 0,
-						["suffixId"] = 0,
-						["link"] = "|cffe6cc80|Hitem:48691:1893:::::::38:::::::::|h[Tattered Dreadmist Robe]|h|r",
-						["id"] = 48691,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					},
-					[10] = {
-						["enchantId"] = 0,
-						["level"] = 0,
-						["suffixId"] = 854,
-						["link"] = "|cff1eff00|Hitem:9823::::::854:794989824:38:::::::::|h[Durable Gloves of the Eagle]|h|r",
-						["id"] = 9823,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					},
-					[11] = {
-						["enchantId"] = 0,
-						["level"] = 0,
-						["suffixId"] = 0,
-						["link"] = "|cff1eff00|Hitem:20960::::::::38:::::::::|h[Engraved Truesilver Ring]|h|r",
-						["id"] = 20960,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					},
-					[3] = {
-						["enchantId"] = 0,
-						["level"] = 0,
-						["suffixId"] = 0,
-						["link"] = "|cffe6cc80|Hitem:42985::::::::38:::::::::|h[Tattered Dreadmist Mantle]|h|r",
-						["id"] = 42985,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					},
-					[6] = {
-						["enchantId"] = 0,
-						["level"] = 0,
-						["suffixId"] = 0,
-						["link"] = "|cff0070dd|Hitem:6319::::::::38:::::::::|h[Girdle of the Blindwatcher]|h|r",
-						["id"] = 6319,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					},
-					[12] = {
-						["enchantId"] = 0,
-						["level"] = 0,
-						["suffixId"] = 0,
-						["link"] = "|cff1eff00|Hitem:20828::::::::38:::::::::|h[Ring of Twilight Shadows]|h|r",
-						["id"] = 20828,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					},
-					[9] = {
-						["enchantId"] = 0,
-						["level"] = 0,
-						["suffixId"] = 841,
-						["link"] = "|cff1eff00|Hitem:15306::::::841:2015066112:38:::::::::|h[Feral Bindings of the Eagle]|h|r",
-						["id"] = 15306,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					},
-				}, -- [1]
 			},
 		},
 		["Mxyz - Golemagg"] = {
@@ -1895,9 +1895,9 @@ AskMrRobotDbClassic = {
 				},
 				[10] = {
 				},
-				[-1] = {
-				},
 				[5] = {
+				},
+				[-1] = {
 				},
 				[9] = {
 				},
@@ -2167,13 +2167,13 @@ AskMrRobotDbClassic = {
 				[12840] = 107,
 				[9332] = 1,
 				[20389] = 4,
-				[9333] = 1,
+				[4093] = 1,
 				[17056] = 4,
 				[17032] = 7,
 				[6149] = 10,
-				[9335] = 1,
-				[4093] = 1,
 				[17031] = 6,
+				[9333] = 1,
+				[9335] = 1,
 				[13443] = 1,
 				[18945] = 5,
 				[13331] = 1,
@@ -2436,19 +2436,19 @@ AskMrRobotDbClassic = {
 				},
 				[7] = {
 					[4941] = 10,
-					[3182] = 9,
+					[2321] = 33,
 					[4945] = 1,
 					[2320] = 7,
-					[2321] = 33,
 					[4305] = 5,
+					[3182] = 9,
 				},
 				[8] = {
 				},
 				[10] = {
 				},
-				[-1] = {
-				},
 				[5] = {
+				},
+				[-1] = {
 				},
 				[9] = {
 				},
@@ -2478,8 +2478,6 @@ AskMrRobotDbClassic = {
 				[8] = {
 				},
 				[10] = {
-				},
-				[5] = {
 				},
 				[-1] = {
 					{
@@ -2626,6 +2624,8 @@ AskMrRobotDbClassic = {
 						["relicBonusIds"] = {
 						},
 					}, -- [9]
+				},
+				[5] = {
 				},
 				[9] = {
 				},
@@ -3037,8 +3037,8 @@ AskMrRobotDbClassic = {
 				[33444] = 20,
 				[35479] = 1,
 				[36904] = 10,
-				[44128] = 1,
 				[36905] = 1,
+				[44128] = 1,
 				[38558] = 26,
 			},
 			["Logging"] = {
@@ -3316,8 +3316,6 @@ AskMrRobotDbClassic = {
 				},
 				[10] = {
 				},
-				[5] = {
-				},
 				[-1] = {
 					[35137] = 1,
 					[35131] = 1,
@@ -3328,6 +3326,8 @@ AskMrRobotDbClassic = {
 					[11122] = 1,
 					[35001] = 1,
 					[41589] = 1,
+				},
+				[5] = {
 				},
 				[9] = {
 				},
@@ -3349,12 +3349,12 @@ AskMrRobotDbClassic = {
 				[3363] = 1,
 				[3266] = 12,
 				[3365] = 1,
-				[1380] = 1,
-				[2070] = 1,
-				[2654] = 1,
 				[159] = 1,
 				[1369] = 1,
 				[1376] = 2,
+				[1380] = 1,
+				[2070] = 1,
+				[2654] = 1,
 				[1367] = 1,
 			},
 			["Logging"] = {
@@ -3428,12 +3428,12 @@ AskMrRobotDbClassic = {
 						["relicBonusIds"] = {
 						},
 					},
-					[16] = {
+					[5] = {
 						["enchantId"] = 0,
 						["suffixId"] = 0,
 						["level"] = 0,
-						["link"] = "|cffffffff|Hitem:3268::::::::7:::::::::|h[Forsaken Dagger]|h|r",
-						["id"] = 3268,
+						["link"] = "|cffffffff|Hitem:11851::::::::7:::::::::|h[Scavenger Tunic]|h|r",
+						["id"] = 11851,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
@@ -3444,12 +3444,12 @@ AskMrRobotDbClassic = {
 						["relicBonusIds"] = {
 						},
 					},
-					[5] = {
+					[16] = {
 						["enchantId"] = 0,
 						["suffixId"] = 0,
 						["level"] = 0,
-						["link"] = "|cffffffff|Hitem:11851::::::::7:::::::::|h[Scavenger Tunic]|h|r",
-						["id"] = 11851,
+						["link"] = "|cffffffff|Hitem:3268::::::::7:::::::::|h[Forsaken Dagger]|h|r",
+						["id"] = 3268,
 						["gemIds"] = {
 							0, -- [1]
 							0, -- [2]
@@ -3920,8 +3920,6 @@ AskMrRobotDbClassic = {
 						},
 					}, -- [14]
 				},
-				[5] = {
-				},
 				[-1] = {
 					{
 						["link"] = "|cff0070dd|Hitem:49050::::::::80:::::::::|h[Schematic: Jeeves]|h|r",
@@ -4260,6 +4258,8 @@ AskMrRobotDbClassic = {
 						},
 					}, -- [21]
 				},
+				[5] = {
+				},
 				[9] = {
 				},
 				[11] = {
@@ -4278,26 +4278,6 @@ AskMrRobotDbClassic = {
 					},
 					["itemId"] = 0,
 				},
-				[3603] = {
-					["spellId"] = 54998,
-					["id"] = 3603,
-					["text"] = "Rocket",
-					["materials"] = {
-						[36913] = 6,
-						[37702] = 4,
-					},
-					["itemId"] = 0,
-				},
-				[3252] = {
-					["spellId"] = 44623,
-					["id"] = 3252,
-					["text"] = "8 Str, 8 Agi, 8 Int, 8 Stam, 8 Spirit",
-					["materials"] = {
-						[34054] = 4,
-						[34056] = 2,
-					},
-					["itemId"] = 0,
-				},
 				[3828] = {
 					["spellId"] = 44630,
 					["id"] = 3828,
@@ -4308,32 +4288,22 @@ AskMrRobotDbClassic = {
 					},
 					["itemId"] = 0,
 				},
-				[3845] = {
-					["spellId"] = 44575,
-					["id"] = 3845,
-					["text"] = "50 AP",
-					["materials"] = {
-						[34054] = 24,
-						[34055] = 6,
-					},
-					["itemId"] = 0,
-				},
-				[3604] = {
-					["spellId"] = 54999,
-					["id"] = 3604,
-					["text"] = "Hyper",
-					["materials"] = {
-						[36913] = 6,
-						[37700] = 4,
-					},
-					["itemId"] = 0,
-				},
 				[1600] = {
 					["spellId"] = 60616,
 					["id"] = 1600,
 					["text"] = "38 AP",
 					["materials"] = {
 						[34054] = 6,
+					},
+					["itemId"] = 0,
+				},
+				[3603] = {
+					["spellId"] = 54998,
+					["id"] = 3603,
+					["text"] = "Rocket",
+					["materials"] = {
+						[36913] = 6,
+						[37702] = 4,
 					},
 					["itemId"] = 0,
 				},
@@ -4347,19 +4317,49 @@ AskMrRobotDbClassic = {
 					},
 					["itemId"] = 0,
 				},
-				[3823] = {
-					["id"] = 3823,
-					["text"] = "22 Crit, 75 AP",
-					["spellId"] = 60582,
+				[3604] = {
+					["spellId"] = 54999,
+					["id"] = 3604,
+					["text"] = "Hyper",
+					["materials"] = {
+						[36913] = 6,
+						[37700] = 4,
+					},
 					["itemId"] = 0,
 				},
-				[3831] = {
-					["spellId"] = 47898,
-					["id"] = 3831,
-					["text"] = "23 Haste",
+				[3252] = {
+					["spellId"] = 44623,
+					["id"] = 3252,
+					["text"] = "8 Str, 8 Agi, 8 Int, 8 Stam, 8 Spirit",
 					["materials"] = {
-						[34054] = 16,
-						[34055] = 4,
+						[34054] = 4,
+						[34056] = 2,
+					},
+					["itemId"] = 0,
+				},
+				[3845] = {
+					["spellId"] = 44575,
+					["id"] = 3845,
+					["text"] = "50 AP",
+					["materials"] = {
+						[34054] = 24,
+						[34055] = 6,
+					},
+					["itemId"] = 0,
+				},
+				[3808] = {
+					["id"] = 3808,
+					["text"] = "15 Crit, 40 AP",
+					["spellId"] = 59934,
+					["itemId"] = 0,
+				},
+				[3606] = {
+					["spellId"] = 55016,
+					["id"] = 3606,
+					["text"] = "24 Crit",
+					["materials"] = {
+						[39690] = 6,
+						[39681] = 6,
 					},
 					["itemId"] = 0,
 				},
@@ -4373,12 +4373,6 @@ AskMrRobotDbClassic = {
 					},
 					["itemId"] = 0,
 				},
-				[3817] = {
-					["id"] = 3817,
-					["text"] = "20 Crit, 50 AP",
-					["spellId"] = 59954,
-					["itemId"] = 0,
-				},
 				[3832] = {
 					["spellId"] = 60692,
 					["id"] = 3832,
@@ -4389,20 +4383,26 @@ AskMrRobotDbClassic = {
 					},
 					["itemId"] = 0,
 				},
-				[3606] = {
-					["spellId"] = 55016,
-					["id"] = 3606,
-					["text"] = "24 Crit",
+				[3817] = {
+					["id"] = 3817,
+					["text"] = "20 Crit, 50 AP",
+					["spellId"] = 59954,
+					["itemId"] = 0,
+				},
+				[3831] = {
+					["spellId"] = 47898,
+					["id"] = 3831,
+					["text"] = "23 Haste",
 					["materials"] = {
-						[39690] = 6,
-						[39681] = 6,
+						[34054] = 16,
+						[34055] = 4,
 					},
 					["itemId"] = 0,
 				},
-				[3808] = {
-					["id"] = 3808,
-					["text"] = "15 Crit, 40 AP",
-					["spellId"] = 59934,
+				[3823] = {
+					["id"] = 3823,
+					["text"] = "22 Crit, 75 AP",
+					["spellId"] = 60582,
 					["itemId"] = 0,
 				},
 			},
@@ -5410,17 +5410,17 @@ AskMrRobotDbClassic = {
 				[34996] = 1,
 				[41390] = 1,
 				[40733] = 1,
-				[35953] = 35,
+				[41119] = 46,
 				[40548] = 1,
 				[44330] = 2,
-				[41119] = 46,
+				[35953] = 35,
 				[37257] = 1,
 				[43156] = 1,
 				[41503] = 6,
 				[34722] = 37,
 				[43145] = 17,
 				[6657] = 27,
-				[40188] = 1,
+				[33447] = 53,
 				[39764] = 1,
 				[38617] = 1,
 				[37093] = 48,
@@ -5428,8 +5428,8 @@ AskMrRobotDbClassic = {
 				[38303] = 2,
 				[40767] = 1,
 				[39246] = 1,
+				[40188] = 1,
 				[6948] = 1,
-				[33447] = 53,
 				[40678] = 1,
 				[38698] = 4,
 				[40544] = 1,
@@ -5725,243 +5725,243 @@ AskMrRobotDbClassic = {
 					["SpecSlot"] = 1,
 					["Gear"] = {
 						{
-							["id"] = 40528,
+							["suffixId"] = 0,
 							["level"] = 0,
 							["enchantId"] = 3817,
-							["suffixId"] = 0,
-							["inventoryId"] = 30,
-							["upgradeId"] = 0,
+							["id"] = 40528,
 							["gemIds"] = {
 								41285, -- [1]
 								45862, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["upgradeId"] = 0,
+							["inventoryId"] = 30,
 						}, -- [1]
 						{
-							["id"] = 40065,
+							["suffixId"] = 0,
 							["level"] = 0,
 							["enchantId"] = 0,
-							["suffixId"] = 0,
-							["inventoryId"] = 24,
-							["upgradeId"] = 0,
+							["id"] = 40065,
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["upgradeId"] = 0,
+							["inventoryId"] = 24,
 						}, -- [2]
 						{
-							["id"] = 40530,
+							["suffixId"] = 0,
 							["level"] = 0,
 							["enchantId"] = 3808,
-							["suffixId"] = 0,
-							["inventoryId"] = 32,
-							["upgradeId"] = 0,
+							["id"] = 40530,
 							["gemIds"] = {
 								40086, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["upgradeId"] = 0,
+							["inventoryId"] = 32,
 						}, -- [3]
 						nil, -- [4]
 						{
-							["id"] = 40525,
+							["suffixId"] = 0,
 							["level"] = 0,
 							["enchantId"] = 3832,
-							["suffixId"] = 0,
-							["inventoryId"] = 29,
-							["upgradeId"] = 0,
+							["id"] = 40525,
 							["gemIds"] = {
 								45862, -- [1]
 								45862, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["upgradeId"] = 0,
+							["inventoryId"] = 29,
 						}, -- [5]
 						{
-							["id"] = 40694,
+							["suffixId"] = 0,
 							["level"] = 0,
 							["enchantId"] = 0,
-							["suffixId"] = 0,
-							["inventoryId"] = 34,
-							["upgradeId"] = 0,
+							["id"] = 40694,
 							["gemIds"] = {
 								45862, -- [1]
 								45862, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["upgradeId"] = 0,
+							["inventoryId"] = 34,
 						}, -- [6]
 						{
-							["id"] = 40529,
+							["suffixId"] = 0,
 							["level"] = 0,
 							["enchantId"] = 3823,
-							["suffixId"] = 0,
-							["inventoryId"] = 31,
-							["upgradeId"] = 0,
+							["id"] = 40529,
 							["gemIds"] = {
 								45862, -- [1]
 								49110, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["upgradeId"] = 0,
+							["inventoryId"] = 31,
 						}, -- [7]
 						{
-							["id"] = 44306,
+							["suffixId"] = 0,
 							["level"] = 0,
 							["enchantId"] = 3606,
-							["suffixId"] = 0,
-							["inventoryId"] = 37,
-							["upgradeId"] = 0,
+							["id"] = 44306,
 							["gemIds"] = {
 								45862, -- [1]
 								45862, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["upgradeId"] = 0,
+							["inventoryId"] = 37,
 						}, -- [8]
 						{
-							["id"] = 40330,
+							["suffixId"] = 0,
 							["level"] = 0,
 							["enchantId"] = 3845,
-							["suffixId"] = 0,
-							["inventoryId"] = 28,
-							["upgradeId"] = 0,
+							["id"] = 40330,
 							["gemIds"] = {
 								45862, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["upgradeId"] = 0,
+							["inventoryId"] = 28,
 						}, -- [9]
 						{
-							["id"] = 40261,
+							["suffixId"] = 0,
 							["level"] = 0,
 							["enchantId"] = 3603,
-							["suffixId"] = 0,
-							["inventoryId"] = 27,
-							["upgradeId"] = 0,
+							["id"] = 40261,
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["upgradeId"] = 0,
+							["inventoryId"] = 27,
 						}, -- [10]
 						{
-							["id"] = 39401,
+							["suffixId"] = 0,
 							["level"] = 0,
 							["enchantId"] = 3839,
-							["suffixId"] = 0,
-							["inventoryId"] = 9,
-							["upgradeId"] = 0,
+							["id"] = 39401,
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["upgradeId"] = 0,
+							["inventoryId"] = 9,
 						}, -- [11]
 						{
-							["id"] = 40075,
+							["suffixId"] = 0,
 							["level"] = 0,
 							["enchantId"] = 3839,
-							["suffixId"] = 0,
-							["inventoryId"] = 25,
-							["upgradeId"] = 0,
+							["id"] = 40075,
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["upgradeId"] = 0,
+							["inventoryId"] = 25,
 						}, -- [12]
 						{
-							["id"] = 40684,
+							["suffixId"] = 0,
 							["level"] = 0,
 							["enchantId"] = 0,
-							["suffixId"] = 0,
-							["inventoryId"] = 33,
-							["upgradeId"] = 0,
+							["id"] = 40684,
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["upgradeId"] = 0,
+							["inventoryId"] = 33,
 						}, -- [13]
 						{
-							["id"] = 39257,
+							["suffixId"] = 0,
 							["level"] = 0,
 							["enchantId"] = 0,
-							["suffixId"] = 0,
-							["inventoryId"] = 23,
-							["upgradeId"] = 0,
+							["id"] = 39257,
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["upgradeId"] = 0,
+							["inventoryId"] = 23,
 						}, -- [14]
 						{
-							["id"] = 40250,
+							["suffixId"] = 0,
 							["level"] = 0,
 							["enchantId"] = 3831,
-							["suffixId"] = 0,
-							["inventoryId"] = 26,
-							["upgradeId"] = 0,
+							["id"] = 40250,
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["upgradeId"] = 0,
+							["inventoryId"] = 26,
 						}, -- [15]
 						{
-							["id"] = 37852,
+							["suffixId"] = 0,
 							["level"] = 0,
 							["enchantId"] = 3789,
-							["suffixId"] = 0,
-							["inventoryId"] = 22,
-							["upgradeId"] = 0,
+							["id"] = 37852,
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["upgradeId"] = 0,
+							["inventoryId"] = 22,
 						}, -- [16]
 						{
-							["id"] = 37852,
+							["suffixId"] = 0,
 							["level"] = 0,
 							["enchantId"] = 3789,
-							["suffixId"] = 0,
-							["inventoryId"] = 21,
-							["upgradeId"] = 0,
+							["id"] = 37852,
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["upgradeId"] = 0,
+							["inventoryId"] = 21,
 						}, -- [17]
 						{
-							["id"] = 40716,
+							["suffixId"] = 0,
 							["level"] = 0,
 							["enchantId"] = 0,
-							["suffixId"] = 0,
-							["inventoryId"] = 35,
-							["upgradeId"] = 0,
+							["id"] = 40716,
 							["gemIds"] = {
 								0, -- [1]
 								0, -- [2]
 								0, -- [3]
 								0, -- [4]
 							},
+							["upgradeId"] = 0,
+							["inventoryId"] = 35,
 						}, -- [18]
 					},
 				}, -- [1]
@@ -5976,20 +5976,18 @@ AskMrRobotDbClassic = {
 				[10] = {
 					[12840] = 96,
 					[4609] = 1,
-					[31674] = 1,
+					[27684] = 1,
 					[30721] = 1,
 					[23615] = 1,
-					[27684] = 1,
+					[31674] = 1,
 					[12841] = 97,
 					[12843] = 10,
 					[29736] = 41,
-					[35487] = 1,
+					[31675] = 1,
 					[23609] = 1,
 					[2820] = 1,
 					[12846] = 1,
-					[31675] = 1,
-				},
-				[5] = {
+					[35487] = 1,
 				},
 				[-1] = {
 					[41589] = 1,
@@ -5998,12 +5996,12 @@ AskMrRobotDbClassic = {
 					[35146] = 1,
 					[34997] = 2,
 					[35094] = 1,
-					[35066] = 1,
 					[33919] = 1,
+					[35066] = 1,
 					[35067] = 1,
 					[35068] = 1,
 					[35131] = 1,
-					[40185] = 1,
+					[35070] = 1,
 					[40279] = 1,
 					[35069] = 1,
 					[35135] = 1,
@@ -6011,7 +6009,9 @@ AskMrRobotDbClassic = {
 					[37865] = 1,
 					[49050] = 1,
 					[35108] = 1,
-					[35070] = 1,
+					[40185] = 1,
+				},
+				[5] = {
 				},
 				[9] = {
 				},
@@ -6035,6 +6035,8 @@ AskMrRobotDbClassic = {
 				[8] = {
 				},
 				[10] = {
+				},
+				[5] = {
 				},
 				[-1] = {
 					{
@@ -6454,8 +6456,6 @@ AskMrRobotDbClassic = {
 						},
 					}, -- [26]
 				},
-				[5] = {
-				},
 				[9] = {
 				},
 				[11] = {
@@ -6649,13 +6649,13 @@ AskMrRobotDbClassic = {
 				},
 				[10] = {
 				},
+				[5] = {
+				},
 				[-1] = {
 					[38558] = 446,
 					[38557] = 16,
 					[44128] = 5,
 					[38561] = 14,
-				},
-				[5] = {
 				},
 				[9] = {
 				},
@@ -6833,200 +6833,6 @@ AskMrRobotDbClassic = {
 				[11] = {
 				},
 				[9] = {
-				},
-				[5] = {
-					{
-						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cff1eff00|Hitem:43108::::::::80:::::::::|h[Ebon Pigment]|h|r",
-						["id"] = 43108,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					}, -- [1]
-					{
-						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffffffff|Hitem:39354::::::::80:::::::::|h[Light Parchment]|h|r",
-						["id"] = 39354,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					}, -- [2]
-					{
-						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cff1eff00|Hitem:43107::::::::80:::::::::|h[Sapphire Pigment]|h|r",
-						["id"] = 43107,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					}, -- [3]
-					{
-						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffffffff|Hitem:39502::::::::80:::::::::|h[Resilient Parchment]|h|r",
-						["id"] = 39502,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					}, -- [4]
-					{
-						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffffffff|Hitem:39501::::::::80:::::::::|h[Heavy Parchment]|h|r",
-						["id"] = 39501,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					}, -- [5]
-					{
-						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffffffff|Hitem:10648::::::::80:::::::::|h[Common Parchment]|h|r",
-						["id"] = 10648,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					}, -- [6]
-					{
-						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffffffff|Hitem:37101::::::::80:::::::::|h[Ivory Ink]|h|r",
-						["id"] = 37101,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					}, -- [7]
-					{
-						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:40440::40022:41432:40016::::80:::::::::|h[Brutal Gladiator's Dreadplate Chestpiece]|h|r",
-						["id"] = 40440,
-						["gemIds"] = {
-							40022, -- [1]
-							41432, -- [2]
-							40016, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					}, -- [8]
-					{
-						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:41589::::::::80:::::::::|h[Battlemaster's Resolve]|h|r",
-						["id"] = 41589,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					}, -- [9]
-					{
-						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:37865::::::::80:::::::::|h[Medallion of the Horde]|h|r",
-						["id"] = 37865,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					}, -- [10]
-					{
-						["enchantId"] = 3368,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:34997:3368:::::::80:::::::::|h[Brutal Gladiator's Decapitator]|h|r",
-						["id"] = 34997,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					}, -- [11]
-					{
-						["enchantId"] = 0,
-						["suffixId"] = 0,
-						["level"] = 0,
-						["link"] = "|cffa335ee|Hitem:40441::::::::80:::::::::|h[Brutal Gladiator's Dreadplate Gauntlets]|h|r",
-						["id"] = 40441,
-						["gemIds"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0, -- [4]
-						},
-						["upgradeId"] = 0,
-						["relicBonusIds"] = {
-						},
-					}, -- [12]
 				},
 				[-1] = {
 					{
@@ -7445,6 +7251,200 @@ AskMrRobotDbClassic = {
 						["relicBonusIds"] = {
 						},
 					}, -- [26]
+				},
+				[5] = {
+					{
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cff1eff00|Hitem:43108::::::::80:::::::::|h[Ebon Pigment]|h|r",
+						["id"] = 43108,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					}, -- [1]
+					{
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffffffff|Hitem:39354::::::::80:::::::::|h[Light Parchment]|h|r",
+						["id"] = 39354,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					}, -- [2]
+					{
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cff1eff00|Hitem:43107::::::::80:::::::::|h[Sapphire Pigment]|h|r",
+						["id"] = 43107,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					}, -- [3]
+					{
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffffffff|Hitem:39502::::::::80:::::::::|h[Resilient Parchment]|h|r",
+						["id"] = 39502,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					}, -- [4]
+					{
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffffffff|Hitem:39501::::::::80:::::::::|h[Heavy Parchment]|h|r",
+						["id"] = 39501,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					}, -- [5]
+					{
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffffffff|Hitem:10648::::::::80:::::::::|h[Common Parchment]|h|r",
+						["id"] = 10648,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					}, -- [6]
+					{
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffffffff|Hitem:37101::::::::80:::::::::|h[Ivory Ink]|h|r",
+						["id"] = 37101,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					}, -- [7]
+					{
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffa335ee|Hitem:40440::40022:41432:40016::::80:::::::::|h[Brutal Gladiator's Dreadplate Chestpiece]|h|r",
+						["id"] = 40440,
+						["gemIds"] = {
+							40022, -- [1]
+							41432, -- [2]
+							40016, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					}, -- [8]
+					{
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffa335ee|Hitem:41589::::::::80:::::::::|h[Battlemaster's Resolve]|h|r",
+						["id"] = 41589,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					}, -- [9]
+					{
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffa335ee|Hitem:37865::::::::80:::::::::|h[Medallion of the Horde]|h|r",
+						["id"] = 37865,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					}, -- [10]
+					{
+						["enchantId"] = 3368,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffa335ee|Hitem:34997:3368:::::::80:::::::::|h[Brutal Gladiator's Decapitator]|h|r",
+						["id"] = 34997,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					}, -- [11]
+					{
+						["enchantId"] = 0,
+						["suffixId"] = 0,
+						["level"] = 0,
+						["link"] = "|cffa335ee|Hitem:40441::::::::80:::::::::|h[Brutal Gladiator's Dreadplate Gauntlets]|h|r",
+						["id"] = 40441,
+						["gemIds"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0, -- [4]
+						},
+						["upgradeId"] = 0,
+						["relicBonusIds"] = {
+						},
+					}, -- [12]
 				},
 			},
 			["BagItems"] = {
@@ -7985,12 +7985,12 @@ AskMrRobotDbClassic = {
 				[36817] = 1,
 				[33470] = 7,
 				[37097] = 1,
-				[6948] = 1,
+				[34997] = 1,
 				[34806] = 1,
 				[22829] = 1,
 				[33444] = 2,
 				[20815] = 1,
-				[34997] = 1,
+				[6948] = 1,
 				[33447] = 16,
 				[34721] = 27,
 				[33449] = 20,
@@ -8316,20 +8316,6 @@ AskMrRobotDbClassic = {
 				},
 				[9] = {
 				},
-				[5] = {
-					[39502] = 2,
-					[40440] = 1,
-					[40441] = 1,
-					[39354] = 20,
-					[34997] = 1,
-					[41589] = 1,
-					[37101] = 17,
-					[43107] = 5,
-					[37865] = 1,
-					[43108] = 18,
-					[10648] = 15,
-					[39501] = 20,
-				},
 				[-1] = {
 					[38674] = 1,
 					[38675] = 1,
@@ -8357,6 +8343,20 @@ AskMrRobotDbClassic = {
 					[39322] = 1,
 					[38667] = 1,
 					[34655] = 1,
+				},
+				[5] = {
+					[39502] = 2,
+					[40440] = 1,
+					[40441] = 1,
+					[39354] = 20,
+					[34997] = 1,
+					[41589] = 1,
+					[37101] = 17,
+					[43107] = 5,
+					[37865] = 1,
+					[43108] = 18,
+					[39501] = 20,
+					[10648] = 15,
 				},
 			},
 		},
@@ -8569,11 +8569,11 @@ AskMrRobotDbClassic = {
 						false, -- [1]
 						false, -- [2]
 					},
-					[533] = {
+					[603] = {
 						false, -- [1]
 						false, -- [2]
 					},
-					[603] = {
+					[533] = {
 						false, -- [1]
 						false, -- [2]
 					},
@@ -8616,11 +8616,11 @@ AskMrRobotDbClassic = {
 						false, -- [1]
 						false, -- [2]
 					},
-					[603] = {
+					[533] = {
 						false, -- [1]
 						false, -- [2]
 					},
-					[533] = {
+					[603] = {
 						false, -- [1]
 						false, -- [2]
 					},
@@ -8677,7 +8677,7 @@ AskMrRobotDbClassic = {
 						false, -- [1]
 						false, -- [2]
 					},
-					[603] = {
+					[533] = {
 						false, -- [1]
 						false, -- [2]
 					},
@@ -8687,7 +8687,7 @@ AskMrRobotDbClassic = {
 						false, -- [3]
 						false, -- [4]
 					},
-					[533] = {
+					[603] = {
 						false, -- [1]
 						false, -- [2]
 					},
@@ -8710,11 +8710,11 @@ AskMrRobotDbClassic = {
 						false, -- [1]
 						false, -- [2]
 					},
-					[603] = {
+					[533] = {
 						false, -- [1]
 						false, -- [2]
 					},
-					[533] = {
+					[603] = {
 						false, -- [1]
 						false, -- [2]
 					},
@@ -8745,6 +8745,9 @@ AskMrRobotDbClassic = {
 			},
 		},
 		["Moolatz - Golemagg"] = {
+			["options"] = {
+				["uiScale"] = 0.85,
+			},
 			["Logging"] = {
 				["Auto"] = {
 					[649] = {
@@ -8771,7 +8774,7 @@ AskMrRobotDbClassic = {
 						false, -- [1]
 						false, -- [2]
 					},
-					[533] = {
+					[603] = {
 						false, -- [1]
 						false, -- [2]
 					},
@@ -8781,14 +8784,11 @@ AskMrRobotDbClassic = {
 						false, -- [3]
 						false, -- [4]
 					},
-					[603] = {
+					[533] = {
 						false, -- [1]
 						false, -- [2]
 					},
 				},
-			},
-			["options"] = {
-				["uiScale"] = 0.85,
 			},
 			["minimap"] = {
 				["hide"] = true,
@@ -8821,7 +8821,7 @@ AskMrRobotDbClassic = {
 						false, -- [1]
 						false, -- [2]
 					},
-					[603] = {
+					[533] = {
 						false, -- [1]
 						false, -- [2]
 					},
@@ -8831,7 +8831,7 @@ AskMrRobotDbClassic = {
 						false, -- [3]
 						false, -- [4]
 					},
-					[533] = {
+					[603] = {
 						false, -- [1]
 						false, -- [2]
 					},
@@ -8872,7 +8872,7 @@ AskMrRobotDbClassic = {
 						false, -- [1]
 						false, -- [2]
 					},
-					[533] = {
+					[603] = {
 						false, -- [1]
 						false, -- [2]
 					},
@@ -8882,7 +8882,7 @@ AskMrRobotDbClassic = {
 						false, -- [3]
 						false, -- [4]
 					},
-					[603] = {
+					[533] = {
 						false, -- [1]
 						false, -- [2]
 					},
@@ -8912,11 +8912,11 @@ AskMrRobotDbClassic = {
 						false, -- [1]
 						false, -- [2]
 					},
-					[603] = {
+					[533] = {
 						false, -- [1]
 						false, -- [2]
 					},
-					[533] = {
+					[603] = {
 						false, -- [1]
 						false, -- [2]
 					},
@@ -8963,11 +8963,11 @@ AskMrRobotDbClassic = {
 						false, -- [1]
 						false, -- [2]
 					},
-					[603] = {
+					[533] = {
 						false, -- [1]
 						false, -- [2]
 					},
-					[533] = {
+					[603] = {
 						false, -- [1]
 						false, -- [2]
 					},
@@ -9010,11 +9010,11 @@ AskMrRobotDbClassic = {
 						false, -- [1]
 						false, -- [2]
 					},
-					[603] = {
+					[533] = {
 						false, -- [1]
 						false, -- [2]
 					},
-					[533] = {
+					[603] = {
 						false, -- [1]
 						false, -- [2]
 					},

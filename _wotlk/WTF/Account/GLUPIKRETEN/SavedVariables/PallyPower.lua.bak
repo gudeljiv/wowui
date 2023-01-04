@@ -9,38 +9,38 @@ PallyPowerDB = {
 		["Battitude - Golemagg"] = "Other",
 		["Mxyzptlk - Golemagg"] = "Other",
 		["Miqa - Golemagg"] = "Other",
-		["Vermin - Golemagg"] = "Other",
-		["Battlearm - Golemagg"] = "Other",
 		["Tadibey - Golemagg"] = "Other",
+		["Battlearm - Golemagg"] = "Other",
+		["Vermin - Golemagg"] = "Other",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["freeassign"] = false,
-			["autobuff"] = {
-				["autobutton"] = false,
-			},
 			["buffscale"] = 1,
-			["SalvInCombat"] = true,
 			["seal"] = 2,
-			["minimap"] = {
-				["show"] = false,
-			},
-			["ShowTooltips"] = false,
-			["configscale"] = 0.9967937838582688,
-			["WrathTransition"] = true,
 			["display"] = {
 				["frameLocked"] = true,
 			},
+			["freeassign"] = false,
 			["enable"] = true,
 			["border"] = "None",
+			["minimap"] = {
+				["show"] = false,
+			},
+			["configscale"] = 0.9967937838582688,
+			["autobuff"] = {
+				["autobutton"] = false,
+			},
+			["SalvInCombat"] = true,
+			["WrathTransition"] = true,
+			["ShowTooltips"] = false,
 			["rf"] = false,
 		},
 		["Other"] = {
 			["enable"] = true,
+			["WrathTransition"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
-			["WrathTransition"] = true,
 		},
 	},
 }
@@ -49,7 +49,7 @@ PallyPower_Assignments = {
 		2, -- [1]
 		2, -- [2]
 		3, -- [3]
-		3, -- [4]
+		1, -- [4]
 		1, -- [5]
 		2, -- [6]
 		3, -- [7]
