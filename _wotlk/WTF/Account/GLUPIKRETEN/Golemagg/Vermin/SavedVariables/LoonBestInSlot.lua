@@ -35,7 +35,7 @@ LBISSettings = {
 		["RestorationDruid"] = true,
 		["SubtletyRogue"] = true,
 	},
-	["SelectedSpec"] = "",
+	["SelectedSpec"] = "Protection Warrior",
 	["minimap"] = {
 		["minimapPos"] = 180,
 		["hide"] = true,
@@ -46,10 +46,10 @@ LBISSettings = {
 	},
 	["ShowPriority"] = true,
 	["SelectedRank"] = "All",
-	["ShowCustom"] = true,
-	["SelectedSourceType"] = "All",
 	["PriorityList"] = {
 	},
-	["SelectedSlot"] = "All",
+	["SelectedSourceType"] = "All",
+	["SelectedSlot"] = "Off Hand",
+	["ShowCustom"] = true,
 	["SelectedPhase"] = "All",
 }

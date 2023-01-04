@@ -35,7 +35,7 @@ LBISSettings = {
 		["AfflictionWarlock"] = true,
 		["SubtletyRogue"] = true,
 	},
-	["SelectedSpec"] = "",
+	["SelectedSpec"] = "Protection Warrior",
 	["minimap"] = {
 		["minimapPos"] = 180,
 		["hide"] = true,
@@ -46,10 +46,10 @@ LBISSettings = {
 	},
 	["ShowPriority"] = true,
 	["SelectedRank"] = "All",
+	["SelectedSlot"] = "Off Hand",
+	["SelectedSourceType"] = "All",
+	["ShowCustom"] = true,
 	["PriorityList"] = {
 	},
-	["SelectedSourceType"] = "All",
-	["SelectedSlot"] = "All",
-	["ShowCustom"] = true,
 	["SelectedPhase"] = "All",
 }

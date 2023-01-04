@@ -15,24 +15,21 @@ PallyPowerDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["buffscale"] = 1,
-			["seal"] = 2,
-			["display"] = {
-				["frameLocked"] = true,
-			},
 			["freeassign"] = false,
-			["enable"] = true,
-			["border"] = "None",
+			["buffscale"] = 1,
+			["SalvInCombat"] = true,
+			["seal"] = 2,
 			["minimap"] = {
 				["show"] = false,
 			},
-			["configscale"] = 0.9967937838582688,
-			["autobuff"] = {
-				["autobutton"] = false,
-			},
-			["SalvInCombat"] = true,
-			["WrathTransition"] = true,
 			["ShowTooltips"] = false,
+			["configscale"] = 0.9967937838582688,
+			["WrathTransition"] = true,
+			["display"] = {
+				["frameLocked"] = true,
+			},
+			["enable"] = true,
+			["border"] = "None",
 			["rf"] = false,
 		},
 		["Other"] = {

@@ -12,13 +12,13 @@ VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:1645
-/castsequence [combat] reset=combat item:3385
+/use [nocombat]item:43523
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:3771
-/castsequence [combat] reset=combat item:929
+/use [nocombat]item:43523
+/castsequence [combat] reset=combat item:33447
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:33454
@@ -27,7 +27,7 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:929
+/use item:33447
 END
 VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 #showtooltip Prowl
@@ -43,8 +43,8 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
-/run aTotemBar:ClearAllPoints()
-/run aTotemBar:SetPoint('BOTTOM', 'MainMenuBar', 'TOP', 0, 75)
+/run PallyPowerFrame:ClearAllPoints()
+/run PallyPowerFrame:SetPoint('TOPLEFT', Questie_BaseFrame, 'TOPLEFT', -105, -100)
 END
 VER 3 000000000000001B "TSMMacro" "INV_Misc_Flower_01"
 /click TSMShoppingBuyoutBtn

@@ -3,7 +3,7 @@ Frame: PallyPowerFrame
 FrameLevel: 1
 Anchor: RIGHT
 X: -144
-Y: 329
+Y: 295
 W: 1
 H: 1
 Frame: PossessButton1

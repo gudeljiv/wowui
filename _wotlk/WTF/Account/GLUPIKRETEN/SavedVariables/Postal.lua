@@ -8,10 +8,10 @@ Postal3DB = {
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
 		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
-		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
-		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
+		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 		["Wells - Jin'do"] = "Wells - Jin'do",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
@@ -81,13 +81,13 @@ Postal3DB = {
 		},
 		["Tandaram - Jin'do"] = {
 		},
-		["Moolatz - Golemagg"] = {
+		["Pitchwise - Ashbringer"] = {
 		},
 		["Tudum - Ashbringer"] = {
 		},
 		["Augustin - Golemagg"] = {
 		},
-		["Pitchwise - Ashbringer"] = {
+		["Moolatz - Golemagg"] = {
 		},
 		["Wells - Jin'do"] = {
 		},

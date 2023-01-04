@@ -27,9 +27,6 @@ PallyPowerDB = {
 				["show"] = false,
 			},
 			["configscale"] = 0.9967937838582688,
-			["autobuff"] = {
-				["autobutton"] = false,
-			},
 			["SalvInCombat"] = true,
 			["WrathTransition"] = true,
 			["ShowTooltips"] = false,
@@ -37,10 +34,10 @@ PallyPowerDB = {
 		},
 		["Other"] = {
 			["enable"] = true,
-			["WrathTransition"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
+			["WrathTransition"] = true,
 		},
 	},
 }
