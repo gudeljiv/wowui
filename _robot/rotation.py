@@ -71,11 +71,18 @@ try:
 except:
     print("healing abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
 
+global_skills = {}
+try:
+    for skill in skills["globals"]:
+        global_skills[skill["name"]] = cv2.imread(abilities_folder + "/" + skill["name"] + " G.png")
+except:
+    print("global abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
+
 abilities = {}
 try:
     for skill in skills[wow_class]:
         abilities[skill["name"]] = cv2.imread(abilities_folder + "/" + skill["name"] + " M.png")
-        abilities = {**abilities, **healing}
+        abilities = {**abilities, **healing, **global_skills}
 except:
     print("main abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
 
@@ -209,7 +216,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                 for skill in skills[wow_class]:
                     try:
                         abilities[skill["name"]] = cv2.imread(abilities_folder + "/" + skill["name"] + " M.png")
-                        abilities = {**abilities, **healing}
+                        abilities = {**abilities, **healing, **global_skills}
                     except:
                         print("missing spell in ", wow_class, " --> ", skill["name"], datetime.now().strftime("%H:%M:%S"))
 
@@ -243,7 +250,7 @@ with keyboard.Listener(on_press=on_press) as listener:
 
                 # rotation
                 try:
-                    for skill in skills[wow_class] + skills["healing"]:
+                    for skill in skills[wow_class] + skills["healing"] + skills["globals"]:
                         for ability in abilities:
                             if ability == skill["name"]:
                                 try:

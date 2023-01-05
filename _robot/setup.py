@@ -225,6 +225,23 @@ with keyboard.Listener(on_press=on_press) as listener:
                     mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
                     time.sleep(time2)
 
+                for skill in skills["globals"]:
+                    number = number + 1
+                    print(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " G.png")
+                    pyautogui.hotkey("enter")
+                    pyperclip.copy('/run RotationTextureFrame1.texture:SetTexture(' + str(skill["type"]) + '(' + str(skill["id"]) + '))')
+                    if os.name == "posix":
+                        pyautogui.hotkey('command', 'v')
+                    else:
+                        pyautogui.hotkey('ctrl', 'v')
+                    pyautogui.hotkey("enter")
+
+                    time.sleep(time1)
+                    m_image = abilities_folder + slash + str(skill["name"]) + " G.png".format(**p_main)
+                    main_image = sct.grab(p_main)
+                    mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
+                    time.sleep(time2)
+
                 pyautogui.hotkey("enter")
                 pyperclip.copy('/run RotationTextureFrame1:Hide()')
                 if os.name == "posix":

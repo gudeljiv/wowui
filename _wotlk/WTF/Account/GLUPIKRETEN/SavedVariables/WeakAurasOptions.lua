@@ -2939,7 +2939,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "51058=134760",
 		},
 		["Whip Terrorfiend"] = {
-			["spells"] = "35673=132415",
+			["spells"] = "35673=135285",
 		},
 		["Breastplate of Kings"] = {
 			["spells"] = "34533=136241",
@@ -7055,7 +7055,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "10525=136247",
 		},
 		["Auto Attack"] = {
-			["spells"] = "6603=132415",
+			["spells"] = "6603=135285",
 		},
 		["Increased Rejuvenation"] = {
 			["spells"] = "352508=136030",
@@ -47533,6 +47533,9 @@ WeakAurasOptionsSaved = {
 		["Wave Beam"] = {
 			["spells"] = "6061=135797,37647=135803",
 		},
+		["Frostbolt of Ages"] = {
+			["spells"] = "11=135846",
+		},
 		["Disenchant Visual"] = {
 			["spells"] = "61335=132853",
 		},
@@ -47970,9 +47973,6 @@ WeakAurasOptionsSaved = {
 		},
 		["Fel Immolate"] = {
 			["spells"] = "37628=135802,39670=135802",
-		},
-		["Frostbolt of Ages"] = {
-			["spells"] = "11=135846",
 		},
 		["Placing Rocknail Flayer Carcass"] = {
 			["spells"] = "38439=132165",
@@ -51797,13 +51797,13 @@ WeakAurasOptionsSaved = {
 			["spells"] = "51203=136007",
 		},
 	},
-	["spellCacheStrings"] = true,
 	["spellCacheAchivements"] = true,
 	["frame"] = {
-		["xOffset"] = 574.9664611816406,
+		["xOffset"] = 555.2838439941406,
 		["width"] = 1002.632263183594,
 		["height"] = 980.2842407226562,
-		["yOffset"] = 1102.254150390625,
+		["yOffset"] = 1255.9052734375,
 	},
+	["spellCacheStrings"] = true,
 	["build"] = "47168",
 }

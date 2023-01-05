@@ -42,26 +42,20 @@ PallyPowerDB = {
 	},
 }
 PallyPower_Assignments = {
-	["Vermina"] = {
-		2, -- [1]
-		2, -- [2]
-		3, -- [3]
-		1, -- [4]
-		1, -- [5]
-		2, -- [6]
-		3, -- [7]
-		3, -- [8]
-		3, -- [9]
-		2, -- [10]
-		2, -- [11]
-	},
 }
 PallyPower_NormalAssignments = {
 }
 PallyPower_AuraAssignments = {
-	["Vermina"] = 2,
+	["Ondisch"] = 3,
+	["Zoqur"] = 4,
+	["Lonnath"] = 0,
 	["Tökfilkó"] = 0,
+	["Vermina"] = 2,
+	["Monikà"] = 1,
+	["Berri"] = 3,
+	["Monikå"] = 1,
 	["Skodicek"] = 1,
+	["Xjereziah"] = 2,
 }
 PallyPower_SavedPresets = {
 	["PallyPower_Assignments"] = {

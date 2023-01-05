@@ -2,6 +2,11 @@
 
 skills = dict()
 
+skills["globals"] = [
+    {"name": "flame spike", "type": "GetSpellTexture", "id": 56091, "key": "1"},
+    {"name": "engulf in flames", "type": "GetSpellTexture", "id": 56092, "key": "2"},
+]
+
 skills["healing"] = [
     {"name": "healthstone", "type": "GetSpellTexture", "id": 5720,  "key": "4", "modifier": "alt"},
     {"name": "healing potion", "type": "GetSpellTexture", "id": 28491, "key": "5", "modifier": "alt"},
