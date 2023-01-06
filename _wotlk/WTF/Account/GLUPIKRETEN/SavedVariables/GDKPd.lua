@@ -1,5 +1,9 @@
 
 GDKPd_DB = {
+	["global"] = {
+		["shownPopupAddonMsg4_2"] = true,
+		["minimapPos"] = 33.64834214119968,
+	},
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Vermina - Golemagg"] = "Vermina - Golemagg",
@@ -10,10 +14,6 @@ GDKPd_DB = {
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Miqa - Golemagg"] = "Miqa - Golemagg",
 		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
-	},
-	["global"] = {
-		["shownPopupAddonMsg4_2"] = true,
-		["minimapPos"] = 33.64834214119968,
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
@@ -121,6 +121,6 @@ GDKPd_PotData = {
 	},
 }
 GDKPd_BalanceData = {
-	["Stopndie"] = 0,
 	["Arachad"] = 0,
+	["Stopndie"] = 0,
 }
