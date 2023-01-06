@@ -38,7 +38,7 @@ function CraftingTask.__init(self)
 
 	if not private.registeredCallbacks then
 		Profession.RegisterStateCallback(private.UpdateTasks)
-		TSM.Crafting.ProfessionScanner.RegisterHasScannedCallback(private.UpdateTasks)
+		Profession.RegisterHasScannedCallback(private.UpdateTasks)
 		BagTracking.RegisterCallback(private.UpdateTasks)
 		private.registeredCallbacks = true
 
@@ -159,7 +159,7 @@ function CraftingTask._UpdateState(self)
 	elseif self._profession ~= Profession.GetCurrentProfession() then
 		-- the profession isn't opened
 		return self:_SetButtonState(true, L["OPEN"])
-	elseif not TSM.Crafting.ProfessionScanner.HasScanned() then
+	elseif not Profession.HasScanned() then
 		-- the profession is opened, but we haven't yet fully scanned it
 		return self:_SetButtonState(false, strupper(OPENING))
 	elseif private.currentlyCrafting == self then

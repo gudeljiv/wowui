@@ -124,7 +124,6 @@ function ActionButton:Acquire()
 	self._state:PublisherForKeyChange("clickCooldownActive")
 		:MapBooleanWithValues(self:__closure("_HandleFrameUpdate"), nil)
 		:CallMethod(frame, "TSMSetOnUpdate")
-
 end
 
 function ActionButton:Release()

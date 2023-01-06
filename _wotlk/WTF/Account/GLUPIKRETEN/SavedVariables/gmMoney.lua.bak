@@ -1,13 +1,9 @@
 
 GMMONEY = {
-	["Ashbringer"] = {
-		["Tudum"] = {
-			["GOLD"] = 112,
-			["CLASS"] = "WARRIOR",
-		},
-		["Pitchwise"] = {
+	["Hydraxian Waterlords"] = {
+		["Battlearm"] = {
 			["GOLD"] = 0,
-			["CLASS"] = "SHAMAN",
+			["CLASS"] = "HUNTER",
 		},
 	},
 	["Mirage Raceway"] = {
@@ -26,7 +22,7 @@ GMMONEY = {
 			["CLASS"] = "HUNTER",
 		},
 		["Mxyz"] = {
-			["GOLD"] = 12934333,
+			["GOLD"] = 12924733,
 			["CLASS"] = "PRIEST",
 		},
 		["Handrmandr"] = {
@@ -37,17 +33,17 @@ GMMONEY = {
 			["GOLD"] = 172735,
 			["CLASS"] = "WARLOCK",
 		},
+		["Battitude"] = {
+			["GOLD"] = 127,
+			["CLASS"] = "ROGUE",
+		},
+		["Moolatz"] = {
+			["GOLD"] = 103606883,
+			["CLASS"] = "DRUID",
+		},
 		["Augustin"] = {
 			["GOLD"] = 97067,
 			["CLASS"] = "MAGE",
-		},
-		["Moolatz"] = {
-			["GOLD"] = 43048971,
-			["CLASS"] = "DRUID",
-		},
-		["Tadibey"] = {
-			["GOLD"] = 298737,
-			["CLASS"] = "SHAMAN",
 		},
 		["Vermina"] = {
 			["GOLD"] = 1116628,
@@ -57,13 +53,49 @@ GMMONEY = {
 			["GOLD"] = 14352583,
 			["CLASS"] = "PRIEST",
 		},
-		["Battitude"] = {
-			["GOLD"] = 127,
-			["CLASS"] = "ROGUE",
+		["Tadibey"] = {
+			["GOLD"] = 298737,
+			["CLASS"] = "SHAMAN",
 		},
 		["Vermin"] = {
-			["GOLD"] = 15485875,
+			["GOLD"] = 4984205,
 			["CLASS"] = "WARRIOR",
+		},
+	},
+	["Jin'do"] = {
+		["Battlearm"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "SHAMAN",
+		},
+		["Kaonac"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "PRIEST",
+		},
+		["Tandaram"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+		["Tudum"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+		["Wells"] = {
+			["GOLD"] = 1528,
+			["CLASS"] = "DRUID",
+		},
+		["Provokator"] = {
+			["GOLD"] = 3123,
+			["CLASS"] = "HUNTER",
+		},
+	},
+	["Ashbringer"] = {
+		["Tudum"] = {
+			["GOLD"] = 112,
+			["CLASS"] = "WARRIOR",
+		},
+		["Pitchwise"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "SHAMAN",
 		},
 	},
 	["Stonespine"] = {
@@ -98,40 +130,8 @@ GMMONEY = {
 			["CLASS"] = "WARRIOR",
 		},
 	},
-	["Jin'do"] = {
-		["Battlearm"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "SHAMAN",
-		},
-		["Kaonac"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "PRIEST",
-		},
-		["Tandaram"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "WARRIOR",
-		},
-		["Tudum"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "WARRIOR",
-		},
-		["Wells"] = {
-			["GOLD"] = 1528,
-			["CLASS"] = "DRUID",
-		},
-		["Provokator"] = {
-			["GOLD"] = 3123,
-			["CLASS"] = "HUNTER",
-		},
-	},
-	["Hydraxian Waterlords"] = {
-		["Battlearm"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "HUNTER",
-		},
-	},
 }
 GMMONEYSET = {
-	["FULLDISP"] = true,
 	["TEXTMODE"] = true,
+	["FULLDISP"] = true,
 }

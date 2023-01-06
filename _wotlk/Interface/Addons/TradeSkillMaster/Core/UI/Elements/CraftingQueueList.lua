@@ -19,6 +19,8 @@ local TextureAtlas = TSM.Include("Util.TextureAtlas")
 local ScriptWrapper = TSM.Include("Util.ScriptWrapper")
 local ItemInfo = TSM.Include("Service.ItemInfo")
 local Profession = TSM.Include("Service.Profession")
+local BagTracking = TSM.Include("Service.BagTracking")
+local UIUtils = TSM.Include("UI.UIUtils")
 local CraftingQueueList = TSM.Include("LibTSMClass").DefineClass("CraftingQueueList", TSM.UI.ScrollingTable)
 local UIElements = TSM.Include("UI.UIElements")
 UIElements.Register(CraftingQueueList)
@@ -96,7 +98,7 @@ function CraftingQueueList.Release(self)
 end
 
 --- Gets the data of the first row.
--- @tparam CraftingMatList self The crafting queue list object
+-- @tparam CraftingQueueList self The crafting queue list object
 -- @treturn CraftingQueueList The crafting queue list object
 function CraftingQueueList.GetFirstData(self)
 	for _, data in ipairs(self._data) do
@@ -271,7 +273,7 @@ function private.GetItemText(self, data)
 		local craftString = CraftString.FromRecipeString(recipeString)
 		local itemString = TSM.Crafting.GetItemString(craftString)
 		local spellId = CraftString.GetSpellId(craftString)
-		return itemString and TSM.UI.GetColoredItemName(itemString) or GetSpellInfo(spellId) or "?"
+		return itemString and UIUtils.GetColoredItemName(itemString) or GetSpellInfo(spellId) or "?"
 	end
 end
 
@@ -292,7 +294,7 @@ function private.GetItemTooltip(self, data)
 	local numQueued = data:GetField("num")
 	local itemString = TSM.Crafting.GetItemString(craftString)
 	local spellId = CraftString.GetSpellId(craftString)
-	local name = itemString and TSM.UI.GetColoredItemName(itemString) or GetSpellInfo(spellId) or "?"
+	local name = itemString and UIUtils.GetColoredItemName(itemString) or GetSpellInfo(spellId) or "?"
 	local tooltipLines = TempTable.Acquire()
 	tinsert(tooltipLines, name.." (x"..numQueued..")")
 	local numResult = TSM.Crafting.GetNumResult(craftString)
@@ -301,14 +303,14 @@ function private.GetItemTooltip(self, data)
 	local totalProfitStr = profit and Money.ToString(profit * numResult * numQueued, Theme.GetColor(profit >= 0 and "FEEDBACK_GREEN" or "FEEDBACK_RED"):GetTextColorPrefix(), "OPT_RETAIL_ROUND") or "---"
 	tinsert(tooltipLines, L["Profit (Total)"]..": "..profitStr.." ("..totalProfitStr..")")
 	for _, matItemString, quantity in TSM.Crafting.MatIterator(craftString) do
-		local numHave = TSM.Crafting.ProfessionUtil.GetPlayerMatQuantity(matItemString)
+		local numHave = BagTracking.GetCraftingMatQuantity(matItemString)
 		local numNeed = quantity * numQueued
 		local color = Theme.GetColor(numHave >= numNeed and "FEEDBACK_GREEN" or "FEEDBACK_RED")
 		tinsert(tooltipLines, color:ColorText(numHave.."/"..numNeed).." - "..(ItemInfo.GetName(matItemString) or "?"))
 	end
 	for _, _, itemId in RecipeString.OptionalMatIterator(recipeString) do
 		local matItemString = "i:"..itemId
-		local numHave = TSM.Crafting.ProfessionUtil.GetPlayerMatQuantity(matItemString)
+		local numHave = BagTracking.GetCraftingMatQuantity(matItemString)
 		local numNeed = TSM.Crafting.GetOptionalMatQuantity(craftString, itemId)* numQueued
 		local color = Theme.GetColor(numHave >= numNeed and "FEEDBACK_GREEN" or "FEEDBACK_RED")
 		tinsert(tooltipLines, color:ColorText(numHave.."/"..numNeed).." - "..(ItemInfo.GetName(matItemString) or "?"))

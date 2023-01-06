@@ -1,6 +1,5 @@
-## v4.12.15 Changes
+## v4.12.17 Changes
 
-* [All] Fixed tooltip error
-* [Retail] Fixed error when switching professions via dropdown
+* [All] Various Crafting bug fixes
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

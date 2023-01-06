@@ -26,6 +26,11 @@ local PREFIX_TO_TYPE_LOOKUP = {
 	["q"] = MatString.TYPE.QUALITY,
 	["f"] = MatString.TYPE.FINISHING,
 }
+local QUALITY_MAT_STRING_ITEM_ID_PATTERNS = {
+	"^q:%d+:(%d+),%d+,%d+$",
+	"^q:%d+:%d+,(%d+),%d+$",
+	"^q:%d+:%d+,%d+,(%d+)$",
+}
 
 
 
@@ -75,7 +80,7 @@ end
 
 ---Iterates through the items in the mat string.
 ---@param matString string The mat string
----@return boolean
+---@return fun(): string @An iterator with fields: `itemString`
 function MatString.ItemIterator(matString)
 	local matType = MatString.GetType(matString)
 	if matType == MatString.TYPE.NORMAL then
@@ -89,7 +94,11 @@ end
 
 function MatString.ContainsItem(matString, itemId)
 	local matList = select(3, strsplit(":", matString))
-	return String.SeparatedContains(matList, ",", itemId)
+	return String.SeparatedContains(matList, ",", tostring(itemId))
+end
+
+function MatString.GetQualityItem(matString, quality)
+	return "i:"..strmatch(matString, QUALITY_MAT_STRING_ITEM_ID_PATTERNS[quality])
 end
 
 

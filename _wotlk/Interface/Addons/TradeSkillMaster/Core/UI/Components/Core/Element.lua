@@ -152,6 +152,17 @@ function Element:Hide()
 	return self
 end
 
+---Sets whether or not the element is shown.
+---@param isShown boolean
+function Element:SetShown(isShown)
+	if isShown then
+		self:Show()
+	else
+		self:Hide()
+	end
+	return self
+end
+
 ---Returns whether or not the element is visible.
 ---@return boolean
 function Element:IsVisible()

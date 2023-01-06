@@ -190,7 +190,7 @@ function ProfessionScrollingTable.IsCraftStringVisible(self, craftString)
 		-- this craft string isn't included in the query
 		return false
 	end
-	local categoryId = TSM.Crafting.ProfessionScanner.GetCategoryIdByCraftString(craftString)
+	local categoryId = Profession.GetCategoryIdByCraftString(craftString)
 	return not self:_IsCategoryHidden(categoryId) and not self._contextTable.collapsed[categoryId]
 end
 
@@ -233,7 +233,12 @@ function ProfessionScrollingTable._UpdateData(self)
 	local insertedSpellId = TempTable.Acquire()
 	for _, craftString in self._query:Iterator() do
 		local spellId = CraftString.GetSpellId(craftString)
-		if self._favoritesContextTable[spellId] and not insertedSpellId[spellId] then
+		local isInserted, lowerLevelIndex = self:_IsCraftStringInserted(craftString, insertedSpellId)
+		if self._favoritesContextTable[spellId] and (not isInserted or lowerLevelIndex) then
+			if lowerLevelIndex then
+				tremove(self._data, lowerLevelIndex)
+				insertedSpellId[spellId] = nil
+			end
 			local categoryId = -1
 			if categoryId ~= currentCategoryPath[#currentCategoryPath] then
 				-- this is a new category
@@ -252,13 +257,18 @@ function ProfessionScrollingTable._UpdateData(self)
 			if not self._contextTable.collapsed[categoryId] and not self:_IsCategoryHidden(categoryId) then
 				tinsert(self._data, craftString)
 				self._isCraftString[craftString] = true
-				insertedSpellId[spellId] = true
+				insertedSpellId[spellId] = #self._data
 			end
 		end
 	end
 	for _, craftString, categoryId in self._query:Iterator() do
 		local spellId = CraftString.GetSpellId(craftString)
-		if not self._favoritesContextTable[spellId] and not insertedSpellId[spellId] then
+		local isInserted, lowerLevelIndex = self:_IsCraftStringInserted(craftString, insertedSpellId)
+		if not self._favoritesContextTable[spellId] and (not isInserted or lowerLevelIndex) then
+			if lowerLevelIndex then
+				tremove(self._data, lowerLevelIndex)
+				insertedSpellId[spellId] = nil
+			end
 			if categoryId ~= currentCategoryPath[#currentCategoryPath] then
 				-- this is a new category
 				local newCategoryPath = TempTable.Acquire()
@@ -283,7 +293,7 @@ function ProfessionScrollingTable._UpdateData(self)
 			if not self._contextTable.collapsed[categoryId] and not self:_IsCategoryHidden(categoryId) then
 				tinsert(self._data, craftString)
 				self._isCraftString[craftString] = true
-				insertedSpellId[spellId] = true
+				insertedSpellId[spellId] = #self._data
 			end
 		end
 	end
@@ -299,6 +309,21 @@ function ProfessionScrollingTable._UpdateData(self)
 		end
 		self:SetSelection(newSelection, true)
 	end
+end
+
+function ProfessionScrollingTable._IsCraftStringInserted(self, craftString, insertedSpellId)
+	local spellId = CraftString.GetSpellId(craftString)
+	local prevIndex = insertedSpellId[spellId]
+	local prevCraftString = prevIndex and self._data[prevIndex]
+	if not prevCraftString then
+		return false
+	end
+	local level = CraftString.GetLevel(craftString)
+	if not level then
+		return true
+	end
+	local isHigherLevel = level > (CraftString.GetLevel(prevCraftString) or -1)
+	return true, isHigherLevel and prevIndex or nil
 end
 
 function ProfessionScrollingTable._IsCategoryHidden(self, categoryId)
@@ -385,9 +410,9 @@ function private.MenuClickHandler(self, index1, index2)
 		self:GetBaseElement():HideDialog()
 		local numCreated, numAdded = 0, 0
 		for _, spellId in self._query:Iterator() do
-			local itemString = TSM.Crafting.GetItemString(spellId)
+			local itemString = Profession.GetItemStringByCraftString(spellId)
 			if itemString then
-				local groupPath = private.GetCategoryGroupPath(TSM.Crafting.ProfessionScanner.GetCategoryIdByCraftString(spellId))
+				local groupPath = private.GetCategoryGroupPath(Profession.GetCategoryIdByCraftString(spellId))
 				if not TSM.Groups.Exists(groupPath) then
 					TSM.Groups.Create(groupPath)
 					numCreated = numCreated + 1
@@ -417,14 +442,14 @@ end
 
 function private.GetNameCellText(self, data)
 	if self._isCraftString[data] then
-		local name = TSM.Crafting.ProfessionScanner.GetNameByCraftString(data)
+		local name = Profession.GetNameByCraftString(data)
 		local color = nil
 		if Profession.IsGuild() then
 			color = Theme.GetProfessionDifficultyColor("easy")
 		elseif Profession.IsNPC() then
 			color = Theme.GetProfessionDifficultyColor("nodifficulty")
 		else
-			local difficulty = TSM.Crafting.ProfessionScanner.GetDifficultyByCraftString(data)
+			local difficulty = Profession.GetDifficultyByCraftString(data)
 			color = Theme.GetProfessionDifficultyColor(difficulty)
 		end
 		return color:ColorText(name)

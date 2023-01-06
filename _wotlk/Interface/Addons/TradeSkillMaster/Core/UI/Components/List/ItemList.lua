@@ -15,6 +15,7 @@ local TempTable = TSM.Include("Util.TempTable")
 local DragContext = TSM.Include("UI.DragContext")
 local Tooltip = TSM.Include("UI.Tooltip")
 local UIElements = TSM.Include("UI.UIElements")
+local UIUtils = TSM.Include("UI.UIUtils")
 local private = {
 	dragContextTimer = Delay.CreateTimer("ITEM_LIST_DRAG_CONTEXT", DragContext.Clear),
 	prevSelectedTemp = {},
@@ -502,7 +503,7 @@ function ItemList.__protected:_HandleRowClick(row, mouseButton)
 	if dataIndex then
 		local itemString = self._itemString[self._data[dataIndex]]
 		if IsShiftKeyDown() or IsControlKeyDown() then
-			TSM.UI.HandleModifiedItemClick(itemString)
+			UIUtils.HandleModifiedItemClick(itemString)
 		else
 			self._selectedData[itemString] = not self._selectedData[itemString] or nil
 			self:_DrawItemRowSelectedState(row, self._selectedData[itemString])

@@ -5,7 +5,6 @@
 -- ------------------------------------------------------------------------------ --
 
 local TSM = select(2, ...) ---@type TSM
-local TempTable = TSM.Include("Util.TempTable")
 local Table = TSM.Include("Util.Table")
 local UIElements = TSM.Include("UI.UIElements")
 local private = {}
@@ -109,18 +108,24 @@ end
 ---@param self Container
 ---@return fun(): index, Element @An iterator with fields: `index`, `child`
 function Container:LayoutChildrenIterator()
-	local children = TempTable.Acquire()
-	for _, child in ipairs(self._layoutChildren) do
-		if child:IsVisible() then
-			tinsert(children, child)
-		end
-	end
-	return TempTable.Iterator(children)
+	return private.VisibleChildrenIterator, self._layoutChildren, 0
+end
+
+---Iterates over all child elements involved in layout.
+---@param self Container
+---@return fun(): index, Element @An iterator with fields: `index`, `child`
+function Container:NoLayoutChildrenIterator()
+	return private.VisibleChildrenIterator, self._noLayoutChildren, 0
 end
 
 ---Shows all child elements.
 function Container:ShowAllChildren()
 	for _, child in ipairs(self._layoutChildren) do
+		if not child:IsVisible() then
+			child:Show()
+		end
+	end
+	for _, child in ipairs(self._noLayoutChildren) do
 		if not child:IsVisible() then
 			child:Show()
 		end
@@ -175,4 +180,17 @@ function private.GetElementInsertIndex(tbl, beforeId)
 		end
 	end
 	error("Invalid beforeId: "..tostring(beforeId))
+end
+
+function private.VisibleChildrenIterator(tbl, index)
+	while true do
+		index = index + 1
+		local child = tbl[index]
+		if not child then
+			return
+		end
+		if child:IsVisible() then
+			return index, child
+		end
+	end
 end

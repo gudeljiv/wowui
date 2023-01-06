@@ -67,6 +67,31 @@ function State.GetSkillLine()
 	return private.GetSkillLine()
 end
 
+function State.IsNPC()
+	return not TSM.IsWowClassic() and C_TradeSkillUI.IsNPCCrafting()
+end
+
+function State.IsLinked()
+	if TSM.IsWowVanillaClassic() then
+		return nil, nil
+	elseif TSM.IsWowWrathClassic() then
+		return IsTradeSkillLinked()
+	else
+		return C_TradeSkillUI.IsTradeSkillLinked()
+	end
+end
+
+function State.IsGuild()
+	return not TSM.IsWowClassic() and C_TradeSkillUI.IsTradeSkillGuild()
+end
+
+function State.GetLink()
+	if TSM.IsWowClassic() then
+		return nil
+	end
+	return C_TradeSkillUI.GetTradeSkillListLink()
+end
+
 
 
 -- ============================================================================

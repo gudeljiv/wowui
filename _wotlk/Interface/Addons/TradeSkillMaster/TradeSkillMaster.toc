@@ -2,7 +2,7 @@
 ## Title: |cff00fe00TradeSkillMaster|r
 ## Notes: Auction house and gold making addon.
 ## Author: TradeSkillMaster Team
-## Version: v4.12.15
+## Version: v4.12.17
 ## SavedVariables: TradeSkillMasterDB, TSMItemInfoDB
 ## OptionalDeps: ArkInventory, Auc-Advanced, Auctionator, TheUndermineJournal, BootyBayGazette, AuctionDB
 ## X-Embeds: AccurateTime, Ace3, LibDataBroker-1.1, LibDBIcon-1.0, LibRealmInfo, LibDeflate, LibSerialize
@@ -132,9 +132,12 @@ LibTSM\Service\MailTracking.lua
 LibTSM\Service\AltTracking.lua
 LibTSM\Service\Inventory.lua
 LibTSM\Service\ProfessionHelpers\State.lua
+LibTSM\Service\ProfessionHelpers\Quality.lua
+LibTSM\Service\ProfessionHelpers\Scanner.lua
 LibTSM\Service\Profession.lua
 
 # LibTSM UI files
+LibTSM\UI\UIUtils.lua
 LibTSM\UI\WidgetExtensions.lua
 LibTSM\UI\DragContext.lua
 LibTSM\UI\Tooltip.lua
@@ -172,6 +175,8 @@ Core\UI\Components\Display\Text.lua
 Core\UI\Components\Display\Texture.lua
 Core\UI\Components\Display\ProgressBar.lua
 Core\UI\Components\Display\Graph.lua
+Core\UI\Components\Display\VerticalLine.lua
+Core\UI\Components\Display\HorizontalLine.lua
 
 Core\UI\Components\Controls\ActionButton.lua
 Core\UI\Components\Controls\SecureMacroActionButton.lua
@@ -202,7 +207,6 @@ Core\UI\Elements\MultiLineInput.lua
 
 Core\UI\Views\Core.lua
 Core\UI\Views\PlayerGoldText.lua
-Core\UI\Views\Line.lua
 Core\UI\Views\CustomStringDialog.lua
 
 Core\UI\Elements\Frame.lua
@@ -232,6 +236,9 @@ Core\UI\Elements\SelectionScrollingTable.lua
 Core\UI\Elements\AuctionScrollingTable.lua
 Core\UI\Elements\SniperScrollingTable.lua
 Core\UI\Elements\ProfessionScrollingTable.lua
+
+Core\UI\Components\Crafting\CraftDetails.lua
+Core\UI\Components\Crafting\OptionalMatsDialog.lua
 
 Core\UI\Support\TexturePacks.lua
 

@@ -14,6 +14,7 @@ local ScriptWrapper = TSM.Include("Util.ScriptWrapper")
 local Settings = TSM.Include("Service.Settings")
 local Profession = TSM.Include("Service.Profession")
 local UIElements = TSM.Include("UI.UIElements")
+local UIUtils = TSM.Include("UI.UIUtils")
 local private = {
 	settings = nil,
 	topLevelPages = {},
@@ -48,13 +49,13 @@ function CraftingUI.OnInitialize()
 		:AddKey("global", "craftingUIContext", "showDefault")
 		:AddKey("global", "craftingUIContext", "frame")
 	private.FSMCreate()
-	TSM.Crafting.ProfessionScanner.SetDisabled(private.settings.showDefault)
+	Profession.SetScannerDisabled(private.settings.showDefault)
 end
 
 function CraftingUI.OnDisable()
 	-- hide the frame
 	if private.isVisible then
-		TSM.Crafting.ProfessionScanner.SetDisabled(false)
+		Profession.SetScannerDisabled(false)
 		private.fsm:ProcessEvent("EV_FRAME_TOGGLE")
 	end
 end
@@ -65,7 +66,7 @@ end
 
 function CraftingUI.Toggle()
 	private.settings.showDefault = false
-	TSM.Crafting.ProfessionScanner.SetDisabled(false)
+	Profession.SetScannerDisabled(false)
 	private.fsm:ProcessEvent("EV_FRAME_TOGGLE")
 end
 
@@ -107,7 +108,7 @@ end
 -- ============================================================================
 
 function private.CreateMainFrame()
-	TSM.UI.AnalyticsRecordPathChange("crafting")
+	UIUtils.AnalyticsRecordPathChange("crafting")
 	local frame = UIElements.New("LargeApplicationFrame", "base")
 		:SetParent(UIParent)
 		:SetSettingsContext(private.settings, "frame")
@@ -136,13 +137,13 @@ end
 -- ============================================================================
 
 function private.BaseFrameOnHide()
-	TSM.UI.AnalyticsRecordClose("crafting")
+	UIUtils.AnalyticsRecordClose("crafting")
 	private.fsm:ProcessEvent("EV_FRAME_HIDE")
 end
 
 function private.SwitchBtnOnClick(button)
 	private.settings.showDefault = button ~= private.defaultUISwitchBtn
-	TSM.Crafting.ProfessionScanner.SetDisabled(private.settings.showDefault)
+	Profession.SetScannerDisabled(private.settings.showDefault)
 	private.fsm:ProcessEvent("EV_SWITCH_BTN_CLICKED")
 end
 
@@ -222,11 +223,11 @@ function private.FSMCreate()
 			:AddTransition("ST_FRAME_OPEN")
 			:AddEvent("EV_FRAME_TOGGLE", function(context)
 				assert(not private.settings.showDefault)
-				TSM.Crafting.ProfessionScanner.SetDisabled(false)
+				Profession.SetScannerDisabled(false)
 				return "ST_FRAME_OPEN"
 			end)
 			:AddEvent("EV_TRADE_SKILL_SHOW", function(context)
-				TSM.Crafting.ProfessionScanner.SetDisabled(private.settings.showDefault)
+				Profession.SetScannerDisabled(private.settings.showDefault)
 				if CraftingUI.IsProfessionIgnored(Profession.GetSkillLine()) then
 					return "ST_DEFAULT_OPEN", true
 				elseif private.settings.showDefault then
@@ -260,7 +261,7 @@ function private.FSMCreate()
 				end
 				private.defaultUISwitchBtn:_GetBaseFrame():SetParent(private.craftOpen and CraftFrame or defaultFrame)
 				if isIgnored then
-					TSM.Crafting.ProfessionScanner.SetDisabled(true)
+					Profession.SetScannerDisabled(true)
 					private.defaultUISwitchBtn:Hide()
 				else
 					private.defaultUISwitchBtn:Show()
@@ -300,7 +301,7 @@ function private.FSMCreate()
 					if private.settings.showDefault then
 						return "ST_DEFAULT_OPEN"
 					else
-						TSM.Crafting.ProfessionScanner.SetDisabled(private.settings.showDefault)
+						Profession.SetScannerDisabled(private.settings.showDefault)
 						return "ST_FRAME_OPEN"
 					end
 				end

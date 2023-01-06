@@ -112,7 +112,7 @@ function TooltipScanning.GetInboxBattlePetInfo(index, attachIndex)
 		return private.SetInboxItem(index, attachIndex)
 	else
 		local info = private.SetInboxItem(index, attachIndex)
-		return info.battlePetSpeciesID, info.battlePetLevel, info.battlePetBreedQuality, info.battlePetMaxHealth, info.battlePetPower, info.battlePetSpeed
+		return info.battlePetSpeciesID, info.battlePetLevel, info.battlePetBreedQuality
 	end
 end
 

@@ -7,8 +7,20 @@
 local TSM = select(2, ...) ---@type TSM
 local Theme = TSM.Include("Util.Theme")
 local TextureAtlas = TSM.Include("Util.TextureAtlas")
+local MatString = TSM.Include("Util.MatString")
+local ItemString = TSM.Include("Util.ItemString")
+local RecipeString = TSM.Include("Util.RecipeString")
+local CraftString = TSM.Include("Util.CraftString")
+local BagTracking = TSM.Include("Service.BagTracking")
+local Profession = TSM.Include("Service.Profession")
+local ItemInfo = TSM.Include("Service.ItemInfo")
 local UIElements = TSM.Include("UI.UIElements")
 local Tooltip = TSM.Include("UI.Tooltip")
+local UIUtils = TSM.Include("UI.UIUtils")
+local private = {
+	optionalMatOrderTemp = {},
+	bagUpdateCallbacks = nil,
+}
 local ROW_HEIGHT = 20
 local ICON_SIZE = 12
 local ICON_SPACING = 4
@@ -31,6 +43,15 @@ local CraftingMatList = UIElements.Define("CraftingMatList", "List") ---@class C
 
 function CraftingMatList:__init()
 	self.__super:__init()
+	if not private.bagUpdateCallbacks then
+		-- Register a bag tracking callback to update all elements
+		private.bagUpdateCallbacks = {}
+		BagTracking.RegisterCallback(function()
+			for _, callback in pairs(private.bagUpdateCallbacks) do
+				callback()
+			end
+		end)
+	end
 	self._query = nil
 	self._itemString = {}
 	self._text = {}
@@ -41,9 +62,11 @@ end
 
 function CraftingMatList:Acquire()
 	self.__super:Acquire(ROW_HEIGHT)
+	private.bagUpdateCallbacks[self] = self:__closure("_HandleBagUpdate")
 end
 
 function CraftingMatList:Release()
+	private.bagUpdateCallbacks[self] = nil
 	wipe(self._itemString)
 	wipe(self._text)
 	wipe(self._icon)
@@ -62,21 +85,45 @@ end
 -- Public Class Methods
 -- ============================================================================
 
----Sets the query used to populate the list of materials.
----@param query DatabaseQuery The query to populate the list
----@return CraftingMatList
-function CraftingMatList:SetQuery(query)
-	assert(not self._query)
-	self._query = query
-	self:AddCancellable(query:Publisher()
-		:CallMethod(self, "_HandleQueryUpdate")
-	)
-	return self
+function CraftingMatList:SetRecipeString(recipeString)
+	wipe(self._itemString)
+	wipe(self._text)
+	wipe(self._icon)
+	wipe(self._quantity)
+	wipe(self._playerQuantity)
+
+	if recipeString then
+		local craftString = CraftString.FromRecipeString(recipeString)
+		assert(not next(private.optionalMatOrderTemp))
+		for _, matString, quantity in Profession.MatIterator(craftString) do
+			local matType = MatString.GetType(matString)
+			if matType == MatString.TYPE.NORMAL then
+				self:_AddMaterial(matString, quantity)
+			elseif matType == MatString.TYPE.QUALITY then
+				local itemString = "i:"..RecipeString.GetOptionalMat(recipeString, MatString.GetSlotId(matString))
+				self:_AddMaterial(itemString, quantity)
+			else
+				local slotId = MatString.GetSlotId(matString)
+				if RecipeString.GetOptionalMat(recipeString, slotId) then
+					tinsert(private.optionalMatOrderTemp, slotId)
+				end
+			end
+		end
+		sort(private.optionalMatOrderTemp)
+		for _, slotId in ipairs(private.optionalMatOrderTemp) do
+			local itemId = RecipeString.GetOptionalMat(recipeString, slotId)
+			local itemString = "i:"..itemId
+			self:_AddMaterial(itemString, Profession.GetMatQuantity(craftString, itemId))
+		end
+		wipe(private.optionalMatOrderTemp)
+	end
+
+	self:_SetNumRows(#self._itemString)
+	self:Draw()
 end
 
 function CraftingMatList:SetScript(script)
 	error("Unknown CraftingMatList script: "..tostring(script))
-	return self
 end
 
 
@@ -85,24 +132,25 @@ end
 -- Protected/Private Class Methods
 -- ============================================================================
 
-function CraftingMatList:_HandleQueryUpdate()
-	wipe(self._itemString)
-	wipe(self._text)
-	wipe(self._icon)
-	wipe(self._quantity)
-	wipe(self._playerQuantity)
-
-	for i, itemString, coloredItemName, texture, neededQuantity, playerQuantity in self._query:Iterator() do
-		self._itemString[i] = itemString
-		self._text[i] = coloredItemName
-		self._icon[i] = texture
-		self._quantity[i] = neededQuantity
-		self._playerQuantity[i] = playerQuantity
+function CraftingMatList.__private:_HandleBagUpdate()
+	for i, prevQuantity in ipairs(self._playerQuantity) do
+		local playerQuantity = BagTracking.GetCraftingMatQuantity(self._itemString[i])
+		if prevQuantity ~= playerQuantity then
+			self._playerQuantity[i] = playerQuantity
+			local row = self:_GetRow(i)
+			if row then
+				self:_DrawRowQty(row, self._playerQuantity[i], self._quantity[i])
+			end
+		end
 	end
+end
 
-	self:_SetNumRows(#self._itemString)
-	self:Draw()
-	return self
+function CraftingMatList.__private:_AddMaterial(itemString, quantity)
+	tinsert(self._itemString, itemString)
+	tinsert(self._text, UIUtils.GetColoredCraftedItemName(itemString) or Theme.GetColor("FEEDBACK_RED"):ColorText("?"))
+	tinsert(self._icon, ItemInfo.GetTexture(itemString) or ItemInfo.GetTexture(ItemString.GetUnknown()))
+	tinsert(self._quantity, quantity)
+	tinsert(self._playerQuantity, BagTracking.GetCraftingMatQuantity(itemString))
 end
 
 function CraftingMatList.__protected:_HandleRowAcquired(row)
@@ -178,5 +226,5 @@ function CraftingMatList.__protected:_HandleRowClick(row, mouseButton)
 	if mouseButton ~= "LeftButton" or (not IsShiftKeyDown() and not IsControlKeyDown()) then
 		return
 	end
-	TSM.UI.HandleModifiedItemClick(self._itemString[row:GetDataIndex()])
+	UIUtils.HandleModifiedItemClick(self._itemString[row:GetDataIndex()])
 end
