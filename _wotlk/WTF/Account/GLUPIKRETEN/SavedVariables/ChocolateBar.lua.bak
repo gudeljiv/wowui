@@ -15,11 +15,11 @@ ChocolateBarDB = {
 		["Mxym - Golemagg"] = "Default",
 		["Poklopac - Dreadnaught"] = "Default",
 		["Konac - Dreadnaught"] = "Default",
-		["Grgur - Golemagg"] = "Default",
+		["Tudum - Jin'do"] = "Default",
 		["Verminz - Genesis"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
 		["Augustin - Golemagg"] = "Default",
-		["Tudum - Jin'do"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
 		["Pitchwise - Genesis"] = "Default",
 		["Provokator - Jin'do"] = "Default",
@@ -59,7 +59,7 @@ ChocolateBarDB = {
 		["Judawise - Golemagg"] = "Default",
 		["Wells - Jin'do"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
+		["Grgur - Golemagg"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
 	},
 	["profiles"] = {
@@ -645,9 +645,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 725688,
-		["timeAtThisLevel"] = 108229,
-		["timeStamp"] = 434173.717,
+		["total"] = 725720,
+		["timeAtThisLevel"] = 108261,
+		["timeStamp"] = 436920.835,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -691,9 +691,9 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 987769,
-		["timeStamp"] = 352722.34,
-		["timeAtThisLevel"] = 9113,
+		["total"] = 988359,
+		["timeStamp"] = 439487.06,
+		["timeAtThisLevel"] = 9703,
 	},
 	["Mxyzptlk-Golemagg"] = {
 		["total"] = 29335,
@@ -718,9 +718,9 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Vermina-Golemagg"] = {
-		["total"] = 174542,
-		["timeStamp"] = 434464.847,
-		["timeAtThisLevel"] = 5386,
+		["total"] = 175064,
+		["timeStamp"] = 439799.611,
+		["timeAtThisLevel"] = 5908,
 	},
 	["Provokator-Jin'do"] = {
 		["total"] = 22720,
@@ -737,9 +737,9 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1553134,
-		["timeStamp"] = 434515.743,
-		["timeAtThisLevel"] = 460587,
+		["total"] = 1553195,
+		["timeStamp"] = 436828.013,
+		["timeAtThisLevel"] = 460648,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
@@ -839,9 +839,9 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 316,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 445131,
-		["timeAtThisLevel"] = 115456,
-		["timeStamp"] = 431905.341,
+		["total"] = 446293,
+		["timeAtThisLevel"] = 116618,
+		["timeStamp"] = 438984.441,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,
