@@ -110,6 +110,11 @@ RXPCComms = {
 				},
 			},
 			["players"] = {
+				["Öriginal"] = {
+					["timePlayed"] = 1955.178000000014,
+					["class"] = "WARLOCK",
+					["xp"] = 221,
+				},
 				["Popell"] = {
 					["timePlayed"] = 436.8549999999814,
 					["class"] = "MAGE",
@@ -138,6 +143,14 @@ RXPCComms = {
 					["class"] = "HUNTER",
 					["xp"] = 24,
 				},
+				["Carismoo"] = {
+					["isRxp"] = true,
+					["lastSeen"] = 445847.035,
+					["xpPercentage"] = 28,
+					["level"] = 40,
+					["timePlayed"] = 2704.007999999973,
+					["class"] = "DRUID",
+				},
 				["Brangrixon"] = {
 					["isRxp"] = true,
 					["lastSeen"] = 1211747.481,
@@ -146,40 +159,78 @@ RXPCComms = {
 					["timePlayed"] = 3172.202000000048,
 					["class"] = "HUNTER",
 				},
+				["Mórphin"] = {
+					["timePlayed"] = 2704.007999999973,
+					["class"] = "DRUID",
+					["xp"] = 212,
+				},
 				["Robinhuud"] = {
 					["timePlayed"] = 436.8549999999814,
 					["class"] = "HUNTER",
 					["xp"] = 198,
+				},
+				["Shellman"] = {
+					["timePlayed"] = 1186.624000000069,
+					["class"] = "SHAMAN",
+					["xp"] = 214,
 				},
 				["Deamontria"] = {
 					["timePlayed"] = 2735.347000000067,
 					["class"] = "WARLOCK",
 					["xp"] = 368,
 				},
+				["Krizztina"] = {
+					["isRxp"] = true,
+					["lastSeen"] = 445847.035,
+					["xpPercentage"] = 0,
+					["level"] = 42,
+					["timePlayed"] = 0,
+					["class"] = "ROGUE",
+				},
+				["Spergiura"] = {
+					["timePlayed"] = 2992.561999999976,
+					["class"] = "PALADIN",
+					["xp"] = 140,
+				},
 				["Skodicek"] = {
 					["timePlayed"] = 1186.624000000069,
 					["class"] = "PALADIN",
 					["xp"] = 214,
+				},
+				["Dentrap"] = {
+					["timePlayed"] = 1161.954999999958,
+					["class"] = "HUNTER",
+					["xp"] = 24,
+				},
+				["Annun"] = {
+					["timePlayed"] = 2992.561999999976,
+					["class"] = "DRUID",
+					["xp"] = 140,
+				},
+				["Tökfilkó"] = {
+					["timePlayed"] = 2735.347000000067,
+					["class"] = "PALADIN",
+					["xp"] = 368,
 				},
 				["Sistermerrin"] = {
 					["timePlayed"] = 476.960000000021,
 					["class"] = "PALADIN",
 					["xp"] = 480,
 				},
-				["Valkyrij"] = {
-					["timePlayed"] = 2735.347000000067,
-					["class"] = "MAGE",
-					["xp"] = 368,
+				["Cijx"] = {
+					["timePlayed"] = 1186.624000000069,
+					["class"] = "DRUID",
+					["xp"] = 214,
 				},
 				["Wartan"] = {
 					["timePlayed"] = 1315.746999999974,
 					["class"] = "PALADIN",
 					["xp"] = 24,
 				},
-				["Dentrap"] = {
-					["timePlayed"] = 1161.954999999958,
-					["class"] = "HUNTER",
-					["xp"] = 24,
+				["Valkyrij"] = {
+					["timePlayed"] = 2735.347000000067,
+					["class"] = "MAGE",
+					["xp"] = 368,
 				},
 				["Itsthickas"] = {
 					["isRxp"] = true,
@@ -212,15 +263,15 @@ RXPCComms = {
 					["class"] = "PALADIN",
 					["xp"] = 279,
 				},
-				["Cijx"] = {
-					["timePlayed"] = 1186.624000000069,
-					["class"] = "DRUID",
-					["xp"] = 214,
+				["Deliara"] = {
+					["timePlayed"] = 3741.391999999934,
+					["class"] = "MAGE",
+					["xp"] = 140,
 				},
-				["Tökfilkó"] = {
-					["timePlayed"] = 2735.347000000067,
-					["class"] = "PALADIN",
-					["xp"] = 368,
+				["Temai"] = {
+					["timePlayed"] = 2704.007999999973,
+					["class"] = "PRIEST",
+					["xp"] = 212,
 				},
 				["Stockmoe"] = {
 					["timePlayed"] = 2174.201999999991,
@@ -232,10 +283,10 @@ RXPCComms = {
 					["class"] = "SHAMAN",
 					["xp"] = 480,
 				},
-				["Shellman"] = {
-					["timePlayed"] = 1186.624000000069,
-					["class"] = "SHAMAN",
-					["xp"] = 214,
+				["Drataki"] = {
+					["timePlayed"] = 2992.561999999976,
+					["class"] = "HUNTER",
+					["xp"] = 140,
 				},
 			},
 		},
@@ -260,12 +311,12 @@ RXPCSettings = {
 			["enableTracker"] = false,
 			["enableFlyStepAnnouncements"] = false,
 			["macroAnnounced"] = true,
-			["xprate"] = 1.2,
+			["enableLevelUpAnnounceSolo"] = false,
 			["alwaysSendBranded"] = false,
 			["enableTargetMacro"] = false,
 			["enableBindAutomation"] = false,
 			["hideInRaid"] = true,
-			["enableLevelUpAnnounceSolo"] = false,
+			["xprate"] = 1.7,
 		},
 	},
 }

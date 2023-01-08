@@ -35,7 +35,7 @@ LBISSettings = {
 		["RestorationDruid"] = true,
 		["SubtletyRogue"] = true,
 	},
-	["SelectedSpec"] = "Cat Druid",
+	["SelectedSpec"] = "Bear Druid",
 	["minimap"] = {
 		["minimapPos"] = 180,
 		["hide"] = true,
@@ -46,10 +46,10 @@ LBISSettings = {
 	},
 	["ShowPriority"] = true,
 	["SelectedRank"] = "All",
-	["SelectedSlot"] = "Legs",
-	["SelectedSourceType"] = "All",
-	["ShowCustom"] = false,
 	["PriorityList"] = {
 	},
+	["SelectedSourceType"] = "All",
+	["SelectedSlot"] = "Ranged/Relic",
+	["ShowCustom"] = false,
 	["SelectedPhase"] = "All",
 }

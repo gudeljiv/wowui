@@ -11,6 +11,7 @@ PlaterDBChr = {
 	["minimap"] = {
 		["hide"] = true,
 	},
+	["resources_on_target"] = false,
 	["debuffsBanned"] = {
 	},
 	["spellRangeCheckRangeEnemy"] = {

@@ -156,10 +156,30 @@ RXPCComms = {
 					["class"] = "WARLOCK",
 					["xp"] = 368,
 				},
+				["Spergiura"] = {
+					["timePlayed"] = 2992.561999999976,
+					["class"] = "PALADIN",
+					["xp"] = 140,
+				},
 				["Skodicek"] = {
 					["timePlayed"] = 1186.624000000069,
 					["class"] = "PALADIN",
 					["xp"] = 214,
+				},
+				["Deliara"] = {
+					["timePlayed"] = 2992.561999999976,
+					["class"] = "MAGE",
+					["xp"] = 140,
+				},
+				["Drulleboi"] = {
+					["timePlayed"] = 1315.746999999974,
+					["class"] = "DRUID",
+					["xp"] = 24,
+				},
+				["Annun"] = {
+					["timePlayed"] = 2992.561999999976,
+					["class"] = "DRUID",
+					["xp"] = 140,
 				},
 				["Sistermerrin"] = {
 					["timePlayed"] = 476.960000000021,
@@ -189,10 +209,10 @@ RXPCComms = {
 					["timePlayed"] = 2174.201999999991,
 					["isRxp"] = true,
 				},
-				["Drulleboi"] = {
-					["timePlayed"] = 1315.746999999974,
-					["class"] = "DRUID",
-					["xp"] = 24,
+				["Valkyrij"] = {
+					["timePlayed"] = 2735.347000000067,
+					["class"] = "MAGE",
+					["xp"] = 368,
 				},
 				["Taudox"] = {
 					["level"] = 38,
@@ -232,10 +252,10 @@ RXPCComms = {
 					["class"] = "HUNTER",
 					["xp"] = 24,
 				},
-				["Valkyrij"] = {
-					["timePlayed"] = 2735.347000000067,
-					["class"] = "MAGE",
-					["xp"] = 368,
+				["Drataki"] = {
+					["timePlayed"] = 2992.561999999976,
+					["class"] = "HUNTER",
+					["xp"] = 140,
 				},
 			},
 		},
@@ -260,9 +280,9 @@ RXPCSettings = {
 			["enableTracker"] = false,
 			["frameHeight"] = 125.0000152587891,
 			["macroAnnounced"] = true,
-			["enableLevelUpAnnounceSolo"] = false,
+			["xprate"] = 1.2,
 			["alwaysSendBranded"] = false,
-			["xprate"] = 1.7,
+			["enableLevelUpAnnounceSolo"] = false,
 			["enableFlyStepAnnouncements"] = false,
 			["hideInRaid"] = true,
 			["enableTargetMacro"] = false,
