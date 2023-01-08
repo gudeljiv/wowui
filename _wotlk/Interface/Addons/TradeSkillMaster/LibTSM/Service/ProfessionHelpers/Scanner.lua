@@ -23,6 +23,7 @@ local ItemInfo = TSM.Include("Service.ItemInfo")
 local private = {
 	db = nil,
 	matDB = nil,
+	dbPopulated = false,
 	hasScanned = false,
 	callbacks = {},
 	disabled = false,
@@ -52,35 +53,25 @@ local EMPTY_MATS_TABLE = {}
 -- ============================================================================
 
 Scanner:OnModuleLoad(function()
+	local dbSchema = Database.NewSchema("CRAFTING_RECIPES")
+		:AddUniqueStringField("craftString")
+		:AddStringField("itemString")
+		:AddNumberField("index")
+		:AddStringField("name")
+		:AddStringField("craftName")
+		:AddNumberField("categoryId")
 	if TSM.IsWowClassic() then
-		private.db = Database.NewSchema("CRAFTING_RECIPES")
-			:AddUniqueStringField("craftString")
-			:AddStringField("itemString")
-			:AddNumberField("index")
-			:AddStringField("name")
-			:AddNumberField("categoryId")
-			:AddStringField("difficulty")
-			:AddNumberField("rank")
-			:AddNumberField("numSkillUps")
-			:AddNumberField("level")
-			:AddNumberField("currentExp")
-			:AddNumberField("nextExp")
-			:Commit()
+		dbSchema:AddStringField("difficulty")
 	else
-		private.db = Database.NewSchema("CRAFTING_RECIPES")
-			:AddUniqueStringField("craftString")
-			:AddStringField("itemString")
-			:AddNumberField("index")
-			:AddStringField("name")
-			:AddNumberField("categoryId")
-			:AddNumberField("difficulty")
-			:AddNumberField("rank")
-			:AddNumberField("numSkillUps")
-			:AddNumberField("level")
-			:AddNumberField("currentExp")
-			:AddNumberField("nextExp")
-			:Commit()
+		dbSchema:AddNumberField("difficulty")
 	end
+	private.db = dbSchema
+		:AddNumberField("rank")
+		:AddNumberField("numSkillUps")
+		:AddNumberField("level")
+		:AddNumberField("currentExp")
+		:AddNumberField("nextExp")
+		:Commit()
 	private.matDB = Database.NewSchema("CRAFTING_RECIPE_MATS")
 		:AddStringField("craftString")
 		:AddStringField("matString")
@@ -131,42 +122,47 @@ function Scanner.CreateQuery()
 end
 
 function Scanner.GetItemStringByCraftString(craftString)
-	assert(private.hasScanned)
+	assert(private.dbPopulated)
 	return private.db:GetUniqueRowField("craftString", craftString, "itemString")
 end
 
 function Scanner.GetIndexByCraftString(craftString)
-	assert(TSM.IsWowClassic() or private.hasScanned)
+	assert(TSM.IsWowClassic() or private.dbPopulated)
 	return private.db:GetUniqueRowField("craftString", craftString, "index")
 end
 
 function Scanner.GetCategoryIdByCraftString(craftString)
-	assert(private.hasScanned)
+	assert(private.dbPopulated)
 	return private.db:GetUniqueRowField("craftString", craftString, "categoryId")
 end
 
 function Scanner.GetNameByCraftString(craftString)
-	assert(private.hasScanned)
+	assert(private.dbPopulated)
 	return private.db:GetUniqueRowField("craftString", craftString, "name")
 end
 
+function Scanner.GetCraftNameByCraftString(craftString)
+	assert(private.dbPopulated)
+	return private.db:GetUniqueRowField("craftString", craftString, "craftName")
+end
+
 function Scanner.GetCurrentExpByCraftString(craftString)
-	assert(private.hasScanned)
+	assert(private.dbPopulated)
 	return private.db:GetUniqueRowField("craftString", craftString, "currentExp")
 end
 
 function Scanner.GetNextExpByCraftString(craftString)
-	assert(private.hasScanned)
+	assert(private.dbPopulated)
 	return private.db:GetUniqueRowField("craftString", craftString, "nextExp")
 end
 
 function Scanner.GetDifficultyByCraftString(craftString)
-	assert(private.hasScanned)
+	assert(private.dbPopulated)
 	return private.db:GetUniqueRowField("craftString", craftString, "difficulty")
 end
 
 function Scanner.HasCraftString(craftString)
-	return private.hasScanned and private.db:HasUniqueRow("craftString", craftString)
+	return private.dbPopulated and private.db:HasUniqueRow("craftString", craftString)
 end
 
 function Scanner.MatIterator(craftString)
@@ -289,18 +285,55 @@ function Scanner.GetResultItem(craftString)
 	end
 end
 
-function Scanner.GetCraftedQuantity(craftString)
+function Scanner.GetNumResultItems(craftString)
+	if TSM.IsWowClassic() then
+		return 1
+	elseif not CraftString.GetQuality(craftString) then
+		return 1
+	end
+	local spellId = CraftString.GetSpellId(craftString)
+	local indirectResult = ProfessionInfo.GetIndirectCraftResult(spellId)
+	if indirectResult then
+		return type(indirectResult) == "table" and #indirectResult or 1
+	end
+	local result = C_TradeSkillUI.GetRecipeQualityItemIDs(spellId)
+	return result and #result or 1
+end
+
+function Scanner.GetCraftedQuantityRange(craftString)
 	if State.IsClassicCrafting() then
 		return 1, 1
 	end
 	local spellId = CraftString.GetSpellId(craftString)
+	if Scanner.IsEnchant(craftString) then
+		return 1, 1
+	else
+		-- workaround for incorrect values returned for Temporal Crystal
+		if spellId == 169092 then
+			return 1, 1
+		end
+		-- workaround for incorrect values returned for new mass milling recipes
+		if ProfessionInfo.IsMassMill(spellId) then
+			if spellId == 210116 then -- Yseralline
+				return 4, 4 -- always four
+			elseif spellId == 209664 then -- Felwort
+				return 42, 42 -- amount is variable but the values are conservative
+			elseif spellId == 247861 then -- Astral Glory
+				return 4, 4 -- amount is variable but the values are conservative
+			else
+				return 8, 8.8
+			end
+		end
+	end
+	local lNum, hNum = nil, nil
 	if TSM.IsWowClassic() then
 		spellId = private.classicSpellIdLookup[spellId] or spellId
-		return GetTradeSkillNumMade(spellId)
+		lNum, hNum = GetTradeSkillNumMade(spellId)
 	else
 		local info = C_TradeSkillUI.GetRecipeSchematic(spellId, false)
-		return info.quantityMin, info.quantityMax
+		lNum, hNum = info.quantityMin, info.quantityMax
 	end
+	return lNum, hNum
 end
 
 function Scanner.IsEnchant(craftString)
@@ -409,6 +442,7 @@ end
 
 function private.ProfessionStateUpdate()
 	private.hasScanned = false
+	private.dbPopulated = false
 	for _, callback in ipairs(private.callbacks) do
 		callback()
 	end
@@ -469,6 +503,7 @@ function private.ScanProfession()
 	end
 
 	local scannedHash = nil
+	local haveInvalidRecipes = false
 	local haveInvalidMats = false
 	if TSM.IsWowClassic() then
 		private.PopulateClassicSpellIdLookup()
@@ -487,13 +522,14 @@ function private.ScanProfession()
 				lastHeaderIndex = i
 			elseif name then
 				local craftString = CraftString.Get(private.classicSpellIdLookup[-i])
-				if not private.BulkInsertRecipe(craftString, i, name, lastHeaderIndex, skillType, -1, 1, 1, -1, -1) then
-					haveInvalidMats = true
-				end
+				local recipeScanResult, matScanResult = private.BulkInsertRecipe(craftString, i, name, lastHeaderIndex, skillType, -1, 1, 1, -1, -1)
+				haveInvalidRecipes = haveInvalidRecipes or not recipeScanResult
+				haveInvalidMats = haveInvalidMats or not matScanResult
 			end
 		end
 		private.matDB:BulkInsertEnd()
 		private.db:BulkInsertEnd()
+		private.dbPopulated = true
 	else
 		wipe(private.recipeInfoCache)
 		local prevRecipeIds = TempTable.Acquire()
@@ -520,6 +556,7 @@ function private.ScanProfession()
 		scannedHash = Math.CalculateHash(private.recipeInfoCache)
 		if scannedHash == private.prevScannedHash then
 			Log.Info("Hash hasn't changed, so not scanning")
+			private.dbPopulated = true
 			TempTable.Release(recipes)
 			TempTable.Release(prevRecipeIds)
 			TempTable.Release(nextRecipeIds)
@@ -553,9 +590,9 @@ function private.ScanProfession()
 						-- Remove any old version of the spell without a level
 						inactiveCraftStrings[CraftString.Get(spellId)] = true
 						if level <= unlockedLevel then
-							if not private.BulkInsertRecipe(craftString, index, info.name, info.categoryID, info.relativeDifficulty, rank, numSkillUps, level, info.currentRecipeExperience or -1, info.nextLevelRecipeExperience or -1) then
-								haveInvalidMats = true
-							end
+							local recipeScanResult, matScanResult = private.BulkInsertRecipe(craftString, index, info.name, info.categoryID, info.relativeDifficulty, rank, numSkillUps, level, info.currentRecipeExperience or -1, info.nextLevelRecipeExperience or -1)
+							haveInvalidRecipes = haveInvalidRecipes or not recipeScanResult
+							haveInvalidMats = haveInvalidMats or not matScanResult
 						else
 							-- This level isn't unlocked yet
 							inactiveCraftStrings[craftString] = true
@@ -571,9 +608,9 @@ function private.ScanProfession()
 						numResultItems = #resultItems
 					end
 					if numResultItems == 1 then
-						if not private.BulkInsertRecipe(craftString, index, info.name, info.categoryID, info.relativeDifficulty, rank, numSkillUps, 1, info.currentRecipeExperience or -1, info.nextLevelRecipeExperience or -1) then
-							haveInvalidMats = true
-						end
+						local recipeScanResult, matScanResult = private.BulkInsertRecipe(craftString, index, info.name, info.categoryID, info.relativeDifficulty, rank, numSkillUps, 1, info.currentRecipeExperience or -1, info.nextLevelRecipeExperience or -1)
+						haveInvalidRecipes = haveInvalidRecipes or not recipeScanResult
+						haveInvalidMats = haveInvalidMats or not matScanResult
 					else
 						-- This is a quality craft
 						local recipeDifficulty, baseRecipeQuality = Scanner.GetRecipeQualityInfo(craftString)
@@ -581,9 +618,9 @@ function private.ScanProfession()
 							for i = 1, numResultItems do
 								local qualityCraftString = CraftString.Get(spellId, rank, nil, i)
 								if Quality.GetNeededSkill(i, recipeDifficulty, baseRecipeQuality, numResultItems) then
-									if not private.BulkInsertRecipe(qualityCraftString, index, info.name, info.categoryID, info.relativeDifficulty, rank, numSkillUps, 1, info.currentRecipeExperience or -1, info.nextLevelRecipeExperience or -1) then
-										haveInvalidMats = true
-									end
+									local recipeScanResult, matScanResult = private.BulkInsertRecipe(qualityCraftString, index, info.name, info.categoryID, info.relativeDifficulty, rank, numSkillUps, 1, info.currentRecipeExperience or -1, info.nextLevelRecipeExperience or -1)
+									haveInvalidRecipes = haveInvalidRecipes or not recipeScanResult
+									haveInvalidMats = haveInvalidMats or not matScanResult
 								else
 									-- We can no longer craft this quality
 									inactiveCraftStrings[qualityCraftString] = true
@@ -599,6 +636,7 @@ function private.ScanProfession()
 		end
 		private.matDB:BulkInsertEnd()
 		private.db:BulkInsertEnd()
+		private.dbPopulated = true
 		if next(inactiveCraftStrings) then
 			private.inactiveFunc(inactiveCraftStrings)
 		end
@@ -607,9 +645,12 @@ function private.ScanProfession()
 		TempTable.Release(prevRecipeIds)
 		TempTable.Release(nextRecipeIds)
 	end
-
-	if State.IsNPC() or State.IsLinked() or State.IsGuild() then
-		-- we don't want to store this profession in our DB, so we're done
+	if haveInvalidRecipes then
+		-- We'll try again
+		private.QueueProfessionScan()
+		return
+	elseif State.IsNPC() or State.IsLinked() or State.IsGuild() then
+		-- We don't want to store this profession in our application DB, so we're done
 		private.DoneScanning(scannedHash)
 		return
 	end
@@ -617,6 +658,8 @@ function private.ScanProfession()
 	local craftStrings = TempTable.Acquire()
 	private.db:NewQuery()
 		:Select("craftString")
+		:NotEqual("itemString", "")
+		:NotEqual("craftString", "")
 		:AsTable(craftStrings)
 		:Release()
 	local categorySkillLevelLookup = TempTable.Acquire()
@@ -637,53 +680,76 @@ function private.ScanProfession()
 		private.DoneScanning(scannedHash)
 	end
 
-	-- explicitly run GC
 	wipe(private.recipeInfoCache)
-	collectgarbage()
 end
 
 function private.BulkInsertRecipe(craftString, index, name, categoryId, relativeDifficulty, rank, numSkillUps, level, currentRecipeExperience, nextLevelRecipeExperience)
-	local itemString = private.GetItemString(craftString) or ""
-	private.db:BulkInsertNewRow(craftString, itemString, index, name, categoryId, relativeDifficulty, rank, numSkillUps, level, currentRecipeExperience, nextLevelRecipeExperience)
+	local itemString, craftName = private.GetItemStringAndCraftName(craftString)
+	if not itemString or not craftName then
+		return false, false
+	end
+	private.db:BulkInsertNewRow(craftString, itemString, index, name, craftName, categoryId, relativeDifficulty, rank, numSkillUps, level, currentRecipeExperience, nextLevelRecipeExperience)
 	if not TSM.IsWowClassic() then
 		local spellId = CraftString.GetSpellId(craftString)
 		private.recipeInfoCache[craftString] = private.recipeInfoCache[spellId]
 	end
-	return private.BulkInsertMats(craftString)
+	local matScanResult = private.BulkInsertMats(craftString)
+	return true, matScanResult
 end
 
-function private.GetItemString(craftString)
+
+function private.GetItemStringAndCraftName(craftString)
+	-- get the links
 	local spellId = CraftString.GetSpellId(craftString)
 	local quality = CraftString.GetQuality(craftString)
 	local resultItem = Scanner.GetResultItem(craftString)
+
+	-- get the itemString and craft name
+	local itemString, craftName, indirectSpellId = nil, nil, nil
 	if quality then
 		assert(type(resultItem) == "table")
 		assert(resultItem[quality])
-		return ItemString.GetBase(resultItem[quality])
+		itemString = ItemString.GetBase(resultItem[quality])
+		craftName = ItemInfo.GetName(itemString)
 	elseif strfind(resultItem, "enchant:") then
 		if TSM.IsWowClassic() and not TSM.IsWowWrathClassic() then
-			return nil
-		end
-		-- Result of craft is not an item
-		local indirectSpellId = nil
-		if TSM.IsWowWrathClassic() then
-			indirectSpellId = strmatch(resultItem, "enchant:(%d+)")
-			indirectSpellId = indirectSpellId and tonumber(indirectSpellId)
+			return "", ""
 		else
-			indirectSpellId = spellId
+			-- result of craft is not an item
+			if TSM.IsWowWrathClassic() then
+				indirectSpellId = strmatch(resultItem, "enchant:(%d+)")
+				indirectSpellId = indirectSpellId and tonumber(indirectSpellId)
+				if not indirectSpellId then
+					return "", ""
+				end
+			else
+				indirectSpellId = spellId
+			end
+			itemString = ProfessionInfo.GetIndirectCraftResult(indirectSpellId)
+			if not itemString then
+				-- we don't care about this craft
+				return "", ""
+			end
+			craftName = GetSpellInfo(indirectSpellId)
 		end
-		return indirectSpellId and ProfessionInfo.GetIndirectCraftResult(indirectSpellId)
 	elseif strfind(resultItem, "item:") then
-		-- Result of craft is item
-		local itemString = ItemString.GetBase(resultItem)
+		-- result of craft is item
+		itemString = ItemString.GetBase(resultItem)
+		craftName = ItemInfo.GetName(resultItem)
 		-- Blizzard broke Brilliant Scarlet Ruby in 8.3, so just hard-code a workaround
-		if spellId == 53946 and not itemString then
-			return "i:39998"
+		if spellId == 53946 and not itemString and not craftName then
+			itemString = "i:39998"
+			craftName = GetSpellInfo(spellId)
 		end
-		return itemString
 	else
 		error("Invalid craft: "..tostring(craftString))
 	end
+	if not itemString or not craftName then
+		Log.Warn("No itemString (%s) or craftName (%s) found (%s)", tostring(itemString), tostring(craftName), tostring(craftString))
+		return nil, nil
+	end
+
+	return itemString, craftName
 end
 
 function private.BulkInsertMats(craftString)

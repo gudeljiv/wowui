@@ -577,7 +577,7 @@ function private.StateToErrStr(state)
 	elseif state.neededTools then
 		return REQUIRES_LABEL.." "..state.neededTools
 	elseif state.remainingCooldown then
-		return L["On Cooldown"]
+		return format(L["On Cooldown for %s"], SecondsToTime(state.remainingCooldown))
 	elseif state.numCraftable == 0 then
 		return L["Missing Materials"]
 	else
@@ -627,7 +627,7 @@ function private.CraftStringToCraftNumText(craftString)
 	if not craftString then
 		return ""
 	end
-	local lNum, hNum = Profession.GetCraftedQuantity(craftString)
+	local lNum, hNum = Profession.GetCraftedQuantityRange(craftString)
 	return lNum == hNum and format("(%d)", lNum) or format("(%d-%d)", lNum, hNum)
 end
 
@@ -635,7 +635,7 @@ function private.CraftStringToCraftNumShown(craftString)
 	if not craftString then
 		return false
 	end
-	local lNum, hNum = Profession.GetCraftedQuantity(craftString)
+	local lNum, hNum = Profession.GetCraftedQuantityRange(craftString)
 	return lNum ~= hNum or lNum >= 2
 end
 

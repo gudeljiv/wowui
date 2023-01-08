@@ -167,17 +167,21 @@ function Profession.GetRemainingCooldown(craftString)
 		spellId = private.classicSpellIdLookup[spellId] or spellId
 		cooldown = GetTradeSkillCooldown(spellId)
 	else
-		cooldown = C_TradeSkillUI.GetRecipeCooldown(spellId)
+		local cooldownTime, _, charges, maxCharges = C_TradeSkillUI.GetRecipeCooldown(spellId)
+		if maxCharges and charges and maxCharges > 0 and (charges > 0 or not cooldownTime) then
+			return nil
+		end
+		cooldown = cooldownTime
 	end
-	return cooldown
+	return cooldown and floor(cooldown) or nil
 end
 
----Gets how many the recipe crafts.
+---Gets the range of quantitys which the recipe crafts.
 ---@param craftString string The craft string for the recipe
 ---@return number @The lower bound of the crafted quantity
 ---@return number @The upper bound of the crafted quantity
-function Profession.GetCraftedQuantity(craftString)
-	return Scanner.GetCraftedQuantity(craftString)
+function Profession.GetCraftedQuantityRange(craftString)
+	return Scanner.GetCraftedQuantityRange(craftString)
 end
 
 ---Gets the result of a recipe.
@@ -185,6 +189,13 @@ end
 ---@return string|string[]?
 function Profession.GetResultItem(craftString)
 	return Scanner.GetResultItem(craftString)
+end
+
+---Gets the number of different result items of a recipe.
+---@param craftString string The craft string for the recipe
+---@return number
+function Profession.GetNumResultItems(craftString)
+	return Scanner.GetNumResultItems(craftString)
 end
 
 ---Gets the result info for a recipe.
@@ -400,9 +411,16 @@ end
 
 ---Gets the name for a craft string.
 ---@param craftString string
----@return nil
+---@return string
 function Profession.GetNameByCraftString(craftString)
 	return Scanner.GetNameByCraftString(craftString)
+end
+
+---Gets the craft name for a craft string.
+---@param craftString string
+---@return string
+function Profession.GetCraftNameByCraftString(craftString)
+	return Scanner.GetCraftNameByCraftString(craftString)
 end
 
 ---Gets the current experience for a craft string.

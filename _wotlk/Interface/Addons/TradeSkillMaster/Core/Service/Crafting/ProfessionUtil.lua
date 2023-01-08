@@ -12,7 +12,6 @@ local Event = TSM.Include("Util.Event")
 local Log = TSM.Include("Util.Log")
 local Delay = TSM.Include("Util.Delay")
 local ItemString = TSM.Include("Util.ItemString")
-local MatString = TSM.Include("Util.MatString")
 local RecipeString = TSM.Include("Util.RecipeString")
 local TempTable = TSM.Include("Util.TempTable")
 local ItemInfo = TSM.Include("Service.ItemInfo")
@@ -283,16 +282,6 @@ function ProfessionUtil.Craft(craftString, recipeId, quantity, useVellum, callba
 	private.craftTimeout = nil
 	private.timeoutTimer:RunForTime(0.5)
 	return quantity
-end
-
-function ProfessionUtil.StoreOptionalMatText(matString, text)
-	local matList = MatString.GetMatList(matString)
-	TSM.db.global.internalData.optionalMatTextLookup[matList] = TSM.db.global.internalData.optionalMatTextLookup[matList] or text
-end
-
-function ProfessionUtil.GetOptionalMatText(matString)
-	local matList = MatString.GetMatList(matString)
-	return TSM.db.global.internalData.optionalMatTextLookup[matList] or OPTIONAL_REAGENT_POSTFIX
 end
 
 function ProfessionUtil.GetCraftResultTooltipFromRecipeString(recipeString)

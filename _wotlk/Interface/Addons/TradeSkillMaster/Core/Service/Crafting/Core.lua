@@ -318,9 +318,8 @@ end
 
 function Crafting.OptionalMatIterator(craftString)
 	return private.matDB:NewQuery()
-		:Select("itemString", "slotId", "text")
+		:Select("itemString", "slotId")
 		:VirtualField("slotId", "number", MatString.GetSlotId, "itemString")
-		:VirtualField("text", "string", private.OptionalMatTextVirtualField, "itemString")
 		:Equal("craftString", craftString)
 		:Matches("itemString", "^[qof]:")
 		:OrderBy("slotId", true)
@@ -741,10 +740,6 @@ end
 
 function private.SaleRateVirtualField(itemString)
 	return TSM.AuctionDB.GetRegionItemData(itemString, "regionSalePercent") or Math.GetNan()
-end
-
-function private.OptionalMatTextVirtualField(matString)
-	return TSM.Crafting.ProfessionUtil.GetOptionalMatText(matString)
 end
 
 function private.GetRestockHelpMessage(itemString)

@@ -111,7 +111,7 @@ function CraftingTask.OnButtonClick(self)
 		local craftString = self._craftStrings[1]
 		local spellId = CraftString.GetSpellId(craftString)
 		local quantity = self._craftQuantity[craftString]
-		local _, numMax = Profession.GetCraftedQuantity(craftString)
+		local _, numMax = Profession.GetCraftedQuantityRange(craftString)
 		if numMax and numMax > 1 then
 			-- need minimum this many repeats
 			quantity = ceil(quantity / numMax)
@@ -188,7 +188,7 @@ function private.ChatMsgLootEventHandler(_, msg)
 		return
 	end
 	local msgItemLink, quantity = nil, nil
-	local numMin, numMax = Profession.GetCraftedQuantity(CraftString.Get(private.pendingSpellId))
+	local numMin, numMax = Profession.GetCraftedQuantityRange(CraftString.Get(private.pendingSpellId))
 	if numMin == 1 then
 		numMin = numMin + 1
 	end
