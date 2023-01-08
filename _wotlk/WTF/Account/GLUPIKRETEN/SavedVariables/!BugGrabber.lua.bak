@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 8304,
+	["session"] = 8310,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -7029,21 +7029,13 @@ BugGrabberDB = {
 			["counter"] = 5,
 		}, -- [905]
 		{
-			["message"] = "...terface\\AddOns\\AtlasLootClassic\\Data\\VendorPrice.lua:804: table index is nil",
-			["time"] = "2023/01/02 17:33:59",
-			["locals"] = "targetGUID = \"Creature-0-4469-571-146-35790-00002BA87B\"\nnpcID = 35790\n(for index) = 1\n(for limit) = 4\n(for step) = 1\nitemNum = 1\nvItemID = nil\nitemCost = \"EmblemOfValor:1\"\n(*temporary) = <table> {\n 47665 = \"EmblemOfTriumph:25\"\n 41559 = \"honor:1250\"\n 41591 = \"honor:5700\"\n 31585 = \"honor:3800\"\n 40696 = \"EmblemOfHeroism:40\"\n 23465 = \"honor:5000\"\n 33663 = \"honor:17100\"\n 40856 = \"EmblemOfHeroism:30\"\n 33727 = \"honor:17100\"\n 32800 = \"honor:5320\"\n 33887 = \"honor:5130\"\n 33919 = \"honor:5130\"\n 34015 = \"honor:8550\"\n 35070 = \"honor:7600\"\n 35102 = \"honor:14250\"\n 35134 = \"honor:5700\"\n 28852 = \"honor:3040\"\n 31969 = \"honor:6650\"\n 31985 = \"honor:6650\"\n 40441 = \"honor:7600\"\n 48689 = \"EmblemOfHeroism:40\"\n 41560 = \"honor:1250\"\n 41592 = \"honor:5700\"\n 40697 = \"EmblemOfHeroism:40\"\n 33664 = \"honor:8550\"\n 40857 = \"EmblemOfHeroism:30\"\n 33728 = \"honor:8550\"\n 32801 = \"honor:5320\"\n 33888 = \"honor:6840\"\n 33920 = \"honor:5130\"\n 28245 = \"honor:2850\"\n 32961 = \"honor:3325\"\n 34016 = \"honor:8550\"\n 28293 = \"honor:7600\"\n 33057 = \"honor:3990\"\n 35135 = \"honor:5700\"\n 35167 = \"honor:5700\"\n 40442 = \"honor:9500\"\n 33313 = \"honor:3325\"\n 47667 = \"EmblemOfTriumph:25\"\n 38588 = \"honor:2280\"\n 40698 = \"EmblemOfHeroism:25\"\n 23466 = \"honor:3750\"\n 33665 = \"honor:6840\"\n 28629 = \"honor:3800\"\n 33729 = \"honor:6840\"\n 32802 = \"honor:5320\"\n 33889 = \"honor:5130\"\n 33921 = \"honor:5130\"\n 35008 = \"honor:4750\"\n 35072 = \"honor:9500\"\n 18607 = \"honor:7500\"\n 28853 = \"honor:3800\"\n 54637 = \"cpvpWarsong:1\"\n 28917 = \"honor:7600\"\n 40443 = \"honor:9500\"\n 48691 = \"EmblemOfHeroism:40\"\n 40635 = \"EmblemOfValor:75\"\n 34529 = \"honor:17100\"\n 40699 = \"EmblemOfHeroism:25\"\n 33666 = \"honor:8550\"\n 28118 = \"honor:1425\"\n 33730 = \"honor:8550\"\n 33762 = \"honor:8550\"\n 32803 = \"honor:5320\"\n 33890 = \"honor:6840\"\n 33922 = \"honor:5130\"\n 28246 = \"honor:2280\"\n 32963 = \"honor:9975\"\n 28294 = \"honor:9500\"\n 28310 = \"honor:4750\"\n 35137 = \"honor:7600\"\n 35169 = \"honor:5700\"\n 28358 = \"honor:4750\"\n 40444 = \"honor:7600\"\n 41563 = \"honor:1250\"\n 31587 = \"honor:3040\"\n 34530 = \"honor:17100\"\n 40700 = \"EmblemOfHeroism:35\"\n 16345 = \"honor:2500\"\n 33667 = \"honor:8550\"\n 28630 = \"honor:3800\"\n 33731 = \"honor:8550\"\n 33763 = \"honor:12825\"\n 32804 = \"honor:5320\"\n 33891 = \"honor:6840\"\n 33923 = \"honor:5130\"\n 32964 = \"honor:9975\"\n 35074 = \"honor:4750\"\n 35170 = \"honor:5700\"\n 31971 = \"honor:5320\"\n 28918 = \"honor:7600\"\n 32003 = \"honor:6650\"\n 47670 = \"EmblemOfTriumph:25\"\n 41564 = \"honor:1250\"\n 40701 = \"EmblemOfHeroism:35\"\n 40733 = \"EmblemOfValor:60\"\n 40797 = \"EmblemOfHeroism:30\"\n 36737 = \"honor:2850\"\n 28119 = \"honor:1425\"\n 33732 = \"honor:6840\"\n 33764 = \"honor:5130\"\n 32805 = \"honor:5320\"\n 33892 = \"honor:6840\"\n 28247 = \"honor:2280\"\n 32997 = \"honor:3990\"\n 35075 = \"honor:19000\"\n 35107 = \"honor:5700\"\n 35139 = \"honor:7600\"\n 35171 = \"honor:5700\"\n 32451 = \"honor:7125\"\n 28423 = \"honor:3800\"\n 47671 = \"EmblemOfTriumph:25\"\n 41565 = \"honor:1250\"\n 31588 = \"honor:3800\"\n 40702 = \"EmblemOfHeroism:50\"\n 40734 = \"EmblemOfValor:60\"\n 23468 = \"honor:1250\"\n 33669 = \"honor:8550\"\n 33733 = \"honor:8550\"\n 33765 = \"honor:5130\"\n 32806 = \"honor:5320\"\n 33893 = \"honor:5130\"\n 32998 = \"honor:5320\"\n 35076 = \"honor:9500\"\n 35108 = \"honor:5700\"\n 35140 = \"honor:7600\"\n 28855 = \"honor:3040\"\n 28871 = \"honor:3040\"\n 31972 = \"honor:6650\"\n 31988 = \"honor:6650\"\n 28935 = \"honor:7600\"\n 47672 = \"EmblemOfTriumph:25\"\n 32052 = \"honor:6650\"\n 22877 = \"honor:1250\"\n 40639 = \"EmblemOfValor:60\"\n 40703 = \"EmblemOfHeroism:50\"\n 40735 = \"EmblemOfValor:60\"\n 40799 = \"EmblemOfHeroism:30\"\n 33670 = \"honor:17100\"\n 28120 = \"honor:1425\"\n 28136 = \"honor:3800\"\n 33766 = \"honor:17100\"\n 33894 = \"honor:5130\"\n 42110 = \"honor:16590\"\n 32999 = \"honor:5320\"\n 28312 = \"honor:4750\"\n 35141 = \"honor:7600\"\n 35173 = \"honor:5700\"\n 32452 = \"honor:2375\"\n 28424 = \"honor:4750\"\n 30486 = \"honor:6650\"\n 47673 = \"EmblemOfTriumph:25\"\n 40704 = \"EmblemOfHeroism:50\"\n 40736 = \"EmblemOfValor:60\"\n 23469 = \"honor:1250\"\n 33671 = \"honor:6840\"\n 33735 = \"honor:12825\"\n 18434 = \"honor:400\"\n 32808 = \"honor:5320\"\n 43102 = \"EmblemOfHeroism:10\"\n 35014 = \"honor:14250\"\n 28808 = \"honor:3800\"\n 33064 = \"honor:3990\"\n 35142 = \"honor:7600\"\n 28872 = \"honor:3800\"\n 28904 = \"arcanerune",
-			["stack"] = "[string \"@Interface\\AddOns\\AtlasLootClassic\\Data\\VendorPrice.lua\"]:804: in function `ScanShownVendor'\n[string \"@Interface\\AddOns\\AtlasLootClassic\\Data\\VendorPrice.lua\"]:817: in function <...terface\\AddOns\\AtlasLootClassic\\Data\\VendorPrice.lua:815>",
-			["session"] = 8236,
-			["counter"] = 2,
-		}, -- [906]
-		{
 			["message"] = "Interface\\AddOns\\aTotemBar\\aTotemBar.lua:171: attempt to call method 'SetBackdrop' (a nil value)",
 			["time"] = "2023/01/03 09:13:53",
 			["locals"] = "msg = \"lock\"\neditbox = ChatFrame1EditBox {\n BottomLeftCorner = <unnamed> {\n }\n beautyShadow = <table> {\n }\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:152\n customAutoCompleteFunction = <function> defined @Interface\\FrameXML\\ChatFrame.lua:4126\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:390\n command = \"/atbar\"\n TopLeftCorner = <unnamed> {\n }\n RightEdge = <unnamed> {\n }\n disallowAutoComplete = false\n headerSuffix = ChatFrame1EditBoxHeaderSuffix {\n }\n ApplyBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:294\n SetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:282\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:409\n GetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:347\n autoCompleteXOffset = 35\n prompt = ChatFrame1EditBoxPrompt {\n }\n autoCompleteParams = <table> {\n }\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:266\n tabCompleteTableIndex = 1\n text = \"\"\n setText = 0\n language = \"Orcish\"\n languageID = 1\n SetupTextureCoordinates = <function> defined @Interface\\SharedXML\\Backdrop.lua:214\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:182\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:278\n beautyBorder = <table> {\n }\n Center = <unnamed> {\n }\n chatLanguage = \"Orcish\"\n GetEdgeSize = <function> defined @Interface\\SharedXML\\Backdrop.lua:188\n 0 = <userdata>\n BottomEdge = <unnamed> {\n }\n TopEdge = <unnamed> {\n }\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:422\n BottomRightCorner = <unnamed> {\n }\n TopRightCorner = <unnamed> {\n }\n chatFrame = ChatFrame1 {\n }\n addSpaceToAutoComplete = true\n header = ChatFrame1EditBoxHeader {\n }\n addHighlightedText = true\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:246\n SetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:399\n LeftEdge = <unnamed> {\n }\n backdropInfo = <table> {\n }\n}\ncommand = \"lock\"\nrest = \"\"\n(*temporary) = nil\n(*temporary) = aTotemBar {\n 0 = <userdata>\n}\n(*temporary) = <table> {\n bgFile = \"Interface/Tooltips/UI-Tooltip-Background\"\n tileSize = 16\n tile = true\n edgeSize = 16\n insets = <table> {\n }\n}\n(*temporary) = \"attempt to call method 'SetBackdrop' (a nil value)\"\naTotemBar = aTotemBar {\n 0 = <userdata>\n}\n",
 			["stack"] = "[string \"@Interface\\AddOns\\aTotemBar\\aTotemBar.lua\"]:171: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 8246,
 			["counter"] = 1,
-		}, -- [907]
+		}, -- [906]
 		{
 			["message"] = "Interface\\AddOns\\aTotemBar\\aTotemBar.lua:181: attempt to call method 'SetBackdrop' (a nil value)",
 			["time"] = "2023/01/03 09:16:07",
@@ -7051,14 +7043,14 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\aTotemBar\\aTotemBar.lua\"]:181: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 8247,
 			["counter"] = 1,
-		}, -- [908]
+		}, -- [907]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Questie' tried to call the protected function 'Questie_TrackedAchievements:SetHeight()'.",
 			["time"] = "2022/10/15 15:22:21",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:480: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:480>\n[string \"=[C]\"]: in function `SetHeight'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\AchievementTracker.lua\"]:67: in function `LoadAchievements'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\AchievementTracker.lua\"]:96: in function <...ddOns\\Questie\\Modules\\Tracker\\AchievementTracker.lua:89>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `Fire'\n[string \"@Interface\\AddOns\\AuctionFaster\\Libs\\AceEvent-3.0\\AceEvent-3.0-4.lua\"]:120: in function <...Ons\\AuctionFaster\\Libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 8259,
 			["counter"] = 34,
-		}, -- [909]
+		}, -- [908]
 		{
 			["message"] = "Usage: local position = C_DeathInfo.GetCorpseMapPosition(uiMapID)",
 			["time"] = "2022/09/20 18:08:13",
@@ -7066,14 +7058,14 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `GetCorpseMapPosition'\n[string \"@Interface\\AddOns\\RXPGuides\\map.lua\"]:759: in function <Interface\\AddOns\\RXPGuides\\map.lua:730>\n[string \"@Interface\\AddOns\\RXPGuides\\map.lua\"]:980: in function `UpdateGotoSteps'\n[string \"@Interface\\AddOns\\RXPGuides\\RXPGuides-v4.2.11.lua\"]:757: in function <Interface\\AddOns\\RXPGuides\\RXPGuides.lua:681>",
 			["session"] = 8259,
 			["counter"] = 18,
-		}, -- [910]
+		}, -- [909]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Questie' tried to call the protected function '<unnamed>:SetWidth()'.",
 			["time"] = "2022/11/12 13:25:35",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:480: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:480>\n[string \"=[C]\"]: in function `SetWidth'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\LinePool.lua\"]:55: in function `SetText'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:812: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua\"]:378: in function `val'\n[string \"@Interface\\AddOns\\Questie\\Modules\\TaskQueue.lua\"]:8: in function <Interface\\AddOns\\Questie\\Modules\\TaskQueue.lua:6>",
 			["session"] = 8260,
 			["counter"] = 4,
-		}, -- [911]
+		}, -- [910]
 		{
 			["message"] = "...erface\\AddOns\\TradeSkillMaster\\LibTSM\\UI\\Tooltip.lua:122: assertion failed!",
 			["time"] = "2023/01/03 15:33:36",
@@ -7081,7 +7073,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `assert'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\UI\\Tooltip.lua\"]:122: in function `Show'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\Core\\UI\\Components\\List\\ListRow.lua\"]:273: in function <...TradeSkillMaster\\Core\\UI\\Components\\List\\ListRow.lua:272>\n[string \"@Interface\\AddOns\\TradeSkillMaster\\External\\LibTSMClass\\LibTSMClass-2.lua\"]:326: in function `ShowTooltip'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\Core\\UI\\Components\\List\\CraftingMatList.lua\"]:169: in function <...llMaster\\Core\\UI\\Components\\List\\CraftingMatList.lua:164>\n[string \"@Interface\\AddOns\\TradeSkillMaster\\External\\LibTSMClass\\LibTSMClass-2.lua\"]:326: in function `_HandleRowEnter'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\Core\\UI\\Components\\List\\List.lua\"]:342: in function <...ns\\TradeSkillMaster\\Core\\UI\\Components\\List\\List.lua:339>\n[string \"@Interface\\AddOns\\TradeSkillMaster\\External\\LibTSMClass\\LibTSMClass-2.lua\"]:326: in function <...radeSkillMaster\\External\\LibTSMClass\\LibTSMClass.lua:313>\n[string \"@Interface\\AddOns\\TradeSkillMaster\\External\\LibTSMClass\\LibTSMClass-2.lua\"]:496: in function `_frameEventHandler'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\Core\\UI\\Components\\List\\ListRow.lua\"]:294: in function <...TradeSkillMaster\\Core\\UI\\Components\\List\\ListRow.lua:292>\n[string \"@Interface\\AddOns\\TradeSkillMaster\\External\\LibTSMClass\\LibTSMClass-2.lua\"]:326: in function <...radeSkillMaster\\External\\LibTSMClass\\LibTSMClass.lua:313>\n[string \"@Interface\\AddOns\\TradeSkillMaster\\External\\LibTSMClass\\LibTSMClass-2.lua\"]:496: in function `?'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua\"]:86: in function `ScriptHandlerCommon'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua\"]:37: in function <...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:36>",
 			["session"] = 8263,
 			["counter"] = 1,
-		}, -- [912]
+		}, -- [911]
 		{
 			["message"] = "[string \"SET alwaysCompareItems 0\"]:1: '=' expected near 'alwaysCompareItems'",
 			["time"] = "2023/01/04 18:31:33",
@@ -7089,7 +7081,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 8274,
 			["counter"] = 1,
-		}, -- [913]
+		}, -- [912]
 		{
 			["message"] = "Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua:1217: Attempt to access forbidden object from code tainted by an AddOn",
 			["time"] = "2022/11/20 19:48:20",
@@ -7097,7 +7089,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `GetName'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:1217: in function `func'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:921: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
 			["session"] = 8278,
 			["counter"] = 37,
-		}, -- [914]
+		}, -- [913]
 		{
 			["message"] = "[string \"Uni\"]:1: '=' expected near '<eof>'",
 			["time"] = "2023/01/05 16:04:01",
@@ -7105,20 +7097,28 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 8278,
 			["counter"] = 1,
-		}, -- [915]
+		}, -- [914]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'LFGBulletinBoard' tried to call the protected function 'Search()'.",
 			["time"] = "2022/11/17 17:34:09",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:480: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:480>\n[string \"=[C]\"]: in function `Search'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:225: in function `LFGBrowse_DoSearch'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:178: in function `SearchActiveEntry'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGParentFrame.lua\"]:92: in function `LFGParentFrame_SearchActiveEntry'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGListing.lua\"]:67: in function <...s\\Blizzard_LookingForGroupUI\\Blizzard_LFGListing.lua:49>",
 			["session"] = 8289,
 			["counter"] = 21,
-		}, -- [916]
+		}, -- [915]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Questie' tried to call the protected function 'Questie_TrackedAchievements:SetWidth()'.",
 			["time"] = "2022/11/12 18:00:05",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:480: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:480>\n[string \"=[C]\"]: in function `SetWidth'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\AchievementTracker.lua\"]:83: in function `LoadAchievements'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\AchievementTracker.lua\"]:96: in function <...ddOns\\Questie\\Modules\\Tracker\\AchievementTracker.lua:89>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `Fire'\n[string \"@Interface\\AddOns\\AuctionFaster\\Libs\\AceEvent-3.0\\AceEvent-3.0-4.lua\"]:120: in function <...Ons\\AuctionFaster\\Libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 8292,
 			["counter"] = 3,
+		}, -- [916]
+		{
+			["message"] = "...terface\\AddOns\\AtlasLootClassic\\Data\\VendorPrice.lua:804: table index is nil",
+			["time"] = "2023/01/02 17:33:59",
+			["locals"] = "targetGUID = \"Creature-0-4469-571-146-35790-00002BA87B\"\nnpcID = 35790\n(for index) = 1\n(for limit) = 4\n(for step) = 1\nitemNum = 1\nvItemID = nil\nitemCost = \"EmblemOfValor:1\"\n(*temporary) = <table> {\n 47665 = \"EmblemOfTriumph:25\"\n 41559 = \"honor:1250\"\n 41591 = \"honor:5700\"\n 31585 = \"honor:3800\"\n 40696 = \"EmblemOfHeroism:40\"\n 23465 = \"honor:5000\"\n 33663 = \"honor:17100\"\n 40856 = \"EmblemOfHeroism:30\"\n 33727 = \"honor:17100\"\n 32800 = \"honor:5320\"\n 33887 = \"honor:5130\"\n 33919 = \"honor:5130\"\n 34015 = \"honor:8550\"\n 35070 = \"honor:7600\"\n 35102 = \"honor:14250\"\n 35134 = \"honor:5700\"\n 28852 = \"honor:3040\"\n 31969 = \"honor:6650\"\n 31985 = \"honor:6650\"\n 40441 = \"honor:7600\"\n 48689 = \"EmblemOfHeroism:40\"\n 41560 = \"honor:1250\"\n 41592 = \"honor:5700\"\n 40697 = \"EmblemOfHeroism:40\"\n 33664 = \"honor:8550\"\n 40857 = \"EmblemOfHeroism:30\"\n 33728 = \"honor:8550\"\n 32801 = \"honor:5320\"\n 33888 = \"honor:6840\"\n 33920 = \"honor:5130\"\n 28245 = \"honor:2850\"\n 32961 = \"honor:3325\"\n 34016 = \"honor:8550\"\n 28293 = \"honor:7600\"\n 33057 = \"honor:3990\"\n 35135 = \"honor:5700\"\n 35167 = \"honor:5700\"\n 40442 = \"honor:9500\"\n 33313 = \"honor:3325\"\n 47667 = \"EmblemOfTriumph:25\"\n 38588 = \"honor:2280\"\n 40698 = \"EmblemOfHeroism:25\"\n 23466 = \"honor:3750\"\n 33665 = \"honor:6840\"\n 28629 = \"honor:3800\"\n 33729 = \"honor:6840\"\n 32802 = \"honor:5320\"\n 33889 = \"honor:5130\"\n 33921 = \"honor:5130\"\n 35008 = \"honor:4750\"\n 35072 = \"honor:9500\"\n 18607 = \"honor:7500\"\n 28853 = \"honor:3800\"\n 54637 = \"cpvpWarsong:1\"\n 28917 = \"honor:7600\"\n 40443 = \"honor:9500\"\n 48691 = \"EmblemOfHeroism:40\"\n 40635 = \"EmblemOfValor:75\"\n 34529 = \"honor:17100\"\n 40699 = \"EmblemOfHeroism:25\"\n 33666 = \"honor:8550\"\n 28118 = \"honor:1425\"\n 33730 = \"honor:8550\"\n 33762 = \"honor:8550\"\n 32803 = \"honor:5320\"\n 33890 = \"honor:6840\"\n 33922 = \"honor:5130\"\n 28246 = \"honor:2280\"\n 32963 = \"honor:9975\"\n 28294 = \"honor:9500\"\n 28310 = \"honor:4750\"\n 35137 = \"honor:7600\"\n 35169 = \"honor:5700\"\n 28358 = \"honor:4750\"\n 40444 = \"honor:7600\"\n 41563 = \"honor:1250\"\n 31587 = \"honor:3040\"\n 34530 = \"honor:17100\"\n 40700 = \"EmblemOfHeroism:35\"\n 16345 = \"honor:2500\"\n 33667 = \"honor:8550\"\n 28630 = \"honor:3800\"\n 33731 = \"honor:8550\"\n 33763 = \"honor:12825\"\n 32804 = \"honor:5320\"\n 33891 = \"honor:6840\"\n 33923 = \"honor:5130\"\n 32964 = \"honor:9975\"\n 35074 = \"honor:4750\"\n 35170 = \"honor:5700\"\n 31971 = \"honor:5320\"\n 28918 = \"honor:7600\"\n 32003 = \"honor:6650\"\n 47670 = \"EmblemOfTriumph:25\"\n 41564 = \"honor:1250\"\n 40701 = \"EmblemOfHeroism:35\"\n 40733 = \"EmblemOfValor:60\"\n 40797 = \"EmblemOfHeroism:30\"\n 36737 = \"honor:2850\"\n 28119 = \"honor:1425\"\n 33732 = \"honor:6840\"\n 33764 = \"honor:5130\"\n 32805 = \"honor:5320\"\n 33892 = \"honor:6840\"\n 28247 = \"honor:2280\"\n 32997 = \"honor:3990\"\n 35075 = \"honor:19000\"\n 35107 = \"honor:5700\"\n 35139 = \"honor:7600\"\n 35171 = \"honor:5700\"\n 32451 = \"honor:7125\"\n 28423 = \"honor:3800\"\n 47671 = \"EmblemOfTriumph:25\"\n 41565 = \"honor:1250\"\n 31588 = \"honor:3800\"\n 40702 = \"EmblemOfHeroism:50\"\n 40734 = \"EmblemOfValor:60\"\n 23468 = \"honor:1250\"\n 33669 = \"honor:8550\"\n 33733 = \"honor:8550\"\n 33765 = \"honor:5130\"\n 32806 = \"honor:5320\"\n 33893 = \"honor:5130\"\n 32998 = \"honor:5320\"\n 35076 = \"honor:9500\"\n 35108 = \"honor:5700\"\n 35140 = \"honor:7600\"\n 28855 = \"honor:3040\"\n 28871 = \"honor:3040\"\n 31972 = \"honor:6650\"\n 31988 = \"honor:6650\"\n 28935 = \"honor:7600\"\n 47672 = \"EmblemOfTriumph:25\"\n 32052 = \"honor:6650\"\n 22877 = \"honor:1250\"\n 40639 = \"EmblemOfValor:60\"\n 40703 = \"EmblemOfHeroism:50\"\n 40735 = \"EmblemOfValor:60\"\n 40799 = \"EmblemOfHeroism:30\"\n 33670 = \"honor:17100\"\n 28120 = \"honor:1425\"\n 28136 = \"honor:3800\"\n 33766 = \"honor:17100\"\n 33894 = \"honor:5130\"\n 42110 = \"honor:16590\"\n 32999 = \"honor:5320\"\n 28312 = \"honor:4750\"\n 35141 = \"honor:7600\"\n 35173 = \"honor:5700\"\n 32452 = \"honor:2375\"\n 28424 = \"honor:4750\"\n 30486 = \"honor:6650\"\n 47673 = \"EmblemOfTriumph:25\"\n 40704 = \"EmblemOfHeroism:50\"\n 40736 = \"EmblemOfValor:60\"\n 23469 = \"honor:1250\"\n 33671 = \"honor:6840\"\n 33735 = \"honor:12825\"\n 18434 = \"honor:400\"\n 32808 = \"honor:5320\"\n 43102 = \"EmblemOfHeroism:10\"\n 35014 = \"honor:14250\"\n 28808 = \"honor:3800\"\n 33064 = \"honor:3990\"\n 35142 = \"honor:7600\"\n 28872 = \"honor:3800\"\n 28904 = \"arcanerune",
+			["stack"] = "[string \"@Interface\\AddOns\\AtlasLootClassic\\Data\\VendorPrice.lua\"]:804: in function `ScanShownVendor'\n[string \"@Interface\\AddOns\\AtlasLootClassic\\Data\\VendorPrice.lua\"]:817: in function <...terface\\AddOns\\AtlasLootClassic\\Data\\VendorPrice.lua:815>",
+			["session"] = 8309,
+			["counter"] = 4,
 		}, -- [917]
 	},
 }

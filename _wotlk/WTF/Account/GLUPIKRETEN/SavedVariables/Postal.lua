@@ -8,10 +8,10 @@ Postal3DB = {
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
 		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
-		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
-		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
+		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 		["Wells - Jin'do"] = "Wells - Jin'do",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
@@ -26,7 +26,7 @@ Postal3DB = {
 		["BlackBook"] = {
 			["alts"] = {
 				"Augustin|Golemagg|Horde|54|MAGE", -- [1]
-				"Battitude|Golemagg|Horde|6|ROGUE", -- [2]
+				"Battitude|Golemagg|Horde|7|ROGUE", -- [2]
 				"Battlearm|Golemagg|Horde|80|DEATHKNIGHT", -- [3]
 				"Battlearm|Jin'do|Horde|2|SHAMAN", -- [4]
 				"Handrmandr|Golemagg|Horde|1|WARRIOR", -- [5]
@@ -42,7 +42,7 @@ Postal3DB = {
 				"Tandaram|Jin'do|Horde|1|WARRIOR", -- [15]
 				"Tudum|Ashbringer|Horde|4|WARRIOR", -- [16]
 				"Tudum|Jin'do|Horde|1|WARRIOR", -- [17]
-				"Vermina|Golemagg|Horde|39|PALADIN", -- [18]
+				"Vermina|Golemagg|Horde|41|PALADIN", -- [18]
 				"Vermin|Golemagg|Horde|80|WARRIOR", -- [19]
 				"Wells|Jin'do|Horde|8|DRUID", -- [20]
 			},
@@ -81,13 +81,13 @@ Postal3DB = {
 		},
 		["Tandaram - Jin'do"] = {
 		},
-		["Moolatz - Golemagg"] = {
+		["Pitchwise - Ashbringer"] = {
 		},
 		["Tudum - Ashbringer"] = {
 		},
 		["Augustin - Golemagg"] = {
 		},
-		["Pitchwise - Ashbringer"] = {
+		["Moolatz - Golemagg"] = {
 		},
 		["Wells - Jin'do"] = {
 		},

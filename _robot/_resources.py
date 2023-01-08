@@ -160,18 +160,23 @@ skills["death knight"] = [
 ]
 
 skills["paladin"] = [
-    {"name": "blessing of might", "type": "GetSpellTexture", "id": 19740, "key": "f1"},
+    {"name": "divine storm", "type": "GetSpellTexture", "id": 53385, "key": "4"},
+    {"name": "crusader strike", "type": "GetSpellTexture", "id": 35395, "key": "5"},
     {"name": "exorcism", "type": "GetSpellTexture", "id": 879, "key": "f3", "modifier": "ctrl"},
     {"name": "judgement of light", "type": "GetSpellTexture", "id": 20271, "key": "f1", "modifier": "ctrl"},
     {"name": "judgement of wisdom", "type": "GetSpellTexture", "id": 53408, "key": "f2", "modifier": "ctrl"},
     {"name": "lay on hands", "type": "GetSpellTexture", "id": 633, "key": "k"},
     {"name": "purify", "type": "GetSpellTexture", "id": 1152, "key": "t"},
     {"name": "divine protection", "type": "GetSpellTexture", "id": 498, "key": "r", "modifier": "alt"},
-    {"name": "divine storm", "type": "GetSpellTexture", "id": 53385, "key": "4"},
-    {"name": "crusader strike", "type": "GetSpellTexture", "id": 35395, "key": "5"},
-    {"name": "consecration", "type": "GetSpellTexture", "id": 20116, "key": "3"},
-    {"name": "seal of command", "type": "GetSpellTexture", "id": 20375, "key": "d", "modifier": "alt"},
-    {"name": "seal of vengeance", "type": "GetSpellTexture", "id": 31801, "key": "f", "modifier": "alt"},
+    {"name": "consecration", "type": "GetSpellTexture", "id": 20116, "key": "2"},
+    {"name": "seal of command", "type": "GetSpellTexture", "id": 20375, "key": "f", "modifier": "alt"},
+    {"name": "seal of vengeance", "type": "GetSpellTexture", "id": 31801, "key": "d", "modifier": "alt"},
+    {"name": "seal of righteousness", "type": "GetSpellTexture", "id": 21084, "key": "d", "modifier": "alt"},
+    {"name": "holy shield", "type": "GetSpellTexture", "id": 20925, "key": "3"},
+    {"name": "hammer of the righteous", "type": "GetSpellTexture", "id": 53595, "key": "4"},
+    {"name": "shield of righteousness", "type": "GetSpellTexture", "id": 61411, "key": "5"},
+    {"name": "avengers shield", "type": "GetSpellTexture", "id": 31935, "key": "6"},
+    {"name": "holy wrath", "type": "GetSpellTexture", "id": 48817, "key": "7"},
 ]
 
 skills["rogue"] = [

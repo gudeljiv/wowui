@@ -9,9 +9,9 @@ PallyPowerDB = {
 		["Battitude - Golemagg"] = "Other",
 		["Mxyzptlk - Golemagg"] = "Other",
 		["Miqa - Golemagg"] = "Other",
-		["Tadibey - Golemagg"] = "Other",
-		["Battlearm - Golemagg"] = "Other",
 		["Vermin - Golemagg"] = "Other",
+		["Battlearm - Golemagg"] = "Other",
+		["Tadibey - Golemagg"] = "Other",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -34,10 +34,10 @@ PallyPowerDB = {
 		},
 		["Other"] = {
 			["enable"] = true,
+			["WrathTransition"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
-			["WrathTransition"] = true,
 		},
 	},
 }
@@ -47,7 +47,7 @@ PallyPower_Assignments = {
 		2, -- [2]
 		1, -- [3]
 		3, -- [4]
-		1, -- [5]
+		4, -- [5]
 		2, -- [6]
 		1, -- [7]
 		3, -- [8]
@@ -61,11 +61,11 @@ PallyPower_AuraAssignments = {
 	["Ondisch"] = 3,
 	["Lonnath"] = 0,
 	["Tökfilkó"] = 0,
-	["Monikà"] = 1,
-	["Berri"] = 3,
-	["Monikå"] = 1,
 	["Vermina"] = 2,
 	["Zoqur"] = 4,
+	["Monikå"] = 1,
+	["Berri"] = 3,
+	["Monikà"] = 1,
 	["Skodicek"] = 1,
 	["Xjereziah"] = 2,
 }
