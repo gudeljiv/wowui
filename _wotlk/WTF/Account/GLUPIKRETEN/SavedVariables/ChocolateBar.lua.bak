@@ -15,11 +15,11 @@ ChocolateBarDB = {
 		["Konac - Dreadnaught"] = "Default",
 		["Poklopac - Dreadnaught"] = "Default",
 		["Mxym - Golemagg"] = "Default",
-		["Tudum - Jin'do"] = "Default",
+		["Grgur - Golemagg"] = "Default",
 		["Verminz - Genesis"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
 		["Augustin - Golemagg"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
+		["Tudum - Jin'do"] = "Default",
 		["Koloman - Golemagg"] = "Default",
 		["Pitchwise - Genesis"] = "Default",
 		["Miqa - Golemagg"] = "Default",
@@ -59,7 +59,7 @@ ChocolateBarDB = {
 		["Judawise - Golemagg"] = "Default",
 		["Wells - Jin'do"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
-		["Grgur - Golemagg"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
 	},
 	["profiles"] = {
@@ -645,9 +645,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 727507,
-		["timeAtThisLevel"] = 110048,
-		["timeStamp"] = 1151674.842,
+		["total"] = 727531,
+		["timeAtThisLevel"] = 110072,
+		["timeStamp"] = 1215906.882,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -720,9 +720,9 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 316,
 	},
 	["Vermina-Golemagg"] = {
-		["total"] = 179953,
-		["timeStamp"] = 444688.746,
-		["timeAtThisLevel"] = 3537,
+		["total"] = 187763,
+		["timeStamp"] = 1153663.14,
+		["timeAtThisLevel"] = 1579,
 	},
 	["Provokator-Jin'do"] = {
 		["total"] = 22720,
@@ -739,9 +739,9 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1553269,
-		["timeStamp"] = 1151852.316,
-		["timeAtThisLevel"] = 460722,
+		["total"] = 1554371,
+		["timeStamp"] = 1216143.436,
+		["timeAtThisLevel"] = 461824,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
@@ -839,9 +839,9 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 446970,
-		["timeAtThisLevel"] = 117295,
-		["timeStamp"] = 1152965.313,
+		["total"] = 447373,
+		["timeAtThisLevel"] = 117698,
+		["timeStamp"] = 1216534.475,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,

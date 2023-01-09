@@ -1,10 +1,10 @@
-tag 61e1bd88e5709971b8bc4c8f57d9b0c2c384c982 Details.DF.Wrath.10402.148
+tag f44489911c7793612735cfdb8b173e51e4464dac Details.DF.Wrath.10403.148
 Author:	Tercio Jose <terciob19@hotmail.com>
-Date:	Fri Jan 6 12:12:11 2023 -0300
+Date:	Fri Jan 6 19:33:23 2023 -0300
 
-commit 30c41429b111c82271658930d1514cfb9caeefcb
+commit 77f8e7cab3e768b903627cb8aa05f6cbcb2dfadb
 Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Fri Jan 6 12:11:51 2023 -0300
+Date:   Fri Jan 6 19:33:09 2023 -0300
 
-    Roll back the removal of Streamer! plugin welcome screen due to a bug on new installs
+    Fixed an issue with the Streamer! plugin hiding after a logon
 

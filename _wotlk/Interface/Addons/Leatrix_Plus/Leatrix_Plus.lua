@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 3.0.77 (4th January 2023)
+-- 	Leatrix Plus 3.0.78 (8th January 2023)
 ----------------------------------------------------------------------
 
 --	01:Functns, 02:Locks, 03:Restart, 20:Live, 30:Isolated, 40:Player
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "3.0.77"
+	LeaPlusLC["AddonVer"] = "3.0.78"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -63,6 +63,10 @@
 	_G.BINDING_NAME_LEATRIX_PLUS_GLOBAL_TOGGLE = L["Toggle panel"]
 	_G.BINDING_NAME_LEATRIX_PLUS_GLOBAL_WEBLINK = L["Show web link"]
 	_G.BINDING_NAME_LEATRIX_PLUS_GLOBAL_RARE = L["Announce rare"]
+
+	-- Slash command taint
+	-- Enter combat, enter any addon slash command, open quest log with L, toggle tracking on a quest 4 times,
+	-- click the tracked quest in the objective tracker, taint and objective tracker no longer functions
 
 ----------------------------------------------------------------------
 --	L01: Functions
@@ -552,6 +556,7 @@
 		LeaPlusLC:LockOption("SetWeatherDensity", "SetWeatherDensityBtn", false)	-- Set weather density
 		LeaPlusLC:LockOption("ViewPortEnable", "ModViewportBtn", true)				-- Enable viewport
 		LeaPlusLC:LockOption("MuteGameSounds", "MuteGameSoundsBtn", false)			-- Mute game sounds
+		LeaPlusLC:LockOption("MuteCustomSounds", "MuteCustomSoundsBtn", false)		-- Mute custom sounds
 		LeaPlusLC:LockOption("StandAndDismount", "DismountBtn", true)				-- Dismount me
 	end
 
@@ -3026,11 +3031,19 @@
 			ColTar:SetScript("OnEvent", TargetFrameCol) -- Events are registered if target option is enabled
 
 			-- Refresh color if focus frame size changes
-			hooksecurefunc("FocusFrame_SetSmallSize", function()
-				if LeaPlusLC["ClassColTarget"] == "On" then
-					TargetFrameCol()
-				end
-			end)
+			if LeaPlusLC.NewPatch then
+				hooksecurefunc(FocusFrame, "SetSmallSize", function()
+					if LeaPlusLC["ClassColTarget"] == "On" then
+						TargetFrameCol()
+					end
+				end)
+			else
+				hooksecurefunc("FocusFrame_SetSmallSize", function()
+					if LeaPlusLC["ClassColTarget"] == "On" then
+						TargetFrameCol()
+					end
+				end)
+			end
 
 			-- Create configuration panel
 			local ClassFrame = LeaPlusLC:CreatePanel("Class colored frames", "ClassFrame")
@@ -3566,6 +3579,202 @@
 ----------------------------------------------------------------------
 
 	function LeaPlusLC:Player()
+
+		----------------------------------------------------------------------
+		-- Mute custom sounds (no reload required)
+		----------------------------------------------------------------------
+
+		do
+
+			-- Create configuration panel
+			local MuteCustomPanel = LeaPlusLC:CreatePanel("Mute custom sounds", "MuteCustomPanel")
+
+			local titleTX = LeaPlusLC:MakeTx(MuteCustomPanel, "Editor", 16, -72)
+			titleTX:SetWidth(534)
+			titleTX:SetWordWrap(false)
+			titleTX:SetJustifyH("LEFT")
+
+			-- Show help button for title
+			LeaPlusLC:CreateHelpButton("MuteGameSoundsCustomHelpButton", MuteCustomPanel, titleTX, "Enter sound file IDs separated by comma then click the Mute button.|n|nIf you wish, you can enter a brief note for each file ID but do not include numbers in your notes.|n|nFor example, you can enter 'DevAura 569679, RetAura 568744' to mute the Devotion Aura and Retribution Aura spells.|n|nUse Leatrix Sounds to find, test and play sound file IDs.")
+
+			-- Add large editbox
+			local eb = CreateFrame("Frame", nil, MuteCustomPanel, "BackdropTemplate")
+			eb:SetSize(548, 180)
+			eb:SetPoint("TOPLEFT", 10, -92)
+			eb:SetBackdrop({
+				bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background",
+				edgeFile = "Interface\\PVPFrame\\UI-Character-PVP-Highlight",
+				edgeSize = 16,
+				insets = { left = 8, right = 6, top = 8, bottom = 8 },
+			})
+			eb:SetBackdropBorderColor(1.0, 0.85, 0.0, 0.5)
+
+			eb.scroll = CreateFrame("ScrollFrame", nil, eb, "UIPanelScrollFrameTemplate")
+			eb.scroll:SetPoint("TOPLEFT", eb, 12, -10)
+			eb.scroll:SetPoint("BOTTOMRIGHT", eb, -30, 10)
+
+			eb.Text = CreateFrame("EditBox", nil, eb)
+			eb.Text:SetMultiLine(true)
+			eb.Text:SetWidth(494)
+			eb.Text:SetHeight(230)
+			eb.Text:SetPoint("TOPLEFT", eb.scroll)
+			eb.Text:SetPoint("BOTTOMRIGHT", eb.scroll)
+			eb.Text:SetMaxLetters(2000)
+			eb.Text:SetFontObject(GameFontNormalLarge)
+			eb.Text:SetAutoFocus(false)
+			eb.Text:SetScript("OnEscapePressed", function(self) self:ClearFocus() end)
+			eb.scroll:SetScrollChild(eb.Text)
+
+			-- Set focus on the editbox text when clicking the editbox
+			eb:SetScript("OnMouseDown", function()
+				eb.Text:SetFocus()
+				eb.Text:SetCursorPosition(eb.Text:GetMaxLetters())
+			end)
+
+			-- Function to save the custom sound list
+			local function SaveString(self, userInput)
+				local keytext = eb.Text:GetText()
+				if keytext and keytext ~= "" then
+					LeaPlusLC["MuteCustomList"] = strtrim(eb.Text:GetText())
+				else
+					LeaPlusLC["MuteCustomList"] = ""
+				end
+			end
+
+			-- Save the custom sound list when it changes and at startup
+			eb.Text:SetScript("OnTextChanged", SaveString)
+			eb.Text:SetText(LeaPlusLC["MuteCustomList"])
+			SaveString()
+
+			-- Help button hidden
+			MuteCustomPanel.h:Hide()
+
+			-- Back button handler
+			MuteCustomPanel.b:SetScript("OnClick", function()
+				MuteCustomPanel:Hide(); LeaPlusLC["PageF"]:Show(); LeaPlusLC["Page7"]:Show()
+				return
+			end)
+
+			-- Reset button hidden
+			MuteCustomPanel.r:Hide()
+
+			-- Show configuration panal when options panel button is clicked
+			LeaPlusCB["MuteCustomSoundsBtn"]:SetScript("OnClick", function()
+				if IsShiftKeyDown() and IsControlKeyDown() then
+					-- Preset profile
+					LeaPlusLC["MuteCustomList"] = "Devotion Aura 569679, Retribution Aura 568744"
+					eb.Text:SetText(LeaPlusLC["MuteCustomList"])
+				else
+					MuteCustomPanel:Show()
+					LeaPlusLC:HideFrames()
+				end
+			end)
+
+			-- Function to mute custom sound list
+			local function MuteCustomListFunc(unmute, userInput)
+				-- local mutedebug = true -- Debug
+				local counter = 0
+				local muteString = LeaPlusLC["MuteCustomList"]
+				if muteString and muteString ~= "" then
+					muteString = muteString:gsub("%s", ",")
+					muteString = muteString:gsub("[\n]", ",")
+					muteString = muteString:gsub("[^,%d]", "")
+					if mutedebug then print(muteString) end
+					local tList = {strsplit(",", muteString)}
+					if mutedebug then ChatFrame1:Clear() end
+					for i = 1, #tList do
+						if tList[i] then
+							tList[i] = tonumber(tList[i])
+							if tList[i] and tList[i] < 20000000 then
+								if mutedebug then print(tList[i]) end
+								if unmute then
+									UnmuteSoundFile(tList[i])
+								else
+									MuteSoundFile(tList[i])
+								end
+								counter = counter + 1
+							end
+						end
+					end
+					if userInput then
+						if unmute then
+							if counter == 1 then
+								LeaPlusLC:Print(L["Unmuted"] .. " " .. counter .. " " .. L["sound"] .. ".")
+							else
+								LeaPlusLC:Print(L["Unmuted"] .. " " .. counter .. " " .. L["sounds"] .. ".")
+							end
+						else
+							if counter == 1 then
+								LeaPlusLC:Print(L["Muted"] .. " " .. counter .. " " .. L["sound"] .. ".")
+							else
+								LeaPlusLC:Print(L["Muted"] .. " " .. counter .. " " .. L["sounds"] .. ".")
+							end
+						end
+					end
+				end
+			end
+
+			-- Mute custom list on startup if option is enabled
+			if LeaPlusLC["MuteCustomSounds"] == "On" then
+				MuteCustomListFunc()
+			end
+
+			-- Mute or unmute when option is clicked
+			LeaPlusCB["MuteCustomSounds"]:HookScript("OnClick", function()
+				if LeaPlusLC["MuteCustomSounds"] == "On" then
+					MuteCustomListFunc(false, false)
+				else
+					MuteCustomListFunc(true, false)
+				end
+			end)
+
+			-- Add mute button
+			local MuteCustomNowButton = LeaPlusLC:CreateButton("MuteCustomNowButton", MuteCustomPanel, "Mute", "TOPLEFT", 16, -292, 0, 25, true, "Click to mute sounds in the list.")
+			LeaPlusCB["MuteCustomNowButton"]:SetScript("OnClick", function() MuteCustomListFunc(false, true) end)
+
+			-- Add unmute button
+			local UnmuteCustomNowButton = LeaPlusLC:CreateButton("UnmuteCustomNowButton", MuteCustomPanel, "Unmute", "TOPLEFT", 16, -72, 0, 25, true, "Click to unmute sounds in the list.")
+			LeaPlusCB["UnmuteCustomNowButton"]:ClearAllPoints()
+			LeaPlusCB["UnmuteCustomNowButton"]:SetPoint("LEFT", MuteCustomNowButton, "RIGHT", 10, 0)
+			LeaPlusCB["UnmuteCustomNowButton"]:SetScript("OnClick", function() MuteCustomListFunc(true, true) end)
+
+			-- Add play sound file editbox
+			local willPlay, musicHandle
+			local MuteCustomSoundsStopButton = LeaPlusLC:CreateButton("MuteCustomSoundsStopButton", MuteCustomPanel, "Stop", "TOPRIGHT", -18, -66, 0, 25, true, "")
+			MuteCustomSoundsStopButton:SetScript("OnClick", function()
+				if musicHandle then StopSound(musicHandle) end
+			end)
+
+			local MuteCustomSoundsPlayButton = LeaPlusLC:CreateButton("MuteCustomSoundsPlayButton", MuteCustomPanel, "Play", "TOPRIGHT", -18, -66, 0, 25, true, "")
+			MuteCustomSoundsPlayButton:ClearAllPoints()
+			MuteCustomSoundsPlayButton:SetPoint("RIGHT", MuteCustomSoundsStopButton, "LEFT", -10, 0)
+
+			local MuteCustomSoundsSoundBox = LeaPlusLC:CreateEditBox("MuteCustomSoundsSoundBox", eb, 80, 8, "TOPRIGHT", -10, 20, "PlaySoundBox", "PlaySoundBox")
+			MuteCustomSoundsSoundBox:SetNumeric(true)
+			MuteCustomSoundsSoundBox:ClearAllPoints()
+			MuteCustomSoundsSoundBox:SetPoint("RIGHT", MuteCustomSoundsPlayButton, "LEFT", -10, 0)
+			MuteCustomSoundsPlayButton:SetScript("OnClick", function()
+				MuteCustomSoundsSoundBox:GetText()
+				if musicHandle then StopSound(musicHandle) end
+				willPlay, musicHandle = PlaySoundFile(MuteCustomSoundsSoundBox:GetText(), "Master")
+			end)
+
+			-- Add mousewheel support to the editbox
+			MuteCustomSoundsSoundBox:SetScript("OnMouseWheel", function(self, delta)
+				local endSound = tonumber(MuteCustomSoundsSoundBox:GetText())
+				if endSound then
+					if delta == 1 then endSound = endSound + 1 else endSound = endSound - 1 end
+					if endSound < 1 then endSound = 1 elseif endSound >= 10000000 then endSound = 10000000 end
+					MuteCustomSoundsSoundBox:SetText(endSound)
+					MuteCustomSoundsPlayButton:Click()
+				end
+			end)
+
+			local titlePlayer = LeaPlusLC:MakeTx(MuteCustomPanel, "Player", 16, -72)
+			titlePlayer:ClearAllPoints()
+			titlePlayer:SetPoint("TOPLEFT", MuteCustomSoundsSoundBox, "TOPLEFT", -4, 16)
+			LeaPlusLC:CreateHelpButton("MuteGameSoundsCustomPlayHelpButton", MuteCustomPanel, titlePlayer, "If you want to listen to a sound file, enter the sound file ID into the editbox and click the play button.|n|nYou can scroll the mousewheel over the editbox to play neighbouring sound files.")
+		end
 
 		----------------------------------------------------------------------
 		-- Manage vehicle
@@ -7596,6 +7805,9 @@
 				-- Create train all button
 				LeaPlusLC:CreateButton("TrainAllButton", ClassTrainerFrame, "Train All", "BOTTOMLEFT", 344, 54, 0, 22, false, "")
 
+				-- Give button global scope (useful for compatibility with other addons and essential for ElvUI)
+				_G.LeaPlusGlobalTrainAllButton = LeaPlusCB["TrainAllButton"]
+
 				-- Button tooltip
 				LeaPlusCB["TrainAllButton"]:SetScript("OnEnter", function(self)
 					-- Get number of available skills and total cost
@@ -7685,7 +7897,6 @@
 						_G["ClassTrainerTrainButton"]:SetPoint("BOTTOMRIGHT", _G["ClassTrainerFrame"], "BOTTOMRIGHT", -42, 78)
 						LeaPlusCB["TrainAllButton"]:ClearAllPoints()
 						LeaPlusCB["TrainAllButton"]:SetPoint("BOTTOMLEFT", _G["ClassTrainerFrame"], "BOTTOMLEFT", 344, 78)
-						_G.LeaPlusGlobalTrainAllButton = LeaPlusCB["TrainAllButton"]
 						E:GetModule("Skins"):HandleButton(_G.LeaPlusGlobalTrainAllButton)
 					end
 				end
@@ -9715,7 +9926,11 @@
 
 			-- Remove integrated movement function to avoid conflicts
 			_G.FocusFrame_SetLock = function() end
-			_G.FocusFrame_SetSmallSize = function() end
+			if LeaPlusLC.NewPatch then
+				_G.FocusFrame.SetSmallSize = function() end
+			else
+				_G.FocusFrame_SetSmallSize = function() end
+			end
 
 			-- Allow focus frame to be moved
 			FocusFrame:SetMovable(true)
@@ -13013,6 +13228,8 @@
 
 				LeaPlusLC:LoadVarChk("NoRestedEmotes", "Off")				-- Silence rested emotes
 				LeaPlusLC:LoadVarChk("MuteGameSounds", "Off")				-- Mute game sounds
+				LeaPlusLC:LoadVarChk("MuteCustomSounds", "Off")				-- Mute custom sounds
+				LeaPlusLC:LoadVarStr("MuteCustomList", "")					-- Mute custom sounds list
 
 				LeaPlusLC:LoadVarChk("NoBagAutomation", "Off")				-- Disable bag automation
 				LeaPlusLC:LoadVarChk("CharAddonList", "Off")				-- Show character addons
@@ -13417,6 +13634,8 @@
 
 			LeaPlusDB["NoRestedEmotes"]			= LeaPlusLC["NoRestedEmotes"]
 			LeaPlusDB["MuteGameSounds"]			= LeaPlusLC["MuteGameSounds"]
+			LeaPlusDB["MuteCustomSounds"]		= LeaPlusLC["MuteCustomSounds"]
+			LeaPlusDB["MuteCustomList"]			= LeaPlusLC["MuteCustomList"]
 
 			LeaPlusDB["NoBagAutomation"]		= LeaPlusLC["NoBagAutomation"]
 			LeaPlusDB["CharAddonList"]			= LeaPlusLC["CharAddonList"]
@@ -15534,6 +15753,8 @@
 				LeaPlusDB["ViewPortEnable"] = "On"				-- Enable viewport
 				LeaPlusDB["NoRestedEmotes"] = "On"				-- Silence rested emotes
 				LeaPlusDB["MuteGameSounds"] = "On"				-- Mute game sounds
+				LeaPlusDB["MuteCustomSounds"] = "On"			-- Mute custom sounds
+				LeaPlusDB["MuteCustomList"] = ""				-- Mute custom sounds list
 
 				LeaPlusDB["NoBagAutomation"] = "On"				-- Disable bag automation
 				LeaPlusDB["CharAddonList"] = "On"				-- Show character addons
@@ -15619,7 +15840,10 @@
 	if not LeaPlusLC.NewPatch then
 		_G.SLASH_Leatrix_Plus1 = "/ltp"
 		_G.SLASH_Leatrix_Plus2 = "/leaplus"
+	else
+		_G.SLASH_Leatrix_Plus1 = "/ztp" -- temp
 	end
+
 	SlashCmdList["Leatrix_Plus"] = function(self)
 		-- Run slash command function
 		LeaPlusLC:SlashFunc(self)
@@ -15928,6 +16152,7 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ViewPortEnable"			,	"Enable viewport"				,	146, -172, 	true,	"If checked, you will be able to create a viewport.  A viewport adds adjustable black borders around the game world.|n|nThe borders are placed on top of the game world but under the UI so you can place UI elements over them.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoRestedEmotes"			, 	"Silence rested emotes"			,	146, -192, 	true,	"If checked, emote sounds will be silenced while your character is resting or at the Grim Guzzler.|n|nEmote sounds will be enabled at all other times.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MuteGameSounds"			, 	"Mute game sounds"				,	146, -212, 	false,	"If checked, you will be able to mute a selection of game sounds.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MuteCustomSounds"			, 	"Mute custom sounds"			,	146, -232, 	false,	"If checked, you will be able to mute your own choice of sounds.")
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Game Options"				, 	340, -72);
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoBagAutomation"			, 	"Disable bag automation"		, 	340, -92, 	true,	"If checked, your bags will not be opened or closed automatically when you interact with a merchant, bank or mailbox.")
@@ -15943,6 +16168,7 @@
 	LeaPlusLC:CfgBtn("SetWeatherDensityBtn", LeaPlusCB["SetWeatherDensity"])
 	LeaPlusLC:CfgBtn("ModViewportBtn", LeaPlusCB["ViewPortEnable"])
 	LeaPlusLC:CfgBtn("MuteGameSoundsBtn", LeaPlusCB["MuteGameSounds"])
+	LeaPlusLC:CfgBtn("MuteCustomSoundsBtn", LeaPlusCB["MuteCustomSounds"])
 	LeaPlusLC:CfgBtn("DismountBtn", LeaPlusCB["StandAndDismount"])
 
 ----------------------------------------------------------------------

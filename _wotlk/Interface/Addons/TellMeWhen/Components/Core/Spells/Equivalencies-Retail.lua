@@ -519,6 +519,7 @@ TMW.BE = {
 			 324867, -- Fleshcraft                          (Necrolord)
 			 330927, -- Cleansing Rites                     (Kyrian?)
 			 336874, -- Fortifying Ingredients              (Monk, conduit)
+			 388380, -- Dragonrider's Compassion            (Dragonriding Talent)
 		},
 		ImmuneToMagicCC = {
 			    642, -- Divine Shield                       (paladin, general)
@@ -553,6 +554,7 @@ TMW.BE = {
 			 256740, -- Drums of the Maelstrom              (leatherworking item)
 			 264667, -- Primal Rage                         (hunter pet)
 			 390386, -- Fury of the Aspects                 (evoker)
+			 386540, -- Temporal Warp                       (mage, talent)
 		},
 		ImmuneToInterrupts = {
 			    642, -- Divine Shield                       (paladin, general)

@@ -58,10 +58,6 @@ end
 local function parseSpellsString(setting, doLower, keepDurations)
 
 	local spells = TMW:SplitNames(setting) -- Get a table of everything
-	
-	if doLower then
-		spells = TMW:LowerNames(spells)
-	end
 
 	--INSERT EQUIVALENCIES
 	--start at the end of the table, that way we dont have to worry
@@ -79,6 +75,10 @@ local function parseSpellsString(setting, doLower, keepDurations)
 		else
 			k = k - 1	--there is no equivalency to insert, so move backwards one key towards zero to the next key
 		end
+	end
+	
+	if doLower then
+		spells = TMW:LowerNames(spells)
 	end
 
 	-- REMOVE DUPLICATES
@@ -173,25 +173,42 @@ local fixSpellMap = {
 			return 359073
 		end
 	end,
+	[280735] = function()
+		-- Fury Execute https://github.com/ascott18/TellMeWhen/issues/2054
+		-- 206315: Massacre (fury talent)
+		-- 280735: Execute when Massacre is learned
+		--   5308: Execute when Massacre is unlearned.
+		-- Execute is not trackable by name when massacre is learned,
+		-- Despite the fact that GetSpellInfo("Execute") does always return the right ID
+		-- (unlike the evoker bugs where GetSpellInfo returns the wrong id)
+		if IsPlayerSpell(206315) and not IsPlayerSpell(280735) then
+			-- force to be the ID. Yes this is a weird case.
+			return 280735
+		end
+	end,
 }
 
-local function getSpellNames(setting, doLower, firstOnly, toName, hash, allowRenaming)
+local function getSpellNames(setting, doLower, firstOnly, convert, hash, allowRenaming)
 	local spells = parseSpellsString(setting, doLower, false)
 
 	-- spells MUST BE COPIED because the return from parseSpellsString is cached.
 	spells = CopyTable(spells)
 
-	if allowRenaming then
-		-- Attempt to fix blizzard bugs like https://github.com/Stanzilla/WoWUIBugs/issues/354
+	if allowRenaming or convert == "id" then
 		for k, v in ipairs(spells) do
 			-- Doesn't matter if the input is a name or an ID.
 			-- We need to map it to an ID to fix blizzard bugs
 			local name, _, _, _, _, _, spellID = GetSpellInfo(v or "")
-			if spellID and fixSpellMap[spellID] then
-				local newSpell = fixSpellMap[spellID]()
-				if newSpell then
-					print("fixing bugged spell", v, spellID, "=>", newSpell)
-					spells[k] = newSpell
+			if spellID then
+				if fixSpellMap[spellID] then
+					-- Attempt to fix blizzard bugs like https://github.com/Stanzilla/WoWUIBugs/issues/354
+					local newSpell = fixSpellMap[spellID]()
+					if newSpell then
+						print("fixing bugged spell", v, spellID, "=>", newSpell)
+						spells[k] = newSpell
+					end
+				elseif convert == "id" then
+					spells[k] = spellID
 				end
 			end
 		end
@@ -200,11 +217,13 @@ local function getSpellNames(setting, doLower, firstOnly, toName, hash, allowRen
 	if hash then
 		local hash = {}
 		for k, v in ipairs(spells) do
-			if toName and (allowRenaming or tonumber(v)) then
+			if convert == "name" and (allowRenaming or tonumber(v)) then
 				v = GetSpellInfo(v or "") or v -- Turn the value into a name if needed
 			end
 
-			v = TMW:LowerNames(v)
+			if doLower then
+				v = TMW:LowerNames(v)
+			end
 
 			-- Put the final value in the table as well (may or may not be the same as the original value).
 			-- Value should be NameArrray's key, for use with the duration table.
@@ -213,7 +232,7 @@ local function getSpellNames(setting, doLower, firstOnly, toName, hash, allowRen
 		return hash
 	end
 
-	if toName then
+	if convert == "name" then
 		if firstOnly then
 			-- Turn the first value into a name and return it
 			local ret = spells[1] or ""
@@ -280,19 +299,20 @@ end
 local tableArgs = {
 	--						lower,	first,	toName,	hash
 	First				= { 1,		1,		nil,	nil	},
-	FirstString			= { 1,		1,		1,		nil },
+	FirstString			= { 1,		1,		"name",	nil },
+	FirstId			    = { 1,		1,		"id",	nil },
 	Array				= { 1,		nil,	nil,	nil },
-	StringArray			= { 1,		nil,	1,		nil	},
+	StringArray			= { 1,		nil,	"name",	nil	},
 	Hash				= { 1,		nil,	nil, 	1	},
-	StringHash			= { 1,		nil,	1,		1	},
+	StringHash			= { 1,		nil,	"name",	1	},
 
 	--						lower,	first,	toName,	hash
 	FirstNoLower		= { nil,	1,		nil,	nil },
-	FirstStringNoLower	= { nil,	1,		1,		nil	},
+	FirstStringNoLower	= { nil,	1,		"name",	nil	},
 	ArrayNoLower		= { nil,	nil,	nil,	nil	},
-	StringArrayNoLower	= { nil,	nil,	1,		nil	},
+	StringArrayNoLower	= { nil,	nil,	"name",	nil	},
 	HashNoLower			= { nil,	nil,	nil, 	1	},
-	StringHashNoLower	= { nil,	nil,	1,		1	},
+	StringHashNoLower	= { nil,	nil,	"name",	1	},
 
 	-- DUrations is kept in this table because it should also be cleared
 	-- every time the cache needs to be reset (handled in the :Wipe() method).
@@ -392,7 +412,7 @@ function TMW:GetSpells(spellString, allowRenaming)
 	return TMW.C.SpellSet:New(spellString, allowRenaming)
 end
 
--- Slightly redunant with the caching on SpellSet:New,
+-- Slightly redundant with the caching on SpellSet:New,
 -- but also makes things slightly faster by skipping a stack level or two.
 TMW:MakeNArgFunctionCached(2, TMW, "GetSpells")
 

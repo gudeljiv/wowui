@@ -5175,10 +5175,10 @@ EncounterDetailsDB = {
 		[47610] = {
 			["school"] = 20,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Voodooistt",
 		},
@@ -6498,22 +6498,24 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Meess",
 		},
-		[38151] = {
-			["school"] = 64,
+		[54527] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Moragg",
+		},
+		[63560] = {
+			["school"] = 8,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_HEAL"] = true,
 			},
-			["source"] = "Talon King Ikiss",
-		},
-		[19506] = {
-			["school"] = 64,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Moltenhunt",
+			["source"] = "Deathko",
 		},
 		[59530] = {
 			["school"] = 4,
@@ -6549,15 +6551,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Darkil",
 		},
-		[63560] = {
-			["school"] = 8,
+		[19506] = {
+			["school"] = 64,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_HEAL"] = true,
 			},
-			["source"] = "Deathko",
+			["source"] = "Moltenhunt",
 		},
 		[30638] = {
 			["school"] = 32,
@@ -6812,13 +6812,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sandri",
 		},
-		[58942] = {
-			["school"] = 1,
+		[48707] = {
+			["school"] = 32,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Onyx Brood General",
+			["source"] = "Noobknight",
 		},
 		[29879] = {
 			["school"] = 16,
@@ -7418,15 +7419,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Twilight Worshipper",
 		},
-		[12809] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[53251] = {
+			["school"] = 8,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_HEAL"] = true,
 			},
-			["source"] = "Redhit",
+			["source"] = "Freakcal",
 		},
 		[12825] = {
 			["school"] = 64,
@@ -7890,6 +7891,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Dalliah the Doomsayer",
 		},
+		[48583] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Skarvald the Constructor",
+		},
 		[34254] = {
 			["school"] = 8,
 			["type"] = "BUFF",
@@ -7900,14 +7909,6 @@ EncounterDetailsDB = {
 				["SPELL_PERIODIC_HEAL"] = true,
 			},
 			["source"] = "Sunseeker Botanist",
-		},
-		[48583] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Skarvald the Constructor",
 		},
 		[57066] = {
 			["school"] = 1,
@@ -8790,13 +8791,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sosanoo",
 		},
-		[61316] = {
-			["school"] = 64,
-			["type"] = "BUFF",
+		[59269] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Sovic",
+			["source"] = "Phantasmal Wolf",
 		},
 		[47736] = {
 			["school"] = 64,
@@ -8915,16 +8919,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Gvozdenko",
 		},
-		[59269] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[61316] = {
+			["school"] = 64,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Phantasmal Wolf",
+			["source"] = "Sovic",
 		},
 		[29131] = {
 			["school"] = 1,
@@ -9700,15 +9701,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sjonnir The Ironshaper",
 		},
-		[53251] = {
-			["school"] = 8,
-			["type"] = "BUFF",
+		[12809] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_HEAL"] = true,
 			},
-			["source"] = "Freakcal",
+			["source"] = "Redhit",
 		},
 		[59509] = {
 			["school"] = 4,
@@ -10047,14 +10048,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Phoenix",
 		},
-		[48707] = {
-			["school"] = 32,
+		[58942] = {
+			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Noobknight",
+			["source"] = "Onyx Brood General",
 		},
 		[47747] = {
 			["school"] = 64,
@@ -10218,14 +10218,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Gvozdenko",
 		},
-		[54527] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[38151] = {
+			["school"] = 64,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Moragg",
+			["source"] = "Talon King Ikiss",
 		},
 		[47440] = {
 			["school"] = 1,
