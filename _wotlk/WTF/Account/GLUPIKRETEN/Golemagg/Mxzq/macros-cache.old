@@ -6,7 +6,7 @@ VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@pet,dead]Revive Pet
+/cast [@pet,dead] Revive Pet
 /cast [nopet] Call Pet
 /cast Mend Pet
 END
@@ -41,10 +41,10 @@ VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 /cast Arcane Shot
 END
 VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast Chimera Shot
-/use 13
-/use 14
+#showtooltip Explosive Shot
+/stopcasting
+/cast !Aspect of the Dragonhawk
+/cast Explosive Shot
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -55,19 +55,12 @@ VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Kill Command
 /cast Bestial Wrath
-/use 13
-/use 14
-END
-VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
-#showtooltip 
-/cast [@pet,exists]Misdirection
 END
 VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
+#showtooltip Kill Shot
 /stopcasting
+/cast !Aspect of the Dragonhawk
 /cast Kill Shot
-/use 13
-/use 14
 END
 VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
 #showtooltip Steady Shot
@@ -82,5 +75,10 @@ VER 3 0000000001000012 " " "132152"
 END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
-/cast [@focus,exists,noharm][]Misdirection
+/cast [@focus,exists,noharm][@pet,exists][]Misdirection
+END
+VER 3 0000000001000013 " " "132328"
+#showtooltip
+/dismount
+/petfollow
 END

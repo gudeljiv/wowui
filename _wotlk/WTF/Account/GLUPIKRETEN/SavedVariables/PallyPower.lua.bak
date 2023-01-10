@@ -9,9 +9,9 @@ PallyPowerDB = {
 		["Battitude - Golemagg"] = "Other",
 		["Mxyzptlk - Golemagg"] = "Other",
 		["Miqa - Golemagg"] = "Other",
-		["Vermin - Golemagg"] = "Other",
-		["Battlearm - Golemagg"] = "Other",
 		["Tadibey - Golemagg"] = "Other",
+		["Battlearm - Golemagg"] = "Other",
+		["Vermin - Golemagg"] = "Other",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -61,11 +61,11 @@ PallyPower_AuraAssignments = {
 	["Ondisch"] = 3,
 	["Tökfilkó"] = 0,
 	["Skodicek"] = 1,
-	["Vermina"] = 2,
-	["Zoqur"] = 4,
 	["Monikå"] = 1,
 	["Berri"] = 3,
 	["Monikà"] = 1,
+	["Zoqur"] = 4,
+	["Vermina"] = 2,
 	["Lonnath"] = 0,
 	["Xjereziah"] = 2,
 }

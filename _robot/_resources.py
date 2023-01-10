@@ -100,6 +100,7 @@ skills["hunter"] = [
     {"name": "concussive shot", "type": "GetSpellTexture", "id": 5116, "key": "1"},
     {"name": "steady shot", "type": "GetSpellTexture", "id": 34120, "key": "2"},
     {"name": "serpent sting", "type": "GetSpellTexture", "id": 1978, "key": "f3", "modifier": "ctrl"},
+    {"name": "viper sting", "type": "GetSpellTexture", "id": 3034, "key": "f4", "modifier": "ctrl"},
     {"name": "multi-shot", "type": "GetSpellTexture", "id": 2643, "key": "f1", "modifier": "ctrl"},
     {"name": "arcane shot", "type": "GetSpellTexture", "id": 3044, "key": "f2", "modifier": "ctrl"},
     {"name": "chimera shot", "type": "GetSpellTexture", "id": 53209, "key": "3"},

@@ -8,10 +8,10 @@ Postal3DB = {
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
 		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
-		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
-		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
+		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 		["Wells - Jin'do"] = "Wells - Jin'do",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
@@ -34,7 +34,7 @@ Postal3DB = {
 				"Miqa|Golemagg|Horde|7|PRIEST", -- [7]
 				"Moolatz|Golemagg|Horde|80|DRUID", -- [8]
 				"Mxyz|Golemagg|Horde|5|PRIEST", -- [9]
-				"Mxzq|Golemagg|Horde|76|HUNTER", -- [10]
+				"Mxzq|Golemagg|Horde|78|HUNTER", -- [10]
 				"Pitchwise|Ashbringer|Horde|1|SHAMAN", -- [11]
 				"Poklopac|Mirage Raceway|Horde|1|HUNTER", -- [12]
 				"Provokator|Jin'do|Horde|11|HUNTER", -- [13]
@@ -81,13 +81,13 @@ Postal3DB = {
 		},
 		["Tandaram - Jin'do"] = {
 		},
-		["Moolatz - Golemagg"] = {
+		["Pitchwise - Ashbringer"] = {
 		},
 		["Tudum - Ashbringer"] = {
 		},
 		["Augustin - Golemagg"] = {
 		},
-		["Pitchwise - Ashbringer"] = {
+		["Moolatz - Golemagg"] = {
 		},
 		["Wells - Jin'do"] = {
 		},
@@ -107,6 +107,11 @@ Postal3DB = {
 		["Tudum - Jin'do"] = {
 		},
 		["Miqa - Golemagg"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Battlearm|Golemagg|Horde", -- [1]
+				},
+			},
 		},
 		["Handrmandr - Golemagg"] = {
 		},

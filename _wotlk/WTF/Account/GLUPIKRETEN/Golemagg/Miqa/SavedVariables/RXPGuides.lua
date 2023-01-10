@@ -1,15 +1,15 @@
 
 RXPCData = {
-	["currentGuideName"] = "",
+	["currentGuideGroup"] = "",
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
 	["GA"] = true,
-	["currentGuideGroup"] = "",
-	["flightPaths"] = {
-	},
 	["stepSkip"] = {
 	},
+	["flightPaths"] = {
+	},
+	["currentGuideName"] = "",
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -28,10 +28,10 @@ RXPCTrackingData = {
 							["monthDay"] = 13,
 							["day"] = 0,
 							["month"] = 11,
-							["minute"] = 40,
+							["weekday"] = 1,
 							["year"] = 2022,
 							["hour"] = 11,
-							["weekday"] = 1,
+							["minute"] = 40,
 						},
 						["started"] = 0,
 					},
@@ -63,11 +63,12 @@ RXPCSettings = {
 			["enableMinimapButton"] = false,
 			["activeItemsScale"] = 1.2,
 			["checkVersions"] = false,
+			["xprate"] = 1.5,
 			["enableTracker"] = false,
-			["enableFlyStepAnnouncements"] = false,
+			["frameHeight"] = 125.0000152587891,
 			["enableLevelUpAnnounceSolo"] = false,
 			["alwaysSendBranded"] = false,
-			["frameHeight"] = 125.0000152587891,
+			["enableFlyStepAnnouncements"] = false,
 			["enableBindAutomation"] = false,
 		},
 	},
