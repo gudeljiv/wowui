@@ -15,44 +15,35 @@ PallyPowerDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["freeassign"] = false,
 			["buffscale"] = 1,
-			["SalvInCombat"] = true,
 			["seal"] = 2,
-			["minimap"] = {
-				["show"] = false,
-			},
-			["ShowTooltips"] = false,
-			["configscale"] = 0.9967937838582688,
-			["WrathTransition"] = true,
 			["display"] = {
 				["frameLocked"] = true,
 			},
+			["freeassign"] = false,
 			["enable"] = true,
 			["border"] = "None",
+			["minimap"] = {
+				["show"] = false,
+			},
+			["configscale"] = 0.9967937838582688,
+			["SalvInCombat"] = true,
+			["WrathTransition"] = true,
+			["ShowTooltips"] = false,
 			["rf"] = false,
 		},
 		["Other"] = {
 			["enable"] = true,
+			["WrathTransition"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
-			["WrathTransition"] = true,
 		},
 	},
 }
 PallyPower_Assignments = {
 	["Vermina"] = {
-		2, -- [1]
-		2, -- [2]
-		1, -- [3]
-		3, -- [4]
-		1, -- [5]
-		2, -- [6]
-		1, -- [7]
-		1, -- [8]
-		1, -- [9]
-		2, -- [10]
+		[5] = 4,
 	},
 }
 PallyPower_NormalAssignments = {
@@ -61,11 +52,11 @@ PallyPower_AuraAssignments = {
 	["Ondisch"] = 3,
 	["Skodicek"] = 1,
 	["Lonnath"] = 0,
-	["Vermina"] = 2,
 	["Zoqur"] = 4,
-	["Monikå"] = 1,
-	["Berri"] = 3,
+	["Vermina"] = 2,
 	["Monikà"] = 1,
+	["Berri"] = 3,
+	["Monikå"] = 1,
 	["Tökfilkó"] = 0,
 	["Xjereziah"] = 2,
 }

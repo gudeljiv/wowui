@@ -49,7 +49,7 @@ LBISSettings = {
 	["PriorityList"] = {
 	},
 	["SelectedSourceType"] = "All",
-	["SelectedSlot"] = "Trinket",
+	["SelectedSlot"] = "Ranged/Relic",
 	["ShowCustom"] = false,
 	["SelectedPhase"] = "All",
 }

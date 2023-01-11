@@ -340,22 +340,17 @@ local function UpdateBars(self, event)
 	UpdateBarPosition()
 end
 
-if _G['PetXPFrameStatusBar'] then
-	PetFrame:HookScript(
-		'OnShow',
-		function()
+UIParent:HookScript(
+	'OnUpdate',
+	function()
+		if UnitExists('pet') and UnitLevel('player') > UnitLevel('pet') then
 			pet = true
-			UpdateBarPosition()
-		end
-	)
-	PetFrame:HookScript(
-		'OnHide',
-		function()
+		else
 			pet = false
-			UpdateBarPosition()
 		end
-	)
-end
+		UpdateBarPosition()
+	end
+)
 
 local wf = CreateFrame('Frame')
 wf:RegisterEvent('UPDATE_FACTION')
