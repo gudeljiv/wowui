@@ -9,55 +9,60 @@ PallyPowerDB = {
 		["Battitude - Golemagg"] = "Other",
 		["Mxyzptlk - Golemagg"] = "Other",
 		["Miqa - Golemagg"] = "Other",
-		["Vermin - Golemagg"] = "Other",
-		["Battlearm - Golemagg"] = "Other",
 		["Tadibey - Golemagg"] = "Other",
+		["Battlearm - Golemagg"] = "Other",
+		["Vermin - Golemagg"] = "Other",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["buffscale"] = 1,
-			["seal"] = 2,
-			["display"] = {
-				["frameLocked"] = true,
-			},
 			["freeassign"] = false,
-			["enable"] = true,
-			["border"] = "None",
+			["buffscale"] = 1,
+			["SalvInCombat"] = true,
+			["seal"] = 2,
 			["minimap"] = {
 				["show"] = false,
 			},
-			["configscale"] = 0.9967937838582688,
-			["SalvInCombat"] = true,
-			["WrathTransition"] = true,
 			["ShowTooltips"] = false,
+			["configscale"] = 0.9967937838582688,
+			["WrathTransition"] = true,
+			["display"] = {
+				["frameLocked"] = true,
+			},
+			["enable"] = true,
+			["border"] = "None",
 			["rf"] = false,
 		},
 		["Other"] = {
 			["enable"] = true,
-			["WrathTransition"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
+			["WrathTransition"] = true,
 		},
 	},
 }
 PallyPower_Assignments = {
 	["Vermina"] = {
+		4, -- [1]
+		4, -- [2]
 		[5] = 4,
+		[7] = 1,
+		[9] = 1,
+		[8] = 4,
 	},
 }
 PallyPower_NormalAssignments = {
 }
 PallyPower_AuraAssignments = {
 	["Ondisch"] = 3,
+	["Tökfilkó"] = 0,
 	["Skodicek"] = 1,
-	["Lonnath"] = 0,
-	["Zoqur"] = 4,
-	["Vermina"] = 2,
 	["Monikà"] = 1,
 	["Berri"] = 3,
 	["Monikå"] = 1,
-	["Tökfilkó"] = 0,
+	["Vermina"] = 2,
+	["Zoqur"] = 4,
+	["Lonnath"] = 0,
 	["Xjereziah"] = 2,
 }
 PallyPower_SavedPresets = {

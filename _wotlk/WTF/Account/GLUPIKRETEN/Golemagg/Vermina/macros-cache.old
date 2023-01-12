@@ -46,3 +46,7 @@ VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Judgement of Light
 END
+VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][] Hand of Freedom
+END
