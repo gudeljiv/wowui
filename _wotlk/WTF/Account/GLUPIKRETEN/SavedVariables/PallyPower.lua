@@ -15,20 +15,22 @@ PallyPowerDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["freeassign"] = false,
+			["freeassign"] = true,
 			["buffscale"] = 1,
-			["SalvInCombat"] = true,
-			["seal"] = 2,
+			["hideHighGroups"] = true,
+			["seal"] = 3,
 			["minimap"] = {
 				["show"] = false,
 			},
 			["ShowTooltips"] = false,
 			["configscale"] = 0.9967937838582688,
+			["enable"] = true,
 			["WrathTransition"] = true,
 			["display"] = {
+				["buffDuration"] = false,
 				["frameLocked"] = true,
 			},
-			["enable"] = true,
+			["SalvInCombat"] = true,
 			["border"] = "None",
 			["rf"] = false,
 		},
@@ -43,26 +45,36 @@ PallyPowerDB = {
 }
 PallyPower_Assignments = {
 	["Vermina"] = {
-		4, -- [1]
-		4, -- [2]
-		[5] = 4,
-		[7] = 1,
-		[9] = 1,
-		[8] = 4,
+		0, -- [1]
+		0, -- [2]
+		0, -- [3]
+		4, -- [4]
+		4, -- [5]
+		0, -- [6]
+		0, -- [7]
+		0, -- [8]
+		4, -- [9]
+		0, -- [10]
+		2, -- [11]
 	},
 }
 PallyPower_NormalAssignments = {
 }
 PallyPower_AuraAssignments = {
+	["Eternalpala"] = 1,
 	["Ondisch"] = 3,
+	["Rvbbitt"] = 1,
 	["Tökfilkó"] = 0,
-	["Skodicek"] = 1,
-	["Monikà"] = 1,
+	["Dariya"] = 2,
 	["Berri"] = 3,
+	["Althan"] = 2,
 	["Monikå"] = 1,
-	["Vermina"] = 2,
-	["Zoqur"] = 4,
 	["Lonnath"] = 0,
+	["Vermina"] = 2,
+	["Monikà"] = 1,
+	["Zoqur"] = 4,
+	["Paradoxpala"] = 0,
+	["Skodicek"] = 1,
 	["Xjereziah"] = 2,
 }
 PallyPower_SavedPresets = {

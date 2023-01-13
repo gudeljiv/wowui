@@ -168,6 +168,7 @@ skills["paladin"] = [
     {"name": "judgement of wisdom", "type": "GetSpellTexture", "id": 53408, "key": "f2", "modifier": "ctrl"},
     {"name": "lay on hands", "type": "GetSpellTexture", "id": 633, "key": "k"},
     {"name": "purify", "type": "GetSpellTexture", "id": 1152, "key": "t"},
+    {"name": "cleanse", "type": "GetSpellTexture", "id": 4987, "key": "t"},
     {"name": "divine protection", "type": "GetSpellTexture", "id": 498, "key": "r", "modifier": "alt"},
     {"name": "consecration", "type": "GetSpellTexture", "id": 20116, "key": "2"},
     {"name": "seal of command", "type": "GetSpellTexture", "id": 20375, "key": "f", "modifier": "alt"},
@@ -178,6 +179,7 @@ skills["paladin"] = [
     {"name": "shield of righteousness", "type": "GetSpellTexture", "id": 61411, "key": "5"},
     {"name": "avengers shield", "type": "GetSpellTexture", "id": 31935, "key": "6"},
     {"name": "holy wrath", "type": "GetSpellTexture", "id": 48817, "key": "7"},
+    {"name": "hammer of wrath", "type": "GetSpellTexture", "id": 24275, "key": "8"},
 ]
 
 skills["rogue"] = [

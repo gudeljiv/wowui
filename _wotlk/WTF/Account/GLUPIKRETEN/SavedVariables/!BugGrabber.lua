@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 8378,
+	["session"] = 8394,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -7136,5 +7136,21 @@ BugGrabberDB = {
 			["session"] = 8373,
 			["counter"] = 2,
 		}, -- [919]
+		{
+			["message"] = "Interface\\FrameXML\\ChatFrame.lua:1004: Usage: CastSpellByName(name[, target])",
+			["time"] = "2023/01/13 11:22:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n",
+			["stack"] = "[string \"=[C]\"]: in function `CastSpellByName'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:1004: in function <Interface\\FrameXML\\ChatFrame.lua:932>\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:1243: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4913: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2977: in function <Interface\\FrameXML\\ChatFrame.lua:2970>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:14: in function <Interface\\FrameXML\\MultiActionBars.lua:8>\n[string \"=[C]\"]: in function `MultiActionButtonDown'\n[string \"MULTIACTIONBAR4BUTTON11\"]:2: in function <[string \"MULTIACTIONBAR4BUTTON11\"]:1>",
+			["session"] = 8385,
+			["counter"] = 1,
+		}, -- [920]
+		{
+			["message"] = "bad argument #1 to '?' (Usage: local itemLink = C_Item.GetItemLink(itemLocation))",
+			["time"] = "2023/01/13 17:38:44",
+			["locals"] = "(*temporary) = \"bad argument #1 to '?' (Usage: local itemLink = C_Item.GetItemLink(itemLocation))\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `GetItemLink'\n[string \"@Interface\\AddOns\\BagBrother\\libs\\ItemSearch-1.3-1\\API.lua\"]:40: in function `Matches'\n[string \"@Interface\\AddOns\\BagBrother\\addons\\core\\classes\\item.lua\"]:296: in function `?'\n[string \"@Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-8.lua\"]:109: in function <...ibs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:109>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-8.lua\"]:19: in function <...ibs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:15>\n[string \"@Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-8.lua\"]:54: in function `SendMessage'\n[string \"@Interface\\AddOns\\BagBrother\\libs\\WildAddon-1.0\\WildAddon-1.0-1.lua\"]:83: in function `SendSignal'\n[string \"@Interface\\AddOns\\Bagnon\\src\\searchFrame.lua\"]:78: in function <Interface\\AddOns\\Bagnon\\src\\searchFrame.lua:74>",
+			["session"] = 8394,
+			["counter"] = 12,
+		}, -- [921]
 	},
 }
