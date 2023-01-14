@@ -30,8 +30,8 @@ PallyPowerDB = {
 				["buffDuration"] = false,
 				["frameLocked"] = true,
 			},
-			["SalvInCombat"] = true,
 			["border"] = "None",
+			["SalvInCombat"] = true,
 			["rf"] = false,
 		},
 		["Other"] = {
@@ -45,16 +45,16 @@ PallyPowerDB = {
 }
 PallyPower_Assignments = {
 	["Vermina"] = {
-		0, -- [1]
-		0, -- [2]
-		0, -- [3]
+		2, -- [1]
+		2, -- [2]
+		1, -- [3]
 		4, -- [4]
 		4, -- [5]
-		0, -- [6]
-		0, -- [7]
-		0, -- [8]
+		2, -- [6]
+		4, -- [7]
+		4, -- [8]
 		4, -- [9]
-		0, -- [10]
+		2, -- [10]
 		2, -- [11]
 	},
 }
@@ -67,13 +67,13 @@ PallyPower_AuraAssignments = {
 	["Tökfilkó"] = 0,
 	["Dariya"] = 2,
 	["Berri"] = 3,
-	["Paradoxpala"] = 0,
+	["Althan"] = 2,
 	["Monikå"] = 1,
 	["Lonnath"] = 0,
 	["Vermina"] = 2,
 	["Monikà"] = 1,
 	["Zoqur"] = 4,
-	["Althan"] = 2,
+	["Paradoxpala"] = 0,
 	["Skodicek"] = 1,
 	["Xjereziah"] = 2,
 }

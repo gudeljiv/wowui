@@ -35,7 +35,7 @@ LBISSettings = {
 		["AfflictionWarlock"] = true,
 		["SubtletyRogue"] = true,
 	},
-	["SelectedSpec"] = "",
+	["SelectedSpec"] = "Protection Paladin",
 	["minimap"] = {
 		["minimapPos"] = 180,
 		["hide"] = true,
@@ -51,5 +51,5 @@ LBISSettings = {
 	["ShowCustom"] = false,
 	["PriorityList"] = {
 	},
-	["SelectedPhase"] = "All",
+	["SelectedPhase"] = "BIS",
 }
