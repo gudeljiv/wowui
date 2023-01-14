@@ -22,7 +22,7 @@ RXPDB = {
 		["Tadibey - Golemagg"] = "global",
 		["Tudum - Ashbringer"] = "global",
 		["Augustin - Golemagg"] = "global",
-		["Moolatz - Golemagg"] = "global",
+		["Pitchwise - Ashbringer"] = "global",
 		["Handrmandr - Golemagg"] = "global",
 		["Vermin - Golemagg"] = "global",
 		["Battlearm - Jin'do"] = "global",
@@ -31,7 +31,7 @@ RXPDB = {
 		["Miqa - Golemagg"] = "global",
 		["Tudum - Jin'do"] = "global",
 		["Wells - Jin'do"] = "global",
-		["Pitchwise - Ashbringer"] = "global",
+		["Moolatz - Golemagg"] = "global",
 	},
 	["profiles"] = {
 		["global"] = {

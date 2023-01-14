@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 8393,
+	["session"] = 8399,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -7144,5 +7144,13 @@ BugGrabberDB = {
 			["session"] = 8385,
 			["counter"] = 1,
 		}, -- [920]
+		{
+			["message"] = "bad argument #1 to '?' (Usage: local itemLink = C_Item.GetItemLink(itemLocation))",
+			["time"] = "2023/01/13 17:38:44",
+			["locals"] = "(*temporary) = \"bad argument #1 to '?' (Usage: local itemLink = C_Item.GetItemLink(itemLocation))\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `GetItemLink'\n[string \"@Interface\\AddOns\\BagBrother\\libs\\ItemSearch-1.3-1\\API.lua\"]:40: in function `Matches'\n[string \"@Interface\\AddOns\\BagBrother\\addons\\core\\classes\\item.lua\"]:296: in function `?'\n[string \"@Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-8.lua\"]:109: in function <...ibs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:109>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-8.lua\"]:19: in function <...ibs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:15>\n[string \"@Interface\\AddOns\\AddOnSkins\\Libs\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-8.lua\"]:54: in function `SendMessage'\n[string \"@Interface\\AddOns\\BagBrother\\libs\\WildAddon-1.0\\WildAddon-1.0-1.lua\"]:83: in function `SendSignal'\n[string \"@Interface\\AddOns\\Bagnon\\src\\searchFrame.lua\"]:78: in function <Interface\\AddOns\\Bagnon\\src\\searchFrame.lua:74>",
+			["session"] = 8394,
+			["counter"] = 12,
+		}, -- [921]
 	},
 }
