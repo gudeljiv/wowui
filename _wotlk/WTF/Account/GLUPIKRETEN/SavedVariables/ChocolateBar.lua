@@ -12,9 +12,9 @@ ChocolateBarDB = {
 		["Greenwise - Golemagg"] = "Default",
 		["Mulatz - Genesis"] = "Default",
 		["Handrmandr - Genesis"] = "Default",
-		["Mxym - Golemagg"] = "Default",
-		["Poklopac - Dreadnaught"] = "Default",
 		["Konac - Dreadnaught"] = "Default",
+		["Poklopac - Dreadnaught"] = "Default",
+		["Mxym - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Verminz - Genesis"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
@@ -22,13 +22,13 @@ ChocolateBarDB = {
 		["Tudum - Jin'do"] = "Default",
 		["Koloman - Golemagg"] = "Default",
 		["Pitchwise - Genesis"] = "Default",
-		["Provokator - Jin'do"] = "Default",
-		["Antun - Golemagg"] = "Default",
 		["Miqa - Golemagg"] = "Default",
-		["Moolatz - Dreadnaught"] = "Default",
+		["Antun - Golemagg"] = "Default",
+		["Provokator - Jin'do"] = "Default",
+		["Whatevs - Stonespine"] = "Default",
 		["Tadibey - Golemagg"] = "Default",
 		["Ozrencic - Golemagg"] = "Default",
-		["Whatevs - Stonespine"] = "Default",
+		["Moolatz - Dreadnaught"] = "Default",
 		["Handrmandr - Golemagg"] = "Default",
 		["Vermina - Golemagg"] = "Default",
 		["Tukac - Genesis"] = "Default",
@@ -64,26 +64,7 @@ ChocolateBarDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["barSettings"] = {
-				["ChocolateBar1"] = {
-					["barPoint"] = "TOPRIGHT",
-					["align"] = "custom",
-					["width"] = 147.000030517578,
-					["autohide"] = false,
-					["barOffy"] = -207.589706420898,
-					["hideBarInCombat"] = false,
-					["barOffx"] = -31.9219512939453,
-				},
-				["ChocolateBar2"] = {
-					["barOffy"] = -256.666748046875,
-					["barPoint"] = "TOPRIGHT",
-					["barName"] = "ChocolateBar2",
-					["align"] = "custom",
-					["width"] = 147,
-					["index"] = 1,
-					["barOffx"] = -88.3325424194336,
-				},
-			},
+			["locked"] = false,
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
@@ -97,7 +78,10 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
 			["objSettings"] = {
 				["Puggle_Broker"] = {
 					["index"] = 3,
@@ -617,17 +601,33 @@ ChocolateBarDB = {
 				},
 			},
 			["fontName"] = "Friz Quadrata TT",
-			["locked"] = false,
+			["barSettings"] = {
+				["ChocolateBar1"] = {
+					["barPoint"] = "TOPRIGHT",
+					["align"] = "custom",
+					["width"] = 147.000030517578,
+					["autohide"] = false,
+					["barOffy"] = -207.589706420898,
+					["hideBarInCombat"] = false,
+					["barOffx"] = -31.9219512939453,
+				},
+				["ChocolateBar2"] = {
+					["barOffy"] = -256.666748046875,
+					["barPoint"] = "TOPRIGHT",
+					["barName"] = "ChocolateBar2",
+					["align"] = "custom",
+					["width"] = 147,
+					["index"] = 1,
+					["barOffx"] = -88.3325424194336,
+				},
+			},
 			["desaturated"] = false,
 			["forceColor"] = false,
 			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
 			["fixedStrata"] = true,
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -698,29 +698,31 @@ CB_PlayedTime = {
 	["Mxyzptlk-Golemagg"] = {
 		["total"] = 29335,
 	},
-	["Pitchwise-Ashbringer"] = {
-		["total"] = 2973,
-		["timeAtThisLevel"] = 2973,
-		["timeStamp"] = 1551182.832,
-	},
-	["Battitude-"] = {
-		["total"] = 2037,
-	},
 	["Tandaram-Jin'do"] = {
 		["total"] = 97,
 		["timeStamp"] = 59401.909,
 		["timeAtThisLevel"] = 97,
 	},
+	["Battitude-"] = {
+		["total"] = 2037,
+	},
+	["Pitchwise-Ashbringer"] = {
+		["total"] = 2973,
+		["timeAtThisLevel"] = 2973,
+		["timeStamp"] = 1551182.832,
+	},
 	["Moolatz-Dreadnaught"] = {
 		["total"] = 33043,
 	},
-	["Dotwise-"] = {
-		["total"] = 3924,
+	["Tudum-Jin'do"] = {
+		["total"] = 316,
+		["timeStamp"] = 60887.198,
+		["timeAtThisLevel"] = 316,
 	},
 	["Vermina-Golemagg"] = {
-		["total"] = 231178,
-		["timeStamp"] = 409775.951,
-		["timeAtThisLevel"] = 7059,
+		["total"] = 237283,
+		["timeStamp"] = 420223.424,
+		["timeAtThisLevel"] = 4513,
 	},
 	["Provokator-Jin'do"] = {
 		["total"] = 22720,
@@ -737,9 +739,9 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1601121,
-		["timeStamp"] = 414824.657,
-		["timeAtThisLevel"] = 508574,
+		["total"] = 1601178,
+		["timeStamp"] = 418394.909,
+		["timeAtThisLevel"] = 508631,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
@@ -833,15 +835,13 @@ CB_PlayedTime = {
 	["Grgur-"] = {
 		["total"] = 1248,
 	},
-	["Tudum-Jin'do"] = {
-		["total"] = 316,
-		["timeStamp"] = 60887.198,
-		["timeAtThisLevel"] = 316,
+	["Dotwise-"] = {
+		["total"] = 3924,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 454299,
-		["timeAtThisLevel"] = 124624,
-		["timeStamp"] = 317048.079,
+		["total"] = 454780,
+		["timeAtThisLevel"] = 125105,
+		["timeStamp"] = 418243.804,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,
