@@ -1,3 +1,6 @@
+local faction = UnitFactionGroup("player")
+if faction == "Alliance" then return end
+
 RXPGuides.RegisterGuide([[
 #tbc
 #wotlk
@@ -6,7 +9,7 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Horde 1-30
 #defaultfor Tauren
-#next 10-20 Eversong Woods / Ghostlands << !Warrior !Shaman
+#next 10-12 Eversong Woods << !Warrior !Shaman
 #next 10-13 Mulgore << Warrior/Shaman
 step << !Tauren
     #sticky
@@ -228,7 +231,7 @@ step
 step
     #softcore
 	#completewith next
-    .goto Mulgore,46.5,55.5,300 
+    .goto Mulgore,46.5,55.5,300
     .deathskip >>Die and respawn at the Spirit Healer or run to Bloodhoof Village
 step
 	#hardcore

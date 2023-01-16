@@ -1,5 +1,5 @@
 RXPGuides.RegisterGuide([[
-#version 15
+#version 16
 #wotlk
 #group RestedXP Mage AoE 68-80
 << Mage
@@ -123,7 +123,7 @@ step << Horde
 .fp Apothecary Camp >> Get the Apothecary Camp flight path
 step << Horde
 .goto GrizzlyHills,22.0,64.5
->>Talk to Kragh
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to Kragh
 .fp Conquest Hold >> Get the Conquest Hold flight path
 step << Alliance
 .goto HowlingFjord,31.26,43.98
@@ -144,7 +144,7 @@ step << Alliance
 .fp Wintergarde Keep >>Get the Wintergarde Keep Flight Path
 step << Alliance
 .goto Dragonblight,77.18,50.09
->>Go back up toward the Flight Master. talk to Urik
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tGo back up toward the Flight Master. Talk to Urik
 .accept 12237 >>Accept Flight of the Wintergarde Defender
 step << Alliance
 #requires WinterHS1
@@ -159,7 +159,7 @@ step << Alliance
 .use 37287
 step << Alliance
 .goto Dragonblight,77.16,50.10
->>Dismount the Gryphon, talk to Urik
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tDismount the Gryphon, Talk to Urik
 .turnin 12237 >>Turn in Flight of the Wintergarde Defender
 .accept 12251 >>Accept Return to the High Commander
 step << Alliance
@@ -168,12 +168,12 @@ step << Alliance
 .home >>Set your Hearthstone to Wintergarde Keep
 step << Alliance
 .goto Dragonblight,78.47,48.28
->>Talk to Halford
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to Halford
 .turnin 12251 >>Turn in Return to the High Commander
 step
 #label Onslaught
 .loop 50,Dragonblight,87.90,41.21,87.00,42.19,86.45,40.12,85.51,41.24,83.78,41.98,84.14,40.72,84.49,37.06,87.64,35.43,87.90,41.21
-.xp 74 >> AoE grind the Scarlets to 74
+.xp 74 >> AoE grind the Scarlet Onslaught mobs to 74
 step
 .goto Undercity,85.1,10.0 << Horde
 .goto Stormwind City,49.2,87.7 << Alliance
@@ -200,7 +200,7 @@ step << Horde
 .fp Agmar's Hammer >> Get the Agmar's Hammer flight path
 step << Horde
 .goto Dragonblight,38.05,46.22
->>Talk to Aethas
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to Aethas
 .accept 12791 >>Accept The Magical Kingdom of Dalaran
 .zoneskip SholazarBasin
 .zoneskip Dalaran
@@ -215,7 +215,7 @@ step << Alliance
 .fp Stars' Rest >> Get the Stars' Rest Flight Path
 step << Alliance
 .goto Dragonblight,29.0,55.5
->>Talk to Modera
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to Modera
 .accept 12794 >>Accept The Magical Kingdom of Dalaran
 .zoneskip SholazarBasin
 .zoneskip Dalaran
@@ -241,7 +241,7 @@ step
 #requires DalaranFP
 #completewith next
 .goto Dalaran,68.54,42.07
->>Go to Krasus's Landing. Talk to Pentarus
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tGo to Krasus's Landing. Talk to Pentarus
 .accept 12521 >>Accept Where in the World is Hemet Nesingwary?
 step
 #requires DalaranFP
@@ -250,7 +250,7 @@ step
 .skipgossip
 step
 .goto SholazarBasin,39.70,58.65
->>Talk to Monte hanging from the tree
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to Monte hanging from the tree
 .turnin 12521 >>Turn in Where in the World is Hemet Nesingwary?
 .accept 12489 >>Accept Welcome to Sholazar Basin
 step
@@ -260,7 +260,7 @@ step
 .home >> Set your Hearthstone to Nesingwary Base Camp
 >>Buy food if needed
 step
->>Travel to Nesingwary Base Camp. Talk to Hemet, Debaar, and Chad
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTravel to Nesingwary Base Camp. Talk to Hemet, Debaar, and Chad
 .turnin 12489 >>Turn in Welcome to Sholazar Basin
 .goto SholazarBasin,27.09,58.64
 .accept 12524 >>Accept Venture Co. Misadventure
@@ -270,7 +270,7 @@ step
 step
 #requires Nesingwary
 .goto SholazarBasin,25.35,58.48
->>Talk to Weslex
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to Weslex
 .accept 12522 >>Accept Need an Engine, Take an Engine
 step
 #completewith VentureCo2
@@ -287,7 +287,7 @@ step
 .complete 12524,1 
 step
 .goto SholazarBasin,35.55,47.42
->>Talk to Engineer Helice to start her escort
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to Engineer Helice to start her escort
 .accept 12688 >>Accept Engineering a Disaster
 step
 #label Helice
@@ -309,7 +309,7 @@ step
 .hs >> Hearth to Nesingwary's Base Camp
 .cooldown item,6948,>0
 step
->>Return to Nesingwary's Base Camp. Talk to Hemet and Debaar
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tReturn to Nesingwary's Base Camp. Talk to Hemet and Debaar
 .turnin 12688 >>Turn in Engineering a Disaster
 .goto SholazarBasin,27.09,58.64
 .turnin 12524 >>Turn in Venture Co. Misadventure
@@ -320,17 +320,17 @@ step
 #requires EscortEnd
 #label Debaar1
 .goto SholazarBasin,27.25,59.90
->>Talk to Debaar
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to Debaar
 .turnin 12524 >>Turn in Venture Co. Misadventure
 .accept 12525 >>Accept Wipe That Grin Off His Face
 step
 .goto SholazarBasin,26.86,58.94
->>Talk to Chad
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to Chad
 .turnin 12624 >>Turn in It Could Be Anywhere!
 .isQuestComplete 12624
 step
 .goto SholazarBasin,25.35,58.48
->>Talk to Weslex
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to Weslex
 .turnin 12522 >>Turn in Need an Engine, Take an Engine
 .accept 12523 >>Accept Have a Part, Give a Part
 step
@@ -359,7 +359,7 @@ step
 #completewith end
 #label NesFP
 .goto SholazarBasin,25.35,58.48
->>Talk to Weslex, then talk to the Flying Machine and Calvert
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to Weslex, then Talk to the Flying Machine and Calvert
 .turnin 12523 >>Turn in Have a Part, Give a Part
 .fp Nesingwary Base Camp >> Get the Nesingwary Base Camp flight path
 .goto SholazarBasin,25.27,58.45
@@ -367,7 +367,7 @@ step
 
 step
 #requires NesFP
->>Talk to Debaar, then Drostan
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to Debaar, then Drostan
 .turnin 12525 >>Turn in Wipe That Grin Off His Face
 .goto SholazarBasin,27.25,59.90
 .accept 12589 >>Accept Kick, What Kick?
@@ -380,7 +380,7 @@ step
 
 step
 .goto SholazarBasin,26.86,58.94
->>Talk to Chad
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to Chad
 .turnin 12624 >>Turn in It Could Be Anywhere!
 step
 .loop 75,SholazarBasin,36.21,51.02,37.13,45.50,32.88,45.11,31.67,48.72
@@ -432,7 +432,7 @@ step
 .xp 80 >> AoE the Undead to 80
 ]])
 RXPGuides.RegisterGuide([[
-#version 15
+#version 16
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -450,7 +450,7 @@ step << skip
 +Once you finish the guide, it is highly recommended you copy your character over to the PTR and give the Turn in Guide a test whirl on the PTR so you know the route better!
 ]])
 RXPGuides.RegisterGuide([[
-#version 15
+#version 16
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -909,7 +909,7 @@ step << Alliance
 .collect 29443,11,10511,1
 ]])
 RXPGuides.RegisterGuide([[
-#version 15
+#version 16
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -2845,7 +2845,7 @@ step
 .complete 11008,1
 ]])
 RXPGuides.RegisterGuide([[
-#version 15
+#version 16
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -2861,7 +2861,7 @@ step
 .show25quests >> CLICK HERE to see the list of 25 best quests for your character
 ]])
 RXPGuides.RegisterGuide([[
-#version 15
+#version 16
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -4755,7 +4755,7 @@ step
 .accept 11016 >> Accept Nethermine Flayer Hide
 ]])
 RXPGuides.RegisterGuide([[
-#version 15
+#version 16
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -4800,7 +4800,7 @@ step
 .collect 30542,1
 ]])
 RXPGuides.RegisterGuide([[
-#version 15
+#version 16
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation

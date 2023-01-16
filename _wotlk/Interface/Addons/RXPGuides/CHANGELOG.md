@@ -1,57 +1,56 @@
 # RestedXP Guides
 
-## [v4.4.7](https://github.com/RestedXP/RXPGuides/tree/v4.4.7) (2022-12-12)
-[Full Changelog](https://github.com/RestedXP/RXPGuides/compare/v4.4.6...v4.4.7) [Previous Releases](https://github.com/RestedXP/RXPGuides/releases)
+## [v4.4.9-37-g2152538](https://github.com/RestedXP/RXPGuides/tree/215253822c974f0669b0d4174fc2e26a89d0c4cc) (2022-12-27)
+[Full Changelog](https://github.com/RestedXP/RXPGuides/compare/v4.4.9...215253822c974f0669b0d4174fc2e26a89d0c4cc) [Previous Releases](https://github.com/RestedXP/RXPGuides/releases)
 
-- Cleanup xp skips and detection (#143)  
-    * Allow disabling XP based skips, aka lazy loremaster  
-    * Move XP/arrow settings to new Guide Routing tab  
-    * Add automatic XP rate detection, including heirlooms and Joyous Journeys  
-    * Fix SoM setting continually being forced on  
-- Update Icecrown Gunship Pre Quests.lua  
-    Typo fix and Rizzy coordinate fix  
+- Attempt optimizing target unsetting  
+- Only detect orphans if guide selected  
+    fixes #147  
+- Prevent SetShown lua error  
+- Fix friendly target popups  
+- Blood Elf 1-10 JJ - Minor Fixes  
+- added missing icons  
+- Update Classic-Alliance-11-20.lua  
+    * Removed "use the AH" objective from hardcore step  
+- 1-20 BloodElf - JJ Update Fixes  
+- BloodElf 1-20 Full Rework (JJ Update)  
+- better flying detection logic  
 - Update RestedXP Horde 1-20 BloodElf.lua  
-    * Updated Grind Step Detail  
+    * Added mage tip to Aquantion encounter  
+- improved .train command  
+- Update RestedXP Alliance 23-30.lua  
+    * Added waypoints to "Tiger Mastery" step  
+- Update Classic-Horde-01-14\_Undead.lua  
+    * Minor vendor step change  
+- Update RestedXP Horde 1-6 Undead.lua  
+    * Minor vendor step update  
 - Update RestedXP Horde 20-30.lua  
-    * Commented spell name in Warlock class training step  
-- Update RestedXP Alliance 11-23.lua  
-    * Minor Instruction Change  
-    * Removed Quest Reward Automation from "Washed Ashore"  
-    * Accommodated Rogues and Warlocks in Blood Watch Deathskip/Velen-related quests  
-- Update RestedXP Alliance 1-14 Human.lua  
-    * Adjusted mining pick purchase to a collect step  
-    * Removed XP Gate from mining pick purchase to match mining training  
-    * Replaced "fly to Ironforge" step  after Thelsamar with "hearth to Stormwind" step  
-- Pandaren\_The\_Wandering\_Isle  
-    -Added Colours  
-    -Added missing .targets  
-    -fixed missing .targets  
-    -Split some steps to avoid confusion  
-- fixed text alignment issues  
-- Fix compareNextLevelSplit conditional  
-- Remove erroring Classic guides  
-- Exile's Reach  
-    -Colours added where applicable  
-    -Fixed a couple of incorrect/missing .targets  
-    -Minor formatting Fixes  
-    -Other minor fixes  
-- Update Classic-Alliance-1-14\_DwarfGnome.lua  
-- Update Classic-Alliance-1-14\_DwarfGnome.lua  
-    .target and text updates  
-- added missing nil check  
-- Item cooldown fixes for classic ptr  
-- improved classic ptr compatibility  
-- Update Classic-Alliance-1-14\_DwarfGnome.lua  
-    .target and colored text update  
-    Condensed stickies  
-- classic ptr support  
-- AceGUI update  
-- disabled window title for sticky steps  
-- improved quest handling  
-- classic fixes  
-- Update Classic-Alliance-1-14\_DwarfGnome.lua  
-    .target and colored text updates  
-- added a chromie time toggle  
-- Update RestedXP Alliance 1-14 Dwarf-Gnome.lua  
-    Start of text color / .target additions  
-- Add Dredd rare data to Classic (#142)  
+    * Minor hearth step clean up  
+- Added a xp gate for The Weathered Grave quest  
+- Fix  
+- Add French translation (#145)  
+    * added Scripts folder with dump\_locale  
+- Cleanup target mark reset logic (#146)  
+    * Always register `PLAYER\_REGEN\_ENABLED` to hide targets frame after combat  
+    * Remove `unitscan` addon cleanup  
+    * Track used marks  
+    * Only reset used marks  
+- Only detect XP changes on login  
+- additional flight path checks  
+- 20-30 improvements for JJ  
+- Draenei starting zone improvements for JJ  
+- removed debug message  
+- item stat comparison feature  
+- Guide loading optmizations  
+- Ashenvale JJ route improvements  
+- Darkshore fixes for JJ  
+- human starting zone improvements for JJ  
+- Blood Elf 1-6 Polish + Further JJ Support  
+- Quest automation fixes  
+- fixed icon display issues  
+- fixed icon display issues  
+- Horde 20-30  
+    Stonetalon Lua error fix  
+- Update mark handling in party  
+    maybe fix leader not marking and skull on timeouts  
+- Added missing nil check  

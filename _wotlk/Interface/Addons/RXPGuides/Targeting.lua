@@ -30,7 +30,8 @@ local proxmityPolling = {
     matchTimeout = 5,
     scanData = {},
     scannedTargets = {},
-    rareAnnounced = {}
+    rareAnnounced = {},
+    activeMarks = {}
 }
 
 local friendlyTargets = {}
@@ -54,9 +55,7 @@ local enemyTargetIcons = {
 local rareTargets = {}
 
 function addon.targeting:Setup()
-    if addon.settings.db.profile.enableTargetMacro then
-        self:RegisterEvent("PLAYER_REGEN_ENABLED")
-    else
+    if not addon.settings.db.profile.enableTargetMacro then
         DeleteMacro(self.macroName)
     end
 
@@ -64,8 +63,7 @@ function addon.targeting:Setup()
 
     if not addon.settings.db.profile.enableTargetAutomation then return end
 
-    -- Reset unitscan integration leftovers
-    self:RegisterEvent("ADDON_LOADED")
+    self:RegisterEvent("PLAYER_REGEN_ENABLED")
 
     -- TODO toggle without reloads
 
@@ -111,19 +109,6 @@ function addon.targeting:Setup()
     if addon.rares then
         self:LoadRares()
         self:RegisterEvent("ZONE_CHANGED_NEW_AREA")
-    end
-end
-
-function addon.targeting:ADDON_LOADED(_, name)
-    if name ~= 'unitscan' then return end
-
-    if next(_G.unitscan_targets) ~= nil and
-        not addon.settings.db.profile.unitscanReset then
-
-        -- Reset leftover unitscan integration
-        addon.comms.PrettyPrint("Resetting unitscan integration")
-        wipe(_G.unitscan_targets)
-        addon.settings.db.profile.unitscanReset = true
     end
 end
 
@@ -397,44 +382,53 @@ function addon.targeting.CheckTargetProximity()
     if not shouldTargetCheck() or
         not addon.settings.db.profile.showTargetingOnProximity then return end
 
-    if GetTime() - proxmityPolling.last > proxmityPolling.frequency then
-        for _, name in pairs(enemyTargets) do
-            proxmityPolling.scanData = {name = name, kind = 'enemy'}
-            TargetUnit(name, true)
+    if GetTime() - proxmityPolling.last <= proxmityPolling.frequency then
+        return
+    end
+
+    for _, name in pairs(enemyTargets) do
+        proxmityPolling.scanData = {name = name, kind = 'enemy'}
+        TargetUnit(name, true)
+    end
+
+    for _, name in pairs(friendlyTargets) do
+        proxmityPolling.scanData = {name = name, kind = 'friendly'}
+        TargetUnit(name, true)
+    end
+
+    for _, name in ipairs(rareTargets) do
+        proxmityPolling.scanData = {name = name, kind = 'rare'}
+        TargetUnit(name, true)
+    end
+
+    proxmityPolling.last = GetTime()
+
+    -- Unset match if >5s without a ADDON_ACTION_FORBIDDEN
+    if proxmityPolling.match and GetTime() - proxmityPolling.lastMatch >
+        proxmityPolling.matchTimeout then
+
+        if addon.settings.db.profile.debug then
+            addon.comms.PrettyPrint("Match expired, hiding")
         end
 
-        for _, name in pairs(friendlyTargets) do
-            proxmityPolling.scanData = {name = name, kind = 'friendly'}
-            TargetUnit(name, true)
-        end
-
-        for i, name in ipairs(rareTargets) do
-            proxmityPolling.scanData = {name = name, kind = 'rare'}
-            TargetUnit(name, true)
-        end
-
-        proxmityPolling.last = GetTime()
-
-        -- Unset match if >5s without a ADDON_ACTION_FORBIDDEN
-        if proxmityPolling.match and GetTime() - proxmityPolling.lastMatch >
-            proxmityPolling.matchTimeout then
-
-            if addon.settings.db.profile.debug then
-                addon.comms.PrettyPrint("Match expired, hiding")
-            end
-
-            proxmityPolling.match = false
-            wipe(proxmityPolling.rareAnnounced)
-            wipe(proxmityPolling.scannedTargets)
+        proxmityPolling.match = false
+        wipe(proxmityPolling.rareAnnounced)
+        wipe(proxmityPolling.scannedTargets)
+        if not InCombatLockdown() then
             addon.targeting.activeTargetFrame:Hide()
-
-            -- Reset raid icons on timeout
-            for i = 1, 8 do SetRaidTarget("player", i) end
-
-            if GetRaidTargetIndex("player") ~= nil then
-                SetRaidTarget("player", GetRaidTargetIndex("player"))
-            end
         end
+
+        if IsInGroup() and not UnitIsGroupLeader('player') then return end
+
+        for marker, _ in pairs(proxmityPolling.activeMarks) do
+            -- Reset raid icons on timeout
+            SetRaidTarget("player", marker)
+
+            -- Toggle marker off player
+            SetRaidTarget("player", marker)
+        end
+
+        wipe(proxmityPolling.activeMarks)
     end
 end
 
@@ -460,16 +454,15 @@ function addon.targeting:ADDON_ACTION_FORBIDDEN(_, forbiddenAddon, func)
     end
 
     -- Only notify sound once per step
-    if proxmityPolling.match or proxmityPolling.scanData.kind == 'friendly' then
-        return
-    end
+    if proxmityPolling.match then return end
 
-    if addon.settings.db.profile.soundOnFind ~= "none" then
+    proxmityPolling.match = true
+
+    if addon.settings.db.profile.soundOnFind ~= "none" and
+        proxmityPolling.scanData.kind ~= 'friendly' then
         PlaySound(addon.settings.db.profile.soundOnFind,
                   addon.settings.db.profile.soundOnFindChannel)
     end
-
-    proxmityPolling.match = true
 end
 
 function addon.targeting:UpdateFriendlyTargets(targets)
@@ -595,7 +588,7 @@ local fOnEnter = function(self)
     GameTooltip:SetOwner(self, "ANCHOR_BOTTOM", 0, 0)
     if self.targetData.kind == "friendly" then
         GameTooltip:AddLine(self.targetData.name, 0, 1, 0)
-    elseif self.targetData.kind == "enemy" then
+    else
         GameTooltip:AddLine(self.targetData.name, 1, 0, 0)
     end
 
@@ -613,10 +606,7 @@ function addon.targeting:UpdateMarker(kind, unitId, index)
         return
     end
 
-    if IsInGroup() and
-        not (UnitIsGroupAssistant('player') or UnitIsGroupLeader('player')) then
-        return
-    end
+    if IsInGroup() and not UnitIsGroupLeader('player') then return end
     -- Only mark 4/8 targets, ignore later marks
     if index > 4 then return end
 
@@ -633,6 +623,8 @@ function addon.targeting:UpdateMarker(kind, unitId, index)
 
     if GetRaidTargetIndex(unitId) == nil and GetRaidTargetIndex(unitId) ~=
         markerId then SetRaidTarget(unitId, markerId) end
+
+    proxmityPolling.activeMarks[markerId] = true
 end
 
 function addon.targeting:UpdateTargetFrame(kind)
@@ -647,8 +639,8 @@ function addon.targeting:UpdateTargetFrame(kind)
                             {} or enemyTargets
 
     if addon.settings.db.profile.showTargetingOnProximity then
-        for name, kind in pairs(proxmityPolling.scannedTargets) do
-            if kind == 'enemy' or kind == 'rare' then
+        for name, targetkind in pairs(proxmityPolling.scannedTargets) do
+            if targetkind == 'enemy' or targetkind == 'rare' then
                 tinsert(enemiesList, name)
             end
         end
@@ -718,8 +710,10 @@ function addon.targeting:UpdateTargetFrame(kind)
                              {} or friendlyTargets
 
     if addon.settings.db.profile.showTargetingOnProximity then
-        for name, kind in pairs(proxmityPolling.scannedTargets) do
-            if kind == 'friendly' then tinsert(friendlyList, name) end
+        for name, targetkind in pairs(proxmityPolling.scannedTargets) do
+            if targetkind == 'friendly' then
+                tinsert(friendlyList, name)
+            end
         end
     end
 

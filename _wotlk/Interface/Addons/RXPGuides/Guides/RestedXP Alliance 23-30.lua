@@ -1,3 +1,6 @@
+local faction = UnitFactionGroup("player")
+if faction == "Horde" then return end
+
 RXPGuides.RegisterGuide([[
 #tbc
 #wotlk
@@ -473,7 +476,7 @@ step << Human !Warlock wotlk !Paladin wotlk
     .goto Elwynn Forest,65.2,69.8
 	>>Head to the top of the Tower of Azora in Elwynn Forest
     .accept 94 >> Accept A Watchful Eye
-step << Human !Warlock wotlk/Human !Paladin wotlk
+step << Human !Warlock !Paladin wotlk
 	.goto Elwynn Forest,84.3,64.9
 	.train 33388 >> Head to Eastvale Logging Camp in Elwynn Forest and train/purchase your mount
 	.money <5.0
@@ -647,7 +650,7 @@ step
 step
     .isOnQuest 226
     >>Run up the coast killing wolves
-    .xp <25,1
+    .xp 25,1
     .goto Duskwood,17.6,24.6
     .complete 226,1 --Kill Starving Dire Wolf (x12)
     .complete 226,2 --Kill Rabid Dire Wolf (x8)
@@ -655,9 +658,11 @@ step << Rogue/Druid
     #label HistoryB
 	.goto Duskwood,17.7,29.1
     .accept 225 >> Accept The Weathered Grave
+    .xp <25,1
 step << !Rogue !Druid
 	.goto Duskwood,17.7,29.1
     .accept 225 >> Accept The Weathered Grave
+    .xp <25,1
 step << Rogue/Druid
     .goto Westfall,56.6,52.6
     .fp Sentinel >> Get the Sentinel Hill flight path
@@ -768,11 +773,15 @@ step
 step
     .goto Duskwood,72.6,47.6
     .turnin 225 >> Turn in The Weathered Grave
-    .accept 227 >> Accept Morgan Ladimore
+    .isOnQuest 225
 step
-    .goto Duskwood,73.5,46.9
+    .accept 227 >> Accept Morgan Ladimore
+    .goto Duskwood,72.6,47.6
     .turnin 227 >> Turn in Morgan Ladimore
+    .goto Duskwood,73.5,46.9
     .accept 228 >> Accept Mor'Ladim
+    .goto Duskwood,73.5,46.9
+    .isQuestTurnedIn 225
 step
 	#sticky
 	#completewith next
@@ -818,6 +827,9 @@ step
     .complete 93,1 --Collect Gooey Spider Leg (x6)
 	.maxlevel 27
 step
+	.goto Duskwood,17.7,29.1
+    .accept 225 >> Accept The Weathered Grave
+step
     .goto Duskwood,28.0,31.5
     .turnin 157 >> Turn in Deliver the Thread
     .accept 158 >> Accept Zombie Juice
@@ -831,6 +843,7 @@ step << Hunter/Paladin
     >>Kill the level 30 elite roaming the cemetery. Kite him around the big trees in the area.
     >> Run away and heal when he enrages, use the big trees to make space. Don't try to tank him during the enrage << Paladin
     .complete 228,1 --Collect Mor'Ladim's Skull (x1)
+    .isOnQuest 228
 step
     .goto Duskwood,7.8,34.0
     .turnin 230 >> Turn in Sven's Camp
@@ -876,6 +889,18 @@ step
     .accept 266 >> Accept Inquire at the Inn
     .turnin 68 >> Turn in The Legend of Stalvan
     .accept 69 >> Accept The Legend of Stalvan
+step
+    .goto Duskwood,72.6,47.6
+    .turnin 225 >> Turn in The Weathered Grave
+    .isOnQuest 225
+step
+    .accept 227 >> Accept Morgan Ladimore
+    .goto Duskwood,72.6,47.6
+    .turnin 227 >> Turn in Morgan Ladimore
+    .goto Duskwood,73.5,46.9
+    .accept 228 >> Accept Mor'Ladim
+    .goto Duskwood,73.5,46.9
+    .isQuestTurnedIn 225
 step
 	#completewith next
 	.vendor >> Remember to buy level 25 food and water
@@ -1034,7 +1059,7 @@ step
 step
 	 .goto Duskwood,23.8,35.0
 	.xp 27+12000 >> Grind to 12000+/32200xp
-step << !Hunter !Paladin
+step
     .goto Duskwood,19.7,39.7
     >>Kill the level 30 elite roaming the cemetery. Skip this step if you cannot solo her or find a group.
     >> Run away when he enrages, use the big trees to kite and make space. Don't try to tank him during the enrage
@@ -1799,10 +1824,11 @@ step
     .turnin 75 >> Turn in The Legend of Stalvan
     .accept 78 >> Accept The Legend of Stalvan
 step << Human !Paladin !Warlock tbc
-	#level 30
+	.xp <30,1
 	.goto Elwynn Forest,84.2,65.2
 	.train 148 >> Train riding and purchase your mount.
 	.money <35.00
+    .skill riding,1,1
 step << Shaman
     #completewith next
     .hs >> Hearth to Darkshire
@@ -2016,6 +2042,10 @@ step
     .accept 190 >> Accept Panther Mastery
 step
 	#label tigers
+    .goto Stranglethorn Vale,37.6,11.6,20,0
+    .goto Stranglethorn Vale,35.6,10.6,20,0
+    .goto Stranglethorn Vale,36.4,13.6,20,0
+    .goto Stranglethorn Vale,37.6,11.6
     >> Kill young tigers around the hunting camp
     .complete 185,1 --Kill Young Stranglethorn Tiger (x10)
 step
@@ -2639,10 +2669,11 @@ step
     .turnin 75 >> Turn in The Legend of Stalvan
     .accept 78 >> Accept The Legend of Stalvan
 step << Human !Paladin !Warlock tbc
-	#level 30
+	.xp <30,1
 	.goto Elwynn Forest,84.2,65.2
 	.train 148 >> Train riding and purchase your mount.
 	.money <35.00
+    .skill riding,1,1
 step << Human !Paladin !Warlock wotlk
 	.goto Elwynn Forest,84.2,65.2
 	.train 148 >> Train riding and purchase your mount.
@@ -2819,6 +2850,9 @@ step
 step
     .goto Duskwood,71.9,46.6
     .turnin 252 >> Turn in Translation to Ello
+step
+#xprate <1.7
+    .goto Duskwood,71.9,46.6
     .accept 253 >> Accept Bride of the Embalmer
 step
 	#sticky
@@ -3439,6 +3473,7 @@ step
     .goto Arathi Highlands,44.3,93.0
 	>>Jump down and loot the letter from the corpse underwater
     .accept 637 >> Accept Sully Balloo's Letter
+	.use 4433 >>Jump down and loot the letter from the corpse underwater
 step
     #completewith next
     .goto Arathi Highlands,52.5,90.4,30 >> Swim east toward the ramp here

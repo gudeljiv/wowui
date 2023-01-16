@@ -1,3 +1,6 @@
+local faction = UnitFactionGroup("player")
+if faction == "Horde" then return end
+
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Hunter/NightElf
@@ -977,7 +980,7 @@ step <<  Hunter
     .goto Darkshore,35.72,83.69
      >> Start the escort quest
      >>This quest is VERY hard, you can skip this step and come back later at level 19
-    .accept 731 >> Accept The Absent Minded Prospector
+    .accept 731,1 >> Accept The Absent Minded Prospector
     .link https://www.twitch.tv/videos/1182180918 >> Click here for video reference
 step <<  Hunter
     #requires prospector
@@ -1885,7 +1888,7 @@ step <<  Hunter
     .goto Darkshore,35.72,83.69
      >> Start the escort quest
     >>This quest is hard, proceed with caution
-    .accept 731 >> Accept The Absent Minded Prospector
+    .accept 731,1 >> Accept The Absent Minded Prospector
     .link https://www.twitch.tv/videos/1182180918 >> Click here for video reference
 step <<  Hunter
     #requires prospector
@@ -2495,9 +2498,16 @@ step
     .fp Redridge Mountains >> Get the Redridge Mountains flight path << !Human !Warlock
     .fly Stormwind >> Fly to Stormwind City
 step << Rogue
+    #softcore
     .goto StormwindClassic,57.55,57.07
     >>Buy a Longsword if you have enough money. Equip it at 21
     >>Buy something from the AH if its cheaper/better
+    >>Skip this step if you have something better
+    .collect 923,1 --Longsword (1)
+step << Rogue
+    #hardcore
+    .goto StormwindClassic,57.55,57.07
+    >>Buy a Longsword if you have enough money. Equip it at 21
     >>Skip this step if you have something better
     .collect 923,1 --Longsword (1)
 step << Warrior/Paladin
@@ -2825,7 +2835,7 @@ step
 step
     .goto Darkshore,35.72,83.69
      >> Start the escort quest
-    .accept 731 >> Accept The Absent Minded Prospector
+    .accept 731,1 >> Accept The Absent Minded Prospector
 step
      >> Escort Prospector Remtravel. Make sure he aggros the mobs first or he won't help you kill them
     .complete 731,1

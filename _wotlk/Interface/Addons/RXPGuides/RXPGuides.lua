@@ -313,6 +313,8 @@ function addon:QuestAutomation(event, arg1, arg2, arg3)
         elseif _G.QuestFrameProgressPanel and
             _G.QuestFrameProgressPanel:IsShown() then
             event = "QUEST_PROGRESS"
+        elseif _G.QuestFrameDetailPanel and _G.QuestFrameDetailPanel:IsShown() then
+            event = "QUEST_DETAIL"
         elseif _G.QuestFrameRewardPanel and _G.QuestFrameRewardPanel:IsShown() or
             _G.QuestFrameCompleteButton and
             _G.QuestFrameCompleteButton:IsShown() then
@@ -448,7 +450,6 @@ function addon:OnInitialize()
 end
 
 function addon:OnEnable()
-    addon.settings:DetectXPRate()
     ProcessSpells()
     addon.GetProfessionLevel()
     local guide = addon.GetGuideTable(RXPCData.currentGuideGroup,
@@ -545,7 +546,7 @@ end
 
 --Tracks if a player is on a loading screen and pauses the main update loop
 --Some information is not available during zone transitions
-function addon:PLAYER_ENTERING_WORLD()
+function addon:PLAYER_ENTERING_WORLD(_, isInitialLogin)
     if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE and RXPCData then
         RXPCData.GA = false
     end
@@ -553,6 +554,12 @@ function addon:PLAYER_ENTERING_WORLD()
     addon.updateMap = true
     addon.isHidden = addon.settings and addon.settings.db.profile.hideGuideWindow or
                                          not (addon.RXPFrame and addon.RXPFrame:IsShown())
+
+    if isInitialLogin then
+        C_Timer.After(5, function ()
+            addon.settings:DetectXPRate()
+        end)
+    end
 end
 
 function addon:PLAYER_LEAVING_WORLD()

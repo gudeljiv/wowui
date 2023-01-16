@@ -619,6 +619,7 @@ function addon.settings:CreateAceOptionsPanel()
     end
 
     local optionsWidth = 1.08
+    local settingsCache = {orphans = {}}
 
     local optionsTable = {
         type = "group",
@@ -1138,6 +1139,55 @@ function addon.settings:CreateAceOptionsPanel()
                         func = function()
                             addon.ResetArrowPosition()
                         end
+                    },
+                    questCleanupHeader = {
+                        name = L("Quest Cleanup"),
+                        type = "header",
+                        width = "full",
+                        order = 3.0
+                    },
+                    abandonOrphanedQuests = {
+                        name = L("Cleanup Orphaned Quests"), -- TODO locale
+                        desc = L("Cleanup obsolete or leftover quests"),
+                        order = 3.1,
+                        type = "execute",
+                        width = optionsWidth,
+                        func = function()
+                            addon.AbandonOrphanedQuests(settingsCache.orphans)
+                            wipe(settingsCache.orphans)
+                        end,
+                        confirm = function()
+                            local result = L("Abandon the following quests?")
+
+                            for _, d in ipairs(settingsCache.orphans) do
+                                result =
+                                    fmt("%s\n%s (level %d)", result,
+                                        d.questLogTitleText, d.level)
+                            end
+
+                            return result
+                        end,
+                        disabled = function()
+                            return #settingsCache.orphans == 0
+                        end
+                    },
+                    orphanedQuestBox = {
+                        order = 3.2,
+                        type = 'description',
+                        name = function()
+                            local result = ""
+                            local orphans = addon.GetOrphanedQuests()
+                            for _, d in ipairs(orphans) do
+                                result =
+                                    fmt("%s\n%s (level %d)", result,
+                                        d.questLogTitleText, d.level)
+                            end
+
+                            settingsCache.orphans = orphans
+
+                            return result
+                        end,
+                        width = optionsWidth
                     },
                     expansionHeader = {
                         name = _G.EXPANSION_FILTER_TEXT,
@@ -1849,7 +1899,7 @@ function addon.settings.ToggleActive()
         not addon.settings.db.profile.showEnabled
 
     for _, frame in pairs(addon.enabledFrames) do
-        if frame.IsFeatureEnabled() then
+        if frame.IsFeatureEnabled() and frame.SetShown then
             frame:SetShown(addon.settings.db.profile.showEnabled)
         end
     end
@@ -1875,9 +1925,18 @@ function addon.settings:DetectXPRate()
     end
 
     if addon.gameVersion < 20000 then
-        addon.settings.db.profile.SoM = CheckBuff(362859) -- SoM
+        local isSoM = CheckBuff(362859)
 
-        addon.ReloadGuide()
+        if isSoM == addon.settings.db.profile.SoM then return end
+
+        addon.settings.db.profile.SoM = isSoM
+
+        if addon.currentGuide and addon.currentGuide.name then
+            addon:LoadGuide(addon.currentGuide, 'onLoad')
+        else
+            addon.ReloadGuide()
+        end
+
         addon.RXPFrame.GenerateMenuTable()
 
         return
@@ -1916,7 +1975,9 @@ function addon.settings:DetectXPRate()
         end
     end
 
-    if addon.settings.db.profile.xprate == calculatedRate then return end
+    -- Bypass floating point comparison issues
+    if fmt("%.2f", addon.settings.db.profile.xprate) ==
+        fmt("%.2f", calculatedRate) then return end
 
     addon.settings.db.profile.xprate = calculatedRate
 
