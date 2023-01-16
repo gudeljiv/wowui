@@ -51,7 +51,7 @@ PallyPower_Assignments = {
 		4, -- [4]
 		4, -- [5]
 		2, -- [6]
-		4, -- [7]
+		1, -- [7]
 		4, -- [8]
 		4, -- [9]
 		2, -- [10]
@@ -61,18 +61,19 @@ PallyPower_Assignments = {
 PallyPower_NormalAssignments = {
 }
 PallyPower_AuraAssignments = {
+	["Rvbbitt"] = 1,
 	["Eternalpala"] = 1,
 	["Ondisch"] = 3,
-	["Rvbbitt"] = 1,
 	["Skodicek"] = 1,
 	["Althan"] = 2,
 	["Zoqur"] = 4,
-	["Paradoxpala"] = 0,
 	["Monikà"] = 1,
-	["Vermina"] = 2,
-	["Lonnath"] = 0,
-	["Monikå"] = 1,
+	["Paradoxpala"] = 0,
 	["Berri"] = 3,
+	["Lonnath"] = 0,
+	["Aarvin"] = 1,
+	["Monikå"] = 1,
+	["Vermina"] = 2,
 	["Dariya"] = 2,
 	["Tökfilkó"] = 0,
 	["Xjereziah"] = 2,

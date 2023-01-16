@@ -566,8 +566,8 @@ AtlasLootClassicDB = {
 			[40750] = "EmblemOfValor:40",
 			[23467] = "honor:2500",
 			[35109] = "honor:19000",
-			[40878] = "honor:21700",
 			[24547] = "honor:4750",
+			[28639] = "honor:3800",
 			[48685] = "EmblemOfHeroism:40",
 			[33813] = "honor:5130",
 			[32790] = "honor:5320",
@@ -656,8 +656,8 @@ AtlasLootClassicDB = {
 			[33734] = "honor:8550",
 			[32788] = "honor:5320",
 			[40836] = "EmblemOfHeroism:45",
-			[41712] = "EmblemOfHeroism:30",
 			[18826] = "honor:2500",
+			[40689] = "EmblemOfHeroism:40",
 			[40721] = "EmblemOfValor:25",
 			[15200] = "honor:100",
 			[18874] = "honor:5000",
@@ -741,7 +741,7 @@ AtlasLootClassicDB = {
 			[31375] = "honor:3800",
 			[35129] = "honor:5700",
 			[35161] = "honor:7600",
-			[40689] = "EmblemOfHeroism:40",
+			[41712] = "EmblemOfHeroism:30",
 			[34129] = "honor:16650",
 			[35038] = "honor:9500",
 			[33068] = "honor:3990",
@@ -780,7 +780,7 @@ AtlasLootClassicDB = {
 			[28930] = "honor:3800",
 			[33877] = "honor:6840",
 			[47662] = "EmblemOfTriumph:25",
-			[28639] = "honor:3800",
+			[40878] = "honor:21700",
 			[41588] = "honor:5700",
 			[16554] = "honor:2000",
 			[34578] = "honor:3990",
@@ -885,6 +885,11 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["minimapPos"] = 35.6918309653034,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -893,11 +898,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["minimapPos"] = 35.6918309653034,
-				["hide"] = true,
 			},
 		},
 		["Verminz - Golemagg"] = {
