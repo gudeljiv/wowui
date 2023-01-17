@@ -1,9 +1,11 @@
 local mod	= DBM:NewMod("Algalon", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod.statTypes = "normal"
+if not mod:IsClassic() then--on classic, it's normal10,normal25, defined in toc, only retail overrides to remove timewalking
+	mod.statTypes = "normal"
+end
 
-mod:SetRevision("20230106204053")
+mod:SetRevision("20230117072031")
 mod:SetCreatureID(32871)
 mod:SetEncounterID(1130)
 mod:DisableEEKillDetection()--EE always fires wipe
@@ -16,20 +18,21 @@ mod:SetWipeTime(60)
 
 mod:RegisterEventsInCombat(
 	"SPELL_CAST_START 64584 64443",
-	"SPELL_CAST_SUCCESS 65108 64122 64598 62301",
+	"SPELL_CAST_SUCCESS 65108 64122 64598 62301 64412",
 	"SPELL_AURA_APPLIED 64412",
 	"SPELL_AURA_APPLIED_DOSE 64412",
 	"SPELL_AURA_REMOVED 64412",
 	"RAID_BOSS_EMOTE",
---	"CHAT_MSG_MONSTER_YELL",
+	"CHAT_MSG_MONSTER_YELL",
 	"UNIT_SPELLCAST_SUCCEEDED",
 	"UNIT_HEALTH"
 )
 
 --TODO, when wrath servers come out, FirstPull might be needed again, if boss unit Ids aren't enabled on WoTLK servers
+--TODO, see if supermassive fail fires late enough to be picked up without boss unitIds, if not, have to rework initial timers again for classic
 local warnPhase2				= mod:NewPhaseAnnounce(2, 2)
 local warnPhase2Soon			= mod:NewAnnounce("WarnPhase2Soon", 2)
-local announcePreBigBang		= mod:NewPreWarnAnnounce(64584, 10, 3)
+local announcePreBigBang		= mod:NewPreWarnAnnounce(64584, 5, 3)
 local announceBlackHole			= mod:NewSpellAnnounce(65108, 2)
 local announcePhasePunch		= mod:NewStackAnnounce(65108, 4, nil, "Tank|Healer")
 
@@ -58,6 +61,9 @@ function mod:OnCombatStart(delay)
 	self.vb.warned_preP2 = false
 	table.wipe(sentLowHP)
 	table.wipe(warnedLowHP)
+	if self:IsClassic() then
+		DBM:AddMsg("Initial timers may be wrong or missing if DBMs newer more modern code is not compatible with classics legacy code, until this mod can be re-reviewed")
+	end
 --	if self.Options.InfoFrame and not self:IsTrivial() then
 --		DBM.InfoFrame:SetHeader(L.HealthInfo)
 --		DBM.InfoFrame:Show(5, "health", 18000)
@@ -92,12 +98,13 @@ function mod:SPELL_CAST_SUCCESS(args)
 		timerCDCosmicSmash:Start()
 		specWarnCosmicSmash:Show()
 		specWarnCosmicSmash:Play("watchstep")
+	elseif args.spellId == 64412 then
+		timerNextPhasePunch:Start()
 	end
 end
 
 function mod:SPELL_AURA_APPLIED(args)
 	if args.spellId == 64412 then
-		timerNextPhasePunch:Start()
 		local amount = args.amount or 1
 		if args:IsPlayer() and amount >= 4 then
 			specWarnPhasePunch:Show(args.amount)
@@ -111,7 +118,7 @@ mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
 
 function mod:SPELL_AURA_REMOVED(args)
 	if args.spellId == 64412 then
-		timerPhasePunch:Cancel(args.destName)
+		timerPhasePunch:Stop(args.destName)
 	end
 end
 
@@ -121,14 +128,11 @@ function mod:RAID_BOSS_EMOTE(msg)
 	end
 end
 
---[[
 function mod:CHAT_MSG_MONSTER_YELL(msg)
-	if msg == L.Phase2 or msg:find(L.Phase2) then
-		timerNextCollapsingStar:Cancel()
-		warnPhase2:Show()
+	if (msg == L.Phase2 or msg:find(L.Phase2)) then
+		self:SendSync("Phase2")
 	end
 end
---]]
 
 function mod:UNIT_HEALTH(uId)
 	local cid = self:GetUnitCreatureId(uId)
@@ -143,18 +147,9 @@ function mod:UNIT_HEALTH(uId)
 end
 
 function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, spellId)
-	if spellId == 65311 and self:AntiSpam(5, 1) then--Supermassive Fail (fires when he becomes actually active)
-		timerNextCollapsingStar:Start(16)
-		timerCDCosmicSmash:Start(26)
-		announcePreBigBang:Schedule(80)
-		timerNextBigBang:Start(90)
-		enrageTimer:Start(360)
+	if spellId == 65311 then--Supermassive Fail (fires when he becomes actually active)
 		self:SendSync("Supermassive")
-	elseif spellId == 65256 and self:AntiSpam(5, 2) then--Self Stun (phase 2)
-		self:SetStage(2)
-		self.vb.warned_preP2 = true
-		timerNextCollapsingStar:Stop()
-		warnPhase2:Show()
+	elseif spellId == 65256 then--Self Stun (phase 2)
 		self:SendSync("Phase2")
 	end
 end
@@ -167,17 +162,16 @@ function mod:OnSync(msg, guid)
 			specwarnStarLow:Show()
 			specwarnStarLow:Play("aesoon")
 		end
-	elseif msg == "Supermassive" and self:AntiSpam(5, 1) then
+	elseif msg == "Supermassive" then
 		timerNextCollapsingStar:Start(16)
 		timerCDCosmicSmash:Start(26)
-		announcePreBigBang:Schedule(80)
+		announcePreBigBang:Schedule(85)
 		timerNextBigBang:Start(90)
 		enrageTimer:Start(360)
-	elseif msg == "Phase2" and self:AntiSpam(5, 2) then
+	elseif msg == "Phase2" and self.vb.phase < 2 then
 		self:SetStage(2)
 		self.vb.warned_preP2 = true
 		timerNextCollapsingStar:Stop()
 		warnPhase2:Show()
-		self:SendSync("Phase2")
 	end
 end

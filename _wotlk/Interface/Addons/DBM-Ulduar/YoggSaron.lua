@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("YoggSaron", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20230106204053")
+mod:SetRevision("20230117072031")
 mod:SetCreatureID(33288)
 mod:SetEncounterID(1143)
 mod:SetModelID(28817)
@@ -272,7 +272,7 @@ function mod:SPELL_AURA_REMOVED_DOSE(args)
 end
 
 function mod:OnSync(msg)
-	if msg == "Phase3" then
+	if msg == "Phase3" and self.vb.phase < 3 then
 		self:SetStage(3)
 		brainportal:Cancel()
 		warnBrainPortalSoon:Cancel()

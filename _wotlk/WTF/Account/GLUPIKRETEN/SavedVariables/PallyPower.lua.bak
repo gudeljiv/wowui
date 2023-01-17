@@ -30,8 +30,8 @@ PallyPowerDB = {
 				["buffDuration"] = false,
 				["frameLocked"] = true,
 			},
-			["SalvInCombat"] = true,
 			["border"] = "None",
+			["SalvInCombat"] = true,
 			["rf"] = false,
 		},
 		["Other"] = {

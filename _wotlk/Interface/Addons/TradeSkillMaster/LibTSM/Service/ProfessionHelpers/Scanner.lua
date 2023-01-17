@@ -247,6 +247,8 @@ function Scanner.GetResultItem(craftString)
 		if TSM.IsWowWrathClassic() then
 			local indirectSpellId = strmatch(itemLink, "enchant:(%d+)")
 			indirectSpellId = indirectSpellId and tonumber(indirectSpellId)
+			local itemString = ProfessionInfo.GetIndirectCraftResult(indirectSpellId)
+			itemLink = itemString and ItemInfo.GetLink(itemString) or itemLink
 			return itemLink, indirectSpellId
 		else
 			return itemLink

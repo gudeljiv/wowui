@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Razorscale", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20230106204053")
+mod:SetRevision("20230117072031")
 mod:SetCreatureID(33186)
 mod:SetEncounterID(1139)
 mod:SetModelID(28787)
@@ -158,15 +158,14 @@ function mod:CHAT_MSG_MONSTER_YELL(msg, mob)
 end
 
 function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, spellId)
-	if spellId == 64821 and self:AntiSpam(5, 2) then--Fuse Armor
-		timerFuseArmorCD:Start()
+	if spellId == 64821 then--Fuse Armor
 		self:SendSync("FuseArmor")
 	end
 end
 
 function mod:OnSync(event, args)
 	if not self:IsInCombat() then return end
-	if event == "FuseArmor" and self:AntiSpam(5, 2) then
+	if event == "FuseArmor" then
 		timerFuseArmorCD:Start()
 	end
 end

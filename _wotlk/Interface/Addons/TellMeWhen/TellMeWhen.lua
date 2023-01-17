@@ -18,7 +18,7 @@
 TELLMEWHEN_VERSION = GetAddOnMetadata("TellMeWhen", "Version")
 
 TELLMEWHEN_VERSION_MINOR = ""
-local projectVersion = "10.0.7-2-g96c55d5" -- comes out like "6.2.2-21-g4e91cee"
+local projectVersion = "10.0.7-5-g28fcbec" -- comes out like "6.2.2-21-g4e91cee"
 if projectVersion:find("project%-version") then
 	TELLMEWHEN_VERSION_MINOR = "dev"
 elseif strmatch(projectVersion, "%-%d+%-") then
