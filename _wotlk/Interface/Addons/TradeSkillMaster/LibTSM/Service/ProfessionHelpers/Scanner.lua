@@ -671,6 +671,9 @@ function private.ScanProfession()
 						local recipeScanResult, matScanResult = private.BulkInsertRecipe(craftString, index, info.name, info.categoryID, info.relativeDifficulty, rank, numSkillUps, 1, info.currentRecipeExperience or -1, info.nextLevelRecipeExperience or -1)
 						haveInvalidRecipes = haveInvalidRecipes or not recipeScanResult
 						haveInvalidMats = haveInvalidMats or not matScanResult
+					elseif numResultItems == 1 then
+						-- Just ignore this craft for now - this can happen with alchemy experimentation for example
+						Log.Warn("Unexpected single result item (%s, %s)", tostring(professionName), tostring(craftString))
 					else
 						assert(numResultItems > 1)
 						-- This is a quality craft

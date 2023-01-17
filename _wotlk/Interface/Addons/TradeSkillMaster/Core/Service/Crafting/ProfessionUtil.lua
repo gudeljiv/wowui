@@ -383,6 +383,9 @@ function private.SpellMatchesCraft(spellId)
 	if TSM.IsWowClassic() then
 		return GetSpellInfo(spellId) == private.craftName
 	else
+		if not Profession.ScannerHasSkills() then
+			return false
+		end
 		local resultItem = Profession.GetResultItem(CraftString.Get(spellId))
 		if not resultItem then
 			return false

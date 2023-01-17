@@ -53,7 +53,10 @@ skills["offgcd"]["rogue"] = [
     {"name": "pick pocket", "type": "GetSpellTexture", "id": 921, "key": "f5", "modifier": "ctrl"},
 ]
 
-skills["offgcd"]["paladin"] = []
+skills["offgcd"]["paladin"] = [
+    {"name": "divine protection", "type": "GetSpellTexture", "id": 498, "key": "r", "modifier": "alt"},
+]
+
 skills["offgcd"]["priest"] = []
 skills["offgcd"]["warlock"] = []
 skills["offgcd"]["shaman"] = []
@@ -170,7 +173,6 @@ skills["paladin"] = [
     {"name": "lay on hands", "type": "GetSpellTexture", "id": 633, "key": "k"},
     {"name": "purify", "type": "GetSpellTexture", "id": 1152, "key": "t"},
     {"name": "cleanse", "type": "GetSpellTexture", "id": 4987, "key": "t"},
-    {"name": "divine protection", "type": "GetSpellTexture", "id": 498, "key": "r", "modifier": "alt"},
     {"name": "consecration", "type": "GetSpellTexture", "id": 20116, "key": "2"},
     {"name": "seal of command", "type": "GetSpellTexture", "id": 20375, "key": "f", "modifier": "alt"},
     {"name": "seal of vengeance", "type": "GetSpellTexture", "id": 31801, "key": "d", "modifier": "alt"},

@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 8450,
 	["lastSanitation"] = 3,
-	["session"] = 8447,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -1342,20 +1342,20 @@ BugGrabberDB = {
 		}, -- [169]
 		{
 			["message"] = " (null)",
-			["session"] = 5326,
 			["time"] = "2022/04/11 11:49:12",
+			["session"] = 5326,
 			["counter"] = 15,
 		}, -- [170]
 		{
 			["message"] = "  (null)",
-			["session"] = 5326,
 			["time"] = "2022/04/13 16:37:53",
+			["session"] = 5326,
 			["counter"] = 4,
 		}, -- [171]
 		{
 			["message"] = "   (null)",
-			["session"] = 5326,
 			["time"] = "2022/06/02 15:20:51",
+			["session"] = 5326,
 			["counter"] = 1,
 		}, -- [172]
 		{
@@ -1741,62 +1741,62 @@ BugGrabberDB = {
 		}, -- [220]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-enUS.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [221]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-deDE.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [222]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-esES.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [223]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-esMX.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [224]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-frFR.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [225]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-itIT.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [226]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-koKR.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [227]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-ptBR.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [228]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-ruRU.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [229]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-zhCN.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [230]
 		{
@@ -2073,8 +2073,8 @@ BugGrabberDB = {
 		}, -- [265]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\xVermin-54000.lua is empty.",
-			["time"] = "2022/09/07 12:54:52",
 			["session"] = 5507,
+			["time"] = "2022/09/07 12:54:52",
 			["counter"] = 3,
 		}, -- [266]
 		{
@@ -2159,8 +2159,8 @@ BugGrabberDB = {
 		}, -- [276]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\Addons/nMainBar.lua is empty.",
-			["time"] = "2022/09/07 13:53:00",
 			["session"] = 5527,
+			["time"] = "2022/09/07 13:53:00",
 			["counter"] = 3,
 		}, -- [277]
 		{
@@ -2758,8 +2758,8 @@ BugGrabberDB = {
 		}, -- [353]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\Helpers/Chat.lua is empty.",
-			["session"] = 5820,
 			["time"] = "2022/09/19 19:24:24",
+			["session"] = 5820,
 			["counter"] = 3,
 		}, -- [354]
 		{
@@ -3862,8 +3862,8 @@ BugGrabberDB = {
 		}, -- [494]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Helpers/ActionButtons.lua",
-			["time"] = "2022/10/04 09:59:06",
 			["session"] = 6360,
+			["time"] = "2022/10/04 09:59:06",
 			["counter"] = 6,
 		}, -- [495]
 		{
@@ -5185,8 +5185,8 @@ BugGrabberDB = {
 		}, -- [663]
 		{
 			["message"] = "(null)",
-			["session"] = 7138,
 			["time"] = "2022/03/09 13:39:43",
+			["session"] = 7138,
 			["counter"] = 205,
 		}, -- [664]
 		{
@@ -5199,20 +5199,20 @@ BugGrabberDB = {
 		}, -- [665]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\xVermin\\Addons/NovaWorldBuffs.lua",
-			["time"] = "2022/10/25 16:05:00",
 			["session"] = 7145,
+			["time"] = "2022/10/25 16:05:00",
 			["counter"] = 1,
 		}, -- [666]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\xVermin\\Addons/NovaWorldBuffs.lua",
-			["time"] = "2022/10/25 16:05:00",
 			["session"] = 7145,
+			["time"] = "2022/10/25 16:05:00",
 			["counter"] = 1,
 		}, -- [667]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\xVermin\\Addons/NovaWorldBuffs.lua",
-			["time"] = "2022/10/25 16:05:00",
 			["session"] = 7145,
+			["time"] = "2022/10/25 16:05:00",
 			["counter"] = 1,
 		}, -- [668]
 		{
@@ -5225,44 +5225,44 @@ BugGrabberDB = {
 		}, -- [669]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\Dejunk\\src\\container.lua",
-			["session"] = 7185,
 			["time"] = "2022/10/27 16:37:20",
+			["session"] = 7185,
 			["counter"] = 2,
 		}, -- [670]
 		{
 			["message"] = "Interface\\AddOns\\Dejunk\\Dejunk.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\Dejunk\\src\\container.lua",
-			["session"] = 7185,
 			["time"] = "2022/10/27 16:37:20",
+			["session"] = 7185,
 			["counter"] = 2,
 		}, -- [671]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface\\AddOns\\Dejunk\\Dejunk.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\Dejunk\\src\\container.lua",
-			["session"] = 7185,
 			["time"] = "2022/10/27 16:37:20",
+			["session"] = 7185,
 			["counter"] = 2,
 		}, -- [672]
 		{
 			["message"] = "Interface\\AddOns\\WeakAuras\\locales.xml:1 Error loading Interface\\AddOns\\WeakAuras\\AuraEnvironmentWrappedSystems.lua",
-			["session"] = 7185,
 			["time"] = "2022/10/27 16:37:20",
+			["session"] = 7185,
 			["counter"] = 2,
 		}, -- [673]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface\\AddOns\\WeakAuras\\locales.xml:1 Error loading Interface\\AddOns\\WeakAuras\\AuraEnvironmentWrappedSystems.lua",
-			["session"] = 7185,
 			["time"] = "2022/10/27 16:37:20",
+			["session"] = 7185,
 			["counter"] = 2,
 		}, -- [674]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface\\AddOns\\Dejunk\\Dejunk.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Error loading Interface\\AddOns\\Dejunk\\src\\container.lua",
-			["session"] = 7185,
 			["time"] = "2022/10/27 16:37:20",
+			["session"] = 7185,
 			["counter"] = 2,
 		}, -- [675]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface\\AddOns\\WeakAuras\\locales.xml:1 Error loading Interface\\AddOns\\WeakAuras\\AuraEnvironmentWrappedSystems.lua",
-			["time"] = "2022/10/27 16:37:55",
 			["session"] = 7185,
+			["time"] = "2022/10/27 16:37:55",
 			["counter"] = 1,
 		}, -- [676]
 		{
@@ -6202,20 +6202,20 @@ BugGrabberDB = {
 		}, -- [796]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 (null)",
-			["session"] = 7585,
 			["time"] = "2022/10/31 21:00:28",
+			["session"] = 7585,
 			["counter"] = 28,
 		}, -- [797]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 (null)",
-			["session"] = 7585,
 			["time"] = "2022/10/31 21:00:28",
+			["session"] = 7585,
 			["counter"] = 28,
 		}, -- [798]
 		{
 			["message"] = "Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 Interface_Wrath\\FrameXML\\Bindings.xml:1 (null)",
-			["session"] = 7585,
 			["time"] = "2022/10/31 21:00:28",
+			["session"] = 7585,
 			["counter"] = 28,
 		}, -- [799]
 		{
@@ -6701,14 +6701,14 @@ BugGrabberDB = {
 		}, -- [862]
 		{
 			["message"] = "Interface\\AddOns\\ShadowedUnitFrames\\libs\\LibSpellRange-1.0\\lib.xml:1 Interface\\AddOns\\ShadowedUnitFrames\\localization\\enUS-English (US).lua:836: unexpected symbol near '='",
-			["session"] = 8039,
 			["time"] = "2022/12/19 11:55:36",
+			["session"] = 8039,
 			["counter"] = 2,
 		}, -- [863]
 		{
 			["message"] = "Interface\\AddOns\\ShadowedUnitFrames\\ShadowedUnitFrames.xml:1 (null)",
-			["session"] = 8039,
 			["time"] = "2022/12/19 11:55:36",
+			["session"] = 8039,
 			["counter"] = 18,
 		}, -- [864]
 		{
@@ -7152,5 +7152,20 @@ BugGrabberDB = {
 			["session"] = 8440,
 			["counter"] = 23,
 		}, -- [921]
+		{
+			["message"] = "[string \"return function() aura_env.playerLevel = 0\"]:25: attempt to index field 'displays' (a nil value)",
+			["time"] = "2023/01/16 19:36:20",
+			["locals"] = "defaultDisplay = <table> {\n characters = <table> {\n }\n account = 0\n}\n(*temporary) = nil\n(*temporary) = \"Time to level\"\n(*temporary) = <table> {\n levels = <table> {\n }\n}\n(*temporary) = <table> {\n}\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'displays' (a nil value)\"\nplayerGUID = \"Player-4465-02BB4683\"\nenv = <table> {\n initAura = <function> defined return function() aura_env.playerLevel = 0:122\n region = <unnamed> {\n }\n playerLevel = 56\n cloneId = \"\"\n secondsToDHM = <function> defined return function() aura_env.playerLevel = 0:91\n config = <table> {\n }\n id = \"Time to level\"\n levelPlayed = 13.150000\n levelProgress = \"44.1\"\n levelLog = <table> {\n }\n updatePlayedXP = <function> defined return function() aura_env.playerLevel = 0:82\n}\narchiveName = \"Time to levelArchiveData\"\naccountID = \"Mxyzptlk#21477\"\n",
+			["stack"] = "[string \"return function() aura_env.playerLevel = 0\"]:25: in function <[string \"return function() aura_env.playerLevel = 0\"]:18>\n[string \"return function() aura_env.playerLevel = 0\"]:46: in function <[string \"return function() aura_env.playerLevel = 0\"]:45>\n[string \"return function() aura_env.playerLevel = 0\"]:117: in function <[string \"return function() aura_env.playerLevel = 0\"]:111>\n[string \"return function() aura_env.playerLevel = 0\"]:129: in function <[string \"return function() aura_env.playerLevel = 0\"]:125>\n[string \"@Interface\\AddOns\\WeakAuras\\AuraEnvironmentWrappedSystems.lua\"]:49: in function <...e\\AddOns\\WeakAuras\\AuraEnvironmentWrappedSystems.lua:45>\n[string \"@Interface\\SharedXML\\C_TimerAugment.lua\"]:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
+			["session"] = 8450,
+			["counter"] = 1,
+		}, -- [922]
+		{
+			["message"] = "Lua error in aura 'Time to level': Trigger 2\nWeakAuras Version: 5.3.4\nAura Version: 1.0.2\n[string \"return function() aura_env.playerLevel = 0\"]:25: attempt to index field 'displays' (a nil value)",
+			["time"] = "2023/01/16 19:39:07",
+			["stack"] = "[string \"return function() aura_env.playerLevel = 0\"]:25: in function <[string \"return function() aura_env.playerLevel = 0\"]:18>\n[string \"return function() aura_env.playerLevel = 0\"]:46: in function <[string \"return function() aura_env.playerLevel = 0\"]:45>\n[string \"return function() aura_env.playerLevel = 0\"]:117: in function <[string \"return function() aura_env.playerLevel = 0\"]:111>\n[string \"return function() aura_env.playerLevel = 0\"]:134: in function `initAura'\n[string \"return function (event, timePlayed, levelPlayed)\"]:3: in function <[string \"return function (event, timePlayed, levelPl...\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:617: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:543>\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:758: in function `ScanEventsInternal'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:719: in function `ScanEvents'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:892: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:877>",
+			["session"] = 8450,
+			["counter"] = 1,
+		}, -- [923]
 	},
 }

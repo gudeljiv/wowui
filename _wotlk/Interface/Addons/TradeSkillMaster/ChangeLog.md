@@ -1,5 +1,6 @@
-## v4.12.22 Changes
+## v4.12.23 Changes
 
-* [All] Fixed error when opening profession with something in the queue
+* [Retail] Fixed error when opening profession
+* [Retail] Fixed error after crafting some items
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)
