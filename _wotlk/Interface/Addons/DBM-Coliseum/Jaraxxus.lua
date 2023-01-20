@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Jaraxxus", "DBM-Coliseum")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20230117072031")
+mod:SetRevision("20230118214338")
 mod:SetCreatureID(34780)
 mod:SetEncounterID(1087)
 mod:SetModelID(29615)

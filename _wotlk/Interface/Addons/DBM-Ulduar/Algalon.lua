@@ -5,7 +5,7 @@ if not mod:IsClassic() then--on classic, it's normal10,normal25, defined in toc,
 	mod.statTypes = "normal"
 end
 
-mod:SetRevision("20230117072031")
+mod:SetRevision("20230118214338")
 mod:SetCreatureID(32871)
 mod:SetEncounterID(1130)
 mod:DisableEEKillDetection()--EE always fires wipe

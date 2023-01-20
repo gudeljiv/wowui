@@ -104,7 +104,7 @@ FarmHud: enabled
 FarmHud_QuestArrow: enabled
 TrackingSwitcher: enabled
 TrinketMenu: enabled
-AuctionFaster: enabled
+AuctionFaster: disabled
 aux-addon: disabled
 TrackEverything: enabled
 Kui_Media: disabled
@@ -113,7 +113,7 @@ Kui_Nameplates_Core_Config: disabled
 Kui_Nameplates_Core: disabled
 Plater: enabled
 NovaInstanceTracker: enabled
-PallyPower: disabled
+PallyPower: enabled
 TidyPlates_ThreatPlates: disabled
 BuyEmAllClassic: enabled
 PitBull4: enabled
@@ -177,7 +177,7 @@ NovaWorldBuffs: disabled
 Masque: enabled
 AceBIS: disabled
 Bistooltip: disabled
-AskMrRobotClassic: enabled
+AskMrRobotClassic: disabled
 ClickLinks: enabled
 Details_Compare2: enabled
 Details_EncounterDetails: enabled
@@ -196,7 +196,7 @@ RatingBuster: enabled
 SpellActivationOverlay: enabled
 StatLogic: enabled
 unitscan: enabled
-WowSimsExporter: enabled
+WowSimsExporter: disabled
 AddOnSkins: enabled
 DBM-BlackTemple: enabled
 DBM-ChamberOfAspects: enabled
@@ -220,3 +220,4 @@ DBM-ZulAman: enabled
 ShadowedUF_Options: enabled
 ShadowedUnitFrames: enabled
 ShadowedUF_SmoothBars: enabled
+GDKPd: disabled

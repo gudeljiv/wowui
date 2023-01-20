@@ -26,8 +26,8 @@ local function TrackingIcon()
 	-- local texture = GetTrackingTexture()
 	local texture
 
-	for i = 1, GetNumTrackingTypes() do
-		local n, t, a = GetTrackingInfo(i)
+	for i = 1, C_Minimap.GetNumTrackingTypes() do
+		local n, t, a = C_Minimap.GetTrackingInfo(i)
 		if a and (t == 136025 or t == 133939 or t == 135942 or t == 136142 or t == 132328 or t == 132320 or t == 136217 or t == 135861 or t == 134153 or t == 132275 or t == 135974) then
 			texture = t
 		end
@@ -119,7 +119,7 @@ local function TrackingIcon()
 			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\ability_racial_avatar')
 		end
 
-		if not texture then
+		if not texture or xVermin.Class ~= 'HUNTER' then
 			titm:Hide()
 		else
 			titm:SetWidth(titm.text:GetStringWidth())

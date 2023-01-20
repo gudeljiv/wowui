@@ -684,6 +684,10 @@ NIT.optionDefaults = {
 	},
 };
 
+if (NIT.isRetail) then
+	NIT.optionDefaults.global.instanceWindowWidth = 650;
+end
+
 --5 per hour and 30 per day lockouts are character specific.
 function NIT:buildDatabase()
 	--Create realm tables if they don't exist.

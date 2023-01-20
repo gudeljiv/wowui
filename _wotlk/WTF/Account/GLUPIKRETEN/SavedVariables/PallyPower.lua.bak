@@ -57,26 +57,43 @@ PallyPower_Assignments = {
 		2, -- [10]
 		2, -- [11]
 	},
+	["Cigarette"] = {
+		3, -- [1]
+		3, -- [2]
+		1, -- [3]
+		1, -- [4]
+		3, -- [5]
+		3, -- [6]
+		1, -- [7]
+		1, -- [8]
+		3, -- [9]
+		3, -- [10]
+	},
 }
 PallyPower_NormalAssignments = {
+	["Cigarette"] = {
+	},
 }
 PallyPower_AuraAssignments = {
-	["Ondisch"] = 3,
 	["Eternalpala"] = 1,
-	["Rvbbitt"] = 1,
-	["Tökfilkó"] = 0,
-	["Dariya"] = 2,
-	["Vermina"] = 2,
-	["Monikå"] = 1,
+	["Alliyah"] = 6,
 	["Althan"] = 2,
-	["Berri"] = 3,
-	["Lonnath"] = 0,
-	["Aarvin"] = 1,
-	["Monikà"] = 1,
+	["Monikå"] = 1,
 	["Zoqur"] = 4,
-	["Paradoxpala"] = 0,
 	["Skodicek"] = 1,
 	["Xjereziah"] = 2,
+	["Dariya"] = 2,
+	["Cigarette"] = 1,
+	["Peakgg"] = 1,
+	["Ondisch"] = 3,
+	["Rvbbitt"] = 1,
+	["Paradoxpala"] = 0,
+	["Aarvin"] = 1,
+	["Monikà"] = 1,
+	["Berri"] = 3,
+	["Vermina"] = 2,
+	["Tökfilkó"] = 0,
+	["Lonnath"] = 0,
 }
 PallyPower_SavedPresets = {
 	["PallyPower_Assignments"] = {

@@ -605,6 +605,30 @@ AdiBagsDB = {
 			["virtualStacks"] = {
 				["incomplete"] = true,
 			},
+			["scale"] = 1.1,
+			["maxHeight"] = 0.3,
+			["dimJunk"] = false,
+			["positions"] = {
+				["anchor"] = {
+					["xOffset"] = -177.833374023438,
+					["yOffset"] = 386.666717529297,
+				},
+				["Backpack"] = {
+					["xOffset"] = -394.4633956468751,
+					["point"] = "TOPRIGHT",
+					["yOffset"] = -431.9436380844782,
+				},
+				["Bank"] = {
+					["xOffset"] = 617.4457775429328,
+					["yOffset"] = -100.172042758757,
+				},
+			},
+			["filters"] = {
+				["NewItem"] = false,
+			},
+			["questIndicator"] = false,
+			["rightClickConfig"] = false,
+			["sortingOrder"] = "byQualityAndLevel",
 			["columnWidth"] = {
 				["Bank"] = 8,
 				["Backpack"] = 6,
@@ -613,47 +637,125 @@ AdiBagsDB = {
 				["ItemLevel"] = false,
 				["MoneyFrame"] = false,
 			},
-			["skin"] = {
-				["BankColor"] = {
-					nil, -- [1]
-					nil, -- [2]
-					0, -- [3]
-					0.8, -- [4]
+			["qualityOpacity"] = 0.05,
+			["theme"] = {
+				["reagentBank"] = {
+					["sectionFont"] = {
+						["name"] = "Arial Narrow",
+						["size"] = 8,
+					},
+					["bagFont"] = {
+						["name"] = "Arial Narrow",
+					},
+					["border"] = "None",
+					["insets"] = 2,
 				},
-				["border"] = "None",
-				["insets"] = 2,
-			},
-			["bagFont"] = {
-				["name"] = "Arial Narrow",
-			},
-			["positions"] = {
-				["anchor"] = {
-					["xOffset"] = -177.833374023438,
-					["yOffset"] = 386.666717529297,
+				["currentTheme"] = "legacy theme",
+				["themes"] = {
+					["legacy theme"] = {
+						["reagentBank"] = {
+							["sectionFont"] = {
+								["name"] = "Arial Narrow",
+								["r"] = 1,
+								["b"] = 0,
+								["g"] = 0.8196079134941101,
+								["size"] = 8,
+							},
+							["color"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								1, -- [4]
+							},
+							["bagFont"] = {
+								["name"] = "Arial Narrow",
+								["r"] = 1,
+								["b"] = 1,
+								["g"] = 1,
+								["size"] = 16,
+							},
+							["border"] = "None",
+							["insets"] = 2,
+						},
+						["bank"] = {
+							["sectionFont"] = {
+								["name"] = "Arial Narrow",
+								["r"] = 1,
+								["b"] = 0,
+								["g"] = 0.8196079134941101,
+								["size"] = 8,
+							},
+							["color"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0.8, -- [4]
+							},
+							["bagFont"] = {
+								["name"] = "Arial Narrow",
+								["r"] = 1,
+								["b"] = 1,
+								["g"] = 1,
+								["size"] = 16,
+							},
+							["border"] = "None",
+							["insets"] = 2,
+						},
+						["backpack"] = {
+							["sectionFont"] = {
+								["name"] = "Arial Narrow",
+								["r"] = 1,
+								["b"] = 0,
+								["g"] = 0.8196079134941101,
+								["size"] = 8,
+							},
+							["color"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								1, -- [4]
+							},
+							["bagFont"] = {
+								["name"] = "Arial Narrow",
+								["r"] = 1,
+								["b"] = 1,
+								["g"] = 1,
+								["size"] = 16,
+							},
+							["border"] = "None",
+							["insets"] = 2,
+						},
+					},
 				},
-				["Backpack"] = {
-					["xOffset"] = -43.35190122033237,
-					["point"] = "TOPRIGHT",
-					["yOffset"] = -487.8167105845569,
+				["bank"] = {
+					["sectionFont"] = {
+						["name"] = "Arial Narrow",
+						["size"] = 8,
+					},
+					["color"] = {
+						nil, -- [1]
+						nil, -- [2]
+						nil, -- [3]
+						0.8, -- [4]
+					},
+					["bagFont"] = {
+						["name"] = "Arial Narrow",
+					},
+					["border"] = "None",
+					["insets"] = 2,
 				},
-				["Bank"] = {
-					["xOffset"] = 418.7156401789325,
-					["yOffset"] = -432.2354898974445,
+				["backpack"] = {
+					["sectionFont"] = {
+						["name"] = "Arial Narrow",
+						["size"] = 8,
+					},
+					["bagFont"] = {
+						["name"] = "Arial Narrow",
+					},
+					["border"] = "None",
+					["insets"] = 2,
 				},
 			},
-			["filters"] = {
-				["NewItem"] = false,
-			},
-			["sectionFont"] = {
-				["name"] = "Arial Narrow",
-				["size"] = 8,
-			},
-			["scale"] = 1.1,
-			["hideAnchor"] = true,
-			["sortingOrder"] = "byQualityAndLevel",
-			["rightClickConfig"] = false,
-			["positionMode"] = "manual",
-			["maxHeight"] = 0.3,
 		},
 	},
 }

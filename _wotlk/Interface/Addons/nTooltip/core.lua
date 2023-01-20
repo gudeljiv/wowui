@@ -37,9 +37,9 @@ if cfg.fontOutline then
 	GameTooltipTextSmall:SetFont(STANDARD_TEXT_FONT, (cfg.fontSize), 'OUTLINE')
 	GameTooltipTextSmall:SetShadowOffset(0, 0)
 else
-	GameTooltipHeaderText:SetFont(STANDARD_TEXT_FONT, (cfg.fontSize + 2))
-	GameTooltipText:SetFont(STANDARD_TEXT_FONT, (cfg.fontSize))
-	GameTooltipTextSmall:SetFont(STANDARD_TEXT_FONT, (cfg.fontSize))
+	GameTooltipHeaderText:SetFont(STANDARD_TEXT_FONT, (cfg.fontSize + 2), '')
+	GameTooltipText:SetFont(STANDARD_TEXT_FONT, (cfg.fontSize), '')
+	GameTooltipTextSmall:SetFont(STANDARD_TEXT_FONT, (cfg.fontSize), '')
 end
 
 GameTooltipStatusBar:SetHeight(7)
@@ -462,7 +462,7 @@ local function CreateAnchor()
 
 	anchorFrame.text = anchorFrame:CreateFontString(nil, 'OVERLAY')
 	anchorFrame.text:SetAllPoints(anchorFrame)
-	anchorFrame.text:SetFont(STANDARD_TEXT_FONT, 12)
+	anchorFrame.text:SetFont(STANDARD_TEXT_FONT, 12, 'NONE')
 	anchorFrame.text:SetText('nTooltip')
 
 	anchorFrame:SetScript(

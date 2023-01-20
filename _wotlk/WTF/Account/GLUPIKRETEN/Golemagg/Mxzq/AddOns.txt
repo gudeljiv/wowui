@@ -108,7 +108,7 @@ TrackingSwitcher: enabled
 TrinketMenu: disabled
 Blizzard_CompactRaidFrames: disabled
 Blizzard_CUFProfiles: disabled
-AuctionFaster: enabled
+AuctionFaster: disabled
 aux-addon: disabled
 D4KiR Missing Power: disabled
 TrackEverything: disabled
@@ -201,3 +201,6 @@ AceBIS: disabled
 Bistooltip: disabled
 ShadowedUF_Options: enabled
 ShadowedUnitFrames: enabled
+AskMrRobotClassic: disabled
+WowSimsExporter: disabled
+GDKPd: disabled

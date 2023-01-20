@@ -374,3 +374,7 @@ L["resetAllInstancesDesc"] = "This will reset all instance data and remove every
 
 L["autoCavernsArthasTitle"] = "Auto CoS Arthas";
 L["autoCavernsArthasDesc"] = "Auto dialogue owith arthas in the Culling of Strathholme in Wrath.";
+
+L["Mythic Plus"] = "Mythic Plus";
+
+L["noCurrentRaidLockouts"] = "No current raid lockouts.";

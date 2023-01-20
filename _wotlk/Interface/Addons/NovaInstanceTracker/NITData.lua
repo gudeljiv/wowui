@@ -198,16 +198,22 @@ f:RegisterEvent("CHAT_MSG_SKILL");
 f:RegisterEvent("UNIT_RANGEDDAMAGE");
 f:RegisterEvent("LOCALPLAYER_PET_RENAMED");
 f:RegisterEvent("UNIT_PET");
-f:RegisterEvent("UNIT_PET_TRAINING_POINTS");
+if (NIT.expansionNum < 4) then
+	f:RegisterEvent("UNIT_PET_TRAINING_POINTS");
+	f:RegisterEvent("TRADE_SKILL_UPDATE");
+end
 f:RegisterEvent("GROUP_JOINED");
 f:RegisterEvent("GROUP_FORMED");
 f:RegisterEvent("PLAYER_CAMPING");
-f:RegisterEvent("TRADE_SKILL_UPDATE");
 f:RegisterEvent("TRADE_SKILL_SHOW");
 f:RegisterEvent("TRADE_SKILL_CLOSE");
 f:RegisterEvent("UPDATE_BATTLEFIELD_SCORE");
 f:RegisterEvent("ENCOUNTER_END");
 f:RegisterEvent("CURRENCY_DISPLAY_UPDATE");
+if (NIT.isRetail) then
+	f:RegisterEvent("CHALLENGE_MODE_START");
+	f:RegisterEvent("CHALLENGE_MODE_COMPLETED");
+end
 f:SetScript('OnEvent', function(self, event, ...)
 	if (event == "PLAYER_LEAVING_WORLD" ) then
 		doGUID = nil;
@@ -359,6 +365,36 @@ f:SetScript('OnEvent', function(self, event, ...)
 		C_Timer.After(1, function()
 			NIT:recordCurrency();
 		end)
+	elseif (event == "CHALLENGE_MODE_START") then
+		if (NIT.inInstance and NIT.data.instances[1]) then
+			local activeKeystoneLevel, activeAffixIDs, wasActiveKeystoneCharged = C_ChallengeMode.GetActiveKeystoneInfo();
+			NIT.data.instances[1].mythicPlus = {
+				level = activeKeystoneLevel;
+				affixes = activeAffixIDs,
+			};
+			--record +key times for the dung
+		end
+	elseif (event == "CHALLENGE_MODE_COMPLETED") then
+		if (NIT.inInstance and NIT.data.instances[1]) then
+			if (not NIT.data.instances[1].mythicPlus) then
+				NIT.data.instances[1].mythicPlus = {};
+			end
+			local mapChallengeModeID, level, time, onTime, keystoneUpgradeLevels, practiceRun, oldOverallDungeonScore, newOverallDungeonScore,
+					IsMapRecord, IsAffixRecord, PrimaryAffix, isEligibleForScore, members = C_ChallengeMode.GetCompletionInfo();
+			local data = NIT.data.instances[1].mythicPlus;
+			data.map = mapChallengeModeID;
+			data.time = time;
+			data.timed = onTime;
+			data.upgrade = keystoneUpgradeLevels;
+			data.oldScore = oldOverallDungeonScore;
+			data.newScore = newOverallDungeonScore;
+			data.completed = true;
+			data.newRecord = IsAffixRecord == true or nil;
+			local deaths, timeLost = C_ChallengeMode.GetDeathCount();
+			data.deaths = deaths;
+			data.timeLost = timeLost;
+			--data.totalScore = C_ChallengeMode.GetOverallDungeonScore(); --Total score same as new score.
+		end
 	end
 end)
 
@@ -712,7 +748,9 @@ function NIT:recordBgStats()
 	--instance.pvpStats = stats;
 	NIT:recordGroupInfo();
 end
-hooksecurefunc("WorldStateScoreFrame_OnShow", function(...) NIT:recordBgStats() end);
+if (NIT.expansionNum < 4) then
+	hooksecurefunc("WorldStateScoreFrame_OnShow", function(...) NIT:recordBgStats() end);
+end
 
 --Seems to be some issue with it not recording as an arena if we check before the zone data is upedated properly in blizz's end?
 local function doubleCheckArena()
@@ -1419,7 +1457,7 @@ function NIT:getInstanceLockoutInfoString(char)
 	--local timeLeft = 3600 - (GetServerTime() - hourTimestamp);
 	--local timeLeftMax = math.max(timeLeft24, timeLeft);
 	--if (GetServerTime() - hourTimestamp24 < 86400 and hourCount24 >= NIT.dailyLimit and timeLeft24 == timeLeftMax) then
-	if (GetServerTime() - hourTimestamp24 < 86400 and hourCount24 >= NIT.dailyLimit) then
+	if (GetServerTime() - hourTimestamp24 < 86400 and hourCount24 >= NIT.dailyLimit and not NIT.noDailyLockout) then
 		lockoutInfo = L["in"] .. " " .. NIT:getTimeString(86400 - (GetServerTime() - hourTimestamp24), true) .. " (" .. L["active24"] .. ")";
 	elseif (GetServerTime() - hourTimestamp < 3600 and hourCount >= NIT.hourlyLimit) then
 		lockoutInfo = L["in"] .. " " .. NIT:getTimeString(3600 - (GetServerTime() - hourTimestamp), true);
@@ -1528,7 +1566,17 @@ function NIT:recordCharacterData()
 	local prof1, prof2, fishing, cooking, firstaid = "none", "none", "none", "none", "none";
 	local profSkill1, profSkill2, fishingSkill, cookingSkill, firstaidSkill = 0, 0, 0, 0, 0;
 	local profSkillMax1, profSkillMax2, fishingSkillMax, cookingSkillMax, firstaidSkillMax = 0, 0, 0, 0, 0;
-	if (NIT.classic) then
+	if (NIT.isRetail) then
+		local prof1, prof2, archaeology, fishing, cooking = GetProfessions();
+		if (prof1) then
+			local prof1Name = GetProfessionInfo(prof1);
+			NIT.data.myChars[char].prof1 = prof1Name;
+		end
+		if (prof2) then
+			local prof2Name = GetProfessionInfo(prof2);
+			NIT.data.myChars[char].prof2 = prof2Name;
+		end
+	elseif (NIT.classic) then
 		--Skill list is always in same order, so we can get primary/secondary/weapon by checking the section headers.
 		local section, primaryCount, secondaryCount, weaponCount = 0, 0, 0, 0;
 		for i = 1, GetNumSkillLines() do
@@ -1659,6 +1707,9 @@ function NIT:recordCharacterData()
 end
 
 function NIT:recordAttunementKeys()
+	if (NIT.expansionNum > 3) then
+		return;
+	end
 	local char = UnitName("player");
 	if (not NIT.data.myChars[char]) then
 		NIT.data.myChars[char] = {};
@@ -1704,6 +1755,9 @@ function NIT:recordAttunementKeys()
 end
 
 function NIT:recordPvpData()
+	if (NIT.isRetail) then
+		return;
+	end
 	local char = UnitName("player");
 	if (not NIT.data.myChars[char]) then
 		NIT.data.myChars[char] = {};
@@ -2037,7 +2091,7 @@ local currencyItems = {
 	[134138] = "Dalaran Jewelcrafter's Token",
 };
 function NIT:recordCurrency()
-	if (NIT.isClassic or NIT.isTBC) then
+	if (NIT.isClassic or NIT.isTBC or NIT.isRetail) then
 		return;
 	end
 	local char = UnitName("player");
@@ -2227,6 +2281,9 @@ local itemCooldowns = {
 }
 
 function NIT:recordCooldowns()
+	if (NIT.isRetail) then
+		return;
+	end
 	local char = UnitName("player");
 	if (not NIT.data.myChars[char]) then
 		NIT.data.myChars[char] = {};
@@ -2333,6 +2390,9 @@ function NIT:fixCooldowns()
 end
 
 function NIT:recordHunterData()
+	if (NIT.expansionNum > 3) then
+		return;
+	end
 	local _, class = UnitClass("player");
 	if (class ~= "HUNTER") then
 		return;

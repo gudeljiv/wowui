@@ -74,8 +74,8 @@ function NugKeyFeedback:CreateFeedbackButton(autoKeyup)
 		pushedCircle.grow = gag
 
 		local ga1 = gag:CreateAnimation('Scale')
-		ga1:SetFromScale(0.1, 0.1)
-		ga1:SetToScale(1.3, 1.3)
+		ga1:SetScaleFrom(0.1, 0.1)
+		ga1:SetScaleTo(1.3, 1.3)
 		ga1:SetDuration(0.3)
 		ga1:SetOrder(2)
 

@@ -18,7 +18,7 @@ END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:35953
-/castsequence [combat] reset=combat item:13446
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:0
@@ -27,7 +27,7 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:13446
+/use item:0
 END
 VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 #showtooltip Prowl
@@ -43,8 +43,9 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
-/run PallyPowerFrame:ClearAllPoints()
-/run PallyPowerFrame:SetPoint('TOPLEFT', Questie_BaseFrame, 'TOPLEFT', -105, -100)
+/run print(C_BattleNet.GetFriendAccountInfo(1).gameAccountInfo.gameAccountID)
+/run print(C_BattleNet.GetFriendAccountInfo(1).gameAccountID)
+/run print(C_BattleNet.GetFriendGameAccountInfo(2, 1).className)
 END
 VER 3 000000000000001B "TSMMacro" "INV_Misc_Flower_01"
 /click TSMShoppingBuyoutBtn

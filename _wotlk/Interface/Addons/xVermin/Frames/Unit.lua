@@ -69,7 +69,7 @@ fbs.text:SetPoint('LEFT', CustomContainer_Combat, 'LEFT', 5, -1)
 
 local function CalculateFreeBagSpace()
 	for bag = 0, 4 do
-		numberOfFreeSlots, BagType = GetContainerNumFreeSlots(bag)
+		numberOfFreeSlots, BagType = C_Container.GetContainerNumFreeSlots(bag)
 		if (BagType == 0) then
 			fs = fs + numberOfFreeSlots
 		end

@@ -4,7 +4,7 @@ ItemRackUser = {
 	["QueuesEnabled"] = {
 		[13] = false,
 	},
-	["Locked"] = "ON",
+	["Locked"] = "OFF",
 	["MainScale"] = 1.002605676651001,
 	["SetMenuWrapValue"] = 3,
 	["Buttons"] = {

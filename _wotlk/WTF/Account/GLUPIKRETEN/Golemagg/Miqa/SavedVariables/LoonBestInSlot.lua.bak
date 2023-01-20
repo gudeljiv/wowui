@@ -42,14 +42,15 @@ LBISSettings = {
 	},
 	["PhaseTooltip"] = {
 		["Phase 1"] = true,
+		["Phase 2"] = true,
 		["PreRaid"] = true,
 	},
 	["ShowPriority"] = true,
 	["SelectedRank"] = "All",
+	["SelectedSlot"] = "All",
+	["SelectedSourceType"] = "All",
 	["PriorityList"] = {
 	},
-	["SelectedSourceType"] = "All",
 	["ShowCustom"] = false,
-	["SelectedSlot"] = "All",
 	["SelectedPhase"] = "All",
 }

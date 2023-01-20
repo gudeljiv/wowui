@@ -17,14 +17,14 @@
 # You should have received a copy of the GNU General Public License
 # along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 
-## Interface: 100000
+## Interface: 100002
 
 ## Title: AdiBags
 ## Notes: Adirelle's bag addon.
 ## Author: Adirelle
-## Version: v1.9.46
+## Version: v1.10.6
 ## SavedVariables: AdiBagsDB
-## X-Date: 2022-10-29T17:40:30Z
+## X-Date: 2023-01-18T0:55:45Z
 ## X-License: GPL v3
 ## OptionalDeps: LibStub, CallbackHandler-1.0, Ace3, LibSharedMedia-3.0, Scrap, BrainDead, SyLevel
 #@alpha@
@@ -45,9 +45,10 @@ libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
 
 Localization.lua
 core\EventHandlers.lua
+core\Fonts.lua
 core\Constants.lua
 core\Utility.lua
-core\Fonts.lua
+core\Theme.lua
 core\Core.lua
 core\Hooks.lua
 core\Bags.lua
@@ -77,7 +78,9 @@ modules\TooltipInfo.lua
 modules\SectionVisibilityDropdown.lua
 modules\BankSwitcher.lua
 modules\ChangeHighlight.lua
+modules\Masque.lua
 
+core\ItemDatabase.lua
 core\DefaultFilters.lua
 
 #@debug@

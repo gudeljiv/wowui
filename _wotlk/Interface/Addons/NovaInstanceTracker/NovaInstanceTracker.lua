@@ -38,7 +38,9 @@ local L = LibStub("AceLocale-3.0"):GetLocale("NovaInstanceTracker");
 local LDB = LibStub:GetLibrary("LibDataBroker-1.1");
 NIT.LDBIcon = LibStub("LibDBIcon-1.0");
 local version = GetAddOnMetadata("NovaInstanceTracker", "Version") or 9999;
-NIT.classic = true;
+if (NIT.expansionNum < 4) then
+	NIT.classic = true;
+end
 NIT.latestRemoteVersion = version;
 if (NIT.isWrath) then
 	NIT.hourlyLimit = 5;
@@ -53,19 +55,23 @@ elseif (NIT.isTBC) then
 	NIT.dailyLimit = 999;
 	NIT.maxLevel = 70;
 elseif (NIT.isRetail) then
+	--Retail is 10 per hour and account wide not per character.
 	NIT.hourlyLimit = 10;
 	NIT.dailyLimit = 999;
-	NIT.maxLevel = 60;
+	NIT.maxLevel = 70;
+	NIT.noDailyLockout = true;
 else
 	NIT.noRaidLockouts = true;
 	NIT.hourlyLimit = 5;
 	NIT.dailyLimit = 30;
-	NIT.maxLevel = 60;
+	NIT.maxLevel = 70;
 	NIT.noRaidLockout = nil;
 end
 NIT.prefixColor = "|cFFFF6900";
 NIT.perCharOnly = false; --Per char is gone in TBC, not sure how I didn't notice this earlier tbh, blizz never announced it.
 NIT.loadTime = GetServerTime();
+local GetGossipOptions = GetGossipOptions or C_GossipInfo.GetOptions;
+local floor = floor;
 
 function NIT:OnInitialize()
     self.db = LibStub("AceDB-3.0"):New("NITdatabase", NIT.optionDefaults, "Default");
@@ -408,6 +414,21 @@ function NIT:getRegionTimeFormat()
 	return dateFormat;
 end
 
+function NIT:getSimpleTimeString(timestamp)
+	local minutes = string.format("%02.f", floor(timestamp / 60));
+	local seconds = string.format("%02.f", floor(timestamp - minutes * 60));
+	return minutes .. ":" .. seconds;
+end
+
+function NIT:getPreciseTimeString(timestamp)
+	local seconds = floor(timestamp / 1000);
+	local minutes = string.format("%02.f", floor(seconds / 60));
+	local hours = string.format("%02.f", floor(seconds / 3600));
+	local milliseconds = string.format("%02.f", timestamp - seconds * 1000);
+	seconds = string.format("%02.f", seconds - hours * 3600 - minutes * 60);
+	return minutes .. ":" .. seconds .. "." .. milliseconds;
+end
+
 --Iterate table keys in alphabetical order.
 function NIT:pairsByKeys(t, f)
 	local a = {};
@@ -443,7 +464,7 @@ function NIT:commaValue(amount)
 end
 
 --The built in coin strings didn't do exactly what I needed.
-function NIT:convertMoney(money, short, separator, colorized, amountColor)
+function NIT:convertMoney(money, short, separator, colorized, amountColor, comma, useTextures)
 	if (not separator) then
 		separator = "";
 	end
@@ -453,13 +474,20 @@ function NIT:convertMoney(money, short, separator, colorized, amountColor)
 	local gold = math.floor(money / 100 / 100);
 	local silver = math.floor((money / 100) % 100);
 	local copper = math.floor(money % 100);
-	local goldText = amountColor .. "%d|cffFFDF00" .. L["gold"] .. "|r"; 
-	local silverText = amountColor .. "%d|cFFF0F0F0" .. L["silver"] .. "|r"; 
-	local copperText = amountColor .. "%d|cFFD69151" .. L["copper"] .. "|r";
-	if (short) then
-		goldText = amountColor .. "%d|cffFFDF00g|r"; 
-		silverText = amountColor .. "%d|cFFF0F0F0s|r"; 
-		copperText = amountColor .. "%d|cFFD69151c|r";
+	local goldText, silverText, copperText;
+	if (useTextures) then
+		goldText = amountColor .. "%s|TInterface\\MoneyFrame\\UI-GoldIcon:10:10:2:0|t "; 
+		silverText = amountColor .. "%s|TInterface\\MoneyFrame\\UI-SilverIcon:10:10:2:0|t "; 
+		copperText = amountColor .. "%s|TInterface\\MoneyFrame\\UI-CopperIcon:10:10:2:0|t ";
+	else
+		goldText = amountColor .. "%s|cffFFDF00" .. L["gold"] .. "|r"; 
+		silverText = amountColor .. "%s|cFFF0F0F0" .. L["silver"] .. "|r"; 
+		copperText = amountColor .. "%s|cFFD69151" .. L["copper"] .. "|r";
+		if (short) then
+			goldText = amountColor .. "%s|cffFFDF00g|r"; 
+			silverText = amountColor .. "%s|cFFF0F0F0s|r"; 
+			copperText = amountColor .. "%s|cFFD69151c|r";
+		end
 	end
 	if (not colorized) then
 		goldText = NIT:stripColors(goldText);
@@ -471,6 +499,10 @@ function NIT:convertMoney(money, short, separator, colorized, amountColor)
 	local text = "";
 	local currencies = {};
 	if (gold > 0) then
+		local moneyString = string.format(goldText, gold);
+		if (comma) then
+			gold = NIT:commaValue(gold);
+		end
 		local moneyString = string.format(goldText, gold);
 		table.insert(currencies, moneyString);
 	end
@@ -491,8 +523,11 @@ function NIT:convertMoney(money, short, separator, colorized, amountColor)
 			text = text .. separator .. v;
 		end
 	end
+	if (colorized) then
+		text = text .. "|r";
+	end
 	if (count < 1) then
-		return string.format(copperText, 0);
+		return string.format(copperText .. "|r", 0);
 	else
 		return text;
 	end
@@ -503,7 +538,7 @@ function NIT:getCoinString(money, color)
 	if (NIT.db.global.moneyString == "text") then
 		return NIT:convertMoney(money, true, "", true, color);
 	else
-		return GetCoinTextureString(money);
+		return GetCoinTextureString(money, 12);
 	end
 end
 
@@ -573,9 +608,11 @@ function NIT:openConfig()
 	InterfaceOptionsFrame_OpenToCategory("NovaInstanceTracker");
 	--Hack to fix the issue of interface options not opening to menus below the current scroll range.
 	--This addon name starts with N and will always be closer to the middle so just scroll to the middle when opening.
-	local min, max = InterfaceOptionsFrameAddOnsListScrollBar:GetMinMaxValues();
-	if (min < max) then
-		InterfaceOptionsFrameAddOnsListScrollBar:SetValue(math.floor(max/2));
+	if (InterfaceOptionsFrameAddOnsListScrollBar) then
+		local min, max = InterfaceOptionsFrameAddOnsListScrollBar:GetMinMaxValues();
+		if (min < max) then
+			InterfaceOptionsFrameAddOnsListScrollBar:SetValue(math.floor(max/2));
+		end
 	end
 	InterfaceOptionsFrame_OpenToCategory("NovaInstanceTracker");
 end
@@ -872,7 +909,8 @@ function NIT:updateMinimapButton(tooltip, frame)
 			end
 			if (not data.isPvp) then
 				if (data.rawMoneyCount and data.rawMoneyCount > 0) then
-					tooltip:AddLine("|cFF9CD6DE" .. L["rawGoldMobs"] .. ":|r |cFFFFFFFF" .. GetCoinTextureString(data.rawMoneyCount));
+					--tooltip:AddLine("|cFF9CD6DE" .. L["rawGoldMobs"] .. ":|r |cFFFFFFFF" .. GetCoinTextureString(data.rawMoneyCount));
+					tooltip:AddLine("|cFF9CD6DE" .. L["rawGoldMobs"] .. ":|r |cFFFFFFFF" .. NIT:convertMoney(data.rawMoneyCount, true, "", true, nil, true, true));
 				elseif (data.enteredMoney and data.leftMoney and data.enteredMoney > 0 and data.leftMoney > 0
 						and data.leftMoney > data.enteredMoney) then
 					--Backup for people with addons installed using an altered money string.
@@ -1062,7 +1100,7 @@ function NIT:recalcLockoutsFrame()
 end
 
 local NITInstanceFrame = CreateFrame("ScrollFrame", "NITInstanceFrame", UIParent, NIT:addBackdrop("NIT_InputScrollFrameTemplate"));
-local instanceFrameWidth = 620;
+--local instanceFrameWidth = 620; --Was used before it was changed to a config option.
 NITInstanceFrame:Hide();
 NITInstanceFrame:SetToplevel(true);
 NITInstanceFrame:SetMovable(true);
@@ -1492,7 +1530,7 @@ function NIT:openInstanceLogFrame()
 			NITInstanceFrame:SetVerticalScroll(0);
 		end)
 		--So interface options and this frame will open on top of each other.
-		if (InterfaceOptionsFrame:IsShown()) then
+		if (InterfaceOptionsFrame and InterfaceOptionsFrame:IsShown()) then
 			NITInstanceFrame:SetFrameStrata("DIALOG");
 		else
 			NITInstanceFrame:SetFrameStrata("HIGH");
@@ -1528,6 +1566,9 @@ function NIT:createInstanceLineFrame(type, data, count)
 		obj.texture = bg;
 		obj.fs = obj:CreateFontString(type .. "NITInstanceLineFS", "ARTWORK");
 		obj.fs:SetPoint("LEFT", 0, 0);
+		--obj.fs:SetPoint("RIGHT", 10, 0);
+		--obj.fs:SetWordWrap(false);
+		--obj.fs:SetNonSpaceWrap(false);
 		obj.fs:SetFont(NIT.regionFont, 14);
 		--They don't quite line up properly without justify on top of set point left.
 		obj.fs:SetJustifyH("LEFT");
@@ -1656,28 +1697,29 @@ function NIT:recalcInstanceLineFrames()
 					end
 				else
 					framesUsed[count] = true;
-					_G[count .. "NITInstanceLine"]:Show();
-					_G[count .. "NITInstanceLine"]:ClearAllPoints();
-					_G[count .. "NITInstanceLine"]:SetPoint("LEFT", NITInstanceFrame.EditBox, "TOPLEFT", 3, -offset);
+					local frame = _G[count .. "NITInstanceLine"];
+					frame:Show();
+					frame:ClearAllPoints();
+					frame:SetPoint("LEFT", NITInstanceFrame.EditBox, "TOPLEFT", 3, -offset);
 					offset = offset + 14;
 					local line = NIT:buildInstanceLineFrameString(v, count);
 					if (count < 10) then
 						--Offset the text for single digit numbers so the date comlumn lines up.
-						_G[count .. "NITInstanceLine"].fs:SetPoint("LEFT", 7, 0);
+						frame.fs:SetPoint("LEFT", 7, 0);
 					else
-						_G[count .. "NITInstanceLine"].fs:SetPoint("LEFT", 0, 0);
+						frame.fs:SetPoint("LEFT", 0, 0);
 					end
-					_G[count .. "NITInstanceLine"].fs:SetText(line);
+					frame.fs:SetText(line);
 					--Leave enough room on the right of frame to not overlap the scroll bar (-20) and remove button (-20).
-					_G[count .. "NITInstanceLine"]:SetWidth(NITInstanceFrame:GetWidth() - 120);
-					_G[count .. "NITInstanceLine"]:SetHeight(_G[count .. "NITInstanceLine"].fs:GetHeight());
-					_G[count .. "NITInstanceLine"].removeButton.count = count;
-					_G[count .. "NITInstanceLine"].removeButton:SetScript("OnClick", function(self, arg)
+					frame:SetWidth(NITInstanceFrame:GetWidth() - 120);
+					frame:SetHeight(frame.fs:GetHeight());
+					frame.removeButton.count = count;
+					frame.removeButton:SetScript("OnClick", function(self, arg)
 						--Open delete confirmation box to delete table id (k), but display it as matching log number (count).
 						NIT:openDeleteConfirmFrame(k, self.count);
 					end)
 					--Keep track of the real instance ID and not just the frame count for use with tooltip data etc.
-					_G[count .. "NITInstanceLine"].id = k;
+					frame.id = k;
 				end
 			end
 		end
@@ -1706,8 +1748,31 @@ function NIT:buildInstanceLineFrameString(v, count)
 	instance = string.gsub(instance, "Auchindoun: ", "");
 	instance = string.gsub(instance, "Tempest Keep: ", "");
 	instance = string.gsub(instance, "Opening of the Dark Portal", "Black Morass");
-	if (v.difficultyID == 174) then
+	instance = string.gsub(instance, "Legacy of Tyr", "LoT");
+	if (v.mythicPlus) then
+		local mythicData = v.mythicPlus;
+		if (mythicData.level) then
+			instance = instance .. " (|cFFa335eeM+" .. mythicData.level .. "|r)";
+		else
+			instance = instance .. " (|cFFa335eeM+|r)";
+		end
+		local mythicPlusString = "";
+		if (not mythicData.completed) then
+			--Not completed.
+			mythicPlusString = " |cFFFF0000(Incomplete)|r";
+		elseif (mythicData.timed) then
+			--Success.
+			mythicPlusString = " |cFF00C800(Timed +" .. mythicData.upgrade .. ")|r";
+		else
+			--Timer ran out.
+			mythicPlusString = " |cFFFF5100(Not Timed)|r";
+		end
+		instance = instance .. mythicPlusString;
+	elseif (v.difficultyID == 174 or v.difficultyID == 2 or v.difficultyID == 5 or v.difficultyID == 6 or v.difficultyID == 11
+			 or v.difficultyID == 15 or v.difficultyID == 39 or v.difficultyID == 149) then
 		instance = instance .. " (|cFFFF2222H|r)";
+	elseif (v.difficultyID == 8 or v.difficultyID == 16 or v.difficultyID == 23 or v.difficultyID == 40) then
+		instance = instance .. " (|cFFa335eeM|r)";
 	end
 	local time = NIT:getTimeFormat(v.enteredTime, true, true);
 	local timeAgo = GetServerTime() - v.enteredTime;
@@ -1725,32 +1790,52 @@ function NIT:buildInstanceLineFrameString(v, count)
 	local lockoutTime;
 	local timeColor = "|cFFFF2222";
 	local lockoutTimeString, altString = "", "";
-	if (NIT.perCharOnly and UnitName("player") ~= v.playerName) then
-		lockoutTimeString = instance .. " (" .. L["entered"] .. " " .. NIT:getTimeString(timeAgo, true, NIT.db.global.timeStringType) .. " " .. L["ago"] .. ")";
-	else
-		lockoutTimeString = instance .. " (" .. L["entered"] .. " " .. NIT:getTimeString(timeAgo, true, NIT.db.global.timeStringType) .. " " .. L["ago"] .. ")";
-	end
-	if (timeAgo < 3600) then
-		lockoutTime = NIT:getTimeString(3600 - timeAgo, true, NIT.db.global.timeStringType)
-		if (not NIT.perCharOnly or nameMatch == v.playerName) then
-			timeColor = "|cFF00C800";
-			if (count == 1 and NIT.inInstance) then
-				lockoutTimeString = instance .. " (" .. L["stillInDungeon"] .. ")";
+		if (v.mythicPlus) then
+			lockoutTimeString = instance;
+		elseif (NIT.perCharOnly and UnitName("player") ~= v.playerName) then
+			if (NIT.isRetail) then
+				lockoutTimeString = instance .. " (" .. L["entered"] .. " " .. NIT:getTimeString(timeAgo, true, "short") .. " " .. L["ago"] .. ")";
 			else
-				lockoutTimeString = instance .. " (" .. lockoutTime .. " " .. L["leftOnLockout"] .. ")";
+				lockoutTimeString = instance .. " (" .. L["entered"] .. " " .. NIT:getTimeString(timeAgo, true, NIT.db.global.timeStringType) .. " " .. L["ago"] .. ")";
+			end
+		else
+			if (NIT.isRetail) then
+				lockoutTimeString = instance .. " (" .. L["entered"] .. " " .. NIT:getTimeString(timeAgo, true, "short") .. " " .. L["ago"] .. ")";
+			else
+				lockoutTimeString = instance .. " (" .. L["entered"] .. " " .. NIT:getTimeString(timeAgo, true, NIT.db.global.timeStringType) .. " " .. L["ago"] .. ")";
 			end
 		end
-	elseif (timeAgo < 86400) then
-		lockoutTime = NIT:getTimeString(86400 - timeAgo, true, NIT.db.global.timeStringType)
-		if (not NIT.perCharOnly or nameMatch == v.playerName) then
-			timeColor = "|cFFDEDE42";
-			if (count == 1 and NIT.inInstance) then
-				lockoutTimeString = instance .. " (" .. L["stillInDungeon"] .. ")";
+		if (timeAgo < 3600) then
+			if (NIT.isRetail) then
+				lockoutTime = NIT:getTimeString(3600 - timeAgo, true, "short");
 			else
-				lockoutTimeString = instance .. " (" .. lockoutTime .. " " .. L["leftOnDailyLockout"] .. ")";
+				lockoutTime = NIT:getTimeString(3600 - timeAgo, true, NIT.db.global.timeStringType);
+			end
+			if (not NIT.perCharOnly or nameMatch == v.playerName) then
+				timeColor = "|cFF00C800";
+				if (count == 1 and NIT.inInstance) then
+					lockoutTimeString = instance .. " (" .. L["stillInDungeon"] .. ")";
+				elseif (not v.mythicPlus) then
+					lockoutTimeString = instance .. " (" .. lockoutTime .. " " .. L["leftOnLockout"] .. ")";
+				end
+			end
+		elseif (timeAgo < 86400) then
+			if (NIT.isRetail) then
+				lockoutTime = NIT:getTimeString(86400 - timeAgo, true, "short");
+			else
+				lockoutTime = NIT:getTimeString(86400 - timeAgo, true, NIT.db.global.timeStringType);
+			end
+			if (not NIT.perCharOnly or nameMatch == v.playerName) then
+				timeColor = "|cFFDEDE42";
+				if (count == 1 and NIT.inInstance) then
+					lockoutTimeString = instance .. " (" .. L["stillInDungeon"] .. ")";
+				elseif (not v.mythicPlus) then
+					if (not NIT.noDailyLockout) then
+						lockoutTimeString = instance .. " (" .. lockoutTime .. " " .. L["leftOnDailyLockout"] .. ")";
+					end
+				end
 			end
 		end
-	end
 	if (v.type == "arena") then
 		timeColor = "|cFFFFA500";
 		local ratingChange = NIT:getRatingChange(v);
@@ -1790,7 +1875,7 @@ function NIT:buildInstanceLineFrameString(v, count)
 		elseif (v.faction and v.winningFaction) then
 			lockoutTimeString = lockoutTimeString .. " |cFFFF2222" .. L["Lost"] .. "|r";
 		end
-	elseif (NIT.noRaidLockouts and v.instanceID and NIT.zones[v.instanceID] and NIT.zones[v.instanceID].noLockout) then
+	elseif (not NIT.isRetail and (NIT.noRaidLockouts and v.instanceID and NIT.zones[v.instanceID] and NIT.zones[v.instanceID].noLockout)) then
 		--timeColor = "|cFFFF7F50";
 		timeColor = "|cFFFFA500";
 		lockoutTimeString = instance .. " (" .. L["noLockout"] .. ")";
@@ -1876,7 +1961,9 @@ function NIT:recalcInstanceLineFramesTooltip(obj)
 			timeLastInside = GetServerTime() - data.leftTime;
 		end
 		local timeLeft = L["unknown"];
-		if (data.leftTime and data.leftTime > 0) then
+		if (obj.id == 1 and NIT.inInstance) then
+			timeLeft = "(" .. L["stillInDungeon"] .. ")";
+		elseif (data.leftTime and data.leftTime > 0) then
 			 timeLeft = NIT:getTimeFormat(data.leftTime, true, true);
 		end
 		local timeColor = "|cFFFF2222";
@@ -1894,8 +1981,28 @@ function NIT:recalcInstanceLineFramesTooltip(obj)
 			classColorHex = "ffffffff";
 		end
 		local heroicString = "";
-		if (data.difficultyID == 174) then
+		if (data.mythicPlus) then
+			if (data.mythicPlus.level) then
+				heroicString = " (|cFFa335eeM+" .. data.mythicPlus.level .. "|r)";
+			else
+				heroicString = " (|cFFa335eeM+|r)";
+			end
+			local mythicPlusString = "";
+			if (data.mythicPlusUpgrade and data.mythicPlusUpgrade > 0) then
+				--Success.
+				mythicPlusString = " |cFF00C800Upgraded +" .. data.mythicPlusUpgrade .. "|r";
+			elseif (data.mythicPlusUpgrade and data.mythicPlusUpgrade < 1) then
+				--Timer ran out.
+				mythicPlusString = " |cFFFF5100Missed Timer" .. "|r";
+			elseif (not data.mythicPlusCompleted) then
+				--Not completed.
+				mythicPlusString = " |cFFFF0000Incomplete" .. "|r";
+			end
+		elseif (data.difficultyID == 174 or data.difficultyID == 2 or data.difficultyID == 5 or data.difficultyID == 6 or data.difficultyID == 11
+				 or data.difficultyID == 15 or data.difficultyID == 39 or data.difficultyID == 149) then
 			heroicString = " (|cFFFF2222H|r)";
+		elseif (data.difficultyID == 8 or data.difficultyID == 16 or data.difficultyID == 23 or data.difficultyID == 40) then
+			heroicString = " (|cFFa335eeM|r)";
 		end
 		local text = timeColor .. "Instance " .. obj.count .. " (" .. data.instanceName .. heroicString .. ")|r";
 		if (not data.isPvp and data.instanceID and (NIT.noRaidLockouts and NIT.zones[data.instanceID] and NIT.zones[data.instanceID].noLockout)) then
@@ -1915,7 +2022,7 @@ function NIT:recalcInstanceLineFramesTooltip(obj)
 		if (not data.isPvp) then
 			text = text .. "\n|cFF9CD6DE" .. L["mobCount"] .. ":|r " .. (mobCount or "Unknown");
 		end
-		if (not data.isPvp or (data.xpFromChat and data.xpFromChat > 0)) then
+		if (data.enteredLevel ~= NIT.maxLevel and (not data.isPvp or (data.xpFromChat and data.xpFromChat > 0))) then
 			text = text .. "\n|cFF9CD6DE" .. L["experience"] .. ":|r " .. (NIT:commaValue(data.xpFromChat) or "Unknown");
 			if (timeSpentRaw and timeSpentRaw > 0 and tonumber(data.xpFromChat) and data.xpFromChat > 0) then
 				local xpPerHour = NIT:commaValue(NIT:round((tonumber(data.xpFromChat) / timeSpentRaw) * 3600));
@@ -1929,23 +2036,91 @@ function NIT:recalcInstanceLineFramesTooltip(obj)
 			end
 		end
 		if (not data.isPvp) then
+			local goldStringType;
+			if (data.mythicPlus) then
+				goldStringType = L["Gold"]
+			else
+				goldStringType = L["rawGoldMobs"];
+			end
 			if (data.rawMoneyCount and data.rawMoneyCount > 0) then
-				text = text .. "\n|cFF9CD6DE" .. L["rawGoldMobs"] .. ":|r " .. GetCoinTextureString(data.rawMoneyCount);
+				text = text .. "\n|cFF9CD6DE" .. goldStringType .. ":|r " .. GetCoinTextureString(data.rawMoneyCount);
 			elseif (data.enteredMoney and data.leftMoney and data.enteredMoney > 0 and data.leftMoney > 0
 					and data.leftMoney > data.enteredMoney) then
 				--Backup for people with addons installed using an altered money string.
 				local moneyCount = data.leftMoney - data.enteredMoney;
-				text = text .. "\n|cFF9CD6DE" .. L["rawGoldMobs"] .. ":|r " .. GetCoinTextureString(moneyCount);
+				text = text .. "\n|cFF9CD6DE" .. goldStringType .. ":|r " .. GetCoinTextureString(moneyCount);
 			else
-				text = text .. "\n|cFF9CD6DE" .. L["rawGoldMobs"] .. ":|r " .. GetCoinTextureString(0);
+				text = text .. "\n|cFF9CD6DE" .. goldStringType .. ":|r " .. GetCoinTextureString(0);
 			end
 		end
-		if (not data.isPvp) then
+		if (not data.isPvp and not data.mythicPlus) then
 			text = text .. "\n|cFF9CD6DE" .. L["enteredLevel"] .. ":|r " .. (data.enteredLevel or "Unknown");
 			text = text .. "\n|cFF9CD6DE" .. L["leftLevel"] .. ":|r " .. (data.leftLevel or "Unknown");
 		end
-		if (data.type ~= "arena" and data.groupAverage and data.groupAverage > 0) then
+		if (data.type ~= "arena" and data.groupAverage and data.groupAverage > 0 and not data.mythicPlus) then
 			text = text .. "\n|cFF9CD6DE" .. L["averageGroupLevel"] .. ":|r " .. (NIT:round(data.groupAverage, 2) or "Unknown");
+		end
+		if (data.mythicPlus) then
+			local mythicData = data.mythicPlus;
+			text = text .. "\n\n|cFFFFFF00" .. L["Mythic Plus"] .. " (+" .. mythicData.level .. "):|r";
+			if (not mythicData.completed) then
+				--Not completed.
+				text = text .. "\n |cFFFF0000Incomplete|r";
+			elseif (mythicData.timed) then
+				--Success.
+				text = text .. "\n |cFF00C800Timed +" .. mythicData.upgrade .. "|r";
+			else
+				--Timer ran out.
+				text = text .. "\n |cFFFF5100Not Timed|r";
+			end
+			if (mythicData.time) then
+				text = text .. " |cFF9CD6DE(" .. NIT:getPreciseTimeString(mythicData.time) .. ")|r";
+			end
+			if (mythicData.deaths) then
+				text = text .. "\n |cFF9CD6DEDeaths: " .. mythicData.deaths .. "|r";
+				if (mythicData.timeLost and mythicData.timeLost > 0) then
+					text = text .. " |cFF9CD6DE(+" ..mythicData.timeLost .. " seconds)|r";
+				end
+			end
+			if (mythicData.oldScore) then
+				if (mythicData.newScore > mythicData.oldScore) then
+					text = text .. "\n |cFF9CD6DEOld IO score: " .. mythicData.oldScore .. "|r";
+					text = text .. "\n |cFF9CD6DENew IO score: " .. mythicData.newScore .. "|r";
+					text = text .. " |cFF9CD6DE(+" .. mythicData.newScore - mythicData.oldScore .. ")|r";
+					text = text .. "\n |cFF00C800New highest IO score!!|r";
+				elseif (mythicData.newScore < mythicData.oldScore) then
+					--Can score ever be backwards? probably not.
+					--text = text .. "\n |cFF9CD6DEOld best dungeon score: " .. mythicData.oldScore .. "|r";
+					--text = text .. "\n |cFF9CD6DENew best dungeon score: " .. mythicData.newScore .. "|r";
+					--text = text .. " |cFF9CD6DE(-" .. mythicData.oldScore - mythicData.newScore .. ")|r";
+				else
+					text = text .. "\n |cFF9CD6DEYour IO score: " .. mythicData.newScore .. "|r";
+					text = text .. "\n |cFF9CD6DENo new high score change.|r";
+				end
+			end
+			if (mythicData.affixes) then
+				text = text .. "\n\n|cFFFFFF00" .. L["Affixes"] .. ":|r"
+				for k, v in pairs(mythicData.affixes) do
+					local name, desc, icon = C_ChallengeMode.GetAffixInfo(v);
+					--text = text .. "\n |T" .. icon .. ":10:10|t |cFF9CD6DE" .. name .. "|r |cFF989898" .. desc .. "|r";
+					text = text .. "\n |T" .. icon .. ":10:10|t |cFF9CD6DE" .. name .. "|r";
+				end
+				local damageMod, healthMod = C_ChallengeMode.GetPowerLevelDamageHealthMod(mythicData.level);
+				if (damageMod and healthMod) then
+					text = text .. "\n |cFF9CD6DENPC damage bonus +" .. damageMod .. "%|r";
+					text = text .. "\n |cFF9CD6DENPC health bonus +" .. healthMod .. "%|r";
+				end
+				if (mythicData.map) then
+					local name, id, timeLimit, texture, backgroundTexture = C_ChallengeMode.GetMapUIInfo(mythicData.map);
+					local plus1 = timeLimit;
+					local plus2 = floor(timeLimit * 0.8);
+					local plus3 = floor(timeLimit * 0.6);
+					text = text .. "\n\n|cFFFFFF00Timer Requirments:|r";
+					text = text .. "\n |cFF9CD6DE+3 " .. NIT:getSimpleTimeString(plus3) .. "|r";
+					text = text .. "\n |cFF9CD6DE+2 " .. NIT:getSimpleTimeString(plus2) .. "|r";
+					text = text .. "\n |cFF9CD6DE+1 " .. NIT:getSimpleTimeString(plus1) .. "|r";
+				end
+			end
 		end
 		if (data.isPvp) then
 			if (data.type == "arena") then
@@ -2481,7 +2656,7 @@ function NIT:openTradeLogFrame()
 			NITTradeLogFrame:SetVerticalScroll(0);
 		end)
 		--So interface options and this frame will open on top of each other.
-		if (InterfaceOptionsFrame:IsShown()) then
+		if (InterfaceOptionsFrame and InterfaceOptionsFrame:IsShown()) then
 			NITTradeLogFrame:SetFrameStrata("DIALOG")
 		else
 			NITTradeLogFrame:SetFrameStrata("HIGH")
@@ -2805,7 +2980,7 @@ function NIT:openTradeCopyFrame()
 			NITTradeCopyFrame:SetVerticalScroll(0);
 		end)
 		--So interface options and this frame will open on top of each other.
-		if (InterfaceOptionsFrame:IsShown()) then
+		if (InterfaceOptionsFrame and InterfaceOptionsFrame:IsShown()) then
 			NITTradeCopyFrame:SetFrameStrata("DIALOG")
 		else
 			NITTradeCopyFrame:SetFrameStrata("HIGH")
@@ -3142,7 +3317,7 @@ function NIT:openAltsFrame()
 			NITAltsFrame:SetVerticalScroll(0);
 		end)
 		--So interface options and this frame will open on top of each other.
-		if (InterfaceOptionsFrame:IsShown()) then
+		if (InterfaceOptionsFrame and InterfaceOptionsFrame:IsShown()) then
 			NITAltsFrame:SetFrameStrata("DIALOG");
 		else
 			NITAltsFrame:SetFrameStrata("HIGH");
@@ -3392,7 +3567,7 @@ function NIT:recalcAltsLineFrames()
 	end
 	if (not foundAnyChars) then
 		NIT:hideAllAltLineFrames()
-		NITAltsFrame.EditBox:Insert("\n\n\n\n|cffffff00No alts found.");
+		NITAltsFrame.EditBox:SetText("\n\n\n\n|cffffff00No alts found.");
 	else
 		NITAltsFrame.EditBox:SetText("");
 	end
@@ -3442,7 +3617,8 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 						line = line .. " ";
 						obj.tooltip.fsCalc:SetText(line);
 					end
-					text = text .. line .. " " .. GetCoinTextureString(v.gold, 10);
+					--text = text .. line .. " " .. GetCoinTextureString(v.gold, 10);
+					text = text .. line .. " " .. NIT:convertMoney(v.gold, true, "", true, nil, true, true);
 					--text = text .. "\n|c" .. classColor .. k .. "|r " .. GetCoinTextureString(v.gold, 10);
 				end
 			end
@@ -3452,7 +3628,8 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 				line = line .. " ";
 				obj.tooltip.fsCalc:SetText(line);
 			end
-			line = line .. " " .. GetCoinTextureString(total, 10);
+			--line = line .. " " .. GetCoinTextureString(total, 10);
+			line = line .. " " .. NIT:convertMoney(total, true, "", true, nil, true, true);
 			obj.tooltip.fs:SetText(text .. line);
 		else
 			local color1, color2 = "|cFFFFAE42", "|cFF9CD6DE";
@@ -3506,7 +3683,9 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 					end
 					text = text .. "\n" .. color1 .. L["rested"] .. ":|r " .. color2 .. percentString .. " ("
 							.. NIT:commaValue(data.restedXP) .. string.lower(L["experienceShort"]) .. ")" .. percentMax .. "|r";
-					text = text .. "\n" .. color1 .. L["restedBubbles"] .. ":|r " .. color2 .. bubbles .. "|r";
+					if (not NIT.isRetail) then
+						text = text .. "\n" .. color1 .. L["restedBubbles"] .. ":|r " .. color2 .. bubbles .. "|r";
+					end
 					text = text .. "\n" .. color1 .. L["restedState"] .. ":|r " .. color2 .. stateString .. "|r";
 				end
 			end
@@ -3520,7 +3699,8 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 						.. color2 .. data.totalBagSlots .. "|r";
 			end
 			if (data.gold) then
-				text = text .. "\n" .. color1 .. L["Gold"] .. ":|r " .. color2 .. GetCoinTextureString(data.gold, 10) .. "|r";
+				--text = text .. "\n" .. color1 .. L["Gold"] .. ":|r " .. color2 .. GetCoinTextureString(data.gold, 10) .. "|r";
+				text = text .. "\n" .. color1 .. L["Gold"] .. ":|r " .. color2 .. NIT:convertMoney(data.gold, true, "", true, nil, true, true);
 			end
 			local durabilityAverage = data.durabilityAverage or 100;
 			local displayDurability;
@@ -3547,49 +3727,50 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 				text = text .. "\n\n|cFFFFFF00" .. CURRENCY .. "|r";
 				text = text .. currencyString;
 			end
-			
-			if (data.classEnglish == "PRIEST" or data.classEnglish == "MAGE" or data.classEnglish == "DRUID"
-					or data.classEnglish == "WARLOCK" or data.classEnglish == "SHAMAN" or data.classEnglish == "PALADIN"
-							or data.classEnglish == "HUNTER") then
-				local foundItems;
-				local itemString = "\n\n|cFFFFFF00" .. L["items"] .. "|r";
-				if (data.classEnglish == "HUNTER" and data.ammo) then
-					local ammoTypeString = "";
-					if (data.ammoType) then
-						local itemName, _, itemRarity, _, _, _, _, _, _, itemTexture = GetItemInfo(data.ammoType);
-		    			if (itemName) then
-		    				local ammoTexture = "|T" .. itemTexture .. ":12:12:0:0|t";
-							ammoTypeString = " (" .. itemName .. " " .. ammoTexture .. ")";
+			if (not NIT.isRetail) then
+				if (data.classEnglish == "PRIEST" or data.classEnglish == "MAGE" or data.classEnglish == "DRUID"
+						or data.classEnglish == "WARLOCK" or data.classEnglish == "SHAMAN" or data.classEnglish == "PALADIN"
+								or data.classEnglish == "HUNTER") then
+					local foundItems;
+					local itemString = "\n\n|cFFFFFF00" .. L["items"] .. "|r";
+					if (data.classEnglish == "HUNTER" and data.ammo and not NIT.isRetail) then
+						local ammoTypeString = "";
+						if (data.ammoType) then
+							local itemName, _, itemRarity, _, _, _, _, _, _, itemTexture = GetItemInfo(data.ammoType);
+			    			if (itemName) then
+			    				local ammoTexture = "|T" .. itemTexture .. ":12:12:0:0|t";
+								ammoTypeString = " (" .. itemName .. " " .. ammoTexture .. ")";
+							end
+						end
+						itemString = itemString .. "\n  |c" .. classColorHex .. L["ammunition"] .. ":|r " .. color2 .. (data.ammo or 0)
+								.. ammoTypeString .. "|r";
+						foundItems = true;
+					end
+					if (NIT["trackItems" .. data.classEnglish]) then
+						for k, v in ipairs(_G["NIT"]["trackItems" .. data.classEnglish]) do
+							if (not v.minLvl or v.minLvl < data.level) then
+								local texture = "";
+								if (v.texture) then
+									texture = "|T" .. v.texture .. ":12:12:0:0|t ";
+								end
+								local itemName = v.name;
+								--Try and get localization for the item name.
+								local itemName = GetItemInfo(v.id);
+								if (not itemName) then
+									itemName = v.name;
+								end
+								itemString = itemString .. "\n  " .. texture .. "|c" .. classColorHex .. itemName .. ":|r "
+										.. color2 .. (data[v.id] or 0) .. "|r";
+								foundItems = true;
+							end
 						end
 					end
-					itemString = itemString .. "\n  |c" .. classColorHex .. L["ammunition"] .. ":|r " .. color2 .. (data.ammo or 0)
-							.. ammoTypeString .. "|r";
-					foundItems = true;
-				end
-				if (NIT["trackItems" .. data.classEnglish]) then
-					for k, v in ipairs(_G["NIT"]["trackItems" .. data.classEnglish]) do
-						if (not v.minLvl or v.minLvl < data.level) then
-							local texture = "";
-							if (v.texture) then
-								texture = "|T" .. v.texture .. ":12:12:0:0|t ";
-							end
-							local itemName = v.name;
-							--Try and get localization for the item name.
-							local itemName = GetItemInfo(v.id);
-							if (not itemName) then
-								itemName = v.name;
-							end
-							itemString = itemString .. "\n  " .. texture .. "|c" .. classColorHex .. itemName .. ":|r "
-									.. color2 .. (data[v.id] or 0) .. "|r";
-							foundItems = true;
-						end
+					if (foundItems) then
+						text = text .. itemString;
 					end
-				end
-				if (foundItems) then
-					text = text .. itemString;
 				end
 			end
-			if (data.classEnglish == "HUNTER") then
+			if (data.classEnglish == "HUNTER" and not NIT.isRetail) then
 				local happinessTexture = "";
 				if (data.petHappiness and data.petHappiness == 1) then
 					happinessTexture = "|TInterface\\PetPaperDollFrame\\UI-PetHappiness:13:13:0:0:128:64:48:72:0:23|t";
@@ -3656,42 +3837,53 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 				end
 			end]]
 			local foundprofs;
-			if (data.prof1 and data.prof1 ~= "none") then
-				text = text .. "\n  " .. color1 .. data.prof1 .. ":|r " .. color2 .. data.profSkill1 .. "|r"
-						.. color1 .. "/|r" .. color2 .. data.profSkillMax1 .. "|r";
-				foundprofs = true;
-				--[[for k, v in pairs(cooldowns) do
-					if (v.prof == data.prof11) then
-						text = text .. "\n    " .. color1 .. k .. ": " .. color2 .. v.time;
-						cooldowns[k] = nil;
-					end
-				end]]
-			end
-			if (data.prof2 and data.prof2 ~= "none") then
-				text = text .. "\n  " .. color1 .. data.prof2 .. ":|r " .. color2 .. data.profSkill2 .. "|r"
-						.. color1 .. "/|r" .. color2 .. data.profSkillMax2 .. "|r";
-				foundprofs = true;
-				--[[for k, v in pairs(cooldowns) do
-					if (v.prof == data.prof2) then
-						text = text .. "\n    " .. color1 .. k .. ": " .. color2 .. v.time;
-						cooldowns[k] = nil;
-					end
-				end]]
-			end
-			if (data.firstaidSkill and data.firstaidSkill > 0) then
-				text = text .. "\n  " .. color1 .. PROFESSIONS_FIRST_AID .. ":|r " .. color2 .. data.firstaidSkill .. "|r"
-						.. color1 .. "/|r" .. color2 .. data.firstaidSkillMax;
-				foundprofs = true;
-			end
-			if (data.fishingSkill and data.fishingSkill > 0) then
-				text = text .. "\n  " .. color1 .. PROFESSIONS_FISHING .. ":|r " .. color2 .. data.fishingSkill .. "|r"
-						.. color1 .. "/|r" .. color2 .. data.fishingSkillMax;
-				foundprofs = true;
-			end
-			if (data.cookingSkill and data.cookingSkill > 0) then
-				text = text .. "\n  " .. color1 .. PROFESSIONS_COOKING .. ":|r " .. color2 .. data.cookingSkill .. "|r"
-						.. color1 .. "/|r" .. color2 .. data.cookingSkillMax;
-				foundprofs = true;
+			if (NIT.isRetail) then
+				if (data.prof1 and data.prof1 ~= "none") then
+					text = text .. "\n  " .. color1 .. data.prof1 .. "|r";
+					foundprofs = true;
+				end
+				if (data.prof2 and data.prof2 ~= "none") then
+					text = text .. "\n  " .. color1 .. data.prof2 .. "|r";
+					foundprofs = true;
+				end
+			else
+				if (data.prof1 and data.prof1 ~= "none") then
+					text = text .. "\n  " .. color1 .. data.prof1 .. ":|r " .. color2 .. (data.profSkill1 or "") .. "|r"
+							.. color1 .. "/|r" .. color2 .. (data.profSkillMax1 or "") .. "|r";
+					foundprofs = true;
+					--[[for k, v in pairs(cooldowns) do
+						if (v.prof == data.prof11) then
+							text = text .. "\n    " .. color1 .. k .. ": " .. color2 .. v.time;
+							cooldowns[k] = nil;
+						end
+					end]]
+				end
+				if (data.prof2 and data.prof2 ~= "none") then
+					text = text .. "\n  " .. color1 .. data.prof2 .. ":|r " .. color2 .. (data.profSkill2  or "") .. "|r"
+							.. color1 .. "/|r" .. color2 .. (data.profSkillMax2 or "") .. "|r";
+					foundprofs = true;
+					--[[for k, v in pairs(cooldowns) do
+						if (v.prof == data.prof2) then
+							text = text .. "\n    " .. color1 .. k .. ": " .. color2 .. v.time;
+							cooldowns[k] = nil;
+						end
+					end]]
+				end
+				if (data.firstaidSkill and data.firstaidSkill > 0) then
+					text = text .. "\n  " .. color1 .. PROFESSIONS_FIRST_AID .. ":|r " .. color2 .. data.firstaidSkill .. "|r"
+							.. color1 .. "/|r" .. color2 .. data.firstaidSkillMax;
+					foundprofs = true;
+				end
+				if (data.fishingSkill and data.fishingSkill > 0) then
+					text = text .. "\n  " .. color1 .. PROFESSIONS_FISHING .. ":|r " .. color2 .. data.fishingSkill .. "|r"
+							.. color1 .. "/|r" .. color2 .. data.fishingSkillMax;
+					foundprofs = true;
+				end
+				if (data.cookingSkill and data.cookingSkill > 0) then
+					text = text .. "\n  " .. color1 .. PROFESSIONS_COOKING .. ":|r " .. color2 .. data.cookingSkill .. "|r"
+							.. color1 .. "/|r" .. color2 .. data.cookingSkillMax;
+					foundprofs = true;
+				end
 			end
 			if (not foundprofs) then
 				text = text .. "\n  " .. color2 .. L["noProfessions"] .. "|r";

@@ -12,6 +12,7 @@ local ItemString = TSM.Include("Util.ItemString")
 local Container = TSM.Include("Util.Container")
 local DefaultUI = TSM.Include("Service.DefaultUI")
 local ItemInfo = TSM.Include("Service.ItemInfo")
+local BagTracking = TSM.Include("Service.BagTracking")
 local private = {
 	repairMoney = 0,
 	couldRepair = nil,
@@ -32,7 +33,7 @@ local private = {
 
 function Merchant.OnInitialize()
 	DefaultUI.RegisterMerchantVisibleCallback(private.MechantVisibilityHandler)
-	Event.Register("BAG_UPDATE_DELAYED", private.OnMerchantUpdate)
+	BagTracking.RegisterCallback(private.OnMerchantUpdate)
 	Event.Register("UPDATE_INVENTORY_DURABILITY", private.AddRepairCosts)
 	Container.SecureHookUseItem(private.CheckMerchantSale)
 	hooksecurefunc("BuyMerchantItem", private.OnMerchantBuy)

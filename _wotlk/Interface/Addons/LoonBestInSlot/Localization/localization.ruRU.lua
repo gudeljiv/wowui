@@ -6,6 +6,7 @@ if GetLocale() == "ruRU" then
   LBIS.L["Affliction"] = "Колдовство";
   LBIS.L["Ahn'kahet: The Old Kingdom (Heroic)"] = "Ан'кахет: Старое Королевство (Героический)";
   LBIS.L["Alchemy"] = "Алхимия";
+  LBIS.L["Algalon the Observer"] = "Алгалон Наблюдатель";
   LBIS.L["All"] = "Все";
   LBIS.L["Alliance Vanguard/Horde Expedition (Revered)"] = "Авангард Альянса/Экспедиция Орды (Почтение)";
 --  LBIS.L["Almaador"] = "";
@@ -27,6 +28,7 @@ if GetLocale() == "ruRU" then
   LBIS.L["Argent Crusade (Revered)"] = "Серебряный Авангард (Почтение)";
   LBIS.L["Arms"] = "Оружие";
   LBIS.L["Assassination"] = "Убийство";
+  LBIS.L["Auriaya"] = "Ауриайя";
   LBIS.L["Azjol-Nerub (Heroic)"] = "Азжол-Неруб (Героический)";
   LBIS.L["Back"] = "Спина";
 --  LBIS.L["Badges of Justice"] = "";
@@ -84,6 +86,7 @@ if GetLocale() == "ruRU" then
   LBIS.L["Elder Nadox"] = "Старейшина Надокс";
   LBIS.L["Elemental"] = "Стихии";
   LBIS.L["Emalon the Storm Watcher"] = "Эмалон Страж Бури";
+--  LBIS.L["Emblem of Conquest"] = "";
 --  LBIS.L["Emblem of Heroism"] = "";
 --  LBIS.L["Emblem of Valor"] = "";
 --  LBIS.L["Emblem Vendor"] = "";
@@ -98,14 +101,17 @@ if GetLocale() == "ruRU" then
   LBIS.L["Feet"] = "Ступни";
   LBIS.L["Fire"] = "Огонь";
   LBIS.L["Fishing"] = "Рыбная ловля";
+  LBIS.L["Flame Leviathan"] = "Огненный Левиафан";
   LBIS.L["For Posterity"] = "Для наших потомков";
   LBIS.L["Frenzyheart Tribe"] = "Племя Бешеного Сердца";
+  LBIS.L["Freya"] = "Фрейя";
   LBIS.L["Frost"] = "Лед";
   LBIS.L["Fury"] = "Неистовство";
   LBIS.L["Gal'darah"] = "Гал'дара";
 --  LBIS.L["Geen"] = "";
 --  LBIS.L["Gems"] = "";
   LBIS.L["General Bjarngrim"] = "Генерал Бьярнгрим";
+  LBIS.L["General Vezax"] = "Генерал Везакс";
   LBIS.L["Get Me Outa Here!"] = "Вытащите меня отсюда!";
   LBIS.L["Gluth"] = "Глут";
   LBIS.L["Gortok Palehoof"] = "Горток Бледное Копыто";
@@ -137,6 +143,7 @@ if GetLocale() == "ruRU" then
   LBIS.L["Heigan the Unclean"] = "Хейган Нечистивый";
   LBIS.L["Herald Volazj"] = "Глашатай Волаж";
   LBIS.L["Heroic Judgment at the Eye of Eternity"] = "Героическое правосудие в Оке Вечности";
+  LBIS.L["Hodir"] = "Ходир";
   LBIS.L["Holy"] = "Свет";
   LBIS.L["Honor Points"] = "Очки чести";
   LBIS.L["Honored"] = "Уважение";
@@ -144,6 +151,7 @@ if GetLocale() == "ruRU" then
   LBIS.L["Icecrown Citadel (10)"] = "Цитадель Ледяной Короны (10)";
   LBIS.L["Icecrown Citadel (25)"] = "Цитадель Ледяной Короны (25)";
   LBIS.L["Ichoron"] = "Гнойрон";
+  LBIS.L["Ignis the Furnace Master"] = "Повелитель Горнов Игнис";
   LBIS.L["Ingvar the Plunderer"] = "Ингвар Расхититель";
   LBIS.L["Inscription"] = "Начертание";
   LBIS.L["Instructor Razuvious"] = "Инструктор Разувиус";
@@ -166,6 +174,8 @@ if GetLocale() == "ruRU" then
   LBIS.L["Knights of the Ebon Blade"] = "Рыцари Черного Клинка";
   LBIS.L["Knights of the Ebon Blade (Exalted)"] = "Рыцари Черного Клинка (Превознесение)";
   LBIS.L["Knights of the Ebon Blade (Revered)"] = "Рыцари Черного Клинка (Почтение)";
+  LBIS.L["Kologarn"] = "Кологарн";
+  LBIS.L["Koralon the Flame Watcher"] = "Коралон Страж Огня";
   LBIS.L["Krik'thir the Gatewatcher"] = "Крик'тир Хранитель Врат";
   LBIS.L["Krystallus"] = "Кристаллус";
   LBIS.L["Lavanthor"] = "Лавантор";
@@ -193,15 +203,17 @@ if GetLocale() == "ruRU" then
 --  LBIS.L["Master Jewelcrafting Trainer"] = "";
 --  LBIS.L["Master Leatherworking Trainer"] = "";
   LBIS.L["Meathook"] = "Мясной Крюк";
+  LBIS.L["Mimiron"] = "Мимирон";
   LBIS.L["Moorabi"] = "Мураби";
   LBIS.L["Moragg"] = "Морагг";
   LBIS.L["Moroes"] = "Мороуз";
   LBIS.L["My Old Enemy"] = "Мой старый враг";
   LBIS.L["Mystery of the Infinite, Redux"] = "Тайна бесконечности, мания преследования";
 --  LBIS.L["Nascent Val'kyr"] = "";
+  LBIS.L["Naxxramas"] = "Наксрамас";
   LBIS.L["Naxxramas (10)"] = "Наксрамас (10)";
-  LBIS.L["Naxxramas (25)"] = "Наксрамас (25)";
   LBIS.L["Neck"] = "Шея";
+  LBIS.L["Neck/Ring"] = "Шея/Палец";
   LBIS.L["Netherstorm"] = "Пустоверть";
 --  LBIS.L["New Features"] = "";
   LBIS.L["None"] = "Нет";
@@ -234,6 +246,7 @@ if GetLocale() == "ruRU" then
   LBIS.L["Quest"] = "Задания";
   LBIS.L["Quiver"] = "Колчан";
   LBIS.L["Ranged/Relic"] = "Для оружия дальнего боя/Реликвия";
+  LBIS.L["Razorscale"] = "Острокрылая";
   LBIS.L["Reputation"] = "Репутация";
   LBIS.L["Restoration"] = "Исцеление";
   LBIS.L["Retribution"] = "Возмездие";
@@ -277,6 +290,7 @@ if GetLocale() == "ruRU" then
   LBIS.L["The Culling of Stratholme (Heroic)"] = "Очищение Стратхольма (Героический)";
   LBIS.L["The Culling of Stratholme (Normal)"] = "Очищение Стратхольма (Обычный)";
   LBIS.L["The Drakkensryd"] = "Драконобойца";
+  LBIS.L["The Eye of Eternity"] = "Око Вечности";
   LBIS.L["The Eye of Eternity (10)"] = "Око Вечности (10)";
   LBIS.L["The Eye of Eternity (25)"] = "Око Вечности (25)";
 --  LBIS.L["The Fate of Bloodbane"] = "";
@@ -284,12 +298,12 @@ if GetLocale() == "ruRU" then
   LBIS.L["The Forsaken Blight"] = "Гниль Отрекшихся";
   LBIS.L["The Four Horsemen"] = "Четыре Всадника";
   LBIS.L["The Gifts of Loken"] = "Дары Локена";
+  LBIS.L["The Iron Council"] = "Железное Cобрание";
   LBIS.L["The Kalu'ak"] = "Калу'ак";
   LBIS.L["The Last Line Of Defense"] = "Последний рубеж";
   LBIS.L["The Nexus (Heroic)"] = "Нексус (Героический)";
   LBIS.L["The Nexus (Normal)"] = "Нексус (Обычный)";
-  LBIS.L["The Obsidian Sanctum (10)"] = "Обсидиановое святилище (10)";
-  LBIS.L["The Obsidian Sanctum (25)"] = "Обсидиановое святилище (25)";
+  LBIS.L["The Obsidian Sanctum"] = "Обсидиановое святилище";
   LBIS.L["The Oculus"] = "Окулус";
   LBIS.L["The Oculus (Heroic)"] = "Окулус (Героический)";
   LBIS.L["The Oculus (Normal)"] = "Окулус (Обычный)";
@@ -312,11 +326,13 @@ if GetLocale() == "ruRU" then
   LBIS.L["The Wyrmrest Accord"] = "Драконий союз";
   LBIS.L["The Wyrmrest Accord (Revered)"] = "Драконий союз (Почтение)";
   LBIS.L["They Took Our Men!"] = "Они забрали наших мужчин!";
+  LBIS.L["Thorim"] = "Торим";
 --  LBIS.L["Tiffany Cartier"] = "";
 --  LBIS.L["Timothy Jones"] = "";
 --  LBIS.L["Tiny Titanium Lockbox"] = "";
 --  LBIS.L["Tirion's Gambit"] = "";
 --  LBIS.L["Token"] = "";
+  LBIS.L["Tokens"] = "Жетоны";
 --  LBIS.L["Transmute"] = "";
 --  LBIS.L["Trash Drop"] = "";
   LBIS.L["Trash Mobs"] = "Трешовые монстры";
@@ -329,6 +345,8 @@ if GetLocale() == "ruRU" then
   LBIS.L["Ulduar (10)"] = "Ульдуар (10)";
   LBIS.L["Ulduar (25)"] = "Ульдуар (25)";
   LBIS.L["Unholy"] = "Нечестивость";
+  LBIS.L["Unknown (Heroic+)"] = "Неизвестно (Героический+)";
+--  LBIS.L["Unknown Boss"] = "";
   LBIS.L["Utgarde Keep (Heroic)"] = "Крепость Утгард (Героический)";
   LBIS.L["Utgarde Pinnacle"] = "Вершина Утгард";
   LBIS.L["Utgarde Pinnacle (Heroic)"] = "Вершина Утгард (Героический)";
@@ -353,6 +371,8 @@ if GetLocale() == "ruRU" then
 --  LBIS.L["World Drop (Skoll)"] = "";
   LBIS.L["Wrist"] = "Запястья";
   LBIS.L["Xevozz"] = "Ксевозз";
+  LBIS.L["XT-002 Deconstructor"] = "Разрушитель XT-002";
+  LBIS.L["Yogg-Saron"] = "Йогг-Сарон";
   LBIS.L["Zul'Drak"] = "Зул'Драк";
   LBIS.L["Zuramat the Obliterator"] = "Зурамат Уничтожитель";
 end

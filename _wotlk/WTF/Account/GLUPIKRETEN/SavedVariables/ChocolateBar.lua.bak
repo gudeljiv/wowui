@@ -175,7 +175,6 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 				},
 				["ItemRack"] = {
-					["enabled"] = false,
 					["index"] = 3,
 					["align"] = "right",
 					["isNew"] = false,
@@ -691,9 +690,9 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 1036566,
-		["timeStamp"] = 571411.965,
-		["timeAtThisLevel"] = 5546,
+		["total"] = 1037008,
+		["timeStamp"] = 663956.299,
+		["timeAtThisLevel"] = 5988,
 	},
 	["Mxyzptlk-Golemagg"] = {
 		["total"] = 29335,
@@ -718,9 +717,9 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Vermina-Golemagg"] = {
-		["total"] = 267606,
-		["timeStamp"] = 574023.014,
-		["timeAtThisLevel"] = 3546,
+		["total"] = 278539,
+		["timeStamp"] = 736801.308,
+		["timeAtThisLevel"] = 7016,
 	},
 	["Provokator-Jin'do"] = {
 		["total"] = 22720,
@@ -737,17 +736,17 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1601751,
-		["timeStamp"] = 582805.6730000001,
-		["timeAtThisLevel"] = 509204,
+		["total"] = 1611469,
+		["timeStamp"] = 744939.925,
+		["timeAtThisLevel"] = 518922,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 259728,
-		["timeStamp"] = 488475.641,
-		["timeAtThisLevel"] = 253982,
+		["total"] = 259735,
+		["timeStamp"] = 582933.486,
+		["timeAtThisLevel"] = 253989,
 	},
 	["Tudum-Ashbringer"] = {
 		["total"] = 4569,
@@ -795,9 +794,9 @@ CB_PlayedTime = {
 		["timeStamp"] = 704222.594,
 	},
 	["Miqa-Golemagg"] = {
-		["total"] = 15238,
-		["timeAtThisLevel"] = 10190,
-		["timeStamp"] = 582726.296,
+		["total"] = 18223,
+		["timeAtThisLevel"] = 13175,
+		["timeStamp"] = 663459.332,
 	},
 	["Pitchwise-"] = {
 		["total"] = 390,
@@ -839,9 +838,9 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 316,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 456024,
-		["timeAtThisLevel"] = 126349,
-		["timeStamp"] = 571463.921,
+		["total"] = 462205,
+		["timeAtThisLevel"] = 132530,
+		["timeStamp"] = 745595.205,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,

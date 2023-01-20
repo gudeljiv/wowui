@@ -1,6 +1,7 @@
 VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Holy Light
 /cast Divine Favor
+/cast Divine Illumination
 /cast [@mouseover, help, nodead][] Holy Light
 END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
@@ -9,7 +10,8 @@ VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 /cast Judgement of Wisdom
 END
 VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
+#showtooltip Flash of Light
+/cast Divine Illumination
 /cast [@mouseover, help, nodead][] Flash of Light
 END
 VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"

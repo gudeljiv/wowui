@@ -136,7 +136,7 @@ FarmHud: enabled
 FarmHud_QuestArrow: enabled
 TrackingSwitcher: enabled
 TrinketMenu: enabled
-AuctionFaster: enabled
+AuctionFaster: disabled
 TrackEverything: enabled
 Kui_Media: disabled
 Kui_Nameplates: disabled
@@ -144,7 +144,7 @@ Kui_Nameplates_Core_Config: disabled
 Kui_Nameplates_Core: disabled
 Plater: enabled
 NovaInstanceTracker: enabled
-PallyPower: disabled
+PallyPower: enabled
 TidyPlates_ThreatPlates: disabled
 BuyEmAllClassic: enabled
 PitBull4: enabled
@@ -199,3 +199,6 @@ AceBIS: disabled
 Bistooltip: disabled
 ShadowedUF_Options: enabled
 ShadowedUnitFrames: enabled
+AskMrRobotClassic: disabled
+WowSimsExporter: disabled
+GDKPd: disabled

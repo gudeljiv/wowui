@@ -41,7 +41,7 @@ local function CreateBar(input)
 	f.Bar.FactionName:SetShadowOffset(0, 0)
 	f.Bar.FactionName:SetPoint('RIGHT', f.Bar, 'RIGHT', -2, 10)
 	f.Bar.FactionName:SetVertexColor(1, 1, 1)
-	f.Bar.FactionName:SetWordWrap()
+	f.Bar.FactionName:SetWordWrap(true)
 	f.Bar.FactionName:SetJustifyH('RIGHT')
 	f.Bar.FactionName:SetWidth(size / scale)
 

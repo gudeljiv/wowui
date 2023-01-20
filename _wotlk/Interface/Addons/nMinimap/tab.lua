@@ -403,61 +403,66 @@ function nMinimap_UpdateFriendButton(entry)
 	local minWidth = scrollFrame:GetWidth()
 	local zonec, classc, levelc
 
-	if entry.buttonType == FRIENDS_BUTTON_TYPE_BNET then
-		local _, accountName, battleTag, _, characterName, bnetIDGameAccount, client, isOnline, _, isAFK, isDND = BNGetFriendInfo(FriendListEntries[index].id)
-		if isOnline then
-			local _, _, _, realmName, realmID, faction, race, class, _, zoneName, level, gameText = BNGetGameAccountInfo(bnetIDGameAccount)
+	-- if entry.buttonType == FRIENDS_BUTTON_TYPE_BNET then
+	-- 	-- local _, accountName, battleTag, _, characterName, bnetIDGameAccount, client, isOnline, _, isAFK, isDND = BNGetFriendInfo(FriendListEntries[index].id)
+	-- 	local FriendAccountInfo = C_BattleNet.GetFriendAccountInfo(FriendListEntries[index].id)
 
-			characterName = BNet_GetValidatedCharacterName(characterName, battleTag, client)
-			accountName = WrapTextInColorCode(accountName, FRIENDS_BNET_NAME_COLOR:GenerateHexColor())
-			local clientIcon = BNet_GetClientEmbeddedTexture(client, 14)
+	-- 	if not FriendAccountInfo.appearOffline then
+	-- 		-- local _, _, _, realmName, realmID, faction, race, class, _, zoneName, level, gameText = BNGetGameAccountInfo(bnetIDGameAccount)
+	-- 		local FriendGameAccountInfo = C_BattleNet.GetFriendGameAccountInfo(FriendAccountInfo.gameAccountID)
 
-			for k, v in pairs(LOCALIZED_CLASS_NAMES_MALE) do
-				if class == v then
-					classc = RAID_CLASS_COLORS[k]
-					break
-				end
-			end
+	-- 		characterName = BNet_GetValidatedCharacterName(FriendAccountInfo.gameAccountInfo.characterName, FriendAccountInfo.battleTag, FriendAccountInfo.gameAccountInfo.clientProgram)
+	-- 		accountName = WrapTextInColorCode(FriendAccountInfo.accountName, FRIENDS_BNET_NAME_COLOR:GenerateHexColor())
+	-- 		local clientIcon = BNet_GetClientEmbeddedTexture(client, 14)
 
-			if not classc then
-				for k, v in pairs(LOCALIZED_CLASS_NAMES_FEMALE) do
-					if class == v then
-						classc = RAID_CLASS_COLORS[k]
-						break
-					end
-				end
-			end
+	-- 		for k, v in pairs(LOCALIZED_CLASS_NAMES_MALE) do
+	-- 			if FriendGameAccountInfo.className == v then
+	-- 				classc = RAID_CLASS_COLORS[k]
+	-- 				break
+	-- 			end
+	-- 		end
 
-			if client == BNET_CLIENT_WOW then
-				if isAFK == true then
-					status = 1
-				elseif isDND == true then
-					status = 2
-				else
-					status = 0
-				end
+	-- 		if not classc then
+	-- 			for k, v in pairs(LOCALIZED_CLASS_NAMES_FEMALE) do
+	-- 				if FriendGameAccountInfo.className == v then
+	-- 					classc = RAID_CLASS_COLORS[k]
+	-- 					break
+	-- 				end
+	-- 			end
+	-- 		end
 
-				level = tonumber(level)
-				levelc = GetQuestDifficultyColor(level)
+	-- 		if client == BNET_CLIENT_WOW then
+	-- 			if FriendAccountInfo.isAFK == true then
+	-- 				status = 1
+	-- 			elseif FriendAccountInfo.isDND == true then
+	-- 				status = 2
+	-- 			else
+	-- 				status = 0
+	-- 			end
 
-				if classc == nil then
-					characterName = characterName .. '-UnknownClass'
-					classc = FRIENDS_BNET_NAME_COLOR
-				end
+	-- 			level = tonumber(level)
+	-- 			levelc = GetQuestDifficultyColor(level)
 
-				level = WrapTextInColorCode(level, CreateColor(levelc.r, levelc.g, levelc.b, 1):GenerateHexColor())
+	-- 			if classc == nil then
+	-- 				characterName = characterName .. '-UnknownClass'
+	-- 				classc = FRIENDS_BNET_NAME_COLOR
+	-- 			end
 
-				entry.LeftText:SetFormattedText('%s (%s %s) %s', accountName, level, characterName, statusText[status])
-				entry.RightText:SetText(clientIcon)
-			else
-				entry.LeftText:SetFormattedText(accountName)
-				entry.RightText:SetText(clientIcon)
-			end
+	-- 			level = WrapTextInColorCode(level, CreateColor(levelc.r, levelc.g, levelc.b, 1):GenerateHexColor())
 
-			minWidth = math.max(minWidth, entry.LeftText:GetWidth() + entry.RightText:GetWidth() + 100)
-			entry:Show()
-		end
-	elseif entry.buttonType == FRIENDS_BUTTON_TYPE_WOW then
+	-- 			entry.LeftText:SetFormattedText('%s (%s %s) %s', accountName, level, characterName, statusText[status])
+	-- 			entry.RightText:SetText(clientIcon)
+	-- 		else
+	-- 			entry.LeftText:SetFormattedText(accountName)
+	-- 			entry.RightText:SetText(clientIcon)
+	-- 		end
+
+	-- 		minWidth = math.max(minWidth, entry.LeftText:GetWidth() + entry.RightText:GetWidth() + 100)
+	-- 		entry:Show()
+	-- 	end
+	-- end
+
+	if entry.buttonType == FRIENDS_BUTTON_TYPE_WOW then
 		local info = C_FriendList.GetFriendInfoByIndex(FriendListEntries[index].id)
 
 		if info then

@@ -25,11 +25,11 @@ function addon:SetupDefaultFilters()
 	-- Globals: GetEquipmentSetLocations
 	--<GLOBALS
 	local _G = _G
-	local BANK_CONTAINER = _G.BANK_CONTAINER
+	local BANK_CONTAINER = _G.BANK_CONTAINER or ( Enum.BagIndex and Enum.BagIndex.Bank ) or -1
 	local BANK_CONTAINER_INVENTORY_OFFSET = _G.BANK_CONTAINER_INVENTORY_OFFSET
 	local EquipmentManager_UnpackLocation = _G.EquipmentManager_UnpackLocation
 	local format = _G.format
-	local GetContainerItemQuestInfo = _G.GetContainerItemQuestInfo
+	local GetContainerItemQuestInfo = C_Container and _G.C_Container.GetContainerItemQuestInfo or _G.GetContainerItemQuestInfo
 	local GetEquipmentSetInfo = _G.C_EquipmentSet.GetEquipmentSetInfo
 	local GetItemIDs = _G.C_EquipmentSet.GetItemIDs
 	local GetEquipmentSetIDs = _G.C_EquipmentSet.GetEquipmentSetIDs
@@ -41,16 +41,16 @@ function addon:SetupDefaultFilters()
 	local L = addon.L
 
 	-- Make some strings local to speed things
-	local CONSUMMABLE = GetItemClassInfo(LE_ITEM_CLASS_CONSUMABLE)
-	local GEM = GetItemClassInfo(LE_ITEM_CLASS_GEM)
-	local GLYPH = GetItemClassInfo(LE_ITEM_CLASS_GLYPH)
-	local JUNK = GetItemSubClassInfo(LE_ITEM_CLASS_MISCELLANEOUS, 0)
-	local MISCELLANEOUS = GetItemClassInfo(LE_ITEM_CLASS_MISCELLANEOUS)
-	local QUEST = GetItemClassInfo(LE_ITEM_CLASS_QUESTITEM)
-	local RECIPE = GetItemClassInfo(LE_ITEM_CLASS_RECIPE)
-	local TRADE_GOODS = GetItemClassInfo(LE_ITEM_CLASS_TRADEGOODS)
-	local WEAPON = GetItemClassInfo(LE_ITEM_CLASS_WEAPON)
-	local ARMOR = GetItemClassInfo(LE_ITEM_CLASS_ARMOR)
+	local CONSUMMABLE = GetItemClassInfo(_G.Enum.ItemClass.Consumable)
+	local GEM = GetItemClassInfo(_G.Enum.ItemClass.Gem)
+	local GLYPH = GetItemClassInfo(_G.Enum.ItemClass.Glyph)
+	local JUNK = GetItemSubClassInfo(_G.Enum.ItemClass.Miscellaneous, 0)
+	local MISCELLANEOUS = GetItemClassInfo(_G.Enum.ItemClass.Miscellaneous)
+	local QUEST = GetItemClassInfo(_G.Enum.ItemClass.Questitem)
+	local RECIPE = GetItemClassInfo(_G.Enum.ItemClass.Recipe)
+	local TRADE_GOODS = GetItemClassInfo(_G.Enum.ItemClass.Tradegoods)
+	local WEAPON = GetItemClassInfo(_G.Enum.ItemClass.Weapon)
+	local ARMOR = GetItemClassInfo(_G.Enum.ItemClass.Armor)
 	local JEWELRY = L['Jewelry']
 	local EQUIPMENT = L['Equipment']
 	local AMMUNITION = L['Ammunition']
@@ -201,7 +201,7 @@ function addon:SetupDefaultFilters()
 				return QUEST
 			else
 				if addon.isRetail or addon.isWrath then
-					local isQuestItem, questId = GetContainerItemQuestInfo(slotData.bag, slotData.slot)
+					local isQuestItem, questId = addon:GetContainerItemQuestInfo(slotData.bag, slotData.slot)
 					return (questId or isQuestItem) and QUEST
 				else
 					return false
@@ -307,28 +307,23 @@ function addon:SetupDefaultFilters()
 					splitBySubclass = { false },
 					mergeGems = true,
 					mergeGlyphs = true,
+					splitExpansion = false,
 				}
 			})
 		end
 
 		function itemCat:GetOptions()
-			local values = {}
-			if addon.isRetail then
-				values = {
-					[TRADE_GOODS] = TRADE_GOODS,
-					[CONSUMMABLE] = CONSUMMABLE,
-					[MISCELLANEOUS] = MISCELLANEOUS,
-					[GEM] = GEM,
-					[GLYPH] = GLYPH,
-					[RECIPE] = RECIPE,
-				}
-			else
-				values = {
-					[TRADE_GOODS] = TRADE_GOODS,
-					[CONSUMMABLE] = CONSUMMABLE,
-					[MISCELLANEOUS] = MISCELLANEOUS,
-					[RECIPE] = RECIPE,
-				}
+			local values = {
+				[TRADE_GOODS] = TRADE_GOODS,
+				[CONSUMMABLE] = CONSUMMABLE,
+				[MISCELLANEOUS] = MISCELLANEOUS,
+				[RECIPE] = RECIPE,
+			}
+			if addon.isBCC then
+				values[GEM] = GEM
+			elseif not addon.isClassic then
+				values[GEM] = GEM
+				values[GLYPH] = GLYPH
 			end
 
 			return {
@@ -340,18 +335,25 @@ function addon:SetupDefaultFilters()
 					values = values
 				},
 				mergeGems = {
-					name = L['Gems are trade goods'],
-					desc = L['Consider gems as a subcategory of trade goods'],
+					name = L['Gems are trade/crafting goods'],
+					desc = L['Consider gems as a subcategory of trade/crafting goods'],
 					type = 'toggle',
 					width = 'double',
 					order = 20,
 				},
 				mergeGlyphs = {
-					name = L['Glyphs are trade goods'],
-					desc = L['Consider glyphs as a subcategory of trade goods'],
+					name = L['Glyphs are trade/crafting goods'],
+					desc = L['Consider glyphs as a subcategory of trade/crafting goods'],
 					type = 'toggle',
 					width = 'double',
 					order = 30,
+				},
+				splitExpansion = {
+					name = L['Split trade/crafting goods by expansion'],
+					desc = L['Split trade/crafting goods by expansion'],
+					type = 'toggle',
+					width = 'double',
+					order = 40,
 				},
 			}, addon:GetOptionHandler(self, true)
 		end
@@ -363,13 +365,17 @@ function addon:SetupDefaultFilters()
 			elseif class == GLYPH and self.db.profile.mergeGlyphs then
 				class, subclass = TRADE_GOODS, class
 			end
+
+			--TODO: Implement an option to override `subclass` with professions from our `addon.TRADESKILL_MAP`?
+			local reagentData = addon.ItemDatabase:ReagentData(slotData)
 			if self.db.profile.splitBySubclass[class] then
-				return subclass, class
+				return (self.db.profile.splitExpansion and reagentData and subclass..": "..reagentData.expacName)
+				or subclass, class
 			else
-				return class
+				return (self.db.profile.splitExpansion and reagentData and class..": "..reagentData.expacName)
+				or class
 			end
 		end
 
 	end
-
 end

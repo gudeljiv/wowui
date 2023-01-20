@@ -86,8 +86,8 @@ function NeedsFoodBadly:UpdateMacros()
 	}
 
 	for bag = 0, 4 do
-		for slot = 1, GetContainerNumSlots(bag) do
-			local id = GetContainerItemID(bag, slot)
+		for slot = 1, C_Container.GetContainerNumSlots(bag) do
+			local id = C_Container.GetContainerItemID(bag, slot)
 
 			if not best.food[id] and self:IsUsableFood(self.Food[id]) then
 				best.food[id] = self.Food[id]

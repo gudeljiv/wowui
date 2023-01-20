@@ -605,55 +605,157 @@ AdiBagsDB = {
 			["virtualStacks"] = {
 				["incomplete"] = true,
 			},
-			["scale"] = 1.1,
+			["columnWidth"] = {
+				["Backpack"] = 6,
+				["Bank"] = 8,
+			},
 			["modules"] = {
 				["ItemLevel"] = false,
 				["MoneyFrame"] = false,
 			},
-			["skin"] = {
-				["BankColor"] = {
-					nil, -- [1]
-					nil, -- [2]
-					0, -- [3]
-					0.8, -- [4]
-				},
-				["border"] = "None",
-				["insets"] = 2,
-			},
-			["bagFont"] = {
-				["name"] = "Arial Narrow",
-			},
+			["dimJunk"] = false,
 			["positions"] = {
 				["anchor"] = {
 					["xOffset"] = -177.833374023438,
 					["yOffset"] = 386.666717529297,
 				},
 				["Bank"] = {
-					["xOffset"] = 418.7156401789325,
-					["yOffset"] = -432.2354898974445,
+					["xOffset"] = 617.4457775429328,
+					["yOffset"] = -100.172042758757,
 				},
 				["Backpack"] = {
-					["xOffset"] = -43.35190122033237,
+					["xOffset"] = -394.4633956468751,
 					["point"] = "TOPRIGHT",
-					["yOffset"] = -487.8167105845569,
+					["yOffset"] = -431.9436380844782,
 				},
 			},
 			["filters"] = {
 				["NewItem"] = false,
 			},
-			["sectionFont"] = {
-				["name"] = "Arial Narrow",
-				["size"] = 8,
-			},
-			["columnWidth"] = {
-				["Backpack"] = 6,
-				["Bank"] = 8,
+			["theme"] = {
+				["reagentBank"] = {
+					["sectionFont"] = {
+						["name"] = "Arial Narrow",
+						["size"] = 8,
+					},
+					["bagFont"] = {
+						["name"] = "Arial Narrow",
+					},
+					["border"] = "None",
+					["insets"] = 2,
+				},
+				["currentTheme"] = "legacy theme",
+				["backpack"] = {
+					["sectionFont"] = {
+						["name"] = "Arial Narrow",
+						["size"] = 8,
+					},
+					["bagFont"] = {
+						["name"] = "Arial Narrow",
+					},
+					["border"] = "None",
+					["insets"] = 2,
+				},
+				["bank"] = {
+					["sectionFont"] = {
+						["name"] = "Arial Narrow",
+						["size"] = 8,
+					},
+					["bagFont"] = {
+						["name"] = "Arial Narrow",
+					},
+					["color"] = {
+						nil, -- [1]
+						nil, -- [2]
+						nil, -- [3]
+						0.8, -- [4]
+					},
+					["border"] = "None",
+					["insets"] = 2,
+				},
+				["themes"] = {
+					["legacy theme"] = {
+						["reagentBank"] = {
+							["sectionFont"] = {
+								["name"] = "Arial Narrow",
+								["r"] = 1,
+								["b"] = 0,
+								["g"] = 0.8196079134941101,
+								["size"] = 8,
+							},
+							["color"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								1, -- [4]
+							},
+							["bagFont"] = {
+								["name"] = "Arial Narrow",
+								["r"] = 1,
+								["b"] = 1,
+								["g"] = 1,
+								["size"] = 16,
+							},
+							["border"] = "None",
+							["insets"] = 2,
+						},
+						["backpack"] = {
+							["sectionFont"] = {
+								["name"] = "Arial Narrow",
+								["r"] = 1,
+								["b"] = 0,
+								["g"] = 0.8196079134941101,
+								["size"] = 8,
+							},
+							["color"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								1, -- [4]
+							},
+							["bagFont"] = {
+								["name"] = "Arial Narrow",
+								["r"] = 1,
+								["b"] = 1,
+								["g"] = 1,
+								["size"] = 16,
+							},
+							["border"] = "None",
+							["insets"] = 2,
+						},
+						["bank"] = {
+							["sectionFont"] = {
+								["name"] = "Arial Narrow",
+								["r"] = 1,
+								["b"] = 0,
+								["g"] = 0.8196079134941101,
+								["size"] = 8,
+							},
+							["color"] = {
+								0, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0.8, -- [4]
+							},
+							["bagFont"] = {
+								["name"] = "Arial Narrow",
+								["r"] = 1,
+								["b"] = 1,
+								["g"] = 1,
+								["size"] = 16,
+							},
+							["border"] = "None",
+							["insets"] = 2,
+						},
+					},
+				},
 			},
 			["rightClickConfig"] = false,
 			["sortingOrder"] = "byQualityAndLevel",
-			["hideAnchor"] = true,
-			["positionMode"] = "manual",
+			["scale"] = 1.1,
 			["maxHeight"] = 0.3,
+			["qualityOpacity"] = 0.05,
+			["questIndicator"] = false,
 		},
 	},
 }

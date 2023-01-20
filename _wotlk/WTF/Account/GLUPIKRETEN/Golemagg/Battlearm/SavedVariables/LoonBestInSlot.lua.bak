@@ -42,14 +42,15 @@ LBISSettings = {
 	},
 	["PhaseTooltip"] = {
 		["Phase 1"] = true,
+		["Phase 2"] = true,
 		["PreRaid"] = true,
 	},
 	["ShowPriority"] = true,
 	["SelectedRank"] = "All",
-	["SelectedSlot"] = "Ranged/Relic",
-	["SelectedSourceType"] = "All",
-	["ShowCustom"] = false,
 	["PriorityList"] = {
 	},
-	["SelectedPhase"] = "All",
+	["SelectedSourceType"] = "All",
+	["SelectedSlot"] = "Main Hand",
+	["ShowCustom"] = false,
+	["SelectedPhase"] = "BIS",
 }

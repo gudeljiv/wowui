@@ -106,7 +106,7 @@ FarmHud: enabled
 FarmHud_QuestArrow: enabled
 TrackingSwitcher: enabled
 TrinketMenu: enabled
-AuctionFaster: enabled
+AuctionFaster: disabled
 aux-addon: disabled
 TrackEverything: enabled
 Kui_Media: disabled
@@ -174,3 +174,6 @@ AceBIS: disabled
 Bistooltip: disabled
 ShadowedUF_Options: enabled
 ShadowedUnitFrames: enabled
+AskMrRobotClassic: disabled
+WowSimsExporter: disabled
+GDKPd: disabled
