@@ -1108,7 +1108,10 @@ function QuestieQuestBlacklist:Load()
         [12108] = true, -- Not in the game
         [12233] = true, -- Not in the game
         [12426] = true, -- Not in the game
+        [12479] = true, -- Not in the game
+        [12480] = true, -- Not in the game
         [12490] = true, -- Not in the game
+        [12493] = true, -- Not in the game
         [25229] = true, -- Not in the game
         [12780] = true, -- Not in the game
         [12590] = true, -- Not in the game
@@ -1117,6 +1120,7 @@ function QuestieQuestBlacklist:Load()
         [13317] = true, -- Not in the game
         [13374] = true, -- Not in the game
         [13381] = true, -- Not in the game
+        [13908] = true, -- Not in the game
         [11585] = true, -- Duplicate of 11586
         [13197] = true, -- Duplicate of 236 (Fueling the Demolishers (A))
         [13179] = true, -- Duplicate of 13177 (No Mercy for the Merciless (A))
@@ -1164,12 +1168,6 @@ function QuestieQuestBlacklist:Load()
         [9343] = QuestieCorrections.WOTLK_ONLY,
         [10445] = QuestieCorrections.WOTLK_ONLY, -- replaced by 13432 in wotlk
 
-        -- Classic+TBC Naxxramas attune (no longer exists in wotlk)
-
-        [9121] = QuestieCorrections.WOTLK_ONLY,
-        [9122] = QuestieCorrections.WOTLK_ONLY,
-        [9123] = QuestieCorrections.WOTLK_ONLY,
-
         -- Scourge invasion
         [12752] = true,
         [12753] = true,
@@ -1183,6 +1181,7 @@ function QuestieQuestBlacklist:Load()
         [12811] = true,
 
         --- Phase 3 Trial of the Crusader
+        [14151] = true, -- Cardinal Ruby (Alchemy)
         [14199] = true, -- Proof of Demise: The Black Knight (Daily heroic)
 
         --- Phase 4 Icecrown Citadel

@@ -101,6 +101,12 @@ function QuestieWotlkQuestFixes:Load()
             [questKeys.finishedBy] = {{16281}},
             [questKeys.questLevel] = -1,
         },
+        [9211] = {
+            [questKeys.specialFlags] = 1,
+        },
+        [9213] = {
+            [questKeys.specialFlags] = 1,
+        },
         [9247] = {
             [questKeys.finishedBy] = {{16281}},
         },
@@ -2708,6 +2714,7 @@ function QuestieWotlkQuestFixes:Load()
             [questKeys.requiredMinRep] = {1119,3000},
         },
         [13625] = {
+            [questKeys.objectives] = {{{33973,"Use Thrust on Melee Target"},{33974,"Use Shield-Breaker on vulnerable Ranged Target"},{33972,"Use Charge on vulnerable Charge Target"}}},
             [questKeys.preQuestGroup] = {13828,13835,13837},
             [questKeys.parentQuest] = 0,
         },
@@ -2732,6 +2739,7 @@ function QuestieWotlkQuestFixes:Load()
         [13666] = {
             [questKeys.preQuestGroup] = {13828,13835,13837},
             [questKeys.parentQuest] = 0,
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33211},{"monster", 33224}}}},
         },
         [13669] = {
             [questKeys.preQuestGroup] = {13828,13835,13837},
@@ -2748,6 +2756,7 @@ function QuestieWotlkQuestFixes:Load()
         [13673] = {
             [questKeys.preQuestGroup] = {13829,13838,13839},
             [questKeys.parentQuest] = 0,
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33211},{"monster", 33224}}}},
         },
         [13674] = {
             [questKeys.preQuestGroup] = {13829,13838,13839},
@@ -2762,8 +2771,23 @@ function QuestieWotlkQuestFixes:Load()
             [questKeys.parentQuest] = 0,
         },
         [13677] = {
+            [questKeys.objectives] = {{{33229,"Use Thrust on Melee Target"},{33243,"Use Shield-Breaker on vulnerable Ranged Target"},{33272,"Use Charge on vulnerable Charge Target"}}},
             [questKeys.preQuestGroup] = {13829,13838,13839},
             [questKeys.parentQuest] = 0,
+        },
+        [13679] = {
+            [questKeys.objectives] = {{{33448,"Argent Valiant defeated"}}},
+            [questKeys.extraObjectives] = {
+                {nil, ICON_TYPE_TALK, l10n("Mount the Stabled Quel'dorei Steed"), 0, {{"monster", 33843}}},
+                {nil, ICON_TYPE_TALK, l10n("Speak to Squire David"), 0, {{"monster", 33447}}},
+            },
+        },
+        [13680] = {
+            [questKeys.objectives] = {{{33448,"Argent Valiant defeated"}}},
+            [questKeys.extraObjectives] = {
+                {nil, ICON_TYPE_TALK, l10n("Mount the Stabled Quel'dorei Steed"), 0, {{"monster", 33843}}},
+                {nil, ICON_TYPE_TALK, l10n("Speak to Squire David"), 0, {{"monster", 33447}}},
+            },
         },
         [13681] = {
             [questKeys.startedBy] = {{33435}},

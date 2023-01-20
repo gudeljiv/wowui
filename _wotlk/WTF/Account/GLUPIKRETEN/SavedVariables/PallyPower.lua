@@ -9,9 +9,9 @@ PallyPowerDB = {
 		["Battitude - Golemagg"] = "Other",
 		["Mxyzptlk - Golemagg"] = "Other",
 		["Miqa - Golemagg"] = "Other",
-		["Vermin - Golemagg"] = "Other",
-		["Battlearm - Golemagg"] = "Other",
 		["Tadibey - Golemagg"] = "Other",
+		["Battlearm - Golemagg"] = "Other",
+		["Vermin - Golemagg"] = "Other",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -30,8 +30,8 @@ PallyPowerDB = {
 				["buffDuration"] = false,
 				["frameLocked"] = true,
 			},
-			["SalvInCombat"] = true,
 			["border"] = "None",
+			["SalvInCombat"] = true,
 			["rf"] = false,
 		},
 		["Other"] = {
@@ -70,17 +70,19 @@ PallyPower_AuraAssignments = {
 	["Skodicek"] = 1,
 	["Xjereziah"] = 2,
 	["Dariya"] = 2,
+	["Cigarette"] = 1,
 	["Lonnath"] = 0,
 	["Peakgg"] = 1,
 	["Vermina"] = 2,
 	["Rvbbitt"] = 1,
-	["Paradoxpala"] = 0,
 	["Aarvin"] = 1,
+	["Paradoxpala"] = 0,
+	["Zwiecho"] = 3,
 	["Monikà"] = 1,
 	["Berri"] = 3,
-	["Ondisch"] = 3,
+	["Griller"] = 4,
 	["Tökfilkó"] = 0,
-	["Cigarette"] = 1,
+	["Ondisch"] = 3,
 }
 PallyPower_SavedPresets = {
 	["PallyPower_Assignments"] = {

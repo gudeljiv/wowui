@@ -56,7 +56,7 @@
 				</Anchors>
 				<Layers>
 					<Layer level="ARTWORK">
-						<FontString name="$parentText" text="" inherits="SystemFont_Shadow_Med1" justifyH="CENTER" justifyV="MIDDLE" parentKey="Text" enableMouse="true">
+						<FontString name="$parentText" text="" inherits="SystemFont_Shadow_Med1" justifyH="CENTER" justifyV="MIDDLE" parentKey="Text" >
 							<Anchors>
 								<Anchor point="CENTER"/>
 							</Anchors>
