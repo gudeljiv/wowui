@@ -1,17 +1,8 @@
 ------------------------------------------------------------------------
-r567 | Zimzarina | 2023-01-20 14:14:03 +0000 (Fri, 20 Jan 2023) | 1 line
+r569 | Zimzarina | 2023-01-21 12:21:26 +0000 (Sat, 21 Jan 2023) | 1 line
 Changed paths:
-   M /trunk/Modules/BlackBook.lua
    M /trunk/Modules/Express.lua
-   M /trunk/Modules/Forward.lua
-   M /trunk/Modules/OpenAll.lua
-   M /trunk/Modules/QuickAttach.lua
-   M /trunk/Modules/Rake.lua
-   M /trunk/Modules/Select.lua
-   M /trunk/Modules/TradeBlock.lua
-   M /trunk/Postal.lua
-   M /trunk/Postal_Wrath.toc
 
-Updated to fix WoW API changes for WotLK Classic in Release 3.4.1.  The following issues #325 and #326 were fixed.
+The previous change to update for the WoW API changes in WotLK Classic in Release 3.4.1 did not correctly fix the express module.  This change should address the express module issues.  The following issue #327 was fixed.
 ------------------------------------------------------------------------
 
