@@ -1,9 +1,13 @@
 local mod	= DBM:NewMod("Razorscale", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20230118214338")
+mod:SetRevision("20230121033954")
 mod:SetCreatureID(33186)
-mod:SetEncounterID(1139)
+if not mod:IsClassic() then
+	mod:SetEncounterID(1139)
+else
+	mod:SetEncounterID(746)
+end
 mod:SetModelID(28787)
 
 mod:RegisterCombat("combat_yell", L.YellAir)

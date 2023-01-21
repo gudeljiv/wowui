@@ -444,7 +444,7 @@ if addonTable.playerClass == "DRUID" then
 				["rank"] = {
 					2, 4,
 				},
-				["buff"] = GetSpellInfo(32357),		-- ["Bear Form"],
+				["buff"] = 32357,		-- ["Bear Form"],
 			},
 			{
 				["tab"] = 2,
@@ -452,7 +452,7 @@ if addonTable.playerClass == "DRUID" then
 				["rank"] = {
 					2, 4,
 				},
-				["buff"] = GetSpellInfo(9634),		-- ["Dire Bear Form"],
+				["buff"] = 9634,		-- ["Dire Bear Form"],
 			},
 			{
 				["tab"] = 2,
@@ -460,7 +460,7 @@ if addonTable.playerClass == "DRUID" then
 				["rank"] = {
 					2, 4,
 				},
-				["buff"] = GetSpellInfo(32356),		-- ["Cat Form"],
+				["buff"] = 32356,		-- ["Cat Form"],
 			},
 		},
 		-- Druid: Survival of the Fittest (Rank 3) - 2,16
@@ -523,15 +523,15 @@ if addonTable.playerClass == "DRUID" then
 			},
 			{
 				["value"] = 2.8,
-				["buff"] = GetSpellInfo(32357),		-- ["Bear Form"],
+				["buff"] = 32357,		-- ["Bear Form"],
 			},
 			{
 				["value"] = 5,
-				["buff"] = GetSpellInfo(9634),		-- ["Dire Bear Form"],
+				["buff"] = 9634,		-- ["Dire Bear Form"],
 			},
 			{
 				["value"] = 5,
-				["buff"] = GetSpellInfo(24858),		-- ["Moonkin Form"],
+				["buff"] = 24858,		-- ["Moonkin Form"],
 			},
 		},
 		-- Druid: Heart of the Wild (Rank 5) - 2,15
@@ -542,37 +542,41 @@ if addonTable.playerClass == "DRUID" then
 		--        Shapeshift into a dire bear, increasing melee attack power by 120, armor contribution from items by 400%, and stamina by 25%.
 		-- Druid: Survival of the Fittest (Rank 3) - 2,16
 		--        Increases all attributes by 1%/2%/3% and reduces the chance you'll be critically hit by melee attacks by 1%/2%/3%.
-		["MOD_STA"] = { -- Heart of the Wild: +4%/8%/12%/16%/20% stamina in bear / dire bear
-		{
-			["tab"] = 2,
-			["num"] = 15,
-			["rank"] = {
-				0.04, 0.08, 0.12, 0.16, 0.2,
+		-- Heart of the Wild: +4%/8%/12%/16%/20% stamina in bear / dire bear
+		["MOD_STA"] = {
+			{
+				["tab"] = 2,
+				["num"] = 15,
+				["rank"] = {
+					0.04, 0.08, 0.12, 0.16, 0.2,
+				},
+				["buff"] = 32357,		-- ["Bear Form"],
 			},
-			["buff"] = GetSpellInfo(32357),		-- ["Bear Form"],
-		},
-		{
-			["tab"] = 2,
-			["num"] = 15,
-			["rank"] = {
-				0.04, 0.08, 0.12, 0.16, 0.2,
+			{
+				["tab"] = 2,
+				["num"] = 15,
+				["rank"] = {
+					0.04, 0.08, 0.12, 0.16, 0.2,
+				},
+				["buff"] = 9634,		-- ["Dire Bear Form"],
 			},
-			["buff"] = GetSpellInfo(9634),		-- ["Dire Bear Form"],
-		},
-		{ -- Survival of the Fittest: +1%/2%/3% all stats
-		["tab"] = 2,
-		["num"] = 16,
-		["rank"] = {
-			0.01, 0.02, 0.03,
-		},
-	},
-	{ -- Bear Form / Dire Bear Form: +25% stamina
-	["value"] = 0.25,
-	["buff"] = GetSpellInfo(32357),		-- ["Bear Form"],
-},
-{ -- Bear Form / Dire Bear Form: +25% stamina
-["value"] = 0.25,
-["buff"] = GetSpellInfo(9634),		-- ["Dire Bear Form"],
+			-- Survival of the Fittest: +1%/2%/3% all stats
+			{
+				["tab"] = 2,
+				["num"] = 16,
+				["rank"] = {
+					0.01, 0.02, 0.03,
+				},
+			},
+			-- Bear Form / Dire Bear Form: +25% stamina
+			{
+				["value"] = 0.25,
+				["buff"] = 32357,		-- ["Bear Form"],
+			},
+			-- Bear Form / Dire Bear Form: +25% stamina
+			{
+				["value"] = 0.25,
+				["buff"] = 9634,		-- ["Dire Bear Form"],
 			},
 		},
 		-- Druid: Survival of the Fittest (Rank 3) - 2,16
@@ -596,7 +600,7 @@ if addonTable.playerClass == "DRUID" then
 				["rank"] = {
 					0.02, 0.04, 0.06, 0.08, 0.1,
 				},
-				["buff"] = GetSpellInfo(32356),		-- ["Cat Form"],
+				["buff"] = 32356,		-- ["Cat Form"],
 			},
 		},
 		-- Druid: Survival of the Fittest (Rank 3) - 2,16
@@ -667,7 +671,7 @@ elseif addonTable.playerClass == "HUNTER" then
 		["ADD_MANA_REG_MOD_INT"] = {
 			{
 				["value"] = 0.25,
-				["buff"] = GetSpellInfo(34074),			-- ["Aspect of the Viper"],
+				["buff"] = 34074,			-- ["Aspect of the Viper"],
 			},
 		},
 		-- Hunter: Careful Aim (Rank 3) - 2,16
@@ -730,7 +734,7 @@ elseif addonTable.playerClass == "HUNTER" then
 			},
 			{
 				["value"] = 8,
-				["buff"] = GetSpellInfo(13163),		-- ["Aspect of the Monkey"],
+				["buff"] = 13163,		-- ["Aspect of the Monkey"],
 			},
 			{
 				["tab"] = 1,
@@ -738,11 +742,11 @@ elseif addonTable.playerClass == "HUNTER" then
 				["rank"] = {
 					2, 4, 6,
 				},
-				["buff"] = GetSpellInfo(13163),		-- ["Aspect of the Monkey"],
+				["buff"] = 13163,		-- ["Aspect of the Monkey"],
 			},
 			{
 				["value"] = 25,
-				["buff"] = GetSpellInfo(31567),		-- ["Deterrence"],
+				["buff"] = 31567,		-- ["Deterrence"],
 			},
 		},
 		-- Hunter: Survival Instincts (Rank 2) - 1,14
@@ -853,13 +857,8 @@ elseif addonTable.playerClass == "MAGE" then
 				},
 			},
 			{
-				-- All ranks of Mage Armor give 30% regen
-				["rank"] = setmetatable({}, {
-					__index = function(t, k)
-						return k and 0.3
-					end
-				}),
-				["buff"] = GetSpellInfo(6117),		-- ["Mage Armor"],
+				["value"] = 0.3,
+				["buff"] = 6117,		-- ["Mage Armor"],
 			},
 		},
 		-- Mage: Mind Mastery (Rank 5) - 1,22
@@ -1064,7 +1063,7 @@ elseif addonTable.playerClass == "PALADIN" then
 				["rank"] = {
 					-0.02, -0.04, -0.06,
 				},
-				["buff"] = GetSpellInfo(25781),		-- ["Righteous Fury"],
+				["buff"] = 25781,		-- ["Righteous Fury"],
 			},
 		},
 		-- Paladin: Toughness (Rank 5) - 2,5
@@ -1163,7 +1162,7 @@ elseif addonTable.playerClass == "PRIEST" then
 				["rank"] = {
 					0.05, 0.1,
 				},
-				["buff"] = GetSpellInfo(39234),		-- ["Divine Spirit"],
+				["buff"] = 39234,		-- ["Divine Spirit"],
 			},
 			{
 				["tab"] = 1,
@@ -1171,7 +1170,7 @@ elseif addonTable.playerClass == "PRIEST" then
 				["rank"] = {
 					0.05, 0.1,
 				},
-				["buff"] = GetSpellInfo(32999),		-- ["Prayer of Spirit"],
+				["buff"] = 32999,		-- ["Prayer of Spirit"],
 			},
 		},
 		-- Priest: Spiritual Guidance (Rank 5) - 2,14
@@ -1192,7 +1191,7 @@ elseif addonTable.playerClass == "PRIEST" then
 				["rank"] = {
 					0.05, 0.1,
 				},
-				["buff"] = GetSpellInfo(39234),		-- ["Divine Spirit"],
+				["buff"] = 39234,		-- ["Divine Spirit"],
 			},
 			{
 				["tab"] = 1,
@@ -1200,7 +1199,7 @@ elseif addonTable.playerClass == "PRIEST" then
 				["rank"] = {
 					0.05, 0.1,
 				},
-				["buff"] = GetSpellInfo(32999),		-- ["Prayer of Spirit"],
+				["buff"] = 32999,		-- ["Prayer of Spirit"],
 			},
 		},
 		-- Priest: OLD: Elune's Grace (Rank 6) - Buff, NE priest only
@@ -1213,7 +1212,7 @@ elseif addonTable.playerClass == "PRIEST" then
 				["MELEE"] = true,
 				["RANGED"] = true,
 				["value"] = 20,
-				["buff"] = GetSpellInfo(2651),		-- ["Elune's Grace"],
+				["buff"] = 2651,		-- ["Elune's Grace"],
 			},
 		},
 		-- Priest: Shadow Resilience (Rank 2) - 3,16
@@ -1265,7 +1264,7 @@ elseif addonTable.playerClass == "PRIEST" then
 				["SHADOW"] = true,
 				["ARCANE"] = true,
 				["value"] = -0.4,
-				["buff"] = GetSpellInfo(33206),		-- ["Pain Suppression"],
+				["buff"] = 33206,		-- ["Pain Suppression"],
 			},
 		},
 		-- Priest: Mental Strength (Rank 5) - 1,13
@@ -1350,14 +1349,12 @@ elseif addonTable.playerClass == "ROGUE" then
 				},
 			},
 			{
-				["rank"] = {
-					50, 50,
-				},
-				["buff"] = GetSpellInfo(26669),		-- ["Evasion"],
+				["value"] = 50,
+				["buff"] = 26669,		-- ["Evasion"],
 			},
 			{
 				["value"] = 15,
-				["buff"] = GetSpellInfo(31022),		-- ["Ghostly Strike"],
+				["buff"] = 31022,		-- ["Ghostly Strike"],
 			},
 		},
 		-- Rogue: Sleight of Hand (Rank 2) - 3,3
@@ -1402,14 +1399,14 @@ elseif addonTable.playerClass == "ROGUE" then
 				["SHADOW"] = true,
 				["ARCANE"] = true,
 				["value"] = -0.9,
-				["buff"] = GetSpellInfo(39666),		-- ["Cloak of Shadows"],
+				["buff"] = 39666,		-- ["Cloak of Shadows"],
 			},
 			{
 				["RANGED"] = true,
 				["rank"] = {
 					0, -0.25,
 				},
-				["buff"] = GetSpellInfo(26669),		-- ["Evasion"],
+				["buff"] = 26669,		-- ["Evasion"],
 			},
 		},
 		-- Rogue: Deadened Nerves (Rank 5) - 1,19
@@ -1473,7 +1470,7 @@ elseif addonTable.playerClass == "SHAMAN" then
 				["SHADOW"] = true,
 				["ARCANE"] = true,
 				["value"] = -0.3,
-				["buff"] = GetSpellInfo(30823),		-- ["Shamanistic Rage"],
+				["buff"] = 30823,		-- ["Shamanistic Rage"],
 			},
 		},
 		-- Shaman: Mental Quickness (Rank 3) - 2,15
@@ -1676,7 +1673,7 @@ elseif addonTable.playerClass == "WARLOCK" then
 				["SHADOW"] = true,
 				["ARCANE"] = true,
 				["value"] = -0.2,
-				["buff"] = GetSpellInfo(25228),		-- ["Soul Link"],
+				["buff"] = 25228,		-- ["Soul Link"],
 			},
 		},
 		-- Warlock: Fel Stamina (Rank 3) - 2,9
@@ -1761,7 +1758,7 @@ elseif addonTable.playerClass == "WARRIOR" then
 				["SHADOW"] = true,
 				["ARCANE"] = true,
 				["value"] = -0.75,
-				["buff"] = GetSpellInfo(41196),		-- ["Shield Wall"],
+				["buff"] = 41196,		-- ["Shield Wall"],
 			},
 			{
 				["MELEE"] = true,
@@ -1797,7 +1794,7 @@ elseif addonTable.playerClass == "WARRIOR" then
 				["SHADOW"] = true,
 				["ARCANE"] = true,
 				["value"] = 0.05,
-				["buff"] = GetSpellInfo(12292),		-- ["Death Wish"],
+				["buff"] = 12292,		-- ["Death Wish"],
 			},
 			{
 				["MELEE"] = true,
@@ -1809,7 +1806,7 @@ elseif addonTable.playerClass == "WARRIOR" then
 				["SHADOW"] = true,
 				["ARCANE"] = true,
 				["value"] = 0.2,
-				["buff"] = GetSpellInfo(13847),		-- ["Recklessness"],
+				["buff"] = 13847,		-- ["Recklessness"],
 			},
 			{
 				["HOLY"] = true,
@@ -1926,19 +1923,19 @@ StatLogic.StatModTable["ALL"] = {
 			["rank"] = {
 				0.15, 0.30,
 			},
-			["buff"] = GetSpellInfo(27154),		-- ["Lay on Hands"],
+			["buff"] = 27154,		-- ["Lay on Hands"],
 		},
 		{
 			["rank"] = {
 				0.08, 0.16, 0.25,
 			},
-			["buff"] = GetSpellInfo(15363),		-- ["Inspiration"],
+			["buff"] = 15363,		-- ["Inspiration"],
 		},
 		{
 			["rank"] = {
 				0.08, 0.16, 0.25,
 			},
-			["buff"] = GetSpellInfo(16237),		-- ["Ancestral Fortitude"],
+			["buff"] = 16237,		-- ["Ancestral Fortitude"],
 		},
 	},
 	-- Blessing of Kings - Buff
@@ -1948,11 +1945,11 @@ StatLogic.StatModTable["ALL"] = {
 	["MOD_STR"] = {
 		{
 			["value"] = 0.1,
-			["buff"] = GetSpellInfo(20217),		-- ["Blessing of Kings"],
+			["buff"] = 20217,		-- ["Blessing of Kings"],
 		},
 		{
 			["value"] = 0.1,
-			["buff"] = GetSpellInfo(25898),		-- ["Greater Blessing of Kings"],
+			["buff"] = 25898,		-- ["Greater Blessing of Kings"],
 		},
 	},
 	-- Blessing of Kings - Buff
@@ -1962,11 +1959,11 @@ StatLogic.StatModTable["ALL"] = {
 	["MOD_AGI"] = {
 		{
 			["value"] = 0.1,
-			["buff"] = GetSpellInfo(20217),		-- ["Blessing of Kings"],
+			["buff"] = 20217,		-- ["Blessing of Kings"],
 		},
 		{
 			["value"] = 0.1,
-			["buff"] = GetSpellInfo(25898),		-- ["Greater Blessing of Kings"],
+			["buff"] = 25898,		-- ["Greater Blessing of Kings"],
 		},
 	},
 	-- Blessing of Kings - Buff
@@ -1976,11 +1973,11 @@ StatLogic.StatModTable["ALL"] = {
 	["MOD_STA"] = {
 		{
 			["value"] = 0.1,
-			["buff"] = GetSpellInfo(20217),		-- ["Blessing of Kings"],
+			["buff"] = 20217,		-- ["Blessing of Kings"],
 		},
 		{
 			["value"] = 0.1,
-			["buff"] = GetSpellInfo(25898),		-- ["Greater Blessing of Kings"],
+			["buff"] = 25898,		-- ["Greater Blessing of Kings"],
 		},
 	},
 	-- Blessing of Kings - Buff
@@ -1992,11 +1989,11 @@ StatLogic.StatModTable["ALL"] = {
 	["MOD_INT"] = {
 		{
 			["value"] = 0.1,
-			["buff"] = GetSpellInfo(20217),		-- ["Blessing of Kings"],
+			["buff"] = 20217,		-- ["Blessing of Kings"],
 		},
 		{
 			["value"] = 0.1,
-			["buff"] = GetSpellInfo(25898),		-- ["Greater Blessing of Kings"],
+			["buff"] = 25898,		-- ["Greater Blessing of Kings"],
 		},
 		{
 			["meta"] = 35503,
@@ -2010,11 +2007,11 @@ StatLogic.StatModTable["ALL"] = {
 	["MOD_SPI"] = {
 		{
 			["value"] = 0.1,
-			["buff"] = GetSpellInfo(20217),		-- ["Blessing of Kings"],
+			["buff"] = 20217,		-- ["Blessing of Kings"],
 		},
 		{
 			["value"] = 0.1,
-			["buff"] = GetSpellInfo(25898),		-- ["Greater Blessing of Kings"],
+			["buff"] = 25898,		-- ["Greater Blessing of Kings"],
 		},
 	},
 	-- Whitemend Wisdom

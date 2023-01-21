@@ -54,7 +54,7 @@ L["Show Physical Hit/Haste"] = "Toucher/Hâte de mêlée"
 L["Show Physical Hit/Haste from Hit/Haste Rating"] = "Affiche le Toucher/Hâte de mêlée provenant des scores de Toucher/Hâte."
 -- /rb rating detail
 L["Show detailed conversions text"] = "Textes plus détaillés" 
-L["Show detailed text for Resiliance and Expertise conversions"] = "Rend la conversion des scores de résilience et d'expertise plus précise.\n\nLa résilience indiquera l'évitement des coups critiques, la diminution des dégâts critiques et la diminution des dégâts périodiques.\n\nL'expertise indiquera la diminution du risque que vos attaques soient esquivées et parées."
+L["Show detailed text for Resilience and Expertise conversions"] = "Rend la conversion des scores de résilience et d'expertise plus précise.\n\nLa résilience indiquera l'évitement des coups critiques, la diminution des dégâts critiques et la diminution des dégâts périodiques.\n\nL'expertise indiquera la diminution du risque que vos attaques soient esquivées et parées."
 -- /rb rating def
 L["Defense breakdown"] = "Défense détaillée"
 L["Convert Defense into Crit Avoidance, Hit Avoidance, Dodge, Parry and Block"] = "Convertis le score de défense en esquive, parade, blocage, évitement des coups et évitement des coups critiques."
@@ -477,6 +477,14 @@ L["Meta Socket"] = "Méta-châsse"
 -----------------------
 L["ItemLevel: "] = "Niveau Objet : "
 L["ItemID: "] = "ID Objet : "
+
+-------------------
+-- Always Buffed --
+-------------------
+L["Enables RatingBuster to calculate selected buff effects even if you don't really have them"] = true
+L["$class Self Buffs"] = true -- $class will be replaced with localized player class
+L["Raid Buffs"] = true
+
 -----------------------
 -- Matching Patterns --
 -----------------------
@@ -535,7 +543,7 @@ L["numberPatterns"] = {
 	{pattern = "(%d+)([^%d%%|]+)", addInfo = "AfterStat",}, -- [發光的暗影卓奈石] +6法術傷害及5耐力
 }
 L["separators"] = {
-	"/", " et ", ",", "%. ", " pour ", "&", " : "
+	"/", " et ", ",", "%. ", " pour ", "&", " : ", "\n"
 }
 --[[ Rating ID
 CR_WEAPON_SKILL = 1;
@@ -549,19 +557,13 @@ CR_HIT_SPELL = 8;
 CR_CRIT_MELEE = 9;
 CR_CRIT_RANGED = 10;
 CR_CRIT_SPELL = 11;
-CR_HIT_TAKEN_MELEE = 12;
-CR_HIT_TAKEN_RANGED = 13;
-CR_HIT_TAKEN_SPELL = 14;
-CR_CRIT_TAKEN_MELEE = 15;
-CR_CRIT_TAKEN_RANGED = 16;
-CR_CRIT_TAKEN_SPELL = 17;
+CR_RESILIENCE_CRIT_TAKEN = 15;
+CR_RESILIENCE_PLAYER_DAMAGE_TAKEN = 16;
 CR_HASTE_MELEE = 18;
 CR_HASTE_RANGED = 19;
 CR_HASTE_SPELL = 20;
-CR_WEAPON_SKILL_MAINHAND = 21;
-CR_WEAPON_SKILL_OFFHAND = 22;
-CR_WEAPON_SKILL_RANGED = 23;
 CR_EXPERTISE = 24;
+CR_ARMOR_PENETRATION = 25;
 --
 SPELL_STAT1_NAME = "Strength"
 SPELL_STAT2_NAME = "Agility"
@@ -596,7 +598,7 @@ L["statList"] = {
 	{pattern = "score de toucher à distance", id = CR_HIT_RANGED},
 	{pattern = "score de toucher", id = CR_HIT},
 
-	{pattern = "résilience", id = CR_CRIT_TAKEN_MELEE}, -- resilience is implicitly a rating
+	{pattern = "résilience", id = CR_RESILIENCE_CRIT_TAKEN}, -- resilience is implicitly a rating
 
 	{pattern = "score de hâte des sorts", id = CR_HASTE_SPELL},
 	{pattern = "score de hâte à distance", id = CR_HASTE_RANGED},
@@ -605,7 +607,7 @@ L["statList"] = {
 	{pattern = "score d’expertise", id = CR_EXPERTISE},
 	{pattern = "score d'expertise", id = CR_EXPERTISE},
 
-	{pattern = "score de pénétration d'armure", id = CR_ARMOR_PENETRATION},
+	{pattern = "pénétration d'armure", id = CR_ARMOR_PENETRATION},
 	{pattern = string.lower(ARMOR), id = ARMOR},
 	{pattern = "puissance d'attaque", id = ATTACK_POWER},
 }
@@ -633,6 +635,7 @@ L["$value to be Dodged/Parried"] = "$value esquivé/paré"
 L["$value to be Crit"] = "$value recevoir CC"
 L["$value Crit Dmg Taken"] = "$value dégâts CC"
 L["$value DOT Dmg Taken"] = "$value dégâts DoT"
+L["$value Dmg Taken"] = true
 L["$value% Parry"] = "$value% parer"
 -- for hit rating showing both physical and spell conversions
 -- (+1.21%, S+0.98%)
