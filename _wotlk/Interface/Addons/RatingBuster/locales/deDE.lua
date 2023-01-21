@@ -58,7 +58,7 @@ L["Show Physical Hit/Haste"] = true
 L["Show Physical Hit/Haste from Hit/Haste Rating"] = true
 -- /rb rating detail
 L["Show detailed conversions text"] = "Zeige detaillierten Umrechnungtext"
-L["Show detailed text for Resiliance and Expertise conversions"] = "Zeige detaillierten Text für Abhärtungs- und Waffenkundumrechnung"
+L["Show detailed text for Resilience and Expertise conversions"] = "Zeige detaillierten Text für Abhärtungs- und Waffenkundumrechnung"
 -- /rb rating def
 L["Defense breakdown"] = "Verteidigungsanalyse"
 L["Convert Defense into Crit Avoidance Hit Avoidance, Dodge, Parry and Block"] = "Wandle Verteidigung in Vermeidung von (kritischen) Treffern, Ausweichen, Parieren und Blocken um"
@@ -481,6 +481,14 @@ L["Meta Socket"] = EMPTY_SOCKET_META
 -----------------------
 --	["ItemLevel: "] = true,
 --	["ItemID: "] = true,
+
+-------------------
+-- Always Buffed --
+-------------------
+L["Enables RatingBuster to calculate selected buff effects even if you don't really have them"] = "Erlaubt RatingBuster gewählte Buffs zu berechnen, auch wenn du diese nicht wirklich hast"
+L["$class Self Buffs"] = "Eigenbuffs"
+L["Raid Buffs"] = "Raidbuffs"
+
 -----------------------
 -- Matching Patterns --
 -----------------------
@@ -538,7 +546,7 @@ L["numberPatterns"] = {
 	{pattern = "(%d+)([^%d%%|]+)", addInfo = "AfterStat",}, -- [發光的暗影卓奈石] +6法術傷害及5耐力
 }
 L["separators"] = {
-	"/", " und ", ",", "%. ", " für ", "&", ":"
+	"/", " und ", ",", "%. ", " für ", "&", ":", "\n"
 }
 --[[ Rating ID
 CR_WEAPON_SKILL = 1;
@@ -552,19 +560,13 @@ CR_HIT_SPELL = 8;
 CR_CRIT_MELEE = 9;
 CR_CRIT_RANGED = 10;
 CR_CRIT_SPELL = 11;
-CR_HIT_TAKEN_MELEE = 12;
-CR_HIT_TAKEN_RANGED = 13;
-CR_HIT_TAKEN_SPELL = 14;
-CR_CRIT_TAKEN_MELEE = 15;
-CR_CRIT_TAKEN_RANGED = 16;
-CR_CRIT_TAKEN_SPELL = 17;
+CR_RESILIENCE_CRIT_TAKEN = 15;
+CR_RESILIENCE_PLAYER_DAMAGE_TAKEN = 16;
 CR_HASTE_MELEE = 18;
 CR_HASTE_RANGED = 19;
 CR_HASTE_SPELL = 20;
-CR_WEAPON_SKILL_MAINHAND = 21;
-CR_WEAPON_SKILL_OFFHAND = 22;
-CR_WEAPON_SKILL_RANGED = 23;
 CR_EXPERTISE = 24;
+CR_ARMOR_PENETRATION = 25;
 --
 SPELL_STAT1_NAME = "Stärke"
 SPELL_STAT2_NAME = "Beweglichkeit"
@@ -591,7 +593,7 @@ L["statList"] = {
 	{pattern = "trefferwertung", id = CR_HIT_RANGED},
 	{pattern = "trefferwertung", id = CR_HIT},
 
-	{pattern = "abhärtungswertung", id = CR_CRIT_TAKEN_MELEE}, -- resilience is implicitly a rating
+	{pattern = "abhärtungswertung", id = CR_RESILIENCE_CRIT_TAKEN}, -- resilience is implicitly a rating
 
 	{pattern = "zaubertempowertung", id = CR_HASTE_SPELL},
 	{pattern = "distanztempowertung", id = CR_HASTE_RANGED},
@@ -630,6 +632,7 @@ L["$value to be Dodged/Parried"] = "$value wird Ausgewichen/Pariert"
 L["$value to be Crit"] = "$value wird kritisch"
 L["$value Crit Dmg Taken"] = "$value erlittener Schaden"
 L["$value DOT Dmg Taken"] = "$value erlittener Schaden durch DOTs"
+L["$value Dmg Taken"] = true
 L["$value% Parry"] = "$value% Parieren"
 -- for hit rating showing both physical and spell conversions
 -- (+1.21%, S+0.98%)

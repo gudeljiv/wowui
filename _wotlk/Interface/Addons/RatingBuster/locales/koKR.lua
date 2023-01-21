@@ -58,7 +58,7 @@ L["Show Physical Hit/Haste"] = true
 L["Show Physical Hit/Haste from Hit/Haste Rating"] = true
 -- /rb rating detail
 L["Show detailed conversions text"] = "세부적인 평점 변화 표시"
-L["Show detailed text for Resiliance and Expertise conversions"] = "탄력도와 숙련의 세부적인 평점 변화 표시를 사용합니다."
+L["Show detailed text for Resilience and Expertise conversions"] = "탄력도와 숙련의 세부적인 평점 변화 표시를 사용합니다."
 -- /rb rating def
 L["Defense breakdown"] = "방어 숙련 세분화"
 L["Convert Defense into Crit Avoidance Hit Avoidance, Dodge, Parry and Block"] = "치명타 공격 회피, 공격 회피, 회피, 무기 막기, 방패 막기 등으로 방어 숙련을 세분화합니다."
@@ -476,6 +476,14 @@ L["Meta Socket"] = EMPTY_SOCKET_META
 -----------------------
 L["ItemLevel: "] = "아이템레벨: "
 L["ItemID: "] = "아이템ID: "
+
+-------------------
+-- Always Buffed --
+-------------------
+L["Enables RatingBuster to calculate selected buff effects even if you don't really have them"] = true
+L["$class Self Buffs"] = true -- $class will be replaced with localized player class
+L["Raid Buffs"] = true
+
 -----------------------
 -- Matching Patterns --
 -----------------------
@@ -532,7 +540,7 @@ L["numberPatterns"] = {
 	{pattern = "(%d+)([^%d%%|]+)", addInfo = "AfterStat",}, -- [發光的暗影卓奈石] +6法術傷害及5耐力
 }
 L["separators"] = {
-	"/", " and ", ",", "%. ", " for ", "&", ":"
+	"/", " and ", ",", "%. ", " for ", "&", ":", "\n"
 }
 --[[ Rating ID
 CR_WEAPON_SKILL = 1;
@@ -546,19 +554,13 @@ CR_HIT_SPELL = 8;
 CR_CRIT_MELEE = 9;
 CR_CRIT_RANGED = 10;
 CR_CRIT_SPELL = 11;
-CR_HIT_TAKEN_MELEE = 12;
-CR_HIT_TAKEN_RANGED = 13;
-CR_HIT_TAKEN_SPELL = 14;
-CR_CRIT_TAKEN_MELEE = 15;
-CR_CRIT_TAKEN_RANGED = 16;
-CR_CRIT_TAKEN_SPELL = 17;
+CR_RESILIENCE_CRIT_TAKEN = 15;
+CR_RESILIENCE_PLAYER_DAMAGE_TAKEN = 16;
 CR_HASTE_MELEE = 18;
 CR_HASTE_RANGED = 19;
 CR_HASTE_SPELL = 20;
-CR_WEAPON_SKILL_MAINHAND = 21;
-CR_WEAPON_SKILL_OFFHAND = 22;
-CR_WEAPON_SKILL_RANGED = 23;
 CR_EXPERTISE = 24;
+CR_ARMOR_PENETRATION = 25;
 --
 SPELL_STAT1_NAME = "힘"
 SPELL_STAT2_NAME = "민첩성"
@@ -588,7 +590,7 @@ L["statList"] = {
 	{pattern = "원거리 적중도", id = CR_HIT_RANGED},
 	{pattern = "적중도", id = CR_HIT},
 
-	{pattern = "탄력도", id = CR_CRIT_TAKEN_MELEE}, -- resilience is implicitly a rating
+	{pattern = "탄력도", id = CR_RESILIENCE_CRIT_TAKEN}, -- resilience is implicitly a rating
 
 	{pattern = "주문 시전 가속도", id = CR_HASTE_SPELL},
 	{pattern = "원거리 공격 가속도", id = CR_HASTE_RANGED},
@@ -625,6 +627,7 @@ L["$value to be Dodged/Parried"] = "이후 회피 감소/무기막기 감소 $va
 L["$value to be Crit"] = "이후 치명타 $value"
 L["$value Crit Dmg Taken"] = "가질 치명타 데미지 $value"
 L["$value DOT Dmg Taken"] = "가질 DOT 데미지 $value"
+L["$value Dmg Taken"] = true
 L["$value% Parry"] = "무막 $value%"
 -- for hit rating showing both physical and spell conversions
 -- (+1.21%, S+0.98%)

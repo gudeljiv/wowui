@@ -24,7 +24,7 @@ local L = LibStub("AceLocale-3.0"):GetLocale("RatingBuster")
 RatingBuster = LibStub("AceAddon-3.0"):NewAddon("RatingBuster", "AceConsole-3.0", "AceEvent-3.0", "AceBucket-3.0")
 RatingBuster.title = "Rating Buster"
 --@non-debug@
-RatingBuster.version = "1.6.4"
+RatingBuster.version = "1.7.3"
 --@end-non-debug@
 --[==[@debug@
 RatingBuster.version = "(development)"
@@ -53,7 +53,6 @@ local _
 local _, class = UnitClass("player")
 local calcLevel, playerLevel
 local profileDB, globalDB -- Initialized in :OnInitialize()
-
 
 -- Localize globals
 local _G = getfenv(0)
@@ -238,7 +237,7 @@ local options = {
 				detailedConversionText = {
 					type = 'toggle',
 					name = L["Show detailed conversions text"],
-					desc = L["Show detailed text for Resiliance and Expertise conversions"],
+					desc = L["Show detailed text for Resilience and Expertise conversions"],
 				},
 				defBreakDown = {
 					type = 'toggle',
@@ -988,6 +987,48 @@ local options = {
 				},
 			},
 		},
+		alwaysBuffed = {
+			type = "group",
+			name = "AlwaysBuffed",
+			order = 4,
+			get = function(info)
+				local db = RatingBuster.db:GetNamespace("AlwaysBuffed")
+				return db.profile[info[#info]]
+			end,
+			set = function(info, v)
+				local db = RatingBuster.db:GetNamespace("AlwaysBuffed")
+				db.profile[info[#info]] = v
+				clearCache()
+				StatLogic:InvalidateEvent("UNIT_AURA", "player")
+			end,
+      args = {
+        description = {
+					type = "description",
+          name = L["Enables RatingBuster to calculate selected buff effects even if you don't really have them"],
+          order = 1,
+        },
+        description2 = {
+					type = "description",
+          name = " ",
+          order = 2,
+        },
+        [class] = {
+					type = "group",
+					dialogInline = true,
+          name = gsub(L["$class Self Buffs"], "$class", (UnitClass("player"))),
+          order = 5,
+					hidden = true,
+					args = {},
+        },
+        ALL = {
+					type = "group",
+					dialogInline = true,
+          name = L["Raid Buffs"],
+          order = 6,
+					args = {},
+        },
+      },
+		},
 	},
 }
 
@@ -1345,7 +1386,7 @@ do
 					end
 					local source = ""
 					if case.buff then
-						source = case.buff
+						source = GetSpellInfo(case.buff)
 					elseif case.tab then
 						source = StatLogic:GetOrderedTalentInfo(case.tab, case.num)
 					elseif case.glyph then
@@ -1382,16 +1423,42 @@ do
 				addStatModOption(add, mod, sources)
 			end
 		end
+	end
 
-		RatingBuster.db = LibStub("AceDB-3.0"):New("RatingBusterDB", defaults, class)
-		RatingBuster.db.RegisterCallback(RatingBuster, "OnProfileChanged", "RefreshConfig")
-		RatingBuster.db.RegisterCallback(RatingBuster, "OnProfileCopied", "RefreshConfig")
-		RatingBuster.db.RegisterCallback(RatingBuster, "OnProfileReset", "RefreshConfig")
-		profileDB = RatingBuster.db.profile
-		globalDB = RatingBuster.db.global
+	-- Ignore Stat Mods that mostly exist for Tank Points
+	local ignoredStatMods = {
+		["MOD_DMG_TAKEN"] = true,
+		["ADD_DODGE"] = true,
+		["ADD_HIT_TAKEN"] = true,
+	}
+	local function GenerateAuraOptions()
+		for modType, modList in pairs(StatLogic.StatModTable) do
+			for modName, mods in pairs(modList) do
+				if not ignoredStatMods[modName] then
+					for key, mod in pairs(mods) do
+						if mod.buff then
+							local name, _, icon = GetSpellInfo(mod.buff)
+							local option = {
+								type = 'toggle',
+								name = "|T"..icon..":25:25:-2:0|t"..name,
+							}
+							options.args.alwaysBuffed.args[modType].args[name] = option
+							options.args.alwaysBuffed.args[modType].hidden = false
 
-		options.args.profiles = LibStub("AceDBOptions-3.0"):GetOptionsTable(RatingBuster.db)
-		options.args.profiles.order = 4
+							-- If it's a spell the player knows, use the highest rank for the description
+							local spellId = mod.buff
+							if IsPlayerSpell(spellId) then
+								spellId = select(7,GetSpellInfo(name)) or spellId
+							end
+							local spell = Spell:CreateFromSpellID(spellId)
+							spell:ContinueOnSpellLoad(function()
+								option.desc = spell:GetSpellDescription()
+							end)
+						end
+					end
+				end
+			end
+		end
 	end
 
 	local f = CreateFrame("Frame")
@@ -1399,6 +1466,8 @@ do
 	f:SetScript("OnEvent", function()
 		if StatLogic:TalentCacheExists() then
 			GenerateStatModOptions()
+			GenerateAuraOptions()
+			RatingBuster:InitializeDatabase()
 		else
 			-- Talents are not guaranteed to exist on SPELLS_CHANGED,
 			-- and there is no definite event for when they will exist.
@@ -1407,6 +1476,8 @@ do
 			ticker = C_Timer.NewTicker(1, function()
 				if StatLogic:TalentCacheExists() then
 					GenerateStatModOptions()
+					GenerateAuraOptions()
+					RatingBuster:InitializeDatabase()
 					ticker:Cancel()
 				end
 			end)
@@ -1461,6 +1532,32 @@ end
 function RatingBuster:OnInitialize()
 	LibStub("AceConfig-3.0"):RegisterOptionsTable(addonNameWithVersion, options)
 	LibStub("AceConfigDialog-3.0"):AddToBlizOptions(addonNameWithVersion, addonName)
+end
+
+function RatingBuster:InitializeDatabase()
+	RatingBuster.db = LibStub("AceDB-3.0"):New("RatingBusterDB", defaults, class)
+	RatingBuster.db.RegisterCallback(RatingBuster, "OnProfileChanged", "RefreshConfig")
+	RatingBuster.db.RegisterCallback(RatingBuster, "OnProfileCopied", "RefreshConfig")
+	RatingBuster.db.RegisterCallback(RatingBuster, "OnProfileReset", "RefreshConfig")
+	profileDB = RatingBuster.db.profile
+	globalDB = RatingBuster.db.global
+
+	options.args.profiles = LibStub("AceDBOptions-3.0"):GetOptionsTable(RatingBuster.db)
+	options.args.profiles.order = 5
+
+	local LibDualSpec = LibStub('LibDualSpec-1.0', true)
+
+	if LibDualSpec then
+		LibDualSpec:EnhanceDatabase(RatingBuster.db, "RatingBusterDB")
+		LibDualSpec:EnhanceOptions(options.args.profiles, RatingBuster.db)
+	end
+
+	local always_buffed = RatingBuster.db:RegisterNamespace("AlwaysBuffed", {
+		profile = {
+			['*'] = false
+		}
+	})
+	StatLogic:SetupAuraInfo(always_buffed.profile)
 end
 
 SLASH_RATINGBUSTER1, SLASH_RATINGBUSTER2 = "/ratingbuster", "/rb"
@@ -1540,13 +1637,6 @@ local processedDodge, processedParry, processedMissed
 local ITEM_MIN_LEVEL_PATTERN = ITEM_MIN_LEVEL:gsub("%%d", "%%d+")
 local BIND_TRADE_PATTERN = BIND_TRADE_TIME_REMAINING:gsub("%%s", ".*")
 local BEGIN_ITEM_SPELL_TRIGGER_ONUSE = "^" .. ITEM_SPELL_TRIGGER_ONUSE
-local colorPrecision = 0.0001
-local AreColorsEqual = function(a, b)
-	return math.abs(a.r - b.r) < colorPrecision
-	  and math.abs(a.g - b.g) < colorPrecision
-	  and math.abs(a.b - b.b) < colorPrecision
-	  and math.abs(a.a - b.a) < colorPrecision
-end
 
 function RatingBuster.ProcessTooltip(tooltip, name, link)
 	-- Check if we're in standby mode
@@ -1608,6 +1698,7 @@ function RatingBuster.ProcessTooltip(tooltip, name, link)
 		local fontString = _G[tipTextLeft..i]
 		local text = fontString:GetText()
 		if text then
+			local color = CreateColor(fontString:GetTextColor())
 			if isRecipe and not tooltip.rb_processed_nested_recipe then
 				-- Workaround to detect nested items from recipes
 				-- Check if any line is:
@@ -1622,9 +1713,8 @@ function RatingBuster.ProcessTooltip(tooltip, name, link)
 				--	TBC/Wrath [Design: Glinting Pyrestone] 32306
 				local quality = false
 				if i > 3 then
-					local color = CreateColor(fontString:GetTextColor())
 					for j = Enum.ItemQuality.Good, Enum.ItemQuality.Heirloom do
-						if AreColorsEqual(ITEM_QUALITY_COLORS[j].color, color)
+						if StatLogic.AreColorsEqual(ITEM_QUALITY_COLORS[j].color, color)
 						and not (
 							(j == Enum.ItemQuality.Heirloom and text:match(BIND_TRADE_PATTERN))
 							or (j == Enum.ItemQuality.Good and text:match(BEGIN_ITEM_SPELL_TRIGGER_ONUSE))
@@ -1641,7 +1731,7 @@ function RatingBuster.ProcessTooltip(tooltip, name, link)
 				end
 			end
 
-			text = RatingBuster:ProcessLine(text, link)
+			text = RatingBuster:ProcessLine(text, link, color)
 			if text then
 				fontString:SetText(text)
 			end
@@ -1740,7 +1830,7 @@ function RatingBuster.ProcessTooltip(tooltip, name, link)
 end
 
 
-function RatingBuster:ProcessLine(text, link)
+function RatingBuster:ProcessLine(text, link, color)
 	-- Get data from cache if available
 	local cacheID = text..calcLevel
 	local cacheText = cache[cacheID]
@@ -1763,7 +1853,7 @@ function RatingBuster:ProcessLine(text, link)
 			end
 		end
 		-- SplitDoJoin
-		text = RatingBuster:SplitDoJoin(text, separatorTable, link)
+		text = RatingBuster:SplitDoJoin(text, separatorTable, link, color)
 		cache[cacheID] = text
 		-- SetText
 		return text
@@ -1779,7 +1869,7 @@ end
 -- separatorTable = {"/", " and ", ","}
 -- RatingBuster:SplitDoJoin("+24 Agility/+4 Stamina, +4 Dodge and +4 Spell Crit/+5 Spirit", {"/", " and ", ",", "%. ", " for ", "&"})
 -- RatingBuster:SplitDoJoin("+6法術傷害及5耐力", {"/", "和", ",", "。", " 持續 ", "&", "及",})
-function RatingBuster:SplitDoJoin(text, separatorTable, link)
+function RatingBuster:SplitDoJoin(text, separatorTable, link, color)
 	if type(separatorTable) == "table" and table.maxn(separatorTable) > 0 then
 		local sep = tremove(separatorTable, 1)
 		text =  gsub(text, sep, "@")
@@ -1789,18 +1879,18 @@ function RatingBuster:SplitDoJoin(text, separatorTable, link)
 		for _, t in ipairs(text) do
 			--self:Print(t[1])
 			copyTable(tempTable, separatorTable)
-			tinsert(processedText, self:SplitDoJoin(t, tempTable, link))
+			tinsert(processedText, self:SplitDoJoin(t, tempTable, link, color))
 		end
 		-- Join text
 		return (gsub(strjoin("@", unpack(processedText)), "@", sep))
 	else
 		--self:Print(cacheID)
-		return self:ProcessText(text, link)
+		return self:ProcessText(text, link, color)
 	end
 end
 
 
-function RatingBuster:ProcessText(text, link)
+function RatingBuster:ProcessText(text, link, color)
 	--self:Print(text)
 	-- Find and set color code (used to fix gem text color) pattern:|cxxxxxxxx
 	local currentColorCode = select(3, strfind(text, "(|c%x%x%x%x%x%x%x%x)")) or "|r"
@@ -1858,10 +1948,24 @@ function RatingBuster:ProcessText(text, link)
 							else
 								infoString = format("%+.2f%%", effect)
 							end
-						elseif stat.id >= 15 and stat.id <= 17 then -- Resilience
+						elseif stat.id == CR_RESILIENCE_CRIT_TAKEN then -- Resilience
 							effect = effect * -1
 							if profileDB.detailedConversionText then
-								infoString = gsub(L["$value to be Crit"], "$value", format("%+.2f%%%%", effect))..", "..gsub(L["$value Crit Dmg Taken"], "$value", format("%+.2f%%%%", effect * 2))..", "..gsub(L["$value DOT Dmg Taken"], "$value", format("%+.2f%%%%", effect))
+								local infoTable = {}
+
+								if tocversion >= 30000 then
+									-- Wrath
+									tinsert(infoTable, (L["$value to be Crit"]:gsub("$value", format("%+.2f%%%%", effect))))
+									tinsert(infoTable, (L["$value Crit Dmg Taken"]:gsub("$value", format("%+.2f%%%%", effect * RESILIENCE_CRIT_CHANCE_TO_DAMAGE_REDUCTION_MULTIPLIER))))
+									tinsert(infoTable, (L["$value Dmg Taken"]:gsub("$value", format("%+.2f%%%%", effect * RESILIENCE_CRIT_CHANCE_TO_CONSTANT_DAMAGE_REDUCTION_MULTIPLIER))))
+								elseif tocversion >= 20000 then
+									-- TBC
+									tinsert(infoTable, (L["$value to be Crit"]:gsub("$value", format("%+.2f%%%%", effect))))
+									tinsert(infoTable, (L["$value Crit Dmg Taken"]:gsub("$value", format("%+.2f%%%%", effect * 2))))
+									tinsert(infoTable, (L["$value DOT Dmg Taken"]:gsub("$value", format("%+.2f%%%%", effect))))
+								end
+
+								infoString = strjoin(", ", unpack(infoTable))
 							else
 								infoString = format("%+.2f%%", effect)
 							end
@@ -2115,7 +2219,10 @@ function RatingBuster:ProcessText(text, link)
 							if tocversion >= 20400 then -- 2.4.0
 								local _, int = UnitStat("player", 4)
 								local _, spi = UnitStat("player", 5)
-								effect = value * GSM("ADD_MANA_REG_MOD_INT") + (StatLogic:GetNormalManaRegenFromSpi(spi, int + value, calcLevel) - StatLogic:GetNormalManaRegenFromSpi(spi, int, calcLevel)) * GSM("ADD_MANA_REG_MOD_NORMAL_MANA_REG")
+								effect = value * GSM("ADD_MANA_REG_MOD_INT")
+									+ (StatLogic:GetNormalManaRegenFromSpi(spi, int + value, calcLevel)
+									- StatLogic:GetNormalManaRegenFromSpi(spi, int, calcLevel)) * GSM("ADD_MANA_REG_MOD_NORMAL_MANA_REG")
+									+ value * 15 * GSM("MOD_MANA") * GSM("ADD_MANA_REG_MOD_MANA") -- Replenishment
 							else
 								effect = value * GSM("ADD_MANA_REG_MOD_INT")
 							end
@@ -2128,7 +2235,10 @@ function RatingBuster:ProcessText(text, link)
 							if tocversion >= 20400 then -- 2.4.0
 								local _, int = UnitStat("player", 4)
 								local _, spi = UnitStat("player", 5)
-								effect = value * GSM("ADD_MANA_REG_MOD_INT") + StatLogic:GetNormalManaRegenFromSpi(spi, int + value, calcLevel) - StatLogic:GetNormalManaRegenFromSpi(spi, int, calcLevel)
+								effect = value * GSM("ADD_MANA_REG_MOD_INT")
+									+ StatLogic:GetNormalManaRegenFromSpi(spi, int + value, calcLevel)
+									- StatLogic:GetNormalManaRegenFromSpi(spi, int, calcLevel)
+									+ value * 15 * GSM("MOD_MANA") * GSM("ADD_MANA_REG_MOD_MANA") -- Replenishment
 							else
 								effect = value * GSM("ADD_MANA_REG_MOD_INT")
 							end
@@ -2227,10 +2337,8 @@ function RatingBuster:ProcessText(text, link)
 						-----------
 						local statmod = 1
 						if profileDB.enableStatMods then
-							local finalArmor = StatLogic:GetFinalArmor(link, text)
-							if finalArmor then
-								value = finalArmor
-							end
+							local base, bonus = StatLogic:GetArmorDistribution(link, value, color)
+							value = base * GSM("MOD_ARMOR") + bonus
 						end
 						local infoTable = {}
 						local effect = value * GSM("ADD_AP_MOD_ARMOR") * GSM("MOD_AP")
@@ -2511,6 +2619,7 @@ local summaryCalcData = {
 				 + (sum["INT"] * GSM("ADD_MANA_REG_MOD_INT"))
 				 + (StatLogic:GetNormalManaRegenFromSpi(spi + sum["SPI"], int + sum["INT"], calcLevel)
 				 - StatLogic:GetNormalManaRegenFromSpi(spi, int, calcLevel)) * GSM("ADD_MANA_REG_MOD_NORMAL_MANA_REG")
+				 + summaryFunc["MANA"](sum) * GSM("ADD_MANA_REG_MOD_MANA")
 			else
 				return sum["MANA_REG"]
 				 + (sum["INT"] * GSM("ADD_MANA_REG_MOD_INT"))
@@ -2530,6 +2639,7 @@ local summaryCalcData = {
 				 + (sum["INT"] * GSM("ADD_MANA_REG_MOD_INT"))
 				 + StatLogic:GetNormalManaRegenFromSpi(spi + sum["SPI"], int + sum["INT"], calcLevel)
 				 - StatLogic:GetNormalManaRegenFromSpi(spi, int, calcLevel)
+				 + summaryFunc["MANA"](sum) * GSM("ADD_MANA_REG_MOD_MANA")
 			else
 				return sum["MANA_REG"]
 				 + (sum["INT"] * GSM("ADD_MANA_REG_MOD_INT"))

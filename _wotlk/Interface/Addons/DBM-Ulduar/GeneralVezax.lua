@@ -1,11 +1,16 @@
 local mod	= DBM:NewMod("GeneralVezax", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20230118214338")
+mod:SetRevision("20230121033954")
 mod:SetCreatureID(33271)
-mod:SetEncounterID(1134)
+if not mod:IsClassic() then
+	mod:SetEncounterID(1134)
+else
+	mod:SetEncounterID(755)
+end
 mod:SetModelID(28548)
 mod:SetUsedIcons(7, 8)
+mod:SetHotfixNoticeRev(20230120000000)
 
 mod:RegisterCombat("combat")
 
@@ -77,7 +82,7 @@ function mod:OnCombatStart(delay)
 	timerLifeLeechCD:Start(16.9-delay)
 	timerSaroniteVapors:Start(30-delay, 1)
 	timerEnrage:Start(-delay)
-	timerHardmode:Start(-delay)
+	timerHardmode:Start(self:IsClassic() and 254 or 189-delay)
 	timerNextSurgeofDarkness:Start(-delay)
 end
 
@@ -128,7 +133,7 @@ function mod:SPELL_CAST_SUCCESS(args)
 		timerLifeLeechCD:Start()
 		if args:IsPlayer() then
 			specWarnLifeLeechYou:Show()
-			specWarnLifeLeechYou:Play("runout")
+			specWarnLifeLeechYou:Play("scatter")
 			yellLifeLeech:Yell()
 		elseif self:CheckNearby(13, args.destName) then--Can't use 15, only 13 or 18
 			specWarnLifeLeechNear:Show(args.destName)
@@ -146,7 +151,8 @@ function mod:RAID_BOSS_EMOTE(emote)
 	if emote == L.EmoteSaroniteVapors or emote:find(L.EmoteSaroniteVapors) then
 		self.vb.vaporsCount = self.vb.vaporsCount + 1
 		warnSaroniteVapor:Show(self.vb.vaporsCount)
-		if self.vb.vaporsCount < 6 then
+		local expectedVapors = self:IsClassic() and 8 or 6
+		if self.vb.vaporsCount < expectedVapors then
 			timerSaroniteVapors:Start(nil, self.vb.vaporsCount+1)
 		end
 	end

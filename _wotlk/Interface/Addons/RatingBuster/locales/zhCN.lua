@@ -57,7 +57,7 @@ L["Show Physical Hit/Haste"] = "显示物理命中"
 L["Show Physical Hit/Haste from Hit/Haste Rating"] = "显示命中/急速等级给的物理命中/急速加成"
 -- /rb rating detail
 L["Show detailed conversions text"] = "显示详细转换文本"
-L["Show detailed text for Resiliance and Expertise conversions"] = "显示详细的抗性和精准等级转换"
+L["Show detailed text for Resilience and Expertise conversions"] = "显示详细的抗性和精准等级转换"
 -- /rb rating def
 L["Defense breakdown"] = "分析防御"
 L["Convert Defense into Crit Avoidance Hit Avoidance, Dodge, Parry and Block"] = "将防御分为避免爆击、避免击中、躲闪、招架和格挡"
@@ -474,6 +474,14 @@ L["Meta Socket"] = EMPTY_SOCKET_META
 -----------------------
 L["ItemLevel: "] = "物品等级: "
 L["ItemID: "] = "物品编号: "
+
+-------------------
+-- Always Buffed --
+-------------------
+L["Enables RatingBuster to calculate selected buff effects even if you don't really have them"] = "指定常驻buff，就算身上没有buff，RatingBuster也会当成有来计算"
+L["$class Self Buffs"] = "$class个人Buff"
+L["Raid Buffs"] = "团队Buff"
+
 -----------------------
 -- Matching Patterns --
 -----------------------
@@ -530,7 +538,7 @@ L["numberPatterns"] = {
 	{pattern = "(%d+)([^%d%%|]+)", addInfo = "AfterStat",}, -- [发光的暗影卓奈石] +6法术伤害及5耐力
 }
 L["separators"] = {
-	"/", "和", ",", "。", " 持续 ", "&", "及", "并", "，","、",
+	"/", "和", ",", "。", " 持续 ", "&", "及", "并", "，","、", "\n"
 }
 --[[ Rating ID
 CR_WEAPON_SKILL = 1;
@@ -544,19 +552,13 @@ CR_HIT_SPELL = 8;
 CR_CRIT_MELEE = 9;
 CR_CRIT_RANGED = 10;
 CR_CRIT_SPELL = 11;
-CR_HIT_TAKEN_MELEE = 12;
-CR_HIT_TAKEN_RANGED = 13;
-CR_HIT_TAKEN_SPELL = 14;
-CR_CRIT_TAKEN_MELEE = 15;
-CR_CRIT_TAKEN_RANGED = 16;
-CR_CRIT_TAKEN_SPELL = 17;
+CR_RESILIENCE_CRIT_TAKEN = 15;
+CR_RESILIENCE_PLAYER_DAMAGE_TAKEN = 16;
 CR_HASTE_MELEE = 18;
 CR_HASTE_RANGED = 19;
 CR_HASTE_SPELL = 20;
-CR_WEAPON_SKILL_MAINHAND = 21;
-CR_WEAPON_SKILL_OFFHAND = 22;
-CR_WEAPON_SKILL_RANGED = 23;
 CR_EXPERTISE = 24;
+CR_ARMOR_PENETRATION = 25;
 --
 SPELL_STAT1_NAME = "Strength"
 SPELL_STAT2_NAME = "Agility"
@@ -588,7 +590,7 @@ L["statList"] = {
 	{pattern = "远程命中等级", id = CR_HIT_RANGED},
 	{pattern = "命中等级", id = CR_HIT},
 
-	{pattern = "韧性等级", id = CR_CRIT_TAKEN_MELEE}, -- resilience is implicitly a rating
+	{pattern = "韧性等级", id = CR_RESILIENCE_CRIT_TAKEN}, -- resilience is implicitly a rating
 
 	{pattern = "法术急速等级", id = CR_HASTE_SPELL},
 	{pattern = "远程急速等级", id = CR_HASTE_RANGED},
@@ -625,6 +627,7 @@ L["$value to be Dodged/Parried"] = "$value 被躲闪/被招架"
 L["$value to be Crit"] = "$value 被致命一击"
 L["$value Crit Dmg Taken"] = "$value 致命一击伤害减免"
 L["$value DOT Dmg Taken"] = "$value 持续伤害减免"
+L["$value Dmg Taken"] = true
 L["$value% Parry"] = "$value% 招架"
 -- for hit rating showing both physical and spell conversions
 -- (+1.21%, S+0.98%)
