@@ -1,7 +1,7 @@
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 nHealth: disabled
-nTooltip: enabled
+nTooltip: disabled
 nPower: disabled
 ItemRackOptions: enabled
 Leatrix_Plus: enabled
@@ -38,3 +38,4 @@ Bagnon_Config: enabled
 Bagnon_GuildBank: enabled
 Bagnon_VoidStorage: enabled
 BagBrother: enabled
+TacoTip: enabled

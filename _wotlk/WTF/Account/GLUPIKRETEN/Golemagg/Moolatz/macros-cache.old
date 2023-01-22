@@ -34,10 +34,8 @@ VER 3 000000000100000D " " "INV_MISC_QUESTIONMARK"
 /cast Dash 
 END
 VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
-#showtooltip Prowl
-/cancelform [noform:3] 
-/cast [noform:3] Cat Form 
-/cast Prowl
+#showtooltip Rejuvenation
+/cast [@focus,help,nodead] Rejuvenation
 END
 VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -75,14 +73,12 @@ VER 3 0000000001000017 " " "INV_MISC_QUESTIONMARK"
 /cast [@mouseover,help,nodead][] Lifebloom
 END
 VER 3 0000000001000019 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cancelform
-/use Cat Form
+#showtooltip Thorns
+/cast [@focus,help,nodead] Thorns
 END
 VER 3 000000000100001A " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cancelform
-/use Travel Form
+/cast [@mouseover,help,nodead][] Wild Growth
 END
 VER 3 000000000100001B " " "INV_MISC_QUESTIONMARK"
 #showtooltip Lifebloom

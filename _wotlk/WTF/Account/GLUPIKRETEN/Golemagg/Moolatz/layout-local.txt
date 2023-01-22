@@ -58,7 +58,7 @@ H: 235
 Frame: ItemRackButton13
 FrameLevel: 1
 Anchor: CENTER
-X: 0
+X: 40
 Y: 0
 W: 36
 H: 36
@@ -69,13 +69,6 @@ X: 59
 Y: 46
 W: 920
 H: 600
-Frame: GDKPd_Anchor
-FrameLevel: 1
-Anchor: TOPRIGHT
-X: -349
-Y: -289
-W: 300
-H: 60
 Frame: GroupBulletinBoardFrame
 FrameLevel: 1
 Anchor: RIGHT

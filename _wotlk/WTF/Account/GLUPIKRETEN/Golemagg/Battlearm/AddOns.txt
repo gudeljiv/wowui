@@ -94,7 +94,7 @@ WideQuestLog: disabled
 nBuff: enabled
 nMainbar: enabled
 nMinimap: enabled
-nTooltip: enabled
+nTooltip: disabled
 xVermin: enabled
 Questie: enabled
 oUF: disabled
@@ -171,7 +171,7 @@ Roll: disabled
 Examiner: disabled
 InspectEquip: disabled
 Capping_Options: enabled
-TacoTip: disabled
+TacoTip: enabled
 Gladdy: enabled
 NovaWorldBuffs: disabled
 Masque: enabled

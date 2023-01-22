@@ -42,7 +42,7 @@ WeaponSwingTimer: disabled
 ItemRack: enabled
 ItemRackOptions: enabled
 EavesDrop: disabled
-nTooltip: enabled
+nTooltip: disabled
 DBM-Core: enabled
 DBM-DefaultSkin: disabled
 DBM-GUI: enabled
@@ -204,3 +204,4 @@ ShadowedUnitFrames: enabled
 AskMrRobotClassic: disabled
 WowSimsExporter: disabled
 GDKPd: disabled
+TacoTip: enabled

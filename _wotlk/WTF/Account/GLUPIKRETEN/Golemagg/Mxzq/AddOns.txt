@@ -96,7 +96,7 @@ WideQuestLog: enabled
 nBuff: enabled
 nMainbar: enabled
 nMinimap: enabled
-nTooltip: enabled
+nTooltip: disabled
 xVermin: enabled
 Questie: enabled
 oUF: disabled
@@ -204,3 +204,4 @@ ShadowedUnitFrames: enabled
 AskMrRobotClassic: disabled
 WowSimsExporter: disabled
 GDKPd: disabled
+TacoTip: enabled
