@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 8567,
+	["session"] = 8573,
 	["errors"] = {
 		{
 			["message"] = "[string \"ChatFrame2Background:SetWidht(700)\"]:1: attempt to call method 'SetWidht' (a nil value)",

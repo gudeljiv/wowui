@@ -7,7 +7,7 @@ local WHITE = '|cFFFFFFFF'
 
 local function AddItemID(self, ...)
 	local name, itemLink = self:GetItem()
-	if (itemLink ~= nil) then
+	if itemLink ~= nil then
 		local itemId, _, _, _, _, _, _ = GetItemInfoInstant(itemLink)
 		local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent = GetItemInfo(itemLink)
 		local itemcount
@@ -15,7 +15,10 @@ local function AddItemID(self, ...)
 			self:AddLine(' ')
 			if itemLevel then
 				-- self:AddDoubleLine(_G.ORANGE_FONT_COLOR_CODE .. 'Item ID:|r ' .. _G.NORMAL_FONT_COLOR_CODE .. itemId .. '|r', _G.ORANGE_FONT_COLOR_CODE .. 'Item Level:|r ' .. _G.NORMAL_FONT_COLOR_CODE .. itemLevel .. '|r')
-				local line = _G[self:GetName() .. 'TextLeft1'] --name
+				local line = _G[self:GetName() .. 'TextLeft1']
+				if line:GetText() == 'Currently Equipped' then
+					line = _G[self:GetName() .. 'TextLeft2']
+				end
 				local text = line:GetText()
 				line:SetText(text .. ' (|r' .. _G.NORMAL_FONT_COLOR_CODE .. itemLevel .. '|r)')
 			else
