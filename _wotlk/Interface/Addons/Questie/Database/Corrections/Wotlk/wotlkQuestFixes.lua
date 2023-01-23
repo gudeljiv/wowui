@@ -1771,6 +1771,94 @@ function QuestieWotlkQuestFixes:Load()
             [questKeys.requiredSourceItems] = {42733},
             [questKeys.extraObjectives] = {{{[zoneIDs.STORM_PEAKS]={{53.1,61.2}}}, ICON_TYPE_EVENT, l10n("Place Icemaw Bear Flank"), 0}}
         },
+        [13012] = {
+            [questKeys.startedBy] = {{30348}},
+            [questKeys.finishedBy] = {{30348}},
+        },
+        [13013] = {
+            [questKeys.startedBy] = {{30357}},
+            [questKeys.finishedBy] = {{30357}},
+        },
+        [13014] = {
+            [questKeys.startedBy] = {{30358}},
+            [questKeys.finishedBy] = {{30358}},
+        },
+        [13015] = {
+            [questKeys.startedBy] = {{30359}},
+            [questKeys.finishedBy] = {{30359}},
+        },
+        [13016] = {
+            [questKeys.startedBy] = {{30360}},
+            [questKeys.finishedBy] = {{30360}},
+        },
+        [13017] = {
+            [questKeys.startedBy] = {{30531}},
+            [questKeys.finishedBy] = {{30531}},
+        },
+        [13018] = {
+            [questKeys.startedBy] = {{30362}},
+            [questKeys.finishedBy] = {{30362}},
+        },
+        [13019] = {
+            [questKeys.startedBy] = {{30363}},
+            [questKeys.finishedBy] = {{30363}},
+        },
+        [13020] = {
+            [questKeys.startedBy] = {{30375}},
+            [questKeys.finishedBy] = {{30375}},
+        },
+        [13021] = {
+            [questKeys.startedBy] = {{30536}},
+            [questKeys.finishedBy] = {{30536}},
+        },
+        [13022] = {
+            [questKeys.startedBy] = {{30533}},
+            [questKeys.finishedBy] = {{30533}},
+        },
+        [13023] = {
+            [questKeys.startedBy] = {{30534}},
+            [questKeys.finishedBy] = {{30534}},
+        },
+        [13024] = {
+            [questKeys.startedBy] = {{30365}},
+            [questKeys.finishedBy] = {{30365}},
+        },
+        [13025] = {
+            [questKeys.startedBy] = {{30367}},
+            [questKeys.finishedBy] = {{30367}},
+        },
+        [13026] = {
+            [questKeys.startedBy] = {{30368}},
+            [questKeys.finishedBy] = {{30368}},
+        },
+        [13027] = {
+            [questKeys.startedBy] = {{30369}},
+            [questKeys.finishedBy] = {{30369}},
+        },
+        [13028] = {
+            [questKeys.startedBy] = {{30370}},
+            [questKeys.finishedBy] = {{30370}},
+        },
+        [13029] = {
+            [questKeys.startedBy] = {{30371}},
+            [questKeys.finishedBy] = {{30371}},
+        },
+        [13030] = {
+            [questKeys.startedBy] = {{30372}},
+            [questKeys.finishedBy] = {{30372}},
+        },
+        [13031] = {
+            [questKeys.startedBy] = {{30373}},
+            [questKeys.finishedBy] = {{30373}},
+        },
+        [13032] = {
+            [questKeys.startedBy] = {{30374}},
+            [questKeys.finishedBy] = {{30374}},
+        },
+        [13033] = {
+            [questKeys.startedBy] = {{30364}},
+            [questKeys.finishedBy] = {{30364}},
+        },
         [13034] = {
             [questKeys.preQuestSingle] = {},
         },
@@ -2713,9 +2801,19 @@ function QuestieWotlkQuestFixes:Load()
         [13559] = {
             [questKeys.requiredMinRep] = {1119,3000},
         },
+        [13600] = {
+            [questKeys.exclusiveTo] = {13603,13616},
+        },
+        [13603] = {
+            [questKeys.exclusiveTo] = {13600,13616},
+        },
+        [13616] = {
+            [questKeys.exclusiveTo] = {13600,13603},
+        },
         [13625] = {
             [questKeys.objectives] = {{{33973,"Use Thrust on Melee Target"},{33974,"Use Shield-Breaker on vulnerable Ranged Target"},{33972,"Use Charge on vulnerable Charge Target"}}},
             [questKeys.preQuestGroup] = {13828,13835,13837},
+            [questKeys.exclusiveTo] = {13679},
             [questKeys.parentQuest] = 0,
         },
         [13627] = {
@@ -2738,41 +2836,50 @@ function QuestieWotlkQuestFixes:Load()
         },
         [13666] = {
             [questKeys.preQuestGroup] = {13828,13835,13837},
+            [questKeys.exclusiveTo] = {13679},
             [questKeys.parentQuest] = 0,
             [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33211},{"monster", 33224}}}},
         },
         [13669] = {
             [questKeys.preQuestGroup] = {13828,13835,13837},
+            [questKeys.exclusiveTo] = {13679},
             [questKeys.parentQuest] = 0,
         },
         [13670] = {
             [questKeys.preQuestGroup] = {13828,13835,13837},
+            [questKeys.exclusiveTo] = {13679},
             [questKeys.parentQuest] = 0,
         },
         [13671] = {
             [questKeys.preQuestGroup] = {13828,13835,13837},
+            [questKeys.exclusiveTo] = {13679},
             [questKeys.parentQuest] = 0,
         },
         [13673] = {
             [questKeys.preQuestGroup] = {13829,13838,13839},
+            [questKeys.exclusiveTo] = {13680},
             [questKeys.parentQuest] = 0,
             [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33211},{"monster", 33224}}}},
         },
         [13674] = {
             [questKeys.preQuestGroup] = {13829,13838,13839},
+            [questKeys.exclusiveTo] = {13680},
             [questKeys.parentQuest] = 0,
         },
         [13675] = {
             [questKeys.preQuestGroup] = {13829,13838,13839},
+            [questKeys.exclusiveTo] = {13680},
             [questKeys.parentQuest] = 0,
         },
         [13676] = {
             [questKeys.preQuestGroup] = {13829,13838,13839},
+            [questKeys.exclusiveTo] = {13680},
             [questKeys.parentQuest] = 0,
         },
         [13677] = {
             [questKeys.objectives] = {{{33229,"Use Thrust on Melee Target"},{33243,"Use Shield-Breaker on vulnerable Ranged Target"},{33272,"Use Charge on vulnerable Charge Target"}}},
             [questKeys.preQuestGroup] = {13829,13838,13839},
+            [questKeys.exclusiveTo] = {13680},
             [questKeys.parentQuest] = 0,
         },
         [13679] = {
@@ -2795,6 +2902,102 @@ function QuestieWotlkQuestFixes:Load()
         },
         [13682] = {
             [questKeys.preQuestSingle] = {13794},
+        },
+        [13741] = {
+            [questKeys.exclusiveTo] = {13742,13743},
+        },
+        [13742] = {
+            [questKeys.exclusiveTo] = {13741,13743},
+        },
+        [13743] = {
+            [questKeys.exclusiveTo] = {13741,13742},
+        },
+        [13746] = {
+            [questKeys.exclusiveTo] = {13747,13748},
+        },
+        [13747] = {
+            [questKeys.exclusiveTo] = {13746,13748},
+        },
+        [13748] = {
+            [questKeys.exclusiveTo] = {13746,13747},
+        },
+        [13752] = {
+            [questKeys.exclusiveTo] = {13753,13754},
+        },
+        [13753] = {
+            [questKeys.exclusiveTo] = {13752,13754},
+        },
+        [13754] = {
+            [questKeys.exclusiveTo] = {13752,13753},
+        },
+        [13757] = {
+            [questKeys.exclusiveTo] = {13758,13759},
+        },
+        [13758] = {
+            [questKeys.exclusiveTo] = {13757,13759},
+        },
+        [13759] = {
+            [questKeys.exclusiveTo] = {13757,13758},
+        },
+        [13762] = {
+            [questKeys.exclusiveTo] = {13763,13764},
+        },
+        [13763] = {
+            [questKeys.exclusiveTo] = {13762,13764},
+        },
+        [13764] = {
+            [questKeys.exclusiveTo] = {13762,13763},
+        },
+        [13767] = {
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Mount the Stabled Orgrimmar Wolf"), 0, {{"monster", 33799}}}},
+        },
+        [13768] = {
+            [questKeys.exclusiveTo] = {13769,13770},
+        },
+        [13769] = {
+            [questKeys.exclusiveTo] = {13768,13770},
+        },
+        [13770] = {
+            [questKeys.exclusiveTo] = {13768,13769},
+        },
+        [13772] = {
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Mount the Stabled Darkspear Raptor"), 0, {{"monster", 33796}}}},
+        },
+        [13773] = {
+            [questKeys.exclusiveTo] = {13774,13775},
+        },
+        [13774] = {
+            [questKeys.exclusiveTo] = {13773,13775},
+        },
+        [13775] = {
+            [questKeys.exclusiveTo] = {13773,13774},
+        },
+        [13777] = {
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Mount the Stabled Mulgore Kodo"), 0, {{"monster", 33792}}}},
+        },
+        [13778] = {
+            [questKeys.exclusiveTo] = {13779,13780},
+        },
+        [13779] = {
+            [questKeys.exclusiveTo] = {13778,13780},
+        },
+        [13780] = {
+            [questKeys.exclusiveTo] = {13778,13779},
+        },
+        [13782] = {
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Mount the Stabled Forsaken Warhorse"), 0, {{"monster", 33798}}}},
+        },
+        [13783] = {
+            [questKeys.exclusiveTo] = {13784,13785},
+        },
+        [13784] = {
+            [questKeys.exclusiveTo] = {13783,13785},
+        },
+        [13785] = {
+            [questKeys.exclusiveTo] = {13783,13784},
+        },
+        [13787] = {
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Mount the Stabled Silvermoon Hawkstrider"), 0, {{"monster", 33791}}}},
         },
         [13788] = {
             [questKeys.preQuestSingle] = {13794},

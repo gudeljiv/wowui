@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("GeneralVezax", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20230121033954")
+mod:SetRevision("20230123032800")
 mod:SetCreatureID(33271)
 if not mod:IsClassic() then
 	mod:SetEncounterID(1134)
@@ -48,7 +48,7 @@ local timerNextSurgeofDarkness	= mod:NewCDTimer(61.7, 62662, nil, "Tank", nil, 5
 local timerSaroniteVapors		= mod:NewNextCountTimer(30, 63322, nil, nil, nil, 5)
 local timerShadowCrashCD		= mod:NewCDTimer(10, 62660, nil, "Ranged", nil, 3)
 local timerLifeLeech			= mod:NewTargetTimer(10, 63276, nil, false, 2, 3)
-local timerLifeLeechCD			= mod:NewCDTimer(20.4, 63276, nil, nil, nil, 3)
+local timerLifeLeechCD			= mod:NewCDTimer(20.4, 63276, nil, "Ranged", 2, 3, nil, nil, nil, 1, 3)
 local timerHardmode				= mod:NewTimer(189, "hardmodeSpawn", nil, nil, nil, 1)
 
 mod:AddSetIconOption("SetIconOnShadowCrash", 62660, true, false, {8})
@@ -56,6 +56,7 @@ mod:AddSetIconOption("SetIconOnLifeLeach", 63276, true, false, {7})
 
 mod.vb.interruptCount = 0
 mod.vb.vaporsCount = 0
+mod.vb.lastMarkTarget = nil
 local animusName = DBM:EJ_GetSectionInfo(17651)
 
 function mod:ShadowCrashTarget(targetname, uId)
@@ -78,6 +79,7 @@ end
 function mod:OnCombatStart(delay)
 	self.vb.interruptCount = 0
 	self.vb.vaporsCount = 0
+	self.vb.lastMarkTarget = nil
 	timerShadowCrashCD:Start(10.9-delay)
 	timerLifeLeechCD:Start(16.9-delay)
 	timerSaroniteVapors:Start(30-delay, 1)
@@ -117,15 +119,20 @@ function mod:SPELL_AURA_REMOVED(args)
 	end
 end
 
+local function resetMarkTarget(self)
+	self.vb.lastMarkTarget = nil
+end
+
 function mod:SPELL_CAST_SUCCESS(args)
 	if args.spellId == 62660 then		-- Shadow Crash
-		self:BossTargetScanner(args.sourceGUID, "ShadowCrashTarget", 0.05, 20)
+		self:BossTargetScanner(args.sourceGUID, "ShadowCrashTarget", 0.05, 20, nil, nil, nil, self.vb.lastMarkTarget)
 		local timer = 10--Blizzard confirmed it's a 10-15 second variable timer on final version of fight (ie retail)
 		if self:IsClassic() then
 			timer = self:IsDifficulty("normal25") and 7 or 10
 		end
 		timerShadowCrashCD:Start(timer)
 	elseif args.spellId == 63276 then	-- Mark of the Faceless
+		self.vb.lastMarkTarget = args.destName
 		if self.Options.SetIconOnLifeLeach then
 			self:SetIcon(args.destName, 7, 10)
 		end
@@ -133,7 +140,7 @@ function mod:SPELL_CAST_SUCCESS(args)
 		timerLifeLeechCD:Start()
 		if args:IsPlayer() then
 			specWarnLifeLeechYou:Show()
-			specWarnLifeLeechYou:Play("scatter")
+			specWarnLifeLeechYou:Play("runout")
 			yellLifeLeech:Yell()
 		elseif self:CheckNearby(13, args.destName) then--Can't use 15, only 13 or 18
 			specWarnLifeLeechNear:Show(args.destName)
@@ -141,6 +148,7 @@ function mod:SPELL_CAST_SUCCESS(args)
 		else
 			warnLeechLife:Show(args.destName)
 		end
+		self:Schedule(10, resetMarkTarget, self)
 	elseif args.spellId == 63364 then
 		specWarnAnimus:Show()
 		specWarnAnimus:Play("bigmob")

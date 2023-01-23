@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("YoggSaron", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20230121033954")
+mod:SetRevision("20230123032800")
 mod:SetCreatureID(33288)
 if not mod:IsClassic() then
 	mod:SetEncounterID(1143)
@@ -11,6 +11,7 @@ end
 mod:SetModelID(28817)
 mod:RegisterCombat("combat_yell", L.YellPull)
 mod:SetUsedIcons(8, 7, 6, 2, 1)
+mod:SetHotfixNoticeRev(20230122000000)
 
 mod:RegisterEventsInCombat(
 	"SPELL_CAST_START 64059 64189 63138",
@@ -51,12 +52,12 @@ local timerFervor					= mod:NewTargetTimer(15, 63138, nil, false, 2)
 --local timerMaladyCD				= mod:NewCDTimer(18.1, 63830, nil, nil, nil, 3)
 --local timerBrainLinkCD			= mod:NewCDTimer(32, 63802, nil, nil, nil, 3)
 local brainportal					= mod:NewTimer(20, "NextPortal", 57687, nil, nil, 5)
-local timerLunaricGaze				= mod:NewCastTimer(4, 64163, nil, nil, nil, 2)
+local timerLunaricGaze				= mod:NewCastTimer(4, 64163, nil, nil, 2, 5)
 local timerNextLunaricGaze			= mod:NewCDTimer(8.5, 64163, nil, nil, nil, 2)
-local timerEmpower					= mod:NewCDTimer(46, 64465, nil, nil, nil, 3)
-local timerEmpowerDuration			= mod:NewBuffActiveTimer(10, 64465, nil, nil, nil, 3)
+local timerShadowBeaconCD			= mod:NewCDTimer(46, 64465, nil, nil, nil, 3)
+local timerShadowBeacon				= mod:NewBuffActiveTimer(10, 64465, nil, nil, nil, 3)
 local timerMadness 					= mod:NewCastTimer(60, 64059, nil, nil, nil, 5)
-local timerCastDeafeningRoar		= mod:NewCastTimer(2.3, 64189, nil, nil, nil, 2)
+local timerCastDeafeningRoar		= mod:NewCastTimer(2.3, 64189, nil, nil, 2, 5)
 local timerNextDeafeningRoar		= mod:NewNextTimer(30, 64189, nil, nil, nil, 2)
 local timerAchieve
 if WOW_PROJECT_ID == (WOW_PROJECT_MAINLINE or 1) then
@@ -146,17 +147,19 @@ function mod:SPELL_CAST_SUCCESS(args)
 	if args.spellId == 64144 and self:GetUnitCreatureId(args.sourceGUID) == 33966 then
 		warnCrusherTentacleSpawned:Show()
 	elseif args.spellId == 64465 and self:AntiSpam(3, 4) then
-		timerEmpower:Start()
-		timerEmpowerDuration:Start()
+		timerShadowBeaconCD:Start()
+		timerShadowBeacon:Start()
 		warnEmpowerSoon:Schedule(40)
 	elseif args:IsSpellID(64167, 64163) and self:AntiSpam(3, 3) then	-- Lunatic Gaze
 		timerLunaricGaze:Start()
-		if self:IsClassic() then
-			brainportal:Start(90)
-			warnBrainPortalSoon:Schedule(85)
-		else
-			brainportal:Start(60)
-			warnBrainPortalSoon:Schedule(55)
+		if self.vb.phase < 3 then
+			if self:IsClassic() then
+				brainportal:Start(90)
+				warnBrainPortalSoon:Schedule(85)
+			else
+				brainportal:Start(60)
+				warnBrainPortalSoon:Schedule(55)
+			end
 		end
 	end
 end
@@ -226,13 +229,13 @@ function mod:SPELL_AURA_APPLIED(args)
 			brainportal:Start(60)
 			warnBrainPortalSoon:Schedule(55)
 		else
-			brainportal:Start(25)
-			warnBrainPortalSoon:Schedule(20)
+			brainportal:Start(10.5)
+			warnBrainPortalSoon:Schedule(5.5)
 		end
 		warnP2:Show()
 	elseif args.spellId == 64465 then
 		if self.Options.SetIconOnBeacon then
-			self:ScanForMobs(args.destGUID, 2, self.vb.beaconIcon, 1, nil, 12, "SetIconOnBeacon", true)
+			self:ScanForMobs(args.destGUID, 2, self.vb.beaconIcon, 1, nil, 6, "SetIconOnBeacon", true, nil, nil, true)
 		end
 		self.vb.beaconIcon = self.vb.beaconIcon - 1
 		if self.vb.beaconIcon == 0 then
@@ -257,7 +260,7 @@ function mod:SPELL_AURA_REMOVED(args)
 		self:SetIcon(args.destName, 0)
 	elseif args.spellId == 64465 then
 		if self.Options.SetIconOnBeacon then
-			self:ScanForMobs(args.destGUID, 2, 0, 1, nil, 12, "SetIconOnBeacon", true)
+			self:ScanForMobs(args.destGUID, 2, 0, 1, nil, 6, "SetIconOnBeacon", true, nil, nil, true)
 		end
 		if self.Options.NPAuraOnBeacon then
 			DBM.Nameplate:Hide(true, args.destGUID, args.spellId)
@@ -282,7 +285,7 @@ function mod:OnSync(msg)
 		warnBrainPortalSoon:Cancel()
 		--timerMaladyCD:Cancel()
 		--timerBrainLinkCD:Cancel()
-		timerEmpower:Start()
+--		timerShadowBeaconCD:Start()--Cast on phasing, even though no mobs up yet, starting initial CD that way
 --		if self.vb.numberOfPlayers == 1 then
 			timerMadness:Cancel()
 			specWarnMadnessOutNow:Cancel()

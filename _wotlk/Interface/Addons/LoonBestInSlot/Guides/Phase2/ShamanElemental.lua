@@ -17,9 +17,9 @@ LBIS:AddItem(spec, "46042", LBIS.L["Back"], "Alt") --Drape of the Messenger
 LBIS:AddItem(spec, "44005", LBIS.L["Back"], "Alt") --Pennant Cloak
 LBIS:AddItem(spec, "45486", LBIS.L["Back"], "Alt") --Drape of the Sullen Goddess
 
-LBIS:AddItem(spec, "46198", LBIS.L["Chest"], "BIS") --Conqueror's Worldbreaker Tunic
+LBIS:AddItem(spec, "46206", LBIS.L["Chest"], "BIS") --Conqueror's Worldbreaker Hauberk
 LBIS:AddItem(spec, "45633", LBIS.L["Chest"], "BIS") --Breastplate of the Wayward Protector
-LBIS:AddItem(spec, "45405", LBIS.L["Chest"], "Alt") --Valorous Worldbreaker Tunic
+LBIS:AddItem(spec, "45411", LBIS.L["Chest"], "Alt") --Valorous Worldbreaker Hauberk
 LBIS:AddItem(spec, "45636", LBIS.L["Chest"], "Alt") --Chestguard of the Wayward Protector
 LBIS:AddItem(spec, "45867", LBIS.L["Chest"], "Alt") --Breastplate of the Stoneshaper
 
@@ -61,6 +61,7 @@ LBIS:AddItem(spec, "46046", LBIS.L["Ring"], "BIS") --Nebula Band
 LBIS:AddItem(spec, "45614", LBIS.L["Ring"], "Alt") --Starshine Circle
 LBIS:AddItem(spec, "45946", LBIS.L["Ring"], "Alt") --Fire Orchid Signet
 LBIS:AddItem(spec, "45168", LBIS.L["Ring"], "Alt") --Pyrelight Circle
+LBIS:AddItem(spec, "45451", LBIS.L["Ring"], "Alt") --Frozen Loop
 LBIS:AddItem(spec, "40399", LBIS.L["Ring"], "Alt") --Signet of Manifested Pain
 
 LBIS:AddItem(spec, "45518", LBIS.L["Trinket"], "BIS") --Flare of the Heavens
