@@ -139,13 +139,6 @@ X: -356
 Y: -8
 W: 210
 H: 374
-Frame: nTooltip_Anchor
-FrameLevel: 1
-Anchor: BOTTOMRIGHT
-X: -27
-Y: 27
-W: 50
-H: 50
 Frame: RXPG_ARROW
 FrameLevel: 1
 Anchor: CENTER

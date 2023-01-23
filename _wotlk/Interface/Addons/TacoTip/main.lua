@@ -644,124 +644,132 @@ function TT:RefreshCharacterFrame()
 end
 
 function TT:InitInspectFrame()
-	InspectModelFrame:CreateFontString('InspectGearScore')
-	InspectGearScore:SetFont(L['INSPECT_FRAME_GS_VALUE_FONT'], L['INSPECT_FRAME_GS_VALUE_FONT_SIZE'])
-	InspectGearScore:SetText('0')
-	InspectGearScore.RefreshPosition = function()
-		InspectGearScore:SetPoint('BOTTOMLEFT', InspectPaperDollFrame, 'BOTTOMLEFT', L['INSPECT_FRAME_GS_VALUE_XPOS'] + (TacoTipConfig.inspect_gs_offset_x or 0), L['INSPECT_FRAME_GS_VALUE_YPOS'] + (TacoTipConfig.inspect_gs_offset_y or 0))
-	end
-	InspectGearScore:RefreshPosition()
-
-	InspectModelFrame:CreateFontString('InspectGearScoreText')
-	InspectGearScoreText:SetFont(L['INSPECT_FRAME_GS_TITLE_FONT'], L['INSPECT_FRAME_GS_TITLE_FONT_SIZE'])
-	InspectGearScoreText:SetText('GearScore')
-	InspectGearScoreText.RefreshPosition = function()
-		InspectGearScoreText:SetPoint('BOTTOMLEFT', InspectPaperDollFrame, 'BOTTOMLEFT', L['INSPECT_FRAME_GS_TITLE_XPOS'] + (TacoTipConfig.inspect_gs_offset_x or 0), L['INSPECT_FRAME_GS_TITLE_YPOS'] + (TacoTipConfig.inspect_gs_offset_y or 0))
-	end
-	InspectGearScoreText:RefreshPosition()
-
-	InspectModelFrame:CreateFontString('InspectAvgItemLvl')
-	InspectAvgItemLvl:SetFont(L['INSPECT_FRAME_ILVL_VALUE_FONT'], L['INSPECT_FRAME_ILVL_VALUE_FONT_SIZE'])
-	InspectAvgItemLvl:SetText('0')
-	InspectAvgItemLvl.RefreshPosition = function()
-		InspectAvgItemLvl:SetPoint('BOTTOMLEFT', InspectPaperDollFrame, 'BOTTOMLEFT', L['INSPECT_FRAME_ILVL_VALUE_XPOS'] + (TacoTipConfig.inspect_ilvl_offset_x or 0), L['INSPECT_FRAME_ILVL_VALUE_YPOS'] + (TacoTipConfig.inspect_ilvl_offset_y or 0))
-	end
-	InspectAvgItemLvl:RefreshPosition()
-
-	InspectModelFrame:CreateFontString('InspectAvgItemLvlText')
-	InspectAvgItemLvlText:SetFont(L['INSPECT_FRAME_ILVL_TITLE_FONT'], L['INSPECT_FRAME_ILVL_TITLE_FONT_SIZE'])
-	InspectAvgItemLvlText:SetText('iLvl')
-	InspectAvgItemLvlText.RefreshPosition = function()
-		InspectAvgItemLvlText:SetPoint('BOTTOMLEFT', InspectPaperDollFrame, 'BOTTOMLEFT', L['INSPECT_FRAME_ILVL_TITLE_XPOS'] + (TacoTipConfig.inspect_ilvl_offset_x or 0), L['INSPECT_FRAME_ILVL_TITLE_YPOS'] + (TacoTipConfig.inspect_ilvl_offset_y or 0))
-	end
-	InspectAvgItemLvlText:RefreshPosition()
-
-	InspectPaperDollFrame:HookScript('OnShow', TT.RefreshInspectFrame)
-	InspectFrame:HookScript(
-		'OnHide',
-		function()
-			InspectGearScore:Hide()
-			InspectAvgItemLvl:Hide()
+	if true then
+		return
+	else
+		InspectModelFrame:CreateFontString('InspectGearScore')
+		InspectGearScore:SetFont(L['INSPECT_FRAME_GS_VALUE_FONT'], L['INSPECT_FRAME_GS_VALUE_FONT_SIZE'])
+		InspectGearScore:SetText('0')
+		InspectGearScore.RefreshPosition = function()
+			InspectGearScore:SetPoint('BOTTOMLEFT', InspectPaperDollFrame, 'BOTTOMLEFT', L['INSPECT_FRAME_GS_VALUE_XPOS'] + (TacoTipConfig.inspect_gs_offset_x or 0), L['INSPECT_FRAME_GS_VALUE_YPOS'] + (TacoTipConfig.inspect_gs_offset_y or 0))
 		end
-	)
+		InspectGearScore:RefreshPosition()
+
+		InspectModelFrame:CreateFontString('InspectGearScoreText')
+		InspectGearScoreText:SetFont(L['INSPECT_FRAME_GS_TITLE_FONT'], L['INSPECT_FRAME_GS_TITLE_FONT_SIZE'])
+		InspectGearScoreText:SetText('GearScore')
+		InspectGearScoreText.RefreshPosition = function()
+			InspectGearScoreText:SetPoint('BOTTOMLEFT', InspectPaperDollFrame, 'BOTTOMLEFT', L['INSPECT_FRAME_GS_TITLE_XPOS'] + (TacoTipConfig.inspect_gs_offset_x or 0), L['INSPECT_FRAME_GS_TITLE_YPOS'] + (TacoTipConfig.inspect_gs_offset_y or 0))
+		end
+		InspectGearScoreText:RefreshPosition()
+
+		InspectModelFrame:CreateFontString('InspectAvgItemLvl')
+		InspectAvgItemLvl:SetFont(L['INSPECT_FRAME_ILVL_VALUE_FONT'], L['INSPECT_FRAME_ILVL_VALUE_FONT_SIZE'])
+		InspectAvgItemLvl:SetText('0')
+		InspectAvgItemLvl.RefreshPosition = function()
+			InspectAvgItemLvl:SetPoint('BOTTOMLEFT', InspectPaperDollFrame, 'BOTTOMLEFT', L['INSPECT_FRAME_ILVL_VALUE_XPOS'] + (TacoTipConfig.inspect_ilvl_offset_x or 0), L['INSPECT_FRAME_ILVL_VALUE_YPOS'] + (TacoTipConfig.inspect_ilvl_offset_y or 0))
+		end
+		InspectAvgItemLvl:RefreshPosition()
+
+		InspectModelFrame:CreateFontString('InspectAvgItemLvlText')
+		InspectAvgItemLvlText:SetFont(L['INSPECT_FRAME_ILVL_TITLE_FONT'], L['INSPECT_FRAME_ILVL_TITLE_FONT_SIZE'])
+		InspectAvgItemLvlText:SetText('iLvl')
+		InspectAvgItemLvlText.RefreshPosition = function()
+			InspectAvgItemLvlText:SetPoint('BOTTOMLEFT', InspectPaperDollFrame, 'BOTTOMLEFT', L['INSPECT_FRAME_ILVL_TITLE_XPOS'] + (TacoTipConfig.inspect_ilvl_offset_x or 0), L['INSPECT_FRAME_ILVL_TITLE_YPOS'] + (TacoTipConfig.inspect_ilvl_offset_y or 0))
+		end
+		InspectAvgItemLvlText:RefreshPosition()
+
+		InspectPaperDollFrame:HookScript('OnShow', TT.RefreshInspectFrame)
+		InspectFrame:HookScript(
+			'OnHide',
+			function()
+				InspectGearScore:Hide()
+				InspectAvgItemLvl:Hide()
+			end
+		)
+	end
 end
 
 function TT:RefreshInspectFrame()
-	if (InCombatLockdown()) then
+	if true then
 		return
-	end
-	if (TT.InitInspectFrame) then
-		if (not InspectModelFrame or not InspectPaperDollFrame) then
+	else
+		if (InCombatLockdown()) then
 			return
 		end
-		TT:InitInspectFrame()
-		TT.InitInspectFrame = nil
-	end
-	local inspect_gs, inspect_avg, r, g, b = 0, 0, 0, 0, 0
-	if (TacoTipConfig.show_gs_character or TacoTipConfig.show_avg_ilvl) then
-		inspect_gs, inspect_avg = GearScore:GetScore(InspectFrame.unit)
-		r, g, b = GearScore:GetQuality(inspect_gs)
-	end
-	if (TacoTipConfig.show_gs_character) then
-		InspectGearScore:SetText(inspect_gs)
-		InspectGearScore:SetTextColor(r, g, b, 1)
-		InspectGearScore:Show()
-		InspectGearScoreText:Show()
-		if (TacoTipConfig.unlock_info_position) then
-			if (not InspectGearScoreText.mover) then
-				InspectGearScoreText.mover =
-					CreateMover(
-					InspectPaperDollFrame,
-					InspectGearScore,
-					InspectGearScoreText,
-					function(ofx, ofy)
-						TacoTipConfig.inspect_gs_offset_x = ofx - L['INSPECT_FRAME_GS_TITLE_XPOS']
-						TacoTipConfig.inspect_gs_offset_y = ofy - L['INSPECT_FRAME_GS_TITLE_YPOS']
-						InspectGearScore:RefreshPosition()
-						InspectGearScoreText:RefreshPosition()
-					end
-				)
+		if (TT.InitInspectFrame) then
+			if (not InspectModelFrame or not InspectPaperDollFrame) then
+				return
 			end
-			InspectGearScoreText.mover:Show()
-		elseif (InspectGearScoreText.mover) then
-			InspectGearScoreText.mover:Hide()
+			TT:InitInspectFrame()
+			TT.InitInspectFrame = nil
 		end
-	else
-		InspectGearScore:Hide()
-		InspectGearScoreText:Hide()
-		if (InspectGearScoreText.mover) then
-			InspectGearScoreText.mover:Hide()
+		local inspect_gs, inspect_avg, r, g, b = 0, 0, 0, 0, 0
+		if (TacoTipConfig.show_gs_character or TacoTipConfig.show_avg_ilvl) then
+			inspect_gs, inspect_avg = GearScore:GetScore(InspectFrame.unit)
+			r, g, b = GearScore:GetQuality(inspect_gs)
 		end
-	end
-	if (TacoTipConfig.show_avg_ilvl) then
-		InspectAvgItemLvl:SetText(inspect_avg)
-		InspectAvgItemLvl:SetTextColor(r, g, b, 1)
-		InspectAvgItemLvl:Show()
-		InspectAvgItemLvlText:Show()
-		if (TacoTipConfig.unlock_info_position) then
-			if (not InspectAvgItemLvlText.mover) then
-				InspectAvgItemLvlText.mover =
-					CreateMover(
-					InspectPaperDollFrame,
-					InspectAvgItemLvl,
-					InspectAvgItemLvlText,
-					function(ofx, ofy)
-						TacoTipConfig.inspect_ilvl_offset_x = ofx - L['INSPECT_FRAME_ILVL_TITLE_XPOS']
-						TacoTipConfig.inspect_ilvl_offset_y = ofy - L['INSPECT_FRAME_ILVL_TITLE_YPOS']
-						InspectAvgItemLvl:RefreshPosition()
-						InspectAvgItemLvlText:RefreshPosition()
-					end
-				)
+		if (TacoTipConfig.show_gs_character) then
+			InspectGearScore:SetText(inspect_gs)
+			InspectGearScore:SetTextColor(r, g, b, 1)
+			InspectGearScore:Show()
+			InspectGearScoreText:Show()
+			if (TacoTipConfig.unlock_info_position) then
+				if (not InspectGearScoreText.mover) then
+					InspectGearScoreText.mover =
+						CreateMover(
+						InspectPaperDollFrame,
+						InspectGearScore,
+						InspectGearScoreText,
+						function(ofx, ofy)
+							TacoTipConfig.inspect_gs_offset_x = ofx - L['INSPECT_FRAME_GS_TITLE_XPOS']
+							TacoTipConfig.inspect_gs_offset_y = ofy - L['INSPECT_FRAME_GS_TITLE_YPOS']
+							InspectGearScore:RefreshPosition()
+							InspectGearScoreText:RefreshPosition()
+						end
+					)
+				end
+				InspectGearScoreText.mover:Show()
+			elseif (InspectGearScoreText.mover) then
+				InspectGearScoreText.mover:Hide()
 			end
-			InspectAvgItemLvlText.mover:Show()
-		elseif (InspectAvgItemLvlText.mover) then
-			InspectAvgItemLvlText.mover:Hide()
+		else
+			InspectGearScore:Hide()
+			InspectGearScoreText:Hide()
+			if (InspectGearScoreText.mover) then
+				InspectGearScoreText.mover:Hide()
+			end
 		end
-	else
-		InspectAvgItemLvl:Hide()
-		InspectAvgItemLvlText:Hide()
-		if (InspectAvgItemLvlText.mover) then
-			InspectAvgItemLvlText.mover:Hide()
+		if (TacoTipConfig.show_avg_ilvl) then
+			InspectAvgItemLvl:SetText(inspect_avg)
+			InspectAvgItemLvl:SetTextColor(r, g, b, 1)
+			InspectAvgItemLvl:Show()
+			InspectAvgItemLvlText:Show()
+			if (TacoTipConfig.unlock_info_position) then
+				if (not InspectAvgItemLvlText.mover) then
+					InspectAvgItemLvlText.mover =
+						CreateMover(
+						InspectPaperDollFrame,
+						InspectAvgItemLvl,
+						InspectAvgItemLvlText,
+						function(ofx, ofy)
+							TacoTipConfig.inspect_ilvl_offset_x = ofx - L['INSPECT_FRAME_ILVL_TITLE_XPOS']
+							TacoTipConfig.inspect_ilvl_offset_y = ofy - L['INSPECT_FRAME_ILVL_TITLE_YPOS']
+							InspectAvgItemLvl:RefreshPosition()
+							InspectAvgItemLvlText:RefreshPosition()
+						end
+					)
+				end
+				InspectAvgItemLvlText.mover:Show()
+			elseif (InspectAvgItemLvlText.mover) then
+				InspectAvgItemLvlText.mover:Hide()
+			end
+		else
+			InspectAvgItemLvl:Hide()
+			InspectAvgItemLvlText:Hide()
+			if (InspectAvgItemLvlText.mover) then
+				InspectAvgItemLvlText.mover:Hide()
+			end
 		end
 	end
 end

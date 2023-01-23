@@ -19,7 +19,7 @@ DBMKarazhan_SavedStats = {
 		["heroicPulls"] = 0,
 		["challengePulls"] = 0,
 	},
-	["Curator"] = {
+	["RomuloAndJulianne"] = {
 		["normalPulls"] = 0,
 		["challengeKills"] = 0,
 		["challengeBestRank"] = 0,
@@ -38,7 +38,7 @@ DBMKarazhan_SavedStats = {
 		["heroicPulls"] = 0,
 		["challengePulls"] = 0,
 	},
-	["RomuloAndJulianne"] = {
+	["Curator"] = {
 		["normalPulls"] = 0,
 		["challengeKills"] = 0,
 		["challengeBestRank"] = 0,
@@ -250,7 +250,7 @@ DBMKarazhan_SavedStats = {
 		["challengePulls"] = 0,
 	},
 	["Moroes"] = {
-		["normalPulls"] = 5,
+		["normalPulls"] = 8,
 		["challengeKills"] = 0,
 		["challengeBestRank"] = 0,
 		["mythicKills"] = 0,

@@ -202,5 +202,5 @@ ShadowedUnitFrames: enabled
 RatingBuster: enabled
 AskMrRobotClassic: disabled
 WowSimsExporter: disabled
-GDKPd: disabled
+GDKPd: enabled
 TacoTip: enabled

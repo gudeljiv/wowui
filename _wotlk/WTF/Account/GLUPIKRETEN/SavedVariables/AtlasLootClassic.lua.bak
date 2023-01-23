@@ -503,7 +503,7 @@ AtlasLootClassicDB = {
 			[41301] = "EmblemOfHeroism:45",
 			[41269] = "EmblemOfHeroism:45",
 			[40683] = "EmblemOfHeroism:40",
-			[34577] = "honor:3990",
+			[45830] = "EmblemOfConquest:28",
 			[41770] = "EmblemOfHeroism:30",
 			[18871] = "honor:5000",
 			[31376] = "honor:4750",
@@ -511,7 +511,7 @@ AtlasLootClassicDB = {
 			[28126] = "honor:3800",
 			[28314] = "honor:4750",
 			[42985] = "EmblemOfHeroism:40",
-			[41291] = "EmblemOfValor:30",
+			[28334] = "honor:4750",
 			[42026] = "honor:16590",
 			[42058] = "honor:16590",
 			[33906] = "honor:5130",
@@ -520,8 +520,8 @@ AtlasLootClassicDB = {
 			[35025] = "honor:7600",
 			[42132] = "honor:43400",
 			[28302] = "honor:4750",
+			[41291] = "EmblemOfValor:30",
 			[40268] = "EmblemOfValor:25",
-			[28334] = "honor:4750",
 			[31986] = "honor:13300",
 			[41064] = "honor:27580",
 			[28138] = "honor:4750",
@@ -701,13 +701,13 @@ AtlasLootClassicDB = {
 			[40817] = "EmblemOfHeroism:45",
 			[33688] = "honor:17100",
 			[28129] = "honor:3800",
-			[42128] = "honor:43400",
+			[28241] = "honor:2280",
 			[42991] = "EmblemOfHeroism:50",
 			[32793] = "honor:5320",
 			[42032] = "honor:33180",
 			[42064] = "honor:33180",
-			[28241] = "honor:2280",
 			[33944] = "honor:5130",
+			[42128] = "honor:43400",
 			[34999] = "honor:9500",
 			[40719] = "EmblemOfValor:25",
 			[28305] = "honor:4750",
@@ -844,8 +844,8 @@ AtlasLootClassicDB = {
 			[35163] = "honor:7600",
 			[28355] = "honor:2850",
 			[40342] = "EmblemOfValor:25",
+			[34577] = "honor:3990",
 			[40715] = "EmblemOfHeroism:15",
-			[45830] = "EmblemOfConquest:28",
 			[31987] = "honor:5320",
 			[33309] = "honor:3325",
 			[28451] = "honor:4750",
@@ -1112,19 +1112,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
-			["showCompanionLearnedInfo"] = false,
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
-			["Addons"] = {
-				["Favourites"] = {
-					["showListInTT"] = false,
-				},
-			},
-			["Tooltip"] = {
-				["useGameTooltip"] = false,
-			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -1134,14 +1121,27 @@ AtlasLootClassicDB = {
 					190.5237579345703, -- [5]
 				},
 				["selected"] = {
-					"AtlasLootClassic_Crafting", -- [1]
-					"TailoringWrath", -- [2]
-					4, -- [3]
-					1, -- [4]
+					nil, -- [1]
+					"AhnKahet", -- [2]
+					nil, -- [3]
+					2, -- [4]
 					0, -- [5]
 				},
 			},
+			["showCompanionLearnedInfo"] = false,
+			["Addons"] = {
+				["Favourites"] = {
+					["showListInTT"] = false,
+				},
+			},
+			["Tooltip"] = {
+				["useGameTooltip"] = false,
+			},
 			["showItemLvlInTT"] = false,
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 		},
 		["Pitchwise - Golemagg"] = {
 			["minimap"] = {
@@ -1243,6 +1243,24 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["Addons"] = {
+				["Favourites"] = {
+					["lists"] = {
+						["ProfileBase"] = {
+							["mainItems"] = {
+								[8] = true,
+							},
+						},
+					},
+				},
+			},
+			["Tooltip"] = {
+				["useGameTooltip"] = false,
+			},
 			["GUI"] = {
 				["point"] = {
 					"TOP", -- [1]
@@ -1259,25 +1277,7 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
-			["Addons"] = {
-				["Favourites"] = {
-					["lists"] = {
-						["ProfileBase"] = {
-							["mainItems"] = {
-								[8] = true,
-							},
-						},
-					},
-				},
-			},
-			["Tooltip"] = {
-				["useGameTooltip"] = false,
-			},
 			["showItemLvlInTT"] = false,
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
 			["minimap"] = {

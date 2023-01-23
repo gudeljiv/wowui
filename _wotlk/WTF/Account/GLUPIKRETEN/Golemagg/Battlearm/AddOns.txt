@@ -220,4 +220,4 @@ DBM-ZulAman: enabled
 ShadowedUF_Options: enabled
 ShadowedUnitFrames: enabled
 ShadowedUF_SmoothBars: enabled
-GDKPd: disabled
+GDKPd: enabled

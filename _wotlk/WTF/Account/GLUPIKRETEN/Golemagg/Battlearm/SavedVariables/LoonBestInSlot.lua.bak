@@ -47,10 +47,10 @@ LBISSettings = {
 	},
 	["ShowPriority"] = true,
 	["SelectedRank"] = "All",
-	["SelectedSlot"] = "Shoulder",
-	["SelectedSourceType"] = "All",
-	["ShowCustom"] = false,
 	["PriorityList"] = {
 	},
-	["SelectedPhase"] = "Phase 2",
+	["SelectedSourceType"] = "All",
+	["SelectedSlot"] = "Ring",
+	["ShowCustom"] = false,
+	["SelectedPhase"] = "Phase 1",
 }

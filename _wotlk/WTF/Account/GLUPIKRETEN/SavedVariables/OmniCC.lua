@@ -2,7 +2,7 @@
 OmniCCDB = {
 	["global"] = {
 		["dbVersion"] = 6,
-		["addonVersion"] = "10.0.2",
+		["addonVersion"] = "10.0.3",
 	},
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Default",
@@ -144,13 +144,13 @@ OmniCC4Config = {
 		["base"] = {
 			["enabled"] = true,
 			["fontSize"] = 18,
-			["yOff"] = 0,
-			["effect"] = "pulse",
 			["scaleText"] = true,
+			["effect"] = "pulse",
+			["minDuration"] = 2,
 			["minEffectDuration"] = 30,
 			["anchor"] = "CENTER",
 			["spiralOpacity"] = 1.00999997742474,
-			["minDuration"] = 2,
+			["yOff"] = 0,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
@@ -245,14 +245,14 @@ OmniCC4Config = {
 			["mmSSDuration"] = 0,
 			["minSize"] = 0.5,
 			["spiralOpacity"] = 1,
-			["yOff"] = 0,
+			["scaleText"] = true,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["anchor"] = "CENTER",
 			["minEffectDuration"] = 30,
+			["yOff"] = 0,
 			["minDuration"] = 3,
-			["scaleText"] = true,
 		},
 	},
 	["groups"] = {

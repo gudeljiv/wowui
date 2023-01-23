@@ -12,6 +12,8 @@ Frames/CharacterFrame.lua
 Frames/CustomContainers.lua
 Frames/DefaultFramesCustomScale.lua
 Frames/DefaultFramesDarker.lua
+Frames/GameTooltip.lua
+Frames/GameTooltipStatusBar.lua
 Frames/GroopLootFrame.lua
 Frames/InspectFrame.lua
 Frames/KillCount.lua

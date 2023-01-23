@@ -1,0 +1,38 @@
+## Interface: 30401
+## Title: oGlowClassic
+## Author: Haste, sbd74 (updated for WotLK Classic)
+## Version: 0.3.1
+## SavedVariables: oGlowClassicDB
+## Notes: Make your shiny items... glow in the dark!
+## X-Website: https://www.curseforge.com/wow/addons/oglowclassic
+## X-Curse-Project-ID: 504626
+## X-WoWI-ID: 26116
+
+init.lua
+event.lua
+pipe.lua
+filter.lua
+display.lua
+colors.lua
+oglow-classic.lua
+
+ui\helpers.lua
+ui\pipes.lua
+ui\quality.lua
+ui\colors.lua
+
+pipes\bags.lua
+pipes\char.lua
+pipes\inspect.lua
+pipes\bank.lua
+
+pipes\trade.lua
+pipes\tradeskill.lua
+pipes\merchant.lua
+pipes\mail.lua
+
+pipes\loot.lua
+
+displays\border.lua
+
+filters\quality.lua

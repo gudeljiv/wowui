@@ -17,7 +17,7 @@ Grid2LDB: disabled
 Grid2RaidDebuffsOptions: disabled
 AtlasLootClassic_Options: enabled
 AtlasLootClassic: enabled
-GDKPd: disabled
+GDKPd: enabled
 AtlasLootClassic_Collections: enabled
 AtlasLootClassic_Crafting: enabled
 AtlasLootClassic_DungeonsAndRaids: enabled

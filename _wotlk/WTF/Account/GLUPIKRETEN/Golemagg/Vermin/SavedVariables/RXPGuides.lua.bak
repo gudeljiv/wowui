@@ -917,17 +917,14 @@ RXPCComms = {
 					["class"] = "SHAMAN",
 					["xp"] = 1448,
 				},
-				["Soszojowy"] = {
-					["timePlayed"] = 369.1729999999516,
-					["class"] = "SHAMAN",
-				},
-				["Pennypacks"] = {
-					["level"] = 80,
-					["lastSeen"] = 957727.578,
-					["xpPercentage"] = 0,
-					["class"] = "PALADIN",
+				["Agnæs"] = {
 					["timePlayed"] = 0,
-					["isRxp"] = true,
+					["class"] = "PRIEST",
+				},
+				["Jynxess"] = {
+					["timePlayed"] = 0.01399999996647239,
+					["class"] = "ROGUE",
+					["xp"] = 32100,
 				},
 				["Félís"] = {
 					["timePlayed"] = 292.6400000001304,
@@ -1076,14 +1073,17 @@ RXPCComms = {
 					["timePlayed"] = 329.4879999998957,
 					["class"] = "MAGE",
 				},
-				["Jynxess"] = {
-					["timePlayed"] = 0.01399999996647239,
-					["class"] = "ROGUE",
-					["xp"] = 32100,
-				},
-				["Agnæs"] = {
+				["Pennypacks"] = {
+					["level"] = 80,
+					["lastSeen"] = 957727.578,
+					["xpPercentage"] = 0,
+					["class"] = "PALADIN",
 					["timePlayed"] = 0,
-					["class"] = "PRIEST",
+					["isRxp"] = true,
+				},
+				["Soszojowy"] = {
+					["timePlayed"] = 369.1729999999516,
+					["class"] = "SHAMAN",
 				},
 				["Ritkoo"] = {
 					["timePlayed"] = 299.6820000000298,
@@ -1237,7 +1237,7 @@ RXPCSettings = {
 			["enableTargetMacro"] = false,
 			["lockFrames"] = false,
 			["arrowText"] = 10,
-			["frameHeight"] = 125.0000228881836,
+			["frameHeight"] = 125.0000457763672,
 			["macroAnnounced"] = true,
 			["worldMapPinBackgroundOpacity"] = 0.3499999940395355,
 			["enableLevelUpAnnounceSolo"] = false,

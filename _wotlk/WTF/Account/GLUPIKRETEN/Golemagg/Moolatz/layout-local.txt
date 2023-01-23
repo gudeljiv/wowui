@@ -76,13 +76,6 @@ X: -203
 Y: 100
 W: 670
 H: 752
-Frame: nTooltip_Anchor
-FrameLevel: 1
-Anchor: BOTTOMRIGHT
-X: -27
-Y: 27
-W: 50
-H: 50
 Frame: RXPG_ARROW
 FrameLevel: 1
 Anchor: CENTER

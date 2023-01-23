@@ -922,18 +922,21 @@ RXPCComms = {
 					["timePlayed"] = 299.6820000000298,
 					["class"] = "DEATHKNIGHT",
 				},
-				["Agnæs"] = {
-					["timePlayed"] = 0,
-					["class"] = "PRIEST",
-				},
-				["Jynxess"] = {
-					["timePlayed"] = 0.01399999996647239,
-					["class"] = "ROGUE",
-					["xp"] = 32100,
-				},
 				["Soszojowy"] = {
 					["timePlayed"] = 369.1729999999516,
 					["class"] = "SHAMAN",
+				},
+				["Pennypacks"] = {
+					["isRxp"] = true,
+					["lastSeen"] = 957727.578,
+					["xpPercentage"] = 0,
+					["level"] = 80,
+					["timePlayed"] = 0,
+					["class"] = "PALADIN",
+				},
+				["Agnæs"] = {
+					["timePlayed"] = 0,
+					["class"] = "PRIEST",
 				},
 				["Voodooistt"] = {
 					["timePlayed"] = 329.4879999998957,
@@ -1082,13 +1085,10 @@ RXPCComms = {
 					["timePlayed"] = 292.6400000001304,
 					["class"] = "DRUID",
 				},
-				["Pennypacks"] = {
-					["isRxp"] = true,
-					["lastSeen"] = 957727.578,
-					["xpPercentage"] = 0,
-					["level"] = 80,
-					["timePlayed"] = 0,
-					["class"] = "PALADIN",
+				["Jynxess"] = {
+					["timePlayed"] = 0.01399999996647239,
+					["class"] = "ROGUE",
+					["xp"] = 32100,
 				},
 				["Kyrpämyyrä"] = {
 					["timePlayed"] = 984.3009999999776,
@@ -1237,7 +1237,7 @@ RXPCSettings = {
 			["enableTargetAutomation"] = false,
 			["lockFrames"] = false,
 			["arrowText"] = 10,
-			["frameHeight"] = 125.0000228881836,
+			["frameHeight"] = 125.0000457763672,
 			["macroAnnounced"] = true,
 			["worldMapPinBackgroundOpacity"] = 0.3499999940395355,
 			["enableLevelUpAnnounceSolo"] = false,

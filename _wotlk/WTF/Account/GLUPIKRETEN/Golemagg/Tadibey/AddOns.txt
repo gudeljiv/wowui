@@ -30,6 +30,6 @@ Bagnon_Config: enabled
 Bagnon_GuildBank: enabled
 Bagnon_VoidStorage: enabled
 BagBrother: enabled
-GDKPd: disabled
+GDKPd: enabled
 nTooltip: disabled
 TacoTip: enabled

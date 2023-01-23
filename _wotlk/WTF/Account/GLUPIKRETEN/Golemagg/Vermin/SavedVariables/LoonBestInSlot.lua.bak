@@ -51,6 +51,6 @@ LBISSettings = {
 	["SelectedSourceType"] = "All",
 	["PriorityList"] = {
 	},
-	["SelectedSlot"] = "Main Hand",
+	["SelectedSlot"] = "Off Hand",
 	["SelectedPhase"] = "All",
 }
