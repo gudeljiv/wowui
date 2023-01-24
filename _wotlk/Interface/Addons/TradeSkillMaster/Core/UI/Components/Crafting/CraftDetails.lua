@@ -5,6 +5,7 @@
 -- ------------------------------------------------------------------------------ --
 
 local TSM = select(2, ...) ---@type TSM
+local Environment = TSM.Include("Environment")
 local ProfessionInfo = TSM.Include("Data.ProfessionInfo")
 local ItemString = TSM.Include("Util.ItemString")
 local TextureAtlas = TSM.Include("Util.TextureAtlas")
@@ -731,7 +732,7 @@ function private.CraftStringToCraftType(craftString)
 	if not craftString then
 		return "NONE"
 	elseif Profession.IsEnchant(craftString) then
-		return TSM.IsWowVanillaClassic() and "ENCHANT" or "ENCHANT_VELLUM"
+		return Environment.IsVanillaClassic() and "ENCHANT" or "ENCHANT_VELLUM"
 	elseif Profession.IsTinker(craftString) then
 		return "TINKER"
 	elseif not Profession.GetResultInfo(craftString) then

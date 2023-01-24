@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Deathbringer", "DBM-Icecrown", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20230123032800")
+mod:SetRevision("20230124053113")
 mod:SetCreatureID(37813)
 mod:SetEncounterID(mod:IsClassic() and 848 or 1096)
 mod:SetModelID(30790)

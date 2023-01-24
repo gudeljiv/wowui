@@ -6,6 +6,7 @@
 
 local TSM = select(2, ...) ---@type TSM
 local Publisher = TSM.Init("Util.ReactiveClasses.Publisher") ---@class Util.ReactiveClasses.Publisher
+local Environment = TSM.Include("Environment")
 local Math = TSM.Include("Util.Math")
 local String = TSM.Include("Util.String")
 local ObjectPool = TSM.Include("Util.ObjectPool")
@@ -234,7 +235,7 @@ end
 ---@param tag? string An optional tag to add to the prints
 ---@return ReactivePublisher
 function ReactivePublisher:Print(tag)
-	assert(TSM.IsDevVersion())
+	assert(Environment.IsDev())
 	return self:_AddStepHelper(PUBLISHER_STATES.STEPS, "PRINT", tag)
 end
 

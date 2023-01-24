@@ -6,6 +6,7 @@
 
 local TSM = select(2, ...) ---@type TSM
 local UIUtils = TSM.Init("UI.UIUtils") ---@class UI.UIUtils
+local Environment = TSM.Include("Environment")
 local Analytics = TSM.Include("Util.Analytics")
 local Theme = TSM.Include("Util.Theme")
 local Wow = TSM.Include("Util.Wow")
@@ -22,7 +23,7 @@ do
 		Theme.GetColor("FEEDBACK_YELLOW"),
 		Theme.GetColor("FEEDBACK_GREEN"),
 	}
-	local strs = TSM.IsWowClassic() and { "30m", "2h", "8h", "24h" } or { "1h", "2h", "24h", "48h" }
+	local strs = Environment.IsRetail() and { "1h", "2h", "24h", "48h" } or { "30m", "2h", "8h", "24h" }
 	assert(#colors == #strs)
 	for i = 1, #colors do
 		TIME_LEFT_STRINGS[i] = colors[i]:ColorText(strs[i])

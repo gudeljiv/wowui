@@ -39,3 +39,4 @@ Bagnon_GuildBank: enabled
 Bagnon_VoidStorage: enabled
 BagBrother: enabled
 TacoTip: enabled
+Auctionator: enabled

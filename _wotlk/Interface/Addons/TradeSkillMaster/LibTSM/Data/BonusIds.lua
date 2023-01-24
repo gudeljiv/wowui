@@ -4,8 +4,8 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
-local BonusIds = TSM.Init("Data.BonusIds")
+local TSM = select(2, ...) ---@type TSM
+local BonusIds = TSM.Init("Data.BonusIds") ---@class Data.BonusIds
 local private = {
 	bonusIdCache = {},
 	bonusIdTemp = {},

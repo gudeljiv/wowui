@@ -5,7 +5,7 @@ if not mod:IsClassic() then--on classic, it's normal10,normal25, defined in toc,
 	mod.statTypes = "normal"
 end
 
-mod:SetRevision("20230123032800")
+mod:SetRevision("20230124053113")
 mod:SetCreatureID(32871)
 if not mod:IsClassic() then--Assumed fixed in classic
 	mod:SetEncounterID(1130)
@@ -28,7 +28,7 @@ mod:RegisterEventsInCombat(
 	"SPELL_AURA_APPLIED 64412",
 	"SPELL_AURA_APPLIED_DOSE 64412",
 	"SPELL_AURA_REMOVED 64412",
-	"RAID_BOSS_EMOTE",
+	"CHAT_MSG_RAID_BOSS_EMOTE",
 	"CHAT_MSG_MONSTER_YELL",
 	"UNIT_SPELLCAST_SUCCEEDED",
 	"UNIT_HEALTH"
@@ -52,6 +52,7 @@ local specWarnPhasePunch		= mod:NewSpecialWarningStack(64412, nil, 4, nil, nil, 
 local specWarnBigBang			= mod:NewSpecialWarningSpell(64584, nil, nil, nil, 3, 2)
 local specWarnCosmicSmash		= mod:NewSpecialWarningDodge(64596, nil, nil, nil, 2, 2)
 
+local timerCombatStart			= mod:NewCombatTimer(42)
 local timerNextBigBang			= mod:NewNextTimer(90.5, 64584, nil, nil, nil, 2)
 local timerBigBangCast			= mod:NewCastTimer(8, 64584, nil, nil, nil, 2, nil, DBM_COMMON_L.DEADLY_ICON)
 local timerNextCollapsingStar	= mod:NewTimer(15, "NextCollapsingStar", "237016")
@@ -78,12 +79,14 @@ function mod:OnCombatStart(delay)
 		if self:IsDifficulty("normal10") then
 			if self.vb.firstPull10 then--First pull, ENCOUNTER_START fires at end of extended first pull RP
 				self.vb.firstPull10 = false
+				timerCombatStart:Start(26)
 				timerNextCollapsingStar:Start(42)
 				timerCDCosmicSmash:Start(51.9)
 				announcePreBigBang:Schedule(111)
 				timerNextBigBang:Start(116)
 				enrageTimer:Start(386)
 			else--Not first pull, ENCOUNTER_START fires at start of 8 second rp
+				timerCombatStart:Start(8)
 				timerNextCollapsingStar:Start(24)
 				timerCDCosmicSmash:Start(33.9)
 				announcePreBigBang:Schedule(93)
@@ -93,18 +96,27 @@ function mod:OnCombatStart(delay)
 		else
 			if self.vb.firstPull25 then--First pull, ENCOUNTER_START fires at end of extended first pull RP
 				self.vb.firstPull25 = false
+				timerCombatStart:Start(26)
 				timerNextCollapsingStar:Start(42)
 				timerCDCosmicSmash:Start(51.9)
 				announcePreBigBang:Schedule(111)
 				timerNextBigBang:Start(116)
 				enrageTimer:Start(386)
 			else--Not first pull, ENCOUNTER_START fires at start of 8 second rp
+				timerCombatStart:Start(8)
 				timerNextCollapsingStar:Start(24)
 				timerCDCosmicSmash:Start(33.9)
 				announcePreBigBang:Schedule(93)
 				timerNextBigBang:Start(98)
 				enrageTimer:Start(368)
 			end
+		end
+	else
+		if self.vb.firstPull10 then--First pull, ENCOUNTER_START fires at end of extended first pull RP
+			self.vb.firstPull10 = false
+			timerCombatStart:Start(26)
+		else--Not first pull, ENCOUNTER_START fires at start of 8 second rp
+			timerCombatStart:Start(8)
 		end
 	end
 --	if self.Options.InfoFrame and not self:IsTrivial() then
@@ -165,12 +177,14 @@ function mod:SPELL_AURA_REMOVED(args)
 	end
 end
 
-function mod:RAID_BOSS_EMOTE(msg)
+function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg)
 	if msg == L.Emote_CollapsingStar or msg:find(L.Emote_CollapsingStar) then
 		timerNextCollapsingStar:Start()
 	end
 end
 
+--"<47.18 22:25:26> [CHAT_MSG_MONSTER_YELL] The stars come to my aid!#Algalon the Observer#####0#0##0#139#nil#0#false#false#false#false", -- [59]
+--"<47.18 22:25:26> [CHAT_MSG_RAID_BOSS_EMOTE] %s begins to Summon Collapsing Stars!#Algalon the Observer#####0#0##0#140#nil#0#false#false#false#false", -- [60]
 function mod:CHAT_MSG_MONSTER_YELL(msg)
 	if (msg == L.Phase2 or msg:find(L.Phase2)) then
 		self:SendSync("Phase2")

@@ -104,6 +104,9 @@ _detalhes_database = {
 		["frame"] = {
 		},
 	},
+	["last_instance_time"] = 0,
+	["mythic_plus_log"] = {
+	},
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "",
 		["started"] = false,
@@ -115,130 +118,19 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 0,
 		["previous_boss_killed_at"] = 0,
 	},
-	["plugin_database"] = {
-		["DETAILS_PLUGIN_TINY_THREAT"] = {
-			["enabled"] = true,
-			["animate"] = false,
-			["hide_pull_bar"] = false,
-			["author"] = "Terciob",
-			["playercolor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["usefocus"] = false,
-			["updatespeed"] = 1,
-			["useclasscolors"] = false,
-			["showamount"] = false,
-			["useplayercolor"] = false,
-			["absolute_mode"] = false,
-			["playSound"] = false,
-			["playSoundFile"] = "Details Threat Warning Volume 3",
-			["disable_gouge"] = false,
-		},
-		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
-			["enabled"] = true,
-			["encounter_timers_bw"] = {
-			},
-			["max_emote_segments"] = 3,
-			["last_section_selected"] = "main",
-			["author"] = "Terciob",
-			["window_scale"] = 1,
-			["encounter_timers_dbm"] = {
-			},
-			["show_icon"] = 5,
-			["opened"] = 0,
-			["hide_on_combat"] = false,
-		},
-		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
-			["enabled"] = true,
-			["author"] = "Terciob",
-		},
-		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
-			["use_square_mode"] = false,
-			["is_first_run"] = false,
-			["grow_direction"] = "right",
-			["arrow_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["arrow_anchor_y"] = 0,
-			["main_frame_size"] = {
-				249.999740600586, -- [1]
-				89.9999694824219, -- [2]
-			},
-			["minimap"] = {
-				["minimapPos"] = 160,
-				["radius"] = 160,
-				["hide"] = true,
-			},
-			["main_frame_locked"] = true,
-			["arrow_anchor_x"] = 0,
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
-			["row_texture"] = "Glamour2",
-			["square_grow_direction"] = "right",
-			["use_spark"] = false,
-			["author"] = "Details! Team",
-			["square_amount"] = 5,
-			["enabled"] = false,
-			["arrow_size"] = 10,
-			["y"] = -183.107162475586,
-			["row_spacement"] = 19,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["font_size"] = 10,
-			["per_second"] = {
-				["enabled"] = false,
-				["point"] = "CENTER",
-				["scale"] = 1,
-				["font_shadow"] = true,
-				["y"] = -6.103515625e-05,
-				["x"] = 0.00311279296875,
-				["attribute_type"] = 1,
-				["update_speed"] = 0.05,
-				["size"] = 32,
-			},
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
-			["point"] = "RIGHT",
-			["font_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["row_height"] = 18,
-			["scale"] = 1,
-		},
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
 	["force_font_outline"] = "",
-	["last_day"] = "23",
-	["mythic_plus_log"] = {
+	["data_harvested_for_charts"] = {
 	},
 	["character_data"] = {
-		["logons"] = 100,
+		["logons"] = 108,
 	},
 	["ignore_nicktag"] = false,
 	["combat_id"] = 101,
@@ -262,7 +154,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["bars_sort_direction"] = 1,
+			["micro_displays_locked"] = false,
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -430,13 +322,13 @@ _detalhes_database = {
 				},
 			},
 			["show_sidebars"] = false,
-			["name"] = "vermin",
+			["bg_alpha"] = 0,
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["version"] = 3,
+			["name"] = "vermin",
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -478,7 +370,7 @@ _detalhes_database = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["micro_displays_locked"] = false,
+			["skin_custom"] = "vermin",
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -494,14 +386,11 @@ _detalhes_database = {
 					0.07058823529411765, -- [3]
 				},
 			},
+			["bars_grow_direction"] = 1,
 			["row_show_animation"] = {
 				["anim"] = "Fade",
 				["options"] = {
 				},
-			},
-			["menu_anchor_down"] = {
-				16, -- [1]
-				-3, -- [2]
 			},
 			["grab_on_top"] = false,
 			["auto_hide_menu"] = {
@@ -520,15 +409,18 @@ _detalhes_database = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["bars_grow_direction"] = 1,
+			["menu_anchor_down"] = {
+				16, -- [1]
+				-3, -- [2]
+			},
 			["auto_current"] = true,
-			["skin_custom"] = "vermin",
+			["bars_sort_direction"] = 1,
 			["switch_damager"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["bg_alpha"] = 0,
+			["version"] = 3,
 			["hide_in_combat"] = false,
 			["row_info"] = {
 				["textR_outline"] = false,
@@ -681,7 +573,7 @@ _detalhes_database = {
 		["nextreset"] = 1674990527,
 		["last_version"] = 15,
 	},
-	["combat_counter"] = 299,
+	["combat_counter"] = 315,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -881,9 +773,117 @@ _detalhes_database = {
 			},
 		}, -- [2]
 	},
-	["last_instance_time"] = 0,
-	["data_harvested_for_charts"] = {
+	["plugin_database"] = {
+		["DETAILS_PLUGIN_TINY_THREAT"] = {
+			["enabled"] = true,
+			["animate"] = false,
+			["hide_pull_bar"] = false,
+			["author"] = "Terciob",
+			["playercolor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["usefocus"] = false,
+			["updatespeed"] = 1,
+			["useclasscolors"] = false,
+			["showamount"] = false,
+			["useplayercolor"] = false,
+			["absolute_mode"] = false,
+			["playSound"] = false,
+			["playSoundFile"] = "Details Threat Warning Volume 3",
+			["disable_gouge"] = false,
+		},
+		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
+			["enabled"] = true,
+			["encounter_timers_bw"] = {
+			},
+			["max_emote_segments"] = 3,
+			["last_section_selected"] = "main",
+			["author"] = "Terciob",
+			["window_scale"] = 1,
+			["encounter_timers_dbm"] = {
+			},
+			["show_icon"] = 5,
+			["opened"] = 0,
+			["hide_on_combat"] = false,
+		},
+		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
+			["enabled"] = true,
+			["author"] = "Terciob",
+		},
+		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
+			["use_square_mode"] = false,
+			["is_first_run"] = false,
+			["grow_direction"] = "right",
+			["arrow_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["arrow_anchor_y"] = 0,
+			["main_frame_size"] = {
+				249.999740600586, -- [1]
+				89.9999694824219, -- [2]
+			},
+			["minimap"] = {
+				["minimapPos"] = 160,
+				["radius"] = 160,
+				["hide"] = true,
+			},
+			["main_frame_locked"] = true,
+			["arrow_anchor_x"] = 0,
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
+			["row_texture"] = "Glamour2",
+			["square_grow_direction"] = "right",
+			["use_spark"] = false,
+			["author"] = "Details! Team",
+			["square_amount"] = 5,
+			["enabled"] = false,
+			["arrow_size"] = 10,
+			["y"] = -183.107162475586,
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["font_size"] = 10,
+			["per_second"] = {
+				["enabled"] = false,
+				["point"] = "CENTER",
+				["scale"] = 1,
+				["font_shadow"] = true,
+				["y"] = -6.103515625e-05,
+				["x"] = 0.00311279296875,
+				["attribute_type"] = 1,
+				["update_speed"] = 0.05,
+				["size"] = 32,
+			},
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
+			["point"] = "RIGHT",
+			["font_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["row_height"] = 18,
+			["scale"] = 1,
+		},
 	},
+	["last_day"] = "24",
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {
 		},

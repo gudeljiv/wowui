@@ -8,7 +8,7 @@
 -- The element used to show the queue in the Crafting UI. It is a subclass of the @{ScrollingTable} class.
 -- @classmod CraftingQueueList
 
-local _, TSM = ...
+local TSM = select(2, ...) ---@type TSM
 local L = TSM.Include("Locale").GetTable()
 local CraftString = TSM.Include("Util.CraftString")
 local TempTable = TSM.Include("Util.TempTable")

@@ -1945,6 +1945,7 @@
 				["0.29:0.57:0.29:0.54:0.18:0.47:0.18:0.40"] = 141, -- Unu'pe, Taunka'le Village, Bor'gorok Outpost, Nesingwary Base Camp
 				["0.29:0.57:0.29:0.54:0.31:0.43:0.38:0.21"] = 256, -- Unu'pe, Taunka'le Village, Warsong Camp, The Shadow Vault
 				["0.29:0.57:0.29:0.54:0.31:0.43:0.28:0.28"] = 205, -- Unu'pe, Taunka'le Village, Warsong Camp, Death's Rise
+				["0.29:0.57:0.29:0.54:0.31:0.43:0.38:0.21:0.49:0.21"] = 332, -- Unu'pe, Taunka'le, Kriegshymnenlager, Das Schattengewölbe, Argentumturnierplatz
 
 				-- Horde: Borean Tundra: Warsong Hold
 				["0.15:0.57:0.29:0.57:0.49:0.58:0.74:0.71"] = 394, -- Warsong Hold, Unu'pe, Moa'ki, Kamagua
@@ -2568,6 +2569,7 @@
 				["0.54:0.52:0.49:0.58:0.74:0.71:0.85:0.73:0.95:0.63"] = 253, -- Wyrmruhtempel, Moa'ki, Kamagua, Neu-Agamand, Hafen der Vergeltung
 				["0.54:0.52:0.52:0.38:0.56:0.36:0.60:0.25:0.57:0.21"] = 172, -- Wyrmrest Temple, Dalaran, The Argent Vanguard, Grom'arsh Crash-Site, Bouldercrag's Refuge
 				["0.54:0.52:0.52:0.38:0.49:0.21"] = 141, -- Wyrmrest Temple, Dalaran, Argent Tournament Grounds
+				["0.54:0.52:0.52:0.38:0.24:0.40:0.28:0.28:0.38:0.21"] = 317, -- Wyrmrest Temple, Dalaran, River's Heart, Death's Rise, The Shadow Vault
 
 				----------------------------------------------------------------------
 				-- Horde: Grizzly Hills
@@ -2754,6 +2756,7 @@
 				["0.84:0.51:0.70:0.55:0.59:0.55:0.54:0.52:0.52:0.38:0.49:0.21"] = 443, -- Camp Oneqwah, Conquest Hold, Venomspite, Wyrmrest Temple, Dalaran, Argent Tournament Grounds
 				["0.84:0.51:0.69:0.42:0.64:0.42:0.62:0.36"] = 172, -- Camp Oneqwah, Light's Breach, Ebon Watch, K3
 				["0.84:0.51:0.78:0.38:0.64:0.19:0.57:0.21:0.49:0.21"] = 355, -- Camp Oneqwah, Zim'Torga, Ulduar, Bergfels' Zuflucht, Argentumturnierplatz
+				["0.84:0.51:0.70:0.55:0.59:0.55:0.54:0.52:0.45:0.51:0.31:0.43:0.24:0.40"] = 494, -- Camp Oneqwah, Conquest Hold, Venomspite, Wyrmrest Temple, Agmar's Hammer, Warsong Camp, River's Heart
 
 				-- Horde: Howling Fjord: Camp Winterhoof
 				["0.84:0.59:0.85:0.73"] = 80, -- Camp Winterhoof, New Agamand
@@ -2830,6 +2833,7 @@
 				["0.84:0.59:0.70:0.55:0.69:0.42:0.64:0.42:0.52:0.38:0.49:0.21"] = 392, -- Camp Winterhoof, Conquest Hold, Light's Breach, Ebon Watch, Dalaran, Argent Tournament Grounds
 				["0.84:0.59:0.74:0.62:0.74:0.71:0.49:0.58:0.45:0.51:0.29:0.54"] = 479, -- Camp Winterhoof, Apothecary Camp, Kamagua, Moa'ki, Agmar's Hammer, Taunka'le Village
 				["0.84:0.59:0.84:0.51:0.72:0.40"] = 158, -- Lager der Winterhufe, Camp Oneqwah, Argentumwache
+				["0.84:0.59:0.85:0.73:0.59:0.55:0.54:0.52:0.52:0.38"] = 421, -- Camp Winterhoof, New Agamand, Venomspite, Wyrmrest Temple, Dalaran
 
 				-- Horde: Howling Fjord: Kamagua
 				["0.74:0.71:0.85:0.73"] = 64, -- Kamagua, New Agamand
@@ -3033,6 +3037,7 @@
 				["0.95:0.63:0.84:0.59:0.74:0.62:0.59:0.55:0.48:0.44:0.52:0.38"] = 423, -- Vengeance Landing, Camp Winterhoof, Apothecary Camp, Venomspite, Kor'koron Vanguard, Dalaran
 				["0.95:0.63:0.84:0.59:0.74:0.62:0.59:0.55:0.64:0.42"] = 330, -- Vengeance Landing, Camp Winterhoof, Apothecary Camp, Venomspite, Ebon Watch
 				["0.95:0.63:0.84:0.59:0.70:0.55:0.69:0.42:0.64:0.42:0.62:0.36:0.72:0.29"] = 423, -- Vengeance Landing, Camp Winterhoof, Conquest Hold, Light's Breach, Ebon Watch, K3, Dun Nifflelem
+				["0.95:0.63:0.84:0.51:0.69:0.42:0.64:0.42:0.60:0.40"] = 263, -- Vengeance Landing, Camp Oneqwah, Light's Breach, Ebon Watch, Sunreaver's Command
 
 				----------------------------------------------------------------------
 				-- Horde: Icecrown
@@ -3069,6 +3074,9 @@
 				["0.49:0.21:0.52:0.38:0.64:0.42:0.69:0.42"] = 249, -- Argent Tournament Grounds, Dalaran, Ebon Watch, Light's Breach
 				["0.49:0.21:0.52:0.38:0.24:0.40"] = 339, -- Argent Tournament Grounds, Dalaran, River's Heart
 				["0.49:0.21:0.52:0.34:0.56:0.36:0.52:0.38:0.54:0.52"] = 247, -- Argent Tournament Grounds, Crusaders' Pinnacle, The Argent Vanguard, Dalaran, Wyrmrest Temple
+				["0.49:0.21:0.57:0.21:0.64:0.19:0.78:0.38"] = 249, -- Argent Tournament Grounds, Bouldercrag's Refuge, Ulduar, Zim'Torga
+				["0.49:0.21:0.38:0.21:0.28:0.28:0.18:0.40"] = 283, -- Argent Tournament Grounds, The Shadow Vault, Death's Rise, Nesingwary Base Camp
+				["0.49:0.21:0.52:0.38:0.54:0.52"] = 250, -- Argent Tournament Grounds, Dalaran, Wyrmrest Temple
 
 				-- Horde: Icecrown: Crusaders' Pinnacle
 				["0.52:0.34:0.56:0.36:0.52:0.38:0.54:0.52"] = 175, -- Crusaders' Pinnacle, The Argent Vanguard, Dalaran, Wyrmrest Temple
@@ -3604,6 +3612,7 @@
 				["0.60:0.25:0.56:0.36:0.52:0.34:0.31:0.43:0.29:0.54:0.15:0.57"] = 427, -- Grom'arsh Crash-Site, The Argent Vanguard, Crusaders' Pinnacle, Warsong Camp, Taunka'le Village, Warsong Hold
 				["0.60:0.25:0.57:0.21:0.49:0.21"] = 97, -- Grom'arsh Crash-Site, Bouldercrag's Refuge, Argent Tournament Grounds
 				["0.60:0.25:0.73:0.25:0.78:0.38:0.84:0.51"] = 276, -- Absturzstelle Grom'ash, Camp Tunka'lo, Zim'Torga, Camp Oneqwah
+				["0.60:0.25:0.56:0.36:0.52:0.38:0.49:0.21"] = 224, -- Grom'arsh Crash-Site, The Argent Vanguard, Dalaran, Argent Tournament Grounds
 
 				-- Horde: The Storm Peaks: K3
 				["0.62:0.36:0.52:0.38"] = 72, -- K3, Dalaran

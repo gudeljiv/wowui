@@ -46,7 +46,7 @@ skills["offgcd"]["hunter"] = [
     {"name": "kill command", "type": "GetSpellTexture", "id": 34026, "key": "4"},
     {"name": "aspect of the hawk", "type": "GetSpellTexture", "id": 13165, "key": "f1"},
     {"name": "aspect of the dragonhawk", "type": "GetSpellTexture", "id": 61846, "key": "f1"},
-    {"name": "aspect of the viper", "type": "GetSpellTexture", "id": 34074, "key": "f5"},
+    {"name": "aspect of the viper", "type": "GetSpellTexture", "id": 34074, "key": "f2"},
 ]
 
 skills["offgcd"]["rogue"] = [

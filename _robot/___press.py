@@ -1,5 +1,3 @@
-from _skills import skills
-from _colors import color
 import time
 
 import cv2
@@ -38,7 +36,6 @@ dprint = False
 pause = True
 wow_class = "warrior"
 
-print(wow_class)
 
 def on_press(key):
     global debug, dprint, pause, mill
@@ -54,9 +51,10 @@ def on_press(key):
             pyautogui.PAUSE = 0
 
 
-
 with keyboard.Listener(on_press=on_press) as listener:
     with mss.mss() as sct:
         while True:
 
-             pyautogui.typewrite("1001\n")
+            time.sleep(1)
+            if not pause:
+                pyautogui.hotkey("x")

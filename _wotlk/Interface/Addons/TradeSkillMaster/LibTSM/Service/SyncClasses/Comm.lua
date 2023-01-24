@@ -5,7 +5,7 @@
 -- ------------------------------------------------------------------------------ --
 
 local TSM = select(2, ...) ---@type TSM
-local Comm = TSM.Init("Service.SyncClasses.Comm")
+local Comm = TSM.Init("Service.SyncClasses.Comm") ---@class Service.SyncClasses.Comm
 local Delay = TSM.Include("Util.Delay")
 local Table = TSM.Include("Util.Table")
 local TempTable = TSM.Include("Util.TempTable")
@@ -18,7 +18,7 @@ local private = {
 	queuedSourceCharacter = {},
 	queueTimer = nil,
 }
--- load libraries
+-- Load libraries
 LibStub("AceComm-3.0"):Embed(Comm)
 local LibSerialize = LibStub("LibSerialize")
 local LibDeflate = LibStub("LibDeflate")

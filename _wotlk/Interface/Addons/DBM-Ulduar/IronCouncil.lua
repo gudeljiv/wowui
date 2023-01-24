@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("IronCouncil", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20230123032800")
+mod:SetRevision("20230124053113")
 mod:SetCreatureID(32867, 32927, 32857)
 mod:SetEncounterID(1140)
 if not mod:IsClassic() then
@@ -195,6 +195,7 @@ function mod:SPELL_AURA_REMOVED(args)
 		if self.Options.SetIconOnOverwhelmingPower then
 			self:SetIcon(args.destName, 0)
 		end
+		timerOverwhelmingPower:Stop(args.destName)
 	elseif args:IsSpellID(63483, 61915) then	-- LightningWhirl
 		timerLightningWhirl:Stop()
 	elseif args:IsSpellID(61912, 63494) then	-- Static Disruption (Hard Mode)

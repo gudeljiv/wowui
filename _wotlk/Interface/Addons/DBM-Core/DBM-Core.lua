@@ -70,15 +70,15 @@ local function showRealDate(curseDate)
 end
 
 DBM = {
-	Revision = parseCurseDate("20230123032953"),
+	Revision = parseCurseDate("20230124073334"),
 }
 
 local fakeBWVersion, fakeBWHash
 local bwVersionResponseString = "V^%d^%s"
 -- The string that is shown as version
 if isRetail then
-	DBM.DisplayVersion = "10.0.22 alpha"
-	DBM.ReleaseRevision = releaseDate(2023, 1, 17) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
+	DBM.DisplayVersion = "10.0.22"
+	DBM.ReleaseRevision = releaseDate(2023, 1, 23) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
 	fakeBWVersion, fakeBWHash = 259, "3fbb48c"
 elseif isClassic then
 	DBM.DisplayVersion = "1.14.30 alpha"
@@ -89,8 +89,8 @@ elseif isBCC then
 	DBM.ReleaseRevision = releaseDate(2023, 1, 17) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
 	fakeBWVersion, fakeBWHash = 41, "287b8dd"
 elseif isWrath then
-	DBM.DisplayVersion = "3.4.28"
-	DBM.ReleaseRevision = releaseDate(2023, 1, 22) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
+	DBM.DisplayVersion = "3.4.29"
+	DBM.ReleaseRevision = releaseDate(2023, 1, 23) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
 	fakeBWVersion, fakeBWHash = 41, "287b8dd"
 end
 DBM.HighestRelease = DBM.ReleaseRevision --Updated if newer version is detected, used by update nags to reflect critical fixes user is missing on boss pulls

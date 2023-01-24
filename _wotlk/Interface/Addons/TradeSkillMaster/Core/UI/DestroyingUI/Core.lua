@@ -6,6 +6,7 @@
 
 local TSM = select(2, ...) ---@type TSM
 local DestroyingUI = TSM.UI:NewPackage("DestroyingUI")
+local Environment = TSM.Include("Environment")
 local L = TSM.Include("Locale").GetTable()
 local DisenchantInfo = TSM.Include("Data.DisenchantInfo")
 local ItemString = TSM.Include("Util.ItemString")
@@ -365,8 +366,8 @@ end
 function private.GetDestroyInfo(itemString)
 	local classId = ItemInfo.GetClassId(itemString)
 	local quality = ItemInfo.GetQuality(itemString)
-	local itemLevel = not TSM.IsWowClassic() and ItemInfo.GetItemLevel(itemString) or ItemInfo.GetItemLevel(ItemString.GetBase(itemString))
-	local expansion = not TSM.IsWowClassic() and ItemInfo.GetExpansion(itemString) or nil
+	local itemLevel = Environment.IsRetail() and ItemInfo.GetItemLevel(itemString) or ItemInfo.GetItemLevel(ItemString.GetBase(itemString))
+	local expansion = Environment.IsRetail() and ItemInfo.GetExpansion(itemString) or nil
 	local info = TempTable.Acquire()
 	local targetItems = TempTable.Acquire()
 	for targetItemString in DisenchantInfo.TargetItemIterator() do

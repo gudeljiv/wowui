@@ -4,7 +4,7 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
+local TSM = select(2, ...) ---@type TSM
 local Inbox = TSM.Mailing:NewPackage("Inbox")
 local Database = TSM.Include("Util.Database")
 local TempTable = TSM.Include("Util.TempTable")

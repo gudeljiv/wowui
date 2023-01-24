@@ -6,6 +6,7 @@
 
 local TSM = select(2, ...) ---@type TSM
 local ItemInfo = TSM.Init("Service.ItemInfo") ---@class Service.ItemInfo
+local Environment = TSM.Include("Environment")
 local L = TSM.Include("Locale").GetTable()
 local ItemClass = TSM.Include("Data.ItemClass")
 local VendorSell = TSM.Include("Data.VendorSell")
@@ -944,7 +945,7 @@ end
 ---@param item string The item
 ---@return number?
 function ItemInfo.IsCommodity(item)
-	if TSM.IsWowClassic() then
+	if not Environment.HasFeature(Environment.FEATURES.COMMODITY_ITEMS) then
 		return false
 	end
 	local stackSize = ItemInfo.GetMaxStack(item)
@@ -1117,7 +1118,7 @@ function private.ProcessPendingItemInfo(itemString)
 		if private.numRequests[itemString] ~= math.huge then
 			private.numRequests[itemString] = math.huge
 			local itemId = ItemString.IsItem(itemString) and ItemString.ToId(itemString) or nil
-			if not TSM.IsWowClassic() then
+			if Environment.IsRetail() then
 				Log.Err("Giving up on item info for %s", itemString)
 			end
 			if itemId and itemString == ItemString.GetBaseFast(itemString) then
@@ -1365,7 +1366,7 @@ function private.StoreGetItemInfoInstant(itemString)
 		-- some items (such as i:37445) give a classId of -1 for some reason in which case we can look up the classId
 		if classId < 0 then
 			classId = ItemClass.GetClassIdFromClassString(classStr)
-			if not classId and TSM.IsWowClassic() then
+			if not classId and not Environment.IsRetail() then
 				-- this can happen for items which don't yet exist in classic (i.e. WoW Tokens)
 				return
 			end
@@ -1379,7 +1380,7 @@ function private.StoreGetItemInfoInstant(itemString)
 			private.SetItemInfoInstantFields(baseItemString, texture, classId, subClassId, invSlotId)
 		end
 	elseif itemStringType == "p" then
-		if TSM.IsWowClassic() then
+		if not Environment.HasFeature(Environment.FEATURES.BATTLE_PETS) then
 			return
 		end
 		local name, texture, petTypeId = C_PetJournal.GetPetInfoBySpeciesID(id)
@@ -1448,7 +1449,7 @@ function private.StoreGetItemInfo(itemString)
 
 	local name, link, quality, itemLevel, minLevel, _, _, maxStack, _, _, vendorSell, _, _, bindType, expansionId, _, isCraftingReagent = GetItemInfo(baseWowItemString)
 	local craftedQuality = nil
-	if TSM.IsWowClassic() then
+	if not Environment.HasFeature(Environment.FEATURES.CRAFTING_QUALITY) then
 		expansionId = -1
 		craftedQuality = -1
 	elseif link then

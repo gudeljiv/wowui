@@ -132,10 +132,10 @@ X: 55
 Y: 0
 W: 640
 H: 512
-Frame: nTooltip_Anchor
-FrameLevel: 1
-Anchor: BOTTOMRIGHT
-X: -27
-Y: 27
-W: 50
-H: 50
+Frame: Dejunk_JunkFrame
+FrameLevel: 2
+Anchor: TOPRIGHT
+X: -260
+Y: -200
+W: 325
+H: 375
