@@ -150,8 +150,8 @@ function private.RPCGetCraftsResultHandler(success, player, profession, craftStr
 		:Equal("profession", profession)
 		:ListContains("players", player)
 	local toRemove = TempTable.Acquire()
+	Log.Info("Removing %d crafts (%s, %s)", query:Count(), profession, player)
 	for _, craftString in query:Iterator() do
-		Log.Info("Removing craft (%s, %s, %s)", craftString, profession, player)
 		toRemove[craftString] = true
 	end
 	query:Release()

@@ -43,7 +43,6 @@ END
 VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
 #showtooltip Explosive Shot
 /stopcasting
-/cast !Aspect of the Dragonhawk
 /cast Explosive Shot
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
@@ -59,7 +58,6 @@ END
 VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Kill Shot
 /stopcasting
-/cast !Aspect of the Dragonhawk
 /cast Kill Shot
 END
 VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"

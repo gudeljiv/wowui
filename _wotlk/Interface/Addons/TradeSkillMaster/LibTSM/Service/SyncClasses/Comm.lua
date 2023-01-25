@@ -53,6 +53,7 @@ function Comm.SendData(dataType, targetCharacter, data)
 	packet.sa = Settings.GetCurrentSyncAccountKey()
 	packet.v = Constants.VERSION
 	packet.d = data
+	packet.l = GetLocale()
 	local serialized = LibSerialize:Serialize(packet)
 	TempTable.Release(packet)
 	local compressed = LibDeflate:EncodeForWoWAddonChannel(LibDeflate:CompressDeflate(serialized))
@@ -115,7 +116,8 @@ function private.ProcessReceivedPacket(msg, sourceCharacter)
 	local sourceAccount = packet.sa
 	local version = packet.v
 	local data = packet.d
-	if type(dataType) ~= "string" or #dataType > 1 or not sourceAccount or version ~= Constants.VERSION then
+	local locale = packet.l
+	if type(dataType) ~= "string" or #dataType > 1 or not sourceAccount or version ~= Constants.VERSION or locale ~= GetLocale() then
 		Log.Info("Invalid message received")
 		return
 	elseif sourceAccount == Settings.GetCurrentSyncAccountKey() then

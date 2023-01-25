@@ -120,6 +120,9 @@ end
 function TooltipScanning.GetBuildBankBattlePetInfo(tab, slot)
 	if Environment.HasFeature(Environment.FEATURES.C_TOOLTIP_INFO) then
 		local info = private.SetGuildBankItem(tab, slot)
+		if not info then
+			return nil, nil, nil
+		end
 		return info.battlePetSpeciesID, info.battlePetLevel, info.battlePetBreedQuality
 	else
 		return private.SetGuildBankItem(tab, slot)
@@ -183,6 +186,9 @@ function private.SetGuildBankItem(tab, slot)
 	private.PrepareTooltip()
 	if Environment.HasFeature(Environment.FEATURES.C_TOOLTIP_INFO) then
 		local info = C_TooltipInfo.GetGuildBankItem(tab, slot)
+		if not info then
+			return nil
+		end
 		TooltipUtil.SurfaceArgs(info)
 		return info
 	else

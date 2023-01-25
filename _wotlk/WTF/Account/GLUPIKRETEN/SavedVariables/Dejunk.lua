@@ -7,15 +7,15 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 		["19699"] = true,
 		["19706"] = true,
 		["25881"] = true,
-		["19705"] = true,
-		["19702"] = true,
 		["19704"] = true,
+		["19702"] = true,
+		["19705"] = true,
 		["19703"] = true,
 		["19700"] = true,
 	},
-	["autoSell"] = true,
 	["minimapIcon"] = {
 		["hide"] = true,
 	},
+	["autoSell"] = true,
 	["autoJunkFrame"] = true,
 }

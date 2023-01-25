@@ -644,7 +644,7 @@ function TT:RefreshCharacterFrame()
 end
 
 function TT:InitInspectFrame()
-	if true then
+	if not true then
 		return
 	else
 		InspectModelFrame:CreateFontString('InspectGearScore')
@@ -691,7 +691,7 @@ function TT:InitInspectFrame()
 end
 
 function TT:RefreshInspectFrame()
-	if true then
+	if not true then
 		return
 	else
 		if (InCombatLockdown()) then

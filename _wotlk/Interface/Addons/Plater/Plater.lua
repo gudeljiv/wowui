@@ -4411,6 +4411,15 @@ local class_specs_coords = {
 		end
 	end
 	
+	---import scripts from the library database, after that apply patches and recompile scripts
+	function platerInternal.Scripts.UpdateFromLibrary()
+		Plater.ImportScriptsFromLibrary()
+		Plater.ApplyPatches()
+		--and compile all scripts and hooks
+		Plater.CompileAllScripts("script")
+		Plater.CompileAllScripts("hook")
+	end
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --> addon initialization
 
@@ -4505,11 +4514,7 @@ function Plater.OnInit() --private --~oninit ~init
 		Plater.AddToAuraUpdate("player")
 
 	--load scripts from the script library
-		Plater.ImportScriptsFromLibrary()
-		Plater.ApplyPatches()
-		--and compile all scripts and hooks
-		Plater.CompileAllScripts ("script")
-		Plater.CompileAllScripts ("hook")
+		platerInternal.Scripts.UpdateFromLibrary()
 	
 	--check if masque is installed and add support for masque addon
 		local Masque = LibStub ("Masque", true)
@@ -4868,6 +4873,7 @@ function Plater.OnInit() --private --~oninit ~init
 			--this function is declared inside 'NamePlateDriverMixin' at Blizzard_NamePlates.lua
 			hooksecurefunc (NamePlateDriverFrame, "UpdateNamePlateOptions", function()
 				Plater.UpdateSelfPlate()
+				Plater.UpdatePlateClickSpace()
 			end)
 		end
 
@@ -5132,8 +5138,31 @@ function Plater.OnInit() --private --~oninit ~init
 			end
 		end
 		
-		--~cast
-		--hook for all castbar events
+		
+		---return if the unit is casting a spell, if the spellId is passed, will return if the unit is casting the spellId, otherwise will return the spellId of the spell being casted
+		---@param unitId string
+		---@param spellId number|string|nil
+		---@return boolean|number
+		function Plater.UnitIsCasting(unitId, spellId)
+			if (UnitExists(unitId)) then
+				local plateFrame = C_NamePlate.GetNamePlateForUnit(unitId)
+				if (plateFrame) then
+					local castBar = plateFrame.unitFrame.castBar
+					if (castBar:IsShown()) then
+						if (spellId) then
+							return castBar.SpellID == spellId or castBar.SpellName == spellId
+						else
+							return castBar.SpellID
+						end
+					end
+				else
+					return false
+				end
+			end
+			return false
+		end
+
+		--hook for all castbar events --~cast
 		function Plater.CastBarOnEvent_Hook (self, event, unit, ...) --private
 	
 			if (event == "PLAYER_ENTERING_WORLD") then
@@ -5360,7 +5389,7 @@ function Plater.OnInit() --private --~oninit ~init
 						self.FrameOverlay.TargetName:SetText ("")
 					end
 					
-					self.ThrottleUpdate = DB_TICK_THROTTLE
+					self.ThrottleUpdate = self.unitFrame.PlateFrame.OnTickFrame.ThrottleUpdate + DB_TICK_THROTTLE
 
 					--get the script object of the aura which will be showing in this icon frame
 					local globalScriptObject = SCRIPT_CASTBAR_TRIGGER_CACHE[self.SpellName]
@@ -5595,10 +5624,7 @@ function Plater.OnInit() --private --~oninit ~init
 		function Plater.OnProfileCreated()
 			C_Timer.After (.5, function()
 				Plater:Msg ("new profile created, applying patches and adding default scripts.")
-				Plater.ImportScriptsFromLibrary()
-				Plater.ApplyPatches()
-				Plater.CompileAllScripts ("script")
-				Plater.CompileAllScripts ("hook")
+				platerInternal.Scripts.UpdateFromLibrary()
 				
 				--enable UIParent nameplates for new installs of Plater
 				--this setting is disabled by default and will be enabled for new users and new profiles
@@ -6501,6 +6527,10 @@ end
 					healthBar.AnimateFunc (healthBar, deltaTime)
 				end
 			end
+			
+		if (unitFrame.castBar:IsShown()) then
+			Plater.CastBarOnTick_Hook(unitFrame.castBar, 999)
+		end
 			
 		Plater.EndLogPerformanceCore("Plater-Core", "Update", "NameplateTick")
 	end
@@ -12093,13 +12123,46 @@ end
 		return scriptsWithOverlap, amount
 	end
 
+	---add a trigger to a script
+	---@param triggerId number|string triggerId can be a npcId, npcName for NPCs or a spellId or spellName for auras and casts
+	---@param triggerType string|number there's 3 types of triggers: Auras, Casts and Npcs. Auras and Casts uses 'scriptObject.SpellIds' to store the triggerId and Npcs uses 'scriptObject.NpcNames'
+	---what define the type of trigger is the scriptObject.ScriptType, in other places of this project, triggerType can also be called scriptType
+	---triggerType expects: aura = 1, cast = 2, npc = 3
+	---@param scriptName string
+	---@return boolean 'true' if the trigger was added to the script, false if something went wrong
+	---@return string|nil message of error if the trigger wasn't added to the script
+	function Plater.AddTriggerToScript(triggerId, triggerType, scriptName)
+		--attempt to get the scriptObject for the passed scriptName
+		local scriptObject = Plater.GetScriptObject(scriptName, "script")
+		if (not scriptObject) then
+			return false, "script not found"
+		end
+		
+		--remove the trigger from any script to avoid overlaps (a trigger can only exists in one script at time)
+		platerInternal.Scripts.RemoveTriggerFromAnyScript(triggerId)
+
+		--check the triggerType to know in what table the script will store the triggerId
+		if (triggerType == 1 or triggerType == 2 or triggerType == "aura" or triggerType == "cast") then
+			--aura or cast
+			DF.table.addunique(scriptObject.SpellIds, triggerId)
+
+		elseif (triggerType == 3 or triggerType == "npc") then
+			--npc
+			DF.table.addunique(scriptObject.NpcNames, triggerId)
+
+		else
+			return false, "invalid triggerType"
+		end
+		
+		Plater.WipeAndRecompileAllScripts("script")
+
+		return true
+	end
+
 	function platerInternal.Scripts.RemoveTriggerFromAnyScript(triggerId)
-		local allScripts = Plater.db.profile.script_data
-		for i = 1, #allScripts do
-			local scriptObject = allScripts[i]
-			if (platerInternal.Scripts.DoesScriptHasTrigger(scriptObject, triggerId)) then
-				platerInternal.Scripts.RemoveTriggerFromScript(scriptObject, triggerId)
-			end
+		local scriptObject = platerInternal.Scripts.IsTriggerOnAnyScript(triggerId)
+		if (scriptObject) then
+			platerInternal.Scripts.RemoveTriggerFromScript(scriptObject, triggerId)
 		end
 	end
 
@@ -12179,8 +12242,14 @@ end
 		end
 	end
 
-	--retrive the script object for a selected scriptId
+	---retrive the script object for a selected scriptId
+	---@param scriptID number|string if number scriptId is the index of the script in the db table, this index can change when a script is removed
+	---@param scriptType string is always "script" or "hook", hooks scripts are stored in a different table, ingame they are called "Mods"
 	function Plater.GetScriptObject (scriptID, scriptType)
+		if (type(scriptID) == "string" and scriptType == "script") then
+			return platerInternal.Scripts.GetScriptObjectByName(scriptID)
+		end
+
 		if (scriptType == "script") then
 			local script = Plater.db.profile.script_data [scriptID]
 			if (script) then

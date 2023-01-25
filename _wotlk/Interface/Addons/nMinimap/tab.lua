@@ -443,7 +443,9 @@ function nMinimap_UpdateFriendButton(entry)
 				levelc = GetQuestDifficultyColor(level)
 
 				level = WrapTextInColorCode(level, CreateColor(levelc.r, levelc.g, levelc.b, 1):GenerateHexColor())
-				characterName = WrapTextInColorCode(characterName, classc:GenerateHexColor())
+				if classc then
+					characterName = WrapTextInColorCode(characterName, classc:GenerateHexColor())
+				end
 
 				entry.LeftText:SetFormattedText('%s (%s %s) %s', accountName, level, characterName, statusText[status])
 				entry.RightText:SetText(clientIcon)

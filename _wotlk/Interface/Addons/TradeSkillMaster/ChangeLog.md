@@ -1,6 +1,6 @@
-## v4.12.26 Changes
+## v4.12.28 Changes
 
-* [Retail] Fixed various Crafting-related account syncing errors
-* [Retail] Support for 10.0.5
+* [Retail] Added workaround for 10.0.5 bug with the game not indicating when bags are updated
+* [Retail] Fixed error when moving items out of the guild bank
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

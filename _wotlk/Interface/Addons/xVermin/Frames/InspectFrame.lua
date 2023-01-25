@@ -28,6 +28,10 @@ local function BorderItemInspectSlots(counter)
 	) do
 		v:CreateBeautyBorder(8)
 
+		if v.ItemLevelText then
+			v.ItemLevelText:SetText('')
+		end
+
 		itemLink = GetInventoryItemLink('target', i)
 		if (itemLink) then
 			local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent = GetItemInfo(itemLink)
@@ -49,10 +53,6 @@ local function BorderItemInspectSlots(counter)
 					v.ItemLevelText:SetVertexColor(1, 1, 0)
 				end
 				v.ItemLevelText:SetText(itemLevel)
-			else
-				if v.ItemLevelText then
-					v.ItemLevelText:SetText('')
-				end
 			end
 		else
 			v:SetBeautyBorderTexture(xVermin.Config.border.default)
