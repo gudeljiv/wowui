@@ -9,9 +9,9 @@ PallyPowerDB = {
 		["Battitude - Golemagg"] = "Other",
 		["Mxyzptlk - Golemagg"] = "Other",
 		["Miqa - Golemagg"] = "Other",
-		["Vermin - Golemagg"] = "Other",
-		["Battlearm - Golemagg"] = "Other",
 		["Tadibey - Golemagg"] = "Other",
+		["Battlearm - Golemagg"] = "Other",
+		["Vermin - Golemagg"] = "Other",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -30,8 +30,8 @@ PallyPowerDB = {
 				["buffDuration"] = false,
 				["frameLocked"] = true,
 			},
-			["border"] = "None",
 			["SalvInCombat"] = true,
+			["border"] = "None",
 			["rf"] = false,
 		},
 		["Other"] = {
@@ -44,18 +44,6 @@ PallyPowerDB = {
 	},
 }
 PallyPower_Assignments = {
-	["Bumpyco"] = {
-		3, -- [1]
-		3, -- [2]
-		3, -- [3]
-		3, -- [4]
-		1, -- [5]
-		3, -- [6]
-		3, -- [7]
-		3, -- [8]
-		3, -- [9]
-		3, -- [10]
-	},
 	["Gamzy"] = {
 		0, -- [1]
 		0, -- [2]
@@ -67,18 +55,6 @@ PallyPower_Assignments = {
 		0, -- [8]
 		0, -- [9]
 		0, -- [10]
-	},
-	["Lallin"] = {
-		2, -- [1]
-		2, -- [2]
-		0, -- [3]
-		2, -- [4]
-		3, -- [5]
-		2, -- [6]
-		0, -- [7]
-		0, -- [8]
-		2, -- [9]
-		2, -- [10]
 	},
 	["Vermina"] = {
 		0, -- [1]
@@ -93,26 +69,8 @@ PallyPower_Assignments = {
 		0, -- [10]
 		2, -- [11]
 	},
-	["Thelichlight"] = {
-		4, -- [1]
-		4, -- [2]
-		1, -- [3]
-		1, -- [4]
-		4, -- [5]
-		1, -- [6]
-		1, -- [7]
-		1, -- [8]
-		1, -- [9]
-		4, -- [10]
-	},
 }
 PallyPower_NormalAssignments = {
-	["Bumpyco"] = {
-	},
-	["Thelichlight"] = {
-	},
-	["Lallin"] = {
-	},
 }
 PallyPower_AuraAssignments = {
 	["Artemizia"] = 0,
@@ -127,48 +85,48 @@ PallyPower_AuraAssignments = {
 	["Xjereziah"] = 0,
 	["Ondisch"] = 0,
 	["Brrazers"] = 0,
-	["Baconmedflød"] = 0,
+	["Thelichlight"] = 6,
+	["Athonian"] = 0,
+	["Syyllinen"] = 1,
+	["Twitterstorm"] = 0,
 	["Supachad"] = 3,
-	["Griller"] = 0,
-	["Pretzelqt"] = 0,
-	["Glumsi"] = 0,
 	["Monikà"] = 0,
 	["Berri"] = 0,
 	["Teddz"] = 0,
 	["Tökfilkó"] = 0,
 	["Rubyrag"] = 0,
-	["Qiisha"] = 0,
+	["Lallin"] = 3,
 	["Eternalpala"] = 0,
-	["Aarvin"] = 0,
+	["Zwiecho"] = 0,
 	["Alliyah"] = 0,
 	["Atlima"] = 0,
+	["Filifjonkman"] = 0,
+	["Xilaz"] = 3,
 	["Althan"] = 0,
-	["Izule"] = 0,
-	["Peakgg"] = 0,
-	["Cigarette"] = 0,
-	["Billibos"] = 0,
+	["Weebadina"] = 3,
+	["Rvbbitt"] = 0,
 	["Holychoke"] = 1,
 	["Monikå"] = 0,
 	["Vermina"] = 0,
 	["Drexal"] = 0,
 	["Lonnath"] = 0,
-	["Hjørdís"] = 6,
-	["Dariya"] = 0,
-	["Uhndapa"] = 0,
-	["Weebadina"] = 3,
-	["Sistermerrin"] = 0,
-	["Liadriel"] = 0,
-	["Zagopally"] = 1,
-	["Xilaz"] = 3,
+	["Cigarette"] = 0,
 	["Selestra"] = 0,
-	["Rvbbitt"] = 0,
-	["Filifjonkman"] = 0,
-	["Zwiecho"] = 0,
-	["Lallin"] = 3,
-	["Twitterstorm"] = 0,
-	["Syyllinen"] = 1,
-	["Athonian"] = 0,
-	["Thelichlight"] = 6,
+	["Liadriel"] = 0,
+	["Dariya"] = 0,
+	["Sistermerrin"] = 0,
+	["Uhndapa"] = 0,
+	["Zagopally"] = 1,
+	["Hjørdís"] = 6,
+	["Billibos"] = 0,
+	["Peakgg"] = 0,
+	["Izule"] = 0,
+	["Aarvin"] = 0,
+	["Qiisha"] = 0,
+	["Glumsi"] = 0,
+	["Griller"] = 0,
+	["Pretzelqt"] = 0,
+	["Baconmedflød"] = 0,
 }
 PallyPower_SavedPresets = {
 	["PallyPower_Assignments"] = {
