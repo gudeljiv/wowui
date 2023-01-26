@@ -13,26 +13,26 @@ _detalhes_database = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.006536,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Meven Korgal"] = 107,
+							},
+							["pets"] = {
+							},
+							["delay"] = 0,
 							["damage_from"] = {
 								["Meven Korgal"] = true,
 								["Environment (Falling)"] = true,
 							},
-							["targets"] = {
-								["Meven Korgal"] = 107,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["tipo"] = 1,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 107.006536,
-							["aID"] = "4465-01FA5DEE",
+							["custom"] = 0,
+							["last_dps"] = 9.51169208888889,
 							["dps_started"] = false,
 							["end_time"] = 1672390168,
-							["damage_taken"] = 77.006536,
+							["aID"] = "4465-01FA5DEE",
 							["total"] = 107.006536,
 							["nome"] = "Battitude",
 							["spells"] = {
@@ -138,15 +138,16 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["last_dps"] = 9.51169208888889,
+							["damage_taken"] = 77.006536,
+							["tipo"] = 1,
 							["friendlyfire_total"] = 0,
 							["colocacao"] = 1,
 							["last_event"] = 1672390167,
-							["on_hold"] = false,
-							["start_time"] = 1672390157,
-							["serial"] = "Player-4465-01FA5DEE",
 							["friendlyfire"] = {
 							},
+							["start_time"] = 1672390157,
+							["serial"] = "Player-4465-01FA5DEE",
+							["on_hold"] = false,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -157,19 +158,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Battitude"] = 33,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 1,
-							["total"] = 33.001545,
-							["classe"] = "UNKNOW",
+							["last_dps"] = 0,
+							["end_time"] = 1672390168,
+							["aID"] = "1667",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 33.001545,
-							["delay"] = 0,
-							["fight_component"] = true,
-							["end_time"] = 1672390168,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 33.001545,
 							["damage_taken"] = 107.001545,
+							["tipo"] = 1,
 							["nome"] = "Meven Korgal",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -204,16 +206,16 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["aID"] = "1667",
-							["last_dps"] = 0,
+							["fight_component"] = true,
 							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1672390167,
 							["friendlyfire"] = {
 							},
 							["start_time"] = 1672390157,
 							["serial"] = "Creature-0-4469-0-120-1667-00002E3F05",
-							["dps_started"] = false,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 						}, -- [2]
 					},
 				}, -- [1]
@@ -235,20 +237,21 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["buff_uptime"] = 11,
 							["nome"] = "Battitude",
-							["grupo"] = true,
 							["buff_uptime_targets"] = {
 							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["grupo"] = true,
+							["buff_uptime"] = 11,
 							["pets"] = {
 							},
-							["aID"] = "4465-01FA5DEE",
 							["spell_cast"] = {
 								[53] = 1,
 								[1757] = 4,
 							},
 							["last_event"] = 1672390168,
-							["tipo"] = 4,
+							["aID"] = "4465-01FA5DEE",
+							["classe"] = "ROGUE",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[377749] = {
@@ -277,7 +280,7 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["serial"] = "Player-4465-01FA5DEE",
-							["classe"] = "ROGUE",
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -304,8 +307,8 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					139.9146370000004, -- [1]
-					-0.003189, -- [2]
+					139.8071239999997, -- [1]
+					-0.033627, -- [2]
 					{
 						0, -- [1]
 						[0] = -0.008107000000002529,
@@ -361,10 +364,34 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "09:49:17",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Battitude"] = 107.006536,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
 				["end_time"] = 340311.323,
 				["combat_id"] = 293,
 				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Meven Korgal"] = 1,
+				},
+				["combat_counter"] = 6960,
+				["CombatSkillCache"] = {
 				},
 				["player_last_events"] = {
 					["Battitude"] = {
@@ -445,34 +472,10 @@ _detalhes_database = {
 						["n"] = 2,
 					},
 				},
-				["combat_counter"] = 6960,
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Meven Korgal"] = 1,
-				},
 				["start_time"] = 340300.073,
 				["TimeData"] = {
 				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Battitude"] = 107.006536,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
+				["data_inicio"] = "09:49:17",
 			}, -- [1]
 			{
 				{
@@ -482,25 +485,25 @@ _detalhes_database = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.007515,
-							["damage_from"] = {
-								["Duskbat"] = true,
-							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["targets"] = {
 								["Duskbat"] = 45,
 							},
-							["delay"] = 0,
 							["pets"] = {
 							},
-							["custom"] = 0,
-							["tipo"] = 1,
+							["delay"] = 0,
+							["damage_from"] = {
+								["Duskbat"] = true,
+							},
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 45.007515,
-							["friendlyfire_total"] = 0,
+							["custom"] = 0,
+							["last_dps"] = 25.70389206183626,
 							["dps_started"] = false,
 							["total"] = 45.007515,
-							["damage_taken"] = 1.007515,
+							["friendlyfire_total"] = 0,
 							["aID"] = "4465-01FA5DEE",
 							["nome"] = "Battitude",
 							["spells"] = {
@@ -565,15 +568,16 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["last_dps"] = 25.70389206183626,
 							["end_time"] = 1672390097,
+							["damage_taken"] = 1.007515,
+							["tipo"] = 1,
 							["colocacao"] = 1,
 							["last_event"] = 1672390096,
-							["on_hold"] = false,
-							["start_time"] = 1672390094,
-							["serial"] = "Player-4465-01FA5DEE",
 							["friendlyfire"] = {
 							},
+							["start_time"] = 1672390094,
+							["serial"] = "Player-4465-01FA5DEE",
+							["on_hold"] = false,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -584,19 +588,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Battitude"] = 1,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["tipo"] = 1,
-							["aID"] = "1512",
+							["last_dps"] = 0,
 							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1.003757,
-							["delay"] = 0,
-							["fight_component"] = true,
+							["aID"] = "1512",
+							["dps_started"] = false,
 							["total"] = 1.003757,
 							["on_hold"] = false,
-							["damage_taken"] = 45.003757,
+							["tipo"] = 1,
 							["nome"] = "Duskbat",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -631,16 +636,16 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire_total"] = 0,
-							["last_dps"] = 0,
-							["end_time"] = 1672390097,
-							["custom"] = 0,
-							["last_event"] = 1672390094,
 							["friendlyfire"] = {
 							},
+							["end_time"] = 1672390097,
+							["fight_component"] = true,
+							["custom"] = 0,
+							["last_event"] = 1672390094,
+							["damage_taken"] = 45.003757,
 							["start_time"] = 1672390094,
 							["serial"] = "Creature-0-4469-0-120-1512-00002E2903",
-							["dps_started"] = false,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 						}, -- [2]
 					},
 				}, -- [1]
@@ -662,19 +667,20 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["buff_uptime"] = 3,
 							["nome"] = "Battitude",
-							["grupo"] = true,
 							["buff_uptime_targets"] = {
 							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["grupo"] = true,
+							["buff_uptime"] = 3,
 							["pets"] = {
 							},
-							["aID"] = "4465-01FA5DEE",
 							["spell_cast"] = {
 								[1757] = 2,
 							},
 							["last_event"] = 1672390097,
-							["tipo"] = 4,
+							["aID"] = "4465-01FA5DEE",
+							["classe"] = "ROGUE",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[377749] = {
@@ -692,7 +698,7 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["serial"] = "Player-4465-01FA5DEE",
-							["classe"] = "ROGUE",
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -757,12 +763,35 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "09:48:15",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Battitude"] = 45.007515,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
 				["end_time"] = 340240.702,
 				["combat_id"] = 292,
 				["spells_cast_timeline"] = {
 				},
+				["frags"] = {
+					["Duskbat"] = 1,
+				},
 				["combat_counter"] = 6959,
+				["CombatSkillCache"] = {
+				},
 				["totals_grupo"] = {
 					45, -- [1]
 					0, -- [2]
@@ -784,33 +813,10 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Duskbat"] = 1,
-				},
 				["start_time"] = 340237.802,
 				["TimeData"] = {
 				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Battitude"] = 45.007515,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
+				["data_inicio"] = "09:48:15",
 			}, -- [2]
 		},
 	},
@@ -860,7 +866,7 @@ _detalhes_database = {
 			["defensive-personal"] = false,
 		},
 	},
-	["last_version"] = "3.4.0 10402",
+	["last_version"] = "3.4.1 10409",
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
 	},
@@ -982,7 +988,7 @@ _detalhes_database = {
 	},
 	["nick_tag_cache"] = {
 		["last_version"] = 15,
-		["nextreset"] = 1673685875,
+		["nextreset"] = 1676032898,
 	},
 	["last_instance_id"] = 189,
 	["data_harvest_for_charsts"] = {
@@ -1011,12 +1017,13 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1604861214,
 	["active_profile"] = "xVermin",
-	["last_day"] = "08",
+	["last_day"] = "26",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
 	},
-	["last_realversion"] = 148,
+	["data_harvested_for_charts"] = {
+	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["enabled"] = true,
@@ -1052,7 +1059,10 @@ _detalhes_database = {
 				0.5, -- [4]
 			},
 			["scale"] = 1,
-			["arrow_anchor_y"] = 0,
+			["main_frame_size"] = {
+				249.999740600586, -- [1]
+				89.9999694824219, -- [2]
+			},
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
@@ -1073,7 +1083,7 @@ _detalhes_database = {
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["font_size"] = 10,
+			["y"] = -183.107162475586,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -1081,8 +1091,13 @@ _detalhes_database = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["font_size"] = 10,
+			["use_spark"] = false,
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -1094,17 +1109,9 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["y"] = -183.107162475586,
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
-			["use_spark"] = false,
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["main_frame_locked"] = true,
-			["main_frame_size"] = {
-				249.999740600586, -- [1]
-				89.9999694824219, -- [2]
-			},
+			["arrow_anchor_y"] = 0,
 		},
 		["DETAILS_PLUGIN_YANP"] = {
 			["enabled"] = true,
@@ -1170,26 +1177,25 @@ _detalhes_database = {
 			["author"] = "Terciob",
 		},
 	},
-	["mythic_plus_log"] = {
+	["cached_talents"] = {
 	},
+	["cached_roles"] = {
+	},
+	["last_realversion"] = 148,
 	["announce_prepots"] = {
 		["enabled"] = false,
 		["reverse"] = false,
 		["channel"] = "SELF",
 	},
-	["cached_roles"] = {
-	},
-	["combat_counter"] = 6961,
-	["data_harvested_for_charts"] = {
-	},
+	["combat_counter"] = 6963,
 	["character_data"] = {
-		["logons"] = 1810,
+		["logons"] = 1812,
 	},
 	["force_font_outline"] = "",
 	["combat_id"] = 293,
 	["savedStyles"] = {
 		{
-			["show_statusbar"] = false,
+			["hide_in_combat_type"] = 1,
 			["clickthrough_window"] = false,
 			["titlebar_shown"] = false,
 			["menu_anchor"] = {
@@ -1207,7 +1213,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["bars_sort_direction"] = 1,
+			["micro_displays_locked"] = false,
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -1219,43 +1225,31 @@ _detalhes_database = {
 				1, -- [3]
 			},
 			["clickthrough_toolbaricons"] = false,
-			["attribute_text"] = {
-				["enabled"] = true,
-				["shadow"] = false,
-				["side"] = 1,
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["custom_text"] = "{name}",
-				["text_face"] = "Arial Narrow",
-				["anchor"] = {
-					56, -- [1]
-					3, -- [2]
-				},
-				["text_size"] = 12,
-				["enable_custom_text"] = false,
-				["show_timer"] = false,
-			},
+			["clickthrough_rows"] = false,
 			["titlebar_texture"] = "Clean",
-			["ignore_mass_showhide"] = false,
-			["fontstrings_text_limit_offset"] = -10,
+			["switch_tank"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["switch_all_roles_after_wipe"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
 			["icon_desaturated"] = false,
 			["desaturated_menu"] = false,
-			["show_sidebars"] = false,
+			["micro_displays_side"] = 2,
 			["window_scale"] = 1,
 			["hide_icon"] = true,
 			["toolbar_side"] = 1,
 			["bg_g"] = 0.1333333333333333,
 			["menu_icons_alpha"] = 0.92,
 			["bg_b"] = 0.1333333333333333,
-			["rowareaborder_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
+			["switch_healer_in_combat"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
 			},
 			["color"] = {
 				0.07058823529411765, -- [1]
@@ -1342,12 +1336,12 @@ _detalhes_database = {
 			},
 			["skin"] = "Minimalistic",
 			["following"] = {
-				["enabled"] = false,
 				["bar_color"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 				},
+				["enabled"] = false,
 				["text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -1386,14 +1380,14 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["micro_displays_side"] = 2,
-			["name"] = "vermin",
+			["show_sidebars"] = false,
+			["bg_alpha"] = 0,
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["version"] = 3,
+			["name"] = "vermin",
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -1404,7 +1398,26 @@ _detalhes_database = {
 				["onenter"] = 1,
 			},
 			["fullborder_shown"] = false,
-			["clickthrough_rows"] = false,
+			["attribute_text"] = {
+				["show_timer"] = false,
+				["shadow"] = false,
+				["side"] = 1,
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["custom_text"] = "{name}",
+				["text_face"] = "Arial Narrow",
+				["anchor"] = {
+					56, -- [1]
+					3, -- [2]
+				},
+				["text_size"] = 12,
+				["enable_custom_text"] = false,
+				["enabled"] = true,
+			},
 			["rowareaborder_shown"] = false,
 			["rowareaborder_size"] = 0.5,
 			["clickthrough_incombatonly"] = false,
@@ -1416,7 +1429,7 @@ _detalhes_database = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["micro_displays_locked"] = false,
+			["skin_custom"] = "vermin",
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -1432,45 +1445,49 @@ _detalhes_database = {
 					0.07058823529411765, -- [3]
 				},
 			},
+			["bars_grow_direction"] = 1,
 			["row_show_animation"] = {
 				["anim"] = "Fade",
 				["options"] = {
 				},
-			},
-			["menu_anchor_down"] = {
-				16, -- [1]
-				-3, -- [2]
 			},
 			["grab_on_top"] = false,
 			["auto_hide_menu"] = {
 				["left"] = false,
 				["right"] = true,
 			},
-			["hide_in_combat_type"] = 1,
+			["show_statusbar"] = false,
 			["switch_damager_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["switch_healer_in_combat"] = {
+			["rowareaborder_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["menu_anchor_down"] = {
+				16, -- [1]
+				-3, -- [2]
+			},
+			["auto_current"] = true,
+			["bars_sort_direction"] = 1,
+			["switch_damager"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["bars_grow_direction"] = 1,
-			["auto_current"] = true,
-			["skin_custom"] = "vermin",
+			["version"] = 3,
+			["hide_in_combat"] = false,
 			["row_info"] = {
-				["show_arena_role_icon"] = false,
+				["textR_outline"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
 				["textL_outline"] = false,
-				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-				["textR_show_data"] = {
-					true, -- [1]
-					true, -- [2]
-					false, -- [3]
-				},
-				["percent_type"] = 1,
+				["textR_outline_small"] = true,
+				["textL_outline_small"] = true,
+				["textL_enable_custom_text"] = false,
 				["fixed_text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -1482,12 +1499,7 @@ _detalhes_database = {
 					["between"] = 1,
 				},
 				["texture_background_class_color"] = false,
-				["textL_outline_small_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
+				["start_after_icon"] = true,
 				["font_face_file"] = "Fonts\\ARIALN.TTF",
 				["faction_icon_size_offset"] = -10,
 				["backdrop"] = {
@@ -1501,6 +1513,8 @@ _detalhes_database = {
 					["enabled"] = false,
 					["texture"] = "ThreatPlatesBorder",
 				},
+				["font_size"] = 11,
+				["textL_custom_text"] = "{data1}. {data3}{data2}",
 				["models"] = {
 					["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
 					["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
@@ -1509,13 +1523,16 @@ _detalhes_database = {
 					["lower_alpha"] = 0.1,
 					["upper_enabled"] = false,
 				},
-				["textL_custom_text"] = "{data1}. {data3}{data2}",
-				["font_size"] = 11,
 				["textL_translit_text"] = false,
-				["height"] = 19,
+				["texture_custom_file"] = "Interface\\",
 				["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
 				["icon_size_offset"] = 0,
-				["start_after_icon"] = true,
+				["textL_outline_small_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
 				["show_faction_icon"] = true,
 				["overlay_color"] = {
 					0.7, -- [1]
@@ -1523,14 +1540,18 @@ _detalhes_database = {
 					0.7, -- [3]
 					0, -- [4]
 				},
-				["textL_outline_small"] = true,
-				["textR_outline_small"] = true,
-				["arena_role_icon_size_offset"] = -10,
+				["textR_show_data"] = {
+					true, -- [1]
+					true, -- [2]
+					false, -- [3]
+				},
+				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+				["icon_file"] = "",
 				["icon_grayscale"] = false,
-				["textR_bracket"] = "(",
 				["use_spec_icons"] = false,
+				["textR_bracket"] = "(",
 				["texture_custom"] = "",
-				["textR_outline"] = false,
+				["show_arena_role_icon"] = false,
 				["fixed_texture_color"] = {
 					0, -- [1]
 					0, -- [2]
@@ -1564,33 +1585,23 @@ _detalhes_database = {
 					0, -- [1]
 					0, -- [2]
 				},
-				["icon_file"] = "",
+				["arena_role_icon_size_offset"] = -10,
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
-				["textL_enable_custom_text"] = false,
+				["percent_type"] = 1,
 				["fast_ps_update"] = false,
 				["textR_separator"] = "NONE",
-				["texture_custom_file"] = "Interface\\",
+				["height"] = 19,
 			},
-			["bg_alpha"] = 0,
-			["hide_in_combat"] = false,
-			["switch_damager"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["switch_tank"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["switch_all_roles_after_wipe"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
+			["ignore_mass_showhide"] = false,
+			["fontstrings_text_limit_offset"] = -10,
 			["wallpaper"] = {
-				["enabled"] = false,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
 				["alpha"] = 0.5,
 				["width"] = 283.000183105469,
 				["texcoord"] = {
@@ -1602,12 +1613,7 @@ _detalhes_database = {
 				["height"] = 114.042518615723,
 				["anchor"] = "all",
 				["level"] = 2,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
+				["enabled"] = false,
 				["texture"] = "Interface\\AddOns\\Details\\images\\background",
 			},
 			["stretch_button_side"] = 2,
@@ -1653,23 +1659,23 @@ _detalhes_database = {
 						["Meven Korgal"] = 0,
 						["Duskbat"] = 0,
 					},
-					["last_event"] = 0,
+					["serial"] = "Player-4465-01FA5DEE",
 					["pets"] = {
 					},
-					["end_time"] = 1673203222,
+					["damage_taken"] = 0.008884,
+					["total"] = 0.008884,
 					["classe"] = "ROGUE",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008884,
+					["aID"] = "4465-01FA5DEE",
+					["dps_started"] = false,
+					["end_time"] = 1673203222,
 					["friendlyfire"] = {
 					},
-					["dps_started"] = false,
-					["total"] = 0.008884,
-					["friendlyfire_total"] = 0,
-					["aID"] = "4465-01FA5DEE",
+					["last_event"] = 0,
 					["nome"] = "Battitude",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -1755,16 +1761,17 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["serial"] = "Player-4465-01FA5DEE",
 					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.008884,
+					["last_dps"] = 0,
 					["start_time"] = 1673203219,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 				}, -- [1]
 				{
 					["flag_original"] = 68136,
@@ -1774,23 +1781,23 @@ _detalhes_database = {
 					["targets"] = {
 						["Battitude"] = 0,
 					},
-					["fight_component"] = true,
+					["serial"] = "Creature-0-4469-0-120-1667-00002E3F05",
 					["pets"] = {
 					},
-					["end_time"] = 1673203222,
-					["classe"] = "UNKNOW",
+					["total"] = 0.007893,
+					["dps_started"] = false,
+					["aID"] = "1667",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007893,
-					["last_event"] = 0,
-					["dps_started"] = false,
-					["total"] = 0.007893,
-					["friendlyfire_total"] = 0,
+					["classe"] = "UNKNOW",
+					["fight_component"] = true,
+					["end_time"] = 1673203222,
 					["friendlyfire"] = {
 					},
+					["last_event"] = 0,
 					["nome"] = "Meven Korgal",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -1820,16 +1827,17 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["aID"] = "1667",
-					["serial"] = "Creature-0-4469-0-120-1667-00002E3F05",
+					["damage_taken"] = 0.007893,
 					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.007893,
+					["last_dps"] = 0,
 					["start_time"] = 1673203219,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 				}, -- [2]
 				{
 					["flag_original"] = 68136,
@@ -1839,23 +1847,23 @@ _detalhes_database = {
 					["targets"] = {
 						["Battitude"] = 0,
 					},
-					["fight_component"] = true,
+					["serial"] = "Creature-0-4469-0-120-1512-00002E2903",
 					["pets"] = {
 					},
-					["end_time"] = 1673203222,
-					["classe"] = "UNKNOW",
+					["total"] = 0.005346,
+					["dps_started"] = false,
+					["aID"] = "1512",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005346,
-					["last_event"] = 0,
-					["dps_started"] = false,
-					["total"] = 0.005346,
-					["friendlyfire_total"] = 0,
+					["classe"] = "UNKNOW",
+					["fight_component"] = true,
+					["end_time"] = 1673203222,
 					["friendlyfire"] = {
 					},
+					["last_event"] = 0,
 					["nome"] = "Duskbat",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -1885,16 +1893,17 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["aID"] = "1512",
-					["serial"] = "Creature-0-4469-0-120-1512-00002E2903",
+					["damage_taken"] = 0.005346,
 					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.005346,
+					["last_dps"] = 0,
 					["start_time"] = 1673203219,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 				}, -- [3]
 			},
 		}, -- [1]
@@ -1913,11 +1922,11 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1047,
-					["last_event"] = 0,
 					["buff_uptime_targets"] = {
 					},
-					["grupo"] = true,
 					["nome"] = "Battitude",
+					["GetSpellContainer"] = nil --[[ skipped inline function ]],
+					["grupo"] = true,
 					["spell_cast"] = {
 						[53] = 0,
 						[1757] = 0,
@@ -1926,9 +1935,9 @@ _detalhes_database = {
 					},
 					["buff_uptime"] = 0,
 					["tipo"] = 4,
-					["aID"] = "4465-01FA5DEE",
+					["last_event"] = 0,
+					["classe"] = "ROGUE",
 					["buff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[377749] = {
 								["id"] = 377749,
@@ -1943,9 +1952,10 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
 					},
 					["serial"] = "Player-4465-01FA5DEE",
-					["classe"] = "ROGUE",
+					["aID"] = "4465-01FA5DEE",
 				}, -- [1]
 			},
 		}, -- [4]
@@ -2051,11 +2061,11 @@ _detalhes_database = {
 		},
 	},
 	["ignore_nicktag"] = true,
-	["cached_talents"] = {
-	},
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
+	},
+	["mythic_plus_log"] = {
 	},
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {

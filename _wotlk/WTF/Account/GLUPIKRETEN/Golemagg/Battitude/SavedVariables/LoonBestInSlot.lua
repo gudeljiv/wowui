@@ -42,6 +42,7 @@ LBISSettings = {
 	},
 	["PhaseTooltip"] = {
 		["Phase 1"] = true,
+		["Phase 2"] = true,
 		["PreRaid"] = true,
 	},
 	["SelectedRank"] = "All",

@@ -69,13 +69,6 @@ X: 0
 Y: 47
 W: 210
 H: 261
-Frame: PallyPowerBlessingsFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 0
-W: 1098
-H: 1200
 Frame: RXPItemFrame
 FrameLevel: 1
 Anchor: CENTER
@@ -83,6 +76,13 @@ X: 310
 Y: -74
 W: 78
 H: 40
+Frame: PallyPowerBlessingsFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 1098
+H: 229
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM
