@@ -72,18 +72,48 @@ function Indicators:UpdateRaidTarget(frame)
 	end
 end
 
+-- function Indicators:UpdateRole(frame, event)
+-- 	if (not frame.indicators.role or not frame.indicators.role.enabled) then
+-- 		return
+-- 	end
+
+-- 	if (not UnitInRaid(frame.unit) and not UnitInParty(frame.unit)) then
+-- 		frame.indicators.role:Hide()
+-- 	elseif (GetPartyAssignment('MAINTANK', frame.unit)) then
+-- 		frame.indicators.role:SetTexture('Interface\\GroupFrame\\UI-Group-MainTankIcon')
+-- 		frame.indicators.role:Show()
+-- 	elseif (GetPartyAssignment('MAINASSIST', frame.unit)) then
+-- 		frame.indicators.role:SetTexture('Interface\\GroupFrame\\UI-Group-MainAssistIcon')
+-- 		frame.indicators.role:Show()
+-- 	else
+-- 		frame.indicators.role:Hide()
+-- 	end
+-- end
+
 function Indicators:UpdateRole(frame, event)
 	if (not frame.indicators.role or not frame.indicators.role.enabled) then
 		return
 	end
 
+	INLINE_TANK_ICON = '|TInterface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES.blp:16:16:0:0:64:64:0:19:22:41|t'
+	INLINE_HEALER_ICON = '|TInterface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES.blp:16:16:0:0:64:64:20:39:1:20|t'
+	INLINE_DAMAGER_ICON = '|TInterface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES.blp:16:16:0:0:64:64:20:39:22:41|t'
+
+	local UnitGroupRole = UnitGroupRolesAssigned(frame.unit)
+	local TEXTURE = 'Interface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES'
+	-- local TEXTURE = 'Interface\\LFGFrame\\UI-LFG-ICON-ROLES'
+	frame.indicators.role:SetTexture(TEXTURE)
+
 	if (not UnitInRaid(frame.unit) and not UnitInParty(frame.unit)) then
 		frame.indicators.role:Hide()
-	elseif (GetPartyAssignment('MAINTANK', frame.unit)) then
-		frame.indicators.role:SetTexture('Interface\\GroupFrame\\UI-Group-MainTankIcon')
+	elseif (UnitGroupRole == 'TANK') then
+		frame.indicators.role:SetTexCoord(GetTexCoordsForRoleSmallCircle('TANK'))
 		frame.indicators.role:Show()
-	elseif (GetPartyAssignment('MAINASSIST', frame.unit)) then
-		frame.indicators.role:SetTexture('Interface\\GroupFrame\\UI-Group-MainAssistIcon')
+	elseif (UnitGroupRole == 'DAMAGER') then
+		frame.indicators.role:SetTexCoord(GetTexCoordsForRoleSmallCircle('DAMAGER'))
+		frame.indicators.role:Show()
+	elseif (UnitGroupRole == 'HEALER') then
+		frame.indicators.role:SetTexCoord(GetTexCoordsForRoleSmallCircle('HEALER'))
 		frame.indicators.role:Show()
 	else
 		frame.indicators.role:Hide()
