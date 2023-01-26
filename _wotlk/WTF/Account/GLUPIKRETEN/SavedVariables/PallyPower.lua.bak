@@ -44,6 +44,18 @@ PallyPowerDB = {
 	},
 }
 PallyPower_Assignments = {
+	["Gamzy"] = {
+		0, -- [1]
+		0, -- [2]
+		0, -- [3]
+		0, -- [4]
+		0, -- [5]
+		0, -- [6]
+		0, -- [7]
+		0, -- [8]
+		0, -- [9]
+		0, -- [10]
+	},
 	["Vermina"] = {
 		0, -- [1]
 		0, -- [2]
@@ -57,18 +69,6 @@ PallyPower_Assignments = {
 		0, -- [10]
 		2, -- [11]
 	},
-	["Gamzy"] = {
-		0, -- [1]
-		0, -- [2]
-		0, -- [3]
-		0, -- [4]
-		0, -- [5]
-		0, -- [6]
-		0, -- [7]
-		0, -- [8]
-		0, -- [9]
-		0, -- [10]
-	},
 }
 PallyPower_NormalAssignments = {
 }
@@ -76,6 +76,7 @@ PallyPower_AuraAssignments = {
 	["Artemizia"] = 0,
 	["Bumpyco"] = 1,
 	["Gamzy"] = 0,
+	["Asdartu"] = 3,
 	["Dewbieholy"] = 0,
 	["Paradoxpala"] = 0,
 	["Lubiven"] = 0,
@@ -83,48 +84,50 @@ PallyPower_AuraAssignments = {
 	["Zoqur"] = 0,
 	["Skodicek"] = 0,
 	["Xjereziah"] = 0,
-	["Ondisch"] = 0,
-	["Darkknéss"] = 1,
-	["Brrazers"] = 0,
 	["Thelichlight"] = 6,
+	["Ondisch"] = 0,
+	["Quelldanas"] = 2,
 	["Athonian"] = 0,
+	["Brrazers"] = 0,
+	["Darkknéss"] = 1,
 	["Syyllinen"] = 1,
-	["Twitterstorm"] = 0,
-	["Supachad"] = 3,
+	["Lallin"] = 3,
+	["Zwiecho"] = 0,
+	["Glumsi"] = 0,
 	["Monikà"] = 0,
 	["Berri"] = 0,
 	["Teddz"] = 0,
 	["Tökfilkó"] = 0,
 	["Rubyrag"] = 0,
-	["Lallin"] = 3,
+	["Twitterstorm"] = 0,
 	["Eternalpala"] = 0,
-	["Zwiecho"] = 0,
+	["Filifjonkman"] = 0,
 	["Alliyah"] = 0,
 	["Atlima"] = 0,
-	["Filifjonkman"] = 0,
-	["Xilaz"] = 3,
-	["Althan"] = 0,
 	["Weebadina"] = 3,
 	["Rvbbitt"] = 0,
+	["Peakgg"] = 0,
+	["Phkp"] = 0,
+	["Sistermerrin"] = 0,
 	["Holychoke"] = 1,
 	["Monikå"] = 0,
 	["Vermina"] = 2,
 	["Drexal"] = 0,
 	["Lonnath"] = 0,
-	["Cigarette"] = 0,
-	["Selestra"] = 0,
+	["Hjørdís"] = 6,
 	["Liadriel"] = 0,
 	["Dariya"] = 0,
-	["Sistermerrin"] = 0,
+	["Selestra"] = 0,
+	["Xilaz"] = 3,
 	["Uhndapa"] = 0,
 	["Zagopally"] = 1,
-	["Hjørdís"] = 6,
+	["Cigarette"] = 0,
+	["Althan"] = 0,
 	["Billibos"] = 0,
-	["Peakgg"] = 0,
 	["Izule"] = 0,
 	["Aarvin"] = 0,
 	["Qiisha"] = 0,
-	["Glumsi"] = 0,
+	["Supachad"] = 3,
 	["Griller"] = 0,
 	["Pretzelqt"] = 0,
 	["Baconmedflød"] = 0,
