@@ -1,13 +1,3 @@
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast Corruption
-END
-VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast Curse of Agony
-END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
@@ -18,9 +8,13 @@ VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Immolate
 END
-VER 3 0000000001000007 "VuhDoDCShieldData" "Ability_Repair"
-P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1LR[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]0__
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Corruption
 END
-VER 3 0000000001000008 "VuhDoDCShieldNames" "Ability_Repair"
-N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Mxy[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Biz
+VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Curse of Agony
 END

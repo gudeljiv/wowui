@@ -55,7 +55,7 @@ RXPCSettings = {
 			["enableLevelUpAnnounceSolo"] = false,
 			["alwaysSendBranded"] = false,
 			["enableBindAutomation"] = false,
-			["frameHeight"] = 124.9999694824219,
+			["frameHeight"] = 125.0000534057617,
 			["hardcore"] = false,
 			["enableFlyStepAnnouncements"] = false,
 		},

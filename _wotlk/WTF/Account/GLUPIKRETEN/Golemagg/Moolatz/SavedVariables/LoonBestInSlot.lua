@@ -35,7 +35,7 @@ LBISSettings = {
 		["AfflictionWarlock"] = true,
 		["SubtletyRogue"] = true,
 	},
-	["SelectedSpec"] = "Bear Druid",
+	["SelectedSpec"] = "Druid: Cat",
 	["minimap"] = {
 		["minimapPos"] = 180,
 		["hide"] = true,
@@ -47,10 +47,10 @@ LBISSettings = {
 	},
 	["ShowPriority"] = true,
 	["SelectedRank"] = "All",
-	["ShowCustom"] = false,
-	["SelectedSourceType"] = "All",
 	["PriorityList"] = {
 	},
-	["SelectedSlot"] = "Ranged/Relic",
+	["SelectedSourceType"] = "All",
+	["SelectedSlot"] = "Trinket",
+	["ShowCustom"] = false,
 	["SelectedPhase"] = "All",
 }

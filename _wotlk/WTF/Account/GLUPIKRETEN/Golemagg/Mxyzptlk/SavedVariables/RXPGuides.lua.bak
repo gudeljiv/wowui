@@ -1,0 +1,54 @@
+
+RXPCData = {
+	["completedWaypoints"] = {
+	},
+	["currentStep"] = 1,
+	["currentGuideName"] = "",
+	["stepSkip"] = {
+	},
+	["flightPaths"] = {
+	},
+	["currentGuideGroup"] = "",
+}
+RXPCTrackingData = {
+	["profileKeys"] = {
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+	},
+	["profiles"] = {
+		["Mxyzptlk - Golemagg"] = {
+			["levels"] = {
+				[14] = {
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+					},
+					["timestamp"] = {
+					},
+					["quests"] = {
+					},
+				},
+			},
+		},
+	},
+}
+RXPCComms = {
+	["profileKeys"] = {
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+	},
+	["profiles"] = {
+		["Mxyzptlk - Golemagg"] = {
+		},
+	},
+}
+RXPCSettings = {
+	["profileKeys"] = {
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+	},
+	["profiles"] = {
+		["Mxyzptlk - Golemagg"] = {
+			["frameHeight"] = 125.0000152587891,
+			["enableMinimapButton"] = false,
+			["hardcore"] = false,
+		},
+	},
+}

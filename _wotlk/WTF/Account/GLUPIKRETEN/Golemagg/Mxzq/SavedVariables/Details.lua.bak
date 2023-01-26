@@ -36,9 +36,9 @@ _detalhes_database = {
 		},
 		["pos"] = {
 		},
-		["height"] = 18,
 		["cooldowns"] = {
 		},
+		["height"] = 18,
 		["framme_locked"] = false,
 		["show_conditions"] = {
 			["only_inside_instance"] = true,
@@ -56,188 +56,6 @@ _detalhes_database = {
 	["last_version"] = "3.4.1 10409",
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
-	},
-	["tabela_pets"] = {
-		["Creature-0-4457-533-19854-16375-0000516027"] = {
-			"Grobbulus", -- [1]
-			"Creature-0-4457-533-19854-15931-0000515AED", -- [2]
-			2632, -- [3]
-			1674666023, -- [4]
-			false, -- [5]
-			"Sewage Slime", -- [6]
-			"Creature-0-4457-533-19854-16375-0000516027", -- [7]
-		},
-		["Creature-0-4457-533-19854-16375-0000515C7F"] = {
-			"Grobbulus", -- [1]
-			"Creature-0-4457-533-19854-15931-0000515AED", -- [2]
-			2632, -- [3]
-			1674665087, -- [4]
-			false, -- [5]
-			"Sewage Slime", -- [6]
-			"Creature-0-4457-533-19854-16375-0000515C7F", -- [7]
-		},
-		["Creature-0-4457-533-19854-16375-0000515E55"] = {
-			"Grobbulus", -- [1]
-			"Creature-0-4457-533-19854-15931-0000515AED", -- [2]
-			2632, -- [3]
-			1674665557, -- [4]
-			false, -- [5]
-			"Sewage Slime", -- [6]
-			"Creature-0-4457-533-19854-16375-0000515E55", -- [7]
-		},
-		["Creature-0-4457-533-19854-16375-0000515E52"] = {
-			"Grobbulus", -- [1]
-			"Creature-0-4457-533-19854-15931-0000515AED", -- [2]
-			2632, -- [3]
-			1674665555, -- [4]
-			false, -- [5]
-			"Sewage Slime", -- [6]
-			"Creature-0-4457-533-19854-16375-0000515E52", -- [7]
-		},
-		["Creature-0-4457-533-19854-16375-0000515E53"] = {
-			"Grobbulus", -- [1]
-			"Creature-0-4457-533-19854-15931-0000515AED", -- [2]
-			2632, -- [3]
-			1674665556, -- [4]
-			false, -- [5]
-			"Sewage Slime", -- [6]
-			"Creature-0-4457-533-19854-16375-0000515E53", -- [7]
-		},
-		["Creature-0-4457-533-19854-16375-0000515D68"] = {
-			"Grobbulus", -- [1]
-			"Creature-0-4457-533-19854-15931-0000515AED", -- [2]
-			2632, -- [3]
-			1674665320, -- [4]
-			false, -- [5]
-			"Sewage Slime", -- [6]
-			"Creature-0-4457-533-19854-16375-0000515D68", -- [7]
-		},
-		["Pet-0-4469-571-2-417-02006BFEF9"] = {
-			"Aydien", -- [1]
-			"Player-4465-0342186B", -- [2]
-			1300, -- [3]
-			1674665041, -- [4]
-			true, -- [5]
-			"Drooshon", -- [6]
-			"Pet-0-4469-571-2-417-02006BFEF9", -- [7]
-		},
-		["Creature-0-4457-533-19854-16375-0000516029"] = {
-			"Grobbulus", -- [1]
-			"Creature-0-4457-533-19854-15931-0000515AED", -- [2]
-			2632, -- [3]
-			1674666026, -- [4]
-			false, -- [5]
-			"Sewage Slime", -- [6]
-			"Creature-0-4457-533-19854-16375-0000516029", -- [7]
-		},
-		["Creature-0-4457-533-19854-16375-0000516028"] = {
-			"Grobbulus", -- [1]
-			"Creature-0-4457-533-19854-15931-0000515AED", -- [2]
-			2632, -- [3]
-			1674666025, -- [4]
-			false, -- [5]
-			"Sewage Slime", -- [6]
-			"Creature-0-4457-533-19854-16375-0000516028", -- [7]
-		},
-		["Creature-0-4457-533-19854-2675-0000515FD4"] = {
-			"Inyourmind", -- [1]
-			"Player-4465-02E13966", -- [2]
-			1300, -- [3]
-			1674665941, -- [4]
-			false, -- [5]
-			"Explosive Sheep", -- [6]
-			"Creature-0-4457-533-19854-2675-0000515FD4", -- [7]
-		},
-		["Creature-0-4457-533-19854-16375-0000515F3F"] = {
-			"Grobbulus", -- [1]
-			"Creature-0-4457-533-19854-15931-0000515AED", -- [2]
-			2632, -- [3]
-			1674665792, -- [4]
-			false, -- [5]
-			"Sewage Slime", -- [6]
-			"Creature-0-4457-533-19854-16375-0000515F3F", -- [7]
-		},
-		["Pet-0-4469-571-7-417-07005C03B2"] = {
-			"Killspanas", -- [1]
-			"Player-4465-030871C0", -- [2]
-			1300, -- [3]
-			1674665041, -- [4]
-			true, -- [5]
-			"Zhaagrom", -- [6]
-			"Pet-0-4469-571-7-417-07005C03B2", -- [7]
-		},
-		["Creature-0-4457-533-19854-16375-0000515F3E"] = {
-			"Grobbulus", -- [1]
-			"Creature-0-4457-533-19854-15931-0000515AED", -- [2]
-			2632, -- [3]
-			1674665790, -- [4]
-			false, -- [5]
-			"Sewage Slime", -- [6]
-			"Creature-0-4457-533-19854-16375-0000515F3E", -- [7]
-		},
-		["Creature-0-4457-533-19854-16375-0000515F3D"] = {
-			"Grobbulus", -- [1]
-			"Creature-0-4457-533-19854-15931-0000515AED", -- [2]
-			2632, -- [3]
-			1674665789, -- [4]
-			false, -- [5]
-			"Sewage Slime", -- [6]
-			"Creature-0-4457-533-19854-16375-0000515F3D", -- [7]
-		},
-		["Creature-0-4457-533-19854-16375-0000515D69"] = {
-			"Grobbulus", -- [1]
-			"Creature-0-4457-533-19854-15931-0000515AED", -- [2]
-			2632, -- [3]
-			1674665322, -- [4]
-			false, -- [5]
-			"Sewage Slime", -- [6]
-			"Creature-0-4457-533-19854-16375-0000515D69", -- [7]
-		},
-		["Creature-0-4457-533-19854-16375-0000515D6A"] = {
-			"Grobbulus", -- [1]
-			"Creature-0-4457-533-19854-15931-0000515AED", -- [2]
-			2632, -- [3]
-			1674665323, -- [4]
-			false, -- [5]
-			"Sewage Slime", -- [6]
-			"Creature-0-4457-533-19854-16375-0000515D6A", -- [7]
-		},
-		["Creature-0-4457-533-19854-16375-0000515C80"] = {
-			"Grobbulus", -- [1]
-			"Creature-0-4457-533-19854-15931-0000515AED", -- [2]
-			2632, -- [3]
-			1674665089, -- [4]
-			false, -- [5]
-			"Sewage Slime", -- [6]
-			"Creature-0-4457-533-19854-16375-0000515C80", -- [7]
-		},
-		["Pet-0-4457-533-19854-17252-0100812CA6"] = {
-			"Mackerell", -- [1]
-			"Player-4465-041AC8AA", -- [2]
-			1300, -- [3]
-			1674665055, -- [4]
-			false, -- [5]
-			"Shaaroon", -- [6]
-			"Pet-0-4457-533-19854-17252-0100812CA6", -- [7]
-		},
-		["Pet-0-4469-1-22-24128-020074205F"] = {
-			"Mxzq", -- [1]
-			"Player-4465-01C7FC88", -- [2]
-			1300, -- [3]
-			1674665041, -- [4]
-			true, -- [5]
-			"Wolf", -- [6]
-			"Pet-0-4469-1-22-24128-020074205F", -- [7]
-		},
-		["Creature-0-4457-533-19854-16375-0000515C7E"] = {
-			"Grobbulus", -- [1]
-			"Creature-0-4457-533-19854-15931-0000515AED", -- [2]
-			2632, -- [3]
-			1674665086, -- [4]
-			false, -- [5]
-			"Sewage Slime", -- [6]
-			"Creature-0-4457-533-19854-16375-0000515C7E", -- [7]
-		},
 	},
 	["tabela_instancias"] = {
 	},
@@ -279,10 +97,10 @@ _detalhes_database = {
 	["data_harvest_for_charsts"] = {
 		["players"] = {
 			{
-				["name"] = "Damage of Each Individual Player",
-				["playerOnly"] = true,
 				["playerKey"] = "total",
 				["combatObjectContainer"] = 1,
+				["name"] = "Damage of Each Individual Player",
+				["playerOnly"] = true,
 			}, -- [1]
 		},
 		["totals"] = {
@@ -300,7 +118,7 @@ _detalhes_database = {
 		["custom"] = "",
 		["next"] = "",
 	},
-	["last_instance_time"] = 1674665041,
+	["last_instance_time"] = 1674666161,
 	["active_profile"] = "xVermin",
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "",
@@ -314,10 +132,11 @@ _detalhes_database = {
 		["previous_boss_killed_at"] = 0,
 	},
 	["ignore_nicktag"] = false,
-	["character_data"] = {
-		["logons"] = 2081,
+	["mythic_plus_log"] = {
 	},
-	["force_font_outline"] = "",
+	["character_data"] = {
+		["logons"] = 2082,
+	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["animate"] = true,
@@ -351,11 +170,11 @@ _detalhes_database = {
 			["last_section_selected"] = "main",
 			["author"] = "Terciob",
 			["window_scale"] = 1,
-			["hide_on_combat"] = false,
-			["show_icon"] = 5,
-			["opened"] = 0,
 			["encounter_timers_dbm"] = {
 			},
+			["show_icon"] = 5,
+			["opened"] = 0,
+			["hide_on_combat"] = false,
 		},
 		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
 			["enabled"] = true,
@@ -376,37 +195,29 @@ _detalhes_database = {
 				1, -- [3]
 				0.5, -- [4]
 			},
+			["point"] = "RIGHT",
 			["arrow_anchor_y"] = 0,
-			["main_frame_size"] = {
-				249.999740600586, -- [1]
-				89.9999694824219, -- [2]
-			},
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
 				["hide"] = true,
 			},
-			["main_frame_locked"] = true,
+			["row_height"] = 18,
 			["arrow_anchor_x"] = 0,
-			["main_frame_strata"] = "LOW",
+			["scale"] = 1,
 			["row_texture"] = "Glamour2",
 			["square_grow_direction"] = "right",
-			["y"] = -183.107162475586,
-			["author"] = "Details! Team",
+			["use_square_mode"] = false,
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["per_second"] = {
-				["enabled"] = false,
-				["point"] = "CENTER",
-				["scale"] = 1,
-				["font_shadow"] = true,
-				["y"] = -6.103515625e-05,
-				["x"] = 0.00311279296875,
-				["attribute_type"] = 1,
-				["update_speed"] = 0.05,
-				["size"] = 32,
-			},
+			["font_size"] = 10,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -414,260 +225,720 @@ _detalhes_database = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["font_size"] = 10,
 			["use_spark"] = false,
+			["y"] = -183.107162475586,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["use_square_mode"] = false,
-			["scale"] = 1,
-			["row_height"] = 18,
-			["point"] = "RIGHT",
+			["per_second"] = {
+				["enabled"] = false,
+				["point"] = "CENTER",
+				["scale"] = 1,
+				["font_shadow"] = true,
+				["y"] = -6.103515625e-05,
+				["x"] = 0.00311279296875,
+				["size"] = 32,
+				["update_speed"] = 0.05,
+				["attribute_type"] = 1,
+			},
+			["author"] = "Details! Team",
+			["main_frame_locked"] = true,
+			["main_frame_size"] = {
+				249.999740600586, -- [1]
+				89.9999694824219, -- [2]
+			},
 		},
 	},
-	["cached_roles"] = {
-		["Player-4465-03B5CADF"] = "DAMAGER",
-		["Player-4465-02577D6F"] = "TANK",
-		["Player-4745-03A3663F"] = "DAMAGER",
-		["Player-4465-02BAD1D8"] = "DAMAGER",
-		["Player-4701-039BD6E5"] = "HEALER",
-		["Player-4465-003D8D47"] = "DAMAGER",
-		["Player-4476-049F1405"] = "DAMAGER",
-		["Player-4701-03A199C7"] = "DAMAGER",
-		["Player-4465-0342186B"] = "DAMAGER",
-		["Player-4465-03F9D630"] = "DAMAGER",
-		["Player-4465-02CC91B8"] = "DAMAGER",
-		["Player-4477-027383BF"] = "DAMAGER",
-		["Player-4465-02A4FBD7"] = "TANK",
-		["Player-4465-02D086C3"] = "DAMAGER",
-		["Player-4465-03BDFDC5"] = "DAMAGER",
-		["Player-4465-026088A4"] = "DAMAGER",
-		["Player-4477-030D986D"] = "DAMAGER",
-		["Player-4465-0261EC2B"] = "TANK",
-		["Player-4465-02693FB0"] = "DAMAGER",
-		["Player-4465-02523198"] = "HEALER",
-		["Player-4440-03B236DF"] = "DAMAGER",
-		["Player-4701-03B93D09"] = "DAMAGER",
-		["Player-4464-02FD1CB1"] = "DAMAGER",
-		["Player-4477-048D0C63"] = "DAMAGER",
-		["Player-4465-02288795"] = "DAMAGER",
-		["Player-4742-03B3D16D"] = "DAMAGER",
-		["Player-4465-03D41593"] = "HEALER",
-		["Player-4749-0395860F"] = "TANK",
-		["Player-4465-027ED863"] = "DAMAGER",
-		["Player-4813-0472D8C1"] = "TANK",
-		["Player-4745-03A4D59B"] = "DAMAGER",
-		["Player-4465-036E6B94"] = "DAMAGER",
-		["Player-4742-03B6EDA5"] = "TANK",
-		["Player-4465-02D51E4E"] = "DAMAGER",
-		["Player-4465-036BB930"] = "TANK",
-		["Player-4816-049322B1"] = "TANK",
-		["Player-4465-041BF036"] = "DAMAGER",
-		["Player-4465-03F03D3F"] = "DAMAGER",
-		["Player-4465-041A54E4"] = "DAMAGER",
-		["Player-4465-03091068"] = "DAMAGER",
-		["Player-4701-031A2B82"] = "HEALER",
-		["Player-4813-04A02B26"] = "DAMAGER",
-		["Player-4742-03B7B4B2"] = "TANK",
-		["Player-4465-041BF30E"] = "DAMAGER",
-		["Player-4701-03B3AF0C"] = "DAMAGER",
-		["Player-4465-02F6DDCB"] = "HEALER",
-		["Player-4465-03021E55"] = "DAMAGER",
-		["Player-4701-03AED8A5"] = "DAMAGER",
-		["Player-4476-03967A51"] = "TANK",
-		["Player-4465-02EF8BBA"] = "DAMAGER",
-		["Player-4465-0258F376"] = "TANK",
-		["Player-4465-04004B77"] = "DAMAGER",
-		["Player-4465-02DDED22"] = "DAMAGER",
-		["Player-4465-02FB4533"] = "HEALER",
-		["Player-4465-02F8DEBD"] = "DAMAGER",
-		["Player-4701-03305843"] = "DAMAGER",
-		["Player-4465-0415CE0A"] = "DAMAGER",
-		["Player-4465-02E11076"] = "DAMAGER",
-		["Player-4465-041BEE68"] = "TANK",
-		["Player-4465-02E6F563"] = "DAMAGER",
-		["Player-4465-02885F76"] = "TANK",
-		["Player-4477-04B5E362"] = "DAMAGER",
-		["Player-4465-0252C34B"] = "DAMAGER",
-		["Player-4465-019144E8"] = "DAMAGER",
-		["Player-4465-02E44D83"] = "HEALER",
-		["Player-4465-03BADA8C"] = "DAMAGER",
-		["Player-4465-02BD46B7"] = "DAMAGER",
-		["Player-4465-02DF9BE1"] = "DAMAGER",
-		["Player-4465-02C807FC"] = "HEALER",
-		["Player-4465-02BAB8B7"] = "DAMAGER",
-		["Player-4465-01740F8E"] = "HEALER",
-		["Player-4701-032DD6F6"] = "DAMAGER",
-		["Player-4465-041BF30D"] = "DAMAGER",
-		["Player-4465-0391B9C8"] = "DAMAGER",
-		["Player-4465-02CDCDC3"] = "TANK",
-		["Player-4465-0411AC30"] = "TANK",
-		["Player-4465-03D62D9B"] = "DAMAGER",
-		["Player-4465-041AC8AA"] = "DAMAGER",
-		["Player-4465-030871C0"] = "DAMAGER",
-		["Player-4701-03819EF5"] = "DAMAGER",
-		["Player-4465-0412D748"] = "DAMAGER",
-		["Player-4441-0392BC9E"] = "TANK",
-		["Player-4465-028BE5FC"] = "DAMAGER",
-		["Player-4465-02F97ED1"] = "DAMAGER",
-		["Player-4465-03461B19"] = "DAMAGER",
-		["Player-4465-028A5465"] = "DAMAGER",
-		["Player-4465-0297669D"] = "DAMAGER",
-		["Player-4465-02BF7599"] = "HEALER",
-		["Player-4440-03B2599C"] = "DAMAGER",
-		["Player-4454-04BC3D0C"] = "DAMAGER",
-		["Player-4465-03037FF1"] = "DAMAGER",
-		["Player-4465-03D74F24"] = "DAMAGER",
-		["Player-4465-02E29C09"] = "HEALER",
-		["Player-4465-02F9FEBD"] = "DAMAGER",
-		["Player-4465-01C7FC88"] = "DAMAGER",
-		["Player-4465-02DFB097"] = "DAMAGER",
-		["Player-4465-02F48C42"] = "DAMAGER",
-		["Player-4465-04054D63"] = "HEALER",
-		["Player-4701-039EF10C"] = "DAMAGER",
-		["Player-4465-02503EFC"] = "TANK",
-		["Player-4465-0351F0F5"] = "DAMAGER",
-		["Player-4477-035E647F"] = "DAMAGER",
-		["Player-4465-03046743"] = "DAMAGER",
-		["Player-4465-03035CC0"] = "HEALER",
-		["Player-4465-0416D644"] = "HEALER",
-		["Player-4465-036BE4A4"] = "TANK",
-		["Player-4465-03D6D11D"] = "TANK",
-		["Player-4465-01870DC6"] = "DAMAGER",
-		["Player-4465-02FF9B0C"] = "DAMAGER",
-		["Player-4701-00EB014A"] = "DAMAGER",
-		["Player-4476-04936DD5"] = "DAMAGER",
-		["Player-4742-03B01A00"] = "DAMAGER",
-		["Player-4465-01693BEB"] = "HEALER",
-		["Player-4465-02976C46"] = "TANK",
-		["Player-4465-02BDBFFA"] = "DAMAGER",
-		["Player-4476-03EBACD5"] = "DAMAGER",
-		["Player-4465-02047DF6"] = "TANK",
-		["Player-4465-03753C93"] = "DAMAGER",
-		["Player-4465-02CD0AB9"] = "TANK",
-		["Player-4465-0275626C"] = "TANK",
-		["Player-4465-030383A8"] = "DAMAGER",
-		["Player-4465-02F96727"] = "HEALER",
-		["Player-4465-000A80E7"] = "DAMAGER",
-		["Player-4465-03069158"] = "HEALER",
-		["Player-4465-02D908D4"] = "HEALER",
-		["Player-4465-0218B725"] = "DAMAGER",
-		["Player-4465-02BCA418"] = "DAMAGER",
-		["Player-4465-031A1B3C"] = "HEALER",
-		["Player-4465-02CDC2A2"] = "HEALER",
-		["Player-4465-02FEFF6C"] = "DAMAGER",
-		["Player-4477-04802C1F"] = "DAMAGER",
-		["Player-4465-02BA90EF"] = "DAMAGER",
-		["Player-4465-02F9DE73"] = "DAMAGER",
-		["Player-4465-041BFA3C"] = "HEALER",
-		["Player-4465-037AFDDA"] = "DAMAGER",
-		["Player-4465-02E13966"] = "DAMAGER",
-		["Player-4441-0108CD29"] = "DAMAGER",
-		["Player-4465-02E5F434"] = "TANK",
-		["Player-4441-036A5F47"] = "TANK",
-		["Player-4465-038E5903"] = "DAMAGER",
-		["Player-4813-036CF38B"] = "HEALER",
-		["Player-4465-025D118E"] = "DAMAGER",
-		["Player-4465-03E6B471"] = "TANK",
-		["Player-4466-03B341E3"] = "DAMAGER",
-		["Player-4464-03B81770"] = "DAMAGER",
-		["Player-4465-01487BDF"] = "DAMAGER",
-		["Player-4465-02C18DB0"] = "TANK",
-		["Player-4742-03A2A879"] = "DAMAGER",
-		["Player-4465-02CD6CBC"] = "HEALER",
-		["Player-4465-0258A1EB"] = "TANK",
-		["Player-4465-02A80D1D"] = "HEALER",
-		["Player-4465-036CD23F"] = "DAMAGER",
-		["Player-4464-02FD1CA6"] = "HEALER",
-		["Player-4813-0362233C"] = "DAMAGER",
-		["Player-4465-03F67319"] = "TANK",
-		["Player-4811-0393CCC2"] = "DAMAGER",
-		["Player-4465-029E272E"] = "DAMAGER",
-		["Player-4465-03B7B0CC"] = "TANK",
-		["Player-4465-02DC8E2E"] = "DAMAGER",
-		["Player-4465-0386A8DB"] = "TANK",
-		["Player-4813-0381F00A"] = "DAMAGER",
-		["Player-4465-02B6A009"] = "DAMAGER",
-		["Player-4465-02DE4EAD"] = "DAMAGER",
-		["Player-4465-013E4AF1"] = "DAMAGER",
-		["Player-4465-024C462D"] = "DAMAGER",
-		["Player-4701-0397FC44"] = "DAMAGER",
-		["Player-4465-02EC914A"] = "DAMAGER",
-		["Player-4465-02B962BC"] = "TANK",
-		["Player-4465-02C0CB57"] = "HEALER",
-		["Player-4465-036A3B59"] = "DAMAGER",
-		["Player-4703-036FCE0B"] = "DAMAGER",
-		["Player-4465-02EB3CD0"] = "DAMAGER",
-		["Player-4465-03AC28D5"] = "DAMAGER",
-		["Player-4465-036EC082"] = "TANK",
-		["Player-4701-01D09AED"] = "DAMAGER",
-		["Player-4465-02E5912F"] = "HEALER",
-		["Player-4701-03B1807A"] = "DAMAGER",
-		["Player-4477-04694034"] = "DAMAGER",
-		["Player-4465-0414CD92"] = "TANK",
-		["Player-4465-02AAFA73"] = "HEALER",
-		["Player-4464-03B449DE"] = "HEALER",
-		["Player-4742-0398D638"] = "DAMAGER",
-		["Player-4465-02DFB699"] = "DAMAGER",
-		["Player-4465-02C372E2"] = "HEALER",
-		["Player-4465-01794E06"] = "HEALER",
-		["Player-4456-04B482D1"] = "HEALER",
-		["Player-4701-0379559D"] = "DAMAGER",
-		["Player-4465-0250291E"] = "TANK",
-		["Player-4476-04631F24"] = "DAMAGER",
-		["Player-4465-03D3962E"] = "TANK",
-		["Player-4476-04BAF9D6"] = "DAMAGER",
-		["Player-4465-01678225"] = "DAMAGER",
-		["Player-4441-012EC605"] = "DAMAGER",
-		["Player-4465-02C17AB0"] = "DAMAGER",
-		["Player-4749-018E243A"] = "DAMAGER",
-		["Player-4701-0373EAA9"] = "DAMAGER",
-		["Player-4465-0256CA59"] = "TANK",
-		["Player-4465-03747128"] = "HEALER",
-		["Player-4701-03B43FB8"] = "DAMAGER",
-		["Player-4476-043E10B2"] = "TANK",
-		["Player-4440-03B20940"] = "DAMAGER",
-		["Player-4465-02F1D2B9"] = "DAMAGER",
-		["Player-4742-03B16593"] = "DAMAGER",
-		["Player-4465-02BDEC8F"] = "HEALER",
-		["Player-4465-02DEBEAF"] = "DAMAGER",
-		["Player-4465-02E58336"] = "DAMAGER",
-		["Player-4465-01544D47"] = "DAMAGER",
-		["Player-4815-047DFB6B"] = "DAMAGER",
-		["Player-4465-02C331B4"] = "HEALER",
-		["Player-4476-043F5A87"] = "DAMAGER",
-		["Player-4442-038F0F2B"] = "HEALER",
-		["Player-4701-0398407A"] = "DAMAGER",
-		["Player-4464-0185CA08"] = "DAMAGER",
-		["Player-4816-049CEEDE"] = "DAMAGER",
-		["Player-4465-01739CFE"] = "DAMAGER",
-		["Player-4476-03A849C0"] = "DAMAGER",
-		["Player-4465-03674D0F"] = "DAMAGER",
-		["Player-4465-0288F4DB"] = "DAMAGER",
-		["Player-4477-0338EC0F"] = "DAMAGER",
-		["Player-4465-00F8D26F"] = "DAMAGER",
-		["Player-4477-045DAFDD"] = "DAMAGER",
-		["Player-4701-031A8022"] = "DAMAGER",
-		["Player-4745-039D115F"] = "DAMAGER",
-		["Player-4465-01CBD6E9"] = "DAMAGER",
-		["Player-4454-0498F3FF"] = "DAMAGER",
-		["Player-4465-02E87747"] = "DAMAGER",
-		["Player-4465-02C3C2E6"] = "HEALER",
-		["Player-4465-029390FF"] = "TANK",
-		["Player-4813-03852C61"] = "DAMAGER",
-		["Player-4465-02DF6FC1"] = "TANK",
-		["Player-4465-02E38B90"] = "DAMAGER",
-		["Player-4465-0010144A"] = "DAMAGER",
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
+	["force_font_outline"] = "",
 	["last_encounter"] = "Kel'Thuzad",
-	["data_harvested_for_charts"] = {
+	["last_day"] = "25",
+	["announce_prepots"] = {
+		["enabled"] = false,
+		["channel"] = "SELF",
+		["reverse"] = false,
+	},
+	["benchmark_db"] = {
+		["frame"] = {
+		},
+	},
+	["last_realversion"] = 148,
+	["combat_id"] = 1,
+	["savedStyles"] = {
+		{
+			["hide_in_combat_type"] = 1,
+			["clickthrough_window"] = false,
+			["titlebar_shown"] = false,
+			["menu_anchor"] = {
+				16, -- [1]
+				0, -- [2]
+				["side"] = 2,
+			},
+			["bg_r"] = 0.1333333333333333,
+			["fullborder_size"] = 0.5,
+			["hide_out_of_combat"] = false,
+			["color_buttons"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
+			["skin_custom"] = "vermin",
+			["use_auto_align_multi_fontstrings"] = true,
+			["tooltip"] = {
+				["n_abilities"] = 3,
+				["n_enemies"] = 3,
+			},
+			["switch_all_roles_in_combat"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["clickthrough_toolbaricons"] = false,
+			["clickthrough_rows"] = false,
+			["titlebar_texture"] = "Clean",
+			["switch_tank"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["switch_all_roles_after_wipe"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["icon_desaturated"] = false,
+			["desaturated_menu"] = false,
+			["micro_displays_side"] = 2,
+			["window_scale"] = 1,
+			["hide_icon"] = true,
+			["toolbar_side"] = 1,
+			["bg_g"] = 0.1333333333333333,
+			["menu_icons_alpha"] = 0.92,
+			["bg_b"] = 0.1333333333333333,
+			["switch_healer_in_combat"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["color"] = {
+				0.07058823529411765, -- [1]
+				0.07058823529411765, -- [2]
+				0.07058823529411765, -- [3]
+				0, -- [4]
+			},
+			["hide_on_context"] = {
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [1]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 48,
+				}, -- [2]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [3]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [4]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [5]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [6]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [7]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [8]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [9]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [10]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [11]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [12]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [13]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [14]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [15]
+			},
+			["skin"] = "Minimalistic",
+			["following"] = {
+				["bar_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+				["enabled"] = false,
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+			},
+			["switch_healer"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["fontstrings_text2_anchor"] = 70,
+			["menu_icons_size"] = 0.8500000238418579,
+			["bars_inverted"] = false,
+			["menu_icons"] = {
+				false, -- [1]
+				true, -- [2]
+				false, -- [3]
+				false, -- [4]
+				false, -- [5]
+				false, -- [6]
+				["space"] = -4,
+				["shadow"] = false,
+			},
+			["instance_button_anchor"] = {
+				-27, -- [1]
+				1, -- [2]
+			},
+			["total_bar"] = {
+				["enabled"] = false,
+				["only_in_group"] = false,
+				["icon"] = "Interface\\ICONS\\INV_Sigil_Thorim",
+				["color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+			},
+			["show_sidebars"] = false,
+			["version"] = 3,
+			["switch_tank_in_combat"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["bg_alpha"] = 0,
+			["fontstrings_text4_anchor"] = 4,
+			["plugins_grow_direction"] = 1,
+			["menu_alpha"] = {
+				["enabled"] = false,
+				["onleave"] = 1,
+				["ignorebars"] = false,
+				["iconstoo"] = true,
+				["onenter"] = 1,
+			},
+			["fullborder_shown"] = false,
+			["attribute_text"] = {
+				["show_timer"] = false,
+				["shadow"] = false,
+				["side"] = 1,
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["custom_text"] = "{name}",
+				["text_face"] = "Arial Narrow",
+				["anchor"] = {
+					56, -- [1]
+					3, -- [2]
+				},
+				["text_size"] = 12,
+				["enable_custom_text"] = false,
+				["enabled"] = true,
+			},
+			["rowareaborder_shown"] = false,
+			["rowareaborder_size"] = 0.5,
+			["clickthrough_incombatonly"] = false,
+			["fullborder_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["backdrop_texture"] = "Details Ground",
+			["hide_in_combat_alpha"] = 0,
+			["bars_sort_direction"] = 1,
+			["strata"] = "LOW",
+			["libwindow"] = {
+				["y"] = -20,
+				["x"] = 2.012314325838815e-05,
+				["point"] = "TOPLEFT",
+				["scale"] = 1,
+			},
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					0.07058823529411765, -- [1]
+					0.07058823529411765, -- [2]
+					0.07058823529411765, -- [3]
+				},
+			},
+			["menu_anchor_down"] = {
+				16, -- [1]
+				-3, -- [2]
+			},
+			["bars_grow_direction"] = 1,
+			["grab_on_top"] = false,
+			["auto_hide_menu"] = {
+				["left"] = false,
+				["right"] = true,
+			},
+			["show_statusbar"] = false,
+			["switch_damager_in_combat"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["rowareaborder_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["row_show_animation"] = {
+				["anim"] = "Fade",
+				["options"] = {
+				},
+			},
+			["auto_current"] = true,
+			["micro_displays_locked"] = false,
+			["switch_damager"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["name"] = "vermin",
+			["hide_in_combat"] = false,
+			["row_info"] = {
+				["textR_outline"] = false,
+				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
+				["textL_outline"] = false,
+				["textR_outline_small"] = true,
+				["textL_outline_small"] = true,
+				["textL_enable_custom_text"] = false,
+				["fixed_text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+				["space"] = {
+					["right"] = 0,
+					["left"] = 0,
+					["between"] = 1,
+				},
+				["texture_background_class_color"] = false,
+				["start_after_icon"] = true,
+				["font_face_file"] = "Fonts\\ARIALN.TTF",
+				["faction_icon_size_offset"] = -10,
+				["backdrop"] = {
+					["color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["size"] = 12,
+					["enabled"] = false,
+					["texture"] = "ThreatPlatesBorder",
+				},
+				["font_size"] = 11,
+				["textL_custom_text"] = "{data1}. {data3}{data2}",
+				["models"] = {
+					["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
+					["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
+					["upper_alpha"] = 0.5,
+					["lower_enabled"] = false,
+					["lower_alpha"] = 0.1,
+					["upper_enabled"] = false,
+				},
+				["textL_translit_text"] = false,
+				["texture_custom_file"] = "Interface\\",
+				["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
+				["icon_size_offset"] = 0,
+				["textL_outline_small_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["show_faction_icon"] = true,
+				["overlay_color"] = {
+					0.7, -- [1]
+					0.7, -- [2]
+					0.7, -- [3]
+					0, -- [4]
+				},
+				["textR_show_data"] = {
+					true, -- [1]
+					true, -- [2]
+					false, -- [3]
+				},
+				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+				["icon_file"] = "",
+				["icon_grayscale"] = false,
+				["use_spec_icons"] = false,
+				["textR_bracket"] = "(",
+				["texture_custom"] = "",
+				["show_arena_role_icon"] = false,
+				["fixed_texture_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["textL_show_number"] = true,
+				["textR_enable_custom_text"] = false,
+				["textR_outline_small_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["textR_custom_text"] = "{data1} ({data2}, {data3}%)",
+				["texture"] = "Clean",
+				["textR_class_colors"] = false,
+				["texture_background_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
+				["overlay_texture"] = "Clean",
+				["fixed_texture_background_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0.07912671566009521, -- [4]
+				},
+				["textL_class_colors"] = false,
+				["texture_background"] = "Clean",
+				["alpha"] = 1,
+				["no_icon"] = true,
+				["icon_offset"] = {
+					0, -- [1]
+					0, -- [2]
+				},
+				["arena_role_icon_size_offset"] = -10,
+				["font_face"] = "Arial Narrow",
+				["texture_class_colors"] = true,
+				["percent_type"] = 1,
+				["fast_ps_update"] = false,
+				["textR_separator"] = "NONE",
+				["height"] = 19,
+			},
+			["ignore_mass_showhide"] = false,
+			["fontstrings_text_limit_offset"] = -10,
+			["wallpaper"] = {
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["alpha"] = 0.5,
+				["width"] = 283.000183105469,
+				["texcoord"] = {
+					0, -- [1]
+					1, -- [2]
+					0, -- [3]
+					0.7, -- [4]
+				},
+				["height"] = 114.042518615723,
+				["anchor"] = "all",
+				["level"] = 2,
+				["enabled"] = false,
+				["texture"] = "Interface\\AddOns\\Details\\images\\background",
+			},
+			["stretch_button_side"] = 2,
+			["titlebar_height"] = 16,
+			["fontstrings_text3_anchor"] = 35,
+			["use_multi_fontstrings"] = true,
+			["titlebar_texture_color"] = {
+				0.2, -- [1]
+				0.2, -- [2]
+				0.2, -- [3]
+				0, -- [4]
+			},
+		}, -- [1]
+	},
+	["combat_counter"] = 12979,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["announce_deaths"] = {
+		["enabled"] = false,
+		["last_hits"] = 1,
+		["only_first"] = 5,
+		["where"] = 1,
+	},
+	["tabela_overall"] = {
+		{
+			["tipo"] = 2,
+			["_ActorTable"] = {
+			},
+		}, -- [1]
+		{
+			["tipo"] = 3,
+			["_ActorTable"] = {
+			},
+		}, -- [2]
+		{
+			["tipo"] = 7,
+			["_ActorTable"] = {
+			},
+		}, -- [3]
+		{
+			["tipo"] = 9,
+			["_ActorTable"] = {
+			},
+		}, -- [4]
+		{
+			["tipo"] = 2,
+			["_ActorTable"] = {
+			},
+		}, -- [5]
+		["raid_roster"] = {
+		},
+		["raid_roster_indexed"] = {
+		},
+		["tempo_start"] = 1674666184,
+		["last_events_tables"] = {
+		},
+		["alternate_power"] = {
+		},
+		["combat_counter"] = 12978,
+		["totals"] = {
+			0, -- [1]
+			0, -- [2]
+			{
+				0, -- [1]
+				[0] = 0,
+				["alternatepower"] = 0,
+				[3] = 0,
+				[6] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["debuff_uptime"] = 0,
+				["cooldowns_defensive"] = 0,
+				["interrupt"] = 0,
+				["dispell"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
+			}, -- [4]
+			["frags_total"] = 0,
+			["voidzone_damage"] = 0,
+		},
+		["player_last_events"] = {
+		},
+		["frags_need_refresh"] = false,
+		["aura_timeline"] = {
+		},
+		["__call"] = {
+		},
+		["data_inicio"] = 0,
+		["spells_cast_timeline"] = {
+		},
+		["totals_grupo"] = {
+			0, -- [1]
+			0, -- [2]
+			{
+				0, -- [1]
+				[0] = 0,
+				["alternatepower"] = 0,
+				[3] = 0,
+				[6] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["debuff_uptime"] = 0,
+				["cooldowns_defensive"] = 0,
+				["interrupt"] = 0,
+				["dispell"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
+			}, -- [4]
+		},
+		["frags"] = {
+		},
+		["data_fim"] = 0,
+		["cleu_events"] = {
+			["n"] = 1,
+		},
+		["CombatSkillCache"] = {
+		},
+		["cleu_timeline"] = {
+		},
+		["start_time"] = 0,
+		["TimeData"] = {
+		},
+		["PhaseData"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+			}, -- [1]
+			["heal_section"] = {
+			},
+			["heal"] = {
+			},
+			["damage_section"] = {
+			},
+			["damage"] = {
+			},
+		},
+	},
+	["local_instances_config"] = {
+		{
+			["modo"] = 2,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = true,
+			["verticalSnap"] = false,
+			["isLocked"] = true,
+			["is_open"] = true,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["snap"] = {
+				[3] = 2,
+			},
+			["segment"] = 0,
+			["mode"] = 2,
+			["attribute"] = 1,
+			["pos"] = {
+				["normal"] = {
+					["y"] = 596.4414672851562,
+					["x"] = -1101.599021911621,
+					["w"] = 234.8974151611328,
+					["h"] = 138.5456237792969,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [1]
+		{
+			["modo"] = 2,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = true,
+			["verticalSnap"] = false,
+			["isLocked"] = true,
+			["is_open"] = true,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["snap"] = {
+				1, -- [1]
+			},
+			["segment"] = 0,
+			["mode"] = 2,
+			["attribute"] = 2,
+			["pos"] = {
+				["normal"] = {
+					["y"] = 596.4414672851562,
+					["x"] = -869.6630859375,
+					["w"] = 228.9744262695313,
+					["h"] = 138.5456237792969,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [2]
+		{
+			["modo"] = 2,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = false,
+			["verticalSnap"] = false,
+			["isLocked"] = true,
+			["snap"] = {
+			},
+			["is_open"] = true,
+			["last_raid_plugin"] = "DETAILS_PLUGIN_TINY_THREAT",
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["segment"] = 0,
+			["mode"] = 2,
+			["attribute"] = 1,
+			["pos"] = {
+				["normal"] = {
+					["y"] = -517.3939361572266,
+					["x"] = 501.459716796875,
+					["w"] = 215.7857666015625,
+					["h"] = 170.4597473144531,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [3]
 	},
 	["cached_talents"] = {
 		["Player-4465-0416D644"] = {
@@ -4361,6 +4632,773 @@ _detalhes_database = {
 				3, -- [7]
 			}, -- [78]
 		},
+		["Player-4465-03788311"] = {
+			{
+				132090, -- [1]
+				3, -- [2]
+				3, -- [3]
+				4, -- [4]
+				1, -- [5]
+				71, -- [6]
+				3, -- [7]
+			}, -- [1]
+			{
+				135328, -- [1]
+				0, -- [2]
+				5, -- [3]
+				4, -- [4]
+				1, -- [5]
+				71, -- [6]
+				5, -- [7]
+			}, -- [2]
+			{
+				132282, -- [1]
+				3, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+				71, -- [6]
+				3, -- [7]
+			}, -- [3]
+			{
+				133476, -- [1]
+				0, -- [2]
+				5, -- [3]
+				3, -- [4]
+				1, -- [5]
+				71, -- [6]
+				5, -- [7]
+			}, -- [4]
+			{
+				132337, -- [1]
+				2, -- [2]
+				2, -- [3]
+				1, -- [4]
+				1, -- [5]
+				71, -- [6]
+				2, -- [7]
+			}, -- [5]
+			{
+				132155, -- [1]
+				0, -- [2]
+				1, -- [3]
+				3, -- [4]
+				1, -- [5]
+				71, -- [6]
+				2, -- [7]
+			}, -- [6]
+			{
+				136031, -- [1]
+				3, -- [2]
+				2, -- [3]
+				3, -- [4]
+				1, -- [5]
+				71, -- [6]
+				3, -- [7]
+			}, -- [7]
+			{
+				132316, -- [1]
+				0, -- [2]
+				6, -- [3]
+				3, -- [4]
+				1, -- [5]
+				71, -- [6]
+				3, -- [7]
+			}, -- [8]
+			{
+				132269, -- [1]
+				5, -- [2]
+				1, -- [3]
+				2, -- [4]
+				1, -- [5]
+				71, -- [6]
+				5, -- [7]
+			}, -- [9]
+			{
+				135275, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
+				1, -- [5]
+				71, -- [6]
+				2, -- [7]
+			}, -- [10]
+			{
+				132397, -- [1]
+				5, -- [2]
+				5, -- [3]
+				1, -- [4]
+				1, -- [5]
+				71, -- [6]
+				5, -- [7]
+			}, -- [11]
+			{
+				132306, -- [1]
+				1, -- [2]
+				5, -- [3]
+				2, -- [4]
+				1, -- [5]
+				71, -- [6]
+				1, -- [7]
+			}, -- [12]
+			{
+				132367, -- [1]
+				2, -- [2]
+				6, -- [3]
+				1, -- [4]
+				1, -- [5]
+				71, -- [6]
+				2, -- [7]
+			}, -- [13]
+			{
+				132355, -- [1]
+				1, -- [2]
+				7, -- [3]
+				2, -- [4]
+				1, -- [5]
+				71, -- [6]
+				1, -- [7]
+			}, -- [14]
+			{
+				132400, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				1, -- [5]
+				71, -- [6]
+				3, -- [7]
+			}, -- [15]
+			{
+				135881, -- [1]
+				1, -- [2]
+				3, -- [3]
+				2, -- [4]
+				1, -- [5]
+				71, -- [6]
+				1, -- [7]
+			}, -- [16]
+			{
+				135995, -- [1]
+				1, -- [2]
+				2, -- [3]
+				2, -- [4]
+				1, -- [5]
+				71, -- [6]
+				3, -- [7]
+			}, -- [17]
+			{
+				132312, -- [1]
+				2, -- [2]
+				3, -- [3]
+				3, -- [4]
+				1, -- [5]
+				71, -- [6]
+				2, -- [7]
+			}, -- [18]
+			{
+				132344, -- [1]
+				0, -- [2]
+				9, -- [3]
+				2, -- [4]
+				1, -- [5]
+				71, -- [6]
+				1, -- [7]
+			}, -- [19]
+			{
+				132346, -- [1]
+				0, -- [2]
+				9, -- [3]
+				1, -- [4]
+				1, -- [5]
+				71, -- [6]
+				3, -- [7]
+			}, -- [20]
+			{
+				132175, -- [1]
+				2, -- [2]
+				7, -- [3]
+				1, -- [4]
+				1, -- [5]
+				71, -- [6]
+				2, -- [7]
+			}, -- [21]
+			{
+				132334, -- [1]
+				0, -- [2]
+				9, -- [3]
+				3, -- [4]
+				1, -- [5]
+				71, -- [6]
+				2, -- [7]
+			}, -- [22]
+			{
+				132355, -- [1]
+				0, -- [2]
+				8, -- [3]
+				2, -- [4]
+				1, -- [5]
+				71, -- [6]
+				3, -- [7]
+			}, -- [23]
+			{
+				236305, -- [1]
+				2, -- [2]
+				6, -- [3]
+				4, -- [4]
+				1, -- [5]
+				71, -- [6]
+				2, -- [7]
+			}, -- [24]
+			{
+				236317, -- [1]
+				2, -- [2]
+				8, -- [3]
+				3, -- [4]
+				1, -- [5]
+				71, -- [6]
+				2, -- [7]
+			}, -- [25]
+			{
+				132349, -- [1]
+				2, -- [2]
+				7, -- [3]
+				3, -- [4]
+				1, -- [5]
+				71, -- [6]
+				2, -- [7]
+			}, -- [26]
+			{
+				236303, -- [1]
+				0, -- [2]
+				11, -- [3]
+				2, -- [4]
+				1, -- [5]
+				71, -- [6]
+				1, -- [7]
+			}, -- [27]
+			{
+				132364, -- [1]
+				0, -- [2]
+				10, -- [3]
+				2, -- [4]
+				1, -- [5]
+				71, -- [6]
+				5, -- [7]
+			}, -- [28]
+			{
+				236276, -- [1]
+				0, -- [2]
+				4, -- [3]
+				3, -- [4]
+				1, -- [5]
+				71, -- [6]
+				3, -- [7]
+			}, -- [29]
+			{
+				132340, -- [1]
+				0, -- [2]
+				7, -- [3]
+				4, -- [4]
+				1, -- [5]
+				71, -- [6]
+				2, -- [7]
+			}, -- [30]
+			{
+				132335, -- [1]
+				0, -- [2]
+				8, -- [3]
+				1, -- [4]
+				1, -- [5]
+				71, -- [6]
+				1, -- [7]
+			}, -- [31]
+			{
+				136035, -- [1]
+				0, -- [2]
+				3, -- [3]
+				4, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [32]
+			{
+				136224, -- [1]
+				0, -- [2]
+				4, -- [3]
+				3, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [33]
+			{
+				132152, -- [1]
+				0, -- [2]
+				6, -- [3]
+				3, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [34]
+			{
+				132292, -- [1]
+				0, -- [2]
+				1, -- [3]
+				3, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [35]
+			{
+				136075, -- [1]
+				0, -- [2]
+				1, -- [3]
+				2, -- [4]
+				2, -- [5]
+				72, -- [6]
+				2, -- [7]
+			}, -- [36]
+			{
+				136097, -- [1]
+				0, -- [2]
+				2, -- [3]
+				3, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [37]
+			{
+				136147, -- [1]
+				0, -- [2]
+				3, -- [3]
+				2, -- [4]
+				2, -- [5]
+				72, -- [6]
+				1, -- [7]
+			}, -- [38]
+			{
+				132366, -- [1]
+				0, -- [2]
+				2, -- [3]
+				2, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [39]
+			{
+				136146, -- [1]
+				0, -- [2]
+				5, -- [3]
+				2, -- [4]
+				2, -- [5]
+				72, -- [6]
+				1, -- [7]
+			}, -- [40]
+			{
+				132338, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
+				2, -- [5]
+				72, -- [6]
+				3, -- [7]
+			}, -- [41]
+			{
+				136012, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				2, -- [5]
+				72, -- [6]
+				1, -- [7]
+			}, -- [42]
+			{
+				136218, -- [1]
+				0, -- [2]
+				3, -- [3]
+				3, -- [4]
+				2, -- [5]
+				72, -- [6]
+				3, -- [7]
+			}, -- [43]
+			{
+				136009, -- [1]
+				0, -- [2]
+				6, -- [3]
+				1, -- [4]
+				2, -- [5]
+				72, -- [6]
+				2, -- [7]
+			}, -- [44]
+			{
+				135358, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				2, -- [5]
+				72, -- [6]
+				2, -- [7]
+			}, -- [45]
+			{
+				132307, -- [1]
+				0, -- [2]
+				5, -- [3]
+				3, -- [4]
+				2, -- [5]
+				72, -- [6]
+				2, -- [7]
+			}, -- [46]
+			{
+				132147, -- [1]
+				0, -- [2]
+				4, -- [3]
+				1, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [47]
+			{
+				132369, -- [1]
+				0, -- [2]
+				7, -- [3]
+				4, -- [4]
+				2, -- [5]
+				72, -- [6]
+				2, -- [7]
+			}, -- [48]
+			{
+				132222, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
+				2, -- [5]
+				72, -- [6]
+				3, -- [7]
+			}, -- [49]
+			{
+				132275, -- [1]
+				0, -- [2]
+				8, -- [3]
+				4, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [50]
+			{
+				132352, -- [1]
+				0, -- [2]
+				9, -- [3]
+				2, -- [4]
+				2, -- [5]
+				72, -- [6]
+				1, -- [7]
+			}, -- [51]
+			{
+				132344, -- [1]
+				0, -- [2]
+				7, -- [3]
+				1, -- [4]
+				2, -- [5]
+				72, -- [6]
+				3, -- [7]
+			}, -- [52]
+			{
+				236308, -- [1]
+				0, -- [2]
+				8, -- [3]
+				1, -- [4]
+				2, -- [5]
+				72, -- [6]
+				2, -- [7]
+			}, -- [53]
+			{
+				236306, -- [1]
+				0, -- [2]
+				9, -- [3]
+				3, -- [4]
+				2, -- [5]
+				72, -- [6]
+				3, -- [7]
+			}, -- [54]
+			{
+				236316, -- [1]
+				0, -- [2]
+				11, -- [3]
+				2, -- [4]
+				2, -- [5]
+				72, -- [6]
+				1, -- [7]
+			}, -- [55]
+			{
+				236171, -- [1]
+				0, -- [2]
+				9, -- [3]
+				1, -- [4]
+				2, -- [5]
+				72, -- [6]
+				1, -- [7]
+			}, -- [56]
+			{
+				236310, -- [1]
+				0, -- [2]
+				10, -- [3]
+				2, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [57]
+			{
+				135053, -- [1]
+				2, -- [2]
+				1, -- [3]
+				1, -- [4]
+				2, -- [5]
+				72, -- [6]
+				3, -- [7]
+			}, -- [58]
+			{
+				136056, -- [1]
+				5, -- [2]
+				2, -- [3]
+				3, -- [4]
+				3, -- [5]
+				73, -- [6]
+				5, -- [7]
+			}, -- [59]
+			{
+				135892, -- [1]
+				5, -- [2]
+				3, -- [3]
+				4, -- [4]
+				3, -- [5]
+				73, -- [6]
+				5, -- [7]
+			}, -- [60]
+			{
+				132326, -- [1]
+				0, -- [2]
+				1, -- [3]
+				3, -- [4]
+				3, -- [5]
+				73, -- [6]
+				3, -- [7]
+			}, -- [61]
+			{
+				132277, -- [1]
+				0, -- [2]
+				1, -- [3]
+				1, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [62]
+			{
+				236309, -- [1]
+				3, -- [2]
+				2, -- [3]
+				2, -- [4]
+				3, -- [5]
+				73, -- [6]
+				3, -- [7]
+			}, -- [63]
+			{
+				132363, -- [1]
+				0, -- [2]
+				4, -- [3]
+				3, -- [4]
+				3, -- [5]
+				73, -- [6]
+				3, -- [7]
+			}, -- [64]
+			{
+				132353, -- [1]
+				2, -- [2]
+				3, -- [3]
+				2, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [65]
+			{
+				236318, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				3, -- [5]
+				73, -- [6]
+				1, -- [7]
+			}, -- [66]
+			{
+				132357, -- [1]
+				2, -- [2]
+				5, -- [3]
+				3, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [67]
+			{
+				132362, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [68]
+			{
+				132343, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [69]
+			{
+				132325, -- [1]
+				0, -- [2]
+				5, -- [3]
+				2, -- [4]
+				3, -- [5]
+				73, -- [6]
+				1, -- [7]
+			}, -- [70]
+			{
+				135871, -- [1]
+				1, -- [2]
+				3, -- [3]
+				1, -- [4]
+				3, -- [5]
+				73, -- [6]
+				1, -- [7]
+			}, -- [71]
+			{
+				135321, -- [1]
+				5, -- [2]
+				6, -- [3]
+				3, -- [4]
+				3, -- [5]
+				73, -- [6]
+				5, -- [7]
+			}, -- [72]
+			{
+				134952, -- [1]
+				5, -- [2]
+				1, -- [3]
+				2, -- [4]
+				3, -- [5]
+				73, -- [6]
+				5, -- [7]
+			}, -- [73]
+			{
+				132341, -- [1]
+				2, -- [2]
+				7, -- [3]
+				1, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [74]
+			{
+				133123, -- [1]
+				0, -- [2]
+				8, -- [3]
+				2, -- [4]
+				3, -- [5]
+				73, -- [6]
+				3, -- [7]
+			}, -- [75]
+			{
+				132360, -- [1]
+				2, -- [2]
+				3, -- [3]
+				3, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [76]
+			{
+				132345, -- [1]
+				0, -- [2]
+				7, -- [3]
+				3, -- [4]
+				3, -- [5]
+				73, -- [6]
+				3, -- [7]
+			}, -- [77]
+			{
+				135291, -- [1]
+				0, -- [2]
+				9, -- [3]
+				2, -- [4]
+				3, -- [5]
+				73, -- [6]
+				1, -- [7]
+			}, -- [78]
+			{
+				236311, -- [1]
+				0, -- [2]
+				8, -- [3]
+				3, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [79]
+			{
+				236315, -- [1]
+				0, -- [2]
+				10, -- [3]
+				2, -- [4]
+				3, -- [5]
+				73, -- [6]
+				3, -- [7]
+			}, -- [80]
+			{
+				236312, -- [1]
+				0, -- [2]
+				11, -- [3]
+				2, -- [4]
+				3, -- [5]
+				73, -- [6]
+				1, -- [7]
+			}, -- [81]
+			{
+				236307, -- [1]
+				0, -- [2]
+				9, -- [3]
+				3, -- [4]
+				3, -- [5]
+				73, -- [6]
+				3, -- [7]
+			}, -- [82]
+			{
+				236319, -- [1]
+				0, -- [2]
+				9, -- [3]
+				1, -- [4]
+				3, -- [5]
+				73, -- [6]
+				1, -- [7]
+			}, -- [83]
+			{
+				134976, -- [1]
+				0, -- [2]
+				10, -- [3]
+				3, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [84]
+			{
+				132361, -- [1]
+				0, -- [2]
+				4, -- [3]
+				1, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [85]
+		},
 		["Player-4465-0342186B"] = {
 			{
 				136157, -- [1]
@@ -6608,727 +7646,709 @@ _detalhes_database = {
 				5, -- [7]
 			}, -- [83]
 		},
-		["Player-4465-041BF036"] = {
+		["Player-4465-0258F376"] = {
 			{
-				135817, -- [1]
-				3, -- [2]
-				2, -- [3]
-				1, -- [4]
+				135736, -- [1]
+				0, -- [2]
+				1, -- [3]
+				2, -- [4]
 				1, -- [5]
-				262, -- [6]
-				3, -- [7]
+				65, -- [6]
+				5, -- [7]
 			}, -- [1]
 			{
-				136014, -- [1]
-				1, -- [2]
+				135915, -- [1]
+				0, -- [2]
 				5, -- [3]
 				2, -- [4]
 				1, -- [5]
-				262, -- [6]
+				65, -- [6]
 				1, -- [7]
 			}, -- [2]
 			{
-				135807, -- [1]
-				5, -- [2]
-				1, -- [3]
-				3, -- [4]
+				135872, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
 				1, -- [5]
-				262, -- [6]
-				5, -- [7]
+				65, -- [6]
+				1, -- [7]
 			}, -- [3]
 			{
-				136116, -- [1]
+				135928, -- [1]
 				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				262, -- [6]
-				5, -- [7]
-			}, -- [4]
-			{
-				135830, -- [1]
-				5, -- [2]
 				3, -- [3]
 				3, -- [4]
 				1, -- [5]
-				262, -- [6]
-				5, -- [7]
-			}, -- [5]
+				65, -- [6]
+				2, -- [7]
+			}, -- [4]
 			{
-				135824, -- [1]
+				135920, -- [1]
 				0, -- [2]
-				4, -- [3]
+				2, -- [3]
 				1, -- [4]
 				1, -- [5]
-				262, -- [6]
+				65, -- [6]
+				3, -- [7]
+			}, -- [5]
+			{
+				135970, -- [1]
+				0, -- [2]
+				4, -- [3]
+				3, -- [4]
+				1, -- [5]
+				65, -- [6]
 				2, -- [7]
 			}, -- [6]
 			{
-				136115, -- [1]
-				1, -- [2]
-				7, -- [3]
+				136090, -- [1]
+				0, -- [2]
+				2, -- [3]
 				2, -- [4]
 				1, -- [5]
-				262, -- [6]
-				1, -- [7]
+				65, -- [6]
+				5, -- [7]
 			}, -- [7]
 			{
-				136170, -- [1]
-				1, -- [2]
+				135933, -- [1]
+				0, -- [2]
+				4, -- [3]
+				1, -- [4]
+				1, -- [5]
+				65, -- [6]
+				3, -- [7]
+			}, -- [8]
+			{
+				135913, -- [1]
+				0, -- [2]
 				3, -- [3]
 				2, -- [4]
 				1, -- [5]
-				262, -- [6]
-				1, -- [7]
-			}, -- [8]
-			{
-				135850, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				1, -- [5]
-				262, -- [6]
+				65, -- [6]
 				5, -- [7]
 			}, -- [9]
 			{
-				135990, -- [1]
-				5, -- [2]
-				6, -- [3]
+				132325, -- [1]
+				0, -- [2]
+				1, -- [3]
 				3, -- [4]
 				1, -- [5]
-				262, -- [6]
+				65, -- [6]
 				5, -- [7]
 			}, -- [10]
 			{
-				136094, -- [1]
-				3, -- [2]
-				2, -- [3]
-				2, -- [4]
+				135917, -- [1]
+				0, -- [2]
+				5, -- [3]
+				3, -- [4]
 				1, -- [5]
-				262, -- [6]
+				65, -- [6]
 				3, -- [7]
 			}, -- [11]
 			{
-				136099, -- [1]
-				2, -- [2]
-				5, -- [3]
-				1, -- [4]
+				135972, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
 				1, -- [5]
-				262, -- [6]
-				2, -- [7]
+				65, -- [6]
+				1, -- [7]
 			}, -- [12]
 			{
-				136213, -- [1]
-				3, -- [2]
-				4, -- [3]
-				4, -- [4]
+				135938, -- [1]
+				0, -- [2]
+				6, -- [3]
+				3, -- [4]
 				1, -- [5]
-				262, -- [6]
-				3, -- [7]
+				65, -- [6]
+				5, -- [7]
 			}, -- [13]
 			{
-				135791, -- [1]
+				135984, -- [1]
 				0, -- [2]
 				2, -- [3]
 				3, -- [4]
 				1, -- [5]
-				262, -- [6]
-				3, -- [7]
+				65, -- [6]
+				2, -- [7]
 			}, -- [14]
 			{
-				136111, -- [1]
-				3, -- [2]
+				135948, -- [1]
+				0, -- [2]
 				5, -- [3]
-				4, -- [4]
+				1, -- [4]
 				1, -- [5]
-				262, -- [6]
-				3, -- [7]
+				65, -- [6]
+				2, -- [7]
 			}, -- [15]
 			{
-				136028, -- [1]
-				1, -- [2]
+				135950, -- [1]
+				0, -- [2]
 				6, -- [3]
 				1, -- [4]
 				1, -- [5]
-				262, -- [6]
-				3, -- [7]
+				65, -- [6]
+				2, -- [7]
 			}, -- [16]
 			{
-				136050, -- [1]
-				3, -- [2]
-				8, -- [3]
+				135876, -- [1]
+				0, -- [2]
+				7, -- [3]
 				3, -- [4]
 				1, -- [5]
-				262, -- [6]
+				65, -- [6]
 				3, -- [7]
 			}, -- [17]
 			{
-				135829, -- [1]
-				1, -- [2]
-				9, -- [3]
-				2, -- [4]
+				135931, -- [1]
+				0, -- [2]
+				7, -- [3]
+				1, -- [4]
 				1, -- [5]
-				262, -- [6]
-				1, -- [7]
+				65, -- [6]
+				3, -- [7]
 			}, -- [18]
 			{
-				237576, -- [1]
-				2, -- [2]
+				135921, -- [1]
+				0, -- [2]
 				8, -- [3]
-				2, -- [4]
+				3, -- [4]
 				1, -- [5]
-				262, -- [6]
-				2, -- [7]
+				65, -- [6]
+				5, -- [7]
 			}, -- [19]
 			{
-				237572, -- [1]
-				3, -- [2]
+				135895, -- [1]
+				0, -- [2]
 				9, -- [3]
 				1, -- [4]
 				1, -- [5]
-				262, -- [6]
-				3, -- [7]
+				65, -- [6]
+				1, -- [7]
 			}, -- [20]
 			{
-				237583, -- [1]
-				3, -- [2]
-				9, -- [3]
-				3, -- [4]
+				236261, -- [1]
+				0, -- [2]
+				8, -- [3]
+				1, -- [4]
 				1, -- [5]
-				262, -- [6]
+				65, -- [6]
 				3, -- [7]
 			}, -- [21]
 			{
-				237588, -- [1]
-				3, -- [2]
-				7, -- [3]
+				236251, -- [1]
+				0, -- [2]
+				10, -- [3]
 				3, -- [4]
 				1, -- [5]
-				262, -- [6]
-				3, -- [7]
+				65, -- [6]
+				2, -- [7]
 			}, -- [22]
 			{
-				237589, -- [1]
-				1, -- [2]
+				236247, -- [1]
+				0, -- [2]
 				11, -- [3]
 				2, -- [4]
 				1, -- [5]
-				262, -- [6]
+				65, -- [6]
 				1, -- [7]
 			}, -- [23]
 			{
-				136234, -- [1]
-				5, -- [2]
+				236254, -- [1]
+				0, -- [2]
 				10, -- [3]
 				2, -- [4]
 				1, -- [5]
-				262, -- [6]
-				5, -- [7]
+				65, -- [6]
+				2, -- [7]
 			}, -- [24]
 			{
-				135782, -- [1]
-				2, -- [2]
-				8, -- [3]
-				1, -- [4]
+				236248, -- [1]
+				0, -- [2]
+				4, -- [3]
+				4, -- [4]
 				1, -- [5]
-				262, -- [6]
+				65, -- [6]
 				2, -- [7]
 			}, -- [25]
 			{
-				136056, -- [1]
+				236256, -- [1]
 				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
+				9, -- [3]
+				3, -- [4]
+				1, -- [5]
+				65, -- [6]
+				5, -- [7]
 			}, -- [26]
 			{
-				132152, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				5, -- [7]
-			}, -- [27]
-			{
-				136095, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [28]
-			{
-				136051, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [29]
-			{
-				136098, -- [1]
-				0, -- [2]
-				2, -- [3]
+				132110, -- [1]
+				3, -- [2]
+				8, -- [3]
 				1, -- [4]
 				2, -- [5]
-				263, -- [6]
+				66, -- [6]
+				3, -- [7]
+			}, -- [27]
+			{
+				135893, -- [1]
+				3, -- [2]
+				4, -- [3]
+				3, -- [4]
+				2, -- [5]
+				66, -- [6]
+				3, -- [7]
+			}, -- [28]
+			{
+				135892, -- [1]
+				5, -- [2]
+				3, -- [3]
+				3, -- [4]
+				2, -- [5]
+				66, -- [6]
+				5, -- [7]
+			}, -- [29]
+			{
+				135964, -- [1]
+				0, -- [2]
+				2, -- [3]
+				2, -- [4]
+				2, -- [5]
+				66, -- [6]
 				2, -- [7]
 			}, -- [30]
 			{
-				136023, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
+				135882, -- [1]
+				2, -- [2]
+				5, -- [3]
+				3, -- [4]
 				2, -- [5]
-				263, -- [6]
-				3, -- [7]
+				66, -- [6]
+				5, -- [7]
 			}, -- [31]
 			{
-				135814, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
+				135321, -- [1]
+				3, -- [2]
+				6, -- [3]
+				3, -- [4]
 				2, -- [5]
-				263, -- [6]
+				66, -- [6]
 				3, -- [7]
 			}, -- [32]
 			{
-				132325, -- [1]
-				0, -- [2]
-				2, -- [3]
+				135880, -- [1]
+				1, -- [2]
+				7, -- [3]
 				2, -- [4]
 				2, -- [5]
-				263, -- [6]
-				5, -- [7]
+				66, -- [6]
+				1, -- [7]
 			}, -- [33]
 			{
-				136162, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
+				136051, -- [1]
+				1, -- [2]
+				5, -- [3]
+				2, -- [4]
 				2, -- [5]
-				263, -- [6]
-				5, -- [7]
+				66, -- [6]
+				1, -- [7]
 			}, -- [34]
 			{
-				135892, -- [1]
+				135883, -- [1]
 				0, -- [2]
-				4, -- [3]
-				3, -- [4]
+				1, -- [3]
+				2, -- [4]
 				2, -- [5]
-				263, -- [6]
+				66, -- [6]
 				5, -- [7]
 			}, -- [35]
 			{
-				132269, -- [1]
-				0, -- [2]
-				5, -- [3]
+				135962, -- [1]
+				3, -- [2]
+				3, -- [3]
 				2, -- [4]
 				2, -- [5]
-				263, -- [6]
-				1, -- [7]
+				66, -- [6]
+				3, -- [7]
 			}, -- [36]
 			{
-				136027, -- [1]
+				135963, -- [1]
 				0, -- [2]
-				3, -- [3]
-				3, -- [4]
+				4, -- [3]
+				2, -- [4]
 				2, -- [5]
-				263, -- [6]
-				1, -- [7]
+				66, -- [6]
+				2, -- [7]
 			}, -- [37]
 			{
-				132314, -- [1]
-				0, -- [2]
-				7, -- [3]
+				135994, -- [1]
+				5, -- [2]
+				2, -- [3]
 				3, -- [4]
 				2, -- [5]
-				263, -- [6]
-				1, -- [7]
+				66, -- [6]
+				5, -- [7]
 			}, -- [38]
 			{
-				132215, -- [1]
+				135978, -- [1]
 				0, -- [2]
-				6, -- [3]
-				3, -- [4]
+				2, -- [3]
+				1, -- [4]
 				2, -- [5]
-				263, -- [6]
+				66, -- [6]
 				3, -- [7]
 			}, -- [39]
 			{
-				136114, -- [1]
-				0, -- [2]
-				5, -- [3]
+				135896, -- [1]
+				2, -- [2]
+				6, -- [3]
 				1, -- [4]
 				2, -- [5]
-				263, -- [6]
+				66, -- [6]
 				2, -- [7]
 			}, -- [40]
 			{
-				136110, -- [1]
-				0, -- [2]
-				6, -- [3]
-				1, -- [4]
+				135870, -- [1]
+				3, -- [2]
+				7, -- [3]
+				3, -- [4]
 				2, -- [5]
-				263, -- [6]
+				66, -- [6]
 				3, -- [7]
 			}, -- [41]
 			{
-				132147, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
+				135986, -- [1]
+				3, -- [2]
+				8, -- [3]
+				3, -- [4]
 				2, -- [5]
-				263, -- [6]
-				1, -- [7]
+				66, -- [6]
+				3, -- [7]
 			}, -- [42]
 			{
-				136055, -- [1]
-				0, -- [2]
+				135874, -- [1]
+				1, -- [2]
 				9, -- [3]
-				1, -- [4]
+				2, -- [4]
 				2, -- [5]
-				263, -- [6]
-				3, -- [7]
+				66, -- [6]
+				1, -- [7]
 			}, -- [43]
 			{
-				132148, -- [1]
-				0, -- [2]
-				7, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [44]
-			{
-				136088, -- [1]
-				0, -- [2]
-				9, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				1, -- [7]
-			}, -- [45]
-			{
-				237581, -- [1]
-				0, -- [2]
-				8, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [46]
-			{
-				237587, -- [1]
-				0, -- [2]
-				8, -- [3]
-				1, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [47]
-			{
-				136024, -- [1]
-				0, -- [2]
-				9, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [48]
-			{
-				237584, -- [1]
-				0, -- [2]
-				10, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				5, -- [7]
-			}, -- [49]
-			{
-				237577, -- [1]
-				0, -- [2]
-				11, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				1, -- [7]
-			}, -- [50]
-			{
-				136012, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				2, -- [5]
-				263, -- [6]
-				3, -- [7]
-			}, -- [51]
-			{
-				136097, -- [1]
-				2, -- [2]
-				1, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [52]
-			{
-				236289, -- [1]
-				0, -- [2]
-				8, -- [3]
-				2, -- [4]
-				2, -- [5]
-				263, -- [6]
-				1, -- [7]
-			}, -- [53]
-			{
-				135776, -- [1]
-				0, -- [2]
-				6, -- [3]
-				4, -- [4]
-				2, -- [5]
-				263, -- [6]
-				2, -- [7]
-			}, -- [54]
-			{
-				136109, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [55]
-			{
-				135845, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [56]
-			{
-				132315, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [57]
-			{
-				136052, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				5, -- [7]
-			}, -- [58]
-			{
-				136043, -- [1]
-				3, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [59]
-			{
-				136053, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				3, -- [7]
-			}, -- [60]
-			{
-				136080, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [61]
-			{
-				135861, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [62]
-			{
-				136076, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [63]
-			{
-				135865, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				5, -- [7]
-			}, -- [64]
-			{
-				135859, -- [1]
-				2, -- [2]
-				2, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				5, -- [7]
-			}, -- [65]
-			{
-				136107, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				5, -- [7]
-			}, -- [66]
-			{
-				136057, -- [1]
+				132154, -- [1]
 				5, -- [2]
 				1, -- [3]
 				3, -- [4]
-				3, -- [5]
-				264, -- [6]
+				2, -- [5]
+				66, -- [6]
 				5, -- [7]
-			}, -- [67]
+			}, -- [44]
 			{
-				136041, -- [1]
+				236252, -- [1]
+				2, -- [2]
+				9, -- [3]
+				3, -- [4]
+				2, -- [5]
+				66, -- [6]
+				2, -- [7]
+			}, -- [45]
+			{
+				236267, -- [1]
+				3, -- [2]
+				9, -- [3]
+				1, -- [4]
+				2, -- [5]
+				66, -- [6]
+				3, -- [7]
+			}, -- [46]
+			{
+				236253, -- [1]
+				1, -- [2]
+				11, -- [3]
+				2, -- [4]
+				2, -- [5]
+				66, -- [6]
+				1, -- [7]
+			}, -- [47]
+			{
+				236259, -- [1]
+				2, -- [2]
+				10, -- [3]
+				3, -- [4]
+				2, -- [5]
+				66, -- [6]
+				2, -- [7]
+			}, -- [48]
+			{
+				236264, -- [1]
+				3, -- [2]
+				10, -- [3]
+				2, -- [4]
+				2, -- [5]
+				66, -- [6]
+				3, -- [7]
+			}, -- [49]
+			{
+				253400, -- [1]
+				1, -- [2]
+				3, -- [3]
+				1, -- [4]
+				2, -- [5]
+				66, -- [6]
+				1, -- [7]
+			}, -- [50]
+			{
+				253400, -- [1]
+				2, -- [2]
+				4, -- [3]
+				1, -- [4]
+				2, -- [5]
+				66, -- [6]
+				2, -- [7]
+			}, -- [51]
+			{
+				135958, -- [1]
+				1, -- [2]
+				7, -- [3]
+				1, -- [4]
+				2, -- [5]
+				66, -- [6]
+				2, -- [7]
+			}, -- [52]
+			{
+				135906, -- [1]
+				0, -- [2]
+				2, -- [3]
+				3, -- [4]
+				3, -- [5]
+				70, -- [6]
+				2, -- [7]
+			}, -- [53]
+			{
+				132275, -- [1]
+				0, -- [2]
+				6, -- [3]
+				2, -- [4]
+				3, -- [5]
+				70, -- [6]
+				3, -- [7]
+			}, -- [54]
+			{
+				132269, -- [1]
+				5, -- [2]
+				1, -- [3]
+				2, -- [4]
+				3, -- [5]
+				70, -- [6]
+				5, -- [7]
+			}, -- [55]
+			{
+				135863, -- [1]
+				0, -- [2]
+				1, -- [3]
+				3, -- [4]
+				3, -- [5]
+				70, -- [6]
+				5, -- [7]
+			}, -- [56]
+			{
+				133041, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
+				3, -- [5]
+				70, -- [6]
+				3, -- [7]
+			}, -- [57]
+			{
+				135957, -- [1]
+				0, -- [2]
+				3, -- [3]
+				2, -- [4]
+				3, -- [5]
+				70, -- [6]
+				5, -- [7]
+			}, -- [58]
+			{
+				135942, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				3, -- [5]
+				70, -- [6]
+				1, -- [7]
+			}, -- [59]
+			{
+				135924, -- [1]
 				3, -- [2]
 				2, -- [3]
 				2, -- [4]
 				3, -- [5]
-				264, -- [6]
+				70, -- [6]
 				3, -- [7]
-			}, -- [68]
+			}, -- [60]
 			{
-				136044, -- [1]
-				0, -- [2]
-				5, -- [3]
+				132347, -- [1]
+				1, -- [2]
+				3, -- [3]
+				3, -- [4]
+				3, -- [5]
+				70, -- [6]
+				1, -- [7]
+			}, -- [61]
+			{
+				135959, -- [1]
+				2, -- [2]
+				2, -- [3]
 				1, -- [4]
 				3, -- [5]
-				264, -- [6]
+				70, -- [6]
+				2, -- [7]
+			}, -- [62]
+			{
+				135904, -- [1]
+				0, -- [2]
+				4, -- [3]
+				1, -- [4]
+				3, -- [5]
+				70, -- [6]
+				2, -- [7]
+			}, -- [63]
+			{
+				135985, -- [1]
+				2, -- [2]
+				3, -- [3]
+				1, -- [4]
+				3, -- [5]
+				70, -- [6]
+				2, -- [7]
+			}, -- [64]
+			{
+				135937, -- [1]
+				2, -- [2]
+				3, -- [3]
+				4, -- [4]
+				3, -- [5]
+				70, -- [6]
+				2, -- [7]
+			}, -- [65]
+			{
+				135889, -- [1]
+				1, -- [2]
+				4, -- [3]
+				4, -- [4]
+				3, -- [5]
+				70, -- [6]
+				3, -- [7]
+			}, -- [66]
+			{
+				135934, -- [1]
+				0, -- [2]
+				5, -- [3]
+				3, -- [4]
+				3, -- [5]
+				70, -- [6]
+				1, -- [7]
+			}, -- [67]
+			{
+				135897, -- [1]
+				0, -- [2]
+				6, -- [3]
+				3, -- [4]
+				3, -- [5]
+				70, -- [6]
+				2, -- [7]
+			}, -- [68]
+			{
+				236257, -- [1]
+				0, -- [2]
+				7, -- [3]
+				3, -- [4]
+				3, -- [5]
+				70, -- [6]
 				3, -- [7]
 			}, -- [69]
 			{
-				136035, -- [1]
+				135905, -- [1]
 				0, -- [2]
-				5, -- [3]
-				4, -- [4]
+				8, -- [3]
+				2, -- [4]
 				3, -- [5]
-				264, -- [6]
+				70, -- [6]
 				3, -- [7]
 			}, -- [70]
 			{
-				136059, -- [1]
+				135924, -- [1]
 				0, -- [2]
-				8, -- [3]
+				4, -- [3]
 				3, -- [4]
 				3, -- [5]
-				264, -- [6]
+				70, -- [6]
 				3, -- [7]
 			}, -- [71]
 			{
-				136042, -- [1]
+				135891, -- [1]
 				0, -- [2]
-				8, -- [3]
+				9, -- [3]
 				2, -- [4]
 				3, -- [5]
-				264, -- [6]
-				2, -- [7]
+				70, -- [6]
+				1, -- [7]
 			}, -- [72]
 			{
-				136089, -- [1]
-				0, -- [2]
-				9, -- [3]
-				2, -- [4]
-				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [73]
-			{
-				136060, -- [1]
-				0, -- [2]
-				7, -- [3]
-				1, -- [4]
-				3, -- [5]
-				264, -- [6]
-				5, -- [7]
-			}, -- [74]
-			{
-				136089, -- [1]
-				0, -- [2]
-				9, -- [3]
-				3, -- [4]
-				3, -- [5]
-				264, -- [6]
-				2, -- [7]
-			}, -- [75]
-			{
-				237573, -- [1]
+				236262, -- [1]
 				0, -- [2]
 				8, -- [3]
-				1, -- [4]
+				3, -- [4]
 				3, -- [5]
-				264, -- [6]
+				70, -- [6]
 				2, -- [7]
-			}, -- [76]
+			}, -- [73]
 			{
-				237571, -- [1]
+				236266, -- [1]
 				0, -- [2]
 				9, -- [3]
 				1, -- [4]
 				3, -- [5]
-				264, -- [6]
+				70, -- [6]
 				3, -- [7]
-			}, -- [77]
+			}, -- [74]
 			{
-				237590, -- [1]
+				236260, -- [1]
 				0, -- [2]
 				10, -- [3]
 				2, -- [4]
 				3, -- [5]
-				264, -- [6]
-				5, -- [7]
-			}, -- [78]
+				70, -- [6]
+				3, -- [7]
+			}, -- [75]
 			{
-				252995, -- [1]
+				236250, -- [1]
 				0, -- [2]
 				11, -- [3]
 				2, -- [4]
 				3, -- [5]
-				264, -- [6]
+				70, -- [6]
 				1, -- [7]
-			}, -- [79]
+			}, -- [76]
 			{
-				236288, -- [1]
+				236246, -- [1]
 				0, -- [2]
 				7, -- [3]
+				1, -- [4]
+				3, -- [5]
+				70, -- [6]
+				2, -- [7]
+			}, -- [77]
+			{
+				236263, -- [1]
+				0, -- [2]
+				9, -- [3]
 				3, -- [4]
 				3, -- [5]
-				264, -- [6]
-				1, -- [7]
-			}, -- [80]
+				70, -- [6]
+				3, -- [7]
+			}, -- [78]
 		},
 		["Player-4465-02F6DDCB"] = {
 			{
@@ -8765,1549 +9785,6 @@ _detalhes_database = {
 				3, -- [7]
 			}, -- [81]
 		},
-		["Player-4465-041A54E4"] = {
-			{
-				132090, -- [1]
-				3, -- [2]
-				3, -- [3]
-				4, -- [4]
-				1, -- [5]
-				71, -- [6]
-				3, -- [7]
-			}, -- [1]
-			{
-				135328, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				1, -- [5]
-				71, -- [6]
-				5, -- [7]
-			}, -- [2]
-			{
-				132282, -- [1]
-				3, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-				71, -- [6]
-				3, -- [7]
-			}, -- [3]
-			{
-				133476, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				1, -- [5]
-				71, -- [6]
-				5, -- [7]
-			}, -- [4]
-			{
-				132337, -- [1]
-				2, -- [2]
-				2, -- [3]
-				1, -- [4]
-				1, -- [5]
-				71, -- [6]
-				2, -- [7]
-			}, -- [5]
-			{
-				132155, -- [1]
-				2, -- [2]
-				1, -- [3]
-				3, -- [4]
-				1, -- [5]
-				71, -- [6]
-				2, -- [7]
-			}, -- [6]
-			{
-				136031, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				1, -- [5]
-				71, -- [6]
-				3, -- [7]
-			}, -- [7]
-			{
-				132316, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				1, -- [5]
-				71, -- [6]
-				3, -- [7]
-			}, -- [8]
-			{
-				132269, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				71, -- [6]
-				5, -- [7]
-			}, -- [9]
-			{
-				135275, -- [1]
-				2, -- [2]
-				3, -- [3]
-				1, -- [4]
-				1, -- [5]
-				71, -- [6]
-				2, -- [7]
-			}, -- [10]
-			{
-				132397, -- [1]
-				5, -- [2]
-				5, -- [3]
-				1, -- [4]
-				1, -- [5]
-				71, -- [6]
-				5, -- [7]
-			}, -- [11]
-			{
-				132306, -- [1]
-				1, -- [2]
-				5, -- [3]
-				2, -- [4]
-				1, -- [5]
-				71, -- [6]
-				1, -- [7]
-			}, -- [12]
-			{
-				132367, -- [1]
-				1, -- [2]
-				6, -- [3]
-				1, -- [4]
-				1, -- [5]
-				71, -- [6]
-				2, -- [7]
-			}, -- [13]
-			{
-				132355, -- [1]
-				1, -- [2]
-				7, -- [3]
-				2, -- [4]
-				1, -- [5]
-				71, -- [6]
-				1, -- [7]
-			}, -- [14]
-			{
-				132400, -- [1]
-				3, -- [2]
-				4, -- [3]
-				2, -- [4]
-				1, -- [5]
-				71, -- [6]
-				3, -- [7]
-			}, -- [15]
-			{
-				135881, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				1, -- [5]
-				71, -- [6]
-				1, -- [7]
-			}, -- [16]
-			{
-				135995, -- [1]
-				3, -- [2]
-				2, -- [3]
-				2, -- [4]
-				1, -- [5]
-				71, -- [6]
-				3, -- [7]
-			}, -- [17]
-			{
-				132312, -- [1]
-				2, -- [2]
-				3, -- [3]
-				3, -- [4]
-				1, -- [5]
-				71, -- [6]
-				2, -- [7]
-			}, -- [18]
-			{
-				132344, -- [1]
-				1, -- [2]
-				9, -- [3]
-				2, -- [4]
-				1, -- [5]
-				71, -- [6]
-				1, -- [7]
-			}, -- [19]
-			{
-				132346, -- [1]
-				3, -- [2]
-				9, -- [3]
-				1, -- [4]
-				1, -- [5]
-				71, -- [6]
-				3, -- [7]
-			}, -- [20]
-			{
-				132175, -- [1]
-				0, -- [2]
-				7, -- [3]
-				1, -- [4]
-				1, -- [5]
-				71, -- [6]
-				2, -- [7]
-			}, -- [21]
-			{
-				132334, -- [1]
-				2, -- [2]
-				9, -- [3]
-				3, -- [4]
-				1, -- [5]
-				71, -- [6]
-				2, -- [7]
-			}, -- [22]
-			{
-				132355, -- [1]
-				3, -- [2]
-				8, -- [3]
-				2, -- [4]
-				1, -- [5]
-				71, -- [6]
-				3, -- [7]
-			}, -- [23]
-			{
-				236305, -- [1]
-				2, -- [2]
-				6, -- [3]
-				4, -- [4]
-				1, -- [5]
-				71, -- [6]
-				2, -- [7]
-			}, -- [24]
-			{
-				236317, -- [1]
-				2, -- [2]
-				8, -- [3]
-				3, -- [4]
-				1, -- [5]
-				71, -- [6]
-				2, -- [7]
-			}, -- [25]
-			{
-				132349, -- [1]
-				2, -- [2]
-				7, -- [3]
-				3, -- [4]
-				1, -- [5]
-				71, -- [6]
-				2, -- [7]
-			}, -- [26]
-			{
-				236303, -- [1]
-				1, -- [2]
-				11, -- [3]
-				2, -- [4]
-				1, -- [5]
-				71, -- [6]
-				1, -- [7]
-			}, -- [27]
-			{
-				132364, -- [1]
-				5, -- [2]
-				10, -- [3]
-				2, -- [4]
-				1, -- [5]
-				71, -- [6]
-				5, -- [7]
-			}, -- [28]
-			{
-				236276, -- [1]
-				3, -- [2]
-				4, -- [3]
-				3, -- [4]
-				1, -- [5]
-				71, -- [6]
-				3, -- [7]
-			}, -- [29]
-			{
-				132340, -- [1]
-				2, -- [2]
-				7, -- [3]
-				4, -- [4]
-				1, -- [5]
-				71, -- [6]
-				2, -- [7]
-			}, -- [30]
-			{
-				132335, -- [1]
-				1, -- [2]
-				8, -- [3]
-				1, -- [4]
-				1, -- [5]
-				71, -- [6]
-				1, -- [7]
-			}, -- [31]
-			{
-				136035, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				2, -- [5]
-				72, -- [6]
-				5, -- [7]
-			}, -- [32]
-			{
-				136224, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				2, -- [5]
-				72, -- [6]
-				5, -- [7]
-			}, -- [33]
-			{
-				132152, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				2, -- [5]
-				72, -- [6]
-				5, -- [7]
-			}, -- [34]
-			{
-				132292, -- [1]
-				5, -- [2]
-				1, -- [3]
-				3, -- [4]
-				2, -- [5]
-				72, -- [6]
-				5, -- [7]
-			}, -- [35]
-			{
-				136075, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				2, -- [5]
-				72, -- [6]
-				2, -- [7]
-			}, -- [36]
-			{
-				136097, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				72, -- [6]
-				5, -- [7]
-			}, -- [37]
-			{
-				136147, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				2, -- [5]
-				72, -- [6]
-				1, -- [7]
-			}, -- [38]
-			{
-				132366, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				2, -- [5]
-				72, -- [6]
-				5, -- [7]
-			}, -- [39]
-			{
-				136146, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				2, -- [5]
-				72, -- [6]
-				1, -- [7]
-			}, -- [40]
-			{
-				132338, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				2, -- [5]
-				72, -- [6]
-				3, -- [7]
-			}, -- [41]
-			{
-				136012, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				72, -- [6]
-				1, -- [7]
-			}, -- [42]
-			{
-				136218, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				2, -- [5]
-				72, -- [6]
-				3, -- [7]
-			}, -- [43]
-			{
-				136009, -- [1]
-				0, -- [2]
-				6, -- [3]
-				1, -- [4]
-				2, -- [5]
-				72, -- [6]
-				2, -- [7]
-			}, -- [44]
-			{
-				135358, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				72, -- [6]
-				2, -- [7]
-			}, -- [45]
-			{
-				132307, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				2, -- [5]
-				72, -- [6]
-				2, -- [7]
-			}, -- [46]
-			{
-				132147, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				2, -- [5]
-				72, -- [6]
-				5, -- [7]
-			}, -- [47]
-			{
-				132369, -- [1]
-				0, -- [2]
-				7, -- [3]
-				4, -- [4]
-				2, -- [5]
-				72, -- [6]
-				2, -- [7]
-			}, -- [48]
-			{
-				132222, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				2, -- [5]
-				72, -- [6]
-				3, -- [7]
-			}, -- [49]
-			{
-				132275, -- [1]
-				0, -- [2]
-				8, -- [3]
-				4, -- [4]
-				2, -- [5]
-				72, -- [6]
-				5, -- [7]
-			}, -- [50]
-			{
-				132352, -- [1]
-				0, -- [2]
-				9, -- [3]
-				2, -- [4]
-				2, -- [5]
-				72, -- [6]
-				1, -- [7]
-			}, -- [51]
-			{
-				132344, -- [1]
-				0, -- [2]
-				7, -- [3]
-				1, -- [4]
-				2, -- [5]
-				72, -- [6]
-				3, -- [7]
-			}, -- [52]
-			{
-				236308, -- [1]
-				0, -- [2]
-				8, -- [3]
-				1, -- [4]
-				2, -- [5]
-				72, -- [6]
-				2, -- [7]
-			}, -- [53]
-			{
-				236306, -- [1]
-				0, -- [2]
-				9, -- [3]
-				3, -- [4]
-				2, -- [5]
-				72, -- [6]
-				3, -- [7]
-			}, -- [54]
-			{
-				236316, -- [1]
-				0, -- [2]
-				11, -- [3]
-				2, -- [4]
-				2, -- [5]
-				72, -- [6]
-				1, -- [7]
-			}, -- [55]
-			{
-				236171, -- [1]
-				0, -- [2]
-				9, -- [3]
-				1, -- [4]
-				2, -- [5]
-				72, -- [6]
-				1, -- [7]
-			}, -- [56]
-			{
-				236310, -- [1]
-				0, -- [2]
-				10, -- [3]
-				2, -- [4]
-				2, -- [5]
-				72, -- [6]
-				5, -- [7]
-			}, -- [57]
-			{
-				135053, -- [1]
-				3, -- [2]
-				1, -- [3]
-				1, -- [4]
-				2, -- [5]
-				72, -- [6]
-				3, -- [7]
-			}, -- [58]
-			{
-				136056, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				3, -- [5]
-				73, -- [6]
-				5, -- [7]
-			}, -- [59]
-			{
-				135892, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				3, -- [5]
-				73, -- [6]
-				5, -- [7]
-			}, -- [60]
-			{
-				132326, -- [1]
-				3, -- [2]
-				1, -- [3]
-				3, -- [4]
-				3, -- [5]
-				73, -- [6]
-				3, -- [7]
-			}, -- [61]
-			{
-				132277, -- [1]
-				2, -- [2]
-				1, -- [3]
-				1, -- [4]
-				3, -- [5]
-				73, -- [6]
-				2, -- [7]
-			}, -- [62]
-			{
-				236309, -- [1]
-				3, -- [2]
-				2, -- [3]
-				2, -- [4]
-				3, -- [5]
-				73, -- [6]
-				3, -- [7]
-			}, -- [63]
-			{
-				132363, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				73, -- [6]
-				3, -- [7]
-			}, -- [64]
-			{
-				132353, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				73, -- [6]
-				2, -- [7]
-			}, -- [65]
-			{
-				236318, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				73, -- [6]
-				1, -- [7]
-			}, -- [66]
-			{
-				132357, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				73, -- [6]
-				2, -- [7]
-			}, -- [67]
-			{
-				132362, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				3, -- [5]
-				73, -- [6]
-				2, -- [7]
-			}, -- [68]
-			{
-				132343, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				73, -- [6]
-				2, -- [7]
-			}, -- [69]
-			{
-				132325, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				3, -- [5]
-				73, -- [6]
-				1, -- [7]
-			}, -- [70]
-			{
-				135871, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				73, -- [6]
-				1, -- [7]
-			}, -- [71]
-			{
-				135321, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				73, -- [6]
-				5, -- [7]
-			}, -- [72]
-			{
-				134952, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				73, -- [6]
-				5, -- [7]
-			}, -- [73]
-			{
-				132341, -- [1]
-				0, -- [2]
-				7, -- [3]
-				1, -- [4]
-				3, -- [5]
-				73, -- [6]
-				2, -- [7]
-			}, -- [74]
-			{
-				133123, -- [1]
-				0, -- [2]
-				8, -- [3]
-				2, -- [4]
-				3, -- [5]
-				73, -- [6]
-				3, -- [7]
-			}, -- [75]
-			{
-				132360, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				3, -- [5]
-				73, -- [6]
-				2, -- [7]
-			}, -- [76]
-			{
-				132345, -- [1]
-				0, -- [2]
-				7, -- [3]
-				3, -- [4]
-				3, -- [5]
-				73, -- [6]
-				3, -- [7]
-			}, -- [77]
-			{
-				135291, -- [1]
-				0, -- [2]
-				9, -- [3]
-				2, -- [4]
-				3, -- [5]
-				73, -- [6]
-				1, -- [7]
-			}, -- [78]
-			{
-				236311, -- [1]
-				0, -- [2]
-				8, -- [3]
-				3, -- [4]
-				3, -- [5]
-				73, -- [6]
-				2, -- [7]
-			}, -- [79]
-			{
-				236315, -- [1]
-				0, -- [2]
-				10, -- [3]
-				2, -- [4]
-				3, -- [5]
-				73, -- [6]
-				3, -- [7]
-			}, -- [80]
-			{
-				236312, -- [1]
-				0, -- [2]
-				11, -- [3]
-				2, -- [4]
-				3, -- [5]
-				73, -- [6]
-				1, -- [7]
-			}, -- [81]
-			{
-				236307, -- [1]
-				0, -- [2]
-				9, -- [3]
-				3, -- [4]
-				3, -- [5]
-				73, -- [6]
-				3, -- [7]
-			}, -- [82]
-			{
-				236319, -- [1]
-				0, -- [2]
-				9, -- [3]
-				1, -- [4]
-				3, -- [5]
-				73, -- [6]
-				1, -- [7]
-			}, -- [83]
-			{
-				134976, -- [1]
-				0, -- [2]
-				10, -- [3]
-				3, -- [4]
-				3, -- [5]
-				73, -- [6]
-				2, -- [7]
-			}, -- [84]
-			{
-				132361, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				3, -- [5]
-				73, -- [6]
-				2, -- [7]
-			}, -- [85]
-		},
-		["Player-4465-041BF30E"] = {
-			{
-				135894, -- [1]
-				2, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [1]
-			{
-				136170, -- [1]
-				5, -- [2]
-				2, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				5, -- [7]
-			}, -- [2]
-			{
-				135892, -- [1]
-				3, -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [3]
-			{
-				136129, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				1, -- [5]
-				62, -- [6]
-				5, -- [7]
-			}, -- [4]
-			{
-				136096, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				5, -- [7]
-			}, -- [5]
-			{
-				136116, -- [1]
-				3, -- [2]
-				3, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [6]
-			{
-				136006, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [7]
-			{
-				136153, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [8]
-			{
-				135733, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [9]
-			{
-				136031, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [10]
-			{
-				136048, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [11]
-			{
-				135856, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [12]
-			{
-				136222, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [13]
-			{
-				136208, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [14]
-			{
-				136011, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [15]
-			{
-				135736, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [16]
-			{
-				135732, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [17]
-			{
-				135752, -- [1]
-				0, -- [2]
-				6, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [18]
-			{
-				136096, -- [1]
-				0, -- [2]
-				7, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [19]
-			{
-				135740, -- [1]
-				0, -- [2]
-				8, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				5, -- [7]
-			}, -- [20]
-			{
-				136091, -- [1]
-				0, -- [2]
-				9, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [21]
-			{
-				135734, -- [1]
-				0, -- [2]
-				10, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [22]
-			{
-				236223, -- [1]
-				0, -- [2]
-				8, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [23]
-			{
-				236219, -- [1]
-				0, -- [2]
-				7, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [24]
-			{
-				236225, -- [1]
-				1, -- [2]
-				3, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [25]
-			{
-				236222, -- [1]
-				0, -- [2]
-				10, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [26]
-			{
-				236205, -- [1]
-				0, -- [2]
-				11, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [27]
-			{
-				236221, -- [1]
-				0, -- [2]
-				9, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				5, -- [7]
-			}, -- [28]
-			{
-				135754, -- [1]
-				1, -- [2]
-				3, -- [3]
-				4, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [29]
-			{
-				236226, -- [1]
-				3, -- [2]
-				4, -- [3]
-				4, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [30]
-			{
-				135805, -- [1]
-				2, -- [2]
-				3, -- [3]
-				4, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [31]
-			{
-				135806, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [32]
-			{
-				135827, -- [1]
-				3, -- [2]
-				4, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [33]
-			{
-				135812, -- [1]
-				5, -- [2]
-				1, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				5, -- [7]
-			}, -- [34]
-			{
-				135807, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [35]
-			{
-				135815, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [36]
-			{
-				135808, -- [1]
-				1, -- [2]
-				3, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [37]
-			{
-				135821, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [38]
-			{
-				236228, -- [1]
-				3, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [39]
-			{
-				135903, -- [1]
-				1, -- [2]
-				5, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [40]
-			{
-				136115, -- [1]
-				3, -- [2]
-				5, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [41]
-			{
-				135818, -- [1]
-				5, -- [2]
-				2, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				5, -- [7]
-			}, -- [42]
-			{
-				135817, -- [1]
-				5, -- [2]
-				6, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				5, -- [7]
-			}, -- [43]
-			{
-				135824, -- [1]
-				1, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [44]
-			{
-				135813, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [45]
-			{
-				135820, -- [1]
-				2, -- [2]
-				4, -- [3]
-				4, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [46]
-			{
-				135823, -- [1]
-				3, -- [2]
-				5, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [47]
-			{
-				135788, -- [1]
-				0, -- [2]
-				6, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [48]
-			{
-				135822, -- [1]
-				2, -- [2]
-				7, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [49]
-			{
-				135789, -- [1]
-				3, -- [2]
-				7, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [50]
-			{
-				135812, -- [1]
-				3, -- [2]
-				8, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [51]
-			{
-				134153, -- [1]
-				1, -- [2]
-				9, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [52]
-			{
-				236215, -- [1]
-				0, -- [2]
-				8, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [53]
-			{
-				236216, -- [1]
-				1, -- [2]
-				9, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [54]
-			{
-				236218, -- [1]
-				3, -- [2]
-				9, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [55]
-			{
-				236207, -- [1]
-				5, -- [2]
-				10, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				5, -- [7]
-			}, -- [56]
-			{
-				236220, -- [1]
-				1, -- [2]
-				11, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [57]
-			{
-				135829, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [58]
-			{
-				135846, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				5, -- [7]
-			}, -- [59]
-			{
-				135842, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [60]
-			{
-				135845, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [61]
-			{
-				135854, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [62]
-			{
-				135857, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [63]
-			{
-				135852, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [64]
-			{
-				135864, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [65]
-			{
-				135860, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [66]
-			{
-				135849, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [67]
-			{
-				135836, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [68]
-			{
-				135838, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [69]
-			{
-				135850, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [70]
-			{
-				135988, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [71]
-			{
-				135865, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [72]
-			{
-				135855, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [73]
-			{
-				136141, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [74]
-			{
-				135989, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [75]
-			{
-				135851, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [76]
-			{
-				236209, -- [1]
-				0, -- [2]
-				6, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [77]
-			{
-				135833, -- [1]
-				0, -- [2]
-				7, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				5, -- [7]
-			}, -- [78]
-			{
-				135846, -- [1]
-				0, -- [2]
-				8, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [79]
-			{
-				135862, -- [1]
-				0, -- [2]
-				9, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [80]
-			{
-				236227, -- [1]
-				0, -- [2]
-				8, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [81]
-			{
-				236206, -- [1]
-				0, -- [2]
-				9, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [82]
-			{
-				135862, -- [1]
-				0, -- [2]
-				9, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [83]
-			{
-				236208, -- [1]
-				0, -- [2]
-				10, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				5, -- [7]
-			}, -- [84]
-			{
-				236214, -- [1]
-				0, -- [2]
-				11, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [85]
-			{
-				236224, -- [1]
-				0, -- [2]
-				7, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [86]
-		},
 		["Player-4465-041AC8AA"] = {
 			{
 				136157, -- [1]
@@ -11038,6 +10515,1504 @@ _detalhes_database = {
 				267, -- [6]
 				3, -- [7]
 			}, -- [81]
+		},
+		["Player-4465-041BF30E"] = {
+			{
+				135894, -- [1]
+				2, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+				62, -- [6]
+				2, -- [7]
+			}, -- [1]
+			{
+				136170, -- [1]
+				5, -- [2]
+				2, -- [3]
+				3, -- [4]
+				1, -- [5]
+				62, -- [6]
+				5, -- [7]
+			}, -- [2]
+			{
+				135892, -- [1]
+				3, -- [2]
+				1, -- [3]
+				2, -- [4]
+				1, -- [5]
+				62, -- [6]
+				3, -- [7]
+			}, -- [3]
+			{
+				136129, -- [1]
+				5, -- [2]
+				5, -- [3]
+				4, -- [4]
+				1, -- [5]
+				62, -- [6]
+				5, -- [7]
+			}, -- [4]
+			{
+				136096, -- [1]
+				0, -- [2]
+				1, -- [3]
+				3, -- [4]
+				1, -- [5]
+				62, -- [6]
+				5, -- [7]
+			}, -- [5]
+			{
+				136116, -- [1]
+				3, -- [2]
+				3, -- [3]
+				2, -- [4]
+				1, -- [5]
+				62, -- [6]
+				3, -- [7]
+			}, -- [6]
+			{
+				136006, -- [1]
+				2, -- [2]
+				3, -- [3]
+				1, -- [4]
+				1, -- [5]
+				62, -- [6]
+				2, -- [7]
+			}, -- [7]
+			{
+				136153, -- [1]
+				0, -- [2]
+				4, -- [3]
+				1, -- [4]
+				1, -- [5]
+				62, -- [6]
+				2, -- [7]
+			}, -- [8]
+			{
+				135733, -- [1]
+				0, -- [2]
+				2, -- [3]
+				1, -- [4]
+				1, -- [5]
+				62, -- [6]
+				3, -- [7]
+			}, -- [9]
+			{
+				136031, -- [1]
+				1, -- [2]
+				5, -- [3]
+				2, -- [4]
+				1, -- [5]
+				62, -- [6]
+				1, -- [7]
+			}, -- [10]
+			{
+				136048, -- [1]
+				1, -- [2]
+				7, -- [3]
+				2, -- [4]
+				1, -- [5]
+				62, -- [6]
+				1, -- [7]
+			}, -- [11]
+			{
+				135856, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				1, -- [5]
+				62, -- [6]
+				2, -- [7]
+			}, -- [12]
+			{
+				136222, -- [1]
+				3, -- [2]
+				6, -- [3]
+				2, -- [4]
+				1, -- [5]
+				62, -- [6]
+				3, -- [7]
+			}, -- [13]
+			{
+				136208, -- [1]
+				3, -- [2]
+				4, -- [3]
+				3, -- [4]
+				1, -- [5]
+				62, -- [6]
+				3, -- [7]
+			}, -- [14]
+			{
+				136011, -- [1]
+				0, -- [2]
+				2, -- [3]
+				2, -- [4]
+				1, -- [5]
+				62, -- [6]
+				2, -- [7]
+			}, -- [15]
+			{
+				135736, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
+				1, -- [5]
+				62, -- [6]
+				2, -- [7]
+			}, -- [16]
+			{
+				135732, -- [1]
+				2, -- [2]
+				6, -- [3]
+				3, -- [4]
+				1, -- [5]
+				62, -- [6]
+				2, -- [7]
+			}, -- [17]
+			{
+				135752, -- [1]
+				0, -- [2]
+				6, -- [3]
+				1, -- [4]
+				1, -- [5]
+				62, -- [6]
+				3, -- [7]
+			}, -- [18]
+			{
+				136096, -- [1]
+				3, -- [2]
+				7, -- [3]
+				1, -- [4]
+				1, -- [5]
+				62, -- [6]
+				3, -- [7]
+			}, -- [19]
+			{
+				135740, -- [1]
+				5, -- [2]
+				8, -- [3]
+				3, -- [4]
+				1, -- [5]
+				62, -- [6]
+				5, -- [7]
+			}, -- [20]
+			{
+				136091, -- [1]
+				0, -- [2]
+				9, -- [3]
+				2, -- [4]
+				1, -- [5]
+				62, -- [6]
+				1, -- [7]
+			}, -- [21]
+			{
+				135734, -- [1]
+				2, -- [2]
+				10, -- [3]
+				3, -- [4]
+				1, -- [5]
+				62, -- [6]
+				2, -- [7]
+			}, -- [22]
+			{
+				236223, -- [1]
+				2, -- [2]
+				8, -- [3]
+				2, -- [4]
+				1, -- [5]
+				62, -- [6]
+				2, -- [7]
+			}, -- [23]
+			{
+				236219, -- [1]
+				0, -- [2]
+				7, -- [3]
+				3, -- [4]
+				1, -- [5]
+				62, -- [6]
+				3, -- [7]
+			}, -- [24]
+			{
+				236225, -- [1]
+				1, -- [2]
+				3, -- [3]
+				3, -- [4]
+				1, -- [5]
+				62, -- [6]
+				3, -- [7]
+			}, -- [25]
+			{
+				236222, -- [1]
+				3, -- [2]
+				10, -- [3]
+				2, -- [4]
+				1, -- [5]
+				62, -- [6]
+				3, -- [7]
+			}, -- [26]
+			{
+				236205, -- [1]
+				1, -- [2]
+				11, -- [3]
+				2, -- [4]
+				1, -- [5]
+				62, -- [6]
+				1, -- [7]
+			}, -- [27]
+			{
+				236221, -- [1]
+				5, -- [2]
+				9, -- [3]
+				3, -- [4]
+				1, -- [5]
+				62, -- [6]
+				5, -- [7]
+			}, -- [28]
+			{
+				135754, -- [1]
+				1, -- [2]
+				3, -- [3]
+				4, -- [4]
+				1, -- [5]
+				62, -- [6]
+				1, -- [7]
+			}, -- [29]
+			{
+				236226, -- [1]
+				3, -- [2]
+				4, -- [3]
+				4, -- [4]
+				1, -- [5]
+				62, -- [6]
+				3, -- [7]
+			}, -- [30]
+			{
+				135805, -- [1]
+				0, -- [2]
+				3, -- [3]
+				4, -- [4]
+				2, -- [5]
+				63, -- [6]
+				2, -- [7]
+			}, -- [31]
+			{
+				135806, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				2, -- [5]
+				63, -- [6]
+				2, -- [7]
+			}, -- [32]
+			{
+				135827, -- [1]
+				0, -- [2]
+				4, -- [3]
+				1, -- [4]
+				2, -- [5]
+				63, -- [6]
+				3, -- [7]
+			}, -- [33]
+			{
+				135812, -- [1]
+				0, -- [2]
+				1, -- [3]
+				3, -- [4]
+				2, -- [5]
+				63, -- [6]
+				5, -- [7]
+			}, -- [34]
+			{
+				135807, -- [1]
+				0, -- [2]
+				1, -- [3]
+				1, -- [4]
+				2, -- [5]
+				63, -- [6]
+				2, -- [7]
+			}, -- [35]
+			{
+				135815, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
+				2, -- [5]
+				63, -- [6]
+				2, -- [7]
+			}, -- [36]
+			{
+				135808, -- [1]
+				0, -- [2]
+				3, -- [3]
+				3, -- [4]
+				2, -- [5]
+				63, -- [6]
+				1, -- [7]
+			}, -- [37]
+			{
+				135821, -- [1]
+				0, -- [2]
+				3, -- [3]
+				2, -- [4]
+				2, -- [5]
+				63, -- [6]
+				3, -- [7]
+			}, -- [38]
+			{
+				236228, -- [1]
+				0, -- [2]
+				2, -- [3]
+				3, -- [4]
+				2, -- [5]
+				63, -- [6]
+				3, -- [7]
+			}, -- [39]
+			{
+				135903, -- [1]
+				0, -- [2]
+				5, -- [3]
+				3, -- [4]
+				2, -- [5]
+				63, -- [6]
+				1, -- [7]
+			}, -- [40]
+			{
+				136115, -- [1]
+				0, -- [2]
+				5, -- [3]
+				2, -- [4]
+				2, -- [5]
+				63, -- [6]
+				3, -- [7]
+			}, -- [41]
+			{
+				135818, -- [1]
+				0, -- [2]
+				2, -- [3]
+				1, -- [4]
+				2, -- [5]
+				63, -- [6]
+				5, -- [7]
+			}, -- [42]
+			{
+				135817, -- [1]
+				0, -- [2]
+				6, -- [3]
+				3, -- [4]
+				2, -- [5]
+				63, -- [6]
+				5, -- [7]
+			}, -- [43]
+			{
+				135824, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				2, -- [5]
+				63, -- [6]
+				1, -- [7]
+			}, -- [44]
+			{
+				135813, -- [1]
+				3, -- [2]
+				1, -- [3]
+				2, -- [4]
+				2, -- [5]
+				63, -- [6]
+				3, -- [7]
+			}, -- [45]
+			{
+				135820, -- [1]
+				0, -- [2]
+				4, -- [3]
+				4, -- [4]
+				2, -- [5]
+				63, -- [6]
+				3, -- [7]
+			}, -- [46]
+			{
+				135823, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
+				2, -- [5]
+				63, -- [6]
+				3, -- [7]
+			}, -- [47]
+			{
+				135788, -- [1]
+				0, -- [2]
+				6, -- [3]
+				1, -- [4]
+				2, -- [5]
+				63, -- [6]
+				2, -- [7]
+			}, -- [48]
+			{
+				135822, -- [1]
+				0, -- [2]
+				7, -- [3]
+				3, -- [4]
+				2, -- [5]
+				63, -- [6]
+				2, -- [7]
+			}, -- [49]
+			{
+				135789, -- [1]
+				0, -- [2]
+				7, -- [3]
+				1, -- [4]
+				2, -- [5]
+				63, -- [6]
+				3, -- [7]
+			}, -- [50]
+			{
+				135812, -- [1]
+				0, -- [2]
+				8, -- [3]
+				3, -- [4]
+				2, -- [5]
+				63, -- [6]
+				3, -- [7]
+			}, -- [51]
+			{
+				134153, -- [1]
+				0, -- [2]
+				9, -- [3]
+				2, -- [4]
+				2, -- [5]
+				63, -- [6]
+				1, -- [7]
+			}, -- [52]
+			{
+				236215, -- [1]
+				0, -- [2]
+				8, -- [3]
+				1, -- [4]
+				2, -- [5]
+				63, -- [6]
+				2, -- [7]
+			}, -- [53]
+			{
+				236216, -- [1]
+				0, -- [2]
+				9, -- [3]
+				1, -- [4]
+				2, -- [5]
+				63, -- [6]
+				2, -- [7]
+			}, -- [54]
+			{
+				236218, -- [1]
+				0, -- [2]
+				9, -- [3]
+				3, -- [4]
+				2, -- [5]
+				63, -- [6]
+				3, -- [7]
+			}, -- [55]
+			{
+				236207, -- [1]
+				0, -- [2]
+				10, -- [3]
+				2, -- [4]
+				2, -- [5]
+				63, -- [6]
+				5, -- [7]
+			}, -- [56]
+			{
+				236220, -- [1]
+				0, -- [2]
+				11, -- [3]
+				2, -- [4]
+				2, -- [5]
+				63, -- [6]
+				1, -- [7]
+			}, -- [57]
+			{
+				135829, -- [1]
+				0, -- [2]
+				2, -- [3]
+				2, -- [4]
+				2, -- [5]
+				63, -- [6]
+				2, -- [7]
+			}, -- [58]
+			{
+				135846, -- [1]
+				2, -- [2]
+				1, -- [3]
+				2, -- [4]
+				3, -- [5]
+				64, -- [6]
+				5, -- [7]
+			}, -- [59]
+			{
+				135842, -- [1]
+				0, -- [2]
+				1, -- [3]
+				1, -- [4]
+				3, -- [5]
+				64, -- [6]
+				3, -- [7]
+			}, -- [60]
+			{
+				135845, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
+				3, -- [5]
+				64, -- [6]
+				3, -- [7]
+			}, -- [61]
+			{
+				135854, -- [1]
+				3, -- [2]
+				1, -- [3]
+				3, -- [4]
+				3, -- [5]
+				64, -- [6]
+				3, -- [7]
+			}, -- [62]
+			{
+				135857, -- [1]
+				0, -- [2]
+				3, -- [3]
+				3, -- [4]
+				3, -- [5]
+				64, -- [6]
+				3, -- [7]
+			}, -- [63]
+			{
+				135852, -- [1]
+				0, -- [2]
+				5, -- [3]
+				3, -- [4]
+				3, -- [5]
+				64, -- [6]
+				3, -- [7]
+			}, -- [64]
+			{
+				135864, -- [1]
+				0, -- [2]
+				2, -- [3]
+				4, -- [4]
+				3, -- [5]
+				64, -- [6]
+				3, -- [7]
+			}, -- [65]
+			{
+				135860, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				3, -- [5]
+				64, -- [6]
+				3, -- [7]
+			}, -- [66]
+			{
+				135849, -- [1]
+				0, -- [2]
+				4, -- [3]
+				3, -- [4]
+				3, -- [5]
+				64, -- [6]
+				3, -- [7]
+			}, -- [67]
+			{
+				135836, -- [1]
+				0, -- [2]
+				6, -- [3]
+				3, -- [4]
+				3, -- [5]
+				64, -- [6]
+				3, -- [7]
+			}, -- [68]
+			{
+				135838, -- [1]
+				1, -- [2]
+				3, -- [3]
+				2, -- [4]
+				3, -- [5]
+				64, -- [6]
+				1, -- [7]
+			}, -- [69]
+			{
+				135850, -- [1]
+				0, -- [2]
+				2, -- [3]
+				2, -- [4]
+				3, -- [5]
+				64, -- [6]
+				2, -- [7]
+			}, -- [70]
+			{
+				135988, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				3, -- [5]
+				64, -- [6]
+				1, -- [7]
+			}, -- [71]
+			{
+				135865, -- [1]
+				0, -- [2]
+				5, -- [3]
+				2, -- [4]
+				3, -- [5]
+				64, -- [6]
+				1, -- [7]
+			}, -- [72]
+			{
+				135855, -- [1]
+				3, -- [2]
+				2, -- [3]
+				1, -- [4]
+				3, -- [5]
+				64, -- [6]
+				3, -- [7]
+			}, -- [73]
+			{
+				136141, -- [1]
+				0, -- [2]
+				4, -- [3]
+				1, -- [4]
+				3, -- [5]
+				64, -- [6]
+				2, -- [7]
+			}, -- [74]
+			{
+				135989, -- [1]
+				3, -- [2]
+				2, -- [3]
+				3, -- [4]
+				3, -- [5]
+				64, -- [6]
+				3, -- [7]
+			}, -- [75]
+			{
+				135851, -- [1]
+				0, -- [2]
+				5, -- [3]
+				4, -- [4]
+				3, -- [5]
+				64, -- [6]
+				3, -- [7]
+			}, -- [76]
+			{
+				236209, -- [1]
+				0, -- [2]
+				6, -- [3]
+				1, -- [4]
+				3, -- [5]
+				64, -- [6]
+				2, -- [7]
+			}, -- [77]
+			{
+				135833, -- [1]
+				0, -- [2]
+				7, -- [3]
+				3, -- [4]
+				3, -- [5]
+				64, -- [6]
+				5, -- [7]
+			}, -- [78]
+			{
+				135846, -- [1]
+				0, -- [2]
+				8, -- [3]
+				2, -- [4]
+				3, -- [5]
+				64, -- [6]
+				2, -- [7]
+			}, -- [79]
+			{
+				135862, -- [1]
+				0, -- [2]
+				9, -- [3]
+				2, -- [4]
+				3, -- [5]
+				64, -- [6]
+				1, -- [7]
+			}, -- [80]
+			{
+				236227, -- [1]
+				0, -- [2]
+				8, -- [3]
+				3, -- [4]
+				3, -- [5]
+				64, -- [6]
+				2, -- [7]
+			}, -- [81]
+			{
+				236206, -- [1]
+				0, -- [2]
+				9, -- [3]
+				1, -- [4]
+				3, -- [5]
+				64, -- [6]
+				3, -- [7]
+			}, -- [82]
+			{
+				135862, -- [1]
+				0, -- [2]
+				9, -- [3]
+				3, -- [4]
+				3, -- [5]
+				64, -- [6]
+				3, -- [7]
+			}, -- [83]
+			{
+				236208, -- [1]
+				0, -- [2]
+				10, -- [3]
+				2, -- [4]
+				3, -- [5]
+				64, -- [6]
+				5, -- [7]
+			}, -- [84]
+			{
+				236214, -- [1]
+				0, -- [2]
+				11, -- [3]
+				2, -- [4]
+				3, -- [5]
+				64, -- [6]
+				1, -- [7]
+			}, -- [85]
+			{
+				236224, -- [1]
+				0, -- [2]
+				7, -- [3]
+				1, -- [4]
+				3, -- [5]
+				64, -- [6]
+				2, -- [7]
+			}, -- [86]
+		},
+		["Player-4465-041BF036"] = {
+			{
+				135817, -- [1]
+				3, -- [2]
+				2, -- [3]
+				1, -- [4]
+				1, -- [5]
+				262, -- [6]
+				3, -- [7]
+			}, -- [1]
+			{
+				136014, -- [1]
+				1, -- [2]
+				5, -- [3]
+				2, -- [4]
+				1, -- [5]
+				262, -- [6]
+				1, -- [7]
+			}, -- [2]
+			{
+				135807, -- [1]
+				5, -- [2]
+				1, -- [3]
+				3, -- [4]
+				1, -- [5]
+				262, -- [6]
+				5, -- [7]
+			}, -- [3]
+			{
+				136116, -- [1]
+				0, -- [2]
+				1, -- [3]
+				2, -- [4]
+				1, -- [5]
+				262, -- [6]
+				5, -- [7]
+			}, -- [4]
+			{
+				135830, -- [1]
+				5, -- [2]
+				3, -- [3]
+				3, -- [4]
+				1, -- [5]
+				262, -- [6]
+				5, -- [7]
+			}, -- [5]
+			{
+				135824, -- [1]
+				0, -- [2]
+				4, -- [3]
+				1, -- [4]
+				1, -- [5]
+				262, -- [6]
+				2, -- [7]
+			}, -- [6]
+			{
+				136115, -- [1]
+				1, -- [2]
+				7, -- [3]
+				2, -- [4]
+				1, -- [5]
+				262, -- [6]
+				1, -- [7]
+			}, -- [7]
+			{
+				136170, -- [1]
+				1, -- [2]
+				3, -- [3]
+				2, -- [4]
+				1, -- [5]
+				262, -- [6]
+				1, -- [7]
+			}, -- [8]
+			{
+				135850, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
+				1, -- [5]
+				262, -- [6]
+				5, -- [7]
+			}, -- [9]
+			{
+				135990, -- [1]
+				5, -- [2]
+				6, -- [3]
+				3, -- [4]
+				1, -- [5]
+				262, -- [6]
+				5, -- [7]
+			}, -- [10]
+			{
+				136094, -- [1]
+				3, -- [2]
+				2, -- [3]
+				2, -- [4]
+				1, -- [5]
+				262, -- [6]
+				3, -- [7]
+			}, -- [11]
+			{
+				136099, -- [1]
+				2, -- [2]
+				5, -- [3]
+				1, -- [4]
+				1, -- [5]
+				262, -- [6]
+				2, -- [7]
+			}, -- [12]
+			{
+				136213, -- [1]
+				3, -- [2]
+				4, -- [3]
+				4, -- [4]
+				1, -- [5]
+				262, -- [6]
+				3, -- [7]
+			}, -- [13]
+			{
+				135791, -- [1]
+				0, -- [2]
+				2, -- [3]
+				3, -- [4]
+				1, -- [5]
+				262, -- [6]
+				3, -- [7]
+			}, -- [14]
+			{
+				136111, -- [1]
+				3, -- [2]
+				5, -- [3]
+				4, -- [4]
+				1, -- [5]
+				262, -- [6]
+				3, -- [7]
+			}, -- [15]
+			{
+				136028, -- [1]
+				1, -- [2]
+				6, -- [3]
+				1, -- [4]
+				1, -- [5]
+				262, -- [6]
+				3, -- [7]
+			}, -- [16]
+			{
+				136050, -- [1]
+				3, -- [2]
+				8, -- [3]
+				3, -- [4]
+				1, -- [5]
+				262, -- [6]
+				3, -- [7]
+			}, -- [17]
+			{
+				135829, -- [1]
+				1, -- [2]
+				9, -- [3]
+				2, -- [4]
+				1, -- [5]
+				262, -- [6]
+				1, -- [7]
+			}, -- [18]
+			{
+				237576, -- [1]
+				2, -- [2]
+				8, -- [3]
+				2, -- [4]
+				1, -- [5]
+				262, -- [6]
+				2, -- [7]
+			}, -- [19]
+			{
+				237572, -- [1]
+				3, -- [2]
+				9, -- [3]
+				1, -- [4]
+				1, -- [5]
+				262, -- [6]
+				3, -- [7]
+			}, -- [20]
+			{
+				237583, -- [1]
+				3, -- [2]
+				9, -- [3]
+				3, -- [4]
+				1, -- [5]
+				262, -- [6]
+				3, -- [7]
+			}, -- [21]
+			{
+				237588, -- [1]
+				3, -- [2]
+				7, -- [3]
+				3, -- [4]
+				1, -- [5]
+				262, -- [6]
+				3, -- [7]
+			}, -- [22]
+			{
+				237589, -- [1]
+				1, -- [2]
+				11, -- [3]
+				2, -- [4]
+				1, -- [5]
+				262, -- [6]
+				1, -- [7]
+			}, -- [23]
+			{
+				136234, -- [1]
+				5, -- [2]
+				10, -- [3]
+				2, -- [4]
+				1, -- [5]
+				262, -- [6]
+				5, -- [7]
+			}, -- [24]
+			{
+				135782, -- [1]
+				2, -- [2]
+				8, -- [3]
+				1, -- [4]
+				1, -- [5]
+				262, -- [6]
+				2, -- [7]
+			}, -- [25]
+			{
+				136056, -- [1]
+				0, -- [2]
+				3, -- [3]
+				4, -- [4]
+				2, -- [5]
+				263, -- [6]
+				3, -- [7]
+			}, -- [26]
+			{
+				132152, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				2, -- [5]
+				263, -- [6]
+				5, -- [7]
+			}, -- [27]
+			{
+				136095, -- [1]
+				0, -- [2]
+				2, -- [3]
+				3, -- [4]
+				2, -- [5]
+				263, -- [6]
+				2, -- [7]
+			}, -- [28]
+			{
+				136051, -- [1]
+				0, -- [2]
+				2, -- [3]
+				4, -- [4]
+				2, -- [5]
+				263, -- [6]
+				3, -- [7]
+			}, -- [29]
+			{
+				136098, -- [1]
+				0, -- [2]
+				2, -- [3]
+				1, -- [4]
+				2, -- [5]
+				263, -- [6]
+				2, -- [7]
+			}, -- [30]
+			{
+				136023, -- [1]
+				0, -- [2]
+				1, -- [3]
+				1, -- [4]
+				2, -- [5]
+				263, -- [6]
+				3, -- [7]
+			}, -- [31]
+			{
+				135814, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
+				2, -- [5]
+				263, -- [6]
+				3, -- [7]
+			}, -- [32]
+			{
+				132325, -- [1]
+				0, -- [2]
+				2, -- [3]
+				2, -- [4]
+				2, -- [5]
+				263, -- [6]
+				5, -- [7]
+			}, -- [33]
+			{
+				136162, -- [1]
+				0, -- [2]
+				1, -- [3]
+				3, -- [4]
+				2, -- [5]
+				263, -- [6]
+				5, -- [7]
+			}, -- [34]
+			{
+				135892, -- [1]
+				0, -- [2]
+				4, -- [3]
+				3, -- [4]
+				2, -- [5]
+				263, -- [6]
+				5, -- [7]
+			}, -- [35]
+			{
+				132269, -- [1]
+				0, -- [2]
+				5, -- [3]
+				2, -- [4]
+				2, -- [5]
+				263, -- [6]
+				1, -- [7]
+			}, -- [36]
+			{
+				136027, -- [1]
+				0, -- [2]
+				3, -- [3]
+				3, -- [4]
+				2, -- [5]
+				263, -- [6]
+				1, -- [7]
+			}, -- [37]
+			{
+				132314, -- [1]
+				0, -- [2]
+				7, -- [3]
+				3, -- [4]
+				2, -- [5]
+				263, -- [6]
+				1, -- [7]
+			}, -- [38]
+			{
+				132215, -- [1]
+				0, -- [2]
+				6, -- [3]
+				3, -- [4]
+				2, -- [5]
+				263, -- [6]
+				3, -- [7]
+			}, -- [39]
+			{
+				136114, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
+				2, -- [5]
+				263, -- [6]
+				2, -- [7]
+			}, -- [40]
+			{
+				136110, -- [1]
+				0, -- [2]
+				6, -- [3]
+				1, -- [4]
+				2, -- [5]
+				263, -- [6]
+				3, -- [7]
+			}, -- [41]
+			{
+				132147, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				2, -- [5]
+				263, -- [6]
+				1, -- [7]
+			}, -- [42]
+			{
+				136055, -- [1]
+				0, -- [2]
+				9, -- [3]
+				1, -- [4]
+				2, -- [5]
+				263, -- [6]
+				3, -- [7]
+			}, -- [43]
+			{
+				132148, -- [1]
+				0, -- [2]
+				7, -- [3]
+				1, -- [4]
+				2, -- [5]
+				263, -- [6]
+				3, -- [7]
+			}, -- [44]
+			{
+				136088, -- [1]
+				0, -- [2]
+				9, -- [3]
+				2, -- [4]
+				2, -- [5]
+				263, -- [6]
+				1, -- [7]
+			}, -- [45]
+			{
+				237581, -- [1]
+				0, -- [2]
+				8, -- [3]
+				3, -- [4]
+				2, -- [5]
+				263, -- [6]
+				2, -- [7]
+			}, -- [46]
+			{
+				237587, -- [1]
+				0, -- [2]
+				8, -- [3]
+				1, -- [4]
+				2, -- [5]
+				263, -- [6]
+				3, -- [7]
+			}, -- [47]
+			{
+				136024, -- [1]
+				0, -- [2]
+				9, -- [3]
+				3, -- [4]
+				2, -- [5]
+				263, -- [6]
+				2, -- [7]
+			}, -- [48]
+			{
+				237584, -- [1]
+				0, -- [2]
+				10, -- [3]
+				2, -- [4]
+				2, -- [5]
+				263, -- [6]
+				5, -- [7]
+			}, -- [49]
+			{
+				237577, -- [1]
+				0, -- [2]
+				11, -- [3]
+				2, -- [4]
+				2, -- [5]
+				263, -- [6]
+				1, -- [7]
+			}, -- [50]
+			{
+				136012, -- [1]
+				0, -- [2]
+				5, -- [3]
+				3, -- [4]
+				2, -- [5]
+				263, -- [6]
+				3, -- [7]
+			}, -- [51]
+			{
+				136097, -- [1]
+				2, -- [2]
+				1, -- [3]
+				2, -- [4]
+				2, -- [5]
+				263, -- [6]
+				2, -- [7]
+			}, -- [52]
+			{
+				236289, -- [1]
+				0, -- [2]
+				8, -- [3]
+				2, -- [4]
+				2, -- [5]
+				263, -- [6]
+				1, -- [7]
+			}, -- [53]
+			{
+				135776, -- [1]
+				0, -- [2]
+				6, -- [3]
+				4, -- [4]
+				2, -- [5]
+				263, -- [6]
+				2, -- [7]
+			}, -- [54]
+			{
+				136109, -- [1]
+				0, -- [2]
+				3, -- [3]
+				4, -- [4]
+				3, -- [5]
+				264, -- [6]
+				3, -- [7]
+			}, -- [55]
+			{
+				135845, -- [1]
+				0, -- [2]
+				3, -- [3]
+				3, -- [4]
+				3, -- [5]
+				264, -- [6]
+				1, -- [7]
+			}, -- [56]
+			{
+				132315, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
+				3, -- [5]
+				264, -- [6]
+				3, -- [7]
+			}, -- [57]
+			{
+				136052, -- [1]
+				0, -- [2]
+				1, -- [3]
+				2, -- [4]
+				3, -- [5]
+				264, -- [6]
+				5, -- [7]
+			}, -- [58]
+			{
+				136043, -- [1]
+				3, -- [2]
+				3, -- [3]
+				2, -- [4]
+				3, -- [5]
+				264, -- [6]
+				3, -- [7]
+			}, -- [59]
+			{
+				136053, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				3, -- [5]
+				264, -- [6]
+				3, -- [7]
+			}, -- [60]
+			{
+				136080, -- [1]
+				0, -- [2]
+				2, -- [3]
+				1, -- [4]
+				3, -- [5]
+				264, -- [6]
+				2, -- [7]
+			}, -- [61]
+			{
+				135861, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				3, -- [5]
+				264, -- [6]
+				1, -- [7]
+			}, -- [62]
+			{
+				136076, -- [1]
+				0, -- [2]
+				5, -- [3]
+				3, -- [4]
+				3, -- [5]
+				264, -- [6]
+				1, -- [7]
+			}, -- [63]
+			{
+				135865, -- [1]
+				0, -- [2]
+				6, -- [3]
+				3, -- [4]
+				3, -- [5]
+				264, -- [6]
+				5, -- [7]
+			}, -- [64]
+			{
+				135859, -- [1]
+				2, -- [2]
+				2, -- [3]
+				3, -- [4]
+				3, -- [5]
+				264, -- [6]
+				5, -- [7]
+			}, -- [65]
+			{
+				136107, -- [1]
+				0, -- [2]
+				4, -- [3]
+				3, -- [4]
+				3, -- [5]
+				264, -- [6]
+				5, -- [7]
+			}, -- [66]
+			{
+				136057, -- [1]
+				5, -- [2]
+				1, -- [3]
+				3, -- [4]
+				3, -- [5]
+				264, -- [6]
+				5, -- [7]
+			}, -- [67]
+			{
+				136041, -- [1]
+				3, -- [2]
+				2, -- [3]
+				2, -- [4]
+				3, -- [5]
+				264, -- [6]
+				3, -- [7]
+			}, -- [68]
+			{
+				136044, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
+				3, -- [5]
+				264, -- [6]
+				3, -- [7]
+			}, -- [69]
+			{
+				136035, -- [1]
+				0, -- [2]
+				5, -- [3]
+				4, -- [4]
+				3, -- [5]
+				264, -- [6]
+				3, -- [7]
+			}, -- [70]
+			{
+				136059, -- [1]
+				0, -- [2]
+				8, -- [3]
+				3, -- [4]
+				3, -- [5]
+				264, -- [6]
+				3, -- [7]
+			}, -- [71]
+			{
+				136042, -- [1]
+				0, -- [2]
+				8, -- [3]
+				2, -- [4]
+				3, -- [5]
+				264, -- [6]
+				2, -- [7]
+			}, -- [72]
+			{
+				136089, -- [1]
+				0, -- [2]
+				9, -- [3]
+				2, -- [4]
+				3, -- [5]
+				264, -- [6]
+				1, -- [7]
+			}, -- [73]
+			{
+				136060, -- [1]
+				0, -- [2]
+				7, -- [3]
+				1, -- [4]
+				3, -- [5]
+				264, -- [6]
+				5, -- [7]
+			}, -- [74]
+			{
+				136089, -- [1]
+				0, -- [2]
+				9, -- [3]
+				3, -- [4]
+				3, -- [5]
+				264, -- [6]
+				2, -- [7]
+			}, -- [75]
+			{
+				237573, -- [1]
+				0, -- [2]
+				8, -- [3]
+				1, -- [4]
+				3, -- [5]
+				264, -- [6]
+				2, -- [7]
+			}, -- [76]
+			{
+				237571, -- [1]
+				0, -- [2]
+				9, -- [3]
+				1, -- [4]
+				3, -- [5]
+				264, -- [6]
+				3, -- [7]
+			}, -- [77]
+			{
+				237590, -- [1]
+				0, -- [2]
+				10, -- [3]
+				2, -- [4]
+				3, -- [5]
+				264, -- [6]
+				5, -- [7]
+			}, -- [78]
+			{
+				252995, -- [1]
+				0, -- [2]
+				11, -- [3]
+				2, -- [4]
+				3, -- [5]
+				264, -- [6]
+				1, -- [7]
+			}, -- [79]
+			{
+				236288, -- [1]
+				0, -- [2]
+				7, -- [3]
+				3, -- [4]
+				3, -- [5]
+				264, -- [6]
+				1, -- [7]
+			}, -- [80]
 		},
 		["Player-4465-041BF30D"] = {
 			{
@@ -14071,709 +15046,772 @@ _detalhes_database = {
 				1, -- [7]
 			}, -- [80]
 		},
-		["Player-4465-0258F376"] = {
+		["Player-4465-041A54E4"] = {
 			{
-				135736, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
+				132090, -- [1]
+				3, -- [2]
+				3, -- [3]
+				4, -- [4]
 				1, -- [5]
-				65, -- [6]
-				5, -- [7]
+				71, -- [6]
+				3, -- [7]
 			}, -- [1]
 			{
-				135915, -- [1]
+				135328, -- [1]
 				0, -- [2]
 				5, -- [3]
-				2, -- [4]
+				4, -- [4]
 				1, -- [5]
-				65, -- [6]
-				1, -- [7]
+				71, -- [6]
+				5, -- [7]
 			}, -- [2]
 			{
-				135872, -- [1]
-				0, -- [2]
-				3, -- [3]
+				132282, -- [1]
+				3, -- [2]
+				1, -- [3]
 				1, -- [4]
 				1, -- [5]
-				65, -- [6]
-				1, -- [7]
+				71, -- [6]
+				3, -- [7]
 			}, -- [3]
 			{
-				135928, -- [1]
+				133476, -- [1]
 				0, -- [2]
-				3, -- [3]
+				5, -- [3]
 				3, -- [4]
 				1, -- [5]
-				65, -- [6]
-				2, -- [7]
+				71, -- [6]
+				5, -- [7]
 			}, -- [4]
 			{
-				135920, -- [1]
-				0, -- [2]
+				132337, -- [1]
+				2, -- [2]
 				2, -- [3]
 				1, -- [4]
 				1, -- [5]
-				65, -- [6]
-				3, -- [7]
+				71, -- [6]
+				2, -- [7]
 			}, -- [5]
 			{
-				135970, -- [1]
-				0, -- [2]
-				4, -- [3]
+				132155, -- [1]
+				2, -- [2]
+				1, -- [3]
 				3, -- [4]
 				1, -- [5]
-				65, -- [6]
+				71, -- [6]
 				2, -- [7]
 			}, -- [6]
 			{
-				136090, -- [1]
+				136031, -- [1]
 				0, -- [2]
 				2, -- [3]
-				2, -- [4]
+				3, -- [4]
 				1, -- [5]
-				65, -- [6]
-				5, -- [7]
+				71, -- [6]
+				3, -- [7]
 			}, -- [7]
 			{
-				135933, -- [1]
+				132316, -- [1]
 				0, -- [2]
-				4, -- [3]
-				1, -- [4]
+				6, -- [3]
+				3, -- [4]
 				1, -- [5]
-				65, -- [6]
+				71, -- [6]
 				3, -- [7]
 			}, -- [8]
 			{
-				135913, -- [1]
+				132269, -- [1]
 				0, -- [2]
-				3, -- [3]
+				1, -- [3]
 				2, -- [4]
 				1, -- [5]
-				65, -- [6]
+				71, -- [6]
 				5, -- [7]
 			}, -- [9]
 			{
-				132325, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
+				135275, -- [1]
+				2, -- [2]
+				3, -- [3]
+				1, -- [4]
 				1, -- [5]
-				65, -- [6]
-				5, -- [7]
+				71, -- [6]
+				2, -- [7]
 			}, -- [10]
 			{
-				135917, -- [1]
-				0, -- [2]
+				132397, -- [1]
+				5, -- [2]
 				5, -- [3]
-				3, -- [4]
+				1, -- [4]
 				1, -- [5]
-				65, -- [6]
-				3, -- [7]
+				71, -- [6]
+				5, -- [7]
 			}, -- [11]
 			{
-				135972, -- [1]
-				0, -- [2]
-				7, -- [3]
+				132306, -- [1]
+				1, -- [2]
+				5, -- [3]
 				2, -- [4]
 				1, -- [5]
-				65, -- [6]
+				71, -- [6]
 				1, -- [7]
 			}, -- [12]
 			{
-				135938, -- [1]
-				0, -- [2]
+				132367, -- [1]
+				1, -- [2]
 				6, -- [3]
-				3, -- [4]
+				1, -- [4]
 				1, -- [5]
-				65, -- [6]
-				5, -- [7]
+				71, -- [6]
+				2, -- [7]
 			}, -- [13]
 			{
-				135984, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
+				132355, -- [1]
+				1, -- [2]
+				7, -- [3]
+				2, -- [4]
 				1, -- [5]
-				65, -- [6]
-				2, -- [7]
+				71, -- [6]
+				1, -- [7]
 			}, -- [14]
 			{
-				135948, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
+				132400, -- [1]
+				3, -- [2]
+				4, -- [3]
+				2, -- [4]
 				1, -- [5]
-				65, -- [6]
-				2, -- [7]
+				71, -- [6]
+				3, -- [7]
 			}, -- [15]
 			{
-				135950, -- [1]
+				135881, -- [1]
 				0, -- [2]
-				6, -- [3]
-				1, -- [4]
+				3, -- [3]
+				2, -- [4]
 				1, -- [5]
-				65, -- [6]
-				2, -- [7]
+				71, -- [6]
+				1, -- [7]
 			}, -- [16]
 			{
-				135876, -- [1]
-				0, -- [2]
-				7, -- [3]
-				3, -- [4]
+				135995, -- [1]
+				3, -- [2]
+				2, -- [3]
+				2, -- [4]
 				1, -- [5]
-				65, -- [6]
+				71, -- [6]
 				3, -- [7]
 			}, -- [17]
 			{
-				135931, -- [1]
+				132312, -- [1]
+				2, -- [2]
+				3, -- [3]
+				3, -- [4]
+				1, -- [5]
+				71, -- [6]
+				2, -- [7]
+			}, -- [18]
+			{
+				132344, -- [1]
+				1, -- [2]
+				9, -- [3]
+				2, -- [4]
+				1, -- [5]
+				71, -- [6]
+				1, -- [7]
+			}, -- [19]
+			{
+				132346, -- [1]
+				3, -- [2]
+				9, -- [3]
+				1, -- [4]
+				1, -- [5]
+				71, -- [6]
+				3, -- [7]
+			}, -- [20]
+			{
+				132175, -- [1]
 				0, -- [2]
 				7, -- [3]
 				1, -- [4]
 				1, -- [5]
-				65, -- [6]
-				3, -- [7]
-			}, -- [18]
-			{
-				135921, -- [1]
-				0, -- [2]
-				8, -- [3]
-				3, -- [4]
-				1, -- [5]
-				65, -- [6]
-				5, -- [7]
-			}, -- [19]
-			{
-				135895, -- [1]
-				0, -- [2]
-				9, -- [3]
-				1, -- [4]
-				1, -- [5]
-				65, -- [6]
-				1, -- [7]
-			}, -- [20]
-			{
-				236261, -- [1]
-				0, -- [2]
-				8, -- [3]
-				1, -- [4]
-				1, -- [5]
-				65, -- [6]
-				3, -- [7]
+				71, -- [6]
+				2, -- [7]
 			}, -- [21]
 			{
-				236251, -- [1]
-				0, -- [2]
-				10, -- [3]
+				132334, -- [1]
+				2, -- [2]
+				9, -- [3]
 				3, -- [4]
 				1, -- [5]
-				65, -- [6]
+				71, -- [6]
 				2, -- [7]
 			}, -- [22]
 			{
-				236247, -- [1]
-				0, -- [2]
-				11, -- [3]
+				132355, -- [1]
+				3, -- [2]
+				8, -- [3]
 				2, -- [4]
 				1, -- [5]
-				65, -- [6]
-				1, -- [7]
+				71, -- [6]
+				3, -- [7]
 			}, -- [23]
 			{
-				236254, -- [1]
-				0, -- [2]
-				10, -- [3]
-				2, -- [4]
+				236305, -- [1]
+				2, -- [2]
+				6, -- [3]
+				4, -- [4]
 				1, -- [5]
-				65, -- [6]
+				71, -- [6]
 				2, -- [7]
 			}, -- [24]
 			{
-				236248, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
+				236317, -- [1]
+				2, -- [2]
+				8, -- [3]
+				3, -- [4]
 				1, -- [5]
-				65, -- [6]
+				71, -- [6]
 				2, -- [7]
 			}, -- [25]
 			{
-				236256, -- [1]
-				0, -- [2]
-				9, -- [3]
+				132349, -- [1]
+				2, -- [2]
+				7, -- [3]
 				3, -- [4]
 				1, -- [5]
-				65, -- [6]
-				5, -- [7]
+				71, -- [6]
+				2, -- [7]
 			}, -- [26]
 			{
-				132110, -- [1]
-				3, -- [2]
-				8, -- [3]
-				1, -- [4]
-				2, -- [5]
-				66, -- [6]
-				3, -- [7]
+				236303, -- [1]
+				1, -- [2]
+				11, -- [3]
+				2, -- [4]
+				1, -- [5]
+				71, -- [6]
+				1, -- [7]
 			}, -- [27]
 			{
-				135893, -- [1]
+				132364, -- [1]
+				5, -- [2]
+				10, -- [3]
+				2, -- [4]
+				1, -- [5]
+				71, -- [6]
+				5, -- [7]
+			}, -- [28]
+			{
+				236276, -- [1]
 				3, -- [2]
 				4, -- [3]
 				3, -- [4]
-				2, -- [5]
-				66, -- [6]
+				1, -- [5]
+				71, -- [6]
 				3, -- [7]
-			}, -- [28]
-			{
-				135892, -- [1]
-				5, -- [2]
-				3, -- [3]
-				3, -- [4]
-				2, -- [5]
-				66, -- [6]
-				5, -- [7]
 			}, -- [29]
 			{
-				135964, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				2, -- [5]
-				66, -- [6]
+				132340, -- [1]
+				2, -- [2]
+				7, -- [3]
+				4, -- [4]
+				1, -- [5]
+				71, -- [6]
 				2, -- [7]
 			}, -- [30]
 			{
-				135882, -- [1]
-				2, -- [2]
-				5, -- [3]
-				3, -- [4]
-				2, -- [5]
-				66, -- [6]
-				5, -- [7]
+				132335, -- [1]
+				1, -- [2]
+				8, -- [3]
+				1, -- [4]
+				1, -- [5]
+				71, -- [6]
+				1, -- [7]
 			}, -- [31]
 			{
-				135321, -- [1]
-				3, -- [2]
+				136035, -- [1]
+				0, -- [2]
+				3, -- [3]
+				4, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [32]
+			{
+				136224, -- [1]
+				0, -- [2]
+				4, -- [3]
+				3, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [33]
+			{
+				132152, -- [1]
+				0, -- [2]
 				6, -- [3]
 				3, -- [4]
 				2, -- [5]
-				66, -- [6]
-				3, -- [7]
-			}, -- [32]
-			{
-				135880, -- [1]
-				1, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				66, -- [6]
-				1, -- [7]
-			}, -- [33]
-			{
-				136051, -- [1]
-				1, -- [2]
-				5, -- [3]
-				2, -- [4]
-				2, -- [5]
-				66, -- [6]
-				1, -- [7]
+				72, -- [6]
+				5, -- [7]
 			}, -- [34]
 			{
-				135883, -- [1]
-				0, -- [2]
+				132292, -- [1]
+				5, -- [2]
 				1, -- [3]
-				2, -- [4]
+				3, -- [4]
 				2, -- [5]
-				66, -- [6]
+				72, -- [6]
 				5, -- [7]
 			}, -- [35]
 			{
-				135962, -- [1]
-				3, -- [2]
+				136075, -- [1]
+				0, -- [2]
+				1, -- [3]
+				2, -- [4]
+				2, -- [5]
+				72, -- [6]
+				2, -- [7]
+			}, -- [36]
+			{
+				136097, -- [1]
+				0, -- [2]
+				2, -- [3]
+				3, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [37]
+			{
+				136147, -- [1]
+				0, -- [2]
 				3, -- [3]
 				2, -- [4]
 				2, -- [5]
-				66, -- [6]
-				3, -- [7]
-			}, -- [36]
-			{
-				135963, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				66, -- [6]
-				2, -- [7]
-			}, -- [37]
-			{
-				135994, -- [1]
-				5, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				66, -- [6]
-				5, -- [7]
+				72, -- [6]
+				1, -- [7]
 			}, -- [38]
 			{
-				135978, -- [1]
+				132366, -- [1]
 				0, -- [2]
 				2, -- [3]
-				1, -- [4]
+				2, -- [4]
 				2, -- [5]
-				66, -- [6]
-				3, -- [7]
+				72, -- [6]
+				5, -- [7]
 			}, -- [39]
 			{
-				135896, -- [1]
-				2, -- [2]
-				6, -- [3]
-				1, -- [4]
+				136146, -- [1]
+				0, -- [2]
+				5, -- [3]
+				2, -- [4]
 				2, -- [5]
-				66, -- [6]
-				2, -- [7]
+				72, -- [6]
+				1, -- [7]
 			}, -- [40]
 			{
-				135870, -- [1]
-				3, -- [2]
-				7, -- [3]
-				3, -- [4]
+				132338, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
 				2, -- [5]
-				66, -- [6]
+				72, -- [6]
 				3, -- [7]
 			}, -- [41]
 			{
-				135986, -- [1]
-				3, -- [2]
-				8, -- [3]
-				3, -- [4]
-				2, -- [5]
-				66, -- [6]
-				3, -- [7]
-			}, -- [42]
-			{
-				135874, -- [1]
-				1, -- [2]
-				9, -- [3]
+				136012, -- [1]
+				0, -- [2]
+				7, -- [3]
 				2, -- [4]
 				2, -- [5]
-				66, -- [6]
+				72, -- [6]
 				1, -- [7]
+			}, -- [42]
+			{
+				136218, -- [1]
+				0, -- [2]
+				3, -- [3]
+				3, -- [4]
+				2, -- [5]
+				72, -- [6]
+				3, -- [7]
 			}, -- [43]
 			{
-				132154, -- [1]
-				5, -- [2]
-				1, -- [3]
-				3, -- [4]
+				136009, -- [1]
+				0, -- [2]
+				6, -- [3]
+				1, -- [4]
 				2, -- [5]
-				66, -- [6]
-				5, -- [7]
+				72, -- [6]
+				2, -- [7]
 			}, -- [44]
 			{
-				236252, -- [1]
-				2, -- [2]
-				9, -- [3]
-				3, -- [4]
+				135358, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
 				2, -- [5]
-				66, -- [6]
+				72, -- [6]
 				2, -- [7]
 			}, -- [45]
 			{
-				236267, -- [1]
-				3, -- [2]
-				9, -- [3]
-				1, -- [4]
-				2, -- [5]
-				66, -- [6]
-				3, -- [7]
-			}, -- [46]
-			{
-				236253, -- [1]
-				1, -- [2]
-				11, -- [3]
-				2, -- [4]
-				2, -- [5]
-				66, -- [6]
-				1, -- [7]
-			}, -- [47]
-			{
-				236259, -- [1]
-				2, -- [2]
-				10, -- [3]
+				132307, -- [1]
+				0, -- [2]
+				5, -- [3]
 				3, -- [4]
 				2, -- [5]
-				66, -- [6]
+				72, -- [6]
+				2, -- [7]
+			}, -- [46]
+			{
+				132147, -- [1]
+				0, -- [2]
+				4, -- [3]
+				1, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [47]
+			{
+				132369, -- [1]
+				0, -- [2]
+				7, -- [3]
+				4, -- [4]
+				2, -- [5]
+				72, -- [6]
 				2, -- [7]
 			}, -- [48]
 			{
-				236264, -- [1]
-				3, -- [2]
-				10, -- [3]
-				2, -- [4]
+				132222, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
 				2, -- [5]
-				66, -- [6]
+				72, -- [6]
 				3, -- [7]
 			}, -- [49]
 			{
-				253400, -- [1]
-				1, -- [2]
-				3, -- [3]
-				1, -- [4]
+				132275, -- [1]
+				0, -- [2]
+				8, -- [3]
+				4, -- [4]
 				2, -- [5]
-				66, -- [6]
-				1, -- [7]
+				72, -- [6]
+				5, -- [7]
 			}, -- [50]
 			{
-				253400, -- [1]
-				2, -- [2]
-				4, -- [3]
-				1, -- [4]
+				132352, -- [1]
+				0, -- [2]
+				9, -- [3]
+				2, -- [4]
 				2, -- [5]
-				66, -- [6]
-				2, -- [7]
+				72, -- [6]
+				1, -- [7]
 			}, -- [51]
 			{
-				135958, -- [1]
-				1, -- [2]
+				132344, -- [1]
+				0, -- [2]
 				7, -- [3]
 				1, -- [4]
 				2, -- [5]
-				66, -- [6]
-				2, -- [7]
+				72, -- [6]
+				3, -- [7]
 			}, -- [52]
 			{
-				135906, -- [1]
+				236308, -- [1]
+				0, -- [2]
+				8, -- [3]
+				1, -- [4]
+				2, -- [5]
+				72, -- [6]
+				2, -- [7]
+			}, -- [53]
+			{
+				236306, -- [1]
+				0, -- [2]
+				9, -- [3]
+				3, -- [4]
+				2, -- [5]
+				72, -- [6]
+				3, -- [7]
+			}, -- [54]
+			{
+				236316, -- [1]
+				0, -- [2]
+				11, -- [3]
+				2, -- [4]
+				2, -- [5]
+				72, -- [6]
+				1, -- [7]
+			}, -- [55]
+			{
+				236171, -- [1]
+				0, -- [2]
+				9, -- [3]
+				1, -- [4]
+				2, -- [5]
+				72, -- [6]
+				1, -- [7]
+			}, -- [56]
+			{
+				236310, -- [1]
+				0, -- [2]
+				10, -- [3]
+				2, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [57]
+			{
+				135053, -- [1]
+				3, -- [2]
+				1, -- [3]
+				1, -- [4]
+				2, -- [5]
+				72, -- [6]
+				3, -- [7]
+			}, -- [58]
+			{
+				136056, -- [1]
 				0, -- [2]
 				2, -- [3]
 				3, -- [4]
 				3, -- [5]
-				70, -- [6]
-				2, -- [7]
-			}, -- [53]
-			{
-				132275, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				3, -- [5]
-				70, -- [6]
-				3, -- [7]
-			}, -- [54]
-			{
-				132269, -- [1]
-				5, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				70, -- [6]
+				73, -- [6]
 				5, -- [7]
-			}, -- [55]
+			}, -- [59]
 			{
-				135863, -- [1]
+				135892, -- [1]
 				0, -- [2]
+				3, -- [3]
+				4, -- [4]
+				3, -- [5]
+				73, -- [6]
+				5, -- [7]
+			}, -- [60]
+			{
+				132326, -- [1]
+				3, -- [2]
 				1, -- [3]
 				3, -- [4]
 				3, -- [5]
-				70, -- [6]
-				5, -- [7]
-			}, -- [56]
+				73, -- [6]
+				3, -- [7]
+			}, -- [61]
 			{
-				133041, -- [1]
-				0, -- [2]
-				5, -- [3]
+				132277, -- [1]
+				2, -- [2]
+				1, -- [3]
 				1, -- [4]
 				3, -- [5]
-				70, -- [6]
-				3, -- [7]
-			}, -- [57]
+				73, -- [6]
+				2, -- [7]
+			}, -- [62]
 			{
-				135957, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				70, -- [6]
-				5, -- [7]
-			}, -- [58]
-			{
-				135942, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				70, -- [6]
-				1, -- [7]
-			}, -- [59]
-			{
-				135924, -- [1]
+				236309, -- [1]
 				3, -- [2]
 				2, -- [3]
 				2, -- [4]
 				3, -- [5]
-				70, -- [6]
+				73, -- [6]
 				3, -- [7]
-			}, -- [60]
-			{
-				132347, -- [1]
-				1, -- [2]
-				3, -- [3]
-				3, -- [4]
-				3, -- [5]
-				70, -- [6]
-				1, -- [7]
-			}, -- [61]
-			{
-				135959, -- [1]
-				2, -- [2]
-				2, -- [3]
-				1, -- [4]
-				3, -- [5]
-				70, -- [6]
-				2, -- [7]
-			}, -- [62]
-			{
-				135904, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				3, -- [5]
-				70, -- [6]
-				2, -- [7]
 			}, -- [63]
 			{
-				135985, -- [1]
-				2, -- [2]
-				3, -- [3]
-				1, -- [4]
+				132363, -- [1]
+				0, -- [2]
+				4, -- [3]
+				3, -- [4]
 				3, -- [5]
-				70, -- [6]
-				2, -- [7]
+				73, -- [6]
+				3, -- [7]
 			}, -- [64]
 			{
-				135937, -- [1]
-				2, -- [2]
+				132353, -- [1]
+				0, -- [2]
 				3, -- [3]
-				4, -- [4]
+				2, -- [4]
 				3, -- [5]
-				70, -- [6]
+				73, -- [6]
 				2, -- [7]
 			}, -- [65]
 			{
-				135889, -- [1]
-				1, -- [2]
-				4, -- [3]
-				4, -- [4]
+				236318, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
 				3, -- [5]
-				70, -- [6]
-				3, -- [7]
+				73, -- [6]
+				1, -- [7]
 			}, -- [66]
 			{
-				135934, -- [1]
+				132357, -- [1]
 				0, -- [2]
 				5, -- [3]
 				3, -- [4]
 				3, -- [5]
-				70, -- [6]
-				1, -- [7]
+				73, -- [6]
+				2, -- [7]
 			}, -- [67]
 			{
-				135897, -- [1]
+				132362, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [68]
+			{
+				132343, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [69]
+			{
+				132325, -- [1]
+				0, -- [2]
+				5, -- [3]
+				2, -- [4]
+				3, -- [5]
+				73, -- [6]
+				1, -- [7]
+			}, -- [70]
+			{
+				135871, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
+				3, -- [5]
+				73, -- [6]
+				1, -- [7]
+			}, -- [71]
+			{
+				135321, -- [1]
 				0, -- [2]
 				6, -- [3]
 				3, -- [4]
 				3, -- [5]
-				70, -- [6]
-				2, -- [7]
-			}, -- [68]
+				73, -- [6]
+				5, -- [7]
+			}, -- [72]
 			{
-				236257, -- [1]
+				134952, -- [1]
+				0, -- [2]
+				1, -- [3]
+				2, -- [4]
+				3, -- [5]
+				73, -- [6]
+				5, -- [7]
+			}, -- [73]
+			{
+				132341, -- [1]
+				0, -- [2]
+				7, -- [3]
+				1, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [74]
+			{
+				133123, -- [1]
+				0, -- [2]
+				8, -- [3]
+				2, -- [4]
+				3, -- [5]
+				73, -- [6]
+				3, -- [7]
+			}, -- [75]
+			{
+				132360, -- [1]
+				0, -- [2]
+				3, -- [3]
+				3, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [76]
+			{
+				132345, -- [1]
 				0, -- [2]
 				7, -- [3]
 				3, -- [4]
 				3, -- [5]
-				70, -- [6]
+				73, -- [6]
 				3, -- [7]
-			}, -- [69]
+			}, -- [77]
 			{
-				135905, -- [1]
-				0, -- [2]
-				8, -- [3]
-				2, -- [4]
-				3, -- [5]
-				70, -- [6]
-				3, -- [7]
-			}, -- [70]
-			{
-				135924, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				70, -- [6]
-				3, -- [7]
-			}, -- [71]
-			{
-				135891, -- [1]
+				135291, -- [1]
 				0, -- [2]
 				9, -- [3]
 				2, -- [4]
 				3, -- [5]
-				70, -- [6]
+				73, -- [6]
 				1, -- [7]
-			}, -- [72]
+			}, -- [78]
 			{
-				236262, -- [1]
+				236311, -- [1]
 				0, -- [2]
 				8, -- [3]
 				3, -- [4]
 				3, -- [5]
-				70, -- [6]
+				73, -- [6]
 				2, -- [7]
-			}, -- [73]
+			}, -- [79]
 			{
-				236266, -- [1]
-				0, -- [2]
-				9, -- [3]
-				1, -- [4]
-				3, -- [5]
-				70, -- [6]
-				3, -- [7]
-			}, -- [74]
-			{
-				236260, -- [1]
+				236315, -- [1]
 				0, -- [2]
 				10, -- [3]
 				2, -- [4]
 				3, -- [5]
-				70, -- [6]
+				73, -- [6]
 				3, -- [7]
-			}, -- [75]
+			}, -- [80]
 			{
-				236250, -- [1]
+				236312, -- [1]
 				0, -- [2]
 				11, -- [3]
 				2, -- [4]
 				3, -- [5]
-				70, -- [6]
+				73, -- [6]
 				1, -- [7]
-			}, -- [76]
+			}, -- [81]
 			{
-				236246, -- [1]
-				0, -- [2]
-				7, -- [3]
-				1, -- [4]
-				3, -- [5]
-				70, -- [6]
-				2, -- [7]
-			}, -- [77]
-			{
-				236263, -- [1]
+				236307, -- [1]
 				0, -- [2]
 				9, -- [3]
 				3, -- [4]
 				3, -- [5]
-				70, -- [6]
+				73, -- [6]
 				3, -- [7]
-			}, -- [78]
+			}, -- [82]
+			{
+				236319, -- [1]
+				0, -- [2]
+				9, -- [3]
+				1, -- [4]
+				3, -- [5]
+				73, -- [6]
+				1, -- [7]
+			}, -- [83]
+			{
+				134976, -- [1]
+				0, -- [2]
+				10, -- [3]
+				3, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [84]
+			{
+				132361, -- [1]
+				0, -- [2]
+				4, -- [3]
+				1, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [85]
 		},
 		["Player-4465-01C7FC88"] = {
 			{
@@ -18485,695 +19523,12 @@ _detalhes_database = {
 			}, -- [82]
 		},
 	},
-	["local_instances_config"] = {
-		{
-			["modo"] = 2,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
-			["verticalSnap"] = false,
-			["isLocked"] = true,
-			["is_open"] = true,
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["snap"] = {
-				[3] = 2,
-			},
-			["segment"] = 0,
-			["mode"] = 2,
-			["attribute"] = 1,
-			["pos"] = {
-				["normal"] = {
-					["y"] = 596.4414672851562,
-					["x"] = -1101.599021911621,
-					["w"] = 234.8974151611328,
-					["h"] = 138.5456237792969,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [1]
-		{
-			["modo"] = 2,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
-			["verticalSnap"] = false,
-			["isLocked"] = true,
-			["is_open"] = true,
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["snap"] = {
-				1, -- [1]
-			},
-			["segment"] = 0,
-			["mode"] = 2,
-			["attribute"] = 2,
-			["pos"] = {
-				["normal"] = {
-					["y"] = 596.4414672851562,
-					["x"] = -869.6630859375,
-					["w"] = 228.9744262695313,
-					["h"] = 138.5456237792969,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [2]
-		{
-			["modo"] = 2,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = false,
-			["verticalSnap"] = false,
-			["isLocked"] = true,
-			["snap"] = {
-			},
-			["is_open"] = true,
-			["last_raid_plugin"] = "DETAILS_PLUGIN_TINY_THREAT",
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["segment"] = 0,
-			["mode"] = 2,
-			["attribute"] = 1,
-			["pos"] = {
-				["normal"] = {
-					["y"] = -517.3939361572266,
-					["x"] = 501.459716796875,
-					["w"] = 215.7857666015625,
-					["h"] = 170.4597473144531,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [3]
+	["data_harvested_for_charts"] = {
 	},
-	["benchmark_db"] = {
-		["frame"] = {
-		},
-	},
-	["last_realversion"] = 148,
-	["combat_id"] = 0,
-	["savedStyles"] = {
-		{
-			["show_statusbar"] = false,
-			["clickthrough_window"] = false,
-			["titlebar_shown"] = false,
-			["menu_anchor"] = {
-				16, -- [1]
-				0, -- [2]
-				["side"] = 2,
-			},
-			["bg_r"] = 0.1333333333333333,
-			["fullborder_size"] = 0.5,
-			["hide_out_of_combat"] = false,
-			["color_buttons"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["bars_sort_direction"] = 1,
-			["use_auto_align_multi_fontstrings"] = true,
-			["tooltip"] = {
-				["n_abilities"] = 3,
-				["n_enemies"] = 3,
-			},
-			["switch_all_roles_in_combat"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["clickthrough_toolbaricons"] = false,
-			["attribute_text"] = {
-				["enabled"] = true,
-				["shadow"] = false,
-				["side"] = 1,
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["custom_text"] = "{name}",
-				["text_face"] = "Arial Narrow",
-				["anchor"] = {
-					56, -- [1]
-					3, -- [2]
-				},
-				["text_size"] = 12,
-				["enable_custom_text"] = false,
-				["show_timer"] = false,
-			},
-			["titlebar_texture"] = "Clean",
-			["ignore_mass_showhide"] = false,
-			["fontstrings_text_limit_offset"] = -10,
-			["icon_desaturated"] = false,
-			["desaturated_menu"] = false,
-			["show_sidebars"] = false,
-			["window_scale"] = 1,
-			["hide_icon"] = true,
-			["toolbar_side"] = 1,
-			["bg_g"] = 0.1333333333333333,
-			["menu_icons_alpha"] = 0.92,
-			["bg_b"] = 0.1333333333333333,
-			["rowareaborder_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["color"] = {
-				0.07058823529411765, -- [1]
-				0.07058823529411765, -- [2]
-				0.07058823529411765, -- [3]
-				0, -- [4]
-			},
-			["hide_on_context"] = {
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [1]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 48,
-				}, -- [2]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [3]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [4]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [5]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [6]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [7]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [8]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [9]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [10]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [11]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [12]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [13]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [14]
-				{
-					["enabled"] = false,
-					["inverse"] = false,
-					["value"] = 100,
-				}, -- [15]
-			},
-			["skin"] = "Minimalistic",
-			["following"] = {
-				["enabled"] = false,
-				["bar_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
-			["switch_healer"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["fontstrings_text2_anchor"] = 70,
-			["menu_icons_size"] = 0.8500000238418579,
-			["bars_inverted"] = false,
-			["menu_icons"] = {
-				false, -- [1]
-				true, -- [2]
-				false, -- [3]
-				false, -- [4]
-				false, -- [5]
-				false, -- [6]
-				["space"] = -4,
-				["shadow"] = false,
-			},
-			["instance_button_anchor"] = {
-				-27, -- [1]
-				1, -- [2]
-			},
-			["total_bar"] = {
-				["enabled"] = false,
-				["only_in_group"] = false,
-				["icon"] = "Interface\\ICONS\\INV_Sigil_Thorim",
-				["color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
-			["micro_displays_side"] = 2,
-			["name"] = "vermin",
-			["switch_tank_in_combat"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["version"] = 3,
-			["fontstrings_text4_anchor"] = 4,
-			["plugins_grow_direction"] = 1,
-			["menu_alpha"] = {
-				["enabled"] = false,
-				["onleave"] = 1,
-				["ignorebars"] = false,
-				["iconstoo"] = true,
-				["onenter"] = 1,
-			},
-			["fullborder_shown"] = false,
-			["clickthrough_rows"] = false,
-			["rowareaborder_shown"] = false,
-			["rowareaborder_size"] = 0.5,
-			["clickthrough_incombatonly"] = false,
-			["fullborder_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["backdrop_texture"] = "Details Ground",
-			["hide_in_combat_alpha"] = 0,
-			["micro_displays_locked"] = false,
-			["strata"] = "LOW",
-			["libwindow"] = {
-				["y"] = -20,
-				["x"] = 2.012314325838815e-05,
-				["point"] = "TOPLEFT",
-				["scale"] = 1,
-			},
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					0.07058823529411765, -- [1]
-					0.07058823529411765, -- [2]
-					0.07058823529411765, -- [3]
-				},
-			},
-			["row_show_animation"] = {
-				["anim"] = "Fade",
-				["options"] = {
-				},
-			},
-			["menu_anchor_down"] = {
-				16, -- [1]
-				-3, -- [2]
-			},
-			["grab_on_top"] = false,
-			["auto_hide_menu"] = {
-				["left"] = false,
-				["right"] = true,
-			},
-			["hide_in_combat_type"] = 1,
-			["switch_damager_in_combat"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["switch_healer_in_combat"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["bars_grow_direction"] = 1,
-			["auto_current"] = true,
-			["skin_custom"] = "vermin",
-			["row_info"] = {
-				["show_arena_role_icon"] = false,
-				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
-				["textL_outline"] = false,
-				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-				["textR_show_data"] = {
-					true, -- [1]
-					true, -- [2]
-					false, -- [3]
-				},
-				["percent_type"] = 1,
-				["fixed_text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-				["space"] = {
-					["right"] = 0,
-					["left"] = 0,
-					["between"] = 1,
-				},
-				["texture_background_class_color"] = false,
-				["textL_outline_small_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["font_face_file"] = "Fonts\\ARIALN.TTF",
-				["faction_icon_size_offset"] = -10,
-				["backdrop"] = {
-					["color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["size"] = 12,
-					["enabled"] = false,
-					["texture"] = "ThreatPlatesBorder",
-				},
-				["models"] = {
-					["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
-					["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
-					["upper_alpha"] = 0.5,
-					["lower_enabled"] = false,
-					["lower_alpha"] = 0.1,
-					["upper_enabled"] = false,
-				},
-				["textL_custom_text"] = "{data1}. {data3}{data2}",
-				["font_size"] = 11,
-				["textL_translit_text"] = false,
-				["height"] = 19,
-				["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
-				["icon_size_offset"] = 0,
-				["start_after_icon"] = true,
-				["show_faction_icon"] = true,
-				["overlay_color"] = {
-					0.7, -- [1]
-					0.7, -- [2]
-					0.7, -- [3]
-					0, -- [4]
-				},
-				["textL_outline_small"] = true,
-				["textR_outline_small"] = true,
-				["arena_role_icon_size_offset"] = -10,
-				["icon_grayscale"] = false,
-				["textR_bracket"] = "(",
-				["use_spec_icons"] = false,
-				["texture_custom"] = "",
-				["textR_outline"] = false,
-				["fixed_texture_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["textL_show_number"] = true,
-				["textR_enable_custom_text"] = false,
-				["textR_outline_small_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["textR_custom_text"] = "{data1} ({data2}, {data3}%)",
-				["texture"] = "Clean",
-				["textR_class_colors"] = false,
-				["texture_background_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
-				["overlay_texture"] = "Clean",
-				["fixed_texture_background_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0.07912671566009521, -- [4]
-				},
-				["textL_class_colors"] = false,
-				["texture_background"] = "Clean",
-				["alpha"] = 1,
-				["no_icon"] = true,
-				["icon_offset"] = {
-					0, -- [1]
-					0, -- [2]
-				},
-				["icon_file"] = "",
-				["font_face"] = "Arial Narrow",
-				["texture_class_colors"] = true,
-				["textL_enable_custom_text"] = false,
-				["fast_ps_update"] = false,
-				["textR_separator"] = "NONE",
-				["texture_custom_file"] = "Interface\\",
-			},
-			["bg_alpha"] = 0,
-			["hide_in_combat"] = false,
-			["switch_damager"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["switch_tank"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["switch_all_roles_after_wipe"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["wallpaper"] = {
-				["enabled"] = false,
-				["alpha"] = 0.5,
-				["width"] = 283.000183105469,
-				["texcoord"] = {
-					0, -- [1]
-					1, -- [2]
-					0, -- [3]
-					0.7, -- [4]
-				},
-				["height"] = 114.042518615723,
-				["anchor"] = "all",
-				["level"] = 2,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["texture"] = "Interface\\AddOns\\Details\\images\\background",
-			},
-			["stretch_button_side"] = 2,
-			["titlebar_height"] = 16,
-			["fontstrings_text3_anchor"] = 35,
-			["use_multi_fontstrings"] = true,
-			["titlebar_texture_color"] = {
-				0.2, -- [1]
-				0.2, -- [2]
-				0.2, -- [3]
-				0, -- [4]
-			},
-		}, -- [1]
-	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["combat_counter"] = 12975,
-	["announce_deaths"] = {
-		["enabled"] = false,
-		["last_hits"] = 1,
-		["only_first"] = 5,
-		["where"] = 1,
-	},
-	["tabela_overall"] = {
-		{
-			["tipo"] = 2,
-			["_ActorTable"] = {
-			},
-		}, -- [1]
-		{
-			["tipo"] = 3,
-			["_ActorTable"] = {
-			},
-		}, -- [2]
-		{
-			["tipo"] = 7,
-			["_ActorTable"] = {
-			},
-		}, -- [3]
-		{
-			["tipo"] = 9,
-			["_ActorTable"] = {
-			},
-		}, -- [4]
-		{
-			["tipo"] = 2,
-			["_ActorTable"] = {
-			},
-		}, -- [5]
-		["raid_roster"] = {
-		},
-		["raid_roster_indexed"] = {
-		},
-		["tempo_start"] = 1674665041,
-		["last_events_tables"] = {
-		},
-		["alternate_power"] = {
-		},
-		["combat_counter"] = 12974,
-		["totals"] = {
-			0, -- [1]
-			0, -- [2]
-			{
-				0, -- [1]
-				[0] = 0,
-				["alternatepower"] = 0,
-				[3] = 0,
-				[6] = 0,
-			}, -- [3]
-			{
-				["buff_uptime"] = 0,
-				["ress"] = 0,
-				["debuff_uptime"] = 0,
-				["cooldowns_defensive"] = 0,
-				["interrupt"] = 0,
-				["dispell"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
-			}, -- [4]
-			["frags_total"] = 0,
-			["voidzone_damage"] = 0,
-		},
-		["player_last_events"] = {
-		},
-		["frags_need_refresh"] = false,
-		["aura_timeline"] = {
-		},
-		["__call"] = {
-		},
-		["data_inicio"] = 0,
-		["spells_cast_timeline"] = {
-		},
-		["totals_grupo"] = {
-			0, -- [1]
-			0, -- [2]
-			{
-				0, -- [1]
-				[0] = 0,
-				["alternatepower"] = 0,
-				[3] = 0,
-				[6] = 0,
-			}, -- [3]
-			{
-				["buff_uptime"] = 0,
-				["ress"] = 0,
-				["debuff_uptime"] = 0,
-				["cooldowns_defensive"] = 0,
-				["interrupt"] = 0,
-				["dispell"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
-			}, -- [4]
-		},
-		["frags"] = {
-		},
-		["data_fim"] = 0,
-		["cleu_events"] = {
-			["n"] = 1,
-		},
-		["CombatSkillCache"] = {
-		},
-		["cleu_timeline"] = {
-		},
-		["start_time"] = 0,
-		["TimeData"] = {
-		},
-		["PhaseData"] = {
-			{
-				1, -- [1]
-				1, -- [2]
-			}, -- [1]
-			["heal_section"] = {
-			},
-			["heal"] = {
-			},
-			["damage_section"] = {
-			},
-			["damage"] = {
-			},
-		},
-	},
-	["mythic_plus_log"] = {
-	},
-	["announce_prepots"] = {
-		["enabled"] = false,
-		["channel"] = "SELF",
-		["reverse"] = false,
-	},
-	["last_day"] = "25",
 	["announce_cooldowns"] = {
-		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
+		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -19181,32 +19536,263 @@ _detalhes_database = {
 		["last_difficulty"] = 15,
 		["last_raid"] = "",
 	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["cached_roles"] = {
+		["Player-4465-03B5CADF"] = "DAMAGER",
+		["Player-4465-02577D6F"] = "TANK",
+		["Player-4745-03A3663F"] = "DAMAGER",
+		["Player-4465-02BAD1D8"] = "DAMAGER",
+		["Player-4701-039BD6E5"] = "HEALER",
+		["Player-4465-003D8D47"] = "DAMAGER",
+		["Player-4476-049F1405"] = "DAMAGER",
+		["Player-4701-03A199C7"] = "DAMAGER",
+		["Player-4465-0342186B"] = "DAMAGER",
+		["Player-4465-03F9D630"] = "DAMAGER",
+		["Player-4465-02CC91B8"] = "DAMAGER",
+		["Player-4477-027383BF"] = "DAMAGER",
+		["Player-4465-02F6DDCB"] = "HEALER",
+		["Player-4465-02D086C3"] = "DAMAGER",
+		["Player-4465-03BDFDC5"] = "DAMAGER",
+		["Player-4465-026088A4"] = "DAMAGER",
+		["Player-4477-030D986D"] = "DAMAGER",
+		["Player-4465-0261EC2B"] = "TANK",
+		["Player-4465-02693FB0"] = "DAMAGER",
+		["Player-4465-02523198"] = "HEALER",
+		["Player-4465-02BDEC8F"] = "HEALER",
+		["Player-4701-03B93D09"] = "DAMAGER",
+		["Player-4464-02FD1CB1"] = "DAMAGER",
+		["Player-4477-048D0C63"] = "DAMAGER",
+		["Player-4465-02288795"] = "DAMAGER",
+		["Player-4465-041BEE68"] = "TANK",
+		["Player-4465-01739CFE"] = "DAMAGER",
+		["Player-4749-0395860F"] = "TANK",
+		["Player-4464-0185CA08"] = "DAMAGER",
+		["Player-4813-0472D8C1"] = "TANK",
+		["Player-4745-03A4D59B"] = "DAMAGER",
+		["Player-4465-036E6B94"] = "DAMAGER",
+		["Player-4742-03B6EDA5"] = "TANK",
+		["Player-4465-041BF30D"] = "DAMAGER",
+		["Player-4465-03788311"] = "DAMAGER",
+		["Player-4465-036BB930"] = "TANK",
+		["Player-4816-049322B1"] = "TANK",
+		["Player-4476-03967A51"] = "TANK",
+		["Player-4465-03F03D3F"] = "DAMAGER",
+		["Player-4465-02BF7599"] = "HEALER",
+		["Player-4465-03091068"] = "DAMAGER",
+		["Player-4465-03674D0F"] = "DAMAGER",
+		["Player-4465-0288F4DB"] = "DAMAGER",
+		["Player-4742-03B7B4B2"] = "TANK",
+		["Player-4465-03021E55"] = "DAMAGER",
+		["Player-4701-03B3AF0C"] = "DAMAGER",
+		["Player-4465-03D74F24"] = "DAMAGER",
+		["Player-4465-02E44D83"] = "HEALER",
+		["Player-4701-03AED8A5"] = "DAMAGER",
+		["Player-4465-0258F376"] = "TANK",
+		["Player-4465-02C331B4"] = "HEALER",
+		["Player-4465-0252C34B"] = "DAMAGER",
+		["Player-4465-02F9FEBD"] = "DAMAGER",
+		["Player-4477-04B5E362"] = "DAMAGER",
+		["Player-4465-041AC8AA"] = "DAMAGER",
+		["Player-4465-02F8DEBD"] = "DAMAGER",
+		["Player-4701-03305843"] = "DAMAGER",
+		["Player-4465-0415CE0A"] = "DAMAGER",
+		["Player-4465-02E11076"] = "DAMAGER",
+		["Player-4465-0412D748"] = "DAMAGER",
+		["Player-4465-02E6F563"] = "DAMAGER",
+		["Player-4465-02885F76"] = "TANK",
+		["Player-4477-045DAFDD"] = "DAMAGER",
+		["Player-4701-031A2B82"] = "HEALER",
+		["Player-4465-019144E8"] = "DAMAGER",
+		["Player-4465-0275626C"] = "TANK",
+		["Player-4465-041A54E4"] = "DAMAGER",
+		["Player-4465-02BD46B7"] = "DAMAGER",
+		["Player-4465-02DF9BE1"] = "DAMAGER",
+		["Player-4465-02C807FC"] = "HEALER",
+		["Player-4465-0351F0F5"] = "DAMAGER",
+		["Player-4465-01740F8E"] = "HEALER",
+		["Player-4701-032DD6F6"] = "DAMAGER",
+		["Player-4477-035E647F"] = "DAMAGER",
+		["Player-4454-0498F3FF"] = "DAMAGER",
+		["Player-4465-03046743"] = "DAMAGER",
+		["Player-4465-03035CC0"] = "HEALER",
+		["Player-4465-03D62D9B"] = "DAMAGER",
+		["Player-4701-00EB014A"] = "DAMAGER",
+		["Player-4465-02F9DE73"] = "DAMAGER",
+		["Player-4701-03819EF5"] = "DAMAGER",
+		["Player-4465-02DDED22"] = "DAMAGER",
+		["Player-4441-0392BC9E"] = "TANK",
+		["Player-4465-028BE5FC"] = "DAMAGER",
+		["Player-4465-02F97ED1"] = "DAMAGER",
+		["Player-4465-03461B19"] = "DAMAGER",
+		["Player-4465-028A5465"] = "DAMAGER",
+		["Player-4465-0297669D"] = "DAMAGER",
+		["Player-4742-03B3D16D"] = "DAMAGER",
+		["Player-4440-03B2599C"] = "DAMAGER",
+		["Player-4454-04BC3D0C"] = "DAMAGER",
+		["Player-4465-03037FF1"] = "DAMAGER",
+		["Player-4465-02976C46"] = "TANK",
+		["Player-4465-02C3C2E6"] = "HEALER",
+		["Player-4476-03A849C0"] = "DAMAGER",
+		["Player-4465-01C7FC88"] = "DAMAGER",
+		["Player-4465-02DFB097"] = "DAMAGER",
+		["Player-4465-02F48C42"] = "DAMAGER",
+		["Player-4465-04054D63"] = "HEALER",
+		["Player-4701-039EF10C"] = "DAMAGER",
+		["Player-4465-02503EFC"] = "TANK",
+		["Player-4465-02CDCDC3"] = "TANK",
+		["Player-4465-02E5F434"] = "TANK",
+		["Player-4465-02CD0AB9"] = "TANK",
+		["Player-4465-02BAB8B7"] = "DAMAGER",
+		["Player-4465-0416D644"] = "HEALER",
+		["Player-4465-0391B9C8"] = "DAMAGER",
+		["Player-4476-043E10B2"] = "TANK",
+		["Player-4465-01870DC6"] = "DAMAGER",
+		["Player-4465-02FF9B0C"] = "DAMAGER",
+		["Player-4465-000A80E7"] = "DAMAGER",
+		["Player-4476-04936DD5"] = "DAMAGER",
+		["Player-4465-0218B725"] = "DAMAGER",
+		["Player-4465-02C18DB0"] = "TANK",
+		["Player-4465-036BE4A4"] = "TANK",
+		["Player-4742-03A2A879"] = "DAMAGER",
+		["Player-4476-03EBACD5"] = "DAMAGER",
+		["Player-4465-02047DF6"] = "TANK",
+		["Player-4465-03753C93"] = "DAMAGER",
+		["Player-4477-04802C1F"] = "DAMAGER",
+		["Player-4465-02EF8BBA"] = "DAMAGER",
+		["Player-4465-030383A8"] = "DAMAGER",
+		["Player-4465-041BF30E"] = "DAMAGER",
+		["Player-4465-03D6D11D"] = "TANK",
+		["Player-4465-03069158"] = "HEALER",
+		["Player-4465-02D908D4"] = "HEALER",
+		["Player-4465-041BF036"] = "DAMAGER",
+		["Player-4464-03B81770"] = "DAMAGER",
+		["Player-4465-02B6A009"] = "DAMAGER",
+		["Player-4465-031A1B3C"] = "HEALER",
+		["Player-4465-02FEFF6C"] = "DAMAGER",
+		["Player-4465-02EC914A"] = "DAMAGER",
+		["Player-4465-02BA90EF"] = "DAMAGER",
+		["Player-4465-02BCA418"] = "DAMAGER",
+		["Player-4465-041BFA3C"] = "HEALER",
+		["Player-4465-037AFDDA"] = "DAMAGER",
+		["Player-4465-02E13966"] = "DAMAGER",
+		["Player-4441-0108CD29"] = "DAMAGER",
+		["Player-4465-01487BDF"] = "DAMAGER",
+		["Player-4465-0250291E"] = "TANK",
+		["Player-4465-036A3B59"] = "DAMAGER",
+		["Player-4813-036CF38B"] = "HEALER",
+		["Player-4465-025D118E"] = "DAMAGER",
+		["Player-4465-01544D47"] = "DAMAGER",
+		["Player-4465-0258A1EB"] = "TANK",
+		["Player-4465-036CD23F"] = "DAMAGER",
+		["Player-4811-0393CCC2"] = "DAMAGER",
+		["Player-4465-03F67319"] = "TANK",
+		["Player-4465-01794E06"] = "HEALER",
+		["Player-4465-02CDC2A2"] = "HEALER",
+		["Player-4465-02DE4EAD"] = "DAMAGER",
+		["Player-4465-0411AC30"] = "TANK",
+		["Player-4465-04004B77"] = "DAMAGER",
+		["Player-4465-02A80D1D"] = "HEALER",
+		["Player-4813-0362233C"] = "DAMAGER",
+		["Player-4465-030871C0"] = "DAMAGER",
+		["Player-4465-02DFB699"] = "DAMAGER",
+		["Player-4465-029E272E"] = "DAMAGER",
+		["Player-4701-03B1807A"] = "DAMAGER",
+		["Player-4465-02DC8E2E"] = "DAMAGER",
+		["Player-4465-0386A8DB"] = "TANK",
+		["Player-4813-0381F00A"] = "DAMAGER",
+		["Player-4465-0414CD92"] = "TANK",
+		["Player-4464-02FD1CA6"] = "HEALER",
+		["Player-4465-013E4AF1"] = "DAMAGER",
+		["Player-4465-03B7B0CC"] = "TANK",
+		["Player-4701-0397FC44"] = "DAMAGER",
+		["Player-4465-02FB4533"] = "HEALER",
+		["Player-4465-02B962BC"] = "TANK",
+		["Player-4703-036FCE0B"] = "DAMAGER",
+		["Player-4465-03BADA8C"] = "DAMAGER",
+		["Player-4465-02C0CB57"] = "HEALER",
+		["Player-4465-01678225"] = "DAMAGER",
+		["Player-4465-03AC28D5"] = "DAMAGER",
+		["Player-4465-036EC082"] = "TANK",
+		["Player-4701-01D09AED"] = "DAMAGER",
+		["Player-4465-02E5912F"] = "HEALER",
+		["Player-4465-02EB3CD0"] = "DAMAGER",
+		["Player-4477-04694034"] = "DAMAGER",
+		["Player-4476-04631F24"] = "DAMAGER",
+		["Player-4465-02AAFA73"] = "HEALER",
+		["Player-4464-03B449DE"] = "HEALER",
+		["Player-4742-0398D638"] = "DAMAGER",
+		["Player-4465-02CD6CBC"] = "HEALER",
+		["Player-4465-02C372E2"] = "HEALER",
+		["Player-4456-04B482D1"] = "HEALER",
+		["Player-4466-03B341E3"] = "DAMAGER",
+		["Player-4701-0379559D"] = "DAMAGER",
+		["Player-4465-024C462D"] = "DAMAGER",
+		["Player-4465-038E5903"] = "DAMAGER",
+		["Player-4465-03D3962E"] = "TANK",
+		["Player-4476-04BAF9D6"] = "DAMAGER",
+		["Player-4465-03E6B471"] = "TANK",
+		["Player-4441-012EC605"] = "DAMAGER",
+		["Player-4465-02C17AB0"] = "DAMAGER",
+		["Player-4749-018E243A"] = "DAMAGER",
+		["Player-4701-0373EAA9"] = "DAMAGER",
+		["Player-4465-0256CA59"] = "TANK",
+		["Player-4465-03747128"] = "HEALER",
+		["Player-4701-03B43FB8"] = "DAMAGER",
+		["Player-4441-036A5F47"] = "TANK",
+		["Player-4440-03B20940"] = "DAMAGER",
+		["Player-4465-02F1D2B9"] = "DAMAGER",
+		["Player-4465-02A4FBD7"] = "TANK",
+		["Player-4465-02BDBFFA"] = "DAMAGER",
+		["Player-4465-02DEBEAF"] = "DAMAGER",
+		["Player-4465-02E58336"] = "DAMAGER",
+		["Player-4742-03B01A00"] = "DAMAGER",
+		["Player-4815-047DFB6B"] = "DAMAGER",
+		["Player-4440-03B236DF"] = "DAMAGER",
+		["Player-4476-043F5A87"] = "DAMAGER",
+		["Player-4442-038F0F2B"] = "HEALER",
+		["Player-4701-0398407A"] = "DAMAGER",
+		["Player-4465-03D41593"] = "HEALER",
+		["Player-4465-027ED863"] = "DAMAGER",
+		["Player-4465-01693BEB"] = "HEALER",
+		["Player-4742-03B16593"] = "DAMAGER",
+		["Player-4465-02D51E4E"] = "DAMAGER",
+		["Player-4465-02F96727"] = "HEALER",
+		["Player-4477-0338EC0F"] = "DAMAGER",
+		["Player-4465-00F8D26F"] = "DAMAGER",
+		["Player-4813-04A02B26"] = "DAMAGER",
+		["Player-4701-031A8022"] = "DAMAGER",
+		["Player-4745-039D115F"] = "DAMAGER",
+		["Player-4465-01CBD6E9"] = "DAMAGER",
+		["Player-4465-02E29C09"] = "HEALER",
+		["Player-4465-02E87747"] = "DAMAGER",
+		["Player-4816-049CEEDE"] = "DAMAGER",
+		["Player-4465-029390FF"] = "TANK",
+		["Player-4813-03852C61"] = "DAMAGER",
+		["Player-4465-02DF6FC1"] = "TANK",
+		["Player-4465-02E38B90"] = "DAMAGER",
+		["Player-4465-0010144A"] = "DAMAGER",
 	},
 	["cached_specs"] = {
 		["Player-4465-0416D644"] = 65,
 		["Player-4465-0252C34B"] = 102,
-		["Player-4465-041BF036"] = 262,
-		["Player-4465-03BADA8C"] = 260,
-		["Player-4465-041A54E4"] = 71,
 		["Player-4465-02FB4533"] = 264,
-		["Player-4465-041BF30E"] = 63,
-		["Player-4465-02F97ED1"] = 258,
-		["Player-4465-0342186B"] = 265,
-		["Player-4465-0411AC30"] = 73,
-		["Player-4465-041BEE68"] = 66,
-		["Player-4465-04004B77"] = 259,
-		["Player-4465-03037FF1"] = 62,
-		["Player-4465-02F6DDCB"] = 65,
-		["Player-4465-030871C0"] = 265,
-		["Player-4465-02E13966"] = 258,
-		["Player-4465-041BF30D"] = 251,
+		["Player-4465-041A54E4"] = 71,
 		["Player-4465-041AC8AA"] = 266,
+		["Player-4465-02E13966"] = 258,
+		["Player-4465-03BADA8C"] = 260,
+		["Player-4465-0342186B"] = 265,
+		["Player-4465-041BEE68"] = 66,
+		["Player-4465-03788311"] = 71,
+		["Player-4465-02F97ED1"] = 258,
+		["Player-4465-041BF30D"] = 251,
+		["Player-4465-0411AC30"] = 73,
+		["Player-4465-041BFA3C"] = 105,
+		["Player-4465-04004B77"] = 259,
+		["Player-4465-02F6DDCB"] = 65,
+		["Player-4465-03037FF1"] = 62,
+		["Player-4465-041BF036"] = 262,
 		["Player-4465-01C7FC88"] = 255,
 		["Player-4465-02E87747"] = 263,
-		["Player-4465-041BFA3C"] = 105,
+		["Player-4465-041BF30E"] = 62,
 		["Player-4465-037AFDDA"] = 259,
 		["Player-4465-0258F376"] = 66,
 	},

@@ -10,6 +10,8 @@ GDKPd_DB = {
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Miqa - Golemagg"] = "Miqa - Golemagg",
 		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Augustin - Golemagg"] = "Augustin - Golemagg",
 	},
 	["global"] = {
 		["shownPopupAddonMsg4_2"] = true,
@@ -107,6 +109,24 @@ GDKPd_DB = {
 				["relative"] = "TOPRIGHT",
 				["point"] = "TOPRIGHT",
 				["x"] = -327.8730773925781,
+			},
+		},
+		["Mxyzptlk - Golemagg"] = {
+			["movable"] = false,
+			["point"] = {
+				["y"] = -291.2698669433594,
+				["relative"] = "TOPRIGHT",
+				["point"] = "TOPRIGHT",
+				["x"] = -54.44518280029297,
+			},
+		},
+		["Augustin - Golemagg"] = {
+			["movable"] = false,
+			["point"] = {
+				["y"] = -296.3492736816406,
+				["relative"] = "TOPRIGHT",
+				["point"] = "TOPRIGHT",
+				["x"] = -38.57138442993164,
 			},
 		},
 	},

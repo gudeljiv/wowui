@@ -1,17 +1,17 @@
 
 RXPCData = {
-	["stepSkip"] = {
-	},
+	["GA"] = false,
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
 	["currentGuideName"] = "",
-	["currentGuideGroup"] = "",
+	["stepSkip"] = {
+	},
 	["flightPaths"] = {
 		[23] = "Orgrimmar, Durotar",
 		[80] = "Ratchet, The Barrens",
 	},
-	["GA"] = false,
+	["currentGuideGroup"] = "",
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -30,10 +30,10 @@ RXPCTrackingData = {
 							["monthDay"] = 30,
 							["day"] = 0,
 							["month"] = 12,
-							["weekday"] = 6,
+							["minute"] = 30,
 							["year"] = 2022,
 							["hour"] = 13,
-							["minute"] = 30,
+							["weekday"] = 6,
 						},
 						["started"] = 0,
 					},
@@ -64,21 +64,20 @@ RXPCSettings = {
 			["enableFPAutomation"] = false,
 			["hardcore"] = false,
 			["enableLevelUpAnnounceGroup"] = false,
-			["enableFlyStepAnnouncements"] = false,
+			["frameHeight"] = 125.0000228881836,
 			["enableMinimapButton"] = false,
 			["activeItemsScale"] = 1.2,
 			["checkVersions"] = false,
-			["enableTargetMacro"] = false,
+			["enableTargetAutomation"] = false,
 			["lockFrames"] = false,
 			["enableTracker"] = false,
 			["enableBindAutomation"] = false,
-			["xprate"] = 1.5,
 			["enableLevelUpAnnounceSolo"] = false,
 			["alwaysSendBranded"] = false,
-			["enableTargetAutomation"] = false,
+			["enableTargetMacro"] = false,
 			["enableQuestRewardAutomation"] = true,
 			["hideInRaid"] = false,
-			["frameHeight"] = 125.0000228881836,
+			["enableFlyStepAnnouncements"] = false,
 		},
 	},
 }

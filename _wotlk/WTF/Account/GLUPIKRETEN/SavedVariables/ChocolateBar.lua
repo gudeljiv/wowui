@@ -14,11 +14,11 @@ ChocolateBarDB = {
 		["Kosturko - Golemagg"] = "Default",
 		["Poklopac - Dreadnaught"] = "Default",
 		["Konac - Dreadnaught"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
+		["Grgur - Golemagg"] = "Default",
 		["Verminz - Genesis"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
 		["Augustin - Golemagg"] = "Default",
-		["Grgur - Golemagg"] = "Default",
+		["Tudum - Jin'do"] = "Default",
 		["Koloman - Golemagg"] = "Default",
 		["Pitchwise - Genesis"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
@@ -58,7 +58,7 @@ ChocolateBarDB = {
 		["Judawise - Golemagg"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
 		["Provokator - Jin'do"] = "Default",
-		["Tudum - Jin'do"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
 		["Mxym - Golemagg"] = "Default",
 	},
 	["addonVersion"] = "v3.9.7",
@@ -644,9 +644,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 732339,
-		["timeStamp"] = 1176693.944,
-		["timeAtThisLevel"] = 114880,
+		["total"] = 733359,
+		["timeStamp"] = 1348078.447,
+		["timeAtThisLevel"] = 115900,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -690,9 +690,9 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 1042964,
-		["timeAtThisLevel"] = 11944,
-		["timeStamp"] = 1274536.539,
+		["total"] = 1043270,
+		["timeAtThisLevel"] = 12250,
+		["timeStamp"] = 1347028.754,
 	},
 	["Battlearm-Golemagg"] = {
 		["total"] = 517254,
@@ -789,9 +789,9 @@ CB_PlayedTime = {
 		["total"] = 21359,
 	},
 	["Tadibey-Golemagg"] = {
-		["total"] = 14269,
-		["timeStamp"] = 704222.594,
-		["timeAtThisLevel"] = 2238,
+		["total"] = 16149,
+		["timeStamp"] = 1346301.17,
+		["timeAtThisLevel"] = 1249,
 	},
 	["Dmitar-"] = {
 		["total"] = 1872,
@@ -817,14 +817,14 @@ CB_PlayedTime = {
 		["total"] = 18945,
 	},
 	["Augustin-Golemagg"] = {
-		["total"] = 434919,
-		["timeAtThisLevel"] = 12856,
-		["timeStamp"] = 2873601.121,
+		["total"] = 435290,
+		["timeAtThisLevel"] = 13227,
+		["timeStamp"] = 1346843.286,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1701059,
-		["timeAtThisLevel"] = 608512,
-		["timeStamp"] = 81394.054,
+		["total"] = 1701338,
+		["timeAtThisLevel"] = 608791,
+		["timeStamp"] = 1347358.881,
 	},
 	["Provokator-Jin'do"] = {
 		["total"] = 22720,
@@ -840,7 +840,9 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 2973,
 	},
 	["Mxyzptlk-Golemagg"] = {
-		["total"] = 29335,
+		["total"] = 50262,
+		["timeAtThisLevel"] = 0,
+		["timeStamp"] = 1346611.771,
 	},
 	["Elohssa-"] = {
 		["total"] = 3552,

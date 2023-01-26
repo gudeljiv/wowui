@@ -440,11 +440,11 @@ AtlasLootClassicDB = {
 			[35152] = "honor:7600",
 			[40267] = "EmblemOfValor:25",
 			[31987] = "honor:5320",
-			[34577] = "honor:3990",
+			[45830] = "EmblemOfConquest:28",
 			[31962] = "honor:6650",
 			[31978] = "honor:3325",
 			[28925] = "honor:3800",
-			[45830] = "EmblemOfConquest:28",
+			[40715] = "EmblemOfHeroism:15",
 			[32026] = "honor:6650",
 			[41770] = "EmblemOfHeroism:30",
 			[32058] = "honor:6650",
@@ -452,7 +452,7 @@ AtlasLootClassicDB = {
 			[35163] = "honor:7600",
 			[35131] = "honor:5700",
 			[40683] = "EmblemOfHeroism:40",
-			[40715] = "EmblemOfHeroism:15",
+			[34577] = "honor:3990",
 			[40747] = "EmblemOfValor:40",
 			[40779] = "EmblemOfHeroism:45",
 			[28307] = "honor:4750",
@@ -460,7 +460,7 @@ AtlasLootClassicDB = {
 			[28126] = "honor:3800",
 			[28314] = "honor:4750",
 			[42985] = "EmblemOfHeroism:40",
-			[28334] = "honor:4750",
+			[40268] = "EmblemOfValor:25",
 			[42026] = "honor:16590",
 			[42058] = "honor:16590",
 			[33906] = "honor:5130",
@@ -469,8 +469,8 @@ AtlasLootClassicDB = {
 			[35025] = "honor:7600",
 			[28243] = "honor:2280",
 			[28302] = "honor:4750",
+			[28334] = "honor:4750",
 			[41291] = "EmblemOfValor:30",
-			[40268] = "EmblemOfValor:25",
 			[31986] = "honor:13300",
 			[33737] = "honor:8550",
 			[28138] = "honor:4750",
@@ -656,7 +656,7 @@ AtlasLootClassicDB = {
 			[42032] = "honor:33180",
 			[42064] = "honor:33180",
 			[28309] = "honor:4750",
-			[33944] = "honor:5130",
+			[42128] = "honor:43400",
 			[34999] = "honor:9500",
 			[40719] = "EmblemOfValor:25",
 			[35095] = "honor:9500",
@@ -703,8 +703,8 @@ AtlasLootClassicDB = {
 			[32014] = "honor:13300",
 			[48683] = "EmblemOfHeroism:40",
 			[32046] = "honor:6650",
+			[33944] = "honor:5130",
 			[28241] = "honor:2280",
-			[42128] = "honor:43400",
 			[28920] = "honor:3800",
 			[45836] = "EmblemOfConquest:28",
 			[40691] = "EmblemOfHeroism:40",
@@ -1360,7 +1360,7 @@ AtlasLootClassicDB = {
 				["selected"] = {
 					nil, -- [1]
 					"DrakTharonKeep", -- [2]
-					4, -- [3]
+					nil, -- [3]
 					6, -- [4]
 					0, -- [5]
 				},
@@ -1414,9 +1414,9 @@ AtlasLootClassicDB = {
 				},
 				["selected"] = {
 					nil, -- [1]
-					"UtgardePinnacle", -- [2]
-					nil, -- [3]
-					9, -- [4]
+					"VaultofArchavon", -- [2]
+					2, -- [3]
+					7, -- [4]
 					0, -- [5]
 				},
 			},

@@ -13,6 +13,8 @@ GDKPd_DB = {
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Miqa - Golemagg"] = "Miqa - Golemagg",
+		["Augustin - Golemagg"] = "Augustin - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
 	},
 	["profiles"] = {
@@ -61,11 +63,11 @@ GDKPd_DB = {
 			},
 		},
 		["Moolatz - Golemagg"] = {
+			["movable"] = false,
 			["playerbalancepoint"] = {
 				["y"] = 275.3965759277344,
 				["x"] = -443.1741638183594,
 			},
-			["movable"] = false,
 			["point"] = {
 				["y"] = -289.2064208984375,
 				["relative"] = "TOPRIGHT",
@@ -98,6 +100,24 @@ GDKPd_DB = {
 				["relative"] = "TOPRIGHT",
 				["point"] = "TOPRIGHT",
 				["x"] = -254.4450073242188,
+			},
+		},
+		["Augustin - Golemagg"] = {
+			["movable"] = false,
+			["point"] = {
+				["y"] = -296.3492736816406,
+				["relative"] = "TOPRIGHT",
+				["point"] = "TOPRIGHT",
+				["x"] = -38.57138442993164,
+			},
+		},
+		["Mxyzptlk - Golemagg"] = {
+			["movable"] = false,
+			["point"] = {
+				["y"] = -291.2698669433594,
+				["relative"] = "TOPRIGHT",
+				["point"] = "TOPRIGHT",
+				["x"] = -54.44518280029297,
 			},
 		},
 		["Tadibey - Golemagg"] = {
