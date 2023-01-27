@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 8731,
+	["session"] = 8733,
 	["errors"] = {
 		{
 			["message"] = "[string \"TradeSkillSearchBox:ClearlAllPoints();\"]:1: attempt to index global 'TradeSkillSearchBox' (a nil value)",

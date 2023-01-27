@@ -63,11 +63,11 @@ GDKPd_DB = {
 			},
 		},
 		["Moolatz - Golemagg"] = {
-			["movable"] = false,
 			["playerbalancepoint"] = {
 				["y"] = 275.3965759277344,
 				["x"] = -443.1741638183594,
 			},
+			["movable"] = false,
 			["point"] = {
 				["y"] = -289.2064208984375,
 				["relative"] = "TOPRIGHT",
