@@ -8,44 +8,42 @@ end
 
 local function isInEnabledPhase(phaseText) 
 
-	local showTooltip = false;
-
 	if phaseText == "" then
 		return true;
 	end
 	
-	if LBISSettings.PhaseTooltip[LBIS.L["PreRaid"]] == true then
+	if LBISSettings.PhaseTooltip[LBIS.L["PreRaid"]] then
 		if LBIS:FindInPhase(phaseText, "0") then
 			return true;
 		end
 	end
-	if LBISSettings.PhaseTooltip[LBIS.L["Phase 1"]] == true then
+	if LBISSettings.PhaseTooltip[LBIS.L["Phase 1"]] then
 		if LBIS:FindInPhase(phaseText, "1") then
 			return true;
 		end
 	end
-	 if LBISSettings.PhaseTooltip[LBIS.L["Phase 2"]] == true then
-	 	if LBIS:FindInPhase(phaseText, "2") ~= nil then
+	if LBISSettings.PhaseTooltip[LBIS.L["Phase 2"]] then
+	 	if LBIS:FindInPhase(phaseText, "2") then
 			return true;
 	 	end
-	 end
-	-- if LBISSettings.PhaseTooltip[LBIS.L["Phase 3"]] == true then
-	-- 	if LBIS:FindInPhase(phaseText, "3") ~= nil then
+	end
+	-- if LBISSettings.PhaseTooltip[LBIS.L["Phase 3"]] then
+	-- 	if LBIS:FindInPhase(phaseText, "3") then
 	--		return true;
 	-- 	end
 	-- end
-	-- if LBISSettings.PhaseTooltip[LBIS.L["Phase 4"]] == true then
-	-- 	if LBIS:FindInPhase(phaseText, "4") ~= nil then
+	-- if LBISSettings.PhaseTooltip[LBIS.L["Phase 4"]] then
+	-- 	if LBIS:FindInPhase(phaseText, "4") then
 	--		return true;
 	-- 	end
 	-- end
-	-- if LBISSettings.PhaseTooltip[LBIS.L["Phase 5"]] == true then
-	-- 	if LBIS:FindInPhase(phaseText, "5") ~= nil then
+	-- if LBISSettings.PhaseTooltip[LBIS.L["Phase 5"]] then
+	-- 	if LBIS:FindInPhase(phaseText, "5") then
 	--		return true;
 	-- 	end
 	-- end
 	
-	return showTooltip;
+	return false;
 end
 
 local function buildCombinedTooltip(entry, combinedTooltip, foundCustom)
@@ -86,7 +84,7 @@ local function buildCustomTooltip(priorityEntry, combinedTooltip)
 			local classSpec = LBIS.ClassSpec[k]
 			foundCustom[k] = true;
 				
-			table.insert(combinedTooltip, { Class = classSpec.Class, Spec = classSpec.Spec, Bis = "Custom", Phase = "#"..v })
+			table.insert(combinedTooltip, { Class = classSpec.Class, Spec = classSpec.Spec, Bis = v.TooltipText, Phase = "" })
 		end
 	end
 
@@ -133,13 +131,33 @@ local function onTooltipSetItem(tooltip, ...)
 		local combinedTooltip = {};
 		local foundCustom = {};
 
+		
 		if LBIS.CustomEditList.Items[itemId] then
 			foundCustom = buildCustomTooltip(LBIS.CustomEditList.Items[itemId], combinedTooltip)
 		end
 
-		if LBIS.ItemsByIdAndSpec[itemId] then
-			buildCombinedTooltip(LBIS.ItemsByIdAndSpec[itemId], combinedTooltip, foundCustom)
+		local itemEntries = {};
+		if LBIS.ItemsByIdAndSpec[itemId] then		
+			for key, entry in pairs(LBIS.ItemsByIdAndSpec[itemId]) do 	
+				itemEntries[key] = entry;
+			end
 		end
+
+		if LBIS.TierSources[itemId] then
+			for k, v in pairs(LBIS.TierSources[itemId]) do
+				if LBIS.CustomEditList.Items[v] then
+					foundCustom = buildCustomTooltip(LBIS.CustomEditList.Items[v], combinedTooltip)
+				end
+				
+				if LBIS.ItemsByIdAndSpec[v] then
+					for key, entry in pairs(LBIS.ItemsByIdAndSpec[v]) do 	
+						itemEntries[key] = entry;
+					end
+				end
+			end
+		end
+
+		buildCombinedTooltip(itemEntries, combinedTooltip, foundCustom);
 
 		buildTooltip(tooltip, combinedTooltip);
 	end)

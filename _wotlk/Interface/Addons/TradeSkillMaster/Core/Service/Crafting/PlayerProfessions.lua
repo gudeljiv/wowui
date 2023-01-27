@@ -277,11 +277,11 @@ function private.PlayerProfessionsThread()
 			-- check if the player still exists and still has this profession
 			local playerProfessions = TSM.db:Get("sync", TSM.db:GetSyncScopeKeyByCharacter(player), "internalData", "playerProfessions")
 			if not playerProfessions or not playerProfessions[TSM.Crafting.GetProfession(craftString)] then
-				tinsert(playersToRemove, player)
+				playersToRemove[player] = true
 			end
 		end
 		local stillExists = true
-		if #playersToRemove > 0 then
+		if next(playersToRemove) then
 			stillExists = TSM.Crafting.RemovePlayers(craftString, playersToRemove)
 		end
 		TempTable.Release(playersToRemove)

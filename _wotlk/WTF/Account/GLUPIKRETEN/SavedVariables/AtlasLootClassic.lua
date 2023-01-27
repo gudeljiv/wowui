@@ -329,8 +329,8 @@ AtlasLootClassicDB = {
 			[50460] = "EmblemOfFrost:30",
 			[43236] = "honor:12",
 			[28806] = "honor:3040",
-			[28140] = "honor:4750",
 			[42949] = "EmblemOfHeroism:40",
+			[28140] = "honor:4750",
 			[32455] = "honor:1",
 			[40803] = "EmblemOfValor:30",
 			[42022] = "honor:16590",
@@ -354,18 +354,18 @@ AtlasLootClassicDB = {
 			[41575] = "honor:1250",
 			[34014] = "honor:5130",
 			[47664] = "EmblemOfTriumph:25",
-			[45827] = "EmblemOfConquest:28",
-			[40680] = "EmblemOfHeroism:25",
 			[40712] = "EmblemOfHeroism:15",
+			[40680] = "EmblemOfHeroism:25",
+			[45827] = "EmblemOfConquest:28",
 			[31379] = "honor:4750",
 			[41278] = "EmblemOfHeroism:30",
 			[28903] = "arcanerune:2",
 			[40840] = "EmblemOfValor:45",
 			[24544] = "honor:4750",
 			[42950] = "EmblemOfHeroism:40",
-			[42023] = "honor:16590",
-			[16552] = "honor:2500",
 			[32816] = "honor:3990",
+			[50463] = "EmblemOfFrost:30",
+			[42023] = "honor:16590",
 			[42055] = "honor:16590",
 			[33903] = "honor:6840",
 			[28851] = "honor:3800",
@@ -373,7 +373,7 @@ AtlasLootClassicDB = {
 			[35022] = "honor:7600",
 			[35132] = "honor:5700",
 			[28812] = "honor:3800",
-			[50463] = "EmblemOfFrost:30",
+			[16552] = "honor:2500",
 			[35150] = "honor:7600",
 			[28922] = "honor:3800",
 			[35110] = "honor:2850",
@@ -395,9 +395,9 @@ AtlasLootClassicDB = {
 			[40841] = "EmblemOfValor:45",
 			[32813] = "honor:3990",
 			[42951] = "EmblemOfHeroism:40",
-			[32817] = "honor:3990",
-			[32785] = "honor:5320",
 			[42024] = "honor:16590",
+			[32785] = "honor:5320",
+			[32817] = "honor:3990",
 			[42056] = "honor:16590",
 			[33904] = "honor:5130",
 			[28643] = "honor:4750",
@@ -420,7 +420,7 @@ AtlasLootClassicDB = {
 			[28605] = "honor:4750",
 			[31594] = "honor:3800",
 			[40682] = "EmblemOfHeroism:40",
-			[45829] = "EmblemOfConquest:28",
+			[40714] = "EmblemOfHeroism:15",
 			[40746] = "EmblemOfValor:40",
 			[40778] = "EmblemOfHeroism:45",
 			[44902] = "cpvpWintergrasp:40",
@@ -442,7 +442,7 @@ AtlasLootClassicDB = {
 			[31987] = "honor:5320",
 			[40715] = "EmblemOfHeroism:15",
 			[31962] = "honor:6650",
-			[28909] = "arcanerune:8",
+			[31978] = "honor:3325",
 			[28925] = "honor:3800",
 			[34577] = "honor:3990",
 			[32026] = "honor:6650",
@@ -480,12 +480,12 @@ AtlasLootClassicDB = {
 			[28446] = "honor:3800",
 			[45639] = "EmblemOfConquest:58",
 			[33065] = "honor:3990",
-			[31595] = "honor:3800",
-			[40748] = "EmblemOfValor:40",
 			[41675] = "EmblemOfHeroism:45",
-			[40684] = "EmblemOfHeroism:40",
-			[40716] = "EmblemOfHeroism:15",
 			[41771] = "EmblemOfValor:30",
+			[31595] = "honor:3800",
+			[40684] = "EmblemOfHeroism:40",
+			[45831] = "EmblemOfConquest:28",
+			[40748] = "EmblemOfValor:40",
 			[39757] = "EmblemOfValor:25",
 			[28638] = "honor:4750",
 			[40844] = "EmblemOfConquest:58",
@@ -508,24 +508,24 @@ AtlasLootClassicDB = {
 			[31963] = "honor:6650",
 			[28910] = "arcanerune:8",
 			[28926] = "honor:3800",
-			[48677] = "EmblemOfHeroism:40",
 			[32027] = "honor:6650",
+			[48677] = "EmblemOfHeroism:40",
 			[28476] = "honor:9500",
 			[32059] = "honor:5320",
 			[28919] = "honor:7600",
 			[47662] = "EmblemOfTriumph:25",
 			[41676] = "EmblemOfValor:45",
 			[40685] = "EmblemOfHeroism:40",
-			[34579] = "honor:3990",
+			[18840] = "honor:2500",
 			[40749] = "EmblemOfValor:40",
 			[40781] = "EmblemOfValor:45",
 			[42020] = "honor:16590",
 			[28127] = "honor:4750",
 			[40877] = "honor:21700",
-			[32789] = "honor:5320",
-			[42060] = "honor:16590",
 			[33812] = "honor:6840",
-			[42028] = "honor:33180",
+			[42060] = "honor:16590",
+			[32789] = "honor:5320",
+			[32821] = "honor:3990",
 			[33876] = "honor:5130",
 			[41069] = "honor:43400",
 			[28644] = "honor:3800",
@@ -550,13 +550,13 @@ AtlasLootClassicDB = {
 			[42025] = "honor:16590",
 			[45833] = "EmblemOfConquest:28",
 			[40750] = "EmblemOfValor:40",
-			[33813] = "honor:5130",
+			[32790] = "honor:5320",
 			[18428] = "honor:200",
 			[28642] = "honor:3800",
-			[28639] = "honor:3800",
+			[40878] = "honor:21700",
 			[33877] = "honor:6840",
 			[44912] = "cpvpWintergrasp:25",
-			[32790] = "honor:5320",
+			[33813] = "honor:5130",
 			[42029] = "honor:33180",
 			[42061] = "honor:16590",
 			[33909] = "honor:6840",
@@ -585,12 +585,12 @@ AtlasLootClassicDB = {
 			[40783] = "EmblemOfValor:45",
 			[32962] = "honor:3990",
 			[35327] = "honor:3990",
-			[40879] = "honor:43400",
+			[28128] = "honor:4750",
 			[32819] = "honor:3990",
-			[42062] = "honor:33180",
+			[33878] = "honor:6840",
 			[32791] = "honor:5320",
 			[42030] = "honor:33180",
-			[33878] = "honor:6840",
+			[42062] = "honor:33180",
 			[33910] = "honor:5130",
 			[33942] = "honor:2850",
 			[34997] = "honor:19000",
@@ -598,7 +598,7 @@ AtlasLootClassicDB = {
 			[28139] = "honor:3800",
 			[35093] = "honor:9500",
 			[28320] = "honor:2850",
-			[15199] = "honor:10000",
+			[35157] = "honor:7600",
 			[34129] = "honor:16650",
 			[23253] = "honor:1250",
 			[35161] = "honor:7600",
@@ -610,23 +610,23 @@ AtlasLootClassicDB = {
 			[35038] = "honor:9500",
 			[32818] = "honor:3990",
 			[33946] = "honor:3990",
-			[45835] = "EmblemOfConquest:28",
-			[40688] = "EmblemOfHeroism:40",
 			[40720] = "EmblemOfValor:25",
+			[40688] = "EmblemOfHeroism:40",
+			[45835] = "EmblemOfConquest:28",
 			[35071] = "honor:9500",
 			[28443] = "honor:3800",
 			[40816] = "EmblemOfHeroism:45",
 			[33687] = "honor:12825",
-			[28640] = "honor:3800",
+			[40880] = "honor:43400",
 			[33068] = "honor:3990",
 			[28295] = "honor:4750",
 			[32792] = "honor:5320",
 			[42031] = "honor:33180",
-			[33879] = "honor:6840",
+			[42063] = "honor:33180",
 			[33911] = "honor:6840",
 			[33943] = "honor:3990",
 			[34998] = "honor:7600",
-			[31853] = "honor:50",
+			[32984] = "honor:3800",
 			[37927] = "honor:5700",
 			[35094] = "honor:9500",
 			[41296] = "EmblemOfValor:45",
@@ -642,9 +642,9 @@ AtlasLootClassicDB = {
 			[28137] = "honor:4750",
 			[40723] = "EmblemOfValor:25",
 			[40689] = "EmblemOfHeroism:40",
-			[18826] = "honor:2500",
 			[41712] = "EmblemOfHeroism:30",
-			[45836] = "EmblemOfConquest:28",
+			[18826] = "honor:2500",
+			[40721] = "EmblemOfValor:25",
 			[32055] = "honor:13300",
 			[18874] = "honor:5000",
 			[40817] = "EmblemOfHeroism:45",
@@ -676,24 +676,24 @@ AtlasLootClassicDB = {
 			[28641] = "honor:3800",
 			[31598] = "honor:4750",
 			[41713] = "EmblemOfValor:30",
-			[45837] = "EmblemOfConquest:28",
+			[40722] = "EmblemOfValor:25",
 			[41202] = "EmblemOfHeroism:45",
 			[40786] = "EmblemOfConquest:58",
-			[33945] = "honor:2850",
+			[42129] = "honor:43400",
 			[33689] = "honor:8550",
 			[24549] = "honor:3800",
 			[18427] = "honor:100",
 			[42992] = "EmblemOfHeroism:50",
 			[32794] = "honor:5320",
 			[42033] = "honor:33180",
-			[33881] = "honor:5130",
-			[41074] = "honor:43400",
-			[42129] = "honor:43400",
-			[35000] = "honor:9500",
 			[42065] = "honor:33180",
+			[41074] = "honor:43400",
+			[33945] = "honor:2850",
+			[35000] = "honor:9500",
+			[33881] = "honor:5130",
 			[35064] = "honor:19000",
 			[41234] = "honor:43400",
-			[40722] = "EmblemOfValor:25",
+			[45837] = "EmblemOfConquest:28",
 			[35160] = "honor:7600",
 			[33716] = "honor:17100",
 			[44431] = "honor:5700",
@@ -706,7 +706,7 @@ AtlasLootClassicDB = {
 			[42128] = "honor:43400",
 			[33944] = "honor:5130",
 			[28920] = "honor:3800",
-			[40721] = "EmblemOfValor:25",
+			[45836] = "EmblemOfConquest:28",
 			[40691] = "EmblemOfHeroism:40",
 			[45838] = "EmblemOfConquest:28",
 			[16549] = "honor:2500",
@@ -715,9 +715,9 @@ AtlasLootClassicDB = {
 			[33690] = "honor:6840",
 			[28130] = "honor:4750",
 			[33754] = "honor:8550",
-			[32984] = "honor:3800",
-			[42063] = "honor:33180",
-			[40880] = "honor:43400",
+			[31853] = "honor:50",
+			[33879] = "honor:6840",
+			[28640] = "honor:3800",
 			[42066] = "honor:33180",
 			[40836] = "EmblemOfHeroism:45",
 			[42130] = "honor:43400",
@@ -728,10 +728,10 @@ AtlasLootClassicDB = {
 			[35129] = "honor:5700",
 			[15200] = "honor:100",
 			[30489] = "honor:6650",
-			[35157] = "honor:7600",
+			[15199] = "honor:10000",
 			[16335] = "honor:400",
 			[29470] = "honor:16650",
-			[28128] = "honor:4750",
+			[40879] = "honor:43400",
 			[22852] = "honor:1000",
 			[28450] = "honor:3800",
 			[48716] = "EmblemOfHeroism:40",
@@ -747,7 +747,7 @@ AtlasLootClassicDB = {
 			[33691] = "honor:8550",
 			[24550] = "honor:9500",
 			[33755] = "honor:8550",
-			[40878] = "honor:21700",
+			[28639] = "honor:3800",
 			[32796] = "honor:5320",
 			[32828] = "ApexisS:10",
 			[42067] = "honor:33180",
@@ -762,11 +762,11 @@ AtlasLootClassicDB = {
 			[32450] = "honor:7125",
 			[42021] = "honor:16590",
 			[31967] = "honor:5320",
-			[32821] = "honor:3990",
+			[42028] = "honor:33180",
 			[28930] = "honor:3800",
 			[28313] = "honor:4750",
 			[48685] = "EmblemOfHeroism:40",
-			[18840] = "honor:2500",
+			[34579] = "honor:3990",
 			[41588] = "honor:5700",
 			[40859] = "EmblemOfValor:30",
 			[33767] = "honor:6840",
@@ -774,7 +774,7 @@ AtlasLootClassicDB = {
 			[18828] = "honor:2500",
 			[45840] = "EmblemOfConquest:28",
 			[18860] = "honor:5000",
-			[45831] = "EmblemOfConquest:28",
+			[40716] = "EmblemOfHeroism:15",
 			[34540] = "honor:17100",
 			[33692] = "honor:8550",
 			[31586] = "honor:3800",
@@ -794,13 +794,13 @@ AtlasLootClassicDB = {
 			[28355] = "honor:2850",
 			[40342] = "EmblemOfValor:25",
 			[41290] = "EmblemOfHeroism:30",
-			[31978] = "honor:3325",
+			[28909] = "arcanerune:8",
 			[28331] = "honor:4750",
 			[33309] = "honor:3325",
 			[28451] = "honor:4750",
 			[48718] = "EmblemOfHeroism:65",
 			[41589] = "honor:5700",
-			[40714] = "EmblemOfHeroism:15",
+			[45829] = "EmblemOfConquest:28",
 			[31584] = "honor:3040",
 			[35166] = "honor:5700",
 			[40694] = "EmblemOfHeroism:40",
@@ -1111,6 +1111,23 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
+		["Tadibey - Golemagg"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"AhnKahet", -- [2]
+					[5] = 0,
+				},
+			},
+		},
+		["Pitchwise - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+		},
+		["Elohssa - Stonespine"] = {
+		},
 		["Nitwit - Dreadnaught"] = {
 			["minimap"] = {
 				["shown"] = false,
@@ -1124,23 +1141,6 @@ AtlasLootClassicDB = {
 					"CENTER", -- [3]
 					-172.0000305175781, -- [4]
 					64.74999237060547, -- [5]
-				},
-			},
-		},
-		["Pitchwise - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
-		},
-		["Elohssa - Stonespine"] = {
-		},
-		["Tadibey - Golemagg"] = {
-			["GUI"] = {
-				["selected"] = {
-					nil, -- [1]
-					"AhnKahet", -- [2]
-					[5] = 0,
 				},
 			},
 		},
@@ -1288,9 +1288,9 @@ AtlasLootClassicDB = {
 				},
 			},
 		},
-		["Battlearm - Hydraxian Waterlords"] = {
-		},
 		["Testxv - Golemagg"] = {
+		},
+		["Battlearm - Hydraxian Waterlords"] = {
 		},
 		["Pitchwise - Ashbringer"] = {
 			["minimap"] = {
@@ -1331,21 +1331,9 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
-			["GUI"] = {
-				["point"] = {
-					"TOP", -- [1]
-					nil, -- [2]
-					"TOP", -- [3]
-					-252.6031036376953, -- [4]
-					-153.1587371826172, -- [5]
-				},
-				["selected"] = {
-					nil, -- [1]
-					"DrakTharonKeep", -- [2]
-					nil, -- [3]
-					6, -- [4]
-					0, -- [5]
-				},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 			["Addons"] = {
 				["Favourites"] = {
@@ -1361,11 +1349,23 @@ AtlasLootClassicDB = {
 			["Tooltip"] = {
 				["useGameTooltip"] = false,
 			},
-			["showItemLvlInTT"] = false,
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
+			["GUI"] = {
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					16.46053886413574, -- [4]
+					29.49213981628418, -- [5]
+				},
+				["selected"] = {
+					nil, -- [1]
+					"NaxxramasWrath", -- [2]
+					8, -- [3]
+					6, -- [4]
+					0, -- [5]
+				},
 			},
+			["showItemLvlInTT"] = false,
 		},
 		["Judawise - Golemagg"] = {
 			["minimap"] = {
@@ -1404,19 +1404,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
-			["showCompanionLearnedInfo"] = false,
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
-			["Addons"] = {
-				["Favourites"] = {
-					["showListInTT"] = false,
-				},
-			},
-			["Tooltip"] = {
-				["useGameTooltip"] = false,
-			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -1427,13 +1414,26 @@ AtlasLootClassicDB = {
 				},
 				["selected"] = {
 					nil, -- [1]
-					"VaultofArchavon", -- [2]
-					2, -- [3]
+					"NaxxramasWrath", -- [2]
+					15, -- [3]
 					7, -- [4]
 					0, -- [5]
 				},
 			},
+			["showCompanionLearnedInfo"] = false,
+			["Addons"] = {
+				["Favourites"] = {
+					["showListInTT"] = false,
+				},
+			},
+			["Tooltip"] = {
+				["useGameTooltip"] = false,
+			},
 			["showItemLvlInTT"] = false,
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 		},
 		["Miqa - Golemagg"] = {
 			["GUI"] = {

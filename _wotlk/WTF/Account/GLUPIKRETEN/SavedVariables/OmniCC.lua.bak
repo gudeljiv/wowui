@@ -9,18 +9,18 @@ OmniCCDB = {
 		["Kaonac - Jin'do"] = "Default",
 		["Wells - Jin'do"] = "Default",
 		["Tadibey - Golemagg"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
+		["Tudum - Jin'do"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
 		["Augustin - Golemagg"] = "Default",
-		["Tudum - Jin'do"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
-		["Provokator - Jin'do"] = "Default",
-		["Pitchwise - Ashbringer"] = "Default",
 		["Miqa - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
+		["Pitchwise - Ashbringer"] = "Default",
+		["Provokator - Jin'do"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Handrmandr - Golemagg"] = "Default",
 	},
 	["global"] = {
@@ -139,7 +139,6 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["engine"] = "AniUpdater",
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -150,7 +149,7 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
-	["version"] = "8.1.1",
+	["engine"] = "AniUpdater",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
@@ -266,4 +265,5 @@ OmniCC4Config = {
 			["fontSize"] = 18,
 		},
 	},
+	["version"] = "8.1.1",
 }

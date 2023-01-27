@@ -2,8 +2,6 @@ LBIS.SearchFrame = {}
 LBIS.SearchFrame.Slot = "";
 LBIS.SearchFrame.ItemList = {};
 
---TODO: add/remove tier piece tokens to custom list when they're added
-
 local function conductSearch(text, foundFunc)
 
     local foundItems = {};
@@ -50,16 +48,16 @@ local function showCustomList()
     local f = LBIS.SearchFrame.Frame.ItemListFrame;
     LBIS.SearchFrame.Frame.SearchLabel:SetText("Search for items to add to "..LBIS.SearchFrame.Slot.." list:");
 
-    for orderId, itemId in pairs(LBIS.SearchFrame.ItemList) do
+    for orderId, sItem in pairs(LBIS.SearchFrame.ItemList) do
         
         itemCount = itemCount + 1;
 
-        if LBIS.CustomEditList.Items[itemId] == nil then
-            LBIS.CustomEditList.Items[itemId] = {};
+        if LBIS.CustomEditList.Items[sItem.ItemId] == nil then
+            LBIS.CustomEditList.Items[sItem.ItemId] = {};
         end
-        LBIS.CustomEditList.Items[itemId][LBIS.NameToSpecId[LBISSettings.SelectedSpec]] = itemCount;
+        LBIS.CustomEditList.Items[sItem.ItemId][LBIS.NameToSpecId[LBISSettings.SelectedSpec]] = sItem;
 
-        LBIS:GetItemInfo(itemId, function(item)
+        LBIS:GetItemInfo(sItem.ItemId, function(item)
             f.CustomButtons[itemCount].ItemButton:SetNormalTexture(item.Texture);
             LBIS:SetTooltipOnButton(f.CustomButtons[itemCount].ItemButton, item);
 
@@ -71,6 +69,17 @@ local function showCustomList()
             end
             type = type.. ", "..LBIS.SearchFrame.Slot;
             f.CustomButtons[itemCount].ItemType:SetText(type);
+
+            f.CustomButtons[itemCount].TooltipText:SetText(sItem.TooltipText);
+            f.CustomButtons[itemCount].TooltipText:SetScript("OnTextChanged", function(editBox, isUserInput)
+                sItem.TooltipText = editBox:GetText();
+            end);
+            f.CustomButtons[itemCount].TooltipText:SetScript("OnEscapePressed", function(self)
+	            self:ClearFocus()
+            end);
+            f.CustomButtons[itemCount].TooltipText:SetScript("OnTabPressed", function(self)
+	            self:ClearFocus()
+            end);
 
             f.CustomButtons[itemCount].UpButton.CustomIndex = itemCount;
             f.CustomButtons[itemCount].UpButton:SetScript("OnClick", function(self, button)
@@ -94,7 +103,7 @@ local function showCustomList()
             f.CustomButtons[itemCount].DeleteButton:SetScript("OnClick", function(self, button)
                 if button == "LeftButton" then
                     table.remove(LBIS.SearchFrame.ItemList, self.CustomIndex);
-                    LBIS.CustomEditList.Items[itemId][LBIS.NameToSpecId[LBISSettings.SelectedSpec]] = nil;
+                    LBIS.CustomEditList.Items[sItem.ItemId][LBIS.NameToSpecId[LBISSettings.SelectedSpec]] = nil;
                     showCustomList();
                 end
             end);
@@ -153,11 +162,11 @@ local function createCustomList(f)
 
     for i=1,6 do
 
-        local b, bUp, bDown, bDelete, il, it, t2 = nil, nil, nil, nil, nil, nil, nil;
+        local b, bUp, bDown, bDelete, il, it, t2, tt, tl = nil, nil, nil, nil, nil, nil, nil, nil, nil;
         b = CreateFrame("Button", nil, itemf);
         b:SetSize(32, 32);
-        b:SetPoint("TOPLEFT", itemf, (math.floor((i-1) / 3) * 350) + 25, (math.fmod(i-1, 3) * -50) - 10);
-        b:Hide();        
+        b:SetPoint("TOPLEFT", itemf, (math.floor((i-1) / 3) * 350) + 25, (math.fmod(i-1, 3) * -75) - 10);
+        b:Hide();
 
         il = itemf:CreateFontString(nil, nil, "GameFontNormal");
         il:SetPoint("TOPLEFT", b, "TOPRIGHT", 2, -2);
@@ -165,13 +174,27 @@ local function createCustomList(f)
 
         it = itemf:CreateFontString(nil, nil,"GameFontNormalGraySmall");
         it:SetPoint("BOTTOMLEFT", b, "BOTTOMRIGHT", 2, 2);
-        il:Hide();
+        it:Hide();
+
+        tl = itemf:CreateFontString(nil, nil, "GameFontNormalSmall");
+        tl:SetText("Tooltip:");
+        tl:SetPoint("TOPLEFT", b, "BOTTOMLEFT", 0, -5);
+        tl:Hide();
+
+        tt = CreateFrame("EditBox", nil, itemf, "InputBoxTemplate");
+        tt:SetPoint("LEFT", tl, "RIGHT", 5, 0);
+        tt:SetFontObject(GameFontHighlightSmall)
+        tt:SetSize(100, 20);
+        tt:SetMovable(false);
+        tt:SetAutoFocus(false);
+        tt:SetMaxLetters(12);
+        tt:Hide();
 
         bDelete = CreateFrame("Button", nil, itemf);
         bDelete:SetSize(24, 24);
         bDelete:SetNormalTexture("Interface\\AddOns\\LoonBestInSlot\\Icons\\delete.tga");
         bDelete:SetPushedTexture("Interface\\AddOns\\LoonBestInSlot\\Icons\\delete_down.tga")
-        bDelete:SetPoint("TOPLEFT", (math.floor((i+2) / 3) * 350) - 30, (math.fmod(i-1, 3) * -50) - 15);
+        bDelete:SetPoint("TOPLEFT", (math.floor((i+2) / 3) * 350) - 30, (math.fmod(i-1, 3) * -75) - 15);
         bDelete:Hide();
 
         bDown = CreateFrame("Button", nil, itemf);
@@ -198,16 +221,26 @@ local function createCustomList(f)
         itemf.CustomButtons[i] = { 
             ItemButton = b, ItemLink = il, ItemType = it, 
             UpButton = bUp, DownButton = bDown, DeleteButton = bDelete,
+            TooltipText = tt,
             ShowButtons = function() 
-                b:Show();il:Show();it:Show();bUp:Show();bDown:Show();bDelete:Show();t2:Show();
+                b:Show();il:Show();it:Show();bUp:Show();bDown:Show();bDelete:Show();t2:Show();tt:Show();tl:Show();
             end,
             HideButtons = function()
-                b:Hide();il:Hide();it:Hide();bUp:Hide();bDown:Hide();bDelete:Hide();t2:Hide();
+                b:Hide();il:Hide();it:Hide();bUp:Hide();bDown:Hide();bDelete:Hide();t2:Hide();tt:Hide();tl:Hide();
             end
         }
     end
 
     return itemf;
+end
+
+local function addNewItem(itemId)
+    
+    local listSize = getn(LBIS.SearchFrame.ItemList);
+    listSize = listSize+1;
+    table.insert(LBIS.SearchFrame.ItemList, { ItemId = itemId, TooltipText = "Custom #"..listSize })
+
+    showCustomList();
 end
 
 local onCloseFunc = function() end
@@ -272,7 +305,7 @@ function LBIS.SearchFrame:CreateSearch()
         end
     );
 
-    LBIS.AutoComplete:Create(eb, showCustomList);
+    LBIS.AutoComplete:Create(eb, addNewItem);
     
     local cf = createCustomList(f);
     

@@ -58,11 +58,15 @@ function Crafting.OnInitialize()
 		:AddKey("global", "craftingOptions", "defaultCraftPriceMethod")
 		:AddKey("factionrealm", "userData", "craftingCooldownIgnore")
 	local used = TempTable.Acquire()
-	for _, craftInfo in pairs(private.settings.crafts) do
-		for matString in pairs(craftInfo.mats) do
-			for itemString in MatString.ItemIterator(matString) do
-				used[itemString] = true
+	for craftString, craftInfo in pairs(private.settings.crafts) do
+		if next(craftInfo.players) then
+			for matString in pairs(craftInfo.mats) do
+				for itemString in MatString.ItemIterator(matString) do
+					used[itemString] = true
+				end
 			end
+		else
+			private.settings.crafts[craftString] = nil
 		end
 	end
 	for itemString in pairs(used) do
@@ -106,6 +110,7 @@ function Crafting.OnInitialize()
 		for player in pairs(craftInfo.players) do
 			tinsert(playersTemp, player)
 		end
+		assert(#playersTemp > 0)
 		sort(playersTemp)
 		local itemName = ItemInfo.GetName(craftInfo.itemString) or ""
 		private.spellDB:BulkInsertNewRow(craftString, craftInfo.itemString, itemName, craftInfo.name or "", craftInfo.profession, craftInfo.numResult, playersTemp, craftInfo.hasCD and true or false)
@@ -368,45 +373,32 @@ function Crafting.GetMatsAsTable(craftString, tbl)
 end
 
 function Crafting.RemovePlayers(craftString, playersToRemove)
-	local shouldRemove = TempTable.Acquire()
-	if type(playersToRemove) == "table" then
-		for _, player in ipairs(playersToRemove) do
-			shouldRemove[player] = true
-		end
-	else
-		assert(type(playersToRemove) == "string")
-		shouldRemove[playersToRemove] = true
-	end
-	local players = TempTable.Acquire()
-	for _, player in Crafting.PlayerIterator(craftString) do
-		if shouldRemove[player] then
+	local row = private.spellDB:GetUniqueRow("craftString", craftString)
+	local players = TempTable.Acquire(row:GetFields("players"))
+	local isTable = type(playersToRemove) == "table"
+	assert(isTable or type(playersToRemove) == "string")
+	for i = #players, 1, -1 do
+		local player = players[i]
+		if (isTable and playersToRemove[player]) or (not isTable and playersToRemove == player) then
 			private.settings.crafts[craftString].players[player] = nil
-		else
-			tinsert(players, player)
+			tremove(players, i)
 		end
 	end
-	TempTable.Release(shouldRemove)
-	local query = private.spellDB:NewQuery()
-		:Equal("craftString", craftString)
-	local row = query:GetFirstResult()
-
 	if #players > 0 then
 		row:SetField("players", players)
 			:Update()
-		query:Release()
+			:Release()
 		TempTable.Release(players)
 		return true
+	else
+		-- No more players so remove this spell and all its mats
+		TempTable.Release(players)
+		private.spellDB:DeleteRow(row)
+		row:Release()
+		private.settings.crafts[craftString] = nil
+		private.MatDBDeleteCraftStrings(craftString)
+		return false
 	end
-	TempTable.Release(players)
-
-	-- no more players so remove this spell and all its mats
-	private.spellDB:DeleteRow(row)
-	query:Release()
-	private.settings.crafts[craftString] = nil
-
-	private.MatDBDeleteCraftStrings(craftString)
-
-	return false
 end
 
 function Crafting.RemovePlayerSpells(inactiveSpellIds)
@@ -427,17 +419,18 @@ function Crafting.RemovePlayerSpells(inactiveSpellIds)
 	for _, row in query:Iterator() do
 		assert(not next(private.playerTemp))
 		Vararg.IntoTable(private.playerTemp, row:GetField("players"))
+		local craftString = row:GetField("craftString")
 		if #private.playerTemp == 1 then
-			-- the current player was the only player, so we'll delete the entire row and all its mats
-			local craftString = row:GetField("craftString")
+			-- The current player was the only player, so we'll delete the entire row and all its mats
 			removedCraftStrings[craftString] = true
 			private.settings.crafts[craftString] = nil
 			tinsert(toRemove, row)
 		else
-			-- remove this player form the row
+			-- Remove this player form the row
 			assert(Table.RemoveByValue(private.playerTemp, playerName) == 1)
 			row:SetField("players", private.playerTemp)
 				:Update()
+			private.settings.crafts[craftString].players[playerName] = nil
 		end
 		wipe(private.playerTemp)
 	end
@@ -495,7 +488,7 @@ function Crafting.CreateOrUpdate(craftString, itemString, profession, name, numR
 		local quality = CraftString.GetQuality(craftString)
 		local deleteRow = private.spellDB:GetUniqueRow("craftString", "c:"..spellId)
 		if (rank or level or quality) and deleteRow then
-			private.spellDB:DeleteRowByUUID(deleteRow:GetUUID())
+			private.spellDB:DeleteRow(deleteRow)
 			private.settings.crafts["c:"..spellId] = nil
 		end
 		if deleteRow then
@@ -518,7 +511,7 @@ function Crafting.CreateOrUpdate(craftString, itemString, profession, name, numR
 			hasCD = hasCD,
 		}
 		assert(not next(private.playerTemp))
-		Vararg.IntoTable(private.playerTemp, player)
+		tinsert(private.playerTemp, player)
 		private.spellDB:NewRow()
 			:SetField("craftString", craftString)
 			:SetField("itemString", itemString)
@@ -551,8 +544,8 @@ function Crafting.CreateOrUpdatePlayer(craftString, player, baseRecipeDifficulty
 	assert(#private.playerTemp > 0)
 	tinsert(private.playerTemp, player)
 	row:SetField("players", private.playerTemp)
-	row:Update()
-	row:Release()
+		:Update()
+		:Release()
 	wipe(private.playerTemp)
 	craftPlayers[player] = Environment.HasFeature(Environment.FEATURES.CRAFTING_QUALITY) and {} or true
 end
@@ -682,20 +675,11 @@ function Crafting.GetQualityInfo(craftString, playerFilter)
 	local craftInfo = private.settings.crafts[craftString]
 	assert(craftInfo)
 	local baseRecipeDifficulty, baseRecipeQuality, maxRecipeQuality = nil, nil, nil
-	if playerFilter then
-		local info = craftInfo.players[playerFilter]
-		if type(info) == "table" and info.baseRecipeQuality and (not baseRecipeQuality or info.baseRecipeQuality > baseRecipeQuality) then
+	for player, info in pairs(craftInfo.players) do
+		if (not playerFilter or player == playerFilter) and type(info) == "table" and info.baseRecipeQuality and (not baseRecipeQuality or info.baseRecipeQuality > baseRecipeQuality) then
 			baseRecipeDifficulty = info.baseRecipeDifficulty
 			baseRecipeQuality = info.baseRecipeQuality
 			maxRecipeQuality = info.maxRecipeQuality
-		end
-	else
-		for _, info in pairs(craftInfo.players) do
-			if type(info) == "table" and info.baseRecipeQuality and (not baseRecipeQuality or info.baseRecipeQuality > baseRecipeQuality) then
-				baseRecipeDifficulty = info.baseRecipeDifficulty
-				baseRecipeQuality = info.baseRecipeQuality
-				maxRecipeQuality = info.maxRecipeQuality
-			end
 		end
 	end
 	return baseRecipeDifficulty, baseRecipeQuality, maxRecipeQuality
