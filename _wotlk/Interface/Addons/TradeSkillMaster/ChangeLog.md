@@ -1,6 +1,6 @@
-## v4.12.29 Changes
+## v4.12.30 Changes
 
 * [All] Fixed error when syncing crafting data between accounts
-* [Retail] Updated bonus IDs tracked by TSM
+* [Retail] Fixed AuctionDB realm data showing up to date even if only commodity data is available
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

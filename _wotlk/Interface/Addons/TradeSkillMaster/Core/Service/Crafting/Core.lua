@@ -374,7 +374,7 @@ end
 
 function Crafting.RemovePlayers(craftString, playersToRemove)
 	local row = private.spellDB:GetUniqueRow("craftString", craftString)
-	local players = TempTable.Acquire(row:GetFields("players"))
+	local players = TempTable.Acquire(row:GetField("players"))
 	local isTable = type(playersToRemove) == "table"
 	assert(isTable or type(playersToRemove) == "string")
 	for i = #players, 1, -1 do
