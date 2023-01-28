@@ -16,7 +16,7 @@ VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:35953
+/use [nocombat]item:0
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
@@ -37,13 +37,17 @@ END
 VER 3 000000000000001F "RXPTargeting" "Ability_eyeoftheowl"
 //RestedXP Guides - current step has no configured targets
 END
+VER 3 0000000000000021 "SG" "237192"
+/run xSellGems()
+END
 VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
 END
 VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
-/run CharacterHeadSlot.ItemLevelText:ClearAllPoints()
-/run CharacterHeadSlot.ItemLevelText:SetPoint('BOTTOMRIGHT', CharacterHeadSlot, 'BOTTOMRIGHT', -2, 2)
+END
+VER 3 0000000000000020 "TSMDestroy" "134400"
+/tsm destroy
 END
 VER 3 000000000000001B "TSMMacro" "INV_Misc_Flower_01"
 /click TSMShoppingBuyoutBtn

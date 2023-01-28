@@ -56,7 +56,7 @@ ImprovedMacroFrame: disabled
 ItemRack: enabled
 ItemRackOptions: enabled
 Leatrix_Maps: enabled
-LFGBulletinBoard: enabled
+LFGBulletinBoard: disabled
 Lorti UI Classic: enabled
 ls_Toasts: enabled
 MikScrollingBattleText: enabled
