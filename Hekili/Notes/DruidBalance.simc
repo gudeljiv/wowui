@@ -1,0 +1,17 @@
+## Balance Druid (IV)
+## 26 September 2022
+
+actions.precombat+=/moonkin_form
+actions.precombat+=/mark_of_the_wild
+
+actions+=/faerie_fire,if=talent.improved_faerie_fire.enabled&!ticking&group_members>5
+actions+=/force_of_nature
+actions+=/starfall
+actions+=/typhoon,if=active_enemies>1&target.distance<30
+actions+=/hurricane,if=active_enemies>1
+actions+=/insect_swarm,if=buff.eclipse_lunar.down&!ticking
+actions+=/moonfire,if=moving
+actions+=/hyperspeed_accelerators,if=buff.eclipse_lunar.up
+actions+=/use_items,if=buff.eclipse_lunar.up
+actions+=/starfire,if=buff.eclipse_lunar.remains>cast_time
+actions+=/wrath,if=buff.eclipse_solar.remains>cast_time

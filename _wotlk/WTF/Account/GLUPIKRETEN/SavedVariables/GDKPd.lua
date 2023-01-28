@@ -55,6 +55,12 @@ GDKPd_DB = {
 			["showAuctionDurationTimerText"] = true,
 			["movable"] = false,
 			["appearScale"] = 1.2,
+			["statuspoint"] = {
+				["y"] = -313.476318359375,
+				["relative"] = "TOPRIGHT",
+				["point"] = "TOPRIGHT",
+				["x"] = -278.2620544433594,
+			},
 			["point"] = {
 				["y"] = -262.6085815429688,
 				["relative"] = "TOPRIGHT",

@@ -44,18 +44,6 @@ PallyPowerDB = {
 	},
 }
 PallyPower_Assignments = {
-	["Gamzy"] = {
-		0, -- [1]
-		0, -- [2]
-		0, -- [3]
-		0, -- [4]
-		0, -- [5]
-		0, -- [6]
-		0, -- [7]
-		0, -- [8]
-		0, -- [9]
-		0, -- [10]
-	},
 	["Vermina"] = {
 		0, -- [1]
 		0, -- [2]
@@ -69,12 +57,25 @@ PallyPower_Assignments = {
 		0, -- [10]
 		2, -- [11]
 	},
+	["Gamzy"] = {
+		0, -- [1]
+		0, -- [2]
+		0, -- [3]
+		0, -- [4]
+		0, -- [5]
+		0, -- [6]
+		0, -- [7]
+		0, -- [8]
+		0, -- [9]
+		0, -- [10]
+	},
 }
 PallyPower_NormalAssignments = {
 }
 PallyPower_AuraAssignments = {
 	["Gamzy"] = 0,
 	["Paradoxpala"] = 0,
+	["Bublïnka"] = 1,
 	["Capybara"] = 0,
 	["Skodicek"] = 0,
 	["Xjereziah"] = 0,
@@ -89,8 +90,10 @@ PallyPower_AuraAssignments = {
 	["Eternalpala"] = 0,
 	["Alliyah"] = 0,
 	["Atlima"] = 0,
+	["Mailil"] = 2,
 	["Msvengeance"] = 3,
 	["Peakgg"] = 0,
+	["Zivvy"] = 4,
 	["Mormontt"] = 5,
 	["Cigarette"] = 0,
 	["Selestra"] = 0,
@@ -105,6 +108,7 @@ PallyPower_AuraAssignments = {
 	["Pretzelqt"] = 0,
 	["Asdartu"] = 3,
 	["Dewbieholy"] = 0,
+	["Pinkins"] = 1,
 	["Baconmedflød"] = 0,
 	["Heligaqken"] = 1,
 	["Zahiri"] = 2,
@@ -114,31 +118,34 @@ PallyPower_AuraAssignments = {
 	["Glumsi"] = 0,
 	["Monikà"] = 0,
 	["Teddz"] = 0,
+	["Thudur"] = 3,
+	["Lubiven"] = 0,
 	["Nioxina"] = 0,
 	["Althan"] = 0,
 	["Phkp"] = 0,
+	["Syyllinen"] = 1,
 	["Holychoke"] = 1,
 	["Monikå"] = 0,
 	["Vermina"] = 2,
 	["Drexal"] = 0,
 	["Lonnath"] = 0,
-	["Lubiven"] = 0,
 	["Ondisch"] = 0,
-	["Syyllinen"] = 1,
-	["Dariya"] = 0,
 	["Qiisha"] = 0,
+	["Jollylight"] = 6,
+	["Xilaz"] = 3,
 	["Izule"] = 0,
 	["Weebadina"] = 3,
 	["Hjørdís"] = 6,
 	["Filifjonkman"] = 0,
 	["Uhndapa"] = 0,
 	["Billibos"] = 0,
+	["Dariya"] = 0,
 	["Zwiecho"] = 0,
-	["Xilaz"] = 3,
 	["Rvbbitt"] = 0,
-	["Darkknéss"] = 1,
 	["Sistermerrin"] = 0,
+	["Darkknéss"] = 1,
 	["Zoremi"] = 4,
+	["Doctør"] = 3,
 }
 PallyPower_SavedPresets = {
 	["PallyPower_Assignments"] = {
