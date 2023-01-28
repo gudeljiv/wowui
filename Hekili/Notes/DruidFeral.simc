@@ -1,0 +1,22 @@
+## Feral Druid DPS (IV)
+## 26 September 2022
+
+actions.precombat+=/mark_of_the_wild
+actions.precombat+=/cat_form
+actions.precombat+=/prowl
+
+actions+=/tigers_fury,if=energy.current<40
+actions+=/wait,sec=energy.time_to_90,if=cooldown.tigers_fury.remains>15+energy.time_to_90
+actions+=/berserk,if=cooldown.tigers_fury.remains>15
+actions+=/savage_roar,if=!up
+actions+=/shred,if=buff.omen_of_clarity.up&combo_points.current<combo_points.max
+actions+=/claw,if=buff.omen_of_clarity.up&combo_points.current<combo_points.max
+actions+=/run_action_list,name=finishers,if=combo_points.current=combo_points.max
+actions+=/swipe_cat,if=active_enemies>1
+actions+=/rake,if=!ticking
+actions+=/mangle_cat,if=!up
+actions+=/shred,if=combo_points.current<5&energy.deficit<20
+actions+=/claw,if=combo_points.current<5&energy.deficit<20
+
+actions.finishers+=/rip,if=combo_points.current=5&target.time_to_die>8
+actions.finisher+=/ferocious_bite,if=combo_points.current=5&energy.current>50
