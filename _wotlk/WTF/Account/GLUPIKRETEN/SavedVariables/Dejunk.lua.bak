@@ -15,7 +15,7 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 		["39936"] = true,
 		["25882"] = true,
 		["19699"] = true,
-		["19706"] = true,
+		["23104"] = true,
 		["39968"] = true,
 		["23100"] = true,
 		["39933"] = true,
@@ -24,7 +24,7 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 		["39941"] = true,
 		["19705"] = true,
 		["41450"] = true,
-		["23104"] = true,
+		["19706"] = true,
 	},
 	["autoSell"] = true,
 	["minimapIcon"] = {

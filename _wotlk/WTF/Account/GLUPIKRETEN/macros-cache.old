@@ -1,8 +1,8 @@
-VER 3 000000000000000E " " "136106"
-/inspect
-END
 VER 3 0000000000000013 " " "132130"
 /click BehindTarget
+END
+VER 3 000000000000000E " " "136106"
+/inspect
 END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
@@ -16,7 +16,7 @@ VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
+/use [nocombat]item:35953
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
