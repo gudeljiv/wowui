@@ -35,7 +35,7 @@ LBISSettings = {
 		["RestorationDruid"] = true,
 		["SubtletyRogue"] = true,
 	},
-	["SelectedSpec"] = "Shaman: Elemental",
+	["SelectedSpec"] = "Death Knight: Frost",
 	["minimap"] = {
 		["minimapPos"] = 180,
 		["hide"] = true,
@@ -51,6 +51,6 @@ LBISSettings = {
 	["SelectedSourceType"] = "All",
 	["PriorityList"] = {
 	},
-	["SelectedSlot"] = "Main Hand",
-	["SelectedPhase"] = "All",
+	["SelectedSlot"] = "Ring",
+	["SelectedPhase"] = "Phase 2",
 }

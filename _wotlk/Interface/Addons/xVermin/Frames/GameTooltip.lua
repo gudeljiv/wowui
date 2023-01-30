@@ -161,52 +161,59 @@ local function SetHealthBarColor(unit)
 	-- GameTooltipStatusBar:SetBackdropColor(r, g, b, 0.3)
 end
 
-GameTooltip:HookScript(
-	'OnTooltipSetUnit',
-	function(self, ...)
-		local _, unit = self:GetUnit()
+local function HandleUnit(self, ...)
+	local _, unit = self:GetUnit()
 
-		if UnitExists(unit) and UnitName(unit) ~= UNKNOWN then
-			local specIcon = ''
+	if UnitExists(unit) and UnitName(unit) ~= UNKNOWN then
+		local specIcon = ''
 
-			local name, realm = UnitName(unit)
+		local name, realm = UnitName(unit)
 
-			if UnitIsAFK(unit) then
-				self:AppendText('|cff00ff00 <' .. CHAT_MSG_AFK .. '>|r')
-			elseif UnitIsDND(unit) then
-				self:AppendText('|cff00ff00 <' .. DEFAULT_DND_MESSAGE .. '>|r')
-			end
+		if UnitIsAFK(unit) then
+			self:AppendText('|cff00ff00 <' .. CHAT_MSG_AFK .. '>|r')
+		elseif UnitIsDND(unit) then
+			self:AppendText('|cff00ff00 <' .. DEFAULT_DND_MESSAGE .. '>|r')
+		end
 
-			-- Move the healthbar inside the tooltip
-			if GameTooltipStatusBar:IsShown() then
-				self:AddLine('                         ') -- min width empty spaces :)
-				GameTooltipStatusBar:ClearAllPoints()
-				GameTooltipStatusBar:SetPoint('LEFT', self:GetName() .. 'TextLeft' .. self:NumLines(), 1, -3)
-				GameTooltipStatusBar:SetPoint('RIGHT', self, -10, 0)
-			end
+		-- Move the healthbar inside the tooltip
+		if GameTooltipStatusBar:IsShown() then
+			self:AddLine('                         ') -- min width empty spaces :)
+			GameTooltipStatusBar:ClearAllPoints()
+			GameTooltipStatusBar:SetPoint('LEFT', self:GetName() .. 'TextLeft' .. self:NumLines(), 1, 0)
+			GameTooltipStatusBar:SetPoint('RIGHT', self, -10, 0)
+			SetHealthBarColor(unit)
+		end
 
-			-- Border coloring
-			if UnitIsPlayer(unit) then
-				local classColor = RAID_CLASS_COLORS[select(2, UnitClass(unit))]
+		-- Border coloring
+		if UnitIsPlayer(unit) then
+			local classColor = RAID_CLASS_COLORS[select(2, UnitClass(unit))]
+			self:SetBeautyBorderTexture('white')
+			self:SetBeautyBorderColor(classColor.r, classColor.g, classColor.b)
+		else
+			if UnitReaction('mouseover', 'player') and UnitReaction('mouseover', 'player') > 0 and UnitReaction('mouseover', 'player') < 9 then
 				self:SetBeautyBorderTexture('white')
-				self:SetBeautyBorderColor(classColor.r, classColor.g, classColor.b)
-			else
-				if UnitReaction('mouseover', 'player') and UnitReaction('mouseover', 'player') > 0 and UnitReaction('mouseover', 'player') < 9 then
-					self:SetBeautyBorderTexture('white')
-					self:SetBeautyBorderColor(unpack(cfg.reaction[UnitReaction('mouseover', 'player')]))
-				end
-			end
-
-			-- Dead or ghost recoloring
-			if UnitIsDead(unit) or UnitIsGhost(unit) then
-				self:SetBeautyBorderTexture('white')
-				self:SetBeautyBorderColor(157 / 255, 157 / 255, 157 / 255, 1)
-			else
-				SetHealthBarColor(unit)
+				self:SetBeautyBorderColor(unpack(cfg.reaction[UnitReaction('mouseover', 'player')]))
 			end
 		end
+
+		-- Dead or ghost recoloring
+		if UnitIsDead(unit) or UnitIsGhost(unit) then
+			self:SetBeautyBorderTexture('white')
+			self:SetBeautyBorderColor(157 / 255, 157 / 255, 157 / 255, 1)
+		end
 	end
-)
+end
+
+local function HandleStatusBar(self, ...)
+	local _, unit = self:GetUnit()
+
+	if UnitExists(unit) and UnitName(unit) ~= UNKNOWN and GameTooltipStatusBar:IsShown() then
+		SetHealthBarColor(unit)
+	end
+end
+
+GameTooltip:HookScript('OnTooltipSetUnit', HandleUnit)
+GameTooltip:HookScript('OnUpdate', HandleStatusBar)
 
 GameTooltip:HookScript(
 	'OnTooltipCleared',
