@@ -35,7 +35,7 @@ LBISSettings = {
 		["AfflictionWarlock"] = true,
 		["SubtletyRogue"] = true,
 	},
-	["SelectedSpec"] = "Warrior: Protection",
+	["SelectedSpec"] = "Death Knight: Frost",
 	["minimap"] = {
 		["minimapPos"] = 180,
 		["hide"] = true,
@@ -47,10 +47,10 @@ LBISSettings = {
 	},
 	["ShowPriority"] = true,
 	["SelectedRank"] = "All",
-	["ShowCustom"] = true,
+	["SelectedSlot"] = "Ring",
 	["SelectedSourceType"] = "All",
+	["ShowCustom"] = true,
 	["PriorityList"] = {
 	},
-	["SelectedSlot"] = "Neck",
-	["SelectedPhase"] = "All",
+	["SelectedPhase"] = "Phase 2",
 }

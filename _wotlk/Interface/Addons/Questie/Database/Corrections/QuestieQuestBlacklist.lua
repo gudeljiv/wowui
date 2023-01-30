@@ -667,6 +667,33 @@ function QuestieQuestBlacklist:Load()
         --- Brewfest
         [13931] = true,
         [13932] = true,
+
+        -- Lunar Festival
+        [13012] = true,
+        [13013] = true,
+        [13014] = true,
+        [13015] = true,
+        [13016] = true,
+        [13017] = true,
+        [13018] = true,
+        [13019] = true,
+        [13020] = true,
+        [13021] = true,
+        [13022] = true,
+        [13023] = true,
+        [13024] = true,
+        [13025] = true,
+        [13026] = true,
+        [13027] = true,
+        [13028] = true,
+        [13029] = true,
+        [13030] = true,
+        [13031] = true,
+        [13032] = true,
+        [13033] = true,
+
+
+        -- End of Wotlk event quests
         -------------------
 
         --mount replacement
@@ -1169,6 +1196,7 @@ function QuestieQuestBlacklist:Load()
         [10445] = QuestieCorrections.WOTLK_ONLY, -- replaced by 13432 in wotlk
 
         -- Scourge invasion
+        [12616] = true,
         [12752] = true,
         [12753] = true,
         [12772] = true,
@@ -1183,6 +1211,8 @@ function QuestieQuestBlacklist:Load()
         --- Phase 3 Trial of the Crusader
         [14151] = true, -- Cardinal Ruby (Alchemy)
         [14199] = true, -- Proof of Demise: The Black Knight (Daily heroic)
+        [14016] = true, --* The Black Knight's Curse (https://www.wowhead.com/wotlk/quest=14016) (Retail Data)
+        [14017] = true, --* The Black Knight's Fate (https://www.wowhead.com/wotlk/quest=14017) (Retail Data)
 
         --- Phase 4 Icecrown Citadel
         [24506] = true, -- Inside the Frozen Citadel (H)

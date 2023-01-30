@@ -77,64 +77,85 @@ for _, tooltip in pairs(
 		LibDBIconTooltip,
 		SmallTextTooltip,
 		LibItemUpdateInfoTooltip,
-		NamePlateTooltip
+		NamePlateTooltip,
+		AtlasLootTooltip
 	}
 ) do
-	if not tooltip:HasBeautyBorder() then
-		tooltip:CreateBeautyBorder(12)
+	xVermin.CheckIfLoadedWithTimer(
+		tooltip:GetName(),
+		function()
+			if not tooltip:HasBeautyBorder() then
+				tooltip:CreateBeautyBorder(12)
 
-		local bgOffset, borderSize = 3, 12
-		tooltip.Background = tooltip:CreateTexture('TooltipBackground', 'BORDER')
-		tooltip.Background:SetColorTexture(0.0, 0.0, 0.0, 0.70)
-		tooltip.Background:SetPoint('TOPLEFT', tooltip, bgOffset, -bgOffset)
-		tooltip.Background:SetPoint('BOTTOMRIGHT', tooltip, -bgOffset, bgOffset)
-	end
+				local bgOffset, borderSize = 3, 12
+				tooltip.Background = tooltip:CreateTexture('TooltipBackground', 'BORDER')
+				tooltip.Background:SetColorTexture(0.0, 0.0, 0.0, 0.70)
+				tooltip.Background:SetPoint('TOPLEFT', tooltip, bgOffset, -bgOffset)
+				tooltip.Background:SetPoint('BOTTOMRIGHT', tooltip, -bgOffset, bgOffset)
+			end
+		end
+	)
 end
 
 for _, tooltip in pairs(
 	{
 		GameTooltip,
+		BattlePetTooltip,
+		EmbeddedItemTooltip,
 		ItemRefTooltip,
+		ItemRefShoppingTooltip1,
+		ItemRefShoppingTooltip2,
 		ShoppingTooltip1,
 		ShoppingTooltip2,
-		ShoppingTooltip3
+		AtlasLootTooltip
 	}
 ) do
-	if tooltip.beautyBorder then
-		tooltip:HookScript(
-			'OnTooltipSetItem',
-			function(self)
-				local name, item = self:GetItem()
-				if item then
-					local quality = select(3, GetItemInfo(item))
-					if quality then
-						local r, g, b = GetItemQualityColor(quality)
-						self:SetBeautyBorderTexture('white')
-						self:SetBeautyBorderColor(r, g, b)
+	xVermin.CheckIfLoadedWithTimer(
+		tooltip:GetName(),
+		function()
+			if tooltip.beautyBorder or tooltip:GetName() == 'AtlasLootTooltip' then
+				tooltip:HookScript(
+					'OnTooltipSetItem',
+					function(self)
+						local name, item = self:GetItem()
+						if item then
+							local quality = select(3, GetItemInfo(item))
+							if quality then
+								local r, g, b = GetItemQualityColor(quality)
+								self:SetBeautyBorderTexture('white')
+								self:SetBeautyBorderColor(r, g, b)
+							end
+						end
 					end
-				end
-			end
-		)
+				)
 
-		tooltip:HookScript(
-			'OnTooltipCleared',
-			function(self)
-				self:SetBeautyBorderTexture('default')
-				self:SetBeautyBorderColor(1, 1, 1)
+				tooltip:HookScript(
+					'OnTooltipCleared',
+					function(self)
+						self:SetBeautyBorderTexture('default')
+						self:SetBeautyBorderColor(1, 1, 1)
+					end
+				)
 			end
-		)
-	end
+		end
+	)
 end
 
 local function SetHealthBarColor(unit)
-	local r, g, b
-	if cfg.healthbar.customColor.apply and not cfg.healthbar.reactionColoring then
-		r, g, b = cfg.healthbar.customColor.r, cfg.healthbar.customColor.g, cfg.healthbar.customColor.b
-	elseif cfg.healthbar.reactionColoring and unit then
-		r, g, b = UnitSelectionColor(unit)
-	else
-		r, g, b = 0, 1, 0
+	local r, g, b = 0, 1, 0
+
+	if unit and UnitIsPlayer(unit) then
+		local classColor = RAID_CLASS_COLORS[select(2, UnitClass(unit))]
+		r, g, b = classColor.r, classColor.g, classColor.b
 	end
+
+	-- if cfg.healthbar.customColor.apply and not cfg.healthbar.reactionColoring then
+	-- 	r, g, b = cfg.healthbar.customColor.r, cfg.healthbar.customColor.g, cfg.healthbar.customColor.b
+	-- elseif cfg.healthbar.reactionColoring and unit then
+	-- 	r, g, b = UnitSelectionColor(unit)
+	-- else
+	-- 	r, g, b = 0, 1, 0
+	-- end
 
 	GameTooltipStatusBar:SetStatusBarColor(r, g, b)
 	-- GameTooltipStatusBar:SetBackdropColor(r, g, b, 0.3)

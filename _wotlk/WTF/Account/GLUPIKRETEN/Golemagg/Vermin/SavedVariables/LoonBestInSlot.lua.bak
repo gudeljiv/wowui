@@ -35,7 +35,7 @@ LBISSettings = {
 		["RestorationDruid"] = true,
 		["SubtletyRogue"] = true,
 	},
-	["SelectedSpec"] = "Warrior: Protection",
+	["SelectedSpec"] = "Shaman: Elemental",
 	["minimap"] = {
 		["minimapPos"] = 180,
 		["hide"] = true,
@@ -47,10 +47,10 @@ LBISSettings = {
 	},
 	["ShowPriority"] = true,
 	["SelectedRank"] = "All",
+	["ShowCustom"] = true,
+	["SelectedSourceType"] = "All",
 	["PriorityList"] = {
 	},
-	["SelectedSourceType"] = "All",
-	["SelectedSlot"] = "Neck",
-	["ShowCustom"] = true,
+	["SelectedSlot"] = "Main Hand",
 	["SelectedPhase"] = "All",
 }

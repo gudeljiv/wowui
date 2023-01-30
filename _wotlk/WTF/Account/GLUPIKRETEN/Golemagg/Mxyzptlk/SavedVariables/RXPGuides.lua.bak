@@ -21,8 +21,46 @@ RXPCTrackingData = {
 					["groupExperience"] = 0,
 					["deaths"] = 0,
 					["mobs"] = {
+						["The Barrens"] = {
+							["xp"] = 144,
+							["count"] = 1,
+						},
 					},
 					["timestamp"] = {
+						["dateFinished"] = {
+							["monthDay"] = 26,
+							["day"] = 0,
+							["month"] = 1,
+							["minute"] = 2,
+							["year"] = 2023,
+							["hour"] = 14,
+							["weekday"] = 5,
+						},
+						["finished"] = 50261,
+					},
+					["quests"] = {
+					},
+				},
+				[15] = {
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+						["The Barrens"] = {
+							["xp"] = 150,
+							["count"] = 1,
+						},
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 26,
+							["day"] = 0,
+							["month"] = 1,
+							["minute"] = 2,
+							["year"] = 2023,
+							["hour"] = 14,
+							["weekday"] = 5,
+						},
+						["started"] = 50262,
 					},
 					["quests"] = {
 					},
@@ -46,9 +84,9 @@ RXPCSettings = {
 	},
 	["profiles"] = {
 		["Mxyzptlk - Golemagg"] = {
-			["frameHeight"] = 125.0000152587891,
-			["enableMinimapButton"] = false,
 			["hardcore"] = false,
+			["enableMinimapButton"] = false,
+			["frameHeight"] = 125.0000152587891,
 		},
 	},
 }

@@ -130,13 +130,13 @@ xVermin.CheckIfLoadedWithTimer = function(condition, callback, timer, waittime)
 	C_Timer.NewTicker(
 		timer or 1,
 		function(self)
-			if (count > (waittime or xVermin.WaitTimeUntillAddonLoaded)) then
+			if count > (waittime or xVermin.WaitTimeUntillAddonLoaded) then
 				self:Cancel()
 			end
 			count = count + 1
 
 			local next_keyword, c
-			if (condition_table) then
+			if condition_table then
 				condition_table = nil
 			end
 			local condition_table = {}

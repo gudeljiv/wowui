@@ -1,11 +1,4 @@
 Version: 1
-Frame: TellMeWhen_Group3
-FrameLevel: 10
-Anchor: CENTER
-X: -207
-Y: 30
-W: 195
-H: 30
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM

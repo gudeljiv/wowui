@@ -1,8 +1,8 @@
-VER 3 0000000000000013 " " "132130"
-/click BehindTarget
-END
 VER 3 000000000000000E " " "136106"
 /inspect
+END
+VER 3 0000000000000013 " " "132130"
+/click BehindTarget
 END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
@@ -16,8 +16,8 @@ VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:35953
-/castsequence [combat] reset=combat 
+/use [nocombat]item:33443
+/castsequence [combat] reset=combat item:33447
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:0
@@ -26,7 +26,7 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:33447
 END
 VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 #showtooltip Prowl
@@ -34,17 +34,15 @@ VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 /cast [noform:3] Cat Form 
 /cast Prowl
 END
+VER 3 0000000000000010 "RAID" "136047"
+/run InviteUnit("a");C_Timer.After(0.5,function() ConvertToRaid() end)
+END
 VER 3 000000000000001F "RXPTargeting" "Ability_eyeoftheowl"
 //RestedXP Guides - current step has no configured targets
-END
-VER 3 0000000000000021 "SG" "237192"
-/run xSellGems()
 END
 VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
-END
-VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000020 "TSMDestroy" "134400"
 /tsm destroy

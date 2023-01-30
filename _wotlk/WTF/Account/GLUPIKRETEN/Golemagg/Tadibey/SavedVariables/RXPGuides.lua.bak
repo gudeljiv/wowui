@@ -1,17 +1,17 @@
 
 RXPCData = {
-	["currentGuideName"] = "",
+	["GA"] = false,
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
-	["GA"] = false,
-	["currentGuideGroup"] = "",
+	["currentGuideName"] = "",
+	["stepSkip"] = {
+	},
 	["flightPaths"] = {
 		[23] = "Orgrimmar, Durotar",
 		[80] = "Ratchet, The Barrens",
 	},
-	["stepSkip"] = {
-	},
+	["currentGuideGroup"] = "",
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -64,7 +64,7 @@ RXPCSettings = {
 			["enableFPAutomation"] = false,
 			["hardcore"] = false,
 			["enableLevelUpAnnounceGroup"] = false,
-			["frameHeight"] = 125.0000152587891,
+			["frameHeight"] = 125.0000228881836,
 			["enableMinimapButton"] = false,
 			["activeItemsScale"] = 1.2,
 			["checkVersions"] = false,
@@ -73,7 +73,6 @@ RXPCSettings = {
 			["enableTracker"] = false,
 			["enableBindAutomation"] = false,
 			["enableLevelUpAnnounceSolo"] = false,
-			["xprate"] = 1.2,
 			["alwaysSendBranded"] = false,
 			["enableTargetMacro"] = false,
 			["enableQuestRewardAutomation"] = true,

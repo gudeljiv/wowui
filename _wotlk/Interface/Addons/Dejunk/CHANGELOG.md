@@ -1,5 +1,35 @@
 # Changelog
 
+## [1.5.1] - 2023-01-27
+
+### Changed
+
+- Split the dual-functionality of the Junk Frame button into two distinct buttons: `Start Selling` & `Destroy Next Item`
+- Added tooltips to the Junk Frame's `Destroy Next Item` button: mousing over the button will display the name of the next item to be destroyed, and holding shift will display the item's tooltip
+
+### Fixed
+
+- Issue with frame levels
+- Support for reagent bag in retail ([#165](https://github.com/moody/Dejunk/issues/165))
+
+## [1.5.0] - 2023-01-27
+
+### Added
+
+- Option: `Exclude Unbound Equipment`
+- Option: `Include Artifact Relics` ([#106](https://github.com/moody/Dejunk/issues/106))
+
+### Changed
+
+- Updated the merchant button to support ElvUI
+- Reverted behavior of option `Auto Junk Frame` to no longer apply to bags
+
+### Fixed
+
+- Issues with minimap icon positioning ([#163](https://github.com/moody/Dejunk/issues/163))
+- Issues with bag item caching
+- Taint with keybinding UI ([#166](https://github.com/moody/Dejunk/issues/166))
+
 ## [1.4.1] - 2022-11-04
 
 ### Fixed

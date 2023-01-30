@@ -71,11 +71,11 @@ Helpers/DamageFont.lua
 Helpers/ErrorsFilter.lua
 Helpers/FastLoot.lua
 Helpers/Interrupt.lua
-Helpers/ItemID.lua
 Helpers/LootHelper.lua
 Helpers/MaxStackSize.lua
 # Helpers/PlayerTargetSetMark.lua
 Helpers/SkinBuffs.lua
+Helpers/TooltipItemID.lua
 Helpers/TooltipSpellID.lua
 Helpers/TrackingIcon.lua
 Helpers/UIScale.lua

@@ -5,7 +5,7 @@ local SILVER = '|cFF939193'
 local COPPER = '|cFFAD6C4C'
 local WHITE = '|cFFFFFFFF'
 
-local function AddItemID(self, ...)
+local function HandleItem(self, ...)
 	local _, itemLink = self:GetItem()
 	if itemLink ~= nil then
 		local itemId, _, _, _, _, _, _ = GetItemInfoInstant(itemLink)
@@ -13,6 +13,7 @@ local function AddItemID(self, ...)
 		local itemcount
 		if itemId then
 			self:AddLine(' ')
+			self:AddLine(_G.ORANGE_FONT_COLOR_CODE .. 'Item ID:|r ' .. _G.NORMAL_FONT_COLOR_CODE .. itemId .. '|r')
 			if itemLevel then
 				-- self:AddDoubleLine(_G.ORANGE_FONT_COLOR_CODE .. 'Item ID:|r ' .. _G.NORMAL_FONT_COLOR_CODE .. itemId .. '|r', _G.ORANGE_FONT_COLOR_CODE .. 'Item Level:|r ' .. _G.NORMAL_FONT_COLOR_CODE .. itemLevel .. '|r')
 				local line = _G[self:GetName() .. 'TextLeft1']
@@ -23,9 +24,15 @@ local function AddItemID(self, ...)
 				if not string.find(lineText, '%(') then
 					line:SetText(lineText .. ' (|r' .. _G.NORMAL_FONT_COLOR_CODE .. itemLevel .. '|r)')
 				end
+				if string.find(lineText, 'Pattern: ') then
+					for i = 1, GameTooltip:NumLines() do
+						if _G['GameTooltipTextLeft' .. i] == string.gsub(lineText, 'Pattern: ', '') then
+						end
+					end
+				end
 			else
 				-- self:AddDoubleLine(_G.ORANGE_FONT_COLOR_CODE .. 'Item ID:|r ' .. _G.NORMAL_FONT_COLOR_CODE .. itemId .. '|r', _G.ORANGE_FONT_COLOR_CODE .. 'Item Level:|r ' .. _G.NORMAL_FONT_COLOR_CODE .. '-' .. '|r')
-				self:AddLine(_G.ORANGE_FONT_COLOR_CODE .. 'Item ID:|r ' .. _G.NORMAL_FONT_COLOR_CODE .. itemId .. '|r')
+				-- self:AddLine(_G.ORANGE_FONT_COLOR_CODE .. 'Item ID:|r ' .. _G.NORMAL_FONT_COLOR_CODE .. itemId .. '|r')
 			end
 			if sellPrice and sellPrice > 0 then
 				itemcount = GetItemCount(itemId)
@@ -43,43 +50,22 @@ local function AddItemID(self, ...)
 	end
 end
 
--- --- Hook to Tooltip
--- GameTooltip:HookScript('OnTooltipSetItem', AddItemID_Tooltip)
--- GameTooltip:HookScript('OnTooltipSetItem', AddItemID_Tooltip)
--- hooksecurefunc('ItemRefTooltip.UpdateTooltip', AddItemID_ItemRefTooltip)
--- -- TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, AddItemID)
-
-xVermin.CheckIfLoadedWithTimer(
-	'GameTooltip',
-	function()
-		GameTooltip:HookScript('OnTooltipSetItem', AddItemID)
-	end
-)
-
-xVermin.CheckIfLoadedWithTimer(
-	'ShoppingTooltip1',
-	function()
-		ShoppingTooltip1:HookScript('OnTooltipSetItem', AddItemID)
-	end
-)
-
-xVermin.CheckIfLoadedWithTimer(
-	'ShoppingTooltip2',
-	function()
-		ShoppingTooltip2:HookScript('OnTooltipSetItem', AddItemID)
-	end
-)
-
-xVermin.CheckIfLoadedWithTimer(
-	'ShoppingTooltip3',
-	function()
-		ShoppingTooltip3:HookScript('OnTooltipSetItem', AddItemID)
-	end
-)
-
-xVermin.CheckIfLoadedWithTimer(
-	'ItemRefTooltip',
-	function()
-		ItemRefTooltip:HookScript('OnTooltipSetItem', AddItemID)
-	end
-)
+for _, tooltip in pairs(
+	{
+		GameTooltip,
+		ItemRefTooltip,
+		ItemRefShoppingTooltip1,
+		ItemRefShoppingTooltip2,
+		ShoppingTooltip1,
+		ShoppingTooltip2,
+		ShoppingTooltip3,
+		AtlasLootTooltip
+	}
+) do
+	xVermin.CheckIfLoadedWithTimer(
+		tooltip:GetName(),
+		function()
+			tooltip:HookScript('OnTooltipSetItem', HandleItem)
+		end
+	)
+end

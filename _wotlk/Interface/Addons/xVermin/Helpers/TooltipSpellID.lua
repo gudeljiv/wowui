@@ -1,6 +1,6 @@
 local _, xVermin = ...
 
-local function AddSpellID(self, unit, index, filter)
+local function HandleItem(self, unit, index, filter)
 	local _, id
 	if unit then
 		_, _, _, _, _, _, _, _, _, id = UnitAura(unit, index, filter)
@@ -13,7 +13,7 @@ local function AddSpellID(self, unit, index, filter)
 	end
 	self:Show()
 end
-hooksecurefunc(GameTooltip, 'SetUnitAura', AddSpellID)
-hooksecurefunc(GameTooltip, 'SetUnitBuff', AddSpellID)
-hooksecurefunc(GameTooltip, 'SetUnitDebuff', AddSpellID)
-GameTooltip:HookScript('OnTooltipSetSpell', AddSpellID)
+hooksecurefunc(GameTooltip, 'SetUnitAura', HandleItem)
+hooksecurefunc(GameTooltip, 'SetUnitBuff', HandleItem)
+hooksecurefunc(GameTooltip, 'SetUnitDebuff', HandleItem)
+GameTooltip:HookScript('OnTooltipSetSpell', HandleItem)

@@ -1,6 +1,6 @@
 local _, Addon = ...
-local Widgets = Addon.UserInterface.Widgets
-local Colors = Addon.Colors
+local Colors = Addon:GetModule("Colors")
+local Widgets = Addon:GetModule("Widgets")
 
 --[[
   Creates a basic button.
@@ -10,6 +10,7 @@ local Colors = Addon.Colors
     parent? = UIObject,
     points? = table[],
     width? = number,
+    onUpdateTooltip? = function(self, tooltip) -> nil,
     labelText = string,
     labelColor? = Color,
     onClick? = function(self, button) -> nil
@@ -18,7 +19,6 @@ local Colors = Addon.Colors
 function Widgets:Button(options)
   -- Defaults.
   options.frameType = "Button"
-  options.onUpdateTooltip = nil
   options.labelColor = Addon:IfNil(options.labelColor, Colors.Gold)
 
   -- Base frame.
@@ -42,14 +42,14 @@ function Widgets:Button(options)
   end)
 
   -- OnEnter.
-  frame:SetScript("OnEnter", function(self)
+  frame:HookScript("OnEnter", function(self)
     self:SetBackdropColor(options.labelColor:GetRGBA(0.25))
     self:SetBackdropBorderColor(options.labelColor:GetRGB())
     self.label:SetTextColor(Colors.White:GetRGB())
   end)
 
   -- OnLeave.
-  frame:SetScript("OnLeave", function(self)
+  frame:HookScript("OnLeave", function(self)
     self:SetBackdropColor(Colors.DarkGrey:GetRGBA(0.75))
     self:SetBackdropBorderColor(0, 0, 0, 1)
     self.label:SetTextColor(options.labelColor:GetRGB())

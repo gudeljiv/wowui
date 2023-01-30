@@ -1,10 +1,10 @@
-lightweight tag eae30de82b6029b04fd1d020cec1faea3c09561f v5.0.4
+lightweight tag 319d37458dcfaffefba6d5df95f596ea8b2f84cb v5.0.5
 Author:	Péter Radics <mitchnull@gmail.com>
-Date:	Fri Nov 18 20:16:13 2022 +0100
+Date:	Sat Jan 28 21:23:40 2023 +0100
 
-commit eae30de82b6029b04fd1d020cec1faea3c09561f
+commit 319d37458dcfaffefba6d5df95f596ea8b2f84cb
 Author: Péter Radics <mitchnull@gmail.com>
-Date:   Fri Nov 18 20:16:13 2022 +0100
+Date:   Sat Jan 28 21:23:40 2023 +0100
 
     toc bump
 
