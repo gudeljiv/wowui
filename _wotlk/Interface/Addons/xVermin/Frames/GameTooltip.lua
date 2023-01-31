@@ -47,7 +47,8 @@ local cfg = {
 		[5] = {132 / 255, 181 / 255, 26 / 255},
 		[6] = {132 / 255, 181 / 255, 26 / 255},
 		[7] = {132 / 255, 181 / 255, 26 / 255},
-		[8] = {132 / 255, 181 / 255, 26 / 255}
+		[8] = {132 / 255, 181 / 255, 26 / 255},
+		['grey'] = {128 / 255, 128 / 255, 128 / 255}
 	}
 }
 
@@ -147,6 +148,8 @@ local function SetHealthBarColor(unit)
 	if unit and UnitIsPlayer(unit) then
 		local classColor = RAID_CLASS_COLORS[select(2, UnitClass(unit))]
 		r, g, b = classColor.r, classColor.g, classColor.b
+	elseif UnitIsTrivial(unit) and UnitIsEnemy(unit, 'player') then
+		r, g, b = unpack(cfg.reaction['grey'])
 	end
 
 	-- if cfg.healthbar.customColor.apply and not cfg.healthbar.reactionColoring then
@@ -197,9 +200,9 @@ local function HandleUnit(self, ...)
 		end
 
 		-- Dead or ghost recoloring
-		if UnitIsDead(unit) or UnitIsGhost(unit) then
+		if UnitIsDead(unit) or UnitIsGhost(unit) or (UnitIsTrivial(unit) and UnitIsEnemy(unit, 'player')) then
 			self:SetBeautyBorderTexture('white')
-			self:SetBeautyBorderColor(157 / 255, 157 / 255, 157 / 255, 1)
+			self:SetBeautyBorderColor(unpack(cfg.reaction['grey']))
 		end
 	end
 end
