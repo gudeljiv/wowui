@@ -47,10 +47,10 @@ LBISSettings = {
 	},
 	["ShowPriority"] = true,
 	["SelectedRank"] = "All",
-	["SelectedSlot"] = "Ring",
-	["SelectedSourceType"] = "All",
 	["ShowCustom"] = true,
+	["SelectedSourceType"] = "All",
 	["PriorityList"] = {
 	},
+	["SelectedSlot"] = "Ring",
 	["SelectedPhase"] = "Phase 2",
 }

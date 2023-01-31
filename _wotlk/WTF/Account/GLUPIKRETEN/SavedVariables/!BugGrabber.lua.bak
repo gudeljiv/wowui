@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 8849,
+	["session"] = 8855,
 	["errors"] = {
 		{
 			["message"] = "[string \"ceil(red), ceil(green), ceil(blue), ceil(alpha) = RotationFrame...\"]:1: unexpected symbol near ','",

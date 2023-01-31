@@ -10,24 +10,24 @@ Details_StreamerDB = {
 		["Kaonac - Jin'do"] = "Mxyz - Golemagg",
 		["Tadibey - Golemagg"] = "Mxyz - Golemagg",
 		["Handrmandr - Golemagg"] = "Mxyz - Golemagg",
-		["Tandaram - Jin'do"] = "Mxyz - Golemagg",
 		["Wells - Jin'do"] = "Mxyz - Golemagg",
+		["Tandaram - Jin'do"] = "Mxyz - Golemagg",
 		["Nitwit - Dreadnaught"] = "Mxyz - Golemagg",
 		["Poklopac - Dreadnaught"] = "Mxyz - Golemagg",
-		["Konac - Dreadnaught"] = "Mxyz - Golemagg",
+		["Pitchwise - Dreadnaught"] = "Mxyz - Golemagg",
 		["Provokator - Jin'do"] = "Mxyz - Golemagg",
 		["Tudum - Jin'do"] = "Mxyz - Golemagg",
-		["Battlearm - Hydraxian Waterlords"] = "Mxyz - Golemagg",
+		["Tudum - Ashbringer"] = "Mxyz - Golemagg",
 		["Augustin - Golemagg"] = "Mxyz - Golemagg",
-		["Pitchwise - Ashbringer"] = "Mxyz - Golemagg",
+		["Moolatz - Golemagg"] = "Mxyz - Golemagg",
 		["Vermin - Golemagg"] = "Mxyz - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Mxyz - Golemagg",
 		["Battlearm - Jin'do"] = "Mxyz - Golemagg",
 		["Poklopac - Mirage Raceway"] = "Mxyz - Golemagg",
 		["Miqa - Golemagg"] = "Mxyz - Golemagg",
-		["Tudum - Ashbringer"] = "Mxyz - Golemagg",
-		["Moolatz - Golemagg"] = "Mxyz - Golemagg",
-		["Pitchwise - Dreadnaught"] = "Mxyz - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Mxyz - Golemagg",
+		["Pitchwise - Ashbringer"] = "Mxyz - Golemagg",
+		["Konac - Dreadnaught"] = "Mxyz - Golemagg",
 		["Moolatz - Dreadnaught"] = "Mxyz - Golemagg",
 	},
 	["profiles"] = {
@@ -61,17 +61,17 @@ Details_StreamerDB = {
 			["scale"] = 1,
 			["row_texture"] = "Glamour2",
 			["square_grow_direction"] = "right",
+			["use_square_mode"] = false,
 			["row_color"] = {
 				0.443137254901961, -- [1]
 				0.592156862745098, -- [2]
 				1, -- [3]
 				0.480826139450073, -- [4]
 			},
-			["author"] = "Details! Team",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["y"] = -183.107162475586,
+			["use_spark"] = false,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -79,13 +79,8 @@ Details_StreamerDB = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["use_spark"] = false,
-			["font_size"] = 10,
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -97,9 +92,14 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["arrow_anchor_y"] = 0,
+			["y"] = -183.107162475586,
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
+			["font_size"] = 10,
+			["main_frame_strata"] = "LOW",
 			["main_frame_locked"] = true,
-			["use_square_mode"] = false,
+			["arrow_anchor_y"] = 0,
 		},
 	},
 }

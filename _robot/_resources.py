@@ -39,6 +39,8 @@ skills["offgcd"]["death knight"] = [
     {"name": "anti-magic shell", "type": "GetSpellTexture", "id": 48707, "key": "g"},
     {"name": "battlemaster's resolve", "type": "GetItemIcon", "id": 41589, "key": "1", "modifier": "alt"},
     {"name": "empower rune weapon", "type": "GetSpellTexture", "id": 47568, "key": "e", "modifier": "shift"},
+    {"name": "vampiric blood", "type": "GetSpellTexture", "id": 55233, "key": "6"},
+    {"name": "icebound fortitude", "type": "GetSpellTexture", "id": 48792, "key": "t"},
 ]
 
 skills["offgcd"]["hunter"] = [
@@ -151,7 +153,6 @@ skills["death knight"] = [
     {"name": "heart strike", "type": "GetSpellTexture", "id": 55050, "key": "f1", "modifier": "ctrl"},
     {"name": "death coil", "type": "GetSpellTexture", "id": 6789, "key": "4"},
     {"name": "blood boil", "type": "GetSpellTexture", "id": 48721, "key": "e"},
-    {"name": "icebound fortitude", "type": "GetSpellTexture", "id": 48792, "key": "t"},
     {"name": "horn of winter", "type": "GetSpellTexture", "id": 57330, "key": "f5"},
     {"name": "pestilence", "type": "GetSpellTexture", "id": 50842, "key": "3"},
     {"name": "death and decay", "type": "GetSpellTexture", "id": 49936, "key": "r", "modifier": "alt"},
