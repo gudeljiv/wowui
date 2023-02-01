@@ -241,5 +241,23 @@ xVermin.Range = function(value, unit)
 		return false
 	end
 end
-
 xRange = xVermin.Range
+
+-- xVermin.CheckMobExperienceGain = function(unit)
+-- 	local unitLevel = UnitLevel(unit)
+-- 	local playerLevel = UnitLevel('player')
+-- 	local baseXP =
+
+-- 	if playerLevel >= 1 and playerLevel <= 5 then
+-- 		greyLevel = 0
+-- 	elseif playerLevel >= 6 and playerLevel <= 49 then
+-- 		greyLevel = playerLevel - math.floor(playerLevel / 10) - 5
+-- 	elseif playerLevel == 50 then
+-- 		greyLevel = 40
+-- 	elseif playerLevel >= 51 and playerLevel <= 59 then
+-- 		greyLevel = playerLevel - math.floor(playerLevel / 5) - 1
+-- 	elseif playerLevel >= 60 and playerLevel <= 80 then
+-- 		greyLevel = playerLevel - 9
+-- 	end
+
+-- end
