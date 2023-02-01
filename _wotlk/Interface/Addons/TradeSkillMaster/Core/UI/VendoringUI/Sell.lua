@@ -145,7 +145,7 @@ function private.GetFrame()
 end
 
 function private.GetItemText(itemString)
-	return UIUtils.GetColoredItemName(itemString) or "?"
+	return UIUtils.GetDisplayItemName(itemString) or "?"
 end
 
 function private.GetPotentialSellText(value)

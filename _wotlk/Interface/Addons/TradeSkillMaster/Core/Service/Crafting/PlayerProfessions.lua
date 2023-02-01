@@ -282,7 +282,7 @@ function private.PlayerProfessionsThread()
 		end
 		local stillExists = true
 		if next(playersToRemove) then
-			stillExists = TSM.Crafting.RemovePlayers(craftString, playersToRemove)
+			stillExists = TSM.Crafting.RemoveCraftPlayers(craftString, playersToRemove)
 		end
 		TempTable.Release(playersToRemove)
 		if stillExists then

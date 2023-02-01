@@ -739,12 +739,12 @@ function private.GetItemCellText(self, subRow)
 		local itemString = subRow:GetItemString()
 		subRow = self._firstSubRowByItem[baseItemString]
 		if not subRow then
-			return UIUtils.GetColoredItemName(itemString or baseItemString, 0)
+			return UIUtils.GetDisplayItemName(itemString or baseItemString, 0)
 		end
 	end
 	local itemLink = subRow:GetLinks()
 	-- TODO: use theme constant for indented tint pct
-	return UIUtils.GetColoredItemName(itemLink, isIndented and -20 or 0)
+	return UIUtils.GetDisplayItemName(itemLink, isIndented and -20 or 0)
 end
 
 function private.GetItemLevelCellText(self, subRow)

@@ -730,7 +730,7 @@ function private.FormatInboxItem(row)
 		return L["Gold"]..": "..Money.ToString(row:GetField("itemLink"), Theme.GetColor("FEEDBACK_GREEN"):GetTextColorPrefix())
 	end
 
-	local coloredItem = UIUtils.GetColoredItemName(row:GetField("itemLink")) or ""
+	local coloredItem = UIUtils.GetDisplayItemName(row:GetField("itemLink")) or ""
 	local quantity = row:GetField("quantity")
 
 	local item = ""
@@ -838,7 +838,7 @@ function private.FormatItem(row)
 	local same = true
 	local qty = 0
 	for _, itemsRow in private.itemsQuery:Iterator() do
-		local coloredItem = UIUtils.GetColoredItemName(itemsRow:GetField("itemLink")) or ""
+		local coloredItem = UIUtils.GetDisplayItemName(itemsRow:GetField("itemLink")) or ""
 		local quantity = itemsRow:GetField("quantity")
 
 		if not item then

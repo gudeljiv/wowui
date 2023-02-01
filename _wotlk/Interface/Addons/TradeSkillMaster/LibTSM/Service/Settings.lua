@@ -835,8 +835,7 @@ function Settings.AccessibleCharacterIterator()
 			for scopeKey in pairs(private.context[private.db].db._syncOwner) do
 				local character = strmatch(scopeKey, "^(.+)"..String.Escape(SCOPE_KEY_SEP..factionrealm))
 				if character then
-					tinsert(result, factionrealm)
-					tinsert(result, character)
+					Table.InsertMultiple(result, factionrealm, character)
 				end
 			end
 		end
@@ -866,9 +865,7 @@ function Settings.ConnectedFactionrealmAltCharacterIterator()
 		for scopeKey in pairs(private.context[private.db].db._syncOwner) do
 			local character = strmatch(scopeKey, "^(.+)"..String.Escape(SCOPE_KEY_SEP..factionrealm))
 			if character and (factionrealm ~= SCOPE_KEYS.factionrealm or character ~= PLAYER) then
-				tinsert(result, factionrealm)
-				tinsert(result, character)
-				tinsert(result, character..SCOPE_KEY_SEP..factionrealm)
+				Table.InsertMultiple(result, factionrealm, character, character..SCOPE_KEY_SEP..factionrealm)
 			end
 		end
 	end
@@ -927,8 +924,7 @@ function Settings.SyncSettingIterator()
 	local result = TempTable.Acquire()
 	for namespace, settings in pairs(private.context[private.db].settingsInfo.sync) do
 		for settingKey in pairs(settings) do
-			tinsert(result, namespace)
-			tinsert(result, settingKey)
+			Table.InsertMultiple(result, namespace, settingKey)
 		end
 	end
 	return TempTable.Iterator(result, 2)
@@ -1607,18 +1603,14 @@ function VIEW_METHODS:AccessibleValueIterator(key)
 					if character then
 						local value = viewInfo.settingsDB:Get(viewInfo.scopeLookup[key], scopeKey, viewInfo.namespaceLookup[key], key)
 						if value ~= nil then
-							tinsert(result, value)
-							tinsert(result, character)
-							tinsert(result, factionrealm)
-							tinsert(result, scopeKey)
+							Table.InsertMultiple(result, value, character, factionrealm, scopeKey)
 						end
 					end
 				end
 			elseif scopeType == "factionrealm" then
 				local value = viewInfo.settingsDB:Get(viewInfo.scopeLookup[key], factionrealm, viewInfo.namespaceLookup[key], key)
 				if value ~= nil then
-					tinsert(result, value)
-					tinsert(result, factionrealm)
+					Table.InsertMultiple(result, value, factionrealm)
 				end
 			else
 				error("Invalid scopeType: "..tostring(scopeType))

@@ -19,7 +19,6 @@ local Money = TSM.Include("Util.Money")
 local Log = TSM.Include("Util.Log")
 local ItemString = TSM.Include("Util.ItemString")
 local Vararg = TSM.Include("Util.Vararg")
-local Wow = TSM.Include("Util.Wow")
 local ItemInfo = TSM.Include("Service.ItemInfo")
 local CustomPrice = TSM.Include("Service.CustomPrice")
 local Conversions = TSM.Include("Service.Conversions")
@@ -372,14 +371,12 @@ function Crafting.GetMatsAsTable(craftString, tbl)
 		:AsTable(tbl)
 end
 
-function Crafting.RemovePlayers(craftString, playersToRemove)
+function Crafting.RemoveCraftPlayers(craftString, playersToRemove)
 	local row = private.spellDB:GetUniqueRow("craftString", craftString)
 	local players = TempTable.Acquire(row:GetField("players"))
-	local isTable = type(playersToRemove) == "table"
-	assert(isTable or type(playersToRemove) == "string")
 	for i = #players, 1, -1 do
 		local player = players[i]
-		if (isTable and playersToRemove[player]) or (not isTable and playersToRemove == player) then
+		if playersToRemove[player] then
 			private.settings.crafts[craftString].players[player] = nil
 			tremove(players, i)
 		end
@@ -401,10 +398,9 @@ function Crafting.RemovePlayers(craftString, playersToRemove)
 	end
 end
 
-function Crafting.RemovePlayerSpells(inactiveSpellIds)
-	local playerName = Wow.GetCharacterName()
+function Crafting.RemovePlayerSpells(playerName, craftStrings)
 	local query = private.spellDB:NewQuery()
-		:InTable("craftString", inactiveSpellIds)
+		:InTable("craftString", craftStrings)
 		:ListContains("players", playerName)
 	if query:Count() == 0 then
 		query:Release()
@@ -414,7 +410,7 @@ function Crafting.RemovePlayerSpells(inactiveSpellIds)
 	local toRemove = TempTable.Acquire()
 	private.spellDB:SetQueryUpdatesPaused(true)
 	if query:Count() > 0 then
-		Log.Info("Removing %d inactive spellds", query:Count())
+		Log.Info("Removing %d crafts", query:Count())
 	end
 	for _, row in query:Iterator() do
 		assert(not next(private.playerTemp))

@@ -183,7 +183,7 @@ function private.GetSearchName(filter, searchType)
 		local numItems = 0
 		for itemString in gmatch(filter, "[^"..FILTER_SEP.."]+") do
 			numItems = numItems + 1
-			local coloredName = UIUtils.GetColoredItemName(itemString)
+			local coloredName = UIUtils.GetDisplayItemName(itemString)
 			if coloredName then
 				tinsert(filters, coloredName)
 			end

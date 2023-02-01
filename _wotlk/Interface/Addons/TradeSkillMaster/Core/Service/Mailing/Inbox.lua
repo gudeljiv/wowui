@@ -41,7 +41,13 @@ function private.GetItemLinkVirtualField(row)
 
 	local items = TempTable.Acquire()
 	for _, itemsRow in private.itemsQuery:Iterator() do
-		local itemName = UIUtils.GetColoredItemName(itemsRow:GetField("itemLink")) or ""
+		local itemLink = itemsRow:GetField("itemLink")
+		local itemName = nil
+		if tonumber(itemLink) then
+			itemName = ""
+		else
+			itemName = UIUtils.GetDisplayItemName(itemLink) or ""
+		end
 		local qty = itemsRow:GetField("quantity")
 
 		tinsert(items, qty > 1 and (itemName.." (x"..qty..")") or itemName)

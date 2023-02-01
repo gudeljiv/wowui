@@ -10,6 +10,7 @@ local Environment = TSM.Include("Environment")
 local L = TSM.Include("Locale").GetTable()
 local Database = TSM.Include("Util.Database")
 local TempTable = TSM.Include("Util.TempTable")
+local Table = TSM.Include("Util.Table")
 local SlotId = TSM.Include("Util.SlotId")
 local Delay = TSM.Include("Util.Delay")
 local Math = TSM.Include("Util.Math")
@@ -974,14 +975,13 @@ function private.NextProcessRowQueryHelper(row)
 end
 
 function private.DebugLogInsert(itemString, ...)
-	tinsert(private.debugLog, itemString)
-	tinsert(private.debugLog, format(...))
+	Table.InsertMultiple(private.debugLog, itemString, format(...))
 end
 
 function private.ErrorForItem(itemString, errorStr)
-	for i = 1, #private.debugLog, 2 do
-		if private.debugLog[i] == itemString then
-			Log.Info(private.debugLog[i + 1])
+	for _, debugItemString, msg in Table.StrideIterator(private.debugLog, 2) do
+		if debugItemString == itemString then
+			Log.Info(msg)
 		end
 	end
 	Log.Info("Bag state:")

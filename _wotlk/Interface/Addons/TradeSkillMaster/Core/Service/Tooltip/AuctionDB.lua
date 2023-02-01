@@ -113,7 +113,7 @@ function private.PopulateRightText(tooltip, itemString)
 		lastScan = TSM.AuctionDB.GetAppDataUpdateTimes()
 		numAuctions = TSM.AuctionDB.GetRealmItemData(itemString, "numAuctions") or 0
 	end
-	if lastScan then
+	if lastScan > 0 then
 		local timeColor = (time() - lastScan) > DATA_OLD_THRESHOLD_SECONDS and Theme.GetColor("FEEDBACK_RED") or Theme.GetColor("FEEDBACK_GREEN")
 		local timeDiff = SecondsToTime(time() - lastScan)
 		return tooltip:ApplyValueColor(format(L["%d auctions"], numAuctions)).." ("..timeColor:ColorText(format(L["%s ago"], timeDiff))..")"

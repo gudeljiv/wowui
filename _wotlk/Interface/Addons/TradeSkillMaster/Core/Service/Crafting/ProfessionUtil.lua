@@ -124,9 +124,14 @@ function ProfessionUtil.GetNumCraftableRecipeString(recipeString)
 	end
 	for _, _, itemId in RecipeString.OptionalMatIterator(recipeString) do
 		local itemString = ItemString.Get(itemId)
+		local totalQuantity = CustomPrice.GetItemPrice(itemString, "NumInventory") or 0
+		if totalQuantity == 0 then
+			return 0, 0
+		end
 		local quantity = TSM.Crafting.GetOptionalMatQuantity(craftString, itemId)
 		local bagQuantity = BagTracking.GetCraftingMatQuantity(itemString)
 		num = min(num, floor(bagQuantity / quantity))
+		numAll = min(numAll, floor(totalQuantity / quantity))
 	end
 	if num == math.huge or numAll == math.huge then
 		return 0, 0

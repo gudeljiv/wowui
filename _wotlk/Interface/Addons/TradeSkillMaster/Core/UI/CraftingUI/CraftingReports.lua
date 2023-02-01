@@ -345,7 +345,7 @@ end
 -- ============================================================================
 
 function private.CraftsGetCraftNameText(row)
-	return UIUtils.GetColoredItemName(row:GetField("itemString")) or row:GetField("name")
+	return UIUtils.GetDisplayItemName(row:GetField("itemString")) or row:GetField("name")
 end
 
 function private.CraftsGetBagsText(bagQuantity)
@@ -386,7 +386,7 @@ function private.CraftsGetSaleRateText(saleRate)
 end
 
 function private.MatsGetNameText(itemString)
-	return UIUtils.GetColoredItemName(itemString) or UIUtils.GetColoredItemName(ItemString.GetUnknown())
+	return UIUtils.GetDisplayItemName(itemString) or UIUtils.GetDisplayItemName(ItemString.GetUnknown())
 end
 
 function private.MatsGetPriceText(matCost)
@@ -466,7 +466,7 @@ function private.MatsOnRowClick(scrollingTable, row)
 			:AddChild(UIElements.New("Text", "name")
 				:SetMargin(0, 8, 0, 0)
 				:SetFont("ITEM_BODY1")
-				:SetText(UIUtils.GetColoredItemName(itemString))
+				:SetText(UIUtils.GetDisplayItemName(itemString))
 			)
 			:AddChild(UIElements.New("Button", "resetBtn")
 				:SetWidth("AUTO")

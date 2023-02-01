@@ -602,8 +602,8 @@ function private.RowOnClick(row, mouseButton)
 			scrollingTable:SetSelection(data)
 		else
 			scrollingTable:_ToggleCollapsed(data)
+			scrollingTable:UpdateData(true)
 		end
-		scrollingTable:UpdateData(true)
 
 		if scrollingTable._isCraftString[data] then
 			row:SetHighlightState("selectedHover")

@@ -608,12 +608,7 @@ function DatabaseQuery:UUIDDiffPrepare(oldUUIDs)
 		while #context.remove > 0 and context.remove[#context.remove] == startIndex - 1 do
 			startIndex = tremove(context.remove)
 		end
-		tinsert(context.result, "REMOVE")
-		tinsert(context.result, startIndex)
-		tinsert(context.result, endIndex - startIndex + 1)
-		for i = startIndex, endIndex do
-			tinsert(context.result, oldUUIDs[i])
-		end
+		Table.InsertMultiple(context.result, "REMOVE", startIndex, endIndex - startIndex + 1, unpack(oldUUIDs, startIndex, endIndex))
 	end
 
 	-- Add the insert actions
@@ -628,12 +623,7 @@ function DatabaseQuery:UUIDDiffPrepare(oldUUIDs)
 				break
 			end
 		end
-		tinsert(context.result, "INSERT")
-		tinsert(context.result, startIndex)
-		tinsert(context.result, endIndex - startIndex + 1)
-		for j = startIndex, endIndex do
-			tinsert(context.result, self._result[j])
-		end
+		Table.InsertMultiple(context.result, "INSERT", startIndex, endIndex - startIndex + 1, unpack(self._result, startIndex, endIndex))
 		i = i + endIndex - startIndex + 1
 	end
 	wipe(context.insert)
@@ -1811,8 +1801,6 @@ function private.UUIDDiffIterator(context, index)
 	index = index + 3
 	assert(action == "INSERT" or action == "REMOVE")
 	assert(startIndex > 0 and num > 0 and num <= #context.result - index + 1)
-	for i = index, index + num - 1 do
-		tinsert(context.uuids, context.result[i])
-	end
+	Table.InsertMultiple(context.uuids, unpack(context.result, index, index + num - 1))
 	return index + num, action, startIndex, context.uuids
 end

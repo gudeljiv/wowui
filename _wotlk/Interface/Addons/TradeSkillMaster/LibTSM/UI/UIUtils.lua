@@ -36,21 +36,10 @@ end
 -- Module Functions
 -- ============================================================================
 
----Colors an item name based on its quality.
----@param item string The item to retrieve the name and quality of
+---Gets an item name formatted for display.
+---@param item string The item to display
 ---@param tintPct? number The tintPct to apply to the quality color
----@return string
-function UIUtils.GetColoredItemName(item, tintPct)
-	local name = ItemInfo.GetName(item)
-	local quality = ItemInfo.GetQuality(item)
-	return UIUtils.GetQualityColoredText(name, quality, nil, tintPct)
-end
-
----Colors an item name based on its quality and add the crafted quality texture.
----@param item string The item to retrieve the name and quality of
----@param tintPct? number The tintPct to apply to the quality color
----@return string
-function UIUtils.GetColoredCraftedItemName(item, tintPct)
+function UIUtils.GetDisplayItemName(item, tintPct)
 	local name = ItemInfo.GetName(item)
 	local quality = ItemInfo.GetQuality(item)
 	local craftedQuality = ItemInfo.GetCraftedQuality(item)

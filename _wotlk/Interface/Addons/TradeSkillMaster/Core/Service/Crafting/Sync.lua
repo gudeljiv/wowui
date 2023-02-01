@@ -146,17 +146,16 @@ function private.RPCGetCraftsResultHandler(success, player, profession, craftStr
 
 	-- Remove any crafts which the player no longer knows
 	local query = TSM.Crafting.CreateRawCraftsQuery()
-		:Select("craftString")
+		:Select("craftString", "profession")
 		:Equal("profession", profession)
 		:ListContains("players", player)
-	local toRemove = TempTable.Acquire()
+		:NotInTable("craftString", craftStrings)
 	Log.Info("Removing %d crafts (%s, %s)", query:Count(), profession, player)
-	for _, craftString in query:Iterator() do
-		toRemove[craftString] = true
-	end
+	local toRemove = TempTable.Acquire()
+	query:AsTable(toRemove)
 	query:Release()
-	for craftString in pairs(toRemove) do
-		TSM.Crafting.RemovePlayers(craftString, player)
+	if next(toRemove) then
+		TSM.Crafting.RemovePlayerSpells(player, toRemove)
 	end
 	TempTable.Release(toRemove)
 
