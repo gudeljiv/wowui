@@ -668,9 +668,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 747147,
-		["timeStamp"] = 1700427.131,
-		["timeAtThisLevel"] = 129688,
+		["total"] = 747616,
+		["timeStamp"] = 3047.78,
+		["timeAtThisLevel"] = 130157,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -714,14 +714,14 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 1053773,
-		["timeAtThisLevel"] = 22753,
-		["timeStamp"] = 1676561.097,
+		["total"] = 1054528,
+		["timeAtThisLevel"] = 23508,
+		["timeStamp"] = 10714.924,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 582060,
-		["timeStamp"] = 164874.737,
-		["timeAtThisLevel"] = 252385,
+		["total"] = 592850,
+		["timeStamp"] = 4310.585,
+		["timeAtThisLevel"] = 263175,
 	},
 	["Tudum-Jin'do"] = {
 		["total"] = 316,
@@ -824,9 +824,9 @@ CB_PlayedTime = {
 		["total"] = 390,
 	},
 	["Miqa-Golemagg"] = {
-		["total"] = 20778,
-		["timeStamp"] = 1612059.969,
-		["timeAtThisLevel"] = 15730,
+		["total"] = 20857,
+		["timeStamp"] = 1849530.011,
+		["timeAtThisLevel"] = 15809,
 	},
 	["Nitwit-"] = {
 		["total"] = 680,
@@ -846,9 +846,9 @@ CB_PlayedTime = {
 		["timeStamp"] = 1608612.783,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1731965,
-		["timeAtThisLevel"] = 639418,
-		["timeStamp"] = 164233.517,
+		["total"] = 1733574,
+		["timeAtThisLevel"] = 641027,
+		["timeStamp"] = 2897.594,
 	},
 	["Provokator-Jin'do"] = {
 		["total"] = 22720,

@@ -1358,17 +1358,17 @@ AtlasLootClassicDB = {
 			},
 			["GUI"] = {
 				["point"] = {
-					"TOPRIGHT", -- [1]
+					"TOP", -- [1]
 					nil, -- [2]
-					"TOPRIGHT", -- [3]
-					-212.9999542236328, -- [4]
-					-118.3650665283203, -- [5]
+					"TOP", -- [3]
+					-87.60327911376953, -- [4]
+					-102.7619552612305, -- [5]
 				},
 				["selected"] = {
-					nil, -- [1]
-					"TrialoftheChampion", -- [2]
-					4, -- [3]
-					6, -- [4]
+					"AtlasLootClassic_Crafting", -- [1]
+					"EnchantingWrath", -- [2]
+					3, -- [3]
+					1, -- [4]
 					0, -- [5]
 				},
 			},
