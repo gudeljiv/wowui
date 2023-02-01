@@ -23,7 +23,8 @@ skills["offgcd"]["warrior"] = [
     {"name": "shield block", "type": "GetSpellTexture", "id": 2565, "key": "f4", "modifier": "ctrl"},
     {"name": "last stand", "type": "GetSpellTexture", "id": 12975, "key": "t", "modifier": "shift"},
     {"name": "battlemaster's resolve", "type": "GetItemIcon", "id": 41589, "key": "1", "modifier": "alt"},
-    {"name": "blood fury", "type": "GetSpellTexture", "id": 20572, "key": "f5", "modifier": "ctrl"},
+    {"name": "blood fury", "type": "GetSpellTexture", "id": 20572, "key": "8"},
+    {"name": "bloodrage", "type": "GetSpellTexture", "id": 2687, "key": "d", "modifier": "alt"},
 ]
 
 skills["offgcd"]["druid"] = [
@@ -90,6 +91,7 @@ skills["warrior"] = [
     {"name": "shattering throw", "type": "GetSpellTexture", "id": 64382, "key": "7"},
     {"name": "death wish", "type": "GetSpellTexture", "id": 12292, "key": "r", "modifier": "alt"},
     {"name": "recklessness", "type": "GetSpellTexture", "id": 1719, "key": "e", "modifier": "alt"},
+    {"name": "enraged regeneration", "type": "GetSpellTexture", "id": 55694, "key": "f5", "modifier": "ctrl"},
 ]
 
 
@@ -162,6 +164,7 @@ skills["death knight"] = [
     {"name": "unbreakable armor", "type": "GetSpellTexture", "id": 51271, "key": "h"},
     {"name": "blood strike", "type": "GetSpellTexture", "id": 49929, "key": "f5", "modifier": "ctrl"},
     {"name": "mark of blood", "type": "GetSpellTexture", "id": 49005, "key": "k"},
+    {"name": "raise dead", "type": "GetSpellTexture", "id": 46584, "key": "d", "modifier": "alt"},
 ]
 
 skills["paladin"] = [

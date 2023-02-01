@@ -1,13 +1,12 @@
-VER 3 000000000100001D " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/use [spec:1]13;[spec:2]10
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@cursor] Saronite Bomb
 END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast [stance:1/2] Shield Bash
 /cast [stance:3] Pummel
-/cast Bloodrage
 END
 VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -27,13 +26,6 @@ VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast [nostance:2/3,spec:2]Berserker Stance
 /cast [spec:1]Mortal Strike;[spec:2]Bloodthirst
-/cast Bloodrage
-END
-VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast Sweeping Strikes
-/use Bloodrage
 END
 VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -74,16 +66,11 @@ VER 3 000000000100001A " " "INV_MISC_QUESTIONMARK"
 /cast [stance:1] Retaliation
 /cast [stance:2] Shield Wall
 END
-VER 3 000000000100001B " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast Concussion Blow
-/cast Bloodrage
-END
 VER 3 000000000100001C " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use [spec:1]14;[spec:2]15
 END
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip 
-/cast [@cursor] Saronite Bomb
+VER 3 000000000100001D " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [spec:1]13;[spec:2]10
 END
