@@ -60,7 +60,7 @@ FrameLevel: 1
 Anchor: CENTER
 X: 313
 Y: -74
-W: 81
+W: 78
 H: 40
 Frame: Dejunk_ParentFrame
 FrameLevel: 1
@@ -72,8 +72,8 @@ H: 600
 Frame: Dejunk_JunkFrame
 FrameLevel: 2
 Anchor: TOPRIGHT
-X: -339
-Y: -84
+X: -350
+Y: -158
 W: 325
 H: 375
 Frame: Dejunk_TransportFrame
@@ -83,13 +83,6 @@ X: 33
 Y: 155
 W: 325
 H: 375
-Frame: TellMeWhen_ConfigWarning
-FrameLevel: 1
-Anchor: TOP
-X: -10
-Y: -289
-W: 330
-H: 113
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM

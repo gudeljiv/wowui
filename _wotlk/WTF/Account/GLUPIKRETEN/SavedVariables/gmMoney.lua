@@ -2,11 +2,11 @@
 GMMONEY = {
 	["Golemagg"] = {
 		["Battlearm"] = {
-			["GOLD"] = 106203558,
+			["GOLD"] = 91295681,
 			["CLASS"] = "DEATHKNIGHT",
 		},
 		["Mxzq"] = {
-			["GOLD"] = 78031931,
+			["GOLD"] = 58031901,
 			["CLASS"] = "HUNTER",
 		},
 		["Mxyz"] = {
@@ -21,17 +21,17 @@ GMMONEY = {
 			["GOLD"] = 4,
 			["CLASS"] = "WARRIOR",
 		},
-		["Augustin"] = {
-			["GOLD"] = 96743,
-			["CLASS"] = "MAGE",
+		["Vermina"] = {
+			["GOLD"] = 9909739,
+			["CLASS"] = "PALADIN",
 		},
 		["Moolatz"] = {
 			["GOLD"] = 4958305,
 			["CLASS"] = "DRUID",
 		},
-		["Tadibey"] = {
-			["GOLD"] = 298737,
-			["CLASS"] = "SHAMAN",
+		["Augustin"] = {
+			["GOLD"] = 96743,
+			["CLASS"] = "MAGE",
 		},
 		["Battitude"] = {
 			["GOLD"] = 998227,
@@ -41,17 +41,17 @@ GMMONEY = {
 			["GOLD"] = 13062013,
 			["CLASS"] = "PRIEST",
 		},
-		["Vermina"] = {
-			["GOLD"] = 9909739,
-			["CLASS"] = "PALADIN",
+		["Tadibey"] = {
+			["GOLD"] = 298737,
+			["CLASS"] = "SHAMAN",
 		},
 		["Vermin"] = {
-			["GOLD"] = 35117121,
+			["GOLD"] = 38050642,
 			["CLASS"] = "WARRIOR",
 		},
 	},
 }
 GMMONEYSET = {
-	["FULLDISP"] = true,
 	["TEXTMODE"] = true,
+	["FULLDISP"] = true,
 }

@@ -27,6 +27,8 @@ from os.path import exists
 from skimage.metrics import structural_similarity
 from datetime import datetime
 
+import random
+
 pyautogui.PAUSE = 1
 
 combat = False
@@ -46,15 +48,17 @@ def on_press(key):
         if pause:
             print("Rotation is paused")
             pyautogui.PAUSE = 1
+            pyautogui.FAILSAFE = False
         else:
             print("Rotation is not paused")
-            pyautogui.PAUSE = 0
+            pyautogui.PAUSE = 0.1
+            pyautogui.FAILSAFE = True
 
 
 with keyboard.Listener(on_press=on_press) as listener:
     with mss.mss() as sct:
         while True:
 
-            time.sleep(1)
+            time.sleep(random.uniform(0, 1))
             if not pause:
                 pyautogui.hotkey("x")

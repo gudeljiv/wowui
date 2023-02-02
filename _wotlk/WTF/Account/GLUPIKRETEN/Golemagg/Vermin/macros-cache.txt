@@ -73,4 +73,5 @@ END
 VER 3 000000000100001D " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use [spec:1]13;[spec:2]10
+/use Loatheb's Shadow
 END

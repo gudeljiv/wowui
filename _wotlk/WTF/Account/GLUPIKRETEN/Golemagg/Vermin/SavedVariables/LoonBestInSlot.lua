@@ -35,7 +35,7 @@ LBISSettings = {
 		["RestorationDruid"] = true,
 		["SubtletyRogue"] = true,
 	},
-	["SelectedSpec"] = "Death Knight: Frost",
+	["SelectedSpec"] = "Warrior: Protection",
 	["minimap"] = {
 		["minimapPos"] = 180,
 		["hide"] = true,
@@ -47,10 +47,10 @@ LBISSettings = {
 	},
 	["ShowPriority"] = true,
 	["SelectedRank"] = "All",
-	["SelectedSlot"] = "Ring",
-	["SelectedSourceType"] = "All",
 	["ShowCustom"] = true,
+	["SelectedSourceType"] = "All",
 	["PriorityList"] = {
 	},
-	["SelectedPhase"] = "Phase 2",
+	["SelectedSlot"] = "Ranged/Relic",
+	["SelectedPhase"] = "Phase 1",
 }

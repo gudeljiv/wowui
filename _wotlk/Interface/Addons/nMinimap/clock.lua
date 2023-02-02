@@ -74,7 +74,8 @@ TimeManagerClockButton:SetScript(
 				local name, id, reset, difficulty, locked, extended, instanceIDMostSig, isRaid, maxPlayers, difficultyName, numEncounters, encounterProgress = GetSavedInstanceInfo(index)
 
 				if locked then
-					table.insert(instanceLockouts, {name = name, reset = reset, difficulty = difficultyName:gsub(' Player', ''), defeated = encounterProgress, total = numEncounters})
+					local difficulty = difficultyName:gsub(' Player', ''):gsub('Heroic', '5')
+					table.insert(instanceLockouts, {name = name, reset = reset, difficulty = difficulty, defeated = encounterProgress, total = numEncounters})
 				end
 			end
 
@@ -87,7 +88,7 @@ TimeManagerClockButton:SetScript(
 
 				for i, saved in ipairs(instanceLockouts) do
 					local bossColor = saved.defeated == saved.total and {0.0, 1.0, 0.0} or {1.0, 0.0, 0.0}
-					GameTooltip:AddDoubleLine('|cffffffff' .. saved.difficulty .. '|r ' .. saved.name .. ' |cffffffff(' .. SecondsToTime(saved.reset) .. ')|r ', saved.defeated .. '/' .. saved.total, 1.0, 0.82, 0.0, unpack(bossColor))
+					GameTooltip:AddDoubleLine(saved.name .. ' |cffffffff(' .. SecondsToTime(saved.reset) .. ')|r ', saved.defeated .. '/' .. saved.total .. ' |cffffffff(' .. saved.difficulty .. ')|r', 1.0, 0.82, 0.0, unpack(bossColor))
 				end
 			end
 		end

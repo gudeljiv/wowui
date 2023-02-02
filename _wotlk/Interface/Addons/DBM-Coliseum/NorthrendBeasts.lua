@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("NorthrendBeasts", "DBM-Coliseum")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20230124053113")
+mod:SetRevision("20230201003256")
 mod:SetCreatureID(34796, 35144, 34799, 34797)
 --mod:SetEncounterID(mod:IsClassic() and 629 or 1088)--Buggy, never enable this
 mod:SetMinSyncRevision(104)

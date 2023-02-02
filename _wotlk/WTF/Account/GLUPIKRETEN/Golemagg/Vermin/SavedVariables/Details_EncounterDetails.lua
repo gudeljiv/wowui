@@ -1887,6 +1887,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Yilopz",
 		},
+		[64213] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Emalon the Storm Watcher",
+		},
 		[56153] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -2524,6 +2533,14 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Entropic Eye",
+		},
+		[61339] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Xevozz",
 		},
 		[59420] = {
 			["school"] = 1,
@@ -6654,10 +6671,10 @@ EncounterDetailsDB = {
 		[47610] = {
 			["school"] = 20,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "Voodooistt",
 		},
@@ -6844,14 +6861,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sunblade Warlock",
 		},
-		[36992] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[61556] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Pathaleon the Calculator",
+			["source"] = "Crystalline Tangler",
 		},
 		[59381] = {
 			["school"] = 64,
@@ -6862,20 +6878,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ley-Guardian Eregos",
 		},
-		[61556] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Crystalline Tangler",
-		},
 		[75999] = {
 			["school"] = 32,
 			["token"] = {
 				["SPELL_HEAL"] = true,
 			},
 			["source"] = "Gandza",
+		},
+		[36992] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Pathaleon the Calculator",
 		},
 		[19506] = {
 			["school"] = 64,
@@ -7990,29 +8007,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Protean Horror",
 		},
-		[43649] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Dalronn the Controller",
-		},
-		[57722] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Sprime",
-		},
-		[70890] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Gvozdenko",
-		},
 		[54249] = {
 			["school"] = 4,
 			["token"] = {
@@ -8022,6 +8016,28 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lavanthor",
 		},
+		[57722] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Sprime",
+		},
+		[35059] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Talon King Ikiss",
+		},
+		[70890] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Gvozdenko",
+		},
 		[348809] = {
 			["school"] = 32,
 			["token"] = {
@@ -8029,20 +8045,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Heigan the Unclean",
 		},
-		[55931] = {
-			["school"] = 4,
+		[43649] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Prince Taldaram",
-		},
-		[57083] = {
-			["school"] = 0,
-			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Ormorok the Tree-Shaper",
+			["source"] = "Dalronn the Controller",
 		},
 		[48127] = {
 			["school"] = 32,
@@ -8052,6 +8062,16 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Bentebenlås",
+		},
+		[54396] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Moragg",
 		},
 		[52029] = {
 			["school"] = 1,
@@ -8070,15 +8090,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Instructor Razuvious",
 		},
-		[54396] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[29573] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Moragg",
+			["source"] = "Lord Robin Daris",
 		},
 		[27142] = {
 			["school"] = 2,
@@ -8186,14 +8205,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Phantom Hound",
 		},
-		[29573] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[48895] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Lord Robin Daris",
+			["source"] = "Drakkari Shaman",
 		},
 		[36677] = {
 			["school"] = 8,
@@ -8229,13 +8248,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Vrykul Skeleton",
 		},
-		[59578] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[63672] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Darkil",
+			["source"] = "Veverko",
 		},
 		[29765] = {
 			["school"] = 64,
@@ -8245,12 +8263,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Bloodwarder Protector",
 		},
-		[63672] = {
-			["school"] = 32,
+		[57531] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Veverko",
+			["source"] = "Xavianth",
 		},
 		[47450] = {
 			["school"] = 1,
@@ -8859,13 +8878,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Broxigâr",
 		},
-		[28135] = {
-			["school"] = 8,
+		[47780] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Feugen",
+			["source"] = "Steward",
 		},
 		[49921] = {
 			["school"] = 1,
@@ -8875,22 +8894,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Gvozdenko",
 		},
-		[32325] = {
-			["school"] = 32,
+		[28135] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Pandemonius",
+			["source"] = "Feugen",
 		},
-		[47780] = {
+		[48258] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Steward",
+			["source"] = "Svala Sorrowgrave",
 		},
 		[48066] = {
 			["school"] = 2,
@@ -8920,13 +8938,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Phantasmal Wolf",
 		},
-		[48258] = {
-			["school"] = 1,
+		[44164] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Svala Sorrowgrave",
+			["source"] = "Fizzle",
 		},
 		[38151] = {
 			["school"] = 64,
@@ -9091,14 +9110,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Tavarok",
 		},
-		[47747] = {
-			["school"] = 64,
-			["type"] = "BUFF",
+		[22858] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Anomalus",
+			["source"] = "Watchkeeper Gargolmar",
 		},
 		[59837] = {
 			["school"] = 8,
@@ -9128,12 +9145,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "The Prophet Tharon'ja",
 		},
-		[22858] = {
-			["school"] = 1,
+		[60029] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Watchkeeper Gargolmar",
+			["source"] = "Jedoga Shadowseeker",
 		},
 		[47811] = {
 			["school"] = 4,
@@ -9898,12 +9919,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Twilight Worshipper",
 		},
-		[63934] = {
-			["school"] = 64,
+		[59840] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Scion of Eternity",
+			["source"] = "Slad'ran",
 		},
 		[29832] = {
 			["school"] = 32,
@@ -9930,15 +9954,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Eck the Ferocious",
 		},
-		[59840] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[29928] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Slad'ran",
+			["source"] = "Phantom Guest",
 		},
 		[57369] = {
 			["school"] = 32,
@@ -10144,6 +10166,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Guardian of Icecrown",
 		},
+		[59521] = {
+			["school"] = 16,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Ichoron",
+		},
 		[61568] = {
 			["school"] = 4,
 			["type"] = "DEBUFF",
@@ -10163,15 +10194,6 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Erekem",
-		},
-		[59521] = {
-			["school"] = 16,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Ichoron",
 		},
 		[61632] = {
 			["school"] = 1,
@@ -10792,13 +10814,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Dotzftw",
 		},
-		[29928] = {
-			["school"] = 4,
+		[63934] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Phantom Guest",
+			["source"] = "Scion of Eternity",
 		},
 		[47753] = {
 			["school"] = 2,
@@ -11159,16 +11180,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Retrisux",
 		},
-		[60029] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
+		[47747] = {
+			["school"] = 64,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Jedoga Shadowseeker",
+			["source"] = "Anomalus",
 		},
 		[34794] = {
 			["school"] = 64,
@@ -11263,14 +11282,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sovic",
 		},
-		[44164] = {
-			["school"] = 4,
+		[32325] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Fizzle",
+			["source"] = "Pandemonius",
 		},
 		[59397] = {
 			["school"] = 32,
@@ -11575,13 +11594,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Grand Magus Telestra",
 		},
-		[57531] = {
+		[59578] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Xavianth",
+			["source"] = "Darkil",
 		},
 		[51006] = {
 			["school"] = 1,
@@ -11599,14 +11618,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Cyborgson",
 		},
-		[48895] = {
-			["school"] = 8,
+		[57083] = {
+			["school"] = 0,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Drakkari Shaman",
+			["source"] = "Ormorok the Tree-Shaper",
 		},
 		[59846] = {
 			["school"] = 8,
@@ -11635,13 +11652,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Herald Volazj",
 		},
-		[35059] = {
-			["school"] = 64,
+		[55931] = {
+			["school"] = 4,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Talon King Ikiss",
+			["source"] = "Prince Taldaram",
 		},
 		[47820] = {
 			["school"] = 4,

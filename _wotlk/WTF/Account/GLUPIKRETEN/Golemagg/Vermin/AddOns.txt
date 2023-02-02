@@ -201,6 +201,6 @@ ShadowedUF_Options: enabled
 ShadowedUnitFrames: enabled
 RatingBuster: enabled
 AskMrRobotClassic: disabled
-WowSimsExporter: disabled
+WowSimsExporter: enabled
 GDKPd: enabled
 TacoTip: enabled

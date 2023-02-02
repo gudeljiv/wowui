@@ -25,6 +25,7 @@ skills["offgcd"]["warrior"] = [
     {"name": "battlemaster's resolve", "type": "GetItemIcon", "id": 41589, "key": "1", "modifier": "alt"},
     {"name": "blood fury", "type": "GetSpellTexture", "id": 20572, "key": "8"},
     {"name": "bloodrage", "type": "GetSpellTexture", "id": 2687, "key": "d", "modifier": "alt"},
+    {"name": "gloves_trinket", "type": "GetSpellTexture", "id": 52766, "key": "t"},
 ]
 
 skills["offgcd"]["druid"] = [
