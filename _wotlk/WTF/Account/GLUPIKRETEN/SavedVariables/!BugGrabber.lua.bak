@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 8921,
+	["session"] = 8923,
 	["errors"] = {
 		{
 			["message"] = "...BugSack\\Libs\\AceSerializer-3.0\\AceSerializer-3.0-5.lua:247: bad argument #1 to 'gsub' (string expected, got nil)",
