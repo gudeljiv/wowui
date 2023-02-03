@@ -1,7 +1,6 @@
-VER 3 000000000100001D " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/use [spec:1]13;[spec:2]10
-/use Loatheb's Shadow
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@cursor] Saronite Bomb
 END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -71,7 +70,8 @@ VER 3 000000000100001C " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use [spec:1]14;[spec:2]15
 END
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip 
-/cast [@cursor] Saronite Bomb
+VER 3 000000000100001D " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [spec:1]13;[spec:2]10
+/use Loatheb's Shadow
 END
