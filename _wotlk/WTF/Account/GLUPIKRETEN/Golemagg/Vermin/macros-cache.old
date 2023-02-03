@@ -43,6 +43,7 @@ VER 3 0000000001000015 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast [nostance:2,spec:1]Defensive Stance
 /cast Revenge
+/use 10
 END
 VER 3 0000000001000014 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Vigilance
