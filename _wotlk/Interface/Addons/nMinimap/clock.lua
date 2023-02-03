@@ -88,7 +88,7 @@ TimeManagerClockButton:SetScript(
 
 				for i, saved in ipairs(instanceLockouts) do
 					local bossColor = saved.defeated == saved.total and {0.0, 1.0, 0.0} or {1.0, 0.0, 0.0}
-					GameTooltip:AddDoubleLine(saved.name .. ' |cffffffff(' .. SecondsToTime(saved.reset) .. ')|r ', saved.defeated .. '/' .. saved.total .. ' |cffffffff(' .. saved.difficulty .. ')|r', 1.0, 0.82, 0.0, unpack(bossColor))
+					GameTooltip:AddDoubleLine(saved.name .. ' |cffffffff(' .. saved.difficulty .. ')|r' .. ' |cff777777(' .. SecondsToTime(saved.reset) .. ')|r ', saved.defeated .. '/' .. saved.total, 1.0, 0.82, 0.0, unpack(bossColor))
 				end
 			end
 		end

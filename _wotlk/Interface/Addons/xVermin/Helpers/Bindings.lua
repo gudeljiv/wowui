@@ -155,6 +155,11 @@ local function FixBindings()
 end
 
 local function ClearAllBindings()
+	if InCombatLockdown() then
+		print("Can't fix binding because in combat")
+		return
+	end
+
 	-- local x = {}
 	-- local y = 0
 	-- for i = 0, 200 do

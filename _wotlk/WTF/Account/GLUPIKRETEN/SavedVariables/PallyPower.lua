@@ -31,8 +31,8 @@ PallyPowerDB = {
 				["buffDuration"] = false,
 				["frameLocked"] = true,
 			},
-			["border"] = "None",
 			["SalvInCombat"] = true,
+			["border"] = "None",
 			["rf"] = false,
 		},
 		["Other"] = {
@@ -60,14 +60,14 @@ PallyPower_Assignments = {
 	["Vermina"] = {
 		0, -- [1]
 		0, -- [2]
-		0, -- [3]
+		3, -- [3]
 		0, -- [4]
 		4, -- [5]
 		0, -- [6]
-		0, -- [7]
-		0, -- [8]
-		0, -- [9]
-		0, -- [10]
+		3, -- [7]
+		3, -- [8]
+		3, -- [9]
+		3, -- [10]
 		2, -- [11]
 	},
 	["Gamzy"] = {
@@ -136,25 +136,25 @@ PallyPower_AuraAssignments = {
 	["Liadriel"] = 0,
 	["Zagopally"] = 1,
 	["Turanian"] = 1,
-	["Barskeladd"] = 6,
+	["Bumpyco"] = 1,
 	["Fumika"] = 1,
-	["Tisca"] = 1,
+	["Dewbieholy"] = 0,
 	["Aarvin"] = 0,
 	["Lallin"] = 3,
 	["Nimhitch"] = 3,
 	["Griller"] = 0,
-	["Moghulol"] = 1,
-	["Pinkins"] = 1,
-	["Artemizia"] = 0,
-	["Bumpyco"] = 1,
-	["Pretzelqt"] = 0,
-	["Asdartu"] = 3,
-	["Dewbieholy"] = 0,
 	["Aoioi"] = 3,
 	["Whit"] = 2,
+	["Artemizia"] = 0,
+	["Barskeladd"] = 6,
+	["Pretzelqt"] = 0,
+	["Asdartu"] = 3,
+	["Holychock"] = 3,
+	["Moghulol"] = 1,
+	["Pinkins"] = 1,
 	["Baconmedflød"] = 0,
 	["Nedzir"] = 1,
-	["Lubiven"] = 0,
+	["Heligaqken"] = 1,
 	["Zahiri"] = 2,
 	["Ethyr"] = 3,
 	["Zoqur"] = 0,
@@ -174,7 +174,7 @@ PallyPower_AuraAssignments = {
 	["Glumsi"] = 0,
 	["Monikà"] = 0,
 	["Shinésx"] = 0,
-	["Ðîvâ"] = 3,
+	["Teddz"] = 0,
 	["Zayebany"] = 1,
 	["Ondisch"] = 0,
 	["Rvbbitt"] = 0,
@@ -185,23 +185,23 @@ PallyPower_AuraAssignments = {
 	["Palladen"] = 5,
 	["Liâdrin"] = 2,
 	["Althan"] = 0,
-	["Immórtál"] = 1,
 	["Phkp"] = 0,
+	["Immórtál"] = 1,
 	["Holychoke"] = 1,
 	["Monikå"] = 0,
 	["Vermina"] = 2,
 	["Drexal"] = 0,
 	["Lonnath"] = 0,
-	["Teddz"] = 0,
+	["Ðîvâ"] = 3,
 	["Sistermerrin"] = 0,
 	["Uhndapa"] = 0,
 	["Dariya"] = 0,
 	["Houdyn"] = 1,
 	["Emerity"] = 2,
 	["Appendix"] = 2,
-	["Heligaqken"] = 1,
+	["Lubiven"] = 0,
+	["Tisca"] = 1,
 	["Ewulcek"] = 3,
-	["Holychock"] = 3,
 	["Thudur"] = 3,
 	["Jollylight"] = 6,
 	["Selestra"] = 0,

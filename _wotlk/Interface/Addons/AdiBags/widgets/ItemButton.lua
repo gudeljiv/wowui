@@ -358,6 +358,7 @@ function buttonProto:Update()
 	end
 	self:UpdateCount()
 	self:UpdateBorder()
+	self:UpdateItemLevel()
 	if self.UpdateCooldown then
 		self:UpdateCooldown(self.texture)
 	end
@@ -382,6 +383,26 @@ function buttonProto:UpdateCount()
 		self.Count:Show()
 	else
 		self.Count:Hide()
+	end
+end
+
+function buttonProto:UpdateItemLevel()
+	if not self.itemLink then
+		return
+	end
+	self.text = self:CreateFontString(nil, 'ARTWORK')
+	self.text:SetFont('Fonts\\FRIZQT__.TTF', 10, 'THINOUTLINE')
+	self.text:SetTextColor(1, 1, 0)
+	self.text:SetPoint('TOPRIGHT', self, 'TOPRIGHT', 0, -2)
+	self.text:Hide()
+
+	itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice = GetItemInfo(self.itemLink)
+
+	if itemLevel and itemEquipLoc and itemEquipLoc ~= '' then
+		self.text:SetText(itemLevel)
+		self.text:Show()
+	else
+		self.text:Hide()
 	end
 end
 
@@ -498,14 +519,6 @@ function buttonProto:UpdateBorder(isolatedEvent)
 		if itemType and itemType == 'Quest' then
 			self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureWhite')
 			self:SetBeautyBorderColor(1, 0.964, 0, 1)
-		end
-
-		if itemLevel and itemEquipLoc and itemEquipLoc ~= '' then
-			self.text = self:CreateFontString(nil, 'ARTWORK')
-			self.text:SetFont('Fonts\\FRIZQT__.TTF', 10, 'THINOUTLINE')
-			self.text:SetTextColor(1, 1, 0)
-			self.text:SetPoint('TOPRIGHT', self, 'TOPRIGHT', 0, -2)
-			self.text:SetText(itemLevel)
 		end
 	else
 		self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureNormal')

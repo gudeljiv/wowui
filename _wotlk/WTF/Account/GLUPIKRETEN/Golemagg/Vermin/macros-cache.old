@@ -77,8 +77,3 @@ VER 3 000000000100001E " " "134400"
 /startattack
 /cast [@mouseover,exists][]Heroic Throw
 END
-VER 3 000000000100001F " " "134400"
-#showtooltip Enraged Regeneration
-/cast Bloodrage
-/cast Enraged Regeneration
-END
