@@ -13,6 +13,7 @@ import mss.tools
 import numpy
 import math
 import pyperclip
+import random
 
 if(os.name == "posix"):
     from AppKit import NSScreen
@@ -147,6 +148,9 @@ with keyboard.Listener(on_press=on_press) as listener:
     with mss.mss() as sct:
 
         while True:
+
+            time.sleep(random.uniform(0.001, 0.01))
+
             start_time = time.time()
             active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 

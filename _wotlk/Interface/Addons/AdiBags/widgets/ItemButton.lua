@@ -490,14 +490,22 @@ function buttonProto:UpdateBorder(isolatedEvent)
 		self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureNormal')
 		self:SetBeautyBorderColor(1, 1, 1, 1)
 
-		if (itemRarity and itemRarity > 1) then
+		if itemRarity and itemRarity > 1 then
 			self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureWhite')
 			self:SetBeautyBorderColor(r or 1, g or 0, b or 0, 1)
 		end
 
-		if (itemType and itemType == 'Quest') then
+		if itemType and itemType == 'Quest' then
 			self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureWhite')
 			self:SetBeautyBorderColor(1, 0.964, 0, 1)
+		end
+
+		if itemLevel and itemEquipLoc and itemEquipLoc ~= '' then
+			self.text = self:CreateFontString(nil, 'ARTWORK')
+			self.text:SetFont('Fonts\\FRIZQT__.TTF', 10, 'THINOUTLINE')
+			self.text:SetTextColor(1, 1, 0)
+			self.text:SetPoint('TOPRIGHT', self, 'TOPRIGHT', 0, -2)
+			self.text:SetText(itemLevel)
 		end
 	else
 		self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureNormal')

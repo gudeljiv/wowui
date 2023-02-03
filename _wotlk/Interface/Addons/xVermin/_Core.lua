@@ -243,6 +243,21 @@ xVermin.Range = function(value, unit)
 end
 xRange = xVermin.Range
 
+xVermin.Enraged = function(unit)
+	unit = unit and unit or 'player'
+
+	local enraged = 0
+	for i = 1, MAX_TARGET_BUFFS + MAX_TARGET_DEBUFFS do
+		local name, _, _, debuffType = UnitAura(unit, i)
+		if name and debuffType == '' then
+			enraged = enraged + 1
+		end
+	end
+
+	return enraged > 0 and true or false
+end
+xEnraged = xVermin.Enraged
+
 -- xVermin.CheckMobExperienceGain = function(unit)
 -- 	local unitLevel = UnitLevel(unit)
 -- 	local playerLevel = UnitLevel('player')

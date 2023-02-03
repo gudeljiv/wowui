@@ -1,7 +1,6 @@
-VER 3 000000000100001D " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/use [spec:1]13;[spec:2]10
-/use Loatheb's Shadow
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@cursor] Saronite Bomb
 END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -44,9 +43,6 @@ VER 3 0000000001000015 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast [nostance:2,spec:1]Defensive Stance
 /cast Revenge
-/use [stance:2] 10
-/use [stance:2] 13
-/use [stance:2] 14
 END
 VER 3 0000000001000014 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Vigilance
@@ -71,7 +67,18 @@ VER 3 000000000100001C " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use [spec:1]14;[spec:2]15
 END
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip 
-/cast [@cursor] Saronite Bomb
+VER 3 000000000100001D " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [spec:1]13;[spec:2]10
+/use Loatheb's Shadow
+END
+VER 3 000000000100001E " " "134400"
+#showtooltip
+/startattack
+/cast [@mouseover,exists][]Heroic Throw
+END
+VER 3 000000000100001F " " "134400"
+#showtooltip Enraged Regeneration
+/cast Bloodrage
+/cast Enraged Regeneration
 END

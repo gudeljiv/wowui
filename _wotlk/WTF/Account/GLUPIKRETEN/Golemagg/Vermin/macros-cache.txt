@@ -43,9 +43,6 @@ VER 3 0000000001000015 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast [nostance:2,spec:1]Defensive Stance
 /cast Revenge
-/use [stance:2] 10
-/use [stance:2] 13
-/use [stance:2] 14
 END
 VER 3 0000000001000014 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Vigilance
@@ -74,4 +71,9 @@ VER 3 000000000100001D " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use [spec:1]13;[spec:2]10
 /use Loatheb's Shadow
+END
+VER 3 000000000100001E " " "134400"
+#showtooltip
+/startattack
+/cast [@mouseover,exists][]Heroic Throw
 END
