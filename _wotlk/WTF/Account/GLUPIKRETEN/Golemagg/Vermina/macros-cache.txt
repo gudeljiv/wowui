@@ -1,8 +1,6 @@
-VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Holy Light
-/cast Divine Favor
-/cast Divine Illumination
-/cast [@mouseover, help, nodead][] Holy Light
+VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Holy Shock
+/cast [@mouseover, help, nodead][] Holy Shock
 END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
@@ -52,7 +50,9 @@ VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][] Hand of Freedom
 END
-VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Holy Shock
-/cast [@mouseover, help, nodead][] Holy Shock
+VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Holy Light
+/cast Divine Favor
+/cast Divine Illumination
+/cast [@mouseover, help, nodead][] Holy Light
 END
