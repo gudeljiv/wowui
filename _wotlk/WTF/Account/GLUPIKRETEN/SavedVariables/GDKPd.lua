@@ -1,9 +1,5 @@
 
 GDKPd_DB = {
-	["global"] = {
-		["shownPopupAddonMsg4_2"] = true,
-		["minimapPos"] = 33.64834214119968,
-	},
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Vermina - Golemagg"] = "Vermina - Golemagg",
@@ -12,12 +8,16 @@ GDKPd_DB = {
 		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Handrmandr - Golemagg"] = "Handrmandr - Golemagg",
-		["Miqa - Golemagg"] = "Miqa - Golemagg",
-		["Augustin - Golemagg"] = "Augustin - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
-		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
 		["Battledog - Gehennas"] = "Battledog - Gehennas",
+		["Miqa - Golemagg"] = "Miqa - Golemagg",
+		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Augustin - Golemagg"] = "Augustin - Golemagg",
+		["Handrmandr - Golemagg"] = "Handrmandr - Golemagg",
+	},
+	["global"] = {
+		["shownPopupAddonMsg4_2"] = true,
+		["minimapPos"] = 33.64834214119968,
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
@@ -101,13 +101,13 @@ GDKPd_DB = {
 				["x"] = -68.66697692871094,
 			},
 		},
-		["Handrmandr - Golemagg"] = {
+		["Battledog - Gehennas"] = {
 			["movable"] = false,
 			["point"] = {
-				["y"] = -288.7303161621094,
+				["y"] = -301.8096313476563,
 				["relative"] = "TOPRIGHT",
 				["point"] = "TOPRIGHT",
-				["x"] = -37.30170059204102,
+				["x"] = -65.0951919555664,
 			},
 		},
 		["Miqa - Golemagg"] = {
@@ -119,13 +119,13 @@ GDKPd_DB = {
 				["x"] = -254.4450073242188,
 			},
 		},
-		["Augustin - Golemagg"] = {
+		["Tadibey - Golemagg"] = {
 			["movable"] = false,
 			["point"] = {
-				["y"] = -296.3492736816406,
+				["y"] = -280.857177734375,
 				["relative"] = "TOPRIGHT",
 				["point"] = "TOPRIGHT",
-				["x"] = -38.57138442993164,
+				["x"] = -327.8730773925781,
 			},
 		},
 		["Mxyzptlk - Golemagg"] = {
@@ -137,22 +137,22 @@ GDKPd_DB = {
 				["x"] = -54.44518280029297,
 			},
 		},
-		["Tadibey - Golemagg"] = {
+		["Augustin - Golemagg"] = {
 			["movable"] = false,
 			["point"] = {
-				["y"] = -280.857177734375,
+				["y"] = -296.3492736816406,
 				["relative"] = "TOPRIGHT",
 				["point"] = "TOPRIGHT",
-				["x"] = -327.8730773925781,
+				["x"] = -38.57138442993164,
 			},
 		},
-		["Battledog - Gehennas"] = {
+		["Handrmandr - Golemagg"] = {
 			["movable"] = false,
 			["point"] = {
-				["y"] = -301.8096313476563,
+				["y"] = -288.7303161621094,
 				["relative"] = "TOPRIGHT",
 				["point"] = "TOPRIGHT",
-				["x"] = -65.0951919555664,
+				["x"] = -37.30170059204102,
 			},
 		},
 	},
@@ -167,6 +167,6 @@ GDKPd_PotData = {
 	},
 }
 GDKPd_BalanceData = {
-	["Arachad"] = 0,
 	["Stopndie"] = 0,
+	["Arachad"] = 0,
 }

@@ -411,6 +411,7 @@ function nMinimap_UpdateFriendButton(entry)
 			local level = gameAccountInfo.characterLevel
 			local characterName = gameAccountInfo.characterName
 			local accountName = accountInfo.accountName
+			local realmName = gameAccountInfo.realmName
 
 			characterName = BNet_GetValidatedCharacterName(characterName, accountInfo.battleTag, gameAccountInfo.clientProgram)
 			accountName = WrapTextInColorCode(accountName, FRIENDS_BNET_NAME_COLOR:GenerateHexColor())
@@ -447,7 +448,7 @@ function nMinimap_UpdateFriendButton(entry)
 					characterName = WrapTextInColorCode(characterName, classc:GenerateHexColor())
 				end
 
-				entry.LeftText:SetFormattedText('%s (%s %s) %s', accountName, level, characterName, statusText[status])
+				entry.LeftText:SetFormattedText('%s (%s %s - %s) %s', accountName, level, characterName, realmName, statusText[status])
 				entry.RightText:SetText(clientIcon)
 			else
 				entry.LeftText:SetFormattedText(accountName)

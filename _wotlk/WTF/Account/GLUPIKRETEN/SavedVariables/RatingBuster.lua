@@ -14,12 +14,12 @@ RatingBusterDB = {
 		["Moolatz - Golemagg"] = "DRUID",
 		["Battitude - Golemagg"] = "ROGUE",
 		["Vermin - Golemagg"] = "WARRIOR",
-		["Handrmandr - Golemagg"] = "WARRIOR",
-		["Miqa - Golemagg"] = "PRIEST",
-		["Mxyzptlk - Golemagg"] = "WARLOCK",
-		["Battlearm - Golemagg"] = "DEATHKNIGHT",
-		["Tadibey - Golemagg"] = "SHAMAN",
 		["Battledog - Gehennas"] = "WARRIOR",
+		["Miqa - Golemagg"] = "PRIEST",
+		["Tadibey - Golemagg"] = "SHAMAN",
+		["Battlearm - Golemagg"] = "DEATHKNIGHT",
+		["Mxyzptlk - Golemagg"] = "WARLOCK",
+		["Handrmandr - Golemagg"] = "WARRIOR",
 	},
 	["profiles"] = {
 		["DEATHKNIGHT"] = {
@@ -34,13 +34,13 @@ RatingBusterDB = {
 		},
 		["WARLOCK"] = {
 		},
-		["PALADIN"] = {
+		["SHAMAN"] = {
 		},
 		["DRUID"] = {
 		},
 		["HUNTER"] = {
 		},
-		["SHAMAN"] = {
+		["PALADIN"] = {
 		},
 	},
 }
