@@ -375,7 +375,6 @@ function buttonProto:Update()
 end
 
 function buttonProto:UpdateCount()
-	self:UpdateItemLevel()
 	local count = self:GetCount() or 0
 	self.count = count
 	if count > 1 then
@@ -388,13 +387,20 @@ end
 
 function buttonProto:UpdateItemLevel()
 	if not self.itemLink then
+		if self.text then
+			self.text:Hide()
+		end
 		return
 	end
-	self.text = self:CreateFontString(nil, 'ARTWORK')
-	self.text:SetFont('Fonts\\FRIZQT__.TTF', 10, 'THINOUTLINE')
-	self.text:SetTextColor(1, 1, 0)
-	self.text:SetPoint('TOPRIGHT', self, 'TOPRIGHT', 0, -2)
-	self.text:Hide()
+	if not self.text then
+		self.text = self:CreateFontString(nil, 'ARTWORK')
+		self.text:SetFont('Fonts\\FRIZQT__.TTF', 10, 'THINOUTLINE')
+		self.text:SetTextColor(1, 1, 0)
+		self.text:SetPoint('TOPRIGHT', self, 'TOPRIGHT', 0, -2)
+		self.text:Hide()
+	else
+		self.text:Hide()
+	end
 
 	itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice = GetItemInfo(self.itemLink)
 
@@ -499,6 +505,7 @@ function buttonProto:UpdateBorder(isolatedEvent)
 	local texture, r, g, b, a, x1, x2, y1, y2, blendMode, quality
 
 	self:CreateBeautyBorder(8)
+	self:UpdateItemLevel()
 
 	local settings = addon.db.profile
 	local isQuestItem, questId, isQuestActive

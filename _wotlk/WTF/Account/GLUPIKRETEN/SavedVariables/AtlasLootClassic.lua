@@ -1352,6 +1352,24 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["Addons"] = {
+				["Favourites"] = {
+					["lists"] = {
+						["ProfileBase"] = {
+							["mainItems"] = {
+								[8] = true,
+							},
+						},
+					},
+				},
+			},
+			["Tooltip"] = {
+				["useGameTooltip"] = false,
+			},
 			["GUI"] = {
 				["point"] = {
 					"TOP", -- [1]
@@ -1368,25 +1386,7 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
-			["Addons"] = {
-				["Favourites"] = {
-					["lists"] = {
-						["ProfileBase"] = {
-							["mainItems"] = {
-								[8] = true,
-							},
-						},
-					},
-				},
-			},
-			["Tooltip"] = {
-				["useGameTooltip"] = false,
-			},
 			["showItemLvlInTT"] = false,
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 		},
 		["Judawise - Golemagg"] = {
 			["minimap"] = {
@@ -1425,19 +1425,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
-			["showCompanionLearnedInfo"] = false,
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
-			["Addons"] = {
-				["Favourites"] = {
-					["showListInTT"] = false,
-				},
-			},
-			["Tooltip"] = {
-				["useGameTooltip"] = false,
-			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -1448,13 +1435,26 @@ AtlasLootClassicDB = {
 				},
 				["selected"] = {
 					nil, -- [1]
-					"NaxxramasWrath", -- [2]
-					9, -- [3]
+					"Gundrak", -- [2]
+					nil, -- [3]
 					6, -- [4]
 					0, -- [5]
 				},
 			},
+			["showCompanionLearnedInfo"] = false,
+			["Addons"] = {
+				["Favourites"] = {
+					["showListInTT"] = false,
+				},
+			},
+			["Tooltip"] = {
+				["useGameTooltip"] = false,
+			},
 			["showItemLvlInTT"] = false,
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 		},
 		["Miqa - Golemagg"] = {
 			["GUI"] = {

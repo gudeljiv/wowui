@@ -725,9 +725,9 @@ CB_PlayedTime = {
 		["timeStamp"] = 1608645.963,
 	},
 	["Vermina-Golemagg"] = {
-		["total"] = 294610,
-		["timeAtThisLevel"] = 567,
-		["timeStamp"] = 196751.325,
+		["total"] = 301422,
+		["timeAtThisLevel"] = 752,
+		["timeStamp"] = 716190.582,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
@@ -852,9 +852,9 @@ CB_PlayedTime = {
 		["timeStamp"] = 1608612.783,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1773745,
-		["timeAtThisLevel"] = 681198,
-		["timeStamp"] = 704301.99,
+		["total"] = 1776347,
+		["timeAtThisLevel"] = 683800,
+		["timeStamp"] = 714651.161,
 	},
 	["Provokator-Jin'do"] = {
 		["total"] = 22720,
@@ -870,9 +870,9 @@ CB_PlayedTime = {
 		["timeStamp"] = 59401.909,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 1054577,
-		["timeAtThisLevel"] = 23557,
-		["timeStamp"] = 78109.897,
+		["total"] = 1054623,
+		["timeAtThisLevel"] = 23603,
+		["timeStamp"] = 713958.662,
 	},
 	["Elohssa-"] = {
 		["total"] = 3552,

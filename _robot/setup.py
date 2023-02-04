@@ -101,8 +101,8 @@ classes = {
     "warrior", "druid", "rogue", "warlock", "mage", "hunter", "death knight", "priest", "paladin", "shaman"
 }
 
-time1 = 0.5
-time2 = 0.5
+time1 = 0.2
+time2 = 0.1
 
 count = 0
 number = 0
@@ -155,9 +155,9 @@ with keyboard.Listener(on_press=on_press) as listener:
                     pyautogui.hotkey('command', 'v')
                 else:
                     pyautogui.hotkey('ctrl', 'v')
+                time.sleep(time1)
                 pyautogui.hotkey("enter")
 
-                time.sleep(time1)
 
                 pyautogui.hotkey("enter")
                 pyperclip.copy('/run RotationTextureFrame2:Show()')
@@ -165,6 +165,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                     pyautogui.hotkey('command', 'v')
                 else:
                     pyautogui.hotkey('ctrl', 'v')
+                time.sleep(time1)
                 pyautogui.hotkey("enter")
 
                 # for wow_class in classes:
@@ -172,37 +173,38 @@ with keyboard.Listener(on_press=on_press) as listener:
                 try:
                     for skill in skills[wow_class]:
                         number = number + 1
-                        print(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " M.png")
+                        main_image=False
                         pyautogui.hotkey("enter")
                         pyperclip.copy('/run RotationTextureFrame1.texture:SetTexture(' + str(skill["type"]) + '(' + str(skill["id"]) + '))')
                         if os.name == "posix":
                             pyautogui.hotkey('command', 'v')
                         else:
                             pyautogui.hotkey('ctrl', 'v')
+                        time.sleep(time1)
                         pyautogui.hotkey("enter")
 
-                        time.sleep(time1)
                         m_image = abilities_folder + slash + str(skill["name"]) + " M.png".format(**p_main)
                         main_image = sct.grab(p_main)
                         mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
+                        print(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " M.png")
                         time.sleep(time2)
 
                     for skill in skills["offgcd"][wow_class]:
                         number = number + 1
-                        print(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " O.png")
-                        # /run RotationTextureFrame.texture:SetTexture(GetSpellTexture("23881"))
+                        offgcd_image=False
                         pyautogui.hotkey("enter")
                         pyperclip.copy('/run RotationTextureFrame2.texture:SetTexture(' + str(skill["type"]) + '(' + str(skill["id"]) + '))')
                         if os.name == "posix":
                             pyautogui.hotkey('command', 'v')
                         else:
                             pyautogui.hotkey('ctrl', 'v')
+                        time.sleep(time1)
                         pyautogui.hotkey("enter")
 
-                        time.sleep(time1)
                         o_image = abilities_folder + slash + str(skill["name"]) + " O.png".format(**p_offgcd)
                         offgcd_image = sct.grab(p_offgcd)
                         mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=o_image)
+                        print(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " O.png",offgcd_image)
                         time.sleep(time2)
 
                 except:
@@ -210,36 +212,38 @@ with keyboard.Listener(on_press=on_press) as listener:
 
                 for skill in skills["healing"]:
                     number = number + 1
-                    print(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " H.png")
+                    main_image=False
                     pyautogui.hotkey("enter")
                     pyperclip.copy('/run RotationTextureFrame1.texture:SetTexture(' + str(skill["type"]) + '(' + str(skill["id"]) + '))')
                     if os.name == "posix":
                         pyautogui.hotkey('command', 'v')
                     else:
                         pyautogui.hotkey('ctrl', 'v')
+                    time.sleep(time1)
                     pyautogui.hotkey("enter")
 
-                    time.sleep(time1)
                     m_image = abilities_folder + slash + str(skill["name"]) + " H.png".format(**p_main)
                     main_image = sct.grab(p_main)
                     mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
+                    print(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " H.png")
                     time.sleep(time2)
 
                 for skill in skills["globals"]:
                     number = number + 1
-                    print(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " G.png")
+                    main_image=False
                     pyautogui.hotkey("enter")
                     pyperclip.copy('/run RotationTextureFrame1.texture:SetTexture(' + str(skill["type"]) + '(' + str(skill["id"]) + '))')
                     if os.name == "posix":
                         pyautogui.hotkey('command', 'v')
                     else:
                         pyautogui.hotkey('ctrl', 'v')
+                    time.sleep(time1)
                     pyautogui.hotkey("enter")
 
-                    time.sleep(time1)
                     m_image = abilities_folder + slash + str(skill["name"]) + " G.png".format(**p_main)
                     main_image = sct.grab(p_main)
                     mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
+                    print(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " G.png")
                     time.sleep(time2)
 
                 pyautogui.hotkey("enter")
@@ -248,9 +252,9 @@ with keyboard.Listener(on_press=on_press) as listener:
                     pyautogui.hotkey('command', 'v')
                 else:
                     pyautogui.hotkey('ctrl', 'v')
+                time.sleep(time1)
                 pyautogui.hotkey("enter")
 
-                time.sleep(time1)
 
                 pyautogui.hotkey("enter")
                 pyperclip.copy('/run RotationTextureFrame2:Hide()')
@@ -258,4 +262,5 @@ with keyboard.Listener(on_press=on_press) as listener:
                     pyautogui.hotkey('command', 'v')
                 else:
                     pyautogui.hotkey('ctrl', 'v')
+                time.sleep(time1)
                 pyautogui.hotkey("enter")

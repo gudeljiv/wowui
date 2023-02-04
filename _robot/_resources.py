@@ -188,6 +188,7 @@ skills["paladin"] = [
     {"name": "shield of righteousness", "type": "GetSpellTexture", "id": 61411, "key": "5"},
     {"name": "holy wrath", "type": "GetSpellTexture", "id": 48817, "key": "7"},
     {"name": "hammer of wrath", "type": "GetSpellTexture", "id": 24275, "key": "8"},
+    {"name": "beacon of light", "type": "GetSpellTexture", "id": 53563, "key": "f5","modifier":"ctrl"},
 ]
 
 skills["rogue"] = [

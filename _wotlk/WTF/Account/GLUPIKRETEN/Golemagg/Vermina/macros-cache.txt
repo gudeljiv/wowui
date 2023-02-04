@@ -56,3 +56,11 @@ VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 /cast Divine Illumination
 /cast [@mouseover, help, nodead][] Holy Light
 END
+VER 3 0000000001000013 " " "134400"
+#showtooltip 
+/cast [@mouseover, help, nodead][] Beacon of Light
+END
+VER 3 0000000001000014 " " "134400"
+#showtooltip 
+/cast [@focus, help, nodead][] Beacon of Light
+END
