@@ -448,7 +448,7 @@ function nMinimap_UpdateFriendButton(entry)
 					characterName = WrapTextInColorCode(characterName, classc:GenerateHexColor())
 				end
 
-				entry.LeftText:SetFormattedText('%s (%s %s - %s) %s', accountName, level, characterName, realmName, statusText[status])
+				entry.LeftText:SetFormattedText('%s (%s %s%s) %s', accountName and accountName or '', level and level or '', characterName and characterName or '', realmName and ' - ' .. realmName or '', statusText[status] and statusText[status] or '')
 				entry.RightText:SetText(clientIcon)
 			else
 				entry.LeftText:SetFormattedText(accountName)
