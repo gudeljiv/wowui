@@ -358,7 +358,6 @@ function buttonProto:Update()
 	end
 	self:UpdateCount()
 	self:UpdateBorder()
-	self:UpdateItemLevel()
 	if self.UpdateCooldown then
 		self:UpdateCooldown(self.texture)
 	end
@@ -376,6 +375,7 @@ function buttonProto:Update()
 end
 
 function buttonProto:UpdateCount()
+	self:UpdateItemLevel()
 	local count = self:GetCount() or 0
 	self.count = count
 	if count > 1 then
