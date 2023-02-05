@@ -1,16 +1,16 @@
 
 RXPCData = {
-	["SoM"] = 1,
-	["stepSkip"] = {
-	},
+	["phase"] = 6,
+	["currentGuideGroup"] = "",
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
-	["currentGuideName"] = "",
-	["currentGuideGroup"] = "",
+	["SoM"] = 1,
+	["stepSkip"] = {
+	},
 	["flightPaths"] = {
 	},
-	["phase"] = 6,
+	["currentGuideName"] = "",
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -29,10 +29,10 @@ RXPCTrackingData = {
 							["monthDay"] = 10,
 							["day"] = 0,
 							["month"] = 10,
-							["weekday"] = 2,
+							["minute"] = 52,
 							["year"] = 2022,
 							["hour"] = 19,
-							["minute"] = 52,
+							["weekday"] = 2,
 						},
 						["started"] = 0,
 					},

@@ -16,7 +16,7 @@ VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:4604
+/use [nocombat]item:117
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
@@ -38,7 +38,7 @@ VER 3 0000000000000010 "RAID" "136047"
 /run InviteUnit("a");C_Timer.After(0.25,function() ConvertToRaid() end)
 END
 VER 3 000000000000001F "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Magister Aledis
+//RestedXP Guides - current step has no configured targets
 END
 VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 #showtooltip

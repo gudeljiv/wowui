@@ -1,7 +1,6 @@
-VER 3 000000000100001E " " "134400"
-#showtooltip
-/startattack
-/cast [@mouseover,exists][]Heroic Throw
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@cursor] Saronite Bomb
 END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -74,7 +73,8 @@ VER 3 000000000100001D " " "INV_MISC_QUESTIONMARK"
 /use [spec:1]13;[spec:2]10
 /use Loatheb's Shadow
 END
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip 
-/cast [@cursor] Saronite Bomb
+VER 3 000000000100001E " " "134400"
+#showtooltip
+/startattack
+/cast [@mouseover,exists][]Heroic Throw
 END
