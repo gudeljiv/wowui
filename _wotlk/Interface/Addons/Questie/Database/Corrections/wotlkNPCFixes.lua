@@ -24,6 +24,9 @@ function QuestieWotlkNpcFixes:Load()
                 [zoneIDs.STORMWIND_CITY]={{83.47,33.66}},
             },
         },
+        [15576] = {
+            [npcKeys.spawns] = {[zoneIDs.STRANGLETHORN_VALE] = {{26.5,76.5}}},
+        },
         [16281] = {
             [npcKeys.spawns] = {[zoneIDs.EASTERN_PLAGUELANDS] = {{75.16,54.39}}},
         },
@@ -759,6 +762,10 @@ function QuestieWotlkNpcFixes:Load()
         },
         [32430] = {
             [npcKeys.spawns] = {[zoneIDs.ICECROWN]={{54,36.9}}},
+            [npcKeys.zoneID] = zoneIDs.ICECROWN,
+        },
+        [32497] = {
+            [npcKeys.spawns] = {[zoneIDs.ICECROWN]={{49.2,73.2}}},
             [npcKeys.zoneID] = zoneIDs.ICECROWN,
         },
         [33308] = {

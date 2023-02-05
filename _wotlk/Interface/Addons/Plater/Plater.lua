@@ -4875,18 +4875,18 @@ function Plater.OnInit() --private --~oninit ~init
 		
 		function UpdateBaseNameplateOptions()
 			if GetCVarBool ("nameplateShowOnlyNames") or Plater.db.profile.saved_cvars.nameplateShowOnlyNames == "1" then
-				TableUtil.TrySet(DefaultCompactNamePlateFrameSetUpOptions, "hideHealthbar")
-				TableUtil.TrySet(DefaultCompactNamePlateFrameSetUpOptions, "hideCastbar")
-				TableUtil.TrySet(DefaultCompactNamePlateFrameSetUpOptions, "colorNameBySelection")
-				TableUtil.TrySet(DefaultCompactNamePlateFrameSetUpOptions, "colorNameWithExtendedColors")
-				TableUtil.TrySet(DefaultCompactNamePlateFriendlyFrameOptions, "hideHealthbar")
-				TableUtil.TrySet(DefaultCompactNamePlateFriendlyFrameOptions, "hideCastbar")
-				TableUtil.TrySet(DefaultCompactNamePlateFriendlyFrameOptions, "colorNameBySelection")
-				TableUtil.TrySet(DefaultCompactNamePlateFriendlyFrameOptions, "colorNameWithExtendedColors")
-				TableUtil.TrySet(DefaultCompactNamePlateEnemyFrameOptions, "hideHealthbar")
-				TableUtil.TrySet(DefaultCompactNamePlateEnemyFrameOptions, "hideCastbar")
-				TableUtil.TrySet(DefaultCompactNamePlateEnemyFrameOptions, "colorNameBySelection")
-				TableUtil.TrySet(DefaultCompactNamePlateEnemyFrameOptions, "colorNameWithExtendedColors")
+				TextureLoadingGroupMixin.AddTexture({ textures = DefaultCompactNamePlateFrameSetUpOptions }, "hideHealthbar")
+				TextureLoadingGroupMixin.AddTexture({ textures = DefaultCompactNamePlateFrameSetUpOptions }, "hideCastbar")
+				TextureLoadingGroupMixin.AddTexture({ textures = DefaultCompactNamePlateFrameSetUpOptions }, "colorNameBySelection")
+				TextureLoadingGroupMixin.AddTexture({ textures = DefaultCompactNamePlateFrameSetUpOptions }, "colorNameWithExtendedColors")
+				TextureLoadingGroupMixin.AddTexture({ textures = DefaultCompactNamePlateFriendlyFrameOptions }, "hideHealthbar")
+				TextureLoadingGroupMixin.AddTexture({ textures = DefaultCompactNamePlateFriendlyFrameOptions }, "hideCastbar")
+				TextureLoadingGroupMixin.AddTexture({ textures = DefaultCompactNamePlateFriendlyFrameOptions }, "colorNameBySelection")
+				TextureLoadingGroupMixin.AddTexture({ textures = DefaultCompactNamePlateFriendlyFrameOptions }, "colorNameWithExtendedColors")
+				TextureLoadingGroupMixin.AddTexture({ textures = DefaultCompactNamePlateEnemyFrameOptions }, "hideHealthbar")
+				TextureLoadingGroupMixin.AddTexture({ textures = DefaultCompactNamePlateEnemyFrameOptions }, "hideCastbar")
+				TextureLoadingGroupMixin.AddTexture({ textures = DefaultCompactNamePlateEnemyFrameOptions }, "colorNameBySelection")
+				TextureLoadingGroupMixin.AddTexture({ textures = DefaultCompactNamePlateEnemyFrameOptions }, "colorNameWithExtendedColors")
 				
 				TextureLoadingGroupMixin.RemoveTexture({ textures = DefaultCompactNamePlateFrameSetUpOptions }, "showLevel")
 				TextureLoadingGroupMixin.RemoveTexture({ textures = DefaultCompactNamePlateFriendlyFrameOptions }, "showLevel")
@@ -5371,9 +5371,13 @@ function Plater.OnInit() --private --~oninit ~init
 		Plater.CastBarOnTick_Hook = function (self, deltaTime) --private
 			if (self.percentText) then --check if is a plater cast bar
 			
+				Plater.StartLogPerformanceCore("Plater-Core", "Update", "CastBarOnTick")
+				
 				self.ThrottleUpdate = self.ThrottleUpdate - deltaTime
 				
 				if (self.ThrottleUpdate < 0) then
+				
+					Plater.StartLogPerformanceCore("Plater-Core", "Update", "CastBarOnTick-Full")
 
 					self.SpellStartTime = self.spellStartTime or GetTime()
 					self.SpellEndTime = self.spellEndTime or GetTime()
@@ -5483,7 +5487,11 @@ function Plater.OnInit() --private --~oninit ~init
 						end
 					end
 					
+					Plater.EndLogPerformanceCore("Plater-Core", "Update", "CastBarOnTick-Full")
+					
 				end
+				
+				Plater.EndLogPerformanceCore("Plater-Core", "Update", "CastBarOnTick")
 			end
 		end
 		
@@ -6249,6 +6257,8 @@ end
 		end
 
 		if (shouldUpdate) then
+			Plater.StartLogPerformanceCore("Plater-Core", "Update", "NameplateTick-Full")
+		
 			curFPSData.platesUpdatedThisFrame = curFPSData.platesUpdatedThisFrame + 1
 			
 			--make the db path smaller for performance
@@ -6537,6 +6547,12 @@ end
 					end
 				end
 			end
+			
+			if (unitFrame.castBar:IsShown()) then
+				Plater.CastBarOnTick_Hook(unitFrame.castBar, 999)
+			end
+			
+			Plater.EndLogPerformanceCore("Plater-Core", "Update", "NameplateTick-Full")
 
 			--end of throttled updates
 		end
@@ -6555,10 +6571,6 @@ end
 					healthBar.AnimateFunc (healthBar, deltaTime)
 				end
 			end
-			
-		if (unitFrame.castBar:IsShown()) then
-			Plater.CastBarOnTick_Hook(unitFrame.castBar, 999)
-		end
 			
 		Plater.EndLogPerformanceCore("Plater-Core", "Update", "NameplateTick")
 	end
@@ -8891,6 +8903,7 @@ end
 	end
 
 	function Plater.DoNameplateAnimation (plateFrame, frameAnimations, spellName, isCritical) --private
+		Plater.StartLogPerformanceCore("Plater-Core", "Update", "DoNameplateAnimation")
 		for animationIndex, animationTable in ipairs (frameAnimations) do
 			if ((animationTable.animationCooldown [plateFrame] or 0) < GetTime()) then
 				--animation "scale" is pre constructed when the nameplate frame is created
@@ -8952,6 +8965,7 @@ end
 				end
 			end
 		end
+		Plater.EndLogPerformanceCore("Plater-Core", "Update", "DoNameplateAnimation")
 	end
 
 	function Plater.RefreshIsEditingAnimations (state) --private

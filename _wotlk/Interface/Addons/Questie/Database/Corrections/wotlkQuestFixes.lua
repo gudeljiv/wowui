@@ -1121,9 +1121,6 @@ function QuestieWotlkQuestFixes:Load()
         [12557] = {
             [questKeys.objectives] = {nil,nil,{{38386},{38339},{38340},{38346}}},
         },
-        [12561] = {
-            [questKeys.preQuestSingle] = {12803},
-        },
         [12569] = {
             [questKeys.extraObjectives] = {{nil, ICON_TYPE_EVENT, l10n("Use Sandfern Disguise near the fallen log"), 0, {{"object", 190545}}}},
         },
@@ -2314,11 +2311,16 @@ function QuestieWotlkQuestFixes:Load()
         [13279] = {
             [questKeys.extraObjectives] = {{nil, ICON_TYPE_EVENT, l10n("Use Pustulant Spinal Fluid"), 0, {{"object", 193580}}}},
         },
+        [13280] = {
+            [questKeys.preQuestSingle] = {13296},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_EVENT, l10n("Plant Alliance Battle Standard"), 0, {{"object", 193565}}}},
+        },
         [13281] = {
             [questKeys.preQuestSingle] = {13279},
         },
         [13283] = {
             [questKeys.preQuestSingle] = {13293},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_EVENT, l10n("Plant Horde Battle Standard"), 0, {{"object", 193565}}}},
         },
         [13284] = {
             [questKeys.preQuestSingle] = {13341},
@@ -2806,7 +2808,7 @@ function QuestieWotlkQuestFixes:Load()
         },
         [13603] = {
             [questKeys.exclusiveTo] = {13600,13616},
-            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33211},{"monster", 33224}}}},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33224}}}},
         },
         [13616] = {
             [questKeys.exclusiveTo] = {13600,13603},
@@ -2836,13 +2838,17 @@ function QuestieWotlkQuestFixes:Load()
             [questKeys.requiredMaxRep] = {59,9000},
         },
         [13664] = {
-            [questKeys.preQuestSingle] = {13736,13737,13738,13739,13740,13702,13732,13733,13734,13735},
+            [questKeys.preQuestSingle] = {13700,13701},
+            [questKeys.extraObjectives] = {
+                {nil, ICON_TYPE_TALK, l10n("Mount up"), 0, {{"monster", 33870}}},
+                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Cavin"), 0, {{"monster", 33522}}},
+            },
         },
         [13666] = {
             [questKeys.preQuestGroup] = {13828,13835,13837},
             [questKeys.exclusiveTo] = {13679},
             [questKeys.parentQuest] = 0,
-            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33211},{"monster", 33224}}}},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33224}}}},
         },
         [13669] = {
             [questKeys.preQuestGroup] = {13828,13835,13837},
@@ -2863,7 +2869,7 @@ function QuestieWotlkQuestFixes:Load()
             [questKeys.preQuestGroup] = {13829,13838,13839},
             [questKeys.exclusiveTo] = {13680},
             [questKeys.parentQuest] = 0,
-            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33211},{"monster", 33224}}}},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33224}}}},
         },
         [13674] = {
             [questKeys.preQuestGroup] = {13829,13838,13839},
@@ -2905,81 +2911,81 @@ function QuestieWotlkQuestFixes:Load()
             [questKeys.finishedBy] = {{33435}},
         },
         [13682] = {
-            [questKeys.preQuestSingle] = {13794},
+            [questKeys.preQuestSingle] = {13664},
         },
         [13699] = {
             [questKeys.objectives] = {{{30675,"Argent Champion defeated"}}},
             [questKeys.extraObjectives] = {
                 {nil, ICON_TYPE_TALK, l10n("Mount up"), 0, {{"monster", 33800}}},
-                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Danny"), 0, {{"monster", 33447}}},
+                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Danny"), 0, {{"monster", 33518}}},
             },
         },
         [13713] = {
             [questKeys.objectives] = {{{30675,"Argent Champion defeated"}}},
             [questKeys.extraObjectives] = {
                 {nil, ICON_TYPE_TALK, l10n("Mount up"), 0, {{"monster", 33795}}},
-                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Danny"), 0, {{"monster", 33447}}},
+                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Danny"), 0, {{"monster", 33518}}},
             },
         },
         [13723] = {
             [questKeys.objectives] = {{{30675,"Argent Champion defeated"}}},
             [questKeys.extraObjectives] = {
                 {nil, ICON_TYPE_TALK, l10n("Mount up"), 0, {{"monster", 33793}}},
-                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Danny"), 0, {{"monster", 33447}}},
+                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Danny"), 0, {{"monster", 33518}}},
             },
         },
         [13724] = {
             [questKeys.objectives] = {{{30675,"Argent Champion defeated"}}},
             [questKeys.extraObjectives] = {
                 {nil, ICON_TYPE_TALK, l10n("Mount up"), 0, {{"monster", 33790}}},
-                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Danny"), 0, {{"monster", 33447}}},
+                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Danny"), 0, {{"monster", 33518}}},
             },
         },
         [13725] = {
             [questKeys.objectives] = {{{30675,"Argent Champion defeated"}}},
             [questKeys.extraObjectives] = {
                 {nil, ICON_TYPE_TALK, l10n("Mount up"), 0, {{"monster", 33794}}},
-                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Danny"), 0, {{"monster", 33447}}},
+                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Danny"), 0, {{"monster", 33518}}},
             },
         },
         [13726] = {
             [questKeys.objectives] = {{{30675,"Argent Champion defeated"}}},
             [questKeys.extraObjectives] = {
                 {nil, ICON_TYPE_TALK, l10n("Mount up"), 0, {{"monster", 33799}}},
-                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Danny"), 0, {{"monster", 33447}}},
+                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Danny"), 0, {{"monster", 33518}}},
             },
         },
         [13727] = {
             [questKeys.objectives] = {{{30675,"Argent Champion defeated"}}},
             [questKeys.extraObjectives] = {
                 {nil, ICON_TYPE_TALK, l10n("Mount up"), 0, {{"monster", 33796}}},
-                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Danny"), 0, {{"monster", 33447}}},
+                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Danny"), 0, {{"monster", 33518}}},
             },
         },
         [13728] = {
             [questKeys.objectives] = {{{30675,"Argent Champion defeated"}}},
             [questKeys.extraObjectives] = {
                 {nil, ICON_TYPE_TALK, l10n("Mount up"), 0, {{"monster", 33792}}},
-                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Danny"), 0, {{"monster", 33447}}},
+                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Danny"), 0, {{"monster", 33518}}},
             },
         },
         [13729] = {
             [questKeys.objectives] = {{{30675,"Argent Champion defeated"}}},
             [questKeys.extraObjectives] = {
                 {nil, ICON_TYPE_TALK, l10n("Mount up"), 0, {{"monster", 33798}}},
-                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Danny"), 0, {{"monster", 33447}}},
+                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Danny"), 0, {{"monster", 33518}}},
             },
         },
         [13731] = {
             [questKeys.objectives] = {{{30675,"Argent Champion defeated"}}},
             [questKeys.extraObjectives] = {
                 {nil, ICON_TYPE_TALK, l10n("Mount up"), 0, {{"monster", 33791}}},
-                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Danny"), 0, {{"monster", 33447}}},
+                {nil, ICON_TYPE_TALK, l10n("Speak to Squire Danny"), 0, {{"monster", 33518}}},
             },
         },
         [13741] = {
             [questKeys.exclusiveTo] = {13742,13743},
-            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33211},{"monster", 33224}}}},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33224}}}},
         },
         [13742] = {
             [questKeys.exclusiveTo] = {13741,13743},
@@ -2989,7 +2995,7 @@ function QuestieWotlkQuestFixes:Load()
         },
         [13746] = {
             [questKeys.exclusiveTo] = {13747,13748},
-            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33211},{"monster", 33224}}}},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33224}}}},
         },
         [13747] = {
             [questKeys.exclusiveTo] = {13746,13748},
@@ -2999,7 +3005,7 @@ function QuestieWotlkQuestFixes:Load()
         },
         [13752] = {
             [questKeys.exclusiveTo] = {13753,13754},
-            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33211},{"monster", 33224}}}},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33224}}}},
         },
         [13753] = {
             [questKeys.exclusiveTo] = {13752,13754},
@@ -3009,7 +3015,7 @@ function QuestieWotlkQuestFixes:Load()
         },
         [13757] = {
             [questKeys.exclusiveTo] = {13758,13759},
-            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33211},{"monster", 33224}}}},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33224}}}},
         },
         [13758] = {
             [questKeys.exclusiveTo] = {13757,13759},
@@ -3019,6 +3025,7 @@ function QuestieWotlkQuestFixes:Load()
         },
         [13762] = {
             [questKeys.exclusiveTo] = {13763,13764},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33224}}}},
         },
         [13763] = {
             [questKeys.exclusiveTo] = {13762,13764},
@@ -3031,6 +3038,7 @@ function QuestieWotlkQuestFixes:Load()
         },
         [13768] = {
             [questKeys.exclusiveTo] = {13769,13770},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33224}}}},
         },
         [13769] = {
             [questKeys.exclusiveTo] = {13768,13770},
@@ -3043,7 +3051,7 @@ function QuestieWotlkQuestFixes:Load()
         },
         [13773] = {
             [questKeys.exclusiveTo] = {13774,13775},
-            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33211},{"monster", 33224}}}},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33224}}}},
         },
         [13774] = {
             [questKeys.exclusiveTo] = {13773,13775},
@@ -3056,7 +3064,7 @@ function QuestieWotlkQuestFixes:Load()
         },
         [13778] = {
             [questKeys.exclusiveTo] = {13779,13780},
-            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33211},{"monster", 33224}}}},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33224}}}},
         },
         [13779] = {
             [questKeys.exclusiveTo] = {13778,13780},
@@ -3069,7 +3077,7 @@ function QuestieWotlkQuestFixes:Load()
         },
         [13783] = {
             [questKeys.exclusiveTo] = {13784,13785},
-            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33211},{"monster", 33224}}}},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Use Warts-B-Gone Lip Balm and /kiss a Lake Frog"), 0, {{"monster", 33224}}}},
         },
         [13784] = {
             [questKeys.exclusiveTo] = {13783,13785},
@@ -3081,40 +3089,47 @@ function QuestieWotlkQuestFixes:Load()
             [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Mount up"), 0, {{"monster", 33791}}}},
         },
         [13788] = {
-            [questKeys.preQuestSingle] = {13794},
+            [questKeys.preQuestSingle] = {13664},
         },
         [13789] = {
-            [questKeys.preQuestSingle] = {13794},
+            [questKeys.objectives] = {nil,nil,nil,nil,{{{29717,31145,31731,31738,32236,32238,32250,32259,32262,32263,32268,32276,32279,32285,32289,32290,32291,32297,32300,32349,33537,35127,35297},35297,"Cult of the Damned member slain"}}},
+            [questKeys.preQuestSingle] = {13700},
         },
         [13790] = {
-            [questKeys.preQuestSingle] = {13794},
+            [questKeys.preQuestSingle] = {13700},
             [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Mount up"), 0, {{"monster", 33794},{"monster", 33800},{"monster", 33793},{"monster", 33795},{"monster", 33790}}}},
         },
         [13791] = {
-            [questKeys.preQuestSingle] = {13794},
+            [questKeys.objectives] = {nil,nil,nil,nil,{{{29717,31145,31731,31738,32236,32238,32250,32259,32262,32263,32268,32276,32279,32285,32289,32290,32291,32297,32300,32349,33537,35127,35297},35297,"Cult of the Damned member slain"}}},
+            [questKeys.preQuestSingle] = {13700},
         },
         [13793] = {
-            [questKeys.preQuestSingle] = {13794},
+            [questKeys.preQuestSingle] = {13700},
             [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Mount up"), 0, {{"monster", 33794},{"monster", 33800},{"monster", 33793},{"monster", 33795},{"monster", 33790}}}},
         },
+        [13795] = {
+            [questKeys.preQuestSingle] = {13702,13732,13733,13734,13735,13736,13737,13738,13739,13740},
+        },
         [13809] = {
-            [questKeys.preQuestSingle] = {13794},
+            [questKeys.preQuestSingle] = {13664},
         },
         [13810] = {
-            [questKeys.preQuestSingle] = {13794},
+            [questKeys.objectives] = {nil,nil,nil,nil,{{{29717,31145,31731,31738,32236,32238,32250,32259,32262,32263,32268,32276,32279,32285,32289,32290,32291,32297,32300,32349,33537,35127,35297},35297,"Cult of the Damned member slain"}}},
+            [questKeys.preQuestSingle] = {13701},
         },
         [13811] = {
-            [questKeys.preQuestSingle] = {13794},
+            [questKeys.preQuestSingle] = {13701},
             [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Mount up"), 0, {{"monster", 33796},{"monster", 33798},{"monster", 33799},{"monster", 33791},{"monster", 33792}}}},
         },
         [13812] = {
-            [questKeys.preQuestSingle] = {13794},
+            [questKeys.preQuestSingle] = {13664},
         },
         [13813] = {
-            [questKeys.preQuestSingle] = {13794},
+            [questKeys.objectives] = {nil,nil,nil,nil,{{{29717,31145,31731,31738,32236,32238,32250,32259,32262,32263,32268,32276,32279,32285,32289,32290,32291,32297,32300,32349,33537,35127,35297},35297,"Cult of the Damned member slain"}}},
+            [questKeys.preQuestSingle] = {13701},
         },
         [13814] = {
-            [questKeys.preQuestSingle] = {13794},
+            [questKeys.preQuestSingle] = {13701},
             [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Mount up"), 0, {{"monster", 33796},{"monster", 33798},{"monster", 33799},{"monster", 33791},{"monster", 33792}}}},
         },
         [13819] = {
@@ -3177,7 +3192,7 @@ function QuestieWotlkQuestFixes:Load()
             [questKeys.extraObjectives] = {{{[zoneIDs.DALARAN]={{64,64}}}, ICON_TYPE_EVENT, l10n("Fish for Severed Arm")}},
         },
         [13846] = {
-            [questKeys.preQuestSingle] = {13794},
+            [questKeys.preQuestSingle] = {13700,13701},
             [questKeys.requiredMaxRep] = {1106,42000},
         },
         [13847] = {
@@ -3214,16 +3229,16 @@ function QuestieWotlkQuestFixes:Load()
             [questKeys.extraObjectives] = {{nil, ICON_TYPE_TALK, l10n("Mount up"), 0, {{"monster", 34125}}}},
         },
         [13861] = {
-            [questKeys.preQuestSingle] = {13794},
+            [questKeys.preQuestSingle] = {13700},
         },
         [13862] = {
-            [questKeys.preQuestSingle] = {13794},
+            [questKeys.preQuestSingle] = {13701},
         },
         [13863] = {
-            [questKeys.preQuestSingle] = {13794},
+            [questKeys.preQuestSingle] = {13701},
         },
         [13864] = {
-            [questKeys.preQuestSingle] = {13794},
+            [questKeys.preQuestSingle] = {13700},
         },
         [13887] = {
             [questKeys.preQuestSingle] = {13850},
