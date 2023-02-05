@@ -385,6 +385,33 @@ function buttonProto:UpdateCount()
 	end
 end
 
+function buttonProto:UpdateItemLevel()
+	if not self.itemLink then
+		if self.text then
+			self.text:Hide()
+		end
+		return
+	end
+	if not self.text then
+		self.text = self:CreateFontString(nil, 'ARTWORK')
+		self.text:SetFont('Fonts\\FRIZQT__.TTF', 10, 'THINOUTLINE')
+		self.text:SetTextColor(1, 1, 0)
+		self.text:SetPoint('TOPRIGHT', self, 'TOPRIGHT', 0, -2)
+		self.text:Hide()
+	else
+		self.text:Hide()
+	end
+
+	itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice = GetItemInfo(self.itemLink)
+
+	if itemLevel and itemEquipLoc and itemEquipLoc ~= '' then
+		self.text:SetText(itemLevel)
+		self.text:Show()
+	else
+		self.text:Hide()
+	end
+end
+
 function buttonProto:UpdateLock(isolatedEvent)
 	if addon.globalLock then
 		SetItemButtonDesaturated(self, true)
@@ -478,6 +505,7 @@ function buttonProto:UpdateBorder(isolatedEvent)
 	local texture, r, g, b, a, x1, x2, y1, y2, blendMode, quality
 
 	self:CreateBeautyBorder(8)
+	self:UpdateItemLevel()
 
 	local settings = addon.db.profile
 	local isQuestItem, questId, isQuestActive
@@ -490,12 +518,12 @@ function buttonProto:UpdateBorder(isolatedEvent)
 		self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureNormal')
 		self:SetBeautyBorderColor(1, 1, 1, 1)
 
-		if (itemRarity and itemRarity > 1) then
+		if itemRarity and itemRarity > 1 then
 			self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureWhite')
 			self:SetBeautyBorderColor(r or 1, g or 0, b or 0, 1)
 		end
 
-		if (itemType and itemType == 'Quest') then
+		if itemType and itemType == 'Quest' then
 			self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureWhite')
 			self:SetBeautyBorderColor(1, 0.964, 0, 1)
 		end

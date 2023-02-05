@@ -26,6 +26,7 @@ skills["offgcd"]["warrior"] = [
     {"name": "blood fury", "type": "GetSpellTexture", "id": 20572, "key": "8"},
     {"name": "bloodrage", "type": "GetSpellTexture", "id": 2687, "key": "d", "modifier": "alt"},
     {"name": "gloves_trinket", "type": "GetSpellTexture", "id": 52766, "key": "t"},
+    {"name": "berserker rage", "type": "GetSpellTexture", "id": 18499, "key": "f4", "modifier": "ctrl"},
 ]
 
 skills["offgcd"]["druid"] = [
@@ -73,7 +74,6 @@ skills["warrior"] = [
     {"name": "sunder armor", "type": "GetSpellTexture", "id": 7386, "key": "k"},
     {"name": "bloodthirst", "type": "GetSpellTexture", "id": 23881, "key": "f1", "modifier": "ctrl"},
     {"name": "mortal strike", "type": "GetSpellTexture", "id": 12294, "key": "f1", "modifier": "ctrl"},
-    {"name": "berserker rage", "type": "GetSpellTexture", "id": 18499, "key": "f4", "modifier": "ctrl"},
     {"name": "rend", "type": "GetSpellTexture", "id": 772, "key": "r", "modifier": "shift"},
     {"name": "overpower", "type": "GetSpellTexture", "id": 7384, "key": "6"},
     {"name": "revenge", "type": "GetSpellTexture", "id": 6572, "key": "f3", "modifier": "ctrl"},
@@ -188,6 +188,7 @@ skills["paladin"] = [
     {"name": "shield of righteousness", "type": "GetSpellTexture", "id": 61411, "key": "5"},
     {"name": "holy wrath", "type": "GetSpellTexture", "id": 48817, "key": "7"},
     {"name": "hammer of wrath", "type": "GetSpellTexture", "id": 24275, "key": "8"},
+    {"name": "beacon of light", "type": "GetSpellTexture", "id": 53563, "key": "f5","modifier":"ctrl"},
 ]
 
 skills["rogue"] = [

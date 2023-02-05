@@ -16,8 +16,8 @@ VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:33443
-/castsequence [combat] reset=combat item:33447
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:0
@@ -26,7 +26,7 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:33447
+/use item:0
 END
 VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 #showtooltip Prowl
@@ -43,6 +43,9 @@ END
 VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
+END
+VER 3 0000000000000021 "TEST" "134400"
+/run print("this is \124cFF999999grey \124cFFFF0000red and \124cFF00FF00this is green\124r back to red\124r back to white")
 END
 VER 3 0000000000000020 "TSMDestroy" "134400"
 /tsm destroy

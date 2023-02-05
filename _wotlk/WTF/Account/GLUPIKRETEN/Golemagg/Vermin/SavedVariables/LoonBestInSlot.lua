@@ -35,7 +35,7 @@ LBISSettings = {
 		["RestorationDruid"] = true,
 		["SubtletyRogue"] = true,
 	},
-	["SelectedSpec"] = "Warrior: Protection",
+	["SelectedSpec"] = "Paladin: Protection",
 	["minimap"] = {
 		["minimapPos"] = 180,
 		["hide"] = true,
@@ -47,10 +47,10 @@ LBISSettings = {
 	},
 	["ShowPriority"] = true,
 	["SelectedRank"] = "All",
-	["ShowCustom"] = true,
-	["SelectedSourceType"] = "All",
 	["PriorityList"] = {
 	},
-	["SelectedSlot"] = "Ranged/Relic",
+	["SelectedSourceType"] = "All",
+	["SelectedSlot"] = "Trinket",
+	["ShowCustom"] = true,
 	["SelectedPhase"] = "Phase 1",
 }

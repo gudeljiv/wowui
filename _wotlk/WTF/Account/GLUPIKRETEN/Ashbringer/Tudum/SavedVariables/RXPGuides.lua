@@ -1,16 +1,16 @@
 
 RXPCData = {
-	["phase"] = 6,
-	["currentGuideGroup"] = "",
+	["currentGuideName"] = "",
+	["stepSkip"] = {
+	},
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
-	["SoM"] = 1,
-	["stepSkip"] = {
-	},
+	["phase"] = 6,
+	["currentGuideGroup"] = "",
 	["flightPaths"] = {
 	},
-	["currentGuideName"] = "",
+	["SoM"] = 1,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -29,10 +29,10 @@ RXPCTrackingData = {
 							["monthDay"] = 10,
 							["day"] = 0,
 							["month"] = 10,
-							["minute"] = 52,
+							["weekday"] = 2,
 							["year"] = 2022,
 							["hour"] = 19,
-							["weekday"] = 2,
+							["minute"] = 52,
 						},
 						["started"] = 0,
 					},
@@ -58,15 +58,15 @@ RXPCSettings = {
 	},
 	["profiles"] = {
 		["Tudum - Ashbringer"] = {
-			["hardcore"] = false,
 			["enableLevelUpAnnounceGroup"] = false,
 			["enableMinimapButton"] = false,
+			["frameHeight"] = 125.000114440918,
 			["checkVersions"] = false,
 			["enableTracker"] = false,
 			["enableFlyStepAnnouncements"] = false,
 			["enableLevelUpAnnounceSolo"] = false,
 			["alwaysSendBranded"] = false,
-			["frameHeight"] = 125.0000152587891,
+			["hardcore"] = false,
 		},
 	},
 }
