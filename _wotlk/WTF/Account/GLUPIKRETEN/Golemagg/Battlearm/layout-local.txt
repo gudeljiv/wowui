@@ -1,4 +1,11 @@
 Version: 1
+Frame: ChocolateGroupie
+FrameLevel: 2
+Anchor: TOPRIGHT
+X: -82
+Y: -215
+W: 12
+H: 20
 Frame: PossessButton1
 FrameLevel: 3
 Anchor: BOTTOM
@@ -83,6 +90,13 @@ X: 33
 Y: 155
 W: 325
 H: 375
+Frame: Groupie
+FrameLevel: 1
+Anchor: CENTER
+X: 88
+Y: 127
+W: 960
+H: 640
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM

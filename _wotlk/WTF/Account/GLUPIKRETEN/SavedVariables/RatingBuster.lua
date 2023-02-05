@@ -16,11 +16,12 @@ RatingBusterDB = {
 		["Battitude - Golemagg"] = "ROGUE",
 		["Vermin - Golemagg"] = "WARRIOR",
 		["Handrmandr - Golemagg"] = "WARRIOR",
-		["Miqa - Golemagg"] = "PRIEST",
 		["Mxyzptlk - Golemagg"] = "WARLOCK",
+		["Miqa - Golemagg"] = "PRIEST",
 		["Battlearm - Golemagg"] = "DEATHKNIGHT",
 		["Tadibey - Golemagg"] = "SHAMAN",
 		["Battledog - Gehennas"] = "WARRIOR",
+		["Battlearm - Gehennas"] = "WARRIOR",
 	},
 	["profiles"] = {
 		["DEATHKNIGHT"] = {

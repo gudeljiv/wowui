@@ -18,13 +18,13 @@ AtlasLootClassic_PvP: enabled
 AtlasLootClassic: enabled
 AtlasLootClassic_Data: enabled
 AuctionFaster: disabled
-GatherMate2: enabled
-GatherMate2_Data: enabled
+GatherMate2: disabled
+GatherMate2_Data: disabled
 ItemRack: enabled
 LFGBulletinBoard: enabled
 MikScrollingBattleText: enabled
 PallyPower: enabled
-WowSimsExporter: disabled
+WowSimsExporter: enabled
 Bagnon: enabled
 Bagnon_Config: enabled
 Bagnon_GuildBank: enabled
@@ -33,4 +33,3 @@ BagBrother: enabled
 GDKPd: enabled
 nTooltip: disabled
 TacoTip: enabled
-Auctionator: enabled

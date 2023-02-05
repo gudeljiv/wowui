@@ -13,5 +13,6 @@ WSEDB = {
 		["Battledog - Gehennas"] = "Default",
 		["Tadibey - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
+		["Battlearm - Gehennas"] = "Default",
 	},
 }

@@ -27,9 +27,9 @@ AtlasLootClassic_Data: enabled
 AskMrRobotClassic: disabled
 LFGBulletinBoard: enabled
 MikScrollingBattleText: enabled
-WowSimsExporter: disabled
-GatherMate2: enabled
-GatherMate2_Data: enabled
+WowSimsExporter: enabled
+GatherMate2: disabled
+GatherMate2_Data: disabled
 AuctionFaster: disabled
 ItemRack: enabled
 PallyPower: enabled
@@ -39,4 +39,3 @@ Bagnon_GuildBank: enabled
 Bagnon_VoidStorage: enabled
 BagBrother: enabled
 TacoTip: enabled
-Auctionator: enabled

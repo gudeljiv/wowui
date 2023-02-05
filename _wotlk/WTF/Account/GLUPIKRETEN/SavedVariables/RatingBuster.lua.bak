@@ -15,6 +15,7 @@ RatingBusterDB = {
 		["Moolatz - Golemagg"] = "DRUID",
 		["Battitude - Golemagg"] = "ROGUE",
 		["Vermin - Golemagg"] = "WARRIOR",
+		["Battlearm - Gehennas"] = "WARRIOR",
 		["Battledog - Gehennas"] = "WARRIOR",
 		["Miqa - Golemagg"] = "PRIEST",
 		["Tadibey - Golemagg"] = "SHAMAN",
