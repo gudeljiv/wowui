@@ -202,6 +202,6 @@ Bistooltip: disabled
 ShadowedUF_Options: enabled
 ShadowedUnitFrames: enabled
 AskMrRobotClassic: disabled
-WowSimsExporter: disabled
+WowSimsExporter: enabled
 GDKPd: enabled
 TacoTip: enabled

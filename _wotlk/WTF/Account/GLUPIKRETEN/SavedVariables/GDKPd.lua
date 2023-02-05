@@ -14,11 +14,12 @@ GDKPd_DB = {
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Handrmandr - Golemagg"] = "Handrmandr - Golemagg",
-		["Miqa - Golemagg"] = "Miqa - Golemagg",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
+		["Miqa - Golemagg"] = "Miqa - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
 		["Battledog - Gehennas"] = "Battledog - Gehennas",
+		["Battlearm - Gehennas"] = "Battlearm - Gehennas",
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
@@ -120,15 +121,6 @@ GDKPd_DB = {
 				["x"] = -37.30170059204102,
 			},
 		},
-		["Miqa - Golemagg"] = {
-			["movable"] = false,
-			["point"] = {
-				["y"] = -261.4287719726563,
-				["relative"] = "TOPRIGHT",
-				["point"] = "TOPRIGHT",
-				["x"] = -254.4450073242188,
-			},
-		},
 		["Augustin - Golemagg"] = {
 			["movable"] = false,
 			["point"] = {
@@ -136,6 +128,15 @@ GDKPd_DB = {
 				["relative"] = "TOPRIGHT",
 				["point"] = "TOPRIGHT",
 				["x"] = -38.57138442993164,
+			},
+		},
+		["Miqa - Golemagg"] = {
+			["movable"] = false,
+			["point"] = {
+				["y"] = -261.4287719726563,
+				["relative"] = "TOPRIGHT",
+				["point"] = "TOPRIGHT",
+				["x"] = -254.4450073242188,
 			},
 		},
 		["Mxyzptlk - Golemagg"] = {
@@ -163,6 +164,14 @@ GDKPd_DB = {
 				["relative"] = "TOPRIGHT",
 				["point"] = "TOPRIGHT",
 				["x"] = -65.0951919555664,
+			},
+		},
+		["Battlearm - Gehennas"] = {
+			["movable"] = false,
+			["point"] = {
+				["y"] = -292.2856750488281,
+				["relative"] = "TOPRIGHT",
+				["point"] = "TOPRIGHT",
 			},
 		},
 	},

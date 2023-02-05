@@ -9,6 +9,7 @@ GDKPd_DB = {
 		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Battlearm - Gehennas"] = "Battlearm - Gehennas",
 		["Battledog - Gehennas"] = "Battledog - Gehennas",
 		["Miqa - Golemagg"] = "Miqa - Golemagg",
 		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
@@ -109,6 +110,14 @@ GDKPd_DB = {
 				["relative"] = "TOPRIGHT",
 				["point"] = "TOPRIGHT",
 				["x"] = -68.66697692871094,
+			},
+		},
+		["Battlearm - Gehennas"] = {
+			["movable"] = false,
+			["point"] = {
+				["y"] = -292.2856750488281,
+				["relative"] = "TOPRIGHT",
+				["point"] = "TOPRIGHT",
 			},
 		},
 		["Battledog - Gehennas"] = {

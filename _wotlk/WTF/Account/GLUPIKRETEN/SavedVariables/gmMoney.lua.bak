@@ -1,6 +1,10 @@
 
 GMMONEY = {
 	["Gehennas"] = {
+		["Battlearm"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
 		["Battledog"] = {
 			["GOLD"] = 0,
 			["CLASS"] = "WARRIOR",
@@ -58,7 +62,7 @@ GMMONEY = {
 			["CLASS"] = "SHAMAN",
 		},
 		["Vermin"] = {
-			["GOLD"] = 35907493,
+			["GOLD"] = 36149838,
 			["CLASS"] = "WARRIOR",
 		},
 	},
