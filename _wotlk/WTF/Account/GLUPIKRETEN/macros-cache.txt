@@ -1,9 +1,9 @@
-VER 3 0000000000000013 " " "132130"
-/click BehindTarget
-END
 VER 3 000000000000000E " " "136106"
 /inspect
 /run SortBags()
+END
+VER 3 0000000000000013 " " "132130"
+/click BehindTarget
 END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
@@ -17,7 +17,7 @@ VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 END
 VER 3 0000000000000024 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:8952
+/use [nocombat]item:0
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
@@ -35,11 +35,11 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 /cast feed pet
 /use item:0
 END
-VER 3 0000000000000025 "Potion" "Inv_misc_questionmark"
+VER 3 0000000000000023 "Potion" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
 END
-VER 3 0000000000000023 "Potion" "Inv_misc_questionmark"
+VER 3 0000000000000025 "Potion" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
 END
