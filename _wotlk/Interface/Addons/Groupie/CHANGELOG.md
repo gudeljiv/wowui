@@ -1,14 +1,23 @@
 # Groupie
 
-## [1.66](https://github.com/Gogo1951/Groupie/tree/1.66) (2023-01-17)
-[Full Changelog](https://github.com/Gogo1951/Groupie/compare/v1.65...1.66) [Previous Releases](https://github.com/Gogo1951/Groupie/releases)
+## [v1.7](https://github.com/Gogo1951/Groupie/tree/v1.7) (2023-02-06)
+[Full Changelog](https://github.com/Gogo1951/Groupie/compare/1.66...v1.7) [Previous Releases](https://github.com/Gogo1951/Groupie/releases)
 
-- Update Groupie.toc  
-- Update Globals.lua  
-- Update Globals.lua  
-- Update ToC for Ulduar  
-- Update to Instance Table & Achievements  
-- Add files via upload  
-- Delete INSTANCEDATA.txt  
-- Delete ACHIEVEMENTDATA.txt  
-- Added Data Generation Tool  
+- resolve merge... again  
+- resolve merge  
+- Merge branch 'develop'  
+- disable unfinished afterparty  
+- split up data files  
+- update other libs  
+- update ace libraries  
+- Updated to include H+ Dungeons  
+- fix level not updating  
+- libgearscore update, afterparty fixes  
+- normal dungeon after party workaround  
+- finished afterparty tool  
+- after party tool  
+- remove own characters from friends list  
+- guild related bugfix, dont include listings from global ignores  
+- minimap tweaks  
+- fixes #231  
+- make slash command a toggle, fix unspent talent pts  

@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 3.0.103 (5th February 2023)
+-- 	Leatrix Plus 3.0.104 (6th February 2023)
 ----------------------------------------------------------------------
 
 --	01:Functns, 02:Locks, 03:Restart, 20:Live, 30:Isolated, 40:Player
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "3.0.103"
+	LeaPlusLC["AddonVer"] = "3.0.104"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -37,7 +37,7 @@
 		end
 	end
 
-	-- Check for ElvUI
+	-- Check for addons
 	if IsAddOnLoaded("ElvUI") then LeaPlusLC.ElvUI = unpack(ElvUI) end
 	if IsAddOnLoaded("Glass") then LeaPlusLC.Glass = true end
 
@@ -441,39 +441,38 @@
 		end
 	end
 
-	-- Check if a name is in your friends list or guild
-	function LeaPlusLC:FriendCheck(name)
+	-- Check if a name is in your friends list or guild (does not check realm as realm is unknown for some checks)
+	function LeaPlusLC:FriendCheck(name, guid)
+
+		-- Do nothing if name is empty (such as whispering from the Battle.net app)
+		if not name then return end
 
 		-- Update friends list
 		C_FriendList.ShowFriends()
 
+		-- Remove realm
+		name = strsplit("-", name, 2)
+
 		-- Check character friends
-		for i = 1, C_FriendList.GetNumOnlineFriends() do
-			-- Return true if name matches with or without realm
+		for i = 1, C_FriendList.GetNumFriends() do
+			-- Return true is character name matches and GUID matches if there is one (realm is not checked)
+			local friendInfo = C_FriendList.GetFriendInfoByIndex(i)
 			local charFriendName = C_FriendList.GetFriendInfoByIndex(i).name
-			if name == charFriendName or name == strsplit("-", charFriendName, 2) then
+			charFriendName = strsplit("-", charFriendName, 2)
+			if (name == charFriendName) and (guid and (guid == friendInfo.guid) or true) then
 				return true
 			end
-		end
-
-		-- Get realm name or set to player's own realm (same realm does not return realm)
-		local void, myRealm = UnitFullName(name)
-		if not myRealm or myRealm == "" then void, myRealm = UnitFullName("player") end
-		if not myRealm or myRealm == "" then return end
-
-		-- Add realm name to character name
-		if not string.find(name, "-") then
-			name = name .. "-" .. myRealm
 		end
 
 		-- Check Battle.net friends
 		local numfriends = BNGetNumFriends()
 		for i = 1, numfriends do
-			local numtoons = BNGetNumFriendGameAccounts(i)
+			local numtoons = C_BattleNet.GetFriendNumGameAccounts(i)
 			for j = 1, numtoons do
-				local void, toon, client, realm = BNGetFriendGameAccountInfo(i, j)
-				local toonname = toon .. "-" ..realm
-				if client == "WoW" and toonname == name then
+				local gameAccountInfo = C_BattleNet.GetFriendGameAccountInfo(i, j)
+				local characterName = gameAccountInfo.characterName
+				local client = gameAccountInfo.clientProgram
+				if client == "WoW" and characterName == name then
 					return true
 				end
 			end
@@ -483,13 +482,11 @@
 		if LeaPlusLC["FriendlyGuild"] == "On" then
 			local gCount = GetNumGuildMembers()
 			for i = 1, gCount do
-				local gName, void, void, void, void, void, void, void, gOnline, void, void, void, void, gMobile = GetGuildRosterInfo(i)
+				local gName, void, void, void, void, void, void, void, gOnline, void, void, void, void, gMobile, void, void, gGUID = GetGuildRosterInfo(i)
 				if gOnline and not gMobile then
-					local gCompare = gName
-					if not string.find(gName, "-") then
-						gCompare = gName .. "-" .. myRealm
-					end
-					if gCompare == name then
+					gName = strsplit("-", gName, 2)
+					-- Return true if character name matches including GUID if there is one
+					if (name == gName) and (guid and (guid == gGUID) or true) then
 						return true
 					end
 				end
@@ -3172,8 +3169,8 @@
 			cButton:SetSize(32, 32)
 
 			-- Create durability tables
-			local Slots = {"HeadSlot", "ShoulderSlot", "ChestSlot", "WristSlot", "HandsSlot", "WaistSlot", "LegsSlot", "FeetSlot", "MainHandSlot", "SecondaryHandSlot"}
-			local SlotsFriendly = {INVTYPE_HEAD, INVTYPE_SHOULDER, INVTYPE_CHEST, INVTYPE_WRIST, INVTYPE_HAND, INVTYPE_WAIST, INVTYPE_LEGS, INVTYPE_FEET, INVTYPE_WEAPONMAINHAND, INVTYPE_WEAPONOFFHAND}
+			local Slots = {"HeadSlot", "ShoulderSlot", "ChestSlot", "WristSlot", "HandsSlot", "WaistSlot", "LegsSlot", "FeetSlot", "MainHandSlot", "SecondaryHandSlot", "RangedSlot"}
+			local SlotsFriendly = {INVTYPE_HEAD, INVTYPE_SHOULDER, INVTYPE_CHEST, INVTYPE_WRIST, INVTYPE_HAND, INVTYPE_WAIST, INVTYPE_LEGS, INVTYPE_FEET, INVTYPE_WEAPONMAINHAND, INVTYPE_WEAPONOFFHAND, INVTYPE_RANGED}
 
 			-- Show durability status in tooltip or status line (tip or status)
 			local function ShowDuraStats(where)
@@ -6934,7 +6931,7 @@
 			LeaPlusLC["DressupAnim"] = 0 -- Defined here since the setting is not saved
 			LeaPlusLC:MakeSL(DressUpFrame, "DressupAnim", "", 1, #animTable - 1, 1, 356, -92, "%.0f")
 			LeaPlusCB["DressupAnim"]:ClearAllPoints()
-			LeaPlusCB["DressupAnim"]:SetPoint("BOTTOM", 0, 112)
+			LeaPlusCB["DressupAnim"]:SetPoint("BOTTOM", -12, 112)
 			LeaPlusCB["DressupAnim"]:SetWidth(226)
 			LeaPlusCB["DressupAnim"]:SetFrameLevel(5)
 			LeaPlusCB["DressupAnim"]:HookScript("OnValueChanged", function(self, setting)
@@ -10273,6 +10270,7 @@
 						end
 
 						chatMessage = gsub(chatMessage, "|T.-|t", "") -- Remove textures
+						chatMessage = gsub(chatMessage, "|A.-|a", "") -- Remove atlases
 						editBox:Insert(chatMessage .. "|r|n")
 
 					end
@@ -12649,19 +12647,22 @@
 
 		if event == "CHAT_MSG_WHISPER" or event == "CHAT_MSG_BN_WHISPER" then
 			if (not UnitExists("party1") or UnitIsGroupLeader("player") or UnitIsGroupAssistant("player")) and strlower(strtrim(arg1)) == strlower(LeaPlusLC["InvKey"]) then
-				if not LeaPlusLC:IsInLFGQueue() then -- Needed as invite can reset battleground queue timer
+				if not LeaPlusLC:IsInLFGQueue() then
 					if event == "CHAT_MSG_WHISPER" then
-						if LeaPlusLC:FriendCheck(strsplit("-", arg2, 2)) or LeaPlusLC["InviteFriendsOnly"] == "Off" then
+						local void, void, void, void, viod, void, void, void, void, guid = ...
+						if LeaPlusLC:FriendCheck(arg2, guid) or LeaPlusLC["InviteFriendsOnly"] == "Off" then
 							InviteUnit(arg2)
 						end
 					elseif event == "CHAT_MSG_BN_WHISPER" then
 						local presenceID = select(11, ...)
 						if presenceID and BNIsFriend(presenceID) then
-							local index = BNGetFriendIndex(presenceID);
+							local index = BNGetFriendIndex(presenceID)
 							if index then
-								local presenceID, presenceName, battleTag, isBattleTagPresence, toonName, toonID = BNGetFriendInfo(index);
-								if toonID then
-									BNInviteFriend(toonID);
+								local accountInfo = C_BattleNet.GetFriendAccountInfo(index)
+								local gameAccountInfo = accountInfo.gameAccountInfo
+								local gameAccountID = gameAccountInfo.gameAccountID
+								if gameAccountID then
+									BNInviteFriend(gameAccountID)
 								end
 							end
 						end
@@ -12676,8 +12677,8 @@
 		----------------------------------------------------------------------
 
 		if event == "DUEL_REQUESTED" and not LeaPlusLC:FriendCheck(arg1) then
-			CancelDuel();
-			StaticPopup_Hide("DUEL_REQUESTED");
+			CancelDuel()
+			StaticPopup_Hide("DUEL_REQUESTED")
 			return
 		end
 
@@ -12704,13 +12705,14 @@
 		end
 
 		----------------------------------------------------------------------
-		-- Block party invites
+		-- Block party invites and party from friends
 		----------------------------------------------------------------------
 
 		if event == "PARTY_INVITE_REQUEST" then
 
 			-- If a friend, accept if you're accepting friends and not in battleground queue
-			if (LeaPlusLC["AcceptPartyFriends"] == "On" and LeaPlusLC:FriendCheck(arg1)) then
+			local void, void, void, void, guid = ...
+			if (LeaPlusLC["AcceptPartyFriends"] == "On" and LeaPlusLC:FriendCheck(arg1, guid)) then
 				if not LeaPlusLC:IsInLFGQueue() then
 					AcceptGroup()
 					for i=1, STATICPOPUP_NUMDIALOGS do
@@ -12730,12 +12732,12 @@
 
 			-- If not a friend and you're blocking invites, decline
 			if LeaPlusLC["NoPartyInvites"] == "On" then
-				if LeaPlusLC:FriendCheck(arg1) then
+				if LeaPlusLC:FriendCheck(arg1, guid) then
 					return
 				else
-					DeclineGroup();
-					StaticPopup_Hide("PARTY_INVITE");
-					StaticPopup_Hide("PARTY_INVITE_XREALM");
+					DeclineGroup()
+					StaticPopup_Hide("PARTY_INVITE")
+					StaticPopup_Hide("PARTY_INVITE_XREALM")
 					return
 				end
 			end

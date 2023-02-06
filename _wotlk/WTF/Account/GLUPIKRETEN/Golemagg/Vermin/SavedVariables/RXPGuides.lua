@@ -435,6 +435,14 @@ RXPCComms = {
 					["timePlayed"] = 306.3059999998659,
 					["class"] = "ROGUE",
 				},
+				["Runderhunter"] = {
+					["class"] = "HUNTER",
+					["lastSeen"] = 426011.516,
+					["xpPercentage"] = 0,
+					["isRxp"] = true,
+					["timePlayed"] = 0,
+					["level"] = 80,
+				},
 				["Lynnw"] = {
 					["isRxp"] = true,
 					["lastSeen"] = 631237.9450000001,
@@ -460,13 +468,13 @@ RXPCComms = {
 					["class"] = "WARRIOR",
 				},
 				["Ouii"] = {
-					["xpPercentage"] = 0,
+					["timePlayed"] = 5.651000000070781,
 					["isRxp"] = true,
 					["lastSeen"] = 1821053.14,
-					["timePlayed"] = 5.651000000070781,
-					["level"] = 71,
-					["xp"] = 626,
+					["xpPercentage"] = 0,
 					["class"] = "HUNTER",
+					["xp"] = 626,
+					["level"] = 71,
 				},
 				["Nechmewarri"] = {
 					["timePlayed"] = 0,
@@ -873,13 +881,9 @@ RXPCComms = {
 					["timePlayed"] = 63.37099999981001,
 					["class"] = "WARRIOR",
 				},
-				["Sanurok"] = {
-					["class"] = "PRIEST",
-					["lastSeen"] = 714776.5530000001,
-					["xpPercentage"] = 0,
-					["isRxp"] = true,
-					["timePlayed"] = 0,
-					["level"] = 80,
+				["Elcamino"] = {
+					["timePlayed"] = 369.1729999999516,
+					["class"] = "MAGE",
 				},
 				["Callmepapito"] = {
 					["isRxp"] = true,
@@ -898,9 +902,13 @@ RXPCComms = {
 					["timePlayed"] = 278.3670000000857,
 					["class"] = "DEATHKNIGHT",
 				},
-				["Elcamino"] = {
-					["timePlayed"] = 369.1729999999516,
-					["class"] = "MAGE",
+				["Sanurok"] = {
+					["class"] = "PRIEST",
+					["lastSeen"] = 714776.5530000001,
+					["xpPercentage"] = 0,
+					["isRxp"] = true,
+					["timePlayed"] = 0,
+					["level"] = 80,
 				},
 				["Revhole"] = {
 					["timePlayed"] = 0.03000000002793968,

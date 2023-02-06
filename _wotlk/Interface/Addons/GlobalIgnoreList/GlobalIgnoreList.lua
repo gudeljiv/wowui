@@ -1964,7 +1964,7 @@ end
 -- BLIZZARD FUNCTION HOOKS --
 -----------------------------
 
-BlizzardInviteUnit			= InviteUnit
+BlizzardInviteUnit			= C_PartyInfo.InviteUnit
 BlizzardAddIgnore			= C_FriendList.AddIgnore
 BlizzardDelIgnore			= C_FriendList.DelIgnore
 BlizzardDelIgnoreByIndex	= C_FriendList.DelIgnoreByIndex
@@ -1993,7 +1993,7 @@ StaticPopupDialogs["GIL_PARTYWARN"] = {
 	hideOnEscape	= true,
 }
 
-InviteUnit = function (name)
+C_PartyInfo.InviteUnit = function (name)
 
 	name = Proper(name)
 	

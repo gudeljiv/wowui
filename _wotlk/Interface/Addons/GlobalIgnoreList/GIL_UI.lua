@@ -818,7 +818,7 @@ local function CreateUIFrames()
 
 	MainFrame:Hide()
 	
-	MainFrame:SetFrameStrata("DIALOG")	
+	MainFrame:SetFrameStrata("MEDIUM")	
 	MainFrame:SetWidth(WINDOW_WIDTH)
 	MainFrame:SetHeight(WINDOW_HEIGHT)
 	MainFrame:SetPoint("CENTER", UIParent)

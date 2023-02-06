@@ -435,6 +435,14 @@ RXPCComms = {
 					["timePlayed"] = 306.3059999998659,
 					["class"] = "ROGUE",
 				},
+				["Runderhunter"] = {
+					["isRxp"] = true,
+					["lastSeen"] = 426011.516,
+					["xpPercentage"] = 0,
+					["level"] = 80,
+					["timePlayed"] = 0,
+					["class"] = "HUNTER",
+				},
 				["Lynnw"] = {
 					["level"] = 80,
 					["lastSeen"] = 631237.9450000001,
@@ -460,13 +468,13 @@ RXPCComms = {
 					["class"] = "WARRIOR",
 				},
 				["Ouii"] = {
-					["level"] = 71,
 					["class"] = "HUNTER",
+					["level"] = 71,
 					["lastSeen"] = 1821053.14,
-					["timePlayed"] = 5.651000000070781,
+					["xpPercentage"] = 0,
 					["isRxp"] = true,
 					["xp"] = 626,
-					["xpPercentage"] = 0,
+					["timePlayed"] = 5.651000000070781,
 				},
 				["Nechmewarri"] = {
 					["timePlayed"] = 0,
@@ -905,9 +913,13 @@ RXPCComms = {
 					["timePlayed"] = 278.3670000000857,
 					["class"] = "DEATHKNIGHT",
 				},
-				["Elcamino"] = {
-					["timePlayed"] = 369.1729999999516,
-					["class"] = "MAGE",
+				["Sanurok"] = {
+					["isRxp"] = true,
+					["lastSeen"] = 714776.5530000001,
+					["xpPercentage"] = 0,
+					["level"] = 80,
+					["timePlayed"] = 0,
+					["class"] = "PRIEST",
 				},
 				["Revhole"] = {
 					["timePlayed"] = 0.03000000002793968,
@@ -947,13 +959,13 @@ RXPCComms = {
 					["timePlayed"] = 0,
 					["level"] = 80,
 				},
-				["Soszojowy"] = {
-					["timePlayed"] = 369.1729999999516,
-					["class"] = "SHAMAN",
-				},
 				["Sicco"] = {
 					["timePlayed"] = 369.1729999999516,
 					["class"] = "DEATHKNIGHT",
+				},
+				["Soszojowy"] = {
+					["timePlayed"] = 369.1729999999516,
+					["class"] = "SHAMAN",
 				},
 				["Niebels"] = {
 					["timePlayed"] = 326.87900000019,
@@ -1157,13 +1169,9 @@ RXPCComms = {
 					["class"] = "PALADIN",
 					["xp"] = 1448,
 				},
-				["Sanurok"] = {
-					["isRxp"] = true,
-					["lastSeen"] = 714776.5530000001,
-					["xpPercentage"] = 0,
-					["level"] = 80,
-					["timePlayed"] = 0,
-					["class"] = "PRIEST",
+				["Elcamino"] = {
+					["timePlayed"] = 369.1729999999516,
+					["class"] = "MAGE",
 				},
 				["Rokkun"] = {
 					["timePlayed"] = 301.3610000000335,

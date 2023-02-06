@@ -327,7 +327,6 @@ function NeedsFoodBadly.BetterFood(a, b)
 		b.hp = UnitHealthMax('player') * b.hp
 	end
 	return (a.hp > b.hp) or (a.hp == b.hp and GetItemCount(a.id) < GetItemCount(b.id))
-	-- return (a.id > b.id) or (a.id == b.id and GetItemCount(a.id) < GetItemCount(b.id))
 end
 
 function NeedsFoodBadly.BetterDrink(a, b)

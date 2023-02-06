@@ -35,7 +35,7 @@ LBISSettings = {
 		["RestorationDruid"] = true,
 		["SubtletyRogue"] = true,
 	},
-	["SelectedSpec"] = "Paladin: Protection",
+	["SelectedSpec"] = "Warrior: Protection",
 	["minimap"] = {
 		["minimapPos"] = 180,
 		["hide"] = true,
@@ -52,5 +52,5 @@ LBISSettings = {
 	["ShowCustom"] = true,
 	["PriorityList"] = {
 	},
-	["SelectedPhase"] = "Phase 1",
+	["SelectedPhase"] = "All",
 }

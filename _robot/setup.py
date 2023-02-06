@@ -158,7 +158,6 @@ with keyboard.Listener(on_press=on_press) as listener:
                 time.sleep(time1)
                 pyautogui.hotkey("enter")
 
-
                 pyautogui.hotkey("enter")
                 pyperclip.copy('/run RotationTextureFrame2:Show()')
                 if os.name == "posix":
@@ -173,7 +172,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                 try:
                     for skill in skills[wow_class]:
                         number = number + 1
-                        main_image=False
+                        main_image = False
                         pyautogui.hotkey("enter")
                         pyperclip.copy('/run RotationTextureFrame1.texture:SetTexture(' + str(skill["type"]) + '(' + str(skill["id"]) + '))')
                         if os.name == "posix":
@@ -191,7 +190,7 @@ with keyboard.Listener(on_press=on_press) as listener:
 
                     for skill in skills["offgcd"][wow_class]:
                         number = number + 1
-                        offgcd_image=False
+                        offgcd_image = False
                         pyautogui.hotkey("enter")
                         pyperclip.copy('/run RotationTextureFrame2.texture:SetTexture(' + str(skill["type"]) + '(' + str(skill["id"]) + '))')
                         if os.name == "posix":
@@ -204,7 +203,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                         o_image = abilities_folder + slash + str(skill["name"]) + " O.png".format(**p_offgcd)
                         offgcd_image = sct.grab(p_offgcd)
                         mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=o_image)
-                        print(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " O.png",offgcd_image)
+                        print(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " O.png", offgcd_image)
                         time.sleep(time2)
 
                 except:
@@ -212,7 +211,7 @@ with keyboard.Listener(on_press=on_press) as listener:
 
                 for skill in skills["healing"]:
                     number = number + 1
-                    main_image=False
+                    main_image = False
                     pyautogui.hotkey("enter")
                     pyperclip.copy('/run RotationTextureFrame1.texture:SetTexture(' + str(skill["type"]) + '(' + str(skill["id"]) + '))')
                     if os.name == "posix":
@@ -230,7 +229,7 @@ with keyboard.Listener(on_press=on_press) as listener:
 
                 for skill in skills["globals"]:
                     number = number + 1
-                    main_image=False
+                    main_image = False
                     pyautogui.hotkey("enter")
                     pyperclip.copy('/run RotationTextureFrame1.texture:SetTexture(' + str(skill["type"]) + '(' + str(skill["id"]) + '))')
                     if os.name == "posix":
@@ -254,7 +253,6 @@ with keyboard.Listener(on_press=on_press) as listener:
                     pyautogui.hotkey('ctrl', 'v')
                 time.sleep(time1)
                 pyautogui.hotkey("enter")
-
 
                 pyautogui.hotkey("enter")
                 pyperclip.copy('/run RotationTextureFrame2:Hide()')

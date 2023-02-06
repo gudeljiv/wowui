@@ -35,7 +35,7 @@ LBISSettings = {
 		["RestorationDruid"] = true,
 		["SubtletyRogue"] = true,
 	},
-	["SelectedSpec"] = "Death Knight: Unholy",
+	["SelectedSpec"] = "Death Knight: Frost",
 	["minimap"] = {
 		["minimapPos"] = 180,
 		["hide"] = true,
@@ -50,7 +50,7 @@ LBISSettings = {
 	["PriorityList"] = {
 	},
 	["SelectedSourceType"] = "All",
-	["SelectedSlot"] = "Two Hand",
+	["SelectedSlot"] = "Trinket",
 	["ShowCustom"] = false,
-	["SelectedPhase"] = "Phase 1",
+	["SelectedPhase"] = "All",
 }
