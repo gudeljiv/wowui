@@ -143,6 +143,13 @@ with keyboard.Listener(on_press=on_press) as listener:
             except:
                 wow_class = "warrior"
 
+            if not os.path.exists(abilities_folder + slash + wow_class):
+                os.makedirs(abilities_folder + slash + wow_class)
+            if not os.path.exists(abilities_folder + slash + "healing"):
+                os.makedirs(abilities_folder + slash + "healing")
+            if not os.path.exists(abilities_folder + slash + "globals"):
+                os.makedirs(abilities_folder + slash + "globals")
+
             if count > 0:
                 quit()
 
@@ -182,10 +189,10 @@ with keyboard.Listener(on_press=on_press) as listener:
                         time.sleep(time1)
                         pyautogui.hotkey("enter")
 
-                        m_image = abilities_folder + slash + str(skill["name"]) + " M.png".format(**p_main)
+                        m_image = abilities_folder + slash + wow_class + slash + str(skill["name"]) + " M.png".format(**p_main)
                         main_image = sct.grab(p_main)
                         mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
-                        print(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " M.png")
+                        print(number, wow_class, skill["name"], abilities_folder + slash + wow_class + slash + skill["name"] + " M.png")
                         time.sleep(time2)
 
                     for skill in skills["offgcd"][wow_class]:
@@ -200,7 +207,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                         time.sleep(time1)
                         pyautogui.hotkey("enter")
 
-                        o_image = abilities_folder + slash + str(skill["name"]) + " O.png".format(**p_offgcd)
+                        o_image = abilities_folder + slash + wow_class + slash + str(skill["name"]) + " O.png".format(**p_offgcd)
                         offgcd_image = sct.grab(p_offgcd)
                         mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=o_image)
                         print(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " O.png", offgcd_image)
@@ -221,10 +228,10 @@ with keyboard.Listener(on_press=on_press) as listener:
                     time.sleep(time1)
                     pyautogui.hotkey("enter")
 
-                    m_image = abilities_folder + slash + str(skill["name"]) + " H.png".format(**p_main)
+                    m_image = abilities_folder + slash + "healing" + slash + str(skill["name"]) + " H.png".format(**p_main)
                     main_image = sct.grab(p_main)
                     mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
-                    print(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " H.png")
+                    print(number, wow_class, skill["name"], abilities_folder + slash + "healing" + slash + skill["name"] + " H.png")
                     time.sleep(time2)
 
                 for skill in skills["globals"]:
@@ -239,10 +246,10 @@ with keyboard.Listener(on_press=on_press) as listener:
                     time.sleep(time1)
                     pyautogui.hotkey("enter")
 
-                    m_image = abilities_folder + slash + str(skill["name"]) + " G.png".format(**p_main)
+                    m_image = abilities_folder + slash + "globals" + slash + str(skill["name"]) + " G.png".format(**p_main)
                     main_image = sct.grab(p_main)
                     mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
-                    print(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " G.png")
+                    print(number, wow_class, skill["name"], abilities_folder + slash + "globals" + slash + skill["name"] + " G.png")
                     time.sleep(time2)
 
                 pyautogui.hotkey("enter")

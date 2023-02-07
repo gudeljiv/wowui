@@ -124,6 +124,7 @@ skills["hunter"] = [
     {"name": "explosive shot", "type": "GetSpellTexture", "id": 60052, "key": "3"},
     {"name": "black arrow", "type": "GetSpellTexture", "id": 63671, "key": "5"},
     {"name": "explosive trap", "type": "GetSpellTexture", "id": 49066, "key": "g"},
+    {"name": "tranquilizing shot", "type": "GetSpellTexture", "id": 19801, "key": "k"},
 ]
 
 skills["druid"] = [

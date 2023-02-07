@@ -24,61 +24,11 @@ GlobalIgnoreDB = {
 		"player", -- [9]
 		"player", -- [10]
 		"player", -- [11]
+		"player", -- [12]
 	},
-	["syncInfo"] = {
-		{
-		}, -- [1]
-		{
-		}, -- [2]
-		{
-		}, -- [3]
-		{
-		}, -- [4]
-		{
-		}, -- [5]
-		{
-		}, -- [6]
-		{
-		}, -- [7]
-		{
-		}, -- [8]
-		{
-		}, -- [9]
-		{
-		}, -- [10]
-		{
-		}, -- [11]
-	},
+	["openWithFriends"] = true,
 	["invertSpam"] = false,
 	["skipPrivate"] = true,
-	["ignoreList"] = {
-		"Freezqt-Golemagg", -- [1]
-		"Puntune-Golemagg", -- [2]
-		"Pömp-Golemagg", -- [3]
-		"Raudos-Golemagg", -- [4]
-		"Burstt-Golemagg", -- [5]
-		"Conall-Golemagg", -- [6]
-		"Elfboy-Golemagg", -- [7]
-		"Jerrywild-Golemagg", -- [8]
-		"Qtc-Golemagg", -- [9]
-		"Segasík-Golemagg", -- [10]
-		"Arferes-Golemagg", -- [11]
-	},
-	["autoTime"] = 600,
-	["autoCount"] = 3,
-	["notes"] = {
-		"", -- [1]
-		"", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"", -- [5]
-		"", -- [6]
-		"", -- [7]
-		"", -- [8]
-		"", -- [9]
-		"", -- [10]
-		"", -- [11]
-	},
 	["filterList"] = {
 		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]
 		"[item=19019]", -- [2]
@@ -90,6 +40,47 @@ GlobalIgnoreDB = {
 		"[community]", -- [8]
 		"[contains=WTS] or [contains=WTB]", -- [9]
 		"[nonlatin]", -- [10]
+	},
+	["autoTime"] = 600,
+	["autoCount"] = 3,
+	["delList"] = {
+	},
+	["syncInfo"] = {
+		{
+			"Mxzq-Golemagg@1", -- [1]
+		}, -- [1]
+		{
+			"Mxzq-Golemagg@1", -- [1]
+		}, -- [2]
+		{
+			"Mxzq-Golemagg@1", -- [1]
+		}, -- [3]
+		{
+			"Mxzq-Golemagg@1", -- [1]
+		}, -- [4]
+		{
+			"Mxzq-Golemagg@1", -- [1]
+		}, -- [5]
+		{
+			"Mxzq-Golemagg@1", -- [1]
+		}, -- [6]
+		{
+			"Mxzq-Golemagg@1", -- [1]
+		}, -- [7]
+		{
+			"Mxzq-Golemagg@1", -- [1]
+		}, -- [8]
+		{
+			"Mxzq-Golemagg@1", -- [1]
+		}, -- [9]
+		{
+			"Mxzq-Golemagg@1", -- [1]
+		}, -- [10]
+		{
+			"Mxzq-Golemagg@1", -- [1]
+		}, -- [11]
+		{
+		}, -- [12]
 	},
 	["trackChanges"] = true,
 	["autoIgnore"] = true,
@@ -105,11 +96,25 @@ GlobalIgnoreDB = {
 		"Horde", -- [9]
 		"Horde", -- [10]
 		"Horde", -- [11]
+		"Horde", -- [12]
 	},
-	["skipGuild"] = true,
+	["defexpire"] = 0,
 	["sameserver"] = true,
 	["attachFriends"] = true,
-	["revision"] = 1,
+	["notes"] = {
+		"", -- [1]
+		"", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		"", -- [7]
+		"", -- [8]
+		"", -- [9]
+		"", -- [10]
+		"", -- [11]
+		"", -- [12]
+	},
 	["expList"] = {
 		0, -- [1]
 		0, -- [2]
@@ -122,8 +127,9 @@ GlobalIgnoreDB = {
 		0, -- [9]
 		0, -- [10]
 		0, -- [11]
+		0, -- [12]
 	},
-	["skipParty"] = false,
+	["skipGuild"] = true,
 	["chatmsg"] = true,
 	["filterTotal"] = 0,
 	["dateList"] = {
@@ -138,6 +144,7 @@ GlobalIgnoreDB = {
 		"05 Feb 2023", -- [9]
 		"05 Feb 2023", -- [10]
 		"06 Feb 2023", -- [11]
+		"07 Feb 2023", -- [12]
 	},
 	["filterDesc"] = {
 		"Filter \"Anal\" Spammers", -- [1]
@@ -151,7 +158,7 @@ GlobalIgnoreDB = {
 		"Filter WTS", -- [9]
 		"Filter Chinese/Korean/Japanese", -- [10]
 	},
-	["asknote"] = true,
+	["spamFilter"] = true,
 	["filterActive"] = {
 		true, -- [1]
 		true, -- [2]
@@ -164,11 +171,23 @@ GlobalIgnoreDB = {
 		false, -- [9]
 		false, -- [10]
 	},
-	["spamFilter"] = true,
-	["defexpire"] = 0,
-	["delList"] = {
-	},
+	["asknote"] = true,
+	["skipParty"] = false,
+	["revision"] = 1,
 	["autoUpdate"] = true,
 	["samefaction"] = true,
-	["openWithFriends"] = true,
+	["ignoreList"] = {
+		"Freezqt-Golemagg", -- [1]
+		"Puntune-Golemagg", -- [2]
+		"Pömp-Golemagg", -- [3]
+		"Raudos-Golemagg", -- [4]
+		"Burstt-Golemagg", -- [5]
+		"Conall-Golemagg", -- [6]
+		"Elfboy-Golemagg", -- [7]
+		"Jerrywild-Golemagg", -- [8]
+		"Qtc-Golemagg", -- [9]
+		"Segasík-Golemagg", -- [10]
+		"Arferes-Golemagg", -- [11]
+		"Eristia-Golemagg", -- [12]
+	},
 }

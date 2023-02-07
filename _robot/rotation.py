@@ -68,21 +68,21 @@ else:
 healing = {}
 try:
     for skill in skills["healing"]:
-        healing[skill["name"]] = cv2.imread(abilities_folder + "/" + skill["name"] + " H.png")
+        healing[skill["name"]] = cv2.imread(abilities_folder + "/" + "healing" + "/" + skill["name"] + " H.png")
 except:
     print("healing abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
 
 global_skills = {}
 try:
     for skill in skills["globals"]:
-        global_skills[skill["name"]] = cv2.imread(abilities_folder + "/" + skill["name"] + " G.png")
+        global_skills[skill["name"]] = cv2.imread(abilities_folder + "/" + "globals" + "/" + skill["name"] + " G.png")
 except:
     print("global abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
 
 abilities = {}
 try:
     for skill in skills[wow_class]:
-        abilities[skill["name"]] = cv2.imread(abilities_folder + "/" + skill["name"] + " M.png")
+        abilities[skill["name"]] = cv2.imread(abilities_folder + "/" + wow_class + "/" + skill["name"] + " M.png")
         abilities = {**abilities, **healing, **global_skills}
 except:
     print("main abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
@@ -221,7 +221,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                 skills_loaded = wow_class
                 for skill in skills[wow_class]:
                     try:
-                        abilities[skill["name"]] = cv2.imread(abilities_folder + "/" + skill["name"] + " M.png")
+                        abilities[skill["name"]] = cv2.imread(abilities_folder + "/" + wow_class + "/" + skill["name"] + " M.png")
                         abilities = {**abilities, **healing, **global_skills}
                     except:
                         print("missing spell in ", wow_class, " --> ", skill["name"], datetime.now().strftime("%H:%M:%S"))
@@ -229,7 +229,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                 abilities_offgcd = {}
                 try:
                     for skill in skills["offgcd"][wow_class]:
-                        abilities_offgcd[skill["name"]] = cv2.imread(abilities_folder + "/"+skill["name"] + " O.png")
+                        abilities_offgcd[skill["name"]] = cv2.imread(abilities_folder + "/" + wow_class + "/" + skill["name"] + " O.png")
                 except:
                     print("offgcd error missing class --> ", wow_class, datetime.now().strftime("%H:%M:%S"))
 
