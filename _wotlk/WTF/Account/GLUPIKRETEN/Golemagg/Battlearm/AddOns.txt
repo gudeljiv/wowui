@@ -222,3 +222,4 @@ ShadowedUnitFrames: enabled
 ShadowedUF_SmoothBars: enabled
 GDKPd: enabled
 SavedInstances: disabled
+GlobalIgnoreList: disabled

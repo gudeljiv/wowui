@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 9039,
+	["session"] = 9045,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\Details\\functions\\mythicdungeon.lua:22: Attempt to register unknown event \"CHALLENGE_MODE_START\"",

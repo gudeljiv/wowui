@@ -83,13 +83,6 @@ X: 33
 Y: 155
 W: 325
 H: 375
-Frame: Groupie
-FrameLevel: 1
-Anchor: LEFT
-X: 236
-Y: 103
-W: 960
-H: 640
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM
@@ -97,3 +90,10 @@ X: -232
 Y: 134
 W: 30
 H: 30
+Frame: Groupie
+FrameLevel: 1
+Anchor: LEFT
+X: 236
+Y: 103
+W: 960
+H: 640

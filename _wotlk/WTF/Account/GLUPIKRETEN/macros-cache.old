@@ -22,12 +22,12 @@ VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 END
 VER 3 0000000000000024 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:35951
+/use [nocombat]item:35953
 /castsequence [combat] reset=combat item:33447
 END
 VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:35951
+/use [nocombat]item:35953
 /castsequence [combat] reset=combat item:33447
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"

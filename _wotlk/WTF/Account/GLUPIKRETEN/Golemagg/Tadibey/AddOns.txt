@@ -33,3 +33,4 @@ BagBrother: enabled
 GDKPd: enabled
 nTooltip: disabled
 TacoTip: enabled
+GlobalIgnoreList: disabled
