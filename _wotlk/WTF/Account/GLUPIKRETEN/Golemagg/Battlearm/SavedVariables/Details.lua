@@ -9182,6 +9182,5 @@ _detalhes_database = {
 		["Player-4701-03195041"] = "DAMAGER",
 	},
 	["cached_specs"] = {
-		["Player-4465-036D491F"] = 251,
 	},
 }

@@ -762,8 +762,6 @@ RXPCComms = {
 					["class"] = "HUNTER",
 					["timePlayed"] = 0,
 					["isRxp"] = true,
-					["timePlayed"] = 0,
-					["level"] = 80,
 				},
 				["Placidlol"] = {
 					["timePlayed"] = 306.3059999998659,
@@ -791,7 +789,7 @@ RXPCComms = {
 					["xpPercentage"] = 0,
 					["level"] = 80,
 					["timePlayed"] = 0,
-					["class"] = "PALADIN",
+					["class"] = "HUNTER",
 				},
 				["Frêeloader"] = {
 					["timePlayed"] = 76.26500000013039,
@@ -826,9 +824,6 @@ RXPCComms = {
 					["lastSeen"] = 891170.488,
 					["xpPercentage"] = 0,
 					["isRxp"] = true,
-					["lastSeen"] = 891170.488,
-					["xpPercentage"] = 0,
-					["level"] = 80,
 					["timePlayed"] = 0,
 					["level"] = 80,
 				},
@@ -996,6 +991,7 @@ RXPCComms = {
 				["Jynxess"] = {
 					["timePlayed"] = 0.01399999996647239,
 					["class"] = "ROGUE",
+					["xp"] = 32100,
 				},
 				["Nonameaac"] = {
 					["timePlayed"] = 344.1700000003912,
@@ -1302,7 +1298,7 @@ RXPCSettings = {
 			["activeItemsScale"] = 1.2,
 			["hideMiniMapPins"] = true,
 			["checkVersions"] = false,
-			["enableTargetMacro"] = false,
+			["enableTargetAutomation"] = false,
 			["lockFrames"] = false,
 			["arrowText"] = 10,
 			["frameHeight"] = 125.0000457763672,
