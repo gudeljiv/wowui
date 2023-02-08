@@ -289,8 +289,10 @@ PlaterDB = {
 		[23829] = {
 			["source"] = "Zormat",
 			["type"] = "BUFF",
+			["source"] = "Wolf",
+			["encounterID"] = 1114,
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 416,
+			["npcID"] = 29358,
 		},
 		[60430] = {
 			["encounterName"] = "Sartharion",
@@ -15360,9 +15362,13 @@ PlaterDB = {
 					"Gurubashi Blood Drinker", -- [1]
 					"Zul'Gurub", -- [2]
 				},
-				[24777] = {
-					"Sunblade Sentinel", -- [1]
+				[24745] = {
+					"Pure Energy", -- [1]
 					"Magister's Terrace", -- [2]
+				},
+				[26824] = {
+					"Drakkari Raptor Mount", -- [1]
+					"Drak'Tharon Keep", -- [2]
 				},
 				[22890] = {
 					"First Fragment Guardian", -- [1]
@@ -16288,17 +16294,17 @@ PlaterDB = {
 					"Durnholde Tracking Hound", -- [1]
 					"The Escape From Durnholde", -- [2]
 				},
-				[26824] = {
-					"Drakkari Raptor Mount", -- [1]
-					"Drak'Tharon Keep", -- [2]
+				[24777] = {
+					"Sunblade Sentinel", -- [1]
+					"Magister's Terrace", -- [2]
 				},
 				[24745] = {
 					"Pure Energy", -- [1]
 					"Magister's Terrace", -- [2]
 				},
-				[18636] = {
-					"Cabal Assassin", -- [1]
-					"Auchindoun: Shadow Labyrinth", -- [2]
+				[30918] = {
+					"Azure Binder", -- [1]
+					"Violet Hold", -- [2]
 				},
 				[26728] = {
 					"Mage Hunter Initiate", -- [1]
@@ -17172,7 +17178,7 @@ PlaterDB = {
 				["y"] = 15.5,
 				["side"] = 7,
 			},
-			["cast_statusbar_texture"] = "Melli",
+			["aura_alpha"] = 1,
 			["auto_toggle_friendly"] = {
 				["cities"] = false,
 				["world"] = false,
@@ -26649,7 +26655,7 @@ PlaterDB = {
 			["castbar_target_anchor"] = {
 				["side"] = 11,
 			},
-			["aura_alpha"] = 1,
+			["cast_statusbar_texture"] = "Melli",
 			["extra_icon_height"] = 28,
 			["auto_toggle_stacking"] = {
 				["party"] = false,

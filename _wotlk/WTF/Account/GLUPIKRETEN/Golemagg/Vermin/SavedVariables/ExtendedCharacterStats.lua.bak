@@ -224,6 +224,23 @@ ExtendedCharacterStats = {
 					["textColor"] = "85bb5c",
 				},
 			},
+			["refName"] = "SpellHeader",
+			["hasteRating"] = {
+				["text"] = "Haste Rating",
+				["statColor"] = "ffd740",
+				["display"] = true,
+				["isTbcOnly"] = true,
+				["refName"] = "SpellHasteRating",
+				["textColor"] = "c8a600",
+			},
+			["hasteBonus"] = {
+				["text"] = "Haste Bonus",
+				["statColor"] = "ffd740",
+				["display"] = true,
+				["isTbcOnly"] = true,
+				["refName"] = "SpellHasteBonus",
+				["textColor"] = "c8a600",
+			},
 			["display"] = true,
 			["text"] = "Spell",
 			["crit"] = {

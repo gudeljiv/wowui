@@ -830,9 +830,9 @@ CB_PlayedTime = {
 		["total"] = 437,
 	},
 	["Miqa-Golemagg"] = {
-		["total"] = 21221,
-		["timeAtThisLevel"] = 16173,
-		["timeStamp"] = 231374.328,
+		["total"] = 21374,
+		["timeAtThisLevel"] = 16326,
+		["timeStamp"] = 234557.993,
 	},
 	["Battlearm-Jin'do"] = {
 		["total"] = 489,
@@ -896,5 +896,8 @@ CB_PlayedTime = {
 		["total"] = 645477,
 		["timeAtThisLevel"] = 315802,
 		["timeStamp"] = 608285.635,
+	},
+	["Mxyzptlk-"] = {
+		["total"] = 8794,
 	},
 }

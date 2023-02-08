@@ -5444,8 +5444,6 @@ TradeSkillMasterDB = {
 	["f@Horde - Stonespine@auctioningOptions@whitelist"] = {
 	},
 	["c@Battlearm - Golemagg@auctionUIContext@shoppingGroupTree"] = {
-		["collapsed"] = {
-		},
 		["unselected"] = {
 			["Materials`Vellums"] = true,
 			["BOE Items`Armor`Purple"] = true,
@@ -5496,6 +5494,8 @@ TradeSkillMasterDB = {
 			["Materials`Cloth"] = true,
 			["Materials`Enchanting`Shards"] = true,
 		},
+		["collapsed"] = {
+		},
 	},
 	["s@Augustin - Horde - Golemagg@internalData@bagQuantity"] = {
 		["i:6948"] = 1,
@@ -5531,45 +5531,39 @@ TradeSkillMasterDB = {
 		["i:34995"] = 1,
 		["i:40483"] = 1,
 		["i:39322"] = 1,
-		["i:43108"] = 18,
-		["i:39354"] = 20,
+		["i:35176"] = 1,
 		["i:25978"] = 1,
 		["i:34996"] = 1,
-		["i:34656"] = 1,
-		["i:37260"] = 1,
-		["i:33919"] = 1,
 		["i:38663"] = 1,
-		["i:34651"] = 1,
-		["i:41592"] = 1,
-		["i:40441"] = 1,
+		["i:33919"] = 1,
 		["i:34650"] = 1,
 		["i:39270"] = 1,
 		["i:35161"] = 1,
-		["i:38665"] = 1,
+		["i:34656"] = 1,
 		["i:38675"] = 1,
-		["i:10648"] = 15,
+		["i:38707"] = 1,
 		["i:38674"] = 1,
-		["i:34652"] = 1,
-		["i:38667"] = 1,
+		["i:34655"] = 1,
+		["i:41592"] = 1,
 		["i:38661"] = 1,
 		["i:35135"] = 1,
-		["i:39501"] = 20,
+		["i:34651"] = 1,
 		["i:35146"] = 1,
-		["i:43107"] = 5,
-		["i:37101"] = 17,
+		["i:40441"] = 1,
+		["i:38668"] = 1,
 		["i:38666"] = 1,
-		["i:34648"] = 1,
+		["i:34652"] = 1,
 		["i:40556"] = 1,
 		["i:35131"] = 1,
 		["i:37865"] = 1,
-		["i:39502"] = 2,
-		["i:38668"] = 1,
-		["i:38707"] = 1,
+		["i:38667"] = 1,
+		["i:34648"] = 1,
+		["i:40684"] = 1,
+		["i:38665"] = 1,
 		["i:40443"] = 1,
-		["i:34655"] = 1,
 		["i:41589"] = 1,
 		["i:40442"] = 1,
-		["i:35176"] = 1,
+		["i:37260"] = 1,
 		["i:25937"] = 1,
 	},
 	["r@Hydraxian Waterlords@internalData@saveTimeCancels"] = "",
@@ -22547,7 +22541,7 @@ TradeSkillMasterDB = {
 				},
 				["maxPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(3.5*avg(crafting,dbmarket,dbregionmarketavg),24*vendorsell))",
 				["ignoreLowDuration"] = 0,
-				["stackSize"] = "1",
+				["stackSize"] = "2",
 				["ignoreFactionrealm"] = {
 				},
 				["undercut"] = "1c",
@@ -22561,6 +22555,11 @@ TradeSkillMasterDB = {
 				["cancelUndercut"] = true,
 				["ignorePlayer"] = {
 				},
+				["cancelRepostThreshold"] = "1g",
+				["aboveMax"] = "maxPrice",
+				["minPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(0.25*avg(crafting,dbmarket,dbregionmarketavg),1.5*vendorsell))",
+				["duration"] = 3,
+				["blacklist"] = "",
 			},
 			["200x1 (48h)"] = {
 				["cancelRepost"] = true,
@@ -22597,9 +22596,8 @@ TradeSkillMasterDB = {
 				["keepQuantity"] = "0",
 				["postCap"] = "100",
 				["bidPercent"] = 1,
-				["relationships"] = {
-				},
-				["maxPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(3.5*avg(crafting,dbmarket,dbregionmarketavg),24*vendorsell))",
+				["stackSizeIsCap"] = false,
+				["maxPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(5*avg(crafting,dbmarket,dbregionmarketavg),30*vendorsell))",
 				["ignoreLowDuration"] = 0,
 				["stackSize"] = "2",
 				["ignoreFactionrealm"] = {
@@ -22646,7 +22644,7 @@ TradeSkillMasterDB = {
 			["#Default"] = {
 				["aboveMax"] = "normalPrice",
 				["normalPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(2*avg(crafting,dbmarket,dbregionmarketavg),12*vendorsell))",
-				["cancelUndercut"] = true,
+				["duration"] = 3,
 				["matchStackSize"] = false,
 				["keepQuantity"] = "0",
 				["postCap"] = "5",
@@ -24314,13 +24312,13 @@ TradeSkillMasterDB = {
 			["ilvl"] = 32,
 			["pct"] = 40,
 			["seller"] = 88,
-			["stack"] = 40,
-			["bidPct"] = 40,
-			["itemBuyout"] = 115,
-			["item"] = 226,
-			["itemBid"] = 115,
-			["bid"] = 115,
 			["posts"] = 40,
+			["bidPct"] = 40,
+			["itemBid"] = 115,
+			["item"] = 226,
+			["itemBuyout"] = 115,
+			["bid"] = 115,
+			["stack"] = 40,
 			["timeLeft"] = 26,
 			["buyout"] = 115,
 		},
@@ -24394,7 +24392,7 @@ TradeSkillMasterDB = {
 		},
 	},
 	["r@Hydraxian Waterlords@internalData@saveTimeSales"] = "",
-	["s@Miqa - Horde - Golemagg@internalData@goldLog"] = "minute,copper\n27805600,0\n27806029,200000\n27826132,60000\n27826133,0\n27826134,2000000\n27826135,1920000\n27826136,1790000\n27826137,1700000\n27827103,5740000\n27827650,6070000\n27827651,5990000\n27828501,6380000\n27829120,6320000\n27829121,6270000\n27830142,7490000\n27830143,7450000\n27830144,7330000\n27831509,8340000\n27831510,8300000\n27831512,6340000\n27831513,6320000\n27832835,6750000\n27834389,6800000\n27837203,6750000\n27837204,6740000\n27837482,7400000\n27837484,7360000\n27837485,7270000\n27837594,9180000\n27838620,9360000\n27840112,9410000\n27840113,9390000\n27841733,9400000\n27842946,9520000\n27842947,9360000\n27844469,9990000\n27844470,9960000\n27845851,9870000\n27845853,9490000\n27845854,9240000\n27847180,9230000\n27849018,9520000\n27849019,9500000\n27850567,11990000\n27853246,11870000\n27860361,11830000\n27867652,12080000\n27867654,11730000\n27867655,11590000\n27867656,11570000\n27869407,14730000\n27870238,14770000\n27870871,14650000\n27870872,14530000\n27870873,12430000\n27870874,12440000\n27873178,14580000\n27873553,14630000\n27873554,14500000\n27873555,14460000\n27874784,15250000\n27874785,14250000\n27874902,13950000\n27874905,13790000\n27877736,14350000\n27889072,14200000\n27889073,14070000\n27889074,4070000\n27889532,5160000\n27889533,5150000\n27889534,5030000\n27889535,50000\n27889536,40000\n27889537,30000\n27890473,1420000\n27890890,2190000\n27890891,1990000\n27890895,1670000\n27891862,4380000\n27892065,4370000\n27893365,4830000\n27893366,4790000\n27893773,6620000\n27893774,6630000\n27894910,9850000\n27894911,9740000\n27895209,10550000\n27895434,10760000\n27896347,10770000\n27896689,12760000\n27899572,12790000\n27900910,12820000\n27907880,12790000\n27909218,13050000\n27909219,12990000\n27909221,13010000\n27909558,14150000\n27909560,6890000\n27909572,6860000\n27909573,6720000\n27909574,6700000\n27909575,1450000\n27909581,1380000\n27909595,1370000\n27909596,1230000\n27909597,1010000\n27909598,910000\n27909599,650000\n27909603,400000\n27909604,390000\n27909679,0\n27909680,4000000\n27910585,7000000\n27910586,9000000\n27912267,10000000\n27915275,11000000\n27916728,13000000",
+	["s@Miqa - Horde - Golemagg@internalData@goldLog"] = "minute,copper\n27805600,0\n27806029,200000\n27826132,60000\n27826133,0\n27826134,2000000\n27826135,1920000\n27826136,1790000\n27826137,1700000\n27827103,5740000\n27827650,6070000\n27827651,5990000\n27828501,6380000\n27829120,6320000\n27829121,6270000\n27830142,7490000\n27830143,7450000\n27830144,7330000\n27831509,8340000\n27831510,8300000\n27831512,6340000\n27831513,6320000\n27832835,6750000\n27834389,6800000\n27837203,6750000\n27837204,6740000\n27837482,7400000\n27837484,7360000\n27837485,7270000\n27837594,9180000\n27838620,9360000\n27840112,9410000\n27840113,9390000\n27841733,9400000\n27842946,9520000\n27842947,9360000\n27844469,9990000\n27844470,9960000\n27845851,9870000\n27845853,9490000\n27845854,9240000\n27847180,9230000\n27849018,9520000\n27849019,9500000\n27850567,11990000\n27853246,11870000\n27860361,11830000\n27867652,12080000\n27867654,11730000\n27867655,11590000\n27867656,11570000\n27869407,14730000\n27870238,14770000\n27870871,14650000\n27870872,14530000\n27870873,12430000\n27870874,12440000\n27873178,14580000\n27873553,14630000\n27873554,14500000\n27873555,14460000\n27874784,15250000\n27874785,14250000\n27874902,13950000\n27874905,13790000\n27877736,14350000\n27889072,14200000\n27889073,14070000\n27889074,4070000\n27889532,5160000\n27889533,5150000\n27889534,5030000\n27889535,50000\n27889536,40000\n27889537,30000\n27890473,1420000\n27890890,2190000\n27890891,1990000\n27890895,1670000\n27891862,4380000\n27892065,4370000\n27893365,4830000\n27893366,4790000\n27893773,6620000\n27893774,6630000\n27894910,9850000\n27894911,9740000\n27895209,10550000\n27895434,10760000\n27896347,10770000\n27896689,12760000\n27899572,12790000\n27900910,12820000\n27907880,12790000\n27909218,13050000\n27909219,12990000\n27909221,13010000\n27909558,14150000\n27909560,6890000\n27909572,6860000\n27909573,6720000\n27909574,6700000\n27909575,1450000\n27909581,1380000\n27909595,1370000\n27909596,1230000\n27909597,1010000\n27909598,910000\n27909599,650000\n27909603,400000\n27909604,390000\n27909679,0\n27909680,4000000\n27910585,7000000\n27910586,9000000\n27912267,10000000\n27915275,11000000\n27916728,13000000\n27929999,14000000",
 	["c@Pitchwise - Ashbringer@internalData@auctionPrices"] = {
 	},
 	["c@Battlearm - Gehennas@internalData@auctionPrices"] = {
@@ -24704,8 +24702,6 @@ TradeSkillMasterDB = {
 		},
 		["i:23781"] = {
 		},
-		["i:2901"] = {
-		},
 		["i:12361"] = {
 		},
 		["i:39151"] = {
@@ -24802,13 +24798,13 @@ TradeSkillMasterDB = {
 		},
 		["i:11130"] = {
 		},
-		["i:36926"] = {
+		["i:11130"] = {
 		},
 		["i:3371"] = {
 		},
 		["i:17020"] = {
 		},
-		["i:7076"] = {
+		["i:18631"] = {
 		},
 		["i:6530"] = {
 		},
@@ -24820,13 +24816,15 @@ TradeSkillMasterDB = {
 		},
 		["i:18232"] = {
 		},
-		["i:24243"] = {
+		["i:18232"] = {
 		},
 		["i:10543"] = {
 		},
 		["i:36784"] = {
 		},
-		["i:27860"] = {
+		["i:23448"] = {
+		},
+		["i:4289"] = {
 		},
 		["i:22578"] = {
 		},
@@ -24838,8 +24836,6 @@ TradeSkillMasterDB = {
 		},
 		["i:24479"] = {
 		},
-		["i:10286"] = {
-		},
 		["i:6037"] = {
 		},
 		["i:1475"] = {
@@ -24848,21 +24844,21 @@ TradeSkillMasterDB = {
 		},
 		["i:2776"] = {
 		},
-		["i:21752"] = {
+		["i:23427"] = {
 		},
 		["i:16202"] = {
 		},
 		["i:2592"] = {
 		},
-		["i:10505"] = {
+		["i:21752"] = {
 		},
 		["i:4364"] = {
 		},
 		["i:43118"] = {
 		},
-		["i:41334"] = {
+		["i:43115"] = {
 		},
-		["i:36932"] = {
+		["i:41334"] = {
 		},
 		["i:7910"] = {
 		},
@@ -24870,7 +24866,7 @@ TradeSkillMasterDB = {
 		},
 		["i:43109"] = {
 		},
-		["i:23426"] = {
+		["i:36932"] = {
 		},
 		["i:23107"] = {
 		},
@@ -24884,11 +24880,11 @@ TradeSkillMasterDB = {
 		},
 		["i:3864"] = {
 		},
-		["i:36783"] = {
+		["i:4231"] = {
 		},
 		["i:6339"] = {
 		},
-		["i:6470"] = {
+		["i:36783"] = {
 		},
 		["i:4407"] = {
 		},
@@ -24900,11 +24896,11 @@ TradeSkillMasterDB = {
 		},
 		["i:43123"] = {
 		},
+		["i:23107"] = {
+		},
 		["i:2321"] = {
 		},
 		["i:2320"] = {
-		},
-		["i:14047"] = {
 		},
 		["i:36921"] = {
 		},
@@ -24914,17 +24910,17 @@ TradeSkillMasterDB = {
 		},
 		["i:43146"] = {
 		},
-		["i:39501"] = {
+		["i:818"] = {
 		},
 		["i:39690"] = {
 		},
 		["i:37702"] = {
 		},
-		["i:43122"] = {
+		["i:12804"] = {
 		},
 		["i:22462"] = {
 		},
-		["i:4371"] = {
+		["i:43122"] = {
 		},
 		["i:5637"] = {
 		},
@@ -24944,9 +24940,11 @@ TradeSkillMasterDB = {
 		},
 		["i:39684"] = {
 		},
-		["i:38425"] = {
+		["i:37702"] = {
 		},
 		["i:10558"] = {
+		},
+		["i:10939"] = {
 		},
 		["i:12365"] = {
 		},
@@ -24954,13 +24952,11 @@ TradeSkillMasterDB = {
 		},
 		["i:4304"] = {
 		},
-		["i:35625"] = {
-		},
 		["i:6338"] = {
 		},
-		["i:22449"] = {
+		["i:35625"] = {
 		},
-		["i:35622"] = {
+		["i:22449"] = {
 		},
 		["i:30817"] = {
 		},
@@ -24974,9 +24970,9 @@ TradeSkillMasterDB = {
 		},
 		["i:2672"] = {
 		},
-		["i:22446"] = {
+		["i:35622"] = {
 		},
-		["i:5500"] = {
+		["i:23572"] = {
 		},
 		["i:3577"] = {
 		},
@@ -24991,6 +24987,8 @@ TradeSkillMasterDB = {
 		["i:12803"] = {
 		},
 		["i:13926"] = {
+		},
+		["i:2457"] = {
 		},
 		["i:4368"] = {
 		},
@@ -25024,6 +25022,8 @@ TradeSkillMasterDB = {
 		},
 		["i:7069"] = {
 		},
+		["i:13926"] = {
+		},
 		["i:783"] = {
 		},
 		["i:22792"] = {
@@ -25044,13 +25044,15 @@ TradeSkillMasterDB = {
 		},
 		["i:2772"] = {
 		},
+		["i:12803"] = {
+		},
 		["i:43108"] = {
 		},
 		["i:43107"] = {
 		},
-		["i:23572"] = {
-		},
 		["i:20816"] = {
+		},
+		["i:22446"] = {
 		},
 		["i:4338"] = {
 		},
@@ -25062,31 +25064,31 @@ TradeSkillMasterDB = {
 		},
 		["i:43102"] = {
 		},
-		["i:10939"] = {
-		},
 		["i:34057"] = {
 		},
 		["i:10978"] = {
 		},
-		["i:35624"] = {
+		["i:38425"] = {
 		},
-		["i:39341"] = {
+		["i:35624"] = {
 		},
 		["i:35623"] = {
 		},
-		["i:818"] = {
+		["i:39341"] = {
 		},
 		["i:20963"] = {
 		},
 		["i:8831"] = {
 		},
+		["i:5637"] = {
+		},
 		["i:12359"] = {
 		},
 		["i:22452"] = {
 		},
-		["i:10938"] = {
-		},
 		["i:4385"] = {
+		},
+		["i:10938"] = {
 		},
 		["i:41745"] = {
 		},
@@ -25098,17 +25100,17 @@ TradeSkillMasterDB = {
 		},
 		["i:2678"] = {
 		},
-		["i:43115"] = {
-		},
 		["i:7075"] = {
 		},
-		["i:21929"] = {
+		["i:10505"] = {
 		},
 		["i:43124"] = {
 		},
-		["i:11084"] = {
+		["i:21929"] = {
 		},
 		["i:3576"] = {
+		},
+		["i:11084"] = {
 		},
 		["i:11371"] = {
 		},
@@ -25116,17 +25118,15 @@ TradeSkillMasterDB = {
 		},
 		["i:39354"] = {
 		},
-		["i:4289"] = {
-		},
 		["i:4389"] = {
 		},
 		["i:34055"] = {
 		},
 		["i:11177"] = {
 		},
-		["i:19726"] = {
+		["i:24243"] = {
 		},
-		["i:36933"] = {
+		["i:19726"] = {
 		},
 		["i:16203"] = {
 		},
@@ -25371,7 +25371,7 @@ TradeSkillMasterDB = {
 			["Phase 2 Investment"] = true,
 			["Materials`Vellums"] = true,
 			["Materials`Jewelcrafting"] = true,
-			["BOE Items`Armor`Blue"] = true,
+			["Materials`Enchanting`Scrolls"] = true,
 			["Materials`Ores and Bars`Solid & Heavy Stone"] = true,
 			["Materials`Cloth"] = true,
 			["Materials`Enchanting`Shards"] = true,
@@ -26987,11 +26987,11 @@ TradeSkillMasterDB = {
 		["Thick Autumn's Glowi:40015165895"] = 1674897398,
 		["Glowing Shadow Crystali:39936119955"] = 1674736680,
 		["Shadow Crystali:3692619882"] = 1673274388,
-		["Pristine Monarch Topazi:400531114292"] = 1675004851,
+		["Jadei:1529159995"] = 1674664412,
 		["Delicate Scarlet Rubyi:3999712258988"] = 1675714262,
 		["Sky Sapphirei:36924163297"] = 1675440663,
 		["Thick Sun Crystali:39916138206"] = 1675004851,
-		["Aquamarinei:79091219889"] = 1674664412,
+		["Delicate Bloodstonei:39905115043"] = 1674814502,
 		["Fierce Monarch Topazi:400411167636"] = 1674814473,
 		["Perfect Jagged Dark Jadei:41468124763"] = 1674826280,
 		["Aquamarinei:79091229944"] = 1673707870,
@@ -27001,10 +27001,10 @@ TradeSkillMasterDB = {
 		["Twilight Opali:36927165067"] = 1675440663,
 		["Dark Jadei:3693215004"] = 1674761651,
 		["Delicate Scarlet Rubyi:3999711897268"] = 1675714453,
-		["Delicate Bloodstonei:39905115043"] = 1674814502,
+		["Aquamarinei:79091219889"] = 1674664412,
 		["Frostweave Clothi:3347024492"] = 1674207702,
 		["Autumn's Glowi:36921164996"] = 1673286229,
-		["Jadei:1529159995"] = 1674664412,
+		["Pristine Monarch Topazi:400531114292"] = 1675004851,
 		["Delicate Bloodstonei:39905115039"] = 1674915844,
 		["Jadei:15291129996"] = 1673950329,
 		["Jagged Forest Emeraldi:400861192972"] = 1674736680,
@@ -27620,7 +27620,7 @@ TradeSkillMasterDB = {
 		["unselected"] = {
 		},
 	},
-	["s@Miqa - Horde - Golemagg@internalData@goldLogLastUpdate"] = 1675714619,
+	["s@Miqa - Horde - Golemagg@internalData@goldLogLastUpdate"] = 1675799995,
 	["s@Miqa - Horde - Golemagg@internalData@bankQuantity"] = {
 		["i:11288"] = 1,
 		["i:44128"] = 5,
@@ -29300,7 +29300,7 @@ TradeSkillMasterDB = {
 		["unselected"] = {
 		},
 	},
-	["c@Pitchwise - Ashbringer@bankingUIContext@warehousingGroupTree"] = {
+	["c@Mxyzptlk - Golemagg@vendoringUIContext@groupTree"] = {
 		["collapsed"] = {
 		},
 		["unselected"] = {
@@ -29483,13 +29483,13 @@ TradeSkillMasterDB = {
 			["ilvl"] = 32,
 			["pct"] = 40,
 			["seller"] = 86,
-			["stack"] = 40,
-			["bidPct"] = 40,
-			["itemBuyout"] = 115,
-			["item"] = 273,
-			["itemBid"] = 115,
-			["bid"] = 115,
 			["posts"] = 40,
+			["bidPct"] = 40,
+			["itemBid"] = 115,
+			["item"] = 273,
+			["itemBuyout"] = 115,
+			["bid"] = 115,
+			["stack"] = 40,
 			["icon"] = 24,
 			["buyout"] = 115,
 		},
@@ -29613,6 +29613,8 @@ TradeSkillMasterDB = {
 		},
 	},
 	["s@Moolatz - Horde - Golemagg@internalData@auctionQuantity"] = {
+	},
+	["s@Pitchwise - Horde - Ashbringer@internalData@bankQuantity"] = {
 	},
 	["c@Testxv - Golemagg@bankingUIContext@warehousingGroupTree"] = {
 		["collapsed"] = {
@@ -31575,92 +31577,63 @@ TradeSkillMasterDB = {
 				["i:4364"] = 1,
 				["i:6530"] = 1,
 			},
-			["itemString"] = "i:6533",
-			["profession"] = "Engineering",
-			["numResult"] = 3,
-			["name"] = "Aquadynamic Fish Attractor",
+			["itemString"] = "i:38809",
+			["profession"] = "Enchanting",
 			["players"] = {
 				["Vermin"] = true,
 			},
 		},
 		["c:15540944"] = {
 			["mats"] = {
-				["i:43124"] = 1,
-				["i:39502"] = 1,
+				["i:43126"] = 1,
+				["i:39502"] = 2,
 			},
-			["itemString"] = "i:42401",
+			["itemString"] = "i:43466",
 			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Glyph of Holy Nova",
-			["numResult"] = 1,
+			["name"] = "Scroll of Strength VIII",
+			["numResult"] = 2,
 		},
-		["c:12952475"] = {
+		["c:2762114"] = {
 			["mats"] = {
-				["i:23782"] = 1,
-				["i:23445"] = 5,
-				["i:23783"] = 2,
+				["i:3864"] = 1,
+				["i:7067"] = 4,
+				["i:3860"] = 8,
 			},
-			["itemString"] = "i:23774",
+			["itemString"] = "i:10542",
 			["profession"] = "Engineering",
 			["numResult"] = 1,
-			["name"] = "Fel Iron Toolbox",
-			["players"] = {
-				["Vermin"] = true,
-			},
-		},
-		["c:8435749"] = {
-			["mats"] = {
-				["i:23782"] = 3,
-				["i:4400"] = 1,
-				["i:23783"] = 6,
-			},
-			["itemString"] = "i:23742",
-			["profession"] = "Engineering",
-			["numResult"] = 1,
-			["name"] = "Fel Iron Musket",
+			["name"] = "Goblin Mining Helmet",
 			["players"] = {
 				["Vermin"] = true,
 			},
 		},
 		["c:7269057"] = {
 			["mats"] = {
-				["i:43145"] = 1,
 				["i:34054"] = 6,
+				["i:43145"] = 1,
 			},
 			["itemString"] = "i:44456",
 			["profession"] = "Enchanting",
-			["numResult"] = 1,
-			["name"] = "Scroll of Enchant Cloak - Speed",
 			["players"] = {
 				["Vermin"] = true,
 			},
-		},
-		["c:12748374"] = {
-			["mats"] = {
-				["i:43116"] = 1,
-				["i:10648"] = 1,
-			},
-			["itemString"] = "i:42964",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Glyph of Garrote",
+			["name"] = "Scroll of Enchant Cloak - Speed",
 			["numResult"] = 1,
 		},
-		["c:6336182"] = {
+		["c:14610600"] = {
 			["mats"] = {
-				["i:10648"] = 1,
-				["i:43118"] = 1,
+				["i:43120"] = 1,
+				["i:39501"] = 1,
 			},
-			["itemString"] = "i:41100",
+			["itemString"] = "i:43414",
 			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Glyph of Righteous Defense",
+			["name"] = "Glyph of Cleaving",
 			["numResult"] = 1,
 		},
 		["c:4873970"] = {
@@ -31676,20 +31649,6 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Vermin"] = true,
 			},
-		},
-		["c:8244173"] = {
-			["mats"] = {
-				["i:10648"] = 10,
-				["i:43117"] = 5,
-				["i:43116"] = 2,
-			},
-			["itemString"] = "i:43654",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Tome of the Dawn",
-			["numResult"] = 1,
 		},
 		["c:7684809"] = {
 			["mats"] = {
@@ -34631,31 +34590,6 @@ TradeSkillMasterDB = {
 			["name"] = "Khorium Power Core",
 			["numResult"] = 1,
 		},
-		["c:8181600"] = {
-			["mats"] = {
-				["i:43126"] = 1,
-				["i:39502"] = 2,
-			},
-			["itemString"] = "i:43466",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Scroll of Strength VIII",
-			["numResult"] = 2,
-		},
-		["c:14024066"] = {
-			["mats"] = {
-				["i:36933"] = 1,
-			},
-			["itemString"] = "i:40085",
-			["profession"] = "Jewelcrafting",
-			["numResult"] = 1,
-			["name"] = "Timeless Forest Emerald",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-		},
 		["c:10868619"] = {
 			["mats"] = {
 				["i:41266"] = 1,
@@ -34712,6 +34646,60 @@ TradeSkillMasterDB = {
 			["name"] = "Bloodvine Goggles",
 			["numResult"] = 1,
 		},
+		["c:12991679"] = {
+			["mats"] = {
+				["i:43120"] = 1,
+				["i:39501"] = 1,
+			},
+			["itemString"] = "i:42904",
+			["profession"] = "Inscription",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Glyph of Disengage",
+			["numResult"] = 1,
+		},
+		["c:16689599"] = {
+			["mats"] = {
+				["i:2321"] = 1,
+				["i:2319"] = 4,
+				["i:4233"] = 1,
+			},
+			["itemString"] = "i:4251",
+			["profession"] = "Leatherworking",
+			["players"] = {
+				["Vermina"] = true,
+			},
+			["name"] = "Hillman's Shoulders",
+			["numResult"] = 1,
+		},
+		["c:14024066"] = {
+			["mats"] = {
+				["i:36933"] = 1,
+			},
+			["itemString"] = "i:40085",
+			["profession"] = "Jewelcrafting",
+			["numResult"] = 1,
+			["name"] = "Timeless Forest Emerald",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+		},
+		["c:577395"] = {
+			["mats"] = {
+				["i:23781"] = 6,
+				["i:17020"] = 3,
+				["i:23783"] = 2,
+				["i:23782"] = 3,
+			},
+			["itemString"] = "i:23826",
+			["profession"] = "Engineering",
+			["numResult"] = 3,
+			["name"] = "The Bigger One",
+			["players"] = {
+				["Vermin"] = true,
+			},
+		},
 		["c:3733703"] = {
 			["mats"] = {
 				["i:34052"] = 2,
@@ -34741,48 +34729,6 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:16689599"] = {
-			["mats"] = {
-				["i:2321"] = 1,
-				["i:2319"] = 4,
-				["i:4233"] = 1,
-			},
-			["itemString"] = "i:4251",
-			["profession"] = "Leatherworking",
-			["players"] = {
-				["Vermina"] = true,
-			},
-			["name"] = "Hillman's Shoulders",
-			["numResult"] = 1,
-		},
-		["c:3208473"] = {
-			["mats"] = {
-				["i:43124"] = 1,
-				["i:39501"] = 1,
-			},
-			["itemString"] = "i:41105",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Glyph of Flash of Light",
-			["numResult"] = 1,
-		},
-		["c:577395"] = {
-			["mats"] = {
-				["i:23781"] = 6,
-				["i:17020"] = 3,
-				["i:23783"] = 2,
-				["i:23782"] = 3,
-			},
-			["itemString"] = "i:23826",
-			["profession"] = "Engineering",
-			["numResult"] = 3,
-			["name"] = "The Bigger One",
-			["players"] = {
-				["Vermin"] = true,
-			},
-		},
 		["c:11657969"] = {
 			["mats"] = {
 				["i:11130"] = 1,
@@ -34795,35 +34741,6 @@ TradeSkillMasterDB = {
 			["profession"] = "Enchanting",
 			["numResult"] = 1,
 			["name"] = "Runed Truesilver Rod",
-			["players"] = {
-				["Vermin"] = true,
-			},
-		},
-		["c:8136844"] = {
-			["mats"] = {
-				["i:22445"] = 3,
-				["i:22791"] = 1,
-				["i:18256"] = 1,
-			},
-			["itemString"] = "i:22521",
-			["profession"] = "Enchanting",
-			["numResult"] = 1,
-			["name"] = "Superior Mana Oil",
-			["players"] = {
-				["Vermin"] = true,
-			},
-		},
-		["c:3202419"] = {
-			["mats"] = {
-				["i:4359"] = 1,
-				["i:2840"] = 1,
-				["i:2589"] = 1,
-				["i:4357"] = 2,
-			},
-			["itemString"] = "i:4360",
-			["profession"] = "Engineering",
-			["numResult"] = 2,
-			["name"] = "Rough Copper Bomb",
 			["players"] = {
 				["Vermin"] = true,
 			},
@@ -34885,18 +34802,19 @@ TradeSkillMasterDB = {
 			["name"] = "Armor Plated Combat Shotgun",
 			["numResult"] = 1,
 		},
-		["c:14610600"] = {
+		["c:8136844"] = {
 			["mats"] = {
-				["i:43120"] = 1,
-				["i:39501"] = 1,
+				["i:22445"] = 3,
+				["i:22791"] = 1,
+				["i:18256"] = 1,
 			},
-			["itemString"] = "i:43414",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Glyph of Cleaving",
+			["itemString"] = "i:22521",
+			["profession"] = "Enchanting",
 			["numResult"] = 1,
+			["name"] = "Superior Mana Oil",
+			["players"] = {
+				["Vermin"] = true,
+			},
 		},
 		["c:6991898"] = {
 			["mats"] = {
@@ -34922,18 +34840,19 @@ TradeSkillMasterDB = {
 			["name"] = "Energized Dark Jade",
 			["numResult"] = 1,
 		},
-		["c:5746180"] = {
+		["c:10555650"] = {
 			["mats"] = {
-				["i:43122"] = 1,
-				["i:39501"] = 2,
+				["i:8831"] = 3,
+				["i:14344"] = 2,
+				["i:18256"] = 1,
 			},
-			["itemString"] = "i:27498",
-			["profession"] = "Inscription",
+			["itemString"] = "i:20748",
+			["profession"] = "Enchanting",
+			["numResult"] = 1,
+			["name"] = "Brilliant Mana Oil",
 			["players"] = {
-				["Battlearm"] = true,
+				["Vermin"] = true,
 			},
-			["name"] = "Scroll of Agility V",
-			["numResult"] = 2,
 		},
 		["c:7992342"] = {
 			["mats"] = {
@@ -34961,6 +34880,21 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
+		["c:3202419"] = {
+			["mats"] = {
+				["i:4359"] = 1,
+				["i:2840"] = 1,
+				["i:2589"] = 1,
+				["i:4357"] = 2,
+			},
+			["itemString"] = "i:4360",
+			["profession"] = "Engineering",
+			["numResult"] = 2,
+			["name"] = "Rough Copper Bomb",
+			["players"] = {
+				["Vermin"] = true,
+			},
+		},
 		["c:10567334"] = {
 			["mats"] = {
 				["i:43145"] = 1,
@@ -34973,19 +34907,6 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 			["name"] = "Scroll of Enchant Chest - Powerful Stats",
-			["numResult"] = 1,
-		},
-		["c:9629580"] = {
-			["mats"] = {
-				["i:43124"] = 1,
-				["i:39502"] = 1,
-			},
-			["itemString"] = "i:50045",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Glyph of Eternal Water",
 			["numResult"] = 1,
 		},
 		["c:10937796"] = {
@@ -35055,34 +34976,31 @@ TradeSkillMasterDB = {
 			["name"] = "Glyph of Dispel Magic",
 			["numResult"] = 1,
 		},
-		["c:5664486"] = {
+		["c:2722115"] = {
 			["mats"] = {
-				["i:11178"] = 1,
-				["i:38682"] = 1,
-				["i:11176"] = 3,
-				["i:11175"] = 2,
+				["i:43120"] = 1,
+				["i:10648"] = 1,
 			},
-			["itemString"] = "i:38847",
-			["profession"] = "Enchanting",
-			["numResult"] = 1,
-			["name"] = "Scroll of Enchant Chest - Stats",
+			["itemString"] = "i:40902",
+			["profession"] = "Inscription",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
+			["name"] = "Glyph of Rip",
+			["numResult"] = 1,
 		},
-		["c:2762114"] = {
+		["c:9629580"] = {
 			["mats"] = {
-				["i:3864"] = 1,
-				["i:7067"] = 4,
-				["i:3860"] = 8,
+				["i:43124"] = 1,
+				["i:39502"] = 1,
 			},
-			["itemString"] = "i:10542",
-			["profession"] = "Engineering",
-			["numResult"] = 1,
-			["name"] = "Goblin Mining Helmet",
+			["itemString"] = "i:50045",
+			["profession"] = "Inscription",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
+			["name"] = "Glyph of Eternal Water",
+			["numResult"] = 1,
 		},
 		["c:6279930"] = {
 			["mats"] = {
@@ -35123,17 +35041,19 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:2195230"] = {
+		["c:15945331"] = {
 			["mats"] = {
-				["i:4306"] = 1,
+				["i:24479"] = 3,
+				["i:31079"] = 4,
+				["i:23449"] = 12,
+				["i:24478"] = 20,
 			},
-			["itemString"] = "i:6450",
-			["profession"] = "First Aid",
+			["itemString"] = "i:32776",
+			["profession"] = "Jewelcrafting",
 			["players"] = {
 				["Battlearm"] = true,
-				["Vermin"] = true,
 			},
-			["name"] = "Silk Bandage",
+			["name"] = "Crown of the Sea Witch",
 			["numResult"] = 1,
 		},
 		["c:3498434"] = {
@@ -35147,6 +35067,33 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 			["name"] = "Glyph of Fear",
+			["numResult"] = 1,
+		},
+		["c:5664486"] = {
+			["mats"] = {
+				["i:11178"] = 1,
+				["i:38682"] = 1,
+				["i:11176"] = 3,
+				["i:11175"] = 2,
+			},
+			["itemString"] = "i:38847",
+			["profession"] = "Enchanting",
+			["numResult"] = 1,
+			["name"] = "Scroll of Enchant Chest - Stats",
+			["players"] = {
+				["Vermin"] = true,
+			},
+		},
+		["c:16567270"] = {
+			["mats"] = {
+				["i:2841"] = 2,
+			},
+			["itemString"] = "i:20817",
+			["profession"] = "Jewelcrafting",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Bronze Setting",
 			["numResult"] = 1,
 		},
 		["c:3553728"] = {
@@ -35270,18 +35217,18 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:1985119"] = {
+		["c:9688390"] = {
 			["mats"] = {
-				["i:34054"] = 9,
-				["i:43145"] = 1,
+				["i:37701"] = 1,
+				["i:36916"] = 4,
 			},
-			["itemString"] = "i:38959",
-			["profession"] = "Enchanting",
+			["itemString"] = "i:39682",
+			["profession"] = "Engineering",
+			["numResult"] = 1,
+			["name"] = "Overcharged Capacitor",
 			["players"] = {
 				["Vermin"] = true,
 			},
-			["name"] = "Scroll of Enchant Cloak - Superior Agility",
-			["numResult"] = 1,
 		},
 		["c:13721701"] = {
 			["mats"] = {
@@ -35343,18 +35290,6 @@ TradeSkillMasterDB = {
 		},
 		["c:11697734"] = {
 			["mats"] = {
-				["i:36918"] = 1,
-			},
-			["itemString"] = "i:39996",
-			["profession"] = "Jewelcrafting",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Bold Scarlet Ruby",
-			["numResult"] = 1,
-		},
-		["c:13697983"] = {
-			["mats"] = {
 				["i:2592"] = 2,
 			},
 			["itemString"] = "i:3531",
@@ -35364,6 +35299,19 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 			["name"] = "Heavy Wool Bandage",
+			["numResult"] = 1,
+		},
+		["c:1985119"] = {
+			["mats"] = {
+				["i:34054"] = 9,
+				["i:43145"] = 1,
+			},
+			["itemString"] = "i:38959",
+			["profession"] = "Enchanting",
+			["players"] = {
+				["Vermin"] = true,
+			},
+			["name"] = "Scroll of Enchant Cloak - Superior Agility",
 			["numResult"] = 1,
 		},
 		["c:8463449"] = {
@@ -35534,16 +35482,17 @@ TradeSkillMasterDB = {
 			["name"] = "Scroll of Enchant Weapon - Exceptional Spellpower",
 			["numResult"] = 1,
 		},
-		["c:3192922"] = {
+		["c:4993088"] = {
 			["mats"] = {
-				["i:39339"] = 2,
+				["i:43122"] = 1,
+				["i:39501"] = 1,
 			},
-			["itemString"] = "i:43118",
+			["itemString"] = "i:43546",
 			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Jadefire Ink",
+			["name"] = "Glyph of Icy Touch",
 			["numResult"] = 1,
 		},
 		["c:15903747"] = {
@@ -35768,15 +35717,15 @@ TradeSkillMasterDB = {
 		},
 		["c:5572304"] = {
 			["mats"] = {
-				["i:35622"] = 2,
-				["i:35623"] = 2,
-				["i:36913"] = 8,
-				["i:41163"] = 2,
+				["i:43145"] = 1,
+				["i:34054"] = 20,
+				["i:34052"] = 1,
+				["i:34055"] = 4,
 			},
-			["itemString"] = "i:41121",
-			["profession"] = "Engineering",
+			["itemString"] = "i:44458",
+			["profession"] = "Enchanting",
 			["numResult"] = 1,
-			["name"] = "Gnomish Lightning Generator",
+			["name"] = "Scroll of Enchant Gloves - Crusher",
 			["players"] = {
 				["Vermin"] = true,
 			},
@@ -35795,27 +35744,29 @@ TradeSkillMasterDB = {
 		},
 		["c:12691770"] = {
 			["mats"] = {
-				["i:39354"] = 1,
-				["i:37101"] = 1,
+				["i:36932"] = 1,
 			},
-			["itemString"] = "i:1181",
-			["profession"] = "Inscription",
+			["itemString"] = "i:39986",
+			["profession"] = "Jewelcrafting",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Scroll of Spirit",
+			["name"] = "Lambent Dark Jade",
 			["numResult"] = 1,
 		},
-		["c:67013"] = {
+		["c:5572304"] = {
 			["mats"] = {
-				["i:22452"] = 1,
+				["i:35622"] = 2,
+				["i:35623"] = 2,
+				["i:36913"] = 8,
+				["i:41163"] = 2,
 			},
-			["itemString"] = "i:22573",
-			["profession"] = "Mining",
-			["numResult"] = 10,
-			["name"] = "Mote of Earth",
+			["itemString"] = "i:41121",
+			["profession"] = "Engineering",
+			["numResult"] = 1,
+			["name"] = "Gnomish Lightning Generator",
 			["players"] = {
-				["Mxzq"] = true,
+				["Vermin"] = true,
 			},
 		},
 		["c:2478789"] = {
@@ -35896,30 +35847,27 @@ TradeSkillMasterDB = {
 		},
 		["c:2222485"] = {
 			["mats"] = {
-				["i:24479"] = 1,
-				["i:22578"] = 3,
-				["i:24478"] = 10,
+				["i:36929"] = 1,
 			},
-			["itemString"] = "i:32508",
+			["itemString"] = "i:39963",
 			["profession"] = "Jewelcrafting",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Necklace of the Deep",
+			["name"] = "Stark Huge Citrine",
 			["numResult"] = 1,
 		},
-		["c:1876469"] = {
+		["c:13929625"] = {
 			["mats"] = {
-				["i:2318"] = 6,
-				["i:818"] = 2,
+				["i:36920"] = 1,
 			},
-			["itemString"] = "i:4368",
-			["profession"] = "Engineering",
-			["numResult"] = 1,
-			["name"] = "Flying Tiger Goggles",
+			["itemString"] = "i:39914",
+			["profession"] = "Jewelcrafting",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
+			["name"] = "Smooth Sun Crystal",
+			["numResult"] = 1,
 		},
 		["c:13246031"] = {
 			["mats"] = {
@@ -35997,6 +35945,47 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 			["name"] = "Delicate Copper Wire",
+			["numResult"] = 1,
+		},
+		["c:2222485"] = {
+			["mats"] = {
+				["i:24479"] = 1,
+				["i:22578"] = 3,
+				["i:24478"] = 10,
+			},
+			["itemString"] = "i:32508",
+			["profession"] = "Jewelcrafting",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Necklace of the Deep",
+			["numResult"] = 1,
+		},
+		["c:1876469"] = {
+			["mats"] = {
+				["i:2318"] = 6,
+				["i:818"] = 2,
+			},
+			["itemString"] = "i:4368",
+			["profession"] = "Engineering",
+			["numResult"] = 1,
+			["name"] = "Flying Tiger Goggles",
+			["players"] = {
+				["Vermin"] = true,
+			},
+		},
+		["c:12881709"] = {
+			["mats"] = {
+				["i:36913"] = 6,
+				["i:37705"] = 3,
+				["i:37702"] = 3,
+			},
+			["itemString"] = "i:47828",
+			["profession"] = "Engineering",
+			["players"] = {
+				["Vermin"] = true,
+			},
+			["name"] = "Goblin Beam Welder",
 			["numResult"] = 1,
 		},
 		["c:15498298"] = {
@@ -36138,6 +36127,18 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
+		["c:7962159"] = {
+			["mats"] = {
+				["i:23112"] = 1,
+			},
+			["itemString"] = "i:28290",
+			["profession"] = "Jewelcrafting",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Smooth Golden Draenite",
+			["numResult"] = 1,
+		},
 		["c:10716496"] = {
 			["mats"] = {
 				["i:43122"] = 1,
@@ -36165,17 +36166,18 @@ TradeSkillMasterDB = {
 			["name"] = "Darkmoon Card",
 			["numResult"] = 1,
 		},
-		["c:7962159"] = {
+		["c:94030"] = {
 			["mats"] = {
-				["i:23112"] = 1,
+				["i:43120"] = 1,
+				["i:10648"] = 2,
 			},
-			["itemString"] = "i:28290",
-			["profession"] = "Jewelcrafting",
+			["itemString"] = "i:37602",
+			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Smooth Golden Draenite",
-			["numResult"] = 1,
+			["name"] = "Armor Vellum II",
+			["numResult"] = 2,
 		},
 		["c:5149451"] = {
 			["mats"] = {
@@ -36190,29 +36192,32 @@ TradeSkillMasterDB = {
 			["name"] = "Purified Shadow Pearl",
 			["numResult"] = 1,
 		},
-		["c:1746075"] = {
+		["c:1829539"] = {
 			["mats"] = {
-				["i:14047"] = 2,
+				["i:36918"] = 2,
+				["i:36921"] = 1,
+				["i:41163"] = 2,
 			},
-			["itemString"] = "i:14530",
-			["profession"] = "First Aid",
+			["itemString"] = "i:42341",
+			["profession"] = "Jewelcrafting",
+			["numResult"] = 1,
+			["name"] = "Figurine - Ruby Hare",
 			["players"] = {
 				["Battlearm"] = true,
-				["Vermin"] = true,
 			},
-			["name"] = "Heavy Runecloth Bandage",
-			["numResult"] = 1,
 		},
-		["c:5599585"] = {
+		["c:3847088"] = {
 			["mats"] = {
-				["i:36932"] = 1,
+				["i:35624"] = 1,
+				["i:36929"] = 2,
+				["i:36932"] = 2,
 			},
-			["itemString"] = "i:39983",
+			["itemString"] = "i:42338",
 			["profession"] = "Jewelcrafting",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Intricate Dark Jade",
+			["name"] = "Jade Dagger Pendant",
 			["numResult"] = 1,
 		},
 		["c:9955847"] = {
@@ -36241,18 +36246,30 @@ TradeSkillMasterDB = {
 			["name"] = "Glyph of Hammer of Justice",
 			["numResult"] = 1,
 		},
-		["c:5881628"] = {
+		["c:1746075"] = {
 			["mats"] = {
-				["i:11083"] = 2,
-				["i:38682"] = 1,
+				["i:14047"] = 2,
 			},
-			["itemString"] = "i:38793",
-			["profession"] = "Enchanting",
-			["numResult"] = 1,
-			["name"] = "Scroll of Enchant Bracer - Lesser Stamina",
+			["itemString"] = "i:14530",
+			["profession"] = "First Aid",
 			["players"] = {
+				["Battlearm"] = true,
 				["Vermin"] = true,
 			},
+			["name"] = "Heavy Runecloth Bandage",
+			["numResult"] = 1,
+		},
+		["c:5599585"] = {
+			["mats"] = {
+				["i:36932"] = 1,
+			},
+			["itemString"] = "i:39983",
+			["profession"] = "Jewelcrafting",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Intricate Dark Jade",
+			["numResult"] = 1,
 		},
 		["c:13098089"] = {
 			["mats"] = {
@@ -36266,6 +36283,19 @@ TradeSkillMasterDB = {
 			["name"] = "Deft Huge Citrine",
 			["numResult"] = 1,
 		},
+		["c:5881628"] = {
+			["mats"] = {
+				["i:11083"] = 2,
+				["i:38682"] = 1,
+			},
+			["itemString"] = "i:38793",
+			["profession"] = "Enchanting",
+			["numResult"] = 1,
+			["name"] = "Scroll of Enchant Bracer - Lesser Stamina",
+			["players"] = {
+				["Vermin"] = true,
+			},
+		},
 		["c:5787783"] = {
 			["mats"] = {
 				["i:39501"] = 1,
@@ -36277,32 +36307,6 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 			["name"] = "Glyph of Water Mastery",
-			["numResult"] = 1,
-		},
-		["c:11955395"] = {
-			["mats"] = {
-				["i:35625"] = 2,
-				["i:39502"] = 10,
-				["i:43126"] = 5,
-			},
-			["itemString"] = "i:45849",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Twilight Tome",
-			["numResult"] = 1,
-		},
-		["c:1029984"] = {
-			["mats"] = {
-				["i:36932"] = 1,
-			},
-			["itemString"] = "i:39974",
-			["profession"] = "Jewelcrafting",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Jagged Dark Jade",
 			["numResult"] = 1,
 		},
 		["c:14273062"] = {
@@ -36319,6 +36323,32 @@ TradeSkillMasterDB = {
 			["name"] = "Tome of Kings",
 			["numResult"] = 1,
 		},
+		["c:1029984"] = {
+			["mats"] = {
+				["i:36932"] = 1,
+			},
+			["itemString"] = "i:39974",
+			["profession"] = "Jewelcrafting",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Jagged Dark Jade",
+			["numResult"] = 1,
+		},
+		["c:11955395"] = {
+			["mats"] = {
+				["i:35625"] = 2,
+				["i:39502"] = 10,
+				["i:43126"] = 5,
+			},
+			["itemString"] = "i:45849",
+			["profession"] = "Inscription",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Twilight Tome",
+			["numResult"] = 1,
+		},
 		["c:8542755"] = {
 			["mats"] = {
 				["i:4377"] = 2,
@@ -36333,43 +36363,21 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:10095649"] = {
+		["c:13195263"] = {
 			["mats"] = {
-				["i:2320"] = 4,
-				["i:2318"] = 8,
+				["i:34054"] = 12,
+				["i:34052"] = 4,
+				["i:43146"] = 1,
+				["i:34055"] = 4,
+				["i:34057"] = 10,
 			},
-			["itemString"] = "i:2300",
-			["profession"] = "Leatherworking",
-			["players"] = {
-				["Vermina"] = true,
-			},
-			["name"] = "Embossed Leather Vest",
+			["itemString"] = "i:44493",
+			["profession"] = "Enchanting",
 			["numResult"] = 1,
-		},
-		["c:8117844"] = {
-			["mats"] = {
-				["i:43108"] = 1,
-			},
-			["itemString"] = "i:43125",
-			["profession"] = "Inscription",
+			["name"] = "Scroll of Enchant Weapon - Berserking",
 			["players"] = {
-				["Battlearm"] = true,
+				["Vermin"] = true,
 			},
-			["name"] = "Darkflame Ink",
-			["numResult"] = 1,
-		},
-		["c:10840788"] = {
-			["mats"] = {
-				["i:43120"] = 1,
-				["i:39501"] = 1,
-			},
-			["itemString"] = "i:42973",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Glyph of Slice and Dice",
-			["numResult"] = 1,
 		},
 		["c:5706554"] = {
 			["mats"] = {
@@ -36437,32 +36445,32 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
-		["c:13595452"] = {
+		["c:10840788"] = {
 			["mats"] = {
-				["i:34054"] = 6,
-				["i:34055"] = 2,
-				["i:43146"] = 1,
+				["i:43120"] = 1,
+				["i:39501"] = 1,
 			},
-			["itemString"] = "i:38992",
-			["profession"] = "Enchanting",
-			["players"] = {
-				["Vermin"] = true,
-			},
-			["name"] = "Scroll of Enchant 2H Weapon - Greater Savagery",
-			["numResult"] = 1,
-		},
-		["c:3313991"] = {
-			["mats"] = {
-				["i:31079"] = 1,
-				["i:23446"] = 2,
-			},
-			["itemString"] = "i:24077",
-			["profession"] = "Jewelcrafting",
+			["itemString"] = "i:42973",
+			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Thick Adamantite Necklace",
+			["name"] = "Glyph of Slice and Dice",
 			["numResult"] = 1,
+		},
+		["c:12626164"] = {
+			["mats"] = {
+				["i:11082"] = 1,
+				["i:38682"] = 1,
+				["i:10998"] = 2,
+			},
+			["itemString"] = "i:38799",
+			["profession"] = "Enchanting",
+			["numResult"] = 1,
+			["name"] = "Scroll of Enchant Chest - Mana",
+			["players"] = {
+				["Vermin"] = true,
+			},
 		},
 		["c:1065428"] = {
 			["mats"] = {
@@ -36492,19 +36500,18 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:12626164"] = {
+		["c:3313991"] = {
 			["mats"] = {
-				["i:11082"] = 1,
-				["i:38682"] = 1,
-				["i:10998"] = 2,
+				["i:31079"] = 1,
+				["i:23446"] = 2,
 			},
-			["itemString"] = "i:38799",
-			["profession"] = "Enchanting",
-			["numResult"] = 1,
-			["name"] = "Scroll of Enchant Chest - Mana",
+			["itemString"] = "i:24077",
+			["profession"] = "Jewelcrafting",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
+			["name"] = "Thick Adamantite Necklace",
+			["numResult"] = 1,
 		},
 		["c:14748457"] = {
 			["mats"] = {
@@ -36518,18 +36525,19 @@ TradeSkillMasterDB = {
 			["name"] = "Stoneguard Band",
 			["numResult"] = 1,
 		},
-		["c:3347839"] = {
+		["c:13595452"] = {
 			["mats"] = {
-				["i:20963"] = 2,
-				["i:6037"] = 1,
+				["i:34054"] = 6,
+				["i:34055"] = 2,
+				["i:43146"] = 1,
 			},
-			["itemString"] = "i:20960",
-			["profession"] = "Jewelcrafting",
-			["numResult"] = 1,
-			["name"] = "Engraved Truesilver Ring",
+			["itemString"] = "i:38992",
+			["profession"] = "Enchanting",
 			["players"] = {
-				["Battlearm"] = true,
+				["Vermin"] = true,
 			},
+			["name"] = "Scroll of Enchant 2H Weapon - Greater Savagery",
+			["numResult"] = 1,
 		},
 		["c:10438659"] = {
 			["mats"] = {
@@ -36544,18 +36552,18 @@ TradeSkillMasterDB = {
 			["name"] = "Golden Draenite Ring",
 			["numResult"] = 1,
 		},
-		["c:14755672"] = {
+		["c:3347839"] = {
 			["mats"] = {
-				["i:39774"] = 1,
-				["i:39354"] = 1,
+				["i:20963"] = 2,
+				["i:6037"] = 1,
 			},
-			["itemString"] = "i:42912",
-			["profession"] = "Inscription",
+			["itemString"] = "i:20960",
+			["profession"] = "Jewelcrafting",
+			["numResult"] = 1,
+			["name"] = "Engraved Truesilver Ring",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Glyph of Serpent Sting",
-			["numResult"] = 1,
 		},
 		["c:12542671"] = {
 			["mats"] = {
@@ -36583,17 +36591,17 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
-		["c:9553764"] = {
+		["c:14755672"] = {
 			["mats"] = {
-				["i:34055"] = 1,
-				["i:43145"] = 1,
+				["i:39774"] = 1,
+				["i:39354"] = 1,
 			},
-			["itemString"] = "i:38960",
-			["profession"] = "Enchanting",
+			["itemString"] = "i:42912",
+			["profession"] = "Inscription",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
-			["name"] = "Scroll of Enchant Gloves - Gatherer",
+			["name"] = "Glyph of Serpent Sting",
 			["numResult"] = 1,
 		},
 		["c:769348"] = {
@@ -36608,30 +36616,17 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
-		["c:14038750"] = {
+		["c:9553764"] = {
 			["mats"] = {
-				["i:7910"] = 2,
-				["i:4304"] = 4,
+				["i:34055"] = 1,
+				["i:43145"] = 1,
 			},
-			["itemString"] = "i:10502",
-			["profession"] = "Engineering",
-			["numResult"] = 1,
-			["name"] = "Spellpower Goggles Xtreme",
+			["itemString"] = "i:38960",
+			["profession"] = "Enchanting",
 			["players"] = {
 				["Vermin"] = true,
 			},
-		},
-		["c:3083790"] = {
-			["mats"] = {
-				["i:10648"] = 1,
-				["i:43116"] = 1,
-			},
-			["itemString"] = "i:42908",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Glyph of Immolation Trap",
+			["name"] = "Scroll of Enchant Gloves - Gatherer",
 			["numResult"] = 1,
 		},
 		["c:7571841"] = {
@@ -36650,6 +36645,21 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Vermin"] = true,
 			},
+		},
+		["c:15859906"] = {
+			["mats"] = {
+				["i:1705"] = 1,
+				["i:1206"] = 1,
+				["i:2842"] = 2,
+				["i:20817"] = 1,
+			},
+			["itemString"] = "i:20826",
+			["profession"] = "Jewelcrafting",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Heavy Silver Ring",
+			["numResult"] = 1,
 		},
 		["c:4615685"] = {
 			["mats"] = {
@@ -36690,20 +36700,18 @@ TradeSkillMasterDB = {
 			["name"] = "Glyph of Icy Veins",
 			["numResult"] = 1,
 		},
-		["c:15859906"] = {
+		["c:14038750"] = {
 			["mats"] = {
-				["i:1705"] = 1,
-				["i:1206"] = 1,
-				["i:2842"] = 2,
-				["i:20817"] = 1,
+				["i:7910"] = 2,
+				["i:4304"] = 4,
 			},
-			["itemString"] = "i:20826",
-			["profession"] = "Jewelcrafting",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Heavy Silver Ring",
+			["itemString"] = "i:10502",
+			["profession"] = "Engineering",
 			["numResult"] = 1,
+			["name"] = "Spellpower Goggles Xtreme",
+			["players"] = {
+				["Vermin"] = true,
+			},
 		},
 		["c:12236054"] = {
 			["mats"] = {
@@ -36781,17 +36789,14 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
-		["c:3736071"] = {
+		["c:1201740"] = {
 			["mats"] = {
-				["i:16006"] = 2,
-				["i:15994"] = 1,
-				["i:12799"] = 1,
-				["i:10558"] = 1,
+				["i:36913"] = 2,
 			},
-			["itemString"] = "i:16009",
+			["itemString"] = "i:41165",
 			["profession"] = "Engineering",
-			["numResult"] = 1,
-			["name"] = "Voice Amplification Modulator",
+			["numResult"] = 1000,
+			["name"] = "Saronite Razorheads",
 			["players"] = {
 				["Vermin"] = true,
 			},
@@ -36887,16 +36892,17 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:398970"] = {
+		["c:3736071"] = {
 			["mats"] = {
-				["i:22449"] = 4,
-				["i:37602"] = 1,
-				["i:22457"] = 8,
+				["i:16006"] = 2,
+				["i:15994"] = 1,
+				["i:12799"] = 1,
+				["i:10558"] = 1,
 			},
-			["itemString"] = "i:38941",
-			["profession"] = "Enchanting",
+			["itemString"] = "i:16009",
+			["profession"] = "Engineering",
 			["numResult"] = 1,
-			["name"] = "Scroll of Enchant Cloak - Greater Arcane Resistance",
+			["name"] = "Voice Amplification Modulator",
 			["players"] = {
 				["Vermin"] = true,
 			},
@@ -37023,15 +37029,16 @@ TradeSkillMasterDB = {
 			["name"] = "Fine Leather Tunic",
 			["numResult"] = 1,
 		},
-		["c:3936287"] = {
+		["c:398970"] = {
 			["mats"] = {
-				["i:7910"] = 2,
-				["i:4304"] = 6,
+				["i:22449"] = 4,
+				["i:37602"] = 1,
+				["i:22457"] = 8,
 			},
-			["itemString"] = "i:10503",
-			["profession"] = "Engineering",
+			["itemString"] = "i:38941",
+			["profession"] = "Enchanting",
 			["numResult"] = 1,
-			["name"] = "Rose Colored Goggles",
+			["name"] = "Scroll of Enchant Cloak - Greater Arcane Resistance",
 			["players"] = {
 				["Vermin"] = true,
 			},
@@ -37075,31 +37082,31 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
-		["c:3774592"] = {
+		["c:2578885"] = {
 			["mats"] = {
-				["i:22445"] = 8,
-				["i:37602"] = 1,
+				["i:12364"] = 2,
+				["i:21752"] = 1,
 			},
-			["itemString"] = "i:38914",
-			["profession"] = "Enchanting",
+			["itemString"] = "i:29160",
+			["profession"] = "Jewelcrafting",
 			["numResult"] = 1,
-			["name"] = "Scroll of Enchant Cloak - Major Armor",
-			["players"] = {
-				["Vermin"] = true,
-			},
-		},
-		["c:1965771"] = {
-			["mats"] = {
-				["i:39774"] = 1,
-				["i:39354"] = 1,
-			},
-			["itemString"] = "i:40913",
-			["profession"] = "Inscription",
+			["name"] = "Emerald Lion Ring",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Glyph of Rejuvenation",
+		},
+		["c:3936287"] = {
+			["mats"] = {
+				["i:7910"] = 2,
+				["i:4304"] = 6,
+			},
+			["itemString"] = "i:10503",
+			["profession"] = "Engineering",
 			["numResult"] = 1,
+			["name"] = "Rose Colored Goggles",
+			["players"] = {
+				["Vermin"] = true,
+			},
 		},
 		["c:14974130"] = {
 			["mats"] = {
@@ -37113,19 +37120,15 @@ TradeSkillMasterDB = {
 			["name"] = "Thick Sun Crystal",
 			["numResult"] = 1,
 		},
-		["c:13708785"] = {
+		["c:3774592"] = {
 			["mats"] = {
-				["i:23787"] = 2,
-				["i:23786"] = 1,
-				["i:23785"] = 2,
-				["i:16006"] = 2,
-				["i:21884"] = 6,
-				["i:22452"] = 6,
+				["i:22445"] = 8,
+				["i:37602"] = 1,
 			},
-			["itemString"] = "i:23836",
-			["profession"] = "Engineering",
+			["itemString"] = "i:38914",
+			["profession"] = "Enchanting",
 			["numResult"] = 1,
-			["name"] = "Goblin Rocket Launcher",
+			["name"] = "Scroll of Enchant Cloak - Major Armor",
 			["players"] = {
 				["Vermin"] = true,
 			},
@@ -37181,18 +37184,18 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:8870960"] = {
+		["c:5131046"] = {
 			["mats"] = {
-				["i:36920"] = 1,
-				["i:36921"] = 1,
-				["i:39683"] = 1,
+				["i:818"] = 2,
+				["i:2840"] = 2,
+				["i:20816"] = 1,
 			},
-			["itemString"] = "i:41146",
-			["profession"] = "Engineering",
+			["itemString"] = "i:21934",
+			["profession"] = "Jewelcrafting",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
-			["name"] = "Sun Scope",
+			["name"] = "Ornate Tigerseye Necklace",
 			["numResult"] = 1,
 		},
 		["c:11051237"] = {
@@ -37222,17 +37225,22 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:2096721"] = {
+		["c:13708785"] = {
 			["mats"] = {
-				["i:2770"] = 1,
+				["i:23787"] = 2,
+				["i:23786"] = 1,
+				["i:23785"] = 2,
+				["i:16006"] = 2,
+				["i:21884"] = 6,
+				["i:22452"] = 6,
 			},
-			["itemString"] = "i:2840",
-			["profession"] = "Mining",
-			["players"] = {
-				["Mxzq"] = true,
-			},
-			["name"] = "Copper Bar",
+			["itemString"] = "i:23836",
+			["profession"] = "Engineering",
 			["numResult"] = 1,
+			["name"] = "Goblin Rocket Launcher",
+			["players"] = {
+				["Vermin"] = true,
+			},
 		},
 		["c:5233684"] = {
 			["mats"] = {
@@ -37249,29 +37257,32 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:13363222"] = {
+		["c:8870960"] = {
 			["mats"] = {
-				["i:10648"] = 2,
-				["i:43118"] = 1,
+				["i:36920"] = 1,
+				["i:36921"] = 1,
+				["i:39683"] = 1,
 			},
-			["itemString"] = "i:4424",
-			["profession"] = "Inscription",
+			["itemString"] = "i:41146",
+			["profession"] = "Engineering",
 			["players"] = {
-				["Battlearm"] = true,
+				["Vermin"] = true,
 			},
-			["name"] = "Scroll of Spirit III",
-			["numResult"] = 2,
-		},
-		["c:16026593"] = {
-			["mats"] = {
-				["i:2775"] = 1,
-			},
-			["itemString"] = "i:2842",
-			["profession"] = "Mining",
+			["name"] = "Sun Scope",
 			["numResult"] = 1,
-			["name"] = "Silver Bar",
+		},
+		["c:4379222"] = {
+			["mats"] = {
+				["i:11137"] = 1,
+				["i:38682"] = 1,
+				["i:11174"] = 1,
+			},
+			["itemString"] = "i:38827",
+			["profession"] = "Enchanting",
+			["numResult"] = 1,
+			["name"] = "Scroll of Enchant Gloves - Agility",
 			["players"] = {
-				["Mxzq"] = true,
+				["Vermin"] = true,
 			},
 		},
 		["c:9478444"] = {
@@ -37301,31 +37312,34 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:4531469"] = {
+		["c:11301362"] = {
 			["mats"] = {
-				["i:23427"] = 2,
+				["i:4387"] = 1,
+				["i:4382"] = 1,
+				["i:4234"] = 4,
+				["i:4389"] = 1,
 			},
-			["itemString"] = "i:23447",
-			["profession"] = "Mining",
+			["itemString"] = "i:4392",
+			["profession"] = "Engineering",
 			["numResult"] = 1,
-			["name"] = "Eternium Bar",
+			["name"] = "Advanced Target Dummy",
 			["players"] = {
-				["Mxzq"] = true,
+				["Vermin"] = true,
 			},
 		},
-		["c:5993753"] = {
+		["c:16026593"] = {
 			["mats"] = {
 				["i:39354"] = 1,
 				["i:39774"] = 1,
 				["i:43115"] = 1,
 			},
-			["itemString"] = "i:37168",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Mysterious Tarot",
+			["itemString"] = "i:2842",
+			["profession"] = "Mining",
 			["numResult"] = 1,
+			["name"] = "Silver Bar",
+			["players"] = {
+				["Mxzq"] = true,
+			},
 		},
 		["c:15268125"] = {
 			["mats"] = {
@@ -37354,17 +37368,18 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
-		["c:932207"] = {
+		["c:5993753"] = {
 			["mats"] = {
-				["i:39501"] = 1,
-				["i:43122"] = 1,
+				["i:39774"] = 1,
+				["i:43115"] = 1,
+				["i:39354"] = 1,
 			},
-			["itemString"] = "i:40901",
+			["itemString"] = "i:37168",
 			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Glyph of Shred",
+			["name"] = "Mysterious Tarot",
 			["numResult"] = 1,
 		},
 		["c:6953884"] = {
@@ -37380,31 +37395,30 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:5187597"] = {
+		["c:4531469"] = {
 			["mats"] = {
-				["i:2320"] = 5,
-				["i:2318"] = 8,
+				["i:23427"] = 2,
 			},
-			["itemString"] = "i:2309",
-			["profession"] = "Leatherworking",
-			["players"] = {
-				["Vermina"] = true,
-			},
-			["name"] = "Embossed Leather Boots",
+			["itemString"] = "i:23447",
+			["profession"] = "Mining",
 			["numResult"] = 1,
-		},
-		["c:12070805"] = {
-			["mats"] = {
-				["i:39501"] = 1,
-				["i:43122"] = 1,
+			["name"] = "Eternium Bar",
+			["players"] = {
+				["Mxzq"] = true,
 			},
-			["itemString"] = "i:43416",
+		},
+		["c:4938299"] = {
+			["mats"] = {
+				["i:43120"] = 1,
+				["i:39501"] = 2,
+			},
+			["itemString"] = "i:10308",
 			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Glyph of Execution",
-			["numResult"] = 1,
+			["name"] = "Scroll of Intellect IV",
+			["numResult"] = 2,
 		},
 		["c:16450408"] = {
 			["mats"] = {
@@ -37419,20 +37433,17 @@ TradeSkillMasterDB = {
 			["name"] = "Glyph of Earthliving Weapon",
 			["numResult"] = 1,
 		},
-		["c:9409751"] = {
+		["c:932207"] = {
 			["mats"] = {
-				["i:38425"] = 4,
-				["i:41163"] = 8,
-				["i:36924"] = 2,
-				["i:35624"] = 4,
-				["i:43102"] = 1,
+				["i:39501"] = 1,
+				["i:43122"] = 1,
 			},
-			["itemString"] = "i:42549",
-			["profession"] = "Engineering",
+			["itemString"] = "i:40901",
+			["profession"] = "Inscription",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
-			["name"] = "Armored Titanium Goggles",
+			["name"] = "Glyph of Shred",
 			["numResult"] = 1,
 		},
 		["c:5690584"] = {
@@ -37460,6 +37471,19 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
+		["c:12070805"] = {
+			["mats"] = {
+				["i:39501"] = 1,
+				["i:43122"] = 1,
+			},
+			["itemString"] = "i:43416",
+			["profession"] = "Inscription",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Glyph of Execution",
+			["numResult"] = 1,
+		},
 		["c:10185223"] = {
 			["mats"] = {
 				["i:23117"] = 1,
@@ -37472,33 +37496,20 @@ TradeSkillMasterDB = {
 			["name"] = "Sparkling Azure Moonstone",
 			["numResult"] = 1,
 		},
-		["c:2086278"] = {
+		["c:9409751"] = {
 			["mats"] = {
-				["i:12799"] = 2,
-				["i:11371"] = 8,
-				["i:18631"] = 4,
-				["i:12808"] = 4,
-				["i:12803"] = 6,
-				["i:12800"] = 2,
+				["i:38425"] = 4,
+				["i:41163"] = 8,
+				["i:36924"] = 2,
+				["i:35624"] = 4,
+				["i:43102"] = 1,
 			},
-			["itemString"] = "i:18639",
+			["itemString"] = "i:42549",
 			["profession"] = "Engineering",
-			["numResult"] = 1,
-			["name"] = "Ultra-Flash Shadow Reflector",
 			["players"] = {
 				["Vermin"] = true,
 			},
-		},
-		["c:13472098"] = {
-			["mats"] = {
-				["i:36917"] = 1,
-			},
-			["itemString"] = "i:39905",
-			["profession"] = "Jewelcrafting",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Delicate Bloodstone",
+			["name"] = "Armored Titanium Goggles",
 			["numResult"] = 1,
 		},
 		["c:72254"] = {
@@ -37514,17 +37525,16 @@ TradeSkillMasterDB = {
 			["name"] = "Glyph of Aimed Shot",
 			["numResult"] = 1,
 		},
-		["c:10294579"] = {
+		["c:13472098"] = {
 			["mats"] = {
-				["i:39774"] = 1,
-				["i:39354"] = 1,
+				["i:36917"] = 1,
 			},
-			["itemString"] = "i:43413",
-			["profession"] = "Inscription",
+			["itemString"] = "i:39905",
+			["profession"] = "Jewelcrafting",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Glyph of Rapid Charge",
+			["name"] = "Delicate Bloodstone",
 			["numResult"] = 1,
 		},
 		["c:6674448"] = {
@@ -37555,19 +37565,22 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:209522"] = {
+		["c:2086278"] = {
 			["mats"] = {
-				["i:10648"] = 1,
-				["i:43119"] = 2,
-				["i:43118"] = 1,
+				["i:12799"] = 2,
+				["i:11371"] = 8,
+				["i:18631"] = 4,
+				["i:12808"] = 4,
+				["i:12803"] = 6,
+				["i:12800"] = 2,
 			},
-			["itemString"] = "i:44161",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Arcane Tarot",
+			["itemString"] = "i:18639",
+			["profession"] = "Engineering",
 			["numResult"] = 1,
+			["name"] = "Ultra-Flash Shadow Reflector",
+			["players"] = {
+				["Vermin"] = true,
+			},
 		},
 		["c:4835010"] = {
 			["mats"] = {
@@ -37648,17 +37661,17 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:12303538"] = {
+		["c:10294579"] = {
 			["mats"] = {
-				["i:10648"] = 1,
-				["i:43116"] = 1,
+				["i:39774"] = 1,
+				["i:39354"] = 1,
 			},
-			["itemString"] = "i:42735",
+			["itemString"] = "i:43413",
 			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Glyph of Arcane Missiles",
+			["name"] = "Glyph of Rapid Charge",
 			["numResult"] = 1,
 		},
 		["c:5787349"] = {
@@ -37689,19 +37702,19 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:13768323"] = {
+		["c:209522"] = {
 			["mats"] = {
-				["i:10561"] = 2,
-				["i:10560"] = 1,
-				["i:10505"] = 2,
+				["i:10648"] = 1,
+				["i:43119"] = 2,
+				["i:43118"] = 1,
 			},
-			["itemString"] = "i:10562",
-			["profession"] = "Engineering",
-			["numResult"] = 4,
-			["name"] = "Hi-Explosive Bomb",
+			["itemString"] = "i:44161",
+			["profession"] = "Inscription",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
+			["name"] = "Arcane Tarot",
+			["numResult"] = 1,
 		},
 		["c:12066116"] = {
 			["mats"] = {
@@ -37729,18 +37742,18 @@ TradeSkillMasterDB = {
 			["name"] = "Hellfire Tome",
 			["numResult"] = 1,
 		},
-		["c:7283772"] = {
+		["c:4751450"] = {
 			["mats"] = {
-				["i:2592"] = 1,
-				["i:2841"] = 2,
+				["i:39774"] = 3,
+				["i:39354"] = 2,
 			},
-			["itemString"] = "i:4375",
-			["profession"] = "Engineering",
-			["numResult"] = 1,
-			["name"] = "Whirring Bronze Gizmo",
+			["itemString"] = "i:39349",
+			["profession"] = "Inscription",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
+			["name"] = "Weapon Vellum",
+			["numResult"] = 2,
 		},
 		["c:10896325"] = {
 			["mats"] = {
@@ -37780,34 +37793,31 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
-		["c:13059451"] = {
+		["c:6423390"] = {
 			["mats"] = {
-				["i:23787"] = 4,
-				["i:23572"] = 1,
-				["i:23785"] = 1,
-				["i:22451"] = 12,
-				["i:21884"] = 12,
-				["i:23449"] = 20,
+				["i:2320"] = 1,
+				["i:2318"] = 3,
 			},
-			["itemString"] = "i:32756",
-			["profession"] = "Engineering",
+			["itemString"] = "i:5957",
+			["profession"] = "Leatherworking",
 			["players"] = {
-				["Vermin"] = true,
+				["Vermina"] = true,
 			},
-			["name"] = "Gyro-Balanced Khorium Destroyer",
+			["name"] = "Handstitched Leather Vest",
 			["numResult"] = 1,
 		},
-		["c:13473221"] = {
+		["c:7283772"] = {
 			["mats"] = {
-				["i:36913"] = 10,
+				["i:2592"] = 1,
+				["i:2841"] = 2,
 			},
-			["itemString"] = "i:40769",
+			["itemString"] = "i:4375",
 			["profession"] = "Engineering",
+			["numResult"] = 1,
+			["name"] = "Whirring Bronze Gizmo",
 			["players"] = {
 				["Vermin"] = true,
 			},
-			["name"] = "Scrapbot Construction Kit",
-			["numResult"] = 5,
 		},
 		["c:531471"] = {
 			["mats"] = {
@@ -37865,15 +37875,19 @@ TradeSkillMasterDB = {
 		},
 		["c:7101046"] = {
 			["mats"] = {
-				["i:39774"] = 1,
-				["i:39354"] = 1,
+				["i:23787"] = 4,
+				["i:23572"] = 1,
+				["i:23785"] = 1,
+				["i:22451"] = 12,
+				["i:21884"] = 12,
+				["i:23449"] = 20,
 			},
-			["itemString"] = "i:1711",
-			["profession"] = "Inscription",
+			["itemString"] = "i:32756",
+			["profession"] = "Engineering",
 			["players"] = {
-				["Battlearm"] = true,
+				["Vermin"] = true,
 			},
-			["name"] = "Scroll of Stamina II",
+			["name"] = "Gyro-Balanced Khorium Destroyer",
 			["numResult"] = 1,
 		},
 		["c:6425170"] = {
@@ -37902,6 +37916,22 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
+		["c:5049099"] = {
+			["mats"] = {
+				["i:1210"] = 2,
+				["i:818"] = 3,
+				["i:20817"] = 1,
+				["i:2841"] = 2,
+				["i:774"] = 3,
+			},
+			["itemString"] = "i:30804",
+			["profession"] = "Jewelcrafting",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Bronze Band of Force",
+			["numResult"] = 1,
+		},
 		["c:6858278"] = {
 			["mats"] = {
 				["i:34054"] = 12,
@@ -37916,17 +37946,17 @@ TradeSkillMasterDB = {
 			["name"] = "Scroll of Enchant Staff - Spellpower",
 			["numResult"] = 1,
 		},
-		["c:5434418"] = {
+		["c:7101046"] = {
 			["mats"] = {
-				["i:10648"] = 1,
-				["i:43116"] = 1,
+				["i:39774"] = 1,
+				["i:39354"] = 1,
 			},
-			["itemString"] = "i:43417",
+			["itemString"] = "i:1711",
 			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Glyph of Hamstring",
+			["name"] = "Scroll of Stamina II",
 			["numResult"] = 1,
 		},
 		["c:2790923"] = {
@@ -37943,17 +37973,17 @@ TradeSkillMasterDB = {
 			["name"] = "Scroll of Enchant Boots - Superior Agility",
 			["numResult"] = 1,
 		},
-		["c:7219749"] = {
+		["c:85002"] = {
 			["mats"] = {
-				["i:33470"] = 1,
+				["i:2840"] = 4,
+				["i:20816"] = 2,
 			},
-			["itemString"] = "i:34721",
-			["profession"] = "First Aid",
+			["itemString"] = "i:21932",
+			["profession"] = "Jewelcrafting",
 			["players"] = {
 				["Battlearm"] = true,
-				["Vermin"] = true,
 			},
-			["name"] = "Frostweave Bandage",
+			["name"] = "Heavy Copper Ring",
 			["numResult"] = 1,
 		},
 		["c:14334189"] = {
@@ -38035,20 +38065,18 @@ TradeSkillMasterDB = {
 			["name"] = "Mana Injector Kit",
 			["numResult"] = 8,
 		},
-		["c:5049099"] = {
+		["c:2415219"] = {
 			["mats"] = {
-				["i:1210"] = 2,
-				["i:818"] = 3,
-				["i:20817"] = 1,
-				["i:2841"] = 2,
-				["i:774"] = 3,
+				["i:39683"] = 2,
+				["i:39682"] = 4,
+				["i:39681"] = 2,
 			},
-			["itemString"] = "i:30804",
-			["profession"] = "Jewelcrafting",
+			["itemString"] = "i:40767",
+			["profession"] = "Engineering",
 			["players"] = {
-				["Battlearm"] = true,
+				["Vermin"] = true,
 			},
-			["name"] = "Bronze Band of Force",
+			["name"] = "Sonic Booster",
 			["numResult"] = 1,
 		},
 		["c:5246120"] = {
@@ -38063,18 +38091,17 @@ TradeSkillMasterDB = {
 			["name"] = "Bold Bloodstone",
 			["numResult"] = 1,
 		},
-		["c:15735534"] = {
+		["c:5434418"] = {
 			["mats"] = {
-				["i:22452"] = 12,
-				["i:23573"] = 8,
-				["i:21884"] = 12,
+				["i:10648"] = 1,
+				["i:43116"] = 1,
 			},
-			["itemString"] = "i:23839",
-			["profession"] = "Engineering",
+			["itemString"] = "i:43417",
+			["profession"] = "Inscription",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
-			["name"] = "Foreman's Reinforced Helmet",
+			["name"] = "Glyph of Hamstring",
 			["numResult"] = 1,
 		},
 		["c:11331441"] = {
@@ -38105,17 +38132,17 @@ TradeSkillMasterDB = {
 			["name"] = "Glyph of Succubus",
 			["numResult"] = 1,
 		},
-		["c:9806499"] = {
+		["c:7219749"] = {
 			["mats"] = {
-				["i:43122"] = 1,
-				["i:39501"] = 1,
+				["i:33470"] = 1,
 			},
-			["itemString"] = "i:45768",
-			["profession"] = "Inscription",
+			["itemString"] = "i:34721",
+			["profession"] = "First Aid",
 			["players"] = {
 				["Battlearm"] = true,
+				["Vermin"] = true,
 			},
-			["name"] = "Glyph of Mutilate",
+			["name"] = "Frostweave Bandage",
 			["numResult"] = 1,
 		},
 		["c:11166612"] = {
@@ -38143,30 +38170,31 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:15515610"] = {
+		["c:9806499"] = {
 			["mats"] = {
-				["i:39502"] = 1,
-				["i:43126"] = 1,
+				["i:43122"] = 1,
+				["i:39501"] = 1,
 			},
-			["itemString"] = "i:41102",
+			["itemString"] = "i:45768",
 			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Glyph of Turn Evil",
+			["name"] = "Glyph of Mutilate",
 			["numResult"] = 1,
 		},
-		["c:2416071"] = {
+		["c:15735534"] = {
 			["mats"] = {
-				["i:39354"] = 1,
-				["i:39469"] = 1,
+				["i:22452"] = 12,
+				["i:23573"] = 8,
+				["i:21884"] = 12,
 			},
-			["itemString"] = "i:37118",
-			["profession"] = "Inscription",
+			["itemString"] = "i:23839",
+			["profession"] = "Engineering",
 			["players"] = {
-				["Battlearm"] = true,
+				["Vermin"] = true,
 			},
-			["name"] = "Scroll of Recall",
+			["name"] = "Foreman's Reinforced Helmet",
 			["numResult"] = 1,
 		},
 		["c:13375493"] = {
@@ -38209,11 +38237,38 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:3718736"] = {
+		["c:15515610"] = {
 			["mats"] = {
 				["i:39501"] = 2,
 				["i:43120"] = 1,
 				["i:43121"] = 1,
+			},
+			["itemString"] = "i:41102",
+			["profession"] = "Inscription",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Glyph of Turn Evil",
+			["numResult"] = 1,
+		},
+		["c:8267210"] = {
+			["mats"] = {
+				["i:10648"] = 1,
+				["i:43120"] = 2,
+			},
+			["itemString"] = "i:43850",
+			["profession"] = "Inscription",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Certificate of Ownership",
+			["numResult"] = 1,
+		},
+		["c:3718736"] = {
+			["mats"] = {
+				["i:43120"] = 1,
+				["i:43121"] = 1,
+				["i:39501"] = 2,
 			},
 			["itemString"] = "i:39350",
 			["profession"] = "Inscription",
@@ -38222,34 +38277,6 @@ TradeSkillMasterDB = {
 			},
 			["name"] = "Weapon Vellum II",
 			["numResult"] = 2,
-		},
-		["c:2521335"] = {
-			["mats"] = {
-				["i:2592"] = 1,
-				["i:2841"] = 2,
-				["i:2319"] = 1,
-			},
-			["itemString"] = "i:4382",
-			["profession"] = "Engineering",
-			["numResult"] = 1,
-			["name"] = "Bronze Framework",
-			["players"] = {
-				["Vermin"] = true,
-			},
-		},
-		["c:4728811"] = {
-			["mats"] = {
-				["i:21929"] = 1,
-				["i:12803"] = 4,
-				["i:7078"] = 4,
-			},
-			["itemString"] = "i:21779",
-			["profession"] = "Jewelcrafting",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Band of Natural Fire",
-			["numResult"] = 1,
 		},
 		["c:2018108"] = {
 			["mats"] = {
@@ -38277,34 +38304,33 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
-		["c:11030172"] = {
+		["c:2521335"] = {
 			["mats"] = {
-				["i:1705"] = 3,
-				["i:2842"] = 4,
-				["i:11083"] = 4,
-				["i:3827"] = 2,
-				["i:5498"] = 3,
+				["i:2592"] = 1,
+				["i:2841"] = 2,
+				["i:2319"] = 1,
 			},
-			["itemString"] = "i:20832",
-			["profession"] = "Jewelcrafting",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Moonsoul Crown",
+			["itemString"] = "i:4382",
+			["profession"] = "Engineering",
 			["numResult"] = 1,
+			["name"] = "Bronze Framework",
+			["players"] = {
+				["Vermin"] = true,
+			},
 		},
-		["c:11741475"] = {
+		["c:2993683"] = {
 			["mats"] = {
-				["i:36933"] = 1,
-				["i:34052"] = 1,
-				["i:41163"] = 1,
+				["i:22445"] = 8,
+				["i:14344"] = 2,
+				["i:37602"] = 1,
+				["i:13446"] = 4,
 			},
-			["itemString"] = "i:42340",
-			["profession"] = "Jewelcrafting",
+			["itemString"] = "i:38911",
+			["profession"] = "Enchanting",
 			["numResult"] = 1,
-			["name"] = "Dream Signet",
+			["name"] = "Scroll of Enchant Chest - Exceptional Health",
 			["players"] = {
-				["Battlearm"] = true,
+				["Vermin"] = true,
 			},
 		},
 		["c:455679"] = {
@@ -38319,17 +38345,20 @@ TradeSkillMasterDB = {
 			["name"] = "Glinting Flame Spessarite",
 			["numResult"] = 1,
 		},
-		["c:2513798"] = {
+		["c:4642238"] = {
 			["mats"] = {
-				["i:2842"] = 1,
+				["i:11082"] = 1,
+				["i:38682"] = 1,
+				["i:11083"] = 1,
+				["i:11084"] = 1,
 			},
-			["itemString"] = "i:4404",
-			["profession"] = "Engineering",
-			["numResult"] = 5,
-			["name"] = "Silver Contact",
+			["itemString"] = "i:38804",
+			["profession"] = "Enchanting",
 			["players"] = {
 				["Vermin"] = true,
 			},
+			["name"] = "Scroll of Enchant Chest - Minor Stats",
+			["numResult"] = 1,
 		},
 		["c:2665336"] = {
 			["mats"] = {
@@ -38369,32 +38398,30 @@ TradeSkillMasterDB = {
 			["name"] = "The Black Pearl",
 			["numResult"] = 1,
 		},
-		["c:4642238"] = {
+		["c:2513798"] = {
 			["mats"] = {
-				["i:11082"] = 1,
-				["i:38682"] = 1,
-				["i:11083"] = 1,
-				["i:11084"] = 1,
+				["i:2842"] = 1,
 			},
-			["itemString"] = "i:38804",
-			["profession"] = "Enchanting",
+			["itemString"] = "i:4404",
+			["profession"] = "Engineering",
+			["numResult"] = 5,
+			["name"] = "Silver Contact",
 			["players"] = {
 				["Vermin"] = true,
 			},
-			["name"] = "Scroll of Enchant Chest - Minor Stats",
-			["numResult"] = 1,
 		},
-		["c:13293330"] = {
+		["c:11741475"] = {
 			["mats"] = {
-				["i:38682"] = 1,
-				["i:11083"] = 6,
+				["i:36933"] = 1,
+				["i:34052"] = 1,
+				["i:41163"] = 1,
 			},
-			["itemString"] = "i:38812",
-			["profession"] = "Enchanting",
+			["itemString"] = "i:42340",
+			["profession"] = "Jewelcrafting",
 			["numResult"] = 1,
-			["name"] = "Scroll of Enchant Bracer - Stamina",
+			["name"] = "Dream Signet",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
 		},
 		["c:8021552"] = {
@@ -38450,17 +38477,17 @@ TradeSkillMasterDB = {
 			["name"] = "Scroll of Enchant Bracer - Greater Strength",
 			["numResult"] = 1,
 		},
-		["c:3387877"] = {
+		["c:11680051"] = {
 			["mats"] = {
-				["i:2320"] = 1,
-				["i:2318"] = 4,
+				["i:34054"] = 6,
+				["i:43145"] = 1,
 			},
-			["itemString"] = "i:2303",
-			["profession"] = "Leatherworking",
+			["itemString"] = "i:38971",
+			["profession"] = "Enchanting",
 			["players"] = {
-				["Vermina"] = true,
+				["Vermin"] = true,
 			},
-			["name"] = "Handstitched Leather Pants",
+			["name"] = "Scroll of Enchant Bracers - Striking",
 			["numResult"] = 1,
 		},
 		["c:12944548"] = {
@@ -38515,18 +38542,18 @@ TradeSkillMasterDB = {
 			["name"] = "Veiled Huge Citrine",
 			["numResult"] = 1,
 		},
-		["c:11680051"] = {
+		["c:13293330"] = {
 			["mats"] = {
-				["i:34054"] = 6,
-				["i:43145"] = 1,
+				["i:38682"] = 1,
+				["i:11083"] = 6,
 			},
-			["itemString"] = "i:38971",
+			["itemString"] = "i:38812",
 			["profession"] = "Enchanting",
+			["numResult"] = 1,
+			["name"] = "Scroll of Enchant Bracer - Stamina",
 			["players"] = {
 				["Vermin"] = true,
 			},
-			["name"] = "Scroll of Enchant Bracers - Striking",
-			["numResult"] = 1,
 		},
 		["c:4269174"] = {
 			["mats"] = {
@@ -38577,6 +38604,47 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
+		["c:3387877"] = {
+			["mats"] = {
+				["i:2320"] = 1,
+				["i:2318"] = 4,
+			},
+			["itemString"] = "i:2303",
+			["profession"] = "Leatherworking",
+			["players"] = {
+				["Vermina"] = true,
+			},
+			["name"] = "Handstitched Leather Pants",
+			["numResult"] = 1,
+		},
+		["c:1784786"] = {
+			["mats"] = {
+				["i:43145"] = 1,
+				["i:34055"] = 3,
+				["i:34054"] = 16,
+			},
+			["itemString"] = "i:38987",
+			["profession"] = "Enchanting",
+			["numResult"] = 1,
+			["name"] = "Scroll of Enchant Bracers - Greater Stats",
+			["players"] = {
+				["Vermin"] = true,
+			},
+		},
+		["c:8517785"] = {
+			["mats"] = {
+				["i:39349"] = 1,
+				["i:16203"] = 4,
+				["i:14344"] = 2,
+			},
+			["itemString"] = "i:38875",
+			["profession"] = "Enchanting",
+			["numResult"] = 1,
+			["name"] = "Scroll of Enchant 2H Weapon - Major Intellect",
+			["players"] = {
+				["Vermin"] = true,
+			},
+		},
 		["c:9149855"] = {
 			["mats"] = {
 				["i:43120"] = 1,
@@ -38598,48 +38666,6 @@ TradeSkillMasterDB = {
 			["profession"] = "Cooking",
 			["numResult"] = 1,
 			["name"] = "Roasted Boar Meat",
-			["players"] = {
-				["Vermin"] = true,
-			},
-		},
-		["c:8517785"] = {
-			["mats"] = {
-				["i:39349"] = 1,
-				["i:16203"] = 4,
-				["i:14344"] = 2,
-			},
-			["itemString"] = "i:38875",
-			["profession"] = "Enchanting",
-			["numResult"] = 1,
-			["name"] = "Scroll of Enchant 2H Weapon - Major Intellect",
-			["players"] = {
-				["Vermin"] = true,
-			},
-		},
-		["c:16587866"] = {
-			["mats"] = {
-				["i:10561"] = 1,
-				["i:12359"] = 6,
-				["i:10558"] = 3,
-			},
-			["itemString"] = "i:15846",
-			["profession"] = "Engineering",
-			["numResult"] = 1,
-			["name"] = "Salt Shaker",
-			["players"] = {
-				["Vermin"] = true,
-			},
-		},
-		["c:73001"] = {
-			["mats"] = {
-				["i:39349"] = 1,
-				["i:10940"] = 4,
-				["i:10978"] = 1,
-			},
-			["itemString"] = "i:38772",
-			["profession"] = "Enchanting",
-			["numResult"] = 1,
-			["name"] = "Scroll of Enchant 2H Weapon - Minor Impact",
 			["players"] = {
 				["Vermin"] = true,
 			},
@@ -38682,19 +38708,17 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
-		["c:16417888"] = {
+		["c:8969829"] = {
 			["mats"] = {
-				["i:40533"] = 1,
-				["i:39684"] = 1,
-				["i:36913"] = 10,
-				["i:39683"] = 2,
+				["i:43120"] = 1,
+				["i:39501"] = 1,
 			},
-			["itemString"] = "i:39688",
-			["profession"] = "Engineering",
+			["itemString"] = "i:41098",
+			["profession"] = "Inscription",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
-			["name"] = "Mark \"S\" Boomstick",
+			["name"] = "Glyph of Crusader Strike",
 			["numResult"] = 1,
 		},
 		["c:12494055"] = {
@@ -38709,16 +38733,16 @@ TradeSkillMasterDB = {
 			["name"] = "Elegant Silver Ring",
 			["numResult"] = 1,
 		},
-		["c:10319972"] = {
+		["c:1741028"] = {
 			["mats"] = {
-				["i:39334"] = 2,
+				["i:39151"] = 1,
 			},
-			["itemString"] = "i:39774",
+			["itemString"] = "i:37101",
 			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Midnight Ink",
+			["name"] = "Ivory Ink",
 			["numResult"] = 1,
 		},
 		["c:4839042"] = {
@@ -38748,17 +38772,19 @@ TradeSkillMasterDB = {
 			["name"] = "Weapon Vellum III",
 			["numResult"] = 2,
 		},
-		["c:4760217"] = {
+		["c:73001"] = {
 			["mats"] = {
-				["i:23448"] = 2,
+				["i:39349"] = 1,
+				["i:10940"] = 4,
+				["i:10978"] = 1,
 			},
-			["itemString"] = "i:23787",
-			["profession"] = "Engineering",
+			["itemString"] = "i:38772",
+			["profession"] = "Enchanting",
+			["numResult"] = 1,
+			["name"] = "Scroll of Enchant 2H Weapon - Minor Impact",
 			["players"] = {
 				["Vermin"] = true,
 			},
-			["name"] = "Felsteel Stabilizer",
-			["numResult"] = 1,
 		},
 		["c:933109"] = {
 			["mats"] = {
@@ -38772,17 +38798,16 @@ TradeSkillMasterDB = {
 				["Mxzq"] = true,
 			},
 		},
-		["c:7202017"] = {
+		["c:10319972"] = {
 			["mats"] = {
-				["i:43124"] = 1,
-				["i:39502"] = 1,
+				["i:39334"] = 2,
 			},
-			["itemString"] = "i:42955",
+			["itemString"] = "i:39774",
 			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Glyph of Ambush",
+			["name"] = "Midnight Ink",
 			["numResult"] = 1,
 		},
 		["c:6225031"] = {
@@ -38798,29 +38823,29 @@ TradeSkillMasterDB = {
 			["name"] = "Glyph of Strangulate",
 			["numResult"] = 1,
 		},
-		["c:2962547"] = {
+		["c:4760217"] = {
 			["mats"] = {
-				["i:36917"] = 1,
+				["i:23448"] = 2,
 			},
-			["itemString"] = "i:39908",
-			["profession"] = "Jewelcrafting",
+			["itemString"] = "i:23787",
+			["profession"] = "Engineering",
 			["players"] = {
-				["Battlearm"] = true,
+				["Vermin"] = true,
 			},
-			["name"] = "Flashing Bloodstone",
+			["name"] = "Felsteel Stabilizer",
 			["numResult"] = 1,
 		},
-		["c:7702820"] = {
+		["c:7202017"] = {
 			["mats"] = {
 				["i:43124"] = 1,
 				["i:39502"] = 1,
 			},
-			["itemString"] = "i:41542",
+			["itemString"] = "i:42955",
 			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Glyph of Windfury Weapon",
+			["name"] = "Glyph of Ambush",
 			["numResult"] = 1,
 		},
 		["c:2440459"] = {
@@ -38836,17 +38861,16 @@ TradeSkillMasterDB = {
 			["name"] = "Glyph of Frost Shock",
 			["numResult"] = 1,
 		},
-		["c:13406992"] = {
+		["c:2962547"] = {
 			["mats"] = {
-				["i:10648"] = 1,
-				["i:43118"] = 1,
+				["i:36917"] = 1,
 			},
-			["itemString"] = "i:43422",
-			["profession"] = "Inscription",
+			["itemString"] = "i:39908",
+			["profession"] = "Jewelcrafting",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Glyph of Overpower",
+			["name"] = "Flashing Bloodstone",
 			["numResult"] = 1,
 		},
 		["c:11279862"] = {
@@ -38861,6 +38885,19 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
+		["c:11720574"] = {
+			["mats"] = {
+				["i:43124"] = 1,
+				["i:39502"] = 1,
+			},
+			["itemString"] = "i:44955",
+			["profession"] = "Inscription",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Glyph of Arcane Blast",
+			["numResult"] = 1,
+		},
 		["c:8911732"] = {
 			["mats"] = {
 				["i:10648"] = 1,
@@ -38872,6 +38909,32 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 			["name"] = "Glyph of Holy Light",
+			["numResult"] = 1,
+		},
+		["c:13406992"] = {
+			["mats"] = {
+				["i:10648"] = 1,
+				["i:43118"] = 1,
+			},
+			["itemString"] = "i:43422",
+			["profession"] = "Inscription",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Glyph of Overpower",
+			["numResult"] = 1,
+		},
+		["c:1183567"] = {
+			["mats"] = {
+				["i:43116"] = 1,
+				["i:10648"] = 1,
+			},
+			["itemString"] = "i:42737",
+			["profession"] = "Inscription",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Glyph of Blink",
 			["numResult"] = 1,
 		},
 		["c:1693261"] = {
@@ -38887,58 +38950,19 @@ TradeSkillMasterDB = {
 			["name"] = "Heartseeker Scope",
 			["numResult"] = 1,
 		},
-		["c:3379350"] = {
+		["c:5012981"] = {
 			["mats"] = {
-				["i:12359"] = 6,
+				["i:4359"] = 2,
+				["i:2841"] = 1,
+				["i:2880"] = 1,
 			},
-			["itemString"] = "i:16000",
+			["itemString"] = "i:6712",
 			["profession"] = "Engineering",
 			["numResult"] = 1,
-			["name"] = "Thorium Tube",
+			["name"] = "Practice Lock",
 			["players"] = {
 				["Vermin"] = true,
 			},
-		},
-		["c:1183567"] = {
-			["mats"] = {
-				["i:43116"] = 1,
-				["i:10648"] = 1,
-			},
-			["itemString"] = "i:42737",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Glyph of Blink",
-			["numResult"] = 1,
-		},
-		["c:10688910"] = {
-			["mats"] = {
-				["i:36860"] = 2,
-				["i:41163"] = 8,
-				["i:35622"] = 2,
-				["i:35627"] = 2,
-				["i:35623"] = 2,
-			},
-			["itemString"] = "i:48933",
-			["profession"] = "Engineering",
-			["players"] = {
-				["Vermin"] = true,
-			},
-			["name"] = "Wormhole Generator: Northrend",
-			["numResult"] = 1,
-		},
-		["c:6908627"] = {
-			["mats"] = {
-				["i:23573"] = 3,
-			},
-			["itemString"] = "i:23785",
-			["profession"] = "Engineering",
-			["players"] = {
-				["Vermin"] = true,
-			},
-			["name"] = "Hardened Adamantite Tube",
-			["numResult"] = 1,
 		},
 		["c:9779895"] = {
 			["mats"] = {
@@ -38966,17 +38990,17 @@ TradeSkillMasterDB = {
 			["name"] = "Scroll of Stamina III",
 			["numResult"] = 2,
 		},
-		["c:8263010"] = {
+		["c:3379350"] = {
 			["mats"] = {
-				["i:39338"] = 2,
+				["i:12359"] = 6,
 			},
-			["itemString"] = "i:43116",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Lion's Ink",
+			["itemString"] = "i:16000",
+			["profession"] = "Engineering",
 			["numResult"] = 1,
+			["name"] = "Thorium Tube",
+			["players"] = {
+				["Vermin"] = true,
+			},
 		},
 		["c:9387809"] = {
 			["mats"] = {
@@ -39003,18 +39027,21 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:6822127"] = {
+		["c:10688910"] = {
 			["mats"] = {
-				["i:11137"] = 1,
-				["i:38682"] = 1,
+				["i:36860"] = 2,
+				["i:41163"] = 8,
+				["i:35622"] = 2,
+				["i:35627"] = 2,
+				["i:35623"] = 2,
 			},
-			["itemString"] = "i:38817",
-			["profession"] = "Enchanting",
-			["numResult"] = 1,
-			["name"] = "Scroll of Enchant Bracer - Strength",
+			["itemString"] = "i:48933",
+			["profession"] = "Engineering",
 			["players"] = {
 				["Vermin"] = true,
 			},
+			["name"] = "Wormhole Generator: Northrend",
+			["numResult"] = 1,
 		},
 		["c:1458757"] = {
 			["mats"] = {
@@ -39030,17 +39057,16 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:10924478"] = {
+		["c:8263010"] = {
 			["mats"] = {
-				["i:43122"] = 1,
-				["i:39501"] = 1,
+				["i:39338"] = 2,
 			},
-			["itemString"] = "i:42974",
+			["itemString"] = "i:43116",
 			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Glyph of Sprint",
+			["name"] = "Lion's Ink",
 			["numResult"] = 1,
 		},
 		["c:5220438"] = {
@@ -39057,18 +39083,18 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:14919670"] = {
+		["c:10924478"] = {
 			["mats"] = {
-				["i:3575"] = 1,
-				["i:3857"] = 1,
+				["i:43122"] = 1,
+				["i:39501"] = 1,
 			},
-			["itemString"] = "i:3859",
-			["profession"] = "Mining",
-			["numResult"] = 1,
-			["name"] = "Steel Bar",
+			["itemString"] = "i:42974",
+			["profession"] = "Inscription",
 			["players"] = {
-				["Mxzq"] = true,
+				["Battlearm"] = true,
 			},
+			["name"] = "Glyph of Sprint",
+			["numResult"] = 1,
 		},
 		["c:8310824"] = {
 			["mats"] = {
@@ -39121,16 +39147,17 @@ TradeSkillMasterDB = {
 				["Mxzq"] = true,
 			},
 		},
-		["c:6887971"] = {
+		["c:14919670"] = {
 			["mats"] = {
-				["i:2672"] = 1,
+				["i:3575"] = 1,
+				["i:3857"] = 1,
 			},
-			["itemString"] = "i:2680",
-			["profession"] = "Cooking",
+			["itemString"] = "i:3859",
+			["profession"] = "Mining",
 			["numResult"] = 1,
-			["name"] = "Spiced Wolf Meat",
+			["name"] = "Steel Bar",
 			["players"] = {
-				["Vermin"] = true,
+				["Mxzq"] = true,
 			},
 		},
 		["c:6412236"] = {
@@ -39188,6 +39215,20 @@ TradeSkillMasterDB = {
 			["name"] = "Fine Leather Cloak",
 			["numResult"] = 1,
 		},
+		["c:14296080"] = {
+			["mats"] = {
+				["i:34054"] = 8,
+				["i:37705"] = 1,
+				["i:43145"] = 1,
+			},
+			["itemString"] = "i:38986",
+			["profession"] = "Enchanting",
+			["players"] = {
+				["Vermin"] = true,
+			},
+			["name"] = "Scroll of Enchant Boots - Icewalker",
+			["numResult"] = 1,
+		},
 		["c:1157645"] = {
 			["mats"] = {
 				["i:4377"] = 3,
@@ -39201,18 +39242,6 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Vermin"] = true,
 			},
-		},
-		["c:6101277"] = {
-			["mats"] = {
-				["i:36916"] = 5,
-			},
-			["itemString"] = "i:40892",
-			["profession"] = "Engineering",
-			["players"] = {
-				["Vermin"] = true,
-			},
-			["name"] = "Hammer Pick",
-			["numResult"] = 1,
 		},
 		["c:276649"] = {
 			["mats"] = {
@@ -39252,19 +39281,18 @@ TradeSkillMasterDB = {
 			["name"] = "Enduring Dark Jade",
 			["numResult"] = 1,
 		},
-		["c:1560363"] = {
+		["c:3336937"] = {
 			["mats"] = {
-				["i:34054"] = 24,
-				["i:34055"] = 6,
-				["i:43145"] = 1,
+				["i:10648"] = 1,
+				["i:43116"] = 1,
 			},
-			["itemString"] = "i:44815",
-			["profession"] = "Enchanting",
-			["numResult"] = 1,
-			["name"] = "Scroll of Enchant Bracers - Greater Assault",
+			["itemString"] = "i:42400",
+			["profession"] = "Inscription",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
+			["name"] = "Glyph of Flash Heal",
+			["numResult"] = 1,
 		},
 		["c:13198986"] = {
 			["mats"] = {
@@ -39278,31 +39306,31 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
-		["c:9726286"] = {
+		["c:6887971"] = {
 			["mats"] = {
-				["i:38682"] = 1,
-				["i:11175"] = 2,
+				["i:2672"] = 1,
 			},
-			["itemString"] = "i:38844",
-			["profession"] = "Enchanting",
+			["itemString"] = "i:2680",
+			["profession"] = "Cooking",
+			["numResult"] = 1,
+			["name"] = "Spiced Wolf Meat",
 			["players"] = {
 				["Vermin"] = true,
 			},
-			["name"] = "Scroll of Enchant Boots - Agility",
-			["numResult"] = 1,
 		},
-		["c:3471222"] = {
+		["c:1560363"] = {
 			["mats"] = {
-				["i:43122"] = 1,
-				["i:39501"] = 1,
+				["i:34054"] = 24,
+				["i:34055"] = 6,
+				["i:43145"] = 1,
 			},
-			["itemString"] = "i:45805",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Glyph of Disease",
+			["itemString"] = "i:44815",
+			["profession"] = "Enchanting",
 			["numResult"] = 1,
+			["name"] = "Scroll of Enchant Bracers - Greater Assault",
+			["players"] = {
+				["Vermin"] = true,
+			},
 		},
 		["c:155740"] = {
 			["mats"] = {
@@ -39330,6 +39358,32 @@ TradeSkillMasterDB = {
 			["name"] = "Scroll of Stamina IV",
 			["numResult"] = 2,
 		},
+		["c:9726286"] = {
+			["mats"] = {
+				["i:38682"] = 1,
+				["i:11175"] = 2,
+			},
+			["itemString"] = "i:38844",
+			["profession"] = "Enchanting",
+			["players"] = {
+				["Vermin"] = true,
+			},
+			["name"] = "Scroll of Enchant Boots - Agility",
+			["numResult"] = 1,
+		},
+		["c:11852048"] = {
+			["mats"] = {
+				["i:39354"] = 1,
+				["i:37101"] = 2,
+			},
+			["itemString"] = "i:954",
+			["profession"] = "Inscription",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Scroll of Strength",
+			["numResult"] = 1,
+		},
 		["c:4794939"] = {
 			["mats"] = {
 				["i:11082"] = 1,
@@ -39345,18 +39399,17 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:11712548"] = {
+		["c:2891952"] = {
 			["mats"] = {
-				["i:43124"] = 1,
-				["i:39502"] = 1,
+				["i:3860"] = 3,
 			},
-			["itemString"] = "i:42406",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Glyph of Shadow Word: Pain",
+			["itemString"] = "i:10561",
+			["profession"] = "Engineering",
 			["numResult"] = 1,
+			["name"] = "Mithril Casing",
+			["players"] = {
+				["Vermin"] = true,
+			},
 		},
 		["c:8312849"] = {
 			["mats"] = {
@@ -39370,32 +39423,6 @@ TradeSkillMasterDB = {
 			},
 			["name"] = "Glyph of Mana Gem",
 			["numResult"] = 1,
-		},
-		["c:2891952"] = {
-			["mats"] = {
-				["i:3860"] = 3,
-			},
-			["itemString"] = "i:10561",
-			["profession"] = "Engineering",
-			["numResult"] = 1,
-			["name"] = "Mithril Casing",
-			["players"] = {
-				["Vermin"] = true,
-			},
-		},
-		["c:421941"] = {
-			["mats"] = {
-				["i:23781"] = 2,
-				["i:23446"] = 1,
-				["i:4470"] = 4,
-			},
-			["itemString"] = "i:34504",
-			["profession"] = "Engineering",
-			["numResult"] = 1,
-			["name"] = "Adamantite Shell Machine",
-			["players"] = {
-				["Vermin"] = true,
-			},
 		},
 		["c:3228304"] = {
 			["mats"] = {
@@ -39424,17 +39451,17 @@ TradeSkillMasterDB = {
 			["name"] = "Rigid Golden Draenite",
 			["numResult"] = 1,
 		},
-		["c:1627319"] = {
+		["c:11712548"] = {
 			["mats"] = {
-				["i:39354"] = 1,
-				["i:39774"] = 1,
+				["i:43124"] = 1,
+				["i:39502"] = 1,
 			},
-			["itemString"] = "i:42462",
+			["itemString"] = "i:42406",
 			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Glyph of Healthstone",
+			["name"] = "Glyph of Shadow Word: Pain",
 			["numResult"] = 1,
 		},
 		["c:564482"] = {
@@ -39480,16 +39507,17 @@ TradeSkillMasterDB = {
 		},
 		["c:3039131"] = {
 			["mats"] = {
-				["i:39502"] = 2,
-				["i:43126"] = 1,
+				["i:23781"] = 2,
+				["i:23446"] = 1,
+				["i:4470"] = 4,
 			},
-			["itemString"] = "i:43463",
-			["profession"] = "Inscription",
+			["itemString"] = "i:34504",
+			["profession"] = "Engineering",
+			["numResult"] = 1,
+			["name"] = "Adamantite Shell Machine",
 			["players"] = {
-				["Battlearm"] = true,
+				["Vermin"] = true,
 			},
-			["name"] = "Scroll of Agility VII",
-			["numResult"] = 2,
 		},
 		["c:11995201"] = {
 			["mats"] = {
@@ -39561,17 +39589,18 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
-		["c:9362942"] = {
+		["c:3039131"] = {
 			["mats"] = {
-				["i:7912"] = 10,
+				["i:39502"] = 2,
+				["i:43126"] = 1,
 			},
-			["itemString"] = "i:25882",
-			["profession"] = "Jewelcrafting",
-			["numResult"] = 1,
-			["name"] = "Solid Stone Statue",
+			["itemString"] = "i:43463",
+			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
+			["name"] = "Scroll of Agility VII",
+			["numResult"] = 2,
 		},
 		["c:13898746"] = {
 			["mats"] = {
@@ -39588,30 +39617,30 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:11852048"] = {
+		["c:1627319"] = {
 			["mats"] = {
 				["i:39354"] = 1,
-				["i:37101"] = 2,
+				["i:39774"] = 1,
 			},
-			["itemString"] = "i:954",
+			["itemString"] = "i:42462",
 			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Scroll of Strength",
+			["name"] = "Glyph of Healthstone",
 			["numResult"] = 1,
 		},
-		["c:8876396"] = {
+		["c:9362942"] = {
 			["mats"] = {
-				["i:23077"] = 1,
+				["i:7912"] = 10,
 			},
-			["itemString"] = "i:28595",
+			["itemString"] = "i:25882",
 			["profession"] = "Jewelcrafting",
+			["numResult"] = 1,
+			["name"] = "Solid Stone Statue",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Bright Blood Garnet",
-			["numResult"] = 1,
 		},
 		["c:1001486"] = {
 			["mats"] = {
@@ -39643,15 +39672,14 @@ TradeSkillMasterDB = {
 		},
 		["c:3336937"] = {
 			["mats"] = {
-				["i:10648"] = 1,
-				["i:43116"] = 1,
+				["i:23077"] = 1,
 			},
-			["itemString"] = "i:42400",
-			["profession"] = "Inscription",
+			["itemString"] = "i:28595",
+			["profession"] = "Jewelcrafting",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Glyph of Flash Heal",
+			["name"] = "Bright Blood Garnet",
 			["numResult"] = 1,
 		},
 		["c:6985596"] = {
@@ -39704,6 +39732,8 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Vermin"] = true,
 			},
+			["name"] = "Hammer Pick",
+			["numResult"] = 1,
 		},
 		["c:6144298"] = {
 			["mats"] = {
@@ -39732,15 +39762,16 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:2043625"] = {
+		["c:5220438"] = {
 			["mats"] = {
-				["i:10938"] = 2,
 				["i:38682"] = 1,
+				["i:11176"] = 2,
+				["i:11175"] = 1,
 			},
-			["itemString"] = "i:38774",
+			["itemString"] = "i:38839",
 			["profession"] = "Enchanting",
 			["numResult"] = 1,
-			["name"] = "Scroll of Enchant Bracer - Minor Spirit",
+			["name"] = "Scroll of Enchant Shield - Greater Spirit",
 			["players"] = {
 				["Vermin"] = true,
 			},
@@ -39784,18 +39815,42 @@ TradeSkillMasterDB = {
 			["name"] = "Glyph of Lightning Shield",
 			["numResult"] = 1,
 		},
-		["c:11720574"] = {
+		["c:2043625"] = {
 			["mats"] = {
-				["i:43124"] = 1,
-				["i:39502"] = 1,
+				["i:10938"] = 2,
+				["i:38682"] = 1,
 			},
-			["itemString"] = "i:44955",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Glyph of Arcane Blast",
+			["itemString"] = "i:38774",
+			["profession"] = "Enchanting",
 			["numResult"] = 1,
+			["name"] = "Scroll of Enchant Bracer - Minor Spirit",
+			["players"] = {
+				["Vermin"] = true,
+			},
+		},
+		["c:6908627"] = {
+			["mats"] = {
+				["i:23573"] = 3,
+			},
+			["itemString"] = "i:23785",
+			["profession"] = "Engineering",
+			["players"] = {
+				["Vermin"] = true,
+			},
+			["name"] = "Hardened Adamantite Tube",
+			["numResult"] = 1,
+		},
+		["c:12810706"] = {
+			["mats"] = {
+				["i:2772"] = 1,
+			},
+			["itemString"] = "i:3575",
+			["profession"] = "Mining",
+			["numResult"] = 1,
+			["name"] = "Iron Bar",
+			["players"] = {
+				["Mxzq"] = true,
+			},
 		},
 		["c:1483562"] = {
 			["mats"] = {
@@ -39811,17 +39866,18 @@ TradeSkillMasterDB = {
 			["name"] = "Scroll of Enchant Bracers - Greater Spellpower",
 			["numResult"] = 1,
 		},
-		["c:12810706"] = {
+		["c:7702820"] = {
 			["mats"] = {
-				["i:2772"] = 1,
+				["i:43124"] = 1,
+				["i:39502"] = 1,
 			},
-			["itemString"] = "i:3575",
-			["profession"] = "Mining",
-			["numResult"] = 1,
-			["name"] = "Iron Bar",
+			["itemString"] = "i:41542",
+			["profession"] = "Inscription",
 			["players"] = {
-				["Mxzq"] = true,
+				["Battlearm"] = true,
 			},
+			["name"] = "Glyph of Windfury Weapon",
+			["numResult"] = 1,
 		},
 		["c:11153389"] = {
 			["mats"] = {
@@ -39846,31 +39902,6 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 			["name"] = "Scroll of Enchant Bracer - Greater Intellect",
-			["numResult"] = 1,
-		},
-		["c:1741028"] = {
-			["mats"] = {
-				["i:39151"] = 1,
-			},
-			["itemString"] = "i:37101",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Ivory Ink",
-			["numResult"] = 1,
-		},
-		["c:8969829"] = {
-			["mats"] = {
-				["i:43120"] = 1,
-				["i:39501"] = 1,
-			},
-			["itemString"] = "i:41098",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Glyph of Crusader Strike",
 			["numResult"] = 1,
 		},
 		["c:9659138"] = {
@@ -39910,32 +39941,34 @@ TradeSkillMasterDB = {
 			["name"] = "Puissant Shadow Crystal",
 			["numResult"] = 1,
 		},
-		["c:1784786"] = {
+		["c:16417888"] = {
 			["mats"] = {
-				["i:43145"] = 1,
-				["i:34055"] = 3,
-				["i:34054"] = 16,
+				["i:40533"] = 1,
+				["i:39684"] = 1,
+				["i:36913"] = 10,
+				["i:39683"] = 2,
 			},
-			["itemString"] = "i:38987",
-			["profession"] = "Enchanting",
-			["numResult"] = 1,
-			["name"] = "Scroll of Enchant Bracers - Greater Stats",
+			["itemString"] = "i:39688",
+			["profession"] = "Engineering",
 			["players"] = {
 				["Vermin"] = true,
 			},
-		},
-		["c:7046775"] = {
-			["mats"] = {
-				["i:39774"] = 1,
-				["i:39354"] = 1,
-			},
-			["itemString"] = "i:1477",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Scroll of Agility II",
+			["name"] = "Mark \"S\" Boomstick",
 			["numResult"] = 1,
+		},
+		["c:16587866"] = {
+			["mats"] = {
+				["i:10561"] = 1,
+				["i:12359"] = 6,
+				["i:10558"] = 3,
+			},
+			["itemString"] = "i:15846",
+			["profession"] = "Engineering",
+			["numResult"] = 1,
+			["name"] = "Salt Shaker",
+			["players"] = {
+				["Vermin"] = true,
+			},
 		},
 		["c:7593824"] = {
 			["mats"] = {
@@ -39978,18 +40011,17 @@ TradeSkillMasterDB = {
 			["name"] = "Scroll of Intellect II",
 			["numResult"] = 1,
 		},
-		["c:13026161"] = {
+		["c:7046775"] = {
 			["mats"] = {
-				["i:34056"] = 4,
-				["i:34054"] = 4,
-				["i:43145"] = 1,
+				["i:39774"] = 1,
+				["i:39354"] = 1,
 			},
-			["itemString"] = "i:44449",
-			["profession"] = "Enchanting",
+			["itemString"] = "i:1477",
+			["profession"] = "Inscription",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
-			["name"] = "Scroll of Enchant Boots - Assault",
+			["name"] = "Scroll of Agility II",
 			["numResult"] = 1,
 		},
 		["c:1108451"] = {
@@ -40020,20 +40052,19 @@ TradeSkillMasterDB = {
 			["name"] = "Sun Rock Ring",
 			["numResult"] = 1,
 		},
-		["c:2993683"] = {
+		["c:13026161"] = {
 			["mats"] = {
-				["i:22445"] = 8,
-				["i:14344"] = 2,
-				["i:37602"] = 1,
-				["i:13446"] = 4,
+				["i:34056"] = 4,
+				["i:34054"] = 4,
+				["i:43145"] = 1,
 			},
-			["itemString"] = "i:38911",
+			["itemString"] = "i:44449",
 			["profession"] = "Enchanting",
-			["numResult"] = 1,
-			["name"] = "Scroll of Enchant Chest - Exceptional Health",
 			["players"] = {
 				["Vermin"] = true,
 			},
+			["name"] = "Scroll of Enchant Boots - Assault",
+			["numResult"] = 1,
 		},
 		["c:4383484"] = {
 			["mats"] = {
@@ -40061,30 +40092,34 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:8267210"] = {
+		["c:11030172"] = {
 			["mats"] = {
-				["i:10648"] = 1,
-				["i:43120"] = 2,
+				["i:1705"] = 3,
+				["i:2842"] = 4,
+				["i:11083"] = 4,
+				["i:3827"] = 2,
+				["i:5498"] = 3,
 			},
-			["itemString"] = "i:43850",
-			["profession"] = "Inscription",
+			["itemString"] = "i:20832",
+			["profession"] = "Jewelcrafting",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Certificate of Ownership",
+			["name"] = "Moonsoul Crown",
 			["numResult"] = 1,
 		},
-		["c:4028534"] = {
+		["c:4728811"] = {
 			["mats"] = {
-				["i:10648"] = 1,
-				["i:43118"] = 1,
+				["i:21929"] = 1,
+				["i:12803"] = 4,
+				["i:7078"] = 4,
 			},
-			["itemString"] = "i:41104",
-			["profession"] = "Inscription",
+			["itemString"] = "i:21779",
+			["profession"] = "Jewelcrafting",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Glyph of Cleansing",
+			["name"] = "Band of Natural Fire",
 			["numResult"] = 1,
 		},
 		["c:5993289"] = {
@@ -40100,18 +40135,17 @@ TradeSkillMasterDB = {
 			["name"] = "Glyph of Evocation",
 			["numResult"] = 1,
 		},
-		["c:2415219"] = {
+		["c:4028534"] = {
 			["mats"] = {
-				["i:39683"] = 2,
-				["i:39682"] = 4,
-				["i:39681"] = 2,
+				["i:10648"] = 1,
+				["i:43118"] = 1,
 			},
-			["itemString"] = "i:40767",
-			["profession"] = "Engineering",
+			["itemString"] = "i:41104",
+			["profession"] = "Inscription",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
-			["name"] = "Sonic Booster",
+			["name"] = "Glyph of Cleansing",
 			["numResult"] = 1,
 		},
 		["c:9285611"] = {
@@ -40127,17 +40161,17 @@ TradeSkillMasterDB = {
 			["name"] = "Glyph of the Hawk",
 			["numResult"] = 1,
 		},
-		["c:85002"] = {
+		["c:2416071"] = {
 			["mats"] = {
-				["i:2840"] = 4,
-				["i:20816"] = 2,
+				["i:39354"] = 1,
+				["i:39469"] = 1,
 			},
-			["itemString"] = "i:21932",
-			["profession"] = "Jewelcrafting",
+			["itemString"] = "i:37118",
+			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Heavy Copper Ring",
+			["name"] = "Scroll of Recall",
 			["numResult"] = 1,
 		},
 		["c:322103"] = {
@@ -40245,31 +40279,31 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:6423390"] = {
+		["c:13102168"] = {
 			["mats"] = {
-				["i:2320"] = 1,
-				["i:2318"] = 3,
+				["i:43120"] = 1,
+				["i:39501"] = 1,
+				["i:43121"] = 2,
 			},
-			["itemString"] = "i:5957",
-			["profession"] = "Leatherworking",
-			["players"] = {
-				["Vermina"] = true,
-			},
-			["name"] = "Handstitched Leather Vest",
-			["numResult"] = 1,
-		},
-		["c:4751450"] = {
-			["mats"] = {
-				["i:39774"] = 3,
-				["i:39354"] = 2,
-			},
-			["itemString"] = "i:39349",
+			["itemString"] = "i:44163",
 			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Weapon Vellum",
-			["numResult"] = 2,
+			["name"] = "Shadowy Tarot",
+			["numResult"] = 1,
+		},
+		["c:13473221"] = {
+			["mats"] = {
+				["i:36913"] = 10,
+			},
+			["itemString"] = "i:40769",
+			["profession"] = "Engineering",
+			["players"] = {
+				["Vermin"] = true,
+			},
+			["name"] = "Scrapbot Construction Kit",
+			["numResult"] = 5,
 		},
 		["c:2133432"] = {
 			["mats"] = {
@@ -40298,32 +40332,31 @@ TradeSkillMasterDB = {
 			["name"] = "Scroll of Enchant Chest - Mighty Health",
 			["numResult"] = 1,
 		},
-		["c:15545014"] = {
+		["c:13768323"] = {
 			["mats"] = {
-				["i:11174"] = 1,
-				["i:38682"] = 1,
-				["i:11137"] = 4,
+				["i:10561"] = 2,
+				["i:10560"] = 1,
+				["i:10505"] = 2,
 			},
-			["itemString"] = "i:45628",
-			["profession"] = "Enchanting",
-			["numResult"] = 1,
-			["name"] = "Scroll of Enchant Boots - Lesser Accuracy",
+			["itemString"] = "i:10562",
+			["profession"] = "Engineering",
+			["numResult"] = 4,
+			["name"] = "Hi-Explosive Bomb",
 			["players"] = {
 				["Vermin"] = true,
 			},
 		},
-		["c:14189748"] = {
+		["c:12303538"] = {
 			["mats"] = {
-				["i:11137"] = 1,
-				["i:11291"] = 1,
-				["i:11135"] = 1,
+				["i:10648"] = 1,
+				["i:43116"] = 1,
 			},
-			["itemString"] = "i:11290",
-			["profession"] = "Enchanting",
+			["itemString"] = "i:42735",
+			["profession"] = "Inscription",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
-			["name"] = "Greater Mystic Wand",
+			["name"] = "Glyph of Arcane Missiles",
 			["numResult"] = 1,
 		},
 		["c:4697978"] = {
@@ -40339,14 +40372,16 @@ TradeSkillMasterDB = {
 			["name"] = "Linen Bandage",
 			["numResult"] = 1,
 		},
-		["c:8699391"] = {
+		["c:15545014"] = {
 			["mats"] = {
-				["i:22450"] = 2,
+				["i:11174"] = 1,
+				["i:38682"] = 1,
+				["i:11137"] = 4,
 			},
-			["itemString"] = "i:22459",
+			["itemString"] = "i:45628",
 			["profession"] = "Enchanting",
 			["numResult"] = 1,
-			["name"] = "Void Sphere",
+			["name"] = "Scroll of Enchant Boots - Lesser Accuracy",
 			["players"] = {
 				["Vermin"] = true,
 			},
@@ -40364,30 +40399,31 @@ TradeSkillMasterDB = {
 			["name"] = "Scroll of Agility VI",
 			["numResult"] = 2,
 		},
-		["c:4938299"] = {
+		["c:14189748"] = {
 			["mats"] = {
-				["i:43120"] = 1,
-				["i:39501"] = 2,
+				["i:11137"] = 1,
+				["i:11291"] = 1,
+				["i:11135"] = 1,
 			},
-			["itemString"] = "i:10308",
-			["profession"] = "Inscription",
+			["itemString"] = "i:11290",
+			["profession"] = "Enchanting",
 			["players"] = {
-				["Battlearm"] = true,
+				["Vermin"] = true,
 			},
-			["name"] = "Scroll of Intellect IV",
-			["numResult"] = 2,
-		},
-		["c:8780374"] = {
-			["mats"] = {
-				["i:43109"] = 2,
-			},
-			["itemString"] = "i:43127",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Snowfall Ink",
+			["name"] = "Greater Mystic Wand",
 			["numResult"] = 1,
+		},
+		["c:8699391"] = {
+			["mats"] = {
+				["i:22450"] = 2,
+			},
+			["itemString"] = "i:22459",
+			["profession"] = "Enchanting",
+			["numResult"] = 1,
+			["name"] = "Void Sphere",
+			["players"] = {
+				["Vermin"] = true,
+			},
 		},
 		["c:7540719"] = {
 			["mats"] = {
@@ -40433,34 +40469,33 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:11301362"] = {
+		["c:8780374"] = {
 			["mats"] = {
 				["i:4389"] = 1,
 				["i:4387"] = 1,
 				["i:4234"] = 4,
 				["i:4382"] = 1,
 			},
-			["itemString"] = "i:4392",
-			["profession"] = "Engineering",
-			["numResult"] = 1,
-			["name"] = "Advanced Target Dummy",
+			["itemString"] = "i:43127",
+			["profession"] = "Inscription",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
+			["name"] = "Snowfall Ink",
+			["numResult"] = 1,
 		},
-		["c:4379222"] = {
+		["c:5187597"] = {
 			["mats"] = {
-				["i:11137"] = 1,
-				["i:38682"] = 1,
-				["i:11174"] = 1,
+				["i:2320"] = 5,
+				["i:2318"] = 8,
 			},
-			["itemString"] = "i:38827",
-			["profession"] = "Enchanting",
-			["numResult"] = 1,
-			["name"] = "Scroll of Enchant Gloves - Agility",
+			["itemString"] = "i:2309",
+			["profession"] = "Leatherworking",
 			["players"] = {
-				["Vermin"] = true,
+				["Vermina"] = true,
 			},
+			["name"] = "Embossed Leather Boots",
+			["numResult"] = 1,
 		},
 		["c:11805196"] = {
 			["mats"] = {
@@ -40517,6 +40552,31 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
+		["c:2096721"] = {
+			["mats"] = {
+				["i:2770"] = 1,
+			},
+			["itemString"] = "i:2840",
+			["profession"] = "Mining",
+			["players"] = {
+				["Mxzq"] = true,
+			},
+			["name"] = "Copper Bar",
+			["numResult"] = 1,
+		},
+		["c:12620491"] = {
+			["mats"] = {
+				["i:43124"] = 1,
+				["i:39501"] = 2,
+			},
+			["itemString"] = "i:33462",
+			["profession"] = "Inscription",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Scroll of Strength VI",
+			["numResult"] = 2,
+		},
 		["c:2005265"] = {
 			["mats"] = {
 				["i:10648"] = 1,
@@ -40542,32 +40602,6 @@ TradeSkillMasterDB = {
 			["name"] = "Rough Stone Statue",
 			["numResult"] = 1,
 		},
-		["c:2578885"] = {
-			["mats"] = {
-				["i:12364"] = 2,
-				["i:21752"] = 1,
-			},
-			["itemString"] = "i:29160",
-			["profession"] = "Jewelcrafting",
-			["numResult"] = 1,
-			["name"] = "Emerald Lion Ring",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-		},
-		["c:5849131"] = {
-			["mats"] = {
-				["i:43124"] = 1,
-				["i:39502"] = 1,
-			},
-			["itemString"] = "i:43428",
-			["profession"] = "Inscription",
-			["numResult"] = 1,
-			["name"] = "Glyph of Sweeping Strikes",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-		},
 		["c:13551466"] = {
 			["mats"] = {
 				["i:2320"] = 2,
@@ -40581,19 +40615,18 @@ TradeSkillMasterDB = {
 			["name"] = "Fine Leather Belt",
 			["numResult"] = 1,
 		},
-		["c:1308344"] = {
+		["c:5849131"] = {
 			["mats"] = {
-				["i:34054"] = 20,
-				["i:34055"] = 4,
-				["i:43145"] = 1,
+				["i:43124"] = 1,
+				["i:39502"] = 1,
 			},
-			["itemString"] = "i:39005",
-			["profession"] = "Enchanting",
-			["players"] = {
-				["Vermin"] = true,
-			},
-			["name"] = "Scroll of Enchant Chest - Super Health",
+			["itemString"] = "i:43428",
+			["profession"] = "Inscription",
 			["numResult"] = 1,
+			["name"] = "Glyph of Sweeping Strikes",
+			["players"] = {
+				["Battlearm"] = true,
+			},
 		},
 		["c:13009780"] = {
 			["mats"] = {
@@ -40609,17 +40642,19 @@ TradeSkillMasterDB = {
 			["name"] = "Manual of Clouds",
 			["numResult"] = 1,
 		},
-		["c:1201740"] = {
+		["c:1308344"] = {
 			["mats"] = {
-				["i:36913"] = 2,
+				["i:34054"] = 20,
+				["i:34055"] = 4,
+				["i:43145"] = 1,
 			},
-			["itemString"] = "i:41165",
-			["profession"] = "Engineering",
-			["numResult"] = 1000,
-			["name"] = "Saronite Razorheads",
+			["itemString"] = "i:39005",
+			["profession"] = "Enchanting",
 			["players"] = {
 				["Vermin"] = true,
 			},
+			["name"] = "Scroll of Enchant Chest - Super Health",
+			["numResult"] = 1,
 		},
 		["c:725461"] = {
 			["mats"] = {
@@ -40713,6 +40748,33 @@ TradeSkillMasterDB = {
 			["name"] = "Glyph of Bone Shield",
 			["numResult"] = 1,
 		},
+		["c:3083790"] = {
+			["mats"] = {
+				["i:10648"] = 1,
+				["i:43116"] = 1,
+			},
+			["itemString"] = "i:42908",
+			["profession"] = "Inscription",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Glyph of Immolation Trap",
+			["numResult"] = 1,
+		},
+		["c:16306022"] = {
+			["mats"] = {
+				["i:36918"] = 1,
+				["i:36933"] = 2,
+				["i:41163"] = 2,
+			},
+			["itemString"] = "i:42418",
+			["profession"] = "Jewelcrafting",
+			["numResult"] = 1,
+			["name"] = "Figurine - Emerald Boar",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+		},
 		["c:11874557"] = {
 			["mats"] = {
 				["i:10561"] = 2,
@@ -40729,32 +40791,6 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:16306022"] = {
-			["mats"] = {
-				["i:36918"] = 1,
-				["i:36933"] = 2,
-				["i:41163"] = 2,
-			},
-			["itemString"] = "i:42418",
-			["profession"] = "Jewelcrafting",
-			["numResult"] = 1,
-			["name"] = "Figurine - Emerald Boar",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-		},
-		["c:11342228"] = {
-			["mats"] = {
-				["i:36932"] = 1,
-			},
-			["itemString"] = "i:39978",
-			["profession"] = "Jewelcrafting",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Forceful Dark Jade",
-			["numResult"] = 1,
-		},
 		["c:15168516"] = {
 			["mats"] = {
 				["i:4357"] = 1,
@@ -40768,17 +40804,16 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:4946895"] = {
+		["c:11342228"] = {
 			["mats"] = {
-				["i:39501"] = 1,
-				["i:43120"] = 1,
+				["i:36932"] = 1,
 			},
-			["itemString"] = "i:42466",
-			["profession"] = "Inscription",
+			["itemString"] = "i:39978",
+			["profession"] = "Jewelcrafting",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Glyph of Searing Pain",
+			["name"] = "Forceful Dark Jade",
 			["numResult"] = 1,
 		},
 		["c:11861288"] = {
@@ -40806,16 +40841,17 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:15742222"] = {
+		["c:4946895"] = {
 			["mats"] = {
-				["i:36929"] = 1,
+				["i:39501"] = 1,
+				["i:43120"] = 1,
 			},
-			["itemString"] = "i:39966",
-			["profession"] = "Jewelcrafting",
+			["itemString"] = "i:42466",
+			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Accurate Huge Citrine",
+			["name"] = "Glyph of Searing Pain",
 			["numResult"] = 1,
 		},
 		["c:2324333"] = {
@@ -40832,21 +40868,17 @@ TradeSkillMasterDB = {
 			["name"] = "Heavy Jade Ring",
 			["numResult"] = 1,
 		},
-		["c:13195263"] = {
+		["c:15742222"] = {
 			["mats"] = {
-				["i:34054"] = 12,
-				["i:34052"] = 4,
-				["i:43146"] = 1,
-				["i:34055"] = 4,
-				["i:34057"] = 10,
+				["i:36929"] = 1,
 			},
-			["itemString"] = "i:44493",
-			["profession"] = "Enchanting",
-			["numResult"] = 1,
-			["name"] = "Scroll of Enchant Weapon - Berserking",
+			["itemString"] = "i:39966",
+			["profession"] = "Jewelcrafting",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
+			["name"] = "Accurate Huge Citrine",
+			["numResult"] = 1,
 		},
 		["c:8634808"] = {
 			["mats"] = {
@@ -40874,6 +40906,31 @@ TradeSkillMasterDB = {
 			["name"] = "Crystal Chalcedony Amulet",
 			["numResult"] = 1,
 		},
+		["c:8117844"] = {
+			["mats"] = {
+				["i:43108"] = 1,
+			},
+			["itemString"] = "i:43125",
+			["profession"] = "Inscription",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Darkflame Ink",
+			["numResult"] = 1,
+		},
+		["c:10095649"] = {
+			["mats"] = {
+				["i:2320"] = 4,
+				["i:2318"] = 8,
+			},
+			["itemString"] = "i:2300",
+			["profession"] = "Leatherworking",
+			["players"] = {
+				["Vermina"] = true,
+			},
+			["name"] = "Embossed Leather Vest",
+			["numResult"] = 1,
+		},
 		["c:2412779"] = {
 			["mats"] = {
 				["i:10648"] = 2,
@@ -40886,6 +40943,22 @@ TradeSkillMasterDB = {
 			},
 			["name"] = "Scroll of Strength III",
 			["numResult"] = 5,
+		},
+		["c:3325202"] = {
+			["mats"] = {
+				["i:22446"] = 8,
+				["i:22449"] = 10,
+				["i:39350"] = 1,
+				["i:22450"] = 6,
+				["i:22445"] = 40,
+			},
+			["itemString"] = "i:38925",
+			["profession"] = "Enchanting",
+			["players"] = {
+				["Vermin"] = true,
+			},
+			["name"] = "Scroll of Enchant Weapon - Mongoose",
+			["numResult"] = 1,
 		},
 		["c:3386104"] = {
 			["mats"] = {
@@ -40913,22 +40986,6 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:3325202"] = {
-			["mats"] = {
-				["i:22446"] = 8,
-				["i:22449"] = 10,
-				["i:39350"] = 1,
-				["i:22450"] = 6,
-				["i:22445"] = 40,
-			},
-			["itemString"] = "i:38925",
-			["profession"] = "Enchanting",
-			["players"] = {
-				["Vermin"] = true,
-			},
-			["name"] = "Scroll of Enchant Weapon - Mongoose",
-			["numResult"] = 1,
-		},
 		["c:8060077"] = {
 			["mats"] = {
 				["i:2318"] = 2,
@@ -40941,34 +40998,6 @@ TradeSkillMasterDB = {
 			},
 			["name"] = "Handstitched Leather Cloak",
 			["numResult"] = 1,
-		},
-		["c:3847088"] = {
-			["mats"] = {
-				["i:35624"] = 1,
-				["i:36929"] = 2,
-				["i:36932"] = 2,
-			},
-			["itemString"] = "i:42338",
-			["profession"] = "Jewelcrafting",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Jade Dagger Pendant",
-			["numResult"] = 1,
-		},
-		["c:1829539"] = {
-			["mats"] = {
-				["i:36918"] = 2,
-				["i:36921"] = 1,
-				["i:41163"] = 2,
-			},
-			["itemString"] = "i:42341",
-			["profession"] = "Jewelcrafting",
-			["numResult"] = 1,
-			["name"] = "Figurine - Ruby Hare",
-			["players"] = {
-				["Battlearm"] = true,
-			},
 		},
 		["c:3331836"] = {
 			["mats"] = {
@@ -41035,16 +41064,16 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
-		["c:14650121"] = {
+		["c:15905468"] = {
 			["mats"] = {
 				["i:36926"] = 1,
 			},
-			["itemString"] = "i:39934",
+			["itemString"] = "i:39940",
 			["profession"] = "Jewelcrafting",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Sovereign Shadow Crystal",
+			["name"] = "Guardian's Shadow Crystal",
 			["numResult"] = 1,
 		},
 		["c:10605985"] = {
@@ -41100,6 +41129,30 @@ TradeSkillMasterDB = {
 			["name"] = "Tigerseye Band",
 			["numResult"] = 1,
 		},
+		["c:14650121"] = {
+			["mats"] = {
+				["i:36926"] = 1,
+			},
+			["itemString"] = "i:39934",
+			["profession"] = "Jewelcrafting",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Sovereign Shadow Crystal",
+			["numResult"] = 1,
+		},
+		["c:7148125"] = {
+			["mats"] = {
+				["i:12365"] = 2,
+			},
+			["itemString"] = "i:15992",
+			["profession"] = "Engineering",
+			["players"] = {
+				["Vermin"] = true,
+			},
+			["name"] = "Dense Blasting Powder",
+			["numResult"] = 1,
+		},
 		["c:13813794"] = {
 			["mats"] = {
 				["i:1210"] = 1,
@@ -41112,33 +41165,6 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 			["name"] = "Thick Bronze Necklace",
-			["numResult"] = 1,
-		},
-		["c:10225547"] = {
-			["mats"] = {
-				["i:36929"] = 1,
-			},
-			["itemString"] = "i:39963",
-			["profession"] = "Jewelcrafting",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Stark Huge Citrine",
-			["numResult"] = 1,
-		},
-		["c:10573867"] = {
-			["mats"] = {
-				["i:36920"] = 2,
-				["i:36917"] = 1,
-				["i:36923"] = 1,
-				["i:35624"] = 1,
-			},
-			["itemString"] = "i:42339",
-			["profession"] = "Jewelcrafting",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Blood Sun Necklace",
 			["numResult"] = 1,
 		},
 		["c:2175808"] = {
@@ -41194,20 +41220,18 @@ TradeSkillMasterDB = {
 			["name"] = "Woven Copper Ring",
 			["numResult"] = 1,
 		},
-		["c:8919274"] = {
+		["c:7394677"] = {
 			["mats"] = {
-				["i:43145"] = 1,
-				["i:34054"] = 20,
-				["i:34052"] = 1,
-				["i:34055"] = 4,
+				["i:43120"] = 1,
+				["i:39501"] = 1,
 			},
-			["itemString"] = "i:44458",
-			["profession"] = "Enchanting",
-			["numResult"] = 1,
-			["name"] = "Scroll of Enchant Gloves - Crusher",
+			["itemString"] = "i:42744",
+			["profession"] = "Inscription",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
+			["name"] = "Glyph of Ice Block",
+			["numResult"] = 1,
 		},
 		["c:1634730"] = {
 			["mats"] = {
@@ -41235,17 +41259,17 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:2196577"] = {
+		["c:8274295"] = {
 			["mats"] = {
-				["i:43105"] = 1,
+				["i:2771"] = 1,
 			},
-			["itemString"] = "i:43119",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Royal Ink",
+			["itemString"] = "i:3576",
+			["profession"] = "Mining",
 			["numResult"] = 1,
+			["name"] = "Tin Bar",
+			["players"] = {
+				["Mxzq"] = true,
+			},
 		},
 		["c:13808879"] = {
 			["mats"] = {
@@ -41261,17 +41285,17 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:16583337"] = {
+		["c:2196577"] = {
 			["mats"] = {
-				["i:2835"] = 1,
+				["i:43105"] = 1,
 			},
-			["itemString"] = "i:4357",
-			["profession"] = "Engineering",
-			["numResult"] = 1,
-			["name"] = "Rough Blasting Powder",
+			["itemString"] = "i:43119",
+			["profession"] = "Inscription",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
+			["name"] = "Royal Ink",
+			["numResult"] = 1,
 		},
 		["c:5196667"] = {
 			["mats"] = {
@@ -41301,6 +41325,31 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
+		["c:16583337"] = {
+			["mats"] = {
+				["i:2835"] = 1,
+			},
+			["itemString"] = "i:4357",
+			["profession"] = "Engineering",
+			["numResult"] = 1,
+			["name"] = "Rough Blasting Powder",
+			["players"] = {
+				["Vermin"] = true,
+			},
+		},
+		["c:8278381"] = {
+			["mats"] = {
+				["i:36926"] = 1,
+				["i:36932"] = 1,
+			},
+			["itemString"] = "i:42421",
+			["profession"] = "Jewelcrafting",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Shadow Jade Focusing Lens",
+			["numResult"] = 1,
+		},
 		["c:2804768"] = {
 			["mats"] = {
 				["i:36929"] = 1,
@@ -41328,30 +41377,6 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
-		["c:12711151"] = {
-			["mats"] = {
-				["i:36926"] = 1,
-			},
-			["itemString"] = "i:42420",
-			["profession"] = "Jewelcrafting",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Shadow Crystal Focusing Lens",
-			["numResult"] = 1,
-		},
-		["c:2681934"] = {
-			["mats"] = {
-				["i:36926"] = 1,
-			},
-			["itemString"] = "i:39936",
-			["profession"] = "Jewelcrafting",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Glowing Shadow Crystal",
-			["numResult"] = 1,
-		},
 		["c:15492211"] = {
 			["mats"] = {
 				["i:4338"] = 2,
@@ -41365,19 +41390,17 @@ TradeSkillMasterDB = {
 			["name"] = "Heavy Mageweave Bandage",
 			["numResult"] = 1,
 		},
-		["c:16707963"] = {
+		["c:2681934"] = {
 			["mats"] = {
-				["i:6217"] = 1,
-				["i:10938"] = 1,
-				["i:10940"] = 1,
+				["i:36926"] = 1,
 			},
-			["itemString"] = "i:6218",
-			["profession"] = "Enchanting",
-			["numResult"] = 1,
-			["name"] = "Runed Copper Rod",
+			["itemString"] = "i:39936",
+			["profession"] = "Jewelcrafting",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
+			["name"] = "Glowing Shadow Crystal",
+			["numResult"] = 1,
 		},
 		["c:1928793"] = {
 			["mats"] = {
@@ -41432,6 +41455,34 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
+		["c:1040590"] = {
+			["mats"] = {
+				["i:36920"] = 1,
+			},
+			["itemString"] = "i:39915",
+			["profession"] = "Jewelcrafting",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+			["name"] = "Rigid Sun Crystal",
+			["numResult"] = 1,
+		},
+		["c:8226732"] = {
+			["mats"] = {
+				["i:9061"] = 2,
+				["i:4234"] = 4,
+				["i:10026"] = 1,
+				["i:10560"] = 1,
+				["i:10559"] = 2,
+			},
+			["itemString"] = "i:7189",
+			["profession"] = "Engineering",
+			["numResult"] = 1,
+			["name"] = "Goblin Rocket Boots",
+			["players"] = {
+				["Vermin"] = true,
+			},
+		},
 		["c:6360971"] = {
 			["mats"] = {
 				["i:43116"] = 1,
@@ -41443,33 +41494,6 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 			["name"] = "Glyph of Arcane Shot",
-			["numResult"] = 1,
-		},
-		["c:16567270"] = {
-			["mats"] = {
-				["i:2841"] = 2,
-			},
-			["itemString"] = "i:20817",
-			["profession"] = "Jewelcrafting",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Bronze Setting",
-			["numResult"] = 1,
-		},
-		["c:15945331"] = {
-			["mats"] = {
-				["i:24479"] = 3,
-				["i:31079"] = 4,
-				["i:23449"] = 12,
-				["i:24478"] = 20,
-			},
-			["itemString"] = "i:32776",
-			["profession"] = "Jewelcrafting",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Crown of the Sea Witch",
 			["numResult"] = 1,
 		},
 		["c:16532852"] = {
@@ -41511,17 +41535,17 @@ TradeSkillMasterDB = {
 			["name"] = "Glyph of Deterrence",
 			["numResult"] = 1,
 		},
-		["c:2722115"] = {
+		["c:2195230"] = {
 			["mats"] = {
-				["i:43120"] = 1,
-				["i:10648"] = 1,
+				["i:4306"] = 1,
 			},
-			["itemString"] = "i:40902",
-			["profession"] = "Inscription",
+			["itemString"] = "i:6450",
+			["profession"] = "First Aid",
 			["players"] = {
 				["Battlearm"] = true,
+				["Vermin"] = true,
 			},
-			["name"] = "Glyph of Rip",
+			["name"] = "Silk Bandage",
 			["numResult"] = 1,
 		},
 		["c:7010110"] = {
@@ -41550,19 +41574,18 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:10555650"] = {
+		["c:5746180"] = {
 			["mats"] = {
-				["i:8831"] = 3,
-				["i:14344"] = 2,
-				["i:18256"] = 1,
+				["i:43122"] = 1,
+				["i:39501"] = 2,
 			},
-			["itemString"] = "i:20748",
-			["profession"] = "Enchanting",
-			["numResult"] = 1,
-			["name"] = "Brilliant Mana Oil",
+			["itemString"] = "i:27498",
+			["profession"] = "Inscription",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
+			["name"] = "Scroll of Agility V",
+			["numResult"] = 2,
 		},
 		["c:1193500"] = {
 			["mats"] = {
@@ -41616,17 +41639,17 @@ TradeSkillMasterDB = {
 			["name"] = "Glyph of Vampiric Blood",
 			["numResult"] = 1,
 		},
-		["c:12991679"] = {
+		["c:3208473"] = {
 			["mats"] = {
-				["i:43120"] = 1,
+				["i:43124"] = 1,
 				["i:39501"] = 1,
 			},
-			["itemString"] = "i:42904",
+			["itemString"] = "i:41105",
 			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Glyph of Disengage",
+			["name"] = "Glyph of Flash of Light",
 			["numResult"] = 1,
 		},
 		["c:116526"] = {
@@ -41853,7 +41876,7 @@ TradeSkillMasterDB = {
 		["Horde - Jin'do"] = "Horde - Jin'do - 455415397",
 		["Horde - Ashbringer"] = "Horde - Ashbringer - 567058295",
 	},
-	["s@Miqa - Horde - Golemagg@internalData@money"] = 13297257,
+	["s@Miqa - Horde - Golemagg@internalData@money"] = 13585219,
 	["c@Kaonac - Jin'do@bankingUIContext@auctioningGroupTree"] = {
 		["collapsed"] = {
 		},
@@ -41863,15 +41886,15 @@ TradeSkillMasterDB = {
 	["g@ @auctionUIContext@shoppingAuctionScrollingTable"] = {
 		["colWidth"] = {
 			["ilvl"] = 32,
-			["pct"] = 40,
+			["pct"] = 46,
 			["seller"] = 88,
-			["stack"] = 40,
-			["bidPct"] = 40,
-			["itemBuyout"] = 115,
-			["item"] = 407,
-			["itemBid"] = 115,
-			["bid"] = 115,
 			["posts"] = 40,
+			["bidPct"] = 40,
+			["itemBid"] = 115,
+			["item"] = 407,
+			["itemBuyout"] = 115,
+			["bid"] = 115,
+			["stack"] = 40,
 			["timeLeft"] = 26,
 			["buyout"] = 115,
 		},

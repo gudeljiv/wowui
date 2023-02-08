@@ -58,8 +58,9 @@ _detalhes_database = {
 										["c_max"] = 2630,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 2630,
 										["successful_casted"] = 0,
@@ -87,8 +88,9 @@ _detalhes_database = {
 										["c_max"] = 4486,
 										["id"] = 49048,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 4486,
 										["successful_casted"] = 0,
@@ -115,8 +117,9 @@ _detalhes_database = {
 										["c_max"] = 6181,
 										["id"] = 49050,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 4958,
 										["successful_casted"] = 0,
@@ -734,7 +737,7 @@ _detalhes_database = {
 										},
 										["spellschool"] = 1,
 									},
-									[20253] = {
+									[53307] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
@@ -746,7 +749,7 @@ _detalhes_database = {
 										["n_dmg"] = 526,
 										["n_min"] = 526,
 										["g_dmg"] = 0,
-										["counter"] = 1,
+										["counter"] = 3,
 										["ChartData"] = {
 											[50] = 526,
 											[59] = 526,
@@ -758,16 +761,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 20253,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[20647] = {
 										["c_amt"] = 1,
@@ -791,16 +794,16 @@ _detalhes_database = {
 										["c_max"] = 5252,
 										["id"] = 20647,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 5252,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[1680] = {
 										["c_amt"] = 13,
@@ -945,8 +948,9 @@ _detalhes_database = {
 										["c_max"] = 2463,
 										["id"] = 32175,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 16,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 2213,
 										["successful_casted"] = 0,
@@ -1715,8 +1719,9 @@ _detalhes_database = {
 										["c_max"] = 4898,
 										["id"] = 42873,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 4898,
 										["successful_casted"] = 0,
@@ -1873,8 +1878,9 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 48676,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
@@ -1932,8 +1938,9 @@ _detalhes_database = {
 										["c_max"] = 1203,
 										["id"] = 51723,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 1096,
 										["successful_casted"] = 0,
@@ -1961,8 +1968,9 @@ _detalhes_database = {
 										["c_max"] = 2979,
 										["id"] = 48664,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 2200,
 										["successful_casted"] = 0,
@@ -2087,7 +2095,14 @@ _detalhes_database = {
 										["n_amt"] = 4,
 										["extra"] = {
 										},
-										["spellschool"] = 8,
+										["RESIST"] = 2,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 21,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
@@ -2126,7 +2141,7 @@ _detalhes_database = {
 								["Emalon the Storm Watcher"] = 135064,
 								["Tempest Minion"] = 187421,
 							},
-							["friendlyfire_total"] = 0,
+							["aID"] = "29120",
 							["raid_targets"] = {
 								[128] = 3973,
 							},
@@ -2747,7 +2762,7 @@ _detalhes_database = {
 							["classe"] = "PET",
 							["damage_from"] = {
 							},
-							["friendlyfire_total"] = 0,
+							["aID"] = "29217",
 							["raid_targets"] = {
 								[128] = 3358,
 							},
@@ -3185,7 +3200,7 @@ _detalhes_database = {
 							["classe"] = "PET",
 							["damage_from"] = {
 							},
-							["friendlyfire_total"] = 0,
+							["aID"] = "29214",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 66682.006418,
@@ -3462,8 +3477,9 @@ _detalhes_database = {
 										["c_max"] = 6362,
 										["id"] = 61411,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 6362,
 										["successful_casted"] = 0,
@@ -3490,8 +3506,9 @@ _detalhes_database = {
 										["c_max"] = 858,
 										["id"] = 53739,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 858,
 										["successful_casted"] = 0,
@@ -3518,8 +3535,9 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 48827,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
@@ -3546,8 +3564,9 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 67485,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
@@ -3574,8 +3593,9 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 53742,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
@@ -3591,6 +3611,7 @@ _detalhes_database = {
 							["damage_taken"] = 0.003988,
 							["on_hold"] = true,
 							["last_dps"] = 0,
+							["on_hold"] = false,
 							["custom"] = 0,
 							["tipo"] = 1,
 							["friendlyfire"] = {
@@ -3942,10 +3963,10 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 0,
 										["spellschool"] = 1,
 										["DODGE"] = 1,
@@ -3956,6 +3977,7 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["on_hold"] = false,
 							["last_dps"] = 0,
+							["on_hold"] = false,
 							["custom"] = 0,
 							["tipo"] = 1,
 							["friendlyfire"] = {
@@ -4116,6 +4138,8 @@ _detalhes_database = {
 										["n_amt"] = 3,
 										["n_curado"] = 8385,
 										["totaldenied"] = 0,
+										["n_amt"] = 7,
+										["n_curado"] = 47915,
 										["absorbed"] = 0,
 									},
 									[49273] = {
@@ -4224,6 +4248,8 @@ _detalhes_database = {
 										["n_amt"] = 10,
 										["n_curado"] = 10900,
 										["totaldenied"] = 0,
+										["n_amt"] = 746,
+										["n_curado"] = 117857,
 										["absorbed"] = 0,
 									},
 								},
@@ -4233,6 +4259,7 @@ _detalhes_database = {
 							["totaldenied"] = 0.004206,
 							["aID"] = "4465-02836C17",
 							["custom"] = 0,
+							["last_event"] = 1675765701,
 							["tipo"] = 2,
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1675849680,
@@ -4443,6 +4470,7 @@ _detalhes_database = {
 							["totaldenied"] = 0.004551,
 							["aID"] = "4465-03929112",
 							["custom"] = 0,
+							["last_event"] = 1675765635,
 							["tipo"] = 2,
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1675849680,
@@ -4670,6 +4698,7 @@ _detalhes_database = {
 							["aID"] = "4465-0300F551",
 							["nome"] = "Blanku",
 							["custom"] = 0,
+							["last_event"] = 1675765634,
 							["tipo"] = 2,
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1675849683,
@@ -4741,6 +4770,7 @@ _detalhes_database = {
 							["totaldenied"] = 0.001995,
 							["aID"] = "4465-00E5831F",
 							["custom"] = 0,
+							["last_event"] = 1675765626,
 							["tipo"] = 2,
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1675849691,
@@ -4790,6 +4820,7 @@ _detalhes_database = {
 							["totaldenied"] = 0.006023,
 							["aID"] = "4465-01245161",
 							["custom"] = 0,
+							["last_event"] = 0,
 							["tipo"] = 2,
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1675849699,
@@ -5085,7 +5116,6 @@ _detalhes_database = {
 										["c_curado"] = 0,
 										["n_amt"] = 3,
 										["n_curado"] = 0,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -6618,7 +6648,12 @@ _detalhes_database = {
 										["uptime"] = 20,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 256,
+										["id"] = 48074,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[61082] = {
 										["counter"] = 0,
@@ -6651,7 +6686,12 @@ _detalhes_database = {
 										["uptime"] = 15,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 4,
+										["uptime"] = 40,
+										["id"] = 60492,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[53755] = {
 										["counter"] = 0,
@@ -6662,7 +6702,12 @@ _detalhes_database = {
 										["uptime"] = 65,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 256,
+										["id"] = 15473,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[63321] = {
 										["counter"] = 0,
@@ -6684,7 +6729,12 @@ _detalhes_database = {
 										["uptime"] = 7,
 										["targets"] = {
 										},
-										["appliedamt"] = 4,
+										["activedamt"] = 4,
+										["uptime"] = 60,
+										["id"] = 55637,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[60064] = {
 										["counter"] = 0,
@@ -6706,7 +6756,12 @@ _detalhes_database = {
 										["uptime"] = 65,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 256,
+										["id"] = 48168,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[47855] = {
 										["counter"] = 0,
@@ -6734,6 +6789,8 @@ _detalhes_database = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 47585,
 										["refreshamt"] = 0,
 										["id"] = 64371,
 										["uptime"] = 2,
@@ -6749,6 +6806,7 @@ _detalhes_database = {
 										["id"] = 17941,
 										["uptime"] = 6,
 										["targets"] = {
+											["Xinuz"] = 1,
 										},
 										["appliedamt"] = 1,
 									},
@@ -6899,7 +6957,12 @@ _detalhes_database = {
 										["uptime"] = 20,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 256,
+										["id"] = 8220,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[65019] = {
 										["counter"] = 0,
@@ -6921,7 +6984,12 @@ _detalhes_database = {
 										["uptime"] = 5,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 2,
+										["uptime"] = 30,
+										["id"] = 64868,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[53365] = {
 										["counter"] = 0,
@@ -6954,7 +7022,12 @@ _detalhes_database = {
 										["uptime"] = 65,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 256,
+										["id"] = 57940,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[45529] = {
 										["counter"] = 0,
@@ -6987,7 +7060,12 @@ _detalhes_database = {
 										["uptime"] = 65,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 256,
+										["id"] = 43002,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[51124] = {
 										["counter"] = 0,
@@ -7121,7 +7199,12 @@ _detalhes_database = {
 										["uptime"] = 11,
 										["targets"] = {
 										},
-										["appliedamt"] = 2,
+										["activedamt"] = 2,
+										["uptime"] = 24,
+										["id"] = 60530,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[48170] = {
 										["counter"] = 0,
@@ -7149,6 +7232,8 @@ _detalhes_database = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = 29166,
 										["refreshamt"] = 0,
 										["id"] = 57822,
 										["uptime"] = 65,
@@ -7160,12 +7245,19 @@ _detalhes_database = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 1,
+										["uptime"] = 26,
+										["id"] = 48443,
 										["refreshamt"] = 0,
 										["id"] = 60062,
 										["uptime"] = 10,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 256,
+										["id"] = 34123,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[59891] = {
 										["counter"] = 0,
@@ -7273,12 +7365,19 @@ _detalhes_database = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 1,
+										["uptime"] = 256,
+										["id"] = 57940,
 										["refreshamt"] = 0,
 										["id"] = 31583,
 										["uptime"] = 65,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 13,
+										["id"] = 57073,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[44401] = {
 										["counter"] = 0,
@@ -7300,7 +7399,12 @@ _detalhes_database = {
 										["uptime"] = 15,
 										["targets"] = {
 										},
-										["appliedamt"] = 2,
+										["activedamt"] = 2,
+										["uptime"] = 23,
+										["id"] = 17116,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[55637] = {
 										["counter"] = 0,
@@ -7311,7 +7415,12 @@ _detalhes_database = {
 										["uptime"] = 15,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 256,
+										["id"] = 33891,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[64868] = {
 										["counter"] = 0,
@@ -7377,7 +7486,12 @@ _detalhes_database = {
 										["uptime"] = 65,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 2,
+										["uptime"] = 25,
+										["id"] = 2893,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[12536] = {
 										["counter"] = 0,
@@ -7409,6 +7523,7 @@ _detalhes_database = {
 										["id"] = 12042,
 										["uptime"] = 15,
 										["targets"] = {
+											["Freakcal"] = 1,
 										},
 										["appliedamt"] = 1,
 									},
@@ -7538,7 +7653,12 @@ _detalhes_database = {
 										["uptime"] = 3,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 2,
+										["uptime"] = 26,
+										["id"] = 20572,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[6774] = {
 										["counter"] = 0,
@@ -7686,7 +7806,9 @@ _detalhes_database = {
 							["last_event"] = 1675849744,
 							["buff_uptime_targets"] = {
 							},
-							["debuff_uptime_targets"] = {
+							["tipo"] = 4,
+							["last_event"] = 1675765635,
+							["pets"] = {
 							},
 							["cooldowns_defensive_spells"] = {
 								["_ActorTable"] = {
@@ -9121,6 +9243,8 @@ _detalhes_database = {
 					["Ikoras"] = "Player-4465-03721DA5",
 					["Tiberion"] = "Player-4465-02CEC563",
 					["Vermin"] = "Player-4465-00E5831F",
+					["Urssus"] = "Player-4465-03063E34",
+					["Xinuz"] = "Player-4465-0306326F",
 				},
 				["raid_roster_indexed"] = {
 					"Unconcerned", -- [1]
@@ -9161,8 +9285,8 @@ _detalhes_database = {
 						["dispell"] = 0,
 						["cooldowns_defensive"] = 2,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 					["Blanku"] = {
@@ -9187,14 +9311,54 @@ _detalhes_database = {
 							0, -- [8]
 						}, -- [2]
 						{
+							false, -- [1]
+							53251, -- [2]
+							699, -- [3]
+							1675765698.24, -- [4]
+							19887, -- [5]
+							"Freakcal", -- [6]
+							nil, -- [7]
+							0, -- [8]
 						}, -- [3]
 						{
+							false, -- [1]
+							53251, -- [2]
+							661, -- [3]
+							1675765699.279, -- [4]
+							19887, -- [5]
+							"Freakcal", -- [6]
+							nil, -- [7]
+							0, -- [8]
 						}, -- [4]
 						{
+							false, -- [1]
+							53251, -- [2]
+							625, -- [3]
+							1675765700.325, -- [4]
+							19887, -- [5]
+							"Freakcal", -- [6]
+							nil, -- [7]
+							0, -- [8]
 						}, -- [5]
 						{
+							false, -- [1]
+							53251, -- [2]
+							588, -- [3]
+							1675765701.302, -- [4]
+							19887, -- [5]
+							"Freakcal", -- [6]
+							nil, -- [7]
+							0, -- [8]
 						}, -- [6]
 						{
+							false, -- [1]
+							53251, -- [2]
+							550, -- [3]
+							1675765702.257, -- [4]
+							19887, -- [5]
+							"Freakcal", -- [6]
+							nil, -- [7]
+							0, -- [8]
 						}, -- [7]
 						{
 						}, -- [8]
@@ -9246,7 +9410,7 @@ _detalhes_database = {
 						}, -- [31]
 						{
 						}, -- [32]
-						["n"] = 3,
+						["n"] = 8,
 					},
 				},
 				["frags_need_refresh"] = true,
@@ -9310,10 +9474,6 @@ _detalhes_database = {
 					["id"] = 774,
 					["killed"] = true,
 				},
-				["spells_cast_timeline"] = {
-				},
-				["CombatSkillCache"] = {
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -9345,7 +9505,14 @@ _detalhes_database = {
 							["Dwalker"] = 683.006023,
 						}, -- [1]
 					},
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Freakcal"] = 3632.001176,
+							["Plaguedeath"] = 303247.008383,
+							["Xinuz"] = 614892.008984,
+							["Urssus"] = 730346.0046250001,
+							["Vermin"] = 732147.001804,
+						}, -- [1]
 					},
 				},
 				["start_time"] = 595708.188,
@@ -9495,8 +9662,9 @@ _detalhes_database = {
 										["c_max"] = 18580,
 										["id"] = 61006,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 734,
 										["successful_casted"] = 0,
@@ -9553,8 +9721,9 @@ _detalhes_database = {
 										["c_max"] = 4553,
 										["id"] = 75,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 3579,
 										["successful_casted"] = 0,
@@ -9667,8 +9836,9 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 54043,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
@@ -9695,8 +9865,9 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 48996,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
@@ -9724,8 +9895,9 @@ _detalhes_database = {
 										["c_max"] = 5793,
 										["id"] = 49048,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 4713,
 										["successful_casted"] = 0,
@@ -9741,7 +9913,6 @@ _detalhes_database = {
 							["grupo"] = true,
 							["damage_taken"] = 103869.005433,
 							["boss_fight_component"] = true,
-							["custom"] = 0,
 							["colocacao"] = 1,
 							["last_event"] = 1675849087,
 							["on_hold"] = false,
@@ -9829,8 +10000,9 @@ _detalhes_database = {
 										["c_max"] = 21290,
 										["id"] = 48577,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 16,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 14595,
 										["successful_casted"] = 0,
@@ -9886,8 +10058,9 @@ _detalhes_database = {
 										["c_max"] = 6785,
 										["id"] = 62078,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 6284,
 										["successful_casted"] = 0,
@@ -9945,8 +10118,9 @@ _detalhes_database = {
 										["c_max"] = 14913,
 										["id"] = 48572,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 8823,
 										["successful_casted"] = 0,
@@ -10077,7 +10251,6 @@ _detalhes_database = {
 							["grupo"] = true,
 							["damage_taken"] = 83361.00518000001,
 							["boss_fight_component"] = true,
-							["custom"] = 0,
 							["colocacao"] = 2,
 							["last_event"] = 1675849087,
 							["on_hold"] = false,
@@ -10171,8 +10344,9 @@ _detalhes_database = {
 										["c_max"] = 3500,
 										["id"] = 48665,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 2475,
 										["successful_casted"] = 0,
@@ -10304,7 +10478,6 @@ _detalhes_database = {
 							["grupo"] = true,
 							["damage_taken"] = 89522.00219900001,
 							["boss_fight_component"] = true,
-							["custom"] = 0,
 							["colocacao"] = 3,
 							["last_event"] = 1675849084,
 							["on_hold"] = false,
@@ -10420,8 +10593,9 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 54043,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
@@ -10487,7 +10661,14 @@ _detalhes_database = {
 										["n_amt"] = 96,
 										["extra"] = {
 										},
-										["spellschool"] = 8,
+										["RESIST"] = 2,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 36,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[53195] = {
 										["c_amt"] = 29,
@@ -11705,8 +11886,9 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 54043,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
@@ -14145,6 +14327,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
+							["nome"] = "Plaguedeath",
 							["grupo"] = true,
 							["damage_taken"] = 446812.0054,
 							["boss_fight_component"] = true,
@@ -16806,8 +16989,10 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["IMMUNE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
@@ -16874,8 +17059,9 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 32409,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
@@ -16929,29 +17115,28 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 425,
 										["targets"] = {
 											["Archavon Warder"] = 0,
 										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 425,
+										["n_min"] = 425,
 										["g_dmg"] = 0,
 										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = 1330,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["a_dmg"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["IMMUNE"] = 1,
+										["c_min"] = 4311,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
@@ -17541,6 +17726,30 @@ _detalhes_database = {
 							["nome"] = "Vielbesser",
 							["last_event"] = 1675849084,
 							["boss_fight_component"] = true,
+							["end_time"] = 1675764604,
+							["friendlyfire"] = {
+								["Web Wrap <Vermin>"] = {
+									["spells"] = {
+										44, -- [1]
+										[49909] = 955,
+									},
+									["total"] = 999,
+								},
+								["Web Wrap <Freakcal>"] = {
+									["spells"] = {
+										[52212] = 1339,
+									},
+									["total"] = 1339,
+								},
+								["Web Wrap <Plaguedeath>"] = {
+									["spells"] = {
+										[52212] = 447,
+									},
+									["total"] = 447,
+								},
+							},
+							["last_event"] = 1675764603,
+							["nome"] = "Plaguedeath",
 							["spells"] = {
 								["_ActorTable"] = {
 									[52000] = {
@@ -19531,7 +19740,6 @@ _detalhes_database = {
 										["c_curado"] = 10663,
 										["n_amt"] = 0,
 										["n_curado"] = 0,
-										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 									[43185] = {
@@ -19556,6 +19764,8 @@ _detalhes_database = {
 										["n_amt"] = 1,
 										["n_curado"] = 4362,
 										["totaldenied"] = 0,
+										["n_amt"] = 5,
+										["n_curado"] = 21173,
 										["absorbed"] = 0,
 									},
 								},
@@ -19660,6 +19870,8 @@ _detalhes_database = {
 										["n_amt"] = 5,
 										["n_curado"] = 3674,
 										["totaldenied"] = 0,
+										["n_amt"] = 22,
+										["n_curado"] = 19733,
 										["absorbed"] = 0,
 									},
 								},
@@ -19669,6 +19881,7 @@ _detalhes_database = {
 							["totaldenied"] = 0.002006,
 							["aID"] = "4465-00E5831F",
 							["custom"] = 0,
+							["last_event"] = 1675764604,
 							["tipo"] = 2,
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1675848931,
@@ -19738,6 +19951,7 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 1,
 										["n_curado"] = 4078,
 										["totaldenied"] = 0,
@@ -19750,6 +19964,7 @@ _detalhes_database = {
 							["classe"] = "DRUID",
 							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
+							["last_event"] = 1675764575,
 							["tipo"] = 2,
 							["totaldenied"] = 0.002669,
 							["start_time"] = 1675849085,
@@ -19822,6 +20037,7 @@ _detalhes_database = {
 							["totaldenied"] = 0.007786,
 							["aID"] = "4465-04202DED",
 							["custom"] = 0,
+							["last_event"] = 1675764603,
 							["tipo"] = 2,
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1675849064,
@@ -19874,6 +20090,7 @@ _detalhes_database = {
 							["totaldenied"] = 0.006954,
 							["aID"] = "4465-03034FA0",
 							["custom"] = 0,
+							["last_event"] = 1675764603,
 							["tipo"] = 2,
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1675849002,
@@ -19974,6 +20191,7 @@ _detalhes_database = {
 							["totaldenied"] = 0.00518,
 							["aID"] = "4465-02ED76E9",
 							["custom"] = 0,
+							["last_event"] = 0,
 							["tipo"] = 2,
 							["heal_enemy_amt"] = 0,
 							["start_time"] = 1675849087,
@@ -20808,6 +21026,9 @@ _detalhes_database = {
 							["last_event"] = 1675849056,
 							["alternatepower"] = 0.003522,
 							["flag_original"] = 1297,
+							["tipo"] = 3,
+							["alternatepower"] = 0.004475,
+							["last_event"] = 1675764604,
 							["serial"] = "Player-4465-00E5831F",
 							["boss_fight_component"] = true,
 						}, -- [2]
@@ -21108,6 +21329,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 7,
 							},
+							["nome"] = "Plaguedeath",
 							["grupo"] = true,
 							["tipo"] = 3,
 							["aID"] = "4465-0305A932",
@@ -22645,12 +22867,19 @@ _detalhes_database = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 18499,
 										["refreshamt"] = 0,
 										["id"] = 48263,
 										["uptime"] = 255,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = 55694,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[53138] = {
 										["counter"] = 0,
@@ -22661,7 +22890,12 @@ _detalhes_database = {
 										["uptime"] = 255,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 35,
+										["id"] = 12970,
+										["refreshamt"] = 42,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[20572] = {
 										["counter"] = 0,
@@ -22683,7 +22917,12 @@ _detalhes_database = {
 										["uptime"] = 255,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 2,
+										["uptime"] = 6,
+										["id"] = 46916,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[48707] = {
 										["counter"] = 0,
@@ -22755,6 +22994,8 @@ _detalhes_database = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = 60065,
 										["refreshamt"] = 0,
 										["id"] = 55610,
 										["uptime"] = 255,
@@ -22827,7 +23068,9 @@ _detalhes_database = {
 							["last_event"] = 1675849087,
 							["buff_uptime_targets"] = {
 							},
-							["debuff_uptime_targets"] = {
+							["tipo"] = 4,
+							["last_event"] = 1675764604,
+							["pets"] = {
 							},
 							["cooldowns_defensive_spells"] = {
 								["_ActorTable"] = {
@@ -24498,7 +24741,12 @@ _detalhes_database = {
 										["uptime"] = 244,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 29,
+										["id"] = 58578,
+										["refreshamt"] = 7,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[57371] = {
 										["counter"] = 0,
@@ -24515,12 +24763,19 @@ _detalhes_database = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 1,
+										["uptime"] = 15,
+										["id"] = 60229,
 										["refreshamt"] = 0,
 										["id"] = 48934,
 										["uptime"] = 246,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 29,
+										["id"] = 50448,
+										["refreshamt"] = 10,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[59578] = {
 										["counter"] = 0,
@@ -24553,7 +24808,12 @@ _detalhes_database = {
 										["uptime"] = 246,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 30,
+										["id"] = 28518,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[60544] = {
 										["counter"] = 0,
@@ -24646,6 +24906,8 @@ _detalhes_database = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 0,
+										["uptime"] = 6,
+										["id"] = 48156,
 										["refreshamt"] = 0,
 										["id"] = 60053,
 										["uptime"] = 78,
@@ -24657,6 +24919,8 @@ _detalhes_database = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 0,
+										["uptime"] = 19,
+										["id"] = 48300,
 										["refreshamt"] = 0,
 										["id"] = 49065,
 										["uptime"] = 140,
@@ -24679,6 +24943,8 @@ _detalhes_database = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 0,
+										["uptime"] = 13,
+										["id"] = 48160,
 										["refreshamt"] = 0,
 										["id"] = 63672,
 										["uptime"] = 9,
@@ -24703,7 +24969,12 @@ _detalhes_database = {
 										["uptime"] = 246,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 30,
+										["id"] = 48074,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[34026] = {
 										["counter"] = 0,
@@ -24742,6 +25013,8 @@ _detalhes_database = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 1,
+										["uptime"] = 30,
+										["id"] = 57399,
 										["refreshamt"] = 0,
 										["id"] = 54861,
 										["uptime"] = 5,
@@ -24780,7 +25053,12 @@ _detalhes_database = {
 										["uptime"] = 14,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 30,
+										["id"] = 15286,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[60233] = {
 										["counter"] = 0,
@@ -24853,12 +25131,19 @@ _detalhes_database = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = 60492,
 										["refreshamt"] = 0,
 										["id"] = 3045,
 										["uptime"] = 15,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 30,
+										["id"] = 48170,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[28497] = {
 										["counter"] = 0,
@@ -24869,7 +25154,12 @@ _detalhes_database = {
 										["uptime"] = 246,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 17,
+										["id"] = 15271,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[56453] = {
 										["counter"] = 0,
@@ -24963,6 +25253,8 @@ _detalhes_database = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 0,
+										["uptime"] = 9,
+										["id"] = 398066,
 										["refreshamt"] = 0,
 										["id"] = 48819,
 										["uptime"] = 129,
@@ -25040,6 +25332,8 @@ _detalhes_database = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 12536,
 										["refreshamt"] = 0,
 										["id"] = 66233,
 										["uptime"] = 47,
@@ -25059,6 +25353,8 @@ _detalhes_database = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 1,
+										["uptime"] = 15,
+										["id"] = 55637,
 										["refreshamt"] = 0,
 										["id"] = 348704,
 										["uptime"] = 255,
@@ -25503,7 +25799,12 @@ _detalhes_database = {
 										["uptime"] = 24,
 										["targets"] = {
 										},
-										["appliedamt"] = 2,
+										["activedamt"] = 2,
+										["uptime"] = 24,
+										["id"] = 12970,
+										["refreshamt"] = 27,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[57399] = {
 										["counter"] = 0,
@@ -25597,6 +25898,8 @@ _detalhes_database = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 1,
+										["uptime"] = 30,
+										["id"] = 68530,
 										["refreshamt"] = 0,
 										["id"] = 47893,
 										["uptime"] = 246,
@@ -25619,12 +25922,19 @@ _detalhes_database = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 1,
+										["uptime"] = 27,
+										["id"] = 47436,
 										["refreshamt"] = 0,
 										["id"] = 10060,
 										["uptime"] = 15,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 3,
+										["uptime"] = 13,
+										["id"] = 59620,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
@@ -93191,6 +93501,7 @@ _detalhes_database = {
 								},
 								["counter"] = 1,
 							},
+							["total"] = 2442,
 						},
 						["tipo"] = 9,
 					},
@@ -93441,6 +93752,7 @@ _detalhes_database = {
 								},
 								["refreshamt"] = 0,
 							},
+							["total"] = 4719,
 						},
 						["tipo"] = 9,
 					},
@@ -93742,6 +94054,7 @@ _detalhes_database = {
 								},
 								["refreshamt"] = 0,
 							},
+							["total"] = 1125,
 						},
 						["tipo"] = 9,
 					},
@@ -94862,6 +95175,7 @@ _detalhes_database = {
 								["id"] = 355,
 								["uptime"] = 42,
 								["targets"] = {
+									["Plaguedeath"] = 11728,
 								},
 								["refreshamt"] = 0,
 							},
@@ -95114,6 +95428,7 @@ _detalhes_database = {
 								},
 								["refreshamt"] = 0,
 							},
+							["total"] = 1154,
 						},
 						["tipo"] = 9,
 					},
@@ -97452,7 +97767,7 @@ _detalhes_database = {
 								["uptime"] = 17,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[57819] = {
 								["counter"] = 0,
@@ -97462,7 +97777,7 @@ _detalhes_database = {
 								["uptime"] = 123,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[55637] = {
 								["counter"] = 0,
@@ -97472,7 +97787,7 @@ _detalhes_database = {
 								["uptime"] = 28,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[53755] = {
 								["counter"] = 0,
@@ -97542,7 +97857,7 @@ _detalhes_database = {
 								["uptime"] = 123,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[64371] = {
 								["counter"] = 0,
@@ -97552,7 +97867,7 @@ _detalhes_database = {
 								["uptime"] = 12,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[61082] = {
 								["counter"] = 0,
@@ -97657,7 +97972,7 @@ _detalhes_database = {
 								["uptime"] = 55,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[20572] = {
 								["counter"] = 0,
@@ -97667,7 +97982,7 @@ _detalhes_database = {
 								["uptime"] = 15,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[57623] = {
 								["counter"] = 0,
@@ -97687,7 +98002,7 @@ _detalhes_database = {
 								["uptime"] = 12,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[51271] = {
 								["counter"] = 0,
@@ -97697,7 +98012,7 @@ _detalhes_database = {
 								["uptime"] = 20,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[65019] = {
 								["counter"] = 0,
@@ -97717,9 +98032,6 @@ _detalhes_database = {
 								["uptime"] = 5,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
-							},
-							[53365] = {
 								["counter"] = 0,
 								["activedamt"] = 6,
 								["appliedamt"] = 6,
@@ -97727,7 +98039,7 @@ _detalhes_database = {
 								["uptime"] = 89,
 								["targets"] = {
 								},
-								["refreshamt"] = 8,
+								["counter"] = 0,
 							},
 							[58578] = {
 								["counter"] = 0,
@@ -97757,7 +98069,7 @@ _detalhes_database = {
 								["uptime"] = 20,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[59052] = {
 								["counter"] = 0,
@@ -97797,7 +98109,17 @@ _detalhes_database = {
 								["uptime"] = 4,
 								["targets"] = {
 								},
+								["counter"] = 0,
+							},
+							[60229] = {
 								["refreshamt"] = 0,
+								["activedamt"] = 20,
+								["appliedamt"] = 20,
+								["id"] = 60229,
+								["uptime"] = 269,
+								["targets"] = {
+								},
+								["counter"] = 0,
 							},
 							[53768] = {
 								["counter"] = 0,
@@ -97895,7 +98217,7 @@ _detalhes_database = {
 								["uptime"] = 26,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[54839] = {
 								["counter"] = 0,
@@ -97915,7 +98237,7 @@ _detalhes_database = {
 								["uptime"] = 123,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[48074] = {
 								["counter"] = 0,
@@ -97965,7 +98287,7 @@ _detalhes_database = {
 								["uptime"] = 123,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 						},
 						["tipo"] = 9,
@@ -98034,7 +98356,7 @@ _detalhes_database = {
 								["uptime"] = 30,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[43002] = {
 								["counter"] = 0,
@@ -98044,7 +98366,7 @@ _detalhes_database = {
 								["uptime"] = 123,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[31583] = {
 								["counter"] = 0,
@@ -98074,7 +98396,7 @@ _detalhes_database = {
 								["uptime"] = 9,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[55637] = {
 								["counter"] = 0,
@@ -98084,7 +98406,7 @@ _detalhes_database = {
 								["uptime"] = 28,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[64868] = {
 								["counter"] = 0,
@@ -98094,7 +98416,7 @@ _detalhes_database = {
 								["uptime"] = 39,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[60492] = {
 								["counter"] = 0,
@@ -98104,7 +98426,7 @@ _detalhes_database = {
 								["uptime"] = 20,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[43046] = {
 								["counter"] = 0,
@@ -98114,7 +98436,7 @@ _detalhes_database = {
 								["uptime"] = 123,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[60064] = {
 								["counter"] = 0,
@@ -98134,7 +98456,7 @@ _detalhes_database = {
 								["uptime"] = 20,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[57822] = {
 								["counter"] = 0,
@@ -98174,7 +98496,7 @@ _detalhes_database = {
 								["uptime"] = 15,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 						},
 						["tipo"] = 9,
@@ -98218,7 +98540,7 @@ _detalhes_database = {
 								["uptime"] = 54,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[57970] = {
 								["counter"] = 0,
@@ -98261,7 +98583,7 @@ _detalhes_database = {
 								["uptime"] = 123,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[14177] = {
 								["counter"] = 0,
@@ -98271,7 +98593,7 @@ _detalhes_database = {
 								["uptime"] = 0,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[57993] = {
 								["counter"] = 0,
@@ -98291,7 +98613,7 @@ _detalhes_database = {
 								["uptime"] = 59,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[48659] = {
 								["counter"] = 0,
@@ -98311,7 +98633,7 @@ _detalhes_database = {
 								["uptime"] = 14,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[58427] = {
 								["counter"] = 0,
@@ -98331,7 +98653,7 @@ _detalhes_database = {
 								["uptime"] = 5,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[1784] = {
 								["counter"] = 0,
@@ -98371,7 +98693,17 @@ _detalhes_database = {
 								["uptime"] = 12,
 								["targets"] = {
 								},
+								["counter"] = 0,
+							},
+							[71909] = {
 								["refreshamt"] = 0,
+								["activedamt"] = -1,
+								["appliedamt"] = 1,
+								["id"] = 71909,
+								["uptime"] = 79,
+								["targets"] = {
+								},
+								["counter"] = 0,
 							},
 							[60065] = {
 								["counter"] = 0,
@@ -98391,7 +98723,7 @@ _detalhes_database = {
 								["uptime"] = 107,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[6774] = {
 								["counter"] = 0,
@@ -98486,7 +98818,7 @@ _detalhes_database = {
 								["uptime"] = 82,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[48819] = {
 								["counter"] = 0,
@@ -98516,7 +98848,7 @@ _detalhes_database = {
 								["uptime"] = 12,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[57724] = {
 								["counter"] = 0,
@@ -98597,7 +98929,7 @@ _detalhes_database = {
 								["uptime"] = 123,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[20375] = {
 								["counter"] = 0,
@@ -98617,7 +98949,7 @@ _detalhes_database = {
 								["uptime"] = 123,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[20132] = {
 								["counter"] = 0,
@@ -98647,7 +98979,7 @@ _detalhes_database = {
 								["uptime"] = 123,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[48952] = {
 								["counter"] = 0,
@@ -98677,7 +99009,7 @@ _detalhes_database = {
 								["uptime"] = 17,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[54428] = {
 								["counter"] = 0,
@@ -98770,7 +99102,17 @@ _detalhes_database = {
 								["uptime"] = 123,
 								["targets"] = {
 								},
+								["counter"] = 0,
+							},
+							[398066] = {
 								["refreshamt"] = 0,
+								["activedamt"] = 0,
+								["appliedamt"] = 16,
+								["id"] = 398066,
+								["uptime"] = 28,
+								["targets"] = {
+								},
+								["counter"] = 0,
 							},
 							[55166] = {
 								["counter"] = 0,
@@ -98897,7 +99239,7 @@ _detalhes_database = {
 								["uptime"] = 61,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[49001] = {
 								["counter"] = 0,
@@ -98928,7 +99270,7 @@ _detalhes_database = {
 								["uptime"] = 14,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[49065] = {
 								["counter"] = 0,
@@ -98938,7 +99280,7 @@ _detalhes_database = {
 								["uptime"] = 47,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[60053] = {
 								["counter"] = 0,
@@ -98979,7 +99321,7 @@ _detalhes_database = {
 								["uptime"] = 0,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[35079] = {
 								["counter"] = 0,
@@ -98989,7 +99331,7 @@ _detalhes_database = {
 								["uptime"] = 8,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[34026] = {
 								["counter"] = 0,
@@ -98999,7 +99341,7 @@ _detalhes_database = {
 								["uptime"] = 4,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[19882] = {
 								["counter"] = 0,
@@ -99010,7 +99352,7 @@ _detalhes_database = {
 								["uptime"] = 0,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[54861] = {
 								["counter"] = 0,
@@ -99081,7 +99423,7 @@ _detalhes_database = {
 								["uptime"] = 55,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[64420] = {
 								["counter"] = 0,
@@ -99121,7 +99463,7 @@ _detalhes_database = {
 								["uptime"] = 42,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[54758] = {
 								["counter"] = 0,
@@ -99131,7 +99473,7 @@ _detalhes_database = {
 								["uptime"] = 26,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[53434] = {
 								["counter"] = 0,
@@ -99141,7 +99483,7 @@ _detalhes_database = {
 								["uptime"] = 20,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[61847] = {
 								["counter"] = 0,
@@ -99150,6 +99492,7 @@ _detalhes_database = {
 								["id"] = 61847,
 								["uptime"] = 123,
 								["targets"] = {
+									["Freakcal"] = 3,
 								},
 								["refreshamt"] = 0,
 							},
@@ -99172,7 +99515,7 @@ _detalhes_database = {
 								["uptime"] = 40,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[56453] = {
 								["counter"] = 0,
@@ -99182,7 +99525,7 @@ _detalhes_database = {
 								["uptime"] = 17,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 						},
 						["tipo"] = 9,
@@ -99240,6 +99583,9 @@ _detalhes_database = {
 							},
 							[49233] = {
 								["counter"] = 0,
+							},
+							[59355] = {
+								["refreshamt"] = 38,
 								["activedamt"] = 0,
 								["appliedamt"] = 7,
 								["id"] = 49233,
@@ -99278,7 +99624,7 @@ _detalhes_database = {
 								["uptime"] = 15,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[16280] = {
 								["counter"] = 0,
@@ -99298,7 +99644,7 @@ _detalhes_database = {
 								["uptime"] = 123,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[49281] = {
 								["counter"] = 0,
@@ -99318,7 +99664,7 @@ _detalhes_database = {
 								["uptime"] = 21,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[398488] = {
 								["counter"] = 0,
@@ -99328,7 +99674,7 @@ _detalhes_database = {
 								["uptime"] = 20,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[2825] = {
 								["counter"] = 0,
@@ -99348,7 +99694,7 @@ _detalhes_database = {
 								["uptime"] = 15,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[53817] = {
 								["counter"] = 0,
@@ -99368,7 +99714,7 @@ _detalhes_database = {
 								["uptime"] = 21,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[58655] = {
 								["counter"] = 0,
@@ -99418,7 +99764,7 @@ _detalhes_database = {
 								["uptime"] = 12,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[29178] = {
 								["counter"] = 0,
@@ -99469,7 +99815,7 @@ _detalhes_database = {
 								["uptime"] = 0,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 						},
 						["tipo"] = 9,
@@ -99734,6 +100080,10 @@ _detalhes_database = {
 					["damage_spellid"] = 61672,
 					["aID"] = "",
 					["boss_fight_component"] = true,
+					["GetSpellContainer"] = nil --[[ skipped inline function ]],
+					["monster"] = true,
+					["pets"] = {
+					},
 					["last_event"] = 0,
 					["damage_twin"] = "Archavon the Stone Watcher",
 					["debuff_uptime_targets"] = {
@@ -99778,7 +100128,7 @@ _detalhes_database = {
 		},
 		["raid_roster_indexed"] = {
 		},
-		["cleu_timeline"] = {
+		["spells_cast_timeline"] = {
 		},
 		["tempo_start"] = 1675849087,
 		["last_events_tables"] = {
@@ -99806,8 +100156,8 @@ _detalhes_database = {
 				["dispell"] = 0,
 				["cooldowns_defensive"] = 18.058425,
 			}, -- [4]
-			["voidzone_damage"] = 0,
 			["frags_total"] = 0,
+			["voidzone_damage"] = 0,
 		},
 		["player_last_events"] = {
 		},
@@ -99840,20 +100190,9 @@ _detalhes_database = {
 			}, -- [4]
 		},
 		["overall_refreshed"] = true,
-		["PhaseData"] = {
-			{
-				1, -- [1]
-				1, -- [2]
-			}, -- [1]
-			["damage"] = {
-			},
-			["heal_section"] = {
-			},
-			["heal"] = {
-			},
-			["damage_section"] = {
-			},
+		["frags"] = {
 		},
+		["hasSaved"] = true,
 		["segments_added"] = {
 			{
 				["elapsed"] = 65.1260000000475,
@@ -99893,13 +100232,24 @@ _detalhes_database = {
 		["overall_enemy_name"] = "-- x -- x --",
 		["CombatSkillCache"] = {
 		},
-		["frags"] = {
+		["PhaseData"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+			}, -- [1]
+			["damage_section"] = {
+			},
+			["heal_section"] = {
+			},
+			["heal"] = {
+			},
+			["damage"] = {
+			},
 		},
 		["start_time"] = 595394.0719999999,
 		["TimeData"] = {
 		},
-		["cleu_events"] = {
-			["n"] = 1,
+		["last_events_tables"] = {
 		},
 	},
 	["announce_firsthit"] = {
@@ -101665,6 +102015,5 @@ _detalhes_database = {
 		["Player-4454-048535FC"] = "DAMAGER",
 	},
 	["cached_specs"] = {
-		["Player-4465-00E5831F"] = 72,
 	},
 }

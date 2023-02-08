@@ -10,8 +10,8 @@ GroupieDB = {
 			["groupieSpec1Role"] = 2,
 		},
 		["Miqa - Golemagg"] = {
-			["groupieSpec2Role"] = 2,
 			["groupieSpec1Role"] = 2,
+			["groupieSpec2Role"] = 2,
 		},
 		["Battlearm - Gehennas"] = {
 			["groupieSpec2Role"] = 4,
@@ -95,7 +95,7 @@ GroupieDB = {
 					["Dreamcos"] = true,
 					["Moomek"] = true,
 					["Oktavijan"] = true,
-					["Razvaljeni"] = true,
+					["Mileram"] = true,
 					["Magefire"] = true,
 					["Herezzy"] = true,
 					["Sila"] = true,
@@ -108,7 +108,7 @@ GroupieDB = {
 					["Sanufrost"] = true,
 					["Fireblink"] = true,
 					["Ajuna"] = true,
-					["Vermina"] = true,
+					["Getfe"] = true,
 					["Sapnnap"] = true,
 					["Darkfel"] = true,
 					["Targg"] = true,
@@ -234,7 +234,7 @@ GroupieDB = {
 					["Kizzami"] = true,
 					["Nabijac"] = true,
 					["Ilnabooll"] = true,
-					["Dotovepabezi"] = true,
+					["Hyperoptic"] = true,
 					["Smarach"] = true,
 					["Zhilex"] = true,
 					["Rougerogue"] = true,
@@ -879,7 +879,7 @@ GroupieDB = {
 					["Dreamcos"] = true,
 					["Moomek"] = true,
 					["Oktavijan"] = true,
-					["Razvaljeni"] = true,
+					["Mileram"] = true,
 					["Magefire"] = true,
 					["Herezzy"] = true,
 					["Sila"] = true,
@@ -888,7 +888,7 @@ GroupieDB = {
 					["Warcrotank"] = true,
 					["Tiruriruu"] = true,
 					["Svemocni"] = true,
-					["Hyperoptic"] = true,
+					["Batohou"] = true,
 					["Analnass"] = true,
 					["Fireblink"] = true,
 					["Ajuna"] = true,
@@ -936,7 +936,7 @@ GroupieDB = {
 					["Rodstorm"] = true,
 					["Linn"] = true,
 					["Quepriest"] = true,
-					["Neptun"] = true,
+					["Doktorce"] = true,
 					["Kljovurina"] = true,
 					["Doktorce"] = true,
 					["Insomnià"] = true,
@@ -959,12 +959,11 @@ GroupieDB = {
 					["Dimedk"] = true,
 					["Pingvin"] = true,
 					["Zingaba"] = true,
-					["Kinven"] = true,
+					["ßoa"] = true,
 					["Frudz"] = true,
 					["Sanurok"] = true,
 					["Tendo"] = true,
 					["Cropro"] = true,
-					["Torbar"] = true,
 					["Restosisa"] = true,
 					["Zvinglas"] = true,
 					["Cryö"] = true,
@@ -1459,7 +1458,7 @@ GroupieDB = {
 				["order"] = 2050,
 				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Auchenai Crypts",
 				["groupSize"] = 5,
-				["isHeroic"] = false,
+				["isHeroic"] = true,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
 				["icon"] = "AC.tga",
@@ -1681,6 +1680,9 @@ GroupieDB = {
 				["classColor"] = "fff569",
 				["resultID"] = 646,
 				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
 				},
 				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1675847266,
@@ -1831,7 +1833,7 @@ GroupieDB = {
 				["order"] = 3310,
 				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
 				["groupSize"] = 5,
-				["isHeroic"] = true,
+				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
 				["icon"] = "AN.tga",
@@ -30076,9 +30078,8 @@ GroupieDB = {
 				["resultID"] = 188,
 				["rolesNeeded"] = {
 					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
+					3, -- [2]
+					4, -- [3]
 				},
 				["instanceName"] = "Azjol-Nerub",
 				["timestamp"] = 1675781248,
@@ -30211,6 +30212,34 @@ GroupieDB = {
 				["lootType"] = "MS > OS",
 				["icon"] = "AN.tga",
 				["words"] = {
+					"lfm", -- [1]
+					"ulduar", -- [2]
+					"10", -- [3]
+					"fresh", -- [4]
+					"hm", -- [5]
+					"s", -- [6]
+					"freya", -- [7]
+					"thorim", -- [8]
+					"yogg1", -- [9]
+					"pre", -- [10]
+					"prepared", -- [11]
+					"assignemnts", -- [12]
+					"discord", -- [13]
+					"required", -- [14]
+					"checking", -- [15]
+					"logs", -- [16]
+					"3sr", -- [17]
+					"ms", -- [18]
+					"mjolnir", -- [19]
+					"hr", -- [20]
+					"need", -- [21]
+					"1", -- [22]
+					"off", -- [23]
+					"tank", -- [24]
+					"dps", -- [25]
+					"lock", -- [26]
+					"ele", -- [27]
+					"sham", -- [28]
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Dameblanche-Golemagg",
@@ -30220,9 +30249,8 @@ GroupieDB = {
 				["resultID"] = 176,
 				["rolesNeeded"] = {
 					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
+					3, -- [2]
+					4, -- [3]
 				},
 				["instanceName"] = "Azjol-Nerub",
 				["timestamp"] = 1675781248,
@@ -30346,7 +30374,7 @@ GroupieDB = {
 				["order"] = 3060,
 				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Halls of Stone",
 				["groupSize"] = 5,
-				["isHeroic"] = false,
+				["isHeroic"] = true,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
 				["icon"] = "HOS.tga",
@@ -30360,10 +30388,9 @@ GroupieDB = {
 				["createdat"] = 1675780399,
 				["instanceName"] = "Halls of Stone",
 				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
 				},
 				["timestamp"] = 1675780711,
 				["resultID"] = 509,
@@ -30375,10 +30402,31 @@ GroupieDB = {
 				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
-				["isLFM"] = false,
+				["isLFM"] = true,
 				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["icon"] = "ULD.tga",
 				["words"] = {
+					"lfm", -- [1]
+					"guildrun", -- [2]
+					"ulduar", -- [3]
+					"25", -- [4]
+					"2sr", -- [5]
+					"msos", -- [6]
+					"orbs", -- [7]
+					"shards", -- [8]
+					"patterns", -- [9]
+					"boe", -- [10]
+					"hr", -- [11]
+					"vez", -- [12]
+					"and", -- [13]
+					"yogg", -- [14]
+					"left", -- [15]
+					"last", -- [16]
+					"spot", -- [17]
+					"holy", -- [18]
+					"pally", -- [19]
+					"resto", -- [20]
+					"druid", -- [21]
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Justkrizz-Golemagg",
@@ -30661,8 +30709,8 @@ GroupieDB = {
 				["groupSize"] = 10,
 				["isHeroic"] = false,
 				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "NAX.tga",
+				["lootType"] = "Other",
+				["icon"] = "AN.tga",
 				["words"] = {
 					"circle", -- [1]
 					"lfm", -- [2]
@@ -30739,8 +30787,8 @@ GroupieDB = {
 				["order"] = 3160,
 				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Heroic Violet Hold | Need 1 DPS",
 				["groupSize"] = 5,
-				["isHeroic"] = true,
-				["isLFM"] = true,
+				["isHeroic"] = false,
+				["isLFM"] = false,
 				["lootType"] = "MS > OS",
 				["icon"] = "VH.tga",
 				["words"] = {
@@ -30936,6 +30984,10 @@ GroupieDB = {
 				["lootType"] = "MS > OS",
 				["icon"] = "ULD.tga",
 				["words"] = {
+					"omen", -- [1]
+					"raid", -- [2]
+					"need", -- [3]
+					"healer", -- [4]
 				},
 				["fullName"] = "Ulduar - 10",
 				["author"] = "Iamwarlockk-Golemagg",
@@ -31170,10 +31222,9 @@ GroupieDB = {
 				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1675857357,
 				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
 				},
 				["minLevel"] = 80,
 			},
@@ -31495,9 +31546,6 @@ GroupieDB = {
 				["timestamp"] = 1675852143,
 				["rolesNeeded"] = {
 					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
 				},
 				["minLevel"] = 80,
 			},
@@ -31555,6 +31603,8 @@ GroupieDB = {
 				["createdat"] = 1675843220,
 				["instanceName"] = "Molten Core",
 				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
 				},
 				["timestamp"] = 1675846783,
 				["minLevel"] = 56,
@@ -31651,7 +31701,7 @@ GroupieDB = {
 				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "MS > OS",
-				["icon"] = "ULD.tga",
+				["icon"] = "ZF.tga",
 				["words"] = {
 					"lf2m", -- [1]
 					"ulduar", -- [2]
@@ -31678,10 +31728,9 @@ GroupieDB = {
 				["createdat"] = 1675858801,
 				["minLevel"] = 80,
 				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
 				},
 				["timestamp"] = 1675859190,
 				["maxLevel"] = 80,
@@ -31695,7 +31744,7 @@ GroupieDB = {
 				["isHeroic"] = false,
 				["maxLevel"] = 80,
 				["lootType"] = "MS > OS",
-				["icon"] = "ULD.tga",
+				["icon"] = "AN.tga",
 				["words"] = {
 					"lfm", -- [1]
 					"ulduar", -- [2]
@@ -31937,9 +31986,8 @@ GroupieDB = {
 				["resultID"] = 206,
 				["rolesNeeded"] = {
 					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
+					3, -- [2]
+					4, -- [3]
 				},
 				["instanceName"] = "Razorfen Kraul",
 				["timestamp"] = 1675781254,
@@ -32088,7 +32136,7 @@ GroupieDB = {
 				["msg"] = "VOA 16-18 Specc. Can PALA DK Tanks Boomie Enh Ret",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
-				["isLFM"] = true,
+				["isLFM"] = false,
 				["lootType"] = "MS > OS",
 				["icon"] = "VOA.tga",
 				["words"] = {
@@ -32312,25 +32360,34 @@ GroupieDB = {
 				["minLevel"] = 80,
 				["instanceName"] = "Vault of Archavon",
 			},
-			["Lesnakravka-Golemagg"] = {
+			["Shomzz-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = 2380,
-				["msg"] = "WTS |cffffffff|Hitem:49916::::::::80:::::::::|h[Lovely Charm Bracelet]|h|rs",
-				["groupSize"] = 25,
+				["order"] = -1,
+				["msg"] = "LFM I Pitied The Fool got 1x we can be 5 in group and do all 5 (2 more)",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "Other",
-				["icon"] = "MH.tga",
+				["icon"] = "Other.tga",
 				["words"] = {
-					"wts", -- [1]
-					"hitem", -- [2]
-					"49916", -- [3]
-					"80", -- [4]
-					"h", -- [5]
-					"lovely", -- [6]
-					"charm", -- [7]
-					"bracelet", -- [8]
-					"hs", -- [9]
+					"lfm", -- [1]
+					"i", -- [2]
+					"pitied", -- [3]
+					"the", -- [4]
+					"fool", -- [5]
+					"got", -- [6]
+					"1x", -- [7]
+					"we", -- [8]
+					"can", -- [9]
+					"be", -- [10]
+					"5", -- [11]
+					"in", -- [12]
+					"group", -- [13]
+					"and", -- [14]
+					"do", -- [15]
+					"all", -- [16]
+					"2", -- [17]
+					"more", -- [18]
 				},
 				["fullName"] = "Mount Hyjal",
 				["author"] = "Lesnakravka-Golemagg",
@@ -32383,7 +32440,7 @@ GroupieDB = {
 				["maxLevel"] = 1000,
 				["classColor"] = "FFFFFF",
 			},
-			["Tpanther-Golemagg"] = {
+			["Fàtal-Golemagg"] = {
 				["isLFG"] = true,
 				["order"] = 3410,
 				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
@@ -32469,10 +32526,25 @@ GroupieDB = {
 				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Karazhan 10",
 				["groupSize"] = 10,
 				["isHeroic"] = false,
-				["isLFM"] = false,
+				["isLFM"] = true,
 				["lootType"] = "MS > OS",
 				["icon"] = "KARA.tga",
 				["words"] = {
+					"lfm", -- [1]
+					"ulduar", -- [2]
+					"10", -- [3]
+					"all", -- [4]
+					"hm", -- [5]
+					"except", -- [6]
+					"flame", -- [7]
+					"hodir", -- [8]
+					"mimiron", -- [9]
+					"need", -- [10]
+					"2tanks", -- [11]
+					"1heal", -- [12]
+					"gs", -- [13]
+					"4", -- [14]
+					"5", -- [15]
 				},
 				["fullName"] = "Karazhan",
 				["author"] = "Tryhardx-Golemagg",
@@ -32572,6 +32644,10 @@ GroupieDB = {
 				["createdat"] = 1675849284,
 				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
 				},
 				["timestamp"] = 1675849918,
 				["minLevel"] = 80,
@@ -32625,6 +32701,14 @@ GroupieDB = {
 				["lootType"] = "MS > OS",
 				["icon"] = "Other.tga",
 				["words"] = {
+					"wts", -- [1]
+					"hitem", -- [2]
+					"49916", -- [3]
+					"80", -- [4]
+					"h", -- [5]
+					"lovely", -- [6]
+					"charm", -- [7]
+					"bracelet", -- [8]
 				},
 				["fullName"] = "The Crown Chemical Co.",
 				["author"] = "Punkmonk-Golemagg",
@@ -32643,16 +32727,55 @@ GroupieDB = {
 				["minLevel"] = 78,
 				["createdat"] = 1675779985,
 			},
-			["Tajjin-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 1120,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Uldaman",
-				["groupSize"] = 5,
+			["Mcdepore-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "<< {rt1} La Primera Guerra {rt1} >> Progress Ulduar 25 12/14 - RAID DE FINES DE SEMANA 18.00-21.30 (S-D). Buscamos DPS (ABIERTO A TODAS LAS CLASES, URGE FERAL -BALANCE-CHAMAN TODAS LAS SPECS)Aceptamos low levels. Whisp me para más info",
+				["groupSize"] = 25,
 				["isHeroic"] = false,
-				["isLFM"] = false,
+				["isLFM"] = true,
 				["lootType"] = "MS > OS",
-				["icon"] = "ULDA.tga",
+				["language"] = "German",
 				["words"] = {
+					"rt1", -- [1]
+					"la", -- [2]
+					"primera", -- [3]
+					"guerra", -- [4]
+					"progress", -- [5]
+					"ulduar", -- [6]
+					"25", -- [7]
+					"12", -- [8]
+					"14", -- [9]
+					"raid", -- [10]
+					"de", -- [11]
+					"fines", -- [12]
+					"semana", -- [13]
+					"18", -- [14]
+					"00", -- [15]
+					"21", -- [16]
+					"30", -- [17]
+					"s", -- [18]
+					"d", -- [19]
+					"buscamos", -- [20]
+					"dps", -- [21]
+					"abierto", -- [22]
+					"a", -- [23]
+					"todas", -- [24]
+					"las", -- [25]
+					"clases", -- [26]
+					"urge", -- [27]
+					"feral", -- [28]
+					"balance", -- [29]
+					"chaman", -- [30]
+					"specs", -- [31]
+					"aceptamos", -- [32]
+					"low", -- [33]
+					"levels", -- [34]
+					"whisp", -- [35]
+					"me", -- [36]
+					"para", -- [37]
+					"m", -- [38]
+					"info", -- [39]
 				},
 				["fullName"] = "Uldaman",
 				["author"] = "Tajjin-Golemagg",
@@ -32806,15 +32929,15 @@ GroupieDB = {
 				},
 				["minLevel"] = 80,
 			},
-			["Venrex-Golemagg"] = {
+			["Forsajt-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = -1,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["order"] = 3110,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Culling of Stratholme",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "Other.tga",
+				["icon"] = "COS.tga",
 				["words"] = {
 				},
 				["fullName"] = "The Crown Chemical Co.",
@@ -32826,9 +32949,8 @@ GroupieDB = {
 				["instanceName"] = "The Crown Chemical Co.",
 				["rolesNeeded"] = {
 					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
+					3, -- [2]
+					4, -- [3]
 				},
 				["timestamp"] = 1675780560,
 				["minLevel"] = 78,
@@ -32844,6 +32966,14 @@ GroupieDB = {
 				["lootType"] = "MS > OS",
 				["icon"] = "NAX.tga",
 				["words"] = {
+					"lf1mdps", -- [1]
+					"tank", -- [2]
+					"exp", -- [3]
+					"runs", -- [4]
+					"halls", -- [5]
+					"of", -- [6]
+					"light", -- [7]
+					"normal", -- [8]
 				},
 				["fullName"] = "Naxxramas - 25",
 				["author"] = "Teberius-Golemagg",
@@ -32864,7 +32994,7 @@ GroupieDB = {
 				["msg"] = "LFG SFK dungeon Event Bosses",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
-				["isLFM"] = false,
+				["maxLevel"] = 80,
 				["lootType"] = "MS > OS",
 				["icon"] = "SFK.tga",
 				["words"] = {
@@ -32958,9 +33088,6 @@ GroupieDB = {
 				["minLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
 				},
 				["timestamp"] = 1675861625,
 				["maxLevel"] = 80,
@@ -32992,9 +33119,6 @@ GroupieDB = {
 				["timestamp"] = 1675851281,
 				["rolesNeeded"] = {
 					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
 				},
 				["minLevel"] = 80,
 			},
@@ -33099,6 +33223,12 @@ GroupieDB = {
 				["lootType"] = "MS > OS",
 				["icon"] = "NEX.tga",
 				["words"] = {
+					"lfm", -- [1]
+					"wanted", -- [2]
+					"blacktalon", -- [3]
+					"the", -- [4]
+					"savage", -- [5]
+					"9466", -- [6]
 				},
 				["fullName"] = "Heroic Nexus",
 				["author"] = "Preparedx-Golemagg",
@@ -33144,15 +33274,15 @@ GroupieDB = {
 				["minLevel"] = 80,
 				["resultID"] = 67,
 			},
-			["Maddeniing-Golemagg"] = {
+			["Zugzugman-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3310,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["order"] = 1030,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Shadowfang Keep",
 				["groupSize"] = 5,
-				["isHeroic"] = true,
+				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "AN.tga",
+				["icon"] = "SFK.tga",
 				["words"] = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
@@ -33493,6 +33623,30 @@ GroupieDB = {
 				["lootType"] = "MS > OS",
 				["icon"] = "VOA.tga",
 				["words"] = {
+					"lfm", -- [1]
+					"for", -- [2]
+					"ulduar", -- [3]
+					"25m", -- [4]
+					"boe", -- [5]
+					"hr", -- [6]
+					"msos", -- [7]
+					"need", -- [8]
+					"healer", -- [9]
+					"dps", -- [10]
+					"min", -- [11]
+					"4200gs", -- [12]
+					"we", -- [13]
+					"will", -- [14]
+					"go", -- [15]
+					"as", -- [16]
+					"far", -- [17]
+					"can", -- [18]
+					"before", -- [19]
+					"reset", -- [20]
+					"chilled", -- [21]
+					"run", -- [22]
+					"normal", -- [23]
+					"fresh", -- [24]
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Stronkmuscle-Golemagg",
@@ -33502,6 +33656,9 @@ GroupieDB = {
 				["createdat"] = 1675845903,
 				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
 				},
 				["timestamp"] = 1675845930,
 				["minLevel"] = 80,
@@ -33598,9 +33755,9 @@ GroupieDB = {
 				["msg"] = "}VOA 10 LF HUNTER",
 				["groupSize"] = 10,
 				["isHeroic"] = false,
-				["isLFM"] = true,
+				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["icon"] = "WC.tga",
 				["words"] = {
 					"voa", -- [1]
 					"10", -- [2]
@@ -33623,25 +33780,29 @@ GroupieDB = {
 				},
 				["minLevel"] = 80,
 			},
-			["Saela-Golemagg"] = {
+			["Zyxio-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = 3310,
-				["msg"] = "LFM HEAL AN HC+ Hadronox + Anub daily summ insid",
-				["groupSize"] = 5,
-				["isHeroic"] = true,
+				["order"] = 3420,
+				["msg"] = "LF OS 2D Need 2 Tanks, 2 Healers and Dps 4.2+ (Pennant and Illu HR)",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "MS > OS",
-				["icon"] = "AN.tga",
+				["icon"] = "OS.tga",
 				["words"] = {
-					"lfm", -- [1]
-					"heal", -- [2]
-					"an", -- [3]
-					"hc", -- [4]
-					"hadronox", -- [5]
-					"anub", -- [6]
-					"daily", -- [7]
-					"summ", -- [8]
-					"insid", -- [9]
+					"lf", -- [1]
+					"os", -- [2]
+					"2d", -- [3]
+					"need", -- [4]
+					"2", -- [5]
+					"tanks", -- [6]
+					"healers", -- [7]
+					"and", -- [8]
+					"dps", -- [9]
+					"4", -- [10]
+					"pennant", -- [11]
+					"illu", -- [12]
+					"hr", -- [13]
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Saela-Golemagg",
@@ -33650,7 +33811,10 @@ GroupieDB = {
 				["createdat"] = 1675780134,
 				["instanceID"] = 601,
 				["rolesNeeded"] = {
-					2, -- [1]
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
 				},
 				["timestamp"] = 1675780154,
 				["instanceName"] = "Azjol-Nerub",
@@ -33690,26 +33854,24 @@ GroupieDB = {
 				["createdat"] = 1675861623,
 				["minLevel"] = 80,
 				["rolesNeeded"] = {
-					3, -- [1]
-					4, -- [2]
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
 				},
 				["timestamp"] = 1675862205,
 				["maxLevel"] = 80,
 				["classColor"] = "F58CBA",
 			},
-			["Shadita-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3230,
-				["msg"] = "LFM Nexus HC+",
+			["Tagliacarte-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
 				["groupSize"] = 5,
 				["isHeroic"] = true,
-				["isLFM"] = true,
+				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "NEX.tga",
+				["icon"] = "AN.tga",
 				["words"] = {
-					"lfm", -- [1]
-					"nexus", -- [2]
-					"hc", -- [3]
 				},
 				["fullName"] = "Heroic Nexus",
 				["author"] = "Shadita-Golemagg",
@@ -34100,6 +34262,45 @@ GroupieDB = {
 				["lootType"] = "MS > OS",
 				["icon"] = "Other.tga",
 				["words"] = {
+					"vengeance", -- [1]
+					"pug", -- [2]
+					"cross", -- [3]
+					"ulduar", -- [4]
+					"weekly", -- [5]
+					"sr", -- [6]
+					"runs", -- [7]
+					"25m", -- [8]
+					"thursday", -- [9]
+					"monday", -- [10]
+					"at", -- [11]
+					"18", -- [12]
+					"30", -- [13]
+					"st", -- [14]
+					"2x", -- [15]
+					"10m", -- [16]
+					"hardmodes", -- [17]
+					"8", -- [18]
+					"10", -- [19]
+					"cleared", -- [20]
+					"aiming", -- [21]
+					"next", -- [22]
+					"id", -- [23]
+					"on", -- [24]
+					"saturdays", -- [25]
+					"organized", -- [26]
+					"raids", -- [27]
+					"with", -- [28]
+					"experienced", -- [29]
+					"raidlead", -- [30]
+					"https", -- [31]
+					"discord", -- [32]
+					"gg", -- [33]
+					"qbeuvuhv", -- [34]
+					"for", -- [35]
+					"signup", -- [36]
+					"and", -- [37]
+					"more", -- [38]
+					"info", -- [39]
 				},
 				["fullName"] = "The Crown Chemical Co.",
 				["author"] = "Lpsatell-Golemagg",
@@ -34136,6 +34337,35 @@ GroupieDB = {
 				["instanceID"] = 33,
 				["createdat"] = 1675844597,
 				["instanceName"] = "The Crown Chemical Co.",
+				["instanceID"] = 33,
+				["minLevel"] = 78,
+				["resultID"] = 229,
+				["maxLevel"] = 80,
+				["rolesNeeded"] = {
+					2, -- [1]
+				},
+				["timestamp"] = 1675800001,
+				["createdat"] = 1675799836,
+				["classColor"] = "40c7eb",
+			},
+			["Hellreaver-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Hellreaver-Golemagg",
+				["instanceName"] = "Azjol-Nerub",
+				["instanceID"] = 601,
+				["minLevel"] = 80,
+				["resultID"] = 233,
+				["maxLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -34222,56 +34452,16 @@ GroupieDB = {
 				["minLevel"] = 80,
 				["resultID"] = 290,
 			},
-			["Teshie-Golemagg"] = {
+			["Poontank-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = 3460,
-				["msg"] = "<Recursion> is a classic day one, semi-casual guild looking to recruit for 25 Man Ulduar, including hardmodes. Raids are Wed and Sun 21:00-00:00. No loot council, nice atmosphere, currently LF 1 RDruid/Shaman/Holy Priest, w/ for more information!",
-				["groupSize"] = 25,
+				["order"] = 3090,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Oculus | Need Healer, 1 DPS",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "ULD.tga",
+				["lootType"] = "MS > OS",
+				["icon"] = "OC.tga",
 				["words"] = {
-					"recursion", -- [1]
-					"is", -- [2]
-					"a", -- [3]
-					"classic", -- [4]
-					"day", -- [5]
-					"one", -- [6]
-					"semi", -- [7]
-					"casual", -- [8]
-					"guild", -- [9]
-					"looking", -- [10]
-					"to", -- [11]
-					"recruit", -- [12]
-					"for", -- [13]
-					"25", -- [14]
-					"man", -- [15]
-					"ulduar", -- [16]
-					"including", -- [17]
-					"hardmodes", -- [18]
-					"raids", -- [19]
-					"are", -- [20]
-					"wed", -- [21]
-					"and", -- [22]
-					"sun", -- [23]
-					"21", -- [24]
-					"00", -- [25]
-					"no", -- [26]
-					"loot", -- [27]
-					"council", -- [28]
-					"nice", -- [29]
-					"atmosphere", -- [30]
-					"currently", -- [31]
-					"lf", -- [32]
-					"1", -- [33]
-					"rdruid", -- [34]
-					"shaman", -- [35]
-					"holy", -- [36]
-					"priest", -- [37]
-					"w", -- [38]
-					"more", -- [39]
-					"information", -- [40]
 				},
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Teshie-Golemagg",
@@ -34280,10 +34470,9 @@ GroupieDB = {
 				["createdat"] = 1675780074,
 				["instanceID"] = 603,
 				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
 				},
 				["timestamp"] = 1675781164,
 				["instanceName"] = "Ulduar",
@@ -34308,6 +34497,10 @@ GroupieDB = {
 				["resultID"] = 1375,
 				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
 				},
 				["timestamp"] = 1675849918,
 				["createdat"] = 1675849128,
@@ -34632,10 +34825,36 @@ GroupieDB = {
 				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Obsidian Sanctum 25",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
-				["isLFM"] = false,
+				["isLFM"] = true,
 				["lootType"] = "MS > OS",
 				["icon"] = "OS.tga",
 				["words"] = {
+					"sfk", -- [1]
+					"event", -- [2]
+					"mount", -- [3]
+					"hr", -- [4]
+					"paying", -- [5]
+					"25", -- [6]
+					"000g", -- [7]
+					"between", -- [8]
+					"party", -- [9]
+					"all", -- [10]
+					"other", -- [11]
+					"items", -- [12]
+					"free", -- [13]
+					"to", -- [14]
+					"roll", -- [15]
+					"75lvl", -- [16]
+					"welcome", -- [17]
+					"each", -- [18]
+					"run", -- [19]
+					"3x", -- [20]
+					"summon", -- [21]
+					"boss", -- [22]
+					"need", -- [23]
+					"healer", -- [24]
+					"last", -- [25]
+					"spot", -- [26]
 				},
 				["fullName"] = "Obsidian Sanctum - 25",
 				["author"] = "Arlem-Golemagg",
@@ -34660,6 +34879,37 @@ GroupieDB = {
 				["lootType"] = "MS > OS",
 				["icon"] = "VOA.tga",
 				["words"] = {
+					"moderna", -- [1]
+					"misstag", -- [2]
+					"is", -- [3]
+					"recruiting", -- [4]
+					"swedish", -- [5]
+					"speaking", -- [6]
+					"players", -- [7]
+					"for", -- [8]
+					"our", -- [9]
+					"tightly", -- [10]
+					"knit", -- [11]
+					"10", -- [12]
+					"man", -- [13]
+					"pve", -- [14]
+					"guild", -- [15]
+					"raids", -- [16]
+					"wed", -- [17]
+					"sun", -- [18]
+					"19", -- [19]
+					"30", -- [20]
+					"22", -- [21]
+					"looking", -- [22]
+					"a", -- [23]
+					"good", -- [24]
+					"active", -- [25]
+					"and", -- [26]
+					"relaxed", -- [27]
+					"dps", -- [28]
+					"w", -- [29]
+					"more", -- [30]
+					"info", -- [31]
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Shadowquint-Golemagg",
@@ -34680,10 +34930,21 @@ GroupieDB = {
 				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Halls of Stone",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
-				["isLFM"] = false,
+				["isLFM"] = true,
 				["lootType"] = "MS > OS",
 				["icon"] = "HOS.tga",
 				["words"] = {
+					"lfm", -- [1]
+					"ulduar10", -- [2]
+					"2xsr", -- [3]
+					"msos", -- [4]
+					"need", -- [5]
+					"1", -- [6]
+					"tank", -- [7]
+					"or", -- [8]
+					"dps", -- [9]
+					"with", -- [10]
+					"os", -- [11]
 				},
 				["fullName"] = "Halls of Stone",
 				["author"] = "Vozzaki-Golemagg",
@@ -34701,6 +34962,7 @@ GroupieDB = {
 				["timestamp"] = 1675849911,
 				["minLevel"] = 75,
 				["maxLevel"] = 80,
+				["classColor"] = "9482C9",
 			},
 			["Mokongo-Golemagg"] = {
 				["isLFG"] = false,
@@ -34953,7 +35215,7 @@ GroupieDB = {
 				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "MS > OS",
-				["icon"] = "VH.tga",
+				["icon"] = "BRD.tga",
 				["words"] = {
 					"lfm", -- [1]
 					"vh", -- [2]
@@ -34968,7 +35230,9 @@ GroupieDB = {
 				["minLevel"] = 73,
 				["createdat"] = 1675848240,
 				["rolesNeeded"] = {
-					1, -- [1]
+					3, -- [1]
+					4, -- [2]
+					1, -- [3]
 				},
 				["timestamp"] = 1675848312,
 				["instanceName"] = "Violet Hold",
@@ -35096,6 +35360,10 @@ GroupieDB = {
 				["createdat"] = 1675849584,
 				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
 				},
 				["timestamp"] = 1675849918,
 				["minLevel"] = 80,
@@ -35205,10 +35473,7 @@ GroupieDB = {
 				["minLevel"] = 80,
 				["createdat"] = 1675849816,
 				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
+					2, -- [1]
 				},
 				["timestamp"] = 1675849816,
 				["instanceName"] = "Vault of Archavon",
@@ -35502,10 +35767,7 @@ GroupieDB = {
 				["minLevel"] = 61,
 				["createdat"] = 1675849075,
 				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
+					2, -- [1]
 				},
 				["timestamp"] = 1675849075,
 				["instanceName"] = "Slave Pens",
@@ -35731,10 +35993,10 @@ GroupieDB = {
 					["Conall"] = true,
 					["Puntune"] = true,
 					["Elfboy"] = true,
-					["Arferes"] = true,
+					["Raudos"] = true,
 					["Freezqt"] = true,
 					["Qtc"] = true,
-					["Raudos"] = true,
+					["Arferes"] = true,
 				},
 				["Moolatz"] = {
 					["Goldsmell"] = true,

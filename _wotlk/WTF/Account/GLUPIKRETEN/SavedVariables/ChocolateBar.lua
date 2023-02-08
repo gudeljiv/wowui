@@ -848,9 +848,9 @@ CB_PlayedTime = {
 		["total"] = 140587,
 	},
 	["Miqa-Golemagg"] = {
-		["total"] = 21221,
-		["timeStamp"] = 231374.328,
-		["timeAtThisLevel"] = 16173,
+		["total"] = 21374,
+		["timeStamp"] = 234557.993,
+		["timeAtThisLevel"] = 16326,
 	},
 	["Nitwit-"] = {
 		["total"] = 680,

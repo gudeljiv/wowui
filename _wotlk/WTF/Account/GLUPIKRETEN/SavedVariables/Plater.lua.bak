@@ -109,8 +109,8 @@ PlaterDB = {
 		[53434] = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["type"] = "BUFF",
-			["source"] = "Wolf",
-			["npcID"] = 24128,
+			["source"] = "Murkblood Healer",
+			["npcID"] = 17730,
 		},
 		[46604] = {
 			["event"] = "SPELL_CAST_SUCCESS",
@@ -123,9 +123,9 @@ PlaterDB = {
 			["source"] = "Magister Surdiel",
 			["npcID"] = 32170,
 		},
-		[67836] = {
-			["event"] = "SPELL_CAST_SUCCESS",
+		[67838] = {
 			["source"] = "Wormhole",
+			["event"] = "SPELL_CAST_SUCCESS",
 			["npcID"] = 35646,
 		},
 		[35706] = {
@@ -357,7 +357,7 @@ PlaterDB = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["type"] = "BUFF",
 			["source"] = "Unknown",
-			["npcID"] = 17252,
+			["npcID"] = 417,
 		},
 		[58766] = {
 			["encounterName"] = "Sartharion",
@@ -9905,9 +9905,9 @@ PlaterDB = {
 					"Molten Elemental", -- [1]
 					"Ragefire Chasm", -- [2]
 				},
-				[24777] = {
-					"Sunblade Sentinel", -- [1]
-					"Magister's Terrace", -- [2]
+				[26824] = {
+					"Drakkari Raptor Mount", -- [1]
+					"Drak'Tharon Keep", -- [2]
 				},
 				[11353] = {
 					"Gurubashi Blood Drinker", -- [1]
@@ -9941,17 +9941,17 @@ PlaterDB = {
 					"Mage Hunter Initiate", -- [1]
 					"The Nexus", -- [2]
 				},
-				[18636] = {
-					"Cabal Assassin", -- [1]
-					"Auchindoun: Shadow Labyrinth", -- [2]
+				[30918] = {
+					"Azure Binder", -- [1]
+					"Violet Hold", -- [2]
 				},
 				[24745] = {
 					"Pure Energy", -- [1]
 					"Magister's Terrace", -- [2]
 				},
-				[26824] = {
-					"Drakkari Raptor Mount", -- [1]
-					"Drak'Tharon Keep", -- [2]
+				[24777] = {
+					"Sunblade Sentinel", -- [1]
+					"Magister's Terrace", -- [2]
 				},
 				[18796] = {
 					"Fel Overseer", -- [1]
@@ -10877,9 +10877,9 @@ PlaterDB = {
 					"Durnholde Tracking Hound", -- [1]
 					"The Escape From Durnholde", -- [2]
 				},
-				[30918] = {
-					"Azure Binder", -- [1]
-					"Violet Hold", -- [2]
+				[18636] = {
+					"Cabal Assassin", -- [1]
+					"Auchindoun: Shadow Labyrinth", -- [2]
 				},
 				[26792] = {
 					"Crystalline Protector", -- [1]
@@ -11761,7 +11761,7 @@ PlaterDB = {
 				["y"] = 15.5,
 				["side"] = 7,
 			},
-			["aura_alpha"] = 1,
+			["cast_statusbar_texture"] = "Melli",
 			["auto_toggle_friendly"] = {
 				["cities"] = false,
 				["world"] = false,
@@ -14869,7 +14869,7 @@ PlaterDB = {
 			["indicator_raidmark_scale"] = 0.699999988079071,
 			["castbar_framelevel"] = 0,
 			["buffs_on_aura2"] = true,
-			["cast_statusbar_texture"] = "Melli",
+			["aura_alpha"] = 1,
 			["extra_icon_auras_mine"] = {
 				["224991"] = true,
 				["Sunder Armor"] = false,
