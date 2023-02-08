@@ -26,7 +26,6 @@ skills["offgcd"]["warrior"] = [
     {"name": "blood fury", "type": "GetSpellTexture", "id": 20572, "key": "8"},
     {"name": "bloodrage", "type": "GetSpellTexture", "id": 2687, "key": "f", "modifier": "alt"},
     {"name": "gloves_trinket", "type": "GetSpellTexture", "id": 52766, "key": "t"},
-    {"name": "berserker rage", "type": "GetSpellTexture", "id": 18499, "key": "f4", "modifier": "ctrl"},
 ]
 
 skills["offgcd"]["druid"] = [
@@ -91,6 +90,7 @@ skills["warrior"] = [
     {"name": "shattering throw", "type": "GetSpellTexture", "id": 64382, "key": "7"},
     {"name": "death wish", "type": "GetSpellTexture", "id": 12292, "key": "r", "modifier": "alt"},
     {"name": "recklessness", "type": "GetSpellTexture", "id": 1719, "key": "e", "modifier": "alt"},
+    {"name": "berserker rage", "type": "GetSpellTexture", "id": 18499, "key": "f4", "modifier": "ctrl"},
     {"name": "enraged regeneration", "type": "GetSpellTexture", "id": 55694, "key": "f5", "modifier": "ctrl"},
 ]
 

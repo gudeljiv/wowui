@@ -144,21 +144,14 @@ with keyboard.Listener(on_press=on_press) as listener:
             except:
                 wow_class = "warrior"
 
-            if not os.path.exists(abilities_folder + slash + wow_class):
-                os.makedirs(abilities_folder + slash + wow_class)
-            # else:
-            #     for f in os.listdir(abilities_folder + slash + wow_class):
-            #         os.remove(os.path.join(dir, f))
-            if not os.path.exists(abilities_folder + slash + "healing"):
-                os.makedirs(abilities_folder + slash + "healing")
-            # else:
-            #     for f in os.listdir(abilities_folder + slash + "healing"):
-            #         os.remove(os.path.join(dir, f))
-            if not os.path.exists(abilities_folder + slash + "globals"):
-                os.makedirs(abilities_folder + slash + "globals")
-            # else:
-            #     for f in os.listdir(abilities_folder + slash + "globals"):
-            #         os.remove(os.path.join(dir, f))
+            folders = [abilities_folder + slash + wow_class, abilities_folder + slash + "healing", abilities_folder + slash + "globals"]
+
+            for folder in folders:
+                if not os.path.exists(folder):
+                    os.makedirs(folder)
+                # else:
+                #     for f in os.listdir(folder):
+                #         os.remove(os.path.join(folder, f))
 
             if count > 0:
                 quit()
