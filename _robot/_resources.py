@@ -24,7 +24,7 @@ skills["offgcd"]["warrior"] = [
     {"name": "last stand", "type": "GetSpellTexture", "id": 12975, "key": "t", "modifier": "shift"},
     {"name": "battlemaster's resolve", "type": "GetItemIcon", "id": 41589, "key": "1", "modifier": "alt"},
     {"name": "blood fury", "type": "GetSpellTexture", "id": 20572, "key": "8"},
-    {"name": "bloodrage", "type": "GetSpellTexture", "id": 2687, "key": "d", "modifier": "alt"},
+    {"name": "bloodrage", "type": "GetSpellTexture", "id": 2687, "key": "f", "modifier": "alt"},
     {"name": "gloves_trinket", "type": "GetSpellTexture", "id": 52766, "key": "t"},
     {"name": "berserker rage", "type": "GetSpellTexture", "id": 18499, "key": "f4", "modifier": "ctrl"},
 ]
@@ -47,7 +47,6 @@ skills["offgcd"]["death knight"] = [
 ]
 
 skills["offgcd"]["hunter"] = [
-    {"name": "misdirection", "type": "GetSpellTexture", "id": 34477, "key": "2", "modifier": "alt"},
     {"name": "kill command", "type": "GetSpellTexture", "id": 34026, "key": "4"},
     {"name": "aspect of the hawk", "type": "GetSpellTexture", "id": 13165, "key": "f1"},
     {"name": "aspect of the dragonhawk", "type": "GetSpellTexture", "id": 61846, "key": "f1"},
@@ -124,6 +123,7 @@ skills["hunter"] = [
     {"name": "explosive shot", "type": "GetSpellTexture", "id": 60052, "key": "3"},
     {"name": "black arrow", "type": "GetSpellTexture", "id": 63671, "key": "5"},
     {"name": "explosive trap", "type": "GetSpellTexture", "id": 49066, "key": "g"},
+    {"name": "misdirection", "type": "GetSpellTexture", "id": 34477, "key": "2", "modifier": "alt"},
     {"name": "tranquilizing shot", "type": "GetSpellTexture", "id": 19801, "key": "k"},
 ]
 

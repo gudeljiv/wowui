@@ -69,6 +69,7 @@ else:
 if not os.path.exists(abilities_folder):
     os.makedirs(abilities_folder)
 
+
 skills_loaded = "warrior"
 print("Script loaded and ready.", "Rotation is paused.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"), os.name)
 
@@ -145,10 +146,19 @@ with keyboard.Listener(on_press=on_press) as listener:
 
             if not os.path.exists(abilities_folder + slash + wow_class):
                 os.makedirs(abilities_folder + slash + wow_class)
+            # else:
+            #     for f in os.listdir(abilities_folder + slash + wow_class):
+            #         os.remove(os.path.join(dir, f))
             if not os.path.exists(abilities_folder + slash + "healing"):
                 os.makedirs(abilities_folder + slash + "healing")
+            # else:
+            #     for f in os.listdir(abilities_folder + slash + "healing"):
+            #         os.remove(os.path.join(dir, f))
             if not os.path.exists(abilities_folder + slash + "globals"):
                 os.makedirs(abilities_folder + slash + "globals")
+            # else:
+            #     for f in os.listdir(abilities_folder + slash + "globals"):
+            #         os.remove(os.path.join(dir, f))
 
             if count > 0:
                 quit()

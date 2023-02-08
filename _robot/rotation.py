@@ -91,7 +91,7 @@ except:
 abilities_offgcd = {}
 try:
     for skill in skills["offgcd"][wow_class]:
-        abilities_offgcd[skill["name"]] = cv2.imread(abilities_folder + "/"+skill["name"] + " O.png")
+        abilities_offgcd[skill["name"]] = cv2.imread(abilities_folder + "/" + wow_class + "/" + skill["name"] + " O.png")
 except:
     print("offgcd abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
 
