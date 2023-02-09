@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 9065,
+	["session"] = 9067,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\nMinimap\\core.lua:12: attempt to index global 'MinimapToggleButton' (a nil value)",

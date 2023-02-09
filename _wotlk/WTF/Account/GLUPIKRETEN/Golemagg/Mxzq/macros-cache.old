@@ -1,7 +1,8 @@
-VER 3 0000000001000013 " " "132328"
+VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/dismount
-/petfollow
+/cast feign death
+/stopattack
+/stopcasting
 END
 VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -70,9 +71,8 @@ VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /cast [@focus,exists,noharm][@pet,exists][]Misdirection
 END
-VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000013 " " "132328"
 #showtooltip
-/cast feign death
-/stopattack
-/stopcasting
+/dismount
+/petfollow
 END
