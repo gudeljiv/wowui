@@ -48,18 +48,6 @@ PallyPowerDB = {
 	},
 }
 PallyPower_Assignments = {
-	["Mileram"] = {
-		2, -- [1]
-		2, -- [2]
-		3, -- [3]
-		2, -- [4]
-		3, -- [5]
-		2, -- [6]
-		3, -- [7]
-		3, -- [8]
-		2, -- [9]
-		2, -- [10]
-	},
 	["Vermina"] = {
 		3, -- [1]
 		3, -- [2]
@@ -72,6 +60,18 @@ PallyPower_Assignments = {
 		1, -- [9]
 		2, -- [10]
 		2, -- [11]
+	},
+	["Mileram"] = {
+		2, -- [1]
+		2, -- [2]
+		3, -- [3]
+		2, -- [4]
+		3, -- [5]
+		2, -- [6]
+		3, -- [7]
+		3, -- [8]
+		2, -- [9]
+		2, -- [10]
 	},
 	["Gamzy"] = {
 		0, -- [1]
@@ -180,57 +180,57 @@ PallyPower_AuraAssignments = {
 	["Uhndapa"] = 0,
 	["Zagopally"] = 1,
 	["Turanian"] = 1,
-	["Jejla"] = 3,
-	["Lizpally"] = 1,
+	["Hugerocket"] = 1,
+	["Realpala"] = 0,
 	["Aarvin"] = 0,
 	["Lallin"] = 3,
 	["Nimhitch"] = 3,
-	["Hugerocket"] = 1,
-	["Realpala"] = 0,
-	["Iamtherealqt"] = 2,
 	["Darkknéss"] = 1,
+	["Iamtherealqt"] = 2,
+	["Darwina"] = 0,
+	["Badpaladinn"] = 1,
 	["Barskeladd"] = 6,
 	["Pretzelqt"] = 0,
-	["Darwina"] = 0,
+	["Hjørdís"] = 6,
 	["Tisca"] = 1,
 	["Fatalitý"] = 1,
 	["Whit"] = 2,
-	["Badpaladinn"] = 1,
-	["Hjørdís"] = 6,
+	["Konseus"] = 2,
+	["Rubyrag"] = 0,
 	["Lubiven"] = 0,
 	["Ethyr"] = 3,
-	["Rubyrag"] = 0,
+	["Sistermerrin"] = 0,
 	["Zoqur"] = 0,
 	["Talashia"] = 6,
-	["Konseus"] = 2,
+	["Recobe"] = 1,
 	["Thelichlight"] = 6,
 	["Yebat"] = 1,
 	["Trenhard"] = 6,
-	["Sistermerrin"] = 0,
-	["Recobe"] = 1,
 	["Supachad"] = 3,
+	["Lizpally"] = 1,
+	["Xilaz"] = 3,
 	["Twitterstorm"] = 0,
 	["Yesnix"] = 3,
 	["Xoptimalz"] = 5,
-	["Ðîvâ"] = 3,
-	["Xilaz"] = 3,
-	["Glumsi"] = 0,
 	["Mcgiver"] = 1,
 	["Holychock"] = 3,
-	["Teddz"] = 0,
+	["Glumsi"] = 0,
 	["Palablynx"] = 4,
+	["Teddz"] = 0,
+	["Ðîvâ"] = 3,
 	["Moghulol"] = 1,
-	["Gigapaladin"] = 2,
 	["Kalexa"] = 0,
+	["Gigapaladin"] = 2,
 	["Selestra"] = 0,
-	["Phkp"] = 0,
 	["Foxholy"] = 1,
+	["Jejla"] = 3,
+	["Phkp"] = 0,
 	["Palladen"] = 5,
 	["Nioxina"] = 0,
 	["Althan"] = 0,
 	["Immórtál"] = 1,
-	["Ewulcek"] = 3,
 	["Wscqc"] = 3,
+	["Ewulcek"] = 3,
 	["Monikå"] = 0,
 	["Redhaired"] = 3,
 	["Drexal"] = 0,
