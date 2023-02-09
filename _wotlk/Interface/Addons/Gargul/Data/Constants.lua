@@ -163,6 +163,7 @@ GL.Data.Constants = {
             "Arvada",
             "Codzima",
             "Curnil",
+            "Jadedspirit",
             "Lantis",
             "Lemmings19",
             "Schweex",
@@ -221,6 +222,7 @@ GL.Data.Constants = {
     SoftReserveSources = {
         weakaura = 0,
         gargul = 1,
+        lootReserve = 2,
     },
 
     GargulConflictsWith = {

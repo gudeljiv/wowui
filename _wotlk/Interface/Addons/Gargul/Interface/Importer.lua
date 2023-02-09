@@ -3,8 +3,6 @@ local L = Gargul_L;
 ---@type GL
 local _, GL = ...;
 
-GL.AceGUI = GL.AceGUI or LibStub("AceGUI-3.0");
-
 ---@type Interface
 local Interface = GL.Interface;
 
@@ -17,15 +15,11 @@ GL.Interface.Importer = {
 ---@type ImporterInterface
 local Importer = GL.Interface.Importer;
 
---[[ CONSTANTS ]]
-local FONT;
-
 ---@return table
 function Importer:open()
     GL:debug("Importer:open");
 
     self.isVisible = true;
-    FONT = GL.FONT;
 
     local Window = _G[self.windowName] or self:build();
 
@@ -41,8 +35,6 @@ function Importer:close()
     return _G[self.windowName] and _G[self.windowName]:Hide();
 end
 
---- Build the auctioneer UI. We only do this once per runtime
----
 ---@return table
 function Importer:build()
     GL:debug("Importer:build");
@@ -76,7 +68,7 @@ function Importer:build()
     local Intro = Interface:createFontString(Window, L.IMPORT_EXPLANATION);
     Intro:SetPoint("TOPLEFT", Window, "TOPLEFT", 20, -30);
     Intro:SetPoint("TOPRIGHT", Window, "TOPRIGHT", -20, 0);
-    Intro:SetJustifyH("MIDDLE")
+    Intro:SetJustifyH("MIDDLE");
 
     ---@type Button
     local ImportSoftRes = Interface:dynamicPanelButton(Window, L.SOFTRES);

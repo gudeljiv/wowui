@@ -1,12 +1,3 @@
--- TODO:
--- TODO:
--- Test/fix Bar spam test bug report
--- Test /reload then add via chat, open UI and use remove button
--- Test /reload then add via unit right click, open UI and use remove
--- Do the above two for NPC and players
--- Need to set needSorted to true always in any add or remove function
--- Or change it from "needSorted" to "needIndex"
-
 ----------------------------------
 -- Global Ignore List Variables --
 ----------------------------------
@@ -21,9 +12,10 @@ local GILFRAME			= nil
 local gotLoaded			= false
 local gotEntering		= false
 local safeToLoad		= false
+local doLoginIgnore		= true
 local faction			= nil
 local maxIgnoreSize		= 50
-local maxSyncTries		= 1
+local maxSyncTries		= 2
 local maxHistorySize	= 100
 local firstClear		= false
 local firstPrune		= false
@@ -40,6 +32,8 @@ local needPartyClose	= false
 local gotGroup          = IsInGroup()
 local partyNameUI		= ""
 local groupWarning      = {}
+local MSG_LOGOFF		= ERR_FRIEND_OFFLINE_S:gsub("%%s", ".+")
+local MSG_LOGON			= ERR_FRIEND_ONLINE_SS:gsub("|Hplayer:%%s|h%[%%s%]|h", "|Hplayer:.+|h%%[.+%%]|h")
 
 --print ("DEBUG gotGroup=" .. (tostring(gotGroup) or "NIL"))
 
@@ -448,7 +442,9 @@ function SyncIgnoreList (silent)
 			
 			if name ~= nil then
 			
-				if removeServer(name, true) ~= UNKNOWN then
+				local tmp = removeServer(name, true)
+				
+				if (tmp ~= "") and (tmp ~= UNKNOWN) then
 				
 					name = Proper(addServer(name))
 
@@ -468,12 +464,17 @@ function SyncIgnoreList (silent)
 		GlobalIgnoreImported = true
 	end	
 	
-	-- first remove expired entries
+	-- first remove expired entries and fix an detected broken entries
 	
 	local count = 0
 	
 	while count < #GlobalIgnoreDB.dateList do
 		count = count + 1
+		
+		local tmp = removeServer(GlobalIgnoreDB.ignoreList[count], true)
+		if tmp == "" then
+			RemoveFromList(count)
+		end
 		
 		if GlobalIgnoreDB.expList[count] > 0 and daysFromToday(GlobalIgnoreDB.dateList[count]) >= GlobalIgnoreDB.expList[count] then
 			local name = addServer(GlobalIgnoreDB.ignoreList[count])		
@@ -490,6 +491,7 @@ function SyncIgnoreList (silent)
 		local skipRemove = false
 		local globIdx	 = hasGlobalIgnored(name)
 	
+		if name ~= nil then
 		if globIdx == 0 then
 			if GlobalIgnoreDB.trackChanges == true then
 			
@@ -513,6 +515,7 @@ function SyncIgnoreList (silent)
 			GlobalIgnoreDB.syncInfo[globIdx] = {}
 		end
 	end
+	end
 	
 	if GlobalIgnoreDB.trackChanges == true then
 		local listCount = 0
@@ -532,21 +535,6 @@ function SyncIgnoreList (silent)
 			listCount = listCount + 1
 		end	
 	end
-
---	local ignoreCount = C_FriendList.GetNumIgnores()
---	
-	-- if ignore list is larger than our max we must remove players until it gets to max
-	
---	if ignoreCount > maxIgnoreSize then				
---		if ignoreCount > maxIgnoreSize then
---			local name = C_FriendList.GetIgnoreName(ignoreCount)
---			print("DEBUG Reducing Max account ignore: "..name)
---			BlizzardDelIgnore(ignoreCount)
---			print("DEBUG Readding to global ignore")
---			AddIgnore(name, true)
---			ignoreCount = C_FriendList.GetNumIgnores()
---		end
---	end
 
 	-- move qualified players to account wide ignore if there is room for it
 
@@ -614,7 +602,12 @@ local function PruneIgnoreList (days, doit)
 			local name = addServer(GlobalIgnoreDB.ignoreList[count])
 					
 			if doit == true then
-				C_FriendList.DelIgnore(name)
+				if GlobalIgnoreDB.typeList[count] == "player" then
+					C_FriendList.DelIgnore(name)
+				else
+					RemoveFromList(count)
+				end
+				
 				count = 0
 			end
 		end
@@ -1557,17 +1550,17 @@ local function chatMessageFilter (self, event, message, from, t1, t2, t3, t4, t5
 		--lastMsg = message
 	--end
 
-	if event == "CHAT_MSG_SYSTEM" then	
-		if message == ERR_IGNORE_NOT_FOUND and GetTime() - loadedTime < 60 then
-			return true
-		end
-
-		if message == ERR_IGNORE_ALREADY_S and GetTime() - loadedTime < 60 then
-			return true
-		end
-			
+	if event == "CHAT_MSG_SYSTEM" then
 		if message == ERR_IGNORE_FULL then
 			return true
+		end
+		
+		if doLoginIgnore == true then
+			if GetTime() - loadedTime > 90 then
+				doLoginIgnore = false
+			elseif message == ERR_IGNORE_NOT_FOUND or message == ERR_IGNORE_ALREADY_S or message == ERR_FRIEND_ERROR then
+				return true
+			end		
 		end
 	end
 			
@@ -1581,33 +1574,35 @@ local function chatMessageFilter (self, event, message, from, t1, t2, t3, t4, t5
         	return (hasNPCIgnored(Proper(from, true)) > 0)
 		
 	elseif event == "CHAT_MSG_SYSTEM" then
-				
-		local pName = ""
 
-		for count = 1, #GlobalIgnoreDB.ignoreList do
+		if (message:find(MSG_LOGOFF) or message:find(MSG_LOGON)) then		
+	
+			local pName = ""
+
+			for count = 1, #GlobalIgnoreDB.ignoreList do
+				if GlobalIgnoreDB.typeList[count] == "server" then
 			
-			if GlobalIgnoreDB.typeList[count] == "server" then
-			
-				if string.find(message, "-"..GlobalIgnoreDB.ignoreList[count], 1, true) ~= nil then
-					return true
-				end
-			else
-				if serverName == getServer(GlobalIgnoreDB.ignoreList[count]) then
-					pName = removeServer(GlobalIgnoreDB.ignoreList[count])
+					if string.find(message, "-"..GlobalIgnoreDB.ignoreList[count], 1, true) ~= nil then
+						return true
+					end
 				else
-					pName = GlobalIgnoreDB.ignoreList[count]
-				end
+					if serverName == getServer(GlobalIgnoreDB.ignoreList[count]) then
+						pName = removeServer(GlobalIgnoreDB.ignoreList[count])
+					else
+						pName = GlobalIgnoreDB.ignoreList[count]
+					end
 				
 
-				local msgOffline = strDown(string.format(ERR_FRIEND_OFFLINE_S, pName))
-				local msgOnline  = strDown(string.format(ERR_FRIEND_ONLINE_SS, pName, pName))
+					local msgOffline = strDown(string.format(ERR_FRIEND_OFFLINE_S, pName))
+					local msgOnline  = strDown(string.format(ERR_FRIEND_ONLINE_SS, pName, pName))
 
-				message = strDown(message)
+					message = strDown(message)
 					
-				if (message == msgOffline) or (message == msgOnline) then
-					return true
+					if (message == msgOffline) or (message == msgOnline) then
+						return true
+					end
 				end
-	  		end
+			end
 	  	end
 			
 		return false
@@ -2049,7 +2044,8 @@ C_FriendList.AddIgnore = function(name, noNote)
 	needSorted = true
 	name	   = Proper(addServer(name))
 	
-	if removeServer(name, true) == UNKNOWN then return end
+	local tmp = removeServer(name, true)
+	if (tmp == "") or (tmp == UNKNOWN) then return end
 	
 	if Proper(addServer(UnitName("player"))) ~= name then
 	

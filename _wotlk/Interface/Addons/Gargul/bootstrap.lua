@@ -139,6 +139,7 @@ function GL:_init()
     self.Interface.MasterLooterDialog:_init();
     self.Interface.TradeWindow.TimeLeft:_init();
     self.Interface.GDKP.BidderQueue:_init();
+    self.Interface.GDKP.Distribute.MailCuts:_init();
 
     -- Hook native window events
     self:hookNativeWindowEvents();
@@ -166,7 +167,6 @@ function GL:_init()
 
     -- Show the changelog window
     GL.Interface.Changelog:reportChanges();
-
 end
 
 -- Register the gl slash command

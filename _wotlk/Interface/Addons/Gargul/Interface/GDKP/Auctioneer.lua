@@ -82,7 +82,7 @@ local BIDS_TABLE_COLUMNS = {
     },
 };
 
----@return table
+---@return table|nil
 function AuctioneerUI:open()
     GL:debug("AuctioneerUI:open");
 
@@ -310,6 +310,7 @@ function AuctioneerUI:build()
 
     --[[ PREPARE THE MINIMIZED VERSION OF THE WINDOW ]]
     Window.Minimized:SetHeight(70);
+    Window.Minimized:SetWidth(150);
 
     ---@type Button
     local StopButton;
@@ -658,20 +659,36 @@ function AuctioneerUI:build()
     Window:GetScript("OnSizeChanged")();
 
     --[[ CHANGE THE CURRENTLY ACTIVE ITEM ]]
-    Window.setItemByLink = function(_, itemLink)
+
+    ---@param _
+    ---@param itemLink string
+    ---@param minimum number
+    ---@param increment number
+    ---@return void
+    Window.setItemByLink = function(_, itemLink, minimum, increment)
         GL:onItemLoadDo(GL:getItemIDFromLink(itemLink), function (Details)
             if (not Details) then
                 return;
             end
 
+            minimum = tonumber(minimum);
+            increment = tonumber(increment);
+
+            local PerItemSettings;
+            if (not minimum or not increment) then
+                PerItemSettings = GDKP:settingsForItemID(Details.id);
+            end
+
+            minimum = minimum or PerItemSettings.minimum;
+            increment = increment or PerItemSettings.increment;
+
             ---@type table
-            local PerItemSettings = GDKP:settingsForItemID(Details.id);
-            MinInput:SetText(PerItemSettings.minimum);
-            IncInput:SetText(PerItemSettings.increment);
+            MinInput:SetText(minimum);
+            IncInput:SetText(increment);
 
             self.itemLink = itemLink;
-            self.minimumBid = PerItemSettings.minimum;
-            self.increment = PerItemSettings.increment;
+            self.minimumBid = minimum;
+            self.increment = increment;
             ItemImage:SetTexture(Details.icon);
             ItemInput:SetText(Details.link);
         end);
@@ -730,6 +747,8 @@ function AuctioneerUI:build()
     return Window;
 end
 
+---@param Window Frame
+---@return Frame
 function AuctioneerUI:buildQueue(Window)
     GL:debug("AuctioneerUI:buildQueue");
 
@@ -1047,6 +1066,7 @@ function AuctioneerUI:buildQueue(Window)
                 IncInput:SetText(PerItemSettings.increment);
                 IncInput:SetWidth(36);
                 IncInput:SetPoint("TOPRIGHT", ItemRow, "TOPRIGHT", -24, 0);
+                ItemRow.IncInput = IncInput;
 
                 --[[ MINIMUM ]]
                 ---@type EditBox
@@ -1054,6 +1074,7 @@ function AuctioneerUI:buildQueue(Window)
                 MinInput:SetText(PerItemSettings.minimum);
                 MinInput:SetWidth(42);
                 MinInput:SetPoint("TOPRIGHT", IncInput, "TOPLEFT", -8, 0);
+                ItemRow.MinInput = MinInput;
 
                 --[[ ITEM LINK ]]
                 local BOEString = "";

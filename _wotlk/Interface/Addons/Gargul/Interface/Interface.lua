@@ -284,10 +284,12 @@ function Interface:addMinimizeButton(Element, title)
     MinimizedWindow:Hide();
     MinimizedWindow:SetUserPlaced(false);
 
+    self:resizeBounds(MinimizedWindow, 80, 60);
+
     --[[ THE SETTINGS MENU IN THE TOP LEFT OF THE WINDOW ]]
-    Interface:addWindowOptions(MinimizedWindow, {
+    self:addWindowOptions(MinimizedWindow, {
         { text = L.CHANGE_SCALE, notCheckable = true, func = function ()
-            Interface:openScaler(MinimizedWindow);
+            self:openScaler(MinimizedWindow);
             CloseMenus();
         end }
     }, 100);
@@ -303,6 +305,7 @@ function Interface:addMinimizeButton(Element, title)
 
     self:addMoveButton(MinimizedWindow);
     self:addMaximizeButton(MinimizedWindow, Element);
+    self:addResizer(MinimizedWindow);
 
     ---@type Button
     local Minimize = CreateFrame("Button", Element:GetName() .. ".Minimize", Element, "MaximizeMinimizeButtonFrameTemplate");
@@ -325,6 +328,11 @@ function Interface:addMinimizeButton(Element, title)
         Element:Hide();
     end);
 
+    MinimizedWindow:SetScript("OnSizeChanged", function ()
+        self:storeDimensions(MinimizedWindow);
+        self:storePosition(MinimizedWindow);
+    end);
+
     Element:HookScript("OnShow", function ()
         MinimizedWindow:Hide();
     end);
@@ -335,6 +343,9 @@ function Interface:addMinimizeButton(Element, title)
     --[[ POSITION ACTION BUTTONS ]]
     MinimizedWindow.MoveButton:SetPoint("TOPRIGHT", MinimizedWindow, "TOPRIGHT", -18, 0);
     MinimizedWindow.Maximize:SetPoint("TOPRIGHT", MinimizedWindow, "TOPRIGHT", 8, 4);
+
+    self:restorePosition(MinimizedWindow);
+    self:restoreDimensions(MinimizedWindow);
 
     _G[minimizedName] = MinimizedWindow;
 end
@@ -366,6 +377,8 @@ end
 ---@return void
 function Interface:addResizer(Element)
     GL:debug("Interface:addResizer");
+
+    Element:SetResizable(true);
 
     ---@type Button
     local Resize = CreateFrame("Button", Element:GetName() .. ".Resize", Element);
@@ -411,6 +424,10 @@ function Interface:createWindow(name, Details)
     Window:EnableMouse(true);
     Window:SetToplevel(true);
 
+    if (type(Details.OnClose) == "function") then
+        Window:SetScript("OnHide", Details.OnClose);
+    end
+
     --[[ MINIMIZE BUTTON ]]
     if (not Details.hideMinimizeButton) then
         self:addMinimizeButton(Window);
@@ -431,8 +448,11 @@ function Interface:createWindow(name, Details)
         Interface:resizeBounds(Window, Details.minWidth or 0, Details.minHeight or 0);
 
         if (not Details.hideResizeButton) then
-            Window:SetResizable(true);
             self:addResizer(Window);
+        else
+            -- This is to make sure we can update dimensions between patches
+            -- without the restoreDimensions method overriding them with old SavedVariables data
+            Window:SetSize(Details.width or 200, Details.height or 200);
         end
 
         if (not Details.hideMoveButton) then
@@ -462,6 +482,7 @@ function Interface:createWindow(name, Details)
         ---@type FontString
         local Watermark = Interface:createFontString(Window, GL.name .. " v" .. GL.version, "GameFontDarkGraySmall");
         Watermark:SetPoint("BOTTOMLEFT", Window, "BOTTOMLEFT", 14, 13);
+        Window.Watermark = Watermark;
     end
 
     --[[ POSITION ACTION BUTTONS ]]
@@ -512,6 +533,7 @@ function Interface:openScaler(Parent)
             width = 240,
             height = 90,
         });
+        Scaler:Hide();
 
         local SliderBackdrop  = {
             bgFile = "Interface\\Buttons\\UI-SliderBar-Background",
@@ -593,10 +615,13 @@ function Interface:openScaler(Parent)
     end
 
     local currentStep = valueToStep(Parent:GetScale());
-    Scaler:SetFrameLevel(Parent:GetFrameLevel() + 50);
     Scaler.Slider:SetValue(currentStep);
     Scaler.Slider.Input:SetText(currentStep);
-    Scaler:Show();
+
+    GL.Ace:ScheduleTimer(function()
+        Scaler:SetFrameLevel(Parent:GetFrameLevel() + 100);
+        Scaler:Show();
+    end, .1);
 
     _G[self.scalerName] = Scaler;
 
@@ -951,11 +976,26 @@ function Interface:releaseChildren(Element)
         return;
     end
 
-    local children = Element.children or {};
-    for i = 1,#children do
-        self:releaseChildren(children[i]);
-        children[i].frame:Hide();
-        children[i] = nil;
+    -- This is an AceGUI element
+    if (Element.frame) then
+        local Children = Element.children or {};
+        for i = 1, #Children do
+            self:releaseChildren(Children[i]);
+            Children[i].frame:Hide();
+
+            Children[i] = nil;
+        end
+
+        return;
+    end
+
+    local Children = { Element:GetChildren() };
+    for i = 1, #Children do
+        self:releaseChildren(Children[i]);
+        Children[i]:SetFrameLevel(1);
+        Children[i]:SetSize(1, 1);
+        Children[i]:Hide();
+        Children[i] = nil;
     end
 end
 
@@ -1050,7 +1090,9 @@ end
 ---@param identifier string|nil
 ---@return number|nil, number|nil
 function Interface:getDimensions(identifier)
-    identifier = identifier or Item:GetName();
+    if (type(identifier) == "table" and identifier.GetName) then
+        identifier = identifier:GetName();
+    end
 
     if not (identifier) then
         return false;

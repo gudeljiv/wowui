@@ -16,6 +16,7 @@ L.ANTISNIPE_EXPLANATION = {
     " ",
 };
 L.ADD_DROPS_TO_QUEUE = "Add dropped loot to queue";
+L.ALL_CUTS_MAILED = "All cuts were mailed!";
 L.AUCTIONEER = "Auctioneer";
 L.AUCTION = "Auction";
 L.AUCTIONS = "Auctions";
@@ -33,6 +34,17 @@ L.CLOSE = "Close";
 L.CLOSE_ON_AWARD = "Close on award";
 L.CLOSE_ON_START = "Close on start";
 L.COMMUNICATION = "Communication";
+L.CUT_MAIL_IN_PROGRESS = "Wait a bit, we're still processing the previous mail";
+L.CUT_MAIL_INSUFFICIENT_FUNDS = "You don't have enough gold to pay %s";
+L.CUT_MAILBOX_CLOSED = "Can't send mail when the mailbox is closed";
+L.CUT_MAIL_FAILED = "Failed to send cut to %s";
+L.CUT_MAILS_FAILED = "Multiple mail errors detected, aborting cut distribution";
+L.CUT_MAIL_HISTORY = "Mail History for |c00967FD2%s|r";
+L.CUT_SENT = "Sent %sg to %s ";
+L.CUT_MAIL_BODY = "Powered by Gargul: a Master Loot Tool with support for TMB, SoftRes, GDKP and Auto-Looting!";
+L.CUT_MAIL_GOLD_MISMATCH = "Mail SENT according to game, but your remaining GOLD DOESN'T MATCH, did something go wrong?";
+L.CUT_MAIL_EVEN = "You don't owe %s any gold";
+L.CUT_MAIL_SUBJECT = "Gargul GDKP: %sg";
 L.DELETE = "Delete";
 L.DELETE_BID_TOOLTIP = "Delete bid. Auction must be stopped first!";
 L.DISENCHANT = "Disenchant";
@@ -49,6 +61,7 @@ Gargul can also handle auto looting for you. Check it out with |c00a79eff/gl pm|
 ]];
 L.GDKP_QUEUE_HIDE_UNUSABLE = "Hide unusable items";
 L.GDKP_HIDE_UPCOMING_CONFIRMATION = "Are you sure? You won't be able to see, or bid on, upcoming items!";
+L.GDKP_PAYOUT_INACTIVE = "No active GDKP session detected or session is not locked for payout!";
 L.GDKP_SESSION = "GDKP Session";
 L.GDKP_SHOW_UPCOMING = "Show upcoming items";
 L.GROUP_MANAGER = "Group Manager";
@@ -63,6 +76,8 @@ L.START = "Start";
 L.STOP = "Stop";
 L.MIN = "Min";
 L.MAXIMIZE = "Maximize";
+L.MAIL = "Mail";
+L.MAIL_CUTS_EXPLANATION = "Mail cut to players";
 L.MINIMIZE = "Minimize";
 L.MINIMIZE_ON_AWARD = "Minimize on award";
 L.MINIMIZE_ON_START = "Minimize on start";
@@ -96,6 +111,8 @@ L.TUTORIAL_BIDDER_QUEUE = [[The items you see here are in the master looter's GD
 You can remove them, bid on them, and hide unusable items (enable 'Hide unusable items' in the settings in the top-left)
 
 You can resize the window, move it around, or minimize it. Try it out!
+
+For loot masters: removing items here will only remove them from your personal queue, not the actual GDKP queue!
 ]];
 L.TUTORIAL_MORE_HELP = "Need more help?";
 L.TUTORIAL_AUCTIONEER = [[|c00a79eff%s|r items in bags, loot windows or even on links in your chat to add them to the auction queue.

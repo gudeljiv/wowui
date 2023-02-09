@@ -134,6 +134,7 @@ function Auctioneer:_init()
     end);
 
     -- An item dropped, add it to the queue
+    local firstItem = true;
     Events:register("AuctioneerItemReceived", "GL.ITEM_RECEIVED", function (_, Details)
         -- We don't want to automatically add loot
         if (not Settings:get("GDKP.addDropsToQueue")) then
@@ -155,7 +156,19 @@ function Auctioneer:_init()
             return;
         end
 
-        self:addToQueue(Details.itemLink, nil, false);
+        self:addToQueue(Details.itemLink, nil, firstItem);
+
+        -- Make sure the minimized auctioneer window shows the first time a drop is added to the queue
+        if (firstItem) then
+            AuctioneerUI = AuctioneerUI or GL.Interface.GDKP.Auctioneer;
+            local Window = AuctioneerUI:getWindow();
+
+            if (Window) then
+                Window.Minimize.MinimizeButton:Click();
+            end
+        end
+
+        firstItem = false;
     end);
 
     -- Softres/TMB details changed, update the icon glows if needed
@@ -269,8 +282,10 @@ end
 
 ---@param itemLink string
 ---@param fromQueue boolean
+---@param minimum number|nil
+---@param increment number|nil
 ---@return void
-function Auctioneer:setItemByLink(itemLink, fromQueue)
+function Auctioneer:setItemByLink(itemLink, fromQueue, minimum, increment)
     GL:debug("Auctioneer:setItemByLink");
 
     if (GL.User.isInGroup
@@ -283,9 +298,9 @@ function Auctioneer:setItemByLink(itemLink, fromQueue)
     AuctioneerUI = AuctioneerUI or GL.Interface.GDKP.Auctioneer;
 
     if (fromQueue) then
-        AuctioneerUI:build():setItemByLink(itemLink);
+        AuctioneerUI:build():setItemByLink(itemLink, minimum, increment);
     else
-        AuctioneerUI:open():setItemByLink(itemLink);
+        AuctioneerUI:open():setItemByLink(itemLink, minimum, increment);
     end
 end
 
@@ -342,7 +357,18 @@ function Auctioneer:popFromQueue(force)
 
     for key, Row in pairs(AuctioneerUI.ItemRows or {}) do
         if (Row._identifier and Row._itemLink) then
-            self:setItemByLink(Row._itemLink, true);
+            local minimum, increment = false, false;
+
+            if (Row.MinInput and Row.MinInput.GetText) then
+                minimum = tonumber(Row.MinInput:GetText());
+            end
+
+            if (Row.IncInput and Row.IncInput.GetText) then
+                increment = tonumber(Row.IncInput:GetText());
+            end
+
+            self:setItemByLink(Row._itemLink, true, minimum, increment);
+
             Auction:removeFromQueue(Row._identifier);
             AuctioneerUI:deleteRowFromQueue(Row);
             break;
@@ -673,7 +699,7 @@ function Auctioneer:announceBid(Bid)
         local currentTopBid = GL:tableGet(Auction.Current, "TopBid.bid");
         local bidder = GL:tableGet(Auction.Current, "TopBid.Bidder.name");
 
-        if (not currentTopBid.bid or not bidder) then
+        if (not currentTopBid or not bidder) then
             return;
         end
 
