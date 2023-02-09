@@ -48,6 +48,30 @@ PallyPowerDB = {
 	},
 }
 PallyPower_Assignments = {
+	["Gamzy"] = {
+		0, -- [1]
+		0, -- [2]
+		0, -- [3]
+		0, -- [4]
+		0, -- [5]
+		0, -- [6]
+		0, -- [7]
+		0, -- [8]
+		0, -- [9]
+		0, -- [10]
+	},
+	["Mileram"] = {
+		2, -- [1]
+		2, -- [2]
+		3, -- [3]
+		2, -- [4]
+		3, -- [5]
+		2, -- [6]
+		3, -- [7]
+		3, -- [8]
+		2, -- [9]
+		2, -- [10]
+	},
 	["Vermina"] = {
 		3, -- [1]
 		3, -- [2]
@@ -73,30 +97,6 @@ PallyPower_Assignments = {
 		1, -- [9]
 		3, -- [10]
 	},
-	["Gamzy"] = {
-		0, -- [1]
-		0, -- [2]
-		0, -- [3]
-		0, -- [4]
-		0, -- [5]
-		0, -- [6]
-		0, -- [7]
-		0, -- [8]
-		0, -- [9]
-		0, -- [10]
-	},
-	["Mileram"] = {
-		2, -- [1]
-		2, -- [2]
-		3, -- [3]
-		2, -- [4]
-		3, -- [5]
-		2, -- [6]
-		3, -- [7]
-		3, -- [8]
-		2, -- [9]
-		2, -- [10]
-	},
 }
 PallyPower_NormalAssignments = {
 }
@@ -109,6 +109,7 @@ PallyPower_AuraAssignments = {
 	["Aephyria"] = 2,
 	["Ondisch"] = 0,
 	["Quelldanas"] = 2,
+	["Danielssonn"] = 6,
 	["Soliwork"] = 1,
 	["Buttered"] = 2,
 	["Holyjeebus"] = 2,
@@ -122,6 +123,7 @@ PallyPower_AuraAssignments = {
 	["Mormontt"] = 5,
 	["Brijacpizde"] = 1,
 	["Rinnerebirt"] = 0,
+	["Ruuzh"] = 1,
 	["Weebadina"] = 3,
 	["Liadriel"] = 0,
 	["Fumika"] = 1,
@@ -144,6 +146,7 @@ PallyPower_AuraAssignments = {
 	["Shinésx"] = 0,
 	["Zoremi"] = 4,
 	["Zayebany"] = 1,
+	["Naydess"] = 0,
 	["Liâdrin"] = 2,
 	["Holychoke"] = 1,
 	["Vermina"] = 2,
@@ -155,6 +158,7 @@ PallyPower_AuraAssignments = {
 	["Cloë"] = 1,
 	["Bublïnka"] = 1,
 	["Capybara"] = 0,
+	["Naryen"] = 1,
 	["Veebz"] = 2,
 	["Izule"] = 0,
 	["Athonian"] = 0,
@@ -178,6 +182,9 @@ PallyPower_AuraAssignments = {
 	["Aarvin"] = 0,
 	["Lallin"] = 3,
 	["Nimhitch"] = 3,
+	["Árwén"] = 0,
+	["Krigeroca"] = 0,
+	["Elenath"] = 6,
 	["Barskeladd"] = 6,
 	["Pretzelqt"] = 0,
 	["Mailil"] = 2,
@@ -198,7 +205,7 @@ PallyPower_AuraAssignments = {
 	["Digg"] = 2,
 	["Maxthepala"] = 3,
 	["Supachad"] = 3,
-	["Lizpally"] = 1,
+	["Twitterstorm"] = 0,
 	["Yesnix"] = 3,
 	["Xoptimalz"] = 5,
 	["Atlima"] = 0,
@@ -206,18 +213,18 @@ PallyPower_AuraAssignments = {
 	["Glumsi"] = 0,
 	["Holytimes"] = 3,
 	["Friescpt"] = 1,
-	["Ðîvâ"] = 3,
+	["Teddz"] = 0,
 	["Dariya"] = 0,
 	["Moghulol"] = 1,
 	["Gigapaladin"] = 2,
 	["Kalexa"] = 0,
 	["Redhaired"] = 3,
+	["Immórtál"] = 1,
 	["Phkp"] = 0,
-	["Wscqc"] = 3,
 	["Palladen"] = 5,
 	["Nioxina"] = 0,
 	["Althan"] = 0,
-	["Immórtál"] = 1,
+	["Wscqc"] = 3,
 	["Ewulcek"] = 3,
 	["Foxholy"] = 1,
 	["Monikå"] = 0,
@@ -228,11 +235,11 @@ PallyPower_AuraAssignments = {
 	["Holychock"] = 3,
 	["Mcgiver"] = 1,
 	["Xilaz"] = 3,
-	["Teddz"] = 0,
+	["Ðîvâ"] = 3,
 	["Haduhealz"] = 1,
 	["Recobe"] = 1,
 	["Sistermerrin"] = 0,
-	["Twitterstorm"] = 0,
+	["Lizpally"] = 1,
 	["Konseus"] = 2,
 	["Rubyrag"] = 0,
 	["Jollylight"] = 6,
