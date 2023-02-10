@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 9073,
+	["session"] = 9075,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\Details\\startup.lua:267: Attempt to register unknown event \"PLAYER_SPECIALIZATION_CHANGED\"",
