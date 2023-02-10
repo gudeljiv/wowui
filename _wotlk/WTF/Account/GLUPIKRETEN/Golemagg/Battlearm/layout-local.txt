@@ -23,8 +23,8 @@ H: 260
 Frame: ItemRefTooltip
 FrameLevel: 1
 Anchor: CENTER
-X: 383
-Y: 108
+X: 397
+Y: 134
 W: 128
 H: 64
 Frame: ColorPickerFrame
@@ -43,9 +43,9 @@ W: 210
 H: 339
 Frame: AtlasLoot_GUI-Frame
 FrameLevel: 1
-Anchor: TOP
-X: -88
-Y: -103
+Anchor: TOPRIGHT
+X: -318
+Y: -55
 W: 920
 H: 600
 Frame: RXPG_ARROW
@@ -60,7 +60,7 @@ FrameLevel: 1
 Anchor: CENTER
 X: 313
 Y: -74
-W: 81
+W: 80
 H: 40
 Frame: Dejunk_ParentFrame
 FrameLevel: 1
@@ -85,9 +85,9 @@ W: 325
 H: 375
 Frame: Groupie
 FrameLevel: 1
-Anchor: LEFT
-X: 236
-Y: 103
+Anchor: CENTER
+X: -359
+Y: 102
 W: 960
 H: 640
 Frame: StanceButton1

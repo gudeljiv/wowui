@@ -35,7 +35,7 @@ LBISSettings = {
 		["RestorationDruid"] = true,
 		["SubtletyRogue"] = true,
 	},
-	["SelectedSpec"] = "Death Knight: Frost",
+	["SelectedSpec"] = "Death Knight: Blood",
 	["minimap"] = {
 		["minimapPos"] = 180,
 		["hide"] = true,
@@ -47,10 +47,10 @@ LBISSettings = {
 	},
 	["ShowPriority"] = true,
 	["SelectedRank"] = "All",
-	["SelectedSlot"] = "Trinket",
-	["SelectedSourceType"] = "All",
-	["ShowCustom"] = false,
 	["PriorityList"] = {
 	},
-	["SelectedPhase"] = "All",
+	["SelectedSourceType"] = "All",
+	["SelectedSlot"] = "Trinket",
+	["ShowCustom"] = false,
+	["SelectedPhase"] = "Phase 1",
 }

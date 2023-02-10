@@ -166,7 +166,7 @@ skills["death knight"] = [
     {"name": "unbreakable armor", "type": "GetSpellTexture", "id": 51271, "key": "h"},
     {"name": "blood strike", "type": "GetSpellTexture", "id": 49929, "key": "f5", "modifier": "ctrl"},
     {"name": "mark of blood", "type": "GetSpellTexture", "id": 49005, "key": "k"},
-    {"name": "raise dead", "type": "GetSpellTexture", "id": 46584, "key": "d", "modifier": "alt"},
+    {"name": "raise dead", "type": "GetSpellTexture", "id": 46584, "key": "f", "modifier": "alt"},
 ]
 
 skills["paladin"] = [
