@@ -68,6 +68,7 @@ L.GROUP_MANAGER = "Group Manager";
 L.IMPORT_EXPLANATION = "What kind of data would you like to import?";
 L.INFO = "Info";
 L.INC = "Inc";
+L.INCLUDE_BOES = "Include BOEs";
 L.INCREMENT = "Increment";
 L.GDKP_ACTIVATED = "GDKP Activated";
 L.HALT = "Halt";
@@ -128,6 +129,7 @@ Gargul can also handle auto looting for you. Check it out with |c00a79eff/gl pm|
 ]];
 L.WINDOW = "Window";
 L.WINDOW_SCALE = "Window Scale";
+L.YOU_DISABLED_GDKP_QUEUES = "You disabled GDKP queues";
 
 L.SETTINGS_ANNOUNCE_START = "Announce auction start";
 L.SETTINGS_ANNOUNCE_POT_AFTER_AWARD = "Announce pot after awarding item";
