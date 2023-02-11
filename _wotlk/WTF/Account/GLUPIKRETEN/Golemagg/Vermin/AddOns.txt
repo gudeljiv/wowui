@@ -51,7 +51,7 @@ ChocolateBar: enabled
 ClassicAutoDismount: enabled
 ClassicCastbars: enabled
 ClassicCastbars_Options: enabled
-ClassicSpellActivations: enabled
+ClassicSpellActivations: disabled
 Dejunk: enabled
 Details: enabled
 Details_TinyThreat: enabled

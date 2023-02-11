@@ -2121,7 +2121,7 @@ MasqueDB = {
 				["Plater Nameplates_Aura Frame 2"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_(IXhp2qXUzQ"] = {
+				["WeakAuras_IZ1L5iYWjlg"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
@@ -2141,12 +2141,12 @@ MasqueDB = {
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
-				["WeakAuras_CQQqQGrYaS7"] = {
+				["WeakAuras_KLGfqK6icaE"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Cainyx",
+					["SkinID"] = "Brownstone",
 				},
-				["WeakAuras_IZ1L5iYWjlg"] = {
+				["WeakAuras_(IXhp2qXUzQ"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
@@ -2201,12 +2201,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
 				},
-				["WeakAuras_TAcwdmhGVIp"] = {
+				["WeakAuras_bv3OBlEA(5u"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bv3OBlEA(5u"] = {
+				["WeakAuras_TAcwdmhGVIp"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
@@ -2236,10 +2236,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
 				},
-				["WeakAuras_fAsoATaBv22"] = {
+				["WeakAuras_WK8NgkZZNHX"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
+					["SkinID"] = "Brownstone",
 				},
 				["WeakAuras_V3DT9P4HaWK"] = {
 					["Upgraded"] = true,
@@ -2431,10 +2431,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
 				},
-				["WeakAuras_WK8NgkZZNHX"] = {
+				["WeakAuras_fAsoATaBv22"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
+					["Inherit"] = false,
 				},
 				["WeakAuras_8gslC0ziYq6"] = {
 					["Upgraded"] = true,
@@ -2485,10 +2485,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
 				},
-				["WeakAuras_KLGfqK6icaE"] = {
+				["WeakAuras_CQQqQGrYaS7"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Brownstone",
+					["SkinID"] = "Cainyx",
 				},
 				["WeakAuras_lCs1vTvUaWs"] = {
 					["Upgraded"] = true,

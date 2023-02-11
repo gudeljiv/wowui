@@ -1,16 +1,5 @@
 
 EncounterDetailsDB = {
-	["emotes"] = {
-		{
-			["boss"] = "Quagmirran",
-		}, -- [1]
-		{
-			["boss"] = "Rokmar the Crackler",
-		}, -- [2]
-		{
-			["boss"] = "Mennu the Betrayer",
-		}, -- [3]
-	},
 	["encounter_spells"] = {
 		[35010] = {
 			["school"] = 8,
@@ -116,6 +105,15 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "Hellfire Watcher",
+		},
+		[31673] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Hungarfen",
 		},
 		[30913] = {
 			["school"] = 8,
@@ -340,6 +338,31 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Hungarfen",
 		},
+		[15241] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Bleeding Hollow Darkcaster",
+		},
+		[31983] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Tainted Earthgrab Totem",
+		},
+		[34662] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Swamplord Musel'ek",
+		},
 		[22907] = {
 			["school"] = 1,
 			["token"] = {
@@ -348,6 +371,13 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Swamplord Musel'ek",
+		},
+		[34653] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Vazruden the Herald",
 		},
 		[32055] = {
 			["school"] = 1,
@@ -381,28 +411,19 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Corrupted Nova Totem",
 		},
-		[30926] = {
+		[23972] = {
 			["school"] = 4,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Vazruden the Herald",
+			["source"] = "Liquid Fire",
 		},
-		[33787] = {
-			["school"] = 32,
+		[31615] = {
+			["school"] = 64,
 			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Coilfang Collaborator",
-		},
-		[31946] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Swamplord Musel'ek",
 		},
@@ -416,12 +437,48 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Rokmar the Crackler",
 		},
-		[31547] = {
+		[30926] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Vazruden the Herald",
+		},
+		[34168] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Underbog Mushroom",
+		},
+		[31946] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Swamplord Musel'ek",
+		},
+		[31567] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Swamplord Musel'ek",
+		},
+		[8269] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Coilfang Collaborator",
 		},
 		[31956] = {
 			["school"] = 1,
@@ -467,11 +524,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Keli'dan the Breaker",
 		},
-		[34298] = {
+		[31429] = {
 			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Claw",
 		},
@@ -484,12 +542,11 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Rokmar the Crackler",
 		},
-		[31429] = {
+		[34298] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Claw",
 		},
@@ -502,14 +559,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Quagmirran",
 		},
-		[8269] = {
+		[31547] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Coilfang Collaborator",
+			["source"] = "Swamplord Musel'ek",
 		},
 		[35748] = {
 			["school"] = 32,
@@ -518,28 +573,33 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Fiendish Hound",
 		},
-		[31615] = {
-			["school"] = 64,
+		[33787] = {
+			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Coilfang Collaborator",
+		},
+		[31689] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Underbog Mushroom",
+		},
+		[31566] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Swamplord Musel'ek",
-		},
-		[23972] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Liquid Fire",
-		},
-		[34653] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Vazruden the Herald",
 		},
 		[48210] = {
 			["school"] = 32,
@@ -548,23 +608,35 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Watchkeeper Gargolmar",
 		},
-		[31983] = {
+		[34971] = {
 			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Claw",
+		},
+		[31715] = {
+			["school"] = 8,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Tainted Earthgrab Totem",
-		},
-		[15241] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Bleeding Hollow Darkcaster",
+			["source"] = "The Black Stalker",
 		},
+	},
+	["emotes"] = {
+		{
+			["boss"] = "Quagmirran",
+		}, -- [1]
+		{
+			["boss"] = "Rokmar the Crackler",
+		}, -- [2]
+		{
+			["boss"] = "Mennu the Betrayer",
+		}, -- [3]
 	},
 }
