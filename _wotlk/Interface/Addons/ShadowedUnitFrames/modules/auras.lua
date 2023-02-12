@@ -226,7 +226,7 @@ local function showTooltip(self)
 		return
 	end
 
-	GameTooltip:SetOwner(self, 'ANCHOR_BOTTOMLEFT')
+	GameTooltip:SetOwner(self, 'ANCHOR_TOPLEFT')
 	if (self.filter == 'TEMP') then
 		GameTooltip:SetInventoryItem('player', self.auraID)
 		self:SetScript('OnUpdate', nil)

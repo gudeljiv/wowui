@@ -9,7 +9,9 @@ function LBIS.BrowserWindow:OpenWindow(tabName)
     if not LBIS.BrowserWindow.Window then
         LBIS.BrowserWindow:CreateBrowserWindow();
     end
-    open_tab = tabName;
+    if tabName ~= nil then
+        LBISSettings.OpenTab = tabName;
+    end
     LBIS.BrowserWindow:RefreshItems();
     LBIS.BrowserWindow.Window:Show();
 
@@ -31,7 +33,6 @@ end
 
 local customListTabButton;
 local customEditTabButton;
-local open_tab = "ItemList";
 function LBIS.BrowserWindow:RefreshItems()    
 
     if LBISSettings.ShowCustom then
@@ -42,15 +43,15 @@ function LBIS.BrowserWindow:RefreshItems()
         customEditTabButton:Hide()
     end
 
-    if open_tab == "ItemList" then
+    if LBISSettings.OpenTab == "ItemList" then
         LBIS.ItemList:UpdateItems();
-    elseif open_tab == "GemList" then
+    elseif LBISSettings.OpenTab == "GemList" then
         LBIS.GemList:UpdateItems();
-    elseif open_tab == "EnchantList" then
+    elseif LBISSettings.OpenTab == "EnchantList" then
         LBIS.EnchantList:UpdateItems();        
-    elseif open_tab == "CustomEditList" then
+    elseif LBISSettings.OpenTab == "CustomEditList" then
         LBIS.CustomEditList:UpdateItems();
-    elseif open_tab == "CustomItemList" then
+    elseif LBISSettings.OpenTab == "CustomItemList" then
         LBIS.CustomItemList:UpdateItems();
     end
 end
@@ -60,16 +61,15 @@ local deleted_windows = {};
 function LBIS.BrowserWindow:CreateItemRow(specItem, specItemSource, frameName, point, rowFunc)
     local window = LBIS.BrowserWindow.Window;
     local spacing = 1;
-    local name = frameName;
-    local f, l = nil, nil;
     local reusing = false;
     
+    local f = nil;
     --TODO: MAKE THIS FASTER WHEN THERES TONS OF FRAMES !
     -- attempting to reuse a previous child frame if it exists 
     -- (which should include the previously created fontstring and button)
     if(next(deleted_windows) ~= nil) then
         for i=1, #deleted_windows do
-            if(name == deleted_windows[i]:GetName()) then
+            if(frameName == deleted_windows[i]:GetName()) then
                 f = deleted_windows[i];
                 reusing = true;
             end
@@ -81,7 +81,7 @@ function LBIS.BrowserWindow:CreateItemRow(specItem, specItemSource, frameName, p
 
         local rowHeight = rowFunc(f, specItem, specItemSource);
         
-        l = f:CreateLine();
+        local l = f:CreateLine();
         l:SetColorTexture(1,1,1,0.5);
         l:SetThickness(1);
         l:SetStartPoint("BOTTOMLEFT",5, 0);
@@ -165,7 +165,7 @@ local function createTabs(window, content)
     itemListTabButton:SetPoint("CENTER", window, "BOTTOMLEFT", 60, -13);
     itemListTabButton:SetScript("OnClick", function(self)
         PanelTemplates_SetTab(content, 1);
-        open_tab = "ItemList";
+        LBISSettings.OpenTab = "ItemList";
 
         LBIS.BrowserWindow:RefreshItems();
     end);
@@ -177,7 +177,7 @@ local function createTabs(window, content)
     gemListTabButton:SetPoint("LEFT", itemListTabButton, "RIGHT", -16, 0);
     gemListTabButton:SetScript("OnClick", function(self)
         PanelTemplates_SetTab(content, 2);
-        open_tab = "GemList";
+        LBISSettings.OpenTab = "GemList";
 
         LBIS.BrowserWindow:RefreshItems();
     end);
@@ -189,7 +189,7 @@ local function createTabs(window, content)
     enchantListTabButton:SetPoint("LEFT", gemListTabButton, "RIGHT", -16, 0);
     enchantListTabButton:SetScript("OnClick", function(self)
         PanelTemplates_SetTab(content, 3);
-        open_tab = "EnchantList";
+        LBISSettings.OpenTab = "EnchantList";
 
         LBIS.BrowserWindow:RefreshItems();
     end);
@@ -202,7 +202,7 @@ local function createTabs(window, content)
     customListTabButton:SetPoint("LEFT", enchantListTabButton, "RIGHT", -16, 0);
     customListTabButton:SetScript("OnClick", function(self)
         PanelTemplates_SetTab(content, 4);
-        open_tab = "CustomItemList";
+        LBISSettings.OpenTab = "CustomItemList";
 
         LBIS.BrowserWindow:RefreshItems();
     end);
@@ -214,7 +214,7 @@ local function createTabs(window, content)
     customEditTabButton:SetPoint("LEFT", customListTabButton, "RIGHT", -16, 0);
     customEditTabButton:SetScript("OnClick", function(self)
         PanelTemplates_SetTab(content, 5);
-        open_tab = "CustomEditList";
+        LBISSettings.OpenTab = "CustomEditList";
     
         LBIS.BrowserWindow:RefreshItems();
     end);

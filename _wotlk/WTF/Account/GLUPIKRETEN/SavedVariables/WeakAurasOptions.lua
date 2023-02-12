@@ -2939,7 +2939,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "51058=134760",
 		},
 		["Whip Terrorfiend"] = {
-			["spells"] = "35673=132116",
+			["spells"] = "35673=133553",
 		},
 		["Breastplate of Kings"] = {
 			["spells"] = "34533=136241",
@@ -7055,7 +7055,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "10525=136247",
 		},
 		["Auto Attack"] = {
-			["spells"] = "6603=132116",
+			["spells"] = "6603=133553",
 		},
 		["Increased Rejuvenation"] = {
 			["spells"] = "352508=136030",
@@ -51849,13 +51849,13 @@ WeakAurasOptionsSaved = {
 	["needsRebuild"] = false,
 	["version"] = "5.3.7",
 	["lockPositions"] = false,
+	["spellCacheAchivements"] = true,
 	["frame"] = {
-		["xOffset"] = 558.7763671875,
-		["yOffset"] = 1268.66845703125,
-		["height"] = 994.5701293945312,
+		["xOffset"] = 616.55419921875,
 		["width"] = 1057.2353515625,
+		["height"] = 994.5701293945312,
+		["yOffset"] = 1116.287475585938,
 	},
 	["spellCacheStrings"] = true,
-	["spellCacheAchivements"] = true,
 	["build"] = "48019",
 }
