@@ -1905,9 +1905,6 @@ TellMeWhenDB = {
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
 							["Type"] = "cooldown",
-							["HideIfNoUnits"] = true,
-							["Enabled"] = true,
-							["Name"] = "Sunder Armor",
 							["Conditions"] = {
 								{
 									["Type"] = "DEBUFFSTACKS",
@@ -1932,6 +1929,9 @@ TellMeWhenDB = {
 								}, -- [3]
 								["n"] = 3,
 							},
+							["Enabled"] = true,
+							["Name"] = "Sunder Armor",
+							["HideIfNoUnits"] = true,
 							["GUID"] = "TMW:icon:1TYYu4EDbfSz",
 							["SettingsPerView"] = {
 								["icon"] = {
@@ -4031,9 +4031,9 @@ TellMeWhenDB = {
 								"TMW:icon:1ZYr3kQXDQKM", -- [11]
 								"TMW:icon:1ZvWsLUW_Q0D", -- [12]
 								"TMW:icon:1Z55tRwA_pKn", -- [13]
-								"TMW:icon:1ZQcfScLCzCQ", -- [14]
-								"TMW:icon:1Xwc=6KNp27d", -- [15]
-								"TMW:icon:1YEqZQbYmmFD", -- [16]
+								"TMW:icon:1Xwc=6KNp27d", -- [14]
+								"TMW:icon:1YEqZQbYmmFD", -- [15]
+								"TMW:icon:1ZQcfScLCzCQ", -- [16]
 								"TMW:icon:1TYYu4EDbfSz", -- [17]
 								"TMW:icon:1YWHZ7T27TKe", -- [18]
 								"TMW:icon:1Xrn34GriOqy", -- [19]
@@ -4183,9 +4183,9 @@ TellMeWhenDB = {
 								"TMW:icon:1ZYr3kQXDQKM", -- [11]
 								"TMW:icon:1ZvWsLUW_Q0D", -- [12]
 								"TMW:icon:1Z55tRwA_pKn", -- [13]
-								"TMW:icon:1ZQcfScLCzCQ", -- [14]
-								"TMW:icon:1Xwc=6KNp27d", -- [15]
-								"TMW:icon:1YEqZQbYmmFD", -- [16]
+								"TMW:icon:1Xwc=6KNp27d", -- [14]
+								"TMW:icon:1YEqZQbYmmFD", -- [15]
+								"TMW:icon:1ZQcfScLCzCQ", -- [16]
 								"TMW:icon:1TYYu4EDbfSz", -- [17]
 								"TMW:icon:1YWHZ7T27TKe", -- [18]
 								"TMW:icon:1Xrn34GriOqy", -- [19]
@@ -4403,6 +4403,7 @@ TellMeWhenDB = {
 		},
 		["ROGUE"] = {
 			["Locked"] = true,
+			["Version"] = 100800,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -5353,7 +5354,6 @@ TellMeWhenDB = {
 				}, -- [5]
 			},
 			["NumGroups"] = 5,
-			["Version"] = 100800,
 		},
 		["MAGE"] = {
 			["Groups"] = {
@@ -6829,6 +6829,7 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
+							["DurationMin"] = 15,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
@@ -6838,7 +6839,6 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["DurationMinEnabled"] = true,
-							["DurationMin"] = 15,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -6906,6 +6906,7 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
+							["DurationMin"] = 15,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
@@ -6915,7 +6916,6 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["DurationMinEnabled"] = true,
-							["DurationMin"] = 15,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -7009,6 +7009,7 @@ TellMeWhenDB = {
 		["DEATHKNIGHT"] = {
 			["Locked"] = true,
 			["NumGroups"] = 5,
+			["Version"] = 100800,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -7299,8 +7300,8 @@ TellMeWhenDB = {
 									["Checked"] = true,
 									["Name"] = "Blood Plague",
 									["PrtsBefore"] = 1,
-									["AndOr"] = "OR",
 									["Level"] = 7,
+									["AndOr"] = "OR",
 									["Operator"] = ">",
 								}, -- [6]
 								{
@@ -7420,8 +7421,8 @@ TellMeWhenDB = {
 									["Checked"] = true,
 									["Name"] = "Blood Plague",
 									["PrtsBefore"] = 1,
-									["AndOr"] = "OR",
 									["Level"] = 7,
+									["AndOr"] = "OR",
 									["Unit"] = "target",
 								}, -- [6]
 								{
@@ -9006,10 +9007,10 @@ TellMeWhenDB = {
 					},
 				}, -- [7]
 			},
-			["Version"] = 100800,
 		},
 		["WARLOCK"] = {
 			["Locked"] = true,
+			["Version"] = 100800,
 			["NumGroups"] = 5,
 			["Groups"] = {
 				{
@@ -9744,10 +9745,10 @@ TellMeWhenDB = {
 					["OnlyInCombat"] = true,
 				}, -- [5]
 			},
-			["Version"] = 100800,
 		},
 		["SHAMAN"] = {
 			["Locked"] = true,
+			["NumGroups"] = 5,
 			["Version"] = 100800,
 			["Groups"] = {
 				{
@@ -10999,10 +11000,10 @@ TellMeWhenDB = {
 					},
 				}, -- [7]
 			},
-			["NumGroups"] = 5,
 		},
 		["PALADIN"] = {
 			["Locked"] = true,
+			["NumGroups"] = 5,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -11431,9 +11432,9 @@ TellMeWhenDB = {
 									["Type"] = "SPEC",
 								}, -- [1]
 								{
+									["Operator"] = "<=",
 									["Level"] = 20,
 									["Type"] = "HEALTH",
-									["Operator"] = "<=",
 									["Unit"] = "target",
 								}, -- [2]
 								{
@@ -12091,6 +12092,11 @@ TellMeWhenDB = {
 				}, -- [1]
 				{
 					["GUID"] = "TMW:group:1TWYPj24VzCn",
+					["Point"] = {
+						["y"] = -20.00000522536274,
+						["x"] = -229.9999934656047,
+					},
+					["Name"] = "OTHER",
 					["Icons"] = {
 						{
 							["States"] = {
@@ -12104,11 +12110,6 @@ TellMeWhenDB = {
 							},
 						}, -- [1]
 					},
-					["Point"] = {
-						["y"] = -20.00000522536274,
-						["x"] = -229.9999934656047,
-					},
-					["Name"] = "OTHER",
 					["Scale"] = 1.5,
 					["Columns"] = 1,
 					["Alpha"] = 0,
@@ -12353,12 +12354,9 @@ TellMeWhenDB = {
 				}, -- [5]
 			},
 			["Version"] = 100800,
-			["NumGroups"] = 5,
 		},
 		["DRUID"] = {
 			["Locked"] = true,
-			["NumGroups"] = 5,
-			["Version"] = 100800,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -14851,6 +14849,8 @@ TellMeWhenDB = {
 					},
 				}, -- [7]
 			},
+			["NumGroups"] = 5,
+			["Version"] = 100800,
 		},
 		["Battledog - Gehennas"] = {
 			["Version"] = 100800,

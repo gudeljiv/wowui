@@ -48,6 +48,30 @@ PallyPowerDB = {
 	},
 }
 PallyPower_Assignments = {
+	["Gamzy"] = {
+		0, -- [1]
+		0, -- [2]
+		0, -- [3]
+		0, -- [4]
+		0, -- [5]
+		0, -- [6]
+		0, -- [7]
+		0, -- [8]
+		0, -- [9]
+		0, -- [10]
+	},
+	["Mileram"] = {
+		0, -- [1]
+		0, -- [2]
+		0, -- [3]
+		0, -- [4]
+		0, -- [5]
+		0, -- [6]
+		0, -- [7]
+		0, -- [8]
+		0, -- [9]
+		0, -- [10]
+	},
 	["Vermina"] = {
 		3, -- [1]
 		2, -- [2]
@@ -62,30 +86,6 @@ PallyPower_Assignments = {
 		2, -- [11]
 	},
 	["Rinnerebirt"] = {
-		0, -- [1]
-		0, -- [2]
-		0, -- [3]
-		0, -- [4]
-		0, -- [5]
-		0, -- [6]
-		0, -- [7]
-		0, -- [8]
-		0, -- [9]
-		0, -- [10]
-	},
-	["Gamzy"] = {
-		0, -- [1]
-		0, -- [2]
-		0, -- [3]
-		0, -- [4]
-		0, -- [5]
-		0, -- [6]
-		0, -- [7]
-		0, -- [8]
-		0, -- [9]
-		0, -- [10]
-	},
-	["Mileram"] = {
 		0, -- [1]
 		0, -- [2]
 		0, -- [3]
@@ -154,6 +154,7 @@ PallyPower_AuraAssignments = {
 	["Xporz"] = 0,
 	["Zwiecho"] = 0,
 	["Syyllinen"] = 0,
+	["Discoduck"] = 0,
 	["Gamzy"] = 0,
 	["Cloë"] = 0,
 	["Bublïnka"] = 0,
@@ -177,88 +178,89 @@ PallyPower_AuraAssignments = {
 	["Zivvy"] = 0,
 	["Árwén"] = 0,
 	["Krigeroca"] = 0,
+	["Billibos"] = 0,
 	["Pochvara"] = 0,
 	["Cigarette"] = 0,
-	["Billibos"] = 0,
 	["Tocraprot"] = 0,
-	["Rvbbitt"] = 0,
 	["Mailil"] = 0,
+	["Rvbbitt"] = 0,
+	["Iamtherealqt"] = 0,
 	["Uhndapa"] = 0,
 	["Zagopally"] = 0,
 	["Turanian"] = 0,
-	["Darwina"] = 0,
 	["Valtyria"] = 0,
 	["Elenath"] = 0,
+	["Doctør"] = 0,
 	["Aarvin"] = 0,
 	["Lallin"] = 0,
 	["Nimhitch"] = 0,
-	["Doctør"] = 0,
 	["Digg"] = 0,
 	["Appendix"] = 0,
-	["Sistermerrin"] = 0,
+	["Rubyrag"] = 0,
+	["Atlima"] = 0,
 	["Barskeladd"] = 0,
 	["Pretzelqt"] = 0,
-	["Atlima"] = 0,
+	["Dariya"] = 0,
 	["Tisca"] = 0,
 	["Fatalitý"] = 0,
 	["Whit"] = 0,
-	["Dariya"] = 0,
 	["Holytimes"] = 0,
+	["Friescpt"] = 0,
 	["Lubiven"] = 0,
 	["Ethyr"] = 0,
-	["Friescpt"] = 0,
+	["Pazton"] = 3,
 	["Zoqur"] = 0,
 	["Talashia"] = 0,
-	["Pazton"] = 3,
+	["Lonnath"] = 0,
 	["Thelichlight"] = 6,
 	["Yebat"] = 0,
 	["Trenhard"] = 0,
-	["Lonnath"] = 0,
+	["Maxthepala"] = 0,
 	["Conquést"] = 2,
-	["Twitterstorm"] = 0,
+	["Palablynx"] = 0,
 	["Lizpally"] = 0,
 	["Yesnix"] = 0,
 	["Xoptimalz"] = 0,
-	["Palablynx"] = 0,
-	["Redhaired"] = 0,
-	["Glumsi"] = 0,
+	["Moghulol"] = 0,
 	["Ewulcek"] = 0,
+	["Glumsi"] = 0,
 	["Teddz"] = 0,
-	["Ðîvâ"] = 0,
 	["Immórtál"] = 0,
-	["Wscqc"] = 0,
-	["Gigapaladin"] = 0,
+	["Ðîvâ"] = 0,
+	["Selestra"] = 0,
 	["Jejla"] = 0,
+	["Gigapaladin"] = 0,
 	["Tillander"] = 1,
+	["Wscqc"] = 0,
 	["Foxholy"] = 0,
 	["Keen"] = 3,
 	["Palladen"] = 0,
 	["Nioxina"] = 0,
 	["Althan"] = 0,
 	["Phkp"] = 0,
-	["Selestra"] = 0,
 	["Kalexa"] = 0,
+	["Redhaired"] = 0,
 	["Monikå"] = 0,
-	["Moghulol"] = 0,
+	["Twitterstorm"] = 0,
 	["Drexal"] = 0,
 	["Doradintwo"] = 6,
-	["Maxthepala"] = 0,
 	["Holychock"] = 0,
 	["Mcgiver"] = 0,
-	["Xilaz"] = 0,
 	["Supachad"] = 0,
+	["Xilaz"] = 0,
+	["Sistermerrin"] = 0,
 	["Haduhealz"] = 0,
 	["Recobe"] = 0,
-	["Rubyrag"] = 0,
 	["Hjørdís"] = 0,
-	["Konseus"] = 0,
 	["Badpaladinn"] = 0,
+	["Konseus"] = 0,
+	["Darwina"] = 0,
 	["Jollylight"] = 0,
-	["Iamtherealqt"] = 0,
 	["Realpala"] = 0,
-	["Darkknéss"] = 0,
 	["Hugerocket"] = 0,
+	["Darkknéss"] = 0,
 	["Vyjebanahoe"] = 1,
+	["Aldrah"] = 2,
 }
 PallyPower_SavedPresets = {
 	["PallyPower_Assignments"] = {
