@@ -226,7 +226,14 @@ local function showTooltip(self)
 		return
 	end
 
-	GameTooltip:SetOwner(self, 'ANCHOR_TOPLEFT')
+	if TacoTipMouseAnchor then
+		GameTooltip:SetOwner(TacoTipMouseAnchor, 'ANCHOR_NONE')
+		GameTooltip:ClearAllPoints(true)
+		GameTooltip:SetPoint('BOTTOMLEFT', TacoTipMouseAnchor, 'CENTER', 10, 10)
+	else
+		GameTooltip:SetOwner(self, 'ANCHOR_CURSOR', 10, 10)
+	end
+
 	if (self.filter == 'TEMP') then
 		GameTooltip:SetInventoryItem('player', self.auraID)
 		self:SetScript('OnUpdate', nil)

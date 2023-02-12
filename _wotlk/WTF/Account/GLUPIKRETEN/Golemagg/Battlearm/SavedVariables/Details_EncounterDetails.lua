@@ -6929,13 +6929,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Watchkeeper Gargolmar",
 		},
-		[16280] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[50759] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Siiuh",
+			["source"] = "Unstable Sphere",
 		},
 		[54987] = {
 			["school"] = 8,
@@ -6954,12 +6953,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Scourge Reanimator",
 		},
-		[50759] = {
-			["school"] = 64,
+		[16280] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Unstable Sphere",
+			["source"] = "Siiuh",
 		},
 		[48895] = {
 			["school"] = 8,
@@ -7060,16 +7060,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Xevozz",
 		},
-		[49544] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
+		[16592] = {
+			["school"] = 32,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "The Prophet Tharon'ja",
+			["source"] = "Cabal Shadow Priest",
 		},
 		[47994] = {
 			["school"] = 1,
@@ -7309,12 +7306,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Rhenne",
 		},
-		[29770] = {
+		[51336] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Midnight",
+			["source"] = "Drakos the Interrogator",
 		},
 		[15290] = {
 			["school"] = 32,
@@ -7502,12 +7500,17 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Anub'ar Crypt Fiend",
 		},
-		[20271] = {
-			["school"] = 2,
+		[50761] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Doradintwo",
+			["source"] = "Maiden of Grief",
 		},
 		[59013] = {
 			["school"] = 32,
@@ -8291,24 +8294,19 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Dark Matter",
 		},
-		[50761] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Maiden of Grief",
-		},
 		[28459] = {
 			["school"] = 32,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Soul Weaver",
+		},
+		[20271] = {
+			["school"] = 2,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Doradintwo",
 		},
 		[54102] = {
 			["school"] = 64,
@@ -8425,13 +8423,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Loatheb",
 		},
-		[51336] = {
+		[29770] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Drakos the Interrogator",
+			["source"] = "Midnight",
 		},
 		[41105] = {
 			["school"] = 1,
@@ -8599,13 +8596,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nikoiceblock",
 		},
-		[16592] = {
-			["school"] = 32,
-			["type"] = "BUFF",
+		[49544] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Cabal Shadow Priest",
+			["source"] = "The Prophet Tharon'ja",
 		},
 		[22858] = {
 			["school"] = 1,
@@ -9213,114 +9213,207 @@ EncounterDetailsDB = {
 	["emotes"] = {
 		{
 			{
-				188.5310000000754, -- [1]
-				"Pray for mercy!", -- [2]
-				"Kel'Thuzad", -- [3]
-				7, -- [4]
+				114.8919999999926, -- [1]
+				"%s dies.", -- [2]
+				"Zealot Lor'Khan", -- [3]
+				3, -- [4]
 			}, -- [1]
 			{
-				203.9130000000587, -- [1]
-				"Kel'Thuzad strikes!", -- [2]
-				"Kel'Thuzad", -- [3]
-				1, -- [4]
+				121.341999999946, -- [1]
+				"%s dies.", -- [2]
+				"High Priest Thekal", -- [3]
+				3, -- [4]
 			}, -- [2]
 			{
-				348.9880000000121, -- [1]
-				"%s cackles maniacally.\r\n", -- [2]
-				"Kel'Thuzad", -- [3]
+				122.9590000000317, -- [1]
+				"%s dies.", -- [2]
+				"Zealot Zath", -- [3]
 				3, -- [4]
 			}, -- [3]
 			{
-				372.6230000000214, -- [1]
-				"Master, I require aid!", -- [2]
-				"Kel'Thuzad", -- [3]
+				127.8079999999609, -- [1]
+				"Shirvallah, fill me with your RAGE!", -- [2]
+				"High Priest Thekal", -- [3]
 				7, -- [4]
 			}, -- [4]
 			{
-				376.6620000000112, -- [1]
-				"Very well. Warriors of the frozen wastes, rise up! I command you to fight, kill and die for your master! Let none survive!", -- [2]
-				"The Lich King", -- [3]
-				7, -- [4]
+				186.0470000000205, -- [1]
+				"%s goes into a frenzy!", -- [2]
+				"High Priest Thekal", -- [3]
+				3, -- [4]
 			}, -- [5]
-			{
-				385.908000000054, -- [1]
-				"Do not continue! Turn back while there's still time!", -- [2]
-				"Sir Zeliek", -- [3]
-				7, -- [4]
-			}, -- [6]
-			{
-				387.0410000000848, -- [1]
-				"A Guardian of Icecrown enters the fight!", -- [2]
-				"OLDWorld Trigger (DO NOT DELETE)", -- [3]
-				1, -- [4]
-			}, -- [7]
-			{
-				393.5240000000922, -- [1]
-				"A Guardian of Icecrown enters the fight!", -- [2]
-				"OLDWorld Trigger (DO NOT DELETE)", -- [3]
-				1, -- [4]
-			}, -- [8]
-			["boss"] = "Kel'Thuzad",
+			["boss"] = "High Priest Thekal",
 		}, -- [1]
 		{
 			{
-				189.4960000000428, -- [1]
-				"The end is upon you!", -- [2]
-				"Kel'Thuzad", -- [3]
-				7, -- [4]
+				26.83499999996275, -- [1]
+				"Don't make me angry! You wouldn't like me when I'm angry!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				5, -- [4]
 			}, -- [1]
 			{
-				205.2469999999739, -- [1]
-				"Kel'Thuzad strikes!", -- [2]
-				"Kel'Thuzad", -- [3]
-				1, -- [4]
+				26.83499999996275, -- [1]
+				"Battlearm! I'm watching you!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
 			}, -- [2]
 			{
-				318.170999999973, -- [1]
-				"The dark void awaits you!", -- [2]
-				"Kel'Thuzad", -- [3]
-				7, -- [4]
+				43.03499999991618, -- [1]
+				"Don't make me angry! You wouldn't like me when I'm angry!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				5, -- [4]
 			}, -- [3]
 			{
-				367.3399999999674, -- [1]
-				"Master, I require aid!", -- [2]
-				"Kel'Thuzad", -- [3]
+				43.03499999991618, -- [1]
+				"Battlearm! I'm watching you!", -- [2]
+				"Bloodlord Mandokir", -- [3]
 				7, -- [4]
 			}, -- [4]
 			{
-				371.5559999999823, -- [1]
-				"Very well. Warriors of the frozen wastes, rise up! I command you to fight, kill and die for your master! Let none survive!", -- [2]
-				"The Lich King", -- [3]
+				51.05199999990873, -- [1]
+				"You've angered me for the last time Battlearm!", -- [2]
+				"Bloodlord Mandokir", -- [3]
 				7, -- [4]
 			}, -- [5]
 			{
-				382.9239999999991, -- [1]
-				"A Guardian of Icecrown enters the fight!", -- [2]
-				"OLDWorld Trigger (DO NOT DELETE)", -- [3]
-				1, -- [4]
+				55.81899999990128, -- [1]
+				"%s goes into a rage after seeing his raptor fall in battle!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				3, -- [4]
 			}, -- [6]
 			{
-				389.375, -- [1]
-				"A Guardian of Icecrown enters the fight!", -- [2]
-				"OLDWorld Trigger (DO NOT DELETE)", -- [3]
-				1, -- [4]
+				57.61300000001211, -- [1]
+				"Don't make me angry! You wouldn't like me when I'm angry!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				5, -- [4]
 			}, -- [7]
 			{
-				390.859000000055, -- [1]
-				"The dark void awaits you!", -- [2]
-				"Kel'Thuzad", -- [3]
+				57.61300000001211, -- [1]
+				"Battlearm! I'm watching you!", -- [2]
+				"Bloodlord Mandokir", -- [3]
 				7, -- [4]
 			}, -- [8]
-			["boss"] = "Kel'Thuzad",
-		}, -- [2]
-		{
 			{
-				104.5559999999823, -- [1]
-				"Flee, before it's too late!", -- [2]
-				"Sir Zeliek", -- [3]
+				65.6359999999404, -- [1]
+				"You've angered me for the last time Battlearm!", -- [2]
+				"Bloodlord Mandokir", -- [3]
 				7, -- [4]
-			}, -- [1]
-			["boss"] = "Kel'Thuzad",
-		}, -- [3]
+			}, -- [9]
+			{
+				109.4049999999115, -- [1]
+				"Don't make me angry! You wouldn't like me when I'm angry!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				5, -- [4]
+			}, -- [10]
+			{
+				109.4049999999115, -- [1]
+				"Battlearm! I'm watching you!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [11]
+			{
+				117.439000000013, -- [1]
+				"You've angered me for the last time Battlearm!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [12]
+			{
+				127.2229999999981, -- [1]
+				"Don't make me angry! You wouldn't like me when I'm angry!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				5, -- [4]
+			}, -- [13]
+			{
+				127.2229999999981, -- [1]
+				"Battlearm! I'm watching you!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [14]
+			{
+				135.2409999999218, -- [1]
+				"You've angered me for the last time Battlearm!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [15]
+			{
+				154.7249999999767, -- [1]
+				"Don't make me angry! You wouldn't like me when I'm angry!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				5, -- [4]
+			}, -- [16]
+			{
+				154.7249999999767, -- [1]
+				"Battlearm! I'm watching you!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [17]
+			{
+				174.1429999999236, -- [1]
+				"Don't make me angry! You wouldn't like me when I'm angry!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				5, -- [4]
+			}, -- [18]
+			{
+				174.1429999999236, -- [1]
+				"Battlearm! I'm watching you!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [19]
+			{
+				182.1599999999162, -- [1]
+				"You've angered me for the last time Battlearm!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [20]
+			{
+				193.5949999999721, -- [1]
+				"Don't make me angry! You wouldn't like me when I'm angry!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				5, -- [4]
+			}, -- [21]
+			{
+				193.5949999999721, -- [1]
+				"Battlearm! I'm watching you!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [22]
+			{
+				209.5949999999721, -- [1]
+				"Don't make me angry! You wouldn't like me when I'm angry!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				5, -- [4]
+			}, -- [23]
+			{
+				209.5949999999721, -- [1]
+				"Battlearm! I'm watching you!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [24]
+			{
+				217.7789999999804, -- [1]
+				"You've angered me for the last time Battlearm!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [25]
+			{
+				276.0819999999367, -- [1]
+				"Don't make me angry! You wouldn't like me when I'm angry!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				5, -- [4]
+			}, -- [26]
+			{
+				276.0819999999367, -- [1]
+				"Battlearm! I'm watching you!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [27]
+			{
+				284.1159999999218, -- [1]
+				"You've angered me for the last time Battlearm!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [28]
+			["boss"] = "Bloodlord Mandokir",
+		}, -- [2]
 	},
 }
