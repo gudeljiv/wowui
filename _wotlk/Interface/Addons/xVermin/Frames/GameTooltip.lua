@@ -184,6 +184,7 @@ local function HandleUnit(self, ...)
 			GameTooltipStatusBar:ClearAllPoints()
 			GameTooltipStatusBar:SetPoint('LEFT', self:GetName() .. 'TextLeft' .. self:NumLines(), 1, 0)
 			GameTooltipStatusBar:SetPoint('RIGHT', self, -10, 0)
+			-- GameTooltipStatusBar:AddTexture('Interface\\Addons\\SharedMedia\\statusbar\\Glamour2.tga')
 			SetHealthBarColor(unit)
 		end
 
