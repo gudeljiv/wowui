@@ -1,0 +1,20 @@
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Immolate
+END
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Corruption
+END
+VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Curse of Agony
+END
+VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Shadow Bolt
+END

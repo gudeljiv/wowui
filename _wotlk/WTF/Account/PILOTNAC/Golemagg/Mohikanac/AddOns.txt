@@ -1,0 +1,9 @@
+nPower: disabled
+nHealth: disabled
+Immersion: disabled
+Grid2: enabled
+Grid2Options: enabled
+Grid2RaidDebuffs: enabled
+Grid2RaidDebuffsOptions: enabled
+Grid2LDB: enabled
+BestBuff: disabled

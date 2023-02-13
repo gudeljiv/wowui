@@ -1,0 +1,40 @@
+
+ErrorFilterDB = {
+	["profileKeys"] = {
+		["Mxzq - Golemagg"] = "Default",
+		["Vermina - Golemagg"] = "Default",
+		["Mxyz - Golemagg"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
+		["Battitude - Golemagg"] = "Default",
+		["Kaonac - Jin'do"] = "Default",
+		["Tandaram - Jin'do"] = "Default",
+		["Wells - Jin'do"] = "Default",
+		["Pitchwise - Ashbringer"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Tudum - Ashbringer"] = "Default",
+		["Augustin - Golemagg"] = "Default",
+		["Tudum - Jin'do"] = "Default",
+		["Miqa - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Battlearm - Jin'do"] = "Default",
+		["Poklopac - Mirage Raceway"] = "Default",
+		["Provokator - Jin'do"] = "Default",
+		["Battlearm - Gehennas"] = "Default",
+		["Handrmandr - Golemagg"] = "Default",
+		["Tadibey - Golemagg"] = "Default",
+		["Battledog - Gehennas"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["updateOnlyInCombat"] = true,
+			["filters"] = {
+				["You are facing the wrong way!"] = true,
+				["Out of range."] = true,
+				["Target needs to be in front of you."] = true,
+				["You are too far away!"] = true,
+				["You are too far away."] = true,
+			},
+		},
+	},
+}

@@ -1,0 +1,5 @@
+GatherMate2: disabled
+GatherMate2_Data: disabled
+nPower: disabled
+nHealth: disabled
+nTooltip: disabled

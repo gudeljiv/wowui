@@ -1,0 +1,66 @@
+VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Holy Shock
+/cast [@mouseover, help, nodead][] Holy Shock
+END
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/startattack
+/cast Judgement of Wisdom
+END
+VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Flash of Light
+/cast Divine Illumination
+/cast [@mouseover, help, nodead][] Flash of Light
+END
+VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help,nodead] [help] [@targettarget,help,nodead] [] Righteous Defense
+END
+VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, harm, nodead][] Exorcism
+END
+VER 3 0000000001000009 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][] Hand of Protection
+END
+VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, harm, nodead][] Hammer of Justice
+END
+VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/startattack
+/cast [@mouseover, harm, nodead][] Hand of Reckoning
+END
+VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][] Hand of Sacrifice
+END
+VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][] Cleanse
+END
+VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/startattack
+/cast Judgement of Light
+END
+VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][] Hand of Freedom
+END
+VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Holy Light
+/cast Divine Favor
+/cast Divine Illumination
+/cast [@mouseover, help, nodead][] Holy Light
+END
+VER 3 0000000001000013 " " "134400"
+#showtooltip 
+/cast [@mouseover, help, nodead][] Beacon of Light
+END
+VER 3 0000000001000014 " " "134400"
+#showtooltip 
+/cast [@focus, help, nodead][] Beacon of Light
+END
