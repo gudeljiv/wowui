@@ -40,6 +40,10 @@ _detalhes_database = {
 							["damage_taken"] = 6553.00154,
 							["on_hold"] = false,
 							["nome"] = "Battlearm",
+							["end_time"] = 1676212897,
+							["damage_taken"] = 43100.004636,
+							["tipo"] = 1,
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									{
@@ -17550,6 +17554,5 @@ _detalhes_database = {
 		["Player-4465-038C1D0E"] = "TANK",
 	},
 	["cached_specs"] = {
-		["Player-4465-036D491F"] = 250,
 	},
 }

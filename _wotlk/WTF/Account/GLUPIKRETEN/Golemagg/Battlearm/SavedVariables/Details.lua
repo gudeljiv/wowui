@@ -841,6 +841,9 @@ _detalhes_database = {
 									[48263] = {
 										["appliedamt"] = 1,
 										["targets"] = {
+											["Battlearm"] = 780,
+											["Bloodworm <Battlearm>"] = 3168,
+											["Risen Ghoul <Battlearm>"] = 986,
 										},
 										["activedamt"] = 1,
 										["uptime"] = 7,
@@ -1849,6 +1852,7 @@ _detalhes_database = {
 							["total"] = 65.005969,
 							["nome"] = "Battlearm",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									[49909] = {
 										["total"] = 20,
@@ -2273,6 +2277,7 @@ _detalhes_database = {
 							["total"] = 11929.005049,
 							["nome"] = "Battlearm",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -2591,6 +2596,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["nome"] = "Stormforged Raider",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 6,
@@ -2681,6 +2687,7 @@ _detalhes_database = {
 							},
 							["nome"] = "Battlearm",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									[45470] = {
 										["c_amt"] = 0,
@@ -2713,7 +2720,7 @@ _detalhes_database = {
 										["targets_overheal"] = {
 											["Battlearm"] = 780,
 										},
-										["n_max"] = 0,
+										["n_max"] = 276,
 										["targets"] = {
 											["Battlearm"] = 0,
 										},
@@ -2767,6 +2774,7 @@ _detalhes_database = {
 							["total"] = 85.007902,
 							["nome"] = "Battlearm",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									[57623] = {
 										["total"] = 10,
@@ -3187,6 +3195,7 @@ _detalhes_database = {
 							["last_event"] = 1676212897,
 							["nome"] = "Battlearm",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 17,
@@ -4476,6 +4485,7 @@ _detalhes_database = {
 							["ownerName"] = "Battlearm",
 							["boss_fight_component"] = true,
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -4609,6 +4619,7 @@ _detalhes_database = {
 							},
 							["nome"] = "Improved Land Mine",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									[54537] = {
 										["c_amt"] = 0,
@@ -4681,6 +4692,7 @@ _detalhes_database = {
 							["aID"] = "14509",
 							["nome"] = "High Priest Thekal",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -5004,6 +5016,7 @@ _detalhes_database = {
 							["aID"] = "11347",
 							["nome"] = "Zealot Lor'Khan",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -5138,6 +5151,7 @@ _detalhes_database = {
 							},
 							["nome"] = "Stormforged Reaver",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -5237,6 +5251,7 @@ _detalhes_database = {
 							["aID"] = "11348",
 							["nome"] = "Zealot Zath",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -5397,6 +5412,7 @@ _detalhes_database = {
 							},
 							["nome"] = "Dolomite Giant",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
@@ -5468,6 +5484,7 @@ _detalhes_database = {
 							},
 							["nome"] = "Hadoiri",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -5593,6 +5610,7 @@ _detalhes_database = {
 							},
 							["nome"] = "Stormforged Raider",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
@@ -5667,6 +5685,7 @@ _detalhes_database = {
 							["ownerName"] = "High Priest Thekal",
 							["nome"] = "Zulian Guardian <High Priest Thekal>",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -5768,6 +5787,7 @@ _detalhes_database = {
 							["aID"] = "166359",
 							["nome"] = "Zulian Tiger",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -5842,6 +5862,7 @@ _detalhes_database = {
 							["last_event"] = 1676277699,
 							["nome"] = "Snowdrift Jormungar",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -5911,6 +5932,7 @@ _detalhes_database = {
 							},
 							["nome"] = "Earthen Defender",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 4,
@@ -5986,6 +6008,7 @@ _detalhes_database = {
 							},
 							["nome"] = "Environment (Fire)",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									[6] = {
 										["c_amt"] = 0,
@@ -6072,6 +6095,7 @@ _detalhes_database = {
 							["aID"] = "4465-036D491F",
 							["boss_fight_component"] = true,
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									[45470] = {
 										["c_amt"] = 0,
@@ -6172,6 +6196,7 @@ _detalhes_database = {
 							["ownerName"] = "Battlearm",
 							["boss_fight_component"] = true,
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									[50454] = {
 										["c_amt"] = 0,
@@ -6243,6 +6268,7 @@ _detalhes_database = {
 							["healing_taken"] = 13605.007615,
 							["nome"] = "Jeppeknug",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									[54968] = {
 										["c_amt"] = 0,
@@ -6364,6 +6390,7 @@ _detalhes_database = {
 							["healing_taken"] = 0.007998,
 							["nome"] = "Gioetn",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									[48989] = {
 										["c_amt"] = 0,
@@ -6434,6 +6461,7 @@ _detalhes_database = {
 							["healing_taken"] = 4062.008483,
 							["nome"] = "Dragonhawk",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									[24529] = {
 										["c_amt"] = 0,
@@ -6503,6 +6531,7 @@ _detalhes_database = {
 							["healing_taken"] = 0.006199,
 							["nome"] = "Fearforce",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									[47893] = {
 										["c_amt"] = 0,
@@ -6571,6 +6600,7 @@ _detalhes_database = {
 							["healing_taken"] = 0.004969,
 							["nome"] = "Kimjongmoon",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									[48788] = {
 										["c_amt"] = 0,
@@ -6639,6 +6669,7 @@ _detalhes_database = {
 							["healing_taken"] = 0.004893,
 							["nome"] = "Woofiee",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									[47893] = {
 										["c_amt"] = 0,
@@ -6710,6 +6741,7 @@ _detalhes_database = {
 							},
 							["end_time"] = 1676277736,
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									[47893] = {
 										["c_amt"] = 0,
@@ -6775,6 +6807,7 @@ _detalhes_database = {
 							["healing_taken"] = 0.004293,
 							["nome"] = "Felpower",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									[47893] = {
 										["c_amt"] = 0,
@@ -6843,6 +6876,7 @@ _detalhes_database = {
 							["healing_taken"] = 0.004264,
 							["nome"] = "Dalcyonxx",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									[47893] = {
 										["c_amt"] = 0,
@@ -7417,7 +7451,19 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
+							},
+							["custom"] = 0,
+							["last_event"] = 0,
+							["on_hold"] = false,
+							["totaldenied"] = 0.001893,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [85]
+						{
+							["flag_original"] = 1304,
+							["totalabsorb"] = 0.001873,
+							["last_hps"] = 0,
+							["healing_from"] = {
 							},
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["cooldowns_defensive_targets"] = {
@@ -7941,100 +7987,130 @@ _detalhes_database = {
 				["player_last_events"] = {
 					["Battlearm"] = {
 						{
-							true, -- [1]
-							3, -- [2]
-							2593, -- [3]
-							1676221311.665, -- [4]
-							25981, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
+							["flag_original"] = 1304,
+							["totalabsorb"] = 0.001368,
+							["last_hps"] = 0,
+							["healing_from"] = {
+								["Toopog"] = true,
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.001368,
+							["classe"] = "UNGROUPPLAYER",
+							["totalover"] = 0.001368,
+							["total_without_pet"] = 0.001368,
+							["targets_overheal"] = {
+							},
+							["serial"] = "Player-4465-0370343E",
+							["iniciar_hps"] = false,
+							["total"] = 0.001368,
+							["heal_enemy_amt"] = 0,
+							["aID"] = "4465-0370343E",
+							["nome"] = "Kaeylapriest",
+							["targets_absorbs"] = {
+							},
+							["start_time"] = 0,
+							["healing_taken"] = 1493.001368,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+								},
+							},
+							["custom"] = 0,
+							["last_event"] = 0,
+							["on_hold"] = false,
+							["totaldenied"] = 0.001368,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [92]
 						{
-							true, -- [1]
-							3, -- [2]
-							1425, -- [3]
-							1676221322.583, -- [4]
-							23730, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [2]
+							["flag_original"] = 1304,
+							["totalabsorb"] = 0.001331,
+							["last_hps"] = 0,
+							["healing_from"] = {
+								["Toopog"] = true,
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.001331,
+							["classe"] = "UNGROUPPLAYER",
+							["totalover"] = 0.001331,
+							["total_without_pet"] = 0.001331,
+							["targets_overheal"] = {
+							},
+							["serial"] = "Player-4465-02EC23F2",
+							["iniciar_hps"] = false,
+							["total"] = 0.001331,
+							["heal_enemy_amt"] = 0,
+							["aID"] = "4465-02EC23F2",
+							["nome"] = "Ldora",
+							["targets_absorbs"] = {
+							},
+							["start_time"] = 0,
+							["healing_taken"] = 1068.001331,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+								},
+							},
+							["custom"] = 0,
+							["last_event"] = 0,
+							["on_hold"] = false,
+							["totaldenied"] = 0.001331,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [93]
 						{
-							true, -- [1]
-							3, -- [2]
-							618, -- [3]
-							1676221324.185, -- [4]
-							22305, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 4,
+							["flag_original"] = 4376,
+							["totalabsorb"] = 0.00124,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.00124,
+							["classe"] = "PET",
+							["totalover"] = 0.00124,
+							["total_without_pet"] = 0.00124,
+							["targets_overheal"] = {
+							},
+							["serial"] = "Pet-0-4458-1-22786-417-050059441F",
+							["iniciar_hps"] = false,
+							["total"] = 0.00124,
+							["heal_enemy_amt"] = 0,
+							["aID"] = "Pet-0-4458-1-22786-417-050059441F",
+							["nome"] = "Rhuudrom",
+							["targets_absorbs"] = {
+							},
+							["start_time"] = 0,
+							["healing_taken"] = 0.00124,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+								},
+							},
+							["custom"] = 0,
+							["last_event"] = 0,
+							["on_hold"] = false,
+							["totaldenied"] = 0.00124,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [94]
 					},
 				},
 				["start_time"] = 958728.942,
@@ -8044,12 +8120,12 @@ _detalhes_database = {
 			}, -- [4]
 			{
 				{
-					["tipo"] = 2,
-					["combatId"] = 19,
+					["tipo"] = 7,
+					["combatId"] = 21,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007948,
+							["received"] = 840.0039859999999,
+							["resource"] = 0.003986,
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["pets"] = {
 								"Risen Ghoul <Battlearm>", -- [1]
@@ -8069,12 +8145,9 @@ _detalhes_database = {
 								["Ohgan"] = true,
 							},
 							["targets"] = {
-								["Snake"] = 21,
-								["Bloodlord Mandokir"] = 466339,
-								["Ohgan"] = 91559,
+								["Battlearm"] = 840,
 							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
+							["pets"] = {
 							},
 							["nome"] = "Battlearm",
 							["end_time"] = 1676211608,
@@ -8083,12 +8156,10 @@ _detalhes_database = {
 							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
-									{
-										["c_amt"] = 19,
-										["b_amt"] = 7,
-										["c_dmg"] = 21929,
-										["g_amt"] = 44,
-										["n_max"] = 1133,
+									[57623] = {
+										["total"] = 10,
+										["id"] = 57623,
+										["totalover"] = 0,
 										["targets"] = {
 											["Ohgan"] = 11099,
 											["Bloodlord Mandokir"] = 77104,
@@ -8345,16 +8416,12 @@ _detalhes_database = {
 										},
 										["spellschool"] = 32,
 									},
-									[55095] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 437,
+									[47568] = {
+										["total"] = 25,
+										["id"] = 47568,
+										["totalover"] = 0,
 										["targets"] = {
-											["Snake"] = 21,
-											["Bloodlord Mandokir"] = 35584,
-											["Ohgan"] = 6272,
+											["Battlearm"] = 25,
 										},
 										["n_dmg"] = 41877,
 										["n_min"] = 7,
@@ -8477,11 +8544,9 @@ _detalhes_database = {
 										["spellschool"] = 16,
 									},
 									[49921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 650,
+										["total"] = 10,
+										["id"] = 49921,
+										["totalover"] = 0,
 										["targets"] = {
 											["Ohgan"] = 650,
 											["Bloodlord Mandokir"] = 595,
@@ -8606,19 +8671,41 @@ _detalhes_database = {
 										},
 										["spellschool"] = 1,
 									},
-									[51714] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
+								},
+							},
+							["aID"] = "4465-02FC9FC6",
+							["flag_original"] = 1304,
+							["last_event"] = 1676236299,
+							["alternatepower"] = 0.006795,
+							["passiveover"] = 0.006795,
+							["serial"] = "Player-4465-02FC9FC6",
+							["tipo"] = 3,
+						}, -- [2]
+						{
+							["received"] = 40.002837,
+							["resource"] = 0.002837,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Dazzu"] = 40,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 6,
+							["classe"] = "UNGROUPPLAYER",
+							["totalover"] = 0.002837,
+							["total"] = 40.002837,
+							["nome"] = "Dazzu",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[57623] = {
+										["total"] = 40,
+										["id"] = 57623,
+										["totalover"] = 0,
 										["targets"] = {
 											["Ohgan"] = 0,
 											["Bloodlord Mandokir"] = 0,
 										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
 										["counter"] = 4,
 										["ChartData"] = {
 											[122] = 0,
@@ -8735,12 +8822,37 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["MISS"] = 4,
 									},
-									[55262] = {
-										["c_amt"] = 12,
-										["b_amt"] = 4,
-										["c_dmg"] = 31123,
-										["g_amt"] = 0,
-										["n_max"] = 1468,
+								},
+							},
+							["aID"] = "4465-02E95C53",
+							["flag_original"] = 1304,
+							["last_event"] = 1676236625,
+							["alternatepower"] = 0.007896,
+							["passiveover"] = 0.007896,
+							["serial"] = "Player-4465-02E95C53",
+							["tipo"] = 3,
+						}, -- [5]
+						{
+							["received"] = 20.006322,
+							["resource"] = 0.006322,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Yarmouk"] = 20,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "UNGROUPPLAYER",
+							["totalover"] = 0.006322,
+							["total"] = 20.006322,
+							["nome"] = "Yarmouk",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[2687] = {
+										["total"] = 20,
+										["id"] = 2687,
+										["totalover"] = 0,
 										["targets"] = {
 											["Bloodlord Mandokir"] = 82653,
 											["Ohgan"] = 13059,
@@ -8866,12 +8978,37 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["DODGE"] = 1,
 									},
-									[56815] = {
-										["c_amt"] = 9,
-										["b_amt"] = 0,
-										["c_dmg"] = 35077,
-										["g_amt"] = 0,
-										["n_max"] = 2483,
+								},
+							},
+							["aID"] = "4465-02E58A59",
+							["flag_original"] = 1304,
+							["last_event"] = 1676236990,
+							["alternatepower"] = 0.006421,
+							["passiveover"] = 0.006421,
+							["serial"] = "Player-4465-02E58A59",
+							["tipo"] = 3,
+						}, -- [8]
+						{
+							["received"] = 0.008467,
+							["resource"] = 0.008467,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Shakullin"] = 0,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "UNGROUPPLAYER",
+							["totalover"] = 84.008467,
+							["total"] = 0.008467,
+							["nome"] = "Shakullin",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[31786] = {
+										["total"] = 0,
+										["id"] = 31786,
+										["totalover"] = 84,
 										["targets"] = {
 											["Ohgan"] = 22743,
 											["Bloodlord Mandokir"] = 104338,
@@ -8996,12 +9133,10 @@ _detalhes_database = {
 										},
 										["spellschool"] = 1,
 									},
-									[49924] = {
-										["c_amt"] = 10,
-										["b_amt"] = 0,
-										["c_dmg"] = 35101,
-										["g_amt"] = 0,
-										["n_max"] = 2030,
+									[54428] = {
+										["total"] = 1475,
+										["id"] = 54428,
+										["totalover"] = 0,
 										["targets"] = {
 											["Ohgan"] = 21792,
 											["Bloodlord Mandokir"] = 73883,
@@ -9128,12 +9263,37 @@ _detalhes_database = {
 										["DODGE"] = 2,
 										["a_dmg"] = 0,
 									},
-									[55078] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 405,
+								},
+							},
+							["aID"] = "4465-02EC23F2",
+							["flag_original"] = 1304,
+							["last_event"] = 1676237300,
+							["alternatepower"] = 0.007879,
+							["passiveover"] = 0.007879,
+							["serial"] = "Player-4465-02EC23F2",
+							["tipo"] = 3,
+						}, -- [11]
+						{
+							["received"] = 183.006726,
+							["resource"] = 0.006726,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Crimsonsky"] = 183,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "UNGROUPPLAYER",
+							["totalover"] = 551.006726,
+							["total"] = 183.006726,
+							["nome"] = "Crimsonsky",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[48542] = {
+										["total"] = 183,
+										["id"] = 48542,
+										["totalover"] = 551,
 										["targets"] = {
 											["Ohgan"] = 6207,
 											["Bloodlord Mandokir"] = 33310,
@@ -9243,8 +9403,34 @@ _detalhes_database = {
 											[239] = 32208,
 											[296] = 39014,
 										},
-										["total"] = 39517,
-										["c_max"] = 0,
+										["counter"] = 1,
+									},
+								},
+							},
+							["aID"] = "4465-02BE38C7",
+							["flag_original"] = 1304,
+							["last_event"] = 1676237333,
+							["alternatepower"] = 0.003965,
+							["passiveover"] = 0.003965,
+							["serial"] = "Player-4465-02BE38C7",
+							["tipo"] = 3,
+						}, -- [13]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 21,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[55078] = {
+										["appliedamt"] = 7,
+										["targets"] = {
+										},
+										["activedamt"] = 3,
+										["uptime"] = 199,
 										["id"] = 55078,
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
@@ -9258,12 +9444,24 @@ _detalhes_database = {
 										},
 										["spellschool"] = 32,
 									},
-									[50401] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 12,
+								},
+								["tipo"] = 9,
+							},
+							["cooldowns_defensive"] = 1.001735,
+							["buff_uptime"] = 1510,
+							["last_cooldown"] = {
+								1676212717.434, -- [1]
+								48707, -- [2]
+							},
+							["last_event"] = 1676212897,
+							["aID"] = "4465-036D491F",
+							["cooldowns_defensive_targets"] = {
+								["Battlearm"] = 1,
+							},
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[64859] = {
+										["appliedamt"] = 2,
 										["targets"] = {
 											["Ohgan"] = 256,
 											["Bloodlord Mandokir"] = 1571,
@@ -9617,8 +9815,8 @@ _detalhes_database = {
 								["Ohgan"] = 1006,
 								["Bloodlord Mandokir"] = 15816,
 							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
+							["interrompeu_oque"] = {
+								[24208] = 4,
 							},
 							["damage_taken"] = 13464.008031,
 							["end_time"] = 1676211608,
@@ -9627,12 +9825,8 @@ _detalhes_database = {
 							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
-									{
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 846,
-										["g_amt"] = 63,
-										["n_max"] = 113,
+									[48707] = {
+										["id"] = 48707,
 										["targets"] = {
 											["Ohgan"] = 1006,
 											["Bloodlord Mandokir"] = 15816,
@@ -9661,7 +9855,7 @@ _detalhes_database = {
 										["DODGE"] = 10,
 									}, -- [1]
 								},
-								["tipo"] = 2,
+								["tipo"] = 9,
 							},
 							["grupo"] = true,
 							["last_event"] = 1676211605,
@@ -9694,8 +9888,8 @@ _detalhes_database = {
 								["Ohgan"] = 5182,
 								["Bloodlord Mandokir"] = 7986,
 							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
+							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
 							},
 							["damage_taken"] = 2730.005606,
 							["end_time"] = 1676211608,
@@ -9778,13 +9972,12 @@ _detalhes_database = {
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.004104,
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Battlearm"] = 76748,
-								["Bloodworm <Battlearm>"] = 13464,
-								["Risen Ghoul <Battlearm>"] = 2730,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 9,
 							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["pets"] = {
 							},
 							["delay"] = 0,
@@ -9990,9 +10183,10 @@ _detalhes_database = {
 										["n_max"] = 0,
 										["targets"] = {
 										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
+										["uptime"] = 17,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
 										["counter"] = 0,
 										["total"] = 0,
 										["c_max"] = 0,
@@ -10088,7 +10282,6 @@ _detalhes_database = {
 										},
 									},
 								},
-								["tipo"] = 2,
 							},
 							["dps_started"] = false,
 							["total"] = 92942.00410399999,
@@ -10299,12 +10492,95 @@ _detalhes_database = {
 							},
 						}, -- [6]
 						{
-							["flag_original"] = 2600,
-							["totalabsorbed"] = 0.001786,
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 4,
+					},
+				},
+				["start_time"] = 958728.942,
+				["TimeData"] = {
+				},
+				["tempo_start"] = 1676212697,
+			}, -- [1]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 19,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007948,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+								"Risen Ghoul <Battlearm>", -- [1]
+								"Bloodworm <Battlearm>", -- [2]
+							},
+							["aID"] = "4465-036D491F",
+							["total_without_pet"] = 527929.007948,
+							["dps_started"] = false,
+							["total"] = 557919.007948,
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["isTank"] = true,
+							["serial"] = "Player-4465-036D491F",
 							["damage_from"] = {
-								["Battlearm"] = true,
+								["Razzashi Raptor"] = true,
+								["Bloodlord Mandokir"] = true,
+								["Ohgan"] = true,
 							},
 							["targets"] = {
+								["Snake"] = 21,
+								["Bloodlord Mandokir"] = 466339,
+								["Ohgan"] = 91559,
 							},
 							["delay"] = 0,
 							["pets"] = {
@@ -10381,79 +10657,267 @@ _detalhes_database = {
 							["nome"] = "Battlearm",
 							["spells"] = {
 								["_ActorTable"] = {
-									[45470] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Battlearm"] = 81416,
-										},
-										["n_max"] = 3898,
+									{
+										["c_amt"] = 19,
+										["b_amt"] = 7,
+										["c_dmg"] = 21929,
+										["g_amt"] = 44,
+										["n_max"] = 1133,
 										["targets"] = {
-											["Battlearm"] = 76420,
+											["Ohgan"] = 11099,
+											["Bloodlord Mandokir"] = 77104,
 										},
-										["n_min"] = 0,
-										["counter"] = 44,
-										["overheal"] = 81416,
-										["total"] = 76420,
-										["c_max"] = 0,
-										["id"] = 45470,
-										["targets_absorbs"] = {
+										["n_dmg"] = 43957,
+										["r_amt"] = 0,
+										["n_min"] = 392,
+										["MISS"] = 27,
+										["counter"] = 173,
+										["ChartData"] = {
+											[122] = 34387,
+											[245] = 70238,
+											[125] = 34387,
+											[8] = 3196,
+											[32] = 11099,
+											[128] = 36374,
+											[134] = 37875,
+											[35] = 11099,
+											[140] = 40833,
+											[146] = 41850,
+											[38] = 11099,
+											[152] = 42850,
+											[158] = 44690,
+											[41] = 11414,
+											[164] = 44690,
+											[170] = 45953,
+											[11] = 4898,
+											[44] = 11414,
+											[176] = 48672,
+											[182] = 51246,
+											[47] = 12160,
+											[188] = 54805,
+											[194] = 57005,
+											[263] = 77384,
+											[50] = 13222,
+											[200] = 57005,
+											[275] = 79481,
+											[206] = 59292,
+											[287] = 83342,
+											[53] = 14992,
+											[212] = 61431,
+											[299] = 88203,
+											[218] = 62689,
+											[14] = 6568,
+											[56] = 15512,
+											[224] = 66181,
+											[230] = 67419,
+											[59] = 19056,
+											[236] = 68952,
+											[242] = 69424,
+											[62] = 19589,
+											[248] = 71846,
+											[254] = 75620,
+											[65] = 20405,
+											[131] = 36821,
+											[17] = 6568,
+											[68] = 21888,
+											[137] = 39679,
+											[71] = 22597,
+											[143] = 41415,
+											[272] = 79481,
+											[74] = 23369,
+											[296] = 86567,
+											[5] = 2763,
+											[77] = 23815,
+											[155] = 44690,
+											[20] = 6568,
+											[80] = 24705,
+											[161] = 44690,
+											[290] = 83875,
+											[83] = 25103,
+											[167] = 45036,
+											[251] = 73083,
+											[86] = 25499,
+											[173] = 46829,
+											[278] = 80453,
+											[89] = 25499,
+											[179] = 49790,
+											[23] = 7389,
+											[92] = 25499,
+											[185] = 52710,
+											[26] = 8709,
+											[95] = 25805,
+											[191] = 55530,
+											[257] = 75620,
+											[98] = 26147,
+											[197] = 57005,
+											[269] = 79481,
+											[101] = 27359,
+											[203] = 58107,
+											[281] = 82001,
+											[104] = 29247,
+											[209] = 60412,
+											[293] = 85434,
+											[107] = 29779,
+											[215] = 61785,
+											[266] = 78687,
+											[110] = 31186,
+											[221] = 65296,
+											[260] = 76415,
+											[113] = 31698,
+											[227] = 66612,
+											[29] = 9146,
+											[116] = 32083,
+											[233] = 67811,
+											[284] = 82937,
+											[119] = 34387,
+											[239] = 68952,
+											[149] = 42850,
 										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_amt"] = 44,
-										["n_curado"] = 76420,
-										["totaldenied"] = 0,
-										["absorbed"] = 0,
-									},
-									[53365] = {
-										["c_amt"] = 1,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Battlearm"] = 2894,
+										["total"] = 88203,
+										["c_max"] = 2189,
+										["b_dmg"] = 4970,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 3,
+										["a_amt"] = 0,
+										["extra"] = {
 										},
-										["n_max"] = 780,
+										["PARRY"] = 14,
+										["c_min"] = 831,
+										["successful_casted"] = 0,
+										["spellschool"] = 1,
+										["n_amt"] = 66,
+										["a_dmg"] = 0,
+										["g_dmg"] = 22317,
+									}, -- [1]
+									[47632] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 6220,
+										["g_amt"] = 0,
+										["n_max"] = 1556,
 										["targets"] = {
-											["Battlearm"] = 4512,
+											["Ohgan"] = 1450,
+											["Bloodlord Mandokir"] = 32610,
 										},
-										["n_min"] = 0,
-										["counter"] = 10,
-										["overheal"] = 2894,
-										["total"] = 4512,
-										["c_max"] = 0,
-										["id"] = 53365,
-										["targets_absorbs"] = {
+										["n_dmg"] = 27840,
+										["n_min"] = 1314,
+										["g_dmg"] = 0,
+										["counter"] = 22,
+										["ChartData"] = {
+											[122] = 8896,
+											[245] = 24056,
+											[125] = 8896,
+											[8] = 1450,
+											[32] = 1450,
+											[128] = 8896,
+											[134] = 8896,
+											[35] = 1450,
+											[140] = 10211,
+											[146] = 11525,
+											[38] = 1450,
+											[152] = 11525,
+											[158] = 12980,
+											[41] = 1450,
+											[164] = 12980,
+											[170] = 12980,
+											[11] = 1450,
+											[44] = 2838,
+											[176] = 14294,
+											[182] = 15609,
+											[47] = 2838,
+											[188] = 17002,
+											[194] = 18557,
+											[263] = 31190,
+											[50] = 2838,
+											[200] = 18557,
+											[275] = 31190,
+											[206] = 20113,
+											[287] = 32505,
+											[53] = 2838,
+											[212] = 20113,
+											[299] = 34060,
+											[218] = 21427,
+											[14] = 1450,
+											[56] = 7503,
+											[224] = 21427,
+											[230] = 22742,
+											[59] = 7503,
+											[236] = 22742,
+											[242] = 24056,
+											[62] = 7503,
+											[248] = 24056,
+											[254] = 27166,
+											[65] = 7503,
+											[131] = 8896,
+											[17] = 1450,
+											[68] = 7503,
+											[137] = 8896,
+											[71] = 7503,
+											[143] = 10211,
+											[74] = 7503,
+											[149] = 11525,
+											[251] = 24056,
+											[77] = 7503,
+											[155] = 11525,
+											[20] = 1450,
+											[80] = 7503,
+											[161] = 12980,
+											[278] = 31190,
+											[83] = 7503,
+											[167] = 12980,
+											[290] = 32505,
+											[86] = 7503,
+											[173] = 12980,
+											[260] = 31190,
+											[89] = 7503,
+											[179] = 15609,
+											[23] = 1450,
+											[92] = 7503,
+											[185] = 17002,
+											[26] = 1450,
+											[95] = 7503,
+											[191] = 17002,
+											[257] = 29875,
+											[98] = 7503,
+											[197] = 18557,
+											[269] = 31190,
+											[101] = 7503,
+											[203] = 18557,
+											[281] = 32505,
+											[104] = 7503,
+											[209] = 20113,
+											[293] = 34060,
+											[107] = 7503,
+											[215] = 20113,
+											[272] = 31190,
+											[110] = 7503,
+											[221] = 21427,
+											[266] = 31190,
+											[113] = 8896,
+											[227] = 21427,
+											[29] = 1450,
+											[116] = 8896,
+											[233] = 22742,
+											[284] = 32505,
+											[119] = 8896,
+											[239] = 24056,
+											[296] = 34060,
 										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_amt"] = 9,
-										["n_curado"] = 4512,
-										["totaldenied"] = 0,
-										["absorbed"] = 0,
-									},
-									[48982] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
+										["total"] = 34060,
+										["c_max"] = 3110,
+										["id"] = 47632,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 3110,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 20,
+										["extra"] = {
 										},
-										["n_max"] = 5196,
-										["targets"] = {
-											["Battlearm"] = 5196,
-										},
-										["n_min"] = 5196,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 5196,
-										["c_max"] = 0,
-										["id"] = 48982,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 5196,
-										["totaldenied"] = 0,
-										["absorbed"] = 0,
+										["spellschool"] = 32,
 									},
 								},
 								["tipo"] = 3,
@@ -10569,7 +11033,9 @@ _detalhes_database = {
 										["id"] = 49909,
 										["totalover"] = 0,
 										["targets"] = {
-											["Battlearm"] = 20,
+											["Snake"] = 21,
+											["Bloodlord Mandokir"] = 35584,
+											["Ohgan"] = 6272,
 										},
 										["counter"] = 2,
 									},
@@ -10607,7 +11073,7 @@ _detalhes_database = {
 										["targets"] = {
 											["Battlearm"] = 660,
 										},
-										["counter"] = 44,
+										["spellschool"] = 16,
 									},
 									[55262] = {
 										["total"] = 580,
@@ -10796,6 +11262,8 @@ _detalhes_database = {
 										["id"] = 45529,
 										["uptime"] = 101,
 										["targets"] = {
+											["Ohgan"] = 0,
+											["Bloodlord Mandokir"] = 0,
 										},
 										["appliedamt"] = 6,
 									},
@@ -11466,7 +11934,7 @@ _detalhes_database = {
 		["Player-4465-036510F3"] = "DAMAGER",
 		["Player-4465-03E83BD5"] = "DAMAGER",
 		["Player-4465-03BB6AEB"] = "DAMAGER",
-		["Player-4465-036C7471"] = "DAMAGER",
+		["Player-4465-02F8617A"] = "DAMAGER",
 		["Player-4465-01D6948A"] = "DAMAGER",
 		["Player-4701-03BAA7AF"] = "DAMAGER",
 		["Player-4701-03863EE1"] = "HEALER",
@@ -11488,7 +11956,7 @@ _detalhes_database = {
 		["Player-4464-025726FF"] = "DAMAGER",
 		["Player-4476-03923418"] = "HEALER",
 		["Player-4742-03ACF40C"] = "DAMAGER",
-		["Player-4749-037B555C"] = "DAMAGER",
+		["Player-4813-04AB6435"] = "HEALER",
 		["Player-4465-037BFEA0"] = "DAMAGER",
 		["Player-4465-02FF3E10"] = "DAMAGER",
 		["Player-4465-0354E0BB"] = "DAMAGER",
@@ -11516,7 +11984,7 @@ _detalhes_database = {
 		["Player-4465-03A1D5FD"] = "DAMAGER",
 		["Player-4465-03B3BAD9"] = "DAMAGER",
 		["Player-4477-04AD49BA"] = "DAMAGER",
-		["Player-4465-031AFC96"] = "DAMAGER",
+		["Player-4465-0416FF22"] = "DAMAGER",
 		["Player-4701-037D8C5A"] = "DAMAGER",
 		["Player-4465-026176B9"] = "TANK",
 		["Player-4813-039FD2CD"] = "DAMAGER",
@@ -11546,7 +12014,7 @@ _detalhes_database = {
 		["Player-4455-0259C254"] = "DAMAGER",
 		["Player-4464-0322DB19"] = "DAMAGER",
 		["Player-4701-037D8687"] = "DAMAGER",
-		["Player-4815-048D4C06"] = "DAMAGER",
+		["Player-4465-040DD034"] = "DAMAGER",
 		["Player-4701-03A43453"] = "DAMAGER",
 		["Player-4465-0252C34B"] = "DAMAGER",
 		["Player-4455-035343C4"] = "DAMAGER",
@@ -11561,7 +12029,7 @@ _detalhes_database = {
 		["Player-4813-04B75D48"] = "HEALER",
 		["Player-4465-03057213"] = "DAMAGER",
 		["Player-4477-044E06DC"] = "DAMAGER",
-		["Player-4455-04A4E2D9"] = "DAMAGER",
+		["Player-4701-039E5D51"] = "DAMAGER",
 		["Player-4701-039374D8"] = "DAMAGER",
 		["Player-4465-00998E8E"] = "DAMAGER",
 		["Player-4465-007FD805"] = "DAMAGER",
@@ -11581,7 +12049,7 @@ _detalhes_database = {
 		["Player-4465-0305A1B1"] = "DAMAGER",
 		["Player-4465-036C13A7"] = "TANK",
 		["Player-4465-02267B7F"] = "HEALER",
-		["Player-4465-0074B8E4"] = "DAMAGER",
+		["Player-4742-03A6B4D9"] = "DAMAGER",
 		["Player-4465-038E8A41"] = "HEALER",
 		["Player-4465-02E0CDBA"] = "DAMAGER",
 		["Player-4465-0305E3B8"] = "DAMAGER",
@@ -11675,9 +12143,9 @@ _detalhes_database = {
 		["Player-4465-03086B91"] = "DAMAGER",
 		["Player-4745-039C7541"] = "DAMAGER",
 		["Player-4465-02A155D9"] = "TANK",
-		["Player-4742-03A8F4FE"] = "DAMAGER",
+		["Player-4476-03737A4F"] = "DAMAGER",
 		["Player-4465-0242FD3B"] = "DAMAGER",
-		["Player-4465-02E63EAB"] = "DAMAGER",
+		["Player-4465-037577C3"] = "HEALER",
 		["Player-4465-03B94D19"] = "DAMAGER",
 		["Player-4465-02DFDB4D"] = "DAMAGER",
 		["Player-4465-02BC8143"] = "DAMAGER",
@@ -11695,7 +12163,7 @@ _detalhes_database = {
 		["Player-4464-0217819F"] = "DAMAGER",
 		["Player-4476-0446AD73"] = "DAMAGER",
 		["Player-4465-0393EE6F"] = "DAMAGER",
-		["Player-4701-0384B61F"] = "DAMAGER",
+		["Player-4465-02BD8E36"] = "DAMAGER",
 		["Player-4477-03AEE57F"] = "DAMAGER",
 		["Player-4464-02B6C7BE"] = "TANK",
 		["Player-4465-03A7A7A6"] = "TANK",
@@ -11730,7 +12198,7 @@ _detalhes_database = {
 		["Player-4465-03BA5EAC"] = "DAMAGER",
 		["Player-4813-028F29F3"] = "TANK",
 		["Player-4464-02640657"] = "DAMAGER",
-		["Player-4455-04862119"] = "DAMAGER",
+		["Player-4477-04AA219B"] = "DAMAGER",
 		["Player-4816-04909E7D"] = "TANK",
 		["Player-4465-02F87342"] = "HEALER",
 		["Player-4465-036AE4E6"] = "DAMAGER",
@@ -11755,7 +12223,7 @@ _detalhes_database = {
 		["Player-4465-03095725"] = "DAMAGER",
 		["Player-4477-0474A20D"] = "TANK",
 		["Player-4465-0402BF19"] = "DAMAGER",
-		["Player-4465-02701995"] = "HEALER",
+		["Player-4456-04A5E035"] = "DAMAGER",
 		["Player-4742-03A2718D"] = "DAMAGER",
 		["Player-4815-04B64E3A"] = "DAMAGER",
 		["Player-4465-0304427C"] = "DAMAGER",
@@ -11786,7 +12254,7 @@ _detalhes_database = {
 		["Player-4742-038F4967"] = "DAMAGER",
 		["Player-4465-03B5A4CE"] = "DAMAGER",
 		["Player-4465-03E9420E"] = "DAMAGER",
-		["Player-4701-0317F618"] = "DAMAGER",
+		["Player-4464-039EC2B2"] = "TANK",
 		["Player-4703-03A7806B"] = "DAMAGER",
 		["Player-4742-03AAC83D"] = "DAMAGER",
 		["Player-4742-03AB5F31"] = "HEALER",
@@ -11804,7 +12272,7 @@ _detalhes_database = {
 		["Player-4455-04A6E16A"] = "DAMAGER",
 		["Player-4813-0493B229"] = "TANK",
 		["Player-4465-0304700C"] = "DAMAGER",
-		["Player-4465-0251FFE3"] = "HEALER",
+		["Player-4465-03ACF836"] = "TANK",
 		["Player-4465-02C07D89"] = "DAMAGER",
 		["Player-4477-04ADCA35"] = "DAMAGER",
 		["Player-4745-03A0596B"] = "DAMAGER",
@@ -12076,7 +12544,7 @@ _detalhes_database = {
 		["Player-4476-03737A4F"] = "DAMAGER",
 		["Player-4465-04173ECE"] = "HEALER",
 		["Player-4465-011B96A9"] = "DAMAGER",
-		["Player-4745-039F36B1"] = "DAMAGER",
+		["Player-4465-02538066"] = "TANK",
 		["Player-4745-03727E39"] = "HEALER",
 		["Player-4813-03BD7394"] = "DAMAGER",
 		["Player-4465-037577C3"] = "HEALER",
@@ -12182,7 +12650,7 @@ _detalhes_database = {
 		["Player-4465-03927CE8"] = "TANK",
 		["Player-4465-040D9862"] = "DAMAGER",
 		["Player-4476-04ADEBB2"] = "DAMAGER",
-		["Player-4815-04C4B997"] = "DAMAGER",
+		["Player-4465-03AA7519"] = "TANK",
 		["Player-4745-0398CA81"] = "TANK",
 		["Player-4465-04147FD4"] = "TANK",
 		["Player-4742-03A9B0B8"] = "DAMAGER",
@@ -12258,9 +12726,9 @@ _detalhes_database = {
 		["Player-4811-03AE22EB"] = "DAMAGER",
 		["Player-4465-0279FA72"] = "HEALER",
 		["Player-4476-04CA9CA8"] = "DAMAGER",
-		["Player-4465-00ED38AA"] = "DAMAGER",
+		["Player-4465-021D527B"] = "DAMAGER",
 		["Player-4464-01E848F6"] = "DAMAGER",
-		["Player-4476-043D2A03"] = "TANK",
+		["Player-4465-02FD343C"] = "DAMAGER",
 		["Player-4465-0303AF5C"] = "DAMAGER",
 		["Player-4477-046B1A4F"] = "TANK",
 		["Player-4465-02423AAA"] = "DAMAGER",
@@ -12343,7 +12811,7 @@ _detalhes_database = {
 		["Player-4465-00991957"] = "HEALER",
 		["Player-4465-013F76D5"] = "DAMAGER",
 		["Player-4477-04A89E35"] = "DAMAGER",
-		["Player-4454-036235DA"] = "DAMAGER",
+		["Player-4465-03B31751"] = "HEALER",
 		["Player-4742-03A08348"] = "DAMAGER",
 		["Player-4465-03032401"] = "TANK",
 		["Player-4465-036EA09C"] = "DAMAGER",
@@ -12426,9 +12894,9 @@ _detalhes_database = {
 		["Player-4465-039104E0"] = "TANK",
 		["Player-4701-0388DA1C"] = "TANK",
 		["Player-4464-03AB7990"] = "DAMAGER",
+		["Player-4465-02F9490B"] = "HEALER",
 		["Player-4465-0306E244"] = "DAMAGER",
 		["Player-4701-0331E81B"] = "DAMAGER",
-		["Player-4465-02F9490B"] = "HEALER",
 		["Player-4476-043F8A81"] = "TANK",
 		["Player-4465-04004B77"] = "DAMAGER",
 		["Player-4455-04A7A689"] = "HEALER",
@@ -12509,7 +12977,7 @@ _detalhes_database = {
 		["Player-4454-04A5C88C"] = "DAMAGER",
 		["Player-4464-0375088A"] = "DAMAGER",
 		["Player-4464-0374C98E"] = "DAMAGER",
-		["Player-4745-03A2F706"] = "DAMAGER",
+		["Player-4701-03A70892"] = "TANK",
 		["Player-4465-0374C307"] = "DAMAGER",
 		["Player-4742-03A120DF"] = "HEALER",
 		["Player-4465-0275BAA4"] = "TANK",
@@ -12750,8 +13218,8 @@ _detalhes_database = {
 		["Player-4476-03FFB5D7"] = "DAMAGER",
 		["Player-4477-0365BF94"] = "TANK",
 		["Player-4477-01728B0F"] = "DAMAGER",
+		["Player-4745-03A2F706"] = "DAMAGER",
 		["Player-4701-039E5EEB"] = "TANK",
-		["Player-4701-03A70892"] = "TANK",
 		["Player-4465-0048038A"] = "DAMAGER",
 		["Player-4476-039B3C62"] = "DAMAGER",
 		["Player-4742-03A1133A"] = "TANK",
@@ -12942,7 +13410,7 @@ _detalhes_database = {
 		["Player-4701-039CCC01"] = "DAMAGER",
 		["Player-4464-02BF1348"] = "DAMAGER",
 		["Player-4813-01D7CB42"] = "DAMAGER",
-		["Player-4465-03AA7519"] = "TANK",
+		["Player-4465-01993C43"] = "DAMAGER",
 		["Player-4813-04A7D9ED"] = "DAMAGER",
 		["Player-4465-0395B54D"] = "DAMAGER",
 		["Player-4455-0487034C"] = "HEALER",
@@ -13021,7 +13489,7 @@ _detalhes_database = {
 		["Player-4466-02BFC16D"] = "DAMAGER",
 		["Player-4465-036E0393"] = "TANK",
 		["Player-4476-032FC61F"] = "TANK",
-		["Player-4465-038C1D0E"] = "TANK",
+		["Player-4477-01D63F16"] = "DAMAGER",
 		["Player-4464-0385A1F9"] = "DAMAGER",
 		["Player-4815-0493145C"] = "TANK",
 	},

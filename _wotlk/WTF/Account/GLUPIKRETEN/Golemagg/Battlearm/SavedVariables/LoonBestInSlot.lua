@@ -48,8 +48,9 @@ LBISSettings = {
 	},
 	["ShowPriority"] = true,
 	["SelectedRank"] = "All",
-	["ShowCustom"] = false,
+	["SelectedSlot"] = "Back",
 	["SelectedSourceType"] = "All",
+	["ShowCustom"] = false,
 	["PriorityList"] = {
 	},
 	["SelectedSlot"] = "Waist",

@@ -710,13 +710,13 @@ AtlasLootClassicDB = {
 			[40817] = "EmblemOfHeroism:45",
 			[33688] = "honor:17100",
 			[28129] = "honor:3800",
-			[42128] = "honor:43400",
+			[28241] = "honor:2280",
 			[42991] = "EmblemOfHeroism:50",
 			[32793] = "honor:5320",
 			[42032] = "honor:33180",
 			[42064] = "honor:33180",
-			[28241] = "honor:2280",
 			[33944] = "honor:5130",
+			[42128] = "honor:43400",
 			[34999] = "honor:9500",
 			[40719] = "EmblemOfValor:25",
 			[35320] = "honor:5130",
@@ -1102,6 +1102,47 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
+			["GUI"] = {
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					-187.8571319580078, -- [4]
+					190.5237579345703, -- [5]
+				},
+				["selected"] = {
+					nil, -- [1]
+					"NaxxramasWrath", -- [2]
+					3, -- [3]
+					6, -- [4]
+					0, -- [5]
+				},
+			},
+			["showCompanionLearnedInfo"] = false,
+			["Addons"] = {
+				["Favourites"] = {
+					["showListInTT"] = false,
+				},
+			},
+			["Tooltip"] = {
+				["useGameTooltip"] = false,
+			},
+			["showItemLvlInTT"] = false,
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+		},
+		["Miqa - Golemagg"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"AhnKahet", -- [2]
+					[5] = 0,
+				},
+			},
+		},
+		["Vermin - Golemagg"] = {
 			["showCompanionLearnedInfo"] = false,
 			["minimap"] = {
 				["shown"] = false,
@@ -1300,6 +1341,7 @@ AtlasLootClassicDB = {
 				["shown"] = false,
 				["hide"] = true,
 			},
+			["showItemLvlInTT"] = false,
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
 			["minimap"] = {

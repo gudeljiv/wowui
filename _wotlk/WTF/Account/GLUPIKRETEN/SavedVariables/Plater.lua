@@ -4980,9 +4980,6 @@ PlaterDB = {
 			["source"] = "Lady Sylvanas Windrunner",
 			["npcID"] = 31651,
 		},
-		[32903] = {
-			["npcID"] = 21515,
-		},
 		[36582] = {
 			["npcID"] = 19735,
 		},
@@ -5649,8 +5646,11 @@ PlaterDB = {
 			["event"] = "SPELL_CAST_START",
 			["npcID"] = 28120,
 		},
-		[12745] = {
-			["npcID"] = 7728,
+		[29576] = {
+			["encounterName"] = "Attumen the Huntsman",
+			["event"] = "SPELL_CAST_START",
+			["source"] = "Spectral Sentry",
+			["npcID"] = 16424,
 		},
 		[6979] = {
 			["npcID"] = 4281,

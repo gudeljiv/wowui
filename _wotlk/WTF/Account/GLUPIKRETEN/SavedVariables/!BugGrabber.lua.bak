@@ -3959,7 +3959,7 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [511]
 		{
-			["message"] = "[string \"RotationFrame4:SetBackdropColor(1¸0,0.5)\"]:1: ')' expected near '�'",
+			["message"] = "[string \"RotationFrame4:SetBackdropColor(1¸0,0.5)\"]:1: ')' expected near '�'",
 			["time"] = "2022/10/30 20:41:28",
 			["locals"] = "(*temporary) = \"RotationFrame4:SetBackdropColor(1¸0,0.5)\"\n",
 			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",

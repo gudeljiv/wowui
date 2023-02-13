@@ -10,10 +10,10 @@ ExtendedCharacterStats = {
 		},
 		["statsWindowClosedOnOpen"] = false,
 		["addColorsToStatTexts"] = true,
-		["statFontSize"] = 10,
-		["showQualityColors"] = false,
 		["headerFontSize"] = 11,
+		["showQualityColors"] = false,
 		["profileVersion"] = 16,
+		["statFontSize"] = 10,
 	},
 	["profile"] = {
 		["ranged"] = {
@@ -56,7 +56,6 @@ ExtendedCharacterStats = {
 					["refName"] = "RangedHitBossLevel",
 					["textColor"] = "85bb5c",
 				},
-				["isSubGroup"] = true,
 				["display"] = true,
 				["text"] = "Hit",
 				["sameLevel"] = {
@@ -233,6 +232,7 @@ ExtendedCharacterStats = {
 				["refName"] = "MeleeHasteRating",
 				["textColor"] = "c8a600",
 			},
+			["text"] = "Melee",
 			["hit"] = {
 				["bossLevel"] = {
 					["statColor"] = "558b2f",
@@ -241,7 +241,6 @@ ExtendedCharacterStats = {
 					["refName"] = "MeleeHitBossLevel",
 					["textColor"] = "85bb5c",
 				},
-				["isSubGroup"] = true,
 				["display"] = true,
 				["text"] = "Hit",
 				["sameLevel"] = {
@@ -460,7 +459,6 @@ ExtendedCharacterStats = {
 					["refName"] = "SpellHitBossLevel",
 					["textColor"] = "85bb5c",
 				},
-				["isSubGroup"] = true,
 				["display"] = true,
 				["text"] = "Hit",
 				["sameLevel"] = {

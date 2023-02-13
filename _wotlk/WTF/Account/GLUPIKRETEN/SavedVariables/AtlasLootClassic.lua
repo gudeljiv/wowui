@@ -657,13 +657,13 @@ AtlasLootClassicDB = {
 			[40817] = "EmblemOfHeroism:45",
 			[33688] = "honor:17100",
 			[28129] = "honor:3800",
-			[28241] = "honor:2280",
+			[33944] = "honor:5130",
 			[42991] = "EmblemOfHeroism:50",
 			[32793] = "honor:5320",
 			[42032] = "honor:33180",
 			[42064] = "honor:33180",
-			[33944] = "honor:5130",
 			[42128] = "honor:43400",
+			[28241] = "honor:2280",
 			[34999] = "honor:9500",
 			[40719] = "EmblemOfValor:25",
 			[28929] = "honor:3800",
@@ -1091,6 +1091,17 @@ AtlasLootClassicDB = {
 				["shown"] = false,
 				["hide"] = true,
 			},
+		},
+		["Tudum - Jin'do"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"AhnKahet", -- [2]
+					[5] = 0,
+				},
+			},
+		},
+		["Tandaram - Jin'do"] = {
 		},
 		["Tudum - Jin'do"] = {
 			["GUI"] = {
