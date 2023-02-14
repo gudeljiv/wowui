@@ -271,8 +271,8 @@ function QuestieQuestBlacklist:Load()
         [8898] = true,
         [8899] = true,
         [9029] = true,
-        [8981] = true,
-        [8993] = true,
+        [8981] = QuestieCorrections.WOTLK_ONLY, --removed in wotlk
+        [8993] = QuestieCorrections.WOTLK_ONLY, --removed in wotlk
         [8900] = true,
         [8901] = true,
         [8902] = true,
@@ -1117,7 +1117,7 @@ function QuestieQuestBlacklist:Load()
 
         ----- Wotlk -------------- Wotlk quests --------------- Wotlk -----
         ----- Wotlk ------------- starting here -------------- Wotlk -----
-
+        
         [10884] = QuestieCorrections.WOTLK_ONLY, -- no longer exists in wotlk
         [10885] = QuestieCorrections.WOTLK_ONLY, -- no longer exists in wotlk
         [10888] = QuestieCorrections.WOTLK_ONLY, -- Got replaced by 13430
@@ -1143,6 +1143,7 @@ function QuestieQuestBlacklist:Load()
         [12780] = true, -- Not in the game
         [12590] = true, -- Not in the game
         [11461] = true, -- Not in the game
+        [12911] = true, -- Not in the game
         [13150] = true, -- Not in the game
         [13317] = true, -- Not in the game
         [13374] = true, -- Not in the game
@@ -1173,11 +1174,22 @@ function QuestieQuestBlacklist:Load()
         [12834] = true, -- Not in the game
         [12825] = true, -- Not in the game
         [12890] = true, -- Not in the game
+        [12990] = true, -- Not in the game
+        [13183] = true, -- Not in the game
         [13184] = true, -- Not in the game
         [13176] = true, -- Not in the game
         [13173] = true, -- Not in the game
         [13175] = true, -- Not in the game
         [14203] = true, -- Not in the game
+        
+        [8367] = QuestieCorrections.WOTLK_ONLY, -- pvp marks removed in wotlk
+        [8371] = QuestieCorrections.WOTLK_ONLY, -- pvp marks removed in wotlk
+        [8385] = QuestieCorrections.WOTLK_ONLY, -- pvp marks removed in wotlk
+        [8388] = QuestieCorrections.WOTLK_ONLY, -- pvp marks removed in wotlk
+        [13475] = QuestieCorrections.WOTLK_ONLY, -- pvp marks removed in wotlk
+        [13476] = QuestieCorrections.WOTLK_ONLY, -- pvp marks removed in wotlk
+        [13477] = QuestieCorrections.WOTLK_ONLY, -- pvp marks removed in wotlk
+        [13478] = QuestieCorrections.WOTLK_ONLY, -- pvp marks removed in wotlk
 
         [6804] = QuestieCorrections.WOTLK_ONLY,
         [7737] = QuestieCorrections.WOTLK_ONLY, -- replaced by 13662 in wotlk
@@ -1194,6 +1206,27 @@ function QuestieQuestBlacklist:Load()
         [9341] = QuestieCorrections.WOTLK_ONLY,
         [9343] = QuestieCorrections.WOTLK_ONLY,
         [10445] = QuestieCorrections.WOTLK_ONLY, -- replaced by 13432 in wotlk
+        
+        -- Old Naxx quests (Naxx40 goes away in wotlk)
+        [9120] = QuestieCorrections.WOTLK_ONLY, -- The Fall of Kel'Thuzad
+        [9229] = QuestieCorrections.WOTLK_ONLY, -- The Fate of Ramaladni
+        [9230] = QuestieCorrections.WOTLK_ONLY, -- Ramaladni's Icy Grasp
+        [9232] = QuestieCorrections.WOTLK_ONLY, -- The Only Song I Know...
+        [9233] = QuestieCorrections.WOTLK_ONLY, -- Omarion's Handbook
+        [9234] = QuestieCorrections.WOTLK_ONLY, -- Icebane Gauntlets
+        [9235] = QuestieCorrections.WOTLK_ONLY, -- Icebane Bracers
+        [9236] = QuestieCorrections.WOTLK_ONLY, -- Icebane Breastplate
+        [9237] = QuestieCorrections.WOTLK_ONLY, -- Glacial Cloak
+        [9238] = QuestieCorrections.WOTLK_ONLY, -- Glacial Wrists
+        [9239] = QuestieCorrections.WOTLK_ONLY, -- Glacial Gloves
+        [9240] = QuestieCorrections.WOTLK_ONLY, -- Glacial Vest
+        [9241] = QuestieCorrections.WOTLK_ONLY, -- Polar Bracers
+        [9242] = QuestieCorrections.WOTLK_ONLY, -- Polar Gloves
+        [9243] = QuestieCorrections.WOTLK_ONLY, -- Polar Tunic
+        [9244] = QuestieCorrections.WOTLK_ONLY, -- Icy Scale Bracers
+        [9245] = QuestieCorrections.WOTLK_ONLY, -- Icy Scale Gauntlets
+        [9246] = QuestieCorrections.WOTLK_ONLY, -- Icy Scale Breastplate
+
 
         -- Scourge invasion
         [12616] = true,

@@ -385,11 +385,11 @@ tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 8903}) -- Dangerous Lov
 tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 8904}) -- Dangerous Love
 tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 8979}) -- Fenstad's Hunch
 tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 8980}) -- Zinge's Assessment
-tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 8981}) -- Gift Giving
+tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 8981, nil, nil, QuestieCorrections.CLASSIC_ONLY}) -- Gift Giving
 tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 8982}) -- Tracing the Source
 tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 8983}) -- Tracing the Source
 tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 8984}) -- The Source Revealed
-tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 8993}) -- Gift Giving
+tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 8993, nil, nil, QuestieCorrections.CLASSIC_ONLY}) -- Gift Giving
 tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 9024}) -- Aristan's Hunch
 tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 9025}) -- Morgan's Discovery
 tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 9026}) -- Tracing the Source
@@ -858,7 +858,10 @@ tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24615}) -- A Gift for t
 tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24629}) -- A Perfect Puff of Perfume
 tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24635}) -- A Cloudlet of Classy Cologne
 tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24636}) -- Bonbon Blitz
+tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24536}) -- Something Stinks
 tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24655}) -- Something Stinks
+tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24541}) -- Pilfering Perfume
+tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24656}) -- Pilfering Perfume
 tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24804}) -- Uncommon Scents
 
 tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24576}) -- A Friendly Chat...
@@ -866,13 +869,37 @@ tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24657}) -- A Friendly C
 
 -- These seem to be breadcrumbs to "You've Been Served" (14488) but aren't available
 -- Might either not be in game at all or guarded behind finishing one of the two "A Friendly Chat..." quests above
---tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24792}) -- Man on the Inside
---tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24793}) -- Man on the Inside
+tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24792}) -- Man on the Inside
+tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24793}) -- Man on the Inside
 
 tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24848}) -- Fireworks At The Gilded Rose
 tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24849}) -- Hot On The Trail
 tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24850}) -- Snivel's Sweetheart
 tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24851}) -- Hot On The Trail
+
+-- These "Crushing the Crown" quests are dailies, handed out based on the player's current level.
+-- The Durotar + Elwynn quests are available at level 5, with each successive quest being available
+-- at 14, 23, 32, 41, 51, 61, and 71, respectively. They are exclusive to each other; once you hit 14,
+-- you can no longer pick up the level 5 quest. However, since we have no way of filtering quests based
+-- on a "maximum" level, we simply hide all of the higher level ones, which will be picked up automatically
+-- instead of the level 5 one. Users can only tell the difference if they're watching quest IDs.
+-- TODO: If we implement maxLevel, these hacky workarounds should be implemented properly.
+tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24638}) -- Crushing the Crown (Durotar)
+--tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24645}) -- Crushing the Crown (Ambermill)
+--tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24647}) -- Crushing the Crown (Hillsbrad H)
+--tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24648}) -- Crushing the Crown (Theramore H)
+--tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24649}) -- Crushing the Crown (Aerie Peak H)
+--tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24650}) -- Crushing the Crown (Everlook H)
+--tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24651}) -- Crushing the Crown (Shattrath H)
+--tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24652}) -- Crushing the Crown (Crystalsong H)
+tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24658}) -- Crushing the Crown (Elwynn)
+--tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24659}) -- Crushing the Crown (Darkshore)
+--tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24660}) -- Crushing the Crown (Hillsbrad A)
+--tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24662}) -- Crushing the Crown (Theramore A)
+--tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24663}) -- Crushing the Crown (Aerie Peak A)
+--tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24664}) -- Crushing the Crown (Everlook A)
+--tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24665}) -- Crushing the Crown (Shattrath A)
+--tinsert(QuestieEvent.eventQuests, {"Love is in the Air", 24666}) -- Crushing the Crown (Crystalsong A)
 
 tinsert(QuestieEvent.eventQuests, {"Children's Week", 13926}) -- Little Orphan Roo Of The Oracles
 tinsert(QuestieEvent.eventQuests, {"Children's Week", 13927}) -- Little Orphan Kekek Of The Wolvar

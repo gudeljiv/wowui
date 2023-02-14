@@ -137,7 +137,8 @@ function Auctioneer:_init()
     local firstItem = true;
     Events:register("AuctioneerItemReceived", "GL.ITEM_RECEIVED", function (_, Details)
         -- We don't want to automatically add loot
-        if (not Settings:get("GDKP.addDropsToQueue")
+        if (not DB:get("GDKP.activeSession", false)
+            or not Settings:get("GDKP.addDropsToQueue")
             or GL.Settings:get("GDKP.disableQueues")
         ) then
             return;
@@ -247,12 +248,19 @@ function Auctioneer:addToQueue(itemLink, identifier, open)
         open = true;
     end
 
+    -- Make sure the item actually exists
+    local itemID = GL:getItemIDFromLink(itemLink);
+    if (not itemID or not GetItemInfoInstant(itemID)) then
+        return;
+    end
+
     AuctioneerUI = AuctioneerUI or GL.Interface.GDKP.Auctioneer;
 
     local Queue = AuctioneerUI:getQueueWindow(true);
-    Queue:addItemByLink(itemLink, identifier, function (newIdentifier)
-        Auction:addToQueue(itemLink, identifier or newIdentifier);
-    end);
+    identifier = identifier or GL:stringHash(GetTime() .. itemLink) .. math.random(1, 1000);
+
+    Auction:addToQueue(itemLink, identifier);
+    Queue:addItemByLink(itemLink, identifier);
 
     if (open) then
         AuctioneerUI:open();
@@ -281,25 +289,6 @@ function Auctioneer:allowedToBroadcast(playerID)
 
     return GL.Player:isMasterLooter(playerID)
         or GL.Player:hasAssist(playerID);
-end
-
----@return void
-function Auctioneer:populateQueueFromUI()
-    GL:debug("Auctioneer:populateQueueFromUI");
-
-    AuctioneerUI = AuctioneerUI or GL.Interface.GDKP.Auctioneer;
-    local ItemRows = AuctioneerUI.ItemRows;
-
-    if (not ItemRows) then
-        return;
-    end
-
-    Auction.Queue = {};
-    for _, Row in pairs(ItemRows or {}) do
-        if (Row._itemLink and Row._identifier) then
-            Auction:addToQueue(Row._itemLink, Row._identifier);
-        end
-    end
 end
 
 ---@param itemLink string
@@ -383,8 +372,15 @@ function Auctioneer:popFromQueue(force)
 
     AuctioneerUI = AuctioneerUI or GL.Interface.GDKP.Auctioneer;
 
-    for key, Row in pairs(AuctioneerUI.ItemRows or {}) do
-        if (Row._identifier and Row._itemLink) then
+    local SortedQueue = GL:tableValues(Auction.Queue);
+    table.sort(SortedQueue, function (a, b)
+        return a.order < b.order;
+    end);
+
+    for _, QueuedItem in pairs(SortedQueue or {}) do
+        local Row = AuctioneerUI.ItemRows[QueuedItem.identifier];
+
+        if (Row and Row._identifier and Row._itemLink) then
             local minimum, increment = false, false;
 
             if (Row.MinInput and Row.MinInput.GetText) then
@@ -397,11 +393,11 @@ function Auctioneer:popFromQueue(force)
 
             self:setItemByLink(Row._itemLink, true, minimum, increment);
 
-            Auction:removeFromQueue(Row._identifier);
+            Auction:removeFromQueue(QueuedItem.identifier);
             AuctioneerUI:deleteRowFromQueue(Row);
             break;
         else
-            AuctioneerUI.ItemRows[key] = nil;
+            AuctioneerUI.ItemRows[QueuedItem.identifier] = nil;
         end
     end
 end
@@ -503,6 +499,13 @@ function Auctioneer:timeRanOut()
             -- This is to make sure that we only start a new auction after
             -- the item was successfully marked as disenchanted
             if (actionWhenNoBidsArePresent == "DISENCHANT") then
+                local quality = tonumber(GL:getItemQualityFromLink(Auction.Current.itemLink));
+
+                if (quality and quality >= 5) then
+                    GL:warning("No bids on Legendary+ item detected, continue manually!");
+                    return;
+                end
+
                 return GL.PackMule:disenchant(Auction.Current.itemLink, true, function ()
                     next();
                 end);

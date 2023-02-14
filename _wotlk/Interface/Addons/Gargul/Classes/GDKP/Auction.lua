@@ -33,7 +33,7 @@ GDKP.Auction = {
     lastBidReceivedAt = 0,
     maxBid = nil,
     raidWarningThrottler = nil,
-    waitingForReshedule = false,
+    waitingForReschedule = false,
     waitingForStart = false,
 
     AutoBidTimer = nil,
@@ -130,12 +130,9 @@ function Auction:_initializeQueue()
         return;
     end
 
-    local QueueCopy = {};
-    for _, Entry in pairs(self.Queue) do
-        tinsert(QueueCopy, Entry);
-    end
-    table.sort(QueueCopy, function (a, b)
-        return a.identifier < b.identifier;
+    local SortedQueue = GL:tableValues(Auction.Queue);
+    table.sort(SortedQueue, function (a, b)
+        return a.order < b.order;
     end);
 
     local i = 1;
@@ -144,11 +141,11 @@ function Auction:_initializeQueue()
     -- Add items in intervals to alleviate UI/performance strain
     QueueAddTimer = GL.Ace:ScheduleRepeatingTimer(function ()
         GL:debug("Run Auction._initializeQueue");
-        local Queued = QueueCopy[i];
+        local Queued = SortedQueue[i];
         if (not Queued) then
             GL:debug("Cancel Auction._initializeQueue");
             GL.Ace:CancelTimer(QueueAddTimer);
-            QueueCopy = nil;
+            SortedQueue = nil;
 
             GL.Events:fire("GL.GDKP_QUEUE_UPDATED");
             return;
@@ -494,11 +491,9 @@ function Auction:sanitize(Instance)
 
     --[[ Auction.CreatedBy ]]
     if (type (Instance.CreatedBy.class) ~= "string"
-        --or not Constants.Classes[Instance.CreatedBy.class]
         or type (Instance.CreatedBy.name) ~= "string"
         or GL:empty(Instance.CreatedBy.name)
         or type (Instance.CreatedBy.race) ~= "string"
-        --or not Constants.Races[Instance.CreatedBy.race]
         or type (Instance.CreatedBy.uuid) ~= "string"
         or not string.match(Instance.CreatedBy.uuid, "^Player%-[0-9]+%-[A-Z0-9]+$")
         or type (Instance.CreatedBy.realm) ~= "string"
@@ -560,11 +555,9 @@ function Auction:sanitize(Instance)
 
             if (type (Bidder.class) ~= "string"
                 ---@todo: issue here, got deathknight, constant is death_knight
-                --or not Constants.Classes[Bidder.class]
                 or type (Bidder.name) ~= "string"
                 or GL:empty(Bidder.name)
                 or type (Bidder.race) ~= "string"
-                --or not Constants.Races[Bidder.race]
                 or type (Bidder.uuid) ~= "string"
                 or not string.match(Bidder.uuid, "^Player%-[0-9]+%-[A-Z0-9]+$")
                 or type (Bidder.realm) ~= "string"
@@ -612,11 +605,9 @@ function Auction:sanitize(Instance)
         if (type(Winner) ~= "table"
             or (not GL:empty(Winner.race) and (
                 type(Winner.race) ~= "string"
-                --or not Constants.Races[Winner.race]
             ))
             or (not GL:empty(Winner.class) and (
                 type(Winner.class) ~= "string"
-                --or not Constants.Classes[Winner.class]
             ))
             or (not GL:empty(Winner.uuid) and (
                 type(Winner.uuid) ~= "string"
@@ -838,28 +829,108 @@ function Auction:addToQueue(itemLink, identifier)
     local addedAt = GetTime();
     local PerItemSettings = GDKP:settingsForItemID(GL:getItemIDFromLink(itemLink));
     self.Queue[identifier] = {
-        itemLink = itemLink,
-        itemID = itemID,
-        minimumBid = PerItemSettings.minimum,
-        increment = PerItemSettings.increment,
         addedAt = addedAt,
         identifier = identifier,
+        increment = PerItemSettings.increment,
+        itemID = itemID,
+        itemLink = itemLink,
+        minimumBid = PerItemSettings.minimum,
+        order = GL:count(self.Queue) + 1,
     };
 
     self:broadcastQueue();
 end
 
 ---@param checksum string
----@return void
+---@param toChecksum string
+---@return boolean
+function Auction:reorderQueueItem(checksum, toChecksum)
+    GL:debug("Auction:reorderQueueItem");
+
+    local QueuedItem = self.Queue[checksum];
+    local ToItem = self.Queue[toChecksum];
+
+    if (not QueuedItem or not ToItem) then
+        return false;
+    end
+
+    local to = ToItem.order;
+    local originalPosition = QueuedItem.order;
+    if (to == originalPosition) then
+        return false;
+    end
+
+    if (originalPosition < to) then
+        to = to + 1;
+    end
+
+    for key, Entry in pairs(self.Queue or {}) do
+
+        -- Item moved down the list
+        if (originalPosition < to) then
+            if (Entry.order > originalPosition
+                and Entry.order < to
+            ) then
+                Entry.order = Entry.order - 1;
+            end
+
+        -- Item moved up the list
+        else
+            if (Entry.order >= to
+                and Entry.order < originalPosition
+            ) then
+                Entry.order = Entry.order + 1;
+            end
+        end
+
+        self.Queue[key] = Entry;
+    end
+
+    if (originalPosition < to) then
+        self.Queue[checksum].order = to - 1;
+    else
+        self.Queue[checksum].order = to;
+    end
+
+    self:broadcastQueue();
+
+    return true;
+end
+
+---@param position number
+---@return table
+function Auction:QueuedItemByPosition(position)
+    GL:debug("Auction:QueuedItemByPosition");
+
+    for _, Entry in pairs(self.Queue or {}) do
+        if (Entry.order == position) then
+            return Entry;
+        end
+    end
+end
+
+---@param checksum string
+---@return boolean
 function Auction:removeFromQueue(checksum)
     GL:debug("Auction:removeFromQueue");
 
     checksum = tostring(checksum or 0);
-
-    if (self.Queue[checksum]) then
-        self.Queue[checksum] = nil;
-        self:broadcastQueue();
+    if (not self.Queue[checksum]) then
+        return false;
     end
+
+    local removeOrder = self.Queue[checksum].order;
+    for key, Entry in pairs(self.Queue or {}) do
+        if (Entry.order > removeOrder) then
+            Entry.order = Entry.order - 1;
+            self.Queue[key] = Entry;
+        end
+    end
+
+    self.Queue[checksum] = nil;
+    self:broadcastQueue();
+
+    return true;
 end
 
 ---@return void
@@ -876,15 +947,27 @@ function Auction:sanitizeQueue()
 
     local Sanitized = {};
 
-    for checksum, QueuedItem in pairs(self.Queue or {}) do
+    for _, QueuedItem in pairs(self.Queue or {}) do
         if (type(QueuedItem) == "table"
             and type(QueuedItem.itemLink) == "string"
         ) then
-            Sanitized[checksum] = QueuedItem;
+            tinsert(Sanitized, QueuedItem);
         end
     end
 
-    self.Queue = Sanitized;
+    --[[ MAKE SURE THE ORDER IS INCREMENTAL ]]
+    table.sort(Sanitized, function (a, b)
+        return a.order < b.order;
+    end);
+
+    self.Queue = {};
+    local order = 1;
+    for _, Queued in pairs(Sanitized or {}) do
+        Queued.order = order;
+        self.Queue[Queued.identifier] = Queued;
+
+        order = order + 1;
+    end
 end
 
 ---@return void
@@ -949,15 +1032,18 @@ end
 function Auction:announceStart(itemLink, minimumBid, minimumIncrement, duration, antiSnipe)
     GL:debug("GDKP.Auction:announceStart");
 
-    if (self.waitingForStart) then
+    if (self.waitingForStart
+        and GetServerTime() - self.waitingForStart < 6
+    ) then
         return;
     end
 
     if (not Auctioneer:allowedToBroadcast()) then
+        self.waitingForStart = false;
         return;
     end
 
-    self.waitingForStart = true;
+    self.waitingForStart = GetServerTime();
     local Bids = self.Current.Bids;
     local TopBid = self.Current.TopBid;
     duration = tonumber(duration) or 0;
@@ -973,19 +1059,19 @@ function Auction:announceStart(itemLink, minimumBid, minimumIncrement, duration,
         or minimumIncrement < 0
     ) then
         GL:warning("Invalid data provided for GDKP auction start!");
+        self.waitingForStart = false;
         return false;
     end
 
     local itemID = GL:getItemIDFromLink(itemLink) or 0;
     if (itemID < 1 or not GetItemInfoInstant(itemID)) then
         GL:warning("Invalid item provided for GDKP auction start!");
+        self.waitingForStart = false;
         return false;
     end
 
     self.inProgress = true;
-
     self:listenForBids();
-
     self:broadcastQueue(true);
 
     -- This is still the same item, use the previous highest bid as the starting point
@@ -1024,9 +1110,11 @@ function Auction:announceStop(forceStop)
     forceStop = GL:toboolean(forceStop);
 
     -- Looks like we had a last-second bid and are awaiting an extension
-    if (self.waitingForReshedule) then
+    if (self.waitingForReschedule) then
         return;
     end
+
+    self.waitingForStart = false;
 
     -- Do a final check to see if we're allowed to stop now
     if (not forceStop
@@ -1034,7 +1122,7 @@ function Auction:announceStop(forceStop)
         and self.Current.antiSnipe
         and self.Current.antiSnipe > 0
         and GetTime() - self.lastBidReceivedAt <= self.Current.antiSnipe
-        and not self.waitingForReshedule
+        and not self.waitingForReschedule
     ) then
         self:announceExtension(self.Current.antiSnipe);
         return;
@@ -1056,7 +1144,7 @@ end
 function Auction:announceExtension(time)
     GL:debug("GDKP.Auction:announceExtension");
 
-    self.waitingForReshedule = true;
+    self.waitingForReschedule = GetServerTime();
 
     time = tonumber(time) or 0
     if (time < 1) then
@@ -1088,7 +1176,7 @@ end
 function Auction:announceShortening(time)
     GL:debug("GDKP.Auction:announceShortening");
 
-    self.waitingForReshedule = true;
+    self.waitingForReschedule = GetServerTime();
 
     time = tonumber(time) or 0
     if (time < 1) then
@@ -1125,7 +1213,7 @@ function Auction:extend(CommMessage)
 
     local time = tonumber(CommMessage.content) or 0;
     if (time < 1) then
-        self.waitingForReshedule = false;
+        self.waitingForReschedule = false;
         return GL:error("Invalid time provided in Auction:extend");
     end
 
@@ -1142,7 +1230,7 @@ function Auction:extend(CommMessage)
         end, math.ceil(time + GL.Settings:get("GDKP.auctionEndLeeway", 2)));
     end
 
-    self.waitingForReshedule = false;
+    self.waitingForReschedule = false;
 end
 
 ---@return number|boolean Time remaining in seconds or false
@@ -1165,7 +1253,6 @@ function Auction:start(CommMessage)
     GL:debug("GDKP.Auction:start");
 
     local content = CommMessage.content;
-
     self.waitingForStart = false;
 
     --[[
@@ -1358,8 +1445,10 @@ end
 function Auction:stop(CommMessage)
     GL:debug("GDKP.Auction:stop");
 
+    self.waitingForStart = false;
+
     if (not self.inProgress
-        or self.waitingForReshedule
+        or self.waitingForReschedule
     ) then
         return;
     end

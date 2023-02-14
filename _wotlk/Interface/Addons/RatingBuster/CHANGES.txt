@@ -1,0 +1,12 @@
+lightweight tag 52daf36981e5febfcf162a526adf46eb654deaf9 3.4.1.06
+Author:	LANCESTRE <lancetre@intenebris.org>
+Date:	Fri Feb 10 22:06:01 2023 +0100
+
+commit 52daf36981e5febfcf162a526adf46eb654deaf9
+Author: LANCESTRE <lancetre@intenebris.org>
+Date:   Fri Feb 10 22:06:01 2023 +0100
+
+    Update RatingBuster.lua
+    
+    Change Order of the tank stats for summary
+

@@ -1,6 +1,6 @@
 --[[
 LibDualSpec-1.0 - Adds dual spec support to individual AceDB-3.0 databases
-Copyright (C) 2009-2022 Adirelle
+Copyright (C) 2009 Adirelle
 
 All rights reserved.
 
@@ -31,32 +31,21 @@ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 --]]
 
--- Don't load unless we are Retail or Wrath Classic
-if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE and WOW_PROJECT_ID ~= WOW_PROJECT_WRATH_CLASSIC then return end
-
-local MAJOR, MINOR = "LibDualSpec-1.0", 22
+local MAJOR, MINOR = "LibDualSpec-1.0", 4
 assert(LibStub, MAJOR.." requires LibStub")
-local lib, minor = LibStub:NewLibrary(MAJOR, MINOR)
+local lib = LibStub:NewLibrary(MAJOR, MINOR)
 if not lib then return end
 
 -- ----------------------------------------------------------------------------
 -- Library data
 -- ----------------------------------------------------------------------------
 
+lib.talentGroup = lib.talentGroup or GetActiveTalentGroup()
 lib.eventFrame = lib.eventFrame or CreateFrame("Frame")
 
 lib.registry = lib.registry or {}
 lib.options = lib.options or {}
 lib.mixin = lib.mixin or {}
-lib.upgrades = lib.upgrades or {}
-lib.currentSpec = tonumber(lib.currentSpec) or 0
-
-if minor and minor < 15 then
-	lib.talentsLoaded, lib.talentGroup = nil, nil
-	lib.specLoaded, lib.specGroup = nil, nil
-	lib.eventFrame:UnregisterAllEvents()
-	wipe(lib.options)
-end
 
 -- ----------------------------------------------------------------------------
 -- Locals
@@ -65,77 +54,59 @@ end
 local registry = lib.registry
 local options = lib.options
 local mixin = lib.mixin
-local upgrades = lib.upgrades
 
 -- "Externals"
 local AceDB3 = LibStub('AceDB-3.0', true)
 local AceDBOptions3 = LibStub('AceDBOptions-3.0', true)
-local AceConfigRegistry3 = LibStub('AceConfigRegistry-3.0', true)
-
-local isRetail = WOW_PROJECT_ID == WOW_PROJECT_MAINLINE
-local numSpecs = 2
-local specNames = {TALENT_SPEC_PRIMARY, TALENT_SPEC_SECONDARY}
-if isRetail then
-	-- class id specialization functions don't require player data to be loaded
-	local _, classId = UnitClassBase("player")
-	numSpecs = GetNumSpecializationsForClassID(classId)
-	for i = 1, numSpecs do
-		local _, name = GetSpecializationInfoForClassID(classId, i)
-		specNames[i] = name
-	end
-end
-
-local GetSpecialization = isRetail and GetSpecialization or GetActiveTalentGroup
-local CanPlayerUseTalentSpecUI = isRetail and C_SpecializationInfo.CanPlayerUseTalentSpecUI or function()
-	return true, HELPFRAME_CHARACTER_BULLET5
-end
 
 -- ----------------------------------------------------------------------------
 -- Localization
 -- ----------------------------------------------------------------------------
 
-local L_ENABLED = "Enable spec profiles"
-local L_ENABLED_DESC = "When enabled, your profile will be set to the specified profile when you change specialization."
-local L_CURRENT = "%s - Active"
+local L_DUALSPEC_DESC, L_ENABLED, L_ENABLED_DESC, L_DUAL_PROFILE, L_DUAL_PROFILE_DESC
 
 do
+	L_DUALSPEC_DESC = "When enabled, this feature allow you to select a different "..
+			"profile for each talent spec. The dual profile will be swapped with the "..
+			"current profile each time you switch from a talent spec to the other."
+	L_ENABLED = 'Enable dual profile'
+	L_ENABLED_DESC = 'Check this box to automatically swap profiles on talent switch.'
+	L_DUAL_PROFILE = 'Dual profile'
+	L_DUAL_PROFILE_DESC = 'Select the profile to swap with on talent switch.'
+
 	local locale = GetLocale()
-	if locale == "deDE" then
-		L_ENABLED = "Spezialisierungsprofile aktivieren"
-		L_ENABLED_DESC = "Falls diese Option aktiviert ist, wird dein Profil auf das angegebene Profil gesetzt, wenn du die Spezialisierung wechselst."
-		L_CURRENT = "%s - Aktiv"
-	elseif locale == "esES" or locale == "esMX" then
-		L_ENABLED = "Activar perfiles de especialización"
-		L_ENABLED_DESC = "Cuando está habilitado, su perfil se establecerá en el perfil especificado cuando cambie de especialización."
-		L_CURRENT = "%s - Activo"
-	elseif locale == "frFR" then
-		L_ENABLED = "Activer les profils de spécialisation"
-		L_ENABLED_DESC = "Lorsque cette option est activée, votre profil sera défini sur le profil spécifié lorsque vous changerez de spécialisation."
-		L_CURRENT = "%s - Actifs"
-	elseif locale == "itIT" then
-		L_ENABLED = "Abilita i profili per la specializzazione"
-		L_ENABLED_DESC = "Quando abilitato, il tuo profilo verrà impostato in base alla specializzazione usata."
-		L_CURRENT = "%s - Attivi"
-	elseif locale == "koKR" then
-		L_ENABLED = "전문화 프로필 활성화"
-		L_ENABLED_DESC = "활성화하면 전문화를 변경할 때 프로필이 지정된 프로필로 설정됩니다."
-		L_CURRENT = "%s - 활성화"
-	elseif locale == "ptBR" then
-		L_ENABLED = "Ativar perfis de especialização"
-		L_ENABLED_DESC = "Quando ativado, seu perfil será definido para o perfil especificado quando você alterar a especialização."
-		L_CURRENT = "%s – ativo"
-	elseif locale == "ruRU" then
-		L_ENABLED = "Включить профили специализации"
-		L_ENABLED_DESC = "Если включено, ваш профиль будет зависеть от выбранной специализации."
-		L_CURRENT = "%s - активен"
+	if locale == "frFR" then
+		L_DUALSPEC_DESC = "Lorsqu'elle est activée, cette fonctionnalité vous permet "..
+			"de choisir un profil différent pour chaque spécialisation de talents. "..
+			"Le second profil sera échangé avec le profil courant chaque fois que vous "..
+			"passerez d'une spécialisation à l'autre."
+		L_ENABLED = 'Activez le second profil'
+		L_ENABLED_DESC = "Cochez cette case pour échanger automatiquement les profils "..
+			"lors d'un changement de spécialisation."
+		L_DUAL_PROFILE = 'Second profil'
+		L_DUAL_PROFILE_DESC = "Sélectionnez le profil à échanger avec le profil courant "..
+			"lors du changement de spécialisation."
+	elseif locale == "deDE" then
+		L_DUAL_PROFILE = "Duales Profil"
+		L_DUAL_PROFILE_DESC = "W\195\164hle das Profil, das beim Wechsel der Talente aktiviert wird."
+		L_DUALSPEC_DESC = "Wenn aktiv, wechselt dieses Feature bei jedem Wechsel "..
+			"der dualen Talentspezialisierung das Profil. Das duale Profil wird beim "..
+			"Wechsel automatisch mit dem derzeit aktiven Profil getauscht."
+		L_ENABLED = "Aktiviere Duale Profile"
+		L_ENABLED_DESC = "Aktiviere diese Option, um beim Talentwechsel automatisch "..
+			"zwischen den Profilen zu wechseln."
 	elseif locale == "zhCN" then
-		L_ENABLED = "启用专精配置文件"
-		L_ENABLED_DESC = "当启用后，当切换专精时配置文件将设置为专精配置文件。"
-		L_CURRENT = "%s - 开启"
+		L_DUAL_PROFILE = "双重配置文件"
+		L_DUAL_PROFILE_DESC = "选择转换天赋时所要使用的配置文件"
+		L_DUALSPEC_DESC = "启时，你可以为你的双天赋设定另一组配置文件，你的双重配置文件将在你转换天赋时自动与目前使用配置文件交换。"
+		L_ENABLED = "开启双重配置文件"
+		L_ENABLED_DESC = "勾选以便转换天赋时自动交换配置文件。"
 	elseif locale == "zhTW" then
-		L_ENABLED = "啟用專精設定檔"
-		L_ENABLED_DESC = "當啟用後，當你切換專精時設定檔會設定為專精設定檔。"
-		L_CURRENT = "%s - 啟動"
+		L_DUALSPEC_DESC = "啟用時，你可以為你的雙天賦設定另一組設定檔。你的雙設定檔將在你轉換天賦時自動與目前使用設定檔交換。"
+		L_ENABLED = "啟用雙設定檔"
+		L_ENABLED_DESC = "勾選以在轉換天賦時自動交換設定檔"
+		L_DUAL_PROFILE = "雙設定檔"
+		L_DUAL_PROFILE_DESC = "選擇轉換天賦後所要使用的設定檔"
 	end
 end
 
@@ -143,62 +114,61 @@ end
 -- Mixin
 -- ----------------------------------------------------------------------------
 
---- Get dual spec feature status.
+--- Get dual spec feature status. 
 -- @return (boolean) true is dual spec feature enabled.
 -- @name enhancedDB:IsDualSpecEnabled
 function mixin:IsDualSpecEnabled()
-	return lib.currentSpec > 0 and registry[self].db.char.enabled
+	return registry[self].db.char.enabled
 end
 
 --- Enable/disabled dual spec feature.
 -- @param enabled (boolean) true to enable dual spec feature, false to disable it.
 -- @name enhancedDB:SetDualSpecEnabled
 function mixin:SetDualSpecEnabled(enabled)
-	local db = registry[self].db.char
-	db.enabled = not not enabled
-
-	local currentProfile = self:GetCurrentProfile()
-	for i = 1, numSpecs do
-		-- nil out entries on disable, set nil entries to the current profile on enable
-		db[i] = enabled and (db[i] or currentProfile) or nil
+	local db = registry[self].db
+	if enabled and not db.char.talentGroup then
+		db.char.talentGroup = lib.talentGroup
+		db.char.profile = self:GetCurrentProfile()
+		db.char.enabled = true	
+	else
+		db.char.enabled = enabled
+		self:CheckDualSpecState()
 	end
-
-	self:CheckDualSpecState()
 end
 
---- Get the profile assigned to a specialization.
+--- Get the alternate profile name.
 -- Defaults to the current profile.
--- @param spec (number) the specialization index.
--- @return (string) the profile name.
+-- @return (string) Alternate profile name.
 -- @name enhancedDB:GetDualSpecProfile
-function mixin:GetDualSpecProfile(spec)
-	return registry[self].db.char[spec or lib.currentSpec] or self:GetCurrentProfile()
+function mixin:GetDualSpecProfile()
+	return registry[self].db.char.profile or self:GetCurrentProfile()
 end
 
---- Set the profile assigned to a specialization.
+--- Set the alternate profile name.
 -- No validation are done to ensure the profile is valid.
--- @param profileName (string) the profile name to use.
--- @param spec (number) the specialization index.
+-- @param profileName (string) the profile name to use. 
 -- @name enhancedDB:SetDualSpecProfile
-function mixin:SetDualSpecProfile(profileName, spec)
-	spec = spec or lib.currentSpec
-	if spec < 1 or spec > numSpecs then return end
-
-	registry[self].db.char[spec] = profileName
-	self:CheckDualSpecState()
+function mixin:SetDualSpecProfile(profileName)
+	registry[self].db.char.profile = profileName
 end
 
 --- Check if a profile swap should occur.
+-- Do nothing if the dual spec feature is disabled. In the other
+-- case, if the internally stored talent spec is different from the
+-- actual active talent spec, the database swaps to the alternate profile.
 -- There is normally no reason to call this method directly as LibDualSpec
--- takes care of calling it at the appropriate time.
+-- takes care of calling it at appropriate times.
 -- @name enhancedDB:CheckDualSpecState
 function mixin:CheckDualSpecState()
-	if not registry[self].db.char.enabled then return end
-	if lib.currentSpec == 0 then return end
-
-	local profileName = self:GetDualSpecProfile()
-	if profileName ~= self:GetCurrentProfile() then
-		self:SetProfile(profileName)
+	local db = registry[self].db
+	if db.char.enabled and db.char.talentGroup ~= lib.talentGroup then
+		local currentProfile = self:GetCurrentProfile()
+		local newProfile = db.char.profile
+		db.char.talentGroup = lib.talentGroup
+		if newProfile ~= currentProfile then
+			self:SetProfile(newProfile)
+			db.char.profile = currentProfile
+		end
 	end
 end
 
@@ -207,52 +177,14 @@ end
 -- ----------------------------------------------------------------------------
 
 local function EmbedMixin(target)
-	for k,v in next, mixin do
+	for k,v in pairs(mixin) do
 		rawset(target, k, v)
 	end
 end
 
--- Upgrade settings from current/alternate system.
--- This sets the current profile as the profile for your current spec and your
--- swapped profile as the profile for the rest of your specs.
-local function UpgradeDatabase(target)
-	if lib.currentSpec == 0 then
-		upgrades[target] = true
-		return
-	end
-
-	local db = target:GetNamespace(MAJOR, true)
-	if db and db.char.profile then
-		for i = 1, numSpecs do
-			if i == lib.currentSpec then
-				db.char[i] = target:GetCurrentProfile()
-			else
-				db.char[i] = db.char.profile
-			end
-		end
-		db.char.profile = nil
-		db.char.specGroup = nil
-	end
-end
-
--- Reset a spec profile to the current one if its profile is deleted.
-function lib:OnProfileDeleted(event, target, profileName)
-	local db = registry[target].db.char
-	if not db.enabled then return end
-
-	for i = 1, numSpecs do
-		if db[i] == profileName then
-			db[i] = target:GetCurrentProfile()
-		end
-	end
-end
-
--- Actually enhance the database
--- This is used on first initialization and everytime the database is reset using :ResetDB
-function lib:_EnhanceDatabase(event, target)
-	registry[target].db = target:GetNamespace(MAJOR, true) or target:RegisterNamespace(MAJOR)
+-- Upgrade existing mixins
+for target in pairs(registry) do
 	EmbedMixin(target)
-	target:CheckDualSpecState()
 end
 
 --- Embed dual spec feature into an existing AceDB-3.0 database.
@@ -273,109 +205,49 @@ function lib:EnhanceDatabase(target, name)
 	elseif registry[target] then
 		return
 	end
-	registry[target] = { name = name }
-	UpgradeDatabase(target)
-	lib:_EnhanceDatabase("EnhanceDatabase", target)
-	target.RegisterCallback(lib, "OnDatabaseReset", "_EnhanceDatabase")
-	target.RegisterCallback(lib, "OnProfileDeleted")
+	local db = target:GetNamespace(MAJOR, true) or target:RegisterNamespace(MAJOR)
+	registry[target] = { name = name, db = db	}
+	EmbedMixin(target)
+	target:CheckDualSpecState()
 end
 
 -- ----------------------------------------------------------------------------
 -- AceDBOptions-3.0 support
 -- ----------------------------------------------------------------------------
 
-options.new = {
-	name = "New",
-	type = "input",
-	order = 30,
-	get = false,
-	set = function(info, value)
-		local db = info.handler.db
-		if db:IsDualSpecEnabled() then
-			db:SetDualSpecProfile(value, lib.currentSpec)
-		else
-			db:SetProfile(value)
-		end
-	end,
-}
+local function NoDualSpec()
+	return GetNumTalentGroups() == 1
+end
 
-options.choose = {
-	name = "Existing Profiles",
-	type = "select",
-	order = 40,
-	get = "GetCurrentProfile",
-	set = "SetProfile",
-	values = "ListProfiles",
-	arg = "common",
-	disabled = function(info)
-		return info.handler.db:IsDualSpecEnabled()
-	end
+options.dualSpecDesc = {
+	name = L_DUALSPEC_DESC,
+	type = 'description',
+	order = 40.1,
+	hidden = NoDualSpec,
 }
 
 options.enabled = {
-	type = "toggle",
-	name = "|cffffd200"..L_ENABLED.."|r",
-	desc = function()
-		local desc = L_ENABLED_DESC
-		if lib.currentSpec == 0 then
-			local _, reason = CanPlayerUseTalentSpecUI()
-			if not reason or reason == "" then
-				reason = TALENT_MICRO_BUTTON_NO_SPEC
-			end
-			desc = desc .. "\n\n" .. RED_FONT_COLOR:WrapTextInColorCode(reason)
-		end
-		return desc
-	end,
-	descStyle = "inline",
-	order = 41,
-	width = "full",
+	name = L_ENABLED,
+	desc = L_ENABLED_DESC,
+	type = 'toggle',
+	order = 40.2,
 	get = function(info) return info.handler.db:IsDualSpecEnabled() end,
 	set = function(info, value) info.handler.db:SetDualSpecEnabled(value) end,
-	disabled = function() return lib.currentSpec == 0 end,
+	hidden = NoDualSpec,
 }
 
-local points = {}
-for i = 1, numSpecs do
-	options["specProfile" .. i] = {
-		type = "select",
-		name = function(info)
-			local specIndex = tonumber(info[#info]:sub(-1))
-			return lib.currentSpec == specIndex and L_CURRENT:format(specNames[specIndex]) or specNames[specIndex]
-		end,
-		desc = not isRetail and function(info)
-			local specIndex = tonumber(info[#info]:sub(-1))
-			local highPointsSpentIndex = nil
-			for treeIndex = 1, 3 do
-				local name, _, pointsSpent, _, previewPointsSpent = GetTalentTabInfo(treeIndex, false, false, specIndex)
-				if name then
-					local displayPointsSpent = pointsSpent + previewPointsSpent
-					points[treeIndex] = displayPointsSpent
-					if displayPointsSpent > 0 and (not highPointsSpentIndex or displayPointsSpent > points[highPointsSpentIndex]) then
-						highPointsSpentIndex = treeIndex
-					end
-				else
-					points[treeIndex] = 0
-				end
-			end
-			if highPointsSpentIndex then
-				points[highPointsSpentIndex] = GREEN_FONT_COLOR:WrapTextInColorCode(points[highPointsSpentIndex])
-			end
-			return ("|cffffffff%s / %s / %s|r"):format(unpack(points))
-		end or nil,
-		order = 42 + i,
-		get = function(info)
-			local specIndex = tonumber(info[#info]:sub(-1))
-			return info.handler.db:GetDualSpecProfile(specIndex)
-		end,
-		set = function(info, value)
-			local specIndex = tonumber(info[#info]:sub(-1))
-			info.handler.db:SetDualSpecProfile(value, specIndex)
-		end,
-		values = "ListProfiles",
-		arg = "common",
-		disabled = function(info) return not info.handler.db:IsDualSpecEnabled() end,
-	}
-end
+options.dualProfile = {
+	name = L_DUAL_PROFILE,
+	desc = L_DUAL_PROFILE_DESC,
+	type = 'select',
+	order = 40.3,
+	get = function(info) return info.handler.db:GetDualSpecProfile() end,
+	set = function(info, value) info.handler.db:SetDualSpecProfile(value) end,
+	values = "ListProfiles",
+	arg = "common",
+	hidden = NoDualSpec,
+	disabled = function(info) return not info.handler.db:IsDualSpecEnabled() end,
+}
 
 --- Embed dual spec options into an existing AceDBOptions-3.0 option table.
 -- @name LibDualSpec:EnhanceOptions
@@ -383,44 +255,23 @@ end
 -- @param target (table) The AceDB-3.0 the options operate on.
 function lib:EnhanceOptions(optionTable, target)
 	AceDBOptions3 = AceDBOptions3 or LibStub('AceDBOptions-3.0', true)
-	AceConfigRegistry3 = AceConfigRegistry3 or LibStub('AceConfigRegistry-3.0', true)
 	if type(optionTable) ~= "table" then
 		error("Usage: LibDualSpec:EnhanceOptions(optionTable, target): optionTable should be a table.", 2)
 	elseif type(target) ~= "table" then
 		error("Usage: LibDualSpec:EnhanceOptions(optionTable, target): target should be a table.", 2)
-	elseif not AceDBOptions3 or not AceDBOptions3.optionTables[target] then
+	elseif not (AceDBOptions3 and AceDBOptions3.optionTables[target]) then
 		error("Usage: LibDualSpec:EnhanceOptions(optionTable, target): optionTable is not an AceDBOptions-3.0 table.", 2)
 	elseif optionTable.handler.db ~= target then
 		error("Usage: LibDualSpec:EnhanceOptions(optionTable, target): optionTable must be the option table of target.", 2)
 	elseif not registry[target] then
 		error("Usage: LibDualSpec:EnhanceOptions(optionTable, target): EnhanceDatabase should be called before EnhanceOptions(optionTable, target).", 2)
+	elseif optionTable.plugins and optionTable.plugins[MAJOR] then
+		return
 	end
-
-	-- localize our replacements
-	options.new.name = optionTable.args.new.name
-	options.new.desc = optionTable.args.new.desc
-	options.choose.name = optionTable.args.choose.name
-	options.choose.desc = optionTable.args.choose.desc
-
-	-- add our new options
 	if not optionTable.plugins then
 		optionTable.plugins = {}
 	end
 	optionTable.plugins[MAJOR] = options
-end
-
--- ----------------------------------------------------------------------------
--- Upgrade existing
--- ----------------------------------------------------------------------------
-
-for target in next, registry do
-	UpgradeDatabase(target)
-	EmbedMixin(target)
-	target:CheckDualSpecState()
-	local optionTable = AceDBOptions3 and AceDBOptions3.optionTables[target]
-	if optionTable then
-		lib:EnhanceOptions(optionTable, target)
-	end
 end
 
 -- ----------------------------------------------------------------------------
@@ -448,51 +299,14 @@ end
 -- Switching logic
 -- ----------------------------------------------------------------------------
 
-local function eventHandler(self, event)
-	local spec = GetSpecialization() or 0
-	-- Newly created characters start at 5 instead of 1 in 9.0.1.
-	if spec == 5 or not CanPlayerUseTalentSpecUI() then
-		spec = 0
-	end
-	lib.currentSpec = spec
-
-	if event == "PLAYER_LOGIN" then
-		self:UnregisterEvent(event)
-		self:RegisterEvent("PLAYER_ENTERING_WORLD")
-		if isRetail then
-			self:RegisterUnitEvent("PLAYER_SPECIALIZATION_CHANGED", "player")
-			self:RegisterEvent("PLAYER_LEVEL_CHANGED")
-		else
-			self:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED")
+lib.eventFrame:RegisterEvent('PLAYER_TALENT_UPDATE')
+lib.eventFrame:SetScript('OnEvent', function()
+	local newTalentGroup = GetActiveTalentGroup()
+	if lib.talentGroup ~= newTalentGroup then
+		lib.talentGroup = newTalentGroup
+		for target in pairs(registry) do
+			target:CheckDualSpecState()
 		end
 	end
-
-	if spec > 0 and next(upgrades) then
-		for target in next, upgrades do
-			UpgradeDatabase(target)
-		end
-		wipe(upgrades)
-	end
-
-	for target in next, registry do
-		target:CheckDualSpecState()
-	end
-
-	if AceConfigRegistry3 and next(registry) then
-		-- Update the "Current" text in options
-		-- We don't get the key for the actual registered options table, and we can't
-		-- really check for our enhanced options without walking every options table,
-		-- so just refresh anything.
-		for appName in AceConfigRegistry3:IterateOptionsTables() do
-			AceConfigRegistry3:NotifyChange(appName)
-		end
-	end
-end
-
-lib.eventFrame:SetScript("OnEvent", eventHandler)
-if IsLoggedIn() then
-	eventHandler(lib.eventFrame, "PLAYER_LOGIN")
-else
-	lib.eventFrame:RegisterEvent("PLAYER_LOGIN")
-end
+end)
 

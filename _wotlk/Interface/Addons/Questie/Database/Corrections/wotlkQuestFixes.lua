@@ -96,10 +96,16 @@ function QuestieWotlkQuestFixes:Load()
         [8762] = {
             [questKeys.objectives] = {{{15664,"Find Metzen the Reindeer and rescue him"}},nil,{{21211}}},
         },
+        [9078] = {
+            [questKeys.requiredClasses] = classIDs.ROGUE,
+        },
         [9154] = {
             [questKeys.startedBy] = {{16241,16255}},
             [questKeys.finishedBy] = {{16281}},
             [questKeys.questLevel] = -1,
+        },
+        [9189] = {
+            [questKeys.requiredRaces] = raceIDs.BLOOD_ELF,
         },
         [9211] = {
             [questKeys.specialFlags] = 1,
@@ -109,6 +115,12 @@ function QuestieWotlkQuestFixes:Load()
         },
         [9247] = {
             [questKeys.finishedBy] = {{16281}},
+        },
+        [9358] = {
+            [questKeys.exclusiveTo] = {9252},
+        },
+        [9425] = {
+            [questKeys.requiredRaces] = raceIDs.BLOOD_ELF,
         },
         [9629] = {
             [questKeys.objectives] = {{{17326}}},
@@ -3352,6 +3364,21 @@ function QuestieWotlkQuestFixes:Load()
                 [zoneIDs.DALARAN]={{58.3,20.5}},
             }},
         },
+        [14352] = {
+            [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
+        },
+        [14418] = {
+            [questKeys.requiredRaces] = raceIDs.UNDEAD,
+        },
+        [14419] = {
+            [questKeys.requiredRaces] = raceIDs.UNDEAD,
+        },
+        [14420] = {
+            [questKeys.requiredRaces] = raceIDs.UNDEAD,
+        },
+        [14421] = {
+            [questKeys.requiredRaces] = raceIDs.UNDEAD,
+        },
         [24216] = {
             [questKeys.triggerEnd] = {"Victory in Warsong Gulch", {
                 [zoneIDs.SHATTRATH_CITY]={{66.85,57.04}},
@@ -3460,6 +3487,13 @@ function QuestieWotlkQuestFixes:Load()
         [24431] = {
             [questKeys.specialFlags] = 1,
         },
+        [24536] = {
+            [questKeys.objectives] = {{{3296}}},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_OBJECT, l10n("Use Snagglebolt's Air Analyzer on perfumed guards"), 0, {{"monster", 3296}}}},
+        },
+        [24541] = {
+            [questKeys.sourceItemId] = 49867,
+        },
         [24597] = {
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
         },
@@ -3493,6 +3527,134 @@ function QuestieWotlkQuestFixes:Load()
         },
         [24636] = {
             [questKeys.exclusiveTo] = {24629, 24635},
+        },
+        [24638] = {
+            [questKeys.preQuestSingle] = {24576},
+            [questKeys.startedBy] = {{37172}},
+            [questKeys.finishedBy] = {{37172}},
+            [questKeys.exclusiveTo] = {24645, 24647, 24648, 24649, 24650, 24651, 24652},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_SLAY, l10n("Destroy Chemical Wagon using Snagglebolt's Khorium Bomb"), 0, {{"object", 400048}}}},
+        },
+        [24645] = {
+            [questKeys.preQuestSingle] = {24576},
+            [questKeys.startedBy] = {{37172}},
+            [questKeys.finishedBy] = {{37172}},
+            [questKeys.exclusiveTo] = {24638, 24647, 24648, 24649, 24650, 24651, 24652},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_SLAY, l10n("Destroy Chemical Wagon using Snagglebolt's Khorium Bomb"), 0, {{"object", 400049}}}},
+        },
+        [24647] = {
+            [questKeys.preQuestSingle] = {24576},
+            [questKeys.startedBy] = {{37172}},
+            [questKeys.finishedBy] = {{37172}},
+            [questKeys.exclusiveTo] = {24638, 24645, 24648, 24649, 24650, 24651, 24652},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_SLAY, l10n("Destroy Chemical Wagon using Snagglebolt's Khorium Bomb"), 0, {{"object", 400052}}}},
+        },
+        [24648] = {
+            [questKeys.preQuestSingle] = {24576},
+            [questKeys.startedBy] = {{37172}},
+            [questKeys.finishedBy] = {{37172}},
+            [questKeys.exclusiveTo] = {24638, 24645, 24647, 24649, 24650, 24651, 24652},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_SLAY, l10n("Destroy Chemical Wagon using Snagglebolt's Khorium Bomb"), 0, {{"object", 400053}}}},
+        },
+        [24649] = {
+            [questKeys.preQuestSingle] = {24576},
+            [questKeys.startedBy] = {{37172}},
+            [questKeys.finishedBy] = {{37172}},
+            [questKeys.exclusiveTo] = {24638, 24645, 24647, 24648, 24650, 24651, 24652},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_SLAY, l10n("Destroy Chemical Wagon using Snagglebolt's Khorium Bomb"), 0, {{"object", 400054}}}},
+        },
+        [24650] = {
+            [questKeys.preQuestSingle] = {24576},
+            [questKeys.startedBy] = {{37172}},
+            [questKeys.finishedBy] = {{37172}},
+            [questKeys.exclusiveTo] = {24638, 24645, 24647, 24648, 24649, 24651, 24652},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_SLAY, l10n("Destroy Chemical Wagon using Snagglebolt's Khorium Bomb"), 0, {{"object", 400055}}}},
+        },
+        [24651] = {
+            [questKeys.preQuestSingle] = {24576},
+            [questKeys.startedBy] = {{37172}},
+            [questKeys.finishedBy] = {{37172}},
+            [questKeys.exclusiveTo] = {24638, 24645, 24647, 24648, 24649, 24650, 24652},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_SLAY, l10n("Destroy Chemical Wagon using Snagglebolt's Khorium Bomb"), 0, {{"object", 400056}}}},
+        },
+        [24652] = {
+            [questKeys.preQuestSingle] = {24576},
+            [questKeys.startedBy] = {{37172}},
+            [questKeys.finishedBy] = {{37172}},
+            [questKeys.exclusiveTo] = {24638, 24645, 24647, 24648, 24649, 24650, 24651},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_SLAY, l10n("Destroy Chemical Wagon using Snagglebolt's Khorium Bomb"), 0, {{"object", 400057}}}},
+        },
+        [24655] = {
+            [questKeys.objectives] = {nil,nil,nil,nil,{{{68,1976},1976}}},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_OBJECT, l10n("Use Snagglebolt's Air Analyzer on perfumed guards"), 0, {{"monster", 68},{"monster", 1976}}}},
+        },
+        [24656] = {
+            [questKeys.sourceItemId] = 49867,
+        },
+        [24658] = {
+            [questKeys.preQuestSingle] = {24657},
+            [questKeys.startedBy] = {{38066}},
+            [questKeys.finishedBy] = {{38066}},
+            [questKeys.exclusiveTo] = {24659, 24660, 24662, 24663, 24664, 24665, 24666},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_SLAY, l10n("Destroy Chemical Wagon using Snagglebolt's Khorium Bomb"), 0, {{"object", 400050}}}},
+        },
+        [24659] = {
+            [questKeys.preQuestSingle] = {24657},
+            [questKeys.startedBy] = {{38066}},
+            [questKeys.finishedBy] = {{38066}},
+            [questKeys.exclusiveTo] = {24658, 24660, 24662, 24663, 24664, 24665, 24666},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_SLAY, l10n("Destroy Chemical Wagon using Snagglebolt's Khorium Bomb"), 0, {{"object", 400051}}}},
+        },
+        [24660] = {
+            [questKeys.preQuestSingle] = {24657},
+            [questKeys.startedBy] = {{38066}},
+            [questKeys.finishedBy] = {{38066}},
+            [questKeys.exclusiveTo] = {24658, 24659, 24662, 24663, 24664, 24665, 24666},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_SLAY, l10n("Destroy Chemical Wagon using Snagglebolt's Khorium Bomb"), 0, {{"object", 400052}}}},
+        },
+        [24662] = {
+            [questKeys.preQuestSingle] = {24657},
+            [questKeys.startedBy] = {{38066}},
+            [questKeys.finishedBy] = {{38066}},
+            [questKeys.exclusiveTo] = {24658, 24659, 24660, 24663, 24664, 24665, 24666},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_SLAY, l10n("Destroy Chemical Wagon using Snagglebolt's Khorium Bomb"), 0, {{"object", 400053}}}},
+        },
+        [24663] = {
+            [questKeys.preQuestSingle] = {24657},
+            [questKeys.startedBy] = {{38066}},
+            [questKeys.finishedBy] = {{38066}},
+            [questKeys.exclusiveTo] = {24658, 24659, 24660, 24662, 24664, 24665, 24666},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_SLAY, l10n("Destroy Chemical Wagon using Snagglebolt's Khorium Bomb"), 0, {{"object", 400054}}}},
+        },
+        [24664] = {
+            [questKeys.preQuestSingle] = {24657},
+            [questKeys.startedBy] = {{38066}},
+            [questKeys.finishedBy] = {{38066}},
+            [questKeys.exclusiveTo] = {24658, 24659, 24660, 24662, 24663, 24665, 24666},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_SLAY, l10n("Destroy Chemical Wagon using Snagglebolt's Khorium Bomb"), 0, {{"object", 400055}}}},
+        },
+        [24665] = {
+            [questKeys.preQuestSingle] = {24657},
+            [questKeys.startedBy] = {{38066}},
+            [questKeys.finishedBy] = {{38066}},
+            [questKeys.exclusiveTo] = {24658, 24659, 24660, 24662, 24663, 24664, 24666},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_SLAY, l10n("Destroy Chemical Wagon using Snagglebolt's Khorium Bomb"), 0, {{"object", 400056}}}},
+        },
+        [24666] = {
+            [questKeys.preQuestSingle] = {24657},
+            [questKeys.startedBy] = {{38066}},
+            [questKeys.finishedBy] = {{38066}},
+            [questKeys.exclusiveTo] = {24658, 24659, 24660, 24662, 24663, 24664, 24665},
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_SLAY, l10n("Destroy Chemical Wagon using Snagglebolt's Khorium Bomb"), 0, {{"object", 400057}}}},
+        },
+        [24792] = {
+            [questKeys.preQuestSingle] = {24657},
+        },
+        [24793] = {
+            [questKeys.preQuestSingle] = {24576},
+        },
+        [24803] = {
+            [questKeys.specialFlags] = 1,
         },
         [24857] = {
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,

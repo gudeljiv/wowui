@@ -174,6 +174,24 @@ function QuestieTBCQuestFixes:Load()
         [1805] = {
             [questKeys.requiredRaces] = raceIDs.ORC + raceIDs.UNDEAD + raceIDs.BLOOD_ELF,
         },
+        [1859] = {
+            [questKeys.requiredRaces] = raceIDs.ORC + raceIDs.TROLL,
+        },
+        [1886] = {
+            [questKeys.requiredRaces] = raceIDs.UNDEAD,
+        },
+        [1898] = {
+            [questKeys.requiredRaces] = raceIDs.UNDEAD,
+        },
+        [1899] = {
+            [questKeys.requiredRaces] = raceIDs.UNDEAD,
+        },
+        [1978] = {
+            [questKeys.requiredRaces] = raceIDs.UNDEAD,
+        },
+        [1998] = {
+            [questKeys.requiredRaces] = raceIDs.UNDEAD,
+        },
         [2240] = {
             [questKeys.triggerEnd] = {"Explore the Hidden Chamber", {[zoneIDs.BADLANDS]={{35.22,10.32}}}},
         },
@@ -300,6 +318,9 @@ function QuestieTBCQuestFixes:Load()
         },
         [4983] = {
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
+        },
+        [5002] = {
+            [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
         },
         [5168] = {
             [questKeys.preQuestSingle] = {5210},
