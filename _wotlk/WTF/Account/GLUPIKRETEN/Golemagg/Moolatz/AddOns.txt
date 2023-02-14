@@ -203,4 +203,4 @@ AskMrRobotClassic: disabled
 WowSimsExporter: enabled
 GDKPd: enabled
 TacoTip: enabled
-GlobalIgnoreList: disabled
+GlobalIgnoreList: enabled
