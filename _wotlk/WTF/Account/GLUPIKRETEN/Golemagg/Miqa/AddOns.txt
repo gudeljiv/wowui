@@ -28,8 +28,8 @@ AskMrRobotClassic: disabled
 LFGBulletinBoard: enabled
 MikScrollingBattleText: enabled
 WowSimsExporter: enabled
-GatherMate2: disabled
-GatherMate2_Data: disabled
+GatherMate2: enabled
+GatherMate2_Data: enabled
 AuctionFaster: disabled
 ItemRack: enabled
 PallyPower: enabled

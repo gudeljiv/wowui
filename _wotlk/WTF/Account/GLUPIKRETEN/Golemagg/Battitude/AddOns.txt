@@ -71,8 +71,8 @@ ClassicCastbars_Options: enabled
 ClassicSpellActivations: enabled
 Dejunk: enabled
 FollowMePls: enabled
-GatherMate2: disabled
-GatherMate2_Data: disabled
+GatherMate2: enabled
+GatherMate2_Data: enabled
 gmMoney: enabled
 Leatrix_Maps: enabled
 Lorti UI Classic: enabled

@@ -45,10 +45,9 @@ end
 
 function unitscan.target(name)
 	forbidden = false
-	local sound_setting = GetCVar 'Sound_EnableAllSound'
-	SetCVar('Sound_EnableAllSound', 0)
+	SetCVar('ScriptErrors', '0')
 	TargetUnit(name, true)
-	SetCVar('Sound_EnableAllSound', sound_setting)
+	SetCVar('ScriptErrors', '1')
 	if forbidden then
 		if not found[name] then
 			found[name] = true
@@ -120,8 +119,8 @@ function unitscan.LOAD()
 	button:SetWidth(225)
 	button:SetHeight(42)
 	button:SetScale(1.5)
-	-- button:SetMovable(false)
-	-- button:SetUserPlaced(false)
+	-- button:SetMovable(true)
+	-- button:SetUserPlaced(true)
 	button:SetClampedToScreen(true)
 	button:SetScript(
 		'OnMouseDown',
@@ -146,7 +145,6 @@ function unitscan.LOAD()
 		edgeSize = 16,
 		edgeFile = [[Interface\Tooltips\UI-Tooltip-Border]]
 	}
-
 	button:SetBackdropBorderColor(unpack(BROWN))
 	button:SetScript(
 		'OnEnter',
@@ -162,7 +160,6 @@ function unitscan.LOAD()
 	)
 	function button:set_target(name)
 		self:SetText(name)
-		self:SetAttribute('type', 'macro')
 		self:SetAttribute('macrotext', '/cleartarget\n/targetexact ' .. name)
 		self:Show()
 		self.glow.animation:Play()

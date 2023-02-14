@@ -44,8 +44,8 @@ Details: enabled
 Details_TinyThreat: enabled
 ExtendedCharacterStats: enabled
 FollowMePls: enabled
-GatherMate2: disabled
-GatherMate2_Data: disabled
+GatherMate2: enabled
+GatherMate2_Data: enabled
 gmMoney: enabled
 Grid2: disabled
 Grid2Options: disabled

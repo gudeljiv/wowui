@@ -18,8 +18,8 @@ AtlasLootClassic_PvP: enabled
 AtlasLootClassic: enabled
 AtlasLootClassic_Data: enabled
 AuctionFaster: disabled
-GatherMate2: disabled
-GatherMate2_Data: disabled
+GatherMate2: enabled
+GatherMate2_Data: enabled
 ItemRack: enabled
 LFGBulletinBoard: enabled
 MikScrollingBattleText: enabled
