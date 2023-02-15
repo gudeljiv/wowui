@@ -6,16 +6,16 @@ GroupieDB = {
 			["groupieSpec1Role"] = 1,
 		},
 		["Vermina - Golemagg"] = {
-			["groupieSpec1Role"] = 2,
 			["groupieSpec2Role"] = 1,
+			["groupieSpec1Role"] = 2,
 		},
 		["Mxyz - Golemagg"] = {
 			["groupieSpec2Role"] = 2,
 			["groupieSpec1Role"] = 2,
 		},
 		["Miqa - Golemagg"] = {
-			["groupieSpec2Role"] = 2,
 			["groupieSpec1Role"] = 2,
+			["groupieSpec2Role"] = 2,
 		},
 		["Battlearm - Gehennas"] = {
 			["groupieSpec2Role"] = 4,
@@ -33,13 +33,13 @@ GroupieDB = {
 			["hideInstances"] = {
 				[3370] = true,
 				[2360] = false,
-				[3460] = true,
+				[2380] = false,
+				[2390] = false,
+				[2400] = false,
+				[2350] = false,
 				[2370] = false,
 				[2340] = false,
-				[2350] = false,
-				[2400] = false,
-				[2390] = false,
-				[2380] = false,
+				[3460] = true,
 			},
 			["groupieSpec2Role"] = 3,
 			["groupieSpec1Role"] = 3,
@@ -47,23 +47,22 @@ GroupieDB = {
 	},
 	["global"] = {
 		["guilds"] = {
-			["Gehennas"] = {
-			},
 			["Golemagg"] = {
 				["Battlearm"] = {
 					["Xteer"] = true,
 					["Gagi"] = true,
 					["Prenkydk"] = true,
 					["Zagortezmay"] = true,
+					["Skafander"] = true,
 					["Furuna"] = true,
 					["Grdac"] = true,
-					["Majmoon"] = true,
+					["Bobrock"] = true,
 					["Pandemoniuom"] = true,
 					["Gagii"] = true,
 					["Crimsonshot"] = true,
 					["Muldan"] = true,
 					["Crimsonblast"] = true,
-					["Zurkica"] = true,
+					["Pingvin"] = true,
 					["Warixa"] = true,
 					["Zikkss"] = true,
 					["Prvak"] = true,
@@ -72,7 +71,7 @@ GroupieDB = {
 					["ßuhá"] = true,
 					["Deadwalk"] = true,
 					["Joskec"] = true,
-					["ßooha"] = true,
+					["Silaa"] = true,
 					["Hennessyxo"] = true,
 					["Rinnerebirt"] = true,
 					["Karnan"] = true,
@@ -90,15 +89,15 @@ GroupieDB = {
 					["Kilkage"] = true,
 					["Ooby"] = true,
 					["Deofol"] = true,
-					["Shaiyan"] = true,
+					["Rodstorm"] = true,
 					["Penava"] = true,
-					["Deristedk"] = true,
+					["Linn"] = true,
 					["Joksic"] = true,
 					["Moolatz"] = true,
 					["Crimsonclaw"] = true,
 					["Dreamcos"] = true,
 					["Moomek"] = true,
-					["Oktavijan"] = true,
+					["Veterko"] = true,
 					["Razvaljeni"] = true,
 					["Oskvrnitelj"] = true,
 					["Magefire"] = true,
@@ -111,7 +110,7 @@ GroupieDB = {
 					["Tiruriruu"] = true,
 					["Svemocni"] = true,
 					["Hyperoptic"] = true,
-					["Sanufrost"] = true,
+					["Analnass"] = true,
 					["Fireblink"] = true,
 					["Ajuna"] = true,
 					["Vermina"] = true,
@@ -126,130 +125,131 @@ GroupieDB = {
 					["Smrtnakazna"] = true,
 					["Shushumigica"] = true,
 					["Gadhz"] = true,
-					["Fatzvonan"] = true,
+					["Zobla"] = true,
 					["Pinchy"] = true,
 					["Tulalan"] = true,
 					["Hailhiler"] = true,
-					["Shamaraj"] = true,
+					["Deristepala"] = true,
 					["Nolimitzo"] = true,
 					["Gvozdenko"] = true,
 					["Sanurox"] = true,
 					["Caruzzo"] = true,
+					["Deathrisear"] = true,
 					["Zliburek"] = true,
-					["Brankec"] = true,
-					["Zobla"] = true,
+					["Dotovepabezi"] = true,
+					["Zikssd"] = true,
 					["Volvox"] = true,
-					["Rastko"] = true,
+					["Cryosix"] = true,
 					["Mxzq"] = true,
-					["Analnass"] = true,
+					["Voodoopop"] = true,
 					["Deriste"] = true,
 					["Senzacija"] = true,
 					["Mileram"] = true,
+					["Gamzy"] = true,
+					["Shamaraj"] = true,
+					["Tendo"] = true,
+					["Cvijeta"] = true,
 					["Cryö"] = true,
-					["Rougerogue"] = true,
-					["Deristepala"] = true,
-					["Picijigrip"] = true,
-					["Nabijac"] = true,
-					["Kizzami"] = true,
-					["Rodstorm"] = true,
-					["Linn"] = true,
+					["Zvinglas"] = true,
+					["Fatzvonan"] = true,
+					["Tanatoz"] = true,
 					["Severniprinc"] = true,
-					["Staritravar"] = true,
+					["Batohou"] = true,
 					["Amerikanac"] = true,
 					["Bloodelfface"] = true,
 					["Kekbo"] = true,
-					["Nanah"] = true,
-					["Doktorce"] = true,
+					["Udvik"] = true,
+					["Shaiyan"] = true,
 					["Quepriest"] = true,
 					["Neptun"] = true,
 					["Kljovurina"] = true,
-					["Mesnica"] = true,
+					["Casualarrow"] = true,
 					["Insomnià"] = true,
-					["Miilkmaster"] = true,
-					["Darthraven"] = true,
+					["Nanah"] = true,
+					["Rodson"] = true,
 					["Nachtbane"] = true,
 					["Zikss"] = true,
 					["Stolee"] = true,
 					["Battlearm"] = true,
 					["Prixa"] = true,
-					["Pichica"] = true,
+					["Zingaba"] = true,
 					["Neavox"] = true,
 					["Dotzftw"] = true,
-					["Pingvin"] = true,
+					["Rixacat"] = true,
 					["Firelife"] = true,
-					["Dimedk"] = true,
+					["Getfe"] = true,
 					["Zhlex"] = true,
 					["Hrixa"] = true,
-					["Zvinglas"] = true,
-					["Torbar"] = true,
-					["Silaa"] = true,
-					["Zingaba"] = true,
-					["Veterko"] = true,
+					["Oktavijan"] = true,
+					["Zurkica"] = true,
+					["Motamgens"] = true,
+					["Trapavi"] = true,
+					["Ludidzukac"] = true,
 					["Frudz"] = true,
 					["Sanurok"] = true,
-					["Ludidzukac"] = true,
-					["Bobrock"] = true,
+					["Kinven"] = true,
+					["Grommovnik"] = true,
 					["Cropro"] = true,
 					["Restosisa"] = true,
-					["ßoa"] = true,
+					["Mesnica"] = true,
 					["Gagaa"] = true,
-					["Getfe"] = true,
-					["Grommovnik"] = true,
-					["Narkotixm"] = true,
-					["Batohou"] = true,
+					["Deristedk"] = true,
+					["Darthraven"] = true,
+					["Vermin"] = true,
+					["ßoa"] = true,
 					["Machbath"] = true,
-					["Motamgens"] = true,
+					["ßooha"] = true,
 					["Primordus"] = true,
 					["Peroneus"] = true,
 					["Arkanara"] = true,
 					["Mmf"] = true,
 					["Frasime"] = true,
-					["Shadowlord"] = true,
-					["Gvozdenija"] = true,
-					["Rodson"] = true,
-					["Qqlele"] = true,
-					["Ouyezi"] = true,
+					["Miilkmaster"] = true,
+					["Shøcker"] = true,
 					["Fardrik"] = true,
-					["Deathxpala"] = true,
-					["Redfall"] = true,
+					["Torbar"] = true,
+					["Ouyezi"] = true,
 					["Pidza"] = true,
+					["Redfall"] = true,
+					["Qqlele"] = true,
+					["Deathxpala"] = true,
 					["Iven"] = true,
 					["Mirosb"] = true,
-					["Shøcker"] = true,
+					["Gvozdenija"] = true,
 					["Cortanaa"] = true,
-					["Vermin"] = true,
-					["Trapavi"] = true,
-					["Udvik"] = true,
-					["Dotovepabezi"] = true,
+					["Narkotixm"] = true,
+					["Doktorce"] = true,
+					["Pichica"] = true,
+					["Nabijac"] = true,
 					["Crimsonlock"] = true,
 					["Grimford"] = true,
 					["Wrathjoksa"] = true,
 					["Sprime"] = true,
-					["Kinven"] = true,
-					["Yahara"] = true,
+					["Majmoon"] = true,
+					["Kizzami"] = true,
 					["Xskull"] = true,
 					["Brotherofwar"] = true,
-					["Gamzy"] = true,
-					["Casualarrow"] = true,
-					["Pullpyke"] = true,
 					["Bolesni"] = true,
+					["Rougerogue"] = true,
+					["Pullpyke"] = true,
+					["Staritravar"] = true,
 					["Crixlax"] = true,
-					["Veverko"] = true,
+					["Shadowlord"] = true,
 					["ßuha"] = true,
 					["Drathlord"] = true,
 					["Blackkbird"] = true,
 					["Episkop"] = true,
-					["Tendo"] = true,
-					["Tanatoz"] = true,
-					["Cvijeta"] = true,
+					["Dimedk"] = true,
+					["Picijigrip"] = true,
+					["Veverko"] = true,
 					["Ilnabooll"] = true,
 					["Crimsonshock"] = true,
 					["Smarach"] = true,
 					["Zhilex"] = true,
-					["Voodoopop"] = true,
-					["Zikssd"] = true,
-					["Cryosix"] = true,
-					["Deathrisear"] = true,
+					["Sanufrost"] = true,
+					["Rastko"] = true,
+					["Yahara"] = true,
+					["Brankec"] = true,
 				},
 				["Mxzq"] = {
 					["Xteer"] = true,
@@ -337,122 +337,120 @@ GroupieDB = {
 					["Sanurox"] = true,
 					["Caruzzo"] = true,
 					["Zliburek"] = true,
-					["Brankec"] = true,
-					["Analnass"] = true,
+					["Deathrisear"] = true,
+					["Linn"] = true,
 					["Volvox"] = true,
-					["Rastko"] = true,
+					["Zikssd"] = true,
 					["Mxzq"] = true,
-					["Fatzvonan"] = true,
+					["Cryosix"] = true,
 					["Deriste"] = true,
 					["Senzacija"] = true,
 					["Mileram"] = true,
 					["Crimsonshock"] = true,
-					["Voodoopop"] = true,
+					["Batohou"] = true,
 					["Cvijeta"] = true,
-					["Nabijac"] = true,
-					["Rodstorm"] = true,
-					["Miilkmaster"] = true,
+					["Shadowlord"] = true,
+					["Pichica"] = true,
+					["ßooha"] = true,
 					["Veverko"] = true,
 					["Dimedk"] = true,
 					["Severniprinc"] = true,
-					["Darthraven"] = true,
 					["Amerikanac"] = true,
+					["Darthraven"] = true,
 					["Bloodelfface"] = true,
 					["Kekbo"] = true,
 					["Gamzy"] = true,
-					["Shaiyan"] = true,
+					["Neptun"] = true,
 					["Quepriest"] = true,
 					["Doktorce"] = true,
 					["Kljovurina"] = true,
 					["Pingvin"] = true,
 					["Insomnià"] = true,
-					["Zvinglas"] = true,
-					["Zikss"] = true,
-					["Staritravar"] = true,
+					["Nachtbane"] = true,
 					["Nanah"] = true,
+					["Staritravar"] = true,
+					["Zikss"] = true,
 					["Stolee"] = true,
 					["Battlearm"] = true,
 					["Prixa"] = true,
-					["Bolesni"] = true,
+					["Neavox"] = true,
 					["Mesnica"] = true,
-					["Dotzftw"] = true,
-					["Yahara"] = true,
+					["Bolesni"] = true,
+					["Zhlex"] = true,
 					["Firelife"] = true,
-					["Hrixa"] = true,
-					["Casualarrow"] = true,
 					["Kizzami"] = true,
+					["Casualarrow"] = true,
+					["Hrixa"] = true,
 					["Veterko"] = true,
-					["Tendo"] = true,
-					["Bobrock"] = true,
+					["Ludidzukac"] = true,
+					["ßoa"] = true,
 					["Zingaba"] = true,
-					["Sanurok"] = true,
-					["Frudz"] = true,
 					["Kinven"] = true,
+					["Frudz"] = true,
+					["Sanurok"] = true,
 					["Deristepala"] = true,
-					["Torbar"] = true,
 					["Cropro"] = true,
+					["Torbar"] = true,
 					["Restosisa"] = true,
 					["Udvik"] = true,
-					["Cryö"] = true,
-					["Dotovepabezi"] = true,
-					["Gagaa"] = true,
-					["Narkotixm"] = true,
+					["Trapavi"] = true,
+					["Tanatoz"] = true,
+					["Picijigrip"] = true,
+					["Vermin"] = true,
 					["Rodson"] = true,
 					["Machbath"] = true,
-					["Grommovnik"] = true,
+					["Motamgens"] = true,
 					["Primordus"] = true,
 					["Peroneus"] = true,
 					["Arkanara"] = true,
 					["Mmf"] = true,
 					["Frasime"] = true,
-					["Gvozdenija"] = true,
 					["Shøcker"] = true,
+					["Gvozdenija"] = true,
 					["Getfe"] = true,
-					["Deathxpala"] = true,
+					["Pidza"] = true,
 					["Ouyezi"] = true,
 					["Fardrik"] = true,
-					["Qqlele"] = true,
 					["Redfall"] = true,
-					["Pidza"] = true,
+					["Deathxpala"] = true,
+					["Qqlele"] = true,
 					["Iven"] = true,
 					["Mirosb"] = true,
-					["Motamgens"] = true,
+					["Grommovnik"] = true,
 					["Cortanaa"] = true,
-					["Vermin"] = true,
-					["Picijigrip"] = true,
-					["Tanatoz"] = true,
-					["Trapavi"] = true,
+					["Narkotixm"] = true,
+					["Gagaa"] = true,
+					["Dotovepabezi"] = true,
+					["Cryö"] = true,
 					["Crimsonlock"] = true,
 					["Grimford"] = true,
 					["Wrathjoksa"] = true,
 					["Sprime"] = true,
-					["ßoa"] = true,
-					["Ludidzukac"] = true,
+					["Bobrock"] = true,
+					["Tendo"] = true,
 					["Xskull"] = true,
 					["Brotherofwar"] = true,
-					["Zhlex"] = true,
-					["Neavox"] = true,
+					["Yahara"] = true,
+					["Dotzftw"] = true,
 					["Pullpyke"] = true,
-					["Nachtbane"] = true,
+					["Zvinglas"] = true,
 					["Crixlax"] = true,
-					["Neptun"] = true,
+					["Shaiyan"] = true,
 					["ßuha"] = true,
 					["Drathlord"] = true,
 					["Blackkbird"] = true,
 					["Episkop"] = true,
-					["ßooha"] = true,
-					["Pichica"] = true,
-					["Shadowlord"] = true,
+					["Miilkmaster"] = true,
+					["Rodstorm"] = true,
+					["Nabijac"] = true,
 					["Ilnabooll"] = true,
-					["Batohou"] = true,
+					["Voodoopop"] = true,
 					["Smarach"] = true,
 					["Zhilex"] = true,
-					["Cryosix"] = true,
-					["Zikssd"] = true,
-					["Linn"] = true,
-					["Deathrisear"] = true,
-				},
-				["Mxyz"] = {
+					["Fatzvonan"] = true,
+					["Rastko"] = true,
+					["Analnass"] = true,
+					["Brankec"] = true,
 				},
 				["Vermina"] = {
 					["Xteer"] = true,
@@ -540,120 +538,122 @@ GroupieDB = {
 					["Sanurox"] = true,
 					["Caruzzo"] = true,
 					["Zliburek"] = true,
-					["Zikss"] = true,
-					["Cryö"] = true,
+					["Brankec"] = true,
+					["Analnass"] = true,
 					["Volvox"] = true,
-					["Neavox"] = true,
+					["Rastko"] = true,
 					["Mxzq"] = true,
-					["Cryosix"] = true,
+					["Shamaraj"] = true,
 					["Deriste"] = true,
 					["Senzacija"] = true,
-					["Zikssd"] = true,
-					["Voodoopop"] = true,
 					["Mileram"] = true,
-					["Deathrisear"] = true,
-					["Gvozdenija"] = true,
-					["Crimsonshock"] = true,
-					["Zhlex"] = true,
+					["Cryö"] = true,
+					["Fatzvonan"] = true,
 					["Picijigrip"] = true,
-					["Cvijeta"] = true,
+					["Nabijac"] = true,
+					["Tendo"] = true,
+					["Rodstorm"] = true,
+					["Veverko"] = true,
+					["Pichica"] = true,
 					["Severniprinc"] = true,
-					["Shadowlord"] = true,
+					["Miilkmaster"] = true,
 					["Amerikanac"] = true,
 					["Bloodelfface"] = true,
 					["Kekbo"] = true,
-					["Rougerogue"] = true,
-					["Tendo"] = true,
+					["Gamzy"] = true,
+					["Pingvin"] = true,
 					["Quepriest"] = true,
 					["Doktorce"] = true,
 					["Kljovurina"] = true,
-					["Rodstorm"] = true,
+					["Neptun"] = true,
 					["Insomnià"] = true,
-					["Dotzftw"] = true,
-					["Veverko"] = true,
-					["Nachtbane"] = true,
+					["Zikss"] = true,
+					["Dimedk"] = true,
+					["Staritravar"] = true,
 					["Nanah"] = true,
 					["Stolee"] = true,
 					["Battlearm"] = true,
 					["Prixa"] = true,
-					["Deristepala"] = true,
-					["Mesnica"] = true,
 					["Bolesni"] = true,
-					["Sanurok"] = true,
-					["Firelife"] = true,
-					["Gamzy"] = true,
-					["Casualarrow"] = true,
-					["Kizzami"] = true,
-					["Dimedk"] = true,
+					["Mesnica"] = true,
+					["Dotzftw"] = true,
 					["Zvinglas"] = true,
+					["Firelife"] = true,
+					["Hrixa"] = true,
+					["Zhlex"] = true,
+					["Kizzami"] = true,
 					["Yahara"] = true,
+					["Silaa"] = true,
+					["Majmoon"] = true,
 					["Zingaba"] = true,
-					["Veterko"] = true,
+					["Sanurok"] = true,
 					["Frudz"] = true,
 					["Kinven"] = true,
-					["Majmoon"] = true,
-					["Fardrik"] = true,
+					["Darthraven"] = true,
+					["Torbar"] = true,
 					["Cropro"] = true,
 					["Restosisa"] = true,
-					["ßoa"] = true,
-					["Darthraven"] = true,
-					["Vermin"] = true,
 					["Udvik"] = true,
-					["Trapavi"] = true,
-					["Tanatoz"] = true,
+					["Deristedk"] = true,
+					["Gagaa"] = true,
+					["Getfe"] = true,
+					["Narkotixm"] = true,
+					["Rodson"] = true,
 					["Machbath"] = true,
-					["Hyperoptic"] = true,
+					["Ludidzukac"] = true,
 					["Primordus"] = true,
 					["Peroneus"] = true,
 					["Arkanara"] = true,
 					["Mmf"] = true,
 					["Frasime"] = true,
-					["Rodson"] = true,
+					["Gvozdenija"] = true,
 					["Shøcker"] = true,
-					["Redfall"] = true,
+					["Grommovnik"] = true,
 					["Qqlele"] = true,
 					["Ouyezi"] = true,
 					["Pidza"] = true,
-					["Grommovnik"] = true,
 					["Deathxpala"] = true,
-					["Motamgens"] = true,
+					["Redfall"] = true,
+					["Fardrik"] = true,
 					["Iven"] = true,
 					["Mirosb"] = true,
-					["Ludidzukac"] = true,
+					["Motamgens"] = true,
 					["Cortanaa"] = true,
-					["Narkotixm"] = true,
-					["Getfe"] = true,
-					["Gagaa"] = true,
-					["Deristedk"] = true,
+					["Vermin"] = true,
+					["Hyperoptic"] = true,
+					["Tanatoz"] = true,
+					["Trapavi"] = true,
 					["Crimsonlock"] = true,
 					["Grimford"] = true,
 					["Wrathjoksa"] = true,
 					["Sprime"] = true,
-					["Silaa"] = true,
-					["Torbar"] = true,
+					["ßoa"] = true,
+					["Veterko"] = true,
 					["Xskull"] = true,
 					["Brotherofwar"] = true,
-					["Neptun"] = true,
-					["Pingvin"] = true,
+					["Casualarrow"] = true,
+					["Neavox"] = true,
 					["Pullpyke"] = true,
-					["Miilkmaster"] = true,
+					["Nachtbane"] = true,
 					["Crixlax"] = true,
-					["Pichica"] = true,
+					["Deristepala"] = true,
 					["ßuha"] = true,
 					["Drathlord"] = true,
 					["Blackkbird"] = true,
 					["Episkop"] = true,
-					["Staritravar"] = true,
-					["Nabijac"] = true,
-					["Hrixa"] = true,
+					["Rougerogue"] = true,
+					["Shadowlord"] = true,
+					["Cvijeta"] = true,
 					["Ilnabooll"] = true,
-					["Fatzvonan"] = true,
+					["Crimsonshock"] = true,
 					["Smarach"] = true,
 					["Zhilex"] = true,
-					["Shamaraj"] = true,
-					["Rastko"] = true,
-					["Analnass"] = true,
-					["Brankec"] = true,
+					["Voodoopop"] = true,
+					["Zikssd"] = true,
+					["Cryosix"] = true,
+					["Deathrisear"] = true,
+				},
+				["Mxyz"] = {
 				},
 				["Miqa"] = {
 				},
@@ -743,123 +743,124 @@ GroupieDB = {
 					["Caruzzo"] = true,
 					["Zliburek"] = true,
 					["Volvox"] = true,
-					["Deathrisear"] = true,
+					["Brankec"] = true,
 					["Mxzq"] = true,
-					["Tendo"] = true,
+					["Analnass"] = true,
 					["Deriste"] = true,
 					["Senzacija"] = true,
-					["Zikssd"] = true,
-					["Cryosix"] = true,
+					["Rastko"] = true,
+					["Batohou"] = true,
 					["Voodoopop"] = true,
 					["Mileram"] = true,
-					["Deristepala"] = true,
+					["Nabijac"] = true,
 					["Crimsonshock"] = true,
-					["Rougerogue"] = true,
-					["Cvijeta"] = true,
-					["Rodstorm"] = true,
+					["Picijigrip"] = true,
+					["Veverko"] = true,
+					["Cryö"] = true,
 					["Severniprinc"] = true,
 					["Miilkmaster"] = true,
 					["Amerikanac"] = true,
 					["Bloodelfface"] = true,
 					["Kekbo"] = true,
 					["Pichica"] = true,
-					["Doktorce"] = true,
-					["Quepriest"] = true,
 					["Neptun"] = true,
+					["Quepriest"] = true,
+					["Doktorce"] = true,
 					["Kljovurina"] = true,
 					["Gamzy"] = true,
 					["Insomnià"] = true,
+					["Dimedk"] = true,
+					["Zikss"] = true,
 					["Nachtbane"] = true,
 					["Nanah"] = true,
-					["Staritravar"] = true,
-					["Zikss"] = true,
 					["Stolee"] = true,
 					["Battlearm"] = true,
 					["Prixa"] = true,
+					["Bolesni"] = true,
 					["Neavox"] = true,
-					["Mesnica"] = true,
 					["Dotzftw"] = true,
 					["Pingvin"] = true,
 					["Firelife"] = true,
-					["Kizzami"] = true,
+					["Zhlex"] = true,
 					["Casualarrow"] = true,
-					["Hrixa"] = true,
-					["Bobrock"] = true,
+					["Kizzami"] = true,
+					["Zvinglas"] = true,
 					["Silaa"] = true,
 					["Yahara"] = true,
 					["Zingaba"] = true,
-					["Sanurok"] = true,
+					["Darthraven"] = true,
 					["Frudz"] = true,
-					["Kinven"] = true,
-					["Veterko"] = true,
-					["Cropro"] = true,
+					["Sanurok"] = true,
+					["Ludidzukac"] = true,
 					["Torbar"] = true,
+					["Cropro"] = true,
 					["Restosisa"] = true,
 					["Udvik"] = true,
 					["ßoa"] = true,
 					["Deristedk"] = true,
-					["Tanatoz"] = true,
-					["Dotovepabezi"] = true,
-					["Shadowlord"] = true,
+					["Gagaa"] = true,
+					["Getfe"] = true,
+					["Grommovnik"] = true,
 					["Machbath"] = true,
-					["Vermin"] = true,
+					["Narkotixm"] = true,
 					["Primordus"] = true,
 					["Peroneus"] = true,
 					["Arkanara"] = true,
 					["Mmf"] = true,
 					["Frasime"] = true,
-					["Shøcker"] = true,
 					["Gvozdenija"] = true,
-					["Rodson"] = true,
-					["Pidza"] = true,
-					["Ouyezi"] = true,
+					["Shøcker"] = true,
+					["Motamgens"] = true,
 					["Fardrik"] = true,
-					["Qqlele"] = true,
+					["Ouyezi"] = true,
+					["Pidza"] = true,
 					["Deathxpala"] = true,
+					["Qqlele"] = true,
 					["Redfall"] = true,
 					["Iven"] = true,
 					["Mirosb"] = true,
-					["Motamgens"] = true,
+					["Rodson"] = true,
 					["Cortanaa"] = true,
-					["Narkotixm"] = true,
-					["Grommovnik"] = true,
-					["Getfe"] = true,
-					["Gagaa"] = true,
+					["Vermin"] = true,
+					["Shadowlord"] = true,
+					["Dotovepabezi"] = true,
+					["Tanatoz"] = true,
 					["Crimsonlock"] = true,
 					["Grimford"] = true,
 					["Wrathjoksa"] = true,
 					["Sprime"] = true,
-					["Ludidzukac"] = true,
-					["Darthraven"] = true,
+					["Veterko"] = true,
+					["Kinven"] = true,
 					["Xskull"] = true,
 					["Brotherofwar"] = true,
-					["Zvinglas"] = true,
-					["Zhlex"] = true,
+					["Bobrock"] = true,
+					["Hrixa"] = true,
 					["Pullpyke"] = true,
-					["Bolesni"] = true,
+					["Mesnica"] = true,
 					["Crixlax"] = true,
-					["Dimedk"] = true,
+					["Staritravar"] = true,
 					["ßuha"] = true,
 					["Drathlord"] = true,
 					["Blackkbird"] = true,
 					["Episkop"] = true,
-					["Cryö"] = true,
-					["Veverko"] = true,
-					["Picijigrip"] = true,
+					["Rodstorm"] = true,
+					["Cvijeta"] = true,
+					["Rougerogue"] = true,
 					["Ilnabooll"] = true,
-					["Nabijac"] = true,
+					["Deristepala"] = true,
 					["Smarach"] = true,
 					["Zhilex"] = true,
-					["Batohou"] = true,
-					["Rastko"] = true,
-					["Analnass"] = true,
-					["Brankec"] = true,
+					["Cryosix"] = true,
+					["Zikssd"] = true,
+					["Tendo"] = true,
+					["Deathrisear"] = true,
 				},
 				["Vermin"] = {
 					["Xteer"] = true,
 					["Gagi"] = true,
 					["Prenkydk"] = true,
 					["Zagortezmay"] = true,
+					["Skafander"] = true,
 					["Furuna"] = true,
 					["Grdac"] = true,
 					["Majmoon"] = true,
@@ -868,7 +869,7 @@ GroupieDB = {
 					["Crimsonshot"] = true,
 					["Muldan"] = true,
 					["Crimsonblast"] = true,
-					["Zurkica"] = true,
+					["Pingvin"] = true,
 					["Warixa"] = true,
 					["Zikkss"] = true,
 					["Prvak"] = true,
@@ -876,8 +877,8 @@ GroupieDB = {
 					["Melde"] = true,
 					["ßuhá"] = true,
 					["Deadwalk"] = true,
-					["Joskec"] = true,
-					["ßooha"] = true,
+					["Voodoopop"] = true,
+					["Silaa"] = true,
 					["Hennessyxo"] = true,
 					["Rinnerebirt"] = true,
 					["Karnan"] = true,
@@ -932,7 +933,7 @@ GroupieDB = {
 					["Shushumigica"] = true,
 					["Gadhz"] = true,
 					["Zobla"] = true,
-					["Pinchy"] = true,
+					["Gamzy"] = true,
 					["Tulalan"] = true,
 					["Hailhiler"] = true,
 					["Deristepala"] = true,
@@ -940,135 +941,138 @@ GroupieDB = {
 					["Gvozdenko"] = true,
 					["Sanurox"] = true,
 					["Caruzzo"] = true,
+					["Brankec"] = true,
 					["Zliburek"] = true,
-					["Deathrisear"] = true,
-					["Cryosix"] = true,
+					["Tendo"] = true,
+					["Rastko"] = true,
 					["Volvox"] = true,
-					["Zikssd"] = true,
+					["Shamaraj"] = true,
 					["Mxzq"] = true,
-					["Voodoopop"] = true,
+					["Analnass"] = true,
 					["Deriste"] = true,
 					["Senzacija"] = true,
-					["Mileram"] = true,
-					["Hyperoptic"] = true,
 					["Crimsonshock"] = true,
-					["Fatzvonan"] = true,
 					["Cvijeta"] = true,
-					["Picijigrip"] = true,
-					["Rougerogue"] = true,
-					["Pichica"] = true,
-					["Neptun"] = true,
+					["Hyperoptic"] = true,
+					["Fatzvonan"] = true,
+					["Veverko"] = true,
+					["Pinchy"] = true,
+					["Joskec"] = true,
+					["Bobrock"] = true,
+					["Nabijac"] = true,
 					["Severniprinc"] = true,
-					["Miilkmaster"] = true,
+					["Doktorce"] = true,
 					["Amerikanac"] = true,
 					["Bloodelfface"] = true,
 					["Kekbo"] = true,
-					["Darthraven"] = true,
-					["Veverko"] = true,
-					["Quepriest"] = true,
-					["Doktorce"] = true,
-					["Kljovurina"] = true,
+					["Staritravar"] = true,
 					["Zikss"] = true,
+					["Quepriest"] = true,
+					["Neptun"] = true,
+					["Kljovurina"] = true,
+					["Pichica"] = true,
 					["Insomnià"] = true,
-					["Bolesni"] = true,
-					["Neavox"] = true,
+					["Mesnica"] = true,
+					["Gagaa"] = true,
 					["Nachtbane"] = true,
 					["Nanah"] = true,
 					["Stolee"] = true,
 					["Battlearm"] = true,
 					["Prixa"] = true,
-					["Casualarrow"] = true,
-					["Mesnica"] = true,
-					["Dotzftw"] = true,
-					["Gamzy"] = true,
+					["Kizzami"] = true,
+					["Neavox"] = true,
+					["Bolesni"] = true,
+					["Rixacat"] = true,
 					["Firelife"] = true,
-					["Zvinglas"] = true,
 					["Zhlex"] = true,
+					["Casualarrow"] = true,
 					["Hrixa"] = true,
-					["Silaa"] = true,
-					["Yahara"] = true,
-					["Kinven"] = true,
-					["Zingaba"] = true,
-					["Motamgens"] = true,
-					["Frudz"] = true,
+					["Miilkmaster"] = true,
+					["Dotovepabezi"] = true,
 					["Sanurok"] = true,
-					["Bobrock"] = true,
-					["Cropro"] = true,
-					["Torbar"] = true,
-					["Restosisa"] = true,
-					["ßoa"] = true,
-					["Cryö"] = true,
-					["Udvik"] = true,
+					["Zingaba"] = true,
 					["Trapavi"] = true,
-					["Narkotixm"] = true,
-					["Shadowlord"] = true,
+					["Frudz"] = true,
+					["Kinven"] = true,
+					["Tanatoz"] = true,
+					["Torbar"] = true,
+					["Cropro"] = true,
+					["Restosisa"] = true,
+					["Zurkica"] = true,
+					["ßooha"] = true,
+					["Darthraven"] = true,
+					["Cryö"] = true,
+					["Vermin"] = true,
+					["Motamgens"] = true,
 					["Machbath"] = true,
-					["Shøcker"] = true,
+					["Gvozdenija"] = true,
 					["Primordus"] = true,
 					["Peroneus"] = true,
 					["Arkanara"] = true,
 					["Mmf"] = true,
 					["Frasime"] = true,
-					["Rodson"] = true,
-					["Gvozdenija"] = true,
-					["Tanatoz"] = true,
-					["Qqlele"] = true,
-					["Ouyezi"] = true,
-					["Pidza"] = true,
-					["Redfall"] = true,
+					["Getfe"] = true,
+					["Shøcker"] = true,
+					["Grommovnik"] = true,
 					["Deathxpala"] = true,
+					["Ouyezi"] = true,
 					["Fardrik"] = true,
+					["Qqlele"] = true,
+					["Redfall"] = true,
+					["Pidza"] = true,
 					["Iven"] = true,
 					["Mirosb"] = true,
 					["Ludidzukac"] = true,
 					["Cortanaa"] = true,
-					["Vermin"] = true,
-					["Grommovnik"] = true,
-					["Getfe"] = true,
-					["Gagaa"] = true,
+					["Narkotixm"] = true,
+					["Rodson"] = true,
+					["Shadowlord"] = true,
+					["Rougerogue"] = true,
 					["Crimsonlock"] = true,
 					["Grimford"] = true,
 					["Wrathjoksa"] = true,
 					["Sprime"] = true,
-					["Veterko"] = true,
-					["Dotovepabezi"] = true,
+					["Udvik"] = true,
+					["ßoa"] = true,
 					["Xskull"] = true,
 					["Brotherofwar"] = true,
-					["Kizzami"] = true,
-					["Dimedk"] = true,
+					["Picijigrip"] = true,
+					["Dotzftw"] = true,
 					["Pullpyke"] = true,
-					["Pingvin"] = true,
+					["Yahara"] = true,
 					["Crixlax"] = true,
-					["Staritravar"] = true,
+					["Zvinglas"] = true,
 					["ßuha"] = true,
 					["Drathlord"] = true,
 					["Blackkbird"] = true,
 					["Episkop"] = true,
+					["Dimedk"] = true,
 					["Linn"] = true,
 					["Rodstorm"] = true,
-					["Tendo"] = true,
 					["Ilnabooll"] = true,
-					["Nabijac"] = true,
+					["Veterko"] = true,
 					["Smarach"] = true,
 					["Zhilex"] = true,
-					["Shamaraj"] = true,
-					["Rastko"] = true,
-					["Analnass"] = true,
-					["Brankec"] = true,
+					["Mileram"] = true,
+					["Zikssd"] = true,
+					["Cryosix"] = true,
+					["Deathrisear"] = true,
 				},
+			},
+			["Gehennas"] = {
 			},
 		},
 		["showMinimap"] = false,
 		["ignorenotes"] = {
-			["Gehennas"] = {
-			},
 			["Golemagg"] = {
+			},
+			["Gehennas"] = {
 			},
 		},
 		["hiddenFriendLists"] = {
-			["Gehennas"] = {
-			},
 			["Golemagg"] = {
+			},
+			["Gehennas"] = {
 			},
 		},
 		["savedInstanceInfo"] = {
@@ -1076,23 +1080,23 @@ GroupieDB = {
 				["Vermin"] = {
 					["characterName"] = "Vermin",
 					["isHeroic"] = false,
-					["resetTime"] = 1677038400,
+					["resetTime"] = 1677038402,
 					["instance"] = "Karazhan",
 					["classColor"] = "C79C6E",
 					["groupSize"] = 10,
 				},
 			},
-			[3160] = {
+			[3310] = {
 			},
-			[3340] = {
+			[3440] = {
 			},
-			[3240] = {
+			[3420] = {
 			},
 			[1300] = {
 				["Vermin"] = {
 					["characterName"] = "Vermin",
 					["isHeroic"] = false,
-					["resetTime"] = 1676692800,
+					["resetTime"] = 1676692802,
 					["instance"] = "Zul'Gurub",
 					["classColor"] = "C79C6E",
 					["groupSize"] = 20,
@@ -1100,19 +1104,19 @@ GroupieDB = {
 			},
 			[3350] = {
 			},
-			[3330] = {
-			},
-			[3430] = {
+			[3320] = {
 			},
 			[3410] = {
 			},
-			[3320] = {
+			[3430] = {
 			},
-			[3420] = {
+			[3330] = {
 			},
-			[3440] = {
+			[3240] = {
 			},
-			[3310] = {
+			[3340] = {
+			},
+			[3160] = {
 			},
 		},
 		["savedInstanceLogs"] = {
@@ -1131,23 +1135,80 @@ GroupieDB = {
 		["lastServer"] = "Golemagg",
 		["configVer"] = 1.66,
 		["UIScale"] = 0.9,
-		["lastShowedInfoPopup"] = 1.66,
-		["gearSummaryTooltips"] = false,
-		["friendnotes"] = {
+		["groupieFriends"] = {
+			["Golemagg"] = {
+			},
 			["Gehennas"] = {
 			},
+		},
+		["announceInstanceReset"] = false,
+		["friendnotes"] = {
 			["Golemagg"] = {
+			},
+			["Gehennas"] = {
 			},
 		},
 		["charSheetYOffset"] = 15,
 		["groupieIgnores"] = {
-			["Gehennas"] = {
-			},
 			["Golemagg"] = {
 			},
+			["Gehennas"] = {
+			},
 		},
-		["highestSeenVersion"] = 1.66,
+		["lastShowedInfoPopup"] = 1.66,
 		["listingTable"] = {
+			["Mortgore-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3210,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Old Kingdom",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "OK.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Old Kingdom",
+				["author"] = "Mortgore-Golemagg",
+				["instanceID"] = 619,
+				["maxLevel"] = 80,
+				["classColor"] = "c41f3b",
+				["minLevel"] = 80,
+				["resultID"] = 126,
+				["instanceName"] = "Old Kingdom",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676482552,
+			},
+			["Viitto-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Vault of Archavon 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Viitto-Golemagg",
+				["instanceID"] = 624,
+				["createdat"] = 1676489964,
+				["classColor"] = "f58cba",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490287,
+				["resultID"] = 113,
+			},
 			["Amfetamin-Golemagg"] = {
 				["isLFG"] = true,
 				["order"] = -1,
@@ -1161,20 +1222,20 @@ GroupieDB = {
 				},
 				["fullName"] = "The Crown Chemical Co.",
 				["author"] = "Amfetamin-Golemagg",
-				["instanceID"] = 33,
-				["classColor"] = "ff7d0a",
-				["resultID"] = 13,
+				["maxLevel"] = 80,
 				["createdat"] = 1676449560,
-				["instanceName"] = "The Crown Chemical Co.",
+				["instanceID"] = 33,
+				["resultID"] = 13,
+				["minLevel"] = 78,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "The Crown Chemical Co.",
 				["timestamp"] = 1676450216,
-				["minLevel"] = 78,
-				["maxLevel"] = 80,
+				["classColor"] = "ff7d0a",
 			},
 			["Hebehurgya-Golemagg"] = {
 				["isLFG"] = false,
@@ -1195,12 +1256,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Hebehurgya-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "FF7D0A",
-				["createdat"] = 1676454397,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454769,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -1208,6 +1265,34 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676454769,
+				["createdat"] = 1676454397,
+			},
+			["Myys-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3320,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 10",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Myys-Golemagg",
+				["instanceID"] = 624,
+				["createdat"] = 1676490140,
+				["classColor"] = "ff7d0a",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490287,
+				["resultID"] = 117,
 			},
 			["Hejskii-Golemagg"] = {
 				["isLFG"] = true,
@@ -1223,15 +1308,15 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Hejskii-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "f58cba",
-				["createdat"] = 1676451880,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676451880,
+				["resultID"] = 62,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452070,
-				["resultID"] = 62,
-				["instanceID"] = 624,
+				["classColor"] = "f58cba",
 			},
 			["Merolynn-Golemagg"] = {
 				["isLFG"] = false,
@@ -1253,12 +1338,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Merolynn-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "0070DE",
-				["createdat"] = 1676455105,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676455108,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -1266,6 +1347,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676455108,
+				["createdat"] = 1676455105,
 			},
 			["Kruimbo-Golemagg"] = {
 				["isLFG"] = false,
@@ -1289,12 +1374,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Kruimbo-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "C79C6E",
-				["createdat"] = 1676453231,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676453837,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -1302,6 +1383,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676453837,
+				["createdat"] = 1676453231,
 			},
 			["Pocetnik-Golemagg"] = {
 				["isLFG"] = false,
@@ -1325,15 +1410,15 @@ GroupieDB = {
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Pocetnik-Golemagg",
 				["instanceID"] = 601,
+				["classColor"] = "9482C9",
+				["maxLevel"] = 80,
 				["minLevel"] = 80,
-				["createdat"] = 1676451623,
+				["instanceName"] = "Azjol-Nerub",
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
-				["instanceName"] = "Azjol-Nerub",
 				["timestamp"] = 1676451641,
-				["maxLevel"] = 80,
-				["classColor"] = "9482C9",
+				["createdat"] = 1676451623,
 			},
 			["Andeven-Golemagg"] = {
 				["isLFG"] = false,
@@ -1359,19 +1444,19 @@ GroupieDB = {
 				},
 				["fullName"] = "PVP",
 				["author"] = "Andeven-Golemagg",
+				["maxLevel"] = 1000,
 				["classColor"] = "69CCF0",
-				["instanceID"] = -1,
-				["createdat"] = 1676449471,
-				["minLevel"] = 0,
-				["instanceName"] = "PVP",
-				["timestamp"] = 1676449794,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["maxLevel"] = 1000,
+				["createdat"] = 1676449471,
+				["minLevel"] = 0,
+				["instanceName"] = "PVP",
+				["timestamp"] = 1676449794,
+				["instanceID"] = -1,
 			},
 			["Dedinho-Golemagg"] = {
 				["isLFG"] = false,
@@ -1398,18 +1483,18 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Dedinho-Golemagg",
 				["instanceID"] = 624,
+				["classColor"] = "C41F3B",
+				["maxLevel"] = 80,
 				["minLevel"] = 80,
-				["createdat"] = 1676451486,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676451996,
-				["maxLevel"] = 80,
-				["classColor"] = "C41F3B",
+				["createdat"] = 1676451486,
 			},
 			["Macfluffness-Golemagg"] = {
 				["isLFG"] = false,
@@ -1444,12 +1529,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Naxxramas - 10",
 				["author"] = "Macfluffness-Golemagg",
-				["instanceID"] = 533,
 				["classColor"] = "0070DE",
-				["createdat"] = 1676457630,
-				["maxLevel"] = 80,
-				["instanceName"] = "Naxxramas",
-				["timestamp"] = 1676458156,
+				["instanceID"] = 533,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
@@ -1457,6 +1538,62 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676458156,
+				["createdat"] = 1676457630,
+			},
+			["Sacredlight-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3320,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Vault of Archavon 10 | 8/10 in Group",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Sacredlight-Golemagg",
+				["instanceID"] = 624,
+				["createdat"] = 1676490200,
+				["classColor"] = "f58cba",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490288,
+				["resultID"] = 176,
+			},
+			["Grizzlan-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1150,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Zul'Farrak",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ZF.tga",
+				["words"] = {
+				},
+				["fullName"] = "Zul'Farrak",
+				["author"] = "Grizzlan-Golemagg",
+				["classColor"] = "abd473",
+				["minLevel"] = 42,
+				["instanceID"] = 209,
+				["createdat"] = 1676482014,
+				["resultID"] = 143,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Zul'Farrak",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 50,
 			},
 			["Dotsaloth-Golemagg"] = {
 				["isLFG"] = false,
@@ -1477,15 +1614,15 @@ GroupieDB = {
 				["fullName"] = "Miscellaneous",
 				["author"] = "Dotsaloth-Golemagg",
 				["instanceID"] = -1,
+				["classColor"] = "FFFFFF",
+				["maxLevel"] = 1000,
 				["minLevel"] = 0,
-				["createdat"] = 1676452018,
+				["instanceName"] = "Miscellaneous",
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
-				["instanceName"] = "Miscellaneous",
 				["timestamp"] = 1676454001,
-				["maxLevel"] = 1000,
-				["classColor"] = "FFFFFF",
+				["createdat"] = 1676452018,
 			},
 			["Audreyb-Golemagg"] = {
 				["isLFG"] = false,
@@ -1511,16 +1648,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Audreyb-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "C41F3B",
-				["instanceID"] = 624,
+				["rolesNeeded"] = {
+					1, -- [1]
+				},
 				["createdat"] = 1676449638,
 				["minLevel"] = 80,
 				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676453308,
-				["rolesNeeded"] = {
-					1, -- [1]
-				},
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
 			["Hizanry-Golemagg"] = {
 				["isLFG"] = false,
@@ -1542,12 +1679,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Hizanry-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "9482C9",
-				["createdat"] = 1676454870,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454870,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -1555,6 +1688,38 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676454870,
+				["createdat"] = 1676454870,
+			},
+			["Whodis-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Whodis-Golemagg",
+				["instanceID"] = 33,
+				["maxLevel"] = 80,
+				["classColor"] = "c79c6e",
+				["minLevel"] = 78,
+				["resultID"] = 118,
+				["instanceName"] = "The Crown Chemical Co.",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676482561,
 			},
 			["Randoomone-Golemagg"] = {
 				["isLFG"] = true,
@@ -1569,16 +1734,51 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Randoomone-Golemagg",
-				["classColor"] = "c41f3b",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 478,
+				["classColor"] = "c41f3b",
+				["minLevel"] = 80,
+				["createdat"] = 1676453210,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676453210,
+				["instanceID"] = 624,
+			},
+			["Dungie-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3320,
+				["msg"] = "LFM VoA10 Class run, need DK last spot",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"voa10", -- [2]
+					"class", -- [3]
+					"run", -- [4]
+					"need", -- [5]
+					"dk", -- [6]
+					"last", -- [7]
+					"spot", -- [8]
+				},
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Dungie-Golemagg",
+				["instanceID"] = 624,
+				["classColor"] = "FFFFFF",
 				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483465,
+				["createdat"] = 1676483465,
 			},
 			["Kickback-Golemagg"] = {
 				["isLFG"] = false,
@@ -1596,12 +1796,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Kickback-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "FFF569",
-				["createdat"] = 1676454820,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676454820,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -1609,6 +1805,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676454820,
+				["createdat"] = 1676454820,
 			},
 			["Metaloide-Golemagg"] = {
 				["isLFG"] = false,
@@ -1633,16 +1833,16 @@ GroupieDB = {
 				["fullName"] = "Naxxramas - 10",
 				["author"] = "Metaloide-Golemagg",
 				["instanceID"] = 533,
-				["instanceName"] = "Naxxramas",
+				["classColor"] = "C79C6E",
+				["maxLevel"] = 80,
 				["createdat"] = 1676458659,
-				["minLevel"] = 80,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
+				["instanceName"] = "Naxxramas",
 				["timestamp"] = 1676458659,
-				["maxLevel"] = 80,
-				["classColor"] = "C79C6E",
+				["minLevel"] = 80,
 			},
 			["Grannys-Golemagg"] = {
 				["isLFG"] = false,
@@ -1657,18 +1857,18 @@ GroupieDB = {
 				},
 				["fullName"] = "Halls of Stone",
 				["author"] = "Grannys-Golemagg",
-				["classColor"] = "40c7eb",
-				["instanceID"] = 599,
-				["minLevel"] = 75,
+				["maxLevel"] = 80,
 				["resultID"] = 383,
+				["classColor"] = "40c7eb",
+				["minLevel"] = 75,
+				["createdat"] = 1676451315,
+				["instanceName"] = "Halls of Stone",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 				},
-				["instanceName"] = "Halls of Stone",
 				["timestamp"] = 1676452720,
-				["createdat"] = 1676451315,
-				["maxLevel"] = 80,
+				["instanceID"] = 599,
 			},
 			["Keksic-Golemagg"] = {
 				["isLFG"] = true,
@@ -1683,20 +1883,20 @@ GroupieDB = {
 				},
 				["fullName"] = "Nexus",
 				["author"] = "Keksic-Golemagg",
-				["instanceName"] = "Nexus",
-				["instanceID"] = 576,
-				["minLevel"] = 70,
-				["resultID"] = 795,
 				["maxLevel"] = 75,
+				["resultID"] = 795,
+				["classColor"] = "abd473",
+				["minLevel"] = 70,
+				["createdat"] = 1676458556,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "Nexus",
 				["timestamp"] = 1676458818,
-				["createdat"] = 1676458556,
-				["classColor"] = "abd473",
+				["instanceID"] = 576,
 			},
 			["Tines-Golemagg"] = {
 				["isLFG"] = false,
@@ -1719,18 +1919,18 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Tines-Golemagg",
 				["instanceID"] = 624,
+				["classColor"] = "9482C9",
+				["maxLevel"] = 80,
 				["minLevel"] = 80,
-				["createdat"] = 1676452019,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452019,
-				["maxLevel"] = 80,
-				["classColor"] = "9482C9",
+				["createdat"] = 1676452019,
 			},
 			["Lanlerodis-Golemagg"] = {
 				["isLFG"] = false,
@@ -1754,12 +1954,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Lanlerodis-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "C41F3B",
-				["createdat"] = 1676456505,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676456907,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -1767,6 +1963,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676456907,
+				["createdat"] = 1676456505,
 			},
 			["Elendial-Golemagg"] = {
 				["isLFG"] = false,
@@ -1789,45 +1989,45 @@ GroupieDB = {
 				},
 				["fullName"] = "Ragefire Chasm",
 				["author"] = "Elendial-Golemagg",
-				["classColor"] = "F58CBA",
 				["isLFM"] = true,
-				["createdat"] = 1676452475,
-				["instanceID"] = 389,
-				["instanceName"] = "Ragefire Chasm",
-				["timestamp"] = 1676453973,
+				["classColor"] = "F58CBA",
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
 				["minLevel"] = 13,
+				["instanceID"] = 389,
+				["instanceName"] = "Ragefire Chasm",
+				["timestamp"] = 1676453973,
+				["createdat"] = 1676452475,
 			},
-			["Lumbêrjack-Golemagg"] = {
+			["Wolframion-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3110,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Culling of Stratholme",
+				["order"] = 2020,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Slave Pens",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "COS.tga",
+				["icon"] = "SP.tga",
 				["words"] = {
 				},
-				["fullName"] = "Culling of Stratholme",
-				["author"] = "Lumbêrjack-Golemagg",
-				["instanceName"] = "Culling of Stratholme",
-				["instanceID"] = 595,
-				["minLevel"] = 78,
-				["resultID"] = 825,
-				["maxLevel"] = 80,
+				["fullName"] = "Slave Pens",
+				["author"] = "Wolframion-Golemagg",
+				["instanceID"] = 547,
+				["createdat"] = 1676489444,
+				["classColor"] = "c79c6e",
+				["maxLevel"] = 69,
+				["minLevel"] = 61,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["timestamp"] = 1676458828,
-				["createdat"] = 1676458365,
-				["classColor"] = "f58cba",
+				["instanceName"] = "Slave Pens",
+				["timestamp"] = 1676490825,
+				["resultID"] = 300,
 			},
 			["Teslabre-Golemagg"] = {
 				["isLFG"] = true,
@@ -1842,20 +2042,72 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Teslabre-Golemagg",
-				["classColor"] = "0070de",
-				["instanceID"] = 601,
-				["resultID"] = 631,
+				["maxLevel"] = 80,
 				["createdat"] = 1676457977,
+				["classColor"] = "0070de",
+				["resultID"] = 631,
+				["minLevel"] = 80,
+				["instanceName"] = "Azjol-Nerub",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Azjol-Nerub",
 				["timestamp"] = 1676458084,
-				["minLevel"] = 80,
+				["instanceID"] = 601,
+			},
+			["Zyxí-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Vault of Archavon 25 | 10/25 in Group",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Zyxí-Golemagg",
+				["instanceID"] = 624,
+				["createdat"] = 1676489991,
+				["classColor"] = "8787ed",
 				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490287,
+				["resultID"] = 160,
+			},
+			["Pallyup-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3040,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Drak'Tharon Keep",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "DTK.tga",
+				["words"] = {
+				},
+				["fullName"] = "Drak'Tharon Keep",
+				["author"] = "Pallyup-Golemagg",
+				["classColor"] = "f58cba",
+				["minLevel"] = 72,
+				["instanceID"] = 600,
+				["createdat"] = 1676483374,
+				["resultID"] = 129,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Drak'Tharon Keep",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 78,
 			},
 			["Gallynx-Golemagg"] = {
 				["isLFG"] = true,
@@ -1871,19 +2123,47 @@ GroupieDB = {
 				["fullName"] = "The Crown Chemical Co.",
 				["author"] = "Gallynx-Golemagg",
 				["maxLevel"] = 80,
+				["minLevel"] = 78,
 				["instanceID"] = 33,
-				["classColor"] = "c41f3b",
+				["createdat"] = 1676446489,
 				["resultID"] = 12,
+				["instanceName"] = "The Crown Chemical Co.",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "The Crown Chemical Co.",
 				["timestamp"] = 1676446944,
-				["createdat"] = 1676446489,
-				["minLevel"] = 78,
+				["classColor"] = "c41f3b",
+			},
+			["Awann-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3020,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Azjol-Nerub",
+				["author"] = "Awann-Golemagg",
+				["instanceName"] = "Azjol-Nerub",
+				["resultID"] = 340,
+				["instanceID"] = 601,
+				["classColor"] = "ff7d0a",
+				["createdat"] = 1676490428,
+				["maxLevel"] = 77,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490825,
+				["minLevel"] = 70,
 			},
 			["Nahayu-Golemagg"] = {
 				["isLFG"] = true,
@@ -1899,47 +2179,71 @@ GroupieDB = {
 				["fullName"] = "Culling of Stratholme",
 				["author"] = "Nahayu-Golemagg",
 				["maxLevel"] = 80,
+				["minLevel"] = 78,
 				["instanceID"] = 595,
-				["classColor"] = "8787ed",
+				["createdat"] = 1676446481,
 				["resultID"] = 39,
+				["instanceName"] = "Culling of Stratholme",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Culling of Stratholme",
 				["timestamp"] = 1676449926,
-				["createdat"] = 1676446481,
-				["minLevel"] = 78,
+				["classColor"] = "8787ed",
+			},
+			["Lizander-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Lizander-Golemagg",
+				["instanceID"] = 624,
+				["createdat"] = 1676489740,
+				["classColor"] = "8787ed",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490288,
+				["resultID"] = 171,
 			},
 			["Jakarba-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 2010,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Blood Furnace",
+				["order"] = 3000,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Utgarde Keep",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "BF.tga",
+				["icon"] = "UK.tga",
 				["words"] = {
 				},
-				["fullName"] = "Blood Furnace",
+				["fullName"] = "Utgarde Keep",
 				["author"] = "Jakarba-Golemagg",
+				["maxLevel"] = 75,
+				["resultID"] = 364,
 				["classColor"] = "abd473",
-				["instanceID"] = 542,
-				["minLevel"] = 60,
-				["resultID"] = 356,
+				["minLevel"] = 68,
+				["createdat"] = 1676488843,
+				["instanceName"] = "Utgarde Keep",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Blood Furnace",
-				["timestamp"] = 1676452942,
-				["createdat"] = 1676452678,
-				["maxLevel"] = 68,
+				["timestamp"] = 1676490825,
+				["instanceID"] = 574,
 			},
 			["Keizgor-Golemagg"] = {
 				["isLFG"] = false,
@@ -1960,19 +2264,19 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Keizgor-Golemagg",
+				["maxLevel"] = 1000,
 				["classColor"] = "C79C6E",
-				["instanceID"] = -1,
-				["createdat"] = 1676446982,
-				["minLevel"] = 0,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676447770,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["maxLevel"] = 1000,
+				["createdat"] = 1676446982,
+				["minLevel"] = 0,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676447770,
+				["instanceID"] = -1,
 			},
 			["Wujie-Golemagg"] = {
 				["isLFG"] = false,
@@ -2001,16 +2305,134 @@ GroupieDB = {
 				},
 				["fullName"] = "Naxxramas - 10",
 				["author"] = "Wujie-Golemagg",
-				["classColor"] = "9482C9",
 				["isLFM"] = true,
-				["minLevel"] = 80,
-				["instanceID"] = 533,
-				["instanceName"] = "Naxxramas",
-				["timestamp"] = 1676457110,
+				["classColor"] = "9482C9",
 				["rolesNeeded"] = {
 					2, -- [1]
 				},
 				["createdat"] = 1676452686,
+				["instanceID"] = 533,
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676457110,
+				["minLevel"] = 80,
+			},
+			["Brogur-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "LF 1 heal event LF 1 heal event ",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"lf", -- [1]
+					"1", -- [2]
+					"heal", -- [3]
+					"event", -- [4]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Brogur-Golemagg",
+				["instanceID"] = -1,
+				["classColor"] = "FF7D0A",
+				["maxLevel"] = 1000,
+				["minLevel"] = 0,
+				["instanceName"] = "Miscellaneous",
+				["rolesNeeded"] = {
+					2, -- [1]
+				},
+				["timestamp"] = 1676483748,
+				["createdat"] = 1676483657,
+			},
+			["Divinetoast-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "LFM ULDUAR 25 semi guild run - fragments, orbs and first 2 boe HR - MS>OS+1 system - Some hardomodes (Thorim/Hodir - need 1 mt/ot - 1 priest heals - rest dps",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"ulduar", -- [2]
+					"25", -- [3]
+					"semi", -- [4]
+					"guild", -- [5]
+					"run", -- [6]
+					"fragments", -- [7]
+					"orbs", -- [8]
+					"and", -- [9]
+					"first", -- [10]
+					"2", -- [11]
+					"boe", -- [12]
+					"hr", -- [13]
+					"msos", -- [14]
+					"1", -- [15]
+					"system", -- [16]
+					"some", -- [17]
+					"hardomodes", -- [18]
+					"thorim", -- [19]
+					"hodir", -- [20]
+					"need", -- [21]
+					"mt", -- [22]
+					"ot", -- [23]
+					"priest", -- [24]
+					"heals", -- [25]
+					"rest", -- [26]
+					"dps", -- [27]
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Divinetoast-Golemagg",
+				["instanceID"] = 603,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["timestamp"] = 1676483703,
+				["createdat"] = 1676483700,
+			},
+			["Fockar-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "LFM VOA spec run only Resto dru and enh shaman",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"voa", -- [2]
+					"spec", -- [3]
+					"run", -- [4]
+					"only", -- [5]
+					"resto", -- [6]
+					"dru", -- [7]
+					"and", -- [8]
+					"enh", -- [9]
+					"shaman", -- [10]
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Fockar-Golemagg",
+				["instanceID"] = 624,
+				["classColor"] = "FFF569",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483526,
+				["createdat"] = 1676483526,
 			},
 			["Envywarlock-Golemagg"] = {
 				["isLFG"] = true,
@@ -2025,11 +2447,12 @@ GroupieDB = {
 				},
 				["fullName"] = "Zul'Farrak",
 				["author"] = "Envywarlock-Golemagg",
-				["resultID"] = 821,
-				["instanceID"] = 209,
-				["classColor"] = "8787ed",
-				["createdat"] = 1676458827,
 				["maxLevel"] = 50,
+				["createdat"] = 1676458827,
+				["instanceID"] = 209,
+				["resultID"] = 821,
+				["minLevel"] = 42,
+				["instanceName"] = "Zul'Farrak",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -2037,8 +2460,7 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676458828,
-				["minLevel"] = 42,
-				["instanceName"] = "Zul'Farrak",
+				["classColor"] = "8787ed",
 			},
 			["Mikellitoris-Golemagg"] = {
 				["isLFG"] = false,
@@ -2064,12 +2486,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Mikellitoris-Golemagg",
-				["classColor"] = "9482C9",
 				["isLFM"] = true,
-				["createdat"] = 1676452277,
-				["instanceID"] = -1,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676454653,
+				["classColor"] = "9482C9",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -2077,6 +2495,34 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["instanceID"] = -1,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676454653,
+				["createdat"] = 1676452277,
+			},
+			["Shild-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3460,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Ulduar 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Shild-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676490073,
+				["classColor"] = "f58cba",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490288,
+				["resultID"] = 170,
 			},
 			["Durexbaby-Golemagg"] = {
 				["isLFG"] = true,
@@ -2091,16 +2537,100 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Durexbaby-Golemagg",
-				["classColor"] = "40c7eb",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 447,
+				["classColor"] = "40c7eb",
+				["minLevel"] = 80,
+				["createdat"] = 1676453792,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676453792,
+				["instanceID"] = 624,
+			},
+			["Vaermina-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Vaermina-Golemagg",
+				["instanceName"] = "The Crown Chemical Co.",
+				["resultID"] = 301,
+				["instanceID"] = 33,
+				["classColor"] = "8787ed",
+				["createdat"] = 1676490627,
 				["maxLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490863,
+				["minLevel"] = 78,
+			},
+			["Nuttyknife-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3100,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Halls of Lightning",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "HOL.tga",
+				["words"] = {
+				},
+				["fullName"] = "Halls of Lightning",
+				["author"] = "Nuttyknife-Golemagg",
+				["instanceID"] = 602,
+				["createdat"] = 1676489702,
+				["classColor"] = "40c7eb",
+				["maxLevel"] = 80,
+				["minLevel"] = 78,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Halls of Lightning",
+				["timestamp"] = 1676490825,
+				["resultID"] = 323,
+			},
+			["Cursedash-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3020,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Azjol-Nerub",
+				["author"] = "Cursedash-Golemagg",
+				["instanceID"] = 601,
+				["createdat"] = 1676490030,
+				["classColor"] = "c79c6e",
+				["maxLevel"] = 77,
+				["minLevel"] = 70,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676490825,
+				["resultID"] = 333,
 			},
 			["Peksonja-Golemagg"] = {
 				["isLFG"] = false,
@@ -2126,12 +2656,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Peksonja-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "FFF569",
-				["createdat"] = 1676456446,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676456446,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -2139,6 +2665,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676456446,
+				["createdat"] = 1676456446,
 			},
 			["Leontinas-Golemagg"] = {
 				["isLFG"] = false,
@@ -2162,19 +2692,19 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Leontinas-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "C79C6E",
-				["instanceID"] = 624,
-				["createdat"] = 1676449117,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676450764,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["maxLevel"] = 80,
+				["createdat"] = 1676449117,
+				["minLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676450764,
+				["instanceID"] = 624,
 			},
 			["Dinas-Golemagg"] = {
 				["isLFG"] = false,
@@ -2228,18 +2758,18 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Dinas-Golemagg",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
 				["classColor"] = "C41F3B",
-				["instanceID"] = 603,
 				["icon"] = "ULD.tga",
 				["createdat"] = 1676452294,
-				["instanceName"] = "Ulduar",
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
+				["instanceName"] = "Ulduar",
 				["timestamp"] = 1676459114,
-				["minLevel"] = 80,
-				["maxLevel"] = 80,
+				["instanceID"] = 603,
 			},
 			["Xuwo-Golemagg"] = {
 				["isLFG"] = false,
@@ -2258,16 +2788,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Xuwo-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "69CCF0",
-				["minLevel"] = 0,
+				["instanceID"] = -1,
+				["instanceName"] = "Miscellaneous",
+				["createdat"] = 1676450114,
 				["maxLevel"] = 1000,
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
 				["timestamp"] = 1676450306,
-				["instanceName"] = "Miscellaneous",
-				["createdat"] = 1676450114,
+				["minLevel"] = 0,
 			},
 			["Swééts-Golemagg"] = {
 				["isLFG"] = false,
@@ -2295,15 +2825,43 @@ GroupieDB = {
 				["fullName"] = "Shadowfang Keep",
 				["author"] = "Swééts-Golemagg",
 				["instanceID"] = 33,
+				["classColor"] = "FF7D0A",
+				["maxLevel"] = 25,
 				["minLevel"] = 17,
-				["createdat"] = 1676451823,
+				["instanceName"] = "Shadowfang Keep",
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
-				["instanceName"] = "Shadowfang Keep",
 				["timestamp"] = 1676451823,
-				["maxLevel"] = 25,
-				["classColor"] = "FF7D0A",
+				["createdat"] = 1676451823,
+			},
+			["Jaratka-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1150,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Zul'Farrak",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ZF.tga",
+				["words"] = {
+				},
+				["fullName"] = "Zul'Farrak",
+				["author"] = "Jaratka-Golemagg",
+				["instanceID"] = 209,
+				["maxLevel"] = 50,
+				["classColor"] = "abd473",
+				["minLevel"] = 42,
+				["resultID"] = 109,
+				["instanceName"] = "Zul'Farrak",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676483785,
 			},
 			["Mystios-Golemagg"] = {
 				["isLFG"] = false,
@@ -2323,40 +2881,15 @@ GroupieDB = {
 				["fullName"] = "Miscellaneous",
 				["author"] = "Mystios-Golemagg",
 				["instanceID"] = -1,
+				["classColor"] = "C79C6E",
+				["maxLevel"] = 1000,
 				["minLevel"] = 0,
-				["createdat"] = 1676451366,
+				["instanceName"] = "Miscellaneous",
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
-				["instanceName"] = "Miscellaneous",
 				["timestamp"] = 1676451422,
-				["maxLevel"] = 1000,
-				["classColor"] = "C79C6E",
-			},
-			["Bordetenc-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 1120,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Uldaman | Need Healer",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "ULDA.tga",
-				["words"] = {
-				},
-				["fullName"] = "Uldaman",
-				["author"] = "Bordetenc-Golemagg",
-				["instanceID"] = 70,
-				["classColor"] = "f58cba",
-				["resultID"] = 40,
-				["createdat"] = 1676449221,
-				["instanceName"] = "Uldaman",
-				["rolesNeeded"] = {
-					2, -- [1]
-				},
-				["timestamp"] = 1676450203,
-				["minLevel"] = 36,
-				["maxLevel"] = 44,
+				["createdat"] = 1676451366,
 			},
 			["Adaya-Golemagg"] = {
 				["isLFG"] = true,
@@ -2371,15 +2904,79 @@ GroupieDB = {
 				},
 				["fullName"] = "Eye of Eternity - 25",
 				["author"] = "Adaya-Golemagg",
-				["classColor"] = "8787ed",
-				["instanceID"] = 616,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 407,
+				["classColor"] = "8787ed",
+				["minLevel"] = 80,
+				["createdat"] = 1676453473,
+				["instanceName"] = "Eye of Eternity",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Eye of Eternity",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676453473,
+				["instanceID"] = 616,
+			},
+			["Vantheol-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1070,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Gnomeregan",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "GNOMER.tga",
+				["words"] = {
+				},
+				["fullName"] = "Gnomeregan",
+				["author"] = "Vantheol-Golemagg",
+				["instanceName"] = "Gnomeregan",
+				["resultID"] = 293,
+				["instanceID"] = 90,
+				["classColor"] = "8787ed",
+				["createdat"] = 1676490496,
+				["maxLevel"] = 32,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490825,
+				["minLevel"] = 24,
+			},
+			["Warbre-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3180,
+				["msg"] = "LF DPS UK HC+ (4k + gs req) BoE ring free roll",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "UK.tga",
+				["words"] = {
+					"lf", -- [1]
+					"dps", -- [2]
+					"uk", -- [3]
+					"hc", -- [4]
+					"4k", -- [5]
+					"gs", -- [6]
+					"req", -- [7]
+					"boe", -- [8]
+					"ring", -- [9]
+					"free", -- [10]
+					"roll", -- [11]
+				},
+				["fullName"] = "Heroic Utgarde Keep",
+				["author"] = "Warbre-Golemagg",
+				["classColor"] = "C41F3B",
+				["instanceID"] = 574,
+				["instanceName"] = "Utgarde Keep",
+				["createdat"] = 1676490752,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["timestamp"] = 1676490752,
 				["maxLevel"] = 80,
 			},
 			["Ruckzuck-Golemagg"] = {
@@ -2395,40 +2992,51 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Ruckzuck-Golemagg",
-				["classColor"] = "0070de",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 443,
+				["classColor"] = "0070de",
+				["minLevel"] = 80,
+				["createdat"] = 1676454249,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454249,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
-			["Vergonix-Golemagg"] = {
-				["isLFG"] = true,
+			["Missesmiyagi-Golemagg"] = {
+				["isLFG"] = false,
 				["order"] = 3320,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 10",
+				["msg"] = "LF 1 dps dps or tank voa 10 class run",
 				["groupSize"] = 10,
 				["isHeroic"] = false,
-				["isLFM"] = false,
+				["isLFM"] = true,
 				["lootType"] = "MS > OS",
 				["icon"] = "VOA.tga",
 				["words"] = {
+					"lf", -- [1]
+					"1", -- [2]
+					"dps", -- [3]
+					"or", -- [4]
+					"tank", -- [5]
+					"voa", -- [6]
+					"10", -- [7]
+					"class", -- [8]
+					"run", -- [9]
 				},
 				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Vergonix-Golemagg",
+				["author"] = "Missesmiyagi-Golemagg",
+				["instanceID"] = 624,
+				["classColor"] = "FFF569",
+				["createdat"] = 1676490903,
 				["maxLevel"] = 80,
-				["classColor"] = "fff569",
-				["createdat"] = 1676452055,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+					1, -- [3]
+				},
+				["timestamp"] = 1676490903,
 				["minLevel"] = 80,
 				["instanceName"] = "Vault of Archavon",
-				["rolesNeeded"] = {
-				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 245,
-				["instanceID"] = 624,
 			},
 			["Urtrax-Golemagg"] = {
 				["isLFG"] = true,
@@ -2443,11 +3051,12 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Urtrax-Golemagg",
-				["resultID"] = 751,
-				["instanceID"] = 601,
-				["classColor"] = "0070de",
-				["createdat"] = 1676458762,
 				["maxLevel"] = 80,
+				["createdat"] = 1676458762,
+				["instanceID"] = 601,
+				["resultID"] = 751,
+				["minLevel"] = 80,
+				["instanceName"] = "Azjol-Nerub",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -2455,8 +3064,7 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676458818,
-				["minLevel"] = 80,
-				["instanceName"] = "Azjol-Nerub",
+				["classColor"] = "0070de",
 			},
 			["Drazex-Golemagg"] = {
 				["isLFG"] = true,
@@ -2472,15 +3080,15 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Drazex-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "40c7eb",
-				["createdat"] = 1676451866,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676451866,
+				["resultID"] = 296,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452072,
-				["resultID"] = 296,
-				["instanceID"] = 624,
+				["classColor"] = "40c7eb",
 			},
 			["Panikc-Golemagg"] = {
 				["isLFG"] = false,
@@ -2502,18 +3110,18 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Panikc-Golemagg",
 				["instanceID"] = 624,
+				["classColor"] = "9482C9",
+				["maxLevel"] = 80,
 				["minLevel"] = 80,
-				["createdat"] = 1676451381,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452123,
-				["maxLevel"] = 80,
-				["classColor"] = "9482C9",
+				["createdat"] = 1676451381,
 			},
 			["Sodamlk-Golemagg"] = {
 				["isLFG"] = true,
@@ -2528,20 +3136,20 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Sodamlk-Golemagg",
-				["classColor"] = "40c7eb",
-				["instanceID"] = 601,
-				["resultID"] = 788,
+				["maxLevel"] = 80,
 				["createdat"] = 1676457978,
+				["classColor"] = "40c7eb",
+				["resultID"] = 788,
+				["minLevel"] = 80,
+				["instanceName"] = "Azjol-Nerub",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Azjol-Nerub",
 				["timestamp"] = 1676458818,
-				["minLevel"] = 80,
-				["maxLevel"] = 80,
+				["instanceID"] = 601,
 			},
 			["Theslayer-Golemagg"] = {
 				["isLFG"] = false,
@@ -2563,9 +3171,10 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Theslayer-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "C41F3B",
-				["minLevel"] = 80,
+				["instanceID"] = 624,
+				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676450615,
 				["maxLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -2574,8 +3183,74 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676450629,
-				["instanceName"] = "Vault of Archavon",
-				["createdat"] = 1676450615,
+				["minLevel"] = 80,
+			},
+			["Nixelock-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3050,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Violet Hold",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VH.tga",
+				["words"] = {
+				},
+				["fullName"] = "Violet Hold",
+				["author"] = "Nixelock-Golemagg",
+				["classColor"] = "8787ed",
+				["minLevel"] = 73,
+				["instanceID"] = 608,
+				["maxLevel"] = 79,
+				["resultID"] = 361,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Violet Hold",
+				["timestamp"] = 1676490825,
+				["createdat"] = 1676490214,
+			},
+			["Paoahalla-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "LF someone to boost me in ring of blood will pay 100g",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"lf", -- [1]
+					"someone", -- [2]
+					"to", -- [3]
+					"boost", -- [4]
+					"me", -- [5]
+					"in", -- [6]
+					"ring", -- [7]
+					"of", -- [8]
+					"blood", -- [9]
+					"will", -- [10]
+					"pay", -- [11]
+					"100g", -- [12]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Paoahalla-Golemagg",
+				["classColor"] = "ABD473",
+				["instanceID"] = -1,
+				["minLevel"] = 0,
+				["createdat"] = 1676490374,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676490374,
+				["maxLevel"] = 1000,
 			},
 			["Treeshade-Golemagg"] = {
 				["isLFG"] = false,
@@ -2598,12 +3273,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Treeshade-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "FF7D0A",
-				["createdat"] = 1676453157,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676453492,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -2611,6 +3282,77 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676453492,
+				["createdat"] = 1676453157,
+			},
+			["Rgz-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3010,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Nexus",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "NEX.tga",
+				["words"] = {
+				},
+				["fullName"] = "Nexus",
+				["author"] = "Rgz-Golemagg",
+				["instanceID"] = 576,
+				["maxLevel"] = 75,
+				["classColor"] = "8787ed",
+				["minLevel"] = 70,
+				["resultID"] = 188,
+				["instanceName"] = "Nexus",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483837,
+				["createdat"] = 1676483610,
+			},
+			["Snackpacks-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "LFM VoA 25 Spec Run need  Heals Druid DPS SP/Ele/Feral /w",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"voa", -- [2]
+					"25", -- [3]
+					"spec", -- [4]
+					"run", -- [5]
+					"need", -- [6]
+					"heals", -- [7]
+					"druid", -- [8]
+					"dps", -- [9]
+					"sp", -- [10]
+					"ele", -- [11]
+					"feral", -- [12]
+					"w", -- [13]
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Snackpacks-Golemagg",
+				["instanceID"] = 624,
+				["classColor"] = "C41F3B",
+				["maxLevel"] = 80,
+				["createdat"] = 1676490198,
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490335,
+				["minLevel"] = 80,
 			},
 			["Spinos-Golemagg"] = {
 				["isLFG"] = true,
@@ -2625,16 +3367,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Spinos-Golemagg",
-				["classColor"] = "40c7eb",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 442,
+				["classColor"] = "40c7eb",
+				["minLevel"] = 80,
+				["createdat"] = 1676453818,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676453818,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
 			["Yunir-Golemagg"] = {
 				["isLFG"] = true,
@@ -2649,20 +3391,20 @@ GroupieDB = {
 				},
 				["fullName"] = "Razorfen Downs",
 				["author"] = "Yunir-Golemagg",
-				["instanceID"] = 129,
-				["classColor"] = "ff7d0a",
-				["createdat"] = 1676457451,
+				["maxLevel"] = 41,
 				["minLevel"] = 33,
+				["instanceID"] = 129,
+				["createdat"] = 1676457451,
+				["resultID"] = 826,
+				["instanceName"] = "Razorfen Downs",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Razorfen Downs",
 				["timestamp"] = 1676458828,
-				["resultID"] = 826,
-				["maxLevel"] = 41,
+				["classColor"] = "ff7d0a",
 			},
 			["Tungstten-Golemagg"] = {
 				["isLFG"] = false,
@@ -2708,16 +3450,103 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 10",
 				["author"] = "Tungstten-Golemagg",
-				["instanceID"] = 603,
 				["classColor"] = "C79C6E",
-				["createdat"] = 1676454456,
-				["maxLevel"] = 80,
-				["instanceName"] = "Ulduar",
-				["timestamp"] = 1676456239,
+				["instanceID"] = 603,
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676456239,
+				["createdat"] = 1676454456,
+			},
+			["Kupong-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3460,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ulduar 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Kupong-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676490250,
+				["classColor"] = "40c7eb",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490288,
+				["resultID"] = 167,
+			},
+			["Greblon-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "LF VOA 25 RESTO,CEMENT SHAM LAST SPOTS",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lf", -- [1]
+					"voa", -- [2]
+					"25", -- [3]
+					"resto", -- [4]
+					"cement", -- [5]
+					"sham", -- [6]
+					"last", -- [7]
+					"spots", -- [8]
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Greblon-Golemagg",
+				["instanceID"] = 624,
+				["classColor"] = "C41F3B",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483528,
+				["createdat"] = 1676483528,
+			},
+			["Nâmèléss-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Nâmèléss-Golemagg",
+				["instanceID"] = 33,
+				["maxLevel"] = 80,
+				["classColor"] = "8787ed",
+				["minLevel"] = 78,
+				["resultID"] = 144,
+				["instanceName"] = "The Crown Chemical Co.",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676483802,
 			},
 			["Kílswítch-Golemagg"] = {
 				["isLFG"] = false,
@@ -2732,18 +3561,18 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Utgarde Pinnacle",
 				["author"] = "Kílswítch-Golemagg",
-				["classColor"] = "c41f3b",
-				["instanceID"] = 575,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 392,
+				["classColor"] = "c41f3b",
+				["minLevel"] = 80,
+				["createdat"] = 1676452708,
+				["instanceName"] = "Utgarde Pinnacle",
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
-				["instanceName"] = "Utgarde Pinnacle",
 				["timestamp"] = 1676452996,
-				["createdat"] = 1676452708,
-				["maxLevel"] = 80,
+				["instanceID"] = 575,
 			},
 			["Shamtãstic-Golemagg"] = {
 				["isLFG"] = false,
@@ -2766,16 +3595,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Shamtãstic-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "0070DE",
-				["createdat"] = 1676455490,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676455894,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					2, -- [1]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676455894,
+				["createdat"] = 1676455490,
 			},
 			["Smailo-Golemagg"] = {
 				["isLFG"] = false,
@@ -2790,17 +3619,17 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Smailo-Golemagg",
-				["resultID"] = 750,
-				["instanceID"] = 601,
-				["classColor"] = "c79c6e",
-				["createdat"] = 1676458803,
 				["maxLevel"] = 80,
+				["createdat"] = 1676458803,
+				["instanceID"] = 601,
+				["resultID"] = 750,
+				["minLevel"] = 80,
+				["instanceName"] = "Azjol-Nerub",
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
 				["timestamp"] = 1676458818,
-				["minLevel"] = 80,
-				["instanceName"] = "Azjol-Nerub",
+				["classColor"] = "c79c6e",
 			},
 			["Frostyfidus-Golemagg"] = {
 				["isLFG"] = true,
@@ -2815,20 +3644,87 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Frostyfidus-Golemagg",
-				["classColor"] = "c41f3b",
-				["instanceID"] = 601,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 786,
+				["classColor"] = "c41f3b",
+				["minLevel"] = 80,
+				["createdat"] = 1676458125,
+				["instanceName"] = "Azjol-Nerub",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Azjol-Nerub",
 				["timestamp"] = 1676458818,
-				["createdat"] = 1676458125,
+				["instanceID"] = 601,
+			},
+			["Dzaa-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "wts|cffa335ee|Hitem:44253::::::::70:::::::::|h[Darkmoon Card: Greatness]|h|r|cffa335ee|Hitem:44255::::::::70:::::::::|h[Darkmoon Card: Greatness]|h|r|cffa335ee|Hitem:45141::::::::70:::::::::|h[Proto-hide Leggings]|h|r",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"wts", -- [1]
+					"hitem", -- [2]
+					"44253", -- [3]
+					"70", -- [4]
+					"h", -- [5]
+					"darkmoon", -- [6]
+					"card", -- [7]
+					"greatness", -- [8]
+					"44255", -- [9]
+					"45141", -- [10]
+					"proto", -- [11]
+					"hide", -- [12]
+					"leggings", -- [13]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Dzaa-Golemagg",
+				["instanceID"] = -1,
+				["classColor"] = "0070DE",
+				["maxLevel"] = 1000,
+				["minLevel"] = 0,
+				["instanceName"] = "Miscellaneous",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483655,
+				["createdat"] = 1676483655,
+			},
+			["Dreamlief-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3060,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Halls of Stone",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "HOS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Halls of Stone",
+				["author"] = "Dreamlief-Golemagg",
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 75,
+				["instanceID"] = 599,
 				["maxLevel"] = 80,
+				["resultID"] = 298,
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["instanceName"] = "Halls of Stone",
+				["timestamp"] = 1676490825,
+				["createdat"] = 1676490243,
 			},
 			["Suryna-Golemagg"] = {
 				["isLFG"] = true,
@@ -2844,15 +3740,15 @@ GroupieDB = {
 				["fullName"] = "Obsidian Sanctum - 10",
 				["author"] = "Suryna-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "ffffff",
-				["createdat"] = 1676451768,
 				["minLevel"] = 80,
-				["instanceName"] = "Obsidian Sanctum",
+				["instanceID"] = 615,
+				["createdat"] = 1676451768,
+				["resultID"] = 283,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Obsidian Sanctum",
 				["timestamp"] = 1676452072,
-				["resultID"] = 283,
-				["instanceID"] = 615,
+				["classColor"] = "ffffff",
 			},
 			["Pechugona-Golemagg"] = {
 				["isLFG"] = false,
@@ -2898,18 +3794,18 @@ GroupieDB = {
 				},
 				["fullName"] = "Naxxramas - 25",
 				["author"] = "Pechugona-Golemagg",
-				["classColor"] = "F58CBA",
 				["isLFM"] = true,
-				["minLevel"] = 80,
-				["instanceID"] = 533,
-				["instanceName"] = "Naxxramas",
-				["timestamp"] = 1676458003,
+				["classColor"] = "F58CBA",
 				["rolesNeeded"] = {
 					2, -- [1]
 					3, -- [2]
 					4, -- [3]
 				},
 				["createdat"] = 1676451888,
+				["instanceID"] = 533,
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676458003,
+				["minLevel"] = 80,
 			},
 			["Fàtal-Golemagg"] = {
 				["isLFG"] = false,
@@ -2939,8 +3835,9 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Fàtal-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "FFFFFF",
-				["instanceID"] = 603,
+				["instanceName"] = "Ulduar",
 				["minLevel"] = 80,
 				["createdat"] = 1676447654,
 				["rolesNeeded"] = {
@@ -2950,8 +3847,7 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676448406,
-				["instanceName"] = "Ulduar",
-				["maxLevel"] = 80,
+				["instanceID"] = 603,
 			},
 			["Tankerina-Golemagg"] = {
 				["isLFG"] = false,
@@ -2982,12 +3878,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Tankerina-Golemagg",
-				["instanceID"] = 603,
 				["classColor"] = "C41F3B",
-				["createdat"] = 1676456887,
-				["maxLevel"] = 80,
-				["instanceName"] = "Ulduar",
-				["timestamp"] = 1676459030,
+				["instanceID"] = 603,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -2995,6 +3887,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676459030,
+				["createdat"] = 1676456887,
 			},
 			["Joacimen-Golemagg"] = {
 				["isLFG"] = false,
@@ -3037,12 +3933,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Joacimen-Golemagg",
-				["instanceID"] = 603,
 				["classColor"] = "F58CBA",
-				["createdat"] = 1676453401,
-				["maxLevel"] = 80,
-				["instanceName"] = "Ulduar",
-				["timestamp"] = 1676453401,
+				["instanceID"] = 603,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -3050,6 +3942,48 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676453401,
+				["createdat"] = 1676453401,
+			},
+			["Welankedves-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3420,
+				["msg"] = "LFM OS25 2D  need 1 TANK , DPS, HEAL  ILLU HR , SOFTRES !!!",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "SoftRes",
+				["icon"] = "OS.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"os25", -- [2]
+					"2d", -- [3]
+					"need", -- [4]
+					"1", -- [5]
+					"tank", -- [6]
+					"dps", -- [7]
+					"heal", -- [8]
+					"illu", -- [9]
+					"hr", -- [10]
+					"softres", -- [11]
+				},
+				["fullName"] = "Obsidian Sanctum - 25",
+				["author"] = "Welankedves-Golemagg",
+				["instanceID"] = 615,
+				["classColor"] = "FFFFFF",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Obsidian Sanctum",
+				["rolesNeeded"] = {
+					1, -- [1]
+					3, -- [2]
+					4, -- [3]
+					2, -- [4]
+				},
+				["timestamp"] = 1676483755,
+				["createdat"] = 1676483494,
 			},
 			["Rhapsodyy-Golemagg"] = {
 				["isLFG"] = true,
@@ -3065,39 +3999,15 @@ GroupieDB = {
 				["fullName"] = "Naxxramas - 25",
 				["author"] = "Rhapsodyy-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "ffffff",
-				["createdat"] = 1676451084,
 				["minLevel"] = 80,
-				["instanceName"] = "Naxxramas",
-				["rolesNeeded"] = {
-				},
-				["timestamp"] = 1676452083,
-				["resultID"] = 333,
 				["instanceID"] = 533,
-			},
-			["Foogirl-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Vault of Archavon 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Foogirl-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "f58cba",
-				["createdat"] = 1676451917,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676451084,
+				["resultID"] = 333,
 				["rolesNeeded"] = {
 				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 285,
-				["instanceID"] = 624,
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676452083,
+				["classColor"] = "ffffff",
 			},
 			["Smor-Golemagg"] = {
 				["isLFG"] = false,
@@ -3133,12 +4043,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Naxxramas - 25",
 				["author"] = "Smor-Golemagg",
-				["instanceID"] = 533,
 				["maxLevel"] = 80,
-				["createdat"] = 1676454766,
-				["classColor"] = "C41F3B",
-				["instanceName"] = "Naxxramas",
-				["timestamp"] = 1676457858,
+				["instanceID"] = 533,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -3146,6 +4052,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["classColor"] = "C41F3B",
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676457858,
+				["createdat"] = 1676454766,
 			},
 			["Wtbbagspace-Golemagg"] = {
 				["isLFG"] = false,
@@ -3168,12 +4078,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Wtbbagspace-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "ABD473",
-				["createdat"] = 1676453676,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676453771,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -3181,6 +4087,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676453771,
+				["createdat"] = 1676453676,
 			},
 			["Tenébra-Golemagg"] = {
 				["isLFG"] = true,
@@ -3195,16 +4105,132 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Tenébra-Golemagg",
-				["classColor"] = "40c7eb",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 471,
+				["classColor"] = "40c7eb",
+				["minLevel"] = 80,
+				["createdat"] = 1676454284,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454284,
+				["instanceID"] = 624,
+			},
+			["Läva-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3320,
+				["msg"] = "lf hunt/war for voa 10",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lf", -- [1]
+					"hunt", -- [2]
+					"war", -- [3]
+					"for", -- [4]
+					"voa", -- [5]
+					"10", -- [6]
+				},
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Läva-Golemagg",
+				["classColor"] = "C41F3B",
+				["instanceID"] = 624,
+				["minLevel"] = 80,
+				["createdat"] = 1676490367,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490407,
 				["maxLevel"] = 80,
+			},
+			["Eznemletezik-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "LFM VOA 25 need cement resto shaman ",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"voa", -- [2]
+					"25", -- [3]
+					"need", -- [4]
+					"cement", -- [5]
+					"resto", -- [6]
+					"shaman", -- [7]
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Eznemletezik-Golemagg",
+				["instanceID"] = 624,
+				["classColor"] = "ABD473",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483518,
+				["createdat"] = 1676483518,
+			},
+			["Reallyhot-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "LF Tank and Ranged DPS for Tonight Guild Ulduar(25) 2 SR 19:45 Start time Discord required. DM for more information.",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "SoftRes",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"lf", -- [1]
+					"tank", -- [2]
+					"and", -- [3]
+					"ranged", -- [4]
+					"dps", -- [5]
+					"for", -- [6]
+					"tonight", -- [7]
+					"guild", -- [8]
+					"ulduar", -- [9]
+					"25", -- [10]
+					"2", -- [11]
+					"sr", -- [12]
+					"19", -- [13]
+					"45", -- [14]
+					"start", -- [15]
+					"time", -- [16]
+					"discord", -- [17]
+					"required", -- [18]
+					"dm", -- [19]
+					"more", -- [20]
+					"information", -- [21]
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Reallyhot-Golemagg",
+				["instanceID"] = 603,
+				["classColor"] = "FFFFFF",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["rolesNeeded"] = {
+					1, -- [1]
+					3, -- [2]
+					4, -- [3]
+					3, -- [4]
+					4, -- [5]
+				},
+				["timestamp"] = 1676483730,
+				["createdat"] = 1676483730,
 			},
 			["Darkeror-Golemagg"] = {
 				["isLFG"] = false,
@@ -3221,12 +4247,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Darkeror-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "C41F3B",
-				["createdat"] = 1676454211,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676454211,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -3234,6 +4256,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676454211,
+				["createdat"] = 1676454211,
 			},
 			["Oouna-Golemagg"] = {
 				["isLFG"] = false,
@@ -3253,15 +4279,111 @@ GroupieDB = {
 				["fullName"] = "Nexus",
 				["author"] = "Oouna-Golemagg",
 				["instanceID"] = 576,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 75,
 				["minLevel"] = 70,
-				["createdat"] = 1676457813,
+				["instanceName"] = "Nexus",
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
-				["instanceName"] = "Nexus",
 				["timestamp"] = 1676457813,
-				["maxLevel"] = 75,
+				["createdat"] = 1676457813,
+			},
+			["Miusgo-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "pala tank lfg HC normal",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"pala", -- [1]
+					"tank", -- [2]
+					"lfg", -- [3]
+					"hc", -- [4]
+					"normal", -- [5]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Miusgo-Golemagg",
+				["instanceID"] = -1,
 				["classColor"] = "F58CBA",
+				["maxLevel"] = 1000,
+				["minLevel"] = 0,
+				["instanceName"] = "Miscellaneous",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483776,
+				["createdat"] = 1676483776,
+			},
+			["Rowie-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3260,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Halls of Lightning",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "HOL.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Halls of Lightning",
+				["author"] = "Rowie-Golemagg",
+				["classColor"] = "c79c6e",
+				["minLevel"] = 80,
+				["instanceID"] = 602,
+				["createdat"] = 1676481794,
+				["resultID"] = 103,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Halls of Lightning",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 80,
+			},
+			["Naromer-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "LFM [Se busca: Aleta de Crines de Ira (12857)]",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["language"] = "German",
+				["words"] = {
+					"lfm", -- [1]
+					"se", -- [2]
+					"busca", -- [3]
+					"aleta", -- [4]
+					"de", -- [5]
+					"crines", -- [6]
+					"ira", -- [7]
+					"12857", -- [8]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Naromer-Golemagg",
+				["instanceID"] = -1,
+				["icon"] = "Other.tga",
+				["classColor"] = "ABD473",
+				["minLevel"] = 0,
+				["createdat"] = 1676483540,
+				["instanceName"] = "Miscellaneous",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483540,
+				["maxLevel"] = 1000,
 			},
 			["Wreckula-Golemagg"] = {
 				["isLFG"] = false,
@@ -3285,16 +4407,16 @@ GroupieDB = {
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Wreckula-Golemagg",
 				["instanceID"] = 603,
+				["classColor"] = "C79C6E",
+				["maxLevel"] = 80,
 				["minLevel"] = 80,
-				["createdat"] = 1676452413,
+				["instanceName"] = "Ulduar",
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
-				["instanceName"] = "Ulduar",
 				["timestamp"] = 1676452413,
-				["maxLevel"] = 80,
-				["classColor"] = "C79C6E",
+				["createdat"] = 1676452413,
 			},
 			["Dandik-Golemagg"] = {
 				["isLFG"] = true,
@@ -3309,16 +4431,44 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Dandik-Golemagg",
-				["classColor"] = "8787ed",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 436,
+				["classColor"] = "8787ed",
+				["minLevel"] = 80,
+				["createdat"] = 1676454338,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454338,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
+			},
+			["Itsmegali-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1170,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Blackrock Depths",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "BRD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Blackrock Depths",
+				["author"] = "Itsmegali-Golemagg",
+				["classColor"] = "8787ed",
+				["minLevel"] = 48,
+				["instanceID"] = 230,
+				["createdat"] = 1676481978,
+				["resultID"] = 120,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Blackrock Depths",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 60,
 			},
 			["Thyobie-Golemagg"] = {
 				["isLFG"] = false,
@@ -3342,16 +4492,40 @@ GroupieDB = {
 				},
 				["fullName"] = "Obsidian Sanctum - 10",
 				["author"] = "Thyobie-Golemagg",
-				["instanceID"] = 615,
 				["classColor"] = "FF7D0A",
-				["createdat"] = 1676455982,
-				["maxLevel"] = 80,
-				["instanceName"] = "Obsidian Sanctum",
-				["timestamp"] = 1676455982,
+				["instanceID"] = 615,
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Obsidian Sanctum",
+				["timestamp"] = 1676455982,
+				["createdat"] = 1676455982,
+			},
+			["Bluepala-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Vault of Archavon 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Bluepala-Golemagg",
+				["instanceID"] = 624,
+				["createdat"] = 1676490055,
+				["classColor"] = "f58cba",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490287,
+				["resultID"] = 114,
 			},
 			["Ultravenom-Golemagg"] = {
 				["isLFG"] = false,
@@ -3415,8 +4589,9 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Ultravenom-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "FFF569",
-				["instanceID"] = 603,
+				["instanceName"] = "Ulduar",
 				["minLevel"] = 80,
 				["createdat"] = 1676447636,
 				["rolesNeeded"] = {
@@ -3426,8 +4601,7 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676451536,
-				["instanceName"] = "Ulduar",
-				["maxLevel"] = 80,
+				["instanceID"] = 603,
 			},
 			["Atlapalani-Golemagg"] = {
 				["isLFG"] = false,
@@ -3447,40 +4621,47 @@ GroupieDB = {
 				},
 				["fullName"] = "Eye of Eternity - 25",
 				["author"] = "Atlapalani-Golemagg",
-				["instanceID"] = 616,
 				["classColor"] = "0070DE",
-				["createdat"] = 1676458048,
-				["maxLevel"] = 80,
-				["instanceName"] = "Eye of Eternity",
-				["timestamp"] = 1676458151,
+				["instanceID"] = 616,
 				["rolesNeeded"] = {
 					2, -- [1]
 				},
 				["minLevel"] = 80,
-			},
-			["Randymarshes-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3460,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ulduar 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "ULD.tga",
-				["words"] = {
-				},
-				["fullName"] = "Ulduar - 25",
-				["author"] = "Randymarshes-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "abd473",
-				["createdat"] = 1676450116,
-				["minLevel"] = 80,
-				["instanceName"] = "Ulduar",
-				["rolesNeeded"] = {
+				["instanceName"] = "Eye of Eternity",
+				["timestamp"] = 1676458151,
+				["createdat"] = 1676458048,
+			},
+			["Nezuo-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3320,
+				["msg"] = "LFM  hunter VOA 10 ",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"hunter", -- [2]
+					"voa", -- [3]
+					"10", -- [4]
 				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 232,
-				["instanceID"] = 603,
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Nezuo-Golemagg",
+				["classColor"] = "F58CBA",
+				["instanceID"] = 624,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676456418,
+				["createdat"] = 1676455696,
 			},
 			["Borborygmos-Golemagg"] = {
 				["isLFG"] = true,
@@ -3496,47 +4677,19 @@ GroupieDB = {
 				["fullName"] = "Halls of Stone",
 				["author"] = "Borborygmos-Golemagg",
 				["maxLevel"] = 80,
-				["instanceID"] = 599,
-				["createdat"] = 1676456889,
 				["minLevel"] = 75,
-				["instanceName"] = "Halls of Stone",
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676458818,
-				["resultID"] = 739,
 				["classColor"] = "f58cba",
-			},
-			["Muckraker-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3010,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Nexus",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "NEX.tga",
-				["words"] = {
-				},
-				["fullName"] = "Nexus",
-				["author"] = "Muckraker-Golemagg",
-				["instanceID"] = 576,
-				["classColor"] = "fff569",
-				["resultID"] = 41,
-				["createdat"] = 1676449264,
-				["instanceName"] = "Nexus",
+				["createdat"] = 1676456889,
+				["resultID"] = 739,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["timestamp"] = 1676449926,
-				["minLevel"] = 70,
-				["maxLevel"] = 75,
+				["instanceName"] = "Halls of Stone",
+				["timestamp"] = 1676458818,
+				["instanceID"] = 599,
 			},
 			["Donkekong-Golemagg"] = {
 				["isLFG"] = false,
@@ -3555,12 +4708,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Donkekong-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "C41F3B",
-				["createdat"] = 1676454700,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454961,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -3568,6 +4717,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676454961,
+				["createdat"] = 1676454700,
 			},
 			["Troggbane-Golemagg"] = {
 				["isLFG"] = true,
@@ -3582,16 +4735,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Troggbane-Golemagg",
-				["classColor"] = "0070de",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 395,
+				["classColor"] = "0070de",
+				["minLevel"] = 80,
+				["createdat"] = 1676454336,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454336,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
 			["Coldonez-Golemagg"] = {
 				["isLFG"] = true,
@@ -3607,15 +4760,15 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Coldonez-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "ff7d0a",
-				["createdat"] = 1676451965,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676451965,
+				["resultID"] = 292,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452072,
-				["resultID"] = 292,
-				["instanceID"] = 624,
+				["classColor"] = "ff7d0a",
 			},
 			["Nulord-Golemagg"] = {
 				["isLFG"] = true,
@@ -3630,19 +4783,19 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Old Kingdom",
 				["author"] = "Nulord-Golemagg",
-				["instanceID"] = 619,
-				["classColor"] = "c79c6e",
-				["createdat"] = 1676457132,
+				["maxLevel"] = 80,
 				["minLevel"] = 80,
+				["instanceID"] = 619,
+				["createdat"] = 1676457132,
+				["resultID"] = 756,
+				["instanceName"] = "Old Kingdom",
 				["rolesNeeded"] = {
 					2, -- [1]
 					3, -- [2]
 					4, -- [3]
 				},
-				["instanceName"] = "Old Kingdom",
 				["timestamp"] = 1676458818,
-				["resultID"] = 756,
-				["maxLevel"] = 80,
+				["classColor"] = "c79c6e",
 			},
 			["Caadu-Golemagg"] = {
 				["isLFG"] = true,
@@ -3657,48 +4810,86 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Caadu-Golemagg",
-				["classColor"] = "c79c6e",
-				["instanceID"] = 601,
-				["resultID"] = 774,
+				["maxLevel"] = 80,
 				["createdat"] = 1676457878,
+				["classColor"] = "c79c6e",
+				["resultID"] = 774,
+				["minLevel"] = 80,
+				["instanceName"] = "Azjol-Nerub",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Azjol-Nerub",
 				["timestamp"] = 1676458818,
-				["minLevel"] = 80,
-				["maxLevel"] = 80,
+				["instanceID"] = 601,
 			},
-			["Gnegne-Golemagg"] = {
+			["Grantius-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3040,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Drak'Tharon Keep",
+				["order"] = 1120,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Uldaman",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "DTK.tga",
+				["icon"] = "ULDA.tga",
 				["words"] = {
 				},
-				["fullName"] = "Drak'Tharon Keep",
-				["author"] = "Gnegne-Golemagg",
-				["maxLevel"] = 78,
-				["instanceID"] = 600,
-				["classColor"] = "c41f3b",
-				["resultID"] = 32,
+				["fullName"] = "Uldaman",
+				["author"] = "Grantius-Golemagg",
+				["instanceID"] = 70,
+				["maxLevel"] = 44,
+				["classColor"] = "c79c6e",
+				["minLevel"] = 36,
+				["resultID"] = 153,
+				["instanceName"] = "Uldaman",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Drak'Tharon Keep",
-				["timestamp"] = 1676446944,
-				["createdat"] = 1676446473,
-				["minLevel"] = 72,
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676483828,
+			},
+			["Jackelbbk-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "LFM VOA 25 SEPC RUN DK BLOOD WARRIOR PROT AND DRUID",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"voa", -- [2]
+					"25", -- [3]
+					"sepc", -- [4]
+					"run", -- [5]
+					"dk", -- [6]
+					"blood", -- [7]
+					"warrior", -- [8]
+					"prot", -- [9]
+					"and", -- [10]
+					"druid", -- [11]
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Jackelbbk-Golemagg",
+				["classColor"] = "69CCF0",
+				["instanceID"] = 624,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676455596,
+				["createdat"] = 1676455147,
 			},
 			["Grisjenko-Golemagg"] = {
 				["isLFG"] = true,
@@ -3713,16 +4904,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 10",
 				["author"] = "Grisjenko-Golemagg",
-				["classColor"] = "c41f3b",
-				["instanceID"] = 603,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 487,
+				["classColor"] = "c41f3b",
+				["minLevel"] = 80,
+				["createdat"] = 1676454418,
+				["instanceName"] = "Ulduar",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Ulduar",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454418,
-				["maxLevel"] = 80,
+				["instanceID"] = 603,
 			},
 			["Sinuwe-Golemagg"] = {
 				["isLFG"] = true,
@@ -3738,15 +4929,15 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Sinuwe-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "c79c6e",
-				["createdat"] = 1676451865,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676451865,
+				["resultID"] = 299,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452072,
-				["resultID"] = 299,
-				["instanceID"] = 624,
+				["classColor"] = "c79c6e",
 			},
 			["Dksavage-Golemagg"] = {
 				["isLFG"] = false,
@@ -3761,16 +4952,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Dksavage-Golemagg",
-				["resultID"] = 841,
-				["instanceID"] = 624,
-				["classColor"] = "c41f3b",
-				["createdat"] = 1676458771,
 				["maxLevel"] = 80,
+				["createdat"] = 1676458771,
+				["instanceID"] = 624,
+				["resultID"] = 841,
+				["minLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
 				["timestamp"] = 1676459132,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["classColor"] = "c41f3b",
 			},
 			["Icearrow-Golemagg"] = {
 				["isLFG"] = true,
@@ -3785,20 +4976,20 @@ GroupieDB = {
 				},
 				["fullName"] = "Gnomeregan",
 				["author"] = "Icearrow-Golemagg",
-				["instanceID"] = 90,
-				["classColor"] = "abd473",
-				["createdat"] = 1676454996,
+				["maxLevel"] = 32,
 				["minLevel"] = 24,
+				["instanceID"] = 90,
+				["createdat"] = 1676454996,
+				["resultID"] = 818,
+				["instanceName"] = "Gnomeregan",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Gnomeregan",
 				["timestamp"] = 1676458828,
-				["resultID"] = 818,
-				["maxLevel"] = 32,
+				["classColor"] = "abd473",
 			},
 			["Tenpriest-Golemagg"] = {
 				["isLFG"] = true,
@@ -3813,11 +5004,12 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Tenpriest-Golemagg",
-				["resultID"] = 779,
-				["instanceID"] = 601,
-				["classColor"] = "ffffff",
-				["createdat"] = 1676458785,
 				["maxLevel"] = 80,
+				["createdat"] = 1676458785,
+				["instanceID"] = 601,
+				["resultID"] = 779,
+				["minLevel"] = 80,
+				["instanceName"] = "Azjol-Nerub",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -3825,32 +5017,35 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676458818,
-				["minLevel"] = 80,
-				["instanceName"] = "Azjol-Nerub",
+				["classColor"] = "ffffff",
 			},
 			["Zethul-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
-				["groupSize"] = 25,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["icon"] = "Other.tga",
 				["words"] = {
 				},
-				["fullName"] = "Vault of Archavon - 25",
+				["fullName"] = "The Crown Chemical Co.",
 				["author"] = "Zethul-Golemagg",
-				["classColor"] = "fff569",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
-				["resultID"] = 463,
-				["rolesNeeded"] = {
-				},
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454444,
-				["createdat"] = 1676453999,
 				["maxLevel"] = 80,
+				["resultID"] = 358,
+				["classColor"] = "fff569",
+				["minLevel"] = 78,
+				["createdat"] = 1676490363,
+				["instanceName"] = "The Crown Chemical Co.",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490825,
+				["instanceID"] = 33,
 			},
 			["Fiddlestickz-Golemagg"] = {
 				["isLFG"] = false,
@@ -3874,18 +5069,18 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Fiddlestickz-Golemagg",
 				["instanceID"] = 624,
+				["classColor"] = "9482C9",
+				["maxLevel"] = 80,
 				["createdat"] = 1676458080,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676458788,
-				["maxLevel"] = 80,
-				["classColor"] = "9482C9",
+				["minLevel"] = 80,
 			},
 			["Royalwarrior-Golemagg"] = {
 				["isLFG"] = false,
@@ -3911,16 +5106,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Royalwarrior-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "C79C6E",
-				["instanceID"] = 601,
+				["instanceName"] = "Azjol-Nerub",
 				["minLevel"] = 80,
 				["createdat"] = 1676447594,
 				["rolesNeeded"] = {
 					2, -- [1]
 				},
 				["timestamp"] = 1676447802,
-				["instanceName"] = "Azjol-Nerub",
-				["maxLevel"] = 80,
+				["instanceID"] = 601,
 			},
 			["Battsugga-Golemagg"] = {
 				["isLFG"] = false,
@@ -3946,9 +5141,10 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Battsugga-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "FFFFFF",
-				["minLevel"] = 80,
+				["instanceID"] = 624,
+				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676450432,
 				["maxLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -3957,8 +5153,7 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676450945,
-				["instanceName"] = "Vault of Archavon",
-				["createdat"] = 1676450432,
+				["minLevel"] = 80,
 			},
 			["Shamanoss-Golemagg"] = {
 				["isLFG"] = false,
@@ -3973,17 +5168,102 @@ GroupieDB = {
 				},
 				["fullName"] = "Drak'Tharon Keep",
 				["author"] = "Shamanoss-Golemagg",
-				["instanceID"] = 600,
-				["classColor"] = "0070de",
-				["createdat"] = 1676456314,
+				["maxLevel"] = 78,
 				["minLevel"] = 72,
+				["instanceID"] = 600,
+				["createdat"] = 1676456314,
+				["resultID"] = 689,
+				["instanceName"] = "Drak'Tharon Keep",
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
-				["instanceName"] = "Drak'Tharon Keep",
 				["timestamp"] = 1676458758,
-				["resultID"] = 689,
-				["maxLevel"] = 78,
+				["classColor"] = "0070de",
+			},
+			["Bublarebob-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "Lf 1 rsham ULDUAR25 tonight at 19:00. Doing FL HM then rushing to thorim for more HM. 3x sr > MS > OS,  orbs and frags HR.",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"lf", -- [1]
+					"1", -- [2]
+					"rsham", -- [3]
+					"ulduar25", -- [4]
+					"tonight", -- [5]
+					"at", -- [6]
+					"19", -- [7]
+					"00", -- [8]
+					"doing", -- [9]
+					"fl", -- [10]
+					"hm", -- [11]
+					"then", -- [12]
+					"rushing", -- [13]
+					"to", -- [14]
+					"thorim", -- [15]
+					"for", -- [16]
+					"more", -- [17]
+					"3x", -- [18]
+					"sr", -- [19]
+					"msos", -- [20]
+					"orbs", -- [21]
+					"and", -- [22]
+					"frags", -- [23]
+					"hr", -- [24]
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Bublarebob-Golemagg",
+				["instanceID"] = 603,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483847,
+				["createdat"] = 1676483504,
+			},
+			["Snaiperi-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3130,
+				["msg"] = "LF2M TO CONGUEST PIT! BEAR WRESTLING! NEED TANK, HEALER",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "PIT.tga",
+				["words"] = {
+					"lf2m", -- [1]
+					"to", -- [2]
+					"conguest", -- [3]
+					"pit", -- [4]
+					"bear", -- [5]
+					"wrestling", -- [6]
+					"need", -- [7]
+					"tank", -- [8]
+					"healer", -- [9]
+				},
+				["fullName"] = "Pit of Saron",
+				["author"] = "Snaiperi-Golemagg",
+				["instanceID"] = 658,
+				["classColor"] = "ABD473",
+				["maxLevel"] = 80,
+				["minLevel"] = 78,
+				["instanceName"] = "Pit of Saron",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+				},
+				["timestamp"] = 1676483544,
+				["createdat"] = 1676483544,
 			},
 			["Kknight-Golemagg"] = {
 				["isLFG"] = false,
@@ -3999,15 +5279,100 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Kknight-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "c41f3b",
-				["createdat"] = 1676452468,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676452468,
+				["resultID"] = 340,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676453491,
-				["resultID"] = 340,
-				["instanceID"] = 624,
+				["classColor"] = "c41f3b",
+			},
+			["Zoremi-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "LFM Ulduar 25 GDKP - Starting price 1000g increments 500g - 80% split - Doing NORMAL modes ONLY - 10k gold - Raid at 20:00 server time - sign in on Discord https://discord.gg/Szjdv5VNde",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "GDKP",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"ulduar", -- [2]
+					"25", -- [3]
+					"gdkp", -- [4]
+					"starting", -- [5]
+					"price", -- [6]
+					"1000g", -- [7]
+					"increments", -- [8]
+					"500g", -- [9]
+					"80", -- [10]
+					"split", -- [11]
+					"doing", -- [12]
+					"normal", -- [13]
+					"modes", -- [14]
+					"only", -- [15]
+					"10k", -- [16]
+					"gold", -- [17]
+					"raid", -- [18]
+					"at", -- [19]
+					"20", -- [20]
+					"00", -- [21]
+					"server", -- [22]
+					"time", -- [23]
+					"sign", -- [24]
+					"in", -- [25]
+					"on", -- [26]
+					"discord", -- [27]
+					"https", -- [28]
+					"gg", -- [29]
+					"szjdv5vnde", -- [30]
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Zoremi-Golemagg",
+				["classColor"] = "F58CBA",
+				["instanceID"] = 603,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676483805,
+				["createdat"] = 1676483805,
+			},
+			["Zuhug-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1010,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Wailing Caverns",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "WC.tga",
+				["words"] = {
+				},
+				["fullName"] = "Wailing Caverns",
+				["author"] = "Zuhug-Golemagg",
+				["classColor"] = "abd473",
+				["minLevel"] = 16,
+				["instanceID"] = 43,
+				["maxLevel"] = 24,
+				["resultID"] = 344,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Wailing Caverns",
+				["timestamp"] = 1676490825,
+				["createdat"] = 1676490318,
 			},
 			["Maximizer-Golemagg"] = {
 				["isLFG"] = false,
@@ -4049,9 +5414,10 @@ GroupieDB = {
 				},
 				["fullName"] = "Naxxramas - 25",
 				["author"] = "Maximizer-Golemagg",
-				["classColor"] = "F58CBA",
 				["isLFM"] = true,
-				["minLevel"] = 80,
+				["classColor"] = "F58CBA",
+				["instanceName"] = "Naxxramas",
+				["createdat"] = 1676455367,
 				["instanceID"] = 533,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -4060,8 +5426,7 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676456509,
-				["instanceName"] = "Naxxramas",
-				["createdat"] = 1676455367,
+				["minLevel"] = 80,
 			},
 			["Elbartinjo-Golemagg"] = {
 				["isLFG"] = false,
@@ -4079,8 +5444,9 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Elbartinjo-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "69CCF0",
-				["instanceID"] = 624,
+				["instanceName"] = "Vault of Archavon",
 				["minLevel"] = 80,
 				["createdat"] = 1676447953,
 				["rolesNeeded"] = {
@@ -4090,8 +5456,7 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676448017,
-				["instanceName"] = "Vault of Archavon",
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
 			["Noconddom-Golemagg"] = {
 				["isLFG"] = false,
@@ -4113,15 +5478,43 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Noconddom-Golemagg",
-				["instanceID"] = 601,
 				["classColor"] = "F58CBA",
-				["createdat"] = 1676454036,
-				["maxLevel"] = 80,
-				["instanceName"] = "Azjol-Nerub",
-				["timestamp"] = 1676454137,
+				["instanceID"] = 601,
 				["rolesNeeded"] = {
 					2, -- [1]
 				},
+				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676454137,
+				["createdat"] = 1676454036,
+			},
+			["Zurov-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3210,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Old Kingdom",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "OK.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Old Kingdom",
+				["author"] = "Zurov-Golemagg",
+				["instanceName"] = "Old Kingdom",
+				["resultID"] = 330,
+				["instanceID"] = 619,
+				["classColor"] = "c79c6e",
+				["createdat"] = 1676490563,
+				["maxLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490825,
 				["minLevel"] = 80,
 			},
 			["Giwrgos-Golemagg"] = {
@@ -4141,16 +5534,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Culling of Stratholme",
 				["author"] = "Giwrgos-Golemagg",
-				["instanceID"] = 595,
 				["classColor"] = "FFFFFF",
-				["createdat"] = 1676457359,
-				["maxLevel"] = 80,
-				["instanceName"] = "Culling of Stratholme",
-				["timestamp"] = 1676457474,
+				["instanceID"] = 595,
 				["rolesNeeded"] = {
 					2, -- [1]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Culling of Stratholme",
+				["timestamp"] = 1676457474,
+				["createdat"] = 1676457359,
 			},
 			["Gaffman-Golemagg"] = {
 				["isLFG"] = false,
@@ -4171,16 +5564,44 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Gaffman-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "FFF569",
-				["createdat"] = 1676453681,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676453833,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676453833,
+				["createdat"] = 1676453681,
+			},
+			["Braincurse-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Braincurse-Golemagg",
+				["classColor"] = "8787ed",
+				["minLevel"] = 80,
+				["instanceID"] = 601,
+				["createdat"] = 1676483360,
+				["resultID"] = 133,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 80,
 			},
 			["Fixkka-Golemagg"] = {
 				["isLFG"] = false,
@@ -4204,12 +5625,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Fixkka-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "FFFFFF",
-				["createdat"] = 1676456367,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676456367,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -4217,6 +5634,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676456367,
+				["createdat"] = 1676456367,
 			},
 			["Moldath-Golemagg"] = {
 				["isLFG"] = false,
@@ -4242,9 +5663,10 @@ GroupieDB = {
 				},
 				["fullName"] = "Obsidian Sanctum - 25",
 				["author"] = "Moldath-Golemagg",
-				["instanceID"] = 615,
 				["classColor"] = "0070DE",
-				["minLevel"] = 80,
+				["instanceID"] = 615,
+				["instanceName"] = "Obsidian Sanctum",
+				["createdat"] = 1676457585,
 				["maxLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -4253,8 +5675,7 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676458683,
-				["instanceName"] = "Obsidian Sanctum",
-				["createdat"] = 1676457585,
+				["minLevel"] = 80,
 			},
 			["Lerntopleay-Golemagg"] = {
 				["isLFG"] = false,
@@ -4294,17 +5715,17 @@ GroupieDB = {
 				},
 				["fullName"] = "Obsidian Sanctum - 10",
 				["author"] = "Lerntopleay-Golemagg",
+				["icon"] = "OS.tga",
+				["minLevel"] = 80,
 				["classColor"] = "FFFFFF",
-				["instanceID"] = 615,
 				["maxLevel"] = 80,
 				["createdat"] = 1676447378,
+				["instanceName"] = "Obsidian Sanctum",
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
-				["instanceName"] = "Obsidian Sanctum",
 				["timestamp"] = 1676448185,
-				["minLevel"] = 80,
-				["icon"] = "OS.tga",
+				["instanceID"] = 615,
 			},
 			["Vampillia-Golemagg"] = {
 				["isLFG"] = true,
@@ -4320,39 +5741,108 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Vampillia-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "8787ed",
-				["createdat"] = 1676451265,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676451265,
+				["resultID"] = 277,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452072,
-				["resultID"] = 277,
-				["instanceID"] = 624,
+				["classColor"] = "8787ed",
 			},
-			["Salchipapi-Golemagg"] = {
+			["Cfa-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3320,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 10",
-				["groupSize"] = 10,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
+				["groupSize"] = 25,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
 				["icon"] = "VOA.tga",
 				["words"] = {
 				},
-				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Salchipapi-Golemagg",
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Cfa-Golemagg",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
 				["instanceID"] = 624,
-				["classColor"] = "40c7eb",
-				["resultID"] = 231,
-				["createdat"] = 1676451684,
-				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676452361,
+				["resultID"] = 452,
 				["rolesNeeded"] = {
 				},
-				["timestamp"] = 1676452072,
-				["minLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676454444,
+				["classColor"] = "40c7eb",
+			},
+			["Beatricz-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3430,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Naxxramas 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "NAX.tga",
+				["words"] = {
+				},
+				["fullName"] = "Naxxramas - 25",
+				["author"] = "Beatricz-Golemagg",
+				["instanceID"] = 533,
+				["createdat"] = 1676489966,
+				["classColor"] = "f58cba",
 				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676490287,
+				["resultID"] = 108,
+			},
+			["Elfryda-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3370,
+				["msg"] = "LFM Ulduar 10 full run,  atleast 6/9 HM. 2 SR>MS>OS. BoE+ Orb HR. Link Curve+ GS.",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"ulduar", -- [2]
+					"10", -- [3]
+					"full", -- [4]
+					"run", -- [5]
+					"atleast", -- [6]
+					"6", -- [7]
+					"9", -- [8]
+					"hm", -- [9]
+					"2", -- [10]
+					"sr", -- [11]
+					"msos", -- [12]
+					"boe", -- [13]
+					"orb", -- [14]
+					"hr", -- [15]
+					"link", -- [16]
+					"curve", -- [17]
+					"gs", -- [18]
+				},
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Elfryda-Golemagg",
+				["instanceID"] = 603,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483782,
+				["createdat"] = 1676483583,
 			},
 			["Sähis-Golemagg"] = {
 				["isLFG"] = true,
@@ -4367,16 +5857,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 10",
 				["author"] = "Sähis-Golemagg",
-				["classColor"] = "0070de",
-				["instanceID"] = 603,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 461,
+				["classColor"] = "0070de",
+				["minLevel"] = 80,
+				["createdat"] = 1676453964,
+				["instanceName"] = "Ulduar",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Ulduar",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676453964,
-				["maxLevel"] = 80,
+				["instanceID"] = 603,
 			},
 			["Cisztercita-Golemagg"] = {
 				["isLFG"] = false,
@@ -4403,18 +5893,46 @@ GroupieDB = {
 				["fullName"] = "Miscellaneous",
 				["author"] = "Cisztercita-Golemagg",
 				["instanceID"] = -1,
+				["classColor"] = "FFFFFF",
+				["maxLevel"] = 1000,
 				["createdat"] = 1676457501,
-				["minLevel"] = 0,
-				["instanceName"] = "Miscellaneous",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "Miscellaneous",
 				["timestamp"] = 1676457501,
-				["maxLevel"] = 1000,
-				["classColor"] = "FFFFFF",
+				["minLevel"] = 0,
+			},
+			["Gormane-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 2010,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Blood Furnace",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "BF.tga",
+				["words"] = {
+				},
+				["fullName"] = "Blood Furnace",
+				["author"] = "Gormane-Golemagg",
+				["instanceID"] = 542,
+				["createdat"] = 1676490131,
+				["classColor"] = "ff7d0a",
+				["maxLevel"] = 68,
+				["minLevel"] = 60,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Blood Furnace",
+				["timestamp"] = 1676490209,
+				["resultID"] = 26,
 			},
 			["Sharøu-Golemagg"] = {
 				["isLFG"] = false,
@@ -4433,9 +5951,10 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Sharøu-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "69CCF0",
-				["minLevel"] = 80,
+				["instanceID"] = 624,
+				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676450602,
 				["maxLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -4444,32 +5963,7 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676450602,
-				["instanceName"] = "Vault of Archavon",
-				["createdat"] = 1676450602,
-			},
-			["Divcon-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Vault of Archavon 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Divcon-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "f58cba",
-				["createdat"] = 1676451838,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["rolesNeeded"] = {
-				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 308,
-				["instanceID"] = 624,
 			},
 			["Solidsnails-Golemagg"] = {
 				["isLFG"] = false,
@@ -4494,41 +5988,17 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Utgarde Pinnacle",
 				["author"] = "Solidsnails-Golemagg",
-				["instanceID"] = 575,
 				["classColor"] = "F58CBA",
-				["createdat"] = 1676453152,
-				["maxLevel"] = 80,
-				["instanceName"] = "Utgarde Pinnacle",
-				["timestamp"] = 1676453152,
+				["instanceID"] = 575,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
 				["minLevel"] = 80,
-			},
-			["Møømin-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3320,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 10",
-				["groupSize"] = 10,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-				},
-				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Møømin-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "abd473",
-				["createdat"] = 1676451726,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["rolesNeeded"] = {
-				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 238,
-				["instanceID"] = 624,
+				["instanceName"] = "Utgarde Pinnacle",
+				["timestamp"] = 1676453152,
+				["createdat"] = 1676453152,
 			},
 			["Ewyzx-Golemagg"] = {
 				["isLFG"] = false,
@@ -4556,18 +6026,18 @@ GroupieDB = {
 				["fullName"] = "Miscellaneous",
 				["author"] = "Ewyzx-Golemagg",
 				["instanceID"] = -1,
+				["classColor"] = "9482C9",
+				["maxLevel"] = 1000,
 				["createdat"] = 1676457527,
-				["minLevel"] = 0,
-				["instanceName"] = "Miscellaneous",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "Miscellaneous",
 				["timestamp"] = 1676457527,
-				["maxLevel"] = 1000,
-				["classColor"] = "9482C9",
+				["minLevel"] = 0,
 			},
 			["Arkael-Golemagg"] = {
 				["isLFG"] = true,
@@ -4582,39 +6052,15 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Arkael-Golemagg",
-				["classColor"] = "fff569",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 430,
-				["rolesNeeded"] = {
-				},
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454444,
-				["createdat"] = 1676453875,
-				["maxLevel"] = 80,
-			},
-			["Gankmutha-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Gankmutha-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "c41f3b",
-				["createdat"] = 1676452016,
+				["classColor"] = "fff569",
 				["minLevel"] = 80,
+				["createdat"] = 1676453875,
 				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 289,
+				["timestamp"] = 1676454444,
 				["instanceID"] = 624,
 			},
 			["Ravastra-Golemagg"] = {
@@ -4631,15 +6077,15 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Ravastra-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "c41f3b",
-				["createdat"] = 1676452008,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676452008,
+				["resultID"] = 240,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452072,
-				["resultID"] = 240,
-				["instanceID"] = 624,
+				["classColor"] = "c41f3b",
 			},
 			["Blackmarlene-Golemagg"] = {
 				["isLFG"] = true,
@@ -4659,19 +6105,19 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Blackmarlene-Golemagg",
+				["maxLevel"] = 1000,
 				["classColor"] = "FFFFFF",
-				["instanceID"] = -1,
-				["createdat"] = 1676449167,
-				["minLevel"] = 0,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676449380,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["maxLevel"] = 1000,
+				["createdat"] = 1676449167,
+				["minLevel"] = 0,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676449380,
+				["instanceID"] = -1,
 			},
 			["Metamorbius-Golemagg"] = {
 				["isLFG"] = false,
@@ -4697,17 +6143,17 @@ GroupieDB = {
 				},
 				["fullName"] = "Obsidian Sanctum - 10",
 				["author"] = "Metamorbius-Golemagg",
-				["instanceID"] = 615,
 				["classColor"] = "9482C9",
-				["createdat"] = 1676453780,
-				["maxLevel"] = 80,
-				["instanceName"] = "Obsidian Sanctum",
-				["timestamp"] = 1676454269,
+				["instanceID"] = 615,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Obsidian Sanctum",
+				["timestamp"] = 1676454269,
+				["createdat"] = 1676453780,
 			},
 			["Joaquina-Golemagg"] = {
 				["isLFG"] = false,
@@ -4732,12 +6178,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Shattered Halls",
 				["author"] = "Joaquina-Golemagg",
-				["instanceID"] = 540,
 				["classColor"] = "F58CBA",
-				["createdat"] = 1676457094,
-				["maxLevel"] = 72,
-				["instanceName"] = "Shattered Halls",
-				["timestamp"] = 1676457129,
+				["instanceID"] = 540,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -4745,6 +6187,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 70,
+				["maxLevel"] = 72,
+				["instanceName"] = "Shattered Halls",
+				["timestamp"] = 1676457129,
+				["createdat"] = 1676457094,
 			},
 			["Stillhere-Golemagg"] = {
 				["isLFG"] = true,
@@ -4759,15 +6205,43 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Stillhere-Golemagg",
-				["classColor"] = "f58cba",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 416,
+				["classColor"] = "f58cba",
+				["minLevel"] = 80,
+				["createdat"] = 1676454339,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454339,
+				["instanceID"] = 624,
+			},
+			["Starnu-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Starnu-Golemagg",
+				["classColor"] = "8787ed",
+				["minLevel"] = 80,
+				["instanceID"] = 601,
+				["createdat"] = 1676483467,
+				["resultID"] = 67,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676483477,
 				["maxLevel"] = 80,
 			},
 			["Tutanebula-Golemagg"] = {
@@ -4796,16 +6270,42 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Oculus",
 				["author"] = "Tutanebula-Golemagg",
-				["classColor"] = "69CCF0",
 				["isLFM"] = true,
-				["minLevel"] = 80,
+				["classColor"] = "69CCF0",
+				["instanceName"] = "Oculus",
+				["createdat"] = 1676454526,
 				["instanceID"] = 578,
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
 				["timestamp"] = 1676455556,
-				["instanceName"] = "Oculus",
-				["createdat"] = 1676454526,
+				["minLevel"] = 80,
+			},
+			["Geberivecen-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3010,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Nexus | Need Tank, Healer",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "NEX.tga",
+				["words"] = {
+				},
+				["fullName"] = "Nexus",
+				["author"] = "Geberivecen-Golemagg",
+				["instanceID"] = 576,
+				["maxLevel"] = 75,
+				["classColor"] = "fff569",
+				["minLevel"] = 70,
+				["resultID"] = 183,
+				["instanceName"] = "Nexus",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+				},
+				["timestamp"] = 1676483851,
+				["createdat"] = 1676483617,
 			},
 			["Lukazz-Golemagg"] = {
 				["isLFG"] = true,
@@ -4820,43 +6320,47 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Lukazz-Golemagg",
-				["resultID"] = 787,
-				["instanceID"] = 601,
-				["classColor"] = "f58cba",
-				["createdat"] = 1676458798,
 				["maxLevel"] = 80,
+				["createdat"] = 1676458798,
+				["instanceID"] = 601,
+				["resultID"] = 787,
+				["minLevel"] = 80,
+				["instanceName"] = "Azjol-Nerub",
 				["rolesNeeded"] = {
 					2, -- [1]
 					3, -- [2]
 					4, -- [3]
 				},
 				["timestamp"] = 1676458818,
-				["minLevel"] = 80,
-				["instanceName"] = "Azjol-Nerub",
+				["classColor"] = "f58cba",
 			},
-			["Silceep-Golemagg"] = {
+			["Sonthy-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
-				["groupSize"] = 25,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["icon"] = "Other.tga",
 				["words"] = {
 				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Silceep-Golemagg",
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Sonthy-Golemagg",
+				["instanceID"] = 33,
 				["maxLevel"] = 80,
-				["classColor"] = "ffffff",
-				["createdat"] = 1676451950,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["classColor"] = "0070de",
+				["minLevel"] = 78,
+				["resultID"] = 190,
+				["instanceName"] = "The Crown Chemical Co.",
 				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
 				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 223,
-				["instanceID"] = 624,
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676483336,
 			},
 			["Herrlidl-Golemagg"] = {
 				["isLFG"] = false,
@@ -4895,19 +6399,19 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Herrlidl-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "F58CBA",
-				["instanceID"] = 603,
-				["createdat"] = 1676447000,
-				["minLevel"] = 80,
-				["instanceName"] = "Ulduar",
-				["timestamp"] = 1676447024,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["maxLevel"] = 80,
+				["createdat"] = 1676447000,
+				["minLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676447024,
+				["instanceID"] = 603,
 			},
 			["Dayd-Golemagg"] = {
 				["isLFG"] = false,
@@ -4932,12 +6436,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Dayd-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "FF7D0A",
-				["createdat"] = 1676455370,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676455409,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -4945,6 +6445,37 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676455409,
+				["createdat"] = 1676455370,
+			},
+			["Takajaka-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Heroic Azjol-Nerub | Need Healer, 2 DPS",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Takajaka-Golemagg",
+				["instanceID"] = 601,
+				["maxLevel"] = 80,
+				["classColor"] = "f58cba",
+				["minLevel"] = 80,
+				["resultID"] = 169,
+				["instanceName"] = "Azjol-Nerub",
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["timestamp"] = 1676483851,
+				["createdat"] = 1676483832,
 			},
 			["Kregorh-Golemagg"] = {
 				["isLFG"] = true,
@@ -4960,15 +6491,15 @@ GroupieDB = {
 				["fullName"] = "Obsidian Sanctum - 10",
 				["author"] = "Kregorh-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "c79c6e",
-				["createdat"] = 1676451252,
 				["minLevel"] = 80,
-				["instanceName"] = "Obsidian Sanctum",
+				["instanceID"] = 615,
+				["createdat"] = 1676451252,
+				["resultID"] = 250,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Obsidian Sanctum",
 				["timestamp"] = 1676452072,
-				["resultID"] = 250,
-				["instanceID"] = 615,
+				["classColor"] = "c79c6e",
 			},
 			["Drticwagín-Golemagg"] = {
 				["isLFG"] = false,
@@ -4995,9 +6526,10 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Drticwagín-Golemagg",
-				["classColor"] = "C79C6E",
 				["isLFM"] = true,
-				["minLevel"] = 80,
+				["classColor"] = "C79C6E",
+				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676454719,
 				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -5006,32 +6538,97 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676455442,
-				["instanceName"] = "Vault of Archavon",
-				["createdat"] = 1676454719,
+				["minLevel"] = 80,
 			},
-			["Gergelÿ-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3420,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Obsidian Sanctum 25",
-				["groupSize"] = 25,
+			["Darinjoex-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 1050,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Stormwind Stockades | Need 2 DPS",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
-				["isLFM"] = false,
+				["isLFM"] = true,
 				["lootType"] = "MS > OS",
-				["icon"] = "OS.tga",
+				["icon"] = "STOCKS.tga",
 				["words"] = {
 				},
-				["fullName"] = "Obsidian Sanctum - 25",
-				["author"] = "Gergelÿ-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "ff7d0a",
-				["createdat"] = 1676452056,
-				["minLevel"] = 80,
-				["instanceName"] = "Obsidian Sanctum",
+				["fullName"] = "Stormwind Stockades",
+				["author"] = "Darinjoex-Golemagg",
+				["instanceID"] = 34,
+				["createdat"] = 1676488462,
+				["classColor"] = "ffffff",
+				["maxLevel"] = 29,
+				["minLevel"] = 21,
 				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
 				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 189,
-				["instanceID"] = 615,
+				["instanceName"] = "Stormwind Stockades",
+				["timestamp"] = 1676490232,
+				["resultID"] = 18,
+			},
+			["Trawiz-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 2040,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Mana-Tombs | Need Healer, 2 DPS",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "MT.tga",
+				["words"] = {
+				},
+				["fullName"] = "Mana-Tombs",
+				["author"] = "Trawiz-Golemagg",
+				["instanceID"] = 557,
+				["maxLevel"] = 71,
+				["classColor"] = "0070de",
+				["minLevel"] = 63,
+				["resultID"] = 155,
+				["instanceName"] = "Mana-Tombs",
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676483695,
+			},
+			["Qursed-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "wts |cffffffff|Hitem:49916::::::::29:::::::::|h[Pulsera de talismanes preciosos]|h|r",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["language"] = "German",
+				["words"] = {
+					"wts", -- [1]
+					"hitem", -- [2]
+					"49916", -- [3]
+					"29", -- [4]
+					"h", -- [5]
+					"pulsera", -- [6]
+					"de", -- [7]
+					"talismanes", -- [8]
+					"preciosos", -- [9]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Qursed-Golemagg",
+				["instanceID"] = -1,
+				["icon"] = "Other.tga",
+				["classColor"] = "9482C9",
+				["minLevel"] = 0,
+				["createdat"] = 1676483548,
+				["instanceName"] = "Miscellaneous",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483548,
+				["maxLevel"] = 1000,
 			},
 			["Stko-Golemagg"] = {
 				["isLFG"] = false,
@@ -5055,18 +6652,18 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Stko-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "C79C6E",
-				["createdat"] = 1676453841,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676453903,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					2, -- [1]
 					3, -- [2]
 					4, -- [3]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676453903,
+				["createdat"] = 1676453841,
 			},
 			["Tranquilityy-Golemagg"] = {
 				["isLFG"] = false,
@@ -5090,12 +6687,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Tranquilityy-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "FFFFFF",
-				["createdat"] = 1676456926,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676457350,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -5103,6 +6696,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676457350,
+				["createdat"] = 1676456926,
 			},
 			["Uranusdeadxo-Golemagg"] = {
 				["isLFG"] = true,
@@ -5117,16 +6714,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Uranusdeadxo-Golemagg",
-				["classColor"] = "c41f3b",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 405,
+				["classColor"] = "c41f3b",
+				["minLevel"] = 80,
+				["createdat"] = 1676454437,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454437,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
 			["Kaeyla-Golemagg"] = {
 				["isLFG"] = false,
@@ -5169,17 +6766,17 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Kaeyla-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "F58CBA",
-				["createdat"] = 1676453586,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676453586,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676453586,
+				["createdat"] = 1676453586,
 			},
 			["Softwarrior-Golemagg"] = {
 				["isLFG"] = true,
@@ -5194,20 +6791,20 @@ GroupieDB = {
 				},
 				["fullName"] = "Razorfen Kraul",
 				["author"] = "Softwarrior-Golemagg",
-				["instanceID"] = 47,
-				["classColor"] = "c79c6e",
-				["resultID"] = 828,
+				["maxLevel"] = 31,
 				["createdat"] = 1676458727,
-				["instanceName"] = "Razorfen Kraul",
+				["instanceID"] = 47,
+				["resultID"] = 828,
+				["minLevel"] = 23,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "Razorfen Kraul",
 				["timestamp"] = 1676458828,
-				["minLevel"] = 23,
-				["maxLevel"] = 31,
+				["classColor"] = "c79c6e",
 			},
 			["Vitakon-Golemagg"] = {
 				["isLFG"] = true,
@@ -5223,15 +6820,15 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Vitakon-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "ff7d0a",
-				["createdat"] = 1676451960,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676451960,
+				["resultID"] = 300,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452072,
-				["resultID"] = 300,
-				["instanceID"] = 624,
+				["classColor"] = "ff7d0a",
 			},
 			["Gingerwoman-Golemagg"] = {
 				["isLFG"] = false,
@@ -5254,9 +6851,10 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Gingerwoman-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "F58CBA",
-				["minLevel"] = 80,
+				["instanceID"] = 624,
+				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676450503,
 				["maxLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -5265,8 +6863,7 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676450503,
-				["instanceName"] = "Vault of Archavon",
-				["createdat"] = 1676450503,
+				["minLevel"] = 80,
 			},
 			["Yere-Golemagg"] = {
 				["isLFG"] = true,
@@ -5282,15 +6879,15 @@ GroupieDB = {
 				["fullName"] = "Obsidian Sanctum - 10",
 				["author"] = "Yere-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "0070de",
-				["createdat"] = 1676450685,
 				["minLevel"] = 80,
-				["instanceName"] = "Obsidian Sanctum",
+				["instanceID"] = 615,
+				["createdat"] = 1676450685,
+				["resultID"] = 455,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Obsidian Sanctum",
 				["timestamp"] = 1676454444,
-				["resultID"] = 455,
-				["instanceID"] = 615,
+				["classColor"] = "0070de",
 			},
 			["Fatticurare-Golemagg"] = {
 				["isLFG"] = true,
@@ -5305,19 +6902,46 @@ GroupieDB = {
 				},
 				["fullName"] = "Oculus",
 				["author"] = "Fatticurare-Golemagg",
-				["classColor"] = "0070de",
-				["instanceID"] = 578,
-				["minLevel"] = 78,
+				["maxLevel"] = 80,
 				["resultID"] = 373,
+				["classColor"] = "0070de",
+				["minLevel"] = 78,
+				["createdat"] = 1676450653,
+				["instanceName"] = "Oculus",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Oculus",
 				["timestamp"] = 1676452720,
-				["createdat"] = 1676450653,
+				["instanceID"] = 578,
+			},
+			["Thagathering-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Thagathering-Golemagg",
+				["classColor"] = "0070de",
+				["minLevel"] = 78,
+				["instanceID"] = 33,
+				["createdat"] = 1676483062,
+				["resultID"] = 113,
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["instanceName"] = "The Crown Chemical Co.",
+				["timestamp"] = 1676483837,
 				["maxLevel"] = 80,
 			},
 			["Larabel-Golemagg"] = {
@@ -5339,40 +6963,71 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Larabel-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "FF7D0A",
-				["createdat"] = 1676457521,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676457521,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676457521,
+				["createdat"] = 1676457521,
 			},
-			["Replee-Golemagg"] = {
+			["Tenacîous-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
+				["order"] = 2180,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Heroic Slave Pens",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["icon"] = "SP.tga",
 				["words"] = {
 				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Replee-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "40c7eb",
-				["createdat"] = 1676452068,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["fullName"] = "Heroic Slave Pens",
+				["author"] = "Tenacîous-Golemagg",
+				["instanceID"] = 547,
+				["createdat"] = 1676489062,
+				["classColor"] = "f58cba",
+				["maxLevel"] = 72,
+				["minLevel"] = 70,
 				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
 				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 241,
-				["instanceID"] = 624,
+				["instanceName"] = "Slave Pens",
+				["timestamp"] = 1676490825,
+				["resultID"] = 363,
+			},
+			["Noktel-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Noktel-Golemagg",
+				["instanceID"] = 601,
+				["maxLevel"] = 80,
+				["classColor"] = "c41f3b",
+				["minLevel"] = 80,
+				["resultID"] = 167,
+				["instanceName"] = "Azjol-Nerub",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483857,
+				["createdat"] = 1676483652,
 			},
 			["Bombkitchen-Golemagg"] = {
 				["isLFG"] = true,
@@ -5387,20 +7042,20 @@ GroupieDB = {
 				},
 				["fullName"] = "Drak'Tharon Keep",
 				["author"] = "Bombkitchen-Golemagg",
-				["instanceID"] = 600,
-				["classColor"] = "8787ed",
-				["resultID"] = 748,
+				["maxLevel"] = 78,
 				["createdat"] = 1676455489,
-				["instanceName"] = "Drak'Tharon Keep",
+				["instanceID"] = 600,
+				["resultID"] = 748,
+				["minLevel"] = 72,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "Drak'Tharon Keep",
 				["timestamp"] = 1676458818,
-				["minLevel"] = 72,
-				["maxLevel"] = 78,
+				["classColor"] = "8787ed",
 			},
 			["Apzo-Golemagg"] = {
 				["isLFG"] = true,
@@ -5415,16 +7070,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Apzo-Golemagg",
-				["classColor"] = "fff569",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 489,
+				["classColor"] = "fff569",
+				["minLevel"] = 80,
+				["createdat"] = 1676453596,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676453596,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
 			["Nékosenshi-Golemagg"] = {
 				["isLFG"] = false,
@@ -5474,18 +7129,18 @@ GroupieDB = {
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Nékosenshi-Golemagg",
 				["instanceID"] = 603,
-				["instanceName"] = "Ulduar",
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 80,
 				["createdat"] = 1676458689,
-				["minLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "Ulduar",
 				["timestamp"] = 1676458689,
-				["maxLevel"] = 80,
-				["classColor"] = "F58CBA",
+				["minLevel"] = 80,
 			},
 			["Frostapa-Golemagg"] = {
 				["isLFG"] = false,
@@ -5508,12 +7163,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Frostapa-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "69CCF0",
-				["createdat"] = 1676453227,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676455923,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -5521,6 +7172,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676455923,
+				["createdat"] = 1676453227,
 			},
 			["Taopao-Golemagg"] = {
 				["isLFG"] = true,
@@ -5535,20 +7190,86 @@ GroupieDB = {
 				},
 				["fullName"] = "Slave Pens",
 				["author"] = "Taopao-Golemagg",
-				["instanceID"] = 547,
-				["classColor"] = "abd473",
-				["createdat"] = 1676457503,
+				["maxLevel"] = 69,
 				["minLevel"] = 61,
+				["instanceID"] = 547,
+				["createdat"] = 1676457503,
+				["resultID"] = 852,
+				["instanceName"] = "Slave Pens",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Slave Pens",
 				["timestamp"] = 1676459154,
-				["resultID"] = 852,
-				["maxLevel"] = 69,
+				["classColor"] = "abd473",
+			},
+			["Jaytah-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "LF 1 HPala, 6 Ranged DPS (Need Mage + Warlock) and 1 Melee DPS for Ulduar 25 tonight at 20:00 Server-Time! Currently 4/10Hard-Mode. If interested please PM me or alternatively go to https://discord.gg/XRqht3hmej",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"lf", -- [1]
+					"1", -- [2]
+					"hpala", -- [3]
+					"6", -- [4]
+					"ranged", -- [5]
+					"dps", -- [6]
+					"need", -- [7]
+					"mage", -- [8]
+					"warlock", -- [9]
+					"and", -- [10]
+					"melee", -- [11]
+					"for", -- [12]
+					"ulduar", -- [13]
+					"25", -- [14]
+					"tonight", -- [15]
+					"at", -- [16]
+					"20", -- [17]
+					"00", -- [18]
+					"server", -- [19]
+					"time", -- [20]
+					"currently", -- [21]
+					"4", -- [22]
+					"10hard", -- [23]
+					"mode", -- [24]
+					"if", -- [25]
+					"interested", -- [26]
+					"please", -- [27]
+					"pm", -- [28]
+					"me", -- [29]
+					"or", -- [30]
+					"alternatively", -- [31]
+					"go", -- [32]
+					"to", -- [33]
+					"https", -- [34]
+					"discord", -- [35]
+					"gg", -- [36]
+					"xrqht3hmej", -- [37]
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Jaytah-Golemagg",
+				["instanceID"] = 603,
+				["classColor"] = "C79C6E",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+					3, -- [3]
+					4, -- [4]
+					3, -- [5]
+					4, -- [6]
+				},
+				["timestamp"] = 1676483662,
+				["createdat"] = 1676483658,
 			},
 			["Tiberion-Golemagg"] = {
 				["isLFG"] = false,
@@ -5570,18 +7291,18 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Tiberion-Golemagg",
 				["instanceID"] = 624,
+				["classColor"] = "69CCF0",
+				["maxLevel"] = 80,
 				["createdat"] = 1676457527,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676457527,
-				["maxLevel"] = 80,
-				["classColor"] = "69CCF0",
+				["minLevel"] = 80,
 			},
 			["Illusions-Golemagg"] = {
 				["isLFG"] = false,
@@ -5603,18 +7324,146 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Illusions-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "0070DE",
-				["createdat"] = 1676455506,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676455506,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676455506,
+				["createdat"] = 1676455506,
+			},
+			["Mzalini-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "WTS [Lovely Charm Bracelet] CHEAP",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"wts", -- [1]
+					"lovely", -- [2]
+					"charm", -- [3]
+					"bracelet", -- [4]
+					"cheap", -- [5]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Mzalini-Golemagg",
+				["instanceID"] = -1,
+				["classColor"] = "FFF569",
+				["createdat"] = 1676490997,
+				["maxLevel"] = 1000,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490997,
+				["minLevel"] = 0,
+				["instanceName"] = "Miscellaneous",
+			},
+			["Nightforge-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3110,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Culling of Stratholme",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "COS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Culling of Stratholme",
+				["author"] = "Nightforge-Golemagg",
+				["classColor"] = "f58cba",
+				["minLevel"] = 78,
+				["instanceID"] = 595,
+				["createdat"] = 1676483210,
+				["resultID"] = 127,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Culling of Stratholme",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 80,
+			},
+			["Jossmelter-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 2020,
+				["msg"] = "LF Enchanter with 63+SP on 1hand",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "SP.tga",
+				["words"] = {
+					"lf", -- [1]
+					"enchanter", -- [2]
+					"with", -- [3]
+					"63", -- [4]
+					"sp", -- [5]
+					"on", -- [6]
+					"1hand", -- [7]
+				},
+				["fullName"] = "Slave Pens",
+				["author"] = "Jossmelter-Golemagg",
+				["instanceID"] = 547,
+				["classColor"] = "FFFFFF",
+				["createdat"] = 1676490925,
+				["maxLevel"] = 69,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490925,
+				["minLevel"] = 61,
+				["instanceName"] = "Slave Pens",
+			},
+			["Vendí-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3350,
+				["msg"] = "LF1M dps last spot eye 10 man sr ms ",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "SoftRes",
+				["icon"] = "EOE.tga",
+				["words"] = {
+					"lf1m", -- [1]
+					"dps", -- [2]
+					"last", -- [3]
+					"spot", -- [4]
+					"eye", -- [5]
+					"10", -- [6]
+					"man", -- [7]
+					"sr", -- [8]
+					"ms", -- [9]
+				},
+				["fullName"] = "Eye of Eternity - 10",
+				["author"] = "Vendí-Golemagg",
+				["instanceID"] = 616,
+				["classColor"] = "FFF569",
+				["maxLevel"] = 80,
+				["createdat"] = 1676490416,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["instanceName"] = "Eye of Eternity",
+				["timestamp"] = 1676490416,
 				["minLevel"] = 80,
 			},
 			["Stickÿxd-Golemagg"] = {
@@ -5637,12 +7486,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Stickÿxd-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "0070DE",
-				["createdat"] = 1676456294,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676456294,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -5650,6 +7495,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676456294,
+				["createdat"] = 1676456294,
 			},
 			["Dúkenúkem-Golemagg"] = {
 				["isLFG"] = true,
@@ -5665,15 +7514,15 @@ GroupieDB = {
 				["fullName"] = "Upper Blackrock Spire",
 				["author"] = "Dúkenúkem-Golemagg",
 				["maxLevel"] = 69,
-				["classColor"] = "f58cba",
-				["createdat"] = 1676453867,
 				["minLevel"] = 56,
-				["instanceName"] = "Upper Blackrock Spire",
+				["instanceID"] = 229,
+				["createdat"] = 1676453867,
+				["resultID"] = 476,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Upper Blackrock Spire",
 				["timestamp"] = 1676454444,
-				["resultID"] = 476,
-				["instanceID"] = 229,
+				["classColor"] = "f58cba",
 			},
 			["Palamala-Golemagg"] = {
 				["isLFG"] = false,
@@ -5694,16 +7543,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Palamala-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "F58CBA",
-				["instanceID"] = 601,
+				["instanceName"] = "Azjol-Nerub",
 				["minLevel"] = 80,
 				["createdat"] = 1676447446,
 				["rolesNeeded"] = {
 					2, -- [1]
 				},
 				["timestamp"] = 1676447807,
-				["instanceName"] = "Azjol-Nerub",
-				["maxLevel"] = 80,
+				["instanceID"] = 601,
 			},
 			["Jùx-Golemagg"] = {
 				["isLFG"] = false,
@@ -5729,12 +7578,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Jùx-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "FFFFFF",
-				["createdat"] = 1676453975,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454342,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -5742,6 +7587,40 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676454342,
+				["createdat"] = 1676453975,
+			},
+			["Concence-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 1300,
+				["msg"] = "LF tank for ZG mount run",
+				["groupSize"] = 20,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ZG.tga",
+				["words"] = {
+					"lf", -- [1]
+					"tank", -- [2]
+					"for", -- [3]
+					"zg", -- [4]
+					"mount", -- [5]
+					"run", -- [6]
+				},
+				["fullName"] = "Zul'Gurub",
+				["author"] = "Concence-Golemagg",
+				["instanceID"] = 309,
+				["classColor"] = "F58CBA",
+				["createdat"] = 1676490870,
+				["maxLevel"] = 60,
+				["rolesNeeded"] = {
+					1, -- [1]
+				},
+				["timestamp"] = 1676490965,
+				["minLevel"] = 60,
+				["instanceName"] = "Zul'Gurub",
 			},
 			["Zahuba-Golemagg"] = {
 				["isLFG"] = true,
@@ -5756,16 +7635,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Zahuba-Golemagg",
-				["classColor"] = "40c7eb",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 438,
+				["classColor"] = "40c7eb",
+				["minLevel"] = 80,
+				["createdat"] = 1676453373,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676453373,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
 			["Hts-Golemagg"] = {
 				["isLFG"] = false,
@@ -5780,20 +7659,44 @@ GroupieDB = {
 				},
 				["fullName"] = "Hellfire Ramparts",
 				["author"] = "Hts-Golemagg",
-				["classColor"] = "c41f3b",
-				["instanceID"] = 543,
-				["minLevel"] = 58,
+				["maxLevel"] = 67,
 				["resultID"] = 849,
+				["classColor"] = "c41f3b",
+				["minLevel"] = 58,
+				["createdat"] = 1676451067,
+				["instanceName"] = "Hellfire Ramparts",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Hellfire Ramparts",
 				["timestamp"] = 1676459154,
-				["createdat"] = 1676451067,
-				["maxLevel"] = 67,
+				["instanceID"] = 543,
+			},
+			["Xandia-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Xandia-Golemagg",
+				["instanceID"] = 624,
+				["createdat"] = 1676489645,
+				["classColor"] = "40c7eb",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490288,
+				["resultID"] = 168,
 			},
 			["Psyna-Golemagg"] = {
 				["isLFG"] = false,
@@ -5821,16 +7724,91 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Psyna-Golemagg",
-				["classColor"] = "FFFFFF",
 				["isLFM"] = true,
-				["minLevel"] = 0,
+				["classColor"] = "FFFFFF",
+				["instanceName"] = "Miscellaneous",
+				["createdat"] = 1676454755,
 				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
 				["timestamp"] = 1676455804,
+				["minLevel"] = 0,
+			},
+			["Coisan-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3340,
+				["msg"] = "2 tanks & 1DPS OS10 2drakes - cloak HR - summ ready ",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "OS.tga",
+				["words"] = {
+					"2", -- [1]
+					"tanks", -- [2]
+					"1dps", -- [3]
+					"os10", -- [4]
+					"2drakes", -- [5]
+					"cloak", -- [6]
+					"hr", -- [7]
+					"summ", -- [8]
+					"ready", -- [9]
+				},
+				["fullName"] = "Obsidian Sanctum - 10",
+				["author"] = "Coisan-Golemagg",
+				["instanceID"] = 615,
+				["classColor"] = "FF7D0A",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Obsidian Sanctum",
+				["rolesNeeded"] = {
+					1, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["timestamp"] = 1676483631,
+				["createdat"] = 1676483582,
+			},
+			["Arismania-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "WTS |cff0070dd|Hitem:44936::::::::80::::1:3524:::::|h[Titanium Plating]|h|r 5G cheaper than AH",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"wts", -- [1]
+					"hitem", -- [2]
+					"44936", -- [3]
+					"80", -- [4]
+					"1", -- [5]
+					"3524", -- [6]
+					"h", -- [7]
+					"titanium", -- [8]
+					"plating", -- [9]
+					"5g", -- [10]
+					"cheaper", -- [11]
+					"than", -- [12]
+					"ah", -- [13]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Arismania-Golemagg",
+				["classColor"] = "C79C6E",
+				["instanceID"] = -1,
 				["instanceName"] = "Miscellaneous",
-				["createdat"] = 1676454755,
+				["createdat"] = 1676458795,
+				["maxLevel"] = 1000,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676458936,
+				["minLevel"] = 0,
 			},
 			["Naturee-Golemagg"] = {
 				["isLFG"] = false,
@@ -5848,19 +7826,19 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Naturee-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "FF7D0A",
-				["instanceID"] = 624,
-				["createdat"] = 1676447220,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676447503,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["maxLevel"] = 80,
+				["createdat"] = 1676447220,
+				["minLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676447503,
+				["instanceID"] = 624,
 			},
 			["Gelga-Golemagg"] = {
 				["isLFG"] = true,
@@ -5875,44 +7853,63 @@ GroupieDB = {
 				},
 				["fullName"] = "Utgarde Keep",
 				["author"] = "Gelga-Golemagg",
-				["classColor"] = "ffffff",
-				["instanceID"] = 574,
-				["minLevel"] = 68,
+				["maxLevel"] = 75,
 				["resultID"] = 384,
+				["classColor"] = "ffffff",
+				["minLevel"] = 68,
+				["createdat"] = 1676451860,
+				["instanceName"] = "Utgarde Keep",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Utgarde Keep",
 				["timestamp"] = 1676452720,
-				["createdat"] = 1676451860,
-				["maxLevel"] = 75,
+				["instanceID"] = 574,
 			},
-			["Abejasha-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3460,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ulduar 25",
+			["Nanoboost-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3420,
+				["msg"] = "LFM OS+2 ---2x tank 1x heal + dps  ILLU HR --- MS/OS ---/w me gs and spec ",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "ULD.tga",
-				["words"] = {
-				},
-				["fullName"] = "Ulduar - 25",
-				["author"] = "Abejasha-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "8787ed",
-				["createdat"] = 1676450760,
-				["minLevel"] = 80,
-				["instanceName"] = "Ulduar",
-				["rolesNeeded"] = {
+				["lootType"] = "MS > OS",
+				["icon"] = "OS.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"os", -- [2]
+					"2", -- [3]
+					"2x", -- [4]
+					"tank", -- [5]
+					"1x", -- [6]
+					"heal", -- [7]
+					"dps", -- [8]
+					"illu", -- [9]
+					"hr", -- [10]
+					"msos", -- [11]
+					"w", -- [12]
+					"me", -- [13]
+					"gs", -- [14]
+					"and", -- [15]
+					"spec", -- [16]
 				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 288,
-				["instanceID"] = 603,
+				["fullName"] = "Obsidian Sanctum - 25",
+				["author"] = "Nanoboost-Golemagg",
+				["isLFM"] = true,
+				["instanceID"] = 615,
+				["instanceName"] = "Obsidian Sanctum",
+				["createdat"] = 1676456777,
+				["classColor"] = "69CCF0",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676459095,
+				["minLevel"] = 80,
 			},
 			["Deffso-Golemagg"] = {
 				["isLFG"] = true,
@@ -5928,15 +7925,43 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Deffso-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "f58cba",
-				["createdat"] = 1676451935,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676451935,
+				["resultID"] = 286,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452072,
-				["resultID"] = 286,
-				["instanceID"] = 624,
+				["classColor"] = "f58cba",
+			},
+			["Deathkiing-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Deathkiing-Golemagg",
+				["instanceName"] = "The Crown Chemical Co.",
+				["resultID"] = 349,
+				["instanceID"] = 33,
+				["classColor"] = "c41f3b",
+				["createdat"] = 1676490685,
+				["maxLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490959,
+				["minLevel"] = 78,
 			},
 			["Purepriest-Golemagg"] = {
 				["isLFG"] = false,
@@ -5956,17 +7981,17 @@ GroupieDB = {
 				},
 				["fullName"] = "Gundrak",
 				["author"] = "Purepriest-Golemagg",
-				["instanceID"] = 604,
 				["classColor"] = "FFFFFF",
-				["createdat"] = 1676453805,
-				["maxLevel"] = 80,
-				["instanceName"] = "Gundrak",
-				["timestamp"] = 1676453805,
+				["instanceID"] = 604,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
 				["minLevel"] = 76,
+				["maxLevel"] = 80,
+				["instanceName"] = "Gundrak",
+				["timestamp"] = 1676453805,
+				["createdat"] = 1676453805,
 			},
 			["Pytelhoven-Golemagg"] = {
 				["isLFG"] = true,
@@ -5981,20 +8006,20 @@ GroupieDB = {
 				},
 				["fullName"] = "Sunken Temple",
 				["author"] = "Pytelhoven-Golemagg",
-				["classColor"] = "ff7d0a",
-				["instanceID"] = 109,
-				["minLevel"] = 45,
+				["maxLevel"] = 54,
 				["resultID"] = 365,
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 45,
+				["createdat"] = 1676451923,
+				["instanceName"] = "Sunken Temple",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Sunken Temple",
 				["timestamp"] = 1676452720,
-				["createdat"] = 1676451923,
-				["maxLevel"] = 54,
+				["instanceID"] = 109,
 			},
 			["Infamo-Golemagg"] = {
 				["isLFG"] = true,
@@ -6009,20 +8034,46 @@ GroupieDB = {
 				},
 				["fullName"] = "Blood Furnace",
 				["author"] = "Infamo-Golemagg",
-				["classColor"] = "f58cba",
-				["instanceID"] = 542,
-				["minLevel"] = 60,
+				["maxLevel"] = 68,
 				["resultID"] = 848,
+				["classColor"] = "f58cba",
+				["minLevel"] = 60,
+				["createdat"] = 1676457166,
+				["instanceName"] = "Blood Furnace",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Blood Furnace",
 				["timestamp"] = 1676459154,
-				["createdat"] = 1676457166,
-				["maxLevel"] = 68,
+				["instanceID"] = 542,
+			},
+			["Szylwia-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 1170,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Blackrock Depths | Need 2 DPS",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "BRD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Blackrock Depths",
+				["author"] = "Szylwia-Golemagg",
+				["instanceName"] = "Blackrock Depths",
+				["resultID"] = 347,
+				["instanceID"] = 230,
+				["classColor"] = "f58cba",
+				["createdat"] = 1676490742,
+				["maxLevel"] = 60,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["timestamp"] = 1676490917,
+				["minLevel"] = 48,
 			},
 			["Kickbot-Golemagg"] = {
 				["isLFG"] = true,
@@ -6037,19 +8088,111 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Kickbot-Golemagg",
-				["classColor"] = "ff7d0a",
-				["instanceID"] = 601,
-				["resultID"] = 642,
+				["maxLevel"] = 80,
 				["createdat"] = 1676457920,
+				["classColor"] = "ff7d0a",
+				["resultID"] = 642,
+				["minLevel"] = 80,
+				["instanceName"] = "Azjol-Nerub",
 				["rolesNeeded"] = {
 					2, -- [1]
 					3, -- [2]
 					4, -- [3]
 				},
-				["instanceName"] = "Azjol-Nerub",
 				["timestamp"] = 1676458207,
-				["minLevel"] = 80,
-				["maxLevel"] = 80,
+				["instanceID"] = 601,
+			},
+			["Vendettav-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 1160,
+				["msg"] = "<Gul'dans Forgotten Clan> Looking to recruit x1 rogue disc priest, x1 hunter, x1 warlock (aflic) x1 boomkin, dk dps to our main raid team, most classes will be considered. Raiding Mon, Weds, Thurs 21:00-23:15 ST /w for more info.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "ST.tga",
+				["words"] = {
+					"gul", -- [1]
+					"dans", -- [2]
+					"forgotten", -- [3]
+					"clan", -- [4]
+					"looking", -- [5]
+					"to", -- [6]
+					"recruit", -- [7]
+					"x1", -- [8]
+					"rogue", -- [9]
+					"disc", -- [10]
+					"priest", -- [11]
+					"hunter", -- [12]
+					"warlock", -- [13]
+					"aflic", -- [14]
+					"boomkin", -- [15]
+					"dk", -- [16]
+					"dps", -- [17]
+					"our", -- [18]
+					"main", -- [19]
+					"raid", -- [20]
+					"team", -- [21]
+					"most", -- [22]
+					"classes", -- [23]
+					"will", -- [24]
+					"be", -- [25]
+					"considered", -- [26]
+					"raiding", -- [27]
+					"mon", -- [28]
+					"weds", -- [29]
+					"thurs", -- [30]
+					"21", -- [31]
+					"00", -- [32]
+					"23", -- [33]
+					"15", -- [34]
+					"st", -- [35]
+					"w", -- [36]
+					"for", -- [37]
+					"more", -- [38]
+					"info", -- [39]
+				},
+				["fullName"] = "Sunken Temple",
+				["author"] = "Vendettav-Golemagg",
+				["instanceID"] = 109,
+				["classColor"] = "FF7D0A",
+				["maxLevel"] = 54,
+				["createdat"] = 1676490190,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["instanceName"] = "Sunken Temple",
+				["timestamp"] = 1676490343,
+				["minLevel"] = 45,
+			},
+			["Sixsicksix-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1140,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Maraudon",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "MARA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Maraudon",
+				["author"] = "Sixsicksix-Golemagg",
+				["instanceID"] = 349,
+				["createdat"] = 1676485929,
+				["classColor"] = "ffffff",
+				["maxLevel"] = 52,
+				["minLevel"] = 40,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Maraudon",
+				["timestamp"] = 1676490256,
+				["resultID"] = 58,
 			},
 			["Bhaldie-Golemagg"] = {
 				["isLFG"] = false,
@@ -6071,9 +8214,10 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Bhaldie-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "FFF569",
-				["minLevel"] = 80,
+				["instanceID"] = 624,
+				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676450693,
 				["maxLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -6082,8 +8226,127 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676450813,
-				["instanceName"] = "Vault of Archavon",
-				["createdat"] = 1676450693,
+				["minLevel"] = 80,
+			},
+			["Floura-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "Lf a Cute Human DK for |cffffff00|Hachievement:1699:Player-4465-00C52B58:0:0:0:-1:2045:0:0:0|h[Fistful of Love]|h|r ",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"lf", -- [1]
+					"a", -- [2]
+					"cute", -- [3]
+					"human", -- [4]
+					"dk", -- [5]
+					"for", -- [6]
+					"fistful", -- [7]
+					"of", -- [8]
+					"love", -- [9]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Floura-Golemagg",
+				["classColor"] = "0070DE",
+				["instanceID"] = -1,
+				["instanceName"] = "Miscellaneous",
+				["createdat"] = 1676490636,
+				["minLevel"] = 0,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490636,
+				["maxLevel"] = 1000,
+			},
+			["Poyoco-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3070,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Gundrak",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "GUN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Gundrak",
+				["author"] = "Poyoco-Golemagg",
+				["instanceName"] = "Gundrak",
+				["resultID"] = 331,
+				["instanceID"] = 604,
+				["classColor"] = "0070de",
+				["createdat"] = 1676490451,
+				["maxLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490825,
+				["minLevel"] = 76,
+			},
+			["Ribbekast-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3030,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Old Kingdom",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "OK.tga",
+				["words"] = {
+				},
+				["fullName"] = "Old Kingdom",
+				["author"] = "Ribbekast-Golemagg",
+				["instanceName"] = "Old Kingdom",
+				["resultID"] = 343,
+				["instanceID"] = 619,
+				["classColor"] = "c79c6e",
+				["createdat"] = 1676490442,
+				["maxLevel"] = 78,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490825,
+				["minLevel"] = 71,
+			},
+			["Darkscytheqq-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1070,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Gnomeregan",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "GNOMER.tga",
+				["words"] = {
+				},
+				["fullName"] = "Gnomeregan",
+				["author"] = "Darkscytheqq-Golemagg",
+				["instanceName"] = "Gnomeregan",
+				["resultID"] = 341,
+				["instanceID"] = 90,
+				["classColor"] = "ffffff",
+				["createdat"] = 1676490791,
+				["maxLevel"] = 32,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490825,
+				["minLevel"] = 24,
 			},
 			["Xko-Golemagg"] = {
 				["isLFG"] = true,
@@ -6098,16 +8361,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Xko-Golemagg",
-				["classColor"] = "c41f3b",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 400,
+				["classColor"] = "c41f3b",
+				["minLevel"] = 80,
+				["createdat"] = 1676454327,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454327,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
 			["Fsyiik-Golemagg"] = {
 				["isLFG"] = true,
@@ -6122,16 +8385,263 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Fsyiik-Golemagg",
-				["classColor"] = "8787ed",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 473,
+				["classColor"] = "8787ed",
+				["minLevel"] = 80,
+				["createdat"] = 1676454003,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454003,
+				["instanceID"] = 624,
+			},
+			["Yyayeet-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1210,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Scholomance",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "SCHOLO.tga",
+				["words"] = {
+				},
+				["fullName"] = "Scholomance",
+				["author"] = "Yyayeet-Golemagg",
+				["instanceID"] = 289,
+				["maxLevel"] = 61,
+				["classColor"] = "c79c6e",
+				["minLevel"] = 56,
+				["resultID"] = 171,
+				["instanceName"] = "Scholomance",
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676483181,
+			},
+			["Blostrup-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3180,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Utgarde Keep",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "UK.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Utgarde Keep",
+				["author"] = "Blostrup-Golemagg",
 				["maxLevel"] = 80,
+				["resultID"] = 213,
+				["classColor"] = "c79c6e",
+				["minLevel"] = 80,
+				["createdat"] = 1676489617,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Utgarde Keep",
+				["timestamp"] = 1676490340,
+				["instanceID"] = 574,
+			},
+			["Procurer-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "[ATM] Running Ulduar 25 Sunday 20:00 ST. Sign here to secure your spot! https://discord.gg/XnJpN5W3NY - Fast full normal clear, 3x SR > MS > OS - Frags HR",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"atm", -- [1]
+					"running", -- [2]
+					"ulduar", -- [3]
+					"25", -- [4]
+					"sunday", -- [5]
+					"20", -- [6]
+					"00", -- [7]
+					"st", -- [8]
+					"sign", -- [9]
+					"here", -- [10]
+					"to", -- [11]
+					"secure", -- [12]
+					"your", -- [13]
+					"spot", -- [14]
+					"https", -- [15]
+					"discord", -- [16]
+					"gg", -- [17]
+					"xnjpn5w3ny", -- [18]
+					"fast", -- [19]
+					"full", -- [20]
+					"normal", -- [21]
+					"clear", -- [22]
+					"3x", -- [23]
+					"sr", -- [24]
+					"msos", -- [25]
+					"frags", -- [26]
+					"hr", -- [27]
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Procurer-Golemagg",
+				["classColor"] = "C41F3B",
+				["instanceID"] = 603,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676456976,
+				["createdat"] = 1676456718,
+			},
+			["Relschopper-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3350,
+				["msg"] = "LF1M Tank EOE10 Leash HR - 1 SR>MS>OS",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "EOE.tga",
+				["words"] = {
+					"lf1m", -- [1]
+					"tank", -- [2]
+					"eoe10", -- [3]
+					"leash", -- [4]
+					"hr", -- [5]
+					"1", -- [6]
+					"sr", -- [7]
+					"msos", -- [8]
+				},
+				["fullName"] = "Eye of Eternity - 10",
+				["author"] = "Relschopper-Golemagg",
+				["instanceID"] = 616,
+				["classColor"] = "C41F3B",
+				["maxLevel"] = 80,
+				["createdat"] = 1676490181,
+				["rolesNeeded"] = {
+					1, -- [1]
+				},
+				["instanceName"] = "Eye of Eternity",
+				["timestamp"] = 1676490322,
+				["minLevel"] = 80,
+			},
+			["Praetoptery-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3370,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ulduar 10",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Praetoptery-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676488337,
+				["classColor"] = "8787ed",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490287,
+				["resultID"] = 126,
+			},
+			["Lcyato-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1170,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Blackrock Depths",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "BRD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Blackrock Depths",
+				["author"] = "Lcyato-Golemagg",
+				["instanceID"] = 230,
+				["createdat"] = 1676489944,
+				["classColor"] = "8787ed",
+				["maxLevel"] = 60,
+				["minLevel"] = 48,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Blackrock Depths",
+				["timestamp"] = 1676490825,
+				["resultID"] = 295,
+			},
+			["Bigdod-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3460,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ulduar 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Bigdod-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676490263,
+				["classColor"] = "c41f3b",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490287,
+				["resultID"] = 147,
+			},
+			["Saramura-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3030,
+				["msg"] = "lf tank last spot ok normal",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "OK.tga",
+				["words"] = {
+					"lf", -- [1]
+					"tank", -- [2]
+					"last", -- [3]
+					"spot", -- [4]
+					"ok", -- [5]
+					"normal", -- [6]
+				},
+				["fullName"] = "Old Kingdom",
+				["author"] = "Saramura-Golemagg",
+				["instanceID"] = 619,
+				["classColor"] = "ABD473",
+				["createdat"] = 1676490984,
+				["maxLevel"] = 78,
+				["rolesNeeded"] = {
+					1, -- [1]
+				},
+				["timestamp"] = 1676490984,
+				["minLevel"] = 71,
+				["instanceName"] = "Old Kingdom",
 			},
 			["Wrogath-Golemagg"] = {
 				["isLFG"] = false,
@@ -6151,12 +8661,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Wrogath-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "69CCF0",
-				["createdat"] = 1676456599,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676456922,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -6164,6 +8670,59 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676456922,
+				["createdat"] = 1676456599,
+			},
+			["Qaddafi-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3370,
+				["msg"] = "LFM ULDUAR 10 mimiron, vezax and yogg left, doing vezax and yogg on hm (dogshit hunt left because sr didnt dropped) need 1 dps (ranged pref)",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "SoftRes",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"ulduar", -- [2]
+					"10", -- [3]
+					"mimiron", -- [4]
+					"vezax", -- [5]
+					"and", -- [6]
+					"yogg", -- [7]
+					"left", -- [8]
+					"doing", -- [9]
+					"on", -- [10]
+					"hm", -- [11]
+					"dogshit", -- [12]
+					"hunt", -- [13]
+					"because", -- [14]
+					"sr", -- [15]
+					"didnt", -- [16]
+					"dropped", -- [17]
+					"need", -- [18]
+					"1", -- [19]
+					"dps", -- [20]
+					"ranged", -- [21]
+					"pref", -- [22]
+				},
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Qaddafi-Golemagg",
+				["classColor"] = "FFF569",
+				["instanceID"] = 603,
+				["minLevel"] = 80,
+				["createdat"] = 1676490344,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490413,
+				["maxLevel"] = 80,
 			},
 			["Irrele-Golemagg"] = {
 				["isLFG"] = false,
@@ -6185,16 +8744,40 @@ GroupieDB = {
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Irrele-Golemagg",
 				["instanceID"] = 601,
+				["classColor"] = "FF7D0A",
+				["maxLevel"] = 80,
 				["createdat"] = 1676457393,
-				["minLevel"] = 80,
-				["instanceName"] = "Azjol-Nerub",
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
+				["instanceName"] = "Azjol-Nerub",
 				["timestamp"] = 1676457513,
+				["minLevel"] = 80,
+			},
+			["Mengmengde-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3330,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Naxxramas 10",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "NAX.tga",
+				["words"] = {
+				},
+				["fullName"] = "Naxxramas - 10",
+				["author"] = "Mengmengde-Golemagg",
+				["instanceID"] = 533,
+				["createdat"] = 1676490236,
+				["classColor"] = "ff7d0a",
 				["maxLevel"] = 80,
-				["classColor"] = "FF7D0A",
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676490287,
+				["resultID"] = 124,
 			},
 			["Luksusfælden-Golemagg"] = {
 				["isLFG"] = true,
@@ -6209,11 +8792,12 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Luksusfælden-Golemagg",
-				["resultID"] = 758,
-				["instanceID"] = 601,
-				["classColor"] = "8787ed",
-				["createdat"] = 1676458687,
 				["maxLevel"] = 80,
+				["createdat"] = 1676458687,
+				["instanceID"] = 601,
+				["resultID"] = 758,
+				["minLevel"] = 80,
+				["instanceName"] = "Azjol-Nerub",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -6221,8 +8805,7 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676458818,
-				["minLevel"] = 80,
-				["instanceName"] = "Azjol-Nerub",
+				["classColor"] = "8787ed",
 			},
 			["Cruisader-Golemagg"] = {
 				["isLFG"] = true,
@@ -6237,16 +8820,100 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Cruisader-Golemagg",
-				["classColor"] = "f58cba",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 410,
+				["classColor"] = "f58cba",
+				["minLevel"] = 80,
+				["createdat"] = 1676454251,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454251,
+				["instanceID"] = 624,
+			},
+			["Killszot-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1010,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Wailing Caverns",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "WC.tga",
+				["words"] = {
+				},
+				["fullName"] = "Wailing Caverns",
+				["author"] = "Killszot-Golemagg",
+				["instanceID"] = 43,
+				["createdat"] = 1676490036,
+				["classColor"] = "abd473",
+				["maxLevel"] = 24,
+				["minLevel"] = 16,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Wailing Caverns",
+				["timestamp"] = 1676490825,
+				["resultID"] = 355,
+			},
+			["Luzar-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1010,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Wailing Caverns",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "WC.tga",
+				["words"] = {
+				},
+				["fullName"] = "Wailing Caverns",
+				["author"] = "Luzar-Golemagg",
+				["classColor"] = "8787ed",
+				["minLevel"] = 16,
+				["instanceID"] = 43,
+				["createdat"] = 1676482563,
+				["resultID"] = 101,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Wailing Caverns",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 24,
+			},
+			["Kanaxas-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Kanaxas-Golemagg",
+				["instanceName"] = "Azjol-Nerub",
+				["resultID"] = 316,
+				["instanceID"] = 601,
+				["classColor"] = "ffffff",
+				["createdat"] = 1676490731,
 				["maxLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490825,
+				["minLevel"] = 80,
 			},
 			["Xristoulis-Golemagg"] = {
 				["isLFG"] = false,
@@ -6265,12 +8932,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Xristoulis-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "0070DE",
-				["createdat"] = 1676455278,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676456719,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -6278,6 +8941,38 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676456719,
+				["createdat"] = 1676455278,
+			},
+			["Celkzug-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Celkzug-Golemagg",
+				["instanceID"] = 601,
+				["createdat"] = 1676489767,
+				["classColor"] = "c79c6e",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676490209,
+				["resultID"] = 91,
 			},
 			["Facetooface-Golemagg"] = {
 				["isLFG"] = true,
@@ -6293,73 +8988,128 @@ GroupieDB = {
 				["fullName"] = "Ruins of Ahn'Qiraj",
 				["author"] = "Facetooface-Golemagg",
 				["maxLevel"] = 69,
-				["classColor"] = "f58cba",
-				["createdat"] = 1676449733,
 				["minLevel"] = 60,
-				["instanceName"] = "Ruins of Ahn'Qiraj",
+				["instanceID"] = 509,
+				["createdat"] = 1676449733,
+				["resultID"] = 490,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Ruins of Ahn'Qiraj",
 				["timestamp"] = 1676454444,
-				["resultID"] = 490,
-				["instanceID"] = 509,
+				["classColor"] = "f58cba",
 			},
-			["Blantiren-Golemagg"] = {
+			["Uchihamadara-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "Powerhouse hosting ULD 25. Need dps only, going full normal run. BoEs/Frags/Patterns reserved. Rest of the loot is MS-OS. PM for more information. 24/25 PREF HUNTER",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"powerhouse", -- [1]
+					"hosting", -- [2]
+					"uld", -- [3]
+					"25", -- [4]
+					"need", -- [5]
+					"dps", -- [6]
+					"only", -- [7]
+					"going", -- [8]
+					"full", -- [9]
+					"normal", -- [10]
+					"run", -- [11]
+					"boes", -- [12]
+					"frags", -- [13]
+					"patterns", -- [14]
+					"reserved", -- [15]
+					"rest", -- [16]
+					"of", -- [17]
+					"the", -- [18]
+					"loot", -- [19]
+					"is", -- [20]
+					"msos", -- [21]
+					"pm", -- [22]
+					"for", -- [23]
+					"more", -- [24]
+					"information", -- [25]
+					"24", -- [26]
+					"pref", -- [27]
+					"hunter", -- [28]
+				},
+				["fullName"] = "Ulduar - 25",
+				["classColor"] = "9482C9",
+				["author"] = "Uchihamadara-Golemagg",
+				["instanceID"] = 603,
+				["instanceName"] = "Ulduar",
+				["createdat"] = 1676490759,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["timestamp"] = 1676490954,
+				["maxLevel"] = 80,
+			},
+			["Bancica-Golemagg"] = {
 				["isLFG"] = false,
 				["order"] = -1,
-				["msg"] = "WTS |cffa335ee|Hitem:45435::::::::80:::::::::|h[Cowl of the Absolute]|h|r Cheap",
+				["msg"] = "WTS |cffa335ee|Hitem:45557::::::::1:::::::::|h[Sash of Ancient Power]|h|r",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "Other",
 				["icon"] = "Other.tga",
+				["classColor"] = "69CCF0",
 				["words"] = {
 					"wts", -- [1]
 					"hitem", -- [2]
-					"45435", -- [3]
-					"80", -- [4]
+					"45557", -- [3]
+					"1", -- [4]
 					"h", -- [5]
-					"cowl", -- [6]
+					"sash", -- [6]
 					"of", -- [7]
-					"the", -- [8]
-					"absolute", -- [9]
-					"cheap", -- [10]
+					"ancient", -- [8]
+					"power", -- [9]
 				},
 				["fullName"] = "Miscellaneous",
-				["author"] = "Blantiren-Golemagg",
+				["author"] = "Bancica-Golemagg",
 				["instanceID"] = -1,
-				["classColor"] = "F58CBA",
-				["createdat"] = 1676453939,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676455782,
+				["minLevel"] = 0,
+				["createdat"] = 1676490470,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["minLevel"] = 0,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676490919,
+				["maxLevel"] = 1000,
 			},
 			["Bonkz-Golemagg"] = {
-				["isLFG"] = true,
+				["isLFG"] = false,
 				["order"] = 3040,
-				["msg"] = "lfg amphitheatre zul'drak",
+				["msg"] = "lfm gun'drak normal - need all",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["maxLevel"] = 78,
 				["lootType"] = "MS > OS",
 				["icon"] = "DTK.tga",
 				["words"] = {
-					"lfg", -- [1]
-					"amphitheatre", -- [2]
-					"zul", -- [3]
-					"drak", -- [4]
+					"lfm", -- [1]
+					"gun", -- [2]
+					"drak", -- [3]
+					"normal", -- [4]
+					"need", -- [5]
+					"all", -- [6]
 				},
 				["fullName"] = "Drak'Tharon Keep",
 				["author"] = "Bonkz-Golemagg",
+				["isLFM"] = true,
 				["classColor"] = "FFF569",
-				["isLFM"] = false,
-				["minLevel"] = 72,
+				["instanceName"] = "Drak'Tharon Keep",
+				["createdat"] = 1676457439,
 				["instanceID"] = 600,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -6367,9 +9117,147 @@ GroupieDB = {
 					3, -- [3]
 					4, -- [4]
 				},
-				["timestamp"] = 1676457439,
-				["instanceName"] = "Drak'Tharon Keep",
-				["createdat"] = 1676457439,
+				["timestamp"] = 1676490787,
+				["minLevel"] = 72,
+			},
+			["Cenedal-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "LFM VOA 25 ONLY EMALON NEED DRUIDS ENCHA SHAMMY ",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"voa", -- [2]
+					"25", -- [3]
+					"only", -- [4]
+					"emalon", -- [5]
+					"need", -- [6]
+					"druids", -- [7]
+					"encha", -- [8]
+					"shammy", -- [9]
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Cenedal-Golemagg",
+				["classColor"] = "FFFFFF",
+				["instanceID"] = 624,
+				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676450554,
+				["maxLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676450554,
+				["minLevel"] = 80,
+			},
+			["Mesiny-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Mesiny-Golemagg",
+				["classColor"] = "40c7eb",
+				["minLevel"] = 78,
+				["instanceID"] = 33,
+				["createdat"] = 1676482525,
+				["resultID"] = 122,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "The Crown Chemical Co.",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 80,
+			},
+			["Sparrìng-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3370,
+				["msg"] = "LF2M Ulduar 10 9/9 hm need 2 dps bala/sp and one with offspecc tank /w for more info checking logs ofc",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"lf2m", -- [1]
+					"ulduar", -- [2]
+					"10", -- [3]
+					"9", -- [4]
+					"hm", -- [5]
+					"need", -- [6]
+					"2", -- [7]
+					"dps", -- [8]
+					"bala", -- [9]
+					"sp", -- [10]
+					"and", -- [11]
+					"one", -- [12]
+					"with", -- [13]
+					"offspecc", -- [14]
+					"tank", -- [15]
+					"w", -- [16]
+					"for", -- [17]
+					"more", -- [18]
+					"info", -- [19]
+					"checking", -- [20]
+					"logs", -- [21]
+					"ofc", -- [22]
+				},
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Sparrìng-Golemagg",
+				["instanceID"] = 603,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+					1, -- [3]
+				},
+				["timestamp"] = 1676483708,
+				["createdat"] = 1676483607,
+			},
+			["Venhero-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1120,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Uldaman",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULDA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Uldaman",
+				["author"] = "Venhero-Golemagg",
+				["instanceName"] = "Uldaman",
+				["resultID"] = 283,
+				["instanceID"] = 70,
+				["classColor"] = "f58cba",
+				["createdat"] = 1676490707,
+				["maxLevel"] = 44,
+				["rolesNeeded"] = {
+					1, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["timestamp"] = 1676490825,
+				["minLevel"] = 36,
 			},
 			["Veribig-Golemagg"] = {
 				["isLFG"] = false,
@@ -6393,57 +9281,214 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Veribig-Golemagg",
 				["instanceID"] = 624,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 80,
 				["minLevel"] = 80,
-				["createdat"] = 1676452519,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 					2, -- [1]
 					3, -- [2]
 					4, -- [3]
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452639,
-				["maxLevel"] = 80,
-				["classColor"] = "F58CBA",
+				["createdat"] = 1676452519,
 			},
-			["Smoldakx-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3370,
-				["msg"] = "LFM Ulduar 10 NORMAL. 2SR>MS>OS. Have Discord and time. Going when full.",
-				["groupSize"] = 10,
+			["Iraziel-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3000,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Utgarde Keep",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
-				["isLFM"] = true,
+				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "ULD.tga",
+				["icon"] = "UK.tga",
 				["words"] = {
-					"lfm", -- [1]
-					"ulduar", -- [2]
-					"10", -- [3]
-					"normal", -- [4]
-					"2sr", -- [5]
-					"msos", -- [6]
-					"have", -- [7]
-					"discord", -- [8]
-					"and", -- [9]
-					"time", -- [10]
-					"going", -- [11]
-					"when", -- [12]
-					"full", -- [13]
 				},
-				["fullName"] = "Ulduar - 10",
-				["author"] = "Smoldakx-Golemagg",
-				["instanceID"] = 603,
-				["classColor"] = "F58CBA",
-				["createdat"] = 1676457818,
-				["maxLevel"] = 80,
-				["instanceName"] = "Ulduar",
-				["timestamp"] = 1676458653,
+				["fullName"] = "Utgarde Keep",
+				["author"] = "Iraziel-Golemagg",
+				["classColor"] = "fff569",
+				["minLevel"] = 68,
+				["instanceID"] = 574,
+				["maxLevel"] = 75,
+				["resultID"] = 367,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "Utgarde Keep",
+				["timestamp"] = 1676490825,
+				["createdat"] = 1676488835,
+			},
+			["Raggarn-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1330,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Molten Core",
+				["groupSize"] = 40,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "MC.tga",
+				["words"] = {
+				},
+				["fullName"] = "Molten Core",
+				["author"] = "Raggarn-Golemagg",
+				["instanceID"] = 409,
+				["createdat"] = 1676490096,
+				["classColor"] = "c79c6e",
+				["maxLevel"] = 69,
+				["minLevel"] = 56,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Molten Core",
+				["timestamp"] = 1676490287,
+				["resultID"] = 139,
+			},
+			["Nænænæ-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3010,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Nexus",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "NEX.tga",
+				["words"] = {
+				},
+				["fullName"] = "Nexus",
+				["author"] = "Nænænæ-Golemagg",
+				["instanceName"] = "Nexus",
+				["resultID"] = 297,
+				["instanceID"] = 576,
+				["classColor"] = "c41f3b",
+				["createdat"] = 1676490525,
+				["maxLevel"] = 75,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490825,
+				["minLevel"] = 70,
+			},
+			["Reportur-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3000,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Utgarde Keep",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "UK.tga",
+				["words"] = {
+				},
+				["fullName"] = "Utgarde Keep",
+				["author"] = "Reportur-Golemagg",
+				["classColor"] = "abd473",
+				["minLevel"] = 68,
+				["instanceID"] = 574,
+				["createdat"] = 1676482777,
+				["resultID"] = 165,
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["instanceName"] = "Utgarde Keep",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 75,
+			},
+			["Jonák-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "LFM VOA 25 Class Run /w me!",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"voa", -- [2]
+					"25", -- [3]
+					"class", -- [4]
+					"run", -- [5]
+					"w", -- [6]
+					"me", -- [7]
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Jonák-Golemagg",
+				["instanceID"] = 624,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 80,
 				["minLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676454093,
+				["createdat"] = 1676452594,
+			},
+			["Khui-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Khui-Golemagg",
+				["instanceID"] = 601,
+				["maxLevel"] = 80,
+				["classColor"] = "c41f3b",
+				["minLevel"] = 80,
+				["resultID"] = 139,
+				["instanceName"] = "Azjol-Nerub",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483837,
+				["createdat"] = 1676483773,
+			},
+			["Tzaliin-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3010,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Nexus",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "NEX.tga",
+				["words"] = {
+				},
+				["fullName"] = "Nexus",
+				["author"] = "Tzaliin-Golemagg",
+				["instanceName"] = "Nexus",
+				["resultID"] = 282,
+				["instanceID"] = 576,
+				["classColor"] = "ff7d0a",
+				["createdat"] = 1676490510,
+				["maxLevel"] = 75,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490912,
+				["minLevel"] = 70,
 			},
 			["Jomoo-Golemagg"] = {
 				["isLFG"] = false,
@@ -6487,18 +9532,97 @@ GroupieDB = {
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Jomoo-Golemagg",
 				["instanceID"] = 603,
+				["classColor"] = "FF7D0A",
+				["maxLevel"] = 80,
 				["minLevel"] = 80,
-				["createdat"] = 1676452637,
+				["instanceName"] = "Ulduar",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Ulduar",
 				["timestamp"] = 1676452637,
+				["createdat"] = 1676452637,
+			},
+			["Dashtii-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3260,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Halls of Lightning",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "HOL.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Halls of Lightning",
+				["author"] = "Dashtii-Golemagg",
+				["instanceName"] = "Halls of Lightning",
+				["resultID"] = 280,
+				["instanceID"] = 602,
+				["classColor"] = "40c7eb",
+				["createdat"] = 1676490717,
 				["maxLevel"] = 80,
-				["classColor"] = "FF7D0A",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490999,
+				["minLevel"] = 80,
+			},
+			["Henokira-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3420,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Obsidian Sanctum 25 | 16/25 in Group",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "OS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Obsidian Sanctum - 25",
+				["author"] = "Henokira-Golemagg",
+				["instanceID"] = 615,
+				["createdat"] = 1676489057,
+				["classColor"] = "c79c6e",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Obsidian Sanctum",
+				["timestamp"] = 1676490292,
+				["resultID"] = 172,
+			},
+			["Kkings-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3060,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Halls of Stone",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "HOS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Halls of Stone",
+				["author"] = "Kkings-Golemagg",
+				["instanceName"] = "Halls of Stone",
+				["resultID"] = 296,
+				["instanceID"] = 599,
+				["classColor"] = "fff569",
+				["createdat"] = 1676490795,
+				["maxLevel"] = 80,
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["timestamp"] = 1676490825,
+				["minLevel"] = 75,
 			},
 			["Woplord-Golemagg"] = {
 				["isLFG"] = false,
@@ -6523,16 +9647,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Woplord-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "9482C9",
-				["instanceID"] = 624,
+				["rolesNeeded"] = {
+					1, -- [1]
+				},
 				["createdat"] = 1676447283,
 				["minLevel"] = 80,
 				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676447577,
-				["rolesNeeded"] = {
-					1, -- [1]
-				},
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
 			["Wârn-Golemagg"] = {
 				["isLFG"] = false,
@@ -6586,17 +9710,45 @@ GroupieDB = {
 				},
 				["fullName"] = "Sunken Temple",
 				["author"] = "Wârn-Golemagg",
+				["maxLevel"] = 54,
 				["classColor"] = "FFFFFF",
-				["instanceID"] = 109,
-				["createdat"] = 1676447247,
-				["minLevel"] = 45,
-				["instanceName"] = "Sunken Temple",
-				["timestamp"] = 1676448491,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
-				["maxLevel"] = 54,
+				["createdat"] = 1676447247,
+				["minLevel"] = 45,
+				["instanceName"] = "Sunken Temple",
+				["timestamp"] = 1676448491,
+				["instanceID"] = 109,
+			},
+			["Kurioko-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Kurioko-Golemagg",
+				["instanceName"] = "Azjol-Nerub",
+				["resultID"] = 321,
+				["instanceID"] = 601,
+				["classColor"] = "8787ed",
+				["createdat"] = 1676490510,
+				["maxLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490899,
+				["minLevel"] = 80,
 			},
 			["Icyways-Golemagg"] = {
 				["isLFG"] = false,
@@ -6611,16 +9763,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Icyways-Golemagg",
-				["classColor"] = "40c7eb",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 470,
+				["classColor"] = "40c7eb",
+				["minLevel"] = 80,
+				["createdat"] = 1676453555,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676453555,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
 			["Skapitos-Golemagg"] = {
 				["isLFG"] = false,
@@ -6640,16 +9792,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Skapitos-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "FFF569",
-				["minLevel"] = 0,
+				["instanceID"] = -1,
+				["instanceName"] = "Miscellaneous",
+				["createdat"] = 1676450262,
 				["maxLevel"] = 1000,
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
 				["timestamp"] = 1676450263,
-				["instanceName"] = "Miscellaneous",
-				["createdat"] = 1676450262,
+				["minLevel"] = 0,
 			},
 			["Papafaulseit-Golemagg"] = {
 				["isLFG"] = false,
@@ -6684,17 +9836,102 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Papafaulseit-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "F58CBA",
-				["createdat"] = 1676452723,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676452723,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676452723,
+				["createdat"] = 1676452723,
+			},
+			["Cruxxwizard-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3370,
+				["msg"] = "LFM ULDU10 ALL HM EXCEPT LEVIATHAN LOOKING PEOPLES WITH EXPERIENCE DISCORD IS MANDATORY BE SURE U HAVE ATLEAST 3 HOURS WE CAN TRY ALGALON DEPENDS ON THE TEAM 2SR>MS>OS",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"uldu10", -- [2]
+					"all", -- [3]
+					"hm", -- [4]
+					"except", -- [5]
+					"leviathan", -- [6]
+					"looking", -- [7]
+					"peoples", -- [8]
+					"with", -- [9]
+					"experience", -- [10]
+					"discord", -- [11]
+					"is", -- [12]
+					"mandatory", -- [13]
+					"be", -- [14]
+					"sure", -- [15]
+					"u", -- [16]
+					"have", -- [17]
+					"atleast", -- [18]
+					"3", -- [19]
+					"hours", -- [20]
+					"we", -- [21]
+					"can", -- [22]
+					"try", -- [23]
+					"algalon", -- [24]
+					"depends", -- [25]
+					"on", -- [26]
+					"the", -- [27]
+					"team", -- [28]
+					"2sr", -- [29]
+					"msos", -- [30]
+				},
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Cruxxwizard-Golemagg",
+				["instanceName"] = "Ulduar",
+				["instanceID"] = 603,
+				["classColor"] = "69CCF0",
+				["createdat"] = 1676490848,
+				["maxLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490848,
+				["minLevel"] = 80,
+			},
+			["Arcanitar-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3100,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Halls of Lightning",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "HOL.tga",
+				["words"] = {
+				},
+				["fullName"] = "Halls of Lightning",
+				["author"] = "Arcanitar-Golemagg",
+				["instanceID"] = 602,
+				["createdat"] = 1676490141,
+				["classColor"] = "40c7eb",
+				["maxLevel"] = 80,
+				["minLevel"] = 78,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Halls of Lightning",
+				["timestamp"] = 1676490825,
+				["resultID"] = 291,
 			},
 			["Maut-Golemagg"] = {
 				["isLFG"] = false,
@@ -6712,12 +9949,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Maut-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "9482C9",
-				["createdat"] = 1676457131,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676457883,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -6725,6 +9958,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676457883,
+				["createdat"] = 1676457131,
 			},
 			["Conas-Golemagg"] = {
 				["isLFG"] = true,
@@ -6744,12 +9981,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Conas-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "9482C9",
-				["createdat"] = 1676453959,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676453959,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -6757,8 +9990,68 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676453959,
+				["createdat"] = 1676453959,
 			},
-			["Tíme-Golemagg"] = {
+			["Èwl-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 2060,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Old Hillsbrad Foothills",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "OHB.tga",
+				["words"] = {
+				},
+				["fullName"] = "Old Hillsbrad Foothills",
+				["author"] = "Èwl-Golemagg",
+				["instanceID"] = 560,
+				["createdat"] = 1676489902,
+				["classColor"] = "ff7d0a",
+				["maxLevel"] = 72,
+				["minLevel"] = 66,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Old Hillsbrad Foothills",
+				["timestamp"] = 1676490825,
+				["resultID"] = 328,
+			},
+			["Cortanaa-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Cortanaa-Golemagg",
+				["instanceName"] = "Azjol-Nerub",
+				["resultID"] = 311,
+				["instanceID"] = 601,
+				["classColor"] = "c41f3b",
+				["createdat"] = 1676490776,
+				["maxLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490825,
+				["minLevel"] = 80,
+			},
+			["Silicona-Golemagg"] = {
 				["isLFG"] = true,
 				["order"] = 3010,
 				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Nexus",
@@ -6770,21 +10063,49 @@ GroupieDB = {
 				["words"] = {
 				},
 				["fullName"] = "Nexus",
-				["author"] = "Tíme-Golemagg",
+				["author"] = "Silicona-Golemagg",
 				["instanceID"] = 576,
-				["classColor"] = "0070de",
-				["resultID"] = 33,
-				["createdat"] = 1676449425,
-				["instanceName"] = "Nexus",
+				["createdat"] = 1676488887,
+				["classColor"] = "abd473",
+				["maxLevel"] = 75,
+				["minLevel"] = 70,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["timestamp"] = 1676449926,
-				["minLevel"] = 70,
-				["maxLevel"] = 75,
+				["instanceName"] = "Nexus",
+				["timestamp"] = 1676490825,
+				["resultID"] = 373,
+			},
+			["Neinoel-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3040,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Drak'Tharon Keep",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "DTK.tga",
+				["words"] = {
+				},
+				["fullName"] = "Drak'Tharon Keep",
+				["author"] = "Neinoel-Golemagg",
+				["instanceID"] = 600,
+				["createdat"] = 1676490348,
+				["classColor"] = "f58cba",
+				["maxLevel"] = 78,
+				["minLevel"] = 72,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Drak'Tharon Keep",
+				["timestamp"] = 1676490825,
+				["resultID"] = 370,
 			},
 			["Moonasun-Golemagg"] = {
 				["isLFG"] = false,
@@ -6805,18 +10126,18 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Moonasun-Golemagg",
 				["instanceID"] = 624,
+				["classColor"] = "0070DE",
+				["maxLevel"] = 80,
 				["createdat"] = 1676458082,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676458458,
-				["maxLevel"] = 80,
-				["classColor"] = "0070DE",
+				["minLevel"] = 80,
 			},
 			["Kinzick-Golemagg"] = {
 				["isLFG"] = true,
@@ -6831,40 +10152,44 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Kinzick-Golemagg",
-				["classColor"] = "0070de",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 423,
+				["classColor"] = "0070de",
+				["minLevel"] = 80,
+				["createdat"] = 1676454432,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454432,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
-			["Freyyaa-Golemagg"] = {
+			["Tewagion-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3320,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Vault of Archavon 10",
-				["groupSize"] = 10,
+				["order"] = 2020,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Slave Pens",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["icon"] = "SP.tga",
 				["words"] = {
 				},
-				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Freyyaa-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "f58cba",
-				["createdat"] = 1676451833,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["fullName"] = "Slave Pens",
+				["author"] = "Tewagion-Golemagg",
+				["maxLevel"] = 69,
+				["resultID"] = 362,
+				["classColor"] = "c41f3b",
+				["minLevel"] = 61,
+				["createdat"] = 1676451309,
+				["instanceName"] = "Slave Pens",
 				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
 				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 225,
-				["instanceID"] = 624,
+				["timestamp"] = 1676452720,
+				["instanceID"] = 547,
 			},
 			["Buberancia-Golemagg"] = {
 				["isLFG"] = false,
@@ -6889,16 +10214,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Obsidian Sanctum - 10",
 				["author"] = "Buberancia-Golemagg",
-				["instanceID"] = 615,
 				["classColor"] = "FFFFFF",
-				["minLevel"] = 80,
+				["instanceID"] = 615,
+				["instanceName"] = "Obsidian Sanctum",
+				["createdat"] = 1676451007,
 				["maxLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
 				["timestamp"] = 1676451642,
-				["instanceName"] = "Obsidian Sanctum",
-				["createdat"] = 1676451007,
+				["minLevel"] = 80,
 			},
 			["Sonti-Golemagg"] = {
 				["isLFG"] = false,
@@ -6914,15 +10239,15 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Sonti-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "8787ed",
-				["createdat"] = 1676451702,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676451702,
+				["resultID"] = 270,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452072,
-				["resultID"] = 270,
-				["instanceID"] = 624,
+				["classColor"] = "8787ed",
 			},
 			["Noxiport-Golemagg"] = {
 				["isLFG"] = false,
@@ -6949,18 +10274,46 @@ GroupieDB = {
 				["fullName"] = "Miscellaneous",
 				["author"] = "Noxiport-Golemagg",
 				["instanceID"] = -1,
-				["instanceName"] = "Miscellaneous",
+				["classColor"] = "69CCF0",
+				["maxLevel"] = 1000,
 				["createdat"] = 1676458637,
-				["minLevel"] = 0,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "Miscellaneous",
 				["timestamp"] = 1676459112,
-				["maxLevel"] = 1000,
-				["classColor"] = "69CCF0",
+				["minLevel"] = 0,
+			},
+			["Shootkiller-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 2010,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Blood Furnace",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "BF.tga",
+				["words"] = {
+				},
+				["fullName"] = "Blood Furnace",
+				["author"] = "Shootkiller-Golemagg",
+				["instanceID"] = 542,
+				["maxLevel"] = 68,
+				["classColor"] = "c79c6e",
+				["minLevel"] = 60,
+				["resultID"] = 107,
+				["instanceName"] = "Blood Furnace",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676483731,
 			},
 			["Talixx-Golemagg"] = {
 				["isLFG"] = false,
@@ -6984,16 +10337,40 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Talixx-Golemagg",
 				["instanceID"] = 624,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 80,
 				["minLevel"] = 80,
-				["createdat"] = 1676452230,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676453283,
+				["createdat"] = 1676452230,
+			},
+			["Eivske-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3330,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Naxxramas 10",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "NAX.tga",
+				["words"] = {
+				},
+				["fullName"] = "Naxxramas - 10",
+				["author"] = "Eivske-Golemagg",
+				["instanceID"] = 533,
+				["createdat"] = 1676490214,
+				["classColor"] = "0070de",
 				["maxLevel"] = 80,
-				["classColor"] = "F58CBA",
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676490287,
+				["resultID"] = 118,
 			},
 			["Dontqqme-Golemagg"] = {
 				["isLFG"] = true,
@@ -7009,15 +10386,143 @@ GroupieDB = {
 				["fullName"] = "Mount Hyjal",
 				["author"] = "Dontqqme-Golemagg",
 				["maxLevel"] = 79,
-				["classColor"] = "fff569",
-				["createdat"] = 1676451138,
 				["minLevel"] = 70,
-				["instanceName"] = "Mount Hyjal",
+				["instanceID"] = 534,
+				["createdat"] = 1676451138,
+				["resultID"] = 267,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Mount Hyjal",
 				["timestamp"] = 1676452072,
-				["resultID"] = 267,
-				["instanceID"] = 534,
+				["classColor"] = "fff569",
+			},
+			["Sndrpala-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3410,
+				["msg"] = "prot pala LFG voa 10/25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"prot", -- [1]
+					"pala", -- [2]
+					"lfg", -- [3]
+					"voa", -- [4]
+					"10", -- [5]
+					"25", -- [6]
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Sndrpala-Golemagg",
+				["instanceID"] = 624,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 80,
+				["createdat"] = 1676458758,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676458758,
+				["minLevel"] = 80,
+			},
+			["Rottentoe-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Rottentoe-Golemagg",
+				["instanceID"] = 601,
+				["maxLevel"] = 80,
+				["classColor"] = "40c7eb",
+				["minLevel"] = 80,
+				["resultID"] = 106,
+				["instanceName"] = "Azjol-Nerub",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483841,
+				["createdat"] = 1676483758,
+			},
+			["Sevenkiller-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3430,
+				["msg"] = "GDKP WORLD TOUR 25 NAXX+EOE+OS(D2)  )  heal dps (semibuyer/BUYER!80/20!Min bid 500!",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "GDKP",
+				["icon"] = "NAX.tga",
+				["words"] = {
+					"gdkp", -- [1]
+					"world", -- [2]
+					"tour", -- [3]
+					"25", -- [4]
+					"naxx", -- [5]
+					"eoe", -- [6]
+					"os", -- [7]
+					"d2", -- [8]
+					"heal", -- [9]
+					"dps", -- [10]
+					"semibuyer", -- [11]
+					"buyer", -- [12]
+					"80", -- [13]
+					"20", -- [14]
+					"min", -- [15]
+					"bid", -- [16]
+					"500", -- [17]
+				},
+				["fullName"] = "Naxxramas - 25",
+				["author"] = "Sevenkiller-Golemagg",
+				["instanceID"] = 533,
+				["classColor"] = "FFFFFF",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Naxxramas",
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["timestamp"] = 1676490381,
+				["createdat"] = 1676483480,
+			},
+			["Avaza-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3430,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Naxxramas 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "NAX.tga",
+				["words"] = {
+				},
+				["fullName"] = "Naxxramas - 25",
+				["author"] = "Avaza-Golemagg",
+				["instanceID"] = 533,
+				["createdat"] = 1676489680,
+				["classColor"] = "fff569",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676490288,
+				["resultID"] = 178,
 			},
 			["Holytrial-Golemagg"] = {
 				["isLFG"] = false,
@@ -7035,12 +10540,8 @@ GroupieDB = {
 				},
 				["fullName"] = "PVP",
 				["author"] = "Holytrial-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "F58CBA",
-				["createdat"] = 1676457157,
-				["maxLevel"] = 1000,
-				["instanceName"] = "PVP",
-				["timestamp"] = 1676457386,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -7048,6 +10549,38 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "PVP",
+				["timestamp"] = 1676457386,
+				["createdat"] = 1676457157,
+			},
+			["Limeon-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Limeon-Golemagg",
+				["instanceName"] = "The Crown Chemical Co.",
+				["resultID"] = 314,
+				["instanceID"] = 33,
+				["classColor"] = "0070de",
+				["createdat"] = 1676490592,
+				["maxLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490924,
+				["minLevel"] = 78,
 			},
 			["Paladinas-Golemagg"] = {
 				["isLFG"] = false,
@@ -7069,15 +10602,43 @@ GroupieDB = {
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Paladinas-Golemagg",
 				["instanceID"] = 601,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 80,
 				["minLevel"] = 80,
-				["createdat"] = 1676451544,
+				["instanceName"] = "Azjol-Nerub",
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
-				["instanceName"] = "Azjol-Nerub",
 				["timestamp"] = 1676452128,
+				["createdat"] = 1676451544,
+			},
+			["Liljin-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Liljin-Golemagg",
+				["classColor"] = "abd473",
+				["minLevel"] = 78,
+				["instanceID"] = 33,
+				["createdat"] = 1676482671,
+				["resultID"] = 4,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "The Crown Chemical Co.",
+				["timestamp"] = 1676483477,
 				["maxLevel"] = 80,
-				["classColor"] = "F58CBA",
 			},
 			["Hanzä-Golemagg"] = {
 				["isLFG"] = false,
@@ -7096,17 +10657,17 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Hanzä-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "F58CBA",
-				["createdat"] = 1676452848,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676452895,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676452895,
+				["createdat"] = 1676452848,
 			},
 			["Furri-Golemagg"] = {
 				["isLFG"] = true,
@@ -7121,11 +10682,12 @@ GroupieDB = {
 				},
 				["fullName"] = "The Crown Chemical Co.",
 				["author"] = "Furri-Golemagg",
-				["resultID"] = 773,
-				["instanceID"] = 33,
-				["classColor"] = "ffffff",
-				["createdat"] = 1676458756,
 				["maxLevel"] = 80,
+				["createdat"] = 1676458756,
+				["instanceID"] = 33,
+				["resultID"] = 773,
+				["minLevel"] = 78,
+				["instanceName"] = "The Crown Chemical Co.",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -7133,32 +10695,7 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676458818,
-				["minLevel"] = 78,
-				["instanceName"] = "The Crown Chemical Co.",
-			},
-			["Abagta-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Abagta-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "8787ed",
-				["createdat"] = 1676451702,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["rolesNeeded"] = {
-				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 272,
-				["instanceID"] = 624,
+				["classColor"] = "ffffff",
 			},
 			["Ultragrim-Golemagg"] = {
 				["isLFG"] = false,
@@ -7222,8 +10759,9 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Ultragrim-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "FFF569",
-				["instanceID"] = 603,
+				["instanceName"] = "Ulduar",
 				["minLevel"] = 80,
 				["createdat"] = 1676447351,
 				["rolesNeeded"] = {
@@ -7233,8 +10771,35 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676447351,
-				["instanceName"] = "Ulduar",
-				["maxLevel"] = 80,
+				["instanceID"] = 603,
+			},
+			["Werto-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1000,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ragefire Chasm",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "RFC.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ragefire Chasm",
+				["author"] = "Werto-Golemagg",
+				["maxLevel"] = 20,
+				["createdat"] = 1676458688,
+				["instanceID"] = 389,
+				["resultID"] = 823,
+				["minLevel"] = 13,
+				["instanceName"] = "Ragefire Chasm",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676458828,
+				["classColor"] = "fff569",
 			},
 			["Beefylock-Golemagg"] = {
 				["isLFG"] = false,
@@ -7257,12 +10822,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Beefylock-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "9482C9",
-				["createdat"] = 1676453957,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676453957,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -7270,6 +10831,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676453957,
+				["createdat"] = 1676453957,
 			},
 			["Plagueknight-Golemagg"] = {
 				["isLFG"] = false,
@@ -7302,12 +10867,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Naxxramas - 25",
 				["author"] = "Plagueknight-Golemagg",
-				["instanceID"] = 533,
 				["maxLevel"] = 80,
-				["createdat"] = 1676455081,
-				["classColor"] = "C41F3B",
-				["instanceName"] = "Naxxramas",
-				["timestamp"] = 1676456458,
+				["instanceID"] = 533,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -7315,6 +10876,38 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["classColor"] = "C41F3B",
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676456458,
+				["createdat"] = 1676455081,
+			},
+			["Kopriwa-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3000,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Utgarde Keep",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "UK.tga",
+				["words"] = {
+				},
+				["fullName"] = "Utgarde Keep",
+				["author"] = "Kopriwa-Golemagg",
+				["instanceID"] = 574,
+				["createdat"] = 1676489190,
+				["classColor"] = "ffffff",
+				["maxLevel"] = 75,
+				["minLevel"] = 68,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Utgarde Keep",
+				["timestamp"] = 1676490825,
+				["resultID"] = 357,
 			},
 			["Cherrycrushh-Golemagg"] = {
 				["isLFG"] = false,
@@ -7338,12 +10931,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Cherrycrushh-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "F58CBA",
-				["createdat"] = 1676452722,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676452722,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -7351,6 +10940,58 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676452722,
+				["createdat"] = 1676452722,
+			},
+			["Nirox-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Nirox-Golemagg",
+				["instanceID"] = 624,
+				["createdat"] = 1676490098,
+				["classColor"] = "40c7eb",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490288,
+				["resultID"] = 175,
+			},
+			["Feelz-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Ulduar 25 | 2/25 in Group",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Feelz-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676489747,
+				["classColor"] = "abd473",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490288,
+				["resultID"] = 164,
 			},
 			["Simboe-Golemagg"] = {
 				["isLFG"] = false,
@@ -7369,18 +11010,98 @@ GroupieDB = {
 				["fullName"] = "Miscellaneous",
 				["author"] = "Simboe-Golemagg",
 				["instanceID"] = -1,
+				["classColor"] = "C79C6E",
+				["maxLevel"] = 1000,
 				["minLevel"] = 0,
-				["createdat"] = 1676457892,
+				["instanceName"] = "Miscellaneous",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Miscellaneous",
 				["timestamp"] = 1676457892,
-				["maxLevel"] = 1000,
-				["classColor"] = "C79C6E",
+				["createdat"] = 1676457892,
+			},
+			["Lorealmodel-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM The Crown Chemical Co. | Need Tank, Healer, 1 DPS",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Lorealmodel-Golemagg",
+				["classColor"] = "f58cba",
+				["minLevel"] = 78,
+				["instanceID"] = 33,
+				["createdat"] = 1676482524,
+				["resultID"] = 97,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "The Crown Chemical Co.",
+				["timestamp"] = 1676483477,
+				["maxLevel"] = 80,
+			},
+			["Kudram-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Vault of Archavon 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Kudram-Golemagg",
+				["instanceID"] = 624,
+				["createdat"] = 1676490187,
+				["classColor"] = "ffffff",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490287,
+				["resultID"] = 152,
+			},
+			["Singmyr-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Singmyr-Golemagg",
+				["instanceID"] = 601,
+				["maxLevel"] = 80,
+				["classColor"] = "f58cba",
+				["minLevel"] = 80,
+				["resultID"] = 123,
+				["instanceName"] = "Azjol-Nerub",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676483687,
 			},
 			["Azbeszt-Golemagg"] = {
 				["isLFG"] = true,
@@ -7395,16 +11116,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Eye of Eternity - 10",
 				["author"] = "Azbeszt-Golemagg",
-				["classColor"] = "ff7d0a",
-				["instanceID"] = 616,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 488,
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 80,
+				["createdat"] = 1676454195,
+				["instanceName"] = "Eye of Eternity",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Eye of Eternity",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454195,
-				["maxLevel"] = 80,
+				["instanceID"] = 616,
 			},
 			["Rumákk-Golemagg"] = {
 				["isLFG"] = true,
@@ -7419,11 +11140,12 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Rumákk-Golemagg",
-				["resultID"] = 767,
-				["instanceID"] = 601,
-				["classColor"] = "c41f3b",
-				["createdat"] = 1676458653,
 				["maxLevel"] = 80,
+				["createdat"] = 1676458653,
+				["instanceID"] = 601,
+				["resultID"] = 767,
+				["minLevel"] = 80,
+				["instanceName"] = "Azjol-Nerub",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -7431,8 +11153,7 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676458818,
-				["minLevel"] = 80,
-				["instanceName"] = "Azjol-Nerub",
+				["classColor"] = "c41f3b",
 			},
 			["Sharlex-Golemagg"] = {
 				["isLFG"] = false,
@@ -7452,17 +11173,17 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Utgarde Keep",
 				["author"] = "Sharlex-Golemagg",
-				["instanceID"] = 574,
 				["classColor"] = "F58CBA",
-				["createdat"] = 1676459146,
-				["maxLevel"] = 80,
-				["instanceName"] = "Utgarde Keep",
-				["timestamp"] = 1676459146,
+				["instanceID"] = 574,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Utgarde Keep",
+				["timestamp"] = 1676459146,
+				["createdat"] = 1676459146,
 			},
 			["Pompeyo-Golemagg"] = {
 				["isLFG"] = true,
@@ -7477,16 +11198,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Pompeyo-Golemagg",
-				["classColor"] = "f58cba",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 426,
+				["classColor"] = "f58cba",
+				["minLevel"] = 80,
+				["createdat"] = 1676454364,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454364,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
 			["Wickid-Golemagg"] = {
 				["isLFG"] = false,
@@ -7505,9 +11226,10 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Wickid-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "9482C9",
-				["minLevel"] = 80,
+				["instanceID"] = 624,
+				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676457611,
 				["maxLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -7516,8 +11238,7 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676457611,
-				["instanceName"] = "Vault of Archavon",
-				["createdat"] = 1676457611,
+				["minLevel"] = 80,
 			},
 			["Pdidi-Golemagg"] = {
 				["isLFG"] = true,
@@ -7532,16 +11253,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Pdidi-Golemagg",
-				["classColor"] = "ff7d0a",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 445,
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 80,
+				["createdat"] = 1676454440,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454440,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
 			["Viconianope-Golemagg"] = {
 				["isLFG"] = false,
@@ -7568,47 +11289,116 @@ GroupieDB = {
 				["fullName"] = "Miscellaneous",
 				["author"] = "Viconianope-Golemagg",
 				["maxLevel"] = 1000,
-				["instanceID"] = -1,
-				["createdat"] = 1676457705,
-				["minLevel"] = 0,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676457706,
 				["icon"] = "Other.tga",
 				["classColor"] = "C41F3B",
-			},
-			["Hobz-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3300,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Culling of Stratholme",
-				["groupSize"] = 5,
-				["isHeroic"] = true,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "COS.tga",
-				["words"] = {
-				},
-				["fullName"] = "Heroic Culling of Stratholme",
-				["author"] = "Hobz-Golemagg",
-				["instanceID"] = 595,
-				["classColor"] = "c79c6e",
-				["resultID"] = 7,
-				["createdat"] = 1676448442,
-				["instanceName"] = "Culling of Stratholme",
+				["minLevel"] = 0,
+				["createdat"] = 1676457705,
+				["instanceName"] = "Miscellaneous",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["timestamp"] = 1676449926,
-				["minLevel"] = 80,
+				["timestamp"] = 1676457706,
+				["instanceID"] = -1,
+			},
+			["Dantilolz-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3320,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Vault of Archavon 10 | 9/10 in Group",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Dantilolz-Golemagg",
 				["maxLevel"] = 80,
+				["resultID"] = 510,
+				["classColor"] = "f58cba",
+				["minLevel"] = 80,
+				["createdat"] = 1676457042,
+				["instanceName"] = "Vault of Archavon",
+				["rolesNeeded"] = {
+				},
+				["timestamp"] = 1676457217,
+				["instanceID"] = 624,
+			},
+			["Chelseagrin-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3370,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ulduar 10",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Chelseagrin-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676488133,
+				["classColor"] = "fff569",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490287,
+				["resultID"] = 158,
+			},
+			["Timmeeh-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 1030,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Shadowfang Keep | Need Tank",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "SFK.tga",
+				["words"] = {
+				},
+				["fullName"] = "Shadowfang Keep",
+				["author"] = "Timmeeh-Golemagg",
+				["classColor"] = "40c7eb",
+				["minLevel"] = 17,
+				["instanceID"] = 33,
+				["maxLevel"] = 25,
+				["resultID"] = 242,
+				["rolesNeeded"] = {
+					1, -- [1]
+				},
+				["instanceName"] = "Shadowfang Keep",
+				["timestamp"] = 1676490636,
+				["createdat"] = 1676490232,
+			},
+			["Delairy-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3420,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Obsidian Sanctum 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "OS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Obsidian Sanctum - 25",
+				["author"] = "Delairy-Golemagg",
+				["instanceID"] = 615,
+				["createdat"] = 1676489110,
+				["classColor"] = "f58cba",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Obsidian Sanctum",
+				["timestamp"] = 1676490287,
+				["resultID"] = 131,
 			},
 			["Kuramerqq-Golemagg"] = {
 				["isLFG"] = false,
@@ -7639,19 +11429,19 @@ GroupieDB = {
 				},
 				["fullName"] = "Naxxramas - 25",
 				["author"] = "Kuramerqq-Golemagg",
+				["maxLevel"] = 80,
 				["instanceID"] = 533,
-				["classColor"] = "F58CBA",
-				["minLevel"] = 80,
-				["createdat"] = 1676447817,
-				["instanceName"] = "Naxxramas",
-				["timestamp"] = 1676450676,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["createdat"] = 1676447817,
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676450676,
+				["classColor"] = "F58CBA",
 			},
 			["Amyk-Golemagg"] = {
 				["isLFG"] = false,
@@ -7677,18 +11467,83 @@ GroupieDB = {
 				["fullName"] = "Miscellaneous",
 				["author"] = "Amyk-Golemagg",
 				["instanceID"] = -1,
+				["classColor"] = "FFFFFF",
+				["maxLevel"] = 1000,
 				["minLevel"] = 0,
-				["createdat"] = 1676457656,
+				["instanceName"] = "Miscellaneous",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Miscellaneous",
 				["timestamp"] = 1676457706,
-				["maxLevel"] = 1000,
-				["classColor"] = "FFFFFF",
+				["createdat"] = 1676457656,
+			},
+			["Ironshaft-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "LFM voa 25 man need tank healer durid  and shaman ele  shadow",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"voa", -- [2]
+					"25", -- [3]
+					"man", -- [4]
+					"need", -- [5]
+					"tank", -- [6]
+					"healer", -- [7]
+					"durid", -- [8]
+					"and", -- [9]
+					"shaman", -- [10]
+					"ele", -- [11]
+					"shadow", -- [12]
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Ironshaft-Golemagg",
+				["maxLevel"] = 80,
+				["classColor"] = "C41F3B",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+				},
+				["createdat"] = 1676447066,
+				["minLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676447844,
+				["instanceID"] = 624,
+			},
+			["Icehigh-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3090,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Oculus",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "OC.tga",
+				["words"] = {
+				},
+				["fullName"] = "Oculus",
+				["author"] = "Icehigh-Golemagg",
+				["instanceID"] = 578,
+				["maxLevel"] = 80,
+				["classColor"] = "c41f3b",
+				["minLevel"] = 78,
+				["resultID"] = 114,
+				["instanceName"] = "Oculus",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676483743,
 			},
 			["Garthadin-Golemagg"] = {
 				["isLFG"] = false,
@@ -7743,41 +11598,99 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Garthadin-Golemagg",
-				["instanceID"] = -1,
 				["maxLevel"] = 1000,
-				["minLevel"] = 0,
-				["classColor"] = "F58CBA",
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676446981,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
 				["createdat"] = 1676311549,
+				["classColor"] = "F58CBA",
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676446981,
+				["minLevel"] = 0,
 			},
-			["Bernardine-Golemagg"] = {
-				["isLFG"] = true,
+			["Keihard-Golemagg"] = {
+				["isLFG"] = false,
 				["order"] = 3320,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Vault of Archavon 10",
+				["msg"] = "LF1M hunter VOA10",
 				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lf1m", -- [1]
+					"hunter", -- [2]
+					"voa10", -- [3]
+				},
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Keihard-Golemagg",
+				["instanceID"] = 624,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 80,
+				["createdat"] = 1676490290,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490422,
+				["minLevel"] = 80,
+			},
+			["Martorc-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 2000,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Hellfire Ramparts",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "RAMPS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Hellfire Ramparts",
+				["author"] = "Martorc-Golemagg",
+				["classColor"] = "abd473",
+				["minLevel"] = 58,
+				["instanceID"] = 543,
+				["createdat"] = 1676482304,
+				["resultID"] = 172,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Hellfire Ramparts",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 67,
+			},
+			["Thulya-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
+				["groupSize"] = 25,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
 				["icon"] = "VOA.tga",
 				["words"] = {
 				},
-				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Bernardine-Golemagg",
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Thulya-Golemagg",
+				["instanceID"] = 624,
+				["createdat"] = 1676490062,
+				["classColor"] = "fff569",
 				["maxLevel"] = 80,
-				["classColor"] = "0070de",
-				["createdat"] = 1676452019,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 271,
-				["instanceID"] = 624,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490287,
+				["resultID"] = 110,
 			},
 			["Royvox-Golemagg"] = {
 				["isLFG"] = true,
@@ -7792,63 +11705,142 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Culling of Stratholme",
 				["author"] = "Royvox-Golemagg",
-				["classColor"] = "ff7d0a",
-				["instanceID"] = 595,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 388,
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 80,
+				["createdat"] = 1676452642,
+				["instanceName"] = "Culling of Stratholme",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Culling of Stratholme",
 				["timestamp"] = 1676452988,
-				["createdat"] = 1676452642,
-				["maxLevel"] = 80,
+				["instanceID"] = 595,
 			},
-			["Crimsonight-Golemagg"] = {
+			["Nikolash-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1300,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Zul'Gurub",
+				["groupSize"] = 20,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ZG.tga",
+				["words"] = {
+				},
+				["fullName"] = "Zul'Gurub",
+				["author"] = "Nikolash-Golemagg",
+				["instanceID"] = 309,
+				["createdat"] = 1676481776,
+				["classColor"] = "40c7eb",
+				["maxLevel"] = 69,
+				["minLevel"] = 56,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Zul'Gurub",
+				["timestamp"] = 1676490287,
+				["resultID"] = 143,
+			},
+			["Smoldakx-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = 3440,
-				["msg"] = "LF2M EoE 20 Need DPS, [Melancholy Sabatons] HR 1 SR MS>OS, W me GS and spec [Need ret paladin]",
+				["order"] = 3370,
+				["msg"] = "LFM Ulduar 10 NORMAL. 2SR>MS>OS. Have Discord and time. Going when full.",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"ulduar", -- [2]
+					"10", -- [3]
+					"normal", -- [4]
+					"2sr", -- [5]
+					"msos", -- [6]
+					"have", -- [7]
+					"discord", -- [8]
+					"and", -- [9]
+					"time", -- [10]
+					"going", -- [11]
+					"when", -- [12]
+					"full", -- [13]
+				},
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Smoldakx-Golemagg",
+				["classColor"] = "F58CBA",
+				["instanceID"] = 603,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676458653,
+				["createdat"] = 1676457818,
+			},
+			["Kosta-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3460,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ulduar 25",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
-				["maxLevel"] = 80,
+				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "EOE.tga",
+				["icon"] = "ULD.tga",
 				["words"] = {
-					"lf2m", -- [1]
-					"eoe", -- [2]
-					"20", -- [3]
-					"need", -- [4]
-					"dps", -- [5]
-					"melancholy", -- [6]
-					"sabatons", -- [7]
-					"hr", -- [8]
-					"1", -- [9]
-					"sr", -- [10]
-					"msos", -- [11]
-					"w", -- [12]
-					"me", -- [13]
-					"gs", -- [14]
-					"and", -- [15]
-					"spec", -- [16]
-					"ret", -- [17]
-					"paladin", -- [18]
 				},
-				["fullName"] = "Eye of Eternity - 25",
-				["author"] = "Crimsonight-Golemagg",
-				["classColor"] = "C41F3B",
-				["isLFM"] = true,
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Kosta-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676490202,
+				["classColor"] = "fff569",
+				["maxLevel"] = 80,
 				["minLevel"] = 80,
-				["instanceID"] = 616,
 				["rolesNeeded"] = {
-					3, -- [1]
-					4, -- [2]
 				},
-				["timestamp"] = 1676454629,
-				["instanceName"] = "Eye of Eternity",
-				["createdat"] = 1676453531,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490287,
+				["resultID"] = 107,
+			},
+			["Jocastam-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3420,
+				["msg"] = "LFM OS2D  PENNANT HR  1SR-MS-OS || Need healer Last spot ",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "OS.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"os2d", -- [2]
+					"pennant", -- [3]
+					"hr", -- [4]
+					"1sr", -- [5]
+					"msos", -- [6]
+					"need", -- [7]
+					"healer", -- [8]
+					"last", -- [9]
+					"spot", -- [10]
+				},
+				["fullName"] = "Obsidian Sanctum - 25",
+				["author"] = "Jocastam-Golemagg",
+				["classColor"] = "69CCF0",
+				["instanceID"] = 615,
+				["rolesNeeded"] = {
+					2, -- [1]
+				},
+				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Obsidian Sanctum",
+				["timestamp"] = 1676458998,
+				["createdat"] = 1676458905,
 			},
 			["Kidneylohan-Golemagg"] = {
 				["isLFG"] = false,
@@ -7866,16 +11858,78 @@ GroupieDB = {
 				},
 				["fullName"] = "Underbog",
 				["author"] = "Kidneylohan-Golemagg",
-				["instanceID"] = 546,
 				["classColor"] = "FFF569",
-				["createdat"] = 1676453269,
-				["maxLevel"] = 70,
-				["instanceName"] = "Underbog",
-				["timestamp"] = 1676458820,
+				["instanceID"] = 546,
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
 				["minLevel"] = 62,
+				["maxLevel"] = 70,
+				["instanceName"] = "Underbog",
+				["timestamp"] = 1676458820,
+				["createdat"] = 1676453269,
+			},
+			["Ifèaru-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Ifèaru-Golemagg",
+				["maxLevel"] = 80,
+				["resultID"] = 740,
+				["classColor"] = "ffffff",
+				["minLevel"] = 80,
+				["createdat"] = 1676458423,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676458818,
+				["instanceID"] = 601,
+			},
+			["Elionessa-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "wts |cff0070dd|Hitem:42702::::::::80:::::::::|h[Enchanted Tear]|h|r",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"wts", -- [1]
+					"hitem", -- [2]
+					"42702", -- [3]
+					"80", -- [4]
+					"h", -- [5]
+					"enchanted", -- [6]
+					"tear", -- [7]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Elionessa-Golemagg",
+				["classColor"] = "FF7D0A",
+				["instanceID"] = -1,
+				["instanceName"] = "Miscellaneous",
+				["createdat"] = 1676490621,
+				["minLevel"] = 0,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490621,
+				["maxLevel"] = 1000,
 			},
 			["Tupacshakurr-Golemagg"] = {
 				["isLFG"] = false,
@@ -7902,17 +11956,17 @@ GroupieDB = {
 				},
 				["fullName"] = "Obsidian Sanctum - 25",
 				["author"] = "Tupacshakurr-Golemagg",
-				["classColor"] = "F58CBA",
 				["isLFM"] = true,
-				["minLevel"] = 80,
-				["instanceID"] = 615,
-				["instanceName"] = "Obsidian Sanctum",
-				["timestamp"] = 1676458194,
+				["classColor"] = "F58CBA",
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
 				["createdat"] = 1676458194,
+				["instanceID"] = 615,
+				["instanceName"] = "Obsidian Sanctum",
+				["timestamp"] = 1676458194,
+				["minLevel"] = 80,
 			},
 			["Jarlhoof-Golemagg"] = {
 				["isLFG"] = false,
@@ -7927,46 +11981,126 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Halls of Lightning",
 				["author"] = "Jarlhoof-Golemagg",
-				["instanceID"] = 602,
-				["classColor"] = "c41f3b",
-				["resultID"] = 16,
+				["maxLevel"] = 80,
 				["createdat"] = 1676449658,
-				["instanceName"] = "Halls of Lightning",
+				["instanceID"] = 602,
+				["resultID"] = 16,
+				["minLevel"] = 80,
 				["rolesNeeded"] = {
 					2, -- [1]
 					3, -- [2]
 					4, -- [3]
 				},
+				["instanceName"] = "Halls of Lightning",
 				["timestamp"] = 1676450223,
-				["minLevel"] = 80,
-				["maxLevel"] = 80,
+				["classColor"] = "c41f3b",
 			},
-			["Muggiest-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 1120,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Uldaman",
+			["Blyglappen-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3020,
+				["msg"] = "LF Tank + 1 DPs - Daily AN",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
-				["isLFM"] = false,
+				["isLFM"] = true,
 				["lootType"] = "MS > OS",
-				["icon"] = "ULDA.tga",
+				["icon"] = "AN.tga",
 				["words"] = {
+					"lf", -- [1]
+					"tank", -- [2]
+					"1", -- [3]
+					"dps", -- [4]
+					"daily", -- [5]
+					"an", -- [6]
 				},
-				["fullName"] = "Uldaman",
-				["author"] = "Muggiest-Golemagg",
-				["classColor"] = "ffffff",
-				["instanceID"] = 70,
-				["resultID"] = 625,
-				["createdat"] = 1676457881,
+				["fullName"] = "Azjol-Nerub",
+				["author"] = "Blyglappen-Golemagg",
+				["classColor"] = "0070DE",
+				["instanceID"] = 601,
+				["minLevel"] = 70,
+				["createdat"] = 1676490402,
 				["rolesNeeded"] = {
 					1, -- [1]
 					3, -- [2]
 					4, -- [3]
 				},
-				["instanceName"] = "Uldaman",
-				["timestamp"] = 1676457988,
-				["minLevel"] = 36,
-				["maxLevel"] = 44,
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676490402,
+				["maxLevel"] = 77,
+			},
+			["Kittybro-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "LF1M love boss, mount res, if drops 10000 gold to you. or u can take 50g tip sum boss and leave! 75+lvl can come! sum ready!",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"lf1m", -- [1]
+					"love", -- [2]
+					"boss", -- [3]
+					"mount", -- [4]
+					"res", -- [5]
+					"if", -- [6]
+					"drops", -- [7]
+					"10000", -- [8]
+					"gold", -- [9]
+					"to", -- [10]
+					"you", -- [11]
+					"or", -- [12]
+					"u", -- [13]
+					"can", -- [14]
+					"take", -- [15]
+					"50g", -- [16]
+					"tip", -- [17]
+					"sum", -- [18]
+					"and", -- [19]
+					"leave", -- [20]
+					"75", -- [21]
+					"lvl", -- [22]
+					"come", -- [23]
+					"ready", -- [24]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Kittybro-Golemagg",
+				["instanceID"] = -1,
+				["classColor"] = "C79C6E",
+				["maxLevel"] = 1000,
+				["createdat"] = 1676490286,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676490593,
+				["minLevel"] = 0,
+			},
+			["Gealden-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3460,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Ulduar 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Gealden-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676489889,
+				["classColor"] = "c79c6e",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490287,
+				["resultID"] = 145,
 			},
 			["Chillvester-Golemagg"] = {
 				["isLFG"] = false,
@@ -7990,12 +12124,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Chillvester-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "ABD473",
-				["createdat"] = 1676455276,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676455516,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -8003,6 +12133,77 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676455516,
+				["createdat"] = 1676455276,
+			},
+			["Royloe-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3340,
+				["msg"] = "LFM 10man OS 3D Zerg Illustration HR Need DPS  /w me spec a gs  ",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "OS.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"10man", -- [2]
+					"os", -- [3]
+					"3d", -- [4]
+					"zerg", -- [5]
+					"illustration", -- [6]
+					"hr", -- [7]
+					"need", -- [8]
+					"dps", -- [9]
+					"w", -- [10]
+					"me", -- [11]
+					"spec", -- [12]
+					"a", -- [13]
+					"gs", -- [14]
+				},
+				["fullName"] = "Obsidian Sanctum - 10",
+				["author"] = "Royloe-Golemagg",
+				["instanceID"] = 615,
+				["classColor"] = "FFFFFF",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Obsidian Sanctum",
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["timestamp"] = 1676483855,
+				["createdat"] = 1676483524,
+			},
+			["Tjurmänniska-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Tjurmänniska-Golemagg",
+				["instanceID"] = 601,
+				["maxLevel"] = 80,
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 80,
+				["resultID"] = 194,
+				["instanceName"] = "Azjol-Nerub",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676483824,
 			},
 			["Klia-Golemagg"] = {
 				["isLFG"] = true,
@@ -8017,16 +12218,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Klia-Golemagg",
-				["classColor"] = "ff7d0a",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 468,
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 80,
+				["createdat"] = 1676454178,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454178,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
 			["Romusiowa-Golemagg"] = {
 				["isLFG"] = false,
@@ -8050,15 +12251,50 @@ GroupieDB = {
 				["fullName"] = "Miscellaneous",
 				["author"] = "Romusiowa-Golemagg",
 				["instanceID"] = -1,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 1000,
 				["minLevel"] = 0,
-				["createdat"] = 1676457754,
+				["instanceName"] = "Miscellaneous",
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
-				["instanceName"] = "Miscellaneous",
 				["timestamp"] = 1676457754,
+				["createdat"] = 1676457754,
+			},
+			["Jaroo-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "WTS |cff0070dd|Hitem:45811::::::::80:::::::::|h[Frostguard Drape]|h|r 130g",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"wts", -- [1]
+					"hitem", -- [2]
+					"45811", -- [3]
+					"80", -- [4]
+					"h", -- [5]
+					"frostguard", -- [6]
+					"drape", -- [7]
+					"130g", -- [8]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Jaroo-Golemagg",
+				["instanceID"] = -1,
+				["classColor"] = "FF7D0A",
 				["maxLevel"] = 1000,
-				["classColor"] = "F58CBA",
+				["createdat"] = 1676490209,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676490226,
+				["minLevel"] = 0,
 			},
 			["Ronyx-Golemagg"] = {
 				["isLFG"] = false,
@@ -8083,93 +12319,165 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Ronyx-Golemagg",
-				["instanceID"] = 603,
 				["classColor"] = "FFFFFF",
-				["minLevel"] = 80,
+				["instanceID"] = 603,
+				["instanceName"] = "Ulduar",
+				["createdat"] = 1676451158,
 				["maxLevel"] = 80,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
 				["timestamp"] = 1676451263,
-				["instanceName"] = "Ulduar",
-				["createdat"] = 1676451158,
-			},
-			["Hangovermen-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3260,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Halls of Lightning",
-				["groupSize"] = 5,
-				["isHeroic"] = true,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "HOL.tga",
-				["words"] = {
-				},
-				["fullName"] = "Heroic Halls of Lightning",
-				["author"] = "Hangovermen-Golemagg",
-				["instanceID"] = 602,
-				["classColor"] = "f58cba",
-				["resultID"] = 19,
-				["createdat"] = 1676449136,
-				["instanceName"] = "Halls of Lightning",
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676449926,
 				["minLevel"] = 80,
-				["maxLevel"] = 80,
 			},
-			["Recobe-Golemagg"] = {
+			["Pitchscale-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = 3430,
-				["msg"] = "LFM 25 WORLD TOUR NAXX EOE OS (2D) Going when FULL  GDKP 80/20 300G all item START BID /w (Full Runs)",
-				["groupSize"] = 25,
+				["order"] = -1,
+				["msg"] = "LF BS WITH |cffa335ee|Hitem:45089::::::::80:::::::::|h[Plans: Battlelord's Plate Boots]|h|r",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = true,
-				["lootType"] = "GDKP",
-				["icon"] = "NAX.tga",
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
 				["words"] = {
-					"lfm", -- [1]
-					"25", -- [2]
-					"world", -- [3]
-					"tour", -- [4]
-					"naxx", -- [5]
-					"eoe", -- [6]
-					"os", -- [7]
-					"2d", -- [8]
-					"going", -- [9]
-					"when", -- [10]
-					"full", -- [11]
-					"gdkp", -- [12]
-					"80", -- [13]
-					"20", -- [14]
-					"300g", -- [15]
-					"all", -- [16]
-					"item", -- [17]
-					"start", -- [18]
-					"bid", -- [19]
-					"w", -- [20]
-					"runs", -- [21]
+					"lf", -- [1]
+					"bs", -- [2]
+					"with", -- [3]
+					"hitem", -- [4]
+					"45089", -- [5]
+					"80", -- [6]
+					"h", -- [7]
+					"plans", -- [8]
+					"battlelord", -- [9]
+					"s", -- [10]
+					"plate", -- [11]
+					"boots", -- [12]
 				},
-				["fullName"] = "Naxxramas - 25",
-				["author"] = "Recobe-Golemagg",
-				["instanceID"] = 533,
-				["classColor"] = "F58CBA",
-				["createdat"] = 1676458533,
-				["maxLevel"] = 80,
-				["instanceName"] = "Naxxramas",
-				["timestamp"] = 1676459112,
+				["fullName"] = "Miscellaneous",
+				["author"] = "Pitchscale-Golemagg",
+				["classColor"] = "C41F3B",
+				["instanceID"] = -1,
+				["minLevel"] = 0,
+				["createdat"] = 1676490519,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["minLevel"] = 80,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676490575,
+				["maxLevel"] = 1000,
+			},
+			["Quenpreym-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3060,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Halls of Stone",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "HOS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Halls of Stone",
+				["author"] = "Quenpreym-Golemagg",
+				["instanceID"] = 599,
+				["createdat"] = 1676490108,
+				["classColor"] = "40c7eb",
+				["maxLevel"] = 80,
+				["minLevel"] = 75,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Halls of Stone",
+				["timestamp"] = 1676490825,
+				["resultID"] = 329,
+			},
+			["Raketbert-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "lf people to sign guild char, paying 15g. You can leave later. Outside og bank",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"lf", -- [1]
+					"people", -- [2]
+					"to", -- [3]
+					"sign", -- [4]
+					"guild", -- [5]
+					"char", -- [6]
+					"paying", -- [7]
+					"15g", -- [8]
+					"you", -- [9]
+					"can", -- [10]
+					"leave", -- [11]
+					"later", -- [12]
+					"outside", -- [13]
+					"og", -- [14]
+					"bank", -- [15]
+				},
+				["fullName"] = "Miscellaneous",
+				["classColor"] = "69CCF0",
+				["author"] = "Raketbert-Golemagg",
+				["instanceID"] = -1,
+				["minLevel"] = 0,
+				["createdat"] = 1676490489,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676490850,
+				["maxLevel"] = 1000,
+			},
+			["Lichblood-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "WTS |cffffffff|Hitem:49916::::::::72:::::::::|h[Lovely Charm Bracelet]|h|r 15 g in dalaran",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"wts", -- [1]
+					"hitem", -- [2]
+					"49916", -- [3]
+					"72", -- [4]
+					"h", -- [5]
+					"lovely", -- [6]
+					"charm", -- [7]
+					"bracelet", -- [8]
+					"15", -- [9]
+					"g", -- [10]
+					"in", -- [11]
+					"dalaran", -- [12]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Lichblood-Golemagg",
+				["classColor"] = "C79C6E",
+				["instanceID"] = -1,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676452740,
+				["createdat"] = 1676452740,
 			},
 			["Yoitsbas-Golemagg"] = {
 				["isLFG"] = false,
@@ -8198,12 +12506,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Obsidian Sanctum - 25",
 				["author"] = "Yoitsbas-Golemagg",
-				["instanceID"] = 615,
 				["classColor"] = "FFFFFF",
-				["createdat"] = 1676456688,
-				["maxLevel"] = 80,
-				["instanceName"] = "Obsidian Sanctum",
-				["timestamp"] = 1676457468,
+				["instanceID"] = 615,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -8211,30 +12515,114 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Obsidian Sanctum",
+				["timestamp"] = 1676457468,
+				["createdat"] = 1676456688,
 			},
-			["Stoya-Golemagg"] = {
+			["Korialstratz-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3320,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Vault of Archavon 10",
-				["groupSize"] = 10,
+				["order"] = 3050,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Violet Hold",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["icon"] = "VH.tga",
 				["words"] = {
 				},
-				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Stoya-Golemagg",
+				["fullName"] = "Violet Hold",
+				["author"] = "Korialstratz-Golemagg",
+				["instanceID"] = 608,
+				["maxLevel"] = 79,
+				["classColor"] = "8787ed",
+				["minLevel"] = 73,
+				["resultID"] = 160,
+				["instanceName"] = "Violet Hold",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676483565,
+			},
+			["Mlfof-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3000,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Utgarde Keep",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "UK.tga",
+				["words"] = {
+				},
+				["fullName"] = "Utgarde Keep",
+				["author"] = "Mlfof-Golemagg",
+				["instanceID"] = 574,
+				["maxLevel"] = 75,
+				["classColor"] = "8787ed",
+				["minLevel"] = 68,
+				["resultID"] = 121,
+				["instanceName"] = "Utgarde Keep",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676483691,
+			},
+			["Chiruka-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3460,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ulduar 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Chiruka-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676489806,
+				["classColor"] = "c41f3b",
 				["maxLevel"] = 80,
-				["classColor"] = "ffffff",
-				["createdat"] = 1676451422,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 306,
-				["instanceID"] = 624,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490287,
+				["resultID"] = 129,
+			},
+			["Pallafren-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3460,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Ulduar 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Pallafren-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676489969,
+				["classColor"] = "f58cba",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490287,
+				["resultID"] = 150,
 			},
 			["Unknowing-Golemagg"] = {
 				["isLFG"] = false,
@@ -8259,12 +12647,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Shattered Halls",
 				["author"] = "Unknowing-Golemagg",
-				["instanceID"] = 540,
 				["classColor"] = "C79C6E",
-				["createdat"] = 1676453153,
-				["maxLevel"] = 72,
-				["instanceName"] = "Shattered Halls",
-				["timestamp"] = 1676453171,
+				["instanceID"] = 540,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -8272,6 +12656,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 70,
+				["maxLevel"] = 72,
+				["instanceName"] = "Shattered Halls",
+				["timestamp"] = 1676453171,
+				["createdat"] = 1676453153,
 			},
 			["Cräbby-Golemagg"] = {
 				["isLFG"] = false,
@@ -8308,8 +12696,9 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 10",
 				["author"] = "Cräbby-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "C41F3B",
-				["instanceID"] = 603,
+				["instanceName"] = "Ulduar",
 				["minLevel"] = 80,
 				["createdat"] = 1676447950,
 				["rolesNeeded"] = {
@@ -8318,8 +12707,7 @@ GroupieDB = {
 					1, -- [3]
 				},
 				["timestamp"] = 1676453446,
-				["instanceName"] = "Ulduar",
-				["maxLevel"] = 80,
+				["instanceID"] = 603,
 			},
 			["Shooi-Golemagg"] = {
 				["isLFG"] = false,
@@ -8342,12 +12730,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Shooi-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "FFFFFF",
-				["createdat"] = 1676457062,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676457718,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -8355,6 +12739,48 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676457718,
+				["createdat"] = 1676457062,
+			},
+			["Butsi-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "LFM voa25 spec run - retri pala, ench shaman, resto / feral druid",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"voa25", -- [2]
+					"spec", -- [3]
+					"run", -- [4]
+					"retri", -- [5]
+					"pala", -- [6]
+					"ench", -- [7]
+					"shaman", -- [8]
+					"resto", -- [9]
+					"feral", -- [10]
+					"druid", -- [11]
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Butsi-Golemagg",
+				["instanceID"] = 624,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676452530,
+				["createdat"] = 1676452439,
 			},
 			["Fleskerud-Golemagg"] = {
 				["isLFG"] = true,
@@ -8370,17 +12796,43 @@ GroupieDB = {
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Fleskerud-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "c79c6e",
-				["createdat"] = 1676450618,
 				["minLevel"] = 80,
-				["instanceName"] = "Ulduar",
+				["instanceID"] = 603,
+				["createdat"] = 1676450618,
+				["resultID"] = 243,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Ulduar",
 				["timestamp"] = 1676452072,
-				["resultID"] = 243,
-				["instanceID"] = 603,
+				["classColor"] = "c79c6e",
 			},
-			["Skigge-Golemagg"] = {
+			["Linå-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3110,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Culling of Stratholme | Need 1 DPS",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "COS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Culling of Stratholme",
+				["author"] = "Linå-Golemagg",
+				["instanceID"] = 595,
+				["createdat"] = 1676489834,
+				["classColor"] = "f58cba",
+				["maxLevel"] = 80,
+				["minLevel"] = 78,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["instanceName"] = "Culling of Stratholme",
+				["timestamp"] = 1676490270,
+				["resultID"] = 84,
+			},
+			["Brokkie-Golemagg"] = {
 				["isLFG"] = true,
 				["order"] = 3320,
 				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 10",
@@ -8392,17 +12844,17 @@ GroupieDB = {
 				["words"] = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Skigge-Golemagg",
+				["author"] = "Brokkie-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "ffffff",
-				["createdat"] = 1676451460,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676452064,
+				["resultID"] = 280,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452072,
-				["resultID"] = 258,
-				["instanceID"] = 624,
+				["classColor"] = "c79c6e",
 			},
 			["Synce-Golemagg"] = {
 				["isLFG"] = false,
@@ -8427,19 +12879,19 @@ GroupieDB = {
 				},
 				["fullName"] = "Naxxramas - 10",
 				["author"] = "Synce-Golemagg",
+				["maxLevel"] = 80,
 				["instanceID"] = 533,
-				["classColor"] = "FFF569",
-				["minLevel"] = 80,
-				["createdat"] = 1676448363,
-				["instanceName"] = "Naxxramas",
-				["timestamp"] = 1676451420,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["createdat"] = 1676448363,
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676451420,
+				["classColor"] = "FFF569",
 			},
 			["Cheops-Golemagg"] = {
 				["isLFG"] = true,
@@ -8454,19 +12906,19 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Halls of Lightning",
 				["author"] = "Cheops-Golemagg",
-				["classColor"] = "ff7d0a",
-				["instanceID"] = 602,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 793,
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 80,
+				["createdat"] = 1676456743,
+				["instanceName"] = "Halls of Lightning",
 				["rolesNeeded"] = {
 					1, -- [1]
 					3, -- [2]
 					4, -- [3]
 				},
-				["instanceName"] = "Halls of Lightning",
 				["timestamp"] = 1676458818,
-				["createdat"] = 1676456743,
-				["maxLevel"] = 80,
+				["instanceID"] = 602,
 			},
 			["Shadowhealer-Golemagg"] = {
 				["isLFG"] = false,
@@ -8495,16 +12947,59 @@ GroupieDB = {
 				["fullName"] = "Naxxramas - 10",
 				["author"] = "Shadowhealer-Golemagg",
 				["instanceID"] = 533,
+				["classColor"] = "FFFFFF",
+				["maxLevel"] = 80,
 				["createdat"] = 1676458060,
-				["minLevel"] = 80,
-				["instanceName"] = "Naxxramas",
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
+				["instanceName"] = "Naxxramas",
 				["timestamp"] = 1676458473,
+				["minLevel"] = 80,
+			},
+			["Crimsonight-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3440,
+				["msg"] = "LF2M EoE 20 Need DPS, [Melancholy Sabatons] HR 1 SR MS>OS, W me GS and spec [Need ret paladin]",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
 				["maxLevel"] = 80,
-				["classColor"] = "FFFFFF",
+				["lootType"] = "MS > OS",
+				["icon"] = "EOE.tga",
+				["words"] = {
+					"lf2m", -- [1]
+					"eoe", -- [2]
+					"20", -- [3]
+					"need", -- [4]
+					"dps", -- [5]
+					"melancholy", -- [6]
+					"sabatons", -- [7]
+					"hr", -- [8]
+					"1", -- [9]
+					"sr", -- [10]
+					"msos", -- [11]
+					"w", -- [12]
+					"me", -- [13]
+					"gs", -- [14]
+					"and", -- [15]
+					"spec", -- [16]
+					"ret", -- [17]
+					"paladin", -- [18]
+				},
+				["fullName"] = "Eye of Eternity - 25",
+				["author"] = "Crimsonight-Golemagg",
+				["isLFM"] = true,
+				["classColor"] = "C41F3B",
+				["instanceName"] = "Eye of Eternity",
+				["createdat"] = 1676453531,
+				["instanceID"] = 616,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["timestamp"] = 1676454629,
+				["minLevel"] = 80,
 			},
 			["Elikk-Golemagg"] = {
 				["isLFG"] = false,
@@ -8525,12 +13020,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Elikk-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "0070DE",
-				["createdat"] = 1676455655,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676455760,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -8538,6 +13029,38 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676455760,
+				["createdat"] = 1676455655,
+			},
+			["Crowlady-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Crowlady-Golemagg",
+				["instanceName"] = "The Crown Chemical Co.",
+				["resultID"] = 286,
+				["instanceID"] = 33,
+				["classColor"] = "f58cba",
+				["createdat"] = 1676490706,
+				["maxLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490873,
+				["minLevel"] = 78,
 			},
 			["Yanerik-Golemagg"] = {
 				["isLFG"] = false,
@@ -8567,9 +13090,10 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Yanerik-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "FFFFFF",
-				["minLevel"] = 80,
+				["instanceID"] = 624,
+				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676450459,
 				["maxLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -8578,32 +13102,97 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676450566,
-				["instanceName"] = "Vault of Archavon",
-				["createdat"] = 1676450459,
+				["minLevel"] = 80,
 			},
-			["Chaostheory-Golemagg"] = {
+			["Erendriel-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3320,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 10",
-				["groupSize"] = 10,
+				["order"] = 1000,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Ragefire Chasm",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["icon"] = "RFC.tga",
 				["words"] = {
 				},
-				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Chaostheory-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "8787ed",
-				["createdat"] = 1676451730,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["fullName"] = "Ragefire Chasm",
+				["author"] = "Erendriel-Golemagg",
+				["classColor"] = "ffffff",
+				["minLevel"] = 13,
+				["instanceID"] = 389,
+				["createdat"] = 1676481461,
+				["resultID"] = 147,
 				["rolesNeeded"] = {
+					1, -- [1]
+					3, -- [2]
+					4, -- [3]
 				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 239,
-				["instanceID"] = 624,
+				["instanceName"] = "Ragefire Chasm",
+				["timestamp"] = 1676483838,
+				["maxLevel"] = 20,
+			},
+			["Eaine-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "WTS |cffffd000|Henchant:56005|h[Tailoring: Glacial Bag]|h|r CD",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"wts", -- [1]
+					"henchant", -- [2]
+					"56005", -- [3]
+					"h", -- [4]
+					"tailoring", -- [5]
+					"glacial", -- [6]
+					"bag", -- [7]
+					"cd", -- [8]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Eaine-Golemagg",
+				["classColor"] = "69CCF0",
+				["instanceID"] = -1,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676455424,
+				["createdat"] = 1676455424,
+			},
+			["Brainles-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Brainles-Golemagg",
+				["maxLevel"] = 80,
+				["createdat"] = 1676458647,
+				["instanceID"] = 601,
+				["resultID"] = 790,
+				["minLevel"] = 80,
+				["instanceName"] = "Azjol-Nerub",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676458818,
+				["classColor"] = "f58cba",
 			},
 			["Ronaldpotter-Golemagg"] = {
 				["isLFG"] = false,
@@ -8629,42 +13218,42 @@ GroupieDB = {
 				["fullName"] = "Miscellaneous",
 				["author"] = "Ronaldpotter-Golemagg",
 				["instanceID"] = -1,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 1000,
 				["minLevel"] = 0,
-				["createdat"] = 1676454606,
+				["instanceName"] = "Miscellaneous",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Miscellaneous",
 				["timestamp"] = 1676454606,
-				["maxLevel"] = 1000,
-				["classColor"] = "F58CBA",
+				["createdat"] = 1676454606,
 			},
-			["Degno-Golemagg"] = {
-				["isLFG"] = false,
+			["Ibrakadabra-Golemagg"] = {
+				["isLFG"] = true,
 				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Vault of Archavon 25 | 15/25 in Group",
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
-				["isLFM"] = true,
+				["isLFM"] = false,
 				["lootType"] = "MS > OS",
 				["icon"] = "VOA.tga",
 				["words"] = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Degno-Golemagg",
+				["author"] = "Ibrakadabra-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "c41f3b",
-				["createdat"] = 1676451812,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676451815,
+				["resultID"] = 242,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452072,
-				["resultID"] = 248,
-				["instanceID"] = 624,
+				["classColor"] = "40c7eb",
 			},
 			["Weaxy-Golemagg"] = {
 				["isLFG"] = true,
@@ -8679,16 +13268,44 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Weaxy-Golemagg",
-				["classColor"] = "40c7eb",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 486,
+				["classColor"] = "40c7eb",
+				["minLevel"] = 80,
+				["createdat"] = 1676454290,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454290,
+				["instanceID"] = 624,
+			},
+			["Vilej-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Vilej-Golemagg",
+				["instanceID"] = 601,
+				["createdat"] = 1676490175,
+				["classColor"] = "ffffff",
 				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676490209,
+				["resultID"] = 99,
 			},
 			["Holywhoore-Golemagg"] = {
 				["isLFG"] = false,
@@ -8714,16 +13331,148 @@ GroupieDB = {
 				},
 				["fullName"] = "Naxxramas - 10",
 				["author"] = "Holywhoore-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "F58CBA",
-				["instanceID"] = 533,
+				["rolesNeeded"] = {
+					2, -- [1]
+				},
 				["createdat"] = 1676449110,
 				["minLevel"] = 80,
 				["instanceName"] = "Naxxramas",
 				["timestamp"] = 1676449575,
-				["rolesNeeded"] = {
-					2, -- [1]
+				["instanceID"] = 533,
+			},
+			["Rentfree-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "{Circle} LFM Ulduar 25 {Circle} starting 20:00 ST. LF4M. 1 Holy Pala. 1 Hunter, 1 Demo Lock and 1 FDK. 3 SR MS > OS.  Fragment/Orbs HR.",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"circle", -- [1]
+					"lfm", -- [2]
+					"ulduar", -- [3]
+					"25", -- [4]
+					"starting", -- [5]
+					"20", -- [6]
+					"00", -- [7]
+					"st", -- [8]
+					"lf4m", -- [9]
+					"1", -- [10]
+					"holy", -- [11]
+					"pala", -- [12]
+					"hunter", -- [13]
+					"demo", -- [14]
+					"lock", -- [15]
+					"and", -- [16]
+					"fdk", -- [17]
+					"3", -- [18]
+					"sr", -- [19]
+					"msos", -- [20]
+					"fragment", -- [21]
+					"orbs", -- [22]
+					"hr", -- [23]
 				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Rentfree-Golemagg",
+				["instanceID"] = 603,
+				["classColor"] = "0070DE",
 				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483621,
+				["createdat"] = 1676483568,
+			},
+			["Sphisix-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "WTS |cffffffff|Hitem:49916::::::::39:::::::::|h[Lovely Charm Bracelet]|h|r for 20g or |cffffffff|Hitem:49927::::::::28:::::::::|h[Love Token]|h|r 15g each, by purchasing tradable items for you. Discount when buying a bunch!",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"wts", -- [1]
+					"hitem", -- [2]
+					"49916", -- [3]
+					"39", -- [4]
+					"h", -- [5]
+					"lovely", -- [6]
+					"charm", -- [7]
+					"bracelet", -- [8]
+					"for", -- [9]
+					"20g", -- [10]
+					"or", -- [11]
+					"49927", -- [12]
+					"28", -- [13]
+					"love", -- [14]
+					"token", -- [15]
+					"15g", -- [16]
+					"each", -- [17]
+					"by", -- [18]
+					"purchasing", -- [19]
+					"tradable", -- [20]
+					"items", -- [21]
+					"you", -- [22]
+					"discount", -- [23]
+					"when", -- [24]
+					"buying", -- [25]
+					"a", -- [26]
+					"bunch", -- [27]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Sphisix-Golemagg",
+				["classColor"] = "69CCF0",
+				["instanceID"] = -1,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676453096,
+				["createdat"] = 1676453096,
+			},
+			["Hangovermen-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3260,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Halls of Lightning",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "HOL.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Halls of Lightning",
+				["author"] = "Hangovermen-Golemagg",
+				["maxLevel"] = 80,
+				["createdat"] = 1676449136,
+				["instanceID"] = 602,
+				["resultID"] = 19,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Halls of Lightning",
+				["timestamp"] = 1676449926,
+				["classColor"] = "f58cba",
 			},
 			["Monikå-Golemagg"] = {
 				["isLFG"] = false,
@@ -8767,9 +13516,10 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Monikå-Golemagg",
-				["classColor"] = "F58CBA",
 				["isLFM"] = true,
-				["minLevel"] = 80,
+				["classColor"] = "F58CBA",
+				["instanceName"] = "Ulduar",
+				["createdat"] = 1676456460,
 				["instanceID"] = 603,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -8778,8 +13528,43 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676459110,
+				["minLevel"] = 80,
+			},
+			["Undertheskin-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3370,
+				["msg"] = "4745gs fury warrior LF 10 man ulduar with HM",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"4745gs", -- [1]
+					"fury", -- [2]
+					"warrior", -- [3]
+					"lf", -- [4]
+					"10", -- [5]
+					"man", -- [6]
+					"ulduar", -- [7]
+					"with", -- [8]
+					"hm", -- [9]
+				},
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Undertheskin-Golemagg",
+				["classColor"] = "C79C6E",
+				["instanceID"] = 603,
 				["instanceName"] = "Ulduar",
-				["createdat"] = 1676456460,
+				["createdat"] = 1676490686,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490686,
+				["maxLevel"] = 80,
 			},
 			["Candlebinds-Golemagg"] = {
 				["isLFG"] = true,
@@ -8794,20 +13579,20 @@ GroupieDB = {
 				},
 				["fullName"] = "Blood Furnace",
 				["author"] = "Candlebinds-Golemagg",
-				["instanceID"] = 542,
-				["classColor"] = "ffffff",
-				["createdat"] = 1676455055,
+				["maxLevel"] = 68,
 				["minLevel"] = 60,
+				["instanceID"] = 542,
+				["createdat"] = 1676455055,
+				["resultID"] = 540,
+				["instanceName"] = "Blood Furnace",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Blood Furnace",
 				["timestamp"] = 1676457572,
-				["resultID"] = 540,
-				["maxLevel"] = 68,
+				["classColor"] = "ffffff",
 			},
 			["Anildruid-Golemagg"] = {
 				["isLFG"] = true,
@@ -8823,56 +13608,126 @@ GroupieDB = {
 				["fullName"] = "Naxxramas - 10",
 				["author"] = "Anildruid-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "ff7d0a",
-				["createdat"] = 1676452053,
 				["minLevel"] = 80,
-				["instanceName"] = "Naxxramas",
+				["instanceID"] = 533,
+				["createdat"] = 1676452053,
+				["resultID"] = 224,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Naxxramas",
 				["timestamp"] = 1676452072,
-				["resultID"] = 224,
-				["instanceID"] = 533,
+				["classColor"] = "ff7d0a",
 			},
-			["Lurbotutka-Golemagg"] = {
+			["Kimjongmoon-Golemagg"] = {
 				["isLFG"] = false,
 				["order"] = -1,
-				["msg"] = "WTS |cffa335ee|Hitem:45551::::::::77:::::::::|h[Indestructible Plate Girdle]|h|r 4900g and |cffa335ee|Hitem:45559::::::::77:::::::::|h[Battlelord's Plate Boots]|h|r 4900g",
+				["msg"] = "{star} <La culpa es de los tanks> {star}  Recluta para consolidar su rooster de 25 man (DPS Ranged Pref) ||  Horarios de 22:00 a 00:30   (miercoles y domingo)   ||  Buscamos players comprometidos, mas info consultar",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "Other",
-				["icon"] = "Other.tga",
+				["language"] = "German",
 				["words"] = {
-					"wts", -- [1]
-					"hitem", -- [2]
-					"45551", -- [3]
-					"77", -- [4]
-					"h", -- [5]
-					"indestructible", -- [6]
-					"plate", -- [7]
-					"girdle", -- [8]
-					"4900g", -- [9]
-					"and", -- [10]
-					"45559", -- [11]
-					"battlelord", -- [12]
-					"s", -- [13]
-					"boots", -- [14]
+					"star", -- [1]
+					"la", -- [2]
+					"culpa", -- [3]
+					"es", -- [4]
+					"de", -- [5]
+					"los", -- [6]
+					"tanks", -- [7]
+					"recluta", -- [8]
+					"para", -- [9]
+					"consolidar", -- [10]
+					"su", -- [11]
+					"rooster", -- [12]
+					"25", -- [13]
+					"man", -- [14]
+					"dps", -- [15]
+					"ranged", -- [16]
+					"pref", -- [17]
+					"horarios", -- [18]
+					"22", -- [19]
+					"00", -- [20]
+					"a", -- [21]
+					"30", -- [22]
+					"miercoles", -- [23]
+					"y", -- [24]
+					"domingo", -- [25]
+					"buscamos", -- [26]
+					"players", -- [27]
+					"comprometidos", -- [28]
+					"mas", -- [29]
+					"info", -- [30]
+					"consultar", -- [31]
 				},
 				["fullName"] = "Miscellaneous",
-				["author"] = "Lurbotutka-Golemagg",
 				["instanceID"] = -1,
-				["classColor"] = "C79C6E",
-				["createdat"] = 1676454554,
+				["author"] = "Kimjongmoon-Golemagg",
+				["minLevel"] = 0,
+				["classColor"] = "F58CBA",
 				["maxLevel"] = 1000,
+				["createdat"] = 1676490444,
 				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676459124,
 				["rolesNeeded"] = {
 					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
+					3, -- [2]
+					4, -- [3]
+					3, -- [4]
+					4, -- [5]
 				},
-				["minLevel"] = 0,
+				["timestamp"] = 1676490939,
+				["icon"] = "Other.tga",
+			},
+			["Brainpain-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3110,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Culling of Stratholme",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "COS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Culling of Stratholme",
+				["author"] = "Brainpain-Golemagg",
+				["maxLevel"] = 80,
+				["resultID"] = 754,
+				["classColor"] = "f58cba",
+				["minLevel"] = 78,
+				["createdat"] = 1676458175,
+				["rolesNeeded"] = {
+					1, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["instanceName"] = "Culling of Stratholme",
+				["timestamp"] = 1676458818,
+				["instanceID"] = 595,
+			},
+			["Martizsuxpal-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3320,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Vault of Archavon 10",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Martizsuxpal-Golemagg",
+				["instanceID"] = 624,
+				["createdat"] = 1676489946,
+				["classColor"] = "f58cba",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490287,
+				["resultID"] = 109,
 			},
 			["Lidoo-Golemagg"] = {
 				["isLFG"] = false,
@@ -8894,12 +13749,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Nexus",
 				["author"] = "Lidoo-Golemagg",
-				["instanceID"] = 576,
 				["classColor"] = "F58CBA",
-				["createdat"] = 1676456100,
-				["maxLevel"] = 75,
-				["instanceName"] = "Nexus",
-				["timestamp"] = 1676456100,
+				["instanceID"] = 576,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -8907,6 +13758,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 70,
+				["maxLevel"] = 75,
+				["instanceName"] = "Nexus",
+				["timestamp"] = 1676456100,
+				["createdat"] = 1676456100,
 			},
 			["Ppndaa-Golemagg"] = {
 				["isLFG"] = false,
@@ -8930,12 +13785,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Ppndaa-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "69CCF0",
-				["createdat"] = 1676454093,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454614,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -8943,6 +13794,40 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676454614,
+				["createdat"] = 1676454093,
+			},
+			["Abomota-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "ele LF 3v3 ",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "PVP",
+				["icon"] = "PVP.tga",
+				["words"] = {
+					"ele", -- [1]
+					"lf", -- [2]
+					"3v3", -- [3]
+				},
+				["fullName"] = "PVP",
+				["author"] = "Abomota-Golemagg",
+				["instanceID"] = -1,
+				["classColor"] = "0070DE",
+				["maxLevel"] = 1000,
+				["createdat"] = 1676490197,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "PVP",
+				["timestamp"] = 1676490203,
+				["minLevel"] = 0,
 			},
 			["Onegatív-Golemagg"] = {
 				["isLFG"] = false,
@@ -8976,8 +13861,9 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Onegatív-Golemagg",
+				["isLFM"] = true,
 				["instanceID"] = 624,
-				["classColor"] = "FFFFFF",
+				["instanceName"] = "Vault of Archavon",
 				["minLevel"] = 80,
 				["createdat"] = 1676446950,
 				["rolesNeeded"] = {
@@ -8987,32 +13873,117 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676448177,
-				["instanceName"] = "Vault of Archavon",
-				["isLFM"] = true,
+				["classColor"] = "FFFFFF",
 			},
-			["Santasanna-Golemagg"] = {
+			["Ðarkspeargøð-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3420,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Obsidian Sanctum 25",
-				["groupSize"] = 25,
+				["order"] = 1160,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Sunken Temple",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "OS.tga",
+				["icon"] = "ST.tga",
 				["words"] = {
 				},
-				["fullName"] = "Obsidian Sanctum - 25",
-				["author"] = "Santasanna-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "f58cba",
-				["createdat"] = 1676451625,
-				["minLevel"] = 80,
-				["instanceName"] = "Obsidian Sanctum",
+				["fullName"] = "Sunken Temple",
+				["author"] = "Ðarkspeargøð-Golemagg",
+				["instanceID"] = 109,
+				["createdat"] = 1676487922,
+				["classColor"] = "c79c6e",
+				["maxLevel"] = 54,
+				["minLevel"] = 45,
 				["rolesNeeded"] = {
+					1, -- [1]
+					3, -- [2]
+					4, -- [3]
 				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 287,
-				["instanceID"] = 615,
+				["instanceName"] = "Sunken Temple",
+				["timestamp"] = 1676490825,
+				["resultID"] = 353,
+			},
+			["Ojiu-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 2010,
+				["msg"] = "LF3M Blood Furnace (DPS)",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "BF.tga",
+				["words"] = {
+					"lf3m", -- [1]
+					"blood", -- [2]
+					"furnace", -- [3]
+					"dps", -- [4]
+				},
+				["fullName"] = "Blood Furnace",
+				["author"] = "Ojiu-Golemagg",
+				["classColor"] = "C41F3B",
+				["instanceID"] = 542,
+				["minLevel"] = 60,
+				["createdat"] = 1676490435,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["instanceName"] = "Blood Furnace",
+				["timestamp"] = 1676490435,
+				["maxLevel"] = 68,
+			},
+			["Gintuk-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 2040,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Mana-Tombs | Need 1 DPS",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "MT.tga",
+				["words"] = {
+				},
+				["fullName"] = "Mana-Tombs",
+				["author"] = "Gintuk-Golemagg",
+				["classColor"] = "c41f3b",
+				["instanceName"] = "Mana-Tombs",
+				["instanceID"] = 557,
+				["minLevel"] = 63,
+				["resultID"] = 217,
+				["maxLevel"] = 71,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["timestamp"] = 1676490593,
+				["createdat"] = 1676490014,
+			},
+			["Fnykur-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Fnykur-Golemagg",
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 78,
+				["instanceID"] = 33,
+				["maxLevel"] = 80,
+				["resultID"] = 218,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "The Crown Chemical Co.",
+				["timestamp"] = 1676490619,
+				["createdat"] = 1676490330,
 			},
 			["Dirtypunk-Golemagg"] = {
 				["isLFG"] = false,
@@ -9035,44 +14006,156 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Dirtypunk-Golemagg",
-				["instanceID"] = 601,
 				["classColor"] = "FFF569",
-				["createdat"] = 1676453568,
-				["maxLevel"] = 80,
-				["instanceName"] = "Azjol-Nerub",
-				["timestamp"] = 1676453569,
+				["instanceID"] = 601,
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676453569,
+				["createdat"] = 1676453568,
 			},
-			["Incatheone-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 2010,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Blood Furnace",
-				["groupSize"] = 5,
+			["Nýls-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3440,
+				["msg"] = "LFM EOE 20 (MARK RES) 1SR >MS>OS",
+				["groupSize"] = 25,
 				["isHeroic"] = false,
-				["isLFM"] = false,
+				["maxLevel"] = 80,
 				["lootType"] = "MS > OS",
-				["icon"] = "BF.tga",
+				["icon"] = "EOE.tga",
 				["words"] = {
+					"lfm", -- [1]
+					"eoe", -- [2]
+					"20", -- [3]
+					"mark", -- [4]
+					"res", -- [5]
+					"1sr", -- [6]
+					"msos", -- [7]
 				},
-				["fullName"] = "Blood Furnace",
-				["author"] = "Incatheone-Golemagg",
-				["classColor"] = "abd473",
-				["instanceID"] = 542,
-				["minLevel"] = 60,
-				["resultID"] = 850,
+				["fullName"] = "Eye of Eternity - 25",
+				["author"] = "Nýls-Golemagg",
+				["isLFM"] = true,
+				["classColor"] = "C41F3B",
+				["instanceID"] = 616,
+				["createdat"] = 1676451253,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Blood Furnace",
-				["timestamp"] = 1676459154,
-				["createdat"] = 1676457051,
-				["maxLevel"] = 68,
+				["instanceName"] = "Eye of Eternity",
+				["timestamp"] = 1676483853,
+				["minLevel"] = 80,
+			},
+			["Solkan-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3300,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Heroic Culling of Stratholme | Need Healer",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "COS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Culling of Stratholme",
+				["author"] = "Solkan-Golemagg",
+				["classColor"] = "0070de",
+				["minLevel"] = 80,
+				["instanceID"] = 595,
+				["maxLevel"] = 80,
+				["resultID"] = 204,
+				["rolesNeeded"] = {
+					2, -- [1]
+				},
+				["instanceName"] = "Culling of Stratholme",
+				["timestamp"] = 1676490587,
+				["createdat"] = 1676490278,
+			},
+			["Yellowfangs-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "LFM tank event boss",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"tank", -- [2]
+					"event", -- [3]
+					"boss", -- [4]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Yellowfangs-Golemagg",
+				["classColor"] = "ABD473",
+				["instanceID"] = -1,
+				["minLevel"] = 0,
+				["createdat"] = 1676490332,
+				["rolesNeeded"] = {
+					1, -- [1]
+				},
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676490332,
+				["maxLevel"] = 1000,
+			},
+			["Abokra-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3460,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ulduar 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Abokra-Golemagg",
+				["maxLevel"] = 80,
+				["resultID"] = 462,
+				["classColor"] = "c41f3b",
+				["minLevel"] = 80,
+				["createdat"] = 1676454441,
+				["instanceName"] = "Ulduar",
+				["rolesNeeded"] = {
+				},
+				["timestamp"] = 1676454444,
+				["instanceID"] = 603,
+			},
+			["Ubox-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "LFM - DPS, Daily HC+",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"dps", -- [2]
+					"daily", -- [3]
+					"hc", -- [4]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Ubox-Golemagg",
+				["classColor"] = "FF7D0A",
+				["instanceID"] = -1,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676452955,
+				["createdat"] = 1676452954,
 			},
 			["Murlark-Golemagg"] = {
 				["isLFG"] = false,
@@ -9095,12 +14178,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Murlark-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "F58CBA",
-				["createdat"] = 1676453343,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676453657,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -9108,75 +14187,155 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676453657,
+				["createdat"] = 1676453343,
 			},
-			["Razê-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3430,
-				["msg"] = "LFM NAXX 25 SKIP RUN 1x SR MS>OS (Signet of manifested pain HR) need 1 healer disc or rdruid (no palas)",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "NAX.tga",
-				["words"] = {
-					"lfm", -- [1]
-					"naxx", -- [2]
-					"25", -- [3]
-					"skip", -- [4]
-					"run", -- [5]
-					"1x", -- [6]
-					"sr", -- [7]
-					"msos", -- [8]
-					"signet", -- [9]
-					"of", -- [10]
-					"manifested", -- [11]
-					"pain", -- [12]
-					"hr", -- [13]
-					"need", -- [14]
-					"1", -- [15]
-					"healer", -- [16]
-					"disc", -- [17]
-					"or", -- [18]
-					"rdruid", -- [19]
-					"no", -- [20]
-					"palas", -- [21]
-				},
-				["fullName"] = "Naxxramas - 25",
-				["author"] = "Razê-Golemagg",
-				["instanceID"] = 533,
-				["maxLevel"] = 80,
-				["minLevel"] = 80,
-				["classColor"] = "FF7D0A",
-				["instanceName"] = "Naxxramas",
-				["timestamp"] = 1676457453,
-				["rolesNeeded"] = {
-					2, -- [1]
-				},
-				["createdat"] = 1676451426,
-			},
-			["Darkata-Golemagg"] = {
+			["Dudetta-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3340,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Obsidian Sanctum 10",
-				["groupSize"] = 10,
+				["order"] = 3460,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Ulduar 25",
+				["groupSize"] = 25,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "OS.tga",
+				["icon"] = "ULD.tga",
 				["words"] = {
 				},
-				["fullName"] = "Obsidian Sanctum - 10",
-				["author"] = "Darkata-Golemagg",
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Dudetta-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676487486,
+				["classColor"] = "f58cba",
 				["maxLevel"] = 80,
-				["classColor"] = "ffffff",
-				["createdat"] = 1676452065,
 				["minLevel"] = 80,
-				["instanceName"] = "Obsidian Sanctum",
 				["rolesNeeded"] = {
 				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 262,
-				["instanceID"] = 615,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490287,
+				["resultID"] = 121,
+			},
+			["Zmaza-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1170,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Blackrock Depths",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "BRD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Blackrock Depths",
+				["author"] = "Zmaza-Golemagg",
+				["instanceID"] = 230,
+				["createdat"] = 1676489642,
+				["classColor"] = "8787ed",
+				["maxLevel"] = 60,
+				["minLevel"] = 48,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Blackrock Depths",
+				["timestamp"] = 1676490340,
+				["resultID"] = 214,
+			},
+			["Lurbotutka-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "WTS |cffa335ee|Hitem:45551::::::::77:::::::::|h[Indestructible Plate Girdle]|h|r 4900g and |cffa335ee|Hitem:45559::::::::77:::::::::|h[Battlelord's Plate Boots]|h|r 4900g",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"wts", -- [1]
+					"hitem", -- [2]
+					"45551", -- [3]
+					"77", -- [4]
+					"h", -- [5]
+					"indestructible", -- [6]
+					"plate", -- [7]
+					"girdle", -- [8]
+					"4900g", -- [9]
+					"and", -- [10]
+					"45559", -- [11]
+					"battlelord", -- [12]
+					"s", -- [13]
+					"boots", -- [14]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Lurbotutka-Golemagg",
+				["classColor"] = "C79C6E",
+				["instanceID"] = -1,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676459124,
+				["createdat"] = 1676454554,
+			},
+			["Nikolausus-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Nikolausus-Golemagg",
+				["instanceID"] = 601,
+				["createdat"] = 1676490205,
+				["classColor"] = "ff7d0a",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676490265,
+				["resultID"] = 4,
+			},
+			["Tankoula-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3460,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Ulduar 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Tankoula-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676488750,
+				["classColor"] = "f58cba",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490287,
+				["resultID"] = 128,
 			},
 			["Pyrexq-Golemagg"] = {
 				["isLFG"] = true,
@@ -9191,11 +14350,12 @@ GroupieDB = {
 				},
 				["fullName"] = "Blood Furnace",
 				["author"] = "Pyrexq-Golemagg",
-				["resultID"] = 851,
-				["instanceID"] = 542,
-				["classColor"] = "c41f3b",
-				["createdat"] = 1676459141,
 				["maxLevel"] = 68,
+				["createdat"] = 1676459141,
+				["instanceID"] = 542,
+				["resultID"] = 851,
+				["minLevel"] = 60,
+				["instanceName"] = "Blood Furnace",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -9203,32 +14363,107 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676459154,
-				["minLevel"] = 60,
-				["instanceName"] = "Blood Furnace",
+				["classColor"] = "c41f3b",
 			},
-			["Pekinezer-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3320,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 10",
-				["groupSize"] = 10,
+			["Bitoni-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "LFM voa 25  /w gs and spec need   feral druid or boomie  summ rdy at boss",
+				["groupSize"] = 25,
 				["isHeroic"] = false,
-				["isLFM"] = false,
+				["maxLevel"] = 80,
 				["lootType"] = "MS > OS",
 				["icon"] = "VOA.tga",
 				["words"] = {
+					"lfm", -- [1]
+					"voa", -- [2]
+					"25", -- [3]
+					"w", -- [4]
+					"gs", -- [5]
+					"and", -- [6]
+					"spec", -- [7]
+					"need", -- [8]
+					"feral", -- [9]
+					"druid", -- [10]
+					"or", -- [11]
+					"boomie", -- [12]
+					"summ", -- [13]
+					"rdy", -- [14]
+					"at", -- [15]
+					"boss", -- [16]
 				},
-				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Pekinezer-Golemagg",
-				["classColor"] = "8787ed",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
-				["resultID"] = 472,
-				["rolesNeeded"] = {
-				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Bitoni-Golemagg",
+				["isLFM"] = true,
+				["classColor"] = "F58CBA",
 				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454444,
-				["createdat"] = 1676454349,
-				["maxLevel"] = 80,
+				["createdat"] = 1676454400,
+				["instanceID"] = 624,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676455628,
+				["minLevel"] = 80,
+			},
+			["Frostitúte-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 2010,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Blood Furnace",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "BF.tga",
+				["words"] = {
+				},
+				["fullName"] = "Blood Furnace",
+				["author"] = "Frostitúte-Golemagg",
+				["classColor"] = "c41f3b",
+				["minLevel"] = 60,
+				["instanceID"] = 542,
+				["createdat"] = 1676482391,
+				["resultID"] = 130,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Blood Furnace",
+				["timestamp"] = 1676483858,
+				["maxLevel"] = 68,
+			},
+			["Trenis-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "tank LF HC norm dung",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"tank", -- [1]
+					"lf", -- [2]
+					"hc", -- [3]
+					"norm", -- [4]
+					"dung", -- [5]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Trenis-Golemagg",
+				["instanceID"] = -1,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 1000,
+				["minLevel"] = 0,
+				["instanceName"] = "Miscellaneous",
+				["rolesNeeded"] = {
+					1, -- [1]
+				},
+				["timestamp"] = 1676483646,
+				["createdat"] = 1676483540,
 			},
 			["Ioha-Golemagg"] = {
 				["isLFG"] = false,
@@ -9251,12 +14486,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Ioha-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "ABD473",
-				["createdat"] = 1676457053,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676459091,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -9264,6 +14495,38 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676459091,
+				["createdat"] = 1676457053,
+			},
+			["Homohero-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3010,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Nexus",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "NEX.tga",
+				["words"] = {
+				},
+				["fullName"] = "Nexus",
+				["author"] = "Homohero-Golemagg",
+				["instanceID"] = 576,
+				["createdat"] = 1676489495,
+				["classColor"] = "fff569",
+				["maxLevel"] = 75,
+				["minLevel"] = 70,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Nexus",
+				["timestamp"] = 1676490825,
+				["resultID"] = 322,
 			},
 			["Rikijy-Golemagg"] = {
 				["isLFG"] = true,
@@ -9278,16 +14541,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Rikijy-Golemagg",
-				["classColor"] = "fff569",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 440,
+				["classColor"] = "fff569",
+				["minLevel"] = 80,
+				["createdat"] = 1676453258,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676453258,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
 			["Morthalin-Golemagg"] = {
 				["isLFG"] = false,
@@ -9312,12 +14575,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Morthalin-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "C41F3B",
-				["createdat"] = 1676452760,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676452913,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -9325,6 +14584,44 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676452913,
+				["createdat"] = 1676452760,
+			},
+			["Mokongo-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "LFM VOA 25 - Need Elemental / Resto Shaman ",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"voa", -- [2]
+					"25", -- [3]
+					"need", -- [4]
+					"elemental", -- [5]
+					"resto", -- [6]
+					"shaman", -- [7]
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Mokongo-Golemagg",
+				["instanceID"] = 624,
+				["classColor"] = "0070DE",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676452939,
+				["createdat"] = 1676452650,
 			},
 			["Dahed-Golemagg"] = {
 				["isLFG"] = true,
@@ -9339,20 +14636,20 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Utgarde Keep",
 				["author"] = "Dahed-Golemagg",
-				["instanceName"] = "Utgarde Keep",
-				["instanceID"] = 574,
-				["minLevel"] = 80,
-				["resultID"] = 741,
 				["maxLevel"] = 80,
+				["resultID"] = 741,
+				["classColor"] = "0070de",
+				["minLevel"] = 80,
+				["createdat"] = 1676458293,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "Utgarde Keep",
 				["timestamp"] = 1676458818,
-				["createdat"] = 1676458293,
-				["classColor"] = "0070de",
+				["instanceID"] = 574,
 			},
 			["Housuja-Golemagg"] = {
 				["isLFG"] = false,
@@ -9372,18 +14669,786 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Housuja-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "C41F3B",
-				["createdat"] = 1676456609,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676456657,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					3, -- [2]
 					4, -- [3]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676456657,
+				["createdat"] = 1676456609,
+			},
+			["Ejsi-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3260,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Halls of Lightning",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "HOL.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Halls of Lightning",
+				["author"] = "Ejsi-Golemagg",
+				["instanceID"] = 602,
+				["createdat"] = 1676489860,
+				["classColor"] = "abd473",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Halls of Lightning",
+				["timestamp"] = 1676490340,
+				["resultID"] = 270,
+			},
+			["Doesycorpse-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3220,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Oculus",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "OC.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Oculus",
+				["author"] = "Doesycorpse-Golemagg",
+				["maxLevel"] = 80,
+				["resultID"] = 761,
+				["classColor"] = "c41f3b",
+				["minLevel"] = 80,
+				["createdat"] = 1676458474,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Oculus",
+				["timestamp"] = 1676458818,
+				["instanceID"] = 578,
+			},
+			["Muggiest-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1120,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Uldaman",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULDA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Uldaman",
+				["author"] = "Muggiest-Golemagg",
+				["maxLevel"] = 44,
+				["createdat"] = 1676457881,
+				["classColor"] = "ffffff",
+				["resultID"] = 625,
+				["minLevel"] = 36,
+				["instanceName"] = "Uldaman",
+				["rolesNeeded"] = {
+					1, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["timestamp"] = 1676457988,
+				["instanceID"] = 70,
+			},
+			["Degno-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Vault of Archavon 25 | 15/25 in Group",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Degno-Golemagg",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceID"] = 624,
+				["createdat"] = 1676451812,
+				["resultID"] = 248,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676452072,
+				["classColor"] = "c41f3b",
+			},
+			["Elpolloperro-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "LFM Tank for HC world tour",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"tank", -- [2]
+					"for", -- [3]
+					"hc", -- [4]
+					"world", -- [5]
+					"tour", -- [6]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Elpolloperro-Golemagg",
+				["classColor"] = "FF7D0A",
+				["instanceID"] = -1,
+				["rolesNeeded"] = {
+					1, -- [1]
+				},
+				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676455269,
+				["createdat"] = 1676455184,
+			},
+			["Drufulk-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 1180,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Lower Blackrock Spire | Need Tank, 1 DPS",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "LBRS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Lower Blackrock Spire",
+				["author"] = "Drufulk-Golemagg",
+				["instanceName"] = "Lower Blackrock Spire",
+				["resultID"] = 313,
+				["instanceID"] = 229,
+				["classColor"] = "ff7d0a",
+				["createdat"] = 1676490803,
+				["maxLevel"] = 61,
+				["rolesNeeded"] = {
+					1, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["timestamp"] = 1676490996,
+				["minLevel"] = 53,
+			},
+			["Mandodk-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "LF BS |cffffd000|Henchant:63187|h[Blacksmithing: Belt of the Titans]|h|r",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"lf", -- [1]
+					"bs", -- [2]
+					"henchant", -- [3]
+					"63187", -- [4]
+					"h", -- [5]
+					"blacksmithing", -- [6]
+					"belt", -- [7]
+					"of", -- [8]
+					"the", -- [9]
+					"titans", -- [10]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Mandodk-Golemagg",
+				["classColor"] = "C41F3B",
+				["instanceID"] = -1,
+				["minLevel"] = 0,
+				["createdat"] = 1676490358,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676490480,
+				["maxLevel"] = 1000,
+			},
+			["Thpndaa-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "LFM Voa 25 Spec Run - Need RestoShamy/WarriorTank/Dk Tank/Priest Healer",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"voa", -- [2]
+					"25", -- [3]
+					"spec", -- [4]
+					"run", -- [5]
+					"need", -- [6]
+					"restoshamy", -- [7]
+					"warriortank", -- [8]
+					"dk", -- [9]
+					"tank", -- [10]
+					"priest", -- [11]
+					"healer", -- [12]
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Thpndaa-Golemagg",
+				["instanceID"] = 624,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+				},
+				["timestamp"] = 1676453177,
+				["createdat"] = 1676452550,
+			},
+			["Láudna-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3020,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Azjol-Nerub | Need Tank, Healer, 1 DPS",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Azjol-Nerub",
+				["author"] = "Láudna-Golemagg",
+				["instanceID"] = 601,
+				["createdat"] = 1676488943,
+				["classColor"] = "8787ed",
+				["maxLevel"] = 77,
+				["minLevel"] = 70,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676490226,
+				["resultID"] = 82,
+			},
+			["Gåxx-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1230,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Dire Maul North",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "DM.tga",
+				["words"] = {
+				},
+				["fullName"] = "Dire Maul North",
+				["author"] = "Gåxx-Golemagg",
+				["maxLevel"] = 61,
+				["minLevel"] = 56,
+				["instanceID"] = 429,
+				["createdat"] = 1676455285,
+				["resultID"] = 827,
+				["instanceName"] = "Dire Maul North",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676458828,
+				["classColor"] = "c79c6e",
+			},
+			["Coomerbloke-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3330,
+				["msg"] = "LFM 10MAN NAXX CONSTRUCT QUARTER + SAPH KT 2SR MS>OS. DYING CURSE HR",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "NAX.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"10man", -- [2]
+					"naxx", -- [3]
+					"construct", -- [4]
+					"quarter", -- [5]
+					"saph", -- [6]
+					"kt", -- [7]
+					"2sr", -- [8]
+					"msos", -- [9]
+					"dying", -- [10]
+					"curse", -- [11]
+					"hr", -- [12]
+				},
+				["fullName"] = "Naxxramas - 10",
+				["author"] = "Coomerbloke-Golemagg",
+				["instanceName"] = "Naxxramas",
+				["instanceID"] = 533,
+				["classColor"] = "69CCF0",
+				["createdat"] = 1676490834,
+				["maxLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490950,
+				["minLevel"] = 80,
+			},
+			["Rackichan-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "LFM VOA 25 MAN Spec Run, need drood,shammy, warrior,hunter,disc priest! whisper me your gs/spec",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"voa", -- [2]
+					"25", -- [3]
+					"man", -- [4]
+					"spec", -- [5]
+					"run", -- [6]
+					"need", -- [7]
+					"drood", -- [8]
+					"shammy", -- [9]
+					"warrior", -- [10]
+					"hunter", -- [11]
+					"disc", -- [12]
+					"priest", -- [13]
+					"whisper", -- [14]
+					"me", -- [15]
+					"your", -- [16]
+					"gs", -- [17]
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Rackichan-Golemagg",
+				["classColor"] = "69CCF0",
+				["instanceID"] = 624,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676455794,
+				["createdat"] = 1676455614,
+			},
+			["Ayodha-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3330,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Naxxramas 10",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "NAX.tga",
+				["words"] = {
+				},
+				["fullName"] = "Naxxramas - 10",
+				["author"] = "Ayodha-Golemagg",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceID"] = 533,
+				["createdat"] = 1676451963,
+				["resultID"] = 336,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676452083,
+				["classColor"] = "ffffff",
+			},
+			["Sharppack-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3170,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Utgarde Pinnacle",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "UP.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Utgarde Pinnacle",
+				["author"] = "Sharppack-Golemagg",
+				["instanceName"] = "Utgarde Pinnacle",
+				["resultID"] = 346,
+				["instanceID"] = 575,
+				["classColor"] = "c79c6e",
+				["createdat"] = 1676490595,
+				["maxLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490825,
+				["minLevel"] = 80,
+			},
+			["Tovenaar-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3350,
+				["msg"] = "LFM to EOE10.  Leash is HR. 1 SR, MS > OS. Need tank (last spot)",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "EOE.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"to", -- [2]
+					"eoe10", -- [3]
+					"leash", -- [4]
+					"is", -- [5]
+					"hr", -- [6]
+					"1", -- [7]
+					"sr", -- [8]
+					"msos", -- [9]
+					"need", -- [10]
+					"tank", -- [11]
+					"last", -- [12]
+					"spot", -- [13]
+				},
+				["fullName"] = "Eye of Eternity - 10",
+				["author"] = "Tovenaar-Golemagg",
+				["classColor"] = "9482C9",
+				["instanceID"] = 616,
+				["rolesNeeded"] = {
+					1, -- [1]
+				},
+				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Eye of Eternity",
+				["timestamp"] = 1676490313,
+				["createdat"] = 1676490313,
+			},
+			["Helth-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Helth-Golemagg",
+				["instanceID"] = 624,
+				["createdat"] = 1676490182,
+				["classColor"] = "abd473",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490287,
+				["resultID"] = 125,
+			},
+			["Fivestars-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 2010,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Blood Furnace",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "BF.tga",
+				["words"] = {
+				},
+				["fullName"] = "Blood Furnace",
+				["author"] = "Fivestars-Golemagg",
+				["instanceID"] = 542,
+				["maxLevel"] = 68,
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 60,
+				["resultID"] = 306,
+				["instanceName"] = "Blood Furnace",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490825,
+				["createdat"] = 1676490356,
+			},
+			["Taskmörten-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3320,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Vault of Archavon 10 | 4/10 in Group",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Taskmörten-Golemagg",
+				["instanceID"] = 624,
+				["createdat"] = 1676490238,
+				["classColor"] = "40c7eb",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490288,
+				["resultID"] = 169,
+			},
+			["Maciejak-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Maciejak-Golemagg",
+				["instanceID"] = 601,
+				["createdat"] = 1676489930,
+				["classColor"] = "fff569",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676490825,
+				["resultID"] = 371,
+			},
+			["Krätos-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3010,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Nexus | Need Tank",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "NEX.tga",
+				["words"] = {
+				},
+				["fullName"] = "Nexus",
+				["author"] = "Krätos-Golemagg",
+				["instanceID"] = 576,
+				["maxLevel"] = 75,
+				["classColor"] = "c79c6e",
+				["minLevel"] = 70,
+				["resultID"] = 168,
+				["instanceName"] = "Nexus",
+				["rolesNeeded"] = {
+					1, -- [1]
+				},
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676483755,
+			},
+			["Vres-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "1x last spot heal for Anub hc plus",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"1x", -- [1]
+					"last", -- [2]
+					"spot", -- [3]
+					"heal", -- [4]
+					"for", -- [5]
+					"anub", -- [6]
+					"hc", -- [7]
+					"plus", -- [8]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Vres-Golemagg",
+				["classColor"] = "FFF569",
+				["instanceID"] = -1,
+				["rolesNeeded"] = {
+					2, -- [1]
+				},
+				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676455034,
+				["createdat"] = 1676455034,
+			},
+			["Plomy-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3060,
+				["msg"] = "HOS exp run 100+mobs 72-79 lvl",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "HOS.tga",
+				["words"] = {
+					"hos", -- [1]
+					"exp", -- [2]
+					"run", -- [3]
+					"100", -- [4]
+					"mobs", -- [5]
+					"72", -- [6]
+					"79", -- [7]
+					"lvl", -- [8]
+				},
+				["fullName"] = "Halls of Stone",
+				["author"] = "Plomy-Golemagg",
+				["classColor"] = "F58CBA",
+				["instanceID"] = 599,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 75,
+				["maxLevel"] = 80,
+				["instanceName"] = "Halls of Stone",
+				["timestamp"] = 1676457889,
+				["createdat"] = 1676453784,
+			},
+			["Canturo-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "LFM Holy Pala for ULDUAR FULL HM + ALGALON thursday 23.00 semi-guild run. Algalon dies few times a week!",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["maxLevel"] = 80,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"holy", -- [2]
+					"pala", -- [3]
+					"for", -- [4]
+					"ulduar", -- [5]
+					"full", -- [6]
+					"hm", -- [7]
+					"algalon", -- [8]
+					"thursday", -- [9]
+					"23", -- [10]
+					"00", -- [11]
+					"semi", -- [12]
+					"guild", -- [13]
+					"run", -- [14]
+					"dies", -- [15]
+					"few", -- [16]
+					"times", -- [17]
+					"a", -- [18]
+					"week", -- [19]
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Canturo-Golemagg",
+				["isLFM"] = true,
+				["classColor"] = "0070DE",
+				["instanceName"] = "Ulduar",
+				["createdat"] = 1676456128,
+				["instanceID"] = 603,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676456128,
+				["minLevel"] = 80,
+			},
+			["Maiju-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Maiju-Golemagg",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceID"] = 624,
+				["createdat"] = 1676452064,
+				["resultID"] = 260,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676452072,
+				["classColor"] = "40c7eb",
+			},
+			["Snooplocc-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "VOA 18 spec run, need hunter/ele shaman/resto shaman",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"voa", -- [1]
+					"18", -- [2]
+					"spec", -- [3]
+					"run", -- [4]
+					"need", -- [5]
+					"hunter", -- [6]
+					"ele", -- [7]
+					"shaman", -- [8]
+					"resto", -- [9]
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Snooplocc-Golemagg",
+				["instanceID"] = 624,
+				["classColor"] = "9482C9",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483846,
+				["createdat"] = 1676483494,
 			},
 			["Jizo-Golemagg"] = {
 				["isLFG"] = false,
@@ -9440,205 +15505,20 @@ GroupieDB = {
 				["fullName"] = "Miscellaneous",
 				["author"] = "Jizo-Golemagg",
 				["instanceID"] = -1,
-				["minLevel"] = 0,
-				["createdat"] = 1676451513,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676457723,
-				["maxLevel"] = 1000,
 				["classColor"] = "ABD473",
-			},
-			["Elpolloperro-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = -1,
-				["msg"] = "LFM Tank for HC world tour",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "Other.tga",
-				["words"] = {
-					"lfm", -- [1]
-					"tank", -- [2]
-					"for", -- [3]
-					"hc", -- [4]
-					"world", -- [5]
-					"tour", -- [6]
-				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Elpolloperro-Golemagg",
-				["instanceID"] = -1,
-				["classColor"] = "FF7D0A",
-				["createdat"] = 1676455184,
 				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676455269,
-				["rolesNeeded"] = {
-					1, -- [1]
-				},
 				["minLevel"] = 0,
-			},
-			["Gåxx-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 1230,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Dire Maul North",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "DM.tga",
-				["words"] = {
-				},
-				["fullName"] = "Dire Maul North",
-				["author"] = "Gåxx-Golemagg",
-				["maxLevel"] = 61,
-				["instanceID"] = 429,
-				["classColor"] = "c79c6e",
-				["resultID"] = 827,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["instanceName"] = "Dire Maul North",
-				["timestamp"] = 1676458828,
-				["createdat"] = 1676455285,
-				["minLevel"] = 56,
-			},
-			["Ayodha-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3330,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Naxxramas 10",
-				["groupSize"] = 10,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "NAX.tga",
-				["words"] = {
-				},
-				["fullName"] = "Naxxramas - 10",
-				["author"] = "Ayodha-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "ffffff",
-				["createdat"] = 1676451963,
-				["minLevel"] = 80,
-				["instanceName"] = "Naxxramas",
-				["rolesNeeded"] = {
-				},
-				["timestamp"] = 1676452083,
-				["resultID"] = 336,
-				["instanceID"] = 533,
-			},
-			["Tovenaar-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "WARLOCK LFG TO VOA 25 GOOD DPS GOOD GS GOOD PERSON",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-					"warlock", -- [1]
-					"lfg", -- [2]
-					"to", -- [3]
-					"voa", -- [4]
-					"25", -- [5]
-					"good", -- [6]
-					"dps", -- [7]
-					"gs", -- [8]
-					"person", -- [9]
-				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Tovenaar-Golemagg",
-				["instanceID"] = 624,
-				["classColor"] = "9482C9",
-				["createdat"] = 1676455990,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676455990,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["minLevel"] = 80,
-			},
-			["Vres-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = -1,
-				["msg"] = "1x last spot heal for Anub hc plus",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "Other.tga",
-				["words"] = {
-					"1x", -- [1]
-					"last", -- [2]
-					"spot", -- [3]
-					"heal", -- [4]
-					"for", -- [5]
-					"anub", -- [6]
-					"hc", -- [7]
-					"plus", -- [8]
-				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Vres-Golemagg",
-				["instanceID"] = -1,
-				["classColor"] = "FFF569",
-				["createdat"] = 1676455034,
-				["maxLevel"] = 1000,
 				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676455034,
-				["rolesNeeded"] = {
-					2, -- [1]
-				},
-				["minLevel"] = 0,
-			},
-			["Plomy-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3060,
-				["msg"] = "HOS exp run 100+mobs 72-79 lvl",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "HOS.tga",
-				["words"] = {
-					"hos", -- [1]
-					"exp", -- [2]
-					"run", -- [3]
-					"100", -- [4]
-					"mobs", -- [5]
-					"72", -- [6]
-					"79", -- [7]
-					"lvl", -- [8]
-				},
-				["fullName"] = "Halls of Stone",
-				["author"] = "Plomy-Golemagg",
-				["instanceID"] = 599,
-				["classColor"] = "F58CBA",
-				["createdat"] = 1676453784,
-				["maxLevel"] = 80,
-				["instanceName"] = "Halls of Stone",
-				["timestamp"] = 1676457889,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["minLevel"] = 75,
+				["timestamp"] = 1676483740,
+				["createdat"] = 1676451513,
 			},
-			["Shamdk-Golemagg"] = {
+			["Pekinezer-Golemagg"] = {
 				["isLFG"] = true,
 				["order"] = 3320,
 				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 10",
@@ -9650,41 +15530,103 @@ GroupieDB = {
 				["words"] = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Shamdk-Golemagg",
+				["author"] = "Pekinezer-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "c41f3b",
-				["createdat"] = 1676451818,
+				["resultID"] = 472,
+				["classColor"] = "8787ed",
 				["minLevel"] = 80,
+				["createdat"] = 1676454349,
 				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 217,
+				["timestamp"] = 1676454444,
 				["instanceID"] = 624,
 			},
-			["Maiju-Golemagg"] = {
+			["Hbity-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
-				["groupSize"] = 25,
+				["order"] = 3100,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Halls of Lightning",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["icon"] = "HOL.tga",
 				["words"] = {
 				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Maiju-Golemagg",
+				["fullName"] = "Halls of Lightning",
+				["author"] = "Hbity-Golemagg",
+				["instanceName"] = "Halls of Lightning",
+				["resultID"] = 317,
+				["instanceID"] = 602,
+				["classColor"] = "abd473",
+				["createdat"] = 1676490599,
 				["maxLevel"] = 80,
-				["classColor"] = "40c7eb",
-				["createdat"] = 1676452064,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
 				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 260,
-				["instanceID"] = 624,
+				["timestamp"] = 1676490934,
+				["minLevel"] = 78,
+			},
+			["Höylä-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3260,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Halls of Lightning",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "HOL.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Halls of Lightning",
+				["author"] = "Höylä-Golemagg",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceID"] = 602,
+				["createdat"] = 1676449737,
+				["resultID"] = 26,
+				["instanceName"] = "Halls of Lightning",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676449926,
+				["classColor"] = "c41f3b",
+			},
+			["Unyipriest-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 2030,
+				["msg"] = "LFM 2 dps UB norm!",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "UB.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"2", -- [2]
+					"dps", -- [3]
+					"ub", -- [4]
+					"norm", -- [5]
+				},
+				["fullName"] = "Underbog",
+				["author"] = "Unyipriest-Golemagg",
+				["classColor"] = "FFFFFF",
+				["instanceID"] = 546,
+				["minLevel"] = 62,
+				["createdat"] = 1676490404,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["instanceName"] = "Underbog",
+				["timestamp"] = 1676490609,
+				["maxLevel"] = 70,
 			},
 			["Arano-Golemagg"] = {
 				["isLFG"] = true,
@@ -9699,20 +15641,20 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Arano-Golemagg",
-				["instanceName"] = "Azjol-Nerub",
-				["instanceID"] = 601,
-				["minLevel"] = 80,
-				["resultID"] = 781,
 				["maxLevel"] = 80,
+				["resultID"] = 781,
+				["classColor"] = "c41f3b",
+				["minLevel"] = 80,
+				["createdat"] = 1676458344,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "Azjol-Nerub",
 				["timestamp"] = 1676458818,
-				["createdat"] = 1676458344,
-				["classColor"] = "c41f3b",
+				["instanceID"] = 601,
 			},
 			["Angilo-Golemagg"] = {
 				["isLFG"] = false,
@@ -9735,19 +15677,171 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Angilo-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "FFF569",
-				["instanceID"] = 624,
-				["createdat"] = 1676449749,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676451618,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["createdat"] = 1676449749,
+				["minLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676451618,
+				["instanceID"] = 624,
+			},
+			["Bobbym-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "last spot for heal/dd Ulduar 25NM 3sr ms os boe hr",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"last", -- [1]
+					"spot", -- [2]
+					"for", -- [3]
+					"heal", -- [4]
+					"dd", -- [5]
+					"ulduar", -- [6]
+					"25nm", -- [7]
+					"3sr", -- [8]
+					"msos", -- [9]
+					"boe", -- [10]
+					"hr", -- [11]
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Bobbym-Golemagg",
+				["instanceID"] = 603,
+				["classColor"] = "69CCF0",
 				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["rolesNeeded"] = {
+					2, -- [1]
+				},
+				["timestamp"] = 1676483618,
+				["createdat"] = 1676483617,
+			},
+			["Vexon-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3050,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Violet Hold",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VH.tga",
+				["words"] = {
+				},
+				["fullName"] = "Violet Hold",
+				["author"] = "Vexon-Golemagg",
+				["instanceID"] = 608,
+				["createdat"] = 1676489892,
+				["classColor"] = "40c7eb",
+				["maxLevel"] = 79,
+				["minLevel"] = 73,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Violet Hold",
+				["timestamp"] = 1676490209,
+				["resultID"] = 72,
+			},
+			["Killbob-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Killbob-Golemagg",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceID"] = 624,
+				["createdat"] = 1676449285,
+				["resultID"] = 269,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676452072,
+				["classColor"] = "c41f3b",
+			},
+			["Fariborz-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3270,
+				["msg"] = "LFM Gundrak HEroic + Need 3x Dps (unwanted items Hr for tank)",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "GUN.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"gundrak", -- [2]
+					"heroic", -- [3]
+					"need", -- [4]
+					"3x", -- [5]
+					"dps", -- [6]
+					"unwanted", -- [7]
+					"items", -- [8]
+					"hr", -- [9]
+					"for", -- [10]
+					"tank", -- [11]
+				},
+				["fullName"] = "Heroic Gundrak",
+				["author"] = "Fariborz-Golemagg",
+				["classColor"] = "F58CBA",
+				["instanceID"] = 604,
+				["instanceName"] = "Gundrak",
+				["createdat"] = 1676483469,
+				["maxLevel"] = 80,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+					1, -- [3]
+				},
+				["timestamp"] = 1676483522,
+				["minLevel"] = 80,
+			},
+			["Rethoth-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3020,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Azjol-Nerub",
+				["author"] = "Rethoth-Golemagg",
+				["classColor"] = "8787ed",
+				["minLevel"] = 70,
+				["instanceID"] = 601,
+				["maxLevel"] = 77,
+				["resultID"] = 265,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676490340,
+				["createdat"] = 1676488823,
 			},
 			["Kakari-Golemagg"] = {
 				["isLFG"] = true,
@@ -9762,16 +15856,125 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Kakari-Golemagg",
-				["classColor"] = "8787ed",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 479,
+				["classColor"] = "8787ed",
+				["minLevel"] = 80,
+				["createdat"] = 1676452809,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676452809,
+				["instanceID"] = 624,
+			},
+			["Methodbitkiz-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Methodbitkiz-Golemagg",
+				["instanceID"] = 33,
 				["maxLevel"] = 80,
+				["classColor"] = "fff569",
+				["minLevel"] = 78,
+				["resultID"] = 175,
+				["instanceName"] = "The Crown Chemical Co.",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676483714,
+			},
+			["Mikofloso-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 1020,
+				["msg"] = "WTS |cffffff00|Hachievement:1701:Player-4465-041AAE4F:0:0:0:-1:0:0:0:0|h[Be Mine!]|h|r / |cffffff00|Hachievement:1702:Player-4465-041AAE4F:0:0:0:-1:0:0:0:0|h[Sweet Tooth]|h|r - get your achievs quick and easy!",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "VC.tga",
+				["words"] = {
+					"wts", -- [1]
+					"be", -- [2]
+					"mine", -- [3]
+					"get", -- [4]
+					"your", -- [5]
+					"achievs", -- [6]
+					"quick", -- [7]
+					"and", -- [8]
+					"easy", -- [9]
+				},
+				["fullName"] = "Deadmines",
+				["author"] = "Mikofloso-Golemagg",
+				["instanceID"] = 36,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 24,
+				["minLevel"] = 16,
+				["instanceName"] = "Deadmines",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483762,
+				["createdat"] = 1676483584,
+			},
+			["Razê-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3430,
+				["msg"] = "LFM NAXX 25 SKIP RUN 1x SR MS>OS (Signet of manifested pain HR) need 1 healer disc or rdruid (no palas)",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "NAX.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"naxx", -- [2]
+					"25", -- [3]
+					"skip", -- [4]
+					"run", -- [5]
+					"1x", -- [6]
+					"sr", -- [7]
+					"msos", -- [8]
+					"signet", -- [9]
+					"of", -- [10]
+					"manifested", -- [11]
+					"pain", -- [12]
+					"hr", -- [13]
+					"need", -- [14]
+					"1", -- [15]
+					"healer", -- [16]
+					"disc", -- [17]
+					"or", -- [18]
+					"rdruid", -- [19]
+					"no", -- [20]
+					"palas", -- [21]
+				},
+				["fullName"] = "Naxxramas - 25",
+				["author"] = "Razê-Golemagg",
+				["maxLevel"] = 80,
+				["instanceID"] = 533,
+				["rolesNeeded"] = {
+					2, -- [1]
+				},
+				["createdat"] = 1676451426,
+				["classColor"] = "FF7D0A",
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676457453,
+				["minLevel"] = 80,
 			},
 			["Lethally-Golemagg"] = {
 				["isLFG"] = true,
@@ -9786,64 +15989,210 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Lethally-Golemagg",
-				["classColor"] = "fff569",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 432,
+				["classColor"] = "fff569",
+				["minLevel"] = 80,
+				["createdat"] = 1676453941,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676453941,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
-			["Klobasci-Golemagg"] = {
+			["Shazdoo-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3460,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Ulduar 25",
-				["groupSize"] = 25,
+				["order"] = 3060,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Halls of Stone",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "ULD.tga",
+				["icon"] = "HOS.tga",
 				["words"] = {
 				},
-				["fullName"] = "Ulduar - 25",
-				["author"] = "Klobasci-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "ffffff",
-				["createdat"] = 1676451708,
-				["minLevel"] = 80,
-				["instanceName"] = "Ulduar",
+				["fullName"] = "Halls of Stone",
+				["author"] = "Shazdoo-Golemagg",
+				["classColor"] = "0070de",
+				["minLevel"] = 75,
+				["instanceID"] = 599,
+				["createdat"] = 1676483444,
+				["resultID"] = 150,
 				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
 				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 226,
-				["instanceID"] = 603,
+				["instanceName"] = "Halls of Stone",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 80,
 			},
-			["Termixator-Golemagg"] = {
+			["Greengerasim-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
-				["groupSize"] = 25,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Greengerasim-Golemagg",
+				["classColor"] = "fff569",
+				["minLevel"] = 78,
+				["instanceID"] = 33,
+				["createdat"] = 1676483356,
+				["resultID"] = 125,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "The Crown Chemical Co.",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 80,
+			},
+			["Bodzin-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "LF druid VoA spec run resto boomie feral",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
 				["lootType"] = "MS > OS",
 				["icon"] = "VOA.tga",
 				["words"] = {
+					"lf", -- [1]
+					"druid", -- [2]
+					"voa", -- [3]
+					"spec", -- [4]
+					"run", -- [5]
+					"resto", -- [6]
+					"boomie", -- [7]
+					"feral", -- [8]
 				},
 				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Termixator-Golemagg",
-				["classColor"] = "8787ed",
+				["author"] = "Bodzin-Golemagg",
 				["instanceID"] = 624,
+				["classColor"] = "FFF569",
+				["maxLevel"] = 80,
 				["minLevel"] = 80,
-				["resultID"] = 409,
+				["instanceName"] = "Vault of Archavon",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676452438,
+				["createdat"] = 1676452436,
+			},
+			["Shermie-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3330,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Naxxramas 10",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "NAX.tga",
+				["words"] = {
+				},
+				["fullName"] = "Naxxramas - 10",
+				["author"] = "Shermie-Golemagg",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceID"] = 533,
+				["createdat"] = 1676453963,
+				["resultID"] = 509,
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454444,
-				["createdat"] = 1676453159,
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676454462,
+				["classColor"] = "c41f3b",
+			},
+			["Zarccardo-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3180,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Utgarde Keep",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "UK.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Utgarde Keep",
+				["author"] = "Zarccardo-Golemagg",
+				["instanceID"] = 574,
+				["createdat"] = 1676489205,
+				["classColor"] = "f58cba",
 				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Utgarde Keep",
+				["timestamp"] = 1676490340,
+				["resultID"] = 188,
+			},
+			["Gordí-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3420,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Obsidian Sanctum 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "OS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Obsidian Sanctum - 25",
+				["author"] = "Gordí-Golemagg",
+				["instanceID"] = 615,
+				["createdat"] = 1676490192,
+				["classColor"] = "f58cba",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Obsidian Sanctum",
+				["timestamp"] = 1676490287,
+				["resultID"] = 138,
+			},
+			["Mousclicker-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 2000,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Hellfire Ramparts",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "RAMPS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Hellfire Ramparts",
+				["author"] = "Mousclicker-Golemagg",
+				["classColor"] = "c79c6e",
+				["minLevel"] = 58,
+				["instanceID"] = 543,
+				["createdat"] = 1676482827,
+				["resultID"] = 200,
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["instanceName"] = "Hellfire Ramparts",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 67,
 			},
 			["Amitia-Golemagg"] = {
 				["isLFG"] = true,
@@ -9858,20 +16207,56 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Amitia-Golemagg",
-				["instanceID"] = 601,
-				["classColor"] = "40c7eb",
-				["createdat"] = 1676457284,
+				["maxLevel"] = 80,
 				["minLevel"] = 80,
+				["instanceID"] = 601,
+				["createdat"] = 1676457284,
+				["resultID"] = 561,
+				["instanceName"] = "Azjol-Nerub",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Azjol-Nerub",
 				["timestamp"] = 1676457572,
-				["resultID"] = 561,
+				["classColor"] = "40c7eb",
+			},
+			["Daregar-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "LFM VOA 25 Need protwar,feraldruid,dpswar,resto druid",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"voa", -- [2]
+					"25", -- [3]
+					"need", -- [4]
+					"protwar", -- [5]
+					"feraldruid", -- [6]
+					"dpswar", -- [7]
+					"resto", -- [8]
+					"druid", -- [9]
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Daregar-Golemagg",
+				["instanceID"] = 624,
+				["classColor"] = "C41F3B",
 				["maxLevel"] = 80,
+				["createdat"] = 1676490209,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490377,
+				["minLevel"] = 80,
 			},
 			["Shadeslayerz-Golemagg"] = {
 				["isLFG"] = true,
@@ -9887,15 +16272,15 @@ GroupieDB = {
 				["fullName"] = "Naxxramas - 10",
 				["author"] = "Shadeslayerz-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "fff569",
-				["createdat"] = 1676451661,
 				["minLevel"] = 80,
-				["instanceName"] = "Naxxramas",
+				["instanceID"] = 533,
+				["createdat"] = 1676451661,
+				["resultID"] = 331,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Naxxramas",
 				["timestamp"] = 1676452083,
-				["resultID"] = 331,
-				["instanceID"] = 533,
+				["classColor"] = "fff569",
 			},
 			["Vatruxa-Golemagg"] = {
 				["isLFG"] = true,
@@ -9910,16 +16295,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Vatruxa-Golemagg",
-				["classColor"] = "f58cba",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 454,
+				["classColor"] = "f58cba",
+				["minLevel"] = 80,
+				["createdat"] = 1676454185,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454185,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
 			["Bankkimiesw-Golemagg"] = {
 				["isLFG"] = false,
@@ -9946,12 +16331,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Bankkimiesw-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "9482C9",
-				["createdat"] = 1676454685,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676454685,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -9959,6 +16340,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676454685,
+				["createdat"] = 1676454685,
 			},
 			["Elenswe-Golemagg"] = {
 				["isLFG"] = true,
@@ -9973,16 +16358,96 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Elenswe-Golemagg",
-				["classColor"] = "40c7eb",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 458,
+				["classColor"] = "40c7eb",
+				["minLevel"] = 80,
+				["createdat"] = 1676452104,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676452104,
+				["instanceID"] = 624,
+			},
+			["Gerach-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Gerach-Golemagg",
+				["classColor"] = "c79c6e",
+				["minLevel"] = 80,
+				["instanceID"] = 601,
+				["createdat"] = 1676483265,
+				["resultID"] = 96,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676483478,
 				["maxLevel"] = 80,
+			},
+			["Onebttonhero-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3040,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Drak'Tharon Keep",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "DTK.tga",
+				["words"] = {
+				},
+				["fullName"] = "Drak'Tharon Keep",
+				["author"] = "Onebttonhero-Golemagg",
+				["maxLevel"] = 78,
+				["createdat"] = 1676449552,
+				["instanceID"] = 600,
+				["resultID"] = 25,
+				["minLevel"] = 72,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Drak'Tharon Keep",
+				["timestamp"] = 1676449926,
+				["classColor"] = "f58cba",
+			},
+			["Biger-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3370,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Ulduar 10",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Biger-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676488063,
+				["classColor"] = "f58cba",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490287,
+				["resultID"] = 116,
 			},
 			["Trolgodita-Golemagg"] = {
 				["isLFG"] = true,
@@ -9997,20 +16462,20 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Trolgodita-Golemagg",
-				["classColor"] = "0070de",
-				["instanceID"] = 601,
-				["resultID"] = 630,
+				["maxLevel"] = 80,
 				["createdat"] = 1676457822,
+				["classColor"] = "0070de",
+				["resultID"] = 630,
+				["minLevel"] = 80,
+				["instanceName"] = "Azjol-Nerub",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Azjol-Nerub",
 				["timestamp"] = 1676458025,
-				["minLevel"] = 80,
-				["maxLevel"] = 80,
+				["instanceID"] = 601,
 			},
 			["Pulykatolvaj-Golemagg"] = {
 				["isLFG"] = false,
@@ -10025,17 +16490,17 @@ GroupieDB = {
 				},
 				["fullName"] = "Culling of Stratholme",
 				["author"] = "Pulykatolvaj-Golemagg",
-				["instanceID"] = 595,
-				["classColor"] = "fff569",
-				["createdat"] = 1676457278,
+				["maxLevel"] = 80,
 				["minLevel"] = 78,
+				["instanceID"] = 595,
+				["createdat"] = 1676457278,
+				["resultID"] = 586,
+				["instanceName"] = "Culling of Stratholme",
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
-				["instanceName"] = "Culling of Stratholme",
 				["timestamp"] = 1676457885,
-				["resultID"] = 586,
-				["maxLevel"] = 80,
+				["classColor"] = "fff569",
 			},
 			["Archié-Golemagg"] = {
 				["isLFG"] = false,
@@ -10059,18 +16524,18 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Archié-Golemagg",
 				["instanceID"] = 624,
+				["classColor"] = "C79C6E",
+				["maxLevel"] = 80,
 				["createdat"] = 1676458235,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676458512,
-				["maxLevel"] = 80,
-				["classColor"] = "C79C6E",
+				["minLevel"] = 80,
 			},
 			["Panick-Golemagg"] = {
 				["isLFG"] = false,
@@ -10094,12 +16559,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Panick-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "C41F3B",
-				["createdat"] = 1676455448,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676455476,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -10107,6 +16568,100 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676455476,
+				["createdat"] = 1676455448,
+			},
+			["Mëren-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3370,
+				["msg"] = "<Hope N Despair> Guild española busca gente con experiencia para cerrar roster de Ulduar HM 25. (9/9 HM 10) Solo necesitamos DPS, PRIO: (Hunter, Feral, Retry). Horarios: L-X-J de 22:00 a 00:30. /w para mas info",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["language"] = "German",
+				["words"] = {
+					"hope", -- [1]
+					"n", -- [2]
+					"despair", -- [3]
+					"guild", -- [4]
+					"espa", -- [5]
+					"ola", -- [6]
+					"busca", -- [7]
+					"gente", -- [8]
+					"con", -- [9]
+					"experiencia", -- [10]
+					"para", -- [11]
+					"cerrar", -- [12]
+					"roster", -- [13]
+					"de", -- [14]
+					"ulduar", -- [15]
+					"hm", -- [16]
+					"25", -- [17]
+					"9", -- [18]
+					"10", -- [19]
+					"solo", -- [20]
+					"necesitamos", -- [21]
+					"dps", -- [22]
+					"prio", -- [23]
+					"hunter", -- [24]
+					"feral", -- [25]
+					"retry", -- [26]
+					"horarios", -- [27]
+					"l", -- [28]
+					"x", -- [29]
+					"j", -- [30]
+					"22", -- [31]
+					"00", -- [32]
+					"a", -- [33]
+					"30", -- [34]
+					"w", -- [35]
+					"mas", -- [36]
+					"info", -- [37]
+				},
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Mëren-Golemagg",
+				["instanceID"] = 603,
+				["icon"] = "ULD.tga",
+				["classColor"] = "F58CBA",
+				["minLevel"] = 80,
+				["createdat"] = 1676483525,
+				["instanceName"] = "Ulduar",
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["timestamp"] = 1676483684,
+				["maxLevel"] = 80,
+			},
+			["Floater-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Floater-Golemagg",
+				["classColor"] = "fff569",
+				["minLevel"] = 80,
+				["instanceID"] = 601,
+				["createdat"] = 1676482319,
+				["resultID"] = 145,
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 80,
 			},
 			["Terrikk-Golemagg"] = {
 				["isLFG"] = false,
@@ -10127,12 +16682,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Terrikk-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "9482C9",
-				["createdat"] = 1676453100,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676453183,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -10140,6 +16691,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676453183,
+				["createdat"] = 1676453100,
 			},
 			["Papii-Golemagg"] = {
 				["isLFG"] = true,
@@ -10154,20 +16709,44 @@ GroupieDB = {
 				},
 				["fullName"] = "The Crown Chemical Co.",
 				["author"] = "Papii-Golemagg",
-				["instanceName"] = "The Crown Chemical Co.",
-				["instanceID"] = 33,
-				["minLevel"] = 78,
-				["resultID"] = 753,
 				["maxLevel"] = 80,
+				["resultID"] = 753,
+				["classColor"] = "8787ed",
+				["minLevel"] = 78,
+				["createdat"] = 1676458250,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "The Crown Chemical Co.",
 				["timestamp"] = 1676458818,
-				["createdat"] = 1676458250,
-				["classColor"] = "8787ed",
+				["instanceID"] = 33,
+			},
+			["Naiizu-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Ulduar 25 | 10/25 in Group",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Naiizu-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676487802,
+				["classColor"] = "f58cba",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490287,
+				["resultID"] = 103,
 			},
 			["Zugzugstun-Golemagg"] = {
 				["isLFG"] = false,
@@ -10193,9 +16772,10 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Zugzugstun-Golemagg",
-				["classColor"] = "FFF569",
 				["isLFM"] = true,
-				["minLevel"] = 80,
+				["classColor"] = "FFF569",
+				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676454743,
 				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -10204,8 +16784,7 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676455565,
-				["instanceName"] = "Vault of Archavon",
-				["createdat"] = 1676454743,
+				["minLevel"] = 80,
 			},
 			["Cronks-Golemagg"] = {
 				["isLFG"] = true,
@@ -10220,16 +16799,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Cronks-Golemagg",
-				["classColor"] = "fff569",
-				["instanceID"] = 603,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 469,
+				["classColor"] = "fff569",
+				["minLevel"] = 80,
+				["createdat"] = 1676453080,
+				["instanceName"] = "Ulduar",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Ulduar",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676453080,
-				["maxLevel"] = 80,
+				["instanceID"] = 603,
 			},
 			["Slappedyk-Golemagg"] = {
 				["isLFG"] = false,
@@ -10257,12 +16836,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Slappedyk-Golemagg",
-				["instanceID"] = 603,
 				["classColor"] = "C79C6E",
-				["createdat"] = 1676455281,
-				["maxLevel"] = 80,
-				["instanceName"] = "Ulduar",
-				["timestamp"] = 1676455281,
+				["instanceID"] = 603,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -10270,90 +16845,238 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676455281,
+				["createdat"] = 1676455281,
 			},
-			["Shn-Golemagg"] = {
+			["Aylinxx-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = 3320,
-				["msg"] = "VOA 10 LF LOCK",
-				["groupSize"] = 10,
+				["order"] = 3430,
+				["msg"] = " LFM Naxx/Eoe/OS+2D GDKP Start Bids 500G Split 80/20% /w me Gs&Spec&Budget Need Buyer&Semibuyer",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "GDKP",
+				["icon"] = "NAX.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"naxx", -- [2]
+					"eoe", -- [3]
+					"os", -- [4]
+					"2d", -- [5]
+					"gdkp", -- [6]
+					"start", -- [7]
+					"bids", -- [8]
+					"500g", -- [9]
+					"split", -- [10]
+					"80", -- [11]
+					"20", -- [12]
+					"w", -- [13]
+					"me", -- [14]
+					"gs", -- [15]
+					"spec", -- [16]
+					"budget", -- [17]
+					"need", -- [18]
+					"buyer", -- [19]
+					"semibuyer", -- [20]
+				},
+				["fullName"] = "Naxxramas - 25",
+				["author"] = "Aylinxx-Golemagg",
+				["instanceID"] = 533,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Naxxramas",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483822,
+				["createdat"] = 1676483506,
+			},
+			["Slimehandtwo-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "LFM VOA 25 spec run, 1healers (shaman, ) + 1 enhancement shaman",
+				["groupSize"] = 25,
 				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "MS > OS",
 				["icon"] = "VOA.tga",
 				["words"] = {
-					"voa", -- [1]
-					"10", -- [2]
-					"lf", -- [3]
-					"lock", -- [4]
+					"lfm", -- [1]
+					"voa", -- [2]
+					"25", -- [3]
+					"spec", -- [4]
+					"run", -- [5]
+					"1healers", -- [6]
+					"shaman", -- [7]
+					"1", -- [8]
+					"enhancement", -- [9]
 				},
-				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Shn-Golemagg",
-				["instanceID"] = 624,
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Slimehandtwo-Golemagg",
 				["classColor"] = "F58CBA",
-				["createdat"] = 1676454675,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
+				["minLevel"] = 80,
+				["createdat"] = 1676490322,
+				["rolesNeeded"] = {
+					2, -- [1]
+				},
 				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454675,
+				["timestamp"] = 1676490403,
+				["maxLevel"] = 80,
+			},
+			["Mogyii-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Heroic Azjol-Nerub | Need Tank",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Mogyii-Golemagg",
+				["instanceID"] = 601,
+				["createdat"] = 1676490097,
+				["classColor"] = "40c7eb",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
 				},
-				["minLevel"] = 80,
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676490285,
+				["resultID"] = 11,
 			},
-			["Fireärt-Golemagg"] = {
+			["Destinygdkp-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = -1,
-				["msg"] = "{star} <La culpa es de los tanks> {star}  Recluta para consolidar su rooster de 25 man ||  Horarios de 22:00 a 00:30   (miercoles+ domingo+martes)   ||  Buscamos raiders comprometidos, mas info consultar",
+				["order"] = 3460,
+				["msg"] = "EgoMarket GDKP  80/20% LFM ULDUAR 25 Going Now LF 4X DPS  https://discord.gg/qRvPDyNv65 JOIN DISCORD",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "GDKP",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"egomarket", -- [1]
+					"gdkp", -- [2]
+					"80", -- [3]
+					"20", -- [4]
+					"lfm", -- [5]
+					"ulduar", -- [6]
+					"25", -- [7]
+					"going", -- [8]
+					"now", -- [9]
+					"lf", -- [10]
+					"4x", -- [11]
+					"dps", -- [12]
+					"https", -- [13]
+					"discord", -- [14]
+					"gg", -- [15]
+					"qrvpdynv65", -- [16]
+					"join", -- [17]
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Destinygdkp-Golemagg",
+				["instanceID"] = 603,
+				["classColor"] = "FFFFFF",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["timestamp"] = 1676483489,
+				["createdat"] = 1676483487,
+			},
+			["Summerbro-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Summerbro-Golemagg",
+				["instanceID"] = 624,
+				["createdat"] = 1676490223,
+				["classColor"] = "40c7eb",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490287,
+				["resultID"] = 148,
+			},
+			["Ellianore-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 2120,
+				["msg"] = "LF healer and dps for quick botanica",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = true,
-				["lootType"] = "Other",
-				["language"] = "German",
+				["lootType"] = "MS > OS",
+				["icon"] = "BOT.tga",
 				["words"] = {
-					"star", -- [1]
-					"la", -- [2]
-					"culpa", -- [3]
-					"es", -- [4]
-					"de", -- [5]
-					"los", -- [6]
-					"tanks", -- [7]
-					"recluta", -- [8]
-					"para", -- [9]
-					"consolidar", -- [10]
-					"su", -- [11]
-					"rooster", -- [12]
-					"25", -- [13]
-					"man", -- [14]
-					"horarios", -- [15]
-					"22", -- [16]
-					"00", -- [17]
-					"a", -- [18]
-					"30", -- [19]
-					"miercoles", -- [20]
-					"domingo", -- [21]
-					"martes", -- [22]
-					"buscamos", -- [23]
-					"raiders", -- [24]
-					"comprometidos", -- [25]
-					"mas", -- [26]
-					"info", -- [27]
-					"consultar", -- [28]
+					"lf", -- [1]
+					"healer", -- [2]
+					"and", -- [3]
+					"dps", -- [4]
+					"for", -- [5]
+					"quick", -- [6]
+					"botanica", -- [7]
 				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Fireärt-Golemagg",
-				["instanceID"] = -1,
-				["classColor"] = "9482C9",
-				["icon"] = "Other.tga",
-				["minLevel"] = 0,
-				["instanceName"] = "Miscellaneous",
+				["fullName"] = "Botanica",
+				["author"] = "Ellianore-Golemagg",
+				["classColor"] = "F58CBA",
+				["instanceID"] = 553,
+				["minLevel"] = 69,
+				["createdat"] = 1676490469,
 				["rolesNeeded"] = {
-					1, -- [1]
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
 				},
-				["timestamp"] = 1676458893,
-				["createdat"] = 1676456000,
-				["maxLevel"] = 1000,
+				["instanceName"] = "Botanica",
+				["timestamp"] = 1676490606,
+				["maxLevel"] = 75,
+			},
+			["Skwigmag-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3370,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ulduar 10",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Skwigmag-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676489064,
+				["classColor"] = "40c7eb",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490287,
+				["resultID"] = 102,
 			},
 			["Thedarklordj-Golemagg"] = {
 				["isLFG"] = false,
@@ -10375,16 +17098,107 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Violet Hold",
 				["author"] = "Thedarklordj-Golemagg",
-				["instanceID"] = 608,
 				["classColor"] = "69CCF0",
-				["createdat"] = 1676456186,
-				["maxLevel"] = 80,
-				["instanceName"] = "Violet Hold",
-				["timestamp"] = 1676456361,
+				["instanceID"] = 608,
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Violet Hold",
+				["timestamp"] = 1676456361,
+				["createdat"] = 1676456186,
+			},
+			["Truemounter-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3180,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Utgarde Keep",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "UK.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Utgarde Keep",
+				["author"] = "Truemounter-Golemagg",
+				["instanceID"] = 574,
+				["maxLevel"] = 80,
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 80,
+				["resultID"] = 105,
+				["instanceName"] = "Utgarde Keep",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676483837,
+			},
+			["Kisulka-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "LFM rest shamans LST SPOT Woa25 class run pm me your spec",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"rest", -- [2]
+					"shamans", -- [3]
+					"lst", -- [4]
+					"spot", -- [5]
+					"woa25", -- [6]
+					"class", -- [7]
+					"run", -- [8]
+					"pm", -- [9]
+					"me", -- [10]
+					"your", -- [11]
+					"spec", -- [12]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Kisulka-Golemagg",
+				["classColor"] = "9482C9",
+				["instanceID"] = -1,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676457716,
+				["createdat"] = 1676457032,
+			},
+			["Nebelong-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3340,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Obsidian Sanctum 10",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "OS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Obsidian Sanctum - 10",
+				["author"] = "Nebelong-Golemagg",
+				["instanceID"] = 615,
+				["createdat"] = 1676489330,
+				["classColor"] = "40c7eb",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Obsidian Sanctum",
+				["timestamp"] = 1676490287,
+				["resultID"] = 106,
 			},
 			["Zdechliak-Golemagg"] = {
 				["isLFG"] = false,
@@ -10404,21 +17218,49 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Zdechliak-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "69CCF0",
-				["createdat"] = 1676453101,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676453103,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					2, -- [1]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676453103,
+				["createdat"] = 1676453101,
 			},
-			["Delyna-Golemagg"] = {
+			["Lazervolk-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Lazervolk-Golemagg",
+				["instanceID"] = 33,
+				["createdat"] = 1676489796,
+				["classColor"] = "abd473",
+				["maxLevel"] = 80,
+				["minLevel"] = 78,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "The Crown Chemical Co.",
+				["timestamp"] = 1676490209,
+				["resultID"] = 69,
+			},
+			["Trimakos-Golemagg"] = {
 				["isLFG"] = true,
 				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Vault of Archavon 25",
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
 				["isLFM"] = false,
@@ -10427,17 +17269,17 @@ GroupieDB = {
 				["words"] = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Delyna-Golemagg",
+				["author"] = "Trimakos-Golemagg",
+				["instanceID"] = 624,
+				["createdat"] = 1676489563,
+				["classColor"] = "8787ed",
 				["maxLevel"] = 80,
-				["classColor"] = "f58cba",
-				["createdat"] = 1676452023,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 281,
-				["instanceID"] = 624,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490287,
+				["resultID"] = 122,
 			},
 			["Ididnthither-Golemagg"] = {
 				["isLFG"] = false,
@@ -10452,106 +17294,186 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Ididnthither-Golemagg",
-				["classColor"] = "ff7d0a",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 393,
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 80,
+				["createdat"] = 1676454227,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454227,
+				["instanceID"] = 624,
+			},
+			["Kisskarin-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3370,
+				["msg"] = "LF Holy Paladin Ulduar 10, all HM (no Algalon) 2x SR ",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "SoftRes",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"lf", -- [1]
+					"holy", -- [2]
+					"paladin", -- [3]
+					"ulduar", -- [4]
+					"10", -- [5]
+					"all", -- [6]
+					"hm", -- [7]
+					"no", -- [8]
+					"algalon", -- [9]
+					"2x", -- [10]
+					"sr", -- [11]
+				},
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Kisskarin-Golemagg",
+				["classColor"] = "F58CBA",
+				["instanceID"] = 603,
+				["instanceName"] = "Ulduar",
+				["createdat"] = 1676490741,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490741,
 				["maxLevel"] = 80,
 			},
-			["Syltè-Golemagg"] = {
+			["Vecors-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "<Fish> is recruiting an Ele or Enhancement Shaman for Ulduar HM progression (40/54). Good players of all dps specs are also considered ! We raid on Wed/Sun and use DKP for loot distribution. If youre interested /w me !",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"fish", -- [1]
+					"is", -- [2]
+					"recruiting", -- [3]
+					"an", -- [4]
+					"ele", -- [5]
+					"or", -- [6]
+					"enhancement", -- [7]
+					"shaman", -- [8]
+					"for", -- [9]
+					"ulduar", -- [10]
+					"hm", -- [11]
+					"progression", -- [12]
+					"40", -- [13]
+					"54", -- [14]
+					"good", -- [15]
+					"players", -- [16]
+					"of", -- [17]
+					"all", -- [18]
+					"dps", -- [19]
+					"specs", -- [20]
+					"are", -- [21]
+					"also", -- [22]
+					"considered", -- [23]
+					"we", -- [24]
+					"raid", -- [25]
+					"on", -- [26]
+					"wed", -- [27]
+					"sun", -- [28]
+					"and", -- [29]
+					"use", -- [30]
+					"dkp", -- [31]
+					"loot", -- [32]
+					"distribution", -- [33]
+					"if", -- [34]
+					"youre", -- [35]
+					"interested", -- [36]
+					"w", -- [37]
+					"me", -- [38]
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Vecors-Golemagg",
+				["instanceID"] = 603,
+				["classColor"] = "9482C9",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["timestamp"] = 1676483494,
+				["createdat"] = 1676483494,
+			},
+			["Lightbriñger-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3430,
+				["msg"] = "LFM Naxx25 full run 3xsr ms os going now need all 11/25 need 1xdisc prist rest dps",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["maxLevel"] = 80,
+				["lootType"] = "MS > OS",
+				["icon"] = "NAX.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"naxx25", -- [2]
+					"full", -- [3]
+					"run", -- [4]
+					"3xsr", -- [5]
+					"msos", -- [6]
+					"going", -- [7]
+					"now", -- [8]
+					"need", -- [9]
+					"all", -- [10]
+					"11", -- [11]
+					"25", -- [12]
+					"1xdisc", -- [13]
+					"prist", -- [14]
+					"rest", -- [15]
+					"dps", -- [16]
+				},
+				["fullName"] = "Naxxramas - 25",
+				["author"] = "Lightbriñger-Golemagg",
+				["isLFM"] = true,
+				["classColor"] = "C41F3B",
+				["instanceName"] = "Naxxramas",
+				["createdat"] = 1676455162,
+				["instanceID"] = 533,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["timestamp"] = 1676456559,
+				["minLevel"] = 80,
+			},
+			["Zasapain-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 2010,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Blood Furnace",
+				["order"] = 3100,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Halls of Lightning",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "BF.tga",
+				["icon"] = "HOL.tga",
 				["words"] = {
 				},
-				["fullName"] = "Blood Furnace",
-				["author"] = "Syltè-Golemagg",
-				["maxLevel"] = 68,
-				["instanceID"] = 542,
-				["classColor"] = "ff7d0a",
-				["resultID"] = 40,
+				["fullName"] = "Halls of Lightning",
+				["author"] = "Zasapain-Golemagg",
+				["maxLevel"] = 80,
+				["createdat"] = 1676453815,
+				["instanceID"] = 602,
+				["resultID"] = 762,
+				["minLevel"] = 78,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Blood Furnace",
-				["timestamp"] = 1676446944,
-				["createdat"] = 1676446449,
-				["minLevel"] = 60,
-			},
-			["Cumiscuming-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 1170,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Blackrock Depths | Need Healer",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "BRD.tga",
-				["words"] = {
-				},
-				["fullName"] = "Blackrock Depths",
-				["author"] = "Cumiscuming-Golemagg",
-				["instanceID"] = 230,
-				["classColor"] = "f58cba",
-				["resultID"] = 11,
-				["createdat"] = 1676441883,
-				["instanceName"] = "Blackrock Depths",
-				["rolesNeeded"] = {
-					2, -- [1]
-				},
-				["timestamp"] = 1676450225,
-				["minLevel"] = 48,
-				["maxLevel"] = 60,
-			},
-			["Zzebus-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = -1,
-				["msg"] = "WTS 4x |cff0070dd|Hitem:45087::::::::80:::::::::|h[Runed Orb]|h|r2.4k",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "Other.tga",
-				["words"] = {
-					"wts", -- [1]
-					"4x", -- [2]
-					"hitem", -- [3]
-					"45087", -- [4]
-					"80", -- [5]
-					"h", -- [6]
-					"runed", -- [7]
-					"orb", -- [8]
-					"h2", -- [9]
-					"4k", -- [10]
-				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Zzebus-Golemagg",
-				["instanceID"] = -1,
-				["classColor"] = "C41F3B",
-				["createdat"] = 1676454558,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676454558,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["minLevel"] = 0,
+				["instanceName"] = "Halls of Lightning",
+				["timestamp"] = 1676458818,
+				["classColor"] = "c41f3b",
 			},
 			["Warlokia-Golemagg"] = {
 				["isLFG"] = true,
@@ -10567,19 +17489,19 @@ GroupieDB = {
 				["fullName"] = "Gundrak",
 				["author"] = "Warlokia-Golemagg",
 				["maxLevel"] = 80,
+				["minLevel"] = 76,
 				["instanceID"] = 604,
-				["classColor"] = "8787ed",
+				["createdat"] = 1676449614,
 				["resultID"] = 29,
+				["instanceName"] = "Gundrak",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Gundrak",
 				["timestamp"] = 1676450102,
-				["createdat"] = 1676449614,
-				["minLevel"] = 76,
+				["classColor"] = "8787ed",
 			},
 			["Warcrotank-Golemagg"] = {
 				["isLFG"] = true,
@@ -10594,16 +17516,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Warcrotank-Golemagg",
-				["instanceID"] = 603,
-				["classColor"] = "c79c6e",
-				["resultID"] = 214,
+				["maxLevel"] = 80,
 				["createdat"] = 1676451544,
-				["instanceName"] = "Ulduar",
+				["instanceID"] = 603,
+				["resultID"] = 214,
+				["minLevel"] = 80,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Ulduar",
 				["timestamp"] = 1676452072,
-				["minLevel"] = 80,
-				["maxLevel"] = 80,
+				["classColor"] = "c79c6e",
 			},
 			["Orolo-Golemagg"] = {
 				["isLFG"] = false,
@@ -10631,48 +17553,90 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Orolo-Golemagg",
-				["classColor"] = "0070DE",
 				["isLFM"] = true,
-				["minLevel"] = 0,
-				["instanceID"] = -1,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676457060,
+				["classColor"] = "0070DE",
 				["rolesNeeded"] = {
 					2, -- [1]
 				},
 				["createdat"] = 1676452232,
+				["instanceID"] = -1,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676457060,
+				["minLevel"] = 0,
 			},
-			["Trollun-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3410,
-				["msg"] = "Hunter LF VOA 25 4818 GS",
-				["groupSize"] = 25,
+			["Cilutz-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1120,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Uldaman",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
-				["isLFM"] = true,
+				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["icon"] = "ULDA.tga",
 				["words"] = {
-					"hunter", -- [1]
-					"lf", -- [2]
-					"voa", -- [3]
-					"25", -- [4]
-					"4818", -- [5]
-					"gs", -- [6]
 				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Trollun-Golemagg",
-				["instanceID"] = 624,
-				["classColor"] = "ABD473",
-				["createdat"] = 1676453634,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676453691,
+				["fullName"] = "Uldaman",
+				["author"] = "Cilutz-Golemagg",
+				["classColor"] = "c79c6e",
+				["minLevel"] = 36,
+				["instanceID"] = 70,
+				["createdat"] = 1676482412,
+				["resultID"] = 178,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "Uldaman",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 44,
+			},
+			["Gâmeover-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "LFM Ulduar 25m NM (we will try some HM) - 4300gs req. - 3SR - boe, orb, patterns, disc HR - Using Discord - Need:  1 DPS ",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"ulduar", -- [2]
+					"25m", -- [3]
+					"nm", -- [4]
+					"we", -- [5]
+					"will", -- [6]
+					"try", -- [7]
+					"some", -- [8]
+					"hm", -- [9]
+					"4300gs", -- [10]
+					"req", -- [11]
+					"3sr", -- [12]
+					"boe", -- [13]
+					"orb", -- [14]
+					"patterns", -- [15]
+					"disc", -- [16]
+					"hr", -- [17]
+					"using", -- [18]
+					"discord", -- [19]
+					"need", -- [20]
+					"1", -- [21]
+					"dps", -- [22]
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Gâmeover-Golemagg",
+				["instanceID"] = 603,
+				["classColor"] = "C41F3B",
+				["maxLevel"] = 80,
+				["createdat"] = 1676490208,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490880,
 				["minLevel"] = 80,
 			},
 			["Haszonállat-Golemagg"] = {
@@ -10688,19 +17652,330 @@ GroupieDB = {
 				},
 				["fullName"] = "Halls of Lightning",
 				["author"] = "Haszonállat-Golemagg",
-				["resultID"] = 772,
-				["instanceID"] = 602,
-				["classColor"] = "ff7d0a",
-				["createdat"] = 1676458763,
 				["maxLevel"] = 80,
+				["createdat"] = 1676458763,
+				["instanceID"] = 602,
+				["resultID"] = 772,
+				["minLevel"] = 78,
+				["instanceName"] = "Halls of Lightning",
 				["rolesNeeded"] = {
 					2, -- [1]
 					3, -- [2]
 					4, -- [3]
 				},
 				["timestamp"] = 1676458818,
-				["minLevel"] = 78,
-				["instanceName"] = "Halls of Lightning",
+				["classColor"] = "ff7d0a",
+			},
+			["Shadova-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3010,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Nexus",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "NEX.tga",
+				["words"] = {
+				},
+				["fullName"] = "Nexus",
+				["author"] = "Shadova-Golemagg",
+				["instanceID"] = 576,
+				["createdat"] = 1676488671,
+				["classColor"] = "fff569",
+				["maxLevel"] = 75,
+				["minLevel"] = 70,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Nexus",
+				["timestamp"] = 1676490825,
+				["resultID"] = 279,
+			},
+			["Maxbigsfield-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3430,
+				["msg"] = "LFM SKIPRUN Nax 25! signet of manifested pain HR! 1x SR Loot rules NEED CASTERS",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "SoftRes",
+				["icon"] = "NAX.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"skiprun", -- [2]
+					"nax", -- [3]
+					"25", -- [4]
+					"signet", -- [5]
+					"of", -- [6]
+					"manifested", -- [7]
+					"pain", -- [8]
+					"hr", -- [9]
+					"1x", -- [10]
+					"sr", -- [11]
+					"loot", -- [12]
+					"rules", -- [13]
+					"need", -- [14]
+					"casters", -- [15]
+				},
+				["fullName"] = "Naxxramas - 25",
+				["author"] = "Maxbigsfield-Golemagg",
+				["classColor"] = "FF7D0A",
+				["instanceID"] = 533,
+				["minLevel"] = 80,
+				["createdat"] = 1676490323,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676490967,
+				["maxLevel"] = 80,
+			},
+			["Shn-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3320,
+				["msg"] = "VOA 10 LF LOCK",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"voa", -- [1]
+					"10", -- [2]
+					"lf", -- [3]
+					"lock", -- [4]
+				},
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Shn-Golemagg",
+				["classColor"] = "F58CBA",
+				["instanceID"] = 624,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676454675,
+				["createdat"] = 1676454675,
+			},
+			["Fadiline-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3170,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Heroic Utgarde Pinnacle | Need 1 DPS",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "UP.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Utgarde Pinnacle",
+				["author"] = "Fadiline-Golemagg",
+				["instanceName"] = "Utgarde Pinnacle",
+				["resultID"] = 294,
+				["instanceID"] = 575,
+				["classColor"] = "f58cba",
+				["createdat"] = 1676490810,
+				["maxLevel"] = 80,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["timestamp"] = 1676490939,
+				["minLevel"] = 80,
+			},
+			["Yallahyallah-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3000,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Utgarde Keep",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "UK.tga",
+				["words"] = {
+				},
+				["fullName"] = "Utgarde Keep",
+				["author"] = "Yallahyallah-Golemagg",
+				["instanceName"] = "Utgarde Keep",
+				["resultID"] = 303,
+				["instanceID"] = 574,
+				["classColor"] = "fff569",
+				["createdat"] = 1676490493,
+				["maxLevel"] = 75,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490825,
+				["minLevel"] = 68,
+			},
+			["Megawizzard-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3370,
+				["msg"] = "{triangle}Gdkp ulduar 10man / 80%split To raid{Triangle} Freya / council / thorim HM > LF buyer/semi buyer (Request +4.3 Gearscore / +6k budget) > need Tank / healer / Dps >going now<",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "GDKP",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"triangle", -- [1]
+					"gdkp", -- [2]
+					"ulduar", -- [3]
+					"10man", -- [4]
+					"80", -- [5]
+					"split", -- [6]
+					"to", -- [7]
+					"raid", -- [8]
+					"freya", -- [9]
+					"council", -- [10]
+					"thorim", -- [11]
+					"hm", -- [12]
+					"lf", -- [13]
+					"buyer", -- [14]
+					"semi", -- [15]
+					"request", -- [16]
+					"4", -- [17]
+					"3", -- [18]
+					"gearscore", -- [19]
+					"6k", -- [20]
+					"budget", -- [21]
+					"need", -- [22]
+					"tank", -- [23]
+					"healer", -- [24]
+					"dps", -- [25]
+					"going", -- [26]
+					"now", -- [27]
+				},
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Megawizzard-Golemagg",
+				["instanceID"] = 603,
+				["classColor"] = "69CCF0",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483780,
+				["createdat"] = 1676483700,
+			},
+			["Suneyez-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "LFM on Saturday 19:00 ST {star}Ulduar 25 Man{Star} (FULL RUN)-Weekly Simi-guild Run (Thorim & Freya HM)- 4 SR > MS > OS  (BOE's + Orbs + Fragment HR)- You should been killed those Bosses on your main 4.5gs+ (Signup/gear check: https://discord.gg/z3aC26hv)",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"on", -- [2]
+					"saturday", -- [3]
+					"19", -- [4]
+					"00", -- [5]
+					"st", -- [6]
+					"star", -- [7]
+					"ulduar", -- [8]
+					"25", -- [9]
+					"man", -- [10]
+					"full", -- [11]
+					"run", -- [12]
+					"weekly", -- [13]
+					"simi", -- [14]
+					"guild", -- [15]
+					"thorim", -- [16]
+					"freya", -- [17]
+					"hm", -- [18]
+					"4", -- [19]
+					"sr", -- [20]
+					"msos", -- [21]
+					"boe", -- [22]
+					"s", -- [23]
+					"orbs", -- [24]
+					"fragment", -- [25]
+					"hr", -- [26]
+					"you", -- [27]
+					"should", -- [28]
+					"been", -- [29]
+					"killed", -- [30]
+					"those", -- [31]
+					"bosses", -- [32]
+					"your", -- [33]
+					"main", -- [34]
+					"5gs", -- [35]
+					"signup", -- [36]
+					"gear", -- [37]
+					"check", -- [38]
+					"https", -- [39]
+					"discord", -- [40]
+					"gg", -- [41]
+					"z3ac26hv", -- [42]
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Suneyez-Golemagg",
+				["instanceID"] = 603,
+				["classColor"] = "69CCF0",
+				["maxLevel"] = 80,
+				["createdat"] = 1676490278,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490791,
+				["minLevel"] = 80,
+			},
+			["Pespsovitý-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 1200,
+				["msg"] = "LFM ALL.....STRATHOLME (NORMAL) /W ME ",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "STRAT.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"all", -- [2]
+					"stratholme", -- [3]
+					"normal", -- [4]
+					"w", -- [5]
+					"me", -- [6]
+				},
+				["fullName"] = "Stratholme",
+				["author"] = "Pespsovitý-Golemagg",
+				["maxLevel"] = 61,
+				["instanceID"] = 329,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 56,
+				["createdat"] = 1676448262,
+				["instanceName"] = "Stratholme",
+				["timestamp"] = 1676448369,
+				["classColor"] = "F58CBA",
 			},
 			["Hekatos-Golemagg"] = {
 				["isLFG"] = true,
@@ -10716,15 +17991,100 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Hekatos-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "40c7eb",
-				["createdat"] = 1676450021,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676450021,
+				["resultID"] = 302,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452072,
-				["resultID"] = 302,
-				["instanceID"] = 624,
+				["classColor"] = "40c7eb",
+			},
+			["Skeekslol-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "{star} <Jay's Pug's> Today 20:00 ServerTime! Ulduar25 -- 4/10HM and further progressing HM, Still looking for 1 HPally and Ranged DPS(pref mage/lock) ! Discord link: https://discord.gg/XRqht3hmej {star}",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"star", -- [1]
+					"jay", -- [2]
+					"s", -- [3]
+					"pug", -- [4]
+					"today", -- [5]
+					"20", -- [6]
+					"00", -- [7]
+					"servertime", -- [8]
+					"ulduar25", -- [9]
+					"4", -- [10]
+					"10hm", -- [11]
+					"and", -- [12]
+					"further", -- [13]
+					"progressing", -- [14]
+					"hm", -- [15]
+					"still", -- [16]
+					"looking", -- [17]
+					"for", -- [18]
+					"1", -- [19]
+					"hpally", -- [20]
+					"ranged", -- [21]
+					"dps", -- [22]
+					"pref", -- [23]
+					"mage", -- [24]
+					"lock", -- [25]
+					"discord", -- [26]
+					"link", -- [27]
+					"https", -- [28]
+					"gg", -- [29]
+					"xrqht3hmej", -- [30]
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Skeekslol-Golemagg",
+				["maxLevel"] = 80,
+				["instanceID"] = 603,
+				["instanceName"] = "Ulduar",
+				["minLevel"] = 80,
+				["classColor"] = "0070DE",
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483684,
+				["createdat"] = 1676450435,
+			},
+			["Mikë-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Mikë-Golemagg",
+				["classColor"] = "abd473",
+				["minLevel"] = 78,
+				["instanceID"] = 33,
+				["createdat"] = 1676483141,
+				["resultID"] = 34,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "The Crown Chemical Co.",
+				["timestamp"] = 1676483477,
+				["maxLevel"] = 80,
 			},
 			["Pivlian-Golemagg"] = {
 				["isLFG"] = false,
@@ -10743,12 +18103,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Pivlian-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "FFFFFF",
-				["createdat"] = 1676456183,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676457280,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -10756,6 +18112,158 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676457280,
+				["createdat"] = 1676456183,
+			},
+			["Komuro-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "LF Plans: Indestructible Plate Girdle craft",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"lf", -- [1]
+					"plans", -- [2]
+					"indestructible", -- [3]
+					"plate", -- [4]
+					"girdle", -- [5]
+					"craft", -- [6]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Komuro-Golemagg",
+				["classColor"] = "F58CBA",
+				["instanceID"] = -1,
+				["instanceName"] = "Miscellaneous",
+				["createdat"] = 1676459084,
+				["maxLevel"] = 1000,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676459096,
+				["minLevel"] = 0,
+			},
+			["Varmestorken-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3320,
+				["msg"] = "LFM Hunter VOA 10MAN",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"hunter", -- [2]
+					"voa", -- [3]
+					"10man", -- [4]
+				},
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Varmestorken-Golemagg",
+				["instanceID"] = 624,
+				["classColor"] = "9482C9",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483731,
+				["createdat"] = 1676483549,
+			},
+			["Iamshaman-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Iamshaman-Golemagg",
+				["maxLevel"] = 80,
+				["resultID"] = 349,
+				["classColor"] = "0070de",
+				["minLevel"] = 78,
+				["createdat"] = 1676452646,
+				["instanceName"] = "The Crown Chemical Co.",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676452854,
+				["instanceID"] = 33,
+			},
+			["Jinbean-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3070,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Gundrak",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "GUN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Gundrak",
+				["author"] = "Jinbean-Golemagg",
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 76,
+				["instanceID"] = 604,
+				["createdat"] = 1676481966,
+				["resultID"] = 134,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Gundrak",
+				["timestamp"] = 1676483846,
+				["maxLevel"] = 80,
+			},
+			["Wantdemond-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3110,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Culling of Stratholme",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "COS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Culling of Stratholme",
+				["author"] = "Wantdemond-Golemagg",
+				["instanceID"] = 595,
+				["createdat"] = 1676489725,
+				["classColor"] = "8787ed",
+				["maxLevel"] = 80,
+				["minLevel"] = 78,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Culling of Stratholme",
+				["timestamp"] = 1676490999,
+				["resultID"] = 365,
 			},
 			["Twysterstone-Golemagg"] = {
 				["isLFG"] = false,
@@ -10780,17 +18288,49 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Twysterstone-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "C41F3B",
-				["minLevel"] = 80,
+				["instanceID"] = 624,
+				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676450283,
 				["maxLevel"] = 80,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
 				["timestamp"] = 1676450283,
+				["minLevel"] = 80,
+			},
+			["Tweetz-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "LFM VOA25 Spec-Run - whisper Spec ",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"voa25", -- [2]
+					"spec", -- [3]
+					"run", -- [4]
+					"whisper", -- [5]
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Tweetz-Golemagg",
+				["instanceID"] = 624,
+				["classColor"] = "C41F3B",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
 				["instanceName"] = "Vault of Archavon",
-				["createdat"] = 1676450283,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483855,
+				["createdat"] = 1676483549,
 			},
 			["Jarmilacz-Golemagg"] = {
 				["isLFG"] = true,
@@ -10806,15 +18346,15 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Jarmilacz-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "f58cba",
-				["createdat"] = 1676451656,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676451656,
+				["resultID"] = 298,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452072,
-				["resultID"] = 298,
-				["instanceID"] = 624,
+				["classColor"] = "f58cba",
 			},
 			["Holyimotet-Golemagg"] = {
 				["isLFG"] = true,
@@ -10829,21 +18369,225 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Holyimotet-Golemagg",
-				["classColor"] = "f58cba",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 396,
+				["classColor"] = "f58cba",
+				["minLevel"] = 80,
+				["createdat"] = 1676454339,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454339,
+				["instanceID"] = 624,
+			},
+			["Nagros-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "LFM Ulduar 25 HM: (Freya, Thorim, Council) (XT/Hodir try) need Heals and Dps; 2x Sr>MS>OS only Boe HR; Discord mandatory -> checking logs",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"ulduar", -- [2]
+					"25", -- [3]
+					"hm", -- [4]
+					"freya", -- [5]
+					"thorim", -- [6]
+					"council", -- [7]
+					"xt", -- [8]
+					"hodir", -- [9]
+					"try", -- [10]
+					"need", -- [11]
+					"heals", -- [12]
+					"and", -- [13]
+					"dps", -- [14]
+					"2x", -- [15]
+					"sr", -- [16]
+					"msos", -- [17]
+					"only", -- [18]
+					"boe", -- [19]
+					"hr", -- [20]
+					"discord", -- [21]
+					"mandatory", -- [22]
+					"checking", -- [23]
+					"logs", -- [24]
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Nagros-Golemagg",
+				["instanceID"] = 603,
+				["classColor"] = "FFF569",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["timestamp"] = 1676483720,
+				["createdat"] = 1676483562,
+			},
+			["Talism-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3040,
+				["msg"] = "WTB DTK BOOST ",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "DTK.tga",
+				["words"] = {
+					"wtb", -- [1]
+					"dtk", -- [2]
+					"boost", -- [3]
+				},
+				["fullName"] = "Drak'Tharon Keep",
+				["author"] = "Talism-Golemagg",
+				["classColor"] = "69CCF0",
+				["instanceID"] = 600,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 72,
+				["maxLevel"] = 78,
+				["instanceName"] = "Drak'Tharon Keep",
+				["timestamp"] = 1676457135,
+				["createdat"] = 1676457135,
+			},
+			["Numbek-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "{star}WTS ULDUAR 25 HM LOOTRUN{star}Get all loot you need!FAST & CHEAP!{star}",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"star", -- [1]
+					"wts", -- [2]
+					"ulduar", -- [3]
+					"25", -- [4]
+					"hm", -- [5]
+					"lootrun", -- [6]
+					"get", -- [7]
+					"all", -- [8]
+					"loot", -- [9]
+					"you", -- [10]
+					"need", -- [11]
+					"fast", -- [12]
+					"cheap", -- [13]
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Numbek-Golemagg",
+				["classColor"] = "ABD473",
+				["instanceID"] = 603,
+				["minLevel"] = 80,
+				["createdat"] = 1676490351,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490875,
 				["maxLevel"] = 80,
 			},
-			["Cenedal-Golemagg"] = {
+			["Voltas-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1170,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Blackrock Depths",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "BRD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Blackrock Depths",
+				["author"] = "Voltas-Golemagg",
+				["classColor"] = "f58cba",
+				["minLevel"] = 48,
+				["instanceID"] = 230,
+				["createdat"] = 1676481318,
+				["resultID"] = 193,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Blackrock Depths",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 60,
+			},
+			["Justiinax-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3430,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Naxxramas 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "NAX.tga",
+				["words"] = {
+				},
+				["fullName"] = "Naxxramas - 25",
+				["author"] = "Justiinax-Golemagg",
+				["instanceID"] = 533,
+				["createdat"] = 1676488584,
+				["classColor"] = "f58cba",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676490287,
+				["resultID"] = 123,
+			},
+			["Muscoci-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "lf jc with 16 str",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"lf", -- [1]
+					"jc", -- [2]
+					"with", -- [3]
+					"16", -- [4]
+					"str", -- [5]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Muscoci-Golemagg",
+				["instanceID"] = -1,
+				["classColor"] = "C79C6E",
+				["maxLevel"] = 1000,
+				["minLevel"] = 0,
+				["instanceName"] = "Miscellaneous",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676457353,
+				["createdat"] = 1676456737,
+			},
+			["Scanje-Golemagg"] = {
 				["isLFG"] = false,
 				["order"] = 3410,
-				["msg"] = "LFM VOA 25 ONLY EMALON NEED DRUIDS ENCHA SHAMMY ",
+				["msg"] = "LFM VOA 18 Feral and WarriorTank",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
 				["isLFM"] = true,
@@ -10852,29 +18596,93 @@ GroupieDB = {
 				["words"] = {
 					"lfm", -- [1]
 					"voa", -- [2]
-					"25", -- [3]
-					"only", -- [4]
-					"emalon", -- [5]
-					"need", -- [6]
-					"druids", -- [7]
-					"encha", -- [8]
-					"shammy", -- [9]
+					"18", -- [3]
+					"feral", -- [4]
+					"and", -- [5]
+					"warriortank", -- [6]
 				},
 				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Cenedal-Golemagg",
+				["author"] = "Scanje-Golemagg",
+				["classColor"] = "F58CBA",
 				["instanceID"] = 624,
-				["classColor"] = "FFFFFF",
-				["minLevel"] = 80,
-				["maxLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["timestamp"] = 1676450554,
+				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["instanceName"] = "Vault of Archavon",
-				["createdat"] = 1676450554,
+				["timestamp"] = 1676453644,
+				["createdat"] = 1676453210,
+			},
+			["Dolga-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "WTS|cffffffff|Hitem:49916::::::::62:::::::::|h[Lovely Charm Bracelet]|h|rX32 15G PER UNIT",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"wts", -- [1]
+					"hitem", -- [2]
+					"49916", -- [3]
+					"62", -- [4]
+					"h", -- [5]
+					"lovely", -- [6]
+					"charm", -- [7]
+					"bracelet", -- [8]
+					"hx32", -- [9]
+					"15g", -- [10]
+					"per", -- [11]
+					"unit", -- [12]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Dolga-Golemagg",
+				["instanceID"] = -1,
+				["classColor"] = "FF7D0A",
+				["maxLevel"] = 1000,
+				["minLevel"] = 0,
+				["instanceName"] = "Miscellaneous",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483768,
+				["createdat"] = 1676483768,
+			},
+			["Opheliac-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Opheliac-Golemagg",
+				["maxLevel"] = 80,
+				["resultID"] = 717,
+				["classColor"] = "f58cba",
+				["minLevel"] = 80,
+				["createdat"] = 1676458606,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676458646,
+				["instanceID"] = 601,
 			},
 			["Cruxx-Golemagg"] = {
 				["isLFG"] = false,
@@ -10918,126 +18726,18 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Cruxx-Golemagg",
-				["classColor"] = "F58CBA",
 				["isLFM"] = true,
-				["minLevel"] = 80,
-				["instanceID"] = 603,
-				["instanceName"] = "Ulduar",
-				["timestamp"] = 1676458936,
+				["classColor"] = "F58CBA",
 				["rolesNeeded"] = {
 					1, -- [1]
 					3, -- [2]
 					4, -- [3]
 				},
 				["createdat"] = 1676452343,
-			},
-			["Salogram-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3430,
-				["msg"] = "LFM NAXX SKIP RUN 1SR>MS>OS (The Turning Ride HR)",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "NAX.tga",
-				["words"] = {
-					"lfm", -- [1]
-					"naxx", -- [2]
-					"skip", -- [3]
-					"run", -- [4]
-					"1sr", -- [5]
-					"msos", -- [6]
-					"the", -- [7]
-					"turning", -- [8]
-					"ride", -- [9]
-					"hr", -- [10]
-				},
-				["fullName"] = "Naxxramas - 25",
-				["author"] = "Salogram-Golemagg",
-				["instanceID"] = 533,
-				["classColor"] = "69CCF0",
-				["createdat"] = 1676459136,
-				["maxLevel"] = 80,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676459136,
+				["instanceID"] = 603,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676458936,
 				["minLevel"] = 80,
-				["instanceName"] = "Naxxramas",
-			},
-			["Opheliac-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3310,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
-				["groupSize"] = 5,
-				["isHeroic"] = true,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "AN.tga",
-				["words"] = {
-				},
-				["fullName"] = "Heroic Azjol-Nerub",
-				["author"] = "Opheliac-Golemagg",
-				["instanceName"] = "Azjol-Nerub",
-				["instanceID"] = 601,
-				["minLevel"] = 80,
-				["resultID"] = 717,
-				["maxLevel"] = 80,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676458646,
-				["createdat"] = 1676458606,
-				["classColor"] = "f58cba",
-			},
-			["Fariborz-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3430,
-				["msg"] = "LFM World Tour (Naxx Eoe Os2D). 80% Split Need All Atm 250G Mbid . /w Gs Budget ",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "NAX.tga",
-				["words"] = {
-					"lfm", -- [1]
-					"world", -- [2]
-					"tour", -- [3]
-					"naxx", -- [4]
-					"eoe", -- [5]
-					"os2d", -- [6]
-					"80", -- [7]
-					"split", -- [8]
-					"need", -- [9]
-					"all", -- [10]
-					"atm", -- [11]
-					"250g", -- [12]
-					"mbid", -- [13]
-					"w", -- [14]
-					"gs", -- [15]
-					"budget", -- [16]
-				},
-				["fullName"] = "Naxxramas - 25",
-				["author"] = "Fariborz-Golemagg",
-				["instanceID"] = 533,
-				["classColor"] = "F58CBA",
-				["createdat"] = 1676459108,
-				["maxLevel"] = 80,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676459108,
-				["minLevel"] = 80,
-				["instanceName"] = "Naxxramas",
 			},
 			["Seriouslyhah-Golemagg"] = {
 				["isLFG"] = false,
@@ -11076,17 +18776,17 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Seriouslyhah-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "FFFFFF",
-				["instanceID"] = 603,
-				["createdat"] = 1676449573,
-				["minLevel"] = 80,
-				["instanceName"] = "Ulduar",
-				["timestamp"] = 1676454207,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
-				["maxLevel"] = 80,
+				["createdat"] = 1676449573,
+				["minLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676454207,
+				["instanceID"] = 603,
 			},
 			["Lilith-Golemagg"] = {
 				["isLFG"] = false,
@@ -11109,42 +18809,44 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Lilith-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "C41F3B",
-				["instanceID"] = 624,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
 				["createdat"] = 1676447259,
 				["minLevel"] = 80,
 				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676447369,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
-			["Sndrpala-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "prot pala LFG voa 10/25",
-				["groupSize"] = 25,
+			["Shadowformgg-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3320,
+				["msg"] = "4600 GS shadowpriest LF VOA 25/10 ",
+				["groupSize"] = 10,
 				["isHeroic"] = false,
-				["isLFM"] = false,
+				["isLFM"] = true,
 				["lootType"] = "MS > OS",
 				["icon"] = "VOA.tga",
 				["words"] = {
-					"prot", -- [1]
-					"pala", -- [2]
-					"lfg", -- [3]
-					"voa", -- [4]
-					"10", -- [5]
+					"4600", -- [1]
+					"gs", -- [2]
+					"shadowpriest", -- [3]
+					"lf", -- [4]
+					"voa", -- [5]
 					"25", -- [6]
+					"10", -- [7]
 				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Sndrpala-Golemagg",
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Shadowformgg-Golemagg",
+				["classColor"] = "FFFFFF",
 				["instanceID"] = 624,
 				["instanceName"] = "Vault of Archavon",
-				["createdat"] = 1676458758,
+				["createdat"] = 1676490676,
 				["minLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -11152,9 +18854,8 @@ GroupieDB = {
 					3, -- [3]
 					4, -- [4]
 				},
-				["timestamp"] = 1676458758,
+				["timestamp"] = 1676490751,
 				["maxLevel"] = 80,
-				["classColor"] = "F58CBA",
 			},
 			["Nattallia-Golemagg"] = {
 				["isLFG"] = false,
@@ -11169,18 +18870,416 @@ GroupieDB = {
 				},
 				["fullName"] = "Old Kingdom",
 				["author"] = "Nattallia-Golemagg",
-				["classColor"] = "f58cba",
-				["instanceID"] = 619,
-				["resultID"] = 665,
+				["maxLevel"] = 78,
 				["createdat"] = 1676457865,
+				["classColor"] = "f58cba",
+				["resultID"] = 665,
+				["minLevel"] = 71,
+				["instanceName"] = "Old Kingdom",
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
-				["instanceName"] = "Old Kingdom",
 				["timestamp"] = 1676458261,
-				["minLevel"] = 71,
-				["maxLevel"] = 78,
+				["instanceID"] = 619,
+			},
+			["Elu-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "wts |cff0070dd|Hitem:45087::::::::80:::::::::|h[Runed Orb]|h|r 600g. Have 2 orbs",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"wts", -- [1]
+					"hitem", -- [2]
+					"45087", -- [3]
+					"80", -- [4]
+					"h", -- [5]
+					"runed", -- [6]
+					"orb", -- [7]
+					"600g", -- [8]
+					"have", -- [9]
+					"2", -- [10]
+					"orbs", -- [11]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Elu-Golemagg",
+				["classColor"] = "FFF569",
+				["instanceID"] = -1,
+				["minLevel"] = 0,
+				["createdat"] = 1676490493,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676490493,
+				["maxLevel"] = 1000,
+			},
+			["Stinku-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Stinku-Golemagg",
+				["maxLevel"] = 80,
+				["resultID"] = 492,
+				["classColor"] = "fff569",
+				["minLevel"] = 80,
+				["createdat"] = 1676454138,
+				["instanceName"] = "Vault of Archavon",
+				["rolesNeeded"] = {
+				},
+				["timestamp"] = 1676454444,
+				["instanceID"] = 624,
+			},
+			["Randoom-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3430,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Naxxramas 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "NAX.tga",
+				["words"] = {
+				},
+				["fullName"] = "Naxxramas - 25",
+				["author"] = "Randoom-Golemagg",
+				["instanceID"] = 533,
+				["createdat"] = 1676488659,
+				["classColor"] = "c79c6e",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676490287,
+				["resultID"] = 157,
+			},
+			["Doea-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "WTS |cffa335ee|Hitem:40474::::::::80:::::::::|h[Surge Needle Ring]|h|r 1700g",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"wts", -- [1]
+					"hitem", -- [2]
+					"40474", -- [3]
+					"80", -- [4]
+					"h", -- [5]
+					"surge", -- [6]
+					"needle", -- [7]
+					"ring", -- [8]
+					"1700g", -- [9]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Doea-Golemagg",
+				["instanceID"] = -1,
+				["classColor"] = "FFFFFF",
+				["maxLevel"] = 1000,
+				["minLevel"] = 0,
+				["instanceName"] = "Miscellaneous",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483537,
+				["createdat"] = 1676483496,
+			},
+			["Veeo-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Veeo-Golemagg",
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 80,
+				["instanceID"] = 601,
+				["createdat"] = 1676483346,
+				["resultID"] = 124,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 80,
+			},
+			["Mopoka-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3180,
+				["msg"] = "UK H+ need DPS. 1st boss killed. boe roll",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["maxLevel"] = 80,
+				["lootType"] = "MS > OS",
+				["icon"] = "UK.tga",
+				["words"] = {
+					"uk", -- [1]
+					"h", -- [2]
+					"need", -- [3]
+					"dps", -- [4]
+					"1st", -- [5]
+					"boss", -- [6]
+					"killed", -- [7]
+					"boe", -- [8]
+					"roll", -- [9]
+				},
+				["fullName"] = "Heroic Utgarde Keep",
+				["author"] = "Mopoka-Golemagg",
+				["isLFM"] = true,
+				["classColor"] = "F58CBA",
+				["instanceName"] = "Utgarde Keep",
+				["createdat"] = 1676452795,
+				["instanceID"] = 574,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["timestamp"] = 1676454648,
+				["minLevel"] = 80,
+			},
+			["Dóyle-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "RABIES> Hosting Ulduar 25 +4-5HM today 19:30ST - Semiguild run - 3xSR (BOE/Orbs/Frags HR)- More info & Signups: https://discord.gg/H8bb59pBnN",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"rabies", -- [1]
+					"hosting", -- [2]
+					"ulduar", -- [3]
+					"25", -- [4]
+					"4", -- [5]
+					"5hm", -- [6]
+					"today", -- [7]
+					"19", -- [8]
+					"30st", -- [9]
+					"semiguild", -- [10]
+					"run", -- [11]
+					"3xsr", -- [12]
+					"boe", -- [13]
+					"orbs", -- [14]
+					"frags", -- [15]
+					"hr", -- [16]
+					"more", -- [17]
+					"info", -- [18]
+					"signups", -- [19]
+					"https", -- [20]
+					"discord", -- [21]
+					"gg", -- [22]
+					"h8bb59pbnn", -- [23]
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Dóyle-Golemagg",
+				["classColor"] = "0070DE",
+				["instanceID"] = 603,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676457127,
+				["createdat"] = 1676457126,
+			},
+			["Skamyna-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "LFM dk tank / rest shammys / feral/boomie druids LST SPOT Woa25 class run pm me your spec",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"dk", -- [2]
+					"tank", -- [3]
+					"rest", -- [4]
+					"shammys", -- [5]
+					"feral", -- [6]
+					"boomie", -- [7]
+					"druids", -- [8]
+					"lst", -- [9]
+					"spot", -- [10]
+					"woa25", -- [11]
+					"class", -- [12]
+					"run", -- [13]
+					"pm", -- [14]
+					"me", -- [15]
+					"your", -- [16]
+					"spec", -- [17]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Skamyna-Golemagg",
+				["classColor"] = "F58CBA",
+				["instanceID"] = -1,
+				["instanceName"] = "Miscellaneous",
+				["createdat"] = 1676458952,
+				["maxLevel"] = 1000,
+				["rolesNeeded"] = {
+					1, -- [1]
+				},
+				["timestamp"] = 1676459137,
+				["minLevel"] = 0,
+			},
+			["Ghostfly-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3320,
+				["msg"] = "LFM VOA 10 NEED LOCK AND HUNTER LAST SPOT FAST RUN LETS GO",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["maxLevel"] = 80,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"voa", -- [2]
+					"10", -- [3]
+					"need", -- [4]
+					"lock", -- [5]
+					"and", -- [6]
+					"hunter", -- [7]
+					"last", -- [8]
+					"spot", -- [9]
+					"fast", -- [10]
+					"run", -- [11]
+					"lets", -- [12]
+					"go", -- [13]
+				},
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Ghostfly-Golemagg",
+				["isLFM"] = true,
+				["classColor"] = "FFF569",
+				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676456141,
+				["instanceID"] = 624,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676458189,
+				["minLevel"] = 80,
+			},
+			["Paks-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3370,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Ulduar 10 | 2/10 in Group",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Paks-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676489273,
+				["classColor"] = "c41f3b",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490287,
+				["resultID"] = 120,
+			},
+			["Galactic-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "LFM VOA Hunter-Lock",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"voa", -- [2]
+					"hunter", -- [3]
+					"lock", -- [4]
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Galactic-Golemagg",
+				["instanceID"] = 624,
+				["classColor"] = "C79C6E",
+				["maxLevel"] = 80,
+				["createdat"] = 1676457446,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676457446,
+				["minLevel"] = 80,
+			},
+			["Kuramiepop-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1120,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Uldaman",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULDA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Uldaman",
+				["author"] = "Kuramiepop-Golemagg",
+				["classColor"] = "c79c6e",
+				["minLevel"] = 36,
+				["instanceID"] = 70,
+				["createdat"] = 1676481952,
+				["resultID"] = 132,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Uldaman",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 44,
 			},
 			["Monikà-Golemagg"] = {
 				["isLFG"] = false,
@@ -11224,9 +19323,10 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Monikà-Golemagg",
-				["classColor"] = "F58CBA",
 				["isLFM"] = true,
-				["minLevel"] = 80,
+				["classColor"] = "F58CBA",
+				["instanceName"] = "Ulduar",
+				["createdat"] = 1676458219,
 				["instanceID"] = 603,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -11235,180 +19335,7 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676458455,
-				["instanceName"] = "Ulduar",
-				["createdat"] = 1676458219,
-			},
-			["Stinku-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Stinku-Golemagg",
-				["classColor"] = "fff569",
-				["instanceID"] = 624,
 				["minLevel"] = 80,
-				["resultID"] = 492,
-				["rolesNeeded"] = {
-				},
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454444,
-				["createdat"] = 1676454138,
-				["maxLevel"] = 80,
-			},
-			["Komuro-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = -1,
-				["msg"] = "LF Plans: Indestructible Plate Girdle craft",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "Other.tga",
-				["words"] = {
-					"lf", -- [1]
-					"plans", -- [2]
-					"indestructible", -- [3]
-					"plate", -- [4]
-					"girdle", -- [5]
-					"craft", -- [6]
-				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Komuro-Golemagg",
-				["instanceID"] = -1,
-				["classColor"] = "F58CBA",
-				["createdat"] = 1676459084,
-				["maxLevel"] = 1000,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676459096,
-				["minLevel"] = 0,
-				["instanceName"] = "Miscellaneous",
-			},
-			["Mopoka-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3180,
-				["msg"] = "UK H+ need DPS. 1st boss killed. boe roll",
-				["groupSize"] = 5,
-				["isHeroic"] = true,
-				["maxLevel"] = 80,
-				["lootType"] = "MS > OS",
-				["icon"] = "UK.tga",
-				["words"] = {
-					"uk", -- [1]
-					"h", -- [2]
-					"need", -- [3]
-					"dps", -- [4]
-					"1st", -- [5]
-					"boss", -- [6]
-					"killed", -- [7]
-					"boe", -- [8]
-					"roll", -- [9]
-				},
-				["fullName"] = "Heroic Utgarde Keep",
-				["author"] = "Mopoka-Golemagg",
-				["classColor"] = "F58CBA",
-				["isLFM"] = true,
-				["minLevel"] = 80,
-				["instanceID"] = 574,
-				["rolesNeeded"] = {
-					3, -- [1]
-					4, -- [2]
-				},
-				["timestamp"] = 1676454648,
-				["instanceName"] = "Utgarde Keep",
-				["createdat"] = 1676452795,
-			},
-			["Dóyle-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3460,
-				["msg"] = "RABIES> Hosting Ulduar 25 +4-5HM today 19:30ST - Semiguild run - 3xSR (BOE/Orbs/Frags HR)- More info & Signups: https://discord.gg/H8bb59pBnN",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "ULD.tga",
-				["words"] = {
-					"rabies", -- [1]
-					"hosting", -- [2]
-					"ulduar", -- [3]
-					"25", -- [4]
-					"4", -- [5]
-					"5hm", -- [6]
-					"today", -- [7]
-					"19", -- [8]
-					"30st", -- [9]
-					"semiguild", -- [10]
-					"run", -- [11]
-					"3xsr", -- [12]
-					"boe", -- [13]
-					"orbs", -- [14]
-					"frags", -- [15]
-					"hr", -- [16]
-					"more", -- [17]
-					"info", -- [18]
-					"signups", -- [19]
-					"https", -- [20]
-					"discord", -- [21]
-					"gg", -- [22]
-					"h8bb59pbnn", -- [23]
-				},
-				["fullName"] = "Ulduar - 25",
-				["author"] = "Dóyle-Golemagg",
-				["instanceID"] = 603,
-				["classColor"] = "0070DE",
-				["createdat"] = 1676457126,
-				["maxLevel"] = 80,
-				["instanceName"] = "Ulduar",
-				["timestamp"] = 1676457127,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["minLevel"] = 80,
-			},
-			["Galactic-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3410,
-				["msg"] = "LFM VOA Hunter-Lock",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-					"lfm", -- [1]
-					"voa", -- [2]
-					"hunter", -- [3]
-					"lock", -- [4]
-				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Galactic-Golemagg",
-				["instanceID"] = 624,
-				["createdat"] = 1676457446,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676457446,
-				["maxLevel"] = 80,
-				["classColor"] = "C79C6E",
 			},
 			["Qwinci-Golemagg"] = {
 				["isLFG"] = false,
@@ -11431,16 +19358,81 @@ GroupieDB = {
 				["fullName"] = "Nexus",
 				["author"] = "Qwinci-Golemagg",
 				["instanceID"] = 576,
+				["classColor"] = "FFF569",
+				["maxLevel"] = 75,
 				["createdat"] = 1676458235,
-				["minLevel"] = 70,
-				["instanceName"] = "Nexus",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 				},
+				["instanceName"] = "Nexus",
 				["timestamp"] = 1676458688,
-				["maxLevel"] = 75,
-				["classColor"] = "FFF569",
+				["minLevel"] = 70,
+			},
+			["Voide-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3370,
+				["msg"] = "LF1M DPS Ulduar 10 - at keepers",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"lf1m", -- [1]
+					"dps", -- [2]
+					"ulduar", -- [3]
+					"10", -- [4]
+					"at", -- [5]
+					"keepers", -- [6]
+				},
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Voide-Golemagg",
+				["maxLevel"] = 80,
+				["classColor"] = "C41F3B",
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["createdat"] = 1676447150,
+				["minLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676455839,
+				["instanceID"] = 603,
+			},
+			["Kuramer-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "LFM EVENT BOSS KILL 5X NEED BOOMIE",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"event", -- [2]
+					"boss", -- [3]
+					"kill", -- [4]
+					"5x", -- [5]
+					"need", -- [6]
+					"boomie", -- [7]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Kuramer-Golemagg",
+				["classColor"] = "FFFFFF",
+				["instanceID"] = -1,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676456206,
+				["createdat"] = 1676456019,
 			},
 			["Bläze-Golemagg"] = {
 				["isLFG"] = true,
@@ -11455,16 +19447,54 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Bläze-Golemagg",
-				["classColor"] = "40c7eb",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 431,
+				["classColor"] = "40c7eb",
+				["minLevel"] = 80,
+				["createdat"] = 1676454442,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454442,
+				["instanceID"] = 624,
+			},
+			["Reavva-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3330,
+				["msg"] = "LFM NAXX 10 full run 3sr ms os /w me Nothing hr 1tank+1heal",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "NAX.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"naxx", -- [2]
+					"10", -- [3]
+					"full", -- [4]
+					"run", -- [5]
+					"3sr", -- [6]
+					"msos", -- [7]
+					"w", -- [8]
+					"me", -- [9]
+					"nothing", -- [10]
+					"hr", -- [11]
+					"1tank", -- [12]
+					"1heal", -- [13]
+				},
+				["fullName"] = "Naxxramas - 10",
+				["author"] = "Reavva-Golemagg",
+				["instanceID"] = 533,
+				["classColor"] = "C79C6E",
 				["maxLevel"] = 80,
+				["createdat"] = 1676458058,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+				},
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676459146,
+				["minLevel"] = 80,
 			},
 			["Chabat-Golemagg"] = {
 				["isLFG"] = true,
@@ -11480,15 +19510,15 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Chabat-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "8787ed",
-				["createdat"] = 1676451575,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676451575,
+				["resultID"] = 228,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452072,
-				["resultID"] = 228,
-				["instanceID"] = 624,
+				["classColor"] = "8787ed",
 			},
 			["Sinofrogue-Golemagg"] = {
 				["isLFG"] = true,
@@ -11503,20 +19533,20 @@ GroupieDB = {
 				},
 				["fullName"] = "Uldaman",
 				["author"] = "Sinofrogue-Golemagg",
-				["instanceName"] = "Uldaman",
-				["instanceID"] = 70,
-				["minLevel"] = 36,
-				["resultID"] = 830,
 				["maxLevel"] = 44,
+				["resultID"] = 195,
+				["classColor"] = "fff569",
+				["minLevel"] = 36,
+				["createdat"] = 1676482120,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["timestamp"] = 1676458828,
-				["createdat"] = 1676458452,
-				["classColor"] = "fff569",
+				["instanceName"] = "Uldaman",
+				["timestamp"] = 1676483837,
+				["instanceID"] = 70,
 			},
 			["Negokako-Golemagg"] = {
 				["isLFG"] = false,
@@ -11544,9 +19574,10 @@ GroupieDB = {
 				},
 				["fullName"] = "Naxxramas - 25",
 				["author"] = "Negokako-Golemagg",
-				["classColor"] = "69CCF0",
 				["isLFM"] = true,
-				["minLevel"] = 80,
+				["classColor"] = "69CCF0",
+				["instanceName"] = "Naxxramas",
+				["createdat"] = 1676457359,
 				["instanceID"] = 533,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -11555,8 +19586,7 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676458429,
-				["instanceName"] = "Naxxramas",
-				["createdat"] = 1676457359,
+				["minLevel"] = 80,
 			},
 			["Fiveo-Golemagg"] = {
 				["isLFG"] = true,
@@ -11572,169 +19602,190 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Fiveo-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "abd473",
-				["createdat"] = 1676451384,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676451384,
+				["resultID"] = 305,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452072,
-				["resultID"] = 305,
-				["instanceID"] = 624,
+				["classColor"] = "abd473",
 			},
-			["Delgaer-Golemagg"] = {
+			["Casketcase-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = 3410,
-				["msg"] = "{diamond} LFM VoA 25 {diamond} Need Hunter, Enh/Ele Shaman, Hpriest! Going as 15-18 people. Geared grp fast run! GOING NOW ",
-				["groupSize"] = 25,
+				["order"] = 3320,
+				["msg"] = "mage lf VoA 10 classrun",
+				["groupSize"] = 10,
 				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "MS > OS",
 				["icon"] = "VOA.tga",
 				["words"] = {
-					"diamond", -- [1]
-					"lfm", -- [2]
+					"mage", -- [1]
+					"lf", -- [2]
 					"voa", -- [3]
-					"25", -- [4]
-					"need", -- [5]
-					"hunter", -- [6]
-					"enh", -- [7]
-					"ele", -- [8]
-					"shaman", -- [9]
-					"hpriest", -- [10]
-					"going", -- [11]
-					"as", -- [12]
-					"15", -- [13]
-					"18", -- [14]
-					"people", -- [15]
-					"geared", -- [16]
-					"grp", -- [17]
-					"fast", -- [18]
-					"run", -- [19]
-					"now", -- [20]
+					"10", -- [4]
+					"classrun", -- [5]
 				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Delgaer-Golemagg",
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Casketcase-Golemagg",
+				["classColor"] = "69CCF0",
 				["instanceID"] = 624,
-				["classColor"] = "C41F3B",
-				["createdat"] = 1676459016,
-				["maxLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["timestamp"] = 1676459081,
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676452660,
+				["createdat"] = 1676451547,
 			},
-			["Voide-Golemagg"] = {
+			["Restrobrk-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = 3370,
-				["msg"] = "LF1M DPS Ulduar 10 - at keepers",
-				["groupSize"] = 10,
+				["order"] = 2140,
+				["msg"] = "Guilda \"Pýcha národa\" hledá nové  členy do svých řad, hledáme: enha shaman a ranged/spell dmg, raid time:25 man Neděle 18:30, 10 man 3 skupiny St, Čt a So. Loot system: EPGP, guild DC. /w me",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "SV.tga",
+				["words"] = {
+					"guilda", -- [1]
+					"p", -- [2]
+					"cha", -- [3]
+					"n", -- [4]
+					"roda", -- [5]
+					"hled", -- [6]
+					"nov", -- [7]
+					"leny", -- [8]
+					"do", -- [9]
+					"sv", -- [10]
+					"ch", -- [11]
+					"ad", -- [12]
+					"me", -- [13]
+					"enha", -- [14]
+					"shaman", -- [15]
+					"a", -- [16]
+					"ranged", -- [17]
+					"spell", -- [18]
+					"dmg", -- [19]
+					"raid", -- [20]
+					"time", -- [21]
+					"25", -- [22]
+					"man", -- [23]
+					"ned", -- [24]
+					"le", -- [25]
+					"18", -- [26]
+					"30", -- [27]
+					"10", -- [28]
+					"3", -- [29]
+					"skupiny", -- [30]
+					"st", -- [31]
+					"t", -- [32]
+					"so", -- [33]
+					"loot", -- [34]
+					"system", -- [35]
+					"epgp", -- [36]
+					"guild", -- [37]
+					"dc", -- [38]
+					"w", -- [39]
+				},
+				["fullName"] = "Steamvault",
+				["author"] = "Restrobrk-Golemagg",
+				["instanceID"] = 545,
+				["classColor"] = "FF7D0A",
+				["maxLevel"] = 72,
+				["minLevel"] = 69,
+				["instanceName"] = "Steamvault",
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["timestamp"] = 1676490996,
+				["createdat"] = 1676483741,
+			},
+			["Healmé-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3010,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Nexus",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "NEX.tga",
+				["words"] = {
+				},
+				["fullName"] = "Nexus",
+				["author"] = "Healmé-Golemagg",
+				["classColor"] = "ffffff",
+				["minLevel"] = 70,
+				["instanceID"] = 576,
+				["createdat"] = 1676482367,
+				["resultID"] = 173,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Nexus",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 75,
+			},
+			["Tsylt-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "LFM Ulduar 25 - Thorim, 1 light HM. Orbs+Frag HR. 3SR>MS>OS. I'll check your logs! Dont bother whispering without experience. Full run!",
+				["groupSize"] = 25,
 				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "MS > OS",
 				["icon"] = "ULD.tga",
 				["words"] = {
-					"lf1m", -- [1]
-					"dps", -- [2]
-					"ulduar", -- [3]
-					"10", -- [4]
-					"at", -- [5]
-					"keepers", -- [6]
+					"lfm", -- [1]
+					"ulduar", -- [2]
+					"25", -- [3]
+					"thorim", -- [4]
+					"1", -- [5]
+					"light", -- [6]
+					"hm", -- [7]
+					"orbs", -- [8]
+					"frag", -- [9]
+					"hr", -- [10]
+					"3sr", -- [11]
+					"msos", -- [12]
+					"i", -- [13]
+					"ll", -- [14]
+					"check", -- [15]
+					"your", -- [16]
+					"logs", -- [17]
+					"dont", -- [18]
+					"bother", -- [19]
+					"whispering", -- [20]
+					"without", -- [21]
+					"experience", -- [22]
+					"full", -- [23]
+					"run", -- [24]
 				},
-				["fullName"] = "Ulduar - 10",
-				["author"] = "Voide-Golemagg",
-				["classColor"] = "C41F3B",
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Tsylt-Golemagg",
 				["instanceID"] = 603,
-				["createdat"] = 1676447150,
+				["classColor"] = "FFFFFF",
+				["maxLevel"] = 80,
 				["minLevel"] = 80,
 				["instanceName"] = "Ulduar",
-				["timestamp"] = 1676455839,
-				["rolesNeeded"] = {
-					3, -- [1]
-					4, -- [2]
-				},
-				["maxLevel"] = 80,
-			},
-			["Eaine-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = -1,
-				["msg"] = "WTS |cffffd000|Henchant:56005|h[Tailoring: Glacial Bag]|h|r CD",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "Other.tga",
-				["words"] = {
-					"wts", -- [1]
-					"henchant", -- [2]
-					"56005", -- [3]
-					"h", -- [4]
-					"tailoring", -- [5]
-					"glacial", -- [6]
-					"bag", -- [7]
-					"cd", -- [8]
-				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Eaine-Golemagg",
-				["instanceID"] = -1,
-				["classColor"] = "69CCF0",
-				["createdat"] = 1676455424,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676455424,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["minLevel"] = 0,
-			},
-			["Skamyna-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = -1,
-				["msg"] = "LFM dk tank / rest shammys / feral/boomie druids LST SPOT Woa25 class run pm me your spec",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "Other.tga",
-				["words"] = {
-					"lfm", -- [1]
-					"dk", -- [2]
-					"tank", -- [3]
-					"rest", -- [4]
-					"shammys", -- [5]
-					"feral", -- [6]
-					"boomie", -- [7]
-					"druids", -- [8]
-					"lst", -- [9]
-					"spot", -- [10]
-					"woa25", -- [11]
-					"class", -- [12]
-					"run", -- [13]
-					"pm", -- [14]
-					"me", -- [15]
-					"your", -- [16]
-					"spec", -- [17]
-				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Skamyna-Golemagg",
-				["instanceID"] = -1,
-				["classColor"] = "F58CBA",
-				["createdat"] = 1676458952,
-				["maxLevel"] = 1000,
-				["rolesNeeded"] = {
-					1, -- [1]
-				},
-				["timestamp"] = 1676459137,
-				["minLevel"] = 0,
-				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676483852,
+				["createdat"] = 1676483510,
 			},
 			["Marwx-Golemagg"] = {
 				["isLFG"] = false,
@@ -11765,18 +19816,44 @@ GroupieDB = {
 				},
 				["fullName"] = "Eye of Eternity - 10",
 				["author"] = "Marwx-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "F58CBA",
-				["instanceID"] = 616,
-				["createdat"] = 1676454140,
-				["minLevel"] = 80,
-				["instanceName"] = "Eye of Eternity",
-				["timestamp"] = 1676459127,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 					2, -- [3]
 				},
-				["maxLevel"] = 80,
+				["createdat"] = 1676454140,
+				["minLevel"] = 80,
+				["instanceName"] = "Eye of Eternity",
+				["timestamp"] = 1676459127,
+				["instanceID"] = 616,
+			},
+			["Szalya-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 1040,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Blackfathom Deeps | Need 3 DPS",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "BFD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Blackfathom Deeps",
+				["author"] = "Szalya-Golemagg",
+				["instanceID"] = 48,
+				["maxLevel"] = 28,
+				["classColor"] = "ffffff",
+				["minLevel"] = 20,
+				["resultID"] = 151,
+				["instanceName"] = "Blackfathom Deeps",
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["timestamp"] = 1676483851,
+				["createdat"] = 1676483694,
 			},
 			["Afflinity-Golemagg"] = {
 				["isLFG"] = true,
@@ -11791,16 +19868,44 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Afflinity-Golemagg",
-				["classColor"] = "8787ed",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 420,
+				["classColor"] = "8787ed",
+				["minLevel"] = 80,
+				["createdat"] = 1676454230,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454230,
+				["instanceID"] = 624,
+			},
+			["Arterie-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Arterie-Golemagg",
 				["maxLevel"] = 80,
+				["resultID"] = 764,
+				["classColor"] = "c41f3b",
+				["minLevel"] = 80,
+				["createdat"] = 1676458096,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676458818,
+				["instanceID"] = 601,
 			},
 			["Drchandler-Golemagg"] = {
 				["isLFG"] = false,
@@ -11822,12 +19927,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Drchandler-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "FF7D0A",
-				["createdat"] = 1676456015,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676456015,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -11835,6 +19936,60 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676456015,
+				["createdat"] = 1676456015,
+			},
+			["Thereaperr-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "WTS |cffa335ee|Hitem:45558::::::::80::::1:3524:::::|h[Cord of the White Dawn]|h|r+|cffa335ee|Hitem:45557::::::::80::::1:3524:::::|h[Sash of Ancient Power]|h|r+|cffa335ee|Hitem:45566::::::::80::::1:3524:::::|h[Spellslinger's Slippers]|h|r-PM Your Offer",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"wts", -- [1]
+					"hitem", -- [2]
+					"45558", -- [3]
+					"80", -- [4]
+					"1", -- [5]
+					"3524", -- [6]
+					"h", -- [7]
+					"cord", -- [8]
+					"of", -- [9]
+					"the", -- [10]
+					"white", -- [11]
+					"dawn", -- [12]
+					"45557", -- [13]
+					"sash", -- [14]
+					"ancient", -- [15]
+					"power", -- [16]
+					"45566", -- [17]
+					"spellslinger", -- [18]
+					"s", -- [19]
+					"slippers", -- [20]
+					"pm", -- [21]
+					"your", -- [22]
+					"offer", -- [23]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Thereaperr-Golemagg",
+				["classColor"] = "FFFFFF",
+				["instanceID"] = -1,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676458748,
+				["createdat"] = 1676454505,
 			},
 			["Jetamfreez-Golemagg"] = {
 				["isLFG"] = false,
@@ -11860,9 +20015,10 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Jetamfreez-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "C41F3B",
-				["minLevel"] = 80,
+				["instanceID"] = 624,
+				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676450128,
 				["maxLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -11871,8 +20027,7 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676450277,
-				["instanceName"] = "Vault of Archavon",
-				["createdat"] = 1676450128,
+				["minLevel"] = 80,
 			},
 			["Smørhullet-Golemagg"] = {
 				["isLFG"] = true,
@@ -11887,16 +20042,49 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Smørhullet-Golemagg",
-				["classColor"] = "8787ed",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 481,
+				["classColor"] = "8787ed",
+				["minLevel"] = 80,
+				["createdat"] = 1676453285,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676453285,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
+			},
+			["Onepophealin-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3000,
+				["msg"] = "LF Warr/pala/DK to tank UK (Dung cleave)",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "UK.tga",
+				["words"] = {
+					"lf", -- [1]
+					"warr", -- [2]
+					"pala", -- [3]
+					"dk", -- [4]
+					"to", -- [5]
+					"tank", -- [6]
+					"uk", -- [7]
+					"dung", -- [8]
+					"cleave", -- [9]
+				},
+				["fullName"] = "Utgarde Keep",
+				["author"] = "Onepophealin-Golemagg",
+				["maxLevel"] = 75,
+				["classColor"] = "FF7D0A",
+				["rolesNeeded"] = {
+					1, -- [1]
+				},
+				["createdat"] = 1676449409,
+				["minLevel"] = 68,
+				["instanceName"] = "Utgarde Keep",
+				["timestamp"] = 1676454350,
+				["instanceID"] = 574,
 			},
 			["Lcyatogami-Golemagg"] = {
 				["isLFG"] = true,
@@ -11911,20 +20099,60 @@ GroupieDB = {
 				},
 				["fullName"] = "Gnomeregan",
 				["author"] = "Lcyatogami-Golemagg",
-				["instanceID"] = 90,
-				["classColor"] = "0070de",
-				["createdat"] = 1676456962,
+				["maxLevel"] = 32,
 				["minLevel"] = 24,
+				["instanceID"] = 90,
+				["createdat"] = 1676456962,
+				["resultID"] = 832,
+				["instanceName"] = "Gnomeregan",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Gnomeregan",
 				["timestamp"] = 1676458828,
-				["resultID"] = 832,
-				["maxLevel"] = 32,
+				["classColor"] = "0070de",
+			},
+			["Farrelein-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "LFM for holiday event boss, mount HR, paying 5k to everyone if drops, heal last spot",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"for", -- [2]
+					"holiday", -- [3]
+					"event", -- [4]
+					"boss", -- [5]
+					"mount", -- [6]
+					"hr", -- [7]
+					"paying", -- [8]
+					"5k", -- [9]
+					"to", -- [10]
+					"everyone", -- [11]
+					"if", -- [12]
+					"drops", -- [13]
+					"heal", -- [14]
+					"last", -- [15]
+					"spot", -- [16]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Farrelein-Golemagg",
+				["maxLevel"] = 1000,
+				["instanceID"] = -1,
+				["rolesNeeded"] = {
+					2, -- [1]
+				},
+				["minLevel"] = 0,
+				["classColor"] = "69CCF0",
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676456962,
+				["createdat"] = 1676452884,
 			},
 			["Henrý-Golemagg"] = {
 				["isLFG"] = false,
@@ -11939,18 +20167,133 @@ GroupieDB = {
 				},
 				["fullName"] = "Zul'Farrak",
 				["author"] = "Henrý-Golemagg",
-				["instanceID"] = 209,
-				["classColor"] = "f58cba",
-				["createdat"] = 1676457332,
+				["maxLevel"] = 50,
 				["minLevel"] = 42,
+				["instanceID"] = 209,
+				["createdat"] = 1676457332,
+				["resultID"] = 822,
+				["instanceName"] = "Zul'Farrak",
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
-				["instanceName"] = "Zul'Farrak",
 				["timestamp"] = 1676458828,
-				["resultID"] = 822,
-				["maxLevel"] = 50,
+				["classColor"] = "f58cba",
+			},
+			["Docktorcrazy-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3160,
+				["msg"] = "VH H+ need Healer",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VH.tga",
+				["words"] = {
+					"vh", -- [1]
+					"h", -- [2]
+					"need", -- [3]
+					"healer", -- [4]
+				},
+				["fullName"] = "Heroic Violet Hold",
+				["author"] = "Docktorcrazy-Golemagg",
+				["maxLevel"] = 80,
+				["instanceID"] = 608,
+				["rolesNeeded"] = {
+					2, -- [1]
+				},
+				["minLevel"] = 80,
+				["createdat"] = 1676447886,
+				["instanceName"] = "Violet Hold",
+				["timestamp"] = 1676447985,
+				["classColor"] = "F58CBA",
+			},
+			["Prazravec-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3320,
+				["msg"] = "shaman heal/ele 4k2+ gs LFG VoA 10",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"shaman", -- [1]
+					"heal", -- [2]
+					"ele", -- [3]
+					"4k2", -- [4]
+					"gs", -- [5]
+					"lfg", -- [6]
+					"voa", -- [7]
+					"10", -- [8]
+				},
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Prazravec-Golemagg",
+				["classColor"] = "0070DE",
+				["instanceID"] = 624,
+				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676457559,
+				["maxLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676457559,
+				["minLevel"] = 80,
+			},
+			["Yebashu-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1000,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ragefire Chasm",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "RFC.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ragefire Chasm",
+				["author"] = "Yebashu-Golemagg",
+				["classColor"] = "abd473",
+				["minLevel"] = 13,
+				["instanceID"] = 389,
+				["createdat"] = 1676482680,
+				["resultID"] = 158,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Ragefire Chasm",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 20,
+			},
+			["Swissmiss-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3340,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Obsidian Sanctum 10",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "OS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Obsidian Sanctum - 10",
+				["author"] = "Swissmiss-Golemagg",
+				["instanceID"] = 615,
+				["createdat"] = 1676489752,
+				["classColor"] = "40c7eb",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Obsidian Sanctum",
+				["timestamp"] = 1676490287,
+				["resultID"] = 104,
 			},
 			["Skuffelsen-Golemagg"] = {
 				["isLFG"] = true,
@@ -11966,135 +20309,152 @@ GroupieDB = {
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Skuffelsen-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "8787ed",
-				["createdat"] = 1676452895,
 				["minLevel"] = 80,
-				["instanceName"] = "Ulduar",
-				["rolesNeeded"] = {
-				},
-				["timestamp"] = 1676454444,
-				["resultID"] = 449,
 				["instanceID"] = 603,
-			},
-			["Brainles-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3310,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
-				["groupSize"] = 5,
-				["isHeroic"] = true,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "AN.tga",
-				["words"] = {
-				},
-				["fullName"] = "Heroic Azjol-Nerub",
-				["author"] = "Brainles-Golemagg",
-				["resultID"] = 790,
-				["instanceID"] = 601,
-				["classColor"] = "f58cba",
-				["createdat"] = 1676458647,
-				["maxLevel"] = 80,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676458818,
-				["minLevel"] = 80,
-				["instanceName"] = "Azjol-Nerub",
-			},
-			["Werto-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 1000,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ragefire Chasm",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "RFC.tga",
-				["words"] = {
-				},
-				["fullName"] = "Ragefire Chasm",
-				["author"] = "Werto-Golemagg",
-				["resultID"] = 823,
-				["instanceID"] = 389,
-				["classColor"] = "fff569",
-				["createdat"] = 1676458688,
-				["maxLevel"] = 20,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676458828,
-				["minLevel"] = 13,
-				["instanceName"] = "Ragefire Chasm",
-			},
-			["Shermie-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3330,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Naxxramas 10",
-				["groupSize"] = 10,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "NAX.tga",
-				["words"] = {
-				},
-				["fullName"] = "Naxxramas - 10",
-				["author"] = "Shermie-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "c41f3b",
-				["createdat"] = 1676453963,
-				["minLevel"] = 80,
-				["instanceName"] = "Naxxramas",
+				["createdat"] = 1676452895,
+				["resultID"] = 449,
 				["rolesNeeded"] = {
 				},
-				["timestamp"] = 1676454462,
-				["resultID"] = 509,
-				["instanceID"] = 533,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676454444,
+				["classColor"] = "8787ed",
 			},
-			["Arismania-Golemagg"] = {
+			["Mustachepala-Golemagg"] = {
 				["isLFG"] = false,
 				["order"] = -1,
-				["msg"] = "WTS |cff0070dd|Hitem:44936::::::::80::::1:3524:::::|h[Titanium Plating]|h|r 5G cheaper than AH",
+				["msg"] = "LFM 1 TANK DAILY HC+",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "Other",
 				["icon"] = "Other.tga",
 				["words"] = {
-					"wts", -- [1]
-					"hitem", -- [2]
-					"44936", -- [3]
-					"80", -- [4]
-					"1", -- [5]
-					"3524", -- [6]
-					"h", -- [7]
-					"titanium", -- [8]
-					"plating", -- [9]
-					"5g", -- [10]
-					"cheaper", -- [11]
-					"than", -- [12]
-					"ah", -- [13]
+					"lfm", -- [1]
+					"1", -- [2]
+					"tank", -- [3]
+					"daily", -- [4]
+					"hc", -- [5]
 				},
 				["fullName"] = "Miscellaneous",
-				["author"] = "Arismania-Golemagg",
-				["instanceID"] = -1,
-				["classColor"] = "C79C6E",
-				["createdat"] = 1676458795,
+				["author"] = "Mustachepala-Golemagg",
 				["maxLevel"] = 1000,
+				["classColor"] = "F58CBA",
+				["rolesNeeded"] = {
+					1, -- [1]
+				},
+				["createdat"] = 1676453331,
+				["minLevel"] = 0,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676453331,
+				["instanceID"] = -1,
+			},
+			["Veknelash-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 2380,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Mount Hyjal 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "MH.tga",
+				["words"] = {
+				},
+				["fullName"] = "Mount Hyjal",
+				["author"] = "Veknelash-Golemagg",
+				["maxLevel"] = 79,
+				["resultID"] = 403,
+				["classColor"] = "f58cba",
+				["minLevel"] = 70,
+				["createdat"] = 1676454004,
+				["instanceName"] = "Mount Hyjal",
+				["rolesNeeded"] = {
+				},
+				["timestamp"] = 1676454444,
+				["instanceID"] = 534,
+			},
+			["Kirmizi-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3040,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Drak'Tharon Keep",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "DTK.tga",
+				["words"] = {
+				},
+				["fullName"] = "Drak'Tharon Keep",
+				["author"] = "Kirmizi-Golemagg",
+				["classColor"] = "ffffff",
+				["minLevel"] = 72,
+				["instanceID"] = 600,
+				["createdat"] = 1676483414,
+				["resultID"] = 174,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["timestamp"] = 1676458936,
-				["minLevel"] = 0,
-				["instanceName"] = "Miscellaneous",
+				["instanceName"] = "Drak'Tharon Keep",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 78,
+			},
+			["Solvard-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1110,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Razorfen Downs",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "RFD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Razorfen Downs",
+				["author"] = "Solvard-Golemagg",
+				["instanceID"] = 129,
+				["createdat"] = 1676489679,
+				["classColor"] = "f58cba",
+				["maxLevel"] = 41,
+				["minLevel"] = 33,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Razorfen Downs",
+				["timestamp"] = 1676490825,
+				["resultID"] = 339,
+			},
+			["Niewyruchany-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3110,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Culling of Stratholme",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "COS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Culling of Stratholme",
+				["author"] = "Niewyruchany-Golemagg",
+				["classColor"] = "0070de",
+				["minLevel"] = 78,
+				["instanceID"] = 595,
+				["maxLevel"] = 80,
+				["resultID"] = 362,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Culling of Stratholme",
+				["timestamp"] = 1676490825,
+				["createdat"] = 1676490304,
 			},
 			["Mjukiz-Golemagg"] = {
 				["isLFG"] = true,
@@ -12109,19 +20469,71 @@ GroupieDB = {
 				},
 				["fullName"] = "The Crown Chemical Co.",
 				["author"] = "Mjukiz-Golemagg",
-				["resultID"] = 785,
-				["instanceID"] = 33,
-				["classColor"] = "ffffff",
-				["createdat"] = 1676458764,
 				["maxLevel"] = 80,
+				["createdat"] = 1676458764,
+				["instanceID"] = 33,
+				["resultID"] = 785,
+				["minLevel"] = 78,
+				["instanceName"] = "The Crown Chemical Co.",
 				["rolesNeeded"] = {
 					1, -- [1]
 					3, -- [2]
 					4, -- [3]
 				},
 				["timestamp"] = 1676458818,
-				["minLevel"] = 78,
-				["instanceName"] = "The Crown Chemical Co.",
+				["classColor"] = "ffffff",
+			},
+			["Andjeous-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3010,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Nexus",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "NEX.tga",
+				["words"] = {
+				},
+				["fullName"] = "Nexus",
+				["author"] = "Andjeous-Golemagg",
+				["maxLevel"] = 75,
+				["resultID"] = 371,
+				["classColor"] = "fff569",
+				["minLevel"] = 70,
+				["createdat"] = 1676451748,
+				["instanceName"] = "Nexus",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676452720,
+				["instanceID"] = 576,
+			},
+			["Amberdepp-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Vault of Archavon 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Amberdepp-Golemagg",
+				["maxLevel"] = 80,
+				["resultID"] = 421,
+				["classColor"] = "f58cba",
+				["minLevel"] = 80,
+				["createdat"] = 1676454177,
+				["instanceName"] = "Vault of Archavon",
+				["rolesNeeded"] = {
+				},
+				["timestamp"] = 1676454444,
+				["instanceID"] = 624,
 			},
 			["Titanstella-Golemagg"] = {
 				["isLFG"] = false,
@@ -12136,18 +20548,18 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Old Kingdom",
 				["author"] = "Titanstella-Golemagg",
-				["instanceName"] = "Old Kingdom",
-				["instanceID"] = 619,
-				["minLevel"] = 80,
-				["resultID"] = 784,
 				["maxLevel"] = 80,
+				["resultID"] = 784,
+				["classColor"] = "c79c6e",
+				["minLevel"] = 80,
+				["createdat"] = 1676458493,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
+				["instanceName"] = "Old Kingdom",
 				["timestamp"] = 1676458821,
-				["createdat"] = 1676458493,
-				["classColor"] = "c79c6e",
+				["instanceID"] = 619,
 			},
 			["Darobear-Golemagg"] = {
 				["isLFG"] = true,
@@ -12162,16 +20574,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 10",
 				["author"] = "Darobear-Golemagg",
-				["classColor"] = "ff7d0a",
-				["instanceID"] = 603,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 427,
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 80,
+				["createdat"] = 1676453107,
+				["instanceName"] = "Ulduar",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Ulduar",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676453107,
-				["maxLevel"] = 80,
+				["instanceID"] = 603,
 			},
 			["Leroro-Golemagg"] = {
 				["isLFG"] = false,
@@ -12196,12 +20608,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Leroro-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "FFFFFF",
-				["createdat"] = 1676452942,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676452942,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -12209,6 +20617,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676452942,
+				["createdat"] = 1676452942,
 			},
 			["Oatmealz-Golemagg"] = {
 				["isLFG"] = true,
@@ -12223,20 +20635,48 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Culling of Stratholme",
 				["author"] = "Oatmealz-Golemagg",
-				["classColor"] = "ff7d0a",
-				["instanceID"] = 595,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 357,
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 80,
+				["createdat"] = 1676450065,
+				["instanceName"] = "Culling of Stratholme",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Culling of Stratholme",
 				["timestamp"] = 1676452943,
-				["createdat"] = 1676450065,
+				["instanceID"] = 595,
+			},
+			["Hellacar-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Hellacar-Golemagg",
+				["instanceID"] = 601,
+				["createdat"] = 1676489986,
+				["classColor"] = "fff569",
 				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676490825,
+				["resultID"] = 338,
 			},
 			["Tankangle-Golemagg"] = {
 				["isLFG"] = false,
@@ -12266,12 +20706,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Tankangle-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "C79C6E",
-				["createdat"] = 1676454511,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676454716,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -12279,6 +20715,34 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676454716,
+				["createdat"] = 1676454511,
+			},
+			["Chapslock-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3460,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ulduar 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Chapslock-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676489980,
+				["classColor"] = "8787ed",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490288,
+				["resultID"] = 165,
 			},
 			["Heddings-Golemagg"] = {
 				["isLFG"] = false,
@@ -12301,17 +20765,17 @@ GroupieDB = {
 				},
 				["fullName"] = "Naxxramas - 10",
 				["author"] = "Heddings-Golemagg",
-				["classColor"] = "F58CBA",
 				["isLFM"] = true,
-				["minLevel"] = 80,
+				["classColor"] = "F58CBA",
+				["instanceName"] = "Naxxramas",
+				["createdat"] = 1676454664,
 				["instanceID"] = 533,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
 				["timestamp"] = 1676455615,
-				["instanceName"] = "Naxxramas",
-				["createdat"] = 1676454664,
+				["minLevel"] = 80,
 			},
 			["Divinator-Golemagg"] = {
 				["isLFG"] = false,
@@ -12330,12 +20794,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Divinator-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "FFFFFF",
-				["createdat"] = 1676452827,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454627,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -12343,29 +20803,149 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676454627,
+				["createdat"] = 1676452827,
 			},
-			["Veinslasher-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
+			["Epicfurry-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "{Circle} LFM Ulduar 25 {Circle} starting 20:00 ST. LF3M. 1 Holy Pala. 1 Hunter and 1 DemoLock. 3 SR MS > OS.  Fragment/Orbs HR.",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
-				["isLFM"] = false,
+				["isLFM"] = true,
 				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["icon"] = "ULD.tga",
 				["words"] = {
+					"circle", -- [1]
+					"lfm", -- [2]
+					"ulduar", -- [3]
+					"25", -- [4]
+					"starting", -- [5]
+					"20", -- [6]
+					"00", -- [7]
+					"st", -- [8]
+					"lf3m", -- [9]
+					"1", -- [10]
+					"holy", -- [11]
+					"pala", -- [12]
+					"hunter", -- [13]
+					"and", -- [14]
+					"demolock", -- [15]
+					"3", -- [16]
+					"sr", -- [17]
+					"msos", -- [18]
+					"fragment", -- [19]
+					"orbs", -- [20]
+					"hr", -- [21]
 				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Veinslasher-Golemagg",
-				["classColor"] = "fff569",
-				["instanceID"] = 624,
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Epicfurry-Golemagg",
+				["instanceID"] = 603,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 80,
 				["minLevel"] = 80,
-				["resultID"] = 434,
+				["instanceName"] = "Ulduar",
 				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
 				},
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454444,
-				["createdat"] = 1676453699,
+				["timestamp"] = 1676483854,
+				["createdat"] = 1676483469,
+			},
+			["Lyselith-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3330,
+				["msg"] = "LFM Naxx10 Skip Run, Torch HR 1SR>MS>OS need 1 dps",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "NAX.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"naxx10", -- [2]
+					"skip", -- [3]
+					"run", -- [4]
+					"torch", -- [5]
+					"hr", -- [6]
+					"1sr", -- [7]
+					"msos", -- [8]
+					"need", -- [9]
+					"1", -- [10]
+					"dps", -- [11]
+				},
+				["fullName"] = "Naxxramas - 10",
+				["author"] = "Lyselith-Golemagg",
+				["instanceID"] = 533,
+				["classColor"] = "FFFFFF",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Naxxramas",
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["timestamp"] = 1676453357,
+				["createdat"] = 1676451846,
+			},
+			["Veinslasher-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3090,
+				["msg"] = "<smuts> rekryterar ranged DPS och healers till Ulduar! Raidtider: Tors > Sön och mån 19.00 till 22.00. Lootsystem = DKP. 9/10HM 10m - 3/10HM 25m /w för mer info",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "OC.tga",
+				["words"] = {
+					"smuts", -- [1]
+					"rekryterar", -- [2]
+					"ranged", -- [3]
+					"dps", -- [4]
+					"och", -- [5]
+					"healers", -- [6]
+					"till", -- [7]
+					"ulduar", -- [8]
+					"raidtider", -- [9]
+					"tors", -- [10]
+					"s", -- [11]
+					"n", -- [12]
+					"m", -- [13]
+					"19", -- [14]
+					"00", -- [15]
+					"22", -- [16]
+					"lootsystem", -- [17]
+					"dkp", -- [18]
+					"9", -- [19]
+					"10hm", -- [20]
+					"10m", -- [21]
+					"3", -- [22]
+					"25m", -- [23]
+					"w", -- [24]
+					"f", -- [25]
+					"r", -- [26]
+					"mer", -- [27]
+					"info", -- [28]
+				},
+				["fullName"] = "Oculus",
+				["author"] = "Veinslasher-Golemagg",
+				["classColor"] = "FFF569",
+				["instanceID"] = 578,
+				["instanceName"] = "Oculus",
+				["createdat"] = 1676490578,
+				["minLevel"] = 78,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+					3, -- [3]
+					4, -- [4]
+					2, -- [5]
+				},
+				["timestamp"] = 1676490684,
 				["maxLevel"] = 80,
 			},
 			["Jaysbandit-Golemagg"] = {
@@ -12385,17 +20965,17 @@ GroupieDB = {
 				},
 				["fullName"] = "Gundrak",
 				["author"] = "Jaysbandit-Golemagg",
-				["instanceID"] = 604,
 				["classColor"] = "FFF569",
-				["createdat"] = 1676453724,
-				["maxLevel"] = 80,
-				["instanceName"] = "Gundrak",
-				["timestamp"] = 1676453724,
+				["instanceID"] = 604,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
 				["minLevel"] = 76,
+				["maxLevel"] = 80,
+				["instanceName"] = "Gundrak",
+				["timestamp"] = 1676453724,
+				["createdat"] = 1676453724,
 			},
 			["Inonebreath-Golemagg"] = {
 				["isLFG"] = false,
@@ -12431,17 +21011,72 @@ GroupieDB = {
 				},
 				["fullName"] = "Naxxramas - 10",
 				["author"] = "Inonebreath-Golemagg",
+				["isLFM"] = true,
 				["classColor"] = "69CCF0",
+				["instanceID"] = 533,
 				["createdat"] = 1676451857,
-				["minLevel"] = 80,
-				["instanceName"] = "Naxxramas",
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
+				["instanceName"] = "Naxxramas",
 				["timestamp"] = 1676452831,
-				["instanceID"] = 533,
-				["isLFM"] = true,
+				["minLevel"] = 80,
+			},
+			["Narjhan-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1010,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Wailing Caverns",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "WC.tga",
+				["words"] = {
+				},
+				["fullName"] = "Wailing Caverns",
+				["author"] = "Narjhan-Golemagg",
+				["maxLevel"] = 24,
+				["resultID"] = 820,
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 16,
+				["createdat"] = 1676458182,
+				["rolesNeeded"] = {
+					1, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["instanceName"] = "Wailing Caverns",
+				["timestamp"] = 1676458828,
+				["instanceID"] = 43,
+			},
+			["Amorino-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Amorino-Golemagg",
+				["maxLevel"] = 80,
+				["minLevel"] = 78,
+				["classColor"] = "ffffff",
+				["createdat"] = 1676446353,
+				["resultID"] = 4,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "The Crown Chemical Co.",
+				["timestamp"] = 1676446944,
+				["instanceID"] = 33,
 			},
 			["Dexey-Golemagg"] = {
 				["isLFG"] = false,
@@ -12456,18 +21091,45 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Dexey-Golemagg",
-				["resultID"] = 755,
-				["instanceID"] = 601,
-				["classColor"] = "c79c6e",
-				["createdat"] = 1676458790,
 				["maxLevel"] = 80,
+				["createdat"] = 1676458790,
+				["instanceID"] = 601,
+				["resultID"] = 755,
+				["minLevel"] = 80,
+				["instanceName"] = "Azjol-Nerub",
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
 				["timestamp"] = 1676458818,
+				["classColor"] = "c79c6e",
+			},
+			["Retadins-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Retadins-Golemagg",
+				["classColor"] = "f58cba",
 				["minLevel"] = 80,
+				["instanceID"] = 601,
+				["createdat"] = 1676483466,
+				["resultID"] = 26,
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
 				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676483477,
+				["maxLevel"] = 80,
 			},
 			["Pelastik-Golemagg"] = {
 				["isLFG"] = false,
@@ -12489,46 +21151,171 @@ GroupieDB = {
 				},
 				["fullName"] = "Azjol-Nerub",
 				["author"] = "Pelastik-Golemagg",
-				["instanceID"] = 601,
 				["classColor"] = "FFF569",
-				["createdat"] = 1676452814,
-				["maxLevel"] = 77,
-				["instanceName"] = "Azjol-Nerub",
-				["timestamp"] = 1676452849,
+				["instanceID"] = 601,
 				["rolesNeeded"] = {
 					2, -- [1]
 				},
 				["minLevel"] = 70,
+				["maxLevel"] = 77,
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676452849,
+				["createdat"] = 1676452814,
 			},
-			["Talism-Golemagg"] = {
+			["Zillon-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = 3040,
-				["msg"] = "WTB DTK BOOST ",
-				["groupSize"] = 5,
+				["order"] = 3410,
+				["msg"] = "LFM VOA 25 MAN Spec Run, need resto/feral drood, ",
+				["groupSize"] = 25,
 				["isHeroic"] = false,
 				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "DTK.tga",
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
 				["words"] = {
-					"wtb", -- [1]
-					"dtk", -- [2]
-					"boost", -- [3]
+					"lfm", -- [1]
+					"voa", -- [2]
+					"25", -- [3]
+					"man", -- [4]
+					"spec", -- [5]
+					"run", -- [6]
+					"need", -- [7]
+					"resto", -- [8]
+					"feral", -- [9]
+					"drood", -- [10]
 				},
-				["fullName"] = "Drak'Tharon Keep",
-				["author"] = "Talism-Golemagg",
-				["instanceID"] = 600,
-				["classColor"] = "69CCF0",
-				["createdat"] = 1676457135,
-				["maxLevel"] = 78,
-				["instanceName"] = "Drak'Tharon Keep",
-				["timestamp"] = 1676457135,
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Zillon-Golemagg",
+				["classColor"] = "FFFFFF",
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["minLevel"] = 72,
+				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676454480,
+				["createdat"] = 1676454222,
+			},
+			["Ldora-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3430,
+				["msg"] = "LFM Naxx/Eoe/OS+2D GDKP Start Bids 300G Split 80/20% /w me Gs&Spec&Budget Need Fresh buyer (mail&leather&cloth&Plate)",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "GDKP",
+				["icon"] = "NAX.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"naxx", -- [2]
+					"eoe", -- [3]
+					"os", -- [4]
+					"2d", -- [5]
+					"gdkp", -- [6]
+					"start", -- [7]
+					"bids", -- [8]
+					"300g", -- [9]
+					"split", -- [10]
+					"80", -- [11]
+					"20", -- [12]
+					"w", -- [13]
+					"me", -- [14]
+					"gs", -- [15]
+					"spec", -- [16]
+					"budget", -- [17]
+					"need", -- [18]
+					"fresh", -- [19]
+					"buyer", -- [20]
+					"mail", -- [21]
+					"leather", -- [22]
+					"cloth", -- [23]
+					"plate", -- [24]
+				},
+				["fullName"] = "Naxxramas - 25",
+				["author"] = "Ldora-Golemagg",
+				["instanceID"] = 533,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Naxxramas",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483820,
+				["createdat"] = 1676483556,
+			},
+			["Hokypipopu-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3430,
+				["msg"] = "NAXX SKIP Run SAT+ KT 20 Man - SR-MS-OS (TTide HR) 1xdps ",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "NAX.tga",
+				["words"] = {
+					"naxx", -- [1]
+					"skip", -- [2]
+					"run", -- [3]
+					"sat", -- [4]
+					"kt", -- [5]
+					"20", -- [6]
+					"man", -- [7]
+					"sr", -- [8]
+					"msos", -- [9]
+					"ttide", -- [10]
+					"hr", -- [11]
+					"1xdps", -- [12]
+				},
+				["fullName"] = "Naxxramas - 25",
+				["author"] = "Hokypipopu-Golemagg",
+				["maxLevel"] = 80,
+				["classColor"] = "F58CBA",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["createdat"] = 1676447110,
+				["minLevel"] = 80,
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676448784,
+				["instanceID"] = 533,
+			},
+			["Opes-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 2050,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Auchenai Crypts",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AC.tga",
+				["words"] = {
+				},
+				["fullName"] = "Auchenai Crypts",
+				["author"] = "Opes-Golemagg",
+				["instanceID"] = 558,
+				["createdat"] = 1676488534,
+				["classColor"] = "ffffff",
+				["maxLevel"] = 72,
+				["minLevel"] = 64,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Auchenai Crypts",
+				["timestamp"] = 1676490825,
+				["resultID"] = 305,
 			},
 			["Madvisionz-Golemagg"] = {
 				["isLFG"] = false,
@@ -12567,47 +21354,19 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 10",
 				["author"] = "Madvisionz-Golemagg",
+				["maxLevel"] = 80,
 				["instanceID"] = 603,
-				["classColor"] = "C41F3B",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
 				["minLevel"] = 80,
 				["createdat"] = 1676447860,
 				["instanceName"] = "Ulduar",
 				["timestamp"] = 1676449224,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["maxLevel"] = 80,
-			},
-			["Thendra-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 1030,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Shadowfang Keep",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "SFK.tga",
-				["words"] = {
-				},
-				["fullName"] = "Shadowfang Keep",
-				["author"] = "Thendra-Golemagg",
-				["instanceName"] = "Shadowfang Keep",
-				["instanceID"] = 33,
-				["minLevel"] = 17,
-				["resultID"] = 816,
-				["maxLevel"] = 25,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676458828,
-				["createdat"] = 1676458356,
-				["classColor"] = "ff7d0a",
+				["classColor"] = "C41F3B",
 			},
 			["Smrdim-Golemagg"] = {
 				["isLFG"] = false,
@@ -12622,17 +21381,89 @@ GroupieDB = {
 				},
 				["fullName"] = "Wailing Caverns",
 				["author"] = "Smrdim-Golemagg",
-				["instanceID"] = 43,
-				["classColor"] = "8787ed",
-				["createdat"] = 1676457549,
+				["maxLevel"] = 24,
 				["minLevel"] = 16,
+				["instanceID"] = 43,
+				["createdat"] = 1676457549,
+				["resultID"] = 834,
+				["instanceName"] = "Wailing Caverns",
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
-				["instanceName"] = "Wailing Caverns",
 				["timestamp"] = 1676458828,
-				["resultID"] = 834,
-				["maxLevel"] = 24,
+				["classColor"] = "8787ed",
+			},
+			["Mesmeri-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Mesmeri-Golemagg",
+				["instanceID"] = 624,
+				["createdat"] = 1676489972,
+				["classColor"] = "0070de",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490287,
+				["resultID"] = 151,
+			},
+			["Rumbeer-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Rumbeer-Golemagg",
+				["maxLevel"] = 80,
+				["resultID"] = 444,
+				["classColor"] = "8787ed",
+				["minLevel"] = 80,
+				["createdat"] = 1676454279,
+				["instanceName"] = "Vault of Archavon",
+				["rolesNeeded"] = {
+				},
+				["timestamp"] = 1676454444,
+				["instanceID"] = 624,
+			},
+			["Furyhaze-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3440,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Eye of Eternity 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "EOE.tga",
+				["words"] = {
+				},
+				["fullName"] = "Eye of Eternity - 25",
+				["author"] = "Furyhaze-Golemagg",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceID"] = 616,
+				["createdat"] = 1676451921,
+				["resultID"] = 291,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Eye of Eternity",
+				["timestamp"] = 1676452072,
+				["classColor"] = "c79c6e",
 			},
 			["Mavadox-Golemagg"] = {
 				["isLFG"] = false,
@@ -12649,12 +21480,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Mavadox-Golemagg",
-				["classColor"] = "FFF569",
 				["isLFM"] = true,
-				["createdat"] = 1676456857,
-				["instanceID"] = -1,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676456857,
+				["classColor"] = "FFF569",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -12662,6 +21489,34 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["instanceID"] = -1,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676456857,
+				["createdat"] = 1676456857,
+			},
+			["Lydløs-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3330,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Naxxramas 10",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "NAX.tga",
+				["words"] = {
+				},
+				["fullName"] = "Naxxramas - 10",
+				["author"] = "Lydløs-Golemagg",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceID"] = 533,
+				["createdat"] = 1676451699,
+				["resultID"] = 334,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676452083,
+				["classColor"] = "c41f3b",
 			},
 			["Pettzon-Golemagg"] = {
 				["isLFG"] = false,
@@ -12683,17 +21538,17 @@ GroupieDB = {
 				["fullName"] = "Stratholme",
 				["author"] = "Pettzon-Golemagg",
 				["instanceID"] = 329,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 61,
 				["createdat"] = 1676458183,
-				["minLevel"] = 56,
-				["instanceName"] = "Stratholme",
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 					1, -- [3]
 				},
+				["instanceName"] = "Stratholme",
 				["timestamp"] = 1676458183,
-				["maxLevel"] = 61,
-				["classColor"] = "F58CBA",
+				["minLevel"] = 56,
 			},
 			["Zepøs-Golemagg"] = {
 				["isLFG"] = false,
@@ -12715,183 +21570,200 @@ GroupieDB = {
 				},
 				["fullName"] = "Azjol-Nerub",
 				["author"] = "Zepøs-Golemagg",
-				["instanceID"] = 601,
 				["classColor"] = "9482C9",
-				["createdat"] = 1676457923,
-				["maxLevel"] = 77,
-				["instanceName"] = "Azjol-Nerub",
-				["timestamp"] = 1676459160,
+				["instanceID"] = 601,
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
 				["minLevel"] = 70,
+				["maxLevel"] = 77,
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676459160,
+				["createdat"] = 1676457923,
 			},
-			["Rupes-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3300,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Culling of Stratholme",
-				["groupSize"] = 5,
-				["isHeroic"] = true,
-				["isLFM"] = false,
+			["Coltss-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "LFM Ulduar 25 - Thorim, 1 light HM. Orbs+Frag HR. 3SR>MS>OS. I'll check your logs! Dont bother whispering without experience. Full run!",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
 				["lootType"] = "MS > OS",
-				["icon"] = "COS.tga",
+				["icon"] = "ULD.tga",
 				["words"] = {
+					"lfm", -- [1]
+					"ulduar", -- [2]
+					"25", -- [3]
+					"thorim", -- [4]
+					"1", -- [5]
+					"light", -- [6]
+					"hm", -- [7]
+					"orbs", -- [8]
+					"frag", -- [9]
+					"hr", -- [10]
+					"3sr", -- [11]
+					"msos", -- [12]
+					"i", -- [13]
+					"ll", -- [14]
+					"check", -- [15]
+					"your", -- [16]
+					"logs", -- [17]
+					"dont", -- [18]
+					"bother", -- [19]
+					"whispering", -- [20]
+					"without", -- [21]
+					"experience", -- [22]
+					"full", -- [23]
+					"run", -- [24]
 				},
-				["fullName"] = "Heroic Culling of Stratholme",
-				["author"] = "Rupes-Golemagg",
-				["instanceID"] = 595,
-				["classColor"] = "fff569",
-				["resultID"] = 27,
-				["createdat"] = 1676448457,
-				["instanceName"] = "Culling of Stratholme",
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Coltss-Golemagg",
+				["instanceID"] = 603,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Ulduar",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["timestamp"] = 1676449926,
-				["minLevel"] = 80,
-				["maxLevel"] = 80,
+				["timestamp"] = 1676483715,
+				["createdat"] = 1676483645,
 			},
-			["Mokongo-Golemagg"] = {
+			["Dasheng-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3430,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Naxxramas 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "NAX.tga",
+				["words"] = {
+				},
+				["fullName"] = "Naxxramas - 25",
+				["author"] = "Dasheng-Golemagg",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceID"] = 533,
+				["createdat"] = 1676448968,
+				["resultID"] = 505,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676454462,
+				["classColor"] = "f58cba",
+			},
+			["Trollun-Golemagg"] = {
 				["isLFG"] = false,
 				["order"] = 3410,
-				["msg"] = "LFM VOA 25 - Need Elemental / Resto Shaman ",
+				["msg"] = "Hunter LF VOA 25 4818 GS",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "MS > OS",
 				["icon"] = "VOA.tga",
 				["words"] = {
-					"lfm", -- [1]
-					"voa", -- [2]
-					"25", -- [3]
-					"need", -- [4]
-					"elemental", -- [5]
-					"resto", -- [6]
-					"shaman", -- [7]
+					"hunter", -- [1]
+					"lf", -- [2]
+					"voa", -- [3]
+					"25", -- [4]
+					"4818", -- [5]
+					"gs", -- [6]
 				},
 				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Mokongo-Golemagg",
+				["author"] = "Trollun-Golemagg",
+				["classColor"] = "ABD473",
 				["instanceID"] = 624,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
 				["minLevel"] = 80,
-				["createdat"] = 1676452650,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676452939,
 				["maxLevel"] = 80,
-				["classColor"] = "0070DE",
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676453691,
+				["createdat"] = 1676453634,
 			},
-			["Slainzlock-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = -1,
-				["msg"] = "WTS 22x [Lovely Charm Bracelet] 20g each",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "Other.tga",
-				["words"] = {
-					"wts", -- [1]
-					"22x", -- [2]
-					"lovely", -- [3]
-					"charm", -- [4]
-					"bracelet", -- [5]
-					"20g", -- [6]
-					"each", -- [7]
-				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Slainzlock-Golemagg",
-				["instanceID"] = -1,
-				["classColor"] = "9482C9",
-				["createdat"] = 1676456432,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676457711,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["minLevel"] = 0,
-			},
-			["Nanoboost-Golemagg"] = {
-				["isLFG"] = false,
+			["Ondisch-Golemagg"] = {
+				["isLFG"] = true,
 				["order"] = 3420,
-				["msg"] = "LFM OS+2 ---2x tank 1x heal + dps  ILLU HR --- MS/OS ---/w me gs and spec ",
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Obsidian Sanctum 25",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
-				["maxLevel"] = 80,
+				["isLFM"] = false,
 				["lootType"] = "MS > OS",
 				["icon"] = "OS.tga",
 				["words"] = {
-					"lfm", -- [1]
-					"os", -- [2]
-					"2", -- [3]
-					"2x", -- [4]
-					"tank", -- [5]
-					"1x", -- [6]
-					"heal", -- [7]
-					"dps", -- [8]
-					"illu", -- [9]
-					"hr", -- [10]
-					"msos", -- [11]
-					"w", -- [12]
-					"me", -- [13]
-					"gs", -- [14]
-					"and", -- [15]
-					"spec", -- [16]
 				},
 				["fullName"] = "Obsidian Sanctum - 25",
-				["author"] = "Nanoboost-Golemagg",
-				["instanceID"] = 615,
-				["isLFM"] = true,
+				["author"] = "Ondisch-Golemagg",
+				["maxLevel"] = 80,
+				["resultID"] = 503,
+				["classColor"] = "f58cba",
 				["minLevel"] = 80,
-				["classColor"] = "69CCF0",
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676459095,
+				["createdat"] = 1676453946,
 				["instanceName"] = "Obsidian Sanctum",
-				["createdat"] = 1676456777,
+				["rolesNeeded"] = {
+				},
+				["timestamp"] = 1676454602,
+				["instanceID"] = 615,
 			},
-			["Kaliostro-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3010,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Nexus",
+			["Klára-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3110,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Culling of Stratholme | Need Healer",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
-				["isLFM"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "COS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Culling of Stratholme",
+				["author"] = "Klára-Golemagg",
+				["instanceID"] = 595,
+				["createdat"] = 1676489974,
+				["classColor"] = "40c7eb",
+				["maxLevel"] = 80,
+				["minLevel"] = 78,
+				["rolesNeeded"] = {
+					2, -- [1]
+				},
+				["instanceName"] = "Culling of Stratholme",
+				["timestamp"] = 1676490853,
+				["resultID"] = 292,
+			},
+			["Ogdeath-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3010,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Nexus | Need Healer, 1 DPS",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
 				["lootType"] = "MS > OS",
 				["icon"] = "NEX.tga",
 				["words"] = {
 				},
 				["fullName"] = "Nexus",
-				["author"] = "Kaliostro-Golemagg",
-				["maxLevel"] = 75,
+				["author"] = "Ogdeath-Golemagg",
+				["classColor"] = "c41f3b",
+				["minLevel"] = 70,
 				["instanceID"] = 576,
-				["classColor"] = "abd473",
-				["resultID"] = 36,
+				["maxLevel"] = 75,
+				["resultID"] = 207,
 				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
 				},
 				["instanceName"] = "Nexus",
-				["timestamp"] = 1676446944,
-				["createdat"] = 1676446940,
-				["minLevel"] = 70,
+				["timestamp"] = 1676490345,
+				["createdat"] = 1676490303,
 			},
 			["Pythonissam-Golemagg"] = {
 				["isLFG"] = true,
@@ -12907,1012 +21779,15 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Pythonissam-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "40c7eb",
+				["minLevel"] = 80,
+				["instanceID"] = 624,
 				["createdat"] = 1676453599,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["rolesNeeded"] = {
-				},
-				["timestamp"] = 1676454444,
 				["resultID"] = 439,
-				["instanceID"] = 624,
-			},
-			["Deîmos-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3410,
-				["msg"] = "rogue 4,750 lfg voa 25 spec run",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-					"rogue", -- [1]
-					"4", -- [2]
-					"750", -- [3]
-					"lfg", -- [4]
-					"voa", -- [5]
-					"25", -- [6]
-					"spec", -- [7]
-					"run", -- [8]
-				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Deîmos-Golemagg",
-				["instanceID"] = 624,
-				["classColor"] = "FFF569",
-				["createdat"] = 1676454180,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454257,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["minLevel"] = 80,
-			},
-			["Hokypipopu-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3430,
-				["msg"] = "NAXX SKIP Run SAT+ KT 20 Man - SR-MS-OS (TTide HR) 1xdps ",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "NAX.tga",
-				["words"] = {
-					"naxx", -- [1]
-					"skip", -- [2]
-					"run", -- [3]
-					"sat", -- [4]
-					"kt", -- [5]
-					"20", -- [6]
-					"man", -- [7]
-					"sr", -- [8]
-					"msos", -- [9]
-					"ttide", -- [10]
-					"hr", -- [11]
-					"1xdps", -- [12]
-				},
-				["fullName"] = "Naxxramas - 25",
-				["author"] = "Hokypipopu-Golemagg",
-				["classColor"] = "F58CBA",
-				["instanceID"] = 533,
-				["createdat"] = 1676447110,
-				["minLevel"] = 80,
-				["instanceName"] = "Naxxramas",
-				["timestamp"] = 1676448784,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["maxLevel"] = 80,
-			},
-			["Ragnasil-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3460,
-				["msg"] = "<Hellscream> is recruiting DPS & Healers! We run Ulduar 10 Saturday 18:00 with multiple groups and Ulduar 25 Sunday 17:00 ST with TWO groups! For our loot system we use a wishlist from the TMB website with no prios! All classes and specs are welcome!",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["maxLevel"] = 80,
-				["lootType"] = "Other",
-				["icon"] = "ULD.tga",
-				["words"] = {
-					"hellscream", -- [1]
-					"is", -- [2]
-					"recruiting", -- [3]
-					"dps", -- [4]
-					"healers", -- [5]
-					"we", -- [6]
-					"run", -- [7]
-					"ulduar", -- [8]
-					"10", -- [9]
-					"saturday", -- [10]
-					"18", -- [11]
-					"00", -- [12]
-					"with", -- [13]
-					"multiple", -- [14]
-					"groups", -- [15]
-					"and", -- [16]
-					"25", -- [17]
-					"sunday", -- [18]
-					"17", -- [19]
-					"st", -- [20]
-					"two", -- [21]
-					"for", -- [22]
-					"our", -- [23]
-					"loot", -- [24]
-					"system", -- [25]
-					"use", -- [26]
-					"a", -- [27]
-					"wishlist", -- [28]
-					"from", -- [29]
-					"the", -- [30]
-					"tmb", -- [31]
-					"website", -- [32]
-					"no", -- [33]
-					"prios", -- [34]
-					"all", -- [35]
-					"classes", -- [36]
-					"specs", -- [37]
-					"are", -- [38]
-					"welcome", -- [39]
-				},
-				["fullName"] = "Ulduar - 25",
-				["author"] = "Ragnasil-Golemagg",
-				["classColor"] = "F58CBA",
-				["isLFM"] = true,
-				["minLevel"] = 80,
-				["instanceID"] = 603,
-				["rolesNeeded"] = {
-					3, -- [1]
-					4, -- [2]
-					2, -- [3]
-				},
-				["timestamp"] = 1676458632,
-				["instanceName"] = "Ulduar",
-				["createdat"] = 1676454271,
-			},
-			["Bobìk-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3110,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Culling of Stratholme",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "COS.tga",
-				["words"] = {
-				},
-				["fullName"] = "Culling of Stratholme",
-				["author"] = "Bobìk-Golemagg",
-				["instanceID"] = 595,
-				["classColor"] = "abd473",
-				["resultID"] = 35,
-				["createdat"] = 1676449715,
-				["instanceName"] = "Culling of Stratholme",
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676449926,
-				["minLevel"] = 78,
-				["maxLevel"] = 80,
-			},
-			["Doesycorpse-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3220,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Oculus",
-				["groupSize"] = 5,
-				["isHeroic"] = true,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "OC.tga",
-				["words"] = {
-				},
-				["fullName"] = "Heroic Oculus",
-				["author"] = "Doesycorpse-Golemagg",
-				["instanceName"] = "Oculus",
-				["instanceID"] = 578,
-				["minLevel"] = 80,
-				["resultID"] = 761,
-				["maxLevel"] = 80,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676458818,
-				["createdat"] = 1676458474,
-				["classColor"] = "c41f3b",
-			},
-			["Bonecrawler-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = -1,
-				["msg"] = "lf1m daily hc+ need tank",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "Other.tga",
-				["words"] = {
-					"lf1m", -- [1]
-					"daily", -- [2]
-					"hc", -- [3]
-					"need", -- [4]
-					"tank", -- [5]
-				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Bonecrawler-Golemagg",
-				["instanceID"] = -1,
-				["classColor"] = "9482C9",
-				["createdat"] = 1676456991,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676456991,
-				["rolesNeeded"] = {
-					1, -- [1]
-				},
-				["minLevel"] = 0,
-			},
-			["Dawts-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Dawts-Golemagg",
-				["classColor"] = "8787ed",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
-				["resultID"] = 480,
 				["rolesNeeded"] = {
 				},
 				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454397,
-				["maxLevel"] = 80,
-			},
-			["Iassasinl-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3350,
-				["msg"] = "LFM {star} EoE 10 Man {star} MS OS [Feet HR] Need 1 Healer And 1 DPS To Go !",
-				["groupSize"] = 10,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "EOE.tga",
-				["words"] = {
-					"lfm", -- [1]
-					"star", -- [2]
-					"eoe", -- [3]
-					"10", -- [4]
-					"man", -- [5]
-					"msos", -- [6]
-					"feet", -- [7]
-					"hr", -- [8]
-					"need", -- [9]
-					"1", -- [10]
-					"healer", -- [11]
-					"and", -- [12]
-					"dps", -- [13]
-					"to", -- [14]
-					"go", -- [15]
-				},
-				["fullName"] = "Eye of Eternity - 10",
-				["author"] = "Iassasinl-Golemagg",
-				["classColor"] = "69CCF0",
-				["instanceID"] = 616,
-				["createdat"] = 1676448970,
-				["minLevel"] = 80,
-				["instanceName"] = "Eye of Eternity",
-				["timestamp"] = 1676450341,
-				["rolesNeeded"] = {
-					2, -- [1]
-					3, -- [2]
-					4, -- [3]
-				},
-				["maxLevel"] = 80,
-			},
-			["Directhit-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3210,
-				["msg"] = "heal for OLD KINGDOM HC port ready ",
-				["groupSize"] = 5,
-				["isHeroic"] = true,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "OK.tga",
-				["words"] = {
-					"heal", -- [1]
-					"for", -- [2]
-					"old", -- [3]
-					"kingdom", -- [4]
-					"hc", -- [5]
-					"port", -- [6]
-					"ready", -- [7]
-				},
-				["fullName"] = "Heroic Old Kingdom",
-				["author"] = "Directhit-Golemagg",
-				["instanceID"] = 619,
-				["minLevel"] = 80,
-				["createdat"] = 1676457754,
-				["rolesNeeded"] = {
-					2, -- [1]
-				},
-				["instanceName"] = "Old Kingdom",
-				["timestamp"] = 1676459081,
-				["maxLevel"] = 80,
-				["classColor"] = "C79C6E",
-			},
-			["Tewagion-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 2020,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Slave Pens",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "SP.tga",
-				["words"] = {
-				},
-				["fullName"] = "Slave Pens",
-				["author"] = "Tewagion-Golemagg",
-				["classColor"] = "c41f3b",
-				["instanceID"] = 547,
-				["minLevel"] = 61,
-				["resultID"] = 362,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["instanceName"] = "Slave Pens",
-				["timestamp"] = 1676452720,
-				["createdat"] = 1676451309,
-				["maxLevel"] = 69,
-			},
-			["Bowhans-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = -1,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "Other.tga",
-				["words"] = {
-				},
-				["fullName"] = "The Crown Chemical Co.",
-				["author"] = "Bowhans-Golemagg",
-				["resultID"] = 744,
-				["instanceID"] = 33,
-				["classColor"] = "abd473",
-				["createdat"] = 1676458655,
-				["maxLevel"] = 80,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676458818,
-				["minLevel"] = 78,
-				["instanceName"] = "The Crown Chemical Co.",
-			},
-			["Reavva-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3330,
-				["msg"] = "LFM NAXX 10 full run 3sr ms os /w me Nothing hr 1tank+1heal",
-				["groupSize"] = 10,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "NAX.tga",
-				["words"] = {
-					"lfm", -- [1]
-					"naxx", -- [2]
-					"10", -- [3]
-					"full", -- [4]
-					"run", -- [5]
-					"3sr", -- [6]
-					"msos", -- [7]
-					"w", -- [8]
-					"me", -- [9]
-					"nothing", -- [10]
-					"hr", -- [11]
-					"1tank", -- [12]
-					"1heal", -- [13]
-				},
-				["fullName"] = "Naxxramas - 10",
-				["author"] = "Reavva-Golemagg",
-				["instanceID"] = 533,
-				["createdat"] = 1676458058,
-				["minLevel"] = 80,
-				["instanceName"] = "Naxxramas",
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-				},
-				["timestamp"] = 1676459146,
-				["maxLevel"] = 80,
-				["classColor"] = "C79C6E",
-			},
-			["Killbob-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Killbob-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "c41f3b",
-				["createdat"] = 1676449285,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["rolesNeeded"] = {
-				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 269,
-				["instanceID"] = 624,
-			},
-			["Sagittaríus-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3020,
-				["msg"] = "LFM tank and healer Azjol normal",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "AN.tga",
-				["words"] = {
-					"lfm", -- [1]
-					"tank", -- [2]
-					"and", -- [3]
-					"healer", -- [4]
-					"azjol", -- [5]
-					"normal", -- [6]
-				},
-				["fullName"] = "Azjol-Nerub",
-				["author"] = "Sagittaríus-Golemagg",
-				["instanceID"] = 601,
-				["createdat"] = 1676458021,
-				["minLevel"] = 70,
-				["instanceName"] = "Azjol-Nerub",
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-				},
-				["timestamp"] = 1676458022,
-				["maxLevel"] = 77,
-				["classColor"] = "ABD473",
-			},
-			["Demonwitch-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = -1,
-				["msg"] = "WTS |cff0070dd|Hitem:45087::::::::80:::::::::|h[Runed Orb]|h|r",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "Other.tga",
-				["words"] = {
-					"wts", -- [1]
-					"hitem", -- [2]
-					"45087", -- [3]
-					"80", -- [4]
-					"h", -- [5]
-					"runed", -- [6]
-					"orb", -- [7]
-				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Demonwitch-Golemagg",
-				["instanceID"] = -1,
-				["classColor"] = "69CCF0",
-				["createdat"] = 1676453768,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676453768,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["minLevel"] = 0,
-			},
-			["Irontheon-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 2040,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Mana-Tombs",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "MT.tga",
-				["words"] = {
-				},
-				["fullName"] = "Mana-Tombs",
-				["author"] = "Irontheon-Golemagg",
-				["instanceID"] = 557,
-				["classColor"] = "f58cba",
-				["resultID"] = 31,
-				["createdat"] = 1676449035,
-				["instanceName"] = "Mana-Tombs",
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676449926,
-				["minLevel"] = 63,
-				["maxLevel"] = 71,
-			},
-			["Thorendor-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "Ele shaman LFG voa 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-					"ele", -- [1]
-					"shaman", -- [2]
-					"lfg", -- [3]
-					"voa", -- [4]
-					"25", -- [5]
-				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Thorendor-Golemagg",
-				["instanceID"] = 624,
-				["classColor"] = "0070DE",
-				["minLevel"] = 80,
-				["maxLevel"] = 80,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676451006,
-				["instanceName"] = "Vault of Archavon",
-				["createdat"] = 1676451006,
-			},
-			["Justbubblé-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3370,
-				["msg"] = "Ulduar 10man 3xSR MS<OS , Going for full hard mode run so make sure to have time going when full. Looking for ( Balance Druid) Whisper logs pls",
-				["groupSize"] = 10,
-				["isHeroic"] = false,
-				["maxLevel"] = 80,
-				["lootType"] = "MS > OS",
-				["icon"] = "ULD.tga",
-				["words"] = {
-					"ulduar", -- [1]
-					"10man", -- [2]
-					"3xsr", -- [3]
-					"msos", -- [4]
-					"going", -- [5]
-					"for", -- [6]
-					"full", -- [7]
-					"hard", -- [8]
-					"mode", -- [9]
-					"run", -- [10]
-					"so", -- [11]
-					"make", -- [12]
-					"sure", -- [13]
-					"to", -- [14]
-					"have", -- [15]
-					"time", -- [16]
-					"when", -- [17]
-					"looking", -- [18]
-					"balance", -- [19]
-					"druid", -- [20]
-					"whisper", -- [21]
-					"logs", -- [22]
-					"pls", -- [23]
-				},
-				["fullName"] = "Ulduar - 10",
-				["author"] = "Justbubblé-Golemagg",
-				["classColor"] = "F58CBA",
-				["isLFM"] = true,
-				["minLevel"] = 80,
-				["instanceID"] = 603,
-				["instanceName"] = "Ulduar",
-				["timestamp"] = 1676455104,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["createdat"] = 1676450685,
-			},
-			["Renjegarn-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = -1,
-				["msg"] = "LFG daily hc",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "Other",
-				["icon"] = "Other.tga",
-				["words"] = {
-					"lfg", -- [1]
-					"daily", -- [2]
-					"hc", -- [3]
-				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Renjegarn-Golemagg",
-				["classColor"] = "9482C9",
-				["instanceID"] = -1,
-				["createdat"] = 1676449195,
-				["minLevel"] = 0,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676449195,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["maxLevel"] = 1000,
-			},
-			["Pespsovitý-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 1200,
-				["msg"] = "LFM ALL.....STRATHOLME (NORMAL) /W ME ",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "STRAT.tga",
-				["words"] = {
-					"lfm", -- [1]
-					"all", -- [2]
-					"stratholme", -- [3]
-					"normal", -- [4]
-					"w", -- [5]
-					"me", -- [6]
-				},
-				["fullName"] = "Stratholme",
-				["author"] = "Pespsovitý-Golemagg",
-				["instanceID"] = 329,
-				["classColor"] = "F58CBA",
-				["minLevel"] = 56,
-				["createdat"] = 1676448262,
-				["instanceName"] = "Stratholme",
-				["timestamp"] = 1676448369,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["maxLevel"] = 61,
-			},
-			["Norkyorky-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3320,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 10",
-				["groupSize"] = 10,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-				},
-				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Norkyorky-Golemagg",
-				["classColor"] = "abd473",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
-				["resultID"] = 457,
-				["rolesNeeded"] = {
-				},
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454444,
-				["createdat"] = 1676454378,
-				["maxLevel"] = 80,
-			},
-			["Rackichan-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3410,
-				["msg"] = "LFM VOA 25 MAN Spec Run, need drood,shammy, warrior,hunter,disc priest! whisper me your gs/spec",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-					"lfm", -- [1]
-					"voa", -- [2]
-					"25", -- [3]
-					"man", -- [4]
-					"spec", -- [5]
-					"run", -- [6]
-					"need", -- [7]
-					"drood", -- [8]
-					"shammy", -- [9]
-					"warrior", -- [10]
-					"hunter", -- [11]
-					"disc", -- [12]
-					"priest", -- [13]
-					"whisper", -- [14]
-					"me", -- [15]
-					"your", -- [16]
-					"gs", -- [17]
-				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Rackichan-Golemagg",
-				["instanceID"] = 624,
-				["classColor"] = "69CCF0",
-				["createdat"] = 1676455614,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676455794,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["minLevel"] = 80,
-			},
-			["Hargón-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3320,
-				["msg"] = "LF1M VoA10 - rogue LAST SPOT",
-				["groupSize"] = 10,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-					"lf1m", -- [1]
-					"voa10", -- [2]
-					"rogue", -- [3]
-					"last", -- [4]
-					"spot", -- [5]
-				},
-				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Hargón-Golemagg",
-				["instanceID"] = 624,
-				["createdat"] = 1676458001,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676458239,
-				["maxLevel"] = 80,
-				["classColor"] = "F58CBA",
-			},
-			["Lichblood-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = -1,
-				["msg"] = "WTS |cffffffff|Hitem:49916::::::::72:::::::::|h[Lovely Charm Bracelet]|h|r 15 g in dalaran",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "Other.tga",
-				["words"] = {
-					"wts", -- [1]
-					"hitem", -- [2]
-					"49916", -- [3]
-					"72", -- [4]
-					"h", -- [5]
-					"lovely", -- [6]
-					"charm", -- [7]
-					"bracelet", -- [8]
-					"15", -- [9]
-					"g", -- [10]
-					"in", -- [11]
-					"dalaran", -- [12]
-				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Lichblood-Golemagg",
-				["instanceID"] = -1,
-				["classColor"] = "C79C6E",
-				["createdat"] = 1676452740,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676452740,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["minLevel"] = 0,
-			},
-			["Stepsïs-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3070,
-				["msg"] = "LF 1 dps gundrak norm",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "GUN.tga",
-				["words"] = {
-					"lf", -- [1]
-					"1", -- [2]
-					"dps", -- [3]
-					"gundrak", -- [4]
-					"norm", -- [5]
-				},
-				["fullName"] = "Gundrak",
-				["author"] = "Stepsïs-Golemagg",
-				["instanceID"] = 604,
-				["classColor"] = "F58CBA",
-				["createdat"] = 1676456258,
-				["maxLevel"] = 80,
-				["instanceName"] = "Gundrak",
-				["timestamp"] = 1676456258,
-				["rolesNeeded"] = {
-					3, -- [1]
-					4, -- [2]
-				},
-				["minLevel"] = 76,
-			},
-			["Chosalock-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 1040,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Blackfathom Deeps",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "BFD.tga",
-				["words"] = {
-				},
-				["fullName"] = "Blackfathom Deeps",
-				["author"] = "Chosalock-Golemagg",
-				["classColor"] = "8787ed",
-				["instanceID"] = 48,
-				["minLevel"] = 20,
-				["resultID"] = 345,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["instanceName"] = "Blackfathom Deeps",
-				["timestamp"] = 1676452720,
-				["createdat"] = 1676451015,
-				["maxLevel"] = 28,
-			},
-			["Kruxy-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = -1,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "Other.tga",
-				["words"] = {
-				},
-				["fullName"] = "The Crown Chemical Co.",
-				["author"] = "Kruxy-Golemagg",
-				["instanceID"] = 33,
-				["classColor"] = "8787ed",
-				["resultID"] = 12,
-				["createdat"] = 1676449597,
-				["instanceName"] = "The Crown Chemical Co.",
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676450196,
-				["minLevel"] = 78,
-				["maxLevel"] = 80,
-			},
-			["Keloriel-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3060,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Halls of Stone",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "HOS.tga",
-				["words"] = {
-				},
-				["fullName"] = "Halls of Stone",
-				["author"] = "Keloriel-Golemagg",
-				["instanceID"] = 599,
-				["classColor"] = "f58cba",
-				["resultID"] = 21,
-				["createdat"] = 1676448039,
-				["instanceName"] = "Halls of Stone",
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676449926,
-				["minLevel"] = 75,
-				["maxLevel"] = 80,
-			},
-			["Battsuggar-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3320,
-				["msg"] = "Lf1M Mage for VoA 10 man classrun - Last spot!!",
-				["groupSize"] = 10,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-					"lf1m", -- [1]
-					"mage", -- [2]
-					"for", -- [3]
-					"voa", -- [4]
-					"10", -- [5]
-					"man", -- [6]
-					"classrun", -- [7]
-					"last", -- [8]
-					"spot", -- [9]
-				},
-				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Battsuggar-Golemagg",
-				["instanceID"] = 624,
-				["classColor"] = "F58CBA",
-				["createdat"] = 1676449962,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676450024,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["minLevel"] = 80,
-			},
-			["Buxisofbush-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 1150,
-				["msg"] = "LF2M heal/dps for ZF runs",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "ZF.tga",
-				["words"] = {
-					"lf2m", -- [1]
-					"heal", -- [2]
-					"dps", -- [3]
-					"for", -- [4]
-					"zf", -- [5]
-					"runs", -- [6]
-				},
-				["fullName"] = "Zul'Farrak",
-				["author"] = "Buxisofbush-Golemagg",
-				["instanceID"] = 209,
-				["classColor"] = "FFF569",
-				["minLevel"] = 42,
-				["createdat"] = 1676448126,
-				["instanceName"] = "Zul'Farrak",
-				["timestamp"] = 1676448788,
-				["rolesNeeded"] = {
-					2, -- [1]
-					3, -- [2]
-					4, -- [3]
-				},
-				["maxLevel"] = 50,
+				["classColor"] = "40c7eb",
 			},
 			["Dotler-Golemagg"] = {
 				["isLFG"] = false,
@@ -13953,77 +21828,605 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Dotler-Golemagg",
-				["instanceID"] = 603,
 				["maxLevel"] = 80,
-				["createdat"] = 1676455367,
-				["classColor"] = "9482C9",
-				["instanceName"] = "Ulduar",
-				["timestamp"] = 1676459123,
+				["instanceID"] = 603,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 					2, -- [3]
 				},
 				["minLevel"] = 80,
+				["classColor"] = "9482C9",
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676459123,
+				["createdat"] = 1676455367,
 			},
-			["Yubó-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3310,
-				["msg"] = "LF1M Tank - Daily HC+  Azjol Nerub",
+			["Turgutt-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 2000,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Hellfire Ramparts",
 				["groupSize"] = 5,
-				["isHeroic"] = true,
-				["isLFM"] = true,
+				["isHeroic"] = false,
+				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "AN.tga",
+				["icon"] = "RAMPS.tga",
 				["words"] = {
-					"lf1m", -- [1]
-					"tank", -- [2]
-					"daily", -- [3]
-					"hc", -- [4]
-					"azjol", -- [5]
-					"nerub", -- [6]
 				},
-				["fullName"] = "Heroic Azjol-Nerub",
-				["author"] = "Yubó-Golemagg",
-				["instanceID"] = 601,
-				["classColor"] = "0070DE",
-				["minLevel"] = 80,
-				["createdat"] = 1676448685,
-				["instanceName"] = "Azjol-Nerub",
-				["timestamp"] = 1676448754,
+				["fullName"] = "Hellfire Ramparts",
+				["author"] = "Turgutt-Golemagg",
+				["instanceID"] = 543,
+				["createdat"] = 1676488377,
+				["classColor"] = "c41f3b",
+				["maxLevel"] = 67,
+				["minLevel"] = 58,
 				["rolesNeeded"] = {
 					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
 				},
-				["maxLevel"] = 80,
+				["instanceName"] = "Hellfire Ramparts",
+				["timestamp"] = 1676490825,
+				["resultID"] = 334,
 			},
-			["Ubox-Golemagg"] = {
+			["Yarlock-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3060,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Halls of Stone",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "HOS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Halls of Stone",
+				["author"] = "Yarlock-Golemagg",
+				["maxLevel"] = 80,
+				["resultID"] = 716,
+				["classColor"] = "8787ed",
+				["minLevel"] = 75,
+				["createdat"] = 1676458251,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Halls of Stone",
+				["timestamp"] = 1676458646,
+				["instanceID"] = 599,
+			},
+			["Renjegarn-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "LFG daily hc",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"lfg", -- [1]
+					"daily", -- [2]
+					"hc", -- [3]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Renjegarn-Golemagg",
+				["maxLevel"] = 1000,
+				["classColor"] = "9482C9",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["createdat"] = 1676449195,
+				["minLevel"] = 0,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676449195,
+				["instanceID"] = -1,
+			},
+			["Dröttningu-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3050,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Violet Hold",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VH.tga",
+				["words"] = {
+				},
+				["fullName"] = "Violet Hold",
+				["author"] = "Dröttningu-Golemagg",
+				["instanceID"] = 608,
+				["maxLevel"] = 79,
+				["classColor"] = "ffffff",
+				["minLevel"] = 73,
+				["resultID"] = 149,
+				["instanceName"] = "Violet Hold",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483837,
+				["createdat"] = 1676483505,
+			},
+			["Bonecrawler-Golemagg"] = {
 				["isLFG"] = false,
 				["order"] = -1,
-				["msg"] = "LFM - DPS, Daily HC+",
+				["msg"] = "lf1m daily hc+ need tank",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "Other",
 				["icon"] = "Other.tga",
 				["words"] = {
-					"lfm", -- [1]
-					"dps", -- [2]
-					"daily", -- [3]
-					"hc", -- [4]
+					"lf1m", -- [1]
+					"daily", -- [2]
+					"hc", -- [3]
+					"need", -- [4]
+					"tank", -- [5]
 				},
 				["fullName"] = "Miscellaneous",
-				["author"] = "Ubox-Golemagg",
+				["author"] = "Bonecrawler-Golemagg",
+				["classColor"] = "9482C9",
 				["instanceID"] = -1,
-				["classColor"] = "FF7D0A",
-				["createdat"] = 1676452954,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676452955,
 				["rolesNeeded"] = {
-					3, -- [1]
-					4, -- [2]
+					1, -- [1]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676456991,
+				["createdat"] = 1676456991,
+			},
+			["Dawts-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Dawts-Golemagg",
+				["maxLevel"] = 80,
+				["resultID"] = 480,
+				["classColor"] = "8787ed",
+				["minLevel"] = 80,
+				["createdat"] = 1676454397,
+				["instanceName"] = "Vault of Archavon",
+				["rolesNeeded"] = {
+				},
+				["timestamp"] = 1676454444,
+				["instanceID"] = 624,
+			},
+			["Improvebuild-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "Frost mage 2k last season, 2.2k last season on main mage char LF Disc / spri for 2s for a solid push to the high tier weapons. CR1800. Be decently geared in PvP and trackable experience from s5. Discord voice is a must. /w for more info",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "PVP",
+				["icon"] = "PVP.tga",
+				["words"] = {
+					"frost", -- [1]
+					"mage", -- [2]
+					"2k", -- [3]
+					"last", -- [4]
+					"season", -- [5]
+					"2", -- [6]
+					"on", -- [7]
+					"main", -- [8]
+					"char", -- [9]
+					"lf", -- [10]
+					"disc", -- [11]
+					"spri", -- [12]
+					"for", -- [13]
+					"2s", -- [14]
+					"a", -- [15]
+					"solid", -- [16]
+					"push", -- [17]
+					"to", -- [18]
+					"the", -- [19]
+					"high", -- [20]
+					"tier", -- [21]
+					"weapons", -- [22]
+					"cr1800", -- [23]
+					"be", -- [24]
+					"decently", -- [25]
+					"geared", -- [26]
+					"in", -- [27]
+					"pvp", -- [28]
+					"and", -- [29]
+					"trackable", -- [30]
+					"experience", -- [31]
+					"from", -- [32]
+					"s5", -- [33]
+					"discord", -- [34]
+					"voice", -- [35]
+					"is", -- [36]
+					"must", -- [37]
+					"w", -- [38]
+					"more", -- [39]
+					"info", -- [40]
+				},
+				["fullName"] = "PVP",
+				["author"] = "Improvebuild-Golemagg",
+				["instanceID"] = -1,
+				["classColor"] = "69CCF0",
+				["maxLevel"] = 1000,
+				["minLevel"] = 0,
+				["instanceName"] = "PVP",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483769,
+				["createdat"] = 1676483769,
+			},
+			["Directhit-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3210,
+				["msg"] = "heal for OLD KINGDOM HC port ready ",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "OK.tga",
+				["words"] = {
+					"heal", -- [1]
+					"for", -- [2]
+					"old", -- [3]
+					"kingdom", -- [4]
+					"hc", -- [5]
+					"port", -- [6]
+					"ready", -- [7]
+				},
+				["fullName"] = "Heroic Old Kingdom",
+				["author"] = "Directhit-Golemagg",
+				["instanceID"] = 619,
+				["classColor"] = "C79C6E",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Old Kingdom",
+				["rolesNeeded"] = {
+					2, -- [1]
+				},
+				["timestamp"] = 1676459081,
+				["createdat"] = 1676457754,
+			},
+			["Fireärt-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "{star} <La culpa es de los tanks> {star}  Recluta para consolidar su rooster de 25 man ||  Horarios de 22:00 a 00:30   (miercoles+ domingo+martes)   ||  Buscamos raiders comprometidos, mas info consultar",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["language"] = "German",
+				["words"] = {
+					"star", -- [1]
+					"la", -- [2]
+					"culpa", -- [3]
+					"es", -- [4]
+					"de", -- [5]
+					"los", -- [6]
+					"tanks", -- [7]
+					"recluta", -- [8]
+					"para", -- [9]
+					"consolidar", -- [10]
+					"su", -- [11]
+					"rooster", -- [12]
+					"25", -- [13]
+					"man", -- [14]
+					"horarios", -- [15]
+					"22", -- [16]
+					"00", -- [17]
+					"a", -- [18]
+					"30", -- [19]
+					"miercoles", -- [20]
+					"domingo", -- [21]
+					"martes", -- [22]
+					"buscamos", -- [23]
+					"raiders", -- [24]
+					"comprometidos", -- [25]
+					"mas", -- [26]
+					"info", -- [27]
+					"consultar", -- [28]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Fireärt-Golemagg",
+				["maxLevel"] = 1000,
+				["createdat"] = 1676456000,
+				["instanceID"] = -1,
+				["icon"] = "Other.tga",
+				["minLevel"] = 0,
+				["rolesNeeded"] = {
+					1, -- [1]
+				},
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676458893,
+				["classColor"] = "9482C9",
+			},
+			["Chrysterp-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "WTS |cffffffff|Hitem:49916::::::::62:::::::::|h[Lovely Charm Bracelet]|h|r GOT LOTS !! ",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"wts", -- [1]
+					"hitem", -- [2]
+					"49916", -- [3]
+					"62", -- [4]
+					"h", -- [5]
+					"lovely", -- [6]
+					"charm", -- [7]
+					"bracelet", -- [8]
+					"got", -- [9]
+					"lots", -- [10]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Chrysterp-Golemagg",
+				["instanceID"] = -1,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 1000,
+				["minLevel"] = 0,
+				["instanceName"] = "Miscellaneous",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483747,
+				["createdat"] = 1676483559,
+			},
+			["Bowhans-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Bowhans-Golemagg",
+				["maxLevel"] = 80,
+				["createdat"] = 1676458655,
+				["instanceID"] = 33,
+				["resultID"] = 744,
+				["minLevel"] = 78,
+				["instanceName"] = "The Crown Chemical Co.",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676458818,
+				["classColor"] = "abd473",
+			},
+			["Croakz-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Croakz-Golemagg",
+				["maxLevel"] = 80,
+				["resultID"] = 415,
+				["classColor"] = "8787ed",
+				["minLevel"] = 80,
+				["createdat"] = 1676453871,
+				["instanceName"] = "Vault of Archavon",
+				["rolesNeeded"] = {
+				},
+				["timestamp"] = 1676454444,
+				["instanceID"] = 624,
+			},
+			["Pekopan-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1000,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ragefire Chasm",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "RFC.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ragefire Chasm",
+				["author"] = "Pekopan-Golemagg",
+				["instanceName"] = "Ragefire Chasm",
+				["resultID"] = 337,
+				["instanceID"] = 389,
+				["classColor"] = "abd473",
+				["createdat"] = 1676490532,
+				["maxLevel"] = 20,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490825,
+				["minLevel"] = 13,
+			},
+			["Rupes-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3300,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Culling of Stratholme",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "COS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Culling of Stratholme",
+				["author"] = "Rupes-Golemagg",
+				["maxLevel"] = 80,
+				["createdat"] = 1676448457,
+				["instanceID"] = 595,
+				["resultID"] = 27,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Culling of Stratholme",
+				["timestamp"] = 1676449926,
+				["classColor"] = "fff569",
+			},
+			["Demonwitch-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "WTS |cff0070dd|Hitem:45087::::::::80:::::::::|h[Runed Orb]|h|r",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"wts", -- [1]
+					"hitem", -- [2]
+					"45087", -- [3]
+					"80", -- [4]
+					"h", -- [5]
+					"runed", -- [6]
+					"orb", -- [7]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Demonwitch-Golemagg",
+				["classColor"] = "69CCF0",
+				["instanceID"] = -1,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676453768,
+				["createdat"] = 1676453768,
+			},
+			["Conradbilly-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3180,
+				["msg"] = "NEED HEALER FOR HEROIC UK",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "UK.tga",
+				["words"] = {
+					"need", -- [1]
+					"healer", -- [2]
+					"for", -- [3]
+					"heroic", -- [4]
+					"uk", -- [5]
+				},
+				["fullName"] = "Heroic Utgarde Keep",
+				["author"] = "Conradbilly-Golemagg",
+				["classColor"] = "69CCF0",
+				["instanceID"] = 574,
+				["rolesNeeded"] = {
+					2, -- [1]
+				},
+				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Utgarde Keep",
+				["timestamp"] = 1676459115,
+				["createdat"] = 1676459115,
+			},
+			["Thorendor-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3410,
+				["msg"] = "Ele shaman LFG voa 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"ele", -- [1]
+					"shaman", -- [2]
+					"lfg", -- [3]
+					"voa", -- [4]
+					"25", -- [5]
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Thorendor-Golemagg",
+				["classColor"] = "0070DE",
+				["instanceID"] = 624,
+				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676451006,
+				["maxLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676451006,
+				["minLevel"] = 80,
+			},
+			["Takyons-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3170,
+				["msg"] = "LFM UP HC+ Need tank",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "UP.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"up", -- [2]
+					"hc", -- [3]
+					"need", -- [4]
+					"tank", -- [5]
+				},
+				["fullName"] = "Heroic Utgarde Pinnacle",
+				["author"] = "Takyons-Golemagg",
+				["classColor"] = "0070DE",
+				["instanceID"] = 575,
+				["instanceName"] = "Utgarde Pinnacle",
+				["createdat"] = 1676490743,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+				},
+				["timestamp"] = 1676490743,
+				["maxLevel"] = 80,
 			},
 			["Gaffir-Golemagg"] = {
 				["isLFG"] = false,
@@ -14066,41 +22469,128 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Gaffir-Golemagg",
+				["maxLevel"] = 1000,
+				["createdat"] = 1676455658,
 				["instanceID"] = -1,
-				["classColor"] = "C41F3B",
 				["icon"] = "Other.tga",
 				["minLevel"] = 0,
-				["instanceName"] = "Miscellaneous",
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
+				["instanceName"] = "Miscellaneous",
 				["timestamp"] = 1676455891,
-				["createdat"] = 1676455658,
-				["maxLevel"] = 1000,
+				["classColor"] = "C41F3B",
 			},
-			["Jonák-Golemagg"] = {
+			["Rakarrus-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3300,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Culling of Stratholme",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "COS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Culling of Stratholme",
+				["author"] = "Rakarrus-Golemagg",
+				["classColor"] = "0070de",
+				["minLevel"] = 80,
+				["instanceID"] = 595,
+				["createdat"] = 1676480414,
+				["resultID"] = 46,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Culling of Stratholme",
+				["timestamp"] = 1676483744,
+				["maxLevel"] = 80,
+			},
+			["Norkyorky-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3320,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 10",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Norkyorky-Golemagg",
+				["maxLevel"] = 80,
+				["resultID"] = 457,
+				["classColor"] = "abd473",
+				["minLevel"] = 80,
+				["createdat"] = 1676454378,
+				["instanceName"] = "Vault of Archavon",
+				["rolesNeeded"] = {
+				},
+				["timestamp"] = 1676454444,
+				["instanceID"] = 624,
+			},
+			["Momamilker-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = 3410,
-				["msg"] = "LFM VOA 25 Class Run /w me!",
-				["groupSize"] = 25,
+				["order"] = 3320,
+				["msg"] = "LF DPS druid/ lock or hunter VoA 10 last two spots",
+				["groupSize"] = 10,
 				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "MS > OS",
 				["icon"] = "VOA.tga",
 				["words"] = {
-					"lfm", -- [1]
-					"voa", -- [2]
-					"25", -- [3]
-					"class", -- [4]
-					"run", -- [5]
-					"w", -- [6]
-					"me", -- [7]
+					"lf", -- [1]
+					"dps", -- [2]
+					"druid", -- [3]
+					"lock", -- [4]
+					"or", -- [5]
+					"hunter", -- [6]
+					"voa", -- [7]
+					"10", -- [8]
+					"last", -- [9]
+					"two", -- [10]
+					"spots", -- [11]
 				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Jonák-Golemagg",
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Momamilker-Golemagg",
 				["instanceID"] = 624,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 80,
+				["createdat"] = 1676490297,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490358,
 				["minLevel"] = 80,
-				["createdat"] = 1676452594,
+			},
+			["Hargón-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3320,
+				["msg"] = "LF1M VoA10 - rogue LAST SPOT",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lf1m", -- [1]
+					"voa10", -- [2]
+					"rogue", -- [3]
+					"last", -- [4]
+					"spot", -- [5]
+				},
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Hargón-Golemagg",
+				["instanceID"] = 624,
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 80,
+				["createdat"] = 1676458001,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -14108,9 +22598,404 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454093,
-				["maxLevel"] = 80,
+				["timestamp"] = 1676458239,
+				["minLevel"] = 80,
+			},
+			["Sagittaríus-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3020,
+				["msg"] = "LFM tank and healer Azjol normal",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"tank", -- [2]
+					"and", -- [3]
+					"healer", -- [4]
+					"azjol", -- [5]
+					"normal", -- [6]
+				},
+				["fullName"] = "Azjol-Nerub",
+				["author"] = "Sagittaríus-Golemagg",
+				["instanceID"] = 601,
+				["classColor"] = "ABD473",
+				["maxLevel"] = 77,
+				["createdat"] = 1676458021,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+				},
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676458022,
+				["minLevel"] = 70,
+			},
+			["Stepsïs-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3070,
+				["msg"] = "LF 1 dps gundrak norm",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "GUN.tga",
+				["words"] = {
+					"lf", -- [1]
+					"1", -- [2]
+					"dps", -- [3]
+					"gundrak", -- [4]
+					"norm", -- [5]
+				},
+				["fullName"] = "Gundrak",
+				["author"] = "Stepsïs-Golemagg",
 				["classColor"] = "F58CBA",
+				["instanceID"] = 604,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["minLevel"] = 76,
+				["maxLevel"] = 80,
+				["instanceName"] = "Gundrak",
+				["timestamp"] = 1676456258,
+				["createdat"] = 1676456258,
+			},
+			["Dynami-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3370,
+				["msg"] = "LFM Ulduar 10 HM - Balance Druid, last spot. Doing all HMs, so need gear + exp please.",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"ulduar", -- [2]
+					"10", -- [3]
+					"hm", -- [4]
+					"balance", -- [5]
+					"druid", -- [6]
+					"last", -- [7]
+					"spot", -- [8]
+					"doing", -- [9]
+					"all", -- [10]
+					"hms", -- [11]
+					"so", -- [12]
+					"need", -- [13]
+					"gear", -- [14]
+					"exp", -- [15]
+					"please", -- [16]
+				},
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Dynami-Golemagg",
+				["maxLevel"] = 80,
+				["instanceID"] = 603,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 80,
+				["createdat"] = 1676448443,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676448443,
+				["classColor"] = "C41F3B",
+			},
+			["Kruxy-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Kruxy-Golemagg",
+				["maxLevel"] = 80,
+				["createdat"] = 1676449597,
+				["instanceID"] = 33,
+				["resultID"] = 12,
+				["minLevel"] = 78,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "The Crown Chemical Co.",
+				["timestamp"] = 1676450196,
+				["classColor"] = "8787ed",
+			},
+			["Alecks-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "LF Tank Crown Chem Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"lf", -- [1]
+					"tank", -- [2]
+					"crown", -- [3]
+					"chem", -- [4]
+					"co", -- [5]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Alecks-Golemagg",
+				["maxLevel"] = 1000,
+				["instanceID"] = -1,
+				["rolesNeeded"] = {
+					1, -- [1]
+				},
+				["minLevel"] = 0,
+				["createdat"] = 1676447836,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676447925,
+				["classColor"] = "FFF569",
+			},
+			["Wutsi-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "LFM voa25  - shaman",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"voa25", -- [2]
+					"shaman", -- [3]
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Wutsi-Golemagg",
+				["classColor"] = "9482C9",
+				["instanceID"] = 624,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676456174,
+				["createdat"] = 1676455897,
+			},
+			["Koujis-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3320,
+				["msg"] = "LFM VOA10 class run - hunter",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"voa10", -- [2]
+					"class", -- [3]
+					"run", -- [4]
+					"hunter", -- [5]
+				},
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Koujis-Golemagg",
+				["instanceID"] = 624,
+				["classColor"] = "C79C6E",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483481,
+				["createdat"] = 1676483481,
+			},
+			["Feralfire-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "LF1M dps OS8, 0 drake, 1xSR > MS > OS",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"lf1m", -- [1]
+					"dps", -- [2]
+					"os8", -- [3]
+					"0", -- [4]
+					"drake", -- [5]
+					"1xsr", -- [6]
+					"msos", -- [7]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Feralfire-Golemagg",
+				["classColor"] = "FF7D0A",
+				["instanceID"] = -1,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676457706,
+				["createdat"] = 1676456688,
+			},
+			["Yubó-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3310,
+				["msg"] = "LF1M Tank - Daily HC+  Azjol Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+					"lf1m", -- [1]
+					"tank", -- [2]
+					"daily", -- [3]
+					"hc", -- [4]
+					"azjol", -- [5]
+					"nerub", -- [6]
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Yubó-Golemagg",
+				["maxLevel"] = 80,
+				["instanceID"] = 601,
+				["rolesNeeded"] = {
+					1, -- [1]
+				},
+				["minLevel"] = 80,
+				["createdat"] = 1676448685,
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676448754,
+				["classColor"] = "0070DE",
+			},
+			["Dreedex-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Dreedex-Golemagg",
+				["maxLevel"] = 80,
+				["createdat"] = 1676457919,
+				["classColor"] = "abd473",
+				["resultID"] = 796,
+				["minLevel"] = 78,
+				["instanceName"] = "The Crown Chemical Co.",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676458818,
+				["instanceID"] = 33,
+			},
+			["Jonislele-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3350,
+				["msg"] = "eoe10! 1SR MS>OS, [melancholy hr] need 1 dps",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "EOE.tga",
+				["words"] = {
+					"eoe10", -- [1]
+					"1sr", -- [2]
+					"msos", -- [3]
+					"melancholy", -- [4]
+					"hr", -- [5]
+					"need", -- [6]
+					"1", -- [7]
+					"dps", -- [8]
+				},
+				["fullName"] = "Eye of Eternity - 10",
+				["author"] = "Jonislele-Golemagg",
+				["instanceID"] = 616,
+				["classColor"] = "C79C6E",
+				["maxLevel"] = 80,
+				["createdat"] = 1676458084,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+				},
+				["instanceName"] = "Eye of Eternity",
+				["timestamp"] = 1676459138,
+				["minLevel"] = 80,
+			},
+			["Anlon-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "{star}LFM ULDU 25 FULL NM. Need Heals + DPS. Link curve or any ulduar exp. Fragments/orbs HR, Patterns on raid roll. 3SR>MS>OS",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"star", -- [1]
+					"lfm", -- [2]
+					"uldu", -- [3]
+					"25", -- [4]
+					"full", -- [5]
+					"nm", -- [6]
+					"need", -- [7]
+					"heals", -- [8]
+					"dps", -- [9]
+					"link", -- [10]
+					"curve", -- [11]
+					"or", -- [12]
+					"any", -- [13]
+					"ulduar", -- [14]
+					"exp", -- [15]
+					"fragments", -- [16]
+					"orbs", -- [17]
+					"hr", -- [18]
+					"patterns", -- [19]
+					"on", -- [20]
+					"raid", -- [21]
+					"roll", -- [22]
+					"3sr", -- [23]
+					"msos", -- [24]
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Anlon-Golemagg",
+				["classColor"] = "69CCF0",
+				["instanceID"] = 603,
+				["instanceName"] = "Ulduar",
+				["createdat"] = 1676490574,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["timestamp"] = 1676490632,
+				["maxLevel"] = 80,
 			},
 			["Porro-Golemagg"] = {
 				["isLFG"] = false,
@@ -14134,48 +23019,82 @@ GroupieDB = {
 				},
 				["fullName"] = "Naxxramas - 10",
 				["author"] = "Porro-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "9482C9",
-				["instanceID"] = 533,
-				["createdat"] = 1676455229,
-				["minLevel"] = 80,
-				["instanceName"] = "Naxxramas",
-				["timestamp"] = 1676455645,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["maxLevel"] = 80,
-			},
-			["Conradbilly-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3180,
-				["msg"] = "NEED HEALER FOR HEROIC UK",
-				["groupSize"] = 5,
-				["isHeroic"] = true,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "UK.tga",
-				["words"] = {
-					"need", -- [1]
-					"healer", -- [2]
-					"for", -- [3]
-					"heroic", -- [4]
-					"uk", -- [5]
-				},
-				["fullName"] = "Heroic Utgarde Keep",
-				["author"] = "Conradbilly-Golemagg",
-				["instanceID"] = 574,
-				["classColor"] = "69CCF0",
-				["createdat"] = 1676459115,
-				["maxLevel"] = 80,
-				["instanceName"] = "Utgarde Keep",
-				["timestamp"] = 1676459115,
-				["rolesNeeded"] = {
-					2, -- [1]
-				},
+				["createdat"] = 1676455229,
 				["minLevel"] = 80,
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676455645,
+				["instanceID"] = 533,
+			},
+			["Lichmyashl-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 1200,
+				["msg"] = "LFM UD10 with HMs XT,IC,Hodir,Thorim, Freya (maybe we ll try mimiron vezax and Yogg) Start at 20.00 GS and achiev 3x SR BoE/orbs/disc HR need disco priest, warlock, boomie, hunter and shammy",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "SoftRes",
+				["icon"] = "STRAT.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"ud10", -- [2]
+					"with", -- [3]
+					"hms", -- [4]
+					"xt", -- [5]
+					"ic", -- [6]
+					"hodir", -- [7]
+					"thorim", -- [8]
+					"freya", -- [9]
+					"maybe", -- [10]
+					"we", -- [11]
+					"ll", -- [12]
+					"try", -- [13]
+					"mimiron", -- [14]
+					"vezax", -- [15]
+					"and", -- [16]
+					"yogg", -- [17]
+					"start", -- [18]
+					"at", -- [19]
+					"20", -- [20]
+					"00", -- [21]
+					"gs", -- [22]
+					"achiev", -- [23]
+					"3x", -- [24]
+					"sr", -- [25]
+					"boe", -- [26]
+					"orbs", -- [27]
+					"disc", -- [28]
+					"hr", -- [29]
+					"need", -- [30]
+					"disco", -- [31]
+					"priest", -- [32]
+					"warlock", -- [33]
+					"boomie", -- [34]
+					"hunter", -- [35]
+					"shammy", -- [36]
+				},
+				["fullName"] = "Stratholme",
+				["author"] = "Lichmyashl-Golemagg",
+				["instanceID"] = 329,
+				["classColor"] = "C41F3B",
+				["maxLevel"] = 61,
+				["minLevel"] = 56,
+				["instanceName"] = "Stratholme",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483559,
+				["createdat"] = 1676483559,
 			},
 			["Falcús-Golemagg"] = {
 				["isLFG"] = false,
@@ -14190,18 +23109,18 @@ GroupieDB = {
 				},
 				["fullName"] = "Old Hillsbrad Foothills",
 				["author"] = "Falcús-Golemagg",
-				["classColor"] = "ff7d0a",
-				["instanceID"] = 560,
-				["minLevel"] = 66,
+				["maxLevel"] = 72,
 				["resultID"] = 379,
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 66,
+				["createdat"] = 1676451417,
+				["instanceName"] = "Old Hillsbrad Foothills",
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
-				["instanceName"] = "Old Hillsbrad Foothills",
 				["timestamp"] = 1676452720,
-				["createdat"] = 1676451417,
-				["maxLevel"] = 72,
+				["instanceID"] = 560,
 			},
 			["Kriptás-Golemagg"] = {
 				["isLFG"] = false,
@@ -14220,12 +23139,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Kriptás-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "FFFFFF",
-				["createdat"] = 1676453153,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676454413,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -14233,6 +23148,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676454413,
+				["createdat"] = 1676453153,
 			},
 			["Lefciodk-Golemagg"] = {
 				["isLFG"] = false,
@@ -14252,93 +23171,83 @@ GroupieDB = {
 				["fullName"] = "Miscellaneous",
 				["author"] = "Lefciodk-Golemagg",
 				["instanceID"] = -1,
+				["classColor"] = "C41F3B",
+				["maxLevel"] = 1000,
 				["createdat"] = 1676458000,
-				["minLevel"] = 0,
-				["instanceName"] = "Miscellaneous",
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
+				["instanceName"] = "Miscellaneous",
 				["timestamp"] = 1676458212,
-				["maxLevel"] = 1000,
-				["classColor"] = "C41F3B",
+				["minLevel"] = 0,
 			},
-			["Allrea-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3420,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Obsidian Sanctum 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "OS.tga",
-				["words"] = {
-				},
-				["fullName"] = "Obsidian Sanctum - 25",
-				["author"] = "Allrea-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "0070de",
-				["createdat"] = 1676451715,
-				["minLevel"] = 80,
-				["instanceName"] = "Obsidian Sanctum",
-				["rolesNeeded"] = {
-				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 276,
-				["instanceID"] = 615,
-			},
-			["Procurer-Golemagg"] = {
+			["Lidyismad-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = 3460,
-				["msg"] = "[ATM] Running Ulduar 25 Sunday 20:00 ST. Sign here to secure your spot! https://discord.gg/XnJpN5W3NY - Fast full normal clear, 3x SR > MS > OS - Frags HR",
+				["order"] = 3430,
+				["msg"] = "LFM NAXX 25M {Turning Tide HR} 1 SR >MS>OS SKIP RUN 24/25",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "MS > OS",
-				["icon"] = "ULD.tga",
+				["icon"] = "NAX.tga",
 				["words"] = {
-					"atm", -- [1]
-					"running", -- [2]
-					"ulduar", -- [3]
-					"25", -- [4]
-					"sunday", -- [5]
-					"20", -- [6]
-					"00", -- [7]
-					"st", -- [8]
-					"sign", -- [9]
-					"here", -- [10]
-					"to", -- [11]
-					"secure", -- [12]
-					"your", -- [13]
-					"spot", -- [14]
-					"https", -- [15]
-					"discord", -- [16]
-					"gg", -- [17]
-					"xnjpn5w3ny", -- [18]
-					"fast", -- [19]
-					"full", -- [20]
-					"normal", -- [21]
-					"clear", -- [22]
-					"3x", -- [23]
-					"sr", -- [24]
-					"msos", -- [25]
-					"frags", -- [26]
-					"hr", -- [27]
+					"lfm", -- [1]
+					"naxx", -- [2]
+					"25m", -- [3]
+					"turning", -- [4]
+					"tide", -- [5]
+					"hr", -- [6]
+					"1", -- [7]
+					"sr", -- [8]
+					"msos", -- [9]
+					"skip", -- [10]
+					"run", -- [11]
+					"24", -- [12]
+					"25", -- [13]
 				},
-				["fullName"] = "Ulduar - 25",
-				["author"] = "Procurer-Golemagg",
-				["instanceID"] = 603,
-				["classColor"] = "C41F3B",
-				["createdat"] = 1676456718,
+				["fullName"] = "Naxxramas - 25",
+				["author"] = "Lidyismad-Golemagg",
 				["maxLevel"] = 80,
-				["instanceName"] = "Ulduar",
-				["timestamp"] = 1676456976,
+				["instanceID"] = 533,
+				["instanceName"] = "Naxxramas",
+				["createdat"] = 1676455510,
+				["classColor"] = "9482C9",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["timestamp"] = 1676456050,
 				["minLevel"] = 80,
+			},
+			["Brinteyfears-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1120,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Uldaman",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULDA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Uldaman",
+				["author"] = "Brinteyfears-Golemagg",
+				["instanceID"] = 70,
+				["createdat"] = 1676489883,
+				["classColor"] = "8787ed",
+				["maxLevel"] = 44,
+				["minLevel"] = 36,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Uldaman",
+				["timestamp"] = 1676490209,
+				["resultID"] = 97,
 			},
 			["Atog-Golemagg"] = {
 				["isLFG"] = false,
@@ -14361,12 +23270,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Atog-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "ABD473",
-				["createdat"] = 1676456133,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676456133,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -14374,6 +23279,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676456133,
+				["createdat"] = 1676456133,
 			},
 			["Snísk-Golemagg"] = {
 				["isLFG"] = false,
@@ -14397,40 +23306,44 @@ GroupieDB = {
 				},
 				["fullName"] = "Obsidian Sanctum - 10",
 				["author"] = "Snísk-Golemagg",
-				["instanceID"] = 615,
 				["classColor"] = "FF7D0A",
-				["createdat"] = 1676454279,
-				["maxLevel"] = 80,
-				["instanceName"] = "Obsidian Sanctum",
-				["timestamp"] = 1676454469,
+				["instanceID"] = 615,
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Obsidian Sanctum",
+				["timestamp"] = 1676454469,
+				["createdat"] = 1676454279,
 			},
-			["Whysoseríous-Golemagg"] = {
+			["Hugehoehilda-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
-				["groupSize"] = 25,
+				["order"] = 3060,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Halls of Stone",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["icon"] = "HOS.tga",
 				["words"] = {
 				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Whysoseríous-Golemagg",
+				["fullName"] = "Halls of Stone",
+				["author"] = "Hugehoehilda-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "8787ed",
-				["createdat"] = 1676452002,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["minLevel"] = 75,
+				["instanceID"] = 599,
+				["resultID"] = 791,
+				["createdat"] = 1676455124,
+				["instanceName"] = "Halls of Stone",
 				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
 				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 297,
-				["instanceID"] = 624,
+				["timestamp"] = 1676458818,
+				["classColor"] = "f58cba",
 			},
 			["Jedì-Golemagg"] = {
 				["isLFG"] = false,
@@ -14460,12 +23373,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Jedì-Golemagg",
-				["instanceID"] = -1,
 				["maxLevel"] = 1000,
-				["createdat"] = 1676452818,
-				["classColor"] = "69CCF0",
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676456705,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -14473,35 +23382,87 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["classColor"] = "69CCF0",
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676456705,
+				["createdat"] = 1676452818,
 			},
-			["Dasheng-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3430,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Naxxramas 25",
-				["groupSize"] = 25,
+			["Vaskad-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3330,
+				["msg"] = "LFM naxx 10. Full run!  need 1 healer and 2 DPS.  LL is reserved.",
+				["groupSize"] = 10,
 				["isHeroic"] = false,
-				["isLFM"] = false,
+				["isLFM"] = true,
 				["lootType"] = "MS > OS",
 				["icon"] = "NAX.tga",
 				["words"] = {
+					"lfm", -- [1]
+					"naxx", -- [2]
+					"10", -- [3]
+					"full", -- [4]
+					"run", -- [5]
+					"need", -- [6]
+					"1", -- [7]
+					"healer", -- [8]
+					"and", -- [9]
+					"2", -- [10]
+					"dps", -- [11]
+					"ll", -- [12]
+					"is", -- [13]
+					"reserved", -- [14]
 				},
-				["fullName"] = "Naxxramas - 25",
-				["author"] = "Dasheng-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "f58cba",
-				["createdat"] = 1676448968,
-				["minLevel"] = 80,
-				["instanceName"] = "Naxxramas",
-				["rolesNeeded"] = {
-				},
-				["timestamp"] = 1676454462,
-				["resultID"] = 505,
+				["fullName"] = "Naxxramas - 10",
+				["author"] = "Vaskad-Golemagg",
 				["instanceID"] = 533,
+				["classColor"] = "C79C6E",
+				["maxLevel"] = 80,
+				["createdat"] = 1676490201,
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676490613,
+				["minLevel"] = 80,
 			},
-			["Jackelbbk-Golemagg"] = {
+			["Labbetøsa-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "LF1M need 1 healer for holyday event boss",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"lf1m", -- [1]
+					"need", -- [2]
+					"1", -- [3]
+					"healer", -- [4]
+					"for", -- [5]
+					"holyday", -- [6]
+					"event", -- [7]
+					"boss", -- [8]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Labbetøsa-Golemagg",
+				["instanceID"] = -1,
+				["classColor"] = "ABD473",
+				["maxLevel"] = 1000,
+				["minLevel"] = 0,
+				["instanceName"] = "Miscellaneous",
+				["rolesNeeded"] = {
+					2, -- [1]
+				},
+				["timestamp"] = 1676483589,
+				["createdat"] = 1676483466,
+			},
+			["Clownclass-Golemagg"] = {
 				["isLFG"] = false,
 				["order"] = 3410,
-				["msg"] = "LFM VOA 25 SEPC RUN DK BLOOD WARRIOR PROT AND DRUID",
+				["msg"] = "LFM VoA 18 spec run /w Gs Need 1 tank \"not dk\" Disc,restos / dps > druids hunter sham",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
 				["isLFM"] = true,
@@ -14510,155 +23471,161 @@ GroupieDB = {
 				["words"] = {
 					"lfm", -- [1]
 					"voa", -- [2]
-					"25", -- [3]
-					"sepc", -- [4]
+					"18", -- [3]
+					"spec", -- [4]
 					"run", -- [5]
-					"dk", -- [6]
-					"blood", -- [7]
-					"warrior", -- [8]
-					"prot", -- [9]
-					"and", -- [10]
-					"druid", -- [11]
+					"w", -- [6]
+					"gs", -- [7]
+					"need", -- [8]
+					"1", -- [9]
+					"tank", -- [10]
+					"not", -- [11]
+					"dk", -- [12]
+					"disc", -- [13]
+					"restos", -- [14]
+					"dps", -- [15]
+					"druids", -- [16]
+					"hunter", -- [17]
+					"sham", -- [18]
 				},
 				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Jackelbbk-Golemagg",
+				["author"] = "Clownclass-Golemagg",
+				["classColor"] = "C41F3B",
 				["instanceID"] = 624,
-				["classColor"] = "69CCF0",
-				["createdat"] = 1676455147,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676455596,
 				["rolesNeeded"] = {
 					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
+					3, -- [2]
+					4, -- [3]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676450167,
+				["createdat"] = 1676449932,
 			},
-			["Realpala-Golemagg"] = {
+			["Liquidsnails-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "DK tank 4642 LF ULDUAR10this afternoon with some HC /// XP : Iron council, Freja, Thorim, XT 2%. (off spec dps 4247 forst)",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"dk", -- [1]
+					"tank", -- [2]
+					"4642", -- [3]
+					"lf", -- [4]
+					"ulduar10this", -- [5]
+					"afternoon", -- [6]
+					"with", -- [7]
+					"some", -- [8]
+					"hc", -- [9]
+					"xp", -- [10]
+					"iron", -- [11]
+					"council", -- [12]
+					"freja", -- [13]
+					"thorim", -- [14]
+					"xt", -- [15]
+					"2", -- [16]
+					"off", -- [17]
+					"spec", -- [18]
+					"dps", -- [19]
+					"4247", -- [20]
+					"forst", -- [21]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Liquidsnails-Golemagg",
+				["classColor"] = "C41F3B",
+				["instanceID"] = -1,
+				["rolesNeeded"] = {
+					1, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676457749,
+				["createdat"] = 1676452899,
+			},
+			["Tejal-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3320,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Vault of Archavon 10",
-				["groupSize"] = 10,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
+				["groupSize"] = 25,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
 				["icon"] = "VOA.tga",
 				["words"] = {
 				},
-				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Realpala-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "f58cba",
-				["createdat"] = 1676451908,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["rolesNeeded"] = {
-				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 237,
-				["instanceID"] = 624,
-			},
-			["Bitoni-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3410,
-				["msg"] = "LFM voa 25  /w gs and spec need   feral druid or boomie  summ rdy at boss",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["maxLevel"] = 80,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-					"lfm", -- [1]
-					"voa", -- [2]
-					"25", -- [3]
-					"w", -- [4]
-					"gs", -- [5]
-					"and", -- [6]
-					"spec", -- [7]
-					"need", -- [8]
-					"feral", -- [9]
-					"druid", -- [10]
-					"or", -- [11]
-					"boomie", -- [12]
-					"summ", -- [13]
-					"rdy", -- [14]
-					"at", -- [15]
-					"boss", -- [16]
-				},
 				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Bitoni-Golemagg",
-				["classColor"] = "F58CBA",
-				["isLFM"] = true,
+				["author"] = "Tejal-Golemagg",
+				["maxLevel"] = 80,
+				["resultID"] = 466,
+				["classColor"] = "c41f3b",
 				["minLevel"] = 80,
-				["instanceID"] = 624,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676455628,
+				["createdat"] = 1676454412,
 				["instanceName"] = "Vault of Archavon",
-				["createdat"] = 1676454400,
+				["rolesNeeded"] = {
+				},
+				["timestamp"] = 1676454444,
+				["instanceID"] = 624,
 			},
-			["Jonislele-Golemagg"] = {
+			["Pappajocke-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = 3350,
-				["msg"] = "eoe10! 1SR MS>OS, [melancholy hr] need 1 dps",
-				["groupSize"] = 10,
+				["order"] = -1,
+				["msg"] = "LF DPS DAILY HC+",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "EOE.tga",
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
 				["words"] = {
-					"eoe10", -- [1]
-					"1sr", -- [2]
-					"msos", -- [3]
-					"melancholy", -- [4]
-					"hr", -- [5]
-					"need", -- [6]
-					"1", -- [7]
-					"dps", -- [8]
+					"lf", -- [1]
+					"dps", -- [2]
+					"daily", -- [3]
+					"hc", -- [4]
 				},
-				["fullName"] = "Eye of Eternity - 10",
-				["author"] = "Jonislele-Golemagg",
-				["instanceID"] = 616,
-				["createdat"] = 1676458084,
-				["minLevel"] = 80,
-				["instanceName"] = "Eye of Eternity",
+				["fullName"] = "Miscellaneous",
+				["author"] = "Pappajocke-Golemagg",
+				["classColor"] = "C79C6E",
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
-				["timestamp"] = 1676459138,
-				["maxLevel"] = 80,
-				["classColor"] = "C79C6E",
+				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676457266,
+				["createdat"] = 1676457228,
 			},
-			["Lydløs-Golemagg"] = {
+			["Qelaxwk-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3330,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Naxxramas 10",
-				["groupSize"] = 10,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
+				["groupSize"] = 25,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "NAX.tga",
+				["icon"] = "VOA.tga",
 				["words"] = {
 				},
-				["fullName"] = "Naxxramas - 10",
-				["author"] = "Lydløs-Golemagg",
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Qelaxwk-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "c41f3b",
-				["createdat"] = 1676451699,
+				["resultID"] = 477,
+				["classColor"] = "8787ed",
 				["minLevel"] = 80,
-				["instanceName"] = "Naxxramas",
+				["createdat"] = 1676454146,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["timestamp"] = 1676452083,
-				["resultID"] = 334,
-				["instanceID"] = 533,
+				["timestamp"] = 1676454444,
+				["instanceID"] = 624,
 			},
 			["Tridok-Golemagg"] = {
 				["isLFG"] = true,
@@ -14673,16 +23640,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Tridok-Golemagg",
-				["classColor"] = "f58cba",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 418,
+				["classColor"] = "f58cba",
+				["minLevel"] = 80,
+				["createdat"] = 1676454388,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454388,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
 			["Ígnition-Golemagg"] = {
 				["isLFG"] = true,
@@ -14697,57 +23664,76 @@ GroupieDB = {
 				},
 				["fullName"] = "Slave Pens",
 				["author"] = "Ígnition-Golemagg",
-				["instanceID"] = 547,
-				["classColor"] = "40c7eb",
-				["resultID"] = 2,
+				["maxLevel"] = 69,
 				["createdat"] = 1676447177,
-				["instanceName"] = "Slave Pens",
+				["instanceID"] = 547,
+				["resultID"] = 2,
+				["minLevel"] = 61,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "Slave Pens",
 				["timestamp"] = 1676449926,
-				["minLevel"] = 61,
-				["maxLevel"] = 69,
+				["classColor"] = "40c7eb",
 			},
-			["Thaza-Golemagg"] = {
+			["Inypal-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = 3410,
-				["msg"] = "voa 18 spec run need restro shaman/disco priest/bala druid",
+				["order"] = 3460,
+				["msg"] = "<RABIES> Hosting Ulduar 25 +4-5HM on Wednesday 19:30ST - Semiguild run - 3xSR (BOE/Orbs/Frags HR)- Need Hpala/Balance/Shadow for tonight. More info & Signups: https://discord.gg/H8bb59pBnN",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["icon"] = "ULD.tga",
 				["words"] = {
-					"voa", -- [1]
-					"18", -- [2]
-					"spec", -- [3]
-					"run", -- [4]
-					"need", -- [5]
-					"restro", -- [6]
-					"shaman", -- [7]
-					"disco", -- [8]
-					"priest", -- [9]
-					"bala", -- [10]
-					"druid", -- [11]
+					"rabies", -- [1]
+					"hosting", -- [2]
+					"ulduar", -- [3]
+					"25", -- [4]
+					"4", -- [5]
+					"5hm", -- [6]
+					"on", -- [7]
+					"wednesday", -- [8]
+					"19", -- [9]
+					"30st", -- [10]
+					"semiguild", -- [11]
+					"run", -- [12]
+					"3xsr", -- [13]
+					"boe", -- [14]
+					"orbs", -- [15]
+					"frags", -- [16]
+					"hr", -- [17]
+					"need", -- [18]
+					"hpala", -- [19]
+					"balance", -- [20]
+					"shadow", -- [21]
+					"for", -- [22]
+					"tonight", -- [23]
+					"more", -- [24]
+					"info", -- [25]
+					"signups", -- [26]
+					"https", -- [27]
+					"discord", -- [28]
+					"gg", -- [29]
+					"h8bb59pbnn", -- [30]
 				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Thaza-Golemagg",
-				["instanceID"] = 624,
-				["classColor"] = "C79C6E",
-				["createdat"] = 1676452708,
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Inypal-Golemagg",
 				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676452787,
+				["classColor"] = "F58CBA",
+				["instanceName"] = "Ulduar",
+				["createdat"] = 1676447597,
+				["instanceID"] = 603,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["timestamp"] = 1676455956,
 				["minLevel"] = 80,
 			},
 			["Deraperpton-Golemagg"] = {
@@ -14763,20 +23749,20 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Deraperpton-Golemagg",
-				["instanceName"] = "Azjol-Nerub",
-				["instanceID"] = 601,
-				["minLevel"] = 80,
-				["resultID"] = 777,
 				["maxLevel"] = 80,
+				["resultID"] = 777,
+				["classColor"] = "c79c6e",
+				["minLevel"] = 80,
+				["createdat"] = 1676458116,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "Azjol-Nerub",
 				["timestamp"] = 1676458818,
-				["createdat"] = 1676458116,
-				["classColor"] = "c79c6e",
+				["instanceID"] = 601,
 			},
 			["Bubblehips-Golemagg"] = {
 				["isLFG"] = false,
@@ -14830,380 +23816,292 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Bubblehips-Golemagg",
+				["maxLevel"] = 1000,
 				["instanceID"] = -1,
-				["classColor"] = "FFFFFF",
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
 				["minLevel"] = 0,
 				["createdat"] = 1676448654,
 				["instanceName"] = "Miscellaneous",
 				["timestamp"] = 1676453507,
-				["rolesNeeded"] = {
-					3, -- [1]
-					4, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["maxLevel"] = 1000,
+				["classColor"] = "FFFFFF",
 			},
-			["Farrelein-Golemagg"] = {
+			["Bamski-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = -1,
-				["msg"] = "LFM for holiday event boss, mount HR, paying 5k to everyone if drops, heal last spot",
+				["order"] = 1040,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Blackfathom Deeps | Need Healer, 2 DPS",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "Other.tga",
+				["lootType"] = "MS > OS",
+				["icon"] = "BFD.tga",
 				["words"] = {
-					"lfm", -- [1]
-					"for", -- [2]
-					"holiday", -- [3]
-					"event", -- [4]
-					"boss", -- [5]
-					"mount", -- [6]
-					"hr", -- [7]
-					"paying", -- [8]
-					"5k", -- [9]
-					"to", -- [10]
-					"everyone", -- [11]
-					"if", -- [12]
-					"drops", -- [13]
-					"heal", -- [14]
-					"last", -- [15]
-					"spot", -- [16]
 				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Farrelein-Golemagg",
-				["instanceID"] = -1,
-				["maxLevel"] = 1000,
-				["createdat"] = 1676452884,
-				["classColor"] = "69CCF0",
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676456962,
+				["fullName"] = "Blackfathom Deeps",
+				["author"] = "Bamski-Golemagg",
+				["instanceID"] = 48,
+				["maxLevel"] = 28,
+				["classColor"] = "f58cba",
+				["minLevel"] = 20,
+				["resultID"] = 154,
+				["instanceName"] = "Blackfathom Deeps",
 				["rolesNeeded"] = {
 					2, -- [1]
+					3, -- [2]
+					4, -- [3]
 				},
-				["minLevel"] = 0,
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676481203,
 			},
-			["Thpndaa-Golemagg"] = {
+			["Hesteria-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = 3410,
-				["msg"] = "LFM Voa 25 Spec Run - Need RestoShamy/WarriorTank/Dk Tank/Priest Healer",
-				["groupSize"] = 25,
+				["order"] = -1,
+				["msg"] = "LFM {x}VOA16{X} spec run ele last spot",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
 				["words"] = {
 					"lfm", -- [1]
-					"voa", -- [2]
-					"25", -- [3]
+					"x", -- [2]
+					"voa16", -- [3]
 					"spec", -- [4]
 					"run", -- [5]
-					"need", -- [6]
-					"restoshamy", -- [7]
-					"warriortank", -- [8]
-					"dk", -- [9]
-					"tank", -- [10]
-					"priest", -- [11]
-					"healer", -- [12]
-				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Thpndaa-Golemagg",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
-				["createdat"] = 1676452550,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-				},
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676453177,
-				["maxLevel"] = 80,
-				["classColor"] = "F58CBA",
-			},
-			["Muscoci-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = -1,
-				["msg"] = "lf jc with 16 str",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "Other.tga",
-				["words"] = {
-					"lf", -- [1]
-					"jc", -- [2]
-					"with", -- [3]
-					"16", -- [4]
-					"str", -- [5]
-				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Muscoci-Golemagg",
-				["instanceID"] = -1,
-				["minLevel"] = 0,
-				["createdat"] = 1676456737,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676457353,
-				["maxLevel"] = 1000,
-				["classColor"] = "C79C6E",
-			},
-			["Rumbeer-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Rumbeer-Golemagg",
-				["classColor"] = "8787ed",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
-				["resultID"] = 444,
-				["rolesNeeded"] = {
-				},
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454444,
-				["createdat"] = 1676454279,
-				["maxLevel"] = 80,
-			},
-			["Fullbringer-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 1170,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Blackrock Depths",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "BRD.tga",
-				["words"] = {
-				},
-				["fullName"] = "Blackrock Depths",
-				["author"] = "Fullbringer-Golemagg",
-				["instanceID"] = 230,
-				["classColor"] = "40c7eb",
-				["resultID"] = 391,
-				["createdat"] = 1676449555,
-				["instanceName"] = "Blackrock Depths",
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676452720,
-				["minLevel"] = 48,
-				["maxLevel"] = 60,
-			},
-			["Dreedex-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = -1,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "Other.tga",
-				["words"] = {
-				},
-				["fullName"] = "The Crown Chemical Co.",
-				["author"] = "Dreedex-Golemagg",
-				["classColor"] = "abd473",
-				["instanceID"] = 33,
-				["resultID"] = 796,
-				["createdat"] = 1676457919,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["instanceName"] = "The Crown Chemical Co.",
-				["timestamp"] = 1676458818,
-				["minLevel"] = 78,
-				["maxLevel"] = 80,
-			},
-			["Dynami-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3370,
-				["msg"] = "LFM Ulduar 10 HM - Balance Druid, last spot. Doing all HMs, so need gear + exp please.",
-				["groupSize"] = 10,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "ULD.tga",
-				["words"] = {
-					"lfm", -- [1]
-					"ulduar", -- [2]
-					"10", -- [3]
-					"hm", -- [4]
-					"balance", -- [5]
-					"druid", -- [6]
+					"ele", -- [6]
 					"last", -- [7]
 					"spot", -- [8]
-					"doing", -- [9]
-					"all", -- [10]
-					"hms", -- [11]
-					"so", -- [12]
-					"need", -- [13]
-					"gear", -- [14]
-					"exp", -- [15]
-					"please", -- [16]
 				},
-				["fullName"] = "Ulduar - 10",
-				["author"] = "Dynami-Golemagg",
-				["instanceID"] = 603,
+				["fullName"] = "Miscellaneous",
+				["author"] = "Hesteria-Golemagg",
+				["maxLevel"] = 1000,
 				["classColor"] = "C41F3B",
-				["minLevel"] = 80,
-				["createdat"] = 1676448443,
-				["instanceName"] = "Ulduar",
-				["timestamp"] = 1676448443,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["maxLevel"] = 80,
+				["createdat"] = 1676447312,
+				["minLevel"] = 0,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676450236,
+				["instanceID"] = -1,
 			},
-			["Cfa-Golemagg"] = {
+			["Buxisofbush-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 1150,
+				["msg"] = "LF2M heal/dps for ZF runs",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ZF.tga",
+				["words"] = {
+					"lf2m", -- [1]
+					"heal", -- [2]
+					"dps", -- [3]
+					"for", -- [4]
+					"zf", -- [5]
+					"runs", -- [6]
+				},
+				["fullName"] = "Zul'Farrak",
+				["author"] = "Buxisofbush-Golemagg",
+				["maxLevel"] = 50,
+				["instanceID"] = 209,
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["minLevel"] = 42,
+				["createdat"] = 1676448126,
+				["instanceName"] = "Zul'Farrak",
+				["timestamp"] = 1676448788,
+				["classColor"] = "FFF569",
+			},
+			["Shrëdk-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 2000,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Hellfire Ramparts | Need Tank, Healer, 1 DPS",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "RAMPS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Hellfire Ramparts",
+				["author"] = "Shrëdk-Golemagg",
+				["classColor"] = "c41f3b",
+				["minLevel"] = 58,
+				["instanceID"] = 543,
+				["createdat"] = 1676482898,
+				["resultID"] = 116,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Hellfire Ramparts",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 67,
+			},
+			["Thendra-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
-				["groupSize"] = 25,
+				["order"] = 1030,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Shadowfang Keep",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["icon"] = "SFK.tga",
 				["words"] = {
 				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Cfa-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "40c7eb",
-				["createdat"] = 1676452361,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["fullName"] = "Shadowfang Keep",
+				["author"] = "Thendra-Golemagg",
+				["maxLevel"] = 25,
+				["resultID"] = 816,
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 17,
+				["createdat"] = 1676458356,
 				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
 				},
-				["timestamp"] = 1676454444,
-				["resultID"] = 452,
-				["instanceID"] = 624,
+				["instanceName"] = "Shadowfang Keep",
+				["timestamp"] = 1676458828,
+				["instanceID"] = 33,
 			},
-			["Mustachepala-Golemagg"] = {
+			["Momsycumsy-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1160,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Sunken Temple",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ST.tga",
+				["words"] = {
+				},
+				["fullName"] = "Sunken Temple",
+				["author"] = "Momsycumsy-Golemagg",
+				["classColor"] = "0070de",
+				["minLevel"] = 45,
+				["instanceID"] = 109,
+				["createdat"] = 1676481311,
+				["resultID"] = 102,
+				["rolesNeeded"] = {
+					1, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["instanceName"] = "Sunken Temple",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 54,
+			},
+			["Zzebus-Golemagg"] = {
 				["isLFG"] = false,
 				["order"] = -1,
-				["msg"] = "LFM 1 TANK DAILY HC+",
+				["msg"] = "WTS 4x |cff0070dd|Hitem:45087::::::::80:::::::::|h[Runed Orb]|h|r2.4k",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "Other",
 				["icon"] = "Other.tga",
 				["words"] = {
-					"lfm", -- [1]
-					"1", -- [2]
-					"tank", -- [3]
-					"daily", -- [4]
-					"hc", -- [5]
+					"wts", -- [1]
+					"4x", -- [2]
+					"hitem", -- [3]
+					"45087", -- [4]
+					"80", -- [5]
+					"h", -- [6]
+					"runed", -- [7]
+					"orb", -- [8]
+					"h2", -- [9]
+					"4k", -- [10]
 				},
 				["fullName"] = "Miscellaneous",
-				["author"] = "Mustachepala-Golemagg",
-				["classColor"] = "F58CBA",
+				["author"] = "Zzebus-Golemagg",
+				["classColor"] = "C41F3B",
 				["instanceID"] = -1,
-				["createdat"] = 1676453331,
-				["minLevel"] = 0,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676453331,
-				["rolesNeeded"] = {
-					1, -- [1]
-				},
-				["maxLevel"] = 1000,
-			},
-			["Prazravec-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3320,
-				["msg"] = "shaman heal/ele 4k2+ gs LFG VoA 10",
-				["groupSize"] = 10,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-					"shaman", -- [1]
-					"heal", -- [2]
-					"ele", -- [3]
-					"4k2", -- [4]
-					"gs", -- [5]
-					"lfg", -- [6]
-					"voa", -- [7]
-					"10", -- [8]
-				},
-				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Prazravec-Golemagg",
-				["instanceID"] = 624,
-				["classColor"] = "0070DE",
-				["minLevel"] = 80,
-				["maxLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["timestamp"] = 1676457559,
-				["instanceName"] = "Vault of Archavon",
-				["createdat"] = 1676457559,
+				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676454558,
+				["createdat"] = 1676454558,
 			},
-			["Lightbriñger-Golemagg"] = {
+			["Lencjen-Golemagg"] = {
 				["isLFG"] = false,
 				["order"] = 3430,
-				["msg"] = "LFM Naxx25 full run 3xsr ms os going now need all 11/25 need 1xdisc prist rest dps",
+				["msg"] = "NAXX 25M SKIP RUN. 1X SR... BETRAYER HR",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
-				["maxLevel"] = 80,
-				["lootType"] = "MS > OS",
+				["isLFM"] = true,
+				["lootType"] = "SoftRes",
 				["icon"] = "NAX.tga",
 				["words"] = {
-					"lfm", -- [1]
-					"naxx25", -- [2]
-					"full", -- [3]
+					"naxx", -- [1]
+					"25m", -- [2]
+					"skip", -- [3]
 					"run", -- [4]
-					"3xsr", -- [5]
-					"msos", -- [6]
-					"going", -- [7]
-					"now", -- [8]
-					"need", -- [9]
-					"all", -- [10]
-					"11", -- [11]
-					"25", -- [12]
-					"1xdisc", -- [13]
-					"prist", -- [14]
-					"rest", -- [15]
-					"dps", -- [16]
+					"1x", -- [5]
+					"sr", -- [6]
+					"betrayer", -- [7]
+					"hr", -- [8]
 				},
 				["fullName"] = "Naxxramas - 25",
-				["author"] = "Lightbriñger-Golemagg",
-				["classColor"] = "C41F3B",
-				["isLFM"] = true,
-				["minLevel"] = 80,
+				["author"] = "Lencjen-Golemagg",
 				["instanceID"] = 533,
-				["rolesNeeded"] = {
-					3, -- [1]
-					4, -- [2]
-				},
-				["timestamp"] = 1676456559,
+				["classColor"] = "C79C6E",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
 				["instanceName"] = "Naxxramas",
-				["createdat"] = 1676455162,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483819,
+				["createdat"] = 1676483481,
+			},
+			["Snaggletoöth-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3320,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Vault of Archavon 10",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+				},
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Snaggletoöth-Golemagg",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceID"] = 624,
+				["createdat"] = 1676452024,
+				["resultID"] = 310,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676452072,
+				["classColor"] = "c79c6e",
 			},
 			["Vre-Golemagg"] = {
 				["isLFG"] = true,
@@ -15218,67 +24116,70 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Vre-Golemagg",
-				["classColor"] = "ffffff",
-				["instanceID"] = 601,
-				["resultID"] = 673,
+				["maxLevel"] = 80,
 				["createdat"] = 1676457806,
+				["classColor"] = "ffffff",
+				["resultID"] = 673,
+				["minLevel"] = 80,
+				["instanceName"] = "Azjol-Nerub",
 				["rolesNeeded"] = {
 					1, -- [1]
 					3, -- [2]
 					4, -- [3]
 				},
-				["instanceName"] = "Azjol-Nerub",
 				["timestamp"] = 1676457988,
-				["minLevel"] = 80,
-				["maxLevel"] = 80,
+				["instanceID"] = 601,
 			},
-			["Tejal-Golemagg"] = {
+			["Crisro-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
+				["order"] = 3460,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Ulduar 25",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["icon"] = "ULD.tga",
 				["words"] = {
 				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Tejal-Golemagg",
-				["classColor"] = "c41f3b",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
-				["resultID"] = 466,
-				["rolesNeeded"] = {
-				},
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454444,
-				["createdat"] = 1676454412,
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Crisro-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676489953,
+				["classColor"] = "c79c6e",
 				["maxLevel"] = 80,
-			},
-			["Veknelash-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 2380,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Mount Hyjal 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "MH.tga",
-				["words"] = {
-				},
-				["fullName"] = "Mount Hyjal",
-				["author"] = "Veknelash-Golemagg",
-				["classColor"] = "f58cba",
-				["instanceID"] = 534,
-				["minLevel"] = 70,
-				["resultID"] = 403,
+				["minLevel"] = 80,
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Mount Hyjal",
-				["timestamp"] = 1676454444,
-				["createdat"] = 1676454004,
-				["maxLevel"] = 79,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490287,
+				["resultID"] = 161,
+			},
+			["Hugecat-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 1080,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Scarlet Graveyard | Need Healer, 1 DPS",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "SM.tga",
+				["words"] = {
+				},
+				["fullName"] = "Scarlet Graveyard",
+				["author"] = "Hugecat-Golemagg",
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 28,
+				["instanceID"] = 189,
+				["createdat"] = 1676481292,
+				["resultID"] = 112,
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["instanceName"] = "Scarlet Graveyard",
+				["timestamp"] = 1676483858,
+				["maxLevel"] = 36,
 			},
 			["Cnisk-Golemagg"] = {
 				["isLFG"] = false,
@@ -15313,12 +24214,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Cnisk-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "9482C9",
-				["createdat"] = 1676455856,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676455969,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -15326,6 +24223,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676455969,
+				["createdat"] = 1676455856,
 			},
 			["Gloriusor-Golemagg"] = {
 				["isLFG"] = false,
@@ -15342,8 +24243,9 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Gloriusor-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "C79C6E",
+				["instanceID"] = -1,
+				["instanceName"] = "Miscellaneous",
 				["createdat"] = 1676458893,
 				["maxLevel"] = 1000,
 				["rolesNeeded"] = {
@@ -15354,7 +24256,6 @@ GroupieDB = {
 				},
 				["timestamp"] = 1676458893,
 				["minLevel"] = 0,
-				["instanceName"] = "Miscellaneous",
 			},
 			["Selphiel-Golemagg"] = {
 				["isLFG"] = true,
@@ -15369,47 +24270,43 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Old Kingdom",
 				["author"] = "Selphiel-Golemagg",
-				["classColor"] = "ffffff",
-				["instanceID"] = 619,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 363,
+				["classColor"] = "ffffff",
+				["minLevel"] = 80,
+				["createdat"] = 1676452310,
+				["instanceName"] = "Old Kingdom",
 				["rolesNeeded"] = {
 					1, -- [1]
 					3, -- [2]
 					4, -- [3]
 				},
-				["instanceName"] = "Old Kingdom",
 				["timestamp"] = 1676452764,
-				["createdat"] = 1676452310,
-				["maxLevel"] = 80,
+				["instanceID"] = 619,
 			},
-			["Docktorcrazy-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3160,
-				["msg"] = "VH H+ need Healer",
-				["groupSize"] = 5,
-				["isHeroic"] = true,
-				["isLFM"] = true,
+			["Whysoseríous-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3410,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "VH.tga",
+				["icon"] = "VOA.tga",
 				["words"] = {
-					"vh", -- [1]
-					"h", -- [2]
-					"need", -- [3]
-					"healer", -- [4]
 				},
-				["fullName"] = "Heroic Violet Hold",
-				["author"] = "Docktorcrazy-Golemagg",
-				["instanceID"] = 608,
-				["classColor"] = "F58CBA",
-				["minLevel"] = 80,
-				["createdat"] = 1676447886,
-				["instanceName"] = "Violet Hold",
-				["timestamp"] = 1676447985,
-				["rolesNeeded"] = {
-					2, -- [1]
-				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Whysoseríous-Golemagg",
 				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceID"] = 624,
+				["createdat"] = 1676452002,
+				["resultID"] = 297,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676452072,
+				["classColor"] = "8787ed",
 			},
 			["Doolock-Golemagg"] = {
 				["isLFG"] = true,
@@ -15425,105 +24322,74 @@ GroupieDB = {
 				["fullName"] = "Mana-Tombs",
 				["author"] = "Doolock-Golemagg",
 				["maxLevel"] = 71,
+				["minLevel"] = 63,
 				["instanceID"] = 557,
-				["classColor"] = "8787ed",
+				["createdat"] = 1676446813,
 				["resultID"] = 387,
+				["instanceName"] = "Mana-Tombs",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Mana-Tombs",
 				["timestamp"] = 1676453006,
-				["createdat"] = 1676446813,
-				["minLevel"] = 63,
+				["classColor"] = "8787ed",
 			},
-			["Thereaperr-Golemagg"] = {
+			["Resorz-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1160,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Sunken Temple",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ST.tga",
+				["words"] = {
+				},
+				["fullName"] = "Sunken Temple",
+				["author"] = "Resorz-Golemagg",
+				["instanceID"] = 109,
+				["maxLevel"] = 54,
+				["classColor"] = "0070de",
+				["minLevel"] = 45,
+				["resultID"] = 166,
+				["instanceName"] = "Sunken Temple",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676483703,
+			},
+			["Driftmaniac-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = -1,
-				["msg"] = "WTS |cffa335ee|Hitem:45558::::::::80::::1:3524:::::|h[Cord of the White Dawn]|h|r+|cffa335ee|Hitem:45557::::::::80::::1:3524:::::|h[Sash of Ancient Power]|h|r+|cffa335ee|Hitem:45566::::::::80::::1:3524:::::|h[Spellslinger's Slippers]|h|r-PM Your Offer",
+				["order"] = 1150,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Zul'Farrak | Need Healer, 1 DPS",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "Other.tga",
-				["words"] = {
-					"wts", -- [1]
-					"hitem", -- [2]
-					"45558", -- [3]
-					"80", -- [4]
-					"1", -- [5]
-					"3524", -- [6]
-					"h", -- [7]
-					"cord", -- [8]
-					"of", -- [9]
-					"the", -- [10]
-					"white", -- [11]
-					"dawn", -- [12]
-					"45557", -- [13]
-					"sash", -- [14]
-					"ancient", -- [15]
-					"power", -- [16]
-					"45566", -- [17]
-					"spellslinger", -- [18]
-					"s", -- [19]
-					"slippers", -- [20]
-					"pm", -- [21]
-					"your", -- [22]
-					"offer", -- [23]
-				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Thereaperr-Golemagg",
-				["instanceID"] = -1,
-				["classColor"] = "FFFFFF",
-				["createdat"] = 1676454505,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676458748,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["minLevel"] = 0,
-			},
-			["Lyselith-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3330,
-				["msg"] = "LFM Naxx10 Skip Run, Torch HR 1SR>MS>OS need 1 dps",
-				["groupSize"] = 10,
-				["isHeroic"] = false,
-				["isLFM"] = true,
 				["lootType"] = "MS > OS",
-				["icon"] = "NAX.tga",
+				["icon"] = "ZF.tga",
 				["words"] = {
-					"lfm", -- [1]
-					"naxx10", -- [2]
-					"skip", -- [3]
-					"run", -- [4]
-					"torch", -- [5]
-					"hr", -- [6]
-					"1sr", -- [7]
-					"msos", -- [8]
-					"need", -- [9]
-					"1", -- [10]
-					"dps", -- [11]
 				},
-				["fullName"] = "Naxxramas - 10",
-				["author"] = "Lyselith-Golemagg",
-				["instanceID"] = 533,
-				["minLevel"] = 80,
-				["createdat"] = 1676451846,
+				["fullName"] = "Zul'Farrak",
+				["author"] = "Driftmaniac-Golemagg",
+				["classColor"] = "f58cba",
+				["minLevel"] = 42,
+				["instanceID"] = 209,
+				["createdat"] = 1676482313,
+				["resultID"] = 162,
 				["rolesNeeded"] = {
-					3, -- [1]
-					4, -- [2]
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
 				},
-				["instanceName"] = "Naxxramas",
-				["timestamp"] = 1676453357,
-				["maxLevel"] = 80,
-				["classColor"] = "FFFFFF",
+				["instanceName"] = "Zul'Farrak",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 50,
 			},
 			["Maggu-Golemagg"] = {
 				["isLFG"] = false,
@@ -15566,17 +24432,17 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 10",
 				["author"] = "Maggu-Golemagg",
+				["maxLevel"] = 80,
 				["instanceID"] = 603,
-				["classColor"] = "C79C6E",
-				["minLevel"] = 80,
-				["createdat"] = 1676448831,
-				["instanceName"] = "Ulduar",
-				["timestamp"] = 1676450936,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
-				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["createdat"] = 1676448831,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676450936,
+				["classColor"] = "C79C6E",
 			},
 			["Tryhardx-Golemagg"] = {
 				["isLFG"] = true,
@@ -15591,16 +24457,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Karazhan",
 				["author"] = "Tryhardx-Golemagg",
-				["classColor"] = "f58cba",
-				["instanceID"] = 532,
-				["minLevel"] = 68,
+				["maxLevel"] = 79,
 				["resultID"] = 446,
+				["classColor"] = "f58cba",
+				["minLevel"] = 68,
+				["createdat"] = 1676452479,
+				["instanceName"] = "Karazhan",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Karazhan",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676452479,
-				["maxLevel"] = 79,
+				["instanceID"] = 532,
 			},
 			["Rimzy-Golemagg"] = {
 				["isLFG"] = false,
@@ -15626,49 +24492,44 @@ GroupieDB = {
 				},
 				["fullName"] = "Obsidian Sanctum - 10",
 				["author"] = "Rimzy-Golemagg",
-				["classColor"] = "69CCF0",
 				["isLFM"] = true,
-				["minLevel"] = 80,
+				["classColor"] = "69CCF0",
+				["instanceName"] = "Obsidian Sanctum",
+				["createdat"] = 1676452854,
 				["instanceID"] = 615,
 				["rolesNeeded"] = {
 					2, -- [1]
 				},
 				["timestamp"] = 1676453674,
-				["instanceName"] = "Obsidian Sanctum",
-				["createdat"] = 1676452854,
+				["minLevel"] = 80,
 			},
-			["Onepophealin-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3000,
-				["msg"] = "LF Warr/pala/DK to tank UK (Dung cleave)",
+			["Buddhä-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1030,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Shadowfang Keep",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
-				["isLFM"] = true,
+				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "UK.tga",
+				["icon"] = "SFK.tga",
 				["words"] = {
-					"lf", -- [1]
-					"warr", -- [2]
-					"pala", -- [3]
-					"dk", -- [4]
-					"to", -- [5]
-					"tank", -- [6]
-					"uk", -- [7]
-					"dung", -- [8]
-					"cleave", -- [9]
 				},
-				["fullName"] = "Utgarde Keep",
-				["author"] = "Onepophealin-Golemagg",
-				["classColor"] = "FF7D0A",
-				["instanceID"] = 574,
-				["createdat"] = 1676449409,
-				["minLevel"] = 68,
-				["instanceName"] = "Utgarde Keep",
-				["timestamp"] = 1676454350,
+				["fullName"] = "Shadowfang Keep",
+				["author"] = "Buddhä-Golemagg",
+				["instanceID"] = 33,
+				["createdat"] = 1676489480,
+				["classColor"] = "0070de",
+				["maxLevel"] = 25,
+				["minLevel"] = 17,
 				["rolesNeeded"] = {
 					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
 				},
-				["maxLevel"] = 75,
+				["instanceName"] = "Shadowfang Keep",
+				["timestamp"] = 1676490825,
+				["resultID"] = 307,
 			},
 			["Melcheo-Golemagg"] = {
 				["isLFG"] = false,
@@ -15694,12 +24555,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Melcheo-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "FF7D0A",
-				["createdat"] = 1676454498,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676454498,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -15707,119 +24564,113 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676454498,
+				["createdat"] = 1676454498,
 			},
-			["Dragonssoul-Golemagg"] = {
+			["Dreygpriest-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = -1,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
-				["groupSize"] = 5,
+				["order"] = 3320,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 10",
+				["groupSize"] = 10,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "Other.tga",
+				["icon"] = "VOA.tga",
 				["words"] = {
 				},
-				["fullName"] = "The Crown Chemical Co.",
-				["author"] = "Dragonssoul-Golemagg",
-				["classColor"] = "abd473",
-				["instanceID"] = 33,
-				["minLevel"] = 78,
-				["resultID"] = 352,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["instanceName"] = "The Crown Chemical Co.",
-				["timestamp"] = 1676452720,
-				["createdat"] = 1676451365,
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Dreygpriest-Golemagg",
+				["instanceID"] = 624,
+				["createdat"] = 1676487030,
+				["classColor"] = "ffffff",
 				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676490287,
+				["resultID"] = 135,
 			},
-			["Liquidsnails-Golemagg"] = {
+			["Gaffatape-Golemagg"] = {
 				["isLFG"] = false,
 				["order"] = -1,
-				["msg"] = "DK tank 4642 LF ULDUAR10this afternoon with some HC /// XP : Iron council, Freja, Thorim, XT 2%. (off spec dps 4247 forst)",
+				["msg"] = "LF1M tank for event dungeon",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "Other",
 				["icon"] = "Other.tga",
 				["words"] = {
-					"dk", -- [1]
+					"lf1m", -- [1]
 					"tank", -- [2]
-					"4642", -- [3]
-					"lf", -- [4]
-					"ulduar10this", -- [5]
-					"afternoon", -- [6]
-					"with", -- [7]
-					"some", -- [8]
-					"hc", -- [9]
-					"xp", -- [10]
-					"iron", -- [11]
-					"council", -- [12]
-					"freja", -- [13]
-					"thorim", -- [14]
-					"xt", -- [15]
-					"2", -- [16]
-					"off", -- [17]
-					"spec", -- [18]
-					"dps", -- [19]
-					"4247", -- [20]
-					"forst", -- [21]
+					"for", -- [3]
+					"event", -- [4]
+					"dungeon", -- [5]
 				},
 				["fullName"] = "Miscellaneous",
-				["author"] = "Liquidsnails-Golemagg",
+				["author"] = "Gaffatape-Golemagg",
+				["classColor"] = "FFFFFF",
 				["instanceID"] = -1,
-				["classColor"] = "C41F3B",
-				["createdat"] = 1676452899,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676457749,
+				["minLevel"] = 0,
+				["createdat"] = 1676490363,
 				["rolesNeeded"] = {
 					1, -- [1]
-					3, -- [2]
-					4, -- [3]
 				},
-				["minLevel"] = 0,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676490363,
+				["maxLevel"] = 1000,
 			},
-			["Butsi-Golemagg"] = {
+			["Justbubblé-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = 3410,
-				["msg"] = "LFM voa25 spec run - retri pala, ench shaman, resto / feral druid",
-				["groupSize"] = 25,
+				["order"] = 3370,
+				["msg"] = "Ulduar 10man 3xSR MS<OS , Going for full hard mode run so make sure to have time going when full. Looking for ( Balance Druid) Whisper logs pls",
+				["groupSize"] = 10,
 				["isHeroic"] = false,
-				["isLFM"] = true,
+				["maxLevel"] = 80,
 				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["icon"] = "ULD.tga",
 				["words"] = {
-					"lfm", -- [1]
-					"voa25", -- [2]
-					"spec", -- [3]
-					"run", -- [4]
-					"retri", -- [5]
-					"pala", -- [6]
-					"ench", -- [7]
-					"shaman", -- [8]
-					"resto", -- [9]
-					"feral", -- [10]
-					"druid", -- [11]
+					"ulduar", -- [1]
+					"10man", -- [2]
+					"3xsr", -- [3]
+					"msos", -- [4]
+					"going", -- [5]
+					"for", -- [6]
+					"full", -- [7]
+					"hard", -- [8]
+					"mode", -- [9]
+					"run", -- [10]
+					"so", -- [11]
+					"make", -- [12]
+					"sure", -- [13]
+					"to", -- [14]
+					"have", -- [15]
+					"time", -- [16]
+					"when", -- [17]
+					"looking", -- [18]
+					"balance", -- [19]
+					"druid", -- [20]
+					"whisper", -- [21]
+					"logs", -- [22]
+					"pls", -- [23]
 				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Butsi-Golemagg",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
-				["createdat"] = 1676452439,
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Justbubblé-Golemagg",
+				["isLFM"] = true,
+				["classColor"] = "F58CBA",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676452530,
-				["maxLevel"] = 80,
-				["classColor"] = "F58CBA",
+				["createdat"] = 1676450685,
+				["instanceID"] = 603,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676455104,
+				["minLevel"] = 80,
 			},
 			["Luloo-Golemagg"] = {
 				["isLFG"] = true,
@@ -15834,16 +24685,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Luloo-Golemagg",
-				["classColor"] = "ff7d0a",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 485,
+				["classColor"] = "ff7d0a",
+				["minLevel"] = 80,
+				["createdat"] = 1676454416,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454416,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
 			["Snisk-Golemagg"] = {
 				["isLFG"] = false,
@@ -15859,43 +24710,43 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Snisk-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "40c7eb",
-				["createdat"] = 1676451911,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676451911,
+				["resultID"] = 263,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452072,
-				["resultID"] = 263,
-				["instanceID"] = 624,
+				["classColor"] = "40c7eb",
 			},
-			["Saevherne-Golemagg"] = {
+			["Orhea-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = -1,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["order"] = 3050,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Violet Hold",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "Other.tga",
+				["icon"] = "VH.tga",
 				["words"] = {
 				},
-				["fullName"] = "The Crown Chemical Co.",
-				["author"] = "Saevherne-Golemagg",
-				["maxLevel"] = 80,
-				["instanceID"] = 33,
-				["classColor"] = "fff569",
-				["resultID"] = 28,
+				["fullName"] = "Violet Hold",
+				["author"] = "Orhea-Golemagg",
+				["instanceID"] = 608,
+				["createdat"] = 1676489571,
+				["classColor"] = "ffffff",
+				["maxLevel"] = 79,
+				["minLevel"] = 73,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "The Crown Chemical Co.",
-				["timestamp"] = 1676446944,
-				["createdat"] = 1676446564,
-				["minLevel"] = 78,
+				["instanceName"] = "Violet Hold",
+				["timestamp"] = 1676490825,
+				["resultID"] = 299,
 			},
 			["Highwhitecow-Golemagg"] = {
 				["isLFG"] = false,
@@ -15933,87 +24784,71 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Highwhitecow-Golemagg",
-				["instanceID"] = 603,
 				["classColor"] = "FF7D0A",
-				["createdat"] = 1676454524,
+				["instanceID"] = 603,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 80,
 				["maxLevel"] = 80,
 				["instanceName"] = "Ulduar",
 				["timestamp"] = 1676454524,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["minLevel"] = 80,
+				["createdat"] = 1676454524,
 			},
-			["Nýls-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3350,
-				["msg"] = "Lfm EOE 10 (Mark ress) 1 sr>ms>os 2 dps ",
-				["groupSize"] = 10,
-				["isHeroic"] = false,
-				["maxLevel"] = 80,
-				["lootType"] = "MS > OS",
-				["icon"] = "EOE.tga",
-				["words"] = {
-					"lfm", -- [1]
-					"eoe", -- [2]
-					"10", -- [3]
-					"mark", -- [4]
-					"ress", -- [5]
-					"1", -- [6]
-					"sr", -- [7]
-					"msos", -- [8]
-					"2", -- [9]
-					"dps", -- [10]
-				},
-				["fullName"] = "Eye of Eternity - 10",
-				["author"] = "Nýls-Golemagg",
-				["classColor"] = "C41F3B",
-				["createdat"] = 1676451253,
-				["minLevel"] = 80,
-				["instanceName"] = "Eye of Eternity",
-				["rolesNeeded"] = {
-					3, -- [1]
-					4, -- [2]
-				},
-				["timestamp"] = 1676452361,
-				["instanceID"] = 616,
-				["isLFM"] = true,
-			},
-			["Scanje-Golemagg"] = {
-				["isLFG"] = false,
+			["Termixator-Golemagg"] = {
+				["isLFG"] = true,
 				["order"] = 3410,
-				["msg"] = "LFM VOA 18 Feral and WarriorTank",
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
-				["isLFM"] = true,
+				["isLFM"] = false,
 				["lootType"] = "MS > OS",
 				["icon"] = "VOA.tga",
 				["words"] = {
-					"lfm", -- [1]
-					"voa", -- [2]
-					"18", -- [3]
-					"feral", -- [4]
-					"and", -- [5]
-					"warriortank", -- [6]
 				},
 				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Scanje-Golemagg",
-				["instanceID"] = 624,
-				["classColor"] = "F58CBA",
-				["createdat"] = 1676453210,
+				["author"] = "Termixator-Golemagg",
 				["maxLevel"] = 80,
+				["resultID"] = 409,
+				["classColor"] = "8787ed",
+				["minLevel"] = 80,
+				["createdat"] = 1676453159,
 				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676453644,
+				["rolesNeeded"] = {
+				},
+				["timestamp"] = 1676454444,
+				["instanceID"] = 624,
+			},
+			["Ryunosukee-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3290,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Drak'Tharon Keep",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "DTK.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Drak'Tharon Keep",
+				["author"] = "Ryunosukee-Golemagg",
+				["instanceID"] = 600,
+				["maxLevel"] = 80,
+				["classColor"] = "c41f3b",
+				["minLevel"] = 80,
+				["resultID"] = 161,
+				["instanceName"] = "Drak'Tharon Keep",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["minLevel"] = 80,
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676483757,
 			},
 			["Telli-Golemagg"] = {
 				["isLFG"] = true,
@@ -16028,71 +24863,74 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Telli-Golemagg",
-				["classColor"] = "fff569",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 465,
-				["rolesNeeded"] = {
-				},
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454444,
-				["createdat"] = 1676454311,
-				["maxLevel"] = 80,
-			},
-			["Nezuo-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3320,
-				["msg"] = "LFM  hunter VOA 10 ",
-				["groupSize"] = 10,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-					"lfm", -- [1]
-					"hunter", -- [2]
-					"voa", -- [3]
-					"10", -- [4]
-				},
-				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Nezuo-Golemagg",
-				["instanceID"] = 624,
-				["classColor"] = "F58CBA",
-				["createdat"] = 1676455696,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676456418,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
+				["classColor"] = "fff569",
 				["minLevel"] = 80,
+				["createdat"] = 1676454311,
+				["instanceName"] = "Vault of Archavon",
+				["rolesNeeded"] = {
+				},
+				["timestamp"] = 1676454444,
+				["instanceID"] = 624,
 			},
-			["Masper-Golemagg"] = {
+			["Anasha-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
-				["groupSize"] = 25,
+				["order"] = 3370,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ulduar 10",
+				["groupSize"] = 10,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["icon"] = "ULD.tga",
 				["words"] = {
 				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Masper-Golemagg",
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Anasha-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676490169,
+				["classColor"] = "f58cba",
 				["maxLevel"] = 80,
-				["classColor"] = "c79c6e",
-				["createdat"] = 1676451990,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 234,
-				["instanceID"] = 624,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490287,
+				["resultID"] = 141,
+			},
+			["Ändré-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3340,
+				["msg"] = "LAST SPOT FOR TANK for OS10 2D - Illustration HR (SR>MS)",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "SoftRes",
+				["icon"] = "OS.tga",
+				["words"] = {
+					"last", -- [1]
+					"spot", -- [2]
+					"for", -- [3]
+					"tank", -- [4]
+					"os10", -- [5]
+					"2d", -- [6]
+					"illustration", -- [7]
+					"hr", -- [8]
+					"sr", -- [9]
+					"ms", -- [10]
+				},
+				["fullName"] = "Obsidian Sanctum - 10",
+				["author"] = "Ändré-Golemagg",
+				["instanceID"] = 615,
+				["classColor"] = "FFFFFF",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Obsidian Sanctum",
+				["rolesNeeded"] = {
+					1, -- [1]
+				},
+				["timestamp"] = 1676458601,
+				["createdat"] = 1676457708,
 			},
 			["Strjona-Golemagg"] = {
 				["isLFG"] = true,
@@ -16108,15 +24946,15 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Strjona-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "c79c6e",
-				["createdat"] = 1676451866,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676451866,
+				["resultID"] = 222,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452072,
-				["resultID"] = 222,
-				["instanceID"] = 624,
+				["classColor"] = "c79c6e",
 			},
 			["Hardpumperz-Golemagg"] = {
 				["isLFG"] = true,
@@ -16131,16 +24969,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Hardpumperz-Golemagg",
-				["classColor"] = "fff569",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 467,
+				["classColor"] = "fff569",
+				["minLevel"] = 80,
+				["createdat"] = 1676454224,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454224,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
 			["Qlizo-Golemagg"] = {
 				["isLFG"] = true,
@@ -16161,19 +24999,19 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Qlizo-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "FFF569",
-				["instanceID"] = 624,
-				["createdat"] = 1676449248,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676449248,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["maxLevel"] = 80,
+				["createdat"] = 1676449248,
+				["minLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676449248,
+				["instanceID"] = 624,
 			},
 			["Gambling-Golemagg"] = {
 				["isLFG"] = false,
@@ -16197,12 +25035,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Gambling-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "FFFFFF",
-				["createdat"] = 1676452917,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676452917,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -16210,34 +25044,57 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676452917,
+				["createdat"] = 1676452917,
 			},
-			["Atelero-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 1070,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Gnomeregan",
-				["groupSize"] = 5,
+			["Delgaer-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "{diamond} LFM VoA 25 {diamond} Need Hunter, Enh/Ele Shaman, Hpriest! Going as 15-18 people. Geared grp fast run! GOING NOW ",
+				["groupSize"] = 25,
 				["isHeroic"] = false,
-				["isLFM"] = false,
+				["isLFM"] = true,
 				["lootType"] = "MS > OS",
-				["icon"] = "GNOMER.tga",
+				["icon"] = "VOA.tga",
 				["words"] = {
+					"diamond", -- [1]
+					"lfm", -- [2]
+					"voa", -- [3]
+					"25", -- [4]
+					"need", -- [5]
+					"hunter", -- [6]
+					"enh", -- [7]
+					"ele", -- [8]
+					"shaman", -- [9]
+					"hpriest", -- [10]
+					"going", -- [11]
+					"as", -- [12]
+					"15", -- [13]
+					"18", -- [14]
+					"people", -- [15]
+					"geared", -- [16]
+					"grp", -- [17]
+					"fast", -- [18]
+					"run", -- [19]
+					"now", -- [20]
 				},
-				["fullName"] = "Gnomeregan",
-				["author"] = "Atelero-Golemagg",
-				["maxLevel"] = 32,
-				["instanceID"] = 90,
-				["classColor"] = "f58cba",
-				["resultID"] = 20,
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Delgaer-Golemagg",
+				["classColor"] = "C41F3B",
+				["instanceID"] = 624,
+				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676459016,
+				["maxLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Gnomeregan",
-				["timestamp"] = 1676450225,
-				["createdat"] = 1676445772,
-				["minLevel"] = 24,
+				["timestamp"] = 1676459081,
+				["minLevel"] = 80,
 			},
 			["Pvpeon-Golemagg"] = {
 				["isLFG"] = false,
@@ -16258,17 +25115,17 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Pvpeon-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "C41F3B",
-				["minLevel"] = 80,
+				["instanceID"] = 624,
+				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676451156,
 				["maxLevel"] = 80,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
 				["timestamp"] = 1676451290,
-				["instanceName"] = "Vault of Archavon",
-				["createdat"] = 1676451156,
+				["minLevel"] = 80,
 			},
 			["Madvisions-Golemagg"] = {
 				["isLFG"] = false,
@@ -16308,18 +25165,18 @@ GroupieDB = {
 				["fullName"] = "Ulduar - 10",
 				["author"] = "Madvisions-Golemagg",
 				["instanceID"] = 603,
+				["classColor"] = "C79C6E",
+				["maxLevel"] = 80,
 				["minLevel"] = 80,
-				["createdat"] = 1676452279,
+				["instanceName"] = "Ulduar",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Ulduar",
 				["timestamp"] = 1676452804,
-				["maxLevel"] = 80,
-				["classColor"] = "C79C6E",
+				["createdat"] = 1676452279,
 			},
 			["Nefearious-Golemagg"] = {
 				["isLFG"] = true,
@@ -16335,19 +25192,19 @@ GroupieDB = {
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Nefearious-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "8787ed",
-				["minLevel"] = 80,
 				["resultID"] = 763,
-				["instanceName"] = "Azjol-Nerub",
+				["instanceID"] = 601,
+				["minLevel"] = 80,
+				["createdat"] = 1676458639,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "Azjol-Nerub",
 				["timestamp"] = 1676458818,
-				["createdat"] = 1676458639,
-				["instanceID"] = 601,
+				["classColor"] = "8787ed",
 			},
 			["Utahjaz-Golemagg"] = {
 				["isLFG"] = false,
@@ -16377,16 +25234,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Naxxramas - 10",
 				["author"] = "Utahjaz-Golemagg",
-				["instanceID"] = 533,
 				["classColor"] = "FFFFFF",
-				["createdat"] = 1676456870,
-				["maxLevel"] = 80,
-				["instanceName"] = "Naxxramas",
-				["timestamp"] = 1676459148,
+				["instanceID"] = 533,
 				["rolesNeeded"] = {
 					2, -- [1]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676459148,
+				["createdat"] = 1676456870,
 			},
 			["Unyi-Golemagg"] = {
 				["isLFG"] = false,
@@ -16407,12 +25264,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Miscellaneous",
 				["author"] = "Unyi-Golemagg",
-				["instanceID"] = -1,
 				["classColor"] = "9482C9",
-				["createdat"] = 1676450071,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676450071,
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -16420,34 +25273,59 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676450071,
+				["createdat"] = 1676450071,
 			},
-			["Höylä-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3260,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Halls of Lightning",
-				["groupSize"] = 5,
-				["isHeroic"] = true,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "HOL.tga",
+			["Andrewice-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3370,
+				["msg"] = "LFM ULDUAR 10 mimiron, vezax and yogg left, doing vezax and yogg on hm (dogshit hunt left because sr didnt dropped) need 1 dps (ranged pref)",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "SoftRes",
+				["icon"] = "ULD.tga",
 				["words"] = {
+					"lfm", -- [1]
+					"ulduar", -- [2]
+					"10", -- [3]
+					"mimiron", -- [4]
+					"vezax", -- [5]
+					"and", -- [6]
+					"yogg", -- [7]
+					"left", -- [8]
+					"doing", -- [9]
+					"on", -- [10]
+					"hm", -- [11]
+					"dogshit", -- [12]
+					"hunt", -- [13]
+					"because", -- [14]
+					"sr", -- [15]
+					"didnt", -- [16]
+					"dropped", -- [17]
+					"need", -- [18]
+					"1", -- [19]
+					"dps", -- [20]
+					"ranged", -- [21]
+					"pref", -- [22]
 				},
-				["fullName"] = "Heroic Halls of Lightning",
-				["author"] = "Höylä-Golemagg",
-				["maxLevel"] = 80,
-				["instanceID"] = 602,
-				["classColor"] = "c41f3b",
-				["resultID"] = 26,
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Andrewice-Golemagg",
+				["classColor"] = "C41F3B",
+				["instanceID"] = 603,
+				["minLevel"] = 80,
+				["createdat"] = 1676490436,
 				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
+					3, -- [1]
+					4, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Halls of Lightning",
-				["timestamp"] = 1676449926,
-				["createdat"] = 1676449737,
-				["minLevel"] = 80,
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490513,
+				["maxLevel"] = 80,
 			},
 			["Weepingangel-Golemagg"] = {
 				["isLFG"] = false,
@@ -16471,12 +25349,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Weepingangel-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "9482C9",
-				["createdat"] = 1676456481,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676456687,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -16484,6 +25358,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676456687,
+				["createdat"] = 1676456481,
 			},
 			["Shoeix-Golemagg"] = {
 				["isLFG"] = false,
@@ -16499,71 +25377,68 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Shoeix-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "f58cba",
-				["createdat"] = 1676451915,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676451915,
+				["resultID"] = 311,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452072,
-				["resultID"] = 311,
-				["instanceID"] = 624,
+				["classColor"] = "f58cba",
 			},
-			["Qelaxwk-Golemagg"] = {
+			["Märok-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Heroic Azjol-Nerub | Need Healer",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Märok-Golemagg",
+				["instanceID"] = 601,
+				["maxLevel"] = 80,
+				["classColor"] = "c79c6e",
+				["minLevel"] = 80,
+				["resultID"] = 135,
+				["instanceName"] = "Azjol-Nerub",
+				["rolesNeeded"] = {
+					2, -- [1]
+				},
+				["timestamp"] = 1676483845,
+				["createdat"] = 1676483623,
+			},
+			["Dravor-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
+				["order"] = 3210,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Old Kingdom",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["icon"] = "OK.tga",
 				["words"] = {
 				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Qelaxwk-Golemagg",
-				["classColor"] = "8787ed",
-				["instanceID"] = 624,
+				["fullName"] = "Heroic Old Kingdom",
+				["author"] = "Dravor-Golemagg",
+				["classColor"] = "c79c6e",
 				["minLevel"] = 80,
-				["resultID"] = 477,
+				["instanceID"] = 619,
+				["createdat"] = 1676482737,
+				["resultID"] = 170,
 				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
 				},
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454444,
-				["createdat"] = 1676454146,
+				["instanceName"] = "Old Kingdom",
+				["timestamp"] = 1676483837,
 				["maxLevel"] = 80,
-			},
-			["Feralfire-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = -1,
-				["msg"] = "LF1M dps OS8, 0 drake, 1xSR > MS > OS",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "Other.tga",
-				["words"] = {
-					"lf1m", -- [1]
-					"dps", -- [2]
-					"os8", -- [3]
-					"0", -- [4]
-					"drake", -- [5]
-					"1xsr", -- [6]
-					"msos", -- [7]
-				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Feralfire-Golemagg",
-				["instanceID"] = -1,
-				["classColor"] = "FF7D0A",
-				["createdat"] = 1676456688,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676457706,
-				["rolesNeeded"] = {
-					3, -- [1]
-					4, -- [2]
-				},
-				["minLevel"] = 0,
 			},
 			["Raca-Golemagg"] = {
 				["isLFG"] = false,
@@ -16587,9 +25462,10 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Raca-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "F58CBA",
-				["minLevel"] = 80,
+				["instanceID"] = 624,
+				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676450809,
 				["maxLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -16598,90 +25474,89 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676450812,
-				["instanceName"] = "Vault of Archavon",
-				["createdat"] = 1676450809,
+				["minLevel"] = 80,
 			},
-			["Alecks-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = -1,
-				["msg"] = "LF Tank Crown Chem Co.",
+			["Tayfur-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3110,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Culling of Stratholme",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "Other.tga",
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "COS.tga",
 				["words"] = {
-					"lf", -- [1]
-					"tank", -- [2]
-					"crown", -- [3]
-					"chem", -- [4]
-					"co", -- [5]
 				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Alecks-Golemagg",
-				["instanceID"] = -1,
-				["classColor"] = "FFF569",
-				["minLevel"] = 0,
-				["createdat"] = 1676447836,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676447925,
+				["fullName"] = "Culling of Stratholme",
+				["author"] = "Tayfur-Golemagg",
+				["instanceID"] = 595,
+				["createdat"] = 1676489558,
+				["classColor"] = "0070de",
+				["maxLevel"] = 80,
+				["minLevel"] = 78,
 				["rolesNeeded"] = {
 					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
 				},
-				["maxLevel"] = 1000,
+				["instanceName"] = "Culling of Stratholme",
+				["timestamp"] = 1676491004,
+				["resultID"] = 374,
 			},
-			["Skeekslol-Golemagg"] = {
+			["Avenus-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = 3460,
-				["msg"] = "{star} <Jay's Pug's> Today 20:00 ServerTime! Ulduar25 -- 4/10HM and further progressing HM, Looking for Healers and Ranged DPS ! Discord link: https://discord.gg/XRqht3hmej {star}",
+				["order"] = 3430,
+				["msg"] = "LFM World Tour 25 GDKP (Naxx,EoE, OS 2D) Need Tanks, Healers, And DPS or Buyer(Full Naked-AFK or Full Buyer) - Semi Buyers Going Now (ALL ITEMS 300G) {star}",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "ULD.tga",
-				["words"] = {
-					"star", -- [1]
-					"jay", -- [2]
-					"s", -- [3]
-					"pug", -- [4]
-					"today", -- [5]
-					"20", -- [6]
-					"00", -- [7]
-					"servertime", -- [8]
-					"ulduar25", -- [9]
-					"4", -- [10]
-					"10hm", -- [11]
-					"and", -- [12]
-					"further", -- [13]
-					"progressing", -- [14]
-					"hm", -- [15]
-					"looking", -- [16]
-					"for", -- [17]
-					"healers", -- [18]
-					"ranged", -- [19]
-					"dps", -- [20]
-					"discord", -- [21]
-					"link", -- [22]
-					"https", -- [23]
-					"gg", -- [24]
-					"xrqht3hmej", -- [25]
-				},
-				["fullName"] = "Ulduar - 25",
-				["author"] = "Skeekslol-Golemagg",
-				["instanceID"] = 603,
 				["maxLevel"] = 80,
-				["createdat"] = 1676450435,
-				["classColor"] = "0070DE",
-				["rolesNeeded"] = {
-					2, -- [1]
-					3, -- [2]
-					4, -- [3]
-					3, -- [4]
-					4, -- [5]
+				["lootType"] = "Other",
+				["icon"] = "NAX.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"world", -- [2]
+					"tour", -- [3]
+					"25", -- [4]
+					"gdkp", -- [5]
+					"naxx", -- [6]
+					"eoe", -- [7]
+					"os", -- [8]
+					"2d", -- [9]
+					"need", -- [10]
+					"tanks", -- [11]
+					"healers", -- [12]
+					"and", -- [13]
+					"dps", -- [14]
+					"or", -- [15]
+					"buyer", -- [16]
+					"full", -- [17]
+					"naked", -- [18]
+					"afk", -- [19]
+					"semi", -- [20]
+					"buyers", -- [21]
+					"going", -- [22]
+					"now", -- [23]
+					"all", -- [24]
+					"items", -- [25]
+					"300g", -- [26]
+					"star", -- [27]
 				},
-				["timestamp"] = 1676458843,
-				["instanceName"] = "Ulduar",
+				["fullName"] = "Naxxramas - 25",
+				["classColor"] = "69CCF0",
+				["author"] = "Avenus-Golemagg",
+				["instanceID"] = 533,
+				["createdat"] = 1676490210,
 				["minLevel"] = 80,
+				["instanceName"] = "Naxxramas",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490991,
+				["isLFM"] = true,
 			},
 			["Cätchr-Golemagg"] = {
 				["isLFG"] = true,
@@ -16697,72 +25572,71 @@ GroupieDB = {
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Cätchr-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "8787ed",
-				["createdat"] = 1676451622,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676451622,
+				["resultID"] = 230,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452072,
-				["resultID"] = 230,
-				["instanceID"] = 624,
+				["classColor"] = "8787ed",
 			},
-			["Muertino-Golemagg"] = {
+			["Warorcs-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 1140,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Maraudon",
+				["order"] = 1030,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Shadowfang Keep",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "MARA.tga",
+				["icon"] = "SFK.tga",
 				["words"] = {
 				},
-				["fullName"] = "Maraudon",
-				["author"] = "Muertino-Golemagg",
-				["classColor"] = "0070de",
-				["instanceID"] = 349,
-				["minLevel"] = 40,
-				["resultID"] = 350,
+				["fullName"] = "Shadowfang Keep",
+				["author"] = "Warorcs-Golemagg",
+				["instanceID"] = 33,
+				["createdat"] = 1676490025,
+				["classColor"] = "8787ed",
+				["maxLevel"] = 25,
+				["minLevel"] = 17,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Maraudon",
-				["timestamp"] = 1676452720,
-				["createdat"] = 1676450828,
-				["maxLevel"] = 52,
+				["instanceName"] = "Shadowfang Keep",
+				["timestamp"] = 1676490340,
+				["resultID"] = 190,
 			},
-			["Pappajocke-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = -1,
-				["msg"] = "LF DPS DAILY HC+",
+			["Cykpyk-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1030,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Shadowfang Keep",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "Other.tga",
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "SFK.tga",
 				["words"] = {
-					"lf", -- [1]
-					"dps", -- [2]
-					"daily", -- [3]
-					"hc", -- [4]
 				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Pappajocke-Golemagg",
-				["instanceID"] = -1,
-				["classColor"] = "C79C6E",
-				["createdat"] = 1676457228,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676457266,
+				["fullName"] = "Shadowfang Keep",
+				["author"] = "Cykpyk-Golemagg",
+				["instanceID"] = 33,
+				["createdat"] = 1676490184,
+				["classColor"] = "fff569",
+				["maxLevel"] = 25,
+				["minLevel"] = 17,
 				["rolesNeeded"] = {
-					3, -- [1]
-					4, -- [2]
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
 				},
-				["minLevel"] = 0,
+				["instanceName"] = "Shadowfang Keep",
+				["timestamp"] = 1676490340,
+				["resultID"] = 202,
 			},
 			["Rougg-Golemagg"] = {
 				["isLFG"] = false,
@@ -16783,12 +25657,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Rougg-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "FF7D0A",
-				["createdat"] = 1676455171,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676455591,
+				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -16796,6 +25666,10 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676455591,
+				["createdat"] = 1676455171,
 			},
 			["Mefistoqt-Golemagg"] = {
 				["isLFG"] = false,
@@ -16822,9 +25696,10 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Mefistoqt-Golemagg",
-				["classColor"] = "9482C9",
 				["isLFM"] = true,
-				["minLevel"] = 80,
+				["classColor"] = "9482C9",
+				["instanceName"] = "Vault of Archavon",
+				["createdat"] = 1676452806,
 				["instanceID"] = 624,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -16833,8 +25708,7 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676454178,
-				["instanceName"] = "Vault of Archavon",
-				["createdat"] = 1676452806,
+				["minLevel"] = 80,
 			},
 			["Gemoo-Golemagg"] = {
 				["isLFG"] = false,
@@ -16870,9 +25744,10 @@ GroupieDB = {
 				},
 				["fullName"] = "Naxxramas - 25",
 				["author"] = "Gemoo-Golemagg",
-				["classColor"] = "0070DE",
 				["isLFM"] = true,
-				["minLevel"] = 80,
+				["classColor"] = "0070DE",
+				["instanceName"] = "Naxxramas",
+				["createdat"] = 1676454396,
 				["instanceID"] = 533,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -16881,8 +25756,7 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["timestamp"] = 1676457793,
-				["instanceName"] = "Naxxramas",
-				["createdat"] = 1676454396,
+				["minLevel"] = 80,
 			},
 			["Migster-Golemagg"] = {
 				["isLFG"] = true,
@@ -16897,16 +25771,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Migster-Golemagg",
-				["classColor"] = "0070de",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 464,
+				["classColor"] = "0070de",
+				["minLevel"] = 80,
+				["createdat"] = 1676454417,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454417,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
 			["Volbull-Golemagg"] = {
 				["isLFG"] = true,
@@ -16921,16 +25795,16 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 10",
 				["author"] = "Volbull-Golemagg",
-				["classColor"] = "abd473",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 441,
+				["classColor"] = "abd473",
+				["minLevel"] = 80,
+				["createdat"] = 1676454428,
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454428,
-				["maxLevel"] = 80,
+				["instanceID"] = 624,
 			},
 			["Franklinmire-Golemagg"] = {
 				["isLFG"] = false,
@@ -16973,18 +25847,18 @@ GroupieDB = {
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Franklinmire-Golemagg",
 				["instanceID"] = 603,
+				["classColor"] = "0070DE",
+				["maxLevel"] = 80,
 				["minLevel"] = 80,
-				["createdat"] = 1676457777,
+				["instanceName"] = "Ulduar",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Ulduar",
 				["timestamp"] = 1676457777,
-				["maxLevel"] = 80,
-				["classColor"] = "0070DE",
+				["createdat"] = 1676457777,
 			},
 			["Nattekrant-Golemagg"] = {
 				["isLFG"] = false,
@@ -17014,18 +25888,46 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Nattekrant-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "FFFFFF",
-				["instanceID"] = 624,
-				["createdat"] = 1676447285,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676447285,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["createdat"] = 1676447285,
+				["minLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676447285,
+				["instanceID"] = 624,
+			},
+			["Restive-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3060,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Halls of Stone",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "HOS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Halls of Stone",
+				["author"] = "Restive-Golemagg",
+				["classColor"] = "0070de",
+				["minLevel"] = 75,
+				["instanceID"] = 599,
+				["createdat"] = 1676483266,
+				["resultID"] = 141,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Halls of Stone",
+				["timestamp"] = 1676483837,
 				["maxLevel"] = 80,
 			},
 			["Soliwork-Golemagg"] = {
@@ -17051,12 +25953,8 @@ GroupieDB = {
 				},
 				["fullName"] = "Halls of Stone",
 				["author"] = "Soliwork-Golemagg",
-				["instanceID"] = 599,
 				["classColor"] = "F58CBA",
-				["createdat"] = 1676454274,
-				["maxLevel"] = 80,
-				["instanceName"] = "Halls of Stone",
-				["timestamp"] = 1676456806,
+				["instanceID"] = 599,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -17064,67 +25962,306 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 75,
+				["maxLevel"] = 80,
+				["instanceName"] = "Halls of Stone",
+				["timestamp"] = 1676456806,
+				["createdat"] = 1676454274,
 			},
-			["Anteklain-Golemagg"] = {
+			["Stoya-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
-				["groupSize"] = 25,
+				["order"] = 3320,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Vault of Archavon 10",
+				["groupSize"] = 10,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
 				["icon"] = "VOA.tga",
 				["words"] = {
 				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Anteklain-Golemagg",
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Stoya-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "fff569",
-				["createdat"] = 1676451719,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
+				["instanceID"] = 624,
+				["createdat"] = 1676451422,
+				["resultID"] = 306,
 				["rolesNeeded"] = {
 				},
+				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676452072,
-				["resultID"] = 216,
-				["instanceID"] = 624,
+				["classColor"] = "ffffff",
 			},
-			["Bodzin-Golemagg"] = {
+			["Recobe-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = 3410,
-				["msg"] = "LF druid VoA spec run resto boomie feral",
+				["order"] = 3430,
+				["msg"] = "LFM 25 WORLD TOUR NAXX EOE OS (2D) Going when FULL  GDKP 80/20 300G all item START BID /w (Full Runs)",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
 				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["lootType"] = "GDKP",
+				["icon"] = "NAX.tga",
 				["words"] = {
-					"lf", -- [1]
-					"druid", -- [2]
-					"voa", -- [3]
-					"spec", -- [4]
-					"run", -- [5]
-					"resto", -- [6]
-					"boomie", -- [7]
-					"feral", -- [8]
+					"lfm", -- [1]
+					"25", -- [2]
+					"world", -- [3]
+					"tour", -- [4]
+					"naxx", -- [5]
+					"eoe", -- [6]
+					"os", -- [7]
+					"2d", -- [8]
+					"going", -- [9]
+					"when", -- [10]
+					"full", -- [11]
+					"gdkp", -- [12]
+					"80", -- [13]
+					"20", -- [14]
+					"300g", -- [15]
+					"all", -- [16]
+					"item", -- [17]
+					"start", -- [18]
+					"bid", -- [19]
+					"w", -- [20]
+					"runs", -- [21]
 				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Bodzin-Golemagg",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
-				["createdat"] = 1676452436,
+				["fullName"] = "Naxxramas - 25",
+				["author"] = "Recobe-Golemagg",
+				["classColor"] = "F58CBA",
+				["instanceID"] = 533,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676452438,
+				["minLevel"] = 80,
 				["maxLevel"] = 80,
-				["classColor"] = "FFF569",
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676459112,
+				["createdat"] = 1676458533,
 			},
-			["Hugehoehilda-Golemagg"] = {
+			["Tronplox-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3370,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ulduar 10",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Tronplox-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676486966,
+				["classColor"] = "c41f3b",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490288,
+				["resultID"] = 173,
+			},
+			["Beefstick-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "{star}LFM ULDU 25 FULL NM. Need Heals + DPS. Link curve or any ulduar exp. Fragments/orbs HR, Patterns on raid roll. 3SR>MS>OS",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"star", -- [1]
+					"lfm", -- [2]
+					"uldu", -- [3]
+					"25", -- [4]
+					"full", -- [5]
+					"nm", -- [6]
+					"need", -- [7]
+					"heals", -- [8]
+					"dps", -- [9]
+					"link", -- [10]
+					"curve", -- [11]
+					"or", -- [12]
+					"any", -- [13]
+					"ulduar", -- [14]
+					"exp", -- [15]
+					"fragments", -- [16]
+					"orbs", -- [17]
+					"hr", -- [18]
+					"patterns", -- [19]
+					"on", -- [20]
+					"raid", -- [21]
+					"roll", -- [22]
+					"3sr", -- [23]
+					"msos", -- [24]
+				},
+				["fullName"] = "Ulduar - 25",
+				["classColor"] = "C41F3B",
+				["author"] = "Beefstick-Golemagg",
+				["instanceID"] = 603,
+				["instanceName"] = "Ulduar",
+				["createdat"] = 1676490574,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["timestamp"] = 1676490972,
+				["maxLevel"] = 80,
+			},
+			["Battsuggar-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3320,
+				["msg"] = "Lf1M Mage for VoA 10 man classrun - Last spot!!",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"lf1m", -- [1]
+					"mage", -- [2]
+					"for", -- [3]
+					"voa", -- [4]
+					"10", -- [5]
+					"man", -- [6]
+					"classrun", -- [7]
+					"last", -- [8]
+					"spot", -- [9]
+				},
+				["fullName"] = "Vault of Archavon - 10",
+				["author"] = "Battsuggar-Golemagg",
+				["classColor"] = "F58CBA",
+				["instanceID"] = 624,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676450024,
+				["createdat"] = 1676449962,
+			},
+			["Ofisvk-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "heal priest LF VOA18",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
+				["words"] = {
+					"heal", -- [1]
+					"priest", -- [2]
+					"lf", -- [3]
+					"voa18", -- [4]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Ofisvk-Golemagg",
+				["instanceID"] = -1,
+				["classColor"] = "FFFFFF",
+				["maxLevel"] = 1000,
+				["minLevel"] = 0,
+				["instanceName"] = "Miscellaneous",
+				["rolesNeeded"] = {
+					2, -- [1]
+				},
+				["timestamp"] = 1676457728,
+				["createdat"] = 1676457728,
+			},
+			["Fullbringer-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1170,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Blackrock Depths",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "BRD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Blackrock Depths",
+				["author"] = "Fullbringer-Golemagg",
+				["maxLevel"] = 60,
+				["createdat"] = 1676449555,
+				["instanceID"] = 230,
+				["resultID"] = 391,
+				["minLevel"] = 48,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Blackrock Depths",
+				["timestamp"] = 1676452720,
+				["classColor"] = "40c7eb",
+			},
+			["Unduriel-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Unduriel-Golemagg",
+				["classColor"] = "40c7eb",
+				["minLevel"] = 78,
+				["instanceID"] = 33,
+				["createdat"] = 1676482351,
+				["resultID"] = 65,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "The Crown Chemical Co.",
+				["timestamp"] = 1676483477,
+				["maxLevel"] = 80,
+			},
+			["Bobìk-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3110,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Culling of Stratholme",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "COS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Culling of Stratholme",
+				["author"] = "Bobìk-Golemagg",
+				["instanceID"] = 595,
+				["maxLevel"] = 80,
+				["classColor"] = "abd473",
+				["minLevel"] = 78,
+				["resultID"] = 148,
+				["instanceName"] = "Culling of Stratholme",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676483133,
+			},
+			["Kelthrian-Golemagg"] = {
 				["isLFG"] = true,
 				["order"] = 3060,
 				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Halls of Stone",
@@ -17136,44 +26273,110 @@ GroupieDB = {
 				["words"] = {
 				},
 				["fullName"] = "Halls of Stone",
-				["author"] = "Hugehoehilda-Golemagg",
-				["maxLevel"] = 80,
+				["author"] = "Kelthrian-Golemagg",
 				["instanceID"] = 599,
-				["classColor"] = "f58cba",
-				["createdat"] = 1676455124,
+				["maxLevel"] = 80,
+				["classColor"] = "fff569",
+				["minLevel"] = 75,
+				["resultID"] = 197,
+				["instanceName"] = "Halls of Stone",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Halls of Stone",
-				["timestamp"] = 1676458818,
-				["resultID"] = 791,
-				["minLevel"] = 75,
+				["timestamp"] = 1676483837,
+				["createdat"] = 1676482730,
 			},
-			["Abokra-Golemagg"] = {
-				["isLFG"] = true,
+			["Ownka-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3220,
+				["msg"] = "LF3M HEAL + 2 DPS OCULUS HC NORM",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "OC.tga",
+				["words"] = {
+					"lf3m", -- [1]
+					"heal", -- [2]
+					"2", -- [3]
+					"dps", -- [4]
+					"oculus", -- [5]
+					"hc", -- [6]
+					"norm", -- [7]
+				},
+				["fullName"] = "Heroic Oculus",
+				["author"] = "Ownka-Golemagg",
+				["instanceID"] = 578,
+				["classColor"] = "ABD473",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["instanceName"] = "Oculus",
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["timestamp"] = 1676483846,
+				["createdat"] = 1676483759,
+			},
+			["Ohnoesbro-Golemagg"] = {
+				["isLFG"] = false,
 				["order"] = 3460,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ulduar 25",
+				["msg"] = "LFM Ulduar25 || 2/2 tanks, 3/5 heals, 5/18 DPS || Full Clear ( XT, Thorim, Vezzax HMs, more if possible ) || x2 SR, Patterns, orbs, fragments res || Sunday 7pm ST || req 4.5gs ",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
+				["isLFM"] = true,
+				["lootType"] = "SoftRes",
 				["icon"] = "ULD.tga",
 				["words"] = {
+					"lfm", -- [1]
+					"ulduar25", -- [2]
+					"2", -- [3]
+					"tanks", -- [4]
+					"3", -- [5]
+					"5", -- [6]
+					"heals", -- [7]
+					"18", -- [8]
+					"dps", -- [9]
+					"full", -- [10]
+					"clear", -- [11]
+					"xt", -- [12]
+					"thorim", -- [13]
+					"vezzax", -- [14]
+					"hms", -- [15]
+					"more", -- [16]
+					"if", -- [17]
+					"possible", -- [18]
+					"x2", -- [19]
+					"sr", -- [20]
+					"patterns", -- [21]
+					"orbs", -- [22]
+					"fragments", -- [23]
+					"res", -- [24]
+					"sunday", -- [25]
+					"7pm", -- [26]
+					"st", -- [27]
+					"req", -- [28]
+					"4", -- [29]
+					"5gs", -- [30]
 				},
 				["fullName"] = "Ulduar - 25",
-				["author"] = "Abokra-Golemagg",
-				["classColor"] = "c41f3b",
+				["author"] = "Ohnoesbro-Golemagg",
+				["classColor"] = "FFFFFF",
 				["instanceID"] = 603,
 				["minLevel"] = 80,
-				["resultID"] = 462,
+				["createdat"] = 1676490329,
 				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
 				},
 				["instanceName"] = "Ulduar",
-				["timestamp"] = 1676454444,
-				["createdat"] = 1676454441,
+				["timestamp"] = 1676490329,
 				["maxLevel"] = 80,
 			},
 			["Kvastrid-Golemagg"] = {
@@ -17200,397 +26403,98 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Kvastrid-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "9482C9",
-				["instanceID"] = 624,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
 				["createdat"] = 1676447002,
 				["minLevel"] = 80,
 				["instanceName"] = "Vault of Archavon",
 				["timestamp"] = 1676447002,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["maxLevel"] = 80,
-			},
-			["Ofisvk-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = -1,
-				["msg"] = "heal priest LF VOA18",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "Other.tga",
-				["words"] = {
-					"heal", -- [1]
-					"priest", -- [2]
-					"lf", -- [3]
-					"voa18", -- [4]
-				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Ofisvk-Golemagg",
-				["instanceID"] = -1,
-				["minLevel"] = 0,
-				["createdat"] = 1676457728,
-				["rolesNeeded"] = {
-					2, -- [1]
-				},
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676457728,
-				["maxLevel"] = 1000,
-				["classColor"] = "FFFFFF",
-			},
-			["Mallath-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Vault of Archavon 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Mallath-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "f58cba",
-				["createdat"] = 1676452040,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["rolesNeeded"] = {
-				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 229,
 				["instanceID"] = 624,
 			},
-			["Hasselnöt-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3270,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Gundrak",
+			["Poontank-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3160,
+				["msg"] = "LFM AH HC+ NeLFM LFM VH HC+ need healer (Unwanted) rez to tank",
 				["groupSize"] = 5,
 				["isHeroic"] = true,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "GUN.tga",
-				["words"] = {
-				},
-				["fullName"] = "Heroic Gundrak",
-				["author"] = "Hasselnöt-Golemagg",
-				["instanceID"] = 604,
-				["classColor"] = "c41f3b",
-				["resultID"] = 36,
-				["createdat"] = 1676448493,
-				["instanceName"] = "Gundrak",
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676450074,
-				["minLevel"] = 80,
-				["maxLevel"] = 80,
-			},
-			["Kuramer-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = -1,
-				["msg"] = "LFM EVENT BOSS KILL 5X NEED BOOMIE",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
 				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "Other.tga",
+				["lootType"] = "MS > OS",
+				["icon"] = "VH.tga",
 				["words"] = {
 					"lfm", -- [1]
-					"event", -- [2]
-					"boss", -- [3]
-					"kill", -- [4]
-					"5x", -- [5]
+					"ah", -- [2]
+					"hc", -- [3]
+					"nelfm", -- [4]
+					"vh", -- [5]
 					"need", -- [6]
-					"boomie", -- [7]
+					"healer", -- [7]
+					"unwanted", -- [8]
+					"rez", -- [9]
+					"to", -- [10]
+					"tank", -- [11]
 				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Kuramer-Golemagg",
-				["instanceID"] = -1,
-				["classColor"] = "FFFFFF",
-				["createdat"] = 1676456019,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676456206,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["minLevel"] = 0,
-			},
-			["Iamshaman-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = -1,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "Other.tga",
-				["words"] = {
-				},
-				["fullName"] = "The Crown Chemical Co.",
-				["author"] = "Iamshaman-Golemagg",
-				["classColor"] = "0070de",
-				["instanceID"] = 33,
-				["minLevel"] = 78,
-				["resultID"] = 349,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["instanceName"] = "The Crown Chemical Co.",
-				["timestamp"] = 1676452854,
-				["createdat"] = 1676452646,
-				["maxLevel"] = 80,
-			},
-			["Zillon-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3410,
-				["msg"] = "LFM VOA 25 MAN Spec Run, need resto/feral drood, ",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-					"lfm", -- [1]
-					"voa", -- [2]
-					"25", -- [3]
-					"man", -- [4]
-					"spec", -- [5]
-					"run", -- [6]
-					"need", -- [7]
-					"resto", -- [8]
-					"feral", -- [9]
-					"drood", -- [10]
-				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Zillon-Golemagg",
-				["instanceID"] = 624,
-				["classColor"] = "FFFFFF",
-				["createdat"] = 1676454222,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454480,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["minLevel"] = 80,
-			},
-			["Inypal-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3460,
-				["msg"] = "<RABIES> Hosting Ulduar 25 +4-5HM on Wednesday 19:30ST - Semiguild run - 3xSR (BOE/Orbs/Frags HR)- Need Hpala/Balance/Shadow for tonight. More info & Signups: https://discord.gg/H8bb59pBnN",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "ULD.tga",
-				["words"] = {
-					"rabies", -- [1]
-					"hosting", -- [2]
-					"ulduar", -- [3]
-					"25", -- [4]
-					"4", -- [5]
-					"5hm", -- [6]
-					"on", -- [7]
-					"wednesday", -- [8]
-					"19", -- [9]
-					"30st", -- [10]
-					"semiguild", -- [11]
-					"run", -- [12]
-					"3xsr", -- [13]
-					"boe", -- [14]
-					"orbs", -- [15]
-					"frags", -- [16]
-					"hr", -- [17]
-					"need", -- [18]
-					"hpala", -- [19]
-					"balance", -- [20]
-					"shadow", -- [21]
-					"for", -- [22]
-					"tonight", -- [23]
-					"more", -- [24]
-					"info", -- [25]
-					"signups", -- [26]
-					"https", -- [27]
-					"discord", -- [28]
-					"gg", -- [29]
-					"h8bb59pbnn", -- [30]
-				},
-				["fullName"] = "Ulduar - 25",
-				["author"] = "Inypal-Golemagg",
-				["classColor"] = "F58CBA",
+				["fullName"] = "Heroic Violet Hold",
+				["author"] = "Poontank-Golemagg",
+				["instanceID"] = 608,
+				["classColor"] = "C41F3B",
 				["maxLevel"] = 80,
 				["minLevel"] = 80,
-				["instanceID"] = 603,
+				["instanceName"] = "Violet Hold",
 				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
+					2, -- [1]
+					1, -- [2]
 				},
-				["timestamp"] = 1676455956,
-				["instanceName"] = "Ulduar",
-				["createdat"] = 1676447597,
+				["timestamp"] = 1676483833,
+				["createdat"] = 1676483825,
 			},
-			["Lidyismad-Golemagg"] = {
+			["Iassasinl-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = 3430,
-				["msg"] = "LFM NAXX 25M {Turning Tide HR} 1 SR >MS>OS SKIP RUN 24/25",
-				["groupSize"] = 25,
+				["order"] = 3350,
+				["msg"] = "LFM {star} EoE 10 Man {star} MS OS [Feet HR] Need 1 Healer And 1 DPS To Go !",
+				["groupSize"] = 10,
 				["isHeroic"] = false,
 				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "NAX.tga",
-				["words"] = {
-					"lfm", -- [1]
-					"naxx", -- [2]
-					"25m", -- [3]
-					"turning", -- [4]
-					"tide", -- [5]
-					"hr", -- [6]
-					"1", -- [7]
-					"sr", -- [8]
-					"msos", -- [9]
-					"skip", -- [10]
-					"run", -- [11]
-					"24", -- [12]
-					"25", -- [13]
-				},
-				["fullName"] = "Naxxramas - 25",
-				["author"] = "Lidyismad-Golemagg",
-				["instanceID"] = 533,
-				["maxLevel"] = 80,
-				["minLevel"] = 80,
-				["classColor"] = "9482C9",
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676456050,
-				["instanceName"] = "Naxxramas",
-				["createdat"] = 1676455510,
-			},
-			["Furyhaze-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3440,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Eye of Eternity 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = false,
 				["lootType"] = "MS > OS",
 				["icon"] = "EOE.tga",
 				["words"] = {
+					"lfm", -- [1]
+					"star", -- [2]
+					"eoe", -- [3]
+					"10", -- [4]
+					"man", -- [5]
+					"msos", -- [6]
+					"feet", -- [7]
+					"hr", -- [8]
+					"need", -- [9]
+					"1", -- [10]
+					"healer", -- [11]
+					"and", -- [12]
+					"dps", -- [13]
+					"to", -- [14]
+					"go", -- [15]
 				},
-				["fullName"] = "Eye of Eternity - 25",
-				["author"] = "Furyhaze-Golemagg",
+				["fullName"] = "Eye of Eternity - 10",
+				["author"] = "Iassasinl-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "c79c6e",
-				["createdat"] = 1676451921,
+				["classColor"] = "69CCF0",
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["createdat"] = 1676448970,
 				["minLevel"] = 80,
 				["instanceName"] = "Eye of Eternity",
-				["rolesNeeded"] = {
-				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 291,
+				["timestamp"] = 1676450341,
 				["instanceID"] = 616,
 			},
-			["Leondoras-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3320,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 10",
-				["groupSize"] = 10,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-				},
-				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Leondoras-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "f58cba",
-				["createdat"] = 1676451176,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["rolesNeeded"] = {
-				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 235,
-				["instanceID"] = 624,
-			},
-			["Refusd-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3300,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Culling of Stratholme",
-				["groupSize"] = 5,
-				["isHeroic"] = true,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "COS.tga",
-				["words"] = {
-				},
-				["fullName"] = "Heroic Culling of Stratholme",
-				["author"] = "Refusd-Golemagg",
-				["maxLevel"] = 80,
-				["instanceID"] = 595,
-				["classColor"] = "fff569",
-				["resultID"] = 38,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["instanceName"] = "Culling of Stratholme",
-				["timestamp"] = 1676449926,
-				["createdat"] = 1676444489,
-				["minLevel"] = 80,
-			},
-			["Snaggletoöth-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3320,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Vault of Archavon 10",
-				["groupSize"] = 10,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-				},
-				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Snaggletoöth-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "c79c6e",
-				["createdat"] = 1676452024,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["rolesNeeded"] = {
-				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 310,
-				["instanceID"] = 624,
-			},
-			["Healujuzitra-Golemagg"] = {
+			["Owajtik-Golemagg"] = {
 				["isLFG"] = true,
 				["order"] = 1120,
 				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Uldaman",
@@ -17602,11 +26506,12 @@ GroupieDB = {
 				["words"] = {
 				},
 				["fullName"] = "Uldaman",
-				["author"] = "Healujuzitra-Golemagg",
-				["maxLevel"] = 44,
+				["author"] = "Owajtik-Golemagg",
+				["classColor"] = "8787ed",
+				["minLevel"] = 36,
 				["instanceID"] = 70,
-				["classColor"] = "0070de",
-				["resultID"] = 38,
+				["createdat"] = 1676482383,
+				["resultID"] = 196,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -17614,102 +26519,154 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["instanceName"] = "Uldaman",
-				["timestamp"] = 1676447241,
-				["createdat"] = 1676444153,
-				["minLevel"] = 36,
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 44,
 			},
-			["Hesteria-Golemagg"] = {
+			["Arnic-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Arnic-Golemagg",
+				["instanceID"] = 601,
+				["createdat"] = 1676489786,
+				["classColor"] = "c79c6e",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676490209,
+				["resultID"] = 89,
+			},
+			["Frozenintime-Golemagg"] = {
 				["isLFG"] = false,
 				["order"] = -1,
-				["msg"] = "LFM {x}VOA16{X} spec run ele last spot",
+				["msg"] = "WTS |cff0070dd|Hitem:45087::::::::80:::::::::|h[Runed Orb]|h|r 600g",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "Other",
 				["icon"] = "Other.tga",
 				["words"] = {
-					"lfm", -- [1]
-					"x", -- [2]
-					"voa16", -- [3]
-					"spec", -- [4]
-					"run", -- [5]
-					"ele", -- [6]
-					"last", -- [7]
-					"spot", -- [8]
+					"wts", -- [1]
+					"hitem", -- [2]
+					"45087", -- [3]
+					"80", -- [4]
+					"h", -- [5]
+					"runed", -- [6]
+					"orb", -- [7]
+					"600g", -- [8]
 				},
 				["fullName"] = "Miscellaneous",
-				["author"] = "Hesteria-Golemagg",
-				["classColor"] = "C41F3B",
+				["author"] = "Frozenintime-Golemagg",
+				["classColor"] = "C79C6E",
 				["instanceID"] = -1,
-				["createdat"] = 1676447312,
 				["minLevel"] = 0,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676450236,
+				["createdat"] = 1676490401,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676490542,
 				["maxLevel"] = 1000,
 			},
-			["Wutsi-Golemagg"] = {
+			["Hobz-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3300,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Culling of Stratholme",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "COS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Culling of Stratholme",
+				["author"] = "Hobz-Golemagg",
+				["maxLevel"] = 80,
+				["createdat"] = 1676448442,
+				["instanceID"] = 595,
+				["resultID"] = 7,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Culling of Stratholme",
+				["timestamp"] = 1676449926,
+				["classColor"] = "c79c6e",
+			},
+			["Hampdamp-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3370,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ulduar 10",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ulduar - 10",
+				["author"] = "Hampdamp-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676488685,
+				["classColor"] = "ff7d0a",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490288,
+				["resultID"] = 174,
+			},
+			["Samarytanin-Golemagg"] = {
 				["isLFG"] = false,
 				["order"] = 3410,
-				["msg"] = "LFM voa25  - shaman",
+				["msg"] = "war 4.7 dps lf voa25",
 				["groupSize"] = 25,
 				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "MS > OS",
 				["icon"] = "VOA.tga",
 				["words"] = {
-					"lfm", -- [1]
-					"voa25", -- [2]
-					"shaman", -- [3]
+					"war", -- [1]
+					"4", -- [2]
+					"7", -- [3]
+					"dps", -- [4]
+					"lf", -- [5]
+					"voa25", -- [6]
 				},
 				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Wutsi-Golemagg",
+				["author"] = "Samarytanin-Golemagg",
 				["instanceID"] = 624,
-				["classColor"] = "9482C9",
-				["createdat"] = 1676455897,
+				["classColor"] = "C79C6E",
 				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676456174,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
 				["minLevel"] = 80,
-			},
-			["Amithea-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 2020,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Slave Pens",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "SP.tga",
-				["words"] = {
-				},
-				["fullName"] = "Slave Pens",
-				["author"] = "Amithea-Golemagg",
-				["instanceID"] = 547,
-				["classColor"] = "0070de",
-				["resultID"] = 9,
-				["createdat"] = 1676445210,
-				["instanceName"] = "Slave Pens",
+				["instanceName"] = "Vault of Archavon",
 				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
+					3, -- [1]
+					4, -- [2]
 				},
-				["timestamp"] = 1676450157,
-				["minLevel"] = 61,
-				["maxLevel"] = 69,
+				["timestamp"] = 1676483689,
+				["createdat"] = 1676483689,
 			},
 			["Kaientjie-Golemagg"] = {
 				["isLFG"] = true,
@@ -17724,19 +26681,19 @@ GroupieDB = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
 				["author"] = "Kaientjie-Golemagg",
-				["classColor"] = "f58cba",
-				["instanceID"] = 601,
-				["resultID"] = 654,
+				["maxLevel"] = 80,
 				["createdat"] = 1676457938,
+				["classColor"] = "f58cba",
+				["resultID"] = 654,
+				["minLevel"] = 80,
+				["instanceName"] = "Azjol-Nerub",
 				["rolesNeeded"] = {
 					1, -- [1]
 					3, -- [2]
 					4, -- [3]
 				},
-				["instanceName"] = "Azjol-Nerub",
 				["timestamp"] = 1676458034,
-				["minLevel"] = 80,
-				["maxLevel"] = 80,
+				["instanceID"] = 601,
 			},
 			["Vosty-Golemagg"] = {
 				["isLFG"] = false,
@@ -17755,208 +26712,256 @@ GroupieDB = {
 				},
 				["fullName"] = "Nexus",
 				["author"] = "Vosty-Golemagg",
+				["maxLevel"] = 75,
 				["instanceID"] = 576,
-				["classColor"] = "FF7D0A",
-				["minLevel"] = 70,
-				["createdat"] = 1676448728,
-				["instanceName"] = "Nexus",
-				["timestamp"] = 1676450737,
 				["rolesNeeded"] = {
 					3, -- [1]
 					4, -- [2]
 				},
-				["maxLevel"] = 75,
+				["minLevel"] = 70,
+				["createdat"] = 1676448728,
+				["instanceName"] = "Nexus",
+				["timestamp"] = 1676450737,
+				["classColor"] = "FF7D0A",
 			},
-			["Amorino-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = -1,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
-				["groupSize"] = 5,
+			["Ragnasil-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3460,
+				["msg"] = "<Hellscream> is recruiting DPS & Healers! We run Ulduar 10 Saturday 18:00 with multiple groups and Ulduar 25 Sunday 17:00 ST with TWO groups! For our loot system we use a wishlist from the TMB website with no prios! All classes and specs are welcome!",
+				["groupSize"] = 25,
 				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "Other.tga",
-				["words"] = {
-				},
-				["fullName"] = "The Crown Chemical Co.",
-				["author"] = "Amorino-Golemagg",
 				["maxLevel"] = 80,
-				["classColor"] = "ffffff",
-				["instanceID"] = 33,
-				["resultID"] = 4,
-				["instanceName"] = "The Crown Chemical Co.",
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
+				["lootType"] = "Other",
+				["icon"] = "ULD.tga",
+				["words"] = {
+					"hellscream", -- [1]
+					"is", -- [2]
+					"recruiting", -- [3]
+					"dps", -- [4]
+					"healers", -- [5]
+					"we", -- [6]
+					"run", -- [7]
+					"ulduar", -- [8]
+					"10", -- [9]
+					"saturday", -- [10]
+					"18", -- [11]
+					"00", -- [12]
+					"with", -- [13]
+					"multiple", -- [14]
+					"groups", -- [15]
+					"and", -- [16]
+					"25", -- [17]
+					"sunday", -- [18]
+					"17", -- [19]
+					"st", -- [20]
+					"two", -- [21]
+					"for", -- [22]
+					"our", -- [23]
+					"loot", -- [24]
+					"system", -- [25]
+					"use", -- [26]
+					"a", -- [27]
+					"wishlist", -- [28]
+					"from", -- [29]
+					"the", -- [30]
+					"tmb", -- [31]
+					"website", -- [32]
+					"no", -- [33]
+					"prios", -- [34]
+					"all", -- [35]
+					"classes", -- [36]
+					"specs", -- [37]
+					"are", -- [38]
+					"welcome", -- [39]
 				},
-				["timestamp"] = 1676446944,
-				["createdat"] = 1676446353,
-				["minLevel"] = 78,
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Ragnasil-Golemagg",
+				["isLFM"] = true,
+				["classColor"] = "F58CBA",
+				["instanceName"] = "Ulduar",
+				["createdat"] = 1676454271,
+				["instanceID"] = 603,
+				["rolesNeeded"] = {
+					3, -- [1]
+					4, -- [2]
+					2, -- [3]
+				},
+				["timestamp"] = 1676458632,
+				["minLevel"] = 80,
 			},
 			["Slemmizz-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3320,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Vault of Archavon 10",
-				["groupSize"] = 10,
+				["order"] = 3460,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ulduar 25",
+				["groupSize"] = 25,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["icon"] = "ULD.tga",
 				["words"] = {
 				},
-				["fullName"] = "Vault of Archavon - 10",
+				["fullName"] = "Ulduar - 25",
 				["author"] = "Slemmizz-Golemagg",
+				["maxLevel"] = 80,
+				["resultID"] = 112,
 				["classColor"] = "ff7d0a",
-				["instanceID"] = 624,
 				["minLevel"] = 80,
-				["resultID"] = 414,
+				["createdat"] = 1676490076,
+				["instanceName"] = "Ulduar",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454444,
-				["createdat"] = 1676454155,
-				["maxLevel"] = 80,
+				["timestamp"] = 1676490287,
+				["instanceID"] = 603,
 			},
-			["Kisulka-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = -1,
-				["msg"] = "LFM rest shamans LST SPOT Woa25 class run pm me your spec",
+			["Holytulkain-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1170,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Blackrock Depths",
 				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "BRD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Blackrock Depths",
+				["author"] = "Holytulkain-Golemagg",
+				["instanceID"] = 230,
+				["maxLevel"] = 60,
+				["classColor"] = "f58cba",
+				["minLevel"] = 48,
+				["resultID"] = 179,
+				["instanceName"] = "Blackrock Depths",
+				["rolesNeeded"] = {
+					1, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["timestamp"] = 1676483837,
+				["createdat"] = 1676483517,
+			},
+			["Deîmos-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3410,
+				["msg"] = "rogue 4,750 lfg voa 25 spec run",
+				["groupSize"] = 25,
 				["isHeroic"] = false,
 				["isLFM"] = true,
-				["lootType"] = "Other",
-				["icon"] = "Other.tga",
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
 				["words"] = {
-					"lfm", -- [1]
-					"rest", -- [2]
-					"shamans", -- [3]
-					"lst", -- [4]
-					"spot", -- [5]
-					"woa25", -- [6]
-					"class", -- [7]
+					"rogue", -- [1]
+					"4", -- [2]
+					"750", -- [3]
+					"lfg", -- [4]
+					"voa", -- [5]
+					"25", -- [6]
+					"spec", -- [7]
 					"run", -- [8]
-					"pm", -- [9]
-					"me", -- [10]
-					"your", -- [11]
-					"spec", -- [12]
-				},
-				["fullName"] = "Miscellaneous",
-				["author"] = "Kisulka-Golemagg",
-				["instanceID"] = -1,
-				["classColor"] = "9482C9",
-				["createdat"] = 1676457032,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676457716,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["minLevel"] = 0,
-			},
-			["Brokkie-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3320,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 10",
-				["groupSize"] = 10,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-				},
-				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Brokkie-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "c79c6e",
-				["createdat"] = 1676452064,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["rolesNeeded"] = {
-				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 280,
-				["instanceID"] = 624,
-			},
-			["Ondisch-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3420,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Obsidian Sanctum 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "OS.tga",
-				["words"] = {
-				},
-				["fullName"] = "Obsidian Sanctum - 25",
-				["author"] = "Ondisch-Golemagg",
-				["classColor"] = "f58cba",
-				["instanceID"] = 615,
-				["minLevel"] = 80,
-				["resultID"] = 503,
-				["rolesNeeded"] = {
-				},
-				["instanceName"] = "Obsidian Sanctum",
-				["timestamp"] = 1676454602,
-				["createdat"] = 1676453946,
-				["maxLevel"] = 80,
-			},
-			["Zasapain-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3100,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Halls of Lightning",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "HOL.tga",
-				["words"] = {
-				},
-				["fullName"] = "Halls of Lightning",
-				["author"] = "Zasapain-Golemagg",
-				["instanceID"] = 602,
-				["classColor"] = "c41f3b",
-				["resultID"] = 762,
-				["createdat"] = 1676453815,
-				["instanceName"] = "Halls of Lightning",
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676458818,
-				["minLevel"] = 78,
-				["maxLevel"] = 80,
-			},
-			["Ibrakadabra-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Ibrakadabra-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "40c7eb",
-				["createdat"] = 1676451815,
+				["author"] = "Deîmos-Golemagg",
+				["classColor"] = "FFF569",
+				["instanceID"] = 624,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
 				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676454257,
+				["createdat"] = 1676454180,
+			},
+			["Deathegun-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 1300,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Tank LFG Zul'Gurub",
+				["groupSize"] = 20,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ZG.tga",
+				["words"] = {
+				},
+				["fullName"] = "Zul'Gurub",
+				["author"] = "Deathegun-Golemagg",
+				["instanceID"] = 309,
+				["createdat"] = 1676489215,
+				["classColor"] = "f58cba",
+				["maxLevel"] = 69,
+				["minLevel"] = 56,
 				["rolesNeeded"] = {
 				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 242,
-				["instanceID"] = 624,
+				["instanceName"] = "Zul'Gurub",
+				["timestamp"] = 1676490287,
+				["resultID"] = 127,
+			},
+			["Priance-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3350,
+				["msg"] = "LFM {star} EoE 10 Man {star} MS OS [Feet HR] Need 1 Healer And 3 DPS",
+				["groupSize"] = 10,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "EOE.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"star", -- [2]
+					"eoe", -- [3]
+					"10", -- [4]
+					"man", -- [5]
+					"msos", -- [6]
+					"feet", -- [7]
+					"hr", -- [8]
+					"need", -- [9]
+					"1", -- [10]
+					"healer", -- [11]
+					"and", -- [12]
+					"3", -- [13]
+					"dps", -- [14]
+				},
+				["fullName"] = "Eye of Eternity - 10",
+				["classColor"] = "FF7D0A",
+				["author"] = "Priance-Golemagg",
+				["instanceID"] = 616,
+				["instanceName"] = "Eye of Eternity",
+				["createdat"] = 1676490665,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+					2, -- [1]
+					3, -- [2]
+					4, -- [3]
+				},
+				["timestamp"] = 1676490830,
+				["maxLevel"] = 80,
+			},
+			["Brokenwings-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3460,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Ulduar 25",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "ULD.tga",
+				["words"] = {
+				},
+				["fullName"] = "Ulduar - 25",
+				["author"] = "Brokenwings-Golemagg",
+				["instanceID"] = 603,
+				["createdat"] = 1676489573,
+				["classColor"] = "ffffff",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
+				["rolesNeeded"] = {
+				},
+				["instanceName"] = "Ulduar",
+				["timestamp"] = 1676490287,
+				["resultID"] = 132,
 			},
 			["Magnarthas-Golemagg"] = {
 				["isLFG"] = true,
@@ -17971,44 +26976,44 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Magnarthas-Golemagg",
-				["classColor"] = "c41f3b",
-				["instanceID"] = 603,
-				["minLevel"] = 80,
+				["maxLevel"] = 80,
 				["resultID"] = 453,
+				["classColor"] = "c41f3b",
+				["minLevel"] = 80,
+				["createdat"] = 1676454394,
+				["instanceName"] = "Ulduar",
 				["rolesNeeded"] = {
 				},
-				["instanceName"] = "Ulduar",
 				["timestamp"] = 1676454444,
-				["createdat"] = 1676454394,
-				["maxLevel"] = 80,
+				["instanceID"] = 603,
 			},
-			["Onebttonhero-Golemagg"] = {
+			["Xavilladk-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3040,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Drak'Tharon Keep",
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "DTK.tga",
+				["icon"] = "Other.tga",
 				["words"] = {
 				},
-				["fullName"] = "Drak'Tharon Keep",
-				["author"] = "Onebttonhero-Golemagg",
-				["instanceID"] = 600,
-				["classColor"] = "f58cba",
-				["resultID"] = 25,
-				["createdat"] = 1676449552,
-				["instanceName"] = "Drak'Tharon Keep",
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Xavilladk-Golemagg",
+				["instanceID"] = 33,
+				["maxLevel"] = 80,
+				["classColor"] = "c41f3b",
+				["minLevel"] = 78,
+				["resultID"] = 164,
+				["instanceName"] = "The Crown Chemical Co.",
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["timestamp"] = 1676449926,
-				["minLevel"] = 72,
-				["maxLevel"] = 78,
+				["timestamp"] = 1676483838,
+				["createdat"] = 1676483644,
 			},
 			["Kiokin-Golemagg"] = {
 				["isLFG"] = false,
@@ -18028,8 +27033,9 @@ GroupieDB = {
 				},
 				["fullName"] = "Vault of Archavon - 25",
 				["author"] = "Kiokin-Golemagg",
-				["instanceID"] = 624,
 				["classColor"] = "FF7D0A",
+				["instanceID"] = 624,
+				["instanceName"] = "Vault of Archavon",
 				["createdat"] = 1676459006,
 				["maxLevel"] = 80,
 				["rolesNeeded"] = {
@@ -18040,177 +27046,152 @@ GroupieDB = {
 				},
 				["timestamp"] = 1676459006,
 				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
 			},
-			["Ändré-Golemagg"] = {
+			["Schatmo-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = 3340,
-				["msg"] = "LAST SPOT FOR TANK for OS10 2D - Illustration HR (SR>MS)",
+				["order"] = 3330,
+				["msg"] = "1X HEAL 3X DMG SKIPP NAXX 10 1X SR HR TORCH",
 				["groupSize"] = 10,
 				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "SoftRes",
-				["icon"] = "OS.tga",
+				["icon"] = "NAX.tga",
 				["words"] = {
-					"last", -- [1]
-					"spot", -- [2]
-					"for", -- [3]
-					"tank", -- [4]
-					"os10", -- [5]
-					"2d", -- [6]
-					"illustration", -- [7]
-					"hr", -- [8]
-					"sr", -- [9]
-					"ms", -- [10]
+					"1x", -- [1]
+					"heal", -- [2]
+					"3x", -- [3]
+					"dmg", -- [4]
+					"skipp", -- [5]
+					"naxx", -- [6]
+					"10", -- [7]
+					"sr", -- [8]
+					"hr", -- [9]
+					"torch", -- [10]
 				},
-				["fullName"] = "Obsidian Sanctum - 10",
-				["author"] = "Ändré-Golemagg",
-				["instanceID"] = 615,
-				["minLevel"] = 80,
-				["createdat"] = 1676457708,
-				["rolesNeeded"] = {
-					1, -- [1]
-				},
-				["instanceName"] = "Obsidian Sanctum",
-				["timestamp"] = 1676458601,
-				["maxLevel"] = 80,
+				["fullName"] = "Naxxramas - 10",
+				["author"] = "Schatmo-Golemagg",
 				["classColor"] = "FFFFFF",
-			},
-			["Amberdepp-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Vault of Archavon 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Amberdepp-Golemagg",
-				["classColor"] = "f58cba",
-				["instanceID"] = 624,
+				["instanceID"] = 533,
 				["minLevel"] = 80,
-				["resultID"] = 421,
+				["createdat"] = 1676490521,
 				["rolesNeeded"] = {
+					2, -- [1]
 				},
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454444,
-				["createdat"] = 1676454177,
+				["instanceName"] = "Naxxramas",
+				["timestamp"] = 1676490872,
 				["maxLevel"] = 80,
 			},
-			["Andjeous-Golemagg"] = {
+			["Snailish-Golemagg"] = {
 				["isLFG"] = true,
-				["order"] = 3010,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Nexus",
+				["order"] = 1170,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Blackrock Depths",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "NEX.tga",
+				["icon"] = "BRD.tga",
 				["words"] = {
 				},
-				["fullName"] = "Nexus",
-				["author"] = "Andjeous-Golemagg",
+				["fullName"] = "Blackrock Depths",
+				["author"] = "Snailish-Golemagg",
+				["classColor"] = "c79c6e",
+				["minLevel"] = 48,
+				["instanceID"] = 230,
+				["createdat"] = 1676481903,
+				["resultID"] = 142,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Blackrock Depths",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 60,
+			},
+			["Saevherne-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = -1,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG The Crown Chemical Co.",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "Other.tga",
+				["words"] = {
+				},
+				["fullName"] = "The Crown Chemical Co.",
+				["author"] = "Saevherne-Golemagg",
+				["maxLevel"] = 80,
+				["minLevel"] = 78,
+				["instanceID"] = 33,
+				["createdat"] = 1676446564,
+				["resultID"] = 28,
+				["instanceName"] = "The Crown Chemical Co.",
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676446944,
 				["classColor"] = "fff569",
-				["instanceID"] = 576,
-				["minLevel"] = 70,
-				["resultID"] = 371,
+			},
+			["Cvpone-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3240,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Halls of Stone",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "HOS.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Halls of Stone",
+				["author"] = "Cvpone-Golemagg",
+				["instanceID"] = 599,
+				["createdat"] = 1676488769,
+				["classColor"] = "fff569",
+				["maxLevel"] = 80,
+				["minLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["instanceName"] = "Nexus",
-				["timestamp"] = 1676452720,
-				["createdat"] = 1676451748,
-				["maxLevel"] = 75,
+				["instanceName"] = "Halls of Stone",
+				["timestamp"] = 1676490825,
+				["resultID"] = 310,
 			},
-			["Ghostfly-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3320,
-				["msg"] = "LFM VOA 10 NEED LOCK AND HUNTER LAST SPOT FAST RUN LETS GO",
-				["groupSize"] = 10,
+			["Krugs-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 2010,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Blood Furnace",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
-				["maxLevel"] = 80,
+				["isLFM"] = false,
 				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
+				["icon"] = "BF.tga",
 				["words"] = {
-					"lfm", -- [1]
-					"voa", -- [2]
-					"10", -- [3]
-					"need", -- [4]
-					"lock", -- [5]
-					"and", -- [6]
-					"hunter", -- [7]
-					"last", -- [8]
-					"spot", -- [9]
-					"fast", -- [10]
-					"run", -- [11]
-					"lets", -- [12]
-					"go", -- [13]
 				},
-				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Ghostfly-Golemagg",
-				["classColor"] = "FFF569",
-				["isLFM"] = true,
-				["minLevel"] = 80,
-				["instanceID"] = 624,
+				["fullName"] = "Blood Furnace",
+				["author"] = "Krugs-Golemagg",
+				["classColor"] = "ffffff",
+				["minLevel"] = 60,
+				["instanceID"] = 542,
+				["createdat"] = 1676479376,
+				["resultID"] = 159,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["timestamp"] = 1676458189,
-				["instanceName"] = "Vault of Archavon",
-				["createdat"] = 1676456141,
-			},
-			["Clownclass-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3410,
-				["msg"] = "LFM VoA 18 spec run /w Gs Need 1 tank \"not dk\" Disc,restos / dps > druids hunter sham",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-					"lfm", -- [1]
-					"voa", -- [2]
-					"18", -- [3]
-					"spec", -- [4]
-					"run", -- [5]
-					"w", -- [6]
-					"gs", -- [7]
-					"need", -- [8]
-					"1", -- [9]
-					"tank", -- [10]
-					"not", -- [11]
-					"dk", -- [12]
-					"disc", -- [13]
-					"restos", -- [14]
-					"dps", -- [15]
-					"druids", -- [16]
-					"hunter", -- [17]
-					"sham", -- [18]
-				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Clownclass-Golemagg",
-				["instanceID"] = 624,
-				["classColor"] = "C41F3B",
-				["createdat"] = 1676449932,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676450167,
-				["rolesNeeded"] = {
-					1, -- [1]
-					3, -- [2]
-					4, -- [3]
-				},
-				["minLevel"] = 80,
+				["instanceName"] = "Blood Furnace",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 68,
 			},
 			["Nabakanalama-Golemagg"] = {
 				["isLFG"] = false,
@@ -18272,137 +27253,86 @@ GroupieDB = {
 				},
 				["fullName"] = "Ulduar - 25",
 				["author"] = "Nabakanalama-Golemagg",
+				["maxLevel"] = 80,
 				["classColor"] = "FF7D0A",
-				["instanceID"] = 603,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
 				["createdat"] = 1676449677,
 				["minLevel"] = 80,
 				["instanceName"] = "Ulduar",
 				["timestamp"] = 1676452973,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["maxLevel"] = 80,
+				["instanceID"] = 603,
 			},
-			["Jocastam-Golemagg"] = {
+			["Slainzlock-Golemagg"] = {
 				["isLFG"] = false,
-				["order"] = 3420,
-				["msg"] = "LFM OS2D  PENNANT HR  1SR-MS-OS || Need healer Last spot ",
-				["groupSize"] = 25,
+				["order"] = -1,
+				["msg"] = "WTS 22x [Lovely Charm Bracelet] 20g each",
+				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "OS.tga",
-				["words"] = {
-					"lfm", -- [1]
-					"os2d", -- [2]
-					"pennant", -- [3]
-					"hr", -- [4]
-					"1sr", -- [5]
-					"msos", -- [6]
-					"need", -- [7]
-					"healer", -- [8]
-					"last", -- [9]
-					"spot", -- [10]
-				},
-				["fullName"] = "Obsidian Sanctum - 25",
-				["author"] = "Jocastam-Golemagg",
-				["instanceID"] = 615,
-				["classColor"] = "69CCF0",
-				["createdat"] = 1676458905,
-				["maxLevel"] = 80,
-				["instanceName"] = "Obsidian Sanctum",
-				["timestamp"] = 1676458998,
-				["rolesNeeded"] = {
-					2, -- [1]
-				},
-				["minLevel"] = 80,
-			},
-			["Cosmoses-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = -1,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG The Crown Chemical Co.",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
+				["lootType"] = "Other",
 				["icon"] = "Other.tga",
 				["words"] = {
+					"wts", -- [1]
+					"22x", -- [2]
+					"lovely", -- [3]
+					"charm", -- [4]
+					"bracelet", -- [5]
+					"20g", -- [6]
+					"each", -- [7]
 				},
-				["fullName"] = "The Crown Chemical Co.",
-				["author"] = "Cosmoses-Golemagg",
-				["classColor"] = "ffffff",
-				["instanceID"] = 33,
-				["minLevel"] = 78,
-				["resultID"] = 348,
-				["rolesNeeded"] = {
-					1, -- [1]
-					3, -- [2]
-					4, -- [3]
-				},
-				["instanceName"] = "The Crown Chemical Co.",
-				["timestamp"] = 1676452720,
-				["createdat"] = 1676452494,
-				["maxLevel"] = 80,
-			},
-			["Croakz-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3410,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Vault of Archavon 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Croakz-Golemagg",
-				["classColor"] = "8787ed",
-				["instanceID"] = 624,
-				["minLevel"] = 80,
-				["resultID"] = 415,
-				["rolesNeeded"] = {
-				},
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676454444,
-				["createdat"] = 1676453871,
-				["maxLevel"] = 80,
-			},
-			["Blostrup-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3210,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Old Kingdom",
-				["groupSize"] = 5,
-				["isHeroic"] = true,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "OK.tga",
-				["words"] = {
-				},
-				["fullName"] = "Heroic Old Kingdom",
-				["author"] = "Blostrup-Golemagg",
-				["instanceName"] = "Old Kingdom",
-				["instanceID"] = 619,
-				["minLevel"] = 80,
-				["resultID"] = 760,
-				["maxLevel"] = 80,
+				["fullName"] = "Miscellaneous",
+				["author"] = "Slainzlock-Golemagg",
+				["classColor"] = "9482C9",
+				["instanceID"] = -1,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
 					3, -- [3]
 					4, -- [4]
 				},
-				["timestamp"] = 1676458818,
-				["createdat"] = 1676458258,
-				["classColor"] = "c79c6e",
+				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676457711,
+				["createdat"] = 1676456432,
 			},
-			["Sphisix-Golemagg"] = {
+			["Celsiu-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3050,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Violet Hold",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "VH.tga",
+				["words"] = {
+				},
+				["fullName"] = "Violet Hold",
+				["author"] = "Celsiu-Golemagg",
+				["classColor"] = "0070de",
+				["minLevel"] = 73,
+				["instanceID"] = 608,
+				["maxLevel"] = 79,
+				["resultID"] = 320,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Violet Hold",
+				["timestamp"] = 1676490825,
+				["createdat"] = 1676490095,
+			},
+			["Blantiren-Golemagg"] = {
 				["isLFG"] = false,
 				["order"] = -1,
-				["msg"] = "WTS |cffffffff|Hitem:49916::::::::39:::::::::|h[Lovely Charm Bracelet]|h|r for 20g or |cffffffff|Hitem:49927::::::::28:::::::::|h[Love Token]|h|r 15g each, by purchasing tradable items for you. Discount when buying a bunch!",
+				["msg"] = "WTS |cffa335ee|Hitem:45435::::::::80:::::::::|h[Cowl of the Absolute]|h|r Cheap",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = true,
@@ -18411,40 +27341,19 @@ GroupieDB = {
 				["words"] = {
 					"wts", -- [1]
 					"hitem", -- [2]
-					"49916", -- [3]
-					"39", -- [4]
+					"45435", -- [3]
+					"80", -- [4]
 					"h", -- [5]
-					"lovely", -- [6]
-					"charm", -- [7]
-					"bracelet", -- [8]
-					"for", -- [9]
-					"20g", -- [10]
-					"or", -- [11]
-					"49927", -- [12]
-					"28", -- [13]
-					"love", -- [14]
-					"token", -- [15]
-					"15g", -- [16]
-					"each", -- [17]
-					"by", -- [18]
-					"purchasing", -- [19]
-					"tradable", -- [20]
-					"items", -- [21]
-					"you", -- [22]
-					"discount", -- [23]
-					"when", -- [24]
-					"buying", -- [25]
-					"a", -- [26]
-					"bunch", -- [27]
+					"cowl", -- [6]
+					"of", -- [7]
+					"the", -- [8]
+					"absolute", -- [9]
+					"cheap", -- [10]
 				},
 				["fullName"] = "Miscellaneous",
-				["author"] = "Sphisix-Golemagg",
+				["author"] = "Blantiren-Golemagg",
+				["classColor"] = "F58CBA",
 				["instanceID"] = -1,
-				["classColor"] = "69CCF0",
-				["createdat"] = 1676453096,
-				["maxLevel"] = 1000,
-				["instanceName"] = "Miscellaneous",
-				["timestamp"] = 1676453096,
 				["rolesNeeded"] = {
 					1, -- [1]
 					2, -- [2]
@@ -18452,11 +27361,15 @@ GroupieDB = {
 					4, -- [4]
 				},
 				["minLevel"] = 0,
+				["maxLevel"] = 1000,
+				["instanceName"] = "Miscellaneous",
+				["timestamp"] = 1676455782,
+				["createdat"] = 1676453939,
 			},
-			["Brainpain-Golemagg"] = {
+			["Skaza-Golemagg"] = {
 				["isLFG"] = true,
 				["order"] = 3110,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Culling of Stratholme",
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Culling of Stratholme",
 				["groupSize"] = 5,
 				["isHeroic"] = false,
 				["isLFM"] = false,
@@ -18465,22 +27378,51 @@ GroupieDB = {
 				["words"] = {
 				},
 				["fullName"] = "Culling of Stratholme",
-				["author"] = "Brainpain-Golemagg",
-				["instanceName"] = "Culling of Stratholme",
+				["author"] = "Skaza-Golemagg",
 				["instanceID"] = 595,
-				["minLevel"] = 78,
-				["resultID"] = 754,
+				["createdat"] = 1676488461,
+				["classColor"] = "8787ed",
 				["maxLevel"] = 80,
+				["minLevel"] = 78,
 				["rolesNeeded"] = {
 					1, -- [1]
-					3, -- [2]
-					4, -- [3]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
 				},
-				["timestamp"] = 1676458818,
-				["createdat"] = 1676458175,
-				["classColor"] = "f58cba",
+				["instanceName"] = "Culling of Stratholme",
+				["timestamp"] = 1676490825,
+				["resultID"] = 356,
 			},
-			["Arterie-Golemagg"] = {
+			["Belialyne-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3070,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Gundrak",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "GUN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Gundrak",
+				["author"] = "Belialyne-Golemagg",
+				["classColor"] = "8787ed",
+				["minLevel"] = 76,
+				["instanceID"] = 604,
+				["createdat"] = 1676489698,
+				["resultID"] = 319,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Gundrak",
+				["timestamp"] = 1676490825,
+				["maxLevel"] = 80,
+			},
+			["Nordienn-Golemagg"] = {
 				["isLFG"] = true,
 				["order"] = 3310,
 				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
@@ -18492,11 +27434,12 @@ GroupieDB = {
 				["words"] = {
 				},
 				["fullName"] = "Heroic Azjol-Nerub",
-				["author"] = "Arterie-Golemagg",
+				["author"] = "Nordienn-Golemagg",
 				["instanceName"] = "Azjol-Nerub",
+				["resultID"] = 302,
 				["instanceID"] = 601,
-				["minLevel"] = 80,
-				["resultID"] = 764,
+				["classColor"] = "c41f3b",
+				["createdat"] = 1676490758,
 				["maxLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
@@ -18504,15 +27447,255 @@ GroupieDB = {
 					3, -- [3]
 					4, -- [4]
 				},
-				["timestamp"] = 1676458818,
-				["createdat"] = 1676458096,
-				["classColor"] = "c41f3b",
+				["timestamp"] = 1676490825,
+				["minLevel"] = 80,
 			},
-			["Ironshaft-Golemagg"] = {
+			["Salogram-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3430,
+				["msg"] = "LFM NAXX SKIP RUN 1SR>MS>OS (The Turning Ride HR)",
+				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "NAX.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"naxx", -- [2]
+					"skip", -- [3]
+					"run", -- [4]
+					"1sr", -- [5]
+					"msos", -- [6]
+					"the", -- [7]
+					"turning", -- [8]
+					"ride", -- [9]
+					"hr", -- [10]
+				},
+				["fullName"] = "Naxxramas - 25",
+				["author"] = "Salogram-Golemagg",
+				["classColor"] = "69CCF0",
+				["instanceID"] = 533,
+				["instanceName"] = "Naxxramas",
+				["createdat"] = 1676459136,
+				["maxLevel"] = 80,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676459136,
+				["minLevel"] = 80,
+			},
+			["Maxuelo-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 1200,
+				["msg"] = "LFM UD 10 - All HMs except Levi and Mimi(probably) - Brain, gear and Discord required - 2x SR /pst for invite - NEED Shammy(ENHA/ELE), DK(Frost/unholy), Boomie",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "SoftRes",
+				["icon"] = "STRAT.tga",
+				["words"] = {
+					"lfm", -- [1]
+					"ud", -- [2]
+					"10", -- [3]
+					"all", -- [4]
+					"hms", -- [5]
+					"except", -- [6]
+					"levi", -- [7]
+					"and", -- [8]
+					"mimi", -- [9]
+					"probably", -- [10]
+					"brain", -- [11]
+					"gear", -- [12]
+					"discord", -- [13]
+					"required", -- [14]
+					"2x", -- [15]
+					"sr", -- [16]
+					"pst", -- [17]
+					"for", -- [18]
+					"invite", -- [19]
+					"need", -- [20]
+					"shammy", -- [21]
+					"enha", -- [22]
+					"ele", -- [23]
+					"dk", -- [24]
+					"frost", -- [25]
+					"unholy", -- [26]
+					"boomie", -- [27]
+				},
+				["fullName"] = "Stratholme",
+				["classColor"] = "FFFFFF",
+				["author"] = "Maxuelo-Golemagg",
+				["instanceID"] = 329,
+				["instanceName"] = "Stratholme",
+				["createdat"] = 1676490734,
+				["minLevel"] = 56,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["timestamp"] = 1676490902,
+				["maxLevel"] = 61,
+			},
+			["Thaza-Golemagg"] = {
 				["isLFG"] = false,
 				["order"] = 3410,
-				["msg"] = "LFM voa 25 man need tank healer durid  and shaman ele  shadow",
+				["msg"] = "voa 18 spec run need restro shaman/disco priest/bala druid",
 				["groupSize"] = 25,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "MS > OS",
+				["icon"] = "VOA.tga",
+				["words"] = {
+					"voa", -- [1]
+					"18", -- [2]
+					"spec", -- [3]
+					"run", -- [4]
+					"need", -- [5]
+					"restro", -- [6]
+					"shaman", -- [7]
+					"disco", -- [8]
+					"priest", -- [9]
+					"bala", -- [10]
+					"druid", -- [11]
+				},
+				["fullName"] = "Vault of Archavon - 25",
+				["author"] = "Thaza-Golemagg",
+				["classColor"] = "C79C6E",
+				["instanceID"] = 624,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["minLevel"] = 80,
+				["maxLevel"] = 80,
+				["instanceName"] = "Vault of Archavon",
+				["timestamp"] = 1676452787,
+				["createdat"] = 1676452708,
+			},
+			["Dyremon-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3290,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Drak'Tharon Keep",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "DTK.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Drak'Tharon Keep",
+				["author"] = "Dyremon-Golemagg",
+				["classColor"] = "abd473",
+				["minLevel"] = 80,
+				["instanceID"] = 600,
+				["createdat"] = 1676483354,
+				["resultID"] = 128,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Drak'Tharon Keep",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 80,
+			},
+			["Morphou-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3040,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Drak'Tharon Keep",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "DTK.tga",
+				["words"] = {
+				},
+				["fullName"] = "Drak'Tharon Keep",
+				["author"] = "Morphou-Golemagg",
+				["classColor"] = "fff569",
+				["minLevel"] = 72,
+				["instanceID"] = 600,
+				["maxLevel"] = 78,
+				["resultID"] = 326,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Drak'Tharon Keep",
+				["timestamp"] = 1676490825,
+				["createdat"] = 1676490111,
+			},
+			["Fiatlux-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3020,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Azjol-Nerub",
+				["author"] = "Fiatlux-Golemagg",
+				["classColor"] = "8787ed",
+				["minLevel"] = 70,
+				["instanceID"] = 601,
+				["maxLevel"] = 77,
+				["resultID"] = 342,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676490825,
+				["createdat"] = 1676488835,
+			},
+			["Rjúk-Golemagg"] = {
+				["isLFG"] = true,
+				["order"] = 3310,
+				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
+				["groupSize"] = 5,
+				["isHeroic"] = true,
+				["isLFM"] = false,
+				["lootType"] = "MS > OS",
+				["icon"] = "AN.tga",
+				["words"] = {
+				},
+				["fullName"] = "Heroic Azjol-Nerub",
+				["author"] = "Rjúk-Golemagg",
+				["classColor"] = "fff569",
+				["minLevel"] = 80,
+				["instanceID"] = 601,
+				["createdat"] = 1676483447,
+				["resultID"] = 152,
+				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
+				},
+				["instanceName"] = "Azjol-Nerub",
+				["timestamp"] = 1676483837,
+				["maxLevel"] = 80,
+			},
+			["Extrordinary-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = 3320,
+				["msg"] = "LFM VOA 10 CLASS RUN! NEED HPRIEST RDRUID LOCK",
+				["groupSize"] = 10,
 				["isHeroic"] = false,
 				["isLFM"] = true,
 				["lootType"] = "MS > OS",
@@ -18520,207 +27703,29 @@ GroupieDB = {
 				["words"] = {
 					"lfm", -- [1]
 					"voa", -- [2]
-					"25", -- [3]
-					"man", -- [4]
-					"need", -- [5]
-					"tank", -- [6]
-					"healer", -- [7]
-					"durid", -- [8]
-					"and", -- [9]
-					"shaman", -- [10]
-					"ele", -- [11]
-					"shadow", -- [12]
-				},
-				["fullName"] = "Vault of Archavon - 25",
-				["author"] = "Ironshaft-Golemagg",
-				["classColor"] = "C41F3B",
-				["instanceID"] = 624,
-				["createdat"] = 1676447066,
-				["minLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676447844,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-				},
-				["maxLevel"] = 80,
-			},
-			["Narjhan-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 1010,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t Healer LFG Wailing Caverns",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "WC.tga",
-				["words"] = {
-				},
-				["fullName"] = "Wailing Caverns",
-				["author"] = "Narjhan-Golemagg",
-				["instanceName"] = "Wailing Caverns",
-				["instanceID"] = 43,
-				["minLevel"] = 16,
-				["resultID"] = 820,
-				["maxLevel"] = 24,
-				["rolesNeeded"] = {
-					1, -- [1]
-					3, -- [2]
-					4, -- [3]
-				},
-				["timestamp"] = 1676458828,
-				["createdat"] = 1676458182,
-				["classColor"] = "ff7d0a",
-			},
-			["Yarlock-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3060,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Halls of Stone",
-				["groupSize"] = 5,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "HOS.tga",
-				["words"] = {
-				},
-				["fullName"] = "Halls of Stone",
-				["author"] = "Yarlock-Golemagg",
-				["instanceName"] = "Halls of Stone",
-				["instanceID"] = 599,
-				["minLevel"] = 75,
-				["resultID"] = 716,
-				["maxLevel"] = 80,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676458646,
-				["createdat"] = 1676458251,
-				["classColor"] = "8787ed",
-			},
-			["Dantilolz-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3320,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t LFM Vault of Archavon 10 | 9/10 in Group",
-				["groupSize"] = 10,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
+					"10", -- [3]
+					"class", -- [4]
+					"run", -- [5]
+					"need", -- [6]
+					"hpriest", -- [7]
+					"rdruid", -- [8]
+					"lock", -- [9]
 				},
 				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Dantilolz-Golemagg",
-				["classColor"] = "f58cba",
+				["author"] = "Extrordinary-Golemagg",
+				["classColor"] = "C79C6E",
 				["instanceID"] = 624,
 				["minLevel"] = 80,
-				["resultID"] = 510,
+				["createdat"] = 1676490385,
 				["rolesNeeded"] = {
+					1, -- [1]
+					2, -- [2]
+					3, -- [3]
+					4, -- [4]
 				},
 				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676457217,
-				["createdat"] = 1676457042,
+				["timestamp"] = 1676490529,
 				["maxLevel"] = 80,
-			},
-			["Ifèaru-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3310,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Heroic Azjol-Nerub",
-				["groupSize"] = 5,
-				["isHeroic"] = true,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "AN.tga",
-				["words"] = {
-				},
-				["fullName"] = "Heroic Azjol-Nerub",
-				["author"] = "Ifèaru-Golemagg",
-				["instanceName"] = "Azjol-Nerub",
-				["instanceID"] = 601,
-				["minLevel"] = 80,
-				["resultID"] = 740,
-				["maxLevel"] = 80,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676458818,
-				["createdat"] = 1676458423,
-				["classColor"] = "ffffff",
-			},
-			["Tejuino-Golemagg"] = {
-				["isLFG"] = true,
-				["order"] = 3420,
-				["msg"] = "|TInterface\\LFGFRAME\\UI-LFG-PORTRAIT:16:16:0:0:32:32:0:32:0:32|t DPS LFG Obsidian Sanctum 25",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["isLFM"] = false,
-				["lootType"] = "MS > OS",
-				["icon"] = "OS.tga",
-				["words"] = {
-				},
-				["fullName"] = "Obsidian Sanctum - 25",
-				["author"] = "Tejuino-Golemagg",
-				["maxLevel"] = 80,
-				["classColor"] = "8787ed",
-				["createdat"] = 1676449470,
-				["minLevel"] = 80,
-				["instanceName"] = "Obsidian Sanctum",
-				["rolesNeeded"] = {
-				},
-				["timestamp"] = 1676452072,
-				["resultID"] = 253,
-				["instanceID"] = 615,
-			},
-			["Canturo-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3460,
-				["msg"] = "LFM Holy Pala for ULDUAR FULL HM + ALGALON thursday 23.00 semi-guild run. Algalon dies few times a week!",
-				["groupSize"] = 25,
-				["isHeroic"] = false,
-				["maxLevel"] = 80,
-				["lootType"] = "MS > OS",
-				["icon"] = "ULD.tga",
-				["words"] = {
-					"lfm", -- [1]
-					"holy", -- [2]
-					"pala", -- [3]
-					"for", -- [4]
-					"ulduar", -- [5]
-					"full", -- [6]
-					"hm", -- [7]
-					"algalon", -- [8]
-					"thursday", -- [9]
-					"23", -- [10]
-					"00", -- [11]
-					"semi", -- [12]
-					"guild", -- [13]
-					"run", -- [14]
-					"dies", -- [15]
-					"few", -- [16]
-					"times", -- [17]
-					"a", -- [18]
-					"week", -- [19]
-				},
-				["fullName"] = "Ulduar - 25",
-				["author"] = "Canturo-Golemagg",
-				["classColor"] = "0070DE",
-				["isLFM"] = true,
-				["minLevel"] = 80,
-				["instanceID"] = 603,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["timestamp"] = 1676456128,
-				["instanceName"] = "Ulduar",
-				["createdat"] = 1676456128,
 			},
 			["Sailiyo-Golemagg"] = {
 				["isLFG"] = false,
@@ -18741,49 +27746,17 @@ GroupieDB = {
 				["fullName"] = "Miscellaneous",
 				["author"] = "Sailiyo-Golemagg",
 				["instanceID"] = -1,
+				["classColor"] = "FFFFFF",
+				["maxLevel"] = 1000,
 				["minLevel"] = 0,
-				["createdat"] = 1676457764,
+				["instanceName"] = "Miscellaneous",
 				["rolesNeeded"] = {
 					1, -- [1]
 					3, -- [2]
 					4, -- [3]
 				},
-				["instanceName"] = "Miscellaneous",
 				["timestamp"] = 1676457764,
-				["maxLevel"] = 1000,
-				["classColor"] = "FFFFFF",
-			},
-			["Casketcase-Golemagg"] = {
-				["isLFG"] = false,
-				["order"] = 3320,
-				["msg"] = "mage lf VoA 10 classrun",
-				["groupSize"] = 10,
-				["isHeroic"] = false,
-				["isLFM"] = true,
-				["lootType"] = "MS > OS",
-				["icon"] = "VOA.tga",
-				["words"] = {
-					"mage", -- [1]
-					"lf", -- [2]
-					"voa", -- [3]
-					"10", -- [4]
-					"classrun", -- [5]
-				},
-				["fullName"] = "Vault of Archavon - 10",
-				["author"] = "Casketcase-Golemagg",
-				["instanceID"] = 624,
-				["classColor"] = "69CCF0",
-				["createdat"] = 1676451547,
-				["maxLevel"] = 80,
-				["instanceName"] = "Vault of Archavon",
-				["timestamp"] = 1676452660,
-				["rolesNeeded"] = {
-					1, -- [1]
-					2, -- [2]
-					3, -- [3]
-					4, -- [4]
-				},
-				["minLevel"] = 80,
+				["createdat"] = 1676457764,
 			},
 			["Shawtycuh-Golemagg"] = {
 				["isLFG"] = false,
@@ -18814,22 +27787,46 @@ GroupieDB = {
 				["fullName"] = "Naxxramas - 10",
 				["author"] = "Shawtycuh-Golemagg",
 				["instanceID"] = 533,
-				["instanceName"] = "Naxxramas",
+				["classColor"] = "F58CBA",
+				["maxLevel"] = 80,
 				["createdat"] = 1676458728,
-				["minLevel"] = 80,
 				["rolesNeeded"] = {
 					1, -- [1]
 				},
+				["instanceName"] = "Naxxramas",
 				["timestamp"] = 1676459135,
-				["maxLevel"] = 80,
+				["minLevel"] = 80,
+			},
+			["Riesl-Golemagg"] = {
+				["isLFG"] = false,
+				["order"] = -1,
+				["msg"] = "LF1M healer event boss",
+				["groupSize"] = 5,
+				["isHeroic"] = false,
+				["isLFM"] = true,
+				["lootType"] = "Other",
+				["icon"] = "Other.tga",
 				["classColor"] = "F58CBA",
+				["words"] = {
+					"lf1m", -- [1]
+					"healer", -- [2]
+					"event", -- [3]
+					"boss", -- [4]
+				},
+				["fullName"] = "Miscellaneous",
+				["author"] = "Riesl-Golemagg",
+				["instanceID"] = -1,
+				["instanceName"] = "Miscellaneous",
+				["createdat"] = 1676490791,
+				["minLevel"] = 0,
+				["rolesNeeded"] = {
+					2, -- [1]
+				},
+				["timestamp"] = 1676490899,
+				["maxLevel"] = 1000,
 			},
 		},
 		["ignores"] = {
-			["Gehennas"] = {
-				["Battlearm"] = {
-				},
-			},
 			["Golemagg"] = {
 				["Battlearm"] = {
 					["Eristia"] = true,
@@ -18839,31 +27836,15 @@ GroupieDB = {
 					["Jerrywild"] = true,
 					["Conall"] = true,
 					["Ayrik"] = true,
-					["Arferes"] = true,
+					["Elfboy"] = true,
 					["Puntune"] = true,
 					["Raudos"] = true,
 					["Pömp"] = true,
 					["Freezqt"] = true,
 					["Qtc"] = true,
-					["Elfboy"] = true,
+					["Arferes"] = true,
 				},
 				["Mxzq"] = {
-					["Eristia"] = true,
-					["Scorpiona"] = true,
-					["Segasík"] = true,
-					["Burstt"] = true,
-					["Jerrywild"] = true,
-					["Conall"] = true,
-					["Ayrik"] = true,
-					["Arferes"] = true,
-					["Puntune"] = true,
-					["Elfboy"] = true,
-					["Pömp"] = true,
-					["Freezqt"] = true,
-					["Qtc"] = true,
-					["Raudos"] = true,
-				},
-				["Mxyz"] = {
 					["Eristia"] = true,
 					["Scorpiona"] = true,
 					["Segasík"] = true,
@@ -18887,25 +27868,46 @@ GroupieDB = {
 					["Jerrywild"] = true,
 					["Proguen"] = true,
 					["Conall"] = true,
-					["Raudos"] = true,
+					["Arferes"] = true,
 					["Ayrik"] = true,
 					["Supablast"] = true,
 					["Puntune"] = true,
-					["Elfboy"] = true,
+					["Raudos"] = true,
 					["Pömp"] = true,
 					["Freezqt"] = true,
 					["Qtc"] = true,
-					["Arferes"] = true,
+					["Elfboy"] = true,
 				},
-				["Miqa"] = {
-					["Pömp"] = true,
+				["Mxyz"] = {
+					["Eristia"] = true,
+					["Scorpiona"] = true,
 					["Segasík"] = true,
 					["Burstt"] = true,
 					["Jerrywild"] = true,
+					["Proguen"] = true,
 					["Conall"] = true,
+					["Ayrik"] = true,
+					["Arferes"] = true,
+					["Puntune"] = true,
+					["Raudos"] = true,
+					["Pömp"] = true,
+					["Freezqt"] = true,
+					["Qtc"] = true,
+					["Elfboy"] = true,
+				},
+				["Miqa"] = {
+					["Eristia"] = true,
+					["Scorpiona"] = true,
+					["Segasík"] = true,
+					["Burstt"] = true,
+					["Jerrywild"] = true,
+					["Proguen"] = true,
+					["Conall"] = true,
+					["Ayrik"] = true,
+					["Raudos"] = true,
 					["Puntune"] = true,
 					["Elfboy"] = true,
-					["Raudos"] = true,
+					["Pömp"] = true,
 					["Freezqt"] = true,
 					["Qtc"] = true,
 					["Arferes"] = true,
@@ -18928,42 +27930,35 @@ GroupieDB = {
 					["Segasík"] = true,
 					["Burstt"] = true,
 					["Jerrywild"] = true,
+					["Proguen"] = true,
 					["Conall"] = true,
 					["Ayrik"] = true,
-					["Elfboy"] = true,
+					["Arferes"] = true,
 					["Puntune"] = true,
-					["Raudos"] = true,
+					["Elfboy"] = true,
 					["Pömp"] = true,
 					["Freezqt"] = true,
 					["Qtc"] = true,
-					["Arferes"] = true,
+					["Raudos"] = true,
 				},
 			},
-		},
-		["friends"] = {
 			["Gehennas"] = {
 				["Battlearm"] = {
 				},
 			},
+		},
+		["friends"] = {
 			["Golemagg"] = {
 				["Battlearm"] = {
 					["Kamenac"] = true,
 					["Stranac"] = true,
 					["Angrywarrior"] = true,
-					["Junac"] = true,
+					["Slanac"] = true,
 					["Konac"] = true,
 					["Mohikanac"] = true,
-					["Slanac"] = true,
+					["Junac"] = true,
 				},
 				["Mxzq"] = {
-					["Junac"] = true,
-					["Stranac"] = true,
-					["Kamenac"] = true,
-					["Konac"] = true,
-					["Mohikanac"] = true,
-					["Slanac"] = true,
-				},
-				["Mxyz"] = {
 					["Junac"] = true,
 					["Stranac"] = true,
 					["Slanac"] = true,
@@ -18974,41 +27969,48 @@ GroupieDB = {
 				["Vermina"] = {
 					["Junac"] = true,
 					["Stranac"] = true,
-					["Slanac"] = true,
+					["Kamenac"] = true,
 					["Konac"] = true,
 					["Mohikanac"] = true,
+					["Slanac"] = true,
+				},
+				["Mxyz"] = {
+					["Junac"] = true,
+					["Stranac"] = true,
 					["Kamenac"] = true,
+					["Konac"] = true,
+					["Mohikanac"] = true,
+					["Slanac"] = true,
 				},
 				["Miqa"] = {
 				},
 				["Moolatz"] = {
 					["Slanac"] = true,
 					["Stranac"] = true,
-					["Junac"] = true,
-					["Shkuk"] = true,
-					["Konac"] = true,
-					["Mohikanac"] = true,
 					["Kamenac"] = true,
+					["Mohikanac"] = true,
+					["Konac"] = true,
+					["Shkuk"] = true,
+					["Junac"] = true,
 				},
 				["Vermin"] = {
 					["Stamen"] = true,
 				},
 			},
-		},
-		["groupieFriends"] = {
 			["Gehennas"] = {
-			},
-			["Golemagg"] = {
+				["Battlearm"] = {
+				},
 			},
 		},
+		["highestSeenVersion"] = 1.66,
 		["talentTooltips"] = false,
 		["hiddenGuilds"] = {
-			["Gehennas"] = {
-			},
 			["Golemagg"] = {
 			},
+			["Gehennas"] = {
+			},
 		},
-		["announceInstanceReset"] = false,
+		["gearSummaryTooltips"] = false,
 	},
 	["profileKeys"] = {
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
