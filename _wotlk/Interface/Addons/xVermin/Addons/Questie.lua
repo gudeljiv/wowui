@@ -28,6 +28,10 @@ xVermin.CheckIfLoadedWithTimer(
 		-- end
 
 		local function Update_Questie_BaseFrame()
+			if InCombatLockdown() then
+				return
+			end
+
 			local in_instance, type_of_instance = IsInInstance()
 
 			_, numQuests = GetNumQuestLogEntries()
@@ -49,10 +53,6 @@ xVermin.CheckIfLoadedWithTimer(
 				-- 	PallyPowerFrame:SetPoint('TOPRIGHT', CustomContainer_2, 'BOTTOMRIGHT', -100, -76)
 				-- end
 				end
-			end
-
-			if InCombatLockdown() then
-				return
 			end
 
 			-- PallyPowerFrame:ClearAllPoints()
@@ -98,6 +98,8 @@ xVermin.CheckIfLoadedWithTimer(
 
 		local f = CreateFrame('Frame')
 		f:RegisterEvent('PLAYER_ENTERING_WORLD')
+		f:RegisterEvent('PLAYER_REGEN_DISABLED')
+		f:RegisterEvent('PLAYER_REGEN_ENABLED')
 		f:SetScript('OnEvent', Update_Questie_BaseFrame)
 		Questie_BaseFrame:HookScript('OnUpdate', Update_Questie_BaseFrame)
 	end

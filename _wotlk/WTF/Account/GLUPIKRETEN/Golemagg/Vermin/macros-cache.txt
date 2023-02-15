@@ -5,8 +5,8 @@ END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
-/cast [stance:1/2] Shield Bash
-/cast [stance:3] Pummel
+/cast [stance:1/2][@focus,exists][]Shield Bash
+/cast [stance:3][@focus,exists][]Pummel
 END
 VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 #showtooltip

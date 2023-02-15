@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("GunshipBattle", "DBM-Icecrown", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20230201003256")
+mod:SetRevision("20230213031650")
 local addsIcon
 local bossID
 --mod:SetEncounterID(mod:IsClassic() and 847 or 1099)--No ES fires this combat

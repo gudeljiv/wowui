@@ -24,6 +24,7 @@ Frames/PlayerPetTargetHealthPercentage.lua
 Frames/RaidFrames.lua
 Frames/SpellBookFrame.lua
 Frames/TalentFrame.lua
+Frames/TradeSkillReagentFrame.lua
 Frames/Unit.lua
 
 Experience/Player.lua

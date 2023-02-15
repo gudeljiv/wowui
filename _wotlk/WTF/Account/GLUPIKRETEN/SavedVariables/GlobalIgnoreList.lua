@@ -3,7 +3,7 @@ GlobalIgnoreDB = {
 	["filterCount"] = {
 		1, -- [1]
 		0, -- [2]
-		0, -- [3]
+		1, -- [3]
 		0, -- [4]
 		0, -- [5]
 		0, -- [6]
@@ -27,6 +27,7 @@ GlobalIgnoreDB = {
 		"player", -- [12]
 		"player", -- [13]
 		"player", -- [14]
+		"player", -- [15]
 	},
 	["ignoreList"] = {
 		"Freezqt-Golemagg", -- [1]
@@ -43,6 +44,7 @@ GlobalIgnoreDB = {
 		"Eristia-Golemagg", -- [12]
 		"Ayrik-Golemagg", -- [13]
 		"Scorpiona-Golemagg", -- [14]
+		"Proguen-Golemagg", -- [15]
 	},
 	["openWithFriends"] = true,
 	["skipPrivate"] = true,
@@ -70,13 +72,18 @@ GlobalIgnoreDB = {
 		{
 		}, -- [11]
 		{
+			"Vermina-Golemagg@1", -- [1]
 		}, -- [12]
 		{
+			"Vermina-Golemagg@1", -- [1]
 		}, -- [13]
 		{
+			"Vermina-Golemagg@1", -- [1]
 		}, -- [14]
+		{
+		}, -- [15]
 	},
-	["trackChanges"] = true,
+	["autoTime"] = 600,
 	["autoCount"] = 3,
 	["revision"] = 1,
 	["filterList"] = {
@@ -91,7 +98,7 @@ GlobalIgnoreDB = {
 		"[contains=WTS] or [contains=WTB]", -- [9]
 		"[nonlatin]", -- [10]
 	},
-	["autoUpdate"] = true,
+	["trackChanges"] = true,
 	["autoIgnore"] = true,
 	["factionList"] = {
 		"Horde", -- [1]
@@ -108,6 +115,7 @@ GlobalIgnoreDB = {
 		"Horde", -- [12]
 		"Horde", -- [13]
 		"Horde", -- [14]
+		"Horde", -- [15]
 	},
 	["skipParty"] = false,
 	["delList"] = {
@@ -128,6 +136,7 @@ GlobalIgnoreDB = {
 		"", -- [12]
 		"", -- [13]
 		"", -- [14]
+		"", -- [15]
 	},
 	["expList"] = {
 		0, -- [1]
@@ -144,10 +153,11 @@ GlobalIgnoreDB = {
 		0, -- [12]
 		0, -- [13]
 		0, -- [14]
+		0, -- [15]
 	},
 	["skipGuild"] = true,
 	["chatmsg"] = true,
-	["filterTotal"] = 1,
+	["filterTotal"] = 2,
 	["defexpire"] = 0,
 	["filterDesc"] = {
 		"Filter \"Anal\" Spammers", -- [1]
@@ -190,9 +200,10 @@ GlobalIgnoreDB = {
 		"07 Feb 2023", -- [12]
 		"14 Feb 2023", -- [13]
 		"14 Feb 2023", -- [14]
+		"15 Feb 2023", -- [15]
 	},
 	["sameserver"] = true,
-	["autoTime"] = 600,
+	["autoUpdate"] = true,
 	["samefaction"] = true,
 	["invertSpam"] = false,
 }

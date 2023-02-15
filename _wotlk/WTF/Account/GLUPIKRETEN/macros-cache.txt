@@ -1,6 +1,3 @@
-VER 3 0000000000000013 " " "132130"
-/click BehindTarget
-END
 VER 3 0000000000000026 " " "134400"
 #showtooltip item:36912
 /2 WTB Saronite Ore 24g 
@@ -9,6 +6,9 @@ VER 3 000000000000000E " " "136106"
 /inspect
 /run SortBags()
 END
+VER 3 0000000000000013 " " "132130"
+/click BehindTarget
+END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
 /cancelaura [form:5] Flight Form;[form:3,combat] Cat Form
@@ -16,13 +16,13 @@ VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat 
+/use [nocombat]item:27860
+/castsequence [combat] reset=combat item:13444,item:13443,item:6149
 END
 VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:35953
-/castsequence [combat] reset=combat 
+/use [nocombat]item:29451
+/castsequence [combat] reset=combat item:13446
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:0
@@ -31,7 +31,7 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000025 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:13446
 END
 VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 #showtooltip Prowl

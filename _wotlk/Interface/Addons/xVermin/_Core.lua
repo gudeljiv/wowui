@@ -195,6 +195,7 @@ xVermin.IfUnitIsCastingInteruptable = function(unit)
 	end
 	return false
 end
+xUnitCastingInteruptable = xVermin.IfUnitIsCastingInteruptable
 
 xVermin.IfUnitIsCastingNonInteruptable = function(unit)
 	local name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = UnitCastingInfo(unit)
@@ -224,8 +225,9 @@ xVermin.GetRange = function(unit)
 		return -1, -1
 	end
 end
+xGetRange = xVermin.GetRange
 
-xVermin.Range = function(value, unit)
+xVermin.InRange = function(value, unit)
 	unit = unit or 'target'
 	if not value then
 		return false
@@ -241,7 +243,7 @@ xVermin.Range = function(value, unit)
 		return false
 	end
 end
-xRange = xVermin.Range
+xInRange = xVermin.InRange
 
 xVermin.Enraged = function(unit)
 	unit = unit and unit or 'player'
@@ -257,22 +259,3 @@ xVermin.Enraged = function(unit)
 	return enraged > 0 and true or false
 end
 xEnraged = xVermin.Enraged
-
--- xVermin.CheckMobExperienceGain = function(unit)
--- 	local unitLevel = UnitLevel(unit)
--- 	local playerLevel = UnitLevel('player')
--- 	local baseXP =
-
--- 	if playerLevel >= 1 and playerLevel <= 5 then
--- 		greyLevel = 0
--- 	elseif playerLevel >= 6 and playerLevel <= 49 then
--- 		greyLevel = playerLevel - math.floor(playerLevel / 10) - 5
--- 	elseif playerLevel == 50 then
--- 		greyLevel = 40
--- 	elseif playerLevel >= 51 and playerLevel <= 59 then
--- 		greyLevel = playerLevel - math.floor(playerLevel / 5) - 1
--- 	elseif playerLevel >= 60 and playerLevel <= 80 then
--- 		greyLevel = playerLevel - 9
--- 	end
-
--- end

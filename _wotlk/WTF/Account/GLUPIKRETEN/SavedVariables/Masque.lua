@@ -2730,7 +2730,7 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 			},
-			["API_VERSION"] = 100005,
+			["API_VERSION"] = 100006,
 		},
 	},
 }

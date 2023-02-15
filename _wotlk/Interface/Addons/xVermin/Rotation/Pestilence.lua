@@ -49,7 +49,7 @@ xVermin.Pestilence = function(number_of_nameplates)
 	-- NAMEPLATES
 	for i = 1, number_of_nameplates do
 		local unit = 'nameplate' .. i
-		if UnitExists(unit) and not xVermin.HasValue(t, UnitCreatureType(unit)) and xRange(10, unit) then
+		if UnitExists(unit) and not xVermin.HasValue(t, UnitCreatureType(unit)) and xVermin.InRange(10, unit) then
 			units = units + 1
 			for i = 1, 20 do
 				local name, icon, count, debuffType, duration, expirationTime, unitCaster, canStealOrPurge, _, spellId, canApplyAura, isBossAura = UnitDebuff(unit, i)

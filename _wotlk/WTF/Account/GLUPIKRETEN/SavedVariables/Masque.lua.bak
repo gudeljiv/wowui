@@ -2730,7 +2730,7 @@ MasqueDB = {
 					["SkinID"] = "Brownstone",
 				},
 			},
-			["API_VERSION"] = 100005,
+			["API_VERSION"] = 100006,
 		},
 	},
 }
