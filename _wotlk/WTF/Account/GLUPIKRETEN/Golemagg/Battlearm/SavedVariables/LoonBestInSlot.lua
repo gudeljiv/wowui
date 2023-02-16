@@ -48,10 +48,10 @@ LBISSettings = {
 	},
 	["ShowPriority"] = true,
 	["SelectedRank"] = "All",
-	["ShowCustom"] = false,
-	["SelectedSourceType"] = "All",
 	["PriorityList"] = {
 	},
-	["SelectedSlot"] = "Waist",
+	["SelectedSourceType"] = "All",
+	["SelectedSlot"] = "Ranged/Relic",
+	["ShowCustom"] = false,
 	["SelectedPhase"] = "Phase 1",
 }

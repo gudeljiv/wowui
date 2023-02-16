@@ -11,6 +11,3118 @@ GatherMate2MarkerDB = {
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
 			["pinDB"] = {
+				[4750668000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1930678000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1170651000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4860587000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4820585000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4990464000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4990464001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4990464002] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5740458000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6820727000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2100600000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7740643000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4820584000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5740457000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5740457001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6820726000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3477676600] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[3610653000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4730622000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6630673000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6830726000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3020408000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1410436000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6680675000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6620672001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2140483000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3620653000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[2110600000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5130425000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7570503000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3340488000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4740621000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3340488001] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6620628000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3670655000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4930630000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6270524000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6270524001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6610627000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6610627001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5130424000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1790670000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[7859525000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1794668000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4610091900] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1400435000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6840724000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5140424000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4690574000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6270523000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7460582000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7460582001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3030407000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7590502000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2960382001] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4740576000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4740576001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5540443000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6680672000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4750576000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4690573001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7460581000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3354487300] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3350487000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[3350487001] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6740631000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5010502000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4790534000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4790534001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2140482000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[7780553000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5020459000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[8220704000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[610660001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7070690000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2290628000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4330640000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4800534000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6260477000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3010405001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6880637000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5600444000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6680670000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7440449000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4340640000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7250698000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1930676000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6870636000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5000500000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6450572000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4330639000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6710714000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4020627000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5120635001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3330485000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[8330708000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5640445000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6440571001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7020686000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4990542000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4610092001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2550597000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6720714000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4610092000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5130635000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2550597002] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4028627100] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5100504000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7250697001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6710713000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4030627000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6840633000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6840633001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5090503001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5090503002] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4970540000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[1640381000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[1640381001] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6270518000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7580583000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5320557001] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[7450447000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7450447001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4390640000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4820575000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5080631000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7810594000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6840632000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7330570000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5330557000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[5580440000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7910685000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7910685001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7440446000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4079508000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5060457000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7580582000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7920685000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6590662000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7450446000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7810593000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6880633000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7350570000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1627379900] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[7910684000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7910684001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7910684002] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2090586000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[5060456000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5060456001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7820593000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6850631000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6265524200] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4390638000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4390638001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5020583000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7810592000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[7430487000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7590581000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7910683000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7350569000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4750526000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6400694000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6550572001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5060455000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7230692000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6550572000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2300453000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5040583000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5330554000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6560572000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6860630000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5030582000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5170632000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6400693000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[3670650000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6250513000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2310453000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3590495000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7870550000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7870550001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4860616000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4860616001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6390692000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5630568000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6240512000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1410433000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7090554000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5640568000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6590615000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3610668000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[3930533000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[7800675000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7800675001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3880595000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[8470708000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6390691000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3860594000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6030673000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6480566000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5660439000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3860594002] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7210688000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6490566000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[5640567000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5640567001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3920532000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6350602000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6590614000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6670704000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2070627000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5570606000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4750522000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3610667000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4980490000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3930532000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[3570471000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5670438000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7800673000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6980546001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[800528000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2200683000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6500565000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2200683001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5660437000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6340600001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6700704000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2080584000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4910615000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4350587000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3540469000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[3340459000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[2340474000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7140639000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6500564000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1510437000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4360587000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1410432000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3110512000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7130638000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7130638001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6510564000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6643695500] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3530468000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[2200682000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6641695100] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[8150688000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4360586000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6990544000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5070535000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5070535001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6565647900] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2090584000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4890569000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3540468000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4900569000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2340473000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2340473001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2070626000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4360585000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2150485000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6520649000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4850523000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4850523001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6390556000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4350584000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4780519000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6530649000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6530649001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4900568000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[790527000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3370545000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6380555000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6380555001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6380555002] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4850522000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2570613001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3640666000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6620671000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4830586000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3530454000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[3530454001] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[3530455000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[3540467000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[5070629000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1650381000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[3360458000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[2080626000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4380549001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7070689000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4110646000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2150484000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6260505000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6260505001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6260505002] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5570605000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4850521000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5050531000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5750458000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4990543000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3650666000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[7090675000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6370553000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4830665000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3610664000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[7900672000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7900672001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4840666000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[720661000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6960582000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4880565000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7070691000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4850665000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4100645000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6040675000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7100675000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7430562000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7710662000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7910672000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3370544000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6940583000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4760577000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5070630000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4870564000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4890608000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5120635000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5140636000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7900671000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[5350553000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6370552000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7420561001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6570648000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3360457000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6070580000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3360457001] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4090644000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3360457002] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4090644001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[8230687000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4090644002] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6680671000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6800659000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3380544000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6340593000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7000685000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6030673001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6080580000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6040672000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5160631001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5150620900] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3610663000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4990655000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1410434000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6570647000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6790658000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4270631000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3760499000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6620672000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5580606000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6570648001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7100673000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7100673001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2070625000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[8170641000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6230512000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3390544000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6340592000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4990497000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2320473000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5240451000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5240451001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6730632000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2080582000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4990542001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6730639000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6870540000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6350592000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6790657000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3520701000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7360599000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[8380434000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4260630000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[8360433000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5250451000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5250451001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7210687000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7410560000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3020439000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6340591000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7420561000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[720660000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7450582000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6300670900] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7590585000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7840579000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7010685000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7110609000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5010654000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7100608000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3340433000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2080585000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6310546000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6310546001] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[7780662000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7440486000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3473676600] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7570502000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7590503000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7830578000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3010438000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5000653000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6320546000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6490770000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7870524000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7260698000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7028579500] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7080553000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5790464000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[8370432000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3760669000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4960538400] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6420723000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6500770000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5540443001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5650446000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7790553000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7430484001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2070624000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7830581000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2570613000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4390549000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5130423000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6060446000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5000652000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6430723000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6660680000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3364458000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[7000708000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7860524000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2730612000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7880551000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7780552000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4070557000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6500769000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6440723000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3630654000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[7840580000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6280478000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3480676000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4910628000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6990707000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3880595001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6750728000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3510699000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6060445000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4940605000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1630381000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4000637000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5900437000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4000637001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2810621000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4000637002] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7590662000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7030579000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3860594001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[720663000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[970660000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3760668000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4930604000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5890436000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5540634000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6500768000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[790524000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6990706000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4630653500] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3490676000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4010638000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6450722000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5330623000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6559658200] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[710662000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6300671000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1840707000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3090462000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1840709000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5530633000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6070444001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1530433000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1840709001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5330623001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6070444000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3750667000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4930603001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3360488000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[5890435000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7040578000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7240545000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3665649700] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[5540633000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5540633001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2270464000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6580614001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7890663000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7270546000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7910664000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7250545000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3080461000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6580641000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4620630000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7890663001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1910677000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5330622000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4830664000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1790668000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6580614000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6300670000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4630630000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4610629000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2810620000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7660651000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7480599000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6730648000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6570640001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6570640002] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6590661001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4340584000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1780668000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[2090624001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7270545000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3090461000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1850709000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7890662000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6980703000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7490599000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1850709001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3607667600] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6440571000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6280625000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2570615000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2560615000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2550597001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7110709000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7430449000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7640649000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6730647000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2540597000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7430485000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3925532200] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3350486000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[1160653000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1160652000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7870527001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5342552300] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6740647000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6740647001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7270544000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7490598000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2280626000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6930696001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5030531000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6340600002] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7280498000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7280498001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[8120672000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5000471000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3650659000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[3510675000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6750647000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2550598000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2540598000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2280627000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6340600000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2260462000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2280626001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2090624000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2080583000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5330552000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[7270543000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5870644000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6520635000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2150484001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7350571000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3010439000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6280623000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2960385000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[7930574000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3020404000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3010405000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[8260419000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6750646000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5880646000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7110707000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7110707001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6510634000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[8240418000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2270462000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6510633001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6510633000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5650548000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5870645000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[8240418001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2990439000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5860644000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3640659000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[7359598000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6280622000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6280622001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6250504000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[8250418000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3760665000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6860635000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5640547000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3660660000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[7280499000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2580614000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6710706000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[990659000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6930697000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[8090669000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7780551000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6060445001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7910573000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[8260418000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2820618000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4010634000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6690671000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[780530000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3140491000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5040530000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5000492000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4890607000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6740730000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3180515000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2290453000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5660547000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5660547001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6210488000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3650659001] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[5880644000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3520674000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6930696000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3520674001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2560613000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7870527000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7930573000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7780648000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2270463000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3150483000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2800621000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5010471000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2730613000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1940676000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6590661000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6760730000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3090461001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4620629000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1789668000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[7920572000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3760664000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6570640000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7808592200] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2966383100] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4750577000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6070566000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5160607000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6980704000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7640687000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1180651000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3970495000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[610660000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5340623000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4380549000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7290497000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4930603000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3140482000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6660681000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4900637000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6080566000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5170607000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6780659000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4950631000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6210486000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4950639000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4950639001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5706447900] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5000469000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1530437000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6558658200] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[610660900] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3663649900] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6670681000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5160606000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3510700000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1510435000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7500654000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4900636000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7240709000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3150482000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5780464000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6080565000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1630380000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[2730612001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3379545000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6660680001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4950638000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6440571002] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6315546300] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7870550002] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2100601000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7250709000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6830728000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6730640000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[8370432001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6090565000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5160605000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[980658000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6750727000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6990547000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5020582000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7430484000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3160482000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6740640000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4990653000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7100608001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7010685001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7080553001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6990544001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5320557000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6540650000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6980546000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6070578000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4910635000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7250708000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7250708001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5790463000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6740630000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6090564000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5160604000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5090503000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3660650000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[7440582000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6070579000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5000655000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5320554000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4740669000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2730611000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2960382000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6250504001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7080691000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[610661000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5170604000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3670654000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[7800672000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5050532000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5570605001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5570604000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4880568000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2090600000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5160631000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7340571000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7330572000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3740553000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4860588000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7420488000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3870595000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6560571000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4840665000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1530432000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3620665000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4900629000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6660703000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4740668000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4740668001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4740668002] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7250697000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7800674000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4850587000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4690573000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
 			},
 		},
 		["Vermina - Golemagg"] = {

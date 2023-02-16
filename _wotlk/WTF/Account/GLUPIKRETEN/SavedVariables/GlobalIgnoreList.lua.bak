@@ -27,6 +27,7 @@ GlobalIgnoreDB = {
 		"player", -- [12]
 		"player", -- [13]
 		"player", -- [14]
+		"player", -- [15]
 	},
 	["openWithFriends"] = true,
 	["invertSpam"] = false,
@@ -43,7 +44,7 @@ GlobalIgnoreDB = {
 		"[contains=WTS] or [contains=WTB]", -- [9]
 		"[nonlatin]", -- [10]
 	},
-	["trackChanges"] = true,
+	["autoUpdate"] = true,
 	["autoCount"] = 3,
 	["delList"] = {
 	},
@@ -76,8 +77,10 @@ GlobalIgnoreDB = {
 		}, -- [13]
 		{
 		}, -- [14]
+		{
+		}, -- [15]
 	},
-	["autoUpdate"] = true,
+	["autoTime"] = 600,
 	["autoIgnore"] = true,
 	["factionList"] = {
 		"Horde", -- [1]
@@ -94,6 +97,7 @@ GlobalIgnoreDB = {
 		"Horde", -- [12]
 		"Horde", -- [13]
 		"Horde", -- [14]
+		"Horde", -- [15]
 	},
 	["defexpire"] = 0,
 	["sameserver"] = true,
@@ -113,6 +117,7 @@ GlobalIgnoreDB = {
 		"", -- [12]
 		"", -- [13]
 		"", -- [14]
+		"", -- [15]
 	},
 	["expList"] = {
 		0, -- [1]
@@ -129,6 +134,7 @@ GlobalIgnoreDB = {
 		0, -- [12]
 		0, -- [13]
 		0, -- [14]
+		0, -- [15]
 	},
 	["skipGuild"] = true,
 	["chatmsg"] = true,
@@ -148,6 +154,7 @@ GlobalIgnoreDB = {
 		"07 Feb 2023", -- [12]
 		"14 Feb 2023", -- [13]
 		"14 Feb 2023", -- [14]
+		"15 Feb 2023", -- [15]
 	},
 	["filterDesc"] = {
 		"Filter \"Anal\" Spammers", -- [1]
@@ -177,7 +184,7 @@ GlobalIgnoreDB = {
 	["asknote"] = true,
 	["skipParty"] = false,
 	["revision"] = 1,
-	["autoTime"] = 600,
+	["trackChanges"] = true,
 	["samefaction"] = true,
 	["ignoreList"] = {
 		"Freezqt-Golemagg", -- [1]
@@ -194,5 +201,6 @@ GlobalIgnoreDB = {
 		"Eristia-Golemagg", -- [12]
 		"Ayrik-Golemagg", -- [13]
 		"Scorpiona-Golemagg", -- [14]
+		"Proguen-Golemagg", -- [15]
 	},
 }

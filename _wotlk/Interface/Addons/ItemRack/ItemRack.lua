@@ -1256,6 +1256,9 @@ function ItemRack.BuildMenu(id, menuInclude, masqueGroup)
 			else
 				_G['ItemRackMenu' .. i .. 'Count']:SetText('')
 			end
+			_G['ItemRackMenu' .. i .. 'Count']:ClearAllPoints()
+			_G['ItemRackMenu' .. i .. 'Count']:SetScale(0.5)
+			_G['ItemRackMenu' .. i .. 'Count']:SetPoint('TOPRIGHT', _G['ItemRackMenu' .. i], 'TOPRIGHT', -4, -6)
 		end
 	end
 end

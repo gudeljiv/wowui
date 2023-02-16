@@ -72,18 +72,15 @@ GlobalIgnoreDB = {
 		{
 		}, -- [11]
 		{
-			"Vermina-Golemagg@1", -- [1]
 		}, -- [12]
 		{
-			"Vermina-Golemagg@1", -- [1]
 		}, -- [13]
 		{
-			"Vermina-Golemagg@1", -- [1]
 		}, -- [14]
 		{
 		}, -- [15]
 	},
-	["autoTime"] = 600,
+	["trackChanges"] = true,
 	["autoCount"] = 3,
 	["revision"] = 1,
 	["filterList"] = {
@@ -98,7 +95,7 @@ GlobalIgnoreDB = {
 		"[contains=WTS] or [contains=WTB]", -- [9]
 		"[nonlatin]", -- [10]
 	},
-	["trackChanges"] = true,
+	["autoUpdate"] = true,
 	["autoIgnore"] = true,
 	["factionList"] = {
 		"Horde", -- [1]
@@ -203,7 +200,7 @@ GlobalIgnoreDB = {
 		"15 Feb 2023", -- [15]
 	},
 	["sameserver"] = true,
-	["autoUpdate"] = true,
+	["autoTime"] = 600,
 	["samefaction"] = true,
 	["invertSpam"] = false,
 }

@@ -165,3 +165,4 @@ bind CTRL-SHIFT-F12 NONE
 bind  BAGNON_TOGGLE
 bind ð BAGNON_BANK_TOGGLE
 bind ALT-G Open/Close LFGBulletinBoard
+bind ALT-H TOGGLEFARMHUD

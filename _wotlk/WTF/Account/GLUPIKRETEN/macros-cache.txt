@@ -1,3 +1,6 @@
+VER 3 0000000000000013 " " "132130"
+/click BehindTarget
+END
 VER 3 0000000000000026 " " "134400"
 #showtooltip item:36912
 /2 WTB Saronite Ore 24g 
@@ -6,9 +9,6 @@ VER 3 000000000000000E " " "136106"
 /inspect
 /run SortBags()
 END
-VER 3 0000000000000013 " " "132130"
-/click BehindTarget
-END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
 /cancelaura [form:5] Flight Form;[form:3,combat] Cat Form
@@ -16,13 +16,13 @@ VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:27860
-/castsequence [combat] reset=combat item:13444,item:13443,item:6149
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:29451
-/castsequence [combat] reset=combat item:13446
+/use [nocombat]item:33443
+/castsequence [combat] reset=combat item:33447
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:0
@@ -31,7 +31,7 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000025 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:13446
+/use item:33447
 END
 VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 #showtooltip Prowl
@@ -50,7 +50,9 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000021 "TEST" "134400"
-/run print("this is \124cFF999999grey \124cFFFF0000red and \124cFF00FF00this is green\124r back to red\124r back to white")
+/run ItemRackMenu1Count:ClearAllPoints()
+/run ItemRackMenu1Count:SetScale(0.5)
+/run ItemRackMenu1Count:SetPoint('TOPRIGHT', ItemRackMenu1, 'TOPRIGHT', -4, -6)
 END
 VER 3 0000000000000020 "TSMDestroy" "134400"
 /tsm destroy

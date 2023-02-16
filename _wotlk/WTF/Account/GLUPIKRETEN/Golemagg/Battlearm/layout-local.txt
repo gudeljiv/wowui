@@ -43,9 +43,9 @@ W: 210
 H: 339
 Frame: AtlasLoot_GUI-Frame
 FrameLevel: 1
-Anchor: TOP
-X: 227
-Y: -79
+Anchor: TOPRIGHT
+X: -212
+Y: -101
 W: 920
 H: 600
 Frame: RXPG_ARROW
