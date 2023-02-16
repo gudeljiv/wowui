@@ -61,7 +61,7 @@ PallyPower_Assignments = {
 		3, -- [10]
 		2, -- [11]
 	},
-	["Mileram"] = {
+	["Rinnerebirt"] = {
 		0, -- [1]
 		0, -- [2]
 		0, -- [3]
@@ -85,17 +85,17 @@ PallyPower_Assignments = {
 		0, -- [9]
 		0, -- [10]
 	},
-	["Rinnerebirt"] = {
-		0, -- [1]
-		0, -- [2]
-		0, -- [3]
-		0, -- [4]
-		0, -- [5]
-		0, -- [6]
-		0, -- [7]
-		0, -- [8]
-		0, -- [9]
-		0, -- [10]
+	["Mileram"] = {
+		2, -- [1]
+		2, -- [2]
+		1, -- [3]
+		2, -- [4]
+		2, -- [5]
+		2, -- [6]
+		1, -- [7]
+		1, -- [8]
+		1, -- [9]
+		2, -- [10]
 	},
 }
 PallyPower_NormalAssignments = {
@@ -140,7 +140,7 @@ PallyPower_AuraAssignments = {
 	["Heligaqken"] = 0,
 	["Zahiri"] = 0,
 	["Splínter"] = 0,
-	["Mileram"] = 0,
+	["Mileram"] = 3,
 	["Nékosenshi"] = 0,
 	["Monikà"] = 0,
 	["Shinésx"] = 0,
@@ -157,6 +157,7 @@ PallyPower_AuraAssignments = {
 	["Syyllinen"] = 0,
 	["Discoduck"] = 0,
 	["Gamzy"] = 0,
+	["Iteasy"] = 1,
 	["Cloë"] = 0,
 	["Bublïnka"] = 0,
 	["Capybara"] = 0,
@@ -208,7 +209,7 @@ PallyPower_AuraAssignments = {
 	["Pretzelqt"] = 0,
 	["Doradintwo"] = 6,
 	["Tisca"] = 0,
-	["Fatalitý"] = 0,
+	["Fatalitý"] = 1,
 	["Whit"] = 0,
 	["Holychock"] = 0,
 	["Mcgiver"] = 0,

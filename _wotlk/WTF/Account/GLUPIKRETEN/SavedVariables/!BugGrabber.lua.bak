@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 9199,
+	["session"] = 9203,
 	["errors"] = {
 		{
 			["message"] = "...eSkillMaster\\LibTSM\\Util\\DatabaseClasses\\DBTable.lua:478: assertion failed!",

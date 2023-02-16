@@ -42,7 +42,6 @@ VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
 #showtooltip Explosive Shot
-/stopcasting
 /cast [nochanneling: volley] Explosive Shot
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
