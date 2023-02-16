@@ -21,6 +21,8 @@ ItemRackUser = {
 	["EnableEvents"] = "ON",
 	["ItemsUsed"] = {
 	},
+	["QueuesEnabled"] = {
+	},
 	["Events"] = {
 		["Enabled"] = {
 		},
@@ -29,7 +31,7 @@ ItemRackUser = {
 	},
 	["ButtonSpacing"] = 4,
 	["Locked"] = "ON",
-	["EnableEvents"] = "ON",
+	["MainScale"] = 1,
 	["MenuScale"] = 1.20000004768372,
 	["Hidden"] = {
 	},

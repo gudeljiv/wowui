@@ -10,10 +10,10 @@ ExtendedCharacterStats = {
 		},
 		["statsWindowClosedOnOpen"] = false,
 		["addColorsToStatTexts"] = true,
-		["profileVersion"] = 16,
-		["showQualityColors"] = false,
 		["statFontSize"] = 10,
+		["showQualityColors"] = false,
 		["headerFontSize"] = 11,
+		["profileVersion"] = 16,
 	},
 	["profile"] = {
 		["ranged"] = {
@@ -153,14 +153,8 @@ ExtendedCharacterStats = {
 			},
 			["defenseRating"] = {
 				["display"] = true,
-				["text"] = "Dodge Chance",
-				["refName"] = "DodgeChance",
-			},
-			["display"] = true,
-			["avoidance"] = {
-				["display"] = true,
-				["text"] = "Avoidance",
-				["refName"] = "Avoidance",
+				["text"] = "Defense Rating",
+				["refName"] = "DefenseRating",
 			},
 			["display"] = true,
 			["refName"] = "DefenseHeader",

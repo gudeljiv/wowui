@@ -40,10 +40,8 @@ _detalhes_database = {
 		["cooldowns"] = {
 		},
 		["height"] = 18,
-		["framme_locked"] = false,
 		["width"] = 120,
-		["cooldowns"] = {
-		},
+		["framme_locked"] = false,
 		["show_conditions"] = {
 			["only_inside_instance"] = true,
 			["only_in_group"] = true,
@@ -260,7 +258,6 @@ _detalhes_database = {
 				249.999740600586, -- [1]
 				89.9999694824219, -- [2]
 			},
-			["arrow_anchor_y"] = 0,
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,

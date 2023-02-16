@@ -54,31 +54,6 @@ Postal3DB = {
 			},
 		},
 	},
-	["profileKeys"] = {
-		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-		["Vermina - Golemagg"] = "Vermina - Golemagg",
-		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
-		["Battitude - Golemagg"] = "Battitude - Golemagg",
-		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
-		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
-		["Battledog - Gehennas"] = "Battledog - Gehennas",
-		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
-		["Handrmandr - Golemagg"] = "Handrmandr - Golemagg",
-		["Battlearm - Gehennas"] = "Battlearm - Gehennas",
-		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
-		["Augustin - Golemagg"] = "Augustin - Golemagg",
-		["Tudum - Jin'do"] = "Tudum - Jin'do",
-		["Provokator - Jin'do"] = "Provokator - Jin'do",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
-		["Poklopac - Mirage Raceway"] = "Poklopac - Mirage Raceway",
-		["Miqa - Golemagg"] = "Miqa - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
-		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
-		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
-		["Wells - Jin'do"] = "Wells - Jin'do",
-	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
 			["BlackBook"] = {
@@ -123,7 +98,7 @@ Postal3DB = {
 		},
 		["Tandaram - Jin'do"] = {
 		},
-		["Battledog - Gehennas"] = {
+		["Wells - Jin'do"] = {
 		},
 		["Moolatz - Golemagg"] = {
 		},
@@ -137,7 +112,9 @@ Postal3DB = {
 				},
 			},
 		},
-		["Battlearm - Jin'do"] = {
+		["Tudum - Ashbringer"] = {
+		},
+		["Augustin - Golemagg"] = {
 		},
 		["Pitchwise - Ashbringer"] = {
 		},
@@ -150,11 +127,19 @@ Postal3DB = {
 		},
 		["Mxyzptlk - Golemagg"] = {
 		},
-		["Moolatz - Golemagg"] = {
+		["Battlearm - Jin'do"] = {
 		},
-		["Pitchwise - Ashbringer"] = {
+		["Poklopac - Mirage Raceway"] = {
 		},
-		["Wells - Jin'do"] = {
+		["Provokator - Jin'do"] = {
+		},
+		["Battlearm - Gehennas"] = {
+		},
+		["Handrmandr - Golemagg"] = {
+		},
+		["Tadibey - Golemagg"] = {
+		},
+		["Battledog - Gehennas"] = {
 		},
 	},
 }

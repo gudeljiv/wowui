@@ -3190,7 +3190,7 @@ RXPCSettings = {
 			["disableItemWindow"] = false,
 			["enableFlyStepAnnouncements"] = false,
 			["hideInRaid"] = true,
-			["frameHeight"] = 124.9999694824219,
+			["frameHeight"] = 125.0000534057617,
 		},
 	},
 }

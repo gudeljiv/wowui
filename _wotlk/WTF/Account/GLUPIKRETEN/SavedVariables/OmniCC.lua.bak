@@ -1,5 +1,9 @@
 
 OmniCCDB = {
+	["global"] = {
+		["dbVersion"] = 6,
+		["addonVersion"] = "10.0.4",
+	},
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Default",
 		["Vermina - Golemagg"] = "Default",
@@ -77,9 +81,9 @@ OmniCCDB = {
 			["themes"] = {
 				["Plater Nameplates Theme"] = {
 					["textStyles"] = {
-						["seconds"] = {
-						},
 						["soon"] = {
+						},
+						["seconds"] = {
 						},
 						["minutes"] = {
 						},
@@ -114,9 +118,9 @@ OmniCCDB = {
 				},
 				["Ignore"] = {
 					["textStyles"] = {
-						["soon"] = {
-						},
 						["seconds"] = {
+						},
+						["soon"] = {
 						},
 						["minutes"] = {
 						},
@@ -137,17 +141,6 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["engine"] = "AniUpdater",
-	["groups"] = {
-		{
-			["id"] = "Ignore",
-			["rules"] = {
-				"LossOfControl", -- [1]
-				"TotemFrame", -- [2]
-			},
-			["enabled"] = true,
-		}, -- [1]
-	},
 	["version"] = "8.1.1",
 	["groupSettings"] = {
 		["base"] = {
@@ -205,17 +198,7 @@ OmniCC4Config = {
 					["scale"] = 1.20000004768372,
 				},
 			},
-			["mmSSDuration"] = 0,
-			["minSize"] = 0.5,
-			["spiralOpacity"] = 1.00999997742474,
-			["scaleText"] = true,
-			["xOff"] = 0,
-			["tenthsDuration"] = 0,
-			["fontOutline"] = "OUTLINE",
-			["anchor"] = "CENTER",
-			["minEffectDuration"] = 30,
-			["yOff"] = 0,
-			["minDuration"] = 2,
+			["fontFace"] = "Fonts\\ARIALN.TTF",
 		},
 		["Ignore"] = {
 			["enabled"] = false,
@@ -258,11 +241,11 @@ OmniCC4Config = {
 				["controlled"] = {
 				},
 			},
-			["minDuration"] = 3,
+			["fontSize"] = 18,
 			["effect"] = "pulse",
-			["yOff"] = 0,
-			["minEffectDuration"] = 30,
-			["anchor"] = "CENTER",
+			["fontFace"] = "Fonts\\FRIZQT__.TTF",
+			["mmSSDuration"] = 0,
+			["minSize"] = 0.5,
 			["spiralOpacity"] = 1,
 			["yOff"] = 0,
 			["xOff"] = 0,
@@ -274,4 +257,15 @@ OmniCC4Config = {
 			["scaleText"] = true,
 		},
 	},
+	["groups"] = {
+		{
+			["id"] = "Ignore",
+			["rules"] = {
+				"LossOfControl", -- [1]
+				"TotemFrame", -- [2]
+			},
+			["enabled"] = true,
+		}, -- [1]
+	},
+	["engine"] = "AniUpdater",
 }

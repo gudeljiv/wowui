@@ -30,11 +30,11 @@ RXPDB = {
 		["Vermin - Golemagg"] = "global",
 		["Battlearm - Jin'do"] = "global",
 		["Poklopac - Mirage Raceway"] = "global",
-		["Miqa - Golemagg"] = "global",
-		["Moolatz - Golemagg"] = "global",
-		["Tudum - Ashbringer"] = "global",
-		["Pitchwise - Ashbringer"] = "global",
-		["Wells - Jin'do"] = "global",
+		["Provokator - Jin'do"] = "global",
+		["Mxyzptlk - Golemagg"] = "global",
+		["Handrmandr - Golemagg"] = "global",
+		["Tadibey - Golemagg"] = "global",
+		["Battledog - Gehennas"] = "global",
 	},
 	["profiles"] = {
 		["global"] = {
