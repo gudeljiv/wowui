@@ -1,5 +1,9 @@
 
 OmniCCDB = {
+	["global"] = {
+		["dbVersion"] = 6,
+		["addonVersion"] = "10.0.4",
+	},
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Default",
 		["Vermina - Golemagg"] = "Default",
@@ -8,8 +12,10 @@ OmniCCDB = {
 		["Battitude - Golemagg"] = "Default",
 		["Kaonac - Jin'do"] = "Default",
 		["Wells - Jin'do"] = "Default",
-		["Battledog - Gehennas"] = "Default",
-		["Tadibey - Golemagg"] = "Default",
+		["Handrmandr - Golemagg"] = "Default",
+		["Tandaram - Jin'do"] = "Default",
+		["Tudum - Jin'do"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Battlearm - Gehennas"] = "Default",
 		["Tudum - Jin'do"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
@@ -81,9 +87,9 @@ OmniCCDB = {
 			["themes"] = {
 				["Plater Nameplates Theme"] = {
 					["textStyles"] = {
-						["seconds"] = {
-						},
 						["soon"] = {
+						},
+						["seconds"] = {
 						},
 						["minutes"] = {
 						},
@@ -118,9 +124,9 @@ OmniCCDB = {
 				},
 				["Ignore"] = {
 					["textStyles"] = {
-						["soon"] = {
-						},
 						["seconds"] = {
+						},
+						["soon"] = {
 						},
 						["minutes"] = {
 						},
@@ -141,24 +147,22 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["engine"] = "AniUpdater",
-	["groups"] = {
-		{
-			["id"] = "Ignore",
-			["rules"] = {
-				"LossOfControl", -- [1]
-				"TotemFrame", -- [2]
-			},
-			["enabled"] = true,
-		}, -- [1]
-	},
-	["version"] = "8.1.1",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
 			["fontSize"] = 18,
-			["fontFace"] = "Fonts\\ARIALN.TTF",
+			["minDuration"] = 2,
 			["effect"] = "pulse",
+			["yOff"] = 0,
+			["minEffectDuration"] = 30,
+			["anchor"] = "CENTER",
+			["spiralOpacity"] = 1.00999997742474,
+			["scaleText"] = true,
+			["xOff"] = 0,
+			["tenthsDuration"] = 0,
+			["fontOutline"] = "OUTLINE",
+			["minSize"] = 0.5,
+			["mmSSDuration"] = 0,
 			["styles"] = {
 				["seconds"] = {
 					["a"] = 1,
@@ -262,10 +266,22 @@ OmniCC4Config = {
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
-			["minSize"] = 0.5,
-			["mmSSDuration"] = 0,
-			["fontFace"] = "Fonts\\FRIZQT__.TTF",
-			["fontSize"] = 18,
+			["anchor"] = "CENTER",
+			["minEffectDuration"] = 30,
+			["scaleText"] = true,
+			["yOff"] = 0,
 		},
+	},
+	["version"] = "8.1.1",
+	["engine"] = "AniUpdater",
+	["groups"] = {
+		{
+			["id"] = "Ignore",
+			["rules"] = {
+				"LossOfControl", -- [1]
+				"TotemFrame", -- [2]
+			},
+			["enabled"] = true,
+		}, -- [1]
 	},
 }

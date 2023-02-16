@@ -30,7 +30,6 @@ GlobalIgnoreDB = {
 		"player", -- [15]
 	},
 	["openWithFriends"] = true,
-	["invertSpam"] = false,
 	["skipPrivate"] = true,
 	["filterList"] = {
 		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]
@@ -99,8 +98,6 @@ GlobalIgnoreDB = {
 		"Horde", -- [14]
 		"Horde", -- [15]
 	},
-	["defexpire"] = 0,
-	["sameserver"] = true,
 	["attachFriends"] = true,
 	["notes"] = {
 		"", -- [1]
@@ -168,7 +165,7 @@ GlobalIgnoreDB = {
 		"Filter WTS", -- [9]
 		"Filter Chinese/Korean/Japanese", -- [10]
 	},
-	["spamFilter"] = true,
+	["asknote"] = true,
 	["filterActive"] = {
 		true, -- [1]
 		true, -- [2]
@@ -203,4 +200,8 @@ GlobalIgnoreDB = {
 		"Scorpiona-Golemagg", -- [14]
 		"Proguen-Golemagg", -- [15]
 	},
+	["sameserver"] = true,
+	["trackChanges"] = true,
+	["samefaction"] = true,
+	["invertSpam"] = false,
 }

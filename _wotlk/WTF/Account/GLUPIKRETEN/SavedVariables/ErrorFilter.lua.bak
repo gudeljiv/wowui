@@ -19,11 +19,11 @@ ErrorFilterDB = {
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
-		["Provokator - Jin'do"] = "Default",
-		["Battlearm - Gehennas"] = "Default",
-		["Handrmandr - Golemagg"] = "Default",
-		["Tadibey - Golemagg"] = "Default",
-		["Battledog - Gehennas"] = "Default",
+		["Miqa - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
+		["Pitchwise - Ashbringer"] = "Default",
+		["Wells - Jin'do"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

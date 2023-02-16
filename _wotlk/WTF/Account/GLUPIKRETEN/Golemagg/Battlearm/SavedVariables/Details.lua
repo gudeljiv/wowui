@@ -4096,6 +4096,7 @@ _detalhes_database = {
 										["n_amt"] = 1,
 										["n_curado"] = 204,
 										["totaldenied"] = 0,
+										["n_amt"] = 40,
 										["absorbed"] = 0,
 									},
 									[53365] = {
@@ -4121,6 +4122,7 @@ _detalhes_database = {
 										["n_amt"] = 1,
 										["n_curado"] = 311,
 										["totaldenied"] = 0,
+										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 									[50475] = {
@@ -4146,6 +4148,7 @@ _detalhes_database = {
 										["n_amt"] = 9,
 										["n_curado"] = 170,
 										["totaldenied"] = 0,
+										["n_amt"] = 11,
 										["absorbed"] = 0,
 									},
 								},
@@ -4937,6 +4940,7 @@ _detalhes_database = {
 										["n_amt"] = 7,
 										["n_curado"] = 208,
 										["totaldenied"] = 0,
+										["n_amt"] = 82,
 										["absorbed"] = 0,
 									},
 									[45470] = {
@@ -4962,6 +4966,7 @@ _detalhes_database = {
 										["n_amt"] = 1,
 										["n_curado"] = 57,
 										["totaldenied"] = 0,
+										["n_amt"] = 19,
 										["absorbed"] = 0,
 									},
 								},
@@ -6480,6 +6485,7 @@ _detalhes_database = {
 										["n_amt"] = 4,
 										["n_curado"] = 0,
 										["totaldenied"] = 0,
+										["n_amt"] = 5,
 										["absorbed"] = 0,
 									},
 									[45470] = {
@@ -6502,9 +6508,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_amt"] = 1,
 										["n_curado"] = 0,
 										["totaldenied"] = 0,
+										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 								},
@@ -15121,6 +15127,7 @@ _detalhes_database = {
 										["n_amt"] = 45,
 										["n_curado"] = 104785,
 										["totaldenied"] = 0,
+										["n_amt"] = 153,
 										["absorbed"] = 0,
 									},
 									[53365] = {
@@ -15195,6 +15202,7 @@ _detalhes_database = {
 										["n_amt"] = 4,
 										["n_curado"] = 18047,
 										["totaldenied"] = 0,
+										["n_amt"] = 22,
 										["absorbed"] = 0,
 									},
 								},
@@ -25047,6 +25055,9 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["last_event"] = 0,
+					["nome"] = "Krystallus",
+					["classe"] = "UNKNOW",
+					["aID"] = "27977",
 					["spell_cast"] = {
 						[6713] = 0,
 					},
@@ -26987,5 +26998,6 @@ _detalhes_database = {
 		["Player-4476-03677633"] = "HEALER",
 	},
 	["cached_specs"] = {
+		["Player-4465-036D491F"] = 251,
 	},
 }
