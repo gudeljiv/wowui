@@ -29,6 +29,55 @@ GlobalIgnoreDB = {
 		"player", -- [14]
 		"player", -- [15]
 	},
+	["syncInfo"] = {
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [1]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [2]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [3]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [4]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [5]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [6]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [7]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [8]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [9]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [10]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [11]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [12]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [13]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [14]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [15]
+	},
+	["invertSpam"] = false,
+	["skipPrivate"] = true,
 	["ignoreList"] = {
 		"Freezqt-Golemagg", -- [1]
 		"Puntune-Golemagg", -- [2]
@@ -46,43 +95,25 @@ GlobalIgnoreDB = {
 		"Scorpiona-Golemagg", -- [14]
 		"Proguen-Golemagg", -- [15]
 	},
-	["openWithFriends"] = true,
-	["skipPrivate"] = true,
-	["syncInfo"] = {
-		{
-		}, -- [1]
-		{
-		}, -- [2]
-		{
-		}, -- [3]
-		{
-		}, -- [4]
-		{
-		}, -- [5]
-		{
-		}, -- [6]
-		{
-		}, -- [7]
-		{
-		}, -- [8]
-		{
-		}, -- [9]
-		{
-		}, -- [10]
-		{
-		}, -- [11]
-		{
-		}, -- [12]
-		{
-		}, -- [13]
-		{
-		}, -- [14]
-		{
-		}, -- [15]
-	},
 	["autoTime"] = 600,
 	["autoCount"] = 3,
-	["revision"] = 1,
+	["notes"] = {
+		"", -- [1]
+		"", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		"", -- [7]
+		"", -- [8]
+		"", -- [9]
+		"", -- [10]
+		"", -- [11]
+		"", -- [12]
+		"", -- [13]
+		"", -- [14]
+		"", -- [15]
+	},
 	["filterList"] = {
 		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]
 		"[item=19019]", -- [2]
@@ -114,27 +145,10 @@ GlobalIgnoreDB = {
 		"Horde", -- [14]
 		"Horde", -- [15]
 	},
-	["skipParty"] = false,
-	["delList"] = {
-	},
+	["skipGuild"] = true,
+	["sameserver"] = true,
 	["attachFriends"] = true,
-	["notes"] = {
-		"", -- [1]
-		"", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"", -- [5]
-		"", -- [6]
-		"", -- [7]
-		"", -- [8]
-		"", -- [9]
-		"", -- [10]
-		"", -- [11]
-		"", -- [12]
-		"", -- [13]
-		"", -- [14]
-		"", -- [15]
-	},
+	["revision"] = 1,
 	["expList"] = {
 		0, -- [1]
 		0, -- [2]
@@ -152,10 +166,26 @@ GlobalIgnoreDB = {
 		0, -- [14]
 		0, -- [15]
 	},
-	["skipGuild"] = true,
+	["skipParty"] = false,
 	["chatmsg"] = true,
 	["filterTotal"] = 2,
-	["defexpire"] = 0,
+	["dateList"] = {
+		"05 Feb 2023", -- [1]
+		"05 Feb 2023", -- [2]
+		"05 Feb 2023", -- [3]
+		"05 Feb 2023", -- [4]
+		"05 Feb 2023", -- [5]
+		"05 Feb 2023", -- [6]
+		"05 Feb 2023", -- [7]
+		"05 Feb 2023", -- [8]
+		"05 Feb 2023", -- [9]
+		"05 Feb 2023", -- [10]
+		"06 Feb 2023", -- [11]
+		"07 Feb 2023", -- [12]
+		"14 Feb 2023", -- [13]
+		"14 Feb 2023", -- [14]
+		"15 Feb 2023", -- [15]
+	},
 	["filterDesc"] = {
 		"Filter \"Anal\" Spammers", -- [1]
 		"Filter Thunderfury linking", -- [2]
@@ -182,25 +212,10 @@ GlobalIgnoreDB = {
 		false, -- [10]
 	},
 	["spamFilter"] = true,
-	["dateList"] = {
-		"05 Feb 2023", -- [1]
-		"05 Feb 2023", -- [2]
-		"05 Feb 2023", -- [3]
-		"05 Feb 2023", -- [4]
-		"05 Feb 2023", -- [5]
-		"05 Feb 2023", -- [6]
-		"05 Feb 2023", -- [7]
-		"05 Feb 2023", -- [8]
-		"05 Feb 2023", -- [9]
-		"05 Feb 2023", -- [10]
-		"06 Feb 2023", -- [11]
-		"07 Feb 2023", -- [12]
-		"14 Feb 2023", -- [13]
-		"14 Feb 2023", -- [14]
-		"15 Feb 2023", -- [15]
+	["defexpire"] = 0,
+	["delList"] = {
 	},
-	["sameserver"] = true,
 	["autoUpdate"] = true,
 	["samefaction"] = true,
-	["invertSpam"] = false,
+	["openWithFriends"] = true,
 }

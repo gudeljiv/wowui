@@ -29,8 +29,8 @@ GlobalIgnoreDB = {
 		"player", -- [14]
 		"player", -- [15]
 	},
-	["openWithFriends"] = true,
 	["invertSpam"] = false,
+	["openWithFriends"] = true,
 	["skipPrivate"] = true,
 	["filterList"] = {
 		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]
@@ -46,39 +46,23 @@ GlobalIgnoreDB = {
 	},
 	["trackChanges"] = true,
 	["autoCount"] = 3,
-	["delList"] = {
-	},
-	["syncInfo"] = {
-		{
-		}, -- [1]
-		{
-		}, -- [2]
-		{
-		}, -- [3]
-		{
-		}, -- [4]
-		{
-		}, -- [5]
-		{
-		}, -- [6]
-		{
-		}, -- [7]
-		{
-		}, -- [8]
-		{
-		}, -- [9]
-		{
-		}, -- [10]
-		{
-		}, -- [11]
-		{
-		}, -- [12]
-		{
-		}, -- [13]
-		{
-		}, -- [14]
-		{
-		}, -- [15]
+	["sameserver"] = true,
+	["ignoreList"] = {
+		"Freezqt-Golemagg", -- [1]
+		"Puntune-Golemagg", -- [2]
+		"Pömp-Golemagg", -- [3]
+		"Raudos-Golemagg", -- [4]
+		"Burstt-Golemagg", -- [5]
+		"Conall-Golemagg", -- [6]
+		"Elfboy-Golemagg", -- [7]
+		"Jerrywild-Golemagg", -- [8]
+		"Qtc-Golemagg", -- [9]
+		"Segasík-Golemagg", -- [10]
+		"Arferes-Golemagg", -- [11]
+		"Eristia-Golemagg", -- [12]
+		"Ayrik-Golemagg", -- [13]
+		"Scorpiona-Golemagg", -- [14]
+		"Proguen-Golemagg", -- [15]
 	},
 	["autoUpdate"] = true,
 	["autoIgnore"] = true,
@@ -99,46 +83,6 @@ GlobalIgnoreDB = {
 		"Horde", -- [14]
 		"Horde", -- [15]
 	},
-	["defexpire"] = 0,
-	["sameserver"] = true,
-	["attachFriends"] = true,
-	["notes"] = {
-		"", -- [1]
-		"", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"", -- [5]
-		"", -- [6]
-		"", -- [7]
-		"", -- [8]
-		"", -- [9]
-		"", -- [10]
-		"", -- [11]
-		"", -- [12]
-		"", -- [13]
-		"", -- [14]
-		"", -- [15]
-	},
-	["expList"] = {
-		0, -- [1]
-		0, -- [2]
-		0, -- [3]
-		0, -- [4]
-		0, -- [5]
-		0, -- [6]
-		0, -- [7]
-		0, -- [8]
-		0, -- [9]
-		0, -- [10]
-		0, -- [11]
-		0, -- [12]
-		0, -- [13]
-		0, -- [14]
-		0, -- [15]
-	},
-	["skipGuild"] = true,
-	["chatmsg"] = true,
-	["filterTotal"] = 2,
 	["dateList"] = {
 		"05 Feb 2023", -- [1]
 		"05 Feb 2023", -- [2]
@@ -156,6 +100,31 @@ GlobalIgnoreDB = {
 		"14 Feb 2023", -- [14]
 		"15 Feb 2023", -- [15]
 	},
+	["delList"] = {
+	},
+	["attachFriends"] = true,
+	["revision"] = 1,
+	["expList"] = {
+		0, -- [1]
+		0, -- [2]
+		0, -- [3]
+		0, -- [4]
+		0, -- [5]
+		0, -- [6]
+		0, -- [7]
+		0, -- [8]
+		0, -- [9]
+		0, -- [10]
+		0, -- [11]
+		0, -- [12]
+		0, -- [13]
+		0, -- [14]
+		0, -- [15]
+	},
+	["skipParty"] = false,
+	["chatmsg"] = true,
+	["filterTotal"] = 2,
+	["defexpire"] = 0,
 	["filterDesc"] = {
 		"Filter \"Anal\" Spammers", -- [1]
 		"Filter Thunderfury linking", -- [2]
@@ -182,25 +151,71 @@ GlobalIgnoreDB = {
 		false, -- [10]
 	},
 	["asknote"] = true,
-	["skipParty"] = false,
-	["revision"] = 1,
+	["skipGuild"] = true,
+	["notes"] = {
+		"", -- [1]
+		"", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		"", -- [7]
+		"", -- [8]
+		"", -- [9]
+		"", -- [10]
+		"", -- [11]
+		"", -- [12]
+		"", -- [13]
+		"", -- [14]
+		"", -- [15]
+	},
 	["autoTime"] = 600,
 	["samefaction"] = true,
-	["ignoreList"] = {
-		"Freezqt-Golemagg", -- [1]
-		"Puntune-Golemagg", -- [2]
-		"Pömp-Golemagg", -- [3]
-		"Raudos-Golemagg", -- [4]
-		"Burstt-Golemagg", -- [5]
-		"Conall-Golemagg", -- [6]
-		"Elfboy-Golemagg", -- [7]
-		"Jerrywild-Golemagg", -- [8]
-		"Qtc-Golemagg", -- [9]
-		"Segasík-Golemagg", -- [10]
-		"Arferes-Golemagg", -- [11]
-		"Eristia-Golemagg", -- [12]
-		"Ayrik-Golemagg", -- [13]
-		"Scorpiona-Golemagg", -- [14]
-		"Proguen-Golemagg", -- [15]
+	["syncInfo"] = {
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [1]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [2]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [3]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [4]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [5]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [6]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [7]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [8]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [9]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [10]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [11]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [12]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [13]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [14]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [15]
 	},
 }
