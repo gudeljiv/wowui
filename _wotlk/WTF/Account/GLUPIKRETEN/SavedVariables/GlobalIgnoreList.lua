@@ -29,91 +29,9 @@ GlobalIgnoreDB = {
 		"player", -- [14]
 		"player", -- [15]
 	},
-	["syncInfo"] = {
-		{
-			"Battlearm-Golemagg@1", -- [1]
-		}, -- [1]
-		{
-			"Battlearm-Golemagg@1", -- [1]
-		}, -- [2]
-		{
-			"Battlearm-Golemagg@1", -- [1]
-		}, -- [3]
-		{
-			"Battlearm-Golemagg@1", -- [1]
-		}, -- [4]
-		{
-			"Battlearm-Golemagg@1", -- [1]
-		}, -- [5]
-		{
-			"Battlearm-Golemagg@1", -- [1]
-		}, -- [6]
-		{
-			"Battlearm-Golemagg@1", -- [1]
-		}, -- [7]
-		{
-			"Battlearm-Golemagg@1", -- [1]
-		}, -- [8]
-		{
-			"Battlearm-Golemagg@1", -- [1]
-		}, -- [9]
-		{
-			"Battlearm-Golemagg@1", -- [1]
-		}, -- [10]
-		{
-			"Battlearm-Golemagg@1", -- [1]
-		}, -- [11]
-		{
-			"Battlearm-Golemagg@1", -- [1]
-		}, -- [12]
-		{
-			"Battlearm-Golemagg@1", -- [1]
-		}, -- [13]
-		{
-			"Battlearm-Golemagg@1", -- [1]
-		}, -- [14]
-		{
-			"Battlearm-Golemagg@1", -- [1]
-		}, -- [15]
-	},
+	["openWithFriends"] = true,
 	["invertSpam"] = false,
 	["skipPrivate"] = true,
-	["ignoreList"] = {
-		"Freezqt-Golemagg", -- [1]
-		"Puntune-Golemagg", -- [2]
-		"Pömp-Golemagg", -- [3]
-		"Raudos-Golemagg", -- [4]
-		"Burstt-Golemagg", -- [5]
-		"Conall-Golemagg", -- [6]
-		"Elfboy-Golemagg", -- [7]
-		"Jerrywild-Golemagg", -- [8]
-		"Qtc-Golemagg", -- [9]
-		"Segasík-Golemagg", -- [10]
-		"Arferes-Golemagg", -- [11]
-		"Eristia-Golemagg", -- [12]
-		"Ayrik-Golemagg", -- [13]
-		"Scorpiona-Golemagg", -- [14]
-		"Proguen-Golemagg", -- [15]
-	},
-	["autoTime"] = 600,
-	["autoCount"] = 3,
-	["notes"] = {
-		"", -- [1]
-		"", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"", -- [5]
-		"", -- [6]
-		"", -- [7]
-		"", -- [8]
-		"", -- [9]
-		"", -- [10]
-		"", -- [11]
-		"", -- [12]
-		"", -- [13]
-		"", -- [14]
-		"", -- [15]
-	},
 	["filterList"] = {
 		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]
 		"[item=19019]", -- [2]
@@ -126,7 +44,44 @@ GlobalIgnoreDB = {
 		"[contains=WTS] or [contains=WTB]", -- [9]
 		"[nonlatin]", -- [10]
 	},
-	["trackChanges"] = true,
+	["autoUpdate"] = true,
+	["autoCount"] = 3,
+	["delList"] = {
+		"Happens-Golemagg", -- [1]
+	},
+	["syncInfo"] = {
+		{
+		}, -- [1]
+		{
+		}, -- [2]
+		{
+		}, -- [3]
+		{
+		}, -- [4]
+		{
+		}, -- [5]
+		{
+		}, -- [6]
+		{
+		}, -- [7]
+		{
+		}, -- [8]
+		{
+		}, -- [9]
+		{
+		}, -- [10]
+		{
+		}, -- [11]
+		{
+		}, -- [12]
+		{
+		}, -- [13]
+		{
+		}, -- [14]
+		{
+		}, -- [15]
+	},
+	["autoTime"] = 600,
 	["autoIgnore"] = true,
 	["factionList"] = {
 		"Horde", -- [1]
@@ -145,10 +100,26 @@ GlobalIgnoreDB = {
 		"Horde", -- [14]
 		"Horde", -- [15]
 	},
-	["skipGuild"] = true,
+	["defexpire"] = 0,
 	["sameserver"] = true,
 	["attachFriends"] = true,
-	["revision"] = 1,
+	["notes"] = {
+		"", -- [1]
+		"", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		"", -- [7]
+		"", -- [8]
+		"", -- [9]
+		"", -- [10]
+		"", -- [11]
+		"", -- [12]
+		"", -- [13]
+		"", -- [14]
+		"", -- [15]
+	},
 	["expList"] = {
 		0, -- [1]
 		0, -- [2]
@@ -166,7 +137,7 @@ GlobalIgnoreDB = {
 		0, -- [14]
 		0, -- [15]
 	},
-	["skipParty"] = false,
+	["skipGuild"] = true,
 	["chatmsg"] = true,
 	["filterTotal"] = 2,
 	["dateList"] = {
@@ -198,7 +169,7 @@ GlobalIgnoreDB = {
 		"Filter WTS", -- [9]
 		"Filter Chinese/Korean/Japanese", -- [10]
 	},
-	["asknote"] = true,
+	["spamFilter"] = true,
 	["filterActive"] = {
 		true, -- [1]
 		true, -- [2]
@@ -211,11 +182,26 @@ GlobalIgnoreDB = {
 		false, -- [9]
 		false, -- [10]
 	},
-	["spamFilter"] = true,
-	["defexpire"] = 0,
-	["delList"] = {
-	},
-	["autoUpdate"] = true,
+	["asknote"] = true,
+	["skipParty"] = false,
+	["revision"] = 1,
+	["trackChanges"] = true,
 	["samefaction"] = true,
-	["openWithFriends"] = true,
+	["ignoreList"] = {
+		"Freezqt-Golemagg", -- [1]
+		"Puntune-Golemagg", -- [2]
+		"Pömp-Golemagg", -- [3]
+		"Raudos-Golemagg", -- [4]
+		"Burstt-Golemagg", -- [5]
+		"Conall-Golemagg", -- [6]
+		"Elfboy-Golemagg", -- [7]
+		"Jerrywild-Golemagg", -- [8]
+		"Qtc-Golemagg", -- [9]
+		"Segasík-Golemagg", -- [10]
+		"Arferes-Golemagg", -- [11]
+		"Eristia-Golemagg", -- [12]
+		"Ayrik-Golemagg", -- [13]
+		"Scorpiona-Golemagg", -- [14]
+		"Proguen-Golemagg", -- [15]
+	},
 }

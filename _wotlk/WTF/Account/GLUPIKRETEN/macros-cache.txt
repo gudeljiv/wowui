@@ -1,13 +1,13 @@
-VER 3 000000000000000E " " "136106"
-/inspect
-/run SortBags()
-END
 VER 3 0000000000000013 " " "132130"
 /click BehindTarget
 END
 VER 3 0000000000000026 " " "134400"
 #showtooltip item:36912
 /2 WTB Saronite Ore 24g 
+END
+VER 3 000000000000000E " " "136106"
+/inspect
+/run SortBags()
 END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
@@ -16,12 +16,12 @@ VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
+/use [nocombat]item:43523
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:35953
+/use [nocombat]item:43523
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"

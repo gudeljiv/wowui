@@ -22,8 +22,8 @@ W: 784
 H: 260
 Frame: ItemRefTooltip
 FrameLevel: 1
-Anchor: TOPRIGHT
-X: -460
+Anchor: TOP
+X: 458
 Y: -143
 W: 128
 H: 64
@@ -43,9 +43,9 @@ W: 210
 H: 339
 Frame: AtlasLoot_GUI-Frame
 FrameLevel: 1
-Anchor: TOPRIGHT
-X: -212
-Y: -101
+Anchor: TOP
+X: 299
+Y: -151
 W: 920
 H: 600
 Frame: RXPG_ARROW
@@ -60,7 +60,7 @@ FrameLevel: 1
 Anchor: CENTER
 X: 313
 Y: -74
-W: 81
+W: 80
 H: 40
 Frame: Dejunk_ParentFrame
 FrameLevel: 1
