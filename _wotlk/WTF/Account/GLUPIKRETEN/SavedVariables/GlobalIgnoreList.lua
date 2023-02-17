@@ -29,8 +29,8 @@ GlobalIgnoreDB = {
 		"player", -- [14]
 		"player", -- [15]
 	},
-	["invertSpam"] = false,
 	["openWithFriends"] = true,
+	["invertSpam"] = false,
 	["skipPrivate"] = true,
 	["filterList"] = {
 		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]
@@ -44,134 +44,11 @@ GlobalIgnoreDB = {
 		"[contains=WTS] or [contains=WTB]", -- [9]
 		"[nonlatin]", -- [10]
 	},
-	["autoUpdate"] = true,
-	["autoCount"] = 3,
-	["sameserver"] = true,
-	["ignoreList"] = {
-		"Freezqt-Golemagg", -- [1]
-		"Puntune-Golemagg", -- [2]
-		"Pömp-Golemagg", -- [3]
-		"Raudos-Golemagg", -- [4]
-		"Burstt-Golemagg", -- [5]
-		"Conall-Golemagg", -- [6]
-		"Elfboy-Golemagg", -- [7]
-		"Jerrywild-Golemagg", -- [8]
-		"Qtc-Golemagg", -- [9]
-		"Segasík-Golemagg", -- [10]
-		"Arferes-Golemagg", -- [11]
-		"Eristia-Golemagg", -- [12]
-		"Ayrik-Golemagg", -- [13]
-		"Scorpiona-Golemagg", -- [14]
-		"Proguen-Golemagg", -- [15]
-	},
 	["autoTime"] = 600,
-	["autoIgnore"] = true,
-	["factionList"] = {
-		"Horde", -- [1]
-		"Horde", -- [2]
-		"Horde", -- [3]
-		"Horde", -- [4]
-		"Horde", -- [5]
-		"Horde", -- [6]
-		"Horde", -- [7]
-		"Horde", -- [8]
-		"Horde", -- [9]
-		"Horde", -- [10]
-		"Horde", -- [11]
-		"Horde", -- [12]
-		"Horde", -- [13]
-		"Horde", -- [14]
-		"Horde", -- [15]
-	},
-	["dateList"] = {
-		"05 Feb 2023", -- [1]
-		"05 Feb 2023", -- [2]
-		"05 Feb 2023", -- [3]
-		"05 Feb 2023", -- [4]
-		"05 Feb 2023", -- [5]
-		"05 Feb 2023", -- [6]
-		"05 Feb 2023", -- [7]
-		"05 Feb 2023", -- [8]
-		"05 Feb 2023", -- [9]
-		"05 Feb 2023", -- [10]
-		"06 Feb 2023", -- [11]
-		"07 Feb 2023", -- [12]
-		"14 Feb 2023", -- [13]
-		"14 Feb 2023", -- [14]
-		"15 Feb 2023", -- [15]
-	},
+	["autoCount"] = 3,
 	["delList"] = {
 		"Happens-Golemagg", -- [1]
 	},
-	["attachFriends"] = true,
-	["revision"] = 1,
-	["expList"] = {
-		0, -- [1]
-		0, -- [2]
-		0, -- [3]
-		0, -- [4]
-		0, -- [5]
-		0, -- [6]
-		0, -- [7]
-		0, -- [8]
-		0, -- [9]
-		0, -- [10]
-		0, -- [11]
-		0, -- [12]
-		0, -- [13]
-		0, -- [14]
-		0, -- [15]
-	},
-	["skipParty"] = false,
-	["chatmsg"] = true,
-	["filterTotal"] = 2,
-	["defexpire"] = 0,
-	["filterDesc"] = {
-		"Filter \"Anal\" Spammers", -- [1]
-		"Filter Thunderfury linking", -- [2]
-		"Filter Gold Spam #1", -- [3]
-		"Filter Gold Spam #2", -- [4]
-		"Filter Gold Spam #3", -- [5]
-		"Filter Gold Spam #4", -- [6]
-		"Filter Guild Recruitment", -- [7]
-		"Filter Community Recruitment", -- [8]
-		"Filter WTS", -- [9]
-		"Filter Chinese/Korean/Japanese", -- [10]
-	},
-	["spamFilter"] = true,
-	["filterActive"] = {
-		true, -- [1]
-		true, -- [2]
-		true, -- [3]
-		true, -- [4]
-		true, -- [5]
-		true, -- [6]
-		false, -- [7]
-		false, -- [8]
-		false, -- [9]
-		false, -- [10]
-	},
-	["asknote"] = true,
-	["skipGuild"] = true,
-	["notes"] = {
-		"", -- [1]
-		"", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"", -- [5]
-		"", -- [6]
-		"", -- [7]
-		"", -- [8]
-		"", -- [9]
-		"", -- [10]
-		"", -- [11]
-		"", -- [12]
-		"", -- [13]
-		"", -- [14]
-		"", -- [15]
-	},
-	["trackChanges"] = true,
-	["samefaction"] = true,
 	["syncInfo"] = {
 		{
 		}, -- [1]
@@ -203,5 +80,128 @@ GlobalIgnoreDB = {
 		}, -- [14]
 		{
 		}, -- [15]
+	},
+	["trackChanges"] = true,
+	["autoIgnore"] = true,
+	["factionList"] = {
+		"Horde", -- [1]
+		"Horde", -- [2]
+		"Horde", -- [3]
+		"Horde", -- [4]
+		"Horde", -- [5]
+		"Horde", -- [6]
+		"Horde", -- [7]
+		"Horde", -- [8]
+		"Horde", -- [9]
+		"Horde", -- [10]
+		"Horde", -- [11]
+		"Horde", -- [12]
+		"Horde", -- [13]
+		"Horde", -- [14]
+		"Horde", -- [15]
+	},
+	["defexpire"] = 0,
+	["sameserver"] = true,
+	["attachFriends"] = true,
+	["notes"] = {
+		"", -- [1]
+		"", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		"", -- [7]
+		"", -- [8]
+		"", -- [9]
+		"", -- [10]
+		"", -- [11]
+		"", -- [12]
+		"", -- [13]
+		"", -- [14]
+		"", -- [15]
+	},
+	["expList"] = {
+		0, -- [1]
+		0, -- [2]
+		0, -- [3]
+		0, -- [4]
+		0, -- [5]
+		0, -- [6]
+		0, -- [7]
+		0, -- [8]
+		0, -- [9]
+		0, -- [10]
+		0, -- [11]
+		0, -- [12]
+		0, -- [13]
+		0, -- [14]
+		0, -- [15]
+	},
+	["skipGuild"] = true,
+	["chatmsg"] = true,
+	["filterTotal"] = 2,
+	["dateList"] = {
+		"05 Feb 2023", -- [1]
+		"05 Feb 2023", -- [2]
+		"05 Feb 2023", -- [3]
+		"05 Feb 2023", -- [4]
+		"05 Feb 2023", -- [5]
+		"05 Feb 2023", -- [6]
+		"05 Feb 2023", -- [7]
+		"05 Feb 2023", -- [8]
+		"05 Feb 2023", -- [9]
+		"05 Feb 2023", -- [10]
+		"06 Feb 2023", -- [11]
+		"07 Feb 2023", -- [12]
+		"14 Feb 2023", -- [13]
+		"14 Feb 2023", -- [14]
+		"15 Feb 2023", -- [15]
+	},
+	["filterDesc"] = {
+		"Filter \"Anal\" Spammers", -- [1]
+		"Filter Thunderfury linking", -- [2]
+		"Filter Gold Spam #1", -- [3]
+		"Filter Gold Spam #2", -- [4]
+		"Filter Gold Spam #3", -- [5]
+		"Filter Gold Spam #4", -- [6]
+		"Filter Guild Recruitment", -- [7]
+		"Filter Community Recruitment", -- [8]
+		"Filter WTS", -- [9]
+		"Filter Chinese/Korean/Japanese", -- [10]
+	},
+	["spamFilter"] = true,
+	["filterActive"] = {
+		true, -- [1]
+		true, -- [2]
+		true, -- [3]
+		true, -- [4]
+		true, -- [5]
+		true, -- [6]
+		false, -- [7]
+		false, -- [8]
+		false, -- [9]
+		false, -- [10]
+	},
+	["asknote"] = true,
+	["skipParty"] = false,
+	["revision"] = 1,
+	["autoUpdate"] = true,
+	["samefaction"] = true,
+	["ignoreList"] = {
+		"Freezqt-Golemagg", -- [1]
+		"Puntune-Golemagg", -- [2]
+		"Pömp-Golemagg", -- [3]
+		"Raudos-Golemagg", -- [4]
+		"Burstt-Golemagg", -- [5]
+		"Conall-Golemagg", -- [6]
+		"Elfboy-Golemagg", -- [7]
+		"Jerrywild-Golemagg", -- [8]
+		"Qtc-Golemagg", -- [9]
+		"Segasík-Golemagg", -- [10]
+		"Arferes-Golemagg", -- [11]
+		"Eristia-Golemagg", -- [12]
+		"Ayrik-Golemagg", -- [13]
+		"Scorpiona-Golemagg", -- [14]
+		"Proguen-Golemagg", -- [15]
 	},
 }

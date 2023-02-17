@@ -60,18 +60,6 @@ PallyPower_Assignments = {
 		2, -- [9]
 		2, -- [10]
 	},
-	["Gamzy"] = {
-		0, -- [1]
-		0, -- [2]
-		0, -- [3]
-		0, -- [4]
-		0, -- [5]
-		0, -- [6]
-		0, -- [7]
-		0, -- [8]
-		0, -- [9]
-		0, -- [10]
-	},
 	["Varex"] = {
 		2, -- [1]
 		2, -- [2]
@@ -82,6 +70,18 @@ PallyPower_Assignments = {
 		1, -- [7]
 		1, -- [8]
 		1, -- [9]
+		0, -- [10]
+	},
+	["Gamzy"] = {
+		0, -- [1]
+		0, -- [2]
+		0, -- [3]
+		0, -- [4]
+		0, -- [5]
+		0, -- [6]
+		0, -- [7]
+		0, -- [8]
+		0, -- [9]
 		0, -- [10]
 	},
 	["Mileram"] = {
@@ -239,15 +239,15 @@ PallyPower_AuraAssignments = {
 	["Czarnuszy"] = 0,
 	["Billibos"] = 0,
 	["Árwén"] = 0,
-	["Yämi"] = 0,
+	["Menttolka"] = 1,
 	["Zardonik"] = 1,
 	["Filifjonkman"] = 0,
 	["Krigeroca"] = 0,
 	["Trylledame"] = 0,
-	["Vernitka"] = 3,
-	["Veribig"] = 0,
-	["Mouritius"] = 0,
 	["Zivvy"] = 0,
+	["Realpala"] = 0,
+	["Mouritius"] = 0,
+	["Vernitka"] = 3,
 	["Elenath"] = 0,
 	["Hugerocket"] = 0,
 	["Iamtherealqt"] = 0,
@@ -288,7 +288,7 @@ PallyPower_AuraAssignments = {
 	["Yebat"] = 0,
 	["Trenhard"] = 0,
 	["Phuncky"] = 2,
-	["Conquést"] = 2,
+	["Pazton"] = 3,
 	["Jejla"] = 0,
 	["Twitterstorm"] = 0,
 	["Yesnix"] = 0,
@@ -298,19 +298,19 @@ PallyPower_AuraAssignments = {
 	["Glumsi"] = 0,
 	["Ewulcek"] = 0,
 	["Moghulol"] = 0,
-	["Teddz"] = 0,
+	["Ðîvâ"] = 0,
 	["Redhaired"] = 0,
 	["Wscqc"] = 0,
 	["Gigapaladin"] = 0,
 	["Foxholy"] = 0,
-	["Ðîvâ"] = 0,
+	["Teddz"] = 0,
 	["Selestra"] = 0,
 	["Keen"] = 3,
 	["Palladen"] = 0,
 	["Nioxina"] = 0,
 	["Althan"] = 0,
 	["Phkp"] = 0,
-	["Pazton"] = 3,
+	["Conquést"] = 2,
 	["Palablynx"] = 0,
 	["Monikå"] = 0,
 	["Mcgiver"] = 0,
@@ -326,10 +326,10 @@ PallyPower_AuraAssignments = {
 	["Mailil"] = 0,
 	["Darwina"] = 0,
 	["Konseus"] = 0,
-	["Realpala"] = 0,
+	["Veribig"] = 0,
 	["Jollylight"] = 0,
 	["Aldrah"] = 2,
-	["Menttolka"] = 1,
+	["Yämi"] = 0,
 	["Darkknéss"] = 0,
 	["Vyjebanahoe"] = 1,
 	["Merpz"] = 1,

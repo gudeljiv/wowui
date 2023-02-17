@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 9229,
+	["session"] = 9231,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\Details\\functions\\spellcache.lua:9: Usage: GetLocale(application[, silent]): 'application' - No locales registered for 'Details'",
@@ -7632,21 +7632,13 @@ BugGrabberDB = {
 			["counter"] = 2,
 		}, -- [991]
 		{
-			["message"] = "...Master/LibTSM/Service/ItemTooltipClasses/Builder.lua:104: attempt to perform arithmetic on local 'value' (a nil value)",
-			["time"] = "2023/02/16 21:56:33",
-			["locals"] = "self = <table> {\n GetLine = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n AddSubItemValueLine = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _disabled = false\n _lineColors = <table> {\n }\n _quantity = 2\n ApplyValueColor = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _Prepare = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n AddLine = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n SetDisabled = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _itemString = \"i:39690\"\n AddTextLine = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n FormatMoney = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n AddQuantityValueLine = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _IsEmpty = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _modifierHash = 4\n AddItemValueLine = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _level = 1\n _lines = <table> {\n }\n GetNumLines = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _inCombat = false\n _GetModifierHash = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _levelNumLines = <table> {\n }\n StartSection = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _LineIterator = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _ValuesToStr = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _levelHasHeading = <table> {\n }\n AddItemValuesLine = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _IsCached = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _lastUpdate = 287376.239000\n EndSection = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _TextsToStr = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n}\nlabel = \"Smart Avg Buy Price x2\"\nvalue = nil\nprefixText = nil\n(*temporary) = 2\n(*temporary) = \" x\"\n(*temporary) = \"2\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to perform arithmetic on local 'value' (a nil value)\"\n",
-			["stack"] = "[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Builder.lua\"]:104: in function <...Master/LibTSM/Service/ItemTooltipClasses/Builder.lua:101>\n[string \"@Interface/AddOns/TradeSkillMaster/External/LibTSMClass-2/LibTSMClass.lua\"]:332: in function `AddItemValueLine'\n[string \"@Interface/AddOns/TradeSkillMaster/Core/Service/Tooltip/Accounting.lua\"]:151: in function `_populateFunc'\n[string \"@Interface/AddOns/TradeSkillMaster/Core/Service/Tooltip/Core.lua\"]:223: in function <...ddOns/TradeSkillMaster/Core/Service/Tooltip/Core.lua:222>\n[string \"@Interface/AddOns/TradeSkillMaster/External/LibTSMClass-2/LibTSMClass.lua\"]:332: in function `_Populate'\n[string \"@Interface/AddOns/TradeSkillMaster/Core/Service/Tooltip/Core.lua\"]:135: in function <...ddOns/TradeSkillMaster/Core/Service/Tooltip/Core.lua:130>\n[string \"@Interface/AddOns/TradeSkillMaster/External/LibTSMClass-2/LibTSMClass.lua\"]:332: in function `_Populate'\n[string \"@Interface/AddOns/TradeSkillMaster/Core/Service/Tooltip/Core.lua\"]:234: in function `populateFunc'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua\"]:210: in function `SetTooltipItem'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua\"]:152: in function <...Master/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:122>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n...\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/AddOnSkins/Libs/Ace3/AceHook-3.0-9/AceHook-3.0.lua\"]:95: in function <...Ons/AddOnSkins/Libs/Ace3/AceHook-3.0/AceHook-3.0.lua:87>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua\"]:106: in function <...Master/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetTradeSkillItem'\n[string \"@Interface_Wrath/AddOns/Blizzard_TradeSkillUI/Blizzard_TradeSkillUI.lua\"]:599: in function <...dOns/Blizzard_TradeSkillUI/Blizzard_TradeSkillUI.lua:596>",
-			["session"] = 9207,
-			["counter"] = 1,
-		}, -- [992]
-		{
 			["message"] = "...Master/LibTSM/Service/ItemTooltipClasses/Builder.lua:240: assertion failed!",
 			["time"] = "2023/02/16 21:56:33",
 			["locals"] = "(*temporary) = false\n",
 			["stack"] = "[string \"=[C]\"]: in function `assert'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Builder.lua\"]:240: in function <...Master/LibTSM/Service/ItemTooltipClasses/Builder.lua:239>\n[string \"@Interface/AddOns/TradeSkillMaster/External/LibTSMClass-2/LibTSMClass.lua\"]:332: in function `_IsEmpty'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua\"]:212: in function `SetTooltipItem'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua\"]:152: in function <...Master/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:122>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/LoonBestInSlot/UpdateTooltips.lua\"]:205: in function <Interface/AddOns/LoonBestInSlot/UpdateTooltips.lua:199>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/AddOnSkins/Libs/Ace3/AceHook-3.0-9/AceHook-3.0.lua\"]:95: in function <...Ons/AddOnSkins/Libs/Ace3/AceHook-3.0/AceHook-3.0.lua:87>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua\"]:106: in function <...Master/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetTradeSkillItem'\n[string \"@Interface_Wrath/AddOns/Blizzard_TradeSkillUI/Blizzard_TradeSkillUI.lua\"]:599: in function `TradeSkillItem_OnEnter'\n[string \"*Blizzard_TradeSkillUI.xml:696_OnUpdate\"]:2: in function <[string \"*Blizzard_TradeSkillUI.xml:696_OnUpdate\"]:1>",
 			["session"] = 9207,
 			["counter"] = 14,
-		}, -- [993]
+		}, -- [992]
 		{
 			["message"] = "...terface/AddOns/GlobalIgnoreList/GlobalIgnoreList.lua:2206: bad argument #1 to 'find' (string expected, got nil)",
 			["time"] = "2023/02/17 10:25:25",
@@ -7654,7 +7646,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `find'\n[string \"@Interface/AddOns/GlobalIgnoreList/GlobalIgnoreList.lua\"]:2206: in function `AddOrDelIgnore'\n[string \"@Interface/FrameXML/UnitPopupSharedButtonMixins.lua\"]:236: in function `OnClick'\n[string \"@Interface/FrameXML/UnitPopupShared.lua\"]:148: in function `func'\n[string \"@Interface/FrameXML/UIDropDownMenu.lua\"]:948: in function `UIDropDownMenuButton_OnClick'\n[string \"*UIDropDownMenuTemplates.xml:149_OnClick\"]:1: in function <[string \"*UIDropDownMenuTemplates.xml:149_OnClick\"]:1>",
 			["session"] = 9214,
 			["counter"] = 2,
-		}, -- [994]
+		}, -- [993]
 		{
 			["message"] = "Interface/AddOns/DBM-Core/DBM-Core.lua:4063: attempt to compare nil with number",
 			["time"] = "2023/02/17 10:22:40",
@@ -7662,14 +7654,14 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/DBM-Core/DBM-Core.lua\"]:4063: in function <Interface/AddOns/DBM-Core/DBM-Core.lua:4031>\n[string \"@Interface/AddOns/DBM-Core/DBM-Core.lua\"]:4128: in function <Interface/AddOns/DBM-Core/DBM-Core.lua:4124>\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/DBM-Core/DBM-Core.lua\"]:4418: in function `handler'\n[string \"@Interface/AddOns/DBM-Core/DBM-Core.lua\"]:962: in function <Interface/AddOns/DBM-Core/DBM-Core.lua:949>",
 			["session"] = 9215,
 			["counter"] = 6,
-		}, -- [995]
+		}, -- [994]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'GlobalIgnoreList' tried to call the protected function 'Search()'.",
 			["time"] = "2023/02/17 11:18:13",
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:480: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:480>\n[string \"=[C]\"]: in function `Search'\n[string \"@Interface/AddOns/Blizzard_LookingForGroupUI/Blizzard_LFGBrowse.lua\"]:226: in function `LFGBrowse_DoSearch'\n[string \"@Interface/AddOns/Blizzard_LookingForGroupUI/Blizzard_LFGBrowse.lua\"]:179: in function `SearchActiveEntry'\n[string \"@Interface/AddOns/Blizzard_LookingForGroupUI/Blizzard_LFGParentFrame.lua\"]:92: in function `LFGParentFrame_SearchActiveEntry'\n[string \"@Interface/AddOns/Blizzard_LookingForGroupUI/Blizzard_LFGListing.lua\"]:69: in function <...s/Blizzard_LookingForGroupUI/Blizzard_LFGListing.lua:51>",
 			["session"] = 9217,
 			["counter"] = 1,
-		}, -- [996]
+		}, -- [995]
 		{
 			["message"] = "[string \"print(ActionButton1Hotkey:GetWidth())\"]:1: attempt to index global 'ActionButton1Hotkey' (a nil value)",
 			["time"] = "2023/02/17 13:43:08",
@@ -7677,7 +7669,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(ActionButton1Hotkey:GetWidth())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2201: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4938: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4601: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4637: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 9219,
 			["counter"] = 1,
-		}, -- [997]
+		}, -- [996]
 		{
 			["message"] = "Interface/AddOns/nMainbar/modules/hotkey.lua:39: bad argument #1 to 'upper' (string expected, got table)",
 			["time"] = "2023/02/17 14:29:50",
@@ -7685,7 +7677,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `upper'\n[string \"@Interface/AddOns/nMainbar/modules/hotkey.lua\"]:39: in function <Interface/AddOns/nMainbar/modules/hotkey.lua:3>\n[string \"@Interface/AddOns/nMainbar/modules/hotkey.lua\"]:46: in function <Interface/AddOns/nMainbar/modules/hotkey.lua:45>\n[string \"=[C]\"]: in function `ActionButton_UpdateHotkeys'\n[string \"@Interface/AddOns/nMainbar/modules/skins.lua\"]:115: in function <Interface/AddOns/nMainbar/modules/skins.lua:113>\n[string \"=[C]\"]: in function `ActionButton_Update'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:338: in function `ActionButton_UpdateAction'\n[string \"*ActionBarFrame.xml:9_OnAttributeChanged\"]:1: in function <[string \"*ActionBarFrame.xml:9_OnAttributeChanged\"]:1>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:263: in function `ActionButton_OnLoad'\n[string \"*ActionBarFrame.xml:6_OnLoad\"]:1: in function <[string \"*ActionBarFrame.xml:6_OnLoad\"]:1>\n[string \"=[C]\"]: in function `CreateFrame'\n[string \"@Interface/AddOns/RingMenu/main.lua\"]:122: in function `RingMenu_UpdateRing'\n[string \"@Interface/AddOns/RingMenu/main.lua\"]:173: in function `RingMenu_UpdateAllRings'\n[string \"@Interface/AddOns/RingMenu/main.lua\"]:196: in function <Interface/AddOns/RingMenu/main.lua:180>",
 			["session"] = 9220,
 			["counter"] = 76,
-		}, -- [998]
+		}, -- [997]
 		{
 			["message"] = "[string \"ActionButtonHotKey1:SetVertexColor(1, 1, 0)\"]:1: attempt to index global 'ActionButtonHotKey1' (a nil value)",
 			["time"] = "2023/02/17 18:36:39",
@@ -7693,7 +7685,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"ActionButtonHotKey1:SetVertexColor(1, 1, 0)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2201: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4938: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4601: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4637: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 9228,
 			["counter"] = 1,
-		}, -- [999]
+		}, -- [998]
 		{
 			["message"] = "[string \"ActionButtonHotKey1:SetVertexColor(1, 0, 0)\"]:1: attempt to index global 'ActionButtonHotKey1' (a nil value)",
 			["time"] = "2023/02/17 18:36:42",
@@ -7701,6 +7693,14 @@ BugGrabberDB = {
 			["stack"] = "[string \"ActionButtonHotKey1:SetVertexColor(1, 0, 0)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2201: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4938: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4601: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4637: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 9228,
 			["counter"] = 1,
+		}, -- [999]
+		{
+			["message"] = "...Master/LibTSM/Service/ItemTooltipClasses/Builder.lua:104: attempt to perform arithmetic on local 'value' (a nil value)",
+			["time"] = "2023/02/16 21:56:33",
+			["locals"] = "self = <table> {\n GetLine = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n AddSubItemValueLine = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _disabled = false\n _lineColors = <table> {\n }\n _quantity = 2\n ApplyValueColor = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _Prepare = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n AddLine = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n SetDisabled = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _itemString = \"i:39690\"\n AddTextLine = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n FormatMoney = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n AddQuantityValueLine = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _IsEmpty = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _modifierHash = 4\n AddItemValueLine = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _level = 1\n _lines = <table> {\n }\n GetNumLines = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _inCombat = false\n _GetModifierHash = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _levelNumLines = <table> {\n }\n StartSection = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _LineIterator = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _ValuesToStr = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _levelHasHeading = <table> {\n }\n AddItemValuesLine = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _IsCached = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _lastUpdate = 287376.239000\n EndSection = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n _TextsToStr = <function> defined @Interface/AddOns/TradeSkillMaster/External/LibTSMClass/LibTSMClass.lua:319\n}\nlabel = \"Smart Avg Buy Price x2\"\nvalue = nil\nprefixText = nil\n(*temporary) = 2\n(*temporary) = \" x\"\n(*temporary) = \"2\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to perform arithmetic on local 'value' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Builder.lua\"]:104: in function <...Master/LibTSM/Service/ItemTooltipClasses/Builder.lua:101>\n[string \"@Interface/AddOns/TradeSkillMaster/External/LibTSMClass-2/LibTSMClass.lua\"]:332: in function `AddItemValueLine'\n[string \"@Interface/AddOns/TradeSkillMaster/Core/Service/Tooltip/Accounting.lua\"]:151: in function `_populateFunc'\n[string \"@Interface/AddOns/TradeSkillMaster/Core/Service/Tooltip/Core.lua\"]:223: in function <...ddOns/TradeSkillMaster/Core/Service/Tooltip/Core.lua:222>\n[string \"@Interface/AddOns/TradeSkillMaster/External/LibTSMClass-2/LibTSMClass.lua\"]:332: in function `_Populate'\n[string \"@Interface/AddOns/TradeSkillMaster/Core/Service/Tooltip/Core.lua\"]:135: in function <...ddOns/TradeSkillMaster/Core/Service/Tooltip/Core.lua:130>\n[string \"@Interface/AddOns/TradeSkillMaster/External/LibTSMClass-2/LibTSMClass.lua\"]:332: in function `_Populate'\n[string \"@Interface/AddOns/TradeSkillMaster/Core/Service/Tooltip/Core.lua\"]:234: in function `populateFunc'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua\"]:210: in function `SetTooltipItem'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua\"]:152: in function <...Master/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:122>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n...\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/AddOnSkins/Libs/Ace3/AceHook-3.0-9/AceHook-3.0.lua\"]:95: in function <...Ons/AddOnSkins/Libs/Ace3/AceHook-3.0/AceHook-3.0.lua:87>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua\"]:106: in function <...Master/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetTradeSkillItem'\n[string \"@Interface_Wrath/AddOns/Blizzard_TradeSkillUI/Blizzard_TradeSkillUI.lua\"]:599: in function <...dOns/Blizzard_TradeSkillUI/Blizzard_TradeSkillUI.lua:596>",
+			["session"] = 9231,
+			["counter"] = 2,
 		}, -- [1000]
 	},
 }
