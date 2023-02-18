@@ -14,7 +14,7 @@ import numpy
 import math
 import pyperclip
 
-if(os.name == "posix"):
+if (os.name == "posix"):
     from AppKit import NSScreen
     from AppKit import NSWorkspace
 else:
