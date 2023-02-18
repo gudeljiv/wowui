@@ -268,3 +268,23 @@ xVermin.Enraged = function(unit)
 	return enraged > 0 and true or false
 end
 xEnraged = xVermin.Enraged
+
+xVermin.RuneCount = function(rune)
+	local blood = 0
+	local frost = 0
+	local unholy = 0
+	local death = 0
+	for i = 1, 6 do
+		local runeType = GetRuneType(i)
+		local start, duration, runeReady = GetRuneCooldown(i)
+		if runeReady then
+			blood = runeType == 1 and blood + 1 or blood
+			frost = runeType == 3 and frost + 1 or frost
+			unholy = runeType == 2 and unholy + 1 or unholy
+			death = runeType == 4 and death + 1 or death
+		end
+	end
+
+	return blood, frost, unholy, death
+end
+xRuneCount = xVermin.RuneCount
