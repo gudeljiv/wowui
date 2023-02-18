@@ -1,15 +1,15 @@
 
 RXPCData = {
-	["stepSkip"] = {
-	},
+	["currentGuideGroup"] = "",
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
-	["currentGuideName"] = "",
-	["currentGuideGroup"] = "",
+	["GA"] = true,
+	["stepSkip"] = {
+	},
 	["flightPaths"] = {
 	},
-	["GA"] = true,
+	["currentGuideName"] = "",
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -67,7 +67,7 @@ RXPCSettings = {
 			["enableBindAutomation"] = false,
 			["enableLevelUpAnnounceSolo"] = false,
 			["alwaysSendBranded"] = false,
-			["frameHeight"] = 125.0001068115234,
+			["frameHeight"] = 125.000114440918,
 			["enableFlyStepAnnouncements"] = false,
 		},
 	},
