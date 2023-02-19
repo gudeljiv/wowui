@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 9269,
+	["session"] = 9271,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\Details\\functions\\attributes.lua:5: Usage: GetLocale(application[, silent]): 'application' - No locales registered for 'Details'",
