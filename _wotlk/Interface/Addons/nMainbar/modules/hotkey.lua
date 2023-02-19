@@ -2,13 +2,14 @@ local gsub = string.gsub
 
 local UpdateHotkeys = function(frame)
 	local hotkey = _G[frame:GetName() .. 'HotKey']
+	local name = _G[frame:GetName() .. 'Name']
 	local text = hotkey:GetText()
 
 	if (text and text ~= RANGE_INDICATOR) then
-		text = gsub(text, '(s%-)', 'S-')
-		text = gsub(text, '(a%-)', 'A-')
-		text = gsub(text, '(c%-)', 'C-')
-		text = gsub(text, '(st%-)', 'C-') -- german control 'Steuerung'
+		text = gsub(text, '(s%-)', 'S')
+		text = gsub(text, '(a%-)', 'A')
+		text = gsub(text, '(c%-)', 'C')
+		text = gsub(text, '(st%-)', 'C') -- german control 'Steuerung'
 
 		for i = 1, 30 do
 			text = gsub(text, _G['KEY_BUTTON' .. i], 'M' .. i)
@@ -28,12 +29,16 @@ local UpdateHotkeys = function(frame)
 		text = gsub(text, KEY_HOME, 'HM')
 		text = gsub(text, KEY_DELETE, 'DEL')
 
-		hotkey:SetText(text)
+		hotkey:SetText(string.upper(text))
 	else
 		-- hotkey:SetPoint('TOPLEFT', button, 'TOPLEFT', 1, -2)
 		-- hotkey:Hide()
 		hotkey:SetText('')
 	end
+
+	hotkey:SetScale(0.9)
+	name:SetScale(0.7)
+	hotkey:SetWidth(40)
 end
 
 hooksecurefunc(

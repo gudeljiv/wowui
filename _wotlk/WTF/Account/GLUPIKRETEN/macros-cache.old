@@ -16,8 +16,8 @@ VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:33445
-/castsequence [combat] reset=combat item:33448
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
 #showtooltip
@@ -50,9 +50,7 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000021 "TEST" "134400"
-/run ItemRackMenu1Count:ClearAllPoints()
-/run ItemRackMenu1Count:SetScale(0.5)
-/run ItemRackMenu1Count:SetPoint('TOPRIGHT', ItemRackMenu1, 'TOPRIGHT', -4, -6)
+/cast [@focus,exists][][stance:1/2]Shield Bash
 END
 VER 3 0000000000000020 "TSMDestroy" "134400"
 /tsm destroy

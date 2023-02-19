@@ -1,6 +1,6 @@
-VER 3 0000000001000014 " " "134400"
-#showtooltip 
-/cast [@focus, help, nodead][] Beacon of Light
+VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Holy Shock
+/cast [@mouseover, help, nodead][] Holy Shock
 END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
@@ -60,7 +60,7 @@ VER 3 0000000001000013 " " "134400"
 #showtooltip 
 /cast [@mouseover, help, nodead][] Beacon of Light
 END
-VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Holy Shock
-/cast [@mouseover, help, nodead][] Holy Shock
+VER 3 0000000001000014 " " "134400"
+#showtooltip 
+/cast [@focus, help, nodead][] Beacon of Light
 END

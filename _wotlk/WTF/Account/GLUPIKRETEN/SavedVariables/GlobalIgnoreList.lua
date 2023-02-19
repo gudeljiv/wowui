@@ -1,7 +1,7 @@
 
 GlobalIgnoreDB = {
 	["filterCount"] = {
-		1, -- [1]
+		2, -- [1]
 		0, -- [2]
 		1, -- [3]
 		0, -- [4]
@@ -28,28 +28,34 @@ GlobalIgnoreDB = {
 		"player", -- [13]
 		"player", -- [14]
 		"player", -- [15]
-	},
-	["ignoreList"] = {
-		"Freezqt-Golemagg", -- [1]
-		"Puntune-Golemagg", -- [2]
-		"Pömp-Golemagg", -- [3]
-		"Raudos-Golemagg", -- [4]
-		"Burstt-Golemagg", -- [5]
-		"Conall-Golemagg", -- [6]
-		"Elfboy-Golemagg", -- [7]
-		"Jerrywild-Golemagg", -- [8]
-		"Qtc-Golemagg", -- [9]
-		"Segasík-Golemagg", -- [10]
-		"Arferes-Golemagg", -- [11]
-		"Eristia-Golemagg", -- [12]
-		"Ayrik-Golemagg", -- [13]
-		"Scorpiona-Golemagg", -- [14]
-		"Proguen-Golemagg", -- [15]
+		"player", -- [16]
+		"player", -- [17]
 	},
 	["openWithFriends"] = true,
+	["invertSpam"] = false,
 	["skipPrivate"] = true,
+	["filterList"] = {
+		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]
+		"[item=19019]", -- [2]
+		"([contains=.c0m] or [contains=.c.0.m] or [contains=,com] or ([contains=.com] and ([contains=code] or [contains=usd] or [contains=+15]))", -- [3]
+		"([contains=░] or [contains=▒] or [contains=▓] or [contains=█]) and ([contains=wts] or [contains=sell] or [contains=gold] or [contains=share]))", -- [4]
+		"([contains=deliver] or [contains=delivery] or [contains=gold] or [contains=delievery] or [contains=sale]) and ([contains=.com] or [contains=,com] or [contains=c0m])", -- [5]
+		"([contains=wts] or [contains=sell]) and [contains=share] and ([contains=account] or [contains=acc]))", -- [6]
+		"(([contains=<] and [contains=>]) or ([contains=\\[] and [contains=\\]]) or ([contains=\\(] and [contains=\\)])) and ([contains=recruit] or [contains=progress] or [contains=raid] or [contains=guild] or [contains=seek] or [contains=mythic])", -- [7]
+		"[community]", -- [8]
+		"[contains=WTS] or [contains=WTB]", -- [9]
+		"[nonlatin]", -- [10]
+	},
+	["autoUpdate"] = true,
+	["autoCount"] = 3,
+	["delList"] = {
+		"Happens-Golemagg", -- [1]
+	},
 	["syncInfo"] = {
 		{
+			"Miqa-Golemagg@1", -- [1]
+			"Vermin-Golemagg@2", -- [2]
+			"Battlearm-Golemagg@1", -- [3]
 		}, -- [1]
 		{
 		}, -- [2]
@@ -79,23 +85,12 @@ GlobalIgnoreDB = {
 		}, -- [14]
 		{
 		}, -- [15]
+		{
+		}, -- [16]
+		{
+		}, -- [17]
 	},
 	["autoTime"] = 600,
-	["autoCount"] = 3,
-	["revision"] = 1,
-	["filterList"] = {
-		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]
-		"[item=19019]", -- [2]
-		"([contains=.c0m] or [contains=.c.0.m] or [contains=,com] or ([contains=.com] and ([contains=code] or [contains=usd] or [contains=+15]))", -- [3]
-		"([contains=░] or [contains=▒] or [contains=▓] or [contains=█]) and ([contains=wts] or [contains=sell] or [contains=gold] or [contains=share]))", -- [4]
-		"([contains=deliver] or [contains=delivery] or [contains=gold] or [contains=delievery] or [contains=sale]) and ([contains=.com] or [contains=,com] or [contains=c0m])", -- [5]
-		"([contains=wts] or [contains=sell]) and [contains=share] and ([contains=account] or [contains=acc]))", -- [6]
-		"(([contains=<] and [contains=>]) or ([contains=\\[] and [contains=\\]]) or ([contains=\\(] and [contains=\\)])) and ([contains=recruit] or [contains=progress] or [contains=raid] or [contains=guild] or [contains=seek] or [contains=mythic])", -- [7]
-		"[community]", -- [8]
-		"[contains=WTS] or [contains=WTB]", -- [9]
-		"[nonlatin]", -- [10]
-	},
-	["trackChanges"] = true,
 	["autoIgnore"] = true,
 	["factionList"] = {
 		"Horde", -- [1]
@@ -113,10 +108,11 @@ GlobalIgnoreDB = {
 		"Horde", -- [13]
 		"Horde", -- [14]
 		"Horde", -- [15]
+		"Horde", -- [16]
+		"Horde", -- [17]
 	},
-	["skipParty"] = false,
-	["delList"] = {
-	},
+	["defexpire"] = 0,
+	["sameserver"] = true,
 	["attachFriends"] = true,
 	["notes"] = {
 		"", -- [1]
@@ -134,6 +130,8 @@ GlobalIgnoreDB = {
 		"", -- [13]
 		"", -- [14]
 		"", -- [15]
+		"", -- [16]
+		"", -- [17]
 	},
 	["expList"] = {
 		0, -- [1]
@@ -151,37 +149,12 @@ GlobalIgnoreDB = {
 		0, -- [13]
 		0, -- [14]
 		0, -- [15]
+		0, -- [16]
+		0, -- [17]
 	},
 	["skipGuild"] = true,
 	["chatmsg"] = true,
-	["filterTotal"] = 2,
-	["defexpire"] = 0,
-	["filterDesc"] = {
-		"Filter \"Anal\" Spammers", -- [1]
-		"Filter Thunderfury linking", -- [2]
-		"Filter Gold Spam #1", -- [3]
-		"Filter Gold Spam #2", -- [4]
-		"Filter Gold Spam #3", -- [5]
-		"Filter Gold Spam #4", -- [6]
-		"Filter Guild Recruitment", -- [7]
-		"Filter Community Recruitment", -- [8]
-		"Filter WTS", -- [9]
-		"Filter Chinese/Korean/Japanese", -- [10]
-	},
-	["asknote"] = true,
-	["filterActive"] = {
-		true, -- [1]
-		true, -- [2]
-		true, -- [3]
-		true, -- [4]
-		true, -- [5]
-		true, -- [6]
-		false, -- [7]
-		false, -- [8]
-		false, -- [9]
-		false, -- [10]
-	},
-	["spamFilter"] = true,
+	["filterTotal"] = 3,
 	["dateList"] = {
 		"05 Feb 2023", -- [1]
 		"05 Feb 2023", -- [2]
@@ -198,9 +171,56 @@ GlobalIgnoreDB = {
 		"14 Feb 2023", -- [13]
 		"14 Feb 2023", -- [14]
 		"15 Feb 2023", -- [15]
+		"18 Feb 2023", -- [16]
+		"19 Feb 2023", -- [17]
 	},
-	["sameserver"] = true,
-	["autoUpdate"] = true,
+	["filterDesc"] = {
+		"Filter \"Anal\" Spammers", -- [1]
+		"Filter Thunderfury linking", -- [2]
+		"Filter Gold Spam #1", -- [3]
+		"Filter Gold Spam #2", -- [4]
+		"Filter Gold Spam #3", -- [5]
+		"Filter Gold Spam #4", -- [6]
+		"Filter Guild Recruitment", -- [7]
+		"Filter Community Recruitment", -- [8]
+		"Filter WTS", -- [9]
+		"Filter Chinese/Korean/Japanese", -- [10]
+	},
+	["spamFilter"] = true,
+	["filterActive"] = {
+		true, -- [1]
+		true, -- [2]
+		true, -- [3]
+		true, -- [4]
+		true, -- [5]
+		true, -- [6]
+		false, -- [7]
+		false, -- [8]
+		false, -- [9]
+		false, -- [10]
+	},
+	["asknote"] = true,
+	["skipParty"] = false,
+	["revision"] = 1,
+	["trackChanges"] = true,
 	["samefaction"] = true,
-	["invertSpam"] = false,
+	["ignoreList"] = {
+		"Freezqt-Golemagg", -- [1]
+		"Puntune-Golemagg", -- [2]
+		"Pömp-Golemagg", -- [3]
+		"Raudos-Golemagg", -- [4]
+		"Burstt-Golemagg", -- [5]
+		"Conall-Golemagg", -- [6]
+		"Elfboy-Golemagg", -- [7]
+		"Jerrywild-Golemagg", -- [8]
+		"Qtc-Golemagg", -- [9]
+		"Segasík-Golemagg", -- [10]
+		"Arferes-Golemagg", -- [11]
+		"Eristia-Golemagg", -- [12]
+		"Ayrik-Golemagg", -- [13]
+		"Scorpiona-Golemagg", -- [14]
+		"Proguen-Golemagg", -- [15]
+		"Supablast-Golemagg", -- [16]
+		"Grashandlol-Golemagg", -- [17]
+	},
 }

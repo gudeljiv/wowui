@@ -264,3 +264,14 @@ monitor_settings["2048.0"] = {
     "p_behind_left": 43,
     "p_clss_left": 52,
 }
+monitor_settings["1440.0"] = {
+    "x": 5,
+    "y": 5,
+    "c_width": 3,
+    "c_height": 3,
+    "p_offgcd_left": 9,
+    "p_combat_left": 17,
+    "p_interrupt_left": 24,
+    "p_behind_left": 31,
+    "p_clss_left": 37,
+}
