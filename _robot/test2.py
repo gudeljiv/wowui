@@ -1,69 +1,25 @@
-from pynput.keyboard import Key, Controller
+#!/usr/bin/python
+
+import _thread
 import time
 
-import cv2
-import pyautogui
-
-import os
-import sys
-import mss
-import mss.tools
-import numpy
-import math
-import pyperclip
-
-if(os.name == "posix"):
-    from AppKit import NSScreen
-    from AppKit import NSWorkspace
-else:
-    import win32gui
-    from win32api import GetSystemMetrics
+# Define a function for the thread
 
 
-from pynput import keyboard
-from pyautogui import *
-from os.path import isfile, join
-from os import listdir
-from os.path import exists
-from skimage.metrics import structural_similarity
-from datetime import datetime
-
-import random
-
-pyautogui.PAUSE = 1
-
-combat = False
-debug = False
-mill = False
-dprint = False
-pause = True
-wow_class = "warrior"
+def print_time(threadName, delay):
+    count = 0
+    while count < 5:
+        time.sleep(delay)
+        count += 1
+        print(threadName, time.ctime(time.time()))
 
 
-keyboardd = Controller()
+# Create two threads as follows
+try:
+    _thread.start_new_thread(print_time, ("Thread-1", 2, ))
+    _thread.start_new_thread(print_time, ("Thread-2", 4, ))
+except:
+    print("Error: unable to start thread")
 
-
-def on_press(key):
-    global debug, dprint, pause, mill
-
-    if key == keyboard.Key.f12:
-        print(pause)
-        pause = not pause
-        if pause:
-            print("Rotation is paused")
-            pyautogui.PAUSE = 1
-            pyautogui.FAILSAFE = False
-        else:
-            print("Rotation is not paused")
-            pyautogui.PAUSE = 0.1
-            pyautogui.FAILSAFE = True
-
-
-with keyboard.Listener(on_press=on_press) as listener:
-    with mss.mss() as sct:
-        while True:
-
-            time.sleep(random.uniform(0, 1))
-            if not pause:
-                keyboardd.press('x')
-                keyboardd.release('x')
+while 1:
+    pass

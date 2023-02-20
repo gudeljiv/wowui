@@ -1,10 +1,10 @@
-## Interface: 30400
+## Interface: 30401
 ## Title: RestedXP Guides
 ## Notes: In-game leveling guides
 ## Notes-zhCN: TODO
 ## Author: RestedXP
-## Version: v4.4.10
-## OptionalDeps: Questie
+## Version: v4.4.14
+## OptionalDeps: Questie, RestedXP_Themes
 ## SavedVariables: RXPData, RXPDB
 ## SavedVariablesPerCharacter: RXPCData, RXPCTrackingData, RXPCComms, RXPCSettings
 ## X-Curse-Project-ID: 486246
@@ -13,6 +13,7 @@ libs\embeds.xml
 locale\locales.xml
 
 Locale.lua
+Themes.lua
 RXPGuides.lua
 GuideWindow.lua
 Help.lua

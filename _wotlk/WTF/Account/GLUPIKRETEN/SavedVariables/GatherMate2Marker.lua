@@ -1583,11 +1583,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4900636000] = {
+				[5360314000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5340313000] = {
+				[4900636000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1815,7 +1815,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[8380434000] = {
+				[8360433000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1831,9 +1831,9 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[8360433000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[6070578000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
 				[5250451000] = {
 					["touched"] = false,
@@ -2187,7 +2187,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5890436000] = {
+				[6500768000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2803,7 +2803,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5540634000] = {
+				[5890436000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2811,7 +2811,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6500768000] = {
+				[5540634000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2983,9 +2983,9 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6070578000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[8380434000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
 				[720660000] = {
 					["touched"] = false,
@@ -3083,7 +3083,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5360314000] = {
+				[5340313000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},

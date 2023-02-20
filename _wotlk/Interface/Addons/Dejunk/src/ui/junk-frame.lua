@@ -97,11 +97,7 @@ JunkFrame.frame = (function()
     onUpdateTooltip = function(self, tooltip)
       local items = self:GetParent().items
       if items and items[1] then
-        if IsShiftKeyDown() then
-          tooltip:SetBagItem(items[1].bag, items[1].slot)
-        else
-          tooltip:SetText(items[1].link)
-        end
+        tooltip:SetBagItem(items[1].bag, items[1].slot)
       end
     end
   })
@@ -111,7 +107,7 @@ JunkFrame.frame = (function()
     JunkFilter:GetJunkItems(self.items)
 
     -- Title.
-    self.title:SetText(Colors.Grey(("%s (%s)"):format(Colors.Yellow(L.JUNK_ITEMS), Colors.White(#self.items))))
+    self.title:SetText(Colors.Yellow(("%s (%s)"):format(L.JUNK_ITEMS, Colors.White(#self.items))))
 
     -- Update button state.
     if #self.items > 0 then
@@ -144,36 +140,51 @@ JunkFrame.frame = (function()
     titleText = Colors.White(L.JUNK_ITEMS),
     onUpdateTooltip = function(self, tooltip)
       tooltip:SetText(L.JUNK_ITEMS)
-      tooltip:AddLine(L.JUNK_FRAME_TOOLTIP:format(Lists.Inclusions.name))
+      tooltip:AddLine(L.JUNK_FRAME_TOOLTIP:format(
+        Lists.PerCharInclusions.name,
+        Lists.GlobalInclusions.name,
+        Colors.White(L.SHIFT_KEY)
+      ))
       tooltip:AddLine(" ")
-      tooltip:AddDoubleLine(L.CTRL_ALT_RIGHT_CLICK, L.ADD_ALL_TO_LIST:format(Lists.Exclusions.name))
+      tooltip:AddDoubleLine(
+        Addon:Concat("+", L.CONTROL_KEY, L.ALT_KEY, L.RIGHT_CLICK),
+        L.ADD_ALL_TO_LIST:format(Lists.PerCharExclusions.name)
+      )
+      tooltip:AddDoubleLine(
+        Addon:Concat("+", L.CONTROL_KEY, L.ALT_KEY, L.SHIFT_KEY, L.RIGHT_CLICK),
+        L.ADD_ALL_TO_LIST:format(Lists.GlobalExclusions.name)
+      )
     end,
     itemButtonOnUpdateTooltip = function(self, tooltip)
       tooltip:SetBagItem(self.item.bag, self.item.slot)
       tooltip:AddLine(" ")
       tooltip:AddDoubleLine(L.LEFT_CLICK, L.SELL)
-      tooltip:AddDoubleLine(L.SHIFT_LEFT_CLICK, L.DESTROY)
-      tooltip:AddDoubleLine(L.RIGHT_CLICK, L.ADD_TO_LIST:format(Lists.Exclusions.name))
+      tooltip:AddDoubleLine(L.RIGHT_CLICK, L.ADD_TO_LIST:format(Lists.PerCharExclusions.name))
+      tooltip:AddDoubleLine(Addon:Concat("+", L.SHIFT_KEY, L.LEFT_CLICK), Colors.Red(L.DESTROY))
+      tooltip:AddDoubleLine(
+        Addon:Concat("+", L.SHIFT_KEY, L.RIGHT_CLICK),
+        L.ADD_TO_LIST:format(Lists.GlobalExclusions.name)
+      )
     end,
     itemButtonOnClick = function(self, button)
       if button == "LeftButton" then
-        if IsShiftKeyDown() then
-          Destroyer:HandleItem(self.item)
-        else
-          Seller:HandleItem(self.item)
-        end
+        local handler = IsShiftKeyDown() and Destroyer or Seller
+        handler:HandleItem(self.item)
       end
 
       if button == "RightButton" then
-        Lists.Exclusions:Add(self.item.id)
+        local list = IsShiftKeyDown() and Lists.GlobalExclusions or Lists.PerCharExclusions
+        list:Add(self.item.id)
       end
     end,
     getItems = function() return frame.items end,
-    addItem = function(itemId) Lists.Inclusions:Add(itemId) end,
+    addItem = function(itemId)
+      local list = IsShiftKeyDown() and Lists.GlobalInclusions or Lists.PerCharInclusions
+      list:Add(itemId)
+    end,
     removeAllItems = function()
-      for _, item in pairs(frame.items) do
-        Lists.Exclusions:Add(item.id)
-      end
+      local list = IsShiftKeyDown() and Lists.GlobalExclusions or Lists.PerCharExclusions
+      for _, item in pairs(frame.items) do list:Add(item.id) end
     end
   })
 

@@ -2,14 +2,11 @@
 EncounterDetailsDB = {
 	["emotes"] = {
 		{
-			["boss"] = "Cyanigosa",
+			["boss"] = "Anub'arak",
 		}, -- [1]
 		{
-			["boss"] = "Xevozz",
+			["boss"] = "Krik'thir the Gatewatcher",
 		}, -- [2]
-		{
-			["boss"] = "Erekem",
-		}, -- [3]
 	},
 	["encounter_spells"] = {
 		[55053] = {
@@ -7849,15 +7846,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Liixx",
 		},
-		[394449] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_HEAL"] = true,
-			},
-			["source"] = "Drakkari Guardian",
-		},
 		[59845] = {
 			["school"] = 8,
 			["type"] = "BUFF",
@@ -7877,6 +7865,15 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Twisted Visage",
+		},
+		[394449] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "Drakkari Guardian",
 		},
 		[24316] = {
 			["school"] = 1,
@@ -7908,6 +7905,7 @@ EncounterDetailsDB = {
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Anub'ar Necromancer",
 		},

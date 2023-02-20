@@ -9,12 +9,12 @@ addon.functions.__index = addon.functions
 local events = {}
 addon.stepUpdateList = {}
 addon.functions.events = events
-events.collect = {"BAG_UPDATE_DELAYED", "QUEST_LOG_UPDATE","MERCHANT_SHOW"}
+events.collect = {"BAG_UPDATE", "QUEST_LOG_UPDATE","MERCHANT_SHOW"}
 events.buy = events.collect
 events.accept = {"QUEST_ACCEPTED", "QUEST_TURNED_IN", "QUEST_REMOVED"}
 events.turnin = "QUEST_TURNED_IN"
 events.complete = "QUEST_LOG_UPDATE"
-events.fp = {"UI_INFO_MESSAGE", "TAXIMAP_OPENED"}
+events.fp = {"UI_INFO_MESSAGE", "TAXIMAP_OPENED", "GOSSIP_SHOW"}
 events.hs = {"UNIT_SPELLCAST_SUCCEEDED"}
 events.home = {"HEARTHSTONE_BOUND","CONFIRM_BINDER","GOSSIP_SHOW"}
 events.fly = {"PLAYER_CONTROL_LOST", "TAXIMAP_OPENED", "ZONE_CHANGED", "GOSSIP_SHOW"}
@@ -32,9 +32,10 @@ events.train = {
 events.istrained = events.train
 events.spellmissing = events.train
 events.zone = "ZONE_CHANGED_NEW_AREA"
-events.bankdeposit = {"BANKFRAME_OPENED", "BAG_UPDATE_DELAYED"}
+events.bankdeposit = {"BANKFRAME_OPENED", "BAG_UPDATE"}
 events.skipgossip = {"GOSSIP_SHOW", "GOSSIP_CLOSED", "GOSSIP_CONFIRM_CANCEL"}
 events.gossipoption = {"GOSSIP_SHOW"}
+events.skipgossipid = events.gossipoption
 events.vehicle = {"UNIT_ENTERING_VEHICLE", "VEHICLE_UPDATE", "UNIT_EXITING_VEHICLE"}
 events.skill = {"SKILL_LINES_CHANGED", "LEARNED_SPELL_IN_TAB"}
 events.emote = "PLAYER_TARGET_CHANGED"
@@ -77,7 +78,7 @@ addon.icons = {
     vendor = "|TInterface/GossipFrame/BankerGossipIcon:0|t",
     reputation = "|TInterface/GossipFrame/WorkOrderGossipIcon:0|t",
     fly = "|TInterface/GossipFrame/TaxiGossipIcon:0|t",
-    fp = "|TInterface/AddOns/" .. addonName .. "/Textures/fp:0|t",
+    fp = "|TInterface/AddOns/" .. addonName .. "/Textures/fp:0|t", --TODO themes, load issue
     gossip = "|TInterface/GossipFrame/GossipGossipIcon:0|t",
     hs = "|TInterface/MINIMAP/TRACKING/Innkeeper:0|t",
     trainer = "|TInterface/GossipFrame/TrainerGossipIcon:0|t",
@@ -357,7 +358,8 @@ function addon.GetQuestObjectives(id, step)
                         type = "event",
                         numRequired = 1,
                         numFulfilled = fulfilled,
-                        finished = isComplete
+                        finished = isComplete,
+                        generated = true,
                     }
                     questObjectivesCache[id] = questInfo
                     return questInfo
@@ -411,7 +413,8 @@ function addon.GetQuestObjectives(id, step)
                     type = "event",
                     numRequired = 1,
                     numFulfilled = 0,
-                    finished = false
+                    finished = false,
+                    generated = true,
                 }
             end
             return qInfo
@@ -449,7 +452,8 @@ function addon.GetQuestObjectives(id, step)
                         type = "event",
                         numRequired = 1,
                         numFulfilled = 0,
-                        finished = false
+                        finished = false,
+                        generated = true,
                     }
                 end
                 return questInfo
@@ -1437,6 +1441,11 @@ function addon.functions.line(self, text, zone, ...)
         local segments = {...}
         for i, v in ipairs(segments) do segments[i] = tonumber(v) end
         element.segments = segments
+        if zone and zone:sub(1,1) == "*" then
+            element.drawCenterPoint = true
+            zone = zone:sub(2,#zone)
+            element.thickness = 1
+        end
         if zone then
             lastZone = zone
         else
@@ -1466,6 +1475,12 @@ function addon.functions.loop(self, text, range, zone, ...)
         local segments = {...}
         for i, v in ipairs(segments) do segments[i] = tonumber(v) end
         element.segments = segments
+        if range and range:sub(1,1) == "*" then
+            element.drawCenterPoint = true
+            element.thickness = 1
+            range = range:sub(2,#zone)
+            --print('ok2')
+        end
         if zone then
             lastZone = zone
         else
@@ -1541,6 +1556,7 @@ function addon.SelectGossipType(gossipType)
             elseif not option.type and not IsModifierKeyDown() then
                 if gossipType == "binder" then
                     local text = strupper(option.name or "")
+                    --print(option.name,option.icon)
                     if option.icon == 132052 and text:find(homeText) then
                         GossipSelectOption(i)
                         return true
@@ -1552,8 +1568,8 @@ function addon.SelectGossipType(gossipType)
             end
         end
     else
-        for i,gossipType in ipairs({GossipGetOptions()}) do
-            if i % 2 == 0 and gossipType == gossipType then
+        for i,gossipText in ipairs({GossipGetOptions()}) do
+            if i % 2 == 0 and gossipType == gossipText then
                 GossipSelectOption(i/2)
                 return true
             end
@@ -1589,13 +1605,14 @@ function addon.functions.home(self, ...)
         element.confirm = false
     elseif event == "CONFIRM_BINDER" then
 
-        if ConfirmBinder then
-            ConfirmBinder()
-        elseif C_PlayerInteractionManager then
-            C_Timer.After(0.25, function()
+        if C_PlayerInteractionManager and C_PlayerInteractionManager.ConfirmationInteraction then
+            self:SetScript("OnUpdate", function()
                 C_PlayerInteractionManager.ConfirmationInteraction(Enum.PlayerInteractionType.Binder)
                 C_PlayerInteractionManager.ClearInteraction(Enum.PlayerInteractionType.Binder)
+                self:SetScript("OnUpdate",nil)
             end)
+        elseif ConfirmBinder then
+            ConfirmBinder()
         end
         element.confirm = true
         _G.StaticPopup1:Hide()
@@ -1633,12 +1650,15 @@ function addon.functions.fp(self, ...)
     local event, arg1, arg2 = ...
     local element = self.element
     if self.element.step.active then
+        --print(element.fpId,'-',RXPCData.flightPaths[element.fpId])
         local fpDiscovered = element.fpId and RXPCData.flightPaths[element.fpId]
         if element.textOnly and fpDiscovered then
             element.step.completed = true
             addon.updateSteps = true
         elseif fpDiscovered or (event == "UI_INFO_MESSAGE" and arg2 == _G.ERR_NEWTAXIPATH) then
             addon.SetElementComplete(self)
+        elseif not element.confirm and event == "GOSSIP_SHOW" and addon.SelectGossipType("taxi") then
+            element.confirm = true
         end
     end
 end
@@ -1822,7 +1842,7 @@ if objFlags is omitted or set to 0, element will complete if you have the quest 
             step.activeItems = step.activeItems or {}
             if not event then
                 step.activeItems[element.id] = true
-            elseif event ~= "BAG_UPDATE_DELAYED" and event ~= "WindowUpdate" and addon.activeItems then
+            elseif event ~= "BAG_UPDATE" and event ~= "WindowUpdate" and addon.activeItems then
                 local isItemActive = not IsOnQuest(questId)
                 step.activeItems[element.id] = isItemActive
                 addon.activeItems[element.id] = isItemActive
@@ -1914,8 +1934,8 @@ if objFlags is omitted or set to 0, element will complete if you have the quest 
             })
         end
         addon.SetElementComplete(self, true)
-    elseif numRequired == 0 and count == 0 then
-        addon.SetElementComplete(self)
+    elseif numRequired == count then
+        addon.SetElementComplete(self, true)
     elseif not element.textOnly then
         addon.SetElementIncomplete(self)
     end
@@ -2090,7 +2110,29 @@ function addon.functions.skill(self, text, skillName, str, skipstep, useMaxValue
     local reverseLogic = element.reverseLogic
     -- print(level,element.level,(level >= element.level) == not reverseLogic)
 
-    if (level >= element.level) == not reverseLogic then
+    local skillLevelCheck = level >= element.level
+    if element.skill == "riding" and addon.mountIDs and not element.mountTrained and skillLevelCheck and not (reverseLogic and element.skipstep) then
+        local skillLevel = element.level
+        local function MountCheck(range)
+            --print('g',range)
+            for _,id in pairs(addon.mountIDs[range]) do
+                if IsPlayerSpell(id) or IsSpellKnown(id, true) or IsSpellKnown(id) then
+                    element.mountTrained = true
+                    return true
+                end
+            end
+            return false
+        end
+
+        if (skillLevel >= 75 and skillLevel < 150 and level < 150 and not MountCheck(75)) or
+        (skillLevel >= 150 and skillLevel < 225 and level < 225 and not MountCheck(150)) or
+        (skillLevel >= 225 and skillLevel < 300 and level < 300 and not MountCheck(225)) or
+        (skillLevel >= 300 and not (MountCheck(300) or MountCheck(375))) then
+            skillLevelCheck = false
+        end
+    end
+
+    if skillLevelCheck == not reverseLogic then
         if element.skipstep then
             if step.active and not step.completed and not addon.isHidden then
                 addon.updateSteps = true
@@ -2896,6 +2938,17 @@ function addon.functions.target(self, text, ...)
     end
 end
 
+function addon.functions.mob(self, text, ...)
+    if type(self) == "string" then
+        local element = {}
+
+        if text and text ~= "" then element.text = text end
+        element.textOnly = true
+        element.mobs = {...}
+        return element
+    end
+end
+
 local BLquests = {
     [2583] = {
         0, -- gizzard
@@ -3288,7 +3341,7 @@ function addon.functions.buy(self, ...)
     local objIndex = element.objIndex
     local questId = element.questId
 
-    if event ~= "BAG_UPDATE_DELAYED" and event ~= "WindowUpdate" then
+    if event ~= "BAG_UPDATE" and event ~= "WindowUpdate" then
         if addon.IsQuestComplete(questId) or addon.IsQuestTurnedIn(questId) then
             element.isQuestComplete = true
         elseif objIndex and event then
@@ -3324,7 +3377,7 @@ function addon.functions.buy(self, ...)
                 end
             end
         end
-    elseif event == "BAG_UPDATE_DELAYED" and element.closeWindow then
+    elseif event == "BAG_UPDATE" and element.closeWindow then
         HideUIPanel(_G.MerchantFrame)
         element.closeWindow = false
     end
@@ -3391,8 +3444,51 @@ function addon.functions.skipgossip(self, text, ...)
 
 end
 
+function addon.functions.skipgossipid(self, text, ...)
+    if not (C_GossipInfo or C_GossipInfo.GetOptions) then
+        return
+    elseif type(self) == "string" then
+        local element = {textOnly = true, text = text}
+        local args =  {...}
+        if #args == 0 then
+            return addon.error(
+                L("Error parsing guide") .. " " .. addon.currentGuideName ..
+                   ': No gossip ID provided\n' .. self)
+        end
+        for i,v in pairs(args) do
+            args[i] = tonumber(v)
+        end
+        element.args = args
+        return element
+    end
+
+    local element = self.element
+    if not element or not element.step.active or not element.gossipId or
+        element.completed or addon.isHidden or
+        not addon.settings.db.profile.enableGossipAutomation or IsShiftKeyDown() then
+            return
+    end
+
+    local args = element.args or {}
+    local event = text
+    if event == "GOSSIP_SHOW" then
+        local gossipOptions = GossipGetOptions()
+        for _,gossipId in ipairs(args) do
+            for _, v in pairs(gossipOptions) do
+                if v.gossipOptionID == gossipId then
+                    C_GossipInfo.SelectOption(v.gossipOptionID)
+                    return
+                end
+            end
+        end
+    end
+
+end
+
 function addon.functions.gossipoption(self, ...)
-    if type(self) == "string" then
+    if not (C_GossipInfo or C_GossipInfo.GetOptions) then
+        return
+    elseif type(self) == "string" then
         local element = {icon = addon.icons.gossip}
         local text, gossipId = ...
         gossipId = tonumber(gossipId)
@@ -3414,22 +3510,27 @@ function addon.functions.gossipoption(self, ...)
 
         return element
     end
-
-    if not self.element.step.active then return end
-
-    if addon.isHidden or not addon.settings.db.profile.enableGossipAutomation or IsShiftKeyDown() then return end
-
     local element = self.element
 
-    if not element or not element.gossipId then return end
+    if not element or not element.step.active or not element.gossipId or
+        element.completed or addon.isHidden or
+        not addon.settings.db.profile.enableGossipAutomation or IsShiftKeyDown() then
+             return
+    end
 
-    for i, v in pairs(GossipGetOptions()) do
+    local matched = false
+    for _, v in pairs(GossipGetOptions()) do
         if v.gossipOptionID == element.gossipId then
             C_GossipInfo.SelectOption(v.gossipOptionID)
             --GossipSelectOption(i)
             addon.SetElementComplete(self)
+            matched = true
             break
         end
+    end
+
+    if matched and element.timer then
+        addon.StartTimer(element.timer, element.timerText)
     end
 end
 
@@ -4439,6 +4540,8 @@ function addon.functions.itemStat(self, ...)
             local stat
             if element.stat == "QUALITY" then
                 stat = GetInventoryItemQuality("player", element.slot)
+            elseif element.stat == "LEVEL" then
+                _, _, _, stat = GetItemInfo(GetInventoryItemID("player", element.slot))
             else
                 stat = stats[element.stat]
             end
@@ -4451,9 +4554,13 @@ function addon.functions.itemStat(self, ...)
                 --print('+',stat,element.total, element.operator)
                 if (element.operator == ">" and element.total < stat) or (element.operator == "<" and element.total > stat) then
                     completed = true
+                elseif element.operator == "" and element.total == stat then
+                    completed = true
                 end
+            else
+                completed = element.total == stat
             end
-            completed = completed or (element.total == stat)
+
             if not completed then
                 element.step.completed = true
                 addon.updateSteps = true

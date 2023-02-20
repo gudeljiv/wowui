@@ -29,8 +29,8 @@ RangeDisplayDB3 = {
 		["Tadibey - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Miqa - Golemagg"] = "Default",
-		["Battlearm - Gehennas"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Pitchwise - Ashbringer"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
@@ -39,7 +39,7 @@ RangeDisplayDB3 = {
 		["Poklopac - Mirage Raceway"] = "Default",
 		["Pitchwise - Dreadnaught"] = "Default",
 		["Vermin - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Default",
+		["Battlearm - Gehennas"] = "Default",
 		["Tudum - Jin'do"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
 	},
@@ -50,9 +50,8 @@ RangeDisplayDB3 = {
 			["units"] = {
 				["mouseover"] = {
 					["mouseAnchor"] = false,
-					["enabled"] = false,
-					["y"] = -36.5593032836914,
-					["x"] = -3.48463487625122,
+					["y"] = -32.11491775512695,
+					["x"] = 0.32496577501297,
 					["font"] = "Arial Narrow",
 				},
 				["arena2"] = {
@@ -61,9 +60,9 @@ RangeDisplayDB3 = {
 					["enabled"] = false,
 				},
 				["playertarget"] = {
-					["x"] = -3.44103670120239,
+					["x"] = -0.2665252685546875,
 					["checkVisible"] = false,
-					["y"] = 0.645166099071503,
+					["y"] = 0.01029586140066385,
 					["font"] = "Arial Narrow",
 				},
 				["pet"] = {

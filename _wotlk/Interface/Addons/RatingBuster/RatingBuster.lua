@@ -519,8 +519,23 @@ local function setProfileOptionAndClearCache(info, value)
 end
 
 local function getGem(info)
+	--print (profileDB[info.arg].gemLink)
 	return profileDB[info.arg].gemLink
 end
+local function getGemDesc(info)
+	if profileDB[info.arg].gemLink then
+	
+	
+	
+	return profileDB[info.arg].gemLink.."\n"..profileDB[info.arg].gemText
+	else 
+	return L["ItemID or Link of the gem you would like to auto fill"]
+
+	end
+	
+end
+
+
 
 local function setGem(info, value)
 	
@@ -1751,8 +1766,10 @@ local options = {
 							order = 1,
 							width = "double",
 							name = L["Red Socket"],
-							desc = L["ItemID or Link of the gem you would like to auto fill"],
+							--desc = L["ItemID or Link of the gem you would like to auto fill"],
+							desc = getGemDesc,
 							usage = L["<ItemID|Link>"],
+							icon = "Interface\\Icons\\INV_Drink_05",
 							arg = "sumGemRed",
 							get = getGem,
 							set = setGem,
@@ -1762,7 +1779,7 @@ local options = {
 							order = 2,
 							width = "double",
 							name = L["Yellow Socket"],
-							desc = L["ItemID or Link of the gem you would like to auto fill"],
+							desc = getGemDesc,
 							usage = L["<ItemID|Link>"],
 							arg = "sumGemYellow",
 							get = getGem,
@@ -1773,7 +1790,7 @@ local options = {
 							order = 3,
 							width = "double",
 							name = L["Blue Socket"],
-							desc = L["ItemID or Link of the gem you would like to auto fill"],
+							desc = getGemDesc,
 							usage = L["<ItemID|Link>"],
 							arg = "sumGemBlue",
 							get = getGem,
@@ -1784,7 +1801,7 @@ local options = {
 							order = 4,
 							width = "double",
 							name = L["Meta Socket"],
-							desc = L["ItemID or Link of the gem you would like to auto fill"],
+							desc = getGemDesc,
 							usage = L["<ItemID|Link>"],
 							arg = "sumGemMeta",
 							get = getGem,
@@ -1827,7 +1844,7 @@ local options = {
 							order = 1,
 							width = "double",
 							name = L["Red Socket"],
-							desc = L["ItemID or Link of the gem you would like to auto fill"],
+							desc = getGemDesc,
 							usage = L["<ItemID|Link>"],
 							arg = "sumGemRed2",
 							get = getGem,
@@ -1839,7 +1856,7 @@ local options = {
 							order = 2,
 							width = "double",
 							name = L["Yellow Socket"],
-							desc = L["ItemID or Link of the gem you would like to auto fill"],
+							desc = getGemDesc,
 							usage = L["<ItemID|Link>"],
 							arg = "sumGemYellow2",
 							get = getGem,
@@ -1851,7 +1868,7 @@ local options = {
 							order = 3,
 							width = "double",
 							name = L["Blue Socket"],
-							desc = L["ItemID or Link of the gem you would like to auto fill"],
+							desc = getGemDesc,
 							usage = L["<ItemID|Link>"],
 							arg = "sumGemBlue2",
 							get = getGem,
@@ -1863,7 +1880,7 @@ local options = {
 							order = 4,
 							width = "double",
 							name = L["Meta Socket"],
-							desc = L["ItemID or Link of the gem you would like to auto fill"],
+							desc = getGemDesc,
 							usage = L["<ItemID|Link>"],
 							arg = "sumGemMeta2",
 							get = getGem,
@@ -1907,7 +1924,7 @@ local options = {
 							order = 1,
 							width = "double",
 							name = L["Red Socket"],
-							desc = L["ItemID or Link of the gem you would like to auto fill"],
+							desc = getGemDesc,
 							usage = L["<ItemID|Link>"],
 							arg = "sumGemRed3",
 							get = getGem,
@@ -1919,7 +1936,7 @@ local options = {
 							order = 2,
 							width = "double",
 							name = L["Yellow Socket"],
-							desc = L["ItemID or Link of the gem you would like to auto fill"],
+							desc = getGemDesc,
 							usage = L["<ItemID|Link>"],
 							arg = "sumGemYellow3",
 							get = getGem,
@@ -1931,7 +1948,7 @@ local options = {
 							order = 3,
 							width = "double",
 							name = L["Blue Socket"],
-							desc = L["ItemID or Link of the gem you would like to auto fill"],
+							desc = getGemDesc,
 							usage = L["<ItemID|Link>"],
 							arg = "sumGemBlue3",
 							get = getGem,
@@ -1943,7 +1960,7 @@ local options = {
 							order = 4,
 							width = "double",
 							name = L["Meta Socket"],
-							desc = L["ItemID or Link of the gem you would like to auto fill"],
+							desc = getGemDesc,
 							usage = L["<ItemID|Link>"],
 							arg = "sumGemMeta3",
 							get = getGem,

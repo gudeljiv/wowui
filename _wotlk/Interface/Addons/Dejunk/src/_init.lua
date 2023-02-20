@@ -35,6 +35,28 @@ do -- Addon:GetLibrary()
   end
 end
 
+function Addon:GetAsset(fileName)
+  return ("Interface\\AddOns\\%s\\assets\\%s"):format(ADDON_NAME, fileName)
+end
+
+-- Returns latency in seconds.
+function Addon:GetLatency(minLatency)
+  local _, _, home, world = GetNetStats()
+  local latency = max(home, world) * 0.001
+  return max(latency, minLatency or 0.2)
+end
+
+do -- Addon:Concat()
+  local Colors = Addon:GetModule("Colors")
+  local cache = {}
+
+  function Addon:Concat(sep, ...)
+    for k in pairs(cache) do cache[k] = nil end
+    for i = 1, select("#", ...) do cache[#cache + 1] = select(i, ...) end
+    return table.concat(cache, Colors.Grey(sep))
+  end
+end
+
 function Addon:IfNil(value, default)
   if value == nil then return default end
   return value

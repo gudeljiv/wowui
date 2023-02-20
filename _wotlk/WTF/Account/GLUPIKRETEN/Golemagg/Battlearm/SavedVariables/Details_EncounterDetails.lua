@@ -7833,16 +7833,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Liixx",
 		},
-		[59845] = {
-			["school"] = 8,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Sjonnir The Ironshaper",
-		},
 		[57798] = {
 			["school"] = 2,
 			["type"] = "DEBUFF",
@@ -7861,6 +7851,16 @@ EncounterDetailsDB = {
 				["SPELL_HEAL"] = true,
 			},
 			["source"] = "Drakkari Guardian",
+		},
+		[59845] = {
+			["school"] = 8,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Sjonnir The Ironshaper",
 		},
 		[48278] = {
 			["school"] = 32,
@@ -7894,6 +7894,7 @@ EncounterDetailsDB = {
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Anub'ar Necromancer",
 		},
@@ -9436,13 +9437,10 @@ EncounterDetailsDB = {
 	},
 	["emotes"] = {
 		{
-			["boss"] = "Cyanigosa",
+			["boss"] = "Anub'arak",
 		}, -- [1]
 		{
-			["boss"] = "Xevozz",
+			["boss"] = "Krik'thir the Gatewatcher",
 		}, -- [2]
-		{
-			["boss"] = "Erekem",
-		}, -- [3]
 	},
 }

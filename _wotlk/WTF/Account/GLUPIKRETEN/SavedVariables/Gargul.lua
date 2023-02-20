@@ -3,8 +3,8 @@ GargulDB = {
 	["BoostedRolls"] = {
 	},
 	["LoadDetails"] = {
-		["lastLoadedOn"] = 1676837989,
-		["5.3.2"] = 1676837989,
+		["lastLoadedOn"] = 1676904670,
+		["5.3.2"] = 1676904670,
 		["5.2.1"] = 1675921266,
 		["4.12.0"] = 1675856197,
 		["5.0.11"] = 1673028609,
@@ -141,13 +141,13 @@ GargulDB = {
 			["enableBidderQueue"] = true,
 			["enableGDKPBidderQueue"] = true,
 			["minimizeBidderQueue"] = false,
-			["closeAuctioneerOnStart"] = false,
+			["enableGDKPQueuesByDefault"] = false,
 			["announceNewBidInRW"] = true,
 			["minimumBid"] = 100,
 			["showHistoryOnTooltip"] = true,
+			["closeAuctioneerOnStart"] = false,
 			["Mutators"] = {
 			},
-			["enableGDKPQueuesByDefault"] = false,
 			["customPotExportHeader"] = "Player,Cut",
 			["queueIsHalted"] = false,
 			["time"] = 30,
@@ -383,113 +383,6 @@ GargulDB = {
 		},
 	},
 	["SoftRes"] = {
-		["SoftReserves"] = {
-			{
-				["Items"] = {
-					40403, -- [1]
-				},
-				["note"] = "",
-				["name"] = "Thornaxe",
-				["class"] = "hunter",
-				["plusOnes"] = 0,
-			}, -- [1]
-			{
-				["Items"] = {
-					40399, -- [1]
-				},
-				["note"] = "",
-				["name"] = "Hypocrites",
-				["class"] = "mage",
-				["plusOnes"] = 0,
-			}, -- [2]
-			{
-				["Items"] = {
-					40399, -- [1]
-				},
-				["note"] = "",
-				["name"] = "Damjonboi",
-				["class"] = "shaman",
-				["plusOnes"] = 0,
-			}, -- [3]
-			{
-				["Items"] = {
-					40399, -- [1]
-				},
-				["note"] = "",
-				["name"] = "Satchur",
-				["class"] = "priest",
-				["plusOnes"] = 0,
-			}, -- [4]
-			{
-				["Items"] = {
-					40362, -- [1]
-				},
-				["note"] = "",
-				["name"] = "Siepie",
-				["class"] = "paladin",
-				["plusOnes"] = 0,
-			}, -- [5]
-			{
-				["Items"] = {
-					40395, -- [1]
-				},
-				["note"] = "",
-				["name"] = "Papousek",
-				["class"] = "priest",
-				["plusOnes"] = 0,
-			}, -- [6]
-			{
-				["Items"] = {
-					40386, -- [1]
-				},
-				["note"] = "",
-				["name"] = "Khantuan",
-				["class"] = "rogue",
-				["plusOnes"] = 0,
-			}, -- [7]
-			{
-				["Items"] = {
-					40384, -- [1]
-				},
-				["note"] = "",
-				["name"] = "Izulie",
-				["class"] = "paladin",
-				["plusOnes"] = 0,
-			}, -- [8]
-			{
-				["Items"] = {
-					40633, -- [1]
-				},
-				["note"] = "",
-				["name"] = "Vanesska",
-				["class"] = "death knight",
-				["plusOnes"] = 0,
-			}, -- [9]
-			{
-				["Items"] = {
-					40396, -- [1]
-				},
-				["note"] = "",
-				["name"] = "Tüütu",
-				["class"] = "warlock",
-				["plusOnes"] = 0,
-			}, -- [10]
-		},
-		["HardReserves"] = {
-		},
-		["MetaData"] = {
-			["note"] = "",
-			["id"] = "9pxtvt",
-			["hidden"] = false,
-			["createdAt"] = 1676804936,
-			["discordUrl"] = "",
-			["raidStartsAt"] = 0,
-			["importString"] = "eNq1lM1OwzAMx9/F5x4K3crWG4gDiANIfFzQDqbx1tA0iRKHDaa9GTdejBSEFA4wRrWjbdm//O3Ya+iIUSAjVGuQAiqY2hU/MWQgtWfUNUXf0rBqNa5WB7k9jKFGCkEaqjkqTxnUjpBJHDNUB+VROclH06LMIFjx3T0uJtHtUIprRse+j+igVAZC+to4cetUpEWANtxzYZOBN3N25Mk9kYfqfg3OKHVidIhWnoFVwV9q+jQ0dn3aTWNcfC3FQrVCH2PQBM3kkspRH1P3WbHXPcpHeZGG43NiQpVvZpvsL9CzZ2tqF4v6BNvhgn6FFtPpEOgpdo9GPxiZMH2DHep9Uq+R6ya4hGmdJM97ZUqyMp2oRYVCbtFZHg5hXqE1wVO7q9DxEOhFg5rDxwC/oM4swpZv1C/W/5nnL0Ht3tzJaAjzDqPDt5hQRTwjTavlovm9w2UxaFNv3l7fXjkk4CU6Zep2y1h/avEsHkR0IjlSs807HwusGg==",
-			["updatedAt"] = 1676805386,
-			["url"] = "https://softres.it/raid/9pxtvt",
-			["instance"] = "wotlknaxx10p2",
-			["importedAt"] = 1676806463,
-		},
 	},
 	["PlusOnes"] = {
 		["Totals"] = {
@@ -2479,21 +2372,21 @@ GargulDB = {
 			["itemLink"] = "|cffa335ee|Hitem:40396::::::::80:::::::::|h[The Turning Tide]|h|r",
 			["awardedBy"] = "Gemoo",
 		},
-		["22997725110902197830"] = {
-			["checksum"] = "22997725110902197830",
+		["14414419808445880070"] = {
+			["checksum"] = "14414419808445880070",
 			["Rolls"] = {
 			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
 			["SR"] = false,
-			["awardedTo"] = "Mxzq",
-			["awardedBy"] = "Recobe",
-			["itemID"] = 39717,
-			["itemLink"] = "|cffa335ee|Hitem:39717::::::::80:::::::::|h[Inexorable Sabatons]|h|r",
-			["timestamp"] = 1675860940,
+			["awardedTo"] = "Berzerke",
+			["awardedBy"] = "Happens",
+			["itemID"] = 40069,
+			["itemLink"] = "|cffa335ee|Hitem:40069::::::::80:::::::::|h[Heritage]|h|r",
+			["timestamp"] = 1676632504,
 			["PL"] = false,
-			["GDKPCost"] = 500,
+			["GDKPCost"] = 1100,
 			["received"] = true,
 		},
 		["28000548022884811236"] = {
@@ -2513,22 +2406,22 @@ GargulDB = {
 			["itemLink"] = "|cffa335ee|Hitem:40539::::::::80:::::::::|h[Chestguard of the Recluse]|h|r",
 			["awardedBy"] = "Gemoo",
 		},
-		["14414419808445880070"] = {
-			["checksum"] = "14414419808445880070",
+		["12641838253093262601"] = {
+			["checksum"] = "12641838253093262601",
 			["Rolls"] = {
 			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
 			["SR"] = false,
-			["awardedTo"] = "Berzerke",
-			["awardedBy"] = "Happens",
-			["itemID"] = 40069,
-			["itemLink"] = "|cffa335ee|Hitem:40069::::::::80:::::::::|h[Heritage]|h|r",
-			["timestamp"] = 1676632504,
-			["PL"] = false,
-			["GDKPCost"] = 1100,
+			["awardedTo"] = "Hugerocket",
 			["received"] = true,
+			["itemID"] = 40625,
+			["GDKPCost"] = 800,
+			["PL"] = false,
+			["timestamp"] = 1675955757,
+			["itemLink"] = "|cffa335ee|Hitem:40625::::::::80:::::::::|h[Breastplate of the Lost Conqueror]|h|r",
+			["awardedBy"] = "Gemoo",
 		},
 		["10952584222965285880"] = {
 			["checksum"] = "10952584222965285880",
@@ -2683,22 +2576,22 @@ GargulDB = {
 			["itemLink"] = "|cffa335ee|Hitem:40255::::::::80:::::::::|h[Dying Curse]|h|r",
 			["awardedBy"] = "Gemoo",
 		},
-		["12641838253093262601"] = {
-			["checksum"] = "12641838253093262601",
+		["22997725110902197830"] = {
+			["checksum"] = "22997725110902197830",
 			["Rolls"] = {
 			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
 			["SR"] = false,
-			["awardedTo"] = "Hugerocket",
-			["received"] = true,
-			["itemID"] = 40625,
-			["GDKPCost"] = 800,
+			["awardedTo"] = "Mxzq",
+			["awardedBy"] = "Recobe",
+			["itemID"] = 39717,
+			["itemLink"] = "|cffa335ee|Hitem:39717::::::::80:::::::::|h[Inexorable Sabatons]|h|r",
+			["timestamp"] = 1675860940,
 			["PL"] = false,
-			["timestamp"] = 1675955757,
-			["itemLink"] = "|cffa335ee|Hitem:40625::::::::80:::::::::|h[Breastplate of the Lost Conqueror]|h|r",
-			["awardedBy"] = "Gemoo",
+			["GDKPCost"] = 500,
+			["received"] = true,
 		},
 		["26101700572266499082"] = {
 			["checksum"] = "26101700572266499082",

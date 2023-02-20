@@ -1,5 +1,5 @@
 RXPGuides.RegisterGuide([[
-#version 16
+#version 18
 #wotlk
 #group RestedXP Mage AoE 68-80
 << Mage
@@ -432,7 +432,2482 @@ step
 .xp 80 >> AoE the Undead to 80
 ]])
 RXPGuides.RegisterGuide([[
-#version 16
+#tbc
+#wotlk
+<< Horde
+#name 30-32 Hillsbrad/Arathi JJ
+#version 18
+#group RestedXP Horde 1-30
+#next 32-32 Thousand Needles II JJ
+#xprate 1.48-1.68
+step
+#completewith next
+.goto Orgrimmar,52.26,88.65,30,0
+.goto Orgrimmar,49.42,90.90,30,0
+.goto Orgrimmar,49.74,94.78,30,0
+.goto Durotar,50.59,13.28
+.zone Durotar >> Exit Orgrimmar
+.zoneskip Undercity
+.zoneskip Tirisfal Glades
+step
+#completewith Gromgol
+.goto Durotar,50.59,13.28,12,0
+.goto Durotar,50.80,13.10,6,0
+.goto Durotar,50.84,13.26,6,0
+.goto Durotar,50.80,13.10,6,0
+.goto Durotar,50.84,13.26,6,0
+.goto Durotar,50.80,13.10,6,0
+.goto Durotar,50.84,13.26,6,0
+.goto Durotar,50.47,12.40,-1
+.goto Durotar,58.16,8.52,-1
+>>Go up the Zeppelin Tower
+.zone Stranglethorn Vale >>Take the Zeppelin to Grom'gol
+.zoneskip Undercity
+.zoneskip Tirisfal Glades
+step
+#completewith next
+.goto Tirisfal Glades,61.06,58.86,12,0
+.goto Tirisfal Glades,61.51,59.01,10,0
+.goto Tirisfal Glades,61.27,59.22,8,0
+.goto Tirisfal Glades,61.13,58.84,8,0
+.goto Tirisfal Glades,61.38,58.71,8,0
+.goto Tirisfal Glades,61.34,59.17,8,0
+.goto Tirisfal Glades,61.17,58.90,8,0
+.goto Tirisfal Glades,62.07,59.14,-1
+.goto Tirisfal Glades,77.82,66.72,-1
+>>Go up the Zeppelin Tower
+.zone Stranglethorn Vale >>Take the Zeppelin to Grom'gol
+.zoneskip Tirisfal Glades,1
+step
+#label Gromgol
+.goto Stranglethorn Vale,32.54,29.35
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Thysta|r
+.fp Grom'gol >> Get the Grom'gol Base Camp flight path
+.target Thysta
+step << Mage
+.cast 3563 >> Cast |T135766:0|t[Teleport: Undercity]
+.itemcount 17031,1
+.zoneskip Undercity
+.zoneskip Tirisfal Glades
+step
+.goto Stranglethorn Vale,31.34,29.57,10,0
+.goto Stranglethorn Vale,31.56,29.59,6,0
+.goto Stranglethorn Vale,31.52,29.71,6,0
+.goto Stranglethorn Vale,31.56,29.59,6,0
+.goto Stranglethorn Vale,31.52,29.71,6,0
+.goto Stranglethorn Vale,31.56,29.59,6,0
+.goto Stranglethorn Vale,31.52,29.71,6,0
+.goto Stranglethorn Vale,40.98,4.73,-1
+>>Go up the Zeppelin Tower
+.zone Tirisfal Glades >>Take the Zeppelin to Undercity
+.zoneskip Undercity
+step
+.goto Undercity,63.85,49.44
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Genavie|r
+.accept 1164 >> Accept To Steal From Thieves
+.target Genavie Callow
+step
+.goto Undercity,62.15,44.87
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Eunice|r. This opens up a quest later
+.train 2550 >> Train |T133971:0|t[Cooking]
+.target Eunice Burch
+step << Warlock
+.goto Undercity,75.90,37.91
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Jorah|r
+.turnin 1801 >> Turn in Tome of the Cabal
+.accept 1803 >> Accept Tome of the Cabal
+.target Jorah Annison
+step << Hunter tbc
+#completewith next
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Geoffrey|r and |cFF00FF25Benijah|r
+>>|cFF0E8312Buy a|r |T135576:0|t[Bullova] |cFF0E8312from |cFF00FF25Geoffrey|r|r
+>>|cFF0E8312Buy a|r |T134402:0|t[Heavy Quiver] |cFF0E8312from |cFF00FF25Benijah|r|r
+.collect 2523,1,1164,1 
+.goto Undercity,58.68,33.08,-1
+.collect 7371,1,1164,1 
+.goto Undercity,58.82,32.81,-1
+.target Geoffrey Hartwell
+.target Benijah Fenner
+.isOnQuest 1164
+step << Hunter wotlk
+.goto Undercity,58.82,32.81,-1
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Benijah|r
+>>|cFF0E8312Buy a|r |T134402:0|t[Heavy Quiver] |cFF0E8312from him|r
+.collect 7371,1,1164,1 
+step << Rogue
+.goto Undercity,58.68,33.08
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Geoffrey|r
+>>|cFF0E8312Buy a|r |T135275:0|t[Broadsword] |cFF0E8312from him|r
+.collect 2520,1,1164,1 
+.itemStat 16,QUALITY,<7
+.itemStat 16,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<17.6
+step
+#completewith next
+.goto Undercity,63.25,48.56
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Michael|r
+.fly Tarren Mill >> Fly to Tarren Mill << !Shaman
+.fly The Sepulcher >> Fly to the Sepulcher << Shaman
+.target Michael Garrett
+step << Shaman
+#completewith next
+.goto Silverpine Forest,42.1,40.5,10 >> Jump up the side of the tree here
+
+step << Shaman
+.goto Silverpine Forest,41.6,41.8,15,0
+.goto Silverpine Forest,40.3,42.1,15,0
+.goto Silverpine Forest,38.9,43.3,20 >>Run down the mountain
+.isOnQuest 63
+step << Shaman
+.use 972 >>Drink the water sapta then kill the Water Elemental. Loot it for its Bracers
+.goto Silverpine Forest,38.8,44.3
+.complete 63,1 
+.use 6637
+step << Shaman
+.goto Silverpine Forest,38.3,44.6
+.turnin 63 >>Turn in Call of Water
+.accept 100 >>Accept Call of Water
+step << Shaman
+.goto Silverpine Forest,38.8,44.6
+.turnin 100 >>Turn in Call of Water
+.accept 96 >>Accept Call of Water
+step << Shaman
+#completewith next
+.goto Silverpine Forest,45.62,42.60
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Karos|r
+.fly Tarren Mill >> Fly to Tarren Mill
+.target Karos Razok
+step
+.goto Hillsbrad Foothills,61.55,20.63,8,0
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Bel'varil|r, |cFF00FF25Wordeen|r, |cFF00FF25Krusk|r, |cFF00FF25Humbert|r, and |cFF00FF25Thaivand|r
+.accept 556 >> Accept Stone Tokens
+.goto Hillsbrad Foothills,61.50,20.93
+.accept 544 >> Accept Prison Break In
+.goto Hillsbrad Foothills,61.60,20.85
+.accept 533 >> Accept Infiltration
+.goto Hillsbrad Foothills,62.95,20.59,8,0
+.goto Hillsbrad Foothills,63.24,20.66
+.accept 547 >> Accept Humbert's Sword
+.goto Hillsbrad Foothills,62.76,20.21
+.accept 552 >> Accept Helcular's Revenge
+.goto Hillsbrad Foothills,63.88,19.66
+.target Keeper Bel'varil
+.target Magus Wordeen Voidglare
+.target Krusk
+.target Deathguard Humbert
+.target Novice Thaivand
+step
+.goto Hillsbrad Foothills,47.28,31.12,40,0
+.goto Hillsbrad Foothills,46.16,33.32,40,0
+.goto Hillsbrad Foothills,45.93,31.64,20,0
+.goto Hillsbrad Foothills,45.31,29.18,20,0
+.goto Hillsbrad Foothills,44.52,27.87,20,0
+.goto Hillsbrad Foothills,43.96,27.59,30,0
+.goto Hillsbrad Foothills,43.59,29.76,25,0
+.goto Hillsbrad Foothills,45.00,27.80,20,0
+.goto Hillsbrad Foothills,43.74,27.10,40,0
+.goto Hillsbrad Foothills,43.62,25.60,40,0
+.goto Hillsbrad Foothills,44.76,25.09,40,0
+.goto Hillsbrad Foothills,45.00,27.80,20,0
+.goto Hillsbrad Foothills,43.22,30.86,30,0
+.goto Hillsbrad Foothills,42.79,33.51,30,0
+.goto Hillsbrad Foothills,41.80,32.71,30,0
+.goto Hillsbrad Foothills,42.47,30.27,30,0
+.goto Hillsbrad Foothills,47.28,31.12,40,0
+.goto Hillsbrad Foothills,46.16,33.32,40,0
+.goto Hillsbrad Foothills,45.93,31.64,20,0
+.goto Hillsbrad Foothills,45.31,29.18,20,0
+.goto Hillsbrad Foothills,44.52,27.87,20,0
+.goto Hillsbrad Foothills,43.96,27.59,30,0
+.goto Hillsbrad Foothills,43.59,29.76,25,0
+.goto Hillsbrad Foothills,45.00,27.80,20,0
+.goto Hillsbrad Foothills,43.74,27.10,40,0
+.goto Hillsbrad Foothills,43.62,25.60,40,0
+.goto Hillsbrad Foothills,44.76,25.09
+>>Kill |cFFFF5722Cave Yetis|r and |cFFFF5722Ferocious Yetis|r in and around the cave. Loot them for |cFF00BCD4Helcular's Rod|r
+.complete 552,1 
+.mob Cave Yeti
+.mob Ferocious Yeti
+step
+.line Hillsbrad Foothills,36.54,39.44,35.36,38.73,33.98,38.78,32.56,40.03,32.58,38.17,32.66,36.08,32.92,35.25,32.66,36.08,32.58,38.17,32.56,40.03,32.65,41.12,32.45,42.58,31.27,42.06,30.53,40.56,31.27,42.06,32.45,42.58,32.41,43.85,32.46,44.59,32.29,45.13
+.goto Hillsbrad Foothills,36.54,39.44,40,0
+.goto Hillsbrad Foothills,35.36,38.73,40,0
+.goto Hillsbrad Foothills,33.98,38.78,40,0
+.goto Hillsbrad Foothills,32.56,40.03,40,0
+.goto Hillsbrad Foothills,32.58,38.17,40,0
+.goto Hillsbrad Foothills,32.66,36.08,40,0
+.goto Hillsbrad Foothills,32.92,35.25,40,0
+.goto Hillsbrad Foothills,32.56,40.03,40,0
+.goto Hillsbrad Foothills,32.65,41.12,40,0
+.goto Hillsbrad Foothills,32.45,42.58,40,0
+.goto Hillsbrad Foothills,31.27,42.06,40,0
+.goto Hillsbrad Foothills,30.53,40.56,40,0
+.goto Hillsbrad Foothills,31.27,42.06,40,0
+.goto Hillsbrad Foothills,32.45,42.58,40,0
+.goto Hillsbrad Foothills,32.41,43.85,40,0
+.goto Hillsbrad Foothills,32.46,44.59,40,0
+.goto Hillsbrad Foothills,32.29,45.13,40,0
+.goto Hillsbrad Foothills,32.45,42.58,40,0
+.goto Hillsbrad Foothills,32.56,40.03,40,0
+.goto Hillsbrad Foothills,36.54,39.44
+>>Kill |cFFFF5722Wilkes|r
+>>|cFFFCDC00He patrols around the roads of the town|r
+.complete 567,2 
+.unitscan Citizen Wilkes
+step
+#completewith Burnside
+>>Kill |cFFFF5722Hillsbrad Councilmen|r
+.complete 532,2 
+.mob Hillsbrad Councilman
+step
+#completewith next
+.goto Hillsbrad Foothills,31.48,41.89,30,0
+.goto Hillsbrad Foothills,30.41,42.21,10 >>Enter the Town Hall
+step
+#label Burnside
+.goto Hillsbrad Foothills,30.09,42.42,8,0
+.goto Hillsbrad Foothills,29.92,42.83,8,0
+>>Kill |cFFFF5722Horrace|r and |cFFFF5722Burnside|r
+>>Loot the |cFF00BCD4Registry|r on the ground
+>>Click the |cFFDB2EEFProclamation|r on the railing
+.complete 567,1 
+.goto Hillsbrad Foothills,29.51,42.41
+.complete 532,1 
+.goto Hillsbrad Foothills,31.48,41.89
+.complete 532,4 
+.goto Hillsbrad Foothills,29.51,41.53
+.complete 532,3 
+.goto Hillsbrad Foothills,29.73,41.76
+.mob Clerk Horrace Whitesteed
+.mob Magistrate Burnside
+step
+.loop 40,Hillsbrad Foothills,30.14,42.90,30.18,42.23,30.32,41.42,29.30,40.78,29.70,39.73,31.91,42.34,32.62,46.50,31.91,42.34,30.21,43.55,30.32,41.42
+>>Kill |cFFFF5722Hillsbrad Councilmen|r
+.complete 532,2 
+.mob Hillsbrad Councilman
+step
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Darthalia|r and |cFF00FF25Thaivand|r
+.turnin 532 >> Turn in Battle of Hillsbrad
+.accept 539 >> Accept Battle of Hillsbrad
+.goto Hillsbrad Foothills,62.39,20.28
+.turnin 552 >> Turn in Helcular's Revenge
+.accept 553 >> Accept Helcular's Revenge
+.goto Hillsbrad Foothills,63.88,19.66
+.target High Executor Darthalia
+.target Novice Thaivand
+step
+.goto Hillsbrad Foothills,62.53,19.58,8,0
+.goto Hillsbrad Foothills,62.78,19.05
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Shay|r
+>>|cFF0E8312Buy|r |T132799:0|t[Sweet Nectar] |cFF0E8312from him|r << Priest/Mage/Warlock/Druid
+>>|cFF0E8312Buy|r |T133969:0|t[Wild Hog Shanks] |cFF0E8312from him|r << !Priest !Mage !Warlock !Druid !Paladin
+>>|cFF0E8312Buy|r |T132799:0|t[Sweet Nectar] |cFF0E8312and|r |T133969:0|t[Wild Hog Shanks] |cFF0E8312from him|r << Paladin
+.collect 1708,20,553,1 << Priest/Mage/Warlock/Druid/Paladin 
+.collect 3771,20,553,1 << !Priest !Mage !Warlock !Druid !Paladin 
+.collect 3771,10,553,1 << Paladin 
+.target Innkeeper Shay
+.money <0.4000 << !Paladin
+.money <0.6000 << Paladin/Shaman
+.xp <24,1
+.xp >35,1
+step << Hunter
+.goto Hillsbrad Foothills,62.56,19.91
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Kayren|r
+>>|cFF0E8312Buy|r |T132382:0|t[Razor Arrows] |cFF0E8312from her|r
+.collect 3030,2000,553,1 
+.target Kayren Soothallow
+.money <0.2850 << BloodElf
+.money <0.3000 << Troll/Orc
+.xp <25,1
+step << Hunter
+.goto Hillsbrad Foothills,62.56,19.91
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Kayren|r
+>>|cFF0E8312Buy|r |T132382:0|t[Razor Arrows] |cFF0E8312from her|r
+.collect 3030,1000,553,1 
+.target Kayren Soothallow
+.money <0.1425 << BloodElf
+.money <0.1500 << Troll/Orc
+.xp <25,1
+step << Warlock
+.goto Hillsbrad Foothills,27.78,72.80
+>>Loot the |cFF00BCD4Moldy Tome|r on the ground
+.complete 1803,1 
+step
+#completewith next
+.goto Hillsbrad Foothills,27.42,59.17,30 >> Go inside the mine
+step
+#completewith Bonds
+.goto Hillsbrad Foothills,27.43,58.28,20,0
+.goto Hillsbrad Foothills,28.14,55.20,20,0
+.goto Hillsbrad Foothills,28.37,52.97,20,0
+.goto Hillsbrad Foothills,29.70,54.25,20,0
+>>Kill |cFFFF5722Hillsbrad Miners|r
+.complete 539,2 
+.mob Hillsbrad Miner
+step
+#completewith next
+>>Kill |cFFFF5722Hackett|r
+>>|cFFFCDC00He has multiple spawnpoints inside the mine|r
+.goto Hillsbrad Foothills,29.71,56.07,20,0
+.goto Hillsbrad Foothills,31.08,56.64,20,0
+.complete 567,3 
+.unitscan Miner Hackett
+step
+#label Bonds
+.goto Hillsbrad Foothills,31.21,56.02
+>>Kill |cFFFF5722Bonds|r in the central room of the mine
+>>|cFFFCDC00Be careful as |cFFFF5722Bonds|r casts |r |T135963:0|t[Hammer of Justice]|cFFFCDC00, Stunning you for 4 seconds|r
+>>|cFFFCDC00At 30% or less health, |cFFFF5722Bonds|r instantly summons two |cFFFF5722Dun Garok Soldiers|r (level 30) to defend him|r
+.complete 539,1 
+.mob Foreman Bonds
+step
+>>Kill |cFFFF5722Hackett|r
+>>|cFFFCDC00He has multiple spawnpoints inside the mine|r
+.loop 30,Hillsbrad Foothills,31.14,58.62,31.90,52.66,29.71,56.07,31.08,56.64
+.complete 567,3 
+.unitscan Miner Hackett
+step
+.loop 30,Hillsbrad Foothills,31.14,58.62,31.90,52.66,29.71,56.07,31.08,56.64
+>>Kill |cFFFF5722Hillsbrad Miners|r
+.complete 539,2 
+.mob Hillsbrad Miner
+step << wotlk
+#completewith next
+.goto Hillsbrad Foothills,29.89,52.37,-1
+.goto Hillsbrad Foothills,29.44,56.22,-1
+.goto Hillsbrad Foothills,32.40,55.38,-1
+.goto Hillsbrad Foothills,31.16,56.88,-1
+.goto Hillsbrad Foothills,29.62,45.82,30 >>|cFFFCDC00Run on top of any of the Sawblades in the mine. Perform a Logout Skip by logging out and back in|r
+.link https://www.youtube.com/watch?v=sT-LB2dKezY >> |cFFFCDC00CLICK HERE|r
+step
+#completewith StoneTokens
+>>Kill |cFFFF5722Dalaran Shield Guards|r and |cFFFF5722Dalaran Theurgists|r. Loot them for their |cFF00BCD4Worn Stone Tokens|r
+>>|cFFFCDC00Be VERY careful of the |cFFFF5722Dalaran Shield Guards|r, as they have a 10% chance when they take damage to proc|r |T136173:0|t[Violent Shield Effect]|cFFFCDC00, (deals 85 damage per melee attack, and roots them in place)|r << Warrior/Rogue/Paladin
+>>Don't worry too much about the |cFFFF5722Dalaran Theurgists|r's |T136075:0|t[Summon Spirit of Old] as they die in 1 hit
+.complete 556,1 
+.mob Dalaran Shield Guard
+.mob Dalaran Theurgist
+step
+#sticky
+#label Dermot
+.goto Alterac Mountains,19.91,85.91,-1
+>>Kill |cFFFF5722Dermot|r inside. Loot him for the |cFF00BCD4Bloodstone Wedge|r
+.complete 544,1 
+.mob Dermot
+step
+.goto Alterac Mountains,20.40,86.33,-1
+>>Kill |cFFFF5722Alina|r inside. Loot her for the |cFF00BCD4Bloodstone Shard|r
+.complete 544,3 
+.mob Alina
+step
+#requires Dermot
+>>Kill |cFFFF5722Ricter|r. Loot him for the |cFF00BCD4Bloodstone Marble|r
+.goto Alterac Mountains,20.15,84.31
+.complete 544,2 
+.mob Ricter
+step
+#completewith next
+.goto Alterac Mountains,18.69,84.43,10,0
+.goto Alterac Mountains,18.20,82.90,10,0
+.goto Alterac Mountains,17.89,83.86,10,0
+.goto Alterac Mountains,17.83,84.11,6 >>Go into the building, then up to the second floor
+step
+#label StoneTokens
+.goto Alterac Mountains,17.79,83.14
+>>Kill |cFFFF5722Kegan|r on the second floor. Loot him for the |cFF00BCD4Bloodstone Oval|r. Run away after looting it
+>>|cFFFCDC00You do not need to kill |cFFFF5722Belamoore|r|r
+>>|cFFFCDC00Avoid |cFFFF5722Belamoore|r's Fireballs as you're fighting |cFFFF5722Kegan|r by LoSing her Fireballs around the building|r
+.complete 544,4 
+.mob Kegan Darkmar
+.mob Warden Belamoore
+step
+.loop 30,Alterac Mountains,17.24,84.38,18.69,85.17,19.47,82.92,21.14,84.06,20.69,86.48,20.85,87.76,17.24,84.38
+>>Kill |cFFFF5722Dalaran Shield Guards|r and |cFFFF5722Dalaran Theurgists|r. Loot them for their |cFF00BCD4Worn Stone Tokens|r
+>>|cFFFCDC00Be VERY careful of the |cFFFF5722Dalaran Shield Guards|r, as they have a 10% chance when they take damage to proc|r |T136173:0|t[Violent Shield Effect]|cFFFCDC00, (deals 85 damage per melee attack, and roots them in place)|r << Warrior/Rogue/Paladin
+>>Don't worry too much about the |cFFFF5722Dalaran Theurgists|r's |T136075:0|t[Summon Spirit of Old] as they die in 1 hit
+.complete 556,1 
+.mob Dalaran Shield Guard
+.mob Dalaran Theurgist
+step
+.goto Alterac Mountains,37.44,68.08,30,0
+.goto Alterac Mountains,37.54,66.22
+>>Click the |cFFDB2EEFFlame of Uzel|r inside the cave
+>>|cFFFCDC00It has a 20 yard range|r
+.complete 553,3 
+step
+.loop 40,Hillsbrad Foothills,46.49,81.84,47.77,83.27,48.70,82.63,48.71,81.28,47.69,79.75,46.49,81.84
+>>Kill |cFFFF5722Syndicate Footpads|r and |cFFFF5722Syndicate Thieves|r. Loot them for the |cFF00BCD4Syndicate Missive|r
+.complete 533,1 
+.mob Syndicate Footpad
+.mob Syndicate Thief
+step
+#completewith next
+.goto Hillsbrad Foothills,45.93,31.64,20 >>Enter the Yeti cave
+step
+.goto Hillsbrad Foothills,45.62,31.13,20,0
+.goto Hillsbrad Foothills,45.06,29.04,20,0
+.goto Hillsbrad Foothills,44.26,28.10,20,0
+.goto Hillsbrad Foothills,43.89,28.06
+>>Click the |cFFDB2EEFFlame of Azel|r on the top floor
+>>|cFFFCDC00It has a 20 yard range|r
+>>|cFFFCDC00Stay on the top floor. Do not go down yet|r
+.complete 553,1 
+step
+.goto Hillsbrad Foothills,44.77,28.71,20,0
+.goto Hillsbrad Foothills,44.88,27.44,20,0
+.goto Hillsbrad Foothills,44.04,26.55
+>>|cFFFCDC00Drop down a floor|r
+>>Click the |cFFDB2EEFFlame of Veraz|r on the bottom floor
+.complete 553,2 
+step
+#completewith next
+.goto Hillsbrad Foothills,46.26,31.71,20 >>Exit the Yeti cave
+step
+.goto Hillsbrad Foothills,61.55,20.63,8,0
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Bel'varil|r, |cFF00FF25Wordeen|r, |cFF00FF25Darthalia|r, and |cFF00FF25Krusk|r
+.turnin 556 >> Turn in Stone Tokens
+.goto Hillsbrad Foothills,61.50,20.93
+.turnin 544 >> Turn in Prison Break In
+.goto Hillsbrad Foothills,61.60,20.85
+.turnin 539 >> Turn in Battle of Hillsbrad
+.accept 541 >> Accept Battle of Hillsbrad
+.turnin 567 >> Turn in Dangerous!
+.goto Hillsbrad Foothills,62.39,20.28
+.turnin 533 >> Turn in Infiltration
+.goto Hillsbrad Foothills,62.95,20.59,8,0
+.goto Hillsbrad Foothills,63.24,20.66
+.target Keeper Bel'varil
+.target Magus Wordeen Voidglare
+.target High Executor Darthalia
+.target Krusk
+step
+.goto Hillsbrad Foothills,68.01,18.99,40,0
+.goto Hillsbrad Foothills,68.07,23.02,40,0
+.goto Hillsbrad Foothills,68.32,25.88,40,0
+.goto Hillsbrad Foothills,67.95,28.95,40,0
+.goto Hillsbrad Foothills,67.79,32.76,40,0
+.goto Hillsbrad Foothills,67.54,35.33,40,0
+.goto Hillsbrad Foothills,66.11,38.29,40,0
+.goto Hillsbrad Foothills,63.67,40.37,40,0
+.goto Hillsbrad Foothills,61.91,42.95,40,0
+.goto Hillsbrad Foothills,59.42,45.08,40,0
+.goto Hillsbrad Foothills,57.47,47.67,40,0
+.goto Hillsbrad Foothills,56.36,50.18,40,0
+.goto Hillsbrad Foothills,55.45,53.46,40,0
+.goto Hillsbrad Foothills,55.61,56.96
+>>Kill |cFFFF5722Snapjaws|r. Loot them for their |cFF00BCD4Turtle Meat|r
+.collect 3712,10,7321,1 
+.train 2550,3 
+.mob Snapjaw
+step
+#completewith next
+.goto Hillsbrad Foothills,54.66,53.82,90 >>Approach |cFFDB2EEFHelcular's Grave|r from the river to avoid |cFFFF5722Southshore Guards|r
+step
+.goto Hillsbrad Foothills,52.75,53.37
+>>Click |cFFDB2EEFHelcular's Grave|r
+.turnin 553 >> Turn in Helcular's Revenge
+step
+#completewith Ironhill
+.goto Hillsbrad Foothills,70.98,78.54,40 >> Enter Dun Garok
+step
+#completewith next
+>>Kill |cFFFF5722Dun Garok Mountaineers|r, |cFFFF5722Dun Garok Riflemen|r, and |cFFFF5722Dun Garok Priests|r. Loot them for |cFF00BCD4Humbert's Sword|r
+.complete 541,1 
+.complete 541,2 
+.complete 541,3 
+.complete 547,1 
+step
+#label Ironhill
+.goto Hillsbrad Foothills,70.84,79.42,10,0
+.goto Hillsbrad Foothills,71.35,80.32,10,0
+.goto Hillsbrad Foothills,72.37,81.43,10,0
+.goto Hillsbrad Foothills,72.60,82.22,10,0
+.goto Hillsbrad Foothills,72.28,82.67,10,0
+.goto Hillsbrad Foothills,72.00,81.89,10,0
+.goto Hillsbrad Foothills,71.12,80.28,10,0 
+.goto Hillsbrad Foothills,73.12,81.34,10,0
+.goto Hillsbrad Foothills,73.00,80.59,10,0
+.goto Hillsbrad Foothills,72.05,79.32,10,0 
+.goto Hillsbrad Foothills,71.35,80.32,10,0
+.goto Hillsbrad Foothills,71.50,81.49,10,0
+.goto Hillsbrad Foothills,71.73,80.89,10,0
+.goto Hillsbrad Foothills,71.50,79.49 
+>>Kill |cFFFF5722Captain Ironhill|r
+>>|cFFFCDC00He has multiple spawnpoints. He can be found upstairs or downstairs in the basement|r
+.complete 541,4 
+.unitscan Captain Ironhill
+step
+.loop 20,Hillsbrad Foothills,71.55,81.12,72.05,80.53,72.60,79.84,71.81,78.27,70.57,77.89,71.05,75.01,68.91,77.91,70.57,77.89,70.66,79.68,71.55,81.12
+>>Kill |cFFFF5722Dun Garok Mountaineers|r, |cFFFF5722Dun Garok Riflemen|r, and |cFFFF5722Dun Garok Priests|r. Loot them for |cFF00BCD4Humbert's Sword|r
+.complete 541,1 
+.complete 541,2 
+.complete 541,3 
+.complete 547,1 
+step
+#completewith next
+.goto Hillsbrad Foothills,80.06,60.19,15,0
+.goto Hillsbrad Foothills,80.56,60.70,12,0
+.goto Hillsbrad Foothills,80.14,62.52,12,0
+.goto Arathi Highlands,34.74,44.14
+.zone Arathi Highlands >> Travel to Arathi Highlands
+step
+#completewith Kenata
+.goto Arathi Highlands,54.76,38.34,30,0
+>>Kill |cFFFF5722Fardel|r. Loot him for |cFF00BCD4Fardel's Head|r
+>>|cFFFCDC00Be careful as |cFFFF5722Fardel|r casts|r |T136067:0|t[Deadly Poison]|cFFFCDC00 (Deals 57 damage every 5 seconds, interruptable) and|r |T132152:0|t[Thrash] |cFFFCDC00(2 extra attacks every 15 seconds)|r
+.complete 1164,3 
+.mob Fardel Dabyrie
+step
+.goto Arathi Highlands,54.21,38.08
+>>Kill |cFFFF5722Marcel|r. Loot him for |cFF00BCD4Marcel's Head|r
+>>|cFFFCDC00Be careful as |cFFFF5722Marcel|r casts|r |T132362:0|t[Shield Wall]|cFFFCDC00 (Reducing his damage taken by 75% for 10 seconds) and|r |T132357:0|t[Shield Bash] |cFFFCDC00(spell interrupt)|r << !Rogue !Warrior
+>>|cFFFCDC00Be careful as |cFFFF5722Marcel|r casts|r |T132362:0|t[Shield Wall]|cFFFCDC00 (Reducing his damage taken by 75% for 10 seconds)|r << Rogue/Warrior
+.complete 1164,2 
+.mob Marcel Dabyrie
+step
+#label Kenata
+.goto Arathi Highlands,56.37,36.08
+>>Kill |cFFFF5722Kenata|r inside. Loot her for |cFF00BCD4Kenata's Head|r
+>>|cFFFCDC00Be careful as |cFFFF5722Kenata|r casts|r |T132343:0|t[Disarm]|cFFFCDC00 (Disarms you for 10 seconds)|r << Rogue/Warrior/Paladin/Shaman
+.complete 1164,1 
+.mob Kenata Dabyrie
+step
+.goto Arathi Highlands,56.63,38.80,30,0
+.goto Arathi Highlands,56.78,40.47,30,0
+.goto Arathi Highlands,54.76,38.34,30,0
+.goto Arathi Highlands,56.63,38.80,30,0
+.goto Arathi Highlands,56.78,40.47,30,0
+.goto Arathi Highlands,54.76,38.34,30,0
+.goto Arathi Highlands,56.63,38.80,30,0
+.goto Arathi Highlands,56.78,40.47,30,0
+.goto Arathi Highlands,54.76,38.34,30,0
+.goto Arathi Highlands,56.63,38.80,30,0
+.goto Arathi Highlands,56.78,40.47,30,0
+.goto Arathi Highlands,54.76,38.34
+>>Kill |cFFFF5722Fardel|r. Loot him for |cFF00BCD4Fardel's Head|r
+>>|cFFFCDC00Be careful as |cFFFF5722Fardel|r casts|r |T136067:0|t[Deadly Poison]|cFFFCDC00 (Deals 57 damage every 5 seconds, interruptable) and|r |T132152:0|t[Thrash] |cFFFCDC00(2 extra attacks every 15 seconds)|r
+.complete 1164,3 
+.mob Fardel Dabyrie
+step
+.goto Arathi Highlands,62.50,33.80
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cFF00FF25Shards of Myzrael|r
+.accept 642 >> Accept The Princess Trapped
+step
+.goto Arathi Highlands,73.79,33.03,10,0
+.goto Arathi Highlands,73.84,32.47
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Adegwa|r
+>>|cFF0E8312Buy|r |T132799:0|t[Sweet Nectar] |cFF0E8312from him|r << Priest/Mage/Warlock/Druid
+>>|cFF0E8312Buy|r |T133994:0|t[Stormwind Brie] |cFF0E8312from him|r << !Priest !Mage !Warlock !Druid !Paladin
+>>|cFF0E8312Buy|r |T132799:0|t[Sweet Nectar] |cFF0E8312and|r |T133994:0|t[Stormwind Brie] |cFF0E8312from him|r << Paladin
+.collect 1708,20,1145,1 << Priest/Mage/Warlock/Druid/Paladin 
+.collect 1707,20,1145,1 << !Priest !Mage !Warlock !Druid !Paladin 
+.collect 1707,10,1145,1 << Paladin 
+.target Innkeeper Adegwa
+.money <0.4000 << !Paladin
+.money <0.6000 << Paladin/Shaman
+.xp <24,1
+.xp >35,1
+step << Mage
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Adegwa|r
+.home >> Set your Hearthstone to Hammerfall
+.target Innkeeper Adegwa
+.itemcount 17031,1
+step << Hunter
+.goto Arathi Highlands,72.52,33.37
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Mu'uta|r
+.vendor 9551 >>|cFF0E8312Buy the|r |T135495:0|t[Dense Shortbow] |cFF0E8312if it's up and|r |T132382:0|t[Razor Arrows] |cFF0E8312from him|r
+.collect 3030,2000,4767,1 
+.target Mu'uta
+.itemcount 3030,<2000
+.money <2.8814
+.itemStat 18,QUALITY,<7
+.itemStat 18,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<18.95
+
+step << Hunter
+.goto Arathi Highlands,72.52,33.37
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Mu'uta|r
+.vendor 9551 >>|cFF0E8312Buy the|r |T135495:0|t[Dense Shortbow] |cFF0E8312from him if it's up|r
+.target Mu'uta
+.money <2.5814
+.itemStat 18,QUALITY,<7
+.itemStat 18,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<18.95
+step << Hunter
+.goto Arathi Highlands,72.52,33.37
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Mu'uta|r
+>>|cFF0E8312Buy|r |T132382:0|t[Razor Arrows] |cFF0E8312from him|r
+.collect 3030,2000,4767,1 
+.target Mu'uta
+.itemcount 3030,<2000
+.money <0.3000
+step << Hunter
+#completewith next
++Equip the |T135495:0|t[Dense Shortbow]
+.use 11305
+.itemcount 11305,1
+.itemStat 18,QUALITY,<7
+.itemStat 18,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<18.95
+step
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Gor'mul|r and |cFF00FF25Tor'gan|r
+.accept 655 >> Accept Hammerfall
+.goto Arathi Highlands,72.64,33.92
+.turnin 655 >> Turn in Hammerfall
+.accept 671 >> Accept Foul Magics
+.accept 672 >> Accept Raising Spirits
+.goto Arathi Highlands,74.72,36.29
+.target Gor'mul
+.target Tor'gan
+step << Mage
+.loop 45,Arathi Highlands,70.40,32.28,70.77,34.72,69.16,39.78,68.55,37.67,68.73,36.09,67.05,33.98,65.78,36.03,65.85,37.77,65.60,38.88,65.21,39.48,65.80,41.65,67.02,42.51,66.17,44.35,64.87,45.11,64.42,46.39,62.56,46.52,63.25,44.87,63.85,43.06,64.65,40.33,61.89,43.36,60.87,37.77,59.38,38.32,58.71,40.97,60.34,42.86,60.73,44.50,61.14,45.68,60.42,46.13,58.89,43.01
+>>Kill |cFFFF5722Highland Striders|r. Loot them for their |cFF00BCD4Highland Raptor Eyes|r
+.complete 672,1,6 
+.mob Highland Strider
+.itemcount 17031,1
+step << Mage
+.loop 45,Arathi Highlands,55.57,45.96,56.98,46.90,55.84,48.06,54.88,46.98,53.01,46.56,51.11,46.43,52.29,45.57,54.05,44.86,53.27,43.74,51.36,41.17,50.98,40.50,49.90,41.49
+>>Kill |cFFFF5722Highland Striders|r. Loot them for their |cFF00BCD4Highland Raptor Eyes|r
+.complete 672,1 
+.mob Highland Strider
+.itemcount 17031,1
+step
+#completewith next
+>>Kill |cFFFF5722Highland Striders|r and |cFFFF5722Highland Thrashers|r. Loot them for their |cFF00BCD4Highland Raptor Eyes|r
+>>|cFFFCDC00Be careful as the |cFFFF5722Highland Thrashers|r cast|r |T132152:0|t[Thrash] |cFFFCDC00(2 extra attacks every 15 seconds)|r
+.complete 672,1 
+.mob Highland Strider
+.mob Highland Thrasher
+step
+.loop 45,Arathi Highlands,34.76,29.97,34.66,31.24,34.17,32.81,32.86,32.74,31.65,32.76,30.07,30.04,30.34,28.81,30.31,28.00,30.63,25.77,32.28,25.16,32.91,24.39,33.62,25.43,33.91,26.55,34.20,26.96,34.77,27.14,34.76,29.97
+>>Kill |cFFFF5722Syndicate Pathstalkers|r, |cFFFF5722Syndicate Mercenaries|r, and |cFFFF5722Syndicate Highwaymen|r. Loot them for their |cFF00BCD4Bloodstone Amulets|r
+>>|cFFFCDC00The |cFFFF5722Syndicate Highwaymen|r are stealthed|r
+.complete 671,1 
+.mob Syndicate Pathstalker
+.mob Syndicate Mercenary
+.mob Syndicate Highwayman
+step
+.loop 45,Arathi Highlands,55.57,45.96,56.98,46.90,55.84,48.06,54.88,46.98,53.01,46.56,51.11,46.43,52.29,45.57,54.05,44.86,53.27,43.74,51.36,41.17,50.98,40.50,49.90,41.49
+>>Kill |cFFFF5722Highland Striders|r. Loot them for their |cFF00BCD4Highland Raptor Eyes|r
+.complete 672,1,6 
+.mob Highland Strider
+step
+.loop 45,Arathi Highlands,70.40,32.28,70.77,34.72,69.16,39.78,68.55,37.67,68.73,36.09,67.05,33.98,65.78,36.03,65.85,37.77,65.60,38.88,65.21,39.48,65.80,41.65,67.02,42.51,66.17,44.35,64.87,45.11,64.42,46.39,62.56,46.52,63.25,44.87,63.85,43.06,64.65,40.33,61.89,43.36,60.87,37.77,59.38,38.32,58.71,40.97,60.34,42.86,60.73,44.50,61.14,45.68,60.42,46.13,58.89,43.01
+>>Kill |cFFFF5722Highland Striders|r. Loot them for their |cFF00BCD4Highland Raptor Eyes|r
+.complete 672,1 
+.mob Highland Strider
+step << Mage
+#completewith next
+.hs >>Hearth to Hammerfall
+.itemcount 17031,1
+step
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Tor'gan|r and |cFF00FF25Gor'mul|r
+.turnin 671 >> Turn in Foul Magics
+.turnin 672 >> Turn in Raising Spirits
+.accept 674 >> Accept Raising Spirits
+.goto Arathi Highlands,74.72,36.29
+.turnin 674 >> Turn in Raising Spirits
+.accept 675 >> Accept Raising Spirits
+.goto Arathi Highlands,72.64,33.92
+.target Tor'gan
+.target Gor'mul
+step
+.goto Arathi Highlands,74.72,36.29
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Tor'gan|r
+.turnin 675 >> Turn in Raising Spirits
+.target Tor'gan
+step
+#completewith TarrenMillF
+.goto Arathi Highlands,73.07,32.61
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FFUrda|r
+.fly Tarren Mill >> Fly to Tarren Mill
+.target Urda
+step
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Darthalia|r, |cFF00FF25Humbert|r, and |cFF00FF25Christoph|r
+>>|cFF0E8312Buy|r |T134059:0|t[Soothing Spices] |cFF0E8312from |cFF00FF25Christoph|r|r << tbc
+.turnin 541 >> Turn in Battle of Hillsbrad
+.accept 550 >> Accept Battle of Hillsbrad
+.goto Hillsbrad Foothills,62.39,20.28
+.turnin 547 >> Turn in Humbert's Sword
+.goto Hillsbrad Foothills,62.76,20.21
+.collect 3713,1,7321,1 << tbc 
+.accept 7321 >> Accept Soothing Turtle Bisque
+.turnin 7321 >> Turn in Soothing Turtle Bisque
+.goto Hillsbrad Foothills,62.52,19.61,12,0
+.goto Hillsbrad Foothills,62.28,19.05
+.target High Executor Darthalia
+.target Deathguard Humbert
+.target Christoph Jeffcoat
+.itemcount 3712,10 
+.train 2550,3 
+step
+#label TarrenMillF
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Darthalia|r and |cFF00FF25Humbert|r
+.turnin 541 >> Turn in Battle of Hillsbrad
+.accept 550 >> Accept Battle of Hillsbrad
+.goto Hillsbrad Foothills,62.39,20.28
+.turnin 547 >> Turn in Humbert's Sword
+.goto Hillsbrad Foothills,62.76,20.21
+.target High Executor Darthalia
+.target Deathguard Humbert
+step << skip
+>> Ride up to Alterac Mountains
+.goto Alterac Mountains,80.5,66.9
+.turnin 1791 >>Turn in The Windwatcher
+.accept 1712 >>Accept Cyclonian
+
+step
+#completewith next
+.goto Hillsbrad Foothills,60.14,18.62
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Zarise|r
+.fly Undercity >> Fly to Undercity
+.target Zarise
+.zoneskip Hillsbrad Foothills,1
+.itemcount 17031,<1 << Mage
+
+step
+.goto Undercity,63.85,49.44
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Genavie|r
+.turnin 1164 >> Turn in To Steal From Thieves
+.itemcount 17031,<1 << Mage
+.target Genavie Callow
+step << Mage
+#completewith Thieves
+.cast 3563 >>Cast |T135766:0|t[Teleport: Undercity]
+.zoneskip Undercity
+.itemcount 17031,1
+step << Mage
+.goto Undercity,82.77,15.85
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Anastasia|r
+.train 8422 >> Train your class spells
+.target Anastasia Hartwell
+.xp <32,1
+.xp >34,1
+step << Mage
+.goto Undercity,82.77,15.85
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Anastasia|r
+.train 8492 >> Train your class spells
+.target Anastasia Hartwell
+.xp <34,1
+step << Mage
+.goto Undercity,82.77,15.85
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Hannah|r
+>>|cFF0E8312Buy|r |T134419:0|t[Runes of Teleportation] |cFF0E8312from her|r
+.collect 17031,5,496,1 
+.target Hannah Akeley
+step << Mage
+#label Thieves
+.goto Undercity,63.85,49.44
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Genavie|r
+.turnin 1164 >> Turn in To Steal From Thieves
+.target Genavie Callow
+step << Warrior
+#completewith WarriorTrain1
+.goto Undercity,63.79,47.28,15,0
+.goto Undercity,57.82,44.73,25,0
+.goto Undercity,52.46,42.08,25,0
+.goto Undercity,48.49,31.60,25,0
+.goto Undercity,45.92,23.41,25,0
+.goto Undercity,46.23,18.07,25,0
+.goto Undercity,47.42,17.27 >>Travel toward |cFF00FF25Baltus|r
+step << Warrior
+.goto Undercity,47.42,17.27
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Baltus|r
+.train 11549 >> Train your class spells
+.target Baltus Fowler
+.xp <32,1
+.xp >34,1
+step << Warrior
+#label WarriorTrain1
+.goto Undercity,47.42,17.27
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Baltus|r
+.train 7379 >> Train your class spells
+.target Baltus Fowler
+.xp <34,1
+step << Rogue
+#completewith RogueTrain1
+.goto Undercity,63.79,47.28,15,0
+.goto Undercity,65.27,56.15,25,0
+.goto Undercity,67.15,64.32,25,0
+.goto Undercity,83.88,72.06,20 >>Travel toward |cFF00FF25Carolyn|r
+step << Rogue
+.goto Undercity,83.88,72.06
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Carolyn|r
+.train 8623 >> Train your class spells
+.target Carolyn Ward
+.xp <32,1
+.xp >34,1
+step << Rogue
+#label RogueTrain1
+.goto Undercity,83.88,72.06
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Carolyn|r
+.train 8696 >> Train your class spells
+.target Carolyn Ward
+.xp <34,1
+step << Shaman/Warrior
+#completewith next
+.goto Undercity,63.77,47.25,15,0 << Shaman
+.goto Undercity,65.43,56.36,30,0 << Shaman
+.goto Undercity,64.78,64.48,30,0 << Shaman
+.goto Undercity,52.68,77.65,15,0
+.goto Undercity,51.15,80.09,12,0
+.goto Undercity,49.06,78.17,12,0
+.goto Undercity,47.80,75.46,15,0
+.goto Undercity,48.81,69.28,20 >>Travel toward |cFF00FF25Faranell|r
+step << Shaman/Warrior
+.goto Undercity,48.81,69.28
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Faranell|r
+.turnin 513 >> Turn in Elixir of Agony
+step
+#completewith next
+.goto Undercity,47.80,75.46,15,0 << Shaman/Warrior
+.goto Undercity,49.06,78.17,12,0 << Shaman/Warrior
+.goto Undercity,51.15,80.09,12,0 << Shaman/Warrior
+.goto Undercity,52.68,77.65,15,0 << Shaman/Warrior
+.goto Undercity,54.70,67.53,25,0 << Shaman/Warrior
+.goto Undercity,51.88,64.84,20,0
+.goto Undercity,46.28,73.10,15,0
+.goto Undercity,45.31,78.24,15,0
+.goto Undercity,46.18,83.63,15,0
+.goto Undercity,48.80,87.63,15,0
+.goto Undercity,52.45,89.49,15,0
+.goto Undercity,56.18,94.85,15,0
+.goto Undercity,56.23,92.21,15 >> Travel toward |cFF00FF25Bragor|r inside the Royal Quarter << wotlk
+.goto Undercity,56.23,92.21,15 >> Travel toward |cFF00FF25Varimathras|r inside the Royal Quarter << tbc
+step
+.goto Undercity,56.23,92.21
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Bragor|r << wotlk
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Varimathras|r << tbc
+.turnin 550 >> Turn in Battle of Hillsbrad
+.target Bragor Bloodfist << wotlk
+.target Varimathras << tbc
+step << Paladin
+.goto Undercity,58.00,90.46
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Cyssa|r
+.train 19836 >>Train your class spells
+.target Champion Cyssa Dawnrose
+.xp <32,1
+.xp >34,1
+step << Paladin
+.goto Undercity,58.00,90.46
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Cyssa|r
+.train 642 >>Train your class spells
+.target Champion Cyssa Dawnrose
+.xp <34,1
+step << Undead !Warlock
+#completewith next
+.goto Undercity,55.20,90.91
+.goto Undercity,67.88,14.97,30 >>|cFFFCDC00Go to the edge of the main platform in the Royal Quarter. Perform a Logout Skip by positioning your character until it looks like they're floating, then logging out and back in|r
+.link https://www.youtube.com/watch?v=jj85AXyF1XE >> |cFFFCDC00CLICK HERE|r
+.skill riding,75,1
+step << Undead !Warlock
+.goto Undercity,66.21,4.90,15,0
+.goto Tirisfal Glades,61.73,64.87
+.zone Tirisfal Glades >>Exit Undercity
+.skill riding,75,1
+step << Undead !Warlock
+.goto Tirisfal Glades,60.08,52.54
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Velma|r
+.skill riding,75 >> Train |T136103:0|t[Apprentice Riding] from her
+.target Velma Warnam
+.money <4.5 << wotlk
+.money <42.25 << tbc
+.skill riding,75,1
+step << Undead !Warlock
+.goto Tirisfal Glades,59.87,52.69
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Zachariah|r
++|cFF0E8312Buy any|r |T132264:0|t[Skeletal Horse] |cFF0E8312that you like from him|r
+.target Zachariah Post
+.itemcount 13331,<1 
+.itemcount 13332,<1 
+.itemcount 13333,<1 
+.itemcount 46308,<1 
+.money <0.9 << wotlk
+.money <9.0000 << tbc
+.skill riding,<75,1
+step << Undead !Warlock
+.cast 55884 >> Use the |T132264:0|t[Red Skeletal Horse] to learn it
+.use 13331
+.itemcount 13331,1
+.skill riding,75,1
+step << Undead !Warlock
+.cast 55884 >> Use the |T132264:0|t[Blue Skeletal Horse] to learn it
+.use 13332
+.itemcount 13332,1
+.skill riding,75,1
+step << Undead !Warlock
+.cast 55884 >> Use the |T132264:0|t[Brown Skeletal Horse] to learn it
+.use 13333
+.itemcount 13333,1
+.skill riding,75,1
+step << Undead !Warlock
+.cast 55884 >> Use the |T132264:0|t[Black Skeletal Horse] to learn it
+.use 46308
+.itemcount 46308,1
+.skill riding,75,1
+step << Undead !Warlock
+>>|cFFFCDC00Press "Shift+P" to open your Mount tab|r
+>>|cFFFCDC00Drag the|r |T132264:0|t[Red Skeletal Horse] |cFFFCDC00onto your Action Bars|r
+.cast 17462 >> Mount your |T132264:0|t[Red Skeletal Horse]
+.train 17462,3
+.zoneskip Undercity
+.zoneskip Durotar
+.zoneskip Orgrimmar
+step << Undead !Warlock
+>>|cFFFCDC00Press "Shift+P" to open your Mount tab|r
+>>|cFFFCDC00Drag the|r |T132264:0|t[Blue Skeletal Horse] |cFFFCDC00onto your Action Bars|r
+.cast 17463 >> Mount your |T132264:0|t[Blue Skeletal Horse]
+.train 17463,3
+.zoneskip Undercity
+.zoneskip Durotar
+.zoneskip Orgrimmar
+step << Undead !Warlock
+>>|cFFFCDC00Press "Shift+P" to open your Mount tab|r
+>>|cFFFCDC00Drag the|r |T132264:0|t[Brown Skeletal Horse] |cFFFCDC00onto your Action Bars|r
+.cast 17464 >> Mount your |T132264:0|t[Brown Skeletal Horse]
+.train 17464,3
+.zoneskip Undercity
+.zoneskip Durotar
+.zoneskip Orgrimmar
+step << Undead !Warlock wotlk
+>>|cFFFCDC00Press "Shift+P" to open your Mount tab|r
+>>|cFFFCDC00Drag the|r |T132264:0|t[Black Skeletal Horse] |cFFFCDC00onto your Action Bars|r
+.cast 64977 >> Mount your |T132264:0|t[Black Skeletal Horse]
+.train 64977,3
+.zoneskip Undercity
+.zoneskip Durotar
+.zoneskip Orgrimmar
+step << Druid
+#completewith next
+.cast 18960 >> Cast |T135758:0|t[Teleport: Moonglade]
+.zoneskip Moonglade
+.xp <32,1
+step << Druid
+.goto Moonglade,52.53,40.57
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Loganaar|r
+.train 6778 >> Train your class spells
+.target Loganaar
+.xp <32,1
+]])
+RXPGuides.RegisterGuide([[
+#tbc
+#wotlk
+<< Horde
+#name 32-32 Thousand Needles II JJ
+#version 18
+#group RestedXP Horde 1-30
+#next 32-34 Shimmering Flats JJ
+#xprate >1.4999
+step << !Mage
+#xprate <1.7
+.hs >> Hearth to Orgrimmar
+.zoneskip Orgrimmar
+.zoneskip The Barrens
+step << Hunter/Shaman/Priest
+#completewith OrgTrain32
+.goto Orgrimmar,50.68,61.69,35,0 << Hunter
+.goto Orgrimmar,52.96,58.10,35,0 << Hunter
+.goto Orgrimmar,56.02,56.88,35,0 << Hunter
+.goto Orgrimmar,63.02,39.23,20,0 << Hunter
+.goto Orgrimmar,64.32,38.11,20,0 << Hunter
+.goto Orgrimmar,66.11,40.01,20,0 << Hunter
+.goto Orgrimmar,72.23,23.56,30,0 << Hunter
+.goto Orgrimmar,72.15,21.09,30,0 << Hunter
+.goto Orgrimmar,67.53,14.87,20,0 << Hunter
+.goto Orgrimmar,47.41,65.07,10,0 << Priest/Shaman
+.goto Orgrimmar,46.59,64.54,6,0 << Priest/Shaman
+.goto Orgrimmar,46.75,63.84,6,0 << Priest/Shaman
+.goto Orgrimmar,46.59,64.54,6,0 << Priest/Shaman
+.goto Orgrimmar,46.75,63.84,6,0 << Priest/Shaman
+.goto Orgrimmar,46.59,64.54,6,0 << Priest/Shaman
+.goto Orgrimmar,46.75,63.84,6,0 << Priest/Shaman
+.goto Orgrimmar,41.89,64.39,20,0 << Priest/Shaman
+.goto Orgrimmar,38.65,56.58,25,0 << Shaman
+.goto Orgrimmar,38.78,54.87,25,0 << Shaman
+.goto Orgrimmar,40.94,45.20,25,0 << Shaman
+.goto Orgrimmar,42.30,37.44,30,0 << Shaman
+.goto Orgrimmar,39.58,75.87,20,0 << Priest
+.goto Orgrimmar,66.05,18.52,15 >> Travel toward |cFF00FF25Ormak|r << Hunter
+.goto Orgrimmar,38.81,36.38,15 >> Travel toward |cFF00FF25Kardris|r << Shaman
+.goto Orgrimmar,35.59,87.80,15 >> Travel toward |cFF00FF25Ur'kyo|r << Priest
+step << skip
+#xprate <1.7
+.goto Orgrimmar,66.05,18.52
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Ormak|r
+.train 14263 >> Train your class spells
+.target Ormak Grimshot
+.xp <32,1
+.xp >34,1
+
+step << Hunter
+#label OrgTrain32
+#xprate <1.7
+.goto Orgrimmar,66.05,18.52
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Ormak|r
+.train 13813 >> Train your class spells
+.target Ormak Grimshot
+.xp <34,1
+step << Shaman
+#xprate <1.7
+#label OrgTrain32 << tbc
+.goto Orgrimmar,38.81,36.38
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Kardris|r
+.train 8499 >> Train your class spells
+.target Kardris Dreamseeker
+.xp <32,1
+.xp >34,1 << wotlk
+step << Shaman wotlk
+#label OrgTrain32
+#xprate <1.7
+.goto Orgrimmar,38.81,36.38
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Kardris|r
+.train 52131 >> Train your class spells << wotlk
+.target Kardris Dreamseeker
+.xp <34,1
+step << Priest
+#xprate <1.7
+.goto Orgrimmar,35.59,87.80
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Ur'kyo|r
+.train 9473 >> Train your class spells
+.target Ur'kyo
+.xp <32,1
+.xp >34,1
+step << Priest
+#xprate <1.7
+#label OrgTrain32
+.goto Orgrimmar,35.59,87.80
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Ur'kyo|r
+.train 8105 >> Train your class spells
+.target Ur'kyo
+.xp <34,1
+step << Troll
+#completewith CampTStone2
+.goto The Barrens,63.08,37.16
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Bragok|r
+.fly Camp Taurajo >> Fly to Camp Taurajo
+.target Bragok
+.zoneskip Orgrimmar
+step << Undead/!Mage
+#xprate >1.6999
+#completewith CampTStone2
+.hs >> Hearth to Orgrimmar
+.cooldown item,6948,>0
+.zoneskip Orgrimmar
+step << Mage
+#completewith CampTStone2
+.cast 3563 >> Cast |T135765:0|t[Teleport: Thunder Bluff]
+.zoneskip Thunder Bluff
+.zoneskip The Barrens
+.zoneskip Thousand Needles
+step << Mage
+.goto Thunder Bluff,22.77,14.50
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Shymm|r
+.train 8422 >> Train your class spells
+.target Archmage Shymm
+.xp <32,1
+.xp >34,1
+step << Mage
+.goto Thunder Bluff,22.77,14.50
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Shymm|r
+.train 8492 >> Train your class spells
+.target Archmage Shymm
+.xp <34,1
+step << Mage
+.goto Thunder Bluff,46.22,49.14,6,0
+.goto Thunder Bluff,46.01,49.90,6,0
+.goto Thunder Bluff,47.00,49.83
+>>Go up the tower
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Tal|r
+.fly Camp Taurajo >> Fly to Camp Taurajo
+.target Tal
+step << Undead
+#xprate >1.6999
+.goto Tirisfal Glades,61.06,58.86,12,0
+.goto Tirisfal Glades,61.51,59.01,10,0
+.goto Tirisfal Glades,61.27,59.22,8,0
+.goto Tirisfal Glades,61.13,58.84,8,0
+.goto Tirisfal Glades,61.38,58.71,8,0
+.goto Tirisfal Glades,61.34,59.17,8,0
+.goto Tirisfal Glades,60.51,58.69,-1
+.goto Tirisfal Glades,60.94,46.35,-1
+>>Go up the Zeppelin Tower
+.zone Durotar >>Take the Zeppelin to Durotar
+.cooldown item,6948,<0
+.zoneskip Orgrimmar
+.zoneskip Thunder Bluff
+.zoneskip Thousand Needles
+step
+#completewith Doras1
+.goto Orgrimmar,47.41,65.07,10,0
+.goto Orgrimmar,46.59,64.54,6,0
+.goto Orgrimmar,46.75,63.84,6,0
+.goto Orgrimmar,46.59,64.54,6,0
+.goto Orgrimmar,46.75,63.84,6,0
+.goto Orgrimmar,46.59,64.54,6,0
+.goto Orgrimmar,46.75,63.84,6,0
+.goto Orgrimmar,45.12,63.88,10 >>Travel up the tower toward |cFF00FF25Doras|r
+step << Warlock
+#xprate <1.7
+#completewith CampTStone2
+.goto Orgrimmar,45.12,63.88
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Doras|r
+.fly Ratchet >> Fly to Ratchet
+.target Doras
+.zoneskip Orgrimmar,1
+.xp <34,1
+step << Warlock
+#xprate <1.7
+.goto The Barrens,62.44,35.45
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Babagaya|r
+.train 7648 >> Train your class spells
+.target Babagaya Shadowcleft
+.xp <34,1
+step << Warlock
+#xprate <1.7
+#completewith CampTStone2
+.goto The Barrens,63.08,37.16
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Bragok|r
+.fly Camp Taurajo >> Fly to Camp Taurajo
+.target Bragok
+.zoneskip Orgrimmar
+.xp <34,1
+step
+#label Doras1
+#completewith CampTStone2
+.goto Orgrimmar,45.12,63.88
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Doras|r
+.fly Camp Taurajo >> Fly to Camp Taurajo
+.target Doras
+.zoneskip Orgrimmar,1
+
+step
+#xprate >1.6999
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Jorn|r and |cFF00FF25Tatternack|r
+.turnin 884 >>Turn in Owatanka
+.turnin 885 >>Turn in Washte Pawne
+.turnin 897 >>Turn in The Harvester
+.goto The Barrens,44.86,59.13
+.turnin 893 >> Turn in Weapons of Choice
+.accept 1153 >> Accept A New Ore Sample
+.goto The Barrens,45.10,57.68
+.target Jorn Skyseer
+.target Tatternack Steelforge
+.isOnQuest 884
+.isOnQuest 885
+.isOnQuest 897
+step
+#xprate >1.6999
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Jorn|r and |cFF00FF25Tatternack|r
+.turnin 885 >>Turn in Washte Pawne
+.turnin 897 >>Turn in The Harvester
+.goto The Barrens,44.86,59.13
+.turnin 893 >> Turn in Weapons of Choice
+.accept 1153 >> Accept A New Ore Sample
+.goto The Barrens,45.10,57.68
+.target Jorn Skyseer
+.target Tatternack Steelforge
+.isOnQuest 885
+.isOnQuest 897
+step
+#xprate >1.6999
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Jorn|r and |cFF00FF25Tatternack|r
+.turnin 884 >>Turn in Owatanka
+.turnin 897 >>Turn in The Harvester
+.goto The Barrens,44.86,59.13
+.turnin 893 >> Turn in Weapons of Choice
+.accept 1153 >> Accept A New Ore Sample
+.goto The Barrens,45.10,57.68
+.target Jorn Skyseer
+.target Tatternack Steelforge
+.isOnQuest 884
+.isOnQuest 897
+step
+#xprate >1.6999
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Jorn|r and |cFF00FF25Tatternack|r
+.turnin 884 >>Turn in Owatanka
+.turnin 885 >>Turn in Washte Pawne
+.goto The Barrens,44.86,59.13
+.turnin 893 >> Turn in Weapons of Choice
+.accept 1153 >> Accept A New Ore Sample
+.goto The Barrens,45.10,57.68
+.target Jorn Skyseer
+.target Tatternack Steelforge
+.isOnQuest 884
+.isOnQuest 885
+step
+#xprate >1.6999
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Jorn|r and |cFF00FF25Tatternack|r
+.turnin 884 >>Turn in Owatanka
+.goto The Barrens,44.86,59.13
+.turnin 893 >> Turn in Weapons of Choice
+.accept 1153 >> Accept A New Ore Sample
+.goto The Barrens,45.10,57.68
+.target Jorn Skyseer
+.target Tatternack Steelforge
+.isOnQuest 884
+step
+#xprate >1.6999
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Jorn|r and |cFF00FF25Tatternack|r
+.turnin 885 >>Turn in Washte Pawne
+.goto The Barrens,44.86,59.13
+.turnin 893 >> Turn in Weapons of Choice
+.accept 1153 >> Accept A New Ore Sample
+.goto The Barrens,45.10,57.68
+.target Jorn Skyseer
+.target Tatternack Steelforge
+.isOnQuest 885
+step
+#xprate >1.6999
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Jorn|r and |cFF00FF25Tatternack|r
+.turnin 897 >>Turn in The Harvester
+.goto The Barrens,44.86,59.13
+.turnin 893 >> Turn in Weapons of Choice
+.accept 1153 >> Accept A New Ore Sample
+.goto The Barrens,45.10,57.68
+.target Jorn Skyseer
+.target Tatternack Steelforge
+.isOnQuest 897
+step
+#xprate >1.6999
+#label CampTStone2
+.goto The Barrens,45.10,57.68
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Tatternack|r
+.turnin 893 >> Turn in Weapons of Choice
+.accept 1153 >> Accept A New Ore Sample
+.target Tatternack Steelforge
+step
+#xprate <1.7
+#label CampTStone2
+.goto The Barrens,45.10,57.68
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Tatternack|r
+.turnin 1153 >> Turn in A New Ore Sample
+.target Tatternack Steelforge
+step
+#completewith next
+.goto The Barrens,44.44,59.16
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Omusa|r
+.fly Freewind Post >> Fly to Freewind Post
+.target Omusa Thunderhorn
+step
+.goto Thousand Needles,45.05,48.90,8,0
+.goto Thousand Needles,44.83,48.95
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Elu|r
+.turnin 4767 >> Turn in Wind Rider
+.target Elu
+step << Hunter
+.goto Thousand Needles,44.89,50.68
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Starn|r
+.vendor 9551 >>|cFF0E8312Buy the|r |T135495:0|t[Dense Shortbow] |cFF0E8312if it's up and|r |T132382:0|t[Razor Arrows] |cFF0E8312from him|r
+.collect 3030,2000,4767,1 
+.target Starn
+.itemcount 3030,<2000
+.money <2.8814
+.itemStat 18,QUALITY,<7
+.itemStat 18,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<18.95
+
+step << Hunter
+.goto Thousand Needles,44.89,50.68
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Starn|r
+.vendor 9551 >>|cFF0E8312Buy the|r |T135495:0|t[Dense Shortbow] |cFF0E8312from him if it's up|r
+.target Starn
+.money <2.5814
+.itemStat 18,QUALITY,<7
+.itemStat 18,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<18.95
+step << Hunter
+.goto Thousand Needles,44.89,50.68
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Starn|r
+>>|cFF0E8312Buy|r |T132382:0|t[Razor Arrows] |cFF0E8312from him|r
+.collect 3030,2000,4767,1 
+.target Starn
+.itemcount 3030,<2000
+.money <0.3000
+step << Hunter
+#completewith next
++Equip the |T135495:0|t[Dense Shortbow]
+.use 11305
+.itemcount 11305,1
+.itemStat 18,QUALITY,<7
+.itemStat 18,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<18.95
+step
+#completewith TestofE
+.goto Thousand Needles,46.07,51.51
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Abeqwa|r
+.home >> Set your Hearthstone to Freewind Post
+.target Innkeeper Abeqwa
+step
+.goto Thousand Needles,46.07,51.51
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Abeqwa|r
+>>|cFF0E8312Buy|r |T132799:0|t[Sweet Nectar] |cFF0E8312from him|r << Priest/Mage/Warlock/Druid
+>>|cFF0E8312Buy|r |T133994:0|t[Stormwind Brie] |cFF0E8312from him|r << !Priest !Mage !Warlock !Druid !Paladin
+>>|cFF0E8312Buy|r |T132799:0|t[Sweet Nectar] |cFF0E8312and|r |T133994:0|t[Stormwind Brie] |cFF0E8312from him|r << Paladin
+.collect 1708,20,1145,1 << Priest/Mage/Warlock/Druid/Paladin 
+.collect 1707,20,1145,1 << !Priest !Mage !Warlock !Druid !Paladin 
+.collect 1707,10,1145,1 << Paladin 
+.target Innkeeper Abeqwa
+.money <0.4000 << !Paladin
+.money <0.6000 << Paladin/Shaman
+.xp <24,1
+.xp >35,1
+step
+.goto Thousand Needles,46.21,50.39
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Elosai|r
+.turnin 9434 >> Turn in Testing the Tonic
+.target Magistrix Elosai
+step
+#completewith next
+.goto Thousand Needles,54.57,44.36,12,0
+.goto Thousand Needles,53.71,42.59,10,0 << !Shaman
+.goto Thousand Needles,53.95,41.49,10 >>Travel toward |cFF00FF25Dorn|r << !Shaman
+.goto Thousand Needles,53.54,42.65,10 >>Travel toward |cFF00FF25Prate|r << Shaman
+step
+#label TestofE
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Prate|r and |cFF00FF25Dorn|r << Shaman
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Dorn|r << !Shaman
+.turnin 1531 >> Turn in Call of Air << Shaman
+.goto Thousand Needles,53.54,42.65 << Shaman
+.turnin 1150 >> Turn in Test of Endurance
+.accept 1151 >> Accept Test of Strength
+.goto Thousand Needles,53.95,41.49
+.target Prate Cloudseer << Shaman
+.target Dorn Plainstalker
+step
+#completewith next
+.goto Thousand Needles,31.30,36.87,20,0
+.goto Thousand Needles,33.12,35.30,15,0
+.goto Thousand Needles,32.92,32.51,15,0
+.goto Thousand Needles,31.97,31.34,15,0
+.goto Thousand Needles,32.28,28.59,15,0
+.goto Thousand Needles,32.51,27.28,15,0
+.goto Thousand Needles,33.30,28.62,15,0
+.goto Thousand Needles,33.30,28.62,15,0
+.goto Thousand Needles,34.87,31.85,15,0
+.goto Thousand Needles,34.12,35.79,15,0
+.goto Thousand Needles,33.26,36.25,15,0
+.goto Thousand Needles,32.35,33.46,15,0
+.goto Thousand Needles,31.78,32.58,10 >>Travel toward |cFFDB2EEFDocument Chest #1|r
+step
+.goto Thousand Needles,31.78,32.58
+>>Open the |cFFDB2EEFDocument Chest #1|r. Loot it for the |cFF00BCD4Secret Note #1|r
+.complete 5064,1 
+step
+#completewith next
+.goto Thousand Needles,32.35,33.46,15,0
+.goto Thousand Needles,33.23,36.41,15,0
+.goto Thousand Needles,34.07,39.57,10,0
+.goto Thousand Needles,33.77,39.98,10 >>Travel toward |cFFDB2EEFDocument Chest #2|r
+step
+.goto Thousand Needles,33.77,39.98
+>>Open the |cFFDB2EEFDocument Chest #2|r. Loot it for the |cFF00BCD4Secret Note #2|r
+.complete 5064,2 
+step
+#completewith next
+.goto Thousand Needles,35.81,39.48,15,0
+.goto Thousand Needles,38.38,40.53,15,0
+.goto Thousand Needles,39.00,41.19,10,0
+.goto Thousand Needles,39.35,41.52,10 >>Travel toward |cFFDB2EEFDocument Chest #3|r
+step
+.goto Thousand Needles,39.35,41.52
+>>Open the |cFFDB2EEFDocument Chest #3|r. Loot it for the |cFF00BCD4Secret Note #3|r
+.complete 5064,3 
+step
+#completewith next
+.goto Thousand Needles,38.38,40.53,15,0
+.goto Thousand Needles,35.67,39.24,15,0
+.goto Thousand Needles,34.32,35.71,15,0
+.goto Thousand Needles,35.02,31.78,15,0
+.goto Thousand Needles,35.68,31.02,15,0
+.goto Thousand Needles,36.92,31.84,15,0
+.goto Thousand Needles,37.17,33.10,15,0
+.goto Thousand Needles,37.77,34.99,15,0
+.goto Thousand Needles,38.06,35.35,12 >>Travel toward the |cFFDB2EEFSacred Fire of Life|r
+step
+.goto Thousand Needles,38.06,35.35
+.cast 16996 >>Click the |cFFDB2EEFSacred Fire of Life|r to summon |cFFFF5722Arikara|r
+.timer 5,Arikara RP
+.isOnQuest 5088
+step
+.goto Thousand Needles,38.22,35.48
+>>|cFFFCDC00Wait out the RP|r
+>>Kill |cFFFF5722Arikara|r. Loot her for her |cFF00BCD4Serpent Skin|r
+.complete 5088,1 
+.complete 5088,2 
+.mob Arikara
+
+step
+#completewith next
+.goto Thousand Needles,37.77,34.99,15,0
+.goto Thousand Needles,37.16,33.15,15,0
+.goto Thousand Needles,37.72,31.46,15,0
+.goto Thousand Needles,38.98,29.43,15,0
+.goto Thousand Needles,38.07,26.74,30 >>Travel towards |cFFFF5722Arnak|r
+step
+.goto Thousand Needles,38.28,26.80,10,0
+.goto Thousand Needles,38.07,26.74
+>>Kill |cFFFF5722Arnak|r. Loot him for his |cFF00BCD4Hoof|r
+.complete 5147,1 
+.mob Arnak Grimtotem
+step << skip
+.goto Thousand Needles,37.98,26.59,8,0
+.goto Thousand Needles,37.95,26.45
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Lakota|r
+.accept 4904 >> Accept Free at Last
+.target Lakota Windsong
+
+step << skip
+>>Follow Lakota and protect her through the whole escort. Mobs will spawn periodically on the platforms.
+.goto Thousand Needles,30.7,37.1
+.complete 4904,1 
+step << Mage/Paladin
+#completewith Gizmo
+.cast 1953 >> |cFFFCDC00Jump down. Cast|r |T135736:0|t[Blink] |cFFFCDC00just before hitting the bottom to avoid taking fall damage|r << Mage
+.cast 5599 >> |cFFFCDC00Jump down. Cast|r |T135964:0|t[Blessing of Protection] |cFFFCDC00just before hitting the bottom to avoid taking fall damage|r << Paladin
+
+step << !Mage !Paladin
+#completewith next
+.goto Thousand Needles,38.98,29.43,15,0
+.goto Thousand Needles,37.56,31.46,15,0
+.goto Thousand Needles,36.88,32.79,15,0
+.goto Thousand Needles,35.96,34.38,20 >>Jump into the water below. If you die, run back to your corpse
+>>|cFFFCDC00Avoid the |cFFFF5722Scalding Elementals|r and|r |cFFFF5722Boiling Elementals|r
+
+step
+#completewith next
+.goto Thousand Needles,22.75,24.63
+.cast 17176 >>Click the |cFFDB2EEFPanther Cage|r to turn the |cFFFF5722Enraged Panther|r hostile
+step
+#label Gizmo
+.goto Thousand Needles,22.75,24.63
+>>Kill the |cFFFF5722Enraged Panther|r. Loot him for the |cFF00BCD4Hypercapacitor Gizmo|r
+>>|cFFFCDC00Make sure you have your cooldowns available|r
+>>|cFFFCDC00Find a group for him if needed|r
+.complete 5151,1 
+.mob Enraged Panther
+step
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Kanati|r, |cFF00FF25Motega|r, and |cFF00FF25Wizlo|r
+>>|cFFFCDC00Turn in quickly, as turning in "Assassination Plot" will summon three |cFFFF5722Galak Assassins|r that you have to protect |cFF00FF25Kanati|r from|r
+.turnin 4881 >> Turn in Assassination Plot
+.accept 4966 >> Accept Protect Kanati Greycloud
+.goto Thousand Needles,21.25,32.05
+.turnin 5088 >> Turn in Arikara
+.goto Thousand Needles,21.43,32.35,5,0
+.goto Thousand Needles,21.54,32.35
+.turnin 5151 >> Turn in Hypercapacitor Gizmo
+.goto Thousand Needles,21.43,32.55
+.target Kanati Greycloud
+.target Motega Firemane
+.target Wizlo Bearingshiner
+.isOnQuest 4881
+step
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Kanati|r, |cFF00FF25Motega|r, and |cFF00FF25Wizlo|r
+>>|cFFFCDC00Turn in quickly, as turning in "Assassination Plot" will summon three |cFFFF5722Galak Assassins|r that you have to protect |cFF00FF25Kanati|r from|r
+.accept 4966 >> Accept Protect Kanati Greycloud
+.goto Thousand Needles,21.25,32.05
+.turnin 5088 >> Turn in Arikara
+.goto Thousand Needles,21.43,32.35,5,0
+.goto Thousand Needles,21.54,32.35
+.turnin 5151 >> Turn in Hypercapacitor Gizmo
+.goto Thousand Needles,21.43,32.55
+.target Kanati Greycloud
+.target Motega Firemane
+.target Wizlo Bearingshiner
+.isQuestTurnedIn 4881
+.isQuestAvailable 4966
+step
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Motega|r and |cFF00FF25Wizlo|r
+.turnin 5088 >> Turn in Arikara
+.goto Thousand Needles,21.43,32.35,5,0
+.goto Thousand Needles,21.54,32.35
+.turnin 5151 >> Turn in Hypercapacitor Gizmo
+.goto Thousand Needles,21.43,32.55
+.target Kanati Greycloud
+.target Motega Firemane
+.target Wizlo Bearingshiner
+step
+.goto Thousand Needles,21.25,32.05
+>>Kill the |cFFFF5722Galak Assassins|r to protect |cFF00FF25Kanati|r
+.complete 4966,1 
+.mob Galak Assassin
+.isOnQuest 4966
+step
+.goto Thousand Needles,21.25,32.05
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Kanati|r
+.turnin 4966 >> Turn in Protect Kanati Greycloud
+.isQuestComplete 4966
+step
+.goto Thousand Needles,10.92,22.28,40,0
+.goto Thousand Needles,10.60,22.80,40,0
+.goto Thousand Needles,12.96,26.67,40,0
+.goto Thousand Needles,17.18,37.08,40,0
+.goto Thousand Needles,16.90,37.80,40,0
+.goto Thousand Needles,21.22,39.04,40,0
+.goto Thousand Needles,21.92,38.62,40,0
+.goto Thousand Needles,25.43,41.71,40,0
+.goto Thousand Needles,25.77,41.44,40,0
+.goto Thousand Needles,10.92,22.28,40,0
+.goto Thousand Needles,10.60,22.80,40,0
+.goto Thousand Needles,12.96,26.67,40,0
+.goto Thousand Needles,17.18,37.08,40,0
+.goto Thousand Needles,16.90,37.80,40,0
+.goto Thousand Needles,21.22,39.04,40,0
+.goto Thousand Needles,21.92,38.62,40,0
+.goto Thousand Needles,25.43,41.71,40,0
+.goto Thousand Needles,25.77,41.44
+>>Kill |cFFFF5722Rok'Alim|r. Loot him for the |cFF00BCD4Fragments of Rok'Alim|r
+>>|cFFFF5722Rok'Alim|r is immune to Nature damage << Shaman/Druid
+.unitscan Rok'Alim the Pounder
+.complete 1151,1 
+step
+#completewith FreewindEnd
+.hs >> Hearth to Freewind Post
+.cooldown item,6948,>0
+step
+#completewith FreewindEnd
+.goto Thousand Needles,46.73,48.27,30 >> Travel to Freewind Post's Elevators
+.cooldown item,6948,<0
+step
+#completewith FreewindEnd
+.goto Thousand Needles,45.91,49.91,25 >> Take the Elevator up to Freewind
+.cooldown item,6948,<0
+step
+.goto Thousand Needles,46.07,51.51
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Abeqwa|r
+>>|cFF0E8312Buy|r |T132799:0|t[Sweet Nectar] |cFF0E8312from him|r << Priest/Mage/Warlock/Druid
+>>|cFF0E8312Buy|r |T133994:0|t[Stormwind Brie] |cFF0E8312from him|r << !Priest !Mage !Warlock !Druid !Paladin
+>>|cFF0E8312Buy|r |T132799:0|t[Sweet Nectar] |cFF0E8312and|r |T133994:0|t[Stormwind Brie] |cFF0E8312from him|r << Paladin
+.collect 1708,20,1145,1 << Priest/Mage/Warlock/Druid/Paladin 
+.collect 1707,20,1145,1 << !Priest !Mage !Warlock !Druid !Paladin 
+.collect 1707,10,1145,1 << Paladin 
+.target Innkeeper Abeqwa
+.money <0.4000 << !Paladin
+.money <0.6000 << Paladin/Shaman
+.xp <24,1
+.xp >35,1
+step
+#label FreewindEnd
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Longhorn|r
+.goto Thousand Needles,45.70,50.63,8,0
+.goto Thousand Needles,45.65,50.80
+.turnin 5064 >> Turn in Grimtotem Spying
+.turnin 5147 >> Turn in Wanted - Arnak Grimtotem
+.target Cliffwatcher Longhorn
+step << skip
+.goto Thousand Needles,46.0,51.5
+.turnin 4904 >> Turn in Free at Last
+step << Warlock
+#xprate <1.7
+#completewith Manuscript
+.goto Thousand Needles,44.12,37.22,20 >>Enter the cave
+step << Warlock
+#xprate <1.7
+#completewith Manuscript
+.goto Thousand Needles,44.41,36.40,20,0
+.goto Thousand Needles,44.20,35.00,20,0
+.goto Thousand Needles,44.31,32.87,20,0
+.goto Thousand Needles,43.44,32.69,15 >>Travel toward the |cFFDB2EEFDamaged Chest|r
+step << Warlock
+#xprate <1.7
+.goto Thousand Needles,43.44,32.69
+>>Open the |cFFDB2EEFDamaged Chest|r on the ground. Loot it for the |cFF00BCD4Tattered Manuscript|r
+.complete 1803,2 
+step << Warlock
+#xprate <1.7
+#completewith next
+.goto Thousand Needles,44.12,37.22,20 >>Exit the cave
+step
+#completewith next
+.goto Thousand Needles,54.57,44.36,12,0
+.goto Thousand Needles,53.71,42.59,10,0
+.goto Thousand Needles,53.95,41.49,10 >>Travel toward |cFF00FF25Dorn|r
+step
+.goto Thousand Needles,53.95,41.49
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Dorn|r
+.turnin 1151 >> Turn in Test of Strength
+.target Dorn Plainstalker
+step
+#xprate >1.6999
+.line Thousand Needles,51.89,43.02,53.41,46.19,54.05,44.96
+.line Thousand Needles,53.47,46.65,52.61,48.28,53.64,48.50,52.61,48.28,51.48,48.06
+.line Thousand Needles,62.21,47.76,63.05,48.92,62.63,48.38,62.96,47.64,64.01,47.52,63.92,46.63,63.10,45.53
+.line Thousand Needles,65.83,51.44,65.87,51.01,65.44,50.11,64.91,50.30,65.44,50.11,66.11,49.91,66.32,49.13
+.line Thousand Needles,59.79,58.16,59.53,58.57,58.87,58.69,57.66,57.70,58.87,58.69,58.93,57.68,58.94,56.55,58.97,54.98,59.32,53.69,59.79,58.16
+.goto Thousand Needles,51.89,43.02,40,0
+.goto Thousand Needles,53.41,46.19,40,0
+.goto Thousand Needles,54.05,44.96,40,0
+.goto Thousand Needles,53.47,46.65,40,0
+.goto Thousand Needles,52.61,48.28,40,0
+.goto Thousand Needles,53.64,48.50,40,0
+.goto Thousand Needles,51.48,48.06,40,0
+.goto Thousand Needles,59.69,47.76,40,0
+.goto Thousand Needles,62.21,47.76,40,0
+.goto Thousand Needles,62.63,48.38,40,0
+.goto Thousand Needles,64.01,47.52,40,0
+.goto Thousand Needles,63.92,46.63,40,0
+.goto Thousand Needles,63.10,45.53,40,0
+.goto Thousand Needles,65.83,51.44,40,0
+.goto Thousand Needles,65.44,50.11,40,0
+.goto Thousand Needles,64.91,50.30,40,0
+.goto Thousand Needles,66.11,49.91,40,0
+.goto Thousand Needles,66.32,49.13,40,0
+.goto Thousand Needles,59.79,58.16,40,0
+.goto Thousand Needles,58.87,58.69,40,0
+.goto Thousand Needles,57.66,57.70,40,0
+.goto Thousand Needles,58.93,57.68,40,0
+.goto Thousand Needles,58.94,56.55,40,0
+.goto Thousand Needles,58.97,54.98,40,0
+.goto Thousand Needles,59.32,53.69,40,0
+.goto Thousand Needles,51.89,43.02
+>>Kill |cFFFF5722Gravelsnout Surveyors|r, |cFFFF5722Gravelsnout Diggers|r, and |cFFFF5722Gibblesnik|r (if he's up). Loot them for an |cFF00BCD4Ore Sample|r
+.complete 1153,1 
+.unitscan Gravelsnout Digger,Gravelsnout Surveyor,Gibblesnik
+step
+.goto Thousand Needles,67.59,63.94
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Moktar|r
+.turnin 1146 >> Turn in The Swarm Grows
+.accept 1147 >> Accept The Swarm Grows
+.target Moktar Krin
+]])
+RXPGuides.RegisterGuide([[
+#tbc
+#wotlk
+<< Horde
+#name 32-34 Shimmering Flats JJ
+#version 18
+#group RestedXP Horde 30-45
+#next 34-38 Stranglethorn Vale / Dustwallow
+#xprate >1.4999
+step
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Kravel|r, |cFF00FF25Fizzle|r, |cFF00FF25Wizzle|r, |cFF00FF25Pozzik|r, and |cFF00FF25Zherin|r
+.accept 1110 >> Accept Rocket Car Parts
+.accept 1111 >> Accept Wharfmaster Dizzywig
+.accept 5762 >> Accept Hemet Nesingwary Jr.
+.goto Thousand Needles,77.78,77.27
+.accept 1104 >> Accept Salt Flat Venom
+.goto Thousand Needles,78.06,77.12
+.accept 1105 >> Accept Hardened Shells
+.goto Thousand Needles,78.14,77.12
+.accept 1176 >> Accept Load Lightening
+.goto Thousand Needles,80.18,75.88
+.accept 1175 >> Accept A Bump in the Road
+.goto Thousand Needles,81.63,77.95
+.target Kravel Koalbeard
+.target Fizzle Brassbolts
+.target Wizzle Brassbolts
+.target Pozzik
+.target Trackmaster Zherin
+step
+>>Loot |cFF00BCD4Rocket Car Parts|r on the ground
+>>Kill |cFFFF5722Scorpid Reavers|r and |cFFFF5722Scorpid Terrors|r. Loot them for their |cFF00BCD4Venom|r
+>>Kill |cFFFF5722Sparkleshell Tortoises|r and |cFFFF5722Sparkleshell Borers|r. Loot them for their |cFF00BCD4Hardened Tortoise Shells|r
+>>|cFFFCDC00Try to avoid killing |cFFFF5722Sparkleshell Snappers|r as they are very tanky|r
+>>Kill |cFFFF5722Saltstone Basilisks|r
+>>Kill |cFFFF5722Salt Flats Scavengers|r. Loot them for their |cFF00BCD4Bones|r
+>>|cFFFCDC00Be careful as |cFFFF5722Salt Flats Scavengers|r cast|r |T135358:0|t[Execute] |cFFFCDC00when you're 20% or less health|r << Rogue/Warrior
+>>Kill |cFFFF5722Saltstone Crystalhides|r and |cFFFF5722Saltstone Gazers|r
+>>|cFFFCDC00Be careful as |cFFFF5722Saltstone Crystalhides|r cast|r |T136170:0|t[Mana Burn] << !Rogue !Warrior
+>>|cFFFCDC00Be careful as |cFFFF5722Saltstone Gazers|r cast|r |T132154:0|t[Crystal Gaze] |cFFFCDC00(run out of melee)|r
+.complete 1110,1 
+.goto Thousand Needles,84.06,82.00,60,0
+.goto Thousand Needles,88.56,76.96,60,0
+.goto Thousand Needles,86.90,72.23,60,0
+.goto Thousand Needles,88.12,67.69,60,0
+.goto Thousand Needles,87.82,65.82,60,0
+.goto Thousand Needles,78.84,62.51,80,0
+.goto Thousand Needles,85.99,59.45,60,0
+.goto Thousand Needles,83.31,54.46,60,0
+.goto Thousand Needles,80.82,55.68,60,0
+.goto Thousand Needles,79.48,52.60,60,0
+.goto Thousand Needles,76.29,52.98,60,0
+.goto Thousand Needles,71.64,55.30,60,0
+.goto Thousand Needles,69.26,61.49,60,0
+.goto Thousand Needles,69.51,65.98,60,0
+.goto Thousand Needles,71.64,73.36,60,0
+.goto Thousand Needles,73.23,80.90,60,0
+.loop 50,Thousand Needles,84.06,82.00,88.56,76.96,86.90,72.23,88.12,67.69,87.82,65.82,85.99,59.45,83.31,54.46,80.82,55.68,79.48,52.60,76.29,52.98,71.64,55.30,69.26,61.49,69.51,65.98,71.64,73.36,73.23,80.90,84.06,82.00
+.complete 1104,1 
+.goto Thousand Needles,71.59,74.22,50,0
+.loop 50,Thousand Needles,71.59,74.22,71.05,72.56,70.97,68.79,69.47,64.42,71.99,65.92,74.95,64.90,73.44,61.91,72.42,59.43,71.77,58.10,74.55,58.53,74.34,54.34,75.87,54.27,75.88,51.16,77.71,51.40,78.57,52.74,78.86,54.73,82.85,59.98,83.95,62.60,82.78,66.31,83.71,71.62,82.64,73.35,76.97,73.71,72.38,73.30,71.59,74.22
+.complete 1105,1 
+.loop 50,Thousand Needles,69.47,67.05,70.11,65.82,70.76,63.39,69.37,59.98,73.20,58.42,74.54,62.91,75.42,64.24,74.98,61.38,76.74,59.03,74.12,55.34,74.98,52.08,77.22,54.11,81.26,52.82,82.02,54.40,82.86,54.82,83.99,54.20,83.26,57.79,83.64,60.36,80.21,66.44,77.20,68.33,76.43,70.35,77.57,72.28,76.46,72.50,69.47,67.05
+.complete 1175,1 
+.loop 50,Thousand Needles,69.70,68.11,71.13,65.70,71.33,64.91,68.79,61.48,69.82,60.22,73.89,59.61,73.38,56.68,74.26,53.25,76.44,52.17,76.64,54.47,76.17,56.48,76.80,57.41,75.46,57.28,75.83,62.30,77.22,60.80,77.83,59.58,78.58,59.12,78.46,61.48,80.85,60.42,80.47,64.47,79.14,63.59,79.37,65.60,77.59,65.11,78.13,63.27,71.70,67.52,69.70,68.11
+.complete 1176,1 
+.goto Thousand Needles,87.95,66.84,50,0
+.loop 50,Thousand Needles,87.43,64.71,81.56,53.92,78.02,59.83,75.62,60.40,72.38,73.00,70.81,76.29,77.19,84.12,78.63,84.96,81.46,85.87,84.06,82.05,84.51,81.85,83.47,76.62,87.95,66.84,87.43,64.71
+.complete 1175,2 
+.loop 50,Thousand Needles,77.53,83.48,76.55,84.70,76.21,86.62,77.62,86.46,77.66,87.96,77.74,90.18,78.54,89.69,79.08,88.67,79.42,89.56,80.25,88.76,79.35,87.11,78.73,86.84,79.10,85.83,77.53,83.48
+.complete 1175,3 
+.loop 50,Thousand Needles,77.53,83.48,76.55,84.70,76.21,86.62,77.62,86.46,77.66,87.96,77.74,90.18,78.54,89.69,79.08,88.67,79.42,89.56,80.25,88.76,79.35,87.11,78.73,86.84,79.10,85.83,77.53,83.48
+.mob Scorpid Reaver
+.mob Scorpid Terror
+.mob Salt Flats Scavenger
+.mob Sparkleshell Tortoise
+.mob Sparkleshell Borer
+.mob Sparkleshell Snapper
+.mob Saltstone Basilisk
+.mob Saltstone Crystalhide
+.mob Saltstone Gazer
+step
+.loop 45,Thousand Needles,70.58,82.39,71.81,83.64,71.09,86.04,71.00,86.90,70.07,86.97,70.20,88.51,69.20,89.23,68.53,88.14,67.99,87.07,67.96,85.92,65.65,86.30,65.15,85.17,63.87,85.92,65.15,85.17,65.65,86.30,67.96,85.92,67.38,83.63,67.07,82.42,68.09,81.75,69.63,81.21,70.58,82.39
+>>Kill |cFFFF5722Silithid Searchers|r, |cFFFF5722Silithid Hive Drones|r, |cFFFF5722Silithid Invaders|r, and the |cFFFF5722Silithid Ravager|r (if it's up). Loot them for the |T135034:0|t[|cFF00BCD4Cracked Silithid Carapace|r]
+>>|cFFFCDC00Use the |T135034:0|t[|cFF00BCD4Cracked Silithid Carapace|r] to start the quest|r
+.collect 5877,1,1148,1 
+.accept 1148 >> Accept Parts of the Swarm
+.use 5877
+.mob Silithid Searcher
+.mob Silithid Hive Drone
+.mob Silithid Invader
+.unitscan Silithid Ravager
+step
+#completewith next
+.loop 45,Thousand Needles,70.58,82.39,71.81,83.64,71.09,86.04,71.00,86.90,70.07,86.97,70.20,88.51,69.20,89.23,68.53,88.14,67.99,87.07,67.96,85.92,65.65,86.30,65.15,85.17,63.87,85.92,65.15,85.17,65.65,86.30,67.96,85.92,67.38,83.63,67.07,82.42,68.09,81.75,69.63,81.21,70.58,82.39
+>>Kill |cFFFF5722Silithid Hive Drones|r, |cFFFF5722Silithid Searchers|r, |cFFFF5722Silithid Invaders|r, and the |cFFFF5722Silithid Ravager|r (if it's up). Loot them for their |cFF00BCD4Silithid Hearts|r, |cFF00BCD4Silithid Talons|r, and |cFF00BCD4Intact Silithid Carapaces|r
+.complete 1147,1 
+.complete 1147,2 
+.complete 1148,1 
+.complete 1148,2 
+.complete 1148,3 
+.mob Silithid Hive Drone
+.mob Silithid Searcher
+.unitscan Silithid Ravager
+step
+.goto Thousand Needles,66.90,86.18,40,0
+.goto Thousand Needles,65.77,86.21,20,0
+.goto Thousand Needles,65.12,85.16,20,0
+.goto Thousand Needles,63.52,85.80,40,0
+.goto Thousand Needles,66.90,86.18,50,0
+>>Kill |cFFFF5722Silithid Invaders|r inside the cave. They share spawns with the |cFFFF5722Silithid Hive Drones|r inside the cave
+>>|cFFFCDC00You may need to return to the cave a second time|r
+.complete 1147,3 
+.mob Silithid Invader
+step
+#completewith next
+>>Kill |cFFFF5722Silithid Hive Drones|r, |cFFFF5722Silithid Searchers|r, |cFFFF5722Silithid Invaders|r, and the |cFFFF5722Silithid Ravager|r (if it's up). Loot them for their |cFF00BCD4Silithid Hearts|r, |cFF00BCD4Silithid Talons|r, and |cFF00BCD4Intact Silithid Carapaces|r
+.complete 1147,2 
+.complete 1148,1 
+.complete 1148,2 
+.complete 1148,3 
+.mob Silithid Hive Drone
+.mob Silithid Invader
+.unitscan Silithid Ravager
+step
+.loop 45,Thousand Needles,70.58,82.39,71.81,83.64,71.09,86.04,71.00,86.90,70.07,86.97,70.20,88.51,69.20,89.23,68.53,88.14,67.99,87.07,67.96,85.92,67.96,85.92,67.38,83.63,67.07,82.42,68.09,81.75,69.63,81.21,70.58,82.39
+>>Kill |cFFFF5722Silithid Searchers|r outside the cave
+.complete 1147,1 
+.mob Silithid Searcher
+step
+.loop 45,Thousand Needles,70.58,82.39,71.81,83.64,71.09,86.04,71.00,86.90,70.07,86.97,70.20,88.51,69.20,89.23,68.53,88.14,67.99,87.07,67.96,85.92,65.65,86.30,65.15,85.17,63.87,85.92,65.15,85.17,65.65,86.30,67.96,85.92,67.38,83.63,67.07,82.42,68.09,81.75,69.63,81.21,70.58,82.39
+>>Kill |cFFFF5722Silithid Hive Drones|r, |cFFFF5722Silithid Searchers|r outside the cave, |cFFFF5722Silithid Invaders|r inside the cave, and the |cFFFF5722Silithid Ravager|r (if it's up). Loot them for their |cFF00BCD4Silithid Hearts|r, |cFF00BCD4Silithid Talons|r, and |cFF00BCD4Intact Silithid Carapaces|r
+.complete 1147,2 
+.complete 1148,1 
+.complete 1148,2 
+.complete 1148,3 
+.mob Silithid Hive Drone
+.mob Silithid Searcher
+.mob Silithid Invader
+.unitscan Silithid Ravager
+step
+.goto Thousand Needles,67.59,63.94
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Moktar|r
+.turnin 1147 >> Turn in The Swarm Grows
+.target Moktar Krin
+step
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Kravel|r, |cFF00FF25Fizzle|r, |cFF00FF25Wizzle|r, |cFF00FF25Pozzik|r, and |cFF00FF25Zherin|r
+.turnin 1110 >> Turn in Rocket Car Parts
+.goto Thousand Needles,77.78,77.27
+.turnin 1104 >> Turn in Salt Flat Venom
+.goto Thousand Needles,78.06,77.12
+.turnin 1105 >> Turn in Hardened Shells
+.accept 1107 >> Accept Encrusted Tail Fins << Druid/Warlock
+.goto Thousand Needles,78.14,77.12
+.accept 1106 >> Accept Martek the Exiled
+.goto Thousand Needles,78.06,77.12
+.turnin 1176 >> Turn in Load Lightening
+.accept 1178 >> Accept Goblin Sponsorship
+.goto Thousand Needles,80.18,75.88
+.turnin 1175 >> Turn in A Bump in the Road
+.goto Thousand Needles,81.63,77.95
+.target Kravel Koalbeard
+.target Fizzle Brassbolts
+.target Wizzle Brassbolts
+.target Pozzik
+.target Trackmaster Zherin
+step
+#completewith Bulkrek
+.abandon 1152 >> Abandon Test of Lore
+step
+.loop 50,Thousand Needles,77.53,83.48,76.55,84.70,76.21,86.62,77.62,86.46,77.66,87.96,77.74,90.18,78.54,89.69,79.08,88.67,79.42,89.56,80.25,88.76,79.35,87.11,78.73,86.84,79.10,85.83,77.53,83.48
+.xp 32 >> Grind to 32
+step
+#completewith next
+.goto Thousand Needles,74.36,93.86,30,0
+.goto Thousand Needles,74.43,95.46,25,0
+.goto Tanaris,51.14,20.85,30,0
+.goto Tanaris,51.02,23.76,40,0
+.goto Tanaris,51.60,25.44,30 >>Travel toward |cFF00FF25Bulkrek|r
+step
+#label Bulkrek
+.goto Tanaris,51.60,25.44
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Bulkrek|r
+.fp Gadgetzan >> Get the Gadgetzan flight path
+.target Bulkrek Ragefist
+step << Druid
+#completewith Moonglade1
+.cast 18960 >> Cast |T135758:0|t[Teleport: Moonglade]
+.zoneskip Moonglade
+.xp <32,1
+step << Druid
+.goto Moonglade,52.53,40.57
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Loganaar|r
+.train 6778 >> Train your class spells
+.target Loganaar
+.xp <32,1
+.xp >34,1
+step << Druid
+#label Moonglade1
+.goto Moonglade,52.53,40.57
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Loganaar|r
+.train 3627 >> Train your class spells
+.target Loganaar
+.xp <34,1
+step
+#completewith SwarmPT
+.hs >> Hearth to Freewind Post
+step << Tauren
+#completewith next
+.goto Thousand Needles,45.14,49.11
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Nyse|r
+.fly Thunder Bluff >> Fly to Thunder Bluff
+.target Nyse
+.zoneskip Thunder Bluff
+.skill riding,75,1
+step << Tauren
+.goto Mulgore,47.65,58.47
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Kar|r
+.skill riding,75 >> Train |T136103:0|t[Apprentice Riding] from him
+.target Kar Stormsinger
+.money <4.5 << wotlk
+.money <42.25 << tbc
+step << Tauren
+.goto Mulgore,47.49,58.60
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Harb|r
++|cFF0E8312Buy any|r |T132243:0|t[Kodo] |cFF0E8312that you like from him|r
+.target Harb Clawhoof
+.itemcount 15277,<1 
+.itemcount 15290,<1 
+.itemcount 46100,<1 << wotlk 
+.money <0.9 << wotlk
+.money <9.0000 << tbc
+.skill riding,<75,1
+step << Tauren
+.cast 55884 >> Use the |T132243:0|t[Gray Kodo] to learn it
+.use 15277
+.itemcount 15277,1
+.skill riding,75,1
+step << Tauren
+.cast 55884 >> Use the |T132245:0|t[Brown Kodo] to learn it
+.use 15290
+.itemcount 15290,1
+.skill riding,75,1
+step << Tauren wotlk
+.cast 55884 >> Use the |T132243:0|t[White Kodo] to learn it
+.use 46100
+.itemcount 46100,1
+.skill riding,75,1
+
+step << Tauren
+>>|cFFFCDC00Press "Shift+P" to open your Mount tab|r
+>>|cFFFCDC00Drag the|r |T132243:0|t[Gray Kodo] |cFFFCDC00onto your Action Bars|r
+.cast 18989 >> Mount your |T132243:0|t[Gray Kodo]
+.train 18989,3
+.zoneskip Mulgore,1
+step << Tauren
+>>|cFFFCDC00Press "Shift+P" to open your Mount tab|r
+>>|cFFFCDC00Drag the|r |T132245:0|t[Brown Kodo] |cFFFCDC00onto your Action Bars|r
+.cast 18990 >> Mount your |T132245:0|t[Brown Kodo]
+.train 18990,3
+.zoneskip Mulgore,1
+step << Tauren wotlk
+>>|cFFFCDC00Press "Shift+P" to open your Mount tab|r
+>>|cFFFCDC00Drag the|r |T132243:0|t[White Kodo] |cFFFCDC00onto your Action Bars|r
+.cast 64657 >> Mount your |T132243:0|t[White Kodo]
+.train 64657,3
+.zoneskip Mulgore,1
+
+step << Tauren
+#label BarrensTr
+#completewith next
+.goto The Barrens,41.40,58.55
+.zone The Barrens >>Travel to The Barrens
+.zoneskip Mulgore,1
+step
+#xprate >1.6999
+#requires BarrensTr << Tauren
+#completewith next
+.goto Thousand Needles,45.14,49.11
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Nyse|r
+.fly Camp Taurajo >> Fly to Camp Taurajo
+.zoneskip The Barrens
+.target Nyse
+step
+#xprate >1.6999
+.goto The Barrens,45.10,57.68
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Tatternack|r
+.turnin 1153 >> Turn in A New Ore Sample
+.target Tatternack Steelforge
+step
+#xprate <1.7
+#requires BarrensTr
+#label BarrensFly
+#completewith next
+.goto Thousand Needles,45.14,49.11
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Nyse|r
+.fly Crossroads >> Fly to Crossroads
+.target Nyse
+.zoneskip The Barrens
+step
+#requires BarrensFly
+.goto The Barrens,44.44,59.16
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Omusa|r
+.fly Crossroads >> Fly to Crossroads
+.target Omusa Thunderhorn
+step
+#label SwarmPT
+.goto The Barrens,51.07,29.63
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Korran|r
+.turnin 1148 >> Turn in Parts of the Swarm
+.accept 1184 >> Accept Parts of the Swarm
+.target Korran
+step << Mage
+#label TeleportOrg
+#completewith PartsOTS
+.cast 3567 >> Cast |T135759:0|t[Teleport: Orgrimmar]
+.itemcount 17031,1
+.zoneskip Orgrimmar
+step
+#requires TeleportOrg << Mage
+#completewith PartsOTS
+.goto The Barrens,51.50,30.33
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Devrak|r
+.fly Orgrimmar >> Fly to Orgrimmar
+.target Devrak
+.zoneskip The Barrens,1
+step << Mage
+#xprate >1.6999
+.goto Orgrimmar,38.45,86.12
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Deino|r downstairs
+.train 8422 >> Train your class spells
+.target Deino
+.xp <32,1
+.xp >34,1
+step << Mage
+#xprate >1.6999
+.goto Orgrimmar,38.45,86.12
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Deino|r downstairs
+.train 8422 >> Train your class spells
+.target Deino
+.xp <34,1
+step << Mage
+#xprate <1.7
+.goto Orgrimmar,38.45,86.12
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Deino|r downstairs
+.train 8422 >> Train your class spells
+.target Deino
+.xp <32,1
+.xp >34,1
+step << Mage
+#xprate <1.7
+.goto Orgrimmar,38.45,86.12
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Deino|r downstairs
+.train 8422 >> Train your class spells
+.target Deino
+.xp <34,1
+step << Priest
+.goto Orgrimmar,35.59,87.80
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Ur'kyo|r
+.train 9473 >> Train your class spells
+.target Ur'kyo
+.xp <32,1
+.xp >34,1
+step << Priest
+.goto Orgrimmar,35.59,87.80
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Ur'kyo|r
+.train 8105 >> Train your class spells
+.target Ur'kyo
+.xp <34,1
+step << Shaman
+.goto Orgrimmar,38.81,36.38
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Kardris|r
+.train 8499 >> Train your class spells
+.target Kardris Dreamseeker
+.xp <32,1
+.xp >34,1 << wotlk
+step << Shaman wotlk
+.goto Orgrimmar,38.81,36.38
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Kardris|r
+.train 52131 >> Train your class spells
+.target Kardris Dreamseeker
+.xp <34,1
+step << Paladin
+.goto Orgrimmar,32.29,35.74
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Pyreanor|r
+.train 19836 >> Train your class spells
+.target Master Pyreanor
+.xp <32,1
+.xp >34,1
+step << Paladin
+.goto Orgrimmar,32.29,35.74
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Pyreanor|r
+.train 642 >> Train your class spells
+.target Master Pyreanor
+.xp <34,1
+step << Rogue
+.goto Orgrimmar,43.90,54.63
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Ormok|r
+.train 8623 >>Train your class spells
+.target Ormok
+.xp <32,1
+.xp >34,1
+step << Rogue
+.goto Orgrimmar,43.90,54.63
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Ormok|r
+.train 8696 >>Train your class spells
+.target Ormok
+.xp <34,1
+step << skip
+.goto Orgrimmar,47.99,45.93
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Grol'dar|r
+.train 6213 >> Train your class spells
+.target Grol'dar
+
+step
+#completewith next
+.goto Orgrimmar,62.56,38.52,20,0 << Paladin/Shaman
+.goto Orgrimmar,62.98,39.35,20,0 << !Paladin !Shaman
+.goto Orgrimmar,64.34,38.17,20,0
+.goto Orgrimmar,75.23,34.24,20 >> Travel toward |cFF00FF25Belgrom|r
+step
+.goto Orgrimmar,75.23,34.24
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Belgrom|r
+.turnin 1184 >> Turn in Parts of the Swarm
+.target Belgrom Rockmaul
+step << Warrior
+.goto Orgrimmar,80.39,32.38
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Sorek|r
+.train 11549 >> Train your class spells
+.target Sorek
+.xp <32,1
+.xp >34,1
+step << Warrior
+.goto Orgrimmar,80.39,32.38
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Sorek|r
+.train 7379 >> Train your class spells
+.target Sorek
+.xp <34,1
+step << Orc !Warlock
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Kildar|r and |cFF00FF25Ogunaro|r
+.skill riding,75 >> Train |T136103:0|t[Apprentice Riding] from |cFF00FF25Kildar|r
+.goto Orgrimmar,69.41,13.11
++|cFF0E8312Buy any|r |T132224:0|t[Wolf] |cFF0E8312that you like from |cFF00FF25Ogunaro|r|r
+.goto Orgrimmar,69.38,12.25
+.target Kildar
+.target Ogunaro Wolfrunner
+.itemcount 1132,<1 
+.itemcount 5665,<1 
+.itemcount 5668,<1 
+.itemcount 46099,<1 << wotlk 
+.money <4.5 << wotlk
+.money <42.25 << tbc
+.skill riding,75,1
+step << Orc !Warlock
+.cast 55884 >> Use the |T132224:0|t[Horn of the Timber Wolf] to learn it
+.use 1132
+.itemcount 1132,1
+.skill riding,75,1
+step << Orc !Warlock
+.cast 55884 >> Use the |T132266:0|t[Horn of the Dire Wolf] to learn it
+.use 5665
+.itemcount 5665,1
+.skill riding,75,1
+step << Orc !Warlock
+.cast 55884 >> Use the |T132224:0|t[Horn of the Brown Wolf] to learn it
+.use 5668
+.itemcount 5668,1
+.skill riding,75,1
+step << Orc !Warlock wotlk
+.cast 55884 >> Use the |T132224:0|t[Horn of the Black Wolf] to learn it
+.use 46099
+.itemcount 46099,1
+.skill riding,75,1
+step << Orc !Warlock
+#completewith OrgTrain
+>>|cFFFCDC00Press "Shift+P" to open your Mount tab|r
+>>|cFFFCDC00Drag the|r |T132224:0|t[Timber Wolf] |cFFFCDC00onto your Action Bars|r
+.cast 580 >> Mount your |T132224:0|t[Timber Wolf]
+.train 580,3
+step << Orc !Warlock
+#completewith OrgTrain
+>>|cFFFCDC00Press "Shift+P" to open your Mount tab|r
+>>|cFFFCDC00Drag the|r |T132266:0|t[Dire Wolf] |cFFFCDC00onto your Action Bars|r
+.cast 6653 >> Mount your |T132266:0|t[Dire Wolf]
+.train 6653,3
+step << Orc !Warlock
+#completewith OrgTrain
+>>|cFFFCDC00Press "Shift+P" to open your Mount tab|r
+>>|cFFFCDC00Drag the|r |T132224:0|t[Brown Wolf] |cFFFCDC00onto your Action Bars|r
+.cast 6654 >> Mount your |T132224:0|t[Brown Wolf]
+.train 6654,3
+step << Orc !Warlock wotlk
+#completewith OrgTrain
+>>|cFFFCDC00Press "Shift+P" to open your Mount tab|r
+>>|cFFFCDC00Drag the|r |T132224:0|t[Black Wolf] |cFFFCDC00onto your Action Bars|r
+.cast 64658 >> Mount your |T132224:0|t[Black Wolf]
+.train 64658,3
+step << skip
+.goto Orgrimmar,66.05,18.52
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Ormak|r
+.train 1543 >> Train your class spells
+.target Ormak Grimshot
+
+step
+.goto Orgrimmar,54.10,68.39
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Gryshka|r
+.home >> Set your Hearthstone to Orgrimmar
+.target Innkeeper Gryshka
+step << Undead Mage
+.cast 3563 >> Cast |T135766:0|t[Teleport: Undercity]
+.itemcount 17031,1
+.skill riding,75,1
+.money <4.5 << wotlk
+.money <42.25 << tbc
+.train 3563,3
+.zoneskip Undercity
+.zoneskip Tirisfal Glades
+step << Undead Mage
+.goto Undercity,82.77,15.85
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Hannah|r
+.vendor >>|cFF0E8312Buy up to 20|r |T134419:0|t[Runes of Teleportation] |cFF0E8312from her|r
+.target Horthus
+.skill riding,75,1
+.money <6.3125 << wotlk
+.money <44.05 << tbc
+.itemcount 17031,<20
+.train 3563,3
+.target Hannah Akeley
+step << Undead Mage
+#completewith next
+.goto Undercity,82.28,15.47
+.goto Undercity,67.90,15.29,30 >>|cFFFCDC00Perform a Logout Skip by positioning your character on the highest part of the lowest staircase until it looks like they're floating, then logging out and back in|r
+.link https://www.youtube.com/watch?v=-Bi95bCN8dM >> CLICK HERE
+.skill riding,75,1
+.money <4.5 << wotlk
+.money <42.25 << tbc
+.train 3563,3
+.zoneskip Tirisfal Glades
+step << Undead Mage
+.goto Undercity,66.21,4.90,15,0
+.goto Tirisfal Glades,61.73,64.87
+.zone Tirisfal Glades >>Exit Undercity
+.skill riding,75,1
+.money <4.5 << wotlk
+.money <42.25 << tbc
+.train 3563,3
+step << Undead !Warlock
+#completewith next
+.goto Orgrimmar,52.26,88.65,30,0
+.goto Orgrimmar,49.42,90.90,30,0
+.goto Orgrimmar,49.59,94.74,30,0
+.goto Durotar,50.61,13.27
+.zone Durotar >> Exit Orgrimmar
+.money <4.5 << wotlk
+.money <42.25 << tbc
+.skill riding,75,1
+.zoneskip Undercity
+.zoneskip Tirisfal Glades
+step << Undead !Warlock
+.goto Durotar,50.61,13.27,12,0
+.goto Durotar,50.82,13.07,6,0
+.goto Durotar,50.83,13.27,6,0
+.goto Durotar,50.82,13.07,6,0
+.goto Durotar,50.83,13.27,6,0
+.goto Durotar,50.82,13.07,6,0
+.goto Durotar,50.83,13.27,6,0
+.goto Durotar,50.89,14.14,-1
+.goto Durotar,56.75,15.11,-1
+>>Go up the Zeppelin Tower
+.zone Tirisfal Glades >>Take the Zeppelin to Tirisfal
+.money <4.5 << wotlk
+.money <42.25 << tbc
+.skill riding,75,1
+.zoneskip Undercity
+step << Undead !Warlock
+.goto Tirisfal Glades,60.08,52.54
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Velma|r
+.skill riding,75 >> Train |T136103:0|t[Apprentice Riding] from her
+.target Velma Warnam
+.money <4.5 << wotlk
+.money <42.25 << tbc
+.skill riding,75,1
+step << Undead !Warlock
+.goto Tirisfal Glades,59.87,52.69
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Zachariah|r
++|cFF0E8312Buy any|r |T132264:0|t[Skeletal Horse] |cFF0E8312that you like from him|r
+.target Zachariah Post
+.itemcount 13331,<1 
+.itemcount 13332,<1 
+.itemcount 13333,<1 
+.itemcount 46308,<1 
+.money <0.9 << wotlk
+.money <9.0000 << tbc
+.skill riding,<75,1
+step << Undead !Warlock
+.cast 55884 >> Use the |T132264:0|t[Red Skeletal Horse] to learn it
+.use 13331
+.itemcount 13331,1
+.skill riding,75,1
+step << Undead !Warlock
+.cast 55884 >> Use the |T132264:0|t[Blue Skeletal Horse] to learn it
+.use 13332
+.itemcount 13332,1
+.skill riding,75,1
+step << Undead !Warlock
+.cast 55884 >> Use the |T132264:0|t[Brown Skeletal Horse] to learn it
+.use 13333
+.itemcount 13333,1
+.skill riding,75,1
+step << Undead !Warlock
+.cast 55884 >> Use the |T132264:0|t[Black Skeletal Horse] to learn it
+.use 46308
+.itemcount 46308,1
+.skill riding,75,1
+step << Undead !Warlock
+>>|cFFFCDC00Press "Shift+P" to open your Mount tab|r
+>>|cFFFCDC00Drag the|r |T132264:0|t[Red Skeletal Horse] |cFFFCDC00onto your Action Bars|r
+.cast 17462 >> Mount your |T132264:0|t[Red Skeletal Horse]
+.train 17472,3
+.zoneskip Undercity
+.zoneskip Durotar
+.zoneskip Orgrimmar
+step << Undead !Warlock
+>>|cFFFCDC00Press "Shift+P" to open your Mount tab|r
+>>|cFFFCDC00Drag the|r |T132264:0|t[Blue Skeletal Horse] |cFFFCDC00onto your Action Bars|r
+.cast 17463 >> Mount your |T132264:0|t[Blue Skeletal Horse]
+.train 17463,3
+.zoneskip Undercity
+.zoneskip Durotar
+.zoneskip Orgrimmar
+step << Undead !Warlock
+>>|cFFFCDC00Press "Shift+P" to open your Mount tab|r
+>>|cFFFCDC00Drag the|r |T132264:0|t[Brown Skeletal Horse] |cFFFCDC00onto your Action Bars|r
+.cast 17464 >> Mount your |T132264:0|t[Brown Skeletal Horse]
+.train 17464,3
+.zoneskip Undercity
+.zoneskip Durotar
+.zoneskip Orgrimmar
+step << Undead !Warlock wotlk
+>>|cFFFCDC00Press "Shift+P" to open your Mount tab|r
+>>|cFFFCDC00Drag the|r |T132264:0|t[Black Skeletal Horse] |cFFFCDC00onto your Action Bars|r
+.cast 64977 >> Mount your |T132264:0|t[Black Skeletal Horse]
+.train 64977,3
+.zoneskip Undercity
+.zoneskip Durotar
+.zoneskip Orgrimmar
+step << Undead
+#completewith next
+.hs >> Hearth to Orgrimmar
+.cooldown item,6948,>0
+.zoneskip Orgrimmar
+step << Undead Mage
+#completewith Dizzywig
+.cast 3567 >> Cast |T135759:0|t[Teleport: Orgrimmar]
+.zoneskip Orgrimmar
+step << Troll
+#completewith next
+.goto Orgrimmar,52.26,88.65,30,0
+.goto Orgrimmar,49.42,90.90,30,0
+.goto Orgrimmar,48.50,95.12
+.zone Durotar >> Exit Orgrimmar
+.money <4.5 << wotlk
+.money <42.25 << tbc
+.zoneskip Orgrimmar,1
+.skill riding,75,1
+step << Troll
+#completewith next
+.goto Durotar,49.41,20.97,35,0
+.goto Durotar,50.21,26.30,35,0
+.goto Durotar,49.93,28.80,35,0
+.goto Durotar,52.26,34.68,35,0
+.goto Durotar,55.28,75.48,50 >>Travel toward |cFF00FF25Xar'Ti|r
+.money <4.5 << wotlk
+.money <42.25 << tbc
+.skill riding,75,1
+step << Troll
+.goto Durotar,55.28,75.48
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Xar'Ti|r
+.skill riding,75 >> Train |T136103:0|t[Apprentice Riding] from her
+.target Xar'Ti
+.money <4.5 << wotlk
+.money <42.25 << tbc
+.skill riding,75,1
+step << Troll
+.goto Durotar,55.23,75.65
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Zjolnir|r
++|cFF0E8312Buy any|r |T132253:0|t[Raptor Whistle] |cFF0E8312that you like from him|r
+.target Zjolnir
+.itemcount 8588,<1 
+.itemcount 8591,<1 
+.itemcount 8592,<1 
+.money <0.9 << wotlk
+.money <9.0000 << tbc
+.skill riding,<75,1
+step << Troll
+.cast 55884 >> Use the |T132253:0|t[Whistle of the Emerald Raptor] to learn it
+.use 8588
+.itemcount 8588,1
+.skill riding,75,1
+step << Troll
+.cast 55884 >> Use the |T132253:0|t[Whistle of the Turquoise Raptor] to learn it
+.use 8591
+.itemcount 8591,1
+.skill riding,75,1
+step << Troll
+.cast 55884 >> Use the |T132253:0|t[Whistle of the Violet Raptor] to learn it
+.use 8592
+.itemcount 8592,1
+.skill riding,75,1
+step << Troll
+#completewith Bragok2
+>>|cFFFCDC00Press "Shift+P" to open your Mount tab|r
+>>|cFFFCDC00Drag the|r |T132253:0|t[Emerald Raptor] |cFFFCDC00onto your Action Bars|r
+.cast 8395 >> Mount your |T132253:0|t[Emerald Raptor]
+.train 8395,3
+.zoneskip Orgrimmar
+step << Troll
+#completewith Bragok2
+>>|cFFFCDC00Press "Shift+P" to open your Mount tab|r
+>>|cFFFCDC00Drag the|r |T132253:0|t[Turquoise Raptor] |cFFFCDC00onto your Action Bars|r
+.cast 10796 >> Mount your |T132253:0|t[Turquoise Raptor]
+.train 10796,3
+.zoneskip Orgrimmar
+step << Troll
+#completewith Bragok2
+>>|cFFFCDC00Press "Shift+P" to open your Mount tab|r
+>>|cFFFCDC00Drag the|r |T132253:0|t[Violet Raptor] |cFFFCDC00onto your Action Bars|r
+.cast 10799 >> Mount your |T132253:0|t[Violet Raptor]
+.train 10799,3
+.zoneskip Orgrimmar
+step << Troll
+#completewith Bragok2
+.goto Durotar,46.94,69.10,100,0
+.goto Durotar,46.02,69.32,40,0
+.goto Durotar,41.38,73.54,15,0
+.goto Durotar,66.29,35.94,30,0
+.goto The Barrens,63.08,37.16,30 >>Travel toward |cFF00FF25Bragok|r
+.zoneskip Durotar,1
+step
+#completewith next
+.goto Orgrimmar,47.41,65.07,10,0
+.goto Orgrimmar,46.59,64.54,6,0
+.goto Orgrimmar,46.75,63.84,6,0
+.goto Orgrimmar,46.59,64.54,6,0
+.goto Orgrimmar,46.75,63.84,6,0
+.goto Orgrimmar,46.59,64.54,6,0
+.goto Orgrimmar,46.75,63.84,6,0
+.goto Orgrimmar,45.12,63.88,10 >>Travel up the tower toward |cFF00FF25Doras|r
+step
+#completewith Dizzywig
+.goto Orgrimmar,45.12,63.88
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Doras|r
+.fly Ratchet >> Fly to Ratchet
+.target Doras
+.zoneskip Orgrimmar,1
+step << Warlock
+#xprate >1.6999
+.goto The Barrens,62.63,35.50
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Strahad|r
+.turnin 2996 >> Turn in Seeking Strahad
+.accept 1801 >> Accept Tome of the Cabal
+.target Strahad Farsan
+step << Warlock
+.goto The Barrens,62.44,35.45
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Babagaya|r
+.train 6213 >> Train your class spells
+.target Babagaya Shadowcleft
+.xp <32,1
+.xp >34,1
+step << Warlock
+.goto The Barrens,62.44,35.45
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Babagaya|r
+.train 7648 >> Train your class spells
+.target Babagaya Shadowcleft
+.xp <34,1
+step
+.goto The Barrens,62.78,36.43,15,0
+.goto The Barrens,62.68,36.23
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Gazlowe|r
+.turnin 1178 >> Turn in Goblin Sponsorship
+.accept 1180 >> Accept Goblin Sponsorship
+.target Gazlowe
+step
+#completewith next
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Zikkel|r
+.goto The Barrens,62.68,37.39,10 >>Bank any items if needed
+.target Zikkel
+step << Shaman
+#xprate >1.6999
+.goto The Barrens,65.83,43.77
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Islen|r
+.turnin 220 >> Turn in Call of Water
+.accept 63 >> Accept Call of Water
+.target Islen Waterseer
+step << Shaman
+#xprate <1.7
+.goto The Barrens,65.83,43.77
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Islen|r
+.turnin 96 >> Turn in Call of Water
+.target Islen Waterseer
+step << Warrior
+.goto The Barrens,65.83,43.77,50,0
+.goto The Barrens,68.61,49.16,30 >>Travel toward |cFF00FF25Klannoc|r
+>>|cFFFCDC00Ignore the Fatigue Bar|r
+step << Warrior
+.goto The Barrens,68.61,49.16
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Klannoc|r
+.turnin 1718 >> Turn in The Islander
+.accept 1719 >> Accept The Affray
+.target Klannoc Maclead
+step << Warrior
+#completewith next
+.goto The Barrens,68.61,48.72
+>>Step onto the Grate to begin the event
+.complete 1719,2 
+.timer 8,The Affray RP
+step << Warrior
+.goto The Barrens,68.61,48.72
+>>|cFFFCDC00Wait out the RP|r
+>>Kill the |cFFFF5722Affray Challengers|r that come one by one
+>>Kill |cFFFF5722Big Will|r after killing all the |cFFFF5722Affray Challengers|r
+>>|cFFFCDC00You can eat after killing all of the|r |cFFFF5722Affray Challengers|r
+.complete 1719,1 
+.mob Affray Challenger
+.mob Big Will
+step << Warrior
+.goto The Barrens,68.61,49.16
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Klannoc|r
+.turnin 1719 >> Turn in The Affray
+
+.target Klannoc Maclead
+step
+#label Dizzywig
+.goto The Barrens,63.01,38.16,20 << Shaman/Warrior
+.goto The Barrens,63.35,38.45
+>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Dizzywig|r
+.turnin 1111 >> Turn in Wharfmaster Dizzywig
+.accept 1112 >> Accept Parts for Kravel
+.target Wharfmaster Dizzywig
+step
+.goto The Barrens,63.83,38.66,20,0
+.goto The Barrens,63.83,38.66,-1
+.goto The Barrens,66.31,39.27,-1
+.zone Stranglethorn Vale >> Take the Boat to Stranglethorn Vale
+]])
+RXPGuides.RegisterGuide([[
+#version 18
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -450,7 +2925,7 @@ step << skip
 +Once you finish the guide, it is highly recommended you copy your character over to the PTR and give the Turn in Guide a test whirl on the PTR so you know the route better!
 ]])
 RXPGuides.RegisterGuide([[
-#version 16
+#version 18
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -909,7 +3384,7 @@ step << Alliance
 .collect 29443,11,10511,1
 ]])
 RXPGuides.RegisterGuide([[
-#version 16
+#version 18
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -2845,7 +5320,7 @@ step
 .complete 11008,1
 ]])
 RXPGuides.RegisterGuide([[
-#version 16
+#version 18
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -2861,7 +5336,7 @@ step
 .show25quests >> CLICK HERE to see the list of 25 best quests for your character
 ]])
 RXPGuides.RegisterGuide([[
-#version 16
+#version 18
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -4755,7 +7230,7 @@ step
 .accept 11016 >> Accept Nethermine Flayer Hide
 ]])
 RXPGuides.RegisterGuide([[
-#version 16
+#version 18
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation
@@ -4800,7 +7275,7 @@ step
 .collect 30542,1
 ]])
 RXPGuides.RegisterGuide([[
-#version 16
+#version 18
 #wotlk
 #tbc
 #group RestedXP Wrath Preparation

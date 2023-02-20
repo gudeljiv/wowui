@@ -7,8 +7,8 @@ local fmt, smatch, strsub, tinsert, srep, mmax, abs = string.format,
                                                       math.max, abs
 
 local UnitLevel, GetRealZoneText, IsInGroup, tonumber, GetTime, GetServerTime,
-      UnitXP, EasyMenu = UnitLevel, GetRealZoneText, IsInGroup, tonumber,
-                         GetTime, GetServerTime, UnitXP, _G.EasyMenu
+      UnitXP = UnitLevel, GetRealZoneText, IsInGroup, tonumber, GetTime,
+               GetServerTime, UnitXP
 
 local AceGUI = LibStub("AceGUI-3.0")
 local LibDeflate = LibStub("LibDeflate")
@@ -26,7 +26,7 @@ addon.tracker = addon:NewModule("LevelingTracker", "AceEvent-3.0",
                                 "AceComm-3.0", "AceSerializer-3.0")
 
 addon.tracker.playerLevel = UnitLevel("player")
-addon.tracker.state = {otherReports = {}}
+addon.tracker.state = {otherReports = {}, inspectionRequests = {}}
 addon.tracker.reportData = {}
 addon.tracker.ui = {}
 addon.tracker._commPrefix = "RXPLTComms"
@@ -82,6 +82,20 @@ function addon.tracker:SetupInspections()
         addon.settings.db.profile.enableBetaFeatures then
         self:RegisterEvent("INSPECT_READY")
         self:RegisterComm(self._commPrefix)
+
+        local UnitGUID, UnitIsEnemy = UnitGUID, UnitIsEnemy
+        hooksecurefunc("NotifyInspect", function(unit)
+            if not addon.settings.db.profile.enableLevelingReportInspections then
+                return
+            end
+
+            -- Gearscore addons inspect on mouseover/nameplate/etc, RXP only inspects via target
+            if unit ~= "target" or UnitIsEnemy("player", unit) then
+                return
+            end
+
+            addon.tracker.state.inspectionRequests[UnitGUID(unit)] = true
+        end)
     else
         self:UnregisterEvent("INSPECT_READY")
     end
@@ -1142,8 +1156,7 @@ function addon.tracker:CreateLevelSplits()
     f.title.cog:SetWidth(18)
     f.title.cog:SetHeight(18)
     f.title.cog:SetPoint("LEFT", f.title, "LEFT", -9, 0)
-    f.title.cog:SetNormalTexture("Interface/AddOns/" .. addonName ..
-                                     "/Textures/rxp_cog-32")
+    f.title.cog:SetNormalTexture(addon.GetTexture("rxp_cog-32"))
     f.title.cog:SetHighlightTexture(
         "Interface/MINIMAP/UI-Minimap-ZoomButton-Highlight", "ADD")
     f.title.cog:Show()
@@ -1156,7 +1169,7 @@ function addon.tracker:CreateLevelSplits()
     f.title.text:ClearAllPoints()
     f.title.text:SetJustifyH("CENTER")
     f.title.text:SetJustifyV("MIDDLE")
-    f.title.text:SetTextColor(1, 1, 1)
+    f.title.text:SetTextColor(unpack(addon.activeTheme.textColor))
     f.title.text:SetFont(addon.font, 9, "")
     f.title.text:SetText("Level splits")
     f.title.text:SetPoint("CENTER", f.title, 0, 1)
@@ -1194,7 +1207,11 @@ function addon.tracker:CreateLevelSplits()
 
     f:SetAlpha(addon.settings.db.profile.levelSplitsOpacity)
     f.title:SetIgnoreParentAlpha(true)
-    f.title:SetAlpha(addon.settings.db.profile.levelSplitsOpacity + 0.1)
+    if addon.settings.db.profile.levelSplitsOpacity + 0.1 > 1.0 then
+        f.title:SetAlpha(1)
+    else
+        f.title:SetAlpha(addon.settings.db.profile.levelSplitsOpacity + 0.1)
+    end
 
     f:HookScript("OnUpdate", function() addon.tracker:RefreshSplitsSummary() end)
 
@@ -1586,6 +1603,9 @@ function addon.tracker:INSPECT_READY(_, inspecteeGUID)
     if not addon.settings.db.profile.enableLevelingReportInspections then
         return
     end
+
+    if UnitInBattleground("player") ~= nil or
+        not self.state.inspectionRequests[inspecteeGUID] then return end
 
     local inspectedName = select(6, GetPlayerInfoByGUID(inspecteeGUID))
     if self.state.otherReports[inspectedName] and

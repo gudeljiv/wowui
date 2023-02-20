@@ -48,41 +48,6 @@ BINDING_HEADER_RXPTargeting = addon.title
 
 local questFrame = CreateFrame("Frame");
 
-function RXPG_init()
-    RXPCData.completedWaypoints = RXPCData.completedWaypoints or {}
-    addon.settings.db.profile.hardcore = addon.game == "CLASSIC" and addon.settings.db.profile.hardcore
-    addon.RenderFrame()
-    RXPCData.stepSkip = RXPCData.stepSkip or {}
-    if not RXPCData.flightPaths or UnitLevel("player") <= 6 then
-        RXPCData.flightPaths = {}
-    end
-    if RXPData.trainGenericSpells == nil then
-        RXPData.trainGenericSpells = true
-    end
-
-    C_Timer.After(0.5, function()
-        if addon.errorCount == addon.guideErrorCount then
-            addon.errorCount = -1
-            _G.ScriptErrorsFrame:Hide()
-        end
-    end)
-end
-
-addon.errorCount = 0
-addon.guideErrorCount = 0
-
-hooksecurefunc(_G.ScriptErrorsFrame, "DisplayMessage",
-               function(self, msg, warnType, keepHidden, messageType)
-    if _G.ScriptErrorsFrame:IsForbidden() then return end
-    if addon.errorCount >= 0 then
-        if warnType == 0 and keepHidden == false and messageType == 1 and
-            type(msg) == "string" and msg:match(addonName .. "\\Guides") then
-            addon.guideErrorCount = addon.guideErrorCount + 1
-        end
-        addon.errorCount = addon.errorCount + 1
-    end
-end)
-
 local startTime = GetTime()
 
 function addon.QuestAutoAccept(title)
@@ -123,6 +88,8 @@ function addon.GetProfessionNames()
                     professionNames[profession] = GetSpellInfo(2575)
                 elseif id == 2383 then
                     professionNames[profession] = GetSpellInfo(9134)
+                elseif id == 1804 then
+                    professionNames[profession] = GetSpellInfo(1809)
                 else
                     professionNames[profession] = GetSpellInfo(id)
                 end
@@ -373,23 +340,25 @@ function addon:QuestAutomation(event, arg1, arg2, arg3)
     elseif event == "GOSSIP_SHOW" then
         local nActive = GossipGetNumActiveQuests()
         local nAvailable = GossipGetNumAvailableQuests()
-        local quests, selectAvailableByQuestID, selectActiveByQuestID
+        local quests, selectAvailableByQuestID, selectActiveByQuestID, missingTurnIn
         if C_GossipInfo.GetActiveQuests then
             quests = C_GossipInfo.GetActiveQuests()
             selectActiveByQuestID = true
         end
         for i = 1, nActive do
-            local title, level, isTrivial, isComplete
+            local title, isComplete
             if type(quests) == "table" then
                 title = quests[i].questID
                 isComplete = quests[i].isComplete
+                if not (isComplete or missingTurnIn) and addon.QuestAutoTurnIn(title) then
+                    local objectives = addon.GetQuestObjectives(title)
+                    missingTurnIn = objectives and objectives[1].generated and (selectActiveByQuestID and title or i)
+                end
             else
-                title, level, isTrivial, isComplete = select(i * 6 - 5,
-                                                             GossipGetActiveQuests())
+                title, _, _, isComplete = select(i * 6 - 5, GossipGetActiveQuests())
             end
-            -- print(title)
-            -- print(quests[i])
-            if addon.QuestAutoTurnIn(title) and isComplete then
+
+            if isComplete and addon.QuestAutoTurnIn(title) then
                 return GossipSelectActiveQuest(selectActiveByQuestID and title or i)
             end
         end
@@ -400,7 +369,7 @@ function addon:QuestAutomation(event, arg1, arg2, arg3)
             selectAvailableByQuestID = true
         end
         if GossipGetNumOptions() == 0 and nAvailable == 1 and nActive == 0 and not selectAvailableByQuestID then
-            GossipSelectAvailableQuest(selectAvailableByQuestID and availableQuests[1] and availableQuests[1].questID or 1)
+            return GossipSelectAvailableQuest(selectAvailableByQuestID and availableQuests[1] and availableQuests[1].questID or 1)
         else
             for i = 1, nAvailable do
                 local quest
@@ -413,6 +382,9 @@ function addon:QuestAutomation(event, arg1, arg2, arg3)
                     return GossipSelectAvailableQuest(selectAvailableByQuestID and quest or i)
                 end
             end
+        end
+        if missingTurnIn then
+            return GossipSelectActiveQuest(missingTurnIn)
         end
     end
 end
@@ -433,7 +405,24 @@ function addon:OnInitialize()
         RXPData.gameVersion = gameVersion
     end
     addon.settings:InitializeSettings()
-    RXPG_init()
+
+    RXPCData.completedWaypoints = RXPCData.completedWaypoints or {}
+    addon.settings.db.profile.hardcore = addon.game == "CLASSIC" and addon.settings.db.profile.hardcore
+    RXPCData.stepSkip = RXPCData.stepSkip or {}
+    if not RXPCData.flightPaths or UnitLevel("player") <= 6 then
+        RXPCData.flightPaths = {}
+    end
+    if RXPData.trainGenericSpells == nil then
+        RXPData.trainGenericSpells = true
+    end
+
+    addon:ImportCustomThemes()
+    addon:LoadActiveTheme()
+    addon.settings:UpdateMinimapButton()
+    addon.SetupGuideWindow()
+    addon.RenderFrame()
+    addon.SetupArrow()
+    addon:CreateActiveItemFrame()
     addon.comms:Setup()
     addon.targeting:Setup()
     if addon.settings.db.profile.enableTracker then addon.tracker:SetupTracker() end
@@ -455,7 +444,16 @@ function addon:OnEnable()
     local guide = addon.GetGuideTable(RXPCData.currentGuideGroup,
                                       RXPCData.currentGuideName)
     if not guide and addon.settings.db.profile.autoLoadStartingGuides then
-        guide = addon.defaultGuide
+        if addon.defaultGuideList then
+            local currentMap = C_Map.GetBestMapForUnit("player")
+            for zone,guideName in pairs(addon.defaultGuideList) do
+                if currentMap == zone or currentMap == addon.mapId[zone] then
+                    local group,name = string.match(guideName,"([^\\]+)%s*\\%s*([^\\]+)")
+                    guide = addon.GetGuideTable(group,name)
+                end
+            end
+        end
+        guide = guide or addon.defaultGuide
         if addon.game == "TBC" and
             (UnitLevel("player") == 58 and not guide.boost58) then
             guide = nil
@@ -471,7 +469,7 @@ function addon:OnEnable()
 
 
     self:RegisterEvent("GET_ITEM_INFO_RECEIVED")
-    self:RegisterEvent("BAG_UPDATE_DELAYED")
+    self:RegisterEvent("BAG_UPDATE")
     self:RegisterEvent("PLAYER_REGEN_ENABLED")
     self:RegisterEvent("QUEST_TURNED_IN")
     -- self:RegisterEvent("SKILL_LINES_CHANGED")
@@ -541,6 +539,9 @@ function addon:OnEnable()
         end)
     end
 
+    --Only start update loop after everything initializes and enables
+    local updateFrame = CreateFrame("Frame")
+    updateFrame:SetScript("OnUpdate", addon.UpdateLoop)
 end
 
 
@@ -558,6 +559,7 @@ function addon:PLAYER_ENTERING_WORLD(_, isInitialLogin)
     if isInitialLogin then
         C_Timer.After(5, function ()
             addon.settings:DetectXPRate()
+            addon.settings:CheckAddonCompatibility()
         end)
     end
 end
@@ -582,7 +584,7 @@ function addon:GET_ITEM_INFO_RECEIVED(_, itemNumber, success)
     end
 end
 
-function addon:BAG_UPDATE_DELAYED(...) addon.UpdateItemFrame() end
+function addon:BAG_UPDATE(...) addon.UpdateItemFrame() end
 
 function addon:PLAYER_REGEN_ENABLED(...) addon.UpdateItemFrame() end
 
@@ -656,7 +658,7 @@ function addon.HideInRaid()
     if not UnitInRaid("player") then return end
 
     for _, frame in pairs(addon.enabledFrames) do
-        frame:Hide()
+        if not frame:IsForbidden() then frame:Hide() end
     end
 end
 
@@ -697,22 +699,17 @@ addon.updateInactiveQuest = {}
 
 addon.tickTimer = 0
 
-local updateFrame = CreateFrame("Frame")
-
-local eventType
 local updateTick = 0
-local updateStart = 0
-
 local skip = 0
-updateFrame:SetScript("OnUpdate", function(self, diff)
 
+function addon:UpdateLoop(diff)
     updateTick = updateTick + diff
+    --TODO
     if addon.isHidden then
         return
     elseif updateTick > (0.05+math.random()/128) then
         local currentTime = GetTime()
         updateTick = 0
-        updateStart = currentTime
         local activeQuestUpdate = 0
         skip = skip + 1
         local event = ""
@@ -808,12 +805,8 @@ updateFrame:SetScript("OnUpdate", function(self, diff)
                 event = event .. "/inactiveQ"
             end
         end
-        --[[if event ~= "" then
-            eventType = event
-            print(event)
-        end]]
     end
-end)
+end
 
 function addon.HardcoreToggle()
     if addon.game == "CLASSIC" then

@@ -1,14 +1,13 @@
 
 RXPData = {
+	["batchSize"] = 5,
 	["skipMissingPreReqs"] = false,
 	["addonVersion"] = 40000,
 	["cache"] = "Mxyzptlk#21477",
 	["phase"] = 1,
 	["hideCompletedSteps"] = true,
-	["batchSize"] = 5,
-	["trainGenericSpells"] = true,
 	["gameVersion"] = 30400,
-	["autoLoadGuides"] = false,
+	["trainGenericSpells"] = true,
 }
 RXPDB = {
 	["profileKeys"] = {
@@ -20,12 +19,12 @@ RXPDB = {
 		["Kaonac - Jin'do"] = "global",
 		["Tandaram - Jin'do"] = "global",
 		["Wells - Jin'do"] = "global",
-		["Moolatz - Golemagg"] = "global",
-		["Battlearm - Gehennas"] = "global",
 		["Tudum - Jin'do"] = "global",
+		["Battlearm - Gehennas"] = "global",
+		["Pitchwise - Ashbringer"] = "global",
 		["Tudum - Ashbringer"] = "global",
 		["Augustin - Golemagg"] = "global",
-		["Pitchwise - Ashbringer"] = "global",
+		["Moolatz - Golemagg"] = "global",
 		["Miqa - Golemagg"] = "global",
 		["Vermin - Golemagg"] = "global",
 		["Battlearm - Jin'do"] = "global",
