@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 9291,
+	["session"] = 9293,
 	["errors"] = {
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-esES.lua",

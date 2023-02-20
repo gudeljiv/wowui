@@ -6466,14 +6466,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Prince Taldaram",
 		},
-		[57601] = {
+		[29832] = {
 			["school"] = 32,
-			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Twisted Visage",
+			["source"] = "Attumen the Huntsman",
 		},
 		[59530] = {
 			["school"] = 4,
@@ -6743,16 +6742,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sartharion",
 		},
-		[37132] = {
-			["school"] = 64,
-			["type"] = "DEBUFF",
+		[57602] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Azure Magus",
+			["source"] = "Twisted Visage",
 		},
 		[57066] = {
 			["school"] = 1,
@@ -7194,12 +7189,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Earthbind Totem",
 		},
-		[50759] = {
-			["school"] = 64,
+		[16280] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Unstable Sphere",
+			["source"] = "Siiuh",
 		},
 		[15530] = {
 			["school"] = 16,
@@ -7291,14 +7287,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Karajote",
 		},
-		[16592] = {
-			["school"] = 32,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Cabal Shadow Priest",
-		},
 		[49544] = {
 			["school"] = 8,
 			["type"] = "DEBUFF",
@@ -7309,6 +7297,14 @@ EncounterDetailsDB = {
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 			["source"] = "The Prophet Tharon'ja",
+		},
+		[16592] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Cabal Shadow Priest",
 		},
 		[16870] = {
 			["school"] = 8,
@@ -7542,13 +7538,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Rhenne",
 		},
-		[51336] = {
+		[29770] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Drakos the Interrogator",
+			["source"] = "Midnight",
 		},
 		[47996] = {
 			["school"] = 1,
@@ -7734,17 +7729,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Doradintwo",
 		},
-		[50761] = {
+		[28459] = {
 			["school"] = 32,
-			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Maiden of Grief",
+			["source"] = "Soul Weaver",
 		},
 		[59013] = {
 			["school"] = 32,
@@ -7812,15 +7802,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Vrykul Skeleton",
 		},
-		[28747] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Krik'thir the Gatewatcher",
-		},
 		[59525] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
@@ -7829,6 +7810,15 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Moragg",
+		},
+		[28747] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Krik'thir the Gatewatcher",
 		},
 		[1161] = {
 			["school"] = 1,
@@ -7845,6 +7835,15 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Liixx",
+		},
+		[394449] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "Drakkari Guardian",
 		},
 		[59845] = {
 			["school"] = 8,
@@ -7865,15 +7864,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Twisted Visage",
-		},
-		[394449] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_HEAL"] = true,
-			},
-			["source"] = "Drakkari Guardian",
 		},
 		[24316] = {
 			["school"] = 1,
@@ -8019,16 +8009,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Salramm the Fleshcrafter",
 		},
-		[59014] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Risen Drakkari Soulmage",
-		},
 		[13738] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
@@ -8038,6 +8018,16 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Drakkari Scytheclaw",
+		},
+		[59014] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Risen Drakkari Soulmage",
 		},
 		[50379] = {
 			["school"] = 32,
@@ -8437,12 +8427,17 @@ EncounterDetailsDB = {
 			},
 			["source"] = "The Prophet Tharon'ja",
 		},
-		[28459] = {
+		[50761] = {
 			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Soul Weaver",
+			["source"] = "Maiden of Grief",
 		},
 		[54249] = {
 			["school"] = 4,
@@ -8561,12 +8556,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Kfcbucket",
 		},
-		[29770] = {
+		[51336] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Midnight",
+			["source"] = "Drakos the Interrogator",
 		},
 		[58824] = {
 			["school"] = 8,
@@ -8779,13 +8775,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ymirjar Warrior",
 		},
-		[16280] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[50759] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Siiuh",
+			["source"] = "Unstable Sphere",
 		},
 		[48895] = {
 			["school"] = 8,
@@ -9071,12 +9066,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Hadronox",
 		},
-		[57602] = {
-			["school"] = 1,
+		[37132] = {
+			["school"] = 64,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Twisted Visage",
+			["source"] = "Azure Magus",
 		},
 		[53248] = {
 			["school"] = 8,
@@ -9231,13 +9230,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "General Bjarngrim",
 		},
-		[29832] = {
+		[57601] = {
 			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Attumen the Huntsman",
+			["source"] = "Twisted Visage",
 		},
 		[50589] = {
 			["school"] = 4,
