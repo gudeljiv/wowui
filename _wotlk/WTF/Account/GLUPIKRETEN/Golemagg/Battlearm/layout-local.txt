@@ -88,8 +88,8 @@ FrameLevel: 1
 Anchor: TOP
 X: 458
 Y: -143
-W: 351
-H: 256
+W: 267
+H: 74
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM
