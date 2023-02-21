@@ -1,6 +1,7 @@
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip 
-/cast [@cursor] Saronite Bomb
+VER 3 000000000100001E " " "134400"
+#showtooltip
+/startattack
+/cast [@mouseover,exists][]Heroic Throw
 END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip [stance:1/2]Shield Bash;[stance:3]Pummel
@@ -74,8 +75,7 @@ VER 3 000000000100001D " " "INV_MISC_QUESTIONMARK"
 /use Loatheb's Shadow
 /use Blood Fury
 END
-VER 3 000000000100001E " " "134400"
-#showtooltip
-/startattack
-/cast [@mouseover,exists][]Heroic Throw
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@cursor] Saronite Bomb
 END
