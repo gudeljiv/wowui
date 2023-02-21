@@ -232,7 +232,8 @@ with keyboard.Listener(on_press=on_press) as listener:
             time.sleep(random.uniform(0.001, 0.1))
 
             start_time = time.time()
-            active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
+            if os.name != "posix":
+                active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
 # defining regions
             p_main = {"top": 2, "left": 2, "width": x, "height": y}
@@ -273,8 +274,9 @@ with keyboard.Listener(on_press=on_press) as listener:
 # actual rotation
             if not pause:
 
-                if active_window != "World of Warcraft":
-                    continue
+                if os.name != "posix":
+                    if active_window != "World of Warcraft":
+                        continue
 
                 # skipping combat, chat open
                 # any other reason
