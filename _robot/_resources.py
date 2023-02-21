@@ -267,8 +267,8 @@ monitor_settings["2048.0"] = {
 monitor_settings["1440.0"] = {
     "x": 5,
     "y": 5,
-    "c_width": 3,
-    "c_height": 3,
+    "c_width": 5,
+    "c_height": 5,
     "p_offgcd_left": 9,
     "p_combat_left": 17,
     "p_interrupt_left": 24,

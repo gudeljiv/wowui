@@ -78,7 +78,7 @@ def on_press(key):
     global debug, dprint, pause, mill
 
     try:
-        if key == keyboard.Key.f7:
+        if key == keyboard.Key.f12:
             debug = not debug
             print("debug:", debug)
     except:
