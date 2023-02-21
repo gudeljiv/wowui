@@ -1,24 +1,21 @@
 nPower = {
-	position = {"CENTER", UIParent, 0, -40},
-	sizeWidth = 200,
+	position = {'CENTER', UIParent, 'CENTER', 0, -53},
+	sizeWidth = 220,
 	scale = 1.0,
 	showCombatRegen = true,
 	activeAlpha = 0.8,
 	inactiveAlpha = 0.2,
-	emptyAlpha = 0,
+	emptyAlpha = 0.2,
 	valueAbbrev = true,
-	valueFont = "Fonts\\ARIALN.ttf",
+	valueFont = 'Fonts\\ARIALN.ttf',
 	valueFontSize = 20,
 	valueFontOutline = true,
 	valueFontAdjustmentX = 0,
-	showSoulshards = true,
-	showHolypower = true,
-	extraFont = "Fonts\\ARIALN.ttf", -- The font for the holypower and soulshard number
+	showSoulshards = false,
+	showHolypower = false,
+	extraFont = 'Fonts\\ARIALN.ttf', -- The font for the holypower and soulshard number
 	extraFontSize = 28, -- The fontsiz for the holypower and soulshard number
 	extraFontOutline = true,
-	mana = {
-		show = true
-	},
 	energy = {
 		show = true,
 		showComboPoints = true,
@@ -29,7 +26,7 @@ nPower = {
 			[4] = {r = 0.9, g = 0.7, b = 0.0},
 			[5] = {r = 1.0, g = 0.0, b = 0.0}
 		},
-		comboFont = "Fonts\\ARIALN.ttf",
+		comboFont = 'Fonts\\ARIALN.ttf',
 		comboFontSize = 32,
 		comboFontOutline = true
 	},
@@ -37,6 +34,9 @@ nPower = {
 		show = true
 	},
 	rage = {
+		show = true
+	},
+	mana = {
 		show = true
 	}
 }

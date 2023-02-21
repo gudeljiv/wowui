@@ -5,7 +5,7 @@ Grid2LDB: disabled
 Grid2RaidDebuffsOptions: disabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
-nPower: disabled
+nPower: enabled
 nHealth: disabled
 ItemRackOptions: enabled
 AskMrRobotClassic: disabled

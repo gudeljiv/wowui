@@ -2,10 +2,10 @@
 EncounterDetailsDB = {
 	["emotes"] = {
 		{
-			["boss"] = "Anub'arak",
+			["boss"] = "Herald Volazj",
 		}, -- [1]
 		{
-			["boss"] = "Krik'thir the Gatewatcher",
+			["boss"] = "Prince Taldaram",
 		}, -- [2]
 	},
 	["encounter_spells"] = {
@@ -2823,6 +2823,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Soliwork",
 		},
+		[60003] = {
+			["school"] = 2,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Twisted Visage",
+		},
 		[60067] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
@@ -2939,6 +2946,16 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_HEAL"] = true,
+			},
+			["source"] = "Twisted Visage",
+		},
+		[60004] = {
+			["school"] = 2,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_HEAL"] = true,
 			},
 			["source"] = "Twisted Visage",
 		},
@@ -4262,6 +4279,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Rhino Spirit",
 		},
+		[60015] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Twisted Visage",
+		},
 		[14516] = {
 			["school"] = 1,
 			["token"] = {
@@ -4342,6 +4368,15 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Gal'darah",
+		},
+		[60016] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Twisted Visage",
 		},
 		[49909] = {
 			["school"] = 16,
@@ -4704,6 +4739,13 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Chaotic Rift",
+		},
+		[12470] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Greater Fire Elemental",
 		},
 		[12550] = {
 			["school"] = 8,
@@ -6038,6 +6080,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Jedoga Shadowseeker",
 		},
+		[13376] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Greater Fire Elemental",
+		},
+		[60019] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Twisted Visage",
+		},
 		[48132] = {
 			["school"] = 8,
 			["type"] = "DEBUFF",
@@ -6049,6 +6108,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Massive Jormungar",
 		},
+		[60011] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Twisted Visage",
+		},
 		[48260] = {
 			["school"] = 1,
 			["token"] = {
@@ -6056,6 +6123,14 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Gortok Palehoof",
+		},
+		[57807] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Twisted Visage",
 		},
 		[54529] = {
 			["school"] = 1,
@@ -6073,6 +6148,13 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Loaldudu",
+		},
+		[60018] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Twisted Visage",
 		},
 		[28156] = {
 			["school"] = 8,
@@ -6513,8 +6595,10 @@ EncounterDetailsDB = {
 		},
 		[51876] = {
 			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Erekem",
 		},
@@ -7846,16 +7930,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Liixx",
 		},
-		[57798] = {
-			["school"] = 2,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Twisted Visage",
-		},
 		[394449] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -7874,6 +7948,16 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Sjonnir The Ironshaper",
+		},
+		[57798] = {
+			["school"] = 2,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Twisted Visage",
 		},
 		[24316] = {
 			["school"] = 1,

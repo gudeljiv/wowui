@@ -7836,16 +7836,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Liixx",
 		},
-		[59845] = {
-			["school"] = 8,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Sjonnir The Ironshaper",
-		},
 		[57798] = {
 			["school"] = 2,
 			["type"] = "DEBUFF",
@@ -7864,6 +7854,16 @@ EncounterDetailsDB = {
 				["SPELL_HEAL"] = true,
 			},
 			["source"] = "Drakkari Guardian",
+		},
+		[59845] = {
+			["school"] = 8,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Sjonnir The Ironshaper",
 		},
 		[48278] = {
 			["school"] = 32,
@@ -9437,10 +9437,208 @@ EncounterDetailsDB = {
 	},
 	["emotes"] = {
 		{
-			["boss"] = "Anub'arak",
+			{
+				7.00099999998929, -- [1]
+				"Don't make me angry! You wouldn't like me when I'm angry!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				5, -- [4]
+			}, -- [1]
+			{
+				7.00099999998929, -- [1]
+				"Battlearm! I'm watching you!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [2]
+			{
+				15.05300000001444, -- [1]
+				"You've angered me for the last time Battlearm!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [3]
+			{
+				20.00099999998929, -- [1]
+				"Don't make me angry! You wouldn't like me when I'm angry!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				5, -- [4]
+			}, -- [4]
+			{
+				20.00099999998929, -- [1]
+				"Battlearm! I'm watching you!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [5]
+			{
+				28.00200000003679, -- [1]
+				"You've angered me for the last time Battlearm!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [6]
+			{
+				32.9210000000312, -- [1]
+				"Don't make me angry! You wouldn't like me when I'm angry!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				5, -- [4]
+			}, -- [7]
+			{
+				32.9210000000312, -- [1]
+				"Battlearm! I'm watching you!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [8]
+			{
+				50.65299999999115, -- [1]
+				"Don't make me angry! You wouldn't like me when I'm angry!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				5, -- [4]
+			}, -- [9]
+			{
+				50.65299999999115, -- [1]
+				"Battlearm! I'm watching you!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [10]
+			{
+				58.70400000002701, -- [1]
+				"You've angered me for the last time Battlearm!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [11]
+			{
+				71.78899999998976, -- [1]
+				"Don't make me angry! You wouldn't like me when I'm angry!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				5, -- [4]
+			}, -- [12]
+			{
+				71.78899999998976, -- [1]
+				"Battlearm! I'm watching you!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [13]
+			{
+				79.88800000003539, -- [1]
+				"You've angered me for the last time Battlearm!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [14]
+			{
+				94.57300000003306, -- [1]
+				"Don't make me angry! You wouldn't like me when I'm angry!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				5, -- [4]
+			}, -- [15]
+			{
+				94.57300000003306, -- [1]
+				"Battlearm! I'm watching you!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [16]
+			{
+				107.5229999999865, -- [1]
+				"Don't make me angry! You wouldn't like me when I'm angry!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				5, -- [4]
+			}, -- [17]
+			{
+				107.5229999999865, -- [1]
+				"Battlearm! I'm watching you!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [18]
+			{
+				115.5410000000265, -- [1]
+				"You've angered me for the last time Battlearm!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [19]
+			{
+				122.1410000000033, -- [1]
+				"Don't make me angry! You wouldn't like me when I'm angry!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				5, -- [4]
+			}, -- [20]
+			{
+				122.1410000000033, -- [1]
+				"Battlearm! I'm watching you!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [21]
+			{
+				130.1589999999851, -- [1]
+				"You've angered me for the last time Battlearm!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [22]
+			{
+				146.4770000000135, -- [1]
+				"Don't make me angry! You wouldn't like me when I'm angry!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				5, -- [4]
+			}, -- [23]
+			{
+				146.4770000000135, -- [1]
+				"Battlearm! I'm watching you!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [24]
+			{
+				151.2280000000028, -- [1]
+				"%s goes into a rage after seeing his raptor fall in battle!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				3, -- [4]
+			}, -- [25]
+			{
+				154.4940000000061, -- [1]
+				"You've angered me for the last time Battlearm!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [26]
+			{
+				164.3130000000238, -- [1]
+				"Don't make me angry! You wouldn't like me when I'm angry!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				5, -- [4]
+			}, -- [27]
+			{
+				164.3130000000238, -- [1]
+				"Battlearm! I'm watching you!", -- [2]
+				"Bloodlord Mandokir", -- [3]
+				7, -- [4]
+			}, -- [28]
+			["boss"] = "Bloodlord Mandokir",
 		}, -- [1]
 		{
-			["boss"] = "Krik'thir the Gatewatcher",
+			{
+				100.6060000000289, -- [1]
+				"%s dies.", -- [2]
+				"Zealot Lor'Khan", -- [3]
+				3, -- [4]
+			}, -- [1]
+			{
+				100.6060000000289, -- [1]
+				"%s dies.", -- [2]
+				"High Priest Thekal", -- [3]
+				3, -- [4]
+			}, -- [2]
+			{
+				103.8230000000331, -- [1]
+				"%s dies.", -- [2]
+				"Zealot Zath", -- [3]
+				3, -- [4]
+			}, -- [3]
+			{
+				110.3219999999856, -- [1]
+				"Shirvallah, fill me with your RAGE!", -- [2]
+				"High Priest Thekal", -- [3]
+				7, -- [4]
+			}, -- [4]
+			{
+				157.4070000000065, -- [1]
+				"%s goes into a frenzy!", -- [2]
+				"High Priest Thekal", -- [3]
+				3, -- [4]
+			}, -- [5]
+			["boss"] = "High Priest Thekal",
 		}, -- [2]
 	},
 }
