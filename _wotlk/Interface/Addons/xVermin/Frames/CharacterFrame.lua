@@ -49,9 +49,14 @@ local function BorderItemSlots()
 		v:CreateBeautyBorder(8)
 
 		itemLink = GetInventoryItemLink('player', GetInventorySlotInfo(v:GetName():gsub('Character', '')))
+
+		if v.ItemLevelText then
+			v.ItemLevelText:SetText('')
+		end
+
 		if (itemLink) then
 			local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent = GetItemInfo(itemLink)
-			if (itemQuality and itemQuality > 1) then
+			if itemQuality and itemQuality > 1 then
 				r, g, b = GetItemQualityColor(itemQuality)
 				v:SetBeautyBorderTexture(xVermin.Config.border.colorize)
 				v:SetBeautyBorderColor(r, g, b, 1)
@@ -69,10 +74,6 @@ local function BorderItemSlots()
 					v.ItemLevelText:SetVertexColor(1, 1, 0)
 				end
 				v.ItemLevelText:SetText(itemLevel)
-			else
-				if v.ItemLevelText then
-					v.ItemLevelText:SetText('')
-				end
 			end
 		else
 			v:SetBeautyBorderTexture(xVermin.Config.border.default)
@@ -84,14 +85,5 @@ end
 local f = CreateFrame('Frame')
 f:RegisterEvent('UNIT_INVENTORY_CHANGED')
 f:RegisterEvent('PLAYER_ENTERING_WORLD')
-f:SetScript(
-	'OnEvent',
-	function(self, event, isInitialLogin, isReloadingUi)
-		if event == 'PLAYER_ENTERING_WORLD' and (isInitialLogin or isReloadingUi) then
-			BorderItemSlots()
-		end
-		if event == 'UNIT_INVENTORY_CHANGED' then
-			BorderItemSlots()
-		end
-	end
-)
+-- f:RegisterEvent('PLAYER_EQUIPMENT_CHANGED')
+f:SetScript('OnEvent', BorderItemSlots)

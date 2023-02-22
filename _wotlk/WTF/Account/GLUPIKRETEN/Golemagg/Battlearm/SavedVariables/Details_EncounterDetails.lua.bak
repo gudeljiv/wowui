@@ -2,10 +2,118 @@
 EncounterDetailsDB = {
 	["emotes"] = {
 		{
-			["boss"] = "Herald Volazj",
+			{
+				44.57299999997485, -- [1]
+				"%s overcharges a Tempest Minion!", -- [2]
+				"Emalon the Storm Watcher", -- [3]
+				1, -- [4]
+			}, -- [1]
+			{
+				60.73800000001211, -- [1]
+				"A Tempest Minion appears to defend Emalon!", -- [2]
+				"Emalon the Storm Watcher", -- [3]
+				1, -- [4]
+			}, -- [2]
+			{
+				89.80799999996088, -- [1]
+				"%s overcharges a Tempest Minion!", -- [2]
+				"Emalon the Storm Watcher", -- [3]
+				1, -- [4]
+			}, -- [3]
+			{
+				109.2950000000419, -- [1]
+				"A Tempest Minion appears to defend Emalon!", -- [2]
+				"Emalon the Storm Watcher", -- [3]
+				1, -- [4]
+			}, -- [4]
+			{
+				135.1779999999562, -- [1]
+				"%s overcharges a Tempest Minion!", -- [2]
+				"Emalon the Storm Watcher", -- [3]
+				1, -- [4]
+			}, -- [5]
+			{
+				151.3789999999572, -- [1]
+				"A Tempest Minion appears to defend Emalon!", -- [2]
+				"Emalon the Storm Watcher", -- [3]
+				1, -- [4]
+			}, -- [6]
+			{
+				172.4309999999823, -- [1]
+				"A Tempest Minion appears to defend Emalon!", -- [2]
+				"Emalon the Storm Watcher", -- [3]
+				1, -- [4]
+			}, -- [7]
+			{
+				180.5470000000205, -- [1]
+				"%s overcharges a Tempest Minion!", -- [2]
+				"Emalon the Storm Watcher", -- [3]
+				1, -- [4]
+			}, -- [8]
+			{
+				191.814000000013, -- [1]
+				"A Tempest Minion appears to defend Emalon!", -- [2]
+				"Emalon the Storm Watcher", -- [3]
+				1, -- [4]
+			}, -- [9]
+			{
+				198.298000000068, -- [1]
+				"A Tempest Minion appears to defend Emalon!", -- [2]
+				"Emalon the Storm Watcher", -- [3]
+				1, -- [4]
+			}, -- [10]
+			["boss"] = "Emalon the Storm Watcher",
 		}, -- [1]
 		{
-			["boss"] = "Prince Taldaram",
+			{
+				19.38500000000931, -- [1]
+				"A Tempest Minion appears to defend Emalon!", -- [2]
+				"Emalon the Storm Watcher", -- [3]
+				1, -- [4]
+			}, -- [1]
+			{
+				31.08700000005774, -- [1]
+				"A Tempest Minion appears to defend Emalon!", -- [2]
+				"Emalon the Storm Watcher", -- [3]
+				1, -- [4]
+			}, -- [2]
+			{
+				42.43900000001304, -- [1]
+				"A Tempest Minion appears to defend Emalon!", -- [2]
+				"Emalon the Storm Watcher", -- [3]
+				1, -- [4]
+			}, -- [3]
+			{
+				45.53700000001118, -- [1]
+				"%s overcharges a Tempest Minion!", -- [2]
+				"Emalon the Storm Watcher", -- [3]
+				1, -- [4]
+			}, -- [4]
+			{
+				48.87400000006892, -- [1]
+				"A Tempest Minion appears to defend Emalon!", -- [2]
+				"Emalon the Storm Watcher", -- [3]
+				1, -- [4]
+			}, -- [5]
+			{
+				55.30600000009872, -- [1]
+				"A Tempest Minion appears to defend Emalon!", -- [2]
+				"Emalon the Storm Watcher", -- [3]
+				1, -- [4]
+			}, -- [6]
+			{
+				61.79000000003725, -- [1]
+				"A Tempest Minion appears to defend Emalon!", -- [2]
+				"Emalon the Storm Watcher", -- [3]
+				1, -- [4]
+			}, -- [7]
+			{
+				68.19000000006054, -- [1]
+				"A Tempest Minion appears to defend Emalon!", -- [2]
+				"Emalon the Storm Watcher", -- [3]
+				1, -- [4]
+			}, -- [8]
+			["boss"] = "Emalon the Storm Watcher",
 		}, -- [2]
 	},
 	["encounter_spells"] = {
@@ -6827,12 +6935,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sartharion",
 		},
-		[57602] = {
-			["school"] = 1,
+		[37132] = {
+			["school"] = 64,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Twisted Visage",
+			["source"] = "Azure Magus",
 		},
 		[49806] = {
 			["school"] = 1,
@@ -7277,13 +7389,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Earthbind Totem",
 		},
-		[16280] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[50759] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Siiuh",
+			["source"] = "Unstable Sphere",
 		},
 		[15530] = {
 			["school"] = 16,
@@ -7343,6 +7454,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Hudôr",
 		},
+		[61570] = {
+			["school"] = 8,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Twilight Apostle",
+		},
 		[47241] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -7351,14 +7470,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Greedyöne",
-		},
-		[61570] = {
-			["school"] = 8,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Twilight Apostle",
 		},
 		[51399] = {
 			["school"] = 1,
@@ -7375,6 +7486,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Karajote",
 		},
+		[16592] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Cabal Shadow Priest",
+		},
 		[49544] = {
 			["school"] = 8,
 			["type"] = "DEBUFF",
@@ -7385,14 +7504,6 @@ EncounterDetailsDB = {
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 			["source"] = "The Prophet Tharon'ja",
-		},
-		[16592] = {
-			["school"] = 32,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Cabal Shadow Priest",
 		},
 		[16870] = {
 			["school"] = 8,
@@ -7626,12 +7737,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Rhenne",
 		},
-		[29770] = {
+		[51336] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Midnight",
+			["source"] = "Drakos the Interrogator",
 		},
 		[47996] = {
 			["school"] = 1,
@@ -7820,12 +7932,17 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Doradintwo",
 		},
-		[28459] = {
+		[50761] = {
 			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Soul Weaver",
+			["source"] = "Maiden of Grief",
 		},
 		[59013] = {
 			["school"] = 32,
@@ -7927,6 +8044,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Liixx",
 		},
+		[394449] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "Drakkari Guardian",
+		},
 		[59845] = {
 			["school"] = 8,
 			["type"] = "BUFF",
@@ -7936,15 +8062,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Sjonnir The Ironshaper",
-		},
-		[394449] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_HEAL"] = true,
-			},
-			["source"] = "Drakkari Guardian",
 		},
 		[57798] = {
 			["school"] = 2,
@@ -8102,16 +8219,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Salramm the Fleshcrafter",
 		},
-		[13738] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Drakkari Scytheclaw",
-		},
 		[59014] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
@@ -8121,6 +8228,16 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Risen Drakkari Soulmage",
+		},
+		[13738] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Drakkari Scytheclaw",
 		},
 		[27812] = {
 			["school"] = 32,
@@ -8471,17 +8588,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Erekem",
 		},
-		[50761] = {
+		[28459] = {
 			["school"] = 32,
-			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Maiden of Grief",
+			["source"] = "Soul Weaver",
 		},
 		[49356] = {
 			["school"] = 32,
@@ -8593,13 +8705,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Spectral Rider",
 		},
-		[51336] = {
+		[29770] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Drakos the Interrogator",
+			["source"] = "Midnight",
 		},
 		[19746] = {
 			["school"] = 2,
@@ -8817,12 +8928,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Bloodhuntter",
 		},
-		[50759] = {
-			["school"] = 64,
+		[16280] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Unstable Sphere",
+			["source"] = "Siiuh",
 		},
 		[49805] = {
 			["school"] = 32,
@@ -9121,16 +9233,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ghoul Tormentor",
 		},
-		[37132] = {
-			["school"] = 64,
-			["type"] = "DEBUFF",
+		[57602] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Azure Magus",
+			["source"] = "Twisted Visage",
 		},
 		[15578] = {
 			["school"] = 1,
