@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("FlameLeviathan", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20230216220559")
+mod:SetRevision("20230220171538")
 
 mod:SetCreatureID(33113)
 if not mod:IsClassic() then

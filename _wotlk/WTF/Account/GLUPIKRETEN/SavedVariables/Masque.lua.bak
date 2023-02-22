@@ -1705,6 +1705,11 @@ MasqueDB = {
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
+				["WeakAuras_(NbM(J8aI9O"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Brownstone",
+				},
 				["WeakAuras_M3YN8CYOJ7u"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Brownstone",
@@ -2568,7 +2573,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
 				},
-				["WeakAuras_(NbM(J8aI9O"] = {
+				["WeakAuras_b3uEGmEvtG8"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",

@@ -3,12 +3,13 @@ GargulDB = {
 	["BoostedRolls"] = {
 	},
 	["LoadDetails"] = {
-		["lastLoadedOn"] = 1677011490,
+		["lastLoadedOn"] = 1677077376,
 		["5.3.2"] = 1677011490,
 		["5.2.1"] = 1675921266,
 		["4.12.0"] = 1675856197,
 		["5.0.11"] = 1673028609,
 		["5.3.0"] = 1676121559,
+		["5.3.3"] = 1677077376,
 		["5.1.1"] = 1675856197,
 		["5.3.1"] = 1676314418,
 		["latestVersionChangesShown"] = "5.3.0",
@@ -139,13 +140,13 @@ GargulDB = {
 			["enableBidderQueue"] = true,
 			["enableGDKPBidderQueue"] = true,
 			["minimizeBidderQueue"] = false,
-			["enableGDKPQueuesByDefault"] = false,
+			["closeAuctioneerOnStart"] = false,
 			["announceNewBidInRW"] = true,
 			["minimumBid"] = 100,
 			["showHistoryOnTooltip"] = true,
-			["closeAuctioneerOnStart"] = false,
 			["Mutators"] = {
 			},
+			["enableGDKPQueuesByDefault"] = false,
 			["customPotExportHeader"] = "Player,Cut",
 			["queueIsHalted"] = false,
 			["time"] = 30,
@@ -226,6 +227,14 @@ GargulDB = {
 				["timer"] = 30,
 				["closeOnStart"] = false,
 				["closeOnAward"] = false,
+			},
+			["Settings"] = {
+				["Position"] = {
+					["point"] = "TOP",
+					["offsetY"] = -118.4127426147461,
+					["offsetX"] = -248.2539978027344,
+					["relativePoint"] = "TOP",
+				},
 			},
 			["Award"] = {
 				["closeOnAward"] = true,
@@ -324,12 +333,12 @@ GargulDB = {
 					["relativePoint"] = "CENTER",
 				},
 			},
-			["Settings"] = {
+			["TimeLeft"] = {
 				["Position"] = {
-					["point"] = "TOP",
-					["offsetY"] = -118.4127426147461,
-					["offsetX"] = -248.2539978027344,
-					["relativePoint"] = "TOP",
+					["offsetX"] = -180.9528961181641,
+					["offsetY"] = 195.5553131103516,
+					["point"] = "RIGHT",
+					["relativePoint"] = "RIGHT",
 				},
 			},
 			["GDKPOverview"] = {
@@ -387,8 +396,6 @@ GargulDB = {
 	["AwardHistory"] = {
 		["40049783484065590994"] = {
 			["checksum"] = "40049783484065590994",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -633,8 +640,6 @@ GargulDB = {
 		},
 		["26441250364065590994"] = {
 			["checksum"] = "26441250364065590994",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -667,8 +672,6 @@ GargulDB = {
 		},
 		["51757391109021978300"] = {
 			["checksum"] = "51757391109021978300",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -684,8 +687,6 @@ GargulDB = {
 		},
 		["25457877291090219783"] = {
 			["checksum"] = "25457877291090219783",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -871,8 +872,6 @@ GargulDB = {
 		},
 		["96477379020693872840"] = {
 			["checksum"] = "96477379020693872840",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -905,8 +904,6 @@ GargulDB = {
 		},
 		["13813368271654694117"] = {
 			["checksum"] = "13813368271654694117",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -990,8 +987,6 @@ GargulDB = {
 		},
 		["23652867302069387284"] = {
 			["checksum"] = "23652867302069387284",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1007,8 +1002,6 @@ GargulDB = {
 		},
 		["38656813241272512954"] = {
 			["checksum"] = "38656813241272512954",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1109,8 +1102,6 @@ GargulDB = {
 		},
 		["28832952103398028856"] = {
 			["checksum"] = "28832952103398028856",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1177,8 +1168,6 @@ GargulDB = {
 		},
 		["23400768211272512954"] = {
 			["checksum"] = "23400768211272512954",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1194,8 +1183,6 @@ GargulDB = {
 		},
 		["27270411131654694117"] = {
 			["checksum"] = "27270411131654694117",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1364,8 +1351,6 @@ GargulDB = {
 		},
 		["34326784781742972444"] = {
 			["checksum"] = "34326784781742972444",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1449,8 +1434,6 @@ GargulDB = {
 		},
 		["25716555682594697400"] = {
 			["checksum"] = "25716555682594697400",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1483,8 +1466,6 @@ GargulDB = {
 		},
 		["22967644841742972444"] = {
 			["checksum"] = "22967644841742972444",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1568,8 +1549,6 @@ GargulDB = {
 		},
 		["36288187743398028856"] = {
 			["checksum"] = "36288187743398028856",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1619,8 +1598,6 @@ GargulDB = {
 		},
 		["62065399114183257570"] = {
 			["checksum"] = "62065399114183257570",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1636,8 +1613,6 @@ GargulDB = {
 		},
 		["31174079942912819429"] = {
 			["checksum"] = "31174079942912819429",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1670,8 +1645,6 @@ GargulDB = {
 		},
 		["69801358259469740000"] = {
 			["checksum"] = "69801358259469740000",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1755,8 +1728,6 @@ GargulDB = {
 		},
 		["23636316143768674440"] = {
 			["checksum"] = "23636316143768674440",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1942,8 +1913,6 @@ GargulDB = {
 		},
 		["41753081153398028856"] = {
 			["checksum"] = "41753081153398028856",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2027,8 +1996,6 @@ GargulDB = {
 		},
 		["39002058402594697400"] = {
 			["checksum"] = "39002058402594697400",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2061,8 +2028,6 @@ GargulDB = {
 		},
 		["29489672021090219783"] = {
 			["checksum"] = "29489672021090219783",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2129,8 +2094,6 @@ GargulDB = {
 		},
 		["16230530353768674440"] = {
 			["checksum"] = "16230530353768674440",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2146,8 +2109,6 @@ GargulDB = {
 		},
 		["46686518516546941170"] = {
 			["checksum"] = "46686518516546941170",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2265,8 +2226,6 @@ GargulDB = {
 		},
 		["17176268033732222030"] = {
 			["checksum"] = "17176268033732222030",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2365,22 +2324,20 @@ GargulDB = {
 			["GDKPCost"] = 15000,
 			["received"] = true,
 		},
-		["14414419808445880070"] = {
-			["checksum"] = "14414419808445880070",
-			["Rolls"] = {
-			},
+		["22997725110902197830"] = {
+			["checksum"] = "22997725110902197830",
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
 			["SR"] = false,
-			["awardedTo"] = "Berzerke",
+			["awardedTo"] = "Mxzq",
 			["received"] = true,
-			["itemID"] = 40069,
-			["GDKPCost"] = 1100,
+			["itemID"] = 39717,
+			["GDKPCost"] = 500,
 			["PL"] = false,
-			["timestamp"] = 1676632504,
-			["itemLink"] = "|cffa335ee|Hitem:40069::::::::80:::::::::|h[Heritage]|h|r",
-			["awardedBy"] = "Happens",
+			["timestamp"] = 1675860940,
+			["itemLink"] = "|cffa335ee|Hitem:39717::::::::80:::::::::|h[Inexorable Sabatons]|h|r",
+			["awardedBy"] = "Recobe",
 		},
 		["28000548022884811236"] = {
 			["checksum"] = "28000548022884811236",
@@ -2399,22 +2356,22 @@ GargulDB = {
 			["GDKPCost"] = 700,
 			["received"] = true,
 		},
-		["12641838253093262601"] = {
-			["checksum"] = "12641838253093262601",
+		["14414419808445880070"] = {
+			["checksum"] = "14414419808445880070",
 			["Rolls"] = {
 			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
 			["SR"] = false,
-			["awardedTo"] = "Hugerocket",
-			["awardedBy"] = "Gemoo",
-			["itemID"] = 40625,
-			["itemLink"] = "|cffa335ee|Hitem:40625::::::::80:::::::::|h[Breastplate of the Lost Conqueror]|h|r",
-			["timestamp"] = 1675955757,
-			["PL"] = false,
-			["GDKPCost"] = 800,
+			["awardedTo"] = "Berzerke",
 			["received"] = true,
+			["itemID"] = 40069,
+			["GDKPCost"] = 1100,
+			["PL"] = false,
+			["timestamp"] = 1676632504,
+			["itemLink"] = "|cffa335ee|Hitem:40069::::::::80:::::::::|h[Heritage]|h|r",
+			["awardedBy"] = "Happens",
 		},
 		["10952584222965285880"] = {
 			["checksum"] = "10952584222965285880",
@@ -2452,8 +2409,6 @@ GargulDB = {
 		},
 		["79912491630559717260"] = {
 			["checksum"] = "79912491630559717260",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2554,8 +2509,6 @@ GargulDB = {
 		},
 		["21198593395780327690"] = {
 			["checksum"] = "21198593395780327690",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2569,22 +2522,22 @@ GargulDB = {
 			["itemLink"] = "|cffa335ee|Hitem:40453::::::::80:::::::::|h[Chestplate of the Great Aspects]|h|r",
 			["awardedBy"] = "Recobe",
 		},
-		["22997725110902197830"] = {
-			["checksum"] = "22997725110902197830",
+		["12641838253093262601"] = {
+			["checksum"] = "12641838253093262601",
 			["Rolls"] = {
 			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
 			["SR"] = false,
-			["awardedTo"] = "Mxzq",
-			["received"] = true,
-			["itemID"] = 39717,
-			["GDKPCost"] = 500,
+			["awardedTo"] = "Hugerocket",
+			["awardedBy"] = "Gemoo",
+			["itemID"] = 40625,
+			["itemLink"] = "|cffa335ee|Hitem:40625::::::::80:::::::::|h[Breastplate of the Lost Conqueror]|h|r",
+			["timestamp"] = 1675955757,
 			["PL"] = false,
-			["timestamp"] = 1675860940,
-			["itemLink"] = "|cffa335ee|Hitem:39717::::::::80:::::::::|h[Inexorable Sabatons]|h|r",
-			["awardedBy"] = "Recobe",
+			["GDKPCost"] = 800,
+			["received"] = true,
 		},
 		["20224009202417842873"] = {
 			["checksum"] = "20224009202417842873",
@@ -2707,8 +2660,6 @@ GargulDB = {
 		},
 		["34750679405780327690"] = {
 			["checksum"] = "34750679405780327690",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2758,8 +2709,6 @@ GargulDB = {
 		},
 		["46627862733812029670"] = {
 			["checksum"] = "46627862733812029670",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2826,8 +2775,6 @@ GargulDB = {
 		},
 		["29803155371742972444"] = {
 			["checksum"] = "29803155371742972444",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,

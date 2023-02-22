@@ -73,27 +73,27 @@ local function showRealDate(curseDate)
 end
 
 DBM = {
-	Revision = parseCurseDate("20230218045247"),
+	Revision = parseCurseDate("20230222100646"),
 }
 
 local fakeBWVersion, fakeBWHash
 local bwVersionResponseString = "V^%d^%s"
 -- The string that is shown as version
 if isRetail then
-	DBM.DisplayVersion = "10.0.27"
-	DBM.ReleaseRevision = releaseDate(2023, 2, 17) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
+	DBM.DisplayVersion = "10.0.28"
+	DBM.ReleaseRevision = releaseDate(2023, 2, 22) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
 	fakeBWVersion, fakeBWHash = 265, "5c1ee43"
 elseif isClassic then
-	DBM.DisplayVersion = "1.14.33"
-	DBM.ReleaseRevision = releaseDate(2023, 2, 17) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
+	DBM.DisplayVersion = "1.14.34"
+	DBM.ReleaseRevision = releaseDate(2023, 2, 22) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
 	fakeBWVersion, fakeBWHash = 47, "ca1da33"
 elseif isBCC then
 	DBM.DisplayVersion = "2.6.0 alpha"--When TBC returns (and it will one day). It'll probably be game version 2.6
 	DBM.ReleaseRevision = releaseDate(2023, 2, 16) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
 	fakeBWVersion, fakeBWHash = 47, "ca1da33"
 elseif isWrath then
-	DBM.DisplayVersion = "3.4.34"
-	DBM.ReleaseRevision = releaseDate(2023, 2, 17) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
+	DBM.DisplayVersion = "3.4.35"
+	DBM.ReleaseRevision = releaseDate(2023, 2, 22) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
 	fakeBWVersion, fakeBWHash = 47, "ca1da33"
 end
 DBM.HighestRelease = DBM.ReleaseRevision --Updated if newer version is detected, used by update nags to reflect critical fixes user is missing on boss pulls
@@ -209,8 +209,13 @@ DBM.DefaultOptions = {
 	SWarnNameInNote = true,
 	CustomSounds = 0,
 	FilterTankSpec = true,
-	FilterInterrupt2 = "TandFandBossCooldown",
+	FilterBTargetFocus = true,
+	FilterBInterruptCooldown = true,
+	FilterBInterruptHealer = false,
 	FilterInterruptNoteName = false,
+	FilterTTargetFocus = true,
+	FilterTInterruptCooldown = true,
+	FilterTInterruptHealer = false,
 	FilterDispel = true,
 	FilterTrashWarnings2 = true,
 	FilterVoidFormSay = true,
@@ -2174,7 +2179,8 @@ do
 			if not inRaid then
 				twipe(newerVersionPerson)--Wipe guild syncs on group join so we trigger a new out of date notice on raid join even if one triggered on login
 				inRaid = true
-				sendSync(DBMSyncProtocol, "H")
+				--sendSync(DBMSyncProtocol, "H")
+				SendAddonMessage("D4", "H", IsInGroup(2) and "INSTANCE_CHAT" or "RAID")--Purposely sent on old protocol to get all versions
 				if dbmIsEnabled then
 					SendAddonMessage("BigWigs", bwVersionQueryString:format(0, fakeBWHash), IsInGroup(2) and "INSTANCE_CHAT" or "RAID")
 				end
@@ -2249,7 +2255,8 @@ do
 				-- joined a new party
 				twipe(newerVersionPerson)--Wipe guild syncs on group join so we trigger a new out of date notice on raid join even if one triggered on login
 				inRaid = true
-				sendSync(DBMSyncProtocol, "H")
+				--sendSync(DBMSyncProtocol, "H")
+				SendAddonMessage("D4", "H", IsInGroup(2) and "INSTANCE_CHAT" or "PARTY")
 				if dbmIsEnabled then
 					SendAddonMessage("BigWigs", bwVersionQueryString:format(0, fakeBWHash), IsInGroup(2) and "INSTANCE_CHAT" or "PARTY")
 				end
@@ -3192,11 +3199,6 @@ do
 		end
 		if not self.Options.SpecialWarningFont or (self.Options.SpecialWarningFont == "Fonts\\2002.TTF" or self.Options.SpecialWarningFont == "Fonts\\ARKai_T.ttf" or self.Options.SpecialWarningFont == "Fonts\\blei00d.TTF" or self.Options.SpecialWarningFont == "Fonts\\FRIZQT___CYR.TTF" or self.Options.SpecialWarningFont == "Fonts\\FRIZQT__.TTF") then
 			self.Options.SpecialWarningFont = "standardFont"
-		end
-		--Migrate interupt always filter to new interrupt disable option
-		if self.Options.FilterInterrupt2 == "Always" then
-			self.Options.FilterInterrupt2 = "TandFandBossCooldown"
-			self.Options.SpamSpecRoleinterrupt = true
 		end
 		--If users previous voice pack was not set to none, don't force change it to VEM, honor whatever it was set to before
 		if self.Options.ChosenVoicePack and self.Options.ChosenVoicePack ~= "None" then
@@ -6024,11 +6026,17 @@ end
 
 function DBM:UnitAura(uId, spellInput, spellInput2, spellInput3, spellInput4, spellInput5)
 	if not uId then return end
-	for i = 1, 60 do
-		local spellName, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, castByPlayer, nameplateShowAll, timeMod, value1, value2, value3 = UnitAura(uId, i)
-		if not spellName then return end
-		if spellInput == spellName or spellInput == spellId or spellInput2 == spellName or spellInput2 == spellId or spellInput3 == spellName or spellInput3 == spellId or spellInput4 == spellName or spellInput4 == spellId or spellInput5 == spellName or spellInput5 == spellId then
-			return spellName, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, castByPlayer, nameplateShowAll, timeMod, value1, value2, value3
+	if isRetail and type(spellInput) == "number" and not spellInput2 and UnitIsUnit(uId, "player") then--A simple single spellId check should use more efficent direct blizzard method
+		local spellTable = C_UnitAuras.GetPlayerAuraBySpellID(spellInput)
+		if not spellTable then return end
+		return spellTable.name, spellTable.icon, spellTable.applications, spellTable.dispelName, spellTable.duration, spellTable.expirationTime, spellTable.sourceUnit, spellTable.isStealable, spellTable.nameplateShowPersonal, spellTable.spellId, spellTable.canApplyAura, spellTable.isBossAura, spellTable.isFromPlayerOrPlayerPet, spellTable.nameplateShowAll, spellTable.timeMod, spellTable.points[1] or nil, spellTable.points[2] or nil, spellTable.points[3] or nil
+	else--Either a multi spell check, spell name check, or C_UnitAuras.GetPlayerAuraBySpellID is unavailable
+		for i = 1, 60 do
+			local spellName, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, castByPlayer, nameplateShowAll, timeMod, value1, value2, value3 = UnitAura(uId, i)
+			if not spellName then return end
+			if spellInput == spellName or spellInput == spellId or spellInput2 == spellName or spellInput2 == spellId or spellInput3 == spellName or spellInput3 == spellId or spellInput4 == spellName or spellInput4 == spellId or spellInput5 == spellName or spellInput5 == spellId then
+				return spellName, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, castByPlayer, nameplateShowAll, timeMod, value1, value2, value3
+			end
 		end
 	end
 end
@@ -6036,11 +6044,17 @@ end
 --In classic, instead of adding rank back in at beginning where it was pre 8.0, it's 15th arg return at end (value 1)
 function DBM:UnitDebuff(uId, spellInput, spellInput2, spellInput3, spellInput4, spellInput5)
 	if not uId then return end
-	for i = 1, 60 do
-		local spellName, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, castByPlayer, nameplateShowAll, timeMod, value1, value2, value3 = UnitDebuff(uId, i)
-		if not spellName then return end
-		if spellInput == spellName or spellInput == spellId or spellInput2 == spellName or spellInput2 == spellId or spellInput3 == spellName or spellInput3 == spellId or spellInput4 == spellName or spellInput4 == spellId or spellInput5 == spellName or spellInput5 == spellId then
-			return spellName, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, castByPlayer, nameplateShowAll, timeMod, value1, value2, value3
+	if isRetail and type(spellInput) == "number" and not spellInput2 and UnitIsUnit(uId, "player") then--A simple single spellId check should use more efficent direct blizzard method
+		local spellTable = C_UnitAuras.GetPlayerAuraBySpellID(spellInput)
+		if not spellTable then return end
+		return spellTable.name, spellTable.icon, spellTable.applications, spellTable.dispelName, spellTable.duration, spellTable.expirationTime, spellTable.sourceUnit, spellTable.isStealable, spellTable.nameplateShowPersonal, spellTable.spellId, spellTable.canApplyAura, spellTable.isBossAura, spellTable.isFromPlayerOrPlayerPet, spellTable.nameplateShowAll, spellTable.timeMod, spellTable.points[1] or nil, spellTable.points[2] or nil, spellTable.points[3] or nil
+	else--Either a multi spell check, spell name check, or C_UnitAuras.GetPlayerAuraBySpellID is unavailable
+		for i = 1, 60 do
+			local spellName, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, castByPlayer, nameplateShowAll, timeMod, value1, value2, value3 = UnitDebuff(uId, i)
+			if not spellName then return end
+			if spellInput == spellName or spellInput == spellId or spellInput2 == spellName or spellInput2 == spellId or spellInput3 == spellName or spellInput3 == spellId or spellInput4 == spellName or spellInput4 == spellId or spellInput5 == spellName or spellInput5 == spellId then
+				return spellName, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, castByPlayer, nameplateShowAll, timeMod, value1, value2, value3
+			end
 		end
 	end
 end
@@ -6048,11 +6062,17 @@ end
 --In classic, instead of adding rank back in at beginning where it was pre 8.0, it's 15th arg return at end (value 1)
 function DBM:UnitBuff(uId, spellInput, spellInput2, spellInput3, spellInput4, spellInput5)
 	if not uId then return end
-	for i = 1, 60 do
-		local spellName, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, castByPlayer, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff(uId, i)
-		if not spellName then return end
-		if spellInput == spellName or spellInput == spellId or spellInput2 == spellName or spellInput2 == spellId or spellInput3 == spellName or spellInput3 == spellId or spellInput4 == spellName or spellInput4 == spellId or spellInput5 == spellName or spellInput5 == spellId then
-			return spellName, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, castByPlayer, nameplateShowAll, timeMod, value1, value2, value3
+	if isRetail and type(spellInput) == "number" and not spellInput2 and UnitIsUnit(uId, "player") then--A simple single spellId check should use more efficent direct blizzard method
+		local spellTable = C_UnitAuras.GetPlayerAuraBySpellID(spellInput)
+		if not spellTable then return end
+		return spellTable.name, spellTable.icon, spellTable.applications, spellTable.dispelName, spellTable.duration, spellTable.expirationTime, spellTable.sourceUnit, spellTable.isStealable, spellTable.nameplateShowPersonal, spellTable.spellId, spellTable.canApplyAura, spellTable.isBossAura, spellTable.isFromPlayerOrPlayerPet, spellTable.nameplateShowAll, spellTable.timeMod, spellTable.points[1] or nil, spellTable.points[2] or nil, spellTable.points[3] or nil
+	else--Either a multi spell check, spell name check, or C_UnitAuras.GetPlayerAuraBySpellID is unavailable
+		for i = 1, 60 do
+			local spellName, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, castByPlayer, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff(uId, i)
+			if not spellName then return end
+			if spellInput == spellName or spellInput == spellId or spellInput2 == spellName or spellInput2 == spellId or spellInput3 == spellName or spellInput3 == spellId or spellInput4 == spellName or spellInput4 == spellId or spellInput5 == spellName or spellInput5 == spellId then
+				return spellName, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, castByPlayer, nameplateShowAll, timeMod, value1, value2, value3
+			end
 		end
 	end
 end
@@ -7682,51 +7702,43 @@ do
 	--checkCooldown should always be passed true except for special rotations like count warnings when you should be alerted it's your turn even if you dropped ball and put it on CD at wrong time
 	--ignoreTandF is passed usually when interrupt is on a main boss or event that is global to entire raid and should always be alerted regardless of targetting.
 	function bossModPrototype:CheckInterruptFilter(sourceGUID, checkOnlyTandF, checkCooldown, ignoreTandF)
-		--Just return true if interrupt filtering is disabled (and it's actually for an interrupt)
-		if DBM.Options.FilterInterrupt2 == "None" and not checkOnlyTandF then return true end
-
-		local unitID = (UnitGUID("target") == sourceGUID) and "target" or not isClassic and (UnitGUID("focus") == sourceGUID) and "focus"
-
-		--Just return true if target or focus is ONLY requirement (not an interrupt check) and we already confirmed T and F
-		if unitID and checkOnlyTandF then return true end--checkOnlyTandF means this isn't an interrupt check at all, skip all the rest and return true if we met TandF rquirement
-
-		--TandF required in all checks except "None" or if ignoreTandF is passed
-		--Just return false if source isn't our target or focus, no need to do further checks
-		if not ignoreTandF and not unitID then
+		--Check healer spec filter
+		if self:IsHealer() and (self.isTrashMod and DBM.Options.FilterTInterruptHealer or not self.isTrashMod and DBM.Options.FilterBInterruptHealer) then
 			return false
 		end
 
-		--Check if cooldown check is actually required
-		local cooldownRequired = checkCooldown--First set to default value defined by arg
-		if cooldownRequired and ((DBM.Options.FilterInterrupt2 == "onlyTandF") or self.isTrashMod and (DBM.Options.FilterInterrupt2 == "TandFandBossCooldown")) then
-			cooldownRequired = false
-		end
-
-		local InterruptAvailable = true--We want to default to true versus false, since some interrupts don't require CD checks
-		if cooldownRequired then
+		--Check if cooldown check is required
+		if checkCooldown and (self.isTrashMod and DBM.Options.FilterTInterruptCooldown or not self.isTrashMod and DBM.Options.FilterBInterruptCooldown) then
 			for spellID, _ in pairs(interruptSpells) do
 				--For an inverse check, don't need to check if it's known, if it's on cooldown it's known
 				--This is possible since no class has 2 interrupt spells (well, actual interrupt spells)
 				if (GetSpellCooldown(spellID)) ~= 0 then--Spell is on cooldown
-					InterruptAvailable = false
+					return false
 				end
 			end
 		end
-		if InterruptAvailable then
-			--Check if it's casting something that's not interruptable at the moment
-			--needed for torghast since many mobs can have interrupt immunity with same spellIds as other mobs that can be interrupted
-			if isRetail and unitID then
-				if UnitCastingInfo(unitID) then
-					local _, _, _, _, _, _, _, notInterruptible = UnitCastingInfo(unitID)
-					if notInterruptible then return false end
-				elseif UnitChannelInfo(unitID) then
-					local _, _, _, _, _, _, notInterruptible = UnitChannelInfo(unitID)
-					if notInterruptible then return false end
-				end
+
+		local unitID = (UnitGUID("target") == sourceGUID) and "target" or not isClassic and (UnitGUID("focus") == sourceGUID) and "focus"
+		--Check if target/focus is required (or if onlyTandF is used, meaning this isn't actually an interrupt API check)
+		if checkOnlyTandF or (self.isTrashMod and DBM.Options.FilterTTargetFocus or not self.isTrashMod and DBM.Options.FilterBTargetFocus) then
+			--Just return false if source isn't our target or focus, no need to do further checks
+			if not ignoreTandF and not unitID then
+				return false
 			end
-			return true
 		end
-		return false
+
+		--Check if it's casting something that's not interruptable at the moment
+		--needed for torghast since many mobs can have interrupt immunity with same spellIds as other mobs that can be interrupted
+		if isRetail and unitID then
+			if UnitCastingInfo(unitID) then
+				local _, _, _, _, _, _, _, notInterruptible = UnitCastingInfo(unitID)
+				if notInterruptible then return false end
+			elseif UnitChannelInfo(unitID) then
+				local _, _, _, _, _, _, notInterruptible = UnitChannelInfo(unitID)
+				if notInterruptible then return false end
+			end
+		end
+		return true
 	end
 end
 

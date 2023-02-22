@@ -1710,26 +1710,18 @@ TellMeWhenDB = {
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TQvxnAfbGyU",
-					["Point"] = {
-						["y"] = -5,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
+					["Columns"] = 20,
 					["Scale"] = 1,
 					["Rows"] = 3,
-					["Alpha"] = 0,
-					["Name"] = "SPELLS",
-					["Locked"] = true,
-					["Columns"] = 20,
 					["Icons"] = {
 						{
-							["GUID"] = "TMW:icon:1TQv_LtTwAae",
+							["Enabled"] = true,
 							["Type"] = "cooldown",
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
 							["OnlyMine"] = true,
 							["Name"] = "Rend",
-							["Enabled"] = true,
+							["RangeCheck"] = true,
 							["ManaCheck"] = true,
 							["Conditions"] = {
 								{
@@ -1745,7 +1737,7 @@ TellMeWhenDB = {
 								}, -- [2]
 								["n"] = 2,
 							},
-							["RangeCheck"] = true,
+							["GUID"] = "TMW:icon:1TQv_LtTwAae",
 							["States"] = {
 								{
 								}, -- [1]
@@ -1868,12 +1860,12 @@ TellMeWhenDB = {
 							},
 						}, -- [4]
 						{
-							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1TWZdpV26rm5",
 							["Type"] = "cooldown",
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
 							["Name"] = "Demoralizing Shout",
-							["ManaCheck"] = true,
+							["Enabled"] = true,
 							["Conditions"] = {
 								{
 									["Name"] = "Defensive Stance",
@@ -1890,7 +1882,7 @@ TellMeWhenDB = {
 								}, -- [3]
 								["n"] = 3,
 							},
-							["GUID"] = "TMW:icon:1TWZdpV26rm5",
+							["ManaCheck"] = true,
 							["States"] = {
 								{
 								}, -- [1]
@@ -1918,21 +1910,20 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["GUID"] = "TMW:icon:1TYYu4EDbfSz",
 							["Conditions"] = {
 								{
 									["Type"] = "DEBUFFSTACKS",
 									["Name"] = "Sunder Armor",
 									["Level"] = 5,
-									["Unit"] = "target",
 									["Operator"] = "<",
+									["Unit"] = "target",
 								}, -- [1]
 								{
 									["Type"] = "LEVEL",
 									["PrtsBefore"] = 1,
 									["Level"] = 82,
-									["Unit"] = "target",
 									["Operator"] = ">",
+									["Unit"] = "target",
 								}, -- [2]
 								{
 									["Type"] = "LEVEL",
@@ -1941,9 +1932,15 @@ TellMeWhenDB = {
 									["PrtsAfter"] = 1,
 									["Unit"] = "target",
 								}, -- [3]
-								["n"] = 3,
+								{
+									["Type"] = "DEBUFFDUR",
+									["Name"] = "Expose Armor",
+									["Unit"] = "target",
+								}, -- [4]
+								["n"] = 4,
 							},
 							["HideIfNoUnits"] = true,
+							["GUID"] = "TMW:icon:1TYYu4EDbfSz",
 							["States"] = {
 								{
 								}, -- [1]
@@ -1979,7 +1976,7 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Revenge",
-							["GUID"] = "TMW:icon:1Xrn34GriOqy",
+							["ManaCheck"] = true,
 							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
@@ -1993,7 +1990,7 @@ TellMeWhenDB = {
 								}, -- [2]
 								["n"] = 2,
 							},
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1Xrn34GriOqy",
 							["States"] = {
 								{
 								}, -- [1]
@@ -2023,8 +2020,8 @@ TellMeWhenDB = {
 									["Name"] = "xAOE(8) > 1",
 								}, -- [2]
 								{
-									["Type"] = "RAGE_ABS",
 									["Level"] = 40,
+									["Type"] = "RAGE_ABS",
 									["PrtsAfter"] = 1,
 									["Operator"] = ">=",
 								}, -- [3]
@@ -2035,9 +2032,9 @@ TellMeWhenDB = {
 									["AndOr"] = "OR",
 								}, -- [4]
 								{
-									["PrtsAfter"] = 2,
-									["Type"] = "RAGE_ABS",
 									["Name"] = "Defensive Stance",
+									["Type"] = "RAGE_ABS",
+									["PrtsAfter"] = 2,
 									["Operator"] = ">=",
 								}, -- [5]
 								["n"] = 5,
@@ -2070,8 +2067,8 @@ TellMeWhenDB = {
 									["Type"] = "LUA",
 								}, -- [2]
 								{
-									["Type"] = "SPELLCD",
 									["Level"] = 1,
+									["Type"] = "SPELLCD",
 									["Name"] = "Whirlwind",
 									["Operator"] = "<=",
 								}, -- [3]
@@ -2097,18 +2094,18 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "reactive",
 							["Name"] = "Victory Rush",
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1YP2Xjgjriiu",
 							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "SPEC",
 									["Level"] = 1,
+									["Type"] = "SPEC",
 								}, -- [1]
 								{
 									["PrtsBefore"] = 1,
 									["Type"] = "SPEC",
-									["Level"] = 2,
 									["AndOr"] = "OR",
+									["Level"] = 2,
 								}, -- [2]
 								{
 									["Type"] = "STANCE",
@@ -2117,7 +2114,7 @@ TellMeWhenDB = {
 								}, -- [3]
 								["n"] = 3,
 							},
-							["GUID"] = "TMW:icon:1YP2Xjgjriiu",
+							["ManaCheck"] = true,
 							["States"] = {
 								{
 								}, -- [1]
@@ -2152,8 +2149,8 @@ TellMeWhenDB = {
 									["Name"] = "xAOE(10,true) > 0",
 								}, -- [3]
 								{
-									["Type"] = "NAME",
 									["AndOr"] = "OR",
+									["Type"] = "NAME",
 									["Name"] = "Tempest-Forge Peacekeeper",
 									["Unit"] = "target",
 								}, -- [4]
@@ -2164,8 +2161,8 @@ TellMeWhenDB = {
 									["Unit"] = "target",
 								}, -- [5]
 								{
-									["Type"] = "REACT",
 									["Level"] = 1,
+									["Type"] = "REACT",
 									["PrtsAfter"] = 2,
 									["Unit"] = "target",
 								}, -- [6]
@@ -2187,7 +2184,7 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Mortal Strike",
-							["GUID"] = "TMW:icon:1XzwOSGxkHLD",
+							["ManaCheck"] = true,
 							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
@@ -2196,18 +2193,18 @@ TellMeWhenDB = {
 									["Name"] = "xAOE(5) == 1",
 								}, -- [1]
 								{
-									["Name"] = "Battle Stance; Berserker Stance",
 									["AndOr"] = "OR",
-									["PrtsAfter"] = 1,
 									["Type"] = "STANCE",
+									["PrtsAfter"] = 1,
+									["Name"] = "Battle Stance; Berserker Stance",
 								}, -- [2]
 								{
-									["Type"] = "SPEC",
 									["Level"] = 1,
+									["Type"] = "SPEC",
 								}, -- [3]
 								["n"] = 3,
 							},
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1XzwOSGxkHLD",
 							["States"] = {
 								{
 								}, -- [1]
@@ -2262,10 +2259,10 @@ TellMeWhenDB = {
 									["Level"] = 2,
 								}, -- [2]
 								{
-									["Unit"] = "target",
 									["Level"] = 20,
 									["Type"] = "HEALTH",
 									["Operator"] = ">",
+									["Unit"] = "target",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -2289,8 +2286,8 @@ TellMeWhenDB = {
 							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "SPELLCD",
 									["Level"] = 1,
+									["Type"] = "SPELLCD",
 									["Name"] = "Bloodthirst",
 									["Operator"] = "<=",
 								}, -- [1]
@@ -2365,12 +2362,12 @@ TellMeWhenDB = {
 							},
 						}, -- [18]
 						{
-							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1YWHZ7T27TKe",
 							["Type"] = "cooldown",
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
 							["Name"] = "Thunder Clap",
-							["ManaCheck"] = true,
+							["Enabled"] = true,
 							["Conditions"] = {
 								{
 									["PrtsBefore"] = 1,
@@ -2408,7 +2405,7 @@ TellMeWhenDB = {
 								}, -- [7]
 								["n"] = 7,
 							},
-							["GUID"] = "TMW:icon:1YWHZ7T27TKe",
+							["ManaCheck"] = true,
 							["States"] = {
 								{
 								}, -- [1]
@@ -2422,7 +2419,7 @@ TellMeWhenDB = {
 							},
 						}, -- [19]
 						{
-							["ManaCheck"] = true,
+							["Enabled"] = true,
 							["Type"] = "cooldown",
 							["BuffOrDebuff"] = "HARMFUL",
 							["Name"] = "Hamstring",
@@ -2430,8 +2427,8 @@ TellMeWhenDB = {
 							["GUID"] = "TMW:icon:1TWYMfcUzmi6",
 							["Conditions"] = {
 								{
-									["Type"] = "ISPLAYER",
 									["Unit"] = "target",
+									["Type"] = "ISPLAYER",
 								}, -- [1]
 								{
 									["Type"] = "DEBUFFDUR",
@@ -2449,7 +2446,7 @@ TellMeWhenDB = {
 								}, -- [4]
 								["n"] = 4,
 							},
-							["Enabled"] = true,
+							["ManaCheck"] = true,
 							["States"] = {
 								{
 								}, -- [1]
@@ -2466,7 +2463,7 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Devastate",
-							["GUID"] = "TMW:icon:1Z55tRw3mJGc",
+							["ManaCheck"] = true,
 							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
@@ -2475,7 +2472,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1Z55tRw3mJGc",
 							["States"] = {
 								{
 								}, -- [1]
@@ -2541,7 +2538,7 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Shield Slam",
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1Z55tRwA_pKn",
 							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
@@ -2550,7 +2547,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["GUID"] = "TMW:icon:1Z55tRwA_pKn",
+							["ManaCheck"] = true,
 							["States"] = {
 								{
 								}, -- [1]
@@ -2567,16 +2564,16 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Vigilance",
-							["GUID"] = "TMW:icon:1Z7AzkxDmWSh",
+							["ManaCheck"] = true,
 							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "EXISTS",
 									["Unit"] = "focus",
+									["Type"] = "EXISTS",
 								}, -- [1]
 								{
-									["Type"] = "ALIVE",
 									["Unit"] = "focus",
+									["Type"] = "ALIVE",
 								}, -- [2]
 								{
 									["Type"] = "REACT",
@@ -2585,7 +2582,7 @@ TellMeWhenDB = {
 								}, -- [3]
 								["n"] = 3,
 							},
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1Z7AzkxDmWSh",
 							["States"] = {
 								{
 								}, -- [1]
@@ -2610,9 +2607,9 @@ TellMeWhenDB = {
 									["Name"] = "Defensive Stance",
 								}, -- [1]
 								{
-									["PrtsAfter"] = 1,
-									["Type"] = "SPELLCD",
 									["Name"] = "Shield Bash",
+									["Type"] = "SPELLCD",
+									["PrtsAfter"] = 1,
 									["Operator"] = "~=",
 								}, -- [2]
 								{
@@ -2622,9 +2619,9 @@ TellMeWhenDB = {
 									["AndOr"] = "OR",
 								}, -- [3]
 								{
-									["PrtsAfter"] = 1,
-									["Type"] = "SPELLCD",
 									["Name"] = "Pummel",
+									["Type"] = "SPELLCD",
+									["PrtsAfter"] = 1,
 									["Operator"] = "~=",
 								}, -- [4]
 								{
@@ -2638,9 +2635,9 @@ TellMeWhenDB = {
 									["Type"] = "LUA",
 								}, -- [6]
 								{
-									["PrtsAfter"] = 2,
-									["Type"] = "SPELLCD",
 									["Name"] = "Shield Bash",
+									["Type"] = "SPELLCD",
+									["PrtsAfter"] = 2,
 									["Operator"] = "~=",
 								}, -- [7]
 								{
@@ -2655,8 +2652,8 @@ TellMeWhenDB = {
 									["Unit"] = "target",
 								}, -- [9]
 								{
-									["Type"] = "REACT",
 									["Level"] = 1,
+									["Type"] = "REACT",
 									["PrtsAfter"] = 1,
 									["Unit"] = "target",
 								}, -- [10]
@@ -2666,14 +2663,14 @@ TellMeWhenDB = {
 									["Name"] = "Spell Reflection",
 								}, -- [11]
 								{
-									["Name"] = "xUnitCastingNonInteruptable(\"target\")",
 									["AndOr"] = "OR",
-									["PrtsAfter"] = 1,
 									["Type"] = "LUA",
+									["PrtsAfter"] = 1,
+									["Name"] = "xUnitCastingNonInteruptable(\"target\")",
 								}, -- [12]
 								{
-									["Type"] = "SPEC",
 									["Level"] = 1,
+									["Type"] = "SPEC",
 								}, -- [13]
 								["n"] = 13,
 							},
@@ -2818,7 +2815,7 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Disarm",
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1Z9CIRRFbqSA",
 							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
@@ -2827,8 +2824,8 @@ TellMeWhenDB = {
 								}, -- [1]
 								{
 									["Type"] = "CLASS2",
-									["Unit"] = "target",
 									["BitFlags"] = 43,
+									["Unit"] = "target",
 								}, -- [2]
 								{
 									["Type"] = "STANCE",
@@ -2836,14 +2833,14 @@ TellMeWhenDB = {
 									["Name"] = "Defensive Stance",
 								}, -- [3]
 								{
-									["Type"] = "NAME",
 									["AndOr"] = "OR",
+									["Type"] = "NAME",
 									["Name"] = "Lord Crispin Ference",
 									["Unit"] = "target",
 								}, -- [4]
 								["n"] = 4,
 							},
-							["GUID"] = "TMW:icon:1Z9CIRRFbqSA",
+							["ManaCheck"] = true,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -2944,8 +2941,8 @@ TellMeWhenDB = {
 							["Name"] = "Blood Fury",
 							["Conditions"] = {
 								{
-									["Type"] = "SPEC",
 									["Level"] = 2,
+									["Type"] = "SPEC",
 								}, -- [1]
 								{
 									["PrtsBefore"] = 1,
@@ -3098,18 +3095,10 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["Type"] = "item",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
+							["OnlyInBags"] = true,
 							["Name"] = "10",
-							["OnlyEquipped"] = true,
 							["GUID"] = "TMW:icon:1ZsuoueneRaY",
+							["CustomTex"] = "52766",
 							["Conditions"] = {
 								{
 									["PrtsBefore"] = 1,
@@ -3130,13 +3119,21 @@ TellMeWhenDB = {
 									["Unit"] = "target",
 								}, -- [3]
 								{
-									["Type"] = "SPEC",
 									["Level"] = 2,
+									["Type"] = "SPEC",
 								}, -- [4]
 								["n"] = 4,
 							},
-							["CustomTex"] = "52766",
-							["OnlyInBags"] = true,
+							["OnlyEquipped"] = true,
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
 						}, -- [41]
 						{
 							["States"] = {
@@ -3189,17 +3186,17 @@ TellMeWhenDB = {
 							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
-									["Unit"] = "target",
+									["Operator"] = "~=",
 									["Type"] = "DEBUFFDUR",
 									["Name"] = "Sunder Armor",
-									["Operator"] = "~=",
+									["Unit"] = "target",
 								}, -- [1]
 								{
 									["Type"] = "DEBUFFDUR",
 									["Name"] = "Sunder Armor",
 									["Level"] = 7.5,
-									["Unit"] = "target",
 									["Operator"] = "<",
+									["Unit"] = "target",
 								}, -- [2]
 								["n"] = 2,
 							},
@@ -3606,15 +3603,23 @@ TellMeWhenDB = {
 							},
 						}, -- [80]
 					},
-				}, -- [1]
-				{
-					["GUID"] = "TMW:group:1TWYSTcQ410f",
+					["Name"] = "SPELLS",
+					["Locked"] = true,
+					["Alpha"] = 0,
 					["Point"] = {
-						["y"] = -95,
+						["y"] = -5,
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
+				}, -- [1]
+				{
+					["GUID"] = "TMW:group:1TWYSTcQ410f",
+					["Columns"] = 20,
 					["Scale"] = 1,
+					["Alpha"] = 0,
+					["TextureName"] = "Details Flat",
+					["Name"] = "GENERAL",
+					["Locked"] = true,
 					["Icons"] = {
 						{
 							["GUID"] = "TMW:icon:1TWYSTcSCl0z",
@@ -3636,14 +3641,14 @@ TellMeWhenDB = {
 						{
 							["GUID"] = "TMW:icon:1TZvNvgAkfmq",
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "Enrage",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["TextLayout"] = "TMW:textlayout:1TZve345g=GK",
 								},
 							},
 							["Enabled"] = true,
-							["Name"] = "Enrage",
+							["ShowTimerText"] = true,
 							["States"] = {
 								{
 								}, -- [1]
@@ -3674,14 +3679,14 @@ TellMeWhenDB = {
 						{
 							["GUID"] = "TMW:icon:1YXBo4F3g7mS",
 							["Type"] = "buff",
-							["Name"] = "Sweeping Strikes",
+							["ShowTimerText"] = true,
 							["SettingsPerView"] = {
 								["icon"] = {
 									["TextLayout"] = "TMW:textlayout:1TZve345g=GK",
 								},
 							},
 							["Enabled"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "Sweeping Strikes",
 							["States"] = {
 								{
 								}, -- [1]
@@ -3828,15 +3833,7 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "item",
 							["Name"] = "33447; 43531; 22829; 929; 13446; 33092; 3928; 39671; 43569; 858; 1710; 118; 28100; 32947; 4596; 33934; 31853; 18839; 31839; 31852; 23822; 31838; 32905",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
+							["OnlyInBags"] = true,
 							["GUID"] = "TMW:icon:1ZmKyPVeTnOI",
 							["Conditions"] = {
 								{
@@ -3847,13 +3844,29 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["CustomTex"] = "28491",
-							["OnlyInBags"] = true,
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
 						}, -- [17]
 						{
 							["Enabled"] = true,
 							["Type"] = "item",
 							["Name"] = "22105; 22103; 22104; 36892; 5509; 5512; 36894; 19013; 36893; 36891; 36890; 19009; 19004; 19012; 5510; 19007; 19005; 19006; 19010; 36889; 5511; 19008; 9421; 19011",
-							["OnlyInBags"] = true,
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
 							["GUID"] = "TMW:icon:1X=ERE5iZ8VU",
 							["Conditions"] = {
 								{
@@ -3864,6 +3877,13 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["CustomTex"] = "5720",
+							["OnlyInBags"] = true,
+						}, -- [18]
+						{
+							["Enabled"] = true,
+							["Type"] = "item",
+							["Name"] = "Battlemaster's Resolve",
+							["GUID"] = "TMW:icon:1ZPI5_kvU7St",
 							["States"] = {
 								{
 								}, -- [1]
@@ -3873,13 +3893,6 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-						}, -- [18]
-						{
-							["GUID"] = "TMW:icon:1ZPI5_kvU7St",
-							["Type"] = "item",
-							["Name"] = "Battlemaster's Resolve",
-							["OnlyInBags"] = true,
-							["Enabled"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "HEALTH",
@@ -3889,15 +3902,7 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["OnlyEquipped"] = true,
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
+							["OnlyInBags"] = true,
 						}, -- [19]
 						{
 							["Enabled"] = true,
@@ -3928,19 +3933,14 @@ TellMeWhenDB = {
 							},
 						}, -- [20]
 					},
-					["TextureName"] = "Details Flat",
-					["Name"] = "GENERAL",
-					["Locked"] = true,
-					["Columns"] = 20,
-					["Alpha"] = 0,
+					["Point"] = {
+						["y"] = -95,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
 				}, -- [2]
 				{
 					["GUID"] = "TMW:group:1TWYPj24VzCn",
-					["Name"] = "OTHER PORTRAIT",
-					["Point"] = {
-						["y"] = -74,
-						["x"] = -290,
-					},
 					["Icons"] = {
 						{
 							["Enabled"] = true,
@@ -3975,6 +3975,11 @@ TellMeWhenDB = {
 							},
 						}, -- [2]
 					},
+					["Point"] = {
+						["y"] = -74,
+						["x"] = -290,
+					},
+					["Name"] = "OTHER PORTRAIT",
 					["Scale"] = 1.2,
 					["Columns"] = 1,
 					["Alpha"] = 0,
@@ -3983,7 +3988,7 @@ TellMeWhenDB = {
 				{
 					["GUID"] = "TMW:group:1TQuFk14Ix42",
 					["Point"] = {
-						["y"] = -88,
+						["y"] = -95,
 						["x"] = -5.450076092640056e-05,
 					},
 					["Scale"] = 1.5,
@@ -4029,16 +4034,16 @@ TellMeWhenDB = {
 							},
 							["Conditions"] = {
 								{
-									["Type"] = "MOUNTED",
 									["Level"] = 1,
+									["Type"] = "MOUNTED",
 								}, -- [1]
 								{
-									["Type"] = "EXISTS",
 									["Unit"] = "target",
+									["Type"] = "EXISTS",
 								}, -- [2]
 								{
-									["Type"] = "ALIVE",
 									["Unit"] = "target",
+									["Type"] = "ALIVE",
 								}, -- [3]
 								{
 									["Type"] = "REACT",
@@ -4078,6 +4083,7 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "buff",
 							["Sort"] = -1,
+							["DurationMin"] = 15,
 							["Name"] = "Battle Shout",
 							["Conditions"] = {
 								{
@@ -4088,7 +4094,6 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["DurationMinEnabled"] = true,
-							["DurationMin"] = 15,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -4116,15 +4121,15 @@ TellMeWhenDB = {
 					["Name"] = "ROTATION CENTER",
 					["SettingsPerView"] = {
 						["icon"] = {
-							["BorderInset"] = false,
 							["BorderColor"] = "00000000",
+							["BorderInset"] = false,
 						},
 					},
 					["Locked"] = true,
 					["Conditions"] = {
 						{
-							["Type"] = "MOUNTED",
 							["Level"] = 1,
+							["Type"] = "MOUNTED",
 						}, -- [1]
 						["n"] = 1,
 					},
@@ -4181,16 +4186,16 @@ TellMeWhenDB = {
 							},
 							["Conditions"] = {
 								{
-									["Type"] = "MOUNTED",
 									["Level"] = 1,
+									["Type"] = "MOUNTED",
 								}, -- [1]
 								{
-									["Type"] = "EXISTS",
 									["Unit"] = "target",
+									["Type"] = "EXISTS",
 								}, -- [2]
 								{
-									["Type"] = "ALIVE",
 									["Unit"] = "target",
+									["Type"] = "ALIVE",
 								}, -- [3]
 								{
 									["Type"] = "REACT",
@@ -4230,6 +4235,7 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "buff",
 							["Sort"] = -1,
+							["DurationMin"] = 15,
 							["Name"] = "Battle Shout",
 							["Conditions"] = {
 								{
@@ -4240,7 +4246,6 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["DurationMinEnabled"] = true,
-							["DurationMin"] = 15,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -4277,14 +4282,14 @@ TellMeWhenDB = {
 				}, -- [5]
 				{
 					["GUID"] = "TMW:group:1ZHnkWuhaAG=",
+					["Name"] = "ROTATION QUEUE",
 					["Point"] = {
 						["x"] = 30,
 						["point"] = "TOPLEFT",
 						["relativePoint"] = "TOPLEFT",
 					},
-					["Name"] = "ROTATION QUEUE",
-					["Scale"] = 0.4,
 					["Locked"] = true,
+					["Scale"] = 0.4,
 					["Columns"] = 1,
 					["Icons"] = {
 						{
@@ -4292,16 +4297,16 @@ TellMeWhenDB = {
 							["Type"] = "meta",
 							["Conditions"] = {
 								{
-									["Type"] = "MOUNTED",
 									["Level"] = 1,
+									["Type"] = "MOUNTED",
 								}, -- [1]
 								{
-									["Type"] = "EXISTS",
 									["Unit"] = "target",
+									["Type"] = "EXISTS",
 								}, -- [2]
 								{
-									["Type"] = "ALIVE",
 									["Unit"] = "target",
+									["Type"] = "ALIVE",
 								}, -- [3]
 								{
 									["Type"] = "REACT",
@@ -4356,7 +4361,10 @@ TellMeWhenDB = {
 				{
 					["GUID"] = "TMW:group:1ZM=EKbLryuK",
 					["Columns"] = 1,
-					["Locked"] = true,
+					["Point"] = {
+						["point"] = "LEFT",
+						["relativePoint"] = "LEFT",
+					},
 					["Scale"] = 0.4,
 					["Name"] = "DEBUG",
 					["Icons"] = {
@@ -4372,10 +4380,7 @@ TellMeWhenDB = {
 							},
 						}, -- [1]
 					},
-					["Point"] = {
-						["point"] = "LEFT",
-						["relativePoint"] = "LEFT",
-					},
+					["Locked"] = true,
 				}, -- [7]
 			},
 			["NumGroups"] = 7,
@@ -4383,6 +4388,7 @@ TellMeWhenDB = {
 		},
 		["ROGUE"] = {
 			["Locked"] = true,
+			["NumGroups"] = 5,
 			["Version"] = 100800,
 			["Groups"] = {
 				{
@@ -5333,7 +5339,6 @@ TellMeWhenDB = {
 					["Locked"] = true,
 				}, -- [5]
 			},
-			["NumGroups"] = 5,
 		},
 		["MAGE"] = {
 			["Groups"] = {
@@ -6809,6 +6814,7 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
+							["DurationMin"] = 15,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
@@ -6818,7 +6824,6 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["DurationMinEnabled"] = true,
-							["DurationMin"] = 15,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -6886,6 +6891,7 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
+							["DurationMin"] = 15,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
@@ -6895,7 +6901,6 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["DurationMinEnabled"] = true,
-							["DurationMin"] = 15,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -6985,6 +6990,744 @@ TellMeWhenDB = {
 			["Version"] = 100800,
 			["NumGroups"] = 7,
 			["TextureName"] = "Glamour2",
+		},
+		["WARLOCK"] = {
+			["Locked"] = true,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1TWYPj24VzCn",
+					["Point"] = {
+						["y"] = -20,
+						["x"] = -230,
+					},
+					["Name"] = "Other",
+					["Scale"] = 1.5,
+					["Columns"] = 1,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1TZvNvgAkfmq", -- [1]
+								"TMW:icon:1TWYSTcSCl0z", -- [2]
+							},
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [1]
+					},
+					["TextureName"] = "Details Flat",
+				}, -- [1]
+				{
+					["GUID"] = "TMW:group:1TWYSTcQ410f",
+					["Point"] = {
+						["y"] = -40,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
+					["Scale"] = 1,
+					["Icons"] = {
+						{
+							["GUID"] = "TMW:icon:1TWYSTcSCl0z",
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["BuffOrDebuff"] = "HARMFUL",
+							["Enabled"] = true,
+							["Name"] = "Blood Fury",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [1]
+						{
+							["GUID"] = "TMW:icon:1TZvNvgAkfmq",
+							["Type"] = "buff",
+							["Name"] = "Enrage",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "TMW:textlayout:1TZve345g=GK",
+								},
+							},
+							["Enabled"] = true,
+							["ShowTimerText"] = true,
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [2]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [3]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [4]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [5]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [6]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [7]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [8]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [9]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [10]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [11]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [12]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [13]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [14]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [15]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [16]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [17]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [18]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [19]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [20]
+					},
+					["TextureName"] = "Details Flat",
+					["Name"] = "General Buffs/Debbufs",
+					["Locked"] = true,
+					["Columns"] = 20,
+					["Alpha"] = 0,
+				}, -- [2]
+				{
+					["GUID"] = "TMW:group:1V6krZ0tqss=",
+					["Columns"] = 1,
+					["Scale"] = 0.4,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1V6ky7UjmQN=", -- [1]
+								"TMW:icon:1V6ky7UreCKN", -- [2]
+								"TMW:icon:1V6ky7Uy=NmE", -- [3]
+								"TMW:icon:1YXBfKWFOMGr", -- [4]
+							},
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1V6ky7UreCKN", -- [1]
+							},
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1V6ky7Uy=NmE", -- [1]
+							},
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [3]
+					},
+					["LayoutDirection"] = 2,
+					["Name"] = "Rotation TOPLEFT",
+					["Locked"] = true,
+					["Point"] = {
+						["y"] = 6.103515625e-05,
+						["point"] = "TOPLEFT",
+						["relativePoint"] = "TOPLEFT",
+					},
+					["OnlyInCombat"] = true,
+				}, -- [3]
+				{
+					["GUID"] = "TMW:group:1V6ky7Uf4nZ5",
+					["Scale"] = 1,
+					["Name"] = "Warlock Spells",
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["Type"] = "buff",
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "target",
+							["OnlyMine"] = true,
+							["Name"] = "Immolate",
+							["Conditions"] = {
+								{
+									["Operator"] = "<=",
+									["Level"] = 30,
+									["Type"] = "LIBRANGECHECK",
+									["Unit"] = "target",
+								}, -- [1]
+								{
+									["Type"] = "CURRENTSPELL",
+									["Name"] = "Immolate",
+									["Level"] = 1,
+								}, -- [2]
+								["n"] = 2,
+							},
+							["GUID"] = "TMW:icon:1V6ky7UjmQN=",
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								{
+									["Alpha"] = 1,
+								}, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Type"] = "buff",
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "target",
+							["OnlyMine"] = true,
+							["Name"] = "Corruption",
+							["Conditions"] = {
+								{
+									["Operator"] = "<=",
+									["Level"] = 30,
+									["Type"] = "LIBRANGECHECK",
+									["Unit"] = "target",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1V6ky7UreCKN",
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								{
+									["Alpha"] = 1,
+								}, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["Type"] = "buff",
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "target",
+							["OnlyMine"] = true,
+							["Name"] = "Curse of Agony",
+							["Conditions"] = {
+								{
+									["Operator"] = "<=",
+									["Level"] = 30,
+									["Type"] = "LIBRANGECHECK",
+									["Unit"] = "target",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1V6ky7Uy=NmE",
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								{
+									["Alpha"] = 1,
+								}, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [3]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Shadow Bolt",
+							["GUID"] = "TMW:icon:1YXBfKWFOMGr",
+							["RangeCheck"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "CURRENTSPELL",
+									["Name"] = "Shadow Bolt",
+									["Level"] = 1,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["ManaCheck"] = true,
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+									["Alpha"] = 0,
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [4]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [5]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [6]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [7]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [8]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [9]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [10]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [11]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [12]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [13]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [14]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [15]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [16]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [17]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [18]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [19]
+						{
+							["Enabled"] = true,
+							["Type"] = "item",
+							["Name"] = "healh",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [20]
+					},
+					["Locked"] = true,
+					["Columns"] = 20,
+					["Alpha"] = 0,
+					["Point"] = {
+						["y"] = -5,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
+				}, -- [4]
+				{
+					["GUID"] = "TMW:group:1YWt9BdVNgGm",
+					["Point"] = {
+						["y"] = -88,
+						["x"] = -5.450076092640056e-05,
+					},
+					["Scale"] = 1.5,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1V6ky7UjmQN=", -- [1]
+								"TMW:icon:1V6ky7UreCKN", -- [2]
+								"TMW:icon:1V6ky7Uy=NmE", -- [3]
+								"TMW:icon:1YXBfKWFOMGr", -- [4]
+							},
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1V6ky7UreCKN", -- [1]
+							},
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1V6ky7Uy=NmE", -- [1]
+							},
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [3]
+					},
+					["LayoutDirection"] = 2,
+					["Name"] = "Rotation CENTER",
+					["Locked"] = true,
+					["Columns"] = 1,
+					["OnlyInCombat"] = true,
+				}, -- [5]
+			},
+			["Version"] = 100800,
+			["NumGroups"] = 5,
 		},
 		["DEATHKNIGHT"] = {
 			["Groups"] = {
@@ -7275,29 +8018,20 @@ TellMeWhenDB = {
 									["Level"] = 40,
 								}, -- [4]
 								{
-									["Type"] = "RUNES2",
-									["Operator"] = ">",
-									["BitFlags"] = 57,
+									["Type"] = "LUA",
+									["Name"] = "local blood, frost, unholy, death = xRuneCount()\n\nif frost>0 and unholy>0 then return true end\nif frost>0 and death>0 and blood+death>1 then return true end\nif unholy>0 and death>0 and blood+death>1 then return true end\n\nreturn false",
 									["PrtsBefore"] = 1,
-									["Level"] = 1,
 								}, -- [5]
-								{
-									["Type"] = "RUNES2",
-									["Operator"] = ">",
-									["AndOr"] = "OR",
-									["BitFlags"] = 6,
-									["Level"] = 1,
-								}, -- [6]
 								{
 									["Type"] = "DEBUFFDUR",
 									["Checked"] = true,
 									["Operator"] = ">=",
 									["Unit"] = "target",
-									["AndOr"] = "OR",
+									["Level"] = 8,
 									["Name"] = "Blood Plague",
 									["PrtsBefore"] = 1,
-									["Level"] = 8,
-								}, -- [7]
+									["AndOr"] = "OR",
+								}, -- [6]
 								{
 									["Type"] = "DEBUFFDUR",
 									["Checked"] = true,
@@ -7306,8 +8040,8 @@ TellMeWhenDB = {
 									["Unit"] = "target",
 									["Name"] = "Frost Fever",
 									["Level"] = 8,
-								}, -- [8]
-								["n"] = 8,
+								}, -- [7]
+								["n"] = 7,
 							},
 						}, -- [9]
 						{
@@ -7394,32 +8128,24 @@ TellMeWhenDB = {
 									["Level"] = 40,
 								}, -- [4]
 								{
-									["Type"] = "RUNES2",
+									["Type"] = "LUA",
 									["Checked"] = true,
 									["Unit"] = "target",
 									["Operator"] = ">",
-									["Name"] = "Frost Fever",
-									["BitFlags"] = 57,
+									["Name"] = "local blood, frost, unholy, death = xRuneCount()\n\nif frost>0 and unholy>0 then return true end\nif frost>0 and death>0 and blood+death>1 then return true end\nif unholy>0 and death>0 and blood+death>1 then return true end\n\nreturn false",
 									["PrtsBefore"] = 1,
 									["Level"] = 1,
 								}, -- [5]
-								{
-									["Type"] = "RUNES2",
-									["Operator"] = ">",
-									["AndOr"] = "OR",
-									["BitFlags"] = 6,
-									["Level"] = 1,
-								}, -- [6]
 								{
 									["Type"] = "DEBUFFDUR",
 									["Checked"] = true,
 									["Operator"] = ">=",
 									["Unit"] = "target",
-									["Level"] = 8,
+									["AndOr"] = "OR",
 									["Name"] = "Blood Plague",
 									["PrtsBefore"] = 1,
-									["AndOr"] = "OR",
-								}, -- [7]
+									["Level"] = 8,
+								}, -- [6]
 								{
 									["Type"] = "DEBUFFDUR",
 									["Checked"] = true,
@@ -7428,8 +8154,8 @@ TellMeWhenDB = {
 									["Unit"] = "target",
 									["Name"] = "Frost Fever",
 									["Level"] = 8,
-								}, -- [8]
-								["n"] = 8,
+								}, -- [7]
+								["n"] = 7,
 							},
 						}, -- [11]
 						{
@@ -7918,12 +8644,7 @@ TellMeWhenDB = {
 									["Name"] = "xPestilence()",
 									["AndOr"] = "OR",
 								}, -- [5]
-								{
-									["Type"] = "LUA",
-									["Name"] = "-- local b,f,u,d = xRuneCount()\n\n-- if f+u >= 2 then return false else \n--    if d < 2 then return false else return true end     \n--    if u == 0 and f+d > 2 then return false else return true end\n--    if f == 0 and u+d > 2 then return false else return true end\n-- end",
-									["AndOr"] = "OR",
-								}, -- [6]
-								["n"] = 6,
+								["n"] = 5,
 							},
 							["GUID"] = "TMW:icon:1Z4FFfpv6jKF",
 							["States"] = {
@@ -8985,3403 +9706,9 @@ TellMeWhenDB = {
 			["Version"] = 100800,
 			["Locked"] = true,
 		},
-		["WARLOCK"] = {
-			["Locked"] = true,
-			["Version"] = 100800,
-			["NumGroups"] = 5,
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1TWYPj24VzCn",
-					["Point"] = {
-						["y"] = -20,
-						["x"] = -230,
-					},
-					["Name"] = "Other",
-					["Scale"] = 1.5,
-					["Columns"] = 1,
-					["Icons"] = {
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1TZvNvgAkfmq", -- [1]
-								"TMW:icon:1TWYSTcSCl0z", -- [2]
-							},
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [1]
-					},
-					["TextureName"] = "Details Flat",
-				}, -- [1]
-				{
-					["GUID"] = "TMW:group:1TWYSTcQ410f",
-					["Point"] = {
-						["y"] = -40,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
-					["Scale"] = 1,
-					["Icons"] = {
-						{
-							["GUID"] = "TMW:icon:1TWYSTcSCl0z",
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["BuffOrDebuff"] = "HARMFUL",
-							["Enabled"] = true,
-							["Name"] = "Blood Fury",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [1]
-						{
-							["GUID"] = "TMW:icon:1TZvNvgAkfmq",
-							["Type"] = "buff",
-							["Name"] = "Enrage",
-							["SettingsPerView"] = {
-								["icon"] = {
-									["TextLayout"] = "TMW:textlayout:1TZve345g=GK",
-								},
-							},
-							["Enabled"] = true,
-							["ShowTimerText"] = true,
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [2]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [3]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [4]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [5]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [6]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [7]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [8]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [9]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [10]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [11]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [12]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [13]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [14]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [15]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [16]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [17]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [18]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [19]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [20]
-					},
-					["TextureName"] = "Details Flat",
-					["Name"] = "General Buffs/Debbufs",
-					["Locked"] = true,
-					["Columns"] = 20,
-					["Alpha"] = 0,
-				}, -- [2]
-				{
-					["GUID"] = "TMW:group:1V6krZ0tqss=",
-					["Columns"] = 1,
-					["Scale"] = 0.4,
-					["Icons"] = {
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1V6ky7UjmQN=", -- [1]
-								"TMW:icon:1V6ky7UreCKN", -- [2]
-								"TMW:icon:1V6ky7Uy=NmE", -- [3]
-								"TMW:icon:1YXBfKWFOMGr", -- [4]
-							},
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [1]
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1V6ky7UreCKN", -- [1]
-							},
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [2]
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1V6ky7Uy=NmE", -- [1]
-							},
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [3]
-					},
-					["LayoutDirection"] = 2,
-					["Name"] = "Rotation TOPLEFT",
-					["Locked"] = true,
-					["Point"] = {
-						["y"] = 6.103515625e-05,
-						["point"] = "TOPLEFT",
-						["relativePoint"] = "TOPLEFT",
-					},
-					["OnlyInCombat"] = true,
-				}, -- [3]
-				{
-					["GUID"] = "TMW:group:1V6ky7Uf4nZ5",
-					["Scale"] = 1,
-					["Name"] = "Warlock Spells",
-					["Icons"] = {
-						{
-							["Enabled"] = true,
-							["Type"] = "buff",
-							["BuffOrDebuff"] = "HARMFUL",
-							["Unit"] = "target",
-							["OnlyMine"] = true,
-							["Name"] = "Immolate",
-							["Conditions"] = {
-								{
-									["Operator"] = "<=",
-									["Level"] = 30,
-									["Type"] = "LIBRANGECHECK",
-									["Unit"] = "target",
-								}, -- [1]
-								{
-									["Type"] = "CURRENTSPELL",
-									["Name"] = "Immolate",
-									["Level"] = 1,
-								}, -- [2]
-								["n"] = 2,
-							},
-							["GUID"] = "TMW:icon:1V6ky7UjmQN=",
-							["States"] = {
-								{
-									["Alpha"] = 0,
-								}, -- [1]
-								{
-									["Alpha"] = 1,
-								}, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [1]
-						{
-							["Enabled"] = true,
-							["Type"] = "buff",
-							["BuffOrDebuff"] = "HARMFUL",
-							["Unit"] = "target",
-							["OnlyMine"] = true,
-							["Name"] = "Corruption",
-							["Conditions"] = {
-								{
-									["Operator"] = "<=",
-									["Level"] = 30,
-									["Type"] = "LIBRANGECHECK",
-									["Unit"] = "target",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["GUID"] = "TMW:icon:1V6ky7UreCKN",
-							["States"] = {
-								{
-									["Alpha"] = 0,
-								}, -- [1]
-								{
-									["Alpha"] = 1,
-								}, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [2]
-						{
-							["Enabled"] = true,
-							["Type"] = "buff",
-							["BuffOrDebuff"] = "HARMFUL",
-							["Unit"] = "target",
-							["OnlyMine"] = true,
-							["Name"] = "Curse of Agony",
-							["Conditions"] = {
-								{
-									["Operator"] = "<=",
-									["Level"] = 30,
-									["Type"] = "LIBRANGECHECK",
-									["Unit"] = "target",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["GUID"] = "TMW:icon:1V6ky7Uy=NmE",
-							["States"] = {
-								{
-									["Alpha"] = 0,
-								}, -- [1]
-								{
-									["Alpha"] = 1,
-								}, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [3]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Shadow Bolt",
-							["GUID"] = "TMW:icon:1YXBfKWFOMGr",
-							["RangeCheck"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "CURRENTSPELL",
-									["Name"] = "Shadow Bolt",
-									["Level"] = 1,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["ManaCheck"] = true,
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Alpha"] = 0,
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						}, -- [4]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [5]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [6]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [7]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [8]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [9]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [10]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [11]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [12]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [13]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [14]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [15]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [16]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [17]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [18]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [19]
-						{
-							["Enabled"] = true,
-							["Type"] = "item",
-							["Name"] = "healh",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [20]
-					},
-					["Locked"] = true,
-					["Columns"] = 20,
-					["Alpha"] = 0,
-					["Point"] = {
-						["y"] = -5,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
-				}, -- [4]
-				{
-					["GUID"] = "TMW:group:1YWt9BdVNgGm",
-					["Point"] = {
-						["y"] = -88,
-						["x"] = -5.450076092640056e-05,
-					},
-					["Scale"] = 1.5,
-					["Icons"] = {
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1V6ky7UjmQN=", -- [1]
-								"TMW:icon:1V6ky7UreCKN", -- [2]
-								"TMW:icon:1V6ky7Uy=NmE", -- [3]
-								"TMW:icon:1YXBfKWFOMGr", -- [4]
-							},
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [1]
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1V6ky7UreCKN", -- [1]
-							},
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [2]
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1V6ky7Uy=NmE", -- [1]
-							},
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [3]
-					},
-					["LayoutDirection"] = 2,
-					["Name"] = "Rotation CENTER",
-					["Locked"] = true,
-					["Columns"] = 1,
-					["OnlyInCombat"] = true,
-				}, -- [5]
-			},
-		},
-		["SHAMAN"] = {
-			["Locked"] = true,
-			["NumGroups"] = 5,
-			["Version"] = 100800,
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1TeVAjjUoOOh",
-					["Columns"] = 20,
-					["Scale"] = 1,
-					["Rows"] = 3,
-					["Alpha"] = 0,
-					["Name"] = "SHAMAN SPELLS",
-					["Locked"] = true,
-					["Icons"] = {
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Lightning Bolt",
-							["ManaCheck"] = true,
-							["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Alpha"] = 0,
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						}, -- [1]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Flame Shock",
-							["ManaCheck"] = true,
-							["RangeCheck"] = true,
-							["Conditions"] = {
-								{
-									["Name"] = "Flame Shock",
-									["Type"] = "DEBUFFDUR",
-									["Checked"] = true,
-									["Unit"] = "target",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["GUID"] = "TMW:icon:1Zi_P9LYFYqt",
-							["States"] = {
-								{
-									["Alpha"] = 0,
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Alpha"] = 0,
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						}, -- [2]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [3]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [4]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [5]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [6]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [7]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [8]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [9]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [10]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [11]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [12]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [13]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [14]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [15]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [16]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [17]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [18]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [19]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [20]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Lightning Shield",
-							["Conditions"] = {
-								{
-									["Name"] = "Lightning Shield",
-									["Type"] = "BUFFDUR",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["GUID"] = "TMW:icon:1Zi=Lf3qDCmn",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [21]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Flametongue Weapon",
-							["Conditions"] = {
-								{
-									["Type"] = "MAINHAND",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["GUID"] = "TMW:icon:1Zi_P9NDuquZ",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [22]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [23]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [24]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [25]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [26]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [27]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [28]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [29]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [30]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [31]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [32]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [33]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [34]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [35]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [36]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [37]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [38]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Flame Spike",
-							["Conditions"] = {
-								{
-									["Type"] = "COMBO",
-									["Level"] = 2,
-									["Operator"] = "<",
-								}, -- [1]
-								{
-									["Type"] = "NAME",
-									["Name"] = "Malygos",
-									["Unit"] = "target",
-								}, -- [2]
-								{
-									["Type"] = "MOUNTED",
-								}, -- [3]
-								["n"] = 3,
-							},
-							["CustomTex"] = "56091",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [39]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Engulf in Flames",
-							["Conditions"] = {
-								{
-									["Type"] = "COMBO",
-									["Level"] = 2,
-									["Operator"] = ">=",
-								}, -- [1]
-								{
-									["Type"] = "NAME",
-									["Name"] = "Malygos",
-									["Unit"] = "target",
-								}, -- [2]
-								{
-									["Type"] = "MOUNTED",
-								}, -- [3]
-								["n"] = 3,
-							},
-							["CustomTex"] = "56092",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [40]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Healing Wave",
-							["Conditions"] = {
-								{
-									["Type"] = "HEALTH",
-									["Level"] = 50,
-									["Operator"] = "<=",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["GUID"] = "TMW:icon:1Zhjpe9Lw_WF",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [41]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [42]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [43]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [44]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [45]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [46]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [47]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [48]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [49]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [50]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [51]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [52]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [53]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [54]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [55]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [56]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [57]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [58]
-						{
-							["Enabled"] = true,
-							["Type"] = "item",
-							["Name"] = "22105; 22103; 22104; 36892; 5509; 5512; 36894; 19013; 36893; 36891; 36890; 19009; 19004; 19012; 5510; 19007; 19005; 19006; 19010; 36889; 5511; 19008; 9421; 19011",
-							["OnlyInBags"] = true,
-							["GUID"] = "TMW:icon:1ZBi1G1LSN04",
-							["Conditions"] = {
-								{
-									["Type"] = "HEALTH",
-									["Level"] = 60,
-									["Operator"] = "<=",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["CustomTex"] = "5720",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [59]
-						{
-							["Enabled"] = true,
-							["Type"] = "item",
-							["Name"] = "33447; 43531; 22829; 929; 13446; 33092; 3928; 39671; 43569; 858; 1710; 118; 28100; 32947; 4596; 33934; 31853; 18839; 31839; 31852; 23822; 31838",
-							["OnlyInBags"] = true,
-							["GUID"] = "TMW:icon:1ZhjptZBAxKW",
-							["Conditions"] = {
-								{
-									["Type"] = "HEALTH",
-									["Level"] = 35,
-									["Operator"] = "<=",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["CustomTex"] = "28491",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [60]
-					},
-					["Point"] = {
-						["y"] = -5,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
-					["OnlyInCombat"] = true,
-				}, -- [1]
-				{
-					["GUID"] = "TMW:group:1TWYPj24VzCn",
-					["Point"] = {
-						["y"] = -20.00000522536274,
-						["x"] = -229.9999934656047,
-					},
-					["Name"] = "Other",
-					["Alpha"] = 0,
-					["Scale"] = 1.5,
-					["Columns"] = 1,
-					["Icons"] = {
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [1]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [2]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [3]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [4]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [5]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [6]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [7]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [8]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [9]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [10]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [11]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [12]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [13]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [14]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [15]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [16]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [17]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [18]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [19]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [20]
-					},
-					["TextureName"] = "Details Flat",
-				}, -- [2]
-				{
-					["GUID"] = "TMW:group:1TeVDtajUwqa",
-					["Name"] = "Rotation CENTER",
-					["Point"] = {
-						["y"] = -140,
-						["x"] = -5.450076092640056e-05,
-					},
-					["Locked"] = true,
-					["Scale"] = 1.5,
-					["Columns"] = 1,
-					["Icons"] = {
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Conditions"] = {
-								{
-									["Name"] = "not IsAltKeyDown();",
-									["Type"] = "LUA",
-								}, -- [1]
-								{
-									["Level"] = 1,
-									["Type"] = "MOUNTED",
-								}, -- [2]
-								{
-									["Unit"] = "target",
-									["Type"] = "EXISTS",
-								}, -- [3]
-								{
-									["Unit"] = "target",
-									["Type"] = "ALIVE",
-								}, -- [4]
-								{
-									["Type"] = "REACT",
-									["Level"] = 1,
-									["Unit"] = "target",
-								}, -- [5]
-								["n"] = 5,
-							},
-							["Icons"] = {
-								"TMW:icon:1ZhjptZBAxKW", -- [1]
-								"TMW:icon:1ZBi1G1LSN04", -- [2]
-								"TMW:icon:1Zhjpe9Lw_WF", -- [3]
-								"TMW:icon:1Zi=Lf3qDCmn", -- [4]
-								"TMW:icon:1Zi_P9NDuquZ", -- [5]
-								"TMW:icon:1Zi_P9LYFYqt", -- [6]
-								"TMW:icon:1TeVAjjXQ0WB", -- [7]
-							},
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [1]
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1YXd9eWHzTSH", -- [1]
-								"TMW:icon:1YXd9eWMwI0j", -- [2]
-								"TMW:icon:1V6noP8ARoel", -- [3]
-								"TMW:icon:1V6lsULwY3_Y", -- [4]
-							},
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [2]
-					},
-					["OnlyInCombat"] = true,
-				}, -- [3]
-				{
-					["GUID"] = "TMW:group:1YWtClNC=L8S",
-					["Name"] = "Rotation TOPLEFT",
-					["Point"] = {
-						["point"] = "TOPLEFT",
-						["relativePoint"] = "TOPLEFT",
-					},
-					["Locked"] = true,
-					["Scale"] = 0.4,
-					["Columns"] = 1,
-					["Icons"] = {
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Conditions"] = {
-								{
-									["Name"] = "not IsAltKeyDown();",
-									["Type"] = "LUA",
-								}, -- [1]
-								{
-									["Level"] = 1,
-									["Type"] = "MOUNTED",
-								}, -- [2]
-								{
-									["Unit"] = "target",
-									["Type"] = "EXISTS",
-								}, -- [3]
-								{
-									["Unit"] = "target",
-									["Type"] = "ALIVE",
-								}, -- [4]
-								{
-									["Type"] = "REACT",
-									["Level"] = 1,
-									["Unit"] = "target",
-								}, -- [5]
-								["n"] = 5,
-							},
-							["Icons"] = {
-								"TMW:icon:1ZhjptZBAxKW", -- [1]
-								"TMW:icon:1ZBi1G1LSN04", -- [2]
-								"TMW:icon:1Zhjpe9Lw_WF", -- [3]
-								"TMW:icon:1Zi=Lf3qDCmn", -- [4]
-								"TMW:icon:1Zi_P9NDuquZ", -- [5]
-								"TMW:icon:1Zi_P9LYFYqt", -- [6]
-								"TMW:icon:1TeVAjjXQ0WB", -- [7]
-							},
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [1]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-							["Type"] = "meta",
-						}, -- [2]
-					},
-					["SortPriorities"] = {
-						{
-							["Order"] = -1,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["GUID"] = "TMW:group:1ZI1LEibEVeR",
-					["Name"] = "ROTATION QUEUE",
-					["Point"] = {
-						["x"] = 30,
-						["point"] = "TOPLEFT",
-						["relativePoint"] = "TOPLEFT",
-					},
-					["Locked"] = true,
-					["Scale"] = 0.4,
-					["Columns"] = 1,
-					["Icons"] = {
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [1]
-					},
-					["OnlyInCombat"] = true,
-				}, -- [5]
-				{
-					["Icons"] = {
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [1]
-					},
-				}, -- [6]
-				{
-					["Icons"] = {
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [1]
-					},
-				}, -- [7]
-			},
-		},
-		["PALADIN"] = {
-			["Locked"] = true,
-			["Version"] = 100800,
-			["NumGroups"] = 5,
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1TeVAjjUoOOh",
-					["Point"] = {
-						["y"] = -5,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
-					["Scale"] = 1,
-					["Rows"] = 3,
-					["Icons"] = {
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Righteous Fury",
-							["Conditions"] = {
-								{
-									["Type"] = "BUFFDUR",
-									["Checked"] = true,
-									["Name"] = "Righteous Fury",
-								}, -- [1]
-								{
-									["Type"] = "SPEC",
-									["Level"] = 2,
-								}, -- [2]
-								["n"] = 2,
-							},
-							["GUID"] = "TMW:icon:1ZmhO7mqKue=",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [1]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Beacon of Light",
-							["GUID"] = "TMW:icon:1Ztb9RIdmLi9",
-							["RangeCheck"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "SPEC",
-									["Level"] = 1,
-								}, -- [1]
-								{
-									["Type"] = "EXISTS",
-									["Unit"] = "focus",
-								}, -- [2]
-								{
-									["Type"] = "BUFFDUR",
-									["Name"] = "Beacon of Light",
-									["Unit"] = "focus",
-								}, -- [3]
-								["n"] = 3,
-							},
-							["ManaCheck"] = true,
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Alpha"] = 0,
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						}, -- [2]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [3]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [4]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [5]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [6]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [7]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [8]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [9]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [10]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [11]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [12]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [13]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [14]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [15]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [16]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [17]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [18]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [19]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [20]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Divine Shield",
-							["Conditions"] = {
-								{
-									["Type"] = "HEALTH",
-									["Level"] = 30,
-									["Operator"] = "<=",
-								}, -- [1]
-								{
-									["Name"] = "Forbearance",
-									["Type"] = "DEBUFFDUR",
-								}, -- [2]
-								["n"] = 2,
-							},
-							["ManaCheck"] = true,
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						}, -- [21]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Hammer of the Righteous",
-							["GUID"] = "TMW:icon:1ZkmyyWS_emA",
-							["RangeCheck"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "SPEC",
-									["Level"] = 2,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["ManaCheck"] = true,
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Alpha"] = 0,
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						}, -- [22]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Shield of Righteousness",
-							["GUID"] = "TMW:icon:1ZkmyyWUmDSs",
-							["RangeCheck"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "SPEC",
-									["Level"] = 2,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["ManaCheck"] = true,
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Alpha"] = 0,
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						}, -- [23]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Avenger's Shield",
-							["GUID"] = "TMW:icon:1ZkmyyWWPpGC",
-							["RangeCheck"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "SPEC",
-									["Level"] = 2,
-								}, -- [1]
-								{
-									["Type"] = "EXISTS",
-									["Unit"] = "mouseover",
-								}, -- [2]
-								{
-									["Name"] = "xInRange(30,\"mouseover\")",
-									["Type"] = "LUA",
-								}, -- [3]
-								["n"] = 3,
-							},
-							["ManaCheck"] = true,
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Alpha"] = 0,
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						}, -- [24]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Holy Wrath",
-							["GUID"] = "TMW:icon:1ZkmyyWX_u4d",
-							["RangeCheck"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "SPEC",
-									["Level"] = 2,
-								}, -- [1]
-								{
-									["Type"] = "MANA",
-									["Level"] = 45,
-									["Operator"] = ">=",
-								}, -- [2]
-								{
-									["Name"] = "xInRange(2)",
-									["Type"] = "LUA",
-								}, -- [3]
-								{
-									["Type"] = "CREATURETYPE",
-									["Name"] = "Demon; Undead",
-									["Unit"] = "target",
-								}, -- [4]
-								["n"] = 4,
-							},
-							["ManaCheck"] = true,
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Alpha"] = 0,
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						}, -- [25]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Hammer of Wrath",
-							["RangeCheck"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "SPEC",
-									["Level"] = 2,
-								}, -- [1]
-								{
-									["Operator"] = "<=",
-									["Level"] = 20,
-									["Type"] = "HEALTH",
-									["Unit"] = "target",
-								}, -- [2]
-								{
-									["Type"] = "MANA",
-									["Level"] = 15,
-									["Operator"] = ">=",
-								}, -- [3]
-								["n"] = 3,
-							},
-							["GUID"] = "TMW:icon:1ZkmyyWZapS_",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Alpha"] = 0,
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						}, -- [26]
-						{
-							["Enabled"] = true,
-							["Type"] = "buff",
-							["BuffOrDebuff"] = "HARMFUL",
-							["Unit"] = "mouseover",
-							["Name"] = "Poison; Disease; Magic",
-							["GUID"] = "TMW:icon:1ZwdlWxY789W",
-							["Conditions"] = {
-								{
-									["Type"] = "REACT",
-									["Level"] = 2,
-									["Unit"] = "mouseover",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["CustomTex"] = "4987",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [27]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [28]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [29]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [30]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [31]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [32]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [33]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [34]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [35]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [36]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [37]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [38]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [39]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [40]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Holy Shield",
-							["ManaCheck"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "SPEC",
-									["Level"] = 2,
-								}, -- [1]
-								{
-									["Name"] = "Holy Shield",
-									["Type"] = "BUFFDUR",
-								}, -- [2]
-								{
-									["Type"] = "MANA",
-									["Level"] = 15,
-									["Operator"] = ">=",
-								}, -- [3]
-								["n"] = 3,
-							},
-							["GUID"] = "TMW:icon:1YXd9eWHzTSH",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						}, -- [41]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Judgement of Wisdom",
-							["ManaCheck"] = true,
-							["RangeCheck"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "SPEC",
-									["Level"] = 2,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["GUID"] = "TMW:icon:1YXd9eWMwI0j",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Alpha"] = 0,
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						}, -- [42]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Divine Storm",
-							["ManaCheck"] = true,
-							["RangeCheck"] = true,
-							["Conditions"] = {
-								{
-									["Unit"] = "target",
-									["Type"] = "DEBUFFDUR",
-									["Name"] = "Judgement of Wisdom",
-									["Operator"] = "~=",
-								}, -- [1]
-								{
-									["Type"] = "SPEC",
-									["Level"] = 2,
-								}, -- [2]
-								["n"] = 2,
-							},
-							["GUID"] = "TMW:icon:1YatF3BT0RKW",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Alpha"] = 0,
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						}, -- [43]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Crusader Strike",
-							["ManaCheck"] = true,
-							["RangeCheck"] = true,
-							["Conditions"] = {
-								{
-									["Unit"] = "target",
-									["Type"] = "DEBUFFDUR",
-									["Name"] = "Judgement of Wisdom",
-									["Operator"] = "~=",
-								}, -- [1]
-								{
-									["Type"] = "SPEC",
-									["Level"] = 2,
-								}, -- [2]
-								["n"] = 2,
-							},
-							["GUID"] = "TMW:icon:1YawP4LcafCX",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Alpha"] = 0,
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						}, -- [44]
-						{
-							["GUID"] = "TMW:icon:1Z6tL7hXaSCZ",
-							["Type"] = "cooldown",
-							["Name"] = "Exorcism",
-							["RangeCheck"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "SPEC",
-									["Level"] = 2,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["ManaCheck"] = true,
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Alpha"] = 0,
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						}, -- [45]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Lay on Hands",
-							["ManaCheck"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "HEALTH",
-									["Level"] = 15,
-									["Operator"] = "<=",
-								}, -- [1]
-								{
-									["Name"] = "Forbearance",
-									["Type"] = "DEBUFFDUR",
-								}, -- [2]
-								["n"] = 2,
-							},
-							["GUID"] = "TMW:icon:1Z6tL7hZeq4n",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						}, -- [46]
-						{
-							["Enabled"] = true,
-							["Type"] = "buff",
-							["BuffOrDebuff"] = "HARMFUL",
-							["ManaCheck"] = true,
-							["Name"] = "Poison; Disease; Magic",
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										"", -- [1]
-										"", -- [2]
-									},
-								},
-							},
-							["GUID"] = "TMW:icon:1Z6tL7hbgPqi",
-							["Conditions"] = {
-								{
-									["Name"] = "xBehindTarget()",
-									["Type"] = "LUA",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["CustomTex"] = "4987",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						}, -- [47]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Divine Protection",
-							["ManaCheck"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "HEALTH",
-									["Level"] = 55,
-									["Operator"] = "<=",
-								}, -- [1]
-								{
-									["Name"] = "Forbearance",
-									["Type"] = "DEBUFFDUR",
-								}, -- [2]
-								["n"] = 2,
-							},
-							["GUID"] = "TMW:icon:1Z6tL7hdj2mo",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						}, -- [48]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Consecration",
-							["ManaCheck"] = true,
-							["Conditions"] = {
-								{
-									["Name"] = "xAOE(10) > 0 and xInRange(2)",
-									["Type"] = "LUA",
-								}, -- [1]
-								{
-									["Type"] = "SPEC",
-									["Level"] = 2,
-								}, -- [2]
-								{
-									["Type"] = "MANA",
-									["Level"] = 15,
-									["Operator"] = ">=",
-								}, -- [3]
-								["n"] = 3,
-							},
-							["GUID"] = "TMW:icon:1Z6tL7hfkyqu",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						}, -- [49]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Seal of Command",
-							["ManaCheck"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "BUFFDUR",
-									["Level"] = 5,
-									["Name"] = "Seal of Command",
-									["Operator"] = "<=",
-								}, -- [1]
-								{
-									["Type"] = "SPEC",
-									["Level"] = 2,
-								}, -- [2]
-								{
-									["Name"] = "xAOE(10) > 1",
-									["Type"] = "LUA",
-								}, -- [3]
-								["n"] = 3,
-							},
-							["GUID"] = "TMW:icon:1Z6uOhVXfBCq",
-							["States"] = {
-								{
-									["Alpha"] = 0,
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						}, -- [50]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Seal of Righteousness",
-							["Conditions"] = {
-								{
-									["Type"] = "BUFFDUR",
-									["Level"] = 5,
-									["Name"] = "Seal of Righteousness",
-									["Operator"] = "<=",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["GUID"] = "TMW:icon:1ZknB6Qckg8U",
-							["States"] = {
-								{
-									["Alpha"] = 0,
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [51]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Seal of Vengeance",
-							["Conditions"] = {
-								{
-									["Type"] = "BUFFDUR",
-									["Level"] = 5,
-									["Name"] = "Seal of Vengeance",
-									["Operator"] = "<=",
-								}, -- [1]
-								{
-									["Type"] = "SPEC",
-									["Level"] = 2,
-								}, -- [2]
-								{
-									["PrtsBefore"] = 1,
-									["Type"] = "LEVEL",
-									["Level"] = -1,
-									["Unit"] = "target",
-								}, -- [3]
-								{
-									["Type"] = "LEVEL",
-									["AndOr"] = "OR",
-									["Level"] = 83,
-									["PrtsAfter"] = 1,
-									["Unit"] = "target",
-								}, -- [4]
-								["n"] = 4,
-							},
-							["GUID"] = "TMW:icon:1ZkmyynlJgaL",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [52]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [53]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [54]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [55]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [56]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [57]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [58]
-						{
-							["Enabled"] = true,
-							["Type"] = "item",
-							["Name"] = "22105; 22103; 22104; 36892; 5509; 5512; 36894; 19013; 36893; 36891; 36890; 19009; 19004; 19012; 5510; 19007; 19005; 19006; 19010; 36889; 5511; 19008; 9421; 19011",
-							["OnlyInBags"] = true,
-							["GUID"] = "TMW:icon:1ZmhsoGZsuaJ",
-							["Conditions"] = {
-								{
-									["Type"] = "HEALTH",
-									["Level"] = 50,
-									["Operator"] = "<=",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["CustomTex"] = "5720",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [59]
-						{
-							["Enabled"] = true,
-							["Type"] = "item",
-							["Name"] = "33447; 43531; 22829; 929; 13446; 33092; 3928; 39671; 43569; 858; 1710; 118; 28100; 32947; 4596; 33934; 31853; 18839; 31839; 31852; 23822; 31838; 32905",
-							["OnlyInBags"] = true,
-							["GUID"] = "TMW:icon:1ZmhsoDa4SWt",
-							["Conditions"] = {
-								{
-									["Type"] = "HEALTH",
-									["Level"] = 40,
-									["Operator"] = "<=",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["CustomTex"] = "28491",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [60]
-					},
-					["Name"] = "PALADIN SPELLS",
-					["Locked"] = true,
-					["Columns"] = 20,
-					["Alpha"] = 0,
-				}, -- [1]
-				{
-					["GUID"] = "TMW:group:1TWYPj24VzCn",
-					["Name"] = "OTHER",
-					["Point"] = {
-						["y"] = -20.00000522536274,
-						["x"] = -229.9999934656047,
-					},
-					["Icons"] = {
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [1]
-					},
-					["Scale"] = 1.5,
-					["Columns"] = 1,
-					["Alpha"] = 0,
-					["TextureName"] = "Details Flat",
-				}, -- [2]
-				{
-					["GUID"] = "TMW:group:1TeVDtajUwqa",
-					["Point"] = {
-						["y"] = -140,
-						["x"] = -5.450076092640056e-05,
-					},
-					["Name"] = "ROTATION CENTER",
-					["Scale"] = 1.5,
-					["Locked"] = true,
-					["Columns"] = 1,
-					["Icons"] = {
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Conditions"] = {
-								{
-									["Name"] = "return not IsAltKeyDown();",
-									["Type"] = "LUA",
-								}, -- [1]
-								{
-									["Type"] = "EXISTS",
-									["Unit"] = "target",
-								}, -- [2]
-								{
-									["Type"] = "ALIVE",
-									["Unit"] = "target",
-								}, -- [3]
-								{
-									["Type"] = "REACT",
-									["Level"] = 1,
-									["Unit"] = "target",
-								}, -- [4]
-								{
-									["Type"] = "MOUNTED",
-									["Level"] = 1,
-								}, -- [5]
-								["n"] = 6,
-							},
-							["Icons"] = {
-								"TMW:icon:1ZmhsoGZsuaJ", -- [1]
-								"TMW:icon:1ZmhsoDa4SWt", -- [2]
-								"TMW:icon:1ZmhO7mqKue=", -- [3]
-								"TMW:icon:1Z6tL7hZeq4n", -- [4]
-								"TMW:icon:1ZwdlWxY789W", -- [5]
-								"TMW:icon:1Z6tL7hbgPqi", -- [6]
-								"TMW:icon:1ZkmyyWWPpGC", -- [7]
-								"TMW:icon:1ZkmyyWZapS_", -- [8]
-								"TMW:icon:1YXd9eWMwI0j", -- [9]
-								"TMW:icon:1Z6tL7hfkyqu", -- [10]
-								"TMW:icon:1ZkmyyWX_u4d", -- [11]
-								"TMW:icon:1YXd9eWHzTSH", -- [12]
-								"TMW:icon:1ZkmyyWS_emA", -- [13]
-								"TMW:icon:1ZkmyyWUmDSs", -- [14]
-								"TMW:icon:1Ztb9RIdmLi9", -- [15]
-							},
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [1]
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1YXd9eWHzTSH", -- [1]
-								"TMW:icon:1YXd9eWMwI0j", -- [2]
-								"TMW:icon:1V6noP8ARoel", -- [3]
-								"TMW:icon:1V6lsULwY3_Y", -- [4]
-							},
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [2]
-					},
-					["OnlyInCombat"] = true,
-				}, -- [3]
-				{
-					["GUID"] = "TMW:group:1YWtClNC=L8S",
-					["Point"] = {
-						["y"] = 6.103515625e-05,
-						["point"] = "TOPLEFT",
-						["relativePoint"] = "TOPLEFT",
-					},
-					["Name"] = "ROTATION TOPLEFT",
-					["Scale"] = 0.4,
-					["Locked"] = true,
-					["Columns"] = 1,
-					["Icons"] = {
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Conditions"] = {
-								{
-									["PrtsBefore"] = 1,
-									["Type"] = "LUA",
-									["Name"] = "return not IsAltKeyDown();",
-								}, -- [1]
-								{
-									["Type"] = "EXISTS",
-									["Unit"] = "target",
-								}, -- [2]
-								{
-									["Type"] = "ALIVE",
-									["Unit"] = "target",
-								}, -- [3]
-								{
-									["Type"] = "REACT",
-									["Level"] = 1,
-									["Unit"] = "target",
-								}, -- [4]
-								{
-									["Type"] = "MOUNTED",
-									["PrtsAfter"] = 1,
-									["Level"] = 1,
-								}, -- [5]
-								{
-									["Type"] = "SPEC",
-									["Level"] = 1,
-									["AndOr"] = "OR",
-								}, -- [6]
-								["n"] = 6,
-							},
-							["Icons"] = {
-								"TMW:icon:1ZmhsoGZsuaJ", -- [1]
-								"TMW:icon:1ZmhsoDa4SWt", -- [2]
-								"TMW:icon:1ZmhO7mqKue=", -- [3]
-								"TMW:icon:1Z6tL7hZeq4n", -- [4]
-								"TMW:icon:1ZwdlWxY789W", -- [5]
-								"TMW:icon:1Z6tL7hbgPqi", -- [6]
-								"TMW:icon:1ZkmyyWWPpGC", -- [7]
-								"TMW:icon:1ZkmyyWZapS_", -- [8]
-								"TMW:icon:1YXd9eWMwI0j", -- [9]
-								"TMW:icon:1Z6tL7hfkyqu", -- [10]
-								"TMW:icon:1ZkmyyWX_u4d", -- [11]
-								"TMW:icon:1YXd9eWHzTSH", -- [12]
-								"TMW:icon:1ZkmyyWS_emA", -- [13]
-								"TMW:icon:1ZkmyyWUmDSs", -- [14]
-								"TMW:icon:1Ztb9RIdmLi9", -- [15]
-							},
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [1]
-						{
-							["Type"] = "meta",
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [2]
-					},
-					["OnlyInCombat"] = true,
-				}, -- [4]
-				{
-					["GUID"] = "TMW:group:1Zmhq7u_10aD",
-					["Columns"] = 1,
-					["Locked"] = true,
-					["Scale"] = 0.4,
-					["Name"] = "ROTATION QUEUE",
-					["Icons"] = {
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Conditions"] = {
-								{
-									["Type"] = "COMBAT",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["Icons"] = {
-								"TMW:icon:1Z6tL7hdj2mo", -- [1]
-							},
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [1]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [2]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [3]
-						{
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-						}, -- [4]
-					},
-					["Point"] = {
-						["y"] = -9.187387125994171e-05,
-						["x"] = 30,
-						["point"] = "TOPLEFT",
-						["relativePoint"] = "TOPLEFT",
-					},
-				}, -- [5]
-			},
-		},
 		["DRUID"] = {
 			["Locked"] = true,
+			["Version"] = 100800,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -14875,13 +12202,2901 @@ TellMeWhenDB = {
 				}, -- [7]
 			},
 			["NumGroups"] = 5,
+		},
+		["SHAMAN"] = {
+			["Locked"] = true,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1TeVAjjUoOOh",
+					["Columns"] = 20,
+					["Scale"] = 1,
+					["Rows"] = 3,
+					["Alpha"] = 0,
+					["Name"] = "SHAMAN SPELLS",
+					["Locked"] = true,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Lightning Bolt",
+							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+									["Alpha"] = 0,
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Flame Shock",
+							["ManaCheck"] = true,
+							["RangeCheck"] = true,
+							["Conditions"] = {
+								{
+									["Name"] = "Flame Shock",
+									["Type"] = "DEBUFFDUR",
+									["Checked"] = true,
+									["Unit"] = "target",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1Zi_P9LYFYqt",
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								nil, -- [2]
+								{
+									["Alpha"] = 0,
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [2]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [3]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [4]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [5]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [6]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [7]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [8]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [9]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [10]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [11]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [12]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [13]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [14]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [15]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [16]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [17]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [18]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [19]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [20]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Lightning Shield",
+							["Conditions"] = {
+								{
+									["Name"] = "Lightning Shield",
+									["Type"] = "BUFFDUR",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1Zi=Lf3qDCmn",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [21]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Flametongue Weapon",
+							["Conditions"] = {
+								{
+									["Type"] = "MAINHAND",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1Zi_P9NDuquZ",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [22]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [23]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [24]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [25]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [26]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [27]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [28]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [29]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [30]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [31]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [32]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [33]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [34]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [35]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [36]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [37]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [38]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Flame Spike",
+							["Conditions"] = {
+								{
+									["Type"] = "COMBO",
+									["Level"] = 2,
+									["Operator"] = "<",
+								}, -- [1]
+								{
+									["Type"] = "NAME",
+									["Name"] = "Malygos",
+									["Unit"] = "target",
+								}, -- [2]
+								{
+									["Type"] = "MOUNTED",
+								}, -- [3]
+								["n"] = 3,
+							},
+							["CustomTex"] = "56091",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [39]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Engulf in Flames",
+							["Conditions"] = {
+								{
+									["Type"] = "COMBO",
+									["Level"] = 2,
+									["Operator"] = ">=",
+								}, -- [1]
+								{
+									["Type"] = "NAME",
+									["Name"] = "Malygos",
+									["Unit"] = "target",
+								}, -- [2]
+								{
+									["Type"] = "MOUNTED",
+								}, -- [3]
+								["n"] = 3,
+							},
+							["CustomTex"] = "56092",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [40]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Healing Wave",
+							["Conditions"] = {
+								{
+									["Type"] = "HEALTH",
+									["Level"] = 50,
+									["Operator"] = "<=",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1Zhjpe9Lw_WF",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [41]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [42]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [43]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [44]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [45]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [46]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [47]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [48]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [49]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [50]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [51]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [52]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [53]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [54]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [55]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [56]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [57]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [58]
+						{
+							["Enabled"] = true,
+							["Type"] = "item",
+							["Name"] = "22105; 22103; 22104; 36892; 5509; 5512; 36894; 19013; 36893; 36891; 36890; 19009; 19004; 19012; 5510; 19007; 19005; 19006; 19010; 36889; 5511; 19008; 9421; 19011",
+							["OnlyInBags"] = true,
+							["GUID"] = "TMW:icon:1ZBi1G1LSN04",
+							["Conditions"] = {
+								{
+									["Type"] = "HEALTH",
+									["Level"] = 60,
+									["Operator"] = "<=",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["CustomTex"] = "5720",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [59]
+						{
+							["Enabled"] = true,
+							["Type"] = "item",
+							["Name"] = "33447; 43531; 22829; 929; 13446; 33092; 3928; 39671; 43569; 858; 1710; 118; 28100; 32947; 4596; 33934; 31853; 18839; 31839; 31852; 23822; 31838",
+							["OnlyInBags"] = true,
+							["GUID"] = "TMW:icon:1ZhjptZBAxKW",
+							["Conditions"] = {
+								{
+									["Type"] = "HEALTH",
+									["Level"] = 35,
+									["Operator"] = "<=",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["CustomTex"] = "28491",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [60]
+					},
+					["Point"] = {
+						["y"] = -5,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
+					["OnlyInCombat"] = true,
+				}, -- [1]
+				{
+					["GUID"] = "TMW:group:1TWYPj24VzCn",
+					["Point"] = {
+						["y"] = -20.00000522536274,
+						["x"] = -229.9999934656047,
+					},
+					["Name"] = "Other",
+					["Alpha"] = 0,
+					["Scale"] = 1.5,
+					["Columns"] = 1,
+					["Icons"] = {
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [1]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [2]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [3]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [4]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [5]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [6]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [7]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [8]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [9]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [10]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [11]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [12]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [13]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [14]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [15]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [16]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [17]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [18]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [19]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [20]
+					},
+					["TextureName"] = "Details Flat",
+				}, -- [2]
+				{
+					["GUID"] = "TMW:group:1TeVDtajUwqa",
+					["Name"] = "Rotation CENTER",
+					["Point"] = {
+						["y"] = -140,
+						["x"] = -5.450076092640056e-05,
+					},
+					["Locked"] = true,
+					["Scale"] = 1.5,
+					["Columns"] = 1,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Conditions"] = {
+								{
+									["Name"] = "not IsAltKeyDown();",
+									["Type"] = "LUA",
+								}, -- [1]
+								{
+									["Level"] = 1,
+									["Type"] = "MOUNTED",
+								}, -- [2]
+								{
+									["Unit"] = "target",
+									["Type"] = "EXISTS",
+								}, -- [3]
+								{
+									["Unit"] = "target",
+									["Type"] = "ALIVE",
+								}, -- [4]
+								{
+									["Type"] = "REACT",
+									["Level"] = 1,
+									["Unit"] = "target",
+								}, -- [5]
+								["n"] = 5,
+							},
+							["Icons"] = {
+								"TMW:icon:1ZhjptZBAxKW", -- [1]
+								"TMW:icon:1ZBi1G1LSN04", -- [2]
+								"TMW:icon:1Zhjpe9Lw_WF", -- [3]
+								"TMW:icon:1Zi=Lf3qDCmn", -- [4]
+								"TMW:icon:1Zi_P9NDuquZ", -- [5]
+								"TMW:icon:1Zi_P9LYFYqt", -- [6]
+								"TMW:icon:1TeVAjjXQ0WB", -- [7]
+							},
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1YXd9eWHzTSH", -- [1]
+								"TMW:icon:1YXd9eWMwI0j", -- [2]
+								"TMW:icon:1V6noP8ARoel", -- [3]
+								"TMW:icon:1V6lsULwY3_Y", -- [4]
+							},
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [2]
+					},
+					["OnlyInCombat"] = true,
+				}, -- [3]
+				{
+					["GUID"] = "TMW:group:1YWtClNC=L8S",
+					["Name"] = "Rotation TOPLEFT",
+					["Point"] = {
+						["point"] = "TOPLEFT",
+						["relativePoint"] = "TOPLEFT",
+					},
+					["Locked"] = true,
+					["Scale"] = 0.4,
+					["Columns"] = 1,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Conditions"] = {
+								{
+									["Name"] = "not IsAltKeyDown();",
+									["Type"] = "LUA",
+								}, -- [1]
+								{
+									["Level"] = 1,
+									["Type"] = "MOUNTED",
+								}, -- [2]
+								{
+									["Unit"] = "target",
+									["Type"] = "EXISTS",
+								}, -- [3]
+								{
+									["Unit"] = "target",
+									["Type"] = "ALIVE",
+								}, -- [4]
+								{
+									["Type"] = "REACT",
+									["Level"] = 1,
+									["Unit"] = "target",
+								}, -- [5]
+								["n"] = 5,
+							},
+							["Icons"] = {
+								"TMW:icon:1ZhjptZBAxKW", -- [1]
+								"TMW:icon:1ZBi1G1LSN04", -- [2]
+								"TMW:icon:1Zhjpe9Lw_WF", -- [3]
+								"TMW:icon:1Zi=Lf3qDCmn", -- [4]
+								"TMW:icon:1Zi_P9NDuquZ", -- [5]
+								"TMW:icon:1Zi_P9LYFYqt", -- [6]
+								"TMW:icon:1TeVAjjXQ0WB", -- [7]
+							},
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [1]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+							["Type"] = "meta",
+						}, -- [2]
+					},
+					["SortPriorities"] = {
+						{
+							["Order"] = -1,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["GUID"] = "TMW:group:1ZI1LEibEVeR",
+					["Name"] = "ROTATION QUEUE",
+					["Point"] = {
+						["x"] = 30,
+						["point"] = "TOPLEFT",
+						["relativePoint"] = "TOPLEFT",
+					},
+					["Locked"] = true,
+					["Scale"] = 0.4,
+					["Columns"] = 1,
+					["Icons"] = {
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [1]
+					},
+					["OnlyInCombat"] = true,
+				}, -- [5]
+				{
+					["Icons"] = {
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [1]
+					},
+				}, -- [6]
+				{
+					["Icons"] = {
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [1]
+					},
+				}, -- [7]
+			},
+			["NumGroups"] = 5,
 			["Version"] = 100800,
 		},
-		["Battledog - Gehennas"] = {
+		["PALADIN"] = {
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1TeVAjjUoOOh",
+					["Columns"] = 20,
+					["Scale"] = 1,
+					["Rows"] = 3,
+					["Alpha"] = 0,
+					["Name"] = "PALADIN SPELLS",
+					["Locked"] = true,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Righteous Fury",
+							["Conditions"] = {
+								{
+									["Type"] = "BUFFDUR",
+									["Checked"] = true,
+									["Name"] = "Righteous Fury",
+								}, -- [1]
+								{
+									["Level"] = 2,
+									["Type"] = "SPEC",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["GUID"] = "TMW:icon:1ZmhO7mqKue=",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Beacon of Light",
+							["ManaCheck"] = true,
+							["RangeCheck"] = true,
+							["Conditions"] = {
+								{
+									["Level"] = 1,
+									["Type"] = "SPEC",
+								}, -- [1]
+								{
+									["Unit"] = "focus",
+									["Type"] = "EXISTS",
+								}, -- [2]
+								{
+									["Type"] = "BUFFDUR",
+									["Name"] = "Beacon of Light",
+									["Unit"] = "focus",
+								}, -- [3]
+								["n"] = 3,
+							},
+							["GUID"] = "TMW:icon:1Ztb9RIdmLi9",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+									["Alpha"] = 0,
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [2]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [3]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [4]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [5]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [6]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [7]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [8]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [9]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [10]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [11]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [12]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [13]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [14]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [15]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [16]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [17]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [18]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [19]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [20]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Divine Shield",
+							["Conditions"] = {
+								{
+									["Type"] = "HEALTH",
+									["Level"] = 30,
+									["Operator"] = "<=",
+								}, -- [1]
+								{
+									["Name"] = "Forbearance",
+									["Type"] = "DEBUFFDUR",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["ManaCheck"] = true,
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [21]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Hammer of the Righteous",
+							["ManaCheck"] = true,
+							["RangeCheck"] = true,
+							["Conditions"] = {
+								{
+									["Level"] = 2,
+									["Type"] = "SPEC",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1ZkmyyWS_emA",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+									["Alpha"] = 0,
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [22]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Shield of Righteousness",
+							["ManaCheck"] = true,
+							["RangeCheck"] = true,
+							["Conditions"] = {
+								{
+									["Level"] = 2,
+									["Type"] = "SPEC",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1ZkmyyWUmDSs",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+									["Alpha"] = 0,
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [23]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Avenger's Shield",
+							["ManaCheck"] = true,
+							["RangeCheck"] = true,
+							["Conditions"] = {
+								{
+									["Level"] = 2,
+									["Type"] = "SPEC",
+								}, -- [1]
+								{
+									["Unit"] = "mouseover",
+									["Type"] = "EXISTS",
+								}, -- [2]
+								{
+									["Name"] = "xInRange(30,\"mouseover\")",
+									["Type"] = "LUA",
+								}, -- [3]
+								["n"] = 3,
+							},
+							["GUID"] = "TMW:icon:1ZkmyyWWPpGC",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+									["Alpha"] = 0,
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [24]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Holy Wrath",
+							["ManaCheck"] = true,
+							["RangeCheck"] = true,
+							["Conditions"] = {
+								{
+									["Level"] = 2,
+									["Type"] = "SPEC",
+								}, -- [1]
+								{
+									["Type"] = "MANA",
+									["Level"] = 45,
+									["Operator"] = ">=",
+								}, -- [2]
+								{
+									["Name"] = "xInRange(2)",
+									["Type"] = "LUA",
+								}, -- [3]
+								{
+									["Type"] = "CREATURETYPE",
+									["Name"] = "Demon; Undead",
+									["Unit"] = "target",
+								}, -- [4]
+								["n"] = 4,
+							},
+							["GUID"] = "TMW:icon:1ZkmyyWX_u4d",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+									["Alpha"] = 0,
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [25]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Hammer of Wrath",
+							["RangeCheck"] = true,
+							["Conditions"] = {
+								{
+									["Level"] = 2,
+									["Type"] = "SPEC",
+								}, -- [1]
+								{
+									["Level"] = 20,
+									["Type"] = "HEALTH",
+									["Unit"] = "target",
+									["Operator"] = "<=",
+								}, -- [2]
+								{
+									["Type"] = "MANA",
+									["Level"] = 15,
+									["Operator"] = ">=",
+								}, -- [3]
+								["n"] = 3,
+							},
+							["GUID"] = "TMW:icon:1ZkmyyWZapS_",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+									["Alpha"] = 0,
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [26]
+						{
+							["Enabled"] = true,
+							["Type"] = "buff",
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "mouseover",
+							["Name"] = "Poison; Disease; Magic",
+							["GUID"] = "TMW:icon:1ZwdlWxY789W",
+							["Conditions"] = {
+								{
+									["Type"] = "REACT",
+									["Level"] = 2,
+									["Unit"] = "mouseover",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["CustomTex"] = "4987",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [27]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [28]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [29]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [30]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [31]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [32]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [33]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [34]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [35]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [36]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [37]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [38]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [39]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [40]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Holy Shield",
+							["ManaCheck"] = true,
+							["Conditions"] = {
+								{
+									["Level"] = 2,
+									["Type"] = "SPEC",
+								}, -- [1]
+								{
+									["Name"] = "Holy Shield",
+									["Type"] = "BUFFDUR",
+								}, -- [2]
+								{
+									["Type"] = "MANA",
+									["Level"] = 15,
+									["Operator"] = ">=",
+								}, -- [3]
+								["n"] = 3,
+							},
+							["GUID"] = "TMW:icon:1YXd9eWHzTSH",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [41]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Judgement of Wisdom",
+							["GUID"] = "TMW:icon:1YXd9eWMwI0j",
+							["RangeCheck"] = true,
+							["Conditions"] = {
+								{
+									["Level"] = 2,
+									["Type"] = "SPEC",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["ManaCheck"] = true,
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+									["Alpha"] = 0,
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [42]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Divine Storm",
+							["GUID"] = "TMW:icon:1YatF3BT0RKW",
+							["RangeCheck"] = true,
+							["Conditions"] = {
+								{
+									["Operator"] = "~=",
+									["Type"] = "DEBUFFDUR",
+									["Name"] = "Judgement of Wisdom",
+									["Unit"] = "target",
+								}, -- [1]
+								{
+									["Level"] = 2,
+									["Type"] = "SPEC",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["ManaCheck"] = true,
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+									["Alpha"] = 0,
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [43]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Crusader Strike",
+							["GUID"] = "TMW:icon:1YawP4LcafCX",
+							["RangeCheck"] = true,
+							["Conditions"] = {
+								{
+									["Operator"] = "~=",
+									["Type"] = "DEBUFFDUR",
+									["Name"] = "Judgement of Wisdom",
+									["Unit"] = "target",
+								}, -- [1]
+								{
+									["Level"] = 2,
+									["Type"] = "SPEC",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["ManaCheck"] = true,
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+									["Alpha"] = 0,
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [44]
+						{
+							["GUID"] = "TMW:icon:1Z6tL7hXaSCZ",
+							["Type"] = "cooldown",
+							["Name"] = "Exorcism",
+							["RangeCheck"] = true,
+							["Conditions"] = {
+								{
+									["Level"] = 2,
+									["Type"] = "SPEC",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["ManaCheck"] = true,
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+									["Alpha"] = 0,
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [45]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Lay on Hands",
+							["ManaCheck"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HEALTH",
+									["Level"] = 15,
+									["Operator"] = "<=",
+								}, -- [1]
+								{
+									["Name"] = "Forbearance",
+									["Type"] = "DEBUFFDUR",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["GUID"] = "TMW:icon:1Z6tL7hZeq4n",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [46]
+						{
+							["Enabled"] = true,
+							["Type"] = "buff",
+							["BuffOrDebuff"] = "HARMFUL",
+							["GUID"] = "TMW:icon:1Z6tL7hbgPqi",
+							["Name"] = "Poison; Disease; Magic",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										"", -- [1]
+										"", -- [2]
+									},
+								},
+							},
+							["ManaCheck"] = true,
+							["Conditions"] = {
+								{
+									["Name"] = "xBehindTarget()",
+									["Type"] = "LUA",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["CustomTex"] = "4987",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [47]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Divine Protection",
+							["ManaCheck"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HEALTH",
+									["Level"] = 55,
+									["Operator"] = "<=",
+								}, -- [1]
+								{
+									["Name"] = "Forbearance",
+									["Type"] = "DEBUFFDUR",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["GUID"] = "TMW:icon:1Z6tL7hdj2mo",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [48]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Consecration",
+							["ManaCheck"] = true,
+							["Conditions"] = {
+								{
+									["Name"] = "xAOE(10) > 0 and xInRange(2)",
+									["Type"] = "LUA",
+								}, -- [1]
+								{
+									["Level"] = 2,
+									["Type"] = "SPEC",
+								}, -- [2]
+								{
+									["Type"] = "MANA",
+									["Level"] = 15,
+									["Operator"] = ">=",
+								}, -- [3]
+								["n"] = 3,
+							},
+							["GUID"] = "TMW:icon:1Z6tL7hfkyqu",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [49]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Seal of Command",
+							["ManaCheck"] = true,
+							["Conditions"] = {
+								{
+									["Level"] = 5,
+									["Type"] = "BUFFDUR",
+									["Name"] = "Seal of Command",
+									["Operator"] = "<=",
+								}, -- [1]
+								{
+									["Level"] = 2,
+									["Type"] = "SPEC",
+								}, -- [2]
+								{
+									["Name"] = "xAOE(10) > 1",
+									["Type"] = "LUA",
+								}, -- [3]
+								["n"] = 3,
+							},
+							["GUID"] = "TMW:icon:1Z6uOhVXfBCq",
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						}, -- [50]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Seal of Righteousness",
+							["Conditions"] = {
+								{
+									["Level"] = 5,
+									["Type"] = "BUFFDUR",
+									["Name"] = "Seal of Righteousness",
+									["Operator"] = "<=",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1ZknB6Qckg8U",
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [51]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Seal of Vengeance",
+							["Conditions"] = {
+								{
+									["Level"] = 5,
+									["Type"] = "BUFFDUR",
+									["Name"] = "Seal of Vengeance",
+									["Operator"] = "<=",
+								}, -- [1]
+								{
+									["Level"] = 2,
+									["Type"] = "SPEC",
+								}, -- [2]
+								{
+									["PrtsBefore"] = 1,
+									["Type"] = "LEVEL",
+									["Level"] = -1,
+									["Unit"] = "target",
+								}, -- [3]
+								{
+									["Type"] = "LEVEL",
+									["AndOr"] = "OR",
+									["Level"] = 83,
+									["PrtsAfter"] = 1,
+									["Unit"] = "target",
+								}, -- [4]
+								["n"] = 4,
+							},
+							["GUID"] = "TMW:icon:1ZkmyynlJgaL",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [52]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [53]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [54]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [55]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [56]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [57]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [58]
+						{
+							["Enabled"] = true,
+							["Type"] = "item",
+							["Name"] = "22105; 22103; 22104; 36892; 5509; 5512; 36894; 19013; 36893; 36891; 36890; 19009; 19004; 19012; 5510; 19007; 19005; 19006; 19010; 36889; 5511; 19008; 9421; 19011",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+							["GUID"] = "TMW:icon:1ZmhsoGZsuaJ",
+							["Conditions"] = {
+								{
+									["Type"] = "HEALTH",
+									["Level"] = 50,
+									["Operator"] = "<=",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["CustomTex"] = "5720",
+							["OnlyInBags"] = true,
+						}, -- [59]
+						{
+							["Enabled"] = true,
+							["Type"] = "item",
+							["Name"] = "33447; 43531; 22829; 929; 13446; 33092; 3928; 39671; 43569; 858; 1710; 118; 28100; 32947; 4596; 33934; 31853; 18839; 31839; 31852; 23822; 31838; 32905",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+							["GUID"] = "TMW:icon:1ZmhsoDa4SWt",
+							["Conditions"] = {
+								{
+									["Type"] = "HEALTH",
+									["Level"] = 40,
+									["Operator"] = "<=",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["CustomTex"] = "28491",
+							["OnlyInBags"] = true,
+						}, -- [60]
+					},
+					["Point"] = {
+						["y"] = -5,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
+				}, -- [1]
+				{
+					["GUID"] = "TMW:group:1TWYPj24VzCn",
+					["Icons"] = {
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [1]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [2]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [3]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [4]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [5]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [6]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [7]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [8]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [9]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [10]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [11]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [12]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [13]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [14]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [15]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [16]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [17]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [18]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [19]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [20]
+					},
+					["Point"] = {
+						["y"] = -20.00000522536274,
+						["x"] = -229.9999934656047,
+					},
+					["Name"] = "OTHER",
+					["Scale"] = 1.5,
+					["Columns"] = 1,
+					["Alpha"] = 0,
+					["TextureName"] = "Details Flat",
+				}, -- [2]
+				{
+					["GUID"] = "TMW:group:1TeVDtajUwqa",
+					["Name"] = "ROTATION CENTER",
+					["Point"] = {
+						["y"] = -140,
+						["x"] = -5.450076092640056e-05,
+					},
+					["Locked"] = true,
+					["Scale"] = 1.5,
+					["Columns"] = 1,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Conditions"] = {
+								{
+									["Name"] = "return not IsAltKeyDown();",
+									["Type"] = "LUA",
+								}, -- [1]
+								{
+									["Unit"] = "target",
+									["Type"] = "EXISTS",
+								}, -- [2]
+								{
+									["Unit"] = "target",
+									["Type"] = "ALIVE",
+								}, -- [3]
+								{
+									["Type"] = "REACT",
+									["Level"] = 1,
+									["Unit"] = "target",
+								}, -- [4]
+								{
+									["Level"] = 1,
+									["Type"] = "MOUNTED",
+								}, -- [5]
+								["n"] = 6,
+							},
+							["Icons"] = {
+								"TMW:icon:1ZmhsoGZsuaJ", -- [1]
+								"TMW:icon:1ZmhsoDa4SWt", -- [2]
+								"TMW:icon:1ZmhO7mqKue=", -- [3]
+								"TMW:icon:1Z6tL7hZeq4n", -- [4]
+								"TMW:icon:1ZwdlWxY789W", -- [5]
+								"TMW:icon:1Z6tL7hbgPqi", -- [6]
+								"TMW:icon:1ZkmyyWWPpGC", -- [7]
+								"TMW:icon:1ZkmyyWZapS_", -- [8]
+								"TMW:icon:1YXd9eWMwI0j", -- [9]
+								"TMW:icon:1Z6tL7hfkyqu", -- [10]
+								"TMW:icon:1ZkmyyWX_u4d", -- [11]
+								"TMW:icon:1YXd9eWHzTSH", -- [12]
+								"TMW:icon:1ZkmyyWS_emA", -- [13]
+								"TMW:icon:1ZkmyyWUmDSs", -- [14]
+								"TMW:icon:1Ztb9RIdmLi9", -- [15]
+							},
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1YXd9eWHzTSH", -- [1]
+								"TMW:icon:1YXd9eWMwI0j", -- [2]
+								"TMW:icon:1V6noP8ARoel", -- [3]
+								"TMW:icon:1V6lsULwY3_Y", -- [4]
+							},
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [2]
+					},
+					["OnlyInCombat"] = true,
+				}, -- [3]
+				{
+					["GUID"] = "TMW:group:1YWtClNC=L8S",
+					["Name"] = "ROTATION TOPLEFT",
+					["Point"] = {
+						["y"] = 6.103515625e-05,
+						["point"] = "TOPLEFT",
+						["relativePoint"] = "TOPLEFT",
+					},
+					["Locked"] = true,
+					["Scale"] = 0.4,
+					["Columns"] = 1,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Conditions"] = {
+								{
+									["PrtsBefore"] = 1,
+									["Type"] = "LUA",
+									["Name"] = "return not IsAltKeyDown();",
+								}, -- [1]
+								{
+									["Unit"] = "target",
+									["Type"] = "EXISTS",
+								}, -- [2]
+								{
+									["Unit"] = "target",
+									["Type"] = "ALIVE",
+								}, -- [3]
+								{
+									["Type"] = "REACT",
+									["Level"] = 1,
+									["Unit"] = "target",
+								}, -- [4]
+								{
+									["Type"] = "MOUNTED",
+									["PrtsAfter"] = 1,
+									["Level"] = 1,
+								}, -- [5]
+								{
+									["Type"] = "SPEC",
+									["Level"] = 1,
+									["AndOr"] = "OR",
+								}, -- [6]
+								["n"] = 6,
+							},
+							["Icons"] = {
+								"TMW:icon:1ZmhsoGZsuaJ", -- [1]
+								"TMW:icon:1ZmhsoDa4SWt", -- [2]
+								"TMW:icon:1ZmhO7mqKue=", -- [3]
+								"TMW:icon:1Z6tL7hZeq4n", -- [4]
+								"TMW:icon:1ZwdlWxY789W", -- [5]
+								"TMW:icon:1Z6tL7hbgPqi", -- [6]
+								"TMW:icon:1ZkmyyWWPpGC", -- [7]
+								"TMW:icon:1ZkmyyWZapS_", -- [8]
+								"TMW:icon:1YXd9eWMwI0j", -- [9]
+								"TMW:icon:1Z6tL7hfkyqu", -- [10]
+								"TMW:icon:1ZkmyyWX_u4d", -- [11]
+								"TMW:icon:1YXd9eWHzTSH", -- [12]
+								"TMW:icon:1ZkmyyWS_emA", -- [13]
+								"TMW:icon:1ZkmyyWUmDSs", -- [14]
+								"TMW:icon:1Ztb9RIdmLi9", -- [15]
+							},
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [1]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+							["Type"] = "meta",
+						}, -- [2]
+					},
+					["OnlyInCombat"] = true,
+				}, -- [4]
+				{
+					["GUID"] = "TMW:group:1Zmhq7u_10aD",
+					["Columns"] = 1,
+					["Point"] = {
+						["y"] = -9.187387125994171e-05,
+						["x"] = 30,
+						["point"] = "TOPLEFT",
+						["relativePoint"] = "TOPLEFT",
+					},
+					["Scale"] = 0.4,
+					["Name"] = "ROTATION QUEUE",
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Conditions"] = {
+								{
+									["Type"] = "COMBAT",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["Icons"] = {
+								"TMW:icon:1Z6tL7hdj2mo", -- [1]
+							},
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [1]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [2]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [3]
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [4]
+					},
+					["Locked"] = true,
+				}, -- [5]
+				{
+					["Icons"] = {
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [1]
+					},
+				}, -- [6]
+				{
+					["Icons"] = {
+						{
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+								}, -- [3]
+								{
+								}, -- [4]
+							},
+						}, -- [1]
+					},
+				}, -- [7]
+			},
 			["Version"] = 100800,
-		},
-		["Battlearm - Gehennas"] = {
-			["Version"] = 100800,
+			["NumGroups"] = 5,
 		},
 	},
 }

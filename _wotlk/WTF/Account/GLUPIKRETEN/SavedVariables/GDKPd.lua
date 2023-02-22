@@ -75,10 +75,10 @@ GDKPd_DB = {
 			},
 			["showAuctionDurationTimerText"] = true,
 			["statuspoint"] = {
-				["y"] = -313.476318359375,
+				["y"] = -331.8890686035156,
 				["relative"] = "TOPRIGHT",
 				["point"] = "TOPRIGHT",
-				["x"] = -278.2620544433594,
+				["x"] = -227.468505859375,
 			},
 		},
 		["Moolatz - Golemagg"] = {
