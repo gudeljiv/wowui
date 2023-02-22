@@ -31,6 +31,27 @@ GlobalIgnoreDB = {
 		"player", -- [16]
 		"player", -- [17]
 	},
+	["ignoreList"] = {
+		"Puntune-Golemagg", -- [1]
+		"Pömp-Golemagg", -- [2]
+		"Raudos-Golemagg", -- [3]
+		"Burstt-Golemagg", -- [4]
+		"Conall-Golemagg", -- [5]
+		"Elfboy-Golemagg", -- [6]
+		"Jerrywild-Golemagg", -- [7]
+		"Qtc-Golemagg", -- [8]
+		"Segasík-Golemagg", -- [9]
+		"Arferes-Golemagg", -- [10]
+		"Eristia-Golemagg", -- [11]
+		"Ayrik-Golemagg", -- [12]
+		"Scorpiona-Golemagg", -- [13]
+		"Proguen-Golemagg", -- [14]
+		"Supablast-Golemagg", -- [15]
+		"Grashandlol-Golemagg", -- [16]
+		"Micku-Golemagg", -- [17]
+	},
+	["openWithFriends"] = true,
+	["skipPrivate"] = true,
 	["syncInfo"] = {
 		{
 		}, -- [1]
@@ -67,48 +88,9 @@ GlobalIgnoreDB = {
 		{
 		}, -- [17]
 	},
-	["invertSpam"] = false,
-	["skipPrivate"] = true,
-	["ignoreList"] = {
-		"Puntune-Golemagg", -- [1]
-		"Pömp-Golemagg", -- [2]
-		"Raudos-Golemagg", -- [3]
-		"Burstt-Golemagg", -- [4]
-		"Conall-Golemagg", -- [5]
-		"Elfboy-Golemagg", -- [6]
-		"Jerrywild-Golemagg", -- [7]
-		"Qtc-Golemagg", -- [8]
-		"Segasík-Golemagg", -- [9]
-		"Arferes-Golemagg", -- [10]
-		"Eristia-Golemagg", -- [11]
-		"Ayrik-Golemagg", -- [12]
-		"Scorpiona-Golemagg", -- [13]
-		"Proguen-Golemagg", -- [14]
-		"Supablast-Golemagg", -- [15]
-		"Grashandlol-Golemagg", -- [16]
-		"Micku-Golemagg", -- [17]
-	},
-	["autoTime"] = 600,
+	["trackChanges"] = true,
 	["autoCount"] = 3,
-	["notes"] = {
-		"", -- [1]
-		"", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"", -- [5]
-		"", -- [6]
-		"", -- [7]
-		"", -- [8]
-		"", -- [9]
-		"", -- [10]
-		"", -- [11]
-		"", -- [12]
-		"", -- [13]
-		"", -- [14]
-		"", -- [15]
-		"", -- [16]
-		"wasted my time in voa raid... kicked me because he made room for warrior friend", -- [17]
-	},
+	["revision"] = 1,
 	["filterList"] = {
 		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]
 		"[item=19019]", -- [2]
@@ -121,7 +103,7 @@ GlobalIgnoreDB = {
 		"[contains=WTS] or [contains=WTB]", -- [9]
 		"[nonlatin]", -- [10]
 	},
-	["trackChanges"] = true,
+	["autoUpdate"] = true,
 	["autoIgnore"] = true,
 	["factionList"] = {
 		"Horde", -- [1]
@@ -142,10 +124,31 @@ GlobalIgnoreDB = {
 		"Horde", -- [16]
 		"Horde", -- [17]
 	},
-	["skipGuild"] = true,
-	["sameserver"] = true,
+	["skipParty"] = false,
+	["delList"] = {
+		"Happens-Golemagg", -- [1]
+		"Freezqt-Golemagg", -- [2]
+	},
 	["attachFriends"] = true,
-	["revision"] = 1,
+	["notes"] = {
+		"", -- [1]
+		"", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		"", -- [7]
+		"", -- [8]
+		"", -- [9]
+		"", -- [10]
+		"", -- [11]
+		"", -- [12]
+		"", -- [13]
+		"", -- [14]
+		"", -- [15]
+		"", -- [16]
+		"wasted my time in voa raid... kicked me because he made room for warrior friend", -- [17]
+	},
 	["expList"] = {
 		0, -- [1]
 		0, -- [2]
@@ -165,28 +168,10 @@ GlobalIgnoreDB = {
 		0, -- [16]
 		0, -- [17]
 	},
-	["skipParty"] = false,
+	["skipGuild"] = true,
 	["chatmsg"] = true,
 	["filterTotal"] = 3,
-	["dateList"] = {
-		"05 Feb 2023", -- [1]
-		"05 Feb 2023", -- [2]
-		"05 Feb 2023", -- [3]
-		"05 Feb 2023", -- [4]
-		"05 Feb 2023", -- [5]
-		"05 Feb 2023", -- [6]
-		"05 Feb 2023", -- [7]
-		"05 Feb 2023", -- [8]
-		"05 Feb 2023", -- [9]
-		"06 Feb 2023", -- [10]
-		"07 Feb 2023", -- [11]
-		"14 Feb 2023", -- [12]
-		"14 Feb 2023", -- [13]
-		"15 Feb 2023", -- [14]
-		"18 Feb 2023", -- [15]
-		"19 Feb 2023", -- [16]
-		"19 Feb 2023", -- [17]
-	},
+	["defexpire"] = 0,
 	["filterDesc"] = {
 		"Filter \"Anal\" Spammers", -- [1]
 		"Filter Thunderfury linking", -- [2]
@@ -213,12 +198,27 @@ GlobalIgnoreDB = {
 		false, -- [10]
 	},
 	["spamFilter"] = true,
-	["defexpire"] = 0,
-	["delList"] = {
-		"Happens-Golemagg", -- [1]
-		"Freezqt-Golemagg", -- [2]
+	["dateList"] = {
+		"05 Feb 2023", -- [1]
+		"05 Feb 2023", -- [2]
+		"05 Feb 2023", -- [3]
+		"05 Feb 2023", -- [4]
+		"05 Feb 2023", -- [5]
+		"05 Feb 2023", -- [6]
+		"05 Feb 2023", -- [7]
+		"05 Feb 2023", -- [8]
+		"05 Feb 2023", -- [9]
+		"06 Feb 2023", -- [10]
+		"07 Feb 2023", -- [11]
+		"14 Feb 2023", -- [12]
+		"14 Feb 2023", -- [13]
+		"15 Feb 2023", -- [14]
+		"18 Feb 2023", -- [15]
+		"19 Feb 2023", -- [16]
+		"19 Feb 2023", -- [17]
 	},
-	["autoUpdate"] = true,
+	["sameserver"] = true,
+	["autoTime"] = 600,
 	["samefaction"] = true,
-	["openWithFriends"] = true,
+	["invertSpam"] = false,
 }
