@@ -31,8 +31,8 @@ GlobalIgnoreDB = {
 		"player", -- [16]
 		"player", -- [17]
 	},
-	["invertSpam"] = false,
 	["openWithFriends"] = true,
+	["invertSpam"] = false,
 	["skipPrivate"] = true,
 	["filterList"] = {
 		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]
@@ -46,145 +46,12 @@ GlobalIgnoreDB = {
 		"[contains=WTS] or [contains=WTB]", -- [9]
 		"[nonlatin]", -- [10]
 	},
-	["autoTime"] = 600,
-	["autoCount"] = 3,
-	["sameserver"] = true,
-	["ignoreList"] = {
-		"Puntune-Golemagg", -- [1]
-		"Pömp-Golemagg", -- [2]
-		"Raudos-Golemagg", -- [3]
-		"Burstt-Golemagg", -- [4]
-		"Conall-Golemagg", -- [5]
-		"Elfboy-Golemagg", -- [6]
-		"Jerrywild-Golemagg", -- [7]
-		"Qtc-Golemagg", -- [8]
-		"Segasík-Golemagg", -- [9]
-		"Arferes-Golemagg", -- [10]
-		"Eristia-Golemagg", -- [11]
-		"Ayrik-Golemagg", -- [12]
-		"Scorpiona-Golemagg", -- [13]
-		"Proguen-Golemagg", -- [14]
-		"Supablast-Golemagg", -- [15]
-		"Grashandlol-Golemagg", -- [16]
-		"Micku-Golemagg", -- [17]
-	},
 	["trackChanges"] = true,
-	["autoIgnore"] = true,
-	["factionList"] = {
-		"Horde", -- [1]
-		"Horde", -- [2]
-		"Horde", -- [3]
-		"Horde", -- [4]
-		"Horde", -- [5]
-		"Horde", -- [6]
-		"Horde", -- [7]
-		"Horde", -- [8]
-		"Horde", -- [9]
-		"Horde", -- [10]
-		"Horde", -- [11]
-		"Horde", -- [12]
-		"Horde", -- [13]
-		"Horde", -- [14]
-		"Horde", -- [15]
-		"Horde", -- [16]
-		"Horde", -- [17]
-	},
-	["dateList"] = {
-		"05 Feb 2023", -- [1]
-		"05 Feb 2023", -- [2]
-		"05 Feb 2023", -- [3]
-		"05 Feb 2023", -- [4]
-		"05 Feb 2023", -- [5]
-		"05 Feb 2023", -- [6]
-		"05 Feb 2023", -- [7]
-		"05 Feb 2023", -- [8]
-		"05 Feb 2023", -- [9]
-		"06 Feb 2023", -- [10]
-		"07 Feb 2023", -- [11]
-		"14 Feb 2023", -- [12]
-		"14 Feb 2023", -- [13]
-		"15 Feb 2023", -- [14]
-		"18 Feb 2023", -- [15]
-		"19 Feb 2023", -- [16]
-		"19 Feb 2023", -- [17]
-	},
+	["autoCount"] = 3,
 	["delList"] = {
 		"Happens-Golemagg", -- [1]
 		"Freezqt-Golemagg", -- [2]
 	},
-	["attachFriends"] = true,
-	["revision"] = 1,
-	["expList"] = {
-		0, -- [1]
-		0, -- [2]
-		0, -- [3]
-		0, -- [4]
-		0, -- [5]
-		0, -- [6]
-		0, -- [7]
-		0, -- [8]
-		0, -- [9]
-		0, -- [10]
-		0, -- [11]
-		0, -- [12]
-		0, -- [13]
-		0, -- [14]
-		0, -- [15]
-		0, -- [16]
-		0, -- [17]
-	},
-	["skipParty"] = false,
-	["chatmsg"] = true,
-	["filterTotal"] = 3,
-	["defexpire"] = 0,
-	["filterDesc"] = {
-		"Filter \"Anal\" Spammers", -- [1]
-		"Filter Thunderfury linking", -- [2]
-		"Filter Gold Spam #1", -- [3]
-		"Filter Gold Spam #2", -- [4]
-		"Filter Gold Spam #3", -- [5]
-		"Filter Gold Spam #4", -- [6]
-		"Filter Guild Recruitment", -- [7]
-		"Filter Community Recruitment", -- [8]
-		"Filter WTS", -- [9]
-		"Filter Chinese/Korean/Japanese", -- [10]
-	},
-	["spamFilter"] = true,
-	["filterActive"] = {
-		true, -- [1]
-		true, -- [2]
-		true, -- [3]
-		true, -- [4]
-		true, -- [5]
-		true, -- [6]
-		false, -- [7]
-		false, -- [8]
-		false, -- [9]
-		false, -- [10]
-	},
-	["asknote"] = true,
-	["skipGuild"] = true,
-	["notes"] = {
-		"", -- [1]
-		"", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"", -- [5]
-		"", -- [6]
-		"", -- [7]
-		"", -- [8]
-		"", -- [9]
-		"", -- [10]
-		"", -- [11]
-		"", -- [12]
-		"", -- [13]
-		"", -- [14]
-		"", -- [15]
-		"", -- [16]
-		"wasted my time in voa raid... kicked me because he made room for warrior friend", -- [17]
-	},
-	["autoUpdate"] = true,
-	["samefaction"] = true,
 	["syncInfo"] = {
 		{
 		}, -- [1]
@@ -220,5 +87,138 @@ GlobalIgnoreDB = {
 		}, -- [16]
 		{
 		}, -- [17]
+	},
+	["autoUpdate"] = true,
+	["autoIgnore"] = true,
+	["factionList"] = {
+		"Horde", -- [1]
+		"Horde", -- [2]
+		"Horde", -- [3]
+		"Horde", -- [4]
+		"Horde", -- [5]
+		"Horde", -- [6]
+		"Horde", -- [7]
+		"Horde", -- [8]
+		"Horde", -- [9]
+		"Horde", -- [10]
+		"Horde", -- [11]
+		"Horde", -- [12]
+		"Horde", -- [13]
+		"Horde", -- [14]
+		"Horde", -- [15]
+		"Horde", -- [16]
+		"Horde", -- [17]
+	},
+	["defexpire"] = 0,
+	["sameserver"] = true,
+	["attachFriends"] = true,
+	["notes"] = {
+		"", -- [1]
+		"", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		"", -- [7]
+		"", -- [8]
+		"", -- [9]
+		"", -- [10]
+		"", -- [11]
+		"", -- [12]
+		"", -- [13]
+		"", -- [14]
+		"", -- [15]
+		"", -- [16]
+		"wasted my time in voa raid... kicked me because he made room for warrior friend", -- [17]
+	},
+	["expList"] = {
+		0, -- [1]
+		0, -- [2]
+		0, -- [3]
+		0, -- [4]
+		0, -- [5]
+		0, -- [6]
+		0, -- [7]
+		0, -- [8]
+		0, -- [9]
+		0, -- [10]
+		0, -- [11]
+		0, -- [12]
+		0, -- [13]
+		0, -- [14]
+		0, -- [15]
+		0, -- [16]
+		0, -- [17]
+	},
+	["skipGuild"] = true,
+	["chatmsg"] = true,
+	["filterTotal"] = 3,
+	["dateList"] = {
+		"05 Feb 2023", -- [1]
+		"05 Feb 2023", -- [2]
+		"05 Feb 2023", -- [3]
+		"05 Feb 2023", -- [4]
+		"05 Feb 2023", -- [5]
+		"05 Feb 2023", -- [6]
+		"05 Feb 2023", -- [7]
+		"05 Feb 2023", -- [8]
+		"05 Feb 2023", -- [9]
+		"06 Feb 2023", -- [10]
+		"07 Feb 2023", -- [11]
+		"14 Feb 2023", -- [12]
+		"14 Feb 2023", -- [13]
+		"15 Feb 2023", -- [14]
+		"18 Feb 2023", -- [15]
+		"19 Feb 2023", -- [16]
+		"19 Feb 2023", -- [17]
+	},
+	["filterDesc"] = {
+		"Filter \"Anal\" Spammers", -- [1]
+		"Filter Thunderfury linking", -- [2]
+		"Filter Gold Spam #1", -- [3]
+		"Filter Gold Spam #2", -- [4]
+		"Filter Gold Spam #3", -- [5]
+		"Filter Gold Spam #4", -- [6]
+		"Filter Guild Recruitment", -- [7]
+		"Filter Community Recruitment", -- [8]
+		"Filter WTS", -- [9]
+		"Filter Chinese/Korean/Japanese", -- [10]
+	},
+	["spamFilter"] = true,
+	["filterActive"] = {
+		true, -- [1]
+		true, -- [2]
+		true, -- [3]
+		true, -- [4]
+		true, -- [5]
+		true, -- [6]
+		false, -- [7]
+		false, -- [8]
+		false, -- [9]
+		false, -- [10]
+	},
+	["asknote"] = true,
+	["skipParty"] = false,
+	["revision"] = 1,
+	["autoTime"] = 600,
+	["samefaction"] = true,
+	["ignoreList"] = {
+		"Puntune-Golemagg", -- [1]
+		"Pömp-Golemagg", -- [2]
+		"Raudos-Golemagg", -- [3]
+		"Burstt-Golemagg", -- [4]
+		"Conall-Golemagg", -- [5]
+		"Elfboy-Golemagg", -- [6]
+		"Jerrywild-Golemagg", -- [7]
+		"Qtc-Golemagg", -- [8]
+		"Segasík-Golemagg", -- [9]
+		"Arferes-Golemagg", -- [10]
+		"Eristia-Golemagg", -- [11]
+		"Ayrik-Golemagg", -- [12]
+		"Scorpiona-Golemagg", -- [13]
+		"Proguen-Golemagg", -- [14]
+		"Supablast-Golemagg", -- [15]
+		"Grashandlol-Golemagg", -- [16]
+		"Micku-Golemagg", -- [17]
 	},
 }
