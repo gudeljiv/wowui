@@ -229,7 +229,7 @@ with keyboard.Listener(on_press=on_press) as listener:
 
         while True:
 
-            time.sleep(random.uniform(0.001, 0.1))
+            time.sleep(random.uniform(0.01, 0.1))
 
             start_time = time.time()
             if os.name != "posix":

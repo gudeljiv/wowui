@@ -58,8 +58,8 @@ Bagnon_Sets = {
 			["hiddenRules"] = {
 			},
 			["spacing"] = 3,
-			["y"] = -343.9281005859375,
-			["x"] = -313.6328125,
+			["y"] = -239.166259765625,
+			["x"] = -387.91845703125,
 			["search"] = true,
 			["broker"] = false,
 			["reverseSlots"] = false,

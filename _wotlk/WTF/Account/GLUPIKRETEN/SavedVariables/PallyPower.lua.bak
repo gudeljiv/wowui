@@ -48,20 +48,7 @@ PallyPowerDB = {
 	},
 }
 PallyPower_Assignments = {
-	["Vermina"] = {
-		0, -- [1]
-		0, -- [2]
-		0, -- [3]
-		0, -- [4]
-		0, -- [5]
-		0, -- [6]
-		0, -- [7]
-		0, -- [8]
-		0, -- [9]
-		0, -- [10]
-		2, -- [11]
-	},
-	["Mileram"] = {
+	["Rinnerebirt"] = {
 		0, -- [1]
 		0, -- [2]
 		0, -- [3]
@@ -85,7 +72,7 @@ PallyPower_Assignments = {
 		0, -- [9]
 		0, -- [10]
 	},
-	["Rinnerebirt"] = {
+	["Mileram"] = {
 		0, -- [1]
 		0, -- [2]
 		0, -- [3]
@@ -96,6 +83,19 @@ PallyPower_Assignments = {
 		0, -- [8]
 		0, -- [9]
 		0, -- [10]
+	},
+	["Vermina"] = {
+		0, -- [1]
+		0, -- [2]
+		0, -- [3]
+		0, -- [4]
+		0, -- [5]
+		0, -- [6]
+		0, -- [7]
+		0, -- [8]
+		0, -- [9]
+		0, -- [10]
+		2, -- [11]
 	},
 }
 PallyPower_NormalAssignments = {
@@ -146,6 +146,7 @@ PallyPower_AuraAssignments = {
 	["Heligaqken"] = 0,
 	["Zahiri"] = 0,
 	["Splínter"] = 0,
+	["Mitzreal"] = 1,
 	["Derindarbe"] = 0,
 	["Mileram"] = 0,
 	["Nékosenshi"] = 0,
@@ -162,140 +163,142 @@ PallyPower_AuraAssignments = {
 	["Vermina"] = 0,
 	["Emerity"] = 0,
 	["Xporz"] = 0,
-	["Zwiecho"] = 0,
 	["Palabra"] = 3,
 	["Nerdina"] = 0,
-	["Syyllinen"] = 0,
+	["Zwiecho"] = 0,
 	["Darkknéss"] = 0,
-	["Discoduck"] = 0,
 	["Miracle"] = 1,
+	["Syyllinen"] = 0,
 	["Aldrah"] = 0,
-	["Gamzy"] = 0,
-	["Vourligan"] = 1,
+	["Discoduck"] = 0,
+	["Jagor"] = 0,
 	["Buxn"] = 0,
-	["Iteasy"] = 0,
+	["Gamzy"] = 0,
 	["Konseus"] = 0,
+	["Palidah"] = 0,
+	["Iteasy"] = 0,
 	["Cloë"] = 0,
+	["Vyjebanahoe"] = 0,
 	["Bublïnka"] = 0,
 	["Ipalyulol"] = 1,
-	["Palidah"] = 0,
+	["Recobe"] = 0,
 	["Capybara"] = 0,
 	["Naryen"] = 0,
-	["Vyjebanahoe"] = 0,
+	["Krigeroca"] = 0,
 	["Veebz"] = 0,
 	["Izule"] = 0,
-	["Recobe"] = 0,
-	["Sertrolin"] = 0,
 	["Athonian"] = 0,
-	["Árwén"] = 0,
+	["Sertrolin"] = 0,
+	["Hugerocket"] = 0,
+	["Xilaz"] = 0,
 	["Deathnoot"] = 0,
 	["Brrazers"] = 0,
 	["Houdyn"] = 0,
-	["Hugerocket"] = 0,
-	["Prosec"] = 0,
-	["Xilaz"] = 0,
-	["Ikoras"] = 0,
 	["Iamtherealqt"] = 0,
-	["Berri"] = 0,
+	["Prosec"] = 2,
 	["Attmar"] = 0,
+	["Ikoras"] = 0,
+	["Darwina"] = 0,
+	["Berri"] = 0,
+	["Doradintwo"] = 0,
 	["Tökfilkó"] = 0,
 	["Czarnuszy"] = 0,
-	["Darwina"] = 0,
-	["Doradintwo"] = 0,
+	["Zardonik"] = 0,
+	["Tocraprot"] = 0,
 	["Menttolka"] = 0,
 	["Yämi"] = 0,
 	["Filifjonkman"] = 0,
-	["Tocraprot"] = 0,
+	["Supachad"] = 0,
 	["Trylledame"] = 0,
-	["Zivvy"] = 0,
+	["Realpala"] = 0,
 	["Veribig"] = 0,
 	["Mouritius"] = 0,
 	["Vernitka"] = 0,
 	["Billyblaze"] = 0,
-	["Digg"] = 0,
+	["Wscqc"] = 0,
 	["Hjørdís"] = 0,
 	["Pochvara"] = 0,
-	["Valtyria"] = 0,
-	["Wscqc"] = 0,
-	["Sistermerrin"] = 0,
-	["Rvbbitt"] = 0,
+	["Doctør"] = 0,
 	["Nioxina"] = 0,
+	["Palladen"] = 0,
+	["Rvbbitt"] = 0,
+	["Valtyria"] = 0,
 	["Uhndapa"] = 0,
 	["Zagopally"] = 0,
 	["Turanian"] = 0,
 	["Phonkdrifter"] = 0,
-	["Palladen"] = 0,
-	["Cigarette"] = 0,
-	["Aarvin"] = 0,
-	["Lallin"] = 0,
-	["Nimhitch"] = 0,
 	["Atlima"] = 0,
+	["Lallin"] = 0,
+	["Aarvin"] = 0,
 	["Friescpt"] = 0,
+	["Nimhitch"] = 0,
 	["Holytimes"] = 0,
+	["Phkp"] = 0,
+	["Palablynx"] = 0,
 	["Mcgiver"] = 0,
 	["Barskeladd"] = 0,
 	["Pretzelqt"] = 0,
-	["Palablynx"] = 0,
+	["Teddz"] = 0,
 	["Kalexa"] = 0,
 	["Fatalitý"] = 0,
 	["Whit"] = 0,
-	["Ewulcek"] = 0,
-	["Teddz"] = 0,
+	["Redhaired"] = 0,
+	["Holychock"] = 0,
 	["Lubiven"] = 0,
 	["Ethyr"] = 0,
-	["Redhaired"] = 0,
+	["Foxholy"] = 0,
 	["Zoqur"] = 0,
 	["Talashia"] = 0,
-	["Holychock"] = 0,
+	["Selestra"] = 0,
 	["Thelichlight"] = 0,
 	["Yebat"] = 0,
 	["Trenhard"] = 0,
 	["Phuncky"] = 0,
-	["Conquést"] = 0,
-	["Twitterstorm"] = 0,
+	["Pazton"] = 0,
+	["Moghulol"] = 0,
 	["Lizpally"] = 0,
 	["Yesnix"] = 0,
 	["Xoptimalz"] = 0,
-	["Selestra"] = 0,
-	["Moghulol"] = 0,
+	["Twitterstorm"] = 0,
+	["Conquést"] = 0,
 	["Glumsi"] = 0,
-	["Pazton"] = 0,
-	["Foxholy"] = 0,
+	["Ewulcek"] = 0,
+	["Tisca"] = 0,
 	["Ðîvâ"] = 0,
 	["Wowax"] = 2,
-	["Tisca"] = 0,
-	["Gigapaladin"] = 0,
 	["Maxthepala"] = 0,
-	["Phkp"] = 0,
+	["Gigapaladin"] = 0,
 	["Rubyrag"] = 0,
+	["Cigarette"] = 0,
+	["Sistermerrin"] = 0,
 	["Keen"] = 0,
 	["Tillander"] = 0,
 	["Jejla"] = 0,
 	["Althan"] = 0,
 	["Immórtál"] = 0,
-	["Doctør"] = 0,
-	["Supachad"] = 0,
+	["Zivvy"] = 0,
+	["Digg"] = 0,
 	["Monikå"] = 0,
-	["Realpala"] = 0,
+	["Badpaladinn"] = 0,
 	["Drexal"] = 0,
 	["Lonnath"] = 0,
-	["Badpaladinn"] = 0,
-	["Turboneal"] = 0,
-	["Zardonik"] = 0,
-	["Dariya"] = 0,
 	["Mailil"] = 0,
+	["Turboneal"] = 0,
+	["Árwén"] = 0,
+	["Dariya"] = 0,
+	["Siepie"] = 0,
 	["Haduhealz"] = 0,
 	["Appendix"] = 0,
-	["Siepie"] = 0,
-	["Krigeroca"] = 0,
-	["Elenath"] = 0,
 	["Merpz"] = 0,
-	["Jollylight"] = 0,
+	["Vourligan"] = 1,
+	["Elenath"] = 0,
 	["Tommorroww"] = 0,
-	["Jagor"] = 0,
-	["Billibos"] = 0,
+	["Jollylight"] = 0,
 	["Dagermint"] = 2,
 	["Kenjura"] = 2,
+	["Billibos"] = 0,
+	["Maximizer"] = 0,
+	["Kaylel"] = 1,
 }
 PallyPower_SavedPresets = {
 	["PallyPower_Assignments"] = {

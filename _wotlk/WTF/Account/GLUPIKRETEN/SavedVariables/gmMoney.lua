@@ -18,7 +18,7 @@ GMMONEY = {
 	},
 	["Golemagg"] = {
 		["Battlearm"] = {
-			["GOLD"] = 156621632,
+			["GOLD"] = 162613490,
 			["CLASS"] = "DEATHKNIGHT",
 		},
 		["Mxzq"] = {
@@ -42,7 +42,7 @@ GMMONEY = {
 			["CLASS"] = "SHAMAN",
 		},
 		["Moolatz"] = {
-			["GOLD"] = 4931131,
+			["GOLD"] = 4923862,
 			["CLASS"] = "DRUID",
 		},
 		["Augustin"] = {
@@ -62,7 +62,7 @@ GMMONEY = {
 			["CLASS"] = "ROGUE",
 		},
 		["Vermin"] = {
-			["GOLD"] = 149890104,
+			["GOLD"] = 99087934,
 			["CLASS"] = "WARRIOR",
 		},
 	},

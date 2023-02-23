@@ -30,6 +30,16 @@ GlobalIgnoreDB = {
 		"player", -- [15]
 		"player", -- [16]
 		"player", -- [17]
+		"player", -- [18]
+		"player", -- [19]
+		"player", -- [20]
+		"player", -- [21]
+		"player", -- [22]
+		"player", -- [23]
+		"player", -- [24]
+		"player", -- [25]
+		"player", -- [26]
+		"player", -- [27]
 	},
 	["openWithFriends"] = true,
 	["invertSpam"] = false,
@@ -87,6 +97,36 @@ GlobalIgnoreDB = {
 		}, -- [16]
 		{
 		}, -- [17]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [18]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [19]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [20]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [21]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [22]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [23]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [24]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [25]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [26]
+		{
+			"Battlearm-Golemagg@1", -- [1]
+		}, -- [27]
 	},
 	["autoUpdate"] = true,
 	["autoIgnore"] = true,
@@ -108,6 +148,16 @@ GlobalIgnoreDB = {
 		"Horde", -- [15]
 		"Horde", -- [16]
 		"Horde", -- [17]
+		"Horde", -- [18]
+		"Horde", -- [19]
+		"Horde", -- [20]
+		"Horde", -- [21]
+		"Horde", -- [22]
+		"Horde", -- [23]
+		"Horde", -- [24]
+		"Horde", -- [25]
+		"Horde", -- [26]
+		"Horde", -- [27]
 	},
 	["defexpire"] = 0,
 	["sameserver"] = true,
@@ -130,6 +180,16 @@ GlobalIgnoreDB = {
 		"", -- [15]
 		"", -- [16]
 		"wasted my time in voa raid... kicked me because he made room for warrior friend", -- [17]
+		"", -- [18]
+		"", -- [19]
+		"", -- [20]
+		"", -- [21]
+		"", -- [22]
+		"", -- [23]
+		"", -- [24]
+		"", -- [25]
+		"", -- [26]
+		"", -- [27]
 	},
 	["expList"] = {
 		0, -- [1]
@@ -149,6 +209,16 @@ GlobalIgnoreDB = {
 		0, -- [15]
 		0, -- [16]
 		0, -- [17]
+		0, -- [18]
+		0, -- [19]
+		0, -- [20]
+		0, -- [21]
+		0, -- [22]
+		0, -- [23]
+		0, -- [24]
+		0, -- [25]
+		0, -- [26]
+		0, -- [27]
 	},
 	["skipGuild"] = true,
 	["chatmsg"] = true,
@@ -171,6 +241,16 @@ GlobalIgnoreDB = {
 		"18 Feb 2023", -- [15]
 		"19 Feb 2023", -- [16]
 		"19 Feb 2023", -- [17]
+		"23 Feb 2023", -- [18]
+		"23 Feb 2023", -- [19]
+		"23 Feb 2023", -- [20]
+		"23 Feb 2023", -- [21]
+		"23 Feb 2023", -- [22]
+		"23 Feb 2023", -- [23]
+		"23 Feb 2023", -- [24]
+		"23 Feb 2023", -- [25]
+		"23 Feb 2023", -- [26]
+		"23 Feb 2023", -- [27]
 	},
 	["filterDesc"] = {
 		"Filter \"Anal\" Spammers", -- [1]
@@ -220,5 +300,15 @@ GlobalIgnoreDB = {
 		"Supablast-Golemagg", -- [15]
 		"Grashandlol-Golemagg", -- [16]
 		"Micku-Golemagg", -- [17]
+		"Aerog-Golemagg", -- [18]
+		"Extod-Golemagg", -- [19]
+		"Goldsmell-Golemagg", -- [20]
+		"Hominio-Golemagg", -- [21]
+		"Kebabben-Golemagg", -- [22]
+		"Lolork-Golemagg", -- [23]
+		"Lyrior-Golemagg", -- [24]
+		"Morbintíme-Golemagg", -- [25]
+		"Tomrismage-Golemagg", -- [26]
+		"Toobased-Golemagg", -- [27]
 	},
 }
