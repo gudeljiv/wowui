@@ -54,7 +54,7 @@ local function BorderItemSlots()
 			v.ItemLevelText:SetText('')
 		end
 
-		if (itemLink) then
+		if itemLink then
 			local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent = GetItemInfo(itemLink)
 			if itemQuality and itemQuality > 1 then
 				r, g, b = GetItemQualityColor(itemQuality)
