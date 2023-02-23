@@ -35,11 +35,11 @@ skills["offgcd"]["druid"] = [
 ]
 
 skills["offgcd"]["death knight"] = [
-    {"name": "rune strike", "type": "GetSpellTexture", "id": 56815, "key": "k"},
+    {"name": "battlemaster's resolve", "type": "GetItemIcon", "id": 41589, "key": "1", "modifier": "alt"},
+    {"name": "rune strike", "type": "GetSpellTexture", "id": 56815, "key": "7"},
     {"name": "rune tap", "type": "GetSpellTexture", "id": 48982, "key": "h"},
     {"name": "blood tap", "type": "GetSpellTexture", "id": 45529, "key": "0"},
     {"name": "anti-magic shell", "type": "GetSpellTexture", "id": 48707, "key": "g"},
-    {"name": "battlemaster's resolve", "type": "GetItemIcon", "id": 41589, "key": "1", "modifier": "alt"},
     {"name": "empower rune weapon", "type": "GetSpellTexture", "id": 47568, "key": "8"},
     {"name": "vampiric blood", "type": "GetSpellTexture", "id": 55233, "key": "6"},
     {"name": "icebound fortitude", "type": "GetSpellTexture", "id": 48792, "key": "t"},
@@ -66,34 +66,33 @@ skills["offgcd"]["shaman"] = []
 
 
 skills["warrior"] = [
+    {"name": "bloodthirst", "type": "GetSpellTexture", "id": 23881, "key": "f1", "modifier": "ctrl"},
+    {"name": "mortal strike", "type": "GetSpellTexture", "id": 12294, "key": "f1", "modifier": "ctrl"},
+    {"name": "revenge", "type": "GetSpellTexture", "id": 6572, "key": "f3", "modifier": "ctrl"},
+    {"name": "devastate", "type": "GetSpellTexture", "id": 20243, "key": "f2", "modifier": "ctrl"},
+    {"name": "slam", "type": "GetSpellTexture", "id": 47475, "key": "f2", "modifier": "ctrl"},
+    {"name": "berserker rage", "type": "GetSpellTexture", "id": 18499, "key": "f4", "modifier": "ctrl"},
+    {"name": "enraged regeneration", "type": "GetSpellTexture", "id": 55694, "key": "f5", "modifier": "ctrl"},
+    {"name": "rend", "type": "GetSpellTexture", "id": 772, "key": "r", "modifier": "shift"},
+    {"name": "victory rush", "type": "GetSpellTexture", "id": 34428, "key": "e", "modifier": "shift"},
+    {"name": "disarm", "type": "GetSpellTexture", "id": 676, "key": "e", "modifier": "shift"},
+    {"name": "vigilance", "type": "GetSpellTexture", "id": 50720, "key": "r", "modifier": "shift"},
+    {"name": "sweeping strikes", "type": "GetSpellTexture", "id": 12328, "key": "r", "modifier": "alt"},
+    {"name": "death wish", "type": "GetSpellTexture", "id": 12292, "key": "r", "modifier": "alt"},
+    {"name": "recklessness", "type": "GetSpellTexture", "id": 1719, "key": "e", "modifier": "alt"},
     {"name": "battle shout", "type": "GetSpellTexture", "id": 2048, "key": "f4"},
     {"name": "commanding shout", "type": "GetSpellTexture", "id": 469, "key": "f6"},
     {"name": "demoralizing shout", "type": "GetSpellTexture", "id": 1160, "key": "f5"},
     {"name": "sunder armor", "type": "GetSpellTexture", "id": 7386, "key": "k"},
-    {"name": "bloodthirst", "type": "GetSpellTexture", "id": 23881, "key": "f1", "modifier": "ctrl"},
-    {"name": "mortal strike", "type": "GetSpellTexture", "id": 12294, "key": "f1", "modifier": "ctrl"},
-    {"name": "rend", "type": "GetSpellTexture", "id": 772, "key": "r", "modifier": "shift"},
     {"name": "overpower", "type": "GetSpellTexture", "id": 7384, "key": "6"},
-    {"name": "revenge", "type": "GetSpellTexture", "id": 6572, "key": "f3", "modifier": "ctrl"},
     {"name": "execute", "type": "GetSpellTexture", "id": 5308, "key": "f"},
     {"name": "whirlwind", "type": "GetSpellTexture", "id": 1680, "key": "6"},
-    {"name": "sweeping strikes", "type": "GetSpellTexture", "id": 12328, "key": "r", "modifier": "alt"},
-    {"name": "victory rush", "type": "GetSpellTexture", "id": 34428, "key": "e", "modifier": "shift"},
-    {"name": "disarm", "type": "GetSpellTexture", "id": 676, "key": "e", "modifier": "shift"},
     {"name": "thunder clap", "type": "GetSpellTexture", "id": 6343, "key": "e"},
     {"name": "shield slam", "type": "GetSpellTexture", "id": 23922, "key": "4"},
-    {"name": "devastate", "type": "GetSpellTexture", "id": 20243, "key": "f2", "modifier": "ctrl"},
-    {"name": "vigilance", "type": "GetSpellTexture", "id": 50720, "key": "r", "modifier": "shift"},
     {"name": "concussion blow", "type": "GetSpellTexture", "id": 12809, "key": "8"},
     {"name": "hamstring", "type": "GetSpellTexture", "id": 1715, "key": "1"},
-    {"name": "slam", "type": "GetSpellTexture", "id": 47475, "key": "f2", "modifier": "ctrl"},
     {"name": "shattering throw", "type": "GetSpellTexture", "id": 64382, "key": "7"},
-    {"name": "death wish", "type": "GetSpellTexture", "id": 12292, "key": "r", "modifier": "alt"},
-    {"name": "recklessness", "type": "GetSpellTexture", "id": 1719, "key": "e", "modifier": "alt"},
-    {"name": "berserker rage", "type": "GetSpellTexture", "id": 18499, "key": "f4", "modifier": "ctrl"},
-    {"name": "enraged regeneration", "type": "GetSpellTexture", "id": 55694, "key": "f5", "modifier": "ctrl"},
 ]
-
 
 skills["warlock"] = [
     {"name": "immolate", "type": "GetSpellTexture", "id": 348, "key": "h"},
@@ -101,7 +100,6 @@ skills["warlock"] = [
     {"name": "curse of agony", "type": "GetSpellTexture", "id": 980, "key": "g"},
     {"name": "shadow bolt", "type": "GetSpellTexture", "id": 686, "key": "f11"}
 ]
-
 
 skills["hunter"] = [
     {"name": "concussive shot", "type": "GetSpellTexture", "id": 5116, "key": "1"},

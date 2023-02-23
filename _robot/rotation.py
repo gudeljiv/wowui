@@ -223,6 +223,11 @@ main_abilities = load_skills_main(wow_class)
 main_abilities = {**main_abilities, **healing, **global_skills}
 secondary_abilities = load_skills_secondary(wow_class)
 
+
+def whole_rotation():
+    print("asd")
+
+
 with keyboard.Listener(on_press=on_press) as listener:
 
     with mss.mss() as sct:
