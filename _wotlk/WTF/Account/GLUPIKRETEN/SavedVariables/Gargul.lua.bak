@@ -3,13 +3,13 @@ GargulDB = {
 	["BoostedRolls"] = {
 	},
 	["LoadDetails"] = {
-		["lastLoadedOn"] = 1677165121,
+		["lastLoadedOn"] = 1677182309,
 		["5.3.2"] = 1677011490,
 		["5.2.1"] = 1675921266,
 		["4.12.0"] = 1675856197,
 		["5.0.11"] = 1673028609,
 		["5.3.0"] = 1676121559,
-		["5.3.3"] = 1677165121,
+		["5.3.3"] = 1677182309,
 		["5.1.1"] = 1675856197,
 		["5.3.1"] = 1676314418,
 		["latestVersionChangesShown"] = "5.3.0",
@@ -140,13 +140,13 @@ GargulDB = {
 			["enableBidderQueue"] = true,
 			["enableGDKPBidderQueue"] = true,
 			["minimizeBidderQueue"] = false,
-			["Mutators"] = {
-			},
+			["closeAuctioneerOnStart"] = false,
 			["announceNewBidInRW"] = true,
 			["minimumBid"] = 100,
 			["showHistoryOnTooltip"] = true,
+			["Mutators"] = {
+			},
 			["enableGDKPQueuesByDefault"] = false,
-			["closeAuctioneerOnStart"] = false,
 			["customPotExportHeader"] = "Player,Cut",
 			["queueIsHalted"] = false,
 			["time"] = 30,
@@ -392,6 +392,298 @@ GargulDB = {
 	["LootPriority"] = {
 	},
 	["SoftRes"] = {
+		["SoftReserves"] = {
+			{
+				["Items"] = {
+					40399, -- [1]
+					40399, -- [2]
+					40206, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Habibielste",
+				["class"] = "priest",
+				["plusOnes"] = 0,
+			}, -- [1]
+			{
+				["Items"] = {
+					40256, -- [1]
+					40256, -- [2]
+					40256, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Ermarlon",
+				["class"] = "warrior",
+				["plusOnes"] = 0,
+			}, -- [2]
+			{
+				["Items"] = {
+					39712, -- [1]
+					40627, -- [2]
+					40639, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Deamonmage",
+				["class"] = "mage",
+				["plusOnes"] = 0,
+			}, -- [3]
+			{
+				["Items"] = {
+					40396, -- [1]
+					40255, -- [2]
+					40396, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Pepsilemon",
+				["class"] = "mage",
+				["plusOnes"] = 0,
+			}, -- [4]
+			{
+				["Items"] = {
+					40256, -- [1]
+					40256, -- [2]
+					40256, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Renoreines",
+				["class"] = "hunter",
+				["plusOnes"] = 0,
+			}, -- [5]
+			{
+				["Items"] = {
+					40396, -- [1]
+					40255, -- [2]
+					39766, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Asat",
+				["class"] = "warlock",
+				["plusOnes"] = 0,
+			}, -- [6]
+			{
+				["Items"] = {
+					40632, -- [1]
+					40384, -- [2]
+					40384, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Festool",
+				["class"] = "warrior",
+				["plusOnes"] = 0,
+			}, -- [7]
+			{
+				["Items"] = {
+					40399, -- [1]
+					40399, -- [2]
+					40637, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Zepos",
+				["class"] = "warlock",
+				["plusOnes"] = 0,
+			}, -- [8]
+			{
+				["Items"] = {
+					40384, -- [1]
+					40075, -- [2]
+					40384, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Volke",
+				["class"] = "paladin",
+				["plusOnes"] = 0,
+			}, -- [9]
+			{
+				["Items"] = {
+					40396, -- [1]
+					40401, -- [2]
+					40400, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Dorregarray",
+				["class"] = "paladin",
+				["plusOnes"] = 0,
+			}, -- [10]
+			{
+				["Items"] = {
+					40402, -- [1]
+					40256, -- [2]
+					40627, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Maxthedead",
+				["class"] = "death knight",
+				["plusOnes"] = 0,
+			}, -- [11]
+			{
+				["Items"] = {
+					40402, -- [1]
+					44577, -- [2]
+					40402, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Trickÿ",
+				["class"] = "death knight",
+				["plusOnes"] = 0,
+			}, -- [12]
+			{
+				["Items"] = {
+					40625, -- [1]
+					40080, -- [2]
+					40396, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Aflixia",
+				["class"] = "warlock",
+				["plusOnes"] = 0,
+			}, -- [13]
+			{
+				["Items"] = {
+					39766, -- [1]
+					40399, -- [2]
+					40399, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Drake",
+				["class"] = "warlock",
+				["plusOnes"] = 0,
+			}, -- [14]
+			{
+				["Items"] = {
+					39712, -- [1]
+					40399, -- [2]
+					40399, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Mozoo",
+				["class"] = "warlock",
+				["plusOnes"] = 0,
+			}, -- [15]
+			{
+				["Items"] = {
+					40399, -- [1]
+					40373, -- [2]
+					40251, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Táklehotol",
+				["class"] = "druid",
+				["plusOnes"] = 0,
+			}, -- [16]
+			{
+				["Items"] = {
+					40189, -- [1]
+					40345, -- [2]
+					40407, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Løkthar",
+				["class"] = "death knight",
+				["plusOnes"] = 0,
+			}, -- [17]
+			{
+				["Items"] = {
+					40273, -- [1]
+					40273, -- [2]
+					39766, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Speedhead",
+				["class"] = "mage",
+				["plusOnes"] = 0,
+			}, -- [18]
+			{
+				["Items"] = {
+					40384, -- [1]
+					40384, -- [2]
+					40625, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Retuwu",
+				["class"] = "paladin",
+				["plusOnes"] = 0,
+			}, -- [19]
+			{
+				["Items"] = {
+					40189, -- [1]
+					40383, -- [2]
+					39763, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Brä",
+				["class"] = "shaman",
+				["plusOnes"] = 0,
+			}, -- [20]
+			{
+				["Items"] = {
+					40399, -- [1]
+					40399, -- [2]
+					39766, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Musicofrain",
+				["class"] = "warlock",
+				["plusOnes"] = 0,
+			}, -- [21]
+			{
+				["Items"] = {
+					40251, -- [1]
+					40396, -- [2]
+					40395, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Naiinka",
+				["class"] = "paladin",
+				["plusOnes"] = 0,
+			}, -- [22]
+			{
+				["Items"] = {
+					40189, -- [1]
+					40638, -- [2]
+					40367, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Dáash",
+				["class"] = "shaman",
+				["plusOnes"] = 0,
+			}, -- [23]
+			{
+				["Items"] = {
+					40384, -- [1]
+					40403, -- [2]
+					40317, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Christoball",
+				["class"] = "warrior",
+				["plusOnes"] = 0,
+			}, -- [24]
+			{
+				["Items"] = {
+					40625, -- [1]
+					40637, -- [2]
+					40634, -- [3]
+				},
+				["note"] = "",
+				["name"] = "Uwubringer",
+				["class"] = "paladin",
+				["plusOnes"] = 0,
+			}, -- [25]
+		},
+		["HardReserves"] = {
+		},
+		["MetaData"] = {
+			["note"] = "",
+			["id"] = "jxomp7",
+			["hidden"] = false,
+			["updatedAt"] = 1677159369,
+			["createdAt"] = 1677143758,
+			["discordUrl"] = "",
+			["importString"] = "eNrNmM2O0zAQx9/F5xyapEna3nYpiANf2g8OoB6m9bQxcezKdmhh1YdZiYfgxqEvhqNF2kTKxg3eIo6Op84vo//8Z9w7UqIBCgbI7I4wSmbky16W24wEhAltQKzQPttJwwsB+32U2I2cUYqCzNbANQZkpRAM0gtDZmGaZeE4zpJJQKotbT1OpnE6DYgCRq8NKKPrHVFxHhDK9Eoqequ4fZd9gZCmfis5BETLtVGoUX1FTWaf74iSnF9KUdnVKCBbXun3Ah8WAsr6Z69hyZYMubaHWDoO2m6TrWKoTeNw+4EGy4dD6w8fj+LptLltiVDZgw9Bf0D4GBCN0o6A6LCoQ9zkL1UJikvRwN6BUkyqXu4oSfu5uwNCV8DJ3HOEUooSNs2E/1k+hR1PszDqx06jrB87jac+2B9wqxnHspVwB3YtAme2k37s7hNOxr5CIRWy+ukjdl4Jg/+5TC40mLa0uVwVZ022VVnqxfzKmoaUfGBFprFD2vFk7NBIZ8DJ2J9wK/XgXPvaXxpnPtAfJS9alg0cKBP90J15akCPsuSsmZ5LpXBjNQHfhqK7tD0ehf3o9ut80N/C3uRIEWiD3C5NXgi2yfubpS09TzfptveT6W8UWxXHX2dAHydZ5kp85GWEa872DAbWZxolDqlPRmdtPHMFrfp0Qz9lv0NMpTvgdJHL71IOhXZNJueGvjneFxxzaVqdh6qKUU8Lz2JXiw99wN8cfxYmB/UXVRlOXOzjxFWVXoZyvUWkedsNndNg1JnQpg32Z9x7QLlCU+2q5+6azvmk24xOpr5Uxx8NZp1DCcJTHhNnomMvI6k0W8m1vb+KfzxYeWvkHTAmChgokm4rGLnaScsFvUQyP96Dzp9ZJmk8cUCnXi7yIlfMXhmWwIdeGpxFaUMc6KEX+u2uWiomNqgGKsU5mXRfDFo3h6eG8EVAbD+hjf+AFoff4eqWnQ==",
+			["raidStartsAt"] = 0,
+			["url"] = "https://softres.it/raid/jxomp7",
+			["instance"] = "wotlknaxx25",
+			["importedAt"] = 1677167124,
+		},
 	},
 	["AwardHistory"] = {
 		["40049783484065590994"] = {
@@ -526,8 +818,6 @@ GargulDB = {
 		},
 		["26118124561261959201"] = {
 			["checksum"] = "26118124561261959201",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -577,8 +867,6 @@ GargulDB = {
 		},
 		["85114629812619592010"] = {
 			["checksum"] = "85114629812619592010",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -611,8 +899,6 @@ GargulDB = {
 		},
 		["27855785751261959201"] = {
 			["checksum"] = "27855785751261959201",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -653,8 +939,6 @@ GargulDB = {
 		},
 		["30436889231261959201"] = {
 			["checksum"] = "30436889231261959201",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -764,8 +1048,6 @@ GargulDB = {
 		},
 		["20842280086539737010"] = {
 			["checksum"] = "20842280086539737010",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -815,8 +1097,6 @@ GargulDB = {
 		},
 		["16529790813921731370"] = {
 			["checksum"] = "16529790813921731370",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -915,8 +1195,6 @@ GargulDB = {
 		},
 		["19221295524336503210"] = {
 			["checksum"] = "19221295524336503210",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -996,8 +1274,6 @@ GargulDB = {
 		},
 		["11313793903921731370"] = {
 			["checksum"] = "11313793903921731370",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1109,8 +1385,6 @@ GargulDB = {
 		},
 		["34259889683093262601"] = {
 			["checksum"] = "34259889683093262601",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1160,8 +1434,6 @@ GargulDB = {
 		},
 		["40695166771621447697"] = {
 			["checksum"] = "40695166771621447697",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1224,8 +1496,6 @@ GargulDB = {
 		},
 		["31681056603921731370"] = {
 			["checksum"] = "31681056603921731370",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1241,8 +1511,6 @@ GargulDB = {
 		},
 		["28395529703921731370"] = {
 			["checksum"] = "28395529703921731370",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1388,8 +1656,6 @@ GargulDB = {
 		},
 		["42316741669177343490"] = {
 			["checksum"] = "42316741669177343490",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1422,8 +1688,6 @@ GargulDB = {
 		},
 		["37007265288317126900"] = {
 			["checksum"] = "37007265288317126900",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1505,8 +1769,6 @@ GargulDB = {
 		},
 		["37306058071188995828"] = {
 			["checksum"] = "37306058071188995828",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1571,8 +1833,6 @@ GargulDB = {
 		},
 		["29130859351261959201"] = {
 			["checksum"] = "29130859351261959201",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1671,8 +1931,6 @@ GargulDB = {
 		},
 		["30388856391261959201"] = {
 			["checksum"] = "30388856391261959201",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1935,8 +2193,6 @@ GargulDB = {
 		},
 		["19351363206539737010"] = {
 			["checksum"] = "19351363206539737010",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2033,8 +2289,8 @@ GargulDB = {
 			["itemLink"] = "|cffa335ee|Hitem:39758::::::::80:::::::::|h[The Jawbone]|h|r",
 			["awardedBy"] = "Recobe",
 		},
-		["46381596938258609500"] = {
-			["checksum"] = "46381596938258609500",
+		["19817342823825860950"] = {
+			["checksum"] = "19817342823825860950",
 			["Rolls"] = {
 			},
 			["OS"] = false,
@@ -2043,11 +2299,11 @@ GargulDB = {
 			["SR"] = false,
 			["awardedTo"] = "Nzrth",
 			["received"] = true,
-			["itemID"] = 40329,
-			["GDKPCost"] = 1000,
+			["itemID"] = 34057,
+			["GDKPCost"] = 2000,
 			["PL"] = false,
-			["timestamp"] = 1676631583,
-			["itemLink"] = "|cffa335ee|Hitem:40329::::::::80:::::::::|h[Hood of the Exodus]|h|r",
+			["timestamp"] = 1676640162,
+			["itemLink"] = "|cffa335ee|Hitem:34057::::::::80:::::::::|h[Abyss Crystal]|h|r",
 			["awardedBy"] = "Happens",
 		},
 		["20581979278445880070"] = {
@@ -2118,8 +2374,6 @@ GargulDB = {
 		},
 		["41384671016539737010"] = {
 			["checksum"] = "41384671016539737010",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2203,8 +2457,6 @@ GargulDB = {
 		},
 		["21660028851188995828"] = {
 			["checksum"] = "21660028851188995828",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2237,8 +2489,6 @@ GargulDB = {
 		},
 		["15205076463741240864"] = {
 			["checksum"] = "15205076463741240864",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2335,8 +2585,6 @@ GargulDB = {
 		},
 		["14416028233921731370"] = {
 			["checksum"] = "14416028233921731370",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2350,20 +2598,22 @@ GargulDB = {
 			["GDKPCost"] = 300,
 			["received"] = true,
 		},
-		["40162234837412408640"] = {
-			["checksum"] = "40162234837412408640",
+		["40015677482417842873"] = {
+			["checksum"] = "40015677482417842873",
+			["Rolls"] = {
+			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
 			["SR"] = false,
-			["awardedTo"] = "Hunteroid",
-			["awardedBy"] = "Gemoo",
-			["itemID"] = 39701,
-			["itemLink"] = "|cffa335ee|Hitem:39701::::::::80:::::::::|h[Dawnwalkers]|h|r",
-			["timestamp"] = 1675953981,
-			["PL"] = false,
-			["GDKPCost"] = 300,
+			["awardedTo"] = "Bgr",
 			["received"] = true,
+			["itemID"] = 40265,
+			["GDKPCost"] = 300,
+			["PL"] = false,
+			["timestamp"] = 1676632410,
+			["itemLink"] = "|cffa335ee|Hitem:40265::::::::80:::::::::|h[Arrowsong]|h|r",
+			["awardedBy"] = "Happens",
 		},
 		["39002058402594697400"] = {
 			["checksum"] = "39002058402594697400",
@@ -2380,19 +2630,19 @@ GargulDB = {
 			["itemLink"] = "|cffa335ee|Hitem:40192::::::::80:::::::::|h[Accursed Spine]|h|r",
 			["awardedBy"] = "Recobe",
 		},
-		["46627862733812029670"] = {
-			["checksum"] = "46627862733812029670",
+		["16230530353768674440"] = {
+			["checksum"] = "16230530353768674440",
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
 			["SR"] = false,
-			["awardedTo"] = "Yesnix",
+			["awardedTo"] = "Warhak",
 			["received"] = true,
-			["itemID"] = 40401,
-			["GDKPCost"] = 2000,
+			["itemID"] = 40384,
+			["GDKPCost"] = 9000,
 			["PL"] = false,
-			["timestamp"] = 1675860392,
-			["itemLink"] = "|cffa335ee|Hitem:40401::::::::80:::::::::|h[Voice of Reason]|h|r",
+			["timestamp"] = 1675860441,
+			["itemLink"] = "|cffa335ee|Hitem:40384::::::::80:::::::::|h[Betrayer of Humanity]|h|r",
 			["awardedBy"] = "Recobe",
 		},
 		["29489672021090219783"] = {
@@ -2442,36 +2692,34 @@ GargulDB = {
 			["itemLink"] = "|cffa335ee|Hitem:40107::::::::80:::::::::|h[Sand-Worn Band]|h|r",
 			["awardedBy"] = "Happens",
 		},
-		["40015677482417842873"] = {
-			["checksum"] = "40015677482417842873",
-			["Rolls"] = {
-			},
+		["54890777039217313700"] = {
+			["checksum"] = "54890777039217313700",
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
 			["SR"] = false,
-			["awardedTo"] = "Bgr",
-			["received"] = true,
-			["itemID"] = 40265,
-			["GDKPCost"] = 300,
+			["awardedTo"] = "Thesaurus",
+			["awardedBy"] = "Gemoo",
+			["itemID"] = 40336,
+			["itemLink"] = "|cffa335ee|Hitem:40336::::::::80:::::::::|h[Life and Death]|h|r",
+			["timestamp"] = 1675955857,
 			["PL"] = false,
-			["timestamp"] = 1676632410,
-			["itemLink"] = "|cffa335ee|Hitem:40265::::::::80:::::::::|h[Arrowsong]|h|r",
-			["awardedBy"] = "Happens",
+			["GDKPCost"] = 350,
+			["received"] = true,
 		},
-		["16230530353768674440"] = {
-			["checksum"] = "16230530353768674440",
+		["46627862733812029670"] = {
+			["checksum"] = "46627862733812029670",
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
 			["SR"] = false,
-			["awardedTo"] = "Warhak",
+			["awardedTo"] = "Yesnix",
 			["received"] = true,
-			["itemID"] = 40384,
-			["GDKPCost"] = 9000,
+			["itemID"] = 40401,
+			["GDKPCost"] = 2000,
 			["PL"] = false,
-			["timestamp"] = 1675860441,
-			["itemLink"] = "|cffa335ee|Hitem:40384::::::::80:::::::::|h[Betrayer of Humanity]|h|r",
+			["timestamp"] = 1675860392,
+			["itemLink"] = "|cffa335ee|Hitem:40401::::::::80:::::::::|h[Voice of Reason]|h|r",
 			["awardedBy"] = "Recobe",
 		},
 		["46686518516546941170"] = {
@@ -2489,19 +2737,21 @@ GargulDB = {
 			["itemLink"] = "|cffa335ee|Hitem:40632::::::::80:::::::::|h[Crown of the Lost Protector]|h|r",
 			["awardedBy"] = "Recobe",
 		},
-		["13367043640690774790"] = {
-			["checksum"] = "13367043640690774790",
+		["79997600021727208210"] = {
+			["checksum"] = "79997600021727208210",
+			["Rolls"] = {
+			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
 			["SR"] = false,
-			["awardedTo"] = "Snøwbâll",
-			["awardedBy"] = "Gemoo",
-			["itemID"] = 40255,
-			["itemLink"] = "|cffa335ee|Hitem:40255::::::::80:::::::::|h[Dying Curse]|h|r",
-			["timestamp"] = 1675955337,
+			["awardedTo"] = "Chenster",
+			["awardedBy"] = "Maximizer",
+			["itemID"] = 40250,
+			["itemLink"] = "|cffa335ee|Hitem:40250::::::::80:::::::::|h[Aged Winter Cloak]|h|r",
+			["timestamp"] = 1677150565,
 			["PL"] = false,
-			["GDKPCost"] = 11500,
+			["GDKPCost"] = 200,
 			["received"] = true,
 		},
 		["39723484606539737010"] = {
@@ -2538,8 +2788,6 @@ GargulDB = {
 		},
 		["16874727322883171269"] = {
 			["checksum"] = "16874727322883171269",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2572,8 +2820,6 @@ GargulDB = {
 		},
 		["92981109043365032100"] = {
 			["checksum"] = "92981109043365032100",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2589,8 +2835,6 @@ GargulDB = {
 		},
 		["34453565166539737010"] = {
 			["checksum"] = "34453565166539737010",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2623,8 +2867,6 @@ GargulDB = {
 		},
 		["12641838253093262601"] = {
 			["checksum"] = "12641838253093262601",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2672,8 +2914,6 @@ GargulDB = {
 		},
 		["68366447121053665530"] = {
 			["checksum"] = "68366447121053665530",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2706,8 +2946,6 @@ GargulDB = {
 		},
 		["28000548022884811236"] = {
 			["checksum"] = "28000548022884811236",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2804,8 +3042,6 @@ GargulDB = {
 		},
 		["40828531321261959201"] = {
 			["checksum"] = "40828531321261959201",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2870,38 +3106,34 @@ GargulDB = {
 			["GDKPCost"] = 200,
 			["received"] = true,
 		},
-		["79997600021727208210"] = {
-			["checksum"] = "79997600021727208210",
-			["Rolls"] = {
-			},
+		["13367043640690774790"] = {
+			["checksum"] = "13367043640690774790",
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
 			["SR"] = false,
-			["awardedTo"] = "Chenster",
-			["awardedBy"] = "Maximizer",
-			["itemID"] = 40250,
-			["itemLink"] = "|cffa335ee|Hitem:40250::::::::80:::::::::|h[Aged Winter Cloak]|h|r",
-			["timestamp"] = 1677150565,
+			["awardedTo"] = "Snøwbâll",
+			["awardedBy"] = "Gemoo",
+			["itemID"] = 40255,
+			["itemLink"] = "|cffa335ee|Hitem:40255::::::::80:::::::::|h[Dying Curse]|h|r",
+			["timestamp"] = 1675955337,
 			["PL"] = false,
-			["GDKPCost"] = 200,
+			["GDKPCost"] = 11500,
 			["received"] = true,
 		},
-		["54890777039217313700"] = {
-			["checksum"] = "54890777039217313700",
-			["Rolls"] = {
-			},
+		["40162234837412408640"] = {
+			["checksum"] = "40162234837412408640",
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
 			["SR"] = false,
-			["awardedTo"] = "Thesaurus",
+			["awardedTo"] = "Hunteroid",
 			["awardedBy"] = "Gemoo",
-			["itemID"] = 40336,
-			["itemLink"] = "|cffa335ee|Hitem:40336::::::::80:::::::::|h[Life and Death]|h|r",
-			["timestamp"] = 1675955857,
+			["itemID"] = 39701,
+			["itemLink"] = "|cffa335ee|Hitem:39701::::::::80:::::::::|h[Dawnwalkers]|h|r",
+			["timestamp"] = 1675953981,
 			["PL"] = false,
-			["GDKPCost"] = 350,
+			["GDKPCost"] = 300,
 			["received"] = true,
 		},
 		["39248927613239985141"] = {
@@ -2923,8 +3155,6 @@ GargulDB = {
 		},
 		["15612531111621447697"] = {
 			["checksum"] = "15612531111621447697",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2974,8 +3204,6 @@ GargulDB = {
 		},
 		["90679216237412408640"] = {
 			["checksum"] = "90679216237412408640",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3091,8 +3319,6 @@ GargulDB = {
 		},
 		["19381439534069077479"] = {
 			["checksum"] = "19381439534069077479",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3106,8 +3332,8 @@ GargulDB = {
 			["GDKPCost"] = 2500,
 			["received"] = true,
 		},
-		["19817342823825860950"] = {
-			["checksum"] = "19817342823825860950",
+		["46381596938258609500"] = {
+			["checksum"] = "46381596938258609500",
 			["Rolls"] = {
 			},
 			["OS"] = false,
@@ -3116,17 +3342,15 @@ GargulDB = {
 			["SR"] = false,
 			["awardedTo"] = "Nzrth",
 			["received"] = true,
-			["itemID"] = 34057,
-			["GDKPCost"] = 2000,
+			["itemID"] = 40329,
+			["GDKPCost"] = 1000,
 			["PL"] = false,
-			["timestamp"] = 1676640162,
-			["itemLink"] = "|cffa335ee|Hitem:34057::::::::80:::::::::|h[Abyss Crystal]|h|r",
+			["timestamp"] = 1676631583,
+			["itemLink"] = "|cffa335ee|Hitem:40329::::::::80:::::::::|h[Hood of the Exodus]|h|r",
 			["awardedBy"] = "Happens",
 		},
 		["13094116882105366553"] = {
 			["checksum"] = "13094116882105366553",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3210,8 +3434,6 @@ GargulDB = {
 		},
 		["97992305043365032100"] = {
 			["checksum"] = "97992305043365032100",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3230,7 +3452,7 @@ GargulDB = {
 		["Totals"] = {
 		},
 		["MetaData"] = {
-			["updatedAt"] = 1676806463,
+			["updatedAt"] = 1677167124,
 		},
 	},
 	["MinimapButton"] = {

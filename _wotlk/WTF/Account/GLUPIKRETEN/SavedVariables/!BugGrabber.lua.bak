@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 9351,
+	["session"] = 9353,
 	["errors"] = {
 		{
 			["message"] = "Lua error in aura 'Swing Timer [MH]': init\nWeakAuras Version: 4.1.2\nAura Version: 1.0.0\n[string \"return function() aura_env.speed = UnitRang...\"]:2: attempt to perform arithmetic on field 'lastRangedSwing' (a nil value)",
@@ -7719,8 +7719,8 @@ BugGrabberDB = {
 			["time"] = "2023/02/21 10:44:06",
 			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n",
 			["stack"] = "[string \"=[C]\"]: in function `CastSpellByName'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:1004: in function <Interface/FrameXML/ChatFrame.lua:932>\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:1243: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4918: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4601: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2982: in function <Interface/FrameXML/ChatFrame.lua:2975>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"@Interface/FrameXML/MultiActionBars.lua\"]:14: in function <Interface/FrameXML/MultiActionBars.lua:8>\n[string \"=[C]\"]: in function `MultiActionButtonDown'\n[string \"MULTIACTIONBAR4BUTTON10\"]:2: in function <[string \"MULTIACTIONBAR4BUTTON10\"]:1>",
-			["session"] = 9348,
-			["counter"] = 70,
+			["session"] = 9352,
+			["counter"] = 71,
 		}, -- [1000]
 	},
 }

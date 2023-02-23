@@ -48,7 +48,7 @@ PallyPowerDB = {
 	},
 }
 PallyPower_Assignments = {
-	["Gamzy"] = {
+	["Vermina"] = {
 		0, -- [1]
 		0, -- [2]
 		0, -- [3]
@@ -59,6 +59,7 @@ PallyPower_Assignments = {
 		0, -- [8]
 		0, -- [9]
 		0, -- [10]
+		2, -- [11]
 	},
 	["Mileram"] = {
 		0, -- [1]
@@ -72,7 +73,7 @@ PallyPower_Assignments = {
 		0, -- [9]
 		0, -- [10]
 	},
-	["Vermina"] = {
+	["Gamzy"] = {
 		0, -- [1]
 		0, -- [2]
 		0, -- [3]
@@ -83,7 +84,6 @@ PallyPower_Assignments = {
 		0, -- [8]
 		0, -- [9]
 		0, -- [10]
-		2, -- [11]
 	},
 	["Rinnerebirt"] = {
 		0, -- [1]
@@ -178,8 +178,8 @@ PallyPower_AuraAssignments = {
 	["Konseus"] = 0,
 	["Palidah"] = 0,
 	["Iteasy"] = 0,
-	["Vyjebanahoe"] = 0,
 	["Cloë"] = 0,
+	["Vyjebanahoe"] = 0,
 	["Bublïnka"] = 0,
 	["Ipalyulol"] = 1,
 	["Recobe"] = 0,
@@ -188,9 +188,9 @@ PallyPower_AuraAssignments = {
 	["Krigeroca"] = 0,
 	["Veebz"] = 0,
 	["Izule"] = 0,
-	["Hugerocket"] = 0,
-	["Sertrolin"] = 0,
 	["Athonian"] = 0,
+	["Sertrolin"] = 0,
+	["Hugerocket"] = 0,
 	["Xilaz"] = 0,
 	["Deathnoot"] = 0,
 	["Brrazers"] = 0,
@@ -211,10 +211,10 @@ PallyPower_AuraAssignments = {
 	["Filifjonkman"] = 0,
 	["Supachad"] = 0,
 	["Trylledame"] = 0,
-	["Veribig"] = 0,
 	["Realpala"] = 0,
+	["Veribig"] = 0,
 	["Mouritius"] = 0,
-	["Zivvy"] = 0,
+	["Vernitka"] = 0,
 	["Billyblaze"] = 0,
 	["Wscqc"] = 0,
 	["Hjørdís"] = 0,
@@ -229,9 +229,9 @@ PallyPower_AuraAssignments = {
 	["Turanian"] = 0,
 	["Phonkdrifter"] = 0,
 	["Atlima"] = 0,
-	["Friescpt"] = 0,
-	["Aarvin"] = 0,
 	["Lallin"] = 0,
+	["Aarvin"] = 0,
+	["Friescpt"] = 0,
 	["Nimhitch"] = 0,
 	["Holytimes"] = 0,
 	["Phkp"] = 0,
@@ -255,13 +255,13 @@ PallyPower_AuraAssignments = {
 	["Yebat"] = 0,
 	["Trenhard"] = 0,
 	["Phuncky"] = 0,
-	["Conquést"] = 0,
+	["Pazton"] = 0,
 	["Moghulol"] = 0,
-	["Twitterstorm"] = 0,
+	["Lizpally"] = 0,
 	["Yesnix"] = 0,
 	["Xoptimalz"] = 0,
-	["Lizpally"] = 0,
-	["Pazton"] = 0,
+	["Twitterstorm"] = 0,
+	["Conquést"] = 0,
 	["Glumsi"] = 0,
 	["Ewulcek"] = 0,
 	["Tisca"] = 0,
@@ -277,7 +277,7 @@ PallyPower_AuraAssignments = {
 	["Jejla"] = 0,
 	["Althan"] = 0,
 	["Immórtál"] = 0,
-	["Vernitka"] = 0,
+	["Zivvy"] = 0,
 	["Digg"] = 0,
 	["Monikå"] = 0,
 	["Badpaladinn"] = 0,

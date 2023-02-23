@@ -172,7 +172,7 @@ def load_skills_secondary(wow_class):
     return secondary_abilities
 
 
-def main_rotation():
+def main_rotation(main_skill):
     try:
         for skill in skills[wow_class] + skills["healing"] + skills["globals"]:
             for ability in main_abilities:
@@ -193,7 +193,7 @@ def main_rotation():
         print("error skill loop", datetime.now().strftime("%H:%M:%S"))
 
 
-def secondary_rotation():
+def secondary_rotation(secondary_skill):
     try:
         if skills["offgcd"] and skills["offgcd"][wow_class]:
             for skill in skills["offgcd"][wow_class]:
@@ -300,5 +300,5 @@ with keyboard.Listener(on_press=on_press) as listener:
                 secondary_skill = numpy.array(offgcd_image)[:, :, :3]
 
     # rotation
-                _thread.start_new_thread(main_rotation, ())
-                _thread.start_new_thread(secondary_rotation, ())
+                _thread.start_new_thread(main_rotation, (main_skill,))
+                _thread.start_new_thread(secondary_rotation, (secondary_skill,))
