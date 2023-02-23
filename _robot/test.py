@@ -13,7 +13,7 @@ import mss.tools
 import numpy
 import math
 
-if(os.name == "posix"):
+if (os.name == "posix"):
     from AppKit import NSScreen
     from AppKit import NSWorkspace
 else:
@@ -70,18 +70,6 @@ def on_press(key):
         print("debug:", debug)
 
 
-image1 = cv2.imread(abilities_folder + "/judgement of light M.png")
-image2 = cv2.imread(abilities_folder + "/judgement of light M.png")
-image3 = cv2.cvtColor(cv2.imread(abilities_folder + "/judgement of light M.png"), cv2.COLOR_BGR2GRAY)
-image4 = cv2.cvtColor(cv2.imread(abilities_folder + "/judgement of light M.png"), cv2.COLOR_BGR2GRAY)
-
-print(image1.shape, image2.shape, image3.shape, image4.shape)
-
-
-score = structural_similarity(image1, image2, channel_axis=2)
-print(score)
-
-
 with keyboard.Listener(on_press=on_press) as listener:
 
     with mss.mss() as sct:
@@ -89,36 +77,4 @@ with keyboard.Listener(on_press=on_press) as listener:
         while True:
             start_time = time.time()
 
-            if debug:
-                p_main = {"top": 2, "left": 2, "width": x, "height": y}
-                p_offgcd = {"top": 2, "left":  p_offgcd_left, "width": x, "height": y}
-                p_combat = {"top": 0, "left": p_combat_left, "width": c_width, "height": c_height}
-                p_interrupt = {"top": 0, "left": p_interrupt_left, "width": c_width, "height": c_height}
-                p_behind = {"top": 0, "left": p_behind_left, "width": c_width, "height": c_height}
-                p_clss = {"top": 0, "left": p_clss_left, "width": c_width, "height": c_height}
-
-                grabbed_image = dir_path + "/images/_/1. main.png".format(**p_main)
-                main_image = sct.grab(p_main)
-                mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
-
-                q_image = dir_path + "/images/_/6. offgcd.png".format(**p_offgcd)
-                offgcd_image = sct.grab(p_offgcd)
-                mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=q_image)
-
-                combat_image = sct.grab(p_combat)
-                combat = combat_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
-                mss.tools.to_png(combat_image.rgb, combat_image.size, output="_robot/images/_/2. combat.png".format(**p_combat))
-
-                interrupt_image = sct.grab(p_interrupt)
-                interrupt = interrupt_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
-                mss.tools.to_png(interrupt_image.rgb, interrupt_image.size, output="_robot/images/_/3. interrupt.png".format(**p_interrupt))
-
-                behind_image = sct.grab(p_behind)
-                behind = behind_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
-                mss.tools.to_png(behind_image.rgb, behind_image.size, output="_robot/images/_/4. behind.png".format(**p_behind))
-
-                clss_image = sct.grab(p_clss)
-                clss = clss_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
-                mss.tools.to_png(clss_image.rgb, clss_image.size, output="_robot/images/_/5. clss.png".format(**p_clss))
-
-                hex = '#%02x%02x%02x' % clss
+            pyautogui.hotkey("h")

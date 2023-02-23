@@ -35,12 +35,12 @@ skills["offgcd"]["druid"] = [
 ]
 
 skills["offgcd"]["death knight"] = [
-    {"name": "rune strike", "type": "GetSpellTexture", "id": 56815, "key": "f3", "modifier": "ctrl"},
+    {"name": "rune strike", "type": "GetSpellTexture", "id": 56815, "key": "k"},
     {"name": "rune tap", "type": "GetSpellTexture", "id": 48982, "key": "h"},
-    {"name": "blood tap", "type": "GetSpellTexture", "id": 45529, "key": "f4", "modifier": "ctrl"},
+    {"name": "blood tap", "type": "GetSpellTexture", "id": 45529, "key": "0"},
     {"name": "anti-magic shell", "type": "GetSpellTexture", "id": 48707, "key": "g"},
     {"name": "battlemaster's resolve", "type": "GetItemIcon", "id": 41589, "key": "1", "modifier": "alt"},
-    {"name": "empower rune weapon", "type": "GetSpellTexture", "id": 47568, "key": "e", "modifier": "shift"},
+    {"name": "empower rune weapon", "type": "GetSpellTexture", "id": 47568, "key": "8"},
     {"name": "vampiric blood", "type": "GetSpellTexture", "id": 55233, "key": "6"},
     {"name": "icebound fortitude", "type": "GetSpellTexture", "id": 48792, "key": "t"},
 ]
@@ -160,8 +160,8 @@ skills["death knight"] = [
     {"name": "horn of winter", "type": "GetSpellTexture", "id": 57330, "key": "f5"},
     {"name": "pestilence", "type": "GetSpellTexture", "id": 50842, "key": "3"},
     {"name": "death and decay", "type": "GetSpellTexture", "id": 49936, "key": "r", "modifier": "alt"},
-    {"name": "howling blast", "type": "GetSpellTexture", "id": 51410, "key": "f1", "modifier": "ctrl"},
-    {"name": "obliterate", "type": "GetSpellTexture", "id": 51424, "key": "t", "modifier": "shift"},
+    {"name": "howling blast", "type": "GetSpellTexture", "id": 51410, "key": "9"},
+    {"name": "obliterate", "type": "GetSpellTexture", "id": 51424, "key": "5"},
     {"name": "frost strike", "type": "GetSpellTexture", "id": 51419, "key": "6"},
     {"name": "unbreakable armor", "type": "GetSpellTexture", "id": 51271, "key": "h"},
     {"name": "blood strike", "type": "GetSpellTexture", "id": 49929, "key": "f5", "modifier": "ctrl"},
