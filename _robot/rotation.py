@@ -224,8 +224,9 @@ main_abilities = {**main_abilities, **healing, **global_skills}
 secondary_abilities = load_skills_secondary(wow_class)
 
 
-def whole_rotation():
-    print("asd")
+def whole_rotation(main_skill, secondary_skill):
+    main_rotation(main_skill)
+    secondary_rotation(secondary_skill)
 
 
 with keyboard.Listener(on_press=on_press) as listener:
@@ -300,5 +301,6 @@ with keyboard.Listener(on_press=on_press) as listener:
                 secondary_skill = numpy.array(offgcd_image)[:, :, :3]
 
     # rotation
-                _thread.start_new_thread(main_rotation, (main_skill,))
-                _thread.start_new_thread(secondary_rotation, (secondary_skill,))
+                # _thread.start_new_thread(main_rotation, (main_skill,))
+                # _thread.start_new_thread(secondary_rotation, (secondary_skill,))
+                _thread.start_new_thread(whole_rotation, (main_skill, secondary_skill,))

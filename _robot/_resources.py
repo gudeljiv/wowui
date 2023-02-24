@@ -80,7 +80,7 @@ skills["warrior"] = [
     {"name": "sweeping strikes", "type": "GetSpellTexture", "id": 12328, "key": "r", "modifier": "alt"},
     {"name": "death wish", "type": "GetSpellTexture", "id": 12292, "key": "r", "modifier": "alt"},
     {"name": "recklessness", "type": "GetSpellTexture", "id": 1719, "key": "e", "modifier": "alt"},
-    {"name": "battle shout", "type": "GetSpellTexture", "id": 2048, "key": "f4"},
+    {"name": "battle shout", "type": "GetSpellTexture", "id": 2048, "key": "f10"},
     {"name": "commanding shout", "type": "GetSpellTexture", "id": 469, "key": "f6"},
     {"name": "demoralizing shout", "type": "GetSpellTexture", "id": 1160, "key": "f5"},
     {"name": "sunder armor", "type": "GetSpellTexture", "id": 7386, "key": "k"},

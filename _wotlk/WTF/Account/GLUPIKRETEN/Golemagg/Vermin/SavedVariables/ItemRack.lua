@@ -3,6 +3,7 @@ ItemRackUser = {
 	["ButtonSpacing"] = 1,
 	["QueuesEnabled"] = {
 		[13] = false,
+		[14] = false,
 	},
 	["Locked"] = "OFF",
 	["MainScale"] = 1.002605676651001,

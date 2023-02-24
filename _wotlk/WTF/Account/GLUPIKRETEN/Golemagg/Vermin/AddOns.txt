@@ -205,3 +205,4 @@ WowSimsExporter: enabled
 GDKPd: enabled
 TacoTip: enabled
 GlobalIgnoreList: enabled
+AddOnSkins: disabled
