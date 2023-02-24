@@ -172,7 +172,7 @@ def load_skills_secondary(wow_class):
     return secondary_abilities
 
 
-def main_rotation(main_skill):
+def main_rotation(main_skill, main_abilities):
     try:
         for skill in skills[wow_class] + skills["healing"] + skills["globals"]:
             for ability in main_abilities:
@@ -193,7 +193,7 @@ def main_rotation(main_skill):
         print("error skill loop", datetime.now().strftime("%H:%M:%S"))
 
 
-def secondary_rotation(secondary_skill):
+def secondary_rotation(secondary_skill, secondary_abilities):
     try:
         if skills["offgcd"] and skills["offgcd"][wow_class]:
             for skill in skills["offgcd"][wow_class]:
@@ -224,9 +224,9 @@ main_abilities = {**main_abilities, **healing, **global_skills}
 secondary_abilities = load_skills_secondary(wow_class)
 
 
-def whole_rotation(main_skill, secondary_skill):
-    main_rotation(main_skill)
-    secondary_rotation(secondary_skill)
+def whole_rotation(main_skill, secondary_skill, main_abilities, secondary_abilities):
+    main_rotation(main_skill, main_abilities)
+    secondary_rotation(secondary_skill, secondary_abilities)
 
 
 with keyboard.Listener(on_press=on_press) as listener:
@@ -303,4 +303,4 @@ with keyboard.Listener(on_press=on_press) as listener:
     # rotation
                 # _thread.start_new_thread(main_rotation, (main_skill,))
                 # _thread.start_new_thread(secondary_rotation, (secondary_skill,))
-                _thread.start_new_thread(whole_rotation, (main_skill, secondary_skill,))
+                _thread.start_new_thread(whole_rotation, (main_skill, secondary_skill, main_abilities, secondary_abilities))
