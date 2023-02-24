@@ -1,13 +1,3 @@
-VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast Death Strike
-/cast Rune Strike
-END
-VER 3 0000000001000009 " " "134400"
-#showtooltip
-/cast [@focus,exists][]Mind Freeze
-END
 VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,exists][]Dark Command
@@ -34,4 +24,14 @@ END
 VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Death Pact
 /cast [nopet]Raise Dead;Death Pact
+END
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Death Strike
+/cast Rune Strike
+END
+VER 3 0000000001000009 " " "134400"
+#showtooltip
+/cast [@focus,exists][]Mind Freeze
 END
