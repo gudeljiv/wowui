@@ -3,13 +3,13 @@ GargulDB = {
 	["BoostedRolls"] = {
 	},
 	["LoadDetails"] = {
-		["lastLoadedOn"] = 1677167055,
+		["lastLoadedOn"] = 1677255377,
 		["5.3.2"] = 1677011490,
 		["5.2.1"] = 1675921266,
 		["4.12.0"] = 1675856197,
 		["5.0.11"] = 1673028609,
 		["5.3.0"] = 1676121559,
-		["5.3.3"] = 1677167055,
+		["5.3.3"] = 1677255377,
 		["5.1.1"] = 1675856197,
 		["5.2.0"] = 1675856197,
 		["latestVersionChangesShown"] = "5.3.0",
@@ -392,326 +392,9 @@ GargulDB = {
 		},
 	},
 	["SoftRes"] = {
-		["SoftReserves"] = {
-			{
-				["Items"] = {
-					40399, -- [1]
-					40399, -- [2]
-					40206, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Habibielste",
-				["class"] = "priest",
-				["plusOnes"] = 0,
-			}, -- [1]
-			{
-				["Items"] = {
-					40256, -- [1]
-					40256, -- [2]
-					40256, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Ermarlon",
-				["class"] = "warrior",
-				["plusOnes"] = 0,
-			}, -- [2]
-			{
-				["Items"] = {
-					39712, -- [1]
-					40627, -- [2]
-					40639, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Deamonmage",
-				["class"] = "mage",
-				["plusOnes"] = 0,
-			}, -- [3]
-			{
-				["Items"] = {
-					40396, -- [1]
-					40255, -- [2]
-					40396, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Pepsilemon",
-				["class"] = "mage",
-				["plusOnes"] = 0,
-			}, -- [4]
-			{
-				["Items"] = {
-					40256, -- [1]
-					40256, -- [2]
-					40256, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Renoreines",
-				["class"] = "hunter",
-				["plusOnes"] = 0,
-			}, -- [5]
-			{
-				["Items"] = {
-					40396, -- [1]
-					40255, -- [2]
-					39766, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Asat",
-				["class"] = "warlock",
-				["plusOnes"] = 0,
-			}, -- [6]
-			{
-				["Items"] = {
-					40632, -- [1]
-					40384, -- [2]
-					40384, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Festool",
-				["class"] = "warrior",
-				["plusOnes"] = 0,
-			}, -- [7]
-			{
-				["Items"] = {
-					40399, -- [1]
-					40399, -- [2]
-					40637, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Zepos",
-				["class"] = "warlock",
-				["plusOnes"] = 0,
-			}, -- [8]
-			{
-				["Items"] = {
-					40384, -- [1]
-					40075, -- [2]
-					40384, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Volke",
-				["class"] = "paladin",
-				["plusOnes"] = 0,
-			}, -- [9]
-			{
-				["Items"] = {
-					40396, -- [1]
-					40401, -- [2]
-					40400, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Dorregarray",
-				["class"] = "paladin",
-				["plusOnes"] = 0,
-			}, -- [10]
-			{
-				["Items"] = {
-					40402, -- [1]
-					40256, -- [2]
-					40627, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Maxthedead",
-				["class"] = "death knight",
-				["plusOnes"] = 0,
-			}, -- [11]
-			{
-				["Items"] = {
-					40402, -- [1]
-					44577, -- [2]
-					40402, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Trickÿ",
-				["class"] = "death knight",
-				["plusOnes"] = 0,
-			}, -- [12]
-			{
-				["Items"] = {
-					40625, -- [1]
-					40080, -- [2]
-					40396, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Aflixia",
-				["class"] = "warlock",
-				["plusOnes"] = 0,
-			}, -- [13]
-			{
-				["Items"] = {
-					39766, -- [1]
-					40399, -- [2]
-					40399, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Drake",
-				["class"] = "warlock",
-				["plusOnes"] = 0,
-			}, -- [14]
-			{
-				["Items"] = {
-					39712, -- [1]
-					40399, -- [2]
-					40399, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Mozoo",
-				["class"] = "warlock",
-				["plusOnes"] = 0,
-			}, -- [15]
-			{
-				["Items"] = {
-					40399, -- [1]
-					40373, -- [2]
-					40251, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Táklehotol",
-				["class"] = "druid",
-				["plusOnes"] = 0,
-			}, -- [16]
-			{
-				["Items"] = {
-					40189, -- [1]
-					40345, -- [2]
-					40407, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Løkthar",
-				["class"] = "death knight",
-				["plusOnes"] = 0,
-			}, -- [17]
-			{
-				["Items"] = {
-					40273, -- [1]
-					40273, -- [2]
-					39766, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Speedhead",
-				["class"] = "mage",
-				["plusOnes"] = 0,
-			}, -- [18]
-			{
-				["Items"] = {
-					40384, -- [1]
-					40384, -- [2]
-					40625, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Retuwu",
-				["class"] = "paladin",
-				["plusOnes"] = 0,
-			}, -- [19]
-			{
-				["Items"] = {
-					40189, -- [1]
-					40383, -- [2]
-					39763, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Brä",
-				["class"] = "shaman",
-				["plusOnes"] = 0,
-			}, -- [20]
-			{
-				["Items"] = {
-					40399, -- [1]
-					40399, -- [2]
-					39766, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Musicofrain",
-				["class"] = "warlock",
-				["plusOnes"] = 0,
-			}, -- [21]
-			{
-				["Items"] = {
-					40251, -- [1]
-					40396, -- [2]
-					40395, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Naiinka",
-				["class"] = "paladin",
-				["plusOnes"] = 0,
-			}, -- [22]
-			{
-				["Items"] = {
-					40189, -- [1]
-					40638, -- [2]
-					40367, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Dáash",
-				["class"] = "shaman",
-				["plusOnes"] = 0,
-			}, -- [23]
-			{
-				["Items"] = {
-					40384, -- [1]
-					40403, -- [2]
-					40317, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Christoball",
-				["class"] = "warrior",
-				["plusOnes"] = 0,
-			}, -- [24]
-			{
-				["Items"] = {
-					40625, -- [1]
-					40637, -- [2]
-					40634, -- [3]
-				},
-				["note"] = "",
-				["name"] = "Uwubringer",
-				["class"] = "paladin",
-				["plusOnes"] = 0,
-			}, -- [25]
-		},
-		["HardReserves"] = {
-		},
-		["MetaData"] = {
-			["note"] = "",
-			["id"] = "jxomp7",
-			["hidden"] = false,
-			["url"] = "https://softres.it/raid/jxomp7",
-			["createdAt"] = 1677143758,
-			["updatedAt"] = 1677159369,
-			["importString"] = "eNrNmM2O0zAQx9/F5xyapEna3nYpiANf2g8OoB6m9bQxcezKdmhh1YdZiYfgxqEvhqNF2kTKxg3eIo6Op84vo//8Z9w7UqIBCgbI7I4wSmbky16W24wEhAltQKzQPttJwwsB+32U2I2cUYqCzNbANQZkpRAM0gtDZmGaZeE4zpJJQKotbT1OpnE6DYgCRq8NKKPrHVFxHhDK9Eoqequ4fZd9gZCmfis5BETLtVGoUX1FTWaf74iSnF9KUdnVKCBbXun3Ah8WAsr6Z69hyZYMubaHWDoO2m6TrWKoTeNw+4EGy4dD6w8fj+LptLltiVDZgw9Bf0D4GBCN0o6A6LCoQ9zkL1UJikvRwN6BUkyqXu4oSfu5uwNCV8DJ3HOEUooSNs2E/1k+hR1PszDqx06jrB87jac+2B9wqxnHspVwB3YtAme2k37s7hNOxr5CIRWy+ukjdl4Jg/+5TC40mLa0uVwVZ022VVnqxfzKmoaUfGBFprFD2vFk7NBIZ8DJ2J9wK/XgXPvaXxpnPtAfJS9alg0cKBP90J15akCPsuSsmZ5LpXBjNQHfhqK7tD0ehf3o9ut80N/C3uRIEWiD3C5NXgi2yfubpS09TzfptveT6W8UWxXHX2dAHydZ5kp85GWEa872DAbWZxolDqlPRmdtPHMFrfp0Qz9lv0NMpTvgdJHL71IOhXZNJueGvjneFxxzaVqdh6qKUU8Lz2JXiw99wN8cfxYmB/UXVRlOXOzjxFWVXoZyvUWkedsNndNg1JnQpg32Z9x7QLlCU+2q5+6azvmk24xOpr5Uxx8NZp1DCcJTHhNnomMvI6k0W8m1vb+KfzxYeWvkHTAmChgokm4rGLnaScsFvUQyP96Dzp9ZJmk8cUCnXi7yIlfMXhmWwIdeGpxFaUMc6KEX+u2uWiomNqgGKsU5mXRfDFo3h6eG8EVAbD+hjf+AFoff4eqWnQ==",
-			["instance"] = "wotlknaxx25",
-			["raidStartsAt"] = 0,
-			["discordUrl"] = "",
-			["importedAt"] = 1677167124,
-		},
 	},
 	["PlusOnes"] = {
 		["Totals"] = {
-			["trickÿ"] = 0,
-			["speedhead"] = 0,
-			["habibielste"] = 0,
-			["musicofrain"] = 0,
-			["christoball"] = 0,
-			["uwubringer"] = 0,
-			["dáash"] = 0,
-			["zepos"] = 0,
-			["brä"] = 0,
-			["táklehotol"] = 0,
-			["naiinka"] = 0,
-			["drake"] = 0,
-			["pepsilemon"] = 0,
-			["dorregarray"] = 0,
-			["maxthedead"] = 0,
-			["deamonmage"] = 0,
-			["mozoo"] = 0,
-			["retuwu"] = 0,
-			["asat"] = 0,
-			["renoreines"] = 0,
-			["ermarlon"] = 0,
-			["aflixia"] = 0,
-			["løkthar"] = 0,
-			["festool"] = 0,
-			["volke"] = 0,
 		},
 		["MetaData"] = {
 			["updatedAt"] = 1677167124,
@@ -850,8 +533,6 @@ GargulDB = {
 		},
 		["26118124561261959201"] = {
 			["checksum"] = "26118124561261959201",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -901,8 +582,6 @@ GargulDB = {
 		},
 		["85114629812619592010"] = {
 			["checksum"] = "85114629812619592010",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -935,8 +614,6 @@ GargulDB = {
 		},
 		["27855785751261959201"] = {
 			["checksum"] = "27855785751261959201",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -977,8 +654,6 @@ GargulDB = {
 		},
 		["30436889231261959201"] = {
 			["checksum"] = "30436889231261959201",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1088,8 +763,6 @@ GargulDB = {
 		},
 		["20842280086539737010"] = {
 			["checksum"] = "20842280086539737010",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1139,8 +812,6 @@ GargulDB = {
 		},
 		["16529790813921731370"] = {
 			["checksum"] = "16529790813921731370",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1239,8 +910,6 @@ GargulDB = {
 		},
 		["19221295524336503210"] = {
 			["checksum"] = "19221295524336503210",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1320,8 +989,6 @@ GargulDB = {
 		},
 		["11313793903921731370"] = {
 			["checksum"] = "11313793903921731370",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1433,8 +1100,6 @@ GargulDB = {
 		},
 		["34259889683093262601"] = {
 			["checksum"] = "34259889683093262601",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1484,8 +1149,6 @@ GargulDB = {
 		},
 		["40695166771621447697"] = {
 			["checksum"] = "40695166771621447697",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1708,8 +1371,6 @@ GargulDB = {
 		},
 		["42316741669177343490"] = {
 			["checksum"] = "42316741669177343490",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1742,8 +1403,6 @@ GargulDB = {
 		},
 		["37007265288317126900"] = {
 			["checksum"] = "37007265288317126900",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1889,8 +1548,6 @@ GargulDB = {
 		},
 		["29130859351261959201"] = {
 			["checksum"] = "29130859351261959201",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1989,8 +1646,6 @@ GargulDB = {
 		},
 		["30388856391261959201"] = {
 			["checksum"] = "30388856391261959201",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2253,8 +1908,6 @@ GargulDB = {
 		},
 		["19351363206539737010"] = {
 			["checksum"] = "19351363206539737010",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2436,8 +2089,6 @@ GargulDB = {
 		},
 		["41384671016539737010"] = {
 			["checksum"] = "41384671016539737010",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2553,8 +2204,6 @@ GargulDB = {
 		},
 		["15205076463741240864"] = {
 			["checksum"] = "15205076463741240864",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2653,8 +2302,6 @@ GargulDB = {
 		},
 		["14416028233921731370"] = {
 			["checksum"] = "14416028233921731370",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2858,8 +2505,6 @@ GargulDB = {
 		},
 		["16874727322883171269"] = {
 			["checksum"] = "16874727322883171269",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2892,8 +2537,6 @@ GargulDB = {
 		},
 		["92981109043365032100"] = {
 			["checksum"] = "92981109043365032100",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2909,8 +2552,6 @@ GargulDB = {
 		},
 		["34453565166539737010"] = {
 			["checksum"] = "34453565166539737010",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2990,8 +2631,6 @@ GargulDB = {
 		},
 		["68366447121053665530"] = {
 			["checksum"] = "68366447121053665530",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3024,8 +2663,6 @@ GargulDB = {
 		},
 		["28000548022884811236"] = {
 			["checksum"] = "28000548022884811236",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3122,8 +2759,6 @@ GargulDB = {
 		},
 		["40828531321261959201"] = {
 			["checksum"] = "40828531321261959201",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3237,8 +2872,6 @@ GargulDB = {
 		},
 		["15612531111621447697"] = {
 			["checksum"] = "15612531111621447697",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3286,8 +2919,6 @@ GargulDB = {
 		},
 		["90679216237412408640"] = {
 			["checksum"] = "90679216237412408640",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3435,8 +3066,6 @@ GargulDB = {
 		},
 		["13094116882105366553"] = {
 			["checksum"] = "13094116882105366553",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,

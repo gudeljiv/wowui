@@ -775,9 +775,9 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1922893,
-		["timeStamp"] = 667583.636,
-		["timeAtThisLevel"] = 830346,
+		["total"] = 1932889,
+		["timeStamp"] = 777865.985,
+		["timeAtThisLevel"] = 840342,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
@@ -800,9 +800,9 @@ CB_PlayedTime = {
 		["total"] = 576,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 265175,
-		["timeStamp"] = 342415.857,
-		["timeAtThisLevel"] = 259429,
+		["total"] = 265234,
+		["timeStamp"] = 749125.539,
+		["timeAtThisLevel"] = 259488,
 	},
 	["Tudum-Ashbringer"] = {
 		["total"] = 6477,
@@ -891,16 +891,16 @@ CB_PlayedTime = {
 		["total"] = 1248,
 	},
 	["Vermina-Golemagg"] = {
-		["total"] = 343742,
-		["timeStamp"] = 479941.588,
-		["timeAtThisLevel"] = 3711,
+		["total"] = 346778,
+		["timeStamp"] = 775135.9400000001,
+		["timeAtThisLevel"] = 6747,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 790510,
-		["timeAtThisLevel"] = 460835,
-		["timeStamp"] = 669516.357,
+		["total"] = 798522,
+		["timeAtThisLevel"] = 468847,
+		["timeStamp"] = 777580.328,
 	},
 }

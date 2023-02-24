@@ -1,16 +1,20 @@
 
 xKillCount = {
-	["show"] = false,
-	["killLog"] = {
+	["show"] = true,
+	["position"] = {
+		["y"] = -3.333441257476807,
+		["x"] = 515.47607421875,
+		["to"] = "TOPLEFT",
+		["from"] = "TOPLEFT",
 	},
 	["experience"] = {
-		["totaltotal"] = 8383421,
-		["pulltotal"] = 0,
+		["pulltotal"] = 98980,
+		["totaltotal"] = 98980,
 	},
-	["position"] = {
-		["y"] = 5.534424781799316,
-		["x"] = 172.0689392089844,
-		["to"] = "LEFT",
-		["from"] = "LEFT",
+	["killLog"] = {
+		["Fjord Rat"] = {
+			["name"] = "Fjord Rat",
+			["count"] = 1,
+		},
 	},
 }

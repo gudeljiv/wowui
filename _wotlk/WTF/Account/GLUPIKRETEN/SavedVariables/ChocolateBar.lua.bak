@@ -722,9 +722,9 @@ CB_PlayedTime = {
 		["total"] = 53,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 790251,
-		["timeStamp"] = 667309.01,
-		["timeAtThisLevel"] = 460576,
+		["total"] = 798522,
+		["timeStamp"] = 777580.328,
+		["timeAtThisLevel"] = 468847,
 	},
 	["Battitude-Golemagg"] = {
 		["total"] = 17339,
@@ -741,9 +741,9 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Vermina-Golemagg"] = {
-		["total"] = 343742,
-		["timeAtThisLevel"] = 3711,
-		["timeStamp"] = 479941.588,
+		["total"] = 346778,
+		["timeAtThisLevel"] = 6747,
+		["timeStamp"] = 775135.9400000001,
 	},
 	["Mxzq-Golemagg"] = {
 		["total"] = 1098837,
@@ -860,9 +860,9 @@ CB_PlayedTime = {
 		["total"] = 680,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 265175,
-		["timeAtThisLevel"] = 259429,
-		["timeStamp"] = 342415.857,
+		["total"] = 265234,
+		["timeAtThisLevel"] = 259488,
+		["timeStamp"] = 749125.539,
 	},
 	["Greshnik-Dreadnaught"] = {
 		["total"] = 576,
@@ -878,9 +878,9 @@ CB_PlayedTime = {
 		["timeStamp"] = 1608612.783,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1922893,
-		["timeAtThisLevel"] = 830346,
-		["timeStamp"] = 667583.636,
+		["total"] = 1932745,
+		["timeAtThisLevel"] = 840198,
+		["timeStamp"] = 763666.792,
 	},
 	["Wells-Jin'do"] = {
 		["total"] = 11721,

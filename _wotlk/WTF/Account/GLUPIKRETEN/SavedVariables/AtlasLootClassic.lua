@@ -1196,6 +1196,19 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
+			["showCompanionLearnedInfo"] = false,
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["Addons"] = {
+				["Favourites"] = {
+					["showListInTT"] = false,
+				},
+			},
+			["Tooltip"] = {
+				["useGameTooltip"] = false,
+			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -1212,20 +1225,7 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
-			["showCompanionLearnedInfo"] = false,
-			["Addons"] = {
-				["Favourites"] = {
-					["showListInTT"] = false,
-				},
-			},
-			["Tooltip"] = {
-				["useGameTooltip"] = false,
-			},
 			["showItemLvlInTT"] = false,
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 		},
 		["Ozrencic - Golemagg"] = {
 		},
@@ -1352,9 +1352,21 @@ AtlasLootClassicDB = {
 		["Kaonac - Jin'do"] = {
 		},
 		["Default"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
+			["GUI"] = {
+				["point"] = {
+					"TOP", -- [1]
+					nil, -- [2]
+					"TOP", -- [3]
+					42.76192474365234, -- [4]
+					-150.7778625488281, -- [5]
+				},
+				["selected"] = {
+					nil, -- [1]
+					"AzjolNerub", -- [2]
+					3, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
 			},
 			["Addons"] = {
 				["Favourites"] = {
@@ -1370,23 +1382,11 @@ AtlasLootClassicDB = {
 			["Tooltip"] = {
 				["useGameTooltip"] = false,
 			},
-			["GUI"] = {
-				["point"] = {
-					"TOP", -- [1]
-					nil, -- [2]
-					"TOP", -- [3]
-					42.76192474365234, -- [4]
-					-150.7778625488281, -- [5]
-				},
-				["selected"] = {
-					nil, -- [1]
-					"ObsidianSanctum", -- [2]
-					nil, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-			},
 			["showItemLvlInTT"] = false,
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
 			["minimap"] = {

@@ -2,7 +2,7 @@
 GlobalIgnoreDB = {
 	["filterCount"] = {
 		2, -- [1]
-		0, -- [2]
+		6, -- [2]
 		1, -- [3]
 		0, -- [4]
 		0, -- [5]
@@ -240,7 +240,7 @@ GlobalIgnoreDB = {
 	},
 	["skipGuild"] = true,
 	["chatmsg"] = true,
-	["filterTotal"] = 3,
+	["filterTotal"] = 9,
 	["defexpire"] = 0,
 	["filterDesc"] = {
 		"Filter \"Anal\" Spammers", -- [1]
