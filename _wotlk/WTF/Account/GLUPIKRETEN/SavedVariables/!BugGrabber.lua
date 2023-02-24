@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 9380,
+	["session"] = 9382,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -7719,8 +7719,8 @@ BugGrabberDB = {
 			["message"] = "bad argument #2 to '?' (Usage: self:SetVertexColor(color [, a]))",
 			["time"] = "2023/01/23 10:34:21",
 			["stack"] = "[string \"=[C]\"]: in function `SetVertexColor'\n[string \"@Interface/AddOns/AddOnSkins/Libs/Ace3/AceGUI-3.0-41/widgets/AceGUIWidget-ColorPicker.lua\"]:105: in function `SetColor'\n[string \"@Interface/AddOns/AddOnSkins/Libs/Ace3/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1377: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1110>\n[string \"@Interface/AddOns/AddOnSkins/Libs/Ace3/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1137: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1110>\n[string \"@Interface/AddOns/AddOnSkins/Libs/Ace3/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1639: in function `FeedGroup'\n[string \"@Interface/AddOns/AddOnSkins/Libs/Ace3/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1564: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1548>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/AddOnSkins/Libs/Ace3/AceGUI-3.0-41/AceGUI-3.0.lua\"]:66: in function <...ddOns/AddOnSkins/Libs/Ace3/AceGUI-3.0/AceGUI-3.0.lua:64>\n[string \"@Interface/AddOns/AddOnSkins/Libs/Ace3/AceGUI-3.0-41/AceGUI-3.0.lua\"]:300: in function `Fire'\n[string \"@Interface/AddOns/AddOnSkins/Libs/Ace3/AceGUI-3.0-41/widgets/AceGUIContainer-TabGroup.lua\"]:342: in function `SelectTab'\n[string \"@Interface/AddOns/AddOnSkins/Libs/Ace3/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1675: in function `FeedGroup'\n[string \"@Interface/AddOns/AddOnSkins/Libs/Ace3/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1564: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1548>\n...\n[string \"@Interface/AddOns/AddOnSkins/Libs/Ace3/AceGUI-3.0-41/widgets/AceGUIContainer-TreeGroup.lua\"]:522: in function `Select'\n[string \"@Interface/AddOns/AddOnSkins/Libs/Ace3/AceGUI-3.0-41/widgets/AceGUIContainer-TreeGroup.lua\"]:530: in function `SelectByValue'\n[string \"@Interface/AddOns/AddOnSkins/Libs/Ace3/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1735: in function `FeedGroup'\n[string \"@Interface/AddOns/AddOnSkins/Libs/Ace3/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1919: in function `Open'\n[string \"@Interface/AddOns/ShadowedUF_Options/config.lua\"]:6686: in function `Open'\n[string \"@Interface/AddOns/ShadowedUnitFrames/ShadowedUnitFrames.lua\"]:899: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4938: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4601: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4637: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
-			["session"] = 9373,
-			["counter"] = 90,
+			["session"] = 9382,
+			["counter"] = 99,
 		}, -- [1000]
 	},
 }
