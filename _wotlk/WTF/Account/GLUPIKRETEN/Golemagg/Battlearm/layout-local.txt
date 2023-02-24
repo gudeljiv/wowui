@@ -20,6 +20,13 @@ X: 71
 Y: 0
 W: 784
 H: 260
+Frame: ItemRefTooltip
+FrameLevel: 1
+Anchor: TOP
+X: 458
+Y: -143
+W: 128
+H: 64
 Frame: ColorPickerFrame
 FrameLevel: 23
 Anchor: CENTER
@@ -83,13 +90,6 @@ X: -359
 Y: 102
 W: 960
 H: 640
-Frame: ItemRefTooltip
-FrameLevel: 1
-Anchor: TOP
-X: 458
-Y: -143
-W: 332
-H: 125
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM
