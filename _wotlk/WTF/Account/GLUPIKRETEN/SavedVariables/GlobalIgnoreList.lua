@@ -56,7 +56,7 @@ GlobalIgnoreDB = {
 		"[contains=WTS] or [contains=WTB]", -- [9]
 		"[nonlatin]", -- [10]
 	},
-	["autoTime"] = 600,
+	["autoUpdate"] = true,
 	["autoCount"] = 3,
 	["sameserver"] = true,
 	["ignoreList"] = {
@@ -88,7 +88,7 @@ GlobalIgnoreDB = {
 		"Tomrismage-Golemagg", -- [26]
 		"Toobased-Golemagg", -- [27]
 	},
-	["trackChanges"] = true,
+	["autoTime"] = 600,
 	["autoIgnore"] = true,
 	["factionList"] = {
 		"Horde", -- [1]
@@ -243,7 +243,7 @@ GlobalIgnoreDB = {
 		"", -- [26]
 		"", -- [27]
 	},
-	["autoUpdate"] = true,
+	["trackChanges"] = true,
 	["samefaction"] = true,
 	["syncInfo"] = {
 		{

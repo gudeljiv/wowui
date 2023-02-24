@@ -19,46 +19,46 @@ PallyPowerDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["freeassign"] = true,
 			["buffscale"] = 1,
-			["hideHighGroups"] = true,
 			["seal"] = 3,
-			["minimap"] = {
-				["show"] = false,
-			},
-			["ShowTooltips"] = false,
-			["configscale"] = 0.9967937838582688,
-			["enable"] = true,
-			["WrathTransition"] = true,
 			["display"] = {
 				["buffDuration"] = false,
 				["frameLocked"] = true,
 			},
-			["SalvInCombat"] = true,
+			["freeassign"] = true,
+			["enable"] = true,
 			["border"] = "None",
+			["minimap"] = {
+				["show"] = false,
+			},
+			["configscale"] = 0.9967937838582688,
+			["WrathTransition"] = true,
+			["hideHighGroups"] = true,
+			["ShowTooltips"] = false,
+			["SalvInCombat"] = true,
 			["rf"] = false,
 		},
 		["Other"] = {
 			["enable"] = true,
+			["WrathTransition"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
-			["WrathTransition"] = true,
 		},
 	},
 }
 PallyPower_Assignments = {
 	["Vermina"] = {
-		0, -- [1]
-		0, -- [2]
-		0, -- [3]
-		0, -- [4]
-		0, -- [5]
-		0, -- [6]
-		0, -- [7]
-		0, -- [8]
-		0, -- [9]
-		0, -- [10]
+		2, -- [1]
+		2, -- [2]
+		3, -- [3]
+		3, -- [4]
+		4, -- [5]
+		2, -- [6]
+		3, -- [7]
+		3, -- [8]
+		3, -- [9]
+		2, -- [10]
 		2, -- [11]
 	},
 	["Rinnerebirt"] = {
@@ -161,7 +161,7 @@ PallyPower_AuraAssignments = {
 	["Cruzerzz"] = 0,
 	["Liâdrin"] = 0,
 	["Holychoke"] = 0,
-	["Vermina"] = 0,
+	["Vermina"] = 2,
 	["Emerity"] = 0,
 	["Kaylel"] = 1,
 	["Maximizer"] = 0,
