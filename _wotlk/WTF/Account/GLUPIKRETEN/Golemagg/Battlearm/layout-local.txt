@@ -88,8 +88,15 @@ FrameLevel: 1
 Anchor: TOPRIGHT
 X: -361
 Y: -143
-W: 310
-H: 419
+W: 267
+H: 150
+Frame: BagnonBankFrame1
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 56
+Y: -82
+W: 404
+H: 723
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM
