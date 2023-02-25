@@ -40,6 +40,7 @@ GlobalIgnoreDB = {
 		"player", -- [25]
 		"player", -- [26]
 		"player", -- [27]
+		"player", -- [28]
 	},
 	["ignoreList"] = {
 		"Puntune-Golemagg", -- [1]
@@ -69,6 +70,7 @@ GlobalIgnoreDB = {
 		"Morbintíme-Golemagg", -- [25]
 		"Tomrismage-Golemagg", -- [26]
 		"Toobased-Golemagg", -- [27]
+		"Nékosenshi-Golemagg", -- [28]
 	},
 	["openWithFriends"] = true,
 	["skipPrivate"] = true,
@@ -127,6 +129,8 @@ GlobalIgnoreDB = {
 		}, -- [26]
 		{
 		}, -- [27]
+		{
+		}, -- [28]
 	},
 	["autoTime"] = 600,
 	["autoCount"] = 3,
@@ -173,6 +177,7 @@ GlobalIgnoreDB = {
 		"Horde", -- [25]
 		"Horde", -- [26]
 		"Horde", -- [27]
+		"Horde", -- [28]
 	},
 	["skipParty"] = false,
 	["delList"] = {
@@ -208,6 +213,7 @@ GlobalIgnoreDB = {
 		"", -- [25]
 		"", -- [26]
 		"", -- [27]
+		"idiot... need to ignore his existance", -- [28]
 	},
 	["expList"] = {
 		0, -- [1]
@@ -237,6 +243,7 @@ GlobalIgnoreDB = {
 		0, -- [25]
 		0, -- [26]
 		0, -- [27]
+		0, -- [28]
 	},
 	["skipGuild"] = true,
 	["chatmsg"] = true,
@@ -296,6 +303,7 @@ GlobalIgnoreDB = {
 		"23 Feb 2023", -- [25]
 		"23 Feb 2023", -- [26]
 		"23 Feb 2023", -- [27]
+		"25 Feb 2023", -- [28]
 	},
 	["sameserver"] = true,
 	["autoUpdate"] = true,
