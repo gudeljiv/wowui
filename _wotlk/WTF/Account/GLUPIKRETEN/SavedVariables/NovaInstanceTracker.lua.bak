@@ -11,16 +11,16 @@ NITdatabase = {
 		["Tandaram - Jin'do"] = "Default",
 		["Tudum - Jin'do"] = "Default",
 		["Pitchwise - Ashbringer"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
-		["Tudum - Ashbringer"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Battlearm - Gehennas"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
 		["Miqa - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
 		["Provokator - Jin'do"] = "Default",
-		["Battlearm - Gehennas"] = "Default",
+		["Tudum - Ashbringer"] = "Default",
 		["Handrmandr - Golemagg"] = "Default",
 		["Tadibey - Golemagg"] = "Default",
 		["Battledog - Gehennas"] = "Default",
@@ -63,16 +63,16 @@ NITdatabase = {
 					["gold"] = 0,
 					["petLevel"] = 0,
 					["firstaidSkillMax"] = 0,
-					["ammoType"] = 2512,
-					["realm"] = "Mirage Raceway",
-					["fishingSkillMax"] = 0,
-					["cookingSkillMax"] = 0,
-					["raceLocalized"] = "Orc",
 					["isPetDead"] = false,
-					["firstaidSkill"] = 0,
+					["realm"] = "Mirage Raceway",
+					["ammoType"] = 2512,
+					["fishingSkillMax"] = 0,
+					["raceLocalized"] = "Orc",
+					["cookingSkillMax"] = 0,
+					["playerName"] = "Poklopac",
 					["classEnglish"] = "HUNTER",
 					["currentXP"] = 102,
-					["playerName"] = "Poklopac",
+					["firstaidSkill"] = 0,
 					["ammo"] = 195,
 					["marks"] = {
 						[20559] = 0,
@@ -138,10 +138,10 @@ NITdatabase = {
 					["guild"] = "No guild",
 					["realm"] = "Jin'do",
 					["currentXP"] = 44,
-					["fishingSkillMax"] = 0,
-					["raceLocalized"] = "Orc",
 					["cookingSkillMax"] = 0,
-					["firstaidSkill"] = 0,
+					["raceLocalized"] = "Orc",
+					["fishingSkillMax"] = 0,
+					["playerName"] = "Battlearm",
 					["classEnglish"] = "SHAMAN",
 					["profSkillMax2"] = 0,
 					[17030] = 0,
@@ -155,7 +155,7 @@ NITdatabase = {
 					},
 					["profSkill2"] = 0,
 					["race"] = "Orc",
-					["playerName"] = "Battlearm",
+					["firstaidSkill"] = 0,
 					["cooldowns"] = {
 					},
 					["guildRankName"] = "No guild rank",
@@ -192,7 +192,7 @@ NITdatabase = {
 					["level"] = 1,
 					["raceLocalized"] = "Troll",
 					["fishingSkillMax"] = 0,
-					["firstaidSkill"] = 0,
+					["playerName"] = "Kaonac",
 					["classEnglish"] = "PRIEST",
 					["cookingSkillMax"] = 0,
 					["currency"] = {
@@ -210,7 +210,7 @@ NITdatabase = {
 					["guildRankName"] = "No guild rank",
 					["cooldowns"] = {
 					},
-					["playerName"] = "Kaonac",
+					["firstaidSkill"] = 0,
 					["classLocalized"] = "Priest",
 					["profSkill2"] = 0,
 				},
@@ -239,10 +239,10 @@ NITdatabase = {
 					["profSkill2"] = 0,
 					["realm"] = "Jin'do",
 					["firstaidSkillMax"] = 0,
-					["fishingSkillMax"] = 0,
-					["raceLocalized"] = "Tauren",
 					["cookingSkillMax"] = 0,
-					["firstaidSkill"] = 0,
+					["raceLocalized"] = "Tauren",
+					["fishingSkillMax"] = 0,
+					["playerName"] = "Tandaram",
 					["classEnglish"] = "WARRIOR",
 					["guildRankName"] = "No guild rank",
 					["marks"] = {
@@ -260,7 +260,7 @@ NITdatabase = {
 					["currentXP"] = 0,
 					["cooldowns"] = {
 					},
-					["playerName"] = "Tandaram",
+					["firstaidSkill"] = 0,
 					["classLocalized"] = "Warrior",
 					["resting"] = false,
 				},
@@ -289,10 +289,10 @@ NITdatabase = {
 					["profSkill2"] = 0,
 					["realm"] = "Jin'do",
 					["firstaidSkillMax"] = 0,
-					["fishingSkillMax"] = 0,
-					["raceLocalized"] = "Tauren",
 					["cookingSkillMax"] = 0,
-					["firstaidSkill"] = 0,
+					["raceLocalized"] = "Tauren",
+					["fishingSkillMax"] = 0,
+					["playerName"] = "Tudum",
 					["classEnglish"] = "WARRIOR",
 					["guildRankName"] = "No guild rank",
 					["marks"] = {
@@ -310,7 +310,7 @@ NITdatabase = {
 					["currentXP"] = 0,
 					["cooldowns"] = {
 					},
-					["playerName"] = "Tudum",
+					["firstaidSkill"] = 0,
 					["classLocalized"] = "Warrior",
 					["resting"] = false,
 				},
@@ -344,17 +344,17 @@ NITdatabase = {
 					["firstaidSkillMax"] = 0,
 					["realm"] = "Jin'do",
 					["currentXP"] = 1074,
-					["fishingSkillMax"] = 0,
-					["raceLocalized"] = "Tauren",
 					["cookingSkillMax"] = 0,
-					["firstaidSkill"] = 0,
+					["raceLocalized"] = "Tauren",
+					["fishingSkillMax"] = 0,
+					["playerName"] = "Wells",
 					["classEnglish"] = "DRUID",
 					["level"] = 8,
 					["fishingSkill"] = 0,
 					["race"] = "Tauren",
 					["guild"] = "No guild",
 					[44614] = 0,
-					["playerName"] = "Wells",
+					["firstaidSkill"] = 0,
 					["cooldowns"] = {
 					},
 					["profSkill2"] = 0,
@@ -404,16 +404,16 @@ NITdatabase = {
 						[47395] = 0,
 					},
 					["ammo"] = 1286,
-					["gold"] = 3123,
+					["petLevel"] = 10,
 					["currency"] = {
 					},
 					["time"] = 1665607013,
-					["petLevel"] = 10,
-					["cookingSkillMax"] = 0,
+					["gold"] = 3123,
+					["ammoType"] = 2515,
 					["classEnglish"] = "HUNTER",
 					["firstaidSkill"] = 0,
 					["realm"] = "Jin'do",
-					["ammoType"] = 2515,
+					["cookingSkillMax"] = 0,
 					["isPetDead"] = false,
 					["raceLocalized"] = "Orc",
 					["fishingSkillMax"] = 0,
@@ -518,7 +518,7 @@ NITdatabase = {
 					["profSkill2"] = 0,
 					["raceLocalized"] = "Orc",
 					["fishingSkillMax"] = 0,
-					["firstaidSkill"] = 0,
+					["playerName"] = "Battledog",
 					["classEnglish"] = "WARRIOR",
 					["cookingSkillMax"] = 0,
 					["profSkillMax2"] = 0,
@@ -536,7 +536,7 @@ NITdatabase = {
 					["guild"] = "No guild",
 					["cooldowns"] = {
 					},
-					["playerName"] = "Battledog",
+					["firstaidSkill"] = 0,
 					["classLocalized"] = "Warrior",
 					["level"] = 1,
 				},
@@ -551,40 +551,40 @@ NITdatabase = {
 				{
 					["targetMoney"] = 26560000,
 					["playerMoney"] = 0,
-					["tradeWho"] = "Avenus",
 					["tradeWhoClass"] = "MAGE",
+					["tradeWho"] = "Avenus",
 					["where"] = "The Obsidian Sanctum",
 					["time"] = 1677343428,
 				}, -- [1]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 2000000,
-					["tradeWho"] = "Avenus",
 					["tradeWhoClass"] = "MAGE",
+					["tradeWho"] = "Avenus",
 					["where"] = "Naxxramas",
 					["time"] = 1677338708,
 				}, -- [2]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
-					["tradeWho"] = "Avenus",
 					["tradeWhoClass"] = "MAGE",
+					["tradeWho"] = "Avenus",
 					["where"] = "Naxxramas",
 					["time"] = 1677338589,
 				}, -- [3]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 50000000,
-					["tradeWho"] = "Maximizer",
 					["tradeWhoClass"] = "PALADIN",
+					["tradeWho"] = "Maximizer",
 					["where"] = "Naxxramas",
 					["time"] = 1677150252,
 				}, -- [4]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 50000,
-					["tradeWhoClass"] = "MAGE",
 					["tradeWho"] = "Lememage",
+					["tradeWhoClass"] = "MAGE",
 					["where"] = "Orgrimmar",
 					["time"] = 1676889443,
 				}, -- [5]
@@ -592,15 +592,15 @@ NITdatabase = {
 					["targetMoney"] = 0,
 					["playerMoney"] = 50000,
 					["time"] = 1676813294,
-					["tradeWho"] = "Whisperzz",
-					["where"] = "Orgrimmar",
 					["tradeWhoClass"] = "MAGE",
+					["where"] = "Orgrimmar",
+					["tradeWho"] = "Whisperzz",
 				}, -- [6]
 				{
 					["targetMoney"] = 20480000,
 					["playerMoney"] = 0,
-					["tradeWho"] = "Thelichlight",
 					["tradeWhoClass"] = "PALADIN",
+					["tradeWho"] = "Thelichlight",
 					["where"] = "The Obsidian Sanctum",
 					["time"] = 1676657977,
 				}, -- [7]
@@ -608,103 +608,103 @@ NITdatabase = {
 					["targetMoney"] = 32550000,
 					["playerMoney"] = 0,
 					["time"] = 1676640463,
-					["tradeWho"] = "Happens",
-					["where"] = "Borean Tundra",
 					["tradeWhoClass"] = "SHAMAN",
+					["where"] = "Borean Tundra",
+					["tradeWho"] = "Happens",
 				}, -- [8]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 12000000,
 					["time"] = 1676639371,
-					["tradeWho"] = "Happens",
-					["where"] = "The Eye of Eternity",
 					["tradeWhoClass"] = "SHAMAN",
+					["where"] = "The Eye of Eternity",
+					["tradeWho"] = "Happens",
 				}, -- [9]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 6000000,
 					["time"] = 1676633503,
-					["tradeWhoClass"] = "SHAMAN",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Happens",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "SHAMAN",
 				}, -- [10]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 300000,
 					["time"] = 1676630477,
-					["tradeWhoClass"] = "HUNTER",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Trollun",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "HUNTER",
 				}, -- [11]
 				{
 					["targetMoney"] = 17000000,
 					["playerMoney"] = 0,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Miute",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "Naxxramas",
 					["time"] = 1676142234,
 				}, -- [12]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 3000000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Miute",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "Naxxramas",
 					["time"] = 1676142092,
 				}, -- [13]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 200000,
-					["tradeWhoClass"] = "WARRIOR",
 					["tradeWho"] = "Rankwar",
+					["tradeWhoClass"] = "WARRIOR",
 					["where"] = "Naxxramas",
 					["time"] = 1676132992,
 				}, -- [14]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 2500000,
-					["tradeWhoClass"] = "WARRIOR",
 					["tradeWho"] = "Lythp",
+					["tradeWhoClass"] = "WARRIOR",
 					["where"] = "Dalaran",
 					["time"] = 1676037219,
 				}, -- [15]
 				{
 					["targetMoney"] = 17600000,
 					["playerMoney"] = 0,
-					["tradeWho"] = "Thelichlight",
 					["tradeWhoClass"] = "PALADIN",
+					["tradeWho"] = "Thelichlight",
 					["where"] = "The Obsidian Sanctum",
 					["time"] = 1676034106,
 				}, -- [16]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 20000000,
-					["tradeWho"] = "Thelichlight",
 					["tradeWhoClass"] = "PALADIN",
+					["tradeWho"] = "Thelichlight",
 					["where"] = "The Obsidian Sanctum",
 					["time"] = 1676033841,
 				}, -- [17]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
-					["tradeWho"] = "Thelichlight",
 					["tradeWhoClass"] = "PALADIN",
+					["tradeWho"] = "Thelichlight",
 					["where"] = "Naxxramas",
 					["time"] = 1676029272,
 				}, -- [18]
 				{
 					["targetMoney"] = 23300000,
 					["playerMoney"] = 0,
-					["tradeWhoClass"] = "SHAMAN",
 					["tradeWho"] = "Gemoo",
+					["tradeWhoClass"] = "SHAMAN",
 					["where"] = "The Obsidian Sanctum",
 					["time"] = 1675960425,
 				}, -- [19]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 7000000,
-					["tradeWhoClass"] = "SHAMAN",
 					["tradeWho"] = "Gemoo",
+					["tradeWhoClass"] = "SHAMAN",
 					["where"] = "The Obsidian Sanctum",
 					["time"] = 1675960050,
 				}, -- [20]
@@ -712,87 +712,87 @@ NITdatabase = {
 					["targetMoney"] = 18880000,
 					["playerMoney"] = 0,
 					["time"] = 1675861118,
-					["tradeWho"] = "Recobe",
-					["where"] = "The Obsidian Sanctum",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "The Obsidian Sanctum",
+					["tradeWho"] = "Recobe",
 				}, -- [21]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
 					["time"] = 1675860946,
-					["tradeWho"] = "Recobe",
-					["where"] = "The Obsidian Sanctum",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "The Obsidian Sanctum",
+					["tradeWho"] = "Recobe",
 				}, -- [22]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 3000000,
 					["time"] = 1675860742,
-					["tradeWho"] = "Recobe",
-					["where"] = "The Obsidian Sanctum",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "The Obsidian Sanctum",
+					["tradeWho"] = "Recobe",
 				}, -- [23]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 3000000,
 					["time"] = 1675860206,
-					["tradeWho"] = "Recobe",
-					["where"] = "The Obsidian Sanctum",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "The Obsidian Sanctum",
+					["tradeWho"] = "Recobe",
 				}, -- [24]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
 					["time"] = 1675857760,
-					["tradeWho"] = "Recobe",
-					["where"] = "Naxxramas",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "Naxxramas",
+					["tradeWho"] = "Recobe",
 				}, -- [25]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Recobe",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "Naxxramas",
 					["time"] = 1675855279,
 				}, -- [26]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Recobe",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "Naxxramas",
 					["time"] = 1675854703,
 				}, -- [27]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Recobe",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "Naxxramas",
 					["time"] = 1675853715,
 				}, -- [28]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 60000000,
-					["tradeWhoClass"] = "DEATHKNIGHT",
 					["tradeWho"] = "Morthalin",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 					["where"] = "Dalaran",
 					["time"] = 1675769358,
 				}, -- [29]
 				{
 					["targetMoney"] = 21000000,
 					["playerMoney"] = 0,
-					["tradeWhoClass"] = "PRIEST",
 					["tradeWho"] = "Dinamur",
+					["tradeWhoClass"] = "PRIEST",
 					["where"] = "The Eye of Eternity",
 					["time"] = 1675014045,
 				}, -- [30]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 3000000,
-					["tradeWho"] = "Dinamur",
 					["tradeWhoClass"] = "PRIEST",
+					["tradeWho"] = "Dinamur",
 					["where"] = "The Eye of Eternity",
 					["time"] = 1675013420,
 				}, -- [31]
@@ -800,63 +800,63 @@ NITdatabase = {
 					["targetMoney"] = 0,
 					["playerMoney"] = 20000000,
 					["time"] = 1675012900,
-					["tradeWho"] = "Dinamur",
-					["where"] = "Naxxramas",
 					["tradeWhoClass"] = "PRIEST",
+					["where"] = "Naxxramas",
+					["tradeWho"] = "Dinamur",
 				}, -- [32]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 3000000,
 					["time"] = 1675011552,
-					["tradeWho"] = "Dinamur",
-					["where"] = "Naxxramas",
 					["tradeWhoClass"] = "PRIEST",
+					["where"] = "Naxxramas",
+					["tradeWho"] = "Dinamur",
 				}, -- [33]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
-					["tradeWho"] = "Hotsonyou",
 					["tradeWhoClass"] = "DRUID",
+					["tradeWho"] = "Hotsonyou",
 					["where"] = "Orgrimmar",
 					["time"] = 1674555024,
 				}, -- [34]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 15000000,
-					["tradeWho"] = "Obsidian",
 					["tradeWhoClass"] = "DRUID",
+					["tradeWho"] = "Obsidian",
 					["where"] = "Naxxramas",
 					["time"] = 1674142988,
 				}, -- [35]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 3000000,
-					["tradeWho"] = "Obsidian",
 					["tradeWhoClass"] = "DRUID",
+					["tradeWho"] = "Obsidian",
 					["where"] = "Naxxramas",
 					["time"] = 1674141834,
 				}, -- [36]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 2000000,
-					["tradeWho"] = "Obsidian",
 					["tradeWhoClass"] = "DRUID",
+					["tradeWho"] = "Obsidian",
 					["where"] = "Naxxramas",
 					["time"] = 1674141772,
 				}, -- [37]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 15000000,
-					["tradeWho"] = "Obsidian",
 					["tradeWhoClass"] = "DRUID",
+					["tradeWho"] = "Obsidian",
 					["where"] = "Naxxramas",
 					["time"] = 1674140261,
 				}, -- [38]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
-					["tradeWho"] = "Obsidian",
 					["tradeWhoClass"] = "DRUID",
+					["tradeWho"] = "Obsidian",
 					["where"] = "Naxxramas",
 					["time"] = 1674139981,
 				}, -- [39]
@@ -864,143 +864,143 @@ NITdatabase = {
 					["targetMoney"] = 36000000,
 					["playerMoney"] = 0,
 					["time"] = 1673549474,
-					["tradeWho"] = "Eternalpala",
-					["where"] = "The Obsidian Sanctum",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "The Obsidian Sanctum",
+					["tradeWho"] = "Eternalpala",
 				}, -- [40]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 7500000,
 					["time"] = 1673541807,
-					["tradeWho"] = "Eternalpala",
-					["where"] = "Naxxramas",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "Naxxramas",
+					["tradeWho"] = "Eternalpala",
 				}, -- [41]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 9500000,
 					["time"] = 1673541652,
-					["tradeWho"] = "Eternalpala",
-					["where"] = "Naxxramas",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "Naxxramas",
+					["tradeWho"] = "Eternalpala",
 				}, -- [42]
 				{
 					["targetMoney"] = 22270000,
 					["playerMoney"] = 0,
 					["time"] = 1673033265,
-					["tradeWho"] = "Angrywarrior",
-					["where"] = "Borean Tundra",
 					["tradeWhoClass"] = "WARRIOR",
+					["where"] = "Borean Tundra",
+					["tradeWho"] = "Angrywarrior",
 				}, -- [43]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 2500000,
 					["time"] = 1673032250,
-					["tradeWho"] = "Angrywarrior",
-					["where"] = "The Eye of Eternity",
 					["tradeWhoClass"] = "WARRIOR",
+					["where"] = "The Eye of Eternity",
+					["tradeWho"] = "Angrywarrior",
 				}, -- [44]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 2500000,
 					["time"] = 1673032176,
-					["tradeWho"] = "Angrywarrior",
-					["where"] = "The Eye of Eternity",
 					["tradeWhoClass"] = "WARRIOR",
+					["where"] = "The Eye of Eternity",
+					["tradeWho"] = "Angrywarrior",
 				}, -- [45]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 2500000,
 					["time"] = 1673031944,
-					["tradeWho"] = "Angrywarrior",
-					["where"] = "The Eye of Eternity",
 					["tradeWhoClass"] = "WARRIOR",
+					["where"] = "The Eye of Eternity",
+					["tradeWho"] = "Angrywarrior",
 				}, -- [46]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
 					["time"] = 1673031710,
-					["tradeWho"] = "Angrywarrior",
-					["where"] = "The Eye of Eternity",
 					["tradeWhoClass"] = "WARRIOR",
+					["where"] = "The Eye of Eternity",
+					["tradeWho"] = "Angrywarrior",
 				}, -- [47]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
 					["time"] = 1673031271,
-					["tradeWho"] = "Angrywarrior",
-					["where"] = "The Eye of Eternity",
 					["tradeWhoClass"] = "WARRIOR",
+					["where"] = "The Eye of Eternity",
+					["tradeWho"] = "Angrywarrior",
 				}, -- [48]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
 					["time"] = 1673030569,
-					["tradeWho"] = "Angrywarrior",
-					["where"] = "Naxxramas",
 					["tradeWhoClass"] = "WARRIOR",
+					["where"] = "Naxxramas",
+					["tradeWho"] = "Angrywarrior",
 				}, -- [49]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
 					["time"] = 1673029385,
-					["tradeWho"] = "Angrywarrior",
-					["where"] = "Naxxramas",
 					["tradeWhoClass"] = "WARRIOR",
+					["where"] = "Naxxramas",
+					["tradeWho"] = "Angrywarrior",
 				}, -- [50]
 				{
 					["targetMoney"] = 57040000,
 					["playerMoney"] = 0,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Monikà",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "The Obsidian Sanctum",
 					["time"] = 1672933116,
 				}, -- [51]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Monikà",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "Naxxramas",
 					["time"] = 1672929356,
 				}, -- [52]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 31000000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Monikà",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "Naxxramas",
 					["time"] = 1672929272,
 				}, -- [53]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 60000000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Monikà",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "Naxxramas",
 					["time"] = 1672928148,
 				}, -- [54]
 				{
 					["targetMoney"] = 62170000,
 					["playerMoney"] = 0,
-					["tradeWhoClass"] = "WARRIOR",
 					["tradeWho"] = "Arachad",
+					["tradeWhoClass"] = "WARRIOR",
 					["where"] = "Orgrimmar",
 					["time"] = 1672853736,
 				}, -- [55]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 11000000,
-					["tradeWhoClass"] = "WARRIOR",
 					["tradeWho"] = "Arachad",
+					["tradeWhoClass"] = "WARRIOR",
 					["where"] = "Orgrimmar",
 					["time"] = 1672852572,
 				}, -- [56]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 40000000,
-					["tradeWhoClass"] = "WARRIOR",
 					["tradeWho"] = "Arachad",
+					["tradeWhoClass"] = "WARRIOR",
 					["where"] = "The Obsidian Sanctum",
 					["time"] = 1672849904,
 				}, -- [57]
@@ -1008,71 +1008,71 @@ NITdatabase = {
 					["targetMoney"] = 0,
 					["playerMoney"] = 500000,
 					["time"] = 1672219615,
-					["tradeWho"] = "Ùgah",
-					["where"] = "Icecrown",
 					["tradeWhoClass"] = "WARRIOR",
+					["where"] = "Icecrown",
+					["tradeWho"] = "Ùgah",
 				}, -- [58]
 				{
 					["targetMoney"] = 37610000,
 					["playerMoney"] = 0,
-					["tradeWhoClass"] = "DEATHKNIGHT",
 					["tradeWho"] = "Stopndie",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 					["where"] = "Borean Tundra",
 					["time"] = 1672080227,
 				}, -- [59]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 9000000,
-					["tradeWhoClass"] = "DEATHKNIGHT",
 					["tradeWho"] = "Stopndie",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 					["where"] = "Borean Tundra",
 					["time"] = 1672079374,
 				}, -- [60]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
-					["tradeWhoClass"] = "DEATHKNIGHT",
 					["tradeWho"] = "Stopndie",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 					["where"] = "Borean Tundra",
 					["time"] = 1672079223,
 				}, -- [61]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
-					["tradeWhoClass"] = "DEATHKNIGHT",
 					["tradeWho"] = "Stopndie",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 					["where"] = "Borean Tundra",
 					["time"] = 1672078709,
 				}, -- [62]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 2500000,
-					["tradeWhoClass"] = "DEATHKNIGHT",
 					["tradeWho"] = "Stopndie",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 					["where"] = "Naxxramas",
 					["time"] = 1672076892,
 				}, -- [63]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
-					["tradeWhoClass"] = "DEATHKNIGHT",
 					["tradeWho"] = "Stopndie",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 					["where"] = "Naxxramas",
 					["time"] = 1672074597,
 				}, -- [64]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
-					["tradeWhoClass"] = "DEATHKNIGHT",
 					["tradeWho"] = "Stopndie",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 					["where"] = "Naxxramas",
 					["time"] = 1672073623,
 				}, -- [65]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
-					["tradeWhoClass"] = "DEATHKNIGHT",
 					["tradeWho"] = "Stopndie",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 					["where"] = "Naxxramas",
 					["time"] = 1672071491,
 				}, -- [66]
@@ -1080,39 +1080,39 @@ NITdatabase = {
 					["targetMoney"] = 44660000,
 					["playerMoney"] = 0,
 					["time"] = 1671817709,
-					["tradeWho"] = "Gibevenedele",
-					["where"] = "The Obsidian Sanctum",
 					["tradeWhoClass"] = "DRUID",
+					["where"] = "The Obsidian Sanctum",
+					["tradeWho"] = "Gibevenedele",
 				}, -- [67]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 16000000,
 					["time"] = 1671815259,
-					["tradeWho"] = "Gibevenedele",
-					["where"] = "Naxxramas",
 					["tradeWhoClass"] = "DRUID",
+					["where"] = "Naxxramas",
+					["tradeWho"] = "Gibevenedele",
 				}, -- [68]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
-					["tradeWhoClass"] = "DRUID",
 					["tradeWho"] = "Gibevenedele",
+					["tradeWhoClass"] = "DRUID",
 					["where"] = "Naxxramas",
 					["time"] = 1671814333,
 				}, -- [69]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 26000000,
-					["tradeWhoClass"] = "DRUID",
 					["tradeWho"] = "Gibevenedele",
+					["tradeWhoClass"] = "DRUID",
 					["where"] = "Naxxramas",
 					["time"] = 1671814031,
 				}, -- [70]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
-					["tradeWhoClass"] = "DRUID",
 					["tradeWho"] = "Gibevenedele",
+					["tradeWhoClass"] = "DRUID",
 					["where"] = "Naxxramas",
 					["time"] = 1671813511,
 				}, -- [71]
@@ -1120,55 +1120,55 @@ NITdatabase = {
 					["targetMoney"] = 32750000,
 					["playerMoney"] = 0,
 					["time"] = 1671644941,
-					["tradeWho"] = "Arapally",
-					["where"] = "The Obsidian Sanctum",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "The Obsidian Sanctum",
+					["tradeWho"] = "Arapally",
 				}, -- [72]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
 					["time"] = 1671644682,
-					["tradeWho"] = "Arapally",
-					["where"] = "The Obsidian Sanctum",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "The Obsidian Sanctum",
+					["tradeWho"] = "Arapally",
 				}, -- [73]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
 					["time"] = 1671643855,
-					["tradeWho"] = "Arapally",
-					["where"] = "The Obsidian Sanctum",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "The Obsidian Sanctum",
+					["tradeWho"] = "Arapally",
 				}, -- [74]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 12000000,
 					["time"] = 1671643780,
-					["tradeWho"] = "Arapally",
-					["where"] = "The Obsidian Sanctum",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "The Obsidian Sanctum",
+					["tradeWho"] = "Arapally",
 				}, -- [75]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Arapally",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "Naxxramas",
 					["time"] = 1671638361,
 				}, -- [76]
 				{
 					["targetMoney"] = 32660000,
 					["playerMoney"] = 0,
-					["tradeWho"] = "Lastdps",
 					["tradeWhoClass"] = "HUNTER",
+					["tradeWho"] = "Lastdps",
 					["where"] = "Naxxramas",
 					["time"] = 1671557064,
 				}, -- [77]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 20000000,
-					["tradeWho"] = "Lastdps",
 					["tradeWhoClass"] = "HUNTER",
+					["tradeWho"] = "Lastdps",
 					["where"] = "Naxxramas",
 					["time"] = 1671555539,
 				}, -- [78]
@@ -1176,175 +1176,175 @@ NITdatabase = {
 					["targetMoney"] = 30360000,
 					["playerMoney"] = 0,
 					["time"] = 1671210449,
-					["tradeWho"] = "Bentebenlås",
-					["where"] = "The Obsidian Sanctum",
 					["tradeWhoClass"] = "PRIEST",
+					["where"] = "The Obsidian Sanctum",
+					["tradeWho"] = "Bentebenlås",
 				}, -- [79]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 15000000,
 					["time"] = 1671206586,
-					["tradeWho"] = "Bentebenlås",
-					["where"] = "Naxxramas",
 					["tradeWhoClass"] = "PRIEST",
+					["where"] = "Naxxramas",
+					["tradeWho"] = "Bentebenlås",
 				}, -- [80]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 60000000,
 					["time"] = 1671206146,
-					["tradeWho"] = "Bentebenlås",
-					["where"] = "Naxxramas",
 					["tradeWhoClass"] = "PRIEST",
+					["where"] = "Naxxramas",
+					["tradeWho"] = "Bentebenlås",
 				}, -- [81]
 				{
 					["targetMoney"] = 23220000,
 					["playerMoney"] = 0,
 					["time"] = 1669928750,
-					["tradeWhoClass"] = "WARRIOR",
-					["where"] = "Borean Tundra",
 					["tradeWho"] = "Angrywarrior",
+					["where"] = "Borean Tundra",
+					["tradeWhoClass"] = "WARRIOR",
 				}, -- [82]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
 					["time"] = 1669927517,
-					["tradeWhoClass"] = "DEATHKNIGHT",
-					["where"] = "The Eye of Eternity",
 					["tradeWho"] = "Ethêrnity",
+					["where"] = "The Eye of Eternity",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 				}, -- [83]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 3500000,
 					["time"] = 1669925422,
-					["tradeWhoClass"] = "WARRIOR",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Angrywarrior",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "WARRIOR",
 				}, -- [84]
 				{
 					["targetMoney"] = 5000000,
 					["playerMoney"] = 0,
 					["time"] = 1669924934,
-					["tradeWhoClass"] = "DEATHKNIGHT",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Ethêrnity",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 				}, -- [85]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 13000000,
 					["time"] = 1669924657,
-					["tradeWhoClass"] = "WARRIOR",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Angrywarrior",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "WARRIOR",
 				}, -- [86]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
 					["time"] = 1669924573,
-					["tradeWhoClass"] = "WARRIOR",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Angrywarrior",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "WARRIOR",
 				}, -- [87]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 7000000,
 					["time"] = 1669924360,
-					["tradeWhoClass"] = "WARRIOR",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Angrywarrior",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "WARRIOR",
 				}, -- [88]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 12000000,
 					["time"] = 1669924263,
-					["tradeWhoClass"] = "WARRIOR",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Angrywarrior",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "WARRIOR",
 				}, -- [89]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 8000000,
 					["time"] = 1669924112,
-					["tradeWhoClass"] = "WARRIOR",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Angrywarrior",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "WARRIOR",
 				}, -- [90]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 7000000,
 					["time"] = 1669922510,
-					["tradeWhoClass"] = "WARRIOR",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Angrywarrior",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "WARRIOR",
 				}, -- [91]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
 					["time"] = 1669922475,
-					["tradeWhoClass"] = "WARRIOR",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Angrywarrior",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "WARRIOR",
 				}, -- [92]
 				{
 					["targetMoney"] = 40160000,
 					["playerMoney"] = 0,
 					["time"] = 1668970783,
-					["tradeWhoClass"] = "WARRIOR",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Cashmeout",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "WARRIOR",
 				}, -- [93]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 20000000,
 					["time"] = 1668970099,
-					["tradeWhoClass"] = "WARRIOR",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Cashmeout",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "WARRIOR",
 				}, -- [94]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 2500000,
 					["time"] = 1668969806,
-					["tradeWhoClass"] = "WARRIOR",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Cashmeout",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "WARRIOR",
 				}, -- [95]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
 					["time"] = 1668969758,
-					["tradeWhoClass"] = "WARRIOR",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Cashmeout",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "WARRIOR",
 				}, -- [96]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
 					["time"] = 1668969289,
-					["tradeWhoClass"] = "WARRIOR",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Cashmeout",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "WARRIOR",
 				}, -- [97]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000000,
 					["time"] = 1668968458,
-					["tradeWhoClass"] = "WARRIOR",
-					["where"] = "Naxxramas",
 					["tradeWho"] = "Cashmeout",
+					["where"] = "Naxxramas",
+					["tradeWhoClass"] = "WARRIOR",
 				}, -- [98]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 5000000,
 					["time"] = 1668881504,
-					["tradeWhoClass"] = "DEATHKNIGHT",
-					["where"] = "Dalaran",
 					["tradeWho"] = "Söpö",
+					["where"] = "Dalaran",
+					["tradeWhoClass"] = "DEATHKNIGHT",
 				}, -- [99]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 50000,
-					["tradeWhoClass"] = "MAGE",
 					["tradeWho"] = "Yalih",
+					["tradeWhoClass"] = "MAGE",
 					["where"] = "Orgrimmar",
 					["time"] = 1665493410,
 				}, -- [100]
@@ -1352,39 +1352,39 @@ NITdatabase = {
 					["targetMoney"] = 0,
 					["playerMoney"] = 50000,
 					["time"] = 1663687924,
-					["tradeWho"] = "Lithilea",
-					["where"] = "Orgrimmar",
 					["tradeWhoClass"] = "MAGE",
+					["where"] = "Orgrimmar",
+					["tradeWho"] = "Lithilea",
 				}, -- [101]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 50000,
 					["time"] = 1662916003,
-					["tradeWho"] = "Eugon",
-					["where"] = "Thunder Bluff",
 					["tradeWhoClass"] = "MAGE",
+					["where"] = "Thunder Bluff",
+					["tradeWho"] = "Eugon",
 				}, -- [102]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 20000,
 					["time"] = 1662134406,
-					["tradeWhoClass"] = "MAGE",
-					["where"] = "Undercity",
 					["tradeWho"] = "Bamshal",
+					["where"] = "Undercity",
+					["tradeWhoClass"] = "MAGE",
 				}, -- [103]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 200000,
 					["time"] = 1653920243,
-					["tradeWho"] = "Axxos",
-					["where"] = "Scarlet Monastery",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "Scarlet Monastery",
+					["tradeWho"] = "Axxos",
 				}, -- [104]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 700000,
-					["tradeWhoClass"] = "MAGE",
 					["tradeWho"] = "Kawakii",
+					["tradeWhoClass"] = "MAGE",
 					["where"] = "Scarlet Monastery",
 					["time"] = 1653914568,
 				}, -- [105]
@@ -1392,15 +1392,15 @@ NITdatabase = {
 					["targetMoney"] = 0,
 					["playerMoney"] = 650000,
 					["time"] = 1653909786,
-					["tradeWhoClass"] = "MAGE",
-					["where"] = "Scarlet Monastery",
 					["tradeWho"] = "Kawakii",
+					["where"] = "Scarlet Monastery",
+					["tradeWhoClass"] = "MAGE",
 				}, -- [106]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 150000,
-					["tradeWho"] = "Extod",
 					["tradeWhoClass"] = "PALADIN",
+					["tradeWho"] = "Extod",
 					["where"] = "Scarlet Monastery",
 					["time"] = 1653907528,
 				}, -- [107]
@@ -1408,39 +1408,39 @@ NITdatabase = {
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000,
 					["time"] = 1653144185,
-					["tradeWhoClass"] = "MAGE",
-					["where"] = "Orgrimmar",
 					["tradeWho"] = "Portalguy",
+					["where"] = "Orgrimmar",
+					["tradeWhoClass"] = "MAGE",
 				}, -- [108]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 20000,
 					["time"] = 1652953584,
-					["tradeWho"] = "Moggogo",
-					["where"] = "Orgrimmar",
 					["tradeWhoClass"] = "MAGE",
+					["where"] = "Orgrimmar",
+					["tradeWho"] = "Moggogo",
 				}, -- [109]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 100000,
-					["tradeWho"] = "Prtibeegee",
 					["tradeWhoClass"] = "MAGE",
+					["tradeWho"] = "Prtibeegee",
 					["where"] = "Silvermoon City",
 					["time"] = 1648463137,
 				}, -- [110]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 850000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Zazadin",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "Stratholme",
 					["time"] = 1648059903,
 				}, -- [111]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 850000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Zazadin",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "Stratholme",
 					["time"] = 1648055465,
 				}, -- [112]
@@ -1448,9 +1448,9 @@ NITdatabase = {
 					["targetMoney"] = 0,
 					["playerMoney"] = 850000,
 					["time"] = 1648050788,
-					["tradeWhoClass"] = "PALADIN",
-					["where"] = "Stratholme",
 					["tradeWho"] = "Zazadin",
+					["where"] = "Stratholme",
+					["tradeWhoClass"] = "PALADIN",
 				}, -- [113]
 			},
 			["myChars"] = {
@@ -1490,27 +1490,27 @@ NITdatabase = {
 					["durabilityAverage"] = 100,
 					["prof2"] = "Jewelcrafting",
 					["savedInstances"] = {
-						[230945982] = {
-							["locked"] = true,
-							["resetTime"] = 1677643459,
-							["name"] = "Vault of Archavon",
-							["difficultyName"] = "25 Player",
-						},
-						[231297991] = {
-							["locked"] = true,
-							["resetTime"] = 1677470659,
-							["name"] = "Zul'Gurub",
-							["difficultyName"] = "20 Player",
-						},
 						[230930686] = {
 							["locked"] = true,
-							["resetTime"] = 1677643459,
+							["resetTime"] = 1677643336,
 							["name"] = "Vault of Archavon",
 							["difficultyName"] = "10 Player",
 						},
+						[231297991] = {
+							["locked"] = true,
+							["resetTime"] = 1677470536,
+							["name"] = "Zul'Gurub",
+							["difficultyName"] = "20 Player",
+						},
+						[230945982] = {
+							["locked"] = true,
+							["resetTime"] = 1677643336,
+							["name"] = "Vault of Archavon",
+							["difficultyName"] = "25 Player",
+						},
 						[230950296] = {
 							["locked"] = true,
-							["resetTime"] = 1677643459,
+							["resetTime"] = 1677643336,
 							["name"] = "Karazhan",
 							["difficultyName"] = "10 Player",
 						},
@@ -1521,14 +1521,14 @@ NITdatabase = {
 					["prof1"] = "Inscription",
 					["restedXP"] = 0,
 					["totalBagSlots"] = 100,
-					["freeBagSlots"] = 46,
+					["freeBagSlots"] = 49,
 					["arenaPoints"] = 0,
 					["guild"] = "CUBE",
 					["raceEnglish"] = "Orc",
 					["profSkillMax1"] = 450,
 					["resting"] = true,
-					["time"] = 1677365211,
-					["gold"] = 192601529,
+					["time"] = 1677413085,
+					["gold"] = 181967321,
 					["profSkill2"] = 450,
 					["realm"] = "Golemagg",
 					["marks"] = {
@@ -1542,7 +1542,7 @@ NITdatabase = {
 					["currentXP"] = 0,
 					["raceLocalized"] = "Orc",
 					["fishingSkillMax"] = 0,
-					["firstaidSkill"] = 402,
+					["playerName"] = "Battlearm",
 					["classEnglish"] = "DEATHKNIGHT",
 					["guildRankName"] = "Alt",
 					["cookingSkillMax"] = 0,
@@ -1558,7 +1558,7 @@ NITdatabase = {
 							["time"] = 1677388866.3125,
 						},
 					},
-					["playerName"] = "Battlearm",
+					["firstaidSkill"] = 402,
 					["classLocalized"] = "Death Knight",
 					["currency"] = {
 						[237547] = {
@@ -1574,7 +1574,7 @@ NITdatabase = {
 						[134138] = {
 							["max"] = 0,
 							["name"] = "Dalaran Jewelcrafter's Token",
-							["count"] = 10,
+							["count"] = 11,
 						},
 						[135947] = {
 							["max"] = 0,
@@ -1672,11 +1672,11 @@ NITdatabase = {
 					["firstaidSkillMax"] = 0,
 					["level"] = 80,
 					["freeBagSlots"] = 53,
-					["guild"] = "CUBE",
 					["currentXP"] = 0,
+					["guild"] = "CUBE",
 					["guildRankName"] = "Alt",
 					["raceEnglish"] = "Orc",
-					["profSkillMax1"] = 450,
+					["ammo"] = 9212,
 					["race"] = "Orc",
 					["petLoyaltyRate"] = 20,
 					["firstaidSkill"] = 0,
@@ -1710,7 +1710,7 @@ NITdatabase = {
 					["playerName"] = "Mxzq",
 					["classEnglish"] = "HUNTER",
 					["hellfireCitadelAttune"] = true,
-					["ammo"] = 9212,
+					["profSkillMax1"] = 450,
 					["profSkillMax2"] = 450,
 					["hasPet"] = true,
 					["petFamily"] = "Wolf",
@@ -1742,7 +1742,7 @@ NITdatabase = {
 					["raceEnglish"] = "Scourge",
 					["profSkillMax1"] = 75,
 					["resting"] = true,
-					["time"] = 1677267494,
+					["time"] = 1677413164,
 					["gold"] = 22766129,
 					["currency"] = {
 					},
@@ -1755,10 +1755,10 @@ NITdatabase = {
 						[20558] = 0,
 						[47395] = 0,
 					},
-					["firstaidSkill"] = 0,
+					["playerName"] = "Mxyz",
 					["raceLocalized"] = "Undead",
 					["fishingSkillMax"] = 0,
-					["playerName"] = "Mxyz",
+					["firstaidSkill"] = 0,
 					["classEnglish"] = "PRIEST",
 					["profSkill2"] = 0,
 					["cookingSkillMax"] = 0,
@@ -1848,10 +1848,10 @@ NITdatabase = {
 					["firstaidSkillMax"] = 0,
 					["realm"] = "Golemagg",
 					["level"] = 1,
-					["firstaidSkill"] = 0,
-					["raceLocalized"] = "Tauren",
-					["fishingSkillMax"] = 0,
 					["playerName"] = "Handrmandr",
+					["raceLocalized"] = "Tauren",
+					["cookingSkillMax"] = 0,
+					["firstaidSkill"] = 0,
 					["classEnglish"] = "WARRIOR",
 					["guildRankName"] = "No guild rank",
 					["currentXP"] = 0,
@@ -1869,222 +1869,9 @@ NITdatabase = {
 					["profSkill2"] = 0,
 					["cooldowns"] = {
 					},
-					["cookingSkillMax"] = 0,
+					["fishingSkillMax"] = 0,
 					["classLocalized"] = "Warrior",
 					["resting"] = false,
-				},
-				["Battitude"] = {
-					["fishingSkill"] = 0,
-					["cookingSkill"] = 0,
-					["profSkill1"] = 0,
-					["durabilityAverage"] = 100,
-					["prof2"] = "none",
-					["savedInstances"] = {
-					},
-					["honor"] = 0,
-					["maxXP"] = 4500,
-					["gender"] = "Male",
-					["prof1"] = "none",
-					["restedXP"] = 6750,
-					["totalBagSlots"] = 100,
-					["freeBagSlots"] = 99,
-					["arenaPoints"] = 0,
-					["guild"] = "No guild",
-					["raceEnglish"] = "Scourge",
-					["profSkillMax1"] = 0,
-					["resting"] = true,
-					["time"] = 1675536531,
-					["gold"] = 998227,
-					["currency"] = {
-					},
-					["realm"] = "Golemagg",
-					["marks"] = {
-						[20559] = 0,
-						[20560] = 0,
-						[29024] = 0,
-						[42425] = 0,
-						[20558] = 0,
-						[47395] = 0,
-					},
-					["playerName"] = "Battitude",
-					["raceLocalized"] = "Undead",
-					["fishingSkillMax"] = 0,
-					["firstaidSkill"] = 0,
-					["classEnglish"] = "ROGUE",
-					["profSkill2"] = 0,
-					["profSkillMax2"] = 0,
-					["currentXP"] = 1944,
-					["level"] = 7,
-					["cookingSkillMax"] = 0,
-					["race"] = "Undead",
-					["cooldowns"] = {
-					},
-					["firstaidSkillMax"] = 0,
-					["classLocalized"] = "Rogue",
-					["guildRankName"] = "No guild rank",
-				},
-				["Moolatz"] = {
-					[17026] = 0,
-					["cookingSkill"] = 0,
-					["profSkill1"] = 465,
-					["instances"] = {
-						[616] = 2,
-						[30] = 58,
-						[604] = 4,
-						[602] = 4,
-						[209] = 6,
-						[600] = 5,
-						[557] = 1,
-						[542] = 1,
-						[601] = 4,
-						[543] = 3,
-						[489] = 19,
-						[575] = 2,
-						[129] = 2,
-						[109] = 2,
-						[624] = 2,
-						[608] = 2,
-						[43] = 8,
-						[230] = 3,
-						[576] = 3,
-						[556] = 1,
-						[47] = 5,
-						[48] = 1,
-						[389] = 7,
-						[619] = 4,
-						[566] = 42,
-						[595] = 9,
-						[533] = 6,
-						[547] = 1,
-						[599] = 1,
-						[615] = 1,
-						[189] = 23,
-						[33] = 3,
-					},
-					["durabilityAverage"] = 100,
-					["prof2"] = "Skinning",
-					[17038] = 0,
-					["savedInstances"] = {
-					},
-					["honor"] = 1692,
-					["maxXP"] = 1691700,
-					["gender"] = "Male",
-					[44605] = 32,
-					["prof1"] = "Herbalism",
-					["restedXP"] = 0,
-					["totalBagSlots"] = 100,
-					["freeBagSlots"] = 52,
-					["arenaPoints"] = 0,
-					["guildRankName"] = "Alt",
-					["raceEnglish"] = "Tauren",
-					["profSkillMax1"] = 465,
-					["currentXP"] = 0,
-					["resting"] = true,
-					["time"] = 1677145481,
-					["gold"] = 4923982,
-					["marks"] = {
-						[20559] = 0,
-						[20560] = 0,
-						[29024] = 0,
-						[42425] = 0,
-						[20558] = 0,
-						[47395] = 0,
-					},
-					["profSkill2"] = 450,
-					["level"] = 80,
-					["realm"] = "Golemagg",
-					["cookingSkillMax"] = 0,
-					["playerName"] = "Moolatz",
-					["raceLocalized"] = "Tauren",
-					["fishingSkillMax"] = 0,
-					["firstaidSkill"] = 0,
-					["classEnglish"] = "DRUID",
-					["fishingSkill"] = 0,
-					["race"] = "Tauren",
-					["guild"] = "CUBE",
-					["firstaidSkillMax"] = 0,
-					[44614] = 0,
-					["profSkillMax2"] = 450,
-					["cooldowns"] = {
-					},
-					["currency"] = {
-						[237547] = {
-							["max"] = 0,
-							["name"] = "Emblem of Valor",
-							["count"] = 36,
-						},
-						[135885] = {
-							["max"] = 0,
-							["name"] = "Emblem of Conquest",
-							["count"] = 4,
-						},
-						[135947] = {
-							["max"] = 0,
-							["name"] = "Emblem of Heroism",
-							["count"] = 6,
-						},
-						[134375] = {
-							["max"] = 0,
-							["name"] = "Stone Keeper's Shard",
-							["count"] = 271,
-						},
-					},
-					["classLocalized"] = "Druid",
-					["shadowLabAttune"] = true,
-				},
-				["Augustin"] = {
-					["fishingSkill"] = 0,
-					["cookingSkill"] = 0,
-					["profSkill1"] = 9,
-					[17031] = 6,
-					[17032] = 7,
-					["prof2"] = "Tailoring",
-					["savedInstances"] = {
-					},
-					["honor"] = 0,
-					["maxXP"] = 142500,
-					["gender"] = "Male",
-					["prof1"] = "Enchanting",
-					["restedXP"] = 213750,
-					["totalBagSlots"] = 76,
-					["freeBagSlots"] = 68,
-					["arenaPoints"] = 0,
-					[17056] = 4,
-					["guildRankName"] = "No guild rank",
-					["raceEnglish"] = "Scourge",
-					["profSkillMax1"] = 75,
-					["resting"] = true,
-					["time"] = 1675000235,
-					["gold"] = 96743,
-					["marks"] = {
-						[20559] = 0,
-						[20560] = 0,
-						[29024] = 0,
-						[42425] = 0,
-						[20558] = 0,
-						[47395] = 0,
-					},
-					["currency"] = {
-					},
-					["profSkill2"] = 150,
-					["realm"] = "Golemagg",
-					["fishingSkillMax"] = 0,
-					["firstaidSkill"] = 300,
-					["raceLocalized"] = "Undead",
-					["cookingSkillMax"] = 0,
-					["playerName"] = "Augustin",
-					["classEnglish"] = "MAGE",
-					["level"] = 54,
-					["durabilityAverage"] = 100,
-					["profSkillMax2"] = 225,
-					["race"] = "Undead",
-					["currentXP"] = 18698,
-					[17020] = 0,
-					["cooldowns"] = {
-					},
-					["firstaidSkillMax"] = 300,
-					["classLocalized"] = "Mage",
-					["guild"] = "No guild",
 				},
 				["Vermina"] = {
 					["fishingSkill"] = 0,
@@ -2145,7 +1932,7 @@ NITdatabase = {
 					["profSkillMax2"] = 450,
 					["firstaidSkill"] = 150,
 					["raceLocalized"] = "Blood Elf",
-					["fishingSkillMax"] = 0,
+					["cookingSkillMax"] = 0,
 					["playerName"] = "Vermina",
 					["classEnglish"] = "PALADIN",
 					["hellfireCitadelAttune"] = true,
@@ -2153,12 +1940,224 @@ NITdatabase = {
 					["guild"] = "CUBE",
 					["currentXP"] = 269288,
 					[21177] = 282,
-					["cookingSkillMax"] = 0,
+					["fishingSkillMax"] = 0,
 					["cooldowns"] = {
 					},
 					["profSkill2"] = 363,
 					["classLocalized"] = "Paladin",
 					["shadowLabAttune"] = true,
+				},
+				["Moolatz"] = {
+					[17026] = 0,
+					["cookingSkill"] = 0,
+					["profSkill1"] = 465,
+					["instances"] = {
+						[616] = 2,
+						[30] = 58,
+						[542] = 1,
+						[602] = 4,
+						[209] = 6,
+						[600] = 5,
+						[33] = 3,
+						[604] = 4,
+						[601] = 4,
+						[543] = 3,
+						[489] = 19,
+						[575] = 2,
+						[129] = 2,
+						[109] = 2,
+						[43] = 8,
+						[608] = 2,
+						[624] = 2,
+						[547] = 1,
+						[576] = 3,
+						[556] = 1,
+						[47] = 5,
+						[48] = 1,
+						[389] = 7,
+						[619] = 4,
+						[566] = 42,
+						[595] = 9,
+						[533] = 6,
+						[230] = 3,
+						[599] = 1,
+						[615] = 1,
+						[189] = 23,
+						[557] = 1,
+					},
+					["durabilityAverage"] = 100,
+					["prof2"] = "Skinning",
+					[17038] = 0,
+					["savedInstances"] = {
+					},
+					["honor"] = 1692,
+					["maxXP"] = 1691700,
+					["gender"] = "Male",
+					[44605] = 32,
+					["prof1"] = "Herbalism",
+					["restedXP"] = 0,
+					["totalBagSlots"] = 100,
+					["freeBagSlots"] = 52,
+					["arenaPoints"] = 0,
+					["guildRankName"] = "Alt",
+					["raceEnglish"] = "Tauren",
+					["profSkillMax1"] = 465,
+					["currentXP"] = 0,
+					["resting"] = true,
+					["time"] = 1677145481,
+					["gold"] = 4923982,
+					["marks"] = {
+						[20559] = 0,
+						[20560] = 0,
+						[29024] = 0,
+						[42425] = 0,
+						[20558] = 0,
+						[47395] = 0,
+					},
+					["profSkill2"] = 450,
+					["level"] = 80,
+					["realm"] = "Golemagg",
+					["fishingSkillMax"] = 0,
+					["playerName"] = "Moolatz",
+					["raceLocalized"] = "Tauren",
+					["cookingSkillMax"] = 0,
+					["firstaidSkill"] = 0,
+					["classEnglish"] = "DRUID",
+					["fishingSkill"] = 0,
+					["race"] = "Tauren",
+					["guild"] = "CUBE",
+					["firstaidSkillMax"] = 0,
+					[44614] = 0,
+					["profSkillMax2"] = 450,
+					["cooldowns"] = {
+					},
+					["currency"] = {
+						[237547] = {
+							["max"] = 0,
+							["name"] = "Emblem of Valor",
+							["count"] = 36,
+						},
+						[135885] = {
+							["max"] = 0,
+							["name"] = "Emblem of Conquest",
+							["count"] = 4,
+						},
+						[135947] = {
+							["max"] = 0,
+							["name"] = "Emblem of Heroism",
+							["count"] = 6,
+						},
+						[134375] = {
+							["max"] = 0,
+							["name"] = "Stone Keeper's Shard",
+							["count"] = 271,
+						},
+					},
+					["classLocalized"] = "Druid",
+					["shadowLabAttune"] = true,
+				},
+				["Tadibey"] = {
+					["fishingSkill"] = 0,
+					["cookingSkill"] = 0,
+					["profSkill1"] = 0,
+					["durabilityAverage"] = 100,
+					["level"] = 11,
+					["savedInstances"] = {
+					},
+					["honor"] = 0,
+					["maxXP"] = 8700,
+					["gender"] = "Male",
+					["prof1"] = "none",
+					["restedXP"] = 13050,
+					["totalBagSlots"] = 76,
+					["freeBagSlots"] = 71,
+					["arenaPoints"] = 0,
+					[17057] = 0,
+					[17058] = 0,
+					["raceEnglish"] = "Orc",
+					["profSkillMax1"] = 0,
+					["currency"] = {
+					},
+					["time"] = 1677413495,
+					["gold"] = 298737,
+					["guild"] = "No guild",
+					["firstaidSkillMax"] = 0,
+					["guildRankName"] = "No guild rank",
+					["realm"] = "Golemagg",
+					["currentXP"] = 3392,
+					["playerName"] = "Tadibey",
+					["raceLocalized"] = "Orc",
+					["fishingSkillMax"] = 0,
+					["firstaidSkill"] = 0,
+					["classEnglish"] = "SHAMAN",
+					["race"] = "Orc",
+					["prof2"] = "none",
+					["marks"] = {
+						[20559] = 0,
+						[20560] = 0,
+						[29024] = 0,
+						[42425] = 0,
+						[20558] = 0,
+						[47395] = 0,
+					},
+					[17030] = 0,
+					["profSkill2"] = 0,
+					["cookingSkillMax"] = 0,
+					["cooldowns"] = {
+					},
+					["profSkillMax2"] = 0,
+					["classLocalized"] = "Shaman",
+					["resting"] = true,
+				},
+				["Battitude"] = {
+					["fishingSkill"] = 0,
+					["cookingSkill"] = 0,
+					["profSkill1"] = 0,
+					["durabilityAverage"] = 100,
+					["prof2"] = "none",
+					["savedInstances"] = {
+					},
+					["honor"] = 0,
+					["maxXP"] = 4500,
+					["gender"] = "Male",
+					["prof1"] = "none",
+					["restedXP"] = 6750,
+					["totalBagSlots"] = 100,
+					["freeBagSlots"] = 99,
+					["arenaPoints"] = 0,
+					["guild"] = "No guild",
+					["raceEnglish"] = "Scourge",
+					["profSkillMax1"] = 0,
+					["resting"] = true,
+					["time"] = 1675536531,
+					["gold"] = 998227,
+					["currency"] = {
+					},
+					["realm"] = "Golemagg",
+					["marks"] = {
+						[20559] = 0,
+						[20560] = 0,
+						[29024] = 0,
+						[42425] = 0,
+						[20558] = 0,
+						[47395] = 0,
+					},
+					["firstaidSkill"] = 0,
+					["raceLocalized"] = "Undead",
+					["fishingSkillMax"] = 0,
+					["playerName"] = "Battitude",
+					["classEnglish"] = "ROGUE",
+					["profSkill2"] = 0,
+					["profSkillMax2"] = 0,
+					["currentXP"] = 1944,
+					["level"] = 7,
+					["cookingSkillMax"] = 0,
+					["race"] = "Undead",
+					["cooldowns"] = {
+					},
+					["firstaidSkillMax"] = 0,
+					["classLocalized"] = "Rogue",
+					["guildRankName"] = "No guild rank",
 				},
 				["Miqa"] = {
 					["fishingSkill"] = 0,
@@ -2190,7 +2189,7 @@ NITdatabase = {
 					["prof2"] = "none",
 					["raceLocalized"] = "Troll",
 					["fishingSkillMax"] = 0,
-					["firstaidSkill"] = 0,
+					["playerName"] = "Miqa",
 					["classEnglish"] = "PRIEST",
 					["cookingSkillMax"] = 0,
 					["profSkill2"] = 0,
@@ -2207,47 +2206,35 @@ NITdatabase = {
 					["guild"] = "No guild",
 					["cooldowns"] = {
 					},
-					["playerName"] = "Miqa",
+					["firstaidSkill"] = 0,
 					["classLocalized"] = "Priest",
 					["currency"] = {
 					},
 				},
-				["Tadibey"] = {
+				["Augustin"] = {
 					["fishingSkill"] = 0,
 					["cookingSkill"] = 0,
-					["profSkill1"] = 0,
-					["durabilityAverage"] = 100,
-					["level"] = 11,
+					["profSkill1"] = 9,
+					[17031] = 6,
+					[17032] = 7,
+					["prof2"] = "Tailoring",
 					["savedInstances"] = {
 					},
 					["honor"] = 0,
-					["maxXP"] = 8700,
+					["maxXP"] = 142500,
 					["gender"] = "Male",
-					["prof1"] = "none",
-					["restedXP"] = 13050,
+					["prof1"] = "Enchanting",
+					["restedXP"] = 213750,
 					["totalBagSlots"] = 76,
-					["freeBagSlots"] = 71,
+					["freeBagSlots"] = 68,
 					["arenaPoints"] = 0,
-					[17057] = 0,
-					[17058] = 0,
-					["raceEnglish"] = "Orc",
-					["profSkillMax1"] = 0,
-					["currency"] = {
-					},
-					["time"] = 1675000321,
-					["gold"] = 298737,
-					["guild"] = "No guild",
-					["firstaidSkillMax"] = 0,
+					[17056] = 4,
 					["guildRankName"] = "No guild rank",
-					["realm"] = "Golemagg",
-					["currentXP"] = 3392,
-					["firstaidSkill"] = 0,
-					["raceLocalized"] = "Orc",
-					["cookingSkillMax"] = 0,
-					["playerName"] = "Tadibey",
-					["classEnglish"] = "SHAMAN",
-					["race"] = "Orc",
-					["prof2"] = "none",
+					["raceEnglish"] = "Scourge",
+					["profSkillMax1"] = 75,
+					["resting"] = true,
+					["time"] = 1675000235,
+					["gold"] = 96743,
 					["marks"] = {
 						[20559] = 0,
 						[20560] = 0,
@@ -2256,14 +2243,27 @@ NITdatabase = {
 						[20558] = 0,
 						[47395] = 0,
 					},
-					[17030] = 0,
-					["profSkill2"] = 0,
+					["currency"] = {
+					},
+					["profSkill2"] = 150,
+					["realm"] = "Golemagg",
 					["fishingSkillMax"] = 0,
+					["firstaidSkill"] = 300,
+					["raceLocalized"] = "Undead",
+					["cookingSkillMax"] = 0,
+					["playerName"] = "Augustin",
+					["classEnglish"] = "MAGE",
+					["level"] = 54,
+					["durabilityAverage"] = 100,
+					["profSkillMax2"] = 225,
+					["race"] = "Undead",
+					["currentXP"] = 18698,
+					[17020] = 0,
 					["cooldowns"] = {
 					},
-					["profSkillMax2"] = 0,
-					["classLocalized"] = "Shaman",
-					["resting"] = true,
+					["firstaidSkillMax"] = 300,
+					["classLocalized"] = "Mage",
+					["guild"] = "No guild",
 				},
 				["Vermin"] = {
 					["fishingSkill"] = 25,
@@ -2371,15 +2371,15 @@ NITdatabase = {
 							["name"] = "Stone Keeper's Shard",
 							["count"] = 371,
 						},
-						[135947] = {
-							["max"] = 0,
-							["name"] = "Emblem of Heroism",
-							["count"] = 0,
-						},
 						[135884] = {
 							["max"] = 0,
 							["name"] = "Badge of Justice",
 							["count"] = 8,
+						},
+						[135947] = {
+							["max"] = 0,
+							["name"] = "Emblem of Heroism",
+							["count"] = 0,
 						},
 						[135885] = {
 							["max"] = 0,
@@ -2401,15 +2401,15 @@ NITdatabase = {
 					["profSkillMax2"] = 450,
 					["realm"] = "Golemagg",
 					["prof2"] = "Engineering",
-					["playerName"] = "Vermin",
-					["raceLocalized"] = "Orc",
-					["cookingSkillMax"] = 225,
 					["firstaidSkill"] = 444,
+					["raceLocalized"] = "Orc",
+					["fishingSkillMax"] = 75,
+					["playerName"] = "Vermin",
 					["classEnglish"] = "WARRIOR",
 					["hellfireCitadelAttune"] = true,
 					["resting"] = true,
 					["durabilityAverage"] = 100,
-					["fishingSkillMax"] = 75,
+					["cookingSkillMax"] = 225,
 					["guildRankName"] = "Member",
 					["guild"] = "CUBE",
 					["cooldowns"] = {
@@ -3507,11 +3507,11 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Happy Burstday",
 						},
-						["Brolik"] = {
-							["class"] = "Mage",
+						["Abominatión"] = {
+							["class"] = "Rogue",
 							["level"] = 80,
-							["classEnglish"] = "MAGE",
-							["guildName"] = "Extinction",
+							["classEnglish"] = "ROGUE",
+							["guildName"] = "Her Royal Guard",
 						},
 						["Kumflay"] = {
 							["class"] = "Priest",
@@ -3525,11 +3525,11 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["guildName"] = "Space Murlocs",
 						},
-						["Abominatión"] = {
-							["class"] = "Rogue",
+						["Brolik"] = {
+							["class"] = "Mage",
 							["level"] = 80,
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "Her Royal Guard",
+							["classEnglish"] = "MAGE",
+							["guildName"] = "Extinction",
 						},
 						["Prosec"] = {
 							["class"] = "Paladin",
@@ -4923,16 +4923,16 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Perfect Dark x",
 						},
-						["Cauth"] = {
-							["level"] = 80,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-						},
 						["Moonasun"] = {
 							["level"] = 80,
 							["class"] = "Shaman",
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "Griefers",
+						},
+						["Cauth"] = {
+							["level"] = 80,
+							["class"] = "Rogue",
+							["classEnglish"] = "ROGUE",
 						},
 						["Siwuha"] = {
 							["level"] = 80,
@@ -5785,10 +5785,11 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["guildName"] = "Quality Control",
 						},
-						["Tengl"] = {
+						["Over"] = {
+							["class"] = "Warrior",
 							["level"] = 80,
-							["classEnglish"] = "SHAMAN",
-							["class"] = "Shaman",
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "La Primera Guerra",
 						},
 						["Clammy"] = {
 							["level"] = 80,
@@ -5824,11 +5825,10 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["guildName"] = "i am TOO OLD for this",
 						},
-						["Over"] = {
-							["class"] = "Warrior",
+						["Tengl"] = {
 							["level"] = 80,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "La Primera Guerra",
+							["classEnglish"] = "SHAMAN",
+							["class"] = "Shaman",
 						},
 						["Tarretha"] = {
 							["class"] = "Mage",
@@ -5972,17 +5972,17 @@ NITdatabase = {
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "Chaos Legends",
 						},
-						["Guldanbørge"] = {
-							["class"] = "Warlock",
-							["level"] = 80,
-							["classEnglish"] = "WARLOCK",
-							["guildName"] = "Oil",
-						},
 						["Nerdina"] = {
 							["class"] = "Paladin",
 							["level"] = 80,
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Visual Learners",
+						},
+						["Guldanbørge"] = {
+							["class"] = "Warlock",
+							["level"] = 80,
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "Oil",
 						},
 						["Cruzerzz"] = {
 							["class"] = "Paladin",
@@ -6143,17 +6143,17 @@ NITdatabase = {
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "Chaos Legends",
 						},
-						["Nerdina"] = {
-							["class"] = "Paladin",
-							["level"] = 80,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Visual Learners",
-						},
 						["Guldanbørge"] = {
 							["class"] = "Warlock",
 							["level"] = 80,
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "Oil",
+						},
+						["Nerdina"] = {
+							["class"] = "Paladin",
+							["level"] = 80,
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Visual Learners",
 						},
 						["Cruzerzz"] = {
 							["class"] = "Paladin",
@@ -6265,11 +6265,10 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Deep Thunder",
 						},
-						["Calurkk"] = {
-							["class"] = "Death Knight",
+						["Voldemôrt"] = {
 							["level"] = 80,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Trash Pandas",
+							["classEnglish"] = "DRUID",
+							["class"] = "Druid",
 						},
 						["Hämid"] = {
 							["class"] = "Priest",
@@ -6283,21 +6282,21 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "CUBE",
 						},
+						["Zugmol"] = {
+							["level"] = 80,
+							["classEnglish"] = "WARLOCK",
+							["class"] = "Warlock",
+						},
+						["Berzerke"] = {
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["class"] = "Warrior",
+						},
 						["Vjuh"] = {
 							["class"] = "Shaman",
 							["level"] = 80,
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "The Farmers Market",
-						},
-						["Derindarbe"] = {
-							["level"] = 80,
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
-						},
-						["Zugmol"] = {
-							["level"] = 80,
-							["classEnglish"] = "WARLOCK",
-							["class"] = "Warlock",
 						},
 						["Mazikëen"] = {
 							["level"] = 80,
@@ -6345,10 +6344,10 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Happy Friends",
 						},
-						["Berzerke"] = {
+						["Derindarbe"] = {
 							["level"] = 80,
-							["classEnglish"] = "WARRIOR",
-							["class"] = "Warrior",
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
 						},
 						["Hehehkk"] = {
 							["class"] = "Shaman",
@@ -6356,10 +6355,11 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "Mellanmaxad",
 						},
-						["Voldemôrt"] = {
+						["Calurkk"] = {
+							["class"] = "Death Knight",
 							["level"] = 80,
-							["classEnglish"] = "DRUID",
-							["class"] = "Druid",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Trash Pandas",
 						},
 						["Nzrth"] = {
 							["class"] = "Druid",
@@ -7771,12 +7771,11 @@ NITdatabase = {
 							["level"] = 80,
 							["class"] = "Rogue",
 						},
-						["Lunetia"] = {
-							["name"] = "Lunetia",
-							["guildName"] = "Troll Toll",
-							["classEnglish"] = "WARLOCK",
+						["Vvyleron"] = {
 							["level"] = 80,
-							["class"] = "Warlock",
+							["class"] = "Mage",
+							["name"] = "Vvyleron",
+							["classEnglish"] = "MAGE",
 						},
 						["Raizuken"] = {
 							["name"] = "Raizuken",
@@ -7785,11 +7784,12 @@ NITdatabase = {
 							["level"] = 80,
 							["class"] = "Priest",
 						},
-						["Vvyleron"] = {
+						["Lunetia"] = {
+							["name"] = "Lunetia",
+							["guildName"] = "Troll Toll",
+							["classEnglish"] = "WARLOCK",
 							["level"] = 80,
-							["class"] = "Mage",
-							["name"] = "Vvyleron",
-							["classEnglish"] = "MAGE",
+							["class"] = "Warlock",
 						},
 						["Hakashino"] = {
 							["name"] = "Hakashino",
@@ -9084,11 +9084,11 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Trident",
 						},
-						["Hély"] = {
+						["Snøwbâll"] = {
 							["level"] = 80,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Luftens Hjältar",
+							["class"] = "Mage",
+							["classEnglish"] = "MAGE",
+							["guildName"] = "Invictús",
 						},
 						["Zhulda"] = {
 							["level"] = 80,
@@ -9096,11 +9096,11 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["guildName"] = "Keyboard Warriors",
 						},
-						["Snøwbâll"] = {
+						["Hély"] = {
 							["level"] = 80,
-							["class"] = "Mage",
-							["classEnglish"] = "MAGE",
-							["guildName"] = "Invictús",
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Luftens Hjältar",
 						},
 						["Thesaurus"] = {
 							["level"] = 80,
@@ -9258,11 +9258,11 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Trident",
 						},
-						["Hély"] = {
+						["Snøwbâll"] = {
 							["level"] = 80,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Luftens Hjältar",
+							["class"] = "Mage",
+							["classEnglish"] = "MAGE",
+							["guildName"] = "Invictús",
 						},
 						["Zhulda"] = {
 							["level"] = 80,
@@ -9270,11 +9270,11 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["guildName"] = "Keyboard Warriors",
 						},
-						["Snøwbâll"] = {
+						["Hély"] = {
 							["level"] = 80,
-							["class"] = "Mage",
-							["classEnglish"] = "MAGE",
-							["guildName"] = "Invictús",
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Luftens Hjältar",
 						},
 						["Thesaurus"] = {
 							["level"] = 80,
@@ -9432,11 +9432,11 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Trident",
 						},
-						["Hély"] = {
+						["Snøwbâll"] = {
 							["level"] = 80,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Luftens Hjältar",
+							["class"] = "Mage",
+							["classEnglish"] = "MAGE",
+							["guildName"] = "Invictús",
 						},
 						["Zhulda"] = {
 							["level"] = 80,
@@ -9444,11 +9444,11 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["guildName"] = "Keyboard Warriors",
 						},
-						["Snøwbâll"] = {
+						["Hély"] = {
 							["level"] = 80,
-							["class"] = "Mage",
-							["classEnglish"] = "MAGE",
-							["guildName"] = "Invictús",
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Luftens Hjältar",
 						},
 						["Thesaurus"] = {
 							["level"] = 80,
@@ -10187,11 +10187,11 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Trash Pandas",
 						},
-						["Hemous"] = {
-							["class"] = "Priest",
+						["Gremary"] = {
+							["class"] = "Warrior",
 							["level"] = 80,
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "Perfect Dark x",
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Keyboard Warriors",
 						},
 						["Recobe"] = {
 							["level"] = 80,
@@ -10238,11 +10238,11 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["class"] = "Mage",
 						},
-						["Gremary"] = {
-							["class"] = "Warrior",
+						["Hemous"] = {
+							["class"] = "Priest",
 							["level"] = 80,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Keyboard Warriors",
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "Perfect Dark x",
 						},
 						["Painsempai"] = {
 							["class"] = "Shaman",
@@ -10359,11 +10359,11 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Trash Pandas",
 						},
-						["Hemous"] = {
-							["class"] = "Priest",
+						["Gremary"] = {
+							["class"] = "Warrior",
 							["level"] = 80,
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "Perfect Dark x",
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Keyboard Warriors",
 						},
 						["Recobe"] = {
 							["level"] = 80,
@@ -10410,11 +10410,11 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["class"] = "Mage",
 						},
-						["Gremary"] = {
-							["class"] = "Warrior",
+						["Hemous"] = {
+							["class"] = "Priest",
 							["level"] = 80,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Keyboard Warriors",
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "Perfect Dark x",
 						},
 						["Painsempai"] = {
 							["class"] = "Shaman",
@@ -10499,15 +10499,15 @@ NITdatabase = {
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
-						["Murgoi"] = {
-							["level"] = 80,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-						},
 						["Kukeniröven"] = {
 							["level"] = 80,
 							["class"] = "Priest",
 							["classEnglish"] = "PRIEST",
+						},
+						["Murgoi"] = {
+							["level"] = 80,
+							["class"] = "Rogue",
+							["classEnglish"] = "ROGUE",
 						},
 						["Firepizza"] = {
 							["level"] = 80,
@@ -10583,22 +10583,22 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Perfect Dark x",
 						},
-						["Mktofik"] = {
+						["Kreonn"] = {
 							["level"] = 80,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-							["guildName"] = "LOOT AND PARSES",
+							["class"] = "Mage",
+							["classEnglish"] = "MAGE",
+							["guildName"] = "Legion of Doom",
 						},
 						["Impolite"] = {
 							["level"] = 80,
 							["class"] = "Mage",
 							["classEnglish"] = "MAGE",
 						},
-						["Kreonn"] = {
+						["Mktofik"] = {
 							["level"] = 80,
-							["class"] = "Mage",
-							["classEnglish"] = "MAGE",
-							["guildName"] = "Legion of Doom",
+							["class"] = "Druid",
+							["classEnglish"] = "DRUID",
+							["guildName"] = "LOOT AND PARSES",
 						},
 						["Painsempai"] = {
 							["level"] = 80,
@@ -11010,15 +11010,15 @@ NITdatabase = {
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
+						["Mkvdari"] = {
+							["level"] = 80,
+							["class"] = "Priest",
+							["classEnglish"] = "PRIEST",
+						},
 						["Vielbesser"] = {
 							["level"] = 80,
 							["class"] = "Shaman",
 							["classEnglish"] = "SHAMAN",
-						},
-						["Dynami"] = {
-							["level"] = 80,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Boomfuk"] = {
 							["level"] = 80,
@@ -11055,15 +11055,15 @@ NITdatabase = {
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
-						["Mkvdari"] = {
-							["level"] = 80,
-							["class"] = "Priest",
-							["classEnglish"] = "PRIEST",
-						},
 						["Anteklain"] = {
 							["level"] = 80,
 							["class"] = "Rogue",
 							["classEnglish"] = "ROGUE",
+						},
+						["Dynami"] = {
+							["level"] = 80,
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Lmj"] = {
 							["level"] = 80,
@@ -11903,23 +11903,23 @@ NITdatabase = {
 					["GUID"] = "Creature-0-4445-547-6603-17942-00005E62E6",
 					["leftMoney"] = 0,
 					["group"] = {
-						["Teflondon"] = {
-							["level"] = 63,
-							["class"] = "Warlock",
-							["classEnglish"] = "WARLOCK",
-							["guildName"] = "Equilibrium",
-						},
-						["Daufi"] = {
-							["level"] = 62,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "LevelUp Inc",
-						},
 						["Jaynn"] = {
 							["level"] = 63,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Twentynine",
+						},
+						["Vermina"] = {
+							["level"] = 65,
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "CUBE",
+						},
+						["Teflondon"] = {
+							["level"] = 63,
+							["class"] = "Warlock",
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "Equilibrium",
 						},
 						["Nahayu"] = {
 							["level"] = 62,
@@ -11927,11 +11927,11 @@ NITdatabase = {
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "LevelUp Inc",
 						},
-						["Vermina"] = {
-							["level"] = 65,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "CUBE",
+						["Daufi"] = {
+							["level"] = 62,
+							["class"] = "Rogue",
+							["classEnglish"] = "ROGUE",
+							["guildName"] = "LevelUp Inc",
 						},
 					},
 					["class"] = "Paladin",
@@ -12688,11 +12688,11 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Intensity",
 						},
-						["Shoochka"] = {
+						["Lockdish"] = {
 							["level"] = 80,
-							["class"] = "Hunter",
-							["classEnglish"] = "HUNTER",
-							["guildName"] = "Chaos Legends",
+							["class"] = "Warlock",
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "Palvix",
 						},
 						["Ronyx"] = {
 							["level"] = 80,
@@ -12700,22 +12700,22 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "C Seventeen",
 						},
-						["Digg"] = {
-							["level"] = 80,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-						},
-						["Lockdish"] = {
-							["level"] = 80,
-							["class"] = "Warlock",
-							["classEnglish"] = "WARLOCK",
-							["guildName"] = "Palvix",
-						},
 						["Drmorbius"] = {
 							["level"] = 80,
 							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "Kamikaze Penguins",
+						},
+						["Shoochka"] = {
+							["level"] = 80,
+							["class"] = "Hunter",
+							["classEnglish"] = "HUNTER",
+							["guildName"] = "Chaos Legends",
+						},
+						["Digg"] = {
+							["level"] = 80,
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
 						},
 						["Liyo"] = {
 							["level"] = 80,
@@ -13116,6 +13116,12 @@ NITdatabase = {
 							["level"] = 80,
 							["class"] = "Paladin",
 						},
+						["Splendorah"] = {
+							["classEnglish"] = "MAGE",
+							["level"] = 80,
+							["name"] = "Splendorah",
+							["class"] = "Mage",
+						},
 						["Grennella"] = {
 							["name"] = "Grennella",
 							["guildName"] = "Pirate Problems",
@@ -13123,18 +13129,11 @@ NITdatabase = {
 							["level"] = 80,
 							["class"] = "Priest",
 						},
-						["Splendorah"] = {
+						["Uzsu"] = {
 							["classEnglish"] = "MAGE",
 							["level"] = 80,
-							["name"] = "Splendorah",
+							["name"] = "Uzsu",
 							["class"] = "Mage",
-						},
-						["Kapitansnek"] = {
-							["name"] = "Kapitansnek",
-							["guildName"] = "Bohemian Empire",
-							["classEnglish"] = "DRUID",
-							["level"] = 80,
-							["class"] = "Druid",
 						},
 						["Tôms"] = {
 							["classEnglish"] = "ROGUE",
@@ -13149,11 +13148,12 @@ NITdatabase = {
 							["level"] = 80,
 							["class"] = "Warrior",
 						},
-						["Uzsu"] = {
-							["classEnglish"] = "MAGE",
+						["Kapitansnek"] = {
+							["name"] = "Kapitansnek",
+							["guildName"] = "Bohemian Empire",
+							["classEnglish"] = "DRUID",
 							["level"] = 80,
-							["name"] = "Uzsu",
-							["class"] = "Mage",
+							["class"] = "Druid",
 						},
 						["Chaaáaarge"] = {
 							["name"] = "Chaaáaarge",
@@ -13232,11 +13232,11 @@ NITdatabase = {
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "Intense Intents",
 						},
-						["Bloommy"] = {
+						["Whit"] = {
 							["level"] = 80,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "LevelUp Inc",
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "KlubR",
 						},
 						["Fariborz"] = {
 							["level"] = 80,
@@ -13244,11 +13244,11 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Happy Burstday",
 						},
-						["Whit"] = {
+						["Bloommy"] = {
 							["level"] = 80,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "KlubR",
+							["class"] = "Warrior",
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "LevelUp Inc",
 						},
 						["Destinyhunt"] = {
 							["level"] = 80,
@@ -13555,11 +13555,11 @@ NITdatabase = {
 							["class"] = "Mage",
 							["level"] = 80,
 						},
-						["Khasnod"] = {
-							["name"] = "Khasnod",
-							["guildName"] = "Da Senjin Advice Bureau",
-							["classEnglish"] = "PRIEST",
-							["class"] = "Priest",
+						["Pheobeus"] = {
+							["name"] = "Pheobeus",
+							["guildName"] = "LastChance",
+							["classEnglish"] = "WARRIOR",
+							["class"] = "Warrior",
 							["level"] = 80,
 						},
 						["Fwry"] = {
@@ -13569,11 +13569,11 @@ NITdatabase = {
 							["class"] = "Warrior",
 							["level"] = 80,
 						},
-						["Pheobeus"] = {
-							["name"] = "Pheobeus",
-							["guildName"] = "LastChance",
-							["classEnglish"] = "WARRIOR",
-							["class"] = "Warrior",
+						["Khasnod"] = {
+							["name"] = "Khasnod",
+							["guildName"] = "Da Senjin Advice Bureau",
+							["classEnglish"] = "PRIEST",
+							["class"] = "Priest",
 							["level"] = 80,
 						},
 						["Shiguraki"] = {
@@ -14199,10 +14199,10 @@ NITdatabase = {
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
-						["Reeckless"] = {
+						["Friescpt"] = {
 							["level"] = 80,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
 						},
 						["Ssee"] = {
 							["level"] = 80,
@@ -14224,7 +14224,12 @@ NITdatabase = {
 							["class"] = "Hunter",
 							["classEnglish"] = "HUNTER",
 						},
-						["Friescpt"] = {
+						["Reeckless"] = {
+							["level"] = 80,
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+						},
+						["Ðîvâ"] = {
 							["level"] = 80,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
@@ -14234,20 +14239,15 @@ NITdatabase = {
 							["class"] = "Shaman",
 							["classEnglish"] = "SHAMAN",
 						},
-						["Bulldoping"] = {
-							["level"] = 80,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-						},
-						["Ðîvâ"] = {
-							["level"] = 80,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-						},
 						["Drekthâr"] = {
 							["level"] = 80,
 							["class"] = "Shaman",
 							["classEnglish"] = "SHAMAN",
+						},
+						["Bulldoping"] = {
+							["level"] = 80,
+							["class"] = "Druid",
+							["classEnglish"] = "DRUID",
 						},
 					},
 					["class"] = "Death Knight",
@@ -14435,17 +14435,17 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Nemesís",
 						},
-						["Sweatpants"] = {
-							["class"] = "Druid",
-							["level"] = 80,
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Doomhammer",
-						},
 						["Metamorbius"] = {
 							["class"] = "Warlock",
 							["level"] = 80,
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "family dinner",
+						},
+						["Sweatpants"] = {
+							["class"] = "Druid",
+							["level"] = 80,
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Doomhammer",
 						},
 						["Tianardran"] = {
 							["class"] = "Warrior",
@@ -14625,28 +14625,28 @@ NITdatabase = {
 							["class"] = "Rogue",
 							["guildName"] = "Spite",
 						},
-						["Akliman"] = {
-							["class"] = "Shaman",
+						["Stortykko"] = {
+							["class"] = "Warrior",
 							["level"] = 80,
-							["classEnglish"] = "SHAMAN",
-							["guildName"] = "Night of the Decepticon",
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Concede",
 						},
-						["Dundermon"] = {
-							["class"] = "Shaman",
+						["Battlearm"] = {
+							["class"] = "Death Knight",
 							["level"] = 80,
-							["classEnglish"] = "SHAMAN",
-							["guildName"] = "Gud Förbannat",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "CUBE",
 						},
 						["Jademoose"] = {
 							["level"] = 80,
 							["classEnglish"] = "WARRIOR",
 							["class"] = "Warrior",
 						},
-						["Stortykko"] = {
-							["class"] = "Warrior",
+						["Akliman"] = {
+							["class"] = "Shaman",
 							["level"] = 80,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Concede",
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "Night of the Decepticon",
 						},
 						["Liâdrin"] = {
 							["level"] = 80,
@@ -14671,11 +14671,11 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Code Red",
 						},
-						["Howdye"] = {
-							["class"] = "Death Knight",
+						["Elfoloco"] = {
+							["class"] = "Warlock",
 							["level"] = 80,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Chlapci od Váhu",
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "Choice of Death",
 						},
 						["Oileen"] = {
 							["level"] = 80,
@@ -14694,11 +14694,11 @@ NITdatabase = {
 							["class"] = "Warlock",
 							["guildName"] = "Respect the Queue",
 						},
-						["Elfoloco"] = {
-							["class"] = "Warlock",
+						["Howdye"] = {
+							["class"] = "Death Knight",
 							["level"] = 80,
-							["classEnglish"] = "WARLOCK",
-							["guildName"] = "Choice of Death",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Chlapci od Váhu",
 						},
 						["Juggerz"] = {
 							["class"] = "Warrior",
@@ -14706,11 +14706,11 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Vanirs Krigsmen",
 						},
-						["Battlearm"] = {
-							["class"] = "Death Knight",
+						["Dundermon"] = {
+							["class"] = "Shaman",
 							["level"] = 80,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "CUBE",
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "Gud Förbannat",
 						},
 						["Putki"] = {
 							["class"] = "Rogue",
@@ -15307,10 +15307,10 @@ NITdatabase = {
 							["classEnglish"] = "WARLOCK",
 							["class"] = "Warlock",
 						},
-						["Piepriest"] = {
-							["class"] = "Priest",
+						["Redhaired"] = {
+							["class"] = "Paladin",
 							["level"] = 80,
-							["classEnglish"] = "PRIEST",
+							["classEnglish"] = "PALADIN",
 							["guildName"] = "Offense",
 						},
 						["Kukafska"] = {
@@ -15323,24 +15323,6 @@ NITdatabase = {
 							["level"] = 80,
 							["classEnglish"] = "SHAMAN",
 							["class"] = "Shaman",
-						},
-						["Shenlan"] = {
-							["class"] = "Paladin",
-							["level"] = 80,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "CN Descendants",
-						},
-						["Redhaired"] = {
-							["class"] = "Paladin",
-							["level"] = 80,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Offense",
-						},
-						["Zugbox"] = {
-							["class"] = "Warrior",
-							["level"] = 80,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Chimera",
 						},
 						["Ainodruid"] = {
 							["class"] = "Druid",
@@ -15360,11 +15342,29 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Vita Luna",
 						},
-						["Emerity"] = {
-							["level"] = 80,
+						["Shenlan"] = {
 							["class"] = "Paladin",
+							["level"] = 80,
 							["classEnglish"] = "PALADIN",
-							["guildName"] = "Loch Modan Yacht Club",
+							["guildName"] = "CN Descendants",
+						},
+						["Thorskyn"] = {
+							["class"] = "Warrior",
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Blueberries",
+						},
+						["Zugbox"] = {
+							["class"] = "Warrior",
+							["level"] = 80,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Chimera",
+						},
+						["Tofylicious"] = {
+							["level"] = 80,
+							["classEnglish"] = "MAGE",
+							["class"] = "Mage",
+							["guildName"] = "Almost There",
 						},
 						["Firemiau"] = {
 							["class"] = "Druid",
@@ -15396,22 +15396,22 @@ NITdatabase = {
 							["class"] = "Mage",
 							["guildName"] = "Sequence",
 						},
-						["Tofylicious"] = {
+						["Emerity"] = {
 							["level"] = 80,
-							["classEnglish"] = "MAGE",
-							["class"] = "Mage",
-							["guildName"] = "Almost There",
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Loch Modan Yacht Club",
 						},
 						["Koveras"] = {
 							["level"] = 80,
 							["classEnglish"] = "DEATHKNIGHT",
 							["class"] = "Death Knight",
 						},
-						["Thorskyn"] = {
-							["class"] = "Warrior",
+						["Piepriest"] = {
+							["class"] = "Priest",
 							["level"] = 80,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Blueberries",
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "Offense",
 						},
 						["Junah"] = {
 							["level"] = 80,
@@ -15774,17 +15774,17 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["guildName"] = "Inexorable",
 						},
-						["Frelucky"] = {
-							["class"] = "Warlock",
-							["level"] = 80,
-							["classEnglish"] = "WARLOCK",
-							["guildName"] = "Death Wish",
-						},
 						["Nyomiskodok"] = {
 							["class"] = "Warlock",
 							["level"] = 80,
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "Flying Circus",
+						},
+						["Frelucky"] = {
+							["class"] = "Warlock",
+							["level"] = 80,
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "Death Wish",
 						},
 						["Vetronela"] = {
 							["level"] = 80,
@@ -15797,11 +15797,11 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Moist",
 						},
-						["Elitka"] = {
+						["Tiltedtaco"] = {
 							["class"] = "Warlock",
 							["level"] = 80,
 							["classEnglish"] = "WARLOCK",
-							["guildName"] = "DOOM inc",
+							["guildName"] = "Whisky Pullz",
 						},
 						["Jollylight"] = {
 							["class"] = "Paladin",
@@ -15809,11 +15809,11 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "fingerblasterz",
 						},
-						["Tiltedtaco"] = {
+						["Elitka"] = {
 							["class"] = "Warlock",
 							["level"] = 80,
 							["classEnglish"] = "WARLOCK",
-							["guildName"] = "Whisky Pullz",
+							["guildName"] = "DOOM inc",
 						},
 						["Drods"] = {
 							["level"] = 80,
@@ -16549,10 +16549,10 @@ NITdatabase = {
 							["classEnglish"] = "ROGUE",
 							["guildName"] = "Livets Horde Skole",
 						},
-						["Gollygosh"] = {
+						["Darkknéss"] = {
 							["level"] = 80,
-							["class"] = "Shaman",
-							["classEnglish"] = "SHAMAN",
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
 							["guildName"] = "MIDNIGHT",
 						},
 						["Greyskale"] = {
@@ -16561,22 +16561,22 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "MIDNIGHT",
 						},
-						["Rekjin"] = {
-							["level"] = 80,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Strength and Honor",
-						},
 						["Arcio"] = {
 							["level"] = 80,
 							["class"] = "Warlock",
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "El Banditos",
 						},
-						["Darkknéss"] = {
+						["Rekjin"] = {
 							["level"] = 80,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Strength and Honor",
+						},
+						["Gollygosh"] = {
+							["level"] = 80,
+							["class"] = "Shaman",
+							["classEnglish"] = "SHAMAN",
 							["guildName"] = "MIDNIGHT",
 						},
 						["Vermin"] = {
@@ -16707,17 +16707,17 @@ NITdatabase = {
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "Light Harvest",
 						},
-						["Mxzq"] = {
-							["level"] = 80,
-							["class"] = "Hunter",
-							["classEnglish"] = "HUNTER",
-							["guildName"] = "CUBE",
-						},
 						["Sméllyfinger"] = {
 							["level"] = 80,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Sinn Fein",
+						},
+						["Mxzq"] = {
+							["level"] = 80,
+							["class"] = "Hunter",
+							["classEnglish"] = "HUNTER",
+							["guildName"] = "CUBE",
 						},
 						["Vjuh"] = {
 							["level"] = 80,
@@ -16898,22 +16898,22 @@ NITdatabase = {
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "Palvix",
 						},
+						["Runelite"] = {
+							["level"] = 80,
+							["classEnglish"] = "ROGUE",
+							["class"] = "Rogue",
+						},
+						["Róugg"] = {
+							["class"] = "Shaman",
+							["level"] = 80,
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "Fellowship of the Horde",
+						},
 						["Yilopz"] = {
 							["class"] = "Priest",
 							["level"] = 80,
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Happy Burstday",
-						},
-						["Zagopally"] = {
-							["class"] = "Paladin",
-							["level"] = 80,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Night of the Decepticon",
-						},
-						["Runelite"] = {
-							["level"] = 80,
-							["classEnglish"] = "ROGUE",
-							["class"] = "Rogue",
 						},
 						["Bacbac"] = {
 							["class"] = "Shaman",
@@ -16945,23 +16945,23 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Oldschool",
 						},
-						["Róugg"] = {
-							["class"] = "Shaman",
+						["Zagopally"] = {
+							["class"] = "Paladin",
 							["level"] = 80,
-							["classEnglish"] = "SHAMAN",
-							["guildName"] = "Fellowship of the Horde",
-						},
-						["Swonex"] = {
-							["class"] = "Druid",
-							["level"] = 80,
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Guild Less",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Night of the Decepticon",
 						},
 						["Miniskoz"] = {
 							["class"] = "Druid",
 							["level"] = 80,
 							["classEnglish"] = "DRUID",
 							["guildName"] = "Resolute",
+						},
+						["Swonex"] = {
+							["class"] = "Druid",
+							["level"] = 80,
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Guild Less",
 						},
 						["Popkoning"] = {
 							["class"] = "Shaman",
@@ -17162,10 +17162,11 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "ODDWORLD",
 						},
-						["Erradd"] = {
+						["Traicyxd"] = {
+							["class"] = "Death Knight",
 							["level"] = 80,
-							["classEnglish"] = "DRUID",
-							["class"] = "Druid",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Death Wish",
 						},
 						["Syyllinen"] = {
 							["class"] = "Paladin",
@@ -17173,17 +17174,16 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Replica",
 						},
-						["Traicyxd"] = {
-							["class"] = "Death Knight",
+						["Erradd"] = {
 							["level"] = 80,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Death Wish",
+							["classEnglish"] = "DRUID",
+							["class"] = "Druid",
 						},
-						["Helier"] = {
-							["class"] = "Death Knight",
+						["Rushoxz"] = {
+							["class"] = "Shaman",
 							["level"] = 80,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Back To Plan A",
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "Replica",
 						},
 						["Alphachicken"] = {
 							["class"] = "Druid",
@@ -17227,11 +17227,11 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["guildName"] = "El Banditos",
 						},
-						["Rushoxz"] = {
-							["class"] = "Shaman",
+						["Helier"] = {
+							["class"] = "Death Knight",
 							["level"] = 80,
-							["classEnglish"] = "SHAMAN",
-							["guildName"] = "Replica",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Back To Plan A",
 						},
 						["Vermin"] = {
 							["class"] = "Warrior",
@@ -18575,18 +18575,18 @@ NITdatabase = {
 							["class"] = "Druid",
 							["level"] = 80,
 						},
-						["Sheyka"] = {
-							["name"] = "Sheyka",
-							["guildName"] = "Rapacious",
-							["classEnglish"] = "HUNTER",
-							["class"] = "Hunter",
-							["level"] = 80,
-						},
 						["Glumsi"] = {
 							["name"] = "Glumsi",
 							["guildName"] = "LevelUp Inc",
 							["classEnglish"] = "PALADIN",
 							["class"] = "Paladin",
+							["level"] = 80,
+						},
+						["Sheyka"] = {
+							["name"] = "Sheyka",
+							["guildName"] = "Rapacious",
+							["classEnglish"] = "HUNTER",
+							["class"] = "Hunter",
 							["level"] = 80,
 						},
 						["Prenkydk"] = {
@@ -19870,11 +19870,11 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["guildName"] = "I lost virgln with Human",
 						},
-						["Obsidian"] = {
+						["Eivskeii"] = {
 							["level"] = 80,
 							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
-							["guildName"] = "Redemption",
+							["guildName"] = "Papi Twins",
 						},
 						["Kennethi"] = {
 							["level"] = 80,
@@ -19882,10 +19882,10 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "The revolutioners",
 						},
-						["Juantwo"] = {
+						["Permaccd"] = {
 							["level"] = 80,
-							["class"] = "Priest",
-							["classEnglish"] = "PRIEST",
+							["class"] = "Rogue",
+							["classEnglish"] = "ROGUE",
 						},
 						["Subtil"] = {
 							["level"] = 0,
@@ -19915,16 +19915,16 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Whisky Sour",
 						},
-						["Permaccd"] = {
+						["Juantwo"] = {
 							["level"] = 80,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
+							["class"] = "Priest",
+							["classEnglish"] = "PRIEST",
 						},
-						["Eivskeii"] = {
+						["Obsidian"] = {
 							["level"] = 80,
 							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
-							["guildName"] = "Papi Twins",
+							["guildName"] = "Redemption",
 						},
 						["Nightshamy"] = {
 							["level"] = 80,
@@ -21244,15 +21244,15 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["class"] = "Paladin",
 						},
-						["Carismoo"] = {
-							["level"] = 41,
-							["classEnglish"] = "DRUID",
-							["class"] = "Druid",
-						},
 						["Öriginal"] = {
 							["level"] = 40,
 							["classEnglish"] = "WARLOCK",
 							["class"] = "Warlock",
+						},
+						["Carismoo"] = {
+							["level"] = 41,
+							["classEnglish"] = "DRUID",
+							["class"] = "Druid",
 						},
 					},
 					["class"] = "Paladin",
@@ -21301,15 +21301,15 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["class"] = "Paladin",
 						},
-						["Carismoo"] = {
-							["level"] = 41,
-							["classEnglish"] = "DRUID",
-							["class"] = "Druid",
-						},
 						["Öriginal"] = {
 							["level"] = 39,
 							["classEnglish"] = "WARLOCK",
 							["class"] = "Warlock",
+						},
+						["Carismoo"] = {
+							["level"] = 41,
+							["classEnglish"] = "DRUID",
+							["class"] = "Druid",
 						},
 					},
 					["class"] = "Paladin",
@@ -21645,16 +21645,16 @@ NITdatabase = {
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "Exultant",
 						},
-						["Lappsa"] = {
-							["level"] = 80,
-							["classEnglish"] = "PRIEST",
-							["class"] = "Priest",
-						},
 						["Lullipop"] = {
 							["class"] = "Paladin",
 							["level"] = 80,
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Exultant",
+						},
+						["Lappsa"] = {
+							["level"] = 80,
+							["classEnglish"] = "PRIEST",
+							["class"] = "Priest",
 						},
 						["Somex"] = {
 							["class"] = "Druid",
@@ -21792,11 +21792,11 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Brocode",
 						},
-						["Zheppz"] = {
+						["Navigatorr"] = {
 							["level"] = 80,
-							["class"] = "Warlock",
-							["classEnglish"] = "WARLOCK",
-							["guildName"] = "Eorlingas",
+							["class"] = "Shaman",
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "HOWBOUTHAT",
 						},
 						["Krigeroca"] = {
 							["level"] = 80,
@@ -21804,11 +21804,11 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Enrage",
 						},
-						["Navigatorr"] = {
+						["Zheppz"] = {
 							["level"] = 80,
-							["class"] = "Shaman",
-							["classEnglish"] = "SHAMAN",
-							["guildName"] = "HOWBOUTHAT",
+							["class"] = "Warlock",
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "Eorlingas",
 						},
 						["Recobe"] = {
 							["level"] = 80,
@@ -21825,16 +21825,17 @@ NITdatabase = {
 							["class"] = "Warrior",
 							["classEnglish"] = "WARRIOR",
 						},
-						["Lappsa"] = {
+						["Lullipop"] = {
 							["level"] = 80,
-							["class"] = "Priest",
-							["classEnglish"] = "PRIEST",
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Exultant",
 						},
-						["Somex"] = {
+						["Clarka"] = {
 							["level"] = 80,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Enrage",
+							["class"] = "Mage",
+							["classEnglish"] = "MAGE",
+							["guildName"] = "smuts",
 						},
 						["Kaladn"] = {
 							["level"] = 80,
@@ -21848,17 +21849,16 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Ice crown citadel",
 						},
-						["Clarka"] = {
+						["Somex"] = {
 							["level"] = 80,
-							["class"] = "Mage",
-							["classEnglish"] = "MAGE",
-							["guildName"] = "smuts",
+							["class"] = "Druid",
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Enrage",
 						},
-						["Lullipop"] = {
+						["Lappsa"] = {
 							["level"] = 80,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Exultant",
+							["class"] = "Priest",
+							["classEnglish"] = "PRIEST",
 						},
 						["Shadejv"] = {
 							["level"] = 80,
@@ -22689,10 +22689,11 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["guildName"] = "Thunderbluffers",
 						},
-						["Castshot"] = {
+						["Arachad"] = {
 							["level"] = 80,
-							["class"] = "Hunter",
-							["classEnglish"] = "HUNTER",
+							["class"] = "Warrior",
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Livets Horde Skole",
 						},
 						["Tretex"] = {
 							["level"] = 80,
@@ -22716,11 +22717,10 @@ NITdatabase = {
 							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
 						},
-						["Arachad"] = {
+						["Castshot"] = {
 							["level"] = 80,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Livets Horde Skole",
+							["class"] = "Hunter",
+							["classEnglish"] = "HUNTER",
 						},
 						["Phikkilo"] = {
 							["level"] = 80,
@@ -22862,10 +22862,11 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["guildName"] = "Thunderbluffers",
 						},
-						["Castshot"] = {
+						["Arachad"] = {
 							["level"] = 80,
-							["class"] = "Hunter",
-							["classEnglish"] = "HUNTER",
+							["class"] = "Warrior",
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Livets Horde Skole",
 						},
 						["Tretex"] = {
 							["level"] = 80,
@@ -22889,11 +22890,10 @@ NITdatabase = {
 							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
 						},
-						["Arachad"] = {
+						["Castshot"] = {
 							["level"] = 80,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Livets Horde Skole",
+							["class"] = "Hunter",
+							["classEnglish"] = "HUNTER",
 						},
 						["Phikkilo"] = {
 							["level"] = 80,
@@ -24376,16 +24376,16 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["class"] = "Druid",
 						},
-						["Mystìc"] = {
+						["Paratøx"] = {
+							["class"] = "Death Knight",
 							["level"] = 80,
-							["classEnglish"] = "ROGUE",
-							["class"] = "Rogue",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Momentum",
 						},
-						["Clarka"] = {
-							["class"] = "Mage",
+						["Ldora"] = {
 							["level"] = 80,
-							["classEnglish"] = "MAGE",
-							["guildName"] = "smuts",
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
 						},
 						["Tritola"] = {
 							["level"] = 80,
@@ -24403,10 +24403,11 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "Last Try",
 						},
-						["Ldora"] = {
+						["Clarka"] = {
+							["class"] = "Mage",
 							["level"] = 80,
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
+							["classEnglish"] = "MAGE",
+							["guildName"] = "smuts",
 						},
 						["Skynight"] = {
 							["level"] = 80,
@@ -24433,11 +24434,10 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["class"] = "Warrior",
 						},
-						["Paratøx"] = {
-							["class"] = "Death Knight",
+						["Mystìc"] = {
 							["level"] = 80,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Momentum",
+							["classEnglish"] = "ROGUE",
+							["class"] = "Rogue",
 						},
 					},
 					["class"] = "Druid",
@@ -24524,11 +24524,11 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["guildName"] = "Crazed",
 						},
-						["Earthuncle"] = {
+						["Skillparadis"] = {
 							["level"] = 80,
 							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
-							["guildName"] = "Caucasus OG",
+							["guildName"] = "We Pee In Moonwells",
 						},
 						["Dorgan"] = {
 							["level"] = 80,
@@ -24536,17 +24536,16 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "Meleg Games",
 						},
-						["Cowzmoo"] = {
+						["Asashoryu"] = {
 							["level"] = 80,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Oldschool",
+							["class"] = "Warrior",
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Nomads",
 						},
-						["Irmgard"] = {
+						["Holidayzz"] = {
 							["level"] = 80,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
-							["guildName"] = "Icecream Smugglers",
 						},
 						["Erikolol"] = {
 							["level"] = 80,
@@ -24560,10 +24559,11 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["guildName"] = "Pogwarts",
 						},
-						["Holidayzz"] = {
+						["Irmgard"] = {
 							["level"] = 80,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
+							["guildName"] = "Icecream Smugglers",
 						},
 						["Mëivi"] = {
 							["level"] = 80,
@@ -24605,22 +24605,22 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Knight Of Darkness",
 						},
-						["Skillparadis"] = {
+						["Earthuncle"] = {
 							["level"] = 80,
 							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
-							["guildName"] = "We Pee In Moonwells",
+							["guildName"] = "Caucasus OG",
 						},
 						["Gerrik"] = {
 							["level"] = 80,
 							["class"] = "Priest",
 							["classEnglish"] = "PRIEST",
 						},
-						["Asashoryu"] = {
+						["Cowzmoo"] = {
 							["level"] = 80,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Nomads",
+							["class"] = "Druid",
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Oldschool",
 						},
 					},
 					["class"] = "Druid",
@@ -24695,11 +24695,11 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["guildName"] = "Crazed",
 						},
-						["Earthuncle"] = {
+						["Skillparadis"] = {
 							["level"] = 80,
 							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
-							["guildName"] = "Caucasus OG",
+							["guildName"] = "We Pee In Moonwells",
 						},
 						["Dorgan"] = {
 							["level"] = 80,
@@ -24713,11 +24713,11 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["guildName"] = "Oldschool",
 						},
-						["Skillparadis"] = {
+						["Earthuncle"] = {
 							["level"] = 80,
 							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
-							["guildName"] = "We Pee In Moonwells",
+							["guildName"] = "Caucasus OG",
 						},
 						["Erikolol"] = {
 							["level"] = 80,
@@ -26363,11 +26363,11 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["class"] = "Warrior",
 						},
-						["Kyyri-Gehennas"] = {
-							["class"] = "Death Knight",
+						["Santin-Lakeshire"] = {
+							["class"] = "Paladin",
 							["level"] = 80,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Zoo",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Bloodlust",
 						},
 						["Xpipps-Razorfen"] = {
 							["class"] = "Mage",
@@ -26381,11 +26381,11 @@ NITdatabase = {
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "Dark Elders",
 						},
-						["Engebjerg"] = {
-							["class"] = "Death Knight",
+						["Cruisader"] = {
+							["class"] = "Paladin",
 							["level"] = 80,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "The Rebels",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Vortex",
 						},
 						["Leïn-Auberdine"] = {
 							["class"] = "Hunter",
@@ -26393,17 +26393,17 @@ NITdatabase = {
 							["classEnglish"] = "HUNTER",
 							["guildName"] = "Until Down",
 						},
-						["Yaarek-Venoxis"] = {
-							["class"] = "Warlock",
+						["Koraak-Venoxis"] = {
+							["class"] = "Druid",
 							["level"] = 80,
-							["classEnglish"] = "WARLOCK",
-							["guildName"] = "Jungle Fever",
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Uralter Hass",
 						},
-						["Cruisader"] = {
-							["class"] = "Paladin",
+						["Engebjerg"] = {
+							["class"] = "Death Knight",
 							["level"] = 80,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Vortex",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "The Rebels",
 						},
 						["Beermaster-Gehennas"] = {
 							["class"] = "Warlock",
@@ -26411,11 +26411,11 @@ NITdatabase = {
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "Spybar",
 						},
-						["Koraak-Venoxis"] = {
-							["class"] = "Druid",
+						["Yaarek-Venoxis"] = {
+							["class"] = "Warlock",
 							["level"] = 80,
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Uralter Hass",
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "Jungle Fever",
 						},
 						["Mee-Gehennas"] = {
 							["level"] = 80,
@@ -26445,11 +26445,11 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "eXquisité",
 						},
-						["Santin-Lakeshire"] = {
-							["class"] = "Paladin",
+						["Kyyri-Gehennas"] = {
+							["class"] = "Death Knight",
 							["level"] = 80,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Bloodlust",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Zoo",
 						},
 						["Derkoleriker-Lakeshire"] = {
 							["class"] = "Druid",
@@ -26494,10 +26494,10 @@ NITdatabase = {
 					["instanceID"] = 30,
 					["deaths"] = 1,
 					["classEnglish"] = "DRUID",
-					["faction"] = 0,
+					["hk"] = 15,
 					["instanceName"] = "Alterac Valley",
 					["kb"] = 0,
-					["hk"] = 15,
+					["faction"] = 0,
 					["enteredLevel"] = 80,
 				}, -- [298]
 				{
@@ -26596,10 +26596,10 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["guildName"] = "CUBE",
 						},
-						["Snapshotandy"] = {
+						["Stinku"] = {
 							["level"] = 80,
-							["class"] = "Warlock",
-							["classEnglish"] = "WARLOCK",
+							["class"] = "Rogue",
+							["classEnglish"] = "ROGUE",
 						},
 						["Nonsei"] = {
 							["level"] = 80,
@@ -26607,16 +26607,16 @@ NITdatabase = {
 							["classEnglish"] = "ROGUE",
 							["guildName"] = "Awful Discipline",
 						},
-						["Böhis"] = {
+						["Stopndie"] = {
 							["level"] = 80,
-							["class"] = "Shaman",
-							["classEnglish"] = "SHAMAN",
-							["guildName"] = "Sauna",
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "HOWBOUTHAT",
 						},
-						["Stinku"] = {
+						["Snapshotandy"] = {
 							["level"] = 80,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
+							["class"] = "Warlock",
+							["classEnglish"] = "WARLOCK",
 						},
 						["Vampiree"] = {
 							["level"] = 80,
@@ -26640,11 +26640,10 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["guildName"] = "Awful Discipline",
 						},
-						["Nebekoen"] = {
+						["Hankipanki"] = {
 							["level"] = 80,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-							["guildName"] = "C Seventeen",
+							["class"] = "Shaman",
+							["classEnglish"] = "SHAMAN",
 						},
 						["Sisauri"] = {
 							["level"] = 80,
@@ -26680,10 +26679,11 @@ NITdatabase = {
 							["class"] = "Shaman",
 							["classEnglish"] = "SHAMAN",
 						},
-						["Hankipanki"] = {
+						["Nebekoen"] = {
 							["level"] = 80,
-							["class"] = "Shaman",
-							["classEnglish"] = "SHAMAN",
+							["class"] = "Druid",
+							["classEnglish"] = "DRUID",
+							["guildName"] = "C Seventeen",
 						},
 						["Deadlover"] = {
 							["level"] = 80,
@@ -26697,11 +26697,11 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["guildName"] = "Mannequin",
 						},
-						["Stopndie"] = {
+						["Böhis"] = {
 							["level"] = 80,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "HOWBOUTHAT",
+							["class"] = "Shaman",
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "Sauna",
 						},
 					},
 					["class"] = "Druid",
@@ -26763,10 +26763,10 @@ NITdatabase = {
 					["profSkill2"] = 0,
 					["realm"] = "Ashbringer",
 					["firstaidSkillMax"] = 0,
-					["fishingSkillMax"] = 0,
-					["raceLocalized"] = "Orc",
 					["cookingSkillMax"] = 0,
-					["firstaidSkill"] = 0,
+					["raceLocalized"] = "Orc",
+					["fishingSkillMax"] = 0,
+					["playerName"] = "Tudum",
 					["classEnglish"] = "WARRIOR",
 					["guildRankName"] = "No guild rank",
 					["marks"] = {
@@ -26784,7 +26784,7 @@ NITdatabase = {
 					["currentXP"] = 25,
 					["cooldowns"] = {
 					},
-					["playerName"] = "Tudum",
+					["firstaidSkill"] = 0,
 					["classLocalized"] = "Warrior",
 					["resting"] = false,
 				},
@@ -26817,10 +26817,10 @@ NITdatabase = {
 					["guildRankName"] = "No guild rank",
 					["realm"] = "Ashbringer",
 					["race"] = "Orc",
-					["cookingSkillMax"] = 0,
-					["raceLocalized"] = "Orc",
 					["fishingSkillMax"] = 0,
-					["firstaidSkill"] = 0,
+					["raceLocalized"] = "Orc",
+					["cookingSkillMax"] = 0,
+					["playerName"] = "Pitchwise",
 					["classEnglish"] = "SHAMAN",
 					["profSkill2"] = 0,
 					["marks"] = {
@@ -26834,7 +26834,7 @@ NITdatabase = {
 					[17030] = 0,
 					["profSkillMax2"] = 0,
 					["currentXP"] = 169,
-					["playerName"] = "Pitchwise",
+					["firstaidSkill"] = 0,
 					["cooldowns"] = {
 					},
 					["guild"] = "No guild",

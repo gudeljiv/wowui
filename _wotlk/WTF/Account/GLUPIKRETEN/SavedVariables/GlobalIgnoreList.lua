@@ -42,6 +42,94 @@ GlobalIgnoreDB = {
 		"player", -- [27]
 		"player", -- [28]
 	},
+	["syncInfo"] = {
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [1]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [2]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [3]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [4]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [5]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [6]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [7]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [8]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [9]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [10]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [11]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [12]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [13]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [14]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [15]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [16]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [17]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [18]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [19]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [20]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [21]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [22]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [23]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [24]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [25]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [26]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [27]
+		{
+			"Mxyzptlk-Golemagg@1", -- [1]
+		}, -- [28]
+	},
+	["invertSpam"] = false,
+	["skipPrivate"] = true,
 	["ignoreList"] = {
 		"Puntune-Golemagg", -- [1]
 		"Pömp-Golemagg", -- [2]
@@ -72,69 +160,38 @@ GlobalIgnoreDB = {
 		"Toobased-Golemagg", -- [27]
 		"Nékosenshi-Golemagg", -- [28]
 	},
-	["openWithFriends"] = true,
-	["skipPrivate"] = true,
-	["syncInfo"] = {
-		{
-		}, -- [1]
-		{
-		}, -- [2]
-		{
-		}, -- [3]
-		{
-		}, -- [4]
-		{
-		}, -- [5]
-		{
-		}, -- [6]
-		{
-		}, -- [7]
-		{
-		}, -- [8]
-		{
-		}, -- [9]
-		{
-		}, -- [10]
-		{
-		}, -- [11]
-		{
-		}, -- [12]
-		{
-		}, -- [13]
-		{
-		}, -- [14]
-		{
-		}, -- [15]
-		{
-		}, -- [16]
-		{
-		}, -- [17]
-		{
-		}, -- [18]
-		{
-		}, -- [19]
-		{
-		}, -- [20]
-		{
-		}, -- [21]
-		{
-		}, -- [22]
-		{
-		}, -- [23]
-		{
-		}, -- [24]
-		{
-		}, -- [25]
-		{
-		}, -- [26]
-		{
-		}, -- [27]
-		{
-		}, -- [28]
-	},
 	["trackChanges"] = true,
 	["autoCount"] = 3,
-	["revision"] = 1,
+	["notes"] = {
+		"", -- [1]
+		"", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		"", -- [7]
+		"", -- [8]
+		"", -- [9]
+		"", -- [10]
+		"", -- [11]
+		"", -- [12]
+		"", -- [13]
+		"", -- [14]
+		"", -- [15]
+		"", -- [16]
+		"wasted my time in voa raid... kicked me because he made room for warrior friend", -- [17]
+		"", -- [18]
+		"", -- [19]
+		"", -- [20]
+		"", -- [21]
+		"", -- [22]
+		"", -- [23]
+		"", -- [24]
+		"", -- [25]
+		"", -- [26]
+		"", -- [27]
+		"idiot... need to ignore his existance", -- [28]
+	},
 	["filterList"] = {
 		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]
 		"[item=19019]", -- [2]
@@ -179,42 +236,10 @@ GlobalIgnoreDB = {
 		"Horde", -- [27]
 		"Horde", -- [28]
 	},
-	["skipParty"] = false,
-	["delList"] = {
-		"Happens-Golemagg", -- [1]
-		"Freezqt-Golemagg", -- [2]
-	},
+	["skipGuild"] = true,
+	["sameserver"] = true,
 	["attachFriends"] = true,
-	["notes"] = {
-		"", -- [1]
-		"", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"", -- [5]
-		"", -- [6]
-		"", -- [7]
-		"", -- [8]
-		"", -- [9]
-		"", -- [10]
-		"", -- [11]
-		"", -- [12]
-		"", -- [13]
-		"", -- [14]
-		"", -- [15]
-		"", -- [16]
-		"wasted my time in voa raid... kicked me because he made room for warrior friend", -- [17]
-		"", -- [18]
-		"", -- [19]
-		"", -- [20]
-		"", -- [21]
-		"", -- [22]
-		"", -- [23]
-		"", -- [24]
-		"", -- [25]
-		"", -- [26]
-		"", -- [27]
-		"idiot... need to ignore his existance", -- [28]
-	},
+	["revision"] = 1,
 	["expList"] = {
 		0, -- [1]
 		0, -- [2]
@@ -245,36 +270,9 @@ GlobalIgnoreDB = {
 		0, -- [27]
 		0, -- [28]
 	},
-	["skipGuild"] = true,
+	["skipParty"] = false,
 	["chatmsg"] = true,
 	["filterTotal"] = 9,
-	["defexpire"] = 0,
-	["filterDesc"] = {
-		"Filter \"Anal\" Spammers", -- [1]
-		"Filter Thunderfury linking", -- [2]
-		"Filter Gold Spam #1", -- [3]
-		"Filter Gold Spam #2", -- [4]
-		"Filter Gold Spam #3", -- [5]
-		"Filter Gold Spam #4", -- [6]
-		"Filter Guild Recruitment", -- [7]
-		"Filter Community Recruitment", -- [8]
-		"Filter WTS", -- [9]
-		"Filter Chinese/Korean/Japanese", -- [10]
-	},
-	["asknote"] = true,
-	["filterActive"] = {
-		true, -- [1]
-		true, -- [2]
-		true, -- [3]
-		true, -- [4]
-		true, -- [5]
-		true, -- [6]
-		false, -- [7]
-		false, -- [8]
-		false, -- [9]
-		false, -- [10]
-	},
-	["spamFilter"] = true,
 	["dateList"] = {
 		"05 Feb 2023", -- [1]
 		"05 Feb 2023", -- [2]
@@ -305,8 +303,38 @@ GlobalIgnoreDB = {
 		"23 Feb 2023", -- [27]
 		"25 Feb 2023", -- [28]
 	},
-	["sameserver"] = true,
+	["filterDesc"] = {
+		"Filter \"Anal\" Spammers", -- [1]
+		"Filter Thunderfury linking", -- [2]
+		"Filter Gold Spam #1", -- [3]
+		"Filter Gold Spam #2", -- [4]
+		"Filter Gold Spam #3", -- [5]
+		"Filter Gold Spam #4", -- [6]
+		"Filter Guild Recruitment", -- [7]
+		"Filter Community Recruitment", -- [8]
+		"Filter WTS", -- [9]
+		"Filter Chinese/Korean/Japanese", -- [10]
+	},
+	["asknote"] = true,
+	["filterActive"] = {
+		true, -- [1]
+		true, -- [2]
+		true, -- [3]
+		true, -- [4]
+		true, -- [5]
+		true, -- [6]
+		false, -- [7]
+		false, -- [8]
+		false, -- [9]
+		false, -- [10]
+	},
+	["spamFilter"] = true,
+	["defexpire"] = 0,
+	["delList"] = {
+		"Happens-Golemagg", -- [1]
+		"Freezqt-Golemagg", -- [2]
+	},
 	["autoTime"] = 600,
 	["samefaction"] = true,
-	["invertSpam"] = false,
+	["openWithFriends"] = true,
 }

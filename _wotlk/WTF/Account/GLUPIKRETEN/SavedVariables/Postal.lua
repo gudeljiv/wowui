@@ -40,16 +40,16 @@ Postal3DB = {
 		["Battledog - Gehennas"] = "Battledog - Gehennas",
 		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
 		["Handrmandr - Golemagg"] = "Handrmandr - Golemagg",
-		["Battlearm - Gehennas"] = "Battlearm - Gehennas",
 		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
+		["Battlearm - Gehennas"] = "Battlearm - Gehennas",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
 		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 		["Provokator - Jin'do"] = "Provokator - Jin'do",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
 		["Poklopac - Mirage Raceway"] = "Poklopac - Mirage Raceway",
 		["Miqa - Golemagg"] = "Miqa - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Tudum - Jin'do"] = "Tudum - Jin'do",
 		["Wells - Jin'do"] = "Wells - Jin'do",
@@ -80,6 +80,9 @@ Postal3DB = {
 			},
 		},
 		["Battlearm - Golemagg"] = {
+			["OpenAll"] = {
+				["KeepFreeSpace"] = 2,
+			},
 			["BlackBook"] = {
 				["recent"] = {
 					"Xskull-Golemagg|Golemagg|Horde", -- [1]
@@ -88,9 +91,6 @@ Postal3DB = {
 					"Miqa|Golemagg|Horde", -- [4]
 					"Obsidian|Golemagg|Horde", -- [5]
 				},
-			},
-			["OpenAll"] = {
-				["KeepFreeSpace"] = 2,
 			},
 		},
 		["Battitude - Golemagg"] = {
@@ -105,9 +105,9 @@ Postal3DB = {
 		},
 		["Handrmandr - Golemagg"] = {
 		},
-		["Battlearm - Gehennas"] = {
-		},
 		["Tudum - Ashbringer"] = {
+		},
+		["Battlearm - Gehennas"] = {
 		},
 		["Augustin - Golemagg"] = {
 		},
@@ -115,13 +115,7 @@ Postal3DB = {
 		},
 		["Provokator - Jin'do"] = {
 		},
-		["Vermin - Golemagg"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Miqa|Golemagg|Horde", -- [1]
-					"Mxyz|Golemagg|Horde", -- [2]
-				},
-			},
+		["Mxyzptlk - Golemagg"] = {
 		},
 		["Battlearm - Jin'do"] = {
 		},
@@ -134,7 +128,13 @@ Postal3DB = {
 				},
 			},
 		},
-		["Mxyzptlk - Golemagg"] = {
+		["Vermin - Golemagg"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Miqa|Golemagg|Horde", -- [1]
+					"Mxyz|Golemagg|Horde", -- [2]
+				},
+			},
 		},
 		["Pitchwise - Ashbringer"] = {
 		},

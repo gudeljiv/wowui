@@ -1,17 +1,17 @@
 
 RXPCData = {
-	["currentGuideGroup"] = "",
+	["GA"] = false,
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
-	["GA"] = false,
+	["currentGuideName"] = "",
 	["stepSkip"] = {
 	},
 	["flightPaths"] = {
 		[23] = "Orgrimmar, Durotar",
 		[80] = "Ratchet, The Barrens",
 	},
-	["currentGuideName"] = "",
+	["currentGuideGroup"] = "",
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -30,10 +30,10 @@ RXPCTrackingData = {
 							["monthDay"] = 30,
 							["day"] = 0,
 							["month"] = 12,
-							["weekday"] = 6,
+							["minute"] = 30,
 							["year"] = 2022,
 							["hour"] = 13,
-							["minute"] = 30,
+							["weekday"] = 6,
 						},
 						["started"] = 0,
 					},
@@ -60,6 +60,7 @@ RXPCSettings = {
 	["profiles"] = {
 		["Tadibey - Golemagg"] = {
 			["notifyOnTargetUpdates"] = false,
+			["enableTargetMacro"] = false,
 			["hideGuideWindow"] = false,
 			["enableFPAutomation"] = false,
 			["hardcore"] = false,
@@ -68,16 +69,15 @@ RXPCSettings = {
 			["activeItemsScale"] = 1.2,
 			["checkVersions"] = false,
 			["enableTargetAutomation"] = false,
-			["enableTargetMacro"] = false,
 			["lockFrames"] = false,
 			["enableTracker"] = false,
 			["enableBindAutomation"] = false,
 			["enableLevelUpAnnounceSolo"] = false,
+			["frameHeight"] = 125.000114440918,
 			["alwaysSendBranded"] = false,
-			["enableFlyStepAnnouncements"] = false,
 			["enableQuestRewardAutomation"] = true,
 			["hideInRaid"] = false,
-			["frameHeight"] = 125.0000152587891,
+			["enableFlyStepAnnouncements"] = false,
 		},
 	},
 }
