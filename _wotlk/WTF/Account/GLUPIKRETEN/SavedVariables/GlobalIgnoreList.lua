@@ -42,156 +42,9 @@ GlobalIgnoreDB = {
 		"player", -- [27]
 		"player", -- [28]
 	},
-	["syncInfo"] = {
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [1]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [2]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [3]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [4]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [5]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [6]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [7]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [8]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [9]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [10]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [11]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [12]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [13]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [14]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [15]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [16]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [17]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [18]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [19]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [20]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [21]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [22]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [23]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [24]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [25]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [26]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [27]
-		{
-			"Mxyzptlk-Golemagg@1", -- [1]
-		}, -- [28]
-	},
+	["openWithFriends"] = true,
 	["invertSpam"] = false,
 	["skipPrivate"] = true,
-	["ignoreList"] = {
-		"Puntune-Golemagg", -- [1]
-		"Pömp-Golemagg", -- [2]
-		"Raudos-Golemagg", -- [3]
-		"Burstt-Golemagg", -- [4]
-		"Conall-Golemagg", -- [5]
-		"Elfboy-Golemagg", -- [6]
-		"Jerrywild-Golemagg", -- [7]
-		"Qtc-Golemagg", -- [8]
-		"Segasík-Golemagg", -- [9]
-		"Arferes-Golemagg", -- [10]
-		"Eristia-Golemagg", -- [11]
-		"Ayrik-Golemagg", -- [12]
-		"Scorpiona-Golemagg", -- [13]
-		"Proguen-Golemagg", -- [14]
-		"Supablast-Golemagg", -- [15]
-		"Grashandlol-Golemagg", -- [16]
-		"Micku-Golemagg", -- [17]
-		"Aerog-Golemagg", -- [18]
-		"Extod-Golemagg", -- [19]
-		"Goldsmell-Golemagg", -- [20]
-		"Hominio-Golemagg", -- [21]
-		"Kebabben-Golemagg", -- [22]
-		"Lolork-Golemagg", -- [23]
-		"Lyrior-Golemagg", -- [24]
-		"Morbintíme-Golemagg", -- [25]
-		"Tomrismage-Golemagg", -- [26]
-		"Toobased-Golemagg", -- [27]
-		"Nékosenshi-Golemagg", -- [28]
-	},
-	["trackChanges"] = true,
-	["autoCount"] = 3,
-	["notes"] = {
-		"", -- [1]
-		"", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"", -- [5]
-		"", -- [6]
-		"", -- [7]
-		"", -- [8]
-		"", -- [9]
-		"", -- [10]
-		"", -- [11]
-		"", -- [12]
-		"", -- [13]
-		"", -- [14]
-		"", -- [15]
-		"", -- [16]
-		"wasted my time in voa raid... kicked me because he made room for warrior friend", -- [17]
-		"", -- [18]
-		"", -- [19]
-		"", -- [20]
-		"", -- [21]
-		"", -- [22]
-		"", -- [23]
-		"", -- [24]
-		"", -- [25]
-		"", -- [26]
-		"", -- [27]
-		"idiot... need to ignore his existance", -- [28]
-	},
 	["filterList"] = {
 		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]
 		"[item=19019]", -- [2]
@@ -204,7 +57,71 @@ GlobalIgnoreDB = {
 		"[contains=WTS] or [contains=WTB]", -- [9]
 		"[nonlatin]", -- [10]
 	},
-	["autoUpdate"] = true,
+	["autoTime"] = 600,
+	["autoCount"] = 3,
+	["delList"] = {
+		"Happens-Golemagg", -- [1]
+		"Freezqt-Golemagg", -- [2]
+	},
+	["syncInfo"] = {
+		{
+		}, -- [1]
+		{
+		}, -- [2]
+		{
+		}, -- [3]
+		{
+		}, -- [4]
+		{
+		}, -- [5]
+		{
+		}, -- [6]
+		{
+		}, -- [7]
+		{
+		}, -- [8]
+		{
+		}, -- [9]
+		{
+		}, -- [10]
+		{
+		}, -- [11]
+		{
+		}, -- [12]
+		{
+		}, -- [13]
+		{
+		}, -- [14]
+		{
+		}, -- [15]
+		{
+		}, -- [16]
+		{
+		}, -- [17]
+		{
+		}, -- [18]
+		{
+		}, -- [19]
+		{
+		}, -- [20]
+		{
+		}, -- [21]
+		{
+		}, -- [22]
+		{
+		}, -- [23]
+		{
+		}, -- [24]
+		{
+		}, -- [25]
+		{
+		}, -- [26]
+		{
+		}, -- [27]
+		{
+		}, -- [28]
+	},
+	["trackChanges"] = true,
 	["autoIgnore"] = true,
 	["factionList"] = {
 		"Horde", -- [1]
@@ -236,10 +153,39 @@ GlobalIgnoreDB = {
 		"Horde", -- [27]
 		"Horde", -- [28]
 	},
-	["skipGuild"] = true,
+	["defexpire"] = 0,
 	["sameserver"] = true,
 	["attachFriends"] = true,
-	["revision"] = 1,
+	["notes"] = {
+		"", -- [1]
+		"", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		"", -- [7]
+		"", -- [8]
+		"", -- [9]
+		"", -- [10]
+		"", -- [11]
+		"", -- [12]
+		"", -- [13]
+		"", -- [14]
+		"", -- [15]
+		"", -- [16]
+		"wasted my time in voa raid... kicked me because he made room for warrior friend", -- [17]
+		"", -- [18]
+		"", -- [19]
+		"", -- [20]
+		"", -- [21]
+		"", -- [22]
+		"", -- [23]
+		"", -- [24]
+		"", -- [25]
+		"", -- [26]
+		"", -- [27]
+		"idiot... need to ignore his existance", -- [28]
+	},
 	["expList"] = {
 		0, -- [1]
 		0, -- [2]
@@ -270,7 +216,7 @@ GlobalIgnoreDB = {
 		0, -- [27]
 		0, -- [28]
 	},
-	["skipParty"] = false,
+	["skipGuild"] = true,
 	["chatmsg"] = true,
 	["filterTotal"] = 9,
 	["dateList"] = {
@@ -315,7 +261,7 @@ GlobalIgnoreDB = {
 		"Filter WTS", -- [9]
 		"Filter Chinese/Korean/Japanese", -- [10]
 	},
-	["asknote"] = true,
+	["spamFilter"] = true,
 	["filterActive"] = {
 		true, -- [1]
 		true, -- [2]
@@ -328,13 +274,39 @@ GlobalIgnoreDB = {
 		false, -- [9]
 		false, -- [10]
 	},
-	["spamFilter"] = true,
-	["defexpire"] = 0,
-	["delList"] = {
-		"Happens-Golemagg", -- [1]
-		"Freezqt-Golemagg", -- [2]
-	},
-	["autoTime"] = 600,
+	["asknote"] = true,
+	["skipParty"] = false,
+	["revision"] = 1,
+	["autoUpdate"] = true,
 	["samefaction"] = true,
-	["openWithFriends"] = true,
+	["ignoreList"] = {
+		"Puntune-Golemagg", -- [1]
+		"Pömp-Golemagg", -- [2]
+		"Raudos-Golemagg", -- [3]
+		"Burstt-Golemagg", -- [4]
+		"Conall-Golemagg", -- [5]
+		"Elfboy-Golemagg", -- [6]
+		"Jerrywild-Golemagg", -- [7]
+		"Qtc-Golemagg", -- [8]
+		"Segasík-Golemagg", -- [9]
+		"Arferes-Golemagg", -- [10]
+		"Eristia-Golemagg", -- [11]
+		"Ayrik-Golemagg", -- [12]
+		"Scorpiona-Golemagg", -- [13]
+		"Proguen-Golemagg", -- [14]
+		"Supablast-Golemagg", -- [15]
+		"Grashandlol-Golemagg", -- [16]
+		"Micku-Golemagg", -- [17]
+		"Aerog-Golemagg", -- [18]
+		"Extod-Golemagg", -- [19]
+		"Goldsmell-Golemagg", -- [20]
+		"Hominio-Golemagg", -- [21]
+		"Kebabben-Golemagg", -- [22]
+		"Lolork-Golemagg", -- [23]
+		"Lyrior-Golemagg", -- [24]
+		"Morbintíme-Golemagg", -- [25]
+		"Tomrismage-Golemagg", -- [26]
+		"Toobased-Golemagg", -- [27]
+		"Nékosenshi-Golemagg", -- [28]
+	},
 }
