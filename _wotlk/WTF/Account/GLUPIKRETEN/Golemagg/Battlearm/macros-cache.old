@@ -1,6 +1,7 @@
-VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@player]Death and Decay
+/startattack
+/cast [spec:1]Heart Strike;[spec:2]Howling Blast
 END
 VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Death Pact
@@ -30,8 +31,7 @@ VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,exists][]Death Grip
 END
-VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/startattack
-/cast [spec:1]Heart Strike;[spec:2]Howling Blast
+/cast [@player]Death and Decay
 END

@@ -828,7 +828,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3580128000] = {
+				[6560571000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -928,7 +928,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5660439000] = {
+				[2850199001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -940,7 +940,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2850199001] = {
+				[2080563000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -980,7 +980,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2540248000] = {
+				[5640567001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1052,7 +1052,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6660703000] = {
+				[4750522000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1084,7 +1084,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5670438000] = {
+				[5580606000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1092,7 +1092,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6980546001] = {
+				[5170370000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1104,7 +1104,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3890185000] = {
+				[800528000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1112,11 +1112,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[800528000] = {
+				[3890185000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2850198000] = {
+				[2200683000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1204,7 +1204,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3880184000] = {
+				[7140639000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1220,7 +1220,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3390138000] = {
+				[1510437000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1700,7 +1700,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7710662000] = {
+				[2080561000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1944,9 +1944,9 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[8360433000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[6070578000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
 				[6350592000] = {
 					["touched"] = false,
@@ -1960,9 +1960,9 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6070578000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[8360433000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
 				[5250451000] = {
 					["touched"] = false,
@@ -1980,7 +1980,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3020439000] = {
+				[4970480000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2044,7 +2044,7 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[3510700000] = {
+				[7780662000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2080,7 +2080,7 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[2080560000] = {
+				[6490770000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2168,7 +2168,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6430723000] = {
+				[4010638000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2180,7 +2180,7 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[2800621000] = {
+				[7000708000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2252,7 +2252,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6060445001] = {
+				[4940605000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2316,7 +2316,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6500768000] = {
+				[5890436000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2352,7 +2352,7 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[6450722000] = {
+				[710662000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2512,7 +2512,7 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[7480599000] = {
+				[2970175000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2560,7 +2560,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6980703000] = {
+				[7270545000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2628,7 +2628,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2270463000] = {
+				[1160653000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2688,7 +2688,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[1160653000] = {
+				[2270463000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2712,7 +2712,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7270545000] = {
+				[6980703000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2728,7 +2728,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2970175000] = {
+				[7480599000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2816,7 +2816,7 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[710662000] = {
+				[6450722000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2832,11 +2832,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5540634000] = {
+				[6500768000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5890436000] = {
+				[5540634000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2860,7 +2860,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4940605000] = {
+				[6060445001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2904,7 +2904,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7000708000] = {
+				[2800621000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2912,7 +2912,7 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[4010638000] = {
+				[6430723000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2960,7 +2960,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6490770000] = {
+				[2080560000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2984,7 +2984,7 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[7780662000] = {
+				[3510700000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3012,7 +3012,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4970480000] = {
+				[3020439000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3116,7 +3116,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2080561000] = {
+				[7710662000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3328,11 +3328,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[1510437000] = {
+				[3390138000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7140639000] = {
+				[3880184000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3372,7 +3372,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2200683000] = {
+				[2850198000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3384,11 +3384,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5170370000] = {
+				[6980546001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5580606000] = {
+				[5670438000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3396,11 +3396,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4860355000] = {
+				[6660703000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4750522000] = {
+				[4860355000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3436,7 +3436,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5640567001] = {
+				[2540248000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3444,7 +3444,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2080563000] = {
+				[5660439000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3492,7 +3492,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6560571000] = {
+				[3580128000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},

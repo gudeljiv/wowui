@@ -57,8 +57,8 @@ Bagnon_Sets = {
 			["money"] = true,
 			["hiddenRules"] = {
 			},
-			["y"] = -239.1663818359375,
 			["bagBreak"] = false,
+			["y"] = -239.1663818359375,
 			["x"] = -387.91943359375,
 			["search"] = true,
 			["broker"] = false,
