@@ -1296,7 +1296,7 @@ Grid2DB = {
 								["b"] = 0,
 							},
 							["barTexture"] = "xVerminClean",
-							["frameTexture"] = "xVerminClean",
+							["frameTexture"] = "Melli",
 							["frameWidths"] = {
 								[5] = 175,
 							},
@@ -1339,8 +1339,8 @@ Grid2DB = {
 							["frameHeight"] = 30,
 							["frameHeaderWidths"] = {
 							},
-							["barTexture"] = "xVerminClean"nClean",
-							["frameTexture"] = "xVerminClean"nClean",
+							["barTexture"] = "Melli",
+							["frameTexture"] = "Melli",
 							["frameWidths"] = {
 								[10] = 140,
 							},
@@ -1387,12 +1387,12 @@ Grid2DB = {
 								["g"] = 0.0196078431372549,
 								["b"] = 0,
 							},
-							["barTexture"] = "xVerminClean"nClean",
+							["barTexture"] = "Melli",
 							["frameBorderTexture"] = "None",
 							["frameWidths"] = {
 								[40] = 68,
 							},
-							["frameTexture"] = "xVerminClean"nClean",
+							["frameTexture"] = "Melli",
 							["frameHeights"] = {
 								[40] = 30,
 							},
@@ -1421,8 +1421,8 @@ Grid2DB = {
 					},
 					["frameBorderDistance"] = 0,
 					["frameHeight"] = 30,
-					["barTexture"] = "xVerminClean"nClean",
-					["frameTexture"] = "xVerminClean"nClean",
+					["barTexture"] = "Melli",
+					["frameTexture"] = "Melli",
 					["mouseoverHighlight"] = true,
 					["frameContentColor"] = {
 						["a"] = 0,
@@ -7724,7 +7724,7 @@ Grid2DB = {
 					["size"] = 14,
 				},
 				["health"] = {
-					["texture"] = "xVerminClean"nClean",
+					["texture"] = "Melli",
 					["type"] = "bar",
 					["orientation"] = "HORIZONTAL",
 					["backColor"] = {
@@ -7733,7 +7733,7 @@ Grid2DB = {
 						["g"] = 0,
 						["r"] = 0,
 					},
-					["backTexture"] = "xVerminClean"nClean",
+					["backTexture"] = "Melli",
 					["level"] = 2,
 					["location"] = {
 						["y"] = 0,

@@ -1,13 +1,13 @@
-VER 3 000000000000000E " " "136106"
-/inspect
-/run SortBags()
-END
 VER 3 0000000000000013 " " "132130"
 /click BehindTarget
 END
 VER 3 0000000000000026 " " "134400"
 #showtooltip item:36912
 /2 WTB Saronite Ore 24g 
+END
+VER 3 000000000000000E " " "136106"
+/inspect
+/run SortBags()
 END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
@@ -50,8 +50,9 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000021 "TEST" "134400"
-/run nPower:ClearAllPoints()
-/run nPower:SetPoint('CENTER', UIParent, 'CENTER', 0, -110)
+/run print(ContainerFrame2Item1:GetID())
+/run print("--")
+/run print(ContainerFrame2Item1:GetParent():GetID())
 END
 VER 3 0000000000000020 "TSMDestroy" "134400"
 /tsm destroy

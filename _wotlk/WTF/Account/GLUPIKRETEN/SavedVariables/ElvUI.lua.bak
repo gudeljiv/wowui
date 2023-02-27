@@ -655,7 +655,7 @@ ElvDB = {
 				},
 				["fontOutline"] = "OUTLINE",
 				["debuffHighlighting"] = "NONE",
-				["statusbar"] = "xVerminClean",
+				["statusbar"] = "Melli",
 			},
 			["datatexts"] = {
 				["fontSize"] = 11,
@@ -762,7 +762,7 @@ ElvDB = {
 				},
 			},
 			["nameplates"] = {
-				["statusbar"] = "xVerminClean",
+				["statusbar"] = "Melli",
 				["font"] = "Arial Narrow",
 			},
 			["auras"] = {
@@ -1240,14 +1240,14 @@ ElvPrivateDB = {
 				["minimap"] = {
 					["enable"] = false,
 				},
-				["normTex"] = "xVerminClean",
+				["normTex"] = "Melli",
 				["dmgfont"] = "Arial Narrow",
 				["totemTracker"] = false,
 				["nameplateFont"] = "Arial Narrow",
 				["namefont"] = "Arial Narrow",
 				["worldMap"] = false,
 				["replaceCombatFont"] = false,
-				["glossTex"] = "xVerminClean",
+				["glossTex"] = "Melli",
 			},
 			["bags"] = {
 				["enable"] = false,

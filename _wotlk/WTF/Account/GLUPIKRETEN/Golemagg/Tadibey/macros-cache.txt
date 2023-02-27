@@ -6,7 +6,7 @@ END
 VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /stopcasting
-/cast [@focus,exists,harm][] Wind Shear
+/cast Wind Shear
 END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip

@@ -1,6 +1,6 @@
-VER 3 000000000100001B " " "INV_MISC_QUESTIONMARK"
-#showtooltip Lifebloom
-/cast [@focus,help,nodead] Lifebloom
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help,nodead][] Rejuvenation
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -80,7 +80,7 @@ VER 3 000000000100001A " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,help,nodead][] Wild Growth
 END
-VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover,help,nodead][] Rejuvenation
+VER 3 000000000100001B " " "INV_MISC_QUESTIONMARK"
+#showtooltip Lifebloom
+/cast [@focus,help,nodead] Lifebloom
 END

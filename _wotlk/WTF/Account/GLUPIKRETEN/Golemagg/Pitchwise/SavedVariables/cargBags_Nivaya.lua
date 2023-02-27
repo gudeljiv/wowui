@@ -90,6 +90,6 @@ cB_KnownItems = {
 }
 cBniv = {
 	["BagPos"] = false,
-	["clean"] = true,
+	["xVerminClean"] = true,
 	["BankCustomBags"] = true,
 }

@@ -14,14 +14,14 @@ ChocolateBarDB = {
 		["Battledog - Gehennas"] = "Default",
 		["Mxym - Golemagg"] = "Default",
 		["Handrmandr - Genesis"] = "Default",
-		["Tudum - Jin'do"] = "Default",
+		["Grgur - Golemagg"] = "Default",
 		["Poklopac - Dreadnaught"] = "Default",
 		["Konac - Dreadnaught"] = "Default",
 		["Provokator - Jin'do"] = "Default",
 		["Verminz - Genesis"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
 		["Augustin - Golemagg"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
+		["Tudum - Jin'do"] = "Default",
 		["Koloman - Golemagg"] = "Default",
 		["Pitchwise - Genesis"] = "Default",
 		["Whatevs - Stonespine"] = "Default",
@@ -59,7 +59,7 @@ ChocolateBarDB = {
 		["Battlearm - Jin'do"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Grgur - Golemagg"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
 		["Wells - Jin'do"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
@@ -690,9 +690,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 751267,
-		["timeAtThisLevel"] = 133808,
-		["timeStamp"] = 241556.375,
+		["total"] = 751193,
+		["timeAtThisLevel"] = 133734,
+		["timeStamp"] = 647884.555,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -734,31 +734,31 @@ CB_PlayedTime = {
 	["Whatevs-"] = {
 		["total"] = 213,
 	},
-	["Battlearm-Golemagg"] = {
-		["total"] = 822496,
-		["timeAtThisLevel"] = 492821,
-		["timeStamp"] = 240036.07,
+	["Vermins-"] = {
+		["total"] = 3014,
 	},
 	["Mxyzptlk-Golemagg"] = {
-		["total"] = 50517,
-		["timeStamp"] = 378216.518,
-		["timeAtThisLevel"] = 255,
+		["total"] = 50479,
+		["timeStamp"] = 1608645.963,
+		["timeAtThisLevel"] = 217,
 	},
 	["Mxzq-"] = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 1103400,
-		["timeStamp"] = 850524.525,
-		["timeAtThisLevel"] = 72380,
+		["total"] = 1118835,
+		["timeStamp"] = 1003820.308,
+		["timeAtThisLevel"] = 87815,
 	},
 	["Tandaram-Jin'do"] = {
 		["total"] = 97,
 		["timeStamp"] = 59401.909,
 		["timeAtThisLevel"] = 97,
 	},
-	["Dotwise-"] = {
-		["total"] = 3924,
+	["Wells-Jin'do"] = {
+		["total"] = 11721,
+		["timeStamp"] = 774953.806,
+		["timeAtThisLevel"] = 4960,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
@@ -771,15 +771,13 @@ CB_PlayedTime = {
 	["Moolatz-Dreadnaught"] = {
 		["total"] = 33043,
 	},
-	["Tudum-Jin'do"] = {
-		["total"] = 316,
-		["timeStamp"] = 60887.198,
-		["timeAtThisLevel"] = 316,
+	["Dotwise-"] = {
+		["total"] = 3924,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1936921,
-		["timeStamp"] = 241194.058,
-		["timeAtThisLevel"] = 844374,
+		["total"] = 1938308,
+		["timeStamp"] = 1002658.523,
+		["timeAtThisLevel"] = 845761,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
@@ -802,9 +800,9 @@ CB_PlayedTime = {
 		["total"] = 576,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 265366,
-		["timeStamp"] = 377774.686,
-		["timeAtThisLevel"] = 259620,
+		["total"] = 265234,
+		["timeStamp"] = 749125.539,
+		["timeAtThisLevel"] = 259488,
 	},
 	["Tudum-Ashbringer"] = {
 		["total"] = 6477,
@@ -851,9 +849,9 @@ CB_PlayedTime = {
 		["total"] = 140587,
 	},
 	["Tadibey-Golemagg"] = {
-		["total"] = 16576,
-		["timeAtThisLevel"] = 1676,
-		["timeStamp"] = 378045.465,
+		["total"] = 16294,
+		["timeAtThisLevel"] = 1394,
+		["timeStamp"] = 1608697.851,
 	},
 	["Korupcija-"] = {
 		["total"] = 21359,
@@ -884,23 +882,25 @@ CB_PlayedTime = {
 	["Battlearm-"] = {
 		["total"] = 1786,
 	},
-	["Wells-Jin'do"] = {
-		["total"] = 11721,
-		["timeStamp"] = 774953.806,
-		["timeAtThisLevel"] = 4960,
+	["Tudum-Jin'do"] = {
+		["total"] = 316,
+		["timeStamp"] = 60887.198,
+		["timeAtThisLevel"] = 316,
 	},
 	["Grgur-"] = {
 		["total"] = 1248,
 	},
 	["Vermina-Golemagg"] = {
-		["total"] = 353092,
-		["timeStamp"] = 848296.839,
-		["timeAtThisLevel"] = 317,
-	},
-	["Vermins-"] = {
-		["total"] = 3014,
+		["total"] = 354991,
+		["timeStamp"] = 1003920.838,
+		["timeAtThisLevel"] = 2216,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,
+	},
+	["Battlearm-Golemagg"] = {
+		["total"] = 828867,
+		["timeAtThisLevel"] = 499192,
+		["timeStamp"] = 1007894.423,
 	},
 }

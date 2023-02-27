@@ -9,11 +9,11 @@ WSEDB = {
 		["Moolatz - Golemagg"] = "Default",
 		["Battitude - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
-		["Battledog - Gehennas"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Miqa - Golemagg"] = "Default",
+		["Battledog - Gehennas"] = "Default",
 		["Tadibey - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Battlearm - Gehennas"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
 	},
 }

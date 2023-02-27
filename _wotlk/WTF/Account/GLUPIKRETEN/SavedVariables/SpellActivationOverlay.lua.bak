@@ -73,9 +73,9 @@ SpellActivationOverlayDB = {
 			["glow"] = {
 				[53817] = {
 					[403] = false,
-					[421] = false,
-					[8004] = false,
 					[1064] = false,
+					[8004] = false,
+					[421] = false,
 					[331] = false,
 					[51514] = false,
 				},

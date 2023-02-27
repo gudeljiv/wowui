@@ -47,8 +47,8 @@ RXPCTrackingData = {
 					["deaths"] = 0,
 					["mobs"] = {
 						["The Barrens"] = {
-							["xp"] = 150,
-							["count"] = 1,
+							["xp"] = 1290,
+							["count"] = 9,
 						},
 					},
 					["timestamp"] = {
@@ -87,7 +87,7 @@ RXPCSettings = {
 		["Mxyzptlk - Golemagg"] = {
 			["hardcore"] = false,
 			["enableMinimapButton"] = false,
-			["frameHeight"] = 125.000114440918,
+			["frameHeight"] = 125.0000152587891,
 		},
 	},
 }

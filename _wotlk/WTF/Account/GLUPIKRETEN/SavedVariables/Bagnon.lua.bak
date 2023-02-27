@@ -58,8 +58,8 @@ Bagnon_Sets = {
 			["hiddenRules"] = {
 			},
 			["bagBreak"] = false,
-			["y"] = -239.1663818359375,
-			["x"] = -387.91943359375,
+			["y"] = -266.4677734375,
+			["x"] = -389.82421875,
 			["search"] = true,
 			["broker"] = false,
 			["reverseSlots"] = false,
@@ -137,10 +137,16 @@ Bagnon_Sets = {
 			},
 			["hiddenRules"] = {
 			},
-			["y"] = -312.3585205078125,
-			["x"] = 514.8113403320312,
+			["y"] = -339.0252685546875,
+			["x"] = 462.7479553222656,
 			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
+			["columns"] = 10,
+			["spacing"] = 3,
 		},
 		["bank"] = {
 			["rules"] = {
@@ -179,19 +185,19 @@ Bagnon_Sets = {
 				0.7900000065565109, -- [4]
 			},
 			["sort"] = true,
-			["spacing"] = 2,
+			["spacing"] = 3,
 			["bagToggle"] = true,
 			["columns"] = 10,
 			["alpha"] = 1,
 			["scale"] = 1,
 			["bagBreak"] = false,
-			["x"] = 56.12556838989258,
+			["x"] = 463.3636779785156,
 			["search"] = true,
 			["broker"] = false,
 			["itemScale"] = 1,
 			["hiddenRules"] = {
 			},
-			["y"] = -82.18017578125,
+			["y"] = -106.0533447265625,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]

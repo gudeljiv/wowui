@@ -1282,7 +1282,7 @@ Grid2DB = {
 							["frameHeaderWidths"] = {
 							},
 							["barTexture"] = "xVerminClean",
-							["frameTexture"] = "xVerminClean",
+							["frameTexture"] = "Melli",
 							["frameWidths"] = {
 								[5] = 175,
 							},
@@ -1327,8 +1327,8 @@ Grid2DB = {
 							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
 							["frameBorderDistance"] = -1,
 							["frameHeight"] = 30,
-							["frameTexture"] = "xVerminClean",
-							["barTexture"] = "xVerminClean",
+							["frameTexture"] = "Melli",
+							["barTexture"] = "Melli",
 							["mouseoverColor"] = {
 								["a"] = 1,
 								["r"] = 1,
@@ -1372,7 +1372,7 @@ Grid2DB = {
 							["frameBorderDistance"] = 0,
 							["frameHeight"] = 34,
 							["frameBorderTexture"] = "None",
-							["barTexture"] = "xVerminClean",
+							["barTexture"] = "Melli",
 							["mouseoverColor"] = {
 								["a"] = 1,
 								["r"] = 1,
@@ -1382,7 +1382,7 @@ Grid2DB = {
 							["frameWidths"] = {
 								[40] = 68,
 							},
-							["frameTexture"] = "xVerminClean",
+							["frameTexture"] = "Melli",
 							["orientation"] = "VERTICAL",
 							["mouseoverHighlight"] = true,
 							["frameColor"] = {
@@ -1411,8 +1411,8 @@ Grid2DB = {
 					},
 					["frameBorderDistance"] = 0,
 					["frameHeight"] = 30,
-					["barTexture"] = "xVerminClean",
-					["frameTexture"] = "xVerminClean",
+					["barTexture"] = "Melli",
+					["frameTexture"] = "Melli",
 					["mouseoverHighlight"] = true,
 					["frameContentColor"] = {
 						["a"] = 0,
@@ -7371,7 +7371,7 @@ Grid2DB = {
 						["r"] = 0,
 					},
 					["type"] = "bar",
-					["backTexture"] = "xVerminClean",
+					["backTexture"] = "Melli",
 					["backColor"] = {
 						["a"] = 0.2346371412277222,
 						["r"] = 0,
@@ -7386,7 +7386,7 @@ Grid2DB = {
 					},
 					["level"] = 2,
 					["orientation"] = "HORIZONTAL",
-					["texture"] = "xVerminClean",
+					["texture"] = "Melli",
 				},
 				["mana-5-10"] = {
 					["type"] = "bar",

@@ -117,52 +117,45 @@ aoe_casting.text:SetShadowColor(0, 0, 0, 1.0)
 aoe_casting.text:SetShadowOffset(2, -2)
 
 local aoe_number, aoe_casting_number
-xVermin.CheckIfLoadedWithTimer(
-	'RotationFrame2',
+
+UIParent:HookScript(
+	'OnUpdate',
 	function()
-		-- white -> skip
-		-- green -> single target
-		-- red -> aoe
-		UIParent:HookScript(
-			'OnUpdate',
-			function()
-				-- local red, green, blue, alpha = RotationFrame_AOERANGECASTING:GetBackdropColor()
-				-- ChatFrame7:AddMessage(xVermin.Round(red, 2) .. ' ' .. xVermin.Round(green, 2) .. ' ' .. xVermin.Round(blue, 2))
+		-- local red, green, blue, alpha = RotationFrame_AOERANGECASTING:GetBackdropColor()
+		-- ChatFrame7:AddMessage(xVermin.Round(red, 2) .. ' ' .. xVermin.Round(green, 2) .. ' ' .. xVermin.Round(blue, 2))
 
-				haveBuff = false
+		haveBuff = false
 
-				for buff in pairs(buffs) do
-					for i = 1, 40 do
-						local B = UnitBuff('player', i)
-						if B and B == buff then
-							haveBuff = true
-						end
-					end
+		for buff in pairs(buffs) do
+			for i = 1, 40 do
+				local B = UnitBuff('player', i)
+				if B and B == buff then
+					haveBuff = true
 				end
-
-				aoe_number = 0
-				aoe_casting_number = 0
-				if IsAltKeyDown() or ChatFrame1EditBox:IsVisible() or IsMounted() or haveBuff then
-					RotationFrame2:SetBackdropColor(1, 1, 1, 1) -- white
-				else
-					if InCombatLockdown() then
-						aoe_number = xVermin.AOE(skills_range[xVermin.Class])
-						aoe_casting_number = xVermin.AOE(35, true)
-						if aoe_number > 1 then
-							RotationFrame2:SetBackdropColor(1, 0, 0, 1) -- red --> DO AOE
-						else
-							RotationFrame2:SetBackdropColor(0, 1, 0, 1) -- green --> DO SINGLE TARGET
-						end
-					else
-						RotationFrame2:SetBackdropColor(1, 1, 1, 1) -- white --> OOC
-					end
-				end
-
-				aoe.text:SetText(aoe_number)
-				-- aoe.shadow_text:SetText(aoe_number)
-				aoe_casting.text:SetText(aoe_casting_number)
-				-- aoe_casting.shadow_text:SetText(aoe_casting_number)
 			end
-		)
+		end
+
+		aoe_number = 0
+		aoe_casting_number = 0
+		if IsAltKeyDown() or ChatFrame1EditBox:IsVisible() or IsMounted() or haveBuff then
+			RotationFrame2:SetBackdropColor(1, 1, 1, 1) -- white
+		else
+			if InCombatLockdown() then
+				aoe_number = xVermin.AOE(skills_range[xVermin.Class])
+				aoe_casting_number = xVermin.AOE(35, true)
+				if aoe_number > 1 then
+					RotationFrame2:SetBackdropColor(1, 0, 0, 1) -- red --> DO AOE
+				else
+					RotationFrame2:SetBackdropColor(0, 1, 0, 1) -- green --> DO SINGLE TARGET
+				end
+			else
+				RotationFrame2:SetBackdropColor(1, 1, 1, 1) -- white --> OOC
+			end
+		end
+
+		aoe.text:SetText(aoe_number)
+		-- aoe.shadow_text:SetText(aoe_number)
+		aoe_casting.text:SetText(aoe_casting_number)
+		-- aoe_casting.shadow_text:SetText(aoe_casting_number)
 	end
 )
