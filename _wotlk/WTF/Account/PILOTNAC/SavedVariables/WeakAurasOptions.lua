@@ -3852,7 +3852,7 @@ WeakAurasOptionsSaved = {
 		["Dense Stone Statue"] = {
 			["spells"] = "32805=134230",
 		},
-		["Clean"] = {
+		["xVerminClean"] = {
 			["spells"] = "55592=136222",
 		},
 		["Flamebane Breastplate"] = {

@@ -57,7 +57,7 @@ GlobalIgnoreDB = {
 		"[contains=WTS] or [contains=WTB]", -- [9]
 		"[nonlatin]", -- [10]
 	},
-	["trackChanges"] = true,
+	["autoUpdate"] = true,
 	["autoCount"] = 3,
 	["sameserver"] = true,
 	["ignoreList"] = {
@@ -90,7 +90,7 @@ GlobalIgnoreDB = {
 		"Toobased-Golemagg", -- [27]
 		"Nékosenshi-Golemagg", -- [28]
 	},
-	["autoUpdate"] = true,
+	["autoTime"] = 600,
 	["autoIgnore"] = true,
 	["factionList"] = {
 		"Horde", -- [1]
@@ -249,7 +249,7 @@ GlobalIgnoreDB = {
 		"", -- [27]
 		"idiot... need to ignore his existance", -- [28]
 	},
-	["autoTime"] = 600,
+	["trackChanges"] = true,
 	["samefaction"] = true,
 	["syncInfo"] = {
 		{
@@ -307,6 +307,7 @@ GlobalIgnoreDB = {
 		{
 		}, -- [27]
 		{
+			"Moolatz-Golemagg@1", -- [1]
 		}, -- [28]
 	},
 }

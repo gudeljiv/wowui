@@ -4,11 +4,11 @@
     for Classic/TBC/WOTLK
 
     Requires: LibStub, CallbackHandler-1.0, LibDetours-1.0
-    Version: 11 (2023-02-10)
+    Version: 14 (2023-02-26)
 
 --]]
 
-local LCI_VERSION = 11
+local LCI_VERSION = 14
 
 local clientVersionString = GetBuildInfo()
 local clientBuildMajor = string.byte(clientVersionString, 1)
@@ -220,7 +220,7 @@ end
 -- TODO: talent IDs
 -- TODO: localization
 if (isWotlk) then
-if (oldminor < 11) then
+if (oldminor < 13) then
   lib.glyphs_table = nil
   lib.glyph_r_tbl = nil
 end
@@ -275,7 +275,7 @@ lib.glyphs_table = lib.glyphs_table or {
       [5] = 54926,  -- Glyph of Hammer of Wrath
       [6] = 54927,  -- Glyph of Crusader Strike
       [7] = 54928,  -- Glyph of Consecration
-      [8] = 55115,  -- Glyph of Righteous Defense
+      [8] = 54929,  -- Glyph of Righteous Defense
       [9] = 54930,  -- Glyph of Avenger's Shield
       [10] = 54931, -- Glyph of Turn Evil
       [11] = 54934, -- Glyph of Exorcism
@@ -369,7 +369,7 @@ lib.glyphs_table = lib.glyphs_table or {
       [19] = 56819, -- Glyph of Preparation
       [20] = 56820, -- Glyph of Crippling Poison
       [21] = 56821, -- Glyph of Sinister Strike
-      [22] = 63239, -- Glyph of Cloak of Shadows
+      [22] = 63269, -- Glyph of Cloak of Shadows
       [23] = 63249, -- Glyph of Hunger of Blood
       [24] = 63252, -- Glyph of Killing Spree
       [25] = 63253, -- Glyph of Shadow Dance
@@ -3101,6 +3101,7 @@ local function sendInfo()
                 for i = 1, 6 do
                     local z = select(3, GetGlyphSocketInfo(i, x))
                     if (z) then
+                        if (z == 55115) then z = 54929 end
                         s = s..string.char(glyph_r_tbl[z]+48)
                     else
                         s = s.."0"
@@ -4055,8 +4056,11 @@ function lib:HasGlyph(unitorguid, glyphSpellID, _group)
     if (guid == UnitGUID("player")) then
         for i=1,6 do
             local enabled, _, id = GetGlyphSocketInfo(i, group)
-            if (enabled and id == glyphSpellID) then
-                return true
+            if (enabled and id) then
+                if (id == 55115) then id = 54929 end
+                if (id == glyphSpellID) then
+                    return true
+                end
             end
         end
         return false
@@ -4124,6 +4128,7 @@ function lib:GetGlyphs(unitorguid, _group)
         for i=1,6 do
             local enabled, _, id = GetGlyphSocketInfo(i, group)
             if (enabled and id) then
+                if (id == 55115) then id = 54929 end
                 glyphs[i] = id
             else
                 glyphs[i] = 0

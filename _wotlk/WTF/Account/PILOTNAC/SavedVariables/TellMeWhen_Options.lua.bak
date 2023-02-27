@@ -15279,7 +15279,7 @@ TMWOptDB = {
 					["Locked"] = true,
 					["Version"] = 91200,
 					["NumGroups"] = 3,
-					["TextureName"] = "Glamour2",
+					["TextureName"] = "xVerminClean",
 				},
 				["Grgur - Golemagg"] = {
 					["Locked"] = true,
@@ -21367,7 +21367,7 @@ TMWOptDB = {
 					["Locked"] = true,
 					["Version"] = 92500,
 					["NumGroups"] = 4,
-					["TextureName"] = "Glamour2",
+					["TextureName"] = "xVerminClean",
 				},
 				["Warrior"] = {
 					["Version"] = 92500,
@@ -22785,7 +22785,7 @@ TMWOptDB = {
 						}, -- [5]
 					},
 					["NumGroups"] = 5,
-					["TextureName"] = "Glamour2",
+					["TextureName"] = "xVerminClean",
 				},
 				["Paladin"] = {
 					["Locked"] = true,

@@ -5189,7 +5189,7 @@ PlaterDB = {
 				["side"] = 1,
 			},
 			["aura_timer"] = false,
-			["health_selection_overlay"] = "Clean",
+			["health_selection_overlay"] = "xVerminClean",
 			["cast_statusbar_color_nointerrupt"] = {
 				0.49411764705882, -- [1]
 				0.49803921568628, -- [2]
@@ -8479,7 +8479,7 @@ PlaterDB = {
 			["transparency_behavior"] = 2,
 			["aura_consolidate"] = true,
 			["extra_icon_width"] = 26,
-			["health_statusbar_texture"] = "Clean",
+			["health_statusbar_texture"] = "xVerminClean",
 			["hook_auto_imported"] = {
 				["Color Automation"] = 1,
 				["Blockade Encounter"] = 1,
@@ -8929,7 +8929,7 @@ PlaterDB = {
 			},
 			["aura_y_offset"] = 15.5,
 			["use_ui_parent"] = true,
-			["focus_texture"] = "Clean",
+			["focus_texture"] = "xVerminClean",
 			["cast_statusbar_bgcolor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -11553,7 +11553,7 @@ PlaterDB = {
 					},
 				},
 			},
-			["cast_statusbar_texture"] = "Clean",
+			["cast_statusbar_texture"] = "xVerminClean",
 			["range_check_alpha_friendlies"] = 1,
 			["range_check_enabled"] = false,
 			["auto_toggle_stacking"] = {

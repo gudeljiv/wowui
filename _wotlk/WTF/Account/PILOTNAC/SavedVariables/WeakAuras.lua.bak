@@ -810,7 +810,7 @@ WeakAurasSaved = {
 			["icon_side"] = "RIGHT",
 			["auto"] = true,
 			["sparkHeight"] = 30,
-			["texture"] = "Clean",
+			["texture"] = "xVerminClean",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["zoom"] = 0,
 			["semver"] = "1.0.0",
@@ -3731,7 +3731,7 @@ WeakAurasSaved = {
 			["icon_side"] = "RIGHT",
 			["semver"] = "1.0.0",
 			["sparkHeight"] = 30,
-			["texture"] = "Clean",
+			["texture"] = "xVerminClean",
 			["zoom"] = 0,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["auto"] = true,
@@ -3967,7 +3967,7 @@ WeakAurasSaved = {
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
-			["texture"] = "Clean",
+			["texture"] = "xVerminClean",
 			["zoom"] = 0,
 			["spark"] = false,
 			["tocversion"] = 30400,
@@ -4253,7 +4253,7 @@ WeakAurasSaved = {
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
-			["texture"] = "Clean",
+			["texture"] = "xVerminClean",
 			["zoom"] = 0,
 			["auto"] = true,
 			["tocversion"] = 11302,
@@ -4457,7 +4457,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["overlaysTexture"] = {
-				"Clean", -- [1]
+				"xVerminClean", -- [1]
 			},
 			["id"] = "Druid - Mana Bar ",
 			["semver"] = "1.0.13",
@@ -5154,7 +5154,7 @@ WeakAurasSaved = {
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
-			["texture"] = "Clean",
+			["texture"] = "xVerminClean",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["spark"] = false,
 			["tocversion"] = 30400,
@@ -5430,7 +5430,7 @@ WeakAurasSaved = {
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
-			["texture"] = "Clean",
+			["texture"] = "xVerminClean",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["auto"] = true,
 			["glowScale"] = 1,
@@ -7162,7 +7162,7 @@ WeakAurasSaved = {
 			["sparkDesaturate"] = false,
 			["spark"] = true,
 			["sparkHeight"] = 10,
-			["texture"] = "Clean",
+			["texture"] = "xVerminClean",
 			["backgroundColor"] = {
 				0.031372549019608, -- [1]
 				0.39607843137255, -- [2]
@@ -7452,7 +7452,7 @@ WeakAurasSaved = {
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
-			["texture"] = "Clean",
+			["texture"] = "xVerminClean",
 			["zoom"] = 0,
 			["spark"] = false,
 			["tocversion"] = 30400,
@@ -7979,7 +7979,7 @@ WeakAurasSaved = {
 			["icon_side"] = "RIGHT",
 			["sparkHeight"] = 30,
 			["overlayclip"] = false,
-			["texture"] = "Glamour2",
+			["texture"] = "xVerminClean",
 			["spark"] = false,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["auto"] = true,
@@ -10083,7 +10083,7 @@ WeakAurasSaved = {
 			["icon_side"] = "RIGHT",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["sparkHeight"] = 30,
-			["texture"] = "Clean",
+			["texture"] = "xVerminClean",
 			["frameStrata"] = 1,
 			["zoom"] = 0,
 			["spark"] = false,
@@ -12090,7 +12090,7 @@ WeakAurasSaved = {
 			["icon_side"] = "RIGHT",
 			["width"] = 99.999954223633,
 			["sparkHeight"] = 30,
-			["texture"] = "Clean",
+			["texture"] = "xVerminClean",
 			["id"] = "Herbaning Switch",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["auto"] = true,
@@ -13054,7 +13054,7 @@ WeakAurasSaved = {
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
-			["texture"] = "Clean",
+			["texture"] = "xVerminClean",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["auto"] = true,
 			["tocversion"] = 11302,
@@ -13222,7 +13222,7 @@ WeakAurasSaved = {
 			["sparkHeight"] = 30,
 			["uid"] = "AOIYnN7jUVG",
 			["overlaysTexture"] = {
-				"Clean", -- [1]
+				"xVerminClean", -- [1]
 			},
 			["sparkHidden"] = "NEVER",
 			["semver"] = "1.0.13",
@@ -14056,7 +14056,7 @@ WeakAurasSaved = {
 			["icon_side"] = "RIGHT",
 			["zoom"] = 0,
 			["sparkHeight"] = 30,
-			["texture"] = "Clean",
+			["texture"] = "xVerminClean",
 			["sparkHidden"] = "NEVER",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["auto"] = true,
@@ -14175,7 +14175,7 @@ WeakAurasSaved = {
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
-			["texture"] = "Glamour2",
+			["texture"] = "xVerminClean",
 			["zoom"] = 0,
 			["auto"] = true,
 			["tocversion"] = 11302,
@@ -14390,7 +14390,7 @@ WeakAurasSaved = {
 			["sparkHeight"] = 30,
 			["uid"] = "rXIsMos0cPN",
 			["overlaysTexture"] = {
-				"Glamour2", -- [1]
+				"xVerminClean", -- [1]
 			},
 			["config"] = {
 			},
@@ -15614,7 +15614,7 @@ WeakAurasSaved = {
 			},
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
-			["texture"] = "Clean",
+			["texture"] = "xVerminClean",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["spark"] = false,
 			["tocversion"] = 11302,
@@ -15811,7 +15811,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["overlaysTexture"] = {
-				"Clean", -- [1]
+				"xVerminClean", -- [1]
 			},
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "1.0.13",
@@ -18286,7 +18286,7 @@ WeakAurasSaved = {
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
 			["blendMode"] = "BLEND",
-			["texture"] = "Clean",
+			["texture"] = "xVerminClean",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["spark"] = false,
 			["tocversion"] = 11305,
@@ -19299,7 +19299,7 @@ WeakAurasSaved = {
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
-			["texture"] = "Clean",
+			["texture"] = "xVerminClean",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["spark"] = false,
 			["tocversion"] = 11302,
@@ -19502,7 +19502,7 @@ WeakAurasSaved = {
 			["sparkHeight"] = 30,
 			["zoom"] = 0,
 			["overlaysTexture"] = {
-				"Clean", -- [1]
+				"xVerminClean", -- [1]
 			},
 			["sparkHidden"] = "NEVER",
 			["semver"] = "1.0.13",
@@ -19785,7 +19785,7 @@ WeakAurasSaved = {
 			["icon_side"] = "RIGHT",
 			["auto"] = true,
 			["sparkHeight"] = 30,
-			["texture"] = "Clean",
+			["texture"] = "xVerminClean",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["zoom"] = 0,
 			["spark"] = false,
@@ -19978,7 +19978,7 @@ WeakAurasSaved = {
 			["icon_side"] = "RIGHT",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["sparkHeight"] = 30,
-			["texture"] = "Clean",
+			["texture"] = "xVerminClean",
 			["auto"] = true,
 			["zoom"] = 0,
 			["spark"] = false,

@@ -824,7 +824,7 @@ _detalhes_database = {
 			["scale"] = 1,
 			["arrow_anchor_x"] = 0,
 			["row_height"] = 18,
-			["row_texture"] = "Glamour2",
+			["row_texture"] = "xVerminClean",
 			["font_color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -994,7 +994,7 @@ _detalhes_database = {
 			},
 			["clickthrough_toolbaricons"] = false,
 			["clickthrough_rows"] = false,
-			["titlebar_texture"] = "Clean",
+			["titlebar_texture"] = "xVerminClean",
 			["switch_tank"] = {
 				1, -- [1]
 				1, -- [2]
@@ -1335,10 +1335,10 @@ _detalhes_database = {
 					1, -- [4]
 				},
 				["textR_custom_text"] = "{data1} ({data2}, {data3}%)",
-				["texture"] = "Clean",
+				["texture"] = "xVerminClean",
 				["textR_class_colors"] = false,
 				["texture_background_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
-				["overlay_texture"] = "Clean",
+				["overlay_texture"] = "xVerminClean",
 				["fixed_texture_background_color"] = {
 					0, -- [1]
 					0, -- [2]
@@ -1346,7 +1346,7 @@ _detalhes_database = {
 					0.07912671566009521, -- [4]
 				},
 				["textL_class_colors"] = false,
-				["texture_background"] = "Clean",
+				["texture_background"] = "xVerminClean",
 				["alpha"] = 1,
 				["no_icon"] = true,
 				["icon_offset"] = {

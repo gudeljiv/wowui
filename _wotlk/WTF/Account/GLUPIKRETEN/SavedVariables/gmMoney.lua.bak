@@ -18,7 +18,7 @@ GMMONEY = {
 	},
 	["Golemagg"] = {
 		["Battlearm"] = {
-			["GOLD"] = 180101933,
+			["GOLD"] = 182029863,
 			["CLASS"] = "DEATHKNIGHT",
 		},
 		["Mxzq"] = {
@@ -62,7 +62,7 @@ GMMONEY = {
 			["CLASS"] = "MAGE",
 		},
 		["Vermin"] = {
-			["GOLD"] = 109758493,
+			["GOLD"] = 120222694,
 			["CLASS"] = "WARRIOR",
 		},
 	},

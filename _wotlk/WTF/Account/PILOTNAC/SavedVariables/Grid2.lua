@@ -682,7 +682,7 @@ Grid2DB = {
 							["frameBorderDistance"] = 1,
 							["frameHeight"] = 600,
 							["frameBorderTexture"] = "None",
-							["barTexture"] = "Clean",
+							["barTexture"] = "xVerminClean",
 							["mouseoverColor"] = {
 								["a"] = 1,
 								["r"] = 1,
@@ -693,7 +693,7 @@ Grid2DB = {
 								125, -- [1]
 								[5] = 125,
 							},
-							["frameTexture"] = "Clean",
+							["frameTexture"] = "xVerminClean",
 							["font"] = "Arial Narrow",
 							["mouseoverHighlight"] = false,
 							["frameHeights"] = {
@@ -734,7 +734,7 @@ Grid2DB = {
 								["g"] = 1,
 								["r"] = 1,
 							},
-							["barTexture"] = "Clean",
+							["barTexture"] = "xVerminClean",
 							["frameBorderColor"] = {
 								["a"] = 0,
 								["b"] = 0,
@@ -758,7 +758,7 @@ Grid2DB = {
 								[10] = 60,
 							},
 							["frameWidth"] = 125,
-							["frameTexture"] = "Clean",
+							["frameTexture"] = "xVerminClean",
 						}, -- [2]
 						{
 							["frameColor"] = {
@@ -774,7 +774,7 @@ Grid2DB = {
 							["frameBorderDistance"] = -2,
 							["frameHeight"] = 50,
 							["frameBorderTexture"] = "None",
-							["barTexture"] = "Clean",
+							["barTexture"] = "xVerminClean",
 							["mouseoverColor"] = {
 								["a"] = 1,
 								["b"] = 1,
@@ -785,7 +785,7 @@ Grid2DB = {
 								[25] = 90,
 								[40] = 70,
 							},
-							["frameTexture"] = "Clean",
+							["frameTexture"] = "xVerminClean",
 							["font"] = "Arial Narrow",
 							["frameHeights"] = {
 								[25] = 60,
@@ -815,9 +815,9 @@ Grid2DB = {
 					["frameContentColor"] = {
 						["a"] = 0,
 					},
-					["barTexture"] = "Clean",
+					["barTexture"] = "xVerminClean",
 					["frameWidth"] = 120,
-					["frameTexture"] = "Clean",
+					["frameTexture"] = "xVerminClean",
 				},
 				["TEST"] = {
 					["frameColor"] = {
@@ -849,7 +849,7 @@ Grid2DB = {
 							["frameWidths"] = {
 								[5] = 150,
 							},
-							["frameTexture"] = "Clean",
+							["frameTexture"] = "xVerminClean",
 							["frameBorderTexture"] = "None",
 							["mouseoverHighlight"] = false,
 							["frameHeights"] = {
@@ -912,7 +912,7 @@ Grid2DB = {
 								[10] = 30,
 							},
 							["frameWidth"] = 120,
-							["frameTexture"] = "Clean",
+							["frameTexture"] = "xVerminClean",
 						}, -- [2]
 					},
 					["frameWidths"] = {
@@ -925,7 +925,7 @@ Grid2DB = {
 					["frameHeights"] = {
 						[25] = 30,
 					},
-					["frameTexture"] = "Clean",
+					["frameTexture"] = "xVerminClean",
 					["frameWidth"] = 120,
 					["frameBorderDistance"] = -1,
 				},
@@ -1211,7 +1211,7 @@ Grid2DB = {
 					["fontSize"] = 12,
 					["frameHeight"] = 50,
 					["frameBorder"] = 1,
-					["barTexture"] = "Clean",
+					["barTexture"] = "xVerminClean",
 					["extraThemes"] = {
 						{
 							["frameColor"] = {
@@ -1226,8 +1226,8 @@ Grid2DB = {
 							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
 							["frameBorderDistance"] = -1,
 							["frameHeight"] = 50,
-							["barTexture"] = "Clean",
-							["frameTexture"] = "Clean",
+							["barTexture"] = "xVerminClean",
+							["frameTexture"] = "xVerminClean",
 							["frameWidths"] = {
 								[10] = 125,
 								[5] = 125,
@@ -1272,13 +1272,13 @@ Grid2DB = {
 							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
 							["frameBorderDistance"] = -1,
 							["frameHeight"] = 40,
-							["barTexture"] = "Clean",
+							["barTexture"] = "xVerminClean",
 							["frameBorderTexture"] = "None",
 							["frameWidths"] = {
 								[5] = 125,
 								[10] = 125,
 							},
-							["frameTexture"] = "Clean",
+							["frameTexture"] = "xVerminClean",
 							["frameBorderColor"] = {
 								["a"] = 0,
 								["r"] = 0,
@@ -1318,8 +1318,8 @@ Grid2DB = {
 							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
 							["frameBorderDistance"] = -2,
 							["frameHeight"] = 50,
-							["barTexture"] = "Clean",
-							["frameTexture"] = "Clean",
+							["barTexture"] = "xVerminClean",
+							["frameTexture"] = "xVerminClean",
 							["frameWidths"] = {
 								[25] = 100,
 								[40] = 100,
@@ -1356,7 +1356,7 @@ Grid2DB = {
 					["frameContentColor"] = {
 						["a"] = 0,
 					},
-					["frameTexture"] = "Clean",
+					["frameTexture"] = "xVerminClean",
 					["frameWidth"] = 120,
 					["frameBorderDistance"] = -2,
 				},
@@ -2012,7 +2012,7 @@ Grid2DB = {
 				["mana"] = {
 					["height"] = 4,
 					["type"] = "bar",
-					["backTexture"] = "Clean",
+					["backTexture"] = "xVerminClean",
 					["backColor"] = {
 						["a"] = 0.3061864972114563,
 						["r"] = 0,
@@ -2027,7 +2027,7 @@ Grid2DB = {
 					},
 					["level"] = 3,
 					["orientation"] = "HORIZONTAL",
-					["texture"] = "Clean",
+					["texture"] = "xVerminClean",
 				},
 				["border"] = {
 					["type"] = "border",
@@ -2068,7 +2068,7 @@ Grid2DB = {
 				},
 				["heals"] = {
 					["type"] = "bar",
-					["texture"] = "Clean",
+					["texture"] = "xVerminClean",
 					["anchorTo"] = "health",
 					["location"] = {
 						["y"] = 0,
@@ -2134,7 +2134,7 @@ Grid2DB = {
 						["b"] = 0,
 					},
 					["type"] = "bar",
-					["backTexture"] = "Clean",
+					["backTexture"] = "xVerminClean",
 					["backColor"] = {
 						["a"] = 0.389516115188599,
 						["b"] = 0,
@@ -2149,11 +2149,11 @@ Grid2DB = {
 						["point"] = "CENTER",
 						["x"] = 0,
 					},
-					["texture"] = "Clean",
+					["texture"] = "xVerminClean",
 				},
 				["corner-bottom-left"] = {
 					["type"] = "square",
-					["texture"] = "Clean",
+					["texture"] = "xVerminClean",
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "BOTTOMLEFT",
@@ -6851,7 +6851,7 @@ Grid2DB = {
 					},
 					["level"] = 1,
 					["opacity"] = 0.25,
-					["texture"] = "Clean",
+					["texture"] = "xVerminClean",
 				},
 				["icon-right"] = {
 					["fontSize"] = 8,
@@ -6886,7 +6886,7 @@ Grid2DB = {
 					},
 					["opacity"] = 1,
 					["height"] = 4,
-					["backTexture"] = "Clean",
+					["backTexture"] = "xVerminClean",
 					["orientation"] = "HORIZONTAL",
 					["level"] = 3,
 					["location"] = {
@@ -6895,7 +6895,7 @@ Grid2DB = {
 						["point"] = "BOTTOM",
 						["x"] = 0,
 					},
-					["texture"] = "Clean",
+					["texture"] = "xVerminClean",
 				},
 				["health-color"] = {
 					["type"] = "bar-color",
@@ -6914,7 +6914,7 @@ Grid2DB = {
 				},
 				["health"] = {
 					["type"] = "bar",
-					["texture"] = "Clean",
+					["texture"] = "xVerminClean",
 					["backColor"] = {
 						["a"] = 1,
 						["b"] = 0,
@@ -6965,7 +6965,7 @@ Grid2DB = {
 					},
 					["level"] = 5,
 					["type"] = "icon",
-					["texture"] = "Clean",
+					["texture"] = "xVerminClean",
 				},
 				["text-up-color"] = {
 					["type"] = "text-color",
