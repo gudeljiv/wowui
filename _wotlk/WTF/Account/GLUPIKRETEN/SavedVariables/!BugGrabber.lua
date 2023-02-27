@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 9411,
+	["session"] = 9413,
 	["errors"] = {
 		{
 			["message"] = "[string \"abar_core:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
