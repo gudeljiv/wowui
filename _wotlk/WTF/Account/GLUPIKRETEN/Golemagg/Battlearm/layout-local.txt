@@ -90,6 +90,13 @@ X: -359
 Y: 102
 W: 960
 H: 640
+Frame: DetailsPluginContainerWindow
+FrameLevel: 1
+Anchor: RIGHT
+X: -165
+Y: 166
+W: 925
+H: 600
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM
