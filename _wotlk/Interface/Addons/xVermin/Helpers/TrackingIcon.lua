@@ -124,7 +124,7 @@ local function TrackingIcon()
 		else
 			titm:SetWidth(titm.text:GetStringWidth())
 			titm:SetHeight(titm.text:GetStringHeight())
-			titm:Show()
+			titm:Hide()
 		end
 	end
 end

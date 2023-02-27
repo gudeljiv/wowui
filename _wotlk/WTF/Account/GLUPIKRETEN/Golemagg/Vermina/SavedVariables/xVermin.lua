@@ -1,31 +1,27 @@
 
 xKillCount = {
-	["show"] = true,
+	["show"] = false,
 	["killLog"] = {
-		["7th Legion Cleric"] = {
-			["name"] = "7th Legion Cleric",
-			["count"] = 2,
+		["Scourge Siegesmith"] = {
+			["name"] = "Scourge Siegesmith",
+			["count"] = 1,
 		},
 		["Dreadbone Construct"] = {
 			["name"] = "Dreadbone Construct",
-			["count"] = 34,
+			["count"] = 140,
 		},
 		["Wailing Soul"] = {
 			["name"] = "Wailing Soul",
-			["count"] = 7,
+			["count"] = 37,
 		},
-		["Legion Commander Yorik"] = {
-			["name"] = "Legion Commander Yorik",
+		["Risen Gryphon Rider"] = {
+			["name"] = "Risen Gryphon Rider",
 			["count"] = 1,
-		},
-		["7th Legion Elite"] = {
-			["name"] = "7th Legion Elite",
-			["count"] = 4,
 		},
 	},
 	["experience"] = {
-		["totaltotal"] = 68585,
-		["pulltotal"] = 1338,
+		["totaltotal"] = 629914,
+		["pulltotal"] = 11451,
 	},
 	["position"] = {
 		["y"] = -3.333441257476807,

@@ -48,10 +48,10 @@ LBISSettings = {
 	},
 	["ShowPriority"] = true,
 	["SelectedRank"] = "All",
-	["SelectedSlot"] = "All",
-	["SelectedSourceType"] = "All",
 	["ShowCustom"] = false,
+	["SelectedSourceType"] = "All",
 	["PriorityList"] = {
 	},
+	["SelectedSlot"] = "All",
 	["SelectedPhase"] = "All",
 }

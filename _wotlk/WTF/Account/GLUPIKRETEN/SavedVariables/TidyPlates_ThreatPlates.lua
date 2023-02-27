@@ -40,10 +40,10 @@ ThreatPlatesDB = {
 					["size"] = 8,
 				},
 				["healthbar"] = {
-					["backdrop"] = "Glamour2",
+					["backdrop"] = "xVerminClean",
 					["BackgroundOpacity"] = 1,
 					["BackgroundUseForegroundColor"] = true,
-					["texture"] = "Glamour2",
+					["texture"] = "xVerminClean",
 				},
 				["healthborder"] = {
 					["show"] = false,

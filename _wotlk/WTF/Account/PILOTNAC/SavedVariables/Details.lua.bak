@@ -9321,7 +9321,7 @@ _detalhes_global = {
 							["size"] = 12,
 						},
 					},
-					["titlebar_texture"] = "Clean",
+					["titlebar_texture"] = "xVerminClean",
 					["ignore_mass_showhide"] = false,
 					["switch_all_roles_after_wipe"] = false,
 					["icon_desaturated"] = false,
@@ -9810,7 +9810,7 @@ _detalhes_global = {
 						["textR_separator"] = ",",
 						["textL_custom_text"] = "{data3}{data2}",
 					},
-					["titlebar_texture"] = "Clean",
+					["titlebar_texture"] = "xVerminClean",
 					["ignore_mass_showhide"] = false,
 					["switch_all_roles_after_wipe"] = false,
 					["icon_desaturated"] = false,
@@ -10868,13 +10868,13 @@ _detalhes_global = {
 							0, -- [4]
 						},
 						["textR_custom_text"] = "{data1} ({data2}, {data3}%)",
-						["texture"] = "Glamour2",
+						["texture"] = "xVerminClean",
 						["textL_class_colors"] = false,
 						["textR_class_colors"] = false,
 						["overlay_texture"] = "Details D'ictum",
 						["textR_enable_custom_text"] = false,
 						["texture_background_file"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour2",
-						["texture_background"] = "Glamour2",
+						["texture_background"] = "xVerminClean",
 						["alpha"] = 1,
 						["no_icon"] = true,
 						["icon_offset"] = {
@@ -10899,7 +10899,7 @@ _detalhes_global = {
 							["texture"] = "Details BarBorder 2",
 						},
 					},
-					["titlebar_texture"] = "Clean",
+					["titlebar_texture"] = "xVerminClean",
 					["ignore_mass_showhide"] = false,
 					["switch_all_roles_after_wipe"] = {
 						1, -- [1]
@@ -12586,7 +12586,7 @@ _detalhes_global = {
 						["enabled"] = true,
 						["show_timer_bg"] = true,
 					},
-					["titlebar_texture"] = "Clean",
+					["titlebar_texture"] = "xVerminClean",
 					["ignore_mass_showhide"] = false,
 					["switch_all_roles_after_wipe"] = {
 						1, -- [1]
@@ -12956,10 +12956,10 @@ _detalhes_global = {
 							1, -- [4]
 						},
 						["textR_custom_text"] = "{data1} ({data2}, {data3}%)",
-						["texture"] = "Clean",
+						["texture"] = "xVerminClean",
 						["textR_class_colors"] = false,
 						["texture_background_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
-						["overlay_texture"] = "Clean",
+						["overlay_texture"] = "xVerminClean",
 						["fixed_texture_background_color"] = {
 							0, -- [1]
 							0, -- [2]
@@ -12967,7 +12967,7 @@ _detalhes_global = {
 							0.07912671566009521, -- [4]
 						},
 						["textL_class_colors"] = false,
-						["texture_background"] = "Clean",
+						["texture_background"] = "xVerminClean",
 						["alpha"] = 1,
 						["no_icon"] = true,
 						["icon_offset"] = {
@@ -13104,7 +13104,7 @@ _detalhes_global = {
 						["show_timer"] = false,
 						["show_timer_bg"] = true,
 					},
-					["titlebar_texture"] = "Clean",
+					["titlebar_texture"] = "xVerminClean",
 					["ignore_mass_showhide"] = false,
 					["switch_all_roles_after_wipe"] = {
 						2, -- [1]
@@ -13469,10 +13469,10 @@ _detalhes_global = {
 							1, -- [4]
 						},
 						["textR_custom_text"] = "{data1} ({data2}, {data3}%)",
-						["texture"] = "Clean",
+						["texture"] = "xVerminClean",
 						["textR_class_colors"] = false,
 						["texture_background_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
-						["overlay_texture"] = "Clean",
+						["overlay_texture"] = "xVerminClean",
 						["fixed_texture_background_color"] = {
 							0, -- [1]
 							0, -- [2]
@@ -13480,7 +13480,7 @@ _detalhes_global = {
 							0.07912671566009521, -- [4]
 						},
 						["textL_class_colors"] = false,
-						["texture_background"] = "Clean",
+						["texture_background"] = "xVerminClean",
 						["alpha"] = 1,
 						["no_icon"] = true,
 						["icon_offset"] = {
@@ -14212,7 +14212,7 @@ _detalhes_global = {
 			},
 			["clickthrough_toolbaricons"] = false,
 			["clickthrough_rows"] = false,
-			["titlebar_texture"] = "Clean",
+			["titlebar_texture"] = "xVerminClean",
 			["switch_tank"] = {
 				1, -- [1]
 				1, -- [2]
@@ -14553,10 +14553,10 @@ _detalhes_global = {
 					1, -- [4]
 				},
 				["textR_custom_text"] = "{data1} ({data2}, {data3}%)",
-				["texture"] = "Clean",
+				["texture"] = "xVerminClean",
 				["textR_class_colors"] = false,
 				["texture_background_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
-				["overlay_texture"] = "Clean",
+				["overlay_texture"] = "xVerminClean",
 				["fixed_texture_background_color"] = {
 					0, -- [1]
 					0, -- [2]
@@ -14564,7 +14564,7 @@ _detalhes_global = {
 					0.07912671566009521, -- [4]
 				},
 				["textL_class_colors"] = false,
-				["texture_background"] = "Clean",
+				["texture_background"] = "xVerminClean",
 				["alpha"] = 1,
 				["no_icon"] = true,
 				["icon_offset"] = {

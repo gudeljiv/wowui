@@ -44,7 +44,7 @@ Details_StreamerDB = {
 			["scale"] = 1,
 			["arrow_anchor_x"] = 0,
 			["row_height"] = 18,
-			["row_texture"] = "Glamour2",
+			["row_texture"] = "xVerminClean",
 			["font_color"] = {
 				1, -- [1]
 				1, -- [2]

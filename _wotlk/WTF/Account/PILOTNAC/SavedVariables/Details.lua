@@ -8959,7 +8959,7 @@ _detalhes_global = {
 						["enable_custom_text"] = false,
 						["show_timer_bg"] = true,
 					},
-					["titlebar_texture"] = "Clean",
+					["titlebar_texture"] = "xVerminClean",
 					["ignore_mass_showhide"] = false,
 					["switch_all_roles_after_wipe"] = {
 						1, -- [1]
@@ -9329,10 +9329,10 @@ _detalhes_global = {
 						["textR_enable_custom_text"] = false,
 						["alpha"] = 1,
 						["textR_custom_text"] = "{data1} ({data2}, {data3}%)",
-						["texture"] = "Clean",
-						["texture_background"] = "Clean",
+						["texture"] = "xVerminClean",
+						["texture_background"] = "xVerminClean",
 						["textL_class_colors"] = false,
-						["overlay_texture"] = "Clean",
+						["overlay_texture"] = "xVerminClean",
 						["fixed_texture_background_color"] = {
 							0, -- [1]
 							0, -- [2]
@@ -9477,7 +9477,7 @@ _detalhes_global = {
 						["enable_custom_text"] = false,
 						["show_timer_bg"] = true,
 					},
-					["titlebar_texture"] = "Clean",
+					["titlebar_texture"] = "xVerminClean",
 					["ignore_mass_showhide"] = false,
 					["switch_all_roles_after_wipe"] = {
 						2, -- [1]
@@ -9837,10 +9837,10 @@ _detalhes_global = {
 						["textR_enable_custom_text"] = false,
 						["alpha"] = 1,
 						["textR_custom_text"] = "{data1} ({data2}, {data3}%)",
-						["texture"] = "Clean",
-						["texture_background"] = "Clean",
+						["texture"] = "xVerminClean",
+						["texture_background"] = "xVerminClean",
 						["textL_class_colors"] = false,
-						["overlay_texture"] = "Clean",
+						["overlay_texture"] = "xVerminClean",
 						["fixed_texture_background_color"] = {
 							0, -- [1]
 							0, -- [2]
@@ -10842,7 +10842,7 @@ _detalhes_global = {
 				["enable_custom_text"] = false,
 				["show_timer"] = false,
 			},
-			["titlebar_texture"] = "Clean",
+			["titlebar_texture"] = "xVerminClean",
 			["ignore_mass_showhide"] = false,
 			["fontstrings_text_limit_offset"] = -10,
 			["icon_desaturated"] = false,
@@ -11149,10 +11149,10 @@ _detalhes_global = {
 					1, -- [4]
 				},
 				["textR_custom_text"] = "{data1} ({data2}, {data3}%)",
-				["texture"] = "Clean",
+				["texture"] = "xVerminClean",
 				["textR_class_colors"] = false,
 				["texture_background_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
-				["overlay_texture"] = "Clean",
+				["overlay_texture"] = "xVerminClean",
 				["fixed_texture_background_color"] = {
 					0, -- [1]
 					0, -- [2]
@@ -11160,7 +11160,7 @@ _detalhes_global = {
 					0.07912671566009521, -- [4]
 				},
 				["textL_class_colors"] = false,
-				["texture_background"] = "Clean",
+				["texture_background"] = "xVerminClean",
 				["alpha"] = 1,
 				["no_icon"] = true,
 				["icon_offset"] = {

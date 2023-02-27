@@ -329,7 +329,7 @@ PitBull4DB = {
 				["Normal"] = {
 					["size_y"] = 50,
 					["exists"] = true,
-					["bar_texture"] = "Glamour2",
+					["bar_texture"] = "xVerminClean",
 				},
 			},
 			["made_groups"] = true,

@@ -4238,7 +4238,7 @@ VUHDO_PANEL_SETUP = {
 				["O"] = 0,
 				["insets"] = 1,
 			},
-			["barTexture"] = "Clean",
+			["barTexture"] = "xVerminClean",
 			["TEXT"] = {
 				["outline"] = false,
 				["USE_MONO"] = false,

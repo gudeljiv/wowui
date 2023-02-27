@@ -844,7 +844,7 @@ Grid2DB = {
 					["fontSize"] = 12,
 					["frameHeight"] = 50,
 					["frameBorder"] = 1,
-					["barTexture"] = "Clean",
+					["barTexture"] = "xVerminClean",
 					["extraThemes"] = {
 						{
 							["frameColor"] = {
@@ -859,8 +859,8 @@ Grid2DB = {
 							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
 							["frameBorderDistance"] = -1,
 							["frameHeight"] = 50,
-							["barTexture"] = "Clean",
-							["frameTexture"] = "Clean",
+							["barTexture"] = "xVerminClean",
+							["frameTexture"] = "xVerminClean",
 							["frameWidths"] = {
 								[10] = 125,
 								[5] = 125,
@@ -905,7 +905,7 @@ Grid2DB = {
 							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
 							["frameBorderDistance"] = -1,
 							["frameHeight"] = 40,
-							["barTexture"] = "Clean",
+							["barTexture"] = "xVerminClean",
 							["frameBorderTexture"] = "None",
 							["frameWidths"] = {
 								[5] = 125,
@@ -936,7 +936,7 @@ Grid2DB = {
 							},
 							["mouseoverHighlight"] = false,
 							["frameWidth"] = 125,
-							["frameTexture"] = "Clean",
+							["frameTexture"] = "xVerminClean",
 						}, -- [2]
 						{
 							["frameColor"] = {
@@ -951,8 +951,8 @@ Grid2DB = {
 							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
 							["frameBorderDistance"] = -2,
 							["frameHeight"] = 50,
-							["barTexture"] = "Clean",
-							["frameTexture"] = "Clean",
+							["barTexture"] = "xVerminClean",
+							["frameTexture"] = "xVerminClean",
 							["frameWidths"] = {
 								[25] = 100,
 								[40] = 100,
@@ -989,7 +989,7 @@ Grid2DB = {
 					["frameContentColor"] = {
 						["a"] = 0,
 					},
-					["frameTexture"] = "Clean",
+					["frameTexture"] = "xVerminClean",
 					["frameWidth"] = 120,
 					["frameBorderDistance"] = -2,
 				},
@@ -1295,8 +1295,8 @@ Grid2DB = {
 								["g"] = 0,
 								["b"] = 0,
 							},
-							["barTexture"] = "Clean",
-							["frameTexture"] = "Melli",
+							["barTexture"] = "xVerminClean",
+							["frameTexture"] = "xVerminClean",
 							["frameWidths"] = {
 								[5] = 175,
 							},
@@ -1339,8 +1339,8 @@ Grid2DB = {
 							["frameHeight"] = 30,
 							["frameHeaderWidths"] = {
 							},
-							["barTexture"] = "Melli",
-							["frameTexture"] = "Melli",
+							["barTexture"] = "xVerminClean"nClean",
+							["frameTexture"] = "xVerminClean"nClean",
 							["frameWidths"] = {
 								[10] = 140,
 							},
@@ -1387,12 +1387,12 @@ Grid2DB = {
 								["g"] = 0.0196078431372549,
 								["b"] = 0,
 							},
-							["barTexture"] = "Melli",
+							["barTexture"] = "xVerminClean"nClean",
 							["frameBorderTexture"] = "None",
 							["frameWidths"] = {
 								[40] = 68,
 							},
-							["frameTexture"] = "Melli",
+							["frameTexture"] = "xVerminClean"nClean",
 							["frameHeights"] = {
 								[40] = 30,
 							},
@@ -1421,8 +1421,8 @@ Grid2DB = {
 					},
 					["frameBorderDistance"] = 0,
 					["frameHeight"] = 30,
-					["barTexture"] = "Melli",
-					["frameTexture"] = "Melli",
+					["barTexture"] = "xVerminClean"nClean",
+					["frameTexture"] = "xVerminClean"nClean",
 					["mouseoverHighlight"] = true,
 					["frameContentColor"] = {
 						["a"] = 0,
@@ -1451,7 +1451,7 @@ Grid2DB = {
 							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
 							["frameBorderDistance"] = -1,
 							["frameHeight"] = 30,
-							["barTexture"] = "Clean",
+							["barTexture"] = "xVerminClean",
 							["mouseoverColor"] = {
 								["a"] = 1,
 								["b"] = 1,
@@ -1480,7 +1480,7 @@ Grid2DB = {
 								[5] = 25,
 							},
 							["frameWidth"] = 120,
-							["frameTexture"] = "Clean",
+							["frameTexture"] = "xVerminClean",
 						}, -- [1]
 						{
 							["frameColor"] = {
@@ -1495,7 +1495,7 @@ Grid2DB = {
 							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
 							["frameBorderDistance"] = -1,
 							["frameHeight"] = 30,
-							["barTexture"] = "Clean",
+							["barTexture"] = "xVerminClean",
 							["frameBorderColor"] = {
 								["a"] = 0,
 								["r"] = 0,
@@ -1505,7 +1505,7 @@ Grid2DB = {
 							["frameWidths"] = {
 								[10] = 130,
 							},
-							["frameTexture"] = "Clean",
+							["frameTexture"] = "xVerminClean",
 							["mouseoverColor"] = {
 								["a"] = 1,
 								["r"] = 1,
@@ -1532,7 +1532,7 @@ Grid2DB = {
 						[25] = 110,
 						[15] = 110,
 					},
-					["frameTexture"] = "Clean",
+					["frameTexture"] = "xVerminClean",
 					["frameBorderColor"] = {
 						["g"] = 0.0196078431372549,
 						["r"] = 0.9607843137254902,
@@ -1556,7 +1556,7 @@ Grid2DB = {
 					["fontSize"] = 16,
 					["frameHeight"] = 50,
 					["frameBorder"] = 1,
-					["barTexture"] = "Clean",
+					["barTexture"] = "xVerminClean",
 					["extraThemes"] = {
 						{
 							["frameColor"] = {
@@ -1581,7 +1581,7 @@ Grid2DB = {
 								["g"] = 0,
 								["r"] = 1,
 							},
-							["barTexture"] = "Clean",
+							["barTexture"] = "xVerminClean",
 							["mouseoverColor"] = {
 								["a"] = 1,
 								["b"] = 1,
@@ -1592,7 +1592,7 @@ Grid2DB = {
 								125, -- [1]
 								[5] = 125,
 							},
-							["frameTexture"] = "Clean",
+							["frameTexture"] = "xVerminClean",
 							["font"] = "Arial Narrow",
 							["frameContentColor"] = {
 								["a"] = 0,
@@ -1628,7 +1628,7 @@ Grid2DB = {
 								["g"] = 1,
 								["b"] = 1,
 							},
-							["barTexture"] = "Clean",
+							["barTexture"] = "xVerminClean",
 							["frameBorderColor"] = {
 								["a"] = 0,
 								["r"] = 0,
@@ -1652,7 +1652,7 @@ Grid2DB = {
 								["b"] = 0,
 							},
 							["frameWidth"] = 125,
-							["frameTexture"] = "Clean",
+							["frameTexture"] = "xVerminClean",
 						}, -- [2]
 						{
 							["frameColor"] = {
@@ -1668,7 +1668,7 @@ Grid2DB = {
 							["frameBorderDistance"] = -2,
 							["frameHeight"] = 50,
 							["frameBorderTexture"] = "None",
-							["barTexture"] = "Clean",
+							["barTexture"] = "xVerminClean",
 							["mouseoverColor"] = {
 								["a"] = 1,
 								["r"] = 1,
@@ -1679,7 +1679,7 @@ Grid2DB = {
 								[25] = 90,
 								[40] = 80,
 							},
-							["frameTexture"] = "Clean",
+							["frameTexture"] = "xVerminClean",
 							["font"] = "Arial Narrow",
 							["orientation"] = "VERTICAL",
 							["mouseoverHighlight"] = false,
@@ -1703,7 +1703,7 @@ Grid2DB = {
 						}, -- [3]
 					},
 					["font"] = "Arial Narrow",
-					["frameTexture"] = "Clean",
+					["frameTexture"] = "xVerminClean",
 					["frameContentColor"] = {
 						["a"] = 0,
 					},
@@ -7637,7 +7637,7 @@ Grid2DB = {
 					["size"] = 10,
 				},
 				["mana"] = {
-					["backTexture"] = "Clean",
+					["backTexture"] = "xVerminClean",
 					["type"] = "bar",
 					["location"] = {
 						["y"] = 0,
@@ -7677,7 +7677,7 @@ Grid2DB = {
 				},
 				["corner-bottom-left"] = {
 					["type"] = "square",
-					["texture"] = "Clean",
+					["texture"] = "xVerminClean",
 					["location"] = {
 						["y"] = 1,
 						["relPoint"] = "BOTTOMLEFT",
@@ -7724,7 +7724,7 @@ Grid2DB = {
 					["size"] = 14,
 				},
 				["health"] = {
-					["texture"] = "Melli",
+					["texture"] = "xVerminClean"nClean",
 					["type"] = "bar",
 					["orientation"] = "HORIZONTAL",
 					["backColor"] = {
@@ -7733,7 +7733,7 @@ Grid2DB = {
 						["g"] = 0,
 						["r"] = 0,
 					},
-					["backTexture"] = "Melli",
+					["backTexture"] = "xVerminClean"nClean",
 					["level"] = 2,
 					["location"] = {
 						["y"] = 0,
@@ -9554,7 +9554,7 @@ Grid2DB = {
 				},
 				["heals"] = {
 					["type"] = "bar",
-					["texture"] = "Clean",
+					["texture"] = "xVerminClean",
 					["anchorTo"] = "health",
 					["location"] = {
 						["y"] = 0,
@@ -9603,7 +9603,7 @@ Grid2DB = {
 						["r"] = 0,
 					},
 					["opacity"] = 1,
-					["backTexture"] = "Clean",
+					["backTexture"] = "xVerminClean",
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "BOTTOM",
@@ -9613,7 +9613,7 @@ Grid2DB = {
 					["height"] = 2,
 					["level"] = 3,
 					["orientation"] = "HORIZONTAL",
-					["texture"] = "Clean",
+					["texture"] = "xVerminClean",
 				},
 				["text-down-color"] = {
 					["type"] = "text-color",
@@ -9652,11 +9652,11 @@ Grid2DB = {
 						["point"] = "CENTER",
 						["x"] = 0,
 					},
-					["texture"] = "Clean",
+					["texture"] = "xVerminClean",
 				},
 				["corner-bottom-left"] = {
 					["fontSize"] = 8,
-					["texture"] = "Clean",
+					["texture"] = "xVerminClean",
 					["type"] = "icon",
 					["location"] = {
 						["y"] = 5,
@@ -10799,7 +10799,7 @@ Grid2DB = {
 				["mana"] = {
 					["height"] = 2,
 					["type"] = "bar",
-					["backTexture"] = "Clean",
+					["backTexture"] = "xVerminClean",
 					["backColor"] = {
 						["a"] = 0.5039972066879272,
 						["r"] = 0,
@@ -10814,7 +10814,7 @@ Grid2DB = {
 					},
 					["level"] = 3,
 					["orientation"] = "HORIZONTAL",
-					["texture"] = "Clean",
+					["texture"] = "xVerminClean",
 				},
 				["side-bottom"] = {
 					["location"] = {
@@ -11052,7 +11052,7 @@ Grid2DB = {
 					["fontSize"] = 10,
 				},
 				["mana"] = {
-					["backTexture"] = "Clean",
+					["backTexture"] = "xVerminClean",
 					["type"] = "bar",
 					["orientation"] = "HORIZONTAL",
 					["backColor"] = {
@@ -11069,7 +11069,7 @@ Grid2DB = {
 						["point"] = "BOTTOM",
 						["x"] = 0,
 					},
-					["texture"] = "Clean",
+					["texture"] = "xVerminClean",
 				},
 				["border"] = {
 					["color1"] = {
@@ -11125,7 +11125,7 @@ Grid2DB = {
 					},
 					["level"] = 1,
 					["opacity"] = 0.25,
-					["texture"] = "Clean",
+					["texture"] = "xVerminClean",
 				},
 				["icon-right"] = {
 					["type"] = "icon",
@@ -11187,9 +11187,9 @@ Grid2DB = {
 					["size"] = 26,
 				},
 				["health"] = {
-					["texture"] = "Clean",
+					["texture"] = "xVerminClean",
 					["type"] = "bar",
-					["backTexture"] = "Clean",
+					["backTexture"] = "xVerminClean",
 					["backColor"] = {
 						["a"] = 0.389516115188599,
 						["r"] = 0,
@@ -11239,7 +11239,7 @@ Grid2DB = {
 					},
 					["level"] = 5,
 					["size"] = 10,
-					["texture"] = "Clean",
+					["texture"] = "xVerminClean",
 				},
 				["text-up-color"] = {
 					["type"] = "text-color",

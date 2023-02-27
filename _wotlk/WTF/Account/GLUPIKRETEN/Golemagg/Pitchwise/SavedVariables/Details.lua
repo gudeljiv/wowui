@@ -27114,7 +27114,7 @@ _detalhes_database = {
 				["hide"] = true,
 			},
 			["arrow_anchor_x"] = 0,
-			["row_texture"] = "Glamour2",
+			["row_texture"] = "xVerminClean",
 			["scale"] = 1,
 			["row_height"] = 18,
 			["point"] = "RIGHT",
