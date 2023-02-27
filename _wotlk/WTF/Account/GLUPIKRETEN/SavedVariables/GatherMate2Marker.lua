@@ -5,10 +5,10 @@ GatherMate2MarkerDB = {
 		["Vermina - Golemagg"] = "Vermina - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
 		["Miqa - Golemagg"] = "Miqa - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
 		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
@@ -123,56 +123,26 @@ GatherMate2MarkerDB = {
 						3390491001, -- [1]
 						["argsCount"] = 2,
 						["object"] = {
-							["SetDefaultModuleLibraries"] = nil --[[ skipped inline function ]],
-							["GetEnabled"] = nil --[[ skipped inline function ]],
-							["Enable"] = nil --[[ skipped inline function ]],
-							["RegisterChatCommand"] = nil --[[ skipped inline function ]],
-							["EnableModule"] = nil --[[ skipped inline function ]],
 							["modules"] = {
 							},
-							["CancelTimer"] = nil --[[ skipped inline function ]],
-							["IterateEmbeds"] = nil --[[ skipped inline function ]],
+							["baseName"] = "GatherMate2Marker",
 							["defaultModuleLibraries"] = {
 							},
-							["TimeLeft"] = nil --[[ skipped inline function ]],
-							["SetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["UnregisterChatCommand"] = nil --[[ skipped inline function ]],
-							["ToggleOptions"] = nil --[[ skipped inline function ]],
-							["ScheduleRepeatingTimer"] = nil --[[ skipped inline function ]],
-							["CancelAllTimers"] = nil --[[ skipped inline function ]],
-							["Printf"] = nil --[[ skipped inline function ]],
-							["SetDefaultModulePrototype"] = nil --[[ skipped inline function ]],
-							["ResetConfig"] = nil --[[ skipped inline function ]],
-							["SetDefaults"] = nil --[[ skipped inline function ]],
 							["name"] = "GatherMate2Marker",
-							["GetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["IsEnabled"] = nil --[[ skipped inline function ]],
 							["orderedModules"] = {
 							},
-							["ScheduleTimer"] = nil --[[ skipped inline function ]],
-							["DisableModule"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
 							["db"] = {
-								["SetProfile"] = nil --[[ skipped inline function ]],
 								["callbacks"] = {
 									["recurse"] = 0,
 									["events"] = {
 										["OnProfileCopied"] = {
-											--[[ skipped entry with table key ]]
 										},
 										["OnProfileChanged"] = {
-											--[[ skipped entry with table key ]]
 										},
 										["OnProfileReset"] = {
-											--[[ skipped entry with table key ]]
 										},
 									},
-									["Fire"] = nil --[[ skipped inline function ]],
 								},
-								["RegisterDefaults"] = nil --[[ skipped inline function ]],
-								["CopyProfile"] = nil --[[ skipped inline function ]],
-								["ResetProfile"] = nil --[[ skipped inline function ]],
 								["keys"] = {
 									["global"] = true,
 									["class"] = "HUNTER",
@@ -186,49 +156,11 @@ GatherMate2MarkerDB = {
 									["factionrealmregion"] = "Horde - Golemagg - EU",
 									["realm"] = "Golemagg",
 								},
-								["UnregisterAllCallbacks"] = nil --[[ skipped inline function ]],
-								["DeleteProfile"] = nil --[[ skipped inline function ]],
-								["sv"] = nil --[[ skipped recursive table ]],
-								["profile"] = nil --[[ skipped recursive table ]],
-								["RegisterCallback"] = nil --[[ skipped inline function ]],
-								["GetNamespace"] = nil --[[ skipped inline function ]],
-								["ResetDB"] = nil --[[ skipped inline function ]],
-								["UnregisterCallback"] = nil --[[ skipped inline function ]],
-								["GetProfiles"] = nil --[[ skipped inline function ]],
-								["profiles"] = nil --[[ skipped recursive table ]],
-								["GetCurrentProfile"] = nil --[[ skipped inline function ]],
-								["RegisterNamespace"] = nil --[[ skipped inline function ]],
 							},
-							["GetArgs"] = nil --[[ skipped inline function ]],
-							["Print"] = nil --[[ skipped inline function ]],
-							["baseName"] = "GatherMate2Marker",
-							["ResetNodeToDefault"] = nil --[[ skipped inline function ]],
-							["AddMiniPin_STUB"] = nil --[[ skipped inline function ]],
-							["RefreshConfig"] = nil --[[ skipped inline function ]],
-							["IsModule"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetDefaultModuleState"] = nil --[[ skipped inline function ]],
-							["GetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["SetEnabledState"] = nil --[[ skipped inline function ]],
-							["SetMarkedNodeColor"] = nil --[[ skipped inline function ]],
 							["enabledState"] = true,
-							["Disable"] = nil --[[ skipped inline function ]],
-							["GetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["SetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetEnabled"] = nil --[[ skipped inline function ]],
-							["OnEnable"] = nil --[[ skipped inline function ]],
-							["IterateModules"] = nil --[[ skipped inline function ]],
-							["OnInitialize"] = nil --[[ skipped inline function ]],
-							["NewModule"] = nil --[[ skipped inline function ]],
-							["GetModule"] = nil --[[ skipped inline function ]],
-							["GetName"] = nil --[[ skipped inline function ]],
 							["defaultModuleState"] = true,
-							["GetMarkedNodeColor"] = nil --[[ skipped inline function ]],
 						},
 						["ends"] = 1022632.691,
-						["callback"] = nil --[[ skipped inline function ]],
 						["delay"] = 300,
 						["func"] = "ResetNodeToDefault",
 					},
@@ -384,56 +316,26 @@ GatherMate2MarkerDB = {
 						3350466000, -- [1]
 						["argsCount"] = 2,
 						["object"] = {
-							["SetDefaultModuleLibraries"] = nil --[[ skipped inline function ]],
-							["GetEnabled"] = nil --[[ skipped inline function ]],
-							["Enable"] = nil --[[ skipped inline function ]],
-							["RegisterChatCommand"] = nil --[[ skipped inline function ]],
-							["EnableModule"] = nil --[[ skipped inline function ]],
 							["modules"] = {
 							},
-							["CancelTimer"] = nil --[[ skipped inline function ]],
-							["IterateEmbeds"] = nil --[[ skipped inline function ]],
+							["baseName"] = "GatherMate2Marker",
 							["defaultModuleLibraries"] = {
 							},
-							["TimeLeft"] = nil --[[ skipped inline function ]],
-							["SetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["UnregisterChatCommand"] = nil --[[ skipped inline function ]],
-							["ToggleOptions"] = nil --[[ skipped inline function ]],
-							["ScheduleRepeatingTimer"] = nil --[[ skipped inline function ]],
-							["CancelAllTimers"] = nil --[[ skipped inline function ]],
-							["Printf"] = nil --[[ skipped inline function ]],
-							["SetDefaultModulePrototype"] = nil --[[ skipped inline function ]],
-							["ResetConfig"] = nil --[[ skipped inline function ]],
-							["SetDefaults"] = nil --[[ skipped inline function ]],
 							["name"] = "GatherMate2Marker",
-							["GetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["IsEnabled"] = nil --[[ skipped inline function ]],
 							["orderedModules"] = {
 							},
-							["ScheduleTimer"] = nil --[[ skipped inline function ]],
-							["DisableModule"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
 							["db"] = {
-								["SetProfile"] = nil --[[ skipped inline function ]],
 								["callbacks"] = {
 									["recurse"] = 0,
 									["events"] = {
 										["OnProfileCopied"] = {
-											--[[ skipped entry with table key ]]
 										},
 										["OnProfileChanged"] = {
-											--[[ skipped entry with table key ]]
 										},
 										["OnProfileReset"] = {
-											--[[ skipped entry with table key ]]
 										},
 									},
-									["Fire"] = nil --[[ skipped inline function ]],
 								},
-								["RegisterDefaults"] = nil --[[ skipped inline function ]],
-								["CopyProfile"] = nil --[[ skipped inline function ]],
-								["ResetProfile"] = nil --[[ skipped inline function ]],
 								["keys"] = {
 									["global"] = true,
 									["class"] = "HUNTER",
@@ -447,49 +349,11 @@ GatherMate2MarkerDB = {
 									["factionrealmregion"] = "Horde - Golemagg - EU",
 									["realm"] = "Golemagg",
 								},
-								["UnregisterAllCallbacks"] = nil --[[ skipped inline function ]],
-								["DeleteProfile"] = nil --[[ skipped inline function ]],
-								["sv"] = nil --[[ skipped recursive table ]],
-								["profile"] = nil --[[ skipped recursive table ]],
-								["RegisterCallback"] = nil --[[ skipped inline function ]],
-								["GetNamespace"] = nil --[[ skipped inline function ]],
-								["ResetDB"] = nil --[[ skipped inline function ]],
-								["UnregisterCallback"] = nil --[[ skipped inline function ]],
-								["GetProfiles"] = nil --[[ skipped inline function ]],
-								["profiles"] = nil --[[ skipped recursive table ]],
-								["GetCurrentProfile"] = nil --[[ skipped inline function ]],
-								["RegisterNamespace"] = nil --[[ skipped inline function ]],
 							},
-							["GetArgs"] = nil --[[ skipped inline function ]],
-							["Print"] = nil --[[ skipped inline function ]],
-							["baseName"] = "GatherMate2Marker",
-							["ResetNodeToDefault"] = nil --[[ skipped inline function ]],
-							["AddMiniPin_STUB"] = nil --[[ skipped inline function ]],
-							["RefreshConfig"] = nil --[[ skipped inline function ]],
-							["IsModule"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetDefaultModuleState"] = nil --[[ skipped inline function ]],
-							["GetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["SetEnabledState"] = nil --[[ skipped inline function ]],
-							["SetMarkedNodeColor"] = nil --[[ skipped inline function ]],
 							["enabledState"] = true,
-							["Disable"] = nil --[[ skipped inline function ]],
-							["GetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["SetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetEnabled"] = nil --[[ skipped inline function ]],
-							["OnEnable"] = nil --[[ skipped inline function ]],
-							["IterateModules"] = nil --[[ skipped inline function ]],
-							["OnInitialize"] = nil --[[ skipped inline function ]],
-							["NewModule"] = nil --[[ skipped inline function ]],
-							["GetModule"] = nil --[[ skipped inline function ]],
-							["GetName"] = nil --[[ skipped inline function ]],
 							["defaultModuleState"] = true,
-							["GetMarkedNodeColor"] = nil --[[ skipped inline function ]],
 						},
 						["ends"] = 1022628.107,
-						["callback"] = nil --[[ skipped inline function ]],
 						["delay"] = 300,
 						["func"] = "ResetNodeToDefault",
 					},
@@ -943,17 +807,58 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5780803000] = {
+				[3860529001] = {
 					["touched"] = true,
-					["wasCircle"] = true,
-				},
-				[4830586000] = {
-					["touched"] = false,
+					["activeTimer"] = {
+						3860529001, -- [1]
+						["argsCount"] = 2,
+						["object"] = {
+							["modules"] = {
+							},
+							["baseName"] = "GatherMate2Marker",
+							["defaultModuleLibraries"] = {
+							},
+							["name"] = "GatherMate2Marker",
+							["orderedModules"] = {
+							},
+							["db"] = {
+								["callbacks"] = {
+									["recurse"] = 0,
+									["events"] = {
+										["OnProfileCopied"] = {
+										},
+										["OnProfileChanged"] = {
+										},
+										["OnProfileReset"] = {
+										},
+									},
+								},
+								["keys"] = {
+									["global"] = true,
+									["class"] = "HUNTER",
+									["profiles"] = true,
+									["char"] = "Mxzq - Golemagg",
+									["race"] = "Orc",
+									["locale"] = "enus",
+									["faction"] = "Horde",
+									["profile"] = "Mxzq - Golemagg",
+									["factionrealm"] = "Horde - Golemagg",
+									["factionrealmregion"] = "Horde - Golemagg - EU",
+									["realm"] = "Golemagg",
+								},
+							},
+							["enabledState"] = true,
+							["defaultModuleState"] = true,
+						},
+						["ends"] = 1022452.431,
+						["delay"] = 300,
+						["func"] = "ResetNodeToDefault",
+					},
 					["wasCircle"] = false,
 				},
-				[5790801000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[4850587000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
 				[5330554000] = {
 					["touched"] = true,
@@ -971,9 +876,13 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4660354001] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[3470496000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[3460494000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
 				[3450494000] = {
 					["touched"] = true,
@@ -985,56 +894,26 @@ GatherMate2MarkerDB = {
 						3390491000, -- [1]
 						["argsCount"] = 2,
 						["object"] = {
-							["SetDefaultModuleLibraries"] = nil --[[ skipped inline function ]],
-							["GetEnabled"] = nil --[[ skipped inline function ]],
-							["Enable"] = nil --[[ skipped inline function ]],
-							["RegisterChatCommand"] = nil --[[ skipped inline function ]],
-							["EnableModule"] = nil --[[ skipped inline function ]],
 							["modules"] = {
 							},
-							["CancelTimer"] = nil --[[ skipped inline function ]],
-							["IterateEmbeds"] = nil --[[ skipped inline function ]],
+							["baseName"] = "GatherMate2Marker",
 							["defaultModuleLibraries"] = {
 							},
-							["TimeLeft"] = nil --[[ skipped inline function ]],
-							["SetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["UnregisterChatCommand"] = nil --[[ skipped inline function ]],
-							["ToggleOptions"] = nil --[[ skipped inline function ]],
-							["ScheduleRepeatingTimer"] = nil --[[ skipped inline function ]],
-							["CancelAllTimers"] = nil --[[ skipped inline function ]],
-							["Printf"] = nil --[[ skipped inline function ]],
-							["SetDefaultModulePrototype"] = nil --[[ skipped inline function ]],
-							["ResetConfig"] = nil --[[ skipped inline function ]],
-							["SetDefaults"] = nil --[[ skipped inline function ]],
 							["name"] = "GatherMate2Marker",
-							["GetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["IsEnabled"] = nil --[[ skipped inline function ]],
 							["orderedModules"] = {
 							},
-							["ScheduleTimer"] = nil --[[ skipped inline function ]],
-							["DisableModule"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
 							["db"] = {
-								["SetProfile"] = nil --[[ skipped inline function ]],
 								["callbacks"] = {
 									["recurse"] = 0,
 									["events"] = {
 										["OnProfileCopied"] = {
-											--[[ skipped entry with table key ]]
 										},
 										["OnProfileChanged"] = {
-											--[[ skipped entry with table key ]]
 										},
 										["OnProfileReset"] = {
-											--[[ skipped entry with table key ]]
 										},
 									},
-									["Fire"] = nil --[[ skipped inline function ]],
 								},
-								["RegisterDefaults"] = nil --[[ skipped inline function ]],
-								["CopyProfile"] = nil --[[ skipped inline function ]],
-								["ResetProfile"] = nil --[[ skipped inline function ]],
 								["keys"] = {
 									["global"] = true,
 									["class"] = "HUNTER",
@@ -1048,166 +927,11 @@ GatherMate2MarkerDB = {
 									["factionrealmregion"] = "Horde - Golemagg - EU",
 									["realm"] = "Golemagg",
 								},
-								["UnregisterAllCallbacks"] = nil --[[ skipped inline function ]],
-								["DeleteProfile"] = nil --[[ skipped inline function ]],
-								["sv"] = nil --[[ skipped recursive table ]],
-								["profile"] = nil --[[ skipped recursive table ]],
-								["RegisterCallback"] = nil --[[ skipped inline function ]],
-								["GetNamespace"] = nil --[[ skipped inline function ]],
-								["ResetDB"] = nil --[[ skipped inline function ]],
-								["UnregisterCallback"] = nil --[[ skipped inline function ]],
-								["GetProfiles"] = nil --[[ skipped inline function ]],
-								["profiles"] = nil --[[ skipped recursive table ]],
-								["GetCurrentProfile"] = nil --[[ skipped inline function ]],
-								["RegisterNamespace"] = nil --[[ skipped inline function ]],
 							},
-							["GetArgs"] = nil --[[ skipped inline function ]],
-							["Print"] = nil --[[ skipped inline function ]],
-							["baseName"] = "GatherMate2Marker",
-							["ResetNodeToDefault"] = nil --[[ skipped inline function ]],
-							["AddMiniPin_STUB"] = nil --[[ skipped inline function ]],
-							["RefreshConfig"] = nil --[[ skipped inline function ]],
-							["IsModule"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetDefaultModuleState"] = nil --[[ skipped inline function ]],
-							["GetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["SetEnabledState"] = nil --[[ skipped inline function ]],
-							["SetMarkedNodeColor"] = nil --[[ skipped inline function ]],
 							["enabledState"] = true,
-							["Disable"] = nil --[[ skipped inline function ]],
-							["GetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["SetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetEnabled"] = nil --[[ skipped inline function ]],
-							["OnEnable"] = nil --[[ skipped inline function ]],
-							["IterateModules"] = nil --[[ skipped inline function ]],
-							["OnInitialize"] = nil --[[ skipped inline function ]],
-							["NewModule"] = nil --[[ skipped inline function ]],
-							["GetModule"] = nil --[[ skipped inline function ]],
-							["GetName"] = nil --[[ skipped inline function ]],
 							["defaultModuleState"] = true,
-							["GetMarkedNodeColor"] = nil --[[ skipped inline function ]],
 						},
 						["ends"] = 1022632.691,
-						["callback"] = nil --[[ skipped inline function ]],
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
-					["wasCircle"] = false,
-				},
-				[3400491000] = {
-					["touched"] = true,
-					["activeTimer"] = {
-						3400491000, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["SetDefaultModuleLibraries"] = nil --[[ skipped inline function ]],
-							["GetEnabled"] = nil --[[ skipped inline function ]],
-							["Enable"] = nil --[[ skipped inline function ]],
-							["RegisterChatCommand"] = nil --[[ skipped inline function ]],
-							["EnableModule"] = nil --[[ skipped inline function ]],
-							["modules"] = {
-							},
-							["CancelTimer"] = nil --[[ skipped inline function ]],
-							["IterateEmbeds"] = nil --[[ skipped inline function ]],
-							["defaultModuleLibraries"] = {
-							},
-							["TimeLeft"] = nil --[[ skipped inline function ]],
-							["SetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["UnregisterChatCommand"] = nil --[[ skipped inline function ]],
-							["ToggleOptions"] = nil --[[ skipped inline function ]],
-							["ScheduleRepeatingTimer"] = nil --[[ skipped inline function ]],
-							["CancelAllTimers"] = nil --[[ skipped inline function ]],
-							["Printf"] = nil --[[ skipped inline function ]],
-							["SetDefaultModulePrototype"] = nil --[[ skipped inline function ]],
-							["ResetConfig"] = nil --[[ skipped inline function ]],
-							["SetDefaults"] = nil --[[ skipped inline function ]],
-							["name"] = "GatherMate2Marker",
-							["GetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["IsEnabled"] = nil --[[ skipped inline function ]],
-							["orderedModules"] = {
-							},
-							["ScheduleTimer"] = nil --[[ skipped inline function ]],
-							["DisableModule"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["db"] = {
-								["SetProfile"] = nil --[[ skipped inline function ]],
-								["callbacks"] = {
-									["recurse"] = 0,
-									["events"] = {
-										["OnProfileCopied"] = {
-											--[[ skipped entry with table key ]]
-										},
-										["OnProfileChanged"] = {
-											--[[ skipped entry with table key ]]
-										},
-										["OnProfileReset"] = {
-											--[[ skipped entry with table key ]]
-										},
-									},
-									["Fire"] = nil --[[ skipped inline function ]],
-								},
-								["RegisterDefaults"] = nil --[[ skipped inline function ]],
-								["CopyProfile"] = nil --[[ skipped inline function ]],
-								["ResetProfile"] = nil --[[ skipped inline function ]],
-								["keys"] = {
-									["global"] = true,
-									["class"] = "HUNTER",
-									["profiles"] = true,
-									["char"] = "Mxzq - Golemagg",
-									["race"] = "Orc",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Mxzq - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-								["UnregisterAllCallbacks"] = nil --[[ skipped inline function ]],
-								["DeleteProfile"] = nil --[[ skipped inline function ]],
-								["sv"] = nil --[[ skipped recursive table ]],
-								["profile"] = nil --[[ skipped recursive table ]],
-								["RegisterCallback"] = nil --[[ skipped inline function ]],
-								["GetNamespace"] = nil --[[ skipped inline function ]],
-								["ResetDB"] = nil --[[ skipped inline function ]],
-								["UnregisterCallback"] = nil --[[ skipped inline function ]],
-								["GetProfiles"] = nil --[[ skipped inline function ]],
-								["profiles"] = nil --[[ skipped recursive table ]],
-								["GetCurrentProfile"] = nil --[[ skipped inline function ]],
-								["RegisterNamespace"] = nil --[[ skipped inline function ]],
-							},
-							["GetArgs"] = nil --[[ skipped inline function ]],
-							["Print"] = nil --[[ skipped inline function ]],
-							["baseName"] = "GatherMate2Marker",
-							["ResetNodeToDefault"] = nil --[[ skipped inline function ]],
-							["AddMiniPin_STUB"] = nil --[[ skipped inline function ]],
-							["RefreshConfig"] = nil --[[ skipped inline function ]],
-							["IsModule"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetDefaultModuleState"] = nil --[[ skipped inline function ]],
-							["GetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["SetEnabledState"] = nil --[[ skipped inline function ]],
-							["SetMarkedNodeColor"] = nil --[[ skipped inline function ]],
-							["enabledState"] = true,
-							["Disable"] = nil --[[ skipped inline function ]],
-							["GetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["SetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetEnabled"] = nil --[[ skipped inline function ]],
-							["OnEnable"] = nil --[[ skipped inline function ]],
-							["IterateModules"] = nil --[[ skipped inline function ]],
-							["OnInitialize"] = nil --[[ skipped inline function ]],
-							["NewModule"] = nil --[[ skipped inline function ]],
-							["GetModule"] = nil --[[ skipped inline function ]],
-							["GetName"] = nil --[[ skipped inline function ]],
-							["defaultModuleState"] = true,
-							["GetMarkedNodeColor"] = nil --[[ skipped inline function ]],
-						},
-						["ends"] = 1022632.974,
-						["callback"] = nil --[[ skipped inline function ]],
 						["delay"] = 300,
 						["func"] = "ResetNodeToDefault",
 					},
@@ -1229,86 +953,32 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[4940454002] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[6250513000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[2980551000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[4940454001] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[2310453000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[4940454000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[3350466001] = {
+				[3400491000] = {
 					["touched"] = true,
 					["activeTimer"] = {
-						3350466001, -- [1]
+						3400491000, -- [1]
 						["argsCount"] = 2,
 						["object"] = {
-							["SetDefaultModuleLibraries"] = nil --[[ skipped inline function ]],
-							["GetEnabled"] = nil --[[ skipped inline function ]],
-							["Enable"] = nil --[[ skipped inline function ]],
-							["RegisterChatCommand"] = nil --[[ skipped inline function ]],
-							["EnableModule"] = nil --[[ skipped inline function ]],
 							["modules"] = {
 							},
-							["CancelTimer"] = nil --[[ skipped inline function ]],
-							["IterateEmbeds"] = nil --[[ skipped inline function ]],
+							["baseName"] = "GatherMate2Marker",
 							["defaultModuleLibraries"] = {
 							},
-							["TimeLeft"] = nil --[[ skipped inline function ]],
-							["SetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["UnregisterChatCommand"] = nil --[[ skipped inline function ]],
-							["ToggleOptions"] = nil --[[ skipped inline function ]],
-							["ScheduleRepeatingTimer"] = nil --[[ skipped inline function ]],
-							["CancelAllTimers"] = nil --[[ skipped inline function ]],
-							["Printf"] = nil --[[ skipped inline function ]],
-							["SetDefaultModulePrototype"] = nil --[[ skipped inline function ]],
-							["ResetConfig"] = nil --[[ skipped inline function ]],
-							["SetDefaults"] = nil --[[ skipped inline function ]],
 							["name"] = "GatherMate2Marker",
-							["GetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["IsEnabled"] = nil --[[ skipped inline function ]],
 							["orderedModules"] = {
 							},
-							["ScheduleTimer"] = nil --[[ skipped inline function ]],
-							["DisableModule"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
 							["db"] = {
-								["SetProfile"] = nil --[[ skipped inline function ]],
 								["callbacks"] = {
 									["recurse"] = 0,
 									["events"] = {
 										["OnProfileCopied"] = {
-											--[[ skipped entry with table key ]]
 										},
 										["OnProfileChanged"] = {
-											--[[ skipped entry with table key ]]
 										},
 										["OnProfileReset"] = {
-											--[[ skipped entry with table key ]]
 										},
 									},
-									["Fire"] = nil --[[ skipped inline function ]],
 								},
-								["RegisterDefaults"] = nil --[[ skipped inline function ]],
-								["CopyProfile"] = nil --[[ skipped inline function ]],
-								["ResetProfile"] = nil --[[ skipped inline function ]],
 								["keys"] = {
 									["global"] = true,
 									["class"] = "HUNTER",
@@ -1322,49 +992,170 @@ GatherMate2MarkerDB = {
 									["factionrealmregion"] = "Horde - Golemagg - EU",
 									["realm"] = "Golemagg",
 								},
-								["UnregisterAllCallbacks"] = nil --[[ skipped inline function ]],
-								["DeleteProfile"] = nil --[[ skipped inline function ]],
-								["sv"] = nil --[[ skipped recursive table ]],
-								["profile"] = nil --[[ skipped recursive table ]],
-								["RegisterCallback"] = nil --[[ skipped inline function ]],
-								["GetNamespace"] = nil --[[ skipped inline function ]],
-								["ResetDB"] = nil --[[ skipped inline function ]],
-								["UnregisterCallback"] = nil --[[ skipped inline function ]],
-								["GetProfiles"] = nil --[[ skipped inline function ]],
-								["profiles"] = nil --[[ skipped recursive table ]],
-								["GetCurrentProfile"] = nil --[[ skipped inline function ]],
-								["RegisterNamespace"] = nil --[[ skipped inline function ]],
 							},
-							["GetArgs"] = nil --[[ skipped inline function ]],
-							["Print"] = nil --[[ skipped inline function ]],
-							["baseName"] = "GatherMate2Marker",
-							["ResetNodeToDefault"] = nil --[[ skipped inline function ]],
-							["AddMiniPin_STUB"] = nil --[[ skipped inline function ]],
-							["RefreshConfig"] = nil --[[ skipped inline function ]],
-							["IsModule"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetDefaultModuleState"] = nil --[[ skipped inline function ]],
-							["GetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["SetEnabledState"] = nil --[[ skipped inline function ]],
-							["SetMarkedNodeColor"] = nil --[[ skipped inline function ]],
 							["enabledState"] = true,
-							["Disable"] = nil --[[ skipped inline function ]],
-							["GetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["SetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetEnabled"] = nil --[[ skipped inline function ]],
-							["OnEnable"] = nil --[[ skipped inline function ]],
-							["IterateModules"] = nil --[[ skipped inline function ]],
-							["OnInitialize"] = nil --[[ skipped inline function ]],
-							["NewModule"] = nil --[[ skipped inline function ]],
-							["GetModule"] = nil --[[ skipped inline function ]],
-							["GetName"] = nil --[[ skipped inline function ]],
 							["defaultModuleState"] = true,
-							["GetMarkedNodeColor"] = nil --[[ skipped inline function ]],
 						},
-						["ends"] = 1022628.107,
-						["callback"] = nil --[[ skipped inline function ]],
+						["ends"] = 1022632.974,
+						["delay"] = 300,
+						["func"] = "ResetNodeToDefault",
+					},
+					["wasCircle"] = false,
+				},
+				[6250513000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[2980551000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3390488000] = {
+					["touched"] = true,
+					["activeTimer"] = {
+						3390488000, -- [1]
+						["argsCount"] = 2,
+						["object"] = {
+							["modules"] = {
+							},
+							["baseName"] = "GatherMate2Marker",
+							["defaultModuleLibraries"] = {
+							},
+							["name"] = "GatherMate2Marker",
+							["orderedModules"] = {
+							},
+							["db"] = {
+								["callbacks"] = {
+									["recurse"] = 0,
+									["events"] = {
+										["OnProfileCopied"] = {
+										},
+										["OnProfileChanged"] = {
+										},
+										["OnProfileReset"] = {
+										},
+									},
+								},
+								["keys"] = {
+									["global"] = true,
+									["class"] = "HUNTER",
+									["profiles"] = true,
+									["char"] = "Mxzq - Golemagg",
+									["race"] = "Orc",
+									["locale"] = "enus",
+									["faction"] = "Horde",
+									["profile"] = "Mxzq - Golemagg",
+									["factionrealm"] = "Horde - Golemagg",
+									["factionrealmregion"] = "Horde - Golemagg - EU",
+									["realm"] = "Golemagg",
+								},
+							},
+							["enabledState"] = true,
+							["defaultModuleState"] = true,
+						},
+						["ends"] = 1022632.791,
+						["delay"] = 300,
+						["func"] = "ResetNodeToDefault",
+					},
+					["wasCircle"] = false,
+				},
+				[2310453000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3340467000] = {
+					["touched"] = true,
+					["activeTimer"] = {
+						3340467000, -- [1]
+						["argsCount"] = 2,
+						["object"] = {
+							["modules"] = {
+							},
+							["baseName"] = "GatherMate2Marker",
+							["defaultModuleLibraries"] = {
+							},
+							["name"] = "GatherMate2Marker",
+							["orderedModules"] = {
+							},
+							["db"] = {
+								["callbacks"] = {
+									["recurse"] = 0,
+									["events"] = {
+										["OnProfileCopied"] = {
+										},
+										["OnProfileChanged"] = {
+										},
+										["OnProfileReset"] = {
+										},
+									},
+								},
+								["keys"] = {
+									["global"] = true,
+									["class"] = "HUNTER",
+									["profiles"] = true,
+									["char"] = "Mxzq - Golemagg",
+									["race"] = "Orc",
+									["locale"] = "enus",
+									["faction"] = "Horde",
+									["profile"] = "Mxzq - Golemagg",
+									["factionrealm"] = "Horde - Golemagg",
+									["factionrealmregion"] = "Horde - Golemagg - EU",
+									["realm"] = "Golemagg",
+								},
+							},
+							["enabledState"] = true,
+							["defaultModuleState"] = true,
+						},
+						["ends"] = 1022627.974,
+						["delay"] = 300,
+						["func"] = "ResetNodeToDefault",
+					},
+					["wasCircle"] = false,
+				},
+				[3340466000] = {
+					["touched"] = true,
+					["activeTimer"] = {
+						3340466000, -- [1]
+						["argsCount"] = 2,
+						["object"] = {
+							["modules"] = {
+							},
+							["baseName"] = "GatherMate2Marker",
+							["defaultModuleLibraries"] = {
+							},
+							["name"] = "GatherMate2Marker",
+							["orderedModules"] = {
+							},
+							["db"] = {
+								["callbacks"] = {
+									["recurse"] = 0,
+									["events"] = {
+										["OnProfileCopied"] = {
+										},
+										["OnProfileChanged"] = {
+										},
+										["OnProfileReset"] = {
+										},
+									},
+								},
+								["keys"] = {
+									["global"] = true,
+									["class"] = "HUNTER",
+									["profiles"] = true,
+									["char"] = "Mxzq - Golemagg",
+									["race"] = "Orc",
+									["locale"] = "enus",
+									["faction"] = "Horde",
+									["profile"] = "Mxzq - Golemagg",
+									["factionrealm"] = "Horde - Golemagg",
+									["factionrealmregion"] = "Horde - Golemagg - EU",
+									["realm"] = "Golemagg",
+								},
+							},
+							["enabledState"] = true,
+							["defaultModuleState"] = true,
+						},
+						["ends"] = 1022627.524,
 						["delay"] = 300,
 						["func"] = "ResetNodeToDefault",
 					},
@@ -1394,62 +1185,32 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3360466000] = {
+				[3350466001] = {
 					["touched"] = true,
 					["activeTimer"] = {
-						3360466000, -- [1]
+						3350466001, -- [1]
 						["argsCount"] = 2,
 						["object"] = {
-							["SetDefaultModuleLibraries"] = nil --[[ skipped inline function ]],
-							["GetEnabled"] = nil --[[ skipped inline function ]],
-							["Enable"] = nil --[[ skipped inline function ]],
-							["RegisterChatCommand"] = nil --[[ skipped inline function ]],
-							["EnableModule"] = nil --[[ skipped inline function ]],
 							["modules"] = {
 							},
-							["CancelTimer"] = nil --[[ skipped inline function ]],
-							["IterateEmbeds"] = nil --[[ skipped inline function ]],
+							["baseName"] = "GatherMate2Marker",
 							["defaultModuleLibraries"] = {
 							},
-							["TimeLeft"] = nil --[[ skipped inline function ]],
-							["SetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["UnregisterChatCommand"] = nil --[[ skipped inline function ]],
-							["ToggleOptions"] = nil --[[ skipped inline function ]],
-							["ScheduleRepeatingTimer"] = nil --[[ skipped inline function ]],
-							["CancelAllTimers"] = nil --[[ skipped inline function ]],
-							["Printf"] = nil --[[ skipped inline function ]],
-							["SetDefaultModulePrototype"] = nil --[[ skipped inline function ]],
-							["ResetConfig"] = nil --[[ skipped inline function ]],
-							["SetDefaults"] = nil --[[ skipped inline function ]],
 							["name"] = "GatherMate2Marker",
-							["GetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["IsEnabled"] = nil --[[ skipped inline function ]],
 							["orderedModules"] = {
 							},
-							["ScheduleTimer"] = nil --[[ skipped inline function ]],
-							["DisableModule"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
 							["db"] = {
-								["SetProfile"] = nil --[[ skipped inline function ]],
 								["callbacks"] = {
 									["recurse"] = 0,
 									["events"] = {
 										["OnProfileCopied"] = {
-											--[[ skipped entry with table key ]]
 										},
 										["OnProfileChanged"] = {
-											--[[ skipped entry with table key ]]
 										},
 										["OnProfileReset"] = {
-											--[[ skipped entry with table key ]]
 										},
 									},
-									["Fire"] = nil --[[ skipped inline function ]],
 								},
-								["RegisterDefaults"] = nil --[[ skipped inline function ]],
-								["CopyProfile"] = nil --[[ skipped inline function ]],
-								["ResetProfile"] = nil --[[ skipped inline function ]],
 								["keys"] = {
 									["global"] = true,
 									["class"] = "HUNTER",
@@ -1463,49 +1224,11 @@ GatherMate2MarkerDB = {
 									["factionrealmregion"] = "Horde - Golemagg - EU",
 									["realm"] = "Golemagg",
 								},
-								["UnregisterAllCallbacks"] = nil --[[ skipped inline function ]],
-								["DeleteProfile"] = nil --[[ skipped inline function ]],
-								["sv"] = nil --[[ skipped recursive table ]],
-								["profile"] = nil --[[ skipped recursive table ]],
-								["RegisterCallback"] = nil --[[ skipped inline function ]],
-								["GetNamespace"] = nil --[[ skipped inline function ]],
-								["ResetDB"] = nil --[[ skipped inline function ]],
-								["UnregisterCallback"] = nil --[[ skipped inline function ]],
-								["GetProfiles"] = nil --[[ skipped inline function ]],
-								["profiles"] = nil --[[ skipped recursive table ]],
-								["GetCurrentProfile"] = nil --[[ skipped inline function ]],
-								["RegisterNamespace"] = nil --[[ skipped inline function ]],
 							},
-							["GetArgs"] = nil --[[ skipped inline function ]],
-							["Print"] = nil --[[ skipped inline function ]],
-							["baseName"] = "GatherMate2Marker",
-							["ResetNodeToDefault"] = nil --[[ skipped inline function ]],
-							["AddMiniPin_STUB"] = nil --[[ skipped inline function ]],
-							["RefreshConfig"] = nil --[[ skipped inline function ]],
-							["IsModule"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetDefaultModuleState"] = nil --[[ skipped inline function ]],
-							["GetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["SetEnabledState"] = nil --[[ skipped inline function ]],
-							["SetMarkedNodeColor"] = nil --[[ skipped inline function ]],
 							["enabledState"] = true,
-							["Disable"] = nil --[[ skipped inline function ]],
-							["GetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["SetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetEnabled"] = nil --[[ skipped inline function ]],
-							["OnEnable"] = nil --[[ skipped inline function ]],
-							["IterateModules"] = nil --[[ skipped inline function ]],
-							["OnInitialize"] = nil --[[ skipped inline function ]],
-							["NewModule"] = nil --[[ skipped inline function ]],
-							["GetModule"] = nil --[[ skipped inline function ]],
-							["GetName"] = nil --[[ skipped inline function ]],
 							["defaultModuleState"] = true,
-							["GetMarkedNodeColor"] = nil --[[ skipped inline function ]],
 						},
-						["ends"] = 1022628.49,
-						["callback"] = nil --[[ skipped inline function ]],
+						["ends"] = 1022628.107,
 						["delay"] = 300,
 						["func"] = "ResetNodeToDefault",
 					},
@@ -1515,98 +1238,32 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3490125000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[1410433000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[5490308001] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[7090554000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[4500302000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[720661000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[5640568000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[3480124000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[7230692000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[3829472000] = {
+				[3360466000] = {
 					["touched"] = true,
 					["activeTimer"] = {
-						3829472000, -- [1]
+						3360466000, -- [1]
 						["argsCount"] = 2,
 						["object"] = {
-							["SetDefaultModuleLibraries"] = nil --[[ skipped inline function ]],
-							["GetEnabled"] = nil --[[ skipped inline function ]],
-							["Enable"] = nil --[[ skipped inline function ]],
-							["RegisterChatCommand"] = nil --[[ skipped inline function ]],
-							["EnableModule"] = nil --[[ skipped inline function ]],
 							["modules"] = {
 							},
-							["CancelTimer"] = nil --[[ skipped inline function ]],
-							["IterateEmbeds"] = nil --[[ skipped inline function ]],
+							["baseName"] = "GatherMate2Marker",
 							["defaultModuleLibraries"] = {
 							},
-							["TimeLeft"] = nil --[[ skipped inline function ]],
-							["SetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["UnregisterChatCommand"] = nil --[[ skipped inline function ]],
-							["ToggleOptions"] = nil --[[ skipped inline function ]],
-							["ScheduleRepeatingTimer"] = nil --[[ skipped inline function ]],
-							["CancelAllTimers"] = nil --[[ skipped inline function ]],
-							["Printf"] = nil --[[ skipped inline function ]],
-							["SetDefaultModulePrototype"] = nil --[[ skipped inline function ]],
-							["ResetConfig"] = nil --[[ skipped inline function ]],
-							["SetDefaults"] = nil --[[ skipped inline function ]],
 							["name"] = "GatherMate2Marker",
-							["GetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["IsEnabled"] = nil --[[ skipped inline function ]],
 							["orderedModules"] = {
 							},
-							["ScheduleTimer"] = nil --[[ skipped inline function ]],
-							["DisableModule"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
 							["db"] = {
-								["SetProfile"] = nil --[[ skipped inline function ]],
 								["callbacks"] = {
 									["recurse"] = 0,
 									["events"] = {
 										["OnProfileCopied"] = {
-											--[[ skipped entry with table key ]]
 										},
 										["OnProfileChanged"] = {
-											--[[ skipped entry with table key ]]
 										},
 										["OnProfileReset"] = {
-											--[[ skipped entry with table key ]]
 										},
 									},
-									["Fire"] = nil --[[ skipped inline function ]],
 								},
-								["RegisterDefaults"] = nil --[[ skipped inline function ]],
-								["CopyProfile"] = nil --[[ skipped inline function ]],
-								["ResetProfile"] = nil --[[ skipped inline function ]],
 								["keys"] = {
 									["global"] = true,
 									["class"] = "HUNTER",
@@ -1620,49 +1277,92 @@ GatherMate2MarkerDB = {
 									["factionrealmregion"] = "Horde - Golemagg - EU",
 									["realm"] = "Golemagg",
 								},
-								["UnregisterAllCallbacks"] = nil --[[ skipped inline function ]],
-								["DeleteProfile"] = nil --[[ skipped inline function ]],
-								["sv"] = nil --[[ skipped recursive table ]],
-								["profile"] = nil --[[ skipped recursive table ]],
-								["RegisterCallback"] = nil --[[ skipped inline function ]],
-								["GetNamespace"] = nil --[[ skipped inline function ]],
-								["ResetDB"] = nil --[[ skipped inline function ]],
-								["UnregisterCallback"] = nil --[[ skipped inline function ]],
-								["GetProfiles"] = nil --[[ skipped inline function ]],
-								["profiles"] = nil --[[ skipped recursive table ]],
-								["GetCurrentProfile"] = nil --[[ skipped inline function ]],
-								["RegisterNamespace"] = nil --[[ skipped inline function ]],
 							},
-							["GetArgs"] = nil --[[ skipped inline function ]],
-							["Print"] = nil --[[ skipped inline function ]],
-							["baseName"] = "GatherMate2Marker",
-							["ResetNodeToDefault"] = nil --[[ skipped inline function ]],
-							["AddMiniPin_STUB"] = nil --[[ skipped inline function ]],
-							["RefreshConfig"] = nil --[[ skipped inline function ]],
-							["IsModule"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetDefaultModuleState"] = nil --[[ skipped inline function ]],
-							["GetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["SetEnabledState"] = nil --[[ skipped inline function ]],
-							["SetMarkedNodeColor"] = nil --[[ skipped inline function ]],
 							["enabledState"] = true,
-							["Disable"] = nil --[[ skipped inline function ]],
-							["GetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["SetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetEnabled"] = nil --[[ skipped inline function ]],
-							["OnEnable"] = nil --[[ skipped inline function ]],
-							["IterateModules"] = nil --[[ skipped inline function ]],
-							["OnInitialize"] = nil --[[ skipped inline function ]],
-							["NewModule"] = nil --[[ skipped inline function ]],
-							["GetModule"] = nil --[[ skipped inline function ]],
-							["GetName"] = nil --[[ skipped inline function ]],
 							["defaultModuleState"] = true,
-							["GetMarkedNodeColor"] = nil --[[ skipped inline function ]],
+						},
+						["ends"] = 1022628.49,
+						["delay"] = 300,
+						["func"] = "ResetNodeToDefault",
+					},
+					["wasCircle"] = false,
+				},
+				[1410433000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6230512000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7090554000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4840665000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4500302000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5640568000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4860588000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[610660900] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3829472000] = {
+					["touched"] = true,
+					["activeTimer"] = {
+						3829472000, -- [1]
+						["argsCount"] = 2,
+						["object"] = {
+							["modules"] = {
+							},
+							["baseName"] = "GatherMate2Marker",
+							["defaultModuleLibraries"] = {
+							},
+							["name"] = "GatherMate2Marker",
+							["orderedModules"] = {
+							},
+							["db"] = {
+								["callbacks"] = {
+									["recurse"] = 0,
+									["events"] = {
+										["OnProfileCopied"] = {
+										},
+										["OnProfileChanged"] = {
+										},
+										["OnProfileReset"] = {
+										},
+									},
+								},
+								["keys"] = {
+									["global"] = true,
+									["class"] = "HUNTER",
+									["profiles"] = true,
+									["char"] = "Mxzq - Golemagg",
+									["race"] = "Orc",
+									["locale"] = "enus",
+									["faction"] = "Horde",
+									["profile"] = "Mxzq - Golemagg",
+									["factionrealm"] = "Horde - Golemagg",
+									["factionrealmregion"] = "Horde - Golemagg - EU",
+									["realm"] = "Golemagg",
+								},
+							},
+							["enabledState"] = true,
+							["defaultModuleState"] = true,
 						},
 						["ends"] = 1022538.985,
-						["callback"] = nil --[[ skipped inline function ]],
 						["delay"] = 300,
 						["func"] = "ResetNodeToDefault",
 					},
@@ -1680,15 +1380,15 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[5040583000] = {
+				[4980419000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3880186000] = {
+				[4990419000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2850199001] = {
+				[4690573000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1712,7 +1412,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4510301000] = {
+				[5490308000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1724,7 +1424,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6580614000] = {
+				[2850199001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1736,11 +1436,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4970457000] = {
+				[7250697000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5640567001] = {
+				[4970457000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1748,7 +1448,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2980550000] = {
+				[6350602000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1764,128 +1464,15 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3860529000] = {
-					["touched"] = true,
-					["activeTimer"] = {
-						3860529000, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["SetDefaultModuleLibraries"] = nil --[[ skipped inline function ]],
-							["GetEnabled"] = nil --[[ skipped inline function ]],
-							["Enable"] = nil --[[ skipped inline function ]],
-							["RegisterChatCommand"] = nil --[[ skipped inline function ]],
-							["EnableModule"] = nil --[[ skipped inline function ]],
-							["modules"] = {
-							},
-							["CancelTimer"] = nil --[[ skipped inline function ]],
-							["IterateEmbeds"] = nil --[[ skipped inline function ]],
-							["defaultModuleLibraries"] = {
-							},
-							["TimeLeft"] = nil --[[ skipped inline function ]],
-							["SetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["UnregisterChatCommand"] = nil --[[ skipped inline function ]],
-							["ToggleOptions"] = nil --[[ skipped inline function ]],
-							["ScheduleRepeatingTimer"] = nil --[[ skipped inline function ]],
-							["CancelAllTimers"] = nil --[[ skipped inline function ]],
-							["Printf"] = nil --[[ skipped inline function ]],
-							["SetDefaultModulePrototype"] = nil --[[ skipped inline function ]],
-							["ResetConfig"] = nil --[[ skipped inline function ]],
-							["SetDefaults"] = nil --[[ skipped inline function ]],
-							["name"] = "GatherMate2Marker",
-							["GetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["IsEnabled"] = nil --[[ skipped inline function ]],
-							["orderedModules"] = {
-							},
-							["ScheduleTimer"] = nil --[[ skipped inline function ]],
-							["DisableModule"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["db"] = {
-								["SetProfile"] = nil --[[ skipped inline function ]],
-								["callbacks"] = {
-									["recurse"] = 0,
-									["events"] = {
-										["OnProfileCopied"] = {
-											--[[ skipped entry with table key ]]
-										},
-										["OnProfileChanged"] = {
-											--[[ skipped entry with table key ]]
-										},
-										["OnProfileReset"] = {
-											--[[ skipped entry with table key ]]
-										},
-									},
-									["Fire"] = nil --[[ skipped inline function ]],
-								},
-								["RegisterDefaults"] = nil --[[ skipped inline function ]],
-								["CopyProfile"] = nil --[[ skipped inline function ]],
-								["ResetProfile"] = nil --[[ skipped inline function ]],
-								["keys"] = {
-									["global"] = true,
-									["class"] = "HUNTER",
-									["profiles"] = true,
-									["char"] = "Mxzq - Golemagg",
-									["race"] = "Orc",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Mxzq - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-								["UnregisterAllCallbacks"] = nil --[[ skipped inline function ]],
-								["DeleteProfile"] = nil --[[ skipped inline function ]],
-								["sv"] = nil --[[ skipped recursive table ]],
-								["profile"] = nil --[[ skipped recursive table ]],
-								["RegisterCallback"] = nil --[[ skipped inline function ]],
-								["GetNamespace"] = nil --[[ skipped inline function ]],
-								["ResetDB"] = nil --[[ skipped inline function ]],
-								["UnregisterCallback"] = nil --[[ skipped inline function ]],
-								["GetProfiles"] = nil --[[ skipped inline function ]],
-								["profiles"] = nil --[[ skipped recursive table ]],
-								["GetCurrentProfile"] = nil --[[ skipped inline function ]],
-								["RegisterNamespace"] = nil --[[ skipped inline function ]],
-							},
-							["GetArgs"] = nil --[[ skipped inline function ]],
-							["Print"] = nil --[[ skipped inline function ]],
-							["baseName"] = "GatherMate2Marker",
-							["ResetNodeToDefault"] = nil --[[ skipped inline function ]],
-							["AddMiniPin_STUB"] = nil --[[ skipped inline function ]],
-							["RefreshConfig"] = nil --[[ skipped inline function ]],
-							["IsModule"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetDefaultModuleState"] = nil --[[ skipped inline function ]],
-							["GetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["SetEnabledState"] = nil --[[ skipped inline function ]],
-							["SetMarkedNodeColor"] = nil --[[ skipped inline function ]],
-							["enabledState"] = true,
-							["Disable"] = nil --[[ skipped inline function ]],
-							["GetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["SetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetEnabled"] = nil --[[ skipped inline function ]],
-							["OnEnable"] = nil --[[ skipped inline function ]],
-							["IterateModules"] = nil --[[ skipped inline function ]],
-							["OnInitialize"] = nil --[[ skipped inline function ]],
-							["NewModule"] = nil --[[ skipped inline function ]],
-							["GetModule"] = nil --[[ skipped inline function ]],
-							["GetName"] = nil --[[ skipped inline function ]],
-							["defaultModuleState"] = true,
-							["GetMarkedNodeColor"] = nil --[[ skipped inline function ]],
-						},
-						["ends"] = 1022452.431,
-						["callback"] = nil --[[ skipped inline function ]],
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
+				[5640567001] = {
+					["touched"] = false,
 					["wasCircle"] = false,
 				},
 				[3920532000] = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[6350602000] = {
+				[2980550000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1897,7 +1484,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6560571000] = {
+				[4940455000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1909,7 +1496,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3570127000] = {
+				[5500307000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1917,7 +1504,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7010685001] = {
+				[7420488000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1925,9 +1512,9 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3670654000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[4120177001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
 				[5570606000] = {
 					["touched"] = false,
@@ -1945,7 +1532,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6670704000] = {
+				[6660703000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1957,11 +1544,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3570128000] = {
+				[3580128000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3480125001] = {
+				[4980490000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1977,7 +1564,7 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[3480125000] = {
+				[2970550000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1993,11 +1580,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6990547000] = {
+				[6240512000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5660439000] = {
+				[7080691000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2005,7 +1592,7 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[2200683001] = {
+				[5570605001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2021,7 +1608,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5570605001] = {
+				[2200683001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2029,7 +1616,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5090503000] = {
+				[4660355000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2045,7 +1632,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6730639000] = {
+				[5790463000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2069,7 +1656,7 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[2570615000] = {
+				[4750522000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2077,7 +1664,7 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[2540247000] = {
+				[6740630000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2085,11 +1672,11 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[2540248001] = {
+				[6340600001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2540248000] = {
+				[4130177000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2113,7 +1700,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[8256418700] = {
+				[2850199000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2121,7 +1708,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[1510437000] = {
+				[800528000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2137,7 +1724,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2980550001] = {
+				[2200683000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2175,56 +1762,26 @@ GatherMate2MarkerDB = {
 						3870528000, -- [1]
 						["argsCount"] = 2,
 						["object"] = {
-							["SetDefaultModuleLibraries"] = nil --[[ skipped inline function ]],
-							["GetEnabled"] = nil --[[ skipped inline function ]],
-							["Enable"] = nil --[[ skipped inline function ]],
-							["RegisterChatCommand"] = nil --[[ skipped inline function ]],
-							["EnableModule"] = nil --[[ skipped inline function ]],
 							["modules"] = {
 							},
-							["CancelTimer"] = nil --[[ skipped inline function ]],
-							["IterateEmbeds"] = nil --[[ skipped inline function ]],
+							["baseName"] = "GatherMate2Marker",
 							["defaultModuleLibraries"] = {
 							},
-							["TimeLeft"] = nil --[[ skipped inline function ]],
-							["SetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["UnregisterChatCommand"] = nil --[[ skipped inline function ]],
-							["ToggleOptions"] = nil --[[ skipped inline function ]],
-							["ScheduleRepeatingTimer"] = nil --[[ skipped inline function ]],
-							["CancelAllTimers"] = nil --[[ skipped inline function ]],
-							["Printf"] = nil --[[ skipped inline function ]],
-							["SetDefaultModulePrototype"] = nil --[[ skipped inline function ]],
-							["ResetConfig"] = nil --[[ skipped inline function ]],
-							["SetDefaults"] = nil --[[ skipped inline function ]],
 							["name"] = "GatherMate2Marker",
-							["GetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["IsEnabled"] = nil --[[ skipped inline function ]],
 							["orderedModules"] = {
 							},
-							["ScheduleTimer"] = nil --[[ skipped inline function ]],
-							["DisableModule"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
 							["db"] = {
-								["SetProfile"] = nil --[[ skipped inline function ]],
 								["callbacks"] = {
 									["recurse"] = 0,
 									["events"] = {
 										["OnProfileCopied"] = {
-											--[[ skipped entry with table key ]]
 										},
 										["OnProfileChanged"] = {
-											--[[ skipped entry with table key ]]
 										},
 										["OnProfileReset"] = {
-											--[[ skipped entry with table key ]]
 										},
 									},
-									["Fire"] = nil --[[ skipped inline function ]],
 								},
-								["RegisterDefaults"] = nil --[[ skipped inline function ]],
-								["CopyProfile"] = nil --[[ skipped inline function ]],
-								["ResetProfile"] = nil --[[ skipped inline function ]],
 								["keys"] = {
 									["global"] = true,
 									["class"] = "HUNTER",
@@ -2238,49 +1795,11 @@ GatherMate2MarkerDB = {
 									["factionrealmregion"] = "Horde - Golemagg - EU",
 									["realm"] = "Golemagg",
 								},
-								["UnregisterAllCallbacks"] = nil --[[ skipped inline function ]],
-								["DeleteProfile"] = nil --[[ skipped inline function ]],
-								["sv"] = nil --[[ skipped recursive table ]],
-								["profile"] = nil --[[ skipped recursive table ]],
-								["RegisterCallback"] = nil --[[ skipped inline function ]],
-								["GetNamespace"] = nil --[[ skipped inline function ]],
-								["ResetDB"] = nil --[[ skipped inline function ]],
-								["UnregisterCallback"] = nil --[[ skipped inline function ]],
-								["GetProfiles"] = nil --[[ skipped inline function ]],
-								["profiles"] = nil --[[ skipped recursive table ]],
-								["GetCurrentProfile"] = nil --[[ skipped inline function ]],
-								["RegisterNamespace"] = nil --[[ skipped inline function ]],
 							},
-							["GetArgs"] = nil --[[ skipped inline function ]],
-							["Print"] = nil --[[ skipped inline function ]],
-							["baseName"] = "GatherMate2Marker",
-							["ResetNodeToDefault"] = nil --[[ skipped inline function ]],
-							["AddMiniPin_STUB"] = nil --[[ skipped inline function ]],
-							["RefreshConfig"] = nil --[[ skipped inline function ]],
-							["IsModule"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetDefaultModuleState"] = nil --[[ skipped inline function ]],
-							["GetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["SetEnabledState"] = nil --[[ skipped inline function ]],
-							["SetMarkedNodeColor"] = nil --[[ skipped inline function ]],
 							["enabledState"] = true,
-							["Disable"] = nil --[[ skipped inline function ]],
-							["GetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["SetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetEnabled"] = nil --[[ skipped inline function ]],
-							["OnEnable"] = nil --[[ skipped inline function ]],
-							["IterateModules"] = nil --[[ skipped inline function ]],
-							["OnInitialize"] = nil --[[ skipped inline function ]],
-							["NewModule"] = nil --[[ skipped inline function ]],
-							["GetModule"] = nil --[[ skipped inline function ]],
-							["GetName"] = nil --[[ skipped inline function ]],
 							["defaultModuleState"] = true,
-							["GetMarkedNodeColor"] = nil --[[ skipped inline function ]],
 						},
 						["ends"] = 1022452.414,
-						["callback"] = nil --[[ skipped inline function ]],
 						["delay"] = 300,
 						["func"] = "ResetNodeToDefault",
 					},
@@ -2302,7 +1821,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5150620900] = {
+				[2850197000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2310,11 +1829,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6500565000] = {
+				[6440571002] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6440571002] = {
+				[2840199000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2322,11 +1841,11 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[8150688000] = {
+				[5150620900] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4190253000] = {
+				[6750727000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2358,7 +1877,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7870524000] = {
+				[980658000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2374,7 +1893,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5790464000] = {
+				[6730640000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2386,9 +1905,9 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5780802000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[4900569000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
 				[4880568000] = {
 					["touched"] = false,
@@ -2398,9 +1917,9 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[1839710900] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[7250709000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
 				[2340473001] = {
 					["touched"] = false,
@@ -2414,8 +1933,53 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6520649000] = {
-					["touched"] = false,
+				[3530454000] = {
+					["touched"] = true,
+					["activeTimer"] = {
+						3530454000, -- [1]
+						["argsCount"] = 2,
+						["object"] = {
+							["modules"] = {
+							},
+							["baseName"] = "GatherMate2Marker",
+							["defaultModuleLibraries"] = {
+							},
+							["name"] = "GatherMate2Marker",
+							["orderedModules"] = {
+							},
+							["db"] = {
+								["callbacks"] = {
+									["recurse"] = 0,
+									["events"] = {
+										["OnProfileCopied"] = {
+										},
+										["OnProfileChanged"] = {
+										},
+										["OnProfileReset"] = {
+										},
+									},
+								},
+								["keys"] = {
+									["global"] = true,
+									["class"] = "HUNTER",
+									["profiles"] = true,
+									["char"] = "Mxzq - Golemagg",
+									["race"] = "Orc",
+									["locale"] = "enus",
+									["faction"] = "Horde",
+									["profile"] = "Mxzq - Golemagg",
+									["factionrealm"] = "Horde - Golemagg",
+									["factionrealmregion"] = "Horde - Golemagg - EU",
+									["realm"] = "Golemagg",
+								},
+							},
+							["enabledState"] = true,
+							["defaultModuleState"] = true,
+						},
+						["ends"] = 1022618.573,
+						["delay"] = 300,
+						["func"] = "ResetNodeToDefault",
+					},
 					["wasCircle"] = false,
 				},
 				[4360585000] = {
@@ -2426,23 +1990,23 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6620671000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
 				[7000685000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4850523000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[6540650000] = {
+				[6290529000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
 				[2580614000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6520649000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4850523000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2454,19 +2018,19 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[6660680000] = {
+				[3379545000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3364458000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[2730612001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
 				[2550246000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6830728000] = {
+				[7210687000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2486,7 +2050,7 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[2670221000] = {
+				[6080565000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2514,7 +2078,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5050532000] = {
+				[6380555000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2522,7 +2086,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6380555000] = {
+				[5050532000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2538,7 +2102,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5340313000] = {
+				[5360314000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2546,19 +2110,19 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3640666000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
-				},
 				[3620665000] = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[5070629000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[3640666000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
-				[6620672000] = {
+				[3660650000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4840666000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2566,21 +2130,21 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[1789668000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
-				},
-				[6750728000] = {
+				[5570604000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
+				},
+				[3663649900] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
 				[3540467000] = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[4760577000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[4340584000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
 				[7070691000] = {
 					["touched"] = false,
@@ -2594,13 +2158,13 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4990497000] = {
+				[5120635000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6050521000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[3586499600] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
 				[4110646000] = {
 					["touched"] = false,
@@ -2634,11 +2198,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5350314000] = {
+				[4950639000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6250504001] = {
+				[6370553000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2650,11 +2214,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6370553000] = {
+				[6250504001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4850665000] = {
+				[610660000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2662,7 +2226,7 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[6040675000] = {
+				[6030673001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2674,7 +2238,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2660221000] = {
+				[6080566000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2692,56 +2256,26 @@ GatherMate2MarkerDB = {
 						3530455000, -- [1]
 						["argsCount"] = 2,
 						["object"] = {
-							["SetDefaultModuleLibraries"] = nil --[[ skipped inline function ]],
-							["GetEnabled"] = nil --[[ skipped inline function ]],
-							["Enable"] = nil --[[ skipped inline function ]],
-							["RegisterChatCommand"] = nil --[[ skipped inline function ]],
-							["EnableModule"] = nil --[[ skipped inline function ]],
 							["modules"] = {
 							},
-							["CancelTimer"] = nil --[[ skipped inline function ]],
-							["IterateEmbeds"] = nil --[[ skipped inline function ]],
+							["baseName"] = "GatherMate2Marker",
 							["defaultModuleLibraries"] = {
 							},
-							["TimeLeft"] = nil --[[ skipped inline function ]],
-							["SetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["UnregisterChatCommand"] = nil --[[ skipped inline function ]],
-							["ToggleOptions"] = nil --[[ skipped inline function ]],
-							["ScheduleRepeatingTimer"] = nil --[[ skipped inline function ]],
-							["CancelAllTimers"] = nil --[[ skipped inline function ]],
-							["Printf"] = nil --[[ skipped inline function ]],
-							["SetDefaultModulePrototype"] = nil --[[ skipped inline function ]],
-							["ResetConfig"] = nil --[[ skipped inline function ]],
-							["SetDefaults"] = nil --[[ skipped inline function ]],
 							["name"] = "GatherMate2Marker",
-							["GetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["IsEnabled"] = nil --[[ skipped inline function ]],
 							["orderedModules"] = {
 							},
-							["ScheduleTimer"] = nil --[[ skipped inline function ]],
-							["DisableModule"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
 							["db"] = {
-								["SetProfile"] = nil --[[ skipped inline function ]],
 								["callbacks"] = {
 									["recurse"] = 0,
 									["events"] = {
 										["OnProfileCopied"] = {
-											--[[ skipped entry with table key ]]
 										},
 										["OnProfileChanged"] = {
-											--[[ skipped entry with table key ]]
 										},
 										["OnProfileReset"] = {
-											--[[ skipped entry with table key ]]
 										},
 									},
-									["Fire"] = nil --[[ skipped inline function ]],
 								},
-								["RegisterDefaults"] = nil --[[ skipped inline function ]],
-								["CopyProfile"] = nil --[[ skipped inline function ]],
-								["ResetProfile"] = nil --[[ skipped inline function ]],
 								["keys"] = {
 									["global"] = true,
 									["class"] = "HUNTER",
@@ -2755,49 +2289,11 @@ GatherMate2MarkerDB = {
 									["factionrealmregion"] = "Horde - Golemagg - EU",
 									["realm"] = "Golemagg",
 								},
-								["UnregisterAllCallbacks"] = nil --[[ skipped inline function ]],
-								["DeleteProfile"] = nil --[[ skipped inline function ]],
-								["sv"] = nil --[[ skipped recursive table ]],
-								["profile"] = nil --[[ skipped recursive table ]],
-								["RegisterCallback"] = nil --[[ skipped inline function ]],
-								["GetNamespace"] = nil --[[ skipped inline function ]],
-								["ResetDB"] = nil --[[ skipped inline function ]],
-								["UnregisterCallback"] = nil --[[ skipped inline function ]],
-								["GetProfiles"] = nil --[[ skipped inline function ]],
-								["profiles"] = nil --[[ skipped recursive table ]],
-								["GetCurrentProfile"] = nil --[[ skipped inline function ]],
-								["RegisterNamespace"] = nil --[[ skipped inline function ]],
 							},
-							["GetArgs"] = nil --[[ skipped inline function ]],
-							["Print"] = nil --[[ skipped inline function ]],
-							["baseName"] = "GatherMate2Marker",
-							["ResetNodeToDefault"] = nil --[[ skipped inline function ]],
-							["AddMiniPin_STUB"] = nil --[[ skipped inline function ]],
-							["RefreshConfig"] = nil --[[ skipped inline function ]],
-							["IsModule"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetDefaultModuleState"] = nil --[[ skipped inline function ]],
-							["GetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["SetEnabledState"] = nil --[[ skipped inline function ]],
-							["SetMarkedNodeColor"] = nil --[[ skipped inline function ]],
 							["enabledState"] = true,
-							["Disable"] = nil --[[ skipped inline function ]],
-							["GetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["SetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetEnabled"] = nil --[[ skipped inline function ]],
-							["OnEnable"] = nil --[[ skipped inline function ]],
-							["IterateModules"] = nil --[[ skipped inline function ]],
-							["OnInitialize"] = nil --[[ skipped inline function ]],
-							["NewModule"] = nil --[[ skipped inline function ]],
-							["GetModule"] = nil --[[ skipped inline function ]],
-							["GetName"] = nil --[[ skipped inline function ]],
 							["defaultModuleState"] = true,
-							["GetMarkedNodeColor"] = nil --[[ skipped inline function ]],
 						},
 						["ends"] = 1022618.823,
-						["callback"] = nil --[[ skipped inline function ]],
 						["delay"] = 300,
 						["func"] = "ResetNodeToDefault",
 					},
@@ -2811,9 +2307,9 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[1840707000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[3140482000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
 				[7100675000] = {
 					["touched"] = false,
@@ -2839,11 +2335,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[1530433000] = {
+				[4900637000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6680671000] = {
+				[7070689000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2855,11 +2351,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7410560000] = {
+				[4900636000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6590661000] = {
+				[6260505000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2867,7 +2363,7 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[5000469000] = {
+				[6670681000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2907,7 +2403,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[8230687000] = {
+				[7410560000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2951,7 +2447,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5060456001] = {
+				[2830197000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2963,7 +2459,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6070579000] = {
+				[4270631000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2975,7 +2471,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4270631000] = {
+				[6070579000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -2983,15 +2479,15 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5870858000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[5350315000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
 				[2070625000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7830581000] = {
+				[4910435000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3003,7 +2499,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2560613000] = {
+				[4930436001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3023,7 +2519,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5580606000] = {
+				[4090644000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3047,23 +2543,15 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[7450582000] = {
+				[6730632000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2080585000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[2730612000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
 				[720660000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[6070578000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
-				},
-				[4960480000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3071,11 +2559,19 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
+				[4960480000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[8380434000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
 				[6350592000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3540136000] = {
+				[3150483000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3083,9 +2579,9 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[8360433000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[6070578000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
 				[5250451000] = {
 					["touched"] = false,
@@ -3111,15 +2607,15 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7360599000] = {
+				[2290453000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7840580000] = {
+				[4970480000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7870527001] = {
+				[1160652000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3135,11 +2631,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5130423000] = {
+				[1410434000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6930696001] = {
+				[3520674001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3155,7 +2651,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5880644000] = {
+				[7780662000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3171,7 +2667,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5870859000] = {
+				[3650659001] = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
@@ -3179,13 +2675,13 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[5000471000] = {
+				[6210488000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3650659000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[5660547001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
 				[4090233000] = {
 					["touched"] = false,
@@ -3211,19 +2707,19 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7440486000] = {
+				[4930434001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7570502000] = {
+				[2320473000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2640221000] = {
+				[6740730000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7590503000] = {
+				[6860635000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3247,19 +2743,19 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7830578000] = {
+				[8390454000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5000653000] = {
+				[6870540000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4950631000] = {
+				[6250504000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5870644000] = {
+				[780530000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3267,11 +2763,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7028579500] = {
+				[3180515000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3530136000] = {
+				[4010634000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3295,43 +2791,43 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[8370432001] = {
+				[3020439000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4190255000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[8260418000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
 				[2800621000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3015407800] = {
+				[7110609000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5540443001] = {
+				[2990439000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5650446000] = {
+				[7590662000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6510633001] = {
+				[6930697000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6510633000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[6500769000] = {
+				[990659000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
 				[6440723000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6500769000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3343,7 +2839,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3640659000] = {
+				[3660660000] = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
@@ -3351,15 +2847,15 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[6990707000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
 				[3420479000] = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[7860524000] = {
+				[6990707000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7430484001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3411,7 +2907,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7780552000] = {
+				[790524000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3431,11 +2927,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4910628000] = {
+				[7000708000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5570605000] = {
+				[6500768000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3443,9 +2939,9 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[1630381000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[5540634000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
 				[6990706000] = {
 					["touched"] = false,
@@ -3459,15 +2955,11 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[6450722000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[3010405000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
-				[8090669000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[5000655000] = {
+				[5870645000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3475,17 +2967,21 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[710662000] = {
+				[3020404000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[6450722000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3010439000] = {
+				[970660000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2270462000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[8240418001] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
 				[3090462000] = {
 					["touched"] = false,
@@ -3499,7 +2995,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[8240418000] = {
+				[8260419000] = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
@@ -3535,7 +3031,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5340623000] = {
+				[5540633000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3547,7 +3043,7 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[5540633000] = {
+				[5340623000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3567,15 +3063,15 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3750667000] = {
+				[1910677000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3360457000] = {
+				[6559658200] = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[6300671000] = {
+				[7260698000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3595,23 +3091,23 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4930603000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[1790668000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
 				[5330622000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6280478000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[5330552000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
 				[2080583000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7250545000] = {
+				[2280626001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3619,7 +3115,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2090624000] = {
+				[7040578000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3627,11 +3123,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6980704000] = {
+				[6340600000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2280627000] = {
+				[6570640002] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3647,11 +3143,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6570640002] = {
+				[2090624000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4830664000] = {
+				[7480599000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3659,15 +3155,15 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4610629000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[2960385000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
 				[2090624001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2810620000] = {
+				[2550598000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3707,11 +3203,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7660651000] = {
+				[4620629000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2550597001] = {
+				[2560615000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3723,7 +3219,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6590661001] = {
+				[5330623000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3735,11 +3231,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[1780668000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[6570640000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
-				[7270545000] = {
+				[7100608000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3747,9 +3243,9 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6340600002] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[3350486000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
 				[1160653000] = {
 					["touched"] = false,
@@ -3763,7 +3259,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7430485000] = {
+				[5030531000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3783,23 +3279,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6740647000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[7420561000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[3630654000] = {
+				[2540597000] = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[5342552300] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[4260630000] = {
+				[7420561000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3807,15 +3291,27 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
+				[4260630000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5342552300] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3630654000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
 				[8120672000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2540597000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[6740647000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
-				[5030531000] = {
+				[7430485000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3827,19 +3323,19 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3350486000] = {
+				[6340600002] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[7270545000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1780668000] = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[7100608000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[6570640000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[5330623000] = {
+				[6590661001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3847,27 +3343,27 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2560615000] = {
+				[2550597001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4620629000] = {
+				[7660651000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2550598000] = {
+				[2810620000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2960385000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[4610629000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
 				[7270543000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7480599000] = {
+				[4830664000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3875,15 +3371,15 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6340600000] = {
+				[2280627000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7040578000] = {
+				[6980704000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2280626001] = {
+				[7250545000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3891,23 +3387,23 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5330552000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
-				},
-				[1790668000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
-				},
-				[7260698000] = {
+				[6280478000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6559658200] = {
+				[4930603000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6300671000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[3360457000] = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[1910677000] = {
+				[3750667000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3931,43 +3427,43 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[8260419000] = {
+				[8240418000] = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[8240418001] = {
-					["touched"] = true,
-					["wasCircle"] = true,
-				},
-				[970660000] = {
+				[2270462000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3020404000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[3010439000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[710662000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
 				[5650548000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5870645000] = {
+				[8090669000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3010405000] = {
+				[5000655000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1630381000] = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[5540634000] = {
+				[5570605000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6500768000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[7000708000] = {
+				[4910628000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3983,7 +3479,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[790524000] = {
+				[7780552000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3995,7 +3491,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7430484001] = {
+				[7860524000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4003,7 +3499,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3660660000] = {
+				[3640659000] = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
@@ -4019,31 +3515,31 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[990659000] = {
+				[6510633000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6930697000] = {
+				[6510633001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7590662000] = {
+				[5650446000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2990439000] = {
+				[5540443001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7110609000] = {
+				[3015407800] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[8260418000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[4190255000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
-				[3020439000] = {
+				[8370432001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4051,43 +3547,43 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4010634000] = {
+				[3530136000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3180515000] = {
+				[7028579500] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[780530000] = {
+				[5870644000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6250504000] = {
+				[4950631000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6870540000] = {
+				[5000653000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[8390454000] = {
+				[7830578000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6860635000] = {
+				[7590503000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6740730000] = {
+				[2640221000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2320473000] = {
+				[7570502000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4930434001] = {
+				[7440486000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4095,19 +3591,19 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5660547001] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[6210488000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[3650659001] = {
+				[3650659000] = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[7780662000] = {
+				[5880644000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5870859000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[5000471000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4119,11 +3615,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3520674001] = {
+				[6930696001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[1410434000] = {
+				[5130423000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4131,23 +3627,23 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[1160652000] = {
+				[7870527001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4970480000] = {
+				[7840580000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2290453000] = {
+				[7360599000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3150483000] = {
+				[3540136000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[8380434000] = {
+				[8360433000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4159,11 +3655,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2730612000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[2080585000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
-				[6730632000] = {
+				[7450582000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4175,15 +3671,15 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4090644000] = {
+				[5580606000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4930436001] = {
+				[2560613000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4910435000] = {
+				[7830581000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4191,9 +3687,9 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5350315000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[5870858000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
 				[5870858001] = {
 					["touched"] = true,
@@ -4203,7 +3699,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2830197000] = {
+				[5060456001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4227,23 +3723,23 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6670681000] = {
+				[8230687000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6260505000] = {
+				[5000469000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4900636000] = {
+				[6590661000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7070689000] = {
+				[6680671000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4900637000] = {
+				[1530433000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4251,9 +3747,9 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3140482000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[1840707000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
 				[6660681000] = {
 					["touched"] = false,
@@ -4263,7 +3759,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6080566000] = {
+				[2660221000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4271,11 +3767,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6030673001] = {
+				[6040675000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[610660000] = {
+				[4850665000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4283,7 +3779,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4950639000] = {
+				[5350314000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4295,11 +3791,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3586499600] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[6050521000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
-				[5120635000] = {
+				[4990497000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4307,35 +3803,35 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4340584000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
-				},
-				[3663649900] = {
-					["touched"] = true,
-					["wasCircle"] = true,
-				},
-				[5570604000] = {
+				[4760577000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
+				},
+				[6750728000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[1789668000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
 				[5160606000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4840666000] = {
+				[6620672000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3660650000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[5070629000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
 				[4180253000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5360314000] = {
+				[5340313000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4351,19 +3847,19 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6080565000] = {
+				[2670221000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7210687000] = {
+				[6830728000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2730612001] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[3364458000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
-				[3379545000] = {
+				[6660680000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4375,7 +3871,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6290529000] = {
+				[6540650000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4383,136 +3879,23 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3530454000] = {
-					["touched"] = true,
-					["activeTimer"] = {
-						3530454000, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["SetDefaultModuleLibraries"] = nil --[[ skipped inline function ]],
-							["GetEnabled"] = nil --[[ skipped inline function ]],
-							["Enable"] = nil --[[ skipped inline function ]],
-							["RegisterChatCommand"] = nil --[[ skipped inline function ]],
-							["EnableModule"] = nil --[[ skipped inline function ]],
-							["modules"] = {
-							},
-							["CancelTimer"] = nil --[[ skipped inline function ]],
-							["IterateEmbeds"] = nil --[[ skipped inline function ]],
-							["defaultModuleLibraries"] = {
-							},
-							["TimeLeft"] = nil --[[ skipped inline function ]],
-							["SetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["UnregisterChatCommand"] = nil --[[ skipped inline function ]],
-							["ToggleOptions"] = nil --[[ skipped inline function ]],
-							["ScheduleRepeatingTimer"] = nil --[[ skipped inline function ]],
-							["CancelAllTimers"] = nil --[[ skipped inline function ]],
-							["Printf"] = nil --[[ skipped inline function ]],
-							["SetDefaultModulePrototype"] = nil --[[ skipped inline function ]],
-							["ResetConfig"] = nil --[[ skipped inline function ]],
-							["SetDefaults"] = nil --[[ skipped inline function ]],
-							["name"] = "GatherMate2Marker",
-							["GetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["IsEnabled"] = nil --[[ skipped inline function ]],
-							["orderedModules"] = {
-							},
-							["ScheduleTimer"] = nil --[[ skipped inline function ]],
-							["DisableModule"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["db"] = {
-								["SetProfile"] = nil --[[ skipped inline function ]],
-								["callbacks"] = {
-									["recurse"] = 0,
-									["events"] = {
-										["OnProfileCopied"] = {
-											--[[ skipped entry with table key ]]
-										},
-										["OnProfileChanged"] = {
-											--[[ skipped entry with table key ]]
-										},
-										["OnProfileReset"] = {
-											--[[ skipped entry with table key ]]
-										},
-									},
-									["Fire"] = nil --[[ skipped inline function ]],
-								},
-								["RegisterDefaults"] = nil --[[ skipped inline function ]],
-								["CopyProfile"] = nil --[[ skipped inline function ]],
-								["ResetProfile"] = nil --[[ skipped inline function ]],
-								["keys"] = {
-									["global"] = true,
-									["class"] = "HUNTER",
-									["profiles"] = true,
-									["char"] = "Mxzq - Golemagg",
-									["race"] = "Orc",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Mxzq - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-								["UnregisterAllCallbacks"] = nil --[[ skipped inline function ]],
-								["DeleteProfile"] = nil --[[ skipped inline function ]],
-								["sv"] = nil --[[ skipped recursive table ]],
-								["profile"] = nil --[[ skipped recursive table ]],
-								["RegisterCallback"] = nil --[[ skipped inline function ]],
-								["GetNamespace"] = nil --[[ skipped inline function ]],
-								["ResetDB"] = nil --[[ skipped inline function ]],
-								["UnregisterCallback"] = nil --[[ skipped inline function ]],
-								["GetProfiles"] = nil --[[ skipped inline function ]],
-								["profiles"] = nil --[[ skipped recursive table ]],
-								["GetCurrentProfile"] = nil --[[ skipped inline function ]],
-								["RegisterNamespace"] = nil --[[ skipped inline function ]],
-							},
-							["GetArgs"] = nil --[[ skipped inline function ]],
-							["Print"] = nil --[[ skipped inline function ]],
-							["baseName"] = "GatherMate2Marker",
-							["ResetNodeToDefault"] = nil --[[ skipped inline function ]],
-							["AddMiniPin_STUB"] = nil --[[ skipped inline function ]],
-							["RefreshConfig"] = nil --[[ skipped inline function ]],
-							["IsModule"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetDefaultModuleState"] = nil --[[ skipped inline function ]],
-							["GetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["SetEnabledState"] = nil --[[ skipped inline function ]],
-							["SetMarkedNodeColor"] = nil --[[ skipped inline function ]],
-							["enabledState"] = true,
-							["Disable"] = nil --[[ skipped inline function ]],
-							["GetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["SetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetEnabled"] = nil --[[ skipped inline function ]],
-							["OnEnable"] = nil --[[ skipped inline function ]],
-							["IterateModules"] = nil --[[ skipped inline function ]],
-							["OnInitialize"] = nil --[[ skipped inline function ]],
-							["NewModule"] = nil --[[ skipped inline function ]],
-							["GetModule"] = nil --[[ skipped inline function ]],
-							["GetName"] = nil --[[ skipped inline function ]],
-							["defaultModuleState"] = true,
-							["GetMarkedNodeColor"] = nil --[[ skipped inline function ]],
-						},
-						["ends"] = 1022618.573,
-						["callback"] = nil --[[ skipped inline function ]],
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
+				[6620671000] = {
+					["touched"] = false,
 					["wasCircle"] = false,
 				},
 				[2100601000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7250709000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[1839710900] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
-				[4900569000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[5780802000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
-				[6730640000] = {
+				[5790464000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4528,15 +3911,15 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[980658000] = {
+				[7870524000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6750727000] = {
+				[4190253000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2840199000] = {
+				[8150688000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4544,7 +3927,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2850197000] = {
+				[6500565000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4564,31 +3947,31 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2200683000] = {
+				[2980550001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[800528000] = {
+				[1510437000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2850199000] = {
+				[8256418700] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4130177000] = {
+				[2540248000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6340600001] = {
+				[2540248001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6740630000] = {
+				[2540247000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4750522000] = {
+				[2570615000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4604,11 +3987,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5790463000] = {
+				[6730639000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4660355000] = {
+				[5090503000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4620,27 +4003,27 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7080691000] = {
+				[5660439000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6240512000] = {
+				[6990547000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2970550000] = {
+				[3480125000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4980490000] = {
+				[3480125001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3580128000] = {
+				[3570128000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6660703000] = {
+				[6670704000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4652,15 +4035,15 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4120177001] = {
+				[3670654000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[7010685001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[7420488000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[5500307000] = {
+				[3570127000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4672,7 +4055,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4940455000] = {
+				[6560571000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4682,56 +4065,26 @@ GatherMate2MarkerDB = {
 						3840472000, -- [1]
 						["argsCount"] = 2,
 						["object"] = {
-							["SetDefaultModuleLibraries"] = nil --[[ skipped inline function ]],
-							["GetEnabled"] = nil --[[ skipped inline function ]],
-							["Enable"] = nil --[[ skipped inline function ]],
-							["RegisterChatCommand"] = nil --[[ skipped inline function ]],
-							["EnableModule"] = nil --[[ skipped inline function ]],
 							["modules"] = {
 							},
-							["CancelTimer"] = nil --[[ skipped inline function ]],
-							["IterateEmbeds"] = nil --[[ skipped inline function ]],
+							["baseName"] = "GatherMate2Marker",
 							["defaultModuleLibraries"] = {
 							},
-							["TimeLeft"] = nil --[[ skipped inline function ]],
-							["SetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["UnregisterChatCommand"] = nil --[[ skipped inline function ]],
-							["ToggleOptions"] = nil --[[ skipped inline function ]],
-							["ScheduleRepeatingTimer"] = nil --[[ skipped inline function ]],
-							["CancelAllTimers"] = nil --[[ skipped inline function ]],
-							["Printf"] = nil --[[ skipped inline function ]],
-							["SetDefaultModulePrototype"] = nil --[[ skipped inline function ]],
-							["ResetConfig"] = nil --[[ skipped inline function ]],
-							["SetDefaults"] = nil --[[ skipped inline function ]],
 							["name"] = "GatherMate2Marker",
-							["GetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["IsEnabled"] = nil --[[ skipped inline function ]],
 							["orderedModules"] = {
 							},
-							["ScheduleTimer"] = nil --[[ skipped inline function ]],
-							["DisableModule"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
 							["db"] = {
-								["SetProfile"] = nil --[[ skipped inline function ]],
 								["callbacks"] = {
 									["recurse"] = 0,
 									["events"] = {
 										["OnProfileCopied"] = {
-											--[[ skipped entry with table key ]]
 										},
 										["OnProfileChanged"] = {
-											--[[ skipped entry with table key ]]
 										},
 										["OnProfileReset"] = {
-											--[[ skipped entry with table key ]]
 										},
 									},
-									["Fire"] = nil --[[ skipped inline function ]],
 								},
-								["RegisterDefaults"] = nil --[[ skipped inline function ]],
-								["CopyProfile"] = nil --[[ skipped inline function ]],
-								["ResetProfile"] = nil --[[ skipped inline function ]],
 								["keys"] = {
 									["global"] = true,
 									["class"] = "HUNTER",
@@ -4745,49 +4098,60 @@ GatherMate2MarkerDB = {
 									["factionrealmregion"] = "Horde - Golemagg - EU",
 									["realm"] = "Golemagg",
 								},
-								["UnregisterAllCallbacks"] = nil --[[ skipped inline function ]],
-								["DeleteProfile"] = nil --[[ skipped inline function ]],
-								["sv"] = nil --[[ skipped recursive table ]],
-								["profile"] = nil --[[ skipped recursive table ]],
-								["RegisterCallback"] = nil --[[ skipped inline function ]],
-								["GetNamespace"] = nil --[[ skipped inline function ]],
-								["ResetDB"] = nil --[[ skipped inline function ]],
-								["UnregisterCallback"] = nil --[[ skipped inline function ]],
-								["GetProfiles"] = nil --[[ skipped inline function ]],
-								["profiles"] = nil --[[ skipped recursive table ]],
-								["GetCurrentProfile"] = nil --[[ skipped inline function ]],
-								["RegisterNamespace"] = nil --[[ skipped inline function ]],
 							},
-							["GetArgs"] = nil --[[ skipped inline function ]],
-							["Print"] = nil --[[ skipped inline function ]],
-							["baseName"] = "GatherMate2Marker",
-							["ResetNodeToDefault"] = nil --[[ skipped inline function ]],
-							["AddMiniPin_STUB"] = nil --[[ skipped inline function ]],
-							["RefreshConfig"] = nil --[[ skipped inline function ]],
-							["IsModule"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetDefaultModuleState"] = nil --[[ skipped inline function ]],
-							["GetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["SetEnabledState"] = nil --[[ skipped inline function ]],
-							["SetMarkedNodeColor"] = nil --[[ skipped inline function ]],
 							["enabledState"] = true,
-							["Disable"] = nil --[[ skipped inline function ]],
-							["GetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["SetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetEnabled"] = nil --[[ skipped inline function ]],
-							["OnEnable"] = nil --[[ skipped inline function ]],
-							["IterateModules"] = nil --[[ skipped inline function ]],
-							["OnInitialize"] = nil --[[ skipped inline function ]],
-							["NewModule"] = nil --[[ skipped inline function ]],
-							["GetModule"] = nil --[[ skipped inline function ]],
-							["GetName"] = nil --[[ skipped inline function ]],
 							["defaultModuleState"] = true,
-							["GetMarkedNodeColor"] = nil --[[ skipped inline function ]],
 						},
 						["ends"] = 1022538.451,
-						["callback"] = nil --[[ skipped inline function ]],
+						["delay"] = 300,
+						["func"] = "ResetNodeToDefault",
+					},
+					["wasCircle"] = false,
+				},
+				[3860529000] = {
+					["touched"] = true,
+					["activeTimer"] = {
+						3860529000, -- [1]
+						["argsCount"] = 2,
+						["object"] = {
+							["modules"] = {
+							},
+							["baseName"] = "GatherMate2Marker",
+							["defaultModuleLibraries"] = {
+							},
+							["name"] = "GatherMate2Marker",
+							["orderedModules"] = {
+							},
+							["db"] = {
+								["callbacks"] = {
+									["recurse"] = 0,
+									["events"] = {
+										["OnProfileCopied"] = {
+										},
+										["OnProfileChanged"] = {
+										},
+										["OnProfileReset"] = {
+										},
+									},
+								},
+								["keys"] = {
+									["global"] = true,
+									["class"] = "HUNTER",
+									["profiles"] = true,
+									["char"] = "Mxzq - Golemagg",
+									["race"] = "Orc",
+									["locale"] = "enus",
+									["faction"] = "Horde",
+									["profile"] = "Mxzq - Golemagg",
+									["factionrealm"] = "Horde - Golemagg",
+									["factionrealmregion"] = "Horde - Golemagg - EU",
+									["realm"] = "Golemagg",
+								},
+							},
+							["enabledState"] = true,
+							["defaultModuleState"] = true,
+						},
+						["ends"] = 1022452.431,
 						["delay"] = 300,
 						["func"] = "ResetNodeToDefault",
 					},
@@ -4799,56 +4163,26 @@ GatherMate2MarkerDB = {
 						3840472001, -- [1]
 						["argsCount"] = 2,
 						["object"] = {
-							["SetDefaultModuleLibraries"] = nil --[[ skipped inline function ]],
-							["GetEnabled"] = nil --[[ skipped inline function ]],
-							["Enable"] = nil --[[ skipped inline function ]],
-							["RegisterChatCommand"] = nil --[[ skipped inline function ]],
-							["EnableModule"] = nil --[[ skipped inline function ]],
 							["modules"] = {
 							},
-							["CancelTimer"] = nil --[[ skipped inline function ]],
-							["IterateEmbeds"] = nil --[[ skipped inline function ]],
+							["baseName"] = "GatherMate2Marker",
 							["defaultModuleLibraries"] = {
 							},
-							["TimeLeft"] = nil --[[ skipped inline function ]],
-							["SetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["UnregisterChatCommand"] = nil --[[ skipped inline function ]],
-							["ToggleOptions"] = nil --[[ skipped inline function ]],
-							["ScheduleRepeatingTimer"] = nil --[[ skipped inline function ]],
-							["CancelAllTimers"] = nil --[[ skipped inline function ]],
-							["Printf"] = nil --[[ skipped inline function ]],
-							["SetDefaultModulePrototype"] = nil --[[ skipped inline function ]],
-							["ResetConfig"] = nil --[[ skipped inline function ]],
-							["SetDefaults"] = nil --[[ skipped inline function ]],
 							["name"] = "GatherMate2Marker",
-							["GetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["IsEnabled"] = nil --[[ skipped inline function ]],
 							["orderedModules"] = {
 							},
-							["ScheduleTimer"] = nil --[[ skipped inline function ]],
-							["DisableModule"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
 							["db"] = {
-								["SetProfile"] = nil --[[ skipped inline function ]],
 								["callbacks"] = {
 									["recurse"] = 0,
 									["events"] = {
 										["OnProfileCopied"] = {
-											--[[ skipped entry with table key ]]
 										},
 										["OnProfileChanged"] = {
-											--[[ skipped entry with table key ]]
 										},
 										["OnProfileReset"] = {
-											--[[ skipped entry with table key ]]
 										},
 									},
-									["Fire"] = nil --[[ skipped inline function ]],
 								},
-								["RegisterDefaults"] = nil --[[ skipped inline function ]],
-								["CopyProfile"] = nil --[[ skipped inline function ]],
-								["ResetProfile"] = nil --[[ skipped inline function ]],
 								["keys"] = {
 									["global"] = true,
 									["class"] = "HUNTER",
@@ -4862,59 +4196,21 @@ GatherMate2MarkerDB = {
 									["factionrealmregion"] = "Horde - Golemagg - EU",
 									["realm"] = "Golemagg",
 								},
-								["UnregisterAllCallbacks"] = nil --[[ skipped inline function ]],
-								["DeleteProfile"] = nil --[[ skipped inline function ]],
-								["sv"] = nil --[[ skipped recursive table ]],
-								["profile"] = nil --[[ skipped recursive table ]],
-								["RegisterCallback"] = nil --[[ skipped inline function ]],
-								["GetNamespace"] = nil --[[ skipped inline function ]],
-								["ResetDB"] = nil --[[ skipped inline function ]],
-								["UnregisterCallback"] = nil --[[ skipped inline function ]],
-								["GetProfiles"] = nil --[[ skipped inline function ]],
-								["profiles"] = nil --[[ skipped recursive table ]],
-								["GetCurrentProfile"] = nil --[[ skipped inline function ]],
-								["RegisterNamespace"] = nil --[[ skipped inline function ]],
 							},
-							["GetArgs"] = nil --[[ skipped inline function ]],
-							["Print"] = nil --[[ skipped inline function ]],
-							["baseName"] = "GatherMate2Marker",
-							["ResetNodeToDefault"] = nil --[[ skipped inline function ]],
-							["AddMiniPin_STUB"] = nil --[[ skipped inline function ]],
-							["RefreshConfig"] = nil --[[ skipped inline function ]],
-							["IsModule"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetDefaultModuleState"] = nil --[[ skipped inline function ]],
-							["GetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["SetEnabledState"] = nil --[[ skipped inline function ]],
-							["SetMarkedNodeColor"] = nil --[[ skipped inline function ]],
 							["enabledState"] = true,
-							["Disable"] = nil --[[ skipped inline function ]],
-							["GetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["SetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetEnabled"] = nil --[[ skipped inline function ]],
-							["OnEnable"] = nil --[[ skipped inline function ]],
-							["IterateModules"] = nil --[[ skipped inline function ]],
-							["OnInitialize"] = nil --[[ skipped inline function ]],
-							["NewModule"] = nil --[[ skipped inline function ]],
-							["GetModule"] = nil --[[ skipped inline function ]],
-							["GetName"] = nil --[[ skipped inline function ]],
 							["defaultModuleState"] = true,
-							["GetMarkedNodeColor"] = nil --[[ skipped inline function ]],
 						},
 						["ends"] = 1022538.451,
-						["callback"] = nil --[[ skipped inline function ]],
 						["delay"] = 300,
 						["func"] = "ResetNodeToDefault",
 					},
 					["wasCircle"] = false,
 				},
-				[7250697000] = {
+				[6580614000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5490308000] = {
+				[4510301000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4922,23 +4218,23 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4690573000] = {
+				[3880186000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4990419000] = {
+				[5040583000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4980419000] = {
+				[7230692000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[610660900] = {
+				[3480124000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4860588000] = {
+				[720661000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4946,11 +4242,11 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[4840665000] = {
+				[5490308001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6230512000] = {
+				[3490125000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4962,355 +4258,16 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3340466000] = {
-					["touched"] = true,
-					["activeTimer"] = {
-						3340466000, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["SetDefaultModuleLibraries"] = nil --[[ skipped inline function ]],
-							["GetEnabled"] = nil --[[ skipped inline function ]],
-							["Enable"] = nil --[[ skipped inline function ]],
-							["RegisterChatCommand"] = nil --[[ skipped inline function ]],
-							["EnableModule"] = nil --[[ skipped inline function ]],
-							["modules"] = {
-							},
-							["CancelTimer"] = nil --[[ skipped inline function ]],
-							["IterateEmbeds"] = nil --[[ skipped inline function ]],
-							["defaultModuleLibraries"] = {
-							},
-							["TimeLeft"] = nil --[[ skipped inline function ]],
-							["SetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["UnregisterChatCommand"] = nil --[[ skipped inline function ]],
-							["ToggleOptions"] = nil --[[ skipped inline function ]],
-							["ScheduleRepeatingTimer"] = nil --[[ skipped inline function ]],
-							["CancelAllTimers"] = nil --[[ skipped inline function ]],
-							["Printf"] = nil --[[ skipped inline function ]],
-							["SetDefaultModulePrototype"] = nil --[[ skipped inline function ]],
-							["ResetConfig"] = nil --[[ skipped inline function ]],
-							["SetDefaults"] = nil --[[ skipped inline function ]],
-							["name"] = "GatherMate2Marker",
-							["GetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["IsEnabled"] = nil --[[ skipped inline function ]],
-							["orderedModules"] = {
-							},
-							["ScheduleTimer"] = nil --[[ skipped inline function ]],
-							["DisableModule"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["db"] = {
-								["SetProfile"] = nil --[[ skipped inline function ]],
-								["callbacks"] = {
-									["recurse"] = 0,
-									["events"] = {
-										["OnProfileCopied"] = {
-											--[[ skipped entry with table key ]]
-										},
-										["OnProfileChanged"] = {
-											--[[ skipped entry with table key ]]
-										},
-										["OnProfileReset"] = {
-											--[[ skipped entry with table key ]]
-										},
-									},
-									["Fire"] = nil --[[ skipped inline function ]],
-								},
-								["RegisterDefaults"] = nil --[[ skipped inline function ]],
-								["CopyProfile"] = nil --[[ skipped inline function ]],
-								["ResetProfile"] = nil --[[ skipped inline function ]],
-								["keys"] = {
-									["global"] = true,
-									["class"] = "HUNTER",
-									["profiles"] = true,
-									["char"] = "Mxzq - Golemagg",
-									["race"] = "Orc",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Mxzq - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-								["UnregisterAllCallbacks"] = nil --[[ skipped inline function ]],
-								["DeleteProfile"] = nil --[[ skipped inline function ]],
-								["sv"] = nil --[[ skipped recursive table ]],
-								["profile"] = nil --[[ skipped recursive table ]],
-								["RegisterCallback"] = nil --[[ skipped inline function ]],
-								["GetNamespace"] = nil --[[ skipped inline function ]],
-								["ResetDB"] = nil --[[ skipped inline function ]],
-								["UnregisterCallback"] = nil --[[ skipped inline function ]],
-								["GetProfiles"] = nil --[[ skipped inline function ]],
-								["profiles"] = nil --[[ skipped recursive table ]],
-								["GetCurrentProfile"] = nil --[[ skipped inline function ]],
-								["RegisterNamespace"] = nil --[[ skipped inline function ]],
-							},
-							["GetArgs"] = nil --[[ skipped inline function ]],
-							["Print"] = nil --[[ skipped inline function ]],
-							["baseName"] = "GatherMate2Marker",
-							["ResetNodeToDefault"] = nil --[[ skipped inline function ]],
-							["AddMiniPin_STUB"] = nil --[[ skipped inline function ]],
-							["RefreshConfig"] = nil --[[ skipped inline function ]],
-							["IsModule"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetDefaultModuleState"] = nil --[[ skipped inline function ]],
-							["GetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["SetEnabledState"] = nil --[[ skipped inline function ]],
-							["SetMarkedNodeColor"] = nil --[[ skipped inline function ]],
-							["enabledState"] = true,
-							["Disable"] = nil --[[ skipped inline function ]],
-							["GetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["SetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetEnabled"] = nil --[[ skipped inline function ]],
-							["OnEnable"] = nil --[[ skipped inline function ]],
-							["IterateModules"] = nil --[[ skipped inline function ]],
-							["OnInitialize"] = nil --[[ skipped inline function ]],
-							["NewModule"] = nil --[[ skipped inline function ]],
-							["GetModule"] = nil --[[ skipped inline function ]],
-							["GetName"] = nil --[[ skipped inline function ]],
-							["defaultModuleState"] = true,
-							["GetMarkedNodeColor"] = nil --[[ skipped inline function ]],
-						},
-						["ends"] = 1022627.524,
-						["callback"] = nil --[[ skipped inline function ]],
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
+				[4940454000] = {
+					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3340467000] = {
-					["touched"] = true,
-					["activeTimer"] = {
-						3340467000, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["SetDefaultModuleLibraries"] = nil --[[ skipped inline function ]],
-							["GetEnabled"] = nil --[[ skipped inline function ]],
-							["Enable"] = nil --[[ skipped inline function ]],
-							["RegisterChatCommand"] = nil --[[ skipped inline function ]],
-							["EnableModule"] = nil --[[ skipped inline function ]],
-							["modules"] = {
-							},
-							["CancelTimer"] = nil --[[ skipped inline function ]],
-							["IterateEmbeds"] = nil --[[ skipped inline function ]],
-							["defaultModuleLibraries"] = {
-							},
-							["TimeLeft"] = nil --[[ skipped inline function ]],
-							["SetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["UnregisterChatCommand"] = nil --[[ skipped inline function ]],
-							["ToggleOptions"] = nil --[[ skipped inline function ]],
-							["ScheduleRepeatingTimer"] = nil --[[ skipped inline function ]],
-							["CancelAllTimers"] = nil --[[ skipped inline function ]],
-							["Printf"] = nil --[[ skipped inline function ]],
-							["SetDefaultModulePrototype"] = nil --[[ skipped inline function ]],
-							["ResetConfig"] = nil --[[ skipped inline function ]],
-							["SetDefaults"] = nil --[[ skipped inline function ]],
-							["name"] = "GatherMate2Marker",
-							["GetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["IsEnabled"] = nil --[[ skipped inline function ]],
-							["orderedModules"] = {
-							},
-							["ScheduleTimer"] = nil --[[ skipped inline function ]],
-							["DisableModule"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["db"] = {
-								["SetProfile"] = nil --[[ skipped inline function ]],
-								["callbacks"] = {
-									["recurse"] = 0,
-									["events"] = {
-										["OnProfileCopied"] = {
-											--[[ skipped entry with table key ]]
-										},
-										["OnProfileChanged"] = {
-											--[[ skipped entry with table key ]]
-										},
-										["OnProfileReset"] = {
-											--[[ skipped entry with table key ]]
-										},
-									},
-									["Fire"] = nil --[[ skipped inline function ]],
-								},
-								["RegisterDefaults"] = nil --[[ skipped inline function ]],
-								["CopyProfile"] = nil --[[ skipped inline function ]],
-								["ResetProfile"] = nil --[[ skipped inline function ]],
-								["keys"] = {
-									["global"] = true,
-									["class"] = "HUNTER",
-									["profiles"] = true,
-									["char"] = "Mxzq - Golemagg",
-									["race"] = "Orc",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Mxzq - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-								["UnregisterAllCallbacks"] = nil --[[ skipped inline function ]],
-								["DeleteProfile"] = nil --[[ skipped inline function ]],
-								["sv"] = nil --[[ skipped recursive table ]],
-								["profile"] = nil --[[ skipped recursive table ]],
-								["RegisterCallback"] = nil --[[ skipped inline function ]],
-								["GetNamespace"] = nil --[[ skipped inline function ]],
-								["ResetDB"] = nil --[[ skipped inline function ]],
-								["UnregisterCallback"] = nil --[[ skipped inline function ]],
-								["GetProfiles"] = nil --[[ skipped inline function ]],
-								["profiles"] = nil --[[ skipped recursive table ]],
-								["GetCurrentProfile"] = nil --[[ skipped inline function ]],
-								["RegisterNamespace"] = nil --[[ skipped inline function ]],
-							},
-							["GetArgs"] = nil --[[ skipped inline function ]],
-							["Print"] = nil --[[ skipped inline function ]],
-							["baseName"] = "GatherMate2Marker",
-							["ResetNodeToDefault"] = nil --[[ skipped inline function ]],
-							["AddMiniPin_STUB"] = nil --[[ skipped inline function ]],
-							["RefreshConfig"] = nil --[[ skipped inline function ]],
-							["IsModule"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetDefaultModuleState"] = nil --[[ skipped inline function ]],
-							["GetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["SetEnabledState"] = nil --[[ skipped inline function ]],
-							["SetMarkedNodeColor"] = nil --[[ skipped inline function ]],
-							["enabledState"] = true,
-							["Disable"] = nil --[[ skipped inline function ]],
-							["GetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["SetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetEnabled"] = nil --[[ skipped inline function ]],
-							["OnEnable"] = nil --[[ skipped inline function ]],
-							["IterateModules"] = nil --[[ skipped inline function ]],
-							["OnInitialize"] = nil --[[ skipped inline function ]],
-							["NewModule"] = nil --[[ skipped inline function ]],
-							["GetModule"] = nil --[[ skipped inline function ]],
-							["GetName"] = nil --[[ skipped inline function ]],
-							["defaultModuleState"] = true,
-							["GetMarkedNodeColor"] = nil --[[ skipped inline function ]],
-						},
-						["ends"] = 1022627.974,
-						["callback"] = nil --[[ skipped inline function ]],
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
+				[4940454001] = {
+					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3390488000] = {
-					["touched"] = true,
-					["activeTimer"] = {
-						3390488000, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["SetDefaultModuleLibraries"] = nil --[[ skipped inline function ]],
-							["GetEnabled"] = nil --[[ skipped inline function ]],
-							["Enable"] = nil --[[ skipped inline function ]],
-							["RegisterChatCommand"] = nil --[[ skipped inline function ]],
-							["EnableModule"] = nil --[[ skipped inline function ]],
-							["modules"] = {
-							},
-							["CancelTimer"] = nil --[[ skipped inline function ]],
-							["IterateEmbeds"] = nil --[[ skipped inline function ]],
-							["defaultModuleLibraries"] = {
-							},
-							["TimeLeft"] = nil --[[ skipped inline function ]],
-							["SetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["UnregisterChatCommand"] = nil --[[ skipped inline function ]],
-							["ToggleOptions"] = nil --[[ skipped inline function ]],
-							["ScheduleRepeatingTimer"] = nil --[[ skipped inline function ]],
-							["CancelAllTimers"] = nil --[[ skipped inline function ]],
-							["Printf"] = nil --[[ skipped inline function ]],
-							["SetDefaultModulePrototype"] = nil --[[ skipped inline function ]],
-							["ResetConfig"] = nil --[[ skipped inline function ]],
-							["SetDefaults"] = nil --[[ skipped inline function ]],
-							["name"] = "GatherMate2Marker",
-							["GetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["IsEnabled"] = nil --[[ skipped inline function ]],
-							["orderedModules"] = {
-							},
-							["ScheduleTimer"] = nil --[[ skipped inline function ]],
-							["DisableModule"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["db"] = {
-								["SetProfile"] = nil --[[ skipped inline function ]],
-								["callbacks"] = {
-									["recurse"] = 0,
-									["events"] = {
-										["OnProfileCopied"] = {
-											--[[ skipped entry with table key ]]
-										},
-										["OnProfileChanged"] = {
-											--[[ skipped entry with table key ]]
-										},
-										["OnProfileReset"] = {
-											--[[ skipped entry with table key ]]
-										},
-									},
-									["Fire"] = nil --[[ skipped inline function ]],
-								},
-								["RegisterDefaults"] = nil --[[ skipped inline function ]],
-								["CopyProfile"] = nil --[[ skipped inline function ]],
-								["ResetProfile"] = nil --[[ skipped inline function ]],
-								["keys"] = {
-									["global"] = true,
-									["class"] = "HUNTER",
-									["profiles"] = true,
-									["char"] = "Mxzq - Golemagg",
-									["race"] = "Orc",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Mxzq - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-								["UnregisterAllCallbacks"] = nil --[[ skipped inline function ]],
-								["DeleteProfile"] = nil --[[ skipped inline function ]],
-								["sv"] = nil --[[ skipped recursive table ]],
-								["profile"] = nil --[[ skipped recursive table ]],
-								["RegisterCallback"] = nil --[[ skipped inline function ]],
-								["GetNamespace"] = nil --[[ skipped inline function ]],
-								["ResetDB"] = nil --[[ skipped inline function ]],
-								["UnregisterCallback"] = nil --[[ skipped inline function ]],
-								["GetProfiles"] = nil --[[ skipped inline function ]],
-								["profiles"] = nil --[[ skipped recursive table ]],
-								["GetCurrentProfile"] = nil --[[ skipped inline function ]],
-								["RegisterNamespace"] = nil --[[ skipped inline function ]],
-							},
-							["GetArgs"] = nil --[[ skipped inline function ]],
-							["Print"] = nil --[[ skipped inline function ]],
-							["baseName"] = "GatherMate2Marker",
-							["ResetNodeToDefault"] = nil --[[ skipped inline function ]],
-							["AddMiniPin_STUB"] = nil --[[ skipped inline function ]],
-							["RefreshConfig"] = nil --[[ skipped inline function ]],
-							["IsModule"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetDefaultModuleState"] = nil --[[ skipped inline function ]],
-							["GetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["SetEnabledState"] = nil --[[ skipped inline function ]],
-							["SetMarkedNodeColor"] = nil --[[ skipped inline function ]],
-							["enabledState"] = true,
-							["Disable"] = nil --[[ skipped inline function ]],
-							["GetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["SetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetEnabled"] = nil --[[ skipped inline function ]],
-							["OnEnable"] = nil --[[ skipped inline function ]],
-							["IterateModules"] = nil --[[ skipped inline function ]],
-							["OnInitialize"] = nil --[[ skipped inline function ]],
-							["NewModule"] = nil --[[ skipped inline function ]],
-							["GetModule"] = nil --[[ skipped inline function ]],
-							["GetName"] = nil --[[ skipped inline function ]],
-							["defaultModuleState"] = true,
-							["GetMarkedNodeColor"] = nil --[[ skipped inline function ]],
-						},
-						["ends"] = 1022632.791,
-						["callback"] = nil --[[ skipped inline function ]],
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
+				[4940454002] = {
+					["touched"] = false,
 					["wasCircle"] = false,
 				},
 				[4740668000] = {
@@ -5325,134 +4282,21 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3460494000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
-				},
-				[3470496000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
-				},
-				[4850587000] = {
+				[4660354001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[3860529001] = {
+				[5790801000] = {
 					["touched"] = true,
-					["activeTimer"] = {
-						3860529001, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["SetDefaultModuleLibraries"] = nil --[[ skipped inline function ]],
-							["GetEnabled"] = nil --[[ skipped inline function ]],
-							["Enable"] = nil --[[ skipped inline function ]],
-							["RegisterChatCommand"] = nil --[[ skipped inline function ]],
-							["EnableModule"] = nil --[[ skipped inline function ]],
-							["modules"] = {
-							},
-							["CancelTimer"] = nil --[[ skipped inline function ]],
-							["IterateEmbeds"] = nil --[[ skipped inline function ]],
-							["defaultModuleLibraries"] = {
-							},
-							["TimeLeft"] = nil --[[ skipped inline function ]],
-							["SetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["UnregisterChatCommand"] = nil --[[ skipped inline function ]],
-							["ToggleOptions"] = nil --[[ skipped inline function ]],
-							["ScheduleRepeatingTimer"] = nil --[[ skipped inline function ]],
-							["CancelAllTimers"] = nil --[[ skipped inline function ]],
-							["Printf"] = nil --[[ skipped inline function ]],
-							["SetDefaultModulePrototype"] = nil --[[ skipped inline function ]],
-							["ResetConfig"] = nil --[[ skipped inline function ]],
-							["SetDefaults"] = nil --[[ skipped inline function ]],
-							["name"] = "GatherMate2Marker",
-							["GetResetTimeInMinutes"] = nil --[[ skipped inline function ]],
-							["IsEnabled"] = nil --[[ skipped inline function ]],
-							["orderedModules"] = {
-							},
-							["ScheduleTimer"] = nil --[[ skipped inline function ]],
-							["DisableModule"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["db"] = {
-								["SetProfile"] = nil --[[ skipped inline function ]],
-								["callbacks"] = {
-									["recurse"] = 0,
-									["events"] = {
-										["OnProfileCopied"] = {
-											--[[ skipped entry with table key ]]
-										},
-										["OnProfileChanged"] = {
-											--[[ skipped entry with table key ]]
-										},
-										["OnProfileReset"] = {
-											--[[ skipped entry with table key ]]
-										},
-									},
-									["Fire"] = nil --[[ skipped inline function ]],
-								},
-								["RegisterDefaults"] = nil --[[ skipped inline function ]],
-								["CopyProfile"] = nil --[[ skipped inline function ]],
-								["ResetProfile"] = nil --[[ skipped inline function ]],
-								["keys"] = {
-									["global"] = true,
-									["class"] = "HUNTER",
-									["profiles"] = true,
-									["char"] = "Mxzq - Golemagg",
-									["race"] = "Orc",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Mxzq - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-								["UnregisterAllCallbacks"] = nil --[[ skipped inline function ]],
-								["DeleteProfile"] = nil --[[ skipped inline function ]],
-								["sv"] = nil --[[ skipped recursive table ]],
-								["profile"] = nil --[[ skipped recursive table ]],
-								["RegisterCallback"] = nil --[[ skipped inline function ]],
-								["GetNamespace"] = nil --[[ skipped inline function ]],
-								["ResetDB"] = nil --[[ skipped inline function ]],
-								["UnregisterCallback"] = nil --[[ skipped inline function ]],
-								["GetProfiles"] = nil --[[ skipped inline function ]],
-								["profiles"] = nil --[[ skipped recursive table ]],
-								["GetCurrentProfile"] = nil --[[ skipped inline function ]],
-								["RegisterNamespace"] = nil --[[ skipped inline function ]],
-							},
-							["GetArgs"] = nil --[[ skipped inline function ]],
-							["Print"] = nil --[[ skipped inline function ]],
-							["baseName"] = "GatherMate2Marker",
-							["ResetNodeToDefault"] = nil --[[ skipped inline function ]],
-							["AddMiniPin_STUB"] = nil --[[ skipped inline function ]],
-							["RefreshConfig"] = nil --[[ skipped inline function ]],
-							["IsModule"] = nil --[[ skipped inline function ]],
-							["SetPlaySFXOnMarked"] = nil --[[ skipped inline function ]],
-							["SetDefaultModuleState"] = nil --[[ skipped inline function ]],
-							["GetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["SetEnabledState"] = nil --[[ skipped inline function ]],
-							["SetMarkedNodeColor"] = nil --[[ skipped inline function ]],
-							["enabledState"] = true,
-							["Disable"] = nil --[[ skipped inline function ]],
-							["GetUseGMCircleColor"] = nil --[[ skipped inline function ]],
-							["GetPlaySFXOnMarkedVolume"] = nil --[[ skipped inline function ]],
-							["SetPersistOnReload"] = nil --[[ skipped inline function ]],
-							["SetEnabled"] = nil --[[ skipped inline function ]],
-							["OnEnable"] = nil --[[ skipped inline function ]],
-							["IterateModules"] = nil --[[ skipped inline function ]],
-							["OnInitialize"] = nil --[[ skipped inline function ]],
-							["NewModule"] = nil --[[ skipped inline function ]],
-							["GetModule"] = nil --[[ skipped inline function ]],
-							["GetName"] = nil --[[ skipped inline function ]],
-							["defaultModuleState"] = true,
-							["GetMarkedNodeColor"] = nil --[[ skipped inline function ]],
-						},
-						["ends"] = 1022452.431,
-						["callback"] = nil --[[ skipped inline function ]],
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
+					["wasCircle"] = true,
+				},
+				[4830586000] = {
+					["touched"] = false,
 					["wasCircle"] = false,
+				},
+				[5780803000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
 			},
 		},
@@ -5468,7 +4312,7 @@ GatherMate2MarkerDB = {
 			["pinDB"] = {
 			},
 		},
-		["Vermin - Golemagg"] = {
+		["Mxyzptlk - Golemagg"] = {
 			["pinDB"] = {
 			},
 		},
@@ -5480,7 +4324,7 @@ GatherMate2MarkerDB = {
 			["pinDB"] = {
 			},
 		},
-		["Mxyzptlk - Golemagg"] = {
+		["Vermin - Golemagg"] = {
 			["pinDB"] = {
 			},
 		},

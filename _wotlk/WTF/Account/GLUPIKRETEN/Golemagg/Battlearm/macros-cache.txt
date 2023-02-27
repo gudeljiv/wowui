@@ -1,6 +1,6 @@
-VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000009 " " "134400"
 #showtooltip
-/cast [@mouseover,exists][]Dark Command
+/cast [@focus,exists][]Mind Freeze
 END
 VER 3 000000000100000A " " "134400"
 #showtooltip
@@ -31,7 +31,7 @@ VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 /cast Death Strike
 /cast Rune Strike
 END
-VER 3 0000000001000009 " " "134400"
+VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@focus,exists][]Mind Freeze
+/cast [@mouseover,exists][]Dark Command
 END
