@@ -44,7 +44,7 @@ KuiNameplatesCoreSaved = {
 				0, -- [3]
 			},
 			["tankmode_force_enable"] = true,
-			["bar_texture"] = "Glamour2",
+			["bar_texture"] = "xVerminClean",
 		},
 	},
 	["226_TARGET_SIZE"] = true,
