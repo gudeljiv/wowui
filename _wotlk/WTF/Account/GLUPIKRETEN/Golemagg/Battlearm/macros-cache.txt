@@ -1,7 +1,6 @@
-VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/startattack
-/cast [spec:1]Heart Strike;[spec:2]Howling Blast
+/cast [@mouseover,exists][]Death Grip
 END
 VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -31,7 +30,8 @@ VER 3 000000000100000A " " "134400"
 /cast Rune Tap
 /use Figurine - Monarch Crab
 END
-VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,exists][]Death Grip
+/startattack
+/cast [spec:1]Heart Strike;[spec:2]Howling Blast
 END
