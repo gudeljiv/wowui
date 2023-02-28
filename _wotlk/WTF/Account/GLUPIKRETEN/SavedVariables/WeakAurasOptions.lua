@@ -51850,10 +51850,10 @@ WeakAurasOptionsSaved = {
 	["version"] = "5.3.7",
 	["lockPositions"] = false,
 	["frame"] = {
-		["xOffset"] = 542.58642578125,
-		["yOffset"] = 1346.319946289063,
-		["height"] = 1082.189819335938,
+		["xOffset"] = 514.0150146484375,
 		["width"] = 1049.6171875,
+		["height"] = 1082.189819335938,
+		["yOffset"] = 1012.351806640625,
 	},
 	["spellCacheStrings"] = true,
 	["spellCacheAchivements"] = true,

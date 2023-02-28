@@ -27,13 +27,6 @@ X: -328
 Y: -281
 W: 300
 H: 60
-Frame: GroupBulletinBoardFrame
-FrameLevel: 1
-Anchor: RIGHT
-X: -261
-Y: 104
-W: 670
-H: 752
 Frame: RXPG_ARROW
 FrameLevel: 1
 Anchor: CENTER

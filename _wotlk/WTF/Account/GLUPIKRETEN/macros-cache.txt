@@ -25,9 +25,9 @@ VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
 /castsequence [combat] reset=combat item:33447
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:0
+#showtooltip item:35953
 /cast feed pet
-/use item:0
+/use item:35953
 END
 VER 3 0000000000000025 "Potion" "Inv_misc_questionmark"
 #showtooltip
