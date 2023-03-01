@@ -32,6 +32,8 @@ from os import listdir
 from os.path import exists
 from skimage.metrics import structural_similarity
 from datetime import datetime
+from prettytable import PrettyTable
+pretty_table = PrettyTable()
 
 combat = False
 dprint = False
@@ -63,8 +65,10 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 
 if os.name == "posix":
     abilities_folder = dir_path + "/images/" + monitor
+    debug_folder = dir_path + "/images/_/"
 else:
     abilities_folder = dir_path + "\images\\" + monitor
+    debug_folder = dir_path + "\images\\_\\"
 
 # default class
 wow_class_loaded = wow_class
@@ -172,25 +176,43 @@ def load_skills_secondary(wow_class):
     return secondary_abilities
 
 
-def main_rotation(main_skill, main_abilities):
-    try:
-        for skill in skills[wow_class] + skills["healing"] + skills["globals"]:
-            for ability in main_abilities:
-                if ability == skill["name"]:
-                    try:
-                        score = structural_similarity(main_abilities[ability], main_skill, channel_axis=2)
-                        if score*100 > 90:
-                            if dprint:
-                                print(ability, skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S"))
+def print_debug(ability, skill, score):
+    # print(ability, skill["name"], skill["modifier"], skill["key"], score*100,
+    #       f"Finish in: {round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S"))
+    # print(tabulate([[ability, skill["name"], "modifier" in skill.keys() and skill["modifier"] or "none", skill["key"], score*100,
+    #                  f"Finish in: {round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S")]], tablefmt='orgtbl'))
 
-                            if "modifier" in skill.keys():
-                                pyautogui.hotkey(skill["modifier"],  skill["key"])
-                            else:
-                                pyautogui.hotkey(skill["key"])
-                    except:
-                        print("score, diff not found for main ability", ability, skill["name"], datetime.now().strftime("%H:%M:%S"))
-    except:
-        print("error skill loop", datetime.now().strftime("%H:%M:%S"))
+    # table_data = [
+    #     [ability, "modifier" in skill.keys() and skill["modifier"] or "none", skill["key"], score*100,
+    #      f"{round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S")]
+    # ]
+    # print(tabulate(table_data, tablefmt='plain'))
+
+    pretty_table.field_names = ["ability", "modifier", "key", "score", "finished", "time"]
+    pretty_table.add_row([ability, "modifier" in skill.keys() and skill["modifier"] or "none", skill["key"], score*100,
+                          f"{round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S")])
+    print(pretty_table)
+
+
+def main_rotation(main_skill, main_abilities):
+    # try:
+    for skill in skills[wow_class] + skills["healing"] + skills["globals"]:
+        for ability in main_abilities:
+            if ability == skill["name"]:
+                # try:
+                score = structural_similarity(main_abilities[ability], main_skill, channel_axis=2)
+                if score*100 > 90:
+                    if dprint:
+                        print_debug(ability, skill, score)
+
+                    if "modifier" in skill.keys():
+                        pyautogui.hotkey(skill["modifier"],  skill["key"])
+                    else:
+                        pyautogui.hotkey(skill["key"])
+                    # except:
+                    #     print("score, diff not found for main ability", ability, skill["name"], datetime.now().strftime("%H:%M:%S"))
+    # except:
+    #     print("error skill loop", datetime.now().strftime("%H:%M:%S"))
 
 
 def secondary_rotation(secondary_skill, secondary_abilities):
@@ -203,8 +225,7 @@ def secondary_rotation(secondary_skill, secondary_abilities):
                             score = structural_similarity(secondary_abilities[ability], secondary_skill, channel_axis=2)
                             if score*100 > 90:
                                 if dprint:
-                                    print(ability, skill["name"], skill["key"], score*100,
-                                          f"Finish in: {round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S"))
+                                    print_debug(ability, skill, score)
 
                                 if "modifier" in skill.keys():
                                     pyautogui.hotkey(skill["modifier"],  skill["key"])
@@ -251,7 +272,9 @@ with keyboard.Listener(on_press=on_press) as listener:
 
 # grabbing images from regions
             main_image = sct.grab(p_main)
+            mss.tools.to_png(main_image.rgb, main_image.size, output=debug_folder + "1. main.png".format(**p_main))
             offgcd_image = sct.grab(p_offgcd)
+            mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=debug_folder + "6. offgcd.png".format(**p_offgcd))
             combat = sct.grab(p_combat).pixel(math.floor(c_width/2), math.floor(c_height/2))
             interrupt = sct.grab(p_interrupt).pixel(math.floor(c_width/2), math.floor(c_height/2))
             behind = sct.grab(p_behind).pixel(math.floor(c_width/2), math.floor(c_height/2))

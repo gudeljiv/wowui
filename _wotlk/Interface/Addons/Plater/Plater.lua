@@ -1176,6 +1176,7 @@ local class_specs_coords = {
 		[195821] = true,
 		[99922] = true,
 		[104822] = true,
+		[120651] = true, --explosives (M+)
 	}
 
 	--update the settings cache for scritps
@@ -1913,16 +1914,6 @@ local class_specs_coords = {
 		return PlaterDBChr.resources_on_target
 	end
 	
-	--> when the player left a zone but is in combat, wait 1 second and trigger the zone changed again
-	local wait_for_leave_combat = function()
-		Plater.RunFunctionForEvent ("ZONE_CHANGED_NEW_AREA")
-	end
-
-	--> when the auto toggle function is called but the player is in combat
-	local re_RefreshAutoToggle = function()
-		return Plater.RefreshAutoToggle()
-	end
-	
 	--> when the player enter in the world, wait a few seconds to get the guild name data
 	local delayed_guildname_check = function()
 		Plater.PlayerGuildName = GetGuildInfo ("player")
@@ -1937,17 +1928,14 @@ local class_specs_coords = {
 
 		local unitGUID = timerObject.GUID
 		local unitId = timerObject.unitId
-		local forceUpdate = unitId and true or false
 		local plateFrame = C_NamePlate.GetNamePlateForUnit (unitId)
 		
 		
 		--checking the serial of the unit is the same in case this nameplate is being used on another unit
-		if (plateFrame and (unitGUID == plateFrame [MEMBER_GUID])) then
+		--if (plateFrame and (unitGUID == plateFrame [MEMBER_GUID])) then
+		if (plateFrame) then
 			--save user input data (usualy set from scripts) before call the unit added event
 				local unitFrame = plateFrame.unitFrame
-				if not unitFrame.PlaterOnScreen and not forceUpdate then
-					return
-				end
 				local customHealthBarWidth = unitFrame.customHealthBarWidth
 				local customHealthBarHeight = unitFrame.customHealthBarHeight
 				
@@ -1960,8 +1948,8 @@ local class_specs_coords = {
 				local customBorderColor = unitFrame.customBorderColor
 			
 			--full refresh the nameplate, this will override user data from scripts
-			Plater.RunFunctionForEvent ("NAME_PLATE_UNIT_REMOVED", unitId or unitFrame [MEMBER_UNITID])
-			Plater.RunFunctionForEvent ("NAME_PLATE_UNIT_ADDED", unitId or unitFrame [MEMBER_UNITID])
+			Plater.RunFunctionForEvent ("NAME_PLATE_UNIT_REMOVED", unitId)
+			Plater.RunFunctionForEvent ("NAME_PLATE_UNIT_ADDED", unitId)
 			
 			--restore user input data
 				unitFrame.customHealthBarWidth = customHealthBarWidth
@@ -2606,7 +2594,6 @@ local class_specs_coords = {
 	end
 	
 	--store all functions for all events that will be registered inside OnInit
-	local last_UPDATE_SHAPESHIFT_FORM = GetTime()
 	local last_GetShapeshiftForm = GetShapeshiftForm()
 	local eventFunctions = {
 
@@ -2615,6 +2602,8 @@ local class_specs_coords = {
 			--if (unit == "player") then
 			--	return
 			--end
+			
+			if not string.match(unit, "nameplate%d%d?") then return end
 			
 			local plateFrame = C_NamePlate.GetNamePlateForUnit (unit, issecure())
 			if (plateFrame) then
@@ -2628,7 +2617,9 @@ local class_specs_coords = {
 				
 				if (reactionChanged or attackableChanged or not plateFrame.unitFrame.PlaterOnScreen) then
 					--print ("UNIT_FLAG", plateFrame, issecure(), unit, unit and UnitName (unit))
-					Plater.ScheduleUpdateForNameplate (plateFrame)
+					--Plater.ScheduleUpdateForNameplate (plateFrame)
+					
+					Plater.RunScheduledUpdate({unitId = unit, GUID = plateFrame [MEMBER_GUID]}) -- do this now
 				end
 			end
 		end,
@@ -2690,6 +2681,8 @@ local class_specs_coords = {
 		PLAYER_REGEN_DISABLED = function()
 			PLAYER_IN_COMBAT = true
 
+			Plater.RefreshAutoToggle(PLAYER_IN_COMBAT)
+
 			Plater.RefreshTankCache()
 			
 			--Plater.UpdateAuraCache()
@@ -2713,6 +2706,8 @@ local class_specs_coords = {
 		PLAYER_REGEN_ENABLED = function()
 
 			PLAYER_IN_COMBAT = false
+			
+			Plater.RefreshAutoToggle(PLAYER_IN_COMBAT)
 			
 			for _, plateFrame in ipairs (Plater.GetAllShownPlates()) do
 				plateFrame [MEMBER_NOCOMBAT] = nil
@@ -2861,7 +2856,7 @@ local class_specs_coords = {
 
 		ZONE_CHANGED_NEW_AREA = function()
 			if (InCombatLockdown()) then
-				C_Timer.After (1, wait_for_leave_combat)
+				C_Timer.After (1, function() Plater.RunFunctionForEvent ("ZONE_CHANGED_NEW_AREA") end)
 				return
 			end
 			
@@ -4324,11 +4319,9 @@ local class_specs_coords = {
 		UPDATE_SHAPESHIFT_FORM = function()
 			local curTime = GetTime()
 			--this is to work around UPDATE_SHAPESHIFT_FORM firing for all units and not just the player... causing lag...
-			--if (curTime - last_UPDATE_SHAPESHIFT_FORM) < 1 or last_GetShapeshiftForm == GetShapeshiftForm() then
 			if last_GetShapeshiftForm == GetShapeshiftForm() then
 				return
 			end
-			last_UPDATE_SHAPESHIFT_FORM = curTime
 			last_GetShapeshiftForm = GetShapeshiftForm()
 			
 			UpdatePlayerTankState()
@@ -4435,6 +4428,8 @@ end
 function Plater.OnInit() --private --~oninit ~init
 	Plater.InitializeSavedVariables()
 	Plater.RefreshDBUpvalues()
+	
+	Plater.UpdateBlizzardNameplateFonts()
 	
 	-- do we need to support blizzard frames?
 	SUPPORT_BLIZZARD_PLATEFRAMES = (not DB_PLATE_CONFIG [ACTORTYPE_PLAYER].module_enabled) or (not DB_PLATE_CONFIG [ACTORTYPE_FRIENDLY_PLAYER].module_enabled) or (not DB_PLATE_CONFIG [ACTORTYPE_ENEMY_PLAYER].module_enabled) or (not DB_PLATE_CONFIG [ACTORTYPE_FRIENDLY_NPC].module_enabled) or (not DB_PLATE_CONFIG [ACTORTYPE_ENEMY_NPC].module_enabled)
@@ -4658,6 +4653,8 @@ function Plater.OnInit() --private --~oninit ~init
 			if IS_WOW_PROJECT_CLASSIC_WRATH then
 				Plater.EventHandlerFrame:RegisterEvent ("TALENT_GROUP_ROLE_CHANGED")
 			end
+		elseif Plater.PlayerClass == "DRUID" then
+			Plater.EventHandlerFrame:RegisterEvent ("UPDATE_SHAPESHIFT_FORM")
 		end
 		
 		Plater.EventHandlerFrame:RegisterEvent ("PLAYER_LOGIN")
@@ -6167,6 +6164,8 @@ end
 			return C_Timer.After (1, re_UpdatePlateClickSpace)
 		end
 		
+		Plater.StartLogPerformanceCore("Plater-Core", "Update", "UpdatePlateClickSpace")
+		
 		local width, height = Plater.db.profile.click_space_friendly[1], Plater.db.profile.click_space_friendly[2]
 		C_NamePlate.SetNamePlateFriendlySize (width, height) --classic: {132, 32}, retail: {110, 45},
 		
@@ -6196,6 +6195,8 @@ end
 				Plater.UpdatePlateFrame (plateFrame, plateFrame.actorType)
 			end
 		end
+		
+		Plater.EndLogPerformanceCore("Plater-Core", "Update", "UpdatePlateClickSpace")
 	end
 	
 	function Plater.ForceTickOnAllNameplates() --private
@@ -7716,6 +7717,28 @@ end
 			end
 		end
 	end
+	
+	--Blizzard default font settings
+	function Plater.UpdateBlizzardNameplateFonts()
+		local profile = Plater.db.profile
+		if profile.blizzard_nameplate_font_override_enabled then
+			DF:SetFontFace (_G.SystemFont_NamePlate, profile.blizzard_nameplate_font)
+			DF:SetFontOutline (_G.SystemFont_NamePlate, profile.blizzard_nameplate_font_outline)
+			DF:SetFontSize (_G.SystemFont_NamePlate, profile.blizzard_nameplate_font_size)
+			
+			DF:SetFontFace (_G.SystemFont_NamePlateFixed, profile.blizzard_nameplate_font)
+			DF:SetFontOutline (_G.SystemFont_NamePlateFixed, profile.blizzard_nameplate_font_outline)
+			DF:SetFontSize (_G.SystemFont_NamePlateFixed, profile.blizzard_nameplate_font_size)
+			
+			DF:SetFontFace (_G.SystemFont_LargeNamePlate, profile.blizzard_nameplate_large_font)
+			DF:SetFontOutline (_G.SystemFont_LargeNamePlate, profile.blizzard_nameplate_large_font_outline)
+			DF:SetFontSize (_G.SystemFont_LargeNamePlate, profile.blizzard_nameplate_large_font_size)
+			
+			DF:SetFontFace (_G.SystemFont_LargeNamePlateFixed, profile.blizzard_nameplate_large_font)
+			DF:SetFontOutline (_G.SystemFont_LargeNamePlateFixed, profile.blizzard_nameplate_large_font_outline)
+			DF:SetFontSize (_G.SystemFont_LargeNamePlateFixed, profile.blizzard_nameplate_large_font_size)
+		end
+	end
 
 	-- ~updateplate ~update ~updatenameplate
 	function Plater.UpdatePlateFrame (plateFrame, actorType, forceUpdate, justAdded, regenDisabled)
@@ -8016,6 +8039,7 @@ end
 			--target overlay texture
 			local targetedOverlayTexture = LibSharedMedia:Fetch ("statusbar", profile.health_selection_overlay)
 			unitFrame.targetOverlayTexture:SetTexture (targetedOverlayTexture)
+			unitFrame.targetOverlayTexture:SetVertexColor (unpack (Plater.db.profile.health_selection_overlay_color))
 			unitFrame.targetOverlayTexture:SetAlpha (profile.health_selection_overlay_alpha)
 			
 			--heal prediction
@@ -8346,7 +8370,7 @@ end
 				Plater.AddIndicator (plateFrame, "quest")
 			end
 		
-		elseif (actorType == ACTORTYPE_FRIENDLY_NPC) then
+		elseif (actorType == ACTORTYPE_FRIENDLY_NPC and config.indicator_quest) then
 			if (plateFrame [MEMBER_QUEST]) then
 				Plater.AddIndicator (plateFrame, "quest")
 			end
@@ -8459,16 +8483,29 @@ end
 --> misc stuff - general functions ~misc
 
 	--auto toggle the show friendly players, and other stuff.
-	function Plater.RefreshAutoToggle() --private
+	function Plater.RefreshAutoToggle(combat) --private
 
-		if (InCombatLockdown()) then
-			C_Timer.After (0.5, re_RefreshAutoToggle)
+		if ((combat == nil) and InCombatLockdown()) then
+			C_Timer.After (0.5, function() Plater.RefreshAutoToggle() end)
 			return
 		end
 		
 		local zoneName, zoneType = GetInstanceInfo()
 		local profile = Plater.db.profile
+		
+		-- combat toggle
+		if (profile.auto_toggle_combat_enabled and (combat ~= nil)) then
+			if combat then
+				SetCVar("nameplateShowFriends", profile.auto_toggle_combat.friendly_ic and CVAR_ENABLED or CVAR_DISABLED)
+				SetCVar("nameplateShowEnemies", profile.auto_toggle_combat.enemy_ic and CVAR_ENABLED or CVAR_DISABLED)
+				return
+			else
+				SetCVar("nameplateShowFriends", profile.auto_toggle_combat.friendly_ooc and CVAR_ENABLED or CVAR_DISABLED)
+				SetCVar("nameplateShowEnemies", profile.auto_toggle_combat.enemy_ooc and CVAR_ENABLED or CVAR_DISABLED)
+			end
+		end
 
+		-- dungeon/raid toggle pets/totems
 		if (profile.auto_inside_raid_dungeon.hide_enemy_player_pets) then
 			if (zoneType == "party" or zoneType == "raid") then
 				SetCVar("nameplateShowEnemyPets", CVAR_DISABLED)
@@ -8476,7 +8513,6 @@ end
 				SetCVar("nameplateShowEnemyPets", CVAR_ENABLED)
 			end
 		end
-
 		if (profile.auto_inside_raid_dungeon.hide_enemy_player_totems) then
 			if (zoneType == "party" or zoneType == "raid") then
 				SetCVar("nameplateShowEnemyTotems", CVAR_DISABLED)
@@ -8484,6 +8520,30 @@ end
 				SetCVar("nameplateShowEnemyTotems", CVAR_ENABLED)
 			end
 		end
+		
+		--stacking toggle
+		if (profile.auto_toggle_stacking_enabled and profile.stacking_nameplates_enabled) then
+			--discover which is the map type the player is in
+			if (zoneType == "party") then
+				SetCVar ("nameplateMotion", profile.auto_toggle_stacking ["party"] and CVAR_ENABLED or CVAR_DISABLED)
+				
+			elseif (zoneType == "raid") then
+				SetCVar ("nameplateMotion", profile.auto_toggle_stacking ["raid"] and CVAR_ENABLED or CVAR_DISABLED)
+				
+			elseif (zoneType == "arena" or zoneType == "pvp") then
+				SetCVar ("nameplateMotion", profile.auto_toggle_stacking ["arena"] and CVAR_ENABLED or CVAR_DISABLED)
+				
+			else
+				--if the player is resting, consider inside a major city
+				if (IsResting()) then
+					SetCVar ("nameplateMotion", profile.auto_toggle_stacking ["cities"] and CVAR_ENABLED or CVAR_DISABLED)
+				else
+					SetCVar ("nameplateMotion", profile.auto_toggle_stacking ["world"] and CVAR_ENABLED or CVAR_DISABLED)
+				end
+			end
+		end
+		
+		if combat then return end
 
 		--friendly nameplate toggle
 		if (profile.auto_toggle_friendly_enabled) then
@@ -8507,24 +8567,24 @@ end
 			end
 		end
 		
-		--stacking toggle
-		if (profile.auto_toggle_stacking_enabled and profile.stacking_nameplates_enabled) then
+		--enemy nameplate toggle
+		if (profile.auto_toggle_enemy_enabled) then
 			--discover which is the map type the player is in
 			if (zoneType == "party") then
-				SetCVar ("nameplateMotion", profile.auto_toggle_stacking ["party"] and CVAR_ENABLED or CVAR_DISABLED)
+				SetCVar ("nameplateShowEnemies", profile.auto_toggle_enemy ["party"] and CVAR_ENABLED or CVAR_DISABLED)
 				
 			elseif (zoneType == "raid") then
-				SetCVar ("nameplateMotion", profile.auto_toggle_stacking ["raid"] and CVAR_ENABLED or CVAR_DISABLED)
+				SetCVar ("nameplateShowEnemies", profile.auto_toggle_enemy ["raid"] and CVAR_ENABLED or CVAR_DISABLED)
 				
 			elseif (zoneType == "arena" or zoneType == "pvp") then
-				SetCVar ("nameplateMotion", profile.auto_toggle_stacking ["arena"] and CVAR_ENABLED or CVAR_DISABLED)
+				SetCVar ("nameplateShowEnemies", profile.auto_toggle_enemy ["arena"] and CVAR_ENABLED or CVAR_DISABLED)
 				
 			else
 				--if the player is resting, consider inside a major city
 				if (IsResting()) then
-					SetCVar ("nameplateMotion", profile.auto_toggle_stacking ["cities"] and CVAR_ENABLED or CVAR_DISABLED)
+					SetCVar ("nameplateShowEnemies", profile.auto_toggle_enemy ["cities"] and CVAR_ENABLED or CVAR_DISABLED)
 				else
-					SetCVar ("nameplateMotion", profile.auto_toggle_stacking ["world"] and CVAR_ENABLED or CVAR_DISABLED)
+					SetCVar ("nameplateShowEnemies", profile.auto_toggle_enemy ["world"] and CVAR_ENABLED or CVAR_DISABLED)
 				end
 			end
 		end
@@ -11336,6 +11396,29 @@ end
 			["COMM_PLATER_PREFIX"] = true,
 			["COMM_SCRIPT_GROUP_EXPORTED"] = true,
 			["COMM_SCRIPT_MSG"] = true,
+			["Resources"] = {
+				["GetResourceWidgetCreationTable"] = true,
+				["GetCreateResourceWidgetFunctionForSpecId"] = true,
+				["RefreshResourcesDBUpvalues"] = true,
+				["CreateMainResourceFrame"] = true,
+				["UpdateResourceFrameToUse"] = true,
+				["GetMainResourceFrame"] = true,
+				["GetResourceBarInUse"] = true,
+				["EnableEvents"] = true,
+				["DisableEvents"] = true,
+				["HidePlaterResourceFrame"] = true,
+				["OnSpecChanged"] = true,
+				["CanUsePlaterResourceFrame"] = true,
+				["UpdateResourceFramePosition"] = true,
+				["UpdateMainResourceFrame"] = true,
+				["UpdateResourceBar"] = true,
+				["UpdateResourcesFor_HideDeplete"] = true,
+				["UpdateResourcesFor_ShowDepleted"] = true,
+				["UpdateResources_NoDepleted"] = true,
+				["UpdateResources_WithDepleted"] = true,
+				["GetRuneKeyBySpec"] = true,
+				["GetCDEdgeBySpec"] = true,
+			},
 		},
 		
 		["DetailsFramework"] = {

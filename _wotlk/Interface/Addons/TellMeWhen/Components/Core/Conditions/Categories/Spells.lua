@@ -102,10 +102,16 @@ ConditionCategory:RegisterCondition(1,	 "SPELLCD", {
 			ConditionObject:GenerateNormalEventString("SPELL_UPDATE_COOLDOWN"),
 			ConditionObject:GenerateNormalEventString("SPELL_UPDATE_USABLE")
 	end,
-	anticipate = [[
-		local _, start, duration = GetSpellCooldown(c.OwnSpells.First)
-		local VALUE = duration and start + (duration - c.Level) or huge
-	]],
+	anticipate = function(c)
+		local str = [[
+			local start, duration = GetSpellCooldown(c.OwnSpells.First)
+			local VALUE = duration and start + (duration - c.Level) or huge
+		]]
+		if TMW:GetSpells(c.Name).First == "gcd" then
+			str = str:gsub("c.OwnSpells.First", TMW.GCDSpell)
+		end
+		return str
+	end,
 })
 ConditionCategory:RegisterCondition(2,	 "SPELLCDCOMP", {
 	text = L["SPELLCOOLDOWN"] .. " - " .. L["COMPARISON"],
@@ -132,21 +138,30 @@ ConditionCategory:RegisterCondition(2,	 "SPELLCDCOMP", {
 			ConditionObject:GenerateNormalEventString("SPELL_UPDATE_COOLDOWN"),
 			ConditionObject:GenerateNormalEventString("SPELL_UPDATE_USABLE")
 	end,
-	anticipate = [[
-		local _, start, duration = GetSpellCooldown(c.OwnSpells.First)
-		local _, start2, duration2 = GetSpellCooldown(c.OwnSpells2.First)
-		local VALUE
-		if duration and duration2 then
-			local v1, v2 = start + duration, start2 + duration2
-			VALUE = v1 < v2 and v1 or v2
-		elseif duration then
-			VALUE = start + duration
-		elseif duration2 then
-			VALUE = start2 + duration2
-		else
-			VALUE = huge
+	anticipate = function(c)
+		local str = [[
+			local start, duration = GetSpellCooldown(c.OwnSpells.First)
+			local start2, duration2 = GetSpellCooldown(c.OwnSpells2.First)
+			local VALUE
+			if duration and duration2 then
+				local v1, v2 = start + duration, start2 + duration2
+				VALUE = v1 < v2 and v1 or v2
+			elseif duration then
+				VALUE = start + duration
+			elseif duration2 then
+				VALUE = start2 + duration2
+			else
+				VALUE = huge
+			end
+		]]
+		if TMW:GetSpells(c.Name).First == "gcd" then
+			str = str:gsub("c.OwnSpells.First", TMW.GCDSpell)
 		end
-	]],
+		if TMW:GetSpells(c.Name2).First == "gcd" then
+			str = str:gsub("c.OwnSpells2.First", TMW.GCDSpell)
+		end
+		return str
+	end,
 })
 
 ConditionCategory:RegisterSpacer(2.4)
@@ -881,9 +896,8 @@ Env.UnitCastPercent = function(unit, matchname)
 	if not name then 
 		return 0, nil
 	end
-	name = strlowerCache[name]
-	if matchname == "" and name then
-		matchname = name
+	if matchname ~= "" and strlowerCache[name] ~= matchname then
+		return 0, nil
 	end
 	local remaining = endTime and endTime/1000 - TMW.time or 0
 	local duration = endTime/1000 - start/1000

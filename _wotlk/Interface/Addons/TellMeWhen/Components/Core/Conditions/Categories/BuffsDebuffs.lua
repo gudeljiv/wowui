@@ -60,35 +60,38 @@ function Env.AuraStacksPacked(unit, name, kindKey, onlyMine)
 	return 0
 end
 
-function Env.AuraCount(unit, spells, filter)
+function Env.AuraCount(units, spells, filter)
 	local n = 0
 	local names = spells.Hash
 
-	for i = 1, huge do
-		local buffName, _, _, _, _, _, _, _, _, id = UnitAura(unit, i, filter)
-		if not buffName then
-			return n
-		elseif names[id] or names[strlowerCache[buffName]] then
-			n = n + 1
+	for u = 1, #units do
+		for i = 1, huge do
+			local buffName, _, _, _, _, _, _, _, _, id = UnitAura(units[u], i, filter)
+			if not buffName then
+				break
+			elseif names[id] or names[strlowerCache[buffName]] then
+				n = n + 1
+			end
 		end
 	end
 
 	return n
 end
 
-function Env.AuraCountPacked(unit, spells, kindKey, onlyMine)
-	local auras = GetAuras(unit)
-	local instances = auras.instances
-	local lookup = auras.lookup
-	local SpellsArray = spells.Array
-	
+function Env.AuraCountPacked(units, spells, kindKey, onlyMine)
 	local n = 0
-	for i = 1, #SpellsArray do
-		for auraInstanceID, isMine in next, lookup[SpellsArray[i]] or empty do
-			if (isMine or not onlyMine) then
-				local instance = instances[auraInstanceID]
-				if instance[kindKey] then
-					n = n + 1
+	local SpellsArray = spells.Array
+	for u = 1, #units do
+		local auras = GetAuras(units[u])
+		local instances = auras.instances
+		local lookup = auras.lookup
+		
+		for i = 1, #SpellsArray do
+			for auraInstanceID, isMine in next, lookup[SpellsArray[i]] or empty do
+				if (isMine or not onlyMine) then
+					if instances[auraInstanceID][kindKey] then
+						n = n + 1
+					end
 				end
 			end
 		end
@@ -206,7 +209,6 @@ end
 
 
 function Env.AuraTooltipNumber(...)
-	-- TODO: Replace GetParser with direct usage of C_TooltipInfo when available
 	local Parser, LT1, LT2 = TMW:GetParser()
 	local module = CNDT:NewModule("TooltipParser", "AceEvent-3.0")
 
@@ -266,7 +268,7 @@ function Env.AuraTooltipNumber(...)
 			local index = 0
 		    Parser:SetOwner(UIParent, "ANCHOR_NONE")
 		    Parser:SetUnitAura(unit, n, filter)
-			local text = LT2:GetText() or ""
+			local text = (TMW.isRetail and LT1 or LT2):GetText() or ""
 			Parser:Hide()
 
 			local number
@@ -306,9 +308,61 @@ function Env.AuraTooltipNumber(...)
 	return Env.AuraTooltipNumber(...)
 end
 
+function Env.AuraTooltipNumberPacked(unit, name, kindKey, onlyMine, requestedIndex)
+	local auras = GetAuras(unit)
+	local instances = auras.instances
+	
+	for auraInstanceID, isMine in next, auras.lookup[name] or empty do
+		if (isMine or not onlyMine) then
+			local instance = instances[auraInstanceID]
+			if instance[kindKey] then
+
+				if instance.tmwTooltipNumbers then
+					-- Return cached value if available
+					return instance.tmwTooltipNumbers[requestedIndex] or 0
+				end
+
+				local data = C_TooltipInfo[kindKey == "isHelpful" and "GetUnitBuffByAuraInstanceID" or "GetUnitDebuffByAuraInstanceID"](unit, auraInstanceID)
+				
+				local text
+				-- Only look at the second line (first line after the title):
+				-- (third line is the duration)
+				for _, arg in pairs(data.lines[2].args) do
+					if arg.field == "leftText" then
+						text = arg.stringVal
+						break
+					end
+				end
+
+				instance.tmwTooltipNumbers = {}
+				local index = 0
+				local number
+				local allNumbers = ""
+				repeat
+					number, text = (text):match("([0-9%" .. LARGE_NUMBER_SEPERATOR .. "]+%" .. DECIMAL_SEPERATOR .. "?[0-9]+)(.*)$")
+
+					if number then
+						-- Remove large number separators
+						number = number:gsub("%" .. LARGE_NUMBER_SEPERATOR, "")
+						-- Normalize decimal separators
+						number = number:gsub("%" .. DECIMAL_SEPERATOR, ".")
+
+						index = index + 1
+						instance.tmwTooltipNumbers[index] = isNumber[number]
+					end
+				until not number
+
+				return instance.tmwTooltipNumbers[requestedIndex] or 0
+			end
+		end
+	end
+
+	return 0
+end
+
 local function CanUsePackedAuras(c)
 	if not GetAuras then return false end
-	if not TMW.COMMON.Auras:RequestUnits(CNDT:GetUnit(c.Unit)) then return false end
+	if not TMW.COMMON.Auras:RequestUnits(c.Unit) then return false end
 	return true
 end
 
@@ -512,6 +566,9 @@ for i = 1, 3 do -- BUFFTOOLTIPSCAN
 		icon = TMW.isWrath and "Interface\\Icons\\spell_ice_lament" or "Interface\\Icons\\ability_priest_clarityofwill",
 		tcoords = CNDT.COMMON.standardtcoords,
 		funcstr = function(c)
+			if CanUsePackedAuras(c) then
+				return [[AuraTooltipNumberPacked(c.Unit, c.Spells.First, "isHelpful", ]] .. (tostring(c.Checked)) .. [[, ]] .. i .. [[) c.Operator c.Level]]
+			end
 			return [[AuraTooltipNumber(c.Unit, c.Spells.First, "HELPFUL]] .. (c.Checked and " PLAYER" or "") .. [[", ]] .. i .. [[) c.Operator c.Level]]
 		end,
 		events = function(ConditionObject, c)
@@ -524,12 +581,13 @@ end
 ConditionCategory:RegisterCondition(5,	 "BUFFNUMBER", {
 	text = L["ICONMENU_BUFF"] .. " - " .. L["NUMAURAS"],
 	tooltip = L["NUMAURAS_DESC"],
-	min = 0,
-	max = 20,
+	range = 20,
+	multiUnit = true,
 	name = function(editbox)
 		editbox:SetTexts(L["BUFFTOCHECK"], L["CNDT_MULTIPLEVALID"])
 	end,
 	useSUG = true,
+	allowMultipleSUGEntires = true,
 	check = function(check)
 		check:SetTexts(L["ONLYCHECKMINE"], L["ONLYCHECKMINE_DESC"])
 	end,
@@ -538,14 +596,15 @@ ConditionCategory:RegisterCondition(5,	 "BUFFNUMBER", {
 	tcoords = CNDT.COMMON.standardtcoords,
 	funcstr = function(c)
 		if CanUsePackedAuras(c) then
-			return [[AuraCountPacked(c.Unit, c.Spells, "isHelpful", ]] .. (tostring(c.Checked)) .. [[) c.Operator c.Level]]
+			return [[AuraCountPacked(c.Units, c.Spells, "isHelpful", ]] .. (tostring(c.Checked)) .. [[) c.Operator c.Level]]
 		end
-		return [[AuraCount(c.Unit, c.Spells, "HELPFUL]] .. (c.Checked and " PLAYER" or "") .. [[") c.Operator c.Level]]
+		return [[AuraCount(c.Units, c.Spells, "HELPFUL]] .. (c.Checked and " PLAYER" or "") .. [[") c.Operator c.Level]]
 	end,
 	events = function(ConditionObject, c)
+		local _, unitSet = TMW:GetUnits(nil, c.Unit)
 		return
-			ConditionObject:GetUnitChangedEventString(CNDT:GetUnit(c.Unit)),
-			ConditionObject:GenerateUnitAuraString(CNDT:GetUnit(c.Unit), TMW:GetSpells(c.Name).First, c.Checked)
+			ConditionObject:GenerateNormalEventString(unitSet.event),
+			ConditionObject:GenerateUnitAuraString(unitSet, TMW:GetSpells(c.Name), c.Checked)
 	end,
 })
 
@@ -758,7 +817,7 @@ ConditionCategory:RegisterCondition(14,	 "DEBUFFTOOLTIP", {
 			ConditionObject:GenerateUnitAuraString(CNDT:GetUnit(c.Unit), TMW:GetSpells(c.Name).First, c.Checked)
 	end,
 })
-for i = 1, 3 do -- BUFFTOOLTIPSCAN
+for i = 1, 3 do -- DEBUFFTOOLTIPSCAN
 	ConditionCategory:RegisterCondition(14 + 0.1*i,	 "DEBUFFTOOLTIPSCAN" .. i, {
 		text = L["ICONMENU_DEBUFF"] .. " - " .. L["TOOLTIPSCAN2"]:format(i),
 		tooltip = L["TOOLTIPSCAN2_DESC"],
@@ -774,6 +833,9 @@ for i = 1, 3 do -- BUFFTOOLTIPSCAN
 		icon = "Interface\\Icons\\spell_fire_flameshock",
 		tcoords = CNDT.COMMON.standardtcoords,
 		funcstr = function(c)
+			if CanUsePackedAuras(c) then
+				return [[AuraTooltipNumberPacked(c.Unit, c.Spells.First, "isHarmful", ]] .. (tostring(c.Checked)) .. [[, ]] .. i .. [[) c.Operator c.Level]]
+			end
 			return [[AuraTooltipNumber(c.Unit, c.Spells.First, "HARMFUL]] .. (c.Checked and " PLAYER" or "") .. [[", ]] .. i .. [[) c.Operator c.Level]]
 		end,
 		events = function(ConditionObject, c)
@@ -786,12 +848,13 @@ end
 ConditionCategory:RegisterCondition(15,	 "DEBUFFNUMBER", {
 	text = L["ICONMENU_DEBUFF"] .. " - " .. L["NUMAURAS"],
 	tooltip = L["NUMAURAS_DESC"],
-	min = 0,
-	max = 20,
+	range = 20,
+	multiUnit = true,
 	name = function(editbox)
 		editbox:SetTexts(L["DEBUFFTOCHECK"], L["CNDT_MULTIPLEVALID"])
 	end,
 	useSUG = true,
+	allowMultipleSUGEntires = true,
 	check = function(check)
 		check:SetTexts(L["ONLYCHECKMINE"], L["ONLYCHECKMINE_DESC"])
 	end,
@@ -800,14 +863,15 @@ ConditionCategory:RegisterCondition(15,	 "DEBUFFNUMBER", {
 	tcoords = CNDT.COMMON.standardtcoords,
 	funcstr = function(c)
 		if CanUsePackedAuras(c) then
-			return [[AuraCountPacked(c.Unit, c.Spells, "isHarmful", ]] .. (tostring(c.Checked)) .. [[) c.Operator c.Level]]
+			return [[AuraCountPacked(c.Units, c.Spells, "isHarmful", ]] .. (tostring(c.Checked)) .. [[) c.Operator c.Level]]
 		end
-		return [[AuraCount(c.Unit, c.Spells, "HARMFUL]] .. (c.Checked and " PLAYER" or "") .. [[") c.Operator c.Level]]
+		return [[AuraCount(c.Units, c.Spells, "HARMFUL]] .. (c.Checked and " PLAYER" or "") .. [[") c.Operator c.Level]]
 	end,
 	events = function(ConditionObject, c)
+		local _, unitSet = TMW:GetUnits(nil, c.Unit)
 		return
-			ConditionObject:GetUnitChangedEventString(CNDT:GetUnit(c.Unit)),
-			ConditionObject:GenerateUnitAuraString(CNDT:GetUnit(c.Unit), TMW:GetSpells(c.Name).First, c.Checked)
+			ConditionObject:GetUnitChangedEventString(unitSet),
+			ConditionObject:GenerateUnitAuraString(unitSet, TMW:GetSpells(c.Name), c.Checked)
 	end,
 })
 
