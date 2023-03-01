@@ -72,7 +72,8 @@ else:
 
 # default class
 wow_class_loaded = wow_class
-print("Script loaded and ready.", "Rotation is paused.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"))
+print("Script loaded and ready.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"))
+print("Rotation is paused.")
 
 
 def on_press(key):
@@ -86,14 +87,12 @@ def on_press(key):
         if key == keyboard.Key.f12:
             pause = not pause
             if pause:
-                if dprint:
-                    print("Rotation is paused")
+                print("Rotation is paused.")
                 pyautogui.hotkey("end")
                 pyautogui.PAUSE = 1
                 pyautogui.FAILSAFE = False
             else:
-                if dprint:
-                    print("Rotation is not paused")
+                print("Rotation is not paused.")
                 pyautogui.hotkey("home")
                 pyautogui.PAUSE = 0.05
                 pyautogui.FAILSAFE = True
@@ -177,17 +176,6 @@ def load_skills_secondary(wow_class):
 
 
 def print_debug(ability, skill, score):
-    # print(ability, skill["name"], skill["modifier"], skill["key"], score*100,
-    #       f"Finish in: {round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S"))
-    # print(tabulate([[ability, skill["name"], "modifier" in skill.keys() and skill["modifier"] or "none", skill["key"], score*100,
-    #                  f"Finish in: {round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S")]], tablefmt='orgtbl'))
-
-    # table_data = [
-    #     [ability, "modifier" in skill.keys() and skill["modifier"] or "none", skill["key"], score*100,
-    #      f"{round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S")]
-    # ]
-    # print(tabulate(table_data, tablefmt='plain'))
-
     pretty_table.field_names = ["ability", "modifier", "key", "score", "finished", "time"]
     pretty_table.add_row([ability, "modifier" in skill.keys() and skill["modifier"] or "none", skill["key"], score*100,
                           f"{round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S")])
@@ -195,24 +183,24 @@ def print_debug(ability, skill, score):
 
 
 def main_rotation(main_skill, main_abilities):
-    # try:
-    for skill in skills[wow_class] + skills["healing"] + skills["globals"]:
-        for ability in main_abilities:
-            if ability == skill["name"]:
-                # try:
-                score = structural_similarity(main_abilities[ability], main_skill, channel_axis=2)
-                if score*100 > 90:
-                    if dprint:
-                        print_debug(ability, skill, score)
+    try:
+        for skill in skills[wow_class] + skills["healing"] + skills["globals"]:
+            for ability in main_abilities:
+                if ability == skill["name"]:
+                    try:
+                        score = structural_similarity(main_abilities[ability], main_skill, channel_axis=2)
+                        if score*100 > 90:
+                            if dprint:
+                                print_debug(ability, skill, score)
 
-                    if "modifier" in skill.keys():
-                        pyautogui.hotkey(skill["modifier"],  skill["key"])
-                    else:
-                        pyautogui.hotkey(skill["key"])
-                    # except:
-                    #     print("score, diff not found for main ability", ability, skill["name"], datetime.now().strftime("%H:%M:%S"))
-    # except:
-    #     print("error skill loop", datetime.now().strftime("%H:%M:%S"))
+                            if "modifier" in skill.keys():
+                                pyautogui.hotkey(skill["modifier"],  skill["key"])
+                            else:
+                                pyautogui.hotkey(skill["key"])
+                    except:
+                        print("score, diff not found for main ability", ability, skill["name"], datetime.now().strftime("%H:%M:%S"))
+    except:
+        print("error skill loop", datetime.now().strftime("%H:%M:%S"))
 
 
 def secondary_rotation(secondary_skill, secondary_abilities):

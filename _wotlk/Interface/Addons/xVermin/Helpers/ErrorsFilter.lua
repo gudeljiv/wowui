@@ -19,15 +19,14 @@ local messages = {
 	'You are in combat',
 	'Someone is already looting that corpse.',
 	'Must have a Shield equipped',
-	'Interrupted'
+	'Interrupted',
+	'Unknown unit',
+	"You can't use that item."
 }
 
-local enable
-local onevent
-local uierrorsframe_addmessage
 local old_uierrosframe_addmessage
 
-local function enable()
+local filter_error_messages = function()
 	old_uierrosframe_addmessage = UIErrorsFrame.AddMessage
 	UIErrorsFrame.AddMessage = uierrorsframe_addmessage
 end
@@ -42,18 +41,4 @@ function uierrorsframe_addmessage(frame, text, red, green, blue, id)
 	old_uierrosframe_addmessage(frame, text, red, green, blue, id)
 end
 
-enable()
-
--- local frame = CreateFrame('Frame')
--- frame:SetScript(
--- 	'OnEvent',
--- 	function(self, event, isInitialLogin, isReloadingUi)
--- 		if event == 'PLAYER_REGEN_DISABLED' then
--- 			UIErrorsFrame:Hide()
--- 		else
--- 			UIErrorsFrame:Show()
--- 		end
--- 	end
--- )
--- frame:RegisterEvent('PLAYER_REGEN_ENABLED')
--- frame:RegisterEvent('PLAYER_REGEN_DISABLED')
+filter_error_messages()

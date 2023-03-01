@@ -155,7 +155,7 @@ skills["death knight"] = [
     {"name": "heart strike", "type": "GetSpellTexture", "id": 55050, "key": "f1", "modifier": "ctrl"},
     {"name": "death coil", "type": "GetSpellTexture", "id": 6789, "key": "4"},
     {"name": "blood boil", "type": "GetSpellTexture", "id": 48721, "key": "e"},
-    {"name": "horn of winter", "type": "GetSpellTexture", "id": 57330, "key": "f5"},
+    {"name": "horn of winter", "type": "GetSpellTexture", "id": 57330, "key": "f10"},
     {"name": "pestilence", "type": "GetSpellTexture", "id": 50842, "key": "3"},
     {"name": "death and decay", "type": "GetSpellTexture", "id": 49936, "key": "r", "modifier": "alt"},
     {"name": "howling blast", "type": "GetSpellTexture", "id": 51410, "key": "9"},
