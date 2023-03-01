@@ -45,6 +45,7 @@ MSQ:AddSkin(
 			Height = 40,
 			DrawLayer = 'ARTWORK',
 			DrawLevel = 0
+			-- Color = {0, 144 / 255, 1, 0.9}
 		},
 		Checked = {
 			Texture = 'Interface\\AddOns\\Masque_Brownstone\\Textures\\tChecked',
@@ -58,7 +59,7 @@ MSQ:AddSkin(
 			Width = 33,
 			Height = 33,
 			BlendMode = 'ADD'
-			-- Color = { 0, 144/255, 1, 0.9 },
+			-- Color = {0, 144 / 255, 1, 0.9}
 		},
 		Border = {
 			Hide = true,

@@ -26,7 +26,7 @@ for i, frameID in ipairs {'inventory', 'bank', 'guildbank', 'voidstorage'} do
 	Masque:Group(Addon.Name, frameID .. ' - items')
 	Masque:Group(Addon.Name, frameID .. ' - bags')
 end
- --
+--
 
 --[[ Overrides ]] local Item, Bag = Addon.Item, Addon.Bag
 local NewItem, ReleaseItem = Item.New, Item.Release
