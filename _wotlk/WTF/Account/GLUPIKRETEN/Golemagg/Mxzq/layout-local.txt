@@ -158,7 +158,7 @@ FrameLevel: 1
 Anchor: CENTER
 X: 311
 Y: -77
-W: 78
+W: 81
 H: 40
 Frame: Dejunk_ParentFrame
 FrameLevel: 1
