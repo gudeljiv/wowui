@@ -1,6 +1,7 @@
 from _resources import skills
 from _resources import color
 from _resources import monitor_settings
+from __ctypes import KeyPress as cKeyPress
 
 import time
 import _thread
@@ -194,9 +195,13 @@ def main_rotation(main_skill, main_abilities):
                                 print_debug(ability, skill, score)
 
                             if "modifier" in skill.keys():
-                                pyautogui.hotkey(skill["modifier"],  skill["key"])
+                                cKeyPress(skill["key"], skill["modifier"])
+                                # keybrd.press_and_release(skill["modifier"] + "+" + skill["key"])
+                                # pyautogui.hotkey(skill["modifier"],  skill["key"])
                             else:
-                                pyautogui.hotkey(skill["key"])
+                                cKeyPress(skill["key"])
+                                # keybrd.press_and_release(skill["key"])
+                                # pyautogui.hotkey(skill["key"])
                     except:
                         print("score, diff not found for main ability", ability, skill["name"], datetime.now().strftime("%H:%M:%S"))
     except:
@@ -216,9 +221,13 @@ def secondary_rotation(secondary_skill, secondary_abilities):
                                     print_debug(ability, skill, score)
 
                                 if "modifier" in skill.keys():
-                                    pyautogui.hotkey(skill["modifier"],  skill["key"])
+                                    cKeyPress(skill["key"], skill["modifier"])
+                                    # keybrd.press_and_release(skill["modifier"] + "+" + skill["key"])
+                                    # pyautogui.hotkey(skill["modifier"],  skill["key"])
                                 else:
-                                    pyautogui.hotkey(skill["key"])
+                                    cKeyPress(skill["key"])
+                                    # keybrd.press_and_release(skill["key"])
+                                    # pyautogui.hotkey(skill["key"])
                         except:
                             print("score, diff not found for offgcd", ability, skill["name"], datetime.now().strftime("%H:%M:%S"))
     except:
@@ -244,7 +253,7 @@ with keyboard.Listener(on_press=on_press) as listener:
 
         while True:
 
-            time.sleep(random.uniform(0.01, 0.1))
+            time.sleep(random.uniform(0.001, 0.03))
 
             start_time = time.time()
             if os.name != "posix":

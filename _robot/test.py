@@ -28,6 +28,7 @@ from os import listdir
 from os.path import exists
 from skimage.metrics import structural_similarity
 from datetime import datetime
+import keyboard as keybrd
 
 combat = False
 debug = False
@@ -59,13 +60,14 @@ file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
 abilities_folder = dir_path + "\images\\" + monitor
 
-print("Script loaded and ready.", "Rotation is paused.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"))
+print("Script loaded and ready.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"))
+print("debug:", debug)
 
 
 def on_press(key):
     global debug, dprint, pause, mill
     # print(key)
-    if key == keyboard.Key.f7:
+    if key == keyboard.Key.f12:
         debug = not debug
         print("debug:", debug)
 
@@ -77,4 +79,7 @@ with keyboard.Listener(on_press=on_press) as listener:
         while True:
             start_time = time.time()
 
-            pyautogui.hotkey("h")
+            if debug:
+                time.sleep(0.1)
+                keybrd.press_and_release("ctrl+f1")
+                # pyautogui.hotkey("h")

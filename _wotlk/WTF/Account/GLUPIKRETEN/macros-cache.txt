@@ -1,6 +1,3 @@
-VER 3 0000000000000013 " " "132130"
-/click BehindTarget
-END
 VER 3 0000000000000026 " " "134400"
 #showtooltip item:36912
 /2 WTB Saronite Ore 24g 
@@ -8,6 +5,9 @@ END
 VER 3 000000000000000E " " "136106"
 /inspect
 /run SortBags()
+END
+VER 3 0000000000000013 " " "132130"
+/click BehindTarget
 END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
@@ -22,7 +22,7 @@ END
 VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:35953
-/castsequence [combat] reset=combat 
+/castsequence [combat] reset=combat item:33447
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:35953
@@ -31,7 +31,7 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000025 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:33447
 END
 VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 #showtooltip Prowl
@@ -50,9 +50,11 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000021 "TEST" "134400"
-/run print(ContainerFrame2Item1:GetID())
-/run print("--")
-/run print(ContainerFrame2Item1:GetParent():GetID())
+/run xRTF(1,"GetSpellTexture",19801)
+/run RotationTextureFrame2.texture:SetTexture(GetSpellTexture(19801))
+/run RotationTextureFrame2:Show()
+/run local get_texture = loadstring("GetSpellTexture")
+/run print(get_texture(19801))
 END
 VER 3 0000000000000020 "TSMDestroy" "INV_Misc_Flower_01"
 /tsm destroy

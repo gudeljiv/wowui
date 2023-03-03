@@ -111,6 +111,27 @@ local data = {}
 local skills = {}
 skills['revenge'] = '#7bd079'
 
+local RTF = function(xframe, xtype, xid)
+	local f = _G['RotationTextureFrame' .. xframe]
+
+	if xtype == 'GetSpellTexture' or 1 then
+		f.texture:SetTexture(GetSpellTexture(xid))
+	end
+
+	if xtype == 'GetItemIcon' or 2 then
+		f.texture:SetTexture(GetItemIcon(xid))
+	end
+
+	f:Show()
+end
+xRTF = RTF
+
+local RTFH = function(xframe)
+	local f = _G['RotationTextureFrame' .. xframe]
+	f:Hide()
+end
+xRTFH = RTFH
+
 -- PlayerFrame:HookScript(
 -- 	'OnUpdate',
 -- 	function()
