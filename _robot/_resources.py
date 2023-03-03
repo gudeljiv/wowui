@@ -240,6 +240,7 @@ monitor_settings["2560"] = {
     "p_interrupt_left": 37,
     "p_behind_left": 47,
     "p_clss_left": 60,
+    "p_aoe_left": 254,
 }
 monitor_settings["3072"] = {
     "x": 12,
@@ -258,6 +259,7 @@ monitor_settings["2048.0"] = {
     "c_width": 5,
     "c_height": 5,
     "p_offgcd_left": 13,
+    "p_aoe_left": 160,
     "p_combat_left": 24,
     "p_interrupt_left": 33,
     "p_behind_left": 43,

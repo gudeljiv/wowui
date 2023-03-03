@@ -35,11 +35,13 @@ local _, xVermin = ...
 
 local bt = CreateFrame('BUTTON', 'BehindTarget')
 local indicator = false
+xAOErotation = indicator
 
 bt:SetScript(
 	'OnClick',
 	function(self, event)
 		indicator = not indicator
+		xAOErotation = indicator
 		if indicator then
 			RotationFrame4:SetBackdropColor(0, 0, 1, 1)
 		else

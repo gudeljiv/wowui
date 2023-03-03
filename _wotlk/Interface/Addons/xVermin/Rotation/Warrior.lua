@@ -107,6 +107,18 @@ RotationTextureFrame2.texture:SetPoint('CENTER')
 RotationTextureFrame2.texture:SetTexture(GetSpellTexture(78))
 RotationTextureFrame2:Hide()
 
+local RotationTextureFrame3 = CreateFrame('Frame', 'RotationTextureFrame3', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
+RotationTextureFrame3:SetSize(30, 30)
+RotationTextureFrame3:SetPoint('TOPLEFT', 600, 40)
+RotationTextureFrame3:SetScale(0.4)
+RotationTextureFrame3:CreateBeautyBorder(8)
+RotationTextureFrame3:SetClampedToScreen(true)
+RotationTextureFrame3.texture = RotationTextureFrame3:CreateTexture(nil, 'BACKGROUND')
+RotationTextureFrame3.texture:SetSize(RotationTextureFrame3:GetSize())
+RotationTextureFrame3.texture:SetPoint('CENTER')
+RotationTextureFrame3.texture:SetTexture(GetSpellTexture(78))
+RotationTextureFrame3:Hide()
+
 local data = {}
 local skills = {}
 skills['revenge'] = '#7bd079'
@@ -114,11 +126,11 @@ skills['revenge'] = '#7bd079'
 local RTF = function(xframe, xtype, xid)
 	local f = _G['RotationTextureFrame' .. xframe]
 
-	if xtype == 'GetSpellTexture' or 1 then
+	if xtype == 'GetSpellTexture' or xtype == 1 then
 		f.texture:SetTexture(GetSpellTexture(xid))
 	end
 
-	if xtype == 'GetItemIcon' or 2 then
+	if xtype == 'GetItemIcon' or xtype == 2 then
 		f.texture:SetTexture(GetItemIcon(xid))
 	end
 

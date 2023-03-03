@@ -22,7 +22,7 @@ END
 VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:35953
-/castsequence [combat] reset=combat item:33447
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:35953
@@ -31,7 +31,7 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000025 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:33447
+/use item:0
 END
 VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 #showtooltip Prowl
@@ -50,11 +50,11 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000021 "TEST" "134400"
-/run xRTF(1,"GetSpellTexture",19801)
-/run RotationTextureFrame2.texture:SetTexture(GetSpellTexture(19801))
-/run RotationTextureFrame2:Show()
-/run local get_texture = loadstring("GetSpellTexture")
-/run print(get_texture(19801))
+/run xRTF(1,1,51411)
+/run xRTF(2,1,51411)
+/run xRTF(3,1,51411)
+/run RotationTextureFrame3:ClearAllPoints()
+/run RotationTextureFrame3:SetPoint('TOPLEFT', 600, 40)
 END
 VER 3 0000000000000020 "TSMDestroy" "INV_Misc_Flower_01"
 /tsm destroy
