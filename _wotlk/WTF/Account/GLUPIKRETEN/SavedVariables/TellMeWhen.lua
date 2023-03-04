@@ -8699,7 +8699,7 @@ TellMeWhenDB = {
 								}, -- [4]
 								{
 									["Type"] = "LUA",
-									["Name"] = "xPestilence()",
+									["Name"] = "xPestilenceAOE()",
 									["AndOr"] = "OR",
 								}, -- [5]
 								["n"] = 5,

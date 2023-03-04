@@ -1,6 +1,6 @@
 local _, xVermin = ...
 
-local function CheckDebuff(d, unit)
+local CheckDebuff = function(d, unit)
 	for i = 1, 40 do
 		local debuff = UnitDebuff(unit, i)
 		if debuff then
@@ -13,7 +13,7 @@ local function CheckDebuff(d, unit)
 	end
 end
 
-local function CheckBuff(d, unit)
+local CheckBuff = function(d, unit)
 	for i = 1, 40 do
 		local buff = UnitBuff(unit, i)
 		if buff then

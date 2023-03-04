@@ -89,8 +89,7 @@ Rotation/_Core.lua
 Rotation/_Frames.lua
 Rotation/AOE.lua
 Rotation/BehindTarget.lua
-Rotation/Pestilence.lua
-Rotation/SwingTimer.lua
+Rotation/DeathKnight.lua
 Rotation/Warrior.lua
 
 
