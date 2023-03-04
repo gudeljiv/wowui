@@ -1,6 +1,5 @@
 
 __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
-	["autoSell"] = true,
 	["exclusions"] = {
 		["40058"] = true,
 		["40029"] = true,

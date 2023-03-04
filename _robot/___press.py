@@ -11,7 +11,7 @@ import numpy
 import math
 import pyperclip
 
-if(os.name == "posix"):
+if (os.name == "posix"):
     from AppKit import NSScreen
     from AppKit import NSWorkspace
 else:
@@ -61,6 +61,6 @@ with keyboard.Listener(on_press=on_press) as listener:
 
             time.sleep(random.uniform(0, 1))
             if not pause:
-                print(pyautogui.position())
-                pyautogui.click(2580, 625)
+                # print(pyautogui.position())
+                # pyautogui.click(2580, 625)
                 pyautogui.hotkey("x")
