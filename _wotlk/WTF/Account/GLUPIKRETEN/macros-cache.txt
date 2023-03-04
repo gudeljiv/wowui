@@ -50,11 +50,8 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000021 "TEST" "134400"
-/run xRTF(1,1,51411)
-/run xRTF(2,1,51411)
-/run xRTF(3,1,51411)
-/run RotationTextureFrame3:ClearAllPoints()
-/run RotationTextureFrame3:SetPoint('TOPLEFT', 600, 40)
+/run NEXT_ACTION_TEXT_FRAME:ClearAllPoints()
+/run NEXT_ACTION_TEXT_FRAME:SetPoint('CENTER', UIParent, 'CENTER', 0, 10)
 END
 VER 3 0000000000000020 "TSMDestroy" "INV_Misc_Flower_01"
 /tsm destroy

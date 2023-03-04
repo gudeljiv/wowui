@@ -58,7 +58,7 @@ Bagnon_Sets = {
 			["hiddenRules"] = {
 			},
 			["spacing"] = 3,
-			["bagBreak"] = false,
+			["y"] = -266.4677734375,
 			["x"] = -389.82421875,
 			["search"] = true,
 			["broker"] = false,
@@ -70,7 +70,7 @@ Bagnon_Sets = {
 				0, -- [3]
 				0.7400000095367432, -- [4]
 			},
-			["y"] = -266.4677734375,
+			["bagBreak"] = false,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -196,7 +196,7 @@ Bagnon_Sets = {
 				1, -- [4]
 			},
 			["bagBreak"] = false,
-			["x"] = 294.6020812988281,
+			["x"] = 294.6021118164063,
 			["search"] = true,
 			["broker"] = false,
 			["y"] = -291.958251953125,

@@ -51849,13 +51849,13 @@ WeakAurasOptionsSaved = {
 	["needsRebuild"] = false,
 	["version"] = "5.3.7",
 	["lockPositions"] = false,
-	["spellCacheStrings"] = true,
 	["spellCacheAchivements"] = true,
 	["frame"] = {
-		["xOffset"] = 1175.380187988281,
-		["yOffset"] = 1339.333740234375,
+		["xOffset"] = 1028.713317871094,
+		["yOffset"] = 1324.730590820313,
 		["height"] = 1208.095581054688,
 		["width"] = 1894.379760742188,
 	},
+	["spellCacheStrings"] = true,
 	["build"] = "48340",
 }
