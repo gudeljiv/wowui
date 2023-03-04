@@ -1,7 +1,7 @@
 from _resources import skills
 from _resources import color
 from _resources import monitor_settings
-from __ctypes import KeyPress as cKeyPress
+
 
 import time
 import _thread
@@ -21,9 +21,11 @@ import random
 if os.name == "posix":
     from AppKit import NSScreen
     from AppKit import NSWorkspace
+    from _resources import keyCodeMap_OSX
 else:
     import win32gui
     from win32api import GetSystemMetrics
+    from __ctypes import KeyPress as cKeyPress
 
 
 from pynput import keyboard
@@ -184,6 +186,7 @@ def print_debug(ability, skill, score):
 
 
 def main_rotation(main_skill, main_abilities):
+    global pause
     try:
         for skill in skills[wow_class] + skills["healing"] + skills["globals"]:
             for ability in main_abilities:
@@ -195,20 +198,31 @@ def main_rotation(main_skill, main_abilities):
                                 print_debug(ability, skill, score)
 
                             if "modifier" in skill.keys():
-                                cKeyPress(skill["key"], skill["modifier"])
+                                if os.name == "posix":
+                                    pyautogui.hotkey(keyCodeMap_OSX[skill["modifier"].upper()],  skill["key"])
+                                else:
+                                    cKeyPress(skill["key"], skill["modifier"])
                                 # keybrd.press_and_release(skill["modifier"] + "+" + skill["key"])
                                 # pyautogui.hotkey(skill["modifier"],  skill["key"])
                             else:
-                                cKeyPress(skill["key"])
+                                if os.name == "posix":
+                                    pyautogui.hotkey(skill["key"])
+                                else:
+                                    cKeyPress(skill["key"])
                                 # keybrd.press_and_release(skill["key"])
                                 # pyautogui.hotkey(skill["key"])
-                    except:
+                    except Exception as e:
+                        print(e)
                         print("score, diff not found for main ability", ability, skill["name"], datetime.now().strftime("%H:%M:%S"))
-    except:
+                        pause = True
+    except Exception as e:
+        print(e)
         print("error skill loop", datetime.now().strftime("%H:%M:%S"))
+        pause = True
 
 
 def secondary_rotation(secondary_skill, secondary_abilities):
+    global pause
     try:
         if skills["offgcd"] and skills["offgcd"][wow_class]:
             for skill in skills["offgcd"][wow_class]:
@@ -221,17 +235,27 @@ def secondary_rotation(secondary_skill, secondary_abilities):
                                     print_debug(ability, skill, score)
 
                                 if "modifier" in skill.keys():
-                                    cKeyPress(skill["key"], skill["modifier"])
+                                    if os.name == "posix":
+                                        pyautogui.hotkey(keyCodeMap_OSX[skill["modifier"].upper()],  skill["key"])
+                                    else:
+                                        cKeyPress(skill["key"], skill["modifier"])
                                     # keybrd.press_and_release(skill["modifier"] + "+" + skill["key"])
                                     # pyautogui.hotkey(skill["modifier"],  skill["key"])
                                 else:
-                                    cKeyPress(skill["key"])
+                                    if os.name == "posix":
+                                        pyautogui.hotkey(skill["key"])
+                                    else:
+                                        cKeyPress(skill["key"])
                                     # keybrd.press_and_release(skill["key"])
                                     # pyautogui.hotkey(skill["key"])
-                        except:
+                        except Exception as e:
+                            print(e)
                             print("score, diff not found for offgcd", ability, skill["name"], datetime.now().strftime("%H:%M:%S"))
-    except:
+                            pause = True
+    except Exception as e:
+        print(e)
         print("offgcd error missing class --> ", wow_class, datetime.now().strftime("%H:%M:%S"))
+        pause = True
 
 
 # load skills for default class -- warrior

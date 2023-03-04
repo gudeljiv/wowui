@@ -127,7 +127,7 @@ skills["hunter"] = [
 
 skills["druid"] = [
     {"name": "swipe", "type": "GetSpellTexture", "id": 50256, "key": "2"},
-    {"name": "demoralizing roar", "type": "GetSpellTexture", "id": 99, "key": "3", "modifier": "lalt"},
+    {"name": "demoralizing roar", "type": "GetSpellTexture", "id": 99, "key": "8"},
     {"name": "claw", "type": "GetSpellTexture", "id": 1082, "key": "1"},
     {"name": "shred", "type": "GetSpellTexture", "id": 5221, "key": "8"},
     {"name": "rip", "type": "GetSpellTexture", "id": 1079, "key": "5"},
@@ -136,7 +136,7 @@ skills["druid"] = [
     {"name": "ferocious bite", "type": "GetSpellTexture", "id": 22568, "key": "4"},
     {"name": "tiger's fury", "type": "GetSpellTexture", "id": 5217, "key": "6"},
     {"name": "barkskin", "type": "GetSpellTexture", "id": 22812, "key": "g"},
-    {"name": "mangle", "type": "GetSpellTexture", "id": 33917, "key": "f2", "modifier": "lcontrol"},
+    {"name": "mangle", "type": "GetSpellTexture", "id": 33917, "key": "9"},
     {"name": "survival instincts", "type": "GetSpellTexture", "id": 61336, "key": "d", "modifier": "lalt"},
     {"name": "lacerate", "type": "GetSpellTexture", "id": 33745, "key": "3"},
     {"name": "berserk", "type": "GetSpellTexture", "id": 50334, "key": "r", "modifier": "lalt"},
@@ -401,4 +401,10 @@ keyCodeMap = {
     "APPS": "0xDD",
     "POWER": "0xDE",
     "SLEEP": "0xDF"
+}
+
+keyCodeMap_OSX = {
+    "LCONTROL": "ctrl",
+    "LALT": "alt",
+    "LSHIFT": "shift"
 }
