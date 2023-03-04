@@ -240,8 +240,7 @@ monitor_settings["2560"] = {
     "p_combat_left": 26,
     "p_interrupt_left": 37,
     "p_behind_left": 47,
-    "p_clss_left": 60,
-    "p_aoe_left": 254,
+    "p_clss_left": 60
 }
 monitor_settings["3072"] = {
     "x": 12,
@@ -252,7 +251,7 @@ monitor_settings["3072"] = {
     "p_combat_left": 40,
     "p_interrupt_left": 54,
     "p_behind_left": 64,
-    "p_clss_left": 77,
+    "p_clss_left": 77
 }
 monitor_settings["2048.0"] = {
     "x": 8,
@@ -260,11 +259,10 @@ monitor_settings["2048.0"] = {
     "c_width": 5,
     "c_height": 5,
     "p_offgcd_left": 13,
-    "p_aoe_left": 160,
     "p_combat_left": 24,
     "p_interrupt_left": 33,
     "p_behind_left": 43,
-    "p_clss_left": 52,
+    "p_clss_left": 52
 }
 monitor_settings["1440.0"] = {
     "x": 5,
@@ -275,7 +273,7 @@ monitor_settings["1440.0"] = {
     "p_combat_left": 17,
     "p_interrupt_left": 24,
     "p_behind_left": 31,
-    "p_clss_left": 37,
+    "p_clss_left": 37
 }
 
 
