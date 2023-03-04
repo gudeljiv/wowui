@@ -1,6 +1,3 @@
-VER 3 0000000000000013 " " "132130"
-/click BehindTarget
-END
 VER 3 0000000000000026 " " "134400"
 #showtooltip item:36912
 /2 WTB Saronite Ore 24g 
@@ -8,6 +5,9 @@ END
 VER 3 000000000000000E " " "136106"
 /inspect
 /run SortBags()
+END
+VER 3 0000000000000013 " " "132130"
+/click BehindTarget
 END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
@@ -50,11 +50,11 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000021 "TEST" "134400"
-/run xRTF(1,"GetSpellTexture",19801)
-/run RotationTextureFrame2.texture:SetTexture(GetSpellTexture(19801))
-/run RotationTextureFrame2:Show()
-/run local get_texture = loadstring("GetSpellTexture")
-/run print(get_texture(19801))
+/run xRTF(1,1,51411)
+/run xRTF(2,1,51411)
+/run xRTF(3,1,51411)
+/run RotationTextureFrame3:ClearAllPoints()
+/run RotationTextureFrame3:SetPoint('TOPLEFT', 600, 40)
 END
 VER 3 0000000000000020 "TSMDestroy" "INV_Misc_Flower_01"
 /tsm destroy

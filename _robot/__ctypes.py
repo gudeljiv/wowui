@@ -73,6 +73,5 @@ def KeyPress(key, modifier=False):
 
     m and PressKey(m)
     PressKey(key)
-    time.sleep(0.05)
     ReleaseKey(key)
     m and ReleaseKey(m)

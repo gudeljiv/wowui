@@ -11,6 +11,9 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 		["39905"] = true,
 		["19700"] = true,
 	},
+	["minimapIcon"] = {
+		["hide"] = true,
+	},
 	["inclusions"] = {
 		["19698"] = true,
 		["39953"] = true,
@@ -61,8 +64,5 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 		["40043"] = true,
 		["41450"] = true,
 		["40009"] = true,
-	},
-	["minimapIcon"] = {
-		["hide"] = true,
 	},
 }

@@ -121,10 +121,28 @@ RotationTextureFrame3:Hide()
 
 local data = {}
 local skills = {}
+local skill = {}
 skills['revenge'] = '#7bd079'
+
+skills['HOW'] = 57623
+skills['IT'] = 49909
+skills['PS'] = 49921
+skills['FS'] = 55268
+skills['HB'] = 51411
+skills['OB'] = 51425
+skills['PES'] = 50842
+skills['BS'] = 49930
+skills['BT_full'] = 45529
 
 local RTF = function(xframe, xtype, xid)
 	local f = _G['RotationTextureFrame' .. xframe]
+
+	if xid == 'clear' then
+		f:Hide()
+		return
+	end
+
+	xid = skills[xid] and skills[xid] or xid
 
 	if xtype == 'GetSpellTexture' or xtype == 1 then
 		f.texture:SetTexture(GetSpellTexture(xid))
