@@ -36,7 +36,7 @@ LBISSettings = {
 		["AfflictionWarlock"] = true,
 		["SubtletyRogue"] = true,
 	},
-	["SelectedSpec"] = "Death Knight: Frost",
+	["SelectedSpec"] = "Druid: Cat",
 	["minimap"] = {
 		["minimapPos"] = 180,
 		["hide"] = true,
@@ -48,10 +48,10 @@ LBISSettings = {
 	},
 	["ShowPriority"] = true,
 	["SelectedRank"] = "All",
-	["ShowCustom"] = false,
-	["SelectedSourceType"] = "All",
 	["PriorityList"] = {
 	},
-	["SelectedSlot"] = "Main Hand",
+	["SelectedSourceType"] = "All",
+	["SelectedSlot"] = "Trinket",
+	["ShowCustom"] = false,
 	["SelectedPhase"] = "All",
 }
