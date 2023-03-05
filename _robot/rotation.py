@@ -216,9 +216,7 @@ def print_debug(ability, skill, score):
 def main_rotation(main_skill, main_abilities):
     global pause
     try:
-        # for skill in skills[wow_class] + skills["healing"] + skills["globals"]:
         for key, ability in main_abilities.items():
-            # if ability == skill["name"]:
             try:
                 score = structural_similarity(ability["image"], main_skill, channel_axis=2)
                 if score*100 > 90:
@@ -230,15 +228,11 @@ def main_rotation(main_skill, main_abilities):
                             pyautogui.hotkey(keyCodeMap_OSX[ability["modifier"].upper()], ability["key"])
                         else:
                             cKeyPress(ability["key"], ability["modifier"])
-                        # keybrd.press_and_release(skill["modifier"] + "+" + skill["key"])
-                        # pyautogui.hotkey(skill["modifier"],  skill["key"])
                     else:
                         if os.name == "posix":
                             pyautogui.hotkey(ability["key"])
                         else:
                             cKeyPress(ability["key"])
-                        # keybrd.press_and_release(skill["key"])
-                        # pyautogui.hotkey(skill["key"])
             except Exception as e:
                 print(e)
                 print("score, diff not found for main ability", ability["name"], datetime.now().strftime("%H:%M:%S"))
@@ -253,9 +247,7 @@ def secondary_rotation(secondary_skill, secondary_abilities):
     global pause
     try:
         if skills["offgcd"] and skills["offgcd"][wow_class]:
-            # for skill in skills["offgcd"][wow_class]:
             for key, ability in secondary_abilities.items():
-                # if ability == skill["name"]:
                 try:
                     score = structural_similarity(ability["image"], secondary_skill, channel_axis=2)
                     if score*100 > 90:
@@ -264,18 +256,14 @@ def secondary_rotation(secondary_skill, secondary_abilities):
 
                         if "modifier" in ability.keys():
                             if os.name == "posix":
-                                pyautogui.hotkey(keyCodeMap_OSX[ability["modifier"].upper()],  ability["key"])
+                                pyautogui.hotkey(keyCodeMap_OSX[ability["modifier"].upper()], ability["key"])
                             else:
                                 cKeyPress(ability["key"], ability["modifier"])
-                            # keybrd.press_and_release(skill["modifier"] + "+" + skill["key"])
-                            # pyautogui.hotkey(skill["modifier"],  skill["key"])
                         else:
                             if os.name == "posix":
                                 pyautogui.hotkey(ability["key"])
                             else:
                                 cKeyPress(ability["key"])
-                            # keybrd.press_and_release(skill["key"])
-                            # pyautogui.hotkey(skill["key"])
                 except Exception as e:
                     print(e)
                     print("score, diff not found for offgcd", ability["name"], datetime.now().strftime("%H:%M:%S"))
@@ -348,6 +336,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                 secondary_abilities = load_skills_secondary(wow_class)
                 main_abilities = {**main_abilities, **healing, **global_skills}
                 wow_class_loaded = wow_class
+                pyautogui.hotkey(pause and "end" or "home")
 
 # actual rotation
             if not pause:

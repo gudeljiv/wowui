@@ -1,31 +1,5 @@
 local _, xVermin = ...
 
-local CheckDebuff = function(d, unit)
-	for i = 1, 40 do
-		local debuff = UnitDebuff(unit, i)
-		if debuff then
-			if debuff == d then
-				return false
-			else
-				return true
-			end
-		end
-	end
-end
-
-local CheckBuff = function(d, unit)
-	for i = 1, 40 do
-		local buff = UnitBuff(unit, i)
-		if buff then
-			if buff == d then
-				return false
-			else
-				return true
-			end
-		end
-	end
-end
-
 -- local function Show()
 -- 	if not InCombatLockdown() then return end
 

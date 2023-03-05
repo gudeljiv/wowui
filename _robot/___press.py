@@ -62,5 +62,10 @@ with keyboard.Listener(on_press=on_press) as listener:
             time.sleep(random.uniform(0, 1))
             if not pause:
                 # print(pyautogui.position())
-                # pyautogui.click(2580, 625)
+                pyautogui.click(2580, 625)
+                # time.sleep(0.1)
+                # pyautogui.click(350, 974)
+                # time.sleep(0.1)
+                # pyautogui.click(2525, 1990)
+                time.sleep(0.5)
                 pyautogui.hotkey("x")

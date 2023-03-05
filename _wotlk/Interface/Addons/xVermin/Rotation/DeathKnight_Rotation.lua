@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 local DKrot = function()
 	local lastAction = aura_env.nextAction
 	local timeNow = GetTime()
@@ -651,3 +653,132 @@ local DKrot = function()
 
 	xRTF(1, 1, aura_env.nextAction)
 end
+
+local GetNumDebuffs = function()
+	local a = 0
+	while UnitAura('target', a + 1, 'PLAYER|HARMFUL') do
+		a = a + 1
+	end
+	return a
+end
+local GetNumBuffs = function()
+	local a = 0
+	while UnitAura('player', a + 1, 'HELPFUL') do
+		a = a + 1
+	end
+	return a
+end
+
+local GCD = function()
+	local start, duration = GetSpellCooldown(61304)
+	gcd_when = start + duration
+
+	return gcd_when
+end
+
+local RuneCount = function()
+	local blood = 0
+	local frost = 0
+	local unholy = 0
+	local death = 0
+	for i = 1, 6 do
+		local runeType = GetRuneType(i)
+		local start, duration, runeReady = GetRuneCooldown(i)
+		if runeReady then
+			blood = runeType == 1 and blood + 1 or blood
+			frost = runeType == 3 and frost + 1 or frost
+			unholy = runeType == 2 and unholy + 1 or unholy
+			death = runeType == 4 and death + 1 or death
+		end
+	end
+
+	return blood, frost, unholy, death
+end
+xRuneCount = RuneCount
+
+local Filler = function(killing_machine, rime, horn_of_winter, strength_totem, unbreakable_armor, blood_tap, potion_of_speed, frost_fever, blood_plague)
+	local fill = ''
+
+	-- if aura_env.HoWTimer < 10 and not aura_env.totemDetected and aura_env.durationH <= 0 then
+	-- 	NA = 'HOW'
+	-- elseif aura_env.rime > 0.1 and aura_env.KM > 0.1 and UnitPower('player') < 121 then
+	-- 	NA = 'HB'
+	-- elseif aura_env.rime > 0.1 and aura_env.KM > 0.1 and UnitPower('player') >= aura_env.FSRP then
+	-- 	NA = 'FS'
+	-- elseif aura_env.rime > 0.1 then
+	-- 	aura_env.nextAction = 'HB'
+	-- elseif UnitPower('player') >= aura_env.FSRP then
+	-- 	aura_env.nextAction = 'FS'
+	-- elseif aura_env.durationH <= 0 then
+	-- 	NA = 'HOW'
+	-- end
+
+	return fill
+end
+
+local TrackBuffs = function()
+	local killing_machine = 0
+	local rime = 0
+	local horn_of_winter = 0
+	local strength_totem = false
+	local unbreakable_armor = 0
+	local blood_tap = 0
+	local potion_of_speed = 0
+	local frost_fever = 0
+	local blood_plague = 0
+
+	for i = 1, GetNumBuffs() do
+		local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura('player', i, 'HELPFUL')
+
+		if name == 'Horn of Winter' or id == 57330 or id == 57623 then
+			horn_of_winter = expireWhen - GetTime()
+		end
+		if name == 'Killing Machine' or id == 51124 then
+			killing_machine = expireWhen - GetTime()
+		end
+		if name == 'Freezing Fog' or id == 59052 then
+			rime = expireWhen - GetTime()
+		end
+		if name == 'Strength of Earth' or id == 58646 or id == 10441 or id == 25362 or id == 25527 or id == 57621 then
+			strength_totem = true
+		end
+		if name == 'Unbreakable Armor' or id == 51271 then
+			unbreakable_armor = expireWhen - GetTime()
+		end
+		if name == 'Blood Tap' or id == 45529 then
+			blood_tap = expireWhen - GetTime()
+		end
+		if name == 'Speed' or id == 53908 then
+			potion_of_speed = expireWhen - GetTime()
+		end
+	end
+
+	for i = 1, GetNumDebuffs() do
+		local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura('target', i, 'PLAYER|HARMFUL')
+
+		if name == 'Frost Fever' then
+			frost_fever = expireWhen - GetTime()
+		end
+		if name == 'Blood Plague' then
+			blood_plague = expireWhen - GetTime()
+		end
+	end
+
+	return killing_machine, rime, horn_of_winter, strength_totem, unbreakable_armor, blood_tap, potion_of_speed, frost_fever, blood_plague
+end
+
+local Rotation = function()
+	if not UnitExists('target') then
+		return false
+	end
+
+	local blood, frost, unholy, death = RuneCount()
+	local killing_machine, rime, horn_of_winter, strength_totem, unbreakable_armor, blood_tap, potion_of_speed, frost_fever, blood_plague = TrackBuffs()
+	local fill = Filler(killing_machine, rime, horn_of_winter, strength_totem, unbreakable_armor, blood_tap, potion_of_speed, frost_fever, blood_plague)
+	local ff, ps = 0, 0
+	local next_action
+
+	print(blood, frost, unholy, death, killing_machine, rime, horn_of_winter, strength_totem, unbreakable_armor, blood_tap, potion_of_speed, frost_fever, blood_plague)
+end
+
+-- UIParent:HookScript('OnUpdate', Rotation)

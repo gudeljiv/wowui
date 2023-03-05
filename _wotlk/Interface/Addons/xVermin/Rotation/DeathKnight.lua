@@ -74,26 +74,6 @@ xVermin.PestilenceAOE = function(number_of_nameplates)
 end
 xPestilenceAOE = xVermin.PestilenceAOE
 
-xVermin.RuneCount = function()
-	local blood = 0
-	local frost = 0
-	local unholy = 0
-	local death = 0
-	for i = 1, 6 do
-		local runeType = GetRuneType(i)
-		local start, duration, runeReady = GetRuneCooldown(i)
-		if runeReady then
-			blood = runeType == 1 and blood + 1 or blood
-			frost = runeType == 3 and frost + 1 or frost
-			unholy = runeType == 2 and unholy + 1 or unholy
-			death = runeType == 4 and death + 1 or death
-		end
-	end
-
-	return blood, frost, unholy, death
-end
-xRuneCount = xVermin.RuneCount
-
 xVermin.minRuneCooldown = function()
 	local cd = InCombatLockdown() and 7.5 or 10
 
@@ -149,7 +129,7 @@ xVermin.PestilenceSS = function()
 		end
 	end
 
-	if debuff_duration < cd - grace and debuff_duration > tmin then
+	if debuff_duration ~= 30 and debuff_duration < cd - grace and debuff_duration > tmin then
 		return true
 	else
 		return false
