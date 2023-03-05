@@ -20,7 +20,7 @@ skills["offgcd"]["warrior"] = [
     {"name": "cleave", "type": "GetSpellTexture", "id": 845, "key": "3"},
     {"name": "shield wall", "type": "GetSpellTexture", "id": 871, "key": "e", "modifier": "lalt"},
     {"name": "spell reflection", "type": "GetSpellTexture", "id": 23920, "key": "v"},
-    {"name": "shield block", "type": "GetSpellTexture", "id": 2565, "key": "f4", "modifier": "lcontrol"},
+    {"name": "shield block", "type": "GetSpellTexture", "id": 2565, "key": "4", "modifier": "lshift"},
     {"name": "last stand", "type": "GetSpellTexture", "id": 12975, "key": "t", "modifier": "lshift"},
     {"name": "battlemaster's resolve", "type": "GetItemIcon", "id": 41589, "key": "1", "modifier": "lalt"},
     {"name": "blood fury", "type": "GetSpellTexture", "id": 20572, "key": "8"},
@@ -53,7 +53,7 @@ skills["offgcd"]["hunter"] = [
 ]
 
 skills["offgcd"]["rogue"] = [
-    {"name": "pick pocket", "type": "GetSpellTexture", "id": 921, "key": "f5", "modifier": "lcontrol"},
+    {"name": "pick pocket", "type": "GetSpellTexture", "id": 921, "key": "5", "modifier": "lshift"},
 ]
 
 skills["offgcd"]["paladin"] = [
@@ -66,13 +66,13 @@ skills["offgcd"]["shaman"] = []
 
 
 skills["warrior"] = [
-    {"name": "bloodthirst", "type": "GetSpellTexture", "id": 23881, "key": "f1", "modifier": "lcontrol"},
-    {"name": "mortal strike", "type": "GetSpellTexture", "id": 12294, "key": "f1", "modifier": "lcontrol"},
-    {"name": "revenge", "type": "GetSpellTexture", "id": 6572, "key": "f3", "modifier": "lcontrol"},
-    {"name": "devastate", "type": "GetSpellTexture", "id": 20243, "key": "f2", "modifier": "lcontrol"},
-    {"name": "slam", "type": "GetSpellTexture", "id": 47475, "key": "f2", "modifier": "lcontrol"},
-    {"name": "berserker rage", "type": "GetSpellTexture", "id": 18499, "key": "f4", "modifier": "lcontrol"},
-    {"name": "enraged regeneration", "type": "GetSpellTexture", "id": 55694, "key": "f5", "modifier": "lcontrol"},
+    {"name": "bloodthirst", "type": "GetSpellTexture", "id": 23881, "key": "1", "modifier": "lshift"},
+    {"name": "mortal strike", "type": "GetSpellTexture", "id": 12294, "key": "1", "modifier": "lshift"},
+    {"name": "revenge", "type": "GetSpellTexture", "id": 6572, "key": "3", "modifier": "lshift"},
+    {"name": "devastate", "type": "GetSpellTexture", "id": 20243, "key": "2", "modifier": "lshift"},
+    {"name": "slam", "type": "GetSpellTexture", "id": 47475, "key": "2", "modifier": "lshift"},
+    {"name": "berserker rage", "type": "GetSpellTexture", "id": 18499, "key": "4", "modifier": "lshift"},
+    {"name": "enraged regeneration", "type": "GetSpellTexture", "id": 55694, "key": "5", "modifier": "lshift"},
     {"name": "rend", "type": "GetSpellTexture", "id": 772, "key": "r", "modifier": "lshift"},
     {"name": "victory rush", "type": "GetSpellTexture", "id": 34428, "key": "e", "modifier": "lshift"},
     {"name": "disarm", "type": "GetSpellTexture", "id": 676, "key": "e", "modifier": "lshift"},
@@ -104,10 +104,10 @@ skills["warlock"] = [
 skills["hunter"] = [
     {"name": "concussive shot", "type": "GetSpellTexture", "id": 5116, "key": "1"},
     {"name": "steady shot", "type": "GetSpellTexture", "id": 34120, "key": "2"},
-    {"name": "serpent sting", "type": "GetSpellTexture", "id": 1978, "key": "f3", "modifier": "lcontrol"},
-    {"name": "viper sting", "type": "GetSpellTexture", "id": 3034, "key": "f4", "modifier": "lcontrol"},
-    {"name": "multi-shot", "type": "GetSpellTexture", "id": 2643, "key": "f1", "modifier": "lcontrol"},
-    {"name": "arcane shot", "type": "GetSpellTexture", "id": 3044, "key": "f2", "modifier": "lcontrol"},
+    {"name": "serpent sting", "type": "GetSpellTexture", "id": 1978, "key": "3", "modifier": "lshift"},
+    {"name": "viper sting", "type": "GetSpellTexture", "id": 3034, "key": "4", "modifier": "lshift"},
+    {"name": "multi-shot", "type": "GetSpellTexture", "id": 2643, "key": "1", "modifier": "lshift"},
+    {"name": "arcane shot", "type": "GetSpellTexture", "id": 3044, "key": "2", "modifier": "lshift"},
     {"name": "chimera shot", "type": "GetSpellTexture", "id": 53209, "key": "3"},
     {"name": "aimed shot", "type": "GetSpellTexture", "id": 19434, "key": "6"},
     {"name": "deterrence", "type": "GetSpellTexture", "id": 19263, "key": "t", "modifier": "lshift"},
@@ -127,7 +127,7 @@ skills["hunter"] = [
 
 skills["druid"] = [
     {"name": "swipe", "type": "GetSpellTexture", "id": 50256, "key": "2"},
-    {"name": "demoralizing roar", "type": "GetSpellTexture", "id": 99, "key": "3", "modifier": "lalt"},
+    {"name": "demoralizing roar", "type": "GetSpellTexture", "id": 99, "key": "8"},
     {"name": "claw", "type": "GetSpellTexture", "id": 1082, "key": "1"},
     {"name": "shred", "type": "GetSpellTexture", "id": 5221, "key": "8"},
     {"name": "rip", "type": "GetSpellTexture", "id": 1079, "key": "5"},
@@ -136,7 +136,7 @@ skills["druid"] = [
     {"name": "ferocious bite", "type": "GetSpellTexture", "id": 22568, "key": "4"},
     {"name": "tiger's fury", "type": "GetSpellTexture", "id": 5217, "key": "6"},
     {"name": "barkskin", "type": "GetSpellTexture", "id": 22812, "key": "g"},
-    {"name": "mangle", "type": "GetSpellTexture", "id": 33917, "key": "f2", "modifier": "lcontrol"},
+    {"name": "mangle", "type": "GetSpellTexture", "id": 33917, "key": "9"},
     {"name": "survival instincts", "type": "GetSpellTexture", "id": 61336, "key": "d", "modifier": "lalt"},
     {"name": "lacerate", "type": "GetSpellTexture", "id": 33745, "key": "3"},
     {"name": "berserk", "type": "GetSpellTexture", "id": 50334, "key": "r", "modifier": "lalt"},
@@ -151,8 +151,8 @@ skills["death knight"] = [
     {"name": "plague strike", "type": "GetSpellTexture", "id": 45462, "key": "1"},
     {"name": "icy touch", "type": "GetSpellTexture", "id": 45477, "key": "2"},
     {"name": "chains of ice", "type": "GetSpellTexture", "id": 45524, "key": "v"},
-    {"name": "death strike", "type": "GetSpellTexture", "id": 45463, "key": "f2", "modifier": "lcontrol"},
-    {"name": "heart strike", "type": "GetSpellTexture", "id": 55050, "key": "f1", "modifier": "lcontrol"},
+    {"name": "death strike", "type": "GetSpellTexture", "id": 45463, "key": "2", "modifier": "lshift"},
+    {"name": "heart strike", "type": "GetSpellTexture", "id": 55050, "key": "1", "modifier": "lshift"},
     {"name": "death coil", "type": "GetSpellTexture", "id": 6789, "key": "4"},
     {"name": "blood boil", "type": "GetSpellTexture", "id": 48721, "key": "e"},
     {"name": "horn of winter", "type": "GetSpellTexture", "id": 57330, "key": "f10"},
@@ -162,18 +162,18 @@ skills["death knight"] = [
     {"name": "obliterate", "type": "GetSpellTexture", "id": 51424, "key": "5"},
     {"name": "frost strike", "type": "GetSpellTexture", "id": 51419, "key": "6"},
     {"name": "unbreakable armor", "type": "GetSpellTexture", "id": 51271, "key": "h"},
-    {"name": "blood strike", "type": "GetSpellTexture", "id": 49929, "key": "f5", "modifier": "lcontrol"},
+    {"name": "blood strike", "type": "GetSpellTexture", "id": 49929, "key": "5", "modifier": "lshift"},
     {"name": "mark of blood", "type": "GetSpellTexture", "id": 49005, "key": "k"},
     {"name": "raise dead", "type": "GetSpellTexture", "id": 46584, "key": "f", "modifier": "lalt"},
 ]
 
 skills["paladin"] = [
-    {"name": "righteous fury", "type": "GetSpellTexture", "id": 25780, "key": "f5", "modifier": "lcontrol"},
+    {"name": "righteous fury", "type": "GetSpellTexture", "id": 25780, "key": "5", "modifier": "lshift"},
     {"name": "divine storm", "type": "GetSpellTexture", "id": 53385, "key": "4"},
     {"name": "crusader strike", "type": "GetSpellTexture", "id": 35395, "key": "5"},
-    {"name": "exorcism", "type": "GetSpellTexture", "id": 879, "key": "f3", "modifier": "lcontrol"},
-    {"name": "judgement of light", "type": "GetSpellTexture", "id": 20271, "key": "f1", "modifier": "lcontrol"},
-    {"name": "judgement of wisdom", "type": "GetSpellTexture", "id": 53408, "key": "f2", "modifier": "lcontrol"},
+    {"name": "exorcism", "type": "GetSpellTexture", "id": 879, "key": "3", "modifier": "lshift"},
+    {"name": "judgement of light", "type": "GetSpellTexture", "id": 20271, "key": "1", "modifier": "lshift"},
+    {"name": "judgement of wisdom", "type": "GetSpellTexture", "id": 53408, "key": "2", "modifier": "lshift"},
     {"name": "lay on hands", "type": "GetSpellTexture", "id": 633, "key": "k"},
     {"name": "purify", "type": "GetSpellTexture", "id": 1152, "key": "t"},
     {"name": "cleanse", "type": "GetSpellTexture", "id": 4987, "key": "t"},
@@ -182,19 +182,19 @@ skills["paladin"] = [
     # {"name": "seal of vengeance", "type": "GetSpellTexture", "id": 31801, "key": "d", "modifier": "lalt"},
     # {"name": "seal of righteousness", "type": "GetSpellTexture", "id": 21084, "key": "d", "modifier": "lalt"},
     {"name": "holy shield", "type": "GetSpellTexture", "id": 20925, "key": "3"},
-    {"name": "avengers shield", "type": "GetSpellTexture", "id": 31935, "key": "f4", "modifier": "lcontrol"},
+    {"name": "avengers shield", "type": "GetSpellTexture", "id": 31935, "key": "4", "modifier": "lshift"},
     {"name": "hammer of the righteous", "type": "GetSpellTexture", "id": 53595, "key": "4"},
     {"name": "shield of righteousness", "type": "GetSpellTexture", "id": 61411, "key": "5"},
     {"name": "holy wrath", "type": "GetSpellTexture", "id": 48817, "key": "7"},
     {"name": "hammer of wrath", "type": "GetSpellTexture", "id": 24275, "key": "8"},
-    {"name": "beacon of light", "type": "GetSpellTexture", "id": 53563, "key": "f5", "modifier": "lcontrol"},
+    {"name": "beacon of light", "type": "GetSpellTexture", "id": 53563, "key": "5", "modifier": "lshift"},
     {"name": "divine sacrifice", "type": "GetSpellTexture", "id": 64205, "key": "6"},
     {"name": "holy light", "type": "GetSpellTexture", "id": 27136, "key": "e"},
     {"name": "divine plea", "type": "GetSpellTexture", "id": 54428, "modifier": "alt", "key": "e"},
 ]
 
 skills["rogue"] = [
-    {"name": "sinister strike", "type": "GetSpellTexture", "id": 1752, "key": "f1", "modifier": "lcontrol"},
+    {"name": "sinister strike", "type": "GetSpellTexture", "id": 1752, "key": "1", "modifier": "lshift"},
     {"name": "eviscerate", "type": "GetSpellTexture", "id": 2098, "key": "4"},
 ]
 
@@ -240,8 +240,7 @@ monitor_settings["2560"] = {
     "p_combat_left": 26,
     "p_interrupt_left": 37,
     "p_behind_left": 47,
-    "p_clss_left": 60,
-    "p_aoe_left": 254,
+    "p_clss_left": 60
 }
 monitor_settings["3072"] = {
     "x": 12,
@@ -252,7 +251,7 @@ monitor_settings["3072"] = {
     "p_combat_left": 40,
     "p_interrupt_left": 54,
     "p_behind_left": 64,
-    "p_clss_left": 77,
+    "p_clss_left": 77
 }
 monitor_settings["2048.0"] = {
     "x": 8,
@@ -260,11 +259,10 @@ monitor_settings["2048.0"] = {
     "c_width": 5,
     "c_height": 5,
     "p_offgcd_left": 13,
-    "p_aoe_left": 160,
     "p_combat_left": 24,
     "p_interrupt_left": 33,
     "p_behind_left": 43,
-    "p_clss_left": 52,
+    "p_clss_left": 52
 }
 monitor_settings["1440.0"] = {
     "x": 5,
@@ -275,7 +273,7 @@ monitor_settings["1440.0"] = {
     "p_combat_left": 17,
     "p_interrupt_left": 24,
     "p_behind_left": 31,
-    "p_clss_left": 37,
+    "p_clss_left": 37
 }
 
 
@@ -403,4 +401,10 @@ keyCodeMap = {
     "APPS": "0xDD",
     "POWER": "0xDE",
     "SLEEP": "0xDF"
+}
+
+keyCodeMap_OSX = {
+    "LCONTROL": "ctrl",
+    "LALT": "alt",
+    "LSHIFT": "shift"
 }

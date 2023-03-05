@@ -48,6 +48,31 @@ PallyPowerDB = {
 	},
 }
 PallyPower_Assignments = {
+	["Vermina"] = {
+		2, -- [1]
+		2, -- [2]
+		3, -- [3]
+		3, -- [4]
+		4, -- [5]
+		2, -- [6]
+		3, -- [7]
+		3, -- [8]
+		3, -- [9]
+		2, -- [10]
+		2, -- [11]
+	},
+	["Rinnerebirt"] = {
+		0, -- [1]
+		0, -- [2]
+		0, -- [3]
+		0, -- [4]
+		0, -- [5]
+		0, -- [6]
+		0, -- [7]
+		0, -- [8]
+		0, -- [9]
+		0, -- [10]
+	},
 	["Gamzy"] = {
 		0, -- [1]
 		0, -- [2]
@@ -72,47 +97,8 @@ PallyPower_Assignments = {
 		0, -- [9]
 		0, -- [10]
 	},
-	["Vermina"] = {
-		2, -- [1]
-		2, -- [2]
-		3, -- [3]
-		3, -- [4]
-		4, -- [5]
-		2, -- [6]
-		3, -- [7]
-		3, -- [8]
-		3, -- [9]
-		2, -- [10]
-		2, -- [11]
-	},
-	["Christinei"] = {
-		4, -- [1]
-		4, -- [2]
-		4, -- [3]
-		4, -- [4]
-		4, -- [5]
-		4, -- [6]
-		4, -- [7]
-		4, -- [8]
-		4, -- [9]
-		4, -- [10]
-	},
-	["Rinnerebirt"] = {
-		0, -- [1]
-		0, -- [2]
-		0, -- [3]
-		0, -- [4]
-		0, -- [5]
-		0, -- [6]
-		0, -- [7]
-		0, -- [8]
-		0, -- [9]
-		0, -- [10]
-	},
 }
 PallyPower_NormalAssignments = {
-	["Christinei"] = {
-	},
 }
 PallyPower_AuraAssignments = {
 	["Doradin"] = 0,
@@ -180,8 +166,8 @@ PallyPower_AuraAssignments = {
 	["Zoremi"] = 0,
 	["Zayebany"] = 0,
 	["Konseus"] = 0,
-	["Maximizer"] = 0,
 	["Buxn"] = 0,
+	["Maximizer"] = 0,
 	["Varex"] = 0,
 	["Naydess"] = 0,
 	["Meowwen"] = 0,
@@ -216,9 +202,9 @@ PallyPower_AuraAssignments = {
 	["Naryen"] = 0,
 	["Gamzy"] = 0,
 	["Veebz"] = 0,
-	["Badpaladinn"] = 0,
+	["Hugerocket"] = 0,
 	["Iteasy"] = 0,
-	["Supachad"] = 0,
+	["Houdyn"] = 0,
 	["Cloë"] = 0,
 	["Bublïnka"] = 0,
 	["Ipalyulol"] = 0,
@@ -230,12 +216,12 @@ PallyPower_AuraAssignments = {
 	["Izule"] = 0,
 	["Teddz"] = 0,
 	["Sertrolin"] = 0,
-	["Hugerocket"] = 0,
+	["Athonian"] = 0,
 	["Bloedoffer"] = 0,
 	["Deathnoot"] = 0,
-	["Bubblelove"] = 0,
-	["Houdyn"] = 0,
+	["Badpaladinn"] = 0,
 	["Maxthepala"] = 0,
+	["Supachad"] = 0,
 	["Prosec"] = 0,
 	["Lillstumpan"] = 3,
 	["Ikoras"] = 0,
@@ -245,9 +231,9 @@ PallyPower_AuraAssignments = {
 	["Tökfilkó"] = 0,
 	["Czarnuszy"] = 0,
 	["Palablynx"] = 0,
-	["Kalypsõ"] = 0,
-	["Yämi"] = 0,
 	["Veribig"] = 0,
+	["Yämi"] = 0,
+	["Kalypsõ"] = 0,
 	["Filifjonkman"] = 0,
 	["Zivvy"] = 0,
 	["Trylledame"] = 0,
@@ -307,7 +293,7 @@ PallyPower_AuraAssignments = {
 	["Brrazers"] = 0,
 	["Ðîvâ"] = 0,
 	["Wowax"] = 0,
-	["Athonian"] = 0,
+	["Bubblelove"] = 0,
 	["Gigapaladin"] = 0,
 	["Vyjebanahoe"] = 0,
 	["Árwén"] = 0,
