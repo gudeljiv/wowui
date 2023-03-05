@@ -132,11 +132,18 @@ def get_class(clss, color_distance):
 
 def load_skills_healing(wow_class):
     # load healing spells
-    healing = {}
+    healing = dict()
     try:
         for skill in skills["healing"]:
-            healing[skill["name"]] = cv2.imread(abilities_folder + "/" + "healing" + "/" + skill["name"] + " H.png")
-    except:
+            if not skill["name"] in healing:
+                healing[skill["name"]] = {}
+            healing[skill["name"]]["image"] = cv2.imread(abilities_folder + "/" + "healing" + "/" + skill["name"] + " H.png")
+            if "modifier" in skill.keys():
+                healing[skill["name"]]["modifier"] = skill["modifier"]
+            healing[skill["name"]]["key"] = skill["key"]
+            healing[skill["name"]]["name"] = skill["name"]
+    except Exception as e:
+        print(e)
         print("healing abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
 
     return healing
@@ -144,11 +151,18 @@ def load_skills_healing(wow_class):
 
 def load_skills_globals(wow_class):
     # load global kills
-    global_skills = {}
+    global_skills = dict()
     try:
         for skill in skills["globals"]:
-            global_skills[skill["name"]] = cv2.imread(abilities_folder + "/" + "globals" + "/" + skill["name"] + " G.png")
-    except:
+            if not skill["name"] in global_skills:
+                global_skills[skill["name"]] = {}
+            global_skills[skill["name"]]["image"] = cv2.imread(abilities_folder + "/" + "globals" + "/" + skill["name"] + " G.png")
+            if "modifier" in skill.keys():
+                global_skills[skill["name"]]["modifier"] = skill["modifier"]
+            global_skills[skill["name"]]["key"] = skill["key"]
+            global_skills[skill["name"]]["name"] = skill["name"]
+    except Exception as e:
+        print(e)
         print("global abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
 
     return global_skills
@@ -156,11 +170,18 @@ def load_skills_globals(wow_class):
 
 def load_skills_main(wow_class):
     # load main ability skills
-    main_abilities = {}
+    main_abilities = dict()
     try:
         for skill in skills[wow_class]:
-            main_abilities[skill["name"]] = cv2.imread(abilities_folder + "/" + wow_class + "/" + skill["name"] + " M.png")
-    except:
+            if not skill["name"] in main_abilities:
+                main_abilities[skill["name"]] = {}
+            main_abilities[skill["name"]]["image"] = cv2.imread(abilities_folder + "/" + wow_class + "/" + skill["name"] + " M.png")
+            if "modifier" in skill.keys():
+                main_abilities[skill["name"]]["modifier"] = skill["modifier"]
+            main_abilities[skill["name"]]["key"] = skill["key"]
+            main_abilities[skill["name"]]["name"] = skill["name"]
+    except Exception as e:
+        print(e)
         print("main abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
 
     return main_abilities
@@ -168,11 +189,18 @@ def load_skills_main(wow_class):
 
 def load_skills_secondary(wow_class):
     # load secondary ability skills
-    secondary_abilities = {}
+    secondary_abilities = dict()
     try:
         for skill in skills["offgcd"][wow_class]:
-            secondary_abilities[skill["name"]] = cv2.imread(abilities_folder + "/" + wow_class + "/" + skill["name"] + " O.png")
-    except:
+            if not skill["name"] in secondary_abilities:
+                secondary_abilities[skill["name"]] = {}
+            secondary_abilities[skill["name"]]["image"] = cv2.imread(abilities_folder + "/" + wow_class + "/" + skill["name"] + " O.png")
+            if "modifier" in skill.keys():
+                secondary_abilities[skill["name"]]["modifier"] = skill["modifier"]
+            secondary_abilities[skill["name"]]["key"] = skill["key"]
+            secondary_abilities[skill["name"]]["name"] = skill["name"]
+    except Exception as e:
+        print(e)
         print("offgcd abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
 
     return secondary_abilities
@@ -188,33 +216,33 @@ def print_debug(ability, skill, score):
 def main_rotation(main_skill, main_abilities):
     global pause
     try:
-        for skill in skills[wow_class] + skills["healing"] + skills["globals"]:
-            for ability in main_abilities:
-                if ability == skill["name"]:
-                    try:
-                        score = structural_similarity(main_abilities[ability], main_skill, channel_axis=2)
-                        if score*100 > 90:
-                            if dprint:
-                                print_debug(ability, skill, score)
+        # for skill in skills[wow_class] + skills["healing"] + skills["globals"]:
+        for key, ability in main_abilities.items():
+            # if ability == skill["name"]:
+            try:
+                score = structural_similarity(ability["image"], main_skill, channel_axis=2)
+                if score*100 > 90:
+                    if dprint:
+                        print_debug(ability["name"], score)
 
-                            if "modifier" in skill.keys():
-                                if os.name == "posix":
-                                    pyautogui.hotkey(keyCodeMap_OSX[skill["modifier"].upper()],  skill["key"])
-                                else:
-                                    cKeyPress(skill["key"], skill["modifier"])
-                                # keybrd.press_and_release(skill["modifier"] + "+" + skill["key"])
-                                # pyautogui.hotkey(skill["modifier"],  skill["key"])
-                            else:
-                                if os.name == "posix":
-                                    pyautogui.hotkey(skill["key"])
-                                else:
-                                    cKeyPress(skill["key"])
-                                # keybrd.press_and_release(skill["key"])
-                                # pyautogui.hotkey(skill["key"])
-                    except Exception as e:
-                        print(e)
-                        print("score, diff not found for main ability", ability, skill["name"], datetime.now().strftime("%H:%M:%S"))
-                        pause = True
+                    if "modifier" in ability.keys():
+                        if os.name == "posix":
+                            pyautogui.hotkey(keyCodeMap_OSX[ability["modifier"].upper()], ability["key"])
+                        else:
+                            cKeyPress(ability["key"], ability["modifier"])
+                        # keybrd.press_and_release(skill["modifier"] + "+" + skill["key"])
+                        # pyautogui.hotkey(skill["modifier"],  skill["key"])
+                    else:
+                        if os.name == "posix":
+                            pyautogui.hotkey(ability["key"])
+                        else:
+                            cKeyPress(ability["key"])
+                        # keybrd.press_and_release(skill["key"])
+                        # pyautogui.hotkey(skill["key"])
+            except Exception as e:
+                print(e)
+                print("score, diff not found for main ability", ability["name"], datetime.now().strftime("%H:%M:%S"))
+                pause = True
     except Exception as e:
         print(e)
         print("error skill loop", datetime.now().strftime("%H:%M:%S"))
@@ -225,33 +253,33 @@ def secondary_rotation(secondary_skill, secondary_abilities):
     global pause
     try:
         if skills["offgcd"] and skills["offgcd"][wow_class]:
-            for skill in skills["offgcd"][wow_class]:
-                for ability in secondary_abilities:
-                    if ability == skill["name"]:
-                        try:
-                            score = structural_similarity(secondary_abilities[ability], secondary_skill, channel_axis=2)
-                            if score*100 > 90:
-                                if dprint:
-                                    print_debug(ability, skill, score)
+            # for skill in skills["offgcd"][wow_class]:
+            for key, ability in secondary_abilities.items():
+                # if ability == skill["name"]:
+                try:
+                    score = structural_similarity(ability["image"], secondary_skill, channel_axis=2)
+                    if score*100 > 90:
+                        if dprint:
+                            print_debug(ability["name"], score)
 
-                                if "modifier" in skill.keys():
-                                    if os.name == "posix":
-                                        pyautogui.hotkey(keyCodeMap_OSX[skill["modifier"].upper()],  skill["key"])
-                                    else:
-                                        cKeyPress(skill["key"], skill["modifier"])
-                                    # keybrd.press_and_release(skill["modifier"] + "+" + skill["key"])
-                                    # pyautogui.hotkey(skill["modifier"],  skill["key"])
-                                else:
-                                    if os.name == "posix":
-                                        pyautogui.hotkey(skill["key"])
-                                    else:
-                                        cKeyPress(skill["key"])
-                                    # keybrd.press_and_release(skill["key"])
-                                    # pyautogui.hotkey(skill["key"])
-                        except Exception as e:
-                            print(e)
-                            print("score, diff not found for offgcd", ability, skill["name"], datetime.now().strftime("%H:%M:%S"))
-                            pause = True
+                        if "modifier" in ability.keys():
+                            if os.name == "posix":
+                                pyautogui.hotkey(keyCodeMap_OSX[ability["modifier"].upper()],  ability["key"])
+                            else:
+                                cKeyPress(ability["key"], ability["modifier"])
+                            # keybrd.press_and_release(skill["modifier"] + "+" + skill["key"])
+                            # pyautogui.hotkey(skill["modifier"],  skill["key"])
+                        else:
+                            if os.name == "posix":
+                                pyautogui.hotkey(ability["key"])
+                            else:
+                                cKeyPress(ability["key"])
+                            # keybrd.press_and_release(skill["key"])
+                            # pyautogui.hotkey(skill["key"])
+                except Exception as e:
+                    print(e)
+                    print("score, diff not found for offgcd", ability["name"], datetime.now().strftime("%H:%M:%S"))
+                    pause = True
     except Exception as e:
         print(e)
         print("offgcd error missing class --> ", wow_class, datetime.now().strftime("%H:%M:%S"))

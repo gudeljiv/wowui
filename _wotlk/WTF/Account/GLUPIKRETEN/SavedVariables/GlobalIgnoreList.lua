@@ -58,7 +58,7 @@ GlobalIgnoreDB = {
 		"[contains=WTS] or [contains=WTB]", -- [9]
 		"[nonlatin]", -- [10]
 	},
-	["trackChanges"] = true,
+	["autoTime"] = 600,
 	["autoCount"] = 3,
 	["delList"] = {
 		"Happens-Golemagg", -- [1]
@@ -122,10 +122,9 @@ GlobalIgnoreDB = {
 		{
 		}, -- [28]
 		{
-			"Moolatz-Golemagg@1", -- [1]
 		}, -- [29]
 	},
-	["autoUpdate"] = true,
+	["trackChanges"] = true,
 	["autoIgnore"] = true,
 	["factionList"] = {
 		"Horde", -- [1]
@@ -285,7 +284,7 @@ GlobalIgnoreDB = {
 	["asknote"] = true,
 	["skipParty"] = false,
 	["revision"] = 1,
-	["autoTime"] = 600,
+	["autoUpdate"] = true,
 	["samefaction"] = true,
 	["ignoreList"] = {
 		"Puntune-Golemagg", -- [1]

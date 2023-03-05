@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 9527,
+	["session"] = 9531,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\EasyFrames\\Modules\\Core.lua:119: attempt to index local 'frame' (a nil value)",

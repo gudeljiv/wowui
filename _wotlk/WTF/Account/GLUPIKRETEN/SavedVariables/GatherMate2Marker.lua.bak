@@ -1150,7 +1150,7 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[3990393000] = {
+				[4860588000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -1178,9 +1178,9 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4860588000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
+				[2960385000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
 				[2570613001] = {
 					["touched"] = false,
@@ -3130,9 +3130,9 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[2960385000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[3990393000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
 				[3460496000] = {
 					["touched"] = false,
@@ -3210,6 +3210,114 @@ GatherMate2MarkerDB = {
 		},
 		["Moolatz - Golemagg"] = {
 			["pinDB"] = {
+				[5710644000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[5720651000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[5720651001] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[5550645000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4850733000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4850733001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4710773000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5670660000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4540771000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5050736000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4660789001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4570792000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5680660000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4700773001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4660789000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4700772000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4540770000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5550644001] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4670790000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4560791000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5560646000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4860734000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5040735000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4700773000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[4550772000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[5550644000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
+				},
+				[4540770001] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
 			},
 		},
 		["Vermin - Golemagg"] = {

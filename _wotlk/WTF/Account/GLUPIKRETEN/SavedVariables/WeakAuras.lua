@@ -40,6 +40,17 @@ WeakAurasSaved = {
 	},
 	["editor_font_size"] = 12,
 	["lastArchiveClear"] = 1602609267,
+	["personalRessourceDisplayFrame"] = {
+		["xOffset"] = -422.8046555407566,
+		["yOffset"] = -497.8042091158466,
+	},
+	["lastUpgrade"] = 1674206280,
+	["bgtimetotsave"] = 0,
+	["editor_bracket_matching"] = true,
+	["unitscan GUI"] = {
+	},
+	["registered"] = {
+	},
 	["displays"] = {
 		["GF opt"] = {
 			["iconSource"] = -1,
@@ -68,8 +79,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "timed",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend",
@@ -84,7 +95,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "status",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "timed",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -311,17 +322,30 @@ WeakAurasSaved = {
 				["use_class"] = true,
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Dummy icons",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 132152,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "4mx49bfXnU2",
+			["xOffset"] = -11.571439743042,
+			["width"] = 21.857181549072,
+			["zoom"] = 0.15,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "GF opt",
 			["actions"] = {
 				["start"] = {
 				},
@@ -332,29 +356,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "4mx49bfXnU2",
-			["selfPoint"] = "CENTER",
-			["width"] = 21.857181549072,
-			["zoom"] = 0.15,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "GF opt",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -11.571439743042,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -364,16 +375,11 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "Skills",
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
@@ -443,8 +449,7 @@ WeakAurasSaved = {
 				},
 			},
 			["iconSource"] = -1,
-			["authorOptions"] = {
-			},
+			["xOffset"] = 0,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -452,7 +457,12 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["parent"] = "Skills",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["backgroundColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -561,20 +571,21 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desaturate"] = false,
-			["config"] = {
-			},
-			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
-			["regionType"] = "icon",
-			["xOffset"] = 0,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["smoothProgress"] = true,
+			["anchorFrameFrame"] = "PlayerFrame",
+			["regionType"] = "icon",
+			["authorOptions"] = {
+			},
+			["config"] = {
+			},
 			["icon_side"] = "RIGHT",
-			["zoom"] = 0.3,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["anchorFrameType"] = "SCREEN",
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
@@ -629,8 +640,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "timed",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend\n\n",
@@ -645,7 +656,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "status",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "timed",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -827,17 +838,30 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Dummy icons",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 237530,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "XaUN4(vya(Y",
+			["xOffset"] = 0,
+			["width"] = 45,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "SS",
 			["actions"] = {
 				["start"] = {
 				},
@@ -848,29 +872,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "XaUN4(vya(Y",
-			["selfPoint"] = "CENTER",
-			["width"] = 45,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "SS",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 0,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -903,8 +914,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "custom",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend",
@@ -919,7 +930,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "event",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -1101,17 +1112,30 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Burst frost combo",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 135372,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "TQPQKMJyQLp",
+			["xOffset"] = -33,
+			["width"] = 22.5,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "Pesti + ERW 2",
 			["actions"] = {
 				["start"] = {
 				},
@@ -1122,29 +1146,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "TQPQKMJyQLp",
-			["selfPoint"] = "CENTER",
-			["width"] = 22.5,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "Pesti + ERW 2",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Burst frost combo",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -33,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -1154,8 +1165,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["authorOptions"] = {
-			},
+			["parent"] = "Vermin Warrior",
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -1164,7 +1174,12 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -1217,15 +1232,13 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["parent"] = "Vermin Warrior",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
+			["icon"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -1388,13 +1401,9 @@ WeakAurasSaved = {
 			["desaturate"] = false,
 			["auto"] = false,
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
 			["sparkColor"] = {
 				1, -- [1]
@@ -1408,26 +1417,28 @@ WeakAurasSaved = {
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["sparkHidden"] = "NEVER",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 			["spark"] = false,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["id"] = "Sweeping Strikes",
-			["config"] = {
-			},
+			["uid"] = "vSO1BWwktHA",
 			["useCooldownModRate"] = true,
 			["width"] = 36,
 			["alpha"] = 1,
-			["uid"] = "vSO1BWwktHA",
+			["config"] = {
+			},
 			["inverse"] = false,
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 		},
 		["Malygos - Comboframe 5"] = {
@@ -1614,12 +1625,11 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["authorOptions"] = {
-			},
+			["parent"] = "Skills",
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
@@ -1670,12 +1680,7 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["iconSource"] = -1,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -1683,7 +1688,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["parent"] = "Skills",
+			["authorOptions"] = {
+			},
 			["backgroundColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -1811,20 +1817,25 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
+			["config"] = {
+			},
+			["smoothProgress"] = true,
+			["useAdjustededMin"] = false,
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
-			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["config"] = {
-			},
 			["icon_side"] = "RIGHT",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["width"] = 40,
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
@@ -1856,16 +1867,11 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
@@ -1916,8 +1922,7 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["iconSource"] = -1,
-			["authorOptions"] = {
-			},
+			["parent"] = "Skills",
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -1925,7 +1930,12 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["xOffset"] = 0,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["backgroundColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -2049,19 +2059,20 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = 132223,
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
+			["uid"] = "Up5ylVYe)GK",
+			["smoothProgress"] = true,
+			["useAdjustededMin"] = false,
+			["regionType"] = "icon",
+			["authorOptions"] = {
+			},
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
-			["regionType"] = "icon",
-			["parent"] = "Skills",
-			["uid"] = "Up5ylVYe)GK",
 			["icon_side"] = "RIGHT",
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["width"] = 40,
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
@@ -2098,12 +2109,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -2112,13 +2118,11 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["triggers"] = {
 				{
@@ -2192,8 +2196,15 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["xOffset"] = 0,
-			["icon"] = true,
+			["parent"] = "Vermin Warrior",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -2298,9 +2309,14 @@ WeakAurasSaved = {
 			["desaturate"] = false,
 			["auto"] = false,
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["parent"] = "Vermin Warrior",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -2313,27 +2329,22 @@ WeakAurasSaved = {
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["sparkHidden"] = "NEVER",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 			["spark"] = false,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["id"] = "Food",
-			["config"] = {
-			},
+			["uid"] = "ktvKzEaRutG",
 			["frameStrata"] = 1,
 			["width"] = 36,
 			["alpha"] = 1,
-			["uid"] = "ktvKzEaRutG",
+			["config"] = {
+			},
 			["inverse"] = false,
-			["zoom"] = 0.3,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 		},
 		["MobHPPercentYELLOW"] = {
 			["outline"] = "THICKOUTLINE",
@@ -2514,12 +2525,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -2592,7 +2598,14 @@ WeakAurasSaved = {
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["xOffset"] = 0,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -2730,20 +2743,18 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = "",
 			["desaturate"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
+			["uid"] = "NlXQ18Rjuhe",
 			["config"] = {
 			},
-			["uid"] = "NlXQ18Rjuhe",
 			["icon_side"] = "RIGHT",
 			["color"] = {
 				1, -- [1]
@@ -2759,7 +2770,7 @@ WeakAurasSaved = {
 			["auto"] = false,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["sparkHidden"] = "NEVER",
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["alpha"] = 1,
 			["width"] = 40,
 			["id"] = "Redoubt",
@@ -2784,7 +2795,12 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["parent"] = "Vermin Warrior",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -2793,7 +2809,14 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -2857,12 +2880,7 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -2876,13 +2894,11 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -2986,14 +3002,9 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desaturate"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
 			["frameStrata"] = 1,
 			["config"] = {
@@ -3006,9 +3017,9 @@ WeakAurasSaved = {
 			["useCooldownModRate"] = true,
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["id"] = "Heightened Reflexes",
-			["xOffset"] = 0,
+			["parent"] = "Vermin Warrior",
 			["alpha"] = 1,
 			["width"] = 36,
 			["authorOptions"] = {
@@ -3025,7 +3036,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["parent"] = "Vermin Warrior",
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -3034,13 +3045,11 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["triggers"] = {
 				{
@@ -3086,7 +3095,8 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["iconSource"] = -1,
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -3095,7 +3105,14 @@ WeakAurasSaved = {
 			},
 			["desaturate"] = false,
 			["cooldownTextDisabled"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -3219,10 +3236,9 @@ WeakAurasSaved = {
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["spark"] = false,
 			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["authorOptions"] = {
-			},
+			["parent"] = "Vermin Warrior",
 			["config"] = {
 			},
 			["icon_side"] = "RIGHT",
@@ -3238,7 +3254,7 @@ WeakAurasSaved = {
 			["useCooldownModRate"] = true,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["auto"] = false,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["sparkHidden"] = "NEVER",
 			["id"] = "Spell Reflect",
 			["alpha"] = 1,
@@ -3255,12 +3271,7 @@ WeakAurasSaved = {
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 		},
 		["Entering Combat"] = {
 			["outline"] = "THICKOUTLINE",
@@ -3415,8 +3426,9 @@ WeakAurasSaved = {
 			["shadowXOffset"] = 1,
 			["regionType"] = "text",
 			["fixedWidth"] = 200,
-			["automaticWidth"] = "Auto",
 			["preferToUpdate"] = false,
+			["authorOptions"] = {
+			},
 			["yOffset"] = 0,
 			["wordWrap"] = "WordWrap",
 			["justify"] = "LEFT",
@@ -3448,8 +3460,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["automaticWidth"] = "Auto",
 		},
 		["Malygos - Comboshine 4"] = {
 			["wagoID"] = "nYCzfPXgJ",
@@ -3745,19 +3756,19 @@ WeakAurasSaved = {
 			},
 			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
 			["source"] = "import",
+			["selfPoint"] = "CENTER",
+			["mirror"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["mirror"] = false,
+			["regionType"] = "texture",
+			["rotation"] = 0,
+			["blendMode"] = "BLEND",
 			["authorOptions"] = {
 			},
-			["regionType"] = "texture",
-			["icon"] = true,
-			["blendMode"] = "BLEND",
-			["selfPoint"] = "CENTER",
 			["information"] = {
 				["forceEvents"] = true,
 			},
@@ -3774,7 +3785,7 @@ WeakAurasSaved = {
 			["alpha"] = 0.7,
 			["uid"] = "jOY9D5NrC(y",
 			["inverse"] = false,
-			["rotation"] = 0,
+			["cooldownEdge"] = false,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -3837,7 +3848,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = false,
-			["cooldownEdge"] = false,
+			["icon"] = true,
 		},
 		["focus cast bar - interruptable"] = {
 			["user_y"] = 0,
@@ -4390,19 +4401,19 @@ WeakAurasSaved = {
 						0, -- [3]
 						1, -- [4]
 					},
-					["text_text_format_p_time_legacy_floor"] = false,
+					["text_text_format_c_format"] = "none",
 					["text_selfPoint"] = "AUTO",
 					["text_automaticWidth"] = "Auto",
 					["text_fixedWidth"] = 64,
 					["text_text_format_t_time_format"] = 0,
-					["anchorYOffset"] = 0,
+					["text_text_format_p_time_legacy_floor"] = false,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
 					["text_text_format_t_format"] = "timed",
 					["text_text_format_p_time_mod_rate"] = true,
-					["text_text_format_t_time_mod_rate"] = true,
-					["type"] = "subtext",
 					["text_fontType"] = "None",
+					["type"] = "subtext",
+					["text_visible"] = true,
 					["text_color"] = {
 						1, -- [1]
 						1, -- [2]
@@ -4414,10 +4425,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = -1,
 					["text_text_format_p_time_format"] = 0,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_text_format_t_time_mod_rate"] = true,
 					["text_anchorPoint"] = "INNER_RIGHT",
 					["text_text_format_p_time_precision"] = 1,
-					["text_text_format_c_format"] = "none",
+					["anchorYOffset"] = 0,
 					["text_fontSize"] = 15,
 					["anchorXOffset"] = 0,
 					["text_text_format_t_time_precision"] = 1,
@@ -4611,16 +4622,21 @@ WeakAurasSaved = {
 			},
 			["align"] = "CENTER",
 			["frameStrata"] = 1,
-			["selfPoint"] = "TOP",
-			["stagger"] = 0,
-			["useLimit"] = false,
-			["version"] = 14,
-			["subRegions"] = {
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
+			["stagger"] = 0,
 			["sortHybridTable"] = {
 				["Av Timers"] = false,
 			},
+			["version"] = 14,
+			["subRegions"] = {
+			},
 			["gridType"] = "RD",
+			["selfPoint"] = "TOP",
 			["load"] = {
 				["use_class"] = false,
 				["talent"] = {
@@ -4681,12 +4697,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
+			["useLimit"] = false,
 		},
 		["TARGET HP PERCENT"] = {
 			["arcLength"] = 360,
@@ -4763,7 +4774,7 @@ WeakAurasSaved = {
 			["desc"] = "Big display of target health percentage with Colors",
 			["stagger"] = 0,
 			["version"] = 2,
-			["useLimit"] = true,
+			["fullCircle"] = true,
 			["borderInset"] = 1,
 			["rotation"] = 0,
 			["load"] = {
@@ -4826,8 +4837,7 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
-			["config"] = {
-			},
+			["rowSpace"] = 1,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -4836,7 +4846,7 @@ WeakAurasSaved = {
 			},
 			["anchorPoint"] = "CENTER",
 			["animate"] = false,
-			["radius"] = 200,
+			["grow"] = "DOWN",
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -4844,8 +4854,8 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["fullCircle"] = true,
-			["rowSpace"] = 1,
+			["groupIcon"] = 136168,
+			["radius"] = 200,
 			["constantFactor"] = "RADIUS",
 			["authorOptions"] = {
 			},
@@ -4856,17 +4866,18 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["gridWidth"] = 5,
 			["anchorFrameType"] = "SCREEN",
-			["grow"] = "DOWN",
-			["uid"] = "RtwiT9kw4p3",
-			["selfPoint"] = "TOP",
 			["limit"] = 1,
+			["uid"] = "RtwiT9kw4p3",
+			["config"] = {
+			},
+			["useLimit"] = true,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["groupIcon"] = 136168,
+			["selfPoint"] = "TOP",
 		},
 		["Adamantite Ore"] = {
 			["iconSource"] = -1,
@@ -5029,7 +5040,7 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["uid"] = "ePmimnKBVju",
-			["useTooltip"] = true,
+			["selfPoint"] = "CENTER",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -5037,12 +5048,13 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["icon"] = true,
 			["url"] = "https://wago.io/iST6tz9t8/1",
+			["authorOptions"] = {
+			},
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -5056,37 +5068,26 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 0,
+			["useTooltip"] = true,
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["authorOptions"] = {
-			},
+			["icon"] = true,
 		},
 		["Blade Barrier"] = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -5150,7 +5151,12 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["parent"] = "Vermin Death Knight",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -5158,8 +5164,15 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["xOffset"] = 0,
-			["icon"] = true,
+			["parent"] = "Vermin Death Knight",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -5258,26 +5271,24 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = "",
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["zoom"] = 0.3,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["uid"] = "kNGL7WKGKAu",
+			["icon_side"] = "RIGHT",
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["icon_side"] = "RIGHT",
-			["uid"] = "kNGL7WKGKAu",
 			["anchorFrameType"] = "SCREEN",
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
@@ -5399,8 +5410,6 @@ WeakAurasSaved = {
 			},
 			["frameStrata"] = 3,
 			["anchorFrameType"] = "SCREEN",
-			["xOffset"] = 0,
-			["uid"] = "GV)ts8(u06f",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -5421,12 +5430,14 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["uid"] = "GV)ts8(u06f",
+			["groupIcon"] = 132182,
 			["borderInset"] = 1,
 			["conditions"] = {
 			},
 			["information"] = {
 			},
-			["groupIcon"] = 132182,
+			["xOffset"] = 0,
 		},
 		["MISSING BUFFS"] = {
 			["backdropColor"] = {
@@ -5509,10 +5520,10 @@ WeakAurasSaved = {
 			["borderOffset"] = 4,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["borderInset"] = 1,
-			["uid"] = "Q6V((Odtb2N",
 			["config"] = {
 			},
+			["borderInset"] = 1,
+			["uid"] = "Q6V((Odtb2N",
 			["xOffset"] = -400,
 			["conditions"] = {
 			},
@@ -5541,21 +5552,24 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -5619,7 +5633,12 @@ WeakAurasSaved = {
 				},
 			},
 			["iconSource"] = -1,
-			["xOffset"] = 0,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -5627,19 +5646,12 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
+			["icon"] = true,
 			["backgroundColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.5, -- [4]
-			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
 			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -5739,26 +5751,26 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = "",
 			["desaturate"] = false,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["uid"] = "GpWxZd496n2",
 			["frameStrata"] = 1,
 			["icon_side"] = "RIGHT",
 			["width"] = 36,
 			["useCooldownModRate"] = true,
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
-			["uid"] = "GpWxZd496n2",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["spark"] = false,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["sparkHidden"] = "NEVER",
 			["id"] = "Berserk",
 			["alpha"] = 1,
@@ -5767,8 +5779,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["authorOptions"] = {
-			},
+			["xOffset"] = 0,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -5811,10 +5822,10 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["use_genericShowOn"] = true,
 						["spellName"] = 34428,
-						["useExactSpellId"] = false,
-						["useName"] = true,
 						["unevent"] = "auto",
+						["useName"] = true,
 						["subeventSuffix"] = "_CAST_START",
+						["useExactSpellId"] = false,
 						["duration"] = "1",
 						["subeventPrefix"] = "SPELL",
 						["event"] = "Action Usable",
@@ -5968,8 +5979,8 @@ WeakAurasSaved = {
 			},
 			["alpha"] = 1,
 			["width"] = 65.000114440918,
-			["internalVersion"] = 64,
 			["icon"] = true,
+			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -6003,7 +6014,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
+			["internalVersion"] = 64,
 		},
 		["Druid - CP1"] = {
 			["color"] = {
@@ -6414,8 +6425,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "custom",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend",
@@ -6430,7 +6441,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "event",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -6467,20 +6478,15 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["source"] = "import",
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				0.85098039215686, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["desaturate"] = false,
-			["discrete_rotation"] = 0,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["desaturate"] = false,
+			["rotation"] = 45,
+			["stacksPoint"] = "BOTTOM",
 			["version"] = 176,
 			["subRegions"] = {
 				{
@@ -6588,37 +6594,42 @@ WeakAurasSaved = {
 				["zoneIds"] = "",
 			},
 			["displayIcon"] = 237515,
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				0.85098039215686, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
 			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
-			["displayStacks"] = "%p",
-			["fontSize"] = 19,
+			["source"] = "import",
+			["authorOptions"] = {
+			},
 			["uid"] = "w884fasWWVQ",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = -112.92803955078,
 			["mirror"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["regionType"] = "texture",
 			["useCooldownModRate"] = true,
 			["blendMode"] = "BLEND",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
-			["rotation"] = 45,
+			["fontSize"] = 19,
+			["icon"] = true,
 			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\cancel-icon.tga",
 			["zoom"] = 0.3,
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
 			["tocversion"] = 30401,
 			["id"] = "plus Frost 2",
-			["alpha"] = 1,
 			["frameStrata"] = 2,
+			["alpha"] = 1,
 			["width"] = 27,
-			["icon"] = true,
+			["displayStacks"] = "%p",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -112.92803955078,
+			["discrete_rotation"] = 0,
 			["conditions"] = {
 			},
-			["stacksPoint"] = "BOTTOM",
+			["cooldown"] = true,
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -6854,8 +6865,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "custom",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        return true\n    else \n        return false\n    end\nend",
@@ -6870,7 +6881,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "event",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -6924,20 +6935,15 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["source"] = "import",
-			["cooldown"] = true,
-			["color"] = {
-				0, -- [1]
-				1, -- [2]
-				0.11372549019608, -- [3]
-				1, -- [4]
-			},
-			["desaturate"] = false,
-			["discrete_rotation"] = 0,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["desaturate"] = false,
+			["rotation"] = 45,
+			["stacksPoint"] = "BOTTOM",
 			["version"] = 176,
 			["subRegions"] = {
 				{
@@ -7046,37 +7052,42 @@ WeakAurasSaved = {
 				["zoneIds"] = "",
 			},
 			["displayIcon"] = 237515,
-			["authorOptions"] = {
+			["color"] = {
+				0, -- [1]
+				1, -- [2]
+				0.11372549019608, -- [3]
+				1, -- [4]
 			},
 			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
-			["displayStacks"] = "%p",
-			["fontSize"] = 19,
+			["source"] = "import",
+			["authorOptions"] = {
+			},
 			["uid"] = "WvkPtJmeER7",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = -0.60045623779297,
 			["mirror"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["regionType"] = "texture",
 			["useCooldownModRate"] = true,
 			["blendMode"] = "BLEND",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
-			["rotation"] = 45,
+			["fontSize"] = 19,
+			["icon"] = true,
 			["texture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura118",
 			["zoom"] = 0.3,
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
 			["tocversion"] = 30401,
 			["id"] = "GFBT plus",
-			["alpha"] = 1,
 			["frameStrata"] = 2,
+			["alpha"] = 1,
 			["width"] = 35,
-			["icon"] = true,
+			["displayStacks"] = "%p",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -0.60045623779297,
+			["discrete_rotation"] = 0,
 			["conditions"] = {
 			},
-			["stacksPoint"] = "BOTTOM",
+			["cooldown"] = true,
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -7086,12 +7097,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -7100,13 +7106,11 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["triggers"] = {
 				{
@@ -7171,7 +7175,8 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -7180,12 +7185,7 @@ WeakAurasSaved = {
 			},
 			["desaturate"] = false,
 			["cooldownTextDisabled"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -7327,11 +7327,22 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["sparkColor"] = {
 				1, -- [1]
@@ -7349,7 +7360,7 @@ WeakAurasSaved = {
 			["spark"] = false,
 			["parent"] = "Vermin Hunter",
 			["sparkHidden"] = "NEVER",
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["id"] = "Aspect of the Viper",
@@ -7388,13 +7399,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function (allstates, event, ...)\n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    if activeLossOfControlCount > 0 then return true end\n    return false\nend",
+						["events"] = "LOSS_OF_CONTROL_UPDATE",
 						["names"] = {
 						},
 						["check"] = "event",
-						["events"] = "LOSS_OF_CONTROL_UPDATE",
 						["spellIds"] = {
 						},
+						["custom"] = "function (allstates, event, ...)\n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    if activeLossOfControlCount > 0 then return true end\n    return false\nend",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -8001,31 +8012,16 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["zoom"] = 0,
-			["icon"] = true,
+			["parent"] = "Malygos - Abilities",
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["authorOptions"] = {
-			},
-			["cooldown"] = true,
 			["color"] = {
 				0.48627450980392, -- [1]
 				0.48235294117647, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["config"] = {
-			},
-			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = true,
-			["semver"] = "2.1.2",
-			["tocversion"] = 30400,
-			["id"] = "Malygos - Engulf of Flames - Low Energy",
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["width"] = 45,
-			["useCooldownModRate"] = true,
-			["uid"] = "Pr40Ela4q(2",
-			["inverse"] = false,
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -8046,18 +8042,33 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["config"] = {
+			},
+			["useCooldownModRate"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "2.1.2",
+			["tocversion"] = 30400,
+			["id"] = "Malygos - Engulf of Flames - Low Energy",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["width"] = 45,
+			["alpha"] = 1,
+			["uid"] = "Pr40Ela4q(2",
+			["inverse"] = false,
+			["icon"] = true,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["parent"] = "Malygos - Abilities",
+			["authorOptions"] = {
+			},
 		},
 		["Revenge - Defensive stance"] = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["xOffset"] = 0,
+			["parent"] = "Vermin Warrior",
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -8066,12 +8077,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -8090,8 +8096,8 @@ WeakAurasSaved = {
 						["debuffType"] = "HELPFUL",
 						["spellName"] = 30357,
 						["type"] = "spell",
+						["unevent"] = "auto",
 						["missType"] = "DODGE",
-						["use_targetRequired"] = false,
 						["use_unit"] = true,
 						["subeventSuffix"] = "_MISSED",
 						["event"] = "Action Usable",
@@ -8101,7 +8107,7 @@ WeakAurasSaved = {
 						["spellIds"] = {
 						},
 						["use_genericShowOn"] = true,
-						["unevent"] = "auto",
+						["use_targetRequired"] = false,
 						["use_destUnit"] = true,
 						["use_track"] = true,
 						["useIgnoreName"] = false,
@@ -8124,7 +8130,8 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["iconSource"] = -1,
-			["parent"] = "Vermin Warrior",
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -8133,13 +8140,11 @@ WeakAurasSaved = {
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["cooldownTextDisabled"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -8268,10 +8273,9 @@ WeakAurasSaved = {
 			["desaturate"] = false,
 			["spark"] = false,
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["authorOptions"] = {
-			},
+			["xOffset"] = 0,
 			["config"] = {
 			},
 			["icon_side"] = "RIGHT",
@@ -8287,7 +8291,7 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["auto"] = false,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["sparkHidden"] = "NEVER",
 			["id"] = "Revenge - Defensive stance",
 			["alpha"] = 1,
@@ -8304,7 +8308,14 @@ WeakAurasSaved = {
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 		},
 		["Vermin Death Knight"] = {
 			["arcLength"] = 360,
@@ -8355,7 +8366,7 @@ WeakAurasSaved = {
 			["selfPoint"] = "RIGHT",
 			["align"] = "CENTER",
 			["stagger"] = 0,
-			["grow"] = "LEFT",
+			["internalVersion"] = 64,
 			["load"] = {
 				["size"] = {
 					["multi"] = {
@@ -8374,6 +8385,23 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["rotation"] = 0,
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["anchorFrameFrame"] = "PlayerFrame",
+			["animate"] = true,
+			["fullCircle"] = true,
+			["scale"] = 1,
+			["centerType"] = "LR",
+			["border"] = false,
+			["borderEdge"] = "Square Full White",
+			["regionType"] = "dynamicgroup",
+			["borderSize"] = 2,
+			["sort"] = "none",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -8394,25 +8422,7 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["anchorFrameFrame"] = "PlayerFrame",
-			["animate"] = true,
-			["useLimit"] = false,
-			["scale"] = 1,
-			["centerType"] = "LR",
-			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["regionType"] = "dynamicgroup",
-			["borderSize"] = 2,
-			["sort"] = "none",
-			["authorOptions"] = {
-			},
-			["fullCircle"] = true,
+			["rowSpace"] = 1,
 			["constantFactor"] = "RADIUS",
 			["uid"] = "NLkveGaWbw7",
 			["borderOffset"] = 4,
@@ -8425,14 +8435,15 @@ WeakAurasSaved = {
 			["gridType"] = "RD",
 			["config"] = {
 			},
-			["rowSpace"] = 1,
-			["rotation"] = 0,
+			["grow"] = "LEFT",
+			["authorOptions"] = {
+			},
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["internalVersion"] = 64,
+			["useLimit"] = false,
 		},
 		["Copper Ore"] = {
 			["iconSource"] = -1,
@@ -8596,15 +8607,20 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["uid"] = "hlCr6LtK9Ws",
-			["icon"] = true,
+			["selfPoint"] = "CENTER",
 			["url"] = "https://wago.io/iST6tz9t8/1",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["useTooltip"] = true,
 			["xOffset"] = 0,
+			["parent"] = "Ore Count",
 			["zoom"] = 0.3,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
@@ -8618,16 +8634,11 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["parent"] = "Ore Count",
+			["useTooltip"] = true,
 		},
 		["Merfin: Oculus"] = {
 			["controlledChildren"] = {
@@ -8733,21 +8744,21 @@ WeakAurasSaved = {
 			["semver"] = "1.0.3",
 			["tocversion"] = 30400,
 			["id"] = "Merfin: Oculus",
-			["config"] = {
+			["authorOptions"] = {
 			},
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["groupIcon"] = 134155,
 			["borderInset"] = 1,
 			["uid"] = "gabuMCxOA7e",
-			["selfPoint"] = "CENTER",
+			["config"] = {
+			},
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Mana Bar"] = {
 			["overlays"] = {
@@ -9141,12 +9152,12 @@ WeakAurasSaved = {
 			["semver"] = "1.0.0",
 			["tocversion"] = 11305,
 			["id"] = "Nameplate Combo Points",
-			["xOffset"] = 0,
+			["uid"] = "iOnxJbg5Fqx",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["yOffset"] = 0,
-			["uid"] = "iOnxJbg5Fqx",
+			["xOffset"] = 0,
 			["borderInset"] = 1,
+			["selfPoint"] = "BOTTOMLEFT",
 			["config"] = {
 			},
 			["conditions"] = {
@@ -9155,7 +9166,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["groupOffset"] = true,
 			},
-			["selfPoint"] = "BOTTOMLEFT",
+			["yOffset"] = 0,
 		},
 		["Druid - Mana Bar Cat/Bear"] = {
 			["sparkWidth"] = 10,
@@ -9964,7 +9975,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_combat"] = true,
+				["use_exact_spellknown"] = false,
 				["talent2"] = {
 					["multi"] = {
 					},
@@ -9975,7 +9986,7 @@ WeakAurasSaved = {
 				},
 				["instance_type"] = {
 				},
-				["use_exact_spellknown"] = false,
+				["use_alive"] = true,
 				["spec"] = {
 					["multi"] = {
 					},
@@ -10005,7 +10016,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_alive"] = true,
+				["use_combat"] = true,
 				["spellknown"] = 49924,
 				["race"] = {
 					["multi"] = {
@@ -10086,14 +10097,14 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["unit"] = "player",
 						["debuffType"] = "HELPFUL",
+						["custom"] = "function(event, message, sender, ...)\n    local name = Ambiguate(sender, 'short')\n    local allowed_users = aura_env.config.allowed_users\n    if strlen(allowed_users)>0 then\n        if not tContains({strsplit(\",\", allowed_users)}, name) then\n            return\n        end\n    end\n    if message == aura_env.config.command_follow then\n        FollowUnit(name)     \n    elseif message == aura_env.config.command_stop then\n        FollowUnit(\"player\")\n    end\nend\n\n\n",
 						["spellIds"] = {
 						},
-						["events"] = "CHAT_MSG_PARTY, CHAT_MSG_RAID, CHAT_MSG_PARTY_LEADER, CHAT_MSG_RAID_LEADER",
 						["custom_type"] = "event",
 						["names"] = {
 						},
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function(event, message, sender, ...)\n    local name = Ambiguate(sender, 'short')\n    local allowed_users = aura_env.config.allowed_users\n    if strlen(allowed_users)>0 then\n        if not tContains({strsplit(\",\", allowed_users)}, name) then\n            return\n        end\n    end\n    if message == aura_env.config.command_follow then\n        FollowUnit(name)     \n    elseif message == aura_env.config.command_stop then\n        FollowUnit(\"player\")\n    end\nend\n\n\n",
+						["events"] = "CHAT_MSG_PARTY, CHAT_MSG_RAID, CHAT_MSG_PARTY_LEADER, CHAT_MSG_RAID_LEADER",
 						["custom_hide"] = "timed",
 					},
 					["untrigger"] = {
@@ -10145,13 +10156,13 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["source"] = "import",
 			["shadowXOffset"] = 1,
-			["selfPoint"] = "BOTTOM",
-			["regionType"] = "text",
 			["displayText_format_p_time_legacy_floor"] = true,
-			["automaticWidth"] = "Auto",
+			["regionType"] = "text",
+			["displayText_format_p_time_mod_rate"] = true,
+			["preferToUpdate"] = false,
 			["conditions"] = {
 			},
-			["displayText_format_p_time_mod_rate"] = true,
+			["selfPoint"] = "BOTTOM",
 			["displayText_format_p_time_precision"] = 1,
 			["animation"] = {
 				["start"] = {
@@ -10225,7 +10236,12 @@ WeakAurasSaved = {
 					["useLength"] = false,
 				}, -- [3]
 			},
-			["preferToUpdate"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -10237,12 +10253,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["automaticWidth"] = "Auto",
 		},
 		["Malygos - Comboframe 3"] = {
 			["wagoID"] = "nYCzfPXgJ",
@@ -10428,8 +10439,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["authorOptions"] = {
-			},
+			["parent"] = "Vermin Paladin",
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -10438,7 +10448,12 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -10483,7 +10498,7 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
-			["parent"] = "Vermin Paladin",
+			["xOffset"] = 0,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -10492,14 +10507,7 @@ WeakAurasSaved = {
 			},
 			["desaturate"] = false,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["icon"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -10662,9 +10670,10 @@ WeakAurasSaved = {
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["auto"] = false,
 			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -10684,7 +10693,7 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["spark"] = false,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["id"] = "Light's Grace",
 			["sparkHidden"] = "NEVER",
 			["useCooldownModRate"] = true,
@@ -10697,27 +10706,37 @@ WeakAurasSaved = {
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 		},
 		["Sudden Death"] = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["parent"] = "Vermin Warrior",
+			["authorOptions"] = {
+			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -10781,8 +10800,7 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["authorOptions"] = {
-			},
+			["xOffset"] = 0,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -10796,12 +10814,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -10904,27 +10917,27 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desaturate"] = false,
-			["zoom"] = 0.3,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["config"] = {
-			},
-			["icon_side"] = "RIGHT",
-			["width"] = 36,
-			["useCooldownModRate"] = true,
-			["sparkHeight"] = 30,
-			["texture"] = "Melli",
+			["parent"] = "Vermin Warrior",
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["icon_side"] = "RIGHT",
+			["width"] = 36,
+			["useCooldownModRate"] = true,
+			["sparkHeight"] = 30,
+			["texture"] = "Melli",
+			["config"] = {
+			},
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["sparkHidden"] = "NEVER",
 			["id"] = "Sudden Death",
 			["frameStrata"] = 1,
@@ -10936,13 +10949,11 @@ WeakAurasSaved = {
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 		},
 		["Malygos - Flame shield - No Combopoint"] = {
@@ -11100,32 +11111,13 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = true,
-			["parent"] = "Malygos - Abilities",
+			["icon"] = true,
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["color"] = {
-				1, -- [1]
-				0.050980392156863, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 90,
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["xOffset"] = 90,
-			["config"] = {
-			},
-			["frameStrata"] = 1,
-			["zoom"] = 0,
-			["semver"] = "2.1.2",
-			["tocversion"] = 30400,
-			["id"] = "Malygos - Flame shield - No Combopoint",
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["width"] = 45,
-			["useCooldownModRate"] = true,
-			["uid"] = "gyb6uVXD9ye",
-			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -11146,6 +11138,20 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["config"] = {
+			},
+			["useCooldownModRate"] = true,
+			["zoom"] = 0,
+			["semver"] = "2.1.2",
+			["tocversion"] = 30400,
+			["id"] = "Malygos - Flame shield - No Combopoint",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["width"] = 45,
+			["alpha"] = 1,
+			["uid"] = "gyb6uVXD9ye",
+			["inverse"] = false,
+			["parent"] = "Malygos - Abilities",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -11162,7 +11168,12 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				0.050980392156863, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
 		},
 		["Unholy P 2"] = {
 			["iconSource"] = -1,
@@ -11191,8 +11202,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "timed",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend\n\n",
@@ -11207,7 +11218,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "status",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "timed",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -11369,17 +11380,30 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Dummy icons",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 135775,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "FEZGPV2y1b9",
+			["xOffset"] = 0,
+			["width"] = 45,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "Unholy P 2",
 			["actions"] = {
 				["start"] = {
 				},
@@ -11390,29 +11414,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "FEZGPV2y1b9",
-			["selfPoint"] = "CENTER",
-			["width"] = 45,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "Unholy P 2",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 0,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -11422,7 +11433,12 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["parent"] = "Vermin Warrior",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -11431,14 +11447,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -11502,11 +11511,7 @@ WeakAurasSaved = {
 				},
 			},
 			["iconSource"] = -1,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
 			["barColor"] = {
 				0.2, -- [1]
@@ -11516,11 +11521,13 @@ WeakAurasSaved = {
 			},
 			["desaturate"] = false,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -11622,10 +11629,9 @@ WeakAurasSaved = {
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["auto"] = false,
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["authorOptions"] = {
-			},
+			["parent"] = "Vermin Warrior",
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -11640,7 +11646,7 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["spark"] = false,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["sparkHidden"] = "NEVER",
 			["id"] = "Recklessness",
 			["frameStrata"] = 1,
@@ -11657,7 +11663,12 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 		},
 		["Swing Timer"] = {
 			["sparkWidth"] = 10,
@@ -11687,12 +11698,12 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["customDuration"] = "function()\n  local now = GetTime()\n  local useOffHand = aura_env.UseOffHand()\n  \n  local function CalculateParryHaste(current, total)\n    return math.max(current - total * 0.4, math.min(current, total * 0.2))\n  end\n  \n  local swingSpeed\n  \n  if aura_env.rangedSwing then\n    swingSpeed = UnitRangedDamage(\"player\")\n  else\n    local mainSpeed, offSpeed = UnitAttackSpeed(\"player\")\n    \n    if useOffHand and offSpeed then\n      swingSpeed = offSpeed\n    else\n      swingSpeed = mainSpeed\n    end\n  end\n  \n  if aura_env.parryHaste then\n    local remainingDuration = aura_env.nextSwingTime - now\n    local remainingAfterHaste = CalculateParryHaste(remainingDuration, swingSpeed)\n    local hasteDuration = remainingDuration - remainingAfterHaste\n    \n    aura_env.parryHaste = false\n    return swingSpeed, aura_env.nextSwingTime - hasteDuration\n  elseif aura_env.pauseState == \"PAUSING\" then\n    local remainingDuration = math.max(aura_env.nextSwingTime - now, 0)\n    \n    aura_env.pauseTime = now\n    aura_env.pauseState = \"PAUSED\"\n    return remainingDuration, swingSpeed, true\n  elseif aura_env.pauseState == \"INTERRUPTED\" then\n    aura_env.pauseState = \"RESUMED\"\n    return swingSpeed, aura_env.nextSwingTime\n  elseif aura_env.pauseState == \"RESUMING\" then\n    local pauseDuration = now - aura_env.pauseTime\n    local newSwingTime = aura_env.nextSwingTime + pauseDuration\n    \n    aura_env.nextSwingTime = newSwingTime\n    aura_env.pauseState = \"RESUMED\"\n    return swingSpeed, newSwingTime\n  end\n  \n  local nextSwingTime = now + swingSpeed\n  \n  aura_env.nextSwingTime = nextSwingTime\n  return swingSpeed, nextSwingTime\nend",
 						["customName"] = "function()\n  local function GetSlotItemName(slotId)\n    local slotItemId = GetInventoryItemID(\"player\", slotId)\n    \n    if slotItemId then\n      return GetItemInfo(slotItemId)\n    end\n  end\n  \n  if aura_env.rangedSwing then\n    return GetSlotItemName(18)\n  elseif aura_env.UseOffHand() then\n    return GetSlotItemName(17)\n  else\n    return GetSlotItemName(16) or \"Unarmed\"\n  end\nend",
-						["events"] = "CLEU:SWING_DAMAGE,CLEU:SWING_MISSED,CLEU:SPELL_CAST_SUCCESS,UNIT_SPELLCAST_START:player,UNIT_SPELLCAST_STOP:player,UNIT_SPELLCAST_SUCCEEDED:player",
-						["subeventSuffix"] = "_CAST_START",
-						["customTexture"] = "",
 						["spellIds"] = {
 						},
+						["subeventSuffix"] = "_CAST_START",
+						["customTexture"] = "",
 						["custom"] = "function(event, ...)\n    local function IsSpellCastSlam(...)\n        local spellId = select(3, ...)\n        local spellName = GetSpellInfo(spellId)\n        \n        -- if select(2, UnitClass('player')) == \"WARRIOR\" then\n        --    if GetShapeshiftForm() == 3 then return false end\n        -- end\n        \n        if IsSpellKnown(23881) then return false end\n            \n            return spellName == \"Slam\"\n        end\n        \n        if event == \"COMBAT_LOG_EVENT_UNFILTERED\" then\n            local subEvent = select(2, ...)\n            local sourceGUID = select(4, ...)\n            local destGUID = select(8, ...)\n            local playerGUID = UnitGUID(\"player\")\n            local useOffHand = aura_env.UseOffHand()\n            \n            if subEvent == \"SWING_MISSED\" and destGUID == playerGUID and not useOffHand and not aura_env.rangedSwing then\n                local missType = select(12, ...)\n                \n                if missType == \"PARRY\" then\n                    aura_env.parryHaste = true\n                    return true\n                else\n                    return false\n                end\n            elseif sourceGUID ~= playerGUID then\n                return false\n            end\n            \n            if subEvent == \"SPELL_CAST_SUCCESS\" and not useOffHand then\n                local spellName = select(13, ...)\n                \n                if aura_env.MELEE_SWING_SPELLS[spellName] then\n                    aura_env.rangedSwing = false\n                    return true\n                elseif aura_env.RANGED_SWING_SPELLS[spellName] then\n                    aura_env.rangedSwing = true\n                    return true\n                else\n                    return false\n                end\n            end\n            \n            local isOffHand = false\n            \n            if subEvent == \"SWING_DAMAGE\" then\n                isOffHand = select(21, ...)\n            elseif subEvent == \"SWING_MISSED\" then\n                isOffHand = select(13, ...)\n            end\n            \n            aura_env.rangedSwing = false\n            return (useOffHand and isOffHand) or (not useOffHand and not isOffHand)\n        elseif event == \"UNIT_SPELLCAST_START\" and IsSpellCastSlam(...) then\n            aura_env.rangedSwing = false\n            aura_env.pauseState = \"PAUSING\"\n            return true\n        elseif event == \"UNIT_SPELLCAST_STOP\" and IsSpellCastSlam(...) then\n            aura_env.rangedSwing = false\n            aura_env.pauseState = \"INTERRUPTED\"\n            return true\n        elseif event == \"UNIT_SPELLCAST_SUCCEEDED\" and IsSpellCastSlam(...) then\n            aura_env.rangedSwing = false\n            aura_env.pauseState = \"RESUMING\"\n            return true\n        end\n    end",
+						["events"] = "CLEU:SWING_DAMAGE,CLEU:SWING_MISSED,CLEU:SPELL_CAST_SUCCESS,UNIT_SPELLCAST_START:player,UNIT_SPELLCAST_STOP:player,UNIT_SPELLCAST_SUCCEEDED:player",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -11801,12 +11812,12 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text"] = "%t",
 					["text_shadowYOffset"] = 0,
-					["text_text_format_t_time_mod_rate"] = true,
+					["text_fontType"] = "None",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = false,
+					["text_text_format_t_time_mod_rate"] = true,
 					["text_anchorPoint"] = "INNER_CENTER",
 					["text_text_format_n_format"] = "none",
-					["text_fontType"] = "None",
+					["text_visible"] = false,
 					["text_fontSize"] = 10,
 					["anchorXOffset"] = 0,
 					["text_text_format_t_time_precision"] = 1,
@@ -11885,11 +11896,14 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["config"] = {
-				["offHand"] = false,
-			},
-			["source"] = "import",
 			["uid"] = "v0uJOFAgKPV",
+			["source"] = "import",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["authorOptions"] = {
 				{
 					["type"] = "toggle",
@@ -11920,11 +11934,8 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["width"] = 220,
 			["parent"] = "SwingTimer - Queue skills",
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["config"] = {
+				["offHand"] = false,
 			},
 			["inverse"] = true,
 			["actions"] = {
@@ -11954,7 +11965,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["parent"] = "Vermin Warrior",
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -11963,7 +11974,14 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -12027,12 +12045,7 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "Vermin Warrior",
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -12040,19 +12053,12 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
+			["icon"] = true,
 			["backgroundColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.5, -- [4]
-			},
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
 			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -12159,7 +12165,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
 			["sparkColor"] = {
 				1, -- [1]
@@ -12176,7 +12182,7 @@ WeakAurasSaved = {
 			["id"] = "Sonic Awareness",
 			["cooldownTextDisabled"] = false,
 			["spark"] = false,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["sparkHidden"] = "NEVER",
 			["authorOptions"] = {
 			},
@@ -12185,7 +12191,12 @@ WeakAurasSaved = {
 			["auto"] = false,
 			["uid"] = "rNC8Sq5((uA",
 			["inverse"] = false,
-			["xOffset"] = 0,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
@@ -12195,8 +12206,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["authorOptions"] = {
-			},
+			["parent"] = "Vermin Hunter",
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -12205,14 +12215,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -12257,7 +12260,8 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -12265,13 +12269,20 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["backgroundColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.5, -- [4]
 			},
-			["icon"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -12434,7 +12445,7 @@ WeakAurasSaved = {
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["uid"] = "x4j4ALvtrFj",
 			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
 			["sparkColor"] = {
 				1, -- [1]
@@ -12451,7 +12462,7 @@ WeakAurasSaved = {
 			["sparkHidden"] = "NEVER",
 			["zoom"] = 0.3,
 			["spark"] = false,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["id"] = "Aspect of the Dragonhawk",
 			["color"] = {
 				1, -- [1]
@@ -12465,7 +12476,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["parent"] = "Vermin Hunter",
+			["xOffset"] = 0,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
@@ -12475,16 +12486,12 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
@@ -12553,7 +12560,7 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["xOffset"] = 0,
+			["parent"] = "Vermin Warrior",
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -12561,7 +12568,11 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["actions"] = {
 				["start"] = {
@@ -12673,20 +12684,20 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desaturate"] = false,
+			["config"] = {
+			},
+			["smoothProgress"] = true,
+			["anchorFrameFrame"] = "PlayerFrame",
+			["regionType"] = "icon",
+			["xOffset"] = 0,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
-			["regionType"] = "icon",
-			["parent"] = "Vermin Warrior",
-			["config"] = {
-			},
 			["icon_side"] = "RIGHT",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 			["width"] = 36,
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
@@ -12757,9 +12768,9 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["selfPoint"] = "CENTER",
 			["align"] = "CENTER",
+			["limit"] = 5,
 			["authorOptions"] = {
 			},
-			["useLimit"] = false,
 			["sortHybridTable"] = {
 				["Runes"] = false,
 			},
@@ -12768,13 +12779,8 @@ WeakAurasSaved = {
 			["version"] = 58,
 			["subRegions"] = {
 			},
+			["useLimit"] = false,
 			["groupIcon"] = 237515,
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
 			["load"] = {
 				["size"] = {
 					["multi"] = {
@@ -12793,14 +12799,19 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["gridType"] = "RD",
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["radius"] = 200,
+			["gridType"] = "RD",
 			["animate"] = true,
 			["customGrow"] = "function(newPositions, activeRegions)\n    local limit = 3 -- limit of icons per row\n    local rows = 2 -- total rows\n    local spacing = 1 -- spacing between icons\n    ----------------------\n    local check = true\n    local xCount = 0\n    local yCount = 0\n    local tCount = 0\n    \n    local xOffset = 0\n    local yOffset = 0\n    local total = #activeRegions\n    \n    for i, regionData in ipairs(activeRegions) do\n        local region = regionData.region\n        \n        local regionsLeft = total - tCount\n        local rowTotal = 1\n        \n        if total <= limit then\n            rowTotal = total\n        elseif (regionsLeft < limit and xCount < 1) or not check then\n            check = false\n            rowTotal = regionsLeft\n        elseif yCount >= rows-1 then\n            rowTotal = regionsLeft\n        elseif total > limit then\n            rowTotal = limit\n        end\n        \n        xOffset = 0 - (region.width + spacing) / 2 * (rowTotal-1) + (xCount * (region.width + spacing))\n        yOffset = 0 - (region.height + spacing) * yCount -- change '-' to '+' after 0 to grow up instead of down\n        \n        xCount = xCount + 1\n        \n        if yCount < rows-1 and check then\n            tCount = tCount + 1\n            if xCount >= limit then\n                xCount = 0\n                yCount = yCount + 1\n            end\n        end\n        \n        newPositions[i] = {xOffset, yOffset}\n    end\nend",
 			["scale"] = 0.55,
@@ -12809,10 +12820,10 @@ WeakAurasSaved = {
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
-			["limit"] = 5,
+			["sort"] = "none",
+			["uid"] = "IxDkNVofo)W",
 			["config"] = {
 			},
-			["sort"] = "none",
 			["constantFactor"] = "RADIUS",
 			["rotation"] = 0,
 			["borderOffset"] = 4,
@@ -12822,8 +12833,6 @@ WeakAurasSaved = {
 			["source"] = "import",
 			["gridWidth"] = 6,
 			["anchorFrameType"] = "SCREEN",
-			["uid"] = "IxDkNVofo)W",
-			["borderInset"] = 1,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -12844,19 +12853,21 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["borderInset"] = 1,
 			["grow"] = "HORIZONTAL",
+			["space"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["space"] = 0,
+			["radius"] = 200,
 		},
 		["Hyperspeed Acceleration"] = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["parent"] = "Vermin Warrior",
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -12865,11 +12876,13 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["triggers"] = {
 				{
@@ -12915,7 +12928,12 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
-			["xOffset"] = 0,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -12924,7 +12942,12 @@ WeakAurasSaved = {
 			},
 			["desaturate"] = false,
 			["zoom"] = 0.3,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -13044,14 +13067,9 @@ WeakAurasSaved = {
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["auto"] = false,
 			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "Vermin Warrior",
 			["uid"] = "IRqbYtxZoYg",
 			["icon_side"] = "RIGHT",
 			["authorOptions"] = {
@@ -13062,7 +13080,7 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["spark"] = false,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["id"] = "Hyperspeed Acceleration",
 			["sparkHidden"] = "NEVER",
 			["useCooldownModRate"] = true,
@@ -13084,14 +13102,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 		},
 		["Loss of Control Background"] = {
 			["wagoID"] = "JiQILDF99",
@@ -13119,13 +13130,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function (allstates, event, ...)\n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    if activeLossOfControlCount > 0 then return true end\n    return false\nend",
+						["events"] = "LOSS_OF_CONTROL_UPDATE",
 						["names"] = {
 						},
 						["check"] = "event",
-						["events"] = "LOSS_OF_CONTROL_UPDATE",
 						["spellIds"] = {
 						},
+						["custom"] = "function (allstates, event, ...)\n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    if activeLossOfControlCount > 0 then return true end\n    return false\nend",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -13353,15 +13364,15 @@ WeakAurasSaved = {
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "group",
 			["borderSize"] = 2,
-			["yOffset"] = 0,
+			["parent"] = "Malygos",
 			["borderOffset"] = 4,
 			["semver"] = "2.1.2",
 			["tocversion"] = 30400,
 			["id"] = "Malygos - Abilities",
-			["parent"] = "Malygos",
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["selfPoint"] = "CENTER",
+			["yOffset"] = 0,
 			["config"] = {
 			},
 			["uid"] = "SzQD2WC41qb",
@@ -13377,8 +13388,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["authorOptions"] = {
-			},
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -13387,12 +13397,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -13437,7 +13442,7 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
-			["xOffset"] = 0,
+			["parent"] = "Vermin Druid",
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -13447,7 +13452,14 @@ WeakAurasSaved = {
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["config"] = {
 			},
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -13569,16 +13581,14 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desaturate"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
 			["alpha"] = 1,
 			["sparkColor"] = {
@@ -13595,9 +13605,10 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["auto"] = false,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["id"] = "Savage Roar",
-			["parent"] = "Vermin Druid",
+			["authorOptions"] = {
+			},
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["color"] = {
@@ -13641,9 +13652,9 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["duration"] = "2.2",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["check"] = "event",
-						["spellName"] = 0,
+						["debuffType"] = "HELPFUL",
 						["custom"] = "function(event, var)\n    aura_env.var = var\n    return true\nend",
 						["type"] = "custom",
 						["events"] = "fonsas_GARG",
@@ -13658,7 +13669,7 @@ WeakAurasSaved = {
 						},
 						["unevent"] = "auto",
 						["remOperator"] = "<",
-						["custom_hide"] = "custom",
+						["spellName"] = 0,
 						["use_unit"] = true,
 						["useRem"] = true,
 					},
@@ -13820,17 +13831,30 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Dummy icons",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = false,
 			["displayIcon"] = 132182,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "4iXs6SLD1hy",
+			["xOffset"] = 33,
+			["width"] = 18,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "Gary",
 			["actions"] = {
 				["start"] = {
 				},
@@ -13841,29 +13865,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "4iXs6SLD1hy",
-			["selfPoint"] = "CENTER",
-			["width"] = 18,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "Gary",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 33,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = false,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -13873,7 +13884,12 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["parent"] = "Vermin Druid",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -13882,11 +13898,13 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["triggers"] = {
 				{
@@ -13952,11 +13970,7 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
 			["barColor"] = {
 				0.2, -- [1]
@@ -13966,14 +13980,7 @@ WeakAurasSaved = {
 			},
 			["desaturate"] = false,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -14072,12 +14079,16 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = "",
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["icon"] = true,
-			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
-			["regionType"] = "icon",
-			["authorOptions"] = {
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
+			["smoothProgress"] = true,
+			["useAdjustededMin"] = false,
+			["regionType"] = "icon",
+			["parent"] = "Vermin Druid",
 			["uid"] = "aRaqfoW0wDF",
 			["icon_side"] = "RIGHT",
 			["spark"] = false,
@@ -14089,7 +14100,7 @@ WeakAurasSaved = {
 			["auto"] = false,
 			["xOffset"] = 0,
 			["sparkHidden"] = "NEVER",
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["useCooldownModRate"] = true,
 			["width"] = 36,
 			["id"] = "Mangle",
@@ -14138,8 +14149,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "timed",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend\n\n",
@@ -14154,7 +14165,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "status",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "timed",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -14316,17 +14327,30 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Dummy icons",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 237513,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "vKUZ8Mjd9ak",
+			["xOffset"] = -11,
+			["width"] = 22,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "BB opt",
 			["actions"] = {
 				["start"] = {
 				},
@@ -14337,29 +14361,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "vKUZ8Mjd9ak",
-			["selfPoint"] = "CENTER",
-			["width"] = 22,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "BB opt",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -11,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -14396,9 +14407,9 @@ WeakAurasSaved = {
 						["ownOnly"] = true,
 						["subeventPrefix"] = "SPELL",
 						["duration"] = "1",
+						["debuffType"] = "HELPFUL",
 						["custom_hide"] = "timed",
 						["spellName"] = 0,
-						["debuffType"] = "HELPFUL",
 						["remOperator"] = "<",
 						["type"] = "custom",
 						["unit"] = "player",
@@ -14579,24 +14590,25 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
-			["frameStrata"] = 2,
 			["fontSize"] = 19,
-			["displayStacks"] = "%p",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Dummy icons",
+			["source"] = "import",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["displayStacks"] = "%p",
+			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["authorOptions"] = {
+			},
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["frameStrata"] = 2,
 			["config"] = {
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
@@ -14604,16 +14616,15 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "HOW",
-			["authorOptions"] = {
-			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
 			["alpha"] = 1,
 			["width"] = 45,
-			["source"] = "import",
+			["parent"] = "Dummy icons",
 			["uid"] = "85idV8arKpL",
 			["inverse"] = false,
-			["icon"] = true,
+			["xOffset"] = 0,
 			["displayIcon"] = 134228,
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -14645,9 +14656,9 @@ WeakAurasSaved = {
 						["ownOnly"] = true,
 						["subeventPrefix"] = "SPELL",
 						["duration"] = "1",
+						["debuffType"] = "HELPFUL",
 						["custom_hide"] = "timed",
 						["spellName"] = 0,
-						["debuffType"] = "HELPFUL",
 						["remOperator"] = "<",
 						["type"] = "custom",
 						["unit"] = "player",
@@ -14829,25 +14840,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 2,
 			["fontSize"] = 19,
-			["displayStacks"] = "%p",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["parent"] = "Dummy icons",
+			["source"] = "import",
 			["stacksPoint"] = "BOTTOM",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["alpha"] = 1,
+			["displayStacks"] = "%p",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["config"] = {
 			},
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
@@ -14855,20 +14868,18 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "DC 2",
-			["source"] = "import",
+			["alpha"] = 1,
 			["useCooldownModRate"] = true,
 			["width"] = 45,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["uid"] = "U(7giA380lg",
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["displayIcon"] = 136145,
-			["cooldown"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -14896,21 +14907,21 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["debuffType"] = "HELPFUL",
 						["type"] = "custom",
+						["subeventSuffix"] = "_CAST_START",
 						["custom_type"] = "event",
-						["unevent"] = "auto",
-						["unit"] = "player",
+						["names"] = {
+						},
 						["use_absorbMode"] = true,
 						["event"] = "Health",
-						["use_unit"] = true,
+						["unit"] = "player",
 						["subeventPrefix"] = "SPELL",
+						["custom"] = "function(e, ...)\n    local region = aura_env.region\n    local target = C_NamePlate.GetNamePlateForUnit(\"target\")\n    local attackable = not UnitIsFriend(\"player\", \"target\")\n    \n    if e == \"NAME_PLATE_UNIT_REMOVED\" then\n        local unit = ...\n        if unit and UnitGUID(unit) == UnitGUID(\"target\") then\n            region:Color(0,0,0,0)\n        end\n    elseif target and attackable then\n        local color = aura_env.config.bgcolor\n        \n        region:ClearAllPoints()\n        region:SetPoint(\"TOP\", target, \"BOTTOM\", aura_env.config.xoffset, aura_env.config.yoffset)\n        \n        region:Color(color[1], color[2], color[3], color[4])\n    else\n        region:Color(0,0,0,0)\n    end\n    return true\nend",
 						["events"] = "PLAYER_TARGET_CHANGED, NAME_PLATE_UNIT_ADDED, NAME_PLATE_UNIT_REMOVED, PLAYER_ENTERING_WORLD",
 						["spellIds"] = {
 						},
-						["custom"] = "function(e, ...)\n    local region = aura_env.region\n    local target = C_NamePlate.GetNamePlateForUnit(\"target\")\n    local attackable = not UnitIsFriend(\"player\", \"target\")\n    \n    if e == \"NAME_PLATE_UNIT_REMOVED\" then\n        local unit = ...\n        if unit and UnitGUID(unit) == UnitGUID(\"target\") then\n            region:Color(0,0,0,0)\n        end\n    elseif target and attackable then\n        local color = aura_env.config.bgcolor\n        \n        region:ClearAllPoints()\n        region:SetPoint(\"TOP\", target, \"BOTTOM\", aura_env.config.xoffset, aura_env.config.yoffset)\n        \n        region:Color(color[1], color[2], color[3], color[4])\n    else\n        region:Color(0,0,0,0)\n    end\n    return true\nend",
 						["check"] = "event",
-						["names"] = {
-						},
-						["subeventSuffix"] = "_CAST_START",
+						["use_unit"] = true,
+						["unevent"] = "auto",
 						["custom_hide"] = "custom",
 					},
 					["untrigger"] = {
@@ -15177,8 +15188,8 @@ WeakAurasSaved = {
 			["regionType"] = "text",
 			["conditions"] = {
 			},
-			["xOffset"] = 0,
 			["parent"] = "Vermin Warrior Stance",
+			["preferToUpdate"] = false,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -15224,7 +15235,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["preferToUpdate"] = false,
+			["xOffset"] = 0,
 		},
 		["Tin Ore"] = {
 			["iconSource"] = -1,
@@ -15363,6 +15374,37 @@ WeakAurasSaved = {
 			["source"] = "import",
 			["config"] = {
 			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["cooldownEdge"] = false,
+			["cooldown"] = false,
+			["internalVersion"] = 64,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["useCooldownModRate"] = true,
+			["width"] = 40,
+			["cooldownTextDisabled"] = false,
+			["semver"] = "1.0.0",
+			["tocversion"] = 90002,
+			["id"] = "Tin Ore",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.3,
+			["uid"] = "z6rO(YSvyJb",
+			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -15383,43 +15425,12 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["xOffset"] = 0,
-			["regionType"] = "icon",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["cooldown"] = false,
-			["parent"] = "Ore Count",
-			["internalVersion"] = 64,
-			["useCooldownModRate"] = true,
-			["width"] = 40,
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.0.0",
-			["tocversion"] = 90002,
-			["id"] = "Tin Ore",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
-			["uid"] = "z6rO(YSvyJb",
-			["inverse"] = false,
-			["cooldownEdge"] = false,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["parent"] = "Ore Count",
 		},
 		["Rotation manager - frost (backup)"] = {
 			["iconSource"] = -1,
@@ -15445,9 +15456,9 @@ WeakAurasSaved = {
 						["duration"] = "1",
 						["custom"] = "function()\n    local lastAction = aura_env.nextAction\n    local timeNow = GetTime()\n    aura_env.varFlag2 = false\n    local  bt_full_flag=false\n    ----(timeNow+aura_env.gcdFreeWhen-aura_env.combatStart)\n    \n    if aura_env.fixedGCD<0 then aura_env.fixedGCD = 1.5 end\n    \n    aura_env.gcdFreeWhen = aura_env.gcdWhen - timeNow\n    if  aura_env.gcdFreeWhen<0 then  aura_env.gcdFreeWhen=0 end\n    \n    for i=1, 6 do\n        aura_env.runes[i].cd= aura_env.runes[i].when - timeNow - aura_env.gcdFreeWhen\n        if aura_env.runes[i].cd< -(2.45) then\n            aura_env.runes[i].cd = -2.45\n        end \n    end\n    local KM, rime, HoWTimer, totem, UA1, BT1, speed = aura_env.trackB_frost()\n    local ff, uh = aura_env.trackD_frost()\n    \n    \n    local expire = 20\n    if ff<uh then expire = ff else expire = uh end\n    expire = expire - aura_env.gcdFreeWhen\n    if expire<-0.1 then expire = -0.1 end\n    ff = ff - aura_env.gcdFreeWhen\n    uh = uh- aura_env.gcdFreeWhen\n    if ff<-0.1 then ff=-0.1 end\n    if uh<-0.1 then uh=-0.1 end\n    \n    \n    -- --(\"ff: \"..tostring(ff)..\" / uh: \"..tostring(uh))\n    -- --(\"gcdFreeWhen:\" .. tostring(aura_env.gcdFreeWhen))\n    \n    \n    KM = KM-aura_env.gcdFreeWhen-aura_env.config.reaction/1000\n    HoWTimer = HoWTimer - aura_env.gcdFreeWhen-aura_env.config.reaction/1000\n    UA1 = UA1- aura_env.gcdFreeWhen-aura_env.config.reaction/1000\n    speed = speed - aura_env.gcdFreeWhen-aura_env.config.reaction/1000\n    if speed<0 then speed=0 end\n    if BT1 then\n        BT1 = BT1- aura_env.gcdFreeWhen-aura_env.config.reaction/1000\n    end\n    if rime then\n        rime = rime - aura_env.gcdFreeWhen-aura_env.config.reaction/1000\n    end\n    \n    if  KM <0 then   KM  =0 end\n    if rime  <0 then rime    =0 end\n    if HoWTimer  <0 then  HoWTimer   =0 end\n    if  UA1 <0 then  UA1   =0 end\n    if  BT1 <0 then  BT1   =0 end\n    \n    \n    \n    local cut = 100/1000 + aura_env.config.reaction/1000\n    \n    local a = (aura_env.runes[3].cd+cut > aura_env.runes[5].cd and aura_env.runes[3].cd-cut < aura_env.runes[5].cd)  or  (aura_env.runes[3].cd+cut > aura_env.runes[6].cd and aura_env.runes[3].cd-cut < aura_env.runes[6].cd) \n    local b = (aura_env.runes[4].cd+cut > aura_env.runes[5].cd and aura_env.runes[4].cd-cut < aura_env.runes[5].cd)  or  (aura_env.runes[4].cd+cut > aura_env.runes[6].cd and aura_env.runes[4].cd-cut < aura_env.runes[6].cd) \n    \n    if aura_env.lastCastID == 47568  then  aura_env.desyncCounter=2 end\n    \n    if (a and b) or aura_env.desyncCounter>=2 or aura_env.subUH then\n        aura_env.desync  = false\n    else\n        aura_env.desync = true    \n    end \n    \n    if aura_env.desyncFlag==false then aura_env.desync = false end\n    if aura_env.subUH then aura_env.desync = true end\n    local desync = aura_env.desync\n    ----(desync)\n    \n    local bn, fn, un, bl, fl, ul, dn, dl= 0\n    local d1, d2 = 20\n    if (aura_env.runes[1].cd)>(aura_env.runes[2].cd) then bn=2 bl=1 else bn=1 bl=2 end\n    if (aura_env.runes[3].cd)>(aura_env.runes[4].cd) then un=4 ul=3 else un=3 ul=4 end\n    if (aura_env.runes[5].cd)>(aura_env.runes[6].cd) then fn=6 fl=5 else fn=5 fl=6 end\n    \n    if GetRuneType(1)==4  then d1=aura_env.runes[1].cd end\n    if GetRuneType(2)==4 then d2=aura_env.runes[2].cd end\n    \n    \n    \n    \n    local flCap = aura_env.runes[fl].cd\n    if flCap<0 then flCap=0 end\n    local fnCap = aura_env.runes[fn].cd\n    if fnCap<0 then fnCap=0 end\n    \n    local ulCap = aura_env.runes[ul].cd\n    if ulCap<0 then ulCap=0 end\n    local unCap = aura_env.runes[un].cd\n    if unCap<0 then unCap=0 end\n    \n    local blCap = aura_env.runes[bl].cd\n    if blCap<0 then blCap=0 end\n    local bnCap = aura_env.runes[bn].cd\n    if bnCap<0 then bnCap=0 end\n    \n    \n    local obWhen, obTimer, rune1Tag, rune2Tag  =  aura_env.obFunction_frost()\n    \n    \n    \n    local durationUA = aura_env.UAcast + 60 - timeNow - aura_env.gcdFreeWhen + aura_env.config.reaction/1000\n    local durationBT = aura_env.BTcast + 60 - timeNow - aura_env.gcdFreeWhen + aura_env.config.reaction/1000\n    local startERW, durationERW = GetSpellCooldown(47568)--erw\n    \n    local durationH = aura_env.HoWcast + 20 - timeNow - aura_env.gcdFreeWhen + aura_env.config.reaction/1000\n    \n    \n    \n    aura_env.OBwhen = obWhen\n    \n    \n    if not UnitAffectingCombat(\"player\") then\n        \n        aura_env.desyncCounter = 0\n        aura_env.combatStart = timeNow\n        aura_env.obCounter = 0\n        lastAction = \"\"\n        aura_env.totemDetected = false\n        if not UnitCanAttack(\"player\",\"target\") and aura_env.config.oocHide then\n            aura_env.nextAction = \"clear\"\n        elseif HoWTimer<30 and not totem and durationH<=0 then\n            aura_env.nextAction = \"HOW\" \n        else\n            aura_env.nextAction = \"IT\" \n        end\n        \n        WeakAuras.ScanEvents(\"fonsas_UA\", false) \n        WeakAuras.ScanEvents(\"fonsas_ERW_frost\", false)\n        WeakAuras.ScanEvents(\"fonsas_Pesti_ERW_frost\", false)\n        WeakAuras.ScanEvents(\"fonsas_pes_drop\", false) \n        -- ADD HOW\n    else  \n        \n        if totem then \n            aura_env.totemDetected = true\n        end\n        \n        \n        local pestiBT = false\n        local oblitBT = false\n        local a = (aura_env.runeUse==1 or aura_env.runeUse==2)\n        if aura_env.runeUse~=1 and aura_env.runeUse~=2 and aura_env.lastCastID ==51271 then\n            oblitBT = true\n        elseif aura_env.lastCastID ==51271 and a then\n            pestiBT = true\n        end\n        \n        if (ff>0.05 and uh>0.05 and oblitBT and durationBT<=1.5) and false then\n            \n            -- aura_env.nextAction=\"BT_full\"\n            WeakAuras.ScanEvents(\"fonsas_pes_drop\", false) \n        elseif (ff>0.06 and uh>0.06 and oblitBT==false) or  (aura_env.TTD-aura_env.fixedGCD+aura_env.gcdFreeWhen<aura_env.config.disDropTime) then\n            \n            \n            local canOb = false\n            local a = aura_env.runes[bl].cd\n            \n            local tolerance = obTimer \n            local temp = 0\n            ----(\"obWhen:\" .. tostring(obWhen) .. \" is it static?\")\n            if obWhen>0 then temp=obWhen else temp=0 end\n            aura_env.oblitWhen = temp\n            \n            if UA1>obTimer+0.1 and rime<=0.05 and KM<=0.05 then tolerance = obTimer end\n            if UA1>obWhen+0.2 and UA1<=obTimer and rune1Tag+rune2Tag ~= 3 then tolerance = 0  end\n            \n            \n            if timeNow - aura_env.ERWcounter-aura_env.gcdFreeWhen>7 and timeNow - aura_env.ERWcounter-aura_env.gcdFreeWhen<14  then tolerance=0 end\n            \n            local runeGraceERW = aura_env.ERWcounter - timeNow - aura_env.gcdFreeWhen\n            \n            \n            local runeGraceERWflag=true\n            if runeGraceERW<-4.5 then runeGraceERWflag=false else WeakAuras.ScanEvents(\"fonsas_RD2\", false) end\n            if runeGraceERW<-2.5 then runeGraceERW = -2.5 else tolerance = 0 end\n            local pesDrop = false\n            \n            if (temp  <= expire + aura_env.fixedGCD + (aura_env.config.reaction/1000)) and not ((aura_env.TTD-aura_env.fixedGCD+aura_env.gcdFreeWhen<aura_env.config.disDropTime)) then\n                if rune1Tag==1 or rune1Tag==2 or rune2Tag==1 or rune2Tag==2 then\n                    if rune1Tag+rune2Tag == 3 then \n                        if (expire-temp>10+runeGraceERW) or (expire>10+aura_env.runes[bn].cd + 0.2 and expire> obWhen+tolerance + 10 + aura_env.runes[bl].cd ) then\n                            canOb = true\n                            \n                            if (rime>0.5 or KM>0.5 or UnitPower(\"player\")>105) and expire>7.5+(aura_env.config.reaction/1000) and not aura_env.subUH then tolerance = expire-7.5-(aura_env.config.reaction/1000) end\n                            \n                        end\n                        \n                    elseif expire-temp > blCap and expire-temp > aura_env.config.reaction/1000*5 + aura_env.fixedGCD then \n                        canOb = true\n                    end\n                elseif expire-temp > aura_env.config.reaction/1000*5 + aura_env.fixedGCD then\n                    canOb = true\n                end \n            elseif  (aura_env.TTD-aura_env.fixedGCD+aura_env.gcdFreeWhen<aura_env.config.disDropTime) then\n                canOb = true\n                pesDrop = true\n                \n            end\n            if durationBT<=aura_env.fixedGCD and expire > aura_env.config.reaction/1000*5 + aura_env.fixedGCD and aura_env.runes[fn].cd>0.1 and aura_env.runes[un].cd>0.1 and durationUA>39  then\n                \n                canOb = true\n                \n            end\n            \n            \n            \n            \n            \n            \n            \n            \n            \n            if pesDrop and aura_env.runes[bn].cd<0 and expire<4 and expire>0  then \n                WeakAuras.ScanEvents(\"fonsas_pes_drop\", true) \n            else \n                WeakAuras.ScanEvents(\"fonsas_pes_drop\", false) \n            end\n            \n            if canOb then \n                \n                WeakAuras.ScanEvents(\"fonsas_BT_full\", false) \n                \n                local highest = 0\n                if obWhen > tolerance then highest = obWhen else highest =  tolerance end\n                if highest <= aura_env.fixedGCD + (aura_env.config.reaction/1000)*2 then --aura_env.fixedGCD\n                    aura_env.nextAction=\"OB\"\n                else\n                    \n                    -- --(\"--\")\n                    \n                    local a =  (rime>0.1) and (aura_env.OBwhen + tolerance <= aura_env.fixedGCD+aura_env.gcdFreeWhen + (aura_env.config.reaction/1000)*2)\n                    \n                    local start, duration = GetSpellCooldown(57330)\n                    local startG, durationG = GetSpellCooldown(46584)\n                    \n                    if HoWTimer<10 and not aura_env.totemDetected and durationH <=0 then\n                        aura_env.nextAction=\"HOW\"\n                        --elseif UnitPower(\"player\")>=aura_env.FSRP and KM>0 and not a then\n                        --    aura_env.nextAction=\"FS\"\n                    elseif rime>0.1 and KM>0.1 and (UnitPower(\"player\")<121)  then \n                        aura_env.nextAction=\"HB\"\n                    elseif rime>0.1 and KM>0.1 and UnitPower(\"player\")>=aura_env.FSRP then \n                        aura_env.nextAction=\"FS\"\n                        \n                    elseif ((desync and (UA1<20-aura_env.fixedGCD-1.8) and durationERW<=2.5) or (desync and durationERW>2.5) or (desync and timeNow+aura_env.gcdFreeWhen-aura_env.combatStart>4 and UA1<20-aura_env.fixedGCD-0.5)and durationERW<=2.5) and aura_env.runes[bn].cd - aura_env.fixedGCD  <= (aura_env.config.reaction/1000)-2.5 and bn ~=rune1Tag and bn~=rune2Tag then\n                        -- --(durationERW)\n                        -- --(\"should bs?\")\n                        \n                        --should bs?\n                        local alpha=0\n                        if aura_env.runes[bl].cd+aura_env.config.reaction/1000 > aura_env.fixedGCD + aura_env.gcdFreeWhen then\n                            alpha=aura_env.runes[bl].cd+aura_env.config.reaction/1000\n                        else\n                            alpha=aura_env.fixedGCD + aura_env.gcdFreeWhen\n                        end\n                        \n                        \n                        local  obWhenNN, obTimerNN, rune1TagNN, rune2TagNN = aura_env.obFunctionNextNext_frost(rune1Tag, rune2Tag)\n                        if (((rune1Tag~=bl and rune2Tag~=bl and  rune1TagNN~=bl and rune2TagNN~=bl and expire>alpha) or  (aura_env.TTD-aura_env.fixedGCD+aura_env.gcdFreeWhen<aura_env.config.disDropTime))) and  expire>10  then\n                            aura_env.nextAction=\"BS\"\n                        else\n                            aura_env.nextAction=\"PES\" \n                        end          \n                    elseif rime>0.1 and UnitPower(\"player\")<110 and (aura_env.OBwhen + tolerance <= aura_env.fixedGCD+aura_env.gcdFreeWhen + (aura_env.config.reaction/1000)*2) then \n                        aura_env.nextAction=\"HB\"\n                    elseif UnitPower(\"player\")>=aura_env.FSRP*2 then \n                        aura_env.nextAction=\"FS\"\n                        -- elseif durationG- aura_env.fixedGCD <=0.1 and UA1<16.5 and UA1>0 and aura_env.RDencounter then\n                        --     aura_env.nextAction=\"RD\"\n                    elseif ((desync and (UA1<20-aura_env.fixedGCD-1) and durationERW<=2.5) or (desync and durationERW>2.5) or (timeNow+aura_env.gcdFreeWhen-aura_env.combatStart>4 and UA1<20-aura_env.fixedGCD-0.5)and durationERW<=2.5)  and aura_env.runes[bn].cd <= (aura_env.config.reaction/1000) and bn ~=rune1Tag and bn~=rune2Tag and expire<11 then\n                        --should bs?  222\n                        local alpha=0\n                        if aura_env.runes[bl].cd+aura_env.config.reaction/1000 > aura_env.fixedGCD + aura_env.gcdFreeWhen then\n                            alpha=aura_env.runes[bl].cd+aura_env.config.reaction/1000\n                        else\n                            alpha=aura_env.fixedGCD + aura_env.gcdFreeWhen\n                        end\n                        \n                        local  obWhenNN, obTimerNN, rune1TagNN, rune2TagNN = aura_env.obFunctionNextNext_frost(rune1Tag, rune2Tag)\n                        if (rune1Tag~=bl and rune2Tag~=bl and  rune1TagNN~=bl and rune2TagNN~=bl and expire>alpha)  or  (aura_env.TTD-aura_env.fixedGCD+aura_env.gcdFreeWhen<aura_env.config.disDropTime) then\n                            aura_env.nextAction=\"BS\"\n                        else\n                            aura_env.nextAction=\"PES\" \n                        end  \n                        \n                    elseif UnitPower(\"player\")>=aura_env.FSRP then \n                        aura_env.nextAction=\"FS\"\n                    elseif aura_env.runes[bn].cd <= (aura_env.config.reaction/1000) and bn ~=rune1Tag and bn~=rune2Tag and not desync then\n                        \n                        local alpha=0\n                        if aura_env.runes[bl].cd+aura_env.config.reaction/1000 > aura_env.fixedGCD + aura_env.gcdFreeWhen then\n                            alpha=aura_env.runes[bl].cd+aura_env.config.reaction/1000\n                        else\n                            alpha=aura_env.fixedGCD + aura_env.gcdFreeWhen\n                        end\n                        if (expire>alpha) or  (aura_env.TTD-aura_env.fixedGCD+aura_env.gcdFreeWhen<aura_env.config.disDropTime) and aura_env.desyncFlag then\n                            aura_env.nextAction=\"BS\"\n                        else\n                            aura_env.nextAction=\"PES\" \n                        end\n                    elseif durationH <=0 then\n                        aura_env.nextAction=\"HOW\"\n                    else\n                        aura_env.nextAction=\"OB\"\n                    end\n                end\n                WeakAuras.ScanEvents(\"fonsas_CANCEL_BT\", false)\n            else\n                \n                local varFlagLast = aura_env.varFlag2\n                if bn==1 and BT1 <14 and aura_env.blood1Type_cancelBT then \n                    aura_env.varFlag2 = true\n                    WeakAuras.ScanEvents(\"fonsas_CANCEL_BT\", true) \n                else\n                    aura_env.varFlag2 = false\n                    WeakAuras.ScanEvents(\"fonsas_CANCEL_BT\", false)\n                end\n                if varFlagLast ~= aura_env.varFlag2 then\n                    WeakAuras.ScanEvents(\"fonsas_CANCEL_BT\", aura_env.varFlag2) \n                end\n                \n                \n                local obWhenTemp, obTimerTemp, rune1TagTemp, rune2TagTemp  =  aura_env.obFunction_frost(bn)\n                \n                local a = obWhenTemp-aura_env.fixedGCD/2\n                local b = rime<0.1 and a<aura_env.fixedGCD+aura_env.gcdFreeWhen+0.1\n                local startG, durationG = GetSpellCooldown(46584)\n                \n                local multi = 1\n                if  aura_env.subUH then multi =2 end\n                \n                local d =  expire - (aura_env.config.reaction/1000)*10*multi <= aura_env.fixedGCD \n                \n                \n                local e = obWhenTemp+obTimerTemp <= aura_env.fixedGCD + (aura_env.config.reaction/1000)*10\n                \n                local f =  desync and aura_env.runes[bn].cd - aura_env.fixedGCD  <= (aura_env.config.reaction/1000)-2.45\n                --aura_env.nextAction=\"PES\"\n                \n                \n                local lost = false\n                local lostRune = aura_env.runes[bn].cd\n                if lostRune<0 then lostRune=0 end\n                if expire<lostRune then lost = true end\n                if (expire>0.075 and durationBT<=0) then lost = false end\n                --  --(lost)\n                \n                if (d or e or f) and not lost then\n                    \n                    if expire>0.075 and durationBT<=0 and expire<lostRune then\n                        WeakAuras.ScanEvents(\"fonsas_BT_full_new\", true)\n                        bt_full_flag = true\n                    end\n                    aura_env.nextAction=\"PES\" \n                    \n                elseif not lost then\n                    if HoWTimer<10 and not aura_env.totemDetected and durationH <=0 then\n                        aura_env.nextAction=\"HOW\"\n                        -- elseif UnitPower(\"player\")>=aura_env.FSRP and KM>0 and not b then\n                        --    aura_env.nextAction=\"FS\"\n                    elseif rime>0.1 and KM>0.1 and UnitPower(\"player\")<121 then \n                        aura_env.nextAction=\"HB\"\n                    elseif rime>0.1 and KM>0.1 and UnitPower(\"player\")>=aura_env.FSRP then \n                        aura_env.nextAction=\"FS\"\n                    elseif (desync) and aura_env.runes[bn].cd - aura_env.fixedGCD  <= (aura_env.config.reaction/1000)-2.45 then\n                        aura_env.nextAction=\"PES\"\n                        \n                    elseif rime>0.1 and UnitPower(\"player\")<110 then \n                        aura_env.nextAction=\"HB\"\n                    elseif UnitPower(\"player\")>=aura_env.FSRP*2.3 then \n                        aura_env.nextAction=\"FS\"\n                        -- elseif durationG- aura_env.fixedGCD <=0.1 and UA1<16.5 and UA1>1  and aura_env.RDencounter  then\n                        --    aura_env.nextAction=\"RD\"\n                    elseif aura_env.runes[bn].cd <= (aura_env.config.reaction/1000) then\n                        aura_env.nextAction=\"PES\"\n                    elseif UnitPower(\"player\")>=aura_env.FSRP then \n                        aura_env.nextAction=\"FS\"\n                    elseif not desync and aura_env.desyncFlag and expire>aura_env.runes[bl].cd+aura_env.fixedGCD+(aura_env.config.reaction/1000) and aura_env.runes[bn].cd <= (aura_env.config.reaction/1000) then\n                        aura_env.nextAction=\"BS\" \n                    elseif durationH <=0 and BT1==0 then\n                        aura_env.nextAction=\"HOW\"    \n                    elseif (not desync or aura_env.desyncFlag) and expire>aura_env.runes[bl].cd+aura_env.fixedGCD+(aura_env.config.reaction/1000) then\n                        aura_env.nextAction=\"BS\" \n                    else\n                        aura_env.nextAction=\"PES\"\n                    end\n                    \n                    WeakAuras.ScanEvents(\"fonsas_BT_full_new\", false)   \n                    \n                elseif lost then\n                    WeakAuras.ScanEvents(\"fonsas_UA\", false) \n                    WeakAuras.ScanEvents(\"fonsas_ERW_frost\", false)\n                    WeakAuras.ScanEvents(\"fonsas_Pesti_ERW_frost\", false)\n                    \n                    if expire>0.075 and durationBT<=0  then\n                        aura_env.nextAction=\"PES\"\n                        WeakAuras.ScanEvents(\"fonsas_BT_full_new\", true)\n                        bt_full_flag = true\n                        \n                        ----(\"BT FULL WHERE?\")\n                    elseif aura_env.runes[fn].cd<=aura_env.runes[un].cd and aura_env.runes[fn].cd<=(aura_env.runes[bn].cd + aura_env.gcdFreeWhen + aura_env.fixedGCD+0.05) and ff<=aura_env.runes[fn].cd+2.5 then\n                        if UnitPower(\"player\")>=aura_env.FSRP and aura_env.runes[fn].cd > aura_env.fixedGCD/2 then \n                            aura_env.nextAction=\"FS\" \n                        else\n                            aura_env.nextAction=\"IT\"\n                        end\n                    elseif aura_env.runes[un].cd<=aura_env.runes[fn].cd and aura_env.runes[un].cd<=(aura_env.runes[bn].cd + aura_env.gcdFreeWhen + aura_env.fixedGCD+0.05) and uh<=aura_env.runes[un].cd+2.5 then\n                        if UnitPower(\"player\")>=aura_env.FSRP and aura_env.runes[fn].cd > aura_env.fixedGCD/2 then \n                            aura_env.nextAction=\"FS\" \n                        else\n                            aura_env.nextAction=\"PS\"\n                        end\n                    else\n                        if UnitPower(\"player\")>=aura_env.FSRP and aura_env.runes[fn].cd > aura_env.fixedGCD/2 then \n                            aura_env.nextAction=\"FS\" \n                        else\n                            aura_env.nextAction=\"BS\"\n                        end\n                    end\n                    \n                end\n                \n            end\n            \n            \n        else\n            \n            --   --(\"-- perdeu perdendo\")\n            \n            \n            WeakAuras.ScanEvents(\"fonsas_UA\", false) \n            WeakAuras.ScanEvents(\"fonsas_ERW_frost\", false)\n            WeakAuras.ScanEvents(\"fonsas_Pesti_ERW_frost\", false)\n            \n            if aura_env.runes[fn].cd<=aura_env.runes[un].cd and aura_env.runes[fn].cd<=(aura_env.runes[bn].cd + aura_env.gcdFreeWhen + aura_env.fixedGCD/2) and ff<=fnCap then\n                if UnitPower(\"player\")>=aura_env.FSRP and aura_env.runes[fn].cd > aura_env.fixedGCD/2 then \n                    aura_env.nextAction=\"FS\" \n                else\n                    aura_env.nextAction=\"IT\"\n                end\n                -- --(\"IT?\")\n            elseif aura_env.runes[un].cd<=aura_env.runes[fn].cd and aura_env.runes[un].cd<=(aura_env.runes[bn].cd + aura_env.gcdFreeWhen + aura_env.fixedGCD/2) and uh<=unCap then\n                if UnitPower(\"player\")>=aura_env.FSRP and aura_env.runes[fn].cd > aura_env.fixedGCD/2 then \n                    aura_env.nextAction=\"FS\" \n                else\n                    aura_env.nextAction=\"PS\"\n                end\n                -- --(\"PS?\")\n            else\n                --  --(\"BS?\")\n                if UnitPower(\"player\")>=aura_env.FSRP and aura_env.runes[fn].cd > aura_env.fixedGCD/2 then \n                    aura_env.nextAction=\"FS\" \n                else\n                    aura_env.nextAction=\"BS\"\n                end\n            end\n            \n            \n        end\n    end\n    \n    -- --(\"--\")\n    \n    local uaR = 0\n    \n    if aura_env.runes[fn].cd<=0.05 then \n        uaR=fn \n    elseif (aura_env.runes[fn].cd>aura_env.runes[1].cd and GetRuneType(1)==4) then \n        uaR=1 \n    elseif (aura_env.runes[fn].cd>aura_env.runes[2].cd and GetRuneType(2)==4) then \n        uaR=2\n    end\n    \n    if  aura_env.nextAction==\"OB\" and expire>1.5*aura_env.fixedGCD and ((desync and not aura_env.subUHor)or(aura_env.obCounter == 0)) then\n        local obWhenTemp, obTimerTemp, rune1TagTemp, rune2TagTemp  =  aura_env.obFunctionUA_frost(uaR)\n        \n        local uab1 = GetRuneType(1) == 4 and aura_env.runes[fn].cd >= (aura_env.config.reaction/1000)*1.5\n        local cond2 =  rune1TagTemp==1 and aura_env.runes[rune1TagTemp].cd>= aura_env.runes[rune2TagTemp].cd and obWhenTemp<2.5\n        local cond3 =  rune2TagTemp==1 and aura_env.runes[rune2TagTemp].cd>= aura_env.runes[rune1TagTemp].cd and obWhenTemp<2.5\n        local cond4 = (rune2TagTemp+rune1TagTemp==3)\n        if durationUA<=0 and durationBT<=0 and uab1 then\n            WeakAuras.ScanEvents(\"fonsas_UA\", true)\n        elseif durationUA<=0 and durationBT<=0 and not cond2 and not cond3 and not cond4 then\n            WeakAuras.ScanEvents(\"fonsas_UA\", true)\n        else\n            WeakAuras.ScanEvents(\"fonsas_UA\", false) \n        end\n    else\n        WeakAuras.ScanEvents(\"fonsas_UA\", false) \n        if durationUA<=0 and expire>9 and GetRuneType(bn)==4 and GetRuneType(bl)==4 and (aura_env.runes[bn].cd<=0 or aura_env.runes[fn].cd<=0) then\n            WeakAuras.ScanEvents(\"fonsas_UA_full\", true) \n        else\n            WeakAuras.ScanEvents(\"fonsas_UA_full\", false)  --fonsas_UA_full\n        end\n        \n        \n        if durationUA>40 and durationBT<=0 and UA1>10 and aura_env.lastCastID==50842 and aura_env.runes[1].cd>=5 and (GetRuneType(1)==4 or GetRuneType(2)==4) and aura_env.runes[2].cd<aura_env.runes[fn].cd and aura_env.runes[2].cd<aura_env.runes[un].cd and aura_env.runes[un].cd>0.3  and aura_env.runes[fn].cd>0.3 then \n            \n            WeakAuras.ScanEvents(\"fonsas_BT_full\", true) \n        end\n        \n    end\n    \n    if bt_full_flag==false or durationBT>=0 then\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false) \n        \n    end\n    \n    local var =  aura_env.TTD-aura_env.fixedGCD+aura_env.gcdFreeWhen<32 or UA1>1\n    local var2 = GetRuneType(bl)==4 or (GetRuneType(bn)==4 and aura_env.runes[bl].cd<0)\n    \n    if (aura_env.lastCastID == 50842 or aura_env.lastCastID == 51429 or aura_env.lastCastID == 51428 or aura_env.lastCastID == 51427 or aura_env.lastCastID == 51426) and durationERW<=1.5 and var and GetRuneType(1)==4 and  GetRuneType(2)==4  then \n        WeakAuras.ScanEvents(\"fonsas_ERW_frost\", true)\n        WeakAuras.ScanEvents(\"fonsas_CANCEL_BT\", false)\n        WeakAuras.ScanEvents(\"fonsas_ERW_PLUS\", false)\n    elseif aura_env.nextAction==\"PES\" and durationERW<=1.5 and var2 and (aura_env.TTD-aura_env.fixedGCD+aura_env.gcdFreeWhen<30 or UA1>1) then   \n        WeakAuras.ScanEvents(\"fonsas_ERW_frost\", true)\n        WeakAuras.ScanEvents(\"fonsas_CANCEL_BT\", false)\n        WeakAuras.ScanEvents(\"fonsas_ERW_PLUS\", true)\n    else\n        WeakAuras.ScanEvents(\"fonsas_ERW_frost\", false)\n        WeakAuras.ScanEvents(\"fonsas_ERW_PLUS\", false)\n    end\n    \n    if aura_env.lastCastID==49930 and aura_env.nextAction==\"BS\" then aura_env.nextAction=\"PES\" end\n    if aura_env.lastCastID~=50842 and aura_env.nextAction==\"BS\" and UA1>10 and expire<10 then aura_env.nextAction=\"PES\" end\n    --if timeNow+aura_env.gcdFreeWhen-aura_env.combatStart>6.2 and aura_env.nextAction==\"FS\" and UnitPower(\"player\")<=60 \n    \n    \n    if lastAction ~= aura_env.nextAction or aura_env.init<3 then \n        if aura_env.nextAction==\"OB\" and  (rune2Tag~=1 or rune1Tag~=1  or  rune2Tag~=2 or rune1Tag~=2) then \n            aura_env.desyncCounter = aura_env.desyncCounter + 1\n        else\n            aura_env.desyncCounter = 0\n        end\n        \n        aura_env.stampWhenChanged = aura_env.gcdStamp\n        aura_env.init = aura_env.init +1\n        \n        if aura_env.lastCastID==49930 and aura_env.nextAction==\"BS\" then aura_env.nextAction=\"PES\" end\n        WeakAuras.ScanEvents(\"fonsas_action\", aura_env.nextAction) \n        \n        -- --(rime)\n        \n        local startG, durationG = GetSpellCooldown(46584)\n        if ((aura_env.nextAction==\"FS\" and rime<=0 and KM<=0) or aura_env.nextAction==\"HOW\") and durationG<=1.5  and aura_env.RDencounter and UA1>0 and UA1<18 and not aura_env.varFlag2 and UnitPower(\"player\")<120 then\n            WeakAuras.ScanEvents(\"fonsas_RD2\", true) \n        else\n            WeakAuras.ScanEvents(\"fonsas_RD2\", false) \n        end\n        \n    end\n    \n    \nend\n\n\n\n",
 						["check"] = "update",
-						["spellName"] = 85256,
+						["debuffType"] = "HELPFUL",
 						["events"] = "RUNE_POWER_UPDATE, PLAYER_TARGET_CHANGED, UNIT_POWER_UPDATE, PLAYER_AURAS_CHANGED, UNIT_SPELLCAST_SUCCEEDED",
-						["custom_hide"] = "custom",
+						["spellName"] = 85256,
 						["charges_operator"] = "==",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -15462,7 +15473,7 @@ WeakAurasSaved = {
 						},
 						["subeventSuffix"] = "_CAST_START",
 						["showOn"] = "showOnCooldown",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["unit"] = "player",
 						["names"] = {
 						},
@@ -15480,9 +15491,9 @@ WeakAurasSaved = {
 						["duration"] = "1",
 						["custom"] = "function(event, rune, status)\n    if event == \"RUNE_POWER_UPDATE\" and rune then\n        aura_env.runes[rune].free = status\n        \n        if status then\n            \n            aura_env.runes[rune].cd = 0\n            --[[  if aura_env.bloodTapLock and rune==1 or rune==2 then\n                aura_env.bloodTapLock = false\n            end]]\n            \n        else\n            --print(aura_env.lastCastID)--==49930\n            aura_env.runeUsed = rune\n            local start, duration = GetRuneCooldown(rune)\n            aura_env.runes[rune].when = start + duration \n            \n            aura_env.usedRune = rune\n            \n            --[[if aura_env.nextAction~=\"DD\" and rune==1 and aura_env.config.bloodTapFlag then\n                \n                \n                local start, duration = GetSpellCooldown(45529)\n                if duration<=1.5 and aura_env.lastCastID ~= 47568 then\n                    -- print(aura_env.runes[2].cd)\n                    local a = aura_env.runes[2].cd>3.2\n                    --print(a)\n                    local b = aura_env.ff+1<aura_env.runes[5].cd and aura_env.ff+1<aura_env.runes[6].cd \n                    --print(b)\n                    local c = aura_env.uh+1<aura_env.runes[3].cd and aura_env.uh<aura_env.runes[4].cd\n                    -- print(c)\n                    local d = aura_env.des+1<aura_env.runes[2].cd\n                    -- print(d)\n                    local e = aura_env.gf<aura_env.runes[3].cd and aura_env.gf<aura_env.runes[4].cd\n                    -- print(e)\n                    if a or b or c or d or e then\n                        --print(a)\n                        WeakAuras.ScanEvents(\"fonsas_actionBT\") \n                        aura_env.bloodTapPredict = GetTime()\n                        aura_env.bloodTapLock = true\n                        aura_env.initBT = 0\n                    end\n                end\n            end\n            ]]\n        end\n    end\nend",
 						["check"] = "event",
-						["spellName"] = 85256,
+						["debuffType"] = "HELPFUL",
 						["events"] = "RUNE_POWER_UPDATE",
-						["custom_hide"] = "custom",
+						["spellName"] = 85256,
 						["charges_operator"] = "==",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -15497,7 +15508,7 @@ WeakAurasSaved = {
 						},
 						["subeventSuffix"] = "_CAST_START",
 						["showOn"] = "showOnCooldown",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["unit"] = "player",
 						["names"] = {
 						},
@@ -15515,9 +15526,9 @@ WeakAurasSaved = {
 						["duration"] = "1",
 						["custom"] = "function(event, a1, a2, a3)\n    --print(a3)\n    \n    \n    \n    \n    \n    if a3==51425 then aura_env.obCounter = aura_env.obCounter +1 end\n    \n    if a3==45529 then \n        if aura_env.blood1Type==4 then\n            aura_env.blood1Type_cancelBT = false\n        else\n            aura_env.blood1Type_cancelBT = true\n        end\n        \n        local KM, rime, how, totem, UA1, BT1 = aura_env.trackB_frost()\n        \n        local start, duration = GetSpellCooldown(51271)--ua\n        if UA1==0 and aura_env.config.bloodTapFlag and duration<=10 then \n            WeakAuras.ScanEvents(\"fonsas_UAfull\", true) \n        else\n            WeakAuras.ScanEvents(\"fonsas_UAfull\", false) \n        end\n    else\n        aura_env.blood1Type = GetRuneType(1)\n        WeakAuras.ScanEvents(\"fonsas_UAfull\", false)     \n    end\n    \n    if a3==51271 then --ua\n        -- print(\"UA WAS LOGGED\")\n        aura_env.UAcast = GetTime()\n    end\n    \n    if a3==45529 then --BT\n        aura_env.BTcast = GetTime()\n    end\n    \n    \n    \n    if a3==57623 then --HoW\n        aura_env.HoWcast = GetTime()\n    end\n    --ocal startBT, durationBT = GetSpellCooldown(45529)--bt\n    \n    \n    if a3==66198 or a3==51423 or a3==51424 or a3==51425 then \n        aura_env.OBlock=false    \n    end\n    \n    if a3==51426 or  a3==50842 or  a3==51427 or  a3==51429 then \n        local start, duration = GetSpellCooldown(47568) -- ERW\n        \n        local ff, uh =aura_env.trackD_frost()\n        if duration <=1.5 and ff>0.5 and uh>0.5 then\n            local KM, rime, how, totem, UA = aura_env.trackB_frost()\n            --print(UA)\n            --print(GetRuneType(1)==4)\n            --print(GetRuneType(2)==4)\n            if UA>=8 and GetRuneType(1)==4 and GetRuneType(2)==4 then\n                WeakAuras.ScanEvents(\"fonsas_ERWfrost\", true)  \n            end\n        end\n        \n    else\n        WeakAuras.ScanEvents(\"fonsas_ERWfrost\", false) \n    end\n    \n    local lastGCD = aura_env.gcdStamp\n    local start, duration = GetSpellCooldown(61304)\n    aura_env.gcdWhen = start+duration+ aura_env.config.reaction/1000\n    --print(start-GetTime())\n    if duration>0 then\n        aura_env.fixedGCD = duration\n    end \n    aura_env.gcdStamp = start+duration\n    if lastGCD ~= aura_env.gcdStamp then\n        aura_env.gcdStampLast = lastGCD\n        --print(aura_env.gcdStampLast)\n        --[[if aura_env.bloodTapLock then\n            --print(\"tap lock false?\")\n            --print(aura_env.initBT)\n            if aura_env.initBT==0 then\n                aura_env.initBT = 1\n            else\n                aura_env.bloodTapLock = false\n            end\n            \n        end]]\n    end\n    if a3==47568 then \n        aura_env.desyncCounter = 0\n        aura_env.ERWcounter=GetTime()\n        aura_env.bloodTapLock = false\n        aura_env.runes[1].cd = 0\n        aura_env.runes[2].cd = 0\n        aura_env.runes[3].cd = 0\n        aura_env.runes[4].cd = 0\n        aura_env.runes[5].cd = 0\n        aura_env.runes[6].cd = 0\n        aura_env.runes[1].when = GetTime()\n        aura_env.runes[2].when = GetTime()\n        aura_env.runes[3].when = GetTime()\n        aura_env.runes[4].when = GetTime()\n        aura_env.runes[5].when = GetTime()\n        aura_env.runes[6].when = GetTime()\n    end\n    \n    \n    \n    aura_env.lastCastID  = a3\n    -- print(a3)\n    -- if aura_env.lastCastBlood==49930\n    \n    \nend\n\n\n",
 						["check"] = "event",
-						["spellName"] = 85256,
+						["debuffType"] = "HELPFUL",
 						["events"] = "UNIT_SPELLCAST_SUCCEEDED:player",
-						["custom_hide"] = "custom",
+						["spellName"] = 85256,
 						["charges_operator"] = "==",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -15532,7 +15543,7 @@ WeakAurasSaved = {
 						},
 						["subeventSuffix"] = "_CAST_START",
 						["showOn"] = "showOnCooldown",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["unit"] = "player",
 						["names"] = {
 						},
@@ -15550,9 +15561,9 @@ WeakAurasSaved = {
 						["duration"] = "1",
 						["custom"] = "function(event, action)\n    --aura_env.nextAction=\"BT_full\"\n    if action == \"BP\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", true) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n    elseif action == \"clear\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n    elseif action == \"DD\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", true) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n    elseif action == \"IT\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", true) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n    elseif action == \"PS\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", true) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n    elseif action == \"BS\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", true) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n    elseif action == \"DC\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", true) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n    elseif action == \"BB\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", true) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n    elseif action == \"GF\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", true) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n    elseif action == \"HOW\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false)\n        WeakAuras.ScanEvents(\"fonsas_HOW\", true)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n        \n    elseif action == \"UP\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false)\n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", true) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n        \n    elseif action == \"OB\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false)\n        WeakAuras.ScanEvents(\"fonsas_OB\", true)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n        \n        \n    elseif action == \"HB\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", true)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n        \n        \n    elseif action == \"FS\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", true)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n        \n    elseif action == \"PES\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", true)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n    elseif action == \"RD\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", true)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n    elseif action == \"BT_full\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", true)\n    end\nend",
 						["check"] = "event",
-						["spellName"] = 85256,
+						["debuffType"] = "HELPFUL",
 						["events"] = "fonsas_action",
-						["custom_hide"] = "custom",
+						["spellName"] = 85256,
 						["charges_operator"] = "==",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -15567,7 +15578,7 @@ WeakAurasSaved = {
 						},
 						["subeventSuffix"] = "_CAST_START",
 						["showOn"] = "showOnCooldown",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["unit"] = "player",
 						["names"] = {
 						},
@@ -15585,9 +15596,9 @@ WeakAurasSaved = {
 						["duration"] = "1",
 						["custom"] = "function()\n\nlocal nameTalent, icon, tier, column, currRank= GetTalentInfo(3,2)\naura_env.DDdur = 30 - (5*currRank)\nlocal nameTalent, icon, tier, column, currRank= GetTalentInfo(3,25)\naura_env.GFtalented = currRank\n\nend",
 						["check"] = "event",
-						["spellName"] = 85256,
+						["debuffType"] = "HELPFUL",
 						["events"] = "PLAYER_TARGET_CHANGED",
-						["custom_hide"] = "custom",
+						["spellName"] = 85256,
 						["charges_operator"] = "==",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -15602,7 +15613,7 @@ WeakAurasSaved = {
 						},
 						["subeventSuffix"] = "_CAST_START",
 						["showOn"] = "showOnCooldown",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["unit"] = "player",
 						["names"] = {
 						},
@@ -15800,38 +15811,17 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "DK Next Action Guide - by Fonsas",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 135771,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.ERWcounter = GetTime() -300\naura_env.obCounter = 0\naura_env.bsPes = \"\"\naura_env.usedRune = 0\naura_env.blood1Type = GetRuneType(1)\naura_env.blood1Type_cancelBT = false\n--print( GetRuneType(1))\naura_env.combatStart = GetTime()\naura_env.RDencounter = false or aura_env.config.RDencounter\n\nlocal hit = GetCombatRatingBonus(CR_HIT_MELEE) + GetHitModifier();\nlocal exp = GetExpertise();\naura_env.desyncFlag = false\nif exp>=aura_env.config.expRating and hit>=aura_env.config.hitRating and aura_env.config.normalR==false then aura_env.desyncFlag = true end\n--print(aura_env.config.normalR)\n\nlocal nameTalent, icon, tier, column, currRank, maxRank= GetTalentInfo(3,5);\naura_env.subUH = false\nif currRank >1 then aura_env.subUH = true end\n\n\n\n\n\n\naura_env.desyncCounter = 0\n\n\n\n--print( aura_env.subUH)\n--[[\nfor tab = 1, GetNumTalentTabs() do\n    for talent = 1, GetNumTalents(tab) do\n        -- print(GetTalentInfo(tab, talent))\n        \n        local nameTalent, icon, tier, column, currRank, maxRank= GetTalentInfo(tab,talent);\n        if nameTalent==\"Epidemic\" then \n            print(tab) \n            print(talent)     \n        end\n    end\nend\n]]\n\n\naura_env.OBlock=false \naura_env.varFlag1 = false\naura_env.varFlag2 = false\naura_env.totemDetected = false\n\nlocal startUA, durationUA = GetSpellCooldown(51271)--ua\\\nif durationUA<=10 and durationUA>1.5 then\n    aura_env.UAcast = GetTime() - 10\nelseif durationUA<=1.5 then\n    aura_env.UAcast = GetTime() - 60\nelse aura_env.UAcast = 0    \nend\n\nlocal startBT, durationBT = GetSpellCooldown(45529)--bt\\\nif durationBT<=10 and durationBT>1.5 then\n    aura_env.BTcast = GetTime() - 10\nelseif durationBT<=1.5 then\n    aura_env.BTcast = GetTime() - 60\nelse aura_env.BTcast = 0    \nend\n\n\nlocal startH, durationHoW = GetSpellCooldown(57330)\nif durationHoW<=1.5 then\n    aura_env.HoWcast = GetTime() - 20\nelse aura_env.HoWcast = 0    \nend\n\naura_env.oblitWhen = 0\naura_env.varFlag = false\n\naura_env.desync = false\n\naura_env.desyncCounter = 0\n\naura_env.lastRune1 = 0\naura_env.lastRune2 = 0\n\naura_env.runeUsed = 0\n\n\naura_env.stampWhenChanged = 0\n\n\naura_env.BTpredict = false\naura_env.initBT = 0\naura_env.lastCastID = 0\naura_env.bloodTapPredict = GetTime()\n\naura_env.ff = 0\naura_env.uh = 0\naura_env.des = 0\naura_env.gf = 0\n\n\n\naura_env.PEScasted = false\n\naura_env.FSRP = 40\nfor i = 1, 6 do\n    local enabled, glyphType, glyphTooltipIndex, glyphSpellID, icon = GetGlyphSocketInfo(i);\n    \n    if glyphSpellID== 237635 then\n        aura_env.FSRP = 32\n    end\nend \n\naura_env.GetNumDebuffs =  function()\n    local a=0; while UnitAura(\"target\", a+1, \"PLAYER|HARMFUL\") do a=a+1 end\n    --print(a)\n    return a;\nend\naura_env.GetNumBuffs =  function()\n    local a=0; while UnitAura(\"player\", a+1, \"HELPFUL\") do a=a+1 end\n    --print(a)\n    return a;\nend\n\naura_env.trackD_frost = function() \n    \n    local expireFF = 0\n    local expureUh = 0\n    \n    for i=1,aura_env.GetNumDebuffs() do \n        -- n, rank, icon, count, debuffType, dur, expirationTime, unitCaster, isStealable, shouldConsolidate, id \n        local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura(\"target\", i, \"PLAYER|HARMFUL\")\n        --print(locname)\n        -- print(GetTime())\n        --print(expireWhen)\n        \n        --55095 67719 67767 69917 \n        if name==\"Frost Fever\" or id == 55095 or id == 67719 or id == 67767 or id == 69917 then\n            --print(id)\n            expireFF  = expireWhen - GetTime()\n        end\n        -- BP fest           \n        if name==\"Blood Plague\" or id ==55264  or id ==55973   or id ==55322  or id ==57601  or id ==58840  or id ==58844  or id ==59984  or id ==60950  or id ==61111  or id ==61601  or id ==67722  or id ==69911  or id ==55078  or id ==71923  then\n            --print(id)\n            expureUh = expireWhen - GetTime()\n        end\n        \n    end\n    \n    return expireFF, expureUh\n    \n    \nend\n\naura_env.cancelBT_frost = function() \n    local BT = 0 \n    for i=1,aura_env.GetNumBuffs() do \n        -- n, rank, icon, count, debuffType, dur, expirationTime, unitCaster, isStealable, shouldConsolidate, id \n        local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura(\"player\", i, \"HELPFUL\")\n        -- print(name)\n        if name==\"Blood Tap\" or id ==45529 then\n            print(\"BT found, cancelling\")\n            CancelUnitBuff(\"player\", i)\n            print(\"BT cancel worked\")\n        end\n    end\nend\n\n\n\naura_env.trackB_frost = function() \n    local KM = 0\n    local rime = 0\n    local how = 0\n    local totem = false\n    local UA = 0\n    local BT = 0\n    local speed = 0\n    --local uhP = false\n    \n    for i=1,aura_env.GetNumBuffs() do \n        -- n, rank, icon, count, debuffType, dur, expirationTime, unitCaster, isStealable, shouldConsolidate, id \n        local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura(\"player\", i, \"HELPFUL\")\n        -- print(name)\n        \n        if name==\"Horn of Winter\" or id ==57330 or id == 57623 then\n            --print(id)\n            how  = expireWhen - GetTime()\n        end\n        \n        if name==\"Killing Machine\" or id == 51124 then\n            -- print(id)\n            KM  = expireWhen - GetTime()\n        end\n        if name==\"Freezing Fog\" or id ==59052 then\n            --print(id)\n            rime  = expireWhen - GetTime()\n        end\n        \n        if name==\"Strength of Earth\" or id ==58646 or id == 10441 or id == 25362 or id == 25527 or id == 57621 then\n            --print(id)\n            totem  = true\n        end\n        \n        if name==\"Unbreakable Armor\" or id ==51271 then\n            --print(id)\n            UA  = expireWhen - GetTime()\n        end\n        if name==\"Blood Tap\" or id ==45529 then\n            -- print(id)\n            BT  = expireWhen - GetTime()\n        end\n        if name==\"Speed\" or id ==53908 then\n            --print(id)\n            speed  = expireWhen - GetTime()\n            --print(speed)\n        end\n    end\n    \n    return KM, rime, how, totem, UA, BT, speed\n    \n    --KM, rime, HoWTimer, totem\nend\n\n\n\naura_env.encounter = false or aura_env.config.gary\naura_env.oStep = 0\naura_env.DDwhen = 0\naura_env.castStamp = 0\nlocal start, duration = GetSpellCooldown(61304)\naura_env.gcdWhen = start+duration+ aura_env.config.reaction/1000\naura_env.fixedGCD = 1.5\naura_env.gcdStamp = start+duration\naura_env.gcdStampLast = 0\n\n\n\naura_env.init = 0\naura_env.runes = {}\n\n\naura_env.bloodTapLock = false\naura_env.DDlock = false\n\n\naura_env.runes[1] = {free=true, when=0, cd=0} --1\naura_env.runes[2] = {free=true, when=0, cd=0} --2\naura_env.runes[5] = {free=true, when=0, cd=0} --5\naura_env.runes[6] = {free=true, when=0, cd=0} --6\naura_env.runes[3] = {free=true, when=0, cd=0} --3\naura_env.runes[4] = {free=true, when=0, cd=0} --4\n\nWeakAuras.WatchGCD()\naura_env.gcdWhen = WeakAuras.CalculatedGcdDuration()\naura_env.gcdFreeWhen =0\n\naura_env.nextAction = \"clear\"\nWeakAuras.ScanEvents(\"fonsas_action\", aura_env.nextAction) \n\n\n--[[\n\naura_env.runeState_frost = function(ff, uh)\n    local sync = true\n    \n    local expire = 0\n    if ff<uh then expire = ff else expure = uh end\n    expire = expire - aura_env.gcdFreeWhen\n    local rune1CD = 20\n    local rune1Tag = 3\n    local rune1CDN = 20\n    local rune1TagN = 4\n    local rune1CDNN = 20\n    local rune1TagNN = 1\n    \n    \n    if aura_env.runes[3].cd<=aura_env.runes[4].cd then \n        rune1CD = aura_env.runes[3].cd\n        rune1Tag = 3\n    else\n        rune1CD = aura_env.runes[4].cd\n        rune1Tag = 4\n    end\n    \n    if aura_env.runes[3].cd<=0 then \n        rune1CD = aura_env.runes[3].cd\n        rune1Tag = 3\n    elseif aura_env.runes[4].cd<=0 then \n        rune1CD = aura_env.runes[4].cd\n        rune1Tag = 4\n    end\n    \n    if aura_env.runes[5].cd<=aura_env.runes[6].cd then \n        rune2CD = aura_env.runes[5].cd\n        rune2Tag = 5\n    else\n        rune2CD = aura_env.runes[6].cd\n        rune2Tag = 6\n    end\n    if aura_env.runes[5].cd<=0 then \n        rune2CD = aura_env.runes[5].cd\n        rune2Tag = 5\n    elseif aura_env.runes[6].cd<=0 then \n        rune2CD = aura_env.runes[6].cd\n        rune2Tag = 6\n    end\n    \n    local death = 0 \n    local other = 0\n    \n    if GetRuneType(1)==4 and GetRuneType(2)==4 then \n        if aura_env.runes[1].cd<=aura_env.runes[2].cd then \n            death = 1\n            other = 2\n        else \n            death = 2\n            other = 1\n        end\n    elseif GetRuneType(1)==4  then\n        death = 1\n        other = 2\n    elseif GetRuneType(2)==4  then\n        death = 2\n        other = 1\n    end\n    \n    if death>0 then \n        local runeCD = 0\n        local runeTag = 0\n        if rune2CD>rune1CD and rune2CD>aura_env.runes[death].cd and expire > aura_env.config.reaction/1000*3+ 2*aura_env.fixedGCD and expire > aura_env.runes[other].cd + aura_env.config.reaction/1000*3 + 2*aura_env.fixedGCD then\n            if rune2CD>aura_env.runes[death].cd and expire-temp > aura_env.config.reaction/1000*4+ aura_env.fixedGCD then\n                \n            end\n        end\n    end\nend\n]]\n\n\naura_env.obFunction_frost = function(bn)\n    \n    local rune1CD = 20\n    local rune1Tag = 0\n    local rune2CD = 20\n    local rune2Tag = 0\n    \n    local rune1CD = aura_env.runes[6].cd\n    local rune1Tag = 6\n    local rune2CD = aura_env.runes[4].cd\n    local rune2Tag = 4\n    if  rune1CD<0 then rune1CD=0 end\n    if  rune2CD<0 then rune2CD=0 end\n    \n    local cd2 = aura_env.runes[3].cd\n    if cd2<=0 then cd2 = 0 end\n    --print(\"cd2: \" .. tostring(cd2))\n    if cd2 <= rune2CD then \n        rune2Tag=3\n        rune2CD=aura_env.runes[3].cd\n    end\n    local cd1 = aura_env.runes[5].cd\n    if cd1<=0 then cd1 = 0 end\n    if cd1 <= rune1CD then \n        rune1Tag=5\n        rune1CD=aura_env.runes[5].cd\n    end\n    \n    if  rune1CD<0 then rune1CD=0 end\n    if  rune2CD<0 then rune2CD=0 end\n    -- print()\n    -- print(GetTime() - aura_env.ERWcounter  + aura_env.gcdFreeWhen)\n    \n    local a = (rune1CD-rune2CD>0.1 or rune1CD-rune2CD<-0.1)\n    local b = (GetRuneType(1)~=1 or GetRuneType(2)~=1)\n    --local c =  (GetTime() - aura_env.ERWcounter + aura_env.gcdFreeWhen>2.9)\n    --print(a and b and c)\n    \n    if a and b then\n        -- pode haver death\n        if rune1CD<rune2CD then \n            if GetRuneType(2)~=1 then \n                local dcd  = aura_env.runes[2].cd  \n                if  dcd<0 then  dcd=0 end\n                if  dcd+0.01<rune2CD then \n                    rune2Tag=2\n                    rune2CD=aura_env.runes[2].cd\n                end\n            end\n            if  rune2CD<0 then rune2CD=0 end\n            if GetRuneType(1)~=1 then \n                local dcd  = aura_env.runes[1].cd  \n                if  dcd<0 then  dcd=0 end\n                if  dcd+0.01<rune2CD then \n                    rune2Tag=1\n                    rune2CD=aura_env.runes[1].cd\n                end\n            end\n            if  rune2CD<0 then rune2CD=0 end\n        else \n            if GetRuneType(2)~=1 then \n                local dcd  = aura_env.runes[2].cd  \n                if  dcd<0 then  dcd=0 end\n                if  dcd+0.01<rune1CD then \n                    rune1Tag=2\n                    rune1CD=aura_env.runes[2].cd\n                end\n            end\n            if  rune1CD<0 then rune1CD=0 end\n            if GetRuneType(1)~=1 then \n                local dcd  = aura_env.runes[1].cd  \n                if  dcd<0 then  dcd=0 end\n                if  dcd+0.01<rune1CD then \n                    rune1Tag=1\n                    rune1CD=aura_env.runes[1].cd\n                end\n            end\n            if  rune1CD<0 then rune1CD=0 end\n        end\n    end\n    \n    if (GetRuneType(1)~=1 and GetRuneType(2)~=1)  then \n        if (aura_env.runes[2].cd<aura_env.runes[3].cd and aura_env.runes[2].cd<aura_env.runes[4].cd and aura_env.runes[2].cd<aura_env.runes[5].cd and aura_env.runes[2].cd<aura_env.runes[6].cd and\n            aura_env.runes[1].cd<aura_env.runes[3].cd and aura_env.runes[1].cd<aura_env.runes[4].cd and aura_env.runes[1].cd<aura_env.runes[5].cd and aura_env.runes[1].cd<aura_env.runes[6].cd) and (aura_env.runes[3].cd>0 and aura_env.runes[4].cd>0 and aura_env.runes[5].cd>0 and aura_env.runes[6].cd>0) then \n            \n            rune1Tag=1\n            rune1CD=aura_env.runes[1].cd\n            rune2Tag=2\n            rune2CD=aura_env.runes[2].cd\n            if  rune1CD<0 then rune1CD=0 end\n            if  rune2CD<0 then rune2CD=0 end\n        end    \n    end\n    \n    \n    --[[ for i=1, 6 do \n        if i~=3 and i~=4 and i~=bn then\n            local cd = aura_env.runes[i].cd\n            if cd<0 then cd = 0 end\n            if cd <= rune1CD then \n                if GetRuneType(i)~=1 then \n                    local a = i\n                    local b = a==1 or a==2 or a==3\n                    if a==6 and aura_env.runes[5].cd==0 then \n                        a=5\n                    elseif a==4 and aura_env.runes[3].cd==0 then \n                        a=3\n                    elseif GetRuneType(1)~=1 and a==2 and aura_env.runes[1].cd==0 then\n                        a=1\n                    end\n                    rune1Tag=a\n                    rune1CD=aura_env.runes[a].cd\n                end\n            end\n        end\n    end\n    \n    for i=1, 4 do \n        if i~=bn and i~=rune1Tag then\n            local cd = aura_env.runes[i].cd\n            if cd<0 then cd = 0 end\n            if cd <= rune2CD then \n                if GetRuneType(i)~=1 then \n                    if GetRuneType(rune1Tag)==4 then\n                        rune2Tag=i \n                        rune2CD=aura_env.runes[i].cd \n                    elseif GetRuneType(rune1Tag)~=GetRuneType(i) then\n                        rune2Tag=i \n                        rune2CD=aura_env.runes[i].cd \n                    end\n                end\n            end\n        end\n    end\n    \n    ]]\n    \n    local fn, un, fl, ul = 0\n    if (aura_env.runes[3].cd)>(aura_env.runes[4].cd) then un=4 ul=3 else un=3 ul=4 end\n    if (aura_env.runes[5].cd)>(aura_env.runes[6].cd) then fn=6 fl=5 else fn=5 fl=6 end\n    \n    --[[ if aura_env.runes[3].cd<=0 then \n        rune2Tag = 3\n        rune2CD = aura_env.runes[3].cd\n    elseif aura_env.runes[4].cd<=0 then\n        rune2Tag = 4\n        rune2CD = aura_env.runes[4].cd\n    elseif GetRuneType(1)~=1 and  aura_env.runes[1].cd<=0 and rune1Tag ~= 1 and bn ~= 1 then\n        rune2Tag = 1\n        rune2CD = aura_env.runes[1].cd\n    elseif GetRuneType(2)~=1 and aura_env.runes[2].cd<=0 and rune1Tag ~= 2 and bn ~= 2 then\n        rune2Tag = 2\n        rune2CD = aura_env.runes[2].cd\n    end\n    \n    ]]\n    local obWhen = 0\n    local obRune = 0\n    if rune2CD<rune1CD then \n        obWhen = rune1CD \n        obRune = rune2Tag  \n    else \n        obWhen = rune2CD \n        obRune = rune1Tag  \n    end \n    if obWhen<0 then obWhen=0 end\n    local obTimer = 0\n    \n    if aura_env.runes[obRune].when - GetTime() - aura_env.gcdFreeWhen > -2.45 then\n        obTimer = 2.45+aura_env.runes[obRune].cd\n    end\n    \n    \n    local fncd = aura_env.runes[fn].when - GetTime() - aura_env.gcdFreeWhen + 2.45\n    local uncd = aura_env.runes[un].when - GetTime() - aura_env.gcdFreeWhen + 2.45\n    \n    \n    \n    if rune1Tag == 1 or rune1Tag == 2 then \n        if rune2Tag == 3 or rune2Tag == 4 then\n            if obTimer > fncd then \n                obTimer = fncd -0.1\n            end\n        elseif rune2Tag == 5 or rune2Tag == 6 then\n            if obTimer > uncd then \n                obTimer = uncd -0.1 \n            end\n        end\n    elseif rune2Tag == 1 or rune2Tag == 2 then \n        if rune1Tag == 3 or rune1Tag == 4 then\n            if obTimer > fncd then \n                obTimer = fncd -0.1 \n            end\n        elseif rune1Tag == 5 or rune1Tag == 6 then\n            if obTimer > uncd then \n                obTimer = uncd -0.1 \n            end\n        end\n        \n    end \n    \n    if obTimer<0 then \n        obTimer=0\n    end\n    \n    -- if obWhen == 0 then\n    --  obTimer = 0\n    -- end\n    \n    \n    return obWhen, obTimer, rune1Tag, rune2Tag\n    \n    \nend\n\n\n\naura_env.obFunctionUA_frost = function(bn)\n    \n    local rune1CD = 20\n    local rune1Tag = 0\n    local rune2CD = 20\n    local rune2Tag = 0\n    \n    local rune1CD = aura_env.runes[6].cd\n    local rune1Tag = 6\n    local rune2CD = aura_env.runes[4].cd\n    local rune2Tag = 4\n    if  rune1CD<0 then rune1CD=0 end\n    if  rune2CD<0 then rune2CD=0 end\n    \n    local cd2 = aura_env.runes[3].cd\n    if cd2<=0 then cd2 = 0 end\n    --print(\"cd2: \" .. tostring(cd2))\n    if cd2 <= rune2CD then \n        rune2Tag=3\n        rune2CD=aura_env.runes[3].cd\n    end\n    local cd1 = aura_env.runes[5].cd\n    if cd1<=0 then cd1 = 0 end\n    if cd1 <= rune1CD then \n        rune1Tag=5\n        rune1CD=aura_env.runes[5].cd\n    end\n    \n    if  rune1CD<0 then rune1CD=0 end\n    if  rune2CD<0 then rune2CD=0 end\n    \n    if (rune1CD-rune2CD>0.1 or rune1CD-rune2CD<-0.1) and (GetRuneType(1)~=1 or GetRuneType(2)~=1) then\n        -- pode haver death\n        if rune1CD<rune2CD then \n            if GetRuneType(2)~=1 and bn~=2 then \n                local dcd  = aura_env.runes[2].cd  \n                if  dcd<0 then  dcd=0 end\n                if  dcd+0.01<rune2CD then \n                    rune2Tag=2\n                    rune2CD=aura_env.runes[2].cd\n                end\n            end\n            if  rune2CD<0 then rune2CD=0 end\n            if GetRuneType(1)~=1  and bn~=1 then \n                local dcd  = aura_env.runes[1].cd  \n                if  dcd<0 then  dcd=0 end\n                if  dcd+0.01<rune2CD then \n                    rune2Tag=1\n                    rune2CD=aura_env.runes[1].cd\n                end\n            end\n            if  rune2CD<0 then rune2CD=0 end\n        else \n            if GetRuneType(2)~=1  and bn~=2 then \n                local dcd  = aura_env.runes[2].cd  \n                if  dcd<0 then  dcd=0 end\n                if  dcd+0.01<rune1CD then \n                    rune1Tag=2\n                    rune1CD=aura_env.runes[2].cd\n                end\n            end\n            if  rune1CD<0 then rune1CD=0 end\n            if GetRuneType(1)~=1 and bn~=1  then \n                local dcd  = aura_env.runes[1].cd  \n                if  dcd<0 then  dcd=0 end\n                if  dcd+0.01<rune1CD then \n                    rune1Tag=1\n                    rune1CD=aura_env.runes[1].cd\n                end\n            end\n            if  rune1CD<0 then rune1CD=0 end\n        end\n    end\n    \n    \n    local fn, un, fl, ul = 0\n    if (aura_env.runes[3].cd)>(aura_env.runes[4].cd) then un=4 ul=3 else un=3 ul=4 end\n    if (aura_env.runes[5].cd)>(aura_env.runes[6].cd) then fn=6 fl=5 else fn=5 fl=6 end\n    \n    if bn==5 then fn = 6 elseif bn==6 then fn = 5 end\n    \n    local obWhen = 0\n    local obRune = 0\n    if rune2CD<rune1CD then \n        obWhen = rune1CD \n        obRune = rune2Tag  \n    else \n        obWhen = rune2CD \n        obRune = rune1Tag  \n    end \n    if obWhen<0 then obWhen=0 end\n    local obTimer = 0\n    \n    if aura_env.runes[obRune].when - GetTime() - aura_env.gcdFreeWhen > -2.45 then\n        obTimer = 2.45+aura_env.runes[obRune].cd\n    end\n    \n    \n    local fncd = aura_env.runes[fn].when - GetTime() - aura_env.gcdFreeWhen + 2.45\n    local uncd = aura_env.runes[un].when - GetTime() - aura_env.gcdFreeWhen + 2.45\n    \n    \n    \n    if rune1Tag == 1 or rune1Tag == 2 then \n        if rune2Tag == 3 or rune2Tag == 4 then\n            if obTimer > fncd then \n                obTimer = fncd -0.1\n            end\n        elseif rune2Tag == 5 or rune2Tag == 6 then\n            if obTimer > uncd then \n                obTimer = uncd -0.1 \n            end\n        end\n    elseif rune2Tag == 1 or rune2Tag == 2 then \n        if rune1Tag == 3 or rune1Tag == 4 then\n            if obTimer > fncd then \n                obTimer = fncd -0.1 \n            end\n        elseif rune1Tag == 5 or rune1Tag == 6 then\n            if obTimer > uncd then \n                obTimer = uncd -0.1 \n            end\n        end\n        \n    end \n    \n    if obTimer<0 then \n        obTimer=0\n    end\n    \n    if obWhen == 0 then\n        obTimer = 0\n    end\n    \n    return obWhen, obTimer, rune1Tag, rune2Tag\nend\n\n\naura_env.obFunctionNextNext_frost = function(r1, r2)\n    \n    local rune1CD = 20\n    local rune1Tag = 0\n    local rune2CD = 20\n    local rune2Tag = 0\n    \n    \n    for i=1, 6 do \n        if i~=3 and i~=4 and i~=r1  and i~=r2  then\n            local cd = aura_env.runes[i].cd\n            if cd<0 then cd = 0 end\n            if cd <= rune1CD then \n                if GetRuneType(i)~=1 then \n                    local a = i\n                    local b = a==1 or a==2 or a==3\n                    if a==6 and aura_env.runes[5].cd==0 and r1~=5 and r2~=5  then \n                        a=5\n                    elseif a==4 and aura_env.runes[3].cd==0 and r1~=3 and r2~=3  then \n                        a=3\n                    elseif GetRuneType(1)~=1 and a==2 and aura_env.runes[1].cd==0  and r1~=1 and r2~=1  then\n                        a=1\n                    end\n                    rune1Tag=a\n                    rune1CD=aura_env.runes[a].cd\n                end\n            end\n        end\n    end\n    \n    for i=1, 4 do \n        if i~=r1  and i~=r2  and i~=rune1Tag then\n            local cd = aura_env.runes[i].cd\n            if cd<0 then cd = 0 end\n            if cd <= rune2CD then \n                if GetRuneType(i)~=1 then \n                    if GetRuneType(rune1Tag)==4 then\n                        rune2Tag=i \n                        rune2CD=aura_env.runes[i].cd \n                    elseif GetRuneType(rune1Tag)~=GetRuneType(i) then\n                        rune2Tag=i \n                        rune2CD=aura_env.runes[i].cd \n                    end\n                end\n            end\n        end\n    end\n    \n    \n    local fn, un, fl, ul = 0\n    if (aura_env.runes[3].cd)>(aura_env.runes[4].cd) then un=4 ul=3 else un=3 ul=4 end\n    if (aura_env.runes[5].cd)>(aura_env.runes[6].cd) then fn=6 fl=5 else fn=5 fl=6 end\n    \n    if r1==5 then fn = 6 elseif r1==6 then fn = 5 end\n    if r2==5 then fn = 6 elseif r2==6 then fn = 5 end\n    if r1==3 then un = 4 elseif r1==4 then un = 3 end\n    if r2==3 then un = 4 elseif r2==4 then un = 3 end\n    \n    if aura_env.runes[3].cd<=0 and r2~=3 and r1~=3 then \n        rune2Tag = 3\n        rune2CD = aura_env.runes[3].cd\n    elseif aura_env.runes[4].cd<=0 and r2~=4 and r1~=4 then\n        rune2Tag = 4\n        rune2CD = aura_env.runes[4].cd\n    elseif GetRuneType(1)~=1 and  aura_env.runes[1].cd<=0 and rune1Tag ~= 1 and r1 ~= 1 and r2 ~= 1 then\n        rune2Tag = 1\n        rune2CD = aura_env.runes[1].cd\n    elseif GetRuneType(2)~=1 and aura_env.runes[2].cd<=0 and rune1Tag ~= 2 and r1 ~= 2 and r2 ~= 2 then\n        rune2Tag = 2\n        rune2CD = aura_env.runes[2].cd\n    end\n    \n    \n    local obWhen = 0\n    local obRune = 0\n    if rune2CD<rune1CD then \n        obWhen = rune1CD \n        obRune = rune2Tag  \n    else \n        obWhen = rune2CD \n        obRune = rune1Tag  \n    end \n    if obWhen<0 then obWhen=0 end\n    local obTimer = 0\n    \n    if aura_env.runes[obRune].when - GetTime() - aura_env.gcdFreeWhen > -2.45 then\n        obTimer = 2.45+aura_env.runes[obRune].cd\n    end\n    \n    \n    local fncd = aura_env.runes[fn].when - GetTime() - aura_env.gcdFreeWhen + 2.45\n    local uncd = aura_env.runes[un].when - GetTime() - aura_env.gcdFreeWhen + 2.45\n    \n    \n    if rune1Tag == 1 or rune1Tag == 2 then \n        if rune2Tag == 3 or rune2Tag == 4 then\n            if obTimer > fncd then \n                obTimer = fncd -0.1\n            end\n        elseif rune2Tag == 5 or rune2Tag == 6 then\n            if obTimer > uncd then \n                obTimer = uncd -0.1 \n            end\n        end\n    elseif rune2Tag == 1 or rune2Tag == 2 then \n        if rune1Tag == 3 or rune1Tag == 4 then\n            if obTimer > fncd then \n                obTimer = fncd -0.1 \n            end\n        elseif rune1Tag == 5 or rune1Tag == 6 then\n            if obTimer > uncd then \n                obTimer = uncd -0.1 \n            end\n        end\n        \n    end \n    \n    if obTimer<0 then \n        obTimer=0\n    end\n    \n    if obWhen == 0 then\n        obTimer = 0\n    end\n    \n    \n    return obWhen, obTimer, rune1Tag, rune2Tag\n    \n    \nend\n\n\n\n\n\naura_env.last = 0\n\naura_env.TTD = 180\n\n-- Credit to Aethys https://github.com/herotc/hero-lib\n\nlocal cache = {}\nlocal units = {}\n\nlocal iterableUnits = {\"focus\", \"target\", \"mouseover\"}\nif not WeakAuras.IsClassic() then\n    for i=1,5 do\n        iterableUnits[#iterableUnits+1] = \"boss\"..i\n    end\nend\n\nfor i=1,40 do\n    iterableUnits[#iterableUnits+1] = \"nameplate\"..i\nend\n\nfunction aura_env.TTDRefresh()\n    local currentTime = GetTime()\n    local checkedUnits = {}\n    local historyCount = 100\n    local historyTime = 10\n    \n    for _, unit in ipairs(iterableUnits) do\n        if UnitExists(unit) then\n            local GUID = UnitGUID(unit)\n            if not checkedUnits[GUID] then\n                checkedUnits[GUID] = true\n                local health = UnitHealth(unit)\n                local maxHealth = UnitHealthMax(unit)\n                local healthPercentage = health ~= -1 and maxHealth ~= -1 and health / maxHealth * 100\n                -- Check if it's a valid unit\n                if UnitCanAttack(\"player\", unit) and healthPercentage < 100 then\n                    local unitTable = units[GUID]\n                    -- Check if we have seen one time this unit, if we don't then initialize it.\n                    if not unitTable or healthPercentage > unitTable[1][1][2] then\n                        unitTable = { {}, currentTime }\n                        units[GUID] = unitTable\n                    end\n                    local values = unitTable[1]\n                    local time = currentTime - unitTable[2]\n                    -- Check if the % HP changed since the last check (or if there were none)\n                    if #values == 0 or healthPercentage ~= values[1][2] then\n                        local value\n                        local lastIndex = #cache\n                        -- Check if we can re-use a table from the cache -- Buds: i have doubt on the value of reusing table, with the high cost of tinsert on 1st index\n                        if lastIndex == 0 then\n                            value = { time, healthPercentage }\n                        else\n                            value = cache[lastIndex]\n                            cache[lastIndex] = nil\n                            value[1] = time\n                            value[2] = healthPercentage\n                        end\n                        table.insert(values, 1, value)\n                        local n = #values\n                        -- Delete values that are no longer valid\n                        while (n > historyCount) or (time - values[n][1] > historyTime) do\n                            cache[#cache + 1] = values[n]\n                            values[n] = nil\n                            n = n - 1\n                        end\n                    end\n                end\n            end\n        end\n    end\nend\n\nfunction aura_env.TimeToX(guid, percentage, minSamples)\n    --if self:IsDummy() then return 6666 end\n    --if self:IsAPlayer() and Player:CanAttack(self) then return 25 end\n    local seconds = 8888\n    local unitTable = units[guid]\n    -- Simple linear regression\n    -- ( E(x^2)  E(x) )  ( a )  ( E(xy) )\n    -- ( E(x)     n  )  ( b ) = ( E(y)  )\n    -- Format of the above: ( 2x2 Matrix ) * ( 2x1 Vector ) = ( 2x1 Vector )\n    -- Solve to find a and b, satisfying y = a + bx\n    -- Matrix arithmetic has been expanded and solved to make the following operation as fast as possible\n    if unitTable then\n        local values = unitTable[1]\n        local n = #values\n        if n > minSamples then\n            local a, b = 0, 0\n            local Ex2, Ex, Exy, Ey = 0, 0, 0, 0\n            \n            local value, x, y\n            for i = 1, n do\n                value = values[i]\n                x, y = value[1], value[2]\n                \n                Ex2 = Ex2 + x * x\n                Ex = Ex + x\n                Exy = Exy + x * y\n                Ey = Ey + y\n            end\n            -- invariant to find matrix inverse\n            local invariant = 1 / (Ex2 * n - Ex * Ex)\n            -- Solve for a and b\n            a = (-Ex * Exy * invariant) + (Ex2 * Ey * invariant)\n            b = (n * Exy * invariant) - (Ex * Ey * invariant)\n            if b ~= 0 then\n                -- Use best fit line to calculate estimated time to reach target health\n                seconds = (percentage - a) / b\n                -- Subtract current time to obtain \"time remaining\"\n                seconds = math.min(7777, seconds - (GetTime() - unitTable[2]))\n                if seconds < 0 then seconds = 9999 end\n            end\n        end\n    end\n    return seconds\nend\n\n\nfunction aura_env.click(but)\n    ActionButtonDown(but);ActionButtonUp(but);\n    C_Timer.After(\n        0.1,\n        function()\n            ActionButtonDown(but);ActionButtonUp(but);\n        end\n    )\n    \n    C_Timer.After(\n        0.3,\n        function()\n            ActionButtonDown(but);ActionButtonUp(but);\n        end\n    )\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n",
-					["do_custom"] = true,
-				},
-				["finish"] = {
-				},
-			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "b6T3RhVY5o6",
-			["selfPoint"] = "CENTER",
-			["width"] = 35,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = true,
-			["tocversion"] = 30401,
-			["id"] = "Rotation manager - frost (backup)",
 			["authorOptions"] = {
 				{
 					["type"] = "range",
@@ -15938,9 +15928,30 @@ WeakAurasSaved = {
 					["width"] = 1,
 				}, -- [10]
 			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "b6T3RhVY5o6",
+			["xOffset"] = 0,
+			["width"] = 35,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = true,
+			["tocversion"] = 30401,
+			["id"] = "Rotation manager - frost (backup)",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.ERWcounter = GetTime() -300\naura_env.obCounter = 0\naura_env.bsPes = \"\"\naura_env.usedRune = 0\naura_env.blood1Type = GetRuneType(1)\naura_env.blood1Type_cancelBT = false\n--print( GetRuneType(1))\naura_env.combatStart = GetTime()\naura_env.RDencounter = false or aura_env.config.RDencounter\n\nlocal hit = GetCombatRatingBonus(CR_HIT_MELEE) + GetHitModifier();\nlocal exp = GetExpertise();\naura_env.desyncFlag = false\nif exp>=aura_env.config.expRating and hit>=aura_env.config.hitRating and aura_env.config.normalR==false then aura_env.desyncFlag = true end\n--print(aura_env.config.normalR)\n\nlocal nameTalent, icon, tier, column, currRank, maxRank= GetTalentInfo(3,5);\naura_env.subUH = false\nif currRank >1 then aura_env.subUH = true end\n\n\n\n\n\n\naura_env.desyncCounter = 0\n\n\n\n--print( aura_env.subUH)\n--[[\nfor tab = 1, GetNumTalentTabs() do\n    for talent = 1, GetNumTalents(tab) do\n        -- print(GetTalentInfo(tab, talent))\n        \n        local nameTalent, icon, tier, column, currRank, maxRank= GetTalentInfo(tab,talent);\n        if nameTalent==\"Epidemic\" then \n            print(tab) \n            print(talent)     \n        end\n    end\nend\n]]\n\n\naura_env.OBlock=false \naura_env.varFlag1 = false\naura_env.varFlag2 = false\naura_env.totemDetected = false\n\nlocal startUA, durationUA = GetSpellCooldown(51271)--ua\\\nif durationUA<=10 and durationUA>1.5 then\n    aura_env.UAcast = GetTime() - 10\nelseif durationUA<=1.5 then\n    aura_env.UAcast = GetTime() - 60\nelse aura_env.UAcast = 0    \nend\n\nlocal startBT, durationBT = GetSpellCooldown(45529)--bt\\\nif durationBT<=10 and durationBT>1.5 then\n    aura_env.BTcast = GetTime() - 10\nelseif durationBT<=1.5 then\n    aura_env.BTcast = GetTime() - 60\nelse aura_env.BTcast = 0    \nend\n\n\nlocal startH, durationHoW = GetSpellCooldown(57330)\nif durationHoW<=1.5 then\n    aura_env.HoWcast = GetTime() - 20\nelse aura_env.HoWcast = 0    \nend\n\naura_env.oblitWhen = 0\naura_env.varFlag = false\n\naura_env.desync = false\n\naura_env.desyncCounter = 0\n\naura_env.lastRune1 = 0\naura_env.lastRune2 = 0\n\naura_env.runeUsed = 0\n\n\naura_env.stampWhenChanged = 0\n\n\naura_env.BTpredict = false\naura_env.initBT = 0\naura_env.lastCastID = 0\naura_env.bloodTapPredict = GetTime()\n\naura_env.ff = 0\naura_env.uh = 0\naura_env.des = 0\naura_env.gf = 0\n\n\n\naura_env.PEScasted = false\n\naura_env.FSRP = 40\nfor i = 1, 6 do\n    local enabled, glyphType, glyphTooltipIndex, glyphSpellID, icon = GetGlyphSocketInfo(i);\n    \n    if glyphSpellID== 237635 then\n        aura_env.FSRP = 32\n    end\nend \n\naura_env.GetNumDebuffs =  function()\n    local a=0; while UnitAura(\"target\", a+1, \"PLAYER|HARMFUL\") do a=a+1 end\n    --print(a)\n    return a;\nend\naura_env.GetNumBuffs =  function()\n    local a=0; while UnitAura(\"player\", a+1, \"HELPFUL\") do a=a+1 end\n    --print(a)\n    return a;\nend\n\naura_env.trackD_frost = function() \n    \n    local expireFF = 0\n    local expureUh = 0\n    \n    for i=1,aura_env.GetNumDebuffs() do \n        -- n, rank, icon, count, debuffType, dur, expirationTime, unitCaster, isStealable, shouldConsolidate, id \n        local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura(\"target\", i, \"PLAYER|HARMFUL\")\n        --print(locname)\n        -- print(GetTime())\n        --print(expireWhen)\n        \n        --55095 67719 67767 69917 \n        if name==\"Frost Fever\" or id == 55095 or id == 67719 or id == 67767 or id == 69917 then\n            --print(id)\n            expireFF  = expireWhen - GetTime()\n        end\n        -- BP fest           \n        if name==\"Blood Plague\" or id ==55264  or id ==55973   or id ==55322  or id ==57601  or id ==58840  or id ==58844  or id ==59984  or id ==60950  or id ==61111  or id ==61601  or id ==67722  or id ==69911  or id ==55078  or id ==71923  then\n            --print(id)\n            expureUh = expireWhen - GetTime()\n        end\n        \n    end\n    \n    return expireFF, expureUh\n    \n    \nend\n\naura_env.cancelBT_frost = function() \n    local BT = 0 \n    for i=1,aura_env.GetNumBuffs() do \n        -- n, rank, icon, count, debuffType, dur, expirationTime, unitCaster, isStealable, shouldConsolidate, id \n        local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura(\"player\", i, \"HELPFUL\")\n        -- print(name)\n        if name==\"Blood Tap\" or id ==45529 then\n            print(\"BT found, cancelling\")\n            CancelUnitBuff(\"player\", i)\n            print(\"BT cancel worked\")\n        end\n    end\nend\n\n\n\naura_env.trackB_frost = function() \n    local KM = 0\n    local rime = 0\n    local how = 0\n    local totem = false\n    local UA = 0\n    local BT = 0\n    local speed = 0\n    --local uhP = false\n    \n    for i=1,aura_env.GetNumBuffs() do \n        -- n, rank, icon, count, debuffType, dur, expirationTime, unitCaster, isStealable, shouldConsolidate, id \n        local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura(\"player\", i, \"HELPFUL\")\n        -- print(name)\n        \n        if name==\"Horn of Winter\" or id ==57330 or id == 57623 then\n            --print(id)\n            how  = expireWhen - GetTime()\n        end\n        \n        if name==\"Killing Machine\" or id == 51124 then\n            -- print(id)\n            KM  = expireWhen - GetTime()\n        end\n        if name==\"Freezing Fog\" or id ==59052 then\n            --print(id)\n            rime  = expireWhen - GetTime()\n        end\n        \n        if name==\"Strength of Earth\" or id ==58646 or id == 10441 or id == 25362 or id == 25527 or id == 57621 then\n            --print(id)\n            totem  = true\n        end\n        \n        if name==\"Unbreakable Armor\" or id ==51271 then\n            --print(id)\n            UA  = expireWhen - GetTime()\n        end\n        if name==\"Blood Tap\" or id ==45529 then\n            -- print(id)\n            BT  = expireWhen - GetTime()\n        end\n        if name==\"Speed\" or id ==53908 then\n            --print(id)\n            speed  = expireWhen - GetTime()\n            --print(speed)\n        end\n    end\n    \n    return KM, rime, how, totem, UA, BT, speed\n    \n    --KM, rime, HoWTimer, totem\nend\n\n\n\naura_env.encounter = false or aura_env.config.gary\naura_env.oStep = 0\naura_env.DDwhen = 0\naura_env.castStamp = 0\nlocal start, duration = GetSpellCooldown(61304)\naura_env.gcdWhen = start+duration+ aura_env.config.reaction/1000\naura_env.fixedGCD = 1.5\naura_env.gcdStamp = start+duration\naura_env.gcdStampLast = 0\n\n\n\naura_env.init = 0\naura_env.runes = {}\n\n\naura_env.bloodTapLock = false\naura_env.DDlock = false\n\n\naura_env.runes[1] = {free=true, when=0, cd=0} --1\naura_env.runes[2] = {free=true, when=0, cd=0} --2\naura_env.runes[5] = {free=true, when=0, cd=0} --5\naura_env.runes[6] = {free=true, when=0, cd=0} --6\naura_env.runes[3] = {free=true, when=0, cd=0} --3\naura_env.runes[4] = {free=true, when=0, cd=0} --4\n\nWeakAuras.WatchGCD()\naura_env.gcdWhen = WeakAuras.CalculatedGcdDuration()\naura_env.gcdFreeWhen =0\n\naura_env.nextAction = \"clear\"\nWeakAuras.ScanEvents(\"fonsas_action\", aura_env.nextAction) \n\n\n--[[\n\naura_env.runeState_frost = function(ff, uh)\n    local sync = true\n    \n    local expire = 0\n    if ff<uh then expire = ff else expure = uh end\n    expire = expire - aura_env.gcdFreeWhen\n    local rune1CD = 20\n    local rune1Tag = 3\n    local rune1CDN = 20\n    local rune1TagN = 4\n    local rune1CDNN = 20\n    local rune1TagNN = 1\n    \n    \n    if aura_env.runes[3].cd<=aura_env.runes[4].cd then \n        rune1CD = aura_env.runes[3].cd\n        rune1Tag = 3\n    else\n        rune1CD = aura_env.runes[4].cd\n        rune1Tag = 4\n    end\n    \n    if aura_env.runes[3].cd<=0 then \n        rune1CD = aura_env.runes[3].cd\n        rune1Tag = 3\n    elseif aura_env.runes[4].cd<=0 then \n        rune1CD = aura_env.runes[4].cd\n        rune1Tag = 4\n    end\n    \n    if aura_env.runes[5].cd<=aura_env.runes[6].cd then \n        rune2CD = aura_env.runes[5].cd\n        rune2Tag = 5\n    else\n        rune2CD = aura_env.runes[6].cd\n        rune2Tag = 6\n    end\n    if aura_env.runes[5].cd<=0 then \n        rune2CD = aura_env.runes[5].cd\n        rune2Tag = 5\n    elseif aura_env.runes[6].cd<=0 then \n        rune2CD = aura_env.runes[6].cd\n        rune2Tag = 6\n    end\n    \n    local death = 0 \n    local other = 0\n    \n    if GetRuneType(1)==4 and GetRuneType(2)==4 then \n        if aura_env.runes[1].cd<=aura_env.runes[2].cd then \n            death = 1\n            other = 2\n        else \n            death = 2\n            other = 1\n        end\n    elseif GetRuneType(1)==4  then\n        death = 1\n        other = 2\n    elseif GetRuneType(2)==4  then\n        death = 2\n        other = 1\n    end\n    \n    if death>0 then \n        local runeCD = 0\n        local runeTag = 0\n        if rune2CD>rune1CD and rune2CD>aura_env.runes[death].cd and expire > aura_env.config.reaction/1000*3+ 2*aura_env.fixedGCD and expire > aura_env.runes[other].cd + aura_env.config.reaction/1000*3 + 2*aura_env.fixedGCD then\n            if rune2CD>aura_env.runes[death].cd and expire-temp > aura_env.config.reaction/1000*4+ aura_env.fixedGCD then\n                \n            end\n        end\n    end\nend\n]]\n\n\naura_env.obFunction_frost = function(bn)\n    \n    local rune1CD = 20\n    local rune1Tag = 0\n    local rune2CD = 20\n    local rune2Tag = 0\n    \n    local rune1CD = aura_env.runes[6].cd\n    local rune1Tag = 6\n    local rune2CD = aura_env.runes[4].cd\n    local rune2Tag = 4\n    if  rune1CD<0 then rune1CD=0 end\n    if  rune2CD<0 then rune2CD=0 end\n    \n    local cd2 = aura_env.runes[3].cd\n    if cd2<=0 then cd2 = 0 end\n    --print(\"cd2: \" .. tostring(cd2))\n    if cd2 <= rune2CD then \n        rune2Tag=3\n        rune2CD=aura_env.runes[3].cd\n    end\n    local cd1 = aura_env.runes[5].cd\n    if cd1<=0 then cd1 = 0 end\n    if cd1 <= rune1CD then \n        rune1Tag=5\n        rune1CD=aura_env.runes[5].cd\n    end\n    \n    if  rune1CD<0 then rune1CD=0 end\n    if  rune2CD<0 then rune2CD=0 end\n    -- print()\n    -- print(GetTime() - aura_env.ERWcounter  + aura_env.gcdFreeWhen)\n    \n    local a = (rune1CD-rune2CD>0.1 or rune1CD-rune2CD<-0.1)\n    local b = (GetRuneType(1)~=1 or GetRuneType(2)~=1)\n    --local c =  (GetTime() - aura_env.ERWcounter + aura_env.gcdFreeWhen>2.9)\n    --print(a and b and c)\n    \n    if a and b then\n        -- pode haver death\n        if rune1CD<rune2CD then \n            if GetRuneType(2)~=1 then \n                local dcd  = aura_env.runes[2].cd  \n                if  dcd<0 then  dcd=0 end\n                if  dcd+0.01<rune2CD then \n                    rune2Tag=2\n                    rune2CD=aura_env.runes[2].cd\n                end\n            end\n            if  rune2CD<0 then rune2CD=0 end\n            if GetRuneType(1)~=1 then \n                local dcd  = aura_env.runes[1].cd  \n                if  dcd<0 then  dcd=0 end\n                if  dcd+0.01<rune2CD then \n                    rune2Tag=1\n                    rune2CD=aura_env.runes[1].cd\n                end\n            end\n            if  rune2CD<0 then rune2CD=0 end\n        else \n            if GetRuneType(2)~=1 then \n                local dcd  = aura_env.runes[2].cd  \n                if  dcd<0 then  dcd=0 end\n                if  dcd+0.01<rune1CD then \n                    rune1Tag=2\n                    rune1CD=aura_env.runes[2].cd\n                end\n            end\n            if  rune1CD<0 then rune1CD=0 end\n            if GetRuneType(1)~=1 then \n                local dcd  = aura_env.runes[1].cd  \n                if  dcd<0 then  dcd=0 end\n                if  dcd+0.01<rune1CD then \n                    rune1Tag=1\n                    rune1CD=aura_env.runes[1].cd\n                end\n            end\n            if  rune1CD<0 then rune1CD=0 end\n        end\n    end\n    \n    if (GetRuneType(1)~=1 and GetRuneType(2)~=1)  then \n        if (aura_env.runes[2].cd<aura_env.runes[3].cd and aura_env.runes[2].cd<aura_env.runes[4].cd and aura_env.runes[2].cd<aura_env.runes[5].cd and aura_env.runes[2].cd<aura_env.runes[6].cd and\n            aura_env.runes[1].cd<aura_env.runes[3].cd and aura_env.runes[1].cd<aura_env.runes[4].cd and aura_env.runes[1].cd<aura_env.runes[5].cd and aura_env.runes[1].cd<aura_env.runes[6].cd) and (aura_env.runes[3].cd>0 and aura_env.runes[4].cd>0 and aura_env.runes[5].cd>0 and aura_env.runes[6].cd>0) then \n            \n            rune1Tag=1\n            rune1CD=aura_env.runes[1].cd\n            rune2Tag=2\n            rune2CD=aura_env.runes[2].cd\n            if  rune1CD<0 then rune1CD=0 end\n            if  rune2CD<0 then rune2CD=0 end\n        end    \n    end\n    \n    \n    --[[ for i=1, 6 do \n        if i~=3 and i~=4 and i~=bn then\n            local cd = aura_env.runes[i].cd\n            if cd<0 then cd = 0 end\n            if cd <= rune1CD then \n                if GetRuneType(i)~=1 then \n                    local a = i\n                    local b = a==1 or a==2 or a==3\n                    if a==6 and aura_env.runes[5].cd==0 then \n                        a=5\n                    elseif a==4 and aura_env.runes[3].cd==0 then \n                        a=3\n                    elseif GetRuneType(1)~=1 and a==2 and aura_env.runes[1].cd==0 then\n                        a=1\n                    end\n                    rune1Tag=a\n                    rune1CD=aura_env.runes[a].cd\n                end\n            end\n        end\n    end\n    \n    for i=1, 4 do \n        if i~=bn and i~=rune1Tag then\n            local cd = aura_env.runes[i].cd\n            if cd<0 then cd = 0 end\n            if cd <= rune2CD then \n                if GetRuneType(i)~=1 then \n                    if GetRuneType(rune1Tag)==4 then\n                        rune2Tag=i \n                        rune2CD=aura_env.runes[i].cd \n                    elseif GetRuneType(rune1Tag)~=GetRuneType(i) then\n                        rune2Tag=i \n                        rune2CD=aura_env.runes[i].cd \n                    end\n                end\n            end\n        end\n    end\n    \n    ]]\n    \n    local fn, un, fl, ul = 0\n    if (aura_env.runes[3].cd)>(aura_env.runes[4].cd) then un=4 ul=3 else un=3 ul=4 end\n    if (aura_env.runes[5].cd)>(aura_env.runes[6].cd) then fn=6 fl=5 else fn=5 fl=6 end\n    \n    --[[ if aura_env.runes[3].cd<=0 then \n        rune2Tag = 3\n        rune2CD = aura_env.runes[3].cd\n    elseif aura_env.runes[4].cd<=0 then\n        rune2Tag = 4\n        rune2CD = aura_env.runes[4].cd\n    elseif GetRuneType(1)~=1 and  aura_env.runes[1].cd<=0 and rune1Tag ~= 1 and bn ~= 1 then\n        rune2Tag = 1\n        rune2CD = aura_env.runes[1].cd\n    elseif GetRuneType(2)~=1 and aura_env.runes[2].cd<=0 and rune1Tag ~= 2 and bn ~= 2 then\n        rune2Tag = 2\n        rune2CD = aura_env.runes[2].cd\n    end\n    \n    ]]\n    local obWhen = 0\n    local obRune = 0\n    if rune2CD<rune1CD then \n        obWhen = rune1CD \n        obRune = rune2Tag  \n    else \n        obWhen = rune2CD \n        obRune = rune1Tag  \n    end \n    if obWhen<0 then obWhen=0 end\n    local obTimer = 0\n    \n    if aura_env.runes[obRune].when - GetTime() - aura_env.gcdFreeWhen > -2.45 then\n        obTimer = 2.45+aura_env.runes[obRune].cd\n    end\n    \n    \n    local fncd = aura_env.runes[fn].when - GetTime() - aura_env.gcdFreeWhen + 2.45\n    local uncd = aura_env.runes[un].when - GetTime() - aura_env.gcdFreeWhen + 2.45\n    \n    \n    \n    if rune1Tag == 1 or rune1Tag == 2 then \n        if rune2Tag == 3 or rune2Tag == 4 then\n            if obTimer > fncd then \n                obTimer = fncd -0.1\n            end\n        elseif rune2Tag == 5 or rune2Tag == 6 then\n            if obTimer > uncd then \n                obTimer = uncd -0.1 \n            end\n        end\n    elseif rune2Tag == 1 or rune2Tag == 2 then \n        if rune1Tag == 3 or rune1Tag == 4 then\n            if obTimer > fncd then \n                obTimer = fncd -0.1 \n            end\n        elseif rune1Tag == 5 or rune1Tag == 6 then\n            if obTimer > uncd then \n                obTimer = uncd -0.1 \n            end\n        end\n        \n    end \n    \n    if obTimer<0 then \n        obTimer=0\n    end\n    \n    -- if obWhen == 0 then\n    --  obTimer = 0\n    -- end\n    \n    \n    return obWhen, obTimer, rune1Tag, rune2Tag\n    \n    \nend\n\n\n\naura_env.obFunctionUA_frost = function(bn)\n    \n    local rune1CD = 20\n    local rune1Tag = 0\n    local rune2CD = 20\n    local rune2Tag = 0\n    \n    local rune1CD = aura_env.runes[6].cd\n    local rune1Tag = 6\n    local rune2CD = aura_env.runes[4].cd\n    local rune2Tag = 4\n    if  rune1CD<0 then rune1CD=0 end\n    if  rune2CD<0 then rune2CD=0 end\n    \n    local cd2 = aura_env.runes[3].cd\n    if cd2<=0 then cd2 = 0 end\n    --print(\"cd2: \" .. tostring(cd2))\n    if cd2 <= rune2CD then \n        rune2Tag=3\n        rune2CD=aura_env.runes[3].cd\n    end\n    local cd1 = aura_env.runes[5].cd\n    if cd1<=0 then cd1 = 0 end\n    if cd1 <= rune1CD then \n        rune1Tag=5\n        rune1CD=aura_env.runes[5].cd\n    end\n    \n    if  rune1CD<0 then rune1CD=0 end\n    if  rune2CD<0 then rune2CD=0 end\n    \n    if (rune1CD-rune2CD>0.1 or rune1CD-rune2CD<-0.1) and (GetRuneType(1)~=1 or GetRuneType(2)~=1) then\n        -- pode haver death\n        if rune1CD<rune2CD then \n            if GetRuneType(2)~=1 and bn~=2 then \n                local dcd  = aura_env.runes[2].cd  \n                if  dcd<0 then  dcd=0 end\n                if  dcd+0.01<rune2CD then \n                    rune2Tag=2\n                    rune2CD=aura_env.runes[2].cd\n                end\n            end\n            if  rune2CD<0 then rune2CD=0 end\n            if GetRuneType(1)~=1  and bn~=1 then \n                local dcd  = aura_env.runes[1].cd  \n                if  dcd<0 then  dcd=0 end\n                if  dcd+0.01<rune2CD then \n                    rune2Tag=1\n                    rune2CD=aura_env.runes[1].cd\n                end\n            end\n            if  rune2CD<0 then rune2CD=0 end\n        else \n            if GetRuneType(2)~=1  and bn~=2 then \n                local dcd  = aura_env.runes[2].cd  \n                if  dcd<0 then  dcd=0 end\n                if  dcd+0.01<rune1CD then \n                    rune1Tag=2\n                    rune1CD=aura_env.runes[2].cd\n                end\n            end\n            if  rune1CD<0 then rune1CD=0 end\n            if GetRuneType(1)~=1 and bn~=1  then \n                local dcd  = aura_env.runes[1].cd  \n                if  dcd<0 then  dcd=0 end\n                if  dcd+0.01<rune1CD then \n                    rune1Tag=1\n                    rune1CD=aura_env.runes[1].cd\n                end\n            end\n            if  rune1CD<0 then rune1CD=0 end\n        end\n    end\n    \n    \n    local fn, un, fl, ul = 0\n    if (aura_env.runes[3].cd)>(aura_env.runes[4].cd) then un=4 ul=3 else un=3 ul=4 end\n    if (aura_env.runes[5].cd)>(aura_env.runes[6].cd) then fn=6 fl=5 else fn=5 fl=6 end\n    \n    if bn==5 then fn = 6 elseif bn==6 then fn = 5 end\n    \n    local obWhen = 0\n    local obRune = 0\n    if rune2CD<rune1CD then \n        obWhen = rune1CD \n        obRune = rune2Tag  \n    else \n        obWhen = rune2CD \n        obRune = rune1Tag  \n    end \n    if obWhen<0 then obWhen=0 end\n    local obTimer = 0\n    \n    if aura_env.runes[obRune].when - GetTime() - aura_env.gcdFreeWhen > -2.45 then\n        obTimer = 2.45+aura_env.runes[obRune].cd\n    end\n    \n    \n    local fncd = aura_env.runes[fn].when - GetTime() - aura_env.gcdFreeWhen + 2.45\n    local uncd = aura_env.runes[un].when - GetTime() - aura_env.gcdFreeWhen + 2.45\n    \n    \n    \n    if rune1Tag == 1 or rune1Tag == 2 then \n        if rune2Tag == 3 or rune2Tag == 4 then\n            if obTimer > fncd then \n                obTimer = fncd -0.1\n            end\n        elseif rune2Tag == 5 or rune2Tag == 6 then\n            if obTimer > uncd then \n                obTimer = uncd -0.1 \n            end\n        end\n    elseif rune2Tag == 1 or rune2Tag == 2 then \n        if rune1Tag == 3 or rune1Tag == 4 then\n            if obTimer > fncd then \n                obTimer = fncd -0.1 \n            end\n        elseif rune1Tag == 5 or rune1Tag == 6 then\n            if obTimer > uncd then \n                obTimer = uncd -0.1 \n            end\n        end\n        \n    end \n    \n    if obTimer<0 then \n        obTimer=0\n    end\n    \n    if obWhen == 0 then\n        obTimer = 0\n    end\n    \n    return obWhen, obTimer, rune1Tag, rune2Tag\nend\n\n\naura_env.obFunctionNextNext_frost = function(r1, r2)\n    \n    local rune1CD = 20\n    local rune1Tag = 0\n    local rune2CD = 20\n    local rune2Tag = 0\n    \n    \n    for i=1, 6 do \n        if i~=3 and i~=4 and i~=r1  and i~=r2  then\n            local cd = aura_env.runes[i].cd\n            if cd<0 then cd = 0 end\n            if cd <= rune1CD then \n                if GetRuneType(i)~=1 then \n                    local a = i\n                    local b = a==1 or a==2 or a==3\n                    if a==6 and aura_env.runes[5].cd==0 and r1~=5 and r2~=5  then \n                        a=5\n                    elseif a==4 and aura_env.runes[3].cd==0 and r1~=3 and r2~=3  then \n                        a=3\n                    elseif GetRuneType(1)~=1 and a==2 and aura_env.runes[1].cd==0  and r1~=1 and r2~=1  then\n                        a=1\n                    end\n                    rune1Tag=a\n                    rune1CD=aura_env.runes[a].cd\n                end\n            end\n        end\n    end\n    \n    for i=1, 4 do \n        if i~=r1  and i~=r2  and i~=rune1Tag then\n            local cd = aura_env.runes[i].cd\n            if cd<0 then cd = 0 end\n            if cd <= rune2CD then \n                if GetRuneType(i)~=1 then \n                    if GetRuneType(rune1Tag)==4 then\n                        rune2Tag=i \n                        rune2CD=aura_env.runes[i].cd \n                    elseif GetRuneType(rune1Tag)~=GetRuneType(i) then\n                        rune2Tag=i \n                        rune2CD=aura_env.runes[i].cd \n                    end\n                end\n            end\n        end\n    end\n    \n    \n    local fn, un, fl, ul = 0\n    if (aura_env.runes[3].cd)>(aura_env.runes[4].cd) then un=4 ul=3 else un=3 ul=4 end\n    if (aura_env.runes[5].cd)>(aura_env.runes[6].cd) then fn=6 fl=5 else fn=5 fl=6 end\n    \n    if r1==5 then fn = 6 elseif r1==6 then fn = 5 end\n    if r2==5 then fn = 6 elseif r2==6 then fn = 5 end\n    if r1==3 then un = 4 elseif r1==4 then un = 3 end\n    if r2==3 then un = 4 elseif r2==4 then un = 3 end\n    \n    if aura_env.runes[3].cd<=0 and r2~=3 and r1~=3 then \n        rune2Tag = 3\n        rune2CD = aura_env.runes[3].cd\n    elseif aura_env.runes[4].cd<=0 and r2~=4 and r1~=4 then\n        rune2Tag = 4\n        rune2CD = aura_env.runes[4].cd\n    elseif GetRuneType(1)~=1 and  aura_env.runes[1].cd<=0 and rune1Tag ~= 1 and r1 ~= 1 and r2 ~= 1 then\n        rune2Tag = 1\n        rune2CD = aura_env.runes[1].cd\n    elseif GetRuneType(2)~=1 and aura_env.runes[2].cd<=0 and rune1Tag ~= 2 and r1 ~= 2 and r2 ~= 2 then\n        rune2Tag = 2\n        rune2CD = aura_env.runes[2].cd\n    end\n    \n    \n    local obWhen = 0\n    local obRune = 0\n    if rune2CD<rune1CD then \n        obWhen = rune1CD \n        obRune = rune2Tag  \n    else \n        obWhen = rune2CD \n        obRune = rune1Tag  \n    end \n    if obWhen<0 then obWhen=0 end\n    local obTimer = 0\n    \n    if aura_env.runes[obRune].when - GetTime() - aura_env.gcdFreeWhen > -2.45 then\n        obTimer = 2.45+aura_env.runes[obRune].cd\n    end\n    \n    \n    local fncd = aura_env.runes[fn].when - GetTime() - aura_env.gcdFreeWhen + 2.45\n    local uncd = aura_env.runes[un].when - GetTime() - aura_env.gcdFreeWhen + 2.45\n    \n    \n    if rune1Tag == 1 or rune1Tag == 2 then \n        if rune2Tag == 3 or rune2Tag == 4 then\n            if obTimer > fncd then \n                obTimer = fncd -0.1\n            end\n        elseif rune2Tag == 5 or rune2Tag == 6 then\n            if obTimer > uncd then \n                obTimer = uncd -0.1 \n            end\n        end\n    elseif rune2Tag == 1 or rune2Tag == 2 then \n        if rune1Tag == 3 or rune1Tag == 4 then\n            if obTimer > fncd then \n                obTimer = fncd -0.1 \n            end\n        elseif rune1Tag == 5 or rune1Tag == 6 then\n            if obTimer > uncd then \n                obTimer = uncd -0.1 \n            end\n        end\n        \n    end \n    \n    if obTimer<0 then \n        obTimer=0\n    end\n    \n    if obWhen == 0 then\n        obTimer = 0\n    end\n    \n    \n    return obWhen, obTimer, rune1Tag, rune2Tag\n    \n    \nend\n\n\n\n\n\naura_env.last = 0\n\naura_env.TTD = 180\n\n-- Credit to Aethys https://github.com/herotc/hero-lib\n\nlocal cache = {}\nlocal units = {}\n\nlocal iterableUnits = {\"focus\", \"target\", \"mouseover\"}\nif not WeakAuras.IsClassic() then\n    for i=1,5 do\n        iterableUnits[#iterableUnits+1] = \"boss\"..i\n    end\nend\n\nfor i=1,40 do\n    iterableUnits[#iterableUnits+1] = \"nameplate\"..i\nend\n\nfunction aura_env.TTDRefresh()\n    local currentTime = GetTime()\n    local checkedUnits = {}\n    local historyCount = 100\n    local historyTime = 10\n    \n    for _, unit in ipairs(iterableUnits) do\n        if UnitExists(unit) then\n            local GUID = UnitGUID(unit)\n            if not checkedUnits[GUID] then\n                checkedUnits[GUID] = true\n                local health = UnitHealth(unit)\n                local maxHealth = UnitHealthMax(unit)\n                local healthPercentage = health ~= -1 and maxHealth ~= -1 and health / maxHealth * 100\n                -- Check if it's a valid unit\n                if UnitCanAttack(\"player\", unit) and healthPercentage < 100 then\n                    local unitTable = units[GUID]\n                    -- Check if we have seen one time this unit, if we don't then initialize it.\n                    if not unitTable or healthPercentage > unitTable[1][1][2] then\n                        unitTable = { {}, currentTime }\n                        units[GUID] = unitTable\n                    end\n                    local values = unitTable[1]\n                    local time = currentTime - unitTable[2]\n                    -- Check if the % HP changed since the last check (or if there were none)\n                    if #values == 0 or healthPercentage ~= values[1][2] then\n                        local value\n                        local lastIndex = #cache\n                        -- Check if we can re-use a table from the cache -- Buds: i have doubt on the value of reusing table, with the high cost of tinsert on 1st index\n                        if lastIndex == 0 then\n                            value = { time, healthPercentage }\n                        else\n                            value = cache[lastIndex]\n                            cache[lastIndex] = nil\n                            value[1] = time\n                            value[2] = healthPercentage\n                        end\n                        table.insert(values, 1, value)\n                        local n = #values\n                        -- Delete values that are no longer valid\n                        while (n > historyCount) or (time - values[n][1] > historyTime) do\n                            cache[#cache + 1] = values[n]\n                            values[n] = nil\n                            n = n - 1\n                        end\n                    end\n                end\n            end\n        end\n    end\nend\n\nfunction aura_env.TimeToX(guid, percentage, minSamples)\n    --if self:IsDummy() then return 6666 end\n    --if self:IsAPlayer() and Player:CanAttack(self) then return 25 end\n    local seconds = 8888\n    local unitTable = units[guid]\n    -- Simple linear regression\n    -- ( E(x^2)  E(x) )  ( a )  ( E(xy) )\n    -- ( E(x)     n  )  ( b ) = ( E(y)  )\n    -- Format of the above: ( 2x2 Matrix ) * ( 2x1 Vector ) = ( 2x1 Vector )\n    -- Solve to find a and b, satisfying y = a + bx\n    -- Matrix arithmetic has been expanded and solved to make the following operation as fast as possible\n    if unitTable then\n        local values = unitTable[1]\n        local n = #values\n        if n > minSamples then\n            local a, b = 0, 0\n            local Ex2, Ex, Exy, Ey = 0, 0, 0, 0\n            \n            local value, x, y\n            for i = 1, n do\n                value = values[i]\n                x, y = value[1], value[2]\n                \n                Ex2 = Ex2 + x * x\n                Ex = Ex + x\n                Exy = Exy + x * y\n                Ey = Ey + y\n            end\n            -- invariant to find matrix inverse\n            local invariant = 1 / (Ex2 * n - Ex * Ex)\n            -- Solve for a and b\n            a = (-Ex * Exy * invariant) + (Ex2 * Ey * invariant)\n            b = (n * Exy * invariant) - (Ex * Ey * invariant)\n            if b ~= 0 then\n                -- Use best fit line to calculate estimated time to reach target health\n                seconds = (percentage - a) / b\n                -- Subtract current time to obtain \"time remaining\"\n                seconds = math.min(7777, seconds - (GetTime() - unitTable[2]))\n                if seconds < 0 then seconds = 9999 end\n            end\n        end\n    end\n    return seconds\nend\n\n\nfunction aura_env.click(but)\n    ActionButtonDown(but);ActionButtonUp(but);\n    C_Timer.After(\n        0.1,\n        function()\n            ActionButtonDown(but);ActionButtonUp(but);\n        end\n    )\n    \n    C_Timer.After(\n        0.3,\n        function()\n            ActionButtonDown(but);ActionButtonUp(but);\n        end\n    )\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
+			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "DK Next Action Guide - by Fonsas",
 			["config"] = {
 				["normalR"] = true,
 				["fillerGCD"] = 1,
@@ -15953,10 +15964,10 @@ WeakAurasSaved = {
 				["expRating"] = 15,
 			},
 			["inverse"] = false,
-			["xOffset"] = 0,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -16168,9 +16179,9 @@ WeakAurasSaved = {
 						["ownOnly"] = true,
 						["subeventPrefix"] = "SPELL",
 						["duration"] = "1",
+						["debuffType"] = "HELPFUL",
 						["custom_hide"] = "timed",
 						["spellName"] = 0,
-						["debuffType"] = "HELPFUL",
 						["remOperator"] = "<",
 						["type"] = "custom",
 						["unit"] = "player",
@@ -16353,25 +16364,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 2,
 			["fontSize"] = 19,
-			["displayStacks"] = "%p",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["parent"] = "Dummy icons",
+			["source"] = "import",
 			["stacksPoint"] = "BOTTOM",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["alpha"] = 1,
+			["displayStacks"] = "%p",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["config"] = {
 			},
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
@@ -16379,20 +16392,18 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "UA full",
-			["source"] = "import",
+			["alpha"] = 1,
 			["useCooldownModRate"] = true,
 			["width"] = 43.571411132813,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["uid"] = "bv3OBlEA(5u",
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["displayIcon"] = 132388,
-			["cooldown"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -16701,8 +16712,8 @@ WeakAurasSaved = {
 					["text_text_format_t_time_precision"] = 1,
 				}, -- [4]
 				{
+					["border_offset"] = 0,
 					["border_size"] = 2,
-					["type"] = "subborder",
 					["border_anchor"] = "bar",
 					["text_color"] = {
 					},
@@ -16714,7 +16725,7 @@ WeakAurasSaved = {
 					},
 					["border_visible"] = false,
 					["border_edge"] = "Blizzard Tooltip",
-					["border_offset"] = 0,
+					["type"] = "subborder",
 				}, -- [5]
 				{
 					["border_offset"] = 0,
@@ -16771,6 +16782,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["class"] = {
 					["single"] = "PRIEST",
 					["multi"] = {
@@ -16778,10 +16793,6 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["zoneIds"] = "",
 			},
 			["sparkBlendMode"] = "ADD",
@@ -16795,14 +16806,14 @@ WeakAurasSaved = {
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
 			["sparkHidden"] = "NEVER",
-			["semver"] = "1.0.1",
-			["icon_side"] = "LEFT",
 			["auto"] = true,
+			["icon_side"] = "LEFT",
+			["spark"] = false,
 			["sparkHeight"] = 2,
 			["texture"] = "xVerminClean",
 			["uid"] = "0NBlQkcHV5x",
 			["sparkTexture"] = "bonusobjectives-bar-spark",
-			["spark"] = false,
+			["semver"] = "1.0.1",
 			["tocversion"] = 11305,
 			["id"] = "Info - ThreatSituation",
 			["backgroundColor"] = {
@@ -17094,15 +17105,20 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["uid"] = "53BfeKjl5ft",
-			["icon"] = true,
+			["selfPoint"] = "CENTER",
 			["url"] = "https://wago.io/iST6tz9t8/1",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["useTooltip"] = true,
 			["xOffset"] = 0,
+			["parent"] = "Ore Count",
 			["zoom"] = 0.3,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
@@ -17116,16 +17132,11 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["parent"] = "Ore Count",
+			["useTooltip"] = true,
 		},
 		["GFBT1"] = {
 			["iconSource"] = -1,
@@ -17154,8 +17165,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "custom",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        return true\n    else \n        return false\n    end\nend",
@@ -17170,7 +17181,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "event",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -17370,17 +17381,30 @@ WeakAurasSaved = {
 				["use_class"] = true,
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "GFBT 2HUH",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 237515,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "fAsoATaBv22",
+			["xOffset"] = -10.750308990479,
+			["width"] = 23.000370025635,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "GFBT1",
 			["actions"] = {
 				["start"] = {
 				},
@@ -17391,29 +17415,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "fAsoATaBv22",
-			["selfPoint"] = "CENTER",
-			["width"] = 23.000370025635,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "GFBT1",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "GFBT 2HUH",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -10.750308990479,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -17581,15 +17592,20 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["uid"] = "oN2SA6pc0W4",
-			["icon"] = true,
+			["selfPoint"] = "CENTER",
 			["url"] = "https://wago.io/iST6tz9t8/1",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["useTooltip"] = true,
 			["xOffset"] = 0,
+			["parent"] = "Ore Count",
 			["zoom"] = 0.3,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
@@ -17603,16 +17619,11 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["parent"] = "Ore Count",
+			["useTooltip"] = true,
 		},
 		["PShalf"] = {
 			["iconSource"] = -1,
@@ -17640,9 +17651,9 @@ WeakAurasSaved = {
 						["ownOnly"] = true,
 						["subeventPrefix"] = "SPELL",
 						["duration"] = "1",
+						["debuffType"] = "HELPFUL",
 						["custom_hide"] = "timed",
 						["spellName"] = 0,
-						["debuffType"] = "HELPFUL",
 						["remOperator"] = "<",
 						["type"] = "custom",
 						["unit"] = "player",
@@ -17825,25 +17836,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 2,
 			["fontSize"] = 19,
-			["displayStacks"] = "%p",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["parent"] = "Dummy icons",
+			["source"] = "import",
 			["stacksPoint"] = "BOTTOM",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["alpha"] = 1,
+			["displayStacks"] = "%p",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["config"] = {
 			},
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
@@ -17851,20 +17864,18 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "PShalf",
-			["source"] = "import",
+			["alpha"] = 1,
 			["useCooldownModRate"] = true,
 			["width"] = 45.000061035156,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["uid"] = "(IXhp2qXUzQ",
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["displayIcon"] = 237519,
-			["cooldown"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -18616,7 +18627,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "0N1K2wIv4",
-			["parent"] = "DK - Runes",
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["customText"] = "",
 			["yOffset"] = 0,
@@ -18663,15 +18674,15 @@ WeakAurasSaved = {
 						["rune"] = 1,
 						["type"] = "custom",
 						["remaining"] = "6",
-						["custom"] = "function(allstates, event, rune)\n    local _, classId = UnitClassBase(\"player\");\n    if classId == 6 then\n        if event == \"RUNE_POWER_UPDATE\" \n        or event == \"RUNE_TYPE_UPDATE\"\n        then\n            if not rune then \n                for i = 1, 6 do \n                    aura_env.updateRune(allstates, i)\n                end\n            else\n                aura_env.updateRune(allstates, rune)\n            end\n            return true\n        elseif event == \"OPTIONS\" then\n            for i = 1, 6 do \n                aura_env.updateRune(allstates, i)\n            end\n        elseif event == \"PLAYER_REGEN_ENABLED\" then\n            for i = 1, 6 do\n                local state = allstates[i]\n                state.overTimeStart = 0\n                state.overTimeRem = 0\n                state.additionalProgress[1].min = 0\n                state.additionalProgress[1].max = 0\n                state.runeReady = false          \n                state.changed = true\n                state.hasGrace = false\n            end\n            aura_env.spentInCombat = {\n                false, false, false, false, false, false,   \n            }\n            return true\n        elseif event == \"PLAYER_REGEN_DISABLED\" then\n            for i = 1, 6 do \n                local start, duration, runeReady = GetRuneCooldown(i)\n                if runeReady then\n                    aura_env.spentInCombat[i] = \"fresh\"\n                end\n            end\n        elseif InCombatLockdown() then\n            local update = false\n            for key, state in pairs(allstates) do\n                if state.runeReady and state.hasGrace then\n                    local exp = state.overTimeStart\n                    local rem = exp - GetTime()\n                    if rem > 0 then\n                        state.additionalProgress[1].min = rem + 7.529999999988\n                        state.additionalProgress[1].max = 10\n                        state.overTimeRem = 2.471 - rem\n                        state.changed = true\n                        update = true\n                    end\n                elseif state.additionalProgress[1].min ~= 0 or state.additionalProgress[1].max ~= 0 then\n                    state.additionalProgress[1].min = 0\n                    state.additionalProgress[1].max = 0\n                    state.changed = true\n                    update = true\n                end\n            end\n            return update\n        end\n    end\nend",
 						["use_frostRunes"] = false,
+						["events"] = "RUNE_TYPE_UPDATE RUNE_POWER_UPDATE FRAME_UPDATE PLAYER_REGEN_DISABLED PLAYER_REGEN_ENABLED ",
 						["spellIds"] = {
 						},
 						["customDuration"] = "",
 						["use_remaining"] = false,
 						["realSpellName"] = 0,
 						["use_spellName"] = true,
-						["events"] = "RUNE_TYPE_UPDATE RUNE_POWER_UPDATE FRAME_UPDATE PLAYER_REGEN_DISABLED PLAYER_REGEN_ENABLED ",
+						["custom"] = "function(allstates, event, rune)\n    local _, classId = UnitClassBase(\"player\");\n    if classId == 6 then\n        if event == \"RUNE_POWER_UPDATE\" \n        or event == \"RUNE_TYPE_UPDATE\"\n        then\n            if not rune then \n                for i = 1, 6 do \n                    aura_env.updateRune(allstates, i)\n                end\n            else\n                aura_env.updateRune(allstates, rune)\n            end\n            return true\n        elseif event == \"OPTIONS\" then\n            for i = 1, 6 do \n                aura_env.updateRune(allstates, i)\n            end\n        elseif event == \"PLAYER_REGEN_ENABLED\" then\n            for i = 1, 6 do\n                local state = allstates[i]\n                state.overTimeStart = 0\n                state.overTimeRem = 0\n                state.additionalProgress[1].min = 0\n                state.additionalProgress[1].max = 0\n                state.runeReady = false          \n                state.changed = true\n                state.hasGrace = false\n            end\n            aura_env.spentInCombat = {\n                false, false, false, false, false, false,   \n            }\n            return true\n        elseif event == \"PLAYER_REGEN_DISABLED\" then\n            for i = 1, 6 do \n                local start, duration, runeReady = GetRuneCooldown(i)\n                if runeReady then\n                    aura_env.spentInCombat[i] = \"fresh\"\n                end\n            end\n        elseif InCombatLockdown() then\n            local update = false\n            for key, state in pairs(allstates) do\n                if state.runeReady and state.hasGrace then\n                    local exp = state.overTimeStart\n                    local rem = exp - GetTime()\n                    if rem > 0 then\n                        state.additionalProgress[1].min = rem + 7.529999999988\n                        state.additionalProgress[1].max = 10\n                        state.overTimeRem = 2.471 - rem\n                        state.changed = true\n                        update = true\n                    end\n                elseif state.additionalProgress[1].min ~= 0 or state.additionalProgress[1].max ~= 0 then\n                    state.additionalProgress[1].min = 0\n                    state.additionalProgress[1].max = 0\n                    state.changed = true\n                    update = true\n                end\n            end\n            return update\n        end\n    end\nend",
 						["use_includeDeathRunes"] = false,
 						["use_unit"] = true,
 						["remaining_operator"] = "<=",
@@ -18693,7 +18704,158 @@ WeakAurasSaved = {
 			["internalVersion"] = 64,
 			["iconSource"] = -1,
 			["selfPoint"] = "CENTER",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+				{
+					["text"] = "Ipse Death Knight Runes",
+					["type"] = "description",
+					["fontSize"] = "large",
+					["width"] = 2,
+				}, -- [1]
+				{
+					["text"] = "Here you are able to edit the position of each rune in the aura. This option exist to allow for varying rune layouts to the users preference. \n\nFor all other options involving grace period and rune colours please use the conditions tab.",
+					["type"] = "description",
+					["fontSize"] = "medium",
+					["width"] = 2,
+				}, -- [2]
+				{
+					["text"] = "|cFFFF0000Blood #1.|r",
+					["type"] = "description",
+					["fontSize"] = "medium",
+					["width"] = 0.5,
+				}, -- [3]
+				{
+					["width"] = 0.5,
+					["type"] = "select",
+					["values"] = {
+						"1", -- [1]
+						"2", -- [2]
+						"3", -- [3]
+						"4", -- [4]
+						"5", -- [5]
+						"6", -- [6]
+					},
+					["name"] = "",
+					["useDesc"] = true,
+					["key"] = "1",
+					["default"] = 1,
+					["desc"] = "This will allow you to change the position of blood rune 1.",
+				}, -- [4]
+				{
+					["text"] = "|cFFFF0000Blood #2.|r",
+					["type"] = "description",
+					["fontSize"] = "medium",
+					["width"] = 0.5,
+				}, -- [5]
+				{
+					["width"] = 0.5,
+					["type"] = "select",
+					["values"] = {
+						"1", -- [1]
+						"2", -- [2]
+						"3", -- [3]
+						"4", -- [4]
+						"5", -- [5]
+						"6", -- [6]
+					},
+					["name"] = "",
+					["useDesc"] = true,
+					["key"] = "2",
+					["default"] = 2,
+					["desc"] = "This will allow you to change the position of blood rune 2.",
+				}, -- [6]
+				{
+					["text"] = "|cFF037fffFrost #1.|r",
+					["type"] = "description",
+					["fontSize"] = "medium",
+					["width"] = 0.5,
+				}, -- [7]
+				{
+					["width"] = 0.5,
+					["type"] = "select",
+					["values"] = {
+						"1", -- [1]
+						"2", -- [2]
+						"3", -- [3]
+						"4", -- [4]
+						"5", -- [5]
+						"6", -- [6]
+					},
+					["name"] = "",
+					["useDesc"] = true,
+					["key"] = "5",
+					["default"] = 3,
+					["desc"] = "This will allow you to change the position of frost rune 1.",
+				}, -- [8]
+				{
+					["text"] = "|cFF037fffFrost #2.|r",
+					["type"] = "description",
+					["fontSize"] = "medium",
+					["width"] = 0.5,
+				}, -- [9]
+				{
+					["width"] = 0.5,
+					["type"] = "select",
+					["values"] = {
+						"1", -- [1]
+						"2", -- [2]
+						"3", -- [3]
+						"4", -- [4]
+						"5", -- [5]
+						"6", -- [6]
+					},
+					["name"] = "",
+					["useDesc"] = true,
+					["key"] = "6",
+					["default"] = 4,
+					["desc"] = "This will allow you to change the position of frost rune 2.",
+				}, -- [10]
+				{
+					["text"] = "|cFF049c23Unholy #1.|r",
+					["type"] = "description",
+					["fontSize"] = "medium",
+					["width"] = 0.5,
+				}, -- [11]
+				{
+					["width"] = 0.5,
+					["type"] = "select",
+					["values"] = {
+						"1", -- [1]
+						"2", -- [2]
+						"3", -- [3]
+						"4", -- [4]
+						"5", -- [5]
+						"6", -- [6]
+					},
+					["name"] = "",
+					["useDesc"] = true,
+					["key"] = "3",
+					["default"] = 5,
+					["desc"] = "This will allow you to change the position of unholy rune 1.",
+				}, -- [12]
+				{
+					["text"] = "|cFF049c23Unholy #2.|r",
+					["type"] = "description",
+					["fontSize"] = "medium",
+					["width"] = 0.5,
+				}, -- [13]
+				{
+					["width"] = 0.5,
+					["type"] = "select",
+					["values"] = {
+						"1", -- [1]
+						"2", -- [2]
+						"3", -- [3]
+						"4", -- [4]
+						"5", -- [5]
+						"6", -- [6]
+					},
+					["name"] = "",
+					["useDesc"] = true,
+					["key"] = "4",
+					["default"] = 6,
+					["desc"] = "This will allow you to change the position of unholy rune 2.",
+				}, -- [14]
+			},
 			["sparkRotationMode"] = "AUTO",
 			["barColor"] = {
 				0.76078431372549, -- [1]
@@ -18856,158 +19018,7 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["authorOptions"] = {
-				{
-					["text"] = "Ipse Death Knight Runes",
-					["type"] = "description",
-					["fontSize"] = "large",
-					["width"] = 2,
-				}, -- [1]
-				{
-					["text"] = "Here you are able to edit the position of each rune in the aura. This option exist to allow for varying rune layouts to the users preference. \n\nFor all other options involving grace period and rune colours please use the conditions tab.",
-					["type"] = "description",
-					["fontSize"] = "medium",
-					["width"] = 2,
-				}, -- [2]
-				{
-					["text"] = "|cFFFF0000Blood #1.|r",
-					["type"] = "description",
-					["fontSize"] = "medium",
-					["width"] = 0.5,
-				}, -- [3]
-				{
-					["width"] = 0.5,
-					["type"] = "select",
-					["values"] = {
-						"1", -- [1]
-						"2", -- [2]
-						"3", -- [3]
-						"4", -- [4]
-						"5", -- [5]
-						"6", -- [6]
-					},
-					["name"] = "",
-					["useDesc"] = true,
-					["key"] = "1",
-					["default"] = 1,
-					["desc"] = "This will allow you to change the position of blood rune 1.",
-				}, -- [4]
-				{
-					["text"] = "|cFFFF0000Blood #2.|r",
-					["type"] = "description",
-					["fontSize"] = "medium",
-					["width"] = 0.5,
-				}, -- [5]
-				{
-					["width"] = 0.5,
-					["type"] = "select",
-					["values"] = {
-						"1", -- [1]
-						"2", -- [2]
-						"3", -- [3]
-						"4", -- [4]
-						"5", -- [5]
-						"6", -- [6]
-					},
-					["name"] = "",
-					["useDesc"] = true,
-					["key"] = "2",
-					["default"] = 2,
-					["desc"] = "This will allow you to change the position of blood rune 2.",
-				}, -- [6]
-				{
-					["text"] = "|cFF037fffFrost #1.|r",
-					["type"] = "description",
-					["fontSize"] = "medium",
-					["width"] = 0.5,
-				}, -- [7]
-				{
-					["width"] = 0.5,
-					["type"] = "select",
-					["values"] = {
-						"1", -- [1]
-						"2", -- [2]
-						"3", -- [3]
-						"4", -- [4]
-						"5", -- [5]
-						"6", -- [6]
-					},
-					["name"] = "",
-					["useDesc"] = true,
-					["key"] = "5",
-					["default"] = 3,
-					["desc"] = "This will allow you to change the position of frost rune 1.",
-				}, -- [8]
-				{
-					["text"] = "|cFF037fffFrost #2.|r",
-					["type"] = "description",
-					["fontSize"] = "medium",
-					["width"] = 0.5,
-				}, -- [9]
-				{
-					["width"] = 0.5,
-					["type"] = "select",
-					["values"] = {
-						"1", -- [1]
-						"2", -- [2]
-						"3", -- [3]
-						"4", -- [4]
-						"5", -- [5]
-						"6", -- [6]
-					},
-					["name"] = "",
-					["useDesc"] = true,
-					["key"] = "6",
-					["default"] = 4,
-					["desc"] = "This will allow you to change the position of frost rune 2.",
-				}, -- [10]
-				{
-					["text"] = "|cFF049c23Unholy #1.|r",
-					["type"] = "description",
-					["fontSize"] = "medium",
-					["width"] = 0.5,
-				}, -- [11]
-				{
-					["width"] = 0.5,
-					["type"] = "select",
-					["values"] = {
-						"1", -- [1]
-						"2", -- [2]
-						"3", -- [3]
-						"4", -- [4]
-						"5", -- [5]
-						"6", -- [6]
-					},
-					["name"] = "",
-					["useDesc"] = true,
-					["key"] = "3",
-					["default"] = 5,
-					["desc"] = "This will allow you to change the position of unholy rune 1.",
-				}, -- [12]
-				{
-					["text"] = "|cFF049c23Unholy #2.|r",
-					["type"] = "description",
-					["fontSize"] = "medium",
-					["width"] = 0.5,
-				}, -- [13]
-				{
-					["width"] = 0.5,
-					["type"] = "select",
-					["values"] = {
-						"1", -- [1]
-						"2", -- [2]
-						"3", -- [3]
-						"4", -- [4]
-						"5", -- [5]
-						"6", -- [6]
-					},
-					["name"] = "",
-					["useDesc"] = true,
-					["key"] = "4",
-					["default"] = 6,
-					["desc"] = "This will allow you to change the position of unholy rune 2.",
-				}, -- [14]
-			},
+			["parent"] = "DK - Runes",
 			["source"] = "import",
 			["animation"] = {
 				["start"] = {
@@ -19349,12 +19360,13 @@ WeakAurasSaved = {
 			["semver"] = "2.1.2",
 			["tocversion"] = 30400,
 			["id"] = "Malygos - Combopoints",
-			["selfPoint"] = "CENTER",
+			["uid"] = "5GPDVmt3hS3",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["parent"] = "Malygos",
-			["uid"] = "5GPDVmt3hS3",
+			["selfPoint"] = "CENTER",
 			["borderInset"] = 1,
+			["authorOptions"] = {
+			},
 			["config"] = {
 			},
 			["conditions"] = {
@@ -19362,8 +19374,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["parent"] = "Malygos",
 		},
 		["Druid - CP2"] = {
 			["color"] = {
@@ -19575,21 +19586,21 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["customVariables"] = "{\n    school = \"number\",\n    priority = \"number\",\n    secondary = \"bool\"\n}",
 						["type"] = "custom",
+						["unevent"] = "timed",
 						["subeventSuffix"] = "_CAST_START",
-						["custom_type"] = "stateupdate",
-						["names"] = {
-						},
+						["use_unit"] = true,
 						["duration"] = "1",
 						["event"] = "Chat Message",
-						["unit"] = "player",
+						["names"] = {
+						},
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function (allstates, event, ...)\n    allstates[1] = \n    {\n        show = false,\n        changed = true,\n        priority = -1,\n        expirationTime = 0\n    }\n    \n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    local lossName = nil\n    for i=1,activeLossOfControlCount do\n        local data = C_LossOfControl.GetActiveLossOfControlData(i)\n        \n        lossName = data.displayText\n        if data.locType == \"SCHOOL_INTERRUPT\" then\n            if data.lockoutSchool and data.lockoutSchool ~= 0 then\n                lossName = string.format(\"%s Locked\", GetSchoolString(data.lockoutSchool));\n            end\n        end\n        \n        if (allstates[1].priority <= data.priority and allstates[1].expirationTime < (GetTime() + (data.timeRemaining or 0))) then\n            allstates[1] = \n            {\n                show = true,\n                changed = true,\n                index = 2,\n                duration = data.duration,\n                expirationTime = GetTime() + (data.timeRemaining or 0),\n                progressType = \"timed\",\n                autoHide = true,\n                icon = data.iconTexture,\n                name = lossName,\n                school = data.lockoutSchool,            \n                priority = data.priority,\n                secondary = false\n            }\n        end\n    end\n    if (aura_env.config.nextLOC.showNext) then\n        allstates[2] = \n        {\n            show = false,\n            changed = true,\n            priority = -1,\n            expirationTime = allstates[1].expirationTime\n        }\n        for i=1,activeLossOfControlCount do\n            local data = C_LossOfControl.GetActiveLossOfControlData(i)\n            \n            lossName = data.displayText\n            if data.locType == \"SCHOOL_INTERRUPT\" then\n                if data.lockoutSchool and data.lockoutSchool ~= 0 then\n                    lossName = string.format(\"%s Locked\", GetSchoolString(data.lockoutSchool));\n                end\n            end\n            \n            if (allstates[2].priority <= data.priority and allstates[2].expirationTime < (GetTime() + (data.timeRemaining or 0)) and data.priority < allstates[1].priority) then\n                allstates[2] = \n                {\n                    show = true,\n                    changed = true,\n                    index = 1,\n                    duration = data.duration,\n                    expirationTime = GetTime() + (data.timeRemaining or 0),\n                    progressType = \"timed\",\n                    autoHide = true,\n                    icon = data.iconTexture,\n                    name = lossName,\n                    school = data.lockoutSchool,            \n                    priority = data.priority,\n                    secondary = true\n                }         \n            end\n        end        \n    end\n    return true\nend",
-						["events"] = "LOSS_OF_CONTROL_UPDATE LOSS_OF_CONTROL_ADDED",
 						["spellIds"] = {
 						},
+						["custom"] = "function (allstates, event, ...)\n    allstates[1] = \n    {\n        show = false,\n        changed = true,\n        priority = -1,\n        expirationTime = 0\n    }\n    \n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    local lossName = nil\n    for i=1,activeLossOfControlCount do\n        local data = C_LossOfControl.GetActiveLossOfControlData(i)\n        \n        lossName = data.displayText\n        if data.locType == \"SCHOOL_INTERRUPT\" then\n            if data.lockoutSchool and data.lockoutSchool ~= 0 then\n                lossName = string.format(\"%s Locked\", GetSchoolString(data.lockoutSchool));\n            end\n        end\n        \n        if (allstates[1].priority <= data.priority and allstates[1].expirationTime < (GetTime() + (data.timeRemaining or 0))) then\n            allstates[1] = \n            {\n                show = true,\n                changed = true,\n                index = 2,\n                duration = data.duration,\n                expirationTime = GetTime() + (data.timeRemaining or 0),\n                progressType = \"timed\",\n                autoHide = true,\n                icon = data.iconTexture,\n                name = lossName,\n                school = data.lockoutSchool,            \n                priority = data.priority,\n                secondary = false\n            }\n        end\n    end\n    if (aura_env.config.nextLOC.showNext) then\n        allstates[2] = \n        {\n            show = false,\n            changed = true,\n            priority = -1,\n            expirationTime = allstates[1].expirationTime\n        }\n        for i=1,activeLossOfControlCount do\n            local data = C_LossOfControl.GetActiveLossOfControlData(i)\n            \n            lossName = data.displayText\n            if data.locType == \"SCHOOL_INTERRUPT\" then\n                if data.lockoutSchool and data.lockoutSchool ~= 0 then\n                    lossName = string.format(\"%s Locked\", GetSchoolString(data.lockoutSchool));\n                end\n            end\n            \n            if (allstates[2].priority <= data.priority and allstates[2].expirationTime < (GetTime() + (data.timeRemaining or 0)) and data.priority < allstates[1].priority) then\n                allstates[2] = \n                {\n                    show = true,\n                    changed = true,\n                    index = 1,\n                    duration = data.duration,\n                    expirationTime = GetTime() + (data.timeRemaining or 0),\n                    progressType = \"timed\",\n                    autoHide = true,\n                    icon = data.iconTexture,\n                    name = lossName,\n                    school = data.lockoutSchool,            \n                    priority = data.priority,\n                    secondary = true\n                }         \n            end\n        end        \n    end\n    return true\nend",
+						["events"] = "LOSS_OF_CONTROL_UPDATE LOSS_OF_CONTROL_ADDED",
 						["check"] = "event",
-						["use_unit"] = true,
-						["unevent"] = "timed",
+						["unit"] = "player",
+						["custom_type"] = "stateupdate",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -19717,7 +19728,6 @@ WeakAurasSaved = {
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 40,
-			["url"] = "https://wago.io/JiQILDF99/1",
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -19770,6 +19780,7 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
+			["parent"] = "Loss of Control Alert (WOTLK)",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -19870,7 +19881,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = false,
-			["parent"] = "Loss of Control Alert (WOTLK)",
+			["url"] = "https://wago.io/JiQILDF99/1",
 		},
 		["Malygos - Comboframe 2"] = {
 			["wagoID"] = "nYCzfPXgJ",
@@ -20114,21 +20125,21 @@ WeakAurasSaved = {
 				},
 			},
 			["align"] = "CENTER",
-			["uid"] = "WiRsd0lRNQ2",
+			["anchorFrameFrame"] = "PlayerFrame",
 			["gridWidth"] = 5,
-			["yOffset"] = 250,
-			["stagger"] = 0,
-			["selfPoint"] = "TOP",
-			["version"] = 2,
-			["subRegions"] = {
-			},
-			["useLimit"] = false,
 			["borderColor"] = {
 				0.086274509803922, -- [1]
 				0.090196078431373, -- [2]
 				0.10196078431373, -- [3]
 				1, -- [4]
 			},
+			["stagger"] = 0,
+			["selfPoint"] = "TOP",
+			["version"] = 2,
+			["subRegions"] = {
+			},
+			["rowSpace"] = 1,
+			["yOffset"] = 250,
 			["load"] = {
 				["use_class"] = false,
 				["talent"] = {
@@ -20160,31 +20171,31 @@ WeakAurasSaved = {
 			},
 			["authorOptions"] = {
 			},
-			["animate"] = false,
-			["borderInset"] = 1,
+			["source"] = "import",
+			["uid"] = "WiRsd0lRNQ2",
 			["scale"] = 1.2,
 			["centerType"] = "LR",
 			["border"] = false,
 			["borderEdge"] = "Blizzard Tooltip",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 5,
-			["sort"] = "none",
-			["source"] = "import",
 			["limit"] = 5,
+			["sort"] = "none",
+			["rotation"] = 0,
 			["constantFactor"] = "RADIUS",
 			["arcLength"] = 360,
 			["borderOffset"] = 4,
 			["semver"] = "1.0.1",
 			["tocversion"] = 11305,
 			["id"] = "Threat List",
-			["rowSpace"] = 1,
+			["borderInset"] = 1,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["anchorFrameFrame"] = "PlayerFrame",
+			["animate"] = false,
 			["config"] = {
 			},
-			["rotation"] = 0,
 			["radius"] = 200,
+			["useLimit"] = false,
 			["conditions"] = {
 			},
 			["information"] = {
@@ -20197,20 +20208,27 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["xOffset"] = 0,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["triggers"] = {
 				{
@@ -20275,8 +20293,7 @@ WeakAurasSaved = {
 				},
 			},
 			["iconSource"] = -1,
-			["authorOptions"] = {
-			},
+			["xOffset"] = 0,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -20284,15 +20301,13 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["icon"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
+			["icon"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -20391,26 +20406,26 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = "",
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["uid"] = "HdtE8HQQup1",
 			["useCooldownModRate"] = true,
 			["icon_side"] = "RIGHT",
 			["width"] = 36,
 			["frameStrata"] = 1,
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
-			["uid"] = "HdtE8HQQup1",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["zoom"] = 0.3,
 			["auto"] = false,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["id"] = "Barkskin",
 			["sparkHidden"] = "NEVER",
 			["alpha"] = 1,
@@ -20419,11 +20434,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
@@ -20478,16 +20489,34 @@ WeakAurasSaved = {
 			["sort"] = "none",
 			["selfPoint"] = "BOTTOMRIGHT",
 			["align"] = "RIGHT",
-			["customAnchor"] = "ChatFrame3",
-			["rotation"] = 0,
-			["limit"] = 5,
-			["stagger"] = 0,
+			["anchorFrameFrame"] = "ChatFrame3",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+			},
 			["groupIcon"] = 132281,
+			["stagger"] = 0,
+			["rotation"] = 0,
 			["version"] = 5,
 			["subRegions"] = {
 			},
-			["authorOptions"] = {
-			},
+			["limit"] = 5,
 			["radius"] = 200,
 			["load"] = {
 				["use_class"] = false,
@@ -20516,17 +20545,17 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["uid"] = "6GCI4uu)d8g",
+			["borderInset"] = 1,
 			["animate"] = false,
-			["rowSpace"] = 1,
+			["uid"] = "6GCI4uu)d8g",
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
-			["anchorFrameFrame"] = "ChatFrame3",
+			["borderEdge"] = "1 Pixel",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["anchorPerUnit"] = "NAMEPLATE",
-			["borderInset"] = 1,
+			["customAnchor"] = "ChatFrame3",
 			["gridWidth"] = 5,
 			["constantFactor"] = "RADIUS",
 			["arcLength"] = 360,
@@ -20534,7 +20563,7 @@ WeakAurasSaved = {
 			["semver"] = "1.0.4",
 			["tocversion"] = 11302,
 			["id"] = "Professions Skill Tracker",
-			["borderEdge"] = "1 Pixel",
+			["rowSpace"] = 1,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SELECTFRAME",
 			["borderColor"] = {
@@ -20553,39 +20582,21 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
+			["authorOptions"] = {
 			},
 		},
 		["PST bar"] = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["frameStrata"] = 1,
-			["authorOptions"] = {
+			["color"] = {
 			},
 			["adjustedMax"] = 51,
 			["adjustedMin"] = 62,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["iconSource"] = 0,
-			["xOffset"] = 0,
+			["parent"] = "Professions Skill Tracker",
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["url"] = "https://wago.io/XvH-Hqsxz/5",
@@ -20626,11 +20637,11 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["enableGradient"] = false,
+			["internalVersion"] = 64,
 			["preferToUpdate"] = false,
 			["selfPoint"] = "CENTER",
 			["id"] = "PST bar",
-			["color"] = {
+			["authorOptions"] = {
 			},
 			["barColor"] = {
 				0, -- [1]
@@ -20651,7 +20662,7 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["internalVersion"] = 64,
+			["useTooltip"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -20788,10 +20799,10 @@ WeakAurasSaved = {
 					["colorA"] = 1,
 					["colorG"] = 0.10196078431373,
 					["type"] = "none",
-					["use_color"] = true,
-					["easeType"] = "none",
-					["preset"] = "grow",
 					["scaley"] = 1,
+					["easeType"] = "none",
+					["use_color"] = true,
+					["preset"] = "grow",
 					["alpha"] = 0,
 					["easeStrength"] = 3,
 					["y"] = 0,
@@ -20834,13 +20845,13 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["icon"] = false,
-			["useTooltip"] = true,
+			["enableGradient"] = false,
 			["version"] = 5,
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
 			["height"] = 2,
-			["parent"] = "Professions Skill Tracker",
+			["xOffset"] = 0,
 			["sparkDesaturate"] = false,
 			["spark"] = true,
 			["sparkColor"] = {
@@ -21023,13 +21034,8 @@ WeakAurasSaved = {
 					["text"] = "/cast Conjure Mana Citrine",
 				},
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["selfPoint"] = "CENTER",
+			["icon"] = true,
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
@@ -21107,31 +21113,33 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = false,
-			["icon"] = true,
-		},
-		["Survival Instincts"] = {
-			["sparkWidth"] = 10,
-			["iconSource"] = -1,
-			["wagoID"] = "v9qxdDgI4",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+		},
+		["Survival Instincts"] = {
+			["sparkWidth"] = 10,
+			["iconSource"] = -1,
+			["wagoID"] = "v9qxdDgI4",
+			["parent"] = "Vermin Druid",
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["triggers"] = {
 				{
@@ -21196,7 +21204,11 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["barColor"] = {
 				0.2, -- [1]
@@ -21205,15 +21217,13 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["icon"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
+			["icon"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -21316,11 +21326,15 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desaturate"] = false,
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["config"] = {
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["useCooldownModRate"] = true,
 			["icon_side"] = "RIGHT",
@@ -21328,15 +21342,11 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["config"] = {
 			},
 			["zoom"] = 0.3,
 			["spark"] = false,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["id"] = "Survival Instincts",
 			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
@@ -21344,7 +21354,8 @@ WeakAurasSaved = {
 			["auto"] = false,
 			["uid"] = "rI)J8bFeXRZ",
 			["inverse"] = false,
-			["parent"] = "Vermin Druid",
+			["authorOptions"] = {
+			},
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
@@ -21797,15 +21808,20 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["uid"] = "vxG)cuf9NrH",
-			["icon"] = true,
+			["selfPoint"] = "CENTER",
 			["url"] = "https://wago.io/iST6tz9t8/1",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["useTooltip"] = true,
 			["xOffset"] = 0,
+			["parent"] = "Ore Count",
 			["zoom"] = 0.3,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
@@ -21819,16 +21835,11 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["parent"] = "Ore Count",
+			["useTooltip"] = true,
 		},
 		["Loss of Control Alert (WOTLK)"] = {
 			["controlledChildren"] = {
@@ -21934,13 +21945,12 @@ WeakAurasSaved = {
 			["semver"] = "1.0.0",
 			["tocversion"] = 30400,
 			["id"] = "Loss of Control Alert (WOTLK)",
-			["groupIcon"] = 136071,
+			["uid"] = "RaWaTrdL9bd",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["authorOptions"] = {
-			},
-			["uid"] = "RaWaTrdL9bd",
+			["groupIcon"] = 136071,
 			["borderInset"] = 1,
+			["selfPoint"] = "CENTER",
 			["config"] = {
 			},
 			["conditions"] = {
@@ -21948,7 +21958,8 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 		},
 		["DRUID / ROGUE"] = {
 			["controlledChildren"] = {
@@ -22044,8 +22055,9 @@ WeakAurasSaved = {
 			["id"] = "DRUID / ROGUE",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["uid"] = "IUvIXiYBA4q",
 			["borderInset"] = 1,
+			["config"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -22074,8 +22086,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["config"] = {
-			},
+			["uid"] = "IUvIXiYBA4q",
 		},
 		["Iron Ore"] = {
 			["iconSource"] = -1,
@@ -22237,12 +22248,11 @@ WeakAurasSaved = {
 			["source"] = "import",
 			["config"] = {
 			},
-			["useTooltip"] = true,
+			["cooldownEdge"] = false,
 			["xOffset"] = 0,
 			["regionType"] = "icon",
-			["cooldownEdge"] = false,
+			["parent"] = "Ore Count",
 			["cooldown"] = false,
-			["selfPoint"] = "CENTER",
 			["actions"] = {
 				["start"] = {
 				},
@@ -22250,6 +22260,8 @@ WeakAurasSaved = {
 				},
 				["init"] = {
 				},
+			},
+			["authorOptions"] = {
 			},
 			["alpha"] = 1,
 			["width"] = 40,
@@ -22263,14 +22275,13 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = false,
 			["uid"] = "WbgHXRR3HGd",
 			["inverse"] = false,
-			["parent"] = "Ore Count",
+			["useTooltip"] = true,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Malygos - Comboframe 1"] = {
 			["wagoID"] = "nYCzfPXgJ",
@@ -23083,15 +23094,8 @@ WeakAurasSaved = {
 			},
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
 			["parent"] = "VictoryRush",
+			["selfPoint"] = "CENTER",
 			["cooldown"] = false,
 			["conditions"] = {
 			},
@@ -23120,7 +23124,14 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Malygos - Frameshine 2"] = {
 			["wagoID"] = "nYCzfPXgJ",
@@ -23532,8 +23543,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "custom",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var, glow)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend",
@@ -23548,7 +23559,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "event",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -23585,20 +23596,15 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["source"] = "import",
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				0.85098039215686, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["desaturate"] = false,
-			["discrete_rotation"] = 0,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["desaturate"] = false,
+			["rotation"] = 45,
+			["stacksPoint"] = "BOTTOM",
 			["version"] = 176,
 			["subRegions"] = {
 				{
@@ -23706,37 +23712,42 @@ WeakAurasSaved = {
 				["zoneIds"] = "",
 			},
 			["displayIcon"] = 237515,
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				0.85098039215686, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
 			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
-			["displayStacks"] = "%p",
-			["fontSize"] = 19,
+			["source"] = "import",
+			["authorOptions"] = {
+			},
 			["uid"] = "O2pO5WBz9ig",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = -137.07067871094,
 			["mirror"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["regionType"] = "texture",
 			["useCooldownModRate"] = true,
 			["blendMode"] = "BLEND",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
-			["rotation"] = 45,
+			["fontSize"] = 19,
+			["icon"] = true,
 			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\cancel-icon.tga",
 			["zoom"] = 0.3,
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
 			["tocversion"] = 30401,
 			["id"] = "plus Frost",
-			["alpha"] = 1,
 			["frameStrata"] = 2,
+			["alpha"] = 1,
 			["width"] = 27,
-			["icon"] = true,
+			["displayStacks"] = "%p",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -137.07067871094,
+			["discrete_rotation"] = 0,
 			["conditions"] = {
 			},
-			["stacksPoint"] = "BOTTOM",
+			["cooldown"] = true,
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -24054,9 +24065,9 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["duration"] = "2.2",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["check"] = "event",
-						["spellName"] = 0,
+						["debuffType"] = "HELPFUL",
 						["custom"] = "function(event, var, flash)\n    if var then\naura_env.duration = flash\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend",
 						["type"] = "custom",
 						["events"] = "fonsas_UA_solo",
@@ -24071,7 +24082,7 @@ WeakAurasSaved = {
 						},
 						["unevent"] = "auto",
 						["remOperator"] = "<",
-						["custom_hide"] = "custom",
+						["spellName"] = 0,
 						["use_unit"] = true,
 						["useRem"] = true,
 					},
@@ -24214,17 +24225,30 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Burst frost combo",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 132388,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "d4Wyj5Ssz6n",
+			["xOffset"] = -127,
+			["width"] = 22.5,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "UA opt 2",
 			["actions"] = {
 				["start"] = {
 				},
@@ -24235,29 +24259,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "d4Wyj5Ssz6n",
-			["selfPoint"] = "CENTER",
-			["width"] = 22.5,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "UA opt 2",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Burst frost combo",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -127,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -24290,13 +24301,13 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["use_destFlags2"] = false,
-						["names"] = {
-						},
-						["subeventSuffix"] = "",
 						["unit"] = "player",
+						["subeventSuffix"] = "",
+						["use_critical"] = true,
 						["duration"] = "20",
 						["event"] = "Combat Log",
-						["use_critical"] = true,
+						["names"] = {
+						},
 						["subeventPrefix"] = "PARTY_KILL",
 						["use_sourceFlags2"] = false,
 						["spellIds"] = {
@@ -24376,12 +24387,6 @@ WeakAurasSaved = {
 			},
 			["fontSize"] = 25,
 			["shadowXOffset"] = 1,
-			["parent"] = "VictoryRush",
-			["displayText_format_p_time_legacy_floor"] = true,
-			["regionType"] = "text",
-			["shadowYOffset"] = -1,
-			["conditions"] = {
-			},
 			["displayText_format_p_time_mod_rate"] = true,
 			["animation"] = {
 				["start"] = {
@@ -24403,6 +24408,12 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["regionType"] = "text",
+			["preferToUpdate"] = false,
+			["conditions"] = {
+			},
+			["parent"] = "VictoryRush",
+			["displayText_format_p_time_legacy_floor"] = true,
 			["displayText_format_p_time_precision"] = 1,
 			["config"] = {
 			},
@@ -24417,8 +24428,8 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["wordWrap"] = "WordWrap",
 			["uid"] = "4)0S2Za6LFo",
-			["preferToUpdate"] = false,
-			["displayText_format_p_time_dynamic_threshold"] = 60,
+			["shadowYOffset"] = -1,
+			["xOffset"] = 0,
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -24429,7 +24440,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["xOffset"] = 0,
+			["displayText_format_p_time_dynamic_threshold"] = 60,
 		},
 		["Malygos"] = {
 			["controlledChildren"] = {
@@ -24535,21 +24546,21 @@ WeakAurasSaved = {
 			["semver"] = "2.1.2",
 			["tocversion"] = 30400,
 			["id"] = "Malygos",
-			["uid"] = "wlo46rsrTZC",
+			["authorOptions"] = {
+			},
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["selfPoint"] = "CENTER",
 			["borderInset"] = 1,
 			["config"] = {
 			},
-			["groupIcon"] = 134155,
+			["uid"] = "wlo46rsrTZC",
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["groupIcon"] = 134155,
 		},
 		["PES"] = {
 			["iconSource"] = -1,
@@ -24577,9 +24588,9 @@ WeakAurasSaved = {
 						["ownOnly"] = true,
 						["subeventPrefix"] = "SPELL",
 						["duration"] = "1",
+						["debuffType"] = "HELPFUL",
 						["custom_hide"] = "timed",
 						["spellName"] = 0,
-						["debuffType"] = "HELPFUL",
 						["remOperator"] = "<",
 						["type"] = "custom",
 						["unit"] = "player",
@@ -24760,25 +24771,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 2,
 			["fontSize"] = 19,
-			["displayStacks"] = "%p",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["parent"] = "Dummy icons",
+			["source"] = "import",
 			["stacksPoint"] = "BOTTOM",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["alpha"] = 1,
+			["displayStacks"] = "%p",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["config"] = {
 			},
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
@@ -24786,20 +24799,18 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "PES",
-			["source"] = "import",
+			["alpha"] = 1,
 			["useCooldownModRate"] = true,
 			["width"] = 45,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["uid"] = "UGwnLTSW)2K",
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["displayIcon"] = 136182,
-			["cooldown"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -24994,22 +25005,21 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["triggers"] = {
 				{
@@ -25074,12 +25084,7 @@ WeakAurasSaved = {
 				},
 			},
 			["iconSource"] = -1,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -25087,13 +25092,15 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["icon"] = true,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
+			["icon"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -25192,26 +25199,26 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = "",
 			["desaturate"] = false,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["uid"] = "k49FGcBEIyS",
 			["frameStrata"] = 1,
 			["icon_side"] = "RIGHT",
 			["width"] = 36,
 			["alpha"] = 1,
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
-			["uid"] = "k49FGcBEIyS",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["zoom"] = 0.3,
 			["auto"] = false,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["sparkHidden"] = "NEVER",
 			["id"] = "Lifeblood",
 			["useCooldownModRate"] = true,
@@ -25220,7 +25227,11 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
@@ -25257,9 +25268,9 @@ WeakAurasSaved = {
 						["ownOnly"] = true,
 						["subeventPrefix"] = "SPELL",
 						["duration"] = "1",
+						["debuffType"] = "HELPFUL",
 						["custom_hide"] = "timed",
 						["spellName"] = 0,
-						["debuffType"] = "HELPFUL",
 						["remOperator"] = "<",
 						["type"] = "custom",
 						["unit"] = "player",
@@ -25440,25 +25451,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 2,
 			["fontSize"] = 19,
-			["displayStacks"] = "%p",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["parent"] = "Dummy icons",
+			["source"] = "import",
 			["stacksPoint"] = "BOTTOM",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["alpha"] = 1,
+			["displayStacks"] = "%p",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["config"] = {
 			},
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
@@ -25466,20 +25479,18 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "HB",
-			["source"] = "import",
+			["alpha"] = 1,
 			["useCooldownModRate"] = true,
 			["width"] = 45,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["uid"] = "YP1BzW0pL4t",
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["displayIcon"] = 135833,
-			["cooldown"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -25584,7 +25595,15 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+					["custom"] = "\n        aura_env.var=0",
+					["do_custom"] = false,
+				},
+				["finish"] = {
+				},
 			},
 			["version"] = 176,
 			["subRegions"] = {
@@ -25660,6 +25679,20 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 64.785758972168,
+			["uid"] = "NIpBzXN8JmX",
+			["useAdjustededMax"] = false,
+			["backgroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura3",
+			["source"] = "import",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["conditions"] = {
+			},
+			["foregroundTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
+			["mirror"] = false,
+			["authorOptions"] = {
+			},
 			["load"] = {
 				["ingroup"] = {
 				},
@@ -25713,32 +25746,11 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["useAdjustededMax"] = false,
-			["backgroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura3",
-			["source"] = "import",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["conditions"] = {
-			},
-			["textColor"] = {
-				[2] = 0.75686274509804,
-				[3] = 0,
-			},
-			["mirror"] = false,
-			["backgroundColor"] = {
-				0.23921568627451, -- [1]
-				0.23921568627451, -- [2]
-				0.23921568627451, -- [3]
-				0, -- [4]
-			},
+			["displayStacks"] = "%p",
 			["zoom"] = 0.3,
-			["fontSize"] = 19,
-			["uid"] = "NIpBzXN8JmX",
 			["anchorFrameType"] = "SCREEN",
 			["useCooldownModRate"] = true,
-			["preferToUpdate"] = true,
+			["fontSize"] = 19,
 			["foregroundColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -25756,22 +25768,21 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["adjustedMin"] = "0",
 			["id"] = "Gary Shadow 2",
-			["foregroundTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
+			["compress"] = false,
 			["frameStrata"] = 2,
 			["width"] = 26.070993423462,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-					["custom"] = "\n        aura_env.var=0",
-					["do_custom"] = false,
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0.23921568627451, -- [1]
+				0.23921568627451, -- [2]
+				0.23921568627451, -- [3]
+				0, -- [4]
 			},
-			["compress"] = false,
+			["textColor"] = {
+				[2] = 0.75686274509804,
+				[3] = 0,
+			},
 			["inverse"] = true,
-			["displayStacks"] = "%p",
+			["preferToUpdate"] = true,
 			["orientation"] = "VERTICAL_INVERSE",
 			["crop_x"] = 0,
 			["cooldown"] = true,
@@ -25791,13 +25802,11 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["triggers"] = {
 				{
@@ -25851,13 +25860,15 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["parent"] = "Vermin Hunter",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
-			["icon"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -25975,20 +25986,20 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = "",
 			["desaturate"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["smoothProgress"] = true,
 			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
+			["uid"] = "G2VkPKL24J5",
 			["config"] = {
 			},
-			["uid"] = "G2VkPKL24J5",
 			["icon_side"] = "RIGHT",
-			["parent"] = "Vermin Hunter",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameType"] = "SCREEN",
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
@@ -26076,7 +26087,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["remOperator"] = "<",
 						["custom"] = "function( event, var)\n    --foreach(allstates,print)\n    if var then\n        \n        aura_env.var=var\n        \n        return true\n    else \n        \n        \n        return false\n    end\nend",
-						["spellName"] = 0,
+						["debuffType"] = "HELPFUL",
 						["events"] = "fonsas_ERW",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -26093,9 +26104,9 @@ WeakAurasSaved = {
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
-						["debuffType"] = "HELPFUL",
-						["check"] = "event",
 						["custom_hide"] = "custom",
+						["check"] = "event",
+						["spellName"] = 0,
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -26181,11 +26192,16 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["height"] = 59,
-			["cooldownTextDisabled"] = false,
+			["backgroundColor"] = {
+				0.23921568627451, -- [1]
+				0.23921568627451, -- [2]
+				0.23921568627451, -- [3]
+				0, -- [4]
+			},
 			["useAdjustededMax"] = false,
 			["backgroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura3",
 			["source"] = "import",
-			["displayStacks"] = "%p",
+			["uid"] = "cZklNdnnfHs",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -26207,6 +26223,38 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["mirror"] = false,
+			["config"] = {
+			},
+			["cooldownTextDisabled"] = false,
+			["displayStacks"] = "%p",
+			["textColor"] = {
+				[2] = 0.75686274509804,
+				[3] = 0,
+			},
+			["authorOptions"] = {
+			},
+			["anchorFrameType"] = "SCREEN",
+			["useCooldownModRate"] = true,
+			["icon"] = true,
+			["fontSize"] = 19,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["semver"] = "1.1.19",
+			["foregroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.80032493174076, -- [4]
+			},
+			["id"] = "ERW Morb Shadow",
+			["compress"] = false,
+			["frameStrata"] = 2,
+			["width"] = 22,
+			["startAngle"] = 0,
 			["load"] = {
 				["use_never"] = true,
 				["class"] = {
@@ -26258,45 +26306,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["startAngle"] = 0,
-			["authorOptions"] = {
-			},
-			["backgroundColor"] = {
-				0.23921568627451, -- [1]
-				0.23921568627451, -- [2]
-				0.23921568627451, -- [3]
-				0, -- [4]
-			},
-			["config"] = {
-			},
-			["anchorFrameType"] = "SCREEN",
-			["useCooldownModRate"] = true,
-			["icon"] = true,
-			["fontSize"] = 19,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["semver"] = "1.1.19",
-			["foregroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.80032493174076, -- [4]
-			},
-			["id"] = "ERW Morb Shadow",
-			["preferToUpdate"] = true,
-			["frameStrata"] = 2,
-			["width"] = 22,
-			["uid"] = "cZklNdnnfHs",
-			["compress"] = false,
 			["inverse"] = true,
-			["textColor"] = {
-				[2] = 0.75686274509804,
-				[3] = 0,
-			},
+			["preferToUpdate"] = true,
 			["orientation"] = "VERTICAL_INVERSE",
 			["crop_x"] = 0,
 			["cooldown"] = true,
@@ -26356,9 +26367,9 @@ WeakAurasSaved = {
 						["ownOnly"] = true,
 						["subeventPrefix"] = "SPELL",
 						["duration"] = "1",
+						["debuffType"] = "HELPFUL",
 						["custom_hide"] = "timed",
 						["spellName"] = 0,
-						["debuffType"] = "HELPFUL",
 						["remOperator"] = "<",
 						["type"] = "custom",
 						["unit"] = "player",
@@ -26503,25 +26514,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 2,
 			["fontSize"] = 19,
-			["displayStacks"] = "%p",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["parent"] = "Dummy icons",
+			["source"] = "import",
 			["stacksPoint"] = "BOTTOM",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["alpha"] = 1,
+			["displayStacks"] = "%p",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["config"] = {
 			},
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
@@ -26529,20 +26542,18 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "OB",
-			["source"] = "import",
+			["alpha"] = 1,
 			["useCooldownModRate"] = false,
 			["width"] = 45,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["uid"] = "ZqoAkmXjS3Q",
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["displayIcon"] = 135771,
-			["cooldown"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -26702,28 +26713,21 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["uid"] = "5OWh9H2wVJm",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["selfPoint"] = "CENTER",
-			["regionType"] = "icon",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["selfPoint"] = "CENTER",
+			["regionType"] = "icon",
+			["xOffset"] = 0,
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["cooldownEdge"] = false,
 			["authorOptions"] = {
 			},
+			["useTooltip"] = true,
 			["cooldownTextDisabled"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
@@ -26737,11 +26741,18 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["useTooltip"] = true,
+			["cooldownEdge"] = false,
 		},
 		["Merfin: Equipped Items"] = {
 			["arcLength"] = 360,
@@ -26754,7 +26765,7 @@ WeakAurasSaved = {
 			["preferToUpdate"] = false,
 			["yOffset"] = -55,
 			["anchorPoint"] = "CENTER",
-			["sort"] = "none",
+			["anchorFrameFrame"] = "ElvUF_Player",
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -26814,10 +26825,10 @@ WeakAurasSaved = {
 			},
 			["align"] = "RIGHT",
 			["rowSpace"] = 1,
-			["groupIcon"] = 134148,
+			["grow"] = "LEFT",
 			["desc"] = "Merfin: Equipped Items\n\nAuthor - Merfin\nDiscord - https://discord.gg/q9z5Az6",
 			["rotation"] = 0,
-			["grow"] = "LEFT",
+			["selfPoint"] = "BOTTOMRIGHT",
 			["version"] = 26,
 			["subRegions"] = {
 			},
@@ -26856,14 +26867,14 @@ WeakAurasSaved = {
 			["source"] = "import",
 			["animate"] = true,
 			["scale"] = 0.95,
-			["customAnchor"] = "function()\n    if ElvUI then\n        return ElvUF_Player\n    else\n        return UIParent\n    end\nend",
+			["centerType"] = "LR",
 			["border"] = false,
-			["anchorFrameFrame"] = "ElvUF_Player",
+			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 5,
 			["frameStrata"] = 1,
-			["borderEdge"] = "Square Full White",
+			["customAnchor"] = "function()\n    if ElvUI then\n        return ElvUF_Player\n    else\n        return UIParent\n    end\nend",
 			["anchorFrameParent"] = false,
 			["constantFactor"] = "RADIUS",
 			["gridType"] = "RD",
@@ -26871,7 +26882,7 @@ WeakAurasSaved = {
 			["semver"] = "1.0.25",
 			["tocversion"] = 30400,
 			["id"] = "Merfin: Equipped Items",
-			["centerType"] = "LR",
+			["sort"] = "none",
 			["gridWidth"] = 5,
 			["anchorFrameType"] = "SCREEN",
 			["borderInset"] = 1,
@@ -26883,22 +26894,28 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["selfPoint"] = "BOTTOMRIGHT",
+			["groupIcon"] = 134148,
 		},
 		["Judgement of Light"] = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -26962,12 +26979,7 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -26975,13 +26987,19 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -27124,26 +27142,19 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["icon"] = true,
 			["smoothProgress"] = true,
 			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["zoom"] = 0.3,
-			["uid"] = "M3YN8CYOJ7u",
-			["icon_side"] = "RIGHT",
+			["cooldownTextDisabled"] = false,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["icon_side"] = "RIGHT",
+			["uid"] = "M3YN8CYOJ7u",
 			["width"] = 40,
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
@@ -27377,37 +27388,37 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
+			["selfPoint"] = "CENTER",
+			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["icon"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["config"] = {
+			},
+			["frameStrata"] = 1,
+			["zoom"] = 0.2,
+			["semver"] = "1.1.19",
+			["tocversion"] = 30401,
+			["id"] = "Pesti AOE last",
+			["width"] = 45,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["useCooldownModRate"] = true,
+			["uid"] = "qvrJCmhbY2A",
+			["inverse"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["parent"] = "Frost AOE",
-			["information"] = {
-				["forceEvents"] = true,
-			},
-			["icon"] = true,
-			["config"] = {
-			},
-			["alpha"] = 1,
-			["zoom"] = 0.2,
-			["semver"] = "1.1.19",
-			["tocversion"] = 30401,
-			["id"] = "Pesti AOE last",
-			["width"] = 45,
-			["useCooldownModRate"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["uid"] = "qvrJCmhbY2A",
-			["inverse"] = false,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["selfPoint"] = "CENTER",
+			["parent"] = "Frost AOE",
 		},
 		["targetdebuffs "] = {
 			["iconSource"] = -1,
@@ -27822,12 +27833,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -27836,12 +27842,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -27886,7 +27887,8 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["iconSource"] = -1,
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -27895,13 +27897,11 @@ WeakAurasSaved = {
 			},
 			["desaturate"] = false,
 			["cooldownTextDisabled"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -28026,9 +28026,13 @@ WeakAurasSaved = {
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["auto"] = false,
 			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["config"] = {
 			},
@@ -28040,7 +28044,7 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["zoom"] = 0.3,
 			["spark"] = false,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["sparkHidden"] = "NEVER",
 			["id"] = "Retaliation",
 			["useCooldownModRate"] = true,
@@ -28057,13 +28061,21 @@ WeakAurasSaved = {
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 		},
 		["Dash"] = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -28072,7 +28084,12 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -28117,8 +28134,7 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["iconSource"] = -1,
-			["authorOptions"] = {
-			},
+			["parent"] = "Vermin Druid",
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -28127,11 +28143,13 @@ WeakAurasSaved = {
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["useCooldownModRate"] = true,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -28254,16 +28272,9 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desaturate"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["icon"] = true,
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
 			["spark"] = false,
 			["config"] = {
@@ -28274,22 +28285,22 @@ WeakAurasSaved = {
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["alpha"] = 1,
-			["zoom"] = 0.3,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["auto"] = false,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["id"] = "Dash",
+			["uid"] = "YJ1QoxqN6FH",
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["xOffset"] = 0,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["parent"] = "Vermin Druid",
-			["uid"] = "YJ1QoxqN6FH",
 			["inverse"] = false,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
@@ -28464,50 +28475,6 @@ WeakAurasSaved = {
 			["source"] = "import",
 			["config"] = {
 			},
-			["parent"] = "AMS Group ULDUAR - By fonsas (english clients)",
-			["xOffset"] = 0,
-			["regionType"] = "icon",
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\Addons\\Plater\\sounds\\Plater HiHat.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-					["message_type"] = "WHISPER",
-					["message"] = "hide",
-					["do_message"] = false,
-					["message_dest"] = "fonsas",
-				},
-				["init"] = {
-					["custom"] = "aura_env.last = GetTime()\naura_env.lastFlag = false\naura_env.mobsAroundAMS = function()\n    \n    for i = 1, 40 do\n        local unit = \"nameplate\"..i\n        if UnitCanAttack(\"player\", unit)\n        and WeakAuras.CheckRange(unit, 40, \"<=\")-- and UnitName(unit)==\"Veteran's Training Dummy\"\n        and UnitName(unit)==\"Collapsing Star\"\n        and UnitHealth(unit)/UnitHealthMax(unit)<0.12\n        then\n            return true\n        end\n    end\n    return false\nend",
-					["do_custom"] = true,
-				},
-			},
-			["cooldown"] = false,
-			["conditions"] = {
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["zoom"] = 0.25,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.1.19",
-			["tocversion"] = 30401,
-			["id"] = "AMS When - special conditions Algalon",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 35,
-			["useCooldownModRate"] = true,
-			["uid"] = "za3E2ivB5ON",
-			["inverse"] = false,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
-			["displayIcon"] = 136120,
-			["information"] = {
-			},
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -28526,6 +28493,50 @@ WeakAurasSaved = {
 					["type"] = "none",
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
+				},
+			},
+			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = false,
+			["conditions"] = {
+			},
+			["parent"] = "AMS Group ULDUAR - By fonsas (english clients)",
+			["zoom"] = 0.25,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = false,
+			["semver"] = "1.1.19",
+			["tocversion"] = 30401,
+			["id"] = "AMS When - special conditions Algalon",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 35,
+			["useCooldownModRate"] = true,
+			["uid"] = "za3E2ivB5ON",
+			["inverse"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["displayIcon"] = 136120,
+			["information"] = {
+			},
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\Addons\\Plater\\sounds\\Plater HiHat.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+					["message_type"] = "WHISPER",
+					["message"] = "hide",
+					["do_message"] = false,
+					["message_dest"] = "fonsas",
+				},
+				["init"] = {
+					["custom"] = "aura_env.last = GetTime()\naura_env.lastFlag = false\naura_env.mobsAroundAMS = function()\n    \n    for i = 1, 40 do\n        local unit = \"nameplate\"..i\n        if UnitCanAttack(\"player\", unit)\n        and WeakAuras.CheckRange(unit, 40, \"<=\")-- and UnitName(unit)==\"Veteran's Training Dummy\"\n        and UnitName(unit)==\"Collapsing Star\"\n        and UnitHealth(unit)/UnitHealthMax(unit)<0.12\n        then\n            return true\n        end\n    end\n    return false\nend",
+					["do_custom"] = true,
 				},
 			},
 		},
@@ -29006,18 +29017,19 @@ WeakAurasSaved = {
 			["fontSize"] = 24,
 			["source"] = "import",
 			["shadowXOffset"] = 0,
-			["preferToUpdate"] = false,
-			["regionType"] = "text",
 			["color"] = {
 				0.41176470588235, -- [1]
 				0.8, -- [2]
 				0.94117647058824, -- [3]
 				1, -- [4]
 			},
-			["displayText_format_p_time_dynamic_threshold"] = 60,
+			["regionType"] = "text",
+			["url"] = "https://wago.io/bzVZr5ODZ/4",
+			["authorOptions"] = {
+			},
 			["conditions"] = {
 			},
-			["url"] = "https://wago.io/bzVZr5ODZ/4",
+			["preferToUpdate"] = false,
 			["displayText_format_p_time_precision"] = 1,
 			["animation"] = {
 				["start"] = {
@@ -29051,8 +29063,7 @@ WeakAurasSaved = {
 			["wordWrap"] = "WordWrap",
 			["uid"] = "WCdlXkHpf3m",
 			["xOffset"] = 0,
-			["authorOptions"] = {
-			},
+			["displayText_format_c_format"] = "none",
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -29064,7 +29075,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["displayText_format_c_format"] = "none",
+			["displayText_format_p_time_dynamic_threshold"] = 60,
 		},
 		["Pesti"] = {
 			["iconSource"] = -1,
@@ -29092,9 +29103,9 @@ WeakAurasSaved = {
 						["ownOnly"] = true,
 						["subeventPrefix"] = "SPELL",
 						["duration"] = "1",
+						["debuffType"] = "HELPFUL",
 						["custom_hide"] = "timed",
 						["spellName"] = 0,
-						["debuffType"] = "HELPFUL",
 						["remOperator"] = "<",
 						["type"] = "custom",
 						["unit"] = "player",
@@ -29319,25 +29330,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 2,
 			["fontSize"] = 19,
-			["displayStacks"] = "%p",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["parent"] = "Dummy icons",
+			["source"] = "import",
 			["stacksPoint"] = "BOTTOM",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = false,
 			["conditions"] = {
 			},
-			["alpha"] = 0.88,
+			["displayStacks"] = "%p",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["config"] = {
 			},
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
@@ -29345,20 +29358,18 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "Pesti",
-			["source"] = "import",
+			["alpha"] = 0.88,
 			["useCooldownModRate"] = true,
 			["width"] = 24,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["uid"] = ")(9Zr8LWJ2G",
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["displayIcon"] = 136182,
-			["cooldown"] = false,
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -29494,46 +29505,6 @@ WeakAurasSaved = {
 			["source"] = "import",
 			["config"] = {
 			},
-			["parent"] = "Dummy icons",
-			["xOffset"] = 0,
-			["regionType"] = "icon",
-			["actions"] = {
-				["start"] = {
-					["custom"] = "DoEmote(\"kneel\", \"none\")\n",
-					["do_custom"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.time = GetTime()-10\n\naura_env.sub = \n{\n    \"FonsasFaerlina\",\n    \"FonsazFaerlina\",\n    \"ArcanitebeerPyrewood Village\",  \n    \"MetagoblinPyrewood Village\",\n    \"BorobeerPyrewood Village\" ,\n    \"VoidmanePyrewood Village\",\n    \"NezzNethergarde Keep\",\n    \"MaccreaperFaerlina\",\n    \"SartheknightGehennas\",\n    \"SarthegirlGehennas\",\n    \n}\n\n\n\n\n\n",
-					["do_custom"] = true,
-				},
-			},
-			["cooldown"] = true,
-			["conditions"] = {
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["zoom"] = 0,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.1.19",
-			["tocversion"] = 30401,
-			["id"] = "support",
-			["frameStrata"] = 1,
-			["alpha"] = 0,
-			["width"] = 5,
-			["useCooldownModRate"] = true,
-			["uid"] = "FDqUSw6gfVc",
-			["inverse"] = false,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
-			["displayIcon"] = 134149,
-			["information"] = {
-			},
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -29552,6 +29523,46 @@ WeakAurasSaved = {
 					["type"] = "none",
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
+				},
+			},
+			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
+			["conditions"] = {
+			},
+			["parent"] = "Dummy icons",
+			["zoom"] = 0,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = false,
+			["semver"] = "1.1.19",
+			["tocversion"] = 30401,
+			["id"] = "support",
+			["frameStrata"] = 1,
+			["alpha"] = 0,
+			["width"] = 5,
+			["useCooldownModRate"] = true,
+			["uid"] = "FDqUSw6gfVc",
+			["inverse"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["displayIcon"] = 134149,
+			["information"] = {
+			},
+			["actions"] = {
+				["start"] = {
+					["custom"] = "DoEmote(\"kneel\", \"none\")\n",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.time = GetTime()-10\n\naura_env.sub = \n{\n    \"FonsasFaerlina\",\n    \"FonsazFaerlina\",\n    \"ArcanitebeerPyrewood Village\",  \n    \"MetagoblinPyrewood Village\",\n    \"BorobeerPyrewood Village\" ,\n    \"VoidmanePyrewood Village\",\n    \"NezzNethergarde Keep\",\n    \"MaccreaperFaerlina\",\n    \"SartheknightGehennas\",\n    \"SarthegirlGehennas\",\n    \n}\n\n\n\n\n\n",
+					["do_custom"] = true,
 				},
 			},
 		},
@@ -29605,12 +29616,12 @@ WeakAurasSaved = {
 			["useLimit"] = false,
 			["align"] = "CENTER",
 			["stagger"] = 0,
-			["rowSpace"] = 1,
+			["gridType"] = "RD",
 			["version"] = 1,
 			["subRegions"] = {
 			},
+			["selfPoint"] = "LEFT",
 			["rotation"] = 0,
-			["fullCircle"] = true,
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -29630,13 +29641,15 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["selfPoint"] = "LEFT",
+			["arcLength"] = 360,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
+			["rowSpace"] = 1,
+			["animate"] = false,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -29657,16 +29670,14 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["animate"] = false,
-			["gridType"] = "RD",
 			["scale"] = 0.6,
 			["centerType"] = "LR",
 			["border"] = false,
-			["anchorFrameFrame"] = "PetFrame",
+			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
-			["sort"] = "none",
-			["borderEdge"] = "Square Full White",
+			["limit"] = 5,
+			["anchorFrameFrame"] = "PetFrame",
 			["config"] = {
 			},
 			["anchorFrameParent"] = true,
@@ -29679,10 +29690,10 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["gridWidth"] = 5,
 			["anchorFrameType"] = "SELECTFRAME",
-			["arcLength"] = 360,
-			["uid"] = "e(V6yQRHRNJ",
-			["limit"] = 5,
 			["xOffset"] = 20,
+			["uid"] = "e(V6yQRHRNJ",
+			["sort"] = "none",
+			["fullCircle"] = true,
 			["conditions"] = {
 			},
 			["information"] = {
@@ -29739,17 +29750,12 @@ WeakAurasSaved = {
 			},
 			["displayText_format_p_format"] = "timed",
 			["displayText_format_p_time_legacy_floor"] = false,
-			["discrete_rotation"] = 0,
-			["selfPoint"] = "CENTER",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["displayText_format_p_time_mod_rate"] = true,
+			["displayText"] = "AoE:",
+			["wordWrap"] = "WordWrap",
+			["preferToUpdate"] = true,
+			["internalVersion"] = 64,
 			["desaturate"] = false,
-			["rotation"] = 90,
+			["discrete_rotation"] = 0,
 			["font"] = "Friz Quadrata TT",
 			["version"] = 176,
 			["subRegions"] = {
@@ -29787,9 +29793,20 @@ WeakAurasSaved = {
 			},
 			["conditions"] = {
 			},
-			["parent"] = "Dummy icons",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["fontSize"] = 8,
 			["source"] = "import",
+			["displayText_format_p_time_mod_rate"] = true,
+			["shadowXOffset"] = 1,
+			["parent"] = "Dummy icons",
+			["mirror"] = false,
+			["uid"] = "ZC)TRB)mXns",
+			["regionType"] = "text",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -29810,12 +29827,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["shadowXOffset"] = 1,
-			["displayText"] = "AoE:",
-			["mirror"] = false,
-			["uid"] = "ZC)TRB)mXns",
-			["regionType"] = "text",
-			["preferToUpdate"] = true,
 			["blendMode"] = "BLEND",
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 3,
@@ -29826,14 +29837,14 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "Frost aoe bg 2",
-			["internalVersion"] = 64,
+			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
 			["alpha"] = 0.61,
 			["width"] = 92.857421875,
-			["wordWrap"] = "WordWrap",
+			["xOffset"] = 0,
 			["config"] = {
 			},
-			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
-			["xOffset"] = 0,
+			["rotation"] = 90,
+			["yOffset"] = 72.142601013184,
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -29844,7 +29855,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["yOffset"] = 72.142601013184,
+			["selfPoint"] = "CENTER",
 		},
 		["Oculus: Ember Essence"] = {
 			["iconSource"] = -1,
@@ -30017,13 +30028,12 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["source"] = "import",
 			["anchorFrameType"] = "SCREEN",
-			["stickyDuration"] = false,
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
+					["do_message"] = false,
 					["do_custom"] = false,
 					["custom"] = "",
-					["do_message"] = false,
 				},
 				["finish"] = {
 					["do_message"] = false,
@@ -30032,6 +30042,28 @@ WeakAurasSaved = {
 				["init"] = {
 					["custom"] = "local f = WeakAuras[\"regions\"][aura_env.id][\"region\"]\n\nif not f.button then\n    local itemId = WeakAuras.GetData(aura_env.id).triggers[1].trigger.itemName\n    local itemName = GetItemInfo(itemId)\n    f.button = CreateFrame(\"Button\", nil, f,\"SecureActionButtonTemplate\")\n    f.button:SetAttribute(\"type\", \"macro\")\n    f.button:SetAttribute(\"unit\",\"player\")\n    \n    local macrotext = \"/cancelform\\n/use item:\" .. itemId\n    \n    f.button:SetAttribute(\"macrotext\",macrotext)\n    f.button:SetAllPoints(f)\n    \n    f.button:SetScript(\"OnEnter\", function(self) \n            GameTooltip:SetOwner(self, \"ANCHOR_CURSOR\"); \n            GameTooltip:ClearLines(); \n            GameTooltip:SetItemByID(itemId);\n            GameTooltip:Show() \n    end)\n    f.button:SetScript(\"OnLeave\", function(self) \n            GameTooltip:Hide() \n    end)\nend",
 					["do_custom"] = true,
+				},
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "slidebottom",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "alphaPulse",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 			},
 			["cooldown"] = false,
@@ -30062,28 +30094,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "slidebottom",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "alphaPulse",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["stickyDuration"] = false,
 		},
 		["Loss of Control Bottom"] = {
 			["wagoID"] = "JiQILDF99",
@@ -30111,13 +30122,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function (allstates, event, ...)\n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    if activeLossOfControlCount > 0 then return true end\n    return false\nend",
+						["events"] = "LOSS_OF_CONTROL_UPDATE",
 						["names"] = {
 						},
 						["check"] = "event",
-						["events"] = "LOSS_OF_CONTROL_UPDATE",
 						["spellIds"] = {
 						},
+						["custom"] = "function (allstates, event, ...)\n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    if activeLossOfControlCount > 0 then return true end\n    return false\nend",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -30440,8 +30451,8 @@ WeakAurasSaved = {
 			["regionType"] = "text",
 			["conditions"] = {
 			},
-			["selfPoint"] = "CENTER",
 			["preferToUpdate"] = false,
+			["displayText_format_c_format"] = "none",
 			["automaticWidth"] = "Auto",
 			["shadowYOffset"] = -1,
 			["color"] = {
@@ -30472,7 +30483,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["displayText_format_c_format"] = "none",
+			["selfPoint"] = "CENTER",
 		},
 		["Combo Points Foreground"] = {
 			["outline"] = "OUTLINE",
@@ -30498,21 +30509,21 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["debuffType"] = "HELPFUL",
 						["type"] = "custom",
+						["subeventSuffix"] = "_CAST_START",
 						["custom_type"] = "event",
-						["unevent"] = "auto",
-						["unit"] = "player",
+						["names"] = {
+						},
 						["use_absorbMode"] = true,
 						["event"] = "Health",
-						["use_unit"] = true,
+						["unit"] = "player",
 						["subeventPrefix"] = "SPELL",
+						["custom"] = "function(e, ...)\n    local region = aura_env.region\n    local target = C_NamePlate.GetNamePlateForUnit(\"target\")\n    local attackable = not UnitIsFriend(\"player\", \"target\")\n    \n    if e == \"NAME_PLATE_UNIT_REMOVED\" then\n        local unit = ...\n        if unit and UnitGUID(unit) == UnitGUID(\"target\") then\n            region:Color(0,0,0,0)\n        end\n    elseif target and attackable then\n        local color = aura_env.config.cpcolor\n        \n        region:ClearAllPoints()\n        region:SetPoint(\"TOP\", target, \"BOTTOM\", aura_env.config.xoffset, aura_env.config.yoffset)\n        \n        region:Color(color[1], color[2], color[3], color[4])\n    else\n        region:Color(0,0,0,0)\n    end\n    return true\nend",
 						["events"] = "PLAYER_TARGET_CHANGED, NAME_PLATE_UNIT_ADDED, NAME_PLATE_UNIT_REMOVED, PLAYER_ENTERING_WORLD",
 						["spellIds"] = {
 						},
-						["custom"] = "function(e, ...)\n    local region = aura_env.region\n    local target = C_NamePlate.GetNamePlateForUnit(\"target\")\n    local attackable = not UnitIsFriend(\"player\", \"target\")\n    \n    if e == \"NAME_PLATE_UNIT_REMOVED\" then\n        local unit = ...\n        if unit and UnitGUID(unit) == UnitGUID(\"target\") then\n            region:Color(0,0,0,0)\n        end\n    elseif target and attackable then\n        local color = aura_env.config.cpcolor\n        \n        region:ClearAllPoints()\n        region:SetPoint(\"TOP\", target, \"BOTTOM\", aura_env.config.xoffset, aura_env.config.yoffset)\n        \n        region:Color(color[1], color[2], color[3], color[4])\n    else\n        region:Color(0,0,0,0)\n    end\n    return true\nend",
 						["check"] = "event",
-						["names"] = {
-						},
-						["subeventSuffix"] = "_CAST_START",
+						["use_unit"] = true,
+						["unevent"] = "auto",
 						["custom_hide"] = "custom",
 					},
 					["untrigger"] = {
@@ -30850,6 +30861,11 @@ WeakAurasSaved = {
 			["uid"] = "F4ShHdFejzR",
 			["frameStrata"] = 3,
 			["anchorFrameType"] = "SCREEN",
+			["authorOptions"] = {
+			},
+			["borderInset"] = 1,
+			["config"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -30869,11 +30885,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
-			},
-			["borderInset"] = 1,
-			["authorOptions"] = {
-			},
-			["config"] = {
 			},
 			["conditions"] = {
 			},
@@ -31361,15 +31372,15 @@ WeakAurasSaved = {
 						["subeventSuffix"] = "_CAST_START",
 						["unit"] = "target",
 						["unevent"] = "auto",
-						["event"] = "Threat Situation",
+						["threatUnit"] = "target",
 						["rawthreatpct"] = "",
 						["use_threatUnit"] = true,
 						["events"] = "",
 						["spellIds"] = {
 						},
 						["custom_hide"] = "custom",
-						["threatUnit"] = "target",
 						["rawthreatpct_operator"] = ">",
+						["event"] = "Threat Situation",
 						["custom_type"] = "event",
 						["names"] = {
 						},
@@ -31682,44 +31693,6 @@ WeakAurasSaved = {
 			["source"] = "import",
 			["config"] = {
 			},
-			["parent"] = "AMS Group ULDUAR - By fonsas (english clients)",
-			["xOffset"] = 0,
-			["regionType"] = "icon",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.last = GetTime()\n aura_env.lastFlag = false\naura_env.mobsAroundAMS = function()\n    \n    for i = 1, 40 do\n        local unit = \"nameplate\"..i\n        if UnitCanAttack(\"player\", unit)\n        and WeakAuras.CheckRange(unit, 8, \"<=\")\n        and UnitName(unit)==\"Life Spark\"\n        then\n            return true\n        end\n    end\n    return false\nend",
-					["do_custom"] = true,
-				},
-			},
-			["cooldown"] = false,
-			["conditions"] = {
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["zoom"] = 0.25,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.1.19",
-			["tocversion"] = 30401,
-			["id"] = "AMS When - special conditions XT",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 35,
-			["useCooldownModRate"] = true,
-			["uid"] = "BCbY1a(PPrP",
-			["inverse"] = false,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
-			["displayIcon"] = 136120,
-			["information"] = {
-			},
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -31738,6 +31711,44 @@ WeakAurasSaved = {
 					["type"] = "none",
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
+				},
+			},
+			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = false,
+			["conditions"] = {
+			},
+			["parent"] = "AMS Group ULDUAR - By fonsas (english clients)",
+			["zoom"] = 0.25,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = false,
+			["semver"] = "1.1.19",
+			["tocversion"] = 30401,
+			["id"] = "AMS When - special conditions XT",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 35,
+			["useCooldownModRate"] = true,
+			["uid"] = "BCbY1a(PPrP",
+			["inverse"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["displayIcon"] = 136120,
+			["information"] = {
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.last = GetTime()\n aura_env.lastFlag = false\naura_env.mobsAroundAMS = function()\n    \n    for i = 1, 40 do\n        local unit = \"nameplate\"..i\n        if UnitCanAttack(\"player\", unit)\n        and WeakAuras.CheckRange(unit, 8, \"<=\")\n        and UnitName(unit)==\"Life Spark\"\n        then\n            return true\n        end\n    end\n    return false\nend",
+					["do_custom"] = true,
 				},
 			},
 		},
@@ -31967,8 +31978,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "custom",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    WeakAuras.ScanEvents(\"fonsas_plusFrost\", var) \n    WeakAuras.ScanEvents(\"fonsas_path2\", var) \n    if var then\n        return true\n    else \n        \n        \n        return false\n    end\nend",
@@ -31983,7 +31994,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "event",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -32165,17 +32176,30 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Burst frost combo",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 136182,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "hfnvEQPmmO4",
+			["xOffset"] = -56,
+			["width"] = 22.5,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "Pesti + ERW",
 			["actions"] = {
 				["start"] = {
 				},
@@ -32186,29 +32210,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "hfnvEQPmmO4",
-			["selfPoint"] = "CENTER",
-			["width"] = 22.5,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "Pesti + ERW",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Burst frost combo",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -56,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -32451,37 +32462,37 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
+			["selfPoint"] = "CENTER",
+			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["icon"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["config"] = {
+			},
+			["frameStrata"] = 1,
+			["zoom"] = 0.2,
+			["semver"] = "1.1.19",
+			["tocversion"] = 30401,
+			["id"] = "Howling blast w/ KM",
+			["width"] = 45,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["useCooldownModRate"] = true,
+			["uid"] = "TAcwdmhGVIp",
+			["inverse"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["parent"] = "Frost AOE",
-			["information"] = {
-				["forceEvents"] = true,
-			},
-			["icon"] = true,
-			["config"] = {
-			},
-			["alpha"] = 1,
-			["zoom"] = 0.2,
-			["semver"] = "1.1.19",
-			["tocversion"] = 30401,
-			["id"] = "Howling blast w/ KM",
-			["width"] = 45,
-			["useCooldownModRate"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["uid"] = "TAcwdmhGVIp",
-			["inverse"] = false,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["selfPoint"] = "CENTER",
+			["parent"] = "Frost AOE",
 		},
 		["Druid - Mana Bar "] = {
 			["sparkWidth"] = 10,
@@ -32987,8 +32998,9 @@ WeakAurasSaved = {
 			["shadowXOffset"] = 1,
 			["regionType"] = "text",
 			["fixedWidth"] = 200,
-			["automaticWidth"] = "Auto",
 			["preferToUpdate"] = false,
+			["authorOptions"] = {
+			},
 			["yOffset"] = 0,
 			["wordWrap"] = "WordWrap",
 			["justify"] = "LEFT",
@@ -33020,8 +33032,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["automaticWidth"] = "Auto",
 		},
 		["Merfin: Target Info"] = {
 			["controlledChildren"] = {
@@ -33123,15 +33134,15 @@ WeakAurasSaved = {
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "group",
 			["borderSize"] = 2,
-			["xOffset"] = 0,
+			["groupIcon"] = 134148,
 			["borderOffset"] = 4,
 			["semver"] = "1.0.3",
 			["tocversion"] = 30400,
 			["id"] = "Merfin: Target Info",
-			["groupIcon"] = 134148,
+			["anchorFrameFrame"] = "SUFUnittarget",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["anchorFrameFrame"] = "SUFUnittarget",
+			["xOffset"] = 0,
 			["config"] = {
 			},
 			["borderInset"] = 1,
@@ -33374,13 +33385,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function(s, e, ...)\n    \n    -- Boss Death\n    if (e == \"COMBAT_LOG_EVENT_UNFILTERED\") then\n        local _, _, _, _, _, _, _, guid, bossName = select(1, ...)\n        local _, _, _, _, _, id = string.match(guid or \"\",\"(%a+)-(%d+)-(%d+)-(%d+)-(%d+)-(%d+)\")\n        \n        if aura_env.bosses[tonumber(id or 0)] == true then\n            C_ChatInfo.SendAddonMessage(\"AVT\", bossName .. \": \" .. 0, \"INSTANCE_CHAT\") \n            return true\n        end\n    end\n    \n    -- Boss HP\n    local prefix, text = select(1, ...)\n    \n    if (e == \"CHAT_MSG_ADDON\") and prefix == \"AVT\" then\n        local bossName = string.match(text or \"\", \"(.-):\")\n        local bossHP = tonumber(string.match(text, \"%d+\"))\n        \n        \n        if bossHP == 0 then\n            s[bossName] = {\n                show = false,\n                changed = true\n            }\n        else\n            s[bossName] = {\n                show = true,\n                changed = true,\n                progressType = \"static\",\n                total = 100,\n                value  = bossHP,\n                name = bossName,\n                index = -100000000000,\n                boss = true\n            }\n        end\n        \n        return true\n    end\n    \n    local msg = select(1,...)\n    \n    -- Clear timers\n    if e == \"AVT_LEAVE\" or \n    (e == \"CHAT_MSG_SYSTEM\" and string.find(msg or \"\", aura_env.L[aura_env.locale][9]) or 0 > 0) then\n        for _, state in pairs(s) do\n            state.show = false;\n            state.changed = true;\n        end\n        \n        return true\n    end\n    \n    -- BG begins timer\n    if e == \"CHAT_MSG_BG_SYSTEM_NEUTRAL\" then\n        if (string.find(msg or \"\", aura_env.L[aura_env.locale][8]) or 0 > 0) then\n            s[\"begin\"] = {\n                show = true,\n                changed = true,      \n                progressType = \"timed\",\n                duration = 62,\n                expirationTime = GetTime() + 62,\n                name = \"Begins\",\n                index = 0,\n                autoHide = true,\n                start = true\n            }\n        end\n        return true\n    end\n    \n    -- Tower/GY timers\n    if e == \"CHAT_MSG_BG_SYSTEM_ALLIANCE\" or \n    e == \"CHAT_MSG_BG_SYSTEM_HORDE\" or \n    e == \"CHAT_MSG_MONSTER_YELL\" then\n        \n        -- Re-take\n        if (string.find(msg or \"\", aura_env.L[aura_env.locale][1]) or 0 > 0) then\n            local tower = string.match(msg or \"\", aura_env.L[aura_env.locale][2])\n            \n            if s[tower] then\n                s[tower] = {\n                    show = false,\n                    changed = true,\n                }\n                return true\n            end\n        end\n        \n        -- Take\n        if (e == \"CHAT_MSG_MONSTER_YELL\" and \n            string.find(msg or \"\", aura_env.L[aura_env.locale][5]) or 0 > 0 or \n            string.find(msg or \"\", aura_env.L[aura_env.locale][3]) or 0 > 0) then\n            \n            local tower = (e == \"CHAT_MSG_MONSTER_YELL\" and \n                string.match(msg or \"\", aura_env.L[aura_env.locale][6]) or\n                string.match(msg or \"\", aura_env.L[aura_env.locale][4]))\n            \n            s[tower] = {\n                show = true,\n                changed = true,      \n                progressType = \"timed\",\n                duration = 240,\n                expirationTime = GetTime() + 240,\n                name = tower,\n                index = -(GetTime() + 240),\n                autoHide = true,\n                horde = (e == \"CHAT_MSG_MONSTER_YELL\" and \n                    (string.find(msg or \"\", aura_env.L[aura_env.locale][7]) or 0 > 0 and false or true) or\n                    (e == \"CHAT_MSG_BG_SYSTEM_ALLIANCE\" and false or true))\n            }\n            return true\n        end\n        \n        -- Lokholar the Ice Lord\n        if (e == \"CHAT_MSG_MONSTER_YELL\" and string.find(msg or \"\", aura_env.L[aura_env.locale][10])) then\n            \n            s[\"lokholar\"] = {\n                show = true,\n                changed = true,      \n                progressType = \"timed\",\n                duration = 600,\n                expirationTime = GetTime() + 600,\n                name = \"Lokholar\",\n                index = -(GetTime() + 600),\n                autoHide = true,\n                lokholar = true\n            }\n            return true\n        end\n        \n    end\n    \nend",
+						["events"] = "AVT_LEAVE CHAT_MSG_SYSTEM CHAT_MSG_MONSTER_YELL CHAT_MSG_BG_SYSTEM_ALLIANCE CHAT_MSG_BG_SYSTEM_HORDE CHAT_MSG_BG_SYSTEM_NEUTRAL CHAT_MSG_ADDON COMBAT_LOG_EVENT_UNFILTERED:UNIT_DIED",
 						["names"] = {
 						},
 						["check"] = "event",
-						["events"] = "AVT_LEAVE CHAT_MSG_SYSTEM CHAT_MSG_MONSTER_YELL CHAT_MSG_BG_SYSTEM_ALLIANCE CHAT_MSG_BG_SYSTEM_HORDE CHAT_MSG_BG_SYSTEM_NEUTRAL CHAT_MSG_ADDON COMBAT_LOG_EVENT_UNFILTERED:UNIT_DIED",
 						["spellIds"] = {
 						},
+						["custom"] = "function(s, e, ...)\n    \n    -- Boss Death\n    if (e == \"COMBAT_LOG_EVENT_UNFILTERED\") then\n        local _, _, _, _, _, _, _, guid, bossName = select(1, ...)\n        local _, _, _, _, _, id = string.match(guid or \"\",\"(%a+)-(%d+)-(%d+)-(%d+)-(%d+)-(%d+)\")\n        \n        if aura_env.bosses[tonumber(id or 0)] == true then\n            C_ChatInfo.SendAddonMessage(\"AVT\", bossName .. \": \" .. 0, \"INSTANCE_CHAT\") \n            return true\n        end\n    end\n    \n    -- Boss HP\n    local prefix, text = select(1, ...)\n    \n    if (e == \"CHAT_MSG_ADDON\") and prefix == \"AVT\" then\n        local bossName = string.match(text or \"\", \"(.-):\")\n        local bossHP = tonumber(string.match(text, \"%d+\"))\n        \n        \n        if bossHP == 0 then\n            s[bossName] = {\n                show = false,\n                changed = true\n            }\n        else\n            s[bossName] = {\n                show = true,\n                changed = true,\n                progressType = \"static\",\n                total = 100,\n                value  = bossHP,\n                name = bossName,\n                index = -100000000000,\n                boss = true\n            }\n        end\n        \n        return true\n    end\n    \n    local msg = select(1,...)\n    \n    -- Clear timers\n    if e == \"AVT_LEAVE\" or \n    (e == \"CHAT_MSG_SYSTEM\" and string.find(msg or \"\", aura_env.L[aura_env.locale][9]) or 0 > 0) then\n        for _, state in pairs(s) do\n            state.show = false;\n            state.changed = true;\n        end\n        \n        return true\n    end\n    \n    -- BG begins timer\n    if e == \"CHAT_MSG_BG_SYSTEM_NEUTRAL\" then\n        if (string.find(msg or \"\", aura_env.L[aura_env.locale][8]) or 0 > 0) then\n            s[\"begin\"] = {\n                show = true,\n                changed = true,      \n                progressType = \"timed\",\n                duration = 62,\n                expirationTime = GetTime() + 62,\n                name = \"Begins\",\n                index = 0,\n                autoHide = true,\n                start = true\n            }\n        end\n        return true\n    end\n    \n    -- Tower/GY timers\n    if e == \"CHAT_MSG_BG_SYSTEM_ALLIANCE\" or \n    e == \"CHAT_MSG_BG_SYSTEM_HORDE\" or \n    e == \"CHAT_MSG_MONSTER_YELL\" then\n        \n        -- Re-take\n        if (string.find(msg or \"\", aura_env.L[aura_env.locale][1]) or 0 > 0) then\n            local tower = string.match(msg or \"\", aura_env.L[aura_env.locale][2])\n            \n            if s[tower] then\n                s[tower] = {\n                    show = false,\n                    changed = true,\n                }\n                return true\n            end\n        end\n        \n        -- Take\n        if (e == \"CHAT_MSG_MONSTER_YELL\" and \n            string.find(msg or \"\", aura_env.L[aura_env.locale][5]) or 0 > 0 or \n            string.find(msg or \"\", aura_env.L[aura_env.locale][3]) or 0 > 0) then\n            \n            local tower = (e == \"CHAT_MSG_MONSTER_YELL\" and \n                string.match(msg or \"\", aura_env.L[aura_env.locale][6]) or\n                string.match(msg or \"\", aura_env.L[aura_env.locale][4]))\n            \n            s[tower] = {\n                show = true,\n                changed = true,      \n                progressType = \"timed\",\n                duration = 240,\n                expirationTime = GetTime() + 240,\n                name = tower,\n                index = -(GetTime() + 240),\n                autoHide = true,\n                horde = (e == \"CHAT_MSG_MONSTER_YELL\" and \n                    (string.find(msg or \"\", aura_env.L[aura_env.locale][7]) or 0 > 0 and false or true) or\n                    (e == \"CHAT_MSG_BG_SYSTEM_ALLIANCE\" and false or true))\n            }\n            return true\n        end\n        \n        -- Lokholar the Ice Lord\n        if (e == \"CHAT_MSG_MONSTER_YELL\" and string.find(msg or \"\", aura_env.L[aura_env.locale][10])) then\n            \n            s[\"lokholar\"] = {\n                show = true,\n                changed = true,      \n                progressType = \"timed\",\n                duration = 600,\n                expirationTime = GetTime() + 600,\n                name = \"Lokholar\",\n                index = -(GetTime() + 600),\n                autoHide = true,\n                lokholar = true\n            }\n            return true\n        end\n        \n    end\n    \nend",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -33897,9 +33908,9 @@ WeakAurasSaved = {
 						["ownOnly"] = true,
 						["subeventPrefix"] = "SPELL",
 						["duration"] = "1",
+						["debuffType"] = "HELPFUL",
 						["custom_hide"] = "timed",
 						["spellName"] = 0,
-						["debuffType"] = "HELPFUL",
 						["remOperator"] = "<",
 						["type"] = "custom",
 						["unit"] = "player",
@@ -34080,25 +34091,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 3,
 			["fontSize"] = 19,
-			["displayStacks"] = "%p",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["parent"] = "Dummy icons",
+			["source"] = "import",
 			["stacksPoint"] = "BOTTOM",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = false,
 			["conditions"] = {
 			},
-			["alpha"] = 0.89,
+			["displayStacks"] = "%p",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["config"] = {
 			},
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
@@ -34106,20 +34119,18 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "pesDrop",
-			["source"] = "import",
+			["alpha"] = 0.89,
 			["useCooldownModRate"] = true,
 			["width"] = 23,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["uid"] = "(qOgD4JVYi1",
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["displayIcon"] = 136182,
-			["cooldown"] = false,
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -34337,37 +34348,37 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
+			["selfPoint"] = "CENTER",
+			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["icon"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["config"] = {
+			},
+			["frameStrata"] = 1,
+			["zoom"] = 0.2,
+			["semver"] = "1.1.19",
+			["tocversion"] = 30401,
+			["id"] = "Pesti AOE",
+			["width"] = 45,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["useCooldownModRate"] = true,
+			["uid"] = "l2(YTDwRbG4",
+			["inverse"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["parent"] = "Frost AOE",
-			["information"] = {
-				["forceEvents"] = true,
-			},
-			["icon"] = true,
-			["config"] = {
-			},
-			["alpha"] = 1,
-			["zoom"] = 0.2,
-			["semver"] = "1.1.19",
-			["tocversion"] = 30401,
-			["id"] = "Pesti AOE",
-			["width"] = 45,
-			["useCooldownModRate"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["uid"] = "l2(YTDwRbG4",
-			["inverse"] = false,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["selfPoint"] = "CENTER",
+			["parent"] = "Frost AOE",
 		},
 		["PALADIN"] = {
 			["iconSource"] = -1,
@@ -34525,8 +34536,27 @@ WeakAurasSaved = {
 			},
 			["alpha"] = 1,
 			["width"] = 65.000114440918,
-			["parent"] = "MISSING BUFFS",
 			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -34555,26 +34585,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["parent"] = "MISSING BUFFS",
 		},
 		["Blood P"] = {
 			["iconSource"] = -1,
@@ -34603,8 +34614,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "timed",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend\n\n",
@@ -34619,7 +34630,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "status",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "timed",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -34781,17 +34792,30 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Dummy icons",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 135770,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "RYGqAKnr6Oj",
+			["xOffset"] = 0,
+			["width"] = 45,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "Blood P",
 			["actions"] = {
 				["start"] = {
 				},
@@ -34802,29 +34826,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "RYGqAKnr6Oj",
-			["selfPoint"] = "CENTER",
-			["width"] = 45,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "Blood P",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 0,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -34834,12 +34845,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "Vermin Warrior",
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -34848,11 +34854,13 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["triggers"] = {
 				{
@@ -34906,8 +34914,14 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["parent"] = "Vermin Warrior",
-			["icon"] = true,
+			["authorOptions"] = {
+			},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -35027,9 +35041,13 @@ WeakAurasSaved = {
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["auto"] = false,
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["uid"] = "mvVQbk(FsV5",
 			["icon_side"] = "RIGHT",
@@ -35038,23 +35056,23 @@ WeakAurasSaved = {
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["sparkHidden"] = "NEVER",
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["spark"] = false,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["id"] = "Second Wind",
+			["config"] = {
+			},
+			["useCooldownModRate"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["useCooldownModRate"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["config"] = {
-			},
 			["inverse"] = false,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -35062,14 +35080,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 		},
 		["Swing Timer OH"] = {
 			["sparkWidth"] = 10,
@@ -35103,13 +35114,13 @@ WeakAurasSaved = {
 						["type"] = "custom",
 						["subeventSuffix"] = "_CAST_START",
 						["custom_hide"] = "timed",
+						["custom"] = "function(event, ...)\n    local function IsSpellCastSlam(...)\n        local spellId = select(3, ...)\n        local spellName = GetSpellInfo(spellId)\n        \n        -- if select(2, UnitClass('player')) == \"WARRIOR\" then\n        --     if GetShapeshiftForm() == 3 then return false end\n        -- end\n        \n        if IsSpellKnown(23881) then return false end\n        \n        return spellName == \"Slam\"\n    end\n    \n    if event == \"COMBAT_LOG_EVENT_UNFILTERED\" then\n        local subEvent = select(2, ...)\n        local sourceGUID = select(4, ...)\n        local destGUID = select(8, ...)\n        local playerGUID = UnitGUID(\"player\")\n        local useOffHand = aura_env.UseOffHand()\n        \n        if subEvent == \"SWING_MISSED\" and destGUID == playerGUID and not useOffHand and not aura_env.rangedSwing then\n            local missType = select(12, ...)\n            \n            if missType == \"PARRY\" then\n                aura_env.parryHaste = true\n                return true\n            else\n                return false\n            end\n        elseif sourceGUID ~= playerGUID then\n            return false\n        end\n        \n        if subEvent == \"SPELL_CAST_SUCCESS\" and not useOffHand then\n            local spellName = select(13, ...)\n            \n            if aura_env.MELEE_SWING_SPELLS[spellName] then\n                aura_env.rangedSwing = false\n                return true\n            elseif aura_env.RANGED_SWING_SPELLS[spellName] then\n                aura_env.rangedSwing = true\n                return true\n            else\n                return false\n            end\n        end\n        \n        local isOffHand = false\n        \n        if subEvent == \"SWING_DAMAGE\" then\n            isOffHand = select(21, ...)\n        elseif subEvent == \"SWING_MISSED\" then\n            isOffHand = select(13, ...)\n        end\n        \n        aura_env.rangedSwing = false\n        return (useOffHand and isOffHand) or (not useOffHand and not isOffHand)\n    elseif event == \"UNIT_SPELLCAST_START\" and IsSpellCastSlam(...) then\n        aura_env.rangedSwing = false\n        aura_env.pauseState = \"PAUSING\"\n        return true\n    elseif event == \"UNIT_SPELLCAST_STOP\" and IsSpellCastSlam(...) then\n        aura_env.rangedSwing = false\n        aura_env.pauseState = \"INTERRUPTED\"\n        return true\n    elseif event == \"UNIT_SPELLCAST_SUCCEEDED\" and IsSpellCastSlam(...) then\n        aura_env.rangedSwing = false\n        aura_env.pauseState = \"RESUMING\"\n        return true\n    end\nend",
+						["event"] = "Health",
 						["spellIds"] = {
 						},
-						["event"] = "Health",
-						["events"] = "CLEU:SWING_DAMAGE,CLEU:SWING_MISSED,CLEU:SPELL_CAST_SUCCESS,UNIT_SPELLCAST_START:player,UNIT_SPELLCAST_STOP:player,UNIT_SPELLCAST_SUCCEEDED:player",
 						["customDuration"] = "function()\n  local now = GetTime()\n  local useOffHand = aura_env.UseOffHand()\n  \n  local function CalculateParryHaste(current, total)\n    return math.max(current - total * 0.4, math.min(current, total * 0.2))\n  end\n  \n  local swingSpeed\n  \n  if aura_env.rangedSwing then\n    swingSpeed = UnitRangedDamage(\"player\")\n  else\n    local mainSpeed, offSpeed = UnitAttackSpeed(\"player\")\n    \n    if useOffHand and offSpeed then\n      swingSpeed = offSpeed\n    else\n      swingSpeed = mainSpeed\n    end\n  end\n  \n  if aura_env.parryHaste then\n    local remainingDuration = aura_env.nextSwingTime - now\n    local remainingAfterHaste = CalculateParryHaste(remainingDuration, swingSpeed)\n    local hasteDuration = remainingDuration - remainingAfterHaste\n    \n    aura_env.parryHaste = false\n    return swingSpeed, aura_env.nextSwingTime - hasteDuration\n  elseif aura_env.pauseState == \"PAUSING\" then\n    local remainingDuration = math.max(aura_env.nextSwingTime - now, 0)\n    \n    aura_env.pauseTime = now\n    aura_env.pauseState = \"PAUSED\"\n    return remainingDuration, swingSpeed, true\n  elseif aura_env.pauseState == \"INTERRUPTED\" then\n    aura_env.pauseState = \"RESUMED\"\n    return swingSpeed, aura_env.nextSwingTime\n  elseif aura_env.pauseState == \"RESUMING\" then\n    local pauseDuration = now - aura_env.pauseTime\n    local newSwingTime = aura_env.nextSwingTime + pauseDuration\n    \n    aura_env.nextSwingTime = newSwingTime\n    aura_env.pauseState = \"RESUMED\"\n    return swingSpeed, newSwingTime\n  end\n  \n  local nextSwingTime = now + swingSpeed\n  \n  aura_env.nextSwingTime = nextSwingTime\n  return swingSpeed, nextSwingTime\nend",
 						["customName"] = "function()\n  local function GetSlotItemName(slotId)\n    local slotItemId = GetInventoryItemID(\"player\", slotId)\n    \n    if slotItemId then\n      return GetItemInfo(slotItemId)\n    end\n  end\n  \n  if aura_env.rangedSwing then\n    return GetSlotItemName(18)\n  elseif aura_env.UseOffHand() then\n    return GetSlotItemName(17)\n  else\n    return GetSlotItemName(16) or \"Unarmed\"\n  end\nend",
-						["custom"] = "function(event, ...)\n    local function IsSpellCastSlam(...)\n        local spellId = select(3, ...)\n        local spellName = GetSpellInfo(spellId)\n        \n        -- if select(2, UnitClass('player')) == \"WARRIOR\" then\n        --     if GetShapeshiftForm() == 3 then return false end\n        -- end\n        \n        if IsSpellKnown(23881) then return false end\n        \n        return spellName == \"Slam\"\n    end\n    \n    if event == \"COMBAT_LOG_EVENT_UNFILTERED\" then\n        local subEvent = select(2, ...)\n        local sourceGUID = select(4, ...)\n        local destGUID = select(8, ...)\n        local playerGUID = UnitGUID(\"player\")\n        local useOffHand = aura_env.UseOffHand()\n        \n        if subEvent == \"SWING_MISSED\" and destGUID == playerGUID and not useOffHand and not aura_env.rangedSwing then\n            local missType = select(12, ...)\n            \n            if missType == \"PARRY\" then\n                aura_env.parryHaste = true\n                return true\n            else\n                return false\n            end\n        elseif sourceGUID ~= playerGUID then\n            return false\n        end\n        \n        if subEvent == \"SPELL_CAST_SUCCESS\" and not useOffHand then\n            local spellName = select(13, ...)\n            \n            if aura_env.MELEE_SWING_SPELLS[spellName] then\n                aura_env.rangedSwing = false\n                return true\n            elseif aura_env.RANGED_SWING_SPELLS[spellName] then\n                aura_env.rangedSwing = true\n                return true\n            else\n                return false\n            end\n        end\n        \n        local isOffHand = false\n        \n        if subEvent == \"SWING_DAMAGE\" then\n            isOffHand = select(21, ...)\n        elseif subEvent == \"SWING_MISSED\" then\n            isOffHand = select(13, ...)\n        end\n        \n        aura_env.rangedSwing = false\n        return (useOffHand and isOffHand) or (not useOffHand and not isOffHand)\n    elseif event == \"UNIT_SPELLCAST_START\" and IsSpellCastSlam(...) then\n        aura_env.rangedSwing = false\n        aura_env.pauseState = \"PAUSING\"\n        return true\n    elseif event == \"UNIT_SPELLCAST_STOP\" and IsSpellCastSlam(...) then\n        aura_env.rangedSwing = false\n        aura_env.pauseState = \"INTERRUPTED\"\n        return true\n    elseif event == \"UNIT_SPELLCAST_SUCCEEDED\" and IsSpellCastSlam(...) then\n        aura_env.rangedSwing = false\n        aura_env.pauseState = \"RESUMING\"\n        return true\n    end\nend",
+						["events"] = "CLEU:SWING_DAMAGE,CLEU:SWING_MISSED,CLEU:SPELL_CAST_SUCCESS,UNIT_SPELLCAST_START:player,UNIT_SPELLCAST_STOP:player,UNIT_SPELLCAST_SUCCEEDED:player",
 						["customTexture"] = "",
 						["custom_type"] = "event",
 						["unit"] = "player",
@@ -35227,12 +35238,12 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text"] = "%t",
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "None",
+					["text_visible"] = false,
 					["text_wordWrap"] = "WordWrap",
-					["text_text_format_t_time_mod_rate"] = true,
+					["text_fontType"] = "None",
 					["text_anchorPoint"] = "INNER_CENTER",
 					["text_text_format_n_format"] = "none",
-					["text_visible"] = false,
+					["text_text_format_t_time_mod_rate"] = true,
 					["text_fontSize"] = 10,
 					["text_text_format_t_time_dynamic_threshold"] = 60,
 					["text_shadowXOffset"] = 0,
@@ -35311,16 +35322,11 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["source"] = "import",
 			["config"] = {
 				["offHand"] = true,
 			},
+			["source"] = "import",
+			["uid"] = "xrn6TyjU(E6",
 			["parent"] = "SwingTimer - Queue skills",
 			["width"] = 220,
 			["smoothProgress"] = true,
@@ -35341,7 +35347,12 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["desaturate"] = false,
-			["uid"] = "xrn6TyjU(E6",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["inverse"] = true,
 			["version"] = 8,
 			["orientation"] = "HORIZONTAL",
@@ -35412,7 +35423,7 @@ WeakAurasSaved = {
 			["subRegions"] = {
 			},
 			["height"] = 121.503601074219,
-			["gridType"] = "RD",
+			["rowSpace"] = 1,
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -35445,7 +35456,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["fullCircle"] = true,
+			["useLimit"] = false,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -35454,7 +35465,7 @@ WeakAurasSaved = {
 			},
 			["sort"] = "none",
 			["animate"] = true,
-			["arcLength"] = 360,
+			["stagger"] = 0,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -35462,6 +35473,22 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 5,
+			["fullCircle"] = true,
+			["internalVersion"] = 64,
+			["constantFactor"] = "RADIUS",
+			["borderInset"] = 0,
+			["borderOffset"] = 16,
+			["config"] = {
+			},
+			["width"] = 359.096801757813,
+			["id"] = "Details! Boss Mods Group",
+			["gridWidth"] = 5,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["authorOptions"] = {
+			},
+			["uid"] = "N5YikxjcJsU",
+			["gridType"] = "RD",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -35482,29 +35509,13 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["stagger"] = 0,
-			["constantFactor"] = "RADIUS",
-			["borderInset"] = 0,
-			["borderOffset"] = 16,
-			["config"] = {
-			},
-			["width"] = 359.096801757813,
-			["id"] = "Details! Boss Mods Group",
-			["gridWidth"] = 5,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["authorOptions"] = {
-			},
-			["uid"] = "N5YikxjcJsU",
-			["internalVersion"] = 64,
-			["useLimit"] = false,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["rowSpace"] = 1,
+			["arcLength"] = 360,
 		},
 		["Druid - CP5"] = {
 			["color"] = {
@@ -35872,13 +35883,12 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["source"] = "import",
 			["anchorFrameType"] = "SCREEN",
-			["stickyDuration"] = false,
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
+					["do_message"] = false,
 					["do_custom"] = false,
 					["custom"] = "",
-					["do_message"] = false,
 				},
 				["finish"] = {
 					["do_message"] = false,
@@ -35887,6 +35897,28 @@ WeakAurasSaved = {
 				["init"] = {
 					["custom"] = "local f = WeakAuras[\"regions\"][aura_env.id][\"region\"]\n\nif not f.button then\n    local itemId = WeakAuras.GetData(aura_env.id).triggers[1].trigger.itemName\n    local itemName = GetItemInfo(itemId)\n    f.button = CreateFrame(\"Button\", nil, f,\"SecureActionButtonTemplate\")\n    f.button:SetAttribute(\"type\", \"macro\")\n    f.button:SetAttribute(\"unit\",\"player\")\n    \n    local macrotext = \"/cancelform\\n/use item:\" .. itemId\n    \n    f.button:SetAttribute(\"macrotext\",macrotext)\n    f.button:SetAllPoints(f)\n    \n    f.button:SetScript(\"OnEnter\", function(self) \n            GameTooltip:SetOwner(self, \"ANCHOR_CURSOR\"); \n            GameTooltip:ClearLines(); \n            GameTooltip:SetItemByID(itemId);\n            GameTooltip:Show() \n    end)\n    f.button:SetScript(\"OnLeave\", function(self) \n            GameTooltip:Hide() \n    end)\nend",
 					["do_custom"] = true,
+				},
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "slidebottom",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "alphaPulse",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 			},
 			["cooldown"] = false,
@@ -35917,34 +35949,14 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "slidebottom",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "alphaPulse",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["stickyDuration"] = false,
 		},
 		["Clearcasting"] = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["parent"] = "Vermin Druid",
+			["authorOptions"] = {
+			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -35953,14 +35965,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -36037,13 +36042,14 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["authorOptions"] = {
-			},
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -36145,9 +36151,9 @@ WeakAurasSaved = {
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["auto"] = false,
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["parent"] = "Vermin Druid",
 			["uid"] = "8gslC0ziYq6",
 			["icon_side"] = "RIGHT",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
@@ -36157,7 +36163,7 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["spark"] = false,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["id"] = "Clearcasting",
 			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
@@ -36179,7 +36185,12 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 		},
 		["Malygos - Frameshine 5"] = {
 			["wagoID"] = "nYCzfPXgJ",
@@ -37262,6 +37273,18 @@ WeakAurasSaved = {
 			["xOffset"] = 40,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SELECTFRAME",
+			["groupIcon"] = 134105,
+			["uid"] = "Ow32WYEI1Ji",
+			["anchorFrameFrame"] = "MultiBarBottomRightButton12",
+			["config"] = {
+			},
+			["conditions"] = {
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+				["forceEvents"] = true,
+				["groupOffset"] = true,
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -37282,18 +37305,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["uid"] = "Ow32WYEI1Ji",
-			["groupIcon"] = 134105,
-			["config"] = {
-			},
-			["conditions"] = {
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-				["forceEvents"] = true,
-				["groupOffset"] = true,
-			},
-			["anchorFrameFrame"] = "MultiBarBottomRightButton12",
 		},
 		["Equipped Items - Icon"] = {
 			["iconSource"] = -1,
@@ -37313,10 +37324,10 @@ WeakAurasSaved = {
 						["debuffType"] = "HELPFUL",
 						["event"] = "Health",
 						["unit"] = "player",
-						["events"] = "COMBAT_LOG_EVENT_UNFILTERED, PLAYER_EQUIPMENT_CHANGED, BAG_UPDATE_COOLDOWN, PLAYER_LOGOUT, OPTIONS_CLOSE",
-						["custom"] = "function(allstates, event, ...)\n    return aura_env.OnTrigger(allstates, event, ...)\nend",
 						["spellIds"] = {
 						},
+						["events"] = "COMBAT_LOG_EVENT_UNFILTERED, PLAYER_EQUIPMENT_CHANGED, BAG_UPDATE_COOLDOWN, PLAYER_LOGOUT, OPTIONS_CLOSE",
+						["custom"] = "function(allstates, event, ...)\n    return aura_env.OnTrigger(allstates, event, ...)\nend",
 						["names"] = {
 						},
 						["check"] = "event",
@@ -37583,17 +37594,8 @@ WeakAurasSaved = {
 				["TitleDesc"] = {
 				},
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "-- [itemId] = procId,\n-- [itemId] = { procId1, procId2 },\nlocal ITEM_DATA = {\n    [37111] = {60512, 60513, 60514, 60515}, [23835] = 99999, [23836] = 99999, [32782] = 41301, [24390] = 31794,\n    [28040] = 33662, [28041] = 33667, [28042] = 33668, [25829] = 33828,\n    [24551] = 32140, [27922] = { 33511, 33513 }, [27924] = { 33511, 33513 },\n    [24376] = 31771, [27927] = { 33522, 33523 }, [27926] = { 33522, 33523 },\n    [25787] = 32600, [25786] = 99999, [25619] = 32355, [25620] = 32355,\n    [28108] = 33759, [28109] = 33746, [25937] = 39200, [25936] = 39201,\n    [31856] = { 39439, 39441 }, [31858] = 99999, [31859] = 99999,\n    [31857] = 39443, [26055] = 33012, [27416] = 33014, [31617] = 33667,\n    [25628] = 32362, [25633] = 32362, [31615] = 33662, [32771] = 41263,\n    [29181] = 99999, [25634] = 32367, [32770] = 41261, [29776] = 35733,\n    [32864] = 40815, [30300] = 36372, [29370] = 35163, [29383] = 35166,\n    [29376] = 35165, [38290] = 51953, [38288] = 51954, [38287] = 51955,\n    [29387] = 35169, [38289] = 51952, [30293] = 36347, [28034] = { 33648, 33649 },\n    [27891] = 33479, [27900] = 33486, [30340] = 36432, [32658] = 40729,\n    [27683] = 33370, [27529] = 33089, [28288] = 33807, [34472] = 45053,\n    [28785] = 37658, [32654] = 40724, [28190] = 33370, [28370] = 34210,\n    [28121] = 34106, [28727] = 29601, [29132] = 35337, [28590] = 38332,\n    [24128] = 31047, [30346] = 99999, [28418] = 34321, [30841] = 37877,\n    [28528] = 34519, [32534] = 40538, [28223] = 34000, [30349] = 99999,\n    [29179] = 35337, [24126] = 31040, [27770] = 39228, [30343] = 99999,\n    [28235] = 99999, [30345] = 99999, [24125] = 31039, [30344] = 99999,\n    [34473] = 45058, [34471] = 45064, [28234] = 99999, [30350] = 99999,\n    [28237] = 99999, [24124] = 31038, [28242] = 99999, [30348] = 99999,\n    [28240] = 99999, [28239] = 99999, [30351] = 99999, [24127] = 31045,\n    [27828] = 33400, [28243] = 99999, [28238] = 99999, [28241] = 99999,\n    [28236] = 99999, [28830] = 34775, [28789] = 34747, [28823] = 37706,\n    [35702] = 46784, [35700] = 46783, [35694] = 46782, [35703] = 46785,\n    [35693] = 46780, [30627] = 42084, [30626] = 38348, [30720] = 37445,\n    [30447] = 37198, [30664] = { 37343, 37340, 37341, 37342, 37344 },\n    [30450] = 37174, [30619] = 38324, [37864] = 99999, [30620] = 38325,\n    [37865] = 99999, [30663] = 37243, [30665] = 40402, [30629] = 38351,\n    [30448] = 37508, [37128] = 48042, [37127] = 48041, [34029] = 43995,\n    [33831] = 43716, [33832] = 44055, [34050] = 44055, [34576] = 44055,\n    [34578] = 44055, [33829] = 43712, [34049] = 44055, [34580] = 44055,\n    [34163] = 44055, [34579] = 44055, [35326] = 44055, [35327] = 44055,\n    [34162] = 44055, [34577] = 44055, [33830] = 43713, [33828] = 43710,\n    [32505] = 40477, [32501] = 40464, [32483] = 40396, [32496] = 37656,\n    [34427] = 45040, [34429] = 45044, [34428] = 45049, [34430] = 45052,\n    [10725] = 99999, [41589] = 44055, [35935] = 47215, [38257] = 47816,\n    [36874] = 47816, [38073] = 33662, [38760] = 48875, [44308] = 60318,\n    \n    [21625] = 26467, [29387] = 35169, [38358] = 51353,\n    [40865] = 54808, [40767] = 55018, [43837] = 61617,\n    [38763] = 61426, [38764] = 61427, [38765] = 61428,\n    [43836] = 61620, [44013] = 59657, [44015] = 59657,\n    [44014] = 59658, [36993] = 60214, [36972] = 60471,\n    [38359] = 51348, [37064] = 60307, [37220] = 60218,\n    [37660] = 60479, [45131] = 63250, [45219] = 63250,\n    [37390] = 60302, [37264] = 60483, [37657] = 60520,\n    [40430] = 60525, [37844] = 60521, [37734] = 60517,\n    [37166] = 60305, [37638] = 60180, [37873] = 60480,\n    [37872] = 60215, [37723] = 60299, [42341] = 56121,\n    [44063] = 59757, [42418] = 56188, [42413] = 56186,\n    [42395] = 56184, [41121] = 55039,\n    [42987] = { 60229, 60233, 60234, 60235 },\n    [44253] = { 60229, 60233, 60234, 60235 },   \n    [44255] = { 60229, 60233, 60234, 60235 },\n    [44254] = { 60229, 60233, 60234, 60235 },\n    [42990] = 60203, [19288] = 23684, [42989] = 60196,\n    [42988] = 57350, [44912] = 60064, [40682] = 60064,\n    [49706] = 60064, [44914] = 60065, [40684] = 60065,\n    [49074] = 60065, [39229] = 60492, [43573] = 58904,\n    [37835] = 49623, [40685] = 60062, [49078] = 60062,    \n    [47213] = 67669, [47214] = 67671, [47215] = 67666,    \n    [40683] = 60054, [39388] = 60527, [39292] = 60180,    \n    [39257] = 60439, [49080] = 68443, [49116] = 68271,    \n    [49118] = 68270, [42122] = 42292, [42123] = 42292,    \n    [37254] = 48333, [40382] = 60538, [40256] = 60437,    \n    [40258] = 60530, [40373] = 60488, [40255] = 60494,    \n    [40371] = 60443, [40432] = 60486, [40431] = 60314,    \n    [40372] = 60258, [46088] = 64527, [46087] = 64525,    \n    [46086] = 64524, [40257] = 60286, [42129] = 55915,    \n    [42130] = 55915, [42132] = 55915, [42128] = 55915,    \n    [46083] = 42292, [46085] = 42292, [46081] = 42292,    \n    [46084] = 42292, [46082] = 42292, [45866] = 42292,    \n    [45286] = 65014, [45866] = 65004, [45308] = 65006,    \n    [46021] = 65012, [45313] = 65011, [45292] = 65008,    \n    [45507] = 64765, [45929] = 65003, [45490] = 64741,    \n    [45931] = 65019, [46038] = 65024, [45522] = 64790,    \n    [45263] = 64800, [45466] = 64707, [46051] = 64999,    \n    [40531] = 60319, [45148] = 64712, [45158] = 64763,    \n    [40532] = 60526, [42126] = 42292, [42124] = 42292,    \n    [46312] = 64983, [50198] = 71403, [47881] = 67738,    \n    [47725] = 67738, [47879] = 67736, [47726] = 67736,    \n    [47882] = 67728, [47727] = 67728, [47880] = 67726,    \n    [47728] = 67726, [50259] = 71564, [50235] = 71569,    \n    [50260] = 71568, [45535] = 64739, [45518] = 64713,    \n    [45609] = 64772, [46017] = 64411,    \n    [47303] = { 67703, 67708 }, [47115] = { 67703, 67708 },  \n    [47271] = 67696, [47041] = 67696, [48020] = 67747,    \n    [47948] = 67747, [47316] = 67713, [47182] = 67713,    \n    [48018] = 67744, [47946] = 67744, [48021] = 67742,    \n    [47949] = 67742, [48019] = 67740, [47947] = 67740,    \n    [48724] = 67684, [48722] = 67683, [47290] = 67699,    \n    [47080] = 67699, [48724] = 67684, [48722] = 67683,    \n    [47734] = 67695, [47735] = 67694, [42133] = 67596,    \n    [42134] = 67596, [42136] = 67596, [42137] = 67596,    \n    [42135] = 67596, [50342] = 71401, [50341] = 71575,    \n    [50340] = 71570, [50339] = 71565,    \n    [47464] = { 67772, 67773 }, [47131] = { 67772, 67773 },  \n    [47432] = 67750, [47059] = 67750, [47477] = 67759,    \n    [47188] = 67759, [47451] = 67753, [47088] = 67753,    \n    [50353] = 71601, [50358] = 71584, [50343] = 71541,    \n    [50360] = 71605, [50359] = 71610, [50352] = 71633,    \n    [50362] = { 71485, 71492, 71486, 71484, 71491, 71487 },  \n    [50344] = 71577, [50345] = 71572, [50351] = 71432,    \n    [50355] = 71396, [50361] = 71635, [50357] = 71579,    \n    [50356] = 71586, [51378] = 42292, [51377] = 42292,    \n    [50346] = 71574, [50354] = 71607, [50726] = 71607,\n    [54569] = 75458, [54572] = 75466, [54571] = 75477,    \n    [54573] = 75490, [50366] = 71641, [50349] = 71639,    \n    [50348] = 71644, [50365] = 71636, [50706] = 71432,    \n    [50363] = { 71556, 71560, 71558, 71561, 71559, 71557 }, \n    [50364] = 71638, [50397] = 72416, [50398] = 72416, \n    [50401] = 72412, [50402] = 72412, [52571] = 72412,   \n    [52572] = 72412, [50399] = 72418, [50400] = 72418, \n    [50403] = 72414, [50404] = 72414, [54590] = 75456,    \n    [54588] = 75473, [54591] = 75480, [54589] = 75495,\n    \n    -- Idols\n    [50457] = 71177, [47670] = 67360, [50454] = 71184,\n    [47671] = 67358, [50456] = 71175, [47668] = 67355,\n    [45509] = 64951, [38360] = 57909, [42582] = 60566,\n    [42587] = 60547, [42574] = 60544, [42575] = 60565,\n    [42583] = 60567, [42588] = 60549, [42584] = 60568,\n    [42589] = 60551, [42585] = 60569, [42591] = 60553,\n    [51429] = 60555, [51437] = 60570,\n    \n    -- Totems\n    [50463] = 71216, [47667] = 67391, [50458] = 71199,\n    [50464] = 71220, [47665] = 67388, [40322] = 60766,\n    [47666] = 67385, [40708] = 60771, [42601] = 60566,\n    [42606] = 60547, [42593] = 60544, [42594] = 60565,\n    [42602] = 60567, [42607] = 60549, [42603] = 60568, \n    [42608] = 60551, [42604] = 60569, [42609] = 60553,  \n    [51507] = 60555, [51513] = 60570,\n    \n    -- Sigils\n    [50462] = 71229, [50459] = 71227, [47672] = 67380, \n    [47673] = 67383, [45144] = 64963, [40714] = 62146, \n    [40715] = 60828, [42619] = 60547, [42620] = 60549, \n    [42621] = 60551, [42622] = 60553, [51417] = 60555,\n    \n    -- Librams\n    [40706] = 60819, [40707] = 60795, [42851] = 60547,\n    [42611] = 60544, [42852] = 60549, [45145] = 65182,\n    [42853] = 60551, [47661] = 67371, [47662] = 67364,\n    [47664] = 67378, [42854] = 60553, [50455] = 71187,\n    [50460] = 71192, [50461] = 71197, [51478] = 60555,\n    \n}\n\n-- [enchantId] = procId\nlocal ENCHANT_DATA = {\n    [3859] = 55001,    \n    [3722] = 55637,    \n    [3728] = 55767,    \n    [3730] = 55775,    \n    [3790] = 59626,    \n    [3603] = 54757,    \n    [3604] = 54758,    \n    [3606] = 54861,\n    [3789] = 59620,\n    [3869] = 64440,   \n    [3870] = 64568, \n    [2673] = 28093,\n    [3368] = 53365,\n    [3369] = 53386,\n}\n\n-- [gemId] = procId\nlocal GEMS_DATA = {\n    [41401] = 55382, -- Insightful Earthsiege Diamond\n    [41385] = 55341, -- Invigorating Earthsiege Diamond\n    [41400] = 55379, -- Thundering Skyflare Diamond \n}\n\n-- [procId] = cooldown\nlocal COOLDOWNS_DATA = {\n    [72416] = 60,    \n    [72412] = 60,    \n    [72418] = 60,    \n    [72414] = 60,    \n    [51348] = 10,    \n    [51353] = 10,    \n    [54808] = 60,    \n    [55018] = 60,    \n    [71485] = 105,\n    [71492] = 105,\n    [71486] = 105,\n    [71484] = 105,\n    [71491] = 105,\n    [71487] = 105,\n    [71556] = 105,\n    [71560] = 105,\n    [71558] = 105,\n    [71561] = 105,\n    [71559] = 105,\n    [71557] = 105,\n    [71605] = 90,    \n    [71636] = 90,    \n    [55637] = 60,    \n    [55775] = 60,    \n    [55767] = 60,    \n    [59626] = 35, \n    [64568] = 10,\n    [55382] = 15,  \n    [40373] = 15,\n}\n\n-- [itemId] = extraProcId\nlocal EXTRA_PROCS_DATA = {\n    [50348] = 71643,    \n    [50353] = 71600,    \n    [47879] = 67735,    \n    [47726] = 67735,    \n    [48018] = 67743,    \n    [47946] = 67743,    \n    [47880] = 67723,    \n    [47728] = 67723,    \n    [48019] = 67739,    \n    [47947] = 67739,    \n    [47881] = 67737,    \n    [47725] = 67737,    \n    [48020] = 67746,    \n    [47948] = 67746,  \n    [46051] = 65000,\n}\n\n-- [procId] = true (f.e. Balance Idols)\nlocal NO_COOLDOWN_ITEMS_DATA = {\n    [60486] = true, [60525] = true, [60314] = true,    \n    [60196] = true, [71575] = true, [71577] = true,    \n    [71570] = true, [71572] = true, [71432] = true,    \n    [71396] = true, [65006] = true, [71600] = true,    \n    [71643] = true, [67696] = true, [67750] = true,    \n    [67713] = true, [67759] = true, [71177] = true, \n    [67360] = true, [59620] = true, [64440] = true,\n    [71184] = true, [67358] = true, [71175] = true, \n    [67355] = true, [64951] = true, [57909] = true, \n    [60566] = true, [60547] = true, [60544] = true,\n    [60565] = true, [60567] = true, [60549] = true,\n    [60568] = true, [60551] = true, [60569] = true,\n    [60553] = true, [60555] = true, [60570] = true,\n    [71216] = true, [67391] = true, [71199] = true, \n    [71220] = true, [67388] = true, [60766] = true,\n    [60771] = true, [60566] = true, [60565] = true, \n    [60567] = true, [60568] = true, [60569] = true,\n    [60570] = true, [71229] = true, [71227] = true, \n    [67380] = true, [67383] = true, [64963] = true,\n    [60828] = true, [62146] = true, [67385] = true,  \n    [60819] = true, [60795] = true, [65182] = true,\n    [67371] = true, [67364] = true, [67378] = true,  \n    [71187] = true, [71192] = true, [71197] = true,\n    [28093] = true, [53365] = true, [60512] = true, \n    [60513] = true, [60514] = true, [60515] = true,\n}\n\nlocal INVALID_EVENTS = {\n    SPELL_DISPEL            = true,\n    SPELL_DISPEL_FAILED     = true,\n    SPELL_STOLEN            = true,\n    SPELL_AURA_REMOVED_DOSE = true,\n    SPELL_AURA_BROKEN       = true,\n    SPELL_AURA_BROKEN_SPELL = true,\n    SPELL_CAST_FAILED       = true,\n    SPELL_PERIODIC_HEAL     = true,\n    SPELL_CAST_SUCCESS      = true,\n}\n\nlocal hexNoGUID = \"0x0000000000000000\"\n\nlocal tinsert = table.insert\nlocal stformat = string.format\nlocal substr = string.sub\nlocal myGUID = UnitGUID(\"player\")\n\nlocal ItemWidget = aura_env\nlocal cfg = ItemWidget.config\n\nlocal items = {\n    -- [itemId] = {\n    --     equipmentSlot = number,\n    --     procs = table,\n    --     isProc = boolean,\n    --     itemTexture = string, (constant)\n    --     procTexture = string,\n    --     stacks = number,\n    --     cooldown = number, (constant)\n    --     duration = number, (as cooldown duration)\n    --     expirationTime = number, (as cooldown expTime)\n    --     procDuration = number, (as proc duration)\n    --     procExpirationTime = number, (as proc expTime)\n    -- }\n}\n\nlocal equipmentSlots = {\n    -- [equipmentSlot] = itemId,\n}\n\nlocal procs = {\n    -- [procId] = itemId,\n}\n\nlocal extraProcs = {\n    -- [extraProcId] = itemId,\n}\n\nlocal settings = {\n    equipmentSlots = {},\n    order = {},\n    advanced = {},\n    registerAnyOnUse = cfg.display.registerAnyOnUse,\n    showAlways = cfg.display.showAlways,\n    showProc = cfg.display.showProc,\n    itemTextureAlways = cfg.display.itemTextureAlways,\n}\n\nItemWidget.settings = settings\n\nlocal InitConfig = function()\n    \n    for slot, enable in ipairs(cfg.display.equipmentSlots) do\n        if enable then\n            settings.equipmentSlots[slot] = true\n        end\n    end\n    \n    local validEnchants = {\n        [1] = 3859,\n        [2] = 3722,\n        [3] = 3728,\n        [4] = 3730,\n        [5] = 3603, \n        [6] = 3604,\n        [7] = 3606,\n        [8] = 3790,\n        [9] = 3789,\n        [10] = 3869,\n        [11] = 3870,\n        [12] = 2673,\n        [13] = 3370,\n    }\n    \n    for i, v in ipairs(cfg.display.validEnchants) do\n        if not v then\n            local enchantId = validEnchants[i]\n            ENCHANT_DATA[enchantId] = nil\n        end\n    end\n    \n    local validMetaGems = {\n        [1] = 41385, -- Invigorating Earthsiege Diamond\n        [2] = 41400, -- Thundering Skyflare Diamond\n        [3] = 41401, -- Insightful Earthsiege Diamond\n    }\n    \n    for i, v in ipairs(cfg.display.validMetaGems) do\n        if not v then\n            local metaGemId = validMetaGems[i]\n            GEMS_DATA[metaGemId] = nil\n        end\n    end\n    \n    for equipmentSlot, index in pairs(cfg.display.order) do\n        local equipmentSlot = tonumber(equipmentSlot)\n        settings.order[equipmentSlot] = index\n    end\n    \n    for _, optionsData in ipairs(cfg.advanced) do\n        local itemId = optionsData.itemId\n        \n        if optionsData.disable then\n            ITEM_DATA[itemId] = nil\n        end\n        \n        settings.advanced[itemId] = {\n            disableGlow = optionsData.disableGlow\n        }\n    end\n    \nend \n\n-- return: table - numbers\nlocal GetValuesTable = function(value)\n    local t = {}\n    if type(value) == \"table\" then\n        for _, v in pairs(value) do\n            tinsert(t, v)\n        end\n    elseif type(value) ~= \"table\" then\n        tinsert(t, value)\n    end\n    return t\nend\n\n-- return: number - itemId, number - enchantId\nlocal GetSlotItemInfo = function(equipmentSlot)\n    \n    local itemLink = GetInventoryItemLink(\"player\", equipmentSlot)\n    \n    if itemLink then\n        local itemString = select(3, strfind(itemLink, \"|H(.+)|h\"))\n        local _, itemId, enchantId, metaGem = strsplit(\":\", itemString)\n        return tonumber(itemId), tonumber(enchantId), tonumber(metaGem)\n    end\n    \nend\n\n-- return: string - custom type names (\"NO_CD\", \"ON_USE\", \"INTERNAL\"), number - cooldown time \nlocal GetCooldownInfo = function(equipmentSlot, procId)\n    local _,_, enable = GetInventoryItemCooldown(\"player\", equipmentSlot)\n    \n    if enable == 1 then\n        return \"ON_USE\", nil\n    end\n    \n    if enable == 0 then\n        local cooldown = NO_COOLDOWN_ITEMS_DATA[procId]\n        \n        if cooldown then\n            return \"NO_CD\", 0\n        end\n        \n        return \"INTERNAL\", COOLDOWNS_DATA[procId] or 45\n    end\nend\n\nlocal CanRegister = function(equipmentSlot, procId)\n    if procId then\n        return true\n    end\n    \n    if settings.registerAnyOnUse then\n        local _,_, enable = GetInventoryItemCooldown(\"player\", equipmentSlot)\n        return enable == 1\n    end\nend\n\nlocal SetState = {\n    \n    AutoHide = function()\n        return not settings.showAlways\n    end,\n    \n    Show = function(state)\n        return settings.showAlways or GetTime() < state.expirationTime\n    end,\n    \n    Duration = function(itemId)\n        local isProc = items[itemId].isProc\n        return (isProc and settings.showProc) and items[itemId].procDuration or items[itemId].duration or 0\n    end,\n    \n    ExpirationTime = function(itemId)\n        local isProc = items[itemId].isProc\n        return (isProc and settings.showProc) and items[itemId].procExpirationTime or items[itemId].expirationTime or GetTime()\n    end,\n    \n    Index = function(equipmentSlot)\n        return settings.order[equipmentSlot]\n    end,\n    \n    Icon = function(itemId)\n        local isProc = items[itemId].isProc\n        return (isProc and settings.showProc and not settings.itemTextureAlways) and items[itemId].procTexture or items[itemId].itemTexture\n    end,\n    \n    Stacks = function(itemId)\n        local isProc = items[itemId].isProc\n        return (isProc and settings.showProc) and items[itemId].stacks or 0\n    end,\n    \n    IsProc = function(itemId)\n        local isProc = items[itemId].isProc\n        return isProc and settings.showProc\n    end,\n    \n}\n\nlocal InitAura = function(allstates, equipmentSlot, itemId)\n    local stateName = stformat(\"IW_Slot%d\", equipmentSlot)\n    \n    allstates[stateName] = allstates[stateName] or {\n        progressType = \"timed\",\n        autoHide = SetState.AutoHide(),\n        index = SetState.Index(equipmentSlot),\n        itemType = items[itemId].type,\n        itemId = itemId,\n        equipmentSlot = equipmentSlot,\n    }\n    \n    allstates[stateName].stacks = SetState.Stacks(itemId)\n    allstates[stateName].isProc = SetState.IsProc(itemId)\n    allstates[stateName].icon = SetState.Icon(itemId)\n    allstates[stateName].duration = SetState.Duration(itemId)\n    allstates[stateName].expirationTime = SetState.ExpirationTime(itemId)\n    allstates[stateName].show = SetState.Show(allstates[stateName])\n    allstates[stateName].changed = true\nend\n\nlocal RemoveAura = function(allstates, equipmentSlot)\n    equipmentSlots[equipmentSlot] = nil\n    local stateName = stformat(\"IW_Slot%d\", equipmentSlot)\n    if allstates[stateName] then\n        allstates[stateName].show = false\n        allstates[stateName].changed = true\n    end\n    \n    return true\nend\n\nlocal InitItem = function(equipmentSlot, itemId, procId)\n    \n    if items[itemId] then\n        items[itemId].equipmentSlot = equipmentSlot\n        return\n    end\n    \n    items[itemId] = {\n        procs = {},\n        extraProc = EXTRA_PROCS_DATA[itemId],\n        itemTexture = GetItemIcon(itemId),\n        expirationTime = GetTime(),  \n        equipmentSlot = equipmentSlot \n    }\n    \n    if not procId then\n        items[itemId].type = \"ON_USE\"\n        return true\n    end\n    \n    local p = GetValuesTable(procId)\n    \n    for _, procId in pairs(p) do\n        tinsert(items[itemId].procs, procId)\n        procs[procId] = itemId\n        if not items[itemId].type then\n            local type, cooldown = GetCooldownInfo(equipmentSlot, procId)\n            \n            items[itemId].type = type\n            \n            if type == \"INTERNAL\" then\n                items[itemId].cooldown = cooldown\n            end\n        end\n    end\n    \n    local extraProcId = EXTRA_PROCS_DATA[itemId]\n    \n    if extraProcId then\n        extraProcs[extraProcId] = itemId\n    end\n    \nend \n\nlocal InitEquipmentSlot = function(allstates, equipmentSlot)\n    \n    local itemId, enchantId, metaGem = GetSlotItemInfo(equipmentSlot)\n    \n    if itemId then \n        local procId = ITEM_DATA[itemId] or ENCHANT_DATA[enchantId] or GEMS_DATA[metaGem]\n        if CanRegister(equipmentSlot, procId) then\n            equipmentSlots[equipmentSlot] = itemId\n            InitItem(equipmentSlot, itemId, procId)\n            return true\n        end\n    end\n    \n    if equipmentSlots[equipmentSlot] then\n        equipmentSlots[equipmentSlot] = nil\n    end\n    \nend\n\n-- return: number - cooldown\nlocal LoadLastSession = function(allstates, equipmentSlot, itemId)\n    aura_env.saved = aura_env.saved or {}\n    local db = aura_env.saved[WeakAuras.me]\n    if not db then return end\n    \n    if db[itemId] then\n        local expirationTimeOS = db[itemId].expirationTimeOS\n        local cooldown = expirationTimeOS - time()\n        return cooldown\n    end\nend\n\nlocal OnUse = function(allstates, equipmentSlot, itemId)\n    local startTime, duration = GetInventoryItemCooldown(\"player\", equipmentSlot)\n    if duration > 0 then\n        local expirationTime = startTime + duration\n        if expirationTime > items[itemId].expirationTime then\n            items[itemId].duration = duration\n            items[itemId].expirationTime = expirationTime\n            return true\n        end\n    end\nend\n\nlocal BagUpdateCooldown = function(allstates)\n    local update = false\n    \n    for equipmentSlot in pairs(settings.equipmentSlots) do\n        local itemId = GetInventoryItemID(\"player\", equipmentSlot)\n        if itemId and itemId == equipmentSlots[equipmentSlot]\n        and items[itemId].type == \"ON_USE\"\n        and (not settings.showProc or not items[itemId].isProc)\n        and OnUse(allstates, equipmentSlot, itemId) then\n            \n            items[itemId].stacks = 0\n            InitAura(allstates, equipmentSlot, itemId)\n            update = true\n            \n        end\n    end\n    \n    return update\nend\n\nlocal EquipmentSlotChanged = function(allstates, equipmentSlot, isEmpty)\n    \n    if not isEmpty and InitEquipmentSlot(allstates, equipmentSlot) then\n        \n        local timestamp = GetTime()\n        \n        local itemId = equipmentSlots[equipmentSlot]\n        local type = items[itemId].type\n        \n        items[itemId].icon = items[itemId].itemTexture\n        items[itemId].stacks = 0\n        items[itemId].isProc = false\n        \n        if type == \"ON_USE\" then\n            \n            OnUse(allstates, equipmentSlot, itemId)\n            \n        elseif type == \"INTERNAL\" then\n            local currentCooldown = items[itemId].expirationTime - timestamp\n            local savedCooldown = LoadLastSession(allstates, equipmentSlot, itemId)\n            \n            if currentCooldown > 30 then\n                items[itemId].duration = items[itemId].cooldown\n                items[itemId].expirationTime = timestamp + items[itemId].cooldown\n                \n            elseif not savedCooldown or savedCooldown < items[itemId].cooldown then\n                items[itemId].duration = items[itemId].cooldown\n                items[itemId].expirationTime = timestamp + items[itemId].cooldown\n                \n            elseif savedCooldown > 30 then\n                items[itemId].duration = items[itemId].cooldown\n                items[itemId].expirationTime = savedCooldown + timestamp\n                \n            end\n            \n        elseif type == \"NO_CD\" then\n            \n            if equipmentSlot ~= 18 then\n                items[itemId].duration = 30\n                items[itemId].expirationTime = timestamp + 30\n            end\n            \n        end\n        \n        return InitAura(allstates, equipmentSlot, itemId)\n    end\n    \n    return RemoveAura(allstates, equipmentSlot)\n    \nend\n\nlocal OnExtraProc = function(itemId, extraProcId)\n    local _,_, stacks = WA_GetUnitBuff(\"player\", extraProcId)\n    items[itemId].stacks = stacks\nend\n\nlocal OnProc = function(allstates, equipmentSlot, itemId, spellId)\n    \n    local _, icon, stacks, _, buffDuration, buffExpirationTime = WA_GetUnitBuff(\"player\", spellId)\n    \n    if items[itemId].type == \"INTERNAL\" then\n        local cooldown = items[itemId].cooldown\n        items[itemId].duration = cooldown\n        items[itemId].expirationTime = buffExpirationTime - buffDuration + cooldown\n    end\n    \n    items[itemId].isProc = true\n    items[itemId].procTexture = icon\n    items[itemId].procDuration = buffDuration\n    items[itemId].procExpirationTime = buffExpirationTime\n    items[itemId].stacks = stacks\n    \nend\n\nlocal OnCLEUF = function(allstates, ...)\n    local _, subEvent, _, sourceGUID, _,_,_, destGUID, _,_,_, spellId = ...\n    \n    if not subEvent then return end\n    if INVALID_EVENTS[subEvent] then return end\n    if substr(subEvent, 0, 6) ~= \"SPELL_\" then return end\n    \n    if ((destGUID == myGUID and ((not sourceGUID or sourceGUID == hexNoGUID) or sourceGUID == destGUID)) or sourceGUID == myGUID) then\n        \n        if procs[spellId] then\n            \n            local itemId = procs[spellId]\n            local equipmentSlot = items[itemId].equipmentSlot\n            local type = items[itemId].type\n            \n            if GetInventoryItemID(\"player\", equipmentSlot) ~= itemId then return end\n            \n            if subEvent == \"SPELL_AURA_APPLIED\" \n            or subEvent == \"SPELL_AURA_REFRESH\" \n            or subEvent == \"SPELL_AURA_APPLIED_DOSE\" then\n                \n                OnProc(allstates, equipmentSlot, itemId, spellId)\n                InitAura(allstates, equipmentSlot, itemId)\n                \n            elseif subEvent == \"SPELL_AURA_REMOVED\" then\n                items[itemId].isProc = false\n                items[itemId].stacks = 0\n                \n                if type == \"ON_USE\" then\n                    OnUse(allstates, equipmentSlot, itemId)\n                    \n                elseif type == \"NO_CD\" then\n                    items[itemId].duration = 0\n                    items[itemId].expirationTime = GetTime()\n                end\n                \n            elseif type == \"INTERNAL\" then\n                items[itemId].isProc = false\n                items[itemId].duration = items[itemId].cooldown\n                items[itemId].expirationTime = items[itemId].duration + GetTime()\n            end\n            \n            InitAura(allstates, equipmentSlot, itemId)\n            return true\n        end\n        \n        if extraProcs[spellId] then\n            \n            if subEvent == \"SPELL_AURA_APPLIED\" \n            or subEvent == \"SPELL_AURA_REFRESH\" \n            or subEvent == \"SPELL_AURA_APPLIED_DOSE\" \n            or subEvent == \"SPELL_AURA_REMOVED\" then\n                \n                local itemId = extraProcs[spellId]\n                local equipmentSlot = items[itemId].equipmentSlot\n                \n                OnExtraProc(itemId, spellId)\n                InitAura(allstates, equipmentSlot, itemId)\n                return true\n                \n            end\n        end\n    end\nend\n\nlocal OnInit = function(allstates)\n    InitConfig()\n    \n    local updated = false\n    for equipmentSlot in pairs(settings.equipmentSlots) do\n        if InitEquipmentSlot(allstates, equipmentSlot) then\n            updated = true\n        end\n    end\n    \n    if not updated then return end\n    \n    -- display active item procs or load last session\n    for equipmentSlot, itemId in pairs(equipmentSlots) do\n        \n        local isBuffed = false\n        for _, procId in ipairs(items[itemId].procs) do\n            if WA_GetUnitBuff(\"player\", procId) then\n                isBuffed = true\n                OnProc(allstates, equipmentSlot, itemId, procId)\n                if items[itemId].extraProc then\n                    OnExtraProc(itemId, items[itemId].extraProc)\n                end\n                break\n            end\n        end\n        \n        if not isBuffed then\n            \n            items[itemId].isProc = false\n            items[itemId].stacks = 0\n            \n            local type = items[itemId].type\n            if type == \"INTERNAL\" or type == \"NO_CD\" then\n                local savedCooldown = LoadLastSession(allstates, equipmentSlot, itemId)\n                \n                if savedCooldown and savedCooldown > 0 then\n                    items[itemId].duration = items[itemId].cooldown or type == \"NO_CD\" and 30\n                    items[itemId].expirationTime = savedCooldown + GetTime()\n                end\n            end\n            \n            if type == \"ON_USE\" then\n                OnUse(allstates, equipmentSlot, itemId)  \n            end\n            \n        end\n        \n        InitAura(allstates, equipmentSlot, itemId)\n    end\n    \n    return true\nend\n\nlocal SaveLastSession = function()\n    aura_env.saved = aura_env.saved or {}\n    aura_env.saved[WeakAuras.me] = {}\n    local db = aura_env.saved[WeakAuras.me]\n    for itemId, itemData in pairs(items) do\n        local expirationTime = itemData.expirationTime\n        db[itemId] = db[itemId] or {}\n        db[itemId].expirationTimeOS = expirationTime - GetTime() + time()\n    end\nend\n\nItemWidget.OnTrigger = function(allstates, event, ...)\n    \n    if event == \"OPTIONS\" then\n        \n        if WeakAuras.IsOptionsOpen() and ItemWidget.initialized then\n            ItemWidget.initialized = false\n            SaveLastSession()\n        end\n        \n        return OnInit(allstates)\n        \n    elseif event == \"OPTIONS_CLOSE\" then\n        \n        ItemWidget.initialized = true\n        return OnInit(allstates)\n        \n    elseif ItemWidget.initialized then\n        \n        if event == \"PLAYER_EQUIPMENT_CHANGED\" then\n            local equipmentSlot, isEmpty = ...\n            if settings.equipmentSlots[equipmentSlot] then\n                EquipmentSlotChanged(allstates, equipmentSlot, isEmpty)\n                return true\n            end\n            \n        elseif event == \"BAG_UPDATE_COOLDOWN\" then\n            return BagUpdateCooldown(allstates)\n            \n        elseif event == \"COMBAT_LOG_EVENT_UNFILTERED\" then\n            return OnCLEUF(allstates, CombatLogGetCurrentEventInfo())\n            \n        elseif event == \"PLAYER_LOGOUT\" then\n            SaveLastSession()\n        end\n    end\nend",
-					["do_custom"] = true,
-				},
-			},
 			["url"] = "https://wago.io/UfCxcQfAm/26",
+			["xOffset"] = 0,
 			["regionType"] = "icon",
 			["cooldown"] = false,
 			["conditions"] = {
@@ -38329,16 +38331,24 @@ WeakAurasSaved = {
 			["displayIcon"] = 134148,
 			["information"] = {
 				["forceEvents"] = true,
-				["saved"] = "JX0MKtjwsj5KAIfLRACS8xlwbcKAffKzrjwsM5NxizMBQ(hShoEtgUxPh7eBHJ56GyxGjWClBZPeLt(wrvfQgmbVX)BPcVVoxCm39bwnq5wuijMsMjLALCvuyPwuUzMxICvKV5NFojwsvIXX8Edev(x122E1x6KGOaWUbiwYlloDTzcMXFtgEz2b4yNa(d",
+				["saved"] = "JX0MKtjwsj5KAIfLRACS8xlwbcKAffKzrjwsM5NxizMBQ(hShoEtgUxPh7eBHJ56GyxGjWClBZPeLt(wrvfQgmbVX)BPcVVoxCm39bwnq5wuijMsMjLALCvuyPwuUzMxICvKV5NFojwsvIXX8EdetJrPNwUhQ)KGOaWUbiwYlloDTzcMXFtgEz2b4yNa(d",
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "-- [itemId] = procId,\n-- [itemId] = { procId1, procId2 },\nlocal ITEM_DATA = {\n    [37111] = {60512, 60513, 60514, 60515}, [23835] = 99999, [23836] = 99999, [32782] = 41301, [24390] = 31794,\n    [28040] = 33662, [28041] = 33667, [28042] = 33668, [25829] = 33828,\n    [24551] = 32140, [27922] = { 33511, 33513 }, [27924] = { 33511, 33513 },\n    [24376] = 31771, [27927] = { 33522, 33523 }, [27926] = { 33522, 33523 },\n    [25787] = 32600, [25786] = 99999, [25619] = 32355, [25620] = 32355,\n    [28108] = 33759, [28109] = 33746, [25937] = 39200, [25936] = 39201,\n    [31856] = { 39439, 39441 }, [31858] = 99999, [31859] = 99999,\n    [31857] = 39443, [26055] = 33012, [27416] = 33014, [31617] = 33667,\n    [25628] = 32362, [25633] = 32362, [31615] = 33662, [32771] = 41263,\n    [29181] = 99999, [25634] = 32367, [32770] = 41261, [29776] = 35733,\n    [32864] = 40815, [30300] = 36372, [29370] = 35163, [29383] = 35166,\n    [29376] = 35165, [38290] = 51953, [38288] = 51954, [38287] = 51955,\n    [29387] = 35169, [38289] = 51952, [30293] = 36347, [28034] = { 33648, 33649 },\n    [27891] = 33479, [27900] = 33486, [30340] = 36432, [32658] = 40729,\n    [27683] = 33370, [27529] = 33089, [28288] = 33807, [34472] = 45053,\n    [28785] = 37658, [32654] = 40724, [28190] = 33370, [28370] = 34210,\n    [28121] = 34106, [28727] = 29601, [29132] = 35337, [28590] = 38332,\n    [24128] = 31047, [30346] = 99999, [28418] = 34321, [30841] = 37877,\n    [28528] = 34519, [32534] = 40538, [28223] = 34000, [30349] = 99999,\n    [29179] = 35337, [24126] = 31040, [27770] = 39228, [30343] = 99999,\n    [28235] = 99999, [30345] = 99999, [24125] = 31039, [30344] = 99999,\n    [34473] = 45058, [34471] = 45064, [28234] = 99999, [30350] = 99999,\n    [28237] = 99999, [24124] = 31038, [28242] = 99999, [30348] = 99999,\n    [28240] = 99999, [28239] = 99999, [30351] = 99999, [24127] = 31045,\n    [27828] = 33400, [28243] = 99999, [28238] = 99999, [28241] = 99999,\n    [28236] = 99999, [28830] = 34775, [28789] = 34747, [28823] = 37706,\n    [35702] = 46784, [35700] = 46783, [35694] = 46782, [35703] = 46785,\n    [35693] = 46780, [30627] = 42084, [30626] = 38348, [30720] = 37445,\n    [30447] = 37198, [30664] = { 37343, 37340, 37341, 37342, 37344 },\n    [30450] = 37174, [30619] = 38324, [37864] = 99999, [30620] = 38325,\n    [37865] = 99999, [30663] = 37243, [30665] = 40402, [30629] = 38351,\n    [30448] = 37508, [37128] = 48042, [37127] = 48041, [34029] = 43995,\n    [33831] = 43716, [33832] = 44055, [34050] = 44055, [34576] = 44055,\n    [34578] = 44055, [33829] = 43712, [34049] = 44055, [34580] = 44055,\n    [34163] = 44055, [34579] = 44055, [35326] = 44055, [35327] = 44055,\n    [34162] = 44055, [34577] = 44055, [33830] = 43713, [33828] = 43710,\n    [32505] = 40477, [32501] = 40464, [32483] = 40396, [32496] = 37656,\n    [34427] = 45040, [34429] = 45044, [34428] = 45049, [34430] = 45052,\n    [10725] = 99999, [41589] = 44055, [35935] = 47215, [38257] = 47816,\n    [36874] = 47816, [38073] = 33662, [38760] = 48875, [44308] = 60318,\n    \n    [21625] = 26467, [29387] = 35169, [38358] = 51353,\n    [40865] = 54808, [40767] = 55018, [43837] = 61617,\n    [38763] = 61426, [38764] = 61427, [38765] = 61428,\n    [43836] = 61620, [44013] = 59657, [44015] = 59657,\n    [44014] = 59658, [36993] = 60214, [36972] = 60471,\n    [38359] = 51348, [37064] = 60307, [37220] = 60218,\n    [37660] = 60479, [45131] = 63250, [45219] = 63250,\n    [37390] = 60302, [37264] = 60483, [37657] = 60520,\n    [40430] = 60525, [37844] = 60521, [37734] = 60517,\n    [37166] = 60305, [37638] = 60180, [37873] = 60480,\n    [37872] = 60215, [37723] = 60299, [42341] = 56121,\n    [44063] = 59757, [42418] = 56188, [42413] = 56186,\n    [42395] = 56184, [41121] = 55039,\n    [42987] = { 60229, 60233, 60234, 60235 },\n    [44253] = { 60229, 60233, 60234, 60235 },   \n    [44255] = { 60229, 60233, 60234, 60235 },\n    [44254] = { 60229, 60233, 60234, 60235 },\n    [42990] = 60203, [19288] = 23684, [42989] = 60196,\n    [42988] = 57350, [44912] = 60064, [40682] = 60064,\n    [49706] = 60064, [44914] = 60065, [40684] = 60065,\n    [49074] = 60065, [39229] = 60492, [43573] = 58904,\n    [37835] = 49623, [40685] = 60062, [49078] = 60062,    \n    [47213] = 67669, [47214] = 67671, [47215] = 67666,    \n    [40683] = 60054, [39388] = 60527, [39292] = 60180,    \n    [39257] = 60439, [49080] = 68443, [49116] = 68271,    \n    [49118] = 68270, [42122] = 42292, [42123] = 42292,    \n    [37254] = 48333, [40382] = 60538, [40256] = 60437,    \n    [40258] = 60530, [40373] = 60488, [40255] = 60494,    \n    [40371] = 60443, [40432] = 60486, [40431] = 60314,    \n    [40372] = 60258, [46088] = 64527, [46087] = 64525,    \n    [46086] = 64524, [40257] = 60286, [42129] = 55915,    \n    [42130] = 55915, [42132] = 55915, [42128] = 55915,    \n    [46083] = 42292, [46085] = 42292, [46081] = 42292,    \n    [46084] = 42292, [46082] = 42292, [45866] = 42292,    \n    [45286] = 65014, [45866] = 65004, [45308] = 65006,    \n    [46021] = 65012, [45313] = 65011, [45292] = 65008,    \n    [45507] = 64765, [45929] = 65003, [45490] = 64741,    \n    [45931] = 65019, [46038] = 65024, [45522] = 64790,    \n    [45263] = 64800, [45466] = 64707, [46051] = 64999,    \n    [40531] = 60319, [45148] = 64712, [45158] = 64763,    \n    [40532] = 60526, [42126] = 42292, [42124] = 42292,    \n    [46312] = 64983, [50198] = 71403, [47881] = 67738,    \n    [47725] = 67738, [47879] = 67736, [47726] = 67736,    \n    [47882] = 67728, [47727] = 67728, [47880] = 67726,    \n    [47728] = 67726, [50259] = 71564, [50235] = 71569,    \n    [50260] = 71568, [45535] = 64739, [45518] = 64713,    \n    [45609] = 64772, [46017] = 64411,    \n    [47303] = { 67703, 67708 }, [47115] = { 67703, 67708 },  \n    [47271] = 67696, [47041] = 67696, [48020] = 67747,    \n    [47948] = 67747, [47316] = 67713, [47182] = 67713,    \n    [48018] = 67744, [47946] = 67744, [48021] = 67742,    \n    [47949] = 67742, [48019] = 67740, [47947] = 67740,    \n    [48724] = 67684, [48722] = 67683, [47290] = 67699,    \n    [47080] = 67699, [48724] = 67684, [48722] = 67683,    \n    [47734] = 67695, [47735] = 67694, [42133] = 67596,    \n    [42134] = 67596, [42136] = 67596, [42137] = 67596,    \n    [42135] = 67596, [50342] = 71401, [50341] = 71575,    \n    [50340] = 71570, [50339] = 71565,    \n    [47464] = { 67772, 67773 }, [47131] = { 67772, 67773 },  \n    [47432] = 67750, [47059] = 67750, [47477] = 67759,    \n    [47188] = 67759, [47451] = 67753, [47088] = 67753,    \n    [50353] = 71601, [50358] = 71584, [50343] = 71541,    \n    [50360] = 71605, [50359] = 71610, [50352] = 71633,    \n    [50362] = { 71485, 71492, 71486, 71484, 71491, 71487 },  \n    [50344] = 71577, [50345] = 71572, [50351] = 71432,    \n    [50355] = 71396, [50361] = 71635, [50357] = 71579,    \n    [50356] = 71586, [51378] = 42292, [51377] = 42292,    \n    [50346] = 71574, [50354] = 71607, [50726] = 71607,\n    [54569] = 75458, [54572] = 75466, [54571] = 75477,    \n    [54573] = 75490, [50366] = 71641, [50349] = 71639,    \n    [50348] = 71644, [50365] = 71636, [50706] = 71432,    \n    [50363] = { 71556, 71560, 71558, 71561, 71559, 71557 }, \n    [50364] = 71638, [50397] = 72416, [50398] = 72416, \n    [50401] = 72412, [50402] = 72412, [52571] = 72412,   \n    [52572] = 72412, [50399] = 72418, [50400] = 72418, \n    [50403] = 72414, [50404] = 72414, [54590] = 75456,    \n    [54588] = 75473, [54591] = 75480, [54589] = 75495,\n    \n    -- Idols\n    [50457] = 71177, [47670] = 67360, [50454] = 71184,\n    [47671] = 67358, [50456] = 71175, [47668] = 67355,\n    [45509] = 64951, [38360] = 57909, [42582] = 60566,\n    [42587] = 60547, [42574] = 60544, [42575] = 60565,\n    [42583] = 60567, [42588] = 60549, [42584] = 60568,\n    [42589] = 60551, [42585] = 60569, [42591] = 60553,\n    [51429] = 60555, [51437] = 60570,\n    \n    -- Totems\n    [50463] = 71216, [47667] = 67391, [50458] = 71199,\n    [50464] = 71220, [47665] = 67388, [40322] = 60766,\n    [47666] = 67385, [40708] = 60771, [42601] = 60566,\n    [42606] = 60547, [42593] = 60544, [42594] = 60565,\n    [42602] = 60567, [42607] = 60549, [42603] = 60568, \n    [42608] = 60551, [42604] = 60569, [42609] = 60553,  \n    [51507] = 60555, [51513] = 60570,\n    \n    -- Sigils\n    [50462] = 71229, [50459] = 71227, [47672] = 67380, \n    [47673] = 67383, [45144] = 64963, [40714] = 62146, \n    [40715] = 60828, [42619] = 60547, [42620] = 60549, \n    [42621] = 60551, [42622] = 60553, [51417] = 60555,\n    \n    -- Librams\n    [40706] = 60819, [40707] = 60795, [42851] = 60547,\n    [42611] = 60544, [42852] = 60549, [45145] = 65182,\n    [42853] = 60551, [47661] = 67371, [47662] = 67364,\n    [47664] = 67378, [42854] = 60553, [50455] = 71187,\n    [50460] = 71192, [50461] = 71197, [51478] = 60555,\n    \n}\n\n-- [enchantId] = procId\nlocal ENCHANT_DATA = {\n    [3859] = 55001,    \n    [3722] = 55637,    \n    [3728] = 55767,    \n    [3730] = 55775,    \n    [3790] = 59626,    \n    [3603] = 54757,    \n    [3604] = 54758,    \n    [3606] = 54861,\n    [3789] = 59620,\n    [3869] = 64440,   \n    [3870] = 64568, \n    [2673] = 28093,\n    [3368] = 53365,\n    [3369] = 53386,\n}\n\n-- [gemId] = procId\nlocal GEMS_DATA = {\n    [41401] = 55382, -- Insightful Earthsiege Diamond\n    [41385] = 55341, -- Invigorating Earthsiege Diamond\n    [41400] = 55379, -- Thundering Skyflare Diamond \n}\n\n-- [procId] = cooldown\nlocal COOLDOWNS_DATA = {\n    [72416] = 60,    \n    [72412] = 60,    \n    [72418] = 60,    \n    [72414] = 60,    \n    [51348] = 10,    \n    [51353] = 10,    \n    [54808] = 60,    \n    [55018] = 60,    \n    [71485] = 105,\n    [71492] = 105,\n    [71486] = 105,\n    [71484] = 105,\n    [71491] = 105,\n    [71487] = 105,\n    [71556] = 105,\n    [71560] = 105,\n    [71558] = 105,\n    [71561] = 105,\n    [71559] = 105,\n    [71557] = 105,\n    [71605] = 90,    \n    [71636] = 90,    \n    [55637] = 60,    \n    [55775] = 60,    \n    [55767] = 60,    \n    [59626] = 35, \n    [64568] = 10,\n    [55382] = 15,  \n    [40373] = 15,\n}\n\n-- [itemId] = extraProcId\nlocal EXTRA_PROCS_DATA = {\n    [50348] = 71643,    \n    [50353] = 71600,    \n    [47879] = 67735,    \n    [47726] = 67735,    \n    [48018] = 67743,    \n    [47946] = 67743,    \n    [47880] = 67723,    \n    [47728] = 67723,    \n    [48019] = 67739,    \n    [47947] = 67739,    \n    [47881] = 67737,    \n    [47725] = 67737,    \n    [48020] = 67746,    \n    [47948] = 67746,  \n    [46051] = 65000,\n}\n\n-- [procId] = true (f.e. Balance Idols)\nlocal NO_COOLDOWN_ITEMS_DATA = {\n    [60486] = true, [60525] = true, [60314] = true,    \n    [60196] = true, [71575] = true, [71577] = true,    \n    [71570] = true, [71572] = true, [71432] = true,    \n    [71396] = true, [65006] = true, [71600] = true,    \n    [71643] = true, [67696] = true, [67750] = true,    \n    [67713] = true, [67759] = true, [71177] = true, \n    [67360] = true, [59620] = true, [64440] = true,\n    [71184] = true, [67358] = true, [71175] = true, \n    [67355] = true, [64951] = true, [57909] = true, \n    [60566] = true, [60547] = true, [60544] = true,\n    [60565] = true, [60567] = true, [60549] = true,\n    [60568] = true, [60551] = true, [60569] = true,\n    [60553] = true, [60555] = true, [60570] = true,\n    [71216] = true, [67391] = true, [71199] = true, \n    [71220] = true, [67388] = true, [60766] = true,\n    [60771] = true, [60566] = true, [60565] = true, \n    [60567] = true, [60568] = true, [60569] = true,\n    [60570] = true, [71229] = true, [71227] = true, \n    [67380] = true, [67383] = true, [64963] = true,\n    [60828] = true, [62146] = true, [67385] = true,  \n    [60819] = true, [60795] = true, [65182] = true,\n    [67371] = true, [67364] = true, [67378] = true,  \n    [71187] = true, [71192] = true, [71197] = true,\n    [28093] = true, [53365] = true, [60512] = true, \n    [60513] = true, [60514] = true, [60515] = true,\n}\n\nlocal INVALID_EVENTS = {\n    SPELL_DISPEL            = true,\n    SPELL_DISPEL_FAILED     = true,\n    SPELL_STOLEN            = true,\n    SPELL_AURA_REMOVED_DOSE = true,\n    SPELL_AURA_BROKEN       = true,\n    SPELL_AURA_BROKEN_SPELL = true,\n    SPELL_CAST_FAILED       = true,\n    SPELL_PERIODIC_HEAL     = true,\n    SPELL_CAST_SUCCESS      = true,\n}\n\nlocal hexNoGUID = \"0x0000000000000000\"\n\nlocal tinsert = table.insert\nlocal stformat = string.format\nlocal substr = string.sub\nlocal myGUID = UnitGUID(\"player\")\n\nlocal ItemWidget = aura_env\nlocal cfg = ItemWidget.config\n\nlocal items = {\n    -- [itemId] = {\n    --     equipmentSlot = number,\n    --     procs = table,\n    --     isProc = boolean,\n    --     itemTexture = string, (constant)\n    --     procTexture = string,\n    --     stacks = number,\n    --     cooldown = number, (constant)\n    --     duration = number, (as cooldown duration)\n    --     expirationTime = number, (as cooldown expTime)\n    --     procDuration = number, (as proc duration)\n    --     procExpirationTime = number, (as proc expTime)\n    -- }\n}\n\nlocal equipmentSlots = {\n    -- [equipmentSlot] = itemId,\n}\n\nlocal procs = {\n    -- [procId] = itemId,\n}\n\nlocal extraProcs = {\n    -- [extraProcId] = itemId,\n}\n\nlocal settings = {\n    equipmentSlots = {},\n    order = {},\n    advanced = {},\n    registerAnyOnUse = cfg.display.registerAnyOnUse,\n    showAlways = cfg.display.showAlways,\n    showProc = cfg.display.showProc,\n    itemTextureAlways = cfg.display.itemTextureAlways,\n}\n\nItemWidget.settings = settings\n\nlocal InitConfig = function()\n    \n    for slot, enable in ipairs(cfg.display.equipmentSlots) do\n        if enable then\n            settings.equipmentSlots[slot] = true\n        end\n    end\n    \n    local validEnchants = {\n        [1] = 3859,\n        [2] = 3722,\n        [3] = 3728,\n        [4] = 3730,\n        [5] = 3603, \n        [6] = 3604,\n        [7] = 3606,\n        [8] = 3790,\n        [9] = 3789,\n        [10] = 3869,\n        [11] = 3870,\n        [12] = 2673,\n        [13] = 3370,\n    }\n    \n    for i, v in ipairs(cfg.display.validEnchants) do\n        if not v then\n            local enchantId = validEnchants[i]\n            ENCHANT_DATA[enchantId] = nil\n        end\n    end\n    \n    local validMetaGems = {\n        [1] = 41385, -- Invigorating Earthsiege Diamond\n        [2] = 41400, -- Thundering Skyflare Diamond\n        [3] = 41401, -- Insightful Earthsiege Diamond\n    }\n    \n    for i, v in ipairs(cfg.display.validMetaGems) do\n        if not v then\n            local metaGemId = validMetaGems[i]\n            GEMS_DATA[metaGemId] = nil\n        end\n    end\n    \n    for equipmentSlot, index in pairs(cfg.display.order) do\n        local equipmentSlot = tonumber(equipmentSlot)\n        settings.order[equipmentSlot] = index\n    end\n    \n    for _, optionsData in ipairs(cfg.advanced) do\n        local itemId = optionsData.itemId\n        \n        if optionsData.disable then\n            ITEM_DATA[itemId] = nil\n        end\n        \n        settings.advanced[itemId] = {\n            disableGlow = optionsData.disableGlow\n        }\n    end\n    \nend \n\n-- return: table - numbers\nlocal GetValuesTable = function(value)\n    local t = {}\n    if type(value) == \"table\" then\n        for _, v in pairs(value) do\n            tinsert(t, v)\n        end\n    elseif type(value) ~= \"table\" then\n        tinsert(t, value)\n    end\n    return t\nend\n\n-- return: number - itemId, number - enchantId\nlocal GetSlotItemInfo = function(equipmentSlot)\n    \n    local itemLink = GetInventoryItemLink(\"player\", equipmentSlot)\n    \n    if itemLink then\n        local itemString = select(3, strfind(itemLink, \"|H(.+)|h\"))\n        local _, itemId, enchantId, metaGem = strsplit(\":\", itemString)\n        return tonumber(itemId), tonumber(enchantId), tonumber(metaGem)\n    end\n    \nend\n\n-- return: string - custom type names (\"NO_CD\", \"ON_USE\", \"INTERNAL\"), number - cooldown time \nlocal GetCooldownInfo = function(equipmentSlot, procId)\n    local _,_, enable = GetInventoryItemCooldown(\"player\", equipmentSlot)\n    \n    if enable == 1 then\n        return \"ON_USE\", nil\n    end\n    \n    if enable == 0 then\n        local cooldown = NO_COOLDOWN_ITEMS_DATA[procId]\n        \n        if cooldown then\n            return \"NO_CD\", 0\n        end\n        \n        return \"INTERNAL\", COOLDOWNS_DATA[procId] or 45\n    end\nend\n\nlocal CanRegister = function(equipmentSlot, procId)\n    if procId then\n        return true\n    end\n    \n    if settings.registerAnyOnUse then\n        local _,_, enable = GetInventoryItemCooldown(\"player\", equipmentSlot)\n        return enable == 1\n    end\nend\n\nlocal SetState = {\n    \n    AutoHide = function()\n        return not settings.showAlways\n    end,\n    \n    Show = function(state)\n        return settings.showAlways or GetTime() < state.expirationTime\n    end,\n    \n    Duration = function(itemId)\n        local isProc = items[itemId].isProc\n        return (isProc and settings.showProc) and items[itemId].procDuration or items[itemId].duration or 0\n    end,\n    \n    ExpirationTime = function(itemId)\n        local isProc = items[itemId].isProc\n        return (isProc and settings.showProc) and items[itemId].procExpirationTime or items[itemId].expirationTime or GetTime()\n    end,\n    \n    Index = function(equipmentSlot)\n        return settings.order[equipmentSlot]\n    end,\n    \n    Icon = function(itemId)\n        local isProc = items[itemId].isProc\n        return (isProc and settings.showProc and not settings.itemTextureAlways) and items[itemId].procTexture or items[itemId].itemTexture\n    end,\n    \n    Stacks = function(itemId)\n        local isProc = items[itemId].isProc\n        return (isProc and settings.showProc) and items[itemId].stacks or 0\n    end,\n    \n    IsProc = function(itemId)\n        local isProc = items[itemId].isProc\n        return isProc and settings.showProc\n    end,\n    \n}\n\nlocal InitAura = function(allstates, equipmentSlot, itemId)\n    local stateName = stformat(\"IW_Slot%d\", equipmentSlot)\n    \n    allstates[stateName] = allstates[stateName] or {\n        progressType = \"timed\",\n        autoHide = SetState.AutoHide(),\n        index = SetState.Index(equipmentSlot),\n        itemType = items[itemId].type,\n        itemId = itemId,\n        equipmentSlot = equipmentSlot,\n    }\n    \n    allstates[stateName].stacks = SetState.Stacks(itemId)\n    allstates[stateName].isProc = SetState.IsProc(itemId)\n    allstates[stateName].icon = SetState.Icon(itemId)\n    allstates[stateName].duration = SetState.Duration(itemId)\n    allstates[stateName].expirationTime = SetState.ExpirationTime(itemId)\n    allstates[stateName].show = SetState.Show(allstates[stateName])\n    allstates[stateName].changed = true\nend\n\nlocal RemoveAura = function(allstates, equipmentSlot)\n    equipmentSlots[equipmentSlot] = nil\n    local stateName = stformat(\"IW_Slot%d\", equipmentSlot)\n    if allstates[stateName] then\n        allstates[stateName].show = false\n        allstates[stateName].changed = true\n    end\n    \n    return true\nend\n\nlocal InitItem = function(equipmentSlot, itemId, procId)\n    \n    if items[itemId] then\n        items[itemId].equipmentSlot = equipmentSlot\n        return\n    end\n    \n    items[itemId] = {\n        procs = {},\n        extraProc = EXTRA_PROCS_DATA[itemId],\n        itemTexture = GetItemIcon(itemId),\n        expirationTime = GetTime(),  \n        equipmentSlot = equipmentSlot \n    }\n    \n    if not procId then\n        items[itemId].type = \"ON_USE\"\n        return true\n    end\n    \n    local p = GetValuesTable(procId)\n    \n    for _, procId in pairs(p) do\n        tinsert(items[itemId].procs, procId)\n        procs[procId] = itemId\n        if not items[itemId].type then\n            local type, cooldown = GetCooldownInfo(equipmentSlot, procId)\n            \n            items[itemId].type = type\n            \n            if type == \"INTERNAL\" then\n                items[itemId].cooldown = cooldown\n            end\n        end\n    end\n    \n    local extraProcId = EXTRA_PROCS_DATA[itemId]\n    \n    if extraProcId then\n        extraProcs[extraProcId] = itemId\n    end\n    \nend \n\nlocal InitEquipmentSlot = function(allstates, equipmentSlot)\n    \n    local itemId, enchantId, metaGem = GetSlotItemInfo(equipmentSlot)\n    \n    if itemId then \n        local procId = ITEM_DATA[itemId] or ENCHANT_DATA[enchantId] or GEMS_DATA[metaGem]\n        if CanRegister(equipmentSlot, procId) then\n            equipmentSlots[equipmentSlot] = itemId\n            InitItem(equipmentSlot, itemId, procId)\n            return true\n        end\n    end\n    \n    if equipmentSlots[equipmentSlot] then\n        equipmentSlots[equipmentSlot] = nil\n    end\n    \nend\n\n-- return: number - cooldown\nlocal LoadLastSession = function(allstates, equipmentSlot, itemId)\n    aura_env.saved = aura_env.saved or {}\n    local db = aura_env.saved[WeakAuras.me]\n    if not db then return end\n    \n    if db[itemId] then\n        local expirationTimeOS = db[itemId].expirationTimeOS\n        local cooldown = expirationTimeOS - time()\n        return cooldown\n    end\nend\n\nlocal OnUse = function(allstates, equipmentSlot, itemId)\n    local startTime, duration = GetInventoryItemCooldown(\"player\", equipmentSlot)\n    if duration > 0 then\n        local expirationTime = startTime + duration\n        if expirationTime > items[itemId].expirationTime then\n            items[itemId].duration = duration\n            items[itemId].expirationTime = expirationTime\n            return true\n        end\n    end\nend\n\nlocal BagUpdateCooldown = function(allstates)\n    local update = false\n    \n    for equipmentSlot in pairs(settings.equipmentSlots) do\n        local itemId = GetInventoryItemID(\"player\", equipmentSlot)\n        if itemId and itemId == equipmentSlots[equipmentSlot]\n        and items[itemId].type == \"ON_USE\"\n        and (not settings.showProc or not items[itemId].isProc)\n        and OnUse(allstates, equipmentSlot, itemId) then\n            \n            items[itemId].stacks = 0\n            InitAura(allstates, equipmentSlot, itemId)\n            update = true\n            \n        end\n    end\n    \n    return update\nend\n\nlocal EquipmentSlotChanged = function(allstates, equipmentSlot, isEmpty)\n    \n    if not isEmpty and InitEquipmentSlot(allstates, equipmentSlot) then\n        \n        local timestamp = GetTime()\n        \n        local itemId = equipmentSlots[equipmentSlot]\n        local type = items[itemId].type\n        \n        items[itemId].icon = items[itemId].itemTexture\n        items[itemId].stacks = 0\n        items[itemId].isProc = false\n        \n        if type == \"ON_USE\" then\n            \n            OnUse(allstates, equipmentSlot, itemId)\n            \n        elseif type == \"INTERNAL\" then\n            local currentCooldown = items[itemId].expirationTime - timestamp\n            local savedCooldown = LoadLastSession(allstates, equipmentSlot, itemId)\n            \n            if currentCooldown > 30 then\n                items[itemId].duration = items[itemId].cooldown\n                items[itemId].expirationTime = timestamp + items[itemId].cooldown\n                \n            elseif not savedCooldown or savedCooldown < items[itemId].cooldown then\n                items[itemId].duration = items[itemId].cooldown\n                items[itemId].expirationTime = timestamp + items[itemId].cooldown\n                \n            elseif savedCooldown > 30 then\n                items[itemId].duration = items[itemId].cooldown\n                items[itemId].expirationTime = savedCooldown + timestamp\n                \n            end\n            \n        elseif type == \"NO_CD\" then\n            \n            if equipmentSlot ~= 18 then\n                items[itemId].duration = 30\n                items[itemId].expirationTime = timestamp + 30\n            end\n            \n        end\n        \n        return InitAura(allstates, equipmentSlot, itemId)\n    end\n    \n    return RemoveAura(allstates, equipmentSlot)\n    \nend\n\nlocal OnExtraProc = function(itemId, extraProcId)\n    local _,_, stacks = WA_GetUnitBuff(\"player\", extraProcId)\n    items[itemId].stacks = stacks\nend\n\nlocal OnProc = function(allstates, equipmentSlot, itemId, spellId)\n    \n    local _, icon, stacks, _, buffDuration, buffExpirationTime = WA_GetUnitBuff(\"player\", spellId)\n    \n    if items[itemId].type == \"INTERNAL\" then\n        local cooldown = items[itemId].cooldown\n        items[itemId].duration = cooldown\n        items[itemId].expirationTime = buffExpirationTime - buffDuration + cooldown\n    end\n    \n    items[itemId].isProc = true\n    items[itemId].procTexture = icon\n    items[itemId].procDuration = buffDuration\n    items[itemId].procExpirationTime = buffExpirationTime\n    items[itemId].stacks = stacks\n    \nend\n\nlocal OnCLEUF = function(allstates, ...)\n    local _, subEvent, _, sourceGUID, _,_,_, destGUID, _,_,_, spellId = ...\n    \n    if not subEvent then return end\n    if INVALID_EVENTS[subEvent] then return end\n    if substr(subEvent, 0, 6) ~= \"SPELL_\" then return end\n    \n    if ((destGUID == myGUID and ((not sourceGUID or sourceGUID == hexNoGUID) or sourceGUID == destGUID)) or sourceGUID == myGUID) then\n        \n        if procs[spellId] then\n            \n            local itemId = procs[spellId]\n            local equipmentSlot = items[itemId].equipmentSlot\n            local type = items[itemId].type\n            \n            if GetInventoryItemID(\"player\", equipmentSlot) ~= itemId then return end\n            \n            if subEvent == \"SPELL_AURA_APPLIED\" \n            or subEvent == \"SPELL_AURA_REFRESH\" \n            or subEvent == \"SPELL_AURA_APPLIED_DOSE\" then\n                \n                OnProc(allstates, equipmentSlot, itemId, spellId)\n                InitAura(allstates, equipmentSlot, itemId)\n                \n            elseif subEvent == \"SPELL_AURA_REMOVED\" then\n                items[itemId].isProc = false\n                items[itemId].stacks = 0\n                \n                if type == \"ON_USE\" then\n                    OnUse(allstates, equipmentSlot, itemId)\n                    \n                elseif type == \"NO_CD\" then\n                    items[itemId].duration = 0\n                    items[itemId].expirationTime = GetTime()\n                end\n                \n            elseif type == \"INTERNAL\" then\n                items[itemId].isProc = false\n                items[itemId].duration = items[itemId].cooldown\n                items[itemId].expirationTime = items[itemId].duration + GetTime()\n            end\n            \n            InitAura(allstates, equipmentSlot, itemId)\n            return true\n        end\n        \n        if extraProcs[spellId] then\n            \n            if subEvent == \"SPELL_AURA_APPLIED\" \n            or subEvent == \"SPELL_AURA_REFRESH\" \n            or subEvent == \"SPELL_AURA_APPLIED_DOSE\" \n            or subEvent == \"SPELL_AURA_REMOVED\" then\n                \n                local itemId = extraProcs[spellId]\n                local equipmentSlot = items[itemId].equipmentSlot\n                \n                OnExtraProc(itemId, spellId)\n                InitAura(allstates, equipmentSlot, itemId)\n                return true\n                \n            end\n        end\n    end\nend\n\nlocal OnInit = function(allstates)\n    InitConfig()\n    \n    local updated = false\n    for equipmentSlot in pairs(settings.equipmentSlots) do\n        if InitEquipmentSlot(allstates, equipmentSlot) then\n            updated = true\n        end\n    end\n    \n    if not updated then return end\n    \n    -- display active item procs or load last session\n    for equipmentSlot, itemId in pairs(equipmentSlots) do\n        \n        local isBuffed = false\n        for _, procId in ipairs(items[itemId].procs) do\n            if WA_GetUnitBuff(\"player\", procId) then\n                isBuffed = true\n                OnProc(allstates, equipmentSlot, itemId, procId)\n                if items[itemId].extraProc then\n                    OnExtraProc(itemId, items[itemId].extraProc)\n                end\n                break\n            end\n        end\n        \n        if not isBuffed then\n            \n            items[itemId].isProc = false\n            items[itemId].stacks = 0\n            \n            local type = items[itemId].type\n            if type == \"INTERNAL\" or type == \"NO_CD\" then\n                local savedCooldown = LoadLastSession(allstates, equipmentSlot, itemId)\n                \n                if savedCooldown and savedCooldown > 0 then\n                    items[itemId].duration = items[itemId].cooldown or type == \"NO_CD\" and 30\n                    items[itemId].expirationTime = savedCooldown + GetTime()\n                end\n            end\n            \n            if type == \"ON_USE\" then\n                OnUse(allstates, equipmentSlot, itemId)  \n            end\n            \n        end\n        \n        InitAura(allstates, equipmentSlot, itemId)\n    end\n    \n    return true\nend\n\nlocal SaveLastSession = function()\n    aura_env.saved = aura_env.saved or {}\n    aura_env.saved[WeakAuras.me] = {}\n    local db = aura_env.saved[WeakAuras.me]\n    for itemId, itemData in pairs(items) do\n        local expirationTime = itemData.expirationTime\n        db[itemId] = db[itemId] or {}\n        db[itemId].expirationTimeOS = expirationTime - GetTime() + time()\n    end\nend\n\nItemWidget.OnTrigger = function(allstates, event, ...)\n    \n    if event == \"OPTIONS\" then\n        \n        if WeakAuras.IsOptionsOpen() and ItemWidget.initialized then\n            ItemWidget.initialized = false\n            SaveLastSession()\n        end\n        \n        return OnInit(allstates)\n        \n    elseif event == \"OPTIONS_CLOSE\" then\n        \n        ItemWidget.initialized = true\n        return OnInit(allstates)\n        \n    elseif ItemWidget.initialized then\n        \n        if event == \"PLAYER_EQUIPMENT_CHANGED\" then\n            local equipmentSlot, isEmpty = ...\n            if settings.equipmentSlots[equipmentSlot] then\n                EquipmentSlotChanged(allstates, equipmentSlot, isEmpty)\n                return true\n            end\n            \n        elseif event == \"BAG_UPDATE_COOLDOWN\" then\n            return BagUpdateCooldown(allstates)\n            \n        elseif event == \"COMBAT_LOG_EVENT_UNFILTERED\" then\n            return OnCLEUF(allstates, CombatLogGetCurrentEventInfo())\n            \n        elseif event == \"PLAYER_LOGOUT\" then\n            SaveLastSession()\n        end\n    end\nend",
+					["do_custom"] = true,
+				},
+			},
 		},
 		["Cleave"] = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["authorOptions"] = {
-			},
+			["parent"] = "Skills",
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -38347,14 +38357,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -38419,7 +38422,7 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["parent"] = "Skills",
+			["xOffset"] = 0,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -38428,11 +38431,13 @@ WeakAurasSaved = {
 			},
 			["desaturate"] = false,
 			["zoom"] = 0.3,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -38534,9 +38539,10 @@ WeakAurasSaved = {
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["auto"] = false,
 			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["uid"] = "HxUbmoeo4w1",
 			["icon_side"] = "RIGHT",
 			["color"] = {
@@ -38551,7 +38557,7 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["spark"] = false,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["id"] = "Cleave",
 			["sparkHidden"] = "NEVER",
 			["useCooldownModRate"] = true,
@@ -38573,13 +38579,18 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 		},
 		["Reckoning"] = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["parent"] = "Vermin Paladin",
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -38588,7 +38599,14 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -38652,7 +38670,8 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -38661,13 +38680,11 @@ WeakAurasSaved = {
 			},
 			["desaturate"] = false,
 			["frameStrata"] = 1,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -38810,14 +38827,9 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
 			["spark"] = false,
 			["sparkColor"] = {
@@ -38832,19 +38844,18 @@ WeakAurasSaved = {
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["alpha"] = 1,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["auto"] = false,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["id"] = "Reckoning",
-			["uid"] = "sjBDpdGEOJU",
-			["useCooldownModRate"] = true,
-			["width"] = 40,
-			["authorOptions"] = {
-			},
 			["config"] = {
 			},
+			["useCooldownModRate"] = true,
+			["width"] = 40,
+			["parent"] = "Vermin Paladin",
+			["uid"] = "sjBDpdGEOJU",
 			["inverse"] = false,
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
@@ -38859,7 +38870,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["parent"] = "Vermin Hunter",
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -38868,12 +38879,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -38937,7 +38943,8 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -38946,7 +38953,14 @@ WeakAurasSaved = {
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -39084,19 +39098,16 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = "",
 			["desaturate"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["authorOptions"] = {
-			},
+			["parent"] = "Vermin Hunter",
 			["config"] = {
 			},
 			["icon_side"] = "RIGHT",
@@ -39114,7 +39125,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["sparkHidden"] = "NEVER",
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["id"] = "Judgement of Wisdom",
@@ -39162,8 +39173,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "custom",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        return true\n    else \n        return false\n    end\nend",
@@ -39178,7 +39189,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "event",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -39378,17 +39389,30 @@ WeakAurasSaved = {
 				["use_class"] = true,
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "GFBT 2HUH",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 132152,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "dcqRk3KsNs1",
+			["xOffset"] = 10.099716186523,
+			["width"] = 21.899688720703,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "GFBT2",
 			["actions"] = {
 				["start"] = {
 				},
@@ -39399,29 +39423,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "dcqRk3KsNs1",
-			["selfPoint"] = "CENTER",
-			["width"] = 21.899688720703,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "GFBT2",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "GFBT 2HUH",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 10.099716186523,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -39431,7 +39442,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["xOffset"] = 0,
+			["parent"] = "Vermin Death Knight",
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -39492,12 +39503,7 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -39637,7 +39643,12 @@ WeakAurasSaved = {
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["parent"] = "Vermin Death Knight",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["config"] = {
 			},
 			["icon_side"] = "RIGHT",
@@ -39750,10 +39761,10 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["anchorPoint"] = "CENTER",
-			["config"] = {
-			},
 			["borderInset"] = 1,
 			["uid"] = "hxVt8zOs3Is",
+			["config"] = {
+			},
 			["conditions"] = {
 			},
 			["load"] = {
@@ -39804,12 +39815,12 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["unit"] = "player",
 						["subeventPrefix"] = "SPELL",
-						["spellName"] = 85256,
+						["debuffType"] = "HELPFUL",
 						["showOn"] = "showOnCooldown",
 						["use_targetRequired"] = false,
 						["spellIds"] = {
 						},
-						["custom_hide"] = "custom",
+						["spellName"] = 85256,
 						["charges_operator"] = "==",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -39821,7 +39832,7 @@ WeakAurasSaved = {
 						["realSpellName"] = 85256,
 						["use_spellName"] = true,
 						["custom"] = "function()\n    local lastAction = aura_env.nextAction\n    local timeNow = GetTime()\n    aura_env.varFlag2 = false\n    \n    \n    local reactionTimeNew = aura_env.config.reaction/1000 \n    if  aura_env.gcdReactionNormalized>aura_env.config.reaction/1000  then \n        reactionTimeNew = aura_env.gcdReactionNormalized\n    end\n    \n    \n    if aura_env.fixedGCD<0 then aura_env.fixedGCD = 1.5 end\n    \n    aura_env.gcdFreeWhen = aura_env.gcdWhen - timeNow\n    if  aura_env.gcdFreeWhen<0 then  aura_env.gcdFreeWhen=0 end\n    \n    for i=1, 6 do\n        aura_env.runes[i].cd= aura_env.runes[i].when - timeNow - aura_env.gcdFreeWhen\n        if aura_env.runes[i].cd< -(2.45) then\n            aura_env.runes[i].cd = -2.45\n        end \n    end\n    local KM, rime, HoWTimer, totem, UA1, BT1, speed = aura_env.trackB_frost()\n    local ff, uh = aura_env.trackD_frost()\n    \n    \n    local expire = 20\n    if ff<uh then expire = ff else expire = uh end\n    expire = expire - aura_env.gcdFreeWhen\n    if expire<-0.1 then expire = -0.1 end\n    ff = ff - aura_env.gcdFreeWhen\n    uh = uh- aura_env.gcdFreeWhen\n    if ff<-0.1 then ff=-0.1 end\n    if uh<-0.1 then uh=-0.1 end\n    \n    \n    -- print(\"ff: \"..tostring(ff)..\" / uh: \"..tostring(uh))\n    -- print(\"gcdFreeWhen:\" .. tostring(aura_env.gcdFreeWhen))\n    \n    \n    KM = KM-aura_env.gcdFreeWhen-reactionTimeNew\n    HoWTimer = HoWTimer - aura_env.gcdFreeWhen-reactionTimeNew\n    UA1 = UA1- aura_env.gcdFreeWhen-reactionTimeNew\n    speed = speed - aura_env.gcdFreeWhen-reactionTimeNew\n    if speed<0 then speed=0 end\n    if BT1 then\n        BT1 = BT1- aura_env.gcdFreeWhen-reactionTimeNew\n    end\n    if rime then\n        rime = rime - aura_env.gcdFreeWhen-reactionTimeNew\n    end\n    \n    if  KM <0 then   KM  =0 end\n    if rime  <0 then rime    =0 end\n    if HoWTimer  <0 then  HoWTimer   =0 end\n    if  UA1 <0 then  UA1   =0 end\n    if  BT1 <0 then  BT1   =0 end\n    \n    \n    aura_env.rime = rime\n    aura_env.KM = KM\n    aura_env.HoWTimer = KM\n    \n    \n    local cut = 100/1000 + reactionTimeNew\n    \n    local a = (aura_env.runes[3].cd+cut > aura_env.runes[5].cd and aura_env.runes[3].cd-cut < aura_env.runes[5].cd)  or  (aura_env.runes[3].cd+cut > aura_env.runes[6].cd and aura_env.runes[3].cd-cut < aura_env.runes[6].cd) \n    local b = (aura_env.runes[4].cd+cut > aura_env.runes[5].cd and aura_env.runes[4].cd-cut < aura_env.runes[5].cd)  or  (aura_env.runes[4].cd+cut > aura_env.runes[6].cd and aura_env.runes[4].cd-cut < aura_env.runes[6].cd) \n    \n    if aura_env.lastCastID == 47568  then  aura_env.desyncCounter=2 end\n    \n    if (a and b) or aura_env.desyncCounter>=2 or aura_env.subUH then\n        aura_env.desync  = false\n    else\n        aura_env.desync = true    \n    end \n    \n    if aura_env.desyncFlag==false then aura_env.desync = false end\n    if aura_env.subUH then aura_env.desync = true end\n    local desync = aura_env.desync\n    \n    \n    local bn, fn, un, bl, fl, ul, dn, dl= 0\n    local d1, d2 = 20\n    if (aura_env.runes[1].cd)>(aura_env.runes[2].cd) then bn=2 bl=1 else bn=1 bl=2 end\n    if (aura_env.runes[3].cd)>(aura_env.runes[4].cd) then un=4 ul=3 else un=3 ul=4 end\n    if (aura_env.runes[5].cd)>(aura_env.runes[6].cd) then fn=6 fl=5 else fn=5 fl=6 end\n    \n    if GetRuneType(1)==4  then d1=aura_env.runes[1].cd end\n    if GetRuneType(2)==4 then d2=aura_env.runes[2].cd end\n    \n    \n    \n    \n    local flCap = aura_env.runes[fl].cd\n    if flCap<0 then flCap=0 end\n    local fnCap = aura_env.runes[fn].cd\n    if fnCap<0 then fnCap=0 end\n    \n    local ulCap = aura_env.runes[ul].cd\n    if ulCap<0 then ulCap=0 end\n    local unCap = aura_env.runes[un].cd\n    if unCap<0 then unCap=0 end\n    \n    local blCap = aura_env.runes[bl].cd\n    if blCap<0 then blCap=0 end\n    local bnCap = aura_env.runes[bn].cd\n    if bnCap<0 then bnCap=0 end\n    \n    \n    local obWhen, obTimer, rune1Tag, rune2Tag  =  aura_env.obFunction_frost()\n    \n    \n    \n    local durationUA = aura_env.UAcast + 60 - timeNow - aura_env.gcdFreeWhen + reactionTimeNew\n    local durationBT = aura_env.BTcast + 60 - timeNow - aura_env.gcdFreeWhen + reactionTimeNew\n    local startERW, durationERW = GetSpellCooldown(47568)--erw\n    \n    local durationH = aura_env.HoWcast + 20 - timeNow - aura_env.gcdFreeWhen + reactionTimeNew\n    aura_env.durationH = durationH\n    \n    \n    aura_env.OBwhen = obWhen\n    \n    \n    \n    \n    if not UnitAffectingCombat(\"player\") then\n        \n        aura_env.gcdReactionCount = 1\n        aura_env.gcdReactionTotal = 0\n        aura_env.gcdReactionNormalized = 0\n        \n        aura_env.desyncCounter = 0\n        aura_env.oblitCounter = 0\n        aura_env.combatStart = timeNow\n        \n        lastAction = \"\"\n        aura_env.totemDetected = false\n        if not UnitCanAttack(\"player\",\"target\") and aura_env.config.oocHide then\n            aura_env.nextAction = \"clear\"\n        elseif HoWTimer<30 and not totem and durationH<=0 then\n            aura_env.nextAction = \"HOW\" \n        else\n            aura_env.nextAction = \"IT\" \n        end\n        WeakAuras.ScanEvents(\"fonsas_UA\", false) \n        WeakAuras.ScanEvents(\"fonsas_ERW_frost\", false)\n        WeakAuras.ScanEvents(\"fonsas_Pesti_ERW_frost\", false)\n        WeakAuras.ScanEvents(\"fonsas_pes_drop\", false) \n        -- ADD HOW\n    else  \n        \n        if totem then \n            aura_env.totemDetected = true\n        end\n        \n        \n        local pestiBT = false\n        local oblitBT = false\n        local a = (aura_env.runeUse==1 or aura_env.runeUse==2)\n        if aura_env.runeUse~=1 and aura_env.runeUse~=2 and aura_env.lastCastID ==51271 then\n            oblitBT = true\n        elseif aura_env.lastCastID ==51271 and a then\n            pestiBT = true\n        end\n        \n        if (ff>0.05 and uh>0.05 and oblitBT and durationBT<=1.5) and false then\n            \n            aura_env.nextAction=\"BT_full\"\n            WeakAuras.ScanEvents(\"fonsas_pes_drop\", false) \n        elseif (ff>0.06 and uh>0.06 and oblitBT==false) or  (aura_env.TTD-aura_env.fixedGCD+aura_env.gcdFreeWhen<aura_env.config.disDropTime) then\n            \n            \n            local canOb = false\n            local a = aura_env.runes[bl].cd\n            \n            local tolerance = obTimer \n            local temp = 0\n            --print(\"obWhen:\" .. tostring(obWhen) .. \" is it static?\")\n            if obWhen>0 then temp=obWhen else temp=0 end\n            aura_env.oblitWhen = temp\n            \n            if UA1>obTimer+0.1 and rime<=0.05 and KM<=0.05 then tolerance = obTimer end\n            if UA1>obWhen+0.2 and UA1<=obTimer and rune1Tag+rune2Tag ~= 3 then tolerance = 0  end\n            \n            --print(\"UA1 \"..tostring(UA1))\n            \n            if timeNow - aura_env.ERWcounter-aura_env.gcdFreeWhen>7 and timeNow - aura_env.ERWcounter-aura_env.gcdFreeWhen<14  then tolerance=0 end\n            \n            local runeGraceERW = aura_env.ERWcounter - timeNow - aura_env.gcdFreeWhen\n            \n            \n            local runeGraceERWflag=true\n            if runeGraceERW<-4.5 then runeGraceERWflag=false else WeakAuras.ScanEvents(\"fonsas_RD2\", false) end\n            if runeGraceERW<-2.5 then runeGraceERW = -2.5 else tolerance = 0 end\n            local pesDrop = false\n            \n            \n            if (temp  <= expire + aura_env.fixedGCD + (reactionTimeNew)) and not ((aura_env.TTD-aura_env.fixedGCD+aura_env.gcdFreeWhen<aura_env.config.disDropTime)) then\n                if rune1Tag==1 or rune1Tag==2 or rune2Tag==1 or rune2Tag==2 then\n                    if rune1Tag+rune2Tag == 3 then \n                        if (expire-temp>10+runeGraceERW) or (expire>10+aura_env.runes[bn].cd + 0.2 and expire> obWhen+tolerance + 10 + aura_env.runes[bl].cd ) then\n                            canOb = true\n                            \n                            if (rime>0.5 or KM>0.5 or UnitPower(\"player\")>105) and expire>7.5+(reactionTimeNew)*4 and not aura_env.subUH then tolerance = expire-7.5-(reactionTimeNew)*4 end\n                            \n                        end\n                        \n                    elseif expire-temp > blCap and expire-temp > reactionTimeNew*5 + aura_env.fixedGCD then \n                        canOb = true\n                    end\n                elseif expire-temp > reactionTimeNew*5+ aura_env.fixedGCD then\n                    canOb = true\n                end \n            elseif  (aura_env.TTD-aura_env.fixedGCD+aura_env.gcdFreeWhen<aura_env.config.disDropTime) then\n                canOb = true\n                pesDrop = true\n            end\n            \n            if pesDrop and aura_env.runes[bn].cd<0 and expire<4 and expire>0  then \n                WeakAuras.ScanEvents(\"fonsas_pes_drop\", true) \n            else \n                WeakAuras.ScanEvents(\"fonsas_pes_drop\", false) \n            end\n            \n            if canOb then \n                \n                local highest = 0\n                if obWhen > tolerance then highest = obWhen else highest =  tolerance end\n                if highest <= aura_env.fixedGCD + (reactionTimeNew)*2 then --aura_env.fixedGCD\n                    if rime>0.1 and not desync and expire>3.5 and rune1Tag~=1 and rune2Tag~=1 and rune1Tag~=2 and rune2Tag~=2 then\n                        aura_env.nextAction=\"HB\"\n                    else\n                        aura_env.nextAction=\"OB\"\n                    end\n                    \n                else\n                    \n                    \n                    \n                    local a =  (rime>0.1) and (aura_env.OBwhen + tolerance <= aura_env.fixedGCD+aura_env.gcdFreeWhen + (reactionTimeNew)*2)\n                    \n                    local start, duration = GetSpellCooldown(57330)\n                    local startG, durationG = GetSpellCooldown(46584)\n                    \n                    if HoWTimer<10 and not aura_env.totemDetected and durationH <=0 then\n                        aura_env.nextAction=\"HOW\"\n                        --elseif UnitPower(\"player\")>=aura_env.FSRP and KM>0 and not a then\n                        --    aura_env.nextAction=\"FS\"\n                    elseif rime>0.1 and KM>0.1 and (UnitPower(\"player\")<121)  then \n                        aura_env.nextAction=\"HB\"\n                    elseif rime>0.1 and KM>0.1 and UnitPower(\"player\")>=aura_env.FSRP then \n                        aura_env.nextAction=\"FS\"\n                        \n                    elseif ((desync and (UA1<20-aura_env.fixedGCD-1.8) and durationERW<=2.5) or (desync and durationERW>2.5) or (timeNow+aura_env.gcdFreeWhen-aura_env.combatStart>4 and UA1<20-aura_env.fixedGCD-0.5)and durationERW<=2.5) and aura_env.runes[bn].cd - aura_env.fixedGCD  <= (reactionTimeNew)-2.5 and bn ~=rune1Tag and bn~=rune2Tag then\n                        \n                        local alpha=0\n                        if aura_env.runes[bl].cd+reactionTimeNew > aura_env.fixedGCD + aura_env.gcdFreeWhen then\n                            alpha=aura_env.runes[bl].cd+reactionTimeNew\n                        else\n                            alpha=aura_env.fixedGCD + aura_env.gcdFreeWhen\n                        end\n                        \n                        \n                        local  obWhenNN, obTimerNN, rune1TagNN, rune2TagNN = aura_env.obFunctionNextNext_frost(rune1Tag, rune2Tag)\n                        if ((rune1Tag~=bl and rune2Tag~=bl and  rune1TagNN~=bl and rune2TagNN~=bl and expire>alpha) or  (aura_env.TTD-aura_env.fixedGCD+aura_env.gcdFreeWhen<aura_env.config.disDropTime)) or  expire>10  then\n                            aura_env.nextAction=\"BS\"\n                        else\n                            aura_env.nextAction=\"PES\" \n                        end          \n                    elseif rime>0.1 and UnitPower(\"player\")<110 then \n                        aura_env.nextAction=\"HB\"\n                    elseif UnitPower(\"player\")>=aura_env.FSRP*2 then \n                        aura_env.nextAction=\"FS\"\n                        -- elseif durationG- aura_env.fixedGCD <=0.1 and UA1<16.5 and UA1>0 and aura_env.RDencounter then\n                        --     aura_env.nextAction=\"RD\"\n                    elseif ((desync and (UA1<20-aura_env.fixedGCD-1) and durationERW<=2.5) or (desync and durationERW>2.5) or (timeNow+aura_env.gcdFreeWhen-aura_env.combatStart>4 and UA1<20-aura_env.fixedGCD-0.5)and durationERW<=2.5)  and aura_env.runes[bn].cd <= (reactionTimeNew) and bn ~=rune1Tag and bn~=rune2Tag and expire<11 then\n                        --should bs?  222\n                        local alpha=0\n                        if aura_env.runes[bl].cd+reactionTimeNew > aura_env.fixedGCD + aura_env.gcdFreeWhen then\n                            alpha=aura_env.runes[bl].cd+reactionTimeNew\n                        else\n                            alpha=aura_env.fixedGCD + aura_env.gcdFreeWhen\n                        end\n                        \n                        local  obWhenNN, obTimerNN, rune1TagNN, rune2TagNN = aura_env.obFunctionNextNext_frost(rune1Tag, rune2Tag)\n                        if (rune1Tag~=bl and rune2Tag~=bl and  rune1TagNN~=bl and rune2TagNN~=bl and expire>alpha)  or  (aura_env.TTD-aura_env.fixedGCD+aura_env.gcdFreeWhen<aura_env.config.disDropTime) then\n                            aura_env.nextAction=\"BS\"\n                        else\n                            aura_env.nextAction=\"PES\" \n                        end  \n                        \n                    elseif UnitPower(\"player\")>=aura_env.FSRP then \n                        aura_env.nextAction=\"FS\"\n                    elseif aura_env.runes[bn].cd <= (reactionTimeNew) and bn ~=rune1Tag and bn~=rune2Tag and not desync then\n                        \n                        local alpha=0\n                        if aura_env.runes[bl].cd+reactionTimeNew > aura_env.fixedGCD + aura_env.gcdFreeWhen then\n                            alpha=aura_env.runes[bl].cd+reactionTimeNew\n                        else\n                            alpha=aura_env.fixedGCD + aura_env.gcdFreeWhen\n                        end\n                        if (expire>alpha) or  (aura_env.TTD-aura_env.fixedGCD+aura_env.gcdFreeWhen<aura_env.config.disDropTime) and aura_env.desyncFlag then\n                            aura_env.nextAction=\"BS\"\n                        else\n                            aura_env.nextAction=\"PES\" \n                        end\n                    elseif durationH <=0 then\n                        aura_env.nextAction=\"HOW\"\n                    else\n                        aura_env.nextAction=\"OB\"\n                    end\n                end\n                WeakAuras.ScanEvents(\"fonsas_CANCEL_BT\", false)\n            else\n                \n                local varFlagLast = aura_env.varFlag2\n                if bn==1 and BT1 <14 and aura_env.blood1Type_cancelBT then \n                    aura_env.varFlag2 = true\n                    WeakAuras.ScanEvents(\"fonsas_CANCEL_BT\", true) \n                else\n                    aura_env.varFlag2 = false\n                    WeakAuras.ScanEvents(\"fonsas_CANCEL_BT\", false)\n                end\n                if varFlagLast ~= aura_env.varFlag2 then\n                    WeakAuras.ScanEvents(\"fonsas_CANCEL_BT\", aura_env.varFlag2) \n                end\n                \n                \n                local obWhenTemp, obTimerTemp, rune1TagTemp, rune2TagTemp  =  aura_env.obFunction_frost(bn)\n                \n                local a = obWhenTemp-aura_env.fixedGCD/2\n                local b = rime<0.1 and a<aura_env.fixedGCD+aura_env.gcdFreeWhen+0.1\n                local startG, durationG = GetSpellCooldown(46584)\n                \n                local multi = 1\n                if  aura_env.subUH then multi =2 end\n                \n                local d =  expire - (reactionTimeNew)*10*multi <= aura_env.fixedGCD \n                \n                \n                local e = obWhenTemp+obTimerTemp <= aura_env.fixedGCD + (reactionTimeNew)*10\n                \n                local f =  desync and aura_env.runes[bn].cd - aura_env.fixedGCD  <= (reactionTimeNew)-2.45\n                --aura_env.nextAction=\"PES\"\n                \n                \n                local lost = false\n                local lostRune = aura_env.runes[bn].cd\n                if lostRune<0 then lostRune=0 end\n                if expire<lostRune then lost = true end\n                \n                --  print(lost)\n                \n                if (d or e or f) and not lost then\n                    \n                    local var = aura_env.runes[bl].cd\n                    if var <0 then var = 0 end\n                    if not desync and aura_env.desyncFlag and expire>var+aura_env.fixedGCD*2+(reactionTimeNew)*5 and aura_env.runes[bn].cd <= (reactionTimeNew) then\n                        aura_env.nextAction=\"BS\" \n                    else\n                        aura_env.nextAction=\"PES\" \n                    end\n                elseif not lost then\n                    if HoWTimer<10 and not aura_env.totemDetected and durationH <=0 then\n                        aura_env.nextAction=\"HOW\"\n                        -- elseif UnitPower(\"player\")>=aura_env.FSRP and KM>0 and not b then\n                        --    aura_env.nextAction=\"FS\"\n                    elseif rime>0.1 and KM>0.1 and UnitPower(\"player\")<121 then \n                        aura_env.nextAction=\"HB\"\n                    elseif rime>0.1 and KM>0.1 and UnitPower(\"player\")>=aura_env.FSRP then \n                        aura_env.nextAction=\"FS\"\n                    elseif (desync) and aura_env.runes[bn].cd - aura_env.fixedGCD  <= (reactionTimeNew)-2.45 then\n                        aura_env.nextAction=\"PES\"\n                        \n                    elseif rime>0.1 and UnitPower(\"player\")<110 then \n                        aura_env.nextAction=\"HB\"\n                    elseif UnitPower(\"player\")>=aura_env.FSRP*2 then \n                        aura_env.nextAction=\"FS\"\n                        -- elseif durationG- aura_env.fixedGCD <=0.1 and UA1<16.5 and UA1>1  and aura_env.RDencounter  then\n                        --    aura_env.nextAction=\"RD\"\n                    elseif desync and aura_env.runes[bn].cd <= (reactionTimeNew) then\n                        aura_env.nextAction=\"PES\"\n                    elseif UnitPower(\"player\")>=aura_env.FSRP then \n                        aura_env.nextAction=\"FS\"\n                    elseif not desync and aura_env.desyncFlag and expire>aura_env.runes[bl].cd+aura_env.fixedGCD+(reactionTimeNew) and aura_env.runes[bn].cd <= (reactionTimeNew) then\n                        aura_env.nextAction=\"BS\" \n                    elseif durationH <=0 and BT1==0 then\n                        aura_env.nextAction=\"HOW\"    \n                    elseif (not desync or aura_env.desyncFlag) and expire>aura_env.runes[bl].cd+aura_env.fixedGCD+(reactionTimeNew) then\n                        aura_env.nextAction=\"BS\" \n                    else\n                        aura_env.nextAction=\"PES\"\n                    end\n                    \n                    \n                    \n                elseif lost then\n                    \n                    WeakAuras.ScanEvents(\"fonsas_UA\", false) \n                    WeakAuras.ScanEvents(\"fonsas_ERW_frost\", false)\n                    WeakAuras.ScanEvents(\"fonsas_Pesti_ERW_frost\", false)\n                    if ff<=blCap and uh<=blCap then\n                        if aura_env.runes[fn].cd<=aura_env.runes[un].cd and aura_env.runes[fn].cd<=(aura_env.runes[bn].cd + aura_env.gcdFreeWhen + aura_env.fixedGCD+0.05) then\n                            local a = aura_env.filler()\n                            if (aura_env.runes[fn].cd > aura_env.gcdFreeWhen + aura_env.fixedGCD+0.05) and a~=\"\" then \n                                aura_env.nextAction=a\n                            else\n                                aura_env.nextAction=\"IT\"\n                            end\n                        elseif aura_env.runes[un].cd<=aura_env.runes[fn].cd and aura_env.runes[un].cd<=(aura_env.runes[bn].cd + aura_env.gcdFreeWhen + aura_env.fixedGCD+0.05) then\n                            local a = aura_env.filler()\n                            if (aura_env.runes[un].cd > aura_env.gcdFreeWhen + aura_env.fixedGCD+0.05) and a~=\"\" then \n                                aura_env.nextAction=a\n                            else\n                                aura_env.nextAction=\"PS\"\n                            end\n                        else\n                            local a = aura_env.filler()\n                            if (aura_env.runes[bn].cd > aura_env.gcdFreeWhen + aura_env.fixedGCD+0.05) and a~=\"\" then \n                                aura_env.nextAction=a\n                            else\n                                aura_env.nextAction=\"BS\"\n                            end\n                        end\n                        \n                    elseif ff<=blCap and (uh>blCap) then\n                        if aura_env.runes[fn].cd<=(aura_env.runes[bn].cd + aura_env.gcdFreeWhen + aura_env.fixedGCD+0.05) then\n                            if UnitPower(\"player\")>=aura_env.FSRP and aura_env.runes[fn].cd > aura_env.fixedGCD/2 then \n                                aura_env.nextAction=\"FS\" \n                            else\n                                aura_env.nextAction=\"IT\"\n                            end\n                        else\n                            if UnitPower(\"player\")>=aura_env.FSRP and aura_env.runes[bn].cd > aura_env.fixedGCD/2 then \n                                aura_env.nextAction=\"FS\" \n                            else\n                                if uh>aura_env.runes[bl].cd+0.1 then\n                                    aura_env.nextAction=\"BS\"\n                                else\n                                    aura_env.nextAction=\"PES\"\n                                end\n                            end\n                        end\n                    elseif ff>blCap and uh<=blCap then\n                        if aura_env.runes[un].cd<=(aura_env.runes[bn].cd + aura_env.gcdFreeWhen + aura_env.fixedGCD+0.05) then\n                            if UnitPower(\"player\")>=aura_env.FSRP and aura_env.runes[fn].cd > aura_env.fixedGCD/2 then \n                                aura_env.nextAction=\"FS\" \n                            else\n                                aura_env.nextAction=\"PS\"\n                            end\n                        else\n                            if UnitPower(\"player\")>=aura_env.FSRP and aura_env.runes[bn].cd > aura_env.fixedGCD/2 then \n                                aura_env.nextAction=\"FS\" \n                            else\n                                aura_env.nextAction=\"BS\"\n                            end\n                        end\n                    end \n                    \n                end\n            end\n        else\n            \n            WeakAuras.ScanEvents(\"fonsas_UA\", false) \n            WeakAuras.ScanEvents(\"fonsas_ERW_frost\", false)\n            WeakAuras.ScanEvents(\"fonsas_Pesti_ERW_frost\", false)\n            if ff<=blCap and uh<=blCap then\n                if aura_env.runes[fn].cd<=aura_env.runes[un].cd and aura_env.runes[fn].cd<=(aura_env.runes[bn].cd + aura_env.gcdFreeWhen + aura_env.fixedGCD+0.05) then\n                    local a = aura_env.filler()\n                    if (aura_env.runes[fn].cd > aura_env.gcdFreeWhen + aura_env.fixedGCD+0.05) and a~=\"\" then \n                        aura_env.nextAction=a\n                    else\n                        aura_env.nextAction=\"IT\"\n                    end\n                elseif aura_env.runes[un].cd<=aura_env.runes[fn].cd and aura_env.runes[un].cd<=(aura_env.runes[bn].cd + aura_env.gcdFreeWhen + aura_env.fixedGCD+0.05) then\n                    local a = aura_env.filler()\n                    if (aura_env.runes[un].cd > aura_env.gcdFreeWhen + aura_env.fixedGCD+0.05) and a~=\"\" then \n                        aura_env.nextAction=a\n                    else\n                        aura_env.nextAction=\"PS\"\n                    end\n                else\n                    local a = aura_env.filler()\n                    if (aura_env.runes[bn].cd > aura_env.gcdFreeWhen + aura_env.fixedGCD+0.05) and a~=\"\" then \n                        aura_env.nextAction=a\n                    else\n                        aura_env.nextAction=\"BS\"\n                    end\n                end\n                \n            elseif ff<=blCap and (uh>blCap) then\n                if aura_env.runes[fn].cd<=(aura_env.runes[bn].cd + aura_env.gcdFreeWhen + aura_env.fixedGCD+0.05) then\n                    if UnitPower(\"player\")>=aura_env.FSRP and aura_env.runes[fn].cd > aura_env.fixedGCD/2 then \n                        aura_env.nextAction=\"FS\" \n                    else\n                        aura_env.nextAction=\"IT\"\n                    end\n                else\n                    if UnitPower(\"player\")>=aura_env.FSRP and aura_env.runes[bn].cd > aura_env.fixedGCD/2 then \n                        aura_env.nextAction=\"FS\" \n                    else\n                        if uh>aura_env.runes[bl].cd+0.1 then\n                            aura_env.nextAction=\"BS\"\n                        else\n                            aura_env.nextAction=\"PES\"\n                        end\n                    end\n                end\n            elseif ff>blCap and uh<=blCap then\n                if aura_env.runes[un].cd<=(aura_env.runes[bn].cd + aura_env.gcdFreeWhen + aura_env.fixedGCD+0.05) then\n                    if UnitPower(\"player\")>=aura_env.FSRP and aura_env.runes[fn].cd > aura_env.fixedGCD/2 then \n                        aura_env.nextAction=\"FS\" \n                    else\n                        aura_env.nextAction=\"PS\"\n                    end\n                else\n                    if UnitPower(\"player\")>=aura_env.FSRP and aura_env.runes[bn].cd > aura_env.fixedGCD/2 then \n                        aura_env.nextAction=\"FS\" \n                    else\n                        aura_env.nextAction=\"BS\"\n                    end\n                end\n            end \n            \n        end\n    end\n    \n    -- print(\"--\")\n    \n    local uaR = 0\n    \n    if aura_env.runes[fn].cd<=0.05 then \n        uaR=fn \n    elseif (aura_env.runes[fn].cd>aura_env.runes[1].cd and GetRuneType(1)==4) then \n        uaR=1 \n    elseif (aura_env.runes[fn].cd>aura_env.runes[2].cd and GetRuneType(2)==4) then \n        uaR=2\n    end\n    \n    if  aura_env.nextAction==\"OB\" and expire>1.5*aura_env.fixedGCD then\n        local obWhenTemp, obTimerTemp, rune1TagTemp, rune2TagTemp  =  aura_env.obFunctionUA_frost(uaR)\n        \n        local uab1 = GetRuneType(1) == 4 and aura_env.runes[fn].cd >= (reactionTimeNew)*1.5\n        local cond2 =  rune1TagTemp==1 and aura_env.runes[rune1TagTemp].cd>= aura_env.runes[rune2TagTemp].cd and obWhenTemp<2.5\n        local cond3 =  rune2TagTemp==1 and aura_env.runes[rune2TagTemp].cd>= aura_env.runes[rune1TagTemp].cd and obWhenTemp<2.5\n        local cond4 = (rune2TagTemp+rune1TagTemp==3)\n        if durationUA<=0 and durationBT<=0 and uab1 then\n            WeakAuras.ScanEvents(\"fonsas_UA\", true)\n        elseif durationUA<=0 and durationBT<=0 and not cond2 and not cond3 and not cond4 then\n            WeakAuras.ScanEvents(\"fonsas_UA\", true)\n        else\n            WeakAuras.ScanEvents(\"fonsas_UA\", false) \n        end\n    else\n        WeakAuras.ScanEvents(\"fonsas_UA\", false) \n    end\n    \n    \n    local var =  aura_env.TTD-aura_env.fixedGCD+aura_env.gcdFreeWhen<32 or UA1>1\n    local var2 = GetRuneType(bl)==4 or (GetRuneType(bn)==4 and aura_env.runes[bl].cd<0)\n    \n    if (aura_env.lastCastID == 50842 or aura_env.lastCastID == 51429 or aura_env.lastCastID == 51428 or aura_env.lastCastID == 51427 or aura_env.lastCastID == 51426) and durationERW<=1.5 and var and GetRuneType(1)==4 and  GetRuneType(2)==4  then \n        WeakAuras.ScanEvents(\"fonsas_ERW_frost\", true)\n        WeakAuras.ScanEvents(\"fonsas_CANCEL_BT\", false)\n        WeakAuras.ScanEvents(\"fonsas_ERW_PLUS\", false)\n    elseif aura_env.nextAction==\"PES\" and durationERW<=1.5 and var2 and (aura_env.TTD-aura_env.fixedGCD+aura_env.gcdFreeWhen<30 or UA1>1) then   \n        WeakAuras.ScanEvents(\"fonsas_ERW_frost\", true)\n        WeakAuras.ScanEvents(\"fonsas_CANCEL_BT\", false)\n        WeakAuras.ScanEvents(\"fonsas_ERW_PLUS\", true)\n    else\n        WeakAuras.ScanEvents(\"fonsas_ERW_frost\", false)\n        WeakAuras.ScanEvents(\"fonsas_ERW_PLUS\", false)\n    end\n    \n    if aura_env.lastCastID==49930 and aura_env.nextAction==\"BS\" then aura_env.nextAction=\"PES\" end\n    if aura_env.lastCastID~=50842 and aura_env.nextAction==\"BS\" and UA1>10 and expire<10 then aura_env.nextAction=\"PES\" end\n    if aura_env.lastCastID~=50842 and aura_env.nextAction==\"BS\" and UA1>15 and aura_env.oblitCounter<=1 and durationERW<=1.5 then aura_env.nextAction=\"PES\" end\n    --if timeNow+aura_env.gcdFreeWhen-aura_env.combatStart>6.2 and aura_env.nextAction==\"FS\" and UnitPower(\"player\")<=60 \n    \n    if lastAction ~= aura_env.nextAction or aura_env.init<3 then \n        if aura_env.nextAction==\"OB\" and  (rune2Tag~=1 or rune1Tag~=1  or  rune2Tag~=2 or rune1Tag~=2) then \n            aura_env.desyncCounter = aura_env.desyncCounter + 1\n        else\n            aura_env.desyncCounter = 0\n        end\n        \n        aura_env.stampWhenChanged = aura_env.gcdStamp\n        aura_env.init = aura_env.init +1\n        \n        if aura_env.lastCastID==49930 and aura_env.nextAction==\"BS\" then aura_env.nextAction=\"PES\" end\n        WeakAuras.ScanEvents(\"fonsas_action\", aura_env.nextAction) \n        \n        -- print(rime)\n        \n        local startG, durationG = GetSpellCooldown(46584)\n        if ((aura_env.nextAction==\"FS\" and rime<=0 and KM<=0) or aura_env.nextAction==\"HOW\") and durationG<=1.5  and aura_env.RDencounter and UA1>0 and UA1<18 and not aura_env.varFlag2 and UnitPower(\"player\")<120 then\n            WeakAuras.ScanEvents(\"fonsas_RD2\", true) \n        else\n            WeakAuras.ScanEvents(\"fonsas_RD2\", false) \n        end\n        \n    end\n    \n    xRTF(1,1,aura_env.nextAction)\nend\n\n\n\n",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["check"] = "update",
 						["events"] = "RUNE_POWER_UPDATE, PLAYER_TARGET_CHANGED, UNIT_POWER_UPDATE, PLAYER_AURAS_CHANGED, UNIT_SPELLCAST_SUCCEEDED",
 						["use_charges"] = false,
@@ -39839,12 +39850,12 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["unit"] = "player",
 						["subeventPrefix"] = "SPELL",
-						["spellName"] = 85256,
+						["debuffType"] = "HELPFUL",
 						["showOn"] = "showOnCooldown",
 						["use_targetRequired"] = false,
 						["spellIds"] = {
 						},
-						["custom_hide"] = "custom",
+						["spellName"] = 85256,
 						["charges_operator"] = "==",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -39856,7 +39867,7 @@ WeakAurasSaved = {
 						["realSpellName"] = 85256,
 						["use_spellName"] = true,
 						["custom"] = "function(event, rune, status)\n    if event == \"RUNE_POWER_UPDATE\" and rune then\n        aura_env.runes[rune].free = status\n        \n        if status then\n            \n            aura_env.runes[rune].cd = 0\n            --[[  if aura_env.bloodTapLock and rune==1 or rune==2 then\n                aura_env.bloodTapLock = false\n            end]]\n            \n        else\n            \n            aura_env.runeUsed = rune\n            local start, duration = GetRuneCooldown(rune)\n            aura_env.runes[rune].when = start + duration \n            \n           \n            --[[if aura_env.nextAction~=\"DD\" and rune==1 and aura_env.config.bloodTapFlag then\n                \n                \n                local start, duration = GetSpellCooldown(45529)\n                if duration<=1.5 and aura_env.lastCastID ~= 47568 then\n                    -- print(aura_env.runes[2].cd)\n                    local a = aura_env.runes[2].cd>3.2\n                    --print(a)\n                    local b = aura_env.ff+1<aura_env.runes[5].cd and aura_env.ff+1<aura_env.runes[6].cd \n                    --print(b)\n                    local c = aura_env.uh+1<aura_env.runes[3].cd and aura_env.uh<aura_env.runes[4].cd\n                    -- print(c)\n                    local d = aura_env.des+1<aura_env.runes[2].cd\n                    -- print(d)\n                    local e = aura_env.gf<aura_env.runes[3].cd and aura_env.gf<aura_env.runes[4].cd\n                    -- print(e)\n                    if a or b or c or d or e then\n                        --print(a)\n                        WeakAuras.ScanEvents(\"fonsas_actionBT\") \n                        aura_env.bloodTapPredict = GetTime()\n                        aura_env.bloodTapLock = true\n                        aura_env.initBT = 0\n                    end\n                end\n            end\n            ]]\n        end\n    end\nend",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["check"] = "event",
 						["events"] = "RUNE_POWER_UPDATE",
 						["use_charges"] = false,
@@ -39874,12 +39885,12 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["unit"] = "player",
 						["subeventPrefix"] = "SPELL",
-						["spellName"] = 85256,
+						["debuffType"] = "HELPFUL",
 						["showOn"] = "showOnCooldown",
 						["use_targetRequired"] = false,
 						["spellIds"] = {
 						},
-						["custom_hide"] = "custom",
+						["spellName"] = 85256,
 						["charges_operator"] = "==",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -39891,7 +39902,7 @@ WeakAurasSaved = {
 						["realSpellName"] = 85256,
 						["use_spellName"] = true,
 						["custom"] = "function(event, a1, a2, a3)\n    --print(a3)\n    \n    \n    if a3==51425 then \n        aura_env.oblitCounter =  aura_env.oblitCounter+1 \n    elseif a3==42650 then\n        local startERW, durationERW = GetSpellCooldown(47568)--erw\n        if durationERW<=1.5 then\n            aura_env.oblitCounter = 0 \n        end\n        \n        aura_env.gcdReactionCount = 1\n        aura_env.gcdReactionTotal = 0\n        aura_env.gcdReactionNormalized = 0\n    end\n    \n    \n    if a3==45529 then \n        if aura_env.blood1Type==4 then\n            aura_env.blood1Type_cancelBT = false\n        else\n            aura_env.blood1Type_cancelBT = true\n        end\n        \n        local KM, rime, how, totem, UA1, BT1 = aura_env.trackB_frost()\n        \n        local start, duration = GetSpellCooldown(51271)--ua\n        if UA1==0 and aura_env.config.bloodTapFlag and duration<=10 then \n            WeakAuras.ScanEvents(\"fonsas_UAfull\", true) \n        else\n            WeakAuras.ScanEvents(\"fonsas_UAfull\", false) \n        end\n    else\n        aura_env.blood1Type = GetRuneType(1)\n        WeakAuras.ScanEvents(\"fonsas_UAfull\", false)     \n    end\n    \n    if a3==51271 then --ua\n        -- print(\"UA WAS LOGGED\")\n        aura_env.UAcast = GetTime()\n    end\n    \n    if a3==45529 then --BT\n        aura_env.BTcast = GetTime()\n    end\n    \n    \n    \n    if a3==57623 then --HoW\n        aura_env.HoWcast = GetTime()\n    end\n    --ocal startBT, durationBT = GetSpellCooldown(45529)--bt\n    \n    \n    if a3==66198 or a3==51423 or a3==51424 or a3==51425 then \n        aura_env.OBlock=false    \n    end\n    \n    if a3==51426 or  a3==50842 or  a3==51427 or  a3==51429 then \n        local start, duration = GetSpellCooldown(47568) -- ERW\n        \n        local ff, uh =aura_env.trackD_frost()\n        if duration <=1.5 and ff>0.5 and uh>0.5 then\n            local KM, rime, how, totem, UA = aura_env.trackB_frost()\n            --print(UA)\n            --print(GetRuneType(1)==4)\n            --print(GetRuneType(2)==4)\n            if UA>=8 and GetRuneType(1)==4 and GetRuneType(2)==4 then\n                WeakAuras.ScanEvents(\"fonsas_ERWfrost\", true)  \n            end\n        end\n        \n    else\n        WeakAuras.ScanEvents(\"fonsas_ERWfrost\", false) \n    end\n    \n    local lastGCD = aura_env.gcdStamp\n    local start, duration = GetSpellCooldown(61304)\n    aura_env.gcdWhen = start+duration+ aura_env.config.reaction/1000\n    \n    if duration>0 then\n        aura_env.fixedGCD = duration\n    end \n    aura_env.gcdStamp = start+duration\n    if lastGCD ~= aura_env.gcdStamp then\n        aura_env.gcdReaction = start-lastGCD\n        if aura_env.gcdReaction<0.01 then aura_env.gcdReaction=0.01\n        end\n        if a3~=51425 and aura_env.gcdReaction<0.600 then\n            aura_env.gcdReactionCount = aura_env.gcdReactionCount + 1\n            aura_env.gcdReactionTotal = aura_env.gcdReactionTotal + aura_env.gcdReaction\n            if  aura_env.gcdReaction>0.4 then  aura_env.gcdReaction=0.4 end \n            aura_env.gcdReactionNormalized = aura_env.gcdReactionTotal / aura_env.gcdReactionCount\n            --print(aura_env.gcdReactionNormalized)\n        end\n    end\n    if a3==47568 then \n        aura_env.desyncCounter = 0\n        aura_env.ERWcounter=GetTime()\n        aura_env.bloodTapLock = false\n        aura_env.runes[1].cd = 0\n        aura_env.runes[2].cd = 0\n        aura_env.runes[3].cd = 0\n        aura_env.runes[4].cd = 0\n        aura_env.runes[5].cd = 0\n        aura_env.runes[6].cd = 0\n        aura_env.runes[1].when = GetTime()\n        aura_env.runes[2].when = GetTime()\n        aura_env.runes[3].when = GetTime()\n        aura_env.runes[4].when = GetTime()\n        aura_env.runes[5].when = GetTime()\n        aura_env.runes[6].when = GetTime()\n    end\n    \n    aura_env.lastCastID  = a3\n    \n    \nend\n\n\n",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["check"] = "event",
 						["events"] = "UNIT_SPELLCAST_SUCCEEDED:player",
 						["use_charges"] = false,
@@ -39909,12 +39920,12 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["unit"] = "player",
 						["subeventPrefix"] = "SPELL",
-						["spellName"] = 85256,
+						["debuffType"] = "HELPFUL",
 						["showOn"] = "showOnCooldown",
 						["use_targetRequired"] = false,
 						["spellIds"] = {
 						},
-						["custom_hide"] = "custom",
+						["spellName"] = 85256,
 						["charges_operator"] = "==",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -39926,7 +39937,7 @@ WeakAurasSaved = {
 						["realSpellName"] = 85256,
 						["use_spellName"] = true,
 						["custom"] = "function(event, action)\n    --aura_env.nextAction=\"BT_full\"\n    if action == \"BP\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", true) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n    elseif action == \"clear\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n    elseif action == \"DD\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", true) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n    elseif action == \"IT\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", true) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n    elseif action == \"PS\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", true) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n    elseif action == \"BS\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", true) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n    elseif action == \"DC\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", true) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n    elseif action == \"BB\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", true) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n    elseif action == \"GF\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", true) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n    elseif action == \"HOW\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false)\n        WeakAuras.ScanEvents(\"fonsas_HOW\", true)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n        \n    elseif action == \"UP\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false)\n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", true) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n        \n    elseif action == \"OB\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false)\n        WeakAuras.ScanEvents(\"fonsas_OB\", true)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n        \n        \n    elseif action == \"HB\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", true)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n        \n        \n    elseif action == \"FS\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", true)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n        \n        \n    elseif action == \"PES\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", true)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n    elseif action == \"RD\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", true)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", false)\n    elseif action == \"BT_full\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_OB\", false)\n        WeakAuras.ScanEvents(\"fonsas_HB\", false)\n        WeakAuras.ScanEvents(\"fonsas_FS\", false)\n        WeakAuras.ScanEvents(\"fonsas_PES\", false)\n        WeakAuras.ScanEvents(\"fonsas_RD\", false)\n        WeakAuras.ScanEvents(\"fonsas_BT_full\", true)\n    end\nend",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["check"] = "event",
 						["events"] = "fonsas_action",
 						["use_charges"] = false,
@@ -39944,12 +39955,12 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["unit"] = "player",
 						["subeventPrefix"] = "SPELL",
-						["spellName"] = 85256,
+						["debuffType"] = "HELPFUL",
 						["showOn"] = "showOnCooldown",
 						["use_targetRequired"] = false,
 						["spellIds"] = {
 						},
-						["custom_hide"] = "custom",
+						["spellName"] = 85256,
 						["charges_operator"] = "==",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -39961,7 +39972,7 @@ WeakAurasSaved = {
 						["realSpellName"] = 85256,
 						["use_spellName"] = true,
 						["custom"] = "function()\n\nlocal nameTalent, icon, tier, column, currRank= GetTalentInfo(3,2)\naura_env.DDdur = 30 - (5*currRank)\nlocal nameTalent, icon, tier, column, currRank= GetTalentInfo(3,25)\naura_env.GFtalented = currRank\n\nend",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["check"] = "event",
 						["events"] = "PLAYER_TARGET_CHANGED",
 						["use_charges"] = false,
@@ -40161,6 +40172,17 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["selfPoint"] = "CENTER",
+			["frameStrata"] = 2,
+			["fontSize"] = 19,
+			["source"] = "import",
+			["stacksPoint"] = "BOTTOM",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
+			["conditions"] = {
+			},
+			["displayStacks"] = "%p",
+			["regionType"] = "icon",
 			["authorOptions"] = {
 				{
 					["type"] = "range",
@@ -40267,20 +40289,6 @@ WeakAurasSaved = {
 					["desc"] = "toggle this to ignore desync'ing",
 				}, -- [10]
 			},
-			["frameStrata"] = 2,
-			["fontSize"] = 19,
-			["displayStacks"] = "%p",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["parent"] = "DK Next Action Guide - by Fonsas",
-			["stacksPoint"] = "BOTTOM",
-			["conditions"] = {
-			},
-			["alpha"] = 1,
-			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
 			["config"] = {
 				["normalR"] = true,
 				["fillerGCD"] = 1,
@@ -40292,7 +40300,12 @@ WeakAurasSaved = {
 				["RDencounter"] = true,
 				["reaction"] = 50,
 			},
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
 			["auto"] = true,
@@ -40300,20 +40313,18 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "Rotation manager - frost",
-			["source"] = "import",
+			["alpha"] = 1,
 			["useCooldownModRate"] = true,
 			["width"] = 35,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "DK Next Action Guide - by Fonsas",
 			["uid"] = "rJ5hdM)OELv",
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["displayIcon"] = 135771,
-			["cooldown"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -40473,7 +40484,8 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -40482,12 +40494,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -40532,7 +40539,11 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["barColor"] = {
 				0.2, -- [1]
@@ -40542,7 +40553,14 @@ WeakAurasSaved = {
 			},
 			["desaturate"] = false,
 			["parent"] = "Vermin Warrior",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -40660,23 +40678,16 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = "",
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["config"] = {
 			},
 			["icon_side"] = "RIGHT",
@@ -40689,7 +40700,7 @@ WeakAurasSaved = {
 			["spark"] = false,
 			["zoom"] = 0.3,
 			["sparkHidden"] = "NEVER",
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["id"] = "Indestructible Potion",
@@ -40769,7 +40780,7 @@ WeakAurasSaved = {
 			["selfPoint"] = "CENTER",
 			["align"] = "CENTER",
 			["stagger"] = 0,
-			["rotation"] = 0,
+			["arcLength"] = 360,
 			["load"] = {
 				["size"] = {
 					["multi"] = {
@@ -40795,9 +40806,9 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["useLimit"] = false,
+			["internalVersion"] = 64,
 			["animate"] = true,
-			["rowSpace"] = 1,
+			["fullCircle"] = true,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -40805,8 +40816,8 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["arcLength"] = 360,
-			["internalVersion"] = 64,
+			["rotation"] = 0,
+			["useLimit"] = false,
 			["anchorFrameParent"] = false,
 			["constantFactor"] = "RADIUS",
 			["uid"] = "BiUy4gY8pJ(",
@@ -40820,7 +40831,14 @@ WeakAurasSaved = {
 			["gridType"] = "RD",
 			["config"] = {
 			},
-			["fullCircle"] = true,
+			["rowSpace"] = 1,
+			["authorOptions"] = {
+			},
+			["conditions"] = {
+			},
+			["information"] = {
+				["forceEvents"] = true,
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -40841,19 +40859,13 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["conditions"] = {
-			},
-			["information"] = {
-				["forceEvents"] = true,
-			},
-			["authorOptions"] = {
-			},
 		},
 		["Holy Shield"] = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -40862,12 +40874,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -40931,7 +40938,11 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["barColor"] = {
 				0.2, -- [1]
@@ -40941,7 +40952,14 @@ WeakAurasSaved = {
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["alpha"] = 1,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -41079,39 +41097,32 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = "",
 			["desaturate"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
+			["uid"] = "PTD5D1uPbgk",
 			["config"] = {
 			},
-			["uid"] = "PTD5D1uPbgk",
 			["icon_side"] = "RIGHT",
 			["auto"] = false,
 			["width"] = 40,
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["useCooldownModRate"] = true,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 			["spark"] = false,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["sparkHidden"] = "NEVER",
 			["id"] = "Holy Shield",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "Vermin Paladin",
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -41119,7 +41130,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["inverse"] = false,
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -41127,7 +41138,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["parent"] = "Vermin Paladin",
+			["xOffset"] = 0,
 		},
 		["Skills"] = {
 			["backdropColor"] = {
@@ -41445,9 +41456,9 @@ WeakAurasSaved = {
 						["duration"] = "1",
 						["custom"] = "function()\n    if aura_env.fixedGCD<0 then aura_env.fixedGCD = 1.5 end\n    \n    \n    local timeNow = GetTime()\n    aura_env.gcdFreeWhen = aura_env.gcdWhen - timeNow + aura_env.config.reaction/1000\n    if  aura_env.gcdFreeWhen<0 then  aura_env.gcdFreeWhen=0 end\n    \n    \n    local lastAction = aura_env.nextAction\n    \n    local DESexpire, bloodP, HoWTimer, uhP, uhstr, totem, boneS  = aura_env.trackB()\n    local ff, uh = aura_env.trackD()\n    aura_env.ff = ff\n    aura_env.uh = uh\n    aura_env.des = DESexpire\n    \n    if UnitExists(\"pet\") and aura_env.GFtalented==1 then\n        aura_env.gf = aura_env.trackBPet() \n    else \n        aura_env.gf = 30\n    end\n    local startH, durationH = GetSpellCooldown(57330)\n    if aura_env.ERWused<0 then aura_env.ERWused=0 end\n    \n    --[[\nChanges to be made:\n - when gary CD < 20 secs: start suggesting half DCs\n - when gary CD< 20 secs: suggests UH presence - half icon on proper gap\n - when gary dies: half blood presence on the next proper gap.\n - it could be half DC half HoW, whenever theres a filler gap + gary is a bout to get off CD + HoW is off cd\n\n\n]]\n    local garyCD = 0\n    if  aura_env.garyCastWhen > 0 then \n        garyCD = (180 - timeNow + aura_env.garyCastWhen - aura_env.gcdFreeWhen)\n    else\n        local start, duration = GetSpellCooldown(49206)\n        if (timeNow-start)>1.5 and start~=0 then\n            garyCD = (180 - timeNow + start - aura_env.gcdFreeWhen)\n        end\n    end\n    \n    \n    if garyCD<0 then garyCD = 0 end\n    \n    aura_env.garyCD=garyCD\n    \n    if UnitAffectingCombat(\"player\") then\n        WeakAuras.ScanEvents(\"fonsas_UP2\", false)  \n    end\n    if not UnitAffectingCombat(\"player\") then\n        \n        \n        aura_env.totemDetected = false\n        --aura_env.DDlock = false\n        lastAction = \"\"\n        if not uhP and garyCD<20 then\n            WeakAuras.ScanEvents(\"fonsas_UP2\", true) \n        else\n            WeakAuras.ScanEvents(\"fonsas_UP2\", false) \n        end\n        \n        local start, duration = 60, 60\n        if aura_env.boneShieldTalented==1 then\n            start, duration = GetSpellCooldown(49222)\n        end\n        \n        if boneS<15 and duration<=1.6 then\n            aura_env.nextAction = \"bonesFull\"\n        elseif HoWTimer<30 and durationH<1.5 then\n            aura_env.nextAction = \"HOW\"\n        elseif  aura_env.gf<(10) then\n            aura_env.nextAction = \"GF\"\n        else\n            aura_env.nextAction = \"IT\"\n        end\n        \n        \n    elseif not bloodP then\n        \n        \n        if totem then \n            aura_env.totemDetected = true\n        end\n        \n        --aura_env.nextAction = \"BP\"\n        \n        local startG, durationG = GetSpellCooldown(49206)\n        \n        aura_env.runesCD()\n        \n        aura_env.runes[1].cd = aura_env.runes[1].cd -aura_env.ERWused\n        aura_env.runes[3].cd = aura_env.runes[3].cd -aura_env.ERWused\n        aura_env.runes[5].cd = aura_env.runes[5].cd -aura_env.ERWused\n        --rune tracker\n        local bn, fn, un, bl, fl, ul = 0\n        if (aura_env.runes[1].cd)>(aura_env.runes[2].cd) then bn=2 bl=1 else bn=1 bl=2 end\n        if (aura_env.runes[3].cd)>(aura_env.runes[4].cd) then un=4 ul=3 else un=3 ul=4 end\n        if (aura_env.runes[5].cd)>(aura_env.runes[6].cd) then fn=6 fl=5 else fn=5 fl=6 end\n        \n        \n        local ffx, uhx, desx = 0,0,0\n        local DDend = aura_env.DDend - timeNow\n        if timeNow+aura_env.gcdFreeWhen - aura_env.combatStart < 2.2*aura_env.fixedGCD then\n            \n            if ff-aura_env.gcdFreeWhen<0 then ffx=2 end\n            if uh-aura_env.gcdFreeWhen<0 then uhx=2 end\n            if DESexpire-aura_env.gcdFreeWhen<0 then desx=2 end\n            if (DDend < 0) and (ffx or uhx or desx) then DDend = 0 end\n        end\n        \n        -- print(timeNow+aura_env.gcdFreeWhen - aura_env.combatStart)\n        \n        \n        aura_env.DDwhen = DDend +(aura_env.config.DDwhen * aura_env.fixedGCD) -aura_env.gcdFreeWhen + ffx*aura_env.fixedGCD + uhx*aura_env.fixedGCD + desx*aura_env.fixedGCD\n        \n        local DDwhen = aura_env.DDwhen\n        if DDwhen< -2.45 then DDwhen = -2.45 end\n        \n        if DDwhen<0 then \n            local lastRune = 0\n            if aura_env.runes[bn].cd>=aura_env.runes[un].cd and aura_env.runes[bn].cd>= aura_env.runes[fn].cd then \n                lastRune = bn\n            elseif aura_env.runes[un].cd>=aura_env.runes[bn].cd and aura_env.runes[un].cd>= aura_env.runes[fn].cd then \n                lastRune = un\n            elseif aura_env.runes[fn].cd>=aura_env.runes[bn].cd and aura_env.runes[fn].cd>= aura_env.runes[un].cd then \n                lastRune = fn\n            end\n            DDwhen = aura_env.runes[lastRune].cd -0.5\n        end\n        \n        aura_env.DDwhen = DDwhen\n        \n        if aura_env.TTD-aura_env.gcdFreeWhen < aura_env.config.dndttk then DDwhen = 30 aura_env.DDwhen = 30\n        end\n        \n        \n        local last = 0\n        if aura_env.runes[bn].cd >= aura_env.runes[un].cd and aura_env.runes[bn].cd >= aura_env.runes[fn].cd then\n            last = bn\n        elseif aura_env.runes[un].cd >= aura_env.runes[bn].cd and aura_env.runes[un].cd >= aura_env.runes[fn].cd then\n            last = un\n        else\n            last = fn\n        end\n        \n        \n        if false then--aura_env.DDlock then\n            aura_env.nextAction = \"DD\"\n        else\n            \n            if false then -- aura_env.gSnap() and UnitPower(\"player\")>=60 then \n                --aura_env.nextAction = \"GARY\"\n            else\n                --BLOODTAP?\n                \n                if (aura_env.bloodTapLock and GetRuneType(1)==4 and aura_env.runes[1].cd>1.5 and aura_env.gcdStamp~=aura_env.gcdStampLast) then\n                    aura_env.bloodTapLock = false\n                elseif timeNow - aura_env.bloodTapPredict>DDwhen-aura_env.gcdFreeWhen+(aura_env.config.DDwhen/1000) then \n                    aura_env.bloodTapLock = false\n                end\n                \n                if aura_env.bloodTapLock then --and GetRuneType(1)==4 and aura_env.runes[1].cd<1 then\n                    \n                    --print(aura_env.runes[un].cd>0.5) \n                    --print(aura_env.gf<12) print(\"--\")\n                    --print(garyCD)\n                    if garyCD>=30 and garyCD<=150 and aura_env.runes[2].cd>3 and aura_env.impUP==0 then\n                        aura_env.nextAction = \"BP\"\n                    elseif DESexpire-aura_env.gcdFreeWhen< aura_env.DDwhen and aura_env.runes[2].cd>aura_env.DDwhen then\n                        aura_env.nextAction = \"BS\"\n                    elseif uh-aura_env.gcdFreeWhen<2 and aura_env.runes[un].cd>3 then\n                        aura_env.nextAction = \"PS\"\n                    elseif aura_env.runes[un].cd>0.5 and aura_env.gf<12 and aura_env.TTD>aura_env.config.gfttk  then\n                        -- print(\"GF????\")\n                        aura_env.nextAction = \"GF\"\n                    elseif ff-aura_env.gcdFreeWhen<2.5 and aura_env.runes[fn].cd>3.5 then\n                        aura_env.nextAction = \"IT\"\n                    else\n                        --  print( aura_env.runes[un].cd>0.5 ) print(aura_env.gf<12) print( aura_env.TTD>aura_env.config.gfttk)\n                        -- print(\"caiu BB\")   \n                        \n                        aura_env.nextAction = \"BB\"\n                    end\n                    -- print(\"--\")\n                else\n                    --and uh-aura_env.gcdFreeWhen>0.1 and DESexpire-aura_env.gcdFreeWhen>0.1)\n                    \n                    local v11 = ff-aura_env.gcdFreeWhen<0.5 and (aura_env.runes[fn].cd)<=(aura_env.runes[un].cd) and (aura_env.runes[fn].cd)<=(aura_env.runes[bn].cd)\n                    local v2 = uh-aura_env.gcdFreeWhen>0.5 and DESexpire-aura_env.gcdFreeWhen>0.5\n                    \n                    \n                    \n                    if false then --aura_env.DDlock then\n                        \n                        aura_env.nextAction = \"DD\"\n                        \n                    else\n                        \n                        \n                        local v2 = 0\n                        if ff<=aura_env.gcdFreeWhen then \n                            v2 =  ((aura_env.runes[fn].cd)<=(aura_env.runes[un].cd) and (aura_env.runes[fn].cd)<=(aura_env.runes[bn].cd))\n                        else v2 =  ((aura_env.runes[fn].cd)<(aura_env.runes[un].cd) and (aura_env.runes[fn].cd)<(aura_env.runes[bn].cd)) \n                        end\n                        \n                        \n                        local v1 = ((aura_env.runes[fl].cd)<=DDwhen and v2) --and uh-aura_env.gcdFreeWhen>0.1 and DESexpire-aura_env.gcdFreeWhen>0.1)\n                        if v1  then\n                            \n                            aura_env.nextAction = \"IT\"\n                        else\n                            --local uhA = uh-aura_env.gcdFreeWhen<0.5 \n                            local uhB = ((aura_env.runes[ul].cd)<=DDwhen and (aura_env.runes[un].cd)<=(aura_env.runes[fn].cd) and (aura_env.runes[un].cd)<=(aura_env.runes[bn].cd)) --and ff-aura_env.gcdFreeWhen>0.1 and DESexpire-aura_env.gcdFreeWhen>0.1)\n                            if uhB then --or aura_env.runes[ul].cd+aura_env.gcdFreeWhen+(aura_env.config.reaction/1000*2)<aura_env.runes[last].cd then\n                                if lastAction==\"GF\" and aura_env.gcdStamp==aura_env.gcdStampLast then\n                                    aura_env.nextAction = \"GF\"\n                                elseif lastAction==\"PS\" and aura_env.gcdStamp==aura_env.gcdStampLast then\n                                    aura_env.nextAction = \"PS\"\n                                    \n                                elseif UnitExists(\"pet\") and aura_env.GFtalented==1 and aura_env.gf<=14 and aura_env.TTD>aura_env.config.gfttk  then\n                                    \n                                    if (aura_env.gf-aura_env.gcdFreeWhen)<=14 or (uh-aura_env.gcdFreeWhen)>12 then \n                                        \n                                        local uhnn = (aura_env.runes[un].cd+(10-0.5*aura_env.impUP)+(aura_env.config.reaction/1000*2))\n                                        local uhln = (aura_env.runes[ul].cd+(10-0.5*aura_env.impUP)+(aura_env.config.reaction/1000*2))\n                                        \n                                        if uhnn>DDwhen and (uh-aura_env.gcdFreeWhen)>aura_env.runes[ul].cd then\n                                            aura_env.nextAction = \"GF\"\n                                        elseif (uh-aura_env.gcdFreeWhen)>uhnn then\n                                            aura_env.nextAction = \"GF\"\n                                        else\n                                            aura_env.nextAction = \"PS\"\n                                        end\n                                        \n                                    else \n                                        local uhnn = (aura_env.runes[un].cd+(10-0.5*aura_env.impUP)+(aura_env.config.reaction/1000*2))\n                                        local uhln = (aura_env.runes[ul].cd+(10-0.5*aura_env.impUP)+(aura_env.config.reaction/1000*2))\n                                        \n                                        if uhnn>DDwhen and (uh-aura_env.gcdFreeWhen)>aura_env.runes[ul].cd then\n                                            aura_env.nextAction = \"PSBS\"\n                                        elseif (uh-aura_env.gcdFreeWhen)>uhnn then\n                                            aura_env.nextAction = \"PSBS\"\n                                        else\n                                            aura_env.nextAction = \"PS\"\n                                        end\n                                    end\n                                    \n                                else\n                                    \n                                    local uhnn = (aura_env.runes[un].cd+(10-0.5*aura_env.impUP)+(aura_env.config.reaction/1000*2))\n                                    local uhln = (aura_env.runes[ul].cd+(10-0.5*aura_env.impUP)+(aura_env.config.reaction/1000*2))\n                                    \n                                    if uhnn>DDwhen and (uh-aura_env.gcdFreeWhen)>aura_env.runes[ul].cd then\n                                        aura_env.nextAction = \"PSBS\"\n                                    elseif (uh-aura_env.gcdFreeWhen)>uhnn then\n                                        aura_env.nextAction = \"PSBS\"\n                                    else\n                                        aura_env.nextAction = \"PS\"\n                                    end\n                                    \n                                end\n                                \n                            else\n                                local a = ((aura_env.runes[bn].cd)<=(aura_env.runes[fn].cd) and (aura_env.runes[bn].cd)<=(aura_env.runes[un].cd)) --and uh-aura_env.gcdFreeWhen>0.1 and ff-aura_env.gcdFreeWhen>0.1)\n                                \n                                if aura_env.runes[bl].cd<=DDwhen and a then -- (DESexpire-aura_env.gcdFreeWhen<aura_env.gcdFreeWhen+aura_env.config.reaction/1000 or a or aura_env.runes[bl].cd+aura_env.gcdFreeWhen+(aura_env.config.reaction/1000*2)<aura_env.runes[last].cd) then\n                                    \n                                    --spend blood rune\n                                    if lastAction == \"BS\" and aura_env.gcdStamp==aura_env.gcdStampLast then\n                                        aura_env.nextAction = \"BS\"\n                                    elseif lastAction == \"BP\" and aura_env.gcdStamp==aura_env.gcdStampLast then\n                                        aura_env.nextAction = \"BP\"\n                                    elseif (DESexpire-aura_env.gcdFreeWhen)<6 then\n                                        if (aura_env.runes[bn].cd+(10-0.5*aura_env.impUP)+(aura_env.config.reaction/1000*3))>DDwhen  or (DESexpire-aura_env.gcdFreeWhen)<(aura_env.runes[bl].cd) or (DESexpire-aura_env.gcdFreeWhen)<4 or (DESexpire-aura_env.gcdFreeWhen)<DDwhen then\n                                            aura_env.nextAction = \"BS\"\n                                        else \n                                            if aura_env.encounter and garyCD>150 then\n                                                aura_env.nextAction = \"BB\"\n                                            else\n                                                aura_env.nextAction = \"BP\"\n                                            end \n                                        end\n                                    else\n                                        if aura_env.encounter and garyCD>150 then\n                                            aura_env.nextAction = \"BB\"\n                                        else\n                                            aura_env.nextAction = \"BP\"\n                                        end \n                                    end\n                                    \n                                else\n                                    aura_env.nextAction = \"DD\" \n                                    --[[ if timeNow-aura_env.dndCastWhen-aura_env.gcdFreeWhen>10 then\n                                        aura_env.nextAction = \"DD\" \n                                    elseif (aura_env.runes[fn].cd)<=(aura_env.runes[un].cd) and (aura_env.runes[fn].cd)<=(aura_env.runes[bn].cd) then\n                                        aura_env.nextAction = \"IT\"\n                                    elseif (aura_env.runes[bn].cd)<=(aura_env.runes[fn].cd+0.1) and (aura_env.runes[bn].cd)<=(aura_env.runes[un].cd) then\n                                        aura_env.nextAction = \"BS\"\n                                    elseif (aura_env.runes[un].cd)<=(aura_env.runes[fn].cd) and (aura_env.runes[un].cd)<=(aura_env.runes[bn].cd) then\n                                        aura_env.nextAction = \"PS\"\n                                    end]]\n                                    \n                                end\n                            end\n                        end \n                    end \n                end\n            end\n        end\n        \n    else \n        \n        if totem then \n            aura_env.totemDetected = true\n        end\n        local timeNow = GetTime()\n        aura_env.gcdFreeWhen = aura_env.gcdWhen - timeNow + aura_env.config.reaction/1000\n        if  aura_env.gcdFreeWhen<0 then  aura_env.gcdFreeWhen=0 end\n        --rune cd\n        \n        aura_env.runesCD()\n        aura_env.runes[1].cd = aura_env.runes[1].cd -aura_env.ERWused\n        aura_env.runes[3].cd = aura_env.runes[3].cd -aura_env.ERWused\n        aura_env.runes[5].cd = aura_env.runes[5].cd -aura_env.ERWused\n        \n        --rune tracker\n        local bn, fn, un, bl, fl, ul = 0\n        if (aura_env.runes[1].cd)>(aura_env.runes[2].cd) then bn=2 bl=1 else bn=1 bl=2 end\n        if (aura_env.runes[3].cd)>(aura_env.runes[4].cd) then un=4 ul=3 else un=3 ul=4 end\n        if (aura_env.runes[5].cd)>(aura_env.runes[6].cd) then fn=6 fl=5 else fn=5 fl=6 end\n        \n        local ffx, uhx, desx = 0,0,0\n        local DDend = aura_env.DDend - timeNow\n        if timeNow+aura_env.gcdFreeWhen - aura_env.combatStart <  2.2*aura_env.fixedGCD then\n            \n            if ff-aura_env.gcdFreeWhen<0 then ffx=2 end\n            if uh-aura_env.gcdFreeWhen<0 then uhx=2 end\n            if DESexpire-aura_env.gcdFreeWhen<0 then desx=2 end\n            if (DDend < 0) and (ffx or uhx or desx) then DDend = 0 end\n        end\n        \n        -- print(timeNow+aura_env.gcdFreeWhen - aura_env.combatStart)\n        \n        \n        aura_env.DDwhen = DDend +(aura_env.config.DDwhen * aura_env.fixedGCD) -aura_env.gcdFreeWhen + ffx*aura_env.fixedGCD + uhx*aura_env.fixedGCD + desx*aura_env.fixedGCD\n        \n        local DDwhen = aura_env.DDwhen\n        if DDwhen< -2.45 then DDwhen = -2.45 end\n        \n        if DDwhen<0 then \n            local lastRune = 0\n            if aura_env.runes[bn].cd>=aura_env.runes[un].cd and aura_env.runes[bn].cd>= aura_env.runes[fn].cd then \n                lastRune = bn\n            elseif aura_env.runes[un].cd>=aura_env.runes[bn].cd and aura_env.runes[un].cd>= aura_env.runes[fn].cd then \n                lastRune = un\n            elseif aura_env.runes[fn].cd>=aura_env.runes[bn].cd and aura_env.runes[fn].cd>= aura_env.runes[un].cd then \n                lastRune = fn\n            end\n            DDwhen = aura_env.runes[lastRune].cd -0.5\n        end\n        \n        aura_env.DDwhen = DDwhen\n        \n        --print(DDwhen)\n        \n        if aura_env.TTD-aura_env.gcdFreeWhen < aura_env.config.dndttk then DDwhen = 30 aura_env.DDwhen = 30\n        end\n        \n        --[[ local last = 0\n        if aura_env.runes[bn].cd >= aura_env.runes[un].cd and aura_env.runes[bn].cd >= aura_env.runes[fn].cd then\n            last = bn\n        elseif aura_env.runes[un].cd >= aura_env.runes[bn].cd and aura_env.runes[un].cd >= aura_env.runes[fn].cd then\n            last = un\n        else\n            last = fn\n        end]]\n        --BLOODTAP?\n        \n        if (aura_env.bloodTapLock and GetRuneType(1)==4 and aura_env.runes[1].cd>1 and aura_env.gcdStamp~=aura_env.gcdStampLast) then\n            aura_env.bloodTapLock = false\n        elseif timeNow - aura_env.bloodTapPredict>DDwhen-aura_env.gcdFreeWhen+(aura_env.config.DDwhen/1000) then \n            aura_env.bloodTapLock = false\n        end\n        \n        \n        \n        \n        if aura_env.bloodTapLock then --and GetRuneType(1)==4 and aura_env.runes[1].cd<1 then\n            \n            if DESexpire-aura_env.gcdFreeWhen< aura_env.DDwhen and aura_env.runes[2].cd>aura_env.DDwhen then\n                aura_env.nextAction = \"BS\"\n            elseif garyCD>=165 and aura_env.runes[un].cd>2 then\n                aura_env.nextAction = \"UP\"\n            elseif uh-aura_env.gcdFreeWhen<2 and aura_env.runes[un].cd>2.5 then\n                aura_env.nextAction = \"PS\"\n            elseif aura_env.runes[un].cd>0.5 and aura_env.gf<12 and aura_env.TTD>aura_env.config.gfttk  then\n                aura_env.nextAction = \"GF\"\n            elseif ff-aura_env.gcdFreeWhen<2.5 and aura_env.runes[fn].cd>3.5 then\n                aura_env.nextAction = \"IT\"\n            else\n                aura_env.nextAction = \"BB\"\n            end\n        else\n            \n            if false then --aura_env.DDlock then\n                \n                aura_env.nextAction = \"DD\"\n                \n            else\n                local v2 = 0\n                if ff<=aura_env.gcdFreeWhen then \n                    v2 =  ((aura_env.runes[fn].cd)<=(aura_env.runes[un].cd) and (aura_env.runes[fn].cd)<=(aura_env.runes[bn].cd))\n                    \n                else v2 =  ((aura_env.runes[fn].cd)<(aura_env.runes[un].cd) and (aura_env.runes[fn].cd)<(aura_env.runes[bn].cd)) \n                end\n                \n                \n                local v1 = ((aura_env.runes[fl].cd)<=DDwhen and v2) --and uh-aura_env.gcdFreeWhen>0.1 and DESexpire-aura_env.gcdFreeWhen>0.1)\n                if v1  then\n                    aura_env.nextAction = \"IT\"\n                else\n                    local uhB = ((aura_env.runes[ul].cd)<=DDwhen and (aura_env.runes[un].cd)<=(aura_env.runes[fn].cd) and (aura_env.runes[un].cd)<=(aura_env.runes[bn].cd)) --and ff-aura_env.gcdFreeWhen>0.1 and DESexpire-aura_env.gcdFreeWhen>0.1)\n                    if uhB then\n                        \n                        if lastAction==\"GF\" and aura_env.gcdStamp==aura_env.gcdStampLast then\n                            aura_env.nextAction = \"GF\"\n                        elseif lastAction==\"PS\" and aura_env.gcdStamp==aura_env.gcdStampLast then\n                            aura_env.nextAction = \"PS\"\n                            \n                        elseif UnitExists(\"pet\") and aura_env.GFtalented==1 and uh>5 and aura_env.TTD>aura_env.config.gfttk  and aura_env.gf<=14   then\n                            \n                            if (aura_env.gf-aura_env.gcdFreeWhen)<=12 and (uh-aura_env.gcdFreeWhen)>=4 then \n                                \n                                \n                                \n                                local uhnn = (aura_env.runes[un].cd+(10-0.5*aura_env.impUP)+(aura_env.config.reaction/1000*2))\n                                local uhln = (aura_env.runes[ul].cd+(10-0.5*aura_env.impUP)+(aura_env.config.reaction/1000*2))\n                                \n                                if uhnn>DDwhen and (uh-aura_env.gcdFreeWhen)>aura_env.runes[ul].cd then\n                                    if aura_env.encounter and garyCD<15 and aura_env.TTD>garyCD+10 then\n                                        aura_env.nextAction = \"UP\"\n                                    else\n                                        aura_env.nextAction = \"GF\"\n                                    end \n                                elseif (uh-aura_env.gcdFreeWhen)>uhnn then\n                                    if aura_env.encounter and garyCD<15 and aura_env.TTD>garyCD+10 then\n                                        aura_env.nextAction = \"UP\"\n                                    else\n                                        aura_env.nextAction = \"GF\"\n                                    end \n                                else\n                                    local uhnn = (aura_env.runes[un].cd+(10-0.5*aura_env.impUP)+(aura_env.config.reaction/1000*2))\n                                    local uhln = (aura_env.runes[ul].cd+(10-0.5*aura_env.impUP)+(aura_env.config.reaction/1000*2))\n                                    \n                                    if uhnn>DDwhen and (uh-aura_env.gcdFreeWhen)>aura_env.runes[ul].cd then\n                                        aura_env.nextAction = \"PSBS\"\n                                    elseif (uh-aura_env.gcdFreeWhen)>uhnn then\n                                        aura_env.nextAction = \"PSBS\"\n                                    else\n                                        aura_env.nextAction = \"PS\"\n                                    end\n                                    \n                                end\n                                \n                                \n                                \n                                if ((aura_env.runes[un].cd+(10-0.5*aura_env.impUP)+(aura_env.config.reaction/1000*3))>DDwhen or (aura_env.gf-aura_env.gcdFreeWhen)<(aura_env.runes[ul].cd)) and (uh-aura_env.gcdFreeWhen)>4 then\n                                    \n                                    if aura_env.encounter and garyCD<15 and aura_env.TTD>garyCD+10 then\n                                        aura_env.nextAction = \"UP\"\n                                    else\n                                        aura_env.nextAction = \"GF\"\n                                    end \n                                else\n                                    \n                                    local uhnn = (aura_env.runes[un].cd+(10-0.5*aura_env.impUP)+(aura_env.config.reaction/1000*2))\n                                    local uhln = (aura_env.runes[ul].cd+(10-0.5*aura_env.impUP)+(aura_env.config.reaction/1000*2))\n                                    \n                                    if uhnn>DDwhen and (uh-aura_env.gcdFreeWhen)>aura_env.runes[ul].cd then\n                                        aura_env.nextAction = \"PSBS\"\n                                    elseif (uh-aura_env.gcdFreeWhen)>uhnn then\n                                        aura_env.nextAction = \"PSBS\"\n                                    else\n                                        aura_env.nextAction = \"PS\"\n                                    end\n                                    \n                                end\n                                \n                                \n                                \n                                \n                            else \n                                \n                                local uhnn = (aura_env.runes[un].cd+(10-0.5*aura_env.impUP)+(aura_env.config.reaction/1000*2))\n                                local uhln = (aura_env.runes[ul].cd+(10-0.5*aura_env.impUP)+(aura_env.config.reaction/1000*2))\n                                \n                                if uhnn>DDwhen and (uh-aura_env.gcdFreeWhen)>aura_env.runes[ul].cd then\n                                    aura_env.nextAction = \"PSBS\"\n                                elseif (uh-aura_env.gcdFreeWhen)>uhnn then\n                                    aura_env.nextAction = \"PSBS\"\n                                else\n                                    aura_env.nextAction = \"PS\"\n                                end\n                                \n                            end\n                            \n                        else\n                            \n                            \n                            local uhnn = (aura_env.runes[un].cd+(10-0.5*aura_env.impUP)+(aura_env.config.reaction/1000*2))\n                            local uhln = (aura_env.runes[ul].cd+(10-0.5*aura_env.impUP)+(aura_env.config.reaction/1000*2))\n                            \n                            if uhnn>DDwhen and (uh-aura_env.gcdFreeWhen)>aura_env.runes[ul].cd then\n                                aura_env.nextAction = \"PSBS\"\n                            elseif (uh-aura_env.gcdFreeWhen)>uhnn then\n                                aura_env.nextAction = \"PSBS\"\n                            else\n                                aura_env.nextAction = \"PS\"\n                            end\n                            \n                        end\n                    else\n                        local a = ((aura_env.runes[bn].cd)<=(aura_env.runes[fn].cd) and (aura_env.runes[bn].cd)<=(aura_env.runes[un].cd)) --and uh-aura_env.gcdFreeWhen>0.1 and ff-aura_env.gcdFreeWhen>0.1)\n                        \n                        if aura_env.runes[bl].cd<=DDwhen and a then\n                            --spend blood rune\n                            \n                            if lastAction == \"BS\" and aura_env.gcdStamp==aura_env.gcdStampLast then\n                                aura_env.nextAction = \"BS\"\n                            elseif lastAction == \"BB\" and aura_env.gcdStamp==aura_env.gcdStampLast then\n                                aura_env.nextAction = \"BB\"\n                            elseif (DESexpire-aura_env.gcdFreeWhen)<((10-0.5*aura_env.impUP)-0.5*aura_env.impUP) then\n                                if (aura_env.runes[bn].cd+(10-0.5*aura_env.impUP)+(aura_env.config.reaction/1000*3))>DDwhen  or (DESexpire-aura_env.gcdFreeWhen)<(aura_env.runes[bl].cd) or (DESexpire-aura_env.gcdFreeWhen)<4.5 then\n                                    \n                                    aura_env.nextAction = \"BS\"\n                                else \n                                    aura_env.nextAction = \"BB\"\n                                end\n                            else\n                                aura_env.nextAction = \"BB\"\n                            end\n                            \n                        else\n                            \n                            \n                            aura_env.nextAction = \"DD\" \n                            --[[ if timeNow-aura_env.dndCastWhen-aura_env.gcdFreeWhen>10 then\n                                aura_env.nextAction = \"DD\" \n                            elseif (aura_env.runes[fn].cd)<=(aura_env.runes[un].cd) and (aura_env.runes[fn].cd)<=(aura_env.runes[bn].cd) then\n                                aura_env.nextAction = \"IT\"\n                            elseif (aura_env.runes[bn].cd)<=(aura_env.runes[fn].cd+0.1) and (aura_env.runes[bn].cd)<=(aura_env.runes[un].cd) then\n                                aura_env.nextAction = \"BS\"\n                            elseif (aura_env.runes[un].cd)<=(aura_env.runes[fn].cd) and (aura_env.runes[un].cd)<=(aura_env.runes[bn].cd) then\n                                aura_env.nextAction = \"PS\"\n                            end]]\n                        end\n                        \n                    end\n                end \n            end\n            \n            \n            \n        end\n    end\n    \n    if  aura_env.nextAction == \"GF\" and uh<=0 and UnitAffectingCombat(\"player\") then aura_env.nextAction = \"PS\" end\n    local b = lastAction~=aura_env.nextAction or aura_env.init<3\n    if b then\n        \n        aura_env.init = aura_env.init +1\n        aura_env.stampWhenChanged = aura_env.gcdStamp\n        --print(aura_env.nextAction)\n        if timeNow+aura_env.gcdFreeWhen - aura_env.combatStart > 6 then\n            if (aura_env.GCDs() and not aura_env.bloodTapLock) and aura_env.bloodTapPredict - GetTime() + 1.5 < 0 then \n                \n                local start, duration = GetSpellCooldown(57330)\n                local a = (garyCD>=6 and aura_env.encounter and aura_env.TTD>garyCD+10)\n                local bb = a or not aura_env.encounter\n                if HoWTimer<12 and duration <=1.5 and not aura_env.totemDetected then\n                    aura_env.nextAction=\"HOW\"\n                else \n                    --print(bb)\n                    if duration<=1.5 and UnitPower(\"player\")<=55 and aura_env.TTD>20 then\n                        aura_env.nextAction=\"HOW\"\n                    elseif (bb or bloodP) and UnitPower(\"player\")>=40 then \n                        aura_env.nextAction=\"DC\"\n                    elseif UnitPower(\"player\")>=100 then \n                        aura_env.nextAction=\"DC\"\n                    elseif duration<=1.5 then\n                        aura_env.nextAction=\"HOW\"\n                    end \n                end \n            end \n        end\n        local flag = false\n        if  aura_env.nextAction == \"PS\" and uh-aura_env.gcdFreeWhen>11 then \n            flag=true    \n        end\n        if  aura_env.nextAction == \"BP\" and aura_env.impUP==2 then aura_env.nextAction = \"BB\" end\n        if  aura_env.nextAction == \"BP\" and garyCD>150 then aura_env.nextAction = \"BB\" end\n        \n        \n        WeakAuras.ScanEvents(\"fonsas_action\", aura_env.nextAction)\n        WeakAuras.ScanEvents(\"fonsas_boneS\", flag) \n        \n        \n    end\n    \n    -- when gary is alive/used and you are in blood presence: half UH presence on every UH rune usage\n    local a = aura_env.nextAction == \"PS\" or aura_env.nextAction == \"GF\" or aura_env.nextAction == \"PSBS\"\n    if garyCD>155 and not uhP and a and UnitAffectingCombat(\"player\") then\n        WeakAuras.ScanEvents(\"fonsas_UP2\", true) \n    elseif UnitAffectingCombat(\"player\") then\n        WeakAuras.ScanEvents(\"fonsas_UP2\", false)    \n    end\n    \n    \nend",
 						["check"] = "update",
-						["spellName"] = 85256,
+						["debuffType"] = "HELPFUL",
 						["events"] = "RUNE_POWER_UPDATE, PLAYER_TARGET_CHANGED, UNIT_POWER_UPDATE, PLAYER_AURAS_CHANGED, UNIT_SPELLCAST_SUCCEEDED",
-						["custom_hide"] = "custom",
+						["spellName"] = 85256,
 						["charges_operator"] = "==",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -41462,7 +41473,7 @@ WeakAurasSaved = {
 						},
 						["subeventSuffix"] = "_CAST_START",
 						["showOn"] = "showOnCooldown",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["unit"] = "player",
 						["names"] = {
 						},
@@ -41480,9 +41491,9 @@ WeakAurasSaved = {
 						["duration"] = "1",
 						["custom"] = "function(event, rune, status)\n    if event == \"RUNE_POWER_UPDATE\" and rune then\n        aura_env.runes[rune].free = status\n        if status then\n            \n            aura_env.runes[rune].cd = 0\n            --[[  if aura_env.bloodTapLock and rune==1 or rune==2 then\n                aura_env.bloodTapLock = false\n            end]]\n            \n        else\n            local start, duration = GetRuneCooldown(rune)\n            aura_env.runes[rune].when = start + duration\n            aura_env.runesCD()\n            local a1 = rune==1 or aura_env.runes[1].cd>4\n            --print(aura_env.encounterBT)\n            if a1 and aura_env.config.bloodTapFlag and aura_env.TTD>aura_env.config.BTTTK and aura_env.encounterBT then\n                --IF THE LAST RUNE USED WAS BLOOD LEFT RUNE, WE CAN CHECK IF BT IS NEEDED (IF OFF CD)\n                \n                local start, duration = GetSpellCooldown(45529)\n                if duration<=1.5 and aura_env.lastCastID ~= 47568 then\n                    -- print(aura_env.runes[2].cd)\n                    -- SIMPLY BLOOD BOIL\n                    local a = aura_env.runes[2].cd>3.2\n                    -- print(a)\n                    \n                    --RENEW FROST FEVER\n                    local b = aura_env.ff+0.5<aura_env.runes[5].cd and aura_env.ff+0.5<aura_env.runes[6].cd \n                    -- print(b)\n                    \n                    --RENEW BLOOD PLAGUE\n                    local c = aura_env.uh+0.5<aura_env.runes[3].cd and aura_env.uh+0.5<aura_env.runes[4].cd\n                    --  print(aura_env.uh)\n                    -- print(aura_env.runes[3].cd)\n                    -- print(aura_env.runes[4].cd)\n                    \n                    --RENEW DESOLATION\n                    local d = aura_env.des+0.5<aura_env.runes[2].cd\n                    --  print(d)\n                    \n                    --RENEW GF\n                    local ee = aura_env.gf-2\n                    if ee<0 then ee=0 end\n                    local e = ee<aura_env.runes[3].cd and ee<aura_env.runes[4].cd\n                    -- print(e)\n                    \n                    --local f = aura_env.DDend-GetTime()<0 and \n                    \n                    \n                    local f =  aura_env.garyCD<=160 and aura_env.runes[2].cd>2\n                    local g =  aura_env.garyCD>=165 and aura_env.runes[3].cd>2 and aura_env.runes[4].cd>2 \n                    --print(f)\n                    --print(g)\n                    \n                    local h = aura_env.runes[3].cd>5 and aura_env.runes[4].cd>5\n                    \n                    \n                    if a or b or c or d or e or f or g or h  then\n                        --print(a)\n                        WeakAuras.ScanEvents(\"fonsas_actionBT\") \n                        aura_env.bloodTapPredict = GetTime()\n                        aura_env.bloodTapLock = true\n                        aura_env.initBT = 0\n                    end\n                end\n            end\n            \n            \n        end\n        aura_env.ERW()\n    end\nend",
 						["check"] = "event",
-						["spellName"] = 85256,
+						["debuffType"] = "HELPFUL",
 						["events"] = "RUNE_POWER_UPDATE",
-						["custom_hide"] = "custom",
+						["spellName"] = 85256,
 						["charges_operator"] = "==",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -41497,7 +41508,7 @@ WeakAurasSaved = {
 						},
 						["subeventSuffix"] = "_CAST_START",
 						["showOn"] = "showOnCooldown",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["unit"] = "player",
 						["names"] = {
 						},
@@ -41515,9 +41526,9 @@ WeakAurasSaved = {
 						["duration"] = "1",
 						["custom"] = "function(event, a1, a2, a3)\n    \n    \n    if a3 == 49206 then\n        aura_env.garyCastWhen = GetTime()\n    end\n    \n    \n    \n    if a3==49938 then\n        aura_env.dndCastWhen = GetTime()\n    end\n    \n    if a3==49938 or a3==43265 or a3==49937 or a3==49936 then\n        --print(aura_env.DDend - GetTime())\n        aura_env.dndCastWhen = GetTime()\n        aura_env.DDend = aura_env.DDdur + GetTime()\n        aura_env.DDlock = false\n    end\n    \n    \n    if a3==45529 then \n        aura_env.bloodTapLock = true\n    end\n    \n    local lastGCD = aura_env.gcdStamp\n    local start, duration = GetSpellCooldown(61304)\n    aura_env.gcdWhen = start+duration+ aura_env.config.reaction/1000\n    if duration>0 then\n        aura_env.fixedGCD = duration\n    end \n    aura_env.gcdStamp = start+duration\n    if lastGCD ~= aura_env.gcdStamp then\n        aura_env.gcdStampLast = lastGCD\n        --print(aura_env.gcdStampLast)\n        --[[if aura_env.bloodTapLock then\n            --print(\"tap lock false?\")\n            --print(aura_env.initBT)\n            if aura_env.initBT==0 then\n                aura_env.initBT = 1\n            else\n                aura_env.bloodTapLock = false\n            end\n            \n        end]]\n    end\n    \n    \n    if a3==45529 then \n        aura_env.bloodTapLock = true\n    end\n    if aura_env.ERWused>0 then \n        aura_env.ERWused = aura_env.ERWused -0.05\n    end\n    \n    if a3==47568 then \n        aura_env.ERWused = 0.20\n        aura_env.bloodTapLock = false\n        aura_env.runes[1].cd = 0 -aura_env.ERWused\n        aura_env.runes[2].cd = 0\n        aura_env.runes[3].cd = 0 -aura_env.ERWused\n        aura_env.runes[4].cd = 0\n        aura_env.runes[5].cd = 0 -aura_env.ERWused\n        aura_env.runes[6].cd = 0\n        aura_env.runes[1].when = GetTime()-aura_env.ERWused\n        aura_env.runes[2].when = GetTime()\n        aura_env.runes[3].when = GetTime()-aura_env.ERWused\n        aura_env.runes[4].when = GetTime()\n        aura_env.runes[5].when = GetTime()-aura_env.ERWused\n        aura_env.runes[6].when = GetTime()\n    end\n    \n    aura_env.lastCastID  = a3\n    \n    \nend\n\n\n",
 						["check"] = "event",
-						["spellName"] = 85256,
+						["debuffType"] = "HELPFUL",
 						["events"] = "UNIT_SPELLCAST_SUCCEEDED:player",
-						["custom_hide"] = "custom",
+						["spellName"] = 85256,
 						["charges_operator"] = "==",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -41532,7 +41543,7 @@ WeakAurasSaved = {
 						},
 						["subeventSuffix"] = "_CAST_START",
 						["showOn"] = "showOnCooldown",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["unit"] = "player",
 						["names"] = {
 						},
@@ -41550,9 +41561,9 @@ WeakAurasSaved = {
 						["duration"] = "1",
 						["custom"] = "function(event, action)\n    --aura_env.nextAction = \"bonesFull\"\n    if action == \"BP\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", true) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_GARY\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_PSBS\", false) \n        \n        \n    elseif action == \"clear\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_GARY\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_PSBS\", false) \n        \n    elseif action == \"DD\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", true) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_GARY\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_PSBS\", false) \n        \n    elseif action == \"IT\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", true) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_GARY\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        \n        \n    elseif action == \"PS\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", true) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_GARY\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_PSBS\", false) \n        \n        \n    elseif action == \"BS\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", true) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_GARY\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_PSBS\", false) \n        \n        \n    elseif action == \"DC\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", true) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_GARY\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_PSBS\", false) \n        \n        \n    elseif action == \"BB\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", true) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_GARY\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_PSBS\", false) \n        \n        \n    elseif action == \"GF\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", true) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_GARY\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_PSBS\", false) \n        \n        \n    elseif action == \"HOW\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false)\n        WeakAuras.ScanEvents(\"fonsas_HOW\", true)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_GARY\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_PSBS\", false) \n        \n        \n        \n    elseif action == \"UP\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false)\n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", true) \n        WeakAuras.ScanEvents(\"fonsas_GARY\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_PSBS\", false) \n        \n        \n        \n    elseif action == \"GARY\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_GARY\", true) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_PSBS\", false) \n        \n        \n    elseif action == \"bonesFull\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_GARY\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", true) \n        WeakAuras.ScanEvents(\"fonsas_PSBS\", false) \n        \n        \n        \n    elseif action == \"PSBS\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_GARY\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_PSBS\", true) \n        \n    end\n    \nend",
 						["check"] = "event",
-						["spellName"] = 85256,
+						["debuffType"] = "HELPFUL",
 						["events"] = "fonsas_action",
-						["custom_hide"] = "custom",
+						["spellName"] = 85256,
 						["charges_operator"] = "==",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -41567,7 +41578,7 @@ WeakAurasSaved = {
 						},
 						["subeventSuffix"] = "_CAST_START",
 						["showOn"] = "showOnCooldown",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["unit"] = "player",
 						["names"] = {
 						},
@@ -41585,9 +41596,9 @@ WeakAurasSaved = {
 						["duration"] = "1",
 						["custom"] = "function()\n\nlocal nameTalent, icon, tier, column, currRank= GetTalentInfo(3,2)\naura_env.DDdur = 30 - (5*currRank)\nlocal nameTalent, icon, tier, column, currRank= GetTalentInfo(3,25)\naura_env.GFtalented = currRank\n\nend",
 						["check"] = "event",
-						["spellName"] = 85256,
+						["debuffType"] = "HELPFUL",
 						["events"] = "PLAYER_TARGET_CHANGED",
-						["custom_hide"] = "custom",
+						["spellName"] = 85256,
 						["charges_operator"] = "==",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -41602,7 +41613,7 @@ WeakAurasSaved = {
 						},
 						["subeventSuffix"] = "_CAST_START",
 						["showOn"] = "showOnCooldown",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["unit"] = "player",
 						["names"] = {
 						},
@@ -41802,38 +41813,17 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "DK Next Action Guide - by Fonsas",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 136144,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.garyCastWhen = 0\naura_env.combatStart = GetTime()\naura_env.bloodTapTrash = aura_env.config.bloodTapTrash\naura_env.encounterBT = false or aura_env.config.bloodTapTrash\n--print(aura_env.encounterBT)\n\naura_env.delayDD = 0\naura_env.lastExecution = GetTime()\naura_env.last = 0\naura_env.dndCastWhen = 0\n\n--[[local numTabs = GetNumTalentTabs();\nfor t=1, numTabs do\n    --DEFAULT_CHAT_FRAME:AddMessage(GetTalentTabInfo(t)..\":\");\n    local numTalents = GetNumTalents(t);\n    for i=1, numTalents do\n        nameTalent, icon, tier, column, currRank, maxRank= GetTalentInfo(t,i);\n        --DEFAULT_CHAT_FRAME:AddMessage(\"- \"..nameTalent..\": \"..currRank..\"/\"..maxRank);\n        if nameTalent==\"Improved Unholy Presence\" then \n            print(t)\n            print(i)\n            print(currRank)\n        end\n    end\nend]]\n\nlocal nameTalent, icon, tier, column, currRank, maxRank= GetTalentInfo(3,18);\naura_env.impUP = currRank\n\n\naura_env.mobCount = 1\n\n\naura_env.mobsAround = function()\n    local count = 0\n    for i = 1, 40 do\n        local unit = \"nameplate\"..i\n        if UnitCanAttack(\"player\", unit)\n        and WeakAuras.CheckRange(unit, 8, \"<=\")\n        then\n            count = count + 1\n        end\n    end\n    return count\nend\n\n\n\n--print(aura_env.impUP)\n\naura_env.totemDetected = false\naura_env.ERWused=0\naura_env.stampWhenChanged = 0\n\nlocal nameTalent, icon, tier, column, currRank, maxRank= GetTalentInfo(3,14);\naura_env.boneShieldTalented = currRank\n\naura_env.BTpredict = false\naura_env.initBT = 0\naura_env.lastCastID = 0\naura_env.bloodTapPredict = GetTime()\n\naura_env.ff = 0\naura_env.uh = 0\naura_env.des = 0\naura_env.gf = 0\n\n\naura_env.ERW = function() \n    local start, duration = GetSpellCooldown(47568) --erw\n    if duration<=1.5 then\n        local CDsum = 0\n        for i=1,6 do \n            local a = aura_env.runes[i].when-GetTime()\n            if a<0 then a = 0 end\n            CDsum = CDsum + a\n            \n        end\n        WeakAuras.ScanEvents(\"fonsas_ERW\", CDsum) \n    end\nend\n\n\n\naura_env.encounter = false or aura_env.config.gary\naura_env.oStep = 0\naura_env.DDwhen = 0\naura_env.castStamp = 0\nlocal start, duration = GetSpellCooldown(61304)\naura_env.gcdWhen = start+duration+ aura_env.config.reaction/1000\naura_env.fixedGCD = 1.5\naura_env.gcdStamp = start+duration\naura_env.gcdStampLast = 0\n\n\n\naura_env.init = 0\naura_env.runes = {}\n\n\naura_env.bloodTapLock = false\naura_env.DDlock = false\n\n\naura_env.runes[1] = {free=true, when=0, cd=0} --1\naura_env.runes[2] = {free=true, when=0, cd=0} --2\naura_env.runes[5] = {free=true, when=0, cd=0} --5\naura_env.runes[6] = {free=true, when=0, cd=0} --6\naura_env.runes[3] = {free=true, when=0, cd=0} --3\naura_env.runes[4] = {free=true, when=0, cd=0} --4\n\nWeakAuras.WatchGCD()\naura_env.gcdWhen = WeakAuras.CalculatedGcdDuration()\naura_env.gcdFreeWhen =0\n\naura_env.nextAction = \"clear\"\nWeakAuras.ScanEvents(\"fonsas_action\", aura_env.nextAction) \n\n--[[\nif status then\n    aura_env.runes[rune].when  = 0\nelse\n    \n    local start, duration = GetRuneCooldown(rune)\n    aura_env.runes[rune].when = start + duration\nend\n]]\n\n--/run print(UnitAura(\"target\", \"Forbearance\", \"PLAYER|HARMFUL\"))\n\naura_env.GetNumDebuffs =  function()\n    local a=0; while UnitAura(\"target\", a+1, \"PLAYER|HARMFUL\") do a=a+1 end\n    --print(a)\n    return a;\nend\naura_env.GetNumBuffs =  function()\n    local a=0; while UnitAura(\"player\", a+1, \"HELPFUL\") do a=a+1 end\n    --print(a)\n    return a;\nend\n\naura_env.GetNumBuffsPet =  function()\n    local a=0; while UnitAura(\"pet\", a+1, \"PLAYER|HELPFUL\") do a=a+1 end\n    --print(a)\n    return a;\nend\n\naura_env.trackD = function() \n    \n    local expireFF = 0\n    local expureUh = 0\n    \n    for i=1,aura_env.GetNumDebuffs() do \n        -- n, rank, icon, count, debuffType, dur, expirationTime, unitCaster, isStealable, shouldConsolidate, id \n        local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura(\"target\", i, \"PLAYER|HARMFUL\")\n        \n        --55095 67719 67767 69917 \n        if name==\"Frost Fever\" or id == 55095 or id == 67719 or id == 67767 or id == 69917 then\n            --print(id)\n            expireFF  = expireWhen - GetTime()\n        end\n        -- BP fest           \n        if name==\"Blood Plague\" or id ==55264  or id ==55973   or id ==55322  or id ==57601  or id ==58840  or id ==58844  or id ==59984  or id ==60950  or id ==61111  or id ==61601  or id ==67722  or id ==69911  or id ==55078  or id ==71923  then\n            --print(id)\n            expureUh = expireWhen - GetTime()\n        end\n        \n    end\n    \n    return expireFF, expureUh\n    \n    \nend\n\n\naura_env.trackB = function() \n    local expureDesolation = 0\n    local bloodP = false\n    local how = 0\n    local totem = false\n    local uhP = false\n    local uhstr = 0\n    local bones = 0\n    for i=1,aura_env.GetNumBuffs() do \n        -- n, rank, icon, count, debuffType, dur, expirationTime, unitCaster, isStealable, shouldConsolidate, id \n        local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura(\"player\", i, \"HELPFUL\")\n        --print(name)\n        --print(id)\n        if name==\"Desolation\" or id == 66803 or id == 63583 or id == 66800 or id == 66801 or id == 66802 then\n            \n            expureDesolation  = expireWhen - GetTime()\n        end\n        \n        if name==\"Blood Presence\" or id ==48266 then\n            --print(id)\n            bloodP  = true\n        end\n        if name==\"Unholy Presence\" or id ==48265 then\n            --print(id)\n            uhP  = true\n        end\n        if name==\"Strength of Earth\" or id ==58646 or id == 10441 or id == 25362 or id == 25527 or id == 57621 then\n            --print(id)\n            totem  = true\n        end\n        \n        if name==\"Horn of Winter\" or id ==57330 or id == 57623 then\n            -- print(id)\n            how  = expireWhen - GetTime()\n        end\n        \n        if name==\"Unholy Strength\" or id ==53365 then\n            --print(id)\n            uhstr  = expireWhen - GetTime()\n        end\n        \n        if name==\"Bone Shield\" or id ==49222 then\n            --print(id)\n            bones  = expireWhen - GetTime()\n        end\n    end\n    \n    return expureDesolation, bloodP, how, uhP, uhstr, totem, bones\n    \n    \nend\n\n\naura_env.trackBPet = function() \n    local expureGF = 0\n    if GetSpellCooldown(\"Ghoul Frenzy\")==nil then expureGF=0 end\n    for i=1,aura_env.GetNumBuffsPet() do \n        -- n, rank, icon, count, debuffType, dur, expirationTime, unitCaster, isStealable, shouldConsolidate, id \n        local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura(\"pet\", i, \"PLAYER|HELPFUL\")\n        --print(name)\n        if name==\"Ghoul Frenzy\" or id == 63560 then\n            expureGF  = expireWhen - GetTime()\n        end\n    end\n    \n    return expureGF\n    \n    \nend\n\nlocal nameTalent, icon, tier, column, currRank= GetTalentInfo(3,2)\naura_env.DDdur = 30 - (5*currRank)\nlocal nameTalent, icon, tier, column, currRank= GetTalentInfo(3,25)\naura_env.GFtalented = currRank\n\naura_env.DDend = GetTime()-3\naura_env.DDCD = 0\n\n\naura_env.TTD = 180\n\n-- Credit to Aethys https://github.com/herotc/hero-lib\n\nlocal cache = {}\nlocal units = {}\n\nlocal iterableUnits = {\"focus\", \"target\", \"mouseover\"}\nif not WeakAuras.IsClassic() then\n    for i=1,5 do\n        iterableUnits[#iterableUnits+1] = \"boss\"..i\n    end\nend\n\nfor i=1,40 do\n    iterableUnits[#iterableUnits+1] = \"nameplate\"..i\nend\n\nfunction aura_env.TTDRefresh()\n    local currentTime = GetTime()\n    local checkedUnits = {}\n    local historyCount = 100\n    local historyTime = 10\n    \n    for _, unit in ipairs(iterableUnits) do\n        if UnitExists(unit) then\n            local GUID = UnitGUID(unit)\n            if not checkedUnits[GUID] then\n                checkedUnits[GUID] = true\n                local health = UnitHealth(unit)\n                local maxHealth = UnitHealthMax(unit)\n                local healthPercentage = health ~= -1 and maxHealth ~= -1 and health / maxHealth * 100\n                -- Check if it's a valid unit\n                if UnitCanAttack(\"player\", unit) and healthPercentage < 100 then\n                    local unitTable = units[GUID]\n                    -- Check if we have seen one time this unit, if we don't then initialize it.\n                    if not unitTable or healthPercentage > unitTable[1][1][2] then\n                        unitTable = { {}, currentTime }\n                        units[GUID] = unitTable\n                    end\n                    local values = unitTable[1]\n                    local time = currentTime - unitTable[2]\n                    -- Check if the % HP changed since the last check (or if there were none)\n                    if #values == 0 or healthPercentage ~= values[1][2] then\n                        local value\n                        local lastIndex = #cache\n                        -- Check if we can re-use a table from the cache -- Buds: i have doubt on the value of reusing table, with the high cost of tinsert on 1st index\n                        if lastIndex == 0 then\n                            value = { time, healthPercentage }\n                        else\n                            value = cache[lastIndex]\n                            cache[lastIndex] = nil\n                            value[1] = time\n                            value[2] = healthPercentage\n                        end\n                        table.insert(values, 1, value)\n                        local n = #values\n                        -- Delete values that are no longer valid\n                        while (n > historyCount) or (time - values[n][1] > historyTime) do\n                            cache[#cache + 1] = values[n]\n                            values[n] = nil\n                            n = n - 1\n                        end\n                    end\n                end\n            end\n        end\n    end\nend\n\nfunction aura_env.TimeToX(guid, percentage, minSamples)\n    --if self:IsDummy() then return 6666 end\n    --if self:IsAPlayer() and Player:CanAttack(self) then return 25 end\n    local seconds = 8888\n    local unitTable = units[guid]\n    -- Simple linear regression\n    -- ( E(x^2)  E(x) )  ( a )  ( E(xy) )\n    -- ( E(x)     n  )  ( b ) = ( E(y)  )\n    -- Format of the above: ( 2x2 Matrix ) * ( 2x1 Vector ) = ( 2x1 Vector )\n    -- Solve to find a and b, satisfying y = a + bx\n    -- Matrix arithmetic has been expanded and solved to make the following operation as fast as possible\n    if unitTable then\n        local values = unitTable[1]\n        local n = #values\n        if n > minSamples then\n            local a, b = 0, 0\n            local Ex2, Ex, Exy, Ey = 0, 0, 0, 0\n            \n            local value, x, y\n            for i = 1, n do\n                value = values[i]\n                x, y = value[1], value[2]\n                \n                Ex2 = Ex2 + x * x\n                Ex = Ex + x\n                Exy = Exy + x * y\n                Ey = Ey + y\n            end\n            -- invariant to find matrix inverse\n            local invariant = 1 / (Ex2 * n - Ex * Ex)\n            -- Solve for a and b\n            a = (-Ex * Exy * invariant) + (Ex2 * Ey * invariant)\n            b = (n * Exy * invariant) - (Ex * Ey * invariant)\n            if b ~= 0 then\n                -- Use best fit line to calculate estimated time to reach target health\n                seconds = (percentage - a) / b\n                -- Subtract current time to obtain \"time remaining\"\n                seconds = math.min(7777, seconds - (GetTime() - unitTable[2]))\n                if seconds < 0 then seconds = 9999 end\n            end\n        end\n    end\n    return seconds\nend\n\n\nfunction aura_env.runesCD()\n    \n    for i=1, 6 do\n        aura_env.runes[i].cd= aura_env.runes[i].when - GetTime() - aura_env.gcdFreeWhen\n        if i>1 then\n            if aura_env.runes[i].cd< -(2.49+aura_env.gcdFreeWhen) then\n                aura_env.runes[i].cd = -2.5\n            end \n        else \n            if GetRuneType(1)~=4 then\n                if aura_env.runes[i].cd< -(2.49+aura_env.gcdFreeWhen) then\n                    aura_env.runes[i].cd = -2.50\n                end \n            end\n        end\n    end\nend\n\n\n\n\n\naura_env.GCDs = function()\n    local nextRune = 0\n    \n    local r1 = aura_env.runes[1].cd+2\n    if r1<0 then r1=0 end\n    local r2 = aura_env.runes[2].cd+2\n    if r2<0 then r2=0 end\n    local r3 = aura_env.runes[3].cd+2\n    if r3<0 then r3=0 end\n    local r4 = aura_env.runes[4].cd+2\n    if r4<0 then r4=0 end\n    local r5 = aura_env.runes[5].cd+2\n    if r5<0 then r5=0 end\n    local r6 = aura_env.runes[6].cd+2\n    if r6<0 then r6=0 end\n    \n    if r1>r2 then else end\n    local a = 0\n    -- print(\"aura_env.bloodTapLock: \".. tostring(aura_env.bloodTapLock))\n    if aura_env.bloodTapLock then return false else\n        \n        if aura_env.nextAction == \"DD\" then\n            \n            a = aura_env.DDwhen\n           -- local b = aura_env.fixedGCD - 0.2 \n           \n            \n           -- print(\"time for the next spell to be available: \".. tostring(a))\n          --  print(\"b value:\" .. tostring(b))\n        elseif aura_env.nextAction == \"IT\" then\n            \n            if r5>r6 then nextRune=r6 else nextRune=r5 end\n            \n            a = nextRune \n            \n        elseif aura_env.nextAction == \"PS\" or aura_env.nextAction == \"GF\" or aura_env.nextAction == \"PSBS\" or aura_env.nextAction == \"UP\" then\n            \n            if r3>r4 then nextRune=r4 else nextRune=r3 end\n            \n            a = nextRune \n            \n        elseif aura_env.nextAction == \"BS\" or aura_env.nextAction == \"BB\" or aura_env.nextAction == \"BP\" then\n            \n            if r1>r2 then nextRune=r2 else nextRune=r1 end\n            \n            a = nextRune \n            \n        else\n            return false\n        end\n    end\n   -- print(\"--\")\n    -- if a < 0 then a = 0 end\n    local b = aura_env.fixedGCD - 0.2\n    --if b<0 then b=0 end\n    \n    -- print(\"time for the next spell to be available: \".. tostring(a))\n    -- print(\"b value:\" .. tostring(b))\n    \n    \n    if a>b then return true else return false end\n    \nend\n\n\n\n\n\n",
-					["do_custom"] = true,
-				},
-				["finish"] = {
-				},
-			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "(y(11T(rHDC",
-			["selfPoint"] = "CENTER",
-			["width"] = 35,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = true,
-			["tocversion"] = 30401,
-			["id"] = "Rotation manager - dw unholy",
 			["authorOptions"] = {
 				{
 					["type"] = "range",
@@ -41927,9 +41917,30 @@ WeakAurasSaved = {
 					["width"] = 1.1,
 				}, -- [9]
 			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "(y(11T(rHDC",
+			["xOffset"] = 0,
+			["width"] = 35,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = true,
+			["tocversion"] = 30401,
+			["id"] = "Rotation manager - dw unholy",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.garyCastWhen = 0\naura_env.combatStart = GetTime()\naura_env.bloodTapTrash = aura_env.config.bloodTapTrash\naura_env.encounterBT = false or aura_env.config.bloodTapTrash\n--print(aura_env.encounterBT)\n\naura_env.delayDD = 0\naura_env.lastExecution = GetTime()\naura_env.last = 0\naura_env.dndCastWhen = 0\n\n--[[local numTabs = GetNumTalentTabs();\nfor t=1, numTabs do\n    --DEFAULT_CHAT_FRAME:AddMessage(GetTalentTabInfo(t)..\":\");\n    local numTalents = GetNumTalents(t);\n    for i=1, numTalents do\n        nameTalent, icon, tier, column, currRank, maxRank= GetTalentInfo(t,i);\n        --DEFAULT_CHAT_FRAME:AddMessage(\"- \"..nameTalent..\": \"..currRank..\"/\"..maxRank);\n        if nameTalent==\"Improved Unholy Presence\" then \n            print(t)\n            print(i)\n            print(currRank)\n        end\n    end\nend]]\n\nlocal nameTalent, icon, tier, column, currRank, maxRank= GetTalentInfo(3,18);\naura_env.impUP = currRank\n\n\naura_env.mobCount = 1\n\n\naura_env.mobsAround = function()\n    local count = 0\n    for i = 1, 40 do\n        local unit = \"nameplate\"..i\n        if UnitCanAttack(\"player\", unit)\n        and WeakAuras.CheckRange(unit, 8, \"<=\")\n        then\n            count = count + 1\n        end\n    end\n    return count\nend\n\n\n\n--print(aura_env.impUP)\n\naura_env.totemDetected = false\naura_env.ERWused=0\naura_env.stampWhenChanged = 0\n\nlocal nameTalent, icon, tier, column, currRank, maxRank= GetTalentInfo(3,14);\naura_env.boneShieldTalented = currRank\n\naura_env.BTpredict = false\naura_env.initBT = 0\naura_env.lastCastID = 0\naura_env.bloodTapPredict = GetTime()\n\naura_env.ff = 0\naura_env.uh = 0\naura_env.des = 0\naura_env.gf = 0\n\n\naura_env.ERW = function() \n    local start, duration = GetSpellCooldown(47568) --erw\n    if duration<=1.5 then\n        local CDsum = 0\n        for i=1,6 do \n            local a = aura_env.runes[i].when-GetTime()\n            if a<0 then a = 0 end\n            CDsum = CDsum + a\n            \n        end\n        WeakAuras.ScanEvents(\"fonsas_ERW\", CDsum) \n    end\nend\n\n\n\naura_env.encounter = false or aura_env.config.gary\naura_env.oStep = 0\naura_env.DDwhen = 0\naura_env.castStamp = 0\nlocal start, duration = GetSpellCooldown(61304)\naura_env.gcdWhen = start+duration+ aura_env.config.reaction/1000\naura_env.fixedGCD = 1.5\naura_env.gcdStamp = start+duration\naura_env.gcdStampLast = 0\n\n\n\naura_env.init = 0\naura_env.runes = {}\n\n\naura_env.bloodTapLock = false\naura_env.DDlock = false\n\n\naura_env.runes[1] = {free=true, when=0, cd=0} --1\naura_env.runes[2] = {free=true, when=0, cd=0} --2\naura_env.runes[5] = {free=true, when=0, cd=0} --5\naura_env.runes[6] = {free=true, when=0, cd=0} --6\naura_env.runes[3] = {free=true, when=0, cd=0} --3\naura_env.runes[4] = {free=true, when=0, cd=0} --4\n\nWeakAuras.WatchGCD()\naura_env.gcdWhen = WeakAuras.CalculatedGcdDuration()\naura_env.gcdFreeWhen =0\n\naura_env.nextAction = \"clear\"\nWeakAuras.ScanEvents(\"fonsas_action\", aura_env.nextAction) \n\n--[[\nif status then\n    aura_env.runes[rune].when  = 0\nelse\n    \n    local start, duration = GetRuneCooldown(rune)\n    aura_env.runes[rune].when = start + duration\nend\n]]\n\n--/run print(UnitAura(\"target\", \"Forbearance\", \"PLAYER|HARMFUL\"))\n\naura_env.GetNumDebuffs =  function()\n    local a=0; while UnitAura(\"target\", a+1, \"PLAYER|HARMFUL\") do a=a+1 end\n    --print(a)\n    return a;\nend\naura_env.GetNumBuffs =  function()\n    local a=0; while UnitAura(\"player\", a+1, \"HELPFUL\") do a=a+1 end\n    --print(a)\n    return a;\nend\n\naura_env.GetNumBuffsPet =  function()\n    local a=0; while UnitAura(\"pet\", a+1, \"PLAYER|HELPFUL\") do a=a+1 end\n    --print(a)\n    return a;\nend\n\naura_env.trackD = function() \n    \n    local expireFF = 0\n    local expureUh = 0\n    \n    for i=1,aura_env.GetNumDebuffs() do \n        -- n, rank, icon, count, debuffType, dur, expirationTime, unitCaster, isStealable, shouldConsolidate, id \n        local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura(\"target\", i, \"PLAYER|HARMFUL\")\n        \n        --55095 67719 67767 69917 \n        if name==\"Frost Fever\" or id == 55095 or id == 67719 or id == 67767 or id == 69917 then\n            --print(id)\n            expireFF  = expireWhen - GetTime()\n        end\n        -- BP fest           \n        if name==\"Blood Plague\" or id ==55264  or id ==55973   or id ==55322  or id ==57601  or id ==58840  or id ==58844  or id ==59984  or id ==60950  or id ==61111  or id ==61601  or id ==67722  or id ==69911  or id ==55078  or id ==71923  then\n            --print(id)\n            expureUh = expireWhen - GetTime()\n        end\n        \n    end\n    \n    return expireFF, expureUh\n    \n    \nend\n\n\naura_env.trackB = function() \n    local expureDesolation = 0\n    local bloodP = false\n    local how = 0\n    local totem = false\n    local uhP = false\n    local uhstr = 0\n    local bones = 0\n    for i=1,aura_env.GetNumBuffs() do \n        -- n, rank, icon, count, debuffType, dur, expirationTime, unitCaster, isStealable, shouldConsolidate, id \n        local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura(\"player\", i, \"HELPFUL\")\n        --print(name)\n        --print(id)\n        if name==\"Desolation\" or id == 66803 or id == 63583 or id == 66800 or id == 66801 or id == 66802 then\n            \n            expureDesolation  = expireWhen - GetTime()\n        end\n        \n        if name==\"Blood Presence\" or id ==48266 then\n            --print(id)\n            bloodP  = true\n        end\n        if name==\"Unholy Presence\" or id ==48265 then\n            --print(id)\n            uhP  = true\n        end\n        if name==\"Strength of Earth\" or id ==58646 or id == 10441 or id == 25362 or id == 25527 or id == 57621 then\n            --print(id)\n            totem  = true\n        end\n        \n        if name==\"Horn of Winter\" or id ==57330 or id == 57623 then\n            -- print(id)\n            how  = expireWhen - GetTime()\n        end\n        \n        if name==\"Unholy Strength\" or id ==53365 then\n            --print(id)\n            uhstr  = expireWhen - GetTime()\n        end\n        \n        if name==\"Bone Shield\" or id ==49222 then\n            --print(id)\n            bones  = expireWhen - GetTime()\n        end\n    end\n    \n    return expureDesolation, bloodP, how, uhP, uhstr, totem, bones\n    \n    \nend\n\n\naura_env.trackBPet = function() \n    local expureGF = 0\n    if GetSpellCooldown(\"Ghoul Frenzy\")==nil then expureGF=0 end\n    for i=1,aura_env.GetNumBuffsPet() do \n        -- n, rank, icon, count, debuffType, dur, expirationTime, unitCaster, isStealable, shouldConsolidate, id \n        local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura(\"pet\", i, \"PLAYER|HELPFUL\")\n        --print(name)\n        if name==\"Ghoul Frenzy\" or id == 63560 then\n            expureGF  = expireWhen - GetTime()\n        end\n    end\n    \n    return expureGF\n    \n    \nend\n\nlocal nameTalent, icon, tier, column, currRank= GetTalentInfo(3,2)\naura_env.DDdur = 30 - (5*currRank)\nlocal nameTalent, icon, tier, column, currRank= GetTalentInfo(3,25)\naura_env.GFtalented = currRank\n\naura_env.DDend = GetTime()-3\naura_env.DDCD = 0\n\n\naura_env.TTD = 180\n\n-- Credit to Aethys https://github.com/herotc/hero-lib\n\nlocal cache = {}\nlocal units = {}\n\nlocal iterableUnits = {\"focus\", \"target\", \"mouseover\"}\nif not WeakAuras.IsClassic() then\n    for i=1,5 do\n        iterableUnits[#iterableUnits+1] = \"boss\"..i\n    end\nend\n\nfor i=1,40 do\n    iterableUnits[#iterableUnits+1] = \"nameplate\"..i\nend\n\nfunction aura_env.TTDRefresh()\n    local currentTime = GetTime()\n    local checkedUnits = {}\n    local historyCount = 100\n    local historyTime = 10\n    \n    for _, unit in ipairs(iterableUnits) do\n        if UnitExists(unit) then\n            local GUID = UnitGUID(unit)\n            if not checkedUnits[GUID] then\n                checkedUnits[GUID] = true\n                local health = UnitHealth(unit)\n                local maxHealth = UnitHealthMax(unit)\n                local healthPercentage = health ~= -1 and maxHealth ~= -1 and health / maxHealth * 100\n                -- Check if it's a valid unit\n                if UnitCanAttack(\"player\", unit) and healthPercentage < 100 then\n                    local unitTable = units[GUID]\n                    -- Check if we have seen one time this unit, if we don't then initialize it.\n                    if not unitTable or healthPercentage > unitTable[1][1][2] then\n                        unitTable = { {}, currentTime }\n                        units[GUID] = unitTable\n                    end\n                    local values = unitTable[1]\n                    local time = currentTime - unitTable[2]\n                    -- Check if the % HP changed since the last check (or if there were none)\n                    if #values == 0 or healthPercentage ~= values[1][2] then\n                        local value\n                        local lastIndex = #cache\n                        -- Check if we can re-use a table from the cache -- Buds: i have doubt on the value of reusing table, with the high cost of tinsert on 1st index\n                        if lastIndex == 0 then\n                            value = { time, healthPercentage }\n                        else\n                            value = cache[lastIndex]\n                            cache[lastIndex] = nil\n                            value[1] = time\n                            value[2] = healthPercentage\n                        end\n                        table.insert(values, 1, value)\n                        local n = #values\n                        -- Delete values that are no longer valid\n                        while (n > historyCount) or (time - values[n][1] > historyTime) do\n                            cache[#cache + 1] = values[n]\n                            values[n] = nil\n                            n = n - 1\n                        end\n                    end\n                end\n            end\n        end\n    end\nend\n\nfunction aura_env.TimeToX(guid, percentage, minSamples)\n    --if self:IsDummy() then return 6666 end\n    --if self:IsAPlayer() and Player:CanAttack(self) then return 25 end\n    local seconds = 8888\n    local unitTable = units[guid]\n    -- Simple linear regression\n    -- ( E(x^2)  E(x) )  ( a )  ( E(xy) )\n    -- ( E(x)     n  )  ( b ) = ( E(y)  )\n    -- Format of the above: ( 2x2 Matrix ) * ( 2x1 Vector ) = ( 2x1 Vector )\n    -- Solve to find a and b, satisfying y = a + bx\n    -- Matrix arithmetic has been expanded and solved to make the following operation as fast as possible\n    if unitTable then\n        local values = unitTable[1]\n        local n = #values\n        if n > minSamples then\n            local a, b = 0, 0\n            local Ex2, Ex, Exy, Ey = 0, 0, 0, 0\n            \n            local value, x, y\n            for i = 1, n do\n                value = values[i]\n                x, y = value[1], value[2]\n                \n                Ex2 = Ex2 + x * x\n                Ex = Ex + x\n                Exy = Exy + x * y\n                Ey = Ey + y\n            end\n            -- invariant to find matrix inverse\n            local invariant = 1 / (Ex2 * n - Ex * Ex)\n            -- Solve for a and b\n            a = (-Ex * Exy * invariant) + (Ex2 * Ey * invariant)\n            b = (n * Exy * invariant) - (Ex * Ey * invariant)\n            if b ~= 0 then\n                -- Use best fit line to calculate estimated time to reach target health\n                seconds = (percentage - a) / b\n                -- Subtract current time to obtain \"time remaining\"\n                seconds = math.min(7777, seconds - (GetTime() - unitTable[2]))\n                if seconds < 0 then seconds = 9999 end\n            end\n        end\n    end\n    return seconds\nend\n\n\nfunction aura_env.runesCD()\n    \n    for i=1, 6 do\n        aura_env.runes[i].cd= aura_env.runes[i].when - GetTime() - aura_env.gcdFreeWhen\n        if i>1 then\n            if aura_env.runes[i].cd< -(2.49+aura_env.gcdFreeWhen) then\n                aura_env.runes[i].cd = -2.5\n            end \n        else \n            if GetRuneType(1)~=4 then\n                if aura_env.runes[i].cd< -(2.49+aura_env.gcdFreeWhen) then\n                    aura_env.runes[i].cd = -2.50\n                end \n            end\n        end\n    end\nend\n\n\n\n\n\naura_env.GCDs = function()\n    local nextRune = 0\n    \n    local r1 = aura_env.runes[1].cd+2\n    if r1<0 then r1=0 end\n    local r2 = aura_env.runes[2].cd+2\n    if r2<0 then r2=0 end\n    local r3 = aura_env.runes[3].cd+2\n    if r3<0 then r3=0 end\n    local r4 = aura_env.runes[4].cd+2\n    if r4<0 then r4=0 end\n    local r5 = aura_env.runes[5].cd+2\n    if r5<0 then r5=0 end\n    local r6 = aura_env.runes[6].cd+2\n    if r6<0 then r6=0 end\n    \n    if r1>r2 then else end\n    local a = 0\n    -- print(\"aura_env.bloodTapLock: \".. tostring(aura_env.bloodTapLock))\n    if aura_env.bloodTapLock then return false else\n        \n        if aura_env.nextAction == \"DD\" then\n            \n            a = aura_env.DDwhen\n           -- local b = aura_env.fixedGCD - 0.2 \n           \n            \n           -- print(\"time for the next spell to be available: \".. tostring(a))\n          --  print(\"b value:\" .. tostring(b))\n        elseif aura_env.nextAction == \"IT\" then\n            \n            if r5>r6 then nextRune=r6 else nextRune=r5 end\n            \n            a = nextRune \n            \n        elseif aura_env.nextAction == \"PS\" or aura_env.nextAction == \"GF\" or aura_env.nextAction == \"PSBS\" or aura_env.nextAction == \"UP\" then\n            \n            if r3>r4 then nextRune=r4 else nextRune=r3 end\n            \n            a = nextRune \n            \n        elseif aura_env.nextAction == \"BS\" or aura_env.nextAction == \"BB\" or aura_env.nextAction == \"BP\" then\n            \n            if r1>r2 then nextRune=r2 else nextRune=r1 end\n            \n            a = nextRune \n            \n        else\n            return false\n        end\n    end\n   -- print(\"--\")\n    -- if a < 0 then a = 0 end\n    local b = aura_env.fixedGCD - 0.2\n    --if b<0 then b=0 end\n    \n    -- print(\"time for the next spell to be available: \".. tostring(a))\n    -- print(\"b value:\" .. tostring(b))\n    \n    \n    if a>b then return true else return false end\n    \nend\n\n\n\n\n\n",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
+			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "DK Next Action Guide - by Fonsas",
 			["config"] = {
 				["DDwhen"] = 1.5,
 				["bloodTapFlag"] = true,
@@ -41941,10 +41952,10 @@ WeakAurasSaved = {
 				["dndttk"] = 9,
 			},
 			["inverse"] = false,
-			["xOffset"] = 0,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -41976,9 +41987,9 @@ WeakAurasSaved = {
 						["ownOnly"] = true,
 						["subeventPrefix"] = "SPELL",
 						["duration"] = "1",
+						["debuffType"] = "HELPFUL",
 						["custom_hide"] = "timed",
 						["spellName"] = 0,
-						["debuffType"] = "HELPFUL",
 						["remOperator"] = "<",
 						["type"] = "custom",
 						["unit"] = "player",
@@ -42159,25 +42170,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 2,
 			["fontSize"] = 19,
-			["displayStacks"] = "%p",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["parent"] = "Dummy icons",
+			["source"] = "import",
 			["stacksPoint"] = "BOTTOM",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["alpha"] = 1,
+			["displayStacks"] = "%p",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["config"] = {
 			},
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
@@ -42185,20 +42198,18 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "BS2",
-			["source"] = "import",
+			["alpha"] = 1,
 			["useCooldownModRate"] = true,
 			["width"] = 45,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["uid"] = "Uab)Puns7mg",
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["displayIcon"] = 135772,
-			["cooldown"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -42427,37 +42438,37 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = true,
+			["selfPoint"] = "CENTER",
+			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["icon"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["config"] = {
+			},
+			["frameStrata"] = 1,
+			["zoom"] = 0.2,
+			["semver"] = "1.1.19",
+			["tocversion"] = 30401,
+			["id"] = "Howling blast normal",
+			["width"] = 45,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["useCooldownModRate"] = true,
+			["uid"] = "M)mfAOj3YZj",
+			["inverse"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["parent"] = "Frost AOE",
-			["information"] = {
-				["forceEvents"] = true,
-			},
-			["icon"] = true,
-			["config"] = {
-			},
-			["alpha"] = 1,
-			["zoom"] = 0.2,
-			["semver"] = "1.1.19",
-			["tocversion"] = 30401,
-			["id"] = "Howling blast normal",
-			["width"] = 45,
-			["useCooldownModRate"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["uid"] = "M)mfAOj3YZj",
-			["inverse"] = false,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["selfPoint"] = "CENTER",
+			["parent"] = "Frost AOE",
 		},
 		["Vermin Hunter"] = {
 			["arcLength"] = 360,
@@ -42513,7 +42524,7 @@ WeakAurasSaved = {
 			["useLimit"] = false,
 			["align"] = "CENTER",
 			["stagger"] = 0,
-			["space"] = 2,
+			["radius"] = 200,
 			["load"] = {
 				["size"] = {
 					["multi"] = {
@@ -42532,7 +42543,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["fullCircle"] = true,
+			["selfPoint"] = "RIGHT",
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -42541,7 +42552,7 @@ WeakAurasSaved = {
 			},
 			["anchorFrameFrame"] = "PlayerFrame",
 			["animate"] = true,
-			["xOffset"] = -135,
+			["grow"] = "LEFT",
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -42549,20 +42560,7 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["rotation"] = 0,
-			["grow"] = "LEFT",
-			["constantFactor"] = "RADIUS",
-			["uid"] = "H67q1C9K6oT",
-			["borderOffset"] = 4,
-			["limit"] = 5,
-			["borderInset"] = 1,
-			["id"] = "Vermin Hunter",
-			["frameStrata"] = 1,
-			["gridWidth"] = 5,
-			["anchorFrameType"] = "SCREEN",
-			["gridType"] = "RD",
-			["config"] = {
-			},
+			["fullCircle"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -42583,13 +42581,26 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["selfPoint"] = "RIGHT",
+			["constantFactor"] = "RADIUS",
+			["uid"] = "H67q1C9K6oT",
+			["borderOffset"] = 4,
+			["limit"] = 5,
+			["borderInset"] = 1,
+			["id"] = "Vermin Hunter",
+			["frameStrata"] = 1,
+			["gridWidth"] = 5,
+			["anchorFrameType"] = "SCREEN",
+			["gridType"] = "RD",
+			["config"] = {
+			},
+			["space"] = 2,
+			["rotation"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["radius"] = 200,
+			["xOffset"] = -135,
 		},
 		["Divine Protection"] = {
 			["sparkWidth"] = 10,
@@ -42599,12 +42610,17 @@ WeakAurasSaved = {
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["zoom"] = 0.3,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -42649,12 +42665,7 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -42662,13 +42673,14 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["config"] = {
-			},
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["uid"] = "91mA2IkcG5o",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -42826,33 +42838,28 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = "",
 			["desaturate"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
 			["useCooldownModRate"] = true,
-			["uid"] = "91mA2IkcG5o",
+			["config"] = {
+			},
 			["icon_side"] = "RIGHT",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 			["anchorFrameType"] = "SCREEN",
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["alpha"] = 1,
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["id"] = "Divine Protection",
 			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["width"] = 40,
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -42868,8 +42875,334 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
+		},
+		["Threat Differential on Nameplates"] = {
+			["xOffset"] = 30,
+			["displayText_format_p_time_dynamic_threshold"] = 60,
+			["yOffset"] = 0,
+			["anchorPoint"] = "RIGHT",
+			["displayText_format_p_time_format"] = 0,
+			["url"] = "https://wago.io/yssC_nf5K/15",
+			["icon"] = true,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["desc"] = "Shows the threat difference between yourself and the party/raid member with the most threat on enemy nameplates.\n\nColor determined by Tankstatus:\n\"Securely Tanking\"  (default: green)\n\"Tanking\" (default: yellow)\n\"Insecurely Tanking\" (default: orange \"!!!\")\n\"Tanked by Other Tank\"  (default: blue)\n\"Untanked\" (default: red)\n\nOther Tanks are people marked as \"Main Tank\" in raid.",
+			["font"] = "Friz Quadrata TT",
+			["displayText_format_thing_format"] = "none",
+			["shadowXOffset"] = 1,
+			["customAnchor"] = "function()\n    if (aura_env.state.unitId) then\n        return C_NamePlate.GetNamePlateForUnit(aura_env.state.unitId)\n    end\nend\n\n\n",
+			["regionType"] = "text",
+			["cooldownTextDisabled"] = false,
+			["auto"] = true,
+			["tocversion"] = 30400,
+			["alpha"] = 1,
+			["config"] = {
+				["secureThreatValue"] = 10000,
+			},
+			["fixedWidth"] = 200,
+			["outline"] = "OUTLINE",
+			["wagoID"] = "yssC_nf5K",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["customText"] = "function()\n    local value = aura_env.state and aura_env.state.value\n    if value then\n        if value < 1 then\n            return \"!!!\"\n        else\n            return AbbreviateNumbers(value) or value\n        end\n    end\nend",
+			["shadowYOffset"] = -1,
+			["cooldownSwipe"] = true,
+			["customTextUpdate"] = "event",
+			["automaticWidth"] = "Auto",
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "custom",
+						["custom_type"] = "stateupdate",
+						["customVariables"] = "{\n    status = {\n        display = \"Threat Status\",\n        type = \"select\",\n        values = {\n            [1] = \"Untanked\", \n            [2] = \"Insecurely Tanking\", \n            [3] = \"Tanking\",\n            [4] = \"Tanked by Other Tank\",\n            [5] = \"Securely tanking\"\n        }\n    }\n}",
+						["event"] = "Health",
+						["genericShowOn"] = "showOnActive",
+						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
+						["custom"] = "function(allstates, event, unitId)\n    if not unitId then\n        return\n    end\n    \n    if event == \"NAME_PLATE_UNIT_REMOVED\" then\n        local state = allstates[unitId]\n        if state then\n            state.show = false\n            state.changed = true\n            return true\n        end\n        \n    elseif unitId ~= \"target\" then\n        if UnitIsPlayer(unitId) then\n            return\n        end\n        \n        local isTanking, threatStatus, scaledPercentage, _, threatValue = UnitDetailedThreatSituation(\"player\", unitId)\n        \n        if not threatValue then\n            return \n        end\n        \n        local firstUnit, firstThreat, secondUnit, secondThreat = aura_env.ThreatFunc(unitId)\n        local displayValue\n        \n        if isTanking then\n            displayValue = threatValue - secondThreat\n            if Round(math.abs(displayValue) / 100) > aura_env.secureThreatValue then\n                threatStatus = 5\n            end\n        else\n            displayValue = threatValue - firstThreat\n            if firstUnit and not UnitIsUnit(firstUnit, \"player\") and GetPartyAssignment(\"MAINTANK\",firstUnit) then\n                threatStatus = 4\n            end\n        end\n        \n        allstates[unitId] = allstates[unitId] or {unit = unitId}\n        local state = allstates[unitId]\n        state.changed = true\n        state.show = true\n        state.status = threatStatus < 1 and 1 or threatStatus\n        state.value = Round(math.abs(displayValue) / 100)\n        return true\n    end\nend",
+						["spellIds"] = {
+						},
+						["events"] = "NAME_PLATE_UNIT_ADDED, NAME_PLATE_UNIT_REMOVED, UNIT_THREAT_LIST_UPDATE, GROUP_ROSTER_UPDATE",
+						["check"] = "event",
+						["names"] = {
+						},
+						["subeventSuffix"] = "_CAST_START",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["disjunctive"] = "any",
+				["activeTriggerMode"] = -10,
+			},
+			["displayText_format_p_format"] = "timed",
+			["internalVersion"] = 64,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["duration_type"] = "seconds",
+					["colorA"] = 1,
+					["colorG"] = 1,
+					["type"] = "none",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["colorB"] = 1,
+					["y"] = 0,
+					["x"] = 0,
+					["scalex"] = 1,
+					["easeStrength"] = 3,
+					["colorFunc"] = "function()    \n    --if not aura_env.state then return 0, 0, 0, 1 end  -- error checking.\n    if aura_env.state.status == 3 then\n        return unpack(aura_env.config[\"color_tanking\"]) -- Reminder: return R, G, B, Alpha (using numbers between 0 and 1)\n    elseif aura_env.state.status == 2 then        \n        return unpack(aura_env.config[\"color_insecure\"])\n    elseif aura_env.state.status == 4  then\n        return unpack(aura_env.config[\"color_others\"])\n    elseif aura_env.state.status <= 1 then\n        return unpack(aura_env.config[\"color_untanked\"])\n    else\n        return 0,0,0,1\n    end \nend",
+					["rotate"] = 0,
+					["colorType"] = "custom",
+					["use_color"] = false,
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["displayText_format_c2_format"] = "none",
+			["stickyDuration"] = false,
+			["version"] = 15,
+			["displayText_format_c_format"] = "none",
+			["height"] = 40,
+			["displayText_format_s_format"] = "none",
+			["fontSize"] = 16,
+			["source"] = "import",
+			["preferToUpdate"] = false,
+			["anchorFrameType"] = "NAMEPLATE",
+			["displayText_format_displayValue_format"] = "none",
+			["cooldownEdge"] = false,
+			["zoom"] = 0,
+			["authorOptions"] = {
+				{
+					["type"] = "number",
+					["useDesc"] = true,
+					["max"] = 100000,
+					["step"] = 100,
+					["width"] = 1,
+					["min"] = 0,
+					["key"] = "secureThreatValue",
+					["desc"] = "The securely tanking threat differential value.",
+					["name"] = "Secure Threat Target",
+					["default"] = 10000,
+				}, -- [1]
+			},
+			["displayText"] = "%c\n",
+			["anchorFrameParent"] = true,
+			["displayText_format_p_time_precision"] = 1,
+			["displayText_format_formatDiff_format"] = "none",
+			["actions"] = {
+				["start"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["init"] = {
+					["custom"] = "aura_env.secureThreatValue = aura_env.config.secureThreatValue\n\naura_env.ThreatFunc = function(unit)\n    local firstUnit, secondUnit\n    local firstThreat, secondThreat = 0, 0\n    local threat, pet\n    for member in WA_IterateGroupMembers() do\n        threat = select(5, UnitDetailedThreatSituation(member, unit))\n        if threat then\n            if threat > firstThreat then\n                secondUnit = firstUnit\n                secondThreat = firstThreat\n                firstUnit = member\n                firstThreat = threat\n            elseif threat > secondThreat then\n                secondUnit = member\n                secondThreat = threat\n            end\n        end\n        \n        pet = member..\"pet\"\n        if UnitExists(pet) then\n            threat = select(5, UnitDetailedThreatSituation(pet, unit))\n            if threat then\n                if threat > firstThreat then\n                    secondUnit = firstUnit\n                    secondThreat = firstThreat\n                    firstUnit = pet\n                    firstThreat = threat\n                elseif threat > secondThreat then\n                    secondUnit = pet\n                    secondThreat = threat\n                end\n            end\n        end\n    end\n    return firstUnit, firstThreat, secondUnit, secondThreat\nend",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+					["do_custom"] = false,
+				},
+			},
+			["displayText_format_c1_format"] = "none",
+			["semver"] = "1.0.14",
+			["desaturate"] = false,
+			["id"] = "Threat Differential on Nameplates",
+			["justify"] = "LEFT",
+			["frameStrata"] = 1,
+			["width"] = 40,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+			},
+			["load"] = {
+				["zoneIds"] = "",
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = false,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["affixes"] = {
+					["single"] = 16,
+					["multi"] = {
+						[16] = true,
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["use_affixes"] = true,
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["ingroup"] = {
+					["multi"] = {
+						["group"] = true,
+						["raid"] = true,
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["inverse"] = false,
+			["wordWrap"] = "WordWrap",
+			["shadowColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = "==",
+						["variable"] = "status",
+						["value"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								1, -- [1]
+								0, -- [2]
+								0, -- [3]
+								1, -- [4]
+							},
+							["property"] = "color",
+						}, -- [1]
+					},
+				}, -- [1]
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = "==",
+						["variable"] = "status",
+						["value"] = 2,
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								1, -- [1]
+								0.50196078431373, -- [2]
+								0, -- [3]
+								1, -- [4]
+							},
+							["property"] = "color",
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = "==",
+						["variable"] = "status",
+						["value"] = 3,
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								1, -- [1]
+								1, -- [2]
+								0, -- [3]
+								1, -- [4]
+							},
+							["property"] = "color",
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = "==",
+						["variable"] = "status",
+						["value"] = 4,
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								0, -- [1]
+								0, -- [2]
+								1, -- [3]
+								1, -- [4]
+							},
+							["property"] = "color",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = "==",
+						["variable"] = "status",
+						["value"] = 5,
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								0, -- [1]
+								1, -- [2]
+								0, -- [3]
+								1, -- [4]
+							},
+							["property"] = "color",
+						}, -- [1]
+					},
+				}, -- [5]
+			},
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["uid"] = "1L3Mp1qQdkX",
 		},
 		["Opitional:"] = {
 			["outline"] = "OUTLINE",
@@ -42898,8 +43231,8 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "custom",
 						["useName"] = false,
+						["subeventSuffix"] = "_CAST_START",
 						["custom_type"] = "status",
-						["useExactSpellId"] = true,
 						["subeventPrefix"] = "SPELL",
 						["names"] = {
 						},
@@ -42918,7 +43251,7 @@ WeakAurasSaved = {
 						["auranames"] = {
 							"Unholy Presence", -- [1]
 						},
-						["subeventSuffix"] = "_CAST_START",
+						["useExactSpellId"] = true,
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -42970,6 +43303,7 @@ WeakAurasSaved = {
 				["use_never"] = true,
 				["instance_type"] = {
 				},
+				["use_alive"] = true,
 				["spec"] = {
 					["multi"] = {
 					},
@@ -42980,7 +43314,6 @@ WeakAurasSaved = {
 						["PALADIN"] = true,
 					},
 				},
-				["use_alive"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -43661,7 +43994,11 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
@@ -43671,11 +44008,13 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["triggers"] = {
 				{
@@ -43778,12 +44117,7 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -43792,14 +44126,7 @@ WeakAurasSaved = {
 			},
 			["desaturate"] = false,
 			["cooldownTextDisabled"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -43921,11 +44248,17 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = 132353,
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -43942,7 +44275,7 @@ WeakAurasSaved = {
 			["auto"] = false,
 			["parent"] = "Vermin Warrior",
 			["sparkHidden"] = "NEVER",
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["frameStrata"] = 1,
 			["width"] = 36,
 			["id"] = "Revenge - not Defensive stance",
@@ -43985,9 +44318,9 @@ WeakAurasSaved = {
 						["ownOnly"] = true,
 						["subeventPrefix"] = "SPELL",
 						["duration"] = "1",
+						["debuffType"] = "HELPFUL",
 						["custom_hide"] = "timed",
 						["spellName"] = 0,
-						["debuffType"] = "HELPFUL",
 						["remOperator"] = "<",
 						["type"] = "custom",
 						["unit"] = "player",
@@ -44168,25 +44501,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 2,
 			["fontSize"] = 19,
-			["displayStacks"] = "%p",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["parent"] = "Dummy icons",
+			["source"] = "import",
 			["stacksPoint"] = "BOTTOM",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["alpha"] = 1,
+			["displayStacks"] = "%p",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["config"] = {
 			},
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
@@ -44194,20 +44529,18 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "PS2",
-			["source"] = "import",
+			["alpha"] = 1,
 			["useCooldownModRate"] = true,
 			["width"] = 45,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["uid"] = "wR9YeqiUZh9",
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["displayIcon"] = 237519,
-			["cooldown"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -44217,12 +44550,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -44231,12 +44559,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -44290,14 +44613,12 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["xOffset"] = 0,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["parent"] = "Vermin Warrior",
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -44418,9 +44739,14 @@ WeakAurasSaved = {
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["auto"] = false,
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["parent"] = "Vermin Warrior",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["uid"] = "M0FDBXCgVgs",
 			["icon_side"] = "RIGHT",
 			["width"] = 36,
@@ -44428,23 +44754,23 @@ WeakAurasSaved = {
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["id"] = "Last Stand",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["spark"] = false,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["sparkHidden"] = "NEVER",
-			["config"] = {
-			},
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["config"] = {
+			},
 			["inverse"] = false,
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -44452,7 +44778,14 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 		},
 		["uh opt 2"] = {
 			["iconSource"] = -1,
@@ -44486,17 +44819,17 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["check"] = "event",
-						["debuffType"] = "HELPFUL",
+						["spellName"] = 0,
 						["events"] = "fonsas_BB",
-						["custom_hide"] = "timed",
-						["custom_type"] = "status",
-						["useName"] = false,
+						["debuffType"] = "HELPFUL",
 						["subeventSuffix"] = "_CAST_START",
+						["useName"] = false,
 						["auraspellids"] = {
 							"55222", -- [1]
 							"48265", -- [2]
 							"49772", -- [3]
 						},
+						["custom_type"] = "status",
 						["useExactSpellId"] = true,
 						["unevent"] = "auto",
 						["event"] = "Action Usable",
@@ -44505,7 +44838,7 @@ WeakAurasSaved = {
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
-						["spellName"] = 0,
+						["custom_hide"] = "timed",
 						["remOperator"] = "<",
 						["matchesShowOn"] = "showOnMissing",
 						["duration"] = "1",
@@ -44531,18 +44864,18 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["check"] = "event",
-						["debuffType"] = "HELPFUL",
+						["spellName"] = 0,
 						["events"] = "fonsas_BB",
-						["custom_hide"] = "timed",
-						["custom_type"] = "status",
-						["useName"] = false,
+						["debuffType"] = "HELPFUL",
 						["subeventSuffix"] = "_CAST_START",
+						["useName"] = false,
 						["auraspellids"] = {
 							"48266", -- [1]
 							"55212", -- [2]
 							"54476", -- [3]
 							"50689", -- [4]
 						},
+						["custom_type"] = "status",
 						["useExactSpellId"] = true,
 						["unevent"] = "auto",
 						["event"] = "Action Usable",
@@ -44551,7 +44884,7 @@ WeakAurasSaved = {
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
-						["spellName"] = 0,
+						["custom_hide"] = "timed",
 						["remOperator"] = "<",
 						["matchesShowOn"] = "showOnMissing",
 						["duration"] = "1",
@@ -44577,16 +44910,16 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["check"] = "event",
-						["debuffType"] = "HELPFUL",
+						["spellName"] = 0,
 						["events"] = "fonsas_BB",
-						["custom_hide"] = "timed",
-						["custom_type"] = "status",
-						["useName"] = false,
+						["debuffType"] = "HELPFUL",
 						["subeventSuffix"] = "_CAST_START",
+						["useName"] = false,
 						["auraspellids"] = {
 							"48263", -- [1]
 							"61261", -- [2]
 						},
+						["custom_type"] = "status",
 						["useExactSpellId"] = true,
 						["unevent"] = "auto",
 						["event"] = "Action Usable",
@@ -44595,7 +44928,7 @@ WeakAurasSaved = {
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
-						["spellName"] = 0,
+						["custom_hide"] = "timed",
 						["remOperator"] = "<",
 						["matchesShowOn"] = "showOnMissing",
 						["duration"] = "1",
@@ -44761,17 +45094,30 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Dummy icons",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = false,
 			["displayIcon"] = 135775,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "Qz5lG1i82OT",
+			["xOffset"] = 9.286158561707,
+			["width"] = 24.427682876587,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "uh opt 2",
 			["actions"] = {
 				["start"] = {
 				},
@@ -44782,29 +45128,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "Qz5lG1i82OT",
-			["selfPoint"] = "CENTER",
-			["width"] = 24.427682876587,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "uh opt 2",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 3,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 9.286158561707,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = false,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -44842,18 +45175,18 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["check"] = "event",
-						["debuffType"] = "HELPFUL",
+						["spellName"] = 0,
 						["events"] = "fonsas_BB",
-						["custom_hide"] = "timed",
-						["custom_type"] = "status",
-						["useName"] = false,
+						["debuffType"] = "HELPFUL",
 						["subeventSuffix"] = "_CAST_START",
+						["useName"] = false,
 						["auraspellids"] = {
 							"48266", -- [1]
 							"55212", -- [2]
 							"54476", -- [3]
 							"50689", -- [4]
 						},
+						["custom_type"] = "status",
 						["useExactSpellId"] = true,
 						["unevent"] = "auto",
 						["event"] = "Action Usable",
@@ -44862,7 +45195,7 @@ WeakAurasSaved = {
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
-						["spellName"] = 0,
+						["custom_hide"] = "timed",
 						["remOperator"] = "<",
 						["matchesShowOn"] = "showOnMissing",
 						["duration"] = "1",
@@ -44888,17 +45221,17 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["check"] = "event",
-						["debuffType"] = "HELPFUL",
+						["spellName"] = 0,
 						["events"] = "fonsas_BB",
-						["custom_hide"] = "timed",
-						["custom_type"] = "status",
-						["useName"] = false,
+						["debuffType"] = "HELPFUL",
 						["subeventSuffix"] = "_CAST_START",
+						["useName"] = false,
 						["auraspellids"] = {
 							"55222", -- [1]
 							"48265", -- [2]
 							"49772", -- [3]
 						},
+						["custom_type"] = "status",
 						["useExactSpellId"] = true,
 						["unevent"] = "auto",
 						["event"] = "Action Usable",
@@ -44907,7 +45240,7 @@ WeakAurasSaved = {
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
-						["spellName"] = 0,
+						["custom_hide"] = "timed",
 						["remOperator"] = "<",
 						["matchesShowOn"] = "showOnMissing",
 						["duration"] = "1",
@@ -44933,16 +45266,16 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["check"] = "event",
-						["debuffType"] = "HELPFUL",
+						["spellName"] = 0,
 						["events"] = "fonsas_BB",
-						["custom_hide"] = "timed",
-						["custom_type"] = "status",
-						["useName"] = false,
+						["debuffType"] = "HELPFUL",
 						["subeventSuffix"] = "_CAST_START",
+						["useName"] = false,
 						["auraspellids"] = {
 							"48263", -- [1]
 							"61261", -- [2]
 						},
+						["custom_type"] = "status",
 						["useExactSpellId"] = true,
 						["unevent"] = "auto",
 						["event"] = "Action Usable",
@@ -44951,7 +45284,7 @@ WeakAurasSaved = {
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
-						["spellName"] = 0,
+						["custom_hide"] = "timed",
 						["remOperator"] = "<",
 						["matchesShowOn"] = "showOnMissing",
 						["duration"] = "1",
@@ -45117,17 +45450,30 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Dummy icons",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = false,
 			["displayIcon"] = 135770,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "RBp(1SkKw0R",
+			["xOffset"] = -10.713841438293,
+			["width"] = 24.427682876587,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "Blood opt 2",
 			["actions"] = {
 				["start"] = {
 				},
@@ -45138,29 +45484,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "RBp(1SkKw0R",
-			["selfPoint"] = "CENTER",
-			["width"] = 24.427682876587,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "Blood opt 2",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 3,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -10.713841438293,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = false,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -45192,9 +45525,9 @@ WeakAurasSaved = {
 						["ownOnly"] = true,
 						["subeventPrefix"] = "SPELL",
 						["duration"] = "1",
+						["debuffType"] = "HELPFUL",
 						["custom_hide"] = "timed",
 						["spellName"] = 0,
-						["debuffType"] = "HELPFUL",
 						["remOperator"] = "<",
 						["type"] = "custom",
 						["unit"] = "player",
@@ -45395,25 +45728,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 2,
 			["fontSize"] = 19,
-			["displayStacks"] = "%p",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["parent"] = "Dummy icons",
+			["source"] = "import",
 			["stacksPoint"] = "BOTTOM",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["alpha"] = 1,
+			["displayStacks"] = "%p",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["config"] = {
 			},
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
@@ -45421,20 +45756,18 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "D&D 2",
-			["source"] = "import",
+			["alpha"] = 1,
 			["useCooldownModRate"] = true,
 			["width"] = 45,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["uid"] = "HjBnUyUttIm",
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["displayIcon"] = 136144,
-			["cooldown"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -45577,7 +45910,7 @@ WeakAurasSaved = {
 			["source"] = "import",
 			["config"] = {
 			},
-			["useTooltip"] = true,
+			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -45585,22 +45918,6 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["cooldown"] = false,
-			["parent"] = "Ore Count",
-			["url"] = "https://wago.io/iST6tz9t8/1",
-			["zoom"] = 0.3,
-			["width"] = 40,
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.0.0",
-			["tocversion"] = 90002,
-			["id"] = "Fel Iron Ore",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["useCooldownModRate"] = true,
-			["uid"] = "ax30yT3st6L",
-			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -45621,11 +45938,8 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["conditions"] = {
-			},
-			["information"] = {
-				["forceEvents"] = true,
-			},
+			["cooldown"] = false,
+			["url"] = "https://wago.io/iST6tz9t8/1",
 			["actions"] = {
 				["start"] = {
 				},
@@ -45634,6 +45948,25 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
+			["zoom"] = 0.3,
+			["width"] = 40,
+			["cooldownTextDisabled"] = false,
+			["semver"] = "1.0.0",
+			["tocversion"] = 90002,
+			["id"] = "Fel Iron Ore",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["useCooldownModRate"] = true,
+			["uid"] = "ax30yT3st6L",
+			["inverse"] = false,
+			["useTooltip"] = true,
+			["conditions"] = {
+			},
+			["information"] = {
+				["forceEvents"] = true,
+			},
+			["parent"] = "Ore Count",
 		},
 		["Burst frost combo"] = {
 			["controlledChildren"] = {
@@ -45750,12 +46083,12 @@ WeakAurasSaved = {
 			["uid"] = "dLstoVXk4)s",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["selfPoint"] = "CENTER",
-			["borderInset"] = 1,
 			["authorOptions"] = {
 			},
+			["borderInset"] = 1,
 			["config"] = {
 			},
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
 			["information"] = {
@@ -45868,12 +46201,12 @@ WeakAurasSaved = {
 			["id"] = "Fade in-out Text Combat Indicator",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["borderInset"] = 1,
 			["uid"] = "BqsbsH4)Oho",
-			["authorOptions"] = {
-			},
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
+			["borderInset"] = 1,
 			["conditions"] = {
 			},
 			["information"] = {
@@ -45912,8 +46245,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "custom",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend",
@@ -45928,7 +46261,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "event",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -45982,20 +46315,15 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["source"] = "import",
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				0.85098039215686, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["desaturate"] = false,
-			["discrete_rotation"] = 0,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["desaturate"] = false,
+			["rotation"] = 45,
+			["stacksPoint"] = "BOTTOM",
 			["version"] = 176,
 			["subRegions"] = {
 				{
@@ -46103,37 +46431,42 @@ WeakAurasSaved = {
 				["zoneIds"] = "",
 			},
 			["displayIcon"] = 237515,
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				0.85098039215686, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
 			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
-			["displayStacks"] = "%p",
-			["fontSize"] = 19,
+			["source"] = "import",
+			["authorOptions"] = {
+			},
 			["uid"] = "4tgUqYUBc7o",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = -67.071228027344,
 			["mirror"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["regionType"] = "texture",
 			["useCooldownModRate"] = true,
 			["blendMode"] = "BLEND",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
-			["rotation"] = 45,
+			["fontSize"] = 19,
+			["icon"] = true,
 			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\cancel-icon.tga",
 			["zoom"] = 0.3,
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
 			["tocversion"] = 30401,
 			["id"] = "plus Frost 3",
-			["alpha"] = 1,
 			["frameStrata"] = 2,
+			["alpha"] = 1,
 			["width"] = 27.000091552734,
-			["icon"] = true,
+			["displayStacks"] = "%p",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -67.071228027344,
+			["discrete_rotation"] = 0,
 			["conditions"] = {
 			},
-			["stacksPoint"] = "BOTTOM",
+			["cooldown"] = true,
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -46166,8 +46499,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "timed",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend",
@@ -46182,7 +46515,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "status",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "timed",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -46383,17 +46716,30 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Dummy icons",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 132728,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "fzVtDHYFJ)s",
+			["xOffset"] = 9.0714197158813,
+			["width"] = 24,
+			["zoom"] = 0.1,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "Bone Shield",
 			["actions"] = {
 				["start"] = {
 				},
@@ -46404,29 +46750,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "fzVtDHYFJ)s",
-			["selfPoint"] = "CENTER",
-			["width"] = 24,
-			["zoom"] = 0.1,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "Bone Shield",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 9.0714197158813,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -46463,8 +46796,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "timed",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function() \nreturn true\nend\n\n",
@@ -46479,7 +46812,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "event",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "timed",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -46533,20 +46866,15 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["source"] = "import",
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["desaturate"] = false,
-			["discrete_rotation"] = 0,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["desaturate"] = false,
+			["rotation"] = 45,
+			["stacksPoint"] = "BOTTOM",
 			["version"] = 176,
 			["subRegions"] = {
 				{
@@ -46655,37 +46983,42 @@ WeakAurasSaved = {
 				["zoneIds"] = "",
 			},
 			["displayIcon"] = 237515,
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
-			["displayStacks"] = "%p",
-			["fontSize"] = 19,
+			["source"] = "import",
+			["authorOptions"] = {
+			},
 			["uid"] = "HDW1RxvTG1L",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = -22.5,
 			["mirror"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["regionType"] = "texture",
 			["useCooldownModRate"] = true,
 			["blendMode"] = "BLEND",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
-			["rotation"] = 45,
+			["fontSize"] = 19,
+			["icon"] = true,
 			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\cancel-icon.tga",
 			["zoom"] = 0.3,
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
 			["tocversion"] = 30401,
 			["id"] = "BT plus",
-			["alpha"] = 1,
 			["frameStrata"] = 2,
+			["alpha"] = 1,
 			["width"] = 30,
-			["icon"] = true,
+			["displayStacks"] = "%p",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -22.5,
+			["discrete_rotation"] = 0,
 			["conditions"] = {
 			},
-			["stacksPoint"] = "BOTTOM",
+			["cooldown"] = true,
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -46742,15 +47075,11 @@ WeakAurasSaved = {
 			["sort"] = "none",
 			["selfPoint"] = "RIGHT",
 			["align"] = "CENTER",
-			["animate"] = false,
+			["useLimit"] = true,
 			["yOffset"] = 50.142822265625,
 			["authorOptions"] = {
 			},
 			["rotation"] = 0,
-			["useAnchorPerUnit"] = false,
-			["version"] = 176,
-			["subRegions"] = {
-			},
 			["sortHybridTable"] = {
 				["Pesti AOE"] = false,
 				["Howling blast w/ KM w/ time"] = false,
@@ -46760,6 +47089,10 @@ WeakAurasSaved = {
 				["Frost Strike"] = false,
 				["Blood Boil"] = false,
 			},
+			["version"] = 176,
+			["subRegions"] = {
+			},
+			["stagger"] = 0,
 			["radius"] = 200,
 			["load"] = {
 				["talent"] = {
@@ -46805,9 +47138,10 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
+			["config"] = {
+			},
+			["animate"] = false,
 			["uid"] = "whCTa7(Uu9)",
-			["source"] = "import",
-			["parent"] = "Dummy icons",
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -46815,8 +47149,7 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 3,
-			["config"] = {
-			},
+			["space"] = 1,
 			["gridWidth"] = 5,
 			["constantFactor"] = "RADIUS",
 			["arcLength"] = 360,
@@ -46824,24 +47157,24 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "Frost AOE",
-			["stagger"] = 0,
+			["source"] = "import",
 			["frameStrata"] = 3,
 			["anchorFrameType"] = "SCREEN",
-			["useLimit"] = true,
-			["borderInset"] = 1,
-			["space"] = 1,
 			["gridType"] = "RD",
-			["conditions"] = {
-			},
-			["information"] = {
-				["forceEvents"] = true,
-			},
+			["borderInset"] = 1,
+			["useAnchorPerUnit"] = false,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
+			["conditions"] = {
+			},
+			["information"] = {
+				["forceEvents"] = true,
+			},
+			["parent"] = "Dummy icons",
 		},
 		["Cobalt Ore"] = {
 			["iconSource"] = -1,
@@ -47005,15 +47338,20 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["uid"] = "MEOaW5KsVz(",
-			["icon"] = true,
+			["selfPoint"] = "CENTER",
 			["url"] = "https://wago.io/iST6tz9t8/1",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["useTooltip"] = true,
 			["xOffset"] = 0,
+			["parent"] = "Ore Count",
 			["zoom"] = 0.3,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
@@ -47027,12 +47365,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -47044,7 +47377,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = false,
-			["parent"] = "Ore Count",
+			["useTooltip"] = true,
 		},
 		["Blood opt"] = {
 			["iconSource"] = -1,
@@ -47073,8 +47406,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "timed",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend\n\n",
@@ -47089,7 +47422,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "status",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "timed",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -47273,17 +47606,30 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Dummy icons",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 135770,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "bEMm2nY1fwp",
+			["xOffset"] = 10.286158561707,
+			["width"] = 24.427682876587,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "Blood opt",
 			["actions"] = {
 				["start"] = {
 				},
@@ -47294,29 +47640,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "bEMm2nY1fwp",
-			["selfPoint"] = "CENTER",
-			["width"] = 24.427682876587,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "Blood opt",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 10.286158561707,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -47548,8 +47881,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "custom",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend",
@@ -47564,7 +47897,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "event",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -47746,17 +48079,30 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Burst frost combo",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 135771,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "aketqXffQFq",
+			["xOffset"] = -35.5,
+			["width"] = 22.5,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "Oblit_Opt",
 			["actions"] = {
 				["start"] = {
 				},
@@ -47767,29 +48113,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "aketqXffQFq",
-			["selfPoint"] = "CENTER",
-			["width"] = 22.5,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "Oblit_Opt",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Burst frost combo",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -35.5,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -48134,8 +48467,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "custom",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        return true\n    else \n        return false\n    end\nend",
@@ -48150,7 +48483,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "event",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -48358,17 +48691,30 @@ WeakAurasSaved = {
 				["use_class"] = true,
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Dummy icons",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = false,
 			["displayIcon"] = 237515,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "xxV2BksGbNW",
+			["xOffset"] = -47,
+			["width"] = 45,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "CANCEL BT",
 			["actions"] = {
 				["start"] = {
 				},
@@ -48379,29 +48725,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "xxV2BksGbNW",
-			["selfPoint"] = "CENTER",
-			["width"] = 45,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "CANCEL BT",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -47,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = false,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -48434,8 +48767,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "timed",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend\n\n",
@@ -48450,7 +48783,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "status",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "timed",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -48629,17 +48962,30 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Dummy icons",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 136119,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "hjhyUr97DGb",
+			["xOffset"] = -9.9993858337402,
+			["width"] = 22.5,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "RD 2",
 			["actions"] = {
 				["start"] = {
 				},
@@ -48650,29 +48996,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "hjhyUr97DGb",
-			["selfPoint"] = "CENTER",
-			["width"] = 22.5,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "RD 2",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 3,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -9.9993858337402,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -48877,17 +49210,30 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 0.75,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Gargoyle helper",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = false,
 			["displayIcon"] = 135775,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 0.75,
+			["uid"] = "qlQsSidc2Rm",
+			["xOffset"] = 33,
+			["width"] = 18.000020980835,
+			["zoom"] = 0.15,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "presence",
 			["actions"] = {
 				["start"] = {
 				},
@@ -48898,26 +49244,13 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "qlQsSidc2Rm",
-			["selfPoint"] = "CENTER",
-			["width"] = 18.000020980835,
-			["zoom"] = 0.15,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "presence",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Gargoyle helper",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 33,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -48945,7 +49278,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["cooldown"] = false,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -49092,8 +49425,36 @@ WeakAurasSaved = {
 			["authorMode"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "UvSV5jPJMlO",
-			["xOffset"] = 120,
 			["url"] = "https://wago.io/U0WH3IJ3S/1",
+			["authorOptions"] = {
+				{
+					["subOptions"] = {
+						{
+							["type"] = "input",
+							["useDesc"] = false,
+							["width"] = 1,
+							["name"] = "Text",
+							["default"] = "",
+							["multiline"] = false,
+							["length"] = 10,
+							["key"] = "text",
+							["useLength"] = false,
+						}, -- [1]
+					},
+					["hideReorder"] = true,
+					["useDesc"] = false,
+					["nameSource"] = 0,
+					["width"] = 1,
+					["useCollapse"] = false,
+					["key"] = "macro",
+					["name"] = "Macro",
+					["collapse"] = false,
+					["limitType"] = "none",
+					["groupType"] = "simple",
+					["type"] = "group",
+					["size"] = 10,
+				}, -- [1]
+			},
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
@@ -49158,35 +49519,7 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = false,
-			["authorOptions"] = {
-				{
-					["subOptions"] = {
-						{
-							["type"] = "input",
-							["useDesc"] = false,
-							["width"] = 1,
-							["name"] = "Text",
-							["default"] = "",
-							["multiline"] = false,
-							["length"] = 10,
-							["key"] = "text",
-							["useLength"] = false,
-						}, -- [1]
-					},
-					["hideReorder"] = true,
-					["useDesc"] = false,
-					["nameSource"] = 0,
-					["width"] = 1,
-					["useCollapse"] = false,
-					["key"] = "macro",
-					["name"] = "Macro",
-					["collapse"] = false,
-					["limitType"] = "none",
-					["groupType"] = "simple",
-					["type"] = "group",
-					["size"] = 10,
-				}, -- [1]
-			},
+			["xOffset"] = 120,
 		},
 		["AMS When - special conditions Algalon Cosmic Smash"] = {
 			["iconSource"] = -1,
@@ -49354,44 +49687,6 @@ WeakAurasSaved = {
 			["source"] = "import",
 			["config"] = {
 			},
-			["parent"] = "AMS Group ULDUAR - By fonsas (english clients)",
-			["xOffset"] = 0,
-			["regionType"] = "icon",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.last = GetTime()\n\naura_env.mobsAroundAMS = function()\n    \n    for i = 1, 40 do\n        local unit = \"nameplate\"..i\n        if UnitCanAttack(\"player\", unit)\n        and WeakAuras.CheckRange(unit, 8, \"<=\")\n        and UnitName(unit)==\"Collapsing Star\"\n        and UnitHealth(unit)/UnitHealthMax(unit)<0.10\n        then\n            return true\n        end\n    end\n    return false\nend",
-					["do_custom"] = false,
-				},
-			},
-			["cooldown"] = false,
-			["conditions"] = {
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["zoom"] = 0.25,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.1.19",
-			["tocversion"] = 30401,
-			["id"] = "AMS When - special conditions Algalon Cosmic Smash",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 35,
-			["useCooldownModRate"] = true,
-			["uid"] = "R4o0Rvrh5ZW",
-			["inverse"] = false,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
-			["displayIcon"] = 136120,
-			["information"] = {
-			},
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -49410,6 +49705,44 @@ WeakAurasSaved = {
 					["type"] = "none",
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
+				},
+			},
+			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = false,
+			["conditions"] = {
+			},
+			["parent"] = "AMS Group ULDUAR - By fonsas (english clients)",
+			["zoom"] = 0.25,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = false,
+			["semver"] = "1.1.19",
+			["tocversion"] = 30401,
+			["id"] = "AMS When - special conditions Algalon Cosmic Smash",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 35,
+			["useCooldownModRate"] = true,
+			["uid"] = "R4o0Rvrh5ZW",
+			["inverse"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["displayIcon"] = 136120,
+			["information"] = {
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.last = GetTime()\n\naura_env.mobsAroundAMS = function()\n    \n    for i = 1, 40 do\n        local unit = \"nameplate\"..i\n        if UnitCanAttack(\"player\", unit)\n        and WeakAuras.CheckRange(unit, 8, \"<=\")\n        and UnitName(unit)==\"Collapsing Star\"\n        and UnitHealth(unit)/UnitHealthMax(unit)<0.10\n        then\n            return true\n        end\n    end\n    return false\nend",
+					["do_custom"] = false,
 				},
 			},
 		},
@@ -49639,8 +49972,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "timed",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend",
@@ -49655,7 +49988,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "status",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "timed",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -49838,17 +50171,30 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Dummy icons",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 132728,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "brmXzPSKMl9",
+			["xOffset"] = -0.7142858505249,
+			["width"] = 43.571411132813,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "Bone Shield full",
 			["actions"] = {
 				["start"] = {
 				},
@@ -49859,29 +50205,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "brmXzPSKMl9",
-			["selfPoint"] = "CENTER",
-			["width"] = 43.571411132813,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "Bone Shield full",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -0.7142858505249,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -49914,8 +50247,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "custom",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend",
@@ -49930,7 +50263,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "event",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -50135,17 +50468,30 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Dummy icons",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 135372,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "6atY4CfnKjx",
+			["xOffset"] = -33,
+			["width"] = 18,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "ERW Morb",
 			["actions"] = {
 				["start"] = {
 				},
@@ -50156,29 +50502,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "6atY4CfnKjx",
-			["selfPoint"] = "CENTER",
-			["width"] = 18,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "ERW Morb",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -33,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -50210,9 +50543,9 @@ WeakAurasSaved = {
 						["ownOnly"] = true,
 						["subeventPrefix"] = "SPELL",
 						["duration"] = "1",
+						["debuffType"] = "HELPFUL",
 						["custom_hide"] = "timed",
 						["spellName"] = 0,
-						["debuffType"] = "HELPFUL",
 						["remOperator"] = "<",
 						["type"] = "custom",
 						["unit"] = "player",
@@ -50393,25 +50726,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 2,
 			["fontSize"] = 19,
-			["displayStacks"] = "%p",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["parent"] = "Dummy icons",
+			["source"] = "import",
 			["stacksPoint"] = "BOTTOM",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["alpha"] = 1,
+			["displayStacks"] = "%p",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["config"] = {
 			},
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
@@ -50419,20 +50754,18 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "BB 2 2",
-			["source"] = "import",
+			["alpha"] = 1,
 			["useCooldownModRate"] = true,
 			["width"] = 45,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["uid"] = "xdMnFUl827n",
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["displayIcon"] = 237513,
-			["cooldown"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -50464,9 +50797,9 @@ WeakAurasSaved = {
 						["ownOnly"] = true,
 						["subeventPrefix"] = "SPELL",
 						["duration"] = "2.2",
+						["debuffType"] = "HELPFUL",
 						["custom_hide"] = "timed",
 						["spellName"] = 0,
-						["debuffType"] = "HELPFUL",
 						["remOperator"] = "<",
 						["type"] = "custom",
 						["unit"] = "player",
@@ -50685,25 +51018,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 2,
 			["fontSize"] = 19,
-			["displayStacks"] = "%p",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["parent"] = "Dummy icons",
+			["source"] = "import",
 			["stacksPoint"] = "BOTTOM",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["alpha"] = 1,
+			["displayStacks"] = "%p",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["config"] = {
 			},
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
@@ -50711,20 +51046,18 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "BT",
-			["source"] = "import",
+			["alpha"] = 1,
 			["useCooldownModRate"] = true,
 			["width"] = 45,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["uid"] = "wSYwmgzY8IC",
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["displayIcon"] = 237515,
-			["cooldown"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -50870,19 +51203,36 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "(9qU7Rw3V8a",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-					["custom"] = "local text = aura_env.config.macro.text\n\naura_env.button = CreateFrame(\"Button\", \"buffButton\", aura_env.region, \"SecureActionButtonTemplate\")\naura_env.button:SetAllPoints()\naura_env.button:SetAttribute(\"unit\", \"player\")\naura_env.button:SetAttribute(\"type\",\"macro\")\naura_env.button:SetAttribute(\"macrotext\", text)",
-					["do_custom"] = true,
-				},
-				["finish"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\CartoonWalking.ogg",
-					["do_sound"] = false,
-				},
-			},
 			["cooldownEdge"] = false,
+			["authorOptions"] = {
+				{
+					["subOptions"] = {
+						{
+							["type"] = "input",
+							["useDesc"] = false,
+							["width"] = 1,
+							["name"] = "Text",
+							["default"] = "",
+							["multiline"] = false,
+							["length"] = 10,
+							["key"] = "text",
+							["useLength"] = false,
+						}, -- [1]
+					},
+					["hideReorder"] = true,
+					["useDesc"] = false,
+					["nameSource"] = 0,
+					["width"] = 1,
+					["useCollapse"] = false,
+					["key"] = "macro",
+					["name"] = "Macro",
+					["collapse"] = false,
+					["limitType"] = "none",
+					["groupType"] = "simple",
+					["type"] = "group",
+					["size"] = 10,
+				}, -- [1]
+			},
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
@@ -50936,34 +51286,17 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = false,
-			["authorOptions"] = {
-				{
-					["subOptions"] = {
-						{
-							["type"] = "input",
-							["useDesc"] = false,
-							["width"] = 1,
-							["name"] = "Text",
-							["default"] = "",
-							["multiline"] = false,
-							["length"] = 10,
-							["key"] = "text",
-							["useLength"] = false,
-						}, -- [1]
-					},
-					["hideReorder"] = true,
-					["useDesc"] = false,
-					["nameSource"] = 0,
-					["width"] = 1,
-					["useCollapse"] = false,
-					["key"] = "macro",
-					["name"] = "Macro",
-					["collapse"] = false,
-					["limitType"] = "none",
-					["groupType"] = "simple",
-					["type"] = "group",
-					["size"] = 10,
-				}, -- [1]
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+					["custom"] = "local text = aura_env.config.macro.text\n\naura_env.button = CreateFrame(\"Button\", \"buffButton\", aura_env.region, \"SecureActionButtonTemplate\")\naura_env.button:SetAllPoints()\naura_env.button:SetAttribute(\"unit\", \"player\")\naura_env.button:SetAttribute(\"type\",\"macro\")\naura_env.button:SetAttribute(\"macrotext\", text)",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\CartoonWalking.ogg",
+					["do_sound"] = false,
+				},
 			},
 		},
 		["GF 2"] = {
@@ -50993,8 +51326,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "timed",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend",
@@ -51009,7 +51342,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "status",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "timed",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -51171,17 +51504,30 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Dummy icons",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 132152,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "f1y8PDdfI3L",
+			["xOffset"] = 0,
+			["width"] = 45,
+			["zoom"] = 0.15,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "GF 2",
 			["actions"] = {
 				["start"] = {
 				},
@@ -51192,29 +51538,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "f1y8PDdfI3L",
-			["selfPoint"] = "CENTER",
-			["width"] = 45,
-			["zoom"] = 0.15,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "GF 2",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 0,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -51404,31 +51737,16 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["zoom"] = 0,
-			["icon"] = true,
+			["parent"] = "Malygos - Abilities",
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["authorOptions"] = {
-			},
-			["cooldown"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["config"] = {
-			},
-			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = true,
-			["semver"] = "2.1.2",
-			["tocversion"] = 30400,
-			["id"] = "Malygos - Engulf of Flames",
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["width"] = 45,
-			["useCooldownModRate"] = true,
-			["uid"] = "dOHUB1TuD4n",
-			["inverse"] = false,
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -51449,12 +51767,27 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["config"] = {
+			},
+			["useCooldownModRate"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "2.1.2",
+			["tocversion"] = 30400,
+			["id"] = "Malygos - Engulf of Flames",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["width"] = 45,
+			["alpha"] = 1,
+			["uid"] = "dOHUB1TuD4n",
+			["inverse"] = false,
+			["icon"] = true,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["parent"] = "Malygos - Abilities",
+			["authorOptions"] = {
+			},
 		},
 		["RD"] = {
 			["iconSource"] = -1,
@@ -51482,9 +51815,9 @@ WeakAurasSaved = {
 						["ownOnly"] = true,
 						["subeventPrefix"] = "SPELL",
 						["duration"] = "1",
+						["debuffType"] = "HELPFUL",
 						["custom_hide"] = "timed",
 						["spellName"] = 0,
-						["debuffType"] = "HELPFUL",
 						["remOperator"] = "<",
 						["type"] = "custom",
 						["unit"] = "player",
@@ -51665,25 +51998,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 2,
 			["fontSize"] = 19,
-			["displayStacks"] = "%p",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["parent"] = "Dummy icons",
+			["source"] = "import",
 			["stacksPoint"] = "BOTTOM",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["alpha"] = 1,
+			["displayStacks"] = "%p",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["config"] = {
 			},
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
@@ -51691,20 +52026,18 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "RD",
-			["source"] = "import",
+			["alpha"] = 1,
 			["useCooldownModRate"] = true,
 			["width"] = 45,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["uid"] = "ipDbI)oo45W",
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["displayIcon"] = 136119,
-			["cooldown"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -51737,8 +52070,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "custom",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend",
@@ -51753,7 +52086,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "event",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -51953,17 +52286,30 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Burst frost combo",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 135372,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "chjd7I0gZZj",
+			["xOffset"] = -56,
+			["width"] = 22.5,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "ERW2",
 			["actions"] = {
 				["start"] = {
 				},
@@ -51974,29 +52320,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "chjd7I0gZZj",
-			["selfPoint"] = "CENTER",
-			["width"] = 22.5,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "ERW2",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Burst frost combo",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -56,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -52029,8 +52362,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "timed",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend\n\n",
@@ -52045,7 +52378,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "status",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "timed",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -52210,17 +52543,30 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 0.7,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Dummy icons",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 135775,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 0.7,
+			["uid"] = "4CGac3cHtNa",
+			["xOffset"] = 11.234609603882,
+			["width"] = 21.999969482422,
+			["zoom"] = 0.15,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "Unholy P",
 			["actions"] = {
 				["start"] = {
 				},
@@ -52231,29 +52577,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "4CGac3cHtNa",
-			["selfPoint"] = "CENTER",
-			["width"] = 21.999969482422,
-			["zoom"] = 0.15,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "Unholy P",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 11.234609603882,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -52339,8 +52672,8 @@ WeakAurasSaved = {
 			["regionType"] = "text",
 			["conditions"] = {
 			},
-			["parent"] = "Vermin Warrior Stance",
 			["url"] = "https://wago.io/z6xqQay0S/16",
+			["preferToUpdate"] = false,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -52391,32 +52724,22 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["preferToUpdate"] = false,
+			["parent"] = "Vermin Warrior Stance",
 		},
 		["Aspect of the Hawk"] = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "Vermin Hunter",
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -52488,9 +52811,20 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -52628,31 +52962,30 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = "",
 			["desaturate"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["uid"] = "QdrVWzVpDS5",
 			["config"] = {
 			},
+			["uid"] = "QdrVWzVpDS5",
 			["icon_side"] = "RIGHT",
-			["zoom"] = 0.3,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["width"] = 40,
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["alpha"] = 1,
 			["cooldownTextDisabled"] = false,
 			["spark"] = false,
-			["parent"] = "Vermin Hunter",
+			["authorOptions"] = {
+			},
 			["id"] = "Aspect of the Hawk",
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["sparkHidden"] = "NEVER",
@@ -52771,19 +53104,18 @@ WeakAurasSaved = {
 						["spellId"] = "63982",
 						["use_alwaystrue"] = true,
 						["remaining_operator"] = "<",
-						["names"] = {
-						},
+						["subeventPrefix"] = "SPELL",
 						["use_genericShowOn"] = true,
 						["genericShowOn"] = "showOnCooldown",
-						["use_unit"] = true,
+						["unit"] = "player",
 						["use_sourceNpcId"] = false,
 						["remaining"] = "10",
 						["duration"] = "18",
-						["custom_hide"] = "timed",
+						["spellName"] = 0,
 						["use_dbmType"] = false,
 						["use_spellId"] = true,
 						["realSpellName"] = 0,
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "timed",
 						["type"] = "combatlog",
 						["use_remaining"] = true,
 						["use_eventtype"] = true,
@@ -52796,11 +53128,12 @@ WeakAurasSaved = {
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
-						["spellName"] = 0,
+						["debuffType"] = "HELPFUL",
 						["check"] = "event",
-						["unit"] = "player",
+						["use_unit"] = true,
 						["use_track"] = true,
-						["subeventPrefix"] = "SPELL",
+						["names"] = {
+						},
 					},
 					["untrigger"] = {
 					},
@@ -52816,25 +53149,25 @@ WeakAurasSaved = {
 						},
 						["remaining_operator"] = "<",
 						["remaining"] = "10",
-						["custom"] = "function(event, encounterId)\n  return encounterId == 749\nend",
-						["custom_hide"] = "timed",
 						["spellIds"] = {
 						},
+						["spellName"] = 0,
+						["events"] = "ENCOUNTER_START",
 						["use_spellName"] = false,
 						["use_remaining"] = true,
-						["debuffType"] = "HELPFUL",
-						["custom_type"] = "event",
-						["type"] = "custom",
+						["custom_hide"] = "timed",
 						["use_eventtype"] = true,
+						["type"] = "custom",
 						["subeventSuffix"] = "_CAST_START",
+						["custom_type"] = "event",
 						["unit"] = "player",
 						["use_dbmType"] = false,
 						["event"] = "Conditions",
 						["eventtype"] = "PLAYER_REGEN_DISABLED",
 						["realSpellName"] = 0,
 						["use_spellId"] = true,
-						["events"] = "ENCOUNTER_START",
-						["spellName"] = 0,
+						["custom"] = "function(event, encounterId)\n  return encounterId == 749\nend",
+						["debuffType"] = "HELPFUL",
 						["check"] = "event",
 						["subeventPrefix"] = "SPELL",
 						["use_track"] = true,
@@ -53207,19 +53540,18 @@ WeakAurasSaved = {
 						["spellId"] = "63783",
 						["use_alwaystrue"] = true,
 						["remaining_operator"] = "<",
-						["names"] = {
-						},
+						["subeventPrefix"] = "SPELL",
 						["use_genericShowOn"] = true,
 						["genericShowOn"] = "showOnCooldown",
-						["use_unit"] = true,
+						["unit"] = "player",
 						["use_sourceNpcId"] = false,
 						["remaining"] = "10",
 						["duration"] = "18",
-						["custom_hide"] = "timed",
+						["spellName"] = 0,
 						["use_dbmType"] = false,
 						["use_spellId"] = true,
 						["realSpellName"] = 0,
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "timed",
 						["type"] = "combatlog",
 						["use_remaining"] = true,
 						["use_eventtype"] = true,
@@ -53232,11 +53564,12 @@ WeakAurasSaved = {
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
-						["spellName"] = 0,
+						["debuffType"] = "HELPFUL",
 						["check"] = "event",
-						["unit"] = "player",
+						["use_unit"] = true,
 						["use_track"] = true,
-						["subeventPrefix"] = "SPELL",
+						["names"] = {
+						},
 					},
 					["untrigger"] = {
 					},
@@ -53252,25 +53585,25 @@ WeakAurasSaved = {
 						},
 						["remaining_operator"] = "<",
 						["remaining"] = "10",
-						["custom"] = "function(event, encounterId)\n  return encounterId == 749\nend",
-						["custom_hide"] = "timed",
 						["spellIds"] = {
 						},
+						["spellName"] = 0,
+						["events"] = "ENCOUNTER_START",
 						["use_spellName"] = false,
 						["use_remaining"] = true,
-						["debuffType"] = "HELPFUL",
-						["custom_type"] = "event",
-						["type"] = "custom",
+						["custom_hide"] = "timed",
 						["use_eventtype"] = true,
+						["type"] = "custom",
 						["subeventSuffix"] = "_CAST_START",
+						["custom_type"] = "event",
 						["unit"] = "player",
 						["use_dbmType"] = false,
 						["event"] = "Conditions",
 						["eventtype"] = "PLAYER_REGEN_DISABLED",
 						["realSpellName"] = 0,
 						["use_spellId"] = true,
-						["events"] = "ENCOUNTER_START",
-						["spellName"] = 0,
+						["custom"] = "function(event, encounterId)\n  return encounterId == 749\nend",
+						["debuffType"] = "HELPFUL",
 						["check"] = "event",
 						["subeventPrefix"] = "SPELL",
 						["use_track"] = true,
@@ -53619,15 +53952,33 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
-			["authorOptions"] = {
-			},
+			["rowSpace"] = 1,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["gridType"] = "RD",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["animate"] = false,
 			["useLimit"] = false,
 			["scale"] = 1,
@@ -53649,37 +54000,19 @@ WeakAurasSaved = {
 			["gridWidth"] = 5,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SELECTFRAME",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["internalVersion"] = 64,
 			["config"] = {
 			},
-			["rotation"] = 0,
-			["internalVersion"] = 64,
+			["authorOptions"] = {
+			},
+			["gridType"] = "RD",
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["rowSpace"] = 1,
+			["rotation"] = 0,
 		},
 		["Saronite Ore"] = {
 			["iconSource"] = -1,
@@ -53837,18 +54170,25 @@ WeakAurasSaved = {
 			["source"] = "import",
 			["config"] = {
 			},
-			["url"] = "https://wago.io/iST6tz9t8/1",
-			["useTooltip"] = true,
-			["regionType"] = "icon",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["useTooltip"] = true,
+			["regionType"] = "icon",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["cooldown"] = false,
-			["selfPoint"] = "CENTER",
 			["xOffset"] = 0,
+			["parent"] = "Ore Count",
 			["cooldownTextDisabled"] = false,
 			["width"] = 40,
 			["zoom"] = 0.3,
@@ -53861,20 +54201,13 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["uid"] = "RuUAMb)kWx1",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["url"] = "https://wago.io/iST6tz9t8/1",
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["parent"] = "Ore Count",
+			["selfPoint"] = "CENTER",
 		},
 		["Malygos - Flame Spike - Low Energy"] = {
 			["iconSource"] = -1,
@@ -54003,32 +54336,13 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = true,
-			["parent"] = "Malygos - Abilities",
+			["icon"] = true,
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["color"] = {
-				0.47450980392157, -- [1]
-				0.52549019607843, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = -91.640930175781,
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["xOffset"] = -91.640930175781,
-			["config"] = {
-			},
-			["frameStrata"] = 1,
-			["zoom"] = 0,
-			["semver"] = "2.1.2",
-			["tocversion"] = 30400,
-			["id"] = "Malygos - Flame Spike - Low Energy",
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["width"] = 45,
-			["useCooldownModRate"] = true,
-			["uid"] = "YODZQz(QG8j",
-			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -54049,6 +54363,20 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["config"] = {
+			},
+			["useCooldownModRate"] = true,
+			["zoom"] = 0,
+			["semver"] = "2.1.2",
+			["tocversion"] = 30400,
+			["id"] = "Malygos - Flame Spike - Low Energy",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["width"] = 45,
+			["alpha"] = 1,
+			["uid"] = "YODZQz(QG8j",
+			["inverse"] = false,
+			["parent"] = "Malygos - Abilities",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -54065,7 +54393,12 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["color"] = {
+				0.47450980392157, -- [1]
+				0.52549019607843, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 		},
 		["path divider"] = {
 			["iconSource"] = -1,
@@ -54098,8 +54431,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "custom",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend",
@@ -54114,7 +54447,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "event",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -54151,20 +54484,15 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["source"] = "import",
-			["cooldown"] = true,
-			["color"] = {
-				0.76862745098039, -- [1]
-				0.76862745098039, -- [2]
-				0.76862745098039, -- [3]
-				1, -- [4]
-			},
-			["desaturate"] = false,
-			["discrete_rotation"] = 0,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["desaturate"] = false,
+			["rotation"] = 45,
+			["stacksPoint"] = "BOTTOM",
 			["version"] = 176,
 			["subRegions"] = {
 				{
@@ -54272,37 +54600,42 @@ WeakAurasSaved = {
 				["zoneIds"] = "",
 			},
 			["displayIcon"] = 237515,
-			["authorOptions"] = {
+			["color"] = {
+				0.76862745098039, -- [1]
+				0.76862745098039, -- [2]
+				0.76862745098039, -- [3]
+				1, -- [4]
 			},
 			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
-			["displayStacks"] = "%p",
-			["fontSize"] = 19,
+			["source"] = "import",
+			["authorOptions"] = {
+			},
 			["uid"] = "Xjdhma3BzAO",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = -68.3,
 			["mirror"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["regionType"] = "texture",
 			["useCooldownModRate"] = true,
 			["blendMode"] = "BLEND",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
-			["rotation"] = 45,
+			["fontSize"] = 19,
+			["icon"] = true,
 			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Circle_AlphaGradient_Out.tga",
 			["zoom"] = 0.3,
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
 			["tocversion"] = 30401,
 			["id"] = "path divider",
-			["alpha"] = 1,
 			["frameStrata"] = 2,
+			["alpha"] = 1,
 			["width"] = 1.9999672174454,
-			["icon"] = true,
+			["displayStacks"] = "%p",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -68.3,
+			["discrete_rotation"] = 0,
 			["conditions"] = {
 			},
-			["stacksPoint"] = "BOTTOM",
+			["cooldown"] = true,
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -54479,13 +54812,12 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["source"] = "import",
 			["anchorFrameType"] = "SCREEN",
-			["stickyDuration"] = false,
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
+					["do_message"] = false,
 					["do_custom"] = false,
 					["custom"] = "",
-					["do_message"] = false,
 				},
 				["finish"] = {
 					["do_message"] = false,
@@ -54494,6 +54826,28 @@ WeakAurasSaved = {
 				["init"] = {
 					["custom"] = "local f = WeakAuras[\"regions\"][aura_env.id][\"region\"]\n\nif not f.button then\n    local itemId = WeakAuras.GetData(aura_env.id).triggers[1].trigger.itemName\n    local itemName = GetItemInfo(itemId)\n    f.button = CreateFrame(\"Button\", nil, f,\"SecureActionButtonTemplate\")\n    f.button:SetAttribute(\"type\", \"macro\")\n    f.button:SetAttribute(\"unit\",\"player\")\n    \n    local macrotext = \"/cancelform\\n/use item:\" .. itemId\n    \n    f.button:SetAttribute(\"macrotext\",macrotext)\n    f.button:SetAllPoints(f)\n    \n    f.button:SetScript(\"OnEnter\", function(self) \n            GameTooltip:SetOwner(self, \"ANCHOR_CURSOR\"); \n            GameTooltip:ClearLines(); \n            GameTooltip:SetItemByID(itemId);\n            GameTooltip:Show() \n    end)\n    f.button:SetScript(\"OnLeave\", function(self) \n            GameTooltip:Hide() \n    end)\nend",
 					["do_custom"] = true,
+				},
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "slidebottom",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "alphaPulse",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 			},
 			["cooldown"] = false,
@@ -54524,28 +54878,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "slidebottom",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "alphaPulse",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["stickyDuration"] = false,
 		},
 		["bloodP 2"] = {
 			["iconSource"] = -1,
@@ -54574,8 +54907,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "timed",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend\n\n",
@@ -54590,7 +54923,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "status",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "timed",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -54752,17 +55085,30 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 0.7,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Dummy icons",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 135770,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 0.7,
+			["uid"] = "0gBbOtVRkjO",
+			["xOffset"] = 11.234609603882,
+			["width"] = 22,
+			["zoom"] = 0.15,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "bloodP 2",
 			["actions"] = {
 				["start"] = {
 				},
@@ -54773,29 +55119,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "0gBbOtVRkjO",
-			["selfPoint"] = "CENTER",
-			["width"] = 22,
-			["zoom"] = 0.15,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "bloodP 2",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 11.234609603882,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -55048,37 +55381,37 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
+			["selfPoint"] = "CENTER",
+			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["icon"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["config"] = {
+			},
+			["frameStrata"] = 1,
+			["zoom"] = 0.2,
+			["semver"] = "1.1.19",
+			["tocversion"] = 30401,
+			["id"] = "Blood Boil",
+			["width"] = 45,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["useCooldownModRate"] = true,
+			["uid"] = ")(747SVNn0D",
+			["inverse"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["parent"] = "Frost AOE",
-			["information"] = {
-				["forceEvents"] = true,
-			},
-			["icon"] = true,
-			["config"] = {
-			},
-			["alpha"] = 1,
-			["zoom"] = 0.2,
-			["semver"] = "1.1.19",
-			["tocversion"] = 30401,
-			["id"] = "Blood Boil",
-			["width"] = 45,
-			["useCooldownModRate"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["uid"] = ")(747SVNn0D",
-			["inverse"] = false,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["selfPoint"] = "CENTER",
+			["parent"] = "Frost AOE",
 		},
 		["Jade"] = {
 			["iconSource"] = -1,
@@ -55201,12 +55534,6 @@ WeakAurasSaved = {
 					["text"] = "/cast Conjure Mana Jade",
 				},
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -55226,6 +55553,35 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
+			},
+			["authorOptions"] = {
+				{
+					["subOptions"] = {
+						{
+							["type"] = "input",
+							["useDesc"] = false,
+							["width"] = 1,
+							["name"] = "Text",
+							["default"] = "",
+							["multiline"] = false,
+							["length"] = 10,
+							["key"] = "text",
+							["useLength"] = false,
+						}, -- [1]
+					},
+					["hideReorder"] = true,
+					["useDesc"] = false,
+					["nameSource"] = 0,
+					["width"] = 1,
+					["useCollapse"] = false,
+					["collapse"] = false,
+					["name"] = "Macro",
+					["key"] = "macro",
+					["limitType"] = "none",
+					["groupType"] = "simple",
+					["type"] = "group",
+					["size"] = 10,
+				}, -- [1]
 			},
 			["regionType"] = "icon",
 			["information"] = {
@@ -55287,34 +55643,11 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = false,
-			["authorOptions"] = {
-				{
-					["subOptions"] = {
-						{
-							["type"] = "input",
-							["useDesc"] = false,
-							["width"] = 1,
-							["name"] = "Text",
-							["default"] = "",
-							["multiline"] = false,
-							["length"] = 10,
-							["key"] = "text",
-							["useLength"] = false,
-						}, -- [1]
-					},
-					["hideReorder"] = true,
-					["useDesc"] = false,
-					["nameSource"] = 0,
-					["width"] = 1,
-					["useCollapse"] = false,
-					["collapse"] = false,
-					["name"] = "Macro",
-					["key"] = "macro",
-					["limitType"] = "none",
-					["groupType"] = "simple",
-					["type"] = "group",
-					["size"] = 10,
-				}, -- [1]
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 		},
 		["disclaimer"] = {
@@ -55992,10 +56325,10 @@ WeakAurasSaved = {
 			["borderOffset"] = 4,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["uid"] = "Pt2lZW6tFcu",
-			["borderInset"] = 1,
 			["config"] = {
 			},
+			["uid"] = "Pt2lZW6tFcu",
+			["borderInset"] = 1,
 			["xOffset"] = 0,
 			["conditions"] = {
 			},
@@ -56151,7 +56484,15 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+					["custom"] = "\n        aura_env.var=0",
+					["do_custom"] = false,
+				},
+				["finish"] = {
+				},
 			},
 			["version"] = 176,
 			["subRegions"] = {
@@ -56235,6 +56576,34 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 64.785758972168,
+			["uid"] = "L3oD0upDwB0",
+			["useAdjustededMax"] = false,
+			["backgroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura3",
+			["source"] = "import",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 2,
+						["op"] = "<",
+						["variable"] = "expirationTime",
+						["value"] = "10",
+					},
+					["changes"] = {
+						{
+							["value"] = 13,
+							["property"] = "sub.3.text_fontSize",
+						}, -- [1]
+					},
+				}, -- [1]
+			},
+			["foregroundTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
+			["mirror"] = false,
+			["authorOptions"] = {
+			},
 			["load"] = {
 				["ingroup"] = {
 				},
@@ -56288,46 +56657,11 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["useAdjustededMax"] = false,
-			["backgroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura3",
-			["source"] = "import",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 2,
-						["op"] = "<",
-						["variable"] = "expirationTime",
-						["value"] = "10",
-					},
-					["changes"] = {
-						{
-							["value"] = 13,
-							["property"] = "sub.3.text_fontSize",
-						}, -- [1]
-					},
-				}, -- [1]
-			},
-			["textColor"] = {
-				[2] = 0.75686274509804,
-				[3] = 0,
-			},
-			["mirror"] = false,
-			["backgroundColor"] = {
-				1, -- [1]
-				0.039215687662363, -- [2]
-				0, -- [3]
-				0.081597149372101, -- [4]
-			},
+			["displayStacks"] = "%p",
 			["zoom"] = 0.3,
-			["fontSize"] = 19,
-			["uid"] = "L3oD0upDwB0",
 			["anchorFrameType"] = "SCREEN",
 			["useCooldownModRate"] = true,
-			["preferToUpdate"] = true,
+			["fontSize"] = 19,
 			["foregroundColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -56345,22 +56679,21 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["adjustedMin"] = "0",
 			["id"] = "Gary Shadow cd",
-			["foregroundTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
+			["compress"] = false,
 			["frameStrata"] = 2,
 			["width"] = 26.070993423462,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-					["custom"] = "\n        aura_env.var=0",
-					["do_custom"] = false,
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				1, -- [1]
+				0.039215687662363, -- [2]
+				0, -- [3]
+				0.081597149372101, -- [4]
 			},
-			["compress"] = false,
+			["textColor"] = {
+				[2] = 0.75686274509804,
+				[3] = 0,
+			},
 			["inverse"] = false,
-			["displayStacks"] = "%p",
+			["preferToUpdate"] = true,
 			["orientation"] = "VERTICAL_INVERSE",
 			["crop_x"] = 0,
 			["cooldown"] = true,
@@ -56393,8 +56726,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "timed",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var)\n    if var then\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend",
@@ -56409,7 +56742,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "status",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "timed",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -56610,17 +56943,30 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Dummy icons",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 132728,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "IZ1L5iYWjlg",
+			["xOffset"] = 9.0714197158813,
+			["width"] = 24,
+			["zoom"] = 0.1,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "Bone Shield opt",
 			["actions"] = {
 				["start"] = {
 				},
@@ -56631,29 +56977,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "IZ1L5iYWjlg",
-			["selfPoint"] = "CENTER",
-			["width"] = 24,
-			["zoom"] = 0.1,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "Bone Shield opt",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 9.0714197158813,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -56663,21 +56996,16 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["xOffset"] = 0,
+			["parent"] = "Vermin Druid",
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["zoom"] = 0.3,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -56722,8 +57050,7 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
-			["authorOptions"] = {
-			},
+			["xOffset"] = 0,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -56731,6 +57058,12 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["actions"] = {
 				["start"] = {
 				},
@@ -56739,7 +57072,6 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["icon"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -56861,15 +57193,11 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desaturate"] = false,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["config"] = {
 			},
 			["alpha"] = 1,
 			["icon_side"] = "RIGHT",
@@ -56877,11 +57205,15 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
-			["config"] = {
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["cooldownTextDisabled"] = false,
 			["spark"] = false,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["sparkHidden"] = "NEVER",
 			["id"] = "Predator's Swiftness",
 			["useCooldownModRate"] = true,
@@ -56889,7 +57221,8 @@ WeakAurasSaved = {
 			["auto"] = false,
 			["uid"] = "gDrvpV9eGRR",
 			["inverse"] = false,
-			["parent"] = "Vermin Druid",
+			["authorOptions"] = {
+			},
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
@@ -57067,31 +57400,16 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["zoom"] = 0,
-			["icon"] = true,
+			["parent"] = "Malygos - Abilities",
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["authorOptions"] = {
-			},
-			["cooldown"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["config"] = {
-			},
-			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["semver"] = "2.1.2",
-			["tocversion"] = 30400,
-			["id"] = "Revivify",
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["width"] = 45,
-			["useCooldownModRate"] = true,
-			["uid"] = "4haZH2dEFdB",
-			["inverse"] = false,
+			["cooldown"] = false,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -57112,12 +57430,146 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["config"] = {
+			},
+			["useCooldownModRate"] = true,
+			["cooldownTextDisabled"] = false,
+			["semver"] = "2.1.2",
+			["tocversion"] = 30400,
+			["id"] = "Revivify",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["width"] = 45,
+			["alpha"] = 1,
+			["uid"] = "4haZH2dEFdB",
+			["inverse"] = false,
+			["icon"] = true,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["parent"] = "Malygos - Abilities",
+			["authorOptions"] = {
+			},
+		},
+		["GFBT 2HUH"] = {
+			["controlledChildren"] = {
+				"GFBT1", -- [1]
+				"GFBT2", -- [2]
+				"GFBT plus", -- [3]
+			},
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["wagoID"] = "O0_GmmhMG",
+			["xOffset"] = 0,
+			["preferToUpdate"] = true,
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["unit"] = "player",
+						["type"] = "aura2",
+						["spellIds"] = {
+						},
+						["subeventSuffix"] = "_CAST_START",
+						["subeventPrefix"] = "SPELL",
+						["debuffType"] = "HELPFUL",
+						["event"] = "Health",
+						["names"] = {
+						},
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+			},
+			["internalVersion"] = 64,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["version"] = 176,
+			["subRegions"] = {
+			},
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["source"] = "import",
+			["scale"] = 1,
+			["border"] = false,
+			["borderEdge"] = "Square Full White",
+			["regionType"] = "group",
+			["borderSize"] = 2,
+			["borderOffset"] = 4,
+			["semver"] = "1.1.19",
+			["tocversion"] = 30401,
+			["id"] = "GFBT 2HUH",
+			["uid"] = "FWeOV9UIjiO",
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["authorOptions"] = {
+			},
+			["borderInset"] = 1,
+			["config"] = {
+			},
+			["selfPoint"] = "CENTER",
+			["conditions"] = {
+			},
+			["information"] = {
+				["forceEvents"] = true,
+			},
+			["parent"] = "Dummy icons",
 		},
 		["Gary Shadow"] = {
 			["user_y"] = 0,
@@ -57168,7 +57620,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["remOperator"] = "<",
 						["custom"] = "function(event, var)\n    if var~=nil then\n        aura_env.var = var\n        return true\n        end\n    end",
-						["spellName"] = 0,
+						["debuffType"] = "HELPFUL",
 						["events"] = "fonsas_GARG",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -57185,9 +57637,9 @@ WeakAurasSaved = {
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
-						["debuffType"] = "HELPFUL",
-						["check"] = "event",
 						["custom_hide"] = "custom",
+						["check"] = "event",
+						["spellName"] = 0,
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -57263,7 +57715,15 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+					["custom"] = "\n        aura_env.var=0",
+					["do_custom"] = false,
+				},
+				["finish"] = {
+				},
 			},
 			["version"] = 176,
 			["subRegions"] = {
@@ -57333,6 +57793,34 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 64.785758972168,
+			["uid"] = "yfVaIJ80Wo6",
+			["useAdjustededMax"] = false,
+			["backgroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura3",
+			["source"] = "import",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = ">",
+						["variable"] = "value",
+						["value"] = "11",
+					},
+					["changes"] = {
+						{
+							["value"] = true,
+							["property"] = "sub.2.model_visible",
+						}, -- [1]
+					},
+				}, -- [1]
+			},
+			["foregroundTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
+			["mirror"] = false,
+			["authorOptions"] = {
+			},
 			["load"] = {
 				["size"] = {
 					["multi"] = {
@@ -57382,46 +57870,11 @@ WeakAurasSaved = {
 				["use_class"] = true,
 				["zoneIds"] = "",
 			},
-			["useAdjustededMax"] = false,
-			["backgroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura3",
-			["source"] = "import",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["op"] = ">",
-						["variable"] = "value",
-						["value"] = "11",
-					},
-					["changes"] = {
-						{
-							["value"] = true,
-							["property"] = "sub.2.model_visible",
-						}, -- [1]
-					},
-				}, -- [1]
-			},
-			["textColor"] = {
-				[2] = 0.75686274509804,
-				[3] = 0,
-			},
-			["mirror"] = false,
-			["backgroundColor"] = {
-				0.23921568627451, -- [1]
-				0.23921568627451, -- [2]
-				0.23921568627451, -- [3]
-				0, -- [4]
-			},
+			["displayStacks"] = "%p",
 			["zoom"] = 0.3,
-			["fontSize"] = 19,
-			["uid"] = "yfVaIJ80Wo6",
 			["anchorFrameType"] = "SCREEN",
 			["useCooldownModRate"] = true,
-			["preferToUpdate"] = true,
+			["fontSize"] = 19,
 			["foregroundColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -57439,229 +57892,25 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["adjustedMin"] = "0",
 			["id"] = "Gary Shadow",
-			["foregroundTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
+			["compress"] = false,
 			["frameStrata"] = 2,
 			["width"] = 26.070993423462,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-					["custom"] = "\n        aura_env.var=0",
-					["do_custom"] = false,
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0.23921568627451, -- [1]
+				0.23921568627451, -- [2]
+				0.23921568627451, -- [3]
+				0, -- [4]
 			},
-			["compress"] = false,
+			["textColor"] = {
+				[2] = 0.75686274509804,
+				[3] = 0,
+			},
 			["inverse"] = true,
-			["displayStacks"] = "%p",
+			["preferToUpdate"] = true,
 			["orientation"] = "VERTICAL_INVERSE",
 			["crop_x"] = 0,
 			["cooldown"] = true,
 			["slanted"] = false,
-		},
-		["Malygos - Life Burst"] = {
-			["iconSource"] = -1,
-			["wagoID"] = "nYCzfPXgJ",
-			["authorOptions"] = {
-			},
-			["preferToUpdate"] = false,
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = false,
-			["url"] = "https://wago.io/nYCzfPXgJ/9",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["track"] = "auto",
-						["type"] = "spell",
-						["spellName"] = 57143,
-						["subeventSuffix"] = "_CAST_START",
-						["use_exact_spellName"] = true,
-						["use_genericShowOn"] = true,
-						["genericShowOn"] = "showAlways",
-						["unit"] = "player",
-						["realSpellName"] = 57143,
-						["use_spellName"] = true,
-						["spellIds"] = {
-						},
-						["subeventPrefix"] = "SPELL",
-						["event"] = "Cooldown Progress (Spell)",
-						["names"] = {
-						},
-						["use_track"] = true,
-						["debuffType"] = "HELPFUL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				{
-					["trigger"] = {
-						["use_namerealm"] = true,
-						["type"] = "unit",
-						["namerealm"] = "Malygos",
-						["use_unit"] = true,
-						["debuffType"] = "HELPFUL",
-						["event"] = "Unit Characteristics",
-						["unit"] = "target",
-					},
-					["untrigger"] = {
-					},
-				}, -- [2]
-				["activeTriggerMode"] = -10,
-			},
-			["internalVersion"] = 64,
-			["keepAspectRatio"] = false,
-			["selfPoint"] = "CENTER",
-			["desaturate"] = false,
-			["version"] = 9,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text_format_s_format"] = "none",
-					["text_text"] = "%s",
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["rotateText"] = "NONE",
-					["type"] = "subtext",
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Friz Quadrata TT",
-					["text_shadowYOffset"] = 0,
-					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
-					["text_anchorPoint"] = "INNER_BOTTOMRIGHT",
-					["text_fontSize"] = 12,
-					["anchorXOffset"] = 0,
-					["text_visible"] = true,
-				}, -- [2]
-			},
-			["height"] = 45,
-			["load"] = {
-				["ingroup"] = {
-					["single"] = "raid",
-					["multi"] = {
-						["raid"] = true,
-					},
-				},
-				["use_zoneIds"] = true,
-				["zone"] = "",
-				["use_vehicle"] = true,
-				["encounterid"] = "1094",
-				["zoneIds"] = "141",
-				["use_encounterid"] = false,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = false,
-				["use_spellknown"] = false,
-				["class"] = {
-					["single"] = "SHAMAN",
-					["multi"] = {
-						["SHAMAN"] = true,
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["use_exact_spellknown"] = false,
-				["spellknown"] = 59158,
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["source"] = "import",
-			["cooldownTextDisabled"] = true,
-			["parent"] = "Malygos - Abilities",
-			["regionType"] = "icon",
-			["cooldownEdge"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["information"] = {
-				["forceEvents"] = true,
-			},
-			["xOffset"] = 45,
-			["config"] = {
-			},
-			["frameStrata"] = 1,
-			["zoom"] = 0,
-			["semver"] = "2.1.2",
-			["tocversion"] = 30400,
-			["id"] = "Malygos - Life Burst",
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["width"] = 45,
-			["useCooldownModRate"] = true,
-			["uid"] = "zr6A8OA93BJ",
-			["inverse"] = false,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["variable"] = "onCooldown",
-						["value"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = true,
-							["property"] = "desaturate",
-						}, -- [1]
-					},
-				}, -- [1]
-			},
-			["cooldown"] = true,
-			["icon"] = true,
 		},
 		["DRUID"] = {
 			["iconSource"] = -1,
@@ -57870,13 +58119,13 @@ WeakAurasSaved = {
 			},
 			["useCooldownModRate"] = false,
 			["anchorFrameType"] = "SCREEN",
-			["parent"] = "MISSING BUFFS",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["icon"] = true,
 			["cooldown"] = false,
 			["conditions"] = {
 			},
@@ -57904,7 +58153,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "MISSING BUFFS",
 		},
 		["2. Focus Cast Bar"] = {
 			["controlledChildren"] = {
@@ -58015,7 +58264,7 @@ WeakAurasSaved = {
 			["borderOffset"] = 4,
 			["semver"] = "1.0.0",
 			["id"] = "2. Focus Cast Bar",
-			["borderInset"] = 1,
+			["xOffset"] = -1,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SELECTFRAME",
 			["animation"] = {
@@ -58041,7 +58290,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["uid"] = "yxe16k5F6ar",
-			["anchorFrameFrame"] = "SUFUnitfocus",
+			["borderInset"] = 1,
 			["conditions"] = {
 			},
 			["information"] = {
@@ -58049,7 +58298,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["groupOffset"] = true,
 			},
-			["xOffset"] = -1,
+			["anchorFrameFrame"] = "SUFUnitfocus",
 		},
 		["Druid - Energy Bar"] = {
 			["overlays"] = {
@@ -58244,19 +58493,19 @@ WeakAurasSaved = {
 						0, -- [3]
 						1, -- [4]
 					},
-					["text_text_format_p_time_legacy_floor"] = false,
+					["text_text_format_c_format"] = "none",
 					["text_selfPoint"] = "AUTO",
 					["text_automaticWidth"] = "Auto",
 					["text_fixedWidth"] = 64,
 					["text_text_format_t_time_format"] = 0,
-					["anchorYOffset"] = 0,
+					["text_text_format_p_time_legacy_floor"] = false,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
 					["text_text_format_t_format"] = "timed",
 					["text_text_format_p_time_mod_rate"] = true,
-					["text_text_format_t_time_mod_rate"] = true,
-					["type"] = "subtext",
 					["text_fontType"] = "None",
+					["type"] = "subtext",
+					["text_visible"] = true,
 					["text_color"] = {
 						1, -- [1]
 						1, -- [2]
@@ -58268,10 +58517,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = -1,
 					["text_text_format_p_time_format"] = 0,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_text_format_t_time_mod_rate"] = true,
 					["text_anchorPoint"] = "INNER_RIGHT",
 					["text_text_format_p_time_precision"] = 1,
-					["text_text_format_c_format"] = "none",
+					["anchorYOffset"] = 0,
 					["text_fontSize"] = 15,
 					["anchorXOffset"] = 0,
 					["text_text_format_t_time_precision"] = 1,
@@ -58592,10 +58841,14 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["config"] = {
-			},
-			["source"] = "import",
 			["uid"] = "YLXd21dLLBj",
+			["source"] = "import",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["parent"] = "Malygos",
 			["width"] = 285,
 			["smoothProgress"] = true,
@@ -58617,11 +58870,7 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "CUSTOM",
 			["authorOptions"] = {
 			},
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["config"] = {
 			},
 			["inverse"] = false,
 			["actions"] = {
@@ -59168,17 +59417,29 @@ WeakAurasSaved = {
 			["source"] = "import",
 			["config"] = {
 			},
-			["parent"] = "AMS Group ULDUAR - By fonsas (english clients)",
-			["xOffset"] = 0,
-			["regionType"] = "icon",
-			["actions"] = {
+			["animation"] = {
 				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 				["finish"] = {
-				},
-				["init"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 			},
+			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
 			["cooldown"] = false,
 			["conditions"] = {
 				{
@@ -59301,12 +59562,7 @@ WeakAurasSaved = {
 					},
 				}, -- [3]
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "AMS Group ULDUAR - By fonsas (english clients)",
 			["zoom"] = 0.25,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
@@ -59319,28 +59575,21 @@ WeakAurasSaved = {
 			["useCooldownModRate"] = true,
 			["uid"] = "9F1J9RQO3BA",
 			["inverse"] = false,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["displayIcon"] = 136120,
 			["information"] = {
 			},
-			["animation"] = {
+			["actions"] = {
 				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
 				},
 				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
+				},
+				["init"] = {
 				},
 			},
 		},
@@ -59457,20 +59706,20 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "DK Next Action Guide - by Fonsas",
-			["selfPoint"] = "CENTER",
+			["borderInset"] = 1,
 			["frameStrata"] = 5,
 			["anchorFrameType"] = "SCREEN",
-			["xOffset"] = 594.0000000000002,
-			["borderInset"] = 1,
+			["selfPoint"] = "CENTER",
 			["config"] = {
 			},
+			["groupIcon"] = 341221,
 			["uid"] = "2cwmZqrgTiy",
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["groupIcon"] = 341221,
+			["xOffset"] = 594.0000000000002,
 		},
 		["Druid - CP4"] = {
 			["color"] = {
@@ -60022,17 +60271,30 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Gargoyle helper",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = false,
 			["displayIcon"] = 132182,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "9Pt51oCdkVP",
+			["xOffset"] = 33,
+			["width"] = 18,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "Gary 2",
 			["actions"] = {
 				["start"] = {
 				},
@@ -60043,26 +60305,13 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "9Pt51oCdkVP",
-			["selfPoint"] = "CENTER",
-			["width"] = 18,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "Gary 2",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Gargoyle helper",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 33,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -60207,7 +60456,7 @@ WeakAurasSaved = {
 					},
 				}, -- [5]
 			},
-			["cooldown"] = false,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -60422,13 +60671,12 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["source"] = "import",
 			["anchorFrameType"] = "SCREEN",
-			["stickyDuration"] = false,
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
+					["do_message"] = false,
 					["do_custom"] = false,
 					["custom"] = "",
-					["do_message"] = false,
 				},
 				["finish"] = {
 					["do_message"] = false,
@@ -60437,6 +60685,28 @@ WeakAurasSaved = {
 				["init"] = {
 					["custom"] = "local f = WeakAuras[\"regions\"][aura_env.id][\"region\"]\n\nif not f.button then\n    f.button = CreateFrame(\"Button\", nil, f,\"SecureActionButtonTemplate\")\n    f.button:SetAttribute(\"type\", \"macro\")\n    f.button:SetAttribute(\"unit\",\"player\")\n    \n    local macrotext = \"/run VehicleExit()\"\n    \n    f.button:SetAttribute(\"macrotext\",macrotext)\n    f.button:SetAllPoints(f)\nend",
 					["do_custom"] = true,
+				},
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "slidebottom",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "alphaPulse",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 			},
 			["cooldown"] = true,
@@ -60467,28 +60737,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "slidebottom",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "alphaPulse",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["stickyDuration"] = false,
 		},
 		["1. Target Cast Bar"] = {
 			["controlledChildren"] = {
@@ -60621,10 +60870,10 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["authorOptions"] = {
 			},
-			["config"] = {
-			},
 			["uid"] = "wmcOTwTtaQ9",
 			["borderInset"] = 1,
+			["config"] = {
+			},
 			["conditions"] = {
 			},
 			["information"] = {
@@ -60832,37 +61081,37 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
+			["selfPoint"] = "CENTER",
+			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["icon"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["config"] = {
+			},
+			["frameStrata"] = 1,
+			["zoom"] = 0.2,
+			["semver"] = "1.1.19",
+			["tocversion"] = 30401,
+			["id"] = "Frost Strike",
+			["width"] = 45,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["useCooldownModRate"] = true,
+			["uid"] = "FcNvGetFez2",
+			["inverse"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["parent"] = "Frost AOE",
-			["information"] = {
-				["forceEvents"] = true,
-			},
-			["icon"] = true,
-			["config"] = {
-			},
-			["alpha"] = 1,
-			["zoom"] = 0.2,
-			["semver"] = "1.1.19",
-			["tocversion"] = 30401,
-			["id"] = "Frost Strike",
-			["width"] = 45,
-			["useCooldownModRate"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["uid"] = "FcNvGetFez2",
-			["inverse"] = false,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["selfPoint"] = "CENTER",
+			["parent"] = "Frost AOE",
 		},
 		["target cast bar - uninterruptable"] = {
 			["sparkWidth"] = 20,
@@ -60928,9 +61177,9 @@ WeakAurasSaved = {
 						["custom_hide"] = "timed",
 						["subeventSuffix"] = "_CAST_START",
 						["sourceUnit"] = "target",
-						["unit"] = "target",
+						["subeventPrefix"] = "SPELL",
 						["event"] = "Cast",
-						["use_unit"] = true,
+						["unit"] = "target",
 						["names"] = {
 						},
 						["unevent"] = "auto",
@@ -60938,7 +61187,7 @@ WeakAurasSaved = {
 						},
 						["use_sourceUnit"] = true,
 						["use_castType"] = false,
-						["subeventPrefix"] = "SPELL",
+						["use_unit"] = true,
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
 					},
@@ -61441,9 +61690,9 @@ WeakAurasSaved = {
 						["duration"] = "1",
 						["custom"] = "function()\n    \n    local lastAction = aura_env.nextAction\n    local startH, durationH = GetSpellCooldown(57330)\n    \n    local DESexpire, bloodP, HoWTimer, uhP, uhstr, totem, boneS  = aura_env.trackB2h()\n    --print(HoWTimer)\n    local ff, uh = aura_env.trackD2h()\n    aura_env.ff = ff\n    aura_env.uh = uh\n    local timeNow = GetTime()\n    aura_env.gcdFreeWhen = aura_env.gcdWhen - timeNow + aura_env.config.reaction/1000\n    \n    if UnitExists(\"pet\") and aura_env.GFtalented==1 then\n        aura_env.gf = aura_env.trackBPet2h() \n    else \n        aura_env.gf = 30\n    end\n    --print(\"--\")\n    \n    local timeNow = GetTime()\n    aura_env.gcdFreeWhen = aura_env.gcdWhen - timeNow + aura_env.config.reaction/1000\n    if  aura_env.gcdFreeWhen<0 then  aura_env.gcdFreeWhen=0 end\n    for i=1, 6 do\n        aura_env.runes[i].cd= aura_env.runes[i].when - timeNow - aura_env.gcdFreeWhen\n        if i>1 then\n            if aura_env.runes[i].cd< -(2.49+aura_env.gcdFreeWhen) then\n                aura_env.runes[i].cd = 0 \n            end \n        else \n            if GetRuneType(1)~=4 then\n                if aura_env.runes[i].cd< -(2.49+aura_env.gcdFreeWhen) then\n                    aura_env.runes[i].cd = 0 \n                end \n            end\n        end\n    end\n    \n    --rune tracker\n    local bn, fn, un, bl, fl, ul = 0\n    if (aura_env.runes[1].cd)>(aura_env.runes[2].cd) then bn=2 bl=1 else bn=1 bl=2 end\n    if (aura_env.runes[3].cd)>(aura_env.runes[4].cd) then un=4 ul=3 else un=3 ul=4 end\n    if (aura_env.runes[5].cd)>(aura_env.runes[6].cd) then fn=6 fl=5 else fn=5 fl=6 end\n    \n    \n    startH, durationH = GetSpellCooldown(57330)\n    \n    local SSnext, SSlast = 0\n    if aura_env.runes[un].cd > aura_env.runes[fn].cd then SSnext = aura_env.runes[un].cd else SSnext = aura_env.runes[fn].cd  end\n    if aura_env.runes[ul].cd > aura_env.runes[fl].cd then SSlast = aura_env.runes[ul].cd else SSlast = aura_env.runes[fl].cd  end\n    \n    local dis = 0\n    if uh<ff then dis = uh else dis=ff end\n    \n    \n    \n    \n    \n    --[[\n    \n    if not UnitAffectingCombat(\"player\") then\n        \n        aura_env.totemDetected = false\n        aura_env.DDlock = false\n        lastAction = \"\"\n        if not uhP then\n            aura_env.nextAction = \"UP\"\n        else\n            \n            local start, duration = 60\n            if aura_env.boneShieldTalented==1 then\n                start, duration = GetSpellCooldown(49222)\n            end\n            \n            if boneS<10 and duration<=1.6 then\n                aura_env.nextAction = \"bonesFull\"\n            elseif  aura_env.gf<10 then\n                aura_env.nextAction = \"GF\"\n            elseif HoWTimer<30 and durationH<1.5 then\n                aura_env.nextAction = \"HOW\"\n            else\n                aura_env.nextAction = \"IT\"\n            end\n        end\n    elseif not bloodP then\n        \n        \n        if totem then \n            aura_env.totemDetected = true\n        end\n        ]]\n    \n    \n    if not UnitAffectingCombat(\"player\") then\n        \n        lastAction = \"\"\n        if not uhP then\n            aura_env.nextAction = \"UP\"\n        else\n            local start, duration = 60, 60\n            if aura_env.boneShieldTalented==1 then\n                start, duration = GetSpellCooldown(49222)\n            end\n            \n            \n            \n            if boneS<20 and duration<=1.6 then\n                aura_env.nextAction = \"bonesFull\"\n            elseif  aura_env.gf<10 then\n                aura_env.nextAction = \"GF\"\n            elseif HoWTimer<30 and durationH<=1.5 then\n                aura_env.nextAction = \"HOW\"\n            else\n                aura_env.nextAction = \"IT\"\n            end\n        end\n        \n    elseif ff-aura_env.gcdFreeWhen+aura_env.config.dclip/1000>aura_env.config.reaction/1000 and uh-aura_env.gcdFreeWhen+aura_env.config.dclip/1000>aura_env.config.reaction/1000 and DESexpire-aura_env.gcdFreeWhen+aura_env.config.dclip/1000>aura_env.config.reaction/1000 and dis+aura_env.config.dclip/1000-aura_env.gcdFreeWhen>SSlast and dis-aura_env.gcdFreeWhen+aura_env.config.dclip/1000> aura_env.fixedGCD then\n        local startGF, durationGF = GetSpellCooldown(63560)\n        local startBT, durationBT = GetSpellCooldown(45529)\n        -- print( \"--\")\n        -- print(SSnext)\n        -- print(aura_env.gf)\n        local startG, durationG = GetSpellCooldown(49206)\n        if durationG<3 and aura_env.encounter then aura_env.gSnap2h() end\n        local a = durationG>3  or aura_env.encounter~=true\n        \n        if SSnext<aura_env.config.reaction/1000 then \n            -- print(\"entrou\")\n            aura_env.nextAction = \"SS\"\n        elseif UnitPower(\"player\")>=100 then\n            aura_env.nextAction = \"DC\"\n        elseif  aura_env.runes[bn].cd<=aura_env.config.reaction/1000 then\n            if bn ==1 and GetRuneType(1)==4 and aura_env.gf<1 and durationGF<=10 then\n                aura_env.nextAction = \"GF\"\n            elseif aura_env.encounter and durationG<3 then\n                aura_env.nextAction = \"BS\"\n            elseif not bloodP then\n                aura_env.nextAction = \"BP\"\n            else\n                aura_env.nextAction = \"BS\"\n            end \n        elseif aura_env.runes[un].cd>2 and aura_env.runes[bn].cd>2 and aura_env.gf<1 and durationGF<=10 and durationBT<=1.5 then\n            aura_env.nextAction = \"GFBT\"\n        elseif UnitPower(\"player\")>=40 and a  then\n            aura_env.nextAction = \"DC\"\n        elseif durationH <= 1.5 then\n            aura_env.nextAction = \"HOW\"\n        else\n            -- print(\"last SS???\")\n            aura_env.nextAction = \"SS\"\n        end\n        \n    else\n        local startG, durationG = GetSpellCooldown(49206)\n        if durationG<3 and aura_env.encounter  then aura_env.gSnap2h() end\n        if aura_env.runes[un].cd > aura_env.fixedGCD and aura_env.runes[fn].cd > aura_env.fixedGCD and  UnitPower(\"player\")>=40 and aura_env.runes[bn].cd>aura_env.fixedGCD then\n            aura_env.nextAction = \"DC\"\n        elseif aura_env.runes[un].cd > aura_env.fixedGCD and aura_env.runes[fn].cd > aura_env.fixedGCD and  UnitPower(\"player\")<40 and durationH <= 1.5  and aura_env.runes[bn].cd>aura_env.fixedGCD then\n            aura_env.nextAction = \"HoW\"\n        elseif  aura_env.runes[un].cd>= aura_env.runes[fn].cd and aura_env.runes[bn].cd+1>= aura_env.runes[fn].cd and ff<=1 then\n            aura_env.nextAction = \"IT\"\n        elseif  aura_env.runes[fn].cd>= aura_env.runes[un].cd and aura_env.runes[bn].cd+1>= aura_env.runes[un].cd and uh<=1 then\n            aura_env.nextAction = \"PS\"\n        elseif ff<=1 then\n            aura_env.nextAction = \"IT\"\n        elseif uh<=1 then\n            aura_env.nextAction = \"PS\"\n        elseif DESexpire<=1 then\n            aura_env.nextAction = \"BS\"\n        else\n            if  aura_env.runes[un].cd>= aura_env.runes[fn].cd and aura_env.runes[bn].cd+1>= aura_env.runes[fn].cd and ff<=10 then \n                aura_env.nextAction = \"IT\"\n            elseif  aura_env.runes[fn].cd>= aura_env.runes[un].cd and aura_env.runes[bn].cd+1>= aura_env.runes[un].cd and uh<=10 then\n                aura_env.nextAction = \"PS\"\n            else\n                aura_env.nextAction = \"BS\" \n            end\n        end\n        \n    end\n    local b = lastAction~=aura_env.nextAction or aura_env.init<3\n    -- print(aura_env.nextAction)\n    if b then\n        aura_env.init = aura_env.init +1\n        aura_env.stampWhenChanged = aura_env.gcdStamp\n        WeakAuras.ScanEvents(\"fonsas_action\", aura_env.nextAction)\n    end\n    \n    \nend\n\n\n",
 						["check"] = "update",
-						["spellName"] = 85256,
+						["debuffType"] = "HELPFUL",
 						["events"] = "RUNE_POWER_UPDATE, PLAYER_TARGET_CHANGED, UNIT_POWER_UPDATE, PLAYER_AURAS_CHANGED, UNIT_SPELLCAST_SUCCEEDED",
-						["custom_hide"] = "custom",
+						["spellName"] = 85256,
 						["charges_operator"] = "==",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -61458,7 +61707,7 @@ WeakAurasSaved = {
 						},
 						["subeventSuffix"] = "_CAST_START",
 						["showOn"] = "showOnCooldown",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["unit"] = "player",
 						["names"] = {
 						},
@@ -61476,9 +61725,9 @@ WeakAurasSaved = {
 						["duration"] = "1",
 						["custom"] = "function(event, rune, status)\n    if event == \"RUNE_POWER_UPDATE\" and rune then\n        aura_env.runes[rune].free = status\n        if status then\n            \n            aura_env.runes[rune].cd = 0\n            --[[  if aura_env.bloodTapLock and rune==1 or rune==2 then\n                aura_env.bloodTapLock = false\n            end]]\n            \n        else\n            local start, duration = GetRuneCooldown(rune)\n            aura_env.runes[rune].when = start + duration \n            \n            \n            \n        end\n        aura_env.ERW2h()\n    end\nend",
 						["check"] = "event",
-						["spellName"] = 85256,
+						["debuffType"] = "HELPFUL",
 						["events"] = "RUNE_POWER_UPDATE",
-						["custom_hide"] = "custom",
+						["spellName"] = 85256,
 						["charges_operator"] = "==",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -61493,7 +61742,7 @@ WeakAurasSaved = {
 						},
 						["subeventSuffix"] = "_CAST_START",
 						["showOn"] = "showOnCooldown",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["unit"] = "player",
 						["names"] = {
 						},
@@ -61511,9 +61760,9 @@ WeakAurasSaved = {
 						["duration"] = "1",
 						["custom"] = "function(event, a1, a2, a3)\n    --print(a3)\n    if a3==49938 or a3==43265 or a3==49937 or a3==49936 then\n        aura_env.DDend = aura_env.DDdur + GetTime()\n        aura_env.DDlock = false\n    end\n    \n    \n    if a3==45529 then \n        aura_env.bloodTapLock = true\n    end\n    \n    local lastGCD = aura_env.gcdStamp\n    local start, duration = GetSpellCooldown(61304)\n    aura_env.gcdWhen = start+duration+ aura_env.config.reaction/1000\n    if duration >0 then\n        aura_env.fixedGCD = duration\n    end\n    aura_env.gcdStamp = start+duration\n    if lastGCD ~= aura_env.gcdStamp then\n        aura_env.gcdStampLast = lastGCD\n    end\n    \n    \n    if aura_env.ERWused>0 then \n        aura_env.ERWused = aura_env.ERWused -0.05\n    end\n    \n    if a3==47568 then \n        aura_env.ERWused = 0.20\n        aura_env.bloodTapLock = false\n        aura_env.runes[1].cd = 0 -aura_env.ERWused\n        aura_env.runes[2].cd = 0\n        aura_env.runes[3].cd = 0 -aura_env.ERWused\n        aura_env.runes[4].cd = 0\n        aura_env.runes[5].cd = 0 -aura_env.ERWused\n        aura_env.runes[6].cd = 0\n        aura_env.runes[1].when = GetTime()-aura_env.ERWused\n        aura_env.runes[2].when = GetTime()\n        aura_env.runes[3].when = GetTime()-aura_env.ERWused\n        aura_env.runes[4].when = GetTime()\n        aura_env.runes[5].when = GetTime()-aura_env.ERWused\n        aura_env.runes[6].when = GetTime()\n    end\n    \n    aura_env.lastCastID  = a3\n    \n    \nend\n\n\n",
 						["check"] = "event",
-						["spellName"] = 85256,
+						["debuffType"] = "HELPFUL",
 						["events"] = "UNIT_SPELLCAST_SUCCEEDED:player",
-						["custom_hide"] = "custom",
+						["spellName"] = 85256,
 						["charges_operator"] = "==",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -61528,7 +61777,7 @@ WeakAurasSaved = {
 						},
 						["subeventSuffix"] = "_CAST_START",
 						["showOn"] = "showOnCooldown",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["unit"] = "player",
 						["names"] = {
 						},
@@ -61546,9 +61795,9 @@ WeakAurasSaved = {
 						["duration"] = "1",
 						["custom"] = "function(event, action)\n    --aura_env.nextAction = \"bonesFull\"\n    if action == \"BP\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", true) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_GARY\", false) \n        WeakAuras.ScanEvents(\"fonsas_SS\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_GFBT\", false) \n        \n        \n    elseif action == \"clear\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_GARY\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_GFBT\", false) \n        \n    elseif action == \"DD\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", true) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_SS\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_GFBT\", false) \n        \n    elseif action == \"IT\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", true) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_SS\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_GFBT\", false) \n        \n        \n    elseif action == \"PS\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", true) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_SS\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_GFBT\", false) \n        \n        \n    elseif action == \"BS\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", true) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_SS\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_GFBT\", false) \n        \n        \n    elseif action == \"DC\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", true) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_SS\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_GFBT\", false) \n        \n        \n    elseif action == \"BB\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", true) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_SS\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_GFBT\", false) \n        \n        \n    elseif action == \"GF\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", true) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_SS\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_GFBT\", false) \n        \n        \n    elseif action == \"HOW\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false)\n        WeakAuras.ScanEvents(\"fonsas_HOW\", true)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_SS\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_GFBT\", false) \n        \n        \n        \n    elseif action == \"UP\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false)\n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", true) \n        WeakAuras.ScanEvents(\"fonsas_SS\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_GFBT\", false) \n        \n        \n        \n    elseif action == \"SS\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_SS\", true) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_GFBT\", false) \n        \n        \n    elseif action == \"bonesFull\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_SS\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", true) \n        WeakAuras.ScanEvents(\"fonsas_GFBT\", false) \n        \n    elseif action == \"GFBT\" then\n        WeakAuras.ScanEvents(\"fonsas_BP\", false) \n        WeakAuras.ScanEvents(\"fonsas_DD\", false) \n        WeakAuras.ScanEvents(\"fonsas_IT\", false) \n        WeakAuras.ScanEvents(\"fonsas_PS\", false) \n        WeakAuras.ScanEvents(\"fonsas_BS\", false) \n        WeakAuras.ScanEvents(\"fonsas_DC\", false) \n        WeakAuras.ScanEvents(\"fonsas_BB\", false) \n        WeakAuras.ScanEvents(\"fonsas_GF\", false) \n        WeakAuras.ScanEvents(\"fonsas_HOW\", false)\n        WeakAuras.ScanEvents(\"fonsas_UP\", false) \n        WeakAuras.ScanEvents(\"fonsas_SS\", false) \n        WeakAuras.ScanEvents(\"fonsas_bonesFull\", false) \n        WeakAuras.ScanEvents(\"fonsas_GFBT\", true) \n        \n    end\n    --GFBT\n    \nend",
 						["check"] = "event",
-						["spellName"] = 85256,
+						["debuffType"] = "HELPFUL",
 						["events"] = "fonsas_action",
-						["custom_hide"] = "custom",
+						["spellName"] = 85256,
 						["charges_operator"] = "==",
 						["type"] = "custom",
 						["unevent"] = "auto",
@@ -61563,7 +61812,7 @@ WeakAurasSaved = {
 						},
 						["subeventSuffix"] = "_CAST_START",
 						["showOn"] = "showOnCooldown",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["unit"] = "player",
 						["names"] = {
 						},
@@ -61737,38 +61986,17 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "DK Next Action Guide - by Fonsas",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 237530,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-					["custom"] = "--[[local numTabs = GetNumTalentTabs();\nfor t=1, numTabs do\n    --DEFAULT_CHAT_FRAME:AddMessage(GetTalentTabInfo(t)..\":\");\n    local numTalents = GetNumTalents(t);\n    for i=1, numTalents do\n        nameTalent, icon, tier, column, currRank, maxRank= GetTalentInfo(t,i);\n        --DEFAULT_CHAT_FRAME:AddMessage(\"- \"..nameTalent..\": \"..currRank..\"/\"..maxRank);\n        if nameTalent==\"Bone Shield\" then \n            print(t)\n            print(i)\n            print(currRank)\n        end\n    end\nend\n]]\naura_env.ERWused=0\naura_env.stampWhenChanged = 0\n\nlocal nameTalent, icon, tier, column, currRank, maxRank= GetTalentInfo(3,14);\naura_env.boneShieldTalented = currRank\n\naura_env.BTpredict = false\naura_env.initBT = 0\naura_env.lastCastID = 0\naura_env.bloodTapPredict = GetTime()\n\n\naura_env.ff = 0\naura_env.uh = 0\naura_env.des = 0\naura_env.gf = 0\n\n\nlocal nameTalent, icon, tier, column, currRank= GetTalentInfo(3,2)\naura_env.DDdur = 30 - (5*currRank)\nlocal nameTalent, icon, tier, column, currRank= GetTalentInfo(3,25)\naura_env.GFtalented = currRank\n\n\naura_env.ERW2h = function() \n    local start, duration = GetSpellCooldown(47568) --erw\n    if duration<=1.5 then\n        local CDsum = 0\n        for i=1,6 do \n            local a = aura_env.runes[i].when-GetTime()\n            if a<0 then a = 0 end\n            CDsum = CDsum + a\n            \n            --print(CDsum)\n        end\n        WeakAuras.ScanEvents(\"fonsas_ERW\", CDsum) \n    end\nend\n\naura_env.gSnap2h = function()\n    local buffSize = #aura_env.config.gSnapshot\n    local canCast = true\n    \n    local oneMissing = false\n    \n    if  buffSize>0 then\n        local timer = 0\n        \n        for j=1, buffSize do\n            \n            local buff = aura_env.config.gSnapshot[j].buff\n            local must = aura_env.config.gSnapshot[j].must\n            local found = false\n            for i=1,aura_env.GetNumBuffs() do \n                -- n, rank, icon, count, debuffType, dur, expirationTime, unitCaster, isStealable, shouldConsolidate, id \n                local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura(\"player\", i, \"HELPFUL\")\n                \n                if name==tostring(buff) or id == tonumber(buff) then\n                    local temptimer  = 0 \n                    if id==48265 then\n                        temptimer  = 15\n                    else    \n                        temptimer  = expireWhen - GetTime()\n                    end\n                    --print(name)\n                    --print(temptimer)\n                    if timer<1 or temptimer<timer then \n                        timer = temptimer\n                    end\n                    found = true\n                end \n            end\n            -- print(buff)\n            -- print(found)\n            --  print(must)\n            if not found and must then \n                canCast=false \n                --print(\"not found and MUSt have\")\n                --print(buff)\n            end\n            if not found then\n                oneMissing = true \n            end\n        end\n        \n        --print(canCas)\n        -- print(timer)\n        if canCast then \n            -- print(\"dentro do can cast\")\n            --local expureDesolation, bloodP, how, uhP, uhstr, totem = aura_env.trackB\n            if not oneMissing and UnitPower(\"player\")>=60 then--and uhP then \n                WeakAuras.ScanEvents(\"fonsas_GARG\", 3) \n            else\n                --if uhP then\n                WeakAuras.ScanEvents(\"fonsas_GARG\", timer)  \n                --end   \n            end\n            \n            if not oneMissing then \n                return false --true   \n            elseif timer<4 and timer>1 then\n                return false--true\n            else \n                return false\n            end\n        else\n            return false\n        end\n        \n    end\nend\n\n\n\naura_env.encounter = false or aura_env.config.gary\naura_env.oStep = 0\naura_env.DDwhen = 0\naura_env.castStamp = 0\nlocal start, duration = GetSpellCooldown(61304)\naura_env.gcdWhen = start+duration+ aura_env.config.reaction/1000\naura_env.fixedGCD = 1.5\naura_env.gcdStamp = start+duration\naura_env.gcdStampLast = 0\n\n\n\naura_env.init = 0\naura_env.runes = {}\n\n\naura_env.bloodTapLock = false\naura_env.DDlock = false\n\n\naura_env.runes[1] = {free=true, when=0, cd=0} --1\naura_env.runes[2] = {free=true, when=0, cd=0} --2\naura_env.runes[5] = {free=true, when=0, cd=0} --5\naura_env.runes[6] = {free=true, when=0, cd=0} --6\naura_env.runes[3] = {free=true, when=0, cd=0} --3\naura_env.runes[4] = {free=true, when=0, cd=0} --4\n\nWeakAuras.WatchGCD()\naura_env.gcdWhen = WeakAuras.CalculatedGcdDuration()\naura_env.gcdFreeWhen =0\n\naura_env.nextAction = \"clear\"\nWeakAuras.ScanEvents(\"fonsas_action\", aura_env.nextAction) \n\n--[[\nif status then\n    aura_env.runes[rune].when  = 0\nelse\n    \n    local start, duration = GetRuneCooldown(rune)\n    aura_env.runes[rune].when = start + duration\nend\n]]\n\n--/run print(UnitAura(\"target\", \"Forbearance\", \"PLAYER|HARMFUL\"))\n\naura_env.GetNumDebuffs =  function()\n    local a=0; while UnitAura(\"target\", a+1, \"PLAYER|HARMFUL\") do a=a+1 end\n    --print(a)\n    return a;\nend\naura_env.GetNumBuffs =  function()\n    local a=0; while UnitAura(\"player\", a+1, \"HELPFUL\") do a=a+1 end\n    --print(a)\n    return a;\nend\n\n\naura_env.trackD2h = function() \n    \n    local expireFF = 0\n    local expureUh = 0\n    \n    for i=1,aura_env.GetNumDebuffs() do \n        -- n, rank, icon, count, debuffType, dur, expirationTime, unitCaster, isStealable, shouldConsolidate, id \n        local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura(\"target\", i, \"PLAYER|HARMFUL\")\n        \n        --55095 67719 67767 69917 \n        if name==\"Frost Fever\" or id == 55095 or id == 67719 or id == 67767 or id == 69917 then\n            --print(id)\n            expireFF  = expireWhen - GetTime()\n        end\n        -- BP fest           \n        if name==\"Blood Plague\" or id ==55264  or id ==55973   or id ==55322  or id ==57601  or id ==58840  or id ==58844  or id ==59984  or id ==60950  or id ==61111  or id ==61601  or id ==67722  or id ==69911  or id ==55078  or id ==71923  then\n            --print(id)\n            expureUh = expireWhen - GetTime()\n        end\n        \n    end\n    \n    return expireFF, expureUh\n    \n    \nend\n\n\naura_env.trackB2h = function() \n    local expureDesolation = 0\n    local bloodP = false\n    local how = 0\n    local totem = false\n    local uhP = false\n    local uhstr = 0\n    local bones = 0\n    for i=1,aura_env.GetNumBuffs() do \n        -- n, rank, icon, count, debuffType, dur, expirationTime, unitCaster, isStealable, shouldConsolidate, id \n        local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura(\"player\", i, \"HELPFUL\")\n        -- print(name)\n        if name==\"Desolation\" or id == 66803 or id == 63583 or id == 66800 or id == 66801 or id == 66802 then\n            --print(id)\n            expureDesolation  = expireWhen - GetTime()\n        end\n        \n        if name==\"Blood Presence\" or id ==48266 then\n            --print(id)\n            bloodP  = true\n        end\n        if name==\"Unholy Presence\" or id ==48265 then\n            --print(id)\n            uhP  = true\n        end\n        if name==\"Strength of Earth\" or id ==58646 or id == 10441 or id == 25362 or id == 25527 or id == 57621 then\n            --print(id)\n            totem  = true\n        end\n        \n        if name==\"Horn of Winter\" or id ==57330 or id == 57623 then\n            -- print(id)\n            how  = expireWhen - GetTime()\n        end\n        \n        if name==\"Unholy Strength\" or id ==53365 then\n            --print(id)\n            uhstr  = expireWhen - GetTime()\n        end\n        \n        if name==\"Bone Shield\" or id ==49222 then\n            --print(id)\n            bones  = expireWhen - GetTime()\n        end\n    end\n    \n    if aura_env.config.pvpspec then\n        expureDesolation = 20\n    end\n    \n    return expureDesolation, bloodP, how, uhP, uhstr, totem, bones\n    \n    \nend\n\n\n\nlocal nameTalent, icon, tier, column, currRank= GetTalentInfo(3,2)\naura_env.DDdur = 30 - (5*currRank)\n\naura_env.DDend = GetTime()-3\naura_env.DDCD = 0\n\n\n\n\n\n\naura_env.GetNumBuffsPet =  function()\n    local a=0; while UnitAura(\"pet\", a+1, \"PLAYER|HELPFUL\") do a=a+1 end\n    --print(a)\n    return a;\nend\naura_env.trackBPet2h = function() \n    local expureGF = 0\n    if GetSpellCooldown(\"Ghoul Frenzy\")==nil then expureGF=0 end\n    for i=1,aura_env.GetNumBuffsPet() do \n        -- n, rank, icon, count, debuffType, dur, expirationTime, unitCaster, isStealable, shouldConsolidate, id \n        local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura(\"pet\", i, \"PLAYER|HELPFUL\")\n        --print(name)\n        if name==\"Ghoul Frenzy\" or id == 63560 then\n            expureGF  = expireWhen - GetTime()\n        end\n    end\n    \n    return expureGF\n    \n    \nend\nlocal nameTalent, icon, tier, column, currRank= GetTalentInfo(3,25)\naura_env.GFtalented = currRank\n\n\n\n\n",
-					["do_custom"] = true,
-				},
-				["finish"] = {
-				},
-			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "QKpBCLLUZSg",
-			["selfPoint"] = "CENTER",
-			["width"] = 35,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = true,
-			["tocversion"] = 30401,
-			["id"] = "Rotation manager - 2H unholy 2",
 			["authorOptions"] = {
 				{
 					["type"] = "range",
@@ -61869,9 +62097,30 @@ WeakAurasSaved = {
 					["size"] = 10,
 				}, -- [7]
 			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "QKpBCLLUZSg",
+			["xOffset"] = 0,
+			["width"] = 35,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = true,
+			["tocversion"] = 30401,
+			["id"] = "Rotation manager - 2H unholy 2",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+					["custom"] = "--[[local numTabs = GetNumTalentTabs();\nfor t=1, numTabs do\n    --DEFAULT_CHAT_FRAME:AddMessage(GetTalentTabInfo(t)..\":\");\n    local numTalents = GetNumTalents(t);\n    for i=1, numTalents do\n        nameTalent, icon, tier, column, currRank, maxRank= GetTalentInfo(t,i);\n        --DEFAULT_CHAT_FRAME:AddMessage(\"- \"..nameTalent..\": \"..currRank..\"/\"..maxRank);\n        if nameTalent==\"Bone Shield\" then \n            print(t)\n            print(i)\n            print(currRank)\n        end\n    end\nend\n]]\naura_env.ERWused=0\naura_env.stampWhenChanged = 0\n\nlocal nameTalent, icon, tier, column, currRank, maxRank= GetTalentInfo(3,14);\naura_env.boneShieldTalented = currRank\n\naura_env.BTpredict = false\naura_env.initBT = 0\naura_env.lastCastID = 0\naura_env.bloodTapPredict = GetTime()\n\n\naura_env.ff = 0\naura_env.uh = 0\naura_env.des = 0\naura_env.gf = 0\n\n\nlocal nameTalent, icon, tier, column, currRank= GetTalentInfo(3,2)\naura_env.DDdur = 30 - (5*currRank)\nlocal nameTalent, icon, tier, column, currRank= GetTalentInfo(3,25)\naura_env.GFtalented = currRank\n\n\naura_env.ERW2h = function() \n    local start, duration = GetSpellCooldown(47568) --erw\n    if duration<=1.5 then\n        local CDsum = 0\n        for i=1,6 do \n            local a = aura_env.runes[i].when-GetTime()\n            if a<0 then a = 0 end\n            CDsum = CDsum + a\n            \n            --print(CDsum)\n        end\n        WeakAuras.ScanEvents(\"fonsas_ERW\", CDsum) \n    end\nend\n\naura_env.gSnap2h = function()\n    local buffSize = #aura_env.config.gSnapshot\n    local canCast = true\n    \n    local oneMissing = false\n    \n    if  buffSize>0 then\n        local timer = 0\n        \n        for j=1, buffSize do\n            \n            local buff = aura_env.config.gSnapshot[j].buff\n            local must = aura_env.config.gSnapshot[j].must\n            local found = false\n            for i=1,aura_env.GetNumBuffs() do \n                -- n, rank, icon, count, debuffType, dur, expirationTime, unitCaster, isStealable, shouldConsolidate, id \n                local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura(\"player\", i, \"HELPFUL\")\n                \n                if name==tostring(buff) or id == tonumber(buff) then\n                    local temptimer  = 0 \n                    if id==48265 then\n                        temptimer  = 15\n                    else    \n                        temptimer  = expireWhen - GetTime()\n                    end\n                    --print(name)\n                    --print(temptimer)\n                    if timer<1 or temptimer<timer then \n                        timer = temptimer\n                    end\n                    found = true\n                end \n            end\n            -- print(buff)\n            -- print(found)\n            --  print(must)\n            if not found and must then \n                canCast=false \n                --print(\"not found and MUSt have\")\n                --print(buff)\n            end\n            if not found then\n                oneMissing = true \n            end\n        end\n        \n        --print(canCas)\n        -- print(timer)\n        if canCast then \n            -- print(\"dentro do can cast\")\n            --local expureDesolation, bloodP, how, uhP, uhstr, totem = aura_env.trackB\n            if not oneMissing and UnitPower(\"player\")>=60 then--and uhP then \n                WeakAuras.ScanEvents(\"fonsas_GARG\", 3) \n            else\n                --if uhP then\n                WeakAuras.ScanEvents(\"fonsas_GARG\", timer)  \n                --end   \n            end\n            \n            if not oneMissing then \n                return false --true   \n            elseif timer<4 and timer>1 then\n                return false--true\n            else \n                return false\n            end\n        else\n            return false\n        end\n        \n    end\nend\n\n\n\naura_env.encounter = false or aura_env.config.gary\naura_env.oStep = 0\naura_env.DDwhen = 0\naura_env.castStamp = 0\nlocal start, duration = GetSpellCooldown(61304)\naura_env.gcdWhen = start+duration+ aura_env.config.reaction/1000\naura_env.fixedGCD = 1.5\naura_env.gcdStamp = start+duration\naura_env.gcdStampLast = 0\n\n\n\naura_env.init = 0\naura_env.runes = {}\n\n\naura_env.bloodTapLock = false\naura_env.DDlock = false\n\n\naura_env.runes[1] = {free=true, when=0, cd=0} --1\naura_env.runes[2] = {free=true, when=0, cd=0} --2\naura_env.runes[5] = {free=true, when=0, cd=0} --5\naura_env.runes[6] = {free=true, when=0, cd=0} --6\naura_env.runes[3] = {free=true, when=0, cd=0} --3\naura_env.runes[4] = {free=true, when=0, cd=0} --4\n\nWeakAuras.WatchGCD()\naura_env.gcdWhen = WeakAuras.CalculatedGcdDuration()\naura_env.gcdFreeWhen =0\n\naura_env.nextAction = \"clear\"\nWeakAuras.ScanEvents(\"fonsas_action\", aura_env.nextAction) \n\n--[[\nif status then\n    aura_env.runes[rune].when  = 0\nelse\n    \n    local start, duration = GetRuneCooldown(rune)\n    aura_env.runes[rune].when = start + duration\nend\n]]\n\n--/run print(UnitAura(\"target\", \"Forbearance\", \"PLAYER|HARMFUL\"))\n\naura_env.GetNumDebuffs =  function()\n    local a=0; while UnitAura(\"target\", a+1, \"PLAYER|HARMFUL\") do a=a+1 end\n    --print(a)\n    return a;\nend\naura_env.GetNumBuffs =  function()\n    local a=0; while UnitAura(\"player\", a+1, \"HELPFUL\") do a=a+1 end\n    --print(a)\n    return a;\nend\n\n\naura_env.trackD2h = function() \n    \n    local expireFF = 0\n    local expureUh = 0\n    \n    for i=1,aura_env.GetNumDebuffs() do \n        -- n, rank, icon, count, debuffType, dur, expirationTime, unitCaster, isStealable, shouldConsolidate, id \n        local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura(\"target\", i, \"PLAYER|HARMFUL\")\n        \n        --55095 67719 67767 69917 \n        if name==\"Frost Fever\" or id == 55095 or id == 67719 or id == 67767 or id == 69917 then\n            --print(id)\n            expireFF  = expireWhen - GetTime()\n        end\n        -- BP fest           \n        if name==\"Blood Plague\" or id ==55264  or id ==55973   or id ==55322  or id ==57601  or id ==58840  or id ==58844  or id ==59984  or id ==60950  or id ==61111  or id ==61601  or id ==67722  or id ==69911  or id ==55078  or id ==71923  then\n            --print(id)\n            expureUh = expireWhen - GetTime()\n        end\n        \n    end\n    \n    return expireFF, expureUh\n    \n    \nend\n\n\naura_env.trackB2h = function() \n    local expureDesolation = 0\n    local bloodP = false\n    local how = 0\n    local totem = false\n    local uhP = false\n    local uhstr = 0\n    local bones = 0\n    for i=1,aura_env.GetNumBuffs() do \n        -- n, rank, icon, count, debuffType, dur, expirationTime, unitCaster, isStealable, shouldConsolidate, id \n        local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura(\"player\", i, \"HELPFUL\")\n        -- print(name)\n        if name==\"Desolation\" or id == 66803 or id == 63583 or id == 66800 or id == 66801 or id == 66802 then\n            --print(id)\n            expureDesolation  = expireWhen - GetTime()\n        end\n        \n        if name==\"Blood Presence\" or id ==48266 then\n            --print(id)\n            bloodP  = true\n        end\n        if name==\"Unholy Presence\" or id ==48265 then\n            --print(id)\n            uhP  = true\n        end\n        if name==\"Strength of Earth\" or id ==58646 or id == 10441 or id == 25362 or id == 25527 or id == 57621 then\n            --print(id)\n            totem  = true\n        end\n        \n        if name==\"Horn of Winter\" or id ==57330 or id == 57623 then\n            -- print(id)\n            how  = expireWhen - GetTime()\n        end\n        \n        if name==\"Unholy Strength\" or id ==53365 then\n            --print(id)\n            uhstr  = expireWhen - GetTime()\n        end\n        \n        if name==\"Bone Shield\" or id ==49222 then\n            --print(id)\n            bones  = expireWhen - GetTime()\n        end\n    end\n    \n    if aura_env.config.pvpspec then\n        expureDesolation = 20\n    end\n    \n    return expureDesolation, bloodP, how, uhP, uhstr, totem, bones\n    \n    \nend\n\n\n\nlocal nameTalent, icon, tier, column, currRank= GetTalentInfo(3,2)\naura_env.DDdur = 30 - (5*currRank)\n\naura_env.DDend = GetTime()-3\naura_env.DDCD = 0\n\n\n\n\n\n\naura_env.GetNumBuffsPet =  function()\n    local a=0; while UnitAura(\"pet\", a+1, \"PLAYER|HELPFUL\") do a=a+1 end\n    --print(a)\n    return a;\nend\naura_env.trackBPet2h = function() \n    local expureGF = 0\n    if GetSpellCooldown(\"Ghoul Frenzy\")==nil then expureGF=0 end\n    for i=1,aura_env.GetNumBuffsPet() do \n        -- n, rank, icon, count, debuffType, dur, expirationTime, unitCaster, isStealable, shouldConsolidate, id \n        local name, rank, icon, count, debuffType, expireWhen, expirationTime, unitCaster, isStealable, id, spellId = UnitAura(\"pet\", i, \"PLAYER|HELPFUL\")\n        --print(name)\n        if name==\"Ghoul Frenzy\" or id == 63560 then\n            expureGF  = expireWhen - GetTime()\n        end\n    end\n    \n    return expureGF\n    \n    \nend\nlocal nameTalent, icon, tier, column, currRank= GetTalentInfo(3,25)\naura_env.GFtalented = currRank\n\n\n\n\n",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
+			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "DK Next Action Guide - by Fonsas",
 			["config"] = {
 				["bloodTapFlag"] = true,
 				["reaction"] = 25,
@@ -61883,133 +62132,217 @@ WeakAurasSaved = {
 				["dclip"] = 1000,
 			},
 			["inverse"] = false,
-			["xOffset"] = 0,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
 			},
 		},
-		["GFBT 2HUH"] = {
-			["controlledChildren"] = {
-				"GFBT1", -- [1]
-				"GFBT2", -- [2]
-				"GFBT plus", -- [3]
+		["Malygos - Life Burst"] = {
+			["iconSource"] = -1,
+			["wagoID"] = "nYCzfPXgJ",
+			["authorOptions"] = {
 			},
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["wagoID"] = "O0_GmmhMG",
-			["xOffset"] = 0,
-			["preferToUpdate"] = true,
+			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldownSwipe"] = false,
+			["url"] = "https://wago.io/nYCzfPXgJ/9",
 			["actions"] = {
 				["start"] = {
 				},
-				["init"] = {
-				},
 				["finish"] = {
+				},
+				["init"] = {
 				},
 			},
 			["triggers"] = {
 				{
 					["trigger"] = {
+						["track"] = "auto",
+						["type"] = "spell",
+						["spellName"] = 57143,
+						["subeventSuffix"] = "_CAST_START",
+						["use_exact_spellName"] = true,
+						["use_genericShowOn"] = true,
+						["genericShowOn"] = "showAlways",
 						["unit"] = "player",
-						["type"] = "aura2",
+						["realSpellName"] = 57143,
+						["use_spellName"] = true,
 						["spellIds"] = {
 						},
-						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
-						["debuffType"] = "HELPFUL",
-						["event"] = "Health",
+						["event"] = "Cooldown Progress (Spell)",
 						["names"] = {
 						},
+						["use_track"] = true,
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 					},
 				}, -- [1]
+				{
+					["trigger"] = {
+						["use_namerealm"] = true,
+						["type"] = "unit",
+						["namerealm"] = "Malygos",
+						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
+						["event"] = "Unit Characteristics",
+						["unit"] = "target",
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
+				["activeTriggerMode"] = -10,
 			},
 			["internalVersion"] = 64,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["version"] = 176,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["desaturate"] = false,
+			["version"] = 9,
 			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+				{
+					["text_shadowXOffset"] = 0,
+					["text_text_format_s_format"] = "none",
+					["text_text"] = "%s",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["rotateText"] = "NONE",
+					["type"] = "subtext",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowYOffset"] = 0,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
+					["text_anchorPoint"] = "INNER_BOTTOMRIGHT",
+					["text_fontSize"] = 12,
+					["anchorXOffset"] = 0,
+					["text_visible"] = true,
+				}, -- [2]
 			},
+			["height"] = 45,
 			["load"] = {
-				["talent"] = {
+				["ingroup"] = {
+					["single"] = "raid",
 					["multi"] = {
+						["raid"] = true,
 					},
 				},
+				["use_zoneIds"] = true,
+				["zone"] = "",
+				["use_vehicle"] = true,
+				["encounterid"] = "1094",
+				["zoneIds"] = "141",
+				["use_encounterid"] = false,
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["use_zone"] = false,
+				["use_spellknown"] = false,
 				["class"] = {
+					["single"] = "SHAMAN",
+					["multi"] = {
+						["SHAMAN"] = true,
+					},
+				},
+				["talent"] = {
 					["multi"] = {
 					},
 				},
+				["use_exact_spellknown"] = false,
+				["spellknown"] = 59158,
 				["size"] = {
 					["multi"] = {
 					},
 				},
 			},
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
 			["source"] = "import",
-			["scale"] = 1,
-			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["regionType"] = "group",
-			["borderSize"] = 2,
-			["borderOffset"] = 4,
-			["semver"] = "1.1.19",
-			["tocversion"] = 30401,
-			["id"] = "GFBT 2HUH",
-			["uid"] = "FWeOV9UIjiO",
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["selfPoint"] = "CENTER",
-			["borderInset"] = 1,
-			["authorOptions"] = {
-			},
-			["config"] = {
-			},
-			["conditions"] = {
-			},
+			["cooldownTextDisabled"] = true,
+			["icon"] = true,
+			["regionType"] = "icon",
+			["cooldownEdge"] = false,
+			["xOffset"] = 45,
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["parent"] = "Dummy icons",
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["config"] = {
+			},
+			["useCooldownModRate"] = true,
+			["zoom"] = 0,
+			["semver"] = "2.1.2",
+			["tocversion"] = 30400,
+			["id"] = "Malygos - Life Burst",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["width"] = 45,
+			["alpha"] = 1,
+			["uid"] = "zr6A8OA93BJ",
+			["inverse"] = false,
+			["parent"] = "Malygos - Abilities",
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["variable"] = "onCooldown",
+						["value"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = true,
+							["property"] = "desaturate",
+						}, -- [1]
+					},
+				}, -- [1]
+			},
+			["cooldown"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 		},
 		["Malygos - 5Combo Flair"] = {
 			["wagoID"] = "nYCzfPXgJ",
@@ -62316,8 +62649,8 @@ WeakAurasSaved = {
 			["shadowXOffset"] = 1,
 			["regionType"] = "text",
 			["fixedWidth"] = 200,
-			["selfPoint"] = "BOTTOM",
 			["parent"] = "Vermin Warrior Stance",
+			["preferToUpdate"] = false,
 			["shadowYOffset"] = -1,
 			["wordWrap"] = "WordWrap",
 			["url"] = "https://wago.io/z6xqQay0S/16",
@@ -62350,17 +62683,17 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["preferToUpdate"] = false,
+			["selfPoint"] = "BOTTOM",
 		},
 		["Maul"] = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["xOffset"] = 0,
+			["parent"] = "Skills",
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
@@ -62416,11 +62749,7 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
 			["barColor"] = {
 				0.2, -- [1]
@@ -62429,7 +62758,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["parent"] = "Skills",
+			["xOffset"] = 0,
 			["actions"] = {
 				["start"] = {
 				},
@@ -62555,20 +62884,24 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = 132136,
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
+			["uid"] = "CYV)viIZ0wT",
+			["smoothProgress"] = true,
+			["useAdjustededMin"] = false,
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
-			["regionType"] = "icon",
-			["authorOptions"] = {
-			},
-			["uid"] = "CYV)viIZ0wT",
 			["icon_side"] = "RIGHT",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 			["width"] = 40,
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
@@ -62772,44 +63105,6 @@ WeakAurasSaved = {
 			["source"] = "import",
 			["config"] = {
 			},
-			["parent"] = "AMS Group ULDUAR - By fonsas (english clients)",
-			["xOffset"] = 0,
-			["regionType"] = "icon",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.last = GetTime()\n aura_env.lastFlag = false\naura_env.mobsAroundAMS = function()\n    \n    for i = 1, 40 do\n        local unit = \"nameplate\"..i\n        if UnitCanAttack(\"player\", unit)\n        and WeakAuras.CheckRange(unit, 8, \"<=\")\n        and UnitName(unit)==\"Guardian of Yogg-Saron\"\n        and UnitHealth(unit)/UnitHealthMax(unit)<0.25\n        then\n            return true\n        end\n    end\n    return false\nend",
-					["do_custom"] = true,
-				},
-			},
-			["cooldown"] = false,
-			["conditions"] = {
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["zoom"] = 0.25,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.1.19",
-			["tocversion"] = 30401,
-			["id"] = "AMS When - special conditions Yogg",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 35,
-			["useCooldownModRate"] = true,
-			["uid"] = "KvFQ1RarndR",
-			["inverse"] = false,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
-			["displayIcon"] = 136120,
-			["information"] = {
-			},
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -62828,6 +63123,44 @@ WeakAurasSaved = {
 					["type"] = "none",
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
+				},
+			},
+			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = false,
+			["conditions"] = {
+			},
+			["parent"] = "AMS Group ULDUAR - By fonsas (english clients)",
+			["zoom"] = 0.25,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = false,
+			["semver"] = "1.1.19",
+			["tocversion"] = 30401,
+			["id"] = "AMS When - special conditions Yogg",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["width"] = 35,
+			["useCooldownModRate"] = true,
+			["uid"] = "KvFQ1RarndR",
+			["inverse"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["displayIcon"] = 136120,
+			["information"] = {
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.last = GetTime()\n aura_env.lastFlag = false\naura_env.mobsAroundAMS = function()\n    \n    for i = 1, 40 do\n        local unit = \"nameplate\"..i\n        if UnitCanAttack(\"player\", unit)\n        and WeakAuras.CheckRange(unit, 8, \"<=\")\n        and UnitName(unit)==\"Guardian of Yogg-Saron\"\n        and UnitHealth(unit)/UnitHealthMax(unit)<0.25\n        then\n            return true\n        end\n    end\n    return false\nend",
+					["do_custom"] = true,
 				},
 			},
 		},
@@ -63041,25 +63374,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 2,
 			["fontSize"] = 19,
-			["displayStacks"] = "%p",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["parent"] = "Dummy icons",
+			["source"] = "import",
 			["stacksPoint"] = "BOTTOM",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["alpha"] = 1,
+			["displayStacks"] = "%p",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["config"] = {
 			},
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
@@ -63067,20 +63402,18 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "IT2",
-			["source"] = "import",
+			["alpha"] = 1,
 			["useCooldownModRate"] = true,
 			["width"] = 45,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["uid"] = "uhemSN2)voX",
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["displayIcon"] = 237526,
-			["cooldown"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -63241,32 +63574,13 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = true,
-			["parent"] = "Malygos - Abilities",
+			["icon"] = true,
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 90,
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["xOffset"] = 90,
-			["config"] = {
-			},
-			["frameStrata"] = 1,
-			["zoom"] = 0,
-			["semver"] = "2.1.2",
-			["tocversion"] = 30400,
-			["id"] = "Malygos - Flame shield",
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["width"] = 45,
-			["useCooldownModRate"] = true,
-			["uid"] = "qq1M5oU2n8V",
-			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -63287,6 +63601,20 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["config"] = {
+			},
+			["useCooldownModRate"] = true,
+			["zoom"] = 0,
+			["semver"] = "2.1.2",
+			["tocversion"] = 30400,
+			["id"] = "Malygos - Flame shield",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["width"] = 45,
+			["alpha"] = 1,
+			["uid"] = "qq1M5oU2n8V",
+			["inverse"] = false,
+			["parent"] = "Malygos - Abilities",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -63303,7 +63631,12 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 		},
 		["targetdebuffs  2"] = {
 			["iconSource"] = -1,
@@ -63629,7 +63962,7 @@ WeakAurasSaved = {
 			["selfPoint"] = "RIGHT",
 			["align"] = "CENTER",
 			["stagger"] = 0,
-			["internalVersion"] = 64,
+			["useLimit"] = false,
 			["load"] = {
 				["size"] = {
 					["multi"] = {
@@ -63648,7 +63981,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["rotation"] = 0,
+			["fullCircle"] = true,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -63657,7 +63990,7 @@ WeakAurasSaved = {
 			},
 			["anchorFrameFrame"] = "PlayerFrame",
 			["animate"] = true,
-			["rowSpace"] = 1,
+			["arcLength"] = 360,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -63665,21 +63998,7 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["authorOptions"] = {
-			},
-			["arcLength"] = 360,
-			["constantFactor"] = "RADIUS",
-			["uid"] = "D9TtZ3sXWX0",
-			["borderOffset"] = 4,
-			["limit"] = 5,
-			["borderInset"] = 1,
-			["id"] = "Vermin Warrior",
-			["frameStrata"] = 1,
-			["gridWidth"] = 5,
-			["anchorFrameType"] = "SCREEN",
-			["gridType"] = "RD",
-			["config"] = {
-			},
+			["rotation"] = 0,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -63700,13 +64019,27 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["fullCircle"] = true,
+			["constantFactor"] = "RADIUS",
+			["uid"] = "D9TtZ3sXWX0",
+			["borderOffset"] = 4,
+			["limit"] = 5,
+			["borderInset"] = 1,
+			["id"] = "Vermin Warrior",
+			["frameStrata"] = 1,
+			["gridWidth"] = 5,
+			["anchorFrameType"] = "SCREEN",
+			["gridType"] = "RD",
+			["config"] = {
+			},
+			["internalVersion"] = 64,
+			["authorOptions"] = {
+			},
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["useLimit"] = false,
+			["rowSpace"] = 1,
 		},
 		["Vermin Paladin"] = {
 			["arcLength"] = 360,
@@ -63754,7 +64087,7 @@ WeakAurasSaved = {
 			["selfPoint"] = "RIGHT",
 			["align"] = "CENTER",
 			["stagger"] = 0,
-			["useLimit"] = false,
+			["radius"] = 200,
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -63773,7 +64106,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["rotation"] = 0,
+			["authorOptions"] = {
+			},
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -63782,7 +64116,7 @@ WeakAurasSaved = {
 			},
 			["anchorFrameFrame"] = "PlayerFrame",
 			["animate"] = true,
-			["grow"] = "LEFT",
+			["rowSpace"] = 1,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -63790,25 +64124,7 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["rowSpace"] = 1,
-			["constantFactor"] = "RADIUS",
-			["config"] = {
-			},
-			["borderOffset"] = 4,
-			["gridType"] = "RD",
-			["borderInset"] = 1,
-			["id"] = "Vermin Paladin",
-			["gridWidth"] = 5,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["limit"] = 5,
-			["uid"] = "uIfZeMoFAaJ",
+			["rotation"] = 0,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -63829,14 +64145,31 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["authorOptions"] = {
+			["constantFactor"] = "RADIUS",
+			["config"] = {
+			},
+			["borderOffset"] = 4,
+			["gridType"] = "RD",
+			["borderInset"] = 1,
+			["id"] = "Vermin Paladin",
+			["gridWidth"] = 5,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["limit"] = 5,
+			["uid"] = "uIfZeMoFAaJ",
+			["useLimit"] = false,
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["radius"] = 200,
+			["grow"] = "LEFT",
 		},
 		["Details! Aura Group"] = {
 			["grow"] = "RIGHT",
@@ -63889,7 +64222,7 @@ WeakAurasSaved = {
 			["subRegions"] = {
 			},
 			["height"] = 20,
-			["gridType"] = "RD",
+			["rowSpace"] = 1,
 			["load"] = {
 				["zoneIds"] = "",
 				["race"] = {
@@ -63918,7 +64251,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["fullCircle"] = true,
+			["useLimit"] = false,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -63927,7 +64260,7 @@ WeakAurasSaved = {
 			},
 			["sort"] = "none",
 			["animate"] = true,
-			["arcLength"] = 360,
+			["stagger"] = 0,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -63935,21 +64268,7 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 5,
-			["internalVersion"] = 64,
-			["stagger"] = 0,
-			["constantFactor"] = "RADIUS",
-			["borderInset"] = 0,
-			["borderOffset"] = 16,
-			["config"] = {
-			},
-			["width"] = 199.999969482422,
-			["id"] = "Details! Aura Group",
-			["gridWidth"] = 5,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["authorOptions"] = {
-			},
-			["uid"] = "XLzBWxn1LoM",
+			["fullCircle"] = true,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -63970,35 +64289,48 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["useLimit"] = false,
+			["constantFactor"] = "RADIUS",
+			["borderInset"] = 0,
+			["borderOffset"] = 16,
+			["config"] = {
+			},
+			["width"] = 199.999969482422,
+			["id"] = "Details! Aura Group",
+			["gridWidth"] = 5,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["authorOptions"] = {
+			},
+			["uid"] = "XLzBWxn1LoM",
+			["gridType"] = "RD",
+			["internalVersion"] = 64,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["rowSpace"] = 1,
+			["arcLength"] = 360,
 		},
 		["Lifebloom"] = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["parent"] = "Vermin Druid",
+			["authorOptions"] = {
+			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["triggers"] = {
 				{
@@ -64063,12 +64395,7 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "Vermin Druid",
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -64076,13 +64403,15 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["icon"] = true,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
+			["icon"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -64224,15 +64553,11 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desaturate"] = false,
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["config"] = {
 			},
 			["alpha"] = 1,
 			["icon_side"] = "RIGHT",
@@ -64240,11 +64565,15 @@ WeakAurasSaved = {
 			["useCooldownModRate"] = true,
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
-			["config"] = {
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["spark"] = false,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["id"] = "Lifebloom",
 			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
@@ -64252,7 +64581,11 @@ WeakAurasSaved = {
 			["auto"] = false,
 			["uid"] = "XN84YcKI45t",
 			["inverse"] = false,
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
@@ -64582,7 +64915,6 @@ WeakAurasSaved = {
 					["text"] = "/cast Conjure Water",
 				},
 			},
-			["icon"] = true,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -64602,6 +64934,12 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["regionType"] = "icon",
 			["information"] = {
@@ -64652,12 +64990,7 @@ WeakAurasSaved = {
 			["parent"] = "GEMS",
 			["displayIcon"] = 132805,
 			["cooldown"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 		},
 		["VictoryRush"] = {
 			["controlledChildren"] = {
@@ -64765,16 +65098,16 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["selfPoint"] = "CENTER",
+			["borderInset"] = 1,
+			["xOffset"] = 0,
 			["config"] = {
 			},
-			["xOffset"] = 0,
-			["uid"] = "0EznwWi8AYW",
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["borderInset"] = 1,
+			["uid"] = "0EznwWi8AYW",
 		},
 		["FS"] = {
 			["iconSource"] = -1,
@@ -64802,9 +65135,9 @@ WeakAurasSaved = {
 						["ownOnly"] = true,
 						["subeventPrefix"] = "SPELL",
 						["duration"] = "1",
+						["debuffType"] = "HELPFUL",
 						["custom_hide"] = "timed",
 						["spellName"] = 0,
-						["debuffType"] = "HELPFUL",
 						["remOperator"] = "<",
 						["type"] = "custom",
 						["unit"] = "player",
@@ -64985,25 +65318,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 2,
 			["fontSize"] = 19,
-			["displayStacks"] = "%p",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["parent"] = "Dummy icons",
+			["source"] = "import",
 			["stacksPoint"] = "BOTTOM",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["alpha"] = 1,
+			["displayStacks"] = "%p",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["config"] = {
 			},
-			["icon"] = true,
+			["color"] = {
+				0.98039215686275, -- [1]
+				1, -- [2]
+				0.99607843137255, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
@@ -65011,20 +65346,18 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "FS",
-			["source"] = "import",
+			["alpha"] = 1,
 			["useCooldownModRate"] = true,
 			["width"] = 45,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["uid"] = "6iSHPLv)jWy",
 			["inverse"] = false,
-			["color"] = {
-				0.98039215686275, -- [1]
-				1, -- [2]
-				0.99607843137255, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["displayIcon"] = 237520,
-			["cooldown"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -65165,6 +65498,40 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["uid"] = "SNwIXidkSmY",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["information"] = {
+				["forceEvents"] = true,
+			},
+			["cooldownEdge"] = false,
+			["useTooltip"] = true,
+			["zoom"] = 0.3,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = false,
+			["semver"] = "1.0.0",
+			["tocversion"] = 90002,
+			["id"] = "Silver Ore",
+			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
+			["width"] = 40,
+			["alpha"] = 1,
+			["config"] = {
+			},
+			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -65185,45 +65552,11 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["regionType"] = "icon",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["information"] = {
-				["forceEvents"] = true,
-			},
-			["authorOptions"] = {
-			},
-			["cooldownEdge"] = false,
-			["zoom"] = 0.3,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.0.0",
-			["tocversion"] = 90002,
-			["id"] = "Silver Ore",
-			["frameStrata"] = 1,
-			["useCooldownModRate"] = true,
-			["width"] = 40,
-			["alpha"] = 1,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["xOffset"] = 0,
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["useTooltip"] = true,
+			["authorOptions"] = {
+			},
 		},
 		["Malygos - Comboback 4"] = {
 			["wagoID"] = "nYCzfPXgJ",
@@ -65409,22 +65742,21 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -65488,7 +65820,8 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -65496,6 +65829,12 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["actions"] = {
 				["start"] = {
 				},
@@ -65504,7 +65843,6 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["icon"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -65603,26 +65941,26 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = "",
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["uid"] = "3UsWDF4A(1l",
-			["frameStrata"] = 1,
-			["icon_side"] = "RIGHT",
-			["width"] = 36,
-			["alpha"] = 1,
-			["sparkHeight"] = 30,
-			["texture"] = "Melli",
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["frameStrata"] = 1,
+			["icon_side"] = "RIGHT",
+			["width"] = 36,
+			["alpha"] = 1,
+			["sparkHeight"] = 30,
+			["texture"] = "Melli",
+			["uid"] = "3UsWDF4A(1l",
 			["zoom"] = 0.3,
 			["auto"] = false,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["id"] = "Tiger's Fury",
 			["sparkHidden"] = "NEVER",
 			["useCooldownModRate"] = true,
@@ -65631,12 +65969,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -65949,15 +66282,15 @@ WeakAurasSaved = {
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "group",
 			["borderSize"] = 2,
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["borderOffset"] = 4,
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "AMS Group ULDUAR - By fonsas (english clients)",
-			["xOffset"] = 0,
+			["parent"] = "DK Next Action Guide - by Fonsas",
 			["frameStrata"] = 3,
 			["anchorFrameType"] = "SCREEN",
-			["parent"] = "DK Next Action Guide - by Fonsas",
+			["selfPoint"] = "CENTER",
 			["uid"] = "1ERaFQ7LloN",
 			["config"] = {
 			},
@@ -65972,12 +66305,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -66057,7 +66385,12 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["parent"] = "Vermin Death Knight",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -66169,7 +66502,7 @@ WeakAurasSaved = {
 			["smoothProgress"] = true,
 			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["parent"] = "Vermin Death Knight",
 			["uid"] = "a3a2jKpBkcl",
 			["icon_side"] = "RIGHT",
 			["auto"] = false,
@@ -66642,7 +66975,7 @@ WeakAurasSaved = {
 			},
 			["align"] = "CENTER",
 			["stagger"] = 0,
-			["internalVersion"] = 64,
+			["xOffset"] = -135,
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -66661,12 +66994,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
+			["selfPoint"] = "RIGHT",
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -66675,7 +67003,7 @@ WeakAurasSaved = {
 			},
 			["anchorFrameFrame"] = "AceGUI30DropDown4Button",
 			["animate"] = true,
-			["useLimit"] = false,
+			["arcLength"] = 360,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -66683,8 +67011,13 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["rotation"] = 0,
-			["arcLength"] = 360,
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["space"] = 2,
 			["constantFactor"] = "RADIUS",
 			["config"] = {
 			},
@@ -66697,21 +67030,20 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["limit"] = 5,
 			["uid"] = "jqdDR4yB1fg",
-			["space"] = 2,
-			["selfPoint"] = "RIGHT",
+			["internalVersion"] = 64,
+			["rotation"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["xOffset"] = -135,
+			["useLimit"] = false,
 		},
 		["Shield Wall"] = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["authorOptions"] = {
-			},
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -66720,14 +67052,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -66772,7 +67097,12 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["iconSource"] = -1,
-			["xOffset"] = 0,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -66781,11 +67111,13 @@ WeakAurasSaved = {
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["cooldownTextDisabled"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -66910,13 +67242,9 @@ WeakAurasSaved = {
 			["desaturate"] = false,
 			["auto"] = false,
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
 			["config"] = {
 			},
@@ -66928,7 +67256,7 @@ WeakAurasSaved = {
 			["useCooldownModRate"] = true,
 			["zoom"] = 0.3,
 			["spark"] = false,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["id"] = "Shield Wall",
 			["sparkHidden"] = "NEVER",
 			["alpha"] = 1,
@@ -66945,7 +67273,12 @@ WeakAurasSaved = {
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 		},
 		["Malygos - 5Combo Flair 2"] = {
 			["wagoID"] = "nYCzfPXgJ",
@@ -67271,32 +67604,13 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = true,
-			["parent"] = "Malygos - Abilities",
+			["icon"] = true,
 			["regionType"] = "icon",
 			["cooldownEdge"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = -91.640930175781,
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["xOffset"] = -91.640930175781,
-			["config"] = {
-			},
-			["frameStrata"] = 1,
-			["zoom"] = 0,
-			["semver"] = "2.1.2",
-			["tocversion"] = 30400,
-			["id"] = "Malygos - Flame Spike",
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["width"] = 45,
-			["useCooldownModRate"] = true,
-			["uid"] = "iqTWPjGaF1P",
-			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -67317,6 +67631,20 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["config"] = {
+			},
+			["useCooldownModRate"] = true,
+			["zoom"] = 0,
+			["semver"] = "2.1.2",
+			["tocversion"] = 30400,
+			["id"] = "Malygos - Flame Spike",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["width"] = 45,
+			["alpha"] = 1,
+			["uid"] = "iqTWPjGaF1P",
+			["inverse"] = false,
+			["parent"] = "Malygos - Abilities",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -67333,7 +67661,12 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 		},
 		["CANCEL BT plus"] = {
 			["iconSource"] = -1,
@@ -67445,20 +67778,15 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["source"] = "import",
-			["cooldown"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["desaturate"] = false,
-			["discrete_rotation"] = 0,
+			["selfPoint"] = "CENTER",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["desaturate"] = false,
+			["rotation"] = 45,
+			["stacksPoint"] = "BOTTOM",
 			["version"] = 176,
 			["subRegions"] = {
 				{
@@ -67567,37 +67895,42 @@ WeakAurasSaved = {
 				["zoneIds"] = "",
 			},
 			["displayIcon"] = 237515,
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
-			["displayStacks"] = "%p",
-			["fontSize"] = 19,
+			["source"] = "import",
+			["authorOptions"] = {
+			},
 			["uid"] = "nsooTbKAANg",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = -24,
 			["mirror"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["regionType"] = "texture",
 			["useCooldownModRate"] = true,
 			["blendMode"] = "BLEND",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
-			["rotation"] = 45,
+			["fontSize"] = 19,
+			["icon"] = true,
 			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\cancel-icon.tga",
 			["zoom"] = 0.3,
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
 			["tocversion"] = 30401,
 			["id"] = "CANCEL BT plus",
-			["alpha"] = 1,
 			["frameStrata"] = 2,
+			["alpha"] = 1,
 			["width"] = 45,
-			["icon"] = true,
+			["displayStacks"] = "%p",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -24,
+			["discrete_rotation"] = 0,
 			["conditions"] = {
 			},
-			["stacksPoint"] = "BOTTOM",
+			["cooldown"] = false,
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -67840,37 +68173,37 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
+			["selfPoint"] = "CENTER",
+			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["icon"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["config"] = {
+			},
+			["frameStrata"] = 1,
+			["zoom"] = 0.2,
+			["semver"] = "1.1.19",
+			["tocversion"] = 30401,
+			["id"] = "Howling blast w/ KM w/ time",
+			["width"] = 45,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["useCooldownModRate"] = true,
+			["uid"] = "K6olqZtknkL",
+			["inverse"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["parent"] = "Frost AOE",
-			["information"] = {
-				["forceEvents"] = true,
-			},
-			["icon"] = true,
-			["config"] = {
-			},
-			["alpha"] = 1,
-			["zoom"] = 0.2,
-			["semver"] = "1.1.19",
-			["tocversion"] = 30401,
-			["id"] = "Howling blast w/ KM w/ time",
-			["width"] = 45,
-			["useCooldownModRate"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["uid"] = "K6olqZtknkL",
-			["inverse"] = false,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["selfPoint"] = "CENTER",
+			["parent"] = "Frost AOE",
 		},
 		["Thorium Ore"] = {
 			["iconSource"] = -1,
@@ -68034,15 +68367,20 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["uid"] = "J)RSbn6il4O",
-			["icon"] = true,
+			["selfPoint"] = "CENTER",
 			["url"] = "https://wago.io/iST6tz9t8/1",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["useTooltip"] = true,
 			["xOffset"] = 0,
+			["parent"] = "Ore Count",
 			["zoom"] = 0.3,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
@@ -68056,16 +68394,11 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["parent"] = "Ore Count",
+			["useTooltip"] = true,
 		},
 		["Malygos - Comboback 5"] = {
 			["wagoID"] = "nYCzfPXgJ",
@@ -68274,8 +68607,8 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
 						["spellName"] = 0,
-						["custom_hide"] = "custom",
 						["check"] = "event",
 						["type"] = "custom",
 						["custom"] = "function(event, var, flash)\n    WeakAuras.ScanEvents(\"fonsas_plusFrost\", var) \n    WeakAuras.ScanEvents(\"fonsas_pathDivider\", var)\n    WeakAuras.ScanEvents(\"fonsas_path2\", var)\n    \n    return var\n    \nend\n\n",
@@ -68290,7 +68623,7 @@ WeakAurasSaved = {
 						},
 						["custom_type"] = "status",
 						["remOperator"] = "<",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["ownOnly"] = true,
 						["useRem"] = true,
 					},
@@ -68472,17 +68805,30 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Burst frost combo",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 237515,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "25Hx1DkzHfK",
+			["xOffset"] = -126.71432495117,
+			["width"] = 22.5,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "BT opt",
 			["actions"] = {
 				["start"] = {
 				},
@@ -68493,29 +68839,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "25Hx1DkzHfK",
-			["selfPoint"] = "CENTER",
-			["width"] = 22.5,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "BT opt",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Burst frost combo",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -126.71432495117,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -68548,9 +68881,9 @@ WeakAurasSaved = {
 							"Buried Treasure", -- [3]
 						},
 						["duration"] = "2.2",
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "custom",
 						["check"] = "event",
-						["spellName"] = 0,
+						["debuffType"] = "HELPFUL",
 						["custom"] = "function(event, var, flash)\n    if var then\naura_env.duration = flash\n        --aura_env.prioVar = prio + aura_env.fixedVar\n        return true\n    else \n        \n        \n        return false\n    end\nend",
 						["type"] = "custom",
 						["events"] = "fonsas_UA",
@@ -68565,7 +68898,7 @@ WeakAurasSaved = {
 						},
 						["unevent"] = "auto",
 						["remOperator"] = "<",
-						["custom_hide"] = "custom",
+						["spellName"] = 0,
 						["use_unit"] = true,
 						["useRem"] = true,
 					},
@@ -68708,17 +69041,30 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["displayStacks"] = "%p",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
 			["fontSize"] = 19,
 			["source"] = "import",
-			["stacksPoint"] = "BOTTOM",
-			["parent"] = "Burst frost combo",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["displayIcon"] = 132388,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["alpha"] = 1,
+			["uid"] = "Ndze1mCq2a3",
+			["xOffset"] = -151,
+			["width"] = 22.5,
+			["zoom"] = 0.3,
+			["semver"] = "1.1.19",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 30401,
+			["id"] = "UA opt",
 			["actions"] = {
 				["start"] = {
 				},
@@ -68729,29 +69075,16 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["displayStacks"] = "%p",
-			["uid"] = "Ndze1mCq2a3",
-			["selfPoint"] = "CENTER",
-			["width"] = 22.5,
-			["zoom"] = 0.3,
-			["semver"] = "1.1.19",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 30401,
-			["id"] = "UA opt",
-			["authorOptions"] = {
-			},
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Burst frost combo",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = -151,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["cooldown"] = true,
+			["stacksPoint"] = "BOTTOM",
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -68783,9 +69116,9 @@ WeakAurasSaved = {
 						["ownOnly"] = true,
 						["subeventPrefix"] = "SPELL",
 						["duration"] = "2.2",
+						["debuffType"] = "HELPFUL",
 						["custom_hide"] = "custom",
 						["spellName"] = 0,
-						["debuffType"] = "HELPFUL",
 						["remOperator"] = "<",
 						["type"] = "custom",
 						["unit"] = "player",
@@ -69004,25 +69337,27 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 2,
 			["fontSize"] = 19,
-			["displayStacks"] = "%p",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["parent"] = "Dummy icons",
+			["source"] = "import",
 			["stacksPoint"] = "BOTTOM",
+			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["alpha"] = 1,
+			["displayStacks"] = "%p",
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["config"] = {
 			},
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
@@ -69030,20 +69365,18 @@ WeakAurasSaved = {
 			["semver"] = "1.1.19",
 			["tocversion"] = 30401,
 			["id"] = "BT Full",
-			["source"] = "import",
+			["alpha"] = 1,
 			["useCooldownModRate"] = true,
 			["width"] = 45,
-			["url"] = "https://wago.io/O0_GmmhMG/176",
+			["parent"] = "Dummy icons",
 			["uid"] = ")zrelx7o1kN",
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 			["displayIcon"] = 237515,
-			["cooldown"] = true,
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["textColor"] = {
 				[2] = 0.75686274509804,
 				[3] = 0,
@@ -69077,13 +69410,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "--CLEU:SPELL_SUMMON:SPELL_CAST_START:SPELL_DAMAGE:SPELL_MISSED GARGOYLE_FAKE_DEAD GARGOYLE_FAKE_SUMMON\n--[[\n52150 亡者复生\n49206 召唤石像鬼\n]]\nfunction(s,e,_, subevent, _, sourceGUID, _, _, _, destGUID, destName, _, _, spellid, _, _,amount)\n    if e == \"COMBAT_LOG_EVENT_UNFILTERED\" then\n        if subevent == \"SPELL_SUMMON\" and sourceGUID == WeakAuras.myGUID and spellid == 49206 then\n            aura_env.gunit = destGUID\n            aura_env.gname = destName\n            C_Timer.After(0.05, function()\n                    WeakAuras.ScanEvents(\"GARGOYLE_FAKE_SUMMON\")\n            end)\n            C_Timer.After(30 , function()\n                    WeakAuras.ScanEvents(\"GARGOYLE_FAKE_DEAD\")\n            end)\n            return true\n        elseif subevent == \"SPELL_CAST_START\" and sourceGUID == aura_env.gunit then\n            aura_env.gattackspeed = 2 / (1 + GetMeleeHaste() / 100)\n            s[\"\"] = {\n                show = true,\n                changed = true,\n                progressType = \"timed\",\n                autoHide = true,\n                duration = aura_env.gattackspeed,\n                expirationTime = aura_env.gattackspeed + GetTime(),\n                attackspeed = aura_env.gattackspeed,\n                casting = true,\n            }\n            return true\n        elseif subevent == \"SPELL_DAMAGE\" and sourceGUID == aura_env.gunit and s[\"\"] then\n            aura_env.count = aura_env.count + 1\n            aura_env.amount = aura_env.amount + amount\n            s[\"\"].count = aura_env.count\n            s[\"\"].amount = aura_env.amount\n            s[\"\"].changed = true\n            return true\n        elseif subevent == \"SPELL_MISSED\" and sourceGUID == aura_env.gunit and s[\"\"] then\n            aura_env.count = aura_env.count + 1\n            s[\"\"].count = aura_env.count\n            s[\"\"].changed = true\n            return true\n        end\n        \n    elseif e == \"GARGOYLE_FAKE_SUMMON\" then\n        aura_env.gattackspeed = 2 / (1 + GetMeleeHaste() / 100)\n        --[[ s[aura_env.gunit] = {\n            show = true,\n            changed = true,\n            progressType = \"timed\",\n            duration = 30,\n            expirationTime = 30 + GetTime(),\n            autoHide = true,\n            gname = aura_env.gname,\n        }       ]]\n        return true\n        \n    elseif e == \"GARGOYLE_FAKE_DEAD\" then\n        if GetLocale() == \"zhCN\" then\n            print(\"本次天鬼一共攻击\"..aura_env.count..\"次，造成\"..aura_env.amount..\"伤害\")\n        else\n            print(\"Gary casts: \"..aura_env.count..\" / Total damage: \"..aura_env.amount)\n        end\n        -- s[\"\"].show = false\n        -- s[\"\"].changed = true\n        aura_env.gattackspeed = nil\n        aura_env.count = 0\n        aura_env.amount = 0\n        --  return true\n    end\nend\n\n\n",
+						["events"] = "CLEU:SPELL_SUMMON:SPELL_CAST_START:SPELL_DAMAGE:SPELL_MISSED GARGOYLE_FAKE_DEAD GARGOYLE_FAKE_SUMMON",
 						["names"] = {
 						},
 						["check"] = "event",
-						["events"] = "CLEU:SPELL_SUMMON:SPELL_CAST_START:SPELL_DAMAGE:SPELL_MISSED GARGOYLE_FAKE_DEAD GARGOYLE_FAKE_SUMMON",
 						["spellIds"] = {
 						},
+						["custom"] = "--CLEU:SPELL_SUMMON:SPELL_CAST_START:SPELL_DAMAGE:SPELL_MISSED GARGOYLE_FAKE_DEAD GARGOYLE_FAKE_SUMMON\n--[[\n52150 亡者复生\n49206 召唤石像鬼\n]]\nfunction(s,e,_, subevent, _, sourceGUID, _, _, _, destGUID, destName, _, _, spellid, _, _,amount)\n    if e == \"COMBAT_LOG_EVENT_UNFILTERED\" then\n        if subevent == \"SPELL_SUMMON\" and sourceGUID == WeakAuras.myGUID and spellid == 49206 then\n            aura_env.gunit = destGUID\n            aura_env.gname = destName\n            C_Timer.After(0.05, function()\n                    WeakAuras.ScanEvents(\"GARGOYLE_FAKE_SUMMON\")\n            end)\n            C_Timer.After(30 , function()\n                    WeakAuras.ScanEvents(\"GARGOYLE_FAKE_DEAD\")\n            end)\n            return true\n        elseif subevent == \"SPELL_CAST_START\" and sourceGUID == aura_env.gunit then\n            aura_env.gattackspeed = 2 / (1 + GetMeleeHaste() / 100)\n            s[\"\"] = {\n                show = true,\n                changed = true,\n                progressType = \"timed\",\n                autoHide = true,\n                duration = aura_env.gattackspeed,\n                expirationTime = aura_env.gattackspeed + GetTime(),\n                attackspeed = aura_env.gattackspeed,\n                casting = true,\n            }\n            return true\n        elseif subevent == \"SPELL_DAMAGE\" and sourceGUID == aura_env.gunit and s[\"\"] then\n            aura_env.count = aura_env.count + 1\n            aura_env.amount = aura_env.amount + amount\n            s[\"\"].count = aura_env.count\n            s[\"\"].amount = aura_env.amount\n            s[\"\"].changed = true\n            return true\n        elseif subevent == \"SPELL_MISSED\" and sourceGUID == aura_env.gunit and s[\"\"] then\n            aura_env.count = aura_env.count + 1\n            s[\"\"].count = aura_env.count\n            s[\"\"].changed = true\n            return true\n        end\n        \n    elseif e == \"GARGOYLE_FAKE_SUMMON\" then\n        aura_env.gattackspeed = 2 / (1 + GetMeleeHaste() / 100)\n        --[[ s[aura_env.gunit] = {\n            show = true,\n            changed = true,\n            progressType = \"timed\",\n            duration = 30,\n            expirationTime = 30 + GetTime(),\n            autoHide = true,\n            gname = aura_env.gname,\n        }       ]]\n        return true\n        \n    elseif e == \"GARGOYLE_FAKE_DEAD\" then\n        if GetLocale() == \"zhCN\" then\n            print(\"本次天鬼一共攻击\"..aura_env.count..\"次，造成\"..aura_env.amount..\"伤害\")\n        else\n            print(\"Gary casts: \"..aura_env.count..\" / Total damage: \"..aura_env.amount)\n        end\n        -- s[\"\"].show = false\n        -- s[\"\"].changed = true\n        aura_env.gattackspeed = nil\n        aura_env.count = 0\n        aura_env.amount = 0\n        --  return true\n    end\nend\n\n\n",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -69398,15 +69731,4 @@ WeakAurasSaved = {
 			["enableGradient"] = false,
 		},
 	},
-	["lastUpgrade"] = 1674206280,
-	["personalRessourceDisplayFrame"] = {
-		["xOffset"] = -422.8046555407566,
-		["yOffset"] = -497.8042091158466,
-	},
-	["editor_bracket_matching"] = true,
-	["unitscan GUI"] = {
-	},
-	["registered"] = {
-	},
-	["bgtimetotsave"] = 0,
 }
