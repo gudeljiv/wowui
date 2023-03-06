@@ -5,7 +5,7 @@ GlobalIgnoreDB = {
 		6, -- [2]
 		1, -- [3]
 		0, -- [4]
-		0, -- [5]
+		7, -- [5]
 		0, -- [6]
 		0, -- [7]
 		0, -- [8]
@@ -43,97 +43,24 @@ GlobalIgnoreDB = {
 		"player", -- [28]
 		"player", -- [29]
 	},
-	["syncInfo"] = {
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [1]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [2]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [3]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [4]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [5]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [6]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [7]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [8]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [9]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [10]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [11]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [12]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [13]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [14]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [15]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [16]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [17]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [18]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [19]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [20]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [21]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [22]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [23]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [24]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [25]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [26]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [27]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [28]
-		{
-			"Moolatz-Golemagg@1", -- [1]
-		}, -- [29]
-	},
 	["invertSpam"] = false,
+	["openWithFriends"] = true,
 	["skipPrivate"] = true,
+	["filterList"] = {
+		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]
+		"[item=19019]", -- [2]
+		"([contains=.c0m] or [contains=.c.0.m] or [contains=,com] or ([contains=.com] and ([contains=code] or [contains=usd] or [contains=+15]))", -- [3]
+		"([contains=░] or [contains=▒] or [contains=▓] or [contains=█]) and ([contains=wts] or [contains=sell] or [contains=gold] or [contains=share]))", -- [4]
+		"([contains=deliver] or [contains=delivery] or [contains=gold] or [contains=delievery] or [contains=sale]) and ([contains=.com] or [contains=,com] or [contains=c0m])", -- [5]
+		"([contains=wts] or [contains=sell]) and [contains=share] and ([contains=account] or [contains=acc]))", -- [6]
+		"(([contains=<] and [contains=>]) or ([contains=\\[] and [contains=\\]]) or ([contains=\\(] and [contains=\\)])) and ([contains=recruit] or [contains=progress] or [contains=raid] or [contains=guild] or [contains=seek] or [contains=mythic])", -- [7]
+		"[community]", -- [8]
+		"[contains=WTS] or [contains=WTB]", -- [9]
+		"[nonlatin]", -- [10]
+	},
+	["autoTime"] = 600,
+	["autoCount"] = 3,
+	["sameserver"] = true,
 	["ignoreList"] = {
 		"Puntune-Golemagg", -- [1]
 		"Pömp-Golemagg", -- [2]
@@ -164,51 +91,6 @@ GlobalIgnoreDB = {
 		"Toobased-Golemagg", -- [27]
 		"Nékosenshi-Golemagg", -- [28]
 		"Rikaya-Golemagg", -- [29]
-	},
-	["autoTime"] = 600,
-	["autoCount"] = 3,
-	["notes"] = {
-		"", -- [1]
-		"", -- [2]
-		"", -- [3]
-		"", -- [4]
-		"", -- [5]
-		"", -- [6]
-		"", -- [7]
-		"", -- [8]
-		"", -- [9]
-		"", -- [10]
-		"", -- [11]
-		"", -- [12]
-		"", -- [13]
-		"", -- [14]
-		"", -- [15]
-		"", -- [16]
-		"wasted my time in voa raid... kicked me because he made room for warrior friend", -- [17]
-		"", -- [18]
-		"", -- [19]
-		"", -- [20]
-		"", -- [21]
-		"", -- [22]
-		"", -- [23]
-		"", -- [24]
-		"", -- [25]
-		"", -- [26]
-		"", -- [27]
-		"", -- [28]
-		"rude moron", -- [29]
-	},
-	["filterList"] = {
-		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]
-		"[item=19019]", -- [2]
-		"([contains=.c0m] or [contains=.c.0.m] or [contains=,com] or ([contains=.com] and ([contains=code] or [contains=usd] or [contains=+15]))", -- [3]
-		"([contains=░] or [contains=▒] or [contains=▓] or [contains=█]) and ([contains=wts] or [contains=sell] or [contains=gold] or [contains=share]))", -- [4]
-		"([contains=deliver] or [contains=delivery] or [contains=gold] or [contains=delievery] or [contains=sale]) and ([contains=.com] or [contains=,com] or [contains=c0m])", -- [5]
-		"([contains=wts] or [contains=sell]) and [contains=share] and ([contains=account] or [contains=acc]))", -- [6]
-		"(([contains=<] and [contains=>]) or ([contains=\\[] and [contains=\\]]) or ([contains=\\(] and [contains=\\)])) and ([contains=recruit] or [contains=progress] or [contains=raid] or [contains=guild] or [contains=seek] or [contains=mythic])", -- [7]
-		"[community]", -- [8]
-		"[contains=WTS] or [contains=WTB]", -- [9]
-		"[nonlatin]", -- [10]
 	},
 	["trackChanges"] = true,
 	["autoIgnore"] = true,
@@ -243,8 +125,41 @@ GlobalIgnoreDB = {
 		"Horde", -- [28]
 		"Horde", -- [29]
 	},
-	["skipGuild"] = true,
-	["sameserver"] = true,
+	["dateList"] = {
+		"05 Feb 2023", -- [1]
+		"05 Feb 2023", -- [2]
+		"05 Feb 2023", -- [3]
+		"05 Feb 2023", -- [4]
+		"05 Feb 2023", -- [5]
+		"05 Feb 2023", -- [6]
+		"05 Feb 2023", -- [7]
+		"05 Feb 2023", -- [8]
+		"05 Feb 2023", -- [9]
+		"06 Feb 2023", -- [10]
+		"07 Feb 2023", -- [11]
+		"14 Feb 2023", -- [12]
+		"14 Feb 2023", -- [13]
+		"15 Feb 2023", -- [14]
+		"18 Feb 2023", -- [15]
+		"19 Feb 2023", -- [16]
+		"19 Feb 2023", -- [17]
+		"23 Feb 2023", -- [18]
+		"23 Feb 2023", -- [19]
+		"23 Feb 2023", -- [20]
+		"23 Feb 2023", -- [21]
+		"23 Feb 2023", -- [22]
+		"23 Feb 2023", -- [23]
+		"23 Feb 2023", -- [24]
+		"23 Feb 2023", -- [25]
+		"23 Feb 2023", -- [26]
+		"23 Feb 2023", -- [27]
+		"27 Feb 2023", -- [28]
+		"28 Feb 2023", -- [29]
+	},
+	["delList"] = {
+		"Happens-Golemagg", -- [1]
+		"Freezqt-Golemagg", -- [2]
+	},
 	["attachFriends"] = true,
 	["revision"] = 1,
 	["expList"] = {
@@ -280,38 +195,8 @@ GlobalIgnoreDB = {
 	},
 	["skipParty"] = false,
 	["chatmsg"] = true,
-	["filterTotal"] = 12,
-	["dateList"] = {
-		"05 Feb 2023", -- [1]
-		"05 Feb 2023", -- [2]
-		"05 Feb 2023", -- [3]
-		"05 Feb 2023", -- [4]
-		"05 Feb 2023", -- [5]
-		"05 Feb 2023", -- [6]
-		"05 Feb 2023", -- [7]
-		"05 Feb 2023", -- [8]
-		"05 Feb 2023", -- [9]
-		"06 Feb 2023", -- [10]
-		"07 Feb 2023", -- [11]
-		"14 Feb 2023", -- [12]
-		"14 Feb 2023", -- [13]
-		"15 Feb 2023", -- [14]
-		"18 Feb 2023", -- [15]
-		"19 Feb 2023", -- [16]
-		"19 Feb 2023", -- [17]
-		"23 Feb 2023", -- [18]
-		"23 Feb 2023", -- [19]
-		"23 Feb 2023", -- [20]
-		"23 Feb 2023", -- [21]
-		"23 Feb 2023", -- [22]
-		"23 Feb 2023", -- [23]
-		"23 Feb 2023", -- [24]
-		"23 Feb 2023", -- [25]
-		"23 Feb 2023", -- [26]
-		"23 Feb 2023", -- [27]
-		"27 Feb 2023", -- [28]
-		"28 Feb 2023", -- [29]
-	},
+	["filterTotal"] = 19,
+	["defexpire"] = 0,
 	["filterDesc"] = {
 		"Filter \"Anal\" Spammers", -- [1]
 		"Filter Thunderfury linking", -- [2]
@@ -324,7 +209,7 @@ GlobalIgnoreDB = {
 		"Filter WTS", -- [9]
 		"Filter Chinese/Korean/Japanese", -- [10]
 	},
-	["asknote"] = true,
+	["spamFilter"] = true,
 	["filterActive"] = {
 		true, -- [1]
 		true, -- [2]
@@ -337,13 +222,157 @@ GlobalIgnoreDB = {
 		false, -- [9]
 		false, -- [10]
 	},
-	["spamFilter"] = true,
-	["defexpire"] = 0,
-	["delList"] = {
-		"Happens-Golemagg", -- [1]
-		"Freezqt-Golemagg", -- [2]
+	["asknote"] = true,
+	["skipGuild"] = true,
+	["notes"] = {
+		"", -- [1]
+		"", -- [2]
+		"", -- [3]
+		"", -- [4]
+		"", -- [5]
+		"", -- [6]
+		"", -- [7]
+		"", -- [8]
+		"", -- [9]
+		"", -- [10]
+		"", -- [11]
+		"", -- [12]
+		"", -- [13]
+		"", -- [14]
+		"", -- [15]
+		"", -- [16]
+		"wasted my time in voa raid... kicked me because he made room for warrior friend", -- [17]
+		"", -- [18]
+		"", -- [19]
+		"", -- [20]
+		"", -- [21]
+		"", -- [22]
+		"", -- [23]
+		"", -- [24]
+		"", -- [25]
+		"", -- [26]
+		"", -- [27]
+		"", -- [28]
+		"rude moron", -- [29]
 	},
 	["autoUpdate"] = true,
 	["samefaction"] = true,
-	["openWithFriends"] = true,
+	["syncInfo"] = {
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [1]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [2]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [3]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [4]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [5]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [6]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [7]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [8]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [9]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [10]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [11]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [12]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [13]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [14]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [15]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [16]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [17]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [18]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [19]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [20]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [21]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [22]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [23]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [24]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [25]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [26]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [27]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [28]
+		{
+			"Moolatz-Golemagg@1", -- [1]
+			"Battlearm-Golemagg@1", -- [2]
+		}, -- [29]
+	},
 }
