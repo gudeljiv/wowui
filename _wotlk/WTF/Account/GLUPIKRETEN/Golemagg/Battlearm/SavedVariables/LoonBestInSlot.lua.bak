@@ -36,7 +36,7 @@ LBISSettings = {
 		["RestorationDruid"] = true,
 		["SubtletyRogue"] = true,
 	},
-	["SelectedSpec"] = "Death Knight: Frost",
+	["SelectedSpec"] = "Druid: Cat",
 	["minimap"] = {
 		["minimapPos"] = 180,
 		["hide"] = true,
@@ -48,10 +48,10 @@ LBISSettings = {
 	},
 	["ShowPriority"] = true,
 	["SelectedRank"] = "All",
-	["SelectedSlot"] = "Main Hand",
-	["SelectedSourceType"] = "All",
 	["ShowCustom"] = false,
+	["SelectedSourceType"] = "All",
 	["PriorityList"] = {
 	},
+	["SelectedSlot"] = "Trinket",
 	["SelectedPhase"] = "All",
 }

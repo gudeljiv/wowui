@@ -40,6 +40,7 @@ pretty_table = PrettyTable()
 
 combat = False
 dprint = False
+debug = False
 pause = True
 wow_class = "warrior"
 color_distance = 50
@@ -76,26 +77,31 @@ else:
 # default class
 wow_class_loaded = wow_class
 print("Script loaded and ready.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"))
-print("Rotation is paused.")
+print("print:", dprint)
+print("debug:", debug)
+print("rotation:", not pause)
 
 
 def on_press(key):
-    global dprint, pause
+    global dprint, pause, debug
 
     try:
         if key == keyboard.Key.f8:
             dprint = not dprint
-            print("dprint:", dprint)
+            print("print:", dprint)
+
+        if key == keyboard.Key.f11:
+            debug = not debug
+            print("debug:", debug)
 
         if key == keyboard.Key.f12:
             pause = not pause
+            print("rotation:", not pause)
             if pause:
-                print("Rotation is paused.")
                 pyautogui.hotkey("end")
                 pyautogui.PAUSE = 1
                 pyautogui.FAILSAFE = False
             else:
-                print("Rotation is not paused.")
                 pyautogui.hotkey("home")
                 pyautogui.PAUSE = 0.05
                 pyautogui.FAILSAFE = True
@@ -206,11 +212,13 @@ def load_skills_secondary(wow_class):
     return secondary_abilities
 
 
-def print_debug(ability, skill, score):
-    pretty_table.field_names = ["ability", "modifier", "key", "score", "finished", "time"]
-    pretty_table.add_row([ability, "modifier" in skill.keys() and skill["modifier"] or "none", skill["key"], score*100,
-                          f"{round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S")])
-    print(pretty_table)
+def print_debug(ability, score):
+    # pretty_table.field_names = ["ability", "modifier", "key", "score", "finished", "time"]
+    # pretty_table.add_row([ability["name"], "modifier" in ability.keys() and ability["modifier"] or "none", ability["key"], score*100,
+    #                       f"{round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S")])
+    # print(pretty_table)
+    print(ability["name"], "modifier" in ability.keys() and ability["modifier"] or "none", ability["key"], '{:.2f}'.format(score*100),
+          f"{round(1000 * (time.time() - start_time))} ms", datetime.now().strftime("%H:%M:%S"))
 
 
 def main_rotation(main_skill, main_abilities):
@@ -221,7 +229,7 @@ def main_rotation(main_skill, main_abilities):
                 score = structural_similarity(ability["image"], main_skill, channel_axis=2)
                 if score*100 > 90:
                     if dprint:
-                        print_debug(ability["name"], score)
+                        print_debug(ability, score)
 
                     if "modifier" in ability.keys():
                         if os.name == "posix":
@@ -252,7 +260,7 @@ def secondary_rotation(secondary_skill, secondary_abilities):
                     score = structural_similarity(ability["image"], secondary_skill, channel_axis=2)
                     if score*100 > 90:
                         if dprint:
-                            print_debug(ability["name"], score)
+                            print_debug(ability, score)
 
                         if "modifier" in ability.keys():
                             if os.name == "posix":
@@ -309,14 +317,15 @@ with keyboard.Listener(on_press=on_press) as listener:
 
 # grabbing images from regions
             main_image = sct.grab(p_main)
-            mss.tools.to_png(main_image.rgb, main_image.size, output=debug_folder + "1. main.png".format(**p_main))
             offgcd_image = sct.grab(p_offgcd)
-            mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=debug_folder + "6. offgcd.png".format(**p_offgcd))
             combat = sct.grab(p_combat).pixel(math.floor(c_width/2), math.floor(c_height/2))
             interrupt = sct.grab(p_interrupt).pixel(math.floor(c_width/2), math.floor(c_height/2))
             behind = sct.grab(p_behind).pixel(math.floor(c_width/2), math.floor(c_height/2))
             clss = sct.grab(p_clss).pixel(math.floor(c_width/2), math.floor(c_height/2))
 
+            if debug:
+                mss.tools.to_png(main_image.rgb, main_image.size, output=debug_folder + "1. main.png".format(**p_main))
+                mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=debug_folder + "6. offgcd.png".format(**p_offgcd))
 
 # matching closest class color to define in colors
             found_class, hex = get_class(clss, color_distance)

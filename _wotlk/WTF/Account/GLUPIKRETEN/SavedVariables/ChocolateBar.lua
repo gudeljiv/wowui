@@ -11,11 +11,11 @@ ChocolateBarDB = {
 		["Greenwise - Golemagg"] = "Default",
 		["Mulatz - Genesis"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
-		["Tandaram - Jin'do"] = "Default",
 		["Handrmandr - Genesis"] = "Default",
+		["Tandaram - Jin'do"] = "Default",
 		["Wells - Jin'do"] = "Default",
 		["Poklopac - Dreadnaught"] = "Default",
-		["Mxym - Golemagg"] = "Default",
+		["Konac - Dreadnaught"] = "Default",
 		["Tudum - Jin'do"] = "Default",
 		["Verminz - Genesis"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
@@ -25,7 +25,7 @@ ChocolateBarDB = {
 		["Pitchwise - Genesis"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
 		["Antun - Golemagg"] = "Default",
-		["Provokator - Jin'do"] = "Default",
+		["Miqa - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
 		["Ozrencic - Golemagg"] = "Default",
@@ -58,9 +58,9 @@ ChocolateBarDB = {
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Miqa - Golemagg"] = "Default",
+		["Provokator - Jin'do"] = "Default",
 		["Grgur - Golemagg"] = "Default",
-		["Konac - Dreadnaught"] = "Default",
+		["Mxym - Golemagg"] = "Default",
 		["Battledog - Gehennas"] = "Default",
 	},
 	["addonVersion"] = "v3.9.7",
@@ -90,21 +90,12 @@ ChocolateBarDB = {
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["iconSize"] = 0.7000000000000001,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["textureName"] = "None",
-			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["objSettings"] = {
 				["Puggle_Broker"] = {
 					["index"] = 3,
@@ -672,7 +663,16 @@ ChocolateBarDB = {
 			["textOffset"] = 2,
 			["height"] = 20,
 			["locked"] = false,
-			["iconSize"] = 0.7000000000000001,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["textureName"] = "None",
+			},
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -690,9 +690,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 755755,
-		["timeStamp"] = 436374.326,
-		["timeAtThisLevel"] = 138296,
+		["total"] = 756601,
+		["timeStamp"] = 1602497.329,
+		["timeAtThisLevel"] = 139142,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -722,9 +722,9 @@ CB_PlayedTime = {
 		["total"] = 53,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 933546,
-		["timeStamp"] = 437285.911,
-		["timeAtThisLevel"] = 603871,
+		["total"] = 935895,
+		["timeStamp"] = 1615453.448,
+		["timeAtThisLevel"] = 606220,
 	},
 	["Battitude-Golemagg"] = {
 		["total"] = 17339,
@@ -737,18 +737,18 @@ CB_PlayedTime = {
 	["Mxyzptlk-"] = {
 		["total"] = 8794,
 	},
+	["Mxzq-"] = {
+		["total"] = 356150,
+	},
 	["Vermina-Golemagg"] = {
 		["total"] = 363308,
 		["timeAtThisLevel"] = 10533,
 		["timeStamp"] = 1460363.498,
 	},
-	["Mxzq-"] = {
-		["total"] = 356150,
-	},
-	["Mxyzptlk-Golemagg"] = {
-		["total"] = 51089,
-		["timeAtThisLevel"] = 827,
-		["timeStamp"] = 1009368.738,
+	["Mxzq-Golemagg"] = {
+		["total"] = 1157488,
+		["timeAtThisLevel"] = 126468,
+		["timeStamp"] = 1602288.869,
 	},
 	["Pitchwise-Ashbringer"] = {
 		["total"] = 2973,
@@ -878,9 +878,9 @@ CB_PlayedTime = {
 		["timeStamp"] = 1608612.783,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 1961091,
-		["timeAtThisLevel"] = 868544,
-		["timeStamp"] = 1520492.795,
+		["total"] = 1961327,
+		["timeAtThisLevel"] = 868780,
+		["timeStamp"] = 1612018.649,
 	},
 	["Wells-Jin'do"] = {
 		["total"] = 11721,
@@ -890,10 +890,10 @@ CB_PlayedTime = {
 	["Grgur-"] = {
 		["total"] = 1248,
 	},
-	["Mxzq-Golemagg"] = {
-		["total"] = 1156635,
-		["timeAtThisLevel"] = 125615,
-		["timeStamp"] = 1519072.171,
+	["Mxyzptlk-Golemagg"] = {
+		["total"] = 51089,
+		["timeAtThisLevel"] = 827,
+		["timeStamp"] = 1009368.738,
 	},
 	["Provokator-Jin'do"] = {
 		["total"] = 22720,
