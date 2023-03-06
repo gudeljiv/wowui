@@ -65,4 +65,5 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 		["41450"] = true,
 		["41479"] = true,
 	},
+	["autoSell"] = true,
 }

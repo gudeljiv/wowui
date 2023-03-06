@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 9557,
+	["session"] = 9559,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\EasyFrames\\Modules\\Party-Party.lua:142: attempt to index field 'TextString' (a nil value)",

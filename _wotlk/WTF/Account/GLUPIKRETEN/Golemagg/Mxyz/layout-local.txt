@@ -139,10 +139,3 @@ X: -260
 Y: -200
 W: 325
 H: 375
-Frame: BagnonBankFrame1
-FrameLevel: 1
-Anchor: LEFT
-X: 496
-Y: 167
-W: 414
-H: 660
