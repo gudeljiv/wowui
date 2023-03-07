@@ -1,3 +1,4 @@
+from pprint import pprint
 from _resources import skills
 from _resources import color
 from _resources import monitor_settings
@@ -212,13 +213,12 @@ def load_skills_secondary(wow_class):
     return secondary_abilities
 
 
-def print_debug(ability, score):
-    # pretty_table.field_names = ["ability", "modifier", "key", "score", "finished", "time"]
-    # pretty_table.add_row([ability["name"], "modifier" in ability.keys() and ability["modifier"] or "none", ability["key"], score*100,
-    #                       f"{round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S")])
-    # print(pretty_table)
-    print(ability["name"], "modifier" in ability.keys() and ability["modifier"] or "none", ability["key"], '{:.2f}'.format(score*100),
-          f"{round(1000 * (time.time() - start_time))} ms", datetime.now().strftime("%H:%M:%S"))
+def print_debug(ability, score=False):
+    pretty_table.field_names = ["ability", "modifier", "key", "score", "finished", "time"]
+    pretty_table.add_row([ability["name"], "modifier" in ability.keys() and ability["modifier"] or "none", ability["key"], score*100,
+                          f"{round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S")])
+    print(pretty_table)
+    # print(ability["name"], "modifier" in ability.keys() and ability["modifier"] or "none", ability["key"], '{:.2f}'.format(score*100), f"{round(1000 * (time.time() - start_time))} ms", datetime.now().strftime("%H:%M:%S"))
 
 
 def main_rotation(main_skill, main_abilities):
@@ -301,76 +301,88 @@ with keyboard.Listener(on_press=on_press) as listener:
 
         while True:
 
-            time.sleep(random.uniform(0.001, 0.03))
-
-            start_time = time.time()
-            if os.name != "posix":
-                active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
-
-# defining regions
-            p_main = {"top": 2, "left": 2, "width": x, "height": y}
-            p_offgcd = {"top": 2, "left":  p_offgcd_left, "width": x, "height": y}
-            p_combat = {"top": 0, "left": p_combat_left, "width": c_width, "height": c_height}
-            p_interrupt = {"top": 0, "left": p_interrupt_left, "width": c_width, "height": c_height}
-            p_behind = {"top": 0, "left": p_behind_left, "width": c_width, "height": c_height}
-            p_clss = {"top": 0, "left": p_clss_left, "width": c_width, "height": c_height}
-
-# grabbing images from regions
-            main_image = sct.grab(p_main)
-            offgcd_image = sct.grab(p_offgcd)
-            combat = sct.grab(p_combat).pixel(math.floor(c_width/2), math.floor(c_height/2))
-            interrupt = sct.grab(p_interrupt).pixel(math.floor(c_width/2), math.floor(c_height/2))
-            behind = sct.grab(p_behind).pixel(math.floor(c_width/2), math.floor(c_height/2))
-            clss = sct.grab(p_clss).pixel(math.floor(c_width/2), math.floor(c_height/2))
-
-            if debug:
-                mss.tools.to_png(main_image.rgb, main_image.size, output=debug_folder + "1. main.png".format(**p_main))
-                mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=debug_folder + "6. offgcd.png".format(**p_offgcd))
-
-# matching closest class color to define in colors
-            found_class, hex = get_class(clss, color_distance)
-            if not found_class:
-                continue
-
-# defining class
             try:
-                wow_class = color[hex]
-            except:
-                wow_class = "warrior"
+                time.sleep(random.uniform(0.001, 0.03))
 
-# loading skills for a class if changed
-            if wow_class_loaded != wow_class:
-                print("class changed: ", wow_class_loaded, "->", wow_class, "..", hex, clss, color_distance, color[hex], datetime.now().strftime("%H:%M:%S"))
-                main_abilities = load_skills_main(wow_class)
-                secondary_abilities = load_skills_secondary(wow_class)
-                main_abilities = {**main_abilities, **healing, **global_skills}
-                wow_class_loaded = wow_class
-                pyautogui.hotkey(pause and "end" or "home")
-
-# actual rotation
-            if not pause:
-
+                start_time = time.time()
                 if os.name != "posix":
-                    if active_window != "World of Warcraft":
-                        continue
+                    active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
-                # skipping combat, chat open
-                # any other reason
-                # (white -> skip, green -> combat)
-                if combat == (255, 255, 255):
+    # defining regions
+                p_main = {"top": 2, "left": 2, "width": x, "height": y}
+                p_offgcd = {"top": 2, "left":  p_offgcd_left, "width": x, "height": y}
+                p_combat = {"top": 0, "left": p_combat_left, "width": c_width, "height": c_height}
+                p_interrupt = {"top": 0, "left": p_interrupt_left, "width": c_width, "height": c_height}
+                p_behind = {"top": 0, "left": p_behind_left, "width": c_width, "height": c_height}
+                p_clss = {"top": 0, "left": p_clss_left, "width": c_width, "height": c_height}
+
+    # grabbing images from regions
+                main_image = sct.grab(p_main)
+                offgcd_image = sct.grab(p_offgcd)
+                combat = sct.grab(p_combat).pixel(math.floor(c_width/2), math.floor(c_height/2))
+                interrupt = sct.grab(p_interrupt).pixel(math.floor(c_width/2), math.floor(c_height/2))
+                behind = sct.grab(p_behind).pixel(math.floor(c_width/2), math.floor(c_height/2))
+                clss = sct.grab(p_clss).pixel(math.floor(c_width/2), math.floor(c_height/2))
+
+                if debug:
+                    mss.tools.to_png(main_image.rgb, main_image.size, output=debug_folder + "1. main.png".format(**p_main))
+                    mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=debug_folder + "6. offgcd.png".format(**p_offgcd))
+
+    # matching closest class color to define in colors
+                found_class, hex = get_class(clss, color_distance)
+                if not found_class:
                     continue
 
-# interrupt indicator
-                # white --> green
-                if interrupt == (0, 255, 0):
-                    if dprint:
-                        print("interrupt", "f9", f"Finish in: {round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S"))
-                    pyautogui.hotkey("f9")
+    # defining class
+                try:
+                    wow_class = color[hex]
+                except:
+                    wow_class = "warrior"
 
-                main_skill = numpy.array(main_image)[:, :, :3]
-                secondary_skill = numpy.array(offgcd_image)[:, :, :3]
+    # loading skills for a class if changed
+                if wow_class_loaded != wow_class:
+                    # print("class changed: ", wow_class_loaded, "->", wow_class, "..", hex, clss, color_distance, color[hex], datetime.now().strftime("%H:%M:%S"))
+                    print("class changed:", wow_class_loaded.upper(), "->", wow_class.upper())
+                    main_abilities = load_skills_main(wow_class)
+                    secondary_abilities = load_skills_secondary(wow_class)
+                    main_abilities = {**main_abilities, **healing, **global_skills}
+                    wow_class_loaded = wow_class
+                    pyautogui.hotkey(pause and "end" or "home")
 
-    # rotation
-                # _thread.start_new_thread(main_rotation, (main_skill,))
-                # _thread.start_new_thread(secondary_rotation, (secondary_skill,))
-                _thread.start_new_thread(whole_rotation, (main_skill, secondary_skill, main_abilities, secondary_abilities))
+    # actual rotation
+                if not pause:
+
+                    if os.name != "posix":
+                        if active_window != "World of Warcraft":
+                            continue
+
+                    # skipping combat, chat open
+                    # any other reason
+                    # (white -> skip, green -> combat)
+                    if combat == (255, 255, 255):
+                        continue
+
+    # interrupt indicator
+                    # white --> green
+                    if interrupt == (0, 255, 0):
+                        # if dprint:
+                        #     print("interrupt", "f9", f"Finish in: {round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S"))
+                        if os.name == "posix":
+                            pyautogui.hotkey("f9")
+                        else:
+                            cKeyPress("f9")
+
+                    main_skill = numpy.array(main_image)[:, :, :3]
+                    secondary_skill = numpy.array(offgcd_image)[:, :, :3]
+
+        # rotation
+                    # _thread.start_new_thread(main_rotation, (main_skill,))
+                    # _thread.start_new_thread(secondary_rotation, (secondary_skill,))
+                    _thread.start_new_thread(whole_rotation, (main_skill, secondary_skill, main_abilities, secondary_abilities))
+
+            except KeyboardInterrupt:
+                print("Script unloaded and closed.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"))
+                try:
+                    sys.exit(130)
+                except SystemExit:
+                    os._exit(130)

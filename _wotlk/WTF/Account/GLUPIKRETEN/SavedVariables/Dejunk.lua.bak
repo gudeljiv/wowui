@@ -65,4 +65,5 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 		["41450"] = true,
 		["40009"] = true,
 	},
+	["autoJunkFrame"] = true,
 }
