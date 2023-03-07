@@ -118,6 +118,7 @@ GlobalIgnoreDB = {
 		{
 		}, -- [21]
 		{
+			"Battlearm-Golemagg@1", -- [1]
 		}, -- [22]
 		{
 		}, -- [23]
@@ -147,7 +148,7 @@ GlobalIgnoreDB = {
 		"[contains=WTS] or [contains=WTB]", -- [9]
 		"[nonlatin]", -- [10]
 	},
-	["trackChanges"] = true,
+	["autoUpdate"] = true,
 	["autoIgnore"] = true,
 	["factionList"] = {
 		"Horde", -- [1]

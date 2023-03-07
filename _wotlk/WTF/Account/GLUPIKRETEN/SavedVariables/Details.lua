@@ -682,7 +682,7 @@ _detalhes_global = {
 		["Hamstring"] = 1,
 		["Ray of Pain"] = 32,
 		["Mutagen Explosion"] = 8,
-		["Carnivorous Bite"] = 1,
+		["Throw Wrench"] = 1,
 		["Hateful Strike"] = 1,
 		["Charge"] = 1,
 		["Plague Cloud"] = 8,
@@ -817,7 +817,7 @@ _detalhes_global = {
 		["Shadow Word: Death"] = 32,
 		["Intercept"] = 1,
 		["Toppling Tower"] = 1,
-		["Shadow Axe"] = 32,
+		["Death Strike"] = 1,
 		["Deadly Poison VII"] = 8,
 		["Mandible Crush"] = 1,
 		["Seal of Command"] = 2,
@@ -825,7 +825,7 @@ _detalhes_global = {
 		["Dark Blast"] = 32,
 		["Pulsing Shockwave"] = 8,
 		["Slowing Poison"] = 8,
-		["Leech Poison"] = 8,
+		["Moonfire"] = 64,
 		["Mutated Spores"] = 8,
 		["Void Shifted"] = 32,
 		["Bitter Withdrawal"] = 64,
@@ -839,16 +839,16 @@ _detalhes_global = {
 		["Ley Curse"] = 64,
 		["Lava Burn"] = 4,
 		["Backstab"] = 1,
-		["Berserker Charge"] = 1,
+		["Arcane Explosion"] = 64,
 		["Arcane Breath"] = 80,
 		["Fel Immolation"] = 4,
-		["Plague Blight"] = 8,
+		["Berserker Charge"] = 1,
 		["Arcane Bomb"] = 64,
-		["Arcane Explosion"] = 64,
+		["Plague Blight"] = 8,
 		["Sphere Detonation"] = 64,
 		["Faerie Fire (Feral)"] = 8,
 		["Temporal Vortex"] = 64,
-		["Burning Winds"] = 4,
+		["Seal of Command"] = 2,
 		["Piercing Blow"] = 1,
 		["Foul Spores"] = 32,
 		["Poison Cloud"] = 8,
@@ -900,32 +900,33 @@ _detalhes_global = {
 		["Arcane Jolt"] = 64,
 		["Freezing Breath"] = 16,
 		["Arcane Blast"] = 64,
+		["Carnivorous Bite"] = 1,
 		["Puncture Wound"] = 1,
-		["Death Strike"] = 1,
 		["Mana Burn"] = 32,
 		["Execute"] = 1,
 		["Rend"] = 1,
 		["Choking Cloud"] = 8,
+		["Burning Winds"] = 4,
 		["Vortex"] = 64,
 		["Fel Fire"] = 4,
 		["Plague Strike"] = 1,
 		["Locust Swarm"] = 8,
-		["Firebomb"] = 4,
+		["Gouge"] = 1,
 		["Ravenous Claw"] = 1,
+		["Ray of Suffering"] = 32,
 		["Corrosive Poison"] = 8,
 		["Head Crush"] = 1,
-		["Throw Wrench"] = 1,
 		["Mana Tap"] = 64,
-		["Claw Slash"] = 1,
+		["Leech Poison"] = 8,
 		["Swoop"] = 1,
 		["Decimate"] = 1,
 		["Intense Cold"] = 16,
 		["Arcane Missiles"] = 64,
 		["Raging Flames"] = 4,
 		["Osmosis"] = 8,
-		["Moonfire"] = 64,
 		["Blood Strike"] = 1,
 		["Paralyzed"] = 8,
+		["Shadow Axe"] = 32,
 		["Withering Strike"] = 1,
 		["Gargoyle Strike"] = 8,
 		["Ice Shard"] = 16,
@@ -935,11 +936,7 @@ _detalhes_global = {
 	["deathlog_healingdone_min"] = 1,
 	["plater"] = {
 		["realtime_dps_enabled"] = false,
-		["damage_taken_anchor"] = {
-			["y"] = 0,
-			["x"] = 0,
-			["side"] = 7,
-		},
+		["realtime_dps_size"] = 12,
 		["realtime_dps_player_shadow"] = true,
 		["damage_taken_enabled"] = false,
 		["realtime_dps_player_size"] = 12,
@@ -955,8 +952,12 @@ _detalhes_global = {
 			["x"] = 20,
 			["side"] = 7,
 		},
-		["realtime_dps_size"] = 12,
 		["damage_taken_shadow"] = true,
+		["damage_taken_anchor"] = {
+			["y"] = 0,
+			["x"] = 0,
+			["side"] = 7,
+		},
 		["damage_taken_color"] = {
 			1, -- [1]
 			1, -- [2]
@@ -1003,8 +1004,8 @@ _detalhes_global = {
 	["displays_by_spec"] = {
 	},
 	["plugin_window_pos"] = {
-		["y"] = 41.30995178222656,
-		["x"] = -278.974853515625,
+		["y"] = 41.31001281738281,
+		["x"] = -278.974609375,
 		["point"] = "RIGHT",
 		["scale"] = 1,
 	},
@@ -1302,7 +1303,7 @@ _detalhes_global = {
 		[23694] = 1,
 		[55826] = "Stitched Colossus",
 		[51987] = 3,
-		[60305] = 4,
+		[48020] = 9,
 		[19983] = "Sapphiron",
 		[48276] = "Svala Sorrowgrave",
 		[48788] = 2,
@@ -1386,7 +1387,7 @@ _detalhes_global = {
 		[43930] = "Dragonflayer Metalworker",
 		[48665] = 4,
 		[49049] = 3,
-		[61462] = "Frostbringer",
+		[57367] = 3,
 		[61590] = "Portal Keeper",
 		[57623] = 6,
 		[61846] = 3,
@@ -1431,7 +1432,7 @@ _detalhes_global = {
 		[50843] = "Krystallus",
 		[59161] = 9,
 		[55194] = 9,
-		[55322] = "Death Knight Captain",
+		[59417] = "Hadronox",
 		[47772] = "Grand Magus Telestra",
 		[56090] = "Anub'Rekhan",
 		[12043] = 8,
@@ -1494,7 +1495,7 @@ _detalhes_global = {
 		[55582] = "Drakkari Medicine Man",
 		[47520] = 1,
 		[56222] = 6,
-		[56350] = 9,
+		[48160] = 5,
 		[20053] = 2,
 		[48672] = 4,
 		[48800] = 2,
@@ -1572,7 +1573,7 @@ _detalhes_global = {
 		[60067] = "Alliance Commander",
 		[48422] = 11,
 		[64930] = 7,
-		[24407] = "Bloodlord Mandokir",
+		[48806] = 2,
 		[48934] = 2,
 		[351355] = 11,
 		[54053] = "Zhaanam <Bansho>",
@@ -1632,7 +1633,7 @@ _detalhes_global = {
 		[59304] = "King Ymiron",
 		[59432] = "Anub'arak",
 		[63655] = 4,
-		[55593] = "Loatheb",
+		[43308] = 7,
 		[60072] = "Malygos",
 		[56105] = "Malygos",
 		[48171] = 5,
@@ -1700,7 +1701,7 @@ _detalhes_global = {
 		[62124] = 2,
 		[2893] = 11,
 		[55342] = 8,
-		[31834] = 2,
+		[43185] = 1,
 		[55598] = "Drakkari Medicine Man",
 		[64044] = 5,
 		[27995] = "Spectral Rider",
@@ -1862,7 +1863,7 @@ _detalhes_global = {
 		[32736] = "Plagued Champion",
 		[53307] = 11,
 		[2062] = 7,
-		[28833] = "Lady Blaumeux",
+		[53563] = 2,
 		[130] = 8,
 		[2094] = 4,
 		[16868] = "Shrieking Banshee",
@@ -2249,7 +2250,7 @@ _detalhes_global = {
 		[23920] = 1,
 		[28271] = 8,
 		[16345] = "Patchwork Horror",
-		[8219] = 4,
+		[57430] = "Malygos",
 		[45529] = 6,
 		[54359] = 4,
 		[25392] = 5,
@@ -2280,7 +2281,7 @@ _detalhes_global = {
 		[29232] = "Spore <Loatheb>",
 		[17139] = "Crimson Priest",
 		[55001] = 4,
-		[42972] = "Dragonflayer Strategist",
+		[59352] = "Anub'ar Prime Guard",
 		[59864] = "Dark Rune Stormcaller",
 		[348704] = 2,
 		[64215] = "Emalon the Storm Watcher",
@@ -2347,7 +2348,7 @@ _detalhes_global = {
 		[64219] = "Tempest Warder",
 		[48095] = "[*] Intense Cold",
 		[64859] = 6,
-		[11196] = 1,
+		[48863] = 9,
 		[41057] = "Unholy Axe",
 		[57821] = 6,
 		[33763] = 11,
@@ -2356,7 +2357,7 @@ _detalhes_global = {
 		[54878] = "Drakkari Elemental",
 		[31602] = "Nerub'enkan",
 		[59357] = "Anub'ar Shadowcaster",
-		[27827] = 5,
+		[55646] = "Spectral Rider",
 		[48096] = "Keristrasza",
 		[48480] = 11,
 		[40546] = "Drakkari Lancer",
@@ -2553,7 +2554,7 @@ _detalhes_global = {
 		[56427] = "Patchwork Golem",
 		[61290] = 9,
 		[57579] = "Tenebron",
-		[18812] = "Spectral Stable Hand",
+		[27002] = 11,
 		[54124] = "Maexxna",
 		[46190] = "Acolyte",
 		[55276] = "Gal'darah",
@@ -2591,7 +2592,7 @@ _detalhes_global = {
 		[59628] = 4,
 		[29882] = "Crazed Mana-Surge",
 		[60883] = "Archavon the Stone Watcher",
-		[47727] = "Grand Magus Telestra",
+		[60012] = "Twisted Visage",
 		[47855] = 9,
 		[64363] = "Tempest Warder",
 		[47875] = 6,
@@ -2612,6 +2613,7 @@ _detalhes_global = {
 		[19658] = "Zhaanam <Bansho>",
 		[59658] = 6,
 		[27819] = "Kel'Thuzad",
+		[63468] = 3,
 		[50504] = "Arcane Serpent",
 		[31687] = 8,
 		[58861] = "Spirit Wolf <Deffz>",
@@ -2734,7 +2736,7 @@ _detalhes_global = {
 		[53358] = 3,
 		[29520] = 1,
 		[33143] = 5,
-		[53746] = 11,
+		[57841] = 4,
 		[57969] = 4,
 		[27005] = 11,
 		[12051] = 8,
@@ -2904,7 +2906,7 @@ _detalhes_global = {
 		[47877] = 6,
 		[12674] = "Crimson Conjuror",
 		[34428] = 1,
-		[59126] = "Vesperon",
+		[8643] = 4,
 		[59254] = "Ymirjar Necromancer",
 		[43002] = 8,
 		[34027] = 3,
@@ -3519,7 +3521,7 @@ _detalhes_global = {
 			"Interface\\ICONS\\Ability_Creature_Poison_02", -- [3]
 		}, -- [8]
 	},
-	["spell_category_latest_query"] = 0,
+	["check_stuttering"] = true,
 	["titletext_showtimer_always"] = false,
 	["custom"] = {
 		{
@@ -6152,8 +6154,9 @@ _detalhes_global = {
 			["cloud_capture"] = true,
 			["damage_taken_everything"] = false,
 			["scroll_speed"] = 2,
-			["font_sizes"] = {
-				["menus"] = 10,
+			["new_window_size"] = {
+				["height"] = 158,
+				["width"] = 310,
 			},
 			["chat_tab_embed"] = {
 				["enabled"] = false,
@@ -6431,15 +6434,14 @@ _detalhes_global = {
 			["deny_score_messages"] = false,
 			["standard_skin"] = false,
 			["segments_panic_mode"] = false,
+			["font_sizes"] = {
+				["menus"] = 10,
+			},
 			["window_clamp"] = {
 				-8, -- [1]
 				0, -- [2]
 				21, -- [3]
 				-14, -- [4]
-			},
-			["new_window_size"] = {
-				["height"] = 158,
-				["width"] = 310,
 			},
 			["row_fade_out"] = {
 				"out", -- [1]
@@ -6946,7 +6948,7 @@ _detalhes_global = {
 		},
 	},
 	["immersion_special_units"] = true,
-	["disable_talent_feature"] = true,
+	["spell_category_latest_query"] = 0,
 	["boss_mods_timers"] = {
 		["encounter_timers_bw"] = {
 		},
@@ -7314,7 +7316,7 @@ _detalhes_global = {
 			},
 		},
 	},
-	["check_stuttering"] = true,
+	["disable_talent_feature"] = true,
 	["mobs_data"] = {
 	},
 	["played_class_time"] = true,
@@ -7328,7 +7330,7 @@ _detalhes_global = {
 			["WARRIOR"] = 942956.9100000032,
 			["PALADIN"] = 214776.308,
 			["MAGE"] = 4159.593999999808,
-			["PRIEST"] = 47871.04500000062,
+			["PRIEST"] = 47916.39200000058,
 			["WARLOCK"] = 1632.134000000078,
 			["SHAMAN"] = 17214.75700000022,
 			["DRUID"] = 293973.1780000029,
@@ -7689,7 +7691,7 @@ _detalhes_global = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["bars_sort_direction"] = 1,
+			["micro_displays_locked"] = false,
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -7869,13 +7871,13 @@ _detalhes_global = {
 				},
 			},
 			["micro_displays_side"] = 2,
-			["name"] = "vermin",
+			["bg_alpha"] = 0,
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["version"] = 3,
+			["name"] = "vermin",
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -7898,7 +7900,7 @@ _detalhes_global = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["micro_displays_locked"] = false,
+			["skin_custom"] = "vermin",
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -7914,14 +7916,11 @@ _detalhes_global = {
 					0.07058823529411765, -- [3]
 				},
 			},
+			["bars_grow_direction"] = 1,
 			["row_show_animation"] = {
 				["anim"] = "Fade",
 				["options"] = {
 				},
-			},
-			["menu_anchor_down"] = {
-				16, -- [1]
-				-3, -- [2]
 			},
 			["grab_on_top"] = false,
 			["auto_hide_menu"] = {
@@ -7939,9 +7938,12 @@ _detalhes_global = {
 				1, -- [2]
 				1, -- [3]
 			},
-			["bars_grow_direction"] = 1,
+			["menu_anchor_down"] = {
+				16, -- [1]
+				-3, -- [2]
+			},
 			["auto_current"] = true,
-			["skin_custom"] = "vermin",
+			["bars_sort_direction"] = 1,
 			["row_info"] = {
 				["show_arena_role_icon"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
@@ -8054,7 +8056,7 @@ _detalhes_global = {
 				["textR_separator"] = "NONE",
 				["texture_custom_file"] = "Interface\\",
 			},
-			["bg_alpha"] = 0,
+			["version"] = 3,
 			["hide_in_combat"] = false,
 			["switch_damager"] = {
 				1, -- [1]

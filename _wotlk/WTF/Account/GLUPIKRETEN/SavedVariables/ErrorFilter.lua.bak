@@ -9,12 +9,19 @@ ErrorFilterDB = {
 		["Kaonac - Jin'do"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
 		["Wells - Jin'do"] = "Default",
-		["Pitchwise - Ashbringer"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
+<<<<<<< HEAD
 		["Vermin - Golemagg"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Tudum - Jin'do"] = "Default",
+=======
+		["Tudum - Jin'do"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Tudum - Ashbringer"] = "Default",
+		["Augustin - Golemagg"] = "Default",
+		["Pitchwise - Ashbringer"] = "Default",
+>>>>>>> cc2967a30a81f2c75956206abf6b1476ca1fc5fa
 		["Miqa - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",

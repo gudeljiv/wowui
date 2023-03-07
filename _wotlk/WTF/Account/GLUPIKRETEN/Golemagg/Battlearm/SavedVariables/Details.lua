@@ -155,7 +155,7 @@ _detalhes_database = {
 									[49941] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 1753,
 										["g_amt"] = 0,
 										["n_max"] = 555,
 										["targets"] = {
@@ -173,7 +173,7 @@ _detalhes_database = {
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 1753,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
@@ -1449,6 +1449,103 @@ _detalhes_database = {
 				["spells_cast_timeline"] = {
 				},
 				["player_last_events"] = {
+					["Battlearm"] = {
+						{
+							true, -- [1]
+							3, -- [2]
+							3968, -- [3]
+							1678127428.444, -- [4]
+							17163, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+							true, -- [1]
+							3, -- [2]
+							1902, -- [3]
+							1678127440.077, -- [4]
+							15648, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [2]
+						{
+							true, -- [1]
+							3, -- [2]
+							476, -- [3]
+							1678127441.31, -- [4]
+							15172, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 4,
+					},
 				},
 				["data_inicio"] = "11:11:53",
 				["CombatSkillCache"] = {
@@ -3032,10 +3129,11 @@ _detalhes_database = {
 									},
 									[50401] = {
 										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Battlearm"] = 151,
+										},
+										["n_max"] = 54,
 										["targets"] = {
 											["Crystalline Ice Elemental"] = 0,
 										},
@@ -3155,7 +3253,7 @@ _detalhes_database = {
 							["monster"] = true,
 							["nome"] = "Crystalline Ice Elemental",
 							["spells"] = {
-								["tipo"] = 2,
+								["tipo"] = 7,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -3347,6 +3445,7 @@ _detalhes_database = {
 							["targets"] = {
 								["Battlearm"] = 65,
 							},
+							["last_event"] = 1678127206,
 							["pets"] = {
 							},
 							["powertype"] = 6,
@@ -3684,6 +3783,7 @@ _detalhes_database = {
 							["targets"] = {
 								["Expert's Training Dummy"] = 2561548,
 							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["pets"] = {
 							},
 							["delay"] = 0,
@@ -5621,7 +5721,7 @@ _detalhes_database = {
 										["counter"] = 5,
 									},
 								},
-								["tipo"] = 7,
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
 							["tipo"] = 3,
@@ -6596,7 +6696,7 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[55078] = {
+									[49909] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
@@ -6683,7 +6783,7 @@ _detalhes_database = {
 										},
 										["total"] = 58042,
 										["c_max"] = 0,
-										["id"] = 55078,
+										["id"] = 49909,
 										["r_dmg"] = 0,
 										["spellschool"] = 32,
 										["extra"] = {
@@ -8355,6 +8455,7 @@ _detalhes_database = {
 							["aID"] = "11348",
 							["tipo"] = 4,
 							["pets"] = {
+								"Zulian Guardian <High Priest Thekal>", -- [1]
 							},
 							["serial"] = "Creature-0-4446-309-28445-11348-000005FC6D",
 							["last_event"] = 0,
@@ -8408,7 +8509,9 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["pets"] = {
+							["flag_original"] = 199240,
+							["spell_cast"] = {
+								[6713] = 3,
 							},
 							["classe"] = "UNKNOW",
 							["boss_debuff"] = true,
@@ -9137,7 +9240,7 @@ _detalhes_database = {
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 2928,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 120,
@@ -9671,7 +9774,7 @@ _detalhes_database = {
 									[55078] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 49408,
 										["g_amt"] = 0,
 										["n_max"] = 406,
 										["targets"] = {
@@ -9804,12 +9907,12 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 406,
 										["targets"] = {
 											["Bloodlord Mandokir"] = 0,
 										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 44154,
+										["n_min"] = 339,
 										["g_dmg"] = 0,
 										["counter"] = 1,
 										["ChartData"] = {

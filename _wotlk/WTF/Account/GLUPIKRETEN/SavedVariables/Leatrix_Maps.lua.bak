@@ -5,18 +5,30 @@ LeaMapsDB = {
 	["ShowZoneLevels"] = "On",
 	["ShowZoneMenu"] = "On",
 	["ShowSpiritHealers"] = "Off",
+<<<<<<< HEAD
 	["MainPanelA"] = "LEFT",
+=======
+	["BattleMaxZoom"] = 1,
+>>>>>>> cc2967a30a81f2c75956206abf6b1476ca1fc5fa
 	["IncreaseZoom"] = "Off",
 	["BattleMapR"] = "BOTTOMRIGHT",
 	["LockMapFrame"] = "Off",
 	["BattlePlayerArrowSize"] = 22,
 	["MapPosA"] = "CENTER",
+<<<<<<< HEAD
 	["MapPosY"] = 64.59928131103516,
+=======
+	["ShowMinimapIcon"] = "Off",
+>>>>>>> cc2967a30a81f2c75956206abf6b1476ca1fc5fa
 	["BattleMapOpacity"] = 1,
 	["tintRed"] = 0.6000000000000001,
 	["ShowCoords"] = "On",
 	["BattleMapX"] = -2.759124279022217,
+<<<<<<< HEAD
 	["BattleMaxZoom"] = 1,
+=======
+	["MainPanelA"] = "LEFT",
+>>>>>>> cc2967a30a81f2c75956206abf6b1476ca1fc5fa
 	["ShowTravelPoints"] = "On",
 	["ShowDungeonIcons"] = "On",
 	["movingOpacity"] = 0.5,
@@ -36,11 +48,11 @@ LeaMapsDB = {
 	["BattleMapA"] = "BOTTOMRIGHT",
 	["BattleCenterOnPlayer"] = "On",
 	["MainPanelR"] = "LEFT",
-	["RememberZoom"] = "On",
+	["UnlockMapFrame"] = "On",
 	["ShowZoneCrossings"] = "On",
 	["ShowScaleHandle"] = "On",
 	["PlayerArrowSize"] = 27,
-	["UnlockMapFrame"] = "On",
+	["RevealMap"] = "On",
 	["ClassIconSize"] = 20,
 	["IncreaseZoomMax"] = 2,
 	["hide"] = true,
@@ -49,7 +61,7 @@ LeaMapsDB = {
 	["BattleGroupIconSize"] = 20,
 	["ShowFlightPoints"] = "On",
 	["ShowTravelOpposing"] = "Off",
-	["RevealMap"] = "On",
+	["RememberZoom"] = "On",
 	["MainPanelY"] = 155.9591827392578,
 	["NoMapBorder"] = "Off",
 	["BattleMapSize"] = 363,
@@ -60,7 +72,11 @@ LeaMapsDB = {
 	["ShowFishingLevels"] = "On",
 	["FirstRunMessageSeen"] = true,
 	["RevTint"] = "On",
+<<<<<<< HEAD
 	["ShowMinimapIcon"] = "Off",
+=======
+	["MapPosY"] = 64.59928131103516,
+>>>>>>> cc2967a30a81f2c75956206abf6b1476ca1fc5fa
 	["stationaryOpacity"] = 1,
 	["tintGreen"] = 0.6000000000000001,
 	["UnlockBattlefield"] = "On",

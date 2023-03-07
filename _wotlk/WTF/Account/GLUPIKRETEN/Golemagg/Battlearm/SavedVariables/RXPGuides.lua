@@ -3198,7 +3198,7 @@ RXPCSettings = {
 			["alwaysSendBranded"] = false,
 			["enableTargetMacro"] = false,
 			["hideInRaid"] = true,
-			["frameHeight"] = 125.0000534057617,
+			["frameHeight"] = 124.9999694824219,
 		},
 	},
 }

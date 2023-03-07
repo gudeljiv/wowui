@@ -9,12 +9,19 @@ Postal3DB = {
 		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
 		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
 		["Wells - Jin'do"] = "Wells - Jin'do",
-		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+<<<<<<< HEAD
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
 		["Tudum - Jin'do"] = "Tudum - Jin'do",
+=======
+		["Tudum - Jin'do"] = "Tudum - Jin'do",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
+		["Augustin - Golemagg"] = "Augustin - Golemagg",
+		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
+>>>>>>> cc2967a30a81f2c75956206abf6b1476ca1fc5fa
 		["Miqa - Golemagg"] = "Miqa - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
@@ -103,9 +110,20 @@ Postal3DB = {
 		},
 		["Wells - Jin'do"] = {
 		},
-		["Pitchwise - Ashbringer"] = {
-		},
 		["Moolatz - Golemagg"] = {
+		},
+<<<<<<< HEAD
+		["Vermin - Golemagg"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Tadibey|Golemagg|Horde", -- [1]
+					"Miqa|Golemagg|Horde", -- [2]
+					"Mxyz|Golemagg|Horde", -- [3]
+				},
+			},
+		},
+=======
+		["Tudum - Jin'do"] = {
 		},
 		["Vermin - Golemagg"] = {
 			["BlackBook"] = {
@@ -116,11 +134,12 @@ Postal3DB = {
 				},
 			},
 		},
+>>>>>>> cc2967a30a81f2c75956206abf6b1476ca1fc5fa
 		["Tudum - Ashbringer"] = {
 		},
 		["Augustin - Golemagg"] = {
 		},
-		["Tudum - Jin'do"] = {
+		["Pitchwise - Ashbringer"] = {
 		},
 		["Miqa - Golemagg"] = {
 			["BlackBook"] = {

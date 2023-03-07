@@ -291,7 +291,11 @@ PallyPower_AuraAssignments = {
 	["Iamroguee"] = 0,
 	["Elenath"] = 0,
 	["Nékosenshi"] = 0,
+<<<<<<< HEAD
 	["Monikà"] = 6,
+=======
+	["Monikà"] = 0,
+>>>>>>> cc2967a30a81f2c75956206abf6b1476ca1fc5fa
 	["Shinésx"] = 0,
 	["Zoremi"] = 0,
 	["Zayebany"] = 0,
@@ -315,8 +319,8 @@ PallyPower_AuraAssignments = {
 	["Drexal"] = 0,
 	["Iamtherealqt"] = 0,
 	["Krigeroca"] = 0,
-	["Emerity"] = 0,
 	["Miracle"] = 0,
+	["Foxholy"] = 0,
 	["Merpz"] = 0,
 	["Immórtál"] = 0,
 	["Xporz"] = 0,
@@ -434,8 +438,13 @@ PallyPower_AuraAssignments = {
 	["Althan"] = 0,
 	["Wscqc"] = 0,
 	["Darwina"] = 0,
+<<<<<<< HEAD
 	["Foxholy"] = 0,
 	["Monikå"] = 1,
+=======
+	["Emerity"] = 0,
+	["Monikå"] = 0,
+>>>>>>> cc2967a30a81f2c75956206abf6b1476ca1fc5fa
 	["Mailil"] = 0,
 	["Mckalapal"] = 0,
 	["Doradintwo"] = 0,
