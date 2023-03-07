@@ -5,10 +5,10 @@ ThreatClassic2DB = {
 		["Vermina - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
 		["Miqa - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
 		["Tadibey - Golemagg"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -50,13 +50,13 @@ ThreatClassic2DB = {
 					-340, -- [5]
 				},
 				["locked"] = true,
+				["height"] = 140,
 				["headerColor"] = {
 					nil, -- [1]
 					nil, -- [2]
 					nil, -- [3]
 					0, -- [4]
 				},
-				["height"] = 140,
 			},
 			["bar"] = {
 				["count"] = 8,
