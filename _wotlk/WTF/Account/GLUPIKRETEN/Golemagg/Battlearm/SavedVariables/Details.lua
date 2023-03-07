@@ -12,25 +12,26 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002085,
+							["totalabsorbed"] = 0.004521,
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["targets"] = {
-								["Crystalline Ice Elemental"] = 10117,
+								["Crystalline Ice Elemental"] = 10183,
 							},
 							["pets"] = {
 							},
 							["aID"] = "4465-036D491F",
-							["end_time"] = 1678183948,
+							["end_time"] = 1678127259,
 							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 10117.002085,
+							["total_without_pet"] = 10183.004521,
 							["damage_from"] = {
+								["Crystalline Ice Elemental"] = true,
 								["Environment (Falling)"] = true,
 							},
 							["colocacao"] = 1,
 							["dps_started"] = false,
-							["total"] = 10117.002085,
+							["total"] = 10183.004521,
 							["friendlyfire"] = {
 							},
 							["friendlyfire_total"] = 0,
@@ -39,61 +40,34 @@ _detalhes_database = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 2,
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 3737,
+										["c_dmg"] = 1549,
 										["g_amt"] = 0,
-										["n_max"] = 791,
+										["n_max"] = 1133,
 										["targets"] = {
-											["Crystalline Ice Elemental"] = 4528,
+											["Crystalline Ice Elemental"] = 5297,
 										},
-										["n_dmg"] = 791,
-										["n_min"] = 791,
+										["n_dmg"] = 3748,
+										["n_min"] = 726,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 4528,
-										["c_max"] = 2515,
+										["counter"] = 6,
+										["total"] = 5297,
+										["c_max"] = 1549,
 										["id"] = 1,
 										["r_dmg"] = 0,
+										["MISS"] = 1,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 1222,
+										["c_min"] = 1549,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 4,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[49924] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 5034,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Crystalline Ice Elemental"] = 5034,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 5034,
-										["c_max"] = 2886,
-										["id"] = 49924,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 2148,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[50401] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -106,12 +80,12 @@ _detalhes_database = {
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 2,
+										["counter"] = 3,
 										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = 50401,
 										["r_dmg"] = 0,
-										["IMMUNE"] = 2,
+										["IMMUNE"] = 3,
 										["spellschool"] = 16,
 										["extra"] = {
 										},
@@ -135,12 +109,12 @@ _detalhes_database = {
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 2,
+										["counter"] = 3,
 										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = 51714,
 										["r_dmg"] = 0,
-										["IMMUNE"] = 2,
+										["IMMUNE"] = 3,
 										["spellschool"] = 16,
 										["extra"] = {
 										},
@@ -152,31 +126,31 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[49941] = {
-										["c_amt"] = 0,
+									[49924] = {
+										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["c_dmg"] = 1753,
 										["g_amt"] = 0,
-										["n_max"] = 555,
+										["n_max"] = 1139,
 										["targets"] = {
-											["Crystalline Ice Elemental"] = 555,
+											["Crystalline Ice Elemental"] = 4886,
 										},
-										["n_dmg"] = 555,
-										["n_min"] = 555,
+										["n_dmg"] = 3133,
+										["n_min"] = 879,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 555,
-										["c_max"] = 0,
-										["id"] = 49941,
+										["counter"] = 4,
+										["total"] = 4886,
+										["c_max"] = 1753,
+										["id"] = 49924,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
 										["c_min"] = 1753,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 3,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -185,20 +159,21 @@ _detalhes_database = {
 							["grupo"] = true,
 							["serial"] = "Player-4465-036D491F",
 							["on_hold"] = false,
-							["last_dps"] = 3335.641966640231,
+							["last_dps"] = 2182.384166538599,
 							["custom"] = 0,
-							["last_event"] = 1678183947,
-							["damage_taken"] = 5151.002085,
-							["start_time"] = 1678183948,
+							["last_event"] = 1678127259,
+							["damage_taken"] = 6679.004521,
+							["start_time"] = 1678127259,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.006618,
-							["serial"] = "Creature-0-5563-571-83-26316-0000870DF6",
+							["totalabsorbed"] = 0.008726,
+							["serial"] = "Creature-0-4480-571-8-26316-0000063019",
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["targets"] = {
+								["Battlearm"] = 333,
 							},
 							["pets"] = {
 							},
@@ -207,13 +182,13 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 0.006618,
+							["total_without_pet"] = 333.008726,
 							["damage_from"] = {
 								["Battlearm"] = true,
 							},
-							["end_time"] = 1678183948,
+							["end_time"] = 1678127259,
 							["dps_started"] = false,
-							["total"] = 0.006618,
+							["total"] = 333.008726,
 							["monster"] = true,
 							["friendlyfire"] = {
 							},
@@ -226,27 +201,26 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 175,
 										["targets"] = {
-											["Battlearm"] = 0,
+											["Battlearm"] = 333,
 										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 333,
+										["n_min"] = 158,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
+										["counter"] = 2,
+										["total"] = 333,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["PARRY"] = 1,
+										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 0,
+										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -256,9 +230,9 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1678183946,
-							["damage_taken"] = 10117.006618,
-							["start_time"] = 1678183948,
+							["last_event"] = 1678127257,
+							["damage_taken"] = 10183.008726,
+							["start_time"] = 1678127259,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [2]
@@ -271,15 +245,16 @@ _detalhes_database = {
 						{
 							["flag_original"] = 1297,
 							["targets_overheal"] = {
+								["Battlearm"] = 1017,
 							},
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
 							["classe"] = "DEATHKNIGHT",
-							["totalover"] = 0.007844,
-							["total_without_pet"] = 1367.007844,
-							["total"] = 1367.007844,
+							["totalover"] = 1017.001486,
+							["total_without_pet"] = 333.001486,
+							["total"] = 333.001486,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
@@ -287,15 +262,15 @@ _detalhes_database = {
 							["colocacao"] = 1,
 							["on_hold"] = false,
 							["serial"] = "Player-4465-036D491F",
-							["totalabsorb"] = 0.007844,
-							["last_hps"] = 450.7114553167339,
+							["totalabsorb"] = 0.001486,
+							["last_hps"] = 71.36765666572221,
 							["targets"] = {
-								["Battlearm"] = 1367,
+								["Battlearm"] = 333,
 							},
-							["totalover_without_pet"] = 0.007844,
-							["healing_taken"] = 1367.007844,
+							["totalover_without_pet"] = 0.001486,
+							["healing_taken"] = 333.001486,
 							["fight_component"] = true,
-							["end_time"] = 1678183948,
+							["end_time"] = 1678127259,
 							["healing_from"] = {
 								["Battlearm"] = true,
 							},
@@ -307,46 +282,48 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
+											["Battlearm"] = 97,
 										},
-										["n_max"] = 108,
+										["n_max"] = 46,
 										["targets"] = {
-											["Battlearm"] = 311,
+											["Battlearm"] = 196,
 										},
-										["n_min"] = 22,
-										["counter"] = 5,
-										["overheal"] = 0,
-										["total"] = 311,
+										["n_min"] = 0,
+										["counter"] = 7,
+										["overheal"] = 97,
+										["total"] = 196,
 										["c_max"] = 0,
 										["id"] = 50475,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 311,
+										["n_curado"] = 196,
 										["totaldenied"] = 0,
-										["n_amt"] = 5,
+										["n_amt"] = 7,
 										["absorbed"] = 0,
 									},
 									[45470] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
+											["Battlearm"] = 920,
 										},
-										["n_max"] = 1056,
+										["n_max"] = 137,
 										["targets"] = {
-											["Battlearm"] = 1056,
+											["Battlearm"] = 137,
 										},
-										["n_min"] = 1056,
+										["n_min"] = 137,
 										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 1056,
+										["overheal"] = 920,
+										["total"] = 137,
 										["c_max"] = 0,
 										["id"] = 45470,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 1056,
+										["n_curado"] = 137,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
 										["absorbed"] = 0,
@@ -355,13 +332,13 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["heal_enemy_amt"] = 0,
-							["start_time"] = 1678183948,
+							["start_time"] = 1678127259,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["aID"] = "4465-036D491F",
-							["totaldenied"] = 0.007844,
+							["totaldenied"] = 0.001486,
 							["delay"] = 0,
-							["last_event"] = 1678183947,
+							["last_event"] = 1678127259,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -370,19 +347,19 @@ _detalhes_database = {
 					["tipo"] = 7,
 					["_ActorTable"] = {
 						{
-							["received"] = 3.807906952316284,
-							["resource"] = 0.007907,
+							["received"] = 2.103350904632568,
+							["resource"] = 0.003351,
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["targets"] = {
-								["Battlearm"] = 3.799999952316284,
+								["Battlearm"] = 2.099999904632568,
 							},
 							["pets"] = {
 							},
 							["powertype"] = 6,
 							["classe"] = "DEATHKNIGHT",
-							["totalover"] = 36.20790680926514,
+							["totalover"] = 57.90335061853028,
 							["fight_component"] = true,
-							["total"] = 3.807906952316284,
+							["total"] = 2.103350904632568,
 							["nome"] = "Battlearm",
 							["spells"] = {
 								["tipo"] = 7,
@@ -390,20 +367,20 @@ _detalhes_database = {
 									[61040] = {
 										["total"] = 0,
 										["id"] = 61040,
-										["totalover"] = 5,
+										["totalover"] = 10,
 										["targets"] = {
 											["Battlearm"] = 0,
 										},
-										["counter"] = 1,
+										["counter"] = 2,
 									},
 									[49924] = {
-										["total"] = 3.799999952316284,
+										["total"] = 2.099999904632568,
 										["id"] = 49924,
-										["totalover"] = 11.19999980926514,
+										["totalover"] = 27.89999961853027,
 										["targets"] = {
-											["Battlearm"] = 3.799999952316284,
+											["Battlearm"] = 2.099999904632568,
 										},
-										["counter"] = 1,
+										["counter"] = 2,
 									},
 									[50163] = {
 										["total"] = 0,
@@ -419,9 +396,9 @@ _detalhes_database = {
 							["grupo"] = true,
 							["aID"] = "4465-036D491F",
 							["flag_original"] = 1297,
-							["last_event"] = 1678183947,
-							["alternatepower"] = 0.007907,
-							["passiveover"] = 0.007907,
+							["last_event"] = 1678127259,
+							["alternatepower"] = 0.003351,
+							["passiveover"] = 0.003351,
 							["serial"] = "Player-4465-036D491F",
 							["tipo"] = 3,
 						}, -- [1]
@@ -440,50 +417,17 @@ _detalhes_database = {
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["grupo"] = true,
 							["spell_cast"] = {
-								[49924] = 1,
+								[49924] = 2,
 							},
-							["buff_uptime"] = 28,
+							["buff_uptime"] = 26,
 							["pets"] = {
 							},
 							["classe"] = "DEATHKNIGHT",
 							["aID"] = "4465-036D491F",
-							["last_event"] = 1678183948,
+							["last_event"] = 1678127259,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[57623] = {
-										["activedamt"] = 1,
-										["id"] = 57623,
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57821] = {
-										["activedamt"] = 1,
-										["id"] = 57821,
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[51124] = {
-										["activedamt"] = 1,
-										["id"] = 51124,
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[60437] = {
 										["activedamt"] = 1,
 										["id"] = 60437,
@@ -495,12 +439,45 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
+									[48266] = {
+										["activedamt"] = 1,
+										["id"] = 48266,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[51124] = {
+										["activedamt"] = 1,
+										["id"] = 51124,
+										["targets"] = {
+										},
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[57821] = {
+										["activedamt"] = 1,
+										["id"] = 57821,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[60229] = {
 										["activedamt"] = 1,
 										["id"] = 60229,
 										["targets"] = {
 										},
-										["uptime"] = 2,
+										["uptime"] = 4,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -517,9 +494,9 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[57940] = {
+									[53365] = {
 										["activedamt"] = 1,
-										["id"] = 57940,
+										["id"] = 53365,
 										["targets"] = {
 										},
 										["uptime"] = 4,
@@ -528,9 +505,9 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[48266] = {
+									[57940] = {
 										["activedamt"] = 1,
-										["id"] = 48266,
+										["id"] = 57940,
 										["targets"] = {
 										},
 										["uptime"] = 4,
@@ -558,8 +535,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Battlearm", -- [1]
 				},
-				["CombatStartedAt"] = 1686403.247,
-				["tempo_start"] = 1678183944,
+				["CombatStartedAt"] = 441545.727,
+				["tempo_start"] = 1678127255,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -567,14 +544,14 @@ _detalhes_database = {
 				["combat_counter"] = 8527,
 				["playing_solo"] = true,
 				["totals"] = {
-					10116.58363099999, -- [1]
-					1366.757019000001, -- [2]
+					10515.68771799997, -- [1]
+					332.5803219999995, -- [2]
 					{
-						-0.001633999999999247, -- [1]
-						[0] = -0.01300800000012714,
+						-0.02538500000000354, -- [1]
+						[0] = -0.05438800000251831,
 						["alternatepower"] = 0,
-						[3] = -0.003115,
-						[6] = 3.780064952316288,
+						[3] = -0.001347,
+						[6] = 2.050250904632566,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
@@ -590,14 +567,14 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["totals_grupo"] = {
-					10117, -- [1]
-					1367, -- [2]
+					10183, -- [1]
+					333, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
-						[6] = 3.799999952316284,
+						[6] = 2.099999904632568,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
@@ -612,12 +589,12 @@ _detalhes_database = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["data_fim"] = "11:12:28",
+				["data_fim"] = "19:27:39",
 				["cleu_timeline"] = {
 				},
 				["enemy"] = "Crystalline Ice Elemental",
-				["TotalElapsedCombatTime"] = 3.033000000054017,
-				["CombatEndedAt"] = 1686406.28,
+				["TotalElapsedCombatTime"] = 4.665999999968335,
+				["CombatEndedAt"] = 441550.393,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -631,818 +608,19 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Battlearm"] = 1367.007844,
+							["Battlearm"] = 333.001486,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Battlearm"] = 10117.002085,
+							["Battlearm"] = 10183.004521,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 1686406.28,
+				["end_time"] = 441550.393,
 				["combat_id"] = 18,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-					["Battlearm"] = {
-						{
-							true, -- [1]
-							3, -- [2]
-							2876, -- [3]
-							1678184097.533, -- [4]
-							21131, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-							true, -- [1]
-							3, -- [2]
-							1640, -- [3]
-							1678184109.678, -- [4]
-							16988, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [2]
-						{
-							true, -- [1]
-							3, -- [2]
-							635, -- [3]
-							1678184111.212, -- [4]
-							17050, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 4,
-					},
-				},
-				["data_inicio"] = "11:12:25",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Crystalline Ice Elemental"] = 1,
-				},
-				["start_time"] = 1686403.247,
-				["TimeData"] = {
-				},
-				["contra"] = "Crystalline Ice Elemental",
-			}, -- [1]
-			{
-				{
-					["combatId"] = 17,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002001,
-							["serial"] = "Player-4465-036D491F",
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Crystalline Ice Elemental"] = 22085,
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-036D491F",
-							["end_time"] = 1678183927,
-							["classe"] = "DEATHKNIGHT",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 22085.002001,
-							["damage_from"] = {
-								["Crystalline Ice Elemental"] = true,
-							},
-							["colocacao"] = 1,
-							["dps_started"] = false,
-							["total"] = 22085.002001,
-							["friendlyfire"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["nome"] = "Battlearm",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 4006,
-										["g_amt"] = 0,
-										["n_max"] = 933,
-										["targets"] = {
-											["Crystalline Ice Elemental"] = 10913,
-										},
-										["n_dmg"] = 6907,
-										["n_min"] = 524,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["ChartData"] = {
-											[8] = 8995,
-											[11] = 10036,
-											[5] = 5590,
-										},
-										["total"] = 10913,
-										["c_max"] = 1935,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1030,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 9,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[66217] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 2013,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Crystalline Ice Elemental"] = 2013,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["ChartData"] = {
-											[11] = 2013,
-										},
-										["total"] = 2013,
-										["c_max"] = 2013,
-										["id"] = 66217,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 2013,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[50401] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Crystalline Ice Elemental"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["ChartData"] = {
-											[8] = 0,
-											[11] = 0,
-											[5] = 0,
-										},
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 50401,
-										["r_dmg"] = 0,
-										["IMMUNE"] = 7,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[51714] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Crystalline Ice Elemental"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["ChartData"] = {
-											[8] = 0,
-											[11] = 0,
-											[5] = 0,
-										},
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 51714,
-										["r_dmg"] = 0,
-										["IMMUNE"] = 7,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[49924] = {
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 7058,
-										["g_amt"] = 0,
-										["n_max"] = 1075,
-										["targets"] = {
-											["Crystalline Ice Elemental"] = 9159,
-										},
-										["n_dmg"] = 2101,
-										["n_min"] = 1026,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["ChartData"] = {
-											[8] = 5330,
-											[11] = 9159,
-											[5] = 5330,
-										},
-										["total"] = 9159,
-										["c_max"] = 2157,
-										["id"] = 49924,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1601,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["last_dps"] = 1685.620668682289,
-							["custom"] = 0,
-							["last_event"] = 1678183926,
-							["damage_taken"] = 1772.002001,
-							["start_time"] = 1678183927,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007959,
-							["damage_from"] = {
-								["Battlearm"] = true,
-							},
-							["targets"] = {
-								["Battlearm"] = 1772,
-							},
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-5563-571-83-26316-0000070CDA",
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "26316",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1772.007959,
-							["end_time"] = 1678183927,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 1772.007959,
-							["classe"] = "UNKNOW",
-							["monster"] = true,
-							["nome"] = "Crystalline Ice Elemental",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 217,
-										["targets"] = {
-											["Battlearm"] = 1310,
-										},
-										["n_dmg"] = 1310,
-										["n_min"] = 155,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 1310,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["PARRY"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[51878] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 462,
-										["targets"] = {
-											["Battlearm"] = 462,
-										},
-										["n_dmg"] = 462,
-										["n_min"] = 462,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 462,
-										["c_max"] = 0,
-										["id"] = 51878,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 22085.007959,
-							["start_time"] = 1678183927,
-							["delay"] = 0,
-							["last_event"] = 1678183925,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 17,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DEATHKNIGHT",
-							["totalover"] = 0.003257,
-							["total_without_pet"] = 579.003257,
-							["total"] = 579.003257,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-036D491F",
-							["totalabsorb"] = 0.003257,
-							["last_hps"] = 44.1919750421291,
-							["targets"] = {
-								["Battlearm"] = 579,
-							},
-							["totalover_without_pet"] = 0.003257,
-							["healing_taken"] = 579.003257,
-							["fight_component"] = true,
-							["end_time"] = 1678183927,
-							["healing_from"] = {
-								["Battlearm"] = true,
-							},
-							["nome"] = "Battlearm",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[50475] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 86,
-										["targets"] = {
-											["Battlearm"] = 579,
-										},
-										["n_min"] = 8,
-										["counter"] = 15,
-										["overheal"] = 0,
-										["total"] = 579,
-										["c_max"] = 0,
-										["id"] = 50475,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 579,
-										["totaldenied"] = 0,
-										["n_amt"] = 15,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1678183927,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "4465-036D491F",
-							["totaldenied"] = 0.003257,
-							["delay"] = 0,
-							["last_event"] = 1678183926,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 17,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["received"] = 25.004562,
-							["resource"] = 0.004562,
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Battlearm"] = 25,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 6,
-							["classe"] = "DEATHKNIGHT",
-							["totalover"] = 60.004562,
-							["fight_component"] = true,
-							["total"] = 25.004562,
-							["nome"] = "Battlearm",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[61040] = {
-										["total"] = 5,
-										["id"] = 61040,
-										["totalover"] = 10,
-										["targets"] = {
-											["Battlearm"] = 5,
-										},
-										["counter"] = 3,
-									},
-									[49924] = {
-										["total"] = 0,
-										["id"] = 49924,
-										["totalover"] = 30,
-										["targets"] = {
-											["Battlearm"] = 0,
-										},
-										["counter"] = 2,
-									},
-									[50163] = {
-										["total"] = 20,
-										["id"] = 50163,
-										["totalover"] = 20,
-										["targets"] = {
-											["Battlearm"] = 20,
-										},
-										["counter"] = 2,
-									},
-								},
-							},
-							["grupo"] = true,
-							["aID"] = "4465-036D491F",
-							["flag_original"] = 1297,
-							["last_event"] = 1678183926,
-							["alternatepower"] = 0.004562,
-							["passiveover"] = 0.004562,
-							["serial"] = "Player-4465-036D491F",
-							["tipo"] = 3,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 17,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[49560] = {
-										["activedamt"] = 0,
-										["id"] = 49560,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["buff_uptime"] = 80,
-							["aID"] = "4465-036D491F",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[57623] = {
-										["activedamt"] = 1,
-										["id"] = 57623,
-										["targets"] = {
-										},
-										["uptime"] = 14,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57821] = {
-										["activedamt"] = 1,
-										["id"] = 57821,
-										["targets"] = {
-										},
-										["uptime"] = 14,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[51124] = {
-										["activedamt"] = 2,
-										["id"] = 51124,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[55610] = {
-										["activedamt"] = 1,
-										["id"] = 55610,
-										["targets"] = {
-										},
-										["uptime"] = 14,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57940] = {
-										["activedamt"] = 1,
-										["id"] = 57940,
-										["targets"] = {
-										},
-										["uptime"] = 14,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[48266] = {
-										["activedamt"] = 1,
-										["id"] = 48266,
-										["targets"] = {
-										},
-										["uptime"] = 14,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 3,
-							["nome"] = "Battlearm",
-							["grupo"] = true,
-							["spell_cast"] = {
-								[49924] = 2,
-								[56815] = 1,
-								[49576] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["last_event"] = 1678183927,
-							["pets"] = {
-							},
-							["classe"] = "DEATHKNIGHT",
-							["serial"] = "Player-4465-036D491F",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["monster"] = true,
-							["nome"] = "Crystalline Ice Elemental",
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["flag_original"] = 68168,
-							["spell_cast"] = {
-								[51878] = 2,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-5563-571-83-26316-0000070CDA",
-							["aID"] = "26316",
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 17,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Battlearm"] = "Player-4465-036D491F",
-				},
-				["raid_roster_indexed"] = {
-					"Battlearm", -- [1]
-				},
-				["CombatStartedAt"] = 1686371.427,
-				["tempo_start"] = 1678183913,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 8526,
-				["playing_solo"] = true,
-				["totals"] = {
-					23857, -- [1]
-					579, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 25,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					22085, -- [1]
-					579, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 25,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "11:12:08",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Crystalline Ice Elemental",
-				["TotalElapsedCombatTime"] = 14.30199999990873,
-				["CombatEndedAt"] = 1686385.729,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Battlearm"] = 579.003257,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Battlearm"] = 22085.002001,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 1686385.729,
-				["combat_id"] = 17,
 				["cleu_events"] = {
 					["n"] = 1,
 				},
@@ -1547,44 +725,44 @@ _detalhes_database = {
 						["n"] = 4,
 					},
 				},
-				["data_inicio"] = "11:11:53",
+				["data_inicio"] = "19:27:35",
 				["CombatSkillCache"] = {
 				},
 				["frags"] = {
-					["Crystalline Ice Elemental"] = 2,
+					["Crystalline Ice Elemental"] = 1,
 				},
-				["start_time"] = 1686371.427,
+				["start_time"] = 441545.727,
 				["TimeData"] = {
 				},
 				["contra"] = "Crystalline Ice Elemental",
-			}, -- [2]
+			}, -- [1]
 			{
 				{
-					["combatId"] = 16,
+					["combatId"] = 17,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003485,
+							["totalabsorbed"] = 0.005013,
 							["serial"] = "Player-4465-036D491F",
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["targets"] = {
-								["Crystalline Ice Elemental"] = 11528,
+								["Crystalline Ice Elemental"] = 12234,
 							},
 							["pets"] = {
 							},
 							["aID"] = "4465-036D491F",
-							["end_time"] = 1678183888,
+							["end_time"] = 1678127250,
 							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 11528.003485,
+							["total_without_pet"] = 12234.005013,
 							["damage_from"] = {
 								["Crystalline Ice Elemental"] = true,
 							},
 							["colocacao"] = 1,
 							["dps_started"] = false,
-							["total"] = 11528.003485,
+							["total"] = 12234.005013,
 							["friendlyfire"] = {
 							},
 							["friendlyfire_total"] = 0,
@@ -1593,27 +771,28 @@ _detalhes_database = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 2,
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 2920,
+										["c_dmg"] = 1552,
 										["g_amt"] = 0,
-										["n_max"] = 1134,
+										["n_max"] = 626,
 										["targets"] = {
-											["Crystalline Ice Elemental"] = 5463,
+											["Crystalline Ice Elemental"] = 3378,
 										},
-										["n_dmg"] = 2543,
-										["n_min"] = 529,
+										["n_dmg"] = 1826,
+										["n_min"] = 589,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 5463,
-										["c_max"] = 1704,
+										["counter"] = 6,
+										["total"] = 3378,
+										["c_max"] = 1552,
 										["id"] = 1,
 										["r_dmg"] = 0,
+										["MISS"] = 2,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 1216,
+										["c_min"] = 1552,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
@@ -1632,12 +811,711 @@ _detalhes_database = {
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 5,
+										["counter"] = 6,
 										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = 50401,
 										["r_dmg"] = 0,
-										["IMMUNE"] = 5,
+										["IMMUNE"] = 6,
+										["spellschool"] = 16,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[66217] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 2573,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Crystalline Ice Elemental"] = 2573,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 2573,
+										["c_max"] = 2573,
+										["id"] = 66217,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 2573,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[51714] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Crystalline Ice Elemental"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 51714,
+										["r_dmg"] = 0,
+										["IMMUNE"] = 6,
+										["spellschool"] = 16,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[49924] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1255,
+										["targets"] = {
+											["Crystalline Ice Elemental"] = 4167,
+										},
+										["n_dmg"] = 4167,
+										["n_min"] = 798,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 4167,
+										["c_max"] = 0,
+										["id"] = 49924,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[56815] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2116,
+										["targets"] = {
+											["Crystalline Ice Elemental"] = 2116,
+										},
+										["n_dmg"] = 2116,
+										["n_min"] = 2116,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 2116,
+										["c_max"] = 0,
+										["id"] = 56815,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["last_dps"] = 2211.09796005951,
+							["custom"] = 0,
+							["last_event"] = 1678127255,
+							["damage_taken"] = 208.005013,
+							["start_time"] = 1678127250,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004753,
+							["damage_from"] = {
+								["Battlearm"] = true,
+							},
+							["targets"] = {
+								["Battlearm"] = 208,
+							},
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-4480-571-8-26316-0000062E54",
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["aID"] = "26316",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 208.004753,
+							["end_time"] = 1678127250,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["total"] = 208.004753,
+							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["nome"] = "Crystalline Ice Elemental",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 208,
+										["targets"] = {
+											["Battlearm"] = 208,
+										},
+										["n_dmg"] = 208,
+										["n_min"] = 208,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 208,
+										["c_max"] = 0,
+										["a_dmg"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 12234.004753,
+							["start_time"] = 1678127250,
+							["delay"] = 0,
+							["last_event"] = 1678127249,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 17,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+								["Battlearm"] = 662,
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "DEATHKNIGHT",
+							["totalover"] = 662.004757,
+							["total_without_pet"] = 208.004757,
+							["total"] = 208.004757,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-036D491F",
+							["totalabsorb"] = 0.004757,
+							["last_hps"] = 37.59348581242681,
+							["targets"] = {
+								["Battlearm"] = 208,
+							},
+							["totalover_without_pet"] = 0.004757,
+							["healing_taken"] = 208.004757,
+							["fight_component"] = true,
+							["end_time"] = 1678127250,
+							["healing_from"] = {
+								["Battlearm"] = true,
+							},
+							["nome"] = "Battlearm",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[50475] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Battlearm"] = 93,
+										},
+										["n_max"] = 50,
+										["targets"] = {
+											["Battlearm"] = 143,
+										},
+										["n_min"] = 0,
+										["counter"] = 7,
+										["overheal"] = 93,
+										["total"] = 143,
+										["c_max"] = 0,
+										["id"] = 50475,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 143,
+										["totaldenied"] = 0,
+										["n_amt"] = 7,
+										["absorbed"] = 0,
+									},
+									[53365] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Battlearm"] = 569,
+										},
+										["n_max"] = 65,
+										["targets"] = {
+											["Battlearm"] = 65,
+										},
+										["n_min"] = 65,
+										["counter"] = 1,
+										["overheal"] = 569,
+										["total"] = 65,
+										["c_max"] = 0,
+										["id"] = 53365,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 65,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1678127250,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-036D491F",
+							["totaldenied"] = 0.004757,
+							["delay"] = 0,
+							["last_event"] = 1678127250,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 17,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["received"] = 35.30816801192093,
+							["resource"] = 0.008168,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Battlearm"] = 35.30000001192093,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 6,
+							["classe"] = "DEATHKNIGHT",
+							["totalover"] = 24.70816780926514,
+							["fight_component"] = true,
+							["total"] = 35.30816801192093,
+							["nome"] = "Battlearm",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[61040] = {
+										["total"] = 0.300000011920929,
+										["id"] = 61040,
+										["totalover"] = 9.699999809265137,
+										["targets"] = {
+											["Battlearm"] = 0.300000011920929,
+										},
+										["counter"] = 2,
+									},
+									[49924] = {
+										["total"] = 15,
+										["id"] = 49924,
+										["totalover"] = 15,
+										["targets"] = {
+											["Battlearm"] = 15,
+										},
+										["counter"] = 2,
+									},
+									[50163] = {
+										["total"] = 20,
+										["id"] = 50163,
+										["totalover"] = 0,
+										["targets"] = {
+											["Battlearm"] = 20,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["grupo"] = true,
+							["aID"] = "4465-036D491F",
+							["flag_original"] = 1297,
+							["last_event"] = 1678127250,
+							["alternatepower"] = 0.008168,
+							["passiveover"] = 0.008168,
+							["serial"] = "Player-4465-036D491F",
+							["tipo"] = 3,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 17,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[49560] = {
+										["activedamt"] = -1,
+										["id"] = 49560,
+										["targets"] = {
+										},
+										["actived_at"] = 1678127246,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["buff_uptime"] = 33,
+							["aID"] = "4465-036D491F",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[60437] = {
+										["activedamt"] = 1,
+										["id"] = 60437,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[48266] = {
+										["activedamt"] = 1,
+										["id"] = 48266,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[57821] = {
+										["activedamt"] = 1,
+										["id"] = 57821,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[60229] = {
+										["activedamt"] = 1,
+										["id"] = 60229,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[55610] = {
+										["activedamt"] = 1,
+										["id"] = 55610,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[53365] = {
+										["activedamt"] = 1,
+										["id"] = 53365,
+										["targets"] = {
+										},
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[57940] = {
+										["activedamt"] = 1,
+										["id"] = 57940,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 0,
+							["nome"] = "Battlearm",
+							["grupo"] = true,
+							["spell_cast"] = {
+								[49924] = 2,
+								[56815] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["last_event"] = 1678127250,
+							["pets"] = {
+							},
+							["classe"] = "DEATHKNIGHT",
+							["serial"] = "Player-4465-036D491F",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 17,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Battlearm"] = "Player-4465-036D491F",
+				},
+				["raid_roster_indexed"] = {
+					"Battlearm", -- [1]
+				},
+				["tempo_start"] = 1678127244,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Crystalline Ice Elemental",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					12442, -- [1]
+					208, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 35.30000001192093,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["TotalElapsedCombatTime"] = 441541.077,
+				["combat_counter"] = 8526,
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Battlearm"] = 208.004757,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Battlearm"] = 12234.005013,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 441541.077,
+				["player_last_events"] = {
+				},
+				["instance_type"] = "none",
+				["CombatEndedAt"] = 441541.077,
+				["data_inicio"] = "19:27:24",
+				["totals_grupo"] = {
+					12234, -- [1]
+					208, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 35.30000001192093,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["data_fim"] = "19:27:30",
+				["combat_id"] = 17,
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Crystalline Ice Elemental"] = 1,
+				},
+				["start_time"] = 441535.177,
+				["TimeData"] = {
+				},
+				["contra"] = "Crystalline Ice Elemental",
+			}, -- [2]
+			{
+				{
+					["combatId"] = 16,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007151,
+							["serial"] = "Player-4465-036D491F",
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Crystalline Ice Elemental"] = 13130,
+							},
+							["pets"] = {
+							},
+							["aID"] = "4465-036D491F",
+							["end_time"] = 1678127232,
+							["classe"] = "DEATHKNIGHT",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 13130.007151,
+							["damage_from"] = {
+								["Crystalline Ice Elemental"] = true,
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 13130.007151,
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["nome"] = "Battlearm",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 2079,
+										["g_amt"] = 0,
+										["n_max"] = 797,
+										["targets"] = {
+											["Crystalline Ice Elemental"] = 3652,
+										},
+										["n_dmg"] = 1573,
+										["n_min"] = 776,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 3652,
+										["c_max"] = 1058,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 1021,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[50401] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Crystalline Ice Elemental"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 50401,
+										["r_dmg"] = 0,
+										["IMMUNE"] = 4,
 										["spellschool"] = 16,
 										["extra"] = {
 										},
@@ -1654,15 +1532,15 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 959,
+										["n_max"] = 947,
 										["targets"] = {
-											["Crystalline Ice Elemental"] = 959,
+											["Crystalline Ice Elemental"] = 947,
 										},
-										["n_dmg"] = 959,
-										["n_min"] = 959,
+										["n_dmg"] = 947,
+										["n_min"] = 947,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 959,
+										["total"] = 947,
 										["c_max"] = 0,
 										["id"] = 66217,
 										["r_dmg"] = 0,
@@ -1689,12 +1567,12 @@ _detalhes_database = {
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 5,
+										["counter"] = 4,
 										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = 51714,
 										["r_dmg"] = 0,
-										["IMMUNE"] = 5,
+										["IMMUNE"] = 4,
 										["spellschool"] = 16,
 										["extra"] = {
 										},
@@ -1707,58 +1585,58 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 									[49924] = {
-										["c_amt"] = 1,
+										["c_amt"] = 2,
 										["b_amt"] = 0,
-										["c_dmg"] = 2210,
+										["c_dmg"] = 3252,
 										["g_amt"] = 0,
-										["n_max"] = 898,
+										["n_max"] = 1071,
 										["targets"] = {
-											["Crystalline Ice Elemental"] = 3108,
+											["Crystalline Ice Elemental"] = 5291,
 										},
-										["n_dmg"] = 898,
-										["n_min"] = 898,
+										["n_dmg"] = 2039,
+										["n_min"] = 968,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 3108,
-										["c_max"] = 2210,
+										["counter"] = 4,
+										["total"] = 5291,
+										["c_max"] = 1647,
 										["id"] = 49924,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 2210,
+										["c_min"] = 1605,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[56815] = {
-										["c_amt"] = 0,
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 3240,
 										["g_amt"] = 0,
-										["n_max"] = 1998,
+										["n_max"] = 0,
 										["targets"] = {
-											["Crystalline Ice Elemental"] = 1998,
+											["Crystalline Ice Elemental"] = 3240,
 										},
-										["n_dmg"] = 1998,
-										["n_min"] = 1998,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 1998,
-										["c_max"] = 0,
+										["total"] = 3240,
+										["c_max"] = 3240,
 										["id"] = 56815,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 3240,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 0,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -1766,37 +1644,35 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["on_hold"] = false,
-							["last_dps"] = 2181.681204586017,
+							["last_dps"] = 4103.127234672573,
 							["custom"] = 0,
-							["last_event"] = 1678183913,
-							["damage_taken"] = 759.003485,
-							["start_time"] = 1678183888,
+							["last_event"] = 1678127231,
+							["damage_taken"] = 164.007151,
+							["start_time"] = 1678127232,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00574,
+							["totalabsorbed"] = 0.005369,
 							["damage_from"] = {
 								["Battlearm"] = true,
-								["Endemia"] = true,
 							},
 							["targets"] = {
-								["Battlearm"] = 759,
-								["Endemia"] = 303,
+								["Battlearm"] = 164,
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5563-571-83-26316-0000070DC9",
+							["serial"] = "Creature-0-4480-571-8-26316-0000062E93",
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["aID"] = "26316",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 1062.00574,
-							["end_time"] = 1678183888,
+							["total_without_pet"] = 164.005369,
+							["end_time"] = 1678127232,
 							["fight_component"] = true,
 							["dps_started"] = false,
-							["total"] = 1062.00574,
+							["total"] = 164.005369,
 							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Crystalline Ice Elemental",
@@ -1808,762 +1684,16 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 179,
+										["n_max"] = 164,
 										["targets"] = {
-											["Battlearm"] = 343,
-											["Endemia"] = 303,
+											["Battlearm"] = 164,
 										},
-										["n_dmg"] = 646,
-										["n_min"] = 147,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 646,
-										["c_max"] = 0,
-										["DODGE"] = 2,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[51878] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 416,
-										["targets"] = {
-											["Battlearm"] = 416,
-											["Endemia"] = 0,
-										},
-										["n_dmg"] = 416,
-										["n_min"] = 416,
+										["n_dmg"] = 164,
+										["n_min"] = 164,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 416,
+										["total"] = 164,
 										["c_max"] = 0,
-										["id"] = 51878,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 22539.00574,
-							["start_time"] = 1678183888,
-							["delay"] = 0,
-							["last_event"] = 1678183913,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 16,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DEATHKNIGHT",
-							["totalover"] = 0.005006,
-							["total_without_pet"] = 323.005006,
-							["total"] = 323.005006,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-036D491F",
-							["totalabsorb"] = 0.005006,
-							["last_hps"] = 66.58524139319474,
-							["targets"] = {
-								["Battlearm"] = 323,
-							},
-							["totalover_without_pet"] = 0.005006,
-							["healing_taken"] = 323.005006,
-							["fight_component"] = true,
-							["end_time"] = 1678183888,
-							["healing_from"] = {
-								["Battlearm"] = true,
-							},
-							["nome"] = "Battlearm",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[50475] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 89,
-										["targets"] = {
-											["Battlearm"] = 323,
-										},
-										["n_min"] = 5,
-										["counter"] = 7,
-										["overheal"] = 0,
-										["total"] = 323,
-										["c_max"] = 0,
-										["id"] = 50475,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 323,
-										["totaldenied"] = 0,
-										["n_amt"] = 7,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1678183888,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "4465-036D491F",
-							["totaldenied"] = 0.005006,
-							["delay"] = 0,
-							["last_event"] = 1678183888,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 16,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["received"] = 48.30339219073486,
-							["resource"] = 0.003392,
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Battlearm"] = 48.30000019073486,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 6,
-							["classe"] = "DEATHKNIGHT",
-							["totalover"] = 6.703392047683716,
-							["fight_component"] = true,
-							["total"] = 48.30339219073486,
-							["nome"] = "Battlearm",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[61040] = {
-										["total"] = 0,
-										["id"] = 61040,
-										["totalover"] = 5,
-										["targets"] = {
-											["Battlearm"] = 0,
-										},
-										["counter"] = 1,
-									},
-									[49924] = {
-										["total"] = 29.40000057220459,
-										["id"] = 49924,
-										["totalover"] = 0.6000000238418579,
-										["targets"] = {
-											["Battlearm"] = 29.40000057220459,
-										},
-										["counter"] = 2,
-									},
-									[50163] = {
-										["total"] = 18.89999961853027,
-										["id"] = 50163,
-										["totalover"] = 1.100000023841858,
-										["targets"] = {
-											["Battlearm"] = 18.89999961853027,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
-							["grupo"] = true,
-							["aID"] = "4465-036D491F",
-							["flag_original"] = 1297,
-							["last_event"] = 1678183913,
-							["alternatepower"] = 0.003392,
-							["passiveover"] = 0.003392,
-							["serial"] = "Player-4465-036D491F",
-							["tipo"] = 3,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 16,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["fight_component"] = true,
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["nome"] = "Battlearm",
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["grupo"] = true,
-							["spell_cast"] = {
-								[49924] = 1,
-								[56815] = 1,
-							},
-							["buff_uptime"] = 35,
-							["pets"] = {
-							},
-							["classe"] = "DEATHKNIGHT",
-							["aID"] = "4465-036D491F",
-							["last_event"] = 1678183888,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[57623] = {
-										["activedamt"] = 1,
-										["id"] = 57623,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[60437] = {
-										["activedamt"] = 1,
-										["id"] = 60437,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[53365] = {
-										["activedamt"] = 1,
-										["id"] = 53365,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[48266] = {
-										["activedamt"] = 1,
-										["id"] = 48266,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[60229] = {
-										["activedamt"] = 1,
-										["id"] = 60229,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[55610] = {
-										["activedamt"] = 1,
-										["id"] = 55610,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[51124] = {
-										["activedamt"] = 1,
-										["id"] = 51124,
-										["targets"] = {
-										},
-										["uptime"] = 1,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57821] = {
-										["activedamt"] = 1,
-										["id"] = 57821,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57940] = {
-										["activedamt"] = 1,
-										["id"] = 57940,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-036D491F",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["monster"] = true,
-							["nome"] = "Crystalline Ice Elemental",
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["flag_original"] = 68168,
-							["spell_cast"] = {
-								[51878] = 1,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-5563-571-83-26316-0000070DC9",
-							["aID"] = "26316",
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 16,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Battlearm"] = "Player-4465-036D491F",
-				},
-				["raid_roster_indexed"] = {
-					"Battlearm", -- [1]
-				},
-				["CombatStartedAt"] = 1686341.711,
-				["tempo_start"] = 1678183883,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 8525,
-				["playing_solo"] = true,
-				["totals"] = {
-					12589.99103, -- [1]
-					323, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 48.29376219073487,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					11528, -- [1]
-					323, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 48.30000019073486,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "11:11:29",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Crystalline Ice Elemental",
-				["TotalElapsedCombatTime"] = 5.182999999960885,
-				["CombatEndedAt"] = 1686346.894,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Battlearm"] = 323.005006,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Battlearm"] = 11528.003485,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 1686346.894,
-				["combat_id"] = 16,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "11:11:24",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Crystalline Ice Elemental"] = 1,
-				},
-				["start_time"] = 1686341.61,
-				["TimeData"] = {
-				},
-				["contra"] = "Crystalline Ice Elemental",
-			}, -- [3]
-			{
-				{
-					["combatId"] = 15,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005145,
-							["serial"] = "Player-4465-036D491F",
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Crystalline Ice Elemental"] = 20710,
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-036D491F",
-							["end_time"] = 1678183882,
-							["classe"] = "DEATHKNIGHT",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 20710.005145,
-							["damage_from"] = {
-								["Crystalline Ice Elemental"] = true,
-							},
-							["colocacao"] = 1,
-							["dps_started"] = false,
-							["total"] = 20710.005145,
-							["friendlyfire"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["nome"] = "Battlearm",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 4937,
-										["g_amt"] = 0,
-										["n_max"] = 970,
-										["targets"] = {
-											["Crystalline Ice Elemental"] = 8570,
-										},
-										["n_dmg"] = 3633,
-										["n_min"] = 542,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["ChartData"] = {
-											[5] = 6417,
-											[8] = 8028,
-										},
-										["total"] = 8570,
-										["c_max"] = 2084,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 1222,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[52212] = {
-										["c_amt"] = 7,
-										["b_amt"] = 0,
-										["c_dmg"] = 4727,
-										["g_amt"] = 0,
-										["n_max"] = 341,
-										["targets"] = {
-											["Crystalline Ice Elemental"] = 8911,
-										},
-										["n_dmg"] = 4184,
-										["n_min"] = 316,
-										["g_dmg"] = 0,
-										["counter"] = 20,
-										["ChartData"] = {
-											[5] = 6250,
-											[8] = 8595,
-										},
-										["total"] = 8911,
-										["c_max"] = 711,
-										["id"] = 52212,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 661,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 13,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[50401] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Crystalline Ice Elemental"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["ChartData"] = {
-											[5] = 0,
-											[8] = 0,
-										},
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 50401,
-										["r_dmg"] = 0,
-										["IMMUNE"] = 5,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[55268] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Crystalline Ice Elemental"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 55268,
-										["r_dmg"] = 0,
-										["IMMUNE"] = 2,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[51714] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Crystalline Ice Elemental"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["ChartData"] = {
-											[5] = 0,
-											[8] = 0,
-										},
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 51714,
-										["r_dmg"] = 0,
-										["IMMUNE"] = 5,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[49924] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 2363,
-										["g_amt"] = 0,
-										["n_max"] = 866,
-										["targets"] = {
-											["Crystalline Ice Elemental"] = 3229,
-										},
-										["n_dmg"] = 866,
-										["n_min"] = 866,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["ChartData"] = {
-											[8] = 3229,
-										},
-										["total"] = 3229,
-										["c_max"] = 2363,
-										["id"] = 49924,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 2363,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["last_dps"] = 1959.504697202877,
-							["custom"] = 0,
-							["last_event"] = 1678183882,
-							["damage_taken"] = 1686.005145,
-							["start_time"] = 1678183882,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.006074,
-							["damage_from"] = {
-								["Battlearm"] = true,
-								["Endemia"] = true,
-							},
-							["targets"] = {
-								["Battlearm"] = 1686,
-								["Endemia"] = 181,
-							},
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-5563-571-83-26316-0000070C87",
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "26316",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1867.006074,
-							["end_time"] = 1678183882,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 1867.006074,
-							["classe"] = "UNKNOW",
-							["monster"] = true,
-							["nome"] = "Crystalline Ice Elemental",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 205,
-										["targets"] = {
-											["Battlearm"] = 1231,
-											["Endemia"] = 181,
-										},
-										["n_dmg"] = 1412,
-										["n_min"] = 150,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 1412,
-										["c_max"] = 0,
-										["DODGE"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["a_dmg"] = 0,
@@ -2574,37 +1704,10 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 8,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[51878] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 455,
-										["targets"] = {
-											["Battlearm"] = 455,
-										},
-										["n_dmg"] = 455,
-										["n_min"] = 455,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 455,
-										["c_max"] = 0,
-										["id"] = 51878,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
 										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
-									},
+									}, -- [1]
 								},
 							},
 							["friendlyfire"] = {
@@ -2614,30 +1717,30 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 31247.006074,
-							["start_time"] = 1678183882,
+							["damage_taken"] = 13130.005369,
+							["start_time"] = 1678127232,
 							["delay"] = 0,
-							["last_event"] = 1678183881,
+							["last_event"] = 1678127231,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 15,
+					["combatId"] = 16,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["targets_overheal"] = {
-								["Battlearm"] = 699,
+								["Battlearm"] = 228,
 							},
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
 							["classe"] = "DEATHKNIGHT",
-							["totalover"] = 699.002888,
-							["total_without_pet"] = 360.002888,
-							["total"] = 360.002888,
+							["totalover"] = 228.007172,
+							["total_without_pet"] = 16.007172,
+							["total"] = 16.007172,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
@@ -2645,15 +1748,15 @@ _detalhes_database = {
 							["colocacao"] = 1,
 							["on_hold"] = false,
 							["serial"] = "Player-4465-036D491F",
-							["totalabsorb"] = 0.002888,
-							["last_hps"] = 34.06215233186034,
+							["totalabsorb"] = 0.007172,
+							["last_hps"] = 5.002241249981802,
 							["targets"] = {
-								["Battlearm"] = 360,
+								["Battlearm"] = 16,
 							},
-							["totalover_without_pet"] = 0.002888,
-							["healing_taken"] = 360.002888,
+							["totalover_without_pet"] = 0.007172,
+							["healing_taken"] = 16.007172,
 							["fight_component"] = true,
-							["end_time"] = 1678183882,
+							["end_time"] = 1678127232,
 							["healing_from"] = {
 								["Battlearm"] = true,
 							},
@@ -2661,77 +1764,52 @@ _detalhes_database = {
 							["spells"] = {
 								["tipo"] = 3,
 								["_ActorTable"] = {
-									[53365] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Battlearm"] = 634,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Battlearm"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 634,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 53365,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
 									[50475] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Battlearm"] = 65,
+											["Battlearm"] = 228,
 										},
-										["n_max"] = 95,
+										["n_max"] = 16,
 										["targets"] = {
-											["Battlearm"] = 360,
+											["Battlearm"] = 16,
 										},
-										["n_min"] = 10,
-										["counter"] = 9,
-										["overheal"] = 65,
-										["total"] = 360,
+										["n_min"] = 16,
+										["counter"] = 7,
+										["overheal"] = 228,
+										["total"] = 16,
 										["c_max"] = 0,
 										["id"] = 50475,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 360,
+										["n_curado"] = 16,
 										["totaldenied"] = 0,
-										["n_amt"] = 9,
+										["n_amt"] = 7,
 										["absorbed"] = 0,
 									},
 								},
 							},
 							["grupo"] = true,
 							["heal_enemy_amt"] = 0,
-							["start_time"] = 1678183882,
+							["start_time"] = 1678127232,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["aID"] = "4465-036D491F",
-							["totaldenied"] = 0.002888,
+							["totaldenied"] = 0.007172,
 							["delay"] = 0,
-							["last_event"] = 1678183882,
+							["last_event"] = 1678127231,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 15,
+					["combatId"] = 16,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 						{
-							["received"] = 60.004288,
-							["resource"] = 0.004288,
+							["received"] = 60.007133,
+							["resource"] = 0.007133,
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["targets"] = {
 								["Battlearm"] = 60,
@@ -2740,55 +1818,55 @@ _detalhes_database = {
 							},
 							["powertype"] = 6,
 							["classe"] = "DEATHKNIGHT",
-							["totalover"] = 0.004288,
+							["totalover"] = 0.007133,
 							["fight_component"] = true,
-							["total"] = 60.004288,
+							["total"] = 60.007133,
 							["nome"] = "Battlearm",
 							["spells"] = {
 								["tipo"] = 7,
 								["_ActorTable"] = {
 									[61040] = {
-										["total"] = 5,
+										["total"] = 10,
 										["id"] = 61040,
 										["totalover"] = 0,
 										["targets"] = {
-											["Battlearm"] = 5,
+											["Battlearm"] = 10,
 										},
-										["counter"] = 1,
+										["counter"] = 2,
 									},
 									[49924] = {
-										["total"] = 15,
+										["total"] = 30,
 										["id"] = 49924,
 										["totalover"] = 0,
 										["targets"] = {
-											["Battlearm"] = 15,
+											["Battlearm"] = 30,
 										},
-										["counter"] = 1,
+										["counter"] = 2,
 									},
 									[50163] = {
-										["total"] = 40,
+										["total"] = 20,
 										["id"] = 50163,
 										["totalover"] = 0,
 										["targets"] = {
-											["Battlearm"] = 40,
+											["Battlearm"] = 20,
 										},
-										["counter"] = 2,
+										["counter"] = 1,
 									},
 								},
 							},
 							["grupo"] = true,
 							["aID"] = "4465-036D491F",
 							["flag_original"] = 1297,
-							["last_event"] = 1678183882,
-							["alternatepower"] = 0.004288,
-							["passiveover"] = 0.004288,
+							["last_event"] = 1678127231,
+							["alternatepower"] = 0.007133,
+							["passiveover"] = 0.007133,
 							["serial"] = "Player-4465-036D491F",
 							["tipo"] = 3,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 15,
+					["combatId"] = 16,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -2796,13 +1874,14 @@ _detalhes_database = {
 							["debuff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[49938] = {
-										["activedamt"] = -2,
-										["id"] = 49938,
+									[56222] = {
+										["activedamt"] = -1,
+										["id"] = 56222,
 										["targets"] = {
 										},
-										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["actived_at"] = 1678127228,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -2810,39 +1889,28 @@ _detalhes_database = {
 								},
 							},
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["buff_uptime"] = 64,
+							["buff_uptime"] = 20,
 							["aID"] = "4465-036D491F",
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[57623] = {
+									[48266] = {
 										["activedamt"] = 1,
-										["id"] = 57623,
+										["id"] = 48266,
 										["targets"] = {
 										},
-										["uptime"] = 11,
+										["uptime"] = 4,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[57821] = {
+									[51124] = {
 										["activedamt"] = 1,
-										["id"] = 57821,
+										["id"] = 51124,
 										["targets"] = {
 										},
-										["uptime"] = 11,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57940] = {
-										["activedamt"] = 1,
-										["id"] = 57940,
-										["targets"] = {
-										},
-										["uptime"] = 11,
+										["uptime"] = 4,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -2853,29 +1921,29 @@ _detalhes_database = {
 										["id"] = 55610,
 										["targets"] = {
 										},
-										["uptime"] = 11,
+										["uptime"] = 4,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[53365] = {
+									[57821] = {
 										["activedamt"] = 1,
-										["id"] = 53365,
+										["id"] = 57821,
 										["targets"] = {
 										},
-										["uptime"] = 9,
+										["uptime"] = 4,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[48266] = {
+									[57940] = {
 										["activedamt"] = 1,
-										["id"] = 48266,
+										["id"] = 57940,
 										["targets"] = {
 										},
-										["uptime"] = 11,
+										["uptime"] = 4,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -2884,45 +1952,28 @@ _detalhes_database = {
 								},
 							},
 							["fight_component"] = true,
-							["debuff_uptime"] = 8,
+							["debuff_uptime"] = 0,
 							["nome"] = "Battlearm",
 							["grupo"] = true,
 							["spell_cast"] = {
-								[49924] = 1,
-								[55268] = 1,
+								[49924] = 2,
+								[56815] = 1,
 							},
 							["debuff_uptime_targets"] = {
 							},
 							["buff_uptime_targets"] = {
 							},
-							["last_event"] = 1678183882,
+							["last_event"] = 1678127232,
 							["pets"] = {
 							},
 							["classe"] = "DEATHKNIGHT",
 							["serial"] = "Player-4465-036D491F",
 							["tipo"] = 4,
 						}, -- [1]
-						{
-							["monster"] = true,
-							["nome"] = "Crystalline Ice Elemental",
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[51878] = 1,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-5563-571-83-26316-0001070C6B",
-							["aID"] = "26316",
-						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 15,
+					["combatId"] = 16,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -2933,23 +1984,23 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Battlearm", -- [1]
 				},
-				["CombatStartedAt"] = 1686329.876,
-				["tempo_start"] = 1678183871,
+				["CombatStartedAt"] = 441534.51,
+				["tempo_start"] = 1678127228,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 8524,
+				["combat_counter"] = 8525,
 				["playing_solo"] = true,
 				["totals"] = {
-					22576.996344, -- [1]
-					359.998841, -- [2]
+					13294, -- [1]
+					16, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
-						[6] = 59.998939,
+						[6] = 60,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
@@ -2965,8 +2016,8 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["totals_grupo"] = {
-					20710, -- [1]
-					360, -- [2]
+					13130, -- [1]
+					16, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -2987,12 +2038,12 @@ _detalhes_database = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["data_fim"] = "11:11:23",
+				["data_fim"] = "19:27:12",
 				["cleu_timeline"] = {
 				},
 				["enemy"] = "Crystalline Ice Elemental",
-				["TotalElapsedCombatTime"] = 11.25100000016391,
-				["CombatEndedAt"] = 1686341.127,
+				["TotalElapsedCombatTime"] = 441522.51,
+				["CombatEndedAt"] = 441522.51,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -3006,19 +2057,19 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Battlearm"] = 360.002888,
+							["Battlearm"] = 16.007172,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Battlearm"] = 20710.005145,
+							["Battlearm"] = 13130.007151,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 1686341.127,
-				["combat_id"] = 15,
+				["end_time"] = 441522.51,
+				["combat_id"] = 16,
 				["cleu_events"] = {
 					["n"] = 1,
 				},
@@ -3026,44 +2077,44 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["data_inicio"] = "11:11:12",
+				["data_inicio"] = "19:27:08",
 				["CombatSkillCache"] = {
 				},
 				["frags"] = {
-					["Crystalline Ice Elemental"] = 3,
+					["Crystalline Ice Elemental"] = 1,
 				},
-				["start_time"] = 1686329.876,
+				["start_time"] = 441518.777,
 				["TimeData"] = {
 				},
 				["contra"] = "Crystalline Ice Elemental",
-			}, -- [4]
+			}, -- [3]
 			{
 				{
-					["combatId"] = 14,
+					["combatId"] = 15,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005439,
+							["totalabsorbed"] = 0.002734,
 							["serial"] = "Player-4465-036D491F",
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["targets"] = {
-								["Crystalline Ice Elemental"] = 10571,
+								["Crystalline Ice Elemental"] = 10707,
 							},
 							["pets"] = {
 							},
 							["aID"] = "4465-036D491F",
-							["end_time"] = 1678183844,
+							["end_time"] = 1678127206,
 							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 10571.005439,
+							["total_without_pet"] = 10707.002734,
 							["damage_from"] = {
 								["Crystalline Ice Elemental"] = true,
 							},
 							["colocacao"] = 1,
 							["dps_started"] = false,
-							["total"] = 10571.005439,
+							["total"] = 10707.002734,
 							["friendlyfire"] = {
 							},
 							["friendlyfire_total"] = 0,
@@ -3072,55 +2123,55 @@ _detalhes_database = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 1,
+										["c_amt"] = 2,
 										["b_amt"] = 0,
-										["c_dmg"] = 1721,
+										["c_dmg"] = 3772,
 										["g_amt"] = 0,
-										["n_max"] = 1238,
+										["n_max"] = 1120,
 										["targets"] = {
-											["Crystalline Ice Elemental"] = 5582,
+											["Crystalline Ice Elemental"] = 5488,
 										},
-										["n_dmg"] = 3861,
-										["n_min"] = 648,
+										["n_dmg"] = 1716,
+										["n_min"] = 596,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 5582,
-										["c_max"] = 1721,
+										["counter"] = 4,
+										["total"] = 5488,
+										["c_max"] = 2394,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 1721,
+										["c_min"] = 1378,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[49924] = {
-										["c_amt"] = 1,
+									[66217] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 2782,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 1025,
+										["n_max"] = 936,
 										["targets"] = {
-											["Crystalline Ice Elemental"] = 3807,
+											["Crystalline Ice Elemental"] = 936,
 										},
-										["n_dmg"] = 1025,
-										["n_min"] = 1025,
+										["n_dmg"] = 936,
+										["n_min"] = 936,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 3807,
-										["c_max"] = 2782,
-										["id"] = 49924,
+										["counter"] = 1,
+										["total"] = 936,
+										["c_max"] = 0,
+										["id"] = 66217,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 2782,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
@@ -3129,11 +2180,10 @@ _detalhes_database = {
 									},
 									[50401] = {
 										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Battlearm"] = 151,
-										},
-										["n_max"] = 54,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Crystalline Ice Elemental"] = 0,
 										},
@@ -3186,22 +2236,22 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[49921] = {
+									[49924] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 748,
+										["n_max"] = 1363,
 										["targets"] = {
-											["Crystalline Ice Elemental"] = 1182,
+											["Crystalline Ice Elemental"] = 4283,
 										},
-										["n_dmg"] = 1182,
-										["n_min"] = 434,
+										["n_dmg"] = 4283,
+										["n_min"] = 834,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 1182,
+										["counter"] = 4,
+										["total"] = 4283,
 										["c_max"] = 0,
-										["id"] = 49921,
+										["id"] = 49924,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
@@ -3210,7 +2260,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 4,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -3218,63 +2268,60 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["on_hold"] = false,
-							["last_dps"] = 2557.707582680655,
+							["last_dps"] = 3244.546283041749,
 							["custom"] = 0,
-							["last_event"] = 1678183844,
-							["damage_taken"] = 371.005439,
-							["start_time"] = 1678183844,
+							["last_event"] = 1678127205,
+							["damage_taken"] = 206.002734,
+							["start_time"] = 1678127206,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002755,
+							["totalabsorbed"] = 0.008728,
 							["damage_from"] = {
 								["Battlearm"] = true,
-								["Endemia"] = true,
 							},
 							["targets"] = {
-								["Battlearm"] = 371,
-								["Endemia"] = 602,
+								["Battlearm"] = 206,
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5563-571-83-26316-0000070D61",
+							["serial"] = "Creature-0-4480-571-8-26316-0000062FE5",
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["aID"] = "26316",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 973.002755,
-							["end_time"] = 1678183844,
+							["total_without_pet"] = 206.008728,
+							["end_time"] = 1678127206,
 							["fight_component"] = true,
 							["dps_started"] = false,
-							["total"] = 973.002755,
+							["total"] = 206.008728,
 							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Crystalline Ice Elemental",
 							["spells"] = {
-								["tipo"] = 7,
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 192,
+										["n_max"] = 206,
 										["targets"] = {
-											["Battlearm"] = 371,
-											["Endemia"] = 145,
+											["Battlearm"] = 206,
 										},
-										["n_dmg"] = 516,
-										["n_min"] = 145,
+										["n_dmg"] = 206,
+										["n_min"] = 206,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 516,
+										["counter"] = 3,
+										["total"] = 206,
 										["c_max"] = 0,
-										["a_dmg"] = 0,
+										["MISS"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
+										["a_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
@@ -3282,38 +2329,10 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[51878] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 457,
-										["targets"] = {
-											["Endemia"] = 457,
-										},
-										["n_dmg"] = 457,
-										["n_min"] = 457,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 457,
-										["c_max"] = 0,
-										["id"] = 51878,
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
 										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
-									},
+									}, -- [1]
 								},
 							},
 							["friendlyfire"] = {
@@ -3323,30 +2342,30 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 19780.002755,
-							["start_time"] = 1678183844,
+							["damage_taken"] = 10707.008728,
+							["start_time"] = 1678127206,
 							["delay"] = 0,
-							["last_event"] = 1678183863,
+							["last_event"] = 1678127227,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 14,
+					["combatId"] = 15,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["targets_overheal"] = {
-								["Battlearm"] = 1026,
+								["Battlearm"] = 151,
 							},
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
 							["classe"] = "DEATHKNIGHT",
-							["totalover"] = 1026.006717,
-							["total_without_pet"] = 371.006717,
-							["total"] = 371.006717,
+							["totalover"] = 151.004447,
+							["total_without_pet"] = 168.004447,
+							["total"] = 168.004447,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
@@ -3354,15 +2373,15 @@ _detalhes_database = {
 							["colocacao"] = 1,
 							["on_hold"] = false,
 							["serial"] = "Player-4465-036D491F",
-							["totalabsorb"] = 0.006717,
-							["last_hps"] = 91.29102288356538,
+							["totalabsorb"] = 0.004447,
+							["last_hps"] = 50.91043848502808,
 							["targets"] = {
-								["Battlearm"] = 371,
+								["Battlearm"] = 168,
 							},
-							["totalover_without_pet"] = 0.006717,
-							["healing_taken"] = 371.006717,
+							["totalover_without_pet"] = 0.004447,
+							["healing_taken"] = 168.004447,
 							["fight_component"] = true,
-							["end_time"] = 1678183844,
+							["end_time"] = 1678127206,
 							["healing_from"] = {
 								["Battlearm"] = true,
 							},
@@ -3374,89 +2393,81 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
-											["Battlearm"] = 181,
+											["Battlearm"] = 151,
 										},
-										["n_max"] = 50,
+										["n_max"] = 54,
 										["targets"] = {
-											["Battlearm"] = 159,
+											["Battlearm"] = 168,
 										},
-										["n_min"] = 0,
-										["counter"] = 7,
-										["overheal"] = 181,
-										["total"] = 159,
+										["n_min"] = 24,
+										["counter"] = 6,
+										["overheal"] = 151,
+										["total"] = 168,
 										["c_max"] = 0,
 										["id"] = 50475,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 159,
+										["n_curado"] = 168,
 										["totaldenied"] = 0,
-										["n_amt"] = 7,
-										["absorbed"] = 0,
-									},
-									[45470] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Battlearm"] = 845,
-										},
-										["n_max"] = 212,
-										["targets"] = {
-											["Battlearm"] = 212,
-										},
-										["n_min"] = 212,
-										["counter"] = 1,
-										["overheal"] = 845,
-										["total"] = 212,
-										["c_max"] = 0,
-										["id"] = 45470,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 212,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 6,
 										["absorbed"] = 0,
 									},
 								},
 							},
 							["grupo"] = true,
 							["heal_enemy_amt"] = 0,
-							["start_time"] = 1678183844,
+							["start_time"] = 1678127206,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["aID"] = "4465-036D491F",
-							["totaldenied"] = 0.006717,
+							["totaldenied"] = 0.004447,
 							["delay"] = 0,
-							["last_event"] = 1678183844,
+							["last_event"] = 1678127205,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 14,
+					["combatId"] = 15,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 						{
-							["received"] = 65.005342,
-							["resource"] = 0.005342,
+							["received"] = 60.004704,
+							["resource"] = 0.004704,
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["targets"] = {
-								["Battlearm"] = 65,
+								["Battlearm"] = 60,
 							},
-							["last_event"] = 1678127206,
 							["pets"] = {
 							},
 							["powertype"] = 6,
 							["classe"] = "DEATHKNIGHT",
-							["totalover"] = 0.005342,
+							["totalover"] = 0.004704,
 							["fight_component"] = true,
-							["total"] = 65.005342,
+							["total"] = 60.004704,
 							["nome"] = "Battlearm",
 							["spells"] = {
 								["tipo"] = 7,
 								["_ActorTable"] = {
+									[61040] = {
+										["total"] = 10,
+										["id"] = 61040,
+										["totalover"] = 0,
+										["targets"] = {
+											["Battlearm"] = 10,
+										},
+										["counter"] = 2,
+									},
+									[49924] = {
+										["total"] = 30,
+										["id"] = 49924,
+										["totalover"] = 0,
+										["targets"] = {
+											["Battlearm"] = 30,
+										},
+										["counter"] = 2,
+									},
 									[50163] = {
 										["total"] = 20,
 										["id"] = 50163,
@@ -3466,57 +2477,21 @@ _detalhes_database = {
 										},
 										["counter"] = 1,
 									},
-									[49924] = {
-										["total"] = 15,
-										["id"] = 49924,
-										["totalover"] = 0,
-										["targets"] = {
-											["Battlearm"] = 15,
-										},
-										["counter"] = 1,
-									},
-									[49938] = {
-										["total"] = 15,
-										["id"] = 49938,
-										["totalover"] = 0,
-										["targets"] = {
-											["Battlearm"] = 15,
-										},
-										["counter"] = 1,
-									},
-									[49921] = {
-										["total"] = 10,
-										["id"] = 49921,
-										["totalover"] = 0,
-										["targets"] = {
-											["Battlearm"] = 10,
-										},
-										["counter"] = 1,
-									},
-									[61040] = {
-										["total"] = 5,
-										["id"] = 61040,
-										["totalover"] = 0,
-										["targets"] = {
-											["Battlearm"] = 5,
-										},
-										["counter"] = 1,
-									},
 								},
 							},
 							["grupo"] = true,
 							["aID"] = "4465-036D491F",
 							["flag_original"] = 1297,
-							["last_event"] = 1678183871,
-							["alternatepower"] = 0.005342,
-							["passiveover"] = 0.005342,
+							["last_event"] = 1678127205,
+							["alternatepower"] = 0.004704,
+							["passiveover"] = 0.004704,
 							["serial"] = "Player-4465-036D491F",
 							["tipo"] = 3,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 14,
+					["combatId"] = 15,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -3524,23 +2499,12 @@ _detalhes_database = {
 							["debuff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[55078] = {
-										["activedamt"] = 0,
-										["id"] = 55078,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[49560] = {
 										["activedamt"] = -1,
 										["id"] = 49560,
 										["targets"] = {
 										},
-										["actived_at"] = 1678183843,
+										["actived_at"] = 1678127204,
 										["uptime"] = 0,
 										["appliedamt"] = 0,
 										["refreshamt"] = 0,
@@ -3550,36 +2514,36 @@ _detalhes_database = {
 								},
 							},
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["buff_uptime"] = 28,
+							["buff_uptime"] = 26,
 							["aID"] = "4465-036D491F",
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[57623] = {
-										["activedamt"] = 1,
-										["id"] = 57623,
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[57821] = {
-										["activedamt"] = 1,
-										["id"] = 57821,
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[60437] = {
 										["activedamt"] = 1,
 										["id"] = 60437,
+										["targets"] = {
+										},
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[48266] = {
+										["activedamt"] = 1,
+										["id"] = 48266,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[51124] = {
+										["activedamt"] = 1,
+										["id"] = 51124,
 										["targets"] = {
 										},
 										["uptime"] = 4,
@@ -3610,9 +2574,566 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
+									[57821] = {
+										["activedamt"] = 1,
+										["id"] = 57821,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[57940] = {
 										["activedamt"] = 1,
 										["id"] = 57940,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 0,
+							["nome"] = "Battlearm",
+							["grupo"] = true,
+							["spell_cast"] = {
+								[49924] = 2,
+								[56815] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["last_event"] = 1678127206,
+							["pets"] = {
+							},
+							["classe"] = "DEATHKNIGHT",
+							["serial"] = "Player-4465-036D491F",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 15,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Battlearm"] = "Player-4465-036D491F",
+				},
+				["raid_roster_indexed"] = {
+					"Battlearm", -- [1]
+				},
+				["CombatStartedAt"] = 441515.961,
+				["tempo_start"] = 1678127202,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 8524,
+				["playing_solo"] = true,
+				["totals"] = {
+					10913, -- [1]
+					168, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 60,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					10707, -- [1]
+					168, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 60,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "19:26:46",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Crystalline Ice Elemental",
+				["TotalElapsedCombatTime"] = 441497.028,
+				["CombatEndedAt"] = 441497.028,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Battlearm"] = 168.004447,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Battlearm"] = 10707.002734,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 441497.028,
+				["combat_id"] = 15,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "19:26:42",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Crystalline Ice Elemental"] = 1,
+				},
+				["start_time"] = 441492.911,
+				["TimeData"] = {
+				},
+				["contra"] = "Crystalline Ice Elemental",
+			}, -- [4]
+			{
+				{
+					["combatId"] = 14,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002864,
+							["serial"] = "Player-4465-036D491F",
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Crystalline Ice Elemental"] = 11314,
+							},
+							["pets"] = {
+							},
+							["aID"] = "4465-036D491F",
+							["end_time"] = 1678127197,
+							["classe"] = "DEATHKNIGHT",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 11314.002864,
+							["damage_from"] = {
+								["Crystalline Ice Elemental"] = true,
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 11314.002864,
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["nome"] = "Battlearm",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 6353,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Crystalline Ice Elemental"] = 6353,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 6353,
+										["c_max"] = 2083,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 1225,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[50401] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Crystalline Ice Elemental"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 50401,
+										["r_dmg"] = 0,
+										["IMMUNE"] = 4,
+										["spellschool"] = 16,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[51714] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Crystalline Ice Elemental"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 51714,
+										["r_dmg"] = 0,
+										["IMMUNE"] = 4,
+										["spellschool"] = 16,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[49924] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 2244,
+										["g_amt"] = 0,
+										["n_max"] = 1057,
+										["targets"] = {
+											["Crystalline Ice Elemental"] = 4961,
+										},
+										["n_dmg"] = 2717,
+										["n_min"] = 789,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 4961,
+										["c_max"] = 2244,
+										["id"] = 49924,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 2244,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["last_dps"] = 3730.300977255402,
+							["custom"] = 0,
+							["last_event"] = 1678127194,
+							["damage_taken"] = 174.002864,
+							["start_time"] = 1678127197,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007686,
+							["damage_from"] = {
+								["Battlearm"] = true,
+							},
+							["targets"] = {
+								["Battlearm"] = 174,
+							},
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-4480-571-8-26316-0000862FD5",
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["aID"] = "26316",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 174.007686,
+							["end_time"] = 1678127197,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["total"] = 174.007686,
+							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["nome"] = "Crystalline Ice Elemental",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 174,
+										["targets"] = {
+											["Battlearm"] = 174,
+										},
+										["n_dmg"] = 174,
+										["n_min"] = 174,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 174,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 11314.007686,
+							["start_time"] = 1678127197,
+							["delay"] = 0,
+							["last_event"] = 1678127192,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 14,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+								["Battlearm"] = 202,
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "DEATHKNIGHT",
+							["totalover"] = 202.008095,
+							["total_without_pet"] = 143.008095,
+							["total"] = 143.008095,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-036D491F",
+							["totalabsorb"] = 0.008095,
+							["last_hps"] = 47.15070722063884,
+							["targets"] = {
+								["Battlearm"] = 143,
+							},
+							["totalover_without_pet"] = 0.008095,
+							["healing_taken"] = 143.008095,
+							["fight_component"] = true,
+							["end_time"] = 1678127197,
+							["healing_from"] = {
+								["Battlearm"] = true,
+							},
+							["nome"] = "Battlearm",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[50475] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Battlearm"] = 202,
+										},
+										["n_max"] = 83,
+										["targets"] = {
+											["Battlearm"] = 143,
+										},
+										["n_min"] = 18,
+										["counter"] = 6,
+										["overheal"] = 202,
+										["total"] = 143,
+										["c_max"] = 0,
+										["id"] = 50475,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 143,
+										["totaldenied"] = 0,
+										["n_amt"] = 6,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1678127197,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-036D491F",
+							["totaldenied"] = 0.008095,
+							["delay"] = 0,
+							["last_event"] = 1678127194,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 14,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["received"] = 60.007245,
+							["resource"] = 0.007245,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Battlearm"] = 60,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 6,
+							["classe"] = "DEATHKNIGHT",
+							["totalover"] = 0.007245,
+							["fight_component"] = true,
+							["total"] = 60.007245,
+							["nome"] = "Battlearm",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[61040] = {
+										["total"] = 10,
+										["id"] = 61040,
+										["totalover"] = 0,
+										["targets"] = {
+											["Battlearm"] = 10,
+										},
+										["counter"] = 2,
+									},
+									[49924] = {
+										["total"] = 30,
+										["id"] = 49924,
+										["totalover"] = 0,
+										["targets"] = {
+											["Battlearm"] = 30,
+										},
+										["counter"] = 2,
+									},
+									[50163] = {
+										["total"] = 20,
+										["id"] = 50163,
+										["totalover"] = 0,
+										["targets"] = {
+											["Battlearm"] = 20,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["grupo"] = true,
+							["aID"] = "4465-036D491F",
+							["flag_original"] = 1297,
+							["last_event"] = 1678127194,
+							["alternatepower"] = 0.007245,
+							["passiveover"] = 0.007245,
+							["serial"] = "Player-4465-036D491F",
+							["tipo"] = 3,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 14,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["fight_component"] = true,
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["nome"] = "Battlearm",
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["grupo"] = true,
+							["spell_cast"] = {
+								[49924] = 2,
+							},
+							["buff_uptime"] = 29,
+							["pets"] = {
+							},
+							["classe"] = "DEATHKNIGHT",
+							["aID"] = "4465-036D491F",
+							["last_event"] = 1678127197,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[60437] = {
+										["activedamt"] = 1,
+										["id"] = 60437,
 										["targets"] = {
 										},
 										["uptime"] = 4,
@@ -3626,7 +3147,51 @@ _detalhes_database = {
 										["id"] = 48266,
 										["targets"] = {
 										},
-										["uptime"] = 4,
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[60229] = {
+										["activedamt"] = 1,
+										["id"] = 60229,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[55610] = {
+										["activedamt"] = 1,
+										["id"] = 55610,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[57821] = {
+										["activedamt"] = 1,
+										["id"] = 57821,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[57940] = {
+										["activedamt"] = 1,
+										["id"] = 57940,
+										["targets"] = {
+										},
+										["uptime"] = 5,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -3634,22 +3199,6 @@ _detalhes_database = {
 									},
 								},
 							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 3,
-							["nome"] = "Battlearm",
-							["grupo"] = true,
-							["spell_cast"] = {
-								[49921] = 1,
-								[49924] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["last_event"] = 1678183844,
-							["pets"] = {
-							},
-							["classe"] = "DEATHKNIGHT",
 							["serial"] = "Player-4465-036D491F",
 							["tipo"] = 4,
 						}, -- [1]
@@ -3667,27 +3216,23 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Battlearm", -- [1]
 				},
-				["tempo_start"] = 1678183840,
+				["CombatStartedAt"] = 441492.311,
+				["tempo_start"] = 1678127192,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Crystalline Ice Elemental",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 8523,
 				["playing_solo"] = true,
 				["totals"] = {
-					11543.994876, -- [1]
-					371, -- [2]
+					11488, -- [1]
+					143, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
-						[6] = 64.994052,
+						[6] = 60,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
@@ -3702,9 +3247,35 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["TotalElapsedCombatTime"] = 1686303.175,
-				["combat_counter"] = 8523,
+				["totals_grupo"] = {
+					11314, -- [1]
+					143, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 60,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "19:26:37",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Crystalline Ice Elemental",
+				["TotalElapsedCombatTime"] = 441487.678,
+				["CombatEndedAt"] = 441487.678,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -3718,54 +3289,33 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Battlearm"] = 371.006717,
+							["Battlearm"] = 143.008095,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Battlearm"] = 10571.005439,
+							["Battlearm"] = 11314.002864,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 1686303.175,
-				["player_last_events"] = {
-				},
-				["instance_type"] = "none",
-				["CombatEndedAt"] = 1686303.175,
-				["data_inicio"] = "11:10:41",
-				["totals_grupo"] = {
-					10571, -- [1]
-					371, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 65,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
+				["end_time"] = 441487.678,
+				["combat_id"] = 14,
+				["cleu_events"] = {
+					["n"] = 1,
 				},
 				["spells_cast_timeline"] = {
 				},
-				["data_fim"] = "11:10:45",
-				["combat_id"] = 14,
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "19:26:32",
 				["CombatSkillCache"] = {
 				},
 				["frags"] = {
 					["Crystalline Ice Elemental"] = 1,
 				},
-				["start_time"] = 1686299.042,
+				["start_time"] = 441483.395,
 				["TimeData"] = {
 				},
 				["contra"] = "Crystalline Ice Elemental",
@@ -3783,7 +3333,6 @@ _detalhes_database = {
 							["targets"] = {
 								["Expert's Training Dummy"] = 2561548,
 							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["pets"] = {
 							},
 							["delay"] = 0,
@@ -5642,18 +5191,18 @@ _detalhes_database = {
 					["combatId"] = 13,
 					["_ActorTable"] = {
 						{
-							["received"] = 2530.007735,
+							["received"] = 2520.007735,
 							["resource"] = 0.007735,
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["targets"] = {
-								["Battlearm"] = 2530,
+								["Battlearm"] = 2520,
 							},
 							["pets"] = {
 							},
 							["powertype"] = 6,
 							["classe"] = "DEATHKNIGHT",
 							["totalover"] = 0.007735,
-							["total"] = 2530.007735,
+							["total"] = 2520.007735,
 							["nome"] = "Battlearm",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5694,13 +5243,13 @@ _detalhes_database = {
 										["counter"] = 97,
 									},
 									[57623] = {
-										["total"] = 80,
+										["total"] = 70,
 										["id"] = 57623,
 										["totalover"] = 0,
 										["targets"] = {
-											["Battlearm"] = 80,
+											["Battlearm"] = 70,
 										},
-										["counter"] = 8,
+										["counter"] = 7,
 									},
 									[49921] = {
 										["total"] = 10,
@@ -5721,12 +5270,12 @@ _detalhes_database = {
 										["counter"] = 5,
 									},
 								},
-								["tipo"] = 2,
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["tipo"] = 3,
 							["flag_original"] = 1297,
-							["last_event"] = 1678183840,
+							["last_event"] = 1678119582,
 							["passiveover"] = 0.007735,
 							["alternatepower"] = 0.007735,
 							["serial"] = "Player-4465-036D491F",
@@ -5934,7 +5483,7 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Battlearm", -- [1]
 				},
-				["CombatStartedAt"] = 1686298.392,
+				["CombatStartedAt"] = 441482.812,
 				["tempo_start"] = 1678119160,
 				["last_events_tables"] = {
 				},
@@ -5945,13 +5494,13 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					2561547.893197999, -- [1]
-					-0.1369729999982853, -- [2]
+					2561547.889044999, -- [1]
+					-0.1307789999999076, -- [2]
 					{
 						0, -- [1]
-						[0] = -0.02702699999827019,
+						[0] = -0.02864399999978024,
 						["alternatepower"] = 0,
-						[6] = 2529.991669,
+						[6] = 2519.991522,
 						[3] = 0,
 					}, -- [3]
 					{
@@ -5974,7 +5523,7 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 2530,
+						[6] = 2520,
 						[3] = 0,
 					}, -- [3]
 					{
@@ -6696,7 +6245,7 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[49909] = {
+									[55078] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
@@ -6783,7 +6332,7 @@ _detalhes_database = {
 										},
 										["total"] = 58042,
 										["c_max"] = 0,
-										["id"] = 49909,
+										["id"] = 55078,
 										["r_dmg"] = 0,
 										["spellschool"] = 32,
 										["extra"] = {
@@ -8455,7 +8004,6 @@ _detalhes_database = {
 							["aID"] = "11348",
 							["tipo"] = 4,
 							["pets"] = {
-								"Zulian Guardian <High Priest Thekal>", -- [1]
 							},
 							["serial"] = "Creature-0-4446-309-28445-11348-000005FC6D",
 							["last_event"] = 0,
@@ -8509,9 +8057,7 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["flag_original"] = 199240,
-							["spell_cast"] = {
-								[6713] = 3,
+							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["boss_debuff"] = true,
@@ -9240,7 +8786,7 @@ _detalhes_database = {
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 2928,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 120,
@@ -9774,7 +9320,7 @@ _detalhes_database = {
 									[55078] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 49408,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 406,
 										["targets"] = {
@@ -9907,12 +9453,12 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 406,
+										["n_max"] = 0,
 										["targets"] = {
 											["Bloodlord Mandokir"] = 0,
 										},
-										["n_dmg"] = 44154,
-										["n_min"] = 339,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
 										["ChartData"] = {
@@ -16501,7 +16047,7 @@ _detalhes_database = {
 	},
 	["data_harvested_for_charts"] = {
 	},
-	["last_day"] = "07",
+	["last_day"] = "06",
 	["mythic_plus_log"] = {
 	},
 	["local_instances_config"] = {
@@ -16527,10 +16073,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 596.4414672851562,
-					["x"] = -1101.599021911621,
+					["y"] = 596.4415283203125,
+					["x"] = -979.6942367553711,
 					["w"] = 234.8974151611328,
-					["h"] = 138.5456237792969,
+					["h"] = 138.545654296875,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -16562,10 +16108,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 596.4414672851562,
-					["x"] = -869.6630859375,
-					["w"] = 228.9744262695313,
-					["h"] = 138.5456237792969,
+					["y"] = 596.4415283203125,
+					["x"] = -747.7583312988281,
+					["w"] = 228.9744415283203,
+					["h"] = 138.545654296875,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -19386,7 +18932,7 @@ _detalhes_database = {
 				}, -- [13]
 				{
 					["flag_original"] = 68136,
-					["totalabsorbed"] = 0.005276,
+					["totalabsorbed"] = 0.002697,
 					["damage_from"] = {
 					},
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
@@ -19394,15 +18940,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["end_time"] = 1678182993,
+					["end_time"] = 1678125950,
 					["fight_component"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 0.005276,
+					["total_without_pet"] = 0.002697,
 					["last_event"] = 0,
 					["dps_started"] = false,
-					["total"] = 0.005276,
+					["total"] = 0.002697,
 					["friendlyfire"] = {
 					},
 					["friendlyfire_total"] = 0,
@@ -19417,8 +18963,8 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.005276,
-					["start_time"] = 1678182990,
+					["damage_taken"] = 0.002697,
+					["start_time"] = 1678125947,
 					["delay"] = 0,
 					["last_dps"] = 0,
 				}, -- [14]
@@ -20528,14 +20074,14 @@ _detalhes_database = {
 		},
 		["combat_counter"] = 8519,
 		["totals"] = {
-			569373.981259, -- [1]
-			59965.87752100002, -- [2]
+			569373.98904, -- [1]
+			59965.88218899998, -- [2]
 			{
 				0, -- [1]
-				[0] = -0.010806,
+				[0] = -0.007039,
 				["alternatepower"] = 0,
 				[3] = 0,
-				[6] = 739.993719,
+				[6] = 739.991423,
 			}, -- [3]
 			{
 				["buff_uptime"] = 0,

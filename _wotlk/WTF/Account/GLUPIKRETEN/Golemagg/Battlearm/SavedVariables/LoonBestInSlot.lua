@@ -36,7 +36,7 @@ LBISSettings = {
 		["AfflictionWarlock"] = true,
 		["SubtletyRogue"] = true,
 	},
-	["SelectedSpec"] = "Paladin: Protection",
+	["SelectedSpec"] = "Druid: Cat",
 	["minimap"] = {
 		["minimapPos"] = 180,
 		["hide"] = true,
