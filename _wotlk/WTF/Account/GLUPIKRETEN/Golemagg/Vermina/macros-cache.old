@@ -14,7 +14,7 @@ VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,help,nodead] [help] [@targettarget,help,nodead] [] Righteous Defense
+/cast [@targettarget,help,nodead][] Righteous Defense
 END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -63,4 +63,9 @@ END
 VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Holy Shock
 /cast [@mouseover, help, nodead][] Holy Shock
+END
+VER 3 0000000001000015 " " "134400"
+#showtooltip 
+/startattack
+/cast [@mouseover, harm, nodead][] Avenger's Shield
 END
