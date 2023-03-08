@@ -29,6 +29,8 @@ from os import listdir
 from os.path import exists
 from skimage.metrics import structural_similarity
 from datetime import datetime
+from prettytable import PrettyTable
+pretty_table = PrettyTable()
 
 combat = False
 debug = False
@@ -71,7 +73,7 @@ if not os.path.exists(abilities_folder):
 
 
 skills_loaded = "warrior"
-print("Script loaded and ready.", "Rotation is paused.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"), os.name)
+print("Script loaded and ready.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"), os.name)
 
 
 def on_press(key):
@@ -96,6 +98,13 @@ def parse_hex_color(string):
 
 def color_similarity(base_col_val, oth_col_val):
     return math.sqrt(sum((base_col_val[i]-oth_col_val[i])**2 for i in range(3)))
+
+
+def print_debug(no, xclass, skill, image):
+    pretty_table.field_names = ["No.", "class", "skill", "image"]
+    pretty_table.add_row([no, xclass, skill, image])
+    pretty_table.align = "l"
+    print(pretty_table)
 
 
 classes = {
@@ -199,7 +208,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                     m_image = abilities_folder + slash + wow_class + slash + str(skill["name"]) + " M.png".format(**p_main)
                     main_image = sct.grab(p_main)
                     mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
-                    print(number, wow_class, skill["name"], abilities_folder + slash + wow_class + slash + skill["name"] + " M.png")
+                    print_debug(number, wow_class, skill["name"], abilities_folder + slash + wow_class + slash + skill["name"] + " M.png")
                     time.sleep(time2)
 
                 for skill in skills["offgcd"][wow_class]:
@@ -220,7 +229,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                     o_image = abilities_folder + slash + wow_class + slash + str(skill["name"]) + " O.png".format(**p_offgcd)
                     offgcd_image = sct.grab(p_offgcd)
                     mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=o_image)
-                    print(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " O.png", offgcd_image)
+                    print_debug(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " O.png")
                     time.sleep(time2)
 
                 for skill in skills["healing"]:
@@ -241,7 +250,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                     m_image = abilities_folder + slash + "healing" + slash + str(skill["name"]) + " H.png".format(**p_main)
                     main_image = sct.grab(p_main)
                     mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
-                    print(number, wow_class, skill["name"], abilities_folder + slash + "healing" + slash + skill["name"] + " H.png")
+                    print_debug(number, wow_class, skill["name"], abilities_folder + slash + "healing" + slash + skill["name"] + " H.png")
                     time.sleep(time2)
 
                 for skill in skills["globals"]:
@@ -262,7 +271,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                     m_image = abilities_folder + slash + "globals" + slash + str(skill["name"]) + " G.png".format(**p_main)
                     main_image = sct.grab(p_main)
                     mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
-                    print(number, wow_class, skill["name"], abilities_folder + slash + "globals" + slash + skill["name"] + " G.png")
+                    print_debug(number, wow_class, skill["name"], abilities_folder + slash + "globals" + slash + skill["name"] + " G.png")
                     time.sleep(time2)
 
                 pyautogui.hotkey("enter")
