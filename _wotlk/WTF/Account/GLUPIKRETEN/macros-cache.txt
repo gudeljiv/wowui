@@ -1,3 +1,6 @@
+VER 3 0000000000000013 " " "132130"
+/click BehindTarget
+END
 VER 3 0000000000000026 " " "134400"
 #showtooltip item:36912
 /2 WTB Saronite Ore 24g 
@@ -5,9 +8,6 @@ END
 VER 3 000000000000000E " " "136106"
 /inspect
 /run SortBags()
-END
-VER 3 0000000000000013 " " "132130"
-/click BehindTarget
 END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
@@ -43,10 +43,7 @@ VER 3 0000000000000010 "RAID" "136047"
 /run InviteUnit("a");C_Timer.After(0.25,function() ConvertToRaid() end)
 END
 VER 3 000000000000001F "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Nerub'ar Victim
-/targetexact Nerub'ar Harvester
-/targetexact Nerub'ar Skitterer
-/cleartarget [dead]
+//RestedXP Guides - current step has no configured targets
 END
 VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 #showtooltip

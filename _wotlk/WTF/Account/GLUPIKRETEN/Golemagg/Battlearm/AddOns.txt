@@ -223,3 +223,4 @@ ShadowedUF_SmoothBars: enabled
 GDKPd: enabled
 SavedInstances: disabled
 GlobalIgnoreList: enabled
+ijaht: disabled
