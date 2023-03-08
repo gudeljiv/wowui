@@ -1,6 +1,8 @@
-VER 3 0000000001000014 " " "134400"
-#showtooltip 
-/cast [@pet,exists][]Volley
+VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast feign death
+/stopattack
+/stopcasting
 END
 VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -76,9 +78,7 @@ VER 3 0000000001000013 " " "132328"
 /dismount
 /petfollow
 END
-VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast feign death
-/stopattack
-/stopcasting
+VER 3 0000000001000014 " " "134400"
+#showtooltip 
+/cast [@pet,exists][]Volley
 END

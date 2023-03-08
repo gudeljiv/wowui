@@ -52,7 +52,7 @@ RXPCSettings = {
 			["hardcore"] = false,
 			["enableMinimapButton"] = false,
 			["enableTracker"] = false,
-			["frameHeight"] = 125.0001068115234,
+			["frameHeight"] = 125.000114440918,
 		},
 	},
 }

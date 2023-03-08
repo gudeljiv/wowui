@@ -1,15 +1,15 @@
 
 RXPCData = {
-	["currentGuideGroup"] = "",
+	["stepSkip"] = {
+	},
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
-	["GA"] = true,
-	["stepSkip"] = {
-	},
+	["currentGuideName"] = "",
+	["currentGuideGroup"] = "",
 	["flightPaths"] = {
 	},
-	["currentGuideName"] = "",
+	["GA"] = true,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -57,7 +57,7 @@ RXPCSettings = {
 	},
 	["profiles"] = {
 		["Miqa - Golemagg"] = {
-			["frameHeight"] = 125.000114440918,
+			["enableBindAutomation"] = false,
 			["enableFPAutomation"] = false,
 			["hardcore"] = false,
 			["enableLevelUpAnnounceGroup"] = false,
@@ -65,7 +65,7 @@ RXPCSettings = {
 			["activeItemsScale"] = 1.2,
 			["checkVersions"] = false,
 			["enableTracker"] = false,
-			["enableBindAutomation"] = false,
+			["frameHeight"] = 125.0001068115234,
 			["enableLevelUpAnnounceSolo"] = false,
 			["alwaysSendBranded"] = false,
 			["enableFlyStepAnnouncements"] = false,

@@ -2,6 +2,8 @@ from _resources import skills
 from _resources import color
 from _resources import monitor_settings
 import time
+from pprint import pprint
+
 
 import cv2
 import pyautogui
@@ -101,10 +103,17 @@ def color_similarity(base_col_val, oth_col_val):
 
 
 def print_debug(no, xclass, skill, image):
-    pretty_table.field_names = ["No.", "class", "skill", "image"]
-    pretty_table.add_row([no, xclass, skill, image])
-    pretty_table.align = "l"
-    print(pretty_table)
+    # pretty_table.field_names = ["No.", "class", "skill", "image"]
+    # pretty_table.add_row([no, xclass, skill, image])
+    # pretty_table.align = "l"
+    # print(pretty_table)
+
+    no = '{0: <4}'.format(no)
+    xclass = '{0: <15}'.format(xclass)
+    skill = '{0: <30}'.format(skill)
+    image = '{0: <100}'.format(image)
+
+    print(no, xclass, skill, image)
 
 
 classes = {

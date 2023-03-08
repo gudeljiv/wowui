@@ -104,7 +104,10 @@ def on_press(key):
                 pyautogui.FAILSAFE = False
             else:
                 pyautogui.hotkey("home")
-                pyautogui.PAUSE = 0.05
+                if os.name == "posix":
+                    pyautogui.PAUSE = 0.1
+                else:
+                    pyautogui.PAUSE = 0.05
                 pyautogui.FAILSAFE = True
     except:
         return
@@ -214,11 +217,18 @@ def load_skills_secondary(wow_class):
 
 
 def print_debug(ability, score=False):
-    pretty_table.field_names = ["ability", "modifier", "key", "score", "finished", "time"]
-    pretty_table.add_row([ability["name"], "modifier" in ability.keys() and ability["modifier"] or "none", ability["key"], score*100,
-                          f"{round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S")])
-    print(pretty_table)
-    # print(ability["name"], "modifier" in ability.keys() and ability["modifier"] or "none", ability["key"], '{:.2f}'.format(score*100), f"{round(1000 * (time.time() - start_time))} ms", datetime.now().strftime("%H:%M:%S"))
+    # pretty_table.field_names = ["ability", "modifier", "key", "score", "finished", "time"]
+    # pretty_table.add_row([ability["name"], "modifier" in ability.keys() and ability["modifier"] or "none", ability["key"], score*100,
+    #                       f"{round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S")])
+    # print(pretty_table)
+    skill = '{0: <25}'.format(ability["name"])
+    modifier = "modifier" in ability.keys() and '{0: <8}'.format(ability["modifier"]) or '{0: <8}'.format("none")
+    key = '{0: <5}'.format(ability["key"])
+    score = '{0: <8}'.format('{:.2f}'.format(score*100))
+    ms = '{0: <8}'.format(f"{round(1000 * (time.time() - start_time))} ms")
+    dtime = '{0: <20}'.format(datetime.now().strftime("%H:%M:%S"))
+
+    print(skill, modifier, key, score, ms, dtime)
 
 
 def main_rotation(main_skill, main_abilities):
@@ -378,7 +388,11 @@ with keyboard.Listener(on_press=on_press) as listener:
         # rotation
                     # _thread.start_new_thread(main_rotation, (main_skill,))
                     # _thread.start_new_thread(secondary_rotation, (secondary_skill,))
-                    _thread.start_new_thread(whole_rotation, (main_skill, secondary_skill, main_abilities, secondary_abilities))
+                    if os.name == "posix":
+                        main_rotation(main_skill, main_abilities)
+                        secondary_rotation(secondary_skill, secondary_abilities)
+                    else:
+                        _thread.start_new_thread(whole_rotation, (main_skill, secondary_skill, main_abilities, secondary_abilities))
 
             except KeyboardInterrupt:
                 print("Script unloaded and closed.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"))
