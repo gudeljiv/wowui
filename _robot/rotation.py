@@ -21,7 +21,7 @@ import random
 if os.name == "posix":
     from AppKit import NSScreen
     from AppKit import NSWorkspace
-    from _resources import keyCodeMap_OSX
+    from libs.resources import keyCodeMap_OSX
 else:
     import win32gui
     from win32api import GetSystemMetrics

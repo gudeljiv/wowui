@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 9601,
+	["session"] = 9603,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:135: attempt to index global 'defaultHealthstoneMacro' (a nil value)",
