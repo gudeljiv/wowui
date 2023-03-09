@@ -1,6 +1,6 @@
 import ctypes
 import time
-from _resources import keyCodeMap
+from libs.resources import keyCodeMap
 
 
 # Bunch of stuff so that the script can send keystrokes to game #

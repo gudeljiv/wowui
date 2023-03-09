@@ -1,7 +1,7 @@
-from pprint import pprint
-from _resources import skills
-from _resources import color
-from _resources import monitor_settings
+from libs.resources import skills
+from libs.resources import color
+from libs.resources import monitor_settings
+from libs.resources import keyCodeMap
 
 
 import time
@@ -16,7 +16,6 @@ import mss
 import mss.tools
 import numpy
 import math
-import pyperclip
 import random
 
 if os.name == "posix":
@@ -26,7 +25,7 @@ if os.name == "posix":
 else:
     import win32gui
     from win32api import GetSystemMetrics
-    from __ctypes import KeyPress as cKeyPress
+    from libs.ctypes_custom import KeyPress as cKeyPress
 
 
 from pynput import keyboard
@@ -36,8 +35,9 @@ from os import listdir
 from os.path import exists
 from skimage.metrics import structural_similarity
 from datetime import datetime
-from prettytable import PrettyTable
-pretty_table = PrettyTable()
+
+from libs.interception import *
+driver = interception()
 
 combat = False
 dprint = False
@@ -81,6 +81,41 @@ print("Script loaded and ready.", "Monitor:", screen_width, screen_height, datet
 print("print:", dprint)
 print("debug:", debug)
 print("rotation:", not pause)
+
+
+def toKeyCode(c):
+    keyCode = keyCodeMap[c]
+    return int(keyCode, base=16)
+
+
+def get_keyboard_driver():
+    for i in range(MAX_DEVICES):
+        if interception.is_keyboard(i):
+            keyboard = i
+            return keyboard
+
+
+def PressKey(key):
+    interception_press = key_stroke(key, interception_key_state.INTERCEPTION_KEY_DOWN.value, 0)
+    driver.send(get_keyboard_driver(), interception_press)
+    return interception_press
+
+
+def ReleaseKey(interception_press):
+    interception_press.state = interception_key_state.INTERCEPTION_KEY_UP.value
+    driver.send(get_keyboard_driver(), interception_press)
+
+
+def press_interception_key(key, modifier=False):
+
+    m = modifier and toKeyCode(modifier.upper())
+
+    if m:
+        rm = PressKey(m)
+    r = PressKey(toKeyCode(key.upper()))
+    ReleaseKey(r)
+    if m:
+        ReleaseKey(rm)
 
 
 def on_press(key):
@@ -217,17 +252,12 @@ def load_skills_secondary(wow_class):
 
 
 def print_debug(ability, score=False):
-    # pretty_table.field_names = ["ability", "modifier", "key", "score", "finished", "time"]
-    # pretty_table.add_row([ability["name"], "modifier" in ability.keys() and ability["modifier"] or "none", ability["key"], score*100,
-    #                       f"{round(1000 * (time.time() - start_time))} ms ", datetime.now().strftime("%H:%M:%S")])
-    # print(pretty_table)
     skill = '{0: <25}'.format(ability["name"])
     modifier = "modifier" in ability.keys() and '{0: <8}'.format(ability["modifier"]) or '{0: <8}'.format("none")
     key = '{0: <5}'.format(ability["key"])
     score = '{0: <8}'.format('{:.2f}'.format(score*100))
     ms = '{0: <8}'.format(f"{round(1000 * (time.time() - start_time))} ms")
     dtime = '{0: <20}'.format(datetime.now().strftime("%H:%M:%S"))
-
     print(skill, modifier, key, score, ms, dtime)
 
 
@@ -245,12 +275,14 @@ def main_rotation(main_skill, main_abilities):
                         if os.name == "posix":
                             pyautogui.hotkey(keyCodeMap_OSX[ability["modifier"].upper()], ability["key"])
                         else:
-                            cKeyPress(ability["key"], ability["modifier"])
+                            # cKeyPress(ability["key"], ability["modifier"])
+                            press_interception_key(ability["key"], ability["modifier"])
                     else:
                         if os.name == "posix":
                             pyautogui.hotkey(ability["key"])
                         else:
-                            cKeyPress(ability["key"])
+                            # cKeyPress(ability["key"])
+                            press_interception_key(ability["key"])
             except Exception as e:
                 print(e)
                 print("score, diff not found for main ability", ability["name"], datetime.now().strftime("%H:%M:%S"))

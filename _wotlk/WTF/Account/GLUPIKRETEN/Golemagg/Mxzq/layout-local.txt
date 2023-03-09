@@ -158,7 +158,7 @@ FrameLevel: 1
 Anchor: CENTER
 X: 311
 Y: -77
-W: 81
+W: 78
 H: 40
 Frame: Dejunk_ParentFrame
 FrameLevel: 1
@@ -181,10 +181,10 @@ X: -107
 Y: 92
 W: 960
 H: 640
-Frame: TellMeWhen_ConfigWarning
+Frame: DetailsNewsWindow
 FrameLevel: 1
-Anchor: TOP
-X: 0
-Y: -168
-W: 330
-H: 113
+Anchor: LEFT
+X: 10
+Y: 0
+W: 480
+H: 560

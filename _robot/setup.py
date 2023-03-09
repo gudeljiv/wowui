@@ -1,18 +1,13 @@
-from _resources import skills
-from _resources import color
-from _resources import monitor_settings
+from libs.resources import skills
+from libs.resources import color
+from libs.resources import monitor_settings
+
 import time
-from pprint import pprint
-
-
-import cv2
 import pyautogui
 
 import os
-import sys
 import mss
 import mss.tools
-import numpy
 import math
 import pyperclip
 
@@ -31,8 +26,6 @@ from os import listdir
 from os.path import exists
 from skimage.metrics import structural_similarity
 from datetime import datetime
-from prettytable import PrettyTable
-pretty_table = PrettyTable()
 
 combat = False
 debug = False
@@ -103,16 +96,10 @@ def color_similarity(base_col_val, oth_col_val):
 
 
 def print_debug(no, xclass, skill, image):
-    # pretty_table.field_names = ["No.", "class", "skill", "image"]
-    # pretty_table.add_row([no, xclass, skill, image])
-    # pretty_table.align = "l"
-    # print(pretty_table)
-
     no = '{0: <4}'.format(no)
     xclass = '{0: <15}'.format(xclass)
-    skill = '{0: <30}'.format(skill)
+    skill = '{0: <25}'.format(skill)
     image = '{0: <100}'.format(image)
-
     print(no, xclass, skill, image)
 
 
