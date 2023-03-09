@@ -676,7 +676,7 @@ local GCD = function()
 	return gcd_when
 end
 
-local RuneCount = function()
+xVermin.RuneCount = function()
 	local blood = 0
 	local frost = 0
 	local unholy = 0
@@ -694,7 +694,7 @@ local RuneCount = function()
 
 	return blood, frost, unholy, death
 end
-xRuneCount = RuneCount
+xRuneCount = xVermin.RuneCount
 
 local Filler = function(killing_machine, rime, horn_of_winter, strength_totem, unbreakable_armor, blood_tap, potion_of_speed, frost_fever, blood_plague)
 	local fill = ''

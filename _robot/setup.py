@@ -96,11 +96,11 @@ def color_similarity(base_col_val, oth_col_val):
 
 
 def print_debug(no, xclass, skill, image):
-    no = '{0: <4}'.format(no)
-    xclass = '{0: <15}'.format(xclass)
-    skill = '{0: <25}'.format(skill)
-    image = '{0: <100}'.format(image)
-    print(no, xclass, skill, image)
+    # no = '{0: <4}'.format(no)
+    # xclass = '{0: <15}'.format(xclass)
+    # skill = '{0: <25}'.format(skill)
+    # image = '{0: <100}'.format(image)
+    print(no, xclass, skill)
 
 
 classes = {

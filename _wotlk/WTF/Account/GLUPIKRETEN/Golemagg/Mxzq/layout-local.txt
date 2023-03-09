@@ -181,10 +181,3 @@ X: -107
 Y: 92
 W: 960
 H: 640
-Frame: DetailsNewsWindow
-FrameLevel: 1
-Anchor: LEFT
-X: 10
-Y: 0
-W: 480
-H: 560

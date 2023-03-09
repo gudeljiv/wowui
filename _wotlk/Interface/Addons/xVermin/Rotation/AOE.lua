@@ -23,6 +23,7 @@ xVermin.AOE = function(range, casting)
 		unit = 'nameplate' .. i
 
 		if UnitExists(unit) and not xVermin.HasValue(t, UnitCreatureType(unit)) then
+			-- print(unit, UnitExists(unit), UnitCreatureType(unit), not xVermin.HasValue(t, UnitCreatureType(unit)), xVermin.GetRange(unit))
 			unitcasting = xVermin.IfUnitIsCastingInteruptable(unit)
 			targetcasting = xVermin.IfUnitIsCastingInteruptable('target')
 
@@ -30,7 +31,7 @@ xVermin.AOE = function(range, casting)
 				if not targetcasting then
 					rangecasting = rangecasting + 1
 				else
-					if (xVermin.Class == 'WARRIOR') then
+					if xVermin.Class == 'WARRIOR' then
 						local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance
 						local _, defensive = GetShapeshiftFormInfo(2) -- ako je defensive stance
 						local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
@@ -40,7 +41,7 @@ xVermin.AOE = function(range, casting)
 							end
 						end
 					end
-					if (xVermin.Class == 'DEATHKNIGHT') then
+					if xVermin.Class == 'DEATHKNIGHT' then
 						if IsSpellInRange('Mind Freeze', 'target') == 0 or select(2, GetSpellCooldown('Mind Freeze')) > 0 then
 							rangecasting = rangecasting + 1
 						end
@@ -48,16 +49,17 @@ xVermin.AOE = function(range, casting)
 				end
 			end
 
-			if xVermin.Class == 'xHUNTER' and UnitExists('pet') then
-				if IsSpellInRange('Bite', 'pet', unit) == 1 then
-					inRange = inRange + 1
-				end
-			else
-				minRange, maxRange = xVermin.GetRange(unit)
-				if maxRange and maxRange <= range then
-					inRange = inRange + 1
-				end
+			-- if xVermin.Class == 'xHUNTER' and UnitExists('pet') then
+			-- 	if IsSpellInRange('Bite', 'pet', unit) == 1 then
+			-- 		inRange = inRange + 1
+			-- 	end
+			-- else
+			minRange, maxRange = xVermin.GetRange(unit)
+			if maxRange and maxRange <= range then
+				inRange = inRange + 1
 			end
+		-- print(unit, inRange, rangecasting)
+		-- end
 		end
 	end
 	if rangecasting > 0 then
@@ -141,17 +143,17 @@ UIParent:HookScript(
 			RotationFrame2:SetBackdropColor(1, 1, 1, 1) -- white
 		else
 			if InCombatLockdown() then
-				aoe_number = xVermin.AOE(skills_range[xVermin.Class])
-				aoe_casting_number = xVermin.AOE(35, true)
-				print(xVermin.Class, skills_range[xVermin.Class], aoe_number, aoe_casting_number)
-				if aoe_number > 1 then
-					RotationFrame2:SetBackdropColor(1, 0, 0, 1) -- red --> DO AOE
-				else
-					RotationFrame2:SetBackdropColor(0, 1, 0, 1) -- green --> DO SINGLE TARGET
-				end
 			else
 				RotationFrame2:SetBackdropColor(1, 1, 1, 1) -- white --> OOC
 			end
+		end
+
+		aoe_number = xVermin.AOE(skills_range[xVermin.Class], false)
+		aoe_casting_number = xVermin.AOE(35, true)
+		if aoe_number > 1 then
+			RotationFrame2:SetBackdropColor(1, 0, 0, 1) -- red --> DO AOE
+		else
+			RotationFrame2:SetBackdropColor(0, 1, 0, 1) -- green --> DO SINGLE TARGET
 		end
 
 		aoe.text:SetText(aoe_number)

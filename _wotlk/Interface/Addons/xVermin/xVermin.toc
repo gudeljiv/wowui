@@ -90,7 +90,7 @@ Rotation/_Frames.lua
 Rotation/AOE.lua
 Rotation/BehindTarget.lua
 Rotation/DeathKnight.lua
-Rotation/DeathKnight_Rotation.lua
+# Rotation/DeathKnight_Rotation.lua
 Rotation/Warrior.lua
 
 

@@ -74,8 +74,29 @@ xVermin.PestilenceAOE = function(number_of_nameplates)
 end
 xPestilenceAOE = xVermin.PestilenceAOE
 
+xVermin.RuneCount = function()
+	local blood = 0
+	local frost = 0
+	local unholy = 0
+	local death = 0
+	for i = 1, 6 do
+		local runeType = GetRuneType(i)
+		local start, duration, runeReady = GetRuneCooldown(i)
+		if runeReady then
+			blood = runeType == 1 and blood + 1 or blood
+			frost = runeType == 3 and frost + 1 or frost
+			unholy = runeType == 2 and unholy + 1 or unholy
+			death = runeType == 4 and death + 1 or death
+		end
+	end
+
+	return blood, frost, unholy, death
+end
+xRuneCount = xVermin.RuneCount
+
 xVermin.minRuneCooldown = function()
-	local cd = InCombatLockdown() and 7.5 or 10
+	local tmin_cd = InCombatLockdown() and 7.5 or 10
+	local tmax_cd = InCombatLockdown() and 7.5 or 10
 
 	local blood = cd
 	local frost = cd
@@ -96,13 +117,29 @@ xVermin.minRuneCooldown = function()
 
 		if runeType == 1 or runeType == 4 then
 			start, duration, runeReady = GetRuneCooldown(i)
-			remaining = runeReady and 0 or (start and (cd - (GetTime() - start)) or 0)
-			tmin = (tmin and remaining <= tmin) and remaining or tmin
-			tmax = (tmax and remaining >= tmax) and remaining or tmax
+			if runeType == 4 then
+				tmin_cd = 10
+				tmax_cd = 10
+			end
+			remaining = runeReady and 0 or (start and (tmin_cd - (GetTime() - start)) or 0)
+
+			if tmin and remaining <= tmin then
+				if runeType == 4 and InCombatLockdown() then
+					tmin_cd = 10
+				end
+				tmin = remaining
+			end
+
+			if tmax and remaining >= tmax then
+				if runeType == 4 and InCombatLockdown() then
+					tmax_cd = 10
+				end
+				tmax = remaining
+			end
 		end
 	end
 
-	return tmin > 0 and tmin or 0, tmax > 0 and tmax or 0, cd
+	return tmin > 0 and tmin or 0, tmax > 0 and tmax or 0, tmin_cd, tmax_cd
 end
 xminRuneCooldown = xVermin.minRuneCooldown
 
@@ -115,7 +152,8 @@ xVermin.PestilenceSS = function()
 		return false
 	end
 
-	local tmin, tmax, cd = xminRuneCooldown()
+	local blood, frost, unholy, death = xVermin.RuneCount()
+	local tmin, tmax, tmin_cd, tmax_cd = xVermin.minRuneCooldown()
 	local debuff_ff = 30
 	local debuff_ps = 30
 	local debuff_duration = 30
@@ -129,11 +167,27 @@ xVermin.PestilenceSS = function()
 		end
 	end
 
-	if debuff_duration ~= 30 and debuff_duration < cd - grace and debuff_duration > tmin then
-		return true
-	else
-		return false
+	if debuff_duration < tmin_cd then
+	-- print('rune in:', tmin, 'debuff out in:', debuff_duration, 'rune cd:', blood + death)
 	end
+
+	if debuff_duration ~= 30 then
+		if debuff_duration - tmin > 0 and blood + death < 1 then
+			print('true')
+			return true
+		end
+	-- if tmin > debuff_duration and debuff_duration > tmin_cd then
+	-- 	return false
+	-- end
+
+	-- if tmin < debuff_duration and debuff_duration < tmin_cd then
+	-- 	return true
+	-- end
+	end
+
+	return false
 end
 
 xPestilenceSS = xVermin.PestilenceSS
+
+-- UIParent:HookScript('OnUpdate', xPestilenceSS)
