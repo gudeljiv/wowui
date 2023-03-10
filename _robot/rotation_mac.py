@@ -1,10 +1,3 @@
-from datetime import datetime
-from skimage.metrics import structural_similarity
-from os.path import exists
-from os import listdir
-from os.path import isfile, join
-from pyautogui import *
-from pynput import keyboard
 from libs.resources import skills
 from libs.resources import color
 from libs.resources import monitor_settings
@@ -25,11 +18,17 @@ import numpy
 import math
 import random
 
-import win32gui
-from win32api import GetSystemMetrics
-from libs.ctypes_custom import KeyPress as cKeyPress
-from libs.interception import *
-driver = interception()
+from AppKit import NSScreen
+from AppKit import NSWorkspace
+from libs.resources import keyCodeMap_OSX
+
+from pynput import keyboard
+from pyautogui import *
+from os.path import isfile, join
+from os import listdir
+from os.path import exists
+from skimage.metrics import structural_similarity
+from datetime import datetime
 
 
 combat = False
@@ -39,8 +38,8 @@ pause = True
 wow_class = "warrior"
 color_distance = 50
 
-screen_width = GetSystemMetrics(0)
-screen_height = GetSystemMetrics(1)
+screen_width = NSScreen.mainScreen().frame().size.width
+screen_height = NSScreen.mainScreen().frame().size.height
 
 monitor = str(screen_width)
 
@@ -57,8 +56,9 @@ p_clss_left = monitor_settings[monitor]["p_clss_left"]
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-abilities_folder = dir_path + "\images\\" + monitor
-debug_folder = dir_path + "\images\\_\\"
+abilities_folder = dir_path + "/images/" + monitor
+debug_folder = dir_path + "/images/_/"
+
 
 # default class
 wow_class_loaded = wow_class
@@ -124,7 +124,7 @@ def on_press(key):
                 pyautogui.FAILSAFE = False
             else:
                 pyautogui.hotkey("home")
-                pyautogui.PAUSE = 0.05
+                pyautogui.PAUSE = 0.1
                 pyautogui.FAILSAFE = True
     except:
         return
@@ -252,7 +252,11 @@ def main_rotation(main_skill, main_abilities):
                 if score*100 > 90:
                     if dprint:
                         print_debug(ability, score)
-                    press_interception_key(ability["key"], "modifier" in ability.keys() and ability["modifier"] or False)
+
+                    if "modifier" in ability.keys():
+                        pyautogui.hotkey(keyCodeMap_OSX[ability["modifier"].upper()], ability["key"])
+                    else:
+                        pyautogui.hotkey(ability["key"])
             except Exception as e:
                 print(e)
                 print("score, diff not found for main ability", ability["name"], datetime.now().strftime("%H:%M:%S"))
@@ -273,7 +277,11 @@ def secondary_rotation(secondary_skill, secondary_abilities):
                     if score*100 > 90:
                         if dprint:
                             print_debug(ability, score)
-                        press_interception_key(ability["key"], "modifier" in ability.keys() and ability["modifier"] or False)
+
+                        if "modifier" in ability.keys():
+                            pyautogui.hotkey(keyCodeMap_OSX[ability["modifier"].upper()], ability["key"])
+                        else:
+                            pyautogui.hotkey(ability["key"])
                 except Exception as e:
                     print(e)
                     print("score, diff not found for offgcd", ability["name"], datetime.now().strftime("%H:%M:%S"))
@@ -307,9 +315,8 @@ with keyboard.Listener(on_press=on_press) as listener:
                 time.sleep(random.uniform(0.001, 0.03))
 
                 start_time = time.time()
-                active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
-# defining regions
+    # defining regions
                 p_main = {"top": 2, "left": 2, "width": x, "height": y}
                 p_offgcd = {"top": 2, "left":  p_offgcd_left, "width": x, "height": y}
                 p_combat = {"top": 0, "left": p_combat_left, "width": c_width, "height": c_height}
@@ -317,7 +324,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                 p_behind = {"top": 0, "left": p_behind_left, "width": c_width, "height": c_height}
                 p_clss = {"top": 0, "left": p_clss_left, "width": c_width, "height": c_height}
 
-# grabbing images from regions
+    # grabbing images from regions
                 main_image = sct.grab(p_main)
                 offgcd_image = sct.grab(p_offgcd)
                 combat = sct.grab(p_combat).pixel(math.floor(c_width/2), math.floor(c_height/2))
@@ -329,18 +336,18 @@ with keyboard.Listener(on_press=on_press) as listener:
                     mss.tools.to_png(main_image.rgb, main_image.size, output=debug_folder + "1. main.png".format(**p_main))
                     mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=debug_folder + "6. offgcd.png".format(**p_offgcd))
 
-# matching closest class color to define in colors
+    # matching closest class color to define in colors
                 found_class, hex = get_class(clss, color_distance)
                 if not found_class:
                     continue
 
-# defining class
+    # defining class
                 try:
                     wow_class = color[hex]
                 except:
                     wow_class = "warrior"
 
-# loading skills for a class if changed
+    # loading skills for a class if changed
                 if wow_class_loaded != wow_class:
                     # print("class changed: ", wow_class_loaded, "->", wow_class, "..", hex, clss, color_distance, color[hex], datetime.now().strftime("%H:%M:%S"))
                     print("class changed:", wow_class_loaded.upper(), "->", wow_class.upper())
@@ -350,10 +357,8 @@ with keyboard.Listener(on_press=on_press) as listener:
                     wow_class_loaded = wow_class
                     pyautogui.hotkey(pause and "end" or "home")
 
-# actual rotation
+    # actual rotation
                 if not pause:
-                    if active_window != "World of Warcraft":
-                        continue
 
                     # skipping combat, chat open
                     # any other reason
@@ -361,15 +366,17 @@ with keyboard.Listener(on_press=on_press) as listener:
                     if combat == (255, 255, 255):
                         continue
 
-# interrupt indicator
+    # interrupt indicator
                     # white --> green
                     if interrupt == (0, 255, 0):
-                        press_interception_key("F9")
+                        pyautogui.hotkey("f9")
 
-# rotation
                     main_skill = numpy.array(main_image)[:, :, :3]
                     secondary_skill = numpy.array(offgcd_image)[:, :, :3]
-                    _thread.start_new_thread(whole_rotation, (main_skill, secondary_skill, main_abilities, secondary_abilities))
+
+        # rotation
+                    main_rotation(main_skill, main_abilities)
+                    secondary_rotation(secondary_skill, secondary_abilities)
 
             except KeyboardInterrupt:
                 print("Script unloaded and closed.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"))
