@@ -26,7 +26,8 @@ else:
     import win32gui
     from win32api import GetSystemMetrics
     from libs.ctypes_custom import KeyPress as cKeyPress
-
+    # from libs.interception import *
+    # driver = interception()
 
 from pynput import keyboard
 from pyautogui import *
@@ -36,8 +37,6 @@ from os.path import exists
 from skimage.metrics import structural_similarity
 from datetime import datetime
 
-from libs.interception import *
-driver = interception()
 
 combat = False
 dprint = False
@@ -275,14 +274,14 @@ def main_rotation(main_skill, main_abilities):
                         if os.name == "posix":
                             pyautogui.hotkey(keyCodeMap_OSX[ability["modifier"].upper()], ability["key"])
                         else:
-                            # cKeyPress(ability["key"], ability["modifier"])
-                            press_interception_key(ability["key"], ability["modifier"])
+                            cKeyPress(ability["key"], ability["modifier"])
+                            # press_interception_key(ability["key"], ability["modifier"])
                     else:
                         if os.name == "posix":
                             pyautogui.hotkey(ability["key"])
                         else:
-                            # cKeyPress(ability["key"])
-                            press_interception_key(ability["key"])
+                            cKeyPress(ability["key"])
+                            # press_interception_key(ability["key"])
             except Exception as e:
                 print(e)
                 print("score, diff not found for main ability", ability["name"], datetime.now().strftime("%H:%M:%S"))

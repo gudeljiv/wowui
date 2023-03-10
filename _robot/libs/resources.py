@@ -42,6 +42,7 @@ skills["offgcd"]["death knight"] = [
     {"name": "empower rune weapon", "type": "GetSpellTexture", "id": 47568, "key": "8"},
     {"name": "vampiric blood", "type": "GetSpellTexture", "id": 55233, "key": "6"},
     {"name": "icebound fortitude", "type": "GetSpellTexture", "id": 48792, "key": "t"},
+    {"name": "unbreakable armor", "type": "GetSpellTexture", "id": 51271, "key": "h"},
 ]
 
 skills["offgcd"]["hunter"] = [
@@ -162,7 +163,6 @@ skills["death knight"] = [
     {"name": "howling blast", "type": "GetSpellTexture", "id": 51410, "key": "9"},
     {"name": "obliterate", "type": "GetSpellTexture", "id": 51424, "key": "5"},
     {"name": "frost strike", "type": "GetSpellTexture", "id": 51419, "key": "6"},
-    {"name": "unbreakable armor", "type": "GetSpellTexture", "id": 51271, "key": "h"},
     {"name": "mark of blood", "type": "GetSpellTexture", "id": 49005, "key": "k"},
 ]
 

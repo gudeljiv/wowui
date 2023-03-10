@@ -1,5 +1,7 @@
 local _, xVermin = ...
 
+xRTF(1, 1, aura_env.nextAction)
+
 local DKrot = function()
 	local lastAction = aura_env.nextAction
 	local timeNow = GetTime()
