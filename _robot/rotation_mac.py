@@ -3,13 +3,9 @@ from libs.resources import color
 from libs.resources import monitor_settings
 from libs.resources import keyCodeMap
 
-
 import time
-import _thread
-
 import cv2
 import pyautogui
-
 import os
 import sys
 import mss
@@ -66,41 +62,6 @@ print("Script loaded and ready.", "Monitor:", screen_width, screen_height, datet
 print("print:", dprint)
 print("debug:", debug)
 print("rotation:", not pause)
-
-
-def toKeyCode(c):
-    keyCode = keyCodeMap[c]
-    return int(keyCode, base=16)
-
-
-def get_keyboard_driver():
-    for i in range(MAX_DEVICES):
-        if interception.is_keyboard(i):
-            keyboard = i
-            return keyboard
-
-
-def PressKey(key):
-    interception_press = key_stroke(key, interception_key_state.INTERCEPTION_KEY_DOWN.value, 0)
-    driver.send(get_keyboard_driver(), interception_press)
-    return interception_press
-
-
-def ReleaseKey(interception_press):
-    interception_press.state = interception_key_state.INTERCEPTION_KEY_UP.value
-    driver.send(get_keyboard_driver(), interception_press)
-
-
-def press_interception_key(key, modifier=False):
-
-    m = modifier and toKeyCode(modifier.upper())
-
-    if m:
-        rm = PressKey(m)
-    r = PressKey(toKeyCode(key.upper()))
-    ReleaseKey(r)
-    if m:
-        ReleaseKey(rm)
 
 
 def on_press(key):
