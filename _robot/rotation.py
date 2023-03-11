@@ -1,4 +1,19 @@
-from datetime import datetime
+from libs.interception import *
+from libs.ctypes_custom import KeyPress as cKeyPress
+from win32api import GetSystemMetrics
+import win32gui
+import random
+import math
+import numpy
+import mss.tools
+import mss
+import sys
+import os
+import pyautogui
+import cv2
+import _thread
+import time
+from datetime import datetime as dt
 from skimage.metrics import structural_similarity
 from os.path import exists
 from os import listdir
@@ -10,25 +25,6 @@ from libs.resources import color
 from libs.resources import monitor_settings
 from libs.resources import keyCodeMap
 
-
-import time
-import _thread
-
-import cv2
-import pyautogui
-
-import os
-import sys
-import mss
-import mss.tools
-import numpy
-import math
-import random
-
-import win32gui
-from win32api import GetSystemMetrics
-from libs.ctypes_custom import KeyPress as cKeyPress
-from libs.interception import *
 driver = interception()
 
 
@@ -60,9 +56,10 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 abilities_folder = dir_path + "\images\\" + monitor
 debug_folder = dir_path + "\images\\_\\"
 
+
 # default class
 wow_class_loaded = wow_class
-print("Script loaded and ready.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"))
+print("Script loaded and ready.", "Monitor:", screen_width, screen_height, dt.now().strftime("%H:%M:%S"))
 print("print:", dprint)
 print("debug:", debug)
 print("rotation:", not pause)
@@ -171,7 +168,7 @@ def load_skills_healing(wow_class):
             healing[skill["name"]]["name"] = skill["name"]
     except Exception as e:
         print(e)
-        print("healing abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
+        print("healing abilities missing", wow_class, dt.now().strftime("%H:%M:%S"))
 
     return healing
 
@@ -190,7 +187,7 @@ def load_skills_globals(wow_class):
             global_skills[skill["name"]]["name"] = skill["name"]
     except Exception as e:
         print(e)
-        print("global abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
+        print("global abilities missing", wow_class, dt.now().strftime("%H:%M:%S"))
 
     return global_skills
 
@@ -209,7 +206,7 @@ def load_skills_main(wow_class):
             main_abilities[skill["name"]]["name"] = skill["name"]
     except Exception as e:
         print(e)
-        print("main abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
+        print("main abilities missing", wow_class, dt.now().strftime("%H:%M:%S"))
 
     return main_abilities
 
@@ -228,7 +225,7 @@ def load_skills_secondary(wow_class):
             secondary_abilities[skill["name"]]["name"] = skill["name"]
     except Exception as e:
         print(e)
-        print("offgcd abilities missing", wow_class, datetime.now().strftime("%H:%M:%S"))
+        print("offgcd abilities missing", wow_class, dt.now().strftime("%H:%M:%S"))
 
     return secondary_abilities
 
@@ -239,7 +236,7 @@ def print_debug(ability, score=False):
     key = '{0: <5}'.format(ability["key"])
     score = '{0: <8}'.format('{:.2f}'.format(score*100))
     ms = '{0: <8}'.format(f"{round(1000 * (time.time() - start_time))} ms")
-    dtime = '{0: <20}'.format(datetime.now().strftime("%H:%M:%S"))
+    dtime = '{0: <20}'.format(dt.now().strftime("%H:%M:%S"))
     print(skill, modifier, key, score, ms, dtime)
 
 
@@ -255,11 +252,11 @@ def main_rotation(main_skill, main_abilities):
                     press_interception_key(ability["key"], "modifier" in ability.keys() and ability["modifier"] or False)
             except Exception as e:
                 print(e)
-                print("score, diff not found for main ability", ability["name"], datetime.now().strftime("%H:%M:%S"))
+                print("score, diff not found for main ability", ability["name"], dt.now().strftime("%H:%M:%S"))
                 pause = True
     except Exception as e:
         print(e)
-        print("error skill loop", datetime.now().strftime("%H:%M:%S"))
+        print("error skill loop", dt.now().strftime("%H:%M:%S"))
         pause = True
 
 
@@ -276,11 +273,11 @@ def secondary_rotation(secondary_skill, secondary_abilities):
                         press_interception_key(ability["key"], "modifier" in ability.keys() and ability["modifier"] or False)
                 except Exception as e:
                     print(e)
-                    print("score, diff not found for offgcd", ability["name"], datetime.now().strftime("%H:%M:%S"))
+                    print("score, diff not found for offgcd", ability["name"], dt.now().strftime("%H:%M:%S"))
                     pause = True
     except Exception as e:
         print(e)
-        print("offgcd error missing class --> ", wow_class, datetime.now().strftime("%H:%M:%S"))
+        print("offgcd error missing class --> ", wow_class, dt.now().strftime("%H:%M:%S"))
         pause = True
 
 
@@ -342,7 +339,7 @@ with keyboard.Listener(on_press=on_press) as listener:
 
 # loading skills for a class if changed
                 if wow_class_loaded != wow_class:
-                    # print("class changed: ", wow_class_loaded, "->", wow_class, "..", hex, clss, color_distance, color[hex], datetime.now().strftime("%H:%M:%S"))
+                    # print("class changed: ", wow_class_loaded, "->", wow_class, "..", hex, clss, color_distance, color[hex], dt.now().strftime("%H:%M:%S"))
                     print("class changed:", wow_class_loaded.upper(), "->", wow_class.upper())
                     main_abilities = load_skills_main(wow_class)
                     secondary_abilities = load_skills_secondary(wow_class)
@@ -372,7 +369,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                     _thread.start_new_thread(whole_rotation, (main_skill, secondary_skill, main_abilities, secondary_abilities))
 
             except KeyboardInterrupt:
-                print("Script unloaded and closed.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"))
+                print("Script unloaded and closed.", "Monitor:", screen_width, screen_height, dt.now().strftime("%H:%M:%S"))
                 try:
                     sys.exit(130)
                 except SystemExit:
