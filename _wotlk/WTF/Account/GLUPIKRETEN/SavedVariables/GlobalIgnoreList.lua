@@ -57,7 +57,7 @@ GlobalIgnoreDB = {
 		"[contains=WTS] or [contains=WTB]", -- [9]
 		"[nonlatin]", -- [10]
 	},
-	["autoUpdate"] = true,
+	["autoTime"] = 600,
 	["autoCount"] = 3,
 	["sameserver"] = true,
 	["ignoreList"] = {
@@ -90,7 +90,7 @@ GlobalIgnoreDB = {
 		"Nékosenshi-Golemagg", -- [27]
 		"Rikaya-Golemagg", -- [28]
 	},
-	["autoTime"] = 600,
+	["trackChanges"] = true,
 	["autoIgnore"] = true,
 	["factionList"] = {
 		"Horde", -- [1]
@@ -250,64 +250,92 @@ GlobalIgnoreDB = {
 		"", -- [27]
 		"rude moron", -- [28]
 	},
-	["trackChanges"] = true,
+	["autoUpdate"] = true,
 	["samefaction"] = true,
 	["syncInfo"] = {
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [1]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [2]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [3]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [4]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [5]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [6]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [7]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [8]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [9]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [10]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [11]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [12]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [13]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [14]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [15]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [16]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [17]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [18]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [19]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [20]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [21]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [22]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [23]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [24]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [25]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [26]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [27]
 		{
+			"Tadibey-Golemagg@1", -- [1]
 		}, -- [28]
 	},
 }

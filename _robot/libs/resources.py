@@ -62,7 +62,10 @@ skills["offgcd"]["paladin"] = [
 
 skills["offgcd"]["priest"] = []
 skills["offgcd"]["warlock"] = []
-skills["offgcd"]["shaman"] = []
+skills["offgcd"]["shaman"] = [
+    {"name": "totem strength", "type": "GetSpellTexture", "id": 8075, "key": "numpad1"},
+    {"name": "totem searing", "type": "GetSpellTexture", "id": 3599, "key": "numpad2"},
+]
 
 
 skills["warrior"] = [
@@ -204,6 +207,9 @@ skills["shaman"] = [
     {"name": "rockbiter weapon", "type": "GetSpellTexture", "id": 8017, "key": "f1"},
     {"name": "flametongue weapon", "type": "GetSpellTexture", "id": 8024, "key": "f2"},
     {"name": "flame shock", "type": "GetSpellTexture", "id": 8050, "key": "4"},
+    {"name": "earth shock", "type": "GetSpellTexture", "id": 8045, "key": "5"},
+    {"name": "cure toxins", "type": "GetSpellTexture", "id": 526, "key": "t"},
+    {"name": "fire nova", "type": "GetSpellTexture", "id": 1535, "key": "k"},
 ]
 skills["priest"] = []
 
