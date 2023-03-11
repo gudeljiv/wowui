@@ -40,9 +40,12 @@ VER 3 000000000100000B " " "134400"
 #showtooltip
 /cast Unbreakable Armor
 /cast Blood Tap
-/cancelaura Blood Tap
 END
 VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@player]Death and Decay
+END
+VER 3 000000000100000D " " "134400"
+#showtooltip
+/cast Empower Rune Weapon
 END
