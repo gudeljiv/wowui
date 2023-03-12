@@ -1,6 +1,5 @@
-from libs.resources import skills
-from libs.resources import color
-from libs.resources import monitor_settings
+from libs.resources_new import data
+from libs.resources_new import monitor_settings
 
 import time
 import pyautogui
@@ -120,6 +119,7 @@ with keyboard.Listener(on_press=on_press) as listener:
 
         while True:
             start_time = time.time()
+            # time.sleep(1)
 
             p_main = {"top": 2, "left": 2, "width": x, "height": y}
             p_offgcd = {"top": 2, "left":  p_offgcd_left, "width": x, "height": y}
@@ -132,24 +132,22 @@ with keyboard.Listener(on_press=on_press) as listener:
             clss = clss_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
             hex = '#%02x%02x%02x' % clss
 
+            time.sleep(1)
             # matching closest class color to define in colors
             color_distance = 50
             found_class = False
-            for c in color:
-                rgb = parse_hex_color(c)
-                # print(color[c], c, rgb, clss, color_similarity(rgb, clss))
-                if color_similarity(rgb, clss) <= color_distance:
+
+            for item in data["colors"]:
+                for c in data["colors"][item]:
+                    rgb = parse_hex_color(c)
                     color_distance = color_similarity(rgb, clss)
-                    hex = c
-                    found_class = True
+                    if color_similarity(rgb, clss) <= color_distance:
+                        hex = c
+                        found_class = True
+                        wow_class = item
 
             if not found_class:
                 continue
-
-            try:
-                wow_class = color[hex]
-            except:
-                wow_class = "warrior"
 
             folders = [abilities_folder + slash + wow_class, abilities_folder + slash + "healing", abilities_folder + slash + "globals"]
 
@@ -186,7 +184,7 @@ with keyboard.Listener(on_press=on_press) as listener:
 
                 # for wow_class in classes:
 
-                for skill in skills[wow_class]:
+                for skill in data[wow_class]["main"]:
                     number = number + 1
                     main_image = False
                     pyautogui.hotkey("enter")
@@ -207,7 +205,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                     print_debug(number, wow_class, skill["name"], abilities_folder + slash + wow_class + slash + skill["name"] + " M.png")
                     time.sleep(time2)
 
-                for skill in skills["offgcd"][wow_class]:
+                for skill in data[wow_class]["secondary"]:
                     number = number + 1
                     offgcd_image = False
                     pyautogui.hotkey("enter")
@@ -228,7 +226,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                     print_debug(number, wow_class, skill["name"], abilities_folder + slash + skill["name"] + " O.png")
                     time.sleep(time2)
 
-                for skill in skills["healing"]:
+                for skill in data["healing"]:
                     number = number + 1
                     main_image = False
                     pyautogui.hotkey("enter")
@@ -249,7 +247,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                     print_debug(number, wow_class, skill["name"], abilities_folder + slash + "healing" + slash + skill["name"] + " H.png")
                     time.sleep(time2)
 
-                for skill in skills["globals"]:
+                for skill in data["globals"]:
                     number = number + 1
                     main_image = False
                     pyautogui.hotkey("enter")

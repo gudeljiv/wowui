@@ -1,17 +1,18 @@
 
 RXPCData = {
-	["GA"] = false,
+	["currentGuideName"] = "",
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
-	["currentGuideName"] = "",
+	["GA"] = true,
+	["currentGuideGroup"] = "",
+	["flightPaths"] = {
+		[80] = "Ratchet, The Barrens",
+		[23] = "Orgrimmar, Durotar",
+		[25] = "Crossroads, The Barrens",
+	},
 	["stepSkip"] = {
 	},
-	["flightPaths"] = {
-		[23] = "Orgrimmar, Durotar",
-		[80] = "Ratchet, The Barrens",
-	},
-	["currentGuideGroup"] = "",
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -50,6 +51,33 @@ RXPCComms = {
 	},
 	["profiles"] = {
 		["Tadibey - Golemagg"] = {
+			["players"] = {
+				["Dámp"] = {
+					["timePlayed"] = 0,
+					["class"] = "PRIEST",
+					["xp"] = 1260,
+				},
+				["Wlm"] = {
+					["timePlayed"] = 0,
+					["class"] = "PALADIN",
+					["xp"] = 1260,
+				},
+				["Shekills"] = {
+					["timePlayed"] = 0,
+					["class"] = "ROGUE",
+					["xp"] = 1260,
+				},
+				["Hänty"] = {
+					["timePlayed"] = 0,
+					["class"] = "WARLOCK",
+					["xp"] = 1260,
+				},
+				["Tömeg"] = {
+					["timePlayed"] = 578.914999999979,
+					["class"] = "DRUID",
+					["xp"] = 58,
+				},
+			},
 		},
 	},
 }
@@ -60,12 +88,11 @@ RXPCSettings = {
 	["profiles"] = {
 		["Tadibey - Golemagg"] = {
 			["notifyOnTargetUpdates"] = false,
-			["enableTargetMacro"] = false,
 			["hideGuideWindow"] = false,
 			["enableFPAutomation"] = false,
 			["hardcore"] = false,
 			["enableLevelUpAnnounceGroup"] = false,
-			["xprate"] = 1.2,
+			["enableTargetMacro"] = false,
 			["enableMinimapButton"] = false,
 			["activeItemsScale"] = 1.2,
 			["checkVersions"] = false,
@@ -73,8 +100,9 @@ RXPCSettings = {
 			["lockFrames"] = false,
 			["enableTracker"] = false,
 			["enableBindAutomation"] = false,
+			["xprate"] = 1.2,
 			["enableLevelUpAnnounceSolo"] = false,
-			["frameHeight"] = 125.0000228881836,
+			["frameHeight"] = 125.000114440918,
 			["alwaysSendBranded"] = false,
 			["enableQuestRewardAutomation"] = true,
 			["hideInRaid"] = false,

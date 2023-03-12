@@ -6,7 +6,6 @@ skills["globals"] = [
     # {"name": "flame spike", "type": "GetSpellTexture", "id": 56091, "key": "1"},
     # {"name": "engulf in flames", "type": "GetSpellTexture", "id": 56092, "key": "2"},
     # {"name": "battlemaster's resolve", "type": "GetItemIcon", "id": 41589, "key": "1", "modifier": "lalt"},
-
 ]
 
 skills["healing"] = [
@@ -62,7 +61,10 @@ skills["offgcd"]["paladin"] = [
 
 skills["offgcd"]["priest"] = []
 skills["offgcd"]["warlock"] = []
-skills["offgcd"]["shaman"] = []
+skills["offgcd"]["shaman"] = [
+    {"name": "totem strength", "type": "GetSpellTexture", "id": 8075, "key": "numpad1"},
+    {"name": "totem searing", "type": "GetSpellTexture", "id": 3599, "key": "numpad2"},
+]
 
 
 skills["warrior"] = [
@@ -200,10 +202,13 @@ skills["rogue"] = [
 skills["shaman"] = [
     {"name": "lighning bolt", "type": "GetSpellTexture", "id": 403, "key": "1"},
     {"name": "healing wave", "type": "GetSpellTexture", "id": 331, "key": "e"},
-    {"name": "lightning shield", "type": "GetSpellTexture", "id": 324, "key": "k"},
+    {"name": "lightning shield", "type": "GetSpellTexture", "id": 324, "key": "v"},
     {"name": "rockbiter weapon", "type": "GetSpellTexture", "id": 8017, "key": "f1"},
     {"name": "flametongue weapon", "type": "GetSpellTexture", "id": 8024, "key": "f2"},
     {"name": "flame shock", "type": "GetSpellTexture", "id": 8050, "key": "4"},
+    {"name": "earth shock", "type": "GetSpellTexture", "id": 8045, "key": "5"},
+    {"name": "cure toxins", "type": "GetSpellTexture", "id": 526, "key": "t"},
+    {"name": "fire nova", "type": "GetSpellTexture", "id": 1535, "key": "k"},
 ]
 skills["priest"] = []
 
@@ -217,6 +222,7 @@ color["#dd365a"] = "death knight"
 color["#ffacd4"] = "paladin"
 color["#ffff8b"] = "rogue"
 color["#0092f1"] = "shaman"
+color["#4090ea"] = "shaman"
 
 monitor_settings = dict()
 monitor_settings["3840"] = {

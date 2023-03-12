@@ -278,7 +278,7 @@ SpellActivationOverlayDB = {
 		},
 	},
 	["glow"] = {
-		["enabled"] = true,
+		["enabled"] = false,
 	},
 	["alert"] = {
 		["enabled"] = true,
