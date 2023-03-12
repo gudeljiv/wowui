@@ -1,18 +1,18 @@
 
 RXPCData = {
-	["stepSkip"] = {
-	},
+	["GA"] = true,
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
 	["currentGuideName"] = "",
-	["currentGuideGroup"] = "",
+	["stepSkip"] = {
+	},
 	["flightPaths"] = {
 		[80] = "Ratchet, The Barrens",
 		[23] = "Orgrimmar, Durotar",
 		[25] = "Crossroads, The Barrens",
 	},
-	["GA"] = true,
+	["currentGuideGroup"] = "",
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -31,10 +31,10 @@ RXPCTrackingData = {
 							["monthDay"] = 30,
 							["day"] = 0,
 							["month"] = 12,
-							["weekday"] = 6,
+							["minute"] = 30,
 							["year"] = 2022,
 							["hour"] = 13,
-							["minute"] = 30,
+							["weekday"] = 6,
 						},
 						["started"] = 0,
 					},
@@ -52,11 +52,6 @@ RXPCComms = {
 	["profiles"] = {
 		["Tadibey - Golemagg"] = {
 			["players"] = {
-				["Hänty"] = {
-					["timePlayed"] = 0,
-					["class"] = "WARLOCK",
-					["xp"] = 1260,
-				},
 				["Dámp"] = {
 					["timePlayed"] = 0,
 					["class"] = "PRIEST",
@@ -71,6 +66,16 @@ RXPCComms = {
 					["timePlayed"] = 0,
 					["class"] = "ROGUE",
 					["xp"] = 1260,
+				},
+				["Hänty"] = {
+					["timePlayed"] = 0,
+					["class"] = "WARLOCK",
+					["xp"] = 1260,
+				},
+				["Tömeg"] = {
+					["timePlayed"] = 578.914999999979,
+					["class"] = "DRUID",
+					["xp"] = 58,
 				},
 			},
 		},
@@ -87,21 +92,21 @@ RXPCSettings = {
 			["enableFPAutomation"] = false,
 			["hardcore"] = false,
 			["enableLevelUpAnnounceGroup"] = false,
-			["enableTargetAutomation"] = false,
+			["enableTargetMacro"] = false,
 			["enableMinimapButton"] = false,
 			["activeItemsScale"] = 1.2,
 			["checkVersions"] = false,
-			["enableTargetMacro"] = false,
+			["enableTargetAutomation"] = false,
 			["lockFrames"] = false,
 			["enableTracker"] = false,
 			["enableBindAutomation"] = false,
 			["xprate"] = 1.2,
 			["enableLevelUpAnnounceSolo"] = false,
-			["enableFlyStepAnnouncements"] = false,
+			["frameHeight"] = 125.000114440918,
 			["alwaysSendBranded"] = false,
 			["enableQuestRewardAutomation"] = true,
 			["hideInRaid"] = false,
-			["frameHeight"] = 125.0000152587891,
+			["enableFlyStepAnnouncements"] = false,
 		},
 	},
 }

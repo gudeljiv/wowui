@@ -223,6 +223,7 @@ color["#dd365a"] = "death knight"
 color["#ffacd4"] = "paladin"
 color["#ffff8b"] = "rogue"
 color["#0092f1"] = "shaman"
+color["#4090ea"] = "shaman"
 
 monitor_settings = dict()
 monitor_settings["3840"] = {

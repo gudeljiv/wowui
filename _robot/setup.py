@@ -120,6 +120,7 @@ with keyboard.Listener(on_press=on_press) as listener:
 
         while True:
             start_time = time.time()
+            # time.sleep(1)
 
             p_main = {"top": 2, "left": 2, "width": x, "height": y}
             p_offgcd = {"top": 2, "left":  p_offgcd_left, "width": x, "height": y}
@@ -132,12 +133,12 @@ with keyboard.Listener(on_press=on_press) as listener:
             clss = clss_image.pixel(math.floor(c_width/2), math.floor(c_height/2))
             hex = '#%02x%02x%02x' % clss
 
+            time.sleep(1)
             # matching closest class color to define in colors
             color_distance = 50
             found_class = False
             for c in color:
                 rgb = parse_hex_color(c)
-                # print(color[c], c, rgb, clss, color_similarity(rgb, clss))
                 if color_similarity(rgb, clss) <= color_distance:
                     color_distance = color_similarity(rgb, clss)
                     hex = c
@@ -186,6 +187,7 @@ with keyboard.Listener(on_press=on_press) as listener:
 
                 # for wow_class in classes:
 
+                print(wow_class)
                 for skill in skills[wow_class]:
                     number = number + 1
                     main_image = False

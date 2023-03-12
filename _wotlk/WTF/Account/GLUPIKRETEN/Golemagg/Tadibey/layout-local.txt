@@ -39,7 +39,7 @@ FrameLevel: 1
 Anchor: CENTER
 X: 313
 Y: -74
-W: 80
+W: 81
 H: 40
 Frame: Dejunk_JunkFrame
 FrameLevel: 2
@@ -48,10 +48,3 @@ X: -358
 Y: -209
 W: 325
 H: 375
-Frame: TellMeWhen_ConfigWarning
-FrameLevel: 1
-Anchor: TOP
-X: 0
-Y: -157
-W: 330
-H: 114
