@@ -41,6 +41,13 @@ X: 313
 Y: -74
 W: 81
 H: 40
+Frame: ItemRefTooltip
+FrameLevel: 1
+Anchor: CENTER
+X: 104
+Y: 219
+W: 372
+H: 384
 Frame: Dejunk_JunkFrame
 FrameLevel: 2
 Anchor: TOPRIGHT

@@ -57,21 +57,21 @@ local HandleUnit = function(unit)
 		end
 
 		-- DEATHKNIGHT INTERRUPT
-		if (xVermin.Class == 'DEATHKNIGHT') then
+		if xVermin.Class == 'DEATHKNIGHT' then
 			if select(2, GetSpellCooldown('Mind Freeze')) == 0 and IsSpellInRange('Mind Freeze', unit) == 1 then
 				HandleRotationFrame(true)
 			end
 		end
 
 		-- SHAMAN INTERRUPT
-		if (xVermin.Class == 'SHAMAN') then
+		if xVermin.Class == 'SHAMAN' then
 			if select(2, GetSpellCooldown('Wind Shear')) == 0 and IsSpellInRange('Wind Shear', unit) == 1 then
 				HandleRotationFrame(true)
 			end
 		end
 
 		-- HUNTER INTERRUPT
-		if (xVermin.Class == 'HUNTER') then
+		if xVermin.Class == 'HUNTER' then
 			if select(2, GetSpellCooldown('Silencing Shot')) == 0 and IsSpellInRange('Silencing Shot', unit) == 1 then
 				HandleRotationFrame(true)
 			end
