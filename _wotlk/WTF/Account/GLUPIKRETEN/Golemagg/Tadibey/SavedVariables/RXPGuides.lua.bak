@@ -1,18 +1,18 @@
 
 RXPCData = {
-	["stepSkip"] = {
-	},
+	["currentGuideGroup"] = "",
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
-	["currentGuideName"] = "",
-	["currentGuideGroup"] = "",
+	["GA"] = true,
+	["stepSkip"] = {
+	},
 	["flightPaths"] = {
 		[80] = "Ratchet, The Barrens",
 		[23] = "Orgrimmar, Durotar",
 		[25] = "Crossroads, The Barrens",
 	},
-	["GA"] = true,
+	["currentGuideName"] = "",
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -52,11 +52,6 @@ RXPCComms = {
 	["profiles"] = {
 		["Tadibey - Golemagg"] = {
 			["players"] = {
-				["Hänty"] = {
-					["timePlayed"] = 0,
-					["class"] = "WARLOCK",
-					["xp"] = 1260,
-				},
 				["Dámp"] = {
 					["timePlayed"] = 0,
 					["class"] = "PRIEST",
@@ -71,6 +66,16 @@ RXPCComms = {
 					["timePlayed"] = 0,
 					["class"] = "ROGUE",
 					["xp"] = 1260,
+				},
+				["Hänty"] = {
+					["timePlayed"] = 0,
+					["class"] = "WARLOCK",
+					["xp"] = 1260,
+				},
+				["Tömeg"] = {
+					["timePlayed"] = 578.914999999979,
+					["class"] = "DRUID",
+					["xp"] = 58,
 				},
 			},
 		},
@@ -101,7 +106,7 @@ RXPCSettings = {
 			["alwaysSendBranded"] = false,
 			["enableQuestRewardAutomation"] = true,
 			["hideInRaid"] = false,
-			["frameHeight"] = 125.0000152587891,
+			["frameHeight"] = 125.000114440918,
 		},
 	},
 }

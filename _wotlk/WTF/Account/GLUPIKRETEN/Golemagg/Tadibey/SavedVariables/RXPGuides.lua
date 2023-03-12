@@ -1,18 +1,18 @@
 
 RXPCData = {
-	["GA"] = true,
+	["currentGuideName"] = "",
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
-	["currentGuideName"] = "",
-	["stepSkip"] = {
-	},
+	["GA"] = true,
+	["currentGuideGroup"] = "",
 	["flightPaths"] = {
 		[80] = "Ratchet, The Barrens",
 		[23] = "Orgrimmar, Durotar",
 		[25] = "Crossroads, The Barrens",
 	},
-	["currentGuideGroup"] = "",
+	["stepSkip"] = {
+	},
 }
 RXPCTrackingData = {
 	["profileKeys"] = {

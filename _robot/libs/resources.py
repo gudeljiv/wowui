@@ -6,7 +6,6 @@ skills["globals"] = [
     # {"name": "flame spike", "type": "GetSpellTexture", "id": 56091, "key": "1"},
     # {"name": "engulf in flames", "type": "GetSpellTexture", "id": 56092, "key": "2"},
     # {"name": "battlemaster's resolve", "type": "GetItemIcon", "id": 41589, "key": "1", "modifier": "lalt"},
-
 ]
 
 skills["healing"] = [
