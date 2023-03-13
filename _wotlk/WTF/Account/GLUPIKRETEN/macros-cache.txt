@@ -16,22 +16,22 @@ VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:1205
-/castsequence [combat] reset=combat item:3385,item:2455
+/use [nocombat]item:33445
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:4538
-/castsequence [combat] reset=combat 
+/use [nocombat]item:35953
+/castsequence [combat] reset=combat item:33447
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:35953
+#showtooltip item:0
 /cast feed pet
-/use item:35953
+/use item:0
 END
 VER 3 0000000000000025 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:33447
 END
 VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 #showtooltip Prowl
@@ -50,8 +50,8 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000021 "TEST" "134400"
-/run NEXT_ACTION_TEXT_FRAME:ClearAllPoints()
-/run NEXT_ACTION_TEXT_FRAME:SetPoint('CENTER', UIParent, 'CENTER', 0, 10)
+/run MultiCastActionBarFrame:ClearAllPoints()
+/run MultiCastActionBarFrame:SetPoint('BOTTOMLEFT', MultiBarBottomRightButton1, "TOPLEFT",,5)
 END
 VER 3 0000000000000020 "TSMDestroy" "INV_Misc_Flower_01"
 /tsm destroy

@@ -1,13 +1,13 @@
+VER 3 000000000000000E " " "136106"
+/inspect
+/run SortBags()
+END
 VER 3 0000000000000013 " " "132130"
 /click BehindTarget
 END
 VER 3 0000000000000026 " " "134400"
 #showtooltip item:36912
 /2 WTB Saronite Ore 24g 
-END
-VER 3 000000000000000E " " "136106"
-/inspect
-/run SortBags()
 END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
@@ -16,12 +16,12 @@ VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:33444
-/castsequence [combat] reset=combat item:33448
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:33454
+/use [nocombat]item:35953
 /castsequence [combat] reset=combat item:33447
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
@@ -43,22 +43,15 @@ VER 3 0000000000000010 "RAID" "136047"
 /run InviteUnit("a");C_Timer.After(0.25,function() ConvertToRaid() end)
 END
 VER 3 000000000000001F "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Festering Ghoul
-/targetexact Bone Warrior
-/targetexact Talramas Abomination
-/targetexact Lich-Lord Chillwinter
-/targetexact Doctor Razorgrin
-/targetexact Cult Plaguebringer
-/targetexact Longrunner Bristlehorn
-/cleartarget [dead]
+//RestedXP Guides - current step has no configured targets
 END
 VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
 END
 VER 3 0000000000000021 "TEST" "134400"
-/run NEXT_ACTION_TEXT_FRAME:ClearAllPoints()
-/run NEXT_ACTION_TEXT_FRAME:SetPoint('CENTER', UIParent, 'CENTER', 0, 10)
+/run MultiCastActionBarFrame:ClearAllPoints()
+/run MultiCastActionBarFrame:SetPoint('BOTTOMLEFT', MultiBarBottomRightButton1, "TOPLEFT",,5)
 END
 VER 3 0000000000000020 "TSMDestroy" "INV_Misc_Flower_01"
 /tsm destroy

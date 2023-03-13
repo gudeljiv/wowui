@@ -1,3 +1,7 @@
+from libs.resources_new import data
+from libs.resources_new import monitor_settings
+from libs.resources_new import keyCodeMap
+
 from libs.interception import *
 from libs.ctypes_custom import KeyPress as cKeyPress
 from win32api import GetSystemMetrics
@@ -20,10 +24,6 @@ from os import listdir
 from os.path import isfile, join
 from pyautogui import *
 from pynput import keyboard
-from libs.resources import skills
-from libs.resources import color
-from libs.resources import monitor_settings
-from libs.resources import keyCodeMap
 
 driver = interception()
 
@@ -33,7 +33,7 @@ dprint = False
 debug = False
 pause = True
 wow_class = "warrior"
-color_distance = 50
+color_distance = 10
 
 screen_width = GetSystemMetrics(0)
 screen_height = GetSystemMetrics(1)
@@ -89,9 +89,7 @@ def ReleaseKey(interception_press):
 
 
 def press_interception_key(key, modifier=False):
-
     m = modifier and toKeyCode(modifier.upper())
-
     if m:
         rm = PressKey(m)
     r = PressKey(toKeyCode(key.upper()))
@@ -102,7 +100,6 @@ def press_interception_key(key, modifier=False):
 
 def on_press(key):
     global dprint, pause, debug
-
     try:
         if key == keyboard.Key.f8:
             dprint = not dprint
@@ -141,24 +138,23 @@ def color_similarity(base_col_val, oth_col_val):
 
 
 def get_class(clss, color_distance):
-    hex = '#%02x%02x%02x' % clss
     found_class = False
-    for c in color:
-        rgb = parse_hex_color(c)
-        # print(color[c], c, rgb, clss, color_similarity(rgb, clss))
-        if color_similarity(rgb, clss) <= color_distance:
-            color_distance = color_similarity(rgb, clss)
-            hex = c
-            found_class = True
+    global wow_class
+    for item in data["colors"]:
+        for c in data["colors"][item]:
+            rgb = parse_hex_color(c)
+            if color_similarity(rgb, clss) <= color_distance:
+                found_class = True
+                wow_class = item
 
-    return found_class, hex
+    return found_class, wow_class
 
 
 def load_skills_healing(wow_class):
     # load healing spells
     healing = dict()
     try:
-        for skill in skills["healing"]:
+        for skill in data["healing"]:
             if not skill["name"] in healing:
                 healing[skill["name"]] = {}
             healing[skill["name"]]["image"] = cv2.imread(abilities_folder + "/" + "healing" + "/" + skill["name"] + " H.png")
@@ -177,7 +173,7 @@ def load_skills_globals(wow_class):
     # load global kills
     global_skills = dict()
     try:
-        for skill in skills["globals"]:
+        for skill in data["globals"]:
             if not skill["name"] in global_skills:
                 global_skills[skill["name"]] = {}
             global_skills[skill["name"]]["image"] = cv2.imread(abilities_folder + "/" + "globals" + "/" + skill["name"] + " G.png")
@@ -196,7 +192,7 @@ def load_skills_main(wow_class):
     # load main ability skills
     main_abilities = dict()
     try:
-        for skill in skills[wow_class]:
+        for skill in data[wow_class]["main"]:
             if not skill["name"] in main_abilities:
                 main_abilities[skill["name"]] = {}
             main_abilities[skill["name"]]["image"] = cv2.imread(abilities_folder + "/" + wow_class + "/" + skill["name"] + " M.png")
@@ -215,7 +211,7 @@ def load_skills_secondary(wow_class):
     # load secondary ability skills
     secondary_abilities = dict()
     try:
-        for skill in skills["offgcd"][wow_class]:
+        for skill in data[wow_class]["secondary"]:
             if not skill["name"] in secondary_abilities:
                 secondary_abilities[skill["name"]] = {}
             secondary_abilities[skill["name"]]["image"] = cv2.imread(abilities_folder + "/" + wow_class + "/" + skill["name"] + " O.png")
@@ -263,7 +259,7 @@ def main_rotation(main_skill, main_abilities):
 def secondary_rotation(secondary_skill, secondary_abilities):
     global pause
     try:
-        if skills["offgcd"] and skills["offgcd"][wow_class]:
+        if data[wow_class]["secondary"]:
             for key, ability in secondary_abilities.items():
                 try:
                     score = structural_similarity(ability["image"], secondary_skill, channel_axis=2)
@@ -327,15 +323,9 @@ with keyboard.Listener(on_press=on_press) as listener:
                     mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=debug_folder + "6. offgcd.png".format(**p_offgcd))
 
 # matching closest class color to define in colors
-                found_class, hex = get_class(clss, color_distance)
+                found_class, wow_class = get_class(clss, color_distance)
                 if not found_class:
                     continue
-
-# defining class
-                try:
-                    wow_class = color[hex]
-                except:
-                    wow_class = "warrior"
 
 # loading skills for a class if changed
                 if wow_class_loaded != wow_class:

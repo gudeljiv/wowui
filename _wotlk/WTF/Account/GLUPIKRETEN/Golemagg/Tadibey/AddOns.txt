@@ -34,3 +34,5 @@ GDKPd: enabled
 nTooltip: disabled
 TacoTip: enabled
 GlobalIgnoreList: enabled
+aTotemBar: disabled
+nMainbar: enabled

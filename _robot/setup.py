@@ -32,6 +32,7 @@ mill = False
 dprint = False
 pause = True
 wow_class = "warrior"
+wow_class_loaded = wow_class
 
 if os.name == "posix":
     screen_width = NSScreen.mainScreen().frame().size.width
@@ -113,6 +114,22 @@ count = 0
 number = 0
 
 s, t = "", ""
+color_distance = 10
+
+
+def get_class(clss, color_distance):
+    found_class = False
+    global wow_class
+    for item in data["colors"]:
+        for c in data["colors"][item]:
+            rgb = parse_hex_color(c)
+            if color_similarity(rgb, clss) <= color_distance:
+                found_class = True
+                wow_class = item
+
+    return found_class, wow_class
+
+
 with keyboard.Listener(on_press=on_press) as listener:
 
     with mss.mss() as sct:
@@ -134,20 +151,15 @@ with keyboard.Listener(on_press=on_press) as listener:
 
             time.sleep(1)
             # matching closest class color to define in colors
-            color_distance = 50
             found_class = False
 
-            for item in data["colors"]:
-                for c in data["colors"][item]:
-                    rgb = parse_hex_color(c)
-                    color_distance = color_similarity(rgb, clss)
-                    if color_similarity(rgb, clss) <= color_distance:
-                        hex = c
-                        found_class = True
-                        wow_class = item
-
+            found_class, wow_class = get_class(clss, color_distance)
             if not found_class:
                 continue
+
+            if wow_class_loaded != wow_class:
+                print("class changed:", wow_class_loaded.upper(), "->", wow_class.upper())
+                wow_class_loaded = wow_class
 
             folders = [abilities_folder + slash + wow_class, abilities_folder + slash + "healing", abilities_folder + slash + "globals"]
 

@@ -1,19 +1,19 @@
 
 RXPCData = {
-	["currentGuideGroup"] = "",
+	["GA"] = true,
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
-	["GA"] = true,
+	["currentGuideName"] = "",
 	["stepSkip"] = {
 	},
 	["flightPaths"] = {
-		[25] = "Crossroads, The Barrens",
 		[77] = "Camp Taurajo, The Barrens",
-		[23] = "Orgrimmar, Durotar",
 		[80] = "Ratchet, The Barrens",
+		[23] = "Orgrimmar, Durotar",
+		[25] = "Crossroads, The Barrens",
 	},
-	["currentGuideName"] = "",
+	["currentGuideGroup"] = "",
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -32,10 +32,10 @@ RXPCTrackingData = {
 							["monthDay"] = 30,
 							["day"] = 0,
 							["month"] = 12,
-							["weekday"] = 6,
+							["minute"] = 30,
 							["year"] = 2022,
 							["hour"] = 13,
-							["minute"] = 30,
+							["weekday"] = 6,
 						},
 						["started"] = 0,
 					},
@@ -123,21 +123,21 @@ RXPCSettings = {
 			["enableFPAutomation"] = false,
 			["hardcore"] = false,
 			["enableLevelUpAnnounceGroup"] = false,
-			["enableTargetAutomation"] = false,
+			["enableTargetMacro"] = false,
 			["enableMinimapButton"] = false,
 			["activeItemsScale"] = 1.2,
 			["checkVersions"] = false,
-			["enableTargetMacro"] = false,
+			["enableTargetAutomation"] = false,
 			["lockFrames"] = false,
 			["enableTracker"] = false,
 			["enableBindAutomation"] = false,
 			["xprate"] = 1.2,
 			["enableLevelUpAnnounceSolo"] = false,
-			["enableFlyStepAnnouncements"] = false,
+			["frameHeight"] = 125.0001068115234,
 			["alwaysSendBranded"] = false,
 			["enableQuestRewardAutomation"] = true,
 			["hideInRaid"] = false,
-			["frameHeight"] = 125.000114440918,
+			["enableFlyStepAnnouncements"] = false,
 		},
 	},
 }
