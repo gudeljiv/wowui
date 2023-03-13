@@ -5,168 +5,95 @@ if not L then return end
 L["HIGHLIGHT_HOVEROVER"] = "Hover Over Highlight"
 --[[Translation missing --]]
 L["HIGHLIGHT_HOVEROVER_ALPHA"] = "Hover Over Highlight Alpha"
---[[Translation missing --]]
-L["HIGHLIGHT_HOVEROVER_DESC"] = "Highlight effect when the mouse is over the nameplate."
+L["HIGHLIGHT_HOVEROVER_DESC"] = "Efecto de resaltado cuando el ratón está sobre la placa."
 L["OPTIONS_ALPHA"] = "Alfa"
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_ALPHAMULTIPLIER"] = "Transparency multiplier."
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_DEFAULT"] = "Default Transparency"
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_DEFAULT_DESC"] = "Amount of transparency applyed to all the components of a single nameplate."
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_ENABLE_ENEMIES"] = "Enable For Enemies"
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_ENABLE_ENEMIES_DESC"] = "Apply Transparency settings to enemy units."
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_ENABLE_FRIENDLY"] = "Enable For Friendly"
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_ENABLE_FRIENDLY_DESC"] = "Apply Transparency settings to friendly units."
+L["OPTIONS_ALPHABYFRAME_ALPHAMULTIPLIER"] = "Multiplicador de transparencia."
+L["OPTIONS_ALPHABYFRAME_DEFAULT"] = "Transparencia por defecto"
+L["OPTIONS_ALPHABYFRAME_DEFAULT_DESC"] = "Cantidad de transparencia aplicada a todos los componentes de una misma placa."
+L["OPTIONS_ALPHABYFRAME_ENABLE_ENEMIES"] = "Activar para enemigos"
+L["OPTIONS_ALPHABYFRAME_ENABLE_ENEMIES_DESC"] = "Aplica ajustes de transparencia a las unidades enemigas."
+L["OPTIONS_ALPHABYFRAME_ENABLE_FRIENDLY"] = "Activar para amistosos"
+L["OPTIONS_ALPHABYFRAME_ENABLE_FRIENDLY_DESC"] = "Aplica los ajustes de transparencia a las unidades amistosas."
 --[[Translation missing --]]
 L["OPTIONS_ALPHABYFRAME_TARGET_INRANGE"] = "Target Alpha/In-Range"
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_TARGET_INRANGE_DESC"] = "Transparency for targets or in-range units."
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_TITLE_ENEMIES"] = "Transparency Amount Per Frame (enemies)"
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_TITLE_FRIENDLY"] = "Transparency Amount Per Frame (friendly)"
---[[Translation missing --]]
-L["OPTIONS_AMOUNT"] = "Amount"
-L["OPTIONS_ANCHOR"] = "Ancla"
-L["OPTIONS_ANCHOR_BOTTOM"] = "Fondo"
-L["OPTIONS_ANCHOR_BOTTOMLEFT"] = "Fondo Izquierda"
-L["OPTIONS_ANCHOR_BOTTOMRIGHT"] = "Fondo Derecha"
+L["OPTIONS_ALPHABYFRAME_TARGET_INRANGE_DESC"] = "Transparencia para objetivos o unidades al alcance."
+L["OPTIONS_ALPHABYFRAME_TITLE_ENEMIES"] = "Cantidad de transparencia por fotograma (enemigos)"
+L["OPTIONS_ALPHABYFRAME_TITLE_FRIENDLY"] = "Cantidad de transparencia por fotograma (amistosos)"
+L["OPTIONS_AMOUNT"] = "Cantidad"
+L["OPTIONS_ANCHOR"] = "Anclaje"
+L["OPTIONS_ANCHOR_BOTTOM"] = "Abajo"
+L["OPTIONS_ANCHOR_BOTTOMLEFT"] = "Abajo a la izquierda"
+L["OPTIONS_ANCHOR_BOTTOMRIGHT"] = "Abajo a la derecha"
 L["OPTIONS_ANCHOR_CENTER"] = "Centro"
-L["OPTIONS_ANCHOR_INNERBOTTOM"] = "Fondo Interior"
-L["OPTIONS_ANCHOR_INNERLEFT"] = "Fondo Izquierdo"
-L["OPTIONS_ANCHOR_INNERRIGHT"] = "Fondo Derecho"
-L["OPTIONS_ANCHOR_INNERTOP"] = "Parte Superior Interior"
+L["OPTIONS_ANCHOR_INNERBOTTOM"] = "Abajo por dentro"
+L["OPTIONS_ANCHOR_INNERLEFT"] = "Izquierda por dentro"
+L["OPTIONS_ANCHOR_INNERRIGHT"] = "Derecha por dentro"
+L["OPTIONS_ANCHOR_INNERTOP"] = "Arriba por dentro"
 L["OPTIONS_ANCHOR_LEFT"] = "Izquierda"
 L["OPTIONS_ANCHOR_RIGHT"] = "Derecha"
---[[Translation missing --]]
-L["OPTIONS_ANCHOR_TARGET_SIDE"] = "Which side this widget is attach to."
+L["OPTIONS_ANCHOR_TARGET_SIDE"] = "A qué lado se coloca este widget."
 L["OPTIONS_ANCHOR_TOP"] = "Arriba"
-L["OPTIONS_ANCHOR_TOPLEFT"] = "Arriba Izquierda"
-L["OPTIONS_ANCHOR_TOPRIGHT"] = "Arriba Derecha"
---[[Translation missing --]]
-L["OPTIONS_AURA_DEBUFF_HEIGHT"] = "Debuff's icon height."
---[[Translation missing --]]
-L["OPTIONS_AURA_DEBUFF_WITH"] = "Debuff's icon width."
---[[Translation missing --]]
-L["OPTIONS_AURA_HEIGHT"] = "Debuff's icon height."
---[[Translation missing --]]
-L["OPTIONS_AURA_SHOW_BUFFS"] = "Show Buffs"
---[[Translation missing --]]
-L["OPTIONS_AURA_SHOW_BUFFS_DESC"] = "Show buffs on you on the Personal Bar."
---[[Translation missing --]]
-L["OPTIONS_AURA_SHOW_DEBUFFS"] = "Show Debuffs"
---[[Translation missing --]]
-L["OPTIONS_AURA_SHOW_DEBUFFS_DESC"] = "Show debuffs on you on the Personal Bar."
---[[Translation missing --]]
-L["OPTIONS_AURA_WIDTH"] = "Debuff's icon width."
---[[Translation missing --]]
-L["OPTIONS_AURAS_ENABLETEST"] = "Enable this to hide test auras shown when configuring."
---[[Translation missing --]]
-L["OPTIONS_AURAS_SORT"] = "Sort Auras"
---[[Translation missing --]]
-L["OPTIONS_AURAS_SORT_DESC"] = "Auras are sorted by time remaining (default)."
---[[Translation missing --]]
-L["OPTIONS_BACKGROUND_ALWAYSSHOW"] = "Always Show Background"
---[[Translation missing --]]
-L["OPTIONS_BACKGROUND_ALWAYSSHOW_DESC"] = "Enable a background showing the area of the clickable area."
---[[Translation missing --]]
-L["OPTIONS_BORDER_COLOR"] = "Border Color"
---[[Translation missing --]]
-L["OPTIONS_BORDER_THICKNESS"] = "Border Thickness"
---[[Translation missing --]]
-L["OPTIONS_BUFFFRAMES"] = "Buff Frames"
+L["OPTIONS_ANCHOR_TOPLEFT"] = "Arriba a la izquierda"
+L["OPTIONS_ANCHOR_TOPRIGHT"] = "Arriba a la derecha"
+L["OPTIONS_AURA_DEBUFF_HEIGHT"] = "Altura del icono del perjuicio."
+L["OPTIONS_AURA_DEBUFF_WITH"] = "Anchura del icono del perjuicio."
+L["OPTIONS_AURA_HEIGHT"] = "Altura del icono del perjuicio."
+L["OPTIONS_AURA_SHOW_BUFFS"] = "Mostrar beneficios"
+L["OPTIONS_AURA_SHOW_BUFFS_DESC"] = "Mostrar beneficios que te afectan en la barra personal."
+L["OPTIONS_AURA_SHOW_DEBUFFS"] = "Mostrar perjuicios"
+L["OPTIONS_AURA_SHOW_DEBUFFS_DESC"] = "Mostrar perjuicios que te afectan en la barra personal."
+L["OPTIONS_AURA_WIDTH"] = "Anchura del icono del perjuicio."
+L["OPTIONS_AURAS_ENABLETEST"] = "Activa esta opción para ocultar las auras de prueba que se muestran al configurar."
+L["OPTIONS_AURAS_SORT"] = "Ordenar auras"
+L["OPTIONS_AURAS_SORT_DESC"] = "Las auras se ordenan por tiempo restante (por defecto)."
+L["OPTIONS_BACKGROUND_ALWAYSSHOW"] = "Mostrar siempre el fondo"
+L["OPTIONS_BACKGROUND_ALWAYSSHOW_DESC"] = "Activa un fondo que muestra la zona del área clicable."
+L["OPTIONS_BORDER_COLOR"] = "Color del borde"
+L["OPTIONS_BORDER_THICKNESS"] = "Grosor del borde"
+L["OPTIONS_BUFFFRAMES"] = "Marcos de beneficios"
 L["OPTIONS_CANCEL"] = "Cancelar"
---[[Translation missing --]]
-L["OPTIONS_CAST_COLOR_CHANNELING"] = "Channelled"
---[[Translation missing --]]
-L["OPTIONS_CAST_COLOR_INTERRUPTED"] = "Interrupted"
---[[Translation missing --]]
-L["OPTIONS_CAST_COLOR_REGULAR"] = "Regular"
---[[Translation missing --]]
-L["OPTIONS_CAST_COLOR_SUCCESS"] = "Success"
---[[Translation missing --]]
-L["OPTIONS_CAST_COLOR_UNINTERRUPTIBLE"] = "Uninterruptible"
---[[Translation missing --]]
-L["OPTIONS_CAST_SHOW_TARGETNAME"] = "Show Target Name"
---[[Translation missing --]]
-L["OPTIONS_CAST_SHOW_TARGETNAME_DESC"] = "Show who is the target of the current cast (if the target exists)"
---[[Translation missing --]]
-L["OPTIONS_CAST_SHOW_TARGETNAME_TANK"] = "[Tank] Don't Show Your Name"
---[[Translation missing --]]
-L["OPTIONS_CAST_SHOW_TARGETNAME_TANK_DESC"] = "If you are a tank don't show the target name if the cast is on you."
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_FADE_ANIM_ENABLED"] = "Enable Fade Animations"
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_FADE_ANIM_ENABLED_DESC"] = "Enable fade animations when the cast starts and stop."
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_FADE_ANIM_TIME_END"] = "On Stop"
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_FADE_ANIM_TIME_END_DESC"] = "When a cast ends, this is the amount of time the cast bar takes to go from 100% transparency to not be visible at all."
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_FADE_ANIM_TIME_START"] = "On Start"
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_FADE_ANIM_TIME_START_DESC"] = "When a cast starts, this is the amount of time the cast bar takes to go from zero transparency to full opaque."
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_HEIGHT"] = "Height of the cast bar."
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_HIDE_ENEMY"] = "Hide Enemy Cast Bar"
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_HIDE_FRIENDLY"] = "Hide Friendly Cast Bar"
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_HIDEBLIZZARD"] = "Hide Blizzard Player Cast Bar"
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_ICON_CUSTOM_ENABLE"] = "Enable Icon Customization"
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_ICON_CUSTOM_ENABLE_DESC"] = "If this option is disabled, Plater won't modify the spell icon, leaving it for scripts to do."
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_NO_SPELLNAME_LIMIT"] = "No Spell Name Length Limitation"
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_NO_SPELLNAME_LIMIT_DESC"] = "Spell name text won't be cut to fit within the cast bar width."
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_SPARK_HALF"] = "Half Spark"
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_SPARK_HALF_DESC"] = "Show only half of the spark texture."
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_SPARK_HIDE_INTERRUPT"] = "Hide Spark On Interrupt"
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_TOGGLE_TEST"] = "Toggle Cast Bar Test"
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_TOGGLE_TEST_DESC"] = "Start cast bar test, press again to stop."
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_WIDTH"] = "Width of the cast bar."
---[[Translation missing --]]
-L["OPTIONS_CLICK_SPACE_HEIGHT"] = "The height of the are area which accepts mouse clicks to select the target"
---[[Translation missing --]]
-L["OPTIONS_CLICK_SPACE_WIDTH"] = "The width of the are area which accepts mouse clicks to select the target"
+L["OPTIONS_CAST_COLOR_CHANNELING"] = "Canalizado"
+L["OPTIONS_CAST_COLOR_INTERRUPTED"] = "Interrumpido"
+L["OPTIONS_CAST_COLOR_REGULAR"] = "Normal"
+L["OPTIONS_CAST_COLOR_SUCCESS"] = "Exitoso"
+L["OPTIONS_CAST_COLOR_UNINTERRUPTIBLE"] = "Ininterrumpible"
+L["OPTIONS_CAST_SHOW_TARGETNAME"] = "Mostrar nombre del objetivo"
+L["OPTIONS_CAST_SHOW_TARGETNAME_DESC"] = "Muestra quién es el objetivo del lanzamiento actual (si el objetivo existe)"
+L["OPTIONS_CAST_SHOW_TARGETNAME_TANK"] = "[Tanque] No muestres tu nombre"
+L["OPTIONS_CAST_SHOW_TARGETNAME_TANK_DESC"] = "Si eres un tanque no muestres el nombre del objetivo si el lanzamiento es sobre ti."
+L["OPTIONS_CASTBAR_FADE_ANIM_ENABLED"] = "Activar animaciones de fundido"
+L["OPTIONS_CASTBAR_FADE_ANIM_ENABLED_DESC"] = "Activa las animaciones de fundido cuando el lanzamiento se inicia y se detiene."
+L["OPTIONS_CASTBAR_FADE_ANIM_TIME_END"] = "Al parar"
+L["OPTIONS_CASTBAR_FADE_ANIM_TIME_END_DESC"] = "Cuando finaliza un lanzamiento, este es el tiempo que tarda la barra de lanzamiento en pasar del 100% de transparencia a no ser visible en absoluto."
+L["OPTIONS_CASTBAR_FADE_ANIM_TIME_START"] = "Al empezar"
+L["OPTIONS_CASTBAR_FADE_ANIM_TIME_START_DESC"] = "Cuando se inicia un lanzamiento, este es el tiempo que tarda la barra de lanzamiento en pasar de transparencia cero a totalmente opaca."
+L["OPTIONS_CASTBAR_HEIGHT"] = "Altura de la barra de lanzamiento."
+L["OPTIONS_CASTBAR_HIDE_ENEMY"] = "Ocultar la barra de lanzamiento de enemigos"
+L["OPTIONS_CASTBAR_HIDE_FRIENDLY"] = "Ocultar la barra de lanzamiento de amistosos"
+L["OPTIONS_CASTBAR_HIDEBLIZZARD"] = "Ocultar la barra de lanzamiento del jugador de Blizzard"
+L["OPTIONS_CASTBAR_ICON_CUSTOM_ENABLE"] = "Activar la personalización de iconos"
+L["OPTIONS_CASTBAR_ICON_CUSTOM_ENABLE_DESC"] = "Si esta opción está desactivada, Plater no modificará el icono del hechizo, dejando que lo hagan los scripts."
+L["OPTIONS_CASTBAR_NO_SPELLNAME_LIMIT"] = "Sin límite de longitud del nombre del hechizo"
+L["OPTIONS_CASTBAR_NO_SPELLNAME_LIMIT_DESC"] = "El texto del nombre del hechizo no se cortará para que quepa en el ancho de la barra de lanzamiento."
+L["OPTIONS_CASTBAR_SPARK_HALF"] = "Media chispa"
+L["OPTIONS_CASTBAR_SPARK_HALF_DESC"] = "Muestra solo la mitad de la textura de la chispa."
+L["OPTIONS_CASTBAR_SPARK_HIDE_INTERRUPT"] = "Ocultar chispa al interrumpir"
+L["OPTIONS_CASTBAR_TOGGLE_TEST"] = "Activar la barra de lanzamiento de prueba"
+L["OPTIONS_CASTBAR_TOGGLE_TEST_DESC"] = "Inicia la prueba de la barra de lanzamiento, pulsa de nuevo para detenerla."
+L["OPTIONS_CASTBAR_WIDTH"] = "Anchura de la barra de lanzamiento."
+L["OPTIONS_CLICK_SPACE_HEIGHT"] = "La altura del área que acepta clics del ratón para seleccionar al objetivo"
+L["OPTIONS_CLICK_SPACE_WIDTH"] = "La anchura del área que acepta clics del ratón para seleccionar al objetivo"
 L["OPTIONS_COLOR"] = "Color"
---[[Translation missing --]]
-L["OPTIONS_COLOR_BACKGROUND"] = "Background Color"
---[[Translation missing --]]
-L["OPTIONS_CVAR_ENABLE_PERSONAL_BAR"] = "Personal Health and Mana Bars|cFFFF7700*|r"
---[[Translation missing --]]
-L["OPTIONS_CVAR_ENABLE_PERSONAL_BAR_DESC"] = [=[Shows a mini health and mana bars under your character.
-
-|cFFFF7700[*]|r |cFFa0a0a0CVar, saved within Plater profile and restored when loading the profile.|r]=]
---[[Translation missing --]]
-L["OPTIONS_CVAR_NAMEPLATES_ALWAYSSHOW"] = "Always Show Nameplates|cFFFF7700*|r"
---[[Translation missing --]]
-L["OPTIONS_CVAR_NAMEPLATES_ALWAYSSHOW_DESC"] = [=[Show nameplates for all units near you. If disabled only show relevant units when you are in combat.
-
-|cFFFF7700[*]|r |cFFa0a0a0CVar, saved within Plater profile and restored when loading the profile.|r]=]
-L["OPTIONS_ENABLED"] = "Habilitadas"
+L["OPTIONS_COLOR_BACKGROUND"] = "Color de fondo"
+L["OPTIONS_CVAR_ENABLE_PERSONAL_BAR"] = "Barras personales de salud y maná|cFFFF7700*|r"
+L["OPTIONS_CVAR_ENABLE_PERSONAL_BAR_DESC"] = "Muestra una mini barra de salud y maná debajo de tu personaje. |cFFFF7700[*]|r |cFFa0a0a0CVar, guardada dentro del perfil de Plater y restaurada al cargar el perfil.|r"
+L["OPTIONS_CVAR_NAMEPLATES_ALWAYSSHOW"] = "Mostrar siempre las placas|cFFFF7700*|r"
+L["OPTIONS_CVAR_NAMEPLATES_ALWAYSSHOW_DESC"] = "Muestra las placas de todas las unidades cercanas. Si se desactiva, solo muestra las unidades relevantes cuando estás en combate. |cFFFF7700[*]|r |cFFa0a0CVar, guardada dentro del perfil de Plater y restaurada cuando se carga el perfil.|r"
+L["OPTIONS_ENABLED"] = "Activadas"
 L["OPTIONS_ERROR_CVARMODIFY"] = "Los cvars no se pueden cambiar en combate."
-L["OPTIONS_ERROR_EXPORTSTRINGERROR"] = "no se pudo exportar"
---[[Translation missing --]]
-L["OPTIONS_EXECUTERANGE"] = "Execute Range"
---[[Translation missing --]]
-L["OPTIONS_EXECUTERANGE_DESC"] = [=[Show an indicator when the target unit is in 'execute' range.
-
-If the detection does not work after a patch, communicate at Discord.]=]
+L["OPTIONS_ERROR_EXPORTSTRINGERROR"] = "error al exportar"
+L["OPTIONS_EXECUTERANGE"] = "Rango de ejecución"
+L["OPTIONS_EXECUTERANGE_DESC"] = "Mostrar un indicador cuando la unidad objetivo está en el rango de \"ejecución\". Si la detección no funciona tras un parche, comunícalo en Discord."
 --[[Translation missing --]]
 L["OPTIONS_EXECUTERANGE_HIGH_HEALTH"] = "Execute Range (high heal)"
 --[[Translation missing --]]

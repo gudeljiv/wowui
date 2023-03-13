@@ -1,10 +1,10 @@
 @cont1nuity:
-- Adding options to change default blizzard nameplate name fonts.
-- Adding option to change target overlay color.
-- Adding combat auto toggle options for friendly and enemy nameplates, as well as enemy auto toggle options.
-- Fix Combo Points not updating properly for Druids switching stances in retail.
-- Change handling of units switching between attackable and not attackable, potentially fixing some issues around this.
-- Adding Explosives to be always in combat.
-- Friendly NPC quest indicator icon is now tied to the option to show quest indicators.
-- Fix mod option values not being updated properly when renaming or deleting options.
+- Fixing some issues unit hostility changes beeing too lax.
+- Switching towards new tooltip API for retail instead of tooltip scanning.
+- Trying to hide default blizzard namepalte cast bar as well in classic.
+- Fixing some issues around mod/script options not updating properly under some conditions.
+- Fixing Monk execute detection for Improved Touch of Death talent.
+- Adding missing default range check ranges for Evoker.
+- Changing blizzard nameplate font override default to something that actually exists in Plater by default.
+- Fixing Ghost Auras icon sizing settings not applying properly.
 
