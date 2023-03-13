@@ -1,18 +1,19 @@
 
 RXPCData = {
-	["currentGuideGroup"] = "",
+	["GA"] = true,
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
-	["GA"] = true,
+	["currentGuideName"] = "",
 	["stepSkip"] = {
 	},
 	["flightPaths"] = {
+		[77] = "Camp Taurajo, The Barrens",
 		[80] = "Ratchet, The Barrens",
 		[23] = "Orgrimmar, Durotar",
 		[25] = "Crossroads, The Barrens",
 	},
-	["currentGuideName"] = "",
+	["currentGuideGroup"] = "",
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -31,10 +32,10 @@ RXPCTrackingData = {
 							["monthDay"] = 30,
 							["day"] = 0,
 							["month"] = 12,
-							["weekday"] = 6,
+							["minute"] = 30,
 							["year"] = 2022,
 							["hour"] = 13,
-							["minute"] = 30,
+							["weekday"] = 6,
 						},
 						["started"] = 0,
 					},
@@ -52,15 +53,15 @@ RXPCComms = {
 	["profiles"] = {
 		["Tadibey - Golemagg"] = {
 			["players"] = {
-				["Dámp"] = {
-					["timePlayed"] = 0,
-					["class"] = "PRIEST",
-					["xp"] = 1260,
+				["Renoris"] = {
+					["timePlayed"] = 586.4240000000573,
+					["class"] = "ROGUE",
+					["xp"] = 162,
 				},
-				["Wlm"] = {
-					["timePlayed"] = 0,
-					["class"] = "PALADIN",
-					["xp"] = 1260,
+				["Duzbig"] = {
+					["timePlayed"] = 167.2999999999884,
+					["class"] = "WARRIOR",
+					["xp"] = 7,
 				},
 				["Shekills"] = {
 					["timePlayed"] = 0,
@@ -77,6 +78,31 @@ RXPCComms = {
 					["class"] = "DRUID",
 					["xp"] = 58,
 				},
+				["Dámp"] = {
+					["timePlayed"] = 0,
+					["class"] = "PRIEST",
+					["xp"] = 1260,
+				},
+				["Wlm"] = {
+					["timePlayed"] = 0,
+					["class"] = "PALADIN",
+					["xp"] = 1260,
+				},
+				["Astaltceva"] = {
+					["timePlayed"] = 214.0590000000084,
+					["class"] = "PALADIN",
+					["xp"] = 170,
+				},
+				["Shync"] = {
+					["timePlayed"] = 0,
+					["class"] = "WARRIOR",
+					["xp"] = 178,
+				},
+				["Grotbag"] = {
+					["timePlayed"] = 586.4240000000573,
+					["class"] = "WARLOCK",
+					["xp"] = 162,
+				},
 			},
 		},
 	},
@@ -92,21 +118,21 @@ RXPCSettings = {
 			["enableFPAutomation"] = false,
 			["hardcore"] = false,
 			["enableLevelUpAnnounceGroup"] = false,
-			["enableTargetAutomation"] = false,
+			["enableTargetMacro"] = false,
 			["enableMinimapButton"] = false,
 			["activeItemsScale"] = 1.2,
 			["checkVersions"] = false,
-			["enableTargetMacro"] = false,
+			["enableTargetAutomation"] = false,
 			["lockFrames"] = false,
 			["enableTracker"] = false,
 			["enableBindAutomation"] = false,
 			["xprate"] = 1.2,
 			["enableLevelUpAnnounceSolo"] = false,
-			["enableFlyStepAnnouncements"] = false,
+			["frameHeight"] = 125.000114440918,
 			["alwaysSendBranded"] = false,
 			["enableQuestRewardAutomation"] = true,
 			["hideInRaid"] = false,
-			["frameHeight"] = 125.000114440918,
+			["enableFlyStepAnnouncements"] = false,
 		},
 	},
 }
