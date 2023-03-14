@@ -31,7 +31,7 @@ dprint = False
 debug = False
 pause = True
 wow_class = "warrior"
-color_distance = 50
+color_distance = 10
 
 screen_width = NSScreen.mainScreen().frame().size.width
 screen_height = NSScreen.mainScreen().frame().size.height
@@ -61,6 +61,7 @@ print("Script loaded and ready.", "Monitor:", screen_width, screen_height, datet
 print("print:", dprint)
 print("debug:", debug)
 print("rotation:", not pause)
+print("Class:", wow_class.upper())
 
 
 def on_press(key):
@@ -302,8 +303,7 @@ with keyboard.Listener(on_press=on_press) as listener:
 
     # loading skills for a class if changed
                 if wow_class_loaded != wow_class:
-                    # print("class changed: ", wow_class_loaded, "->", wow_class, "..", hex, clss, color_distance, color[hex], datetime.now().strftime("%H:%M:%S"))
-                    print("class changed:", wow_class_loaded.upper(), "->", wow_class.upper())
+                    print("Class:", wow_class_loaded.upper(), "->", wow_class.upper())
                     main_abilities = load_skills_main(wow_class)
                     secondary_abilities = load_skills_secondary(wow_class)
                     main_abilities = {**main_abilities, **healing, **global_skills}
@@ -321,7 +321,7 @@ with keyboard.Listener(on_press=on_press) as listener:
 
     # interrupt indicator
                     # white --> green
-                    if interrupt == (0, 255, 0):
+                    if interrupt == (0, 255, 0) or interrupt == (117, 251, 76):
                         pyautogui.hotkey("f9")
 
                     main_skill = numpy.array(main_image)[:, :, :3]
