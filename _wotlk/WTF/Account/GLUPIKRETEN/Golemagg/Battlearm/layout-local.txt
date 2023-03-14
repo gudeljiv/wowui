@@ -41,13 +41,6 @@ X: 0
 Y: -4
 W: 210
 H: 339
-Frame: AtlasLoot_GUI-Frame
-FrameLevel: 1
-Anchor: TOP
-X: 299
-Y: -151
-W: 920
-H: 600
 Frame: RXPG_ARROW
 FrameLevel: 1
 Anchor: CENTER
@@ -83,6 +76,13 @@ X: -359
 Y: 102
 W: 960
 H: 640
+Frame: AtlasLoot_GUI-Frame
+FrameLevel: 1
+Anchor: TOP
+X: 299
+Y: -151
+W: 920
+H: 600
 Frame: Dejunk_JunkFrame
 FrameLevel: 2
 Anchor: TOPRIGHT
