@@ -24,6 +24,7 @@ data = {
             {"name": "lighning bolt", "type": "GetSpellTexture", "id": 403, "key": "1"},
             {"name": "healing wave", "type": "GetSpellTexture", "id": 331, "key": "e"},
             {"name": "lightning shield", "type": "GetSpellTexture", "id": 324, "key": "v"},
+            {"name": "water shield", "type": "GetSpellTexture", "id": 52127, "key": "h"},
             {"name": "rockbiter weapon", "type": "GetSpellTexture", "id": 8017, "key": "f1"},
             {"name": "flametongue weapon", "type": "GetSpellTexture", "id": 8024, "key": "f2"},
             {"name": "flame shock", "type": "GetSpellTexture", "id": 8050, "key": "4"},
