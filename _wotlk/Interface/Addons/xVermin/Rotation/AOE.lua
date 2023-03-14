@@ -46,6 +46,11 @@ xVermin.AOE = function(range, casting)
 							rangecasting = rangecasting + 1
 						end
 					end
+					if xVermin.Class == 'SHAMAN' then
+						if IsSpellInRange('Wind Shear', 'target') == 0 or select(2, GetSpellCooldown('Wind Shear')) > 0 then
+							rangecasting = rangecasting + 1
+						end
+					end
 				end
 			end
 

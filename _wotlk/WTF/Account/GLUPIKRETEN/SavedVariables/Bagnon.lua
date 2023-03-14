@@ -57,20 +57,20 @@ Bagnon_Sets = {
 			["money"] = true,
 			["hiddenRules"] = {
 			},
-			["bagBreak"] = false,
+			["spacing"] = 3,
 			["y"] = -266.4677734375,
 			["x"] = -389.82421875,
 			["search"] = true,
 			["broker"] = false,
 			["reverseSlots"] = false,
+			["alpha"] = 1,
 			["color"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.7400000095367432, -- [4]
 			},
-			["alpha"] = 1,
-			["spacing"] = 3,
+			["bagBreak"] = false,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -138,15 +138,15 @@ Bagnon_Sets = {
 			["hiddenRules"] = {
 			},
 			["y"] = -339.0252685546875,
-			["x"] = 462.7479553222656,
+			["x"] = 462.7479858398438,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
-			["columns"] = 10,
 			["spacing"] = 3,
+			["columns"] = 10,
 		},
 		["bank"] = {
 			["rules"] = {
@@ -189,21 +189,21 @@ Bagnon_Sets = {
 			["bagToggle"] = true,
 			["columns"] = 10,
 			["alpha"] = 1,
-			["scale"] = 1,
-			["bagBreak"] = false,
-			["x"] = 106.6655731201172,
-			["search"] = true,
-			["broker"] = false,
-			["itemScale"] = 1,
-			["hiddenRules"] = {
-			},
-			["y"] = -281.1646728515625,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
+			["bagBreak"] = false,
+			["x"] = 106.6655731201172,
+			["search"] = true,
+			["broker"] = false,
+			["y"] = -281.1646728515625,
+			["hiddenRules"] = {
+			},
+			["itemScale"] = 1,
+			["scale"] = 1,
 		},
 	},
 	["countGuild"] = false,
@@ -220,10 +220,10 @@ Bagnon_Sets = {
 		["socketing"] = false,
 		["scrappingMachine"] = false,
 		["crafting"] = false,
-		["voidStorageBanker"] = false,
+		["banker"] = false,
 		["auctioneer"] = false,
 		["guildBanker"] = false,
-		["banker"] = false,
+		["voidStorageBanker"] = false,
 	},
 	["fridgeColor"] = {
 	},
@@ -241,20 +241,20 @@ Bagnon_Sets = {
 	["enchantColor"] = {
 	},
 	["glowAlpha"] = 1,
-	["tipCount"] = true,
+	["displayCraft"] = false,
 	["glowNew"] = true,
 	["displayAuction"] = false,
 	["profiles"] = {
 	},
 	["keyColor"] = {
 	},
-	["soulColor"] = {
-	},
-	["glowQuality"] = true,
+	["glowPoor"] = true,
 	["normalColor"] = {
 	},
-	["glowPoor"] = true,
+	["glowQuality"] = true,
+	["soulColor"] = {
+	},
 	["colorSlots"] = true,
-	["displayCraft"] = false,
+	["tipCount"] = true,
 	["displayScrapping"] = false,
 }

@@ -94,9 +94,10 @@ xVermin.RuneCount = function()
 end
 xRuneCount = xVermin.RuneCount
 
-xVermin.minRuneCooldown = function()
+xVermin.minRuneCooldownForPestilence = function()
 	local tmin_cd = InCombatLockdown() and 7.5 or 10
 	local tmax_cd = InCombatLockdown() and 7.5 or 10
+	local tmin_cd_overall = 10
 
 	local blood = cd
 	local frost = cd
@@ -136,15 +137,54 @@ xVermin.minRuneCooldown = function()
 				end
 				tmax = remaining
 			end
+
+			tmin_cd_overall = tmin_cd < tmin_cd_overall and tmin_cd or tmin_cd_overall
 		end
 	end
 
-	return tmin > 0 and tmin or 0, tmax > 0 and tmax or 0, tmin_cd, tmax_cd
+	return tmin > 0 and tmin or 0, tmax > 0 and tmax or 0, tmin_cd_overall, tmax_cd
 end
-xminRuneCooldown = xVermin.minRuneCooldown
+
+xVermin.minRuneForPestilenceCount = function(debuff_duration)
+	local remaining, start, duration, runeReady, runeType
+	local tmin_cd = InCombatLockdown() and 7.5 or 10
+
+	local ready_runes_incoming = 0
+	local ready_runes = 0
+
+	for i = 1, 6 do
+		runeType = GetRuneType(i)
+
+		if runeType == 1 or runeType == 4 then
+			if runeType == 4 then
+				tmin_cd = 10
+			end
+			start, duration, runeReady = GetRuneCooldown(i)
+			remaining = runeReady and 0 or (start and (tmin_cd - (GetTime() - start)) or 0)
+
+			if remaining == 0 then
+				ready_runes = ready_runes + 1
+			end
+			if remaining < debuff_duration then
+				ready_runes_incoming = ready_runes_incoming + 1
+			end
+		end
+	end
+
+	return ready_runes, ready_runes_incoming
+end
+
+local pf = CreateFrame('Frame', 'pf')
+pf:SetPoint('CENTER', UIParent, 'CENTER', 200, 250)
+pf:SetWidth(50)
+pf:SetHeight(50)
+pf.text = pf:CreateFontString(pf:GetName() .. 'Title', 'BACKGROUND')
+pf.text:SetFont(xVermin.Config.font.arial, 18, 'NONE')
+pf.text:SetPoint('CENTER', pf, 'CENTER', 0, 0)
+pf.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
 xVermin.PestilenceSS = function()
-	if xVermin.Class ~= 'DEATHKNIGHT' then
+	if xVermin.Class ~= 'xDEATHKNIGHT' then
 		return false
 	end
 
@@ -153,11 +193,14 @@ xVermin.PestilenceSS = function()
 	end
 
 	local blood, frost, unholy, death = xVermin.RuneCount()
-	local tmin, tmax, tmin_cd, tmax_cd = xVermin.minRuneCooldown()
 	local debuff_ff = 30
 	local debuff_ps = 30
 	local debuff_duration = 30
 	local grace = 2
+	local ready_runes = 0
+	local ready_runes_incoming = 0
+	local target_has_frost_fever = false
+	local target_has_blood_plague = false
 
 	for i = 1, 40 do
 		local name, icon, count, debuffType, duration, expirationTime, unitCaster, canStealOrPurge, _, spellId, canApplyAura, isBossAura = UnitDebuff('target', i)
@@ -165,29 +208,61 @@ xVermin.PestilenceSS = function()
 			local remaining = expirationTime - GetTime()
 			debuff_duration = remaining < debuff_duration and remaining or debuff_duration
 		end
+		if name and name == 'Frost Fever' then
+			target_has_frost_fever = true
+		end
+		if name and name == 'Blood Plague' then
+			target_has_blood_plague = true
+		end
 	end
 
-	if debuff_duration < tmin_cd then
-	-- print('rune in:', tmin, 'debuff out in:', debuff_duration, 'rune cd:', blood + death)
-	end
+	-- pf.text:SetText('debuff duration: ' .. xVermin.FormatNumberDecimal(debuff_duration, 2) .. '\nready runes: ' .. ready_runes .. '\nincoming runes: ' .. ready_runes_incoming)
 
-	if debuff_duration ~= 30 then
-		if debuff_duration - tmin > 0 and blood + death < 1 then
+	ready_runes, ready_runes_incoming = xVermin.minRuneForPestilenceCount(debuff_duration)
+	-- print(ready_runes, ready_runes_incoming)
+
+	if debuff_duration ~= 30 and target_has_frost_fever and target_has_blood_plague and debuff_duration < 10 then
+		-- pf.text:SetText('debuff duration: ' .. xVermin.FormatNumberDecimal(debuff_duration, 2) .. '\nready runes: ' .. ready_runes .. '\nincoming runes: ' .. ready_runes_incoming)
+		-- if tmin > debuff_duration and debuff_duration > tmin_cd then
+		-- 	return false
+		-- end
+		-- if tmin < debuff_duration and debuff_duration < tmin_cd then
+		-- 	return true
+		-- end
+		-- if debuff_duration - tmin > 0 and debuff_duration < tmin_cd then
+		-- 	return true
+		-- else
+		-- 	pf.text:SetText('false\n' .. 'debuff: ' .. xVermin.FormatNumberDecimal(debuff_duration, 2) .. '\n' .. 'tmin: ' .. xVermin.FormatNumberDecimal(tmin, 2) .. ' - ' .. xVermin.FormatNumberDecimal(tmin_cd, 2) .. '\n' .. blood .. '\n' .. death)
+		-- end
+		-- pf.text:SetText('true\n' .. 'debuff: ' .. xVermin.FormatNumberDecimal(debuff_duration, 2) .. '\n' .. 'tmin: ' .. xVermin.FormatNumberDecimal(tmin, 2) .. ' - ' .. xVermin.FormatNumberDecimal(tmin_cd, 2) .. '\n' .. blood .. ' - ' .. death .. '\n' .. ready_runes .. ' - ' .. ready_runes_incoming)
+		-- print('true || ' .. 'debuff: ' .. xVermin.FormatNumberDecimal(debuff_duration, 2) .. ' || ' .. 'tmin: ' .. xVermin.FormatNumberDecimal(tmin, 2) .. ' - ' .. xVermin.FormatNumberDecimal(tmin_cd, 2) .. ' || ' .. blood .. ' - ' .. death .. ' || ' .. ready_runes .. ' - ' .. ready_runes_incoming)
+		-- if (ready_runes_incoming and not ready_runes and debuff_duration < tmin_cd) or debuff_duration < 4 then
+		-- 	return true
+		-- end
+		-- if (not ready_runes_incoming and ready_runes and debuff_duration < tmin_cd) or debuff_duration < 4 then
+		-- 	return true
+		-- end
+		-- if debuff_duration < -1 then
+		-- 	if frost < 1 and unholy < 1 then
+		-- 		if ready_runes_incoming or ready_runes then
+		-- 			return true
+		-- 		end
+		-- 	end
+		-- 	if (frost > 1 and unholy < 1 and blood + death < 1) or (frost < 1 and unholy > 1 and blood + death < 1) then
+		-- 		if ready_runes_incoming or ready_runes then
+		-- 			return true
+		-- 		end
+		-- 	end
+		-- end
+		if ready_runes_incoming + ready_runes < 2 or debuff_duration < 3 then
 			print('true')
 			return true
 		end
-	-- if tmin > debuff_duration and debuff_duration > tmin_cd then
-	-- 	return false
-	-- end
-
-	-- if tmin < debuff_duration and debuff_duration < tmin_cd then
-	-- 	return true
-	-- end
 	end
 
+	print('false')
 	return false
 end
-
 xPestilenceSS = xVermin.PestilenceSS
 
 -- UIParent:HookScript('OnUpdate', xPestilenceSS)

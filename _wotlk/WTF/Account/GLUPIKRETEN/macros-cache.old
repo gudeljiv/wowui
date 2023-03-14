@@ -16,12 +16,12 @@ VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat 
+/use [nocombat]item:1205
+/castsequence [combat] reset=combat item:2455
 END
 VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:35953
+/use [nocombat]item:4538
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
@@ -50,8 +50,10 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000021 "TEST" "134400"
-/run NEXT_ACTION_TEXT_FRAME:ClearAllPoints()
-/run NEXT_ACTION_TEXT_FRAME:SetPoint('CENTER', UIParent, 'CENTER', 0, 10)
+/run print("1.",IsSpellInRange('Bite', 'pet', "NamePlate1"))
+/run print("2.",IsSpellInRange(2, 'pet', "NamePlate1"))
+/run print("3.",IsSpellInRange('Bite', 'pet', "target"))
+/run print("4.",IsSpellInRange(2, BOOKTYPE_PET 3,"target"))
 END
 VER 3 0000000000000020 "TSMDestroy" "INV_Misc_Flower_01"
 /tsm destroy

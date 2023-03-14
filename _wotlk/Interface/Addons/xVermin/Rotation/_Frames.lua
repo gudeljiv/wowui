@@ -200,6 +200,10 @@ local RTF = function(xframe, xtype, xid)
 		frame.texture:SetTexture(GetItemIcon(xid))
 	end
 
+	if xtype == 3 then
+		frame.texture:SetTexture(xid)
+	end
+
 	frame:Show()
 end
 xRTF = RTF

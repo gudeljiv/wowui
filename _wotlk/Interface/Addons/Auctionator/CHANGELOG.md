@@ -1,6 +1,12 @@
 # Auctionator
 
-## [10.0.32](https://github.com/Auctionator/Auctionator/tree/10.0.32) (2023-01-18)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.0.31...10.0.32) 
+## [10.0.40](https://github.com/Auctionator/Auctionator/tree/10.0.40) (2023-03-05)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.0.39...10.0.40) 
 
-- Classic: Remove phase 1 vs phase 2 compatibility code and update toc  
+- Selling: Bag: Remove unused variables  
+- Remove unused function  
+- Fix comment typo  
+- Use "Imported" as the name for any unnamed imported lists  
+- Update patterns for identifying shopping list import format  
+- Fix quality not showing in shopping list term tooltip  
+- [Fixes #1361] Mainline: Selling: Error when using buy shortcut on battle pet  

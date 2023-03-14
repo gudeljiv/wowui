@@ -7033,10 +7033,9 @@ local relevance_options = {
 				else
 					Plater:Msg (L["OPTIONS_ERROR_CVARMODIFY"])
 					self:SetValue (GetCVarBool ("nameplateShowOnlyNames"))
-					if NamePlateDriverFrame and NamePlateDriverFrame.UpdateNamePlateOptions then
-						NamePlateDriverFrame:UpdateNamePlateOptions() --update the setting directly
-					end
 				end
+
+				Plater.UpdateBaseNameplateOptions()
 			end,
 			name = "Hide Blizzard Health Bars" .. CVarIcon,
 			desc = "While in dungeons or raids, if friendly nameplates are enabled it'll show only the player name.\nIf any Plater module is disabled, this will affect these nameplates as well." .. CVarDesc .. CVarNeedReload,
@@ -12036,7 +12035,7 @@ end
 
 	--overlay frame to indicate the feature is disabled
 	uiParentFeatureFrame.disabledOverlayFrame = CreateFrame ("frame", nil, uiParentFeatureFrame, BackdropTemplateMixin and "BackdropTemplate")
-	uiParentFeatureFrame.disabledOverlayFrame:SetPoint ("topleft", uiParentFeatureFrame, "topleft", 1, -155)
+	uiParentFeatureFrame.disabledOverlayFrame:SetPoint ("topleft", uiParentFeatureFrame, "topleft", 1, -175)
 	uiParentFeatureFrame.disabledOverlayFrame:SetPoint ("bottomright", uiParentFeatureFrame, "bottomright", -1, 21)
 	uiParentFeatureFrame.disabledOverlayFrame:SetBackdrop ({bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true})
 	uiParentFeatureFrame.disabledOverlayFrame:SetFrameLevel (uiParentFeatureFrame:GetFrameLevel() + 100)
