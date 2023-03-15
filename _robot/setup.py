@@ -69,7 +69,7 @@ if not os.path.exists(abilities_folder):
 
 skills_loaded = "warrior"
 print("Script loaded and ready.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"), os.name)
-print("class:", wow_class_loaded)
+print("CLASS:", wow_class_loaded.upper())
 
 
 def on_press(key):

@@ -60,10 +60,10 @@ debug_folder = dir_path + "\images\\_\\"
 # default class
 wow_class_loaded = wow_class
 print("Script loaded and ready.", "Monitor:", screen_width, screen_height, dt.now().strftime("%H:%M:%S"))
-print("print:", dprint)
-print("debug:", debug)
-print("rotation:", not pause)
-print("class:", wow_class_loaded)
+print("PRINT:", dprint)
+print("DEBUG:", debug)
+print("ROTATION:", not pause)
+print("CLASS:", wow_class_loaded.upper())
 
 
 def toKeyCode(c):
@@ -104,15 +104,15 @@ def on_press(key):
     try:
         if key == keyboard.Key.f8:
             dprint = not dprint
-            print("print:", dprint)
+            print("PRINT:", dprint)
 
         if key == keyboard.Key.f11:
             debug = not debug
-            print("debug:", debug)
+            print("DEBUG:", debug)
 
         if key == keyboard.Key.f12:
             pause = not pause
-            print("rotation:", not pause)
+            print("ROTATION:", not pause)
             if pause:
                 pyautogui.hotkey("end")
                 pyautogui.PAUSE = 1
@@ -331,7 +331,7 @@ with keyboard.Listener(on_press=on_press) as listener:
 # loading skills for a class if changed
                 if wow_class_loaded != wow_class:
                     # print("class changed: ", wow_class_loaded, "->", wow_class, "..", hex, clss, color_distance, color[hex], dt.now().strftime("%H:%M:%S"))
-                    print("class:", wow_class_loaded.upper(), "->", wow_class.upper())
+                    print("CLASS:", wow_class_loaded.upper(), "->", wow_class.upper())
                     main_abilities = load_skills_main(wow_class)
                     secondary_abilities = load_skills_secondary(wow_class)
                     main_abilities = {**main_abilities, **healing, **global_skills}

@@ -1,19 +1,19 @@
 
 RXPCData = {
-	["currentGuideGroup"] = "",
+	["stepSkip"] = {
+	},
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
-	["GA"] = true,
-	["stepSkip"] = {
-	},
-	["flightPaths"] = {
-		[80] = "Ratchet, The Barrens",
-		[25] = "Crossroads, The Barrens",
-		[23] = "Orgrimmar, Durotar",
-		[77] = "Camp Taurajo, The Barrens",
-	},
 	["currentGuideName"] = "",
+	["currentGuideGroup"] = "",
+	["flightPaths"] = {
+		[25] = "Crossroads, The Barrens",
+		[77] = "Camp Taurajo, The Barrens",
+		[23] = "Orgrimmar, Durotar",
+		[80] = "Ratchet, The Barrens",
+	},
+	["GA"] = true,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -137,7 +137,7 @@ RXPCSettings = {
 			["alwaysSendBranded"] = false,
 			["enableQuestRewardAutomation"] = true,
 			["hideInRaid"] = false,
-			["frameHeight"] = 125.000114440918,
+			["frameHeight"] = 125.0001068115234,
 		},
 	},
 }
