@@ -1,19 +1,25 @@
 
 RXPCData = {
 	["stepSkip"] = {
+		[15] = true,
+		[7] = true,
 	},
 	["completedWaypoints"] = {
+		[18] = {
+		},
 	},
-	["currentStep"] = 1,
-	["currentGuideName"] = "",
-	["currentGuideGroup"] = "",
+	["currentStep"] = 18,
+	["currentGuideName"] = "22-25 Hillsbrad / South Barrens",
+	["currentGuideGroup"] = "RestedXP Horde 1-30",
 	["flightPaths"] = {
-		[25] = "Crossroads, The Barrens",
-		[77] = "Camp Taurajo, The Barrens",
-		[23] = "Orgrimmar, Durotar",
+		[11] = "Undercity, Tirisfal",
 		[80] = "Ratchet, The Barrens",
+		[25] = "Crossroads, The Barrens",
+		[10] = "The Sepulcher, Silverpine Forest",
+		[23] = "Orgrimmar, Durotar",
+		[77] = "Camp Taurajo, The Barrens",
 	},
-	["GA"] = true,
+	["GA"] = false,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -78,20 +84,43 @@ RXPCComms = {
 					["class"] = "DRUID",
 					["xp"] = 58,
 				},
+				["Klegg"] = {
+					["level"] = 17,
+					["lastSeen"] = 59377.458,
+					["xpPercentage"] = 47,
+					["class"] = "ROGUE",
+					["timePlayed"] = 3142.248,
+					["isRxp"] = true,
+				},
+				["Logges"] = {
+					["timePlayed"] = 1704.800000000047,
+					["class"] = "WARLOCK",
+					["xp"] = 97,
+				},
 				["Dámp"] = {
 					["timePlayed"] = 0,
 					["class"] = "PRIEST",
 					["xp"] = 1260,
+				},
+				["Ayatolla"] = {
+					["timePlayed"] = 3142.248,
+					["class"] = "PALADIN",
+					["xp"] = 277,
 				},
 				["Wlm"] = {
 					["timePlayed"] = 0,
 					["class"] = "PALADIN",
 					["xp"] = 1260,
 				},
-				["Logges"] = {
-					["timePlayed"] = 1704.800000000047,
-					["class"] = "WARLOCK",
-					["xp"] = 97,
+				["Palepala"] = {
+					["timePlayed"] = 1227.956000000006,
+					["class"] = "PALADIN",
+					["xp"] = 277,
+				},
+				["Tirbuson"] = {
+					["timePlayed"] = 3142.248,
+					["class"] = "PALADIN",
+					["xp"] = 277,
 				},
 				["Astaltceva"] = {
 					["timePlayed"] = 1918.859000000055,

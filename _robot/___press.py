@@ -33,17 +33,16 @@ pyautogui.PAUSE = 1
 
 combat = False
 debug = False
-mill = False
+mclick = False
 dprint = False
 pause = True
 wow_class = "warrior"
 
 
 def on_press(key):
-    global debug, dprint, pause, mill
+    global debug, dprint, pause, mclick
 
     if key == keyboard.Key.f12:
-        print(pause)
         pause = not pause
         if pause:
             print("Rotation is paused")
@@ -54,6 +53,9 @@ def on_press(key):
             pyautogui.PAUSE = 0.1
             pyautogui.FAILSAFE = True
 
+    if key == keyboard.Key.f11:
+        mclick = not mclick
+
 
 with keyboard.Listener(on_press=on_press) as listener:
     with mss.mss() as sct:
@@ -62,7 +64,8 @@ with keyboard.Listener(on_press=on_press) as listener:
             time.sleep(random.uniform(0, 1))
             if not pause:
                 # print(pyautogui.position())
-                pyautogui.click(2580, 625)
+                if mclick:
+                    pyautogui.click(2580, 625)
                 # time.sleep(0.1)
                 # pyautogui.click(350, 974)
                 # time.sleep(0.1)

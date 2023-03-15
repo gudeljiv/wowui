@@ -34,13 +34,6 @@ X: -328
 Y: -281
 W: 300
 H: 60
-Frame: RXPG_ARROW
-FrameLevel: 1
-Anchor: CENTER
-X: -155
-Y: -162
-W: 32
-H: 32
 Frame: RXPItemFrame
 FrameLevel: 1
 Anchor: CENTER
@@ -55,3 +48,10 @@ X: -358
 Y: -209
 W: 325
 H: 375
+Frame: RXPG_ARROW
+FrameLevel: 1
+Anchor: CENTER
+X: -155
+Y: -162
+W: 32
+H: 32

@@ -144,21 +144,21 @@ UIParent:HookScript(
 
 		aoe_number = 0
 		aoe_casting_number = 0
+
 		if IsAltKeyDown() or ChatFrame1EditBox:IsVisible() or IsMounted() or haveBuff then
 			RotationFrame2:SetBackdropColor(1, 1, 1, 1) -- white
 		else
 			if InCombatLockdown() then
+				aoe_number = xVermin.AOE(skills_range[xVermin.Class], false)
+				aoe_casting_number = xVermin.AOE(35, true)
+				if aoe_number > 1 then
+					RotationFrame2:SetBackdropColor(1, 0, 0, 1) -- red --> DO AOE
+				else
+					RotationFrame2:SetBackdropColor(0, 1, 0, 1) -- green --> DO SINGLE TARGET
+				end
 			else
 				RotationFrame2:SetBackdropColor(1, 1, 1, 1) -- white --> OOC
 			end
-		end
-
-		aoe_number = xVermin.AOE(skills_range[xVermin.Class], false)
-		aoe_casting_number = xVermin.AOE(35, true)
-		if aoe_number > 1 then
-			RotationFrame2:SetBackdropColor(1, 0, 0, 1) -- red --> DO AOE
-		else
-			RotationFrame2:SetBackdropColor(0, 1, 0, 1) -- green --> DO SINGLE TARGET
 		end
 
 		aoe.text:SetText(aoe_number)
