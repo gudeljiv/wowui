@@ -69,6 +69,7 @@ if not os.path.exists(abilities_folder):
 
 skills_loaded = "warrior"
 print("Script loaded and ready.", "Monitor:", screen_width, screen_height, datetime.now().strftime("%H:%M:%S"), os.name)
+print("class:", wow_class_loaded)
 
 
 def on_press(key):
@@ -158,7 +159,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                 continue
 
             if wow_class_loaded != wow_class:
-                print("class changed:", wow_class_loaded.upper(), "->", wow_class.upper())
+                print("class:", wow_class_loaded.upper(), "->", wow_class.upper())
                 wow_class_loaded = wow_class
 
             folders = [abilities_folder + slash + wow_class, abilities_folder + slash + "healing", abilities_folder + slash + "globals"]

@@ -63,6 +63,7 @@ print("Script loaded and ready.", "Monitor:", screen_width, screen_height, dt.no
 print("print:", dprint)
 print("debug:", debug)
 print("rotation:", not pause)
+print("class:", wow_class_loaded)
 
 
 def toKeyCode(c):
@@ -330,7 +331,7 @@ with keyboard.Listener(on_press=on_press) as listener:
 # loading skills for a class if changed
                 if wow_class_loaded != wow_class:
                     # print("class changed: ", wow_class_loaded, "->", wow_class, "..", hex, clss, color_distance, color[hex], dt.now().strftime("%H:%M:%S"))
-                    print("class changed:", wow_class_loaded.upper(), "->", wow_class.upper())
+                    print("class:", wow_class_loaded.upper(), "->", wow_class.upper())
                     main_abilities = load_skills_main(wow_class)
                     secondary_abilities = load_skills_secondary(wow_class)
                     main_abilities = {**main_abilities, **healing, **global_skills}
