@@ -40,18 +40,18 @@ Postal3DB = {
 		["Battledog - Gehennas"] = "Battledog - Gehennas",
 		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
 		["Handrmandr - Golemagg"] = "Handrmandr - Golemagg",
-		["Battlearm - Gehennas"] = "Battlearm - Gehennas",
 		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
+		["Battlearm - Gehennas"] = "Battlearm - Gehennas",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
-		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
+		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 		["Provokator - Jin'do"] = "Provokator - Jin'do",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
 		["Poklopac - Mirage Raceway"] = "Poklopac - Mirage Raceway",
 		["Miqa - Golemagg"] = "Miqa - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Tudum - Jin'do"] = "Tudum - Jin'do",
-		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 		["Wells - Jin'do"] = "Wells - Jin'do",
 	},
 	["profiles"] = {
@@ -107,24 +107,17 @@ Postal3DB = {
 		},
 		["Handrmandr - Golemagg"] = {
 		},
-		["Battlearm - Gehennas"] = {
-		},
 		["Tudum - Ashbringer"] = {
+		},
+		["Battlearm - Gehennas"] = {
 		},
 		["Augustin - Golemagg"] = {
 		},
-		["Pitchwise - Ashbringer"] = {
+		["Moolatz - Golemagg"] = {
 		},
 		["Provokator - Jin'do"] = {
 		},
-		["Vermin - Golemagg"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Tadibey|Golemagg|Horde", -- [1]
-					"Miqa|Golemagg|Horde", -- [2]
-					"Mxyz|Golemagg|Horde", -- [3]
-				},
-			},
+		["Mxyzptlk - Golemagg"] = {
 		},
 		["Battlearm - Jin'do"] = {
 		},
@@ -137,11 +130,18 @@ Postal3DB = {
 				},
 			},
 		},
-		["Mxyzptlk - Golemagg"] = {
+		["Vermin - Golemagg"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Tadibey|Golemagg|Horde", -- [1]
+					"Miqa|Golemagg|Horde", -- [2]
+					"Mxyz|Golemagg|Horde", -- [3]
+				},
+			},
+		},
+		["Pitchwise - Ashbringer"] = {
 		},
 		["Tudum - Jin'do"] = {
-		},
-		["Moolatz - Golemagg"] = {
 		},
 		["Wells - Jin'do"] = {
 		},

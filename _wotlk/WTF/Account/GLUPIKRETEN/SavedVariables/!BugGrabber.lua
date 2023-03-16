@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 9721,
+	["session"] = 9723,
 	["errors"] = {
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'LucyRaidFrames' tried to call the protected function 'CompactRaidGroup3Member1:Show()'.",
