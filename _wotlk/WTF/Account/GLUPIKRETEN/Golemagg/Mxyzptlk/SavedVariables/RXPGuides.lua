@@ -7,6 +7,8 @@ RXPCData = {
 	["stepSkip"] = {
 	},
 	["flightPaths"] = {
+		[23] = "Orgrimmar, Durotar",
+		[25] = "Crossroads, The Barrens",
 	},
 	["currentGuideGroup"] = "",
 }
@@ -31,10 +33,10 @@ RXPCTrackingData = {
 							["monthDay"] = 26,
 							["day"] = 0,
 							["month"] = 1,
-							["minute"] = 2,
+							["weekday"] = 5,
 							["year"] = 2023,
 							["hour"] = 14,
-							["weekday"] = 5,
+							["minute"] = 2,
 						},
 						["finished"] = 50261,
 						["started"] = 1,
@@ -44,11 +46,11 @@ RXPCTrackingData = {
 				},
 				[15] = {
 					["groupExperience"] = 0,
-					["deaths"] = 0,
+					["deaths"] = 2,
 					["mobs"] = {
 						["The Barrens"] = {
-							["xp"] = 1290,
-							["count"] = 9,
+							["xp"] = 6510,
+							["count"] = 33,
 						},
 					},
 					["timestamp"] = {
@@ -56,10 +58,10 @@ RXPCTrackingData = {
 							["monthDay"] = 26,
 							["day"] = 0,
 							["month"] = 1,
-							["minute"] = 2,
+							["weekday"] = 5,
 							["year"] = 2023,
 							["hour"] = 14,
-							["weekday"] = 5,
+							["minute"] = 2,
 						},
 						["started"] = 50262,
 					},
@@ -87,7 +89,8 @@ RXPCSettings = {
 		["Mxyzptlk - Golemagg"] = {
 			["hardcore"] = false,
 			["enableMinimapButton"] = false,
-			["frameHeight"] = 125.0000152587891,
+			["frameHeight"] = 125.0000228881836,
+			["xprate"] = 1.2,
 		},
 	},
 }
