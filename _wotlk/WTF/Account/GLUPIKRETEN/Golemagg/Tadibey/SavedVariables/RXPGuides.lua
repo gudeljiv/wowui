@@ -1,16 +1,16 @@
 
 RXPCData = {
-	["stepSkip"] = {
-		[15] = true,
-		[7] = true,
-	},
+	["currentGuideGroup"] = "RestedXP Horde 1-30",
 	["completedWaypoints"] = {
 		[18] = {
 		},
 	},
 	["currentStep"] = 18,
-	["currentGuideName"] = "22-25 Hillsbrad / South Barrens",
-	["currentGuideGroup"] = "RestedXP Horde 1-30",
+	["GA"] = false,
+	["stepSkip"] = {
+		[15] = true,
+		[7] = true,
+	},
 	["flightPaths"] = {
 		[11] = "Undercity, Tirisfal",
 		[80] = "Ratchet, The Barrens",
@@ -19,7 +19,7 @@ RXPCData = {
 		[23] = "Orgrimmar, Durotar",
 		[77] = "Camp Taurajo, The Barrens",
 	},
-	["GA"] = false,
+	["currentGuideName"] = "22-25 Hillsbrad / South Barrens",
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -85,12 +85,12 @@ RXPCComms = {
 					["xp"] = 58,
 				},
 				["Klegg"] = {
-					["level"] = 17,
+					["class"] = "ROGUE",
 					["lastSeen"] = 59377.458,
 					["xpPercentage"] = 47,
-					["class"] = "ROGUE",
-					["timePlayed"] = 3142.248,
 					["isRxp"] = true,
+					["timePlayed"] = 3142.248,
+					["level"] = 17,
 				},
 				["Logges"] = {
 					["timePlayed"] = 1704.800000000047,

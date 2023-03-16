@@ -1,13 +1,16 @@
 
 RXPCData = {
-	["currentGuideName"] = "22-25 Hillsbrad / South Barrens",
+	["GA"] = false,
 	["completedWaypoints"] = {
 		[18] = {
 		},
 	},
 	["currentStep"] = 18,
-	["GA"] = false,
-	["currentGuideGroup"] = "RestedXP Horde 1-30",
+	["currentGuideName"] = "22-25 Hillsbrad / South Barrens",
+	["stepSkip"] = {
+		[7] = true,
+		[15] = true,
+	},
 	["flightPaths"] = {
 		[11] = "Undercity, Tirisfal",
 		[80] = "Ratchet, The Barrens",
@@ -16,10 +19,7 @@ RXPCData = {
 		[23] = "Orgrimmar, Durotar",
 		[10] = "The Sepulcher, Silverpine Forest",
 	},
-	["stepSkip"] = {
-		[7] = true,
-		[15] = true,
-	},
+	["currentGuideGroup"] = "RestedXP Horde 1-30",
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -85,12 +85,12 @@ RXPCComms = {
 					["xp"] = 58,
 				},
 				["Klegg"] = {
-					["class"] = "ROGUE",
-					["lastSeen"] = 59309.206,
-					["xpPercentage"] = 46,
 					["isRxp"] = true,
-					["timePlayed"] = 0,
+					["lastSeen"] = 59377.458,
+					["xpPercentage"] = 47,
 					["level"] = 17,
+					["timePlayed"] = 3142.248,
+					["class"] = "ROGUE",
 				},
 				["Logges"] = {
 					["timePlayed"] = 1704.800000000047,
@@ -118,17 +118,17 @@ RXPCComms = {
 					["xp"] = 170,
 				},
 				["Tirbuson"] = {
-					["timePlayed"] = 0,
+					["timePlayed"] = 3142.248,
 					["class"] = "PALADIN",
 					["xp"] = 277,
 				},
 				["Palepala"] = {
-					["timePlayed"] = 0,
+					["timePlayed"] = 1227.956000000006,
 					["class"] = "PALADIN",
 					["xp"] = 277,
 				},
 				["Ayatolla"] = {
-					["timePlayed"] = 0,
+					["timePlayed"] = 3142.248,
 					["class"] = "PALADIN",
 					["xp"] = 277,
 				},
