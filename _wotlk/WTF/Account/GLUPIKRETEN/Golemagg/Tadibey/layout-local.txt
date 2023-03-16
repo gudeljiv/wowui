@@ -39,15 +39,8 @@ FrameLevel: 1
 Anchor: CENTER
 X: 313
 Y: -74
-W: 78
+W: 81
 H: 40
-Frame: Dejunk_JunkFrame
-FrameLevel: 2
-Anchor: TOPRIGHT
-X: -358
-Y: -209
-W: 325
-H: 375
 Frame: RXPG_ARROW
 FrameLevel: 1
 Anchor: CENTER
@@ -55,3 +48,10 @@ X: -155
 Y: -162
 W: 32
 H: 32
+Frame: Dejunk_JunkFrame
+FrameLevel: 2
+Anchor: TOPRIGHT
+X: -358
+Y: -209
+W: 325
+H: 375
