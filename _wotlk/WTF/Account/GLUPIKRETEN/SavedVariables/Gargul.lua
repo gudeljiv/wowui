@@ -3,7 +3,7 @@ GargulDB = {
 	["BoostedRolls"] = {
 	},
 	["LoadDetails"] = {
-		["lastLoadedOn"] = 1679042217,
+		["lastLoadedOn"] = 1679064254,
 		["5.3.2"] = 1677011490,
 		["5.2.0"] = 1675856197,
 		["5.2.1"] = 1675921266,
@@ -13,7 +13,7 @@ GargulDB = {
 		["5.3.1"] = 1676314418,
 		["5.3.0"] = 1676121559,
 		["5.3.3"] = 1677948781,
-		["5.3.7"] = 1679042217,
+		["5.3.7"] = 1679064254,
 		["5.1.1"] = 1675856197,
 		["5.3.4"] = 1678718998,
 		["5.0.11"] = 1673028609,
@@ -148,13 +148,13 @@ GargulDB = {
 			["enableBidderQueue"] = true,
 			["enableGDKPBidderQueue"] = true,
 			["minimizeBidderQueue"] = false,
-			["Mutators"] = {
-			},
+			["enableGDKPQueuesByDefault"] = false,
 			["announceNewBidInRW"] = true,
 			["minimumBid"] = 100,
 			["showHistoryOnTooltip"] = true,
-			["enableGDKPQueuesByDefault"] = false,
 			["closeAuctioneerOnStart"] = false,
+			["Mutators"] = {
+			},
 			["customPotExportHeader"] = "Player,Cut",
 			["queueIsHalted"] = false,
 			["time"] = 30,
@@ -401,12 +401,143 @@ GargulDB = {
 		},
 	},
 	["SoftRes"] = {
+		["SoftReserves"] = {
+			{
+				["Items"] = {
+					40385, -- [1]
+				},
+				["note"] = "",
+				["name"] = "Mxzq",
+				["class"] = "hunter",
+				["plusOnes"] = 0,
+			}, -- [1]
+			{
+				["Items"] = {
+					40399, -- [1]
+				},
+				["note"] = "",
+				["name"] = "Fattigjonen",
+				["class"] = "warlock",
+				["plusOnes"] = 0,
+			}, -- [2]
+			{
+				["Items"] = {
+					40399, -- [1]
+				},
+				["note"] = "",
+				["name"] = "Beebah",
+				["class"] = "shaman",
+				["plusOnes"] = 0,
+			}, -- [3]
+			{
+				["Items"] = {
+					40384, -- [1]
+				},
+				["note"] = "",
+				["name"] = "Lekx",
+				["class"] = "death knight",
+				["plusOnes"] = 0,
+			}, -- [4]
+			{
+				["Items"] = {
+					40399, -- [1]
+				},
+				["note"] = "",
+				["name"] = "Nálkás",
+				["class"] = "paladin",
+				["plusOnes"] = 0,
+			}, -- [5]
+			{
+				["Items"] = {
+					40396, -- [1]
+				},
+				["note"] = "",
+				["name"] = "Farsken",
+				["class"] = "mage",
+				["plusOnes"] = 0,
+			}, -- [6]
+			{
+				["Items"] = {
+					40396, -- [1]
+				},
+				["note"] = "",
+				["name"] = "Dád",
+				["class"] = "mage",
+				["plusOnes"] = 0,
+			}, -- [7]
+			{
+				["Items"] = {
+					40362, -- [1]
+				},
+				["note"] = "",
+				["name"] = "Nanigee",
+				["class"] = "priest",
+				["plusOnes"] = 0,
+			}, -- [8]
+			{
+				["Items"] = {
+					40402, -- [1]
+				},
+				["note"] = "",
+				["name"] = "Madros",
+				["class"] = "paladin",
+				["plusOnes"] = 0,
+			}, -- [9]
+			{
+				["Items"] = {
+					40396, -- [1]
+				},
+				["note"] = "Torch of Holy Fire",
+				["name"] = "Nezoko",
+				["class"] = "paladin",
+				["plusOnes"] = 0,
+			}, -- [10]
+		},
+		["HardReserves"] = {
+			{
+				["id"] = 40395,
+				["note"] = "",
+				["for"] = "",
+			}, -- [1]
+		},
+		["MetaData"] = {
+			["note"] = "",
+			["id"] = "m25uyx",
+			["hidden"] = false,
+			["url"] = "https://softres.it/raid/m25uyx",
+			["createdAt"] = 1679064633,
+			["updatedAt"] = 1679065133,
+			["importString"] = "eNq9lM9OwkAQxl+FzLmH8q9KbxJDPAge1JPhMHYHuna7i7NbKRAehmfhxdzGGIsHkDR43G8y89v5vmQ2kJNDgQ4h3oAUEEPe6RerEgKQ2jrUCXltaZzKNJZlO1x0fCmVQpCGeIbKUgAJEzoSNw7idnQ1CKNe1O0GUCzEodxvVzKjFI8O2dmqogulAhDSJobFMytP8wBtXMWFbQDWzByTJf4gC/HLBtgoNTS68K8wgIUq7IOmr4fGvGobl+t3PyRRaL0OaaEdcW2q381R/jWt2rkXdq/79bL/im+Iw+10G/wFOELn5PzNaG/KD3eJrEySHQcPBk3AQ6JXTGtMm2KO+pLIe8rKGlD46NNMy3nqTjjca0Kd7Hcq2+9sjbxAhUJedNcRss0OMs1xTieIURPi7X4n/hE3QZ8cUd1VlmRPRBl1mjDHKNicG2QvbMSc0Npk5hjzyXCStsysdWfUqjWSTGe5PfVHEVkcHKrvHn9aZoZ/Hbbp9hOGybQR",
+			["instance"] = "wotlknaxx10p2",
+			["raidStartsAt"] = 0,
+			["discordUrl"] = "",
+			["importedAt"] = 1679065139,
+		},
 	},
 	["PlusOnes"] = {
 		["Totals"] = {
+			["nezoko"] = 0,
+			["flankpalxob"] = 0,
+			["trickylol"] = 0,
+			["fadiline"] = 0,
+			["zuldarian"] = 0,
+			["farsken"] = 0,
+			["dád"] = 0,
+			["donloon"] = 0,
+			["beebah"] = 0,
+			["mxzq"] = 0,
+			["madros"] = 0,
+			["roughtan"] = 0,
+			["lekx"] = 0,
+			["pbox"] = 0,
+			["nanigee"] = 0,
+			["fattigjonen"] = 0,
+			["naniboo"] = 0,
+			["nálkás"] = 0,
+			["spefanlaks"] = 0,
 		},
 		["MetaData"] = {
-			["updatedAt"] = 1677593294,
+			["updatedAt"] = 1679065139,
 		},
 	},
 	["AwardHistory"] = {
@@ -1576,6 +1707,48 @@ GargulDB = {
 			["GDKPCost"] = 1000,
 			["received"] = true,
 		},
+		["14777239392165529280"] = {
+			["checksum"] = "14777239392165529280",
+			["Rolls"] = {
+				{
+					["player"] = "Lekx",
+					["time"] = 1679065477,
+					["amount"] = 64,
+					["class"] = "deathknight",
+					["classification"] = "MS",
+					["priority"] = 2,
+				}, -- [1]
+				{
+					["player"] = "Farsken",
+					["time"] = 1679065479,
+					["amount"] = 39,
+					["class"] = "mage",
+					["classification"] = "MS",
+					["priority"] = 2,
+				}, -- [2]
+				{
+					["player"] = "Dád",
+					["time"] = 1679065480,
+					["amount"] = 46,
+					["class"] = "mage",
+					["classification"] = "MS",
+					["priority"] = 2,
+				}, -- [3]
+			},
+			["OS"] = false,
+			["WL"] = false,
+			["TMB"] = false,
+			["PL"] = false,
+			["SR"] = false,
+			["awardedTo"] = "Lekx",
+			["GDKPCost"] = 0,
+			["itemID"] = 44577,
+			["received"] = true,
+			["softresID"] = "m25uyx",
+			["timestamp"] = 1679065490,
+			["itemLink"] = "|cffa335ee|Hitem:44577::::::::80:::::::::|h[Heroic Key to the Focusing Iris]|h|r",
+			["awardedBy"] = "Nanigee",
+		},
 		["26065794018445880070"] = {
 			["checksum"] = "26065794018445880070",
 			["OS"] = false,
@@ -1652,6 +1825,23 @@ GargulDB = {
 			["timestamp"] = 1675959280,
 			["itemLink"] = "|cffa335ee|Hitem:40633::::::::80:::::::::|h[Crown of the Lost Vanquisher]|h|r",
 			["awardedBy"] = "Gemoo",
+		},
+		["38276844371927059010"] = {
+			["checksum"] = "38276844371927059010",
+			["Rolls"] = {
+			},
+			["OS"] = false,
+			["WL"] = false,
+			["TMB"] = false,
+			["PL"] = false,
+			["SR"] = false,
+			["awardedTo"] = "||de||",
+			["itemID"] = 40366,
+			["received"] = true,
+			["softresID"] = "m25uyx",
+			["timestamp"] = 1679065517,
+			["itemLink"] = "|cffa335ee|Hitem:40366::::::::80:::::::::|h[Platehelm of the Great Wyrm]|h|r",
+			["awardedBy"] = "Nanigee",
 		},
 		["22126915511108511841"] = {
 			["checksum"] = "22126915511108511841",
@@ -2428,6 +2618,48 @@ GargulDB = {
 			["itemLink"] = "|cffa335ee|Hitem:43345::::::::80:::::::::|h[Dragon Hide Bag]|h|r",
 			["awardedBy"] = "Gemoo",
 		},
+		["32624723194016369854"] = {
+			["checksum"] = "32624723194016369854",
+			["Rolls"] = {
+				{
+					["player"] = "Fattigjonen",
+					["time"] = 1679065864,
+					["amount"] = 53,
+					["class"] = "warlock",
+					["classification"] = "MS",
+					["priority"] = 2,
+				}, -- [1]
+				{
+					["player"] = "Nálkás",
+					["time"] = 1679065865,
+					["amount"] = 29,
+					["class"] = "paladin",
+					["classification"] = "MS",
+					["priority"] = 2,
+				}, -- [2]
+				{
+					["player"] = "Beebah",
+					["time"] = 1679065867,
+					["amount"] = 33,
+					["class"] = "shaman",
+					["classification"] = "MS",
+					["priority"] = 2,
+				}, -- [3]
+			},
+			["OS"] = false,
+			["WL"] = false,
+			["TMB"] = false,
+			["PL"] = false,
+			["SR"] = true,
+			["awardedTo"] = "Fattigjonen",
+			["GDKPCost"] = 0,
+			["itemID"] = 40399,
+			["received"] = true,
+			["softresID"] = "m25uyx",
+			["timestamp"] = 1679065881,
+			["itemLink"] = "|cffa335ee|Hitem:40399::::::::80:::::::::|h[Signet of Manifested Pain]|h|r",
+			["awardedBy"] = "Nanigee",
+		},
 		["27788765231108511841"] = {
 			["checksum"] = "27788765231108511841",
 			["OS"] = false,
@@ -2828,6 +3060,32 @@ GargulDB = {
 			["GDKPCost"] = 300,
 			["received"] = true,
 		},
+		["35782672641675283720"] = {
+			["checksum"] = "35782672641675283720",
+			["Rolls"] = {
+				{
+					["player"] = "Nezoko",
+					["time"] = 1679065888,
+					["amount"] = 17,
+					["class"] = "paladin",
+					["classification"] = "MS",
+					["priority"] = 2,
+				}, -- [1]
+			},
+			["OS"] = false,
+			["WL"] = false,
+			["TMB"] = false,
+			["PL"] = false,
+			["SR"] = false,
+			["awardedTo"] = "Nezoko",
+			["GDKPCost"] = 0,
+			["itemID"] = 40631,
+			["received"] = true,
+			["softresID"] = "m25uyx",
+			["timestamp"] = 1679065898,
+			["itemLink"] = "|cffa335ee|Hitem:40631::::::::80:::::::::|h[Crown of the Lost Conqueror]|h|r",
+			["awardedBy"] = "Nanigee",
+		},
 		["13186090498445880070"] = {
 			["checksum"] = "13186090498445880070",
 			["OS"] = false,
@@ -2857,6 +3115,23 @@ GargulDB = {
 			["timestamp"] = 1675960362,
 			["itemLink"] = "|cffa335ee|Hitem:34057::::::::80:::::::::|h[Abyss Crystal]|h|r",
 			["awardedBy"] = "Gemoo",
+		},
+		["22246350111927059010"] = {
+			["checksum"] = "22246350111927059010",
+			["Rolls"] = {
+			},
+			["OS"] = false,
+			["WL"] = false,
+			["TMB"] = false,
+			["PL"] = false,
+			["SR"] = false,
+			["awardedTo"] = "||de||",
+			["itemID"] = 40379,
+			["received"] = true,
+			["softresID"] = "m25uyx",
+			["timestamp"] = 1679065469,
+			["itemLink"] = "|cffa335ee|Hitem:40379::::::::80:::::::::|h[Legguards of the Boneyard]|h|r",
+			["awardedBy"] = "Nanigee",
 		},
 		["31061582144396308230"] = {
 			["checksum"] = "31061582144396308230",

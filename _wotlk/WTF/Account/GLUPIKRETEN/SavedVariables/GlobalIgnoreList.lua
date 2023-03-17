@@ -136,7 +136,7 @@ GlobalIgnoreDB = {
 		"Rikaya-Golemagg", -- [28]
 		"Tirbuson-Golemagg", -- [29]
 	},
-	["autoTime"] = 600,
+	["autoUpdate"] = true,
 	["autoCount"] = 3,
 	["notes"] = {
 		"", -- [1]
@@ -181,7 +181,7 @@ GlobalIgnoreDB = {
 		"[contains=WTS] or [contains=WTB]", -- [9]
 		"[nonlatin]", -- [10]
 	},
-	["trackChanges"] = true,
+	["autoTime"] = 600,
 	["autoIgnore"] = true,
 	["factionList"] = {
 		"Horde", -- [1]
@@ -315,7 +315,7 @@ GlobalIgnoreDB = {
 		"Freezqt-Golemagg", -- [2]
 		"Kebabben-Golemagg", -- [3]
 	},
-	["autoUpdate"] = true,
+	["trackChanges"] = true,
 	["samefaction"] = true,
 	["openWithFriends"] = true,
 }

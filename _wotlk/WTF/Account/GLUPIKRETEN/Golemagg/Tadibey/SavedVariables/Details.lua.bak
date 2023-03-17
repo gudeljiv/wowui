@@ -7,66 +7,1294 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
+					["combatId"] = 147,
 					["tipo"] = 2,
-					["combatId"] = 130,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004205,
+							["totalabsorbed"] = 0.007339,
 							["damage_from"] = {
-								["Razormane Seer"] = true,
-								["Searing Totem II <Razormane Seer>"] = true,
+								["Ghostpaw Runner"] = true,
+								["Environment (Falling)"] = true,
 							},
 							["targets"] = {
-								["Razormane Seer"] = 557,
-								["Searing Totem II <Razormane Seer>"] = 58,
+								["Ghostpaw Runner"] = 37,
 							},
-							["on_hold"] = false,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 							["pets"] = {
 							},
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["end_time"] = 1678952030,
-							["friendlyfire_total"] = 0,
+							["classe"] = "SHAMAN",
+							["aID"] = "4465-0416001E",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 615.004205,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "4465-0416001E",
+							["total_without_pet"] = 37.007339,
+							["end_time"] = 1678992833,
+							["colocacao"] = 1,
 							["dps_started"] = false,
-							["total"] = 615.004205,
-							["classe"] = "SHAMAN",
+							["total"] = 37.007339,
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
 							["nome"] = "Tadibey",
 							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[26365] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 37,
+										["targets"] = {
+											["Ghostpaw Runner"] = 37,
+										},
+										["n_dmg"] = 37,
+										["n_min"] = 37,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[6] = 37,
+											[8] = 37,
+										},
+										["total"] = 37,
+										["c_max"] = 0,
+										["id"] = 26365,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-0416001E",
+							["on_hold"] = false,
+							["last_dps"] = 3.795624512820513,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 119.007339,
+							["start_time"] = 1678992833,
+							["delay"] = 0,
+							["last_event"] = 1678992824,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003732,
+							["damage_from"] = {
+								["Tadibey"] = true,
+							},
+							["targets"] = {
+								["Tadibey"] = 25,
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["monster"] = true,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 25.003732,
+							["fight_component"] = true,
+							["end_time"] = 1678992833,
+							["dps_started"] = false,
+							["total"] = 25.003732,
+							["classe"] = "UNKNOW",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Ghostpaw Runner",
+							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 84,
+										["n_max"] = 25,
 										["targets"] = {
-											["Razormane Seer"] = 290,
+											["Tadibey"] = 25,
 										},
-										["n_dmg"] = 290,
-										["n_min"] = 58,
+										["n_dmg"] = 25,
+										["n_min"] = 25,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["ChartData"] = {
-											[8] = 206,
-											[11] = 290,
-											[5] = 206,
-										},
-										["total"] = 290,
+										["counter"] = 1,
+										["total"] = 25,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["PARRY"] = 1,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "3823",
+							["serial"] = "Creature-0-5563-1-21-3823-000013515F",
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 37.003732,
+							["start_time"] = 1678992833,
+							["delay"] = 0,
+							["last_event"] = 1678992824,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 147,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 147,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 147,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["classe"] = "SHAMAN",
+							["nome"] = "Tadibey",
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
+							["buff_uptime"] = 9,
+							["pets"] = {
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["tipo"] = 4,
+							["aID"] = "4465-0416001E",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[325] = {
+										["activedamt"] = 1,
+										["id"] = 325,
+										["targets"] = {
+										},
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[64658] = {
+										["activedamt"] = 1,
+										["id"] = 64658,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-0416001E",
+							["last_event"] = 1678992833,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 147,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Tadibey"] = "Player-4465-0416001E",
+				},
+				["raid_roster_indexed"] = {
+					"Tadibey", -- [1]
+				},
+				["CombatStartedAt"] = 512624.359,
+				["tempo_start"] = 1678992824,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1182,
+				["playing_solo"] = true,
+				["totals"] = {
+					61.92354699999996, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = -0.01406999999999972,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					37, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = false,
+				["instance_type"] = "none",
+				["data_fim"] = "19:53:53",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Ghostpaw Runner",
+				["TotalElapsedCombatTime"] = 11.66600000002654,
+				["CombatEndedAt"] = 512636.025,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Tadibey"] = 37.007339,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 511840.835,
+				["combat_id"] = 147,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+					["Tadibey"] = {
+						{
+							true, -- [1]
+							3, -- [2]
+							94, -- [3]
+							1678993746.997, -- [4]
+							968, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 2,
+					},
+				},
+				["data_inicio"] = "19:53:44",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+				},
+				["start_time"] = 511831.085,
+				["TimeData"] = {
+				},
+				["contra"] = "Ghostpaw Runner",
+			}, -- [1]
+			{
+				{
+					["combatId"] = 146,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.005593,
+							["damage_from"] = {
+								["Ghostpaw Runner"] = true,
+								["Wildthorn Stalker"] = true,
+								["Environment (Falling)"] = true,
+							},
+							["targets"] = {
+								["Ghostpaw Runner"] = 550,
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 550.005593,
+							["end_time"] = 1678992756,
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 550.005593,
+							["classe"] = "SHAMAN",
+							["aID"] = "4465-0416001E",
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 73,
+										["targets"] = {
+											["Ghostpaw Runner"] = 191,
+										},
+										["n_dmg"] = 191,
+										["n_min"] = 58,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[8] = 60,
+											[12] = 133,
+										},
+										["total"] = 191,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[10444] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 33,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Ghostpaw Runner"] = 77,
+										},
+										["n_dmg"] = 44,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[8] = 22,
+											[12] = 44,
+										},
+										["total"] = 77,
+										["c_max"] = 33,
+										["id"] = 10444,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 33,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8045] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 114,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Ghostpaw Runner"] = 114,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 114,
+										["c_max"] = 114,
+										["id"] = 8045,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 114,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8052] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 23,
+										["g_amt"] = 0,
+										["n_max"] = 58,
+										["targets"] = {
+											["Ghostpaw Runner"] = 96,
+										},
+										["n_dmg"] = 73,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[8] = 58,
+											[12] = 73,
+										},
+										["total"] = 96,
+										["c_max"] = 23,
+										["id"] = 8052,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 23,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[26365] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 36,
+										["targets"] = {
+											["Ghostpaw Runner"] = 72,
+										},
+										["n_dmg"] = 72,
+										["n_min"] = 36,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[8] = 36,
+											[12] = 72,
+										},
+										["total"] = 72,
+										["c_max"] = 0,
+										["id"] = 26365,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-0416001E",
+							["on_hold"] = false,
+							["last_dps"] = 37.62780276383432,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 149.005593,
+							["start_time"] = 1678992756,
+							["delay"] = 0,
+							["last_event"] = 1678992755,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006099,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["damage_from"] = {
+								["Tadibey"] = true,
+							},
+							["targets"] = {
+								["Tadibey"] = 118,
+							},
+							["monster"] = true,
+							["pets"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 118.006099,
+							["end_time"] = 1678992756,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 118.006099,
+							["friendlyfire"] = {
+							},
+							["aID"] = "3823",
+							["nome"] = "Ghostpaw Runner",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 26,
+										["targets"] = {
+											["Tadibey"] = 118,
+										},
+										["n_dmg"] = 118,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 118,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["serial"] = "Creature-0-5563-1-21-3823-00001364AD",
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 550.006099,
+							["start_time"] = 1678992756,
+							["delay"] = 0,
+							["last_event"] = 1678992755,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004795,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Tadibey"] = 22,
+							},
+							["monster"] = true,
+							["pets"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 22.004795,
+							["end_time"] = 1678992756,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 22.004795,
+							["friendlyfire"] = {
+							},
+							["aID"] = "3819",
+							["nome"] = "Wildthorn Stalker",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Tadibey"] = 22,
+										},
+										["n_dmg"] = 22,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 22,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[12023] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 12023,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["serial"] = "Creature-0-5563-1-21-3819-0005115120",
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.004795,
+							["start_time"] = 1678992756,
+							["delay"] = 0,
+							["last_event"] = 1678992741,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 146,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "SHAMAN",
+							["totalover"] = 0.002927,
+							["total_without_pet"] = 92.002927,
+							["total"] = 92.002927,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["on_hold"] = false,
+							["serial"] = "Player-4465-0416001E",
+							["totalabsorb"] = 0.002927,
+							["last_hps"] = 6.823624341759932,
+							["targets"] = {
+								["Tadibey"] = 92,
+							},
+							["totalover_without_pet"] = 0.002927,
+							["healing_taken"] = 92.002927,
+							["fight_component"] = true,
+							["end_time"] = 1678992756,
+							["colocacao"] = 1,
+							["heal_enemy_amt"] = 0,
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[20007] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 92,
+										["targets"] = {
+											["Tadibey"] = 92,
+										},
+										["n_min"] = 92,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 92,
+										["c_max"] = 0,
+										["id"] = 20007,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 92,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["healing_from"] = {
+								["Tadibey"] = true,
+							},
+							["start_time"] = 1678992756,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-0416001E",
+							["totaldenied"] = 0.002927,
+							["delay"] = 0,
+							["last_event"] = 1678992755,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 146,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.00298,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Tadibey"] = 63,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "SHAMAN",
+							["totalover"] = 29.00298,
+							["fight_component"] = true,
+							["alternatepower"] = 0.00298,
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[52128] = {
+										["total"] = 23,
+										["id"] = 52128,
+										["totalover"] = 29,
+										["targets"] = {
+											["Tadibey"] = 23,
+										},
+										["counter"] = 1,
+									},
+									[59914] = {
+										["total"] = 40,
+										["id"] = 59914,
+										["totalover"] = 0,
+										["targets"] = {
+											["Tadibey"] = 40,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["grupo"] = true,
+							["aID"] = "4465-0416001E",
+							["received"] = 63.00298,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["tipo"] = 3,
+							["total"] = 63.00298,
+							["passiveover"] = 0.00298,
+							["serial"] = "Player-4465-0416001E",
+							["last_event"] = 1678992755,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 146,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[8052] = {
+										["activedamt"] = 0,
+										["id"] = 8052,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8045] = {
+										["activedamt"] = 0,
+										["id"] = 8045,
+										["targets"] = {
+										},
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["buff_uptime"] = 10,
+							["aID"] = "4465-0416001E",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[64658] = {
+										["activedamt"] = 1,
+										["id"] = 64658,
+										["targets"] = {
+										},
+										["actived_at"] = 1678992741,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									[20007] = {
+										["activedamt"] = 1,
+										["id"] = 20007,
+										["targets"] = {
+										},
+										["uptime"] = 1,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[325] = {
+										["activedamt"] = 1,
+										["id"] = 325,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[52127] = {
+										["activedamt"] = 1,
+										["id"] = 52127,
+										["targets"] = {
+										},
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 6,
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Tadibey",
+							["grupo"] = true,
+							["spell_cast"] = {
+								[8045] = 1,
+								[8052] = 1,
+								[325] = 1,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["last_event"] = 1678992756,
+							["classe"] = "SHAMAN",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-0416001E",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["nome"] = "Wildthorn Stalker",
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["monster"] = true,
+							["classe"] = "UNKNOW",
+							["spell_cast"] = {
+								[12023] = 1,
+							},
+							["flag_original"] = 68168,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["aID"] = "3819",
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-5563-1-21-3819-0005115120",
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 146,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Tadibey"] = "Player-4465-0416001E",
+				},
+				["raid_roster_indexed"] = {
+					"Tadibey", -- [1]
+				},
+				["CombatStartedAt"] = 511829.451,
+				["tempo_start"] = 1678992741,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1181,
+				["playing_solo"] = true,
+				["totals"] = {
+					689.997409, -- [1]
+					92, -- [2]
+					{
+						0, -- [1]
+						[0] = 63,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					550, -- [1]
+					92, -- [2]
+					{
+						0, -- [1]
+						[0] = 63,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "19:52:36",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Wildthorn Stalker",
+				["TotalElapsedCombatTime"] = 511763.535,
+				["CombatEndedAt"] = 511763.535,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Tadibey"] = 92.002927,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Tadibey"] = 550.005593,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 511763.535,
+				["combat_id"] = 146,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+					["Tadibey"] = {
+						{
+							true, -- [1]
+							3, -- [2]
+							9, -- [3]
+							1678992779.04, -- [4]
+							968, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 2,
+					},
+				},
+				["data_inicio"] = "19:52:22",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Ghostpaw Runner"] = 1,
+				},
+				["start_time"] = 511748.918,
+				["TimeData"] = {
+				},
+				["contra"] = "Wildthorn Stalker",
+			}, -- [2]
+			{
+				{
+					["combatId"] = 145,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007062,
+							["damage_from"] = {
+								["Shadethicket Wood Shaper"] = true,
+							},
+							["targets"] = {
+								["Shadethicket Wood Shaper"] = 604,
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 604.007062,
+							["end_time"] = 1678992654,
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 604.007062,
+							["classe"] = "SHAMAN",
+							["aID"] = "4465-0416001E",
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 67,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 236,
+										},
+										["n_dmg"] = 236,
+										["n_min"] = 54,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["ChartData"] = {
+											[8] = 236,
+											[11] = 236,
+											[5] = 169,
+										},
+										["total"] = 236,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
@@ -81,7 +1309,3302 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 77,
 										["targets"] = {
-											["Razormane Seer"] = 77,
+											["Shadethicket Wood Shaper"] = 152,
+										},
+										["n_dmg"] = 152,
+										["n_min"] = 75,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[8] = 77,
+											[11] = 77,
+										},
+										["total"] = 152,
+										["c_max"] = 0,
+										["id"] = 8045,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8052] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 57,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 118,
+										},
+										["n_dmg"] = 118,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["ChartData"] = {
+											[8] = 87,
+											[11] = 102,
+											[5] = 72,
+										},
+										["total"] = 118,
+										["c_max"] = 0,
+										["id"] = 8052,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10444] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 32,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 98,
+										},
+										["n_dmg"] = 66,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["ChartData"] = {
+											[8] = 98,
+											[11] = 98,
+											[5] = 76,
+										},
+										["total"] = 98,
+										["c_max"] = 32,
+										["id"] = 10444,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 32,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-0416001E",
+							["on_hold"] = false,
+							["last_dps"] = 47.62335898439571,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 109.007062,
+							["start_time"] = 1678992654,
+							["delay"] = 0,
+							["last_event"] = 1678992652,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006855,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["damage_from"] = {
+								["Tadibey"] = true,
+							},
+							["targets"] = {
+								["Tadibey"] = 109,
+							},
+							["monster"] = true,
+							["pets"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 109.006855,
+							["end_time"] = 1678992654,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 109.006855,
+							["friendlyfire"] = {
+							},
+							["aID"] = "3781",
+							["nome"] = "Shadethicket Wood Shaper",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Tadibey"] = 109,
+										},
+										["n_dmg"] = 109,
+										["n_min"] = 27,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 109,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["serial"] = "Creature-0-5563-1-21-3781-000012424E",
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 604.006855,
+							["start_time"] = 1678992654,
+							["delay"] = 0,
+							["last_event"] = 1678992652,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 145,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 145,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.001323,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Tadibey"] = 198,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "SHAMAN",
+							["totalover"] = 0.001323,
+							["alternatepower"] = 0.001323,
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[52128] = {
+										["total"] = 156,
+										["id"] = 52128,
+										["totalover"] = 0,
+										["targets"] = {
+											["Tadibey"] = 156,
+										},
+										["counter"] = 3,
+									},
+									[59914] = {
+										["total"] = 42,
+										["id"] = 59914,
+										["totalover"] = 0,
+										["targets"] = {
+											["Tadibey"] = 42,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["grupo"] = true,
+							["aID"] = "4465-0416001E",
+							["received"] = 198.001323,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["tipo"] = 3,
+							["total"] = 198.001323,
+							["passiveover"] = 0.001323,
+							["serial"] = "Player-4465-0416001E",
+							["last_event"] = 1678992652,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 145,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[8052] = {
+										["activedamt"] = 0,
+										["id"] = 8052,
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8045] = {
+										["activedamt"] = 0,
+										["id"] = 8045,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["buff_uptime"] = 14,
+							["aID"] = "4465-0416001E",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[57994] = {
+										["id"] = 57994,
+										["interrompeu_oque"] = {
+											[12747] = 1,
+										},
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[52127] = {
+										["activedamt"] = 1,
+										["id"] = 52127,
+										["targets"] = {
+										},
+										["uptime"] = 14,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[12747] = 1,
+							},
+							["debuff_uptime"] = 18,
+							["debuff_uptime_targets"] = {
+							},
+							["interrupt"] = 1.005409,
+							["nome"] = "Tadibey",
+							["interrupt_targets"] = {
+								["Shadethicket Wood Shaper"] = 1,
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[8045] = 2,
+								[8052] = 1,
+								[57994] = 1,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["last_event"] = 1678992654,
+							["classe"] = "SHAMAN",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-0416001E",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 145,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Tadibey"] = "Player-4465-0416001E",
+				},
+				["raid_roster_indexed"] = {
+					"Tadibey", -- [1]
+				},
+				["CombatStartedAt"] = 511746.468,
+				["tempo_start"] = 1678992640,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1180,
+				["playing_solo"] = true,
+				["totals"] = {
+					712.995565, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 198,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					604, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 198,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "19:50:54",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Shadethicket Wood Shaper",
+				["TotalElapsedCombatTime"] = 511661.234,
+				["CombatEndedAt"] = 511661.234,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Tadibey"] = 604.007062,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 511661.234,
+				["combat_id"] = 145,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "19:50:40",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Shadethicket Wood Shaper"] = 1,
+				},
+				["start_time"] = 511647.468,
+				["TimeData"] = {
+				},
+				["contra"] = "Shadethicket Wood Shaper",
+			}, -- [3]
+			{
+				{
+					["combatId"] = 144,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007975,
+							["damage_from"] = {
+								["Shadethicket Wood Shaper"] = true,
+							},
+							["targets"] = {
+								["Shadethicket Wood Shaper"] = 558,
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 558.007975,
+							["end_time"] = 1678992631,
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 558.007975,
+							["classe"] = "SHAMAN",
+							["aID"] = "4465-0416001E",
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 69,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 186,
+										},
+										["n_dmg"] = 186,
+										["n_min"] = 55,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[6] = 186,
+										},
+										["total"] = 186,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[26365] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 37,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 73,
+										},
+										["n_dmg"] = 73,
+										["n_min"] = 36,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[6] = 73,
+										},
+										["total"] = 73,
+										["c_max"] = 0,
+										["id"] = 26365,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8045] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 116,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 116,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 116,
+										["c_max"] = 116,
+										["id"] = 8045,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 116,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8052] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 87,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 118,
+										},
+										["n_dmg"] = 31,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[6] = 103,
+										},
+										["total"] = 118,
+										["c_max"] = 87,
+										["id"] = 8052,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 87,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10444] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 65,
+										},
+										["n_dmg"] = 65,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[6] = 65,
+										},
+										["total"] = 65,
+										["c_max"] = 0,
+										["id"] = 10444,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-0416001E",
+							["on_hold"] = false,
+							["last_dps"] = 80.66030283312905,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 73.007975,
+							["start_time"] = 1678992631,
+							["delay"] = 0,
+							["last_event"] = 1678992630,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003743,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["damage_from"] = {
+								["Tadibey"] = true,
+							},
+							["targets"] = {
+								["Tadibey"] = 73,
+							},
+							["monster"] = true,
+							["pets"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 73.003743,
+							["end_time"] = 1678992631,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 73.003743,
+							["friendlyfire"] = {
+							},
+							["aID"] = "3781",
+							["nome"] = "Shadethicket Wood Shaper",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 26,
+										["targets"] = {
+											["Tadibey"] = 73,
+										},
+										["n_dmg"] = 73,
+										["n_min"] = 23,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 73,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["serial"] = "Creature-0-5563-1-21-3781-000011511F",
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 558.003743,
+							["start_time"] = 1678992631,
+							["delay"] = 0,
+							["last_event"] = 1678992628,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 144,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 144,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.003235,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Tadibey"] = 40,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "SHAMAN",
+							["totalover"] = 0.003235,
+							["alternatepower"] = 0.003235,
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[59914] = {
+										["total"] = 40,
+										["id"] = 59914,
+										["totalover"] = 0,
+										["targets"] = {
+											["Tadibey"] = 40,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["grupo"] = true,
+							["aID"] = "4465-0416001E",
+							["received"] = 40.003235,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["tipo"] = 3,
+							["total"] = 40.003235,
+							["passiveover"] = 0.003235,
+							["serial"] = "Player-4465-0416001E",
+							["last_event"] = 1678992630,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 144,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[8052] = {
+										["activedamt"] = 0,
+										["id"] = 8052,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8045] = {
+										["activedamt"] = 0,
+										["id"] = 8045,
+										["targets"] = {
+										},
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["buff_uptime"] = 7,
+							["aID"] = "4465-0416001E",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[325] = {
+										["activedamt"] = 1,
+										["id"] = 325,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[52127] = {
+										["activedamt"] = 1,
+										["id"] = 52127,
+										["targets"] = {
+										},
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 6,
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Tadibey",
+							["grupo"] = true,
+							["spell_cast"] = {
+								[52127] = 1,
+								[8045] = 1,
+								[8052] = 1,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["last_event"] = 1678992631,
+							["classe"] = "SHAMAN",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-0416001E",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 144,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Tadibey"] = "Player-4465-0416001E",
+				},
+				["raid_roster_indexed"] = {
+					"Tadibey", -- [1]
+				},
+				["CombatStartedAt"] = 511646.768,
+				["tempo_start"] = 1678992623,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1179,
+				["playing_solo"] = true,
+				["totals"] = {
+					631, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 40,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					558, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 40,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "19:50:31",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Shadethicket Wood Shaper",
+				["TotalElapsedCombatTime"] = 511638.284,
+				["CombatEndedAt"] = 511638.284,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Tadibey"] = 558.007975,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 511638.284,
+				["combat_id"] = 144,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "19:50:23",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Shadethicket Wood Shaper"] = 1,
+				},
+				["start_time"] = 511630.834,
+				["TimeData"] = {
+				},
+				["contra"] = "Shadethicket Wood Shaper",
+			}, -- [4]
+			{
+				{
+					["combatId"] = 143,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001012,
+							["damage_from"] = {
+								["Shadethicket Raincaller"] = true,
+							},
+							["targets"] = {
+								["Shadethicket Raincaller"] = 587,
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 587.001012,
+							["end_time"] = 1678992607,
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 587.001012,
+							["classe"] = "SHAMAN",
+							["aID"] = "4465-0416001E",
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 146,
+										["g_amt"] = 0,
+										["n_max"] = 76,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 284,
+										},
+										["n_dmg"] = 138,
+										["n_min"] = 62,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[6] = 284,
+										},
+										["total"] = 284,
+										["c_max"] = 146,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 146,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[26365] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 37,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 37,
+										},
+										["n_dmg"] = 37,
+										["n_min"] = 37,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[6] = 37,
+										},
+										["total"] = 37,
+										["c_max"] = 0,
+										["id"] = 26365,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8045] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 111,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 111,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 111,
+										["c_max"] = 111,
+										["id"] = 8045,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 111,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8052] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 58,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 89,
+										},
+										["n_dmg"] = 89,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[6] = 74,
+										},
+										["total"] = 89,
+										["c_max"] = 0,
+										["id"] = 8052,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10444] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 66,
+										},
+										["n_dmg"] = 66,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[6] = 66,
+										},
+										["total"] = 66,
+										["c_max"] = 0,
+										["id"] = 10444,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-0416001E",
+							["on_hold"] = false,
+							["last_dps"] = 75.25653999955071,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 49.001012,
+							["start_time"] = 1678992607,
+							["delay"] = 0,
+							["last_event"] = 1678992606,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006791,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["damage_from"] = {
+								["Tadibey"] = true,
+							},
+							["targets"] = {
+								["Tadibey"] = 49,
+							},
+							["monster"] = true,
+							["pets"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 49.006791,
+							["end_time"] = 1678992607,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 49.006791,
+							["friendlyfire"] = {
+							},
+							["aID"] = "3783",
+							["nome"] = "Shadethicket Raincaller",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 27,
+										["targets"] = {
+											["Tadibey"] = 49,
+										},
+										["n_dmg"] = 49,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 49,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["serial"] = "Creature-0-5563-1-21-3783-000111511F",
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 587.006791,
+							["start_time"] = 1678992607,
+							["delay"] = 0,
+							["last_event"] = 1678992604,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 143,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 143,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.003685,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Tadibey"] = 40,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "SHAMAN",
+							["totalover"] = 0.003685,
+							["alternatepower"] = 0.003685,
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[59914] = {
+										["total"] = 40,
+										["id"] = 59914,
+										["totalover"] = 0,
+										["targets"] = {
+											["Tadibey"] = 40,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["grupo"] = true,
+							["aID"] = "4465-0416001E",
+							["received"] = 40.003685,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["tipo"] = 3,
+							["total"] = 40.003685,
+							["passiveover"] = 0.003685,
+							["serial"] = "Player-4465-0416001E",
+							["last_event"] = 1678992606,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 143,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[8052] = {
+										["activedamt"] = 0,
+										["id"] = 8052,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8045] = {
+										["activedamt"] = 0,
+										["id"] = 8045,
+										["targets"] = {
+										},
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["buff_uptime"] = 8,
+							["aID"] = "4465-0416001E",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[57994] = {
+										["id"] = 57994,
+										["interrompeu_oque"] = {
+											[9532] = 1,
+										},
+										["targets"] = {
+											["Shadethicket Raincaller"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[325] = {
+										["activedamt"] = 1,
+										["id"] = 325,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[9532] = 1,
+							},
+							["debuff_uptime"] = 6,
+							["debuff_uptime_targets"] = {
+							},
+							["interrupt"] = 1.00806,
+							["nome"] = "Tadibey",
+							["interrupt_targets"] = {
+								["Shadethicket Raincaller"] = 1,
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[8045] = 1,
+								[57994] = 1,
+								[8052] = 1,
+								[325] = 1,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["last_event"] = 1678992607,
+							["classe"] = "SHAMAN",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-0416001E",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 143,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Tadibey"] = "Player-4465-0416001E",
+				},
+				["raid_roster_indexed"] = {
+					"Tadibey", -- [1]
+				},
+				["CombatStartedAt"] = 511630.168,
+				["tempo_start"] = 1678992599,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1178,
+				["playing_solo"] = true,
+				["totals"] = {
+					636, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 40,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					587, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 40,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "19:50:07",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Shadethicket Raincaller",
+				["TotalElapsedCombatTime"] = 511614.051,
+				["CombatEndedAt"] = 511614.051,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Tadibey"] = 587.001012,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 511614.051,
+				["combat_id"] = 143,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "19:49:59",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Shadethicket Raincaller"] = 1,
+				},
+				["start_time"] = 511606.251,
+				["TimeData"] = {
+				},
+				["contra"] = "Shadethicket Raincaller",
+			}, -- [5]
+			{
+				{
+					["combatId"] = 142,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.004521,
+							["damage_from"] = {
+								["Shadethicket Wood Shaper"] = true,
+								["Shadethicket Raincaller"] = true,
+							},
+							["targets"] = {
+								["Shadethicket Wood Shaper"] = 577,
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 577.0045210000001,
+							["end_time"] = 1678992585,
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 577.0045210000001,
+							["classe"] = "SHAMAN",
+							["aID"] = "4465-0416001E",
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 68,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 246,
+										},
+										["n_dmg"] = 246,
+										["n_min"] = 55,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["ChartData"] = {
+											[8] = 178,
+											[11] = 246,
+											[5] = 123,
+										},
+										["total"] = 246,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[8045] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 148,
+										},
+										["n_dmg"] = 148,
+										["n_min"] = 73,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[8] = 75,
+											[11] = 75,
+										},
+										["total"] = 148,
+										["c_max"] = 0,
+										["id"] = 8045,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10444] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 65,
+										},
+										["n_dmg"] = 65,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["ChartData"] = {
+											[8] = 44,
+											[11] = 65,
+											[5] = 22,
+										},
+										["total"] = 65,
+										["c_max"] = 0,
+										["id"] = 10444,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8052] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 58,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 118,
+										},
+										["n_dmg"] = 118,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["ChartData"] = {
+											[8] = 103,
+											[11] = 118,
+											[5] = 73,
+										},
+										["total"] = 118,
+										["c_max"] = 0,
+										["id"] = 8052,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-0416001E",
+							["on_hold"] = false,
+							["last_dps"] = 45.85223466316093,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 156.004521,
+							["start_time"] = 1678992585,
+							["delay"] = 0,
+							["last_event"] = 1678992585,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.005464,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["damage_from"] = {
+								["Tadibey"] = true,
+							},
+							["targets"] = {
+								["Tadibey"] = 131,
+							},
+							["monster"] = true,
+							["pets"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 131.005464,
+							["end_time"] = 1678992585,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 131.005464,
+							["friendlyfire"] = {
+							},
+							["aID"] = "3781",
+							["nome"] = "Shadethicket Wood Shaper",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Tadibey"] = 131,
+										},
+										["n_dmg"] = 131,
+										["n_min"] = 24,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 131,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["serial"] = "Creature-0-5563-1-21-3781-0000115121",
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 577.0054640000001,
+							["start_time"] = 1678992585,
+							["delay"] = 0,
+							["last_event"] = 1678992584,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 142,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 142,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.001805,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Tadibey"] = 249,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "SHAMAN",
+							["totalover"] = 0.001805,
+							["alternatepower"] = 0.001805,
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[52128] = {
+										["total"] = 208,
+										["id"] = 52128,
+										["totalover"] = 0,
+										["targets"] = {
+											["Tadibey"] = 208,
+										},
+										["counter"] = 4,
+									},
+									[59914] = {
+										["total"] = 41,
+										["id"] = 59914,
+										["totalover"] = 0,
+										["targets"] = {
+											["Tadibey"] = 41,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["grupo"] = true,
+							["aID"] = "4465-0416001E",
+							["received"] = 249.001805,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["tipo"] = 3,
+							["total"] = 249.001805,
+							["passiveover"] = 0.001805,
+							["serial"] = "Player-4465-0416001E",
+							["last_event"] = 1678992598,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 142,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[8052] = {
+										["activedamt"] = 0,
+										["id"] = 8052,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8045] = {
+										["activedamt"] = 0,
+										["id"] = 8045,
+										["targets"] = {
+										},
+										["uptime"] = 7,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["buff_uptime"] = 13,
+							["aID"] = "4465-0416001E",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[57994] = {
+										["id"] = 57994,
+										["interrompeu_oque"] = {
+											[12747] = 1,
+										},
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[52127] = {
+										["activedamt"] = 1,
+										["id"] = 52127,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[12747] = 1,
+							},
+							["debuff_uptime"] = 20,
+							["debuff_uptime_targets"] = {
+							},
+							["interrupt"] = 1.008217,
+							["nome"] = "Tadibey",
+							["interrupt_targets"] = {
+								["Shadethicket Wood Shaper"] = 1,
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[8045] = 2,
+								[57994] = 1,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["last_event"] = 1678992585,
+							["classe"] = "SHAMAN",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-0416001E",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 142,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Tadibey"] = "Player-4465-0416001E",
+				},
+				["raid_roster_indexed"] = {
+					"Tadibey", -- [1]
+				},
+				["CombatStartedAt"] = 511605.951,
+				["tempo_start"] = 1678992572,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1177,
+				["playing_solo"] = true,
+				["totals"] = {
+					707.99267, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 249,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					577, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 249,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "19:49:45",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Shadethicket Wood Shaper",
+				["TotalElapsedCombatTime"] = 511592.218,
+				["CombatEndedAt"] = 511592.218,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Tadibey"] = 577.0045210000001,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 511592.218,
+				["combat_id"] = 142,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+					["Tadibey"] = {
+						{
+							true, -- [1]
+							1, -- [2]
+							25, -- [3]
+							1678992598.273, -- [4]
+							845, -- [5]
+							"Shadethicket Raincaller", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 2,
+					},
+				},
+				["data_inicio"] = "19:49:32",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Shadethicket Wood Shaper"] = 1,
+				},
+				["start_time"] = 511579.634,
+				["TimeData"] = {
+				},
+				["contra"] = "Shadethicket Wood Shaper",
+			}, -- [6]
+			{
+				{
+					["combatId"] = 141,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002586,
+							["damage_from"] = {
+								["Shadethicket Raincaller"] = true,
+							},
+							["targets"] = {
+								["Shadethicket Raincaller"] = 554,
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 554.0025860000001,
+							["end_time"] = 1678992564,
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 554.0025860000001,
+							["classe"] = "SHAMAN",
+							["aID"] = "4465-0416001E",
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 105,
+										["g_amt"] = 0,
+										["n_max"] = 74,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 239,
+										},
+										["n_dmg"] = 134,
+										["n_min"] = 60,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[5] = 165,
+											[8] = 239,
+										},
+										["total"] = 239,
+										["c_max"] = 105,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 105,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[26365] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 37,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 74,
+										},
+										["n_dmg"] = 74,
+										["n_min"] = 37,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[5] = 37,
+											[8] = 74,
+										},
+										["total"] = 74,
+										["c_max"] = 0,
+										["id"] = 26365,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8045] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 74,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 74,
+										},
+										["n_dmg"] = 74,
+										["n_min"] = 74,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[8] = 74,
+										},
+										["total"] = 74,
+										["c_max"] = 0,
+										["id"] = 8045,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10444] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 64,
+										},
+										["n_dmg"] = 64,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[5] = 43,
+											[8] = 64,
+										},
+										["total"] = 64,
+										["c_max"] = 0,
+										["id"] = 10444,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8052] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 58,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 103,
+										},
+										["n_dmg"] = 103,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["ChartData"] = {
+											[5] = 88,
+											[8] = 103,
+										},
+										["total"] = 103,
+										["c_max"] = 0,
+										["id"] = 8052,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-0416001E",
+							["on_hold"] = false,
+							["last_dps"] = 60.65279023415651,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 70.00258600000001,
+							["start_time"] = 1678992564,
+							["delay"] = 0,
+							["last_event"] = 1678992564,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.008665,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["damage_from"] = {
+								["Tadibey"] = true,
+							},
+							["targets"] = {
+								["Tadibey"] = 70,
+							},
+							["monster"] = true,
+							["pets"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 70.00866500000001,
+							["end_time"] = 1678992564,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 70.00866500000001,
+							["friendlyfire"] = {
+							},
+							["aID"] = "3783",
+							["nome"] = "Shadethicket Raincaller",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 24,
+										["targets"] = {
+											["Tadibey"] = 70,
+										},
+										["n_dmg"] = 70,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 70,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["serial"] = "Creature-0-5563-1-21-3783-0000124305",
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 554.0086650000001,
+							["start_time"] = 1678992564,
+							["delay"] = 0,
+							["last_event"] = 1678992563,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 141,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 141,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.005753,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Tadibey"] = 40,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "SHAMAN",
+							["totalover"] = 0.005753,
+							["alternatepower"] = 0.005753,
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[59914] = {
+										["total"] = 40,
+										["id"] = 59914,
+										["totalover"] = 0,
+										["targets"] = {
+											["Tadibey"] = 40,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["grupo"] = true,
+							["aID"] = "4465-0416001E",
+							["received"] = 40.005753,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["tipo"] = 3,
+							["total"] = 40.005753,
+							["passiveover"] = 0.005753,
+							["serial"] = "Player-4465-0416001E",
+							["last_event"] = 1678992564,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 141,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[8052] = {
+										["activedamt"] = 0,
+										["id"] = 8052,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8045] = {
+										["activedamt"] = 0,
+										["id"] = 8045,
+										["targets"] = {
+										},
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["buff_uptime"] = 8,
+							["aID"] = "4465-0416001E",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[57994] = {
+										["id"] = 57994,
+										["interrompeu_oque"] = {
+											[9532] = 1,
+										},
+										["targets"] = {
+											["Shadethicket Raincaller"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[325] = {
+										["activedamt"] = 1,
+										["id"] = 325,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[52127] = {
+										["activedamt"] = 1,
+										["id"] = 52127,
+										["targets"] = {
+										},
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[9532] = 1,
+							},
+							["debuff_uptime"] = 11,
+							["debuff_uptime_targets"] = {
+							},
+							["interrupt"] = 1.006741,
+							["nome"] = "Tadibey",
+							["interrupt_targets"] = {
+								["Shadethicket Raincaller"] = 1,
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[52127] = 1,
+								[8045] = 1,
+								[57994] = 1,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["last_event"] = 1678992564,
+							["classe"] = "SHAMAN",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-0416001E",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 141,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Tadibey"] = "Player-4465-0416001E",
+				},
+				["raid_roster_indexed"] = {
+					"Tadibey", -- [1]
+				},
+				["CombatStartedAt"] = 511579.301,
+				["tempo_start"] = 1678992555,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1176,
+				["playing_solo"] = true,
+				["totals"] = {
+					624, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 40,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					554, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 40,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "19:49:25",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Shadethicket Raincaller",
+				["TotalElapsedCombatTime"] = 511571.918,
+				["CombatEndedAt"] = 511571.918,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Tadibey"] = 554.0025860000001,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 511571.918,
+				["combat_id"] = 141,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "19:49:15",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Shadethicket Raincaller"] = 1,
+				},
+				["start_time"] = 511562.784,
+				["TimeData"] = {
+				},
+				["contra"] = "Shadethicket Raincaller",
+			}, -- [7]
+			{
+				{
+					["combatId"] = 140,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00109,
+							["damage_from"] = {
+								["Shadethicket Wood Shaper"] = true,
+							},
+							["targets"] = {
+								["Shadethicket Wood Shaper"] = 594,
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 594.00109,
+							["end_time"] = 1678992550,
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 594.00109,
+							["classe"] = "SHAMAN",
+							["aID"] = "4465-0416001E",
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 74,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 251,
+										},
+										["n_dmg"] = 251,
+										["n_min"] = 55,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["ChartData"] = {
+											[5] = 177,
+											[8] = 251,
+										},
+										["total"] = 251,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 63,
+										["r_amt"] = 0,
+									}, -- [1]
+									[26365] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 37,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 109,
+										},
+										["n_dmg"] = 109,
+										["n_min"] = 36,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[5] = 73,
+											[8] = 109,
+										},
+										["total"] = 109,
+										["c_max"] = 0,
+										["id"] = 26365,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8045] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 74,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 74,
+										},
+										["n_dmg"] = 74,
+										["n_min"] = 74,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[8] = 74,
+										},
+										["total"] = 74,
+										["c_max"] = 0,
+										["id"] = 8045,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10444] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 65,
+										},
+										["n_dmg"] = 65,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[5] = 65,
+											[8] = 65,
+										},
+										["total"] = 65,
+										["c_max"] = 0,
+										["id"] = 10444,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8052] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 22,
+										["g_amt"] = 0,
+										["n_max"] = 58,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 95,
+										},
+										["n_dmg"] = 73,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[5] = 80,
+											[8] = 95,
+										},
+										["total"] = 95,
+										["c_max"] = 22,
+										["id"] = 8052,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 22,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-0416001E",
+							["on_hold"] = false,
+							["last_dps"] = 69.33595074137081,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 103.00109,
+							["start_time"] = 1678992550,
+							["delay"] = 0,
+							["last_event"] = 1678992549,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006262,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["damage_from"] = {
+								["Tadibey"] = true,
+							},
+							["targets"] = {
+								["Tadibey"] = 103,
+							},
+							["monster"] = true,
+							["pets"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 103.006262,
+							["end_time"] = 1678992550,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 103.006262,
+							["friendlyfire"] = {
+							},
+							["aID"] = "3781",
+							["nome"] = "Shadethicket Wood Shaper",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 29,
+										["targets"] = {
+											["Tadibey"] = 103,
+										},
+										["n_dmg"] = 103,
+										["n_min"] = 24,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 103,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["serial"] = "Creature-0-5563-1-21-3781-0004115120",
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 594.006262,
+							["start_time"] = 1678992550,
+							["delay"] = 0,
+							["last_event"] = 1678992549,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 140,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 140,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.001461,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Tadibey"] = 41,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "SHAMAN",
+							["totalover"] = 0.001461,
+							["alternatepower"] = 0.001461,
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[59914] = {
+										["total"] = 41,
+										["id"] = 59914,
+										["totalover"] = 0,
+										["targets"] = {
+											["Tadibey"] = 41,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["grupo"] = true,
+							["aID"] = "4465-0416001E",
+							["received"] = 41.001461,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["tipo"] = 3,
+							["total"] = 41.001461,
+							["passiveover"] = 0.001461,
+							["serial"] = "Player-4465-0416001E",
+							["last_event"] = 1678992549,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 140,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[8052] = {
+										["activedamt"] = 0,
+										["id"] = 8052,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8045] = {
+										["activedamt"] = 0,
+										["id"] = 8045,
+										["targets"] = {
+										},
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["buff_uptime"] = 9,
+							["aID"] = "4465-0416001E",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[57994] = {
+										["id"] = 57994,
+										["interrompeu_oque"] = {
+											[9532] = 1,
+										},
+										["targets"] = {
+											["Shadethicket Raincaller"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[325] = {
+										["activedamt"] = 2,
+										["id"] = 325,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[9532] = 1,
+							},
+							["debuff_uptime"] = 10,
+							["debuff_uptime_targets"] = {
+							},
+							["interrupt"] = 1.008819,
+							["nome"] = "Tadibey",
+							["interrupt_targets"] = {
+								["Shadethicket Raincaller"] = 1,
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[325] = 1,
+								[8045] = 1,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["last_event"] = 1678992555,
+							["classe"] = "SHAMAN",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-0416001E",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 140,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Tadibey"] = "Player-4465-0416001E",
+				},
+				["raid_roster_indexed"] = {
+					"Tadibey", -- [1]
+				},
+				["CombatStartedAt"] = 511562.218,
+				["tempo_start"] = 1678992541,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1175,
+				["playing_solo"] = true,
+				["totals"] = {
+					697, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 41,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					594, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 41,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "19:49:10",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Shadethicket Wood Shaper",
+				["TotalElapsedCombatTime"] = 511557.801,
+				["CombatEndedAt"] = 511557.801,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Tadibey"] = 594.00109,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 511557.801,
+				["combat_id"] = 140,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "19:49:01",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Shadethicket Wood Shaper"] = 1,
+				},
+				["start_time"] = 511548.334,
+				["TimeData"] = {
+				},
+				["contra"] = "Shadethicket Wood Shaper",
+			}, -- [8]
+			{
+				{
+					["combatId"] = 139,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003195,
+							["damage_from"] = {
+								["Shadethicket Wood Shaper"] = true,
+							},
+							["targets"] = {
+								["Shadethicket Wood Shaper"] = 554,
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 554.003195,
+							["end_time"] = 1678992536,
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 554.003195,
+							["classe"] = "SHAMAN",
+							["aID"] = "4465-0416001E",
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 65,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 184,
+										},
+										["n_dmg"] = 184,
+										["n_min"] = 59,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[6] = 184,
+											[8] = 184,
+										},
+										["total"] = 184,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[26365] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 37,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 111,
+										},
+										["n_dmg"] = 111,
+										["n_min"] = 37,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[6] = 74,
+											[8] = 111,
+										},
+										["total"] = 111,
+										["c_max"] = 0,
+										["id"] = 26365,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8045] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 77,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 77,
 										},
 										["n_dmg"] = 77,
 										["n_min"] = 77,
@@ -89,7 +4612,6 @@ _detalhes_database = {
 										["counter"] = 1,
 										["ChartData"] = {
 											[8] = 77,
-											[11] = 77,
 										},
 										["total"] = 77,
 										["c_max"] = 0,
@@ -113,16 +4635,3673 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 22,
 										["targets"] = {
-											["Razormane Seer"] = 86,
+											["Shadethicket Wood Shaper"] = 65,
+										},
+										["n_dmg"] = 65,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[6] = 65,
+											[8] = 65,
+										},
+										["total"] = 65,
+										["c_max"] = 0,
+										["id"] = 10444,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8052] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 87,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 117,
+										},
+										["n_dmg"] = 30,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[6] = 102,
+											[8] = 117,
+										},
+										["total"] = 117,
+										["c_max"] = 87,
+										["id"] = 8052,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 87,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-0416001E",
+							["on_hold"] = false,
+							["last_dps"] = 63.31465085714286,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 99.003195,
+							["start_time"] = 1678992536,
+							["delay"] = 0,
+							["last_event"] = 1678992535,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004321,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["damage_from"] = {
+								["Tadibey"] = true,
+							},
+							["targets"] = {
+								["Tadibey"] = 99,
+							},
+							["monster"] = true,
+							["pets"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 99.004321,
+							["end_time"] = 1678992536,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 99.004321,
+							["friendlyfire"] = {
+							},
+							["aID"] = "3781",
+							["nome"] = "Shadethicket Wood Shaper",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 26,
+										["targets"] = {
+											["Tadibey"] = 99,
+										},
+										["n_dmg"] = 99,
+										["n_min"] = 23,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 99,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["serial"] = "Creature-0-5563-1-21-3781-00001348C3",
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 554.004321,
+							["start_time"] = 1678992536,
+							["delay"] = 0,
+							["last_event"] = 1678992535,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 139,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 139,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.00779,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Tadibey"] = 41,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "SHAMAN",
+							["totalover"] = 0.00779,
+							["alternatepower"] = 0.00779,
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[59914] = {
+										["total"] = 41,
+										["id"] = 59914,
+										["totalover"] = 0,
+										["targets"] = {
+											["Tadibey"] = 41,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["grupo"] = true,
+							["aID"] = "4465-0416001E",
+							["received"] = 41.00779,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["tipo"] = 3,
+							["total"] = 41.00779,
+							["passiveover"] = 0.00779,
+							["serial"] = "Player-4465-0416001E",
+							["last_event"] = 1678992535,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 139,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[8052] = {
+										["activedamt"] = 0,
+										["id"] = 8052,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8045] = {
+										["activedamt"] = 0,
+										["id"] = 8045,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["buff_uptime"] = 10,
+							["aID"] = "4465-0416001E",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[325] = {
+										["activedamt"] = 2,
+										["id"] = 325,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 12,
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Tadibey",
+							["grupo"] = true,
+							["spell_cast"] = {
+								[325] = 1,
+								[8045] = 1,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["last_event"] = 1678992536,
+							["classe"] = "SHAMAN",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-0416001E",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 139,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Tadibey"] = "Player-4465-0416001E",
+				},
+				["raid_roster_indexed"] = {
+					"Tadibey", -- [1]
+				},
+				["CombatStartedAt"] = 511548.101,
+				["tempo_start"] = 1678992526,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1174,
+				["playing_solo"] = true,
+				["totals"] = {
+					653, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 41,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					554, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 41,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "19:48:56",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Shadethicket Wood Shaper",
+				["TotalElapsedCombatTime"] = 511543.251,
+				["CombatEndedAt"] = 511543.251,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Tadibey"] = 554.003195,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 511543.251,
+				["combat_id"] = 139,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "19:48:46",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Shadethicket Wood Shaper"] = 1,
+				},
+				["start_time"] = 511533.801,
+				["TimeData"] = {
+				},
+				["contra"] = "Shadethicket Wood Shaper",
+			}, -- [9]
+			{
+				{
+					["combatId"] = 138,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006326,
+							["damage_from"] = {
+								["Shadethicket Raincaller"] = true,
+							},
+							["targets"] = {
+								["Shadethicket Raincaller"] = 595,
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 595.006326,
+							["end_time"] = 1678992507,
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 595.006326,
+							["classe"] = "SHAMAN",
+							["aID"] = "4465-0416001E",
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 70,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 249,
+										},
+										["n_dmg"] = 249,
+										["n_min"] = 56,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["ChartData"] = {
+											[8] = 123,
+											[11] = 179,
+											[5] = 67,
+										},
+										["total"] = 249,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[26365] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 37,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 37,
+										},
+										["n_dmg"] = 37,
+										["n_min"] = 37,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[8] = 37,
+											[11] = 37,
+											[5] = 37,
+										},
+										["total"] = 37,
+										["c_max"] = 0,
+										["id"] = 26365,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8045] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 148,
+										},
+										["n_dmg"] = 148,
+										["n_min"] = 73,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[8] = 73,
+											[11] = 73,
+										},
+										["total"] = 148,
+										["c_max"] = 0,
+										["id"] = 8045,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10444] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 43,
+										},
+										["n_dmg"] = 43,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[8] = 22,
+											[11] = 43,
+											[5] = 22,
+										},
+										["total"] = 43,
+										["c_max"] = 0,
+										["id"] = 10444,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8052] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 58,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 118,
+										},
+										["n_dmg"] = 118,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["ChartData"] = {
+											[8] = 103,
+											[11] = 118,
+											[5] = 73,
+										},
+										["total"] = 118,
+										["c_max"] = 0,
+										["id"] = 8052,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-0416001E",
+							["on_hold"] = false,
+							["last_dps"] = 45.94643444011313,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 132.006326,
+							["start_time"] = 1678992507,
+							["delay"] = 0,
+							["last_event"] = 1678992506,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006101,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["damage_from"] = {
+								["Tadibey"] = true,
+							},
+							["targets"] = {
+								["Tadibey"] = 132,
+							},
+							["monster"] = true,
+							["pets"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 132.006101,
+							["end_time"] = 1678992507,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 132.006101,
+							["friendlyfire"] = {
+							},
+							["aID"] = "3783",
+							["nome"] = "Shadethicket Raincaller",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 29,
+										["targets"] = {
+											["Tadibey"] = 132,
+										},
+										["n_dmg"] = 132,
+										["n_min"] = 23,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 132,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["serial"] = "Creature-0-5563-1-21-3783-000013547A",
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 595.006101,
+							["start_time"] = 1678992507,
+							["delay"] = 0,
+							["last_event"] = 1678992505,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 138,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 138,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.00729,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Tadibey"] = 41,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "SHAMAN",
+							["totalover"] = 0.00729,
+							["alternatepower"] = 0.00729,
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[59914] = {
+										["total"] = 41,
+										["id"] = 59914,
+										["totalover"] = 0,
+										["targets"] = {
+											["Tadibey"] = 41,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["grupo"] = true,
+							["aID"] = "4465-0416001E",
+							["received"] = 41.00729,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["tipo"] = 3,
+							["total"] = 41.00729,
+							["passiveover"] = 0.00729,
+							["serial"] = "Player-4465-0416001E",
+							["last_event"] = 1678992506,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 138,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[8052] = {
+										["activedamt"] = 0,
+										["id"] = 8052,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8045] = {
+										["activedamt"] = 0,
+										["id"] = 8045,
+										["targets"] = {
+										},
+										["uptime"] = 7,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["buff_uptime"] = 13,
+							["aID"] = "4465-0416001E",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[325] = {
+										["activedamt"] = 2,
+										["id"] = 325,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 20,
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Tadibey",
+							["grupo"] = true,
+							["spell_cast"] = {
+								[325] = 1,
+								[8045] = 2,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["last_event"] = 1678992507,
+							["classe"] = "SHAMAN",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-0416001E",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 138,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Tadibey"] = "Player-4465-0416001E",
+				},
+				["raid_roster_indexed"] = {
+					"Tadibey", -- [1]
+				},
+				["CombatStartedAt"] = 511533.568,
+				["tempo_start"] = 1678992493,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1173,
+				["playing_solo"] = true,
+				["totals"] = {
+					727, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 41,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					595, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 41,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "19:48:28",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Shadethicket Raincaller",
+				["TotalElapsedCombatTime"] = 511514.935,
+				["CombatEndedAt"] = 511514.935,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Tadibey"] = 595.006326,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 511514.935,
+				["combat_id"] = 138,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "19:48:13",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Shadethicket Raincaller"] = 1,
+				},
+				["start_time"] = 511500.751,
+				["TimeData"] = {
+				},
+				["contra"] = "Shadethicket Raincaller",
+			}, -- [10]
+			{
+				{
+					["combatId"] = 137,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.008795,
+							["damage_from"] = {
+								["Shadethicket Raincaller"] = true,
+							},
+							["targets"] = {
+								["Shadethicket Raincaller"] = 555,
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 555.008795,
+							["end_time"] = 1678992486,
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 555.008795,
+							["classe"] = "SHAMAN",
+							["aID"] = "4465-0416001E",
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 73,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 188,
+										},
+										["n_dmg"] = 188,
+										["n_min"] = 44,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["ChartData"] = {
+											[8] = 117,
+											[11] = 188,
+											[5] = 117,
+										},
+										["total"] = 188,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 44,
+										["r_amt"] = 0,
+									}, -- [1]
+									[26365] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 37,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 110,
+										},
+										["n_dmg"] = 110,
+										["n_min"] = 36,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[8] = 73,
+											[11] = 110,
+											[5] = 37,
+										},
+										["total"] = 110,
+										["c_max"] = 0,
+										["id"] = 26365,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8045] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 74,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 74,
+										},
+										["n_dmg"] = 74,
+										["n_min"] = 74,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[8] = 74,
+											[11] = 74,
+										},
+										["total"] = 74,
+										["c_max"] = 0,
+										["id"] = 8045,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10444] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 64,
+										},
+										["n_dmg"] = 64,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[8] = 42,
+											[11] = 64,
+											[5] = 42,
+										},
+										["total"] = 64,
+										["c_max"] = 0,
+										["id"] = 10444,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8052] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 58,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 119,
+										},
+										["n_dmg"] = 119,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["ChartData"] = {
+											[8] = 88,
+											[11] = 103,
+											[5] = 73,
+										},
+										["total"] = 119,
+										["c_max"] = 0,
+										["id"] = 8052,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-0416001E",
+							["on_hold"] = false,
+							["last_dps"] = 44.87820773036138,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 199.008795,
+							["start_time"] = 1678992486,
+							["delay"] = 0,
+							["last_event"] = 1678992486,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.001736,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["damage_from"] = {
+								["Tadibey"] = true,
+							},
+							["targets"] = {
+								["Tadibey"] = 199,
+							},
+							["monster"] = true,
+							["pets"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 199.001736,
+							["end_time"] = 1678992486,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 199.001736,
+							["friendlyfire"] = {
+							},
+							["aID"] = "3783",
+							["nome"] = "Shadethicket Raincaller",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 29,
+										["targets"] = {
+											["Tadibey"] = 110,
+										},
+										["n_dmg"] = 110,
+										["n_min"] = 24,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 110,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[9532] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 89,
+										["targets"] = {
+											["Tadibey"] = 89,
+										},
+										["n_dmg"] = 89,
+										["n_min"] = 89,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 89,
+										["c_max"] = 0,
+										["id"] = 9532,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["serial"] = "Creature-0-5563-1-21-3783-0000133942",
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 555.0017359999999,
+							["start_time"] = 1678992486,
+							["delay"] = 0,
+							["last_event"] = 1678992485,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 137,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 137,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.001341,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Tadibey"] = 42,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "SHAMAN",
+							["totalover"] = 0.001341,
+							["alternatepower"] = 0.001341,
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[59914] = {
+										["total"] = 42,
+										["id"] = 59914,
+										["totalover"] = 0,
+										["targets"] = {
+											["Tadibey"] = 42,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["grupo"] = true,
+							["aID"] = "4465-0416001E",
+							["received"] = 42.001341,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["tipo"] = 3,
+							["total"] = 42.001341,
+							["passiveover"] = 0.001341,
+							["serial"] = "Player-4465-0416001E",
+							["last_event"] = 1678992486,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 137,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[8052] = {
+										["activedamt"] = 0,
+										["id"] = 8052,
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8045] = {
+										["activedamt"] = 0,
+										["id"] = 8045,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["buff_uptime"] = 12,
+							["aID"] = "4465-0416001E",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[57994] = {
+										["id"] = 57994,
+										["interrompeu_oque"] = {
+											[6535] = 1,
+										},
+										["targets"] = {
+											["Shadethicket Raincaller"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[325] = {
+										["activedamt"] = 2,
+										["id"] = 325,
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[6535] = 1,
+							},
+							["debuff_uptime"] = 18,
+							["debuff_uptime_targets"] = {
+							},
+							["interrupt"] = 1.00448,
+							["nome"] = "Tadibey",
+							["interrupt_targets"] = {
+								["Shadethicket Raincaller"] = 1,
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[57994] = 1,
+								[325] = 1,
+								[8045] = 1,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["last_event"] = 1678992493,
+							["classe"] = "SHAMAN",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-0416001E",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["nome"] = "Shadethicket Raincaller",
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["monster"] = true,
+							["classe"] = "UNKNOW",
+							["spell_cast"] = {
+								[9532] = 1,
+							},
+							["flag_original"] = 68168,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["aID"] = "3783",
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-5563-1-21-3783-0000133942",
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 137,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Tadibey"] = "Player-4465-0416001E",
+				},
+				["raid_roster_indexed"] = {
+					"Tadibey", -- [1]
+				},
+				["CombatStartedAt"] = 511500.351,
+				["tempo_start"] = 1678992474,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1172,
+				["playing_solo"] = true,
+				["totals"] = {
+					754, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 42,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					555, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 42,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "19:48:07",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Shadethicket Raincaller",
+				["TotalElapsedCombatTime"] = 511493.868,
+				["CombatEndedAt"] = 511493.868,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Tadibey"] = 555.008795,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 511493.868,
+				["combat_id"] = 137,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "19:47:54",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Shadethicket Raincaller"] = 1,
+				},
+				["start_time"] = 511481.301,
+				["TimeData"] = {
+				},
+				["contra"] = "Shadethicket Raincaller",
+			}, -- [11]
+			{
+				{
+					["combatId"] = 136,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002564,
+							["damage_from"] = {
+								["Shadethicket Wood Shaper"] = true,
+							},
+							["targets"] = {
+								["Shadethicket Wood Shaper"] = 560,
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 560.002564,
+							["end_time"] = 1678992464,
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 560.002564,
+							["classe"] = "SHAMAN",
+							["aID"] = "4465-0416001E",
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 1,
+										["c_dmg"] = 143,
+										["g_amt"] = 0,
+										["n_max"] = 58,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 258,
+										},
+										["n_dmg"] = 115,
+										["n_min"] = 57,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[5] = 115,
+										},
+										["total"] = 258,
+										["c_max"] = 143,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 143,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 58,
+										["r_amt"] = 0,
+									}, -- [1]
+									[8052] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 58,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 88,
+										},
+										["n_dmg"] = 88,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[5] = 73,
+										},
+										["total"] = 88,
+										["c_max"] = 0,
+										["id"] = 8052,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8045] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 75,
+										},
+										["n_dmg"] = 75,
+										["n_min"] = 75,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 75,
+										["c_max"] = 0,
+										["id"] = 8045,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[26365] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 37,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 74,
+										},
+										["n_dmg"] = 74,
+										["n_min"] = 37,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[5] = 74,
+										},
+										["total"] = 74,
+										["c_max"] = 0,
+										["id"] = 26365,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10444] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Shadethicket Wood Shaper"] = 65,
+										},
+										["n_dmg"] = 65,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[5] = 43,
+										},
+										["total"] = 65,
+										["c_max"] = 0,
+										["id"] = 10444,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-0416001E",
+							["on_hold"] = false,
+							["last_dps"] = 81.94360023374382,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 131.002564,
+							["start_time"] = 1678992464,
+							["delay"] = 0,
+							["last_event"] = 1678992463,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007258,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["damage_from"] = {
+								["Tadibey"] = true,
+							},
+							["targets"] = {
+								["Tadibey"] = 131,
+							},
+							["monster"] = true,
+							["pets"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 131.007258,
+							["end_time"] = 1678992464,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 131.007258,
+							["friendlyfire"] = {
+							},
+							["aID"] = "3781",
+							["nome"] = "Shadethicket Wood Shaper",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 55,
+										["g_amt"] = 0,
+										["n_max"] = 26,
+										["targets"] = {
+											["Tadibey"] = 131,
+										},
+										["n_dmg"] = 76,
+										["n_min"] = 24,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 131,
+										["c_max"] = 55,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 55,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["serial"] = "Creature-0-5563-1-21-3781-0000120CF9",
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 560.007258,
+							["start_time"] = 1678992464,
+							["delay"] = 0,
+							["last_event"] = 1678992462,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 136,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 136,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.006443,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Tadibey"] = 40,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "SHAMAN",
+							["totalover"] = 0.006443,
+							["alternatepower"] = 0.006443,
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[59914] = {
+										["total"] = 40,
+										["id"] = 59914,
+										["totalover"] = 0,
+										["targets"] = {
+											["Tadibey"] = 40,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["grupo"] = true,
+							["aID"] = "4465-0416001E",
+							["received"] = 40.006443,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["tipo"] = 3,
+							["total"] = 40.006443,
+							["passiveover"] = 0.006443,
+							["serial"] = "Player-4465-0416001E",
+							["last_event"] = 1678992463,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 136,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[8052] = {
+										["activedamt"] = 0,
+										["id"] = 8052,
+										["targets"] = {
+										},
+										["uptime"] = 7,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8045] = {
+										["activedamt"] = 0,
+										["id"] = 8045,
+										["targets"] = {
+										},
+										["uptime"] = 1,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["buff_uptime"] = 8,
+							["aID"] = "4465-0416001E",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[57994] = {
+										["id"] = 57994,
+										["interrompeu_oque"] = {
+											[9532] = 1,
+										},
+										["targets"] = {
+											["Shadethicket Raincaller"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[325] = {
+										["activedamt"] = 1,
+										["id"] = 325,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[9532] = 1,
+							},
+							["debuff_uptime"] = 8,
+							["debuff_uptime_targets"] = {
+							},
+							["interrupt"] = 1.004639,
+							["nome"] = "Tadibey",
+							["interrupt_targets"] = {
+								["Shadethicket Raincaller"] = 1,
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[8052] = 1,
+								[8045] = 1,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["last_event"] = 1678992474,
+							["classe"] = "SHAMAN",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-0416001E",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 136,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Tadibey"] = "Player-4465-0416001E",
+				},
+				["raid_roster_indexed"] = {
+					"Tadibey", -- [1]
+				},
+				["CombatStartedAt"] = 511480.901,
+				["tempo_start"] = 1678992456,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1171,
+				["playing_solo"] = true,
+				["totals"] = {
+					691, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 40,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					560, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 40,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "19:47:44",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Shadethicket Wood Shaper",
+				["TotalElapsedCombatTime"] = 511471.585,
+				["CombatEndedAt"] = 511471.585,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Tadibey"] = 560.002564,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 511471.585,
+				["combat_id"] = 136,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "19:47:36",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Shadethicket Wood Shaper"] = 1,
+				},
+				["start_time"] = 511463.451,
+				["TimeData"] = {
+				},
+				["contra"] = "Shadethicket Wood Shaper",
+			}, -- [12]
+			{
+				{
+					["combatId"] = 135,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.005694,
+							["damage_from"] = {
+								["Shadethicket Raincaller"] = true,
+							},
+							["targets"] = {
+								["Shadethicket Raincaller"] = 558,
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 558.005694,
+							["end_time"] = 1678992451,
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 558.005694,
+							["classe"] = "SHAMAN",
+							["aID"] = "4465-0416001E",
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 1,
+										["c_dmg"] = 107,
+										["g_amt"] = 0,
+										["n_max"] = 73,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 234,
+										},
+										["n_dmg"] = 127,
+										["n_min"] = 54,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["ChartData"] = {
+											[5] = 234,
+											[8] = 234,
+										},
+										["total"] = 234,
+										["c_max"] = 107,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 107,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 54,
+										["r_amt"] = 0,
+									}, -- [1]
+									[26365] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 37,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 73,
+										},
+										["n_dmg"] = 73,
+										["n_min"] = 36,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[5] = 36,
+											[8] = 36,
+										},
+										["total"] = 73,
+										["c_max"] = 0,
+										["id"] = 26365,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8045] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 75,
+										},
+										["n_dmg"] = 75,
+										["n_min"] = 75,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[8] = 75,
+										},
+										["total"] = 75,
+										["c_max"] = 0,
+										["id"] = 8045,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10444] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 66,
+										},
+										["n_dmg"] = 66,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[5] = 66,
+											[8] = 66,
+										},
+										["total"] = 66,
+										["c_max"] = 0,
+										["id"] = 10444,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8052] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 22,
+										["g_amt"] = 0,
+										["n_max"] = 57,
+										["targets"] = {
+											["Shadethicket Raincaller"] = 110,
+										},
+										["n_dmg"] = 88,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["ChartData"] = {
+											[5] = 72,
+											[8] = 110,
+										},
+										["total"] = 110,
+										["c_max"] = 22,
+										["id"] = 8052,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 22,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-0416001E",
+							["on_hold"] = false,
+							["last_dps"] = 51.11346468802699,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 81.005694,
+							["start_time"] = 1678992451,
+							["delay"] = 0,
+							["last_event"] = 1678992451,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004454,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["damage_from"] = {
+								["Tadibey"] = true,
+							},
+							["targets"] = {
+								["Tadibey"] = 81,
+							},
+							["monster"] = true,
+							["pets"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 81.004454,
+							["end_time"] = 1678992451,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 81.004454,
+							["friendlyfire"] = {
+							},
+							["aID"] = "3783",
+							["nome"] = "Shadethicket Raincaller",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 29,
+										["targets"] = {
+											["Tadibey"] = 81,
+										},
+										["n_dmg"] = 81,
+										["n_min"] = 5,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 81,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 5,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["serial"] = "Creature-0-5563-1-21-3783-0000120D4F",
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 558.004454,
+							["start_time"] = 1678992451,
+							["delay"] = 0,
+							["last_event"] = 1678992451,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 135,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 135,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.006333,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Tadibey"] = 40,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "SHAMAN",
+							["totalover"] = 0.006333,
+							["alternatepower"] = 0.006333,
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[59914] = {
+										["total"] = 40,
+										["id"] = 59914,
+										["totalover"] = 0,
+										["targets"] = {
+											["Tadibey"] = 40,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["grupo"] = true,
+							["aID"] = "4465-0416001E",
+							["received"] = 40.006333,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["tipo"] = 3,
+							["total"] = 40.006333,
+							["passiveover"] = 0.006333,
+							["serial"] = "Player-4465-0416001E",
+							["last_event"] = 1678992451,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 135,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[8052] = {
+										["activedamt"] = 0,
+										["id"] = 8052,
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8045] = {
+										["activedamt"] = 0,
+										["id"] = 8045,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["buff_uptime"] = 11,
+							["aID"] = "4465-0416001E",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[57994] = {
+										["id"] = 57994,
+										["interrompeu_oque"] = {
+											[6535] = 1,
+										},
+										["targets"] = {
+											["Shadethicket Raincaller"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[325] = {
+										["activedamt"] = 1,
+										["id"] = 325,
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[6535] = 1,
+							},
+							["debuff_uptime"] = 16,
+							["debuff_uptime_targets"] = {
+							},
+							["interrupt"] = 1.001982,
+							["nome"] = "Tadibey",
+							["interrupt_targets"] = {
+								["Shadethicket Raincaller"] = 1,
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[8045] = 1,
+								[57994] = 1,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["last_event"] = 1678992451,
+							["classe"] = "SHAMAN",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-0416001E",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 135,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Tadibey"] = "Player-4465-0416001E",
+				},
+				["raid_roster_indexed"] = {
+					"Tadibey", -- [1]
+				},
+				["CombatStartedAt"] = 511461.851,
+				["tempo_start"] = 1678992440,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1170,
+				["playing_solo"] = true,
+				["totals"] = {
+					639, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 40,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					558, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 40,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "19:47:31",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Shadethicket Raincaller",
+				["TotalElapsedCombatTime"] = 511458.168,
+				["CombatEndedAt"] = 511458.168,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Tadibey"] = 558.005694,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 511458.168,
+				["combat_id"] = 135,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "19:47:20",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Shadethicket Raincaller"] = 1,
+				},
+				["start_time"] = 511447.251,
+				["TimeData"] = {
+				},
+				["contra"] = "Shadethicket Raincaller",
+			}, -- [13]
+			{
+				{
+					["combatId"] = 134,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.001968,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["damage_from"] = {
+								["Tadibey"] = true,
+							},
+							["targets"] = {
+								["Tadibey"] = 26,
+							},
+							["monster"] = true,
+							["pets"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 26.001968,
+							["end_time"] = 1678992434,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 26.001968,
+							["friendlyfire"] = {
+							},
+							["aID"] = "3809",
+							["nome"] = "Ashenvale Bear",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 26,
+										["targets"] = {
+											["Tadibey"] = 26,
+										},
+										["n_dmg"] = 26,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 26,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["serial"] = "Creature-0-5563-1-21-3809-0000132FAD",
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 37.001968,
+							["start_time"] = 1678992434,
+							["delay"] = 0,
+							["last_event"] = 1678992424,
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006934,
+							["damage_from"] = {
+								["Ashenvale Bear"] = true,
+							},
+							["targets"] = {
+								["Ashenvale Bear"] = 37,
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 37.006934,
+							["end_time"] = 1678992434,
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 37.006934,
+							["classe"] = "SHAMAN",
+							["aID"] = "4465-0416001E",
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[26365] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 37,
+										["targets"] = {
+											["Ashenvale Bear"] = 37,
+										},
+										["n_dmg"] = 37,
+										["n_min"] = 37,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[5] = 37,
+											[8] = 37,
+										},
+										["total"] = 37,
+										["c_max"] = 0,
+										["id"] = 26365,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-0416001E",
+							["on_hold"] = false,
+							["last_dps"] = 122.9466245938474,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 26.006934,
+							["start_time"] = 1678992434,
+							["delay"] = 0,
+							["last_event"] = 1678992424,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 134,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 134,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 134,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["buff_uptime"] = 10,
+							["aID"] = "4465-0416001E",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[57994] = {
+										["id"] = 57994,
+										["interrompeu_oque"] = {
+											[9532] = 1,
+										},
+										["targets"] = {
+											["Shadethicket Raincaller"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[325] = {
+										["activedamt"] = 1,
+										["id"] = 325,
+										["targets"] = {
+										},
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[64658] = {
+										["activedamt"] = 1,
+										["id"] = 64658,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[9532] = 1,
+							},
+							["nome"] = "Tadibey",
+							["interrupt_targets"] = {
+								["Shadethicket Raincaller"] = 1,
+							},
+							["grupo"] = true,
+							["interrupt"] = 1.003657,
+							["buff_uptime_targets"] = {
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["last_event"] = 1678992438,
+							["classe"] = "SHAMAN",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-0416001E",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 134,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Tadibey"] = "Player-4465-0416001E",
+				},
+				["raid_roster_indexed"] = {
+					"Tadibey", -- [1]
+				},
+				["CombatStartedAt"] = 511445.218,
+				["tempo_start"] = 1678992424,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1169,
+				["playing_solo"] = true,
+				["totals"] = {
+					63, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					37, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = false,
+				["instance_type"] = "none",
+				["data_fim"] = "19:47:14",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Ashenvale Bear",
+				["TotalElapsedCombatTime"] = 511441.686,
+				["CombatEndedAt"] = 511441.686,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Tadibey"] = 37.006934,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 511441.686,
+				["combat_id"] = 134,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "19:47:05",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+				},
+				["start_time"] = 511431.884,
+				["TimeData"] = {
+				},
+				["contra"] = "Ashenvale Bear",
+			}, -- [14]
+			{
+				{
+					["combatId"] = 133,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.005379,
+							["damage_from"] = {
+								["Ashenvale Bear"] = true,
+							},
+							["targets"] = {
+								["Ashenvale Bear"] = 737,
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 737.005379,
+							["end_time"] = 1678992399,
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 737.005379,
+							["classe"] = "SHAMAN",
+							["aID"] = "4465-0416001E",
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 101,
+										["targets"] = {
+											["Ashenvale Bear"] = 370,
+										},
+										["n_dmg"] = 370,
+										["n_min"] = 78,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["ChartData"] = {
+											[5] = 173,
+											[8] = 274,
+										},
+										["total"] = 370,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[26365] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 37,
+										["targets"] = {
+											["Ashenvale Bear"] = 110,
+										},
+										["n_dmg"] = 110,
+										["n_min"] = 36,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[5] = 73,
+											[8] = 73,
+										},
+										["total"] = 110,
+										["c_max"] = 0,
+										["id"] = 26365,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8045] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 78,
+										["targets"] = {
+											["Ashenvale Bear"] = 78,
+										},
+										["n_dmg"] = 78,
+										["n_min"] = 78,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[8] = 78,
+										},
+										["total"] = 78,
+										["c_max"] = 0,
+										["id"] = 8045,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8052] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 58,
+										["targets"] = {
+											["Ashenvale Bear"] = 103,
+										},
+										["n_dmg"] = 103,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["ChartData"] = {
+											[5] = 73,
+											[8] = 88,
+										},
+										["total"] = 103,
+										["c_max"] = 0,
+										["id"] = 8052,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10444] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 33,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Ashenvale Bear"] = 76,
+										},
+										["n_dmg"] = 43,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[5] = 55,
+											[8] = 76,
+										},
+										["total"] = 76,
+										["c_max"] = 33,
+										["id"] = 10444,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 33,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-0416001E",
+							["on_hold"] = false,
+							["last_dps"] = 76.64365422228937,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 134.005379,
+							["start_time"] = 1678992399,
+							["delay"] = 0,
+							["last_event"] = 1678992397,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004982,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["damage_from"] = {
+								["Tadibey"] = true,
+							},
+							["targets"] = {
+								["Tadibey"] = 134,
+							},
+							["monster"] = true,
+							["pets"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 134.004982,
+							["end_time"] = 1678992399,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 134.004982,
+							["friendlyfire"] = {
+							},
+							["aID"] = "3809",
+							["nome"] = "Ashenvale Bear",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 29,
+										["targets"] = {
+											["Tadibey"] = 134,
+										},
+										["n_dmg"] = 134,
+										["n_min"] = 25,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 134,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["serial"] = "Creature-0-5563-1-21-3809-0000135D63",
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 737.0049819999999,
+							["start_time"] = 1678992399,
+							["delay"] = 0,
+							["last_event"] = 1678992397,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 133,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+								["Tadibey"] = 14,
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "SHAMAN",
+							["totalover"] = 14.005136,
+							["total_without_pet"] = 80.005136,
+							["total"] = 80.005136,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["on_hold"] = false,
+							["serial"] = "Player-4465-0416001E",
+							["totalabsorb"] = 0.005136,
+							["last_hps"] = 11.53809287576794,
+							["targets"] = {
+								["Tadibey"] = 80,
+							},
+							["totalover_without_pet"] = 0.005136,
+							["healing_taken"] = 80.005136,
+							["fight_component"] = true,
+							["end_time"] = 1678992399,
+							["colocacao"] = 1,
+							["heal_enemy_amt"] = 0,
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[20007] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Tadibey"] = 14,
+										},
+										["n_max"] = 80,
+										["targets"] = {
+											["Tadibey"] = 80,
+										},
+										["n_min"] = 80,
+										["counter"] = 1,
+										["overheal"] = 14,
+										["total"] = 80,
+										["c_max"] = 0,
+										["id"] = 20007,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 80,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["healing_from"] = {
+								["Tadibey"] = true,
+							},
+							["start_time"] = 1678992399,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-0416001E",
+							["totaldenied"] = 0.005136,
+							["delay"] = 0,
+							["last_event"] = 1678992395,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 133,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.006271,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Tadibey"] = 41,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "SHAMAN",
+							["totalover"] = 0.006271,
+							["fight_component"] = true,
+							["alternatepower"] = 0.006271,
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[59914] = {
+										["total"] = 41,
+										["id"] = 59914,
+										["totalover"] = 0,
+										["targets"] = {
+											["Tadibey"] = 41,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["grupo"] = true,
+							["aID"] = "4465-0416001E",
+							["received"] = 41.006271,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["tipo"] = 3,
+							["total"] = 41.006271,
+							["passiveover"] = 0.006271,
+							["serial"] = "Player-4465-0416001E",
+							["last_event"] = 1678992397,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 133,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[8052] = {
+										["activedamt"] = 0,
+										["id"] = 8052,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8045] = {
+										["activedamt"] = 0,
+										["id"] = 8045,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["buff_uptime"] = 21,
+							["aID"] = "4465-0416001E",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[325] = {
+										["activedamt"] = 2,
+										["id"] = 325,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20007] = {
+										["activedamt"] = 1,
+										["id"] = 20007,
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 12,
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Tadibey",
+							["grupo"] = true,
+							["spell_cast"] = {
+								[8045] = 1,
+								[325] = 1,
+								[8052] = 1,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["last_event"] = 1678992399,
+							["classe"] = "SHAMAN",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-0416001E",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 133,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Tadibey"] = "Player-4465-0416001E",
+				},
+				["raid_roster_indexed"] = {
+					"Tadibey", -- [1]
+				},
+				["CombatStartedAt"] = 511430.251,
+				["tempo_start"] = 1678992388,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1168,
+				["playing_solo"] = true,
+				["totals"] = {
+					871, -- [1]
+					80, -- [2]
+					{
+						0, -- [1]
+						[0] = 41,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					737, -- [1]
+					80, -- [2]
+					{
+						0, -- [1]
+						[0] = 41,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "19:46:39",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Ashenvale Bear",
+				["TotalElapsedCombatTime"] = 511406.368,
+				["CombatEndedAt"] = 511406.368,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Tadibey"] = 80.005136,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Tadibey"] = 737.005379,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 511406.368,
+				["combat_id"] = 133,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "19:46:28",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Ashenvale Bear"] = 1,
+				},
+				["start_time"] = 511395.502,
+				["TimeData"] = {
+				},
+				["contra"] = "Ashenvale Bear",
+			}, -- [15]
+			{
+				{
+					["combatId"] = 132,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003473,
+							["damage_from"] = {
+								["Befouled Water Elemental"] = true,
+							},
+							["targets"] = {
+								["Befouled Water Elemental"] = 588,
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 588.003473,
+							["end_time"] = 1678992349,
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 588.003473,
+							["classe"] = "SHAMAN",
+							["aID"] = "4465-0416001E",
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 73,
+										["targets"] = {
+											["Befouled Water Elemental"] = 252,
+										},
+										["n_dmg"] = 252,
+										["n_min"] = 56,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["ChartData"] = {
+											[5] = 135,
+											[8] = 252,
+										},
+										["total"] = 252,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[26365] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 37,
+										["targets"] = {
+											["Befouled Water Elemental"] = 73,
+										},
+										["n_dmg"] = 73,
+										["n_min"] = 36,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["ChartData"] = {
+											[5] = 37,
+											[8] = 37,
+										},
+										["total"] = 73,
+										["c_max"] = 0,
+										["id"] = 26365,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8045] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 74,
+										["targets"] = {
+											["Befouled Water Elemental"] = 74,
+										},
+										["n_dmg"] = 74,
+										["n_min"] = 74,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[8] = 74,
+										},
+										["total"] = 74,
+										["c_max"] = 0,
+										["id"] = 8045,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10444] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Befouled Water Elemental"] = 86,
 										},
 										["n_dmg"] = 86,
 										["n_min"] = 21,
 										["g_dmg"] = 0,
 										["counter"] = 4,
 										["ChartData"] = {
-											[8] = 64,
-											[11] = 86,
-											[5] = 64,
+											[5] = 43,
+											[8] = 86,
 										},
 										["total"] = 86,
 										["c_max"] = 0,
@@ -144,6 +8323,1048 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
+										["n_max"] = 57,
+										["targets"] = {
+											["Befouled Water Elemental"] = 103,
+										},
+										["n_dmg"] = 103,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["ChartData"] = {
+											[5] = 87,
+											[8] = 103,
+										},
+										["total"] = 103,
+										["c_max"] = 0,
+										["id"] = 8052,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-0416001E",
+							["on_hold"] = false,
+							["last_dps"] = 60.1046174997702,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 164.003473,
+							["start_time"] = 1678992349,
+							["delay"] = 0,
+							["last_event"] = 1678992348,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007917,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["damage_from"] = {
+								["Tadibey"] = true,
+							},
+							["targets"] = {
+								["Tadibey"] = 164,
+							},
+							["monster"] = true,
+							["pets"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 164.007917,
+							["end_time"] = 1678992349,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 164.007917,
+							["friendlyfire"] = {
+							},
+							["aID"] = "3917",
+							["nome"] = "Befouled Water Elemental",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 56,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Tadibey"] = 164,
+										},
+										["n_dmg"] = 108,
+										["n_min"] = 25,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 164,
+										["c_max"] = 56,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 56,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["serial"] = "Creature-0-5563-1-21-3917-0000134D9D",
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 588.007917,
+							["start_time"] = 1678992349,
+							["delay"] = 0,
+							["last_event"] = 1678992348,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 132,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 132,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.004515,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Tadibey"] = 86,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "SHAMAN",
+							["totalover"] = 8.004515,
+							["alternatepower"] = 0.004515,
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[52128] = {
+										["total"] = 44,
+										["id"] = 52128,
+										["totalover"] = 8,
+										["targets"] = {
+											["Tadibey"] = 44,
+										},
+										["counter"] = 1,
+									},
+									[59914] = {
+										["total"] = 42,
+										["id"] = 59914,
+										["totalover"] = 0,
+										["targets"] = {
+											["Tadibey"] = 42,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["grupo"] = true,
+							["aID"] = "4465-0416001E",
+							["received"] = 86.004515,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["tipo"] = 3,
+							["total"] = 86.004515,
+							["passiveover"] = 0.004515,
+							["serial"] = "Player-4465-0416001E",
+							["last_event"] = 1678992348,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 132,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[8052] = {
+										["activedamt"] = 0,
+										["id"] = 8052,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8045] = {
+										["activedamt"] = 0,
+										["id"] = 8045,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["buff_uptime"] = 11,
+							["aID"] = "4465-0416001E",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[52127] = {
+										["activedamt"] = 1,
+										["id"] = 52127,
+										["targets"] = {
+										},
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[325] = {
+										["activedamt"] = 1,
+										["id"] = 325,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 13,
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Tadibey",
+							["grupo"] = true,
+							["spell_cast"] = {
+								[325] = 1,
+								[8045] = 1,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["last_event"] = 1678992349,
+							["classe"] = "SHAMAN",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-0416001E",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 132,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Tadibey"] = "Player-4465-0416001E",
+				},
+				["raid_roster_indexed"] = {
+					"Tadibey", -- [1]
+				},
+				["CombatStartedAt"] = 511395.002,
+				["tempo_start"] = 1678992338,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1167,
+				["playing_solo"] = true,
+				["totals"] = {
+					752, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 86,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					588, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 86,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "19:45:50",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Befouled Water Elemental",
+				["TotalElapsedCombatTime"] = 511356.919,
+				["CombatEndedAt"] = 511356.919,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Tadibey"] = 588.003473,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 511356.919,
+				["combat_id"] = 132,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "19:45:39",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Befouled Water Elemental"] = 1,
+				},
+				["start_time"] = 511345.869,
+				["TimeData"] = {
+				},
+				["contra"] = "Befouled Water Elemental",
+			}, -- [16]
+			{
+				{
+					["combatId"] = 131,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004458,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["damage_from"] = {
+								["Tadibey"] = true,
+							},
+							["targets"] = {
+								["Tadibey"] = 129,
+							},
+							["monster"] = true,
+							["pets"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 129.004458,
+							["end_time"] = 1678992332,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 129.004458,
+							["friendlyfire"] = {
+							},
+							["aID"] = "3917",
+							["nome"] = "Befouled Water Elemental",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 1,
+										["c_dmg"] = 49,
+										["g_amt"] = 0,
+										["n_max"] = 26,
+										["targets"] = {
+											["Tadibey"] = 129,
+										},
+										["n_dmg"] = 80,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 129,
+										["c_max"] = 49,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 49,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 4,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["serial"] = "Creature-0-5563-1-21-3917-0000132D78",
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 594.004458,
+							["start_time"] = 1678992332,
+							["delay"] = 0,
+							["last_event"] = 1678992329,
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006258,
+							["damage_from"] = {
+								["Befouled Water Elemental"] = true,
+							},
+							["targets"] = {
+								["Befouled Water Elemental"] = 594,
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 594.006258,
+							["end_time"] = 1678992332,
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 594.006258,
+							["classe"] = "SHAMAN",
+							["aID"] = "4465-0416001E",
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 139,
+										["g_amt"] = 0,
+										["n_max"] = 73,
+										["targets"] = {
+											["Befouled Water Elemental"] = 333,
+										},
+										["n_dmg"] = 194,
+										["n_min"] = 53,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["ChartData"] = {
+											[8] = 260,
+											[11] = 333,
+											[5] = 207,
+										},
+										["total"] = 333,
+										["c_max"] = 139,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 139,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[8045] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 74,
+										["targets"] = {
+											["Befouled Water Elemental"] = 74,
+										},
+										["n_dmg"] = 74,
+										["n_min"] = 74,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[8] = 74,
+											[11] = 74,
+										},
+										["total"] = 74,
+										["c_max"] = 0,
+										["id"] = 8045,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8052] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 23,
+										["g_amt"] = 0,
+										["n_max"] = 58,
+										["targets"] = {
+											["Befouled Water Elemental"] = 112,
+										},
+										["n_dmg"] = 89,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["ChartData"] = {
+											[8] = 97,
+											[11] = 112,
+											[5] = 74,
+										},
+										["total"] = 112,
+										["c_max"] = 23,
+										["id"] = 8052,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 23,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10444] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 33,
+										["g_amt"] = 0,
+										["n_max"] = 21,
+										["targets"] = {
+											["Befouled Water Elemental"] = 75,
+										},
+										["n_dmg"] = 42,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["ChartData"] = {
+											[8] = 75,
+											[11] = 75,
+											[5] = 54,
+										},
+										["total"] = 75,
+										["c_max"] = 33,
+										["id"] = 10444,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 33,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-0416001E",
+							["on_hold"] = false,
+							["last_dps"] = 52.03734191862378,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 129.006258,
+							["start_time"] = 1678992332,
+							["delay"] = 0,
+							["last_event"] = 1678992330,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 131,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 131,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.003811,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["targets"] = {
+								["Tadibey"] = 197,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "SHAMAN",
+							["totalover"] = 0.003811,
+							["alternatepower"] = 0.003811,
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[52128] = {
+										["total"] = 156,
+										["id"] = 52128,
+										["totalover"] = 0,
+										["targets"] = {
+											["Tadibey"] = 156,
+										},
+										["counter"] = 3,
+									},
+									[59914] = {
+										["total"] = 41,
+										["id"] = 59914,
+										["totalover"] = 0,
+										["targets"] = {
+											["Tadibey"] = 41,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["grupo"] = true,
+							["aID"] = "4465-0416001E",
+							["received"] = 197.003811,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["tipo"] = 3,
+							["total"] = 197.003811,
+							["passiveover"] = 0.003811,
+							["serial"] = "Player-4465-0416001E",
+							["last_event"] = 1678992330,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 131,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[8052] = {
+										["activedamt"] = 0,
+										["id"] = 8052,
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8045] = {
+										["activedamt"] = 0,
+										["id"] = 8045,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["buff_uptime"] = 13,
+							["aID"] = "4465-0416001E",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[57994] = {
+										["id"] = 57994,
+										["interrompeu_oque"] = {
+											[9672] = 1,
+										},
+										["targets"] = {
+											["Befouled Water Elemental"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[64658] = {
+										["activedamt"] = 1,
+										["id"] = 64658,
+										["targets"] = {
+										},
+										["actived_at"] = 1678992319,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									[52127] = {
+										["activedamt"] = 1,
+										["id"] = 52127,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[9672] = 1,
+							},
+							["debuff_uptime"] = 16,
+							["debuff_uptime_targets"] = {
+							},
+							["interrupt"] = 1.003816,
+							["nome"] = "Tadibey",
+							["interrupt_targets"] = {
+								["Befouled Water Elemental"] = 1,
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[8045] = 1,
+								[8052] = 1,
+								[57994] = 1,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["last_event"] = 1678992332,
+							["classe"] = "SHAMAN",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-0416001E",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 131,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Tadibey"] = "Player-4465-0416001E",
+				},
+				["raid_roster_indexed"] = {
+					"Tadibey", -- [1]
+				},
+				["CombatStartedAt"] = 511345.602,
+				["tempo_start"] = 1678992319,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1166,
+				["playing_solo"] = true,
+				["totals"] = {
+					723, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 197,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					594, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 197,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "19:45:32",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Befouled Water Elemental",
+				["TotalElapsedCombatTime"] = 511339.119,
+				["CombatEndedAt"] = 511339.119,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Tadibey"] = 594.006258,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 511339.119,
+				["combat_id"] = 131,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "19:45:19",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Befouled Water Elemental"] = 1,
+				},
+				["start_time"] = 511326.187,
+				["TimeData"] = {
+				},
+				["contra"] = "Befouled Water Elemental",
+			}, -- [17]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 130,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.004205,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["aID"] = "4465-0416001E",
+							["total_without_pet"] = 615.004205,
+							["dps_started"] = false,
+							["total"] = 615.004205,
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-0416001E",
+							["damage_from"] = {
+								["Razormane Seer"] = true,
+								["Searing Totem II <Razormane Seer>"] = true,
+							},
+							["targets"] = {
+								["Razormane Seer"] = 557,
+								["Searing Totem II <Razormane Seer>"] = 58,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1678952030,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["classe"] = "SHAMAN",
+							["nome"] = "Tadibey",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 84,
+										["targets"] = {
+											["Razormane Seer"] = 290,
+										},
+										["n_dmg"] = 290,
+										["n_min"] = 58,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["ChartData"] = {
+											[8] = 206,
+											[5] = 206,
+											[11] = 290,
+										},
+										["total"] = 290,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+									}, -- [1]
+									[8045] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 77,
+										["targets"] = {
+											["Razormane Seer"] = 77,
+										},
+										["n_dmg"] = 77,
+										["n_min"] = 77,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["ChartData"] = {
+											[8] = 77,
+											[11] = 77,
+										},
+										["total"] = 77,
+										["c_max"] = 0,
+										["id"] = 8045,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 8,
+									},
+									[10444] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Razormane Seer"] = 86,
+										},
+										["n_dmg"] = 86,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["ChartData"] = {
+											[8] = 64,
+											[5] = 64,
+											[11] = 86,
+										},
+										["total"] = 86,
+										["c_max"] = 0,
+										["id"] = 10444,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["extra"] = {
+										},
+										["spellschool"] = 4,
+									},
+									[8052] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
 										["n_max"] = 58,
 										["targets"] = {
 											["Razormane Seer"] = 104,
@@ -155,66 +9376,66 @@ _detalhes_database = {
 										["counter"] = 5,
 										["ChartData"] = {
 											[8] = 89,
-											[11] = 104,
 											[5] = 74,
+											[11] = 104,
 										},
 										["total"] = 162,
 										["c_max"] = 0,
 										["id"] = 8052,
 										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 4,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-0416001E",
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
+							["damage_taken"] = 152.004205,
 							["last_event"] = 1678952030,
+							["custom"] = 0,
+							["tipo"] = 1,
 							["last_dps"] = 48.42171521927052,
 							["start_time"] = 1678952030,
 							["delay"] = 0,
-							["damage_taken"] = 152.004205,
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.007016,
+							["delay"] = 0,
 							["damage_from"] = {
-								["Doicherinca"] = true,
 								["Tadibey"] = true,
+								["Doicherinca"] = true,
 							},
 							["targets"] = {
-								["Doicherinca"] = 21,
 								["Tadibey"] = 152,
+								["Doicherinca"] = 21,
 							},
-							["dps_started"] = false,
+							["aID"] = "3458",
 							["pets"] = {
 								"Searing Totem II <Razormane Seer>", -- [1]
 							},
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["monster"] = true,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 156.007016,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3458",
-							["fight_component"] = true,
-							["end_time"] = 1678952030,
+							["monster"] = true,
 							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
+							["dps_started"] = false,
+							["end_time"] = 1678952030,
+							["damage_taken"] = 1294.007016,
+							["fight_component"] = true,
 							["nome"] = "Razormane Seer",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -225,8 +9446,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 30,
 										["targets"] = {
-											["Doicherinca"] = 21,
 											["Tadibey"] = 135,
+											["Doicherinca"] = 21,
 										},
 										["n_dmg"] = 156,
 										["n_min"] = 21,
@@ -236,16 +9457,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[6363] = {
 										["c_amt"] = 0,
@@ -263,53 +9484,54 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 6363,
 										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
 									},
 								},
 								["tipo"] = 2,
 							},
 							["total"] = 173.007016,
-							["serial"] = "Creature-0-5563-1-17-3458-000092C5FB",
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678952038,
 							["last_dps"] = 0,
+							["last_event"] = 1678952038,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1678952030,
-							["delay"] = 0,
-							["damage_taken"] = 1294.007016,
+							["serial"] = "Creature-0-5563-1-17-3458-000092C5FB",
+							["friendlyfire"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 8776,
 							["totalabsorbed"] = 0.004453,
-							["end_time"] = 1678952030,
+							["GetSpellContainer"] = nil --[[ skipped inline function ]],
+							["pets"] = {
+							},
+							["aID"] = "3902",
+							["total_without_pet"] = 17.004453,
+							["dps_started"] = false,
+							["total"] = 17.004453,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["on_hold"] = false,
+							["serial"] = "Creature-0-5563-1-17-3902-000012C65A",
 							["damage_from"] = {
 								["Tadibey"] = true,
 							},
 							["targets"] = {
 								["Tadibey"] = 17,
 							},
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["serial"] = "Creature-0-5563-1-17-3902-000012C65A",
-							["aID"] = "3902",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 17.004453,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "PET",
-							["dps_started"] = false,
-							["total"] = 17.004453,
-							["damage_taken"] = 58.004453,
+							["fight_component"] = true,
+							["end_time"] = 1678952030,
 							["ownerName"] = "Razormane Seer",
 							["nome"] = "Searing Totem II <Razormane Seer>",
 							["spells"] = {
@@ -331,30 +9553,29 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 6350,
 										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
 									},
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire_total"] = 0,
-							["fight_component"] = true,
+							["classe"] = "PET",
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
+							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1678952027,
-							["on_hold"] = false,
+							["damage_taken"] = 58.004453,
 							["start_time"] = 1678952030,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["last_dps"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
@@ -391,10 +9612,8 @@ _detalhes_database = {
 							["healing_taken"] = 95.003603,
 							["fight_component"] = true,
 							["end_time"] = 1678952030,
-							["healing_from"] = {
-								["Tadibey"] = true,
-							},
 							["heal_enemy_amt"] = 0,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 							["nome"] = "Tadibey",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -417,9 +9636,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_curado"] = 95,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["n_curado"] = 95,
 										["absorbed"] = 0,
 									},
 									[8004] = {
@@ -442,23 +9661,25 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 1,
 										["n_curado"] = 0,
 										["totaldenied"] = 0,
-										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["start_time"] = 1678952030,
-							["aID"] = "4465-0416001E",
+							["totaldenied"] = 0.003603,
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1678982425,
-							["tipo"] = 2,
-							["totaldenied"] = 0.003603,
+							["aID"] = "4465-0416001E",
+							["start_time"] = 1678952030,
 							["delay"] = 0,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["healing_from"] = {
+								["Tadibey"] = true,
+							},
 						}, -- [1]
 					},
 				}, -- [2]
@@ -505,14 +9726,14 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["aID"] = "4465-0416001E",
-							["tipo"] = 3,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["last_event"] = 1678952029,
-							["total"] = 145.007189,
-							["passiveover"] = 0.007189,
-							["serial"] = "Player-4465-0416001E",
 							["received"] = 145.007189,
+							["last_event"] = 1678952029,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+							["tipo"] = 3,
+							["passiveover"] = 0.007189,
+							["total"] = 145.007189,
+							["serial"] = "Player-4465-0416001E",
+							["aID"] = "4465-0416001E",
 						}, -- [1]
 					},
 				}, -- [3]
@@ -525,26 +9746,26 @@ _detalhes_database = {
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[8052] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 8052,
+										["uptime"] = 11,
 										["targets"] = {
 										},
-										["activedamt"] = 0,
-										["uptime"] = 11,
-										["id"] = 8052,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									[8045] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 8045,
+										["uptime"] = 5,
 										["targets"] = {
 										},
-										["activedamt"] = 0,
-										["uptime"] = 5,
-										["id"] = 8045,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 								},
 								["tipo"] = 9,
@@ -556,13 +9777,13 @@ _detalhes_database = {
 								["_ActorTable"] = {
 									[57994] = {
 										["id"] = 57994,
-										["interrompeu_oque"] = {
-											[6274] = 1,
-										},
+										["counter"] = 1,
 										["targets"] = {
 											["Razormane Seer"] = 1,
 										},
-										["counter"] = 1,
+										["interrompeu_oque"] = {
+											[6274] = 1,
+										},
 									},
 								},
 								["tipo"] = 9,
@@ -570,26 +9791,26 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[52127] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 52127,
+										["uptime"] = 12,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 12,
-										["id"] = 52127,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									[20007] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 20007,
+										["uptime"] = 12,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 12,
-										["id"] = 20007,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 								},
 								["tipo"] = 9,
@@ -599,10 +9820,10 @@ _detalhes_database = {
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 16,
-							["pets"] = {
+							["nome"] = "Tadibey",
+							["debuff_uptime_targets"] = {
 							},
 							["interrupt"] = 1.00547,
-							["nome"] = "Tadibey",
 							["interrupt_targets"] = {
 								["Razormane Seer"] = 1,
 							},
@@ -612,49 +9833,49 @@ _detalhes_database = {
 								[8052] = 1,
 								[8045] = 1,
 							},
-							["buff_uptime_targets"] = {
-							},
+							["last_event"] = 1678952030,
 							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 							["tipo"] = 4,
 							["classe"] = "SHAMAN",
-							["last_event"] = 1678952030,
+							["buff_uptime_targets"] = {
+							},
 							["serial"] = "Player-4465-0416001E",
-							["debuff_uptime_targets"] = {
+							["pets"] = {
 							},
 						}, -- [1]
 						{
-							["fight_component"] = true,
+							["flag_original"] = 68168,
 							["nome"] = "Razormane Seer",
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
 							["monster"] = true,
-							["aID"] = "3458",
 							["pets"] = {
 								"Searing Totem II <Razormane Seer>", -- [1]
 							},
-							["flag_original"] = 68168,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["last_event"] = 0,
 							["spell_cast"] = {
 								[6363] = 1,
 							},
+							["last_event"] = 0,
+							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["aID"] = "3458",
 							["serial"] = "Creature-0-5563-1-17-3458-000092C5FB",
 							["tipo"] = 4,
 						}, -- [2]
 						{
-							["flag_original"] = 8776,
+							["fight_component"] = true,
 							["classe"] = "PET",
 							["ownerName"] = "Razormane Seer",
 							["nome"] = "Searing Totem II <Razormane Seer>",
 							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["fight_component"] = true,
+							["flag_original"] = 8776,
 							["last_event"] = 0,
-							["pets"] = {
+							["spell_cast"] = {
+								[6350] = 1,
 							},
 							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 							["aID"] = "3902",
-							["spell_cast"] = {
-								[6350] = 1,
+							["pets"] = {
 							},
 							["serial"] = "Creature-0-5563-1-17-3902-000012C65A",
 							["tipo"] = 4,
@@ -673,14 +9894,13 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Tadibey", -- [1]
 				},
+				["CombatStartedAt"] = 511324.569,
 				["tempo_start"] = 1678952018,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 1162,
 				["playing_solo"] = true,
 				["totals"] = {
 					787.996764, -- [1]
@@ -689,21 +9909,21 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 144.994922,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 1,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -723,12 +9943,6 @@ _detalhes_database = {
 				["data_inicio"] = "08:33:39",
 				["end_time"] = 506014.157,
 				["combat_id"] = 130,
-				["frags"] = {
-					["Razormane Seer"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["combat_counter"] = 1162,
 				["totals_grupo"] = {
 					615, -- [1]
 					95, -- [2]
@@ -736,32 +9950,32 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 145,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 1,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags"] = {
+					["Razormane Seer"] = 1,
 				},
-				["TimeData"] = {
-				},
-				["start_time"] = 506001.456,
-				["contra"] = "Razormane Seer",
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Tadibey"] = 615.004205,
+						}, -- [1]
 					},
 					["heal_section"] = {
 					},
@@ -770,10533 +9984,29 @@ _detalhes_database = {
 							["Tadibey"] = 95.003603,
 						}, -- [1]
 					},
-					["damage"] = {
-						{
-							["Tadibey"] = 615.004205,
-						}, -- [1]
+					["damage_section"] = {
 					},
-				},
-			}, -- [1]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 129,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001422,
-							["damage_from"] = {
-								["Razormane Seer"] = true,
-								["Razormane Warfrenzy"] = true,
-							},
-							["targets"] = {
-								["Razormane Seer"] = 582,
-								["Razormane Warfrenzy"] = 716,
-							},
-							["end_time"] = 1678951999,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "4465-0416001E",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1298.001422,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "SHAMAN",
-							["dps_started"] = false,
-							["total"] = 1298.001422,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 71,
-										["targets"] = {
-											["Razormane Seer"] = 262,
-											["Razormane Warfrenzy"] = 243,
-										},
-										["n_dmg"] = 446,
-										["n_min"] = 56,
-										["g_dmg"] = 59,
-										["counter"] = 10,
-										["ChartData"] = {
-											[26] = 387,
-											[14] = 262,
-											[29] = 446,
-											[8] = 262,
-											[17] = 327,
-											[5] = 122,
-											[20] = 327,
-											[11] = 262,
-											[23] = 327,
-										},
-										["total"] = 505,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[8052] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 23,
-										["g_amt"] = 0,
-										["n_max"] = 58,
-										["targets"] = {
-											["Razormane Seer"] = 96,
-											["Razormane Warfrenzy"] = 148,
-										},
-										["n_dmg"] = 221,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["ChartData"] = {
-											[26] = 214,
-											[14] = 153,
-											[29] = 229,
-											[8] = 96,
-											[17] = 168,
-											[5] = 81,
-											[20] = 183,
-											[11] = 96,
-											[23] = 199,
-										},
-										["total"] = 244,
-										["c_max"] = 23,
-										["id"] = 8052,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 23,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 9,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8045] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 76,
-										["targets"] = {
-											["Razormane Seer"] = 74,
-											["Razormane Warfrenzy"] = 76,
-										},
-										["n_dmg"] = 150,
-										["n_min"] = 74,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["ChartData"] = {
-											[11] = 74,
-											[17] = 74,
-											[8] = 74,
-											[14] = 74,
-											[29] = 150,
-											[26] = 150,
-											[23] = 150,
-											[20] = 74,
-										},
-										["total"] = 150,
-										["c_max"] = 0,
-										["id"] = 8045,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26365] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Razormane Seer"] = 74,
-											["Razormane Warfrenzy"] = 183,
-										},
-										["n_dmg"] = 257,
-										["n_min"] = 36,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["ChartData"] = {
-											[26] = 220,
-											[14] = 147,
-											[29] = 257,
-											[8] = 111,
-											[17] = 184,
-											[5] = 74,
-											[20] = 184,
-											[11] = 111,
-											[23] = 220,
-										},
-										["total"] = 257,
-										["c_max"] = 0,
-										["id"] = 26365,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[10444] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 32,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Razormane Seer"] = 76,
-											["Razormane Warfrenzy"] = 66,
-										},
-										["n_dmg"] = 110,
-										["n_min"] = 22,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["ChartData"] = {
-											[26] = 120,
-											[14] = 76,
-											[29] = 142,
-											[8] = 76,
-											[17] = 98,
-											[5] = 54,
-											[20] = 98,
-											[11] = 76,
-											[23] = 98,
-										},
-										["total"] = 142,
-										["c_max"] = 32,
-										["id"] = 10444,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 32,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951998,
-							["last_dps"] = 40.37203887909683,
-							["start_time"] = 1678951999,
-							["delay"] = 0,
-							["damage_taken"] = 461.001422,
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.004054,
-							["damage_from"] = {
-								["Searing Totem IV <Doicherinca>"] = true,
-								["Tadibey"] = true,
-								["Doicherinca"] = true,
-							},
-							["targets"] = {
-								["Doicherinca"] = 97,
-								["Tadibey"] = 349,
-							},
-							["end_time"] = 1678951999,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3459",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 446.004054,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 446.004054,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Warfrenzy",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 86,
-										["g_amt"] = 0,
-										["n_max"] = 25,
-										["targets"] = {
-											["Doicherinca"] = 97,
-											["Tadibey"] = 349,
-										},
-										["n_dmg"] = 360,
-										["a_dmg"] = 0,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 48,
-										["DODGE"] = 6,
-										["r_amt"] = 0,
-										["c_max"] = 46,
-										["MISS"] = 15,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["BLOCK"] = 1,
-										["PARRY"] = 1,
-										["c_min"] = 40,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 23,
-										["total"] = 446,
-										["b_dmg"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3459-000012A34C",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678952002,
-							["damage_taken"] = 2212.004054,
-							["start_time"] = 1678951999,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001554,
-							["damage_from"] = {
-								["Doicherinca"] = true,
-								["Tadibey"] = true,
-							},
-							["targets"] = {
-								["Doicherinca"] = 42,
-								["Tadibey"] = 112,
-							},
-							["end_time"] = 1678951999,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3458",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 154.001554,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 154.001554,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Seer",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 29,
-										["targets"] = {
-											["Doicherinca"] = 42,
-											["Tadibey"] = 112,
-										},
-										["n_dmg"] = 154,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 154,
-										["c_max"] = 0,
-										["a_dmg"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["PARRY"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3458-00001273F9",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678952017,
-							["damage_taken"] = 1844.001554,
-							["start_time"] = 1678951999,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 129,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.008608,
-							["total_without_pet"] = 324.008608,
-							["total"] = 324.008608,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-0416001E",
-							["totalabsorb"] = 0.008608,
-							["last_hps"] = 14.46402428465962,
-							["targets"] = {
-								["Tadibey"] = 324,
-							},
-							["totalover_without_pet"] = 0.008608,
-							["healing_taken"] = 324.008608,
-							["fight_component"] = true,
-							["end_time"] = 1678951999,
-							["healing_from"] = {
-								["Tadibey"] = true,
-							},
-							["heal_enemy_amt"] = 0,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[913] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 324,
-										["targets"] = {
-											["Tadibey"] = 324,
-										},
-										["n_min"] = 324,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 324,
-										["c_max"] = 0,
-										["id"] = 913,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 324,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["start_time"] = 1678951999,
-							["aID"] = "4465-0416001E",
-							["custom"] = 0,
-							["last_event"] = 1678951989,
-							["tipo"] = 2,
-							["totaldenied"] = 0.008608,
-							["delay"] = 0,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 129,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.00127,
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Tadibey"] = 134,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.00127,
-							["fight_component"] = true,
-							["alternatepower"] = 0.00127,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[59914] = {
-										["total"] = 82,
-										["id"] = 59914,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 82,
-										},
-										["counter"] = 4,
-									},
-									[52128] = {
-										["total"] = 52,
-										["id"] = 52128,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 52,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["aID"] = "4465-0416001E",
-							["tipo"] = 3,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["last_event"] = 1678952017,
-							["total"] = 134.00127,
-							["passiveover"] = 0.00127,
-							["serial"] = "Player-4465-0416001E",
-							["received"] = 134.00127,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 129,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8052] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 27,
-										["id"] = 8052,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8045] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 11,
-										["id"] = 8045,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["buff_uptime"] = 28,
-							["aID"] = "4465-0416001E",
-							["interrupt_spells"] = {
-								["_ActorTable"] = {
-									[57994] = {
-										["id"] = 57994,
-										["interrompeu_oque"] = {
-											[6274] = 1,
-										},
-										["targets"] = {
-											["Razormane Seer"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[325] = {
-										["appliedamt"] = 3,
-										["targets"] = {
-										},
-										["activedamt"] = 3,
-										["uptime"] = 24,
-										["id"] = 325,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[52127] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 4,
-										["id"] = 52127,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["interrompeu_oque"] = {
-								[6274] = 1,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 38,
-							["pets"] = {
-							},
-							["interrupt"] = 1.008362,
-							["nome"] = "Tadibey",
-							["interrupt_targets"] = {
-								["Razormane Seer"] = 1,
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[57994] = 1,
-								[52127] = 1,
-								[8045] = 2,
-								[8052] = 1,
-								[913] = 1,
-								[325] = 2,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
-							["last_event"] = 1678951999,
-							["serial"] = "Player-4465-0416001E",
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 129,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Tadibey"] = "Player-4465-0416001E",
-				},
-				["raid_roster_indexed"] = {
-					"Tadibey", -- [1]
-				},
-				["CombatStartedAt"] = 506001.222,
-				["tempo_start"] = 1678951967,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 1161,
-				["playing_solo"] = true,
-				["totals"] = {
-					1897.991449, -- [1]
-					324, -- [2]
-					{
-						0, -- [1]
-						[0] = 133.996191,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					1298, -- [1]
-					324, -- [2]
-					{
-						0, -- [1]
-						[0] = 134,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "08:33:20",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Razormane Seer",
-				["TotalElapsedCombatTime"] = 505983.072,
-				["CombatEndedAt"] = 505983.072,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "08:32:48",
-				["end_time"] = 505983.072,
-				["combat_id"] = 129,
-				["frags"] = {
-					["Razormane Warfrenzy"] = 2,
-					["Razormane Seer"] = 2,
-				},
-				["spells_cast_timeline"] = {
 				},
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["player_last_events"] = {
-					["Tadibey"] = {
-						{
-							true, -- [1]
-							1, -- [2]
-							28, -- [3]
-							1678952018.308, -- [4]
-							773, -- [5]
-							"Razormane Seer", -- [6]
-							nil, -- [7]
-							1, -- [8]
-							false, -- [9]
-							-1, -- [10]
-							false, -- [11]
-							false, -- [12]
-						}, -- [1]
-						{
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 2,
-					},
-				},
 				["CombatSkillCache"] = {
 				},
-				["TimeData"] = {
-				},
-				["start_time"] = 505950.921,
 				["contra"] = "Razormane Seer",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Tadibey"] = 324.008608,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Tadibey"] = 1298.001422,
-						}, -- [1]
-					},
-				},
-			}, -- [2]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 128,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007503,
-							["damage_from"] = {
-								["Razormane Seer"] = true,
-							},
-							["targets"] = {
-								["Razormane Seer"] = 578,
-							},
-							["end_time"] = 1678951964,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "4465-0416001E",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 578.007503,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "SHAMAN",
-							["dps_started"] = false,
-							["total"] = 578.007503,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 73,
-										["targets"] = {
-											["Razormane Seer"] = 271,
-										},
-										["n_dmg"] = 271,
-										["n_min"] = 60,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["ChartData"] = {
-											[5] = 211,
-											[8] = 271,
-										},
-										["total"] = 271,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[10444] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Razormane Seer"] = 64,
-										},
-										["n_dmg"] = 64,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[5] = 64,
-											[8] = 64,
-										},
-										["total"] = 64,
-										["c_max"] = 0,
-										["id"] = 10444,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8045] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 73,
-										["targets"] = {
-											["Razormane Seer"] = 73,
-										},
-										["n_dmg"] = 73,
-										["n_min"] = 73,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["ChartData"] = {
-											[8] = 73,
-										},
-										["total"] = 73,
-										["c_max"] = 0,
-										["id"] = 8045,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8052] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 23,
-										["g_amt"] = 0,
-										["n_max"] = 58,
-										["targets"] = {
-											["Razormane Seer"] = 96,
-										},
-										["n_dmg"] = 73,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[5] = 73,
-											[8] = 96,
-										},
-										["total"] = 96,
-										["c_max"] = 23,
-										["id"] = 8052,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 23,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26365] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Razormane Seer"] = 74,
-										},
-										["n_dmg"] = 74,
-										["n_min"] = 37,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["ChartData"] = {
-											[5] = 74,
-											[8] = 74,
-										},
-										["total"] = 74,
-										["c_max"] = 0,
-										["id"] = 26365,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951963,
-							["last_dps"] = 67.21017476716892,
-							["start_time"] = 1678951964,
-							["delay"] = 0,
-							["damage_taken"] = 56.007503,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001998,
-							["damage_from"] = {
-								["Tadibey"] = true,
-							},
-							["targets"] = {
-								["Tadibey"] = 56,
-							},
-							["end_time"] = 1678951964,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3458",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 56.001998,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 56.001998,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Seer",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Tadibey"] = 56,
-										},
-										["n_dmg"] = 56,
-										["n_min"] = 5,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 56,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 5,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3458-000012C5FB",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951960,
-							["damage_taken"] = 578.001998,
-							["start_time"] = 1678951964,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 128,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 128,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.008871,
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Tadibey"] = 40,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.008871,
-							["alternatepower"] = 0.008871,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[59914] = {
-										["total"] = 40,
-										["id"] = 59914,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 40,
-										},
-										["counter"] = 2,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["aID"] = "4465-0416001E",
-							["tipo"] = 3,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["last_event"] = 1678951963,
-							["total"] = 40.008871,
-							["passiveover"] = 0.008871,
-							["serial"] = "Player-4465-0416001E",
-							["received"] = 40.008871,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 128,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8052] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 9,
-										["id"] = 8052,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8045] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 3,
-										["id"] = 8045,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["buff_uptime"] = 10,
-							["aID"] = "4465-0416001E",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[325] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 10,
-										["id"] = 325,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 12,
-							["nome"] = "Tadibey",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[8045] = 1,
-							},
-							["last_event"] = 1678951964,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["buff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 128,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Tadibey"] = "Player-4465-0416001E",
-				},
-				["raid_roster_indexed"] = {
-					"Tadibey", -- [1]
-				},
-				["CombatStartedAt"] = 505950.688,
-				["tempo_start"] = 1678951954,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 1160,
-				["playing_solo"] = true,
-				["totals"] = {
-					634, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 40,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					578, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 40,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "08:32:45",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Razormane Seer",
-				["TotalElapsedCombatTime"] = 505947.888,
-				["CombatEndedAt"] = 505947.888,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "08:32:35",
-				["end_time"] = 505947.888,
-				["combat_id"] = 128,
-				["frags"] = {
-					["Razormane Seer"] = 1,
+				["start_time"] = 506001.456,
+				["TimeData"] = {
 				},
 				["spells_cast_timeline"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 505938.038,
-				["contra"] = "Razormane Seer",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Tadibey"] = 578.007503,
-						}, -- [1]
-					},
-				},
-			}, -- [3]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 127,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004456,
-							["damage_from"] = {
-								["Razormane Stalker"] = true,
-							},
-							["targets"] = {
-								["Razormane Stalker"] = 526,
-							},
-							["end_time"] = 1678951948,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "4465-0416001E",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 526.004456,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "SHAMAN",
-							["dps_started"] = false,
-							["total"] = 526.004456,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 148,
-										["g_amt"] = 0,
-										["n_max"] = 68,
-										["targets"] = {
-											["Razormane Stalker"] = 216,
-										},
-										["n_dmg"] = 68,
-										["n_min"] = 68,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[6] = 148,
-										},
-										["total"] = 216,
-										["c_max"] = 148,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 148,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[26365] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Razormane Stalker"] = 74,
-										},
-										["n_dmg"] = 74,
-										["n_min"] = 37,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["ChartData"] = {
-											[6] = 74,
-										},
-										["total"] = 74,
-										["c_max"] = 0,
-										["id"] = 26365,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8045] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 76,
-										["targets"] = {
-											["Razormane Stalker"] = 76,
-										},
-										["n_dmg"] = 76,
-										["n_min"] = 76,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 76,
-										["c_max"] = 0,
-										["id"] = 8045,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8052] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 86,
-										["g_amt"] = 0,
-										["n_max"] = 15,
-										["targets"] = {
-											["Razormane Stalker"] = 116,
-										},
-										["n_dmg"] = 30,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[6] = 101,
-										},
-										["total"] = 116,
-										["c_max"] = 86,
-										["id"] = 8052,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 86,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[10444] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Razormane Stalker"] = 44,
-										},
-										["n_dmg"] = 44,
-										["n_min"] = 22,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["ChartData"] = {
-											[6] = 22,
-										},
-										["total"] = 44,
-										["c_max"] = 0,
-										["id"] = 10444,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951947,
-							["last_dps"] = 80.50267156430971,
-							["start_time"] = 1678951948,
-							["delay"] = 0,
-							["damage_taken"] = 83.004456,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008944,
-							["damage_from"] = {
-								["Tadibey"] = true,
-							},
-							["targets"] = {
-								["Tadibey"] = 83,
-							},
-							["end_time"] = 1678951948,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3457",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 83.008944,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 83.008944,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Stalker",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 30,
-										["targets"] = {
-											["Tadibey"] = 83,
-										},
-										["n_dmg"] = 83,
-										["n_min"] = 24,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 83,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3457-000012721B",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951946,
-							["damage_taken"] = 526.0089439999999,
-							["start_time"] = 1678951948,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 127,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 127,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.001312,
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Tadibey"] = 40,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.001312,
-							["alternatepower"] = 0.001312,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[59914] = {
-										["total"] = 40,
-										["id"] = 59914,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 40,
-										},
-										["counter"] = 2,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["aID"] = "4465-0416001E",
-							["tipo"] = 3,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["last_event"] = 1678951947,
-							["total"] = 40.001312,
-							["passiveover"] = 0.001312,
-							["serial"] = "Player-4465-0416001E",
-							["received"] = 40.001312,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 127,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8052] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 6,
-										["id"] = 8052,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8045] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 0,
-										["id"] = 8045,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["buff_uptime"] = 12,
-							["aID"] = "4465-0416001E",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[325] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 7,
-										["id"] = 325,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[20007] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 5,
-										["id"] = 20007,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 6,
-							["nome"] = "Tadibey",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[8045] = 1,
-								[325] = 1,
-								[8052] = 1,
-							},
-							["last_event"] = 1678951948,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["buff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 127,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Tadibey"] = "Player-4465-0416001E",
-				},
-				["raid_roster_indexed"] = {
-					"Tadibey", -- [1]
-				},
-				["CombatStartedAt"] = 505937.771,
-				["tempo_start"] = 1678951940,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 1159,
-				["playing_solo"] = true,
-				["totals"] = {
-					609, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 40,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					526, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 40,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "08:32:29",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Razormane Stalker",
-				["TotalElapsedCombatTime"] = 505932.088,
-				["CombatEndedAt"] = 505932.088,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "08:32:21",
-				["end_time"] = 505932.088,
-				["combat_id"] = 127,
-				["frags"] = {
-					["Razormane Stalker"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 505924.054,
-				["contra"] = "Razormane Stalker",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Tadibey"] = 526.004456,
-						}, -- [1]
-					},
-				},
-			}, -- [4]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 126,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002419,
-							["damage_from"] = {
-								["Razormane Warfrenzy"] = true,
-								["Razormane Stalker"] = true,
-							},
-							["targets"] = {
-								["Razormane Warfrenzy"] = 765,
-							},
-							["end_time"] = 1678951935,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "4465-0416001E",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 765.002419,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "SHAMAN",
-							["dps_started"] = false,
-							["total"] = 765.002419,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 114,
-										["g_amt"] = 1,
-										["n_max"] = 85,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 344,
-										},
-										["n_dmg"] = 165,
-										["n_min"] = 80,
-										["g_dmg"] = 65,
-										["counter"] = 5,
-										["ChartData"] = {
-											[8] = 279,
-											[11] = 279,
-											[5] = 165,
-										},
-										["total"] = 344,
-										["c_max"] = 114,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["PARRY"] = 1,
-										["c_min"] = 114,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[10444] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 43,
-										},
-										["n_dmg"] = 43,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[8] = 43,
-											[11] = 43,
-											[5] = 22,
-										},
-										["total"] = 43,
-										["c_max"] = 0,
-										["id"] = 10444,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8045] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 76,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 150,
-										},
-										["n_dmg"] = 150,
-										["n_min"] = 74,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["ChartData"] = {
-											[8] = 74,
-											[11] = 74,
-										},
-										["total"] = 150,
-										["c_max"] = 0,
-										["id"] = 8045,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8052] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 58,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 118,
-										},
-										["n_dmg"] = 118,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["ChartData"] = {
-											[8] = 103,
-											[11] = 118,
-											[5] = 88,
-										},
-										["total"] = 118,
-										["c_max"] = 0,
-										["id"] = 8052,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26365] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 110,
-										},
-										["n_dmg"] = 110,
-										["n_min"] = 36,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[8] = 73,
-											[11] = 110,
-											[5] = 73,
-										},
-										["total"] = 110,
-										["c_max"] = 0,
-										["id"] = 26365,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951934,
-							["last_dps"] = 57.30355198486882,
-							["start_time"] = 1678951935,
-							["delay"] = 0,
-							["damage_taken"] = 204.002419,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004979,
-							["damage_from"] = {
-								["Tadibey"] = true,
-							},
-							["targets"] = {
-								["Tadibey"] = 179,
-							},
-							["end_time"] = 1678951935,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3459",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 179.004979,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 179.004979,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Warfrenzy",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Tadibey"] = 179,
-										},
-										["n_dmg"] = 179,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 13,
-										["MISS"] = 1,
-										["r_amt"] = 0,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["BLOCK"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 10,
-										["b_dmg"] = 0,
-										["total"] = 179,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3459-000112C594",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951931,
-							["damage_taken"] = 765.004979,
-							["start_time"] = 1678951935,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 126,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.003632,
-							["total_without_pet"] = 78.003632,
-							["total"] = 78.003632,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-0416001E",
-							["totalabsorb"] = 0.003632,
-							["last_hps"] = 8.650729954481635,
-							["targets"] = {
-								["Tadibey"] = 78,
-							},
-							["totalover_without_pet"] = 0.003632,
-							["healing_taken"] = 78.003632,
-							["fight_component"] = true,
-							["end_time"] = 1678951935,
-							["healing_from"] = {
-								["Tadibey"] = true,
-							},
-							["heal_enemy_amt"] = 0,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20007] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 78,
-										["targets"] = {
-											["Tadibey"] = 78,
-										},
-										["n_min"] = 78,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 78,
-										["c_max"] = 0,
-										["id"] = 20007,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 78,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["start_time"] = 1678951935,
-							["aID"] = "4465-0416001E",
-							["custom"] = 0,
-							["last_event"] = 1678951930,
-							["tipo"] = 2,
-							["totaldenied"] = 0.003632,
-							["delay"] = 0,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 126,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.001089,
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Tadibey"] = 40,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.001089,
-							["fight_component"] = true,
-							["alternatepower"] = 0.001089,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[59914] = {
-										["total"] = 40,
-										["id"] = 59914,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 40,
-										},
-										["counter"] = 2,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["aID"] = "4465-0416001E",
-							["tipo"] = 3,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["last_event"] = 1678951934,
-							["total"] = 40.001089,
-							["passiveover"] = 0.001089,
-							["serial"] = "Player-4465-0416001E",
-							["received"] = 40.001089,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 126,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8052] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 13,
-										["id"] = 8052,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8045] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 6,
-										["id"] = 8045,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["buff_uptime"] = 23,
-							["aID"] = "4465-0416001E",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[325] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 14,
-										["id"] = 325,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[20007] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 9,
-										["id"] = 20007,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 19,
-							["nome"] = "Tadibey",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[325] = 1,
-								[8045] = 2,
-							},
-							["last_event"] = 1678951935,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["buff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 126,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Tadibey"] = "Player-4465-0416001E",
-				},
-				["raid_roster_indexed"] = {
-					"Tadibey", -- [1]
-				},
-				["CombatStartedAt"] = 505924.054,
-				["tempo_start"] = 1678951921,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 1158,
-				["playing_solo"] = true,
-				["totals"] = {
-					943.9885079999999, -- [1]
-					78, -- [2]
-					{
-						0, -- [1]
-						[0] = 39.99569,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					765, -- [1]
-					78, -- [2]
-					{
-						0, -- [1]
-						[0] = 40,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "08:32:16",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Razormane Warfrenzy",
-				["TotalElapsedCombatTime"] = 505919.154,
-				["CombatEndedAt"] = 505919.154,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "08:32:02",
-				["end_time"] = 505919.154,
-				["combat_id"] = 126,
-				["frags"] = {
-					["Razormane Seer"] = 1,
-					["Razormane Warfrenzy"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-					["Tadibey"] = {
-						{
-							true, -- [1]
-							1, -- [2]
-							25, -- [3]
-							1678951941.14, -- [4]
-							891, -- [5]
-							"Razormane Stalker", -- [6]
-							nil, -- [7]
-							1, -- [8]
-							false, -- [9]
-							-1, -- [10]
-							false, -- [11]
-							false, -- [12]
-						}, -- [1]
-						{
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 2,
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 505904.887,
-				["contra"] = "Razormane Warfrenzy",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Tadibey"] = 78.003632,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Tadibey"] = 765.002419,
-						}, -- [1]
-					},
-				},
-			}, -- [5]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 125,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003652,
-							["damage_from"] = {
-								["Razormane Seer"] = true,
-							},
-							["targets"] = {
-								["Razormane Seer"] = 636,
-							},
-							["end_time"] = 1678951914,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "4465-0416001E",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 636.003652,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "SHAMAN",
-							["dps_started"] = false,
-							["total"] = 636.003652,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 73,
-										["targets"] = {
-											["Razormane Seer"] = 258,
-										},
-										["n_dmg"] = 193,
-										["n_min"] = 56,
-										["g_dmg"] = 65,
-										["counter"] = 5,
-										["ChartData"] = {
-											[8] = 120,
-											[6] = 120,
-											[12] = 185,
-										},
-										["total"] = 258,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 56,
-										["r_amt"] = 0,
-									}, -- [1]
-									[8052] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 58,
-										["targets"] = {
-											["Razormane Seer"] = 119,
-										},
-										["n_dmg"] = 119,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["ChartData"] = {
-											[8] = 104,
-											[6] = 88,
-											[12] = 104,
-										},
-										["total"] = 119,
-										["c_max"] = 0,
-										["id"] = 8052,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8045] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 74,
-										["targets"] = {
-											["Razormane Seer"] = 74,
-										},
-										["n_dmg"] = 74,
-										["n_min"] = 74,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["ChartData"] = {
-											[8] = 74,
-											[12] = 74,
-										},
-										["total"] = 74,
-										["c_max"] = 0,
-										["id"] = 8045,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26365] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Razormane Seer"] = 110,
-										},
-										["n_dmg"] = 110,
-										["n_min"] = 36,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[8] = 74,
-											[6] = 74,
-											[12] = 110,
-										},
-										["total"] = 110,
-										["c_max"] = 0,
-										["id"] = 26365,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[10444] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 33,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Razormane Seer"] = 75,
-										},
-										["n_dmg"] = 42,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[8] = 54,
-											[6] = 54,
-											[12] = 75,
-										},
-										["total"] = 75,
-										["c_max"] = 33,
-										["id"] = 10444,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 33,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951912,
-							["last_dps"] = 44.68200449628675,
-							["start_time"] = 1678951914,
-							["delay"] = 0,
-							["damage_taken"] = 108.003652,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008304,
-							["damage_from"] = {
-								["Tadibey"] = true,
-							},
-							["targets"] = {
-								["Tadibey"] = 108,
-							},
-							["end_time"] = 1678951914,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3458",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 108.008304,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 108.008304,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Seer",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 29,
-										["targets"] = {
-											["Tadibey"] = 108,
-										},
-										["n_dmg"] = 108,
-										["n_min"] = 25,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 108,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3458-000012C5CD",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951909,
-							["damage_taken"] = 636.008304,
-							["start_time"] = 1678951914,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 125,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.006532,
-							["total_without_pet"] = 77.006532,
-							["total"] = 77.006532,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-0416001E",
-							["totalabsorb"] = 0.006532,
-							["last_hps"] = 7.726149493324734,
-							["targets"] = {
-								["Tadibey"] = 77,
-							},
-							["totalover_without_pet"] = 0.006532,
-							["healing_taken"] = 77.006532,
-							["fight_component"] = true,
-							["end_time"] = 1678951914,
-							["healing_from"] = {
-								["Tadibey"] = true,
-							},
-							["heal_enemy_amt"] = 0,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20007] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 77,
-										["targets"] = {
-											["Tadibey"] = 77,
-										},
-										["n_min"] = 77,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 77,
-										["c_max"] = 0,
-										["id"] = 20007,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 77,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["start_time"] = 1678951914,
-							["aID"] = "4465-0416001E",
-							["custom"] = 0,
-							["last_event"] = 1678951910,
-							["tipo"] = 2,
-							["totaldenied"] = 0.006532,
-							["delay"] = 0,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 125,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.003114,
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Tadibey"] = 40,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.003114,
-							["fight_component"] = true,
-							["alternatepower"] = 0.003114,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[59914] = {
-										["total"] = 40,
-										["id"] = 59914,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 40,
-										},
-										["counter"] = 2,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["aID"] = "4465-0416001E",
-							["tipo"] = 3,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["last_event"] = 1678951912,
-							["total"] = 40.003114,
-							["passiveover"] = 0.003114,
-							["serial"] = "Player-4465-0416001E",
-							["received"] = 40.003114,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 125,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8052] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 12,
-										["id"] = 8052,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8045] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 5,
-										["id"] = 8045,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["buff_uptime"] = 18,
-							["aID"] = "4465-0416001E",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[325] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 14,
-										["id"] = 325,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[20007] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 4,
-										["id"] = 20007,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 17,
-							["nome"] = "Tadibey",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[325] = 1,
-								[8045] = 1,
-							},
-							["last_event"] = 1678951914,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["buff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 125,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Tadibey"] = "Player-4465-0416001E",
-				},
-				["raid_roster_indexed"] = {
-					"Tadibey", -- [1]
-				},
-				["CombatStartedAt"] = 505904.621,
-				["tempo_start"] = 1678951900,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 1157,
-				["playing_solo"] = true,
-				["totals"] = {
-					743.985883, -- [1]
-					77, -- [2]
-					{
-						0, -- [1]
-						[0] = 39.99898999999999,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					636, -- [1]
-					77, -- [2]
-					{
-						0, -- [1]
-						[0] = 40,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "08:31:55",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Razormane Seer",
-				["TotalElapsedCombatTime"] = 505897.721,
-				["CombatEndedAt"] = 505897.721,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "08:31:41",
-				["end_time"] = 505897.721,
-				["combat_id"] = 125,
-				["frags"] = {
-					["Razormane Stalker"] = 2,
-					["Razormane Seer"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 505883.487,
-				["contra"] = "Razormane Seer",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Tadibey"] = 77.006532,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Tadibey"] = 636.003652,
-						}, -- [1]
-					},
-				},
-			}, -- [6]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 124,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004914,
-							["damage_from"] = {
-								["Razormane Stalker"] = true,
-							},
-							["targets"] = {
-								["Razormane Stalker"] = 1723,
-							},
-							["end_time"] = 1678951888,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "4465-0416001E",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1723.004914,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "SHAMAN",
-							["dps_started"] = false,
-							["total"] = 1723.004914,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 179,
-										["g_amt"] = 0,
-										["n_max"] = 89,
-										["targets"] = {
-											["Razormane Stalker"] = 740,
-										},
-										["n_dmg"] = 561,
-										["n_min"] = 54,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["ChartData"] = {
-											[26] = 524,
-											[14] = 188,
-											[29] = 613,
-											[8] = 55,
-											[17] = 262,
-											[5] = 55,
-											[20] = 262,
-											[11] = 114,
-											[35] = 686,
-											[23] = 345,
-											[32] = 613,
-										},
-										["total"] = 740,
-										["c_max"] = 179,
-										["DODGE"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["PARRY"] = 1,
-										["c_min"] = 179,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 8,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[26365] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Razormane Stalker"] = 293,
-										},
-										["n_dmg"] = 293,
-										["n_min"] = 36,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["ChartData"] = {
-											[26] = 220,
-											[14] = 109,
-											[29] = 257,
-											[8] = 36,
-											[17] = 146,
-											[5] = 36,
-											[20] = 146,
-											[11] = 73,
-											[35] = 293,
-											[23] = 183,
-											[32] = 257,
-										},
-										["total"] = 293,
-										["c_max"] = 0,
-										["id"] = 26365,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 8,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8045] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 76,
-										["targets"] = {
-											["Razormane Stalker"] = 226,
-										},
-										["n_dmg"] = 226,
-										["n_min"] = 75,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[26] = 151,
-											[14] = 151,
-											[29] = 151,
-											[8] = 76,
-											[17] = 151,
-											[20] = 151,
-											[11] = 76,
-											[35] = 226,
-											[23] = 151,
-											[32] = 151,
-										},
-										["total"] = 226,
-										["c_max"] = 0,
-										["id"] = 8045,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8052] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 23,
-										["g_amt"] = 0,
-										["n_max"] = 58,
-										["targets"] = {
-											["Razormane Stalker"] = 334,
-										},
-										["n_dmg"] = 311,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 13,
-										["ChartData"] = {
-											[26] = 281,
-											[14] = 121,
-											[29] = 296,
-											[8] = 89,
-											[17] = 136,
-											[5] = 73,
-											[20] = 193,
-											[11] = 105,
-											[35] = 334,
-											[23] = 208,
-											[32] = 311,
-										},
-										["total"] = 334,
-										["c_max"] = 23,
-										["id"] = 8052,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 23,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 12,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[10444] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Razormane Stalker"] = 130,
-										},
-										["n_dmg"] = 130,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["ChartData"] = {
-											[26] = 86,
-											[14] = 64,
-											[29] = 108,
-											[8] = 21,
-											[17] = 64,
-											[5] = 21,
-											[20] = 64,
-											[11] = 43,
-											[35] = 130,
-											[23] = 86,
-											[32] = 108,
-										},
-										["total"] = 130,
-										["c_max"] = 0,
-										["id"] = 10444,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951888,
-							["last_dps"] = 44.57853390596465,
-							["start_time"] = 1678951888,
-							["delay"] = 0,
-							["damage_taken"] = 650.004914,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003196,
-							["damage_from"] = {
-								["Doicherinca"] = true,
-								["Tadibey"] = true,
-							},
-							["targets"] = {
-								["Doicherinca"] = 65,
-								["Tadibey"] = 650,
-							},
-							["end_time"] = 1678951888,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3457",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 715.003196,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 715.003196,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Stalker",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 113,
-										["g_amt"] = 0,
-										["n_max"] = 31,
-										["targets"] = {
-											["Doicherinca"] = 65,
-											["Tadibey"] = 650,
-										},
-										["n_dmg"] = 602,
-										["n_min"] = 20,
-										["g_dmg"] = 0,
-										["counter"] = 28,
-										["total"] = 715,
-										["c_max"] = 58,
-										["DODGE"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 2,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 55,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 23,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3457-000012C4FC",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951892,
-							["damage_taken"] = 2778.003196,
-							["start_time"] = 1678951888,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 124,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Tadibey"] = 167,
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "SHAMAN",
-							["totalover"] = 167.003769,
-							["total_without_pet"] = 733.003769,
-							["total"] = 733.003769,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-0416001E",
-							["totalabsorb"] = 0.003769,
-							["last_hps"] = 18.96467799021401,
-							["targets"] = {
-								["Tadibey"] = 733,
-							},
-							["totalover_without_pet"] = 0.003769,
-							["healing_taken"] = 733.003769,
-							["fight_component"] = true,
-							["end_time"] = 1678951888,
-							["healing_from"] = {
-								["Tadibey"] = true,
-							},
-							["heal_enemy_amt"] = 0,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[913] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 312,
-										["targets"] = {
-											["Tadibey"] = 312,
-										},
-										["n_min"] = 312,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 312,
-										["c_max"] = 0,
-										["id"] = 913,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 312,
-										["absorbed"] = 0,
-									},
-									[441] = {
-										["c_amt"] = 1,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Tadibey"] = 167,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Tadibey"] = 331,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 167,
-										["total"] = 331,
-										["c_max"] = 331,
-										["id"] = 441,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 331,
-										["c_curado"] = 331,
-										["totaldenied"] = 0,
-										["n_amt"] = 0,
-										["n_curado"] = 0,
-										["absorbed"] = 0,
-									},
-									[20007] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 90,
-										["targets"] = {
-											["Tadibey"] = 90,
-										},
-										["n_min"] = 90,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 90,
-										["c_max"] = 0,
-										["id"] = 20007,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 90,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["start_time"] = 1678951888,
-							["aID"] = "4465-0416001E",
-							["custom"] = 0,
-							["last_event"] = 1678951883,
-							["tipo"] = 2,
-							["totaldenied"] = 0.003769,
-							["delay"] = 0,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 124,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.003456,
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Tadibey"] = 121,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.003456,
-							["fight_component"] = true,
-							["alternatepower"] = 0.003456,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[59914] = {
-										["total"] = 121,
-										["id"] = 59914,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 121,
-										},
-										["counter"] = 6,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["aID"] = "4465-0416001E",
-							["tipo"] = 3,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["last_event"] = 1678951888,
-							["total"] = 121.003456,
-							["passiveover"] = 0.003456,
-							["serial"] = "Player-4465-0416001E",
-							["received"] = 121.003456,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 124,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8052] = {
-										["appliedamt"] = 3,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 33,
-										["id"] = 8052,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8045] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 13,
-										["id"] = 8045,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["buff_uptime"] = 48,
-							["aID"] = "4465-0416001E",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[325] = {
-										["appliedamt"] = 4,
-										["targets"] = {
-										},
-										["activedamt"] = 4,
-										["uptime"] = 33,
-										["id"] = 325,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[20007] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 15,
-										["id"] = 20007,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 46,
-							["nome"] = "Tadibey",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[8052] = 3,
-								[441] = 1,
-								[8045] = 3,
-								[913] = 1,
-								[325] = 3,
-							},
-							["last_event"] = 1678951888,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["buff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 124,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Tadibey"] = "Player-4465-0416001E",
-				},
-				["raid_roster_indexed"] = {
-					"Tadibey", -- [1]
-				},
-				["CombatStartedAt"] = 505883.221,
-				["tempo_start"] = 1678951850,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 1156,
-				["playing_solo"] = true,
-				["totals"] = {
-					2437.978361, -- [1]
-					733, -- [2]
-					{
-						0, -- [1]
-						[0] = 120.9927729999999,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					1723, -- [1]
-					733, -- [2]
-					{
-						0, -- [1]
-						[0] = 121,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "08:31:29",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Razormane Stalker",
-				["TotalElapsedCombatTime"] = 505872.287,
-				["CombatEndedAt"] = 505872.287,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "08:30:51",
-				["end_time"] = 505872.287,
-				["combat_id"] = 124,
-				["frags"] = {
-					["Grounding Totem"] = 1,
-					["Razormane Seer"] = 1,
-					["Searing Totem IV"] = 1,
-					["Razormane Stalker"] = 4,
-					["Nak"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 505833.636,
-				["contra"] = "Razormane Stalker",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Tadibey"] = 733.003769,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Tadibey"] = 1723.004914,
-						}, -- [1]
-					},
-				},
-			}, -- [7]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 123,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003422,
-							["damage_from"] = {
-								["Razormane Seer"] = true,
-							},
-							["targets"] = {
-								["Razormane Seer"] = 596,
-							},
-							["end_time"] = 1678951840,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "4465-0416001E",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 596.003422,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "SHAMAN",
-							["dps_started"] = false,
-							["total"] = 596.003422,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 142,
-										["g_amt"] = 0,
-										["n_max"] = 68,
-										["targets"] = {
-											["Razormane Seer"] = 264,
-											["Razormane Stalker"] = 0,
-										},
-										["n_dmg"] = 122,
-										["n_min"] = 54,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["ChartData"] = {
-											[5] = 196,
-										},
-										["total"] = 264,
-										["c_max"] = 142,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 142,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[10444] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Razormane Seer"] = 65,
-										},
-										["n_dmg"] = 65,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[5] = 43,
-										},
-										["total"] = 65,
-										["c_max"] = 0,
-										["id"] = 10444,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8045] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 75,
-										["targets"] = {
-											["Razormane Seer"] = 75,
-										},
-										["n_dmg"] = 75,
-										["n_min"] = 75,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 75,
-										["c_max"] = 0,
-										["id"] = 8045,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8052] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 87,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Razormane Seer"] = 119,
-										},
-										["n_dmg"] = 32,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[5] = 119,
-										},
-										["total"] = 119,
-										["c_max"] = 87,
-										["id"] = 8052,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 87,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26365] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Razormane Seer"] = 73,
-										},
-										["n_dmg"] = 73,
-										["n_min"] = 36,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["ChartData"] = {
-											[5] = 73,
-										},
-										["total"] = 73,
-										["c_max"] = 0,
-										["id"] = 26365,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951850,
-							["last_dps"] = 76.56775719439118,
-							["start_time"] = 1678951840,
-							["delay"] = 0,
-							["damage_taken"] = 85.003422,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003139,
-							["damage_from"] = {
-								["Tadibey"] = true,
-							},
-							["targets"] = {
-								["Tadibey"] = 85,
-							},
-							["end_time"] = 1678951840,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3458",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 85.003139,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 85.003139,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Seer",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 29,
-										["targets"] = {
-											["Tadibey"] = 85,
-										},
-										["n_dmg"] = 85,
-										["n_min"] = 27,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 85,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3458-0000927309",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951838,
-							["damage_taken"] = 596.003139,
-							["start_time"] = 1678951840,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 123,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 123,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.004702,
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Tadibey"] = 43,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.004702,
-							["alternatepower"] = 0.004702,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[59914] = {
-										["total"] = 43,
-										["id"] = 59914,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 43,
-										},
-										["counter"] = 2,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["aID"] = "4465-0416001E",
-							["tipo"] = 3,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["last_event"] = 1678951839,
-							["total"] = 43.004702,
-							["passiveover"] = 0.004702,
-							["serial"] = "Player-4465-0416001E",
-							["received"] = 43.004702,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 123,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8052] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 7,
-										["id"] = 8052,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8045] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 1,
-										["id"] = 8045,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["buff_uptime"] = 8,
-							["aID"] = "4465-0416001E",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[325] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 8,
-										["id"] = 325,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 8,
-							["nome"] = "Tadibey",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[325] = 1,
-								[8045] = 1,
-							},
-							["last_event"] = 1678951840,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["buff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 123,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Tadibey"] = "Player-4465-0416001E",
-				},
-				["raid_roster_indexed"] = {
-					"Tadibey", -- [1]
-				},
-				["CombatStartedAt"] = 505833.636,
-				["tempo_start"] = 1678951832,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 1155,
-				["playing_solo"] = true,
-				["totals"] = {
-					680.993882, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 42.995063,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					596, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 43,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "08:30:41",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Razormane Seer",
-				["TotalElapsedCombatTime"] = 505823.419,
-				["CombatEndedAt"] = 505823.419,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "08:30:33",
-				["end_time"] = 505823.419,
-				["combat_id"] = 123,
-				["frags"] = {
-					["Razormane Seer"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 505815.635,
-				["contra"] = "Razormane Seer",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Tadibey"] = 596.003422,
-						}, -- [1]
-					},
-				},
-			}, -- [8]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 122,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004317,
-							["damage_from"] = {
-								["Razormane Stalker"] = true,
-								["Razormane Warfrenzy"] = true,
-							},
-							["targets"] = {
-								["Razormane Warfrenzy"] = 736,
-								["Razormane Stalker"] = 579,
-							},
-							["end_time"] = 1678951818,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "4465-0416001E",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1315.004317,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "SHAMAN",
-							["dps_started"] = false,
-							["total"] = 1315.004317,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 115,
-										["g_amt"] = 0,
-										["n_max"] = 69,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 303,
-											["Razormane Stalker"] = 189,
-										},
-										["n_dmg"] = 377,
-										["n_min"] = 55,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["ChartData"] = {
-											[11] = 303,
-											[17] = 427,
-											[8] = 239,
-											[14] = 303,
-											[23] = 492,
-											[26] = 492,
-											[5] = 124,
-											[20] = 492,
-										},
-										["total"] = 492,
-										["c_max"] = 115,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 115,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[10444] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 65,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 87,
-											["Razormane Stalker"] = 43,
-										},
-										["n_dmg"] = 65,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["ChartData"] = {
-											[11] = 87,
-											[17] = 130,
-											[8] = 54,
-											[14] = 87,
-											[23] = 130,
-											[26] = 130,
-											[5] = 32,
-											[20] = 130,
-										},
-										["total"] = 130,
-										["c_max"] = 33,
-										["id"] = 10444,
-										["r_dmg"] = 0,
-										["MISS"] = 2,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 32,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8045] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 226,
-										["g_amt"] = 0,
-										["n_max"] = 75,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 190,
-											["Razormane Stalker"] = 111,
-										},
-										["n_dmg"] = 75,
-										["n_min"] = 75,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[11] = 115,
-											[17] = 190,
-											[8] = 115,
-											[14] = 190,
-											[26] = 301,
-											[23] = 190,
-											[20] = 190,
-										},
-										["total"] = 301,
-										["c_max"] = 115,
-										["id"] = 8045,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 111,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8052] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 58,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 119,
-											["Razormane Stalker"] = 89,
-										},
-										["n_dmg"] = 208,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["ChartData"] = {
-											[11] = 119,
-											[17] = 119,
-											[8] = 103,
-											[14] = 119,
-											[23] = 193,
-											[26] = 208,
-											[5] = 73,
-											[20] = 177,
-										},
-										["total"] = 208,
-										["c_max"] = 0,
-										["id"] = 8052,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 8,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26365] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 37,
-											["Razormane Stalker"] = 147,
-										},
-										["n_dmg"] = 184,
-										["n_min"] = 36,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["ChartData"] = {
-											[11] = 37,
-											[17] = 74,
-											[14] = 74,
-											[26] = 184,
-											[23] = 148,
-											[20] = 111,
-										},
-										["total"] = 184,
-										["c_max"] = 0,
-										["id"] = 26365,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951816,
-							["last_dps"] = 50.22167419032917,
-							["start_time"] = 1678951818,
-							["delay"] = 0,
-							["damage_taken"] = 541.004317,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001862,
-							["damage_from"] = {
-								["Tadibey"] = true,
-							},
-							["targets"] = {
-								["Tadibey"] = 142,
-							},
-							["end_time"] = 1678951818,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3459",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 142.001862,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 142.001862,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Warfrenzy",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 20,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Tadibey"] = 142,
-										},
-										["n_dmg"] = 122,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 13,
-										["total"] = 142,
-										["c_max"] = 20,
-										["MISS"] = 3,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 2,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 20,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3459-0000127543",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951800,
-							["damage_taken"] = 736.0018620000001,
-							["start_time"] = 1678951818,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.008459,
-							["damage_from"] = {
-								["Tadibey"] = true,
-							},
-							["targets"] = {
-								["Tadibey"] = 399,
-							},
-							["end_time"] = 1678951818,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3457",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 399.008459,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 399.008459,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Stalker",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 53,
-										["g_amt"] = 0,
-										["n_max"] = 31,
-										["targets"] = {
-											["Tadibey"] = 399,
-										},
-										["n_dmg"] = 346,
-										["n_min"] = 24,
-										["g_dmg"] = 0,
-										["counter"] = 13,
-										["total"] = 399,
-										["c_max"] = 53,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 53,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 12,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3457-000012BA48",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951816,
-							["damage_taken"] = 579.008459,
-							["start_time"] = 1678951818,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 122,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 122,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.005353,
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Tadibey"] = 188,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.005353,
-							["alternatepower"] = 0.005353,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[52128] = {
-										["total"] = 104,
-										["id"] = 52128,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 104,
-										},
-										["counter"] = 2,
-									},
-									[59914] = {
-										["total"] = 84,
-										["id"] = 59914,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 84,
-										},
-										["counter"] = 4,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["aID"] = "4465-0416001E",
-							["tipo"] = 3,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["last_event"] = 1678951816,
-							["total"] = 188.005353,
-							["passiveover"] = 0.005353,
-							["serial"] = "Player-4465-0416001E",
-							["received"] = 188.005353,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 122,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8052] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 20,
-										["id"] = 8052,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8045] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 6,
-										["id"] = 8045,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["buff_uptime"] = 28,
-							["aID"] = "4465-0416001E",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[52127] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 7,
-										["id"] = 52127,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[325] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 21,
-										["id"] = 325,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 26,
-							["nome"] = "Tadibey",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[8045] = 3,
-								[325] = 2,
-								[8052] = 1,
-							},
-							["last_event"] = 1678951818,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["buff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 122,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Tadibey"] = "Player-4465-0416001E",
-				},
-				["raid_roster_indexed"] = {
-					"Tadibey", -- [1]
-				},
-				["CombatStartedAt"] = 505815.336,
-				["tempo_start"] = 1678951789,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 1154,
-				["playing_solo"] = true,
-				["totals"] = {
-					1856, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 188,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					1315, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 188,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "08:30:18",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Razormane Warfrenzy",
-				["TotalElapsedCombatTime"] = 505800.385,
-				["CombatEndedAt"] = 505800.385,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "08:29:50",
-				["end_time"] = 505800.385,
-				["combat_id"] = 122,
-				["frags"] = {
-					["Razormane Warfrenzy"] = 1,
-					["Razormane Stalker"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 505773.218,
-				["contra"] = "Razormane Warfrenzy",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Tadibey"] = 1315.004317,
-						}, -- [1]
-					},
-				},
-			}, -- [9]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 121,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006841,
-							["damage_from"] = {
-								["Razormane Seer"] = true,
-							},
-							["targets"] = {
-								["Razormane Seer"] = 553,
-							},
-							["end_time"] = 1678951780,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "4465-0416001E",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 553.006841,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "SHAMAN",
-							["dps_started"] = false,
-							["total"] = 553.006841,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 62,
-										["targets"] = {
-											["Razormane Seer"] = 233,
-										},
-										["n_dmg"] = 233,
-										["n_min"] = 51,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["ChartData"] = {
-											[11] = 233,
-											[6] = 113,
-											[9] = 173,
-										},
-										["total"] = 233,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[10444] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Razormane Seer"] = 86,
-										},
-										["n_dmg"] = 86,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["ChartData"] = {
-											[11] = 86,
-											[6] = 43,
-											[9] = 64,
-										},
-										["total"] = 86,
-										["c_max"] = 0,
-										["id"] = 10444,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8045] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 78,
-										["targets"] = {
-											["Razormane Seer"] = 78,
-										},
-										["n_dmg"] = 78,
-										["n_min"] = 78,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["ChartData"] = {
-											[9] = 78,
-											[11] = 78,
-										},
-										["total"] = 78,
-										["c_max"] = 0,
-										["id"] = 8045,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8052] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 58,
-										["targets"] = {
-											["Razormane Seer"] = 119,
-										},
-										["n_dmg"] = 119,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["ChartData"] = {
-											[11] = 119,
-											[6] = 88,
-											[9] = 104,
-										},
-										["total"] = 119,
-										["c_max"] = 0,
-										["id"] = 8052,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26365] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Razormane Seer"] = 37,
-										},
-										["n_dmg"] = 37,
-										["n_min"] = 37,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["ChartData"] = {
-											[11] = 37,
-											[6] = 37,
-											[9] = 37,
-										},
-										["total"] = 37,
-										["c_max"] = 0,
-										["id"] = 26365,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951780,
-							["last_dps"] = 45.76734594063764,
-							["start_time"] = 1678951780,
-							["delay"] = 0,
-							["damage_taken"] = 102.006841,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00641,
-							["damage_from"] = {
-								["Tadibey"] = true,
-							},
-							["targets"] = {
-								["Tadibey"] = 102,
-							},
-							["end_time"] = 1678951780,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3458",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 102.00641,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 102.00641,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Seer",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Tadibey"] = 102,
-										},
-										["n_dmg"] = 102,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 102,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 3,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3458-000012BD63",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951779,
-							["damage_taken"] = 553.00641,
-							["start_time"] = 1678951780,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 121,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 121,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.002999,
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Tadibey"] = 145,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.002999,
-							["alternatepower"] = 0.002999,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[52128] = {
-										["total"] = 104,
-										["id"] = 52128,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 104,
-										},
-										["counter"] = 2,
-									},
-									[59914] = {
-										["total"] = 41,
-										["id"] = 59914,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 41,
-										},
-										["counter"] = 2,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["aID"] = "4465-0416001E",
-							["tipo"] = 3,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["last_event"] = 1678951780,
-							["total"] = 145.002999,
-							["passiveover"] = 0.002999,
-							["serial"] = "Player-4465-0416001E",
-							["received"] = 145.002999,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 121,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8052] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 12,
-										["id"] = 8052,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8045] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 6,
-										["id"] = 8045,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["buff_uptime"] = 11,
-							["aID"] = "4465-0416001E",
-							["interrupt_spells"] = {
-								["_ActorTable"] = {
-									[57994] = {
-										["id"] = 57994,
-										["interrompeu_oque"] = {
-											[6274] = 1,
-										},
-										["targets"] = {
-											["Razormane Seer"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[325] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 0,
-										["id"] = 325,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[52127] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 11,
-										["id"] = 52127,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["interrompeu_oque"] = {
-								[6274] = 1,
-							},
-							["debuff_uptime"] = 18,
-							["pets"] = {
-							},
-							["interrupt"] = 1.004511,
-							["nome"] = "Tadibey",
-							["interrupt_targets"] = {
-								["Razormane Seer"] = 1,
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[52127] = 1,
-								[8045] = 1,
-								[57994] = 1,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
-							["last_event"] = 1678951780,
-							["serial"] = "Player-4465-0416001E",
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 121,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Tadibey"] = "Player-4465-0416001E",
-				},
-				["raid_roster_indexed"] = {
-					"Tadibey", -- [1]
-				},
-				["CombatStartedAt"] = 505772.918,
-				["tempo_start"] = 1678951768,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 1153,
-				["playing_solo"] = true,
-				["totals"] = {
-					655, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 145,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					553, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 145,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "08:29:41",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Razormane Seer",
-				["TotalElapsedCombatTime"] = 505764.035,
-				["CombatEndedAt"] = 505764.035,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "08:29:29",
-				["end_time"] = 505764.035,
-				["combat_id"] = 121,
-				["frags"] = {
-					["Razormane Seer"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 505751.451,
-				["contra"] = "Razormane Seer",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Tadibey"] = 553.006841,
-						}, -- [1]
-					},
-				},
-			}, -- [10]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 120,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007535,
-							["damage_from"] = {
-								["Razormane Seer"] = true,
-							},
-							["targets"] = {
-								["Razormane Seer"] = 595,
-							},
-							["end_time"] = 1678951760,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "4465-0416001E",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 595.007535,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "SHAMAN",
-							["dps_started"] = false,
-							["total"] = 595.007535,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 2,
-										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 71,
-										["targets"] = {
-											["Razormane Seer"] = 225,
-										},
-										["n_dmg"] = 158,
-										["n_min"] = 43,
-										["g_dmg"] = 67,
-										["counter"] = 4,
-										["ChartData"] = {
-											[5] = 111,
-											[8] = 225,
-										},
-										["total"] = 225,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 87,
-										["r_amt"] = 0,
-									}, -- [1]
-									[10444] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 65,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Razormane Seer"] = 109,
-										},
-										["n_dmg"] = 44,
-										["n_min"] = 22,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["ChartData"] = {
-											[5] = 54,
-											[8] = 109,
-										},
-										["total"] = 109,
-										["c_max"] = 33,
-										["id"] = 10444,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 32,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8045] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 74,
-										["targets"] = {
-											["Razormane Seer"] = 74,
-										},
-										["n_dmg"] = 74,
-										["n_min"] = 74,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["ChartData"] = {
-											[8] = 74,
-										},
-										["total"] = 74,
-										["c_max"] = 0,
-										["id"] = 8045,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8052] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 23,
-										["g_amt"] = 0,
-										["n_max"] = 58,
-										["targets"] = {
-											["Razormane Seer"] = 113,
-										},
-										["n_dmg"] = 90,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["ChartData"] = {
-											[5] = 90,
-											[8] = 113,
-										},
-										["total"] = 113,
-										["c_max"] = 23,
-										["id"] = 8052,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 23,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26365] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Razormane Seer"] = 74,
-										},
-										["n_dmg"] = 74,
-										["n_min"] = 37,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["ChartData"] = {
-											[5] = 74,
-											[8] = 74,
-										},
-										["total"] = 74,
-										["c_max"] = 0,
-										["id"] = 26365,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951760,
-							["last_dps"] = 66.35525092000913,
-							["start_time"] = 1678951760,
-							["delay"] = 0,
-							["damage_taken"] = 81.007535,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00378,
-							["damage_from"] = {
-								["Tadibey"] = true,
-							},
-							["targets"] = {
-								["Tadibey"] = 81,
-							},
-							["end_time"] = 1678951760,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3458",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 81.00378,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 81.00378,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Seer",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Tadibey"] = 81,
-										},
-										["n_dmg"] = 81,
-										["n_min"] = 26,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 81,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3458-000012C47C",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951759,
-							["damage_taken"] = 595.00378,
-							["start_time"] = 1678951760,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 120,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 120,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.003445,
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Tadibey"] = 40,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.003445,
-							["alternatepower"] = 0.003445,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[59914] = {
-										["total"] = 40,
-										["id"] = 59914,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 40,
-										},
-										["counter"] = 2,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["aID"] = "4465-0416001E",
-							["tipo"] = 3,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["last_event"] = 1678951760,
-							["total"] = 40.003445,
-							["passiveover"] = 0.003445,
-							["serial"] = "Player-4465-0416001E",
-							["received"] = 40.003445,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 120,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8052] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 9,
-										["id"] = 8052,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8045] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 3,
-										["id"] = 8045,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["buff_uptime"] = 9,
-							["aID"] = "4465-0416001E",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[325] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 9,
-										["id"] = 325,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 12,
-							["nome"] = "Tadibey",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[8045] = 1,
-							},
-							["last_event"] = 1678951760,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["buff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 120,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Tadibey"] = "Player-4465-0416001E",
-				},
-				["raid_roster_indexed"] = {
-					"Tadibey", -- [1]
-				},
-				["CombatStartedAt"] = 505751.151,
-				["tempo_start"] = 1678951751,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 1152,
-				["playing_solo"] = true,
-				["totals"] = {
-					676, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 40,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					595, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 40,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "08:29:21",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Razormane Seer",
-				["TotalElapsedCombatTime"] = 505744.267,
-				["CombatEndedAt"] = 505744.267,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "08:29:12",
-				["end_time"] = 505744.267,
-				["combat_id"] = 120,
-				["frags"] = {
-					["Razormane Seer"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 505734.534,
-				["contra"] = "Razormane Seer",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Tadibey"] = 595.007535,
-						}, -- [1]
-					},
-				},
-			}, -- [11]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 119,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008527,
-							["damage_from"] = {
-								["Razormane Warfrenzy"] = true,
-								["Razormane Seer"] = true,
-							},
-							["targets"] = {
-								["Razormane Warfrenzy"] = 734,
-								["Razormane Seer"] = 567,
-							},
-							["end_time"] = 1678951740,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "4465-0416001E",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1301.008527,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "SHAMAN",
-							["dps_started"] = false,
-							["total"] = 1301.008527,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 69,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 306,
-											["Razormane Seer"] = 248,
-										},
-										["n_dmg"] = 554,
-										["n_min"] = 52,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["ChartData"] = {
-											[11] = 189,
-											[17] = 306,
-											[8] = 131,
-											[14] = 254,
-											[23] = 485,
-											[26] = 485,
-											[5] = 68,
-											[20] = 365,
-										},
-										["total"] = 554,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["PARRY"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 9,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[10444] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 33,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 118,
-											["Razormane Seer"] = 65,
-										},
-										["n_dmg"] = 150,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["ChartData"] = {
-											[11] = 66,
-											[17] = 118,
-											[8] = 44,
-											[14] = 85,
-											[23] = 183,
-											[26] = 183,
-											[5] = 22,
-											[20] = 140,
-										},
-										["total"] = 183,
-										["c_max"] = 33,
-										["id"] = 10444,
-										["r_dmg"] = 19,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 33,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
-									[8045] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 77,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 69,
-											["Razormane Seer"] = 77,
-										},
-										["n_dmg"] = 146,
-										["n_min"] = 69,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[11] = 69,
-											[17] = 69,
-											[8] = 69,
-											[14] = 69,
-											[26] = 146,
-											[23] = 69,
-											[20] = 69,
-										},
-										["total"] = 146,
-										["c_max"] = 0,
-										["id"] = 8045,
-										["r_dmg"] = 69,
-										["MISS"] = 1,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
-									[8052] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 58,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 134,
-											["Razormane Seer"] = 103,
-										},
-										["n_dmg"] = 237,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["ChartData"] = {
-											[11] = 119,
-											[17] = 134,
-											[8] = 104,
-											[14] = 134,
-											[23] = 207,
-											[26] = 222,
-											[5] = 88,
-											[20] = 191,
-										},
-										["total"] = 237,
-										["c_max"] = 0,
-										["id"] = 8052,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 10,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26365] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 107,
-											["Razormane Seer"] = 74,
-										},
-										["n_dmg"] = 181,
-										["n_min"] = 33,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["ChartData"] = {
-											[11] = 107,
-											[17] = 144,
-											[8] = 70,
-											[14] = 144,
-											[23] = 181,
-											[26] = 181,
-											[5] = 37,
-											[20] = 181,
-										},
-										["total"] = 181,
-										["c_max"] = 0,
-										["id"] = 26365,
-										["r_dmg"] = 33,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951739,
-							["last_dps"] = 46.13341821211861,
-							["start_time"] = 1678951740,
-							["delay"] = 0,
-							["damage_taken"] = 351.008527,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008122,
-							["damage_from"] = {
-								["Tadibey"] = true,
-							},
-							["targets"] = {
-								["Tadibey"] = 192,
-							},
-							["end_time"] = 1678951740,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3459",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 192.008122,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 192.008122,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Warfrenzy",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Tadibey"] = 192,
-										},
-										["n_dmg"] = 192,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 16,
-										["total"] = 192,
-										["c_max"] = 0,
-										["MISS"] = 2,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 2,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 12,
-										["b_dmg"] = 4,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3459-00001281A4",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951725,
-							["damage_taken"] = 734.008122,
-							["start_time"] = 1678951740,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.008188,
-							["damage_from"] = {
-								["Tadibey"] = true,
-							},
-							["targets"] = {
-								["Tadibey"] = 159,
-							},
-							["end_time"] = 1678951740,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3458",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 159.008188,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 159.008188,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Seer",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Tadibey"] = 159,
-										},
-										["n_dmg"] = 159,
-										["n_min"] = 25,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 159,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3458-0000126546",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951736,
-							["damage_taken"] = 567.008188,
-							["start_time"] = 1678951740,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 119,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 119,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.002781,
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Tadibey"] = 83,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.002781,
-							["alternatepower"] = 0.002781,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[59914] = {
-										["total"] = 83,
-										["id"] = 59914,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 83,
-										},
-										["counter"] = 4,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["aID"] = "4465-0416001E",
-							["tipo"] = 3,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["last_event"] = 1678951739,
-							["total"] = 83.002781,
-							["passiveover"] = 0.002781,
-							["serial"] = "Player-4465-0416001E",
-							["received"] = 83.002781,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 119,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8052] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 25,
-										["id"] = 8052,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8045] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 11,
-										["id"] = 8045,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["buff_uptime"] = 26,
-							["aID"] = "4465-0416001E",
-							["interrupt_spells"] = {
-								["_ActorTable"] = {
-									[57994] = {
-										["id"] = 57994,
-										["interrompeu_oque"] = {
-											[6274] = 1,
-										},
-										["targets"] = {
-											["Razormane Seer"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[325] = {
-										["appliedamt"] = 3,
-										["targets"] = {
-										},
-										["activedamt"] = 3,
-										["uptime"] = 26,
-										["id"] = 325,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["interrompeu_oque"] = {
-								[6274] = 1,
-							},
-							["debuff_uptime"] = 36,
-							["pets"] = {
-							},
-							["interrupt"] = 1.008604,
-							["nome"] = "Tadibey",
-							["interrupt_targets"] = {
-								["Razormane Seer"] = 1,
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[8045] = 3,
-								[57994] = 1,
-								[8052] = 1,
-								[325] = 2,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
-							["last_event"] = 1678951740,
-							["serial"] = "Player-4465-0416001E",
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 119,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Tadibey"] = "Player-4465-0416001E",
-				},
-				["raid_roster_indexed"] = {
-					"Tadibey", -- [1]
-				},
-				["CombatStartedAt"] = 505734.234,
-				["tempo_start"] = 1678951711,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 1151,
-				["playing_solo"] = true,
-				["totals"] = {
-					1652, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 83,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					1301, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 83,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "08:29:01",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Razormane Warfrenzy",
-				["TotalElapsedCombatTime"] = 505724.134,
-				["CombatEndedAt"] = 505724.134,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "08:28:32",
-				["end_time"] = 505724.134,
-				["combat_id"] = 119,
-				["frags"] = {
-					["Razormane Warfrenzy"] = 1,
-					["Razormane Seer"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 505695.233,
-				["contra"] = "Razormane Warfrenzy",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Tadibey"] = 1301.008527,
-						}, -- [1]
-					},
-				},
-			}, -- [12]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 118,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.00585,
-							["damage_from"] = {
-								["Razormane Warfrenzy"] = true,
-							},
-							["targets"] = {
-								["Razormane Warfrenzy"] = 728,
-							},
-							["end_time"] = 1678951699,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "4465-0416001E",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 728.00585,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "SHAMAN",
-							["dps_started"] = false,
-							["total"] = 728.00585,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 166,
-										["g_amt"] = 0,
-										["n_max"] = 76,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 388,
-										},
-										["n_dmg"] = 222,
-										["n_min"] = 71,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["ChartData"] = {
-											[5] = 241,
-											[9] = 312,
-										},
-										["total"] = 388,
-										["c_max"] = 166,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 166,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[8052] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 23,
-										["g_amt"] = 0,
-										["n_max"] = 58,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 110,
-										},
-										["n_dmg"] = 87,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["ChartData"] = {
-											[5] = 94,
-											[9] = 110,
-										},
-										["total"] = 110,
-										["c_max"] = 23,
-										["id"] = 8052,
-										["r_dmg"] = 13,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 23,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
-									[8045] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 77,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 77,
-										},
-										["n_dmg"] = 77,
-										["n_min"] = 77,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["ChartData"] = {
-											[9] = 77,
-										},
-										["total"] = 77,
-										["c_max"] = 0,
-										["id"] = 8045,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26365] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 36,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 69,
-										},
-										["n_dmg"] = 69,
-										["n_min"] = 33,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["ChartData"] = {
-											[5] = 69,
-											[9] = 69,
-										},
-										["total"] = 69,
-										["c_max"] = 0,
-										["id"] = 26365,
-										["r_dmg"] = 33,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
-									[10444] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 84,
-										},
-										["n_dmg"] = 84,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["ChartData"] = {
-											[5] = 43,
-											[9] = 62,
-										},
-										["total"] = 84,
-										["c_max"] = 0,
-										["id"] = 10444,
-										["r_dmg"] = 19,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951698,
-							["last_dps"] = 74.02194712788587,
-							["start_time"] = 1678951699,
-							["delay"] = 0,
-							["damage_taken"] = 144.00585,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008202,
-							["damage_from"] = {
-								["Tadibey"] = true,
-							},
-							["targets"] = {
-								["Tadibey"] = 144,
-							},
-							["end_time"] = 1678951699,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3459",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 144.008202,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 144.008202,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Warfrenzy",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 40,
-										["g_amt"] = 0,
-										["n_max"] = 23,
-										["targets"] = {
-											["Tadibey"] = 144,
-										},
-										["n_dmg"] = 104,
-										["n_min"] = 11,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 144,
-										["c_max"] = 40,
-										["MISS"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 40,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3459-000012A491",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951695,
-							["damage_taken"] = 728.008202,
-							["start_time"] = 1678951699,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 118,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.002904,
-							["total_without_pet"] = 77.002904,
-							["total"] = 77.002904,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-0416001E",
-							["totalabsorb"] = 0.002904,
-							["last_hps"] = 52.49005044293116,
-							["targets"] = {
-								["Tadibey"] = 77,
-							},
-							["totalover_without_pet"] = 0.002904,
-							["healing_taken"] = 77.002904,
-							["fight_component"] = true,
-							["end_time"] = 1678951699,
-							["healing_from"] = {
-								["Tadibey"] = true,
-							},
-							["heal_enemy_amt"] = 0,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20007] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 77,
-										["targets"] = {
-											["Tadibey"] = 77,
-										},
-										["n_min"] = 77,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 77,
-										["c_max"] = 0,
-										["id"] = 20007,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 77,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["start_time"] = 1678951699,
-							["aID"] = "4465-0416001E",
-							["custom"] = 0,
-							["last_event"] = 1678951690,
-							["tipo"] = 2,
-							["totaldenied"] = 0.002904,
-							["delay"] = 0,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 118,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.004787,
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Tadibey"] = 40,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.004787,
-							["fight_component"] = true,
-							["alternatepower"] = 0.004787,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[59914] = {
-										["total"] = 40,
-										["id"] = 59914,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 40,
-										},
-										["counter"] = 2,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["aID"] = "4465-0416001E",
-							["tipo"] = 3,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["last_event"] = 1678951698,
-							["total"] = 40.004787,
-							["passiveover"] = 0.004787,
-							["serial"] = "Player-4465-0416001E",
-							["received"] = 40.004787,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 118,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8052] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 10,
-										["id"] = 8052,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8045] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 4,
-										["id"] = 8045,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["buff_uptime"] = 21,
-							["aID"] = "4465-0416001E",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[325] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 10,
-										["id"] = 325,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[20007] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 11,
-										["id"] = 20007,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 14,
-							["nome"] = "Tadibey",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[325] = 1,
-								[8045] = 1,
-							},
-							["last_event"] = 1678951699,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["buff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 118,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Tadibey"] = "Player-4465-0416001E",
-				},
-				["raid_roster_indexed"] = {
-					"Tadibey", -- [1]
-				},
-				["CombatStartedAt"] = 505695,
-				["tempo_start"] = 1678951688,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 1150,
-				["playing_solo"] = true,
-				["totals"] = {
-					872, -- [1]
-					77, -- [2]
-					{
-						0, -- [1]
-						[0] = 40,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					728, -- [1]
-					77, -- [2]
-					{
-						0, -- [1]
-						[0] = 40,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "08:28:20",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Razormane Warfrenzy",
-				["TotalElapsedCombatTime"] = 505682.884,
-				["CombatEndedAt"] = 505682.884,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "08:28:09",
-				["end_time"] = 505682.884,
-				["combat_id"] = 118,
-				["frags"] = {
-					["Razormane Warfrenzy"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 505672.166,
-				["contra"] = "Razormane Warfrenzy",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Tadibey"] = 77.002904,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Tadibey"] = 728.00585,
-						}, -- [1]
-					},
-				},
-			}, -- [13]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 117,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008948,
-							["damage_from"] = {
-								["Razormane Seer"] = true,
-							},
-							["targets"] = {
-								["Razormane Seer"] = 610,
-							},
-							["end_time"] = 1678951683,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "4465-0416001E",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 610.008948,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "SHAMAN",
-							["dps_started"] = false,
-							["total"] = 610.008948,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 71,
-										["targets"] = {
-											["Razormane Seer"] = 260,
-										},
-										["n_dmg"] = 260,
-										["n_min"] = 54,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["ChartData"] = {
-											[5] = 119,
-											[8] = 260,
-										},
-										["total"] = 260,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[10444] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Razormane Seer"] = 65,
-										},
-										["n_dmg"] = 65,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[5] = 43,
-											[8] = 65,
-										},
-										["total"] = 65,
-										["c_max"] = 0,
-										["id"] = 10444,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8045] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 78,
-										["targets"] = {
-											["Razormane Seer"] = 78,
-										},
-										["n_dmg"] = 78,
-										["n_min"] = 78,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["ChartData"] = {
-											[8] = 78,
-										},
-										["total"] = 78,
-										["c_max"] = 0,
-										["id"] = 8045,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8052] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 87,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Razormane Seer"] = 133,
-										},
-										["n_dmg"] = 46,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["ChartData"] = {
-											[5] = 118,
-											[8] = 133,
-										},
-										["total"] = 133,
-										["c_max"] = 87,
-										["id"] = 8052,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 87,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26365] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Razormane Seer"] = 74,
-										},
-										["n_dmg"] = 74,
-										["n_min"] = 37,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["ChartData"] = {
-											[5] = 74,
-											[8] = 74,
-										},
-										["total"] = 74,
-										["c_max"] = 0,
-										["id"] = 26365,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951682,
-							["last_dps"] = 67.53115775493004,
-							["start_time"] = 1678951683,
-							["delay"] = 0,
-							["damage_taken"] = 104.008948,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007255,
-							["damage_from"] = {
-								["Tadibey"] = true,
-							},
-							["targets"] = {
-								["Tadibey"] = 104,
-							},
-							["end_time"] = 1678951683,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3458",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 104.007255,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 104.007255,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Seer",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 29,
-										["targets"] = {
-											["Tadibey"] = 104,
-										},
-										["n_dmg"] = 104,
-										["n_min"] = 24,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 104,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3458-000192C47C",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951681,
-							["damage_taken"] = 610.007255,
-							["start_time"] = 1678951683,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 117,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.006142,
-							["total_without_pet"] = 114.006142,
-							["total"] = 114.006142,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-0416001E",
-							["totalabsorb"] = 0.006142,
-							["last_hps"] = 31.09823840675793,
-							["targets"] = {
-								["Tadibey"] = 114,
-							},
-							["totalover_without_pet"] = 0.006142,
-							["healing_taken"] = 114.006142,
-							["fight_component"] = true,
-							["end_time"] = 1678951683,
-							["healing_from"] = {
-								["Tadibey"] = true,
-							},
-							["heal_enemy_amt"] = 0,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20007] = {
-										["c_amt"] = 1,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Tadibey"] = 114,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 114,
-										["c_max"] = 114,
-										["id"] = 20007,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 114,
-										["c_curado"] = 114,
-										["totaldenied"] = 0,
-										["n_amt"] = 0,
-										["n_curado"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["start_time"] = 1678951683,
-							["aID"] = "4465-0416001E",
-							["custom"] = 0,
-							["last_event"] = 1678951677,
-							["tipo"] = 2,
-							["totaldenied"] = 0.006142,
-							["delay"] = 0,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 117,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.008134,
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Tadibey"] = 40,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.008134,
-							["fight_component"] = true,
-							["alternatepower"] = 0.008134,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[59914] = {
-										["total"] = 40,
-										["id"] = 59914,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 40,
-										},
-										["counter"] = 2,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["aID"] = "4465-0416001E",
-							["tipo"] = 3,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["last_event"] = 1678951682,
-							["total"] = 40.008134,
-							["passiveover"] = 0.008134,
-							["serial"] = "Player-4465-0416001E",
-							["received"] = 40.008134,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 117,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8052] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 9,
-										["id"] = 8052,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8045] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 2,
-										["id"] = 8045,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["buff_uptime"] = 16,
-							["aID"] = "4465-0416001E",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[325] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 10,
-										["id"] = 325,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[20007] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 6,
-										["id"] = 20007,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 11,
-							["nome"] = "Tadibey",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[8045] = 1,
-							},
-							["last_event"] = 1678951683,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["buff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 117,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Tadibey"] = "Player-4465-0416001E",
-				},
-				["raid_roster_indexed"] = {
-					"Tadibey", -- [1]
-				},
-				["CombatStartedAt"] = 505671.566,
-				["tempo_start"] = 1678951673,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 1149,
-				["playing_solo"] = true,
-				["totals"] = {
-					714, -- [1]
-					114, -- [2]
-					{
-						0, -- [1]
-						[0] = 40,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					610, -- [1]
-					114, -- [2]
-					{
-						0, -- [1]
-						[0] = 40,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "08:28:04",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Razormane Seer",
-				["TotalElapsedCombatTime"] = 505666.682,
-				["CombatEndedAt"] = 505666.682,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "08:27:54",
-				["end_time"] = 505666.682,
-				["combat_id"] = 117,
-				["frags"] = {
-					["Razormane Seer"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 505657.25,
-				["contra"] = "Razormane Seer",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Tadibey"] = 114.006142,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Tadibey"] = 610.008948,
-						}, -- [1]
-					},
-				},
-			}, -- [14]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 116,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004633,
-							["damage_from"] = {
-								["Razormane Warfrenzy"] = true,
-							},
-							["targets"] = {
-								["Razormane Warfrenzy"] = 743,
-							},
-							["end_time"] = 1678951659,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "4465-0416001E",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 743.004633,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "SHAMAN",
-							["dps_started"] = false,
-							["total"] = 743.004633,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 67,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 409,
-										},
-										["n_dmg"] = 409,
-										["n_min"] = 54,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["ChartData"] = {
-											[11] = 246,
-											[17] = 409,
-											[8] = 185,
-											[14] = 300,
-											[5] = 118,
-										},
-										["total"] = 409,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[8045] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 75,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 75,
-										},
-										["n_dmg"] = 75,
-										["n_min"] = 75,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["ChartData"] = {
-											[11] = 0,
-											[14] = 75,
-											[17] = 75,
-											[8] = 0,
-										},
-										["total"] = 75,
-										["c_max"] = 0,
-										["id"] = 8045,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[10444] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 33,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 118,
-										},
-										["n_dmg"] = 85,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["ChartData"] = {
-											[11] = 77,
-											[17] = 118,
-											[8] = 55,
-											[14] = 96,
-											[5] = 33,
-										},
-										["total"] = 118,
-										["c_max"] = 33,
-										["id"] = 10444,
-										["r_dmg"] = 19,
-										["MISS"] = 1,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 33,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
-									[8052] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 23,
-										["g_amt"] = 0,
-										["n_max"] = 58,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 141,
-										},
-										["n_dmg"] = 118,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["ChartData"] = {
-											[11] = 126,
-											[17] = 141,
-											[8] = 111,
-											[14] = 141,
-											[5] = 96,
-										},
-										["total"] = 141,
-										["c_max"] = 23,
-										["id"] = 8052,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 23,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951658,
-							["last_dps"] = 41.04997972380971,
-							["start_time"] = 1678951659,
-							["delay"] = 0,
-							["damage_taken"] = 214.004633,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.006739,
-							["damage_from"] = {
-								["Tadibey"] = true,
-							},
-							["targets"] = {
-								["Tadibey"] = 214,
-							},
-							["end_time"] = 1678951659,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3459",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 214.006739,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 214.006739,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Warfrenzy",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 3,
-										["b_amt"] = 1,
-										["c_dmg"] = 94,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Tadibey"] = 214,
-										},
-										["n_dmg"] = 120,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
-										["counter"] = 18,
-										["DODGE"] = 1,
-										["r_amt"] = 0,
-										["c_max"] = 47,
-										["MISS"] = 5,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["BLOCK"] = 1,
-										["c_min"] = 21,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 8,
-										["b_dmg"] = 3,
-										["total"] = 214,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3459-000012C374",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951655,
-							["damage_taken"] = 743.006739,
-							["start_time"] = 1678951659,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 116,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 116,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.002621,
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Tadibey"] = 197,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.002621,
-							["alternatepower"] = 0.002621,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[52128] = {
-										["total"] = 156,
-										["id"] = 52128,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 156,
-										},
-										["counter"] = 3,
-									},
-									[59914] = {
-										["total"] = 41,
-										["id"] = 59914,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 41,
-										},
-										["counter"] = 2,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["aID"] = "4465-0416001E",
-							["tipo"] = 3,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["last_event"] = 1678951658,
-							["total"] = 197.002621,
-							["passiveover"] = 0.002621,
-							["serial"] = "Player-4465-0416001E",
-							["received"] = 197.002621,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 116,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8052] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 18,
-										["id"] = 8052,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8045] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 5,
-										["id"] = 8045,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["buff_uptime"] = 19,
-							["aID"] = "4465-0416001E",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[52127] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 11,
-										["id"] = 52127,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[325] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 8,
-										["id"] = 325,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 23,
-							["nome"] = "Tadibey",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[8045] = 2,
-								[325] = 1,
-							},
-							["last_event"] = 1678951659,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["buff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 116,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Tadibey"] = "Player-4465-0416001E",
-				},
-				["raid_roster_indexed"] = {
-					"Tadibey", -- [1]
-				},
-				["CombatStartedAt"] = 505657.016,
-				["tempo_start"] = 1678951640,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 1148,
-				["playing_solo"] = true,
-				["totals"] = {
-					957, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 197,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					743, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 197,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "08:27:40",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Razormane Warfrenzy",
-				["TotalElapsedCombatTime"] = 505642.865,
-				["CombatEndedAt"] = 505642.865,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "08:27:21",
-				["end_time"] = 505642.865,
-				["combat_id"] = 116,
-				["frags"] = {
-					["Razormane Warfrenzy"] = 1,
-					["Searing Totem IV"] = 1,
-					["Grounding Totem"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 505623.732,
-				["contra"] = "Razormane Warfrenzy",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Tadibey"] = 743.004633,
-						}, -- [1]
-					},
-				},
-			}, -- [15]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 115,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005545,
-							["damage_from"] = {
-								["Razormane Warfrenzy"] = true,
-							},
-							["targets"] = {
-								["Razormane Warfrenzy"] = 755,
-							},
-							["end_time"] = 1678951622,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "4465-0416001E",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 755.005545,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "SHAMAN",
-							["dps_started"] = false,
-							["total"] = 755.005545,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 83,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 269,
-										},
-										["n_dmg"] = 202,
-										["n_min"] = 58,
-										["g_dmg"] = 67,
-										["counter"] = 4,
-										["ChartData"] = {
-											[8] = 128,
-											[11] = 186,
-											[5] = 67,
-										},
-										["total"] = 269,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[8052] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 58,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 120,
-										},
-										["n_dmg"] = 120,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["ChartData"] = {
-											[8] = 89,
-											[11] = 105,
-											[5] = 74,
-										},
-										["total"] = 120,
-										["c_max"] = 0,
-										["id"] = 8052,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[10444] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 65,
-										},
-										["n_dmg"] = 65,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["ChartData"] = {
-											[8] = 44,
-											[11] = 65,
-											[5] = 22,
-										},
-										["total"] = 65,
-										["c_max"] = 0,
-										["id"] = 10444,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8045] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 78,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 146,
-										},
-										["n_dmg"] = 146,
-										["n_min"] = 68,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["ChartData"] = {
-											[8] = 68,
-											[11] = 68,
-										},
-										["total"] = 146,
-										["c_max"] = 0,
-										["id"] = 8045,
-										["r_dmg"] = 68,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
-									[26365] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 37,
-										},
-										["n_dmg"] = 37,
-										["n_min"] = 37,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["ChartData"] = {
-											[8] = 37,
-											[11] = 37,
-											[5] = 37,
-										},
-										["total"] = 37,
-										["c_max"] = 0,
-										["id"] = 26365,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[915] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 118,
-										["targets"] = {
-											["Razormane Warfrenzy"] = 118,
-										},
-										["n_dmg"] = 118,
-										["n_min"] = 118,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["ChartData"] = {
-											[8] = 118,
-											[11] = 118,
-											[5] = 118,
-										},
-										["total"] = 118,
-										["c_max"] = 0,
-										["id"] = 915,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951622,
-							["last_dps"] = 52.18812089581677,
-							["start_time"] = 1678951622,
-							["delay"] = 0,
-							["damage_taken"] = 150.005545,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00867,
-							["damage_from"] = {
-								["Doicherinca"] = true,
-								["Tadibey"] = true,
-							},
-							["targets"] = {
-								["Tadibey"] = 150,
-							},
-							["end_time"] = 1678951622,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3459",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 150.00867,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 150.00867,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Warfrenzy",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 50,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Doicherinca"] = 0,
-											["Tadibey"] = 150,
-										},
-										["n_dmg"] = 100,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 14,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-										["c_max"] = 50,
-										["DODGE"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 4,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["PARRY"] = 2,
-										["c_min"] = 50,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["total"] = 150,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3459-000012C40B",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951636,
-							["damage_taken"] = 1544.00867,
-							["start_time"] = 1678951622,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 115,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.006999,
-							["total_without_pet"] = 96.006999,
-							["total"] = 96.006999,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-0416001E",
-							["totalabsorb"] = 0.006999,
-							["last_hps"] = 9.290400522518464,
-							["targets"] = {
-								["Tadibey"] = 96,
-							},
-							["totalover_without_pet"] = 0.006999,
-							["healing_taken"] = 96.006999,
-							["fight_component"] = true,
-							["end_time"] = 1678951622,
-							["healing_from"] = {
-								["Tadibey"] = true,
-							},
-							["heal_enemy_amt"] = 0,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20007] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 96,
-										["targets"] = {
-											["Tadibey"] = 96,
-										},
-										["n_min"] = 96,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 96,
-										["c_max"] = 0,
-										["id"] = 20007,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 96,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["start_time"] = 1678951622,
-							["aID"] = "4465-0416001E",
-							["custom"] = 0,
-							["last_event"] = 1678951618,
-							["tipo"] = 2,
-							["totaldenied"] = 0.006999,
-							["delay"] = 0,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 115,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.008558,
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Tadibey"] = 92,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.008558,
-							["fight_component"] = true,
-							["alternatepower"] = 0.008558,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[52128] = {
-										["total"] = 52,
-										["id"] = 52128,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 52,
-										},
-										["counter"] = 1,
-									},
-									[59914] = {
-										["total"] = 40,
-										["id"] = 59914,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 40,
-										},
-										["counter"] = 2,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["aID"] = "4465-0416001E",
-							["tipo"] = 3,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["last_event"] = 1678951622,
-							["total"] = 92.008558,
-							["passiveover"] = 0.008558,
-							["serial"] = "Player-4465-0416001E",
-							["received"] = 92.008558,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 115,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8052] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 13,
-										["id"] = 8052,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8045] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 7,
-										["id"] = 8045,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["buff_uptime"] = 18,
-							["aID"] = "4465-0416001E",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[52127] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 9,
-										["id"] = 52127,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[20007] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 4,
-										["id"] = 20007,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[325] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 5,
-										["id"] = 325,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 20,
-							["nome"] = "Tadibey",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[52127] = 1,
-								[8045] = 2,
-								[8052] = 1,
-							},
-							["last_event"] = 1678951622,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["buff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 115,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Tadibey"] = "Player-4465-0416001E",
-				},
-				["raid_roster_indexed"] = {
-					"Tadibey", -- [1]
-				},
-				["CombatStartedAt"] = 505623.432,
-				["tempo_start"] = 1678951608,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 1147,
-				["playing_solo"] = true,
-				["totals"] = {
-					904.989904, -- [1]
-					96, -- [2]
-					{
-						0, -- [1]
-						[0] = 91.997339,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					755, -- [1]
-					96, -- [2]
-					{
-						0, -- [1]
-						[0] = 92,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "08:27:03",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Razormane Warfrenzy",
-				["TotalElapsedCombatTime"] = 505606.148,
-				["CombatEndedAt"] = 505606.148,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "08:26:49",
-				["end_time"] = 505606.148,
-				["combat_id"] = 115,
-				["frags"] = {
-					["Razormane Seer"] = 1,
-					["Razormane Warfrenzy"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 505591.681,
-				["contra"] = "Razormane Warfrenzy",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Tadibey"] = 96.006999,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Tadibey"] = 755.005545,
-						}, -- [1]
-					},
-				},
-			}, -- [16]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 114,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005941,
-							["damage_from"] = {
-								["Razormane Seer"] = true,
-								["Razormane Warfrenzy"] = true,
-							},
-							["targets"] = {
-								["Razormane Seer"] = 631,
-								["Razormane Warfrenzy"] = 674,
-							},
-							["end_time"] = 1678951597,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "4465-0416001E",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1305.005941,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "SHAMAN",
-							["dps_started"] = false,
-							["total"] = 1305.005941,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
-										["b_amt"] = 1,
-										["c_dmg"] = 268,
-										["g_amt"] = 1,
-										["n_max"] = 82,
-										["targets"] = {
-											["Razormane Seer"] = 223,
-											["Razormane Warfrenzy"] = 392,
-										},
-										["n_dmg"] = 290,
-										["n_min"] = 42,
-										["g_dmg"] = 57,
-										["counter"] = 10,
-										["ChartData"] = {
-											[11] = 168,
-											[17] = 265,
-											[8] = 111,
-											[14] = 223,
-											[23] = 475,
-											[26] = 615,
-											[5] = 54,
-											[20] = 393,
-										},
-										["total"] = 615,
-										["c_max"] = 140,
-										["DODGE"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 128,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 42,
-										["r_amt"] = 0,
-									}, -- [1]
-									[8052] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 58,
-										["targets"] = {
-											["Razormane Seer"] = 117,
-											["Razormane Warfrenzy"] = 73,
-										},
-										["n_dmg"] = 190,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["ChartData"] = {
-											[11] = 102,
-											[17] = 117,
-											[8] = 87,
-											[14] = 117,
-											[23] = 190,
-											[26] = 190,
-											[5] = 72,
-											[20] = 175,
-										},
-										["total"] = 190,
-										["c_max"] = 0,
-										["id"] = 8052,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8045] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 76,
-										["targets"] = {
-											["Razormane Seer"] = 151,
-										},
-										["n_dmg"] = 151,
-										["n_min"] = 75,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["ChartData"] = {
-											[11] = 75,
-											[17] = 151,
-											[8] = 75,
-											[14] = 151,
-											[26] = 151,
-											[23] = 151,
-											[20] = 151,
-										},
-										["total"] = 151,
-										["c_max"] = 0,
-										["id"] = 8045,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[10444] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 32,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Razormane Seer"] = 66,
-											["Razormane Warfrenzy"] = 98,
-										},
-										["n_dmg"] = 132,
-										["n_min"] = 22,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["ChartData"] = {
-											[11] = 66,
-											[17] = 98,
-											[8] = 44,
-											[14] = 66,
-											[23] = 142,
-											[26] = 164,
-											[5] = 22,
-											[20] = 120,
-										},
-										["total"] = 164,
-										["c_max"] = 32,
-										["id"] = 10444,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 32,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26365] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Razormane Seer"] = 74,
-											["Razormane Warfrenzy"] = 111,
-										},
-										["n_dmg"] = 185,
-										["n_min"] = 37,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["ChartData"] = {
-											[11] = 74,
-											[17] = 111,
-											[8] = 37,
-											[14] = 74,
-											[26] = 185,
-											[23] = 185,
-											[20] = 148,
-										},
-										["total"] = 185,
-										["c_max"] = 0,
-										["id"] = 26365,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951596,
-							["last_dps"] = 50.09235148928068,
-							["start_time"] = 1678951597,
-							["delay"] = 0,
-							["damage_taken"] = 262.005941,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008371,
-							["damage_from"] = {
-								["Tadibey"] = true,
-							},
-							["targets"] = {
-								["Tadibey"] = 74,
-							},
-							["end_time"] = 1678951597,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3458",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 74.008371,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 74.008371,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Seer",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Tadibey"] = 74,
-										},
-										["n_dmg"] = 74,
-										["n_min"] = 24,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 74,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 2,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3458-000112C47C",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951582,
-							["damage_taken"] = 631.008371,
-							["start_time"] = 1678951597,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.004376,
-							["damage_from"] = {
-								["Tadibey"] = true,
-							},
-							["targets"] = {
-								["Tadibey"] = 188,
-							},
-							["end_time"] = 1678951597,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3459",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 188.004376,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 188.004376,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Warfrenzy",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 45,
-										["g_amt"] = 0,
-										["n_max"] = 23,
-										["targets"] = {
-											["Tadibey"] = 188,
-										},
-										["n_dmg"] = 143,
-										["n_min"] = 11,
-										["g_dmg"] = 0,
-										["counter"] = 18,
-										["DODGE"] = 2,
-										["r_amt"] = 0,
-										["c_max"] = 25,
-										["MISS"] = 5,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["BLOCK"] = 1,
-										["c_min"] = 20,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 8,
-										["b_dmg"] = 0,
-										["total"] = 188,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3459-000012C3D7",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951596,
-							["damage_taken"] = 674.004376,
-							["start_time"] = 1678951597,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 114,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.003237,
-							["total_without_pet"] = 83.003237,
-							["total"] = 83.003237,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-0416001E",
-							["totalabsorb"] = 0.003237,
-							["last_hps"] = 4.075378651735063,
-							["targets"] = {
-								["Tadibey"] = 83,
-							},
-							["totalover_without_pet"] = 0.003237,
-							["healing_taken"] = 83.003237,
-							["fight_component"] = true,
-							["end_time"] = 1678951597,
-							["healing_from"] = {
-								["Tadibey"] = true,
-							},
-							["heal_enemy_amt"] = 0,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20007] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 83,
-										["targets"] = {
-											["Tadibey"] = 83,
-										},
-										["n_min"] = 83,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 83,
-										["c_max"] = 0,
-										["id"] = 20007,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 83,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["start_time"] = 1678951597,
-							["aID"] = "4465-0416001E",
-							["custom"] = 0,
-							["last_event"] = 1678951590,
-							["tipo"] = 2,
-							["totaldenied"] = 0.003237,
-							["delay"] = 0,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 114,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.008773,
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Tadibey"] = 81,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.008773,
-							["fight_component"] = true,
-							["alternatepower"] = 0.008773,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[59914] = {
-										["total"] = 81,
-										["id"] = 59914,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 81,
-										},
-										["counter"] = 4,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["aID"] = "4465-0416001E",
-							["tipo"] = 3,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["last_event"] = 1678951596,
-							["total"] = 81.008773,
-							["passiveover"] = 0.008773,
-							["serial"] = "Player-4465-0416001E",
-							["received"] = 81.008773,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 114,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8052] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 18,
-										["id"] = 8052,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8045] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 6,
-										["id"] = 8045,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["buff_uptime"] = 34,
-							["aID"] = "4465-0416001E",
-							["interrupt_spells"] = {
-								["_ActorTable"] = {
-									[57994] = {
-										["id"] = 57994,
-										["interrompeu_oque"] = {
-											[6274] = 1,
-										},
-										["targets"] = {
-											["Razormane Seer"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[325] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 27,
-										["id"] = 325,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[20007] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 7,
-										["id"] = 20007,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["interrompeu_oque"] = {
-								[6274] = 1,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 24,
-							["pets"] = {
-							},
-							["interrupt"] = 1.004813,
-							["nome"] = "Tadibey",
-							["interrupt_targets"] = {
-								["Razormane Seer"] = 1,
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[8052] = 2,
-								[57994] = 1,
-								[325] = 1,
-								[8045] = 2,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
-							["last_event"] = 1678951597,
-							["serial"] = "Player-4465-0416001E",
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 114,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Tadibey"] = "Player-4465-0416001E",
-				},
-				["raid_roster_indexed"] = {
-					"Tadibey", -- [1]
-				},
-				["CombatStartedAt"] = 505589.881,
-				["tempo_start"] = 1678951570,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 1146,
-				["playing_solo"] = true,
-				["totals"] = {
-					1567, -- [1]
-					83, -- [2]
-					{
-						0, -- [1]
-						[0] = 81,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					1305, -- [1]
-					83, -- [2]
-					{
-						0, -- [1]
-						[0] = 81,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "08:26:38",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Razormane Seer",
-				["TotalElapsedCombatTime"] = 505581.131,
-				["CombatEndedAt"] = 505581.131,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "08:26:11",
-				["end_time"] = 505581.131,
-				["combat_id"] = 114,
-				["frags"] = {
-					["Razormane Seer"] = 1,
-					["Razormane Warfrenzy"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 505553.93,
-				["contra"] = "Razormane Seer",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Tadibey"] = 83.003237,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Tadibey"] = 1305.005941,
-						}, -- [1]
-					},
-				},
-			}, -- [17]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 113,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.00362,
-							["damage_from"] = {
-								["Razormane Seer"] = true,
-							},
-							["targets"] = {
-								["Razormane Seer"] = 549,
-							},
-							["end_time"] = 1678951561,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "4465-0416001E",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 549.00362,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "SHAMAN",
-							["dps_started"] = false,
-							["total"] = 549.00362,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 262,
-										["g_amt"] = 0,
-										["n_max"] = 58,
-										["targets"] = {
-											["Razormane Seer"] = 320,
-										},
-										["n_dmg"] = 58,
-										["n_min"] = 58,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[5] = 194,
-											[8] = 320,
-										},
-										["total"] = 320,
-										["c_max"] = 136,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 126,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[8045] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 77,
-										["targets"] = {
-											["Razormane Seer"] = 77,
-										},
-										["n_dmg"] = 77,
-										["n_min"] = 77,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["ChartData"] = {
-											[8] = 77,
-										},
-										["total"] = 77,
-										["c_max"] = 0,
-										["id"] = 8045,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[10444] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Razormane Seer"] = 64,
-										},
-										["n_dmg"] = 64,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[5] = 43,
-											[8] = 64,
-										},
-										["total"] = 64,
-										["c_max"] = 0,
-										["id"] = 10444,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8052] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 58,
-										["targets"] = {
-											["Razormane Seer"] = 88,
-										},
-										["n_dmg"] = 88,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["ChartData"] = {
-											[5] = 88,
-											[8] = 88,
-										},
-										["total"] = 88,
-										["c_max"] = 0,
-										["id"] = 8052,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951560,
-							["last_dps"] = 65.61534839227886,
-							["start_time"] = 1678951561,
-							["delay"] = 0,
-							["damage_taken"] = 99.00362,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007044,
-							["damage_from"] = {
-								["Tadibey"] = true,
-							},
-							["targets"] = {
-								["Tadibey"] = 99,
-							},
-							["end_time"] = 1678951561,
-							["pets"] = {
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["aID"] = "3458",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 99.00704400000001,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 99.00704400000001,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
-							["nome"] = "Razormane Seer",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 27,
-										["targets"] = {
-											["Tadibey"] = 99,
-										},
-										["n_dmg"] = 99,
-										["n_min"] = 22,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 99,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["BLOCK"] = 1,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Creature-0-5563-1-17-3458-000092C47C",
-							["on_hold"] = false,
-							["monster"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1678951570,
-							["damage_taken"] = 549.007044,
-							["start_time"] = 1678951561,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 113,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 113,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.007241,
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["targets"] = {
-								["Tadibey"] = 197,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "SHAMAN",
-							["totalover"] = 0.007241,
-							["alternatepower"] = 0.007241,
-							["nome"] = "Tadibey",
-							["spells"] = {
-								["_ActorTable"] = {
-									[52128] = {
-										["total"] = 156,
-										["id"] = 52128,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 156,
-										},
-										["counter"] = 3,
-									},
-									[59914] = {
-										["total"] = 41,
-										["id"] = 59914,
-										["totalover"] = 0,
-										["targets"] = {
-											["Tadibey"] = 41,
-										},
-										["counter"] = 2,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["aID"] = "4465-0416001E",
-							["tipo"] = 3,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["last_event"] = 1678951570,
-							["total"] = 197.007241,
-							["passiveover"] = 0.007241,
-							["serial"] = "Player-4465-0416001E",
-							["received"] = 197.007241,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 113,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8052] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 8,
-										["id"] = 8052,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8045] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 2,
-										["id"] = 8045,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["GetSpellContainer"] = nil --[[ skipped inline function ]],
-							["buff_uptime"] = 9,
-							["aID"] = "4465-0416001E",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[52127] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 9,
-										["id"] = 52127,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 10,
-							["nome"] = "Tadibey",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[8045] = 1,
-							},
-							["last_event"] = 1678951561,
-							["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-0416001E",
-							["buff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 113,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Tadibey"] = "Player-4465-0416001E",
-				},
-				["raid_roster_indexed"] = {
-					"Tadibey", -- [1]
-				},
-				["CombatStartedAt"] = 505553.664,
-				["tempo_start"] = 1678951552,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					648, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 197,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					549, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 197,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "08:26:02",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Razormane Seer",
-				["TotalElapsedCombatTime"] = 505545.181,
-				["CombatEndedAt"] = 505545.181,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Tadibey"] = 549.00362,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 505545.181,
-				["combat_id"] = 113,
-				["frags"] = {
-					["Razormane Seer"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["combat_counter"] = 1145,
-				["player_last_events"] = {
-					["Tadibey"] = {
-						{
-							true, -- [1]
-							1, -- [2]
-							26, -- [3]
-							1678951570.75, -- [4]
-							844, -- [5]
-							"Razormane Seer", -- [6]
-							nil, -- [7]
-							1, -- [8]
-							false, -- [9]
-							-1, -- [10]
-							false, -- [11]
-							false, -- [12]
-						}, -- [1]
-						{
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 2,
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 505535.847,
-				["contra"] = "Razormane Seer",
-				["data_inicio"] = "08:25:53",
 			}, -- [18]
 		},
 	},
 	["ocd_tracker"] = {
-		["show_title"] = true,
+		["enabled"] = false,
 		["current_cooldowns"] = {
 		},
-		["group_frames"] = true,
 		["lines_per_column"] = 12,
+		["group_frames"] = true,
 		["frames"] = {
 			["defensive-raid"] = {
 			},
@@ -11320,15 +10030,15 @@ _detalhes_database = {
 			["defensive-personal"] = false,
 		},
 		["width"] = 120,
+		["framme_locked"] = false,
 		["cooldowns"] = {
 		},
 		["height"] = 18,
-		["framme_locked"] = false,
 		["show_conditions"] = {
 			["only_inside_instance"] = true,
 			["only_in_group"] = true,
 		},
-		["enabled"] = false,
+		["show_title"] = true,
 		["filters"] = {
 			["defensive-raid"] = false,
 			["ofensive"] = true,
@@ -11372,10 +10082,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 596.4414672851562,
-					["x"] = -1101.599021911621,
+					["y"] = 596.4415283203125,
+					["x"] = -979.6942367553711,
 					["w"] = 234.8974151611328,
-					["h"] = 138.5456237792969,
+					["h"] = 138.545654296875,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -11407,10 +10117,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 596.4414672851562,
-					["x"] = -869.6630859375,
-					["w"] = 228.9744262695313,
-					["h"] = 138.5456237792969,
+					["y"] = 596.4415283203125,
+					["x"] = -747.7583312988281,
+					["w"] = 228.9744415283203,
+					["h"] = 138.545654296875,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -12184,10 +10894,10 @@ _detalhes_database = {
 	["data_harvest_for_charsts"] = {
 		["players"] = {
 			{
-				["playerKey"] = "total",
-				["combatObjectContainer"] = 1,
 				["name"] = "Damage of Each Individual Player",
 				["playerOnly"] = true,
+				["playerKey"] = "total",
+				["combatObjectContainer"] = 1,
 			}, -- [1]
 		},
 		["totals"] = {
@@ -12226,28 +10936,144 @@ _detalhes_database = {
 		["frame"] = {
 		},
 	},
-	["combat_counter"] = 1164,
-	["mythic_plus_log"] = {
-	},
-	["last_realversion"] = 148,
-	["announce_damagerecord"] = {
+	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
+	["mythic_plus_log"] = {
+	},
+	["combat_counter"] = 1182,
+	["cached_roles"] = {
+		["Player-4465-0416001E"] = "DAMAGER",
+		["Player-4465-030F80BE"] = "DAMAGER",
+		["Player-4465-04269F25"] = "DAMAGER",
+		["Player-4465-0426AA28"] = "DAMAGER",
+		["Player-4465-042617A5"] = "TANK",
+		["Player-4465-04243C1F"] = "DAMAGER",
+		["Player-4465-04256560"] = "DAMAGER",
+		["Player-4465-041A781B"] = "DAMAGER",
+	},
+	["last_realversion"] = 148,
 	["nick_tag_cache"] = {
 		["nextreset"] = 1680184171,
 		["last_version"] = 15,
 	},
-	["last_instance_time"] = 1678889909,
-	["force_font_outline"] = "",
-	["character_data"] = {
-		["logons"] = 70,
+	["plugin_database"] = {
+		["DETAILS_PLUGIN_TINY_THREAT"] = {
+			["enabled"] = true,
+			["animate"] = false,
+			["hide_pull_bar"] = false,
+			["author"] = "Terciob",
+			["playercolor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["usefocus"] = false,
+			["updatespeed"] = 1,
+			["disable_gouge"] = false,
+			["showamount"] = false,
+			["useplayercolor"] = false,
+			["absolute_mode"] = false,
+			["playSound"] = false,
+			["playSoundFile"] = "Details Threat Warning Volume 3",
+			["useclasscolors"] = false,
+		},
+		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
+			["enabled"] = true,
+			["encounter_timers_bw"] = {
+			},
+			["max_emote_segments"] = 3,
+			["last_section_selected"] = "main",
+			["author"] = "Terciob",
+			["window_scale"] = 1,
+			["hide_on_combat"] = false,
+			["show_icon"] = 5,
+			["opened"] = 0,
+			["encounter_timers_dbm"] = {
+			},
+		},
+		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
+			["enabled"] = true,
+			["author"] = "Terciob",
+		},
+		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
+			["use_square_mode"] = false,
+			["is_first_run"] = false,
+			["grow_direction"] = "right",
+			["arrow_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["scale"] = 1,
+			["main_frame_size"] = {
+				249.999740600586, -- [1]
+				89.9999694824219, -- [2]
+			},
+			["minimap"] = {
+				["minimapPos"] = 160,
+				["radius"] = 160,
+				["hide"] = true,
+			},
+			["row_height"] = 18,
+			["arrow_anchor_x"] = 0,
+			["font_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["row_texture"] = "xVerminClean",
+			["square_grow_direction"] = "right",
+			["point"] = "RIGHT",
+			["main_frame_strata"] = "LOW",
+			["square_amount"] = 5,
+			["enabled"] = false,
+			["arrow_size"] = 10,
+			["use_spark"] = false,
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["author"] = "Details! Team",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["font_size"] = 10,
+			["y"] = -183.107162475586,
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
+			["per_second"] = {
+				["enabled"] = false,
+				["point"] = "CENTER",
+				["scale"] = 1,
+				["font_shadow"] = true,
+				["y"] = -6.103515625e-05,
+				["x"] = 0.00311279296875,
+				["size"] = 32,
+				["update_speed"] = 0.05,
+				["attribute_type"] = 1,
+			},
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
+			["main_frame_locked"] = true,
+			["arrow_anchor_y"] = 0,
+		},
 	},
+	["last_day"] = "16",
 	["on_death_menu"] = false,
-	["combat_id"] = 130,
+	["combat_id"] = 147,
 	["savedStyles"] = {
 		{
-			["hide_in_combat_type"] = 1,
+			["show_statusbar"] = false,
 			["clickthrough_window"] = false,
 			["titlebar_shown"] = false,
 			["menu_anchor"] = {
@@ -12277,31 +11103,43 @@ _detalhes_database = {
 				1, -- [3]
 			},
 			["clickthrough_toolbaricons"] = false,
-			["clickthrough_rows"] = false,
+			["attribute_text"] = {
+				["enabled"] = true,
+				["shadow"] = false,
+				["side"] = 1,
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["custom_text"] = "{name}",
+				["text_face"] = "Arial Narrow",
+				["anchor"] = {
+					56, -- [1]
+					3, -- [2]
+				},
+				["text_size"] = 12,
+				["enable_custom_text"] = false,
+				["show_timer"] = false,
+			},
 			["titlebar_texture"] = "xVerminClean",
-			["switch_tank"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["switch_all_roles_after_wipe"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
+			["ignore_mass_showhide"] = false,
+			["fontstrings_text_limit_offset"] = -10,
 			["icon_desaturated"] = false,
 			["desaturated_menu"] = false,
-			["micro_displays_side"] = 2,
+			["show_sidebars"] = false,
 			["window_scale"] = 1,
 			["hide_icon"] = true,
 			["toolbar_side"] = 1,
 			["bg_g"] = 0.1333333333333333,
 			["menu_icons_alpha"] = 0.92,
 			["bg_b"] = 0.1333333333333333,
-			["switch_healer_in_combat"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
+			["rowareaborder_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
 			["color"] = {
 				0.07058823529411765, -- [1]
@@ -12388,12 +11226,12 @@ _detalhes_database = {
 			},
 			["skin"] = "Minimalistic",
 			["following"] = {
+				["enabled"] = false,
 				["bar_color"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 				},
-				["enabled"] = false,
 				["text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -12432,7 +11270,7 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["show_sidebars"] = false,
+			["micro_displays_side"] = 2,
 			["name"] = "vermin",
 			["switch_tank_in_combat"] = {
 				1, -- [1]
@@ -12450,26 +11288,7 @@ _detalhes_database = {
 				["onenter"] = 1,
 			},
 			["fullborder_shown"] = false,
-			["attribute_text"] = {
-				["show_timer"] = false,
-				["shadow"] = false,
-				["side"] = 1,
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["custom_text"] = "{name}",
-				["text_face"] = "Arial Narrow",
-				["anchor"] = {
-					56, -- [1]
-					3, -- [2]
-				},
-				["text_size"] = 12,
-				["enable_custom_text"] = false,
-				["enabled"] = true,
-			},
+			["clickthrough_rows"] = false,
 			["rowareaborder_shown"] = false,
 			["rowareaborder_size"] = 0.5,
 			["clickthrough_incombatonly"] = false,
@@ -12511,35 +11330,31 @@ _detalhes_database = {
 				["left"] = false,
 				["right"] = true,
 			},
-			["show_statusbar"] = false,
+			["hide_in_combat_type"] = 1,
 			["switch_damager_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["rowareaborder_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["bars_grow_direction"] = 1,
-			["auto_current"] = true,
-			["skin_custom"] = "vermin",
-			["switch_damager"] = {
+			["switch_healer_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["bg_alpha"] = 0,
-			["hide_in_combat"] = false,
+			["bars_grow_direction"] = 1,
+			["auto_current"] = true,
+			["skin_custom"] = "vermin",
 			["row_info"] = {
-				["textR_outline"] = false,
+				["show_arena_role_icon"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
 				["textL_outline"] = false,
-				["textR_outline_small"] = true,
-				["textL_outline_small"] = true,
-				["textL_enable_custom_text"] = false,
+				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+				["textR_show_data"] = {
+					true, -- [1]
+					true, -- [2]
+					false, -- [3]
+				},
+				["percent_type"] = 1,
 				["fixed_text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -12551,7 +11366,12 @@ _detalhes_database = {
 					["between"] = 1,
 				},
 				["texture_background_class_color"] = false,
-				["start_after_icon"] = true,
+				["textL_outline_small_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
 				["font_face_file"] = "Fonts\\ARIALN.TTF",
 				["faction_icon_size_offset"] = -10,
 				["backdrop"] = {
@@ -12565,8 +11385,6 @@ _detalhes_database = {
 					["enabled"] = false,
 					["texture"] = "ThreatPlatesBorder",
 				},
-				["font_size"] = 11,
-				["textL_custom_text"] = "{data1}. {data3}{data2}",
 				["models"] = {
 					["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
 					["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
@@ -12575,16 +11393,13 @@ _detalhes_database = {
 					["lower_alpha"] = 0.1,
 					["upper_enabled"] = false,
 				},
+				["textL_custom_text"] = "{data1}. {data3}{data2}",
+				["font_size"] = 11,
 				["textL_translit_text"] = false,
-				["texture_custom_file"] = "Interface\\",
+				["height"] = 19,
 				["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
 				["icon_size_offset"] = 0,
-				["textL_outline_small_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
+				["start_after_icon"] = true,
 				["show_faction_icon"] = true,
 				["overlay_color"] = {
 					0.7, -- [1]
@@ -12592,18 +11407,14 @@ _detalhes_database = {
 					0.7, -- [3]
 					0, -- [4]
 				},
-				["textR_show_data"] = {
-					true, -- [1]
-					true, -- [2]
-					false, -- [3]
-				},
-				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-				["icon_file"] = "",
+				["textL_outline_small"] = true,
+				["textR_outline_small"] = true,
+				["arena_role_icon_size_offset"] = -10,
 				["icon_grayscale"] = false,
-				["use_spec_icons"] = false,
 				["textR_bracket"] = "(",
+				["use_spec_icons"] = false,
 				["texture_custom"] = "",
-				["show_arena_role_icon"] = false,
+				["textR_outline"] = false,
 				["fixed_texture_color"] = {
 					0, -- [1]
 					0, -- [2]
@@ -12637,23 +11448,33 @@ _detalhes_database = {
 					0, -- [1]
 					0, -- [2]
 				},
-				["arena_role_icon_size_offset"] = -10,
+				["icon_file"] = "",
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
-				["percent_type"] = 1,
+				["textL_enable_custom_text"] = false,
 				["fast_ps_update"] = false,
 				["textR_separator"] = "NONE",
-				["height"] = 19,
+				["texture_custom_file"] = "Interface\\",
 			},
-			["ignore_mass_showhide"] = false,
-			["fontstrings_text_limit_offset"] = -10,
+			["bg_alpha"] = 0,
+			["hide_in_combat"] = false,
+			["switch_damager"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["switch_tank"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["switch_all_roles_after_wipe"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
 			["wallpaper"] = {
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
+				["enabled"] = false,
 				["alpha"] = 0.5,
 				["width"] = 283.000183105469,
 				["texcoord"] = {
@@ -12665,7 +11486,12 @@ _detalhes_database = {
 				["height"] = 114.042518615723,
 				["anchor"] = "all",
 				["level"] = 2,
-				["enabled"] = false,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
 				["texture"] = "Interface\\AddOns\\Details\\images\\background",
 			},
 			["stretch_button_side"] = 2,
@@ -12707,24 +11533,24 @@ _detalhes_database = {
 						["Deviate Ravager"] = 2669,
 						["Deviate Dreadfang"] = 3269,
 						["Verdan the Everliving"] = 877,
-						["Skum"] = 800,
-						["Kresh"] = 389,
+						["Deviate Stinglash"] = 0,
+						["Deviate Lasher"] = 1040,
 						["Deviate Python"] = 307,
-						["Lord Pythas"] = 875,
-						["Deviate Crocolisk"] = 757,
+						["Lord Cobrahn"] = 545,
 						["Nightmare Ectoplasm"] = 958,
+						["Mutanus the Devourer"] = 784,
 						["Druid of the Fang"] = 16651,
 						["Deviate Venomwing"] = 2141,
 						["Evolving Ectoplasm"] = 3145,
-						["Mutanus the Devourer"] = 784,
+						["Kresh"] = 389,
 						["Deviate Moccasin"] = 1526,
-						["Lord Cobrahn"] = 545,
-						["Deviate Lasher"] = 1040,
-						["Deviate Stinglash"] = 0,
+						["Lord Pythas"] = 875,
+						["Deviate Crocolisk"] = 757,
+						["Skum"] = 800,
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["friendlyfire_total"] = 0,
 					["damage_from"] = {
 						["Lord Serpentis"] = true,
 						["Deviate Shambler"] = true,
@@ -12736,28 +11562,28 @@ _detalhes_database = {
 						["Deviate Dreadfang"] = true,
 						["Verdan the Everliving"] = true,
 						["Deviate Lasher"] = true,
-						["Skum"] = true,
-						["Mutanus the Devourer"] = true,
-						["Nightmare Ectoplasm"] = true,
+						["Deviate Python"] = true,
+						["Deviate Crocolisk"] = true,
+						["Kresh"] = true,
 						["Druid of the Fang"] = true,
 						["Deviate Venomwing"] = true,
 						["Evolving Ectoplasm"] = true,
-						["Kresh"] = true,
+						["Mutanus the Devourer"] = true,
 						["Deviate Moccasin"] = true,
 						["Lord Pythas"] = true,
-						["Deviate Crocolisk"] = true,
-						["Deviate Python"] = true,
+						["Nightmare Ectoplasm"] = true,
+						["Skum"] = true,
 					},
-					["classe"] = "PALADIN",
+					["aID"] = "4465-030F80BE",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 54400.26743400001,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["dps_started"] = false,
-					["total"] = 54400.26743400001,
-					["aID"] = "4465-030F80BE",
-					["serial"] = "Player-4465-030F80BE",
+					["end_time"] = 1678889931,
+					["classe"] = "PALADIN",
+					["delay"] = 0,
 					["nome"] = "Ayatolla",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -12777,20 +11603,20 @@ _detalhes_database = {
 									["Deviate Ravager"] = 1360,
 									["Deviate Dreadfang"] = 1538,
 									["Verdan the Everliving"] = 382,
-									["Skum"] = 378,
-									["Kresh"] = 110,
+									["Deviate Stinglash"] = 0,
+									["Deviate Lasher"] = 113,
 									["Deviate Python"] = 231,
-									["Lord Pythas"] = 367,
-									["Deviate Crocolisk"] = 387,
+									["Lord Cobrahn"] = 240,
 									["Nightmare Ectoplasm"] = 447,
+									["Mutanus the Devourer"] = 434,
 									["Druid of the Fang"] = 7680,
 									["Deviate Venomwing"] = 1120,
 									["Evolving Ectoplasm"] = 1716,
-									["Mutanus the Devourer"] = 434,
+									["Kresh"] = 110,
 									["Deviate Moccasin"] = 659,
-									["Lord Cobrahn"] = 240,
-									["Deviate Lasher"] = 113,
-									["Deviate Stinglash"] = 0,
+									["Lord Pythas"] = 367,
+									["Deviate Crocolisk"] = 387,
+									["Skum"] = 378,
 								},
 								["n_dmg"] = 19017,
 								["n_min"] = 0,
@@ -12798,20 +11624,20 @@ _detalhes_database = {
 								["counter"] = 437,
 								["total"] = 25593,
 								["c_max"] = 136,
-								["DODGE"] = 16,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["b_dmg"] = 673,
 								["MISS"] = 18,
-								["extra"] = {
-								},
+								["a_amt"] = 0,
 								["PARRY"] = 15,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["extra"] = {
+								},
 								["n_amt"] = 319,
-								["b_dmg"] = 673,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["DODGE"] = 16,
 							}, -- [1]
 							[7294] = {
 								["c_amt"] = 0,
@@ -12829,17 +11655,17 @@ _detalhes_database = {
 									["Deviate Dreadfang"] = 560,
 									["Verdan the Everliving"] = 50,
 									["Deviate Lasher"] = 613,
-									["Skum"] = 20,
-									["Mutanus the Devourer"] = 90,
-									["Nightmare Ectoplasm"] = 132,
+									["Deviate Python"] = 30,
+									["Deviate Crocolisk"] = 30,
+									["Kresh"] = 10,
 									["Druid of the Fang"] = 1090,
 									["Deviate Venomwing"] = 370,
 									["Evolving Ectoplasm"] = 130,
-									["Kresh"] = 10,
+									["Mutanus the Devourer"] = 90,
 									["Deviate Moccasin"] = 250,
 									["Lord Pythas"] = 210,
-									["Deviate Crocolisk"] = 30,
-									["Deviate Python"] = 30,
+									["Nightmare Ectoplasm"] = 132,
+									["Skum"] = 20,
 								},
 								["n_dmg"] = 4992,
 								["n_min"] = 0,
@@ -12849,16 +11675,16 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 7294,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["RESIST"] = 27,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 502,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 502,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["RESIST"] = 27,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[20187] = {
 								["c_amt"] = 14,
@@ -12877,17 +11703,17 @@ _detalhes_database = {
 									["Deviate Dreadfang"] = 317,
 									["Verdan the Everliving"] = 120,
 									["Deviate Lasher"] = 79,
-									["Skum"] = 108,
-									["Deviate Crocolisk"] = 117,
-									["Lord Pythas"] = 120,
+									["Mutanus the Devourer"] = 118,
+									["Nightmare Ectoplasm"] = 98,
+									["Lord Cobrahn"] = 79,
 									["Druid of the Fang"] = 2207,
 									["Deviate Venomwing"] = 159,
 									["Evolving Ectoplasm"] = 434,
-									["Kresh"] = 78,
+									["Deviate Crocolisk"] = 117,
 									["Deviate Moccasin"] = 191,
-									["Lord Cobrahn"] = 79,
-									["Nightmare Ectoplasm"] = 98,
-									["Mutanus the Devourer"] = 118,
+									["Lord Pythas"] = 120,
+									["Kresh"] = 78,
+									["Skum"] = 108,
 								},
 								["n_dmg"] = 5730,
 								["n_min"] = 0,
@@ -12897,15 +11723,15 @@ _detalhes_database = {
 								["c_max"] = 80,
 								["id"] = 20187,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 146,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[62124] = {
 								["c_amt"] = 0,
@@ -12914,8 +11740,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Deviate Shambler"] = 0,
 									["Deviate Guardian"] = 0,
+									["Deviate Shambler"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -12925,16 +11751,16 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 62124,
 								["r_dmg"] = 0,
-								["MISS"] = 2,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["extra"] = {
+								},
+								["MISS"] = 2,
 							},
 							[25742] = {
 								["c_amt"] = 0,
@@ -12952,19 +11778,19 @@ _detalhes_database = {
 									["Deviate Ravager"] = 417,
 									["Deviate Dreadfang"] = 449,
 									["Verdan the Everliving"] = 138,
+									["Skum"] = 124,
 									["Deviate Lasher"] = 35,
-									["Deviate Python"] = 32,
-									["Mutanus the Devourer"] = 142,
-									["Lord Cobrahn"] = 92,
-									["Nightmare Ectoplasm"] = 116,
+									["Deviate Crocolisk"] = 124,
+									["Lord Pythas"] = 143,
+									["Kresh"] = 92,
 									["Druid of the Fang"] = 2520,
 									["Deviate Venomwing"] = 294,
 									["Evolving Ectoplasm"] = 497,
-									["Kresh"] = 92,
+									["Mutanus the Devourer"] = 142,
 									["Deviate Moccasin"] = 191,
-									["Lord Pythas"] = 143,
-									["Deviate Crocolisk"] = 124,
-									["Skum"] = 124,
+									["Lord Cobrahn"] = 92,
+									["Nightmare Ectoplasm"] = 116,
+									["Deviate Python"] = 32,
 								},
 								["n_dmg"] = 8002,
 								["n_min"] = 0,
@@ -12974,15 +11800,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 25742,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 521,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[20271] = {
 								["c_amt"] = 0,
@@ -13003,44 +11829,61 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 20271,
 								["r_dmg"] = 0,
-								["MISS"] = 3,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[32747] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verdan the Everliving"] = 0,
+								["extra"] = {
 								},
-								["n_dmg"] = 0,
+								["MISS"] = 3,
+							},
+							[67485] = {
+								["c_amt"] = 4,
+								["b_amt"] = 0,
+								["c_dmg"] = 595,
+								["g_amt"] = 0,
+								["n_max"] = 101,
+								["targets"] = {
+									["Lord Serpentis"] = 100,
+									["Deviate Shambler"] = 1049,
+									["Deviate Guardian"] = 938,
+									["Deviate Adder"] = 447,
+									["Deviate Viper"] = 298,
+									["Deviate Ravager"] = 343,
+									["Deviate Dreadfang"] = 300,
+									["Verdan the Everliving"] = 100,
+									["Deviate Lasher"] = 200,
+									["Skum"] = 100,
+									["Deviate Python"] = 14,
+									["Druid of the Fang"] = 2944,
+									["Deviate Venomwing"] = 128,
+									["Evolving Ectoplasm"] = 298,
+									["Kresh"] = 99,
+									["Deviate Moccasin"] = 200,
+									["Lord Cobrahn"] = 99,
+									["Deviate Crocolisk"] = 99,
+									["Nightmare Ectoplasm"] = 165,
+								},
+								["n_dmg"] = 7326,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 32747,
+								["counter"] = 80,
+								["total"] = 7921,
+								["c_max"] = 150,
+								["id"] = 67485,
 								["r_dmg"] = 0,
-								["IMMUNE"] = 1,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["n_amt"] = 76,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[16409] = {
 								["c_amt"] = 2,
@@ -13051,18 +11894,18 @@ _detalhes_database = {
 								["targets"] = {
 									["Deviate Dreadfang"] = 105,
 									["Deviate Shambler"] = 87,
-									["Deviate Moccasin"] = 35,
+									["Verdan the Everliving"] = 87,
 									["Deviate Guardian"] = 70,
-									["Skum"] = 70,
-									["Lord Pythas"] = 35,
+									["Deviate Viper"] = 105,
+									["Lord Cobrahn"] = 35,
 									["Druid of the Fang"] = 210,
 									["Deviate Venomwing"] = 70,
 									["Evolving Ectoplasm"] = 70,
 									["Deviate Adder"] = 70,
-									["Deviate Viper"] = 105,
-									["Lord Cobrahn"] = 35,
+									["Deviate Moccasin"] = 35,
+									["Lord Pythas"] = 35,
 									["Deviate Ravager"] = 105,
-									["Verdan the Everliving"] = 87,
+									["Skum"] = 70,
 								},
 								["n_dmg"] = 1050,
 								["n_min"] = 0,
@@ -13072,48 +11915,16 @@ _detalhes_database = {
 								["c_max"] = 52,
 								["id"] = 16409,
 								["r_dmg"] = 0,
-								["MISS"] = 2,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 30,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[53408] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Deviate Dreadfang"] = 0,
-									["Deviate Venomwing"] = 0,
-									["Deviate Guardian"] = 0,
-									["Druid of the Fang"] = 0,
-									["Deviate Shambler"] = 0,
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 6,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 53408,
-								["r_dmg"] = 0,
-								["MISS"] = 6,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["MISS"] = 2,
 							},
 							[853] = {
 								["c_amt"] = 0,
@@ -13134,77 +11945,92 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 853,
 								["r_dmg"] = 0,
-								["IMMUNE"] = 1,
-								["MISS"] = 2,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["extra"] = {
 								},
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_dmg"] = 0,
+								["n_amt"] = 0,
+								["MISS"] = 2,
+								["IMMUNE"] = 1,
+							},
+							[53408] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Deviate Dreadfang"] = 0,
+									["Deviate Venomwing"] = 0,
+									["Deviate Guardian"] = 0,
+									["Deviate Shambler"] = 0,
+									["Druid of the Fang"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 6,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 53408,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[67485] = {
-								["c_amt"] = 4,
-								["b_amt"] = 0,
-								["c_dmg"] = 595,
-								["g_amt"] = 0,
-								["n_max"] = 101,
-								["targets"] = {
-									["Lord Serpentis"] = 100,
-									["Deviate Shambler"] = 1049,
-									["Deviate Guardian"] = 938,
-									["Deviate Adder"] = 447,
-									["Deviate Viper"] = 298,
-									["Deviate Ravager"] = 343,
-									["Deviate Dreadfang"] = 300,
-									["Verdan the Everliving"] = 100,
-									["Deviate Lasher"] = 200,
-									["Kresh"] = 99,
-									["Nightmare Ectoplasm"] = 165,
-									["Druid of the Fang"] = 2944,
-									["Deviate Venomwing"] = 128,
-									["Evolving Ectoplasm"] = 298,
-									["Deviate Crocolisk"] = 99,
-									["Deviate Moccasin"] = 200,
-									["Lord Cobrahn"] = 99,
-									["Deviate Python"] = 14,
-									["Skum"] = 100,
-								},
-								["n_dmg"] = 7326,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 80,
-								["total"] = 7921,
-								["c_max"] = 150,
-								["id"] = 67485,
-								["r_dmg"] = 0,
 								["extra"] = {
 								},
+								["MISS"] = 6,
+							},
+							[32747] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verdan the Everliving"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 1,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 32747,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 76,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["n_amt"] = 0,
+								["extra"] = {
+								},
+								["IMMUNE"] = 1,
 							},
 						},
 						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["end_time"] = 1678889931,
-					["friendlyfire"] = {
-					},
+					["total"] = 54400.26743400001,
+					["on_hold"] = false,
 					["damage_taken"] = 25397.26743400001,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
+					["last_event"] = 0,
+					["last_dps"] = 0,
 					["start_time"] = 1678889928,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["serial"] = "Player-4465-030F80BE",
+					["friendlyfire"] = {
+					},
 				}, -- [1]
 				{
 					["flag_original"] = 2632,
@@ -13217,20 +12043,20 @@ _detalhes_database = {
 						["Ayatolla"] = 2048,
 						["Klegg"] = 78,
 					},
-					["end_time"] = 1678889931,
+					["last_dps"] = 0,
 					["pets"] = {
 					},
 					["damage_from"] = {
-						["Ayatolla"] = true,
 						["Klegg"] = true,
+						["Disciple of Naralex"] = true,
 						["Tadibey"] = true,
 						["Tirbuson"] = true,
 						["Palepala"] = true,
-						["Disciple of Naralex"] = true,
+						["Ayatolla"] = true,
 						["Searing Totem II <Tadibey>"] = true,
 					},
-					["serial"] = "Creature-0-4447-43-10040-3637-000011D3B2",
-					["friendlyfire_total"] = 0,
+					["delay"] = 0,
+					["aID"] = "3637",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 3150.033939,
@@ -13238,8 +12064,8 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["dps_started"] = false,
 					["total"] = 3150.033939,
-					["aID"] = "3637",
-					["tipo"] = 1,
+					["fight_component"] = true,
+					["damage_taken"] = 16532.033939,
 					["nome"] = "Deviate Guardian",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13262,35 +12088,35 @@ _detalhes_database = {
 								["counter"] = 94,
 								["total"] = 3150,
 								["c_max"] = 79,
-								["MISS"] = 1,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["b_dmg"] = 0,
 								["DODGE"] = 5,
-								["extra"] = {
-								},
+								["a_amt"] = 0,
 								["PARRY"] = 2,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["extra"] = {
+								},
 								["n_amt"] = 81,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["MISS"] = 1,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
 					["monster"] = true,
+					["end_time"] = 1678889931,
+					["friendlyfire_total"] = 0,
+					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["friendlyfire"] = {
 					},
-					["fight_component"] = true,
-					["on_hold"] = false,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["last_dps"] = 0,
 					["start_time"] = 1678889928,
-					["delay"] = 0,
-					["damage_taken"] = 16532.033939,
+					["serial"] = "Creature-0-4447-43-10040-3637-000011D3B2",
+					["on_hold"] = false,
 				}, -- [2]
 				{
 					["flag_original"] = 1298,
@@ -13305,54 +12131,54 @@ _detalhes_database = {
 						["Deviate Viper"] = 3478,
 						["Lady Anacondra"] = 691,
 						["Deviate Ravager"] = 2822,
-						["Lord Serpentis"] = 1280,
+						["Devouring Ectoplasm"] = 0,
 						["Deviate Dreadfang"] = 5312,
 						["Verdan the Everliving"] = 1357,
-						["Skum"] = 1164,
-						["Lord Pythas"] = 617,
+						["Deviate Python"] = 525,
+						["Lord Cobrahn"] = 429,
 						["Deviate Lasher"] = 516,
-						["Deviate Crocolisk"] = 876,
 						["Nightmare Ectoplasm"] = 1008,
+						["Mutanus the Devourer"] = 1100,
 						["Kresh"] = 215,
 						["Druid of the Fang"] = 21082,
 						["Deviate Venomwing"] = 2677,
 						["Evolving Ectoplasm"] = 4234,
-						["Mutanus the Devourer"] = 1100,
+						["Deviate Crocolisk"] = 876,
 						["Deviate Moccasin"] = 1600,
-						["Lord Cobrahn"] = 429,
-						["Deviate Python"] = 525,
-						["Devouring Ectoplasm"] = 0,
+						["Lord Pythas"] = 617,
+						["Skum"] = 1164,
+						["Lord Serpentis"] = 1280,
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["friendlyfire_total"] = 0,
 					["damage_from"] = {
 						["Deviate Dreadfang"] = true,
 						["Deviate Shambler"] = true,
-						["Verdan the Everliving"] = true,
+						["Deviate Lasher"] = true,
 						["Deviate Python"] = true,
 						["Deviate Guardian"] = true,
-						["Mutanus the Devourer"] = true,
+						["Lord Pythas"] = true,
 						["Environment (Fire)"] = true,
 						["Druid of the Fang"] = true,
 						["Deviate Venomwing"] = true,
 						["Evolving Ectoplasm"] = true,
-						["Nightmare Ectoplasm"] = true,
+						["Mutanus the Devourer"] = true,
 						["Deviate Viper"] = true,
 						["Lady Anacondra"] = true,
-						["Lord Pythas"] = true,
-						["Deviate Lasher"] = true,
+						["Nightmare Ectoplasm"] = true,
+						["Verdan the Everliving"] = true,
 					},
-					["classe"] = "ROGUE",
+					["aID"] = "4465-04243C1F",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 62079.28764000001,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["dps_started"] = false,
-					["total"] = 62079.28764000001,
-					["aID"] = "4465-04243C1F",
-					["serial"] = "Player-4465-04243C1F",
+					["end_time"] = 1678889931,
+					["classe"] = "ROGUE",
+					["delay"] = 0,
 					["nome"] = "Klegg",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13370,45 +12196,45 @@ _detalhes_database = {
 									["Deviate Viper"] = 2054,
 									["Lady Anacondra"] = 378,
 									["Deviate Ravager"] = 1776,
-									["Lord Serpentis"] = 718,
+									["Devouring Ectoplasm"] = 0,
 									["Deviate Dreadfang"] = 3079,
 									["Verdan the Everliving"] = 746,
-									["Skum"] = 654,
-									["Lord Pythas"] = 469,
+									["Deviate Python"] = 275,
+									["Lord Cobrahn"] = 175,
 									["Deviate Lasher"] = 224,
-									["Deviate Crocolisk"] = 428,
 									["Nightmare Ectoplasm"] = 586,
+									["Mutanus the Devourer"] = 610,
 									["Kresh"] = 106,
 									["Druid of the Fang"] = 12511,
 									["Deviate Venomwing"] = 1585,
 									["Evolving Ectoplasm"] = 1996,
-									["Mutanus the Devourer"] = 610,
+									["Deviate Crocolisk"] = 428,
 									["Deviate Moccasin"] = 964,
-									["Lord Cobrahn"] = 175,
-									["Deviate Python"] = 275,
-									["Devouring Ectoplasm"] = 0,
+									["Lord Pythas"] = 469,
+									["Skum"] = 654,
+									["Lord Serpentis"] = 718,
 								},
 								["n_dmg"] = 22594,
 								["n_min"] = 0,
 								["g_dmg"] = 5564,
 								["counter"] = 1298,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["total"] = 35552,
 								["c_max"] = 112,
+								["b_dmg"] = 602,
 								["EVADE"] = 2,
-								["id"] = 1,
 								["r_dmg"] = 0,
 								["DODGE"] = 59,
-								["MISS"] = 258,
+								["a_amt"] = 0,
 								["extra"] = {
 								},
 								["PARRY"] = 33,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["MISS"] = 258,
 								["n_amt"] = 649,
-								["b_dmg"] = 602,
-								["r_amt"] = 0,
+								["id"] = 1,
+								["a_dmg"] = 0,
 							}, -- [1]
 							[1758] = {
 								["c_amt"] = 35,
@@ -13426,41 +12252,41 @@ _detalhes_database = {
 									["Deviate Ravager"] = 884,
 									["Deviate Dreadfang"] = 1561,
 									["Verdan the Everliving"] = 354,
-									["Skum"] = 319,
+									["Deviate Lasher"] = 120,
 									["Deviate Python"] = 110,
-									["Mutanus the Devourer"] = 213,
-									["Lord Pythas"] = 148,
-									["Nightmare Ectoplasm"] = 366,
+									["Deviate Crocolisk"] = 448,
+									["Lord Cobrahn"] = 89,
+									["Kresh"] = 47,
 									["Druid of the Fang"] = 5949,
 									["Deviate Venomwing"] = 693,
 									["Evolving Ectoplasm"] = 1653,
-									["Kresh"] = 47,
+									["Mutanus the Devourer"] = 213,
 									["Deviate Moccasin"] = 425,
-									["Lord Cobrahn"] = 89,
-									["Deviate Crocolisk"] = 448,
-									["Deviate Lasher"] = 120,
+									["Lord Pythas"] = 148,
+									["Nightmare Ectoplasm"] = 366,
+									["Skum"] = 319,
 								},
 								["n_dmg"] = 15091,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
 								["counter"] = 374,
-								["MISS"] = 2,
+								["r_amt"] = 0,
 								["total"] = 18631,
 								["c_max"] = 123,
+								["b_dmg"] = 484,
 								["EVADE"] = 1,
-								["id"] = 1758,
 								["r_dmg"] = 0,
 								["DODGE"] = 23,
-								["a_dmg"] = 0,
+								["a_amt"] = 0,
 								["extra"] = {
 								},
 								["PARRY"] = 10,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["a_dmg"] = 0,
 								["n_amt"] = 303,
-								["b_dmg"] = 484,
-								["r_amt"] = 0,
+								["id"] = 1758,
+								["MISS"] = 2,
 							},
 							[1776] = {
 								["c_amt"] = 1,
@@ -13480,16 +12306,16 @@ _detalhes_database = {
 								["c_max"] = 51,
 								["id"] = 1776,
 								["r_dmg"] = 0,
-								["DODGE"] = 1,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 8,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["extra"] = {
+								},
+								["DODGE"] = 1,
 							},
 							[6761] = {
 								["c_amt"] = 6,
@@ -13500,20 +12326,20 @@ _detalhes_database = {
 								["targets"] = {
 									["Deviate Dreadfang"] = 387,
 									["Deviate Shambler"] = 317,
-									["Lord Serpentis"] = 84,
-									["Deviate Adder"] = 214,
-									["Lady Anacondra"] = 3,
-									["Deviate Guardian"] = 242,
-									["Deviate Moccasin"] = 46,
+									["Verdan the Everliving"] = 61,
 									["Nightmare Ectoplasm"] = 26,
+									["Lord Cobrahn"] = 70,
+									["Deviate Guardian"] = 242,
+									["Deviate Viper"] = 172,
+									["Mutanus the Devourer"] = 79,
 									["Druid of the Fang"] = 1077,
 									["Deviate Venomwing"] = 194,
 									["Evolving Ectoplasm"] = 371,
-									["Mutanus the Devourer"] = 79,
-									["Deviate Viper"] = 172,
-									["Lord Cobrahn"] = 70,
+									["Deviate Adder"] = 214,
+									["Deviate Moccasin"] = 46,
+									["Lady Anacondra"] = 3,
 									["Deviate Ravager"] = 162,
-									["Verdan the Everliving"] = 61,
+									["Lord Serpentis"] = 84,
 								},
 								["n_dmg"] = 2999,
 								["n_min"] = 0,
@@ -13523,15 +12349,15 @@ _detalhes_database = {
 								["c_max"] = 110,
 								["id"] = 6761,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 43,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 60,
-								["b_dmg"] = 43,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[3018] = {
 								["c_amt"] = 1,
@@ -13551,15 +12377,15 @@ _detalhes_database = {
 								["c_max"] = 7,
 								["id"] = 3018,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 1,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[7294] = {
 								["c_amt"] = 0,
@@ -13587,16 +12413,16 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 7294,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["RESIST"] = 3,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 58,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 58,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["RESIST"] = 3,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[703] = {
 								["c_amt"] = 0,
@@ -13607,19 +12433,19 @@ _detalhes_database = {
 								["targets"] = {
 									["Deviate Dreadfang"] = 195,
 									["Deviate Shambler"] = 256,
-									["Verdan the Everliving"] = 196,
-									["Deviate Moccasin"] = 165,
+									["Lord Serpentis"] = 194,
+									["Kresh"] = 62,
 									["Deviate Guardian"] = 99,
-									["Lady Anacondra"] = 156,
-									["Deviate Viper"] = 131,
+									["Lord Cobrahn"] = 95,
+									["Skum"] = 191,
 									["Druid of the Fang"] = 1273,
 									["Deviate Venomwing"] = 131,
 									["Evolving Ectoplasm"] = 162,
 									["Mutanus the Devourer"] = 198,
-									["Skum"] = 191,
-									["Lord Cobrahn"] = 95,
-									["Kresh"] = 62,
-									["Lord Serpentis"] = 194,
+									["Deviate Moccasin"] = 165,
+									["Lady Anacondra"] = 156,
+									["Deviate Viper"] = 131,
+									["Verdan the Everliving"] = 196,
 								},
 								["n_dmg"] = 3504,
 								["n_min"] = 0,
@@ -13629,30 +12455,30 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 703,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 109,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["end_time"] = 1678889931,
-					["friendlyfire"] = {
-					},
+					["total"] = 62079.28764000001,
+					["on_hold"] = false,
 					["damage_taken"] = 3458.287639999999,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
+					["last_event"] = 0,
+					["last_dps"] = 0,
 					["start_time"] = 1678889928,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["serial"] = "Player-4465-04243C1F",
+					["friendlyfire"] = {
+					},
 				}, -- [3]
 				{
 					["flag_original"] = 2600,
@@ -13662,38 +12488,38 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 28.030863,
 					["damage_from"] = {
 						["Klegg"] = true,
 						["Tadibey"] = true,
 					},
-					["classe"] = "UNKNOW",
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.030863,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["total"] = 0.030863,
+					["dps_started"] = false,
 					["fight_component"] = true,
 					["end_time"] = 1678889931,
-					["aID"] = "2914",
-					["serial"] = "Creature-0-4447-43-10040-2914-000991D3B3",
+					["classe"] = "UNKNOW",
+					["delay"] = 0,
 					["nome"] = "Snake",
 					["spells"] = {
 						["_ActorTable"] = {
 						},
 						["tipo"] = 2,
 					},
-					["dps_started"] = false,
-					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
-					["last_event"] = 0,
-					["custom"] = 0,
-					["tipo"] = 1,
+					["total"] = 0.030863,
+					["aID"] = "2914",
 					["last_dps"] = 0,
+					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1678889928,
-					["delay"] = 0,
-					["damage_taken"] = 28.030863,
+					["serial"] = "Creature-0-4447-43-10040-2914-000991D3B3",
+					["on_hold"] = false,
 				}, -- [4]
 				{
 					["flag_original"] = 1298,
@@ -13703,46 +12529,45 @@ _detalhes_database = {
 						["Deviate Shambler"] = 3258,
 						["Deviate Python"] = 171,
 						["Deviate Guardian"] = 1618,
-						["Deviate Lasher"] = 646,
-						["Deviate Adder"] = 2271,
-						["Druid of the Fang"] = 8681,
-						["Lord Cobrahn"] = 475,
-						["Evolving Ectoplasm"] = 1429,
-						["Deviate Crocolisk"] = 590,
-						["Deviate Viper"] = 2438,
-						["Lady Anacondra"] = 427,
-						["Deviate Ravager"] = 1068,
 						["Kresh"] = 438,
+						["Deviate Crocolisk"] = 590,
+						["Druid of the Fang"] = 8681,
+						["Lady Anacondra"] = 427,
+						["Evolving Ectoplasm"] = 1429,
+						["Deviate Adder"] = 2271,
+						["Deviate Viper"] = 2438,
+						["Lord Cobrahn"] = 475,
+						["Deviate Ravager"] = 1068,
+						["Deviate Lasher"] = 646,
 					},
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 11284.137738,
 					["damage_from"] = {
 						["Deviate Shambler"] = true,
 						["Deviate Python"] = true,
 						["Deviate Guardian"] = true,
-						["Deviate Lasher"] = true,
-						["Deviate Adder"] = true,
-						["Druid of the Fang"] = true,
-						["Lord Cobrahn"] = true,
-						["Evolving Ectoplasm"] = true,
-						["Deviate Crocolisk"] = true,
-						["Deviate Viper"] = true,
-						["Lady Anacondra"] = true,
-						["Deviate Ravager"] = true,
 						["Kresh"] = true,
+						["Deviate Crocolisk"] = true,
+						["Druid of the Fang"] = true,
+						["Lady Anacondra"] = true,
+						["Evolving Ectoplasm"] = true,
+						["Deviate Adder"] = true,
+						["Deviate Viper"] = true,
+						["Lord Cobrahn"] = true,
+						["Deviate Ravager"] = true,
+						["Deviate Lasher"] = true,
 					},
-					["friendlyfire_total"] = 0,
+					["aID"] = "4465-04270451",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 23510.137738,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["dps_started"] = false,
-					["end_time"] = 1678889931,
-					["aID"] = "4465-04270451",
-					["serial"] = "Player-4465-04270451",
+					["total"] = 23510.137738,
+					["friendlyfire_total"] = 0,
+					["delay"] = 0,
 					["nome"] = "Palepala",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13756,16 +12581,16 @@ _detalhes_database = {
 									["Deviate Shambler"] = 1301,
 									["Deviate Python"] = 132,
 									["Deviate Guardian"] = 629,
-									["Deviate Lasher"] = 123,
-									["Deviate Adder"] = 908,
-									["Druid of the Fang"] = 3661,
-									["Lord Cobrahn"] = 201,
-									["Evolving Ectoplasm"] = 650,
-									["Deviate Crocolisk"] = 274,
-									["Deviate Viper"] = 1002,
-									["Lady Anacondra"] = 269,
-									["Deviate Ravager"] = 511,
 									["Kresh"] = 71,
+									["Deviate Crocolisk"] = 274,
+									["Druid of the Fang"] = 3661,
+									["Lady Anacondra"] = 269,
+									["Evolving Ectoplasm"] = 650,
+									["Deviate Adder"] = 908,
+									["Deviate Viper"] = 1002,
+									["Lord Cobrahn"] = 201,
+									["Deviate Ravager"] = 511,
+									["Deviate Lasher"] = 123,
 								},
 								["n_dmg"] = 6928,
 								["n_min"] = 0,
@@ -13773,20 +12598,20 @@ _detalhes_database = {
 								["counter"] = 273,
 								["total"] = 9732,
 								["c_max"] = 91,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["DODGE"] = 13,
+								["b_dmg"] = 305,
 								["MISS"] = 12,
-								["extra"] = {
-								},
+								["a_amt"] = 0,
 								["PARRY"] = 10,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["extra"] = {
+								},
 								["n_amt"] = 187,
-								["b_dmg"] = 305,
-								["r_amt"] = 0,
+								["DODGE"] = 13,
+								["a_dmg"] = 0,
 							}, -- [1]
 							[62124] = {
 								["c_amt"] = 0,
@@ -13807,16 +12632,16 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 62124,
 								["r_dmg"] = 0,
-								["MISS"] = 3,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["extra"] = {
+								},
+								["MISS"] = 3,
 							},
 							[25742] = {
 								["c_amt"] = 0,
@@ -13828,16 +12653,16 @@ _detalhes_database = {
 									["Deviate Shambler"] = 377,
 									["Deviate Python"] = 19,
 									["Deviate Guardian"] = 194,
-									["Deviate Lasher"] = 41,
-									["Deviate Adder"] = 249,
-									["Druid of the Fang"] = 1043,
-									["Lord Cobrahn"] = 67,
-									["Evolving Ectoplasm"] = 192,
-									["Deviate Crocolisk"] = 76,
-									["Deviate Viper"] = 308,
-									["Lady Anacondra"] = 79,
-									["Deviate Ravager"] = 154,
 									["Kresh"] = 59,
+									["Deviate Crocolisk"] = 76,
+									["Druid of the Fang"] = 1043,
+									["Lady Anacondra"] = 79,
+									["Evolving Ectoplasm"] = 192,
+									["Deviate Adder"] = 249,
+									["Deviate Viper"] = 308,
+									["Lord Cobrahn"] = 67,
+									["Deviate Ravager"] = 154,
+									["Deviate Lasher"] = 41,
 								},
 								["n_dmg"] = 2858,
 								["n_min"] = 0,
@@ -13847,15 +12672,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 25742,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 302,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[67485] = {
 								["c_amt"] = 2,
@@ -13868,13 +12693,13 @@ _detalhes_database = {
 									["Deviate Lasher"] = 94,
 									["Deviate Guardian"] = 485,
 									["Druid of the Fang"] = 2573,
-									["Kresh"] = 195,
+									["Deviate Adder"] = 468,
 									["Evolving Ectoplasm"] = 288,
-									["Deviate Crocolisk"] = 96,
+									["Kresh"] = 195,
 									["Deviate Viper"] = 421,
 									["Lord Cobrahn"] = 93,
 									["Deviate Ravager"] = 98,
-									["Deviate Adder"] = 468,
+									["Deviate Crocolisk"] = 96,
 								},
 								["n_dmg"] = 5191,
 								["n_min"] = 0,
@@ -13884,15 +12709,53 @@ _detalhes_database = {
 								["c_max"] = 140,
 								["id"] = 67485,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 56,
-								["b_dmg"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[20187] = {
+								["c_amt"] = 3,
+								["b_amt"] = 0,
+								["c_dmg"] = 226,
+								["g_amt"] = 0,
+								["n_max"] = 39,
+								["targets"] = {
+									["Deviate Shambler"] = 450,
+									["Deviate Lasher"] = 62,
+									["Deviate Guardian"] = 200,
+									["Kresh"] = 77,
+									["Druid of the Fang"] = 934,
+									["Lady Anacondra"] = 39,
+									["Evolving Ectoplasm"] = 189,
+									["Deviate Adder"] = 296,
+									["Deviate Viper"] = 333,
+									["Lord Cobrahn"] = 74,
+									["Deviate Ravager"] = 155,
+									["Deviate Crocolisk"] = 74,
+								},
+								["n_dmg"] = 2657,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 75,
+								["total"] = 2883,
+								["c_max"] = 76,
+								["id"] = 20187,
+								["r_dmg"] = 0,
 								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 72,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[7294] = {
 								["c_amt"] = 0,
@@ -13904,16 +12767,16 @@ _detalhes_database = {
 									["Deviate Shambler"] = 470,
 									["Deviate Python"] = 20,
 									["Deviate Guardian"] = 110,
-									["Deviate Lasher"] = 326,
-									["Deviate Adder"] = 350,
-									["Druid of the Fang"] = 470,
-									["Lord Cobrahn"] = 40,
-									["Evolving Ectoplasm"] = 110,
-									["Deviate Crocolisk"] = 70,
-									["Deviate Viper"] = 374,
-									["Lady Anacondra"] = 40,
-									["Deviate Ravager"] = 150,
 									["Kresh"] = 36,
+									["Deviate Crocolisk"] = 70,
+									["Druid of the Fang"] = 470,
+									["Lady Anacondra"] = 40,
+									["Evolving Ectoplasm"] = 110,
+									["Deviate Adder"] = 350,
+									["Deviate Viper"] = 374,
+									["Lord Cobrahn"] = 40,
+									["Deviate Ravager"] = 150,
+									["Deviate Lasher"] = 326,
 								},
 								["n_dmg"] = 2566,
 								["n_min"] = 0,
@@ -13923,16 +12786,16 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 7294,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["RESIST"] = 12,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 260,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 260,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["RESIST"] = 12,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[20271] = {
 								["c_amt"] = 0,
@@ -13951,68 +12814,31 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 20271,
 								["r_dmg"] = 0,
-								["MISS"] = 1,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[20187] = {
-								["c_amt"] = 3,
-								["b_amt"] = 0,
-								["c_dmg"] = 226,
-								["g_amt"] = 0,
-								["n_max"] = 39,
-								["targets"] = {
-									["Deviate Shambler"] = 450,
-									["Deviate Lasher"] = 62,
-									["Deviate Guardian"] = 200,
-									["Deviate Adder"] = 296,
-									["Druid of the Fang"] = 934,
-									["Lord Cobrahn"] = 74,
-									["Evolving Ectoplasm"] = 189,
-									["Deviate Crocolisk"] = 74,
-									["Deviate Viper"] = 333,
-									["Lady Anacondra"] = 39,
-									["Deviate Ravager"] = 155,
-									["Kresh"] = 77,
-								},
-								["n_dmg"] = 2657,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 75,
-								["total"] = 2883,
-								["c_max"] = 76,
-								["id"] = 20187,
-								["r_dmg"] = 0,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 72,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["MISS"] = 1,
 							},
 						},
 						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["total"] = 23510.137738,
-					["classe"] = "PALADIN",
+					["end_time"] = 1678889931,
+					["last_dps"] = 0,
 					["on_hold"] = false,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1678889928,
-					["delay"] = 0,
-					["damage_taken"] = 11284.137738,
+					["serial"] = "Player-4465-04270451",
+					["classe"] = "PALADIN",
 				}, -- [5]
 				{
 					["flag_original"] = 1297,
@@ -14023,61 +12849,61 @@ _detalhes_database = {
 						["Deviate Shambler"] = 3251,
 						["Serpentbloom Snake"] = 7,
 						["Deviate Guardian"] = 3109,
-						["Deviate Crocolisk"] = 65,
-						["Deviate Ravager"] = 2674,
+						["Deviate Viper"] = 1648,
+						["Nightmare Ectoplasm"] = 1220,
 						["Deviate Adder"] = 1189,
 						["Skum"] = 1025,
-						["Lord Cobrahn"] = 524,
-						["Razormane Warfrenzy"] = 0,
-						["Deviate Lasher"] = 1802,
+						["Lord Pythas"] = 140,
+						["Deviate Ravager"] = 2674,
+						["Deviate Python"] = 914,
 						["Deviate Dreadfang"] = 1642,
 						["Verdan the Everliving"] = 1125,
-						["Nightmare Ectoplasm"] = 1220,
-						["Deviate Python"] = 914,
+						["Mutanus the Devourer"] = 1388,
 						["Searing Totem II <Razormane Seer>"] = 0,
+						["Deviate Lasher"] = 1802,
 						["Razormane Seer"] = 0,
 						["Lord Serpentis"] = 289,
 						["Kresh"] = 265,
 						["Druid of the Fang"] = 12103,
 						["Deviate Venomwing"] = 2074,
 						["Evolving Ectoplasm"] = 3603,
-						["Mutanus the Devourer"] = 1388,
+						["Deviate Crocolisk"] = 65,
 						["Deviate Moccasin"] = 272,
-						["Lord Pythas"] = 140,
+						["Lord Cobrahn"] = 524,
 						["Razormane Stalker"] = 0,
-						["Deviate Viper"] = 1648,
+						["Razormane Warfrenzy"] = 0,
 					},
 					["pets"] = {
 						"Searing Totem II <Tadibey>", -- [1]
 						"Stoneclaw Totem II <Tadibey>", -- [2]
 					},
-					["last_dps"] = 0,
+					["friendlyfire_total"] = 0,
 					["damage_from"] = {
 						["Deviate Dreadfang"] = true,
 						["Deviate Shambler"] = true,
 						["Deviate Lasher"] = true,
 						["Deviate Guardian"] = true,
-						["Skum"] = true,
+						["Deviate Python"] = true,
 						["Environment (Fire)"] = true,
 						["Druid of the Fang"] = true,
 						["Deviate Venomwing"] = true,
 						["Evolving Ectoplasm"] = true,
 						["Nightmare Ectoplasm"] = true,
-						["Deviate Viper"] = true,
+						["Skum"] = true,
 						["Lord Pythas"] = true,
 						["Deviate Ravager"] = true,
-						["Deviate Python"] = true,
+						["Deviate Viper"] = true,
 					},
-					["classe"] = "SHAMAN",
+					["aID"] = "4465-0416001E",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 38279.26628000001,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["dps_started"] = false,
-					["total"] = 40350.26628000001,
-					["aID"] = "4465-0416001E",
-					["serial"] = "Player-4465-0416001E",
+					["end_time"] = 1678889931,
+					["classe"] = "SHAMAN",
+					["delay"] = 0,
 					["nome"] = "Tadibey",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14096,7 +12922,7 @@ _detalhes_database = {
 									["Deviate Ravager"] = 385,
 									["Deviate Dreadfang"] = 774,
 									["Deviate Python"] = 126,
-									["Deviate Viper"] = 1003,
+									["Deviate Lasher"] = 43,
 									["Razormane Warfrenzy"] = 0,
 									["Druid of the Fang"] = 5865,
 									["Deviate Venomwing"] = 1274,
@@ -14105,29 +12931,29 @@ _detalhes_database = {
 									["Razormane Seer"] = 0,
 									["Lord Cobrahn"] = 227,
 									["Razormane Stalker"] = 0,
-									["Deviate Lasher"] = 43,
+									["Deviate Viper"] = 1003,
 								},
 								["n_dmg"] = 11755,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
 								["counter"] = 253,
-								["MISS"] = 5,
+								["r_amt"] = 0,
 								["total"] = 14281,
 								["c_max"] = 140,
+								["b_dmg"] = 159,
 								["EVADE"] = 2,
-								["id"] = 1,
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
-								["DODGE"] = 8,
+								["a_amt"] = 0,
 								["extra"] = {
 								},
 								["PARRY"] = 3,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["DODGE"] = 8,
 								["n_amt"] = 213,
-								["b_dmg"] = 159,
-								["r_amt"] = 0,
+								["id"] = 1,
+								["MISS"] = 5,
 							}, -- [1]
 							[8052] = {
 								["c_amt"] = 12,
@@ -14145,17 +12971,17 @@ _detalhes_database = {
 									["Deviate Dreadfang"] = 211,
 									["Verdan the Everliving"] = 268,
 									["Deviate Lasher"] = 64,
-									["Deviate Crocolisk"] = 65,
-									["Razormane Warfrenzy"] = 0,
+									["Deviate Viper"] = 84,
 									["Mutanus the Devourer"] = 239,
+									["Searing Totem II <Razormane Seer>"] = 0,
 									["Druid of the Fang"] = 1619,
 									["Deviate Venomwing"] = 181,
 									["Evolving Ectoplasm"] = 657,
-									["Kresh"] = 101,
+									["Deviate Crocolisk"] = 65,
 									["Razormane Seer"] = 0,
-									["Searing Totem II <Razormane Seer>"] = 0,
+									["Kresh"] = 101,
 									["Razormane Stalker"] = 0,
-									["Deviate Viper"] = 84,
+									["Razormane Warfrenzy"] = 0,
 								},
 								["n_dmg"] = 4944,
 								["n_min"] = 0,
@@ -14165,44 +12991,207 @@ _detalhes_database = {
 								["c_max"] = 97,
 								["id"] = 8052,
 								["r_dmg"] = 0,
-								["IMMUNE"] = 2,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 148,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["extra"] = {
+								},
+								["IMMUNE"] = 2,
 							},
-							[57994] = {
+							[8045] = {
+								["c_amt"] = 2,
+								["b_amt"] = 0,
+								["c_dmg"] = 201,
+								["g_amt"] = 0,
+								["n_max"] = 85,
+								["targets"] = {
+									["Druid of the Fang"] = 280,
+									["Deviate Shambler"] = 68,
+									["Evolving Ectoplasm"] = 0,
+									["Razormane Seer"] = 0,
+									["Deviate Ravager"] = 293,
+									["Razormane Warfrenzy"] = 0,
+									["Razormane Stalker"] = 0,
+								},
+								["n_dmg"] = 440,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 13,
+								["total"] = 641,
+								["c_max"] = 126,
+								["id"] = 8045,
+								["r_dmg"] = 280,
+								["r_amt"] = 5,
+								["b_dmg"] = 0,
+								["n_amt"] = 7,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_dmg"] = 0,
+								["RESIST"] = 3,
+								["extra"] = {
+								},
+								["IMMUNE"] = 1,
+							},
+							[8349] = {
+								["c_amt"] = 7,
+								["b_amt"] = 0,
+								["c_dmg"] = 611,
+								["g_amt"] = 0,
+								["n_max"] = 70,
+								["targets"] = {
+									["Snake"] = 21,
+									["Deviate Shambler"] = 680,
+									["Serpentbloom Snake"] = 7,
+									["Deviate Python"] = 468,
+									["Deviate Guardian"] = 337,
+									["Druid of the Fang"] = 751,
+									["Deviate Lasher"] = 712,
+									["Evolving Ectoplasm"] = 124,
+									["Nightmare Ectoplasm"] = 557,
+									["Deviate Viper"] = 123,
+									["Lord Cobrahn"] = 84,
+									["Deviate Ravager"] = 259,
+									["Deviate Adder"] = 67,
+								},
+								["n_dmg"] = 3579,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 69,
+								["total"] = 4190,
+								["c_max"] = 102,
+								["id"] = 8349,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 62,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[10444] = {
+								["c_amt"] = 21,
+								["b_amt"] = 0,
+								["c_dmg"] = 766,
+								["g_amt"] = 0,
+								["n_max"] = 25,
+								["targets"] = {
+									["Lord Serpentis"] = 48,
+									["Deviate Shambler"] = 415,
+									["Deviate Guardian"] = 351,
+									["Deviate Adder"] = 133,
+									["Skum"] = 173,
+									["Deviate Ravager"] = 183,
+									["Deviate Dreadfang"] = 320,
+									["Deviate Python"] = 48,
+									["Deviate Lasher"] = 25,
+									["Razormane Warfrenzy"] = 0,
+									["Druid of the Fang"] = 2133,
+									["Deviate Venomwing"] = 535,
+									["Evolving Ectoplasm"] = 666,
+									["Kresh"] = 74,
+									["Razormane Seer"] = 0,
+									["Lord Cobrahn"] = 109,
+									["Razormane Stalker"] = 0,
+									["Deviate Viper"] = 373,
+								},
+								["n_dmg"] = 4820,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 223,
+								["total"] = 5586,
+								["c_max"] = 37,
+								["id"] = 10444,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 200,
+								["extra"] = {
+								},
+								["IMMUNE"] = 2,
+							},
+							[26365] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["n_max"] = 45,
 								["targets"] = {
-									["Druid of the Fang"] = 0,
+									["Druid of the Fang"] = 96,
+									["Razormane Warfrenzy"] = 0,
+									["Razormane Stalker"] = 0,
+									["Razormane Seer"] = 0,
+									["Deviate Guardian"] = 45,
+									["Deviate Ravager"] = 135,
+									["Deviate Lasher"] = 102,
 								},
-								["n_dmg"] = 0,
+								["n_dmg"] = 378,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 29,
-								["total"] = 0,
+								["counter"] = 10,
+								["total"] = 378,
 								["c_max"] = 0,
-								["id"] = 57994,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["RESIST"] = 29,
+								["id"] = 26365,
+								["r_dmg"] = 96,
+								["r_amt"] = 3,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 0,
+								["n_amt"] = 10,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[915] = {
+								["c_amt"] = 4,
+								["b_amt"] = 0,
+								["c_dmg"] = 872,
+								["g_amt"] = 0,
+								["n_max"] = 148,
+								["targets"] = {
+									["Verdan the Everliving"] = 582,
+									["Deviate Lasher"] = 134,
+									["Deviate Guardian"] = 911,
+									["Deviate Shambler"] = 287,
+									["Druid of the Fang"] = 87,
+									["Razormane Warfrenzy"] = 0,
+									["Nightmare Ectoplasm"] = 281,
+									["Mutanus the Devourer"] = 1149,
+									["Deviate Moccasin"] = 272,
+									["Skum"] = 0,
+									["Deviate Ravager"] = 431,
+									["Deviate Adder"] = 516,
+								},
+								["n_dmg"] = 3778,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 33,
+								["total"] = 4650,
+								["c_max"] = 222,
+								["id"] = 915,
+								["r_dmg"] = 87,
+								["r_amt"] = 1,
 								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 27,
+								["extra"] = {
+								},
+								["IMMUNE"] = 2,
 							},
 							[7294] = {
 								["c_amt"] = 0,
@@ -14232,249 +13221,86 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 7294,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["RESIST"] = 9,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["n_amt"] = 243,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[10444] = {
-								["c_amt"] = 21,
-								["b_amt"] = 0,
-								["c_dmg"] = 766,
-								["g_amt"] = 0,
-								["n_max"] = 25,
-								["targets"] = {
-									["Lord Serpentis"] = 48,
-									["Deviate Shambler"] = 415,
-									["Deviate Guardian"] = 351,
-									["Deviate Adder"] = 133,
-									["Skum"] = 173,
-									["Deviate Ravager"] = 183,
-									["Deviate Dreadfang"] = 320,
-									["Deviate Python"] = 48,
-									["Deviate Viper"] = 373,
-									["Razormane Warfrenzy"] = 0,
-									["Druid of the Fang"] = 2133,
-									["Deviate Venomwing"] = 535,
-									["Evolving Ectoplasm"] = 666,
-									["Kresh"] = 74,
-									["Razormane Seer"] = 0,
-									["Lord Cobrahn"] = 109,
-									["Razormane Stalker"] = 0,
-									["Deviate Lasher"] = 25,
-								},
-								["n_dmg"] = 4820,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 223,
-								["total"] = 5586,
-								["c_max"] = 37,
-								["id"] = 10444,
-								["r_dmg"] = 0,
-								["IMMUNE"] = 2,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 200,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[915] = {
-								["c_amt"] = 4,
-								["b_amt"] = 0,
-								["c_dmg"] = 872,
-								["g_amt"] = 0,
-								["n_max"] = 148,
-								["targets"] = {
-									["Verdan the Everliving"] = 582,
-									["Deviate Lasher"] = 134,
-									["Deviate Guardian"] = 911,
-									["Mutanus the Devourer"] = 1149,
-									["Druid of the Fang"] = 87,
-									["Deviate Ravager"] = 431,
-									["Deviate Moccasin"] = 272,
-									["Deviate Adder"] = 516,
-									["Skum"] = 0,
-									["Nightmare Ectoplasm"] = 281,
-									["Razormane Warfrenzy"] = 0,
-									["Deviate Shambler"] = 287,
-								},
-								["n_dmg"] = 3778,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 33,
-								["total"] = 4650,
-								["c_max"] = 222,
-								["id"] = 915,
-								["r_dmg"] = 87,
-								["IMMUNE"] = 2,
+								["RESIST"] = 9,
+								["a_dmg"] = 0,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 27,
-								["b_dmg"] = 0,
-								["r_amt"] = 1,
 							},
-							[26365] = {
+							[57994] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 45,
+								["n_max"] = 0,
 								["targets"] = {
-									["Druid of the Fang"] = 96,
-									["Razormane Seer"] = 0,
-									["Deviate Ravager"] = 135,
-									["Deviate Lasher"] = 102,
-									["Deviate Guardian"] = 45,
-									["Razormane Stalker"] = 0,
-									["Razormane Warfrenzy"] = 0,
+									["Druid of the Fang"] = 0,
 								},
-								["n_dmg"] = 378,
+								["n_dmg"] = 0,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 10,
-								["total"] = 378,
+								["counter"] = 29,
+								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = 26365,
-								["r_dmg"] = 96,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 10,
-								["b_dmg"] = 0,
-								["r_amt"] = 3,
-							},
-							[8349] = {
-								["c_amt"] = 7,
-								["b_amt"] = 0,
-								["c_dmg"] = 611,
-								["g_amt"] = 0,
-								["n_max"] = 70,
-								["targets"] = {
-									["Snake"] = 21,
-									["Deviate Shambler"] = 680,
-									["Serpentbloom Snake"] = 7,
-									["Deviate Python"] = 468,
-									["Deviate Guardian"] = 337,
-									["Druid of the Fang"] = 751,
-									["Nightmare Ectoplasm"] = 557,
-									["Evolving Ectoplasm"] = 124,
-									["Deviate Adder"] = 67,
-									["Deviate Viper"] = 123,
-									["Lord Cobrahn"] = 84,
-									["Deviate Ravager"] = 259,
-									["Deviate Lasher"] = 712,
-								},
-								["n_dmg"] = 3579,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 69,
-								["total"] = 4190,
-								["c_max"] = 102,
-								["id"] = 8349,
+								["id"] = 57994,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 62,
-								["b_dmg"] = 0,
 								["r_amt"] = 0,
-							},
-							[8045] = {
-								["c_amt"] = 2,
-								["b_amt"] = 0,
-								["c_dmg"] = 201,
-								["g_amt"] = 0,
-								["n_max"] = 85,
-								["targets"] = {
-									["Druid of the Fang"] = 280,
-									["Deviate Shambler"] = 68,
-									["Evolving Ectoplasm"] = 0,
-									["Razormane Seer"] = 0,
-									["Razormane Warfrenzy"] = 0,
-									["Razormane Stalker"] = 0,
-									["Deviate Ravager"] = 293,
-								},
-								["n_dmg"] = 440,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 13,
-								["total"] = 641,
-								["c_max"] = 126,
-								["id"] = 8045,
-								["r_dmg"] = 280,
-								["IMMUNE"] = 1,
-								["extra"] = {
-								},
-								["RESIST"] = 3,
-								["a_dmg"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 7,
-								["b_dmg"] = 0,
-								["r_amt"] = 5,
+								["RESIST"] = 29,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["end_time"] = 1678889931,
-					["friendlyfire"] = {
-					},
+					["total"] = 40350.26628000001,
+					["on_hold"] = false,
 					["damage_taken"] = 9787.266280000002,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
+					["last_event"] = 0,
+					["last_dps"] = 0,
 					["start_time"] = 1678889928,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["serial"] = "Player-4465-0416001E",
+					["friendlyfire"] = {
+					},
 				}, -- [6]
 				{
 					["flag_original"] = 2632,
 					["totalabsorbed"] = 34.0446,
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["targets"] = {
-						["Tirbuson"] = 354,
+						["Ayatolla"] = 768,
 						["Tadibey"] = 656,
-						["Stoneclaw Totem II <Tadibey>"] = 195,
+						["Tirbuson"] = 354,
 						["Palepala"] = 496,
 						["Klegg"] = 82,
-						["Ayatolla"] = 768,
+						["Stoneclaw Totem II <Tadibey>"] = 195,
 					},
-					["total"] = 2551.0446,
+					["last_dps"] = 0,
 					["pets"] = {
 					},
 					["damage_from"] = {
-						["Klegg"] = true,
 						["Ayatolla"] = true,
+						["Disciple of Naralex"] = true,
 						["Tadibey"] = true,
 						["Tirbuson"] = true,
 						["Palepala"] = true,
-						["Disciple of Naralex"] = true,
+						["Klegg"] = true,
 						["Searing Totem II <Tadibey>"] = true,
 					},
-					["serial"] = "Creature-0-4447-43-10040-3640-000311D3B2",
-					["friendlyfire_total"] = 0,
+					["delay"] = 0,
+					["aID"] = "3640",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 2551.0446,
@@ -14482,8 +13308,8 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["fight_component"] = true,
 					["end_time"] = 1678889967,
-					["aID"] = "3640",
-					["tipo"] = 1,
+					["monster"] = true,
+					["damage_taken"] = 14164.0446,
 					["nome"] = "Evolving Ectoplasm",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14494,12 +13320,12 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 42,
 								["targets"] = {
-									["Tirbuson"] = 354,
+									["Klegg"] = 82,
 									["Tadibey"] = 656,
-									["Stoneclaw Totem II <Tadibey>"] = 195,
+									["Tirbuson"] = 354,
 									["Palepala"] = 496,
 									["Ayatolla"] = 768,
-									["Klegg"] = 82,
+									["Stoneclaw Totem II <Tadibey>"] = 195,
 								},
 								["n_dmg"] = 2201,
 								["n_min"] = 0,
@@ -14507,46 +13333,46 @@ _detalhes_database = {
 								["counter"] = 97,
 								["total"] = 2551,
 								["c_max"] = 75,
-								["a_dmg"] = 33,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["MISS"] = 7,
+								["b_dmg"] = 35,
 								["DODGE"] = 13,
-								["extra"] = {
-								},
+								["a_amt"] = 1,
 								["PARRY"] = 1,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 1,
+								["extra"] = {
+								},
 								["n_amt"] = 71,
-								["b_dmg"] = 35,
-								["r_amt"] = 0,
+								["MISS"] = 7,
+								["a_dmg"] = 33,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
 					["dps_started"] = false,
+					["total"] = 2551.0446,
+					["friendlyfire_total"] = 0,
+					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["friendlyfire"] = {
 					},
-					["monster"] = true,
-					["on_hold"] = false,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["last_dps"] = 0,
 					["start_time"] = 1678889964,
-					["delay"] = 0,
-					["damage_taken"] = 14164.0446,
+					["serial"] = "Creature-0-4447-43-10040-3640-000311D3B2",
+					["on_hold"] = false,
 				}, -- [7]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.035817,
 					["damage_from"] = {
-						["Klegg"] = true,
 						["Ayatolla"] = true,
+						["Disciple of Naralex"] = true,
 						["Tadibey"] = true,
 						["Tirbuson"] = true,
 						["Palepala"] = true,
-						["Disciple of Naralex"] = true,
+						["Klegg"] = true,
 						["Searing Totem II <Tadibey>"] = true,
 					},
 					["targets"] = {
@@ -14555,21 +13381,22 @@ _detalhes_database = {
 						["Ayatolla"] = 1099,
 						["Tadibey"] = 259,
 					},
-					["total"] = 1902.035817,
+					["dps_started"] = false,
 					["pets"] = {
 					},
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
-					["aID"] = "3636",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 1902.035817,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["classe"] = "UNKNOW",
-					["dps_started"] = false,
-					["end_time"] = 1678889967,
-					["last_dps"] = 0,
-					["monster"] = true,
+					["aID"] = "3636",
+					["fight_component"] = true,
+					["total"] = 1902.035817,
+					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Deviate Ravager",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14591,35 +13418,34 @@ _detalhes_database = {
 								["counter"] = 58,
 								["total"] = 1902,
 								["c_max"] = 78,
-								["DODGE"] = 2,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["MISS"] = 3,
+								["b_dmg"] = 14,
 								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["a_amt"] = 0,
 								["PARRY"] = 2,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["extra"] = {
+								},
 								["n_amt"] = 45,
-								["b_dmg"] = 14,
-								["r_amt"] = 0,
+								["MISS"] = 3,
+								["DODGE"] = 2,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["serial"] = "Creature-0-4447-43-10040-3636-000191D3B3",
-					["on_hold"] = false,
-					["fight_component"] = true,
-					["tipo"] = 1,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 10282.035817,
-					["start_time"] = 1678889964,
+					["monster"] = true,
+					["end_time"] = 1678889967,
 					["delay"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 10282.035817,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1678889964,
+					["serial"] = "Creature-0-4447-43-10040-3636-000191D3B3",
+					["last_event"] = 0,
 				}, -- [8]
 				{
 					["flag_original"] = 8465,
@@ -14630,30 +13456,30 @@ _detalhes_database = {
 						["Deviate Shambler"] = 215,
 						["Deviate Python"] = 25,
 						["Deviate Guardian"] = 81,
-						["Verdan the Everliving"] = 275,
+						["Deviate Lasher"] = 55,
 						["Druid of the Fang"] = 506,
-						["Nightmare Ectoplasm"] = 157,
-						["Evolving Ectoplasm"] = 138,
 						["Deviate Adder"] = 106,
+						["Evolving Ectoplasm"] = 138,
+						["Nightmare Ectoplasm"] = 157,
 						["Deviate Viper"] = 52,
 						["Lord Cobrahn"] = 104,
 						["Deviate Ravager"] = 357,
-						["Deviate Lasher"] = 55,
+						["Verdan the Everliving"] = 275,
 					},
 					["pets"] = {
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["damage_from"] = {
 					},
-					["friendlyfire_total"] = 0,
+					["classe"] = "PET",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 2071.083228,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1678889967,
-					["aID"] = "3902",
+					["friendlyfire_total"] = 0,
 					["ownerName"] = "Tadibey",
 					["nome"] = "Searing Totem II <Tadibey>",
 					["spells"] = {
@@ -14668,15 +13494,15 @@ _detalhes_database = {
 									["Deviate Shambler"] = 215,
 									["Deviate Python"] = 25,
 									["Deviate Guardian"] = 81,
-									["Verdan the Everliving"] = 275,
+									["Deviate Lasher"] = 55,
 									["Druid of the Fang"] = 506,
-									["Nightmare Ectoplasm"] = 157,
-									["Evolving Ectoplasm"] = 138,
 									["Deviate Adder"] = 106,
+									["Evolving Ectoplasm"] = 138,
+									["Nightmare Ectoplasm"] = 157,
 									["Deviate Viper"] = 52,
 									["Lord Cobrahn"] = 104,
 									["Deviate Ravager"] = 357,
-									["Deviate Lasher"] = 55,
+									["Verdan the Everliving"] = 275,
 								},
 								["n_dmg"] = 1851,
 								["n_min"] = 0,
@@ -14686,29 +13512,29 @@ _detalhes_database = {
 								["c_max"] = 43,
 								["id"] = 6350,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 71,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
+					["delay"] = 0,
+					["aID"] = "3902",
+					["damage_taken"] = 0.08322800000000001,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["on_hold"] = false,
+					["start_time"] = 1678889964,
 					["serial"] = "Creature-0-4447-43-10040-3902-000011D3D6",
-					["classe"] = "PET",
 					["friendlyfire"] = {
 					},
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 0.08322800000000001,
-					["start_time"] = 1678889964,
-					["delay"] = 0,
-					["last_dps"] = 0,
 				}, -- [9]
 				{
 					["flag_original"] = 1298,
@@ -14726,21 +13552,21 @@ _detalhes_database = {
 						["Deviate Dreadfang"] = 2199,
 						["Verdan the Everliving"] = 512,
 						["Deviate Lasher"] = 629,
-						["Skum"] = 640,
-						["Deviate Crocolisk"] = 271,
-						["Lord Pythas"] = 532,
+						["Mutanus the Devourer"] = 415,
+						["Nightmare Ectoplasm"] = 266,
+						["Lord Cobrahn"] = 191,
 						["Druid of the Fang"] = 7760,
 						["Deviate Venomwing"] = 1184,
 						["Evolving Ectoplasm"] = 1631,
-						["Kresh"] = 144,
+						["Deviate Crocolisk"] = 271,
 						["Deviate Moccasin"] = 640,
-						["Lord Cobrahn"] = 191,
-						["Nightmare Ectoplasm"] = 266,
-						["Mutanus the Devourer"] = 415,
+						["Lord Pythas"] = 532,
+						["Kresh"] = 144,
+						["Skum"] = 640,
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["friendlyfire_total"] = 0,
 					["damage_from"] = {
 						["Lord Serpentis"] = true,
 						["Deviate Shambler"] = true,
@@ -14758,19 +13584,19 @@ _detalhes_database = {
 						["Evolving Ectoplasm"] = true,
 						["Deviate Crocolisk"] = true,
 						["Lord Pythas"] = true,
-						["Mutanus the Devourer"] = true,
 						["Deviate Lasher"] = true,
+						["Mutanus the Devourer"] = true,
 					},
-					["classe"] = "PALADIN",
+					["aID"] = "4465-04204095",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 25332.29711900001,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["dps_started"] = false,
-					["total"] = 25332.29711900001,
-					["aID"] = "4465-04204095",
-					["serial"] = "Player-4465-04204095",
+					["end_time"] = 1678889989,
+					["classe"] = "PALADIN",
+					["delay"] = 0,
 					["nome"] = "Tirbuson",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14791,290 +13617,40 @@ _detalhes_database = {
 									["Deviate Dreadfang"] = 1353,
 									["Verdan the Everliving"] = 259,
 									["Deviate Lasher"] = 152,
-									["Skum"] = 430,
-									["Deviate Crocolisk"] = 158,
-									["Lord Pythas"] = 277,
+									["Mutanus the Devourer"] = 300,
+									["Nightmare Ectoplasm"] = 139,
+									["Lord Cobrahn"] = 99,
 									["Druid of the Fang"] = 4764,
 									["Deviate Venomwing"] = 655,
 									["Evolving Ectoplasm"] = 939,
-									["Kresh"] = 71,
+									["Deviate Crocolisk"] = 158,
 									["Deviate Moccasin"] = 428,
-									["Lord Cobrahn"] = 99,
-									["Nightmare Ectoplasm"] = 139,
-									["Mutanus the Devourer"] = 300,
+									["Lord Pythas"] = 277,
+									["Kresh"] = 71,
+									["Skum"] = 430,
 								},
 								["n_dmg"] = 10200,
 								["n_min"] = 0,
 								["g_dmg"] = 1975,
 								["counter"] = 400,
-								["DODGE"] = 15,
+								["r_amt"] = 0,
 								["total"] = 14929,
 								["c_max"] = 98,
+								["b_dmg"] = 209,
 								["EVADE"] = 1,
-								["id"] = 1,
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
-								["MISS"] = 29,
+								["a_amt"] = 0,
 								["extra"] = {
 								},
 								["PARRY"] = 18,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["MISS"] = 29,
 								["n_amt"] = 249,
-								["b_dmg"] = 209,
-								["r_amt"] = 0,
+								["id"] = 1,
+								["DODGE"] = 15,
 							}, -- [1]
-							[53408] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Druid of the Fang"] = 0,
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 53408,
-								["r_dmg"] = 0,
-								["EVADE"] = 1,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[32747] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verdan the Everliving"] = 0,
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 32747,
-								["r_dmg"] = 0,
-								["IMMUNE"] = 1,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[28730] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Deviate Python"] = 0,
-									["Lord Pythas"] = 0,
-									["Deviate Guardian"] = 0,
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 3,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 28730,
-								["r_dmg"] = 0,
-								["MISS"] = 3,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[25742] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 10,
-								["targets"] = {
-									["Lord Serpentis"] = 24,
-									["Deviate Shambler"] = 467,
-									["Serpentbloom Snake"] = 8,
-									["Deviate Guardian"] = 382,
-									["Deviate Adder"] = 249,
-									["Deviate Viper"] = 143,
-									["Lady Anacondra"] = 60,
-									["Deviate Ravager"] = 136,
-									["Deviate Dreadfang"] = 350,
-									["Verdan the Everliving"] = 88,
-									["Deviate Lasher"] = 65,
-									["Skum"] = 104,
-									["Deviate Crocolisk"] = 40,
-									["Lord Pythas"] = 88,
-									["Druid of the Fang"] = 1336,
-									["Deviate Venomwing"] = 204,
-									["Evolving Ectoplasm"] = 274,
-									["Kresh"] = 40,
-									["Deviate Moccasin"] = 108,
-									["Lord Cobrahn"] = 39,
-									["Nightmare Ectoplasm"] = 49,
-									["Mutanus the Devourer"] = 63,
-								},
-								["n_dmg"] = 4317,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 491,
-								["total"] = 4317,
-								["c_max"] = 0,
-								["id"] = 25742,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 491,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[853] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Deviate Shambler"] = 0,
-									["Evolving Ectoplasm"] = 0,
-									["Verdan the Everliving"] = 0,
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 3,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 853,
-								["r_dmg"] = 0,
-								["IMMUNE"] = 1,
-								["MISS"] = 2,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[20187] = {
-								["c_amt"] = 22,
-								["b_amt"] = 0,
-								["c_dmg"] = 1244,
-								["g_amt"] = 0,
-								["n_max"] = 35,
-								["targets"] = {
-									["Lord Serpentis"] = 54,
-									["Deviate Shambler"] = 615,
-									["Deviate Guardian"] = 498,
-									["Deviate Adder"] = 233,
-									["Deviate Viper"] = 197,
-									["Lady Anacondra"] = 68,
-									["Deviate Ravager"] = 199,
-									["Deviate Dreadfang"] = 406,
-									["Verdan the Everliving"] = 165,
-									["Deviate Lasher"] = 140,
-									["Skum"] = 106,
-									["Deviate Crocolisk"] = 53,
-									["Lord Pythas"] = 167,
-									["Druid of the Fang"] = 1580,
-									["Deviate Venomwing"] = 295,
-									["Evolving Ectoplasm"] = 338,
-									["Kresh"] = 33,
-									["Deviate Moccasin"] = 104,
-									["Lord Cobrahn"] = 53,
-									["Nightmare Ectoplasm"] = 78,
-									["Mutanus the Devourer"] = 52,
-								},
-								["n_dmg"] = 4190,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 165,
-								["total"] = 5434,
-								["c_max"] = 67,
-								["id"] = 20187,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 143,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[7294] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 10,
-								["targets"] = {
-									["Deviate Dreadfang"] = 90,
-									["Deviate Shambler"] = 20,
-									["Deviate Lasher"] = 272,
-									["Deviate Guardian"] = 30,
-									["Druid of the Fang"] = 80,
-									["Deviate Venomwing"] = 30,
-									["Evolving Ectoplasm"] = 80,
-									["Deviate Crocolisk"] = 20,
-									["Deviate Adder"] = 20,
-									["Deviate Ravager"] = 10,
-									["Deviate Python"] = 0,
-								},
-								["n_dmg"] = 652,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 73,
-								["total"] = 652,
-								["c_max"] = 0,
-								["id"] = 7294,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["RESIST"] = 7,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 66,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
 							[20271] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -15098,42 +13674,292 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 20271,
 								["r_dmg"] = 0,
-								["MISS"] = 11,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["MISS"] = 11,
+							},
+							[32747] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verdan the Everliving"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 1,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 32747,
+								["r_dmg"] = 0,
 								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["extra"] = {
+								},
+								["IMMUNE"] = 1,
+							},
+							[28730] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Deviate Python"] = 0,
+									["Lord Pythas"] = 0,
+									["Deviate Guardian"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 3,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 28730,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["extra"] = {
+								},
+								["MISS"] = 3,
+							},
+							[53408] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Druid of the Fang"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 1,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 53408,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["extra"] = {
+								},
+								["EVADE"] = 1,
+							},
+							[853] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Deviate Shambler"] = 0,
+									["Evolving Ectoplasm"] = 0,
+									["Verdan the Everliving"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 3,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 853,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_dmg"] = 0,
+								["n_amt"] = 0,
+								["MISS"] = 2,
+								["IMMUNE"] = 1,
+							},
+							[7294] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 10,
+								["targets"] = {
+									["Deviate Dreadfang"] = 90,
+									["Deviate Shambler"] = 20,
+									["Deviate Lasher"] = 272,
+									["Deviate Guardian"] = 30,
+									["Druid of the Fang"] = 80,
+									["Deviate Venomwing"] = 30,
+									["Evolving Ectoplasm"] = 80,
+									["Deviate Crocolisk"] = 20,
+									["Deviate Python"] = 0,
+									["Deviate Ravager"] = 10,
+									["Deviate Adder"] = 20,
+								},
+								["n_dmg"] = 652,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 73,
+								["total"] = 652,
+								["c_max"] = 0,
+								["id"] = 7294,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 66,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["RESIST"] = 7,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[20187] = {
+								["c_amt"] = 22,
+								["b_amt"] = 0,
+								["c_dmg"] = 1244,
+								["g_amt"] = 0,
+								["n_max"] = 35,
+								["targets"] = {
+									["Lord Serpentis"] = 54,
+									["Deviate Shambler"] = 615,
+									["Deviate Guardian"] = 498,
+									["Deviate Adder"] = 233,
+									["Deviate Viper"] = 197,
+									["Lady Anacondra"] = 68,
+									["Deviate Ravager"] = 199,
+									["Deviate Dreadfang"] = 406,
+									["Verdan the Everliving"] = 165,
+									["Deviate Lasher"] = 140,
+									["Mutanus the Devourer"] = 52,
+									["Nightmare Ectoplasm"] = 78,
+									["Lord Cobrahn"] = 53,
+									["Druid of the Fang"] = 1580,
+									["Deviate Venomwing"] = 295,
+									["Evolving Ectoplasm"] = 338,
+									["Deviate Crocolisk"] = 53,
+									["Deviate Moccasin"] = 104,
+									["Lord Pythas"] = 167,
+									["Kresh"] = 33,
+									["Skum"] = 106,
+								},
+								["n_dmg"] = 4190,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 165,
+								["total"] = 5434,
+								["c_max"] = 67,
+								["id"] = 20187,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 143,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[25742] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 10,
+								["targets"] = {
+									["Lord Serpentis"] = 24,
+									["Deviate Shambler"] = 467,
+									["Serpentbloom Snake"] = 8,
+									["Deviate Guardian"] = 382,
+									["Deviate Adder"] = 249,
+									["Deviate Viper"] = 143,
+									["Lady Anacondra"] = 60,
+									["Deviate Ravager"] = 136,
+									["Deviate Dreadfang"] = 350,
+									["Verdan the Everliving"] = 88,
+									["Deviate Lasher"] = 65,
+									["Mutanus the Devourer"] = 63,
+									["Nightmare Ectoplasm"] = 49,
+									["Lord Cobrahn"] = 39,
+									["Druid of the Fang"] = 1336,
+									["Deviate Venomwing"] = 204,
+									["Evolving Ectoplasm"] = 274,
+									["Deviate Crocolisk"] = 40,
+									["Deviate Moccasin"] = 108,
+									["Lord Pythas"] = 88,
+									["Kresh"] = 40,
+									["Skum"] = 104,
+								},
+								["n_dmg"] = 4317,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 491,
+								["total"] = 4317,
+								["c_max"] = 0,
+								["id"] = 25742,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 491,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["end_time"] = 1678889989,
-					["friendlyfire"] = {
-					},
+					["total"] = 25332.29711900001,
+					["on_hold"] = false,
 					["damage_taken"] = 3637.297118999999,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
+					["last_event"] = 0,
+					["last_dps"] = 0,
 					["start_time"] = 1678889986,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["serial"] = "Player-4465-04204095",
+					["friendlyfire"] = {
+					},
 				}, -- [10]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.149862,
 					["damage_from"] = {
-						["Ayatolla"] = true,
 						["Klegg"] = true,
+						["Disciple of Naralex"] = true,
 						["Tadibey"] = true,
 						["Tirbuson"] = true,
 						["Palepala"] = true,
-						["Disciple of Naralex"] = true,
+						["Ayatolla"] = true,
 						["Searing Totem II <Tadibey>"] = true,
 					},
 					["targets"] = {
@@ -15143,21 +13969,22 @@ _detalhes_database = {
 						["Ayatolla"] = 6785,
 						["Klegg"] = 950,
 					},
-					["end_time"] = 1678890031,
+					["fight_component"] = true,
 					["pets"] = {
 					},
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
-					["aID"] = "3840",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 15118.149862,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["total"] = 15118.149862,
-					["last_dps"] = 0,
-					["dps_started"] = false,
+					["aID"] = "3840",
+					["monster"] = true,
+					["end_time"] = 1678890031,
+					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Druid of the Fang",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15178,23 +14005,23 @@ _detalhes_database = {
 								["n_min"] = 0,
 								["g_dmg"] = 0,
 								["counter"] = 389,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["total"] = 7966,
 								["c_max"] = 97,
-								["DODGE"] = 37,
+								["b_dmg"] = 66,
 								["id"] = 1,
 								["r_dmg"] = 0,
 								["MISS"] = 84,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["PARRY"] = 13,
+								["BLOCK"] = 6,
+								["successful_casted"] = 0,
 								["extra"] = {
 								},
-								["BLOCK"] = 6,
-								["PARRY"] = 13,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
 								["n_amt"] = 230,
-								["b_dmg"] = 66,
-								["r_amt"] = 0,
+								["DODGE"] = 37,
+								["a_dmg"] = 0,
 							}, -- [1]
 							[8041] = {
 								["c_amt"] = 0,
@@ -15212,67 +14039,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 8041,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 16,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[5187] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 5187,
-								["r_dmg"] = 0,
+								["a_dmg"] = 0,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 10,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[8040] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 8040,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 9,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
 							},
 							[9532] = {
 								["c_amt"] = 0,
@@ -15295,31 +14070,82 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 9532,
 								["r_dmg"] = 0,
-								["MISS"] = 12,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 111,
 								["a_amt"] = 0,
 								["n_amt"] = 99,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["MISS"] = 12,
+							},
+							[5187] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 5187,
+								["r_dmg"] = 0,
 								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 10,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[8040] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 8040,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 9,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
-					["serial"] = "Creature-0-4447-43-10040-3840-000791D3B2",
-					["on_hold"] = false,
-					["monster"] = true,
-					["tipo"] = 1,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 66446.14986199999,
-					["start_time"] = 1678890028,
+					["dps_started"] = false,
+					["total"] = 15118.149862,
 					["delay"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 66446.14986199999,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1678890028,
+					["serial"] = "Creature-0-4447-43-10040-3840-000791D3B2",
+					["last_event"] = 0,
 				}, -- [11]
 				{
 					["flag_original"] = 2632,
@@ -15336,21 +14162,22 @@ _detalhes_database = {
 						["Klegg"] = 120,
 						["Ayatolla"] = 160,
 					},
-					["end_time"] = 1678890106,
+					["fight_component"] = true,
 					["pets"] = {
 					},
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
+					["friendlyfire_total"] = 0,
 					["aID"] = "3671",
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 968.006444,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["total"] = 968.006444,
-					["last_dps"] = 0,
-					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["dps_started"] = false,
+					["end_time"] = 1678890106,
+					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Lady Anacondra",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15371,16 +14198,16 @@ _detalhes_database = {
 								["c_max"] = 106,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["MISS"] = 1,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 3,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["extra"] = {
+								},
+								["MISS"] = 1,
 							}, -- [1]
 							[9532] = {
 								["c_amt"] = 0,
@@ -15399,15 +14226,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 9532,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 1,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[8148] = {
 								["c_amt"] = 0,
@@ -15429,30 +14256,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 8148,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 1,
 								["a_amt"] = 0,
 								["n_amt"] = 32,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
-					["serial"] = "Creature-0-4447-43-10040-3671-000011D3B2",
-					["on_hold"] = false,
-					["dps_started"] = false,
-					["tipo"] = 1,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 2022.006444,
-					["start_time"] = 1678890103,
+					["monster"] = true,
+					["total"] = 968.006444,
 					["delay"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 2022.006444,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1678890103,
+					["serial"] = "Creature-0-4447-43-10040-3671-000011D3B2",
+					["last_event"] = 0,
 				}, -- [12]
 				{
 					["flag_original"] = 2600,
@@ -15464,7 +14290,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["tipo"] = 1,
+					["last_dps"] = 0,
 					["damage_from"] = {
 						["Tadibey"] = true,
 						["Tirbuson"] = true,
@@ -15472,16 +14298,17 @@ _detalhes_database = {
 						["Ayatolla"] = true,
 						["Klegg"] = true,
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "3653",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 156.007557,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["on_hold"] = false,
-					["dps_started"] = false,
-					["end_time"] = 1678890158,
-					["aID"] = "3653",
-					["serial"] = "Creature-0-4447-43-10040-3653-000011D3B2",
+					["friendlyfire"] = {
+					},
+					["fight_component"] = true,
+					["total"] = 156.007557,
+					["classe"] = "UNKNOW",
+					["delay"] = 0,
 					["nome"] = "Kresh",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15503,8 +14330,8 @@ _detalhes_database = {
 								["c_max"] = 64,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["MISS"] = 1,
+								["r_amt"] = 0,
+								["b_dmg"] = 17,
 								["extra"] = {
 								},
 								["PARRY"] = 1,
@@ -15512,23 +14339,22 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 4,
-								["b_dmg"] = 17,
-								["r_amt"] = 0,
+								["MISS"] = 1,
+								["a_dmg"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["fight_component"] = true,
-					["total"] = 156.007557,
-					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
-					["custom"] = 0,
-					["last_event"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1678890158,
 					["damage_taken"] = 1451.007557,
+					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["on_hold"] = false,
 					["start_time"] = 1678890155,
-					["delay"] = 0,
-					["last_dps"] = 0,
+					["serial"] = "Creature-0-4447-43-10040-3653-000011D3B2",
+					["friendlyfire_total"] = 0,
 				}, -- [13]
 				{
 					["flag_original"] = 2632,
@@ -15539,7 +14365,7 @@ _detalhes_database = {
 						["Palepala"] = 153,
 						["Ayatolla"] = 70,
 					},
-					["end_time"] = 1678890158,
+					["last_dps"] = 0,
 					["pets"] = {
 					},
 					["damage_from"] = {
@@ -15549,8 +14375,8 @@ _detalhes_database = {
 						["Ayatolla"] = true,
 						["Klegg"] = true,
 					},
-					["serial"] = "Creature-0-4447-43-10040-5053-000011D3B2",
-					["friendlyfire_total"] = 0,
+					["delay"] = 0,
+					["aID"] = "5053",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 265.018107,
@@ -15558,8 +14384,8 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["dps_started"] = false,
 					["total"] = 265.018107,
-					["aID"] = "5053",
-					["tipo"] = 1,
+					["fight_component"] = true,
+					["damage_taken"] = 2559.018107,
 					["nome"] = "Deviate Crocolisk",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15581,35 +14407,35 @@ _detalhes_database = {
 								["counter"] = 16,
 								["total"] = 265,
 								["c_max"] = 39,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["DODGE"] = 2,
+								["b_dmg"] = 0,
 								["extra"] = {
 								},
-								["BLOCK"] = 1,
-								["PARRY"] = 1,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
 								["a_amt"] = 0,
+								["PARRY"] = 1,
+								["BLOCK"] = 1,
+								["successful_casted"] = 0,
+								["c_min"] = 0,
 								["n_amt"] = 11,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["DODGE"] = 2,
+								["a_dmg"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
 					["monster"] = true,
+					["end_time"] = 1678890158,
+					["friendlyfire_total"] = 0,
+					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["friendlyfire"] = {
 					},
-					["fight_component"] = true,
-					["on_hold"] = false,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["last_dps"] = 0,
 					["start_time"] = 1678890155,
-					["delay"] = 0,
-					["damage_taken"] = 2559.018107,
+					["serial"] = "Creature-0-4447-43-10040-5053-000011D3B2",
+					["on_hold"] = false,
 				}, -- [14]
 				{
 					["flag_original"] = 2632,
@@ -15617,24 +14443,24 @@ _detalhes_database = {
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["targets"] = {
 						["Tadibey"] = 38,
-						["Klegg"] = 43,
-						["Palepala"] = 1255,
-						["Disciple of Naralex"] = 156,
 						["Ayatolla"] = 809,
+						["Palepala"] = 1255,
+						["Klegg"] = 43,
+						["Disciple of Naralex"] = 156,
 					},
-					["on_hold"] = false,
+					["end_time"] = 1678890219,
 					["pets"] = {
 					},
 					["damage_from"] = {
-						["Klegg"] = true,
 						["Ayatolla"] = true,
+						["Disciple of Naralex"] = true,
 						["Tadibey"] = true,
 						["Tirbuson"] = true,
 						["Palepala"] = true,
-						["Disciple of Naralex"] = true,
+						["Klegg"] = true,
 						["Searing Totem II <Tadibey>"] = true,
 					},
-					["serial"] = "Creature-0-4447-43-10040-5755-000111D3B2",
+					["delay"] = 0,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
@@ -15642,10 +14468,9 @@ _detalhes_database = {
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 					["classe"] = "UNKNOW",
 					["dps_started"] = false,
-					["end_time"] = 1678890219,
-					["monster"] = true,
-					["friendlyfire"] = {
-					},
+					["total"] = 2301.047808,
+					["aID"] = "5755",
+					["last_dps"] = 0,
 					["nome"] = "Deviate Viper",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15657,10 +14482,10 @@ _detalhes_database = {
 								["n_max"] = 43,
 								["targets"] = {
 									["Tadibey"] = 38,
-									["Ayatolla"] = 803,
-									["Palepala"] = 1077,
-									["Disciple of Naralex"] = 156,
 									["Klegg"] = 43,
+									["Palepala"] = 1077,
+									["Ayatolla"] = 803,
+									["Disciple of Naralex"] = 156,
 								},
 								["n_dmg"] = 1936,
 								["n_min"] = 0,
@@ -15668,20 +14493,20 @@ _detalhes_database = {
 								["counter"] = 74,
 								["total"] = 2117,
 								["c_max"] = 66,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["MISS"] = 1,
+								["b_dmg"] = 28,
 								["DODGE"] = 5,
-								["extra"] = {
-								},
+								["a_amt"] = 0,
 								["PARRY"] = 2,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["extra"] = {
+								},
 								["n_amt"] = 63,
-								["b_dmg"] = 28,
-								["r_amt"] = 0,
+								["MISS"] = 1,
+								["a_dmg"] = 0,
 							}, -- [1]
 							[7947] = {
 								["c_amt"] = 0,
@@ -15701,29 +14526,30 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 7947,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 9,
 								["a_amt"] = 0,
 								["n_amt"] = 23,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
 					["fight_component"] = true,
-					["total"] = 2301.047808,
-					["aID"] = "5755",
-					["tipo"] = 1,
-					["custom"] = 0,
-					["last_event"] = 0,
+					["monster"] = true,
 					["damage_taken"] = 11106.047808,
+					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1678890216,
-					["delay"] = 0,
-					["last_dps"] = 0,
+					["serial"] = "Creature-0-4447-43-10040-5755-000111D3B2",
+					["on_hold"] = false,
 				}, -- [15]
 				{
 					["flag_original"] = 2632,
@@ -15734,18 +14560,18 @@ _detalhes_database = {
 						["Palepala"] = 1164,
 						["Ayatolla"] = 627,
 					},
-					["on_hold"] = false,
+					["end_time"] = 1678890219,
 					["pets"] = {
 					},
 					["damage_from"] = {
-						["Klegg"] = true,
+						["Ayatolla"] = true,
 						["Tadibey"] = true,
 						["Tirbuson"] = true,
 						["Palepala"] = true,
-						["Ayatolla"] = true,
+						["Klegg"] = true,
 						["Searing Totem II <Tadibey>"] = true,
 					},
-					["serial"] = "Creature-0-4447-43-10040-5048-000191D3B2",
+					["delay"] = 0,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
@@ -15753,10 +14579,9 @@ _detalhes_database = {
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 					["classe"] = "UNKNOW",
 					["dps_started"] = false,
-					["end_time"] = 1678890219,
-					["monster"] = true,
-					["friendlyfire"] = {
-					},
+					["total"] = 1867.036643,
+					["aID"] = "5048",
+					["last_dps"] = 0,
 					["nome"] = "Deviate Adder",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15777,20 +14602,20 @@ _detalhes_database = {
 								["counter"] = 67,
 								["total"] = 1695,
 								["c_max"] = 65,
-								["MISS"] = 1,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["b_dmg"] = 5,
 								["DODGE"] = 6,
-								["extra"] = {
-								},
+								["a_amt"] = 0,
 								["PARRY"] = 7,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["extra"] = {
+								},
 								["n_amt"] = 52,
-								["b_dmg"] = 5,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["MISS"] = 1,
 							}, -- [1]
 							[744] = {
 								["c_amt"] = 0,
@@ -15810,29 +14635,30 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 744,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 5,
 								["a_amt"] = 0,
 								["n_amt"] = 15,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
 					["fight_component"] = true,
-					["total"] = 1867.036643,
-					["aID"] = "5048",
-					["tipo"] = 1,
-					["custom"] = 0,
-					["last_event"] = 0,
+					["monster"] = true,
 					["damage_taken"] = 9138.036643,
+					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1678890216,
-					["delay"] = 0,
-					["last_dps"] = 0,
+					["serial"] = "Creature-0-4447-43-10040-5048-000191D3B2",
+					["on_hold"] = false,
 				}, -- [16]
 				{
 					["flag_original"] = 2632,
@@ -15845,18 +14671,18 @@ _detalhes_database = {
 						["Ayatolla"] = 65,
 						["Klegg"] = 343,
 					},
-					["end_time"] = 1678890333,
+					["last_dps"] = 0,
 					["pets"] = {
 					},
 					["damage_from"] = {
 						["Tadibey"] = true,
-						["Ayatolla"] = true,
-						["Palepala"] = true,
 						["Klegg"] = true,
+						["Palepala"] = true,
+						["Ayatolla"] = true,
 						["Searing Totem II <Tadibey>"] = true,
 					},
-					["serial"] = "Creature-0-4447-43-10040-8886-000011D3B2",
-					["friendlyfire_total"] = 0,
+					["delay"] = 0,
+					["aID"] = "8886",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 935.0271230000001,
@@ -15864,8 +14690,8 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["dps_started"] = false,
 					["total"] = 935.0271230000001,
-					["aID"] = "8886",
-					["tipo"] = 1,
+					["fight_component"] = true,
+					["damage_taken"] = 1917.027123,
 					["nome"] = "Deviate Python",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15888,35 +14714,35 @@ _detalhes_database = {
 								["counter"] = 52,
 								["total"] = 935,
 								["c_max"] = 43,
-								["DODGE"] = 5,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["b_dmg"] = 0,
 								["MISS"] = 4,
-								["extra"] = {
-								},
+								["a_amt"] = 0,
 								["PARRY"] = 2,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["extra"] = {
+								},
 								["n_amt"] = 39,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["DODGE"] = 5,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
 					["monster"] = true,
+					["end_time"] = 1678890333,
+					["friendlyfire_total"] = 0,
+					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["friendlyfire"] = {
 					},
-					["fight_component"] = true,
-					["on_hold"] = false,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["last_dps"] = 0,
 					["start_time"] = 1678890330,
-					["delay"] = 0,
-					["damage_taken"] = 1917.027123,
+					["serial"] = "Creature-0-4447-43-10040-8886-000011D3B2",
+					["on_hold"] = false,
 				}, -- [17]
 				{
 					["flag_original"] = 2600,
@@ -15926,69 +14752,70 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 22.021473,
 					["damage_from"] = {
 						["Tirbuson"] = true,
 						["Klegg"] = true,
 						["Tadibey"] = true,
 					},
-					["classe"] = "UNKNOW",
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.021473,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["total"] = 0.021473,
+					["dps_started"] = false,
 					["fight_component"] = true,
 					["end_time"] = 1678890507,
-					["aID"] = "3680",
-					["serial"] = "Creature-0-4447-43-10040-3680-000011D602",
+					["classe"] = "UNKNOW",
+					["delay"] = 0,
 					["nome"] = "Serpentbloom Snake",
 					["spells"] = {
 						["_ActorTable"] = {
 						},
 						["tipo"] = 2,
 					},
-					["dps_started"] = false,
-					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
-					["last_event"] = 0,
-					["custom"] = 0,
-					["tipo"] = 1,
+					["total"] = 0.021473,
+					["aID"] = "3680",
 					["last_dps"] = 0,
+					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1678890504,
-					["delay"] = 0,
-					["damage_taken"] = 22.021473,
+					["serial"] = "Creature-0-4447-43-10040-3680-000011D602",
+					["on_hold"] = false,
 				}, -- [18]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.014021,
 					["damage_from"] = {
-						["Ayatolla"] = true,
+						["Klegg"] = true,
 						["Tadibey"] = true,
 						["Tirbuson"] = true,
 						["Palepala"] = true,
-						["Klegg"] = true,
+						["Ayatolla"] = true,
 						["Searing Totem II <Tadibey>"] = true,
 					},
 					["targets"] = {
 						["Palepala"] = 241,
 					},
-					["end_time"] = 1678890626,
+					["fight_component"] = true,
 					["pets"] = {
 					},
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
+					["friendlyfire_total"] = 0,
 					["aID"] = "3669",
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 241.014021,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["total"] = 241.014021,
-					["last_dps"] = 0,
-					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["dps_started"] = false,
+					["end_time"] = 1678890626,
+					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Lord Cobrahn",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16009,32 +14836,31 @@ _detalhes_database = {
 								["c_max"] = 92,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["MISS"] = 1,
-								["DODGE"] = 1,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["a_dmg"] = 0,
 								["n_amt"] = 2,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["DODGE"] = 1,
+								["MISS"] = 1,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["serial"] = "Creature-0-4447-43-10040-3669-000011D3B2",
-					["on_hold"] = false,
-					["dps_started"] = false,
-					["tipo"] = 1,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 2164.014021,
-					["start_time"] = 1678890623,
+					["monster"] = true,
+					["total"] = 241.014021,
 					["delay"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 2164.014021,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1678890623,
+					["serial"] = "Creature-0-4447-43-10040-3669-000011D3B2",
+					["last_event"] = 0,
 				}, -- [19]
 				{
 					["flag_original"] = 2632,
@@ -16047,19 +14873,19 @@ _detalhes_database = {
 						["Ayatolla"] = 1602,
 						["Klegg"] = 106,
 					},
-					["end_time"] = 1678890840,
+					["last_dps"] = 0,
 					["pets"] = {
 					},
 					["damage_from"] = {
-						["Ayatolla"] = true,
+						["Klegg"] = true,
 						["Tadibey"] = true,
 						["Tirbuson"] = true,
 						["Palepala"] = true,
-						["Klegg"] = true,
+						["Ayatolla"] = true,
 						["Searing Totem II <Tadibey>"] = true,
 					},
-					["serial"] = "Creature-0-4447-43-10040-5761-000111D3B4",
-					["friendlyfire_total"] = 0,
+					["delay"] = 0,
+					["aID"] = "5761",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 3578.040377,
@@ -16067,8 +14893,8 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["dps_started"] = false,
 					["total"] = 3578.040377,
-					["aID"] = "5761",
-					["tipo"] = 1,
+					["fight_component"] = true,
+					["damage_taken"] = 20811.040377,
 					["nome"] = "Deviate Shambler",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16089,23 +14915,23 @@ _detalhes_database = {
 								["n_min"] = 0,
 								["g_dmg"] = 0,
 								["counter"] = 120,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["total"] = 3578,
 								["c_max"] = 82,
-								["DODGE"] = 8,
+								["b_dmg"] = 1,
 								["id"] = 1,
 								["r_dmg"] = 0,
 								["MISS"] = 6,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["PARRY"] = 5,
+								["BLOCK"] = 1,
+								["successful_casted"] = 0,
 								["extra"] = {
 								},
-								["BLOCK"] = 1,
-								["PARRY"] = 5,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
 								["n_amt"] = 88,
-								["b_dmg"] = 1,
-								["r_amt"] = 0,
+								["DODGE"] = 8,
+								["a_dmg"] = 0,
 							}, -- [1]
 							[7948] = {
 								["c_amt"] = 0,
@@ -16123,30 +14949,30 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 7948,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 2,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
 					["monster"] = true,
+					["end_time"] = 1678890840,
+					["friendlyfire_total"] = 0,
+					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["friendlyfire"] = {
 					},
-					["fight_component"] = true,
-					["on_hold"] = false,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["last_dps"] = 0,
 					["start_time"] = 1678890837,
-					["delay"] = 0,
-					["damage_taken"] = 20811.040377,
+					["serial"] = "Creature-0-4447-43-10040-5761-000111D3B4",
+					["on_hold"] = false,
 				}, -- [20]
 				{
 					["flag_original"] = 2632,
@@ -16159,18 +14985,18 @@ _detalhes_database = {
 						["Klegg"] = 686,
 						["Ayatolla"] = 2230,
 					},
-					["on_hold"] = false,
+					["end_time"] = 1678890924,
 					["pets"] = {
 					},
 					["damage_from"] = {
-						["Ayatolla"] = true,
+						["Klegg"] = true,
 						["Tadibey"] = true,
 						["Tirbuson"] = true,
 						["Palepala"] = true,
-						["Klegg"] = true,
+						["Ayatolla"] = true,
 						["Searing Totem II <Tadibey>"] = true,
 					},
-					["serial"] = "Creature-0-4447-43-10040-5055-000511D3B2",
+					["delay"] = 0,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
@@ -16178,10 +15004,9 @@ _detalhes_database = {
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 					["classe"] = "UNKNOW",
 					["dps_started"] = false,
-					["end_time"] = 1678890924,
-					["monster"] = true,
-					["friendlyfire"] = {
-					},
+					["total"] = 6825.054987,
+					["aID"] = "5055",
+					["last_dps"] = 0,
 					["nome"] = "Deviate Lasher",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16202,23 +15027,23 @@ _detalhes_database = {
 								["n_min"] = 0,
 								["g_dmg"] = 0,
 								["counter"] = 119,
-								["DODGE"] = 5,
+								["r_amt"] = 0,
 								["total"] = 2656,
 								["c_max"] = 55,
-								["a_dmg"] = 0,
+								["b_dmg"] = 3,
 								["id"] = 1,
 								["r_dmg"] = 0,
 								["MISS"] = 7,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["PARRY"] = 6,
+								["BLOCK"] = 1,
+								["successful_casted"] = 0,
 								["extra"] = {
 								},
-								["BLOCK"] = 1,
-								["PARRY"] = 6,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
 								["n_amt"] = 92,
-								["b_dmg"] = 3,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["DODGE"] = 5,
 							}, -- [1]
 							[7342] = {
 								["c_amt"] = 0,
@@ -16239,34 +15064,35 @@ _detalhes_database = {
 								["counter"] = 136,
 								["total"] = 4169,
 								["c_max"] = 0,
-								["DODGE"] = 5,
+								["r_amt"] = 0,
 								["id"] = 7342,
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["b_dmg"] = 27,
 								["MISS"] = 6,
-								["extra"] = {
-								},
+								["a_amt"] = 0,
 								["PARRY"] = 3,
 								["c_min"] = 0,
 								["successful_casted"] = 45,
-								["a_amt"] = 0,
+								["extra"] = {
+								},
 								["n_amt"] = 122,
-								["b_dmg"] = 27,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["DODGE"] = 5,
 							},
 						},
 						["tipo"] = 2,
 					},
 					["fight_component"] = true,
-					["total"] = 6825.054987,
-					["aID"] = "5055",
-					["tipo"] = 1,
-					["custom"] = 0,
-					["last_event"] = 0,
+					["monster"] = true,
 					["damage_taken"] = 4633.054987,
+					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1678890921,
-					["delay"] = 0,
-					["last_dps"] = 0,
+					["serial"] = "Creature-0-4447-43-10040-5055-000511D3B2",
+					["on_hold"] = false,
 				}, -- [21]
 				{
 					["flag_original"] = -2147483648,
@@ -16279,19 +15105,20 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["tipo"] = 1,
+					["last_dps"] = 0,
 					["damage_from"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 43.024266,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["on_hold"] = false,
-					["dps_started"] = false,
-					["end_time"] = 1678890976,
-					["aID"] = "",
-					["serial"] = "",
+					["friendlyfire"] = {
+					},
+					["fight_component"] = true,
+					["total"] = 43.024266,
+					["classe"] = "UNKNOW",
+					["delay"] = 0,
 					["nome"] = "Environment (Fire)",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16314,61 +15141,61 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 6,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 3,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
-					["fight_component"] = true,
-					["total"] = 43.024266,
-					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
-					["custom"] = 0,
-					["last_event"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1678890976,
 					["damage_taken"] = 0.024266,
+					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["on_hold"] = false,
 					["start_time"] = 1678890973,
-					["delay"] = 0,
-					["last_dps"] = 0,
+					["serial"] = "",
+					["friendlyfire_total"] = 0,
 				}, -- [22]
 				{
 					["flag_original"] = 2632,
 					["totalabsorbed"] = 0.010186,
 					["damage_from"] = {
 						["Tirbuson"] = true,
-						["Ayatolla"] = true,
 						["Klegg"] = true,
+						["Ayatolla"] = true,
 						["Tadibey"] = true,
 					},
 					["targets"] = {
 						["Tirbuson"] = 78,
-						["Klegg"] = 152,
 						["Ayatolla"] = 1442,
+						["Klegg"] = 152,
 						["Tadibey"] = 807,
 					},
-					["end_time"] = 1678891315,
+					["fight_component"] = true,
 					["pets"] = {
 					},
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
+					["friendlyfire_total"] = 0,
 					["aID"] = "3670",
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 2479.010186,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["total"] = 2479.010186,
-					["last_dps"] = 0,
-					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["dps_started"] = false,
+					["end_time"] = 1678891315,
+					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Lord Pythas",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16390,44 +15217,48 @@ _detalhes_database = {
 								["c_max"] = 62,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["MISS"] = 4,
-								["DODGE"] = 1,
+								["r_amt"] = 0,
+								["b_dmg"] = 10,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["a_dmg"] = 0,
 								["n_amt"] = 33,
-								["b_dmg"] = 10,
-								["r_amt"] = 0,
+								["DODGE"] = 1,
+								["MISS"] = 4,
 							}, -- [1]
-							[9532] = {
+							[8147] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 80,
+								["n_max"] = 78,
 								["targets"] = {
-									["Ayatolla"] = 218,
+									["Tirbuson"] = 78,
+									["Ayatolla"] = 183,
+									["Klegg"] = 152,
+									["Tadibey"] = 154,
 								},
-								["n_dmg"] = 218,
+								["n_dmg"] = 567,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 3,
-								["total"] = 218,
+								["counter"] = 9,
+								["total"] = 567,
 								["c_max"] = 0,
-								["id"] = 9532,
+								["id"] = 8147,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 3,
 								["a_amt"] = 0,
-								["n_amt"] = 3,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["n_amt"] = 8,
+								["extra"] = {
+								},
+								["MISS"] = 1,
 							},
 							[700] = {
 								["c_amt"] = 0,
@@ -16445,15 +15276,42 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 700,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 2,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[9532] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 80,
+								["targets"] = {
+									["Ayatolla"] = 218,
+								},
+								["n_dmg"] = 218,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 3,
+								["total"] = 218,
+								["c_max"] = 0,
+								["id"] = 9532,
+								["r_dmg"] = 0,
 								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 3,
+								["a_amt"] = 0,
+								["n_amt"] = 3,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[5187] = {
 								["c_amt"] = 0,
@@ -16471,92 +15329,61 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 5187,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 1,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[8147] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 78,
-								["targets"] = {
-									["Tirbuson"] = 78,
-									["Klegg"] = 152,
-									["Ayatolla"] = 183,
-									["Tadibey"] = 154,
-								},
-								["n_dmg"] = 567,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 9,
-								["total"] = 567,
-								["c_max"] = 0,
-								["id"] = 8147,
-								["r_dmg"] = 0,
-								["MISS"] = 1,
+								["a_dmg"] = 0,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 3,
-								["a_amt"] = 0,
-								["n_amt"] = 8,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["serial"] = "Creature-0-4447-43-10040-3670-000011D3B2",
-					["on_hold"] = false,
-					["dps_started"] = false,
-					["tipo"] = 1,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 2164.010186,
-					["start_time"] = 1678891312,
+					["monster"] = true,
+					["total"] = 2479.010186,
 					["delay"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 2164.010186,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1678891312,
+					["serial"] = "Creature-0-4447-43-10040-3670-000011D3B2",
+					["last_event"] = 0,
 				}, -- [23]
 				{
 					["flag_original"] = 2632,
 					["totalabsorbed"] = 0.041488,
 					["damage_from"] = {
 						["Tirbuson"] = true,
-						["Klegg"] = true,
 						["Ayatolla"] = true,
+						["Klegg"] = true,
 						["Tadibey"] = true,
 					},
 					["targets"] = {
 						["Tirbuson"] = 395,
-						["Klegg"] = 412,
 						["Ayatolla"] = 2295,
+						["Klegg"] = 412,
 						["Tadibey"] = 1122,
 					},
-					["total"] = 4224.041488,
+					["dps_started"] = false,
 					["pets"] = {
 					},
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
-					["aID"] = "5056",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 4224.041488,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["classe"] = "UNKNOW",
-					["dps_started"] = false,
-					["end_time"] = 1678891477,
-					["last_dps"] = 0,
-					["monster"] = true,
+					["aID"] = "5056",
+					["fight_component"] = true,
+					["total"] = 4224.041488,
+					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Deviate Dreadfang",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16568,8 +15395,8 @@ _detalhes_database = {
 								["n_max"] = 46,
 								["targets"] = {
 									["Tirbuson"] = 395,
-									["Klegg"] = 412,
 									["Ayatolla"] = 2295,
+									["Klegg"] = 412,
 									["Tadibey"] = 1122,
 								},
 								["n_dmg"] = 3917,
@@ -16578,20 +15405,20 @@ _detalhes_database = {
 								["counter"] = 127,
 								["total"] = 4224,
 								["c_max"] = 81,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["DODGE"] = 9,
+								["b_dmg"] = 21,
 								["MISS"] = 8,
-								["extra"] = {
-								},
+								["a_amt"] = 0,
 								["PARRY"] = 3,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["extra"] = {
+								},
 								["n_amt"] = 103,
-								["b_dmg"] = 21,
-								["r_amt"] = 0,
+								["DODGE"] = 9,
+								["a_dmg"] = 0,
 							}, -- [1]
 							[7399] = {
 								["c_amt"] = 0,
@@ -16610,31 +15437,30 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 7399,
 								["r_dmg"] = 0,
-								["MISS"] = 1,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 7,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["extra"] = {
+								},
+								["MISS"] = 1,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["serial"] = "Creature-0-4447-43-10040-5056-000011D3B2",
-					["on_hold"] = false,
-					["fight_component"] = true,
-					["tipo"] = 1,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 12422.041488,
-					["start_time"] = 1678891474,
+					["monster"] = true,
+					["end_time"] = 1678891477,
 					["delay"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 12422.041488,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1678891474,
+					["serial"] = "Creature-0-4447-43-10040-5056-000011D3B2",
+					["last_event"] = 0,
 				}, -- [24]
 				{
 					["flag_original"] = 68168,
@@ -16642,21 +15468,21 @@ _detalhes_database = {
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["targets"] = {
 						["Tirbuson"] = 203,
-						["Klegg"] = 100,
 						["Ayatolla"] = 1803,
+						["Klegg"] = 100,
 						["Tadibey"] = 344,
 					},
-					["end_time"] = 1678891513,
+					["last_dps"] = 0,
 					["pets"] = {
 					},
 					["damage_from"] = {
 						["Tirbuson"] = true,
-						["Ayatolla"] = true,
 						["Klegg"] = true,
+						["Ayatolla"] = true,
 						["Tadibey"] = true,
 					},
-					["serial"] = "Creature-0-4447-43-10040-5756-000191D3B2",
-					["friendlyfire_total"] = 0,
+					["delay"] = 0,
+					["aID"] = "5756",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 2450.030126,
@@ -16664,8 +15490,8 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["dps_started"] = false,
 					["total"] = 2450.030126,
-					["aID"] = "5756",
-					["tipo"] = 1,
+					["fight_component"] = true,
+					["damage_taken"] = 8076.030126,
 					["nome"] = "Deviate Venomwing",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16677,8 +15503,8 @@ _detalhes_database = {
 								["n_max"] = 44,
 								["targets"] = {
 									["Tirbuson"] = 203,
-									["Klegg"] = 39,
 									["Ayatolla"] = 1177,
+									["Klegg"] = 39,
 									["Tadibey"] = 40,
 								},
 								["n_dmg"] = 1080,
@@ -16687,20 +15513,20 @@ _detalhes_database = {
 								["counter"] = 41,
 								["total"] = 1459,
 								["c_max"] = 86,
-								["DODGE"] = 2,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["b_dmg"] = 0,
 								["MISS"] = 3,
-								["extra"] = {
-								},
+								["a_amt"] = 0,
 								["PARRY"] = 2,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["extra"] = {
+								},
 								["n_amt"] = 29,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["DODGE"] = 2,
 							}, -- [1]
 							[7951] = {
 								["c_amt"] = 0,
@@ -16709,8 +15535,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 62,
 								["targets"] = {
-									["Ayatolla"] = 626,
 									["Klegg"] = 61,
+									["Ayatolla"] = 626,
 									["Tadibey"] = 304,
 								},
 								["n_dmg"] = 991,
@@ -16722,40 +15548,40 @@ _detalhes_database = {
 								["DEFLECT"] = 1,
 								["id"] = 7951,
 								["r_dmg"] = 0,
-								["DODGE"] = 1,
-								["MISS"] = 3,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 25,
-								["a_amt"] = 0,
+								["a_dmg"] = 0,
 								["n_amt"] = 20,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["MISS"] = 3,
+								["DODGE"] = 1,
 							},
 						},
 						["tipo"] = 2,
 					},
 					["monster"] = true,
+					["end_time"] = 1678891513,
+					["friendlyfire_total"] = 0,
+					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["friendlyfire"] = {
 					},
-					["fight_component"] = true,
-					["on_hold"] = false,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["last_dps"] = 0,
 					["start_time"] = 1678891510,
-					["delay"] = 0,
-					["damage_taken"] = 8076.030126,
+					["serial"] = "Creature-0-4447-43-10040-5756-000191D3B2",
+					["on_hold"] = false,
 				}, -- [25]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.011919,
 					["damage_from"] = {
 						["Tirbuson"] = true,
-						["Ayatolla"] = true,
 						["Klegg"] = true,
+						["Ayatolla"] = true,
 						["Tadibey"] = true,
 					},
 					["targets"] = {
@@ -16763,21 +15589,22 @@ _detalhes_database = {
 						["Ayatolla"] = 142,
 						["Tadibey"] = 29,
 					},
-					["end_time"] = 1678891752,
+					["fight_component"] = true,
 					["pets"] = {
 					},
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
+					["friendlyfire_total"] = 0,
 					["aID"] = "3674",
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 233.011919,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["total"] = 233.011919,
-					["last_dps"] = 0,
-					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["dps_started"] = false,
+					["end_time"] = 1678891752,
+					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Skum",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16798,17 +15625,17 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["MISS"] = 2,
-								["DODGE"] = 1,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["a_dmg"] = 0,
 								["n_amt"] = 2,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["DODGE"] = 1,
+								["MISS"] = 2,
 							}, -- [1]
 							[6254] = {
 								["c_amt"] = 0,
@@ -16829,30 +15656,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 6254,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 2,
 								["a_amt"] = 0,
 								["n_amt"] = 5,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
-					["serial"] = "Creature-0-4447-43-10040-3674-000011D3B2",
-					["on_hold"] = false,
-					["dps_started"] = false,
-					["tipo"] = 1,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 3629.011919,
-					["start_time"] = 1678891749,
+					["monster"] = true,
+					["total"] = 233.011919,
 					["delay"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 3629.011919,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1678891749,
+					["serial"] = "Creature-0-4447-43-10040-3674-000011D3B2",
+					["last_event"] = 0,
 				}, -- [26]
 				{
 					["flag_original"] = 8465,
@@ -16863,19 +15689,19 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["damage_from"] = {
 						["Evolving Ectoplasm"] = true,
 					},
-					["friendlyfire_total"] = 0,
+					["classe"] = "PET",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.010239,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["dps_started"] = false,
 					["total"] = 0.010239,
-					["aID"] = "3911",
+					["friendlyfire_total"] = 0,
 					["ownerName"] = "Tadibey",
 					["nome"] = "Stoneclaw Totem II <Tadibey>",
 					["spells"] = {
@@ -16897,59 +15723,60 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 39796,
 								["r_dmg"] = 0,
-								["IMMUNE"] = 1,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["extra"] = {
+								},
+								["IMMUNE"] = 1,
 							},
 						},
 						["tipo"] = 2,
 					},
+					["delay"] = 0,
+					["aID"] = "3911",
+					["damage_taken"] = 195.010239,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["on_hold"] = false,
+					["start_time"] = 1678892151,
 					["serial"] = "Creature-0-4447-43-10040-3911-000011DC41",
-					["classe"] = "PET",
 					["friendlyfire"] = {
 					},
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 195.010239,
-					["start_time"] = 1678892151,
-					["delay"] = 0,
-					["last_dps"] = 0,
 				}, -- [27]
 				{
 					["flag_original"] = 2632,
 					["totalabsorbed"] = 0.010921,
 					["damage_from"] = {
 						["Tirbuson"] = true,
-						["Ayatolla"] = true,
 						["Klegg"] = true,
+						["Ayatolla"] = true,
 						["Tadibey"] = true,
 					},
 					["targets"] = {
 						["Tirbuson"] = 86,
 						["Ayatolla"] = 602,
 					},
-					["end_time"] = 1678892251,
+					["fight_component"] = true,
 					["pets"] = {
 					},
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
+					["friendlyfire_total"] = 0,
 					["aID"] = "3673",
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 688.0109209999999,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["total"] = 688.0109209999999,
-					["last_dps"] = 0,
-					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["dps_started"] = false,
+					["end_time"] = 1678892251,
+					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Lord Serpentis",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16970,16 +15797,16 @@ _detalhes_database = {
 								["c_max"] = 123,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["DODGE"] = 1,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 5,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["extra"] = {
+								},
+								["DODGE"] = 1,
 							}, -- [1]
 							[9532] = {
 								["c_amt"] = 0,
@@ -16999,31 +15826,30 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 9532,
 								["r_dmg"] = 0,
-								["MISS"] = 1,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 4,
 								["a_amt"] = 0,
 								["n_amt"] = 3,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["extra"] = {
+								},
+								["MISS"] = 1,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["serial"] = "Creature-0-4447-43-10040-3673-000011D3B2",
-					["on_hold"] = false,
-					["dps_started"] = false,
-					["tipo"] = 1,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 2597.010921,
-					["start_time"] = 1678892248,
+					["monster"] = true,
+					["total"] = 688.0109209999999,
 					["delay"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 2597.010921,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1678892248,
+					["serial"] = "Creature-0-4447-43-10040-3673-000011D3B2",
+					["last_event"] = 0,
 				}, -- [28]
 				{
 					["flag_original"] = 68168,
@@ -17031,8 +15857,8 @@ _detalhes_database = {
 					["damage_from"] = {
 						["Tadibey"] = true,
 						["Tirbuson"] = true,
-						["Ayatolla"] = true,
 						["Klegg"] = true,
+						["Ayatolla"] = true,
 						["Searing Totem II <Tadibey>"] = true,
 					},
 					["targets"] = {
@@ -17040,21 +15866,22 @@ _detalhes_database = {
 						["Klegg"] = 189,
 						["Ayatolla"] = 1093,
 					},
-					["end_time"] = 1678892314,
+					["fight_component"] = true,
 					["pets"] = {
 					},
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
+					["friendlyfire_total"] = 0,
 					["aID"] = "5775",
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 1469.011089,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["total"] = 1469.011089,
-					["last_dps"] = 0,
-					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["dps_started"] = false,
+					["end_time"] = 1678892314,
+					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Verdan the Everliving",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17075,16 +15902,16 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["DODGE"] = 1,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 6,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["extra"] = {
+								},
+								["DODGE"] = 1,
 							}, -- [1]
 							[8142] = {
 								["c_amt"] = 0,
@@ -17104,58 +15931,58 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 8142,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 1,
 								["a_amt"] = 0,
 								["n_amt"] = 2,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
-					["serial"] = "Creature-0-4447-43-10040-5775-000011D3B2",
-					["on_hold"] = false,
-					["dps_started"] = false,
-					["tipo"] = 1,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 3871.011089,
-					["start_time"] = 1678892311,
+					["monster"] = true,
+					["total"] = 1469.011089,
 					["delay"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 3871.011089,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1678892311,
+					["serial"] = "Creature-0-4447-43-10040-5775-000011D3B2",
+					["last_event"] = 0,
 				}, -- [29]
 				{
 					["flag_original"] = 2632,
 					["totalabsorbed"] = 0.011255,
 					["damage_from"] = {
 						["Tirbuson"] = true,
-						["Klegg"] = true,
 						["Ayatolla"] = true,
+						["Klegg"] = true,
 						["Tadibey"] = true,
 					},
 					["targets"] = {
 						["Ayatolla"] = 1033,
 					},
-					["end_time"] = 1678892969,
+					["fight_component"] = true,
 					["pets"] = {
 					},
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
+					["friendlyfire_total"] = 0,
 					["aID"] = "5762",
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 1033.011255,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["total"] = 1033.011255,
-					["last_dps"] = 0,
-					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["dps_started"] = false,
+					["end_time"] = 1678892969,
+					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Deviate Moccasin",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17175,35 +16002,34 @@ _detalhes_database = {
 								["counter"] = 35,
 								["total"] = 1033,
 								["c_max"] = 74,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["MISS"] = 2,
+								["b_dmg"] = 0,
 								["DODGE"] = 5,
-								["extra"] = {
-								},
+								["a_amt"] = 0,
 								["PARRY"] = 1,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["extra"] = {
+								},
 								["n_amt"] = 26,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["MISS"] = 2,
+								["a_dmg"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["serial"] = "Creature-0-4447-43-10040-5762-000111DF76",
-					["on_hold"] = false,
-					["dps_started"] = false,
-					["tipo"] = 1,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 4038.011255,
-					["start_time"] = 1678892966,
+					["monster"] = true,
+					["total"] = 1033.011255,
 					["delay"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 4038.011255,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1678892966,
+					["serial"] = "Creature-0-4447-43-10040-5762-000111DF76",
+					["last_event"] = 0,
 				}, -- [30]
 				{
 					["flag_original"] = 2632,
@@ -17211,30 +16037,31 @@ _detalhes_database = {
 					["damage_from"] = {
 						["Tadibey"] = true,
 						["Tirbuson"] = true,
-						["Ayatolla"] = true,
 						["Klegg"] = true,
+						["Ayatolla"] = true,
 						["Searing Totem II <Tadibey>"] = true,
 					},
 					["targets"] = {
-						["Klegg"] = 77,
 						["Ayatolla"] = 318,
+						["Klegg"] = 77,
 						["Tadibey"] = 477,
 					},
-					["end_time"] = 1678893020,
+					["fight_component"] = true,
 					["pets"] = {
 					},
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
+					["friendlyfire_total"] = 0,
 					["aID"] = "5763",
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 872.014932,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["total"] = 872.014932,
-					["last_dps"] = 0,
-					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["dps_started"] = false,
+					["end_time"] = 1678893020,
+					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Nightmare Ectoplasm",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17246,54 +16073,53 @@ _detalhes_database = {
 								["n_max"] = 27,
 								["targets"] = {
 									["Tirbuson"] = 0,
-									["Ayatolla"] = 318,
 									["Klegg"] = 77,
+									["Ayatolla"] = 318,
 									["Tadibey"] = 477,
 								},
 								["n_dmg"] = 788,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
 								["counter"] = 42,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["total"] = 872,
 								["c_max"] = 42,
-								["DODGE"] = 2,
+								["b_dmg"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
 								["MISS"] = 2,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["PARRY"] = 1,
+								["BLOCK"] = 1,
+								["successful_casted"] = 0,
 								["extra"] = {
 								},
-								["BLOCK"] = 1,
-								["PARRY"] = 1,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
 								["n_amt"] = 34,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["DODGE"] = 2,
+								["a_dmg"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["serial"] = "Creature-0-4447-43-10040-5763-000211DFB7",
-					["on_hold"] = false,
-					["dps_started"] = false,
-					["tipo"] = 1,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 3452.014932,
-					["start_time"] = 1678893017,
+					["monster"] = true,
+					["total"] = 872.014932,
 					["delay"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 3452.014932,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1678893017,
+					["serial"] = "Creature-0-4447-43-10040-5763-000211DFB7",
+					["last_event"] = 0,
 				}, -- [31]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.009821,
 					["damage_from"] = {
 						["Tirbuson"] = true,
-						["Ayatolla"] = true,
 						["Klegg"] = true,
+						["Ayatolla"] = true,
 						["Tadibey"] = true,
 					},
 					["targets"] = {
@@ -17301,21 +16127,22 @@ _detalhes_database = {
 						["Klegg"] = 106,
 						["Ayatolla"] = 366,
 					},
-					["end_time"] = 1678893073,
+					["fight_component"] = true,
 					["pets"] = {
 					},
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
+					["friendlyfire_total"] = 0,
 					["aID"] = "3654",
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 566.009821,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["total"] = 566.009821,
-					["last_dps"] = 0,
-					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["dps_started"] = false,
+					["end_time"] = 1678893073,
+					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Mutanus the Devourer",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17336,16 +16163,16 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["DODGE"] = 2,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 9,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["extra"] = {
+								},
+								["DODGE"] = 2,
 							}, -- [1]
 							[7399] = {
 								["c_amt"] = 0,
@@ -17363,15 +16190,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 7399,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 1,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[8150] = {
 								["c_amt"] = 0,
@@ -17381,8 +16208,8 @@ _detalhes_database = {
 								["n_max"] = 106,
 								["targets"] = {
 									["Tirbuson"] = 94,
-									["Klegg"] = 106,
 									["Ayatolla"] = 53,
+									["Klegg"] = 106,
 									["Tadibey"] = 0,
 								},
 								["n_dmg"] = 253,
@@ -17393,56 +16220,56 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 8150,
 								["r_dmg"] = 0,
-								["MISS"] = 1,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 1,
 								["a_amt"] = 0,
 								["n_amt"] = 3,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["extra"] = {
+								},
+								["MISS"] = 1,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["serial"] = "Creature-0-4447-43-10040-3654-000011DFF3",
-					["on_hold"] = false,
-					["dps_started"] = false,
-					["tipo"] = 1,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 3687.009821,
-					["start_time"] = 1678893070,
+					["monster"] = true,
+					["total"] = 566.009821,
 					["delay"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 3687.009821,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1678893070,
+					["serial"] = "Creature-0-4447-43-10040-3654-000011DFF3",
+					["last_event"] = 0,
 				}, -- [32]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.00356,
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["targets"] = {
-						["Tadibey"] = 0,
 						["Doicherinca"] = 0,
+						["Tadibey"] = 0,
 					},
-					["end_time"] = 1678981133,
+					["on_hold"] = false,
 					["pets"] = {
 					},
 					["damage_from"] = {
 					},
-					["delay"] = 0,
-					["aID"] = "3458",
+					["serial"] = "Creature-0-5563-1-17-3458-000092C5FB",
+					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00356,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 					["total"] = 0.00356,
-					["classe"] = "UNKNOW",
-					["last_dps"] = 0,
+					["damage_taken"] = 0.00356,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Razormane Seer",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17453,8 +16280,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Tadibey"] = 0,
 									["Doicherinca"] = 0,
+									["Tadibey"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -17464,15 +16291,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 							[6363] = {
 								["c_amt"] = 0,
@@ -17490,30 +16317,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 6363,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
 					["dps_started"] = false,
-					["monster"] = true,
-					["damage_taken"] = 0.00356,
-					["tipo"] = 1,
+					["end_time"] = 1678981133,
+					["aID"] = "3458",
+					["fight_component"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1678981130,
-					["serial"] = "Creature-0-5563-1-17-3458-000092C5FB",
-					["friendlyfire"] = {
-					},
+					["delay"] = 0,
+					["last_event"] = 0,
 				}, -- [33]
 				{
 					["flag_original"] = 8776,
@@ -17524,19 +16350,19 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["delay"] = 0,
+					["aID"] = "3902",
 					["damage_from"] = {
 					},
-					["classe"] = "PET",
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006722,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["total"] = 0.006722,
-					["fight_component"] = true,
+					["on_hold"] = false,
+					["dps_started"] = false,
 					["end_time"] = 1678981133,
-					["damage_taken"] = 0.006722,
-					["friendlyfire_total"] = 0,
+					["classe"] = "PET",
+					["serial"] = "Creature-0-5563-1-17-3902-000012C65A",
 					["nome"] = "Searing Totem II <Razormane Seer>",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17557,55 +16383,56 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 6350,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["dps_started"] = false,
-					["last_dps"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
-					["custom"] = 0,
-					["last_event"] = 0,
+					["fight_component"] = true,
+					["total"] = 0.006722,
 					["friendlyfire"] = {
 					},
+					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 0.006722,
 					["start_time"] = 1678981130,
-					["serial"] = "Creature-0-5563-1-17-3902-000012C65A",
-					["aID"] = "3902",
+					["delay"] = 0,
+					["last_dps"] = 0,
 				}, -- [34]
 				{
 					["flag_original"] = 2632,
 					["totalabsorbed"] = 0.004231,
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["targets"] = {
-						["Tadibey"] = 0,
 						["Doicherinca"] = 0,
+						["Tadibey"] = 0,
 					},
-					["end_time"] = 1678981133,
+					["on_hold"] = false,
 					["pets"] = {
 					},
 					["damage_from"] = {
 					},
-					["delay"] = 0,
-					["aID"] = "3459",
+					["serial"] = "Creature-0-5563-1-17-3459-000012A34C",
+					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004231,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 					["total"] = 0.004231,
-					["classe"] = "UNKNOW",
-					["last_dps"] = 0,
+					["damage_taken"] = 0.004231,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Razormane Warfrenzy",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17616,8 +16443,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Tadibey"] = 0,
 									["Doicherinca"] = 0,
+									["Tadibey"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -17627,55 +16454,55 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
 					["dps_started"] = false,
-					["monster"] = true,
-					["damage_taken"] = 0.004231,
-					["tipo"] = 1,
+					["end_time"] = 1678981133,
+					["aID"] = "3459",
+					["fight_component"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1678981130,
-					["serial"] = "Creature-0-5563-1-17-3459-000012A34C",
-					["friendlyfire"] = {
-					},
+					["delay"] = 0,
+					["last_event"] = 0,
 				}, -- [35]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.006874,
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["targets"] = {
-						["Tadibey"] = 0,
 						["Doicherinca"] = 0,
+						["Tadibey"] = 0,
 					},
-					["end_time"] = 1678981133,
+					["on_hold"] = false,
 					["pets"] = {
 					},
 					["damage_from"] = {
 					},
-					["delay"] = 0,
-					["aID"] = "3457",
+					["serial"] = "Creature-0-5563-1-17-3457-000012721B",
+					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006874,
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 					["total"] = 0.006874,
-					["classe"] = "UNKNOW",
-					["last_dps"] = 0,
+					["damage_taken"] = 0.006874,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Razormane Stalker",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17686,8 +16513,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Tadibey"] = 0,
 									["Doicherinca"] = 0,
+									["Tadibey"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -17697,30 +16524,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
 					["dps_started"] = false,
-					["monster"] = true,
-					["damage_taken"] = 0.006874,
-					["tipo"] = 1,
+					["end_time"] = 1678981133,
+					["aID"] = "3457",
+					["fight_component"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1678981130,
-					["serial"] = "Creature-0-5563-1-17-3457-000012721B",
-					["friendlyfire"] = {
-					},
+					["delay"] = 0,
+					["last_event"] = 0,
 				}, -- [36]
 			},
 		}, -- [1]
@@ -17730,12 +16556,12 @@ _detalhes_database = {
 				{
 					["flag_original"] = 1298,
 					["targets_overheal"] = {
-						["Klegg"] = 663,
 						["Ayatolla"] = 344,
+						["Disciple of Naralex"] = 26,
 						["Tadibey"] = 177,
 						["Tirbuson"] = 174,
 						["Palepala"] = 24,
-						["Disciple of Naralex"] = 26,
+						["Klegg"] = 663,
 						["Searing Totem II <Tadibey>"] = 2,
 					},
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
@@ -17766,7 +16592,12 @@ _detalhes_database = {
 					["healing_taken"] = 20988.27192000001,
 					["fight_component"] = true,
 					["end_time"] = 1678889931,
-					["heal_enemy_amt"] = 0,
+					["healing_from"] = {
+						["Tirbuson"] = true,
+						["Palepala"] = true,
+						["Ayatolla"] = true,
+						["Tadibey"] = true,
+					},
 					["nome"] = "Ayatolla",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17774,22 +16605,22 @@ _detalhes_database = {
 								["c_amt"] = 0,
 								["totalabsorb"] = 0,
 								["targets_overheal"] = {
-									["Klegg"] = 663,
 									["Ayatolla"] = 344,
+									["Disciple of Naralex"] = 26,
 									["Tadibey"] = 177,
 									["Tirbuson"] = 174,
 									["Palepala"] = 24,
-									["Disciple of Naralex"] = 26,
+									["Klegg"] = 663,
 									["Searing Totem II <Tadibey>"] = 2,
 								},
 								["n_max"] = 19,
 								["targets"] = {
-									["Klegg"] = 164,
 									["Ayatolla"] = 891,
+									["Disciple of Naralex"] = 0,
 									["Tadibey"] = 274,
 									["Tirbuson"] = 102,
 									["Palepala"] = 243,
-									["Disciple of Naralex"] = 0,
+									["Klegg"] = 164,
 									["Searing Totem II <Tadibey>"] = 0,
 								},
 								["n_min"] = 0,
@@ -17802,9 +16633,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 268,
 								["n_curado"] = 1674,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[440] = {
@@ -17826,37 +16657,32 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 1,
 								["n_curado"] = 165,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["tipo"] = 2,
-					["start_time"] = 1678889928,
-					["custom"] = 0,
 					["last_event"] = 0,
-					["aID"] = "4465-030F80BE",
 					["totaldenied"] = 0.2719200000000001,
+					["custom"] = 0,
+					["tipo"] = 2,
+					["aID"] = "4465-030F80BE",
+					["start_time"] = 1678889928,
 					["delay"] = 0,
-					["healing_from"] = {
-						["Tirbuson"] = true,
-						["Palepala"] = true,
-						["Ayatolla"] = true,
-						["Tadibey"] = true,
-					},
+					["heal_enemy_amt"] = 0,
 				}, -- [1]
 				{
 					["flag_original"] = 1298,
 					["targets_overheal"] = {
-						["Ayatolla"] = 273,
+						["Klegg"] = 563,
 						["Tadibey"] = 387,
 						["Tirbuson"] = 103,
 						["Palepala"] = 171,
-						["Klegg"] = 563,
+						["Ayatolla"] = 273,
 						["Searing Totem II <Tadibey>"] = 3,
 					},
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
@@ -17887,7 +16713,12 @@ _detalhes_database = {
 					["healing_taken"] = 9574.139378999997,
 					["fight_component"] = true,
 					["end_time"] = 1678889931,
-					["heal_enemy_amt"] = 0,
+					["healing_from"] = {
+						["Tirbuson"] = true,
+						["Palepala"] = true,
+						["Ayatolla"] = true,
+						["Tadibey"] = true,
+					},
 					["nome"] = "Palepala",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17895,20 +16726,20 @@ _detalhes_database = {
 								["c_amt"] = 0,
 								["totalabsorb"] = 0,
 								["targets_overheal"] = {
-									["Ayatolla"] = 273,
+									["Klegg"] = 563,
 									["Tadibey"] = 387,
 									["Tirbuson"] = 103,
 									["Palepala"] = 171,
-									["Klegg"] = 563,
+									["Ayatolla"] = 273,
 									["Searing Totem II <Tadibey>"] = 3,
 								},
 								["n_max"] = 20,
 								["targets"] = {
-									["Ayatolla"] = 517,
+									["Klegg"] = 353,
 									["Tadibey"] = 273,
 									["Tirbuson"] = 68,
 									["Palepala"] = 1034,
-									["Klegg"] = 353,
+									["Ayatolla"] = 517,
 									["Searing Totem II <Tadibey>"] = 0,
 								},
 								["n_min"] = 0,
@@ -17921,28 +16752,23 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 295,
 								["n_curado"] = 2245,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["tipo"] = 2,
-					["start_time"] = 1678889928,
-					["custom"] = 0,
 					["last_event"] = 0,
-					["aID"] = "4465-04270451",
 					["totaldenied"] = 0.139379,
+					["custom"] = 0,
+					["tipo"] = 2,
+					["aID"] = "4465-04270451",
+					["start_time"] = 1678889928,
 					["delay"] = 0,
-					["healing_from"] = {
-						["Tirbuson"] = true,
-						["Palepala"] = true,
-						["Ayatolla"] = true,
-						["Tadibey"] = true,
-					},
+					["heal_enemy_amt"] = 0,
 				}, -- [2]
 				{
 					["flag_original"] = 1298,
@@ -17971,7 +16797,12 @@ _detalhes_database = {
 					["healing_taken"] = 2614.276259,
 					["fight_component"] = true,
 					["end_time"] = 1678889931,
-					["heal_enemy_amt"] = 0,
+					["healing_from"] = {
+						["Tirbuson"] = true,
+						["Palepala"] = true,
+						["Ayatolla"] = true,
+						["Tadibey"] = true,
+					},
 					["nome"] = "Klegg",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17979,23 +16810,19 @@ _detalhes_database = {
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["tipo"] = 2,
-					["start_time"] = 1678889928,
-					["custom"] = 0,
 					["last_event"] = 0,
-					["aID"] = "4465-04243C1F",
 					["totaldenied"] = 0.276259,
+					["custom"] = 0,
+					["tipo"] = 2,
+					["aID"] = "4465-04243C1F",
+					["start_time"] = 1678889928,
 					["delay"] = 0,
-					["healing_from"] = {
-						["Tirbuson"] = true,
-						["Palepala"] = true,
-						["Ayatolla"] = true,
-						["Tadibey"] = true,
-					},
+					["heal_enemy_amt"] = 0,
 				}, -- [3]
 				{
 					["flag_original"] = 1297,
 					["targets_overheal"] = {
+						["Schafaa"] = 0,
 						["Tadibey"] = 0,
 						["Tirbuson"] = 296,
 						["Palepala"] = 1031,
@@ -18023,18 +16850,23 @@ _detalhes_database = {
 					["totalabsorb"] = 58.281376,
 					["last_hps"] = 0,
 					["targets"] = {
-						["Stoneclaw Totem II <Tadibey>"] = 58,
+						["Klegg"] = 1375,
 						["Tadibey"] = 0,
-						["Tirbuson"] = 832,
+						["Stoneclaw Totem II <Tadibey>"] = 58,
 						["Palepala"] = 7928,
 						["Ayatolla"] = 17688,
-						["Klegg"] = 1375,
+						["Tirbuson"] = 832,
 					},
 					["totalover_without_pet"] = 0.281376,
 					["healing_taken"] = 7309.281375999999,
 					["fight_component"] = true,
 					["end_time"] = 1678889931,
-					["heal_enemy_amt"] = 0,
+					["healing_from"] = {
+						["Tirbuson"] = true,
+						["Palepala"] = true,
+						["Ayatolla"] = true,
+						["Tadibey"] = true,
+					},
 					["nome"] = "Tadibey",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18057,9 +16889,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[55277] = {
@@ -18082,15 +16914,16 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 2,
 								["n_curado"] = 58,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[8004] = {
 								["c_amt"] = 14,
 								["totalabsorb"] = 0,
 								["targets_overheal"] = {
+									["Schafaa"] = 0,
 									["Tadibey"] = 526,
 									["Tirbuson"] = 296,
 									["Palepala"] = 1031,
@@ -18099,6 +16932,7 @@ _detalhes_database = {
 								},
 								["n_max"] = 246,
 								["targets"] = {
+									["Schafaa"] = 0,
 									["Tadibey"] = 6075,
 									["Tirbuson"] = 832,
 									["Palepala"] = 7928,
@@ -18115,9 +16949,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 3437,
+								["totaldenied"] = 0,
 								["n_amt"] = 149,
 								["n_curado"] = 30461,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[913] = {
@@ -18139,9 +16973,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[441] = {
@@ -18164,28 +16998,23 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["tipo"] = 2,
-					["start_time"] = 1678889928,
-					["custom"] = 0,
 					["last_event"] = 0,
-					["aID"] = "4465-0416001E",
 					["totaldenied"] = 0.281376,
+					["custom"] = 0,
+					["tipo"] = 2,
+					["aID"] = "4465-0416001E",
+					["start_time"] = 1678889928,
 					["delay"] = 0,
-					["healing_from"] = {
-						["Tirbuson"] = true,
-						["Palepala"] = true,
-						["Ayatolla"] = true,
-						["Tadibey"] = true,
-					},
+					["heal_enemy_amt"] = 0,
 				}, -- [4]
 				{
 					["flag_original"] = 8465,
@@ -18195,7 +17024,7 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["aID"] = "3902",
+					["heal_enemy_amt"] = 0,
 					["totalover"] = 0.024697,
 					["total_without_pet"] = 0.024697,
 					["total"] = 0.024697,
@@ -18220,26 +17049,26 @@ _detalhes_database = {
 						},
 						["tipo"] = 3,
 					},
-					["classe"] = "PET",
 					["targets_overheal"] = {
 					},
-					["start_time"] = 1678889964,
+					["classe"] = "PET",
+					["tipo"] = 2,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["heal_enemy_amt"] = 0,
-					["totaldenied"] = 0.024697,
+					["aID"] = "3902",
+					["start_time"] = 1678889964,
 					["delay"] = 0,
-					["tipo"] = 2,
+					["totaldenied"] = 0.024697,
 				}, -- [5]
 				{
 					["flag_original"] = 1298,
 					["targets_overheal"] = {
-						["Ayatolla"] = 521,
+						["Klegg"] = 2224,
 						["Tadibey"] = 579,
 						["Tirbuson"] = 2620,
 						["Palepala"] = 39,
+						["Ayatolla"] = 521,
 						["Disciple of Naralex"] = 364,
-						["Klegg"] = 2224,
 					},
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["pets"] = {
@@ -18269,7 +17098,12 @@ _detalhes_database = {
 					["healing_taken"] = 2525.280579999999,
 					["fight_component"] = true,
 					["end_time"] = 1678889989,
-					["heal_enemy_amt"] = 0,
+					["healing_from"] = {
+						["Tirbuson"] = true,
+						["Palepala"] = true,
+						["Ayatolla"] = true,
+						["Tadibey"] = true,
+					},
 					["nome"] = "Tirbuson",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18282,8 +17116,8 @@ _detalhes_database = {
 								},
 								["n_max"] = 213,
 								["targets"] = {
-									["Ayatolla"] = 252,
 									["Klegg"] = 0,
+									["Ayatolla"] = 252,
 									["Tadibey"] = 213,
 								},
 								["n_min"] = 0,
@@ -18296,9 +17130,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 4,
 								["n_curado"] = 465,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[633] = {
@@ -18321,30 +17155,30 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 1,
 								["n_curado"] = 482,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[20267] = {
 								["c_amt"] = 0,
 								["totalabsorb"] = 0,
 								["targets_overheal"] = {
-									["Ayatolla"] = 320,
+									["Klegg"] = 2014,
 									["Tadibey"] = 579,
 									["Tirbuson"] = 2538,
 									["Palepala"] = 39,
+									["Ayatolla"] = 320,
 									["Disciple of Naralex"] = 364,
-									["Klegg"] = 2014,
 								},
 								["n_max"] = 19,
 								["targets"] = {
-									["Ayatolla"] = 1475,
+									["Klegg"] = 722,
 									["Tadibey"] = 474,
 									["Tirbuson"] = 1041,
 									["Palepala"] = 369,
+									["Ayatolla"] = 1475,
 									["Disciple of Naralex"] = 0,
-									["Klegg"] = 722,
 								},
 								["n_min"] = 0,
 								["counter"] = 837,
@@ -18356,28 +17190,23 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 837,
 								["n_curado"] = 4081,
-								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["tipo"] = 2,
-					["start_time"] = 1678889986,
-					["custom"] = 0,
 					["last_event"] = 0,
-					["aID"] = "4465-04204095",
 					["totaldenied"] = 0.2805799999999999,
+					["custom"] = 0,
+					["tipo"] = 2,
+					["aID"] = "4465-04204095",
+					["start_time"] = 1678889986,
 					["delay"] = 0,
-					["healing_from"] = {
-						["Tirbuson"] = true,
-						["Palepala"] = true,
-						["Ayatolla"] = true,
-						["Tadibey"] = true,
-					},
+					["heal_enemy_amt"] = 0,
 				}, -- [6]
 				{
 					["flag_original"] = 8465,
@@ -18414,16 +17243,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 3,
 					},
+					["classe"] = "PET",
+					["tipo"] = 2,
+					["totaldenied"] = 0.006466,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["heal_enemy_amt"] = 0,
+					["start_time"] = 1678892151,
+					["delay"] = 0,
 					["targets_overheal"] = {
 					},
-					["last_event"] = 0,
-					["start_time"] = 1678892151,
-					["custom"] = 0,
-					["tipo"] = 2,
-					["heal_enemy_amt"] = 0,
-					["totaldenied"] = 0.006466,
-					["delay"] = 0,
-					["classe"] = "PET",
 				}, -- [7]
 			},
 		}, -- [2]
@@ -18432,7 +17261,7 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1297,
-					["resource"] = 0.4268289999999997,
+					["resource"] = 0.5125239999999996,
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["targets"] = {
 						["Tadibey"] = 0,
@@ -18487,14 +17316,14 @@ _detalhes_database = {
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["received"] = 6433.255439,
-					["last_event"] = 0,
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["tipo"] = 3,
-					["passiveover"] = 0.007347,
-					["total"] = 5899.255439,
-					["serial"] = "Player-4465-0416001E",
 					["aID"] = "4465-0416001E",
+					["tipo"] = 3,
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+					["last_event"] = 0,
+					["total"] = 5899.255439,
+					["passiveover"] = 0.007347,
+					["serial"] = "Player-4465-0416001E",
+					["received"] = 6433.255439,
 				}, -- [1]
 				{
 					["flag_original"] = 1298,
@@ -18541,14 +17370,14 @@ _detalhes_database = {
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["received"] = 968.218994,
-					["last_event"] = 0,
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["tipo"] = 3,
-					["passiveover"] = 0.001241,
-					["total"] = 474.2189940000001,
-					["serial"] = "Player-4465-04204095",
 					["aID"] = "4465-04204095",
+					["tipo"] = 3,
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+					["last_event"] = 0,
+					["total"] = 474.2189940000001,
+					["passiveover"] = 0.001241,
+					["serial"] = "Player-4465-04204095",
+					["received"] = 968.218994,
 				}, -- [2]
 				{
 					["received"] = 180.072977,
@@ -18580,14 +17409,14 @@ _detalhes_database = {
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["flag_original"] = 1298,
-					["tipo"] = 3,
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["last_event"] = 0,
-					["totalover"] = 0.003588,
-					["alternatepower"] = 0.072977,
-					["serial"] = "Player-4465-04243C1F",
 					["classe"] = "ROGUE",
+					["last_event"] = 0,
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+					["tipo"] = 3,
+					["alternatepower"] = 0.072977,
+					["totalover"] = 0.003588,
+					["serial"] = "Player-4465-04243C1F",
+					["flag_original"] = 1298,
 				}, -- [3]
 				{
 					["flag_original"] = 1298,
@@ -18636,14 +17465,14 @@ _detalhes_database = {
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["received"] = 1845.280795,
-					["last_event"] = 0,
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["tipo"] = 3,
-					["passiveover"] = 0.006387,
-					["total"] = 3114.280795,
-					["serial"] = "Player-4465-030F80BE",
 					["aID"] = "4465-030F80BE",
+					["tipo"] = 3,
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+					["last_event"] = 0,
+					["total"] = 3114.280795,
+					["passiveover"] = 0.006387,
+					["serial"] = "Player-4465-030F80BE",
+					["received"] = 1845.280795,
 				}, -- [4]
 				{
 					["received"] = 427.0764639999999,
@@ -18675,14 +17504,14 @@ _detalhes_database = {
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["flag_original"] = 1298,
-					["tipo"] = 3,
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["last_event"] = 0,
-					["totalover"] = 0.007508,
-					["alternatepower"] = 0.07646399999999998,
-					["serial"] = "Player-4465-04270451",
 					["classe"] = "PALADIN",
+					["last_event"] = 0,
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+					["tipo"] = 3,
+					["alternatepower"] = 0.07646399999999998,
+					["totalover"] = 0.007508,
+					["serial"] = "Player-4465-04270451",
+					["flag_original"] = 1298,
 				}, -- [5]
 			},
 		}, -- [3]
@@ -18694,96 +17523,96 @@ _detalhes_database = {
 					["debuff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[20186] = {
-								["actived_at"] = 11752244016,
+								["counter"] = 0,
 								["refreshamt"] = 7,
 								["activedamt"] = -16,
-								["appliedamt"] = 70,
-								["id"] = 20186,
 								["uptime"] = 713,
+								["id"] = 20186,
+								["appliedamt"] = 70,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["actived_at"] = 11752244016,
 							},
 							[25771] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 1,
 								["appliedamt"] = 4,
 								["id"] = 25771,
 								["uptime"] = 95,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[28730] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 0,
 								["appliedamt"] = 26,
 								["id"] = 28730,
 								["uptime"] = 21,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[54498] = {
-								["refreshamt"] = 4,
+								["counter"] = 0,
 								["activedamt"] = -1,
 								["appliedamt"] = 147,
 								["id"] = 54498,
 								["uptime"] = 766,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 4,
 							},
 							[853] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 0,
 								["appliedamt"] = 10,
 								["id"] = 853,
 								["uptime"] = 27,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[20185] = {
-								["refreshamt"] = 4,
+								["counter"] = 0,
 								["activedamt"] = -2,
 								["appliedamt"] = 61,
 								["id"] = 20185,
 								["uptime"] = 320,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 4,
 							},
 							[21183] = {
-								["refreshamt"] = 1,
+								["counter"] = 0,
 								["activedamt"] = 0,
 								["appliedamt"] = 5,
 								["id"] = 21183,
 								["uptime"] = 39,
 								["targets"] = {
 								},
+								["refreshamt"] = 1,
+							},
+							[62124] = {
 								["counter"] = 0,
+								["refreshamt"] = 0,
+								["activedamt"] = -12,
+								["uptime"] = 535,
+								["id"] = 62124,
+								["appliedamt"] = 92,
+								["targets"] = {
+								},
+								["actived_at"] = 8394457601,
 							},
 							[31790] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 0,
 								["appliedamt"] = 4,
 								["id"] = 31790,
 								["uptime"] = 9,
 								["targets"] = {
 								},
-								["counter"] = 0,
-							},
-							[62124] = {
-								["actived_at"] = 8394457601,
 								["refreshamt"] = 0,
-								["activedamt"] = -12,
-								["appliedamt"] = 92,
-								["id"] = 62124,
-								["uptime"] = 535,
-								["targets"] = {
-								},
-								["counter"] = 0,
 							},
 						},
 						["tipo"] = 9,
@@ -18797,16 +17626,16 @@ _detalhes_database = {
 						["_ActorTable"] = {
 							[32747] = {
 								["id"] = 32747,
-								["interrompeu_oque"] = {
-									[5187] = 3,
-									[9532] = 4,
-									[8040] = 5,
-								},
+								["counter"] = 12,
 								["targets"] = {
 									["Druid of the Fang"] = 11,
 									["Lord Serpentis"] = 1,
 								},
-								["counter"] = 12,
+								["interrompeu_oque"] = {
+									[8040] = 5,
+									[5187] = 3,
+									[9532] = 4,
+								},
 							},
 						},
 						["tipo"] = 9,
@@ -18814,104 +17643,104 @@ _detalhes_database = {
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[10290] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 29,
 								["appliedamt"] = 29,
 								["id"] = 10290,
 								["uptime"] = 849,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[19834] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 32,
 								["appliedamt"] = 32,
 								["id"] = 19834,
 								["uptime"] = 947,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[7294] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 31,
 								["appliedamt"] = 31,
 								["id"] = 7294,
 								["uptime"] = 967,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[430] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["appliedamt"] = 1,
 								["activedamt"] = 1,
-								["uptime"] = 0,
-								["id"] = 430,
 								["actived_at"] = 1678892186,
+								["id"] = 430,
+								["uptime"] = 0,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[21084] = {
-								["refreshamt"] = 1,
+								["counter"] = 0,
 								["activedamt"] = 59,
 								["appliedamt"] = 59,
 								["id"] = 21084,
 								["uptime"] = 1794,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 1,
 							},
 							[434] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["appliedamt"] = 1,
 								["activedamt"] = 1,
-								["uptime"] = 0,
-								["id"] = 434,
 								["actived_at"] = 1678892186,
+								["id"] = 434,
+								["uptime"] = 0,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[25780] = {
-								["refreshamt"] = 1,
+								["counter"] = 0,
 								["activedamt"] = 33,
 								["appliedamt"] = 33,
 								["id"] = 25780,
 								["uptime"] = 960,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 1,
 							},
 							[498] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 4,
 								["appliedamt"] = 4,
 								["id"] = 498,
 								["uptime"] = 38,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[8091] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 9,
 								["appliedamt"] = 9,
 								["id"] = 8091,
 								["uptime"] = 318,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 						},
 						["tipo"] = 9,
 					},
 					["interrompeu_oque"] = {
+						[8040] = 5,
 						[5187] = 3,
 						[9532] = 4,
-						[8040] = 5,
 					},
 					["debuff_uptime"] = 2525,
 					["buff_uptime_targets"] = {
@@ -18934,10 +17763,10 @@ _detalhes_database = {
 									[1776] = 1,
 								},
 								["id"] = "DEBUFF",
-								["cc_break"] = 1,
 								["targets"] = {
 									["Deviate Venomwing"] = 1,
 								},
+								["cc_break"] = 1,
 								["counter"] = 0,
 							},
 						},
@@ -18961,17 +17790,7 @@ _detalhes_database = {
 						["Ayatolla"] = 4,
 					},
 					["fight_component"] = true,
-					["cooldowns_defensive_spells"] = {
-						["_ActorTable"] = {
-							[498] = {
-								["id"] = 498,
-								["targets"] = {
-									["Ayatolla"] = 4,
-								},
-								["counter"] = 4,
-							},
-						},
-						["tipo"] = 9,
+					["debuff_uptime_targets"] = {
 					},
 					["cc_done"] = 10.060101,
 					["nome"] = "Ayatolla",
@@ -18985,22 +17804,32 @@ _detalhes_database = {
 						[21084] = 2,
 						[20271] = 68,
 						[25780] = 4,
-						[19834] = 1,
+						[853] = 13,
 						[498] = 4,
 						[31789] = 6,
-						[853] = 13,
+						[19834] = 1,
 					},
 					["cc_break_oque"] = {
 						[1776] = 1,
 					},
+					["interrupt"] = 12.046071,
 					["tipo"] = 4,
-					["last_event"] = 0,
 					["aID"] = "4465-030F80BE",
 					["cc_break_targets"] = {
 						["Deviate Venomwing"] = 1,
 					},
-					["interrupt"] = 12.046071,
-					["debuff_uptime_targets"] = {
+					["last_event"] = 0,
+					["cooldowns_defensive_spells"] = {
+						["_ActorTable"] = {
+							[498] = {
+								["id"] = 498,
+								["targets"] = {
+									["Ayatolla"] = 4,
+								},
+								["counter"] = 4,
+							},
+						},
+						["tipo"] = 9,
 					},
 				}, -- [1]
 				{
@@ -19008,55 +17837,55 @@ _detalhes_database = {
 					["debuff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[62124] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["appliedamt"] = 58,
 								["activedamt"] = -9,
-								["uptime"] = 413,
-								["id"] = 62124,
 								["actived_at"] = 1678889920,
+								["id"] = 62124,
+								["uptime"] = 413,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[28730] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 0,
 								["appliedamt"] = 8,
 								["id"] = 28730,
 								["uptime"] = 8,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[31790] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 0,
 								["appliedamt"] = 5,
 								["id"] = 31790,
 								["uptime"] = 12,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[20185] = {
-								["refreshamt"] = 2,
+								["counter"] = 0,
 								["activedamt"] = -7,
 								["appliedamt"] = 66,
 								["id"] = 20185,
 								["uptime"] = 483,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 2,
 							},
 							[853] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 0,
 								["appliedamt"] = 17,
 								["id"] = 853,
 								["uptime"] = 49,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 						},
 						["tipo"] = 9,
@@ -19070,15 +17899,15 @@ _detalhes_database = {
 						["_ActorTable"] = {
 							[32747] = {
 								["id"] = 32747,
-								["interrompeu_oque"] = {
-									[9532] = 6,
-									[5187] = 2,
-								},
+								["counter"] = 8,
 								["targets"] = {
 									["Druid of the Fang"] = 7,
 									["Lady Anacondra"] = 1,
 								},
-								["counter"] = 8,
+								["interrompeu_oque"] = {
+									[9532] = 6,
+									[5187] = 2,
+								},
 							},
 						},
 						["tipo"] = 9,
@@ -19086,47 +17915,47 @@ _detalhes_database = {
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[10290] = {
-								["actived_at"] = 1678891173,
+								["counter"] = 0,
 								["refreshamt"] = 0,
 								["activedamt"] = 28,
-								["appliedamt"] = 28,
-								["id"] = 10290,
 								["uptime"] = 828,
+								["id"] = 10290,
+								["appliedamt"] = 28,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["actived_at"] = 1678891173,
 							},
 							[21084] = {
-								["actived_at"] = 1678891173,
+								["counter"] = 0,
 								["refreshamt"] = 0,
 								["activedamt"] = 28,
-								["appliedamt"] = 28,
-								["id"] = 21084,
 								["uptime"] = 828,
+								["id"] = 21084,
+								["appliedamt"] = 28,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["actived_at"] = 1678891173,
 							},
 							[19834] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 13,
 								["appliedamt"] = 13,
 								["id"] = 19834,
 								["uptime"] = 398,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[25780] = {
-								["actived_at"] = 1678891173,
+								["counter"] = 0,
 								["refreshamt"] = 0,
 								["activedamt"] = 28,
-								["appliedamt"] = 28,
-								["id"] = 25780,
 								["uptime"] = 828,
+								["id"] = 25780,
+								["appliedamt"] = 28,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["actived_at"] = 1678891173,
 							},
 						},
 						["tipo"] = 9,
@@ -19161,10 +17990,10 @@ _detalhes_database = {
 									[1776] = 1,
 								},
 								["id"] = 25742,
-								["cc_break"] = 1,
 								["targets"] = {
 									["Druid of the Fang"] = 1,
 								},
+								["cc_break"] = 1,
 								["counter"] = 0,
 							},
 						},
@@ -19196,21 +18025,22 @@ _detalhes_database = {
 					["dispell_spells"] = {
 						["_ActorTable"] = {
 							[1152] = {
-								["dispell"] = 6,
+								["targets"] = {
+									["Palepala"] = 6,
+								},
 								["id"] = 1152,
 								["dispell_oque"] = {
 									[7947] = 4,
 									[744] = 2,
 								},
-								["targets"] = {
-									["Palepala"] = 6,
-								},
+								["dispell"] = 6,
 								["counter"] = 0,
 							},
 						},
 						["tipo"] = 9,
 					},
-					["aID"] = "4465-04270451",
+					["buff_uptime_targets"] = {
+					},
 					["fight_component"] = true,
 					["cc_done"] = 17.08669,
 					["nome"] = "Palepala",
@@ -19219,89 +18049,88 @@ _detalhes_database = {
 						[62124] = 56,
 						[31789] = 5,
 						[853] = 17,
+						[28730] = 5,
 						[1152] = 6,
 						[20271] = 69,
-						[28730] = 5,
 					},
 					["cc_break_oque"] = {
 						[1776] = 1,
 					},
-					["dispell_targets"] = {
-						["Palepala"] = 6,
-					},
+					["last_event"] = 0,
 					["tipo"] = 4,
 					["interrupt"] = 8.035605,
 					["cc_break_targets"] = {
 						["Druid of the Fang"] = 1,
 					},
-					["last_event"] = 0,
-					["buff_uptime_targets"] = {
+					["dispell_targets"] = {
+						["Palepala"] = 6,
 					},
+					["aID"] = "4465-04270451",
 				}, -- [2]
 				{
 					["flag_original"] = 1047,
 					["debuff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[54498] = {
-								["refreshamt"] = 9,
+								["counter"] = 0,
 								["activedamt"] = -1,
 								["appliedamt"] = 151,
 								["id"] = 54498,
 								["uptime"] = 813,
 								["targets"] = {
 								},
-								["counter"] = 0,
-							},
-							[853] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 0,
-								["appliedamt"] = 31,
-								["id"] = 853,
-								["uptime"] = 77,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[25771] = {
-								["actived_at"] = 1678892197,
-								["refreshamt"] = 0,
-								["activedamt"] = 0,
-								["appliedamt"] = 1,
-								["id"] = 25771,
-								["uptime"] = 76,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[20186] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 0,
-								["appliedamt"] = 8,
-								["id"] = 20186,
-								["uptime"] = 67,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[28730] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 0,
-								["appliedamt"] = 41,
-								["id"] = 28730,
-								["uptime"] = 32,
-								["targets"] = {
-								},
-								["counter"] = 0,
+								["refreshamt"] = 9,
 							},
 							[20185] = {
-								["refreshamt"] = 29,
+								["counter"] = 0,
 								["activedamt"] = -6,
 								["appliedamt"] = 119,
 								["id"] = 20185,
 								["uptime"] = 807,
 								["targets"] = {
 								},
+								["refreshamt"] = 29,
+							},
+							[853] = {
 								["counter"] = 0,
+								["activedamt"] = 0,
+								["appliedamt"] = 31,
+								["id"] = 853,
+								["uptime"] = 77,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							[20186] = {
+								["counter"] = 0,
+								["activedamt"] = 0,
+								["appliedamt"] = 8,
+								["id"] = 20186,
+								["uptime"] = 67,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							[28730] = {
+								["counter"] = 0,
+								["activedamt"] = 0,
+								["appliedamt"] = 41,
+								["id"] = 28730,
+								["uptime"] = 32,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							[25771] = {
+								["counter"] = 0,
+								["refreshamt"] = 0,
+								["activedamt"] = 0,
+								["uptime"] = 76,
+								["id"] = 25771,
+								["appliedamt"] = 1,
+								["targets"] = {
+								},
+								["actived_at"] = 1678892197,
 							},
 						},
 						["tipo"] = 9,
@@ -19315,16 +18144,16 @@ _detalhes_database = {
 						["_ActorTable"] = {
 							[32747] = {
 								["id"] = 32747,
-								["interrompeu_oque"] = {
-									[9532] = 5,
-									[6254] = 1,
-								},
+								["counter"] = 6,
 								["targets"] = {
 									["Druid of the Fang"] = 4,
 									["Lady Anacondra"] = 1,
 									["Skum"] = 1,
 								},
-								["counter"] = 6,
+								["interrompeu_oque"] = {
+									[9532] = 5,
+									[6254] = 1,
+								},
 							},
 						},
 						["tipo"] = 9,
@@ -19332,34 +18161,34 @@ _detalhes_database = {
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[7294] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 60,
 								["appliedamt"] = 60,
 								["id"] = 7294,
 								["uptime"] = 1921,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[21084] = {
-								["refreshamt"] = 1,
+								["counter"] = 0,
 								["activedamt"] = 61,
 								["appliedamt"] = 61,
 								["id"] = 21084,
 								["uptime"] = 1913,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 1,
 							},
 							[19834] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 23,
 								["appliedamt"] = 23,
 								["id"] = 19834,
 								["uptime"] = 709,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 						},
 						["tipo"] = 9,
@@ -19382,16 +18211,16 @@ _detalhes_database = {
 						["Deviate Shambler"] = 5,
 						["Deviate Lasher"] = 1,
 						["Deviate Guardian"] = 3,
-						["Deviate Adder"] = 3,
-						["Kresh"] = 1,
-						["Druid of the Fang"] = 8,
-						["Lady Anacondra"] = 1,
-						["Evolving Ectoplasm"] = 1,
-						["Mutanus the Devourer"] = 1,
-						["Skum"] = 1,
-						["Lord Cobrahn"] = 1,
-						["Deviate Viper"] = 1,
 						["Nightmare Ectoplasm"] = 1,
+						["Deviate Viper"] = 1,
+						["Druid of the Fang"] = 8,
+						["Lord Cobrahn"] = 1,
+						["Evolving Ectoplasm"] = 1,
+						["Deviate Adder"] = 3,
+						["Skum"] = 1,
+						["Lady Anacondra"] = 1,
+						["Mutanus the Devourer"] = 1,
+						["Kresh"] = 1,
 					},
 					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 					["serial"] = "Player-4465-04204095",
@@ -19402,10 +18231,10 @@ _detalhes_database = {
 									[1776] = 3,
 								},
 								["id"] = "DEBUFF",
-								["cc_break"] = 3,
 								["targets"] = {
 									["Druid of the Fang"] = 3,
 								},
+								["cc_break"] = 3,
 								["counter"] = 0,
 							},
 						},
@@ -19421,16 +18250,16 @@ _detalhes_database = {
 									["Deviate Shambler"] = 5,
 									["Deviate Lasher"] = 1,
 									["Deviate Guardian"] = 3,
-									["Deviate Adder"] = 3,
-									["Kresh"] = 1,
-									["Druid of the Fang"] = 8,
-									["Lady Anacondra"] = 1,
-									["Evolving Ectoplasm"] = 1,
-									["Mutanus the Devourer"] = 1,
-									["Skum"] = 1,
-									["Lord Cobrahn"] = 1,
-									["Deviate Viper"] = 1,
 									["Nightmare Ectoplasm"] = 1,
+									["Deviate Viper"] = 1,
+									["Druid of the Fang"] = 8,
+									["Lord Cobrahn"] = 1,
+									["Evolving Ectoplasm"] = 1,
+									["Deviate Adder"] = 3,
+									["Skum"] = 1,
+									["Lady Anacondra"] = 1,
+									["Mutanus the Devourer"] = 1,
+									["Kresh"] = 1,
 								},
 								["counter"] = 31,
 							},
@@ -19441,6 +18270,31 @@ _detalhes_database = {
 						["Tirbuson"] = 1,
 					},
 					["fight_component"] = true,
+					["debuff_uptime_targets"] = {
+					},
+					["cc_done"] = 31.172101,
+					["nome"] = "Tirbuson",
+					["grupo"] = true,
+					["spell_cast"] = {
+						[21084] = 2,
+						[19834] = 8,
+						[28730] = 16,
+						[53408] = 9,
+						[853] = 34,
+						[20271] = 166,
+						[633] = 1,
+						[647] = 4,
+					},
+					["cc_break_oque"] = {
+						[1776] = 3,
+					},
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["aID"] = "4465-04204095",
+					["cc_break_targets"] = {
+						["Druid of the Fang"] = 3,
+					},
+					["interrupt"] = 6.034655,
 					["cooldowns_defensive_spells"] = {
 						["_ActorTable"] = {
 							[633] = {
@@ -19453,55 +18307,30 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["cc_done"] = 31.172101,
-					["nome"] = "Tirbuson",
-					["grupo"] = true,
-					["spell_cast"] = {
-						[21084] = 2,
-						[633] = 1,
-						[28730] = 16,
-						[53408] = 9,
-						[853] = 34,
-						[647] = 4,
-						[20271] = 166,
-						[19834] = 8,
-					},
-					["cc_break_oque"] = {
-						[1776] = 3,
-					},
-					["interrupt"] = 6.034655,
-					["tipo"] = 4,
-					["aID"] = "4465-04204095",
-					["cc_break_targets"] = {
-						["Druid of the Fang"] = 3,
-					},
-					["last_event"] = 0,
-					["debuff_uptime_targets"] = {
-					},
 				}, -- [3]
 				{
 					["flag_original"] = 1047,
 					["debuff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[8052] = {
-								["refreshamt"] = 3,
+								["counter"] = 0,
 								["activedamt"] = 0,
 								["appliedamt"] = 50,
 								["id"] = 8052,
 								["uptime"] = 375,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 3,
 							},
 							[8045] = {
-								["refreshamt"] = 2,
+								["counter"] = 0,
 								["activedamt"] = 0,
 								["appliedamt"] = 7,
 								["id"] = 8045,
 								["uptime"] = 25,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 2,
 							},
 						},
 						["tipo"] = 9,
@@ -19509,15 +18338,23 @@ _detalhes_database = {
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["dispell"] = 4.005125,
 					["buff_uptime"] = 1829,
-					["aID"] = "4465-0416001E",
-					["pets"] = {
-						"Searing Totem II <Tadibey>", -- [1]
+					["nome"] = "Tadibey",
+					["buff_uptime_targets"] = {
 					},
-					["classe"] = "SHAMAN",
+					["aID"] = "4465-0416001E",
 					["interrupt_spells"] = {
 						["_ActorTable"] = {
 							[57994] = {
 								["id"] = 57994,
+								["counter"] = 36,
+								["targets"] = {
+									["Druid of the Fang"] = 25,
+									["Deviate Shambler"] = 3,
+									["Razormane Seer"] = 0,
+									["Lord Cobrahn"] = 1,
+									["Deviate Venomwing"] = 6,
+									["Lord Serpentis"] = 1,
+								},
 								["interrompeu_oque"] = {
 									[6778] = 1,
 									[8040] = 3,
@@ -19526,15 +18363,6 @@ _detalhes_database = {
 									[9532] = 18,
 									[5187] = 5,
 								},
-								["targets"] = {
-									["Druid of the Fang"] = 25,
-									["Deviate Shambler"] = 3,
-									["Razormane Seer"] = 0,
-									["Lord Cobrahn"] = 1,
-									["Lord Serpentis"] = 1,
-									["Deviate Venomwing"] = 6,
-								},
-								["counter"] = 36,
 							},
 						},
 						["tipo"] = 9,
@@ -19546,16 +18374,16 @@ _detalhes_database = {
 					["dispell_spells"] = {
 						["_ActorTable"] = {
 							[526] = {
-								["dispell"] = 4,
+								["targets"] = {
+									["Ayatolla"] = 3,
+									["Palepala"] = 1,
+								},
 								["id"] = 526,
 								["dispell_oque"] = {
 									[744] = 2,
 									[7947] = 2,
 								},
-								["targets"] = {
-									["Ayatolla"] = 3,
-									["Palepala"] = 1,
-								},
+								["dispell"] = 4,
 								["counter"] = 0,
 							},
 						},
@@ -19571,41 +18399,8 @@ _detalhes_database = {
 					},
 					["fight_component"] = true,
 					["debuff_uptime"] = 400,
-					["buff_uptime_spells"] = {
-						["_ActorTable"] = {
-							[52127] = {
-								["refreshamt"] = 23,
-								["activedamt"] = 69,
-								["appliedamt"] = 69,
-								["id"] = 52127,
-								["uptime"] = 1691,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[20007] = {
-								["id"] = 20007,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[325] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 9,
-								["appliedamt"] = 9,
-								["id"] = 325,
-								["uptime"] = 138,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-						},
-						["tipo"] = 9,
-					},
-					["dispell_oque"] = {
-						[744] = 2,
-						[7947] = 2,
-					},
+					["classe"] = "SHAMAN",
+					["interrupt"] = 36.110853,
 					["debuff_uptime_targets"] = {
 					},
 					["interrupt_targets"] = {
@@ -19613,8 +18408,8 @@ _detalhes_database = {
 						["Deviate Shambler"] = 3,
 						["Razormane Seer"] = 0,
 						["Lord Cobrahn"] = 1,
-						["Lord Serpentis"] = 1,
 						["Deviate Venomwing"] = 6,
+						["Lord Serpentis"] = 1,
 					},
 					["grupo"] = true,
 					["spell_cast"] = {
@@ -19632,17 +18427,51 @@ _detalhes_database = {
 						[1535] = 22,
 						[8027] = 1,
 						[8004] = 163,
-						[915] = 26,
-						[52127] = 28,
 						[913] = 0,
+						[52127] = 28,
+						[915] = 26,
 					},
-					["tipo"] = 4,
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 					["last_event"] = 0,
-					["nome"] = "Tadibey",
-					["interrupt"] = 36.110853,
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+					["tipo"] = 4,
+					["dispell_oque"] = {
+						[744] = 2,
+						[7947] = 2,
+					},
+					["buff_uptime_spells"] = {
+						["_ActorTable"] = {
+							[52127] = {
+								["counter"] = 0,
+								["activedamt"] = 69,
+								["appliedamt"] = 69,
+								["id"] = 52127,
+								["uptime"] = 1691,
+								["targets"] = {
+								},
+								["refreshamt"] = 23,
+							},
+							[20007] = {
+								["id"] = 20007,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[325] = {
+								["counter"] = 0,
+								["activedamt"] = 9,
+								["appliedamt"] = 9,
+								["id"] = 325,
+								["uptime"] = 138,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+						},
+						["tipo"] = 9,
+					},
 					["serial"] = "Player-4465-0416001E",
-					["buff_uptime_targets"] = {
+					["pets"] = {
+						"Searing Totem II <Tadibey>", -- [1]
 					},
 				}, -- [4]
 				{
@@ -19650,65 +18479,66 @@ _detalhes_database = {
 					["debuff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[25046] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 0,
 								["appliedamt"] = 28,
 								["id"] = 25046,
 								["uptime"] = 17,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[1776] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 0,
 								["appliedamt"] = 9,
 								["id"] = 1776,
 								["uptime"] = 23,
 								["targets"] = {
 								},
-								["counter"] = 0,
-							},
-							[8647] = {
 								["refreshamt"] = 0,
-								["activedamt"] = 0,
-								["appliedamt"] = 3,
-								["id"] = 8647,
-								["uptime"] = 40,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[703] = {
-								["actived_at"] = 1678892273,
-								["refreshamt"] = 0,
-								["activedamt"] = -1,
-								["appliedamt"] = 26,
-								["id"] = 703,
-								["uptime"] = 343,
-								["targets"] = {
-								},
-								["counter"] = 0,
 							},
 							[18381] = {
-								["refreshamt"] = 1,
+								["counter"] = 0,
 								["activedamt"] = 0,
 								["appliedamt"] = 10,
 								["id"] = 18381,
 								["uptime"] = 52,
 								["targets"] = {
 								},
+								["refreshamt"] = 1,
+							},
+							[703] = {
 								["counter"] = 0,
+								["refreshamt"] = 0,
+								["activedamt"] = -1,
+								["uptime"] = 343,
+								["id"] = 703,
+								["appliedamt"] = 26,
+								["targets"] = {
+								},
+								["actived_at"] = 1678892273,
+							},
+							[8647] = {
+								["counter"] = 0,
+								["activedamt"] = 0,
+								["appliedamt"] = 3,
+								["id"] = 8647,
+								["uptime"] = 40,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
 							},
 						},
 						["tipo"] = 9,
 					},
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
-					["buff_uptime_targets"] = {
+					["debuff_uptime_targets"] = {
 					},
 					["cooldowns_defensive"] = 2.014986,
-					["buff_uptime"] = 769,
-					["last_event"] = 0,
+					["pets"] = {
+					},
+					["tipo"] = 4,
 					["cc_done_spells"] = {
 						["_ActorTable"] = {
 							[1776] = {
@@ -19722,118 +18552,68 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["aID"] = "4465-04243C1F",
-					["interrupt_spells"] = {
-						["_ActorTable"] = {
-							[1766] = {
-								["id"] = 1766,
-								["interrompeu_oque"] = {
-									[700] = 1,
-									[7951] = 2,
-									[8040] = 1,
-									[6254] = 2,
-									[9532] = 6,
-									[5187] = 13,
-									[7948] = 3,
-								},
-								["targets"] = {
-									["Druid of the Fang"] = 20,
-									["Deviate Shambler"] = 3,
-									["Skum"] = 2,
-									["Lady Anacondra"] = 1,
-									["Deviate Venomwing"] = 2,
-								},
-								["counter"] = 28,
-							},
-							[32747] = {
-								["id"] = 32747,
-								["interrompeu_oque"] = {
-									[9532] = 2,
-									[700] = 1,
-									[5187] = 1,
-									[8040] = 3,
-								},
-								["targets"] = {
-									["Druid of the Fang"] = 6,
-									["Lord Serpentis"] = 1,
-								},
-								["counter"] = 7,
-							},
-						},
-						["tipo"] = 9,
+					["classe"] = "ROGUE",
+					["cooldowns_defensive_targets"] = {
+						["Klegg"] = 2,
 					},
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[2983] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 1,
 								["appliedamt"] = 1,
 								["id"] = 2983,
 								["uptime"] = 15,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[5171] = {
-								["refreshamt"] = 1,
+								["counter"] = 0,
 								["activedamt"] = 47,
 								["appliedamt"] = 47,
 								["id"] = 5171,
 								["uptime"] = 583,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 1,
 							},
 							[1784] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 45,
 								["appliedamt"] = 45,
 								["id"] = 1784,
 								["uptime"] = 141,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[5277] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 2,
 								["appliedamt"] = 2,
 								["id"] = 5277,
 								["uptime"] = 30,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 						},
 						["tipo"] = 9,
 					},
-					["spell_cast"] = {
-						[25046] = 12,
-						[3018] = 2,
-						[1776] = 10,
-						[8647] = 3,
-						[1784] = 4,
-						[2983] = 1,
-						[6761] = 66,
-						[1766] = 28,
-						[5277] = 2,
-						[1758] = 374,
-						[5171] = 47,
-						[703] = 26,
-					},
+					["nome"] = "Klegg",
 					["interrompeu_oque"] = {
 						[700] = 2,
 						[7951] = 2,
-						[6254] = 2,
-						[7948] = 3,
-						[9532] = 8,
-						[5187] = 14,
 						[8040] = 4,
+						[6254] = 2,
+						[5187] = 14,
+						[9532] = 8,
+						[7948] = 3,
 					},
 					["fight_component"] = true,
 					["debuff_uptime"] = 475,
-					["pets"] = {
-					},
+					["buff_uptime"] = 769,
 					["cc_done"] = 9.032474,
 					["interrupt"] = 35.13269,
 					["interrupt_targets"] = {
@@ -19841,10 +18621,59 @@ _detalhes_database = {
 						["Deviate Shambler"] = 3,
 						["Skum"] = 2,
 						["Lady Anacondra"] = 1,
-						["Lord Serpentis"] = 1,
 						["Deviate Venomwing"] = 2,
+						["Lord Serpentis"] = 1,
 					},
 					["grupo"] = true,
+					["serial"] = "Player-4465-04243C1F",
+					["cc_done_targets"] = {
+						["Druid of the Fang"] = 7,
+						["Deviate Venomwing"] = 2,
+					},
+					["aID"] = "4465-04243C1F",
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+					["last_event"] = 0,
+					["interrupt_spells"] = {
+						["_ActorTable"] = {
+							[1766] = {
+								["id"] = 1766,
+								["counter"] = 28,
+								["targets"] = {
+									["Druid of the Fang"] = 20,
+									["Deviate Shambler"] = 3,
+									["Skum"] = 2,
+									["Lady Anacondra"] = 1,
+									["Deviate Venomwing"] = 2,
+								},
+								["interrompeu_oque"] = {
+									[700] = 1,
+									[7951] = 2,
+									[7948] = 3,
+									[6254] = 2,
+									[5187] = 13,
+									[9532] = 6,
+									[8040] = 1,
+								},
+							},
+							[32747] = {
+								["id"] = 32747,
+								["counter"] = 7,
+								["targets"] = {
+									["Druid of the Fang"] = 6,
+									["Lord Serpentis"] = 1,
+								},
+								["interrompeu_oque"] = {
+									[8040] = 3,
+									[700] = 1,
+									[9532] = 2,
+									[5187] = 1,
+								},
+							},
+						},
+						["tipo"] = 9,
+					},
+					["buff_uptime_targets"] = {
+					},
 					["cooldowns_defensive_spells"] = {
 						["_ActorTable"] = {
 							[5277] = {
@@ -19857,20 +18686,20 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["cc_done_targets"] = {
-						["Druid of the Fang"] = 7,
-						["Deviate Venomwing"] = 2,
+					["spell_cast"] = {
+						[25046] = 12,
+						[3018] = 2,
+						[1776] = 10,
+						[703] = 26,
+						[1784] = 4,
+						[2983] = 1,
+						[6761] = 66,
+						[8647] = 3,
+						[5171] = 47,
+						[1758] = 374,
+						[5277] = 2,
+						[1766] = 28,
 					},
-					["classe"] = "ROGUE",
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["tipo"] = 4,
-					["cooldowns_defensive_targets"] = {
-						["Klegg"] = 2,
-					},
-					["debuff_uptime_targets"] = {
-					},
-					["serial"] = "Player-4465-04243C1F",
-					["nome"] = "Klegg",
 				}, -- [5]
 				{
 					["flag_original"] = 8465,
@@ -19878,292 +18707,292 @@ _detalhes_database = {
 					["ownerName"] = "Tadibey",
 					["nome"] = "Searing Totem II <Tadibey>",
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
-					["classe"] = "PET",
-					["pets"] = {
-					},
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["last_event"] = 0,
 					["spell_cast"] = {
 						[6350] = 83,
 					},
-					["serial"] = "Creature-0-4447-43-10040-3902-000011D3D6",
+					["pets"] = {
+					},
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+					["classe"] = "PET",
 					["tipo"] = 4,
+					["serial"] = "Creature-0-4447-43-10040-3902-000011D3D6",
+					["last_event"] = 0,
 				}, -- [6]
 				{
-					["fight_component"] = true,
+					["flag_original"] = 68168,
 					["nome"] = "Druid of the Fang",
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["monster"] = true,
-					["spell_cast"] = {
-						[8041] = 16,
-						[5187] = 10,
-						[8040] = 9,
-						[9532] = 111,
-					},
+					["aID"] = "3840",
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 					["last_event"] = 0,
-					["flag_original"] = 68168,
-					["aID"] = "3840",
-					["serial"] = "Creature-0-4447-43-10040-3840-000091D3B2",
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 					["tipo"] = 4,
+					["fight_component"] = true,
+					["spell_cast"] = {
+						[8041] = 16,
+						[9532] = 111,
+						[5187] = 10,
+						[8040] = 9,
+					},
+					["serial"] = "Creature-0-4447-43-10040-3840-000091D3B2",
+					["classe"] = "UNKNOW",
 				}, -- [7]
 				{
-					["monster"] = true,
+					["flag_original"] = 2632,
 					["nome"] = "Lady Anacondra",
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["fight_component"] = true,
-					["aID"] = "3671",
 					["spell_cast"] = {
 						[8148] = 1,
 					},
-					["classe"] = "UNKNOW",
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["tipo"] = 4,
-					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["serial"] = "Creature-0-4447-43-10040-3671-000011D3B2",
+					["tipo"] = 4,
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 					["last_event"] = 0,
+					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4447-43-10040-3671-000011D3B2",
+					["aID"] = "3671",
 				}, -- [8]
 				{
-					["flag_original"] = 68168,
+					["monster"] = true,
 					["nome"] = "Deviate Viper",
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["fight_component"] = true,
+					["aID"] = "5755",
+					["pets"] = {
+					},
+					["last_event"] = 0,
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+					["tipo"] = 4,
+					["flag_original"] = 68168,
 					["spell_cast"] = {
 						[7947] = 9,
 					},
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["last_event"] = 0,
-					["monster"] = true,
-					["aID"] = "5755",
 					["serial"] = "Creature-0-4447-43-10040-5755-000111D3B2",
-					["tipo"] = 4,
+					["classe"] = "UNKNOW",
 				}, -- [9]
 				{
-					["fight_component"] = true,
+					["flag_original"] = 68168,
 					["nome"] = "Deviate Adder",
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["monster"] = true,
+					["last_event"] = 0,
+					["pets"] = {
+					},
+					["aID"] = "5048",
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+					["classe"] = "UNKNOW",
+					["fight_component"] = true,
 					["spell_cast"] = {
 						[744] = 5,
 					},
-					["pets"] = {
-					},
-					["tipo"] = 4,
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["aID"] = "5048",
-					["flag_original"] = 68168,
-					["last_event"] = 0,
 					["serial"] = "Creature-0-4447-43-10040-5048-000011D3B2",
-					["classe"] = "UNKNOW",
+					["tipo"] = 4,
 				}, -- [10]
 				{
-					["fight_component"] = true,
+					["flag_original"] = 2632,
 					["nome"] = "Deviate Lasher",
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["monster"] = true,
+					["last_event"] = 0,
+					["pets"] = {
+					},
+					["aID"] = "5055",
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+					["classe"] = "UNKNOW",
+					["fight_component"] = true,
 					["spell_cast"] = {
 						[7342] = 45,
 					},
-					["pets"] = {
-					},
-					["tipo"] = 4,
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["aID"] = "5055",
-					["flag_original"] = 2632,
-					["last_event"] = 0,
 					["serial"] = "Creature-0-4447-43-10040-5055-000091D3B2",
-					["classe"] = "UNKNOW",
+					["tipo"] = 4,
 				}, -- [11]
 				{
-					["flag_original"] = 2632,
+					["monster"] = true,
 					["nome"] = "Deviate Shambler",
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["fight_component"] = true,
+					["tipo"] = 4,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+					["last_event"] = 0,
+					["flag_original"] = 2632,
 					["spell_cast"] = {
 						[7948] = 2,
 					},
-					["pets"] = {
-					},
-					["aID"] = "5761",
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["tipo"] = 4,
 					["serial"] = "Creature-0-4447-43-10040-5761-000311D3B3",
-					["last_event"] = 0,
+					["aID"] = "5761",
 				}, -- [12]
 				{
-					["monster"] = true,
+					["flag_original"] = 2632,
 					["nome"] = "Lord Pythas",
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["fight_component"] = true,
-					["aID"] = "3670",
 					["spell_cast"] = {
-						[5187] = 1,
-						[700] = 2,
-						[9532] = 3,
 						[8147] = 3,
+						[700] = 2,
+						[5187] = 1,
+						[9532] = 3,
 					},
-					["classe"] = "UNKNOW",
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["tipo"] = 4,
-					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["serial"] = "Creature-0-4447-43-10040-3670-000011D3B2",
+					["tipo"] = 4,
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 					["last_event"] = 0,
+					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4447-43-10040-3670-000011D3B2",
+					["aID"] = "3670",
 				}, -- [13]
 				{
-					["monster"] = true,
+					["fight_component"] = true,
 					["nome"] = "Deviate Dreadfang",
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["flag_original"] = 2632,
+					["classe"] = "UNKNOW",
+					["pets"] = {
+					},
+					["tipo"] = 4,
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+					["aID"] = "5056",
+					["monster"] = true,
 					["spell_cast"] = {
 						[7399] = 7,
 					},
-					["pets"] = {
-					},
-					["last_event"] = 0,
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["tipo"] = 4,
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-4447-43-10040-5056-000011D3B2",
-					["aID"] = "5056",
+					["last_event"] = 0,
 				}, -- [14]
 				{
-					["fight_component"] = true,
+					["flag_original"] = 68168,
 					["nome"] = "Deviate Venomwing",
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["monster"] = true,
+					["last_event"] = 0,
+					["pets"] = {
+					},
+					["aID"] = "5756",
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
+					["classe"] = "UNKNOW",
+					["fight_component"] = true,
 					["spell_cast"] = {
 						[7951] = 25,
 					},
-					["pets"] = {
-					},
-					["tipo"] = 4,
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["aID"] = "5756",
-					["flag_original"] = 68168,
-					["last_event"] = 0,
 					["serial"] = "Creature-0-4447-43-10040-5756-000011D3B3",
-					["classe"] = "UNKNOW",
+					["tipo"] = 4,
 				}, -- [15]
 				{
-					["monster"] = true,
+					["flag_original"] = 68168,
 					["nome"] = "Skum",
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["fight_component"] = true,
-					["aID"] = "3674",
 					["spell_cast"] = {
 						[6254] = 2,
 					},
-					["classe"] = "UNKNOW",
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["tipo"] = 4,
-					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["serial"] = "Creature-0-4447-43-10040-3674-000011D3B2",
+					["tipo"] = 4,
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 					["last_event"] = 0,
+					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4447-43-10040-3674-000011D3B2",
+					["aID"] = "3674",
 				}, -- [16]
 				{
-					["monster"] = true,
+					["flag_original"] = 2632,
 					["nome"] = "Lord Serpentis",
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["fight_component"] = true,
-					["aID"] = "3673",
 					["spell_cast"] = {
 						[9532] = 4,
 					},
-					["classe"] = "UNKNOW",
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["tipo"] = 4,
-					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["serial"] = "Creature-0-4447-43-10040-3673-000011D3B2",
+					["tipo"] = 4,
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 					["last_event"] = 0,
+					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4447-43-10040-3673-000011D3B2",
+					["aID"] = "3673",
 				}, -- [17]
 				{
-					["monster"] = true,
+					["flag_original"] = 68168,
 					["nome"] = "Verdan the Everliving",
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["fight_component"] = true,
-					["aID"] = "5775",
 					["spell_cast"] = {
 						[8142] = 1,
 					},
-					["classe"] = "UNKNOW",
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["tipo"] = 4,
-					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["serial"] = "Creature-0-4447-43-10040-5775-000011D3B2",
+					["tipo"] = 4,
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 					["last_event"] = 0,
+					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4447-43-10040-5775-000011D3B2",
+					["aID"] = "5775",
 				}, -- [18]
 				{
-					["monster"] = true,
+					["flag_original"] = 68168,
 					["nome"] = "Mutanus the Devourer",
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["fight_component"] = true,
-					["aID"] = "3654",
 					["spell_cast"] = {
 						[7399] = 1,
 						[8150] = 1,
 					},
-					["classe"] = "UNKNOW",
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["tipo"] = 4,
-					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["serial"] = "Creature-0-4447-43-10040-3654-000011DFF3",
+					["tipo"] = 4,
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 					["last_event"] = 0,
+					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4447-43-10040-3654-000011DFF3",
+					["aID"] = "3654",
 				}, -- [19]
 				{
-					["fight_component"] = true,
+					["monster"] = true,
 					["nome"] = "Razormane Seer",
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
 					["flag_original"] = 68168,
-					["tipo"] = 4,
 					["pets"] = {
 					},
-					["monster"] = true,
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["last_event"] = 0,
 					["spell_cast"] = {
 						[6363] = 0,
 					},
+					["last_event"] = 0,
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 					["aID"] = "3458",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["serial"] = "Creature-0-5563-1-17-3458-000092C5FB",
 					["classe"] = "UNKNOW",
 				}, -- [20]
 				{
-					["flag_original"] = 8776,
+					["fight_component"] = true,
 					["nome"] = "Searing Totem II <Razormane Seer>",
 					["GetSpellContainer"] = nil --[[ skipped inline function ]],
-					["fight_component"] = true,
-					["pets"] = {
-					},
+					["flag_original"] = 8776,
 					["spell_cast"] = {
 						[6350] = 0,
 					},
-					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
-					["aID"] = "3902",
 					["classe"] = "PET",
+					["GetSpellTableFromContainer"] = nil --[[ skipped inline function ]],
 					["tipo"] = 4,
-					["serial"] = "Creature-0-5563-1-17-3902-000012C65A",
 					["last_event"] = 0,
+					["pets"] = {
+					},
+					["serial"] = "Creature-0-5563-1-17-3902-000012C65A",
+					["aID"] = "3902",
 				}, -- [21]
 			},
 		}, -- [4]
@@ -20176,74 +19005,6 @@ _detalhes_database = {
 		},
 		["raid_roster_indexed"] = {
 		},
-		["spells_cast_timeline"] = {
-		},
-		["tempo_start"] = 1678889918,
-		["cleu_timeline"] = {
-		},
-		["alternate_power"] = {
-		},
-		["combat_counter"] = 1023,
-		["totals"] = {
-			261657.8999029997, -- [1]
-			43069.19513599998, -- [2]
-			{
-				0, -- [1]
-				[0] = 9673.802510000001,
-				["alternatepower"] = 0,
-				[3] = 180.069389,
-				[6] = 0,
-			}, -- [3]
-			{
-				["buff_uptime"] = 0,
-				["ress"] = 0,
-				["cooldowns_defensive"] = 7.040087,
-				["dispell"] = 10.026948,
-				["interrupt"] = 97.35987400000002,
-				["debuff_uptime"] = 0,
-				["cc_break"] = 5.028306000000001,
-				["dead"] = 0,
-			}, -- [4]
-			["frags_total"] = 0,
-			["voidzone_damage"] = 0,
-		},
-		["player_last_events"] = {
-		},
-		["frags_need_refresh"] = false,
-		["aura_timeline"] = {
-		},
-		["__call"] = {
-		},
-		["data_inicio"] = "15:18:38",
-		["end_time"] = 62723.893,
-		["cleu_events"] = {
-			["n"] = 1,
-		},
-		["totals_grupo"] = {
-			205672.2307659999, -- [1]
-			43069.21827599999, -- [2]
-			{
-				0, -- [1]
-				[0] = 9673.809209000001,
-				["alternatepower"] = 0,
-				[3] = 180.069389,
-				[6] = 0,
-			}, -- [3]
-			{
-				["buff_uptime"] = 0,
-				["ress"] = 0,
-				["cooldowns_defensive"] = 7.040087,
-				["dispell"] = 10.026948,
-				["interrupt"] = 97.35987400000002,
-				["debuff_uptime"] = 0,
-				["cc_break"] = 5.028306000000001,
-				["dead"] = 0,
-			}, -- [4]
-		},
-		["overall_refreshed"] = true,
-		["frags"] = {
-		},
-		["hasSaved"] = true,
 		["segments_added"] = {
 			{
 				["elapsed"] = 24.00100000000384,
@@ -20486,151 +19247,109 @@ _detalhes_database = {
 				["clock"] = "15:34:13",
 			}, -- [40]
 		},
-		["data_fim"] = "16:11:13",
-		["overall_enemy_name"] = "-- x -- x --",
-		["CombatSkillCache"] = {
+		["tempo_start"] = 1678889918,
+		["cleu_timeline"] = {
 		},
+		["alternate_power"] = {
+		},
+		["combat_counter"] = 1023,
+		["totals"] = {
+			261657.8999029997, -- [1]
+			43069.19513599998, -- [2]
+			{
+				0, -- [1]
+				[0] = 9673.802510000001,
+				["alternatepower"] = 0,
+				[6] = 0,
+				[3] = 180.069389,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 5.028306000000001,
+				["interrupt"] = 97.35987400000002,
+				["debuff_uptime"] = 0,
+				["dispell"] = 10.026948,
+				["cooldowns_defensive"] = 7.040087,
+			}, -- [4]
+			["voidzone_damage"] = 0,
+			["frags_total"] = 0,
+		},
+		["player_last_events"] = {
+		},
+		["frags_need_refresh"] = false,
+		["aura_timeline"] = {
+		},
+		["__call"] = {
+		},
+		["data_inicio"] = "15:18:38",
+		["end_time"] = 62723.893,
+		["last_events_tables"] = {
+		},
+		["totals_grupo"] = {
+			205672.2307659999, -- [1]
+			43069.21827599999, -- [2]
+			{
+				0, -- [1]
+				[0] = 9673.809209000001,
+				["alternatepower"] = 0,
+				[6] = 0,
+				[3] = 180.069389,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 5.028306000000001,
+				["interrupt"] = 97.35987400000002,
+				["debuff_uptime"] = 0,
+				["dispell"] = 10.026948,
+				["cooldowns_defensive"] = 7.040087,
+			}, -- [4]
+		},
+		["overall_refreshed"] = true,
 		["PhaseData"] = {
 			{
 				1, -- [1]
 				1, -- [2]
 			}, -- [1]
-			["damage_section"] = {
+			["damage"] = {
 			},
 			["heal_section"] = {
 			},
 			["heal"] = {
 			},
-			["damage"] = {
+			["damage_section"] = {
 			},
+		},
+		["hasSaved"] = true,
+		["spells_cast_timeline"] = {
+		},
+		["data_fim"] = "16:11:13",
+		["overall_enemy_name"] = "-- x -- x --",
+		["CombatSkillCache"] = {
+		},
+		["frags"] = {
 		},
 		["start_time"] = 60805.70899999997,
 		["TimeData"] = {
 			["Raid Damage Done"] = {
 			},
 		},
-		["last_events_tables"] = {
+		["cleu_events"] = {
+			["n"] = 1,
 		},
 	},
-	["last_day"] = "16",
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["character_data"] = {
+		["logons"] = 71,
 	},
-	["plugin_database"] = {
-		["DETAILS_PLUGIN_TINY_THREAT"] = {
-			["enabled"] = true,
-			["animate"] = false,
-			["hide_pull_bar"] = false,
-			["author"] = "Terciob",
-			["playercolor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["usefocus"] = false,
-			["updatespeed"] = 1,
-			["useclasscolors"] = false,
-			["showamount"] = false,
-			["useplayercolor"] = false,
-			["absolute_mode"] = false,
-			["playSound"] = false,
-			["playSoundFile"] = "Details Threat Warning Volume 3",
-			["disable_gouge"] = false,
-		},
-		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
-			["enabled"] = true,
-			["encounter_timers_bw"] = {
-			},
-			["max_emote_segments"] = 3,
-			["last_section_selected"] = "main",
-			["author"] = "Terciob",
-			["window_scale"] = 1,
-			["encounter_timers_dbm"] = {
-			},
-			["show_icon"] = 5,
-			["opened"] = 0,
-			["hide_on_combat"] = false,
-		},
-		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
-			["enabled"] = true,
-			["author"] = "Terciob",
-		},
-		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
-			["use_square_mode"] = false,
-			["is_first_run"] = false,
-			["grow_direction"] = "right",
-			["arrow_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["main_frame_size"] = {
-				249.999740600586, -- [1]
-				89.9999694824219, -- [2]
-			},
-			["arrow_anchor_y"] = 0,
-			["minimap"] = {
-				["minimapPos"] = 160,
-				["radius"] = 160,
-				["hide"] = true,
-			},
-			["main_frame_locked"] = true,
-			["arrow_anchor_x"] = 0,
-			["author"] = "Details! Team",
-			["row_texture"] = "xVerminClean",
-			["square_grow_direction"] = "right",
-			["y"] = -183.107162475586,
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
-			["square_amount"] = 5,
-			["enabled"] = false,
-			["arrow_size"] = 10,
-			["per_second"] = {
-				["enabled"] = false,
-				["point"] = "CENTER",
-				["scale"] = 1,
-				["font_shadow"] = true,
-				["y"] = -6.103515625e-05,
-				["x"] = 0.00311279296875,
-				["attribute_type"] = 1,
-				["update_speed"] = 0.05,
-				["size"] = 32,
-			},
-			["row_spacement"] = 19,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["use_spark"] = false,
-			["font_size"] = 10,
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
-			["point"] = "RIGHT",
-			["font_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["row_height"] = 18,
-			["scale"] = 1,
-		},
-	},
+	["force_font_outline"] = "",
+	["last_instance_time"] = 1678889909,
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -20638,15 +19357,9 @@ _detalhes_database = {
 		["last_difficulty"] = 15,
 		["last_raid"] = "",
 	},
-	["cached_roles"] = {
-		["Player-4465-0416001E"] = "DAMAGER",
-		["Player-4465-0426AA28"] = "DAMAGER",
-		["Player-4465-04269F25"] = "DAMAGER",
-		["Player-4465-030F80BE"] = "DAMAGER",
-		["Player-4465-042617A5"] = "TANK",
-		["Player-4465-04243C1F"] = "DAMAGER",
-		["Player-4465-04256560"] = "DAMAGER",
-		["Player-4465-041A781B"] = "DAMAGER",
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["cached_specs"] = {
 		["Player-4465-0416001E"] = 263,
